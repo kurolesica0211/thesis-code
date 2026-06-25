@@ -85,21 +85,30 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Inés of Bourbon-Two Sicilies, Duchess of Syracuse, GE (born 18 February 1940) is a Spanish princess, the youngest child of Infante Alfonso, heir to the throne of the Two Sicilies, and Infanta Alicia.
-Princess Inés was, at the time of her birth, 9th in line of succession to the Spanish throne.
-Early life
+Princess Beatrix of Hohenlohe-Langenburg (German: Beatrix Alice Marie Melita Margarete Prinzessin zu Hohenlohe-Langenburg; 10 July 1936 – 15 November 1997) was a German princess from the House of Hohenlohe-Langenburg.
+She was a niece of Prince Philip, Duke of Edinburgh, and thus a first cousin of King Charles III.
+Biography
 
-The last of three children and the second daughter of Infante Alfonso de Borbón-Dos Sicilias y de Borbón (1901–1964) and Princess Alicia of Bourbon-Parma (1917–2017), she was born during her parents' exile from republican Spain in Lausanne, Switzerland.
-Family
-
-Inés lived in Madrid with her family, and also spent time at her parents' finca, "La Toledana", a major hunting estate in Retuerta del Bullaque.
-They had five children: Isabel, Eugenia, Sonia (1969–2022), Manuel, and Mencía de Morales y Borbón-Dos Sicilias.
+Beatrix was born on 10 July 1936 in Schwäbisch Hall to Gottfried, Hereditary Prince of Hohenlohe-Langenburg, and Princess Margarita of Greece and Denmark, the eldest sister of Prince Philip, Duke of Edinburgh.
+The family was not invited to Philip's wedding to Princess Elizabeth of the United Kingdom in 1947, due to her parents' membership in the Nazi Party.
+Six years later, however, Beatrix and her family were seated in the royal box at  her aunt's coronation in Westminster Abbey.
+In January 1956, Beatrix and her cousin, Princess Christina of Hesse, moved to London into a flat arranged by their uncle, Prince Philip, in Dolphin Square.
+Beatrix took dressmaking classes at the Royal College of Art.
+While Princess Christina eventually settled in the United Kingdom, marrying Prince Andrew of Yugoslavia whom the princesses were close friends with during their stay, Beatrix returned to Germany that same year.
+In 1961, Beatrix became engaged to her first cousin, Maximilian, Hereditary Prince of Baden.
+Maximilian later married Archduchess Valerie of Austria (b. 1941) in 1966 and Beatrix never married.
+In her later years, she served as secretary to Margaret, Princess of Hesse and by Rhine, the sister-in-law of her aunt, Princess Cecilie.
+She lived in Langenburg, Germany, for most of her life.
+She continued to attend family events in Britain, such as the weddings of her cousins Prince Charles (later King Charles III) and Prince Andrew in 1981 and 1986, respectively.
+Beatrix died on 15 November 1997, aged 61, in the town where she was born.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +124,9 @@ They had five children: Isabel, Eugenia, Sonia (1969–2022), Manuel, and Mencí
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +141,23 @@ They had five children: Isabel, Eugenia, Sonia (1969–2022), Manuel, and Mencí
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,318 +449,204 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f8faa1c2-1f96-4644-a647-5accacc71eb8)
- Call ID: f8faa1c2-1f96-4644-a647-5accacc71eb8
+  AssignClass (51ff17d4-02e8-4a12-9d36-7023a9d4f91a)
+ Call ID: 51ff17d4-02e8-4a12-9d36-7023a9d4f91a
   Args:
+    source: :Beatrix_of_Hohenlohe-Langenburg
     type: :Woman
-    source: Princess_Ines
-  AssignClass (de3ef60b-2c3b-4cad-806e-385fe9e917ff)
- Call ID: de3ef60b-2c3b-4cad-806e-385fe9e917ff
+  AssignClass (a20554db-8464-41c7-9806-d5bf6f5b97ad)
+ Call ID: a20554db-8464-41c7-9806-d5bf6f5b97ad
   Args:
-    source: Princess_Ines
+    source: :Beatrix_of_Hohenlohe-Langenburg
     type: :Person
-  AssignClass (f61bd2f2-9de2-4ac4-a12d-1e1536d33ac4)
- Call ID: f61bd2f2-9de2-4ac4-a12d-1e1536d33ac4
+  AddLiteral (d93e3f25-2186-45e5-b315-e577fd82f3ea)
+ Call ID: d93e3f25-2186-45e5-b315-e577fd82f3ea
   Args:
+    literal_type: xsd:integer
+    literal_value: 1936
+    source: :Beatrix_of_Hohenlohe-Langenburg
+    relation: :hasBirthYear
+  AddLiteral (52a9e2fe-ff87-4885-9cf8-7fa64289f224)
+ Call ID: 52a9e2fe-ff87-4885-9cf8-7fa64289f224
+  Args:
+    relation: :hasDeathYear
+    source: :Beatrix_of_Hohenlohe-Langenburg
+    literal_value: 1997
+    literal_type: xsd:integer
+  AssignClass (4880f828-dd60-42f3-bd38-e1d504f18de5)
+ Call ID: 4880f828-dd60-42f3-bd38-e1d504f18de5
+  Args:
+    source: :Gottfried_of_Hohenlohe-Langenburg
     type: :Man
-    source: Infante_Alfonso
-  AssignClass (158d00c7-4535-4162-8bbf-b3978a1c7ee9)
- Call ID: 158d00c7-4535-4162-8bbf-b3978a1c7ee9
+  AssignClass (1cb8a28b-4efd-4d35-97ba-cd8efc213730)
+ Call ID: 1cb8a28b-4efd-4d35-97ba-cd8efc213730
   Args:
-    source: Infante_Alfonso
-    type: :Person
-  AssignClass (f90d3c5a-9231-48a4-9916-641ea27efc2d)
- Call ID: f90d3c5a-9231-48a4-9916-641ea27efc2d
-  Args:
+    source: :Gottfried_of_Hohenlohe-Langenburg
     type: :Ancestor
-    source: Infante_Alfonso
-  AssignClass (c0083c59-8713-4fd8-962e-bcc23ceae26d)
- Call ID: c0083c59-8713-4fd8-962e-bcc23ceae26d
+  AssignClass (5d2c4864-a615-43bb-9219-ffafa548fa33)
+ Call ID: 5d2c4864-a615-43bb-9219-ffafa548fa33
   Args:
-    source: Infanta_Alicia
     type: :Woman
-  AssignClass (df485a59-b1ef-40ca-af33-fdb0c4ad6c81)
- Call ID: df485a59-b1ef-40ca-af33-fdb0c4ad6c81
+    source: :Margarita_of_Greece_and_Denmark
+  AssignClass (2e5a2f0f-09ce-49bd-aefa-e6fc4616bfa6)
+ Call ID: 2e5a2f0f-09ce-49bd-aefa-e6fc4616bfa6
   Args:
-    type: :Person
-    source: Infanta_Alicia
-  AssignClass (bc132350-42a6-4d0d-a40f-4a8ef14a1164)
- Call ID: bc132350-42a6-4d0d-a40f-4a8ef14a1164
-  Args:
-    source: Infanta_Alicia
+    source: :Margarita_of_Greece_and_Denmark
     type: :Ancestor
-  AddLiteral (9859ab6e-bf11-4c93-a72b-0b7e83c975b7)
- Call ID: 9859ab6e-bf11-4c93-a72b-0b7e83c975b7
+  AddTriple (09e99b66-b6d9-4b64-9391-5cb9317200d5)
+ Call ID: 09e99b66-b6d9-4b64-9391-5cb9317200d5
   Args:
-    literal_value: 1940
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Princess_Ines
-  AddLiteral (84876682-2b65-410c-93d4-7d9e5aedae83)
- Call ID: 84876682-2b65-410c-93d4-7d9e5aedae83
-  Args:
-    source: Infante_Alfonso
-    literal_value: 1901
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (d73cd5d6-6a66-4bb7-826b-9b6c9e16d5a6)
- Call ID: d73cd5d6-6a66-4bb7-826b-9b6c9e16d5a6
-  Args:
-    source: Infante_Alfonso
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1964
-  AddLiteral (8c04b8be-282e-4c5f-b43f-899c518498ed)
- Call ID: 8c04b8be-282e-4c5f-b43f-899c518498ed
-  Args:
-    literal_value: 1917
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Infanta_Alicia
-  AddLiteral (7e19b9e7-cdb3-443b-936d-181204bc0a8f)
- Call ID: 7e19b9e7-cdb3-443b-936d-181204bc0a8f
-  Args:
-    source: Infanta_Alicia
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 2017
-  AddTriple (ca47323b-e4db-4ef6-a4aa-2ee01c5c3c4a)
- Call ID: ca47323b-e4db-4ef6-a4aa-2ee01c5c3c4a
-  Args:
-    target: Infante_Alfonso
+    target: :Gottfried_of_Hohenlohe-Langenburg
+    source: :Beatrix_of_Hohenlohe-Langenburg
     relation: :hasFather
-    source: Princess_Ines
-  AddTriple (cc015939-b3c3-4b62-9105-5bf2073f9a8b)
- Call ID: cc015939-b3c3-4b62-9105-5bf2073f9a8b
+  AddTriple (94876e5f-cc17-4bc9-a76e-3c44d9a988b3)
+ Call ID: 94876e5f-cc17-4bc9-a76e-3c44d9a988b3
   Args:
+    target: :Margarita_of_Greece_and_Denmark
+    source: :Beatrix_of_Hohenlohe-Langenburg
     relation: :hasMother
-    target: Infanta_Alicia
-    source: Princess_Ines
-  AddTriple (cfa0aebe-5349-4f1d-99d0-8b8930a8ecc2)
- Call ID: cfa0aebe-5349-4f1d-99d0-8b8930a8ecc2
+  AssignClass (562ea29a-48a8-434b-9458-ede36df9e336)
+ Call ID: 562ea29a-48a8-434b-9458-ede36df9e336
   Args:
-    source: Princess_Ines
-    target: :Female
-    relation: :hasSex
-  AddTriple (744147e1-d8e4-4219-b96c-85af7d8d77a6)
- Call ID: 744147e1-d8e4-4219-b96c-85af7d8d77a6
-  Args:
-    source: Infante_Alfonso
-    relation: :hasSex
-    target: :Male
-  AddTriple (4b932913-3fd9-4088-8632-67080b9d4307)
- Call ID: 4b932913-3fd9-4088-8632-67080b9d4307
-  Args:
-    target: :Female
-    relation: :hasSex
-    source: Infanta_Alicia
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Princess_Ines a :Person,
-          :Woman ;
-      :hasBirthYear 1940 ;
-      :hasFather data:Infante_Alfonso ;
-      :hasMother data:Infanta_Alicia ;
-      :hasSex data:Female .
-
-  data:Infanta_Alicia a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1917 ;
-      :hasDeathYear 2017 ;
-      :hasSex data:Female .
-
-  data:Infante_Alfonso a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1901 ;
-      :hasDeathYear 1964 ;
-      :hasSex data:Male .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (4311ac4b-64a7-45ed-b403-75e889ee1b33)
- Call ID: 4311ac4b-64a7-45ed-b403-75e889ee1b33
-  Args:
-    type: :Woman
-    source: Isabel
-  AssignClass (2a4f845d-d08d-417b-87ce-71a18059c7dd)
- Call ID: 2a4f845d-d08d-417b-87ce-71a18059c7dd
+    source: :Prince_Philip_Duke_of_Edinburgh
+    type: :Man
+  AssignClass (7d4597d0-5d39-424a-a541-106e1ae8f959)
+ Call ID: 7d4597d0-5d39-424a-a541-106e1ae8f959
   Args:
     type: :Person
-    source: Isabel
-  AssignClass (75fb290c-0b18-40c0-aa9c-bdf3a89a9ac9)
- Call ID: 75fb290c-0b18-40c0-aa9c-bdf3a89a9ac9
+    source: :Prince_Philip_Duke_of_Edinburgh
+  AddTriple (1b19ca83-cabb-48d7-9eb1-9efc45dd2e5a)
+ Call ID: 1b19ca83-cabb-48d7-9eb1-9efc45dd2e5a
   Args:
-    type: :Woman
-    source: Eugenia
-  AssignClass (ab07a49a-12f0-43dc-b1d1-63f8b25f422d)
- Call ID: ab07a49a-12f0-43dc-b1d1-63f8b25f422d
-  Args:
-    type: :Person
-    source: Eugenia
-  AssignClass (c3895475-cc71-48db-a24f-ae749809c732)
- Call ID: c3895475-cc71-48db-a24f-ae749809c732
-  Args:
-    type: :Woman
-    source: Sonia
-  AssignClass (285d3a9c-cb75-486f-b398-6ca94474d058)
- Call ID: 285d3a9c-cb75-486f-b398-6ca94474d058
-  Args:
-    type: :Person
-    source: Sonia
-  AssignClass (c315b71d-b847-4499-a5d1-6fda208bf53f)
- Call ID: c315b71d-b847-4499-a5d1-6fda208bf53f
+    target: :Prince_Philip_Duke_of_Edinburgh
+    source: :Margarita_of_Greece_and_Denmark
+    relation: :isSisterOf
+  AssignClass (04ed3b2b-db49-44ab-a453-d052ff7cee63)
+ Call ID: 04ed3b2b-db49-44ab-a453-d052ff7cee63
   Args:
     type: :Man
-    source: Manuel
-  AssignClass (96d8ca9e-70a7-4aeb-8cb9-82871a8d2722)
- Call ID: 96d8ca9e-70a7-4aeb-8cb9-82871a8d2722
+    source: :King_Charles_III
+  AssignClass (d9206312-054d-4d44-ba1d-1e676b4f6aed)
+ Call ID: d9206312-054d-4d44-ba1d-1e676b4f6aed
   Args:
+    source: :King_Charles_III
     type: :Person
-    source: Manuel
-  AssignClass (9be37878-c442-4661-be41-a9c4c6aae002)
- Call ID: 9be37878-c442-4661-be41-a9c4c6aae002
+  AssignClass (d76329d3-d1c0-4bdd-afc0-185fb7de0c53)
+ Call ID: d76329d3-d1c0-4bdd-afc0-185fb7de0c53
   Args:
     type: :Woman
-    source: Mencia
-  AssignClass (8e2b5bb9-18b2-4408-b23d-7639d55a8f43)
- Call ID: 8e2b5bb9-18b2-4408-b23d-7639d55a8f43
+    source: :Princess_Christina_of_Hesse
+  AssignClass (734ab7d8-e50d-4055-a759-742e2eda1b57)
+ Call ID: 734ab7d8-e50d-4055-a759-742e2eda1b57
+  Args:
+    source: :Princess_Christina_of_Hesse
+    type: :Person
+  AssignClass (72d18bd1-a09d-438a-bd39-d8e84901862d)
+ Call ID: 72d18bd1-a09d-438a-bd39-d8e84901862d
+  Args:
+    type: :Man
+    source: :Prince_Andrew_of_Yugoslavia
+  AssignClass (7ee4ff75-a0c8-4869-a7d6-803d4d31970a)
+ Call ID: 7ee4ff75-a0c8-4869-a7d6-803d4d31970a
   Args:
     type: :Person
-    source: Mencia
-  AssignClass (e76d4ab8-8b23-477f-a3c9-07833de49d68)
- Call ID: e76d4ab8-8b23-477f-a3c9-07833de49d68
+    source: :Prince_Andrew_of_Yugoslavia
+  AssignClass (0fe42a5b-faa8-4cca-922c-e86144bdd2ee)
+ Call ID: 0fe42a5b-faa8-4cca-922c-e86144bdd2ee
+  Args:
+    type: :Man
+    source: :Maximilian_Hereditary_Prince_of_Baden
+  AssignClass (a4b080a7-b440-41ed-bbfa-ffed142d061d)
+ Call ID: a4b080a7-b440-41ed-bbfa-ffed142d061d
+  Args:
+    source: :Maximilian_Hereditary_Prince_of_Baden
+    type: :Person
+  AssignClass (44ecc403-12d6-4f0a-aa82-fde3739d5a35)
+ Call ID: 44ecc403-12d6-4f0a-aa82-fde3739d5a35
+  Args:
+    type: :Woman
+    source: :Archduchess_Valerie_of_Austria
+  AssignClass (07c475cf-6cfc-4e04-8cd6-07fcc5d07a1f)
+ Call ID: 07c475cf-6cfc-4e04-8cd6-07fcc5d07a1f
   Args:
     type: :Person
-    source: Ines_Parent_Node
-  AssignClass (d02620ea-4525-4295-b42c-6a760e463c53)
- Call ID: d02620ea-4525-4295-b42c-6a760e463c53
+    source: :Archduchess_Valerie_of_Austria
+  AddLiteral (da47c084-7f3a-4104-a640-667fd9bdbc50)
+ Call ID: da47c084-7f3a-4104-a640-667fd9bdbc50
   Args:
-    type: :Ancestor
-    source: Ines_Parent_Node
-  AddTriple (36d6f070-d68b-4206-b27f-6a1133af7076)
- Call ID: 36d6f070-d68b-4206-b27f-6a1133af7076
-  Args:
-    relation: :hasChild
-    source: Ines_Parent_Node
-    target: Isabel
-  AddTriple (ddad8b45-0de3-45a3-ad87-dcd31d50292b)
- Call ID: ddad8b45-0de3-45a3-ad87-dcd31d50292b
-  Args:
-    relation: :hasChild
-    target: Eugenia
-    source: Ines_Parent_Node
-  AddTriple (d407a70d-8fdb-474a-9a07-b79904f13d0b)
- Call ID: d407a70d-8fdb-474a-9a07-b79904f13d0b
-  Args:
-    relation: :hasChild
-    target: Sonia
-    source: Ines_Parent_Node
-  AddTriple (283f0b16-86b8-42e0-aaf6-b186cb90284a)
- Call ID: 283f0b16-86b8-42e0-aaf6-b186cb90284a
-  Args:
-    target: Manuel
-    source: Ines_Parent_Node
-    relation: :hasChild
-  AddTriple (c0ee168d-50bb-4bc0-82cb-97e0323e2b5d)
- Call ID: c0ee168d-50bb-4bc0-82cb-97e0323e2b5d
-  Args:
-    target: Mencia
-    source: Ines_Parent_Node
-    relation: :hasChild
-  AddLiteral (88eabc9c-8f58-48ab-b769-b144e6465c3c)
- Call ID: 88eabc9c-8f58-48ab-b769-b144e6465c3c
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1969
+    source: :Maximilian_Hereditary_Prince_of_Baden
+    relation: :hasMarriageYear
+    literal_value: 1966
     literal_type: xsd:integer
-    source: Sonia
-  AddLiteral (1f70ddc9-5f72-4dd5-ab74-82e22b89eb05)
- Call ID: 1f70ddc9-5f72-4dd5-ab74-82e22b89eb05
+  AddTriple (5b4baabf-6c7d-4803-9ccf-85fbb2f87dc5)
+ Call ID: 5b4baabf-6c7d-4803-9ccf-85fbb2f87dc5
   Args:
-    relation: :hasDeathYear
-    literal_value: 2022
-    literal_type: xsd:integer
-    source: Sonia
+    source: :Maximilian_Hereditary_Prince_of_Baden
+    relation: :hasMother
+    target: :Archduchess_Valerie_of_Austria
+  AssignClass (85da8bed-f71b-4624-b829-11ac4332a555)
+ Call ID: 85da8bed-f71b-4624-b829-11ac4332a555
+  Args:
+    type: :Woman
+    source: :Margaret_Princess_of_Hesse_and_by_Rhine
+  AssignClass (4cbb4f2a-ab09-4c71-9a9e-1b7e93955b3e)
+ Call ID: 4cbb4f2a-ab09-4c71-9a9e-1b7e93955b3e
+  Args:
+    type: :Person
+    source: :Margaret_Princess_of_Hesse_and_by_Rhine
+  AssignClass (d70fa8e4-4453-4900-9439-cb2e7e9143ea)
+ Call ID: d70fa8e4-4453-4900-9439-cb2e7e9143ea
+  Args:
+    type: :Woman
+    source: :Princess_Cecilie
+  AssignClass (75b98efe-6a28-40e8-8a88-85a44d4a3cfd)
+ Call ID: 75b98efe-6a28-40e8-8a88-85a44d4a3cfd
+  Args:
+    source: :Princess_Cecilie
+    type: :Person
+  Finish (aa119cc3-7975-40a2-8baf-eceec77fdf54)
+ Call ID: aa119cc3-7975-40a2-8baf-eceec77fdf54
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -742,61 +727,47 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ines_Parent_Node a :Ancestor,
-          :Person ;
-      :hasChild data:Eugenia,
-          data:Isabel,
-          data:Manuel,
-          data:Mencia,
-          data:Sonia .
-
-  data:Princess_Ines a :Person,
+  data:Beatrix_of_Hohenlohe-Langenburg a :Person,
           :Woman ;
-      :hasBirthYear 1940 ;
-      :hasFather data:Infante_Alfonso ;
-      :hasMother data:Infanta_Alicia ;
-      :hasSex data:Female .
+      :hasBirthYear 1936 ;
+      :hasDeathYear 1997 ;
+      :hasFather data:Gottfried_of_Hohenlohe-Langenburg ;
+      :hasMother data:Margarita_of_Greece_and_Denmark .
 
-  data:Eugenia a :Person,
-          :Woman .
-
-  data:Infanta_Alicia a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1917 ;
-      :hasDeathYear 2017 ;
-      :hasSex data:Female .
-
-  data:Infante_Alfonso a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1901 ;
-      :hasDeathYear 1964 ;
-      :hasSex data:Male .
-
-  data:Isabel a :Person,
-          :Woman .
-
-  data:Manuel a :Man,
+  data:King_Charles_III a :Man,
           :Person .
 
-  data:Mencia a :Person,
+  data:Margaret_Princess_of_Hesse_and_by_Rhine a :Person,
           :Woman .
 
-  data:Sonia a :Person,
+  data:Maximilian_Hereditary_Prince_of_Baden a :Man,
+          :Person ;
+      :hasMarriageYear 1966 ;
+      :hasMother data:Archduchess_Valerie_of_Austria .
+
+  data:Prince_Andrew_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Princess_Cecilie a :Person,
+          :Woman .
+
+  data:Princess_Christina_of_Hesse a :Person,
+          :Woman .
+
+  data:Archduchess_Valerie_of_Austria a :Person,
+          :Woman .
+
+  data:Gottfried_of_Hohenlohe-Langenburg a :Ancestor,
+          :Man .
+
+  data:Margarita_of_Greece_and_Denmark a :Ancestor,
           :Woman ;
-      :hasBirthYear 1969 ;
-      :hasDeathYear 2022 .
+      :isSisterOf data:Prince_Philip_Duke_of_Edinburgh .
+
+  data:Prince_Philip_Duke_of_Edinburgh a :Man,
+          :Person .
 
 
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (05e42ff9-00e3-4312-b760-d34fc3188d4f)
- Call ID: 05e42ff9-00e3-4312-b760-d34fc3188d4f
-  Args:
 
 ================================= Tool Message =================================
 
@@ -806,254 +777,38 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (4769906e-0917-4560-990b-c5928b14e900)
- Call ID: 4769906e-0917-4560-990b-c5928b14e900
+  ValidateShacl (13ab6d4c-c8fd-4526-aaeb-de5272e46a87)
+ Call ID: 13ab6d4c-c8fd-4526-aaeb-de5272e46a87
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:30
+Total violations:3
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Alicia' is not correctly typed as an instance of the class ':Sex'.
+      The node 'Archduchess_Valerie_of_Austria' is currently not assigned the required class ':Ancestor', which is mandatory for the 'hasMother' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
+      AssignClass(node: 'Archduchess_Valerie_of_Austria', class: ':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Alfonso' is not correctly typed as an instance of the class ':Sex'.
+      The node 'Archduchess_Valerie_of_Austria' is currently not assigned the required class ':Ancestor', which is mandatory for the 'hasMother' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass("Male", ":Sex")
+      AssignClass(node: 'Archduchess_Valerie_of_Austria', class: ':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Alicia' is not correctly typed as an instance of the class ':Sex'.
+      The node 'Archduchess_Valerie_of_Austria' is currently not assigned the required class ':Ancestor', which is mandatory for the 'hasMother' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Alfonso' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Male", ":Sex")
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Alicia' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Alfonso' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Male", ":Sex")
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Alfonso' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Male", ":Sex")
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Alfonso' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Male", ":Sex")
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Alicia' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Ines' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Alfonso' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Male", ":Sex")
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Alicia' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Ines' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Alfonso' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Male", ":Sex")
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Alicia' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Ines' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Alfonso' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Male", ":Sex")
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Alicia' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Ines' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Alfonso' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Male", ":Sex")
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Alicia' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Ines' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Alfonso' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Male", ":Sex")
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Alicia' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Ines' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Alfonso' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Male", ":Sex")
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Ines' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Alicia' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Ines' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Alicia' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass("Female", ":Sex")
+      AssignClass(node: 'Archduchess_Valerie_of_Austria', class: ':Ancestor')
 
 
 
@@ -1062,23 +817,11 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (883fc183-a283-4e1d-903f-3ceef381d84c)
- Call ID: 883fc183-a283-4e1d-903f-3ceef381d84c
+  AssignClass (e7d40b96-b52d-4cda-98e7-4b171fc57ad7)
+ Call ID: e7d40b96-b52d-4cda-98e7-4b171fc57ad7
   Args:
-    source: Female
-    type: :Sex
-  AssignClass (d02de981-458a-4f2b-9e26-d03733971b38)
- Call ID: d02de981-458a-4f2b-9e26-d03733971b38
-  Args:
-    source: Male
-    type: :Sex
-  ValidateShacl (a165866f-aec1-4349-81ca-767392d00983)
- Call ID: a165866f-aec1-4349-81ca-767392d00983
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Archduchess_Valerie_of_Austria
+    type: :Ancestor
 
 ================================= Tool Message =================================
 
@@ -1087,57 +830,56 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ines_Parent_Node a :Ancestor,
-          :Person ;
-      :hasChild data:Eugenia,
-          data:Isabel,
-          data:Manuel,
-          data:Mencia,
-          data:Sonia .
-
-  data:Princess_Ines a :Person,
+  data:Beatrix_of_Hohenlohe-Langenburg a :Person,
           :Woman ;
-      :hasBirthYear 1940 ;
-      :hasFather data:Infante_Alfonso ;
-      :hasMother data:Infanta_Alicia ;
-      :hasSex data:Female .
+      :hasBirthYear 1936 ;
+      :hasDeathYear 1997 ;
+      :hasFather data:Gottfried_of_Hohenlohe-Langenburg ;
+      :hasMother data:Margarita_of_Greece_and_Denmark .
 
-  data:Eugenia a :Person,
-          :Woman .
-
-  data:Infanta_Alicia a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1917 ;
-      :hasDeathYear 2017 ;
-      :hasSex data:Female .
-
-  data:Infante_Alfonso a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1901 ;
-      :hasDeathYear 1964 ;
-      :hasSex data:Male .
-
-  data:Isabel a :Person,
-          :Woman .
-
-  data:Male a :Sex .
-
-  data:Manuel a :Man,
+  data:King_Charles_III a :Man,
           :Person .
 
-  data:Mencia a :Person,
+  data:Margaret_Princess_of_Hesse_and_by_Rhine a :Person,
           :Woman .
 
-  data:Sonia a :Person,
+  data:Maximilian_Hereditary_Prince_of_Baden a :Man,
+          :Person ;
+      :hasMarriageYear 1966 ;
+      :hasMother data:Archduchess_Valerie_of_Austria .
+
+  data:Prince_Andrew_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Princess_Cecilie a :Person,
+          :Woman .
+
+  data:Princess_Christina_of_Hesse a :Person,
+          :Woman .
+
+  data:Archduchess_Valerie_of_Austria a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Gottfried_of_Hohenlohe-Langenburg a :Ancestor,
+          :Man .
+
+  data:Margarita_of_Greece_and_Denmark a :Ancestor,
           :Woman ;
-      :hasBirthYear 1969 ;
-      :hasDeathYear 2022 .
+      :isSisterOf data:Prince_Philip_Duke_of_Edinburgh .
 
-  data:Female a :Sex .
+  data:Prince_Philip_Duke_of_Edinburgh a :Man,
+          :Person .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (b403c369-b80a-401d-9779-b18535f371d8)
+ Call ID: b403c369-b80a-401d-9779-b18535f371d8
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1147,6 +889,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (4a556cfb-c982-449c-8abf-ffc8a95d0c58)
- Call ID: 4a556cfb-c982-449c-8abf-ffc8a95d0c58
+  Finish (6ee66bca-cc93-4573-99c4-2bcd3224e643)
+ Call ID: 6ee66bca-cc93-4573-99c4-2bcd3224e643
   Args:

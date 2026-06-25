@@ -2,43 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Georg_Karl_Heinrich a :Man ;
-    :hasBirthYear 1933 ;
-    :hasDeathYear 1937 ;
-    :hasFather data:Georg_Donatus ;
-    :hasMother data:Cecilie_of_Greece_and_Denmark .
+data:Casper_Van_Dien a :Man,
+        :Person .
 
-data:Johanna_Marina_Eleonore a :Woman ;
-    :hasBirthYear 1936 ;
-    :hasDeathYear 1939 ;
-    :hasFather data:Georg_Donatus ;
-    :hasMother data:Cecilie_of_Greece_and_Denmark .
+data:Ellis_Jones a :Man,
+        :Person .
 
-data:Ludwig_Ernst_Andreas a :Man ;
-    :hasBirthYear 1931 ;
-    :hasDeathYear 1937 ;
-    :hasFather data:Georg_Donatus ;
-    :hasMother data:Cecilie_of_Greece_and_Denmark .
+data:India_Riven_Oxenberg a :Person,
+        :Woman ;
+    :hasFather data:William_Weitz_Shaffer ;
+    :hasMother data:Catherine_Oxenberg .
 
-data:Prince_Louis a :Man ;
-    :isBrotherOf data:Georg_Donatus .
+data:Prince_Paul_of_Yugoslavia a :Man,
+        :Person ;
+    :isFatherOf data:Princess_Elizabeth_of_Yugoslavia .
 
-data:Eleonore_of_Solms-Hohensolms-Lich a :Woman .
+data:Princess_Olga_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :isMotherOf data:Princess_Elizabeth_of_Yugoslavia .
 
-data:Ernest_Louis a :Man .
+data:Robert_Evans a :Man,
+        :Person ;
+    :hasMarriageYear 1998 .
 
-data:Prince_Andrew_of_Greece_and_Denmark a :Man .
+data:Catherine_Oxenberg a :Person,
+        :Woman ;
+    :hasBirthYear 1961 ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasSister data:Christina_Oxenberg .
 
-data:Princess_Alice_of_Battenberg a :Woman .
+data:Christina_Oxenberg a :Person,
+        :Woman ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia .
 
-data:Cecilie_of_Greece_and_Denmark a :Woman ;
-    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-    :hasMother data:Princess_Alice_of_Battenberg .
+data:William_Weitz_Shaffer a :Man,
+        :Person .
 
-data:Georg_Donatus a :Man ;
-    :hasBirthYear 1906 ;
-    :hasDeathYear 1937 ;
-    :hasFather data:Ernest_Louis ;
-    :hasMarriageYear 1931 ;
-    :hasMother data:Eleonore_of_Solms-Hohensolms-Lich .
+data:Howard_Oxenberg a :Man,
+        :Person ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 2010 .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Person,
+        :Woman ;
+    :hasBirthYear 1936 .
 

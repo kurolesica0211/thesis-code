@@ -85,34 +85,95 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Louis Ferdinand, Prince of Prussia (German: Louis Ferdinand Victor Eduard Adalbert Michael Hubertus Prinz von Preußen; 9 November 1907 –  26 September 1994) was a grandson of Kaiser Wilhelm II and member of the  House of Hohenzollern, which occupied the Prussian and German thrones until the abolition of those monarchies in 1918.
-Biography
+Prince John of the United Kingdom (John Charles Francis; 12 July 1905 – 18 January 1919) was the fifth son and youngest of the six children of King George V and Queen Mary.
+At the time of his birth, his father was heir apparent to John's grandfather Edward VII.
+In 1910, John's father acceded to the throne upon Edward VII's death, and John became fifth in the line of succession to the British throne.
+In 1909, it was discovered that John had epilepsy.
+John's seclusion was subsequently brought forward as evidence of the royal family's inhumanity.
+However, contrary to the belief that he was hidden from an early age, John was a fully-fledged member of the family for most of his life, appearing frequently in public until after his 11th birthday, when his condition became severe.
+Birth
 
-Louis Ferdinand was born in Potsdam as the third in succession to the throne of the German Empire, after his father, German Crown Prince William and elder brother Prince Wilhelm of Prussia.
-When Louis Ferdinand's older brother Prince Wilhelm renounced his succession rights to marry a member of the untitled nobility in 1933 (he was later to be killed in action in France in 1940 while fighting in the German army), Louis Ferdinand replaced him as second in the line of succession to the defunct German and Prussian thrones after the former Crown Prince.
-Louis Ferdinand was educated in Berlin and deviated from his family's tradition by not pursuing a military career.
-Louis Ferdinand dissociated himself from the Nazis after this.
-He married his second cousin, Grand Duchess Kira Kirillovna of Russia, in 1938 in first a Russian Orthodox ceremony in Potsdam and then a Lutheran ceremony in Huis Doorn, Netherlands.
-Kira was the second daughter of Grand Duke Kyril Vladimirovich and Princess Victoria Melita of Saxe-Coburg and Gotha.
-His third son and heir apparent, Prince Louis Ferdinand, died in 1977 during military maneuvers, and thus his one-year-old grandson Georg Friedrich, Prince of Prussia (son of Prince Louis Ferdinand) became the new heir apparent to the defunct Prussian and German Imperial throne.
-Upon Louis Ferdinand's death in 1994, Georg Friedrich became the pretender to the defunct thrones and head of the Hohenzollern family.
-The prince was a popular figure.
-In 1968 Der Spiegel reported that in a survey of their readers by Quick magazine about who would be the most honorable person to become President of the Federal Republic of Germany, Louis Ferdinand, the only one of twelve candidates who was not a politician, won with 39.8% before Carlo Schmid and Ludwig Erhard.
-In a similar survey by the tabloid Bild, readers chose Louis Ferdinand by 55.6%.
-In an interview with Quick, the prince indicated that he might accept the presidency but would not relinquish his claim to the imperial or Prussian crowns.
-After German reunification, he arranged for Prussian King Frederick the Great to be reburied from the Christ Chapel at Hohenzollern Castle to the crypt chamber prepared by Frederick himself on the terrace of his Sanssouci Palace in Potsdam.
-Instead of complying with his last wish after his death, the king had been laid to rest in the Garrison Church, Potsdam next to his unloved father Frederick William I of Prussia in 1786.
-Both coffins were relocated during World War II and ended up in the prince's castle in what became West Germany.
-The prince had Frederick William I's coffin taken to the crypt of the Church of Peace, Potsdam because the Garrison Church had been destroyed in 1945.
-In interviews with C.L. Sulzberger for the book The Fall of Eagles, Louis Ferdinand expressed a deep sense of admiration for the informal bicycle monarchy and crowned republic style favored and used by the Dutch, Belgian, and Scandinavian royal families.
-Praising how vehicles carrying the King or Queen would stop and wait at traffic lights, Louis Ferdinand stated that if the House of Hohenzollern were ever restored to the German throne during his lifetime, this same informality was a quality he fully intended to emulate.
-Prince Ferdinand of Hohenzollern, a member of the senior Swabian branch of the Hohenzollern dynasty, Hohenzollern-Sigmaringen, is his godson.
+John was born at 3:05 am on 12 July 1905 at York Cottage on the Sandringham Estate, during the reign of his paternal grandfather, King Edward VII.
+He was the youngest child and fifth son of George, Prince of Wales (later King George V), and Mary, Princess of Wales (later Queen Mary).
+He was named John despite the name's traditionally unlucky associations within the royal family, and was informally known as Johnnie.
+As a grandchild in the male line of the reigning British monarch, and a son of the Prince of Wales, he was formally styled His Royal Highness Prince John of Wales from birth until his father's accession to the throne in 1910.
+John was christened on 3 August in the parish church of St Mary Magdalene at Sandringham, with the Reverend Canon John Neale Dalton officiating.
+His godparents were King Carlos I of Portugal; his uncles Prince Carl of Denmark and Alexander Duff, 1st Duke of Fife; his great-granduncle Prince Johann of Schleswig-Holstein-Sonderburg-Glücksburg; and three of his first cousins once removed, the Duke and Duchess of Sparta, and Princess Alice, Countess of Athlone.
+John's father stood proxy for King Carlos, Prince Carl, Prince Johann, and the Duke of Fife, while his aunt Princess Victoria stood proxy for the Duchess of Sparta and Princess Alice.
+Childhood and illness
+
+Much of John's early life was spent at Sandringham with his siblings – ​Prince Edward (known as David, later King Edward VIII), Prince Albert (known as Bertie, later King George VI), Princess Mary, Prince Henry, and Prince George – ​under the care of their nanny Charlotte "Lala" Bill.
+In 1909, John's grandaunt, the Dowager Empress of Russia, wrote to her son Tsar Nicholas II that "George's children are very nice ...
+The little ones, George and Johnny are both charming and very amusing".
+John's aunt Princess Alice, Countess of Athlone described him as "very quaint and one evening when Uncle George returned from stalking he bent over Aunt May and kissed her, and they heard Johnny soliloquize, 'She kissed Papa, ugly old man!'"
+George V once told U.S. President Theodore Roosevelt that "all  children  obedient, except John" – ​apparently because he alone, among the royal children, escaped punishment from their father.
+Though a "large and handsome" baby, John had become "winsome" and "painfully slow" by his fourth birthday.
+When his father became king, John did not attend his parents' coronation on 22 June 1911, as this was considered too risky for his health; cynics suggested that the family feared their reputation might be damaged by any incident involving him.
+Although John was deemed not "presentable to the outside world," the king continued to show interest in him, offering him "kindness and affection".
+During his years at Sandringham, John exhibited repetitive behaviours as well as regular misbehaviour and insubordination; as one account put it, "he simply didn't understand he needed to .
+"
+
+
+In 1912, Prince George, John's closest sibling, began St Peter's Court Preparatory School in Broadstairs.
+The following summer, The Times reported that John would not attend Broadstairs the next term, and that the King and Queen had not yet decided whether to send him to school at all.
+After the outbreak of World War I, John rarely saw his parents, who were often away on official duties, or his siblings, who were either at boarding school or serving in the military.
+Wood Farm
+
+In 1916, as his seizures became more frequent and severe, John was sent to live at Wood Farm, where Bill assumed responsibility for his care.
+At Wood Farm, John became, in the words of one biographer, "a satellite with his own little household on an outlying farm on the Sandringham estate ...
+"
+
+
+After the summer of 1916, John was rarely seen outside the Sandringham estate and passed entirely into Bill's care.
+When Queen Alexandra wrote that John "is very proud of his house but is longing for a companion", Queen Mary departed from usual royal practice by arranging for local children to be brought in as playmates.
+One of these was Winifred Thomas, a young girl from Halifax who had been sent to live with her aunt and uncle, who managed the royal stables at Sandringham, in the hope that her asthma would improve.
+John had known Winifred years earlier, before World War I.
+John also played with his elder siblings during their visits; on one occasion, when his two eldest brothers came to see him, the Prince of Wales "took him for a run in a kind of a push-cart, and they both disappeared from view.
+"
+
+
+Death
+
+John's seizures intensified, and Bill later wrote "we dared not let him be with his brothers and sister, because it upsets them so much, with the attacks getting so bad and coming so often."
+Biographer Denis Judd writes that John's "seclusion and "abnormality" must have been disturbing to his brothers and sister", noting that he had been "a friendly, outgoing little boy, much loved by his brothers and sister, a sort of mascot for the family".
+On 18 January 1919, after a severe seizure, John died in his sleep at Wood Farm at 5:30 pm, aged 13.
+Queen Mary wrote in her diary that the news was:
+
+a great shock, tho' for the poor little boy's restless soul, death came as a great relief.
+broke the news to George and  motored down to Wood Farm.
+Mary later wrote to Emily Alcock, an old friend, that:
+
+for  it is a great relief, as his malady was becoming worse as he grew older, & he has thus been spared much suffering.
+George described his son's death as "the greatest mercy possible".
+On 20 January, the Daily Mirror reported that "when the Prince passed away his face bore an angelic smile"; the article also made the first public mention of John's epilepsy.
+His funeral took place the next day at St Mary Magdalene parish church, with John Neale Dalton officiating.
+Queen Mary wrote:
+
+Canon Dalton & Dr Brownhill  conducted the service which was awfully sad and touching.
+Queen Alexandra wrote to Queen Mary that "now  two darling Johnnies lie side by side".
+Legacy
+
+
+Edward, who was 11 years older than John and had hardly known him, regarded his brother's death as "little more than a regrettable nuisance."
+He wrote an insensitive letter to Queen Mary, now lost, to which she did not reply.
+In her final diary reference to John, Mary wrote simply: "miss the dear child very much indeed."
+She gave Winifred Thomas several of John's books, inscribed "In memory of our dear little Prince."
+Bill kept a portrait of John above her mantelpiece, together with a letter from him that read "nanny, I love you."
+In the 21st century, John's seclusion has been cited as evidence of the Windsors' "heartlessness".
+One author has written that the royal family believed such afflictions might pass through their blood, which was then still regarded as purer than that of a commoner, and therefore wished to conceal as much as possible about John's illness.
+Others have suggested that John was sent to Wood Farm to provide him with the best environment available under the "austere" conditions of World War I.
+Another author has stated that the family were "frightened and ashamed of John's illness", while yet another has noted that John's life is "usually portrayed either as tragedy or conspiracy".
+At the time of Edward VIII's abdication, an attempt was made to discredit Albert, now George VI, by implying that he suffered from falling fits like John.
+In 1998, the discovery of two volumes of family photographs briefly returned John to public attention.
+The Lost Prince, a biographical drama about John's life written and directed by Stephen Poliakoff, was released in 2003.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -128,39 +189,9 @@ Prince Ferdinand of Hohenzollern, a member of the senior Swabian branch of the H
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -175,6 +206,23 @@ Prince Ferdinand of Hohenzollern, a member of the senior Swabian branch of the H
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -192,6 +240,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -259,29 +322,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -290,6 +345,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -302,6 +365,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -310,17 +375,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -348,6 +415,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -363,192 +514,182 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (3368140a-a707-49b2-a6a7-053adabbf374)
- Call ID: 3368140a-a707-49b2-a6a7-053adabbf374
+  AssignClass (6ab3687a-f5f7-4c60-8899-43198405c571)
+ Call ID: 6ab3687a-f5f7-4c60-8899-43198405c571
   Args:
+    source: Prince_John
     type: :Man
-    source: Louis_Ferdinand_Prince_of_Prussia
-  AssignClass (a6970324-c308-430a-b690-fb04d9ef9449)
- Call ID: a6970324-c308-430a-b690-fb04d9ef9449
+  AssignClass (ff360652-458e-42ed-a1a7-725d366b55ed)
+ Call ID: ff360652-458e-42ed-a1a7-725d366b55ed
   Args:
+    source: Prince_John
     type: :Person
-    source: Louis_Ferdinand_Prince_of_Prussia
-  AddLiteral (5524d1bd-33dc-4091-8cfb-f3f0e69528f5)
- Call ID: 5524d1bd-33dc-4091-8cfb-f3f0e69528f5
+  AddLiteral (fbf7c293-ec98-436b-8bd6-ea30ae26b29b)
+ Call ID: fbf7c293-ec98-436b-8bd6-ea30ae26b29b
   Args:
-    literal_value: Male
-    relation: :hasSex
-    source: Louis_Ferdinand_Prince_of_Prussia
-    literal_type: xsd:string
-  AddLiteral (ec8b57f0-2614-4858-ae14-f0f9574c4422)
- Call ID: ec8b57f0-2614-4858-ae14-f0f9574c4422
-  Args:
+    literal_value: 1905
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1907
-    literal_type: xsd:integer
-    source: Louis_Ferdinand_Prince_of_Prussia
-  AddLiteral (80bec724-5e90-4878-a33c-aafb6f4d48c0)
- Call ID: 80bec724-5e90-4878-a33c-aafb6f4d48c0
+    source: Prince_John
+  AddLiteral (112fd2a8-90fe-46d9-bd79-19c1a7c1c62a)
+ Call ID: 112fd2a8-90fe-46d9-bd79-19c1a7c1c62a
   Args:
-    literal_value: 1994
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    source: Louis_Ferdinand_Prince_of_Prussia
-    literal_type: xsd:integer
-  AssignClass (a7a513f7-cfb7-4f98-bb6f-c1ea2fb8023c)
- Call ID: a7a513f7-cfb7-4f98-bb6f-c1ea2fb8023c
+    literal_value: 1919
+    source: Prince_John
+  AddLiteral (c81dd5a6-e9d8-4c4f-8dd3-bc01bb5a8d21)
+ Call ID: c81dd5a6-e9d8-4c4f-8dd3-bc01bb5a8d21
   Args:
+    literal_value: Johnnie
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    source: Prince_John
+  AssignClass (2c6f8df5-859c-422f-93cd-b9ae08496547)
+ Call ID: 2c6f8df5-859c-422f-93cd-b9ae08496547
+  Args:
+    source: King_George_V
     type: :Man
-    source: Kaiser_Wilhelm_II
-  AssignClass (6255f8bb-f8e1-4b2a-8a01-819f86c8e2f4)
- Call ID: 6255f8bb-f8e1-4b2a-8a01-819f86c8e2f4
+  AssignClass (225cb610-0e32-4464-a102-fd90f1699d49)
+ Call ID: 225cb610-0e32-4464-a102-fd90f1699d49
   Args:
-    source: Kaiser_Wilhelm_II
+    source: King_George_V
     type: :Person
-  AddTriple (ed3aa3d3-9327-4ccc-96c5-5feac0802ff6)
- Call ID: ed3aa3d3-9327-4ccc-96c5-5feac0802ff6
+  AssignClass (c9981a44-9d75-4157-bbe5-e3c50c15f32a)
+ Call ID: c9981a44-9d75-4157-bbe5-e3c50c15f32a
   Args:
-    target: Kaiser_Wilhelm_II
-    relation: :hasAncestor
-    source: Louis_Ferdinand_Prince_of_Prussia
-  AssignClass (91e5f063-405c-4389-b9f4-a75ac368a0ac)
- Call ID: 91e5f063-405c-4389-b9f4-a75ac368a0ac
-  Args:
-    source: German_Crown_Prince_William
-    type: :Man
-  AssignClass (950f4be3-f9da-4f06-ab25-54570e1f4c77)
- Call ID: 950f4be3-f9da-4f06-ab25-54570e1f4c77
-  Args:
-    source: German_Crown_Prince_William
-    type: :Person
-  AddTriple (37e70d90-5e5a-44e1-9a13-5c7e7cbd22ac)
- Call ID: 37e70d90-5e5a-44e1-9a13-5c7e7cbd22ac
-  Args:
-    target: German_Crown_Prince_William
-    relation: :hasFather
-    source: Louis_Ferdinand_Prince_of_Prussia
-  AssignClass (66d70771-a2ba-4da5-b00f-4412c318cdf2)
- Call ID: 66d70771-a2ba-4da5-b00f-4412c318cdf2
-  Args:
-    type: :Man
-    source: Prince_Wilhelm_of_Prussia
-  AssignClass (e629d275-2f07-41d2-9439-eb7103da16d3)
- Call ID: e629d275-2f07-41d2-9439-eb7103da16d3
-  Args:
-    type: :Person
-    source: Prince_Wilhelm_of_Prussia
-  AddTriple (1638bfe2-d327-4990-b9ae-acecacb82794)
- Call ID: 1638bfe2-d327-4990-b9ae-acecacb82794
-  Args:
-    target: Prince_Wilhelm_of_Prussia
-    relation: :hasBrother
-    source: Louis_Ferdinand_Prince_of_Prussia
-  AssignClass (41b05441-6cfc-424a-9581-36688ece87ba)
- Call ID: 41b05441-6cfc-424a-9581-36688ece87ba
-  Args:
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
+    source: Queen_Mary
     type: :Woman
-  AssignClass (7bd2bca9-c938-4a80-8733-910a4e80b5a2)
- Call ID: 7bd2bca9-c938-4a80-8733-910a4e80b5a2
+  AssignClass (c9eec44f-e139-48fc-96df-c6b5fde23e7c)
+ Call ID: c9eec44f-e139-48fc-96df-c6b5fde23e7c
   Args:
+    source: Queen_Mary
     type: :Person
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
-  AddTriple (29c356c0-a85c-403c-955d-0ef86f5a4e06)
- Call ID: 29c356c0-a85c-403c-955d-0ef86f5a4e06
+  AddTriple (cd81dd8c-e197-4ee8-8372-1ea811a47542)
+ Call ID: cd81dd8c-e197-4ee8-8372-1ea811a47542
   Args:
-    target: Grand_Duchess_Kira_Kirillovna_of_Russia
-    relation: :hasRelation
-    source: Louis_Ferdinand_Prince_of_Prussia
-  AddLiteral (be3ad3ec-6fab-468b-84ce-f575d36aee2a)
- Call ID: be3ad3ec-6fab-468b-84ce-f575d36aee2a
-  Args:
-    literal_value: 1938
-    relation: :hasMarriageYear
-    source: Louis_Ferdinand_Prince_of_Prussia
-    literal_type: xsd:integer
-  AssignClass (1c134273-06ea-4bcb-b534-477da65a7dba)
- Call ID: 1c134273-06ea-4bcb-b534-477da65a7dba
-  Args:
-    type: :Man
-    source: Grand_Duke_Kyril_Vladimirovich
-  AssignClass (8144679d-9657-4ccf-9d18-cd32d148526a)
- Call ID: 8144679d-9657-4ccf-9d18-cd32d148526a
-  Args:
-    source: Grand_Duke_Kyril_Vladimirovich
-    type: :Person
-  AssignClass (85570347-99b0-4a26-9c79-73ac248a80d8)
- Call ID: 85570347-99b0-4a26-9c79-73ac248a80d8
-  Args:
-    source: Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha
-    type: :Woman
-  AssignClass (26c1ae8b-760e-4ef8-a236-71c542cb0925)
- Call ID: 26c1ae8b-760e-4ef8-a236-71c542cb0925
-  Args:
-    type: :Person
-    source: Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha
-  AddTriple (dbac13c7-66f4-43af-a4ef-de45150651ed)
- Call ID: dbac13c7-66f4-43af-a4ef-de45150651ed
-  Args:
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
+    target: King_George_V
+    source: Prince_John
     relation: :hasFather
-    target: Grand_Duke_Kyril_Vladimirovich
-  AddTriple (6e2bc5c3-4c5a-4aa0-9b2d-6836e4dacd77)
- Call ID: 6e2bc5c3-4c5a-4aa0-9b2d-6836e4dacd77
+  AddTriple (c486890e-f844-4a1e-a75a-c3229674d890)
+ Call ID: c486890e-f844-4a1e-a75a-c3229674d890
   Args:
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
-    target: Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha
+    target: Queen_Mary
+    source: Prince_John
     relation: :hasMother
-  AssignClass (e5996cf0-f9f2-4c91-b418-c10c7298fdc9)
- Call ID: e5996cf0-f9f2-4c91-b418-c10c7298fdc9
+  AssignClass (82fb634c-8b4d-476a-8cc7-76ec0ea462da)
+ Call ID: 82fb634c-8b4d-476a-8cc7-76ec0ea462da
   Args:
-    source: Prince_Louis_Ferdinand_son
+    source: Edward_VII
     type: :Man
-  AssignClass (baa28a55-445c-4c63-8daf-4e240bb39e71)
- Call ID: baa28a55-445c-4c63-8daf-4e240bb39e71
+  AssignClass (22937060-5890-4166-9fc6-7728ed762de7)
+ Call ID: 22937060-5890-4166-9fc6-7728ed762de7
   Args:
-    source: Prince_Louis_Ferdinand_son
+    source: Edward_VII
     type: :Person
-  AddTriple (964f0390-22f2-4f25-81b8-1755e8c54666)
- Call ID: 964f0390-22f2-4f25-81b8-1755e8c54666
+  AddTriple (8de239c2-9850-41aa-bedd-6c2e48b8ea96)
+ Call ID: 8de239c2-9850-41aa-bedd-6c2e48b8ea96
   Args:
-    relation: :hasSon
-    target: Prince_Louis_Ferdinand_son
-    source: Louis_Ferdinand_Prince_of_Prussia
-  AddLiteral (918f9b45-8fd8-4403-af5b-50eba227dd3c)
- Call ID: 918f9b45-8fd8-4403-af5b-50eba227dd3c
-  Args:
-    literal_type: xsd:integer
-    source: Prince_Louis_Ferdinand_son
-    relation: :hasDeathYear
-    literal_value: 1977
-  AssignClass (353b1dce-e5c7-41de-9255-aa2442befc3b)
- Call ID: 353b1dce-e5c7-41de-9255-aa2442befc3b
-  Args:
-    source: Georg_Friedrich_Prince_of_Prussia
-    type: :Man
-  AssignClass (b1e10f19-9c38-44ae-ae81-814ba65c5b06)
- Call ID: b1e10f19-9c38-44ae-ae81-814ba65c5b06
-  Args:
-    type: :Person
-    source: Georg_Friedrich_Prince_of_Prussia
-  AddTriple (53f7176a-6763-4a8f-be9e-f880acfcfc0f)
- Call ID: 53f7176a-6763-4a8f-be9e-f880acfcfc0f
-  Args:
-    source: Georg_Friedrich_Prince_of_Prussia
-    target: Prince_Louis_Ferdinand_son
     relation: :hasFather
-  AddTriple (43f6563c-1491-414f-8294-1d3f20b03b34)
- Call ID: 43f6563c-1491-414f-8294-1d3f20b03b34
+    source: King_George_V
+    target: Edward_VII
+  AssignClass (5037c89a-1020-49ab-8460-9f23225bc9c3)
+ Call ID: 5037c89a-1020-49ab-8460-9f23225bc9c3
   Args:
-    source: Prince_Louis_Ferdinand_son
-    target: Georg_Friedrich_Prince_of_Prussia
-    relation: :hasSon
-  Finish (e2b3a408-224d-4b10-aaa6-9dff6b5dc491)
- Call ID: e2b3a408-224d-4b10-aaa6-9dff6b5dc491
+    source: Prince_Edward
+    type: :Man
+  AssignClass (4486f505-2768-4faf-be7e-4ff7f2837990)
+ Call ID: 4486f505-2768-4faf-be7e-4ff7f2837990
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Prince_Edward
+    type: :Person
+  AddLiteral (caff60dc-99de-466f-b854-bca1906d039e)
+ Call ID: caff60dc-99de-466f-b854-bca1906d039e
+  Args:
+    literal_value: David
+    literal_type: xsd:string
+    relation: :alsoKnownAs
+    source: Prince_Edward
+  AssignClass (8b4d3b1a-cc5e-4505-9cfe-414b6eed687e)
+ Call ID: 8b4d3b1a-cc5e-4505-9cfe-414b6eed687e
+  Args:
+    source: Prince_Albert
+    type: :Man
+  AssignClass (98746d11-4dfa-4834-b6ba-a456d081a272)
+ Call ID: 98746d11-4dfa-4834-b6ba-a456d081a272
+  Args:
+    source: Prince_Albert
+    type: :Person
+  AddLiteral (d0b4b8c8-6f58-4ce3-8632-46296f1ee05e)
+ Call ID: d0b4b8c8-6f58-4ce3-8632-46296f1ee05e
+  Args:
+    literal_value: Bertie
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    source: Prince_Albert
+  AssignClass (5dd326a8-4617-493b-a707-77baad7f1552)
+ Call ID: 5dd326a8-4617-493b-a707-77baad7f1552
+  Args:
+    source: Princess_Mary
+    type: :Woman
+  AssignClass (6441ec20-65e7-4b5e-8450-0f653630318c)
+ Call ID: 6441ec20-65e7-4b5e-8450-0f653630318c
+  Args:
+    source: Princess_Mary
+    type: :Person
+  AssignClass (9cad515f-800c-4679-be53-9bbbebebfa8d)
+ Call ID: 9cad515f-800c-4679-be53-9bbbebebfa8d
+  Args:
+    source: Prince_Henry
+    type: :Man
+  AssignClass (c2b33690-5742-439b-96c0-501e32003ee5)
+ Call ID: c2b33690-5742-439b-96c0-501e32003ee5
+  Args:
+    source: Prince_Henry
+    type: :Person
+  AssignClass (17491559-a0e9-4035-b086-4a711ebfdacc)
+ Call ID: 17491559-a0e9-4035-b086-4a711ebfdacc
+  Args:
+    source: Prince_George
+    type: :Man
+  AssignClass (0c5706b8-33fa-4ebb-93d5-70e6b24cd193)
+ Call ID: 0c5706b8-33fa-4ebb-93d5-70e6b24cd193
+  Args:
+    source: Prince_George
+    type: :Person
+  AddTriple (f32e3bfc-71c2-41a4-99a1-8aab5079c027)
+ Call ID: f32e3bfc-71c2-41a4-99a1-8aab5079c027
+  Args:
+    relation: :isSiblingOf
+    source: Prince_John
+    target: Prince_Edward
+  AddTriple (53fd1ddb-4d3c-4593-95be-70e54404d857)
+ Call ID: 53fd1ddb-4d3c-4593-95be-70e54404d857
+  Args:
+    target: Prince_Albert
+    source: Prince_John
+    relation: :isSiblingOf
+  AddTriple (86d8f6bb-6076-43b2-99aa-694ee6c2a9cc)
+ Call ID: 86d8f6bb-6076-43b2-99aa-694ee6c2a9cc
+  Args:
+    relation: :isSiblingOf
+    source: Prince_John
+    target: Princess_Mary
+  AddTriple (be8115df-2d71-4bbe-b3c4-df59031bebe7)
+ Call ID: be8115df-2d71-4bbe-b3c4-df59031bebe7
+  Args:
+    target: Prince_Henry
+    source: Prince_John
+    relation: :isSiblingOf
+  AddTriple (8d5e0011-9257-464b-aef8-7d2b2a29deae)
+ Call ID: 8d5e0011-9257-464b-aef8-7d2b2a29deae
+  Args:
+    relation: :isSiblingOf
+    target: Prince_George
+    source: Prince_John
+  Finish (b256f1ff-20c7-4e2f-a15e-af811add62a2)
+ Call ID: b256f1ff-20c7-4e2f-a15e-af811add62a2
+  Args:
 
 ================================= Tool Message =================================
 
@@ -677,46 +818,45 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+  data:Prince_John a :Man,
           :Person ;
-      :hasAncestor data:Kaiser_Wilhelm_II ;
-      :hasBirthYear 1907 ;
-      :hasBrother data:Prince_Wilhelm_of_Prussia ;
-      :hasDeathYear 1994 ;
-      :hasFather data:German_Crown_Prince_William ;
-      :hasMarriageYear 1938 ;
-      :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
-      :hasSex "Male"^^xsd:string ;
-      :hasSon data:Prince_Louis_Ferdinand_son .
+      :alsoKnownAs "Johnnie"^^xsd:string ;
+      :hasBirthYear 1905 ;
+      :hasDeathYear 1919 ;
+      :hasFather data:King_George_V ;
+      :hasMother data:Queen_Mary ;
+      :isSiblingOf data:Prince_Albert,
+          data:Prince_Edward,
+          data:Prince_George,
+          data:Prince_Henry,
+          data:Princess_Mary .
 
-  data:Georg_Friedrich_Prince_of_Prussia a :Man,
+  data:Edward_VII a :Man,
+          :Person .
+
+  data:King_George_V a :Man,
           :Person ;
-      :hasFather data:Prince_Louis_Ferdinand_son .
+      :hasFather data:Edward_VII .
 
-  data:German_Crown_Prince_William a :Man,
+  data:Prince_Albert a :Man,
+          :Person ;
+      :alsoKnownAs "Bertie"^^xsd:string .
+
+  data:Prince_Edward a :Man,
+          :Person ;
+      :alsoKnownAs "David"^^xsd:string .
+
+  data:Prince_George a :Man,
           :Person .
 
-  data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,
-          :Woman ;
-      :hasFather data:Grand_Duke_Kyril_Vladimirovich ;
-      :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
-
-  data:Grand_Duke_Kyril_Vladimirovich a :Man,
+  data:Prince_Henry a :Man,
           :Person .
 
-  data:Kaiser_Wilhelm_II a :Man,
-          :Person .
-
-  data:Prince_Wilhelm_of_Prussia a :Man,
-          :Person .
-
-  data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person,
+  data:Princess_Mary a :Person,
           :Woman .
 
-  data:Prince_Louis_Ferdinand_son a :Man,
-          :Person ;
-      :hasDeathYear 1977 ;
-      :hasSon data:Georg_Friedrich_Prince_of_Prussia .
+  data:Queen_Mary a :Person,
+          :Woman .
 
 
 
@@ -728,198 +868,86 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (5056d24f-814f-43f1-964e-b5c582fdb94a)
- Call ID: 5056d24f-814f-43f1-964e-b5c582fdb94a
+  ValidateShacl (fd72893b-9752-4fc3-90f7-ac32c48d6475)
+ Call ID: fd72893b-9752-4fc3-90f7-ac32c48d6475
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:23
+Total violations:9
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of the required class ':Sex'.
+      The entity Edward_VII is assigned as the father of King_George_V, but Edward_VII is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Sex' to node 'Male'.
+      AssignClass(node='Edward_VII', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Kaiser_Wilhelm_II' for the property 'hasAncestor' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of the required class ':Ancestor'.
+      The entity King_George_V is assigned as the father of Prince_John, but King_George_V is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'Kaiser_Wilhelm_II'.
+      AssignClass(node='King_George_V', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'German_Crown_Prince_William' for the property 'hasFather' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of either ':Ancestor' or ':Man'.
+      The entity Queen_Mary is assigned as the mother of Prince_John, but Queen_Mary is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'German_Crown_Prince_William'.
+      AssignClass(node='Queen_Mary', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Prince_Louis_Ferdinand_son' for the property 'hasFather' on node 'Georg_Friedrich_Prince_of_Prussia' is not an instance of either ':Ancestor' or ':Man'.
+      The entity King_George_V is assigned as the father of Prince_John, but King_George_V is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'Prince_Louis_Ferdinand_son'.
+      AssignClass(node='King_George_V', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of the required class ':Sex'.
+      The entity Edward_VII is assigned as the father of King_George_V, but Edward_VII is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Sex' to node 'Male'.
+      AssignClass(node='Edward_VII', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of the required class ':Sex'.
+      The entity Queen_Mary is assigned as the mother of Prince_John, but Queen_Mary is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Sex' to node 'Male'.
+      AssignClass(node='Queen_Mary', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Kaiser_Wilhelm_II' for the property 'hasAncestor' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of the required class ':Ancestor'.
+      The entity King_George_V is assigned as the father of Prince_John, but King_George_V is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'Kaiser_Wilhelm_II'.
+      AssignClass(node='King_George_V', class=':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'German_Crown_Prince_William' for the property 'hasFather' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of either ':Ancestor' or ':Man'.
+      The entity Edward_VII is assigned as the father of King_George_V, but Edward_VII is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'German_Crown_Prince_William'.
+      AssignClass(node='Edward_VII', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Louis_Ferdinand_son' for the property 'hasFather' on node 'Georg_Friedrich_Prince_of_Prussia' is not an instance of either ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'Prince_Louis_Ferdinand_son'.
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Grand_Duke_Kyril_Vladimirovich' for the property 'hasFather' on node 'Grand_Duchess_Kira_Kirillovna_of_Russia' is not an instance of either ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'Grand_Duke_Kyril_Vladimirovich'.
-
-
-  Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha' for the property 'hasMother' on node 'Grand_Duchess_Kira_Kirillovna_of_Russia' is not an instance of either ':Ancestor' or ':Woman'.
+      The entity Queen_Mary is assigned as the mother of Prince_John, but Queen_Mary is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha'.
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Sex' to node 'Male'.
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Sex' to node 'Male'.
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Sex' to node 'Male'.
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Kaiser_Wilhelm_II' for the property 'hasAncestor' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'Kaiser_Wilhelm_II'.
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'German_Crown_Prince_William' for the property 'hasFather' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of either ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'German_Crown_Prince_William'.
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Louis_Ferdinand_son' for the property 'hasFather' on node 'Georg_Friedrich_Prince_of_Prussia' is not an instance of either ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'Prince_Louis_Ferdinand_son'.
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Grand_Duke_Kyril_Vladimirovich' for the property 'hasFather' on node 'Grand_Duchess_Kira_Kirillovna_of_Russia' is not an instance of either ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'Grand_Duke_Kyril_Vladimirovich'.
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha' for the property 'hasMother' on node 'Grand_Duchess_Kira_Kirillovna_of_Russia' is not an instance of either ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha'.
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Sex' to node 'Male'.
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Sex' to node 'Male'.
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Grand_Duke_Kyril_Vladimirovich' for the property 'hasFather' on node 'Grand_Duchess_Kira_Kirillovna_of_Russia' is not an instance of either ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'Grand_Duke_Kyril_Vladimirovich'.
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha' for the property 'hasMother' on node 'Grand_Duchess_Kira_Kirillovna_of_Russia' is not an instance of either ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign ':Ancestor' to node 'Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha'.
+      AssignClass(node='Queen_Mary', class=':Ancestor')
 
 
 
@@ -928,42 +956,24 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (e95fb4ad-3549-4055-aac5-904cdc2c1ce3)
- Call ID: e95fb4ad-3549-4055-aac5-904cdc2c1ce3
+  AssignClass (f212cfd0-f9e0-4acb-8c6e-977193d8fdb2)
+ Call ID: f212cfd0-f9e0-4acb-8c6e-977193d8fdb2
   Args:
-    source: Kaiser_Wilhelm_II
+    source: Edward_VII
     type: :Ancestor
-  AssignClass (5e6ab787-8004-44d2-9877-a8eae11a3087)
- Call ID: 5e6ab787-8004-44d2-9877-a8eae11a3087
-  Args:
-    type: :Ancestor
-    source: German_Crown_Prince_William
-  AssignClass (a10203e1-f7ce-4615-b574-5e401af8ac39)
- Call ID: a10203e1-f7ce-4615-b574-5e401af8ac39
+  AssignClass (a9d1d6dd-e19b-482c-acc9-2d93411ed4bd)
+ Call ID: a9d1d6dd-e19b-482c-acc9-2d93411ed4bd
   Args:
     type: :Ancestor
-    source: Prince_Louis_Ferdinand_son
-  AssignClass (c26a4e57-873a-496d-837c-c2f2276ee3d2)
- Call ID: c26a4e57-873a-496d-837c-c2f2276ee3d2
+    source: King_George_V
+  AssignClass (0ae1819c-b499-4849-86bf-dd2bf0e05624)
+ Call ID: 0ae1819c-b499-4849-86bf-dd2bf0e05624
   Args:
-    source: Grand_Duke_Kyril_Vladimirovich
+    source: Queen_Mary
     type: :Ancestor
-  AssignClass (a66913d1-cb63-43e2-bb8b-8c7aae6847f6)
- Call ID: a66913d1-cb63-43e2-bb8b-8c7aae6847f6
+  ValidateShacl (4505e9d9-a1cf-4051-baba-afd49077587a)
+ Call ID: 4505e9d9-a1cf-4051-baba-afd49077587a
   Args:
-    type: :Ancestor
-    source: Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha
-  Finish (b918949e-aef7-4ab5-9b26-f6a3a0fe77a3)
- Call ID: b918949e-aef7-4ab5-9b26-f6a3a0fe77a3
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -980,250 +990,50 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+  data:Prince_John a :Man,
           :Person ;
-      :hasAncestor data:Kaiser_Wilhelm_II ;
-      :hasBirthYear 1907 ;
-      :hasBrother data:Prince_Wilhelm_of_Prussia ;
-      :hasDeathYear 1994 ;
-      :hasFather data:German_Crown_Prince_William ;
-      :hasMarriageYear 1938 ;
-      :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
-      :hasSex "Male"^^xsd:string ;
-      :hasSon data:Prince_Louis_Ferdinand_son .
+      :alsoKnownAs "Johnnie"^^xsd:string ;
+      :hasBirthYear 1905 ;
+      :hasDeathYear 1919 ;
+      :hasFather data:King_George_V ;
+      :hasMother data:Queen_Mary ;
+      :isSiblingOf data:Prince_Albert,
+          data:Prince_Edward,
+          data:Prince_George,
+          data:Prince_Henry,
+          data:Princess_Mary .
 
-  data:Georg_Friedrich_Prince_of_Prussia a :Man,
+  data:Edward_VII a :Ancestor,
+          :Man,
+          :Person .
+
+  data:King_George_V a :Ancestor,
+          :Man,
           :Person ;
-      :hasFather data:Prince_Louis_Ferdinand_son .
+      :hasFather data:Edward_VII .
 
-  data:German_Crown_Prince_William a :Ancestor,
-          :Man,
+  data:Prince_Albert a :Man,
+          :Person ;
+      :alsoKnownAs "Bertie"^^xsd:string .
+
+  data:Prince_Edward a :Man,
+          :Person ;
+      :alsoKnownAs "David"^^xsd:string .
+
+  data:Prince_George a :Man,
           :Person .
 
-  data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,
-          :Woman ;
-      :hasFather data:Grand_Duke_Kyril_Vladimirovich ;
-      :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
-
-  data:Grand_Duke_Kyril_Vladimirovich a :Ancestor,
-          :Man,
+  data:Prince_Henry a :Man,
           :Person .
 
-  data:Kaiser_Wilhelm_II a :Ancestor,
-          :Man,
-          :Person .
+  data:Princess_Mary a :Person,
+          :Woman .
 
-  data:Prince_Wilhelm_of_Prussia a :Man,
-          :Person .
-
-  data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
+  data:Queen_Mary a :Ancestor,
           :Person,
           :Woman .
 
-  data:Prince_Louis_Ferdinand_son a :Ancestor,
-          :Man,
-          :Person ;
-      :hasDeathYear 1977 ;
-      :hasSon data:Georg_Friedrich_Prince_of_Prussia .
 
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (7b8beece-ea7e-4af6-9f83-594aa9d87404)
- Call ID: 7b8beece-ea7e-4af6-9f83-594aa9d87404
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:8
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is missing the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is missing the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is missing the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is missing the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is missing the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is missing the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is missing the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Louis_Ferdinand_Prince_of_Prussia' is missing the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (416c00fe-b9a0-4367-b3cf-aa1df04554b6)
- Call ID: 416c00fe-b9a0-4367-b3cf-aa1df04554b6
-  Args:
-    relation: :hasSex
-    source: Louis_Ferdinand_Prince_of_Prussia
-    literal_type: xsd:string
-    literal_value: Male
-  AssignClass (f99f2c13-6286-476a-8145-1d08fb622664)
- Call ID: f99f2c13-6286-476a-8145-1d08fb622664
-  Args:
-    source: Male_Sex_Node
-    type: :Male
-  AssignClass (68fb2b7f-0795-49b3-8b8d-d9f430e35412)
- Call ID: 68fb2b7f-0795-49b3-8b8d-d9f430e35412
-  Args:
-    type: :Sex
-    source: Male_Sex_Node
-  AddTriple (44f4bca6-945e-4549-91b0-dfe5ffbdb562)
- Call ID: 44f4bca6-945e-4549-91b0-dfe5ffbdb562
-  Args:
-    source: Louis_Ferdinand_Prince_of_Prussia
-    relation: :hasSex
-    target: Male_Sex_Node
-  Finish (80d35ae5-7b6d-4e99-a255-49a67bfd1e84)
- Call ID: 80d35ae5-7b6d-4e99-a255-49a67bfd1e84
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Louis_Ferdinand_Prince_of_Prussia a :Man,
-          :Person ;
-      :hasAncestor data:Kaiser_Wilhelm_II ;
-      :hasBirthYear 1907 ;
-      :hasBrother data:Prince_Wilhelm_of_Prussia ;
-      :hasDeathYear 1994 ;
-      :hasFather data:German_Crown_Prince_William ;
-      :hasMarriageYear 1938 ;
-      :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
-      :hasSex data:Male_Sex_Node ;
-      :hasSon data:Prince_Louis_Ferdinand_son .
-
-  data:Georg_Friedrich_Prince_of_Prussia a :Man,
-          :Person ;
-      :hasFather data:Prince_Louis_Ferdinand_son .
-
-  data:German_Crown_Prince_William a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,
-          :Woman ;
-      :hasFather data:Grand_Duke_Kyril_Vladimirovich ;
-      :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
-
-  data:Grand_Duke_Kyril_Vladimirovich a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Kaiser_Wilhelm_II a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Male_Sex_Node a :Male,
-          :Sex .
-
-  data:Prince_Wilhelm_of_Prussia a :Man,
-          :Person .
-
-  data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_Louis_Ferdinand_son a :Ancestor,
-          :Man,
-          :Person ;
-      :hasDeathYear 1977 ;
-      :hasSon data:Georg_Friedrich_Prince_of_Prussia .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (4e3ac520-a9b9-4aef-b073-6d9730534c1c)
- Call ID: 4e3ac520-a9b9-4aef-b073-6d9730534c1c
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1233,6 +1043,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (b1fcb567-3423-45c0-9a20-c233871a962d)
- Call ID: b1fcb567-3423-45c0-9a20-c233871a962d
+  Finish (40a411ff-b454-475e-8f91-d311f787589e)
+ Call ID: 40a411ff-b454-475e-8f91-d311f787589e
   Args:

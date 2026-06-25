@@ -2,39 +2,29 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Amelie_of_Orleans a :Person,
-        :Woman ;
-    :isSisterOf data:Philippe_Duke_of_Orleans .
+data:Prince_Hubertus_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Prince_Wilhelm_of_Prussia ;
+    :hasDeathYear 1950 ;
+    :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
+    :hasMarriageYear 1943 ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Princess_Magdalena_Reuss_of_K%C3%B6stritz .
 
-data:Isabelle_of_Orleans a :Ancestor,
+data:Crown_Prince_Wilhelm_of_Germany a :Ancestor,
+        :Man,
+        :Person .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
         :Person,
         :Woman .
 
-data:Jean_Duke_of_Guise a :Man,
+data:Prince_Wilhelm_of_Prussia a :Man,
         :Person .
 
-data:Maria_Dorothea_of_Austria a :Person,
-        :Woman .
-
-data:Philippe_Count_of_Paris a :Ancestor,
-        :Man,
-        :Person .
-
-data:Philippe_Debien a :Man,
-        :Person .
-
-data:Philippe_Duke_of_Orleans a :Ancestor,
-        :Man,
-        :Person ;
-    :alsoKnownAs "Louis Philippe Robert"^^xsd:string,
-        "Philippe VIII"^^xsd:string ;
-    :hasBirthYear 1869 ;
-    :hasDeathYear 1926 ;
-    :hasFather data:Philippe_Count_of_Paris ;
-    :hasMarriageYear 1896 ;
-    :hasMother data:Isabelle_of_Orleans ;
-    :hasRelation data:Maria_Dorothea_of_Austria ;
-    :isBloodrelationOf data:Jean_Duke_of_Guise ;
-    :isFatherOf data:Philippe_Debien ;
-    :knownAs "Philippe"^^xsd:string .
+data:Princess_Magdalena_Reuss_of_K%C3%B6stritz a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2009 .
 

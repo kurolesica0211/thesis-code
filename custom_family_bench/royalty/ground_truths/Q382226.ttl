@@ -7,10 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Duchess_Marie_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Duchess_Marie_of_Mecklenburg-Schwerin a :Person ;
     rdfs:label "Duchess Marie of Mecklenburg-Schwerin" ;
     data:posIndicesFull "592:629",
         "600:629" ;
@@ -23,10 +20,31 @@ data:Duchess_Marie_of_Mecklenburg-Schwerin a :Ancestor,
         "Marie of Mecklenburg-Schwerin" ;
     :hasSex data:female .
 
-data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Grand_Duchess_Maria_Kirillovna_of_Russia a :Person ;
+    rdfs:label "Grand Duchess Maria Kirillovna of Russia" ;
+    data:posIndicesFull "2460:2476" ;
+    data:posIndicesPart "3186:3192",
+        "3321:3327",
+        "3513:3519",
+        "3805:3810",
+        "4833:4838",
+        "5122:5128",
+        "5249:5254",
+        "5438:5444",
+        "5674:5679",
+        "5688:5694",
+        "5778:5783",
+        "5844:5850",
+        "5968:5974",
+        "6075:6080" ;
+    data:wdtLink wdt:Q778200 ;
+    :alsoKnownAs "Maria Kirillovna",
+        "Maria Kirillovna of Russia",
+        "Maria Kirillovna, Princess of Leiningen" ;
+    :hasParent data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Person ;
     rdfs:label "Grand Duke Vladimir Alexandrovich of Russia" ;
     data:posIndicesFull "510:553" ;
     data:posIndicesPart "1071:1079",
@@ -73,49 +91,7 @@ data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor,
     data:wdtLink wdt:Q312819 ;
     :hasSex data:male .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Grand_Duchess_Maria_Kirillovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Grand Duchess Maria Kirillovna of Russia" ;
-    data:posIndicesFull "2460:2476" ;
-    data:posIndicesPart "3186:3192",
-        "3321:3327",
-        "3513:3519",
-        "3805:3810",
-        "4833:4838",
-        "5122:5128",
-        "5249:5254",
-        "5438:5444",
-        "5674:5679",
-        "5688:5694",
-        "5778:5783",
-        "5844:5850",
-        "5968:5974",
-        "6075:6080" ;
-    data:wdtLink wdt:Q778200 ;
-    :alsoKnownAs "Maria Kirillovna",
-        "Maria Kirillovna of Russia",
-        "Maria Kirillovna, Princess of Leiningen" ;
-    :hasBrother data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
-    :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
-    :hasParent data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
-    :hasSex data:female ;
-    :isChildOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
-    :isDaughterOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
-    :isSiblingOf data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
-    :isSisterOf data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia .
-
-data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia a :Person ;
     rdfs:label "Grand Duke Vladimir Kirillovich, Grand Duke of Russia" ;
     data:posIndicesFull "0:41",
         "251:288" ;
@@ -165,19 +141,16 @@ data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia a :Ancestor,
     data:wdtLink wdt:Q382226 ;
     :alsoKnownAs "Grand Duke Vladimir Kirillovich of Russia",
         "Prince Vladimir Kirillovich of Russia" ;
-    :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
     :hasParent data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
-    :hasSex data:male ;
-    :hasSister data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
-    :isBrotherOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
-    :isChildOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
-    :isSiblingOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
-    :isSonOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
+    :hasSex data:male .
 
-data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person ;
     rdfs:label "Princess Victoria Melita of Saxe-Coburg and Gotha" ;
     data:posIndicesFull "1143:1147",
         "312:317",
@@ -203,13 +176,9 @@ data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
         "Victoria Melita of Edinburgh",
         "Victoria Melita of Saxe-Coburg-Gotha",
         "Victoria Melita, Grand Duchess of Hesse and the Rhine" ;
-    :hasChild data:Grand_Duchess_Maria_Kirillovna_of_Russia,
-        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
-    :hasDaughter data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
-    :hasSex data:female ;
-    :hasSon data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
-    :isMotherOf data:Grand_Duchess_Maria_Kirillovna_of_Russia,
-        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
-    :isParentOf data:Grand_Duchess_Maria_Kirillovna_of_Russia,
-        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia .
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

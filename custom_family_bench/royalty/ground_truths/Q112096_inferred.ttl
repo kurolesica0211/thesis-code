@@ -1,0 +1,72 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Otto von Habsburg"^^xsd:string ;
+    data:posIndicesFull "285:302"^^xsd:string ;
+    data:posIndicesPart "554:562"^^xsd:string,
+        "714:722"^^xsd:string ;
+    data:wdtLink wdt:Q76343 ;
+    :alsoKnownAs "Crown Prince Otto of Austria"^^xsd:string,
+        "Otto, Crown Prince of Austria"^^xsd:string ;
+    :hasBrother data:Otto_von_Habsburg ;
+    :hasChild data:Georg_von_Habsburg ;
+    :hasRelation data:Georg_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :hasSon data:Georg_von_Habsburg ;
+    :isAncestorOf data:Georg_von_Habsburg ;
+    :isBloodrelationOf data:Otto_von_Habsburg ;
+    :isBrotherOf data:Otto_von_Habsburg ;
+    :isFatherOf data:Georg_von_Habsburg ;
+    :isParentOf data:Georg_von_Habsburg ;
+    :isSiblingOf data:Otto_von_Habsburg ;
+    :isUncleOf data:Georg_von_Habsburg .
+
+data:Georg_von_Habsburg a :Man,
+        :Person ;
+    rdfs:label "Georg von Habsburg"^^xsd:string ;
+    data:posIndicesFull "0:18"^^xsd:string,
+        "400:418"^^xsd:string ;
+    data:posIndicesPart "100:105"^^xsd:string,
+        "106:114"^^xsd:string,
+        "144:152"^^xsd:string,
+        "198:203"^^xsd:string,
+        "554:562"^^xsd:string,
+        "620:625"^^xsd:string,
+        "714:722"^^xsd:string ;
+    data:wdtLink wdt:Q112096 ;
+    :alsoKnownAs "Archduke Georg of Austria"^^xsd:string,
+        "Archduke Georg von Habsburg"^^xsd:string,
+        "Archduke Paul Georg Maria Joseph Dominikus of Austria"^^xsd:string ;
+    :hasAncestor data:Otto_von_Habsburg ;
+    :hasBrother data:Georg_von_Habsburg ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasParent data:Otto_von_Habsburg ;
+    :hasRelation data:Georg_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Georg_von_Habsburg ;
+    :isBrotherOf data:Georg_von_Habsburg ;
+    :isChildOf data:Otto_von_Habsburg ;
+    :isSiblingOf data:Georg_von_Habsburg ;
+    :isSonOf data:Otto_von_Habsburg .
+

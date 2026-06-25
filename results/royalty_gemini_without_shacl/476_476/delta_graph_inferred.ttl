@@ -1,0 +1,560 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_George_VI ;
+    :hasChild data:Queen_Elizabeth_II ;
+    :hasDaughter data:Queen_Elizabeth_II ;
+    :hasRelation data:Cecilie,
+        data:King_George_VI,
+        data:Margarita,
+        data:Prince_Andrew,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Sophie,
+        data:Theodora ;
+    :isAncestorOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:King_George_VI ;
+    :isBrotherOf data:King_George_VI ;
+    :isFatherOf data:Queen_Elizabeth_II ;
+    :isParentOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:King_George_VI ;
+    :isUncleOf data:Queen_Elizabeth_II .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasChild data:Prince_Philip ;
+    :hasRelation data:Cecilie,
+        data:King_George_VI,
+        data:Margarita,
+        data:Prince_Andrew,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:Prince_Philip ;
+    :isAncestorOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Anne ;
+    :isBloodrelationOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isFatherOf data:Prince_Philip ;
+    :isParentOf data:Prince_Philip ;
+    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isUncleOf data:Prince_Philip .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Philip ;
+    :hasRelation data:Cecilie,
+        data:King_George_VI,
+        data:Margarita,
+        data:Prince_Andrew,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip ;
+    :isAncestorOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Anne ;
+    :isAuntOf data:Prince_Philip ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Prince_Philip ;
+    :isParentOf data:Prince_Philip ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Cecilie a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip ;
+    :hasRelation data:Cecilie,
+        data:King_George_VI,
+        data:Margarita,
+        data:Prince_Andrew,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:Margarita a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip ;
+    :hasRelation data:Cecilie,
+        data:King_George_VI,
+        data:Margarita,
+        data:Prince_Andrew,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:Sophie a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip ;
+    :hasRelation data:Cecilie,
+        data:King_George_VI,
+        data:Margarita,
+        data:Prince_Andrew,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip ;
+    :hasRelation data:Cecilie,
+        data:King_George_VI,
+        data:Margarita,
+        data:Prince_Andrew,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora .
+
+data:Queen_Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:King_George_VI ;
+    :hasChild data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :hasDaughter data:Princess_Anne ;
+    :hasFather data:King_George_VI ;
+    :hasParent data:King_George_VI ;
+    :hasRelation data:Cecilie,
+        data:King_George_VI,
+        data:Margarita,
+        data:Prince_Andrew,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :hasSon data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward ;
+    :isAncestorOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isAuntOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isChildOf data:King_George_VI ;
+    :isDaughterOf data:King_George_VI ;
+    :isMotherOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isParentOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Prince_Andrew a :Man,
+        :Person ;
+    :hasAncestor data:King_George_VI,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth_II ;
+    :hasBrother data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasParent data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasRelation data:Cecilie,
+        data:King_George_VI,
+        data:Margarita,
+        data:Prince_Andrew,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Princess_Anne ;
+    :isBloodrelationOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBrotherOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isChildOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isSonOf data:Prince_Philip,
+        data:Queen_Elizabeth_II .
+
+data:Prince_Charles a :Man,
+        :Person ;
+    :hasAncestor data:King_George_VI,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth_II ;
+    :hasBrother data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasParent data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasRelation data:Cecilie,
+        data:King_George_VI,
+        data:Margarita,
+        data:Prince_Andrew,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Princess_Anne ;
+    :isBloodrelationOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBrotherOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isChildOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isSonOf data:Prince_Philip,
+        data:Queen_Elizabeth_II .
+
+data:Prince_Edward a :Man,
+        :Person ;
+    :hasAncestor data:King_George_VI,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth_II ;
+    :hasBrother data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasParent data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasRelation data:Cecilie,
+        data:King_George_VI,
+        data:Margarita,
+        data:Prince_Andrew,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Princess_Anne ;
+    :isBloodrelationOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBrotherOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isChildOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isSonOf data:Prince_Philip,
+        data:Queen_Elizabeth_II .
+
+data:Princess_Anne a :Person,
+        :Woman ;
+    :hasAncestor data:King_George_VI,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth_II ;
+    :hasBrother data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward ;
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasParent data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasRelation data:Cecilie,
+        data:King_George_VI,
+        data:Margarita,
+        data:Prince_Andrew,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Princess_Anne ;
+    :isBloodrelationOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isChildOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isDaughterOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isSisterOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne .
+
+data:Prince_Philip a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBirthYear 1921 ;
+    :hasBrother data:Prince_Philip ;
+    :hasChild data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :hasDaughter data:Princess_Anne ;
+    :hasDeathYear 2021 ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Cecilie,
+        data:King_George_VI,
+        data:Margarita,
+        data:Prince_Andrew,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Prince_Philip,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Anne,
+        data:Queen_Elizabeth_II,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward ;
+    :isAncestorOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isBrotherOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isFatherOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isParentOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:Prince_Philip,
+        data:Sophie,
+        data:Theodora ;
+    :isSonOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isUncleOf data:Prince_Andrew,
+        data:Prince_Charles,
+        data:Prince_Edward,
+        data:Princess_Anne .
+

@@ -85,136 +85,184 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Duchess Cecilie Auguste Marie of Mecklenburg-Schwerin (20 September 1886 – 6 May 1954) was the last German Crown Princess and Crown Princess of Prussia as the wife of Wilhelm, German Crown Prince, the son of Wilhelm II, German Emperor.
-Cecilie was a daughter of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin and Grand Duchess Anastasia Mikhailovna of Russia.
-She was brought up with simplicity, and her early life was peripatetic, spending summers in Mecklenburg and the rest of the year in Southern France.
-After the death of her father, she traveled every summer between 1898 and 1904 to her mother's native Russia.
-On 6 June 1905, she married German Crown Prince Wilhelm.
-Cecilie, tall and statuesque, became popular in Germany for her sense of style.
-After the fall of the German monarchy, at the end of World War I, Cecilie and her husband lived mostly apart.
-During the Weimar Republic and the Nazi period, Cecilie lived a private life mainly at Cecilienhof Palace in Potsdam.
-Early years
+Grand Duchess Maria Pavlovna of Russia (Russian: Великая Княгиня Мария Павловна; 18 April  1890 – 13 December 1958), known as Maria Pavlovna the Younger, was a granddaughter of Alexander II of Russia.
+She was a paternal first cousin of Nicholas II (Russia's last Tsar) and Marie of Edinburgh (consort of Ferdinand I of Romania) and maternal first cousin of George II, Alexander, and Paul (all kings of Greece), Helen of Greece and Denmark, (second wife of Carol II of Romania), and Prince Philip, Duke of Edinburgh (consort of Elizabeth II).
+She was also both the first grandchild of George I of Greece and the first great-grandchild of his father Christian IX of Denmark.
+Her early life was marked by the death of her mother and her father's banishment from Russia when he remarried a commoner in 1902.
+Grand Duchess Maria and her younger brother Dmitri, to whom she remained very close throughout her life, were raised in Moscow by their paternal uncle Grand Duke Sergei Alexandrovich and his wife Grand Duchess Elizabeth Feodorovna of Russia, a granddaughter of Queen Victoria.
+In 1908, Maria Pavlovna married Prince Wilhelm, Duke of Södermanland.
+The couple had one son, Prince Lennart, Duke of Småland, later Count Bernadotte af Wisborg.
+During World War I, Grand Duchess Maria Pavlovna served as a nurse until the fall of the Russian monarchy in February 1917.
+In September 1917, during the period of the Russian Provisional Government, she married Prince Sergei Putyatin.
+They had a son, Prince Roman Sergeievich Putyatin, who died in infancy.
+The couple escaped revolutionary Russia through Ukraine in July 1918.
+In exile, Grand Duchess Maria Pavlovna lived briefly in Bucharest and London, then she settled in Paris in 1920.
+In 1942, Grand Duchess Maria Pavlovna moved to Argentina where she spent the years of World War II.
+Early life
 
-Born on 20 September 1886 in Schwerin, Cecilie was the youngest daughter of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin and Grand Duchess Anastasia Mikhailovna of Russia.
-She spent most of her childhood in Schwerin, at the royal residences of Ludwigslust Palace and the Gelbensande hunting lodge, only a few kilometres from the Baltic Sea coast.
-Her father suffered badly from asthma and the wet damp cold climate of Mecklenburg was not good for his health.
-As a result, Cecilie spent a large amount of time with her family in Cannes in the south of France, favoured at the time by European royalty, including some whom Cecilie met such as Empress Eugénie and her future husband's great-uncle, Edward VII.
-During the winter visit of 1897, Cecilie's sister, Alexandrine, met her future husband, Crown Prince Christian, later Christian X of Denmark, shortly before the death of their father at the age of 46.
-After returning to Schwerin, Cecilie spent time with her widowed mother in Denmark.
-After the death of her father, she traveled every summer, from 1898 to 1904, visiting her relatives in Russia.
-Cecilie lived there in Mikhailovskoe on Kronstadt Bay, the country home of her maternal grandfather, Grand Duke Michael Nikolaevich of Russia.
-Engagement
+Grand Duchess Maria Pavlovna was born 18 April  1890 in Saint Petersburg.
+She was the first child and only daughter of Grand Duke Paul Alexandrovich of Russia and his first wife, Grand Duchess Alexandra Georgievna of Russia, born Princess Alexandra of Greece and Denmark.
+The baby was named after her late paternal grandmother, the Empress Maria Alexandrovna, and her paternal aunt, maternal grandaunt, and godmother, the Empress Maria Feodorovna, and was known by the nickname "Marisha" Maria was not yet two years old when her mother died from complications after giving birth to Maria's younger brother, Grand Duke Dmitri Pavlovich of Russia in 1891.
+Grand Duke Paul was so distraught by the unexpected death of his young wife that he neglected his two small children, who were left in the care of his elder brother, Grand Duke Sergei Alexandrovich, who had no children of his own.
+Once he recovered emotionally, Grand Duke Paul took the two children away with him.
+A commander of the Imperial horse Guards, Grand Duke Paul loved his children, but as was customary at the time, he refrained from showing them spontaneous affection.
+Maria and her brother were raised by governesses and tutors, but they adored their father who visited them twice a day.
+The children spent Christmases and later some summer holidays with Grand Duke Sergei and his wife Grand Duchess Elisabeth Feodorovna.
+Maria Pavlovna's childhood was spent in splendor.
+Until she was age 6, Maria spoke Russian badly as all of her governesses and the immediate family spoke English.
+Growing up without a mother and with a frequently absent father, Grand Duchess Maria and her brother Dimitri became very close, relying on each other for affection and companionship.
+Education
 
-During the wedding festivities of her brother Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin in Schwerin in June 1904, the 17-year-old Duchess Cecilie got to know her future husband, Wilhelm, German Crown Prince.
-Kaiser Wilhelm II had sent his eldest son to the festivities as his personal representative.
-Taller than most women of her time at 182 centimetres (over 5'11"), Cecilie was as tall as the German Crown Prince.
-Wilhelm was struck by her great beauty, and her dark hair and eyes.
-On 4 September 1904, the young couple celebrated their engagement at the Mecklenburg-Schwerin hunting lodge, Gelbensande.
-Wedding
-
-The wedding of Duchess Cecilie of Mecklenburg-Schwerin and the German Crown Prince Wilhelm took place on 6 June 1905 in Berlin.
-Arriving from Schwerin at Berlin's Lehrter Station, the future Crown Princess was greeted on the platform with a gift of dark red roses.
-She was greeted at Bellevue Palace by the entire German imperial family and later made a joyeuse entrée through the Brandenburg Gate to a gun salute in the Tiergarten.
-Kaiser Wilhelm II greeted her at the palace and conducted her to the Knight's Hall where over fifty guests from different European royal houses awaited the young bride including Grand Duke Michael Alexandrovich of Russia, Archduke Franz Ferdinand, as well as representatives from Denmark, Italy, Belgium, Portugal and the Netherlands.
-On her wedding day, Kaiser Wilhelm II presented his daughter-in-law with the Order of Louise.
-On her wedding day, Duchess Cecilie of Mecklenburg-Schwerin became Her Imperial and Royal Highness The German Crown Princess and Crown Princess of Prussia.
-She was expected to one day become German empress and queen of Prussia.
-German Crown Princess
-
-As German crown princess, Cecilie quickly became one of the most beloved members of the German imperial house.
-It was not long before her fashion style was copied by many women throughout the German Empire.
-After the end of the wedding festivities, the crown princely couple made their summer residence at the Marble Palace in Potsdam.
-Every year at the beginning of the court season in January, the couple would return to the Crown Prince Palace in Berlin on Unter den Linden.
-Cecilie's first child was born on 4 July 1906 and given the traditional Hohenzollern name of Wilhelm.
-At the time, the German monarchy appeared to be very secure.
-Although in public the marriage of the crown prince and princess appeared to be perfect, cracks quickly appeared due to the crown prince's wandering eye and controlling behaviour.
-In spite of her husband's unfaithfulness, however, Cecilie had given birth to six children by 1917.
+In 1895, Grand Duke Paul began an affair with Olga Valerianova von Pistolkors, a married woman.
+As they had married by defying Nicholas II's opposition, the tsar forbade them to return to Russia.
+Left fatherless, 12-year-old Maria and 11-year-old Dmitri moved to Moscow placed under the custody of their uncle Grand Duke Sergei and his wife Grand Duchess Elisabeth Feodorovna, a sister of the Tsarina Alexandra.
+Maria and Dimitri resented their aunt and uncle, blaming them for the forced separation from their real father, who had abandoned them.
+Grand Duke Sergei was strict and demanding, but devoted and affectionate toward the children.
+Maria Pavlovna also commented that she could not entirely disagree with those who thought Grand Duke Sergei heartless, self-centered and cruel.
+Maria had a somewhat strained relationship with her aunt.
+Grand Duchess Elisabeth Feodorovna found it difficult to relate to the children, and she was cold and distant toward them.
+The teenage Maria was described by her maternal aunt Grand Duchess Maria Georgievna of Russia as "full of life and very jolly, but inclined to be self-willed and selfish, and rather difficult to deal with.
 "
 
 
-Impact as German Crown Princess
+Grand Duke Sergei, who served as Governor General of Moscow, was a polarizing figure.
+The bomber had refrained from an earlier attack because he saw that Grand Duchess Elisabeth, 15-year-old Maria, and her younger brother Dmitri were in the carriage, and he did not want to kill women and children.
+After the assassination of their uncle, both children were emotionally distraught, particularly Dmitri.
+Grand Duke Paul claimed the custody of his children, but the tsar made Elisabeth their guardian.
+Grand Duke Paul was allowed to visit them, but not to return to Russia permanently.
+After her husband's assassination, Grand Duchess Elisabeth Feodorovna regretted treating the children poorly, and she became closer to them.
+First marriage
 
-Cecilie made considerable impact in a number of areas including women's education.
-On 6 December 1906, at AG Vulcan Stettin's shipyard, she christened  the Norddeutscher Lloyd steamship SS Kronprinzessin Cecilie.
-For Cecilie, who had a great passion for the sea since childhood, the gesture brought her great joy and honour.
-Cecilie's life in Berlin was a constant round of royal duties: attending military parades, gala state banquets, official ceremonies, and other courtly activities.
-In May 1911, Cecilie and the crown prince visited the Russian imperial court in Saint Petersburg.
-Queen Mary was particularly fond of the imperial couple and maintained contact with Cecilie until her death in 1953.
-The 1911 visit to London was Cecilie's last as representative of the German Empire.
-Revolution and the overthrow of the German monarchy
-
-The political and economic situation in the last year of the war became more and more hopeless.
-On 6 November 1918, the new German imperial Chancellor, Prince Maximilian of Baden, met with Minister Wilhelm Solf to discuss the future of the German Empire.
-They were both of the opinion that the monarchy could only survive with the removal of the kaiser and his son the crown prince and the setting up of a regency under the nominal rule of the young son of Crown Princess Cecilie.
-Both the kaiser and the crown prince crossed the border to seek exile in the neutral Netherlands.
-Cecilie with her young children was living in Potsdam during the revolutionary period.
+During the next two years, Maria's aunt turned toward religion and charity work.
+Planning to retire from court and to form a religious order, Grand Duchess Elisabeth decided to find a husband for her niece, along with the help of her cousin, Crown Princess Margaret of Sweden.
+Shortly after Easter 1907, Prince Wilhelm, Duke of Södermanland, the second son of King Gustav V of Sweden and Victoria of Baden, visited St Petersburg, and he was introduced to the 16-year-old Maria Pavlovna.
+The prince was tall, thin, dark and distinguished looking "with beautiful grey eyes", Maria recalled.
+He stayed for dinner, and the following day, Maria was told that he wished to marry her.
+Pressed by her aunt to give a speedy answer, Maria agreed to the prince's proposal and found herself engaged to a man she had known for only few hours.
+Maria Pavlovna wrote later that she felt her aunt had rushed her into the marriage.
+"Then we will be able to travel together," she wrote to Wilhelm after their engagement.
 "
 
 
-Life under the republic
+The marriage had positive political and diplomatic implications for both Russia and Sweden, and Tsar Nicholas II gave his consent.
+Grand Duke Paul was not consulted.
+Contemporary newspaper reports suggest that Maria Pavlovna brought a large fortune to the marriage; as a Granddaughter of Tsar Alexander II, she was entitled to an annuity of 50,000 roubles prior to reaching the age of majority, and 100,000 roubles (approximately £10,500 in 1908) per year thereafter .
+As a Russian Grand Duchess, she also was reported to have received a dowry of 1,000,000 roubles upon her marriage, as well as a share in the estimated 8,000,000 rouble fortune left by her father upon his death.
+From Peterhof, Maria Pavlovna went to Grand Duchess Elisabeth's rural estate Ilinskoe, near Moscow, where Wilhelm joined them for a month before he left on a cruise to the United States.
+Maria imagined herself in love: "It’s lovely to have somebody, even far away, who love you more than anything and whom you love more than everybody on earth“, she wrote to him.
+In October, Wilhelm returned to Russia joining Grand Duchess Maria and her brother Dimitri who introduced the Swedish prince to their father, Grand Duke Paul, who was permitted to come back to Russia for his daughter's wedding set to take place after she turned age 18 the next April.
+At Wilhelm's departure, Maria wrote to him: " I love you, so much with every day, every hour more and more.
+In her book of memoirs, written more than 20 years later, the grand duchess made different claims: "I was using Wilhelm, in a sense, only to obtain my freedom".
+As the wedding day approached, she began to have doubts and wished to break off the engagement, but Princess Irene of Hesse, who was visiting her sister Grand Duchess Elisabeth Feodorovna, persuaded her otherwise.
+Soon Maria Pavlovna was  again looking forward with enthusiasm to a new life.
+Swedish princess
 
-The former crown princess was nothing but realistic about the new political situation confronting her family and Germany.
-The crown princess was quite prepared to do the same, but wanted to stay in Germany with her children if at all possible.
-As a result of a change of circumstances, Cecilie reduced her household staff by 50%.
-Her children's tutor also left her service and as a result her two eldest sons, Princes Wilhelm and Louis Ferdinand, for the first time attended as day students at a nearby school.
-Cecilie had considerable sympathy for the plight of the German people.
-In reply to an address from the German Women's Union in Berlin, the former crown princess stated, "I need no sympathy.
-I have the beautiful situation that can befall any German woman, the education of my children as good German citizens.
-"
+After a honeymoon in Germany, Italy and France, the newlyweds went to Sweden, where an official ceremonial reception awaited them with the state flags of Russia and Sweden waving in Stockholm.
+The couple set up their home in the Swedish countryside in the province of Södermanland.
+Maria added Swedish to the other five languages she spoke, and she became popular in her new country.
+Maria Pavlovna, known in Sweden as the Duchess of Södermanland, was pregnant by the fall, but she quickly realized that she had little in common with her husband.
+He was Prince Lennart, Duke of Småland, later Count of Wisborg (1909–2004)
+In the autumn of 1910, Maria Pavlovna moved with her husband and their son to Oak Hill, a house she had built for herself outside Stockholm.
+Maria went hunting, attended horse races, practiced winter sports and even played field hockey on her sister-in-law, Crown Princess Margaret's team.
+Maria occasionally played with her son, who remembered sitting on her lap when they slid down a flight of steps on a large silver tray.
+However, life at the Swedish court had as many restrictions on Maria Pavlovna as she had had in Russia.
+Her husband Wilhelm, as a naval officer, had little time to spend with her.
+Maria had an opportunity to meet other men.
+King Vajiravudh and the Duke of Montpensier began to court her, and she enjoyed the flirtation.
+He was devastated by her decision, begging her to give their marriage another chance, "but since he blamed most of our failure on me, we did not make any progress" Maria wrote.
+In 1913, they were reunited when she went to Russia to attend the celebrations for the 300-year anniversary of the Romanov family.
+When she returned to Stockholm, doctors alleged (falsely as it turned out) that Maria Pavlovna had a serious kidney ailment, and she was sent to Capri to recuperate in the winter 1913–1914.
+Decades later, she described the horror she had felt toward the Swedish royal family because of their unlimited support of Munthe as the main reason she fled them and filed for divorce from Prince Wilhelm.
+My God!"
 
+Relatives in both Russia and Sweden viewed a divorce as unavoidable, and on 13 March 1914, her marriage officially was dissolved, an action then confirmed by an edict issued by Nicholas II on 15 July 1914.
+Maria left her son behind in Sweden under his father's custody.
+In Paris, Grand Duchess Maria re-established ties with her father, who had provided her with three half-siblings.
+Maria Pavlovna studied at a painting school, and then traveled to Italy and Greece.
+In the spring 1914, age 24, Maria Pavlovna returned to Russia.
+She lived near her younger brother Dmitri, to whom she was intensely attached.
+Troubled by her strong need for him, Dmitri distanced himself somewhat from his sister, hurting her terribly.
+World War I, revolution and second marriage
 
-Wilhelm was only allowed to return to Germany from his enforced exile in 1923.
-Castle Oels, a castle with 10,000 hectares of workable land in Silesia, now in modern day Poland, provided substantial income for Cecilie's family.
-In the absence of her husband, Cecilie became the leading figure in the once ruling House of Hohenzollern.
-The former crown princess was under no illusions that the empire would be restored, unlike her father-in-law exiled in Doorn in the Netherlands.
-With the election of Gustav Stresemann as chancellor of the Weimar Republic in August 1923, negotiations for the former crown prince commenced.
-On the evening of 13 November 1923, Cecilie met her husband at Castle Oels.
-The years of separation and the behavior of Wilhelm had made the marriage now merely one in name only, but Cecilie was determined to keep things together even at a distance.
-Cecilie remained active within several charity organizations such as the Queen Louise Fund, Chair of the Fatherland's Women Union and the Ladies of the Order of St. John, while keeping clear of any political involvement.
-Under Nazi German rule 1933-1939
+At the outbreak of the war, Grand Duchess Maria Pavlovna trained as a nurse.
+With Princess Helen of Serbia, the grand duchess was sent to the northern front, at Instenburg in East Prussia, under command of General Paul von Rennenkampf.
+For bravery under airplane fire, she was awarded the George Medal.
+Maria Pavlovna was at Pskov when she learned that Dmitri had participated in the murder of Grigori Rasputin on 17 December 1916; she was stunned.
+Maria signed a letter along with other members of the Imperial family, begging Nicholas II to reverse his decision to exile Dmitri to the Persian front.
+Two months later, the February Revolution erupted, and Tsar Nicholas II, Maria's first cousin, abdicated.
+Maria Pavlovna left Pskov for Petrograd joining her father and his family at Tsarkoe Selo.
+Earlier in the war, she had been reacquainted with Prince Sergei Mikhailovich Putyatin (1893–1966), the son of Prince Mikhail Sergeyevich Putyatin (1861–1938), palace commandant at Tsarskoye Selo, the tsar's country residence.
+In the summer, they became engaged, and in love for the first time, Maria Pavlovna married Putyatin in the Pavlovsk Palace on 19 September  1917.
+The couple spent the early months of their married life in Petrograd, living at first in Dmitri's palace.
+The successful Bolshevik coup of November 1917 surprised Maria Pavlovna and her husband in Moscow, where they had traveled to remove some of Maria's jewels from the state bank.
+Later, Serge's parents retrieved Maria's diamonds.
+In the spring 1918, the couple moved to a cottage in Tsarkoe Selo to be closer to Grand Duke Paul, who was under house arrest.
+There, the grand duchess tended a vegetable garden and kept a goat.
+On 8 July 1918, she gave birth to a son, Prince Roman Sergeievich Putyatin (1918–1919).
+The same day of Prince Roman's baptism on 18 July 1918, but they did not know it, Maria's half-brother Prince Vladimir Paley and her aunt Grand Duchess Elizabeth were murdered by the Bolsheviks.
+With the situation quickly deteriorating in Russia for the Romanovs under the Bolshevik regime, Maria Pavlovna decided to leave for exile, leaving her baby under the care of her in-laws.
+With her husband and her brother-in-law Prince Alexander Putyatin (1897–1954), Grand Duchess Maria Pavlovna left Tsarkoie Selo in late July.
+Without traveling documents and fearing to be arrested at any stop, Maria Pavlovna, her husband and brother-in-law made their way by train during two nights and a day.
+She had concealed, inside a bar of soap, a Swedish document identifying her as a former royal princess of that country.
+After reaching Kishinev, Moldavia, they received an invitation from Queen Marie of Romania, Maria's first cousin, who had used Joseph W. Boyle to track them and bring them to safety.
+Ill with influenza, the grand duchess arrived in Romania, beginning her life in exile.
+Exile
 
-During 1933–1945, Cecilie lived a private life at Cecilienhof.
-Her eldest son Wilhelm forfeited his position as possible heir when he married Dorothea von Salviati on 3 June 1933.
-The former crown prince and princess were more understanding of their son than the exiled kaiser.
-Cecilie was not perturbed and made the best of the situation and was delighted when she became a grandmother for the first time on 7 June 1934.
-In 1935, Cecilie's second son worked, after studying economics and working for a time in the United States as a mechanic for Ford Motor Company, then with Lufthansa.
-Her third son, Hubertus, after spending a period of time farming joined the military and then the air force to become a pilot.
-In May 1938, Prince Louis Ferdinand married Grand Duchess Kira Kirillovna of Russia, daughter of the pretender to the Russian throne, Grand Duke Cyril Vladimirovich, at Cecilienhof.
-World War II
+In December 1918, Grand Duchess Maria Pavlovna and her second husband arrived in Bucharest staying at a local hotel.
+In January 1919, they were given private apartments at the Cotroceni Palace as guests of the Romanian Queen Maria.
+Tragic news came from Russia.
+The following month, Maria Pavlovna learned that her father Grand Duke Paul Alexandrovich had been assassinated by the Bolsheviks along with three of his cousins.
+A couple of weeks later, she received the news that her aunt Grand Duchess Elizabeth Feodorovna and half-brother Prince Vladimir Paley had been murdered with several other Romanov relatives in the summer 1918.
+Maria Pavlovna's parents-in-law arrived in Bucharest with her son Roman, but once she obtained a traveling visa, Maria Pavlovna left with Putyatin for Paris, finding a house in Passy.
+For the first time in her life, the 28-year-old grand duchess was forced to face everyday problems.
+Her first years of exile were financed by the sale of the jewels she had had smuggled to Sweden before escaping Russia.
+While in Paris in 1919, the grand duchess received a letter from her husband's parents telling her that one-year-old Roman had died of an intestinal disorder on 29 July.
+Maria Pavlovna was reunited with her brother Dmitri in London.
+She rented a small apartment with her husband to be close to her brother, but relations between Dmitri and Putyatin soon soured.
+In the spring 1920, Maria Pavlovna returned to Paris to meet with her stepmother Princess Olga Paley and Maria's two half-sisters.
+Her brother Dmitri followed her to Paris.
+Missing her son Lennart, who had been left in Sweden, Maria and Dimitri went to meet him in Copenhagen in the early summer of 1921.
+In Paris, Grand Duchess Maria opened a quality embroidering and sewing textile shop named Kitmir.
+Through her brother, Maria Pavlovna met Coco Chanel in the autumn 1921.
+The grand duchess was helped by her mother-in-law Princess Sophia Putyatina (1866–1940), and she employed Russians refugees in order to help them.
+However, Kitmir was plagued by organizational problems, resulting in the dissipation of Maria's money from the sale of her jewels and leaving her heavily in debt.
+After her divorce, Maria Pavlovna continued to work in Paris, but she moved to Boulogne, the south west suburb of Paris, where many Russians had taken residence.
+In 1928, as embroidery began to be out of fashion, Maria Pavlovva sold her workshop to Maison Hurel.
+Having suffered a defeat, but not surrendering, the grand duchess moved to London in the spring 1928 where she started selling Prince Igor, her own perfume, following in the footsteps of Chanel No. 5 and Patou's perfume Joy.
+Failings in advertising and distribution made that Prince Igor was not a success.
+Undeterred, Grand Duchess Maria Pavlovna emigrated to the United States hoping for a new start.
+In the United States
 
-A period of relative calm for Cecilie's family and for Germany came to an end with the outbreak of World War II in September 1939.
-Cecilie's 24-year-old nephew, Prince Oskar, fell as a casualty five days after the start of the invasion of Poland.
-More personal tragedy occurred when Wilhelm was mortally wounded in battle at Valenciennes in France on 23 May 1940.
-The huge turnout in respect for a prince, who had died a hero's death, from the former ruling dynasty, alarmed and infuriated Adolf Hitler.
-As a result, no prince from a former German dynasty was allowed to serve at the front and in 1943 Hitler ordered that they all be discharged from the armed forces.
-In 1941, the former Kaiser Wilhelm II died.
-At the age of 55, Cecilie's husband became Head of the House of Hohenzollern.
-While under the monarchy this would have meant a great change for Cecilie and her husband, the change was potentially dangerous because of the leader of the Nazi German state.
-During this time, Cecilie and her husband increasingly retreated to Castle Oels to live a quiet life, far away from the dangers of Berlin.
-With the war going badly, Cecilie and her family left the advancing danger of the Soviet Army to return to Potsdam where they celebrated Christmas in December 1944.
-In February 1945, Cecilie left Cecilienhof for the last time.
-Final years
+Grand Duchess Maria Pavlovna's arrival in New York City was greeted by the press with great enthusiasm and curiosity.
+In May 1929, Grand Duchess Maria Pavlovna started working for the New York department store Bergdorf Goodman.
+Her book of memoirs was translated from Russian to English and published in two volumes: the first was titled The Education of a Princess, and the second was A Princess in Exile.
+The success of her books improved Maria Pavlovna's finances.
+Grand Duchess Maria Pavlovna always had an interest in photography, and in 1935, she was sent by Hearst to Germany as a photojournalist.
+While living in New York, Maria Pavlovna collected Russian books and surrounded herself with a group of friends that included her half-sister Princess Natalia Paley, the photographer Horst P. Horst, Valentina Sanina, founder of the fashion house Valentina, and Sanina's husband George Schlee.
+In 1937, Maria Pavlovna visited her son Lennart and his family in Mainau.
+They bonded over their shared interest in photography, and she got along with his wife, even though the grand duchess had been disappointed when her son renounced his royal status in order to marry a commoner in 1932.
+Maria Pavlovna, who had little maternal feelings, took no interest in her two grand daughters: Birgitta, then age 4, and Marie Louise, age two.
+Because of Lennart, the King of Sweden, who sympathized with Maria Pavlovna, arranged a Swedish diplomatic passport for her to replace her old Nansen passport.
+Last years
 
-Cecilie fled the Soviet Army in February 1945 to the sanatorium of Dr. Paul Sotier (personal physician of Kaiser Wilhelm II) Fürstenhof in Bad Kissingen in Bavaria.
-Wilhelm had settled into a small house in Hechingen.
-Tragedy struck again when yet another son, Hubertus, died from appendicitis on 8 April 1950.
-In early 1951, the health of the former Crown Prince deteriorated and on 20 July he died.
-On 26 July, his funeral took place at Castle Hohenzollern where he was buried in the ground near an urn containing the ashes of the late Hubertus.
-On the arm of her son, Louis Ferdinand, Cecilie bade a final farewell to her husband.
-In 1952, Cecilie's memoirs, 'Remembrances' were published.
-In an act of healing and friendship, the former Crown Princess Cecilie was received by King George V's widow, Queen Mary, in May 1952 during a visit to England.
-Cecilie visited for the first time to attend the christening of her granddaughter, Princess Victoria Marina of Prussia, the daughter of her son Frederick.
-Tragedy once again struck when Cecilie's sister, the Danish Queen Mother, Queen Alexandrine, died on 28 December of the same year.
-On 3 January 1953, Cecilie attended her funeral at Roskilde Cathedral in Denmark.
-From this time on, the former crown princess never fully recovered.
-On 12 May 1954, her funeral took place and her remains were interred next to Crown Prince Wilhelm in the grounds of Castle Hohenzollern.
-}} Media related to Cecilie of Mecklenburg-Schwerin, German Crown Princess at Wikimedia Commons
+In Argentina, Maria Pavlovna rented a small house with a garden in the Barrio Norte in Buenos Aires and devoted her spare time to painting, even managing to sell several of her works.
+The cosmetic line did not take off, but Grand Duchess Maria Pavlovna remained in South America.
+There was a large Russian émigré community in Buenos Aires, and she became close friends with the family of Prince Meshchersky, Prince Michel Aleksandrovich Gorchakov (1905–1996) and his wife Princess Olga, née Orlova-Davydova (1904–1991).
+During weekends, she went to Los Leones, a huge property owned by Prince Karl von Auersperg (1895–1980) and his wife, Countess Henriette von Meran  (1904–2000), member of a morganatic branch of the House of Habsburg.
+In 1942, she received news of the death of her brother Dmitri in Davos, Switzerland.
+In 1947, Maria Pavlovna's son Lennart came from Germany on a business visit that lasted several months.
+Maria told Lennart that she had felt lonely all of her life due to her rootless childhood.
+Two years later, Maria Pavlovna returned to Europe, where, at the home of her son on the island of Mainau in Germany, she re-encountered her first husband Prince Wilhelm of Sweden for the first time in many years.
+During the 1950s, Grand Duchess Maria Pavlovna stayed with friends or appeared unexpectedly in Mainau in the house of her son Lennart with her camera, easel and paints.
+She is buried in a side altar of the palace church in Mainau, next to her brother Grand Duke Dmitri.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -230,39 +278,9 @@ On 12 May 1954, her funeral took place and her remains were interred next to Cro
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -277,6 +295,23 @@ On 12 May 1954, her funeral took place and her remains were interred next to Cro
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -294,6 +329,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -361,29 +411,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -392,6 +434,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -404,6 +454,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -412,17 +464,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -450,6 +504,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -465,424 +603,185 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c3b313a0-e498-4490-97d1-4f6f54ba248f)
- Call ID: c3b313a0-e498-4490-97d1-4f6f54ba248f
+  AssignClass (7ce86557-8f0c-4d6c-9915-be6d3c0648d0)
+ Call ID: 7ce86557-8f0c-4d6c-9915-be6d3c0648d0
   Args:
+    source: :MariaPavlovna
     type: :Woman
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AssignClass (01a2380c-1d35-497a-a7ab-bfe85d30a1e2)
- Call ID: 01a2380c-1d35-497a-a7ab-bfe85d30a1e2
+  AssignClass (91abc092-75dd-443f-a4d7-b896465f804c)
+ Call ID: 91abc092-75dd-443f-a4d7-b896465f804c
   Args:
+    source: :MariaPavlovna
     type: :Person
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddLiteral (c12844e0-45c8-4f49-8901-7a36c8b2feda)
- Call ID: c12844e0-45c8-4f49-8901-7a36c8b2feda
+  AddLiteral (4b2dcad1-ea60-412f-89fa-691e8e386208)
+ Call ID: 4b2dcad1-ea60-412f-89fa-691e8e386208
   Args:
-    literal_type: xsd:integer
+    literal_value: 1890
     relation: :hasBirthYear
-    literal_value: 1886
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddLiteral (58792a60-180b-4e96-a3c8-22aebe7d176b)
- Call ID: 58792a60-180b-4e96-a3c8-22aebe7d176b
+    literal_type: xsd:integer
+    source: :MariaPavlovna
+  AddLiteral (ff458b0b-6289-4203-afe6-9e115afa2c54)
+ Call ID: ff458b0b-6289-4203-afe6-9e115afa2c54
   Args:
+    literal_value: 1958
     relation: :hasDeathYear
     literal_type: xsd:integer
-    source: Cecilie_of_Mecklenburg-Schwerin
-    literal_value: 1954
-  AssignClass (36f7fc7c-9396-4fd0-9636-3d86bb1acc9c)
- Call ID: 36f7fc7c-9396-4fd0-9636-3d86bb1acc9c
+    source: :MariaPavlovna
+  AddLiteral (48655ece-107e-44a5-8b19-8de85d0f9e5c)
+ Call ID: 48655ece-107e-44a5-8b19-8de85d0f9e5c
   Args:
+    literal_value: Maria Pavlovna the Younger
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    source: :MariaPavlovna
+  AssignClass (087ea556-3ea2-4b2f-9944-8b50cb43390e)
+ Call ID: 087ea556-3ea2-4b2f-9944-8b50cb43390e
+  Args:
+    source: :PaulAlexandrovich
     type: :Man
-    source: Wilhelm_German_Crown_Prince
-  AssignClass (ac5d5077-215a-4400-bd66-4d388403eae5)
- Call ID: ac5d5077-215a-4400-bd66-4d388403eae5
+  AssignClass (8e2180aa-a25b-4962-ba4f-bbbfce8b7c61)
+ Call ID: 8e2180aa-a25b-4962-ba4f-bbbfce8b7c61
   Args:
-    source: Wilhelm_German_Crown_Prince
+    source: :PaulAlexandrovich
     type: :Person
-  AddLiteral (d29657b0-2852-4bc0-bcad-44c0a90845db)
- Call ID: d29657b0-2852-4bc0-bcad-44c0a90845db
+  AssignClass (e7081761-69ab-400d-a77e-4cdbfd2b36e4)
+ Call ID: e7081761-69ab-400d-a77e-4cdbfd2b36e4
   Args:
+    source: :AlexandraGeorgievna
+    type: :Woman
+  AssignClass (073a94de-4013-4890-95bc-3a45a3013cc1)
+ Call ID: 073a94de-4013-4890-95bc-3a45a3013cc1
+  Args:
+    source: :AlexandraGeorgievna
+    type: :Person
+  AddTriple (a5bd1f36-8583-49a7-8b1a-c8f2c6f1a079)
+ Call ID: a5bd1f36-8583-49a7-8b1a-c8f2c6f1a079
+  Args:
+    source: :MariaPavlovna
+    target: :PaulAlexandrovich
+    relation: :hasFather
+  AddTriple (b8b28976-35f9-4516-9308-131ce43d5b1f)
+ Call ID: b8b28976-35f9-4516-9308-131ce43d5b1f
+  Args:
+    source: :MariaPavlovna
+    relation: :hasMother
+    target: :AlexandraGeorgievna
+  AssignClass (0133a23a-2b9b-49f4-a3a3-cbfa214acb65)
+ Call ID: 0133a23a-2b9b-49f4-a3a3-cbfa214acb65
+  Args:
+    source: :DmitriPavlovich
+    type: :Man
+  AssignClass (2993e6a3-9200-4c48-86c0-3b866adea12b)
+ Call ID: 2993e6a3-9200-4c48-86c0-3b866adea12b
+  Args:
+    source: :DmitriPavlovich
+    type: :Person
+  AddTriple (6e73a93a-a097-476d-8c15-8dac66110157)
+ Call ID: 6e73a93a-a097-476d-8c15-8dac66110157
+  Args:
+    source: :MariaPavlovna
+    relation: :hasBrother
+    target: :DmitriPavlovich
+  AddTriple (d64bb6ab-a617-4584-809e-b9134fd3abf1)
+ Call ID: d64bb6ab-a617-4584-809e-b9134fd3abf1
+  Args:
+    relation: :hasFather
+    target: :PaulAlexandrovich
+    source: :DmitriPavlovich
+  AddTriple (b44faa48-dffc-4279-9dcc-e5da2d6ce1e5)
+ Call ID: b44faa48-dffc-4279-9dcc-e5da2d6ce1e5
+  Args:
+    source: :DmitriPavlovich
+    relation: :hasMother
+    target: :AlexandraGeorgievna
+  AssignClass (50b05c46-e131-429a-a56b-05a109b1aece)
+ Call ID: 50b05c46-e131-429a-a56b-05a109b1aece
+  Args:
+    source: :WilhelmOfSweden
+    type: :Man
+  AssignClass (97abe7e7-e2a1-44ed-8c35-b3c3530d455b)
+ Call ID: 97abe7e7-e2a1-44ed-8c35-b3c3530d455b
+  Args:
+    source: :WilhelmOfSweden
+    type: :Person
+  AddLiteral (c74adfeb-4a55-4dea-a057-79d4325af673)
+ Call ID: c74adfeb-4a55-4dea-a057-79d4325af673
+  Args:
+    literal_value: 1908
     relation: :hasMarriageYear
     literal_type: xsd:integer
-    source: Cecilie_of_Mecklenburg-Schwerin
-    literal_value: 1905
-  AddTriple (b3c1e740-4751-466f-85da-548030c6fa9e)
- Call ID: b3c1e740-4751-466f-85da-548030c6fa9e
+    source: :MariaPavlovna
+  AssignClass (a7ed2831-4042-47dd-a0d5-db71a15d753d)
+ Call ID: a7ed2831-4042-47dd-a0d5-db71a15d753d
   Args:
-    target: Wilhelm_German_Crown_Prince
-    source: Cecilie_of_Mecklenburg-Schwerin
-    relation: :hasRelation
-  AssignClass (cba3f6ad-8588-4666-b60a-74568a53a589)
- Call ID: cba3f6ad-8588-4666-b60a-74568a53a589
-  Args:
-    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
+    source: :LennartBernadotte
     type: :Man
-  AssignClass (b53bd2d6-8e2e-4017-bb33-4813ffacab58)
- Call ID: b53bd2d6-8e2e-4017-bb33-4813ffacab58
+  AssignClass (e0b3339f-9a50-4b58-a9cd-5b49b1fe90a8)
+ Call ID: e0b3339f-9a50-4b58-a9cd-5b49b1fe90a8
   Args:
-    type: :Ancestor
-    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
-  AssignClass (0caeadff-d173-4e2e-8e7e-6d74cc6ac8b5)
- Call ID: 0caeadff-d173-4e2e-8e7e-6d74cc6ac8b5
+    source: :LennartBernadotte
+    type: :Person
+  AddTriple (f04512d7-fa70-4b75-a754-ae51a423b56e)
+ Call ID: f04512d7-fa70-4b75-a754-ae51a423b56e
   Args:
-    source: Anastasia_Mikhailovna_of_Russia
-    type: :Woman
-  AssignClass (6bfb198e-72d8-424f-b030-5c9ccbd1e2a2)
- Call ID: 6bfb198e-72d8-424f-b030-5c9ccbd1e2a2
+    source: :MariaPavlovna
+    relation: :hasSon
+    target: :LennartBernadotte
+  AddTriple (9a32b520-cc29-477b-b886-91cea714f9d9)
+ Call ID: 9a32b520-cc29-477b-b886-91cea714f9d9
   Args:
-    type: :Ancestor
-    source: Anastasia_Mikhailovna_of_Russia
-  AddTriple (f601d7bb-f0cb-4e0c-b367-a249b83f0b85)
- Call ID: f601d7bb-f0cb-4e0c-b367-a249b83f0b85
-  Args:
+    source: :LennartBernadotte
     relation: :hasFather
-    source: Cecilie_of_Mecklenburg-Schwerin
-    target: Frederick_Francis_III_of_Mecklenburg-Schwerin
-  AddTriple (2ea35191-209c-4437-a340-37397d130a86)
- Call ID: 2ea35191-209c-4437-a340-37397d130a86
+    target: :WilhelmOfSweden
+  AssignClass (03e741f7-6e23-42fd-b577-aba8b962ddd4)
+ Call ID: 03e741f7-6e23-42fd-b577-aba8b962ddd4
   Args:
-    source: Cecilie_of_Mecklenburg-Schwerin
-    target: Anastasia_Mikhailovna_of_Russia
-    relation: :hasMother
-  AssignClass (4842db19-6c00-4077-9b5f-69a1053490bf)
- Call ID: 4842db19-6c00-4077-9b5f-69a1053490bf
-  Args:
-    source: Wilhelm_II_German_Emperor
+    source: :SergeiPutyatin
     type: :Man
-  AssignClass (39bc323a-2680-49a5-8e84-c57ca3c66b5b)
- Call ID: 39bc323a-2680-49a5-8e84-c57ca3c66b5b
+  AssignClass (2b4698a3-c2e4-4e5c-a7e7-4fd2dace8bb8)
+ Call ID: 2b4698a3-c2e4-4e5c-a7e7-4fd2dace8bb8
   Args:
-    type: :Ancestor
-    source: Wilhelm_II_German_Emperor
-  AddTriple (f5d7df7b-ad9d-49ca-979c-08febafbe017)
- Call ID: f5d7df7b-ad9d-49ca-979c-08febafbe017
+    source: :SergeiPutyatin
+    type: :Person
+  AddLiteral (7b4ca0d8-436b-4a91-b10c-f32dc1ce59cb)
+ Call ID: 7b4ca0d8-436b-4a91-b10c-f32dc1ce59cb
   Args:
+    literal_value: 1917
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: :MariaPavlovna
+  AssignClass (8807fefe-f40b-4ed3-bcc2-7e60cfc7e178)
+ Call ID: 8807fefe-f40b-4ed3-bcc2-7e60cfc7e178
+  Args:
+    source: :RomanSergeievichPutyatin
+    type: :Man
+  AssignClass (57c16245-4f20-45ec-96fc-74ac09cfd182)
+ Call ID: 57c16245-4f20-45ec-96fc-74ac09cfd182
+  Args:
+    source: :RomanSergeievichPutyatin
+    type: :Person
+  AddTriple (a79d75ed-6e0e-45a1-9eab-6db99b7cd3b9)
+ Call ID: a79d75ed-6e0e-45a1-9eab-6db99b7cd3b9
+  Args:
+    source: :MariaPavlovna
+    target: :RomanSergeievichPutyatin
+    relation: :hasSon
+  AddTriple (d216d8a3-706d-4b4d-be33-6b3364e36729)
+ Call ID: d216d8a3-706d-4b4d-be33-6b3364e36729
+  Args:
+    source: :RomanSergeievichPutyatin
     relation: :hasFather
-    target: Wilhelm_II_German_Emperor
-    source: Wilhelm_German_Crown_Prince
-  AssignClass (e9b9580e-c661-4779-8bff-e127f1676871)
- Call ID: e9b9580e-c661-4779-8bff-e127f1676871
+    target: :SergeiPutyatin
+  AddLiteral (ea3ff945-a530-4a42-8846-11a06477765b)
+ Call ID: ea3ff945-a530-4a42-8846-11a06477765b
   Args:
-    type: :Woman
-    source: Alexandrine_of_Mecklenburg-Schwerin
-  AssignClass (23355650-8ece-42a2-bd7f-261e46254f67)
- Call ID: 23355650-8ece-42a2-bd7f-261e46254f67
+    source: :RomanSergeievichPutyatin
+    literal_value: 1919
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  Finish (5a56f45d-0e85-49d5-aad6-99ada5a4ebfa)
+ Call ID: 5a56f45d-0e85-49d5-aad6-99ada5a4ebfa
   Args:
-    type: :Person
-    source: Alexandrine_of_Mecklenburg-Schwerin
-  AddTriple (800395e0-e5e1-4a2a-843c-9848a94711ff)
- Call ID: 800395e0-e5e1-4a2a-843c-9848a94711ff
-  Args:
-    source: Cecilie_of_Mecklenburg-Schwerin
-    target: Alexandrine_of_Mecklenburg-Schwerin
-    relation: :hasSister
-  AssignClass (93092697-0831-46f0-bc73-eda994046a59)
- Call ID: 93092697-0831-46f0-bc73-eda994046a59
-  Args:
-    source: Frederick_Francis_IV_of_Mecklenburg-Schwerin
-    type: :Man
-  AssignClass (0cb26b92-05e9-48cd-b62d-0f02a9bab24a)
- Call ID: 0cb26b92-05e9-48cd-b62d-0f02a9bab24a
-  Args:
-    source: Frederick_Francis_IV_of_Mecklenburg-Schwerin
-    type: :Person
-  AddTriple (bac4d809-e4e5-4ab5-9560-87d4278ee827)
- Call ID: bac4d809-e4e5-4ab5-9560-87d4278ee827
-  Args:
-    source: Cecilie_of_Mecklenburg-Schwerin
-    target: Frederick_Francis_IV_of_Mecklenburg-Schwerin
-    relation: :hasBrother
-  AssignClass (50333822-5103-4556-b702-cdded7b4dc61)
- Call ID: 50333822-5103-4556-b702-cdded7b4dc61
-  Args:
-    type: :Man
-    source: Christian_X_of_Denmark
-  AssignClass (88a90e7b-540e-4b39-a9ce-16b58249e1b7)
- Call ID: 88a90e7b-540e-4b39-a9ce-16b58249e1b7
-  Args:
-    source: Christian_X_of_Denmark
-    type: :Person
-  AddTriple (280011da-74d9-4340-a6ca-7de2007932a1)
- Call ID: 280011da-74d9-4340-a6ca-7de2007932a1
-  Args:
-    target: Christian_X_of_Denmark
-    source: Alexandrine_of_Mecklenburg-Schwerin
-    relation: :hasRelation
-  AssignClass (1037ab68-7daa-4db5-b432-a68946657496)
- Call ID: 1037ab68-7daa-4db5-b432-a68946657496
-  Args:
-    source: Michael_Nikolaevich_of_Russia
-    type: :Man
-  AssignClass (490e5c0c-6bd7-41b9-90b7-ee12b6c0acec)
- Call ID: 490e5c0c-6bd7-41b9-90b7-ee12b6c0acec
-  Args:
-    source: Michael_Nikolaevich_of_Russia
-    type: :Ancestor
-  AddTriple (c82902a8-d35f-49a0-8219-c6a994f1d063)
- Call ID: c82902a8-d35f-49a0-8219-c6a994f1d063
-  Args:
-    source: Anastasia_Mikhailovna_of_Russia
-    target: Michael_Nikolaevich_of_Russia
-    relation: :hasFather
-  AssignClass (823f12e2-227b-4877-8b63-08d051058128)
- Call ID: 823f12e2-227b-4877-8b63-08d051058128
-  Args:
-    source: Wilhelm_son_of_Cecilie
-    type: :Man
-  AssignClass (75dd1a59-9283-4d26-be19-e033f4c7e243)
- Call ID: 75dd1a59-9283-4d26-be19-e033f4c7e243
-  Args:
-    source: Wilhelm_son_of_Cecilie
-    type: :Person
-  AddTriple (c213c82d-c71a-436a-b1e7-ed0a2e728e81)
- Call ID: c213c82d-c71a-436a-b1e7-ed0a2e728e81
-  Args:
-    relation: :hasFather
-    target: Wilhelm_German_Crown_Prince
-    source: Wilhelm_son_of_Cecilie
-  AddTriple (1006704b-fd76-415c-8906-67c211f7e031)
- Call ID: 1006704b-fd76-415c-8906-67c211f7e031
-  Args:
-    source: Wilhelm_son_of_Cecilie
-    target: Cecilie_of_Mecklenburg-Schwerin
-    relation: :hasMother
-  AssignClass (a3581ceb-1faa-41ac-a88d-32e5f622b44f)
- Call ID: a3581ceb-1faa-41ac-a88d-32e5f622b44f
-  Args:
-    type: :Man
-    source: Louis_Ferdinand_son_of_Cecilie
-  AssignClass (edc84938-087c-46ca-bbfc-cc1346fc51a6)
- Call ID: edc84938-087c-46ca-bbfc-cc1346fc51a6
-  Args:
-    type: :Person
-    source: Louis_Ferdinand_son_of_Cecilie
-  AddTriple (e22a6c64-2ef5-4624-b707-fe0d99d89ed5)
- Call ID: e22a6c64-2ef5-4624-b707-fe0d99d89ed5
-  Args:
-    source: Louis_Ferdinand_son_of_Cecilie
-    target: Wilhelm_German_Crown_Prince
-    relation: :hasFather
-  AddTriple (55d6b85f-fc3e-424b-8ac3-97ef3b8d3b99)
- Call ID: 55d6b85f-fc3e-424b-8ac3-97ef3b8d3b99
-  Args:
-    source: Louis_Ferdinand_son_of_Cecilie
-    target: Cecilie_of_Mecklenburg-Schwerin
-    relation: :hasMother
-  AssignClass (d11196d3-e14c-4c32-88c3-0da628501141)
- Call ID: d11196d3-e14c-4c32-88c3-0da628501141
-  Args:
-    source: Hubertus_son_of_Cecilie
-    type: :Man
-  AssignClass (39ecc77c-469f-42ca-9304-d9ed02b6e9be)
- Call ID: 39ecc77c-469f-42ca-9304-d9ed02b6e9be
-  Args:
-    type: :Person
-    source: Hubertus_son_of_Cecilie
-  AddTriple (380de98b-8f8f-49c0-9ae1-8faf3f5133a5)
- Call ID: 380de98b-8f8f-49c0-9ae1-8faf3f5133a5
-  Args:
-    relation: :hasFather
-    source: Hubertus_son_of_Cecilie
-    target: Wilhelm_German_Crown_Prince
-  AddTriple (6b7b5ce0-b07c-4a32-a2aa-398283fd7577)
- Call ID: 6b7b5ce0-b07c-4a32-a2aa-398283fd7577
-  Args:
-    source: Hubertus_son_of_Cecilie
-    target: Cecilie_of_Mecklenburg-Schwerin
-    relation: :hasMother
-  AssignClass (a619ba12-b835-4149-9244-8341b92bf0c4)
- Call ID: a619ba12-b835-4149-9244-8341b92bf0c4
-  Args:
-    source: Dorothea_von_Salviati
-    type: :Woman
-  AssignClass (61c64f12-f118-454c-b4bb-86c88e99da94)
- Call ID: 61c64f12-f118-454c-b4bb-86c88e99da94
-  Args:
-    source: Dorothea_von_Salviati
-    type: :Person
-  AddTriple (7247c118-6560-4cad-964c-8c3368e53da3)
- Call ID: 7247c118-6560-4cad-964c-8c3368e53da3
-  Args:
-    target: Dorothea_von_Salviati
-    source: Wilhelm_son_of_Cecilie
-    relation: :hasRelation
-  AssignClass (000ebc62-7ac8-4da4-a635-4b0fa15c5cbf)
- Call ID: 000ebc62-7ac8-4da4-a635-4b0fa15c5cbf
-  Args:
-    source: Kira_Kirillovna_of_Russia
-    type: :Woman
-  AssignClass (0932035e-a837-43d4-9f8e-835ae745899b)
- Call ID: 0932035e-a837-43d4-9f8e-835ae745899b
-  Args:
-    source: Kira_Kirillovna_of_Russia
-    type: :Person
-  AddTriple (80dcc592-f993-4d3b-8a4e-e037b8135597)
- Call ID: 80dcc592-f993-4d3b-8a4e-e037b8135597
-  Args:
-    source: Louis_Ferdinand_son_of_Cecilie
-    target: Kira_Kirillovna_of_Russia
-    relation: :hasRelation
-  AssignClass (19cef327-9fc1-42fb-9146-c84aab050553)
- Call ID: 19cef327-9fc1-42fb-9146-c84aab050553
-  Args:
-    source: Cyril_Vladimirovich_of_Russia
-    type: :Man
-  AssignClass (4b1396a6-201e-460a-90c4-3581f13196b1)
- Call ID: 4b1396a6-201e-460a-90c4-3581f13196b1
-  Args:
-    type: :Ancestor
-    source: Cyril_Vladimirovich_of_Russia
-  AddTriple (0c038b38-8ad6-4617-8215-7c30cd60d077)
- Call ID: 0c038b38-8ad6-4617-8215-7c30cd60d077
-  Args:
-    source: Kira_Kirillovna_of_Russia
-    target: Cyril_Vladimirovich_of_Russia
-    relation: :hasFather
-  AssignClass (28b2f508-566d-4644-a168-d1aaf4605169)
- Call ID: 28b2f508-566d-4644-a168-d1aaf4605169
-  Args:
-    source: Frederick_son_of_Cecilie
-    type: :Man
-  AssignClass (26a45f98-05f4-4dce-8adc-c99cbe860ab3)
- Call ID: 26a45f98-05f4-4dce-8adc-c99cbe860ab3
-  Args:
-    type: :Person
-    source: Frederick_son_of_Cecilie
-  AddTriple (80f49bb9-f18a-424c-8c75-2f5e0489755f)
- Call ID: 80f49bb9-f18a-424c-8c75-2f5e0489755f
-  Args:
-    source: Frederick_son_of_Cecilie
-    target: Wilhelm_German_Crown_Prince
-    relation: :hasFather
-  AddTriple (a9ca072d-0ce5-45b7-9f06-3c2bf14cac90)
- Call ID: a9ca072d-0ce5-45b7-9f06-3c2bf14cac90
-  Args:
-    relation: :hasMother
-    target: Cecilie_of_Mecklenburg-Schwerin
-    source: Frederick_son_of_Cecilie
-  AssignClass (422db69b-1ad6-4e94-8a68-43e79539552d)
- Call ID: 422db69b-1ad6-4e94-8a68-43e79539552d
-  Args:
-    type: :Woman
-    source: Victoria_Marina_of_Prussia
-  AssignClass (9573a346-ef32-44ab-8455-869f8cd2bc50)
- Call ID: 9573a346-ef32-44ab-8455-869f8cd2bc50
-  Args:
-    type: :Person
-    source: Victoria_Marina_of_Prussia
-  AddTriple (a6a9221f-f5b5-4524-911b-ee39aa0ea32f)
- Call ID: a6a9221f-f5b5-4524-911b-ee39aa0ea32f
-  Args:
-    relation: :hasFather
-    target: Frederick_son_of_Cecilie
-    source: Victoria_Marina_of_Prussia
-  Finish (8881a8de-0d5c-4e1a-8b54-bfda84cdbdf2)
- Call ID: 8881a8de-0d5c-4e1a-8b54-bfda84cdbdf2
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1011,79 +910,44 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Hubertus_son_of_Cecilie a :Man,
-          :Person ;
-      :hasFather data:Wilhelm_German_Crown_Prince ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
-
-  data:Louis_Ferdinand_son_of_Cecilie a :Man,
-          :Person ;
-      :hasFather data:Wilhelm_German_Crown_Prince ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-      :hasRelation data:Kira_Kirillovna_of_Russia .
-
-  data:Victoria_Marina_of_Prussia a :Person,
+  data:MariaPavlovna a :Person,
           :Woman ;
-      :hasFather data:Frederick_son_of_Cecilie .
+      :alsoKnownAs "Maria Pavlovna the Younger"^^xsd:string ;
+      :hasBirthYear 1890 ;
+      :hasBrother data:DmitriPavlovich ;
+      :hasDeathYear 1958 ;
+      :hasFather data:PaulAlexandrovich ;
+      :hasMarriageYear 1908,
+          1917 ;
+      :hasMother data:AlexandraGeorgievna ;
+      :hasSon data:LennartBernadotte,
+          data:RomanSergeievichPutyatin .
 
-  data:Wilhelm_son_of_Cecilie a :Man,
+  data:DmitriPavlovich a :Man,
           :Person ;
-      :hasFather data:Wilhelm_German_Crown_Prince ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-      :hasRelation data:Dorothea_von_Salviati .
+      :hasFather data:PaulAlexandrovich ;
+      :hasMother data:AlexandraGeorgievna .
 
-  data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
-          :Woman ;
-      :hasRelation data:Christian_X_of_Denmark .
+  data:LennartBernadotte a :Man,
+          :Person ;
+      :hasFather data:WilhelmOfSweden .
 
-  data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
-          :Woman ;
-      :hasFather data:Michael_Nikolaevich_of_Russia .
+  data:RomanSergeievichPutyatin a :Man,
+          :Person ;
+      :hasDeathYear 1919 ;
+      :hasFather data:SergeiPutyatin .
 
-  data:Christian_X_of_Denmark a :Man,
+  data:SergeiPutyatin a :Man,
           :Person .
 
-  data:Cyril_Vladimirovich_of_Russia a :Ancestor,
-          :Man .
+  data:WilhelmOfSweden a :Man,
+          :Person .
 
-  data:Dorothea_von_Salviati a :Person,
+  data:AlexandraGeorgievna a :Person,
           :Woman .
 
-  data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Ancestor,
-          :Man .
-
-  data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
+  data:PaulAlexandrovich a :Man,
           :Person .
-
-  data:Frederick_son_of_Cecilie a :Man,
-          :Person ;
-      :hasFather data:Wilhelm_German_Crown_Prince ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
-
-  data:Kira_Kirillovna_of_Russia a :Person,
-          :Woman ;
-      :hasFather data:Cyril_Vladimirovich_of_Russia .
-
-  data:Michael_Nikolaevich_of_Russia a :Ancestor,
-          :Man .
-
-  data:Wilhelm_II_German_Emperor a :Ancestor,
-          :Man .
-
-  data:Cecilie_of_Mecklenburg-Schwerin a :Person,
-          :Woman ;
-      :hasBirthYear 1886 ;
-      :hasBrother data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
-      :hasDeathYear 1954 ;
-      :hasFather data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
-      :hasMarriageYear 1905 ;
-      :hasMother data:Anastasia_Mikhailovna_of_Russia ;
-      :hasRelation data:Wilhelm_German_Crown_Prince ;
-      :hasSister data:Alexandrine_of_Mecklenburg-Schwerin .
-
-  data:Wilhelm_German_Crown_Prince a :Man,
-          :Person ;
-      :hasFather data:Wilhelm_II_German_Emperor .
 
 
 
@@ -1095,230 +959,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (7fa5f112-be26-4656-b9e2-290553670bcc)
- Call ID: 7fa5f112-be26-4656-b9e2-290553670bcc
+  ValidateShacl (1a6b0df6-927d-4c93-85ff-a7085036af14)
+ Call ID: 1a6b0df6-927d-4c93-85ff-a7085036af14
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:27
+Total violations:18
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Wilhelm_German_Crown_Prince' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
+      The value PaulAlexandrovich for the relationship hasFather of node DmitriPavlovich is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+      AssignClass(node='PaulAlexandrovich', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Wilhelm_German_Crown_Prince' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
+      The value WilhelmOfSweden for the relationship hasFather of node LennartBernadotte is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+      AssignClass(node='WilhelmOfSweden', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Wilhelm_German_Crown_Prince' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
+      The value SergeiPutyatin for the relationship hasFather of node RomanSergeievichPutyatin is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+      AssignClass(node='SergeiPutyatin', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Wilhelm_German_Crown_Prince' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
+      The value AlexandraGeorgievna for the relationship hasMother of node DmitriPavlovich is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+      AssignClass(node='AlexandraGeorgievna', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Mecklenburg-Schwerin' currently lacks the required class ':Ancestor' to satisfy the 'hasMother' property constraint.
+      The value PaulAlexandrovich for the relationship hasFather of node DmitriPavlovich is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node='PaulAlexandrovich', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Mecklenburg-Schwerin' currently lacks the required class ':Ancestor' to satisfy the 'hasMother' property constraint.
+      The value PaulAlexandrovich for the relationship hasFather of node MariaPavlovna is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node='PaulAlexandrovich', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Mecklenburg-Schwerin' currently lacks the required class ':Ancestor' to satisfy the 'hasMother' property constraint.
+      The value WilhelmOfSweden for the relationship hasFather of node LennartBernadotte is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node='WilhelmOfSweden', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Mecklenburg-Schwerin' currently lacks the required class ':Ancestor' to satisfy the 'hasMother' property constraint.
+      The value SergeiPutyatin for the relationship hasFather of node RomanSergeievichPutyatin is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node='SergeiPutyatin', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Wilhelm_German_Crown_Prince' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
+      The value AlexandraGeorgievna for the relationship hasMother of node DmitriPavlovich is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+      AssignClass(node='AlexandraGeorgievna', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Wilhelm_German_Crown_Prince' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
+      The value AlexandraGeorgievna for the relationship hasMother of node MariaPavlovna is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+      AssignClass(node='AlexandraGeorgievna', class=':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Frederick_son_of_Cecilie' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
+      The value PaulAlexandrovich for the relationship hasFather of node DmitriPavlovich is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_son_of_Cecilie', class=':Ancestor')
+      AssignClass(node='PaulAlexandrovich', class=':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Wilhelm_German_Crown_Prince' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
+      The value PaulAlexandrovich for the relationship hasFather of node MariaPavlovna is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+      AssignClass(node='PaulAlexandrovich', class=':Ancestor')
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Wilhelm_German_Crown_Prince' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
+      The value WilhelmOfSweden for the relationship hasFather of node LennartBernadotte is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+      AssignClass(node='WilhelmOfSweden', class=':Ancestor')
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Mecklenburg-Schwerin' currently lacks the required class ':Ancestor' to satisfy the 'hasMother' property constraint.
+      The value SergeiPutyatin for the relationship hasFather of node RomanSergeievichPutyatin is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node='SergeiPutyatin', class=':Ancestor')
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Mecklenburg-Schwerin' currently lacks the required class ':Ancestor' to satisfy the 'hasMother' property constraint.
+      The value AlexandraGeorgievna for the relationship hasMother of node DmitriPavlovich is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node='AlexandraGeorgievna', class=':Ancestor')
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Mecklenburg-Schwerin' currently lacks the required class ':Ancestor' to satisfy the 'hasMother' property constraint.
+      The value AlexandraGeorgievna for the relationship hasMother of node MariaPavlovna is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node='AlexandraGeorgievna', class=':Ancestor')
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Mecklenburg-Schwerin' currently lacks the required class ':Ancestor' to satisfy the 'hasMother' property constraint.
+      The value PaulAlexandrovich for the relationship hasFather of node MariaPavlovna is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node='PaulAlexandrovich', class=':Ancestor')
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Wilhelm_German_Crown_Prince' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Wilhelm_German_Crown_Prince' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Frederick_son_of_Cecilie' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_son_of_Cecilie', class=':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Wilhelm_German_Crown_Prince' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Wilhelm_German_Crown_Prince' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
-
-
-  Violation [23]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Mecklenburg-Schwerin' currently lacks the required class ':Ancestor' to satisfy the 'hasMother' property constraint.
+      The value AlexandraGeorgievna for the relationship hasMother of node MariaPavlovna is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Mecklenburg-Schwerin' currently lacks the required class ':Ancestor' to satisfy the 'hasMother' property constraint.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Mecklenburg-Schwerin' currently lacks the required class ':Ancestor' to satisfy the 'hasMother' property constraint.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Cecilie_of_Mecklenburg-Schwerin' currently lacks the required class ':Ancestor' to satisfy the 'hasMother' property constraint.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Frederick_son_of_Cecilie' currently lacks the required class ':Ancestor' to satisfy the 'hasFather' property constraint.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_son_of_Cecilie', class=':Ancestor')
+      AssignClass(node='AlexandraGeorgievna', class=':Ancestor')
 
 
 
@@ -1327,24 +1119,33 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (c0f52953-5a69-4f05-a2de-d8c886790a56)
- Call ID: c0f52953-5a69-4f05-a2de-d8c886790a56
+  AssignClass (35699a82-4f84-4a71-91d0-dc861c821bd1)
+ Call ID: 35699a82-4f84-4a71-91d0-dc861c821bd1
   Args:
-    source: Wilhelm_German_Crown_Prince
+    source: :PaulAlexandrovich
     type: :Ancestor
-  AssignClass (d179eeda-46c0-4d96-9ebe-57f6e181f4b3)
- Call ID: d179eeda-46c0-4d96-9ebe-57f6e181f4b3
+  AssignClass (3c1450fb-cdfa-4818-ae3a-c229d15e327e)
+ Call ID: 3c1450fb-cdfa-4818-ae3a-c229d15e327e
   Args:
     type: :Ancestor
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AssignClass (5eeb13d4-1513-4bc8-bfa8-715aaf3db59e)
- Call ID: 5eeb13d4-1513-4bc8-bfa8-715aaf3db59e
+    source: :WilhelmOfSweden
+  AssignClass (00382375-c547-4dde-9d50-12c7f8d74a1f)
+ Call ID: 00382375-c547-4dde-9d50-12c7f8d74a1f
   Args:
-    source: Frederick_son_of_Cecilie
+    source: :SergeiPutyatin
     type: :Ancestor
-  Finish (c1b11989-aef9-4bfa-abbb-192c72b117c2)
- Call ID: c1b11989-aef9-4bfa-abbb-192c72b117c2
+  AssignClass (605bcd5b-0533-4e80-b9f9-4d0c10eba132)
+ Call ID: 605bcd5b-0533-4e80-b9f9-4d0c10eba132
   Args:
+    source: :AlexandraGeorgievna
+    type: :Ancestor
+  ValidateShacl (5dffa4d8-05bf-4173-8e27-7e16770bb0d8)
+ Call ID: 5dffa4d8-05bf-4173-8e27-7e16770bb0d8
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1361,96 +1162,50 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Hubertus_son_of_Cecilie a :Man,
-          :Person ;
-      :hasFather data:Wilhelm_German_Crown_Prince ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
-
-  data:Louis_Ferdinand_son_of_Cecilie a :Man,
-          :Person ;
-      :hasFather data:Wilhelm_German_Crown_Prince ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-      :hasRelation data:Kira_Kirillovna_of_Russia .
-
-  data:Victoria_Marina_of_Prussia a :Person,
+  data:MariaPavlovna a :Person,
           :Woman ;
-      :hasFather data:Frederick_son_of_Cecilie .
+      :alsoKnownAs "Maria Pavlovna the Younger"^^xsd:string ;
+      :hasBirthYear 1890 ;
+      :hasBrother data:DmitriPavlovich ;
+      :hasDeathYear 1958 ;
+      :hasFather data:PaulAlexandrovich ;
+      :hasMarriageYear 1908,
+          1917 ;
+      :hasMother data:AlexandraGeorgievna ;
+      :hasSon data:LennartBernadotte,
+          data:RomanSergeievichPutyatin .
 
-  data:Wilhelm_son_of_Cecilie a :Man,
+  data:DmitriPavlovich a :Man,
           :Person ;
-      :hasFather data:Wilhelm_German_Crown_Prince ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-      :hasRelation data:Dorothea_von_Salviati .
+      :hasFather data:PaulAlexandrovich ;
+      :hasMother data:AlexandraGeorgievna .
 
-  data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
-          :Woman ;
-      :hasRelation data:Christian_X_of_Denmark .
+  data:LennartBernadotte a :Man,
+          :Person ;
+      :hasFather data:WilhelmOfSweden .
 
-  data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
-          :Woman ;
-      :hasFather data:Michael_Nikolaevich_of_Russia .
+  data:RomanSergeievichPutyatin a :Man,
+          :Person ;
+      :hasDeathYear 1919 ;
+      :hasFather data:SergeiPutyatin .
 
-  data:Christian_X_of_Denmark a :Man,
+  data:SergeiPutyatin a :Ancestor,
+          :Man,
           :Person .
 
-  data:Cyril_Vladimirovich_of_Russia a :Ancestor,
-          :Man .
+  data:WilhelmOfSweden a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Dorothea_von_Salviati a :Person,
+  data:AlexandraGeorgievna a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Ancestor,
-          :Man .
-
-  data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
+  data:PaulAlexandrovich a :Ancestor,
+          :Man,
           :Person .
 
-  data:Frederick_son_of_Cecilie a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Wilhelm_German_Crown_Prince ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin .
 
-  data:Kira_Kirillovna_of_Russia a :Person,
-          :Woman ;
-      :hasFather data:Cyril_Vladimirovich_of_Russia .
-
-  data:Michael_Nikolaevich_of_Russia a :Ancestor,
-          :Man .
-
-  data:Wilhelm_II_German_Emperor a :Ancestor,
-          :Man .
-
-  data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1886 ;
-      :hasBrother data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
-      :hasDeathYear 1954 ;
-      :hasFather data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
-      :hasMarriageYear 1905 ;
-      :hasMother data:Anastasia_Mikhailovna_of_Russia ;
-      :hasRelation data:Wilhelm_German_Crown_Prince ;
-      :hasSister data:Alexandrine_of_Mecklenburg-Schwerin .
-
-  data:Wilhelm_German_Crown_Prince a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Wilhelm_II_German_Emperor .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (2b9bccc0-1710-4744-9898-a44bef7ecbae)
- Call ID: 2b9bccc0-1710-4744-9898-a44bef7ecbae
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1460,6 +1215,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (2ebcef1d-156c-4f2a-95c4-20f737713f96)
- Call ID: 2ebcef1d-156c-4f2a-95c4-20f737713f96
+  Finish (677f92fd-2e7c-4760-a15c-43dfe7c82afb)
+ Call ID: 677f92fd-2e7c-4760-a15c-43dfe7c82afb
   Args:

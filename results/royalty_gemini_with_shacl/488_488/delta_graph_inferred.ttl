@@ -1,0 +1,183 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Grand_Duke_Michael_Nicolaievich_of_Russia a :Ancestor,
+        :Man ;
+    :hasBrother data:Grand_Duke_Michael_Nicolaievich_of_Russia ;
+    :hasRelation data:Grand_Duke_Michael_Nicolaievich_of_Russia ;
+    :isBloodrelationOf data:Grand_Duke_Michael_Nicolaievich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Michael_Nicolaievich_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Michael_Nicolaievich_of_Russia .
+
+data:Prince_Paul_Chavchavadze a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Paul_Chavchavadze ;
+    :hasChild data:Prince_David_Chavchavadze ;
+    :hasDeathYear 1971 ;
+    :hasRelation data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich,
+        data:Prince_David_Chavchavadze,
+        data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :hasSex data:Male ;
+    :hasSon data:Prince_David_Chavchavadze ;
+    :isAncestorOf data:Prince_David_Chavchavadze ;
+    :isBloodrelationOf data:Prince_Paul_Chavchavadze ;
+    :isBrotherOf data:Prince_Paul_Chavchavadze ;
+    :isFatherOf data:Prince_David_Chavchavadze ;
+    :isParentOf data:Prince_David_Chavchavadze ;
+    :isSiblingOf data:Prince_Paul_Chavchavadze ;
+    :isUncleOf data:Prince_David_Chavchavadze .
+
+data:Grand_Duchess_Maria_Georgievna_of_Russia a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :hasDaughter data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :hasRelation data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich,
+        data:Prince_David_Chavchavadze,
+        data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :hasSex data:Female ;
+    :hasSister data:Grand_Duchess_Maria_Georgievna_of_Russia ;
+    :isAncestorOf data:Prince_David_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :isAuntOf data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Georgievna_of_Russia ;
+    :isMotherOf data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :isParentOf data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :isSiblingOf data:Grand_Duchess_Maria_Georgievna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Maria_Georgievna_of_Russia .
+
+data:Grand_Duke_George_Mikhailovich a :Ancestor,
+        :Man ;
+    :hasBrother data:Grand_Duke_George_Mikhailovich ;
+    :hasChild data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :hasDaughter data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :hasRelation data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich,
+        data:Prince_David_Chavchavadze,
+        data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Prince_David_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :isBloodrelationOf data:Grand_Duke_George_Mikhailovich ;
+    :isBrotherOf data:Grand_Duke_George_Mikhailovich ;
+    :isFatherOf data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :isParentOf data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :isSiblingOf data:Grand_Duke_George_Mikhailovich ;
+    :isUncleOf data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia .
+
+data:Prince_David_Chavchavadze a :Man ;
+    :hasAncestor data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich,
+        data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia ;
+    :hasBrother data:Prince_David_Chavchavadze ;
+    :hasFather data:Prince_Paul_Chavchavadze ;
+    :hasMother data:Princess_Nina_Georgievna_of_Russia ;
+    :hasParent data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia ;
+    :hasRelation data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich,
+        data:Prince_David_Chavchavadze,
+        data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Prince_David_Chavchavadze ;
+    :isBrotherOf data:Prince_David_Chavchavadze ;
+    :isChildOf data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia ;
+    :isSiblingOf data:Prince_David_Chavchavadze ;
+    :isSonOf data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia .
+
+data:Princess_Xenia a :Woman ;
+    :hasAncestor data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich ;
+    :hasFather data:Grand_Duke_George_Mikhailovich ;
+    :hasMother data:Grand_Duchess_Maria_Georgievna_of_Russia ;
+    :hasParent data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich ;
+    :hasRelation data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich,
+        data:Prince_David_Chavchavadze,
+        data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :hasSex data:Female ;
+    :hasSister data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :isAuntOf data:Prince_David_Chavchavadze ;
+    :isBloodrelationOf data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :isChildOf data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich ;
+    :isDaughterOf data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich ;
+    :isSiblingOf data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :isSisterOf data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia .
+
+data:Princess_Nina_Georgievna_of_Russia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich ;
+    :hasBirthYear 1901 ;
+    :hasChild data:Prince_David_Chavchavadze ;
+    :hasDeathYear 1974 ;
+    :hasFather data:Grand_Duke_George_Mikhailovich ;
+    :hasMarriageYear 1922 ;
+    :hasMother data:Grand_Duchess_Maria_Georgievna_of_Russia ;
+    :hasParent data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich ;
+    :hasRelation data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich,
+        data:Prince_David_Chavchavadze,
+        data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :hasSex data:Female ;
+    :hasSister data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :hasSon data:Prince_David_Chavchavadze ;
+    :isAncestorOf data:Prince_David_Chavchavadze ;
+    :isAuntOf data:Prince_David_Chavchavadze ;
+    :isBloodrelationOf data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :isChildOf data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich ;
+    :isDaughterOf data:Grand_Duchess_Maria_Georgievna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich ;
+    :isMotherOf data:Prince_David_Chavchavadze ;
+    :isParentOf data:Prince_David_Chavchavadze ;
+    :isSiblingOf data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia ;
+    :isSisterOf data:Princess_Nina_Georgievna_of_Russia,
+        data:Princess_Xenia .
+

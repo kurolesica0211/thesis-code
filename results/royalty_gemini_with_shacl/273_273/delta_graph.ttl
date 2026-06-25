@@ -2,68 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:EdwardWindsorLordDownpatrick a :Man,
-        :Person ;
-    :hasSister data:AmeliaWindsor .
+data:Marina_Windsor a :Woman ;
+    :hasAncestor data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasBirthYear 1992 ;
+    :hasBrother data:Edward_Windsor_Lord_Downpatrick ;
+    :hasFather data:George_Windsor ;
+    :hasMother data:Sylvana_Tomaselli ;
+    :hasSister data:Amelia_Windsor .
 
-data:LordNicholasWindsor a :Man,
-        :Person ;
-    :hasFather data:PrinceEdwardDukeOfKent ;
-    :hasMother data:KatharineDuchessOfKent .
+data:Amelia_Windsor a :Woman .
 
-data:MarinaWindsor a :Person,
+data:Edward_Windsor_Lord_Downpatrick a :Man .
+
+data:George_Windsor a :Ancestor,
+        :Man ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent .
+
+data:Katharine_Duchess_of_Kent a :Ancestor,
         :Woman ;
-    :hasSister data:AmeliaWindsor .
+    :hasFather data:William_Worsley .
 
-data:Female a :Sex .
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man .
 
-data:GeorgeV a :Ancestor,
-        :Man,
-        :Person .
-
-data:GeorgeWindsor a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:PrinceEdwardDukeOfKent ;
-    :hasMother data:KatharineDuchessOfKent .
-
-data:MaryOfTeck a :Ancestor,
-        :Person,
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
         :Woman .
 
-data:PrinceGeorgeDukeOfKent a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:GeorgeV ;
-    :hasMother data:MaryOfTeck .
-
-data:PrincessMarinaOfGreeceAndDenmark a :Ancestor,
-        :Person,
+data:Sylvana_Tomaselli a :Ancestor,
         :Woman .
 
-data:SirWilliamWorsley4thBaronet a :Ancestor,
-        :Man,
-        :Person .
-
-data:SylvanaTomaselli a :Ancestor,
-        :Person,
-        :Woman .
-
-data:AmeliaWindsor a :Person,
-        :Woman ;
-    :hasBirthYear "1995"^^xsd:positiveInteger ;
-    :hasFather data:GeorgeWindsor ;
-    :hasMother data:SylvanaTomaselli ;
-    :hasSex data:Female .
-
-data:KatharineDuchessOfKent a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:SirWilliamWorsley4thBaronet .
-
-data:PrinceEdwardDukeOfKent a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:PrinceGeorgeDukeOfKent ;
-    :hasMother data:PrincessMarinaOfGreeceAndDenmark .
+data:William_Worsley a :Ancestor,
+        :Man .
 

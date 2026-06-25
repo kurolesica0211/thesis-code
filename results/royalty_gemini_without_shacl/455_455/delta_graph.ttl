@@ -2,32 +2,55 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexis_Ferdinand_of_Windisch-Graetz a :Man,
-        :Person ;
-    :hasDeathYear 2010 ;
-    :hasFather data:Mariano_Hugo_Prince_of_Windisch-Graetz ;
-    :hasMother data:Sophie_Habsburg .
+data:Mafalda a :Person,
+        :Woman ;
+    :hasFather data:Kyril .
 
-data:Archduchess_Sophie_of_Austria a :Person .
+data:MariaOlympia a :Person,
+        :Woman ;
+    :hasMother data:Pavlos .
 
-data:Archduke_Ferdinand_Karl_Max_of_Austria a :Man,
+data:Sofia a :Person,
+        :Woman ;
+    :isAuntOf data:Alexia .
+
+data:Theodora a :Person,
+        :Woman ;
+    :isSisterOf data:Alexia .
+
+data:AnneMarie a :Person,
+        :Woman ;
+    :hasMother data:Ingrid .
+
+data:CarlosJavierMoralesQuintana a :Man,
         :Person .
 
-data:Countess_Helene_of_Torring-Jettenbach a :Person,
-        :Woman ;
-    :hasMother data:Princess_Elizabeth_of_Greece_and_Denmark .
+data:ConstantineII a :Man,
+        :Person .
 
-data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
+data:FelipeVI a :Man,
+        :Person .
+
+data:Ingrid a :Person,
         :Woman .
 
-data:Sophie_Habsburg a :Person,
-        :Woman ;
-    :hasBirthYear 1959 ;
-    :hasFather data:Archduke_Ferdinand_Karl_Max_of_Austria ;
-    :hasMother data:Countess_Helene_of_Torring-Jettenbach ;
-    :hasRelation data:Mariano_Hugo_Prince_of_Windisch-Graetz ;
-    :knownAs data:Archduchess_Sophie_of_Austria .
+data:Kyril a :Man,
+        :Person ;
+    :hasFather data:Simeon .
 
-data:Mariano_Hugo_Prince_of_Windisch-Graetz a :Man,
+data:Simeon a :Man,
+        :Person .
+
+data:Alexia a :Person,
+        :Woman ;
+    :hasBirthYear 1965 ;
+    :hasFather data:ConstantineII ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:AnneMarie ;
+    :hasRelation data:CarlosJavierMoralesQuintana ;
+    :isBloodrelationOf data:FelipeVI ;
+    :isSiblingOf data:Pavlos .
+
+data:Pavlos a :Man,
         :Person .
 

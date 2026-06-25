@@ -7,10 +7,45 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Princess_Maria_Pia_of_Savoy a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Olga_Constantinovna_of_Russia a :Person ;
+    rdfs:label "Olga Constantinovna of Russia" ;
+    data:posIndicesFull "234:248" ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece",
+        "Queen Olga of Greece" ;
+    :hasSex data:female .
+
+data:Prince_Alexander_of_Serbia a :Person ;
+    rdfs:label "Prince Alexander of Serbia" ;
+    data:posIndicesFull "0:30" ;
+    data:posIndicesPart "1129:1138",
+        "1182:1191",
+        "1248:1254",
+        "1387:1396",
+        "1485:1491",
+        "1548:1554",
+        "1712:1718",
+        "1719:1728",
+        "1833:1839",
+        "2047:2053",
+        "2101:2110",
+        "2200:2209",
+        "2302:2308",
+        "2309:2318",
+        "2455:2461",
+        "2462:2471",
+        "2576:2582",
+        "283:292",
+        "451:457",
+        "480:486",
+        "579:585",
+        "866:875" ;
+    data:wdtLink wdt:Q2242035 ;
+    :alsoKnownAs "Prince Alexander of Yugoslavia" ;
+    :hasParent data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Princess_Maria_Pia_of_Savoy a :Person ;
     rdfs:label "Princess Maria Pia of Savoy" ;
     data:posIndicesFull "884:911" ;
     data:posIndicesPart "1143:1148",
@@ -32,95 +67,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Prince_Alexander_of_Serbia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Alexander of Serbia" ;
-    data:posIndicesFull "0:30" ;
-    data:posIndicesPart "1129:1138",
-        "1182:1191",
-        "1248:1254",
-        "1387:1396",
-        "1485:1491",
-        "1548:1554",
-        "1712:1718",
-        "1719:1728",
-        "1833:1839",
-        "2047:2053",
-        "2101:2110",
-        "2200:2209",
-        "2302:2308",
-        "2309:2318",
-        "2455:2461",
-        "2462:2471",
-        "2576:2582",
-        "283:292",
-        "579:585",
-        "866:875" ;
-    data:wdtLink wdt:Q2242035 ;
-    :alsoKnownAs "Prince Alexander of Yugoslavia" ;
-    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
-    :hasParent data:Princess_Olga_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Olga_of_Greece_and_Denmark ;
-    :isSonOf data:Princess_Olga_of_Greece_and_Denmark .
-
-data:Prince_Edward-_Duke_of_Kent a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Edward, Duke of Kent" ;
-    data:posIndicesFull "2062:2074",
-        "451:464",
-        "451:478",
-        "466:478" ;
-    data:posIndicesPart "1248:1254",
-        "1485:1491",
-        "1548:1554",
-        "1712:1718",
-        "1833:1839",
-        "2302:2308",
-        "2455:2461" ;
-    data:wdtLink wdt:Q158258 ;
-    :alsoKnownAs "Duke of Kent",
-        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
-        "Edward Kent",
-        "His Royal Highness The Duke of Kent",
-        "Prince Edward",
-        "Prince Edward of Kent",
-        "The Duke of Kent" ;
-    :hasBrother data:Prince_Michael_of_Kent ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Michael_of_Kent ;
-    :isSiblingOf data:Prince_Michael_of_Kent .
-
-data:Prince_Michael_of_Kent a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Michael of Kent" ;
-    data:posIndicesFull "480:502" ;
-    data:posIndicesPart "1248:1254",
-        "1485:1491",
-        "1548:1554",
-        "1712:1718",
-        "1833:1839",
-        "2047:2053",
-        "2302:2308",
-        "2455:2461" ;
-    data:wdtLink wdt:Q313752 ;
-    :alsoKnownAs "Michael George Charles Franklin",
-        "Prince Michael George Charles Franklin of Kent" ;
-    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Edward-_Duke_of_Kent ;
-    :isSiblingOf data:Prince_Edward-_Duke_of_Kent .
-
-data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Olga_of_Greece_and_Denmark a :Person ;
     rdfs:label "Princess Olga of Greece and Denmark" ;
     data:posIndicesFull "225:260",
         "234:260" ;
@@ -138,11 +85,9 @@ data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
     data:wdtLink wdt:Q235432 ;
     :alsoKnownAs "Olga of Greece and Denmark",
         "Princess Paul of Yugoslavia" ;
-    :hasChild data:Prince_Alexander_of_Serbia ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Alexander_of_Serbia ;
-    :isAuntOf data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Michael_of_Kent ;
-    :isMotherOf data:Prince_Alexander_of_Serbia ;
-    :isParentOf data:Prince_Alexander_of_Serbia .
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

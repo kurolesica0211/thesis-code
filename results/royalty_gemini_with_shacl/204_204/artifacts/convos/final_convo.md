@@ -85,84 +85,65 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Infanta Beatriz of Spain, Princess of Civitella-Cesi (Beatriz Isabel Federica Alfonsa Eugénie Cristina Maria Teresia Bienvenida Ladislàa de Borbón y Battenberg; 22 June 1909 – 22 November 2002) was a daughter of King Alfonso XIII of Spain and Victoria Eugenie of Battenberg, wife of Alessandro Torlonia, 5th Prince di Civitella-Cesi.
-She was a paternal aunt of King Juan Carlos I.
+Princess Beatrix*
 
 
-Childhood
-
-Born at the royal palace of La Granja, San Ildefonso near Segovia, Spain on 22 June 1909, Infanta Beatriz was the third child among the six surviving children of King Alfonso XIII of Spain and Victoria Eugenie of Battenberg.
-She was named Beatriz after her maternal grandmother, Princess Beatrice of the United Kingdom, the youngest daughter of Queen Victoria; Isabel for her great-aunt, Infanta Isabel; Federica for Princess Frederica of Hanover in whose house her parents had become engaged; Alfonsa after her father; Eugenia for Empress Eugénie of the French, her mother's godmother, Cristina and Maria for Maria Christina of Austria, her paternal grandmother, Teresia after Empress Maria Theresa and Ladislaa after Ladislaus the Posthumous.
-Infanta Beatriz was educated within the walls of the Palacio de Oriente by English nannies.
-Infanta Beatriz and her sister Maria Cristina, two years her junior, yearned to go to private schools like the daughters of the nobility who frequented the palace as their playmates, but, following Spanish tradition, they were educated by governesses and private tutors.
-Their parents placed great importance on outdoor exercise and Infanta Beatriz became fond of sports.
-Early life
-
-During the late 1920s, Infanta Beatriz and her sister Infanta Cristina presided at a number of official engagements while heading various institutions and sponsoring events.
-Beatriz and her sister took nursing classes, helping twice a week at the Red Cross in Madrid from 9 am to 1 pm and from 3 to 7 pm.
-Beatriz was president of the Red Cross in San Sebastián, working there during the royal family's summer vacation.
-Beatriz, who resembled her Spanish relatives, was a brunette, tall and lean like her father.
-In 1929, Infanta Beatriz turned twenty years old.
-She fell in love with Miguel Primo de Rivera y Sáenz de Heredia, the youngest son of Miguel Primo de Rivera, who served as Prime Minister of Spain from 1923 to January 1930 with dictatorial powers.
-Because Beatriz and her sister could be carriers of hemophilia, like their mother, King Alphonso XIII was reluctant to follow the tradition of finding husbands for them among Catholic royal princes.
-The two sisters' constant companions were their cousins Alvaro, Alonso and Ataúlfo de Orleans y Borbón, the three sons of Infante Alfonso de Orleans y Borbón.
-It was expected that Infanta Beatriz would marry Alonso and Maria Cristina, Alvaro, but nothing came out of it as their companionship was interrupted when the turbulent political situation in Spain derailed their lives.
-Exile
-
-The support that Alfonso XIII gave to the unpopular dictatorship of Primo de Rivera discredited the king.
-Lacking the backing of the military forces, King Alfonso felt obliged to leave the country the same day, but did not abdicate, hoping to be called back to the throne.
-Infanta Beatriz, her mother and her siblings, except for Infante Don Juan, who was away on assignment in the Spanish navy, were left behind in Madrid.
-The marriage of their parents was unhappy and even in Spain the King and Queen led separate lives.
-Queen Victoria Eugenie moved to London and later to Lausanne, Switzerland and the two infantas lived for a time with her.
-In 1933 the king moved to Rapallo and as life was too isolated for Beatriz and her sister in Lausanne, they moved with their father to Italy.
-At their daughters' insistence, King Alfonso moved to Rome and rented a house for them there.
-Infanta Beatriz and her sister became friends with the members of the Italian royal family and quickly adapted to life in Rome.
-Beatriz, who was spending summer vacation in Pörtschach am Wörthersee in Austria, was driving a car with her brother Gonzalo as passenger.
-Marriage and issue
-
-At the time of her brother's death, Infanta Beatriz was looking forward to her wedding.
-While visiting Ostia, she was introduced to an Italian aristocrat, Alessandro Torlonia, 5th Prince di Civitella-Cesi.
-Torlonia, who had inherited large estates from his father in 1933, was the son of Marino, 4th Prince di Civitella-Cesi and Mary Elsie Moore, an American heiress.
-His family had acquired a fortune in the 18th and 19th centuries by administering the finances of the Vatican, receiving the title of Prince of Civitella-Cesi in 1803 from Pope Pius VII.
-Although Don Alessandro was a prince, he did not belong to a reigning or formerly reigning dynasty, so Beatriz had to marry him morganatically, renouncing her rights of succession to the throne of Spain.
-Alfonso XIII,
-The wedding took place on 14 January 1935 at the Church of the Gesù with Beatriz wearing a 20-foot train, a coronet of orange blossom holding her veil in place, in the presence of King Alfonso, the King and Queen of Italy and some 52 princes of the blood royal.
-Thousands of Spaniards traveled from Spain to give support to the deposed royal family in what became a political event.
-However, neither Queen Victoria Eugenie nor Beatriz's eldest brother, Alfonso, Count of Covadonga, who were on bad terms with the King, attended the wedding.
-Infanta Beatriz of Spain, Princess of Civitella-Cesi, and her husband had four children, eleven grandchildren and nineteen great-grandchildren:
+Princess Margriet*Pieter van Vollenhoven*
 
 
-Later life
+Princess Margriet of the Netherlands (Margriet Francisca; born 19 January 1943) is the third daughter of Queen Juliana and Prince Bernhard.
+As an aunt of the reigning monarch, King Willem-Alexander, she is a member of the Dutch Royal House and currently eighth and last in the line of succession to the throne.
+Princess Margriet has often represented the monarch at official or semi-official events.
+Birth and Canada
 
-Infanta Beatriz settled with her husband in the Palazzo Torlonia, a 16th-century Early Renaissance town house on Via della Conciliazione in Rome.
-King Alfonso XIII died in 1941 and as the situation deteriorated in Italy during World War II, Infanta Beatriz with her family joined her siblings in Lausanne, spending the rest of the war close to their mother Queen Victoria Eugenie.
-Beatriz returned to Italy after the war and dwelt there for the rest of her life.
-In 1950, while staying with her brother Juan, in Estoril, Portugal, Infanta Beatriz obtained authorization from Francisco Franco to make a visit to Spain.
-She returned to Spain on 25 August 1950 for the first time since her departure to exile almost twenty years earlier.
-They stayed at the Ritz hotel in Madrid visiting the palace of la Granja, where the Infanta was born, and the Cathedral-Basilica of Our Lady of the Pillar in Zaragoza.
-Infanta Beatriz was received with such a manifestation of support for the monarchy that after only a week, of a planned much longer visit, the government gave her only twenty four hours to leave the country.
-Although the family tried to arrange a marriage for the Infanta's daughter, Sandra, with King Baudouin of Belgium, she caused her parents concern when in 1958 she married Clemente Lequio, a widower with a son, who was given the title "Count Lequio di Assaba" in 1963 by Umberto II of Italy.
-Their son, Alesandro Lequio, moved to Spain in 1991 working initially for Fiat.
-Married to the Italian model Antonia Dell’Atte, a muse in the late 1980s of Giorgio Armani, Alessandro Lequio quickly became a favorite of the Spanish jet set and tabloids, when, after his divorce, he began a relationship with Ana Obregón, a Spanish actress and television presenter.
-Infanta Beatriz's eldest son, Marco, married three times and had three children, one in each marriage.
-His eldest son, Don Giovanni Torlonia, is a well known designer.
-Infanta Beatriz's second son, Marino, died unmarried in 1995 of HIV-related illnesses.
-Among their six children is Princess Sibilla of Luxembourg.
-Infanta Beatriz remained very fond of Spain and supported the claims to the Spanish throne of her brother Don Juan.
-In 1962, she joined the Spanish royal family in the celebration in Athens for the wedding of her nephew the future King Don Juan Carlos with Princess Sophia of Greece.
-A femur fracture in 1973 never healed completely, affecting Infanta Beatriz's mobility for the rest of her life.
-Her fragile health did not allow her to join her family at the ascension to the throne of King Juan Carlos, the wedding of the Infantas Elena and Cristina or the ceremonies for the return to Spain of the remains of her parents and siblings who had died in exile.
-Nevertheless, Infanta Beatriz not only survived all of her siblings, but visited Spain again in 1998 to visit la Granja.
-In 1999, the Infanta gave an interview with ¡Hola! Magazine, where she discussed her life and the years of the Royal Family's exile from Spain.
-She made her last visit to Spain in 2001 to be with her sister-in-law Doña Maria and returned to the Palacio de la Magdalena, near Santander, where 70 years earlier she had spent her summer vacation for 17 consecutive years until 1930.
-She died at her home in Palazzo Torlonia, Rome on 22 November 2002 at 93 years 5 months.
-She was the last surviving legitimate child of Alfonso XIII and the last surviving legitimate grandchild of Alfonso XII of Spain.
+Margriet was born to Princess Juliana of the Netherlands and Prince Bernhard of Lippe-Biesterfeld.
+Her mother was heir presumptive to Queen Wilhelmina.
+The Dutch royal family went into exile when the Netherlands was occupied by Nazi Germany in 1940, and went to live in Canada.
+Margriet was born in Ottawa Civic Hospital, Ottawa.
+Thus, the child would be eligible to succeed to the throne of the Netherlands.
+This would have applied if the child had been male, and therefore heir apparent to Juliana, or if her two older sisters died without eligible children.
+That was not necessary, as Canada follows jus soli, while the Netherlands follows jus sanguinis.
+Princess Margriet was named after the marguerite, the flower worn during the war as a symbol of the resistance to Nazi Germany.
+Her godparents included US President Franklin D. Roosevelt, Queen Mary (Queen dowager of the United Kingdom), Märtha, Crown Princess of Norway, and Martine Roell (lady-in-waiting to Princess Juliana in Canada).
+Princess Margriet has continued to visit Canada over the years in an official capacity, as recently as 2017 (Stratford, Ontario and Goderich, Ontario) and 2022 (Ottawa).
+After the war
+
+It was not until August 1945, when the Netherlands had been liberated, that Princess Margriet first set foot on Dutch soil.
+Princess Juliana and Prince Bernhard returned to Soestdijk Palace in Baarn, where the family had lived before the war.
+While she was studying at Leiden University, Princess Margriet met her future husband, Pieter van Vollenhoven.
+It was decreed that any children from the marriage would be titled Prince/Princess of Orange-Nassau, van Vollenhoven, with the style of Highness, titles that would not be held by their descendants.
+Together, they had four sons:
+
+
+The Princess and her husband took up residence in the right wing of Het Loo Palace in Apeldoorn.
+Interests and activities
+
+Princess Margriet is particularly interested in health care and cultural causes.
+From 1987 to 2011 she was vice-president of the Dutch Red Cross, who set up the Princess Margriet Fund in her honour.
+From 1984 to 2007, Princess Margriet was president of the European Cultural Foundation, who set up the Princess Margriet Award for Cultural Diversity in acknowledgement of her work.
+Titles and styles
+
+National honours
+
+Foreign honours
+
+Ancestry
+
+Notes
+
+References
+
+External links
+
+2 also Princess of Lippe-Biesterfeld
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -178,39 +159,9 @@ She was the last surviving legitimate child of Alfonso XIII and the last survivi
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -225,6 +176,23 @@ She was the last surviving legitimate child of Alfonso XIII and the last survivi
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -242,6 +210,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -309,29 +292,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -340,6 +315,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -352,6 +335,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -360,17 +345,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -398,6 +385,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -413,187 +484,60 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4c146c4a-2f2e-483c-8ca3-07bf1b6179bb)
- Call ID: 4c146c4a-2f2e-483c-8ca3-07bf1b6179bb
-  Args:
-    source: Infanta_Beatriz_of_Spain
-    type: :Woman
-  AssignClass (db6a3230-2ca7-4db6-b45c-9fc21fa88aa1)
- Call ID: db6a3230-2ca7-4db6-b45c-9fc21fa88aa1
-  Args:
-    type: :Man
-    source: King_Alfonso_XIII_of_Spain
-  AssignClass (524fa95d-c9b6-424a-b38c-649e80ffbe85)
- Call ID: 524fa95d-c9b6-424a-b38c-649e80ffbe85
-  Args:
-    source: Victoria_Eugenie_of_Battenberg
-    type: :Woman
-  AssignClass (951a847e-c606-4ace-846c-c27b566664fd)
- Call ID: 951a847e-c606-4ace-846c-c27b566664fd
-  Args:
-    type: :Man
-    source: Alessandro_Torlonia
-  AssignClass (c6627314-457a-4b78-9b47-60c046bf095f)
- Call ID: c6627314-457a-4b78-9b47-60c046bf095f
-  Args:
-    source: King_Juan_Carlos_I
-    type: :Man
-  AssignClass (ef0415aa-3dbb-4949-afbe-e05a69073ef2)
- Call ID: ef0415aa-3dbb-4949-afbe-e05a69073ef2
+  AssignClass (3bee8c7d-7392-4ce3-860f-403c78462a7f)
+ Call ID: 3bee8c7d-7392-4ce3-860f-403c78462a7f
   Args:
     type: :Woman
-    source: Maria_Cristina_of_Spain
-  AssignClass (c2c7a117-6776-450f-a03d-4115b251d632)
- Call ID: c2c7a117-6776-450f-a03d-4115b251d632
+    source: :Princess_Margriet
+  AssignClass (c294d16b-b4f8-414c-b71d-d10d1b3c7afd)
+ Call ID: c294d16b-b4f8-414c-b71d-d10d1b3c7afd
+  Args:
+    type: :Woman
+    source: :Queen_Juliana
+  AssignClass (1bca3a51-a706-4e4f-abd7-7a08382ba0a0)
+ Call ID: 1bca3a51-a706-4e4f-abd7-7a08382ba0a0
+  Args:
+    source: :Prince_Bernhard
+    type: :Man
+  AssignClass (51a99e2b-6ced-4150-acf1-5c133b468589)
+ Call ID: 51a99e2b-6ced-4150-acf1-5c133b468589
   Args:
     type: :Man
-    source: Gonzalo_of_Spain
-  AssignClass (781f5fa8-d786-499e-83c0-b75eabd29862)
- Call ID: 781f5fa8-d786-499e-83c0-b75eabd29862
+    source: :Pieter_van_Vollenhoven
+  AddLiteral (aa319dc8-563b-41cd-b084-b79907a89a66)
+ Call ID: aa319dc8-563b-41cd-b084-b79907a89a66
   Args:
-    type: :Man
-    source: Alfonso_Count_of_Covadonga
-  AssignClass (6399489f-2f7e-464b-bbef-23cbfb0d250a)
- Call ID: 6399489f-2f7e-464b-bbef-23cbfb0d250a
-  Args:
-    type: :Man
-    source: Infante_Don_Juan
-  AddLiteral (27aa5668-50b1-4e61-8a62-78d94e4ec23e)
- Call ID: 27aa5668-50b1-4e61-8a62-78d94e4ec23e
-  Args:
-    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Infanta_Beatriz_of_Spain
-    literal_value: 1909
-  AddLiteral (170fd664-f926-407b-b299-cfeaa247bb25)
- Call ID: 170fd664-f926-407b-b299-cfeaa247bb25
-  Args:
-    literal_value: 2002
-    relation: :hasDeathYear
+    source: :Princess_Margriet
     literal_type: xsd:integer
-    source: Infanta_Beatriz_of_Spain
-  AddTriple (e90dd068-b558-4e56-b601-5abb90d7dabe)
- Call ID: e90dd068-b558-4e56-b601-5abb90d7dabe
+    literal_value: 1943
+  AddTriple (fcd5ac75-9525-477a-a247-478951392abc)
+ Call ID: fcd5ac75-9525-477a-a247-478951392abc
+  Args:
+    relation: :hasMother
+    source: :Princess_Margriet
+    target: :Queen_Juliana
+  AddTriple (45848a3e-fe2c-4d10-b437-d804c79e255b)
+ Call ID: 45848a3e-fe2c-4d10-b437-d804c79e255b
   Args:
     relation: :hasFather
-    source: Infanta_Beatriz_of_Spain
-    target: King_Alfonso_XIII_of_Spain
-  AddTriple (039016bf-708f-443a-b477-c4661030feba)
- Call ID: 039016bf-708f-443a-b477-c4661030feba
+    source: :Princess_Margriet
+    target: :Prince_Bernhard
+  AddTriple (244f874e-c3e8-4ee0-8831-8eadb7278a17)
+ Call ID: 244f874e-c3e8-4ee0-8831-8eadb7278a17
   Args:
-    target: Victoria_Eugenie_of_Battenberg
-    relation: :hasMother
-    source: Infanta_Beatriz_of_Spain
-  AddTriple (394da5e7-de30-4185-a53e-7472a929d324)
- Call ID: 394da5e7-de30-4185-a53e-7472a929d324
-  Args:
-    source: Infanta_Beatriz_of_Spain
-    relation: :hasRelation
-    target: Alessandro_Torlonia
-  AddLiteral (4127c26c-f78f-4af2-81af-4407d38a2ff1)
- Call ID: 4127c26c-f78f-4af2-81af-4407d38a2ff1
-  Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: Infanta_Beatriz_of_Spain
-    literal_value: 1935
-  AddTriple (3004beec-16dd-46d0-8c9b-c64160bb9d93)
- Call ID: 3004beec-16dd-46d0-8c9b-c64160bb9d93
-  Args:
-    source: Infanta_Beatriz_of_Spain
-    relation: :isAuntOf
-    target: King_Juan_Carlos_I
-  AddTriple (c809deb6-d5fc-462f-a401-11d1315739c5)
- Call ID: c809deb6-d5fc-462f-a401-11d1315739c5
-  Args:
-    target: Maria_Cristina_of_Spain
-    relation: :isSisterOf
-    source: Infanta_Beatriz_of_Spain
-  AddTriple (474b44da-0c6b-4c11-9a33-030d2e892db8)
- Call ID: 474b44da-0c6b-4c11-9a33-030d2e892db8
-  Args:
-    relation: :isSisterOf
-    source: Infanta_Beatriz_of_Spain
-    target: Gonzalo_of_Spain
-  AddTriple (d34b4b00-12aa-4785-8c50-622baeb8f839)
- Call ID: d34b4b00-12aa-4785-8c50-622baeb8f839
-  Args:
-    target: Alfonso_Count_of_Covadonga
-    source: Infanta_Beatriz_of_Spain
-    relation: :isSisterOf
-  AddTriple (8d56c249-1b4c-43a0-9aaa-cf0fbbe5316f)
- Call ID: 8d56c249-1b4c-43a0-9aaa-cf0fbbe5316f
-  Args:
-    source: Infanta_Beatriz_of_Spain
-    relation: :isSisterOf
-    target: Infante_Don_Juan
-  AddTriple (5c478bf0-5b07-470e-82fb-7b07f0810104)
- Call ID: 5c478bf0-5b07-470e-82fb-7b07f0810104
-  Args:
-    target: Infanta_Beatriz_of_Spain
-    relation: :isFatherOf
-    source: King_Alfonso_XIII_of_Spain
-  AddTriple (a9e5a0bc-2edd-4e2c-a025-962e2762a150)
- Call ID: a9e5a0bc-2edd-4e2c-a025-962e2762a150
-  Args:
-    source: Victoria_Eugenie_of_Battenberg
+    target: :Princess_Margriet
+    source: :Queen_Juliana
     relation: :isMotherOf
-    target: Infanta_Beatriz_of_Spain
-  ValidateShacl (400f9e20-9fbc-4ffd-b142-2cf57cf17629)
- Call ID: 400f9e20-9fbc-4ffd-b142-2cf57cf17629
+  AddTriple (259d9e93-72f2-4794-81f0-6383a224a5b3)
+ Call ID: 259d9e93-72f2-4794-81f0-6383a224a5b3
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    relation: :isFatherOf
+    source: :Prince_Bernhard
+    target: :Princess_Margriet
+  Finish (5509b98e-82e8-4f70-bdfa-27c0a01dcc9e)
+ Call ID: 5509b98e-82e8-4f70-bdfa-27c0a01dcc9e
+  Args:
 
 ================================= Tool Message =================================
 
@@ -634,38 +578,32 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alessandro_Torlonia a :Man .
+  data:Pieter_van_Vollenhoven a :Man .
 
-  data:Alfonso_Count_of_Covadonga a :Man .
+  data:Prince_Bernhard a :Man ;
+      :isFatherOf data:Princess_Margriet .
 
-  data:Gonzalo_of_Spain a :Man .
+  data:Queen_Juliana a :Woman ;
+      :isMotherOf data:Princess_Margriet .
 
-  data:Infante_Don_Juan a :Man .
-
-  data:King_Alfonso_XIII_of_Spain a :Man ;
-      :isFatherOf data:Infanta_Beatriz_of_Spain .
-
-  data:King_Juan_Carlos_I a :Man .
-
-  data:Maria_Cristina_of_Spain a :Woman .
-
-  data:Victoria_Eugenie_of_Battenberg a :Woman ;
-      :isMotherOf data:Infanta_Beatriz_of_Spain .
-
-  data:Infanta_Beatriz_of_Spain a :Woman ;
-      :hasBirthYear 1909 ;
-      :hasDeathYear 2002 ;
-      :hasFather data:King_Alfonso_XIII_of_Spain ;
-      :hasMarriageYear 1935 ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg ;
-      :hasRelation data:Alessandro_Torlonia ;
-      :isAuntOf data:King_Juan_Carlos_I ;
-      :isSisterOf data:Alfonso_Count_of_Covadonga,
-          data:Gonzalo_of_Spain,
-          data:Infante_Don_Juan,
-          data:Maria_Cristina_of_Spain .
+  data:Princess_Margriet a :Woman ;
+      :hasBirthYear 1943 ;
+      :hasFather data:Prince_Bernhard ;
+      :hasMother data:Queen_Juliana .
 
 
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (af16c58a-d7ee-4313-9690-55c49079d045)
+ Call ID: af16c58a-d7ee-4313-9690-55c49079d045
+  Args:
 
 ================================= Tool Message =================================
 
@@ -676,65 +614,65 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Alfonso_XIII_of_Spain is used as the father of Infanta_Beatriz_of_Spain, but it lacks the required Ancestor class.
+      The node Prince_Bernhard, assigned as the father of Princess_Margriet, lacks the required Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Alfonso_XIII_of_Spain', class=':Ancestor')
+      AssignClass(Prince_Bernhard, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Victoria_Eugenie_of_Battenberg is used as the mother of Infanta_Beatriz_of_Spain, but it lacks the required Ancestor class.
+      The node Queen_Juliana, assigned as the mother of Princess_Margriet, lacks the required Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Victoria_Eugenie_of_Battenberg', class=':Ancestor')
+      AssignClass(Queen_Juliana, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Victoria_Eugenie_of_Battenberg is a subject of the property isMotherOf, but it lacks the required Ancestor class.
+      The node Prince_Bernhard, assigned as the father of Princess_Margriet, lacks the required Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Victoria_Eugenie_of_Battenberg', class=':Ancestor')
+      AssignClass(Prince_Bernhard, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node King_Alfonso_XIII_of_Spain is used as the father of Infanta_Beatriz_of_Spain, but it lacks the required Ancestor class.
+      The node Queen_Juliana, assigned as the mother of Princess_Margriet, lacks the required Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Alfonso_XIII_of_Spain', class=':Ancestor')
+      AssignClass(Queen_Juliana, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Victoria_Eugenie_of_Battenberg is used as the mother of Infanta_Beatriz_of_Spain, but it lacks the required Ancestor class.
+      The node Prince_Bernhard, assigned as the father of Princess_Margriet, lacks the required Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Victoria_Eugenie_of_Battenberg', class=':Ancestor')
+      AssignClass(Prince_Bernhard, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node King_Alfonso_XIII_of_Spain is a subject of the property isFatherOf, but it lacks the required Ancestor class.
+      The node Queen_Juliana, assigned as the mother of Princess_Margriet, lacks the required Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Alfonso_XIII_of_Spain', class=':Ancestor')
+      AssignClass(Queen_Juliana, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node King_Alfonso_XIII_of_Spain is used as the father of Infanta_Beatriz_of_Spain, but it lacks the required Ancestor class.
+      Prince_Bernhard is used as a subject of :isFatherOf but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Alfonso_XIII_of_Spain', class=':Ancestor')
+      AssignClass(Prince_Bernhard, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The node Victoria_Eugenie_of_Battenberg is used as the mother of Infanta_Beatriz_of_Spain, but it lacks the required Ancestor class.
+      Queen_Juliana is used as a subject of :isMotherOf but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Victoria_Eugenie_of_Battenberg', class=':Ancestor')
+      AssignClass(Queen_Juliana, :Ancestor)
 
 
 
@@ -743,18 +681,18 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (00e3bdd3-bf9d-4b41-83b6-ff09021478aa)
- Call ID: 00e3bdd3-bf9d-4b41-83b6-ff09021478aa
+  AssignClass (7b9ff261-7c2c-476b-83da-3fb6d56baca5)
+ Call ID: 7b9ff261-7c2c-476b-83da-3fb6d56baca5
   Args:
-    source: King_Alfonso_XIII_of_Spain
     type: :Ancestor
-  AssignClass (88aa6aa4-5a22-49a4-8e83-4fb4d80bcec4)
- Call ID: 88aa6aa4-5a22-49a4-8e83-4fb4d80bcec4
+    source: :Prince_Bernhard
+  AssignClass (f13aba88-e771-4e4b-9ecb-6a2908d484f6)
+ Call ID: f13aba88-e771-4e4b-9ecb-6a2908d484f6
   Args:
-    source: Victoria_Eugenie_of_Battenberg
     type: :Ancestor
-  Finish (fc41d2a1-25f4-4584-a5d9-241acb82876c)
- Call ID: fc41d2a1-25f4-4584-a5d9-241acb82876c
+    source: :Queen_Juliana
+  ValidateShacl (6ee3af38-c0b9-4b8c-ae6c-ade668498684)
+ Call ID: 6ee3af38-c0b9-4b8c-ae6c-ade668498684
   Args:
 
 ================================= Tool Message =================================
@@ -768,52 +706,22 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alessandro_Torlonia a :Man .
+  data:Pieter_van_Vollenhoven a :Man .
 
-  data:Alfonso_Count_of_Covadonga a :Man .
-
-  data:Gonzalo_of_Spain a :Man .
-
-  data:Infante_Don_Juan a :Man .
-
-  data:King_Alfonso_XIII_of_Spain a :Ancestor,
+  data:Prince_Bernhard a :Ancestor,
           :Man ;
-      :isFatherOf data:Infanta_Beatriz_of_Spain .
+      :isFatherOf data:Princess_Margriet .
 
-  data:King_Juan_Carlos_I a :Man .
-
-  data:Maria_Cristina_of_Spain a :Woman .
-
-  data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+  data:Queen_Juliana a :Ancestor,
           :Woman ;
-      :isMotherOf data:Infanta_Beatriz_of_Spain .
+      :isMotherOf data:Princess_Margriet .
 
-  data:Infanta_Beatriz_of_Spain a :Woman ;
-      :hasBirthYear 1909 ;
-      :hasDeathYear 2002 ;
-      :hasFather data:King_Alfonso_XIII_of_Spain ;
-      :hasMarriageYear 1935 ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg ;
-      :hasRelation data:Alessandro_Torlonia ;
-      :isAuntOf data:King_Juan_Carlos_I ;
-      :isSisterOf data:Alfonso_Count_of_Covadonga,
-          data:Gonzalo_of_Spain,
-          data:Infante_Don_Juan,
-          data:Maria_Cristina_of_Spain .
+  data:Princess_Margriet a :Woman ;
+      :hasBirthYear 1943 ;
+      :hasFather data:Prince_Bernhard ;
+      :hasMother data:Queen_Juliana .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (5304daa0-9b12-42f7-9c21-2ce294f4650e)
- Call ID: 5304daa0-9b12-42f7-9c21-2ce294f4650e
-  Args:
 
 ================================= Tool Message =================================
 
@@ -823,6 +731,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (2166d169-7dfb-4d5f-8bf2-b9c41967e3c9)
- Call ID: 2166d169-7dfb-4d5f-8bf2-b9c41967e3c9
+  Finish (320a68d3-ac56-481e-8cef-55c94b17f505)
+ Call ID: 320a68d3-ac56-481e-8cef-55c94b17f505
   Args:

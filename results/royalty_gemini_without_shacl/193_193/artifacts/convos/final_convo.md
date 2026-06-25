@@ -69,22 +69,37 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-David Chavchavadze (May 20, 1924 – October 5, 2014) was a British-born American author and a former Central Intelligence Agency (CIA) officer of Georgian-Russian origin.
-Life and death
+Princess Adelaide of Saxe-Meiningen (Adelaide Erna Caroline Marie Elisabeth; 16 August 1891 – 25 April 1971), later Princess Adalbert of Prussia, was the daughter of Prince Frederick John of Saxe-Meiningen and Countess Adelaide of Lippe-Biesterfeld.
+Family
 
-Chavchavadze was born in London to Prince Paul Chavchavadze (1899–1971) and Princess Nina Georgievna of Russia (Romanov) (1901–1974), a descendant of a prominent Georgian noble family and the Imperial Russian dynasty.
-His father, Prince Paul, was a fiction writer and translator of writings from Georgian into English, and an émigré in the United Kingdom, and then the United States.
-Chavchavadze entered the United States Army in 1943 and served during World War II as liaison for the U.S. Army Air Force Lend-Lease supply operations to the Soviet Union.
-After his retirement, Chavchavadze specialized in tracing the nobility of Imperial Russia and authored The Grand Dukes (1989).
-Via his mother, Chavchavadze is great-great-grandson (through Grand Duke Mikhail Nicholaevich) and simultaneously great-great-great-grandson (through Queen of Greece, Olga Constantinovna) of Nicholas I.
-David Chavchavadze died in his sleep on October 5, 2014, aged 90, after a long illness.
-They have one step-son, Paul George Olkhovsky (August 11, 1960).
+Adelaide (original German: Adelheid)'s father Prince Frederick was a younger son of George II of Saxe-Meiningen by his second wife Feodora of Hohenlohe-Langenburg.
+She had five siblings, including Prince George, a prisoner of war killed during World War II, and Prince Bernard.
+Adelaide's mother, also named Adelaide, was the eldest child of Ernst, Count of Lippe-Biesterfeld, who was the Regent of the principality of Lippe for seven years (1897–1904).
+Marriage
+
+On 3 August 1914, at the beginning of World War I, Adelaide married Prince Adalbert of Prussia at Wilhelmshaven, Schleswig-Holstein, Germany.
+He was the third son of Kaiser William II of Germany.
+Adelaide's father would die within a month, on 23 August 1914.
+Less than a month after their marriage, Prince Adalbert was reported to have been killed in battle in Brussels.
+This was only a rumor however, and the prince had been unharmed.
+She and Prince Adalbert had three children:
+
+
+Later life
+
+After William II abdicated in 1918 at the end of World War I, Prince Adalbert sought refuge on his yacht, which had been maintained by a loyal crew.
+Princess Adelaide and their children soon attempted to follow, travelling by train from Kiel.
+They were delayed however, and eventually came to be staying in southern Bavaria with Prince Henry of Bavaria (a grandson of Ludwig III of Bavaria) and his wife.
+She and Prince Adalbert were later reunited.
+Princess Adelaide died on 25 April 1971 in La Tour-de-Peilz, Switzerland.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -100,39 +115,9 @@ They have one step-son, Paul George Olkhovsky (August 11, 1960).
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -147,6 +132,23 @@ They have one step-son, Paul George Olkhovsky (August 11, 1960).
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -164,6 +166,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -231,29 +248,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,6 +271,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -274,6 +291,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -282,17 +301,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -320,6 +341,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -335,107 +440,228 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (38c4d3a3-774c-49ef-84a0-d9e099607143)
- Call ID: 38c4d3a3-774c-49ef-84a0-d9e099607143
-  Args:
-    type: :Man
-    source: David_Chavchavadze
-  AssignClass (fffb16e5-2f7f-4099-96be-299f0614ebf3)
- Call ID: fffb16e5-2f7f-4099-96be-299f0614ebf3
-  Args:
-    source: David_Chavchavadze
-    type: :Person
-  AddLiteral (e899fee1-f6e5-4907-949c-4de8d63c30f7)
- Call ID: e899fee1-f6e5-4907-949c-4de8d63c30f7
-  Args:
-    relation: :hasBirthYear
-    source: David_Chavchavadze
-    literal_value: 1924
-    literal_type: xsd:integer
-  AddLiteral (c9f0546a-ed50-42b9-8314-03481acb1e19)
- Call ID: c9f0546a-ed50-42b9-8314-03481acb1e19
-  Args:
-    relation: :hasDeathYear
-    literal_value: 2014
-    source: David_Chavchavadze
-    literal_type: xsd:integer
-  AssignClass (624eabb3-8611-4e22-89e9-8dc1f80a6a01)
- Call ID: 624eabb3-8611-4e22-89e9-8dc1f80a6a01
-  Args:
-    type: :Man
-    source: Prince_Paul_Chavchavadze
-  AssignClass (f6b8cb8f-6d2a-4f53-9c9c-796a0efb838c)
- Call ID: f6b8cb8f-6d2a-4f53-9c9c-796a0efb838c
+  AssignClass (bd76532c-e715-4ea4-a4c9-dbf35e76c60a)
+ Call ID: bd76532c-e715-4ea4-a4c9-dbf35e76c60a
   Args:
     type: :Person
-    source: Prince_Paul_Chavchavadze
-  AddLiteral (71f7ed13-c7ea-4b6d-8c69-df7659d65f3c)
- Call ID: 71f7ed13-c7ea-4b6d-8c69-df7659d65f3c
+    source: :Adelaide_of_Saxe-Meiningen
+  AssignClass (942ef936-f3f2-4291-a287-32b3a48d027f)
+ Call ID: 942ef936-f3f2-4291-a287-32b3a48d027f
+  Args:
+    type: :Woman
+    source: :Adelaide_of_Saxe-Meiningen
+  AddLiteral (b0b6d04c-eac4-4875-b8df-c24e0b6c34db)
+ Call ID: b0b6d04c-eac4-4875-b8df-c24e0b6c34db
   Args:
     literal_type: xsd:integer
-    source: Prince_Paul_Chavchavadze
-    literal_value: 1899
+    literal_value: 1891
     relation: :hasBirthYear
-  AddLiteral (0a3335a7-c005-414d-aa5a-f7daef1784eb)
- Call ID: 0a3335a7-c005-414d-aa5a-f7daef1784eb
+    source: :Adelaide_of_Saxe-Meiningen
+  AddLiteral (debc9c85-8c85-4e40-9657-4c7cb85822ab)
+ Call ID: debc9c85-8c85-4e40-9657-4c7cb85822ab
   Args:
+    source: :Adelaide_of_Saxe-Meiningen
     relation: :hasDeathYear
     literal_value: 1971
-    source: Prince_Paul_Chavchavadze
     literal_type: xsd:integer
-  AssignClass (9c4a6da7-ee31-416a-8086-501831fc543e)
- Call ID: 9c4a6da7-ee31-416a-8086-501831fc543e
+  AddLiteral (a3201cb5-aea7-4413-a5c8-9b241d05d8db)
+ Call ID: a3201cb5-aea7-4413-a5c8-9b241d05d8db
   Args:
-    source: Princess_Nina_Georgievna_of_Russia
-    type: :Woman
-  AssignClass (e1b1c5a8-9e6b-4224-a582-2eb9f6b100e4)
- Call ID: e1b1c5a8-9e6b-4224-a582-2eb9f6b100e4
+    source: :Adelaide_of_Saxe-Meiningen
+    relation: :alsoKnownAs
+    literal_value: Adelaide Erna Caroline Marie Elisabeth
+    literal_type: xsd:string
+  AddLiteral (ab8f00e2-4dc9-4aa8-b040-d411d73bf477)
+ Call ID: ab8f00e2-4dc9-4aa8-b040-d411d73bf477
+  Args:
+    literal_value: Adelheid
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    source: :Adelaide_of_Saxe-Meiningen
+  AssignClass (90c8ad3b-76ad-494d-8862-123942add2e2)
+ Call ID: 90c8ad3b-76ad-494d-8862-123942add2e2
   Args:
     type: :Person
-    source: Princess_Nina_Georgievna_of_Russia
-  AddLiteral (239becf5-df78-4bbe-8f7f-7e53b39f8088)
- Call ID: 239becf5-df78-4bbe-8f7f-7e53b39f8088
-  Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1901
-    source: Princess_Nina_Georgievna_of_Russia
-  AddLiteral (a15232a0-aaa5-4219-a9f2-1c487bce3226)
- Call ID: a15232a0-aaa5-4219-a9f2-1c487bce3226
-  Args:
-    relation: :hasDeathYear
-    source: Princess_Nina_Georgievna_of_Russia
-    literal_value: 1974
-    literal_type: xsd:integer
-  AddTriple (bf08d0c2-3155-4747-97c0-ff71270a881a)
- Call ID: bf08d0c2-3155-4747-97c0-ff71270a881a
-  Args:
-    target: Prince_Paul_Chavchavadze
-    relation: :hasFather
-    source: David_Chavchavadze
-  AddTriple (696e33a2-8a35-4dbe-86d7-beed3f849763)
- Call ID: 696e33a2-8a35-4dbe-86d7-beed3f849763
-  Args:
-    target: Princess_Nina_Georgievna_of_Russia
-    source: David_Chavchavadze
-    relation: :hasMother
-  AssignClass (7c90e37f-e755-46b2-87cc-b23ce6d08af1)
- Call ID: 7c90e37f-e755-46b2-87cc-b23ce6d08af1
+    source: :Prince_Frederick_John_of_Saxe-Meiningen
+  AssignClass (64fb9c4b-07c7-4589-9a9f-27bff95980e2)
+ Call ID: 64fb9c4b-07c7-4589-9a9f-27bff95980e2
   Args:
     type: :Man
-    source: Paul_George_Olkhovsky
-  AssignClass (83e21de7-cc80-4fab-a00d-bd892b36f2a0)
- Call ID: 83e21de7-cc80-4fab-a00d-bd892b36f2a0
+    source: :Prince_Frederick_John_of_Saxe-Meiningen
+  AddTriple (db6c0032-7c99-431d-bb7e-89dd396b6a38)
+ Call ID: db6c0032-7c99-431d-bb7e-89dd396b6a38
+  Args:
+    target: :Prince_Frederick_John_of_Saxe-Meiningen
+    relation: :hasFather
+    source: :Adelaide_of_Saxe-Meiningen
+  AddLiteral (da152c99-fe8e-4fe2-9f5a-7545bb7bd89a)
+ Call ID: da152c99-fe8e-4fe2-9f5a-7545bb7bd89a
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1914
+    relation: :hasDeathYear
+    source: :Prince_Frederick_John_of_Saxe-Meiningen
+  AssignClass (fb52a7c6-63a9-4e53-aeec-643b05fb685c)
+ Call ID: fb52a7c6-63a9-4e53-aeec-643b05fb685c
+  Args:
+    source: :Countess_Adelaide_of_Lippe-Biesterfeld
+    type: :Person
+  AssignClass (cad8fb21-306c-4579-b681-e657d5512476)
+ Call ID: cad8fb21-306c-4579-b681-e657d5512476
+  Args:
+    source: :Countess_Adelaide_of_Lippe-Biesterfeld
+    type: :Woman
+  AddTriple (5d18ccd3-e625-4017-993d-14bab2cc8869)
+ Call ID: 5d18ccd3-e625-4017-993d-14bab2cc8869
+  Args:
+    source: :Adelaide_of_Saxe-Meiningen
+    target: :Countess_Adelaide_of_Lippe-Biesterfeld
+    relation: :hasMother
+  AssignClass (0c1359cc-7b61-4ddf-8256-4073886b4a0f)
+ Call ID: 0c1359cc-7b61-4ddf-8256-4073886b4a0f
   Args:
     type: :Person
-    source: Paul_George_Olkhovsky
-  AddLiteral (6b7a626b-a31a-4e99-a8f9-2370735aa792)
- Call ID: 6b7a626b-a31a-4e99-a8f9-2370735aa792
+    source: :George_II_of_Saxe-Meiningen
+  AssignClass (dcb93cc0-1380-4fbb-be38-70ae88da6579)
+ Call ID: dcb93cc0-1380-4fbb-be38-70ae88da6579
   Args:
-    relation: :hasBirthYear
-    literal_value: 1960
-    source: Paul_George_Olkhovsky
+    type: :Man
+    source: :George_II_of_Saxe-Meiningen
+  AddTriple (72b363b4-47ef-4d92-bab3-16478ff15853)
+ Call ID: 72b363b4-47ef-4d92-bab3-16478ff15853
+  Args:
+    target: :George_II_of_Saxe-Meiningen
+    relation: :hasFather
+    source: :Prince_Frederick_John_of_Saxe-Meiningen
+  AssignClass (5246a5d9-9054-45d9-9663-1d2f23ae2acc)
+ Call ID: 5246a5d9-9054-45d9-9663-1d2f23ae2acc
+  Args:
+    source: :Feodora_of_Hohenlohe-Langenburg
+    type: :Person
+  AssignClass (08afc9d8-04a9-4218-b1b6-3f5029596ca7)
+ Call ID: 08afc9d8-04a9-4218-b1b6-3f5029596ca7
+  Args:
+    type: :Woman
+    source: :Feodora_of_Hohenlohe-Langenburg
+  AddTriple (df8d0c06-da3b-4486-96e5-3f81ae871d13)
+ Call ID: df8d0c06-da3b-4486-96e5-3f81ae871d13
+  Args:
+    relation: :hasMother
+    target: :Feodora_of_Hohenlohe-Langenburg
+    source: :Prince_Frederick_John_of_Saxe-Meiningen
+  AssignClass (ccfd2c04-6814-4ef6-8168-ce8ff1e49b41)
+ Call ID: ccfd2c04-6814-4ef6-8168-ce8ff1e49b41
+  Args:
+    type: :Person
+    source: :Prince_George
+  AssignClass (f58322fa-838d-48aa-a834-8eb42b67c60d)
+ Call ID: f58322fa-838d-48aa-a834-8eb42b67c60d
+  Args:
+    type: :Man
+    source: :Prince_George
+  AddTriple (977ea8e6-1dcb-4045-b549-506722dc45d8)
+ Call ID: 977ea8e6-1dcb-4045-b549-506722dc45d8
+  Args:
+    source: :Adelaide_of_Saxe-Meiningen
+    relation: :isSiblingOf
+    target: :Prince_George
+  AssignClass (3f1eb066-f97c-4aea-8881-ceb5eb609abf)
+ Call ID: 3f1eb066-f97c-4aea-8881-ceb5eb609abf
+  Args:
+    source: :Prince_Bernard
+    type: :Person
+  AssignClass (27ddb642-9770-4028-a4ab-5c5f9591801c)
+ Call ID: 27ddb642-9770-4028-a4ab-5c5f9591801c
+  Args:
+    type: :Man
+    source: :Prince_Bernard
+  AddTriple (d45b4071-eb48-48f6-91bd-ae39fad4aca8)
+ Call ID: d45b4071-eb48-48f6-91bd-ae39fad4aca8
+  Args:
+    source: :Adelaide_of_Saxe-Meiningen
+    target: :Prince_Bernard
+    relation: :isSiblingOf
+  AssignClass (0ac73d45-6ac0-4893-bc0c-f3adade3e4ee)
+ Call ID: 0ac73d45-6ac0-4893-bc0c-f3adade3e4ee
+  Args:
+    type: :Person
+    source: :Ernst_Count_of_Lippe-Biesterfeld
+  AssignClass (3c7fb1e3-b0d7-4f04-9688-655a3b4f7250)
+ Call ID: 3c7fb1e3-b0d7-4f04-9688-655a3b4f7250
+  Args:
+    type: :Man
+    source: :Ernst_Count_of_Lippe-Biesterfeld
+  AddTriple (3c8e3b36-f2d7-4d7e-aeec-dd846c82499f)
+ Call ID: 3c8e3b36-f2d7-4d7e-aeec-dd846c82499f
+  Args:
+    source: :Countess_Adelaide_of_Lippe-Biesterfeld
+    relation: :hasFather
+    target: :Ernst_Count_of_Lippe-Biesterfeld
+  AssignClass (1251e6f7-1445-4f6d-8d3b-5b01f9b22da2)
+ Call ID: 1251e6f7-1445-4f6d-8d3b-5b01f9b22da2
+  Args:
+    type: :Person
+    source: :Prince_Adalbert_of_Prussia
+  AssignClass (f185b294-2642-41d0-acf4-fb0158695385)
+ Call ID: f185b294-2642-41d0-acf4-fb0158695385
+  Args:
+    source: :Prince_Adalbert_of_Prussia
+    type: :Man
+  AddTriple (45b62613-2156-44d5-8475-a6e991c8ef3b)
+ Call ID: 45b62613-2156-44d5-8475-a6e991c8ef3b
+  Args:
+    source: :Adelaide_of_Saxe-Meiningen
+    relation: :hasRelation
+    target: :Prince_Adalbert_of_Prussia
+  AddLiteral (121b7969-8881-4107-b3a8-1fed26e94e42)
+ Call ID: 121b7969-8881-4107-b3a8-1fed26e94e42
+  Args:
+    source: :Adelaide_of_Saxe-Meiningen
     literal_type: xsd:integer
-  Finish (a082766d-b2db-4271-b75f-2a059f062907)
- Call ID: a082766d-b2db-4271-b75f-2a059f062907
+    literal_value: 1914
+    relation: :hasMarriageYear
+  AssignClass (60a29eac-4fe6-467b-ae3f-62931cffb705)
+ Call ID: 60a29eac-4fe6-467b-ae3f-62931cffb705
+  Args:
+    source: :Kaiser_William_II_of_Germany
+    type: :Person
+  AssignClass (2143c3c4-fbd2-42cd-aadb-1ee5ba055a42)
+ Call ID: 2143c3c4-fbd2-42cd-aadb-1ee5ba055a42
+  Args:
+    source: :Kaiser_William_II_of_Germany
+    type: :Man
+  AddTriple (840592e8-6024-4b22-8160-2cf7acc75cf7)
+ Call ID: 840592e8-6024-4b22-8160-2cf7acc75cf7
+  Args:
+    relation: :hasFather
+    target: :Kaiser_William_II_of_Germany
+    source: :Prince_Adalbert_of_Prussia
+  AssignClass (68d90be4-be20-431a-b625-5b1626ef1f78)
+ Call ID: 68d90be4-be20-431a-b625-5b1626ef1f78
+  Args:
+    type: :Person
+    source: :Prince_Henry_of_Bavaria
+  AssignClass (f48d2167-106a-475f-8b0f-60b28e8adac9)
+ Call ID: f48d2167-106a-475f-8b0f-60b28e8adac9
+  Args:
+    type: :Man
+    source: :Prince_Henry_of_Bavaria
+  AssignClass (663c9e56-2701-4158-b27d-05aceb5e686f)
+ Call ID: 663c9e56-2701-4158-b27d-05aceb5e686f
+  Args:
+    source: :Ludwig_III_of_Bavaria
+    type: :Person
+  AssignClass (12697abd-e503-4f40-8ca1-b2aca1cf3a6f)
+ Call ID: 12697abd-e503-4f40-8ca1-b2aca1cf3a6f
+  Args:
+    source: :Ludwig_III_of_Bavaria
+    type: :Man
+  AddTriple (63526e17-c27c-4cb2-a4b5-bb0c82a244bf)
+ Call ID: 63526e17-c27c-4cb2-a4b5-bb0c82a244bf
+  Args:
+    source: :Prince_Henry_of_Bavaria
+    relation: :hasFather
+    target: :Ludwig_III_of_Bavaria
+  Finish (765b9d9f-d266-4128-9cdb-f33b92abda36)
+ Call ID: 765b9d9f-d266-4128-9cdb-f33b92abda36
   Args:

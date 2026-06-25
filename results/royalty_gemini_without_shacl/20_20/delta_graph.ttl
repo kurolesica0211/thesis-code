@@ -2,43 +2,34 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Achileas-Andreas_of_Greece_and_Denmark a :Man,
-        :Person ;
+data:Achileas-Andreas_of_Greece_and_Denmark a :Man ;
     :hasBirthYear 2000 ;
-    :hasFather data:Pavlos_of_Greece ;
-    :hasMother data:Marie-Chantal_Miller ;
+    :hasFather data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos_of_Greece ;
+    :hasMother data:Anne-Marie_of_Denmark,
+        data:Marie-Chantal_Miller ;
     :knownAs "Achi Miller"^^xsd:string .
 
-data:Isabella_Massenet a :Person,
-        :Woman ;
+data:Isabella_Massenet a :Woman ;
     :hasMother data:Natalie_Massenet .
 
-data:Marina_consort_of_Prince_Michael a :Person,
-        :Woman .
+data:Marina a :Woman .
 
-data:Matthew_Kumar a :Man,
-        :Person .
+data:Matthew_Kumar a :Man .
 
-data:Sofia_of_Spain a :Person,
-        :Woman .
+data:Prince_Michael a :Man .
 
-data:Theodora_of_Greece_and_Denmark a :Person,
-        :Woman .
+data:Princess_Theodora_of_Greece_and_Denmark a :Woman .
 
-data:Anne-Marie_of_Denmark a :Person,
-        :Woman .
+data:Sofia_of_Spain a :Woman .
 
-data:Constantine_II_of_Greece a :Man,
-        :Person .
+data:Anne-Marie_of_Denmark a :Woman .
 
-data:Marie-Chantal_Miller a :Person,
-        :Woman .
+data:Constantine_II_of_Greece a :Man .
 
-data:Natalie_Massenet a :Person,
-        :Woman .
+data:Crown_Prince_Pavlos_of_Greece a :Man .
 
-data:Pavlos_of_Greece a :Man,
-        :Person ;
-    :hasFather data:Constantine_II_of_Greece ;
-    :hasMother data:Anne-Marie_of_Denmark .
+data:Marie-Chantal_Miller a :Woman .
+
+data:Natalie_Massenet a :Woman .
 

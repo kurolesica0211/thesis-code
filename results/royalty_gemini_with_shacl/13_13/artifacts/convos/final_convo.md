@@ -115,7 +115,6 @@ In February 1922, Elizabeth was a bridesmaid at the wedding of Albert's sister, 
 Eventually in January 1923, Elizabeth agreed to marry Albert, despite her misgivings about royal life.
 Albert's freedom in choosing Elizabeth, not a member of a royal family, though the daughter of a peer, was considered a gesture in favour of political modernisation; previously, princes were expected to marry princesses from other royal families.
 Unexpectedly, Elizabeth laid her bouquet at the Tomb of the Unknown Warrior on her way into the abbey, in memory of her brother Fergus.
-She was thereafter styled Her Royal Highness The Duchess of York.
 Following a wedding breakfast at Buckingham Palace prepared by chef Gabriel Tschumi, Elizabeth and Albert honeymooned at Polesden Lacey, a manor house in Surrey owned by the wealthy socialite and friend Margaret Greville.
 Duchess of York
 
@@ -125,15 +124,13 @@ Albert had a stammer, which affected his ability to deliver speeches, and after 
 In 1926, Elizabeth gave birth to their first child, Princess Elizabeth – known as "Lilibet" to the family – who would later become Queen Elizabeth II.
 Albert and Elizabeth, without their child, travelled to Australia to open Parliament House in Canberra in 1927.
 Their journey by sea took them via Jamaica, the Panama Canal and the Pacific; Elizabeth fretted constantly over her baby back in Britain, but their journey was a public relations success.
-The couple's second daughter, Princess Margaret, was born at Glamis Castle in 1930.
+In New Zealand she fell ill with a cold and missed some engagements, but enjoyed the local fishing in the Bay of Islands accompanied by Australian sports fisherman Harry Andreas.
 Queen consort
 
 On 20 January 1936, George V died and his eldest son, Edward, Prince of Wales, became King Edward VIII.
 Elizabeth's husband, Albert, became heir presumptive.
-Just months into Edward's reign, the King's decision to marry the American divorcée Wallis Simpson caused a constitutional crisis that resulted in his abdication.
 Albert reluctantly became king of the United Kingdom and emperor of India on 11 December 1936 under the regnal name of George VI.
 Elizabeth became queen and empress.
-Their coronation took place in Westminster Abbey on 12 May 1937, the date previously scheduled for Edward VIII's coronation.
 Elizabeth's crown was made of platinum and was set with the Koh-i-Noor diamond.
 Edward married Wallis Simpson, and they became the Duke and Duchess of Windsor, but while Edward was a Royal Highness, George VI withheld the style from Wallis, a decision that Elizabeth supported.
 Elizabeth was later quoted as referring to Wallis as "that woman", and Wallis referred to Elizabeth as "Cookie", because of her supposed resemblance to a fat Scots cook.
@@ -142,17 +139,12 @@ Overseas visits
 
 In summer 1938, a state visit to France by the King and Queen was postponed for three weeks because of the death of Elizabeth's mother.
 In two weeks, Norman Hartnell created an all-white trousseau for Elizabeth, who could not wear colours as she was still in mourning.
-The French press praised the demeanour and charm of the royal couple during the delayed but successful visit, augmented by Hartnell's wardrobe.
 After the Munich Agreement of 1938 appeared to forestall the advent of armed conflict, the British prime minister Neville Chamberlain was invited onto the balcony of Buckingham Palace with the King and Queen to receive acclamation from a crowd of well-wishers.
 While broadly popular among the general public, Chamberlain's policy towards Hitler was the subject of some opposition in the House of Commons, which led historian John Grigg to describe George VI's behaviour in associating himself so prominently with a politician as "the most unconstitutional act by a British sovereign in the present century".
 In May and June 1939, Elizabeth and her husband toured Canada from coast to coast and back, the first time a reigning monarch had toured Canada.
 First Lady Eleanor Roosevelt said that Elizabeth was "perfect as a Queen, gracious, informed, saying the right thing & kind but a little self-consciously regal".
 According to an often-told story, during one of the earliest of the royal couple's repeated encounters with the crowds, a Boer War veteran asked Elizabeth, "Are you Scots or are you English?"
-Their reception by the Canadian and U.S. public was extremely enthusiastic, and largely dissipated any residual feeling that they were a lesser substitute for Edward VIII.
 Elizabeth told Canadian prime minister William Lyon Mackenzie King, "that tour made us", and she returned to Canada frequently both on official tours and privately.
-Second World War
-
-During the Second World War, the royal couple became symbols of the fight against fascism.
 Shortly after the declaration of war, The Queen's Book of the Red Cross was conceived.
 Fifty authors and artists contributed to the book, which was fronted by Cecil Beaton's portrait of Elizabeth and was sold in aid of the Red Cross.
 Elizabeth publicly refused to leave London or send the children to Canada, even during the Blitz, when the British Cabinet advised her to do so.
@@ -167,14 +159,14 @@ When Buckingham Palace itself took several hits during the height of the bombing
 Though the King and Queen spent the working day at Buckingham Palace, partly for security and family reasons they stayed at night at Windsor Castle about 20 miles (32 km) west of central London with their daughters.
 During the "Phoney War" the Queen was given revolver training because of fears of imminent invasion.
 French prime minister Édouard Daladier characterised Elizabeth as "an excessively ambitious young woman who would be ready to sacrifice every other country in the world so that she may remain Queen."
-Although the King was initially suspicious of Churchill's character and motives, in due course the royal couple came to respect and admire him.
+Post-war years
+
+In the 1945 British general election, Churchill's Conservative Party was soundly defeated by the Labour Party of Clement Attlee.
 Elizabeth's political views were rarely disclosed, but a letter she wrote in 1947 described Attlee's "high hopes of a socialist heaven on earth" as fading and presumably describes those who voted for him as "poor people, so many half-educated and bemused.
-Woodrow Wyatt thought her "much more pro-Conservative" than other members of the royal family, but she later told him, "I like the dear old Labour Party."
 "
 
 
 During the 1947 royal tour of South Africa, Elizabeth's serene public behaviour was broken, exceptionally, when she rose from the royal car to strike an admirer with her umbrella because she had mistaken his enthusiasm for hostility.
-The 1948 royal tour of Australia and New Zealand was postponed because of the King's declining health.
 In summer 1951, Elizabeth and her daughters fulfilled the King's public engagements in his place.
 After a lung resection, he appeared to recover, but the delayed trip to Australia and New Zealand was altered so that Princess Elizabeth and her husband, the Duke of Edinburgh, went in the King and Queen's place in January 1952.
 George VI died in his sleep on 6 February 1952 while Princess Elizabeth and the Duke of Edinburgh were in Kenya on a Commonwealth tour, and with George's death his daughter immediately became Queen Elizabeth II.
@@ -185,15 +177,12 @@ Widowhood
 Shortly after George VI's death, Elizabeth began to be styled as Her Majesty Queen Elizabeth The Queen Mother because the normal style for the widow of a king, "Queen Elizabeth", would have been too similar to the style of her elder daughter, Queen Elizabeth II.
 Popularly, she became the "Queen Mother" or the "Queen Mum".
 Eventually, she became just as busy as queen mother as she had been as queen consort.
-In July 1953, she undertook her first overseas visit since the funeral when she visited the Federation of Rhodesia and Nyasaland with Princess Margaret.
 Upon her return to the region in 1957, Elizabeth was inaugurated as the college's president, and attended other events that were deliberately designed to be multi-racial.
 During her daughter's extensive tour of the Commonwealth over 1953–54, Elizabeth acted as a counsellor of state and looked after her grandchildren, Charles and Anne.
 Elizabeth oversaw the restoration of the remote Castle of Mey, on the north coast of Scotland, which she used to "get away from everything" for three weeks in August and ten days in October each year.
 In February 1964, Elizabeth had an emergency appendectomy, which led to the postponement of a planned tour of Australia, New Zealand, and Fiji until 1966.
-She recuperated during a Caribbean cruise aboard the royal yacht, Britannia.
 During her widowhood, Elizabeth continued to travel extensively, including on over forty official visits overseas.
 In 1982, Elizabeth was rushed to hospital when a fish bone became stuck in her throat, and had an operation to remove it.
-Similar incidents occurred at Balmoral in August 1986, when she was hospitalised at Aberdeen Royal Infirmary
 In 1987, Elizabeth was criticised when it emerged that two of her nieces, Nerissa and Katherine Bowes-Lyon, had been committed to a psychiatric hospital in Redhill, Surrey, in 1941 because they had severe learning disabilities.
 However, Burke's Peerage had listed the sisters as dead, apparently because their mother, Fenella (Elizabeth's sister-in-law), "was 'extremely vague' when it came to filling in forms and might not have completed the paperwork for the family entry correctly".
 Elizabeth said that the news of their institutionalisation came as a surprise to her.
@@ -202,9 +191,7 @@ Centenarian
 In her later years, Elizabeth became known for her longevity.
 Elizabeth's 100th birthday was celebrated in a number of ways: a parade, with contributions from Sir Norman Wisdom and Sir John Mills, celebrated highlights of her life; the Royal Bank of Scotland issued a commemorative £20 note with her image; and she attended a lunch at the Guildhall, London, at which George Carey, the Archbishop of Canterbury, accidentally attempted to drink her glass of wine.
 On 1 August 2001, Elizabeth had a blood transfusion for anaemia after suffering from mild heat exhaustion, though she was well enough to make her traditional appearance outside Clarence House three days later to celebrate her 101st birthday.
-Her final public engagements included planting a cross at the Field of Remembrance on 8 November 2001; a reception at the Guildhall, London, for the reformation of the 600 Squadron, Royal Auxiliary Air Force on 15 November; and attending the re-commissioning of HMS Ark Royal on 22 November.
 In December 2001, aged 101, Elizabeth fractured her pelvis in a fall.
-Just three days later, their second daughter, Princess Margaret, died.
 On 13 February 2002, Elizabeth fell and cut her arm in her sitting room at Sandringham House; an ambulance and doctor were called, and the wound was dressed.
 She was still determined to attend Margaret's funeral at St George's Chapel, Windsor Castle, two days later on the Friday of that week, even though Queen Elizabeth II and the rest of the royal family were concerned about the journey the Queen Mother would face to get from Norfolk to Windsor; she was also rumoured to be hardly eating.
 Nevertheless, she flew to Windsor by helicopter, and so that no photographs of her in a wheelchair (which she hated being seen in) could be taken—she insisted that she be shielded from the press—she travelled to the service in a people carrier with blacked-out windows, which had been previously used by Margaret.
@@ -214,9 +201,6 @@ Death
 Elizabeth died at 3:15 pm on 30 March 2002 at Royal Lodge, Windsor, aged 101.
 Her daughter, Queen Elizabeth II, was by her side.
 The Queen Mother had been suffering from a chest cold since Christmas 2001.
-At 101 years and 238 days old she was the longest-living member of the British royal family at the time of her death, and the first member of the family to live past the age of 100.
-Her surviving sister-in-law, Princess Alice, Duchess of Gloucester, exceeded that, dying at the age of 102 on 29 October 2004.
-She was one of the longest-lived members of any royal family.
 Elizabeth grew camellias in each of her gardens, and before her flag-draped coffin was taken from Windsor to lie in state at Westminster Hall, an arrangement of camellias from her own gardens was placed on top.
 At one point, her four grandsons–Prince Charles, Prince Andrew, Prince Edward and Viscount Linley–mounted the guard as a mark of respect, an honour similar to the Vigil of the Princes at the lying in state of King George V.
 
@@ -267,6 +251,8 @@ Elizabeth's coat of arms was the royal coat of arms of the United Kingdom (in ei
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -282,39 +268,9 @@ Elizabeth's coat of arms was the royal coat of arms of the United Kingdom (in ei
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -329,6 +285,23 @@ Elizabeth's coat of arms was the royal coat of arms of the United Kingdom (in ei
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -346,6 +319,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -413,29 +401,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -444,6 +424,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -456,6 +444,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -464,17 +454,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -502,6 +494,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -517,201 +593,213 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4b671d58-f6e0-48fb-b396-3c0363975942)
- Call ID: 4b671d58-f6e0-48fb-b396-3c0363975942
+  AssignClass (35a7195e-2a76-41a6-acc8-55e4e22d0088)
+ Call ID: 35a7195e-2a76-41a6-acc8-55e4e22d0088
   Args:
+    source: Elizabeth_Bowes-Lyon
     type: :Woman
-    source: Elizabeth_Bowes-Lyon
-  AssignClass (3d00a265-075e-4773-848b-0afa759b507e)
- Call ID: 3d00a265-075e-4773-848b-0afa759b507e
+  AssignClass (6bf1d94b-d515-4188-ac3f-64d35a2d06d3)
+ Call ID: 6bf1d94b-d515-4188-ac3f-64d35a2d06d3
   Args:
+    source: Elizabeth_Bowes-Lyon
     type: :Person
-    source: Elizabeth_Bowes-Lyon
-  AddLiteral (4c16adbd-a396-4e87-8bba-84247127577e)
- Call ID: 4c16adbd-a396-4e87-8bba-84247127577e
+  AddLiteral (90866fee-661d-4146-8f2a-828b00c2f3ca)
+ Call ID: 90866fee-661d-4146-8f2a-828b00c2f3ca
   Args:
-    literal_value: Elizabeth Angela Marguerite Bowes-Lyon
-    literal_type: xsd:string
-    relation: :knownAs
-    source: Elizabeth_Bowes-Lyon
-  AddLiteral (ef2f819f-57bd-40e1-b6d9-fac67d422561)
- Call ID: ef2f819f-57bd-40e1-b6d9-fac67d422561
-  Args:
+    literal_type: xsd:integer
     relation: :hasBirthYear
     source: Elizabeth_Bowes-Lyon
-    literal_type: xsd:integer
     literal_value: 1900
-  AddLiteral (c6634565-b3d1-4304-b531-a7c3bd0cda5a)
- Call ID: c6634565-b3d1-4304-b531-a7c3bd0cda5a
+  AddLiteral (b60c5381-054a-4a39-af50-5a96a166a3b2)
+ Call ID: b60c5381-054a-4a39-af50-5a96a166a3b2
   Args:
     literal_value: 2002
+    source: Elizabeth_Bowes-Lyon
     literal_type: xsd:integer
-    source: Elizabeth_Bowes-Lyon
     relation: :hasDeathYear
-  AssignClass (456218b6-d75f-4465-ac30-d9ed752602eb)
- Call ID: 456218b6-d75f-4465-ac30-d9ed752602eb
+  AssignClass (e93cbd7b-d5aa-43ec-92a1-47fd51e042db)
+ Call ID: e93cbd7b-d5aa-43ec-92a1-47fd51e042db
   Args:
+    source: George_VI
     type: :Man
-    source: George_VI
-  AssignClass (12589789-2c89-4805-a5a5-222d0aaacdf7)
- Call ID: 12589789-2c89-4805-a5a5-222d0aaacdf7
+  AssignClass (a9a3374a-2c96-43f3-9893-9d522e2bab8e)
+ Call ID: a9a3374a-2c96-43f3-9893-9d522e2bab8e
   Args:
+    source: George_VI
     type: :Person
-    source: George_VI
-  AddLiteral (ed67355c-1e34-41fb-a2b3-bf6a196d489c)
- Call ID: ed67355c-1e34-41fb-a2b3-bf6a196d489c
+  AddTriple (02b25562-22df-4675-9608-1a855080446d)
+ Call ID: 02b25562-22df-4675-9608-1a855080446d
   Args:
-    literal_value: George VI
+    target: :Male
+    relation: :hasSex
     source: George_VI
-    relation: :knownAs
-    literal_type: xsd:string
-  AddTriple (b3c4d0a2-d73f-4e79-8b13-686d54d4873d)
- Call ID: b3c4d0a2-d73f-4e79-8b13-686d54d4873d
+  AddTriple (a3e038c3-605a-45ce-997a-6267ab4129b4)
+ Call ID: a3e038c3-605a-45ce-997a-6267ab4129b4
   Args:
-    target: George_VI
-    relation: :hasRelation
+    relation: :hasSex
+    target: :Female
     source: Elizabeth_Bowes-Lyon
-  AssignClass (aaef56fe-dcf0-4ab6-93f2-3a80c61c02a5)
- Call ID: aaef56fe-dcf0-4ab6-93f2-3a80c61c02a5
-  Args:
-    type: :Woman
-    source: Elizabeth_II
-  AssignClass (be7c1143-ac63-4a75-a3c2-ed2c83544d1a)
- Call ID: be7c1143-ac63-4a75-a3c2-ed2c83544d1a
-  Args:
-    type: :Person
-    source: Elizabeth_II
-  AddLiteral (5d2256d8-6b58-4175-8860-d92996549633)
- Call ID: 5d2256d8-6b58-4175-8860-d92996549633
-  Args:
-    literal_value: Queen Elizabeth II
-    relation: :knownAs
-    source: Elizabeth_II
-    literal_type: xsd:string
-  AddTriple (9859f4f3-9548-47fc-8592-63dd1edc21cf)
- Call ID: 9859f4f3-9548-47fc-8592-63dd1edc21cf
-  Args:
-    target: Elizabeth_Bowes-Lyon
-    relation: :isDaughterOf
-    source: Elizabeth_II
-  AddTriple (c6ded99f-dc42-4c01-b0b8-1547cc49323c)
- Call ID: c6ded99f-dc42-4c01-b0b8-1547cc49323c
-  Args:
-    source: Elizabeth_II
-    relation: :isDaughterOf
-    target: George_VI
-  AssignClass (a3d13b44-9301-4466-bbbb-74c1fc691dfb)
- Call ID: a3d13b44-9301-4466-bbbb-74c1fc691dfb
-  Args:
-    type: :Woman
-    source: Margaret
-  AssignClass (5ca61791-3039-44b5-b87f-c4ce5f64a7be)
- Call ID: 5ca61791-3039-44b5-b87f-c4ce5f64a7be
-  Args:
-    type: :Person
-    source: Margaret
-  AddLiteral (8ffe1899-4628-4e9c-a55c-9ef98bd981e1)
- Call ID: 8ffe1899-4628-4e9c-a55c-9ef98bd981e1
-  Args:
-    literal_value: Princess Margaret
-    literal_type: xsd:string
-    relation: :knownAs
-    source: Margaret
-  AddTriple (b34b3cde-ef77-4767-8efe-b71a3d3b5064)
- Call ID: b34b3cde-ef77-4767-8efe-b71a3d3b5064
-  Args:
-    relation: :isDaughterOf
-    source: Margaret
-    target: Elizabeth_Bowes-Lyon
-  AddTriple (29b1fc8f-c8ea-4579-a8ba-b5467be6f694)
- Call ID: 29b1fc8f-c8ea-4579-a8ba-b5467be6f694
-  Args:
-    source: Margaret
-    relation: :isDaughterOf
-    target: George_VI
-  AssignClass (832403b0-50e7-4efb-baf8-a8b175cfd304)
- Call ID: 832403b0-50e7-4efb-baf8-a8b175cfd304
-  Args:
-    type: :Man
-    source: Claude_Bowes-Lyon
-  AssignClass (4833afe5-e33e-404c-b48f-30bbe1166126)
- Call ID: 4833afe5-e33e-404c-b48f-30bbe1166126
-  Args:
-    type: :Person
-    source: Claude_Bowes-Lyon
-  AddTriple (95e0ce28-61b6-482b-a0c6-d33bd7de8247)
- Call ID: 95e0ce28-61b6-482b-a0c6-d33bd7de8247
+  AddTriple (dfe9b482-16a2-4db3-b617-bb77f04d7944)
+ Call ID: dfe9b482-16a2-4db3-b617-bb77f04d7944
   Args:
     source: Elizabeth_Bowes-Lyon
+    target: :Claude_Bowes-Lyon
     relation: :hasFather
-    target: Claude_Bowes-Lyon
-  AssignClass (3a3223e5-670a-4778-a67d-f8f4511b5222)
- Call ID: 3a3223e5-670a-4778-a67d-f8f4511b5222
+  AddTriple (15a70960-4a58-4c75-bc1c-c00b63f904b4)
+ Call ID: 15a70960-4a58-4c75-bc1c-c00b63f904b4
   Args:
-    type: :Woman
-    source: Cecilia_Cavendish-Bentinck
-  AssignClass (409c3734-13dc-4019-a308-3d672bc30c36)
- Call ID: 409c3734-13dc-4019-a308-3d672bc30c36
-  Args:
-    type: :Person
-    source: Cecilia_Cavendish-Bentinck
-  AddTriple (98401b2e-d05e-4320-abbf-6bd00c9d494a)
- Call ID: 98401b2e-d05e-4320-abbf-6bd00c9d494a
-  Args:
-    target: Cecilia_Cavendish-Bentinck
+    relation: :hasMother
+    target: :Cecilia_Cavendish-Bentinck
     source: Elizabeth_Bowes-Lyon
-    relation: :hasMother
-  AssignClass (b6deda3d-a34c-40c9-9483-c9e8c87da6bb)
- Call ID: b6deda3d-a34c-40c9-9483-c9e8c87da6bb
+  AssignClass (89a3c853-7dfc-4967-9045-11be739a70fd)
+ Call ID: 89a3c853-7dfc-4967-9045-11be739a70fd
   Args:
+    source: Claude_Bowes-Lyon
     type: :Man
-    source: George_V
-  AssignClass (508dd5e6-6624-4646-9da0-ac4c1ebedde4)
- Call ID: 508dd5e6-6624-4646-9da0-ac4c1ebedde4
+  AssignClass (5efcefc0-39d7-4c65-9446-acd18f112d66)
+ Call ID: 5efcefc0-39d7-4c65-9446-acd18f112d66
   Args:
+    source: Claude_Bowes-Lyon
     type: :Person
-    source: George_V
-  AddTriple (5be604e7-0459-4a35-8521-5ad8c4deb954)
- Call ID: 5be604e7-0459-4a35-8521-5ad8c4deb954
+  AssignClass (27d1e740-dc91-4acb-9503-88da397f3a18)
+ Call ID: 27d1e740-dc91-4acb-9503-88da397f3a18
   Args:
-    target: George_V
-    source: George_VI
-    relation: :hasFather
-  AssignClass (b1372c33-0d33-43aa-af57-7e3de57c7e4e)
- Call ID: b1372c33-0d33-43aa-af57-7e3de57c7e4e
-  Args:
+    source: Cecilia_Cavendish-Bentinck
     type: :Woman
-    source: Queen_Mary
-  AssignClass (bf4ee320-e1a6-4beb-805c-d235df366549)
- Call ID: bf4ee320-e1a6-4beb-805c-d235df366549
+  AssignClass (38f7c684-3d88-4d7e-b4d5-09b234f6d5bd)
+ Call ID: 38f7c684-3d88-4d7e-b4d5-09b234f6d5bd
   Args:
+    source: Cecilia_Cavendish-Bentinck
     type: :Person
-    source: Queen_Mary
-  AddTriple (63569867-78d0-47c6-b97a-99bf66cf0cee)
- Call ID: 63569867-78d0-47c6-b97a-99bf66cf0cee
+  AddTriple (95bde89c-a09d-4f3a-a5fa-1e2d97c57c16)
+ Call ID: 95bde89c-a09d-4f3a-a5fa-1e2d97c57c16
   Args:
-    target: Queen_Mary
+    target: :George_V
+    relation: :hasFather
     source: George_VI
+  AddTriple (4086e6b3-804e-4c6c-b261-84ecbcf234f1)
+ Call ID: 4086e6b3-804e-4c6c-b261-84ecbcf234f1
+  Args:
+    source: George_VI
+    target: :Queen_Mary
     relation: :hasMother
-  AssignClass (973d9ff2-b697-4679-be85-a6f09dde6033)
- Call ID: 973d9ff2-b697-4679-be85-a6f09dde6033
+  AssignClass (2946b805-5e26-4d4d-9e37-7bc3e74d6877)
+ Call ID: 2946b805-5e26-4d4d-9e37-7bc3e74d6877
   Args:
+    source: George_V
     type: :Man
-    source: Edward_VIII
-  AssignClass (1bce4e2f-4b3c-428b-a9bd-1a3dec1afe3b)
- Call ID: 1bce4e2f-4b3c-428b-a9bd-1a3dec1afe3b
+  AssignClass (7c7f3571-0cd7-40d8-b1fe-3e60f1e6c158)
+ Call ID: 7c7f3571-0cd7-40d8-b1fe-3e60f1e6c158
   Args:
+    source: George_V
     type: :Person
-    source: Edward_VIII
-  AddTriple (a71922dd-bbfd-4d78-aeff-ab918440f55d)
- Call ID: a71922dd-bbfd-4d78-aeff-ab918440f55d
+  AssignClass (6adb7a98-95d9-45a6-9261-613443693cc2)
+ Call ID: 6adb7a98-95d9-45a6-9261-613443693cc2
   Args:
-    relation: :isBrotherOf
-    source: Edward_VIII
-    target: George_VI
-  Finish (c6df75a4-729c-43ec-b52a-6c84d50ce311)
- Call ID: c6df75a4-729c-43ec-b52a-6c84d50ce311
+    source: Queen_Mary
+    type: :Woman
+  AssignClass (ecb1c1c1-f61a-4627-9b89-6e64dda66a81)
+ Call ID: ecb1c1c1-f61a-4627-9b89-6e64dda66a81
   Args:
+    source: Queen_Mary
+    type: :Person
+  AddTriple (dea85977-91c4-42ef-bf0b-cc2d3d29416b)
+ Call ID: dea85977-91c4-42ef-bf0b-cc2d3d29416b
+  Args:
+    relation: :hasChild
+    target: :Princess_Elizabeth
+    source: George_VI
+  AddTriple (03e3db3e-01cc-4aaa-b2f1-a7102605b964)
+ Call ID: 03e3db3e-01cc-4aaa-b2f1-a7102605b964
+  Args:
+    source: George_VI
+    relation: :hasChild
+    target: :Princess_Margaret
+  AddTriple (04340ce0-b04c-46ec-89ab-19ec36c2c985)
+ Call ID: 04340ce0-b04c-46ec-89ab-19ec36c2c985
+  Args:
+    relation: :hasChild
+    target: :Princess_Elizabeth
+    source: Elizabeth_Bowes-Lyon
+  AddTriple (b732eb62-b9cb-49b9-a24a-390b688e0657)
+ Call ID: b732eb62-b9cb-49b9-a24a-390b688e0657
+  Args:
+    target: :Princess_Margaret
+    relation: :hasChild
+    source: Elizabeth_Bowes-Lyon
+  AssignClass (1f44eed0-c24f-4a3d-abea-7a5e9d35df40)
+ Call ID: 1f44eed0-c24f-4a3d-abea-7a5e9d35df40
+  Args:
+    source: Princess_Elizabeth
+    type: :Woman
+  AssignClass (73a9ec31-315e-4860-8d93-f9324bcd72de)
+ Call ID: 73a9ec31-315e-4860-8d93-f9324bcd72de
+  Args:
+    source: Princess_Elizabeth
+    type: :Person
+  AssignClass (11da9cde-e48b-4232-8655-b164d1bba44a)
+ Call ID: 11da9cde-e48b-4232-8655-b164d1bba44a
+  Args:
+    source: Princess_Margaret
+    type: :Woman
+  AssignClass (0dcb86a3-7b41-4d35-aff7-2055eb595045)
+ Call ID: 0dcb86a3-7b41-4d35-aff7-2055eb595045
+  Args:
+    source: Princess_Margaret
+    type: :Person
+  AddTriple (e53bf9ee-edf1-4861-92b1-64c4260fb1f0)
+ Call ID: e53bf9ee-edf1-4861-92b1-64c4260fb1f0
+  Args:
+    source: George_VI
+    relation: :hasBrother
+    target: :Edward_VIII
+  AssignClass (dfaa810e-be8b-4259-bcfc-5f5908dc7f1d)
+ Call ID: dfaa810e-be8b-4259-bcfc-5f5908dc7f1d
+  Args:
+    source: Edward_VIII
+    type: :Man
+  AssignClass (78482e57-7d1e-4b81-9214-08ff8658b717)
+ Call ID: 78482e57-7d1e-4b81-9214-08ff8658b717
+  Args:
+    source: Edward_VIII
+    type: :Person
+  AddTriple (751752e8-2e60-4937-8c43-a582c4cfe442)
+ Call ID: 751752e8-2e60-4937-8c43-a582c4cfe442
+  Args:
+    source: Elizabeth_Bowes-Lyon
+    target: :Fergus_Bowes-Lyon
+    relation: :hasBrother
+  AssignClass (1bc54155-de41-4bc3-8910-66cd8bf470d1)
+ Call ID: 1bc54155-de41-4bc3-8910-66cd8bf470d1
+  Args:
+    source: Fergus_Bowes-Lyon
+    type: :Man
+  AssignClass (f4b4bfb2-2881-4f38-844b-e0c153e4cbd8)
+ Call ID: f4b4bfb2-2881-4f38-844b-e0c153e4cbd8
+  Args:
+    source: Fergus_Bowes-Lyon
+    type: :Person
+  AssignClass (12e9ac15-3ba1-4018-94d3-f9cc1f33f374)
+ Call ID: 12e9ac15-3ba1-4018-94d3-f9cc1f33f374
+  Args:
+    source: Male
+    type: :Sex
+  AssignClass (0a2c4096-a8f4-4364-a8dd-5311de917bac)
+ Call ID: 0a2c4096-a8f4-4364-a8dd-5311de917bac
+  Args:
+    source: Female
+    type: :Sex
+  Finish (5aa8bc77-b681-466e-b3d6-2b0b9e1c427c)
+ Call ID: 5aa8bc77-b681-466e-b3d6-2b0b9e1c427c
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -852,21 +940,25 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Edward_VIII a :Man,
+  data:Elizabeth_Bowes-Lyon a :Person,
+          :Woman ;
+      :hasBirthYear 1900 ;
+      :hasBrother data:Fergus_Bowes-Lyon ;
+      :hasChild data:Princess_Elizabeth,
+          data:Princess_Margaret ;
+      :hasDeathYear 2002 ;
+      :hasFather data:Claude_Bowes-Lyon ;
+      :hasMother data:Cecilia_Cavendish-Bentinck ;
+      :hasSex data:Female .
+
+  data:George_VI a :Man,
           :Person ;
-      :isBrotherOf data:George_VI .
-
-  data:Elizabeth_II a :Person,
-          :Woman ;
-      :isDaughterOf data:Elizabeth_Bowes-Lyon,
-          data:George_VI ;
-      :knownAs "Queen Elizabeth II"^^xsd:string .
-
-  data:Margaret a :Person,
-          :Woman ;
-      :isDaughterOf data:Elizabeth_Bowes-Lyon,
-          data:George_VI ;
-      :knownAs "Princess Margaret"^^xsd:string .
+      :hasBrother data:Edward_VIII ;
+      :hasChild data:Princess_Elizabeth,
+          data:Princess_Margaret ;
+      :hasFather data:George_V ;
+      :hasMother data:Queen_Mary ;
+      :hasSex data:Male .
 
   data:Cecilia_Cavendish-Bentinck a :Person,
           :Woman .
@@ -874,26 +966,27 @@ The final data graph after all the edits:
   data:Claude_Bowes-Lyon a :Man,
           :Person .
 
+  data:Edward_VIII a :Man,
+          :Person .
+
+  data:Female a :Sex .
+
+  data:Fergus_Bowes-Lyon a :Man,
+          :Person .
+
   data:George_V a :Man,
           :Person .
+
+  data:Male a :Sex .
 
   data:Queen_Mary a :Person,
           :Woman .
 
-  data:Elizabeth_Bowes-Lyon a :Person,
-          :Woman ;
-      :hasBirthYear 1900 ;
-      :hasDeathYear 2002 ;
-      :hasFather data:Claude_Bowes-Lyon ;
-      :hasMother data:Cecilia_Cavendish-Bentinck ;
-      :hasRelation data:George_VI ;
-      :knownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string .
+  data:Princess_Elizabeth a :Person,
+          :Woman .
 
-  data:George_VI a :Man,
-          :Person ;
-      :hasFather data:George_V ;
-      :hasMother data:Queen_Mary ;
-      :knownAs "George VI"^^xsd:string .
+  data:Princess_Margaret a :Person,
+          :Woman .
 
 
 
@@ -905,206 +998,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (8386ebd4-0c02-429a-bd9a-eb17ddcbd4cc)
- Call ID: 8386ebd4-0c02-429a-bd9a-eb17ddcbd4cc
+  ValidateShacl (0857834e-ed66-4912-89d8-11e9e9ead8bf)
+ Call ID: 0857834e-ed66-4912-89d8-11e9e9ead8bf
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:24
+Total violations:12
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node George_V is assigned to the property :hasFather of George_VI, but it does not have the required class :Ancestor.
+      The node 'Claude_Bowes-Lyon' is used as the 'hasFather' for 'Elizabeth_Bowes-Lyon', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_V', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to 'Claude_Bowes-Lyon'.
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Mary is assigned to the property :hasMother of George_VI, but it does not have the required class :Ancestor.
+      The node 'Cecilia_Cavendish-Bentinck' is used as the 'hasMother' for 'Elizabeth_Bowes-Lyon', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Mary', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to 'Cecilia_Cavendish-Bentinck'.
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node George_V is assigned to the property :hasFather of George_VI, but it does not have the required class :Ancestor.
+      The node 'George_V' is used as the 'hasFather' for 'George_VI', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_V', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to 'George_V'.
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Claude_Bowes-Lyon is assigned to the property :hasFather of Elizabeth_Bowes-Lyon, but it does not have the required class :Ancestor.
+      The node 'Queen_Mary' is used as the 'hasMother' for 'George_VI', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claude_Bowes-Lyon', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to 'Queen_Mary'.
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Mary is assigned to the property :hasMother of George_VI, but it does not have the required class :Ancestor.
+      The node 'George_V' is used as the 'hasFather' for 'George_VI', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Mary', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to 'George_V'.
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Cecilia_Cavendish-Bentinck is assigned to the property :hasMother of Elizabeth_Bowes-Lyon, but it does not have the required class :Ancestor.
+      The node 'Claude_Bowes-Lyon' is used as the 'hasFather' for 'Elizabeth_Bowes-Lyon', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilia_Cavendish-Bentinck', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to 'Claude_Bowes-Lyon'.
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node George_VI is assigned to the property :isDaughterOf of Margaret, but it does not have the required class :Ancestor.
+      The node 'Queen_Mary' is used as the 'hasMother' for 'George_VI', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_VI', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to 'Queen_Mary'.
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Elizabeth_Bowes-Lyon is assigned to the property :isDaughterOf of Margaret, but it does not have the required class :Ancestor.
+      The node 'Cecilia_Cavendish-Bentinck' is used as the 'hasMother' for 'Elizabeth_Bowes-Lyon', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Elizabeth_Bowes-Lyon', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to 'Cecilia_Cavendish-Bentinck'.
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node George_VI is assigned to the property :isDaughterOf of Elizabeth_II, but it does not have the required class :Ancestor.
+      The node 'George_V' is used as the 'hasFather' for 'George_VI', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_VI', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to 'George_V'.
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Elizabeth_Bowes-Lyon is assigned to the property :isDaughterOf of Elizabeth_II, but it does not have the required class :Ancestor.
+      The node 'Claude_Bowes-Lyon' is used as the 'hasFather' for 'Elizabeth_Bowes-Lyon', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Elizabeth_Bowes-Lyon', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to 'Claude_Bowes-Lyon'.
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node George_V is assigned to the property :hasFather of George_VI, but it does not have the required class :Ancestor.
+      The node 'Queen_Mary' is used as the 'hasMother' for 'George_VI', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_V', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to 'Queen_Mary'.
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Claude_Bowes-Lyon is assigned to the property :hasFather of Elizabeth_Bowes-Lyon, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claude_Bowes-Lyon', class=':Ancestor')
-
-
-  Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Mary is assigned to the property :hasMother of George_VI, but it does not have the required class :Ancestor.
+      The node 'Cecilia_Cavendish-Bentinck' is used as the 'hasMother' for 'Elizabeth_Bowes-Lyon', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Mary', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Cecilia_Cavendish-Bentinck is assigned to the property :hasMother of Elizabeth_Bowes-Lyon, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilia_Cavendish-Bentinck', class=':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node George_VI is assigned to the property :isDaughterOf of Margaret, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_VI', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Elizabeth_Bowes-Lyon is assigned to the property :isDaughterOf of Margaret, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Elizabeth_Bowes-Lyon', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node George_VI is assigned to the property :isDaughterOf of Elizabeth_II, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_VI', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Elizabeth_Bowes-Lyon is assigned to the property :isDaughterOf of Elizabeth_II, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Elizabeth_Bowes-Lyon', class=':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Claude_Bowes-Lyon is assigned to the property :hasFather of Elizabeth_Bowes-Lyon, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claude_Bowes-Lyon', class=':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Cecilia_Cavendish-Bentinck is assigned to the property :hasMother of Elizabeth_Bowes-Lyon, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilia_Cavendish-Bentinck', class=':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node George_VI is assigned to the property :isDaughterOf of Margaret, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_VI', class=':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Elizabeth_Bowes-Lyon is assigned to the property :isDaughterOf of Margaret, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Elizabeth_Bowes-Lyon', class=':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node George_VI is assigned to the property :isDaughterOf of Elizabeth_II, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_VI', class=':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Elizabeth_Bowes-Lyon is assigned to the property :isDaughterOf of Elizabeth_II, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Elizabeth_Bowes-Lyon', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to 'Cecilia_Cavendish-Bentinck'.
 
 
 
@@ -1113,44 +1110,26 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (624c522f-ba16-4805-b542-4abefec2bb96)
- Call ID: 624c522f-ba16-4805-b542-4abefec2bb96
-  Args:
-    type: :Ancestor
-    source: George_V
-  AssignClass (62e914b5-b24f-4230-ae60-cfa550a7d4e0)
- Call ID: 62e914b5-b24f-4230-ae60-cfa550a7d4e0
-  Args:
-    type: :Ancestor
-    source: Queen_Mary
-  AssignClass (ca981409-4430-45b3-9240-96327e5d21d5)
- Call ID: ca981409-4430-45b3-9240-96327e5d21d5
+  AssignClass (c4fb5520-fe4e-4664-a4e3-02f4d999dfa1)
+ Call ID: c4fb5520-fe4e-4664-a4e3-02f4d999dfa1
   Args:
     type: :Ancestor
     source: Claude_Bowes-Lyon
-  AssignClass (b6fd99c4-901c-4dfe-8da1-b648fa2db906)
- Call ID: b6fd99c4-901c-4dfe-8da1-b648fa2db906
+  AssignClass (d9e982bc-5c6e-4686-80d0-8023e9af6dc3)
+ Call ID: d9e982bc-5c6e-4686-80d0-8023e9af6dc3
   Args:
     type: :Ancestor
     source: Cecilia_Cavendish-Bentinck
-  AssignClass (c1e3fa0c-8986-453c-8de1-51791e005d60)
- Call ID: c1e3fa0c-8986-453c-8de1-51791e005d60
+  AssignClass (84ccd708-c4f1-447b-94e4-0d069121ca4e)
+ Call ID: 84ccd708-c4f1-447b-94e4-0d069121ca4e
   Args:
     type: :Ancestor
-    source: George_VI
-  AssignClass (d46558a7-0a43-47c1-9d63-937cbc6baaec)
- Call ID: d46558a7-0a43-47c1-9d63-937cbc6baaec
+    source: George_V
+  AssignClass (4826da38-7b49-4c61-a729-2926226d1eda)
+ Call ID: 4826da38-7b49-4c61-a729-2926226d1eda
   Args:
     type: :Ancestor
-    source: Elizabeth_Bowes-Lyon
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Queen_Mary
 
 ================================= Tool Message =================================
 
@@ -1171,21 +1150,25 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Edward_VIII a :Man,
+  data:Elizabeth_Bowes-Lyon a :Person,
+          :Woman ;
+      :hasBirthYear 1900 ;
+      :hasBrother data:Fergus_Bowes-Lyon ;
+      :hasChild data:Princess_Elizabeth,
+          data:Princess_Margaret ;
+      :hasDeathYear 2002 ;
+      :hasFather data:Claude_Bowes-Lyon ;
+      :hasMother data:Cecilia_Cavendish-Bentinck ;
+      :hasSex data:Female .
+
+  data:George_VI a :Man,
           :Person ;
-      :isBrotherOf data:George_VI .
-
-  data:Elizabeth_II a :Person,
-          :Woman ;
-      :isDaughterOf data:Elizabeth_Bowes-Lyon,
-          data:George_VI ;
-      :knownAs "Queen Elizabeth II"^^xsd:string .
-
-  data:Margaret a :Person,
-          :Woman ;
-      :isDaughterOf data:Elizabeth_Bowes-Lyon,
-          data:George_VI ;
-      :knownAs "Princess Margaret"^^xsd:string .
+      :hasBrother data:Edward_VIII ;
+      :hasChild data:Princess_Elizabeth,
+          data:Princess_Margaret ;
+      :hasFather data:George_V ;
+      :hasMother data:Queen_Mary ;
+      :hasSex data:Male .
 
   data:Cecilia_Cavendish-Bentinck a :Ancestor,
           :Person,
@@ -1195,30 +1178,29 @@ The final data graph after all the edits:
           :Man,
           :Person .
 
+  data:Edward_VIII a :Man,
+          :Person .
+
+  data:Female a :Sex .
+
+  data:Fergus_Bowes-Lyon a :Man,
+          :Person .
+
   data:George_V a :Ancestor,
           :Man,
           :Person .
+
+  data:Male a :Sex .
 
   data:Queen_Mary a :Ancestor,
           :Person,
           :Woman .
 
-  data:Elizabeth_Bowes-Lyon a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1900 ;
-      :hasDeathYear 2002 ;
-      :hasFather data:Claude_Bowes-Lyon ;
-      :hasMother data:Cecilia_Cavendish-Bentinck ;
-      :hasRelation data:George_VI ;
-      :knownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string .
+  data:Princess_Elizabeth a :Person,
+          :Woman .
 
-  data:George_VI a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:George_V ;
-      :hasMother data:Queen_Mary ;
-      :knownAs "George VI"^^xsd:string .
+  data:Princess_Margaret a :Person,
+          :Woman .
 
 
 
@@ -1226,8 +1208,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (1389983a-9117-4996-90dd-ebad089ef3fa)
- Call ID: 1389983a-9117-4996-90dd-ebad089ef3fa
+  ValidateShacl (1fad2aef-5a9f-43d6-be7d-0f9972ca80a3)
+ Call ID: 1fad2aef-5a9f-43d6-be7d-0f9972ca80a3
   Args:
 
 ================================= Tool Message =================================
@@ -1238,6 +1220,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (291a2528-c642-4b4c-bb30-56936eb5a5d9)
- Call ID: 291a2528-c642-4b4c-bb30-56936eb5a5d9
+  Finish (8700378b-10d4-4105-8c20-fdd191c4edd2)
+ Call ID: 8700378b-10d4-4105-8c20-fdd191c4edd2
   Args:

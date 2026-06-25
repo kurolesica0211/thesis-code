@@ -85,99 +85,27 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Crown PrinceThe Crown Princess
+Princess Marie Alexandra of Baden (Marie Alexandra Thyra Victoria Louise Carola Hilda; 1 August 1902 – 29 January 1944) was a Hessian princess by marriage.
+Family
 
+She was the only daughter and elder child of Prince Maximilian of Baden (1867–1929) and Princess Marie Louise of Hanover and Cumberland.
+Her paternal grandparents were Prince Wilhelm of Baden (1829–97) and Princess Maria Maximilianovna of Leuchtenberg (1841–1914), a daughter of Maximilian, Duke of Leuchtenberg (1817–52) and Grand Duchess Maria Nikolaevna (1819–1876).
+Princess Marie-Louise of Hanover (1879–1948) was a daughter of Ernest Augustus, Crown Prince of Hanover, claimant of the annexed Kingdom of Hanover.
+Marriage
 
-Princess Tomislav
+On 17 September 1924, she married her fourth cousin Prince Wolfgang of Hesse (1896–1989).
+Death
 
-
-Princess Alexander
-
-
-Princess Elizabeth
-
-
-Filip Karađorđević (Serbian Cyrillic: Филип Карађорђевић; born 15 January 1982), sometimes referred to in English as Prince Philip Karageorgevitch and unofficially titled Philip, Hereditary Prince of Serbia and Yugoslavia (Serbian Cyrillic: Филип, принц наследник од Србије и Југославије, Filip, princ naslednik od Srbije i Jugoslavije), is a Serbian business manager, a member of the House of Karađorđević, and heir apparent to Crown Prince Alexander.
-In 2020, he moved to his homeland Serbia and took a more active role in public life, often travelling across Serbia, Kosovo, Montenegro, and Bosnia.
-In 2022, he became the hereditary prince, following his elder brother's renunciation.
-Early life and education
-
-Prince Philip was born on 15 January 1982 in Vienna, Virginia, as the second son and second child of the last Crown Prince of the former Kingdom of Yugoslavia, Alexander, and his first wife, Princess Maria da Gloria of Orléans-Braganza, the eldest daughter of Pedro Gastão of Orléans-Braganza, a claimant to the defunct Brazilian throne, and Princess Maria de la Esperanza of Bourbon-Two Sicilies (1914–2005), a maternal aunt of King Juan Carlos I of Spain.
-Philip is the fraternal twin of Alexander.
-His godparents are Queen Sofía of Spain, King Constantine II of Greece (both first cousins of his paternal grandmother), and Princess Anne, Duchess of Calabria (first cousin of his mother).
-Philip lived in Virginia until 1984.
-Philip's parents divorced in 1985.
-After the divorce, his father remarried Katherine Clairy Batis later that year, while his mother remarried Ignacio, Duke of Segorbe, member of the House of Medinaceli, later that year.
-Philip has two younger half-sisters through his mother, Sol María de la Blanca Medina y Orléans-Braganza, 54th Countess of Ampurias (b. 1986) and Ana Luna Medina y Orléans-Braganza, 17th Countess of Ricla (b. 1988).
-Together with his twin brother, Philip was educated in London and Canterbury.
-In June 2000, Philip completed sixth form at The King's School, Canterbury, obtaining three A levels and ten GCSEs.
-In 1991, Philip, with his father and brothers, briefly visited Belgrade, Yugoslavia.
-In February 2001, the Parliament of FR Yugoslavia passed legislation conferring citizenship on members of the Karađorđević family, making Philip eligible for Yugoslav citizenship.
-In July 2001, his father and step-mother moved to Belgrade, Serbia, FR Yugoslavia.
-After the dissolution of FR Yugoslavia (later renamed Serbia and Montenegro), Philip obtained citizenship of Serbia.
-Personal life
-
-After completing his studies, Philip started to work for financial institutions in the City of London.
-Most recently, Philip has been working with a renowned global asset manager in London.
-Philip lived and worked in London until 2020, when he relocated to Serbia and started to work remotely following the COVID-19 pandemic in Europe.
-Philip completed the 2010 Athens Marathon, the 2011 Belgrade Half-marathon, and the 2014 London Marathon.
-Marriage and children
-
-On 24 July 2017, his parents announced his engagement to Danica Marinković.
-Philip married Danica Marinković on 7 October 2017 at the Cathedral Church of Saint Michael the Archangel in Belgrade, Serbia.
-Their witnesses were Victoria, the Crown Princess of Sweden and his brother Peter.
-His two godmothers, Queen Sofía of Spain and Princess Anne, Duchess of Calabria, attended the wedding.
-It was the first royal wedding in Serbia since the 1922 wedding of his great-grandfather King Alexander I and Princess Maria of Romania.
-Several members of royal families also attended, including Prince Guillaume of Luxembourg with his wife, Prince Amyn Aga Khan, Princess Jeet Nabha Khemka, and guests of the Karađorđević Royal Family and the Marinković family, including the president of the National Assembly of Serbia Maja Gojković among others.
-Princess Danica gave birth to their son, Prince Stefan, in Belgrade on 25 February 2018 at 10:30 am.
-Stefan is the first male child born to the royal family on Serbian soil for 90 years, the last such birth being that of Prince Tomislav in Belgrade in 1928.
-On 5 November 2023 in Belgrade, Philip and Danica welcomed their second child, a daughter.
-They named her Princess Marija.
-Public life
-
-Prince Philip attended the reburial of his grandparents, King Peter II and Queen Alexandra, great-grandmother Queen Maria, and granduncle Prince Andrew in the Royal Family Mausoleum at Oplenac on 26 May 2013.
-The Serbian Royal Regalia were placed over King Peter's coffin, having Philip placed the Royal Orb and Sceptre near the Karađorđević Crown.
-On 17 July 2015, Prince Philip and his brothers attended their father's 70th birthday celebration in Royal Compound, Belgrade.
-Prince in Serbia (2020–2022)
-Philip used to live in London with his family, a wife and a son, but as of July 2020, they relocated and currently live in Belgrade, Serbia.
-With his relocation to Serbia, Philip fulfilled the promise he gave to Serbian Patriarch Irinej to do so.
-In January 2020, Prince Philip voiced support for the clerical protests in Montenegro.
-On 22 November 2020, Philip and his wife, Princess Danica, were the only members of the House of Karađorđević who attended the funeral service of Patriarch Irinej at the Church of Saint Sava.
-Prince Philip and his wife were also the only members of the House of Karađorđević who attended the enthronement of newly elected Patriarch Porfirije  on 19 February 2021 in St. Michael's Cathedral in Belgrade.
-In April 2021, before Easter, Philip visited Kosovo to support the Serbian community there.
-On 13 September 2021, Philip and his wife, Princess Danica, attended Holy Liturgy led by Patriarch Porfirije in the Jasenovac Monastery in Croatia and visited the Jasenovac concentration camp and Stone Flower sculpture, becoming the first members of the House of Karađorđević who visited this memorial site from World War II.
-In December 2021, Philip voiced support for the environmental protests in Serbia.
-In February 2022, Philip and his wife travelled to Han Pijesak, Bosnia and Herzegovina.
-Devastated by time, the summer house will be rebuilt and renovated as Prince Philip has agreed with local authorities and the Government of Republika Srpska to fund it.
-Furthermore, on 10 February, Prince Philip and his wife met with Milorad Dodik, a Serb member of the Presidency of Bosnia and Herzegovina.
-On 21 March 2022, Philip and his wife signed the People's initiative to ban the exploitation of lithium and boron in Serbia.
-Hereditary Prince (2022–present)
-
-On 27 April 2022, his elder brother Prince Peter renounced the title of a hereditary prince – for himself and his descendants.
-Philip became the Hereditary Prince of Serbia and Yugoslavia, heir apparent to his father, Alexander.
-The ceremony took place at Casa de Pilatos in Seville, Spain, in the presence of his mother, Princess Maria da Gloria, his stepfather Duke Ignacio, his wife Princess Danica, his half-sister Countess Sol, Ljubodrag Grujić, a member of the Crown Council, Chancellor of the Orders and the Herald of the House of Karađorđević and Nikola Stanković, Chief of Staff of the Crown Prince.
-His father, Crown Prince Alexander, did not attend the event.
-The Crown Prince was dissatisfied with Peter's renunciation.
-A grandson of King Alexander I of Yugoslavia, Prince Michael, supported the act.
-On 5 May 2022, Philip and his wife attended mass at the Cathedral of Saint-Louis des Invalides in Paris in honour of Napoleon I and soldiers of the Grande Armée who died for France, by invitation from his cousin Jean-Christophe, Prince Napoléon, a descendant of Napoleon, and his wife, Princess Olympia.
-Afterwards, they travelled to Mileševa Monastery in southwest Serbia and Pljevlja, Montenegro, attending the Holy Liturgy in Mileševa led by Patriarch Porfirije and Metropolitan Joanikije II of Montenegro and the Littoral.
-In the first week of June 2022, Philip and his family travelled to Kosovo, visiting Gazimestan, Gračanica Monastery, Prizren (Church of the Holy Saviour and Monastery of the Holy Archangels), Priština (St. Nicholas Church), and Visoki Dečani Monastery.
-Furthermore, Prince Philip gave a copy of Prince Peter's renunciation paper to the library of Visoki Dečani Monastery.
-On 11 September 2022, Philip and his wife attended a march from Loznica to the top of Gučevo mountain in honour of soldiers fallen in the Battle of the Drina in September 1914.
-In May 2023, Philip and his wife attended the Serbia Against Violence protests in Belgrade, following the Belgrade school shooting and a mass murder near Mladenovac and Smederevo.
-Arms
-
-Ancestry
-
-Philip is a member of the House of Karađorđević.
-Through his father, Philip descends from kings Nicholas I of Montenegro, Ferdinand I of Romania, Christian IX of Denmark, and Alexander of Greece, and furthermore from emperors Nicholas I of Russia and Frederick III of the Germans and Queen Victoria of the United Kingdom of Great Britain and Ireland.
-Through his mother, Philip descends from the Emperor Pedro II of Brazil, and kings Louis Philippe I of France and Francis I of the Two Sicilies, and furthermore from Francis I, Holy Roman Emperor and his Empress Maria Theresa, and king Charles III of Spain.
+Princess Marie Alexandra was killed in an attack by the U.S. Army Air Forces during an air-raid on Frankfurt am Main on 29–30 January 1944 during World War II.
+She and seven other women, who were aid workers, were killed when the cellar, in which they had taken refuge, collapsed under the weight of the building, rendering Marie Alexandra's body barely recognisable.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -193,39 +121,9 @@ Through his mother, Philip descends from the Emperor Pedro II of Brazil, and kin
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -240,6 +138,23 @@ Through his mother, Philip descends from the Emperor Pedro II of Brazil, and kin
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -257,6 +172,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -324,29 +254,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -355,6 +277,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -367,6 +297,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -375,17 +307,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -413,6 +347,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -428,115 +446,359 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (cde1791f-7369-461b-8143-ca333499f8ac)
- Call ID: cde1791f-7369-461b-8143-ca333499f8ac
+  AssignClass (08226046-d648-4d04-abe9-fe0c860ee6ed)
+ Call ID: 08226046-d648-4d04-abe9-fe0c860ee6ed
   Args:
-    type: :Man
-    source: Filip Karađorđević
-  AssignClass (52c9198e-d46b-445c-b0fb-573bf7675a39)
- Call ID: 52c9198e-d46b-445c-b0fb-573bf7675a39
-  Args:
-    type: :Man
-    source: Alexander (Crown Prince)
-  AssignClass (35b13f6c-047e-437e-9c82-17091948de85)
- Call ID: 35b13f6c-047e-437e-9c82-17091948de85
-  Args:
+    source: :Princess_Marie_Alexandra_of_Baden
     type: :Woman
-    source: Maria da Gloria
-  AssignClass (0c35855f-94eb-4ea8-9286-8e7a821770e8)
- Call ID: 0c35855f-94eb-4ea8-9286-8e7a821770e8
+  AssignClass (52645afb-e3b0-4cc4-8891-f150a50a3143)
+ Call ID: 52645afb-e3b0-4cc4-8891-f150a50a3143
   Args:
-    type: :Woman
-    source: Danica Marinković
-  AssignClass (e2b4d30c-70c6-4b73-9421-0c8021815be5)
- Call ID: e2b4d30c-70c6-4b73-9421-0c8021815be5
+    type: :Person
+    source: :Princess_Marie_Alexandra_of_Baden
+  AddLiteral (2dc3094c-5c5e-40fe-862d-6ac019a1568e)
+ Call ID: 2dc3094c-5c5e-40fe-862d-6ac019a1568e
   Args:
-    type: :Man
-    source: Stefan
-  AssignClass (55e208a6-9dbd-4a26-a6c2-cd6ae5a91589)
- Call ID: 55e208a6-9dbd-4a26-a6c2-cd6ae5a91589
-  Args:
-    type: :Woman
-    source: Marija
-  AssignClass (ae37ab20-e464-44a6-8092-8e4e49710627)
- Call ID: ae37ab20-e464-44a6-8092-8e4e49710627
-  Args:
-    type: :Man
-    source: Peter
-  AssignClass (38cc39e4-a359-4268-a3cd-a15ae549fc48)
- Call ID: 38cc39e4-a359-4268-a3cd-a15ae549fc48
-  Args:
-    type: :Woman
-    source: Sol María de la Blanca Medina y Orléans-Braganza
-  AssignClass (cee7812c-2ae9-4622-86e3-f208bb75de31)
- Call ID: cee7812c-2ae9-4622-86e3-f208bb75de31
-  Args:
-    type: :Woman
-    source: Ana Luna Medina y Orléans-Braganza
-  AddLiteral (d6cdc0cd-f98c-4f7e-afc6-45d2d502bcca)
- Call ID: d6cdc0cd-f98c-4f7e-afc6-45d2d502bcca
-  Args:
-    source: Filip Karađorđević
+    source: :Princess_Marie_Alexandra_of_Baden
+    literal_value: 1902
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1982
-  AddTriple (37c5cc16-5a60-4b1b-88c9-0f4368af7d85)
- Call ID: 37c5cc16-5a60-4b1b-88c9-0f4368af7d85
+  AddLiteral (6dfece24-300c-403f-921a-73b72475af81)
+ Call ID: 6dfece24-300c-403f-921a-73b72475af81
   Args:
-    target: Alexander (Crown Prince)
+    literal_type: xsd:integer
+    literal_value: 1944
+    source: :Princess_Marie_Alexandra_of_Baden
+    relation: :hasDeathYear
+  AssignClass (949eb052-ad37-459b-9386-ca50ead302f5)
+ Call ID: 949eb052-ad37-459b-9386-ca50ead302f5
+  Args:
+    type: :Man
+    source: :Prince_Maximilian_of_Baden
+  AssignClass (86f24478-e4c5-4912-8080-b705b796c509)
+ Call ID: 86f24478-e4c5-4912-8080-b705b796c509
+  Args:
+    type: :Person
+    source: :Prince_Maximilian_of_Baden
+  AddLiteral (73af85d9-dd8f-4e3d-a992-9781a187f913)
+ Call ID: 73af85d9-dd8f-4e3d-a992-9781a187f913
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1867
+    source: :Prince_Maximilian_of_Baden
+    literal_type: xsd:integer
+  AddLiteral (d9cfc80d-05a8-478f-a197-b3b16721dc4f)
+ Call ID: d9cfc80d-05a8-478f-a197-b3b16721dc4f
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1929
+    source: :Prince_Maximilian_of_Baden
+    relation: :hasDeathYear
+  AssignClass (c0bfb49f-84d6-49da-9be2-4ce10c54c6d6)
+ Call ID: c0bfb49f-84d6-49da-9be2-4ce10c54c6d6
+  Args:
+    source: :Princess_Marie_Louise_of_Hanover_and_Cumberland
+    type: :Woman
+  AssignClass (a64bbb17-596e-4e0a-84f5-1d30115195f2)
+ Call ID: a64bbb17-596e-4e0a-84f5-1d30115195f2
+  Args:
+    source: :Princess_Marie_Louise_of_Hanover_and_Cumberland
+    type: :Person
+  AddLiteral (6e788345-b58d-41a4-80e2-3fc75fbee433)
+ Call ID: 6e788345-b58d-41a4-80e2-3fc75fbee433
+  Args:
+    source: :Princess_Marie_Louise_of_Hanover_and_Cumberland
+    literal_value: 1879
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (51e1e218-26da-4863-984c-e1c8ab0ad909)
+ Call ID: 51e1e218-26da-4863-984c-e1c8ab0ad909
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1948
+    source: :Princess_Marie_Louise_of_Hanover_and_Cumberland
+    literal_type: xsd:integer
+  AddTriple (27bc2b38-a0f7-4c5b-9d5a-7e225037afdf)
+ Call ID: 27bc2b38-a0f7-4c5b-9d5a-7e225037afdf
+  Args:
     relation: :hasFather
-    source: Filip Karađorđević
-  AddTriple (dcfd0945-8a81-41e8-85d1-2137fb3c8b7b)
- Call ID: dcfd0945-8a81-41e8-85d1-2137fb3c8b7b
+    source: :Princess_Marie_Alexandra_of_Baden
+    target: :Prince_Maximilian_of_Baden
+  AddTriple (f18fabfb-8dec-45dc-a67f-5cddc84d1687)
+ Call ID: f18fabfb-8dec-45dc-a67f-5cddc84d1687
   Args:
     relation: :hasMother
-    target: Maria da Gloria
-    source: Filip Karađorđević
-  AddTriple (ef94493b-e793-408f-85e7-48382165ee48)
- Call ID: ef94493b-e793-408f-85e7-48382165ee48
+    source: :Princess_Marie_Alexandra_of_Baden
+    target: :Princess_Marie_Louise_of_Hanover_and_Cumberland
+  AssignClass (e872266d-4557-4666-b0e3-267bcea3b790)
+ Call ID: e872266d-4557-4666-b0e3-267bcea3b790
+  Args:
+    source: :Prince_Wilhelm_of_Baden
+    type: :Man
+  AssignClass (7518ccf0-c65a-47a4-86a3-1ebe3480f3c4)
+ Call ID: 7518ccf0-c65a-47a4-86a3-1ebe3480f3c4
+  Args:
+    source: :Prince_Wilhelm_of_Baden
+    type: :Person
+  AddLiteral (a7245e8d-0dba-4a13-a05a-21cce5819a35)
+ Call ID: a7245e8d-0dba-4a13-a05a-21cce5819a35
+  Args:
+    literal_value: 1829
+    source: :Prince_Wilhelm_of_Baden
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (e06b503b-b593-41cb-a444-76a57598f22c)
+ Call ID: e06b503b-b593-41cb-a444-76a57598f22c
+  Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1897
+    source: :Prince_Wilhelm_of_Baden
+  AssignClass (5b9984ad-c731-49da-a8c3-7252d17ede59)
+ Call ID: 5b9984ad-c731-49da-a8c3-7252d17ede59
+  Args:
+    source: :Princess_Maria_Maximilianovna_of_Leuchtenberg
+    type: :Woman
+  AssignClass (5c0c9889-8367-402a-b211-794145151ca4)
+ Call ID: 5c0c9889-8367-402a-b211-794145151ca4
+  Args:
+    type: :Person
+    source: :Princess_Maria_Maximilianovna_of_Leuchtenberg
+  AddLiteral (b8b3b44f-d8d7-4998-af41-5012e4ce44b3)
+ Call ID: b8b3b44f-d8d7-4998-af41-5012e4ce44b3
+  Args:
+    relation: :hasBirthYear
+    source: :Princess_Maria_Maximilianovna_of_Leuchtenberg
+    literal_value: 1841
+    literal_type: xsd:integer
+  AddLiteral (53665f68-28eb-4884-a6c5-1db5731d4197)
+ Call ID: 53665f68-28eb-4884-a6c5-1db5731d4197
+  Args:
+    literal_value: 1914
+    source: :Princess_Maria_Maximilianovna_of_Leuchtenberg
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddTriple (7f844f44-9212-46a4-8a2c-4dfda42bdc97)
+ Call ID: 7f844f44-9212-46a4-8a2c-4dfda42bdc97
+  Args:
+    target: :Prince_Wilhelm_of_Baden
+    source: :Prince_Maximilian_of_Baden
+    relation: :hasFather
+  AddTriple (11027f6f-2206-451f-8fa5-13f7a6381e97)
+ Call ID: 11027f6f-2206-451f-8fa5-13f7a6381e97
+  Args:
+    target: :Princess_Maria_Maximilianovna_of_Leuchtenberg
+    source: :Prince_Maximilian_of_Baden
+    relation: :hasMother
+  AssignClass (c32f57a8-bb83-475e-ba83-2e085bc8ba23)
+ Call ID: c32f57a8-bb83-475e-ba83-2e085bc8ba23
+  Args:
+    source: :Maximilian_Duke_of_Leuchtenberg
+    type: :Man
+  AssignClass (871d6873-3fea-46a4-b18c-dd149a50783d)
+ Call ID: 871d6873-3fea-46a4-b18c-dd149a50783d
+  Args:
+    source: :Maximilian_Duke_of_Leuchtenberg
+    type: :Person
+  AddLiteral (93fdf965-5327-4760-a22c-f1a3dadad1ab)
+ Call ID: 93fdf965-5327-4760-a22c-f1a3dadad1ab
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: :Maximilian_Duke_of_Leuchtenberg
+    literal_value: 1817
+  AddLiteral (1a15f640-2d7c-490c-b760-0c394065b7ae)
+ Call ID: 1a15f640-2d7c-490c-b760-0c394065b7ae
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1852
+    source: :Maximilian_Duke_of_Leuchtenberg
+    relation: :hasDeathYear
+  AssignClass (d48fbb31-f418-40f7-aacc-b4d05cae0211)
+ Call ID: d48fbb31-f418-40f7-aacc-b4d05cae0211
+  Args:
+    source: :Grand_Duchess_Maria_Nikolaevna
+    type: :Woman
+  AssignClass (5c126403-717d-4187-8905-1e0695b092f9)
+ Call ID: 5c126403-717d-4187-8905-1e0695b092f9
+  Args:
+    source: :Grand_Duchess_Maria_Nikolaevna
+    type: :Person
+  AddLiteral (7a8b4ae8-aa27-498e-8357-bba5bf178d0a)
+ Call ID: 7a8b4ae8-aa27-498e-8357-bba5bf178d0a
+  Args:
+    literal_type: xsd:integer
+    source: :Grand_Duchess_Maria_Nikolaevna
+    literal_value: 1819
+    relation: :hasBirthYear
+  AddLiteral (a5e7f33e-b370-42ae-a88b-66912ac5a480)
+ Call ID: a5e7f33e-b370-42ae-a88b-66912ac5a480
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1876
+    source: :Grand_Duchess_Maria_Nikolaevna
+    relation: :hasDeathYear
+  AddTriple (ea4d909d-ae6f-4e7c-ae50-1b36ab51e076)
+ Call ID: ea4d909d-ae6f-4e7c-ae50-1b36ab51e076
   Args:
     relation: :hasFather
-    target: Filip Karađorđević
-    source: Stefan
-  AddTriple (4ea62388-fcbb-4bcb-8581-4bb2bd6586b3)
- Call ID: 4ea62388-fcbb-4bcb-8581-4bb2bd6586b3
+    source: :Princess_Maria_Maximilianovna_of_Leuchtenberg
+    target: :Maximilian_Duke_of_Leuchtenberg
+  AddTriple (436a31c7-14ea-4c18-82d0-8e24d95916f3)
+ Call ID: 436a31c7-14ea-4c18-82d0-8e24d95916f3
   Args:
-    target: Danica Marinković
     relation: :hasMother
-    source: Stefan
-  AddTriple (43aca03d-d20c-43a7-8e47-c0f16145869a)
- Call ID: 43aca03d-d20c-43a7-8e47-c0f16145869a
+    source: :Princess_Maria_Maximilianovna_of_Leuchtenberg
+    target: :Grand_Duchess_Maria_Nikolaevna
+  AssignClass (ab52c4b7-60e1-443f-afde-0675b64b68dc)
+ Call ID: ab52c4b7-60e1-443f-afde-0675b64b68dc
   Args:
-    source: Marija
+    type: :Man
+    source: :Ernest_Augustus_Crown_Prince_of_Hanover
+  AssignClass (2ba62e5c-ed91-42a6-9b0c-9a0218b8e73b)
+ Call ID: 2ba62e5c-ed91-42a6-9b0c-9a0218b8e73b
+  Args:
+    source: :Ernest_Augustus_Crown_Prince_of_Hanover
+    type: :Person
+  AddTriple (de0955c3-316b-426d-8814-2719ca8f68c4)
+ Call ID: de0955c3-316b-426d-8814-2719ca8f68c4
+  Args:
+    target: :Ernest_Augustus_Crown_Prince_of_Hanover
+    source: :Princess_Marie_Louise_of_Hanover_and_Cumberland
     relation: :hasFather
-    target: Filip Karađorđević
-  AddTriple (7537cd39-2235-4875-85d0-372755cd84f8)
- Call ID: 7537cd39-2235-4875-85d0-372755cd84f8
+  AssignClass (0b7878d7-453d-4e7a-b082-ff6f07ba2b9b)
+ Call ID: 0b7878d7-453d-4e7a-b082-ff6f07ba2b9b
   Args:
-    source: Marija
-    target: Danica Marinković
-    relation: :hasMother
-  AddTriple (8052c921-a385-451d-8fad-a6d3852e2314)
- Call ID: 8052c921-a385-451d-8fad-a6d3852e2314
+    source: :Prince_Wolfgang_of_Hesse
+    type: :Man
+  AssignClass (f778317e-cc4c-4fe2-a82d-af652a06fd74)
+ Call ID: f778317e-cc4c-4fe2-a82d-af652a06fd74
   Args:
-    source: Filip Karađorđević
-    target: Peter
-    relation: :hasBrother
-  AddTriple (5aecdad5-0aeb-4ee2-a02d-ce6d38404883)
- Call ID: 5aecdad5-0aeb-4ee2-a02d-ce6d38404883
+    source: :Prince_Wolfgang_of_Hesse
+    type: :Person
+  AddLiteral (c6e93f5b-476c-47b1-b8ab-9fb86dc98fb9)
+ Call ID: c6e93f5b-476c-47b1-b8ab-9fb86dc98fb9
   Args:
-    source: Sol María de la Blanca Medina y Orléans-Braganza
-    relation: :hasMother
-    target: Maria da Gloria
-  AddTriple (57b26a16-8978-4b46-9e38-4cd25a87111f)
- Call ID: 57b26a16-8978-4b46-9e38-4cd25a87111f
+    literal_value: 1896
+    source: :Prince_Wolfgang_of_Hesse
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (ca576dd8-7b7e-4ec6-83e5-92576404deab)
+ Call ID: ca576dd8-7b7e-4ec6-83e5-92576404deab
   Args:
-    relation: :hasMother
-    target: Maria da Gloria
-    source: Ana Luna Medina y Orléans-Braganza
-  Finish (f59c9e5e-2cde-45db-b4d4-3c0b5052d491)
- Call ID: f59c9e5e-2cde-45db-b4d4-3c0b5052d491
+    relation: :hasDeathYear
+    source: :Prince_Wolfgang_of_Hesse
+    literal_value: 1989
+    literal_type: xsd:integer
+  AddLiteral (94042984-401e-488d-9ce8-8d90bf67d4de)
+ Call ID: 94042984-401e-488d-9ce8-8d90bf67d4de
   Args:
+    literal_value: 1924
+    source: :Princess_Marie_Alexandra_of_Baden
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AddTriple (f2a6ccea-e3a0-46f9-a0f6-83173532e931)
+ Call ID: f2a6ccea-e3a0-46f9-a0f6-83173532e931
+  Args:
+    relation: :hasRelation
+    source: :Princess_Marie_Alexandra_of_Baden
+    target: :Prince_Wolfgang_of_Hesse
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -617,35 +879,67 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ana_Luna_Medina_y_Orl%C3%A9ans-Braganza a :Woman ;
-      :hasMother data:Maria_da_Gloria .
+  data:Princess_Marie_Alexandra_of_Baden a :Person,
+          :Woman ;
+      :hasBirthYear 1902 ;
+      :hasDeathYear 1944 ;
+      :hasFather data:Prince_Maximilian_of_Baden ;
+      :hasMarriageYear 1924 ;
+      :hasMother data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+      :hasRelation data:Prince_Wolfgang_of_Hesse .
 
-  data:Marija a :Woman ;
-      :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
-      :hasMother data:Danica_Marinkovi%C4%87 .
+  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,
+          :Person .
 
-  data:Sol_Mar%C3%ADa_de_la_Blanca_Medina_y_Orl%C3%A9ans-Braganza a :Woman ;
-      :hasMother data:Maria_da_Gloria .
+  data:Grand_Duchess_Maria_Nikolaevna a :Person,
+          :Woman ;
+      :hasBirthYear 1819 ;
+      :hasDeathYear 1876 .
 
-  data:Stefan a :Man ;
-      :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
-      :hasMother data:Danica_Marinkovi%C4%87 .
+  data:Maximilian_Duke_of_Leuchtenberg a :Man,
+          :Person ;
+      :hasBirthYear 1817 ;
+      :hasDeathYear 1852 .
 
-  data:Alexander_%28Crown_Prince%29 a :Man .
+  data:Prince_Maximilian_of_Baden a :Man,
+          :Person ;
+      :hasBirthYear 1867 ;
+      :hasDeathYear 1929 ;
+      :hasFather data:Prince_Wilhelm_of_Baden ;
+      :hasMother data:Princess_Maria_Maximilianovna_of_Leuchtenberg .
 
-  data:Peter a :Man .
+  data:Prince_Wilhelm_of_Baden a :Man,
+          :Person ;
+      :hasBirthYear 1829 ;
+      :hasDeathYear 1897 .
 
-  data:Danica_Marinkovi%C4%87 a :Woman .
+  data:Prince_Wolfgang_of_Hesse a :Man,
+          :Person ;
+      :hasBirthYear 1896 ;
+      :hasDeathYear 1989 .
 
-  data:Filip_Kara%C4%91or%C4%91evi%C4%87 a :Man ;
-      :hasBirthYear 1982 ;
-      :hasBrother data:Peter ;
-      :hasFather data:Alexander_%28Crown_Prince%29 ;
-      :hasMother data:Maria_da_Gloria .
+  data:Princess_Maria_Maximilianovna_of_Leuchtenberg a :Person,
+          :Woman ;
+      :hasBirthYear 1841 ;
+      :hasDeathYear 1914 ;
+      :hasFather data:Maximilian_Duke_of_Leuchtenberg ;
+      :hasMother data:Grand_Duchess_Maria_Nikolaevna .
 
-  data:Maria_da_Gloria a :Woman .
+  data:Princess_Marie_Louise_of_Hanover_and_Cumberland a :Person,
+          :Woman ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1948 ;
+      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (aa13d54f-a5e5-4ca3-a3f7-4741aca754bc)
+ Call ID: aa13d54f-a5e5-4ca3-a3f7-4741aca754bc
+  Args:
 
 ================================= Tool Message =================================
 
@@ -655,206 +949,182 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (de337378-7be9-4188-8bc7-872ba42fd1a9)
- Call ID: de337378-7be9-4188-8bc7-872ba42fd1a9
+  ValidateShacl (b3224691-b4b6-4c67-844a-e36f01b1941d)
+ Call ID: b3224691-b4b6-4c67-844a-e36f01b1941d
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:24
+Total violations:21
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Alexander_(Crown_Prince) is not assigned the class :Ancestor required by the hasFather property of Filip_Karađorđević.
+      The value node Prince_Wilhelm_of_Baden for property :hasFather is not correctly typed as an :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_(Crown_Prince), :Ancestor)
+      AssignClass(Prince_Wilhelm_of_Baden, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Filip_Karađorđević is not assigned the class :Ancestor required by the hasFather property of Stefan.
+      The value node Princess_Maria_Maximilianovna_of_Leuchtenberg for property :hasMother is not correctly typed as an :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Filip_Karađorđević, :Ancestor)
+      AssignClass(Princess_Maria_Maximilianovna_of_Leuchtenberg, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria is not assigned the class :Ancestor required by the hasMother property of Filip_Karađorđević.
+      The value node Maximilian_Duke_of_Leuchtenberg for property :hasFather is not correctly typed as an :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
+      AssignClass(Maximilian_Duke_of_Leuchtenberg, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Danica_Marinković is not assigned the class :Ancestor required by the hasMother property of Stefan.
+      The value node Prince_Maximilian_of_Baden for property :hasFather is not correctly typed as an :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Danica_Marinković, :Ancestor)
+      AssignClass(Prince_Maximilian_of_Baden, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Filip_Karađorđević is not assigned the class :Ancestor required by the hasFather property of Marija.
+      The value node Ernest_Augustus_Crown_Prince_of_Hanover for property :hasFather is not correctly typed as an :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Filip_Karađorđević, :Ancestor)
+      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Alexander_(Crown_Prince) is not assigned the class :Ancestor required by the hasFather property of Filip_Karađorđević.
+      The value node Prince_Wilhelm_of_Baden for property :hasFather is not correctly typed as an :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_(Crown_Prince), :Ancestor)
+      AssignClass(Prince_Wilhelm_of_Baden, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Filip_Karađorđević is not assigned the class :Ancestor required by the hasFather property of Stefan.
+      The value node Grand_Duchess_Maria_Nikolaevna for property :hasMother is not correctly typed as an :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Filip_Karađorđević, :Ancestor)
+      AssignClass(Grand_Duchess_Maria_Nikolaevna, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria is not assigned the class :Ancestor required by the hasMother property of Sol_María_de_la_Blanca_Medina_y_Orléans-Braganza.
+      The value node Princess_Marie_Louise_of_Hanover_and_Cumberland for property :hasMother is not correctly typed as an :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
+      AssignClass(Princess_Marie_Louise_of_Hanover_and_Cumberland, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Danica_Marinković is not assigned the class :Ancestor required by the hasMother property of Marija.
+      The value node Princess_Maria_Maximilianovna_of_Leuchtenberg for property :hasMother is not correctly typed as an :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Danica_Marinković, :Ancestor)
+      AssignClass(Princess_Maria_Maximilianovna_of_Leuchtenberg, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria is not assigned the class :Ancestor required by the hasMother property of Filip_Karađorđević.
+      The value node Maximilian_Duke_of_Leuchtenberg for property :hasFather is not correctly typed as an :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
+      AssignClass(Maximilian_Duke_of_Leuchtenberg, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria is not assigned the class :Ancestor required by the hasMother property of Ana_Luna_Medina_y_Orléans-Braganza.
+      The value node Prince_Maximilian_of_Baden for property :hasFather is not correctly typed as an :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
+      AssignClass(Prince_Maximilian_of_Baden, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Danica_Marinković is not assigned the class :Ancestor required by the hasMother property of Stefan.
+      The value node Ernest_Augustus_Crown_Prince_of_Hanover for property :hasFather is not correctly typed as an :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Danica_Marinković, :Ancestor)
+      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Filip_Karađorđević is not assigned the class :Ancestor required by the hasFather property of Marija.
+      The value node Prince_Wilhelm_of_Baden for property :hasFather is not correctly typed as an :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Filip_Karađorđević, :Ancestor)
+      AssignClass(Prince_Wilhelm_of_Baden, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Alexander_(Crown_Prince) is not assigned the class :Ancestor required by the hasFather property of Filip_Karađorđević.
+      The value node Grand_Duchess_Maria_Nikolaevna for property :hasMother is not correctly typed as an :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_(Crown_Prince), :Ancestor)
+      AssignClass(Grand_Duchess_Maria_Nikolaevna, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Filip_Karađorđević is not assigned the class :Ancestor required by the hasFather property of Stefan.
+      The value node Princess_Marie_Louise_of_Hanover_and_Cumberland for property :hasMother is not correctly typed as an :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Filip_Karađorđević, :Ancestor)
+      AssignClass(Princess_Marie_Louise_of_Hanover_and_Cumberland, :Ancestor)
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria is not assigned the class :Ancestor required by the hasMother property of Sol_María_de_la_Blanca_Medina_y_Orléans-Braganza.
+      The value node Princess_Maria_Maximilianovna_of_Leuchtenberg for property :hasMother is not correctly typed as an :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
+      AssignClass(Princess_Maria_Maximilianovna_of_Leuchtenberg, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Danica_Marinković is not assigned the class :Ancestor required by the hasMother property of Marija.
+      The value node Maximilian_Duke_of_Leuchtenberg for property :hasFather is not correctly typed as an :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Danica_Marinković, :Ancestor)
+      AssignClass(Maximilian_Duke_of_Leuchtenberg, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria is not assigned the class :Ancestor required by the hasMother property of Filip_Karađorđević.
+      The value node Ernest_Augustus_Crown_Prince_of_Hanover for property :hasFather is not correctly typed as an :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
+      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
 
 
   Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria is not assigned the class :Ancestor required by the hasMother property of Ana_Luna_Medina_y_Orléans-Braganza.
+      The value node Prince_Maximilian_of_Baden for property :hasFather is not correctly typed as an :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
+      AssignClass(Prince_Maximilian_of_Baden, :Ancestor)
 
 
   Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Danica_Marinković is not assigned the class :Ancestor required by the hasMother property of Stefan.
+      The value node Grand_Duchess_Maria_Nikolaevna for property :hasMother is not correctly typed as an :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Danica_Marinković, :Ancestor)
+      AssignClass(Grand_Duchess_Maria_Nikolaevna, :Ancestor)
 
 
   Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Filip_Karađorđević is not assigned the class :Ancestor required by the hasFather property of Marija.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Filip_Karađorđević, :Ancestor)
-
-
-  Violation [22]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria is not assigned the class :Ancestor required by the hasMother property of Sol_María_de_la_Blanca_Medina_y_Orléans-Braganza.
+      The value node Princess_Marie_Louise_of_Hanover_and_Cumberland for property :hasMother is not correctly typed as an :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Maria_da_Gloria is not assigned the class :Ancestor required by the hasMother property of Ana_Luna_Medina_y_Orléans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_da_Gloria, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Danica_Marinković is not assigned the class :Ancestor required by the hasMother property of Marija.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Danica_Marinković, :Ancestor)
+      AssignClass(Princess_Marie_Louise_of_Hanover_and_Cumberland, :Ancestor)
 
 
 
@@ -863,29 +1133,53 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (15439b88-33cd-4566-ab8b-e7053829d993)
- Call ID: 15439b88-33cd-4566-ab8b-e7053829d993
+  AssignClass (f82d38c4-9464-4963-8fec-05aebae3b4d8)
+ Call ID: f82d38c4-9464-4963-8fec-05aebae3b4d8
+  Args:
+    source: :Prince_Wilhelm_of_Baden
+    type: :Ancestor
+  AssignClass (09bf7ef0-b794-4389-8157-1b08d3379b1b)
+ Call ID: 09bf7ef0-b794-4389-8157-1b08d3379b1b
   Args:
     type: :Ancestor
-    source: Alexander (Crown Prince)
-  AssignClass (ea196b46-62a3-44c8-ba39-df31a21d5535)
- Call ID: ea196b46-62a3-44c8-ba39-df31a21d5535
-  Args:
-    source: Filip Karađorđević
-    type: :Ancestor
-  AssignClass (6d7edc76-43f6-4b7f-beaa-3c8141e237be)
- Call ID: 6d7edc76-43f6-4b7f-beaa-3c8141e237be
+    source: :Princess_Maria_Maximilianovna_of_Leuchtenberg
+  AssignClass (85d27f91-9f45-458e-8749-f7d9df9430ab)
+ Call ID: 85d27f91-9f45-458e-8749-f7d9df9430ab
   Args:
     type: :Ancestor
-    source: Maria da Gloria
-  AssignClass (4947e712-e654-4e4c-84c6-11cbfa65ed0d)
- Call ID: 4947e712-e654-4e4c-84c6-11cbfa65ed0d
+    source: :Maximilian_Duke_of_Leuchtenberg
+  AssignClass (69c20104-cf99-453e-9551-b8a0fba3d542)
+ Call ID: 69c20104-cf99-453e-9551-b8a0fba3d542
   Args:
+    source: :Prince_Maximilian_of_Baden
     type: :Ancestor
-    source: Danica Marinković
-  ValidateShacl (a533a697-e6e6-45c3-908f-90f1be797dc9)
- Call ID: a533a697-e6e6-45c3-908f-90f1be797dc9
+  AssignClass (22be93a4-2b3c-4bc7-a779-b6a058db89d3)
+ Call ID: 22be93a4-2b3c-4bc7-a779-b6a058db89d3
   Args:
+    source: :Ernest_Augustus_Crown_Prince_of_Hanover
+    type: :Ancestor
+  AssignClass (03ef1a5e-8f47-43f4-b651-23900e677b5c)
+ Call ID: 03ef1a5e-8f47-43f4-b651-23900e677b5c
+  Args:
+    source: :Grand_Duchess_Maria_Nikolaevna
+    type: :Ancestor
+  AssignClass (1b8f91e9-6913-47e2-9985-4efa6b12c1be)
+ Call ID: 1b8f91e9-6913-47e2-9985-4efa6b12c1be
+  Args:
+    source: :Princess_Marie_Louise_of_Hanover_and_Cumberland
+    type: :Ancestor
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -906,39 +1200,74 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ana_Luna_Medina_y_Orl%C3%A9ans-Braganza a :Woman ;
-      :hasMother data:Maria_da_Gloria .
+  data:Princess_Marie_Alexandra_of_Baden a :Person,
+          :Woman ;
+      :hasBirthYear 1902 ;
+      :hasDeathYear 1944 ;
+      :hasFather data:Prince_Maximilian_of_Baden ;
+      :hasMarriageYear 1924 ;
+      :hasMother data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+      :hasRelation data:Prince_Wolfgang_of_Hesse .
 
-  data:Marija a :Woman ;
-      :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
-      :hasMother data:Danica_Marinkovi%C4%87 .
+  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Sol_Mar%C3%ADa_de_la_Blanca_Medina_y_Orl%C3%A9ans-Braganza a :Woman ;
-      :hasMother data:Maria_da_Gloria .
+  data:Grand_Duchess_Maria_Nikolaevna a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1819 ;
+      :hasDeathYear 1876 .
 
-  data:Stefan a :Man ;
-      :hasFather data:Filip_Kara%C4%91or%C4%91evi%C4%87 ;
-      :hasMother data:Danica_Marinkovi%C4%87 .
+  data:Maximilian_Duke_of_Leuchtenberg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1817 ;
+      :hasDeathYear 1852 .
 
-  data:Alexander_%28Crown_Prince%29 a :Ancestor,
-          :Man .
+  data:Prince_Maximilian_of_Baden a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1867 ;
+      :hasDeathYear 1929 ;
+      :hasFather data:Prince_Wilhelm_of_Baden ;
+      :hasMother data:Princess_Maria_Maximilianovna_of_Leuchtenberg .
 
-  data:Peter a :Man .
+  data:Prince_Wilhelm_of_Baden a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1829 ;
+      :hasDeathYear 1897 .
 
-  data:Danica_Marinkovi%C4%87 a :Ancestor,
-          :Woman .
+  data:Prince_Wolfgang_of_Hesse a :Man,
+          :Person ;
+      :hasBirthYear 1896 ;
+      :hasDeathYear 1989 .
 
-  data:Filip_Kara%C4%91or%C4%91evi%C4%87 a :Ancestor,
-          :Man ;
-      :hasBirthYear 1982 ;
-      :hasBrother data:Peter ;
-      :hasFather data:Alexander_%28Crown_Prince%29 ;
-      :hasMother data:Maria_da_Gloria .
+  data:Princess_Maria_Maximilianovna_of_Leuchtenberg a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1841 ;
+      :hasDeathYear 1914 ;
+      :hasFather data:Maximilian_Duke_of_Leuchtenberg ;
+      :hasMother data:Grand_Duchess_Maria_Nikolaevna .
 
-  data:Maria_da_Gloria a :Ancestor,
-          :Woman .
+  data:Princess_Marie_Louise_of_Hanover_and_Cumberland a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1948 ;
+      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (6b27a5cd-1287-4567-9289-8a85aacf2bf5)
+ Call ID: 6b27a5cd-1287-4567-9289-8a85aacf2bf5
+  Args:
 
 ================================= Tool Message =================================
 
@@ -948,6 +1277,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (a677a05c-e248-4aba-914e-e5a17410ad41)
- Call ID: a677a05c-e248-4aba-914e-e5a17410ad41
+  Finish (ca272f4b-d169-457a-9bf7-68ab8cf0a7b4)
+ Call ID: ca272f4b-d169-457a-9bf7-68ab8cf0a7b4
   Args:

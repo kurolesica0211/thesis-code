@@ -85,84 +85,41 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Friso of Orange-Nassau (Dutch: Johan Friso Bernhard Christiaan David van Oranje-Nassau van Amsberg; 25 September 1968 – 12 August 2013) was the second son of Queen Beatrix of the Netherlands and Claus von Amsberg, and younger brother of King Willem-Alexander.
-On 17 February 2012, Prince Friso was buried under an avalanche in Lech, Austria, while skiing off piste.
-On 12 August 2013, one and a half years after the accident, Prince Friso died from complications.
+Prince Tomislav of Yugoslavia (Serbian: Томислав Карађорђевић, Tomislav Karađorđević; 19 January 1928 – 12 July 2000) was a member of the House of Karađorđević, the second son of King Alexander I and Queen Maria of Yugoslavia.
+He was a younger brother of King Peter II of Yugoslavia and a former nephew-in-law to Queen Elizabeth II and Prince Philip.
 Early life and education
 
-Johan Friso Bernhard Christiaan David was born on 25 September 1968 at the Academic Hospital Utrecht (now the University Medical Center Utrecht) in Utrecht, Netherlands.
-He was the second son of Princess Beatrix and Prince Claus, and grandson of Queen Juliana of the Netherlands and Prince Bernhard.
-He had one older brother, current King Willem-Alexander of the Netherlands (b. 1967), and one younger brother, Prince Constantijn (b. 1969).
-His titles at birth were Prince of the Netherlands, Prince of Orange-Nassau, and Jonkheer van Amsberg.
-Prince Friso was baptized on 28 December 1968 in the Dom Church in Utrecht.
-His godparents were Prince Harald of Norway, Johan Christian Baron von Jenisch, Herman van Roijen, Queen Juliana of the Netherlands and Christina von Amsberg.
-Work
+Prince Tomislav was born on 19 January 1928, on Epiphany according to the Julian calendar used by the Serbian Orthodox Church, at 1 am, as the second son of the sovereign of the then Kingdom of Serbs, Croats and Slovenes (later the Kingdom of Yugoslavia), Alexander I and Queen Maria, the second daughter of King Ferdinand of Romania and his wife Queen Marie.
+He was baptized on 25 January in a salon of the New Palace in Belgrade, with the British Minister to the Yugoslav Court, Kennard, representing the godfather King George V, with water from the Vardar and Danube rivers and the Adriatic Sea.
+The Prince was named after Tomislav of Croatia, the King of medieval Croatia.
+At the beginning of February 1928, a delegation was sent from Županjac (present-day Tomislavgrad) headed by the parish priest Šimun Ančić who handed Alexander the resolution in which the population of the Srez of Županjac asks him to change the name of the srez to Tomislavgrad, in honour of his son and Tomislav of Croatia.
+Not long after, Alexander granted them their petition but dropped Tomislav of Croatia from his decree.
+He began his elementary education at the Belgrade Palace but in 1937 he started to attend Sandroyd School in Cobham, Surrey, and then, following the school's relocation, in Tollard Royal, Wiltshire.
+Events in Yugoslavia
 
-Prince Friso worked from 1995 to 1996 at the Amsterdam branch of the international management consultancy McKinsey.
-After completing an MBA-programme at INSEAD, Prince Friso worked from 1998 to 2003 as a vice president at Goldman Sachs International in London.
-From October 2006, Prince Friso was managing director in the London office of a private investment and advisory firm, Wolfensohn & Company.
-Prince Friso was a co-founder of the MRI Centre in Amsterdam and was also a founding shareholder of Wizzair, the largest low-cost airline in Eastern Europe.
-He was honorary chairman of the Prince Claus Fund for Culture and Development (a position he held together with his younger brother, Prince Constantijn).
-Prior to his accident, Prince Friso was working as a chief financial officer for URENCO, a uranium enrichment company.
-Marriage and children
+In 1934 when he was only six, Prince Tomislav's father, Alexander I, was assassinated and his elder brother Peter succeeded to the throne as King Peter II of Yugoslavia.
+As he was still only 11, because of his young age, a regency was established, headed by their father's cousin Prince Paul of Yugoslavia.
+After initially declaring neutrality, on 25 March 1941, although King Peter and his advisors were opposed to Nazi Germany, the Regent, Prince Paul, under immense German pressure signed the Tripartite Pact originally signed by Germany, Italy, and Japan.
+Postponing Operation Barbarossa, Germany simultaneously attacked Yugoslavia and Greece.
+Within a week, Germany, Bulgaria, Hungary and Italy invaded Yugoslavia and the government was forced to surrender on 17 April.
+Yugoslavia was divided to satisfy Italian, Bulgarian, Hungarian and German demands and puppet Croat, Montenegrin and Serb states proclaimed.
+However, in 1944, the Tito–Šubašić agreement recognised the Democratic Federal Yugoslavia as a provisional government, with the status of the monarchy to be decided at a later date.
+The Federal People's Republic of Yugoslavia was internationally recognized as Yugoslavia while Peter II became a pretender.
+Life in exile
 
-On 30 June 2003, it was announced that Prince Friso was to marry Mabel Wisse Smit.
-The Dutch cabinet, however, did not seek permission from parliament for this marriage, a constitutional requirement if Prince Friso was to remain a member of the Dutch Royal House and in line of succession for the throne; at the time, he was second in line after his older brother, Willem-Alexander.
-The Prime Minister Jan Peter Balkenende explained that this was due to discussions with Mabel Wisse Smit in October 2003, when she had admitted that her previous statements about an alleged relationship with Klaas Bruinsma (1953–1991), a known Dutch drug baron, had not been complete and accurate.
-They nevertheless married at Oude Kerk (Delft) on 24 April 2004, and Mabel Wisse Smit became a member of the Dutch Royal Family but not a member of the Dutch Royal House.
-Considering that his elder brother King Willem-Alexander has three daughters, Prince Friso's exclusion from the succession was unlikely to have an effect on the monarchy in the Netherlands.
-After their marriage, Prince Friso and his wife Princess Mabel set up home in London, in the suburb of Kew.
-The couple's first daughter, Countess Emma Luana Ninette Sophie of Orange-Nassau, Jonkvrouwe van Amsberg, was born on 26 March 2005 in London.
-Their second daughter, Countess Joanna Zaria Nicoline Milou of Orange-Nassau, Jonkvrouwe van Amsberg, was born on 18 June 2006, also in London.
-Avalanche accident
+After Cambridge, and not being able to return to Yugoslavia following the abolition of the monarchy, Prince Tomislav remained in the UK and devoted himself to fruit growing.
+Marriage and issue
 
-Accident
-
-On 17 February 2012, Prince Friso was buried under an avalanche in Lech, Austria, and he was taken to a hospital in Innsbruck.
-According to a formal statement of the Netherlands Government Information Service (RVD), a prognosis could be given only after some days.
-The prince's condition was described as "stable, but critical".
-Resulting complications
-
-The Dutch Royal Family issued a statement on 19 February saying "The Royal Family is very grateful and deeply touched by all expressions of support and sympathy after the ski accident of His Royal Highness Prince Friso.
-On 24 February, an Innsbruck medical team announced that the prince had been buried for 25 minutes, followed by a 50-minute CPR to treat his cardiac arrest.
-It remained unclear whether the prince would ever regain full consciousness.
-Koller said that the Prince's family might now look for a rehabilitation institution.
-On the same day the Dutch Royal Family issued a statement requesting that the privacy of the Prince's family be respected to enable them to come to terms with his condition.
-On 1 March 2012, Prince Friso was transferred to the Wellington Hospital, in London where he and his wife had lived for many years.
-On 19 November 2012, it was announced that the prince had started to show some signs of consciousness but it was still not certain whether he would ever wake up, and if he did, in what state.
-On 9 July 2013, Prince Friso was moved back to Huis ten Bosch in the Netherlands.
-Death and funeral
-
-On 12 August 2013, it was announced that Prince Friso had died in Huis ten Bosch of complications from the accident.
-He was buried on 16 August in the Dutch Reformed Cemetery in the hamlet of Lage Vuursche near Drakesteijn Castle, where he had spent his childhood and where Princess Beatrix returned to live in February 2014.
-Titles, styles and honours
-
-Titles and styles
-
-Under the Act on the Membership of the Royal House (2002), Prince Friso lost the title 'Prince of the Netherlands' by entering into a marriage without an Act of Consent.
-By a royal decree of 19 March 2004, Prince Friso was granted the surname 'Van Oranje-Nassau van Amsberg', the hereditary noble predicate 'Jonkheer (Jonkvrouw) van Amsberg and the hereditary title 'Count of Orange-Nassau', to take effect upon his marriage.
-By the same decree, he was allowed to retain his title 'Prince of Orange-Nassau' as a personal and non-hereditary title and the style of 'Royal Highness'.
-According to the notification of this Royal Decree, any children born to the couple were to receive the surname 'van Oranje-Nassau van Amsberg' and become a 'Count (Countess) of Orange-Nassau' and also have the noble predicate 'Jonkheer (Jonkvrouw) van Amsberg'.
-So his children had the same titles and names as those of Prince Constantijn, and showing that they belong to the royal family descending from Queen Beatrix and Prince Claus.
-Referred to from birth as Prince Johan-Friso, in 2004, the royal court announced that he had requested that he would henceforth be called "Prince Friso".
-Honours
-
-National
-
-Ancestry
-
-References
-
-External links
-
-2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
-3 title granted by Royal Decree to descendants of Princess Irene
+He was married on 5 June 1957, in Salem, Baden-Württemberg, West Germany, to Princess Margarita of Baden, niece of Prince Philip, Duke of Edinburgh.
+Tomislav and Margarita were divorced in 1981.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -178,39 +135,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -225,6 +152,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -242,6 +186,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -309,29 +268,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -340,6 +291,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -352,6 +311,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -360,17 +321,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -398,6 +361,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -413,291 +460,136 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (6f64846b-3b67-4e7f-93e8-96365f6892db)
- Call ID: 6f64846b-3b67-4e7f-93e8-96365f6892db
+  AssignClass (b120a965-8716-4e05-b155-26276a4ccfb5)
+ Call ID: b120a965-8716-4e05-b155-26276a4ccfb5
   Args:
-    source: Prince_Friso
+    source: :Prince_Tomislav_of_Yugoslavia
     type: :Man
-  AssignClass (36421403-110d-4cc7-955f-30e4c396d443)
- Call ID: 36421403-110d-4cc7-955f-30e4c396d443
+  AssignClass (563a4042-ee61-4345-9c6c-ed4d8ab7e83c)
+ Call ID: 563a4042-ee61-4345-9c6c-ed4d8ab7e83c
   Args:
-    source: Prince_Friso
+    source: :Prince_Tomislav_of_Yugoslavia
     type: :Person
-  AssignClass (c9a30810-ca82-45a4-a428-c734bcb739cb)
- Call ID: c9a30810-ca82-45a4-a428-c734bcb739cb
+  AddLiteral (30f9ff7d-b789-43fd-88ee-fb5eaad4815e)
+ Call ID: 30f9ff7d-b789-43fd-88ee-fb5eaad4815e
   Args:
-    source: Queen_Beatrix
-    type: :Woman
-  AssignClass (46667407-04e9-46d0-bd17-7795421415f7)
- Call ID: 46667407-04e9-46d0-bd17-7795421415f7
-  Args:
-    type: :Person
-    source: Queen_Beatrix
-  AssignClass (7182e7b1-8e08-4ed2-8de5-a95413f2add5)
- Call ID: 7182e7b1-8e08-4ed2-8de5-a95413f2add5
-  Args:
-    type: :Man
-    source: Claus_von_Amsberg
-  AssignClass (e62837ad-d727-421e-b53a-c1e126444088)
- Call ID: e62837ad-d727-421e-b53a-c1e126444088
-  Args:
-    source: Claus_von_Amsberg
-    type: :Person
-  AssignClass (26a9a8c8-9eb1-48d3-8ac9-65568f73fc3c)
- Call ID: 26a9a8c8-9eb1-48d3-8ac9-65568f73fc3c
-  Args:
-    type: :Man
-    source: King_Willem-Alexander
-  AssignClass (e4f4734e-64b4-4817-af0f-9223587a9c3c)
- Call ID: e4f4734e-64b4-4817-af0f-9223587a9c3c
-  Args:
-    type: :Person
-    source: King_Willem-Alexander
-  AssignClass (d5620bbc-74e9-4abe-a5ae-a8c79371067a)
- Call ID: d5620bbc-74e9-4abe-a5ae-a8c79371067a
-  Args:
-    source: Prince_Constantijn
-    type: :Man
-  AssignClass (2d22aa9b-a883-46a5-a76b-999d7589aa0a)
- Call ID: 2d22aa9b-a883-46a5-a76b-999d7589aa0a
-  Args:
-    type: :Person
-    source: Prince_Constantijn
-  AssignClass (4045dbc2-a95f-4850-9903-f5addb4b883f)
- Call ID: 4045dbc2-a95f-4850-9903-f5addb4b883f
-  Args:
-    source: Queen_Juliana
-    type: :Woman
-  AssignClass (072d660c-c159-46f6-91f0-6d78ef062559)
- Call ID: 072d660c-c159-46f6-91f0-6d78ef062559
-  Args:
-    source: Queen_Juliana
-    type: :Person
-  AssignClass (ed77c3d5-d0b1-4baf-8ea0-c9f81f66608b)
- Call ID: ed77c3d5-d0b1-4baf-8ea0-c9f81f66608b
-  Args:
-    type: :Man
-    source: Prince_Bernhard
-  AssignClass (7d1e2d3d-60b8-4820-af0c-4696427c00b2)
- Call ID: 7d1e2d3d-60b8-4820-af0c-4696427c00b2
-  Args:
-    type: :Person
-    source: Prince_Bernhard
-  AssignClass (9ebf30b4-0717-49cf-b029-cc72f4c84a9c)
- Call ID: 9ebf30b4-0717-49cf-b029-cc72f4c84a9c
-  Args:
-    source: Mabel_Wisse_Smit
-    type: :Woman
-  AssignClass (c558aff4-d5e5-4ad8-b82b-cf77f73c624c)
- Call ID: c558aff4-d5e5-4ad8-b82b-cf77f73c624c
-  Args:
-    source: Mabel_Wisse_Smit
-    type: :Person
-  AssignClass (8fb3ee16-add8-4fab-9e07-91105c699559)
- Call ID: 8fb3ee16-add8-4fab-9e07-91105c699559
-  Args:
-    source: Countess_Emma_Luana_Ninette_Sophie
-    type: :Woman
-  AssignClass (3a88613e-13d9-41c8-af20-2a35965c0938)
- Call ID: 3a88613e-13d9-41c8-af20-2a35965c0938
-  Args:
-    source: Countess_Emma_Luana_Ninette_Sophie
-    type: :Person
-  AssignClass (60801684-c33e-42d6-96b7-c8c803fd6b3d)
- Call ID: 60801684-c33e-42d6-96b7-c8c803fd6b3d
-  Args:
-    type: :Woman
-    source: Countess_Joanna_Zaria_Nicoline_Milou
-  AssignClass (135c8242-968f-4c12-b991-a4d79d380582)
- Call ID: 135c8242-968f-4c12-b991-a4d79d380582
-  Args:
-    source: Countess_Joanna_Zaria_Nicoline_Milou
-    type: :Person
-  AddLiteral (1bf4761d-27a8-4c69-ad25-812f2cbd995b)
- Call ID: 1bf4761d-27a8-4c69-ad25-812f2cbd995b
-  Args:
-    literal_value: Prince Friso
-    source: Prince_Friso
-    relation: :knownAs
-    literal_type: xsd:string
-  AddLiteral (5e1f2d9e-8bf3-49c4-a819-dc10a2fbcc77)
- Call ID: 5e1f2d9e-8bf3-49c4-a819-dc10a2fbcc77
-  Args:
-    literal_type: xsd:integer
+    source: :Prince_Tomislav_of_Yugoslavia
+    literal_value: 1928
     relation: :hasBirthYear
-    source: Prince_Friso
-    literal_value: 1968
-  AddLiteral (23ec2007-7424-4eb0-b004-ccc3f7cb038e)
- Call ID: 23ec2007-7424-4eb0-b004-ccc3f7cb038e
-  Args:
-    literal_value: 2013
-    source: Prince_Friso
-    relation: :hasDeathYear
     literal_type: xsd:integer
-  AddTriple (66d9ddde-bf9b-4011-859e-e7ff7b398a27)
- Call ID: 66d9ddde-bf9b-4011-859e-e7ff7b398a27
+  AddLiteral (b719e443-99f3-4d9e-bcde-e9119fdbb4a7)
+ Call ID: b719e443-99f3-4d9e-bcde-e9119fdbb4a7
   Args:
-    target: Queen_Beatrix
-    relation: :hasMother
-    source: Prince_Friso
-  AddTriple (eadb84db-981c-4970-8bb7-070dfc881664)
- Call ID: eadb84db-981c-4970-8bb7-070dfc881664
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: :Prince_Tomislav_of_Yugoslavia
+    literal_value: 2000
+  AssignClass (942e53fa-dd6d-40fc-80e7-e03e7b802d5f)
+ Call ID: 942e53fa-dd6d-40fc-80e7-e03e7b802d5f
   Args:
-    target: Claus_von_Amsberg
-    source: Prince_Friso
+    source: :King_Alexander_I_of_Yugoslavia
+    type: :Man
+  AssignClass (8dffec93-a736-4ede-ac63-6e429f58a383)
+ Call ID: 8dffec93-a736-4ede-ac63-6e429f58a383
+  Args:
+    source: :King_Alexander_I_of_Yugoslavia
+    type: :Person
+  AssignClass (29310782-d093-4961-b0d7-db2a9ebd27b2)
+ Call ID: 29310782-d093-4961-b0d7-db2a9ebd27b2
+  Args:
+    source: :Queen_Maria_of_Yugoslavia
+    type: :Woman
+  AssignClass (f8cdd7b0-8c43-4d49-96bf-e9476824db98)
+ Call ID: f8cdd7b0-8c43-4d49-96bf-e9476824db98
+  Args:
+    source: :Queen_Maria_of_Yugoslavia
+    type: :Person
+  AddTriple (94ad97c4-6eb3-4163-94b8-fe57a41f03c1)
+ Call ID: 94ad97c4-6eb3-4163-94b8-fe57a41f03c1
+  Args:
+    target: :King_Alexander_I_of_Yugoslavia
     relation: :hasFather
-  AddTriple (99ab986f-76a2-4835-a437-7ff8e33ec4b7)
- Call ID: 99ab986f-76a2-4835-a437-7ff8e33ec4b7
+    source: :Prince_Tomislav_of_Yugoslavia
+  AddTriple (12448ac9-4c40-4d52-a436-a1725b5b60f2)
+ Call ID: 12448ac9-4c40-4d52-a436-a1725b5b60f2
   Args:
-    target: King_Willem-Alexander
-    source: Prince_Friso
+    source: :Prince_Tomislav_of_Yugoslavia
+    relation: :hasMother
+    target: :Queen_Maria_of_Yugoslavia
+  AssignClass (65ea952f-d57d-4b6d-ad3b-280c2522866b)
+ Call ID: 65ea952f-d57d-4b6d-ad3b-280c2522866b
+  Args:
+    source: :King_Peter_II_of_Yugoslavia
+    type: :Man
+  AssignClass (a7b29b59-9460-4a37-8fe2-7d05d8500c70)
+ Call ID: a7b29b59-9460-4a37-8fe2-7d05d8500c70
+  Args:
+    source: :King_Peter_II_of_Yugoslavia
+    type: :Person
+  AddTriple (2c0d6e13-cc12-4187-872c-dfc72167f6eb)
+ Call ID: 2c0d6e13-cc12-4187-872c-dfc72167f6eb
+  Args:
+    target: :King_Peter_II_of_Yugoslavia
     relation: :isBrotherOf
-  AddTriple (3826128a-0e3d-4da2-8df6-be50c84c3b99)
- Call ID: 3826128a-0e3d-4da2-8df6-be50c84c3b99
+    source: :Prince_Tomislav_of_Yugoslavia
+  AssignClass (5f84800d-ba72-4d80-b2ab-7140fa814f12)
+ Call ID: 5f84800d-ba72-4d80-b2ab-7140fa814f12
   Args:
-    target: Prince_Constantijn
-    relation: :isBrotherOf
-    source: Prince_Friso
-  AddTriple (b4c2232f-cb26-463a-86e9-72b3434dff6f)
- Call ID: b4c2232f-cb26-463a-86e9-72b3434dff6f
+    source: :King_Ferdinand_of_Romania
+    type: :Man
+  AssignClass (dc57af3a-29b1-42a4-af87-09672491ad14)
+ Call ID: dc57af3a-29b1-42a4-af87-09672491ad14
   Args:
-    source: King_Willem-Alexander
-    relation: :hasMother
-    target: Queen_Beatrix
-  AddTriple (18208e2b-7d0b-4a95-b671-b956d7783ee8)
- Call ID: 18208e2b-7d0b-4a95-b671-b956d7783ee8
+    source: :King_Ferdinand_of_Romania
+    type: :Person
+  AssignClass (a3173a67-449e-4b23-a586-6de9df56f7de)
+ Call ID: a3173a67-449e-4b23-a586-6de9df56f7de
   Args:
-    target: Claus_von_Amsberg
+    source: :Queen_Marie_of_Romania
+    type: :Woman
+  AssignClass (2454cd32-0cb3-4116-80bb-4c05495e6fa0)
+ Call ID: 2454cd32-0cb3-4116-80bb-4c05495e6fa0
+  Args:
+    source: :Queen_Marie_of_Romania
+    type: :Person
+  AddTriple (ff3af9e3-63cf-44af-80b0-732f9e942da6)
+ Call ID: ff3af9e3-63cf-44af-80b0-732f9e942da6
+  Args:
+    target: :King_Ferdinand_of_Romania
+    source: :Queen_Maria_of_Yugoslavia
     relation: :hasFather
-    source: King_Willem-Alexander
-  AddTriple (18a9f969-e22a-4365-8f1a-dce9a1c16591)
- Call ID: 18a9f969-e22a-4365-8f1a-dce9a1c16591
+  AddTriple (78042cc4-2f84-457e-b1fb-d3e497e77948)
+ Call ID: 78042cc4-2f84-457e-b1fb-d3e497e77948
   Args:
-    target: Queen_Beatrix
+    source: :Queen_Maria_of_Yugoslavia
     relation: :hasMother
-    source: Prince_Constantijn
-  AddTriple (c3fc6df7-b2e9-4fee-bacc-e557ed44d913)
- Call ID: c3fc6df7-b2e9-4fee-bacc-e557ed44d913
+    target: :Queen_Marie_of_Romania
+  AssignClass (f6385e9d-9b86-40f4-8c6b-7498b09801d9)
+ Call ID: f6385e9d-9b86-40f4-8c6b-7498b09801d9
   Args:
-    relation: :hasFather
-    source: Prince_Constantijn
-    target: Claus_von_Amsberg
-  AddTriple (85aff00e-e3e3-4968-ba0b-feaee7672d30)
- Call ID: 85aff00e-e3e3-4968-ba0b-feaee7672d30
+    source: :Princess_Margarita_of_Baden
+    type: :Woman
+  AssignClass (4e96927f-bf75-4387-8bbd-0ff2714f2423)
+ Call ID: 4e96927f-bf75-4387-8bbd-0ff2714f2423
   Args:
-    target: Queen_Juliana
-    relation: :hasMother
-    source: Queen_Beatrix
-  AddTriple (135c83a8-6cfd-4daa-a4c4-bcbf0d4a19be)
- Call ID: 135c83a8-6cfd-4daa-a4c4-bcbf0d4a19be
+    source: :Princess_Margarita_of_Baden
+    type: :Person
+  AddLiteral (7763781d-022a-4e5e-8d09-255841f39d4c)
+ Call ID: 7763781d-022a-4e5e-8d09-255841f39d4c
   Args:
-    relation: :hasFather
-    source: Queen_Beatrix
-    target: Prince_Bernhard
-  AddTriple (3562660c-a4d1-4298-999e-a58f257519f6)
- Call ID: 3562660c-a4d1-4298-999e-a58f257519f6
-  Args:
-    relation: :hasMother
-    source: Countess_Emma_Luana_Ninette_Sophie
-    target: Mabel_Wisse_Smit
-  AddTriple (7de0d55f-b669-47e8-b9c4-c977b15f39dc)
- Call ID: 7de0d55f-b669-47e8-b9c4-c977b15f39dc
-  Args:
-    source: Countess_Emma_Luana_Ninette_Sophie
-    relation: :hasFather
-    target: Prince_Friso
-  AddTriple (3ece1bcc-a20f-4270-a5d6-f01935e0cb9d)
- Call ID: 3ece1bcc-a20f-4270-a5d6-f01935e0cb9d
-  Args:
-    source: Countess_Joanna_Zaria_Nicoline_Milou
-    relation: :hasMother
-    target: Mabel_Wisse_Smit
-  AddTriple (94810b89-77e4-4f84-b796-fcea1294fdb5)
- Call ID: 94810b89-77e4-4f84-b796-fcea1294fdb5
-  Args:
-    target: Prince_Friso
-    source: Countess_Joanna_Zaria_Nicoline_Milou
-    relation: :hasFather
-  AddLiteral (9cdb3cd3-ead7-4c72-bc56-847fc90b4d18)
- Call ID: 9cdb3cd3-ead7-4c72-bc56-847fc90b4d18
-  Args:
-    source: Prince_Friso
+    source: :Prince_Tomislav_of_Yugoslavia
+    literal_value: 1957
     relation: :hasMarriageYear
     literal_type: xsd:integer
-    literal_value: 2004
-  AddTriple (3b5af202-7f0a-40df-a5f3-478e2a28fa49)
- Call ID: 3b5af202-7f0a-40df-a5f3-478e2a28fa49
+  AddTriple (bd367960-e7f4-45cc-b9c9-f6ddc8d0b07f)
+ Call ID: bd367960-e7f4-45cc-b9c9-f6ddc8d0b07f
   Args:
-    target: Mabel_Wisse_Smit
-    source: Prince_Friso
+    source: :Prince_Tomislav_of_Yugoslavia
     relation: :hasRelation
-  Finish (bda93cb0-f103-4611-85dd-030a386e6f40)
- Call ID: bda93cb0-f103-4611-85dd-030a386e6f40
+    target: :Princess_Margarita_of_Baden
+  Finish (8b8d9123-8c2c-46f7-a93b-7c3e54e54f2e)
+ Call ID: 8b8d9123-8c2c-46f7-a93b-7c3e54e54f2e
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -794,54 +686,35 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Countess_Emma_Luana_Ninette_Sophie a :Person,
-          :Woman ;
-      :hasFather data:Prince_Friso ;
-      :hasMother data:Mabel_Wisse_Smit .
-
-  data:Countess_Joanna_Zaria_Nicoline_Milou a :Person,
-          :Woman ;
-      :hasFather data:Prince_Friso ;
-      :hasMother data:Mabel_Wisse_Smit .
-
-  data:King_Willem-Alexander a :Man,
+  data:Prince_Tomislav_of_Yugoslavia a :Man,
           :Person ;
-      :hasFather data:Claus_von_Amsberg ;
-      :hasMother data:Queen_Beatrix .
+      :hasBirthYear 1928 ;
+      :hasDeathYear 2000 ;
+      :hasFather data:King_Alexander_I_of_Yugoslavia ;
+      :hasMarriageYear 1957 ;
+      :hasMother data:Queen_Maria_of_Yugoslavia ;
+      :hasRelation data:Princess_Margarita_of_Baden ;
+      :isBrotherOf data:King_Peter_II_of_Yugoslavia .
 
-  data:Prince_Bernhard a :Man,
+  data:King_Alexander_I_of_Yugoslavia a :Man,
           :Person .
 
-  data:Prince_Constantijn a :Man,
-          :Person ;
-      :hasFather data:Claus_von_Amsberg ;
-      :hasMother data:Queen_Beatrix .
-
-  data:Queen_Juliana a :Person,
-          :Woman .
-
-  data:Prince_Friso a :Man,
-          :Person ;
-      :hasBirthYear 1968 ;
-      :hasDeathYear 2013 ;
-      :hasFather data:Claus_von_Amsberg ;
-      :hasMarriageYear 2004 ;
-      :hasMother data:Queen_Beatrix ;
-      :hasRelation data:Mabel_Wisse_Smit ;
-      :isBrotherOf data:King_Willem-Alexander,
-          data:Prince_Constantijn ;
-      :knownAs "Prince Friso"^^xsd:string .
-
-  data:Claus_von_Amsberg a :Man,
+  data:King_Ferdinand_of_Romania a :Man,
           :Person .
 
-  data:Mabel_Wisse_Smit a :Person,
+  data:King_Peter_II_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Princess_Margarita_of_Baden a :Person,
           :Woman .
 
-  data:Queen_Beatrix a :Person,
+  data:Queen_Maria_of_Yugoslavia a :Person,
           :Woman ;
-      :hasFather data:Prince_Bernhard ;
-      :hasMother data:Queen_Juliana .
+      :hasFather data:King_Ferdinand_of_Romania ;
+      :hasMother data:Queen_Marie_of_Romania .
+
+  data:Queen_Marie_of_Romania a :Person,
+          :Woman .
 
 
 
@@ -853,302 +726,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (32a3eeb8-5895-4f2e-9dd9-658dc14ecbba)
- Call ID: 32a3eeb8-5895-4f2e-9dd9-658dc14ecbba
+  ValidateShacl (515f6ca8-0f06-4c05-9853-16ea38c904fb)
+ Call ID: 515f6ca8-0f06-4c05-9853-16ea38c904fb
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:36
+Total violations:12
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Claus_von_Amsberg for the property :hasFather of Prince_Constantijn is not typed as an :Ancestor.
+      The node King_Alexander_I_of_Yugoslavia is missing the required class :Ancestor, which is expected as the value for the hasFather property of Prince_Tomislav_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Claus_von_Amsberg, :Ancestor)
+      AssignClass(King_Alexander_I_of_Yugoslavia, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Claus_von_Amsberg for the property :hasFather of King_Willem-Alexander is not typed as an :Ancestor.
+      The node Queen_Maria_of_Yugoslavia is missing the required class :Ancestor, which is expected as the value for the hasMother property of Prince_Tomislav_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Claus_von_Amsberg, :Ancestor)
+      AssignClass(Queen_Maria_of_Yugoslavia, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Claus_von_Amsberg for the property :hasFather of Prince_Friso is not typed as an :Ancestor.
+      The node King_Alexander_I_of_Yugoslavia is missing the required class :Ancestor, which is expected as the value for the hasFather property of Prince_Tomislav_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Claus_von_Amsberg, :Ancestor)
+      AssignClass(King_Alexander_I_of_Yugoslavia, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Queen_Beatrix for the property :hasMother of Prince_Constantijn is not typed as an :Ancestor.
+      The node King_Ferdinand_of_Romania is missing the required class :Ancestor, which is expected as the value for the hasFather property of Queen_Maria_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Beatrix, :Ancestor)
+      AssignClass(King_Ferdinand_of_Romania, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Queen_Beatrix for the property :hasMother of King_Willem-Alexander is not typed as an :Ancestor.
+      The node Queen_Maria_of_Yugoslavia is missing the required class :Ancestor, which is expected as the value for the hasMother property of Prince_Tomislav_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Beatrix, :Ancestor)
+      AssignClass(Queen_Maria_of_Yugoslavia, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Queen_Beatrix for the property :hasMother of Prince_Friso is not typed as an :Ancestor.
+      The node Queen_Marie_of_Romania is missing the required class :Ancestor, which is expected as the value for the hasMother property of Queen_Maria_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Beatrix, :Ancestor)
+      AssignClass(Queen_Marie_of_Romania, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Prince_Friso for the property :hasFather of Countess_Joanna_Zaria_Nicoline_Milou is not typed as an :Ancestor.
+      The node King_Alexander_I_of_Yugoslavia is missing the required class :Ancestor, which is expected as the value for the hasFather property of Prince_Tomislav_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Friso, :Ancestor)
+      AssignClass(King_Alexander_I_of_Yugoslavia, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Claus_von_Amsberg for the property :hasFather of Prince_Constantijn is not typed as an :Ancestor.
+      The node King_Ferdinand_of_Romania is missing the required class :Ancestor, which is expected as the value for the hasFather property of Queen_Maria_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Claus_von_Amsberg, :Ancestor)
+      AssignClass(King_Ferdinand_of_Romania, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Claus_von_Amsberg for the property :hasFather of King_Willem-Alexander is not typed as an :Ancestor.
+      The node Queen_Maria_of_Yugoslavia is missing the required class :Ancestor, which is expected as the value for the hasMother property of Prince_Tomislav_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Claus_von_Amsberg, :Ancestor)
+      AssignClass(Queen_Maria_of_Yugoslavia, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Prince_Bernhard for the property :hasFather of Queen_Beatrix is not typed as an :Ancestor.
+      The node Queen_Marie_of_Romania is missing the required class :Ancestor, which is expected as the value for the hasMother property of Queen_Maria_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Bernhard, :Ancestor)
+      AssignClass(Queen_Marie_of_Romania, :Ancestor)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Prince_Friso for the property :hasFather of Countess_Emma_Luana_Ninette_Sophie is not typed as an :Ancestor.
+      The node King_Ferdinand_of_Romania is missing the required class :Ancestor, which is expected as the value for the hasFather property of Queen_Maria_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Friso, :Ancestor)
+      AssignClass(King_Ferdinand_of_Romania, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Claus_von_Amsberg for the property :hasFather of Prince_Friso is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Claus_von_Amsberg, :Ancestor)
-
-
-  Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Mabel_Wisse_Smit for the property :hasMother of Countess_Joanna_Zaria_Nicoline_Milou is not typed as an :Ancestor.
+      The node Queen_Marie_of_Romania is missing the required class :Ancestor, which is expected as the value for the hasMother property of Queen_Maria_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mabel_Wisse_Smit, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Queen_Beatrix for the property :hasMother of Prince_Constantijn is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Beatrix, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Queen_Beatrix for the property :hasMother of King_Willem-Alexander is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Beatrix, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Queen_Juliana for the property :hasMother of Queen_Beatrix is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Juliana, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Mabel_Wisse_Smit for the property :hasMother of Countess_Emma_Luana_Ninette_Sophie is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mabel_Wisse_Smit, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Queen_Beatrix for the property :hasMother of Prince_Friso is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Beatrix, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Claus_von_Amsberg for the property :hasFather of Prince_Constantijn is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Claus_von_Amsberg, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Claus_von_Amsberg for the property :hasFather of King_Willem-Alexander is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Claus_von_Amsberg, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Bernhard for the property :hasFather of Queen_Beatrix is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Bernhard, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Friso for the property :hasFather of Countess_Emma_Luana_Ninette_Sophie is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Friso, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Friso for the property :hasFather of Countess_Joanna_Zaria_Nicoline_Milou is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Friso, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Claus_von_Amsberg for the property :hasFather of Prince_Friso is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Claus_von_Amsberg, :Ancestor)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Queen_Beatrix for the property :hasMother of Prince_Constantijn is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Beatrix, :Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Queen_Beatrix for the property :hasMother of King_Willem-Alexander is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Beatrix, :Ancestor)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Queen_Juliana for the property :hasMother of Queen_Beatrix is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Juliana, :Ancestor)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Mabel_Wisse_Smit for the property :hasMother of Countess_Emma_Luana_Ninette_Sophie is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mabel_Wisse_Smit, :Ancestor)
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Mabel_Wisse_Smit for the property :hasMother of Countess_Joanna_Zaria_Nicoline_Milou is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mabel_Wisse_Smit, :Ancestor)
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Queen_Beatrix for the property :hasMother of Prince_Friso is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Beatrix, :Ancestor)
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Bernhard for the property :hasFather of Queen_Beatrix is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Bernhard, :Ancestor)
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Friso for the property :hasFather of Countess_Joanna_Zaria_Nicoline_Milou is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Friso, :Ancestor)
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Friso for the property :hasFather of Countess_Emma_Luana_Ninette_Sophie is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Friso, :Ancestor)
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Queen_Juliana for the property :hasMother of Queen_Beatrix is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Juliana, :Ancestor)
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Mabel_Wisse_Smit for the property :hasMother of Countess_Joanna_Zaria_Nicoline_Milou is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mabel_Wisse_Smit, :Ancestor)
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Mabel_Wisse_Smit for the property :hasMother of Countess_Emma_Luana_Ninette_Sophie is not typed as an :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mabel_Wisse_Smit, :Ancestor)
+      AssignClass(Queen_Marie_of_Romania, :Ancestor)
 
 
 
@@ -1157,47 +838,29 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (d7c0b807-4bb4-4d39-84ba-06731ee5c5cb)
- Call ID: d7c0b807-4bb4-4d39-84ba-06731ee5c5cb
+  AssignClass (b7d78948-40b5-4c19-8904-d65606548f86)
+ Call ID: b7d78948-40b5-4c19-8904-d65606548f86
   Args:
-    source: Claus_von_Amsberg
+    source: :King_Alexander_I_of_Yugoslavia
     type: :Ancestor
-  AssignClass (d9d891f0-a313-4db2-a36c-c58cdc07f767)
- Call ID: d9d891f0-a313-4db2-a36c-c58cdc07f767
-  Args:
-    source: Queen_Beatrix
-    type: :Ancestor
-  AssignClass (74253be6-f672-4e7f-b983-832ac567d941)
- Call ID: 74253be6-f672-4e7f-b983-832ac567d941
-  Args:
-    source: Prince_Friso
-    type: :Ancestor
-  AssignClass (3827d38b-56a9-4a71-8b59-f14bc2d00e17)
- Call ID: 3827d38b-56a9-4a71-8b59-f14bc2d00e17
+  AssignClass (276d25e2-8361-4127-bcf3-ff8bb04a0c82)
+ Call ID: 276d25e2-8361-4127-bcf3-ff8bb04a0c82
   Args:
     type: :Ancestor
-    source: Prince_Bernhard
-  AssignClass (5cb78ff8-7212-4acd-af97-955a9f6ecc86)
- Call ID: 5cb78ff8-7212-4acd-af97-955a9f6ecc86
+    source: :Queen_Maria_of_Yugoslavia
+  AssignClass (13116897-6517-4f37-8ccb-845ebc1b7796)
+ Call ID: 13116897-6517-4f37-8ccb-845ebc1b7796
   Args:
     type: :Ancestor
-    source: Queen_Juliana
-  AssignClass (c115dd1f-9d3f-48ef-ae9f-c0f3fc7855c0)
- Call ID: c115dd1f-9d3f-48ef-ae9f-c0f3fc7855c0
+    source: :King_Ferdinand_of_Romania
+  AssignClass (0ccf8f70-d200-46f1-b04d-8cba3039def5)
+ Call ID: 0ccf8f70-d200-46f1-b04d-8cba3039def5
   Args:
-    source: Mabel_Wisse_Smit
+    source: :Queen_Marie_of_Romania
     type: :Ancestor
-  Finish (93fac720-e7eb-4a41-98ce-8fd9a009ef83)
- Call ID: 93fac720-e7eb-4a41-98ce-8fd9a009ef83
+  Finish (ce30d73d-96ca-4b48-a891-09643d6f5401)
+ Call ID: ce30d73d-96ca-4b48-a891-09643d6f5401
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1218,60 +881,39 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Countess_Emma_Luana_Ninette_Sophie a :Person,
-          :Woman ;
-      :hasFather data:Prince_Friso ;
-      :hasMother data:Mabel_Wisse_Smit .
-
-  data:Countess_Joanna_Zaria_Nicoline_Milou a :Person,
-          :Woman ;
-      :hasFather data:Prince_Friso ;
-      :hasMother data:Mabel_Wisse_Smit .
-
-  data:King_Willem-Alexander a :Man,
+  data:Prince_Tomislav_of_Yugoslavia a :Man,
           :Person ;
-      :hasFather data:Claus_von_Amsberg ;
-      :hasMother data:Queen_Beatrix .
+      :hasBirthYear 1928 ;
+      :hasDeathYear 2000 ;
+      :hasFather data:King_Alexander_I_of_Yugoslavia ;
+      :hasMarriageYear 1957 ;
+      :hasMother data:Queen_Maria_of_Yugoslavia ;
+      :hasRelation data:Princess_Margarita_of_Baden ;
+      :isBrotherOf data:King_Peter_II_of_Yugoslavia .
 
-  data:Prince_Bernhard a :Ancestor,
+  data:King_Alexander_I_of_Yugoslavia a :Ancestor,
           :Man,
           :Person .
 
-  data:Prince_Constantijn a :Man,
-          :Person ;
-      :hasFather data:Claus_von_Amsberg ;
-      :hasMother data:Queen_Beatrix .
-
-  data:Queen_Juliana a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_Friso a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1968 ;
-      :hasDeathYear 2013 ;
-      :hasFather data:Claus_von_Amsberg ;
-      :hasMarriageYear 2004 ;
-      :hasMother data:Queen_Beatrix ;
-      :hasRelation data:Mabel_Wisse_Smit ;
-      :isBrotherOf data:King_Willem-Alexander,
-          data:Prince_Constantijn ;
-      :knownAs "Prince Friso"^^xsd:string .
-
-  data:Claus_von_Amsberg a :Ancestor,
+  data:King_Ferdinand_of_Romania a :Ancestor,
           :Man,
           :Person .
 
-  data:Mabel_Wisse_Smit a :Ancestor,
-          :Person,
+  data:King_Peter_II_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Princess_Margarita_of_Baden a :Person,
           :Woman .
 
-  data:Queen_Beatrix a :Ancestor,
+  data:Queen_Maria_of_Yugoslavia a :Ancestor,
           :Person,
           :Woman ;
-      :hasFather data:Prince_Bernhard ;
-      :hasMother data:Queen_Juliana .
+      :hasFather data:King_Ferdinand_of_Romania ;
+      :hasMother data:Queen_Marie_of_Romania .
+
+  data:Queen_Marie_of_Romania a :Ancestor,
+          :Person,
+          :Woman .
 
 
 
@@ -1283,8 +925,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (75b0d722-a4b2-45dd-8062-e4548e215f09)
- Call ID: 75b0d722-a4b2-45dd-8062-e4548e215f09
+  ValidateShacl (ec21adaa-b66d-4d68-8d77-55a53e1b83cc)
+ Call ID: ec21adaa-b66d-4d68-8d77-55a53e1b83cc
   Args:
 
 ================================= Tool Message =================================
@@ -1295,6 +937,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (b539ebfd-2bc5-4327-b0eb-44de9be75cc0)
- Call ID: b539ebfd-2bc5-4327-b0eb-44de9be75cc0
+  Finish (602ee72e-0975-4e1b-9383-cd77d206a424)
+ Call ID: 602ee72e-0975-4e1b-9383-cd77d206a424
   Args:

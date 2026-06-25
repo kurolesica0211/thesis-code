@@ -104,6 +104,8 @@ They had two children: Zenouska May Mowatt (born 26 May 1990), and Christian Ale
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -119,39 +121,9 @@ They had two children: Zenouska May Mowatt (born 26 May 1990), and Christian Ale
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -166,6 +138,23 @@ They had two children: Zenouska May Mowatt (born 26 May 1990), and Christian Ale
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -183,6 +172,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -250,29 +254,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -281,6 +277,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -293,6 +297,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -301,17 +307,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -339,6 +347,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -354,184 +446,155 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ee902bfe-3d93-439d-ac38-858be0cd945c)
- Call ID: ee902bfe-3d93-439d-ac38-858be0cd945c
+  AssignClass (bd2807f3-992f-4e78-87c3-791e0de425e0)
+ Call ID: bd2807f3-992f-4e78-87c3-791e0de425e0
   Args:
+    source: :Marina_Ogilvy
     type: :Woman
-    source: Marina_Victoria_Alexandra_Ogilvy
-  AssignClass (83948aa1-8e12-4f17-835b-0b2bc2e9c543)
- Call ID: 83948aa1-8e12-4f17-835b-0b2bc2e9c543
-  Args:
-    source: Marina_Victoria_Alexandra_Ogilvy
-    type: :Person
-  AssignClass (10d30b1d-d8cf-4455-8975-e2a1b6c0aa5a)
- Call ID: 10d30b1d-d8cf-4455-8975-e2a1b6c0aa5a
-  Args:
-    type: :Man
-    source: Sir_Angus_Ogilvy
-  AssignClass (0efc1f62-845c-4552-a060-cc586501ff50)
- Call ID: 0efc1f62-845c-4552-a060-cc586501ff50
-  Args:
-    source: Sir_Angus_Ogilvy
-    type: :Person
-  AssignClass (14ecedd0-14a4-4c14-91b7-5cb4fe9b340e)
- Call ID: 14ecedd0-14a4-4c14-91b7-5cb4fe9b340e
-  Args:
-    type: :Ancestor
-    source: Sir_Angus_Ogilvy
-  AssignClass (191a8fa1-d017-4713-bc96-033a88de85a7)
- Call ID: 191a8fa1-d017-4713-bc96-033a88de85a7
-  Args:
-    type: :Woman
-    source: Princess_Alexandra_of_Kent
-  AssignClass (5d11c708-fe59-4276-8397-1ab9423a7f96)
- Call ID: 5d11c708-fe59-4276-8397-1ab9423a7f96
+  AssignClass (fd9d7892-75bf-425f-a478-f2b2f97040cb)
+ Call ID: fd9d7892-75bf-425f-a478-f2b2f97040cb
   Args:
     type: :Person
-    source: Princess_Alexandra_of_Kent
-  AssignClass (c20a8cbd-673d-43f5-a807-a2c9d7dcd78d)
- Call ID: c20a8cbd-673d-43f5-a807-a2c9d7dcd78d
+    source: :Marina_Ogilvy
+  AddLiteral (c177f342-0d7d-423e-967e-b8463ab66740)
+ Call ID: c177f342-0d7d-423e-967e-b8463ab66740
   Args:
-    source: Princess_Alexandra_of_Kent
-    type: :Ancestor
-  AssignClass (c35d613c-34e6-44f5-ba65-61c7479eb821)
- Call ID: c35d613c-34e6-44f5-ba65-61c7479eb821
-  Args:
-    source: James_Ogilvy
-    type: :Man
-  AssignClass (c526df80-d9c6-4862-9028-abf2e9f2b952)
- Call ID: c526df80-d9c6-4862-9028-abf2e9f2b952
-  Args:
-    source: James_Ogilvy
-    type: :Person
-  AssignClass (9e5d7f85-f8be-4143-96ea-18120d57c7ea)
- Call ID: 9e5d7f85-f8be-4143-96ea-18120d57c7ea
-  Args:
-    type: :Man
-    source: Paul_Julian_Mowatt
-  AssignClass (f06db6c4-0adb-4924-9fd3-71a662a37412)
- Call ID: f06db6c4-0adb-4924-9fd3-71a662a37412
-  Args:
-    type: :Person
-    source: Paul_Julian_Mowatt
-  AssignClass (17dabf9c-db5f-4e35-b3c3-9e3af9040a05)
- Call ID: 17dabf9c-db5f-4e35-b3c3-9e3af9040a05
-  Args:
-    type: :Woman
-    source: Zenouska_May_Mowatt
-  AssignClass (e75aae4d-d03e-4a78-bfec-36106284296c)
- Call ID: e75aae4d-d03e-4a78-bfec-36106284296c
-  Args:
-    source: Zenouska_May_Mowatt
-    type: :Person
-  AssignClass (3e1a381c-69a9-48e6-9cd6-954b0f41073b)
- Call ID: 3e1a381c-69a9-48e6-9cd6-954b0f41073b
-  Args:
-    source: Christian_Alexander_Mowatt
-    type: :Man
-  AssignClass (67905cf9-1bc6-4afc-98a5-fe20fbf59625)
- Call ID: 67905cf9-1bc6-4afc-98a5-fe20fbf59625
-  Args:
-    type: :Person
-    source: Christian_Alexander_Mowatt
-  AddLiteral (566f8ab0-c1f9-4cd6-892a-69a409b50e76)
- Call ID: 566f8ab0-c1f9-4cd6-892a-69a409b50e76
-  Args:
-    source: Marina_Victoria_Alexandra_Ogilvy
-    literal_type: xsd:integer
-    relation: :hasBirthYear
     literal_value: 1966
-  AddLiteral (8d142d73-b46a-44bd-b6cb-636cbddb0bdb)
- Call ID: 8d142d73-b46a-44bd-b6cb-636cbddb0bdb
-  Args:
+    source: :Marina_Ogilvy
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1964
-    source: James_Ogilvy
-  AddLiteral (53ff8013-5e25-4e8b-9b83-895a8a627b4e)
- Call ID: 53ff8013-5e25-4e8b-9b83-895a8a627b4e
+  AssignClass (f3e86fb7-d18f-4042-b0a9-63013b39cb18)
+ Call ID: f3e86fb7-d18f-4042-b0a9-63013b39cb18
   Args:
-    source: Paul_Julian_Mowatt
+    source: :Sir_Angus_Ogilvy
+    type: :Man
+  AssignClass (577a96b0-fb12-40fe-9540-0e0c6fd81106)
+ Call ID: 577a96b0-fb12-40fe-9540-0e0c6fd81106
+  Args:
+    source: :Sir_Angus_Ogilvy
+    type: :Person
+  AssignClass (fdec657b-1adc-4712-bad2-e4d73da736cd)
+ Call ID: fdec657b-1adc-4712-bad2-e4d73da736cd
+  Args:
+    source: :Princess_Alexandra_of_Kent
+    type: :Woman
+  AssignClass (cd14f80b-3b85-4cfe-8ef1-258c27d0ea7a)
+ Call ID: cd14f80b-3b85-4cfe-8ef1-258c27d0ea7a
+  Args:
+    source: :Princess_Alexandra_of_Kent
+    type: :Person
+  AddTriple (76636742-d9cb-4f0d-b962-89eea12eb263)
+ Call ID: 76636742-d9cb-4f0d-b962-89eea12eb263
+  Args:
+    source: :Sir_Angus_Ogilvy
+    target: :Marina_Ogilvy
+    relation: :isFatherOf
+  AddTriple (720e74e0-04b9-4f60-a95d-450b2f010f5f)
+ Call ID: 720e74e0-04b9-4f60-a95d-450b2f010f5f
+  Args:
+    source: :Princess_Alexandra_of_Kent
+    target: :Marina_Ogilvy
+    relation: :isMotherOf
+  AssignClass (5d0da3e3-13c4-448c-bb79-b30be7e92dcf)
+ Call ID: 5d0da3e3-13c4-448c-bb79-b30be7e92dcf
+  Args:
+    source: :James_Ogilvy
+    type: :Man
+  AssignClass (328d80a2-305e-4837-8fba-d58adaace00d)
+ Call ID: 328d80a2-305e-4837-8fba-d58adaace00d
+  Args:
+    type: :Person
+    source: :James_Ogilvy
+  AddTriple (4e346686-00c0-4153-827c-45a9e9de8814)
+ Call ID: 4e346686-00c0-4153-827c-45a9e9de8814
+  Args:
+    target: :James_Ogilvy
+    relation: :isFatherOf
+    source: :Sir_Angus_Ogilvy
+  AddTriple (c1b01208-9daa-4751-8995-e6d9c00e40e0)
+ Call ID: c1b01208-9daa-4751-8995-e6d9c00e40e0
+  Args:
+    target: :James_Ogilvy
+    relation: :isMotherOf
+    source: :Princess_Alexandra_of_Kent
+  AddLiteral (42286ef0-d34a-493c-a71e-7111ccf89afa)
+ Call ID: 42286ef0-d34a-493c-a71e-7111ccf89afa
+  Args:
+    literal_value: 1964
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: :James_Ogilvy
+  AssignClass (f27c1e6b-00dd-45fb-970c-b5a21a40b37c)
+ Call ID: f27c1e6b-00dd-45fb-970c-b5a21a40b37c
+  Args:
+    source: :Paul_Julian_Mowatt
+    type: :Man
+  AssignClass (ca8504b1-acd4-444c-8f62-f330c4f47ab0)
+ Call ID: ca8504b1-acd4-444c-8f62-f330c4f47ab0
+  Args:
+    type: :Person
+    source: :Paul_Julian_Mowatt
+  AddLiteral (b39b160f-0cf3-4825-9a47-4223f20b3b80)
+ Call ID: b39b160f-0cf3-4825-9a47-4223f20b3b80
+  Args:
+    source: :Paul_Julian_Mowatt
     relation: :hasBirthYear
     literal_type: xsd:integer
     literal_value: 1962
-  AddLiteral (693e48bd-a928-4ab9-8a5c-ea9991bddf78)
- Call ID: 693e48bd-a928-4ab9-8a5c-ea9991bddf78
+  AddLiteral (d8beab6b-70a9-4b92-b180-cf6af93cc80f)
+ Call ID: d8beab6b-70a9-4b92-b180-cf6af93cc80f
   Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
     literal_value: 1990
-    source: Zenouska_May_Mowatt
-  AddLiteral (6df17cc2-1336-42eb-a049-39af29c97df2)
- Call ID: 6df17cc2-1336-42eb-a049-39af29c97df2
-  Args:
+    source: :Marina_Ogilvy
     literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1993
-    source: Christian_Alexander_Mowatt
-  AddTriple (41cbf34f-641b-4fca-a0e1-2cf3a28905cd)
- Call ID: 41cbf34f-641b-4fca-a0e1-2cf3a28905cd
+    relation: :hasMarriageYear
+  AssignClass (57767db9-f8da-48ec-9544-afca161120d1)
+ Call ID: 57767db9-f8da-48ec-9544-afca161120d1
   Args:
-    source: Marina_Victoria_Alexandra_Ogilvy
-    target: Sir_Angus_Ogilvy
-    relation: :hasFather
-  AddTriple (328d8e93-1e11-4358-92f1-05ce7514608f)
- Call ID: 328d8e93-1e11-4358-92f1-05ce7514608f
+    source: :Zenouska_May_Mowatt
+    type: :Woman
+  AssignClass (d837f0b3-8589-4b9d-9063-cba8b1afdb82)
+ Call ID: d837f0b3-8589-4b9d-9063-cba8b1afdb82
   Args:
-    source: Marina_Victoria_Alexandra_Ogilvy
-    target: Princess_Alexandra_of_Kent
-    relation: :hasMother
-  AddTriple (61c8ea8c-bcf8-4da5-9987-50d3aa861b10)
- Call ID: 61c8ea8c-bcf8-4da5-9987-50d3aa861b10
+    source: :Zenouska_May_Mowatt
+    type: :Person
+  AddTriple (380cd57f-77d0-4f9f-b368-e29f5fdad965)
+ Call ID: 380cd57f-77d0-4f9f-b368-e29f5fdad965
   Args:
-    source: James_Ogilvy
-    relation: :hasFather
-    target: Sir_Angus_Ogilvy
-  AddTriple (86654228-450a-43dd-84d6-8ae23c6cf8c3)
- Call ID: 86654228-450a-43dd-84d6-8ae23c6cf8c3
+    source: :Paul_Julian_Mowatt
+    relation: :isFatherOf
+    target: :Zenouska_May_Mowatt
+  AddTriple (f3cf8c7a-2644-4294-9d86-718f8e21be36)
+ Call ID: f3cf8c7a-2644-4294-9d86-718f8e21be36
   Args:
-    target: Princess_Alexandra_of_Kent
-    relation: :hasMother
-    source: James_Ogilvy
-  AddTriple (f8fcf6f6-acdd-4665-a089-235fce784aeb)
- Call ID: f8fcf6f6-acdd-4665-a089-235fce784aeb
+    relation: :isMotherOf
+    target: :Zenouska_May_Mowatt
+    source: :Marina_Ogilvy
+  AssignClass (bb4e618b-19c7-4e87-bbc4-5d14e01dd988)
+ Call ID: bb4e618b-19c7-4e87-bbc4-5d14e01dd988
   Args:
-    source: Zenouska_May_Mowatt
-    relation: :hasFather
-    target: Paul_Julian_Mowatt
-  AddTriple (c06e92b5-d61d-4628-a74c-4abe847e5661)
- Call ID: c06e92b5-d61d-4628-a74c-4abe847e5661
+    type: :Man
+    source: :Christian_Alexander_Mowatt
+  AssignClass (1f2f5be0-2d9c-4126-b3ac-b3e43bc7ea2a)
+ Call ID: 1f2f5be0-2d9c-4126-b3ac-b3e43bc7ea2a
   Args:
-    relation: :hasMother
-    target: Marina_Victoria_Alexandra_Ogilvy
-    source: Zenouska_May_Mowatt
-  AddTriple (9f7a5600-a2f0-4f63-98f0-4288cbb48777)
- Call ID: 9f7a5600-a2f0-4f63-98f0-4288cbb48777
+    type: :Person
+    source: :Christian_Alexander_Mowatt
+  AddTriple (5ac704b7-09a6-43bf-b368-3bd9b38b5bc0)
+ Call ID: 5ac704b7-09a6-43bf-b368-3bd9b38b5bc0
   Args:
-    source: Christian_Alexander_Mowatt
-    relation: :hasFather
-    target: Paul_Julian_Mowatt
-  AddTriple (de19890f-4e85-4b92-a611-3e0e23fb0666)
- Call ID: de19890f-4e85-4b92-a611-3e0e23fb0666
+    source: :Paul_Julian_Mowatt
+    target: :Christian_Alexander_Mowatt
+    relation: :isFatherOf
+  AddTriple (bc6be46c-e251-4f11-ad03-dba17abd5edf)
+ Call ID: bc6be46c-e251-4f11-ad03-dba17abd5edf
   Args:
-    relation: :hasMother
-    target: Marina_Victoria_Alexandra_Ogilvy
-    source: Christian_Alexander_Mowatt
-  Finish (fcb9bb55-d1e2-49d9-9339-f8356f13d9f3)
- Call ID: fcb9bb55-d1e2-49d9-9339-f8356f13d9f3
+    target: :Christian_Alexander_Mowatt
+    relation: :isMotherOf
+    source: :Marina_Ogilvy
+  Finish (2464ad20-5fdd-49c2-aa82-cf8e3c2c2072)
+ Call ID: 2464ad20-5fdd-49c2-aa82-cf8e3c2c2072
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -640,41 +703,38 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Christian_Alexander_Mowatt a :Man,
+  data:Paul_Julian_Mowatt a :Man,
           :Person ;
-      :hasBirthYear 1993 ;
-      :hasFather data:Paul_Julian_Mowatt ;
-      :hasMother data:Marina_Victoria_Alexandra_Ogilvy .
+      :hasBirthYear 1962 ;
+      :isFatherOf data:Christian_Alexander_Mowatt,
+          data:Zenouska_May_Mowatt .
+
+  data:Princess_Alexandra_of_Kent a :Person,
+          :Woman ;
+      :isMotherOf data:James_Ogilvy,
+          data:Marina_Ogilvy .
+
+  data:Sir_Angus_Ogilvy a :Man,
+          :Person ;
+      :isFatherOf data:James_Ogilvy,
+          data:Marina_Ogilvy .
+
+  data:Christian_Alexander_Mowatt a :Man,
+          :Person .
 
   data:James_Ogilvy a :Man,
           :Person ;
-      :hasBirthYear 1964 ;
-      :hasFather data:Sir_Angus_Ogilvy ;
-      :hasMother data:Princess_Alexandra_of_Kent .
+      :hasBirthYear 1964 .
 
-  data:Zenouska_May_Mowatt a :Person,
-          :Woman ;
-      :hasBirthYear 1990 ;
-      :hasFather data:Paul_Julian_Mowatt ;
-      :hasMother data:Marina_Victoria_Alexandra_Ogilvy .
-
-  data:Marina_Victoria_Alexandra_Ogilvy a :Person,
+  data:Marina_Ogilvy a :Person,
           :Woman ;
       :hasBirthYear 1966 ;
-      :hasFather data:Sir_Angus_Ogilvy ;
-      :hasMother data:Princess_Alexandra_of_Kent .
+      :hasMarriageYear 1990 ;
+      :isMotherOf data:Christian_Alexander_Mowatt,
+          data:Zenouska_May_Mowatt .
 
-  data:Paul_Julian_Mowatt a :Man,
-          :Person ;
-      :hasBirthYear 1962 .
-
-  data:Princess_Alexandra_of_Kent a :Ancestor,
-          :Person,
+  data:Zenouska_May_Mowatt a :Person,
           :Woman .
-
-  data:Sir_Angus_Ogilvy a :Ancestor,
-          :Man,
-          :Person .
 
 
 
@@ -686,110 +746,46 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (dd149951-b4ff-4974-91ce-f6db2958b78f)
- Call ID: dd149951-b4ff-4974-91ce-f6db2958b78f
+  ValidateShacl (7ae5bfaf-b51f-4be4-9373-66cd0d20ed15)
+ Call ID: 7ae5bfaf-b51f-4be4-9373-66cd0d20ed15
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:4
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node Paul_Julian_Mowatt is referenced as a father, but it is not assigned the required ':Ancestor' class.
+      The node 'Paul_Julian_Mowatt' is missing the required class ':Ancestor' to participate in the 'isFatherOf' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_Julian_Mowatt, :Ancestor)
+      AssignClass(node='Paul_Julian_Mowatt', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node Marina_Victoria_Alexandra_Ogilvy is referenced as a mother, but it is not assigned the required ':Ancestor' class.
+      The node 'Sir_Angus_Ogilvy' is missing the required class ':Ancestor' to participate in the 'isFatherOf' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Marina_Victoria_Alexandra_Ogilvy, :Ancestor)
+      AssignClass(node='Sir_Angus_Ogilvy', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The node Paul_Julian_Mowatt is referenced as a father, but it is not assigned the required ':Ancestor' class.
+      The node 'Marina_Ogilvy' is missing the required class ':Ancestor' to participate in the 'isMotherOf' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_Julian_Mowatt, :Ancestor)
+      AssignClass(node='Marina_Ogilvy', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The node Paul_Julian_Mowatt is referenced as a father, but it is not assigned the required ':Ancestor' class.
+      The node 'Princess_Alexandra_of_Kent' is missing the required class ':Ancestor' to participate in the 'isMotherOf' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_Julian_Mowatt, :Ancestor)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marina_Victoria_Alexandra_Ogilvy is referenced as a mother, but it is not assigned the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Marina_Victoria_Alexandra_Ogilvy, :Ancestor)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marina_Victoria_Alexandra_Ogilvy is referenced as a mother, but it is not assigned the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Marina_Victoria_Alexandra_Ogilvy, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Paul_Julian_Mowatt is referenced as a father, but it is not assigned the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_Julian_Mowatt, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Paul_Julian_Mowatt is referenced as a father, but it is not assigned the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_Julian_Mowatt, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marina_Victoria_Alexandra_Ogilvy is referenced as a mother, but it is not assigned the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Marina_Victoria_Alexandra_Ogilvy, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marina_Victoria_Alexandra_Ogilvy is referenced as a mother, but it is not assigned the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Marina_Victoria_Alexandra_Ogilvy, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Paul_Julian_Mowatt is referenced as a father, but it is not assigned the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_Julian_Mowatt, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marina_Victoria_Alexandra_Ogilvy is referenced as a mother, but it is not assigned the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Marina_Victoria_Alexandra_Ogilvy, :Ancestor)
+      AssignClass(node='Princess_Alexandra_of_Kent', class=':Ancestor')
 
 
 
@@ -798,16 +794,34 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (c921a370-252b-4acd-a89d-a4caae17954e)
- Call ID: c921a370-252b-4acd-a89d-a4caae17954e
-  Args:
-    source: Paul_Julian_Mowatt
-    type: :Ancestor
-  AssignClass (3a50129e-e731-4f5f-8dbd-ad1708c57637)
- Call ID: 3a50129e-e731-4f5f-8dbd-ad1708c57637
+  AssignClass (fd99c8a7-044f-4850-a18b-126fec423c5b)
+ Call ID: fd99c8a7-044f-4850-a18b-126fec423c5b
   Args:
     type: :Ancestor
-    source: Marina_Victoria_Alexandra_Ogilvy
+    source: :Paul_Julian_Mowatt
+  AssignClass (07482ddc-7e4d-4035-aefa-2184544b270a)
+ Call ID: 07482ddc-7e4d-4035-aefa-2184544b270a
+  Args:
+    type: :Ancestor
+    source: :Sir_Angus_Ogilvy
+  AssignClass (c6525d95-aced-41a1-a0b9-28c37bc22cfa)
+ Call ID: c6525d95-aced-41a1-a0b9-28c37bc22cfa
+  Args:
+    source: :Marina_Ogilvy
+    type: :Ancestor
+  AssignClass (74049248-aa2a-4bd8-a11c-9c69f5d930a6)
+ Call ID: 74049248-aa2a-4bd8-a11c-9c69f5d930a6
+  Args:
+    type: :Ancestor
+    source: :Princess_Alexandra_of_Kent
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -820,43 +834,42 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Christian_Alexander_Mowatt a :Man,
-          :Person ;
-      :hasBirthYear 1993 ;
-      :hasFather data:Paul_Julian_Mowatt ;
-      :hasMother data:Marina_Victoria_Alexandra_Ogilvy .
-
-  data:James_Ogilvy a :Man,
-          :Person ;
-      :hasBirthYear 1964 ;
-      :hasFather data:Sir_Angus_Ogilvy ;
-      :hasMother data:Princess_Alexandra_of_Kent .
-
-  data:Zenouska_May_Mowatt a :Person,
-          :Woman ;
-      :hasBirthYear 1990 ;
-      :hasFather data:Paul_Julian_Mowatt ;
-      :hasMother data:Marina_Victoria_Alexandra_Ogilvy .
-
-  data:Marina_Victoria_Alexandra_Ogilvy a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1966 ;
-      :hasFather data:Sir_Angus_Ogilvy ;
-      :hasMother data:Princess_Alexandra_of_Kent .
-
   data:Paul_Julian_Mowatt a :Ancestor,
           :Man,
           :Person ;
-      :hasBirthYear 1962 .
+      :hasBirthYear 1962 ;
+      :isFatherOf data:Christian_Alexander_Mowatt,
+          data:Zenouska_May_Mowatt .
 
   data:Princess_Alexandra_of_Kent a :Ancestor,
           :Person,
-          :Woman .
+          :Woman ;
+      :isMotherOf data:James_Ogilvy,
+          data:Marina_Ogilvy .
 
   data:Sir_Angus_Ogilvy a :Ancestor,
           :Man,
+          :Person ;
+      :isFatherOf data:James_Ogilvy,
+          data:Marina_Ogilvy .
+
+  data:Christian_Alexander_Mowatt a :Man,
           :Person .
+
+  data:James_Ogilvy a :Man,
+          :Person ;
+      :hasBirthYear 1964 .
+
+  data:Marina_Ogilvy a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1966 ;
+      :hasMarriageYear 1990 ;
+      :isMotherOf data:Christian_Alexander_Mowatt,
+          data:Zenouska_May_Mowatt .
+
+  data:Zenouska_May_Mowatt a :Person,
+          :Woman .
 
 
 
@@ -864,8 +877,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (cad83e61-1072-464c-9da0-272e250ff45c)
- Call ID: cad83e61-1072-464c-9da0-272e250ff45c
+  ValidateShacl (008571b4-9dd8-4abd-9bb5-bcbfa04c7003)
+ Call ID: 008571b4-9dd8-4abd-9bb5-bcbfa04c7003
   Args:
 
 ================================= Tool Message =================================
@@ -876,6 +889,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5846fc60-62ed-4d52-b9cf-6349397e284b)
- Call ID: 5846fc60-62ed-4d52-b9cf-6349397e284b
+  Finish (80e0e328-8981-4fcf-bcba-efb917e5536a)
+ Call ID: 80e0e328-8981-4fcf-bcba-efb917e5536a
   Args:

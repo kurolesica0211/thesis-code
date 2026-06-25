@@ -2,39 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:King_Christian_X a :Man,
-        :Person .
-
-data:Prince_Henrik a :Man,
-        :Person .
-
-data:Prince_Vincent_of_Denmark a :Man,
+data:PrinceVincentOfDenmark a :Man,
         :Person ;
+    :hasAncestor data:KingChristianX ;
     :hasBirthYear 2011 ;
-    :hasBrother data:Crown_Prince_Christian ;
-    :hasFather data:King_Frederik_X ;
-    :hasMother data:Queen_Mary ;
-    :hasSister data:Princess_Isabella,
-        data:Princess_Josephine .
+    :hasFather data:KingFrederikX ;
+    :hasMother data:QueenMary ;
+    :isSiblingOf data:CrownPrinceChristian,
+        data:PrincessIsabella,
+        data:PrincessJosephine .
 
-data:Queen_Ingrid a :Person,
+data:QueenIngrid a :Person,
         :Woman .
 
-data:Queen_Margrethe_II a :Person,
-        :Woman .
-
-data:Crown_Prince_Christian a :Man,
+data:CrownPrinceChristian a :Man,
         :Person .
 
-data:King_Frederik_X a :Man,
+data:KingChristianX a :Man,
         :Person .
 
-data:Princess_Isabella a :Person,
+data:KingFrederikX a :Man,
+        :Person ;
+    :hasParent data:PrinceHenrik,
+        data:QueenMargretheII .
+
+data:PrinceHenrik a :Man,
+        :Person .
+
+data:PrincessIsabella a :Person,
         :Woman .
 
-data:Princess_Josephine a :Person,
+data:PrincessJosephine a :Person,
         :Woman .
 
-data:Queen_Mary a :Person,
+data:QueenMargretheII a :Person,
+        :Woman .
+
+data:QueenMary a :Person,
         :Woman .
 

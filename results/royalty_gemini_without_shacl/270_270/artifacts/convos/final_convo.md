@@ -69,31 +69,40 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Edward Edmund Maximilian George Windsor, Lord Downpatrick (born 2 December 1988), known professionally as Eddy Downpatrick, is a British travel consultant, fashion designer, and former financial analyst.
-As second-in-line to the Dukedom of Kent, he uses one of his grandfather's subsidiary titles, Baron Downpatrick, by courtesy.
-A second cousin once removed of Charles III, Downpatrick is the most senior member of the House of Windsor to be excluded from the line of succession to the British throne owing to his Roman Catholic faith.
-Early life and family
+Lady Sarah Frances Elizabeth Chatto (née Armstrong-Jones; born 1
+She is the only daughter of Princess Margaret, Countess of Snowdon, and Antony Armstrong-Jones, 1st Earl of Snowdon.
+She and her brother, David Armstrong-Jones, 2nd Earl of Snowdon, are the only maternal first cousins of King Charles III.
+Early life and education
 
-Edward Edmund Maximilian George Windsor was born on 2 December 1988 at St Mary's Hospital, London, and grew up in Cambridge.
-He is the eldest child of George Windsor, Earl of St Andrews, son and heir apparent of Prince Edward, Duke of Kent.
-Downpatrick's mother, Sylvana, Countess of St Andrews, a member by birth of the Austrian Tomaselli family, is a Canadian-born historian of Austro-Italian and French extraction.
-Downpatrick was educated at Eton College and matriculated at Keble College, Oxford, where he studied modern languages with a specialisation in French and German.
-Career
+Lady Sarah Frances Elizabeth Armstrong-Jones was born at 8:20 am on 1 May 1964 at Kensington Palace in London.
+She is the second child and only daughter of Princess Margaret and Antony Armstrong-Jones, 1st Earl of Snowdon.
+Sarah is a godmother to Prince Harry, Duke of Sussex, Lady Rose Gilman, and Lady Louise Windsor.
+She also has half-siblings on her father's side: Polly Fry (born 1960), Lady Frances Armstrong-Jones (born 1979), and Jasper Cable-Alexander (born 1998).
+Sarah and her brother, David, then Viscount Linley, grew up in the nursery of Kensington Palace, Apartment 10.
+Their parents' marriage was fractious; the couple formally separated when Sarah was 12 and divorced when she was 14.
+Holidays were given to the royal estates at Sandringham and Balmoral, where Sarah did landscape painting.
+Sarah was a bridesmaid at the wedding of her cousin Charles, Prince of Wales, and Lady Diana Spencer.
+The film's producer, her relative John Knatchbull, 7th Baron Brabourne (son-in-law of Louis Mountbatten, 1st Earl Mountbatten of Burma), gave her a job as an intern assisting the wardrobe department and studying wood gilding under her father's cousin Thomas Messel.
+Professional life
 
-Downpatrick first had the idea of launching a fashion brand while hiking in Scotland in 2009, but chose to focus on his studies and his career as a financial analyst at JP Morgan.
-In 2021, Downpatrick founded Aristeia Travel, a company that organises tours and expeditions to destinations across, Europe, Asia, Africa, and Latin America.
-Downpatrick is also a partner at Wheeler-Windsor Expeditions, alongside California native Jack Wheeler, offering curated expeditions to clients.
-Succession rights
+Chatto has been exhibiting her work, always under the name Sarah Armstrong-Jones, at The Redfern Gallery since 1995.
+Chatto does not undertake public duties and is not considered a "working royal".
+However, it has been reported that she was close to her aunt Queen Elizabeth II.
+Chatto is frequently seen attending public events such as jubilees and funerals, as well as semi-private royal family events, such as the Sandringham Christmas service, with her sons.
+Marriage and children
 
-In 2003, aged 15, following the example of his grandmother, the Duchess of Kent, and his uncle Lord Nicholas Windsor, Downpatrick – who had been baptised in the Church of England – chose to be confirmed into the Catholic Church.
-As a second cousin once removed of King Charles III, Downpatrick is the most senior person excluded from the line of succession for being a Catholic.
-Downpatrick remains second in the line of succession, after his father, to the Dukedom of Kent.
+Sarah met Daniel Chatto during her years in India with her father in the 1980s.
+Chatto was working on another British film, Heat and Dust.
+He is from a theatrical family, the son of actor Tom Chatto (1920–1982) and the theatrical agent Ros Chatto (born Rosalind Joan Thompson; died 2012).
+Her bridesmaids were half-sister Lady Frances, Zara Phillips (daughter of her first cousin Princess Anne), and Tara Noble-Singh, a family friend.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -109,39 +118,9 @@ Downpatrick remains second in the line of succession, after his father, to the D
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -156,6 +135,23 @@ Downpatrick remains second in the line of succession, after his father, to the D
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -173,6 +169,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -240,29 +251,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,6 +274,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -283,6 +294,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -291,17 +304,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -329,6 +344,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -344,78 +443,375 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (6d489ba4-856e-49d7-b782-92e2ad553519)
- Call ID: 6d489ba4-856e-49d7-b782-92e2ad553519
+  AssignClass (a933c8a3-66df-40d7-850f-02e1cbdde8dd)
+ Call ID: a933c8a3-66df-40d7-850f-02e1cbdde8dd
   Args:
-    type: :Man
-    source: Edward_Edmund_Maximilian_George_Windsor
-  AssignClass (5f41efc5-51f1-4ce6-ae28-16f6b09534d6)
- Call ID: 5f41efc5-51f1-4ce6-ae28-16f6b09534d6
-  Args:
-    type: :Person
-    source: Edward_Edmund_Maximilian_George_Windsor
-  AssignClass (0923100c-b30b-496f-bfef-28dbcbcf5837)
- Call ID: 0923100c-b30b-496f-bfef-28dbcbcf5837
-  Args:
-    source: George_Windsor_Earl_of_St_Andrews
-    type: :Man
-  AssignClass (fe5a8dd9-9944-45f1-a912-c9b166897f00)
- Call ID: fe5a8dd9-9944-45f1-a912-c9b166897f00
-  Args:
-    type: :Person
-    source: George_Windsor_Earl_of_St_Andrews
-  AssignClass (2da9a812-2eb7-4003-87ee-384e90e045ee)
- Call ID: 2da9a812-2eb7-4003-87ee-384e90e045ee
-  Args:
+    source: Sarah_Chatto
     type: :Woman
-    source: Sylvana_Countess_of_St_Andrews
-  AssignClass (1255c49f-8e91-45aa-82b8-892c7d4a5546)
- Call ID: 1255c49f-8e91-45aa-82b8-892c7d4a5546
+  AssignClass (ad451244-b3f3-4737-a644-b1d19bdbddad)
+ Call ID: ad451244-b3f3-4737-a644-b1d19bdbddad
   Args:
+    source: Sarah_Chatto
     type: :Person
-    source: Sylvana_Countess_of_St_Andrews
-  AssignClass (9e4aaaf7-5551-421f-9456-c89fdfb264b5)
- Call ID: 9e4aaaf7-5551-421f-9456-c89fdfb264b5
+  AddLiteral (594aa6b5-2bfb-4f35-a89b-80b5e8d01192)
+ Call ID: 594aa6b5-2bfb-4f35-a89b-80b5e8d01192
   Args:
-    type: :Man
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (775ed07e-a727-4679-a623-a55a7b6f966f)
- Call ID: 775ed07e-a727-4679-a623-a55a7b6f966f
-  Args:
-    type: :Person
-    source: Prince_Edward_Duke_of_Kent
-  AddLiteral (25b9696d-1bc0-4ff3-b615-204c4809674f)
- Call ID: 25b9696d-1bc0-4ff3-b615-204c4809674f
-  Args:
-    relation: :knownAs
-    literal_value: Eddy Downpatrick
-    source: Edward_Edmund_Maximilian_George_Windsor
-    literal_type: xsd:string
-  AddLiteral (801f4cbb-410b-4191-ac2a-5f295ad340cc)
- Call ID: 801f4cbb-410b-4191-ac2a-5f295ad340cc
-  Args:
-    source: Edward_Edmund_Maximilian_George_Windsor
     relation: :hasBirthYear
-    literal_value: 1988
+    source: Sarah_Chatto
+    literal_value: 1964
     literal_type: xsd:integer
-  AddTriple (ac2acd28-384b-4944-b13a-05d30b803762)
- Call ID: ac2acd28-384b-4944-b13a-05d30b803762
+  AddTriple (bbbc8e81-7545-4227-8990-2ba1210ee63a)
+ Call ID: bbbc8e81-7545-4227-8990-2ba1210ee63a
   Args:
-    target: George_Windsor_Earl_of_St_Andrews
-    relation: :hasFather
-    source: Edward_Edmund_Maximilian_George_Windsor
-  AddTriple (c18b72a8-2fa5-4666-a3a9-80e76d5df911)
- Call ID: c18b72a8-2fa5-4666-a3a9-80e76d5df911
-  Args:
-    source: Edward_Edmund_Maximilian_George_Windsor
+    source: Sarah_Chatto
     relation: :hasMother
-    target: Sylvana_Countess_of_St_Andrews
-  AddTriple (6c9d2938-7cea-4273-8c4b-96f88459d9f5)
- Call ID: 6c9d2938-7cea-4273-8c4b-96f88459d9f5
+    target: Princess_Margaret
+  AddTriple (a39d3368-850e-4049-b5ce-823b08154039)
+ Call ID: a39d3368-850e-4049-b5ce-823b08154039
   Args:
+    target: Antony_Armstrong-Jones
     relation: :hasFather
-    target: Prince_Edward_Duke_of_Kent
-    source: George_Windsor_Earl_of_St_Andrews
-  Finish (f1c310e7-8999-4de5-85f0-432817284a21)
- Call ID: f1c310e7-8999-4de5-85f0-432817284a21
+    source: Sarah_Chatto
+  AssignClass (12328348-da8f-4fa3-aada-40a96f72f4cf)
+ Call ID: 12328348-da8f-4fa3-aada-40a96f72f4cf
+  Args:
+    source: Princess_Margaret
+    type: :Woman
+  AssignClass (226b42a6-269a-4ca1-90d7-99567f5d801a)
+ Call ID: 226b42a6-269a-4ca1-90d7-99567f5d801a
+  Args:
+    source: Princess_Margaret
+    type: :Person
+  AssignClass (3d6daa2d-fcb1-4d92-a3d4-23d93e22cd62)
+ Call ID: 3d6daa2d-fcb1-4d92-a3d4-23d93e22cd62
+  Args:
+    source: Antony_Armstrong-Jones
+    type: :Man
+  AssignClass (a6b5a668-028f-44eb-983c-09f5a0a1d1e0)
+ Call ID: a6b5a668-028f-44eb-983c-09f5a0a1d1e0
+  Args:
+    source: Antony_Armstrong-Jones
+    type: :Person
+  AddTriple (e52465f3-9bb0-4e93-87ac-1021f2e28be0)
+ Call ID: e52465f3-9bb0-4e93-87ac-1021f2e28be0
+  Args:
+    target: David_Armstrong-Jones
+    source: Sarah_Chatto
+    relation: :hasBrother
+  AssignClass (59c6e687-7eec-44e5-8f1e-bc1911455855)
+ Call ID: 59c6e687-7eec-44e5-8f1e-bc1911455855
+  Args:
+    source: David_Armstrong-Jones
+    type: :Man
+  AssignClass (e8ceffe0-ee7e-410f-af59-cb56d6d6ecf0)
+ Call ID: e8ceffe0-ee7e-410f-af59-cb56d6d6ecf0
+  Args:
+    source: David_Armstrong-Jones
+    type: :Person
+  AddTriple (e138a21e-98b8-4a16-ad44-a11e844d1b6b)
+ Call ID: e138a21e-98b8-4a16-ad44-a11e844d1b6b
+  Args:
+    target: Antony_Armstrong-Jones
+    relation: :hasFather
+    source: David_Armstrong-Jones
+  AddTriple (18c14d19-e05e-4c52-af89-a0a7cd4569be)
+ Call ID: 18c14d19-e05e-4c52-af89-a0a7cd4569be
+  Args:
+    source: David_Armstrong-Jones
+    relation: :hasMother
+    target: Princess_Margaret
+  AddTriple (80f00d0e-b24a-4f92-ad00-4cfed1b04223)
+ Call ID: 80f00d0e-b24a-4f92-ad00-4cfed1b04223
+  Args:
+    source: Polly_Fry
+    relation: :hasFather
+    target: Antony_Armstrong-Jones
+  AddTriple (f440a1a5-af6b-4b51-b0ae-cacf7c0261be)
+ Call ID: f440a1a5-af6b-4b51-b0ae-cacf7c0261be
+  Args:
+    source: Lady_Frances_Armstrong-Jones
+    relation: :hasFather
+    target: Antony_Armstrong-Jones
+  AddTriple (ee961b32-ec5a-4c56-9728-6bf2986763b4)
+ Call ID: ee961b32-ec5a-4c56-9728-6bf2986763b4
+  Args:
+    target: Antony_Armstrong-Jones
+    source: Jasper_Cable-Alexander
+    relation: :hasFather
+  AssignClass (4f2397f0-b0f6-471a-95ec-4a18e380eb0e)
+ Call ID: 4f2397f0-b0f6-471a-95ec-4a18e380eb0e
+  Args:
+    source: Daniel_Chatto
+    type: :Man
+  AssignClass (e5cf76b5-e059-4b1d-ba72-c8d1cc554d0f)
+ Call ID: e5cf76b5-e059-4b1d-ba72-c8d1cc554d0f
+  Args:
+    source: Daniel_Chatto
+    type: :Person
+  AddTriple (22f13102-4c30-4d66-9638-5b9c03471c57)
+ Call ID: 22f13102-4c30-4d66-9638-5b9c03471c57
+  Args:
+    target: Tom_Chatto
+    source: Daniel_Chatto
+    relation: :hasFather
+  AddTriple (83dd4fec-3c87-4cda-a550-57ac1c2707b2)
+ Call ID: 83dd4fec-3c87-4cda-a550-57ac1c2707b2
+  Args:
+    relation: :hasMother
+    source: Daniel_Chatto
+    target: Ros_Chatto
+  AssignClass (3b0ede7c-730a-49c4-a2af-57bf425c41f8)
+ Call ID: 3b0ede7c-730a-49c4-a2af-57bf425c41f8
+  Args:
+    source: Tom_Chatto
+    type: :Man
+  AssignClass (7e955271-af5b-4d90-80b0-8c9193ecf193)
+ Call ID: 7e955271-af5b-4d90-80b0-8c9193ecf193
+  Args:
+    source: Tom_Chatto
+    type: :Person
+  AssignClass (eb1c0835-27bc-482a-807d-6c02e0551c0f)
+ Call ID: eb1c0835-27bc-482a-807d-6c02e0551c0f
+  Args:
+    source: Ros_Chatto
+    type: :Woman
+  AssignClass (571483b4-e10a-4a9c-bba6-5825b2da4396)
+ Call ID: 571483b4-e10a-4a9c-bba6-5825b2da4396
+  Args:
+    source: Ros_Chatto
+    type: :Person
+  AddLiteral (9d46f5dd-2614-44be-89ea-f147a3cdc6ab)
+ Call ID: 9d46f5dd-2614-44be-89ea-f147a3cdc6ab
+  Args:
+    literal_value: 1920
+    source: Tom_Chatto
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (4ca83f0a-630e-49fc-bd94-9690d0ad7365)
+ Call ID: 4ca83f0a-630e-49fc-bd94-9690d0ad7365
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1982
+    source: Tom_Chatto
+    literal_type: xsd:integer
+  AddLiteral (2a16107b-a0d9-425f-968c-300c11ea38e1)
+ Call ID: 2a16107b-a0d9-425f-968c-300c11ea38e1
+  Args:
+    source: Ros_Chatto
+    literal_value: 2012
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  Finish (52983483-7edf-474e-bf18-43de94f9090c)
+ Call ID: 52983483-7edf-474e-bf18-43de94f9090c
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Daniel_Chatto a :Man,
+          :Person ;
+      :hasFather data:Tom_Chatto ;
+      :hasMother data:Ros_Chatto .
+
+  data:Jasper_Cable-Alexander :hasFather data:Antony_Armstrong-Jones .
+
+  data:Lady_Frances_Armstrong-Jones :hasFather data:Antony_Armstrong-Jones .
+
+  data:Polly_Fry :hasFather data:Antony_Armstrong-Jones .
+
+  data:Sarah_Chatto a :Person,
+          :Woman ;
+      :hasBirthYear 1964 ;
+      :hasBrother data:David_Armstrong-Jones ;
+      :hasFather data:Antony_Armstrong-Jones ;
+      :hasMother data:Princess_Margaret .
+
+  data:David_Armstrong-Jones a :Man,
+          :Person ;
+      :hasFather data:Antony_Armstrong-Jones ;
+      :hasMother data:Princess_Margaret .
+
+  data:Ros_Chatto a :Person,
+          :Woman ;
+      :hasDeathYear 2012 .
+
+  data:Tom_Chatto a :Man,
+          :Person ;
+      :hasBirthYear 1920 ;
+      :hasDeathYear 1982 .
+
+  data:Princess_Margaret a :Person,
+          :Woman .
+
+  data:Antony_Armstrong-Jones a :Man,
+          :Person .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Jasper_Cable-Alexander', 'Lady_Frances_Armstrong-Jones', 'Polly_Fry']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (76d151f7-ebe5-4ade-a27b-93a7f4ce0e3e)
+ Call ID: 76d151f7-ebe5-4ade-a27b-93a7f4ce0e3e
+  Args:
+    source: Jasper_Cable-Alexander
+    type: :Person
+  AssignClass (9ecea718-36ee-4370-a2d9-c898f1767ed3)
+ Call ID: 9ecea718-36ee-4370-a2d9-c898f1767ed3
+  Args:
+    source: Lady_Frances_Armstrong-Jones
+    type: :Person
+  AssignClass (502a8b35-d63c-459b-9fa4-106fe960f4f8)
+ Call ID: 502a8b35-d63c-459b-9fa4-106fe960f4f8
+  Args:
+    source: Lady_Frances_Armstrong-Jones
+    type: :Woman
+  AssignClass (5626bf20-b701-470c-af4d-dbcc003d063b)
+ Call ID: 5626bf20-b701-470c-af4d-dbcc003d063b
+  Args:
+    source: Polly_Fry
+    type: :Person
+  AssignClass (d8eeda44-28ad-4a60-ab22-9c1edc60b692)
+ Call ID: d8eeda44-28ad-4a60-ab22-9c1edc60b692
+  Args:
+    source: Polly_Fry
+    type: :Woman
+  AssignClass (0238a34d-be22-49c8-8d6a-8d836f95eb7f)
+ Call ID: 0238a34d-be22-49c8-8d6a-8d836f95eb7f
+  Args:
+    source: Jasper_Cable-Alexander
+    type: :Man
+  Finish (144efdb0-6fd0-4f43-a895-beb284cb3607)
+ Call ID: 144efdb0-6fd0-4f43-a895-beb284cb3607
   Args:

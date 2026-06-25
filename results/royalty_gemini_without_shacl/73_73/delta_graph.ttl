@@ -4,13 +4,13 @@
 
 data:Christian a :Man ;
     :hasBirthYear 2005 ;
-    :hasFather data:Frederik_X ;
+    :hasFather data:FrederikX ;
     :hasMother data:Mary .
 
-data:Frederik_X a :Man ;
-    :hasMother data:Margrethe_II .
+data:FrederikX a :Man ;
+    :hasMother data:MargretheII .
 
-data:Margrethe_II a :Woman .
+data:MargretheII a :Woman .
 
 data:Mary a :Woman .
 

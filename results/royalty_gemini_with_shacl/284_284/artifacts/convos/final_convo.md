@@ -85,44 +85,21 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Urraca of Bourbon-Two Sicilies (Italian: Urraca Maria Isabella Carolina Aldegonda Carmela, Principessa di Borbone delle
-Due Sicilie; 14 July 1913, Nymphenburg Palace, Munich, Kingdom of Bavaria – 3 May 1999, Sigmaringen, Baden-Württemberg, Germany) was a member of the House of Bourbon-Two Sicilies and a Princess of Bourbon-Two Sicilies.
-Early life and family
+Timothy Patrick Bowes-Lyon, 16th and 3rd Earl of Strathmore and Kinghorne (18 March 1918 – 13 September 1972),  was a British nobleman and peer.
+He was a nephew of Queen Elizabeth the Queen Mother, wife of King George VI, thus a first cousin of Queen Elizabeth II and Princess Margaret.
+Biography
 
-Princess Urraca of Bourbon-Two Sicilies was born on 14 July 1913, at Nymphenburg Palace in Munich, Kingdom of Bavaria.
-She was the sixth and youngest child of Prince Ferdinand Pius of Bourbon-Two Sicilies, Duke of Castro (1869–1960) and his wife Princess Maria Ludwiga Theresia of Bavaria (1872–1954).
-Ferdinand Pius was the Head of the House of Bourbon-Two Sicilies and pretender to the defunct throne of the Kingdom of the Two Sicilies from 26 May 1934 to 7 January 1960.
-Urraca had five older siblings, four sisters and one brother: Princess Maria Antonietta (1898–1957), Princess Maria Cristina (1899–1985), Prince Ruggiero Maria, Duke of Noto (1901–1914), Princess Barbara Maria (1902–1927), and Princess Lucia (1908–2001).
-Through her father, Urraca was a granddaughter of Prince Alfonso of Bourbon-Two Sicilies, Count of Caserta (1841–1934) and his wife Princess Maria Antonietta of Bourbon-Two Sicilies (1851–1938).
-Urraca was descended from King Francis I of the Two Sicilies (1777–1830) through her paternal great-grandfathers, King Ferdinand II of the Two Sicilies (1810–1859) and Prince Francis of Bourbon-Two Sicilies, Count of Trapani (1827–1892).
-Through her mother, she was a granddaughter of King Ludwig III of Bavaria (1845– 1921) and his wife Archduchess Maria Theresa of Austria-Este (1849–1919).
-Urraca chose not to celebrate her birthday, stating: "How can a Bourbon celebrate on the day of the Bastille's taking?
-"
-
-
-Adult life
-
-As the daughter of the heir-apparent, then head of the House of Bourbon-Two Sicilies, Urraca regularly represented her family at royal and aristocratic functions and charitable events.
-She attended the funeral of her great-uncle Prince Leopold of Bavaria on 3 October 1930, at St. Michael's Church in Munich.
-Urraca, her mother, and her sister Lucia attended an afternoon dance tea at the Hotel Vier Jahreszeiten and the Hungarian Aid Association's Hungarian Ball in Munich in January 1934.
-On 16 April 1936, Urraca attended the wedding of her first cousin Infante Alfonso of Spain, Prince of Bourbon-Two Sicilies to Princess Alicia of Bourbon-Parma at the Minoritenkirche in Vienna.
-She was a guest of honor at the Austrian Armed Forces' Spring Parade in April 1936, along with Alfonso XIII of Spain, Princess Maria Anna of Bourbon-Parma, and Prince Elias of Bourbon-Parma.
-Urraca attended the Baltic Red Cross Ball and the ball of Countess Adelheid Arco-Valley in the Cherubinsälen of the Hotel Vier Jahreszeiten in February 1938.
-On 23 October 1957, she attended the wedding of her first cousin Princess Marie Gabrielle of Bavaria and Georg, Prince of Waldburg zu Zeil und Trauchburg in Munich.
-On the night of 10 January 1957, Urraca was driving her eldest sister Maria Antonietta to her home in Lindau, Germany, when their automobile collided with a truck that had skid on ice near Winterthur, Switzerland.
-Maria Antonietta was killed in the accident and Urraca was seriously injured.
-Urraca was also an active supporter of Duosicilian historical societies and other royalty and nobility organizations.
-Her first cousin once removed and claimant to the Duosicilian throne, Infante Carlos, Duke of Calabria, was also in attendance.
-In February 1994, Urraca traveled to Gaeta where she participated in a tribute to the centenary of the death of Francis II, King of the Two Sicilies and an observation of the 133rd anniversary of the conclusion of the Siege of Gaeta which marked the victory of the Kingdom of Sardinia over Two Sicilies.
-Death
-
-Urraca died on 3 May 1999, in Sigmaringen, Baden-Württemberg, Germany.
+Born on 18 March 1918 in Teesdale, County Durham, he was the second son and third child of Patrick, Lord Glamis, and Lady Dorothy Osborne (1888–1946).
+His father's youngest sister was the future Queen Elizabeth the Queen Mother.
+He had no sons, so was succeeded by his first cousin, Captain Fergus Bowes-Lyon.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -138,39 +115,9 @@ Urraca died on 3 May 1999, in Sigmaringen, Baden-Württemberg, Germany.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -185,6 +132,23 @@ Urraca died on 3 May 1999, in Sigmaringen, Baden-Württemberg, Germany.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -202,6 +166,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,29 +248,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -300,6 +271,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -312,6 +291,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -320,17 +301,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -358,6 +341,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -373,221 +440,92 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (38ea19df-6ea5-4005-a3e8-b8f6b867e635)
- Call ID: 38ea19df-6ea5-4005-a3e8-b8f6b867e635
+  AssignClass (2b0eed33-932e-4b7b-9517-cf76cb44efab)
+ Call ID: 2b0eed33-932e-4b7b-9517-cf76cb44efab
   Args:
-    type: :Woman
-    source: Urraca_of_Bourbon-Two_Sicilies
-  AssignClass (9775d07d-48ab-4951-80b6-47ecea193a82)
- Call ID: 9775d07d-48ab-4951-80b6-47ecea193a82
-  Args:
-    source: Urraca_of_Bourbon-Two_Sicilies
-    type: :Person
-  AssignClass (1a1a88bd-80ea-479d-bf8d-83a701c4927a)
- Call ID: 1a1a88bd-80ea-479d-bf8d-83a701c4927a
-  Args:
-    source: Ferdinand_Pius_of_Bourbon-Two_Sicilies
+    source: Timothy_Patrick_Bowes-Lyon
     type: :Man
-  AssignClass (9b1f392c-86a4-4b3c-9190-45aebe54c431)
- Call ID: 9b1f392c-86a4-4b3c-9190-45aebe54c431
+  AssignClass (8509fa28-f0e7-4108-944b-02387c7c860f)
+ Call ID: 8509fa28-f0e7-4108-944b-02387c7c860f
   Args:
-    type: :Ancestor
-    source: Ferdinand_Pius_of_Bourbon-Two_Sicilies
-  AssignClass (a853ee7f-cc24-4e90-8e2b-2a0f7136c10b)
- Call ID: a853ee7f-cc24-4e90-8e2b-2a0f7136c10b
+    type: :Man
+    source: Patrick_Lord_Glamis
+  AssignClass (150371fd-ef82-4d35-9e66-623c4d2377a5)
+ Call ID: 150371fd-ef82-4d35-9e66-623c4d2377a5
   Args:
-    source: Maria_Ludwiga_Theresia_of_Bavaria
+    source: Lady_Dorothy_Osborne
     type: :Woman
-  AssignClass (3f658d5f-7df8-489a-9010-b05f47266b9c)
- Call ID: 3f658d5f-7df8-489a-9010-b05f47266b9c
+  AssignClass (a9af0e7e-979c-437e-9a90-45db9cf2ace0)
+ Call ID: a9af0e7e-979c-437e-9a90-45db9cf2ace0
   Args:
-    source: Maria_Ludwiga_Theresia_of_Bavaria
-    type: :Ancestor
-  AddLiteral (042baf26-9f78-417d-b72c-1dc51a8e648a)
- Call ID: 042baf26-9f78-417d-b72c-1dc51a8e648a
+    type: :Woman
+    source: Queen_Elizabeth_the_Queen_Mother
+  AssignClass (ae2b7029-bb6c-42d0-b39d-32d1124cb011)
+ Call ID: ae2b7029-bb6c-42d0-b39d-32d1124cb011
   Args:
-    literal_value: Female
-    source: Urraca_of_Bourbon-Two_Sicilies
-    literal_type: xsd:string
-    relation: :hasSex
-  AddLiteral (b5260b8f-11b6-4a65-a11b-a42a6b6cdc56)
- Call ID: b5260b8f-11b6-4a65-a11b-a42a6b6cdc56
+    type: :Man
+    source: Captain_Fergus_Bowes-Lyon
+  AddLiteral (cc88a357-f369-4afe-aee2-28cef46cf116)
+ Call ID: cc88a357-f369-4afe-aee2-28cef46cf116
   Args:
-    literal_value: Male
-    literal_type: xsd:string
-    source: Ferdinand_Pius_of_Bourbon-Two_Sicilies
-    relation: :hasSex
-  AddLiteral (4a1af5e4-0dd1-475c-bbe5-c80dba5ce8d0)
- Call ID: 4a1af5e4-0dd1-475c-bbe5-c80dba5ce8d0
+    literal_value: 1918
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Timothy_Patrick_Bowes-Lyon
+  AddLiteral (e49b10b9-8433-4410-afef-9ae8b0c10b17)
+ Call ID: e49b10b9-8433-4410-afef-9ae8b0c10b17
   Args:
-    literal_value: Female
-    relation: :hasSex
-    source: Maria_Ludwiga_Theresia_of_Bavaria
-    literal_type: xsd:string
-  AddTriple (7654a3ce-9891-46a7-83ed-8f57f82ecad8)
- Call ID: 7654a3ce-9891-46a7-83ed-8f57f82ecad8
+    literal_value: 1972
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Timothy_Patrick_Bowes-Lyon
+  AddLiteral (70b7b24c-b331-4d9d-8a2e-d4ff7ccdb4f0)
+ Call ID: 70b7b24c-b331-4d9d-8a2e-d4ff7ccdb4f0
   Args:
-    source: Urraca_of_Bourbon-Two_Sicilies
+    literal_value: 1888
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Lady_Dorothy_Osborne
+  AddLiteral (4bdeb88d-cb94-4504-b178-fd26ca8140a8)
+ Call ID: 4bdeb88d-cb94-4504-b178-fd26ca8140a8
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1946
+    literal_type: xsd:integer
+    source: Lady_Dorothy_Osborne
+  AddTriple (6a7ef815-2c17-440b-8e06-1f72cf2435dc)
+ Call ID: 6a7ef815-2c17-440b-8e06-1f72cf2435dc
+  Args:
+    source: Timothy_Patrick_Bowes-Lyon
+    target: Patrick_Lord_Glamis
     relation: :hasFather
-    target: Ferdinand_Pius_of_Bourbon-Two_Sicilies
-  AddTriple (ebb66837-5413-463f-98bf-eb3b5b492f72)
- Call ID: ebb66837-5413-463f-98bf-eb3b5b492f72
+  AddTriple (3544b27b-6e43-4fcb-8383-8ee031575adf)
+ Call ID: 3544b27b-6e43-4fcb-8383-8ee031575adf
   Args:
-    source: Urraca_of_Bourbon-Two_Sicilies
-    target: Maria_Ludwiga_Theresia_of_Bavaria
+    source: Timothy_Patrick_Bowes-Lyon
+    target: Lady_Dorothy_Osborne
     relation: :hasMother
-  AddLiteral (7c05e630-bab3-4b15-98eb-b4a88ede4e6f)
- Call ID: 7c05e630-bab3-4b15-98eb-b4a88ede4e6f
+  AddTriple (343454b3-19b7-41e7-a874-af371018f4cf)
+ Call ID: 343454b3-19b7-41e7-a874-af371018f4cf
   Args:
-    literal_value: 1913
-    relation: :hasBirthYear
-    literal_type: xsd:int
-    source: Urraca_of_Bourbon-Two_Sicilies
-  AddLiteral (e8acc84d-dc59-44f9-9295-b602073ea2a6)
- Call ID: e8acc84d-dc59-44f9-9295-b602073ea2a6
+    source: Queen_Elizabeth_the_Queen_Mother
+    target: Patrick_Lord_Glamis
+    relation: :isSisterOf
+  AddTriple (4a45843a-3756-4c68-b8a0-4e847ab8fcb7)
+ Call ID: 4a45843a-3756-4c68-b8a0-4e847ab8fcb7
   Args:
-    literal_value: 1999
-    relation: :hasDeathYear
-    source: Urraca_of_Bourbon-Two_Sicilies
-    literal_type: xsd:int
-  AddLiteral (b97cdfd2-d6b9-4551-bd34-91b26467d3f8)
- Call ID: b97cdfd2-d6b9-4551-bd34-91b26467d3f8
+    target: Patrick_Lord_Glamis
+    source: Timothy_Patrick_Bowes-Lyon
+    relation: :isSonOf
+  AddTriple (043b74c6-f73f-4973-b557-78e20ec0c880)
+ Call ID: 043b74c6-f73f-4973-b557-78e20ec0c880
   Args:
-    literal_value: 1869
-    literal_type: xsd:int
-    source: Ferdinand_Pius_of_Bourbon-Two_Sicilies
-    relation: :hasBirthYear
-  AddLiteral (81d503ad-dea2-4516-92b2-885791262318)
- Call ID: 81d503ad-dea2-4516-92b2-885791262318
+    relation: :isSonOf
+    target: Lady_Dorothy_Osborne
+    source: Timothy_Patrick_Bowes-Lyon
+  Finish (4a6e2212-965e-454c-a311-500de14b2339)
+ Call ID: 4a6e2212-965e-454c-a311-500de14b2339
   Args:
-    literal_value: 1960
-    relation: :hasDeathYear
-    source: Ferdinand_Pius_of_Bourbon-Two_Sicilies
-    literal_type: xsd:int
-  AddLiteral (523669df-913e-4507-b472-9e6354f76c96)
- Call ID: 523669df-913e-4507-b472-9e6354f76c96
-  Args:
-    literal_value: 1872
-    source: Maria_Ludwiga_Theresia_of_Bavaria
-    literal_type: xsd:int
-    relation: :hasBirthYear
-  AddLiteral (9f8c5e9d-8aed-4a95-a782-9240160b7ea6)
- Call ID: 9f8c5e9d-8aed-4a95-a782-9240160b7ea6
-  Args:
-    literal_value: 1954
-    relation: :hasDeathYear
-    literal_type: xsd:int
-    source: Maria_Ludwiga_Theresia_of_Bavaria
-  AssignClass (2ae5eb7f-21a0-466e-a1de-ce7e28336514)
- Call ID: 2ae5eb7f-21a0-466e-a1de-ce7e28336514
-  Args:
-    type: :Woman
-    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (35d749dc-5d4a-4d57-9fd1-774bd23c17cc)
- Call ID: 35d749dc-5d4a-4d57-9fd1-774bd23c17cc
-  Args:
-    type: :Woman
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AssignClass (b8e3b75d-123b-40cf-bbfb-1ef31c0c9ba7)
- Call ID: b8e3b75d-123b-40cf-bbfb-1ef31c0c9ba7
-  Args:
-    source: Ruggiero_Maria_of_Bourbon-Two_Sicilies
-    type: :Man
-  AssignClass (c4b0d498-c11b-4b4a-9f9a-43b99651507c)
- Call ID: c4b0d498-c11b-4b4a-9f9a-43b99651507c
-  Args:
-    source: Barbara_Maria_of_Bourbon-Two_Sicilies
-    type: :Woman
-  AssignClass (af04b3b7-6f49-4af6-be07-9791d678b789)
- Call ID: af04b3b7-6f49-4af6-be07-9791d678b789
-  Args:
-    source: Lucia_of_Bourbon-Two_Sicilies
-    type: :Woman
-  AddTriple (ebfd7f87-60f1-482d-9896-37178377a6e4)
- Call ID: ebfd7f87-60f1-482d-9896-37178377a6e4
-  Args:
-    target: Maria_Antonietta_of_Bourbon-Two_Sicilies
-    relation: :isSiblingOf
-    source: Urraca_of_Bourbon-Two_Sicilies
-  AddTriple (b825039f-73a6-4797-bcb2-7613027e78d4)
- Call ID: b825039f-73a6-4797-bcb2-7613027e78d4
-  Args:
-    source: Urraca_of_Bourbon-Two_Sicilies
-    target: Maria_Cristina_of_Bourbon-Two_Sicilies
-    relation: :isSiblingOf
-  AddTriple (4620bb5c-b035-4447-8a55-91705a6a15a7)
- Call ID: 4620bb5c-b035-4447-8a55-91705a6a15a7
-  Args:
-    source: Urraca_of_Bourbon-Two_Sicilies
-    relation: :isSiblingOf
-    target: Ruggiero_Maria_of_Bourbon-Two_Sicilies
-  AddTriple (bbd42c91-f70d-4c9c-8e13-e37728de707a)
- Call ID: bbd42c91-f70d-4c9c-8e13-e37728de707a
-  Args:
-    relation: :isSiblingOf
-    target: Barbara_Maria_of_Bourbon-Two_Sicilies
-    source: Urraca_of_Bourbon-Two_Sicilies
-  AddTriple (90cf2c9e-0f33-4337-9ebc-7768884e79ca)
- Call ID: 90cf2c9e-0f33-4337-9ebc-7768884e79ca
-  Args:
-    source: Urraca_of_Bourbon-Two_Sicilies
-    target: Lucia_of_Bourbon-Two_Sicilies
-    relation: :isSiblingOf
-  Finish (75b585b0-fa05-4af5-bd57-bc77a8403f25)
- Call ID: 75b585b0-fa05-4af5-bd57-bc77a8403f25
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -648,40 +586,24 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Urraca_of_Bourbon-Two_Sicilies a :Person,
-          :Woman ;
-      :hasBirthYear "1913"^^xsd:int ;
-      :hasDeathYear "1999"^^xsd:int ;
-      :hasFather data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
-      :hasMother data:Maria_Ludwiga_Theresia_of_Bavaria ;
-      :hasSex "Female"^^xsd:string ;
-      :isSiblingOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
-          data:Lucia_of_Bourbon-Two_Sicilies,
-          data:Maria_Antonietta_of_Bourbon-Two_Sicilies,
-          data:Maria_Cristina_of_Bourbon-Two_Sicilies,
-          data:Ruggiero_Maria_of_Bourbon-Two_Sicilies .
+  data:Captain_Fergus_Bowes-Lyon a :Man .
 
-  data:Barbara_Maria_of_Bourbon-Two_Sicilies a :Woman .
+  data:Queen_Elizabeth_the_Queen_Mother a :Woman ;
+      :isSisterOf data:Patrick_Lord_Glamis .
 
-  data:Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Man ;
-      :hasBirthYear "1869"^^xsd:int ;
-      :hasDeathYear "1960"^^xsd:int ;
-      :hasSex "Male"^^xsd:string .
+  data:Timothy_Patrick_Bowes-Lyon a :Man ;
+      :hasBirthYear 1918 ;
+      :hasDeathYear 1972 ;
+      :hasFather data:Patrick_Lord_Glamis ;
+      :hasMother data:Lady_Dorothy_Osborne ;
+      :isSonOf data:Lady_Dorothy_Osborne,
+          data:Patrick_Lord_Glamis .
 
-  data:Lucia_of_Bourbon-Two_Sicilies a :Woman .
+  data:Lady_Dorothy_Osborne a :Woman ;
+      :hasBirthYear 1888 ;
+      :hasDeathYear 1946 .
 
-  data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Woman .
-
-  data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Woman .
-
-  data:Maria_Ludwiga_Theresia_of_Bavaria a :Ancestor,
-          :Woman ;
-      :hasBirthYear "1872"^^xsd:int ;
-      :hasDeathYear "1954"^^xsd:int ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Ruggiero_Maria_of_Bourbon-Two_Sicilies a :Man .
+  data:Patrick_Lord_Glamis a :Man .
 
 
 
@@ -693,254 +615,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (a7faa5a6-0be2-4cc2-ba61-754e2b9455c4)
- Call ID: a7faa5a6-0be2-4cc2-ba61-754e2b9455c4
+  ValidateShacl (a266fa6b-c469-42d9-9b7d-c778745e70ec)
+ Call ID: a266fa6b-c469-42d9-9b7d-c778745e70ec
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:30
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The entity Ferdinand_Pius_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
+      The node Patrick_Lord_Glamis is assigned the class :Man but is expected to also have the class :Ancestor for the isSonOf relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Patrick_Lord_Glamis, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The entity Maria_Ludwiga_Theresia_of_Bavaria uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
+      The node Lady_Dorothy_Osborne is assigned the class :Woman but is expected to also have the class :Ancestor for the isSonOf relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Lady_Dorothy_Osborne, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Ferdinand_Pius_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
+      The node Patrick_Lord_Glamis is assigned the class :Man but is not recognized as an :Ancestor for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Patrick_Lord_Glamis, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Maria_Ludwiga_Theresia_of_Bavaria uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
+      The node Lady_Dorothy_Osborne is assigned the class :Woman but is not recognized as an :Ancestor for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Lady_Dorothy_Osborne, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The entity Ferdinand_Pius_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
+      The node Patrick_Lord_Glamis is missing the :Ancestor class classification required by the isSonOf predicate.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Patrick_Lord_Glamis, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The entity Maria_Ludwiga_Theresia_of_Bavaria uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
+      The node Lady_Dorothy_Osborne is missing the :Ancestor class classification required by the isSonOf predicate.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Lady_Dorothy_Osborne, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Ferdinand_Pius_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
+      The node Patrick_Lord_Glamis is missing the :Ancestor class classification required by the hasFather predicate.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Patrick_Lord_Glamis, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Ferdinand_Pius_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
+      The node Lady_Dorothy_Osborne is missing the :Ancestor class classification required by the hasMother predicate.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Lady_Dorothy_Osborne, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The entity Ferdinand_Pius_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
+      The node Patrick_Lord_Glamis requires the :Ancestor class classification for the isSonOf relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Patrick_Lord_Glamis, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The entity Maria_Ludwiga_Theresia_of_Bavaria uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
+      The node Lady_Dorothy_Osborne requires the :Ancestor class classification for the isSonOf relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Lady_Dorothy_Osborne, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Urraca_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
+      The node Patrick_Lord_Glamis requires the :Ancestor class classification for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Patrick_Lord_Glamis, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Ferdinand_Pius_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
+      The node Lady_Dorothy_Osborne requires the :Ancestor class classification for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Maria_Ludwiga_Theresia_of_Bavaria uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Urraca_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Ferdinand_Pius_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Maria_Ludwiga_Theresia_of_Bavaria uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Urraca_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Ferdinand_Pius_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Maria_Ludwiga_Theresia_of_Bavaria uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Urraca_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Ferdinand_Pius_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Maria_Ludwiga_Theresia_of_Bavaria uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Urraca_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Ferdinand_Pius_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Maria_Ludwiga_Theresia_of_Bavaria uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Urraca_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Urraca_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Maria_Ludwiga_Theresia_of_Bavaria uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Urraca_of_Bourbon-Two_Sicilies uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Maria_Ludwiga_Theresia_of_Bavaria uses a value for 'hasSex' that lacks the mandatory class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Lady_Dorothy_Osborne, :Ancestor)
 
 
 
@@ -949,100 +727,19 @@ Violations:
 
 []
 Tool Calls:
-  RemoveLiteral (45fb338c-ff5e-4138-afae-a38de98d910f)
- Call ID: 45fb338c-ff5e-4138-afae-a38de98d910f
+  AssignClass (ce1ed31b-2cbc-420d-84b5-e70c37eb8824)
+ Call ID: ce1ed31b-2cbc-420d-84b5-e70c37eb8824
   Args:
-    literal_value: Female
-    source: Urraca_of_Bourbon-Two_Sicilies
-    literal_type: xsd:string
-    relation: :hasSex
-  RemoveLiteral (653acf99-097a-4a3c-9faa-7788606444f8)
- Call ID: 653acf99-097a-4a3c-9faa-7788606444f8
+    type: :Ancestor
+    source: Patrick_Lord_Glamis
+  AssignClass (00f2e8e2-f2f7-4494-94d9-1fe13094fec8)
+ Call ID: 00f2e8e2-f2f7-4494-94d9-1fe13094fec8
   Args:
-    literal_value: Male
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Ferdinand_Pius_of_Bourbon-Two_Sicilies
-  RemoveLiteral (25e854a2-afc0-4c28-8624-9df9375d5e9b)
- Call ID: 25e854a2-afc0-4c28-8624-9df9375d5e9b
+    source: Lady_Dorothy_Osborne
+    type: :Ancestor
+  Finish (c9a3f80a-72f3-4767-a6e4-f81a78092446)
+ Call ID: c9a3f80a-72f3-4767-a6e4-f81a78092446
   Args:
-    literal_value: Female
-    source: Maria_Ludwiga_Theresia_of_Bavaria
-    literal_type: xsd:string
-    relation: :hasSex
-  AssignClass (fa4439cd-96c1-4277-bcde-0a7227f98e32)
- Call ID: fa4439cd-96c1-4277-bcde-0a7227f98e32
-  Args:
-    type: :Female
-    source: Female_Sex_Node
-  AssignClass (d58ae71f-45f9-433f-a29e-e1af098d9ae6)
- Call ID: d58ae71f-45f9-433f-a29e-e1af098d9ae6
-  Args:
-    source: Female_Sex_Node
-    type: :Sex
-  AssignClass (16f9808c-c284-4b64-98b3-fabf0ba7e2f2)
- Call ID: 16f9808c-c284-4b64-98b3-fabf0ba7e2f2
-  Args:
-    type: :Male
-    source: Male_Sex_Node
-  AssignClass (19263f94-bef6-4dde-bddc-b04833307cfb)
- Call ID: 19263f94-bef6-4dde-bddc-b04833307cfb
-  Args:
-    type: :Sex
-    source: Male_Sex_Node
-  AddTriple (0b9acac2-dba0-4ae7-b753-a83ad7104409)
- Call ID: 0b9acac2-dba0-4ae7-b753-a83ad7104409
-  Args:
-    source: Urraca_of_Bourbon-Two_Sicilies
-    target: Female_Sex_Node
-    relation: :hasSex
-  AddTriple (504d72b1-c2a8-414d-b2d1-5334360025c6)
- Call ID: 504d72b1-c2a8-414d-b2d1-5334360025c6
-  Args:
-    relation: :hasSex
-    target: Male_Sex_Node
-    source: Ferdinand_Pius_of_Bourbon-Two_Sicilies
-  AddTriple (4536645a-62be-4402-9544-cdaa5b389578)
- Call ID: 4536645a-62be-4402-9544-cdaa5b389578
-  Args:
-    source: Maria_Ludwiga_Theresia_of_Bavaria
-    target: Female_Sex_Node
-    relation: :hasSex
-  Finish (f4b7cf3f-4ebe-4dd0-98cb-c57c6ccb7f43)
- Call ID: f4b7cf3f-4ebe-4dd0-98cb-c57c6ccb7f43
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1055,46 +752,26 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Urraca_of_Bourbon-Two_Sicilies a :Person,
+  data:Captain_Fergus_Bowes-Lyon a :Man .
+
+  data:Queen_Elizabeth_the_Queen_Mother a :Woman ;
+      :isSisterOf data:Patrick_Lord_Glamis .
+
+  data:Timothy_Patrick_Bowes-Lyon a :Man ;
+      :hasBirthYear 1918 ;
+      :hasDeathYear 1972 ;
+      :hasFather data:Patrick_Lord_Glamis ;
+      :hasMother data:Lady_Dorothy_Osborne ;
+      :isSonOf data:Lady_Dorothy_Osborne,
+          data:Patrick_Lord_Glamis .
+
+  data:Lady_Dorothy_Osborne a :Ancestor,
           :Woman ;
-      :hasBirthYear "1913"^^xsd:int ;
-      :hasDeathYear "1999"^^xsd:int ;
-      :hasFather data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
-      :hasMother data:Maria_Ludwiga_Theresia_of_Bavaria ;
-      :hasSex data:Female_Sex_Node ;
-      :isSiblingOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
-          data:Lucia_of_Bourbon-Two_Sicilies,
-          data:Maria_Antonietta_of_Bourbon-Two_Sicilies,
-          data:Maria_Cristina_of_Bourbon-Two_Sicilies,
-          data:Ruggiero_Maria_of_Bourbon-Two_Sicilies .
+      :hasBirthYear 1888 ;
+      :hasDeathYear 1946 .
 
-  data:Barbara_Maria_of_Bourbon-Two_Sicilies a :Woman .
-
-  data:Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Man ;
-      :hasBirthYear "1869"^^xsd:int ;
-      :hasDeathYear "1960"^^xsd:int ;
-      :hasSex data:Male_Sex_Node .
-
-  data:Lucia_of_Bourbon-Two_Sicilies a :Woman .
-
-  data:Male_Sex_Node a :Male,
-          :Sex .
-
-  data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Woman .
-
-  data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Woman .
-
-  data:Maria_Ludwiga_Theresia_of_Bavaria a :Ancestor,
-          :Woman ;
-      :hasBirthYear "1872"^^xsd:int ;
-      :hasDeathYear "1954"^^xsd:int ;
-      :hasSex data:Female_Sex_Node .
-
-  data:Ruggiero_Maria_of_Bourbon-Two_Sicilies a :Man .
-
-  data:Female_Sex_Node a :Female,
-          :Sex .
+  data:Patrick_Lord_Glamis a :Ancestor,
+          :Man .
 
 
 
@@ -1106,8 +783,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (97d40d44-2862-4453-ac77-764e0247baa2)
- Call ID: 97d40d44-2862-4453-ac77-764e0247baa2
+  ValidateShacl (bacda78c-634b-485c-8044-3d58256f8df4)
+ Call ID: bacda78c-634b-485c-8044-3d58256f8df4
   Args:
 
 ================================= Tool Message =================================
@@ -1118,6 +795,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (9798f28a-8a48-4dfc-a27f-a25d98c277a6)
- Call ID: 9798f28a-8a48-4dfc-a27f-a25d98c277a6
+  Finish (6ecafa49-c07a-45e0-b957-6398e3db8cd6)
+ Call ID: 6ecafa49-c07a-45e0-b957-6398e3db8cd6
   Args:

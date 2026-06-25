@@ -71,7 +71,9 @@ Please update the Knowledge Graph based on the provided data.
 ### Input Text:
 Princess Beatrice, Mrs Edoardo Mapelli Mozzi (Beatrice Elizabeth Mary; born 8 August 1988), is a member of the British royal family.
 She is the elder daughter of Andrew Mountbatten-Windsor and Sarah Ferguson, and a niece of King Charles III.
+Born fifth in the line of succession to the British throne, she is ninth as of 2026.
 Beatrice was educated at St George's School, Ascot, before reading history at Goldsmiths, University of London, where she graduated with a BA degree.
+She has held roles at the Foreign Office and Sony Pictures, and currently serves as Vice-President of Strategic Partnerships at the software company Afiniti.
 In 2020, Beatrice married Edoardo Mapelli Mozzi, an English-born property developer with descent from Italian nobility.
 Early life and education
 
@@ -114,6 +116,7 @@ In March 2019, Beatrice attended a fundraising event at the National Portrait Ga
 The only son of Alex Mapelli-Mozzi, a former Alpine skier for the Great Britain Olympic team, he is a legitimate male‐line descendant of the Mapelli Mozzi family, whose members were granted the title of Count of the Kingdom of Italy in 1913 by King Victor Emmanuel III, with remainder to all male descendants of Edoardo's great‐grandfather Paolo Mapelli Mozzi (1854–1921).
 They attended the May 2019 wedding of Lady Gabriella Windsor, Beatrice's second cousin once removed.
 Beatrice and Mapelli Mozzi became engaged in Italy in September 2019, with their betrothal formally announced by Andrew's office on 26 September.
+Their wedding was initially scheduled for 29 May 2020 at the Chapel Royal at St James's Palace, followed by a private reception in Buckingham Palace Gardens, but first the reception and then the wedding itself were postponed because of the COVID-19 pandemic.
 Beatrice married Mapelli Mozzi in a private ceremony on 17 July 2020 at the Royal Chapel of All Saints, Royal Lodge, Windsor.
 Her father's association with Jeffrey Epstein, an American financier and convicted sex offender, also affected the scale of the wedding; following Andrew's widely criticised  BBC interview and subsequent withdrawal from royal duties, the arrangements were significantly reduced.
 Although Andrew walked Beatrice down the aisle, he did not appear in the official wedding portraits released by Buckingham Palace.
@@ -121,13 +124,17 @@ Beatrice wore a remodelled Sir Norman Hartnell gown lent by the Queen, and the Q
 Beatrice has a stepson, Christopher Woolf ("Wolfie"), from her husband's previous relationship with the architect Dara Huang.
 She gave birth to a daughter, Sienna Elizabeth Mapelli Mozzi, on 18 September 2021 at the Chelsea and Westminster Hospital in London.
 At birth, Sienna was 11th in line to the British throne, and following the death of Queen Elizabeth II on 8 September 2022, she is now 10th.
+She was christened at the Chapel Royal at St James's Palace on 29 April 2022.
 Beatrice and her husband initially lived in a four-bedroom apartment at St James's Palace, but reportedly moved to a manor house in the Cotswolds in late 2022.
 Beatrice gave birth to their second daughter, Athena Elizabeth Rose, on 22 January 2025 at the Chelsea and Westminster Hospital in London, several weeks prematurely.
+She was christened at the Chapel Royal at St James's Palace on 12 December.
+Athena is 11th in line to the British throne.
 Charity work
 
 In 2002, Beatrice visited children living with HIV in Russia.
 In an interview to mark her 18th birthday, Beatrice said she wished to use her position to assist others through charity work; she had already undertaken charitable duties alongside her mother through the various organisations supported by the Duchess.
 In April 2010, Beatrice became the first member of the British royal family to complete the London Marathon, running to raise money for Children in Crisis.
+She is the patron of Forget-Me-Not Children's Hospice, which supports children with life-shortening conditions in West Yorkshire and North Manchester.
 At the April 2011 wedding of her cousin Prince William, Beatrice's unusual fascinator, designed by Philip Treacy, attracted significant public and media attention.
 In November 2012, Beatrice became a patron of the York Musical Society.
 In 2016, she, her mother, and her sister Eugenie collaborated with the British contemporary artist Teddy McDonald to create the first royal contemporary art painting.
@@ -156,6 +163,8 @@ Since her marriage, she has been styled in the Court Circular as "Her Royal High
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -171,39 +180,9 @@ Since her marriage, she has been styled in the Court Circular as "Her Royal High
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -218,6 +197,23 @@ Since her marriage, she has been styled in the Court Circular as "Her Royal High
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -235,6 +231,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -302,29 +313,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -333,6 +336,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -345,6 +356,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -353,17 +366,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -391,6 +406,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -406,199 +505,138 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d0791fa0-bb2a-4e0b-9528-1b5e9c42a9f2)
- Call ID: d0791fa0-bb2a-4e0b-9528-1b5e9c42a9f2
+  AssignClass (5933386b-3dc8-48a6-8337-ea686e4343f6)
+ Call ID: 5933386b-3dc8-48a6-8337-ea686e4343f6
   Args:
     source: Beatrice_Elizabeth_Mary
     type: :Woman
-  AssignClass (65785a67-6cf7-49ff-94b0-38232a87519c)
- Call ID: 65785a67-6cf7-49ff-94b0-38232a87519c
+  AssignClass (37e3eef0-cd99-45a8-ae9a-59dcaa1d96b1)
+ Call ID: 37e3eef0-cd99-45a8-ae9a-59dcaa1d96b1
   Args:
-    source: Beatrice_Elizabeth_Mary
     type: :Person
-  AssignClass (80c91c38-c0bb-4902-bff4-de0c96ca5041)
- Call ID: 80c91c38-c0bb-4902-bff4-de0c96ca5041
+    source: Beatrice_Elizabeth_Mary
+  AssignClass (31d59d6c-b28f-4ac5-a41a-77e909f38870)
+ Call ID: 31d59d6c-b28f-4ac5-a41a-77e909f38870
   Args:
     source: Andrew_Mountbatten-Windsor
     type: :Man
-  AssignClass (d04d6790-16ef-490f-b952-9e96d747727b)
- Call ID: d04d6790-16ef-490f-b952-9e96d747727b
+  AssignClass (9d3a8dc9-42c0-48da-ac20-b3719d1db68a)
+ Call ID: 9d3a8dc9-42c0-48da-ac20-b3719d1db68a
   Args:
-    type: :Person
     source: Andrew_Mountbatten-Windsor
-  AssignClass (168b3234-6e8e-4eb0-abc7-0949e64c4383)
- Call ID: 168b3234-6e8e-4eb0-abc7-0949e64c4383
+    type: :Person
+  AssignClass (ce519217-3dba-4fab-8e26-b6811511287b)
+ Call ID: ce519217-3dba-4fab-8e26-b6811511287b
   Args:
     type: :Woman
     source: Sarah_Ferguson
-  AssignClass (c0ee6f18-b822-4983-a341-b3ca6b293fc4)
- Call ID: c0ee6f18-b822-4983-a341-b3ca6b293fc4
+  AssignClass (54293e5e-214a-4884-bd23-cf958611fd75)
+ Call ID: 54293e5e-214a-4884-bd23-cf958611fd75
   Args:
     source: Sarah_Ferguson
     type: :Person
-  AssignClass (9e0231b4-df80-4465-aec6-772c0048e935)
- Call ID: 9e0231b4-df80-4465-aec6-772c0048e935
+  AssignClass (b11dd457-8e43-4820-9a3f-16addf0cd7c9)
+ Call ID: b11dd457-8e43-4820-9a3f-16addf0cd7c9
   Args:
+    source: Edoardo_Mapelli_Mozzi
     type: :Man
-    source: Edoardo_Mapelli_Mozzi
-  AssignClass (369d5264-2c91-435e-91df-495bc55ce444)
- Call ID: 369d5264-2c91-435e-91df-495bc55ce444
+  AssignClass (5cddf502-4f47-49cf-9075-9fe433a1e119)
+ Call ID: 5cddf502-4f47-49cf-9075-9fe433a1e119
   Args:
     source: Edoardo_Mapelli_Mozzi
     type: :Person
-  AssignClass (658f516c-d354-4486-85d5-356f5ab5f660)
- Call ID: 658f516c-d354-4486-85d5-356f5ab5f660
+  AssignClass (d8560e23-165f-4d6a-b0dc-8cbe4a93c3e3)
+ Call ID: d8560e23-165f-4d6a-b0dc-8cbe4a93c3e3
   Args:
-    type: :Woman
     source: Eugenie
-  AssignClass (de44fb18-8ffe-4bd0-95c2-f55526b1dcdd)
- Call ID: de44fb18-8ffe-4bd0-95c2-f55526b1dcdd
+    type: :Woman
+  AssignClass (6b9c74b0-cc9e-4934-99e2-6b46e1d4d56c)
+ Call ID: 6b9c74b0-cc9e-4934-99e2-6b46e1d4d56c
   Args:
     type: :Person
     source: Eugenie
-  AssignClass (2f0ef418-5ad4-432f-8651-e43db366b1fd)
- Call ID: 2f0ef418-5ad4-432f-8651-e43db366b1fd
+  AssignClass (e5992b43-7411-4020-a1f4-28cefd794cfa)
+ Call ID: e5992b43-7411-4020-a1f4-28cefd794cfa
   Args:
     type: :Woman
     source: Sienna_Elizabeth_Mapelli_Mozzi
-  AssignClass (bfcdc111-c545-4f52-b760-ae9877383e7f)
- Call ID: bfcdc111-c545-4f52-b760-ae9877383e7f
+  AssignClass (69b572d1-13aa-44f4-9a91-e8a0f7fc4bf9)
+ Call ID: 69b572d1-13aa-44f4-9a91-e8a0f7fc4bf9
   Args:
-    type: :Person
     source: Sienna_Elizabeth_Mapelli_Mozzi
-  AssignClass (a23c9cfe-53a6-4bde-b56b-86cecf208b64)
- Call ID: a23c9cfe-53a6-4bde-b56b-86cecf208b64
+    type: :Person
+  AssignClass (5c5e71f8-c436-45cb-a568-2bd2747f50df)
+ Call ID: 5c5e71f8-c436-45cb-a568-2bd2747f50df
   Args:
-    source: Athena_Elizabeth_Rose
     type: :Woman
-  AssignClass (1c1b12a4-fc98-44f8-a747-230074d96c93)
- Call ID: 1c1b12a4-fc98-44f8-a747-230074d96c93
+    source: Athena_Elizabeth_Rose
+  AssignClass (e974061c-24b4-4463-9fd0-49e6384cc245)
+ Call ID: e974061c-24b4-4463-9fd0-49e6384cc245
   Args:
+    source: Athena_Elizabeth_Rose
     type: :Person
-    source: Athena_Elizabeth_Rose
-  AddLiteral (7b60f045-a6d7-4481-932c-8e69af1ae25b)
- Call ID: 7b60f045-a6d7-4481-932c-8e69af1ae25b
+  AddTriple (3896fb16-c051-4f24-8423-c18b3e9dca01)
+ Call ID: 3896fb16-c051-4f24-8423-c18b3e9dca01
   Args:
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-    source: Beatrice_Elizabeth_Mary
-  AddLiteral (9c683d20-c016-4a88-a744-419c1ff9167e)
- Call ID: 9c683d20-c016-4a88-a744-419c1ff9167e
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Andrew_Mountbatten-Windsor
-    literal_value: Male
-  AddLiteral (e88c2194-b0df-4262-aecd-63751319b251)
- Call ID: e88c2194-b0df-4262-aecd-63751319b251
-  Args:
-    literal_value: Female
-    literal_type: xsd:string
-    source: Sarah_Ferguson
-    relation: :hasSex
-  AddLiteral (a5e52662-662c-49c3-9381-d56cb3e6c5b8)
- Call ID: a5e52662-662c-49c3-9381-d56cb3e6c5b8
-  Args:
-    literal_value: Male
-    source: Edoardo_Mapelli_Mozzi
-    literal_type: xsd:string
-    relation: :hasSex
-  AddLiteral (3ae4e815-adaa-48fd-8cfd-599721097842)
- Call ID: 3ae4e815-adaa-48fd-8cfd-599721097842
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Eugenie
-    literal_value: Female
-  AddLiteral (c7604b1b-4936-4f5c-99f1-364e341f01a0)
- Call ID: c7604b1b-4936-4f5c-99f1-364e341f01a0
-  Args:
-    literal_type: xsd:string
-    source: Sienna_Elizabeth_Mapelli_Mozzi
-    literal_value: Female
-    relation: :hasSex
-  AddLiteral (8d0f7001-5c38-4e2f-912a-3370fa19318d)
- Call ID: 8d0f7001-5c38-4e2f-912a-3370fa19318d
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Athena_Elizabeth_Rose
-    literal_value: Female
-  AddTriple (39d8b5d0-637c-43c5-8c35-054e743be18f)
- Call ID: 39d8b5d0-637c-43c5-8c35-054e743be18f
-  Args:
-    source: Beatrice_Elizabeth_Mary
     relation: :hasFather
     target: Andrew_Mountbatten-Windsor
-  AddTriple (73a42ec8-3863-402a-815b-24db77de574d)
- Call ID: 73a42ec8-3863-402a-815b-24db77de574d
+    source: Beatrice_Elizabeth_Mary
+  AddTriple (d85941fe-adba-4aad-9769-e5b61072da57)
+ Call ID: d85941fe-adba-4aad-9769-e5b61072da57
   Args:
+    source: Beatrice_Elizabeth_Mary
     relation: :hasMother
-    source: Beatrice_Elizabeth_Mary
     target: Sarah_Ferguson
-  AddTriple (e1c163fa-b0bd-442f-861e-2b962069c64d)
- Call ID: e1c163fa-b0bd-442f-861e-2b962069c64d
-  Args:
-    source: Beatrice_Elizabeth_Mary
-    relation: :hasSister
-    target: Eugenie
-  AddTriple (b01ece10-6840-4038-9c24-f248f8f983fd)
- Call ID: b01ece10-6840-4038-9c24-f248f8f983fd
+  AddTriple (7408dad6-4509-4aca-b0b1-e7c9d6244abd)
+ Call ID: 7408dad6-4509-4aca-b0b1-e7c9d6244abd
   Args:
     source: Eugenie
     relation: :hasFather
     target: Andrew_Mountbatten-Windsor
-  AddTriple (a2758bd8-3f70-4a74-8b8e-5ee49aac7ae3)
- Call ID: a2758bd8-3f70-4a74-8b8e-5ee49aac7ae3
+  AddTriple (bd61d68a-9b36-417b-8d7e-ceb1a9ceb719)
+ Call ID: bd61d68a-9b36-417b-8d7e-ceb1a9ceb719
   Args:
     target: Sarah_Ferguson
     relation: :hasMother
     source: Eugenie
-  AddTriple (89679c01-9f76-4532-893c-5e6210bc2d6e)
- Call ID: 89679c01-9f76-4532-893c-5e6210bc2d6e
+  AddLiteral (ada5a02f-79f9-402d-b42d-5f9fbd872eab)
+ Call ID: ada5a02f-79f9-402d-b42d-5f9fbd872eab
   Args:
-    target: Sarah_Ferguson
     source: Beatrice_Elizabeth_Mary
-    relation: :hasMother
-  AddTriple (80074487-adea-4e61-9ca9-e67a28c494f8)
- Call ID: 80074487-adea-4e61-9ca9-e67a28c494f8
-  Args:
-    source: Sienna_Elizabeth_Mapelli_Mozzi
-    relation: :hasMother
-    target: Beatrice_Elizabeth_Mary
-  AddTriple (6a530eba-d9cd-4c2e-a61a-f9d3d62a50ca)
- Call ID: 6a530eba-d9cd-4c2e-a61a-f9d3d62a50ca
-  Args:
-    target: Edoardo_Mapelli_Mozzi
-    source: Sienna_Elizabeth_Mapelli_Mozzi
-    relation: :hasFather
-  AddTriple (dc1ad015-48c2-4443-b47a-6d67f4fb06a3)
- Call ID: dc1ad015-48c2-4443-b47a-6d67f4fb06a3
-  Args:
-    relation: :hasMother
-    source: Athena_Elizabeth_Rose
-    target: Beatrice_Elizabeth_Mary
-  AddTriple (f2e186be-2375-487d-a871-a5204543e6d2)
- Call ID: f2e186be-2375-487d-a871-a5204543e6d2
-  Args:
-    target: Edoardo_Mapelli_Mozzi
-    relation: :hasFather
-    source: Athena_Elizabeth_Rose
-  AddLiteral (cdf88837-1572-418a-a3a8-d361176b1426)
- Call ID: cdf88837-1572-418a-a3a8-d361176b1426
-  Args:
-    literal_value: 1988
     literal_type: xsd:integer
-    source: Beatrice_Elizabeth_Mary
     relation: :hasBirthYear
-  AddLiteral (271fbc09-63b5-43c0-b74f-273f78fbfae6)
- Call ID: 271fbc09-63b5-43c0-b74f-273f78fbfae6
+    literal_value: 1988
+  AddTriple (77bae52e-f240-4e8e-8ac8-c12742fcc7e8)
+ Call ID: 77bae52e-f240-4e8e-8ac8-c12742fcc7e8
   Args:
-    literal_value: 2020
-    source: Beatrice_Elizabeth_Mary
+    source: Sienna_Elizabeth_Mapelli_Mozzi
+    target: Beatrice_Elizabeth_Mary
+    relation: :hasMother
+  AddTriple (1f7a236b-4c80-4f2a-9d39-71f7f7e96330)
+ Call ID: 1f7a236b-4c80-4f2a-9d39-71f7f7e96330
+  Args:
+    target: Edoardo_Mapelli_Mozzi
+    relation: :hasFather
+    source: Sienna_Elizabeth_Mapelli_Mozzi
+  AddTriple (0cc68c6f-1fdb-4bf6-8b1a-5e9b237defee)
+ Call ID: 0cc68c6f-1fdb-4bf6-8b1a-5e9b237defee
+  Args:
+    source: Athena_Elizabeth_Rose
+    target: Beatrice_Elizabeth_Mary
+    relation: :hasMother
+  AddTriple (4fd4000c-2566-47d3-99b5-d3ec399bbe85)
+ Call ID: 4fd4000c-2566-47d3-99b5-d3ec399bbe85
+  Args:
+    source: Athena_Elizabeth_Rose
+    relation: :hasFather
+    target: Edoardo_Mapelli_Mozzi
+  AddLiteral (e439ccf0-ac11-49b3-b136-0c76715051b2)
+ Call ID: e439ccf0-ac11-49b3-b136-0c76715051b2
+  Args:
     literal_type: xsd:integer
     relation: :hasMarriageYear
-  Finish (4af87ebc-bdcd-421b-9e8d-12900c93c53f)
- Call ID: 4af87ebc-bdcd-421b-9e8d-12900c93c53f
+    literal_value: 2020
+    source: Beatrice_Elizabeth_Mary
+  Finish (386ce9ce-5b2e-4ab6-af0d-14418e54fc78)
+ Call ID: 386ce9ce-5b2e-4ab6-af0d-14418e54fc78
   Args:

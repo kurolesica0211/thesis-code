@@ -2,54 +2,91 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia a :Man,
-        :Person ;
-    :hasFather data:Prince_Joachim_of_Prussia ;
-    :hasMother data:Marie-Auguste_of_Anhalt ;
-    :hasRelation data:Eva_Maria_Herrera_y_Valdeavellano,
-        data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich-Carolath,
-        data:Luise_Dora_Hartmann .
-
-data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
-        :Woman .
-
-data:Eduard_Duke_of_Anhalt a :Man,
-        :Person .
-
-data:Eitel_Friedrich_of_Prussia a :Man,
-        :Person .
-
-data:Eva_Maria_Herrera_y_Valdeavellano a :Person,
-        :Woman .
-
-data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich-Carolath a :Person,
-        :Woman .
-
-data:Luise_Dora_Hartmann a :Person,
-        :Woman .
-
-data:Luise_of_Saxe-Altenburg a :Person,
+data:Eug%C3%A9nie a :Person,
         :Woman ;
-    :hasFather data:Moritz_of_Saxe-Altenburg .
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Marie_Bonaparte ;
+    :isSisterOf data:Prince_Peter_of_Greece_and_Denmark .
 
-data:Moritz_of_Saxe-Altenburg a :Man,
+data:Irina_Aleksandrovna_Ovtchinnikova a :Person,
+        :Woman .
+
+data:Jehan_de_Monl%C3%A9on a :Man,
         :Person .
 
-data:Prince_Joachim_of_Prussia a :Man,
+data:King_Constantine_I a :Man,
+        :Person .
+
+data:King_George_II a :Man,
+        :Person .
+
+data:Lewis_%28Slodon%29_Sloden a :Man,
+        :Person .
+
+data:Olga a :Person,
+        :Woman .
+
+data:Prince_Axel_of_Denmark a :Man,
         :Person ;
-    :hasBirthYear 1890 ;
-    :hasDeathYear 1920 ;
-    :hasFather data:Wilhelm_II_German_Emperor ;
-    :hasMarriageYear 1916 ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
-    :hasRelation data:Marie-Auguste_of_Anhalt ;
-    :isBrotherOf data:Eitel_Friedrich_of_Prussia .
+    :hasFather data:Prince_Valdemar_of_Denmark .
 
-data:Wilhelm_II_German_Emperor a :Man,
+data:Princess_Alexia a :Person,
+        :Woman ;
+    :hasFather data:King_Constantine_II ;
+    :hasMother data:Princess_Anne-Marie_of_Denmark .
+
+data:Princess_Frederica_of_Hanover a :Person,
+        :Woman .
+
+data:Princess_Irene a :Person,
+        :Woman ;
+    :hasFather data:Prince_Paul .
+
+data:Princess_Sophia a :Person,
+        :Woman ;
+    :hasFather data:Prince_Paul .
+
+data:Princess_Tatiana_Radziwill a :Person,
+        :Woman .
+
+data:Sophia a :Person,
+        :Woman .
+
+data:King_Constantine_II a :Man,
+        :Person ;
+    :hasFather data:Prince_Paul .
+
+data:King_George_I_of_Greece a :Man,
         :Person .
 
-data:Marie-Auguste_of_Anhalt a :Person,
+data:Marie-F%C3%A9lix_Blanc a :Person,
+        :Woman .
+
+data:Prince_Peter_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Marie_Bonaparte .
+
+data:Prince_Roland_Bonaparte a :Man,
+        :Person .
+
+data:Prince_Valdemar_of_Denmark a :Man,
+        :Person .
+
+data:Princess_Anne-Marie_of_Denmark a :Person,
+        :Woman .
+
+data:Prince_George_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasFather data:King_George_I_of_Greece .
+
+data:Princess_Marie_Bonaparte a :Person,
         :Woman ;
-    :hasFather data:Eduard_Duke_of_Anhalt ;
-    :hasMother data:Luise_of_Saxe-Altenburg .
+    :hasFather data:Prince_Roland_Bonaparte ;
+    :hasMother data:Marie-F%C3%A9lix_Blanc .
+
+data:Prince_Paul a :Man,
+        :Person .
 

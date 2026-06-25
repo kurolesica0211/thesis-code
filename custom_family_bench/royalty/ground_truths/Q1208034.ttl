@@ -7,63 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Ernst_August-_Prince_of_Hanover a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Ernst August, Prince of Hanover" ;
-    data:posIndicesFull "193:224" ;
-    data:posIndicesPart "417:424",
-        "789:795",
-        "796:801",
-        "802:808" ;
-    data:wdtLink wdt:Q61079 ;
-    :alsoKnownAs "Ernest Augustus of Hanover",
-        "Ernest Augustus, Prince of Hanover",
-        "Ernst August IV",
-        "Ernst August of Hanover",
-        "Prince Ernest Augustus of Hanover",
-        "Prince Ernst August of Hanover" ;
-    :hasChild data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasSex data:male ;
-    :hasSon data:Ernst_August-_Prince_of_Hanover_1 ;
-    :isFatherOf data:Ernst_August-_Prince_of_Hanover_1 ;
-    :isParentOf data:Ernst_August-_Prince_of_Hanover_1 .
-
-data:Princess_Caroline_of_Monaco a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Caroline of Monaco" ;
-    data:posIndicesFull "148:175" ;
-    data:posIndicesPart "1075:1083",
-        "1084:1092",
-        "1229:1235",
-        "1453:1459",
-        "1683:1689",
-        "1740:1746",
-        "2340:2346",
-        "566:574",
-        "893:899" ;
-    data:wdtLink wdt:Q233966 ;
-    :alsoKnownAs "Caroline, Princess of Hanover",
-        "Princess Caroline Louise Marguerite of Monaco",
-        "Princess Caroline Louise Marguerite of Monaco and Hanover" ;
-    :hasChild data:Princess_Alexandra_of_Hanover_1 ;
-    :hasDaughter data:Princess_Alexandra_of_Hanover_1 ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Alexandra_of_Hanover_1 ;
-    :isParentOf data:Princess_Alexandra_of_Hanover_1 .
-
-data:Prince_Christian_of_Hanover a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Christian_of_Hanover a :Person ;
     rdfs:label "Prince Christian of Hanover" ;
     data:posIndicesFull "813:840",
         "820:840" ;
@@ -79,18 +23,10 @@ data:Prince_Christian_of_Hanover a :Man,
         "Christian von Hannover",
         "Cristián de Hannover",
         "Prince Christian Heinrich Clemens Paul Frank Peter Welf Wilhelm-Ernst Friedrich Franz of Hanover" ;
-    :hasFather data:Ernst_August-_Prince_of_Hanover_1 ;
     :hasParent data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Alexandra_of_Hanover_1 ;
-    :isBrotherOf data:Princess_Alexandra_of_Hanover_1 ;
-    :isChildOf data:Ernst_August-_Prince_of_Hanover_1 ;
-    :isSiblingOf data:Princess_Alexandra_of_Hanover_1 ;
-    :isSonOf data:Ernst_August-_Prince_of_Hanover_1 .
+    :hasSex data:male .
 
-data:Princess_Alexandra_of_Hanover_1 a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Alexandra_of_Hanover_1 a :Person ;
     rdfs:label "Princess Alexandra of Hanover" ;
     data:posIndicesFull "0:29",
         "1196:1225",
@@ -117,29 +53,64 @@ data:Princess_Alexandra_of_Hanover_1 a :Person,
         "Alexandra of Hanover",
         "Princess Alexandra Charlotte Ulrike Maryam Virginia of Hannover",
         "Princess Alexandra Charlotte Ulrike Maryam Virginia of Hanover" ;
-    :hasBrother data:Prince_Christian_of_Hanover ;
-    :hasFather data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasMother data:Princess_Caroline_of_Monaco ;
     :hasParent data:Ernst_August-_Prince_of_Hanover_1,
         data:Princess_Caroline_of_Monaco ;
-    :hasSex data:female ;
-    :isChildOf data:Ernst_August-_Prince_of_Hanover_1,
-        data:Princess_Caroline_of_Monaco ;
-    :isDaughterOf data:Ernst_August-_Prince_of_Hanover_1,
-        data:Princess_Caroline_of_Monaco ;
-    :isSiblingOf data:Prince_Christian_of_Hanover ;
-    :isSisterOf data:Prince_Christian_of_Hanover .
+    :hasSex data:female .
 
-data:Ernst_August-_Prince_of_Hanover_1 a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Ernst_August-_Duke_of_Brunswick a :Person ;
+    rdfs:label "Ernst August, Duke of Brunswick" ;
+    data:posIndicesFull "193:205",
+        "796:808" ;
+    data:wdtLink wdt:Q57672 ;
+    :alsoKnownAs "Ernest August I, Duke of Brunswick",
+        "Ernest Augustus",
+        "Ernst August I of Brunswick" ;
+    :hasSex data:male .
+
+data:Ernst_August-_Prince_of_Hanover a :Person ;
     rdfs:label "Ernst August, Prince of Hanover" ;
     data:posIndicesFull "193:224" ;
     data:posIndicesPart "417:424",
-        "789:795",
-        "796:801",
-        "802:808" ;
+        "789:795" ;
+    data:wdtLink wdt:Q61079 ;
+    :alsoKnownAs "Ernest Augustus of Hanover",
+        "Ernest Augustus, Prince of Hanover",
+        "Ernst August IV",
+        "Ernst August of Hanover",
+        "Prince Ernest Augustus of Hanover",
+        "Prince Ernst August of Hanover" ;
+    :hasParent data:Ernst_August-_Duke_of_Brunswick ;
+    :hasSex data:male .
+
+data:Princess_Caroline_of_Monaco a :Person ;
+    rdfs:label "Princess Caroline of Monaco" ;
+    data:posIndicesFull "148:175" ;
+    data:posIndicesPart "1075:1083",
+        "1084:1092",
+        "1229:1235",
+        "1453:1459",
+        "1683:1689",
+        "1740:1746",
+        "2340:2346",
+        "566:574",
+        "893:899" ;
+    data:wdtLink wdt:Q233966 ;
+    :alsoKnownAs "Caroline, Princess of Hanover",
+        "Princess Caroline Louise Marguerite of Monaco",
+        "Princess Caroline Louise Marguerite of Monaco and Hanover" ;
+    :hasSex data:female .
+
+data:Ernst_August-_Prince_of_Hanover_1 a :Person ;
+    rdfs:label "Ernst August, Prince of Hanover" ;
+    data:posIndicesFull "193:224" ;
+    data:posIndicesPart "417:424",
+        "789:795" ;
     data:wdtLink wdt:Q58070 ;
     :alsoKnownAs "Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig of Hanover",
         "Ernst August Prinz von Hannover",
@@ -149,17 +120,10 @@ data:Ernst_August-_Prince_of_Hanover_1 a :Ancestor,
         "Prince Ernst August Sr.",
         "Prince Ernst August of Hanover",
         "Prince Ernst August of Hanover (born 1954)" ;
-    :hasChild data:Prince_Christian_of_Hanover,
-        data:Princess_Alexandra_of_Hanover_1 ;
-    :hasDaughter data:Princess_Alexandra_of_Hanover_1 ;
-    :hasFather data:Ernst_August-_Prince_of_Hanover ;
     :hasParent data:Ernst_August-_Prince_of_Hanover ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Christian_of_Hanover ;
-    :isChildOf data:Ernst_August-_Prince_of_Hanover ;
-    :isFatherOf data:Prince_Christian_of_Hanover,
-        data:Princess_Alexandra_of_Hanover_1 ;
-    :isParentOf data:Prince_Christian_of_Hanover,
-        data:Princess_Alexandra_of_Hanover_1 ;
-    :isSonOf data:Ernst_August-_Prince_of_Hanover .
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

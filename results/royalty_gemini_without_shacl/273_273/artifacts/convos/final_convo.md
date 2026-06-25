@@ -69,44 +69,35 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lady Amelia Sophia Theodora Mary Margaret Windsor (born 24 August 1995) is a British fashion model and a member of the extended British royal family.
-She is a granddaughter of Prince Edward, Duke of Kent, and therefore a great-great-granddaughter of George V and Queen Mary.
-Early life and family
+Lady Marina Charlotte
+Alexandra Katharine Helen Windsor (born 30 September 1992) is a British philanthropic executive and relative of the British royal family.
+Early life, family, and education
 
-Lady Amelia Sophia Theodora Mary Margaret Windsor was born on 24 August 1995 at the Rosie Hospital in Cambridge.
-She is the youngest child of George Windsor, Earl of St Andrews, and his wife, Sylvana Tomaselli.
-Her paternal grandfather, Prince Edward, Duke of Kent, is a first cousin of Elizabeth II and her father is a second cousin of Charles III.
-Her paternal great grandparents were Prince George, Duke of Kent, and Princess Marina of Greece and Denmark, a granddaughter of George I of Greece and first cousin of Prince Philip, Duke of Edinburgh.
-Her paternal great-great grandparents were George V and Mary of Teck.
-Her paternal grandmother, Katharine, Duchess of Kent, was the daughter of Sir William Worsley, 4th Baronet.
-Amelia descends maternally from the Austrian Tomaselli family.
-She is the younger sister of Edward Windsor, Lord Downpatrick, and Lady Marina Windsor.
-She is a third cousin of William, Prince of Wales, and Prince Harry, Duke of Sussex.
-Career
-
-Amelia is signed with Storm Model Management.
-In 2018, Amelia released a collaboration with Penelope Chilvers for a line of shoes, and modelled for the line in a video campaign in Spain.
-Amelia has worked for Chanel, Azzedine Alaia, and interned at BVLGARI.
-In October 2018 Amelia became the spokesmodel for British make-up brand Illamasqua.
-In 2020, Amelia began contributing to a new environmental platform called Talia Collective, writing about eco-travel and lifestyle.
+Lady Marina Charlotte
+Alexandra Katharine Helen Windsor was born on 30 September 1992 at the Rosie Hospital in Cambridge, Cambridgeshire, the second child of George Windsor, Earl of St Andrews, a diplomat and member of the House of Windsor, and Sylvana Tomaselli, a Canadian historian and member of the Austrian-Italian Tomaselli family.
+Her older brother is Edward Windsor, Lord Downpatrick, and her younger sister is Lady Amelia Windsor.
+She is a paternal granddaughter of Prince Edward, Duke of Kent, who is a first cousin of Elizabeth II, and Katharine, Duchess of Kent, the only daughter of Sir William Worsley, 4th Baronet.
+Marina is named after her great-grandmother Princess Marina of Greece and Denmark.
+On 21 January 1993, Marina was christened Marina Charlotte
+Alexandra Katharine Helen Windsor in a Church of England ceremony by William Booth, the sub-dean of the Chapel Royal at St James's Palace.
+Her godparents are Lady Ralph Kerr, Katherine Ruth Panter, William Hanbury-Tenison, and Sasha Poklewski-Koziell.
+Marina attended St Mary's School, Ascot, a Roman Catholic boarding school for girls.
 Succession rights
 
-Amelia's father, the Earl of St Andrews, lost his succession rights to the British throne according to the Act of Settlement 1701 as a consequence of marrying a Catholic.
-Although her grandmother, the Duchess of Kent, had converted to Catholicism in 1994, it did not remove her grandfather, Prince Edward, from the line of succession as the duchess was Anglican at the time of their wedding in 1961 and the Act of Settlement 1701 did not take into consideration a person married to someone in the line of succession converting to Catholicism.
-Her uncle, Lord Nicholas Windsor, converted to Catholicism in 2001, which removed him from the line of succession.
-In 2013, the Succession to the Crown Act was passed, giving Amelia's father succession rights once again.
-Amelia's two older siblings were confirmed in the Catholic faith and therefore lost their succession rights.
+Until 2008, Marina was 25th in the line of succession to the British throne.
+, Marina modelled for Hardy Amies in Tatler alongside her siblings.
 Personal life
 
-After graduating from St Mary's School, Ascot, Amelia spent a gap year in India and Thailand before studying French and Italian at the University of Edinburgh.
-Amelia was named in the Vanity Fair International Best Dressed List in 2017.
-Amelia lives in a flat in Notting Hill, West London.
+She attended the wedding of her third cousin Prince William, Duke of Cambridge to Catherine Middleton in 2011.
+In May 2012, Marina travelled to Thailand, where she trained in Muay Thai boxing.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +113,9 @@ Amelia lives in a flat in Notting Hill, West London.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +130,23 @@ Amelia lives in a flat in Notting Hill, West London.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +164,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +246,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +269,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +289,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +299,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +339,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,106 +438,135 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (63cca64e-1d33-4243-90fe-a21145b66014)
- Call ID: 63cca64e-1d33-4243-90fe-a21145b66014
-  Args:
-    source: Lady_Amelia_Windsor
-    type: :Woman
-  AssignClass (31baa85c-00a5-4091-b0ea-02bff5f3fcd7)
- Call ID: 31baa85c-00a5-4091-b0ea-02bff5f3fcd7
-  Args:
-    source: George_Windsor_Earl_of_St_Andrews
-    type: :Man
-  AssignClass (38723fcd-b6e3-4ead-a653-7fe4f248e27a)
- Call ID: 38723fcd-b6e3-4ead-a653-7fe4f248e27a
+  AssignClass (6526097b-2066-48f7-bf5d-9eec23d5e6b3)
+ Call ID: 6526097b-2066-48f7-bf5d-9eec23d5e6b3
   Args:
     type: :Woman
-    source: Sylvana_Tomaselli
-  AssignClass (fb977ba4-5751-4033-9c24-cd4cd4eaf8de)
- Call ID: fb977ba4-5751-4033-9c24-cd4cd4eaf8de
+    source: :Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor
+  AssignClass (7bbc6881-35c4-4c61-9ab4-2ba144cdafbe)
+ Call ID: 7bbc6881-35c4-4c61-9ab4-2ba144cdafbe
   Args:
-    type: :Man
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (e4d02434-d93b-43c8-991d-a147613de75e)
- Call ID: e4d02434-d93b-43c8-991d-a147613de75e
+    source: :Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor
+    type: :Person
+  AddLiteral (ae4408c9-f62e-4236-829a-949cd8e44a89)
+ Call ID: ae4408c9-f62e-4236-829a-949cd8e44a89
   Args:
-    type: :Woman
-    source: Katharine_Duchess_of_Kent
-  AssignClass (d911cd2d-f117-4e16-bd96-d4d5bf8da458)
- Call ID: d911cd2d-f117-4e16-bd96-d4d5bf8da458
-  Args:
-    type: :Man
-    source: Edward_Windsor_Lord_Downpatrick
-  AssignClass (3ba99433-5e5e-4a75-8ee7-79407e31942b)
- Call ID: 3ba99433-5e5e-4a75-8ee7-79407e31942b
-  Args:
-    source: Lady_Marina_Windsor
-    type: :Woman
-  AssignClass (927fe097-527d-4b6f-bf70-33f89c6e43f3)
- Call ID: 927fe097-527d-4b6f-bf70-33f89c6e43f3
-  Args:
-    source: Lord_Nicholas_Windsor
-    type: :Man
-  AssignClass (5fd7e116-99da-476c-9544-c703ebea8894)
- Call ID: 5fd7e116-99da-476c-9544-c703ebea8894
-  Args:
-    type: :Man
-    source: Sir_William_Worsley_4th_Baronet
-  AddLiteral (a0490381-c790-4833-86d8-62e8368a1c94)
- Call ID: a0490381-c790-4833-86d8-62e8368a1c94
-  Args:
-    source: Lady_Amelia_Windsor
-    literal_value: 1995
+    source: :Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor
     relation: :hasBirthYear
+    literal_value: 1992
     literal_type: xsd:integer
-  AddTriple (c40d284a-cebe-446c-82fa-23577506d03d)
- Call ID: c40d284a-cebe-446c-82fa-23577506d03d
+  AssignClass (bff0b11b-0b42-4f59-986b-9bfb7ee1d2b4)
+ Call ID: bff0b11b-0b42-4f59-986b-9bfb7ee1d2b4
   Args:
-    target: George_Windsor_Earl_of_St_Andrews
-    source: Lady_Amelia_Windsor
+    type: :Man
+    source: :George_Windsor_Earl_of_St_Andrews
+  AssignClass (c498f2c8-d55b-40c8-ba3e-0dfb0eda5512)
+ Call ID: c498f2c8-d55b-40c8-ba3e-0dfb0eda5512
+  Args:
+    source: :George_Windsor_Earl_of_St_Andrews
+    type: :Person
+  AssignClass (c7c558d7-b812-4e81-a6a4-66171ba603c5)
+ Call ID: c7c558d7-b812-4e81-a6a4-66171ba603c5
+  Args:
+    type: :Woman
+    source: :Sylvana_Tomaselli
+  AssignClass (e0b932b6-862b-48b2-84e4-764459102a9d)
+ Call ID: e0b932b6-862b-48b2-84e4-764459102a9d
+  Args:
+    type: :Person
+    source: :Sylvana_Tomaselli
+  AddTriple (8d4f8067-a247-4306-94d3-3b02cfca3767)
+ Call ID: 8d4f8067-a247-4306-94d3-3b02cfca3767
+  Args:
     relation: :hasFather
-  AddTriple (7422613a-1d4a-48b9-9d0f-6f6513ee3292)
- Call ID: 7422613a-1d4a-48b9-9d0f-6f6513ee3292
+    target: :George_Windsor_Earl_of_St_Andrews
+    source: :Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor
+  AddTriple (fbfe1e72-46b0-412f-b1e4-2e33fb44f68f)
+ Call ID: fbfe1e72-46b0-412f-b1e4-2e33fb44f68f
   Args:
-    source: Lady_Amelia_Windsor
-    target: Sylvana_Tomaselli
+    source: :Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor
+    target: :Sylvana_Tomaselli
     relation: :hasMother
-  AddTriple (bca47b83-8223-4c21-bec4-712f4abae2ce)
- Call ID: bca47b83-8223-4c21-bec4-712f4abae2ce
+  AssignClass (a05493c4-c905-42b3-8785-62681729b394)
+ Call ID: a05493c4-c905-42b3-8785-62681729b394
   Args:
-    source: George_Windsor_Earl_of_St_Andrews
-    target: Prince_Edward_Duke_of_Kent
-    relation: :hasFather
-  AddTriple (d7a073e2-f4f5-4280-835c-f0dd538ac937)
- Call ID: d7a073e2-f4f5-4280-835c-f0dd538ac937
+    source: :Edward_Windsor_Lord_Downpatrick
+    type: :Man
+  AssignClass (6254b68a-9300-42db-82df-bf82a5f2b55f)
+ Call ID: 6254b68a-9300-42db-82df-bf82a5f2b55f
   Args:
-    relation: :hasMother
-    source: George_Windsor_Earl_of_St_Andrews
-    target: Katharine_Duchess_of_Kent
-  AddTriple (4c61777b-5c4d-4320-aa4b-6e5f4469f262)
- Call ID: 4c61777b-5c4d-4320-aa4b-6e5f4469f262
+    source: :Edward_Windsor_Lord_Downpatrick
+    type: :Person
+  AddTriple (3f5294c3-1792-4b3e-acc1-ff2191b98f36)
+ Call ID: 3f5294c3-1792-4b3e-acc1-ff2191b98f36
   Args:
-    target: Sir_William_Worsley_4th_Baronet
-    source: Katharine_Duchess_of_Kent
-    relation: :hasFather
-  AddTriple (680816c0-d962-4e55-9ae9-6cd71fcdbbcb)
- Call ID: 680816c0-d962-4e55-9ae9-6cd71fcdbbcb
-  Args:
-    source: Lady_Amelia_Windsor
-    target: Edward_Windsor_Lord_Downpatrick
+    source: :Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor
+    target: :Edward_Windsor_Lord_Downpatrick
     relation: :hasBrother
-  AddTriple (256e8ae2-bb63-461f-9ac6-66a8e726240a)
- Call ID: 256e8ae2-bb63-461f-9ac6-66a8e726240a
+  AssignClass (d4c03ab0-e6f4-46af-844d-eb612f71b667)
+ Call ID: d4c03ab0-e6f4-46af-844d-eb612f71b667
   Args:
-    target: Lady_Marina_Windsor
-    source: Lady_Amelia_Windsor
+    source: :Lady_Amelia_Windsor
+    type: :Woman
+  AssignClass (35acdfc5-9e81-4bd0-a8c3-112558556d93)
+ Call ID: 35acdfc5-9e81-4bd0-a8c3-112558556d93
+  Args:
+    type: :Person
+    source: :Lady_Amelia_Windsor
+  AddTriple (ceb1e8f0-32ff-4580-be3d-42d899f3ce70)
+ Call ID: ceb1e8f0-32ff-4580-be3d-42d899f3ce70
+  Args:
+    source: :Lady_Marina_Charlotte_Alexandra_Katharine_Helen_Windsor
     relation: :hasSister
-  AddTriple (67d2f2c0-ce90-4c3e-822f-33bcd46a6c5d)
- Call ID: 67d2f2c0-ce90-4c3e-822f-33bcd46a6c5d
+    target: :Lady_Amelia_Windsor
+  AssignClass (e1e8c48a-9644-49d6-bac0-573bea493d13)
+ Call ID: e1e8c48a-9644-49d6-bac0-573bea493d13
   Args:
-    relation: :isParentOf
-    target: Lord_Nicholas_Windsor
-    source: Prince_Edward_Duke_of_Kent
-  Finish (09b92517-1877-4536-b15c-8075009621f7)
- Call ID: 09b92517-1877-4536-b15c-8075009621f7
+    source: :Prince_Edward_Duke_of_Kent
+    type: :Man
+  AssignClass (3f062f5d-6d3f-4d68-8571-ecd19b872698)
+ Call ID: 3f062f5d-6d3f-4d68-8571-ecd19b872698
+  Args:
+    type: :Person
+    source: :Prince_Edward_Duke_of_Kent
+  AssignClass (b0eb6eb5-3b61-4ce7-928a-f6018a5f088a)
+ Call ID: b0eb6eb5-3b61-4ce7-928a-f6018a5f088a
+  Args:
+    type: :Woman
+    source: :Katharine_Duchess_of_Kent
+  AssignClass (7b28741f-46ec-4559-84e6-0e66b6383ecc)
+ Call ID: 7b28741f-46ec-4559-84e6-0e66b6383ecc
+  Args:
+    type: :Person
+    source: :Katharine_Duchess_of_Kent
+  AddTriple (b18c2dfc-2072-41a8-80a5-ac6fb04011e9)
+ Call ID: b18c2dfc-2072-41a8-80a5-ac6fb04011e9
+  Args:
+    source: :George_Windsor_Earl_of_St_Andrews
+    relation: :hasFather
+    target: :Prince_Edward_Duke_of_Kent
+  AddTriple (d55a667b-cc3f-479e-92e6-f759d358a0cb)
+ Call ID: d55a667b-cc3f-479e-92e6-f759d358a0cb
+  Args:
+    relation: :hasMother
+    target: :Katharine_Duchess_of_Kent
+    source: :George_Windsor_Earl_of_St_Andrews
+  AssignClass (c8247994-806a-4bcb-919e-77f11a648d0b)
+ Call ID: c8247994-806a-4bcb-919e-77f11a648d0b
+  Args:
+    type: :Man
+    source: :Sir_William_Worsley_4th_Baronet
+  AssignClass (42b1cf36-d2aa-429f-bb01-e14dcf17a07e)
+ Call ID: 42b1cf36-d2aa-429f-bb01-e14dcf17a07e
+  Args:
+    type: :Person
+    source: :Sir_William_Worsley_4th_Baronet
+  AddTriple (e55e02cd-67f0-4b22-9006-b753ebdd3faa)
+ Call ID: e55e02cd-67f0-4b22-9006-b753ebdd3faa
+  Args:
+    relation: :hasFather
+    target: :Sir_William_Worsley_4th_Baronet
+    source: :Katharine_Duchess_of_Kent
+  Finish (a22bee77-0613-4dda-ab92-37b5fc53b8ee)
+ Call ID: a22bee77-0613-4dda-ab92-37b5fc53b8ee
   Args:

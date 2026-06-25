@@ -137,10 +137,8 @@ By tradition, Danish kings were alternately named either Frederik or Christian.
 She chose to maintain this by assuming the position of a Christian, and thus named her elder son Frederik.
 In 1974, she and Henrik purchased Château de Cayx in the wine district of Cahors in Southern France.
 Among others, Margrethe is the godmother of King Willem-Alexander of the Netherlands, Crown Prince Haakon of Norway and Prince Carl Philip of Sweden as well as actress Ellen Hillingsø and politician Marcus Knuth.
-She is a close personal friend of Queen Sonja of Norway with whom she shares a love of the arts.
 Margrethe announced in 2008 that her male-line descendants would bear the additional title of Count or Countess of Monpezat in recognition of her husband's ancestry.
 In 2022, the Queen announced that, from the start of 2023, the descendants of Prince Joachim will only be able to use their titles of Count and Countess of Monpezat, their previous titles of Prince and Princess of Denmark ceasing to exist.
-To allow the children, who were never expected to hold an official role within the royal family, to have normal lives, the Queen wanted "to create a framework for the four grandchildren, to a much greater degree, to be able to shape their own existence without being limited by the special considerations and obligations that a formal affiliation with the Royal House as an institution implies".
 Her son, Joachim, daughter-in-law, Marie, former daughter-in-law, Alexandra, and eldest grandson, Nikolai, publicly expressed shock and confusion because of the decision, after which Margrethe released a statement in which she said that it saddened her that she had upset Joachim's family.
 Along with her late husband, Margrethe has kept dachshunds since the 1970s.
 As of April 2026, she has one dog, the dachshund Tilia, who was Prince Henrik's dog until his death in 2018 (her own dog, Helike, passed away the same year).
@@ -154,13 +152,7 @@ She ascended the throne on Frederik's death on 14 January, becoming the first fe
 The following day, Prime Minister Jens Otto Krag led her formal proclamation ceremony from the balcony of Christiansborg Palace, in which she also announced her royal motto as "God's help, the love of the people, Denmark's strength" (Danish: Guds hjælp, folkets kærlighed, Danmarks styrke).
 Her regnal number was chosen in recognition of Margrethe I, the 14th-century queen regnant of the Kalmar Union.
 As queen, she relinquished all the monarch's former titles except the title to Denmark, hence her style "By the Grace of God, Queen of Denmark" (Danish: Margrethe den Anden, af Guds Nåde Danmarks Dronning).
-Constitutional role
-
-The Queen's main tasks were to represent the kingdom abroad and to be a unifying figure at home.
 As a constitutional sovereign, Margrethe took no part in party politics and does not express any political opinions.
-The Queen held a meeting with the prime minister and the foreign affairs minister every Wednesday, unless either she or the prime minister was outside of the kingdom.
-After an election where the incumbent prime minister does not have a majority behind him or her, the Queen held a "Dronningerunde" (Queen's meeting) in which she met the chairmen of each of the Danish political parties.
-Once the government had been formed, the Queen formally appointed it.
 In practice, nearly all of the Queen's formal powers were exercised by the Cabinet of Denmark.
 It was customary for Margrethe, as the Danish monarch, to host the annual New Year levées.
 Every year on 1 January, a banquet was held for the government, the Speaker of the Danish Parliament, representatives of official Denmark and the Royal Court at Christian VIII's Palace at Amalienborg.
@@ -183,8 +175,6 @@ In an interview within the 2016 book De dybeste rødder (The Deepest Roots), acc
 Silver, Ruby and Golden Jubilees
 
 Margrethe marked her Silver Jubilee in 1997 with a religious service and a gala dinner attended by fellow Scandinavian royals.
-The Queen's Golden Jubilee was marked on 14 January 2022, with celebrations to take place later in the year.
-In September, following the death of Queen Elizabeth II of the United Kingdom, it was announced by the Royal House that it was "Her Majesty The Queen's wish that a number of adjustments be made" to the upcoming celebrations.
 Between Elizabeth II's death and her abdication, Margrethe was Europe's longest-reigning monarch, the world's only queen regnant, and the longest-serving incumbent female head of state.
 Sitting reign record
 
@@ -192,7 +182,6 @@ In July 2023, the Danish Royal House recognized Margrethe II as Denmark's longes
 Though Christian IV reigned for more than 59 years between 1588 and 1648, he was not officially installed until 1596, ruling with a "guardian government" up until then.
 , Margrethe announced her abdication, which took place on 14 January 2024, the 52nd anniversary of her accession to the throne.
 Margrethe's elder son, Frederik, assumed the throne as Frederik X. Mirroring her first New Year Address in 1973, she said of the succession: "The support and assistance which I have received throughout the years, have been crucial to the success of my task.
-It is my hope that the new King and Queen will be met with the same trust and devotion which have fallen to my lot.
 "
 
 
@@ -203,13 +192,8 @@ In October 2025, Margrethe undertook her first official visit abroad after her a
 Health issues
 
 Queen Margrethe II has had a number of health issues.
-On 9 February 2022, the Danish court disclosed in a press release that the Queen had contracted COVID-19.
-On 13 February, the Queen was able to leave home isolation after having had a mild case of the virus.
 On 21 September 2022, the Danish Royal House disclosed in a press release that Margrethe had tested positive for COVID-19 a second time after attending the state funeral of Elizabeth II, her third cousin, in London.
-On 22 February 2023, the Queen underwent "major back surgery" at Rigshospitalet due to continued back pain.
-In a statement the following day, a representative for the Queen said that the surgery had gone well and that she had already been up for a walk.
 Margrethe has been a chain smoker and was well known for her tobacco habit.
-On 23 November 2006, the Danish newspaper B.T. printed an announcement from the Royal Court that the Queen would henceforth smoke only in private.
 In 2023, the Court confirmed that Margrethe had quit smoking in connection with her back surgery the same year.
 Public image and style
 
@@ -218,7 +202,6 @@ Margrethe wears designs by former Pierre Balmain designer Erik Mortensen, Jørge
 
 
 A 2012 poll showed support for the monarchy in Denmark remained consistently high at around 82%, compared to less than half when she acceded to the throne in 1972.
-The Queen has been depicted on the annual christmas seal twice—as a child in 1942 and following her accession to the throne in 1972.
 Margrethe was included in Andy Warhol's portrait series in 1985 as one of four Reigning Queens, along with queens Ntfombi of Eswatini, Elizabeth II and Beatrix of the Netherlands.
 Tributes
 
@@ -232,7 +215,6 @@ Margrethe has maintained avid engagement with the creative arts throughout her r
 Archaeology
 
 Margrethe is known for her strong archaeological passion and has participated in several excavations, including in Italy, Egypt, Denmark, Sudan and South America.
-In 1952, she visited the archaeological site at Illerup Ådal with her paternal grandmother, Queen Alexandrine, which was her first visit to an excavation site.
 She shared this interest with her grandfather, Gustaf VI Adolf of Sweden, with whom she visited multiple archaeological digs, among them in Etruria in 1962.
 In the 2019 biography Dronning Margrethe, Margrethe revealed that if she hadn't been destined to become queen, she would have "tried to become an archaeologist".
 Church textiles
@@ -245,15 +227,12 @@ Découpage
 
 Since the mid-1970s, Margrethe has been using the découpage technique, which involves combining clippings from periodicals and books for new motifs.
 The découpage often references literary, mythological, or art-historical topics, and is often displayed in royal palaces, particularly Christian VII's Palace at Amalienborg.
-Sealed with a protective lacquer, the Queen's découpage works generally have references to literary, mythological or art-historical topics.
 Margrethe's découpage works have also been used in various books and films, including Prince Henrik's poetry collections Cantabile (2000) and Frihjul (2010).
 Embroidery
 
 As a child, Margrethe preferred drawing rather than needlework, but since 1960, numerous embroideries have been presented as gifts or used in the Queen's own rooms.
 The embroideries are made from patterns that Margrethe herself creates on graph paper, which includes twining shapes and the recipient's monogram.
-The Queen has designed several embroideries for the Danish Handcraft Guild, including patterns for calendars, cushion covers and dinner mats.
 Margrethe has also designed evening bags and spectacle cases for friends and family members, including Christmas calendars for all of the grandchildren, cushion covers and furniture covers for the palaces, and fireplace screens for Fredensborg Palace.
-The Queen's private embroideries were exhibited at Koldinghus Castle in 2021.
 Films
 
 The Queen has worked as a screenwriter alongside Per Brink Abrahamsen on the two Hans Christian Andersen adaptations The Snow Queen  from 2000 and The Wild Swans  from 2009.
@@ -268,7 +247,6 @@ She has also designed her own personal monogram; the personal monograms of her s
 Scenography and costume design
 
 Over the years, Margrethe has become involved in ballet as a scenographer and costume designer.
-The Queen designed 51 costumes for the 2023 film Ehrengard: The Art of Seduction as well as 81 découpages that were the basis for the sets.
 Margrethe has designed sets and costumes for numerous ballets.
 Since 2001, she has worked with the Tivoli Ballet Theatre:
 
@@ -280,7 +258,6 @@ Visual art
 
 Margrethe is an accomplished painter and has exhibited many of her works over the years.
 In 2000, she illustrated Prince Henrik's poetry collection Cantabile.
-Under the title From mountains to coast, she and her close friend, Queen Sonja of Norway, exhibited selected works inspired by nature at the Barony Rosendal in 2015.
 Under the pseudonym Ingahild Grathmer (the latter being an anagram for Margrethe and the former made up of her secondary names Ingrid, Alexandrine and Þórhildur), her illustrations were used for Danish editions of The Lord of the Rings, which she was encouraged to illustrate in the early 1970s.
 
 
@@ -288,6 +265,8 @@ Under the pseudonym Ingahild Grathmer (the latter being an anagram for Margrethe
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -303,39 +282,9 @@ Under the pseudonym Ingahild Grathmer (the latter being an anagram for Margrethe
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -350,6 +299,23 @@ Under the pseudonym Ingahild Grathmer (the latter being an anagram for Margrethe
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -367,6 +333,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -434,29 +415,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -465,6 +438,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -477,6 +458,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -485,17 +468,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -523,6 +508,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -538,174 +607,200 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bde8318a-bdc6-4e38-bb59-68669e3261b5)
- Call ID: bde8318a-bdc6-4e38-bb59-68669e3261b5
+  AssignClass (c7c3e155-5329-4752-84d3-fe398164437c)
+ Call ID: c7c3e155-5329-4752-84d3-fe398164437c
   Args:
-    type: :Person
-    source: Margrethe_II
-  AssignClass (e2476227-7513-4d92-9f0e-e878bf6c9f0f)
- Call ID: e2476227-7513-4d92-9f0e-e878bf6c9f0f
-  Args:
+    source: :Margrethe_II
     type: :Woman
-    source: Margrethe_II
-  AssignClass (48b36780-6b9e-4aeb-bdb0-1edf502594af)
- Call ID: 48b36780-6b9e-4aeb-bdb0-1edf502594af
+  AddLiteral (22f7b2d4-260b-475c-9660-57381c7fab9e)
+ Call ID: 22f7b2d4-260b-475c-9660-57381c7fab9e
   Args:
-    type: :Person
-    source: Frederik_IX
-  AssignClass (0e411d4a-12c3-4ae5-8954-f1568eb8a001)
- Call ID: 0e411d4a-12c3-4ae5-8954-f1568eb8a001
-  Args:
-    type: :Man
-    source: Frederik_IX
-  AssignClass (d6b640e2-79d3-43d7-9341-cc08dcc7a3dc)
- Call ID: d6b640e2-79d3-43d7-9341-cc08dcc7a3dc
-  Args:
-    type: :Person
-    source: Ingrid_of_Sweden
-  AssignClass (d480e28d-1300-480f-a363-c51237573a84)
- Call ID: d480e28d-1300-480f-a363-c51237573a84
-  Args:
-    type: :Woman
-    source: Ingrid_of_Sweden
-  AssignClass (b9dcd86c-385f-46ee-a3e3-f9f2bb0fad36)
- Call ID: b9dcd86c-385f-46ee-a3e3-f9f2bb0fad36
-  Args:
-    type: :Person
-    source: Christian_X
-  AssignClass (4e374cbc-d41f-4622-a487-26e4e09c2d3a)
- Call ID: 4e374cbc-d41f-4622-a487-26e4e09c2d3a
-  Args:
-    type: :Man
-    source: Christian_X
-  AssignClass (0c4f5bf5-b5ac-4293-9f6f-e713f12d2881)
- Call ID: 0c4f5bf5-b5ac-4293-9f6f-e713f12d2881
-  Args:
-    type: :Person
-    source: Henri_de_Laborde_de_Monpezat
-  AssignClass (3f4fac39-9486-442a-8c00-2bbf4e155d6f)
- Call ID: 3f4fac39-9486-442a-8c00-2bbf4e155d6f
-  Args:
-    type: :Man
-    source: Henri_de_Laborde_de_Monpezat
-  AssignClass (01bc242d-c9f9-452e-959e-0c3ccaf1a386)
- Call ID: 01bc242d-c9f9-452e-959e-0c3ccaf1a386
-  Args:
-    type: :Person
-    source: Frederik_X
-  AssignClass (4da26559-3ebf-4053-873c-0da5b82aebb8)
- Call ID: 4da26559-3ebf-4053-873c-0da5b82aebb8
-  Args:
-    type: :Man
-    source: Frederik_X
-  AssignClass (b2239303-4cac-46de-ae0c-2288f91965c9)
- Call ID: b2239303-4cac-46de-ae0c-2288f91965c9
-  Args:
-    type: :Person
-    source: Joachim
-  AssignClass (327f07a9-19c6-40c6-9302-b0c2769b78a7)
- Call ID: 327f07a9-19c6-40c6-9302-b0c2769b78a7
-  Args:
-    type: :Man
-    source: Joachim
-  AssignClass (44704eb4-3452-4bd2-a36f-57683ccaafa2)
- Call ID: 44704eb4-3452-4bd2-a36f-57683ccaafa2
-  Args:
-    type: :Person
-    source: Benedikte
-  AssignClass (41e0db88-e4e3-44b6-863e-1d4d4976e50c)
- Call ID: 41e0db88-e4e3-44b6-863e-1d4d4976e50c
-  Args:
-    type: :Woman
-    source: Benedikte
-  AssignClass (b6b7e0ae-1476-44b6-8990-8cd5a340b48c)
- Call ID: b6b7e0ae-1476-44b6-8990-8cd5a340b48c
-  Args:
-    type: :Person
-    source: Anne-Marie
-  AssignClass (1894a1cd-d05c-4373-bcb8-3c00e10e3efc)
- Call ID: 1894a1cd-d05c-4373-bcb8-3c00e10e3efc
-  Args:
-    type: :Woman
-    source: Anne-Marie
-  AddTriple (4993b817-6c01-4a57-8732-5d6a2c32d47d)
- Call ID: 4993b817-6c01-4a57-8732-5d6a2c32d47d
-  Args:
-    source: Margrethe_II
-    relation: :hasFather
-    target: Frederik_IX
-  AddTriple (34cee7e4-3c7a-4431-a1c7-8c643fd68f1b)
- Call ID: 34cee7e4-3c7a-4431-a1c7-8c643fd68f1b
-  Args:
-    target: Ingrid_of_Sweden
-    relation: :hasMother
-    source: Margrethe_II
-  AddTriple (588d634b-1198-4979-bc20-f1bcd3ec2d45)
- Call ID: 588d634b-1198-4979-bc20-f1bcd3ec2d45
-  Args:
-    target: Christian_X
-    relation: :hasFather
-    source: Frederik_IX
-  AddTriple (d9da3beb-156e-4702-aa5e-bdf49a080ea6)
- Call ID: d9da3beb-156e-4702-aa5e-bdf49a080ea6
-  Args:
-    source: Frederik_X
-    relation: :hasFather
-    target: Henri_de_Laborde_de_Monpezat
-  AddTriple (3658178f-8458-4f0a-917c-d7d314b35810)
- Call ID: 3658178f-8458-4f0a-917c-d7d314b35810
-  Args:
-    source: Frederik_X
-    target: Margrethe_II
-    relation: :hasMother
-  AddTriple (86117ed5-1881-49a1-9c6f-4d0b6b1fdead)
- Call ID: 86117ed5-1881-49a1-9c6f-4d0b6b1fdead
-  Args:
-    target: Henri_de_Laborde_de_Monpezat
-    relation: :hasFather
-    source: Joachim
-  AddTriple (1c0d49cb-722c-4570-871c-3f259a79c417)
- Call ID: 1c0d49cb-722c-4570-871c-3f259a79c417
-  Args:
-    relation: :hasMother
-    target: Margrethe_II
-    source: Joachim
-  AddTriple (c9527ced-3264-40cb-aa2d-a01da4458265)
- Call ID: c9527ced-3264-40cb-aa2d-a01da4458265
-  Args:
-    source: Margrethe_II
-    relation: :hasSister
-    target: Benedikte
-  AddTriple (fd977445-d4c5-4b35-9826-0eee50995829)
- Call ID: fd977445-d4c5-4b35-9826-0eee50995829
-  Args:
-    source: Margrethe_II
-    target: Anne-Marie
-    relation: :hasSister
-  AddLiteral (a972d17d-7d1b-4f91-a430-4fdc140c63ee)
- Call ID: a972d17d-7d1b-4f91-a430-4fdc140c63ee
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1940
-    source: Margrethe_II
-    relation: :hasBirthYear
-  AddLiteral (f91b2a54-cc1c-4d1d-aa37-6998d9303f89)
- Call ID: f91b2a54-cc1c-4d1d-aa37-6998d9303f89
-  Args:
-    literal_type: xsd:integer
-    source: Margrethe_II
-    literal_value: 1967
-    relation: :hasMarriageYear
-  AddLiteral (2ee05b4e-5dd6-49d3-b37f-01274347dd02)
- Call ID: 2ee05b4e-5dd6-49d3-b37f-01274347dd02
-  Args:
-    relation: :alsoKnownAs
+    source: :Margrethe_II
+    relation: :knownAs
+    literal_value: Margrethe Alexandrine Þórhildur Ingrid
     literal_type: xsd:string
-    source: Margrethe_II
-    literal_value: Daisy
-  Finish (238c44a4-d4cd-4995-842b-801842876397)
- Call ID: 238c44a4-d4cd-4995-842b-801842876397
+  AddLiteral (9ae6c044-94ff-4aae-950b-773c7d7e2eec)
+ Call ID: 9ae6c044-94ff-4aae-950b-773c7d7e2eec
   Args:
+    literal_value: 1940
+    source: :Margrethe_II
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddTriple (b88b42e3-b1de-4f39-8ae3-ecac3a3c5f45)
+ Call ID: b88b42e3-b1de-4f39-8ae3-ecac3a3c5f45
+  Args:
+    source: :Margrethe_II
+    target: :Frederik_IX
+    relation: :hasFather
+  AddTriple (497d29b5-6295-438b-a622-1a08e5f32e5b)
+ Call ID: 497d29b5-6295-438b-a622-1a08e5f32e5b
+  Args:
+    source: :Margrethe_II
+    relation: :hasMother
+    target: :Ingrid_of_Sweden
+  AssignClass (55f240f6-21a4-41b4-b921-336d4ec75884)
+ Call ID: 55f240f6-21a4-41b4-b921-336d4ec75884
+  Args:
+    source: :Frederik_IX
+    type: :Man
+  AssignClass (a5a42610-06dc-4ccd-b297-271006fc5bf0)
+ Call ID: a5a42610-06dc-4ccd-b297-271006fc5bf0
+  Args:
+    source: :Ingrid_of_Sweden
+    type: :Woman
+  AddTriple (64b94cd3-d710-4213-a1b7-30304b6f0a6a)
+ Call ID: 64b94cd3-d710-4213-a1b7-30304b6f0a6a
+  Args:
+    source: :Margrethe_II
+    target: :Christian_X
+    relation: :hasFather
+  AssignClass (b1b28013-0334-415e-a79e-76c0b389a724)
+ Call ID: b1b28013-0334-415e-a79e-76c0b389a724
+  Args:
+    source: :Christian_X
+    type: :Man
+  AddTriple (24dc64c5-a8c2-40b2-8120-ce9e4357a89f)
+ Call ID: 24dc64c5-a8c2-40b2-8120-ce9e4357a89f
+  Args:
+    relation: :hasMother
+    target: :Alexandrine_of_Mecklenburg-Schwerin
+    source: :Frederik_IX
+  AssignClass (a2d288e5-e866-433a-b824-910453b56516)
+ Call ID: a2d288e5-e866-433a-b824-910453b56516
+  Args:
+    source: :Alexandrine_of_Mecklenburg-Schwerin
+    type: :Woman
+  AddTriple (0e869540-d7c4-4799-b121-edbd7c99e424)
+ Call ID: 0e869540-d7c4-4799-b121-edbd7c99e424
+  Args:
+    target: :Gustaf_VI_Adolf
+    relation: :hasFather
+    source: :Ingrid_of_Sweden
+  AssignClass (527d14cd-e760-42a6-875c-ac89b69e2986)
+ Call ID: 527d14cd-e760-42a6-875c-ac89b69e2986
+  Args:
+    source: :Gustaf_VI_Adolf
+    type: :Man
+  AddTriple (f1fdb0fa-4a0e-4526-a6f7-7ac67141080c)
+ Call ID: f1fdb0fa-4a0e-4526-a6f7-7ac67141080c
+  Args:
+    source: :Margrethe_II
+    target: :Benedikte
+    relation: :hasSister
+  AddTriple (1493114e-1b3c-44dd-a8c1-ae420c9380d8)
+ Call ID: 1493114e-1b3c-44dd-a8c1-ae420c9380d8
+  Args:
+    target: :Anne-Marie
+    relation: :hasSister
+    source: :Margrethe_II
+  AssignClass (46c82de4-86f8-46e1-aad0-bc5ac9a4398d)
+ Call ID: 46c82de4-86f8-46e1-aad0-bc5ac9a4398d
+  Args:
+    source: :Benedikte
+    type: :Woman
+  AssignClass (1d99368b-0367-45d9-98f4-eeed100972c2)
+ Call ID: 1d99368b-0367-45d9-98f4-eeed100972c2
+  Args:
+    source: :Anne-Marie
+    type: :Woman
+  AddTriple (cd345d57-04c7-42c5-aaa3-0077950447c9)
+ Call ID: cd345d57-04c7-42c5-aaa3-0077950447c9
+  Args:
+    relation: :hasFather
+    target: :Frederik_IX
+    source: :Benedikte
+  AddTriple (4661adcd-63ac-4720-b98a-2aa2cd1230f0)
+ Call ID: 4661adcd-63ac-4720-b98a-2aa2cd1230f0
+  Args:
+    source: :Benedikte
+    target: :Ingrid_of_Sweden
+    relation: :hasMother
+  AddTriple (3238751e-8365-4059-b024-a2caa16dda27)
+ Call ID: 3238751e-8365-4059-b024-a2caa16dda27
+  Args:
+    target: :Frederik_IX
+    relation: :hasFather
+    source: :Anne-Marie
+  AddTriple (468c6840-c28c-45f2-8cfb-a703433219e0)
+ Call ID: 468c6840-c28c-45f2-8cfb-a703433219e0
+  Args:
+    relation: :hasMother
+    target: :Ingrid_of_Sweden
+    source: :Anne-Marie
+  AddTriple (a410e17a-5c61-459e-9848-4fdab1b3d8f3)
+ Call ID: a410e17a-5c61-459e-9848-4fdab1b3d8f3
+  Args:
+    relation: :hasFather
+    target: :Henrik_of_Denmark
+    source: :Margrethe_II
+  AddTriple (0ef9b353-288c-4387-8c36-844ab28ebf0c)
+ Call ID: 0ef9b353-288c-4387-8c36-844ab28ebf0c
+  Args:
+    relation: :hasSon
+    target: :Frederik_X
+    source: :Margrethe_II
+  AddTriple (37f5b2cc-33e8-41b8-91b0-3584f7571b1a)
+ Call ID: 37f5b2cc-33e8-41b8-91b0-3584f7571b1a
+  Args:
+    source: :Margrethe_II
+    relation: :hasSon
+    target: :Joachim
+  AssignClass (84fd7ae0-a1a4-4d0c-957f-c7b70c5c92bc)
+ Call ID: 84fd7ae0-a1a4-4d0c-957f-c7b70c5c92bc
+  Args:
+    source: :Henrik_of_Denmark
+    type: :Man
+  AssignClass (a2e47280-3a69-4c2d-aefa-2e54bcd0b513)
+ Call ID: a2e47280-3a69-4c2d-aefa-2e54bcd0b513
+  Args:
+    source: :Frederik_X
+    type: :Man
+  AssignClass (21d7eea1-71af-4f77-b438-5ab7882c33b4)
+ Call ID: 21d7eea1-71af-4f77-b438-5ab7882c33b4
+  Args:
+    source: :Joachim
+    type: :Man
+  AddTriple (a58141df-6ef5-40a8-99ea-7074e4b21391)
+ Call ID: a58141df-6ef5-40a8-99ea-7074e4b21391
+  Args:
+    relation: :hasFather
+    target: :Henrik_of_Denmark
+    source: :Frederik_X
+  AddTriple (b3bbf3b0-ec34-413b-8e27-23dec80a1524)
+ Call ID: b3bbf3b0-ec34-413b-8e27-23dec80a1524
+  Args:
+    target: :Margrethe_II
+    relation: :hasMother
+    source: :Frederik_X
+  AddTriple (568c18ff-b2bd-4794-8213-bd17cc264f8d)
+ Call ID: 568c18ff-b2bd-4794-8213-bd17cc264f8d
+  Args:
+    source: :Joachim
+    target: :Henrik_of_Denmark
+    relation: :hasFather
+  AddTriple (6f9b2c13-87bb-4fae-8d43-60b2b2d3012f)
+ Call ID: 6f9b2c13-87bb-4fae-8d43-60b2b2d3012f
+  Args:
+    source: :Joachim
+    target: :Margrethe_II
+    relation: :hasMother
+  AddTriple (4d8f3142-fe87-49b2-9423-245c464a635f)
+ Call ID: 4d8f3142-fe87-49b2-9423-245c464a635f
+  Args:
+    source: :Margrethe_II
+    relation: :hasFather
+    target: :Christian_X
+  Finish (8a7acad7-5e05-4ff2-8d65-a2f32f709b7d)
+ Call ID: 8a7acad7-5e05-4ff2-8d65-a2f32f709b7d
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -830,44 +925,47 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederik_X a :Man,
-          :Person ;
-      :hasFather data:Henri_de_Laborde_de_Monpezat ;
-      :hasMother data:Margrethe_II .
+  data:Alexandrine_of_Mecklenburg-Schwerin a :Woman .
 
-  data:Joachim a :Man,
-          :Person ;
-      :hasFather data:Henri_de_Laborde_de_Monpezat ;
-      :hasMother data:Margrethe_II .
-
-  data:Anne-Marie a :Person,
-          :Woman .
-
-  data:Benedikte a :Person,
-          :Woman .
-
-  data:Christian_X a :Man,
-          :Person .
-
-  data:Frederik_IX a :Man,
-          :Person ;
-      :hasFather data:Christian_X .
-
-  data:Ingrid_of_Sweden a :Person,
-          :Woman .
-
-  data:Henri_de_Laborde_de_Monpezat a :Man,
-          :Person .
-
-  data:Margrethe_II a :Person,
-          :Woman ;
-      :alsoKnownAs "Daisy"^^xsd:string ;
-      :hasBirthYear 1940 ;
+  data:Anne-Marie a :Woman ;
       :hasFather data:Frederik_IX ;
-      :hasMarriageYear 1967 ;
+      :hasMother data:Ingrid_of_Sweden .
+
+  data:Benedikte a :Woman ;
+      :hasFather data:Frederik_IX ;
+      :hasMother data:Ingrid_of_Sweden .
+
+  data:Christian_X a :Man .
+
+  data:Frederik_X a :Man ;
+      :hasFather data:Henrik_of_Denmark ;
+      :hasMother data:Margrethe_II .
+
+  data:Gustaf_VI_Adolf a :Man .
+
+  data:Joachim a :Man ;
+      :hasFather data:Henrik_of_Denmark ;
+      :hasMother data:Margrethe_II .
+
+  data:Margrethe_II a :Woman ;
+      :hasBirthYear 1940 ;
+      :hasFather data:Christian_X,
+          data:Frederik_IX,
+          data:Henrik_of_Denmark ;
       :hasMother data:Ingrid_of_Sweden ;
       :hasSister data:Anne-Marie,
-          data:Benedikte .
+          data:Benedikte ;
+      :hasSon data:Frederik_X,
+          data:Joachim ;
+      :knownAs "Margrethe Alexandrine Þórhildur Ingrid"^^xsd:string .
+
+  data:Frederik_IX a :Man ;
+      :hasMother data:Alexandrine_of_Mecklenburg-Schwerin .
+
+  data:Henrik_of_Denmark a :Man .
+
+  data:Ingrid_of_Sweden a :Woman ;
+      :hasFather data:Gustaf_VI_Adolf .
 
 
 
@@ -879,182 +977,374 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (e2b30b90-d13e-4626-9e46-f0f0a2ab1e52)
- Call ID: e2b30b90-d13e-4626-9e46-f0f0a2ab1e52
+  ValidateShacl (95b59c31-db0f-406e-a47b-8330e375c57e)
+ Call ID: 95b59c31-db0f-406e-a47b-8330e375c57e
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:21
+Total violations:45
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Henri_de_Laborde_de_Monpezat for :hasFather on node Frederik_X is missing the required class :Ancestor.
+      The node Henrik_of_Denmark is assigned as a father to Frederik_X, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Henri_de_Laborde_de_Monpezat, class: :Ancestor)
+      AssignClass(Henrik_of_Denmark, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Christian_X for :hasFather on node Frederik_IX is missing the required class :Ancestor.
+      The node Henrik_of_Denmark is assigned as a father to Joachim, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Christian_X, class: :Ancestor)
+      AssignClass(Henrik_of_Denmark, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Henri_de_Laborde_de_Monpezat for :hasFather on node Joachim is missing the required class :Ancestor.
+      The node Margrethe_II is assigned as a mother to Frederik_X, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Henri_de_Laborde_de_Monpezat, class: :Ancestor)
+      AssignClass(Margrethe_II, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Margrethe_II for :hasMother on node Frederik_X is missing the required class :Ancestor.
+      The node Margrethe_II is assigned as a mother to Joachim, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Margrethe_II, class: :Ancestor)
+      AssignClass(Margrethe_II, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Margrethe_II for :hasMother on node Joachim is missing the required class :Ancestor.
+      The node Alexandrine_of_Mecklenburg-Schwerin is assigned as a mother to Frederik_IX, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Margrethe_II, class: :Ancestor)
+      AssignClass(Alexandrine_of_Mecklenburg-Schwerin, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Henri_de_Laborde_de_Monpezat for :hasFather on node Frederik_X is missing the required class :Ancestor.
+      The node Frederik_IX is assigned as a father to Benedikte, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Henri_de_Laborde_de_Monpezat, class: :Ancestor)
+      AssignClass(Frederik_IX, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Christian_X for :hasFather on node Frederik_IX is missing the required class :Ancestor.
+      The node Henrik_of_Denmark is assigned as a father to Joachim, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Christian_X, class: :Ancestor)
+      AssignClass(Henrik_of_Denmark, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Frederik_IX for :hasFather on node Margrethe_II is missing the required class :Ancestor.
+      The node Henrik_of_Denmark is assigned as a father to Margrethe_II, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Frederik_IX, class: :Ancestor)
+      AssignClass(Henrik_of_Denmark, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Henri_de_Laborde_de_Monpezat for :hasFather on node Joachim is missing the required class :Ancestor.
+      The node Christian_X is assigned as a father to Margrethe_II, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Henri_de_Laborde_de_Monpezat, class: :Ancestor)
+      AssignClass(Christian_X, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Margrethe_II for :hasMother on node Frederik_X is missing the required class :Ancestor.
+      The node Frederik_IX is assigned as a father to Margrethe_II, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Margrethe_II, class: :Ancestor)
+      AssignClass(Frederik_IX, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: More than 1 values on data:Margrethe_II->:hasFather
     LLM-provided explanation of the violation:
-      The value Ingrid_of_Sweden for :hasMother on node Margrethe_II is missing the required class :Ancestor.
+      Margrethe_II has more than one father assigned, which violates the functional property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Ingrid_of_Sweden, class: :Ancestor)
+      RemoveTriple(Margrethe_II, :hasFather, [value])
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Margrethe_II for :hasMother on node Joachim is missing the required class :Ancestor.
+      The node Gustaf_VI_Adolf is assigned as a father to Ingrid_of_Sweden, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Margrethe_II, class: :Ancestor)
+      AssignClass(Gustaf_VI_Adolf, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Frederik_IX for :hasFather on node Margrethe_II is missing the required class :Ancestor.
+      The node Frederik_IX is assigned as a father to Anne-Marie, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Frederik_IX, class: :Ancestor)
+      AssignClass(Frederik_IX, :Ancestor)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Henri_de_Laborde_de_Monpezat for :hasFather on node Frederik_X is missing the required class :Ancestor.
+      The node Henrik_of_Denmark is assigned as a father to Frederik_X, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Henri_de_Laborde_de_Monpezat, class: :Ancestor)
+      AssignClass(Henrik_of_Denmark, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Christian_X for :hasFather on node Frederik_IX is missing the required class :Ancestor.
+      The node Ingrid_of_Sweden is assigned as a mother to Benedikte, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Christian_X, class: :Ancestor)
+      AssignClass(Ingrid_of_Sweden, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Henri_de_Laborde_de_Monpezat for :hasFather on node Joachim is missing the required class :Ancestor.
+      The node Margrethe_II is assigned as a mother to Joachim, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Henri_de_Laborde_de_Monpezat, class: :Ancestor)
+      AssignClass(Margrethe_II, :Ancestor)
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Ingrid_of_Sweden for :hasMother on node Margrethe_II is missing the required class :Ancestor.
+      The node Ingrid_of_Sweden is assigned as a mother to Margrethe_II, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Ingrid_of_Sweden, class: :Ancestor)
+      AssignClass(Ingrid_of_Sweden, :Ancestor)
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Margrethe_II for :hasMother on node Frederik_X is missing the required class :Ancestor.
+      The node Alexandrine_of_Mecklenburg-Schwerin is assigned as a mother to Frederik_IX, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Margrethe_II, class: :Ancestor)
+      AssignClass(Alexandrine_of_Mecklenburg-Schwerin, :Ancestor)
 
 
   Violation [19]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Margrethe_II for :hasMother on node Joachim is missing the required class :Ancestor.
+      The node Ingrid_of_Sweden is assigned as a mother to Anne-Marie, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Margrethe_II, class: :Ancestor)
+      AssignClass(Ingrid_of_Sweden, :Ancestor)
 
 
   Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Frederik_IX for :hasFather on node Margrethe_II is missing the required class :Ancestor.
+      The node Margrethe_II is assigned as a mother to Frederik_X, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Frederik_IX, class: :Ancestor)
+      AssignClass(Margrethe_II, :Ancestor)
 
 
   Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Frederik_IX is assigned as a father to Benedikte, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederik_IX, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Henrik_of_Denmark is assigned as a father to Joachim, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Henrik_of_Denmark, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Henrik_of_Denmark is assigned as a father to Margrethe_II, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Henrik_of_Denmark, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Christian_X is assigned as a father to Margrethe_II, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_X, :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Frederik_IX is assigned as a father to Margrethe_II, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederik_IX, :Ancestor)
+
+
+  Violation [26]:
+    SHACL message: More than 1 values on data:Margrethe_II->:hasFather
+    LLM-provided explanation of the violation:
+      Margrethe_II has more than one father assigned, which violates the functional property constraint.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Margrethe_II, :hasFather, [value])
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Gustaf_VI_Adolf is assigned as a father to Ingrid_of_Sweden, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Gustaf_VI_Adolf, :Ancestor)
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Frederik_IX is assigned as a father to Anne-Marie, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederik_IX, :Ancestor)
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Henrik_of_Denmark is assigned as a father to Frederik_X, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Henrik_of_Denmark, :Ancestor)
+
+
+  Violation [30]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Ingrid_of_Sweden for :hasMother on node Margrethe_II is missing the required class :Ancestor.
+      The node Ingrid_of_Sweden is assigned as a mother to Benedikte, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Ingrid_of_Sweden, class: :Ancestor)
+      AssignClass(Ingrid_of_Sweden, :Ancestor)
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Margrethe_II is assigned as a mother to Joachim, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Margrethe_II, :Ancestor)
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Ingrid_of_Sweden is assigned as a mother to Margrethe_II, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ingrid_of_Sweden, :Ancestor)
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Alexandrine_of_Mecklenburg-Schwerin is assigned as a mother to Frederik_IX, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alexandrine_of_Mecklenburg-Schwerin, :Ancestor)
+
+
+  Violation [34]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Ingrid_of_Sweden is assigned as a mother to Anne-Marie, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ingrid_of_Sweden, :Ancestor)
+
+
+  Violation [35]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Margrethe_II is assigned as a mother to Frederik_X, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Margrethe_II, :Ancestor)
+
+
+  Violation [36]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Frederik_IX is assigned as a father to Benedikte, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederik_IX, :Ancestor)
+
+
+  Violation [37]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Henrik_of_Denmark is assigned as a father to Margrethe_II, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Henrik_of_Denmark, :Ancestor)
+
+
+  Violation [38]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Christian_X is assigned as a father to Margrethe_II, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_X, :Ancestor)
+
+
+  Violation [39]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Frederik_IX is assigned as a father to Margrethe_II, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederik_IX, :Ancestor)
+
+
+  Violation [40]:
+    SHACL message: More than 1 values on data:Margrethe_II->:hasFather
+    LLM-provided explanation of the violation:
+      Margrethe_II has more than one father assigned, which violates the functional property constraint.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Margrethe_II, :hasFather, [value])
+
+
+  Violation [41]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Gustaf_VI_Adolf is assigned as a father to Ingrid_of_Sweden, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Gustaf_VI_Adolf, :Ancestor)
+
+
+  Violation [42]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Frederik_IX is assigned as a father to Anne-Marie, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederik_IX, :Ancestor)
+
+
+  Violation [43]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Ingrid_of_Sweden is assigned as a mother to Benedikte, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ingrid_of_Sweden, :Ancestor)
+
+
+  Violation [44]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Ingrid_of_Sweden is assigned as a mother to Margrethe_II, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ingrid_of_Sweden, :Ancestor)
+
+
+  Violation [45]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Ingrid_of_Sweden is assigned as a mother to Anne-Marie, but it lacks the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ingrid_of_Sweden, :Ancestor)
 
 
 
@@ -1063,34 +1353,72 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (223ae70f-033a-435e-94f8-ff8610795366)
- Call ID: 223ae70f-033a-435e-94f8-ff8610795366
+  RemoveTriple (48f1ea9f-dd55-496d-b46b-7bba99b4822b)
+ Call ID: 48f1ea9f-dd55-496d-b46b-7bba99b4822b
+  Args:
+    source: :Margrethe_II
+    relation: :hasFather
+    target: :Christian_X
+  RemoveTriple (88c4ac48-aa02-4853-950e-21f229b55fd8)
+ Call ID: 88c4ac48-aa02-4853-950e-21f229b55fd8
+  Args:
+    target: :Henrik_of_Denmark
+    source: :Margrethe_II
+    relation: :hasFather
+  AssignClass (1f146d23-929a-485e-89ad-9b2dea3cbeee)
+ Call ID: 1f146d23-929a-485e-89ad-9b2dea3cbeee
+  Args:
+    source: :Henrik_of_Denmark
+    type: :Ancestor
+  AssignClass (a18bba9a-3ee1-49ae-aad2-9f68452ebc45)
+ Call ID: a18bba9a-3ee1-49ae-aad2-9f68452ebc45
+  Args:
+    source: :Margrethe_II
+    type: :Ancestor
+  AssignClass (c88d1250-d9e5-4481-9621-7c8827b8378f)
+ Call ID: c88d1250-d9e5-4481-9621-7c8827b8378f
+  Args:
+    source: :Alexandrine_of_Mecklenburg-Schwerin
+    type: :Ancestor
+  AssignClass (fcfda496-5d5c-4a91-ae17-22bd5b480850)
+ Call ID: fcfda496-5d5c-4a91-ae17-22bd5b480850
+  Args:
+    source: :Frederik_IX
+    type: :Ancestor
+  AssignClass (50ad8389-38ed-4bce-8402-6a52b4995093)
+ Call ID: 50ad8389-38ed-4bce-8402-6a52b4995093
   Args:
     type: :Ancestor
-    source: Henri_de_Laborde_de_Monpezat
-  AssignClass (8f04529d-461f-4486-8ec3-ca50b74cb3c2)
- Call ID: 8f04529d-461f-4486-8ec3-ca50b74cb3c2
+    source: :Christian_X
+  AssignClass (0100b431-f1fd-4739-bfc0-2a610b3a0c86)
+ Call ID: 0100b431-f1fd-4739-bfc0-2a610b3a0c86
   Args:
+    source: :Gustaf_VI_Adolf
     type: :Ancestor
-    source: Christian_X
-  AssignClass (ea4a24ad-7e5e-46a1-a8a6-a5a8d4de1db9)
- Call ID: ea4a24ad-7e5e-46a1-a8a6-a5a8d4de1db9
+  AssignClass (bd9f1e27-3092-4b56-9545-90f303585d76)
+ Call ID: bd9f1e27-3092-4b56-9545-90f303585d76
   Args:
+    source: :Ingrid_of_Sweden
     type: :Ancestor
-    source: Margrethe_II
-  AssignClass (4101b2c6-9566-4499-af3e-a7f7ac8b4eca)
- Call ID: 4101b2c6-9566-4499-af3e-a7f7ac8b4eca
+  Finish (23c4a643-0bbd-4778-8484-21869d8b92d9)
+ Call ID: 23c4a643-0bbd-4778-8484-21869d8b92d9
   Args:
-    source: Frederik_IX
-    type: :Ancestor
-  AssignClass (1d4328aa-2ffe-4641-ab01-68c3904b8f42)
- Call ID: 1d4328aa-2ffe-4641-ab01-68c3904b8f42
-  Args:
-    source: Ingrid_of_Sweden
-    type: :Ancestor
-  Finish (4c50c023-c62b-4d40-8a93-3ec4c40e02fa)
- Call ID: 4c50c023-c62b-4d40-8a93-3ec4c40e02fa
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1115,49 +1443,52 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederik_X a :Man,
-          :Person ;
-      :hasFather data:Henri_de_Laborde_de_Monpezat ;
-      :hasMother data:Margrethe_II .
-
-  data:Joachim a :Man,
-          :Person ;
-      :hasFather data:Henri_de_Laborde_de_Monpezat ;
-      :hasMother data:Margrethe_II .
-
-  data:Anne-Marie a :Person,
-          :Woman .
-
-  data:Benedikte a :Person,
-          :Woman .
-
   data:Christian_X a :Ancestor,
-          :Man,
-          :Person .
+          :Man .
 
-  data:Frederik_IX a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Christian_X .
-
-  data:Ingrid_of_Sweden a :Ancestor,
-          :Person,
+  data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
           :Woman .
 
-  data:Henri_de_Laborde_de_Monpezat a :Ancestor,
-          :Man,
-          :Person .
+  data:Anne-Marie a :Woman ;
+      :hasFather data:Frederik_IX ;
+      :hasMother data:Ingrid_of_Sweden .
+
+  data:Benedikte a :Woman ;
+      :hasFather data:Frederik_IX ;
+      :hasMother data:Ingrid_of_Sweden .
+
+  data:Frederik_X a :Man ;
+      :hasFather data:Henrik_of_Denmark ;
+      :hasMother data:Margrethe_II .
+
+  data:Gustaf_VI_Adolf a :Ancestor,
+          :Man .
+
+  data:Joachim a :Man ;
+      :hasFather data:Henrik_of_Denmark ;
+      :hasMother data:Margrethe_II .
+
+  data:Henrik_of_Denmark a :Ancestor,
+          :Man .
 
   data:Margrethe_II a :Ancestor,
-          :Person,
           :Woman ;
-      :alsoKnownAs "Daisy"^^xsd:string ;
       :hasBirthYear 1940 ;
       :hasFather data:Frederik_IX ;
-      :hasMarriageYear 1967 ;
       :hasMother data:Ingrid_of_Sweden ;
       :hasSister data:Anne-Marie,
-          data:Benedikte .
+          data:Benedikte ;
+      :hasSon data:Frederik_X,
+          data:Joachim ;
+      :knownAs "Margrethe Alexandrine Þórhildur Ingrid"^^xsd:string .
+
+  data:Frederik_IX a :Ancestor,
+          :Man ;
+      :hasMother data:Alexandrine_of_Mecklenburg-Schwerin .
+
+  data:Ingrid_of_Sweden a :Ancestor,
+          :Woman ;
+      :hasFather data:Gustaf_VI_Adolf .
 
 
 
@@ -1169,8 +1500,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (2a5bff1f-a36e-49de-8e0c-f71708f911ee)
- Call ID: 2a5bff1f-a36e-49de-8e0c-f71708f911ee
+  ValidateShacl (7d1e2299-c0a4-4f6a-893b-fa710cf8f7c8)
+ Call ID: 7d1e2299-c0a4-4f6a-893b-fa710cf8f7c8
   Args:
 
 ================================= Tool Message =================================
@@ -1181,6 +1512,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (04182593-b4d6-4e28-803b-f25c94f28725)
- Call ID: 04182593-b4d6-4e28-803b-f25c94f28725
+  Finish (af90f171-e22b-440a-bcaa-c73eac073468)
+ Call ID: af90f171-e22b-440a-bcaa-c73eac073468
   Args:

@@ -2,33 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Irene_of_the_Netherlands a :Person,
-        :Woman ;
-    :hasBirthYear 1939 ;
-    :hasFather data:Prince_Bernhard ;
-    :hasMarriageYear 1964 ;
-    :hasMother data:Queen_Juliana_of_the_Netherlands ;
-    :hasRelation data:Carlos_Hugo_of_Bourbon-Parma ;
-    :hasSister data:Princess_Beatrix_of_the_Netherlands,
-        data:Princess_Christina,
-        data:Princess_Margriet_of_the_Netherlands .
+data:PrincessEsperanzaOfBourbonTwoSicilies a :Woman ;
+    :isSisterOf data:PrincessDoloresOfBourbonTwoSicilies .
 
-data:Princess_Margriet a :Person .
+data:CarlosCh%C3%ADasOsorio a :Man .
 
-data:Carlos_Hugo_of_Bourbon-Parma a :Man,
-        :Person .
+data:CountessMariaLudwikaKrasi%C5%84ska a :Woman .
 
-data:Prince_Bernhard a :Man,
-        :Person .
+data:IsabelleCountessOfParis a :Woman .
 
-data:Princess_Beatrix_of_the_Netherlands a :Person,
-        :Woman .
+data:JuanCarlosIOfSpain a :Man ;
+    :hasMother data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies .
 
-data:Princess_Christina a :Person,
-        :Woman .
+data:PrinceAdamKarolCzartoryski a :Man ;
+    :hasFather data:PrinceAugustynJ%C3%B3zefCzartoryski .
 
-data:Princess_Margriet_of_the_Netherlands a :Woman .
+data:PrinceAdamLudwikCzartoryski a :Man .
 
-data:Queen_Juliana_of_the_Netherlands a :Person,
-        :Woman .
+data:PrinceCarlosOfBourbonTwoSicilies a :Man .
+
+data:PrinceLudwikPiotrCzartoryski a :Man ;
+    :hasFather data:PrinceAugustynJ%C3%B3zefCzartoryski .
+
+data:PrincessLouiseOfOrl%C3%A9ans a :Woman ;
+    :hasMother data:IsabelleCountessOfParis .
+
+data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies a :Woman ;
+    :isSisterOf data:PrincessDoloresOfBourbonTwoSicilies .
+
+data:PrincessDoloresOfBourbonTwoSicilies a :Woman ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasMother data:PrincessLouiseOfOrl%C3%A9ans ;
+    :hasRelation data:CarlosCh%C3%ADasOsorio,
+        data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :hasSon data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isAuntOf data:JuanCarlosIOfSpain .
+
+data:PrinceAugustynJ%C3%B3zefCzartoryski a :Man ;
+    :hasFather data:PrinceAdamLudwikCzartoryski ;
+    :hasMother data:CountessMariaLudwikaKrasi%C5%84ska .
 

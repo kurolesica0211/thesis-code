@@ -7,40 +7,69 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alfonso XIII" ;
+data:Alfonso_XII_of_Spain a :Person ;
+    rdfs:label "Alfonso XII of Spain" ;
     data:posIndicesFull "617:628",
-        "617:637",
-        "753:765",
-        "753:774" ;
-    data:posIndicesPart "1314:1321",
-        "1853:1860",
-        "1996:2003",
-        "2147:2154",
-        "2408:2415",
-        "2438:2445",
-        "2830:2837" ;
-    data:wdtLink wdt:Q18363 ;
-    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
-        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
-        "Alfonso XIII of Spain",
-        "Don Alfonso de Borbon y Habsburgo",
-        "Don Alfonso de Borbón y Habsburgo",
-        "The African" ;
+        "617:637" ;
+    data:posIndicesPart "1404:1411",
+        "1776:1781",
+        "1943:1950",
+        "2086:2093",
+        "2237:2244",
+        "2498:2505",
+        "2528:2535",
+        "2920:2927",
+        "753:760",
+        "769:774",
+        "882:887" ;
+    data:wdtLink wdt:Q32347 ;
+    :alsoKnownAs "Alfonso XII" ;
     :hasSex data:male .
 
-data:Princess_Louise_of_Orléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Felipe_VI_of_Spain a :Person ;
+    rdfs:label "Felipe VI of Spain" ;
+    data:posIndicesFull "1071:1080",
+        "1071:1089" ;
+    data:posIndicesPart "1776:1781" ;
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia",
+        "Felipe VI",
+        "Philip John Paul Alphonse of All Saints of Bourbon",
+        "Philip VI of Spain" ;
+    :hasSex data:male .
+
+data:Maria_Christina_of_Austria a :Person ;
+    rdfs:label "Maria Christina of Austria" ;
+    data:posIndicesFull "666:692" ;
+    data:posIndicesPart "1338:1343" ;
+    data:wdtLink wdt:Q538125 ;
+    :alsoKnownAs "Archduchess Maria Christina Henriette Desideria Felicitas Raineria of Austria",
+        "Maria Cristina de Habsburgo",
+        "María Cristina de Borbón" ;
+    :hasSex data:female .
+
+data:Prince_Carlos_of_the_Two_Sicilies a :Person ;
+    rdfs:label "Prince Carlos of the Two Sicilies" ;
+    data:wdtLink wdt:Q518879 ;
+    :alsoKnownAs "Carlos de Borbon y Borbon" ;
+    :hasParent data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:male .
+
+data:Prince_Pedro-_Duke_of_Calabria a :Person ;
+    rdfs:label "Prince Pedro, Duke of Calabria" ;
+    data:posIndicesFull "1091:1121" ;
+    data:posIndicesPart "2940:2946" ;
+    data:wdtLink wdt:Q3387469 ;
+    :alsoKnownAs "Pedro Juan Maria Alejo Saturnino y todos los Santos di Borbone, Duca di Noto" ;
+    :hasSex data:male .
+
+data:Princess_Louise_of_Orléans a :Person ;
     rdfs:label "Princess Louise of Orléans" ;
-    data:posIndicesFull "835:861" ;
-    data:posIndicesPart "1056:1063" ;
+    data:posIndicesFull "925:951" ;
+    data:posIndicesPart "1146:1153" ;
     data:wdtLink wdt:Q962762 ;
     :alsoKnownAs "Princess Louise of Orleans" ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris ;
     :hasSex data:female .
 
 data:posIndicesFull a owl:AnnotationProperty .
@@ -49,40 +78,36 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Prince_Carlos_of_the_Two_Sicilies a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Carlos of the Two Sicilies" ;
-    data:wdtLink wdt:Q518879 ;
-    :alsoKnownAs "Carlos de Borbon y Borbon" ;
-    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :hasParent data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :isSonOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+data:Prince_Philippe-_Count_of_Paris a :Person ;
+    rdfs:label "Prince Philippe, Count of Paris" ;
+    data:posIndicesFull "965:996" ;
+    data:posIndicesPart "1030:1036",
+        "1123:1129",
+        "1187:1193",
+        "2940:2946" ;
+    data:wdtLink wdt:Q354477 ;
+    :alsoKnownAs "Louis-Philippe Albert d'Orléans",
+        "Louis-Philippe-Albert d' Orléans" ;
+    :hasSex data:male .
 
-data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person ;
     rdfs:label "Princess Maria Antonietta of Bourbon-Two Sicilies" ;
     data:posIndicesFull "369:418" ;
-    data:posIndicesPart "1248:1253",
-        "1264:1267",
-        "1268:1276",
-        "1354:1361",
-        "1362:1365",
-        "1366:1374",
-        "1502:1505",
-        "1506:1514",
-        "2288:2291",
-        "2292:2300",
-        "2521:2528" ;
+    data:posIndicesPart "1338:1343",
+        "1354:1357",
+        "1358:1366",
+        "1444:1451",
+        "1452:1455",
+        "1456:1464",
+        "1592:1595",
+        "1596:1604",
+        "2378:2381",
+        "2382:2390",
+        "2611:2618" ;
     data:wdtLink wdt:Q255400 ;
-    :hasChild data:Prince_Carlos_of_the_Two_Sicilies ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Carlos_of_the_Two_Sicilies ;
-    :isMotherOf data:Prince_Carlos_of_the_Two_Sicilies ;
-    :isParentOf data:Prince_Carlos_of_the_Two_Sicilies .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

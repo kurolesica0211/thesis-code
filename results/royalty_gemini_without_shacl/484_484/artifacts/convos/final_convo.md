@@ -69,20 +69,30 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Heinrich Wilhelm Konstantin Viktor Franz of Hesse-Kassel (30 October 1927 – 18 November 1999), also known as Enrico d'Assia, was the second child of Prince Philipp of Hesse and Princess Mafalda of Savoy.
-Heinrich became an artist, set designer, and memoirist after World War II.
-Life
+Archduchess Helena of Austria (full German name: Helena Marie Alice Christine Josefa Anna Margareta Madeleine Walburga Blandina Cäcilie Philomena Carmela Ignatia Rita de Cascia, Erzherzogin von Österreich, Prinzessin von Toskana; 30 October 1903 – 8 September 1924) was a member of the Tuscan branch of the House of Habsburg-Lorraine and an Archduchess of Austria and Princess of Bohemia, Hungary, and Tuscany by birth.
+Through her marriage to Philipp Albrecht, Hereditary Duke of Württemberg, Helena became a member of the House of Württemberg and Hereditary Duchess consort of Württemberg.
+Early life
 
-Prince Heinrich was born in Rome, Italy, as the second son of Prince Philipp of Hesse and Princess Mafalda of Savoy, daughter of King Victor Emmanuel III of Italy.
-During the Second World War, Heinrich's father, an important former aristocratic Nazi party member, was arrested by the Gestapo.
-Heinrich and his siblings (Moritz, Otto and Elisabeth) were given sanctuary in the Vatican under the care of their aunt and uncle, Margaret Campbell Geddes and Louis, Prince of Hesse and by Rhine, who adopted them.
-Heinrich was an artist and set designer, active mainly in Italy under the name Enrico d'Assia.
+Helena was born in Linz, Austria-Hungary, the second-eldest child and eldest daughter of Archduke Peter Ferdinand, Prince of Tuscany and his wife Princess Maria Cristina of Bourbon-Two Sicilies.
+Helena was raised with her three siblings in Salzburg and Vienna until the end of World War I in 1918 when her family was exiled and moved to Lucerne, Switzerland.
+Marriage and issue
+
+Helena married Philipp Albrecht, Hereditary Duke of Württemberg, eldest child and son of Albrecht, Duke of Württemberg and his wife, Archduchess Margarete Sophie of Austria, on 24 October 1923 in Altshausen.
+Helena and Philipp Albrecht had one daughter:
+
+
+Death
+
+Helena died just a week after giving birth to her daughter Maria Christina, aged only 20.
+Her husband later married her sister Archduchess Rosa of Austria, Princess of Tuscany in 1928.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -98,39 +108,9 @@ Heinrich was an artist and set designer, active mainly in Italy under the name E
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -145,6 +125,23 @@ Heinrich was an artist and set designer, active mainly in Italy under the name E
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -162,6 +159,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -229,29 +241,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,6 +264,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -272,6 +284,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -280,17 +294,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -318,6 +334,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -333,165 +433,186 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8033ba8b-e537-4d26-bc42-345aaf4b9809)
- Call ID: 8033ba8b-e537-4d26-bc42-345aaf4b9809
+  AssignClass (0d2ac6bd-edf2-44e3-9b1e-3fd364b304a6)
+ Call ID: 0d2ac6bd-edf2-44e3-9b1e-3fd364b304a6
   Args:
-    type: :Man
-    source: :Heinrich_of_Hesse-Kassel
-  AssignClass (cd830686-0944-481e-ba1b-b3d09df9d28c)
- Call ID: cd830686-0944-481e-ba1b-b3d09df9d28c
+    source: Helena_of_Austria
+    type: :Woman
+  AssignClass (bd44b21b-50bf-490b-8b0f-6bbe61d25e48)
+ Call ID: bd44b21b-50bf-490b-8b0f-6bbe61d25e48
   Args:
     type: :Person
-    source: :Heinrich_of_Hesse-Kassel
-  AddLiteral (76553e09-17b9-4646-ae99-be9de420182d)
- Call ID: 76553e09-17b9-4646-ae99-be9de420182d
+    source: Helena_of_Austria
+  AddLiteral (d8e9e5b6-20ba-472b-9d6b-e19dfa9701db)
+ Call ID: d8e9e5b6-20ba-472b-9d6b-e19dfa9701db
   Args:
-    literal_value: Enrico d'Assia
-    relation: :alsoKnownAs
-    source: :Heinrich_of_Hesse-Kassel
-    literal_type: xsd:string
-  AddLiteral (216fd087-43b1-430d-b230-928c1c9dee99)
- Call ID: 216fd087-43b1-430d-b230-928c1c9dee99
-  Args:
+    source: Helena_of_Austria
     literal_type: xsd:integer
-    source: :Heinrich_of_Hesse-Kassel
     relation: :hasBirthYear
-    literal_value: 1927
-  AddLiteral (77f32b76-a846-47ff-b849-ea6cd68c2839)
- Call ID: 77f32b76-a846-47ff-b849-ea6cd68c2839
+    literal_value: 1903
+  AddLiteral (1bafca4b-8069-4ca7-8a75-512a7b27717e)
+ Call ID: 1bafca4b-8069-4ca7-8a75-512a7b27717e
   Args:
-    relation: :hasDeathYear
-    literal_value: 1999
-    source: :Heinrich_of_Hesse-Kassel
+    literal_value: 1924
     literal_type: xsd:integer
-  AssignClass (49be608c-46a9-4cb9-bb37-6cb6fdab9ee6)
- Call ID: 49be608c-46a9-4cb9-bb37-6cb6fdab9ee6
+    relation: :hasDeathYear
+    source: Helena_of_Austria
+  AssignClass (9e06241f-ad97-4517-a3dd-d2c33755f4d5)
+ Call ID: 9e06241f-ad97-4517-a3dd-d2c33755f4d5
   Args:
+    source: Peter_Ferdinand
     type: :Man
-    source: :Philipp_of_Hesse
-  AssignClass (00804391-683a-4d3d-9818-3b17c336fdb6)
- Call ID: 00804391-683a-4d3d-9818-3b17c336fdb6
+  AssignClass (7b1ccc10-c23b-41c1-85d5-0dd32996811d)
+ Call ID: 7b1ccc10-c23b-41c1-85d5-0dd32996811d
   Args:
-    source: :Philipp_of_Hesse
+    source: Peter_Ferdinand
     type: :Person
-  AssignClass (4d391aff-4794-42d4-9639-47aa89055185)
- Call ID: 4d391aff-4794-42d4-9639-47aa89055185
+  AssignClass (bf2fb550-c649-4ce3-909c-7391c240b1c4)
+ Call ID: bf2fb550-c649-4ce3-909c-7391c240b1c4
   Args:
-    source: :Mafalda_of_Savoy
+    type: :Ancestor
+    source: Peter_Ferdinand
+  AssignClass (2ac25f99-f25e-4c30-826c-9539a829d0b5)
+ Call ID: 2ac25f99-f25e-4c30-826c-9539a829d0b5
+  Args:
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
     type: :Woman
-  AssignClass (1a877c60-5a2e-47d1-9a36-fb9c705222b4)
- Call ID: 1a877c60-5a2e-47d1-9a36-fb9c705222b4
+  AssignClass (82c39619-8468-4fd2-82b2-3fabd0c3c877)
+ Call ID: 82c39619-8468-4fd2-82b2-3fabd0c3c877
   Args:
     type: :Person
-    source: :Mafalda_of_Savoy
-  AddTriple (28de807b-5909-4ef3-bc21-0a64086d726b)
- Call ID: 28de807b-5909-4ef3-bc21-0a64086d726b
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
+  AssignClass (dfa97b64-cb9e-4b77-9973-ca1658a2aef6)
+ Call ID: dfa97b64-cb9e-4b77-9973-ca1658a2aef6
   Args:
-    target: :Philipp_of_Hesse
-    source: :Heinrich_of_Hesse-Kassel
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
+    type: :Ancestor
+  AddTriple (80d5e3b4-e1cf-4c0a-bed1-317e0c8ca9c0)
+ Call ID: 80d5e3b4-e1cf-4c0a-bed1-317e0c8ca9c0
+  Args:
+    source: Helena_of_Austria
+    target: Peter_Ferdinand
     relation: :hasFather
-  AddTriple (52e8f428-7436-4379-8121-8aa8242df053)
- Call ID: 52e8f428-7436-4379-8121-8aa8242df053
+  AddTriple (20c814f5-9523-4417-bf33-f51abb2ba971)
+ Call ID: 20c814f5-9523-4417-bf33-f51abb2ba971
   Args:
+    target: Maria_Cristina_of_Bourbon-Two_Sicilies
+    source: Helena_of_Austria
     relation: :hasMother
-    target: :Mafalda_of_Savoy
-    source: :Heinrich_of_Hesse-Kassel
-  AssignClass (000c0705-a99c-4161-b534-c8fe9a109e02)
- Call ID: 000c0705-a99c-4161-b534-c8fe9a109e02
+  AssignClass (782916c1-6666-4c4d-b55d-ddca905662d2)
+ Call ID: 782916c1-6666-4c4d-b55d-ddca905662d2
   Args:
-    source: :Victor_Emmanuel_III_of_Italy
     type: :Man
-  AssignClass (65eac107-45ca-4ae5-906f-6a2852cad76d)
- Call ID: 65eac107-45ca-4ae5-906f-6a2852cad76d
+    source: Philipp_Albrecht
+  AssignClass (e2c63dc1-f90b-422c-8898-597cbd3411d7)
+ Call ID: e2c63dc1-f90b-422c-8898-597cbd3411d7
   Args:
-    source: :Victor_Emmanuel_III_of_Italy
+    source: Philipp_Albrecht
     type: :Person
-  AddTriple (138ecf56-e2bd-4c63-989b-bbf6d96c9652)
- Call ID: 138ecf56-e2bd-4c63-989b-bbf6d96c9652
+  AddLiteral (733f864b-4e59-48f3-bb4c-fd5a8e40e433)
+ Call ID: 733f864b-4e59-48f3-bb4c-fd5a8e40e433
   Args:
+    source: Helena_of_Austria
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1923
+  AddTriple (aa1220e4-52b1-46d8-9052-9c95a54ad16d)
+ Call ID: aa1220e4-52b1-46d8-9052-9c95a54ad16d
+  Args:
+    relation: :hasRelation
+    target: Philipp_Albrecht
+    source: Helena_of_Austria
+  AssignClass (be153bc6-dec5-4763-b0ea-a9ccf6c6c5c2)
+ Call ID: be153bc6-dec5-4763-b0ea-a9ccf6c6c5c2
+  Args:
+    type: :Man
+    source: Albrecht_Duke_of_Württemberg
+  AssignClass (8a9554cb-117d-49e1-a8ca-2cbb2a753ec3)
+ Call ID: 8a9554cb-117d-49e1-a8ca-2cbb2a753ec3
+  Args:
+    type: :Person
+    source: Albrecht_Duke_of_Württemberg
+  AssignClass (066b6f0e-c90f-431e-bd4d-91839a7d246e)
+ Call ID: 066b6f0e-c90f-431e-bd4d-91839a7d246e
+  Args:
+    type: :Woman
+    source: Margarete_Sophie_of_Austria
+  AssignClass (502f994a-19ba-4982-9f5b-a0e8b7783342)
+ Call ID: 502f994a-19ba-4982-9f5b-a0e8b7783342
+  Args:
+    type: :Person
+    source: Margarete_Sophie_of_Austria
+  AddTriple (f647996f-049e-4761-bd9e-76d7842bf953)
+ Call ID: f647996f-049e-4761-bd9e-76d7842bf953
+  Args:
+    source: Philipp_Albrecht
+    target: Albrecht_Duke_of_Württemberg
     relation: :hasFather
-    target: :Victor_Emmanuel_III_of_Italy
-    source: :Mafalda_of_Savoy
-  AssignClass (3909c33e-35a8-43bc-8adb-d6090f5623fe)
- Call ID: 3909c33e-35a8-43bc-8adb-d6090f5623fe
+  AddTriple (a7ffd6e3-0271-4cc0-9deb-704bb5cec898)
+ Call ID: a7ffd6e3-0271-4cc0-9deb-704bb5cec898
   Args:
-    source: :Moritz_of_Hesse
-    type: :Man
-  AssignClass (f1fcdf80-d92c-4ddd-9d6d-0f4e17d44d8d)
- Call ID: f1fcdf80-d92c-4ddd-9d6d-0f4e17d44d8d
+    source: Philipp_Albrecht
+    target: Margarete_Sophie_of_Austria
+    relation: :hasMother
+  AssignClass (487ff717-7971-4513-8d4d-58c0f999bdea)
+ Call ID: 487ff717-7971-4513-8d4d-58c0f999bdea
   Args:
-    type: :Person
-    source: :Moritz_of_Hesse
-  AssignClass (a2b97ed7-2a2b-4c4c-8670-99cacff21ef1)
- Call ID: a2b97ed7-2a2b-4c4c-8670-99cacff21ef1
-  Args:
-    source: :Otto_of_Hesse
-    type: :Man
-  AssignClass (8afb5cba-2cff-4999-b6cd-a3cbf46e53b0)
- Call ID: 8afb5cba-2cff-4999-b6cd-a3cbf46e53b0
-  Args:
-    type: :Person
-    source: :Otto_of_Hesse
-  AssignClass (15b5433a-9cf0-4b2d-9a09-f2d2d4287800)
- Call ID: 15b5433a-9cf0-4b2d-9a09-f2d2d4287800
-  Args:
-    source: :Elisabeth_of_Hesse
+    source: Maria_Christina_of_Württemberg
     type: :Woman
-  AssignClass (cb5c03ea-8b50-4674-827b-f49fbd34f9b4)
- Call ID: cb5c03ea-8b50-4674-827b-f49fbd34f9b4
+  AssignClass (b2ce0856-7d8b-49c8-92f9-8613ab31dfea)
+ Call ID: b2ce0856-7d8b-49c8-92f9-8613ab31dfea
   Args:
-    source: :Elisabeth_of_Hesse
+    source: Maria_Christina_of_Württemberg
     type: :Person
-  AddTriple (92681f08-e880-4155-9da7-e5ae8002dd2e)
- Call ID: 92681f08-e880-4155-9da7-e5ae8002dd2e
+  AddTriple (dccdf81b-4db2-4505-a0ea-4c202262b4d5)
+ Call ID: dccdf81b-4db2-4505-a0ea-4c202262b4d5
   Args:
-    relation: :isSiblingOf
-    target: :Moritz_of_Hesse
-    source: :Heinrich_of_Hesse-Kassel
-  AddTriple (7ec0782e-1e7f-49ac-a293-561ad2e2f616)
- Call ID: 7ec0782e-1e7f-49ac-a293-561ad2e2f616
+    source: Maria_Christina_of_Württemberg
+    target: Helena_of_Austria
+    relation: :hasMother
+  AddTriple (4b9863bc-9ac8-498b-991b-db51ee81dddc)
+ Call ID: 4b9863bc-9ac8-498b-991b-db51ee81dddc
   Args:
-    target: :Otto_of_Hesse
-    source: :Heinrich_of_Hesse-Kassel
-    relation: :isSiblingOf
-  AddTriple (a93910d7-cc4c-4a19-83b8-0436b97b4947)
- Call ID: a93910d7-cc4c-4a19-83b8-0436b97b4947
-  Args:
-    target: :Elisabeth_of_Hesse
-    source: :Heinrich_of_Hesse-Kassel
-    relation: :isSiblingOf
-  AssignClass (8b6b4c21-5a73-4d1e-b75a-313282f210df)
- Call ID: 8b6b4c21-5a73-4d1e-b75a-313282f210df
+    target: Philipp_Albrecht
+    source: Maria_Christina_of_Württemberg
+    relation: :hasFather
+  AssignClass (a428426c-99f6-499e-b6a7-7e5da524df9c)
+ Call ID: a428426c-99f6-499e-b6a7-7e5da524df9c
   Args:
     type: :Woman
-    source: :Margaret_Campbell_Geddes
-  AssignClass (0c1e9f8b-e0db-49b5-996e-b1fdb76356b1)
- Call ID: 0c1e9f8b-e0db-49b5-996e-b1fdb76356b1
+    source: Rosa_of_Austria
+  AssignClass (98a1aff0-eadb-4d7c-82d8-b7b43e5439f2)
+ Call ID: 98a1aff0-eadb-4d7c-82d8-b7b43e5439f2
   Args:
-    source: :Margaret_Campbell_Geddes
+    source: Rosa_of_Austria
     type: :Person
-  AssignClass (54333c4e-cb56-4adb-8d9a-70a6791904ca)
- Call ID: 54333c4e-cb56-4adb-8d9a-70a6791904ca
+  AddTriple (0996c912-b4e1-4070-aeb5-59011353ed9e)
+ Call ID: 0996c912-b4e1-4070-aeb5-59011353ed9e
   Args:
-    source: :Louis_of_Hesse_and_by_Rhine
-    type: :Man
-  AssignClass (71482c35-6299-43de-88d4-d309bd7ae0a5)
- Call ID: 71482c35-6299-43de-88d4-d309bd7ae0a5
+    relation: :hasSister
+    source: Helena_of_Austria
+    target: Rosa_of_Austria
+  AddTriple (aab506c1-45da-4a5b-bfb5-c3474948d334)
+ Call ID: aab506c1-45da-4a5b-bfb5-c3474948d334
   Args:
-    type: :Person
-    source: :Louis_of_Hesse_and_by_Rhine
-  AddTriple (48954d8d-daba-4d0f-b38b-f35ec6a24b7c)
- Call ID: 48954d8d-daba-4d0f-b38b-f35ec6a24b7c
+    relation: :hasRelation
+    source: Philipp_Albrecht
+    target: Rosa_of_Austria
+  AddLiteral (dae20cb5-648d-48b6-a053-96a34d0f1bd3)
+ Call ID: dae20cb5-648d-48b6-a053-96a34d0f1bd3
   Args:
-    source: :Margaret_Campbell_Geddes
-    target: :Heinrich_of_Hesse-Kassel
-    relation: :isAuntOf
-  AddTriple (aaf6134d-e949-42ab-b5dc-67b8a6cd36d2)
- Call ID: aaf6134d-e949-42ab-b5dc-67b8a6cd36d2
-  Args:
-    relation: :isUncleOf
-    source: :Louis_of_Hesse_and_by_Rhine
-    target: :Heinrich_of_Hesse-Kassel
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1928
+    source: Rosa_of_Austria
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -612,43 +733,44 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Louis_of_Hesse_and_by_Rhine a :Man,
-          :Person ;
-      :isUncleOf data:Heinrich_of_Hesse-Kassel .
-
-  data:Margaret_Campbell_Geddes a :Person,
+  data:Maria_Christina_of_W%C3%BCrttemberg a :Person,
           :Woman ;
-      :isAuntOf data:Heinrich_of_Hesse-Kassel .
+      :hasFather data:Philipp_Albrecht ;
+      :hasMother data:Helena_of_Austria .
 
-  data:Elisabeth_of_Hesse a :Person,
+  data:Albrecht_Duke_of_W%C3%BCrttemberg a :Man,
+          :Person .
+
+  data:Helena_of_Austria a :Person,
+          :Woman ;
+      :hasBirthYear 1903 ;
+      :hasDeathYear 1924 ;
+      :hasFather data:Peter_Ferdinand ;
+      :hasMarriageYear 1923 ;
+      :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+      :hasRelation data:Philipp_Albrecht ;
+      :hasSister data:Rosa_of_Austria .
+
+  data:Margarete_Sophie_of_Austria a :Person,
           :Woman .
 
-  data:Mafalda_of_Savoy a :Person,
-          :Woman ;
-      :hasFather data:Victor_Emmanuel_III_of_Italy .
+  data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Moritz_of_Hesse a :Man,
+  data:Peter_Ferdinand a :Ancestor,
+          :Man,
           :Person .
 
-  data:Otto_of_Hesse a :Man,
-          :Person .
-
-  data:Philipp_of_Hesse a :Man,
-          :Person .
-
-  data:Victor_Emmanuel_III_of_Italy a :Man,
-          :Person .
-
-  data:Heinrich_of_Hesse-Kassel a :Man,
+  data:Philipp_Albrecht a :Man,
           :Person ;
-      :alsoKnownAs "Enrico d'Assia"^^xsd:string ;
-      :hasBirthYear 1927 ;
-      :hasDeathYear 1999 ;
-      :hasFather data:Philipp_of_Hesse ;
-      :hasMother data:Mafalda_of_Savoy ;
-      :isSiblingOf data:Elisabeth_of_Hesse,
-          data:Moritz_of_Hesse,
-          data:Otto_of_Hesse .
+      :hasFather data:Albrecht_Duke_of_W%C3%BCrttemberg ;
+      :hasMother data:Margarete_Sophie_of_Austria ;
+      :hasRelation data:Rosa_of_Austria .
+
+  data:Rosa_of_Austria a :Person,
+          :Woman ;
+      :hasMarriageYear 1928 .
 
 
 
@@ -656,6 +778,6 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  Finish (68892c43-1764-4287-85dc-f0ec1e863c03)
- Call ID: 68892c43-1764-4287-85dc-f0ec1e863c03
+  Finish (30db6cd4-ac86-4043-bf38-05d3674274a9)
+ Call ID: 30db6cd4-ac86-4043-bf38-05d3674274a9
   Args:

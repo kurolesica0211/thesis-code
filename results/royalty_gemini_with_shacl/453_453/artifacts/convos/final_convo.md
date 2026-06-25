@@ -85,48 +85,34 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Alexia of Greece and Denmark (Greek: Αλεξία Ντε Γκρες, romanized: Alexía de Grèce; born 10 July 1965) is the eldest child of Constantine II and Anne-Marie, who were King and Queen of Greece from 1964 until the abolition of the monarchy in 1973.
-Biography
+John Herbert Bowes-Lyon (1 April 1886 – 7 February 1930) was the second son of the 14th
+Earl of Strathmore and Kinghorne and the Countess of Strathmore and Kinghorne, and the brother of Elizabeth Bowes-Lyon, the future Queen Elizabeth the Queen Mother.
+He was the uncle of Queen Elizabeth II, although he died when she was a small child and before her sister Princess Margaret was born.
+Early life
 
-Alexia was born on 10 July 1965 at Mon Repos, a villa on the Greek island of Corfu used at the time as a summer residence by the Greek royal family.
-She was the first child born to the then King Constantine II and Queen Anne-Marie of the Hellenes.
-At the time of her birth, her father was King of Greece, her grandfather was King of Denmark, and her great-grandfather was King of Sweden.
-As the monarch's only child, between her own birth and the birth on 20 May 1967 of her brother Pavlos, Alexia was heir presumptive to the throne of the Hellenes, then an extant monarchy.
-The Greek Constitution of 1952 had changed Greece's order of succession to the throne from the previous Salic law, prevalent in much of the continent, and which precluded the succession of women, to male-preference primogeniture, which accorded succession to the throne to a female member of a dynasty if she has no brothers, similar to the then extant succession laws of the United Kingdom, Denmark and Spain.
-Alexia grew up in exile and was raised in between Rome and London.
-The family then briefly moved to Denmark and stayed at Amalienborg Palace, and then to London the following year.
-Prior to Alexia's education at the Hellenic College of London, she attended the Miss Surtee's School for Boys and Girls in Rome, Italy.
-Οn 20 December 2024, Alexia along with other members of the former royal family acquired Greek citizenship, under the surname "de Grèce".
+John Bowes-Lyon was educated at Eton and New College, Oxford, where he played first-class cricket for the university side in three matches in 1906 and 1907, playing as a fast-medium bowler.
 Marriage and children
 
-Queen Anne-Marie
+On 29 September 1914, Bowes-Lyon married Fenella Hepburn-Stuart-Forbes-Trefusis (19 August 1889 – 19 July 1966), the younger daughter of Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton.
+They had five daughters:
 
 
-Queen Sofía of Spain
+World War I
 
+Before the outbreak of World War I, Bowes-Lyon worked as a stockbroker in the City of London for the firm Rowe and Pitman.
+While receiving treatment in the UK, he admitted having experienced a nervous breakdown in 1912 and also suffered from neurasthenia.
+Death
 
-Marina, consort of Prince Michael
-
-
-On 9 July 1999, Alexia married Carlos Javier Morales Quintana, an architect and a champion yachtsman, at St. Sophia Cathedral, London.
-In May 1999, two months before their wedding, Alexia and Carlos were involved in a yachting accident on a boat named the Alexia.
-Alexia and Carlos were the only two people out of the thirteen on board to be injured.
-Alexia suffered a broken collarbone and Carlos a fractured kneecap.
-At her wedding, Alexia wore a gown by the Austrian designer Inge Sprawson.
-Alexia's mother, Anne-Marie, and grandmother, Ingrid, had both also worn the same tiara on their own wedding day.
-Her attendants included her sister Princess Theodora, her niece Princess Maria-Olympia, and Princess Mafalda, daughter of Kyril, Prince of Preslav, a son of former King Simeon of Bulgaria.
-The couple have four children: 
-
-
-Their children's last names are "Morales y de Grecia", which translates to "Morales and of Greece", taking their father's surname and their mother's royal title.
-Alexia and her family now live in her husband's native land, at Puerto Calero marina, Yaiza, Lanzarote in the Canary Islands, in a house designed by her husband.
-The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Queen Sofía, lives and first cousin, Felipe VI, lives and rules.
+Bowes-Lyon died at the family home of Glamis Castle just after midnight on the morning of 7 February 1930 of pneumonia, aged 43, leaving his widow to care for their four young children.
+Bowes-Lyon's widow, Fenella Trefusis, was a leading guest at the 1947 wedding of Princess Elizabeth and Philip Mountbatten.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -142,39 +128,9 @@ The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Qu
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -189,6 +145,23 @@ The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Qu
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -206,6 +179,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -273,29 +261,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -304,6 +284,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -316,6 +304,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -324,17 +314,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -362,6 +354,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -377,165 +453,168 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9db9b6fe-9c54-43a5-b553-887cf301603b)
- Call ID: 9db9b6fe-9c54-43a5-b553-887cf301603b
+  AssignClass (db7fa946-4c93-4fec-b2d7-185907bf7487)
+ Call ID: db7fa946-4c93-4fec-b2d7-185907bf7487
   Args:
-    source: Alexia
-    type: :Woman
-  AssignClass (6494351f-7c8f-484c-a4d9-e8765d2dbd11)
- Call ID: 6494351f-7c8f-484c-a4d9-e8765d2dbd11
-  Args:
+    source: :John_Herbert_Bowes-Lyon
     type: :Man
-    source: Constantine_II
-  AssignClass (c213eab1-0898-4fb4-b0c1-7ca14aa87c66)
- Call ID: c213eab1-0898-4fb4-b0c1-7ca14aa87c66
+  AssignClass (87bc4516-3a01-4dbd-a663-2dc193df894e)
+ Call ID: 87bc4516-3a01-4dbd-a663-2dc193df894e
   Args:
-    type: :Woman
-    source: Anne-Marie
-  AssignClass (5ba3861c-44b4-42cd-b834-e201b2df5a0a)
- Call ID: 5ba3861c-44b4-42cd-b834-e201b2df5a0a
+    source: :John_Herbert_Bowes-Lyon
+    type: :Person
+  AddLiteral (c52f15a5-43c6-4c37-b08d-1c3d9f0dd964)
+ Call ID: c52f15a5-43c6-4c37-b08d-1c3d9f0dd964
   Args:
-    type: :Man
-    source: Pavlos
-  AssignClass (ea547b2d-e095-408d-9413-c902a44848f2)
- Call ID: ea547b2d-e095-408d-9413-c902a44848f2
-  Args:
-    source: Carlos_Javier_Morales_Quintana
-    type: :Man
-  AssignClass (95aa04c9-94b7-4178-a899-341731a2e887)
- Call ID: 95aa04c9-94b7-4178-a899-341731a2e887
-  Args:
-    type: :Woman
-    source: Theodora
-  AssignClass (0275c0b9-cd98-43aa-84d5-51771a692687)
- Call ID: 0275c0b9-cd98-43aa-84d5-51771a692687
-  Args:
-    source: Maria-Olympia
-    type: :Woman
-  AssignClass (82b42e29-280d-478d-9fdc-bf940d4be5e5)
- Call ID: 82b42e29-280d-478d-9fdc-bf940d4be5e5
-  Args:
-    type: :Woman
-    source: Mafalda
-  AssignClass (7dcabd5b-9ce0-48ff-968c-efac7613f48b)
- Call ID: 7dcabd5b-9ce0-48ff-968c-efac7613f48b
-  Args:
-    type: :Man
-    source: Kyril
-  AssignClass (6bcb035a-fa33-414c-95ac-bc82781cc0d7)
- Call ID: 6bcb035a-fa33-414c-95ac-bc82781cc0d7
-  Args:
-    source: Simeon_of_Bulgaria
-    type: :Man
-  AssignClass (6d60c070-38ea-4dd1-946c-96bd7c486715)
- Call ID: 6d60c070-38ea-4dd1-946c-96bd7c486715
-  Args:
-    source: Ingrid
-    type: :Woman
-  AssignClass (3cf2ba9d-69c4-44a1-8d6d-64682d1b7918)
- Call ID: 3cf2ba9d-69c4-44a1-8d6d-64682d1b7918
-  Args:
-    type: :Woman
-    source: Sofia
-  AssignClass (3b018850-a082-4eba-a743-42a3321dc042)
- Call ID: 3b018850-a082-4eba-a743-42a3321dc042
-  Args:
-    source: Felipe_VI
-    type: :Man
-  AddLiteral (bcfbefdc-b904-4b8b-aa81-9113a1538040)
- Call ID: bcfbefdc-b904-4b8b-aa81-9113a1538040
-  Args:
-    literal_value: 1965
-    source: Alexia
+    literal_value: 1886
+    source: :John_Herbert_Bowes-Lyon
     literal_type: xsd:integer
     relation: :hasBirthYear
-  AddTriple (1ee7fe4a-1747-4954-9b9b-6945a2e306d6)
- Call ID: 1ee7fe4a-1747-4954-9b9b-6945a2e306d6
+  AddLiteral (6af72b73-df5c-458f-a4d2-c2face5a56fe)
+ Call ID: 6af72b73-df5c-458f-a4d2-c2face5a56fe
   Args:
-    source: Alexia
-    target: Constantine_II
-    relation: :hasFather
-  AddTriple (7ece71bd-7589-4f8c-a033-794c3563efc4)
- Call ID: 7ece71bd-7589-4f8c-a033-794c3563efc4
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1930
+    source: :John_Herbert_Bowes-Lyon
+  AssignClass (94cb254e-f26c-43b4-8bab-a7b927ec1d69)
+ Call ID: 94cb254e-f26c-43b4-8bab-a7b927ec1d69
   Args:
-    relation: :hasMother
-    target: Anne-Marie
-    source: Alexia
-  AddTriple (4fed2e5f-b38b-4d12-9a25-cc110146e8c4)
- Call ID: 4fed2e5f-b38b-4d12-9a25-cc110146e8c4
+    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
+    type: :Woman
+  AssignClass (372d6a66-1605-4ca2-80ee-be4095d59f64)
+ Call ID: 372d6a66-1605-4ca2-80ee-be4095d59f64
   Args:
-    relation: :hasBrother
-    target: Pavlos
-    source: Alexia
-  AddTriple (b2f4b40e-2cf5-4795-b942-5899f7c2c283)
- Call ID: b2f4b40e-2cf5-4795-b942-5899f7c2c283
+    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
+    type: :Person
+  AddLiteral (4df00f39-1975-4db1-91cc-8b94620b9c4d)
+ Call ID: 4df00f39-1975-4db1-91cc-8b94620b9c4d
   Args:
-    relation: :hasFather
-    source: Pavlos
-    target: Constantine_II
-  AddTriple (724b1bc8-c0ec-47fa-869d-cfaf8db1855f)
- Call ID: 724b1bc8-c0ec-47fa-869d-cfaf8db1855f
+    literal_value: 1889
+    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (fde90be2-5460-4297-a8e5-3e5116c75729)
+ Call ID: fde90be2-5460-4297-a8e5-3e5116c75729
   Args:
-    source: Pavlos
-    target: Anne-Marie
-    relation: :hasMother
-  AddLiteral (2429bea2-a923-4e8e-86de-82f8f59fdc1b)
- Call ID: 2429bea2-a923-4e8e-86de-82f8f59fdc1b
+    literal_value: 1966
+    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddLiteral (1249a0d0-271a-4dde-aca2-4330630dd1e0)
+ Call ID: 1249a0d0-271a-4dde-aca2-4330630dd1e0
   Args:
+    literal_value: 1914
+    source: :John_Herbert_Bowes-Lyon
     relation: :hasMarriageYear
     literal_type: xsd:integer
-    source: Alexia
-    literal_value: 1999
-  AddTriple (16761892-8137-443e-81ca-aa370fe3a482)
- Call ID: 16761892-8137-443e-81ca-aa370fe3a482
+  AddTriple (a82a0ee8-6011-4b66-8f56-fcbc5e0bd7e8)
+ Call ID: a82a0ee8-6011-4b66-8f56-fcbc5e0bd7e8
   Args:
     relation: :hasRelation
-    source: Alexia
-    target: Carlos_Javier_Morales_Quintana
-  AddTriple (8cfde0d9-b077-4b93-a8e5-030a993bd406)
- Call ID: 8cfde0d9-b077-4b93-a8e5-030a993bd406
+    target: :Fenella_Hepburn-Stuart-Forbes-Trefusis
+    source: :John_Herbert_Bowes-Lyon
+  AssignClass (26f9987a-8dc7-4534-9aba-7267d1f0aa5c)
+ Call ID: 26f9987a-8dc7-4534-9aba-7267d1f0aa5c
   Args:
-    relation: :hasSister
-    source: Alexia
-    target: Theodora
-  AddTriple (868c83a4-a1da-45b5-ae84-ee45d075342b)
- Call ID: 868c83a4-a1da-45b5-ae84-ee45d075342b
+    source: :Elizabeth_Bowes-Lyon
+    type: :Woman
+  AssignClass (f6cf7517-e5ba-4582-8750-9c749c7ed652)
+ Call ID: f6cf7517-e5ba-4582-8750-9c749c7ed652
   Args:
-    target: Theodora
-    source: Maria-Olympia
-    relation: :hasMother
-  AddTriple (6239f652-dc02-48d7-8449-61a0a75b9299)
- Call ID: 6239f652-dc02-48d7-8449-61a0a75b9299
+    source: :Elizabeth_Bowes-Lyon
+    type: :Person
+  AddTriple (82fda358-9646-4727-b3c0-56f817aac421)
+ Call ID: 82fda358-9646-4727-b3c0-56f817aac421
   Args:
-    source: Mafalda
-    target: Kyril
-    relation: :hasFather
-  AddTriple (6979e36f-291b-4c5a-84bb-41350695d256)
- Call ID: 6979e36f-291b-4c5a-84bb-41350695d256
-  Args:
-    target: Simeon_of_Bulgaria
-    source: Kyril
-    relation: :hasFather
-  AddTriple (7c7c5be4-bd73-4434-9292-8b6275ef749b)
- Call ID: 7c7c5be4-bd73-4434-9292-8b6275ef749b
-  Args:
-    source: Alexia
-    target: Ingrid
-    relation: :hasMother
-  AddTriple (6d92115e-1a5e-4831-95e9-d806b2785d55)
- Call ID: 6d92115e-1a5e-4831-95e9-d806b2785d55
-  Args:
-    relation: :isAuntOf
-    target: Alexia
-    source: Sofia
-  AddTriple (72031184-c96f-499e-be69-c407d16bde6d)
- Call ID: 72031184-c96f-499e-be69-c407d16bde6d
-  Args:
+    source: :John_Herbert_Bowes-Lyon
+    target: :Elizabeth_Bowes-Lyon
     relation: :isSiblingOf
-    target: Alexia
-    source: Felipe_VI
-  Finish (e9fb2263-8993-4734-af15-f82be2a8fdb0)
- Call ID: e9fb2263-8993-4734-af15-f82be2a8fdb0
+  AssignClass (e5c826e8-b209-43c5-981f-443cbe557809)
+ Call ID: e5c826e8-b209-43c5-981f-443cbe557809
+  Args:
+    source: :14th_Earl_of_Strathmore_and_Kinghorne
+    type: :Man
+  AssignClass (3a170677-e1de-43a1-babb-2728b60b8800)
+ Call ID: 3a170677-e1de-43a1-babb-2728b60b8800
+  Args:
+    source: :14th_Earl_of_Strathmore_and_Kinghorne
+    type: :Person
+  AssignClass (5c239cf2-850d-4e99-8ccd-692121d3c1c9)
+ Call ID: 5c239cf2-850d-4e99-8ccd-692121d3c1c9
+  Args:
+    source: :Countess_of_Strathmore_and_Kinghorne
+    type: :Woman
+  AssignClass (587c9926-6081-461a-a33d-4bc1b8e7fb69)
+ Call ID: 587c9926-6081-461a-a33d-4bc1b8e7fb69
+  Args:
+    source: :Countess_of_Strathmore_and_Kinghorne
+    type: :Person
+  AddTriple (47fd55aa-549e-4e21-a605-32f1b35966b5)
+ Call ID: 47fd55aa-549e-4e21-a605-32f1b35966b5
+  Args:
+    relation: :hasFather
+    target: :14th_Earl_of_Strathmore_and_Kinghorne
+    source: :John_Herbert_Bowes-Lyon
+  AddTriple (4f49d02a-9b3a-479d-bcab-300956d55377)
+ Call ID: 4f49d02a-9b3a-479d-bcab-300956d55377
+  Args:
+    source: :John_Herbert_Bowes-Lyon
+    relation: :hasMother
+    target: :Countess_of_Strathmore_and_Kinghorne
+  AssignClass (b1ded6f6-1b1a-4044-bca7-bcebde7bb08e)
+ Call ID: b1ded6f6-1b1a-4044-bca7-bcebde7bb08e
+  Args:
+    source: :Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
+    type: :Man
+  AssignClass (61eb11b2-d8fb-4461-88bf-be0ef62c87e4)
+ Call ID: 61eb11b2-d8fb-4461-88bf-be0ef62c87e4
+  Args:
+    source: :Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
+    type: :Person
+  AddTriple (ce7f25a5-d8b3-46f1-a18c-042a9fd67868)
+ Call ID: ce7f25a5-d8b3-46f1-a18c-042a9fd67868
+  Args:
+    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
+    relation: :hasFather
+    target: :Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
+  AssignClass (68bec2c8-255f-4a98-937d-eed34e73a151)
+ Call ID: 68bec2c8-255f-4a98-937d-eed34e73a151
+  Args:
+    source: :Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (3b2f9872-bb09-4db2-a9dc-21f15a839944)
+ Call ID: 3b2f9872-bb09-4db2-a9dc-21f15a839944
+  Args:
+    source: :Queen_Elizabeth_II
+    type: :Person
+  AddTriple (9ae18bca-077a-4989-bffe-d8dbeb4d456e)
+ Call ID: 9ae18bca-077a-4989-bffe-d8dbeb4d456e
+  Args:
+    source: :John_Herbert_Bowes-Lyon
+    relation: :isUncleOf
+    target: :Queen_Elizabeth_II
+  AssignClass (c5af3f7f-a1e1-43fe-8ff8-e6f52da47046)
+ Call ID: c5af3f7f-a1e1-43fe-8ff8-e6f52da47046
+  Args:
+    source: :Princess_Margaret
+    type: :Woman
+  AssignClass (a4d4993e-8739-4ad9-9cff-f5a4792ec32e)
+ Call ID: a4d4993e-8739-4ad9-9cff-f5a4792ec32e
+  Args:
+    source: :Princess_Margaret
+    type: :Person
+  AddTriple (d07fe3d2-0d97-4339-9b9a-e364c16d9641)
+ Call ID: d07fe3d2-0d97-4339-9b9a-e364c16d9641
+  Args:
+    source: :Queen_Elizabeth_II
+    relation: :isSiblingOf
+    target: :Princess_Margaret
+  ValidateShacl (93e2748c-a769-4d85-8123-b39816d19f92)
+ Call ID: 93e2748c-a769-4d85-8123-b39816d19f92
+  Args:
+  Finish (660b988c-a73b-42fb-b255-f8da6a24811f)
+ Call ID: 660b988c-a73b-42fb-b255-f8da6a24811f
   Args:
 
 ================================= Tool Message =================================
@@ -653,46 +732,121 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Felipe_VI a :Man ;
-      :isSiblingOf data:Alexia .
+  data:John_Herbert_Bowes-Lyon a :Man,
+          :Person ;
+      :hasBirthYear 1886 ;
+      :hasDeathYear 1930 ;
+      :hasFather data:14th_Earl_of_Strathmore_and_Kinghorne ;
+      :hasMarriageYear 1914 ;
+      :hasMother data:Countess_of_Strathmore_and_Kinghorne ;
+      :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+      :isSiblingOf data:Elizabeth_Bowes-Lyon ;
+      :isUncleOf data:Queen_Elizabeth_II .
 
-  data:Mafalda a :Woman ;
-      :hasFather data:Kyril .
+  data:14th_Earl_of_Strathmore_and_Kinghorne a :Man,
+          :Person .
 
-  data:Maria-Olympia a :Woman ;
-      :hasMother data:Theodora .
+  data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Man,
+          :Person .
 
-  data:Sofia a :Woman ;
-      :isAuntOf data:Alexia .
+  data:Countess_of_Strathmore_and_Kinghorne a :Person,
+          :Woman .
 
-  data:Carlos_Javier_Morales_Quintana a :Man .
+  data:Elizabeth_Bowes-Lyon a :Person,
+          :Woman .
 
-  data:Ingrid a :Woman .
+  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person,
+          :Woman ;
+      :hasBirthYear 1889 ;
+      :hasDeathYear 1966 ;
+      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .
 
-  data:Kyril a :Man ;
-      :hasFather data:Simeon_of_Bulgaria .
+  data:Princess_Margaret a :Person,
+          :Woman .
 
-  data:Pavlos a :Man ;
-      :hasFather data:Constantine_II ;
-      :hasMother data:Anne-Marie .
+  data:Queen_Elizabeth_II a :Person,
+          :Woman ;
+      :isSiblingOf data:Princess_Margaret .
 
-  data:Simeon_of_Bulgaria a :Man .
 
-  data:Alexia a :Woman ;
-      :hasBirthYear 1965 ;
-      :hasBrother data:Pavlos ;
-      :hasFather data:Constantine_II ;
-      :hasMarriageYear 1999 ;
-      :hasMother data:Anne-Marie,
-          data:Ingrid ;
-      :hasRelation data:Carlos_Javier_Morales_Quintana ;
-      :hasSister data:Theodora .
 
-  data:Anne-Marie a :Woman .
+================================= Tool Message =================================
 
-  data:Constantine_II a :Man .
+VALIDATION RESULTS
+Total violations:9
+Violations:
 
-  data:Theodora a :Woman .
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node '14th_Earl_of_Strathmore_and_Kinghorne' is assigned as the father of 'John_Herbert_Bowes-Lyon', but it is not classified as an 'Ancestor' or 'Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('14th_Earl_of_Strathmore_and_Kinghorne', ':Ancestor')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Countess_of_Strathmore_and_Kinghorne' is assigned as the mother of 'John_Herbert_Bowes-Lyon', but it is not classified as an 'Ancestor' or 'Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Countess_of_Strathmore_and_Kinghorne', ':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node '14th_Earl_of_Strathmore_and_Kinghorne' is still missing the required classification as an 'Ancestor' or 'Man' for the 'hasFather' relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('14th_Earl_of_Strathmore_and_Kinghorne', ':Man')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' is assigned as the father of 'Fenella_Hepburn-Stuart-Forbes-Trefusis', but it is not classified as an 'Ancestor' or 'Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton', ':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Countess_of_Strathmore_and_Kinghorne' is still missing the required classification as an 'Ancestor' or 'Woman' for the 'hasMother' relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Countess_of_Strathmore_and_Kinghorne', ':Woman')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node '14th_Earl_of_Strathmore_and_Kinghorne' has failed the class constraint for the 'hasFather' property; it must be classified as an 'Ancestor' or 'Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('14th_Earl_of_Strathmore_and_Kinghorne', ':Ancestor')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' is still missing the required classification as an 'Ancestor' or 'Man' for the 'hasFather' relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton', ':Man')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Countess_of_Strathmore_and_Kinghorne' has failed the class constraint for the 'hasMother' property; it must be classified as an 'Ancestor' or 'Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Countess_of_Strathmore_and_Kinghorne', ':Woman')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' has failed the class constraint for the 'hasFather' property; it must be classified as an 'Ancestor' or 'Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton', ':Ancestor')
+
 
 
 
@@ -704,293 +858,27 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (b7494f41-f029-42cc-9fed-17d5fffc3aa5)
- Call ID: b7494f41-f029-42cc-9fed-17d5fffc3aa5
+  AssignClass (99b58ab0-55d1-49bf-adf3-ec35443a5329)
+ Call ID: 99b58ab0-55d1-49bf-adf3-ec35443a5329
   Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:27
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Simeon_of_Bulgaria' linked as the father of 'Kyril' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Simeon_of_Bulgaria', ':Ancestor')
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Constantine_II' linked as the father of 'Pavlos' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Constantine_II', ':Ancestor')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Anne-Marie' linked as the mother of 'Pavlos' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Anne-Marie', ':Ancestor')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Simeon_of_Bulgaria' linked as the father of 'Kyril' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Simeon_of_Bulgaria', ':Ancestor')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Constantine_II' linked as the father of 'Pavlos' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Constantine_II', ':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Kyril' linked as the father of 'Mafalda' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Kyril', ':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Constantine_II' linked as the father of 'Alexia' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Constantine_II', ':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Theodora' linked as the mother of 'Maria-Olympia' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Theodora', ':Ancestor')
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Anne-Marie' linked as the mother of 'Pavlos' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Anne-Marie', ':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Ingrid' linked as the mother of 'Alexia' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Ingrid', ':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Anne-Marie' linked as the mother of 'Alexia' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Anne-Marie', ':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: More than 1 values on data:Alexia->:hasMother
-    LLM-provided explanation of the violation:
-      The node 'Alexia' has more than one 'hasMother' relationship defined, which exceeds the allowed count of 1.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple('Alexia', ':hasMother', 'Ingrid')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Simeon_of_Bulgaria' linked as the father of 'Kyril' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Simeon_of_Bulgaria', ':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Constantine_II' linked as the father of 'Pavlos' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Constantine_II', ':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Kyril' linked as the father of 'Mafalda' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Kyril', ':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Constantine_II' linked as the father of 'Alexia' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Constantine_II', ':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Theodora' linked as the mother of 'Maria-Olympia' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Theodora', ':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Anne-Marie' linked as the mother of 'Pavlos' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Anne-Marie', ':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Ingrid' linked as the mother of 'Alexia' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Ingrid', ':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Anne-Marie' linked as the mother of 'Alexia' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Anne-Marie', ':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: More than 1 values on data:Alexia->:hasMother
-    LLM-provided explanation of the violation:
-      The node 'Alexia' has more than one 'hasMother' relationship defined, which exceeds the allowed count of 1.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple('Alexia', ':hasMother', 'Ingrid')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Kyril' linked as the father of 'Mafalda' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Kyril', ':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Constantine_II' linked as the father of 'Alexia' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Constantine_II', ':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Theodora' linked as the mother of 'Maria-Olympia' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Theodora', ':Ancestor')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Ingrid' linked as the mother of 'Alexia' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Ingrid', ':Ancestor')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Anne-Marie' linked as the mother of 'Alexia' does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Anne-Marie', ':Ancestor')
-
-
-  Violation [27]:
-    SHACL message: More than 1 values on data:Alexia->:hasMother
-    LLM-provided explanation of the violation:
-      The node 'Alexia' has more than one 'hasMother' relationship defined, which exceeds the allowed count of 1.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple('Alexia', ':hasMother', 'Ingrid')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (cc5d18c4-aaa0-476c-a9b3-3cbd1b5025af)
- Call ID: cc5d18c4-aaa0-476c-a9b3-3cbd1b5025af
-  Args:
+    source: :14th_Earl_of_Strathmore_and_Kinghorne
     type: :Ancestor
-    source: Simeon_of_Bulgaria
-  AssignClass (c2a2226c-e055-4e1a-9865-0560deb6d55e)
- Call ID: c2a2226c-e055-4e1a-9865-0560deb6d55e
+  AssignClass (bdc13f75-d3a8-4146-97dd-da4482f1b0d9)
+ Call ID: bdc13f75-d3a8-4146-97dd-da4482f1b0d9
   Args:
+    source: :Countess_of_Strathmore_and_Kinghorne
     type: :Ancestor
-    source: Constantine_II
-  AssignClass (04f0d452-26d6-4dc3-87c1-38736eb21512)
- Call ID: 04f0d452-26d6-4dc3-87c1-38736eb21512
+  AssignClass (96a45c9c-f31b-4900-8c9d-a90e8c89d77f)
+ Call ID: 96a45c9c-f31b-4900-8c9d-a90e8c89d77f
   Args:
+    source: :Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
     type: :Ancestor
-    source: Anne-Marie
-  AssignClass (3f533988-80d9-4b9a-b2ce-edf279ee43b2)
- Call ID: 3f533988-80d9-4b9a-b2ce-edf279ee43b2
+  ValidateShacl (ff60bcd6-afbf-4a5d-9aca-c39b9a51afa7)
+ Call ID: ff60bcd6-afbf-4a5d-9aca-c39b9a51afa7
   Args:
-    type: :Ancestor
-    source: Kyril
-  AssignClass (9f35426a-6a55-40a3-bb32-54f861bc20c9)
- Call ID: 9f35426a-6a55-40a3-bb32-54f861bc20c9
+  Finish (059936c2-ab7c-4ed7-b996-900650825354)
+ Call ID: 059936c2-ab7c-4ed7-b996-900650825354
   Args:
-    type: :Ancestor
-    source: Theodora
-  AssignClass (5fbc92db-577a-4485-b72d-05e68d6a0325)
- Call ID: 5fbc92db-577a-4485-b72d-05e68d6a0325
-  Args:
-    type: :Ancestor
-    source: Ingrid
-  RemoveTriple (cf2decd4-a035-4681-b42b-f62868166e47)
- Call ID: cf2decd4-a035-4681-b42b-f62868166e47
-  Args:
-    source: Alexia
-    relation: :hasMother
-    target: Ingrid
-  ValidateShacl (d683b2ad-c98b-4626-9bc7-f3258788be58)
- Call ID: d683b2ad-c98b-4626-9bc7-f3258788be58
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1007,51 +895,44 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Felipe_VI a :Man ;
-      :isSiblingOf data:Alexia .
+  data:John_Herbert_Bowes-Lyon a :Man,
+          :Person ;
+      :hasBirthYear 1886 ;
+      :hasDeathYear 1930 ;
+      :hasFather data:14th_Earl_of_Strathmore_and_Kinghorne ;
+      :hasMarriageYear 1914 ;
+      :hasMother data:Countess_of_Strathmore_and_Kinghorne ;
+      :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+      :isSiblingOf data:Elizabeth_Bowes-Lyon ;
+      :isUncleOf data:Queen_Elizabeth_II .
 
-  data:Ingrid a :Ancestor,
+  data:14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Countess_of_Strathmore_and_Kinghorne a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Mafalda a :Woman ;
-      :hasFather data:Kyril .
-
-  data:Maria-Olympia a :Woman ;
-      :hasMother data:Theodora .
-
-  data:Sofia a :Woman ;
-      :isAuntOf data:Alexia .
-
-  data:Carlos_Javier_Morales_Quintana a :Man .
-
-  data:Kyril a :Ancestor,
-          :Man ;
-      :hasFather data:Simeon_of_Bulgaria .
-
-  data:Pavlos a :Man ;
-      :hasFather data:Constantine_II ;
-      :hasMother data:Anne-Marie .
-
-  data:Simeon_of_Bulgaria a :Ancestor,
-          :Man .
-
-  data:Alexia a :Woman ;
-      :hasBirthYear 1965 ;
-      :hasBrother data:Pavlos ;
-      :hasFather data:Constantine_II ;
-      :hasMarriageYear 1999 ;
-      :hasMother data:Anne-Marie ;
-      :hasRelation data:Carlos_Javier_Morales_Quintana ;
-      :hasSister data:Theodora .
-
-  data:Anne-Marie a :Ancestor,
+  data:Elizabeth_Bowes-Lyon a :Person,
           :Woman .
 
-  data:Constantine_II a :Ancestor,
-          :Man .
+  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person,
+          :Woman ;
+      :hasBirthYear 1889 ;
+      :hasDeathYear 1966 ;
+      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .
 
-  data:Theodora a :Ancestor,
+  data:Princess_Margaret a :Person,
           :Woman .
+
+  data:Queen_Elizabeth_II a :Person,
+          :Woman ;
+      :isSiblingOf data:Princess_Margaret .
 
 
 
@@ -1059,10 +940,17 @@ The final data graph after all the edits:
 
 SHACL validation has not produced any violations.
 
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  Finish (e0e479fa-dfc7-40b5-a4b4-7b693296b3d0)
- Call ID: e0e479fa-dfc7-40b5-a4b4-7b693296b3d0
+  ValidateShacl (29dbfbc3-3606-4040-980e-7b2420714c3b)
+ Call ID: 29dbfbc3-3606-4040-980e-7b2420714c3b
+  Args:
+  Finish (be0ac03d-c22b-48a6-81d2-8eb287843273)
+ Call ID: be0ac03d-c22b-48a6-81d2-8eb287843273
   Args:

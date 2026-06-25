@@ -1,0 +1,264 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:James_Wordie a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:James_Wordie ;
+    :hasChild data:William_Wordie_Stancer ;
+    :hasRelation data:James_Wordie,
+        data:Jock_Stancer,
+        data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Rose_Leveson-Gower_Countess_Granville,
+        data:Rosie_Stancer,
+        data:Sir_Gilbert_Falkingham_Clayton,
+        data:Sir_Samuel_Clayton,
+        data:William_Leveson-Gower_4th_Earl_Granville,
+        data:William_Wordie_Stancer ;
+    :hasSon data:William_Wordie_Stancer ;
+    :isAncestorOf data:Jock_Stancer,
+        data:William_Wordie_Stancer ;
+    :isBloodrelationOf data:James_Wordie ;
+    :isBrotherOf data:James_Wordie ;
+    :isFatherOf data:William_Wordie_Stancer ;
+    :isParentOf data:William_Wordie_Stancer ;
+    :isSiblingOf data:James_Wordie ;
+    :isUncleOf data:William_Wordie_Stancer .
+
+data:Rose_Leveson-Gower_Countess_Granville a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :hasDaughter data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :hasRelation data:James_Wordie,
+        data:Jock_Stancer,
+        data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Rose_Leveson-Gower_Countess_Granville,
+        data:Rosie_Stancer,
+        data:Sir_Gilbert_Falkingham_Clayton,
+        data:Sir_Samuel_Clayton,
+        data:William_Leveson-Gower_4th_Earl_Granville,
+        data:William_Wordie_Stancer ;
+    :hasSister data:Rose_Leveson-Gower_Countess_Granville ;
+    :isAncestorOf data:Jock_Stancer,
+        data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Rosie_Stancer ;
+    :isAuntOf data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :isBloodrelationOf data:Rose_Leveson-Gower_Countess_Granville ;
+    :isMotherOf data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :isParentOf data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :isSiblingOf data:Rose_Leveson-Gower_Countess_Granville ;
+    :isSisterOf data:Rose_Leveson-Gower_Countess_Granville .
+
+data:Sir_Gilbert_Falkingham_Clayton a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Sir_Gilbert_Falkingham_Clayton ;
+    :hasChild data:Sir_Samuel_Clayton ;
+    :hasRelation data:James_Wordie,
+        data:Jock_Stancer,
+        data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Rose_Leveson-Gower_Countess_Granville,
+        data:Rosie_Stancer,
+        data:Sir_Gilbert_Falkingham_Clayton,
+        data:Sir_Samuel_Clayton,
+        data:William_Leveson-Gower_4th_Earl_Granville,
+        data:William_Wordie_Stancer ;
+    :hasSon data:Sir_Samuel_Clayton ;
+    :isAncestorOf data:Jock_Stancer,
+        data:Rosie_Stancer,
+        data:Sir_Samuel_Clayton ;
+    :isBloodrelationOf data:Sir_Gilbert_Falkingham_Clayton ;
+    :isBrotherOf data:Sir_Gilbert_Falkingham_Clayton ;
+    :isFatherOf data:Sir_Samuel_Clayton ;
+    :isParentOf data:Sir_Samuel_Clayton ;
+    :isSiblingOf data:Sir_Gilbert_Falkingham_Clayton ;
+    :isUncleOf data:Sir_Samuel_Clayton .
+
+data:William_Leveson-Gower_4th_Earl_Granville a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_Leveson-Gower_4th_Earl_Granville ;
+    :hasChild data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :hasDaughter data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :hasRelation data:James_Wordie,
+        data:Jock_Stancer,
+        data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Rose_Leveson-Gower_Countess_Granville,
+        data:Rosie_Stancer,
+        data:Sir_Gilbert_Falkingham_Clayton,
+        data:Sir_Samuel_Clayton,
+        data:William_Leveson-Gower_4th_Earl_Granville,
+        data:William_Wordie_Stancer ;
+    :isAncestorOf data:Jock_Stancer,
+        data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Rosie_Stancer ;
+    :isBloodrelationOf data:William_Leveson-Gower_4th_Earl_Granville ;
+    :isBrotherOf data:William_Leveson-Gower_4th_Earl_Granville ;
+    :isFatherOf data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :isParentOf data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :isSiblingOf data:William_Leveson-Gower_4th_Earl_Granville ;
+    :isUncleOf data:Lady_Mary_Cecilia_Leveson-Gower .
+
+data:William_Wordie_Stancer a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:James_Wordie ;
+    :hasBrother data:William_Wordie_Stancer ;
+    :hasChild data:Jock_Stancer ;
+    :hasFather data:James_Wordie ;
+    :hasParent data:James_Wordie ;
+    :hasRelation data:James_Wordie,
+        data:Jock_Stancer,
+        data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Rose_Leveson-Gower_Countess_Granville,
+        data:Rosie_Stancer,
+        data:Sir_Gilbert_Falkingham_Clayton,
+        data:Sir_Samuel_Clayton,
+        data:William_Leveson-Gower_4th_Earl_Granville,
+        data:William_Wordie_Stancer ;
+    :hasSon data:Jock_Stancer ;
+    :isAncestorOf data:Jock_Stancer ;
+    :isBloodrelationOf data:William_Wordie_Stancer ;
+    :isBrotherOf data:William_Wordie_Stancer ;
+    :isChildOf data:James_Wordie ;
+    :isFatherOf data:Jock_Stancer ;
+    :isParentOf data:Jock_Stancer ;
+    :isSiblingOf data:William_Wordie_Stancer ;
+    :isSonOf data:James_Wordie ;
+    :isUncleOf data:Jock_Stancer .
+
+data:Sir_Samuel_Clayton a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Sir_Gilbert_Falkingham_Clayton ;
+    :hasBrother data:Sir_Samuel_Clayton ;
+    :hasChild data:Rosie_Stancer ;
+    :hasDaughter data:Rosie_Stancer ;
+    :hasFather data:Sir_Gilbert_Falkingham_Clayton ;
+    :hasParent data:Sir_Gilbert_Falkingham_Clayton ;
+    :hasRelation data:James_Wordie,
+        data:Jock_Stancer,
+        data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Rose_Leveson-Gower_Countess_Granville,
+        data:Rosie_Stancer,
+        data:Sir_Gilbert_Falkingham_Clayton,
+        data:Sir_Samuel_Clayton,
+        data:William_Leveson-Gower_4th_Earl_Granville,
+        data:William_Wordie_Stancer ;
+    :isAncestorOf data:Jock_Stancer,
+        data:Rosie_Stancer ;
+    :isBloodrelationOf data:Sir_Samuel_Clayton ;
+    :isBrotherOf data:Sir_Samuel_Clayton ;
+    :isChildOf data:Sir_Gilbert_Falkingham_Clayton ;
+    :isFatherOf data:Rosie_Stancer ;
+    :isParentOf data:Rosie_Stancer ;
+    :isSiblingOf data:Sir_Samuel_Clayton ;
+    :isSonOf data:Sir_Gilbert_Falkingham_Clayton ;
+    :isUncleOf data:Rosie_Stancer .
+
+data:Jock_Stancer a :Man,
+        :Person ;
+    :hasAncestor data:James_Wordie,
+        data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Rose_Leveson-Gower_Countess_Granville,
+        data:Rosie_Stancer,
+        data:Sir_Gilbert_Falkingham_Clayton,
+        data:Sir_Samuel_Clayton,
+        data:William_Leveson-Gower_4th_Earl_Granville,
+        data:William_Wordie_Stancer ;
+    :hasBrother data:Jock_Stancer ;
+    :hasFather data:William_Wordie_Stancer ;
+    :hasMother data:Rosie_Stancer ;
+    :hasParent data:Rosie_Stancer,
+        data:William_Wordie_Stancer ;
+    :hasRelation data:James_Wordie,
+        data:Jock_Stancer,
+        data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Rose_Leveson-Gower_Countess_Granville,
+        data:Rosie_Stancer,
+        data:Sir_Gilbert_Falkingham_Clayton,
+        data:Sir_Samuel_Clayton,
+        data:William_Leveson-Gower_4th_Earl_Granville,
+        data:William_Wordie_Stancer ;
+    :isBloodrelationOf data:Jock_Stancer ;
+    :isBrotherOf data:Jock_Stancer ;
+    :isChildOf data:Rosie_Stancer,
+        data:William_Wordie_Stancer ;
+    :isSiblingOf data:Jock_Stancer ;
+    :isSonOf data:Rosie_Stancer,
+        data:William_Wordie_Stancer .
+
+data:Lady_Mary_Cecilia_Leveson-Gower a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Rose_Leveson-Gower_Countess_Granville,
+        data:William_Leveson-Gower_4th_Earl_Granville ;
+    :hasChild data:Rosie_Stancer ;
+    :hasDaughter data:Rosie_Stancer ;
+    :hasFather data:William_Leveson-Gower_4th_Earl_Granville ;
+    :hasMother data:Rose_Leveson-Gower_Countess_Granville ;
+    :hasParent data:Rose_Leveson-Gower_Countess_Granville,
+        data:William_Leveson-Gower_4th_Earl_Granville ;
+    :hasRelation data:James_Wordie,
+        data:Jock_Stancer,
+        data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Rose_Leveson-Gower_Countess_Granville,
+        data:Rosie_Stancer,
+        data:Sir_Gilbert_Falkingham_Clayton,
+        data:Sir_Samuel_Clayton,
+        data:William_Leveson-Gower_4th_Earl_Granville,
+        data:William_Wordie_Stancer ;
+    :hasSister data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :isAncestorOf data:Jock_Stancer,
+        data:Rosie_Stancer ;
+    :isAuntOf data:Rosie_Stancer ;
+    :isBloodrelationOf data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :isChildOf data:Rose_Leveson-Gower_Countess_Granville,
+        data:William_Leveson-Gower_4th_Earl_Granville ;
+    :isDaughterOf data:Rose_Leveson-Gower_Countess_Granville,
+        data:William_Leveson-Gower_4th_Earl_Granville ;
+    :isMotherOf data:Rosie_Stancer ;
+    :isParentOf data:Rosie_Stancer ;
+    :isSiblingOf data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :isSisterOf data:Lady_Mary_Cecilia_Leveson-Gower .
+
+data:Rosie_Stancer a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Rose_Leveson-Gower_Countess_Granville,
+        data:Sir_Gilbert_Falkingham_Clayton,
+        data:Sir_Samuel_Clayton,
+        data:William_Leveson-Gower_4th_Earl_Granville ;
+    :hasBirthYear "1960-01-25"^^xsd:date ;
+    :hasChild data:Jock_Stancer ;
+    :hasFather data:Sir_Samuel_Clayton ;
+    :hasMarriageYear 1993 ;
+    :hasMother data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :hasParent data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Sir_Samuel_Clayton ;
+    :hasRelation data:James_Wordie,
+        data:Jock_Stancer,
+        data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Rose_Leveson-Gower_Countess_Granville,
+        data:Rosie_Stancer,
+        data:Sir_Gilbert_Falkingham_Clayton,
+        data:Sir_Samuel_Clayton,
+        data:William_Leveson-Gower_4th_Earl_Granville,
+        data:William_Wordie_Stancer ;
+    :hasSister data:Rosie_Stancer ;
+    :hasSon data:Jock_Stancer ;
+    :isAncestorOf data:Jock_Stancer ;
+    :isAuntOf data:Jock_Stancer ;
+    :isBloodrelationOf data:Rosie_Stancer ;
+    :isChildOf data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Sir_Samuel_Clayton ;
+    :isDaughterOf data:Lady_Mary_Cecilia_Leveson-Gower,
+        data:Sir_Samuel_Clayton ;
+    :isMotherOf data:Jock_Stancer ;
+    :isParentOf data:Jock_Stancer ;
+    :isSiblingOf data:Rosie_Stancer ;
+    :isSisterOf data:Rosie_Stancer .
+

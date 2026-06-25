@@ -69,22 +69,20 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Emich Kyrill, Prince of Leiningen (German: Emich Kirill Ferdinand Hermann Fürst zu Leiningen; 18 October 1926 – 30 October 1991) was a German entrepreneur and son of Karl, Prince of Leiningen.
-Early life
-
-Emich was born at Coburg, Weimar Republic, the first child of Karl, Prince of Leiningen (1898–1946), (son of Emich, 5th Prince of Leiningen and Princess Feodore of Hohenlohe-Langenburg) and his wife, Grand Duchess Maria Kirillovna of Russia (1907–1951), (daughter of Grand Duke Kirill Vladimirovich of Russia and Princess Victoria Melita of Edinburgh).
-Through his mother, he was a descendant of Queen Victoria and Tsar Alexander II.
-Through his father, he was a descendant of the Vasa kings of Sweden and of both of Queen Victoria's half-siblings, Carl, Prince of Leiningen and Feodora, Princess of Hohenlohe-Langenburg.
-As a result, Emich was the first descendant of all three of Princess Victoria of Saxe-Coburg-Saalfeld's children.
-Marriage
-
-Emich married on 10 August 1950 in Rastede to Duchess Eilika of Oldenburg (2 February 1928 – 26 January 2016), fourth child and second daughter of Nikolaus, Hereditary Grand Duke of Oldenburg and Princess Helena of Waldeck and Pyrmont.
+Christian, Duke of Oldenburg (German: Christian Nikolaus
+Christian is a great-grandson of the last Grand Duke of Oldenburg to reign, Frederick Augustus II and through his mother he is related to the Princes of Löwenstein-Wertheim-Freudenberg, who belong to a morganatic branch of the House of Wittelsbach descending from Frederick I, Elector Palatine.
+Christian became heir to the headship of the Grand Ducal family on 3 April 1970 when his grandfather Hereditary Grand Duke Nikolaus died.
+According to his father's obituary issued by the family his ancestral titles (however not all part of his official German surname) are: HRH The Duke of Oldenburg, Heir in Norway, Duke of Schleswig, Holstein, Stormarn, Dithmarschen and Oldenburg, Prince of Lübeck and Birkenfeld, Lord of Jever and Knyphausen.
+The ancestral home of the House of Oldenburg is Oldenburg castle, nowadays a museum owned by the state.
+Present seats of the Duke of Oldenburg are Rastede Palace near Oldenburg and Güldenstein Manor, Harmsdorf, in Schleswig-Holstein.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -100,39 +98,9 @@ Emich married on 10 August 1950 in Rastede to Duchess Eilika of Oldenburg (2 Feb
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -147,6 +115,23 @@ Emich married on 10 August 1950 in Rastede to Duchess Eilika of Oldenburg (2 Feb
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -164,6 +149,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -231,29 +231,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,6 +254,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -274,6 +274,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -282,17 +284,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -320,6 +324,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -335,173 +423,72 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8dfc111e-a01d-4ef0-88a4-e91d8407171d)
- Call ID: 8dfc111e-a01d-4ef0-88a4-e91d8407171d
+  AssignClass (402f6b2f-4828-470a-8b07-8a242103095d)
+ Call ID: 402f6b2f-4828-470a-8b07-8a242103095d
   Args:
-    source: Emich_Kyrill_Prince_of_Leiningen
+    source: :Christian_Duke_of_Oldenburg
     type: :Man
-  AssignClass (fb58c1c8-086b-4714-9336-c5e5ad9842a1)
- Call ID: fb58c1c8-086b-4714-9336-c5e5ad9842a1
+  AssignClass (fd3fd70a-61ae-4fa6-8be3-b790fd78eeb1)
+ Call ID: fd3fd70a-61ae-4fa6-8be3-b790fd78eeb1
   Args:
-    source: Karl_Prince_of_Leiningen
+    source: :Christian_Duke_of_Oldenburg
+    type: :Person
+  AddLiteral (44c3ab3f-aba9-42b1-a427-7bd060607c55)
+ Call ID: 44c3ab3f-aba9-42b1-a427-7bd060607c55
+  Args:
+    literal_type: xsd:string
+    literal_value: Christian Nikolaus
+    source: :Christian_Duke_of_Oldenburg
+    relation: :alsoKnownAs
+  AssignClass (79d2d4fe-126c-4c58-b72d-23f99839b138)
+ Call ID: 79d2d4fe-126c-4c58-b72d-23f99839b138
+  Args:
+    source: :Frederick_Augustus_II
+    type: :Ancestor
+  AssignClass (c9f15716-c8b7-4010-bcb1-a8eb044aef32)
+ Call ID: c9f15716-c8b7-4010-bcb1-a8eb044aef32
+  Args:
+    source: :Frederick_Augustus_II
     type: :Man
-  AssignClass (455f114b-ec7d-41d5-bc45-cd9eb5dc6ac8)
- Call ID: 455f114b-ec7d-41d5-bc45-cd9eb5dc6ac8
+  AssignClass (b3fad479-9652-48de-9685-0611227481f8)
+ Call ID: b3fad479-9652-48de-9685-0611227481f8
   Args:
-    source: Maria_Kirillovna_of_Russia
-    type: :Woman
-  AssignClass (3aa4a9a5-0535-4c0d-a9b4-f395a7d3aff0)
- Call ID: 3aa4a9a5-0535-4c0d-a9b4-f395a7d3aff0
+    source: :Frederick_Augustus_II
+    type: :Person
+  AddTriple (5ecd90b9-a2e2-456f-bcb5-e8f58b750f67)
+ Call ID: 5ecd90b9-a2e2-456f-bcb5-e8f58b750f67
   Args:
-    source: Emich_5th_Prince_of_Leiningen
+    source: :Christian_Duke_of_Oldenburg
+    target: :Frederick_Augustus_II
+    relation: :hasAncestor
+  AssignClass (a5b7f84a-3a84-4a8c-90c6-3be6cf8e77b4)
+ Call ID: a5b7f84a-3a84-4a8c-90c6-3be6cf8e77b4
+  Args:
+    source: :Nikolaus
+    type: :Ancestor
+  AssignClass (94fefa47-36d1-426b-bf66-cd7b5ece08b2)
+ Call ID: 94fefa47-36d1-426b-bf66-cd7b5ece08b2
+  Args:
+    source: :Nikolaus
     type: :Man
-  AssignClass (bdbd1d87-47c7-4da6-a819-c5e3edaa4528)
- Call ID: bdbd1d87-47c7-4da6-a819-c5e3edaa4528
+  AssignClass (7b134dd0-30ad-4092-a348-fca2993db6e9)
+ Call ID: 7b134dd0-30ad-4092-a348-fca2993db6e9
   Args:
-    source: Feodore_of_Hohenlohe_Langenburg
-    type: :Woman
-  AssignClass (357d3d36-0483-4f41-a765-b7b1feda4ab4)
- Call ID: 357d3d36-0483-4f41-a765-b7b1feda4ab4
+    source: :Nikolaus
+    type: :Person
+  AddTriple (af6d260d-836d-4892-88f7-9eb68e2e2f72)
+ Call ID: af6d260d-836d-4892-88f7-9eb68e2e2f72
   Args:
-    source: Kirill_Vladimirovich_of_Russia
-    type: :Man
-  AssignClass (44dd0747-03ad-4cfc-8177-e34cb3e5f34f)
- Call ID: 44dd0747-03ad-4cfc-8177-e34cb3e5f34f
-  Args:
-    source: Victoria_Melita_of_Edinburgh
-    type: :Woman
-  AssignClass (cd08bc4b-3420-4f16-a602-bed5cd4a4703)
- Call ID: cd08bc4b-3420-4f16-a602-bed5cd4a4703
-  Args:
-    source: Eilika_of_Oldenburg
-    type: :Woman
-  AssignClass (b4158e84-adb9-4d1f-b4c0-03efde80ce54)
- Call ID: b4158e84-adb9-4d1f-b4c0-03efde80ce54
-  Args:
-    source: Nikolaus_Hereditary_Grand_Duke_of_Oldenburg
-    type: :Man
-  AssignClass (2a08dd29-ca1c-4ad9-8c3b-4b96ba7de4d4)
- Call ID: 2a08dd29-ca1c-4ad9-8c3b-4b96ba7de4d4
-  Args:
-    type: :Woman
-    source: Helena_of_Waldeck_and_Pyrmont
-  AddLiteral (34417b89-91ad-4d31-addd-42c8b9865d4b)
- Call ID: 34417b89-91ad-4d31-addd-42c8b9865d4b
-  Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Emich_Kyrill_Prince_of_Leiningen
-    literal_value: 1926
-  AddLiteral (dbffffbd-6dd5-49bf-bef4-2a3a2d30f31e)
- Call ID: dbffffbd-6dd5-49bf-bef4-2a3a2d30f31e
+    target: :Nikolaus
+    source: :Christian_Duke_of_Oldenburg
+    relation: :hasAncestor
+  AddLiteral (51d670e8-d88a-483c-a171-85697ed5d6e9)
+ Call ID: 51d670e8-d88a-483c-a171-85697ed5d6e9
   Args:
     relation: :hasDeathYear
+    source: :Nikolaus
+    literal_value: 1970
     literal_type: xsd:integer
-    source: Emich_Kyrill_Prince_of_Leiningen
-    literal_value: 1991
-  AddTriple (4d4707d9-77c5-4c43-9635-ed872d12a35b)
- Call ID: 4d4707d9-77c5-4c43-9635-ed872d12a35b
-  Args:
-    source: Emich_Kyrill_Prince_of_Leiningen
-    target: Karl_Prince_of_Leiningen
-    relation: :hasFather
-  AddTriple (aa30cc1a-76c1-4708-8a9b-10defd2a1721)
- Call ID: aa30cc1a-76c1-4708-8a9b-10defd2a1721
-  Args:
-    source: Emich_Kyrill_Prince_of_Leiningen
-    target: Maria_Kirillovna_of_Russia
-    relation: :hasMother
-  AddLiteral (46c60d23-2831-411c-bd56-5d78f45ece47)
- Call ID: 46c60d23-2831-411c-bd56-5d78f45ece47
-  Args:
-    source: Karl_Prince_of_Leiningen
-    literal_value: 1898
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (45fee00a-4e87-40da-8dd2-1477c1ee83b8)
- Call ID: 45fee00a-4e87-40da-8dd2-1477c1ee83b8
-  Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1946
-    source: Karl_Prince_of_Leiningen
-  AddTriple (bad57989-8753-4a75-8928-70541b0af942)
- Call ID: bad57989-8753-4a75-8928-70541b0af942
-  Args:
-    source: Karl_Prince_of_Leiningen
-    relation: :hasFather
-    target: Emich_5th_Prince_of_Leiningen
-  AddTriple (c325ea6c-025b-4abb-9805-74740bff6549)
- Call ID: c325ea6c-025b-4abb-9805-74740bff6549
-  Args:
-    source: Karl_Prince_of_Leiningen
-    target: Feodore_of_Hohenlohe_Langenburg
-    relation: :hasMother
-  AddLiteral (34a17f73-ba39-407a-ba02-4859ec0f8557)
- Call ID: 34a17f73-ba39-407a-ba02-4859ec0f8557
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Maria_Kirillovna_of_Russia
-    literal_value: 1907
-  AddLiteral (009d02dc-a6c3-46bd-b1e7-5c3ba2b5c307)
- Call ID: 009d02dc-a6c3-46bd-b1e7-5c3ba2b5c307
-  Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: Maria_Kirillovna_of_Russia
-    literal_value: 1951
-  AddTriple (652a457f-6b5f-4000-949d-678e9f8d848f)
- Call ID: 652a457f-6b5f-4000-949d-678e9f8d848f
-  Args:
-    target: Kirill_Vladimirovich_of_Russia
-    relation: :hasFather
-    source: Maria_Kirillovna_of_Russia
-  AddTriple (598d3063-e6ce-4dbe-8321-03ec8f56ecb5)
- Call ID: 598d3063-e6ce-4dbe-8321-03ec8f56ecb5
-  Args:
-    source: Maria_Kirillovna_of_Russia
-    relation: :hasMother
-    target: Victoria_Melita_of_Edinburgh
-  AddLiteral (5848136a-45e7-40ac-b6a6-e1444cb239eb)
- Call ID: 5848136a-45e7-40ac-b6a6-e1444cb239eb
-  Args:
-    literal_value: 1950
-    source: Emich_Kyrill_Prince_of_Leiningen
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AddTriple (35ba048a-067b-435e-8525-4ae9a828afdf)
- Call ID: 35ba048a-067b-435e-8525-4ae9a828afdf
-  Args:
-    relation: :hasRelation
-    target: Eilika_of_Oldenburg
-    source: Emich_Kyrill_Prince_of_Leiningen
-  AddLiteral (252a878f-eb2b-48d3-a970-20fa19ab5bce)
- Call ID: 252a878f-eb2b-48d3-a970-20fa19ab5bce
-  Args:
-    source: Eilika_of_Oldenburg
-    literal_value: 1928
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (399d398c-84ee-4448-933f-89fd07deb6b2)
- Call ID: 399d398c-84ee-4448-933f-89fd07deb6b2
-  Args:
-    literal_value: 2016
-    source: Eilika_of_Oldenburg
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddTriple (892ef867-758f-41d5-9df4-48ecec0e5787)
- Call ID: 892ef867-758f-41d5-9df4-48ecec0e5787
-  Args:
-    relation: :hasFather
-    target: Nikolaus_Hereditary_Grand_Duke_of_Oldenburg
-    source: Eilika_of_Oldenburg
-  AddTriple (045bb1f0-7f64-4fbe-8426-c16a41113ef5)
- Call ID: 045bb1f0-7f64-4fbe-8426-c16a41113ef5
-  Args:
-    target: Helena_of_Waldeck_and_Pyrmont
-    relation: :hasMother
-    source: Eilika_of_Oldenburg
-  Finish (28049b7c-8035-44c0-bfe1-6b1f7e167dd3)
- Call ID: 28049b7c-8035-44c0-bfe1-6b1f7e167dd3
+  Finish (1056132c-ea50-4d22-b3e4-a8a58175ed25)
+ Call ID: 1056132c-ea50-4d22-b3e4-a8a58175ed25
   Args:

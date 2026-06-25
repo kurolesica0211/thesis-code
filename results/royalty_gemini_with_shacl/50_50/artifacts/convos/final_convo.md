@@ -204,6 +204,8 @@ Alexander, Crown Prince of Yugoslavia.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -219,39 +221,9 @@ Alexander, Crown Prince of Yugoslavia.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -266,6 +238,23 @@ Alexander, Crown Prince of Yugoslavia.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -283,6 +272,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -350,29 +354,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -381,6 +377,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -393,6 +397,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -401,17 +407,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -439,6 +447,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -454,291 +546,259 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ba109320-d30c-4b3a-97eb-d5ef5ecdaed1)
- Call ID: ba109320-d30c-4b3a-97eb-d5ef5ecdaed1
+  AssignClass (15f1147c-3dab-4ff8-80d8-a26d6d70d2f5)
+ Call ID: 15f1147c-3dab-4ff8-80d8-a26d6d70d2f5
   Args:
     source: :Alexander
     type: :Man
-  AssignClass (3267fc22-b1d6-47a3-9477-77769811ea04)
- Call ID: 3267fc22-b1d6-47a3-9477-77769811ea04
+  AssignClass (5f305148-9de0-4acd-8b67-2be307f26c7b)
+ Call ID: 5f305148-9de0-4acd-8b67-2be307f26c7b
   Args:
+    source: :Alexander
     type: :Person
-    source: :Alexander
-  AddLiteral (ed1e47f4-44ff-4639-bea8-cff1d28a143c)
- Call ID: ed1e47f4-44ff-4639-bea8-cff1d28a143c
-  Args:
-    source: :Alexander
-    relation: :hasBirthYear
-    literal_value: 1893
-    literal_type: xsd:integer
-  AddLiteral (43fb33b9-56a7-4a2a-bc8a-f89725904b2a)
- Call ID: 43fb33b9-56a7-4a2a-bc8a-f89725904b2a
-  Args:
-    relation: :hasDeathYear
-    source: :Alexander
-    literal_type: xsd:integer
-    literal_value: 1920
-  AssignClass (a7858f6a-262b-4c9e-9a93-a42bbea151f8)
- Call ID: a7858f6a-262b-4c9e-9a93-a42bbea151f8
+  AssignClass (ec7ede89-059c-44e4-9e53-6cc4c6b2b7a5)
+ Call ID: ec7ede89-059c-44e4-9e53-6cc4c6b2b7a5
   Args:
     type: :Man
     source: :Constantine_I
-  AssignClass (1f4160b0-1ed8-4682-b545-87353badee50)
- Call ID: 1f4160b0-1ed8-4682-b545-87353badee50
+  AssignClass (98d589f6-b09e-4c50-a239-278bbc039995)
+ Call ID: 98d589f6-b09e-4c50-a239-278bbc039995
   Args:
-    source: :Constantine_I
     type: :Person
-  AssignClass (665c1d33-c66d-4157-a28a-02d36d7e236a)
- Call ID: 665c1d33-c66d-4157-a28a-02d36d7e236a
+    source: :Constantine_I
+  AssignClass (9b5690af-da60-4e14-b17f-725547bd3c3a)
+ Call ID: 9b5690af-da60-4e14-b17f-725547bd3c3a
+  Args:
+    source: :George_I
+    type: :Man
+  AssignClass (78a27628-caaa-4e45-b307-88a97384c4bb)
+ Call ID: 78a27628-caaa-4e45-b307-88a97384c4bb
+  Args:
+    type: :Person
+    source: :George_I
+  AssignClass (94832132-cb46-4f78-9c48-132b09d6386a)
+ Call ID: 94832132-cb46-4f78-9c48-132b09d6386a
+  Args:
+    source: :Olga_Constantinovna
+    type: :Woman
+  AssignClass (32340567-cc09-416e-a945-c50ef90159fc)
+ Call ID: 32340567-cc09-416e-a945-c50ef90159fc
+  Args:
+    type: :Person
+    source: :Olga_Constantinovna
+  AssignClass (312da56a-89a5-42a3-9e66-28c8aa18d70d)
+ Call ID: 312da56a-89a5-42a3-9e66-28c8aa18d70d
+  Args:
+    source: :Sophia_of_Prussia
+    type: :Woman
+  AssignClass (273cbde9-9880-47bd-ae47-a7bf6ff1e0cb)
+ Call ID: 273cbde9-9880-47bd-ae47-a7bf6ff1e0cb
+  Args:
+    source: :Sophia_of_Prussia
+    type: :Person
+  AssignClass (a6aef633-05bf-4b95-b234-35f5d654fbe2)
+ Call ID: a6aef633-05bf-4b95-b234-35f5d654fbe2
+  Args:
+    type: :Man
+    source: :Frederick_III
+  AssignClass (cd9486d9-6821-4076-92df-4057f82ce41e)
+ Call ID: cd9486d9-6821-4076-92df-4057f82ce41e
+  Args:
+    source: :Frederick_III
+    type: :Person
+  AssignClass (e3d74610-7834-4752-a057-1af08396e176)
+ Call ID: e3d74610-7834-4752-a057-1af08396e176
+  Args:
+    source: :Victoria_Princess_Royal
+    type: :Woman
+  AssignClass (bcb2bc25-f371-4550-9172-60c78533a5a7)
+ Call ID: bcb2bc25-f371-4550-9172-60c78533a5a7
+  Args:
+    source: :Victoria_Princess_Royal
+    type: :Person
+  AssignClass (9c4f9d26-1105-42b6-b0c0-21187011c7db)
+ Call ID: 9c4f9d26-1105-42b6-b0c0-21187011c7db
+  Args:
+    type: :Man
+    source: :George_Crown_Prince
+  AssignClass (986ed951-fea8-4421-b9f2-dba3a997a4f4)
+ Call ID: 986ed951-fea8-4421-b9f2-dba3a997a4f4
+  Args:
+    source: :George_Crown_Prince
+    type: :Person
+  AssignClass (00060403-b90d-400d-92c3-6621d301e813)
+ Call ID: 00060403-b90d-400d-92c3-6621d301e813
+  Args:
+    source: :Helen
+    type: :Woman
+  AssignClass (8c342c53-3677-4391-add7-e13ca69df9a1)
+ Call ID: 8c342c53-3677-4391-add7-e13ca69df9a1
+  Args:
+    type: :Person
+    source: :Helen
+  AssignClass (8f0b0536-e7d5-443b-b3cc-40168a90ca5a)
+ Call ID: 8f0b0536-e7d5-443b-b3cc-40168a90ca5a
+  Args:
+    source: :Paul
+    type: :Man
+  AssignClass (fe8e1a28-4066-4b36-92e0-c0e6c0ee5d92)
+ Call ID: fe8e1a28-4066-4b36-92e0-c0e6c0ee5d92
+  Args:
+    type: :Person
+    source: :Paul
+  AssignClass (137a93f8-f1a8-4ee7-9099-a91911baefef)
+ Call ID: 137a93f8-f1a8-4ee7-9099-a91911baefef
+  Args:
+    source: :Aspasia_Manos
+    type: :Woman
+  AssignClass (ccebc968-1546-4971-9c96-f75ce1570a3e)
+ Call ID: ccebc968-1546-4971-9c96-f75ce1570a3e
+  Args:
+    type: :Person
+    source: :Aspasia_Manos
+  AssignClass (522b905a-cd3b-4748-a9da-435cd3ea2a09)
+ Call ID: 522b905a-cd3b-4748-a9da-435cd3ea2a09
+  Args:
+    type: :Man
+    source: :Petros_Manos
+  AssignClass (8249d6f9-f336-4ad9-978d-9919bb199fda)
+ Call ID: 8249d6f9-f336-4ad9-978d-9919bb199fda
+  Args:
+    source: :Petros_Manos
+    type: :Person
+  AssignClass (ba032b92-3af9-40f4-a85b-bb1d405cbc20)
+ Call ID: ba032b92-3af9-40f4-a85b-bb1d405cbc20
   Args:
     type: :Woman
-    source: :Sophia_of_Prussia
-  AssignClass (2435bae8-e042-47ea-a446-e387f53627e5)
- Call ID: 2435bae8-e042-47ea-a446-e387f53627e5
+    source: :Maria_Argyropoulos
+  AssignClass (7cf1b5f4-d3c5-4422-a118-1e538cdb8b5d)
+ Call ID: 7cf1b5f4-d3c5-4422-a118-1e538cdb8b5d
   Args:
+    source: :Maria_Argyropoulos
     type: :Person
-    source: :Sophia_of_Prussia
-  AddTriple (c6ec8b81-fe30-44ee-9949-17254a305321)
- Call ID: c6ec8b81-fe30-44ee-9949-17254a305321
+  AssignClass (d10fb187-0304-4b6d-ba56-1f7746810650)
+ Call ID: d10fb187-0304-4b6d-ba56-1f7746810650
   Args:
+    type: :Woman
+    source: :Alexandra
+  AssignClass (be2b117b-d78e-4ff5-8c30-c4f0e50781cd)
+ Call ID: be2b117b-d78e-4ff5-8c30-c4f0e50781cd
+  Args:
+    source: :Alexandra
+    type: :Person
+  AddLiteral (45585b68-a263-4ca7-b39f-519c5152d818)
+ Call ID: 45585b68-a263-4ca7-b39f-519c5152d818
+  Args:
+    literal_value: 1893
+    source: :Alexander
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (868c2593-92a2-4506-a15d-108c784f9ce8)
+ Call ID: 868c2593-92a2-4506-a15d-108c784f9ce8
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: :Alexander
+    literal_value: 1920
+  AddTriple (14775876-76c8-4c06-9eba-fe25344a630a)
+ Call ID: 14775876-76c8-4c06-9eba-fe25344a630a
+  Args:
+    source: :Alexander
     target: :Constantine_I
     relation: :hasFather
-    source: :Alexander
-  AddTriple (8458c86b-2805-433d-ba9e-3bae20e110e6)
- Call ID: 8458c86b-2805-433d-ba9e-3bae20e110e6
+  AddTriple (6c2fb94e-7991-440b-b360-0a32284c680c)
+ Call ID: 6c2fb94e-7991-440b-b360-0a32284c680c
   Args:
     source: :Alexander
     relation: :hasMother
     target: :Sophia_of_Prussia
-  AssignClass (0a16c67c-1b49-4d33-b588-efba48cb68dd)
- Call ID: 0a16c67c-1b49-4d33-b588-efba48cb68dd
-  Args:
-    source: :George_I_of_Greece
-    type: :Man
-  AssignClass (afa831b7-8457-4947-ad61-456c1ba21f65)
- Call ID: afa831b7-8457-4947-ad61-456c1ba21f65
-  Args:
-    type: :Person
-    source: :George_I_of_Greece
-  AssignClass (ddc992e4-a49c-4603-a8ab-a9b3b55447aa)
- Call ID: ddc992e4-a49c-4603-a8ab-a9b3b55447aa
-  Args:
-    type: :Woman
-    source: :Olga_Constantinovna
-  AssignClass (b9d9a6ff-67c5-4c18-99a0-0b1a5d577e45)
- Call ID: b9d9a6ff-67c5-4c18-99a0-0b1a5d577e45
-  Args:
-    type: :Person
-    source: :Olga_Constantinovna
-  AddTriple (8d360eea-e533-41f1-8220-547866a1f1a2)
- Call ID: 8d360eea-e533-41f1-8220-547866a1f1a2
+  AddTriple (94dee641-8b21-4f8c-897c-15e4d2dfccf7)
+ Call ID: 94dee641-8b21-4f8c-897c-15e4d2dfccf7
   Args:
     source: :Constantine_I
     relation: :hasFather
-    target: :George_I_of_Greece
-  AddTriple (52d57fad-9290-422d-b1c8-de70772c003b)
- Call ID: 52d57fad-9290-422d-b1c8-de70772c003b
+    target: :George_I
+  AddTriple (3a94a8fe-0806-49ca-a536-3929c7b1dd1d)
+ Call ID: 3a94a8fe-0806-49ca-a536-3929c7b1dd1d
   Args:
     relation: :hasMother
-    source: :Constantine_I
     target: :Olga_Constantinovna
-  AssignClass (fc074b2d-9e0d-490f-98f1-9ca1bae619a3)
- Call ID: fc074b2d-9e0d-490f-98f1-9ca1bae619a3
+    source: :Constantine_I
+  AddTriple (4bb51e5c-b976-486b-be9d-154f3d59e36c)
+ Call ID: 4bb51e5c-b976-486b-be9d-154f3d59e36c
   Args:
-    source: :Frederick_III
-    type: :Man
-  AssignClass (7a1a3931-bc9a-43ee-a83c-17081e70c210)
- Call ID: 7a1a3931-bc9a-43ee-a83c-17081e70c210
-  Args:
-    type: :Person
-    source: :Frederick_III
-  AssignClass (e2745913-2fe5-46ce-bb7e-9f4144ad2b0b)
- Call ID: e2745913-2fe5-46ce-bb7e-9f4144ad2b0b
-  Args:
-    type: :Woman
-    source: :Victoria_Princess_Royal
-  AssignClass (696f9db4-bf20-4290-bfce-e9a71f212cc6)
- Call ID: 696f9db4-bf20-4290-bfce-e9a71f212cc6
-  Args:
-    type: :Person
-    source: :Victoria_Princess_Royal
-  AddTriple (4113abe7-5459-4ddb-b513-8204db26c69a)
- Call ID: 4113abe7-5459-4ddb-b513-8204db26c69a
-  Args:
-    relation: :hasFather
     source: :Sophia_of_Prussia
     target: :Frederick_III
-  AddTriple (827d61f6-47fb-475a-a438-182f42fb49be)
- Call ID: 827d61f6-47fb-475a-a438-182f42fb49be
-  Args:
-    source: :Sophia_of_Prussia
-    relation: :hasMother
-    target: :Victoria_Princess_Royal
-  AssignClass (d557f2ef-5b92-4fab-bd8c-d48b4cd04bb3)
- Call ID: d557f2ef-5b92-4fab-bd8c-d48b4cd04bb3
-  Args:
-    source: :Helen_of_Romania
-    type: :Woman
-  AssignClass (69a798c2-dd03-4946-a27c-d17745676547)
- Call ID: 69a798c2-dd03-4946-a27c-d17745676547
-  Args:
-    type: :Person
-    source: :Helen_of_Romania
-  AssignClass (ee0d9241-7fd1-48b2-9d79-f9943df09910)
- Call ID: ee0d9241-7fd1-48b2-9d79-f9943df09910
-  Args:
-    source: :George_of_Greece
-    type: :Man
-  AssignClass (334e2d16-c147-4a23-8482-123e15e5a5a0)
- Call ID: 334e2d16-c147-4a23-8482-123e15e5a5a0
-  Args:
-    type: :Person
-    source: :George_of_Greece
-  AssignClass (2383f1a8-6992-42ff-8ee8-821a891511aa)
- Call ID: 2383f1a8-6992-42ff-8ee8-821a891511aa
-  Args:
-    source: :Paul_of_Greece
-    type: :Man
-  AssignClass (c75f38f9-9f70-4b07-b7f9-51fac9741512)
- Call ID: c75f38f9-9f70-4b07-b7f9-51fac9741512
-  Args:
-    type: :Person
-    source: :Paul_of_Greece
-  AddTriple (ae1edcbc-6214-43bb-b164-6e6fd98faa91)
- Call ID: ae1edcbc-6214-43bb-b164-6e6fd98faa91
-  Args:
-    relation: :hasSister
-    source: :Alexander
-    target: :Helen_of_Romania
-  AddTriple (8d7b944c-9c09-49e6-b7ac-0e95664d964b)
- Call ID: 8d7b944c-9c09-49e6-b7ac-0e95664d964b
-  Args:
-    target: :George_of_Greece
-    relation: :hasBrother
-    source: :Alexander
-  AddTriple (8fd15012-ddbb-4b5d-8ed3-376d668cec3c)
- Call ID: 8fd15012-ddbb-4b5d-8ed3-376d668cec3c
-  Args:
-    target: :Paul_of_Greece
-    relation: :hasBrother
-    source: :Alexander
-  AssignClass (c3bac2e4-6e8b-4def-a506-f0fd97749a81)
- Call ID: c3bac2e4-6e8b-4def-a506-f0fd97749a81
-  Args:
-    type: :Woman
-    source: :Aspasia_Manos
-  AssignClass (7c4e38ce-0a77-4281-862e-be7e20f6be1b)
- Call ID: 7c4e38ce-0a77-4281-862e-be7e20f6be1b
-  Args:
-    source: :Aspasia_Manos
-    type: :Person
-  AddLiteral (1822e0f5-9f65-4a08-a125-29156f664bf5)
- Call ID: 1822e0f5-9f65-4a08-a125-29156f664bf5
-  Args:
-    literal_value: 1919
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: :Alexander
-  AddTriple (33098378-80a6-4c21-a5de-c49cceeddc0e)
- Call ID: 33098378-80a6-4c21-a5de-c49cceeddc0e
-  Args:
-    target: :Aspasia_Manos
-    source: :Alexander
-    relation: :hasRelation
-  AssignClass (28599282-e7e2-4cd6-a079-219ef3a13138)
- Call ID: 28599282-e7e2-4cd6-a079-219ef3a13138
-  Args:
-    source: :Petros_Manos
-    type: :Man
-  AssignClass (82449407-8888-414d-b7e6-e2ddd47fd93c)
- Call ID: 82449407-8888-414d-b7e6-e2ddd47fd93c
-  Args:
-    source: :Petros_Manos
-    type: :Person
-  AssignClass (5c5f0d49-c51f-4843-bfcb-7c1eaed5524c)
- Call ID: 5c5f0d49-c51f-4843-bfcb-7c1eaed5524c
-  Args:
-    type: :Woman
-    source: :Maria_Argyropoulos
-  AssignClass (9fc0e9d9-b821-4646-b101-6b868bcd9d7b)
- Call ID: 9fc0e9d9-b821-4646-b101-6b868bcd9d7b
-  Args:
-    source: :Maria_Argyropoulos
-    type: :Person
-  AddTriple (8af4a0dc-f4be-4b20-bd9f-e7136406cd59)
- Call ID: 8af4a0dc-f4be-4b20-bd9f-e7136406cd59
-  Args:
-    target: :Petros_Manos
     relation: :hasFather
+  AddTriple (dff8046b-837f-41dd-8e88-7858d8edaa6c)
+ Call ID: dff8046b-837f-41dd-8e88-7858d8edaa6c
+  Args:
+    target: :Victoria_Princess_Royal
+    relation: :hasMother
+    source: :Sophia_of_Prussia
+  AddTriple (db7a8e32-19ae-44c4-8946-945c26a9b8f7)
+ Call ID: db7a8e32-19ae-44c4-8946-945c26a9b8f7
+  Args:
+    source: :George_Crown_Prince
+    target: :Constantine_I
+    relation: :hasFather
+  AddTriple (23e4f442-5f48-4eea-b196-bcf03d9bac2f)
+ Call ID: 23e4f442-5f48-4eea-b196-bcf03d9bac2f
+  Args:
+    source: :George_Crown_Prince
+    target: :Sophia_of_Prussia
+    relation: :hasMother
+  AddTriple (28c39d11-0bbb-4065-9f2e-3e5dff3668e2)
+ Call ID: 28c39d11-0bbb-4065-9f2e-3e5dff3668e2
+  Args:
+    source: :Helen
+    target: :Constantine_I
+    relation: :hasFather
+  AddTriple (a3298626-465f-4228-a55a-dfd0626a0d8d)
+ Call ID: a3298626-465f-4228-a55a-dfd0626a0d8d
+  Args:
+    source: :Helen
+    relation: :hasMother
+    target: :Sophia_of_Prussia
+  AddTriple (ff2c7819-8fdc-47e0-905f-f3e6edf9a3e8)
+ Call ID: ff2c7819-8fdc-47e0-905f-f3e6edf9a3e8
+  Args:
+    relation: :hasFather
+    target: :Constantine_I
+    source: :Paul
+  AddTriple (0d9f669c-f7be-4beb-b590-9df618d20c4b)
+ Call ID: 0d9f669c-f7be-4beb-b590-9df618d20c4b
+  Args:
+    relation: :hasMother
+    target: :Sophia_of_Prussia
+    source: :Paul
+  AddTriple (5c0d3214-44d9-4fd0-8149-d7f8f079f126)
+ Call ID: 5c0d3214-44d9-4fd0-8149-d7f8f079f126
+  Args:
     source: :Aspasia_Manos
-  AddTriple (87bc1241-1448-4bb5-99c0-4bc222d7effe)
- Call ID: 87bc1241-1448-4bb5-99c0-4bc222d7effe
+    relation: :hasFather
+    target: :Petros_Manos
+  AddTriple (3d1e8326-ffde-4b1a-b48d-18b811ff003d)
+ Call ID: 3d1e8326-ffde-4b1a-b48d-18b811ff003d
   Args:
     target: :Maria_Argyropoulos
     relation: :hasMother
     source: :Aspasia_Manos
-  AssignClass (ec55a990-67ac-4b3c-aeb4-abc8f246980c)
- Call ID: ec55a990-67ac-4b3c-aeb4-abc8f246980c
+  AddTriple (682b2588-2dc2-4cac-8843-6af44e2aaeb0)
+ Call ID: 682b2588-2dc2-4cac-8843-6af44e2aaeb0
   Args:
-    source: :Alexandra_of_Greece
-    type: :Woman
-  AssignClass (7a988de6-5cda-442f-b308-48fc9f18706a)
- Call ID: 7a988de6-5cda-442f-b308-48fc9f18706a
-  Args:
-    type: :Person
-    source: :Alexandra_of_Greece
-  AddTriple (31c73231-8ad7-44e8-8337-86b7e706d62a)
- Call ID: 31c73231-8ad7-44e8-8337-86b7e706d62a
-  Args:
+    relation: :hasFather
     target: :Alexander
-    source: :Alexandra_of_Greece
-    relation: :hasFather
-  AddTriple (9e9301e8-4017-4ec9-adaa-55f91dd9a876)
- Call ID: 9e9301e8-4017-4ec9-adaa-55f91dd9a876
+    source: :Alexandra
+  AddTriple (6ca4c233-8d17-4130-b522-1cde6ebdd495)
+ Call ID: 6ca4c233-8d17-4130-b522-1cde6ebdd495
   Args:
+    source: :Alexandra
     target: :Aspasia_Manos
-    source: :Alexandra_of_Greece
     relation: :hasMother
-  AssignClass (d6b02873-98eb-4e31-959f-1625b8f9d5a3)
- Call ID: d6b02873-98eb-4e31-959f-1625b8f9d5a3
+  Finish (ab25bc7d-9b3b-4c2c-b0a0-a948bfd1874d)
+ Call ID: ab25bc7d-9b3b-4c2c-b0a0-a948bfd1874d
   Args:
-    type: :Woman
-    source: :Princess_Katherine
-  AssignClass (b855d745-8e5e-4a04-878e-51eb8c2cdd88)
- Call ID: b855d745-8e5e-4a04-878e-51eb8c2cdd88
-  Args:
-    source: :Princess_Katherine
-    type: :Person
-  AddTriple (3107da6a-d88a-4cbf-9830-ace149b67be6)
- Call ID: 3107da6a-d88a-4cbf-9830-ace149b67be6
-  Args:
-    target: :Constantine_I
-    source: :Princess_Katherine
-    relation: :hasFather
-  AddTriple (5bb5eaff-3846-4e2b-9ea5-f447c16acf45)
- Call ID: 5bb5eaff-3846-4e2b-9ea5-f447c16acf45
-  Args:
-    target: :Sophia_of_Prussia
-    source: :Princess_Katherine
-    relation: :hasMother
-  ValidateShacl (c0119dd1-a127-462a-afe3-0b5158e25c3c)
- Call ID: c0119dd1-a127-462a-afe3-0b5158e25c3c
-  Args:
-  Finish (884d0ae4-6682-4271-9ba4-625611d3c48e)
- Call ID: 884d0ae4-6682-4271-9ba4-625611d3c48e
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -927,39 +987,43 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexandra_of_Greece a :Person,
+  data:Alexandra a :Person,
           :Woman ;
       :hasFather data:Alexander ;
       :hasMother data:Aspasia_Manos .
 
-  data:Princess_Katherine a :Person,
+  data:George_Crown_Prince a :Man,
+          :Person ;
+      :hasFather data:Constantine_I ;
+      :hasMother data:Sophia_of_Prussia .
+
+  data:Helen a :Person,
           :Woman ;
+      :hasFather data:Constantine_I ;
+      :hasMother data:Sophia_of_Prussia .
+
+  data:Paul a :Man,
+          :Person ;
       :hasFather data:Constantine_I ;
       :hasMother data:Sophia_of_Prussia .
 
   data:Alexander a :Man,
           :Person ;
       :hasBirthYear 1893 ;
-      :hasBrother data:George_of_Greece,
-          data:Paul_of_Greece ;
       :hasDeathYear 1920 ;
       :hasFather data:Constantine_I ;
-      :hasMarriageYear 1919 ;
-      :hasMother data:Sophia_of_Prussia ;
-      :hasRelation data:Aspasia_Manos ;
-      :hasSister data:Helen_of_Romania .
+      :hasMother data:Sophia_of_Prussia .
+
+  data:Aspasia_Manos a :Person,
+          :Woman ;
+      :hasFather data:Petros_Manos ;
+      :hasMother data:Maria_Argyropoulos .
 
   data:Frederick_III a :Man,
           :Person .
 
-  data:George_I_of_Greece a :Man,
+  data:George_I a :Man,
           :Person .
-
-  data:George_of_Greece a :Man,
-          :Person .
-
-  data:Helen_of_Romania a :Person,
-          :Woman .
 
   data:Maria_Argyropoulos a :Person,
           :Woman .
@@ -967,23 +1031,15 @@ The final data graph after all the edits:
   data:Olga_Constantinovna a :Person,
           :Woman .
 
-  data:Paul_of_Greece a :Man,
-          :Person .
-
   data:Petros_Manos a :Man,
           :Person .
 
   data:Victoria_Princess_Royal a :Person,
           :Woman .
 
-  data:Aspasia_Manos a :Person,
-          :Woman ;
-      :hasFather data:Petros_Manos ;
-      :hasMother data:Maria_Argyropoulos .
-
   data:Constantine_I a :Man,
           :Person ;
-      :hasFather data:George_I_of_Greece ;
+      :hasFather data:George_I ;
       :hasMother data:Olga_Constantinovna .
 
   data:Sophia_of_Prussia a :Person,
@@ -995,360 +1051,464 @@ The final data graph after all the edits:
 
 ================================= Tool Message =================================
 
-VALIDATION RESULTS
-Total violations:36
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'George_I_of_Greece' for 'hasFather' on 'Constantine_I' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_I_of_Greece', class=':Ancestor')
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Constantine_I' for 'hasFather' on 'Alexander' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Constantine_I', class=':Ancestor')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Olga_Constantinovna' for 'hasMother' on 'Constantine_I' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Olga_Constantinovna', class=':Ancestor')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Sophia_of_Prussia' for 'hasMother' on 'Alexander' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sophia_of_Prussia', class=':Ancestor')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Alexander' for 'hasFather' on 'Alexandra_of_Greece' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alexander', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Constantine_I' for 'hasFather' on 'Alexander' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Constantine_I', class=':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Constantine_I' for 'hasFather' on 'Princess_Katherine' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Constantine_I', class=':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Frederick_III' for 'hasFather' on 'Sophia_of_Prussia' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_III', class=':Ancestor')
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'George_I_of_Greece' for 'hasFather' on 'Constantine_I' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_I_of_Greece', class=':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Petros_Manos' for 'hasFather' on 'Aspasia_Manos' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Petros_Manos', class=':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Aspasia_Manos' for 'hasMother' on 'Alexandra_of_Greece' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Aspasia_Manos', class=':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Sophia_of_Prussia' for 'hasMother' on 'Alexander' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sophia_of_Prussia', class=':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Sophia_of_Prussia' for 'hasMother' on 'Princess_Katherine' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sophia_of_Prussia', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Victoria_Princess_Royal' for 'hasMother' on 'Sophia_of_Prussia' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Victoria_Princess_Royal', class=':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Olga_Constantinovna' for 'hasMother' on 'Constantine_I' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Olga_Constantinovna', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Maria_Argyropoulos' for 'hasMother' on 'Aspasia_Manos' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Argyropoulos', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Alexander' for 'hasFather' on 'Alexandra_of_Greece' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alexander', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Constantine_I' for 'hasFather' on 'Alexander' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Constantine_I', class=':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Constantine_I' for 'hasFather' on 'Princess_Katherine' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Constantine_I', class=':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Frederick_III' for 'hasFather' on 'Sophia_of_Prussia' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_III', class=':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'George_I_of_Greece' for 'hasFather' on 'Constantine_I' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_I_of_Greece', class=':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Petros_Manos' for 'hasFather' on 'Aspasia_Manos' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Petros_Manos', class=':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Aspasia_Manos' for 'hasMother' on 'Alexandra_of_Greece' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Aspasia_Manos', class=':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Sophia_of_Prussia' for 'hasMother' on 'Alexander' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sophia_of_Prussia', class=':Ancestor')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Sophia_of_Prussia' for 'hasMother' on 'Princess_Katherine' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sophia_of_Prussia', class=':Ancestor')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Victoria_Princess_Royal' for 'hasMother' on 'Sophia_of_Prussia' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Victoria_Princess_Royal', class=':Ancestor')
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Olga_Constantinovna' for 'hasMother' on 'Constantine_I' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Olga_Constantinovna', class=':Ancestor')
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Maria_Argyropoulos' for 'hasMother' on 'Aspasia_Manos' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Argyropoulos', class=':Ancestor')
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Alexander' for 'hasFather' on 'Alexandra_of_Greece' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alexander', class=':Ancestor')
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Constantine_I' for 'hasFather' on 'Princess_Katherine' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Constantine_I', class=':Ancestor')
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Frederick_III' for 'hasFather' on 'Sophia_of_Prussia' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_III', class=':Ancestor')
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Petros_Manos' for 'hasFather' on 'Aspasia_Manos' does not belong to the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Petros_Manos', class=':Ancestor')
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Aspasia_Manos' for 'hasMother' on 'Alexandra_of_Greece' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Aspasia_Manos', class=':Ancestor')
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Sophia_of_Prussia' for 'hasMother' on 'Princess_Katherine' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sophia_of_Prussia', class=':Ancestor')
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Victoria_Princess_Royal' for 'hasMother' on 'Sophia_of_Prussia' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Victoria_Princess_Royal', class=':Ancestor')
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Maria_Argyropoulos' for 'hasMother' on 'Aspasia_Manos' does not belong to the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Argyropoulos', class=':Ancestor')
-
-
-
-
-================================= Tool Message =================================
-
 You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  AssignClass (436c5265-dffe-4fc1-99b0-8e7e0fd799b6)
- Call ID: 436c5265-dffe-4fc1-99b0-8e7e0fd799b6
+  ValidateShacl (6692a458-650f-44e6-b7bd-de77e7e0b9bc)
+ Call ID: 6692a458-650f-44e6-b7bd-de77e7e0b9bc
   Args:
-    source: :George_I_of_Greece
-    type: :Ancestor
-  AssignClass (c5248703-6c8e-4bfe-ba33-814440d4c3db)
- Call ID: c5248703-6c8e-4bfe-ba33-814440d4c3db
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:48
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Constantine_I is not assigned the required class :Ancestor or :Man for the property :hasFather of Alexander.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_I, :Ancestor)
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node George_I is not assigned the required class :Ancestor or :Man for the property :hasFather of Constantine_I.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(George_I, :Ancestor)
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Constantine_I is not assigned the required class :Ancestor or :Man for the property :hasFather of George_Crown_Prince.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_I, :Ancestor)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Constantine_I is not assigned the required class :Ancestor or :Man for the property :hasFather of Paul.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_I, :Ancestor)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sophia_of_Prussia is not assigned the required class :Ancestor or :Woman for the property :hasMother of Alexander.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophia_of_Prussia, :Ancestor)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Olga_Constantinovna is not assigned the required class :Ancestor or :Woman for the property :hasMother of Constantine_I.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Olga_Constantinovna, :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sophia_of_Prussia is not assigned the required class :Ancestor or :Woman for the property :hasMother of George_Crown_Prince.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophia_of_Prussia, :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sophia_of_Prussia is not assigned the required class :Ancestor or :Woman for the property :hasMother of Paul.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophia_of_Prussia, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Constantine_I is not assigned the required class :Ancestor or :Man for the property :hasFather of Alexander.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_I, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node George_I is not assigned the required class :Ancestor or :Man for the property :hasFather of Constantine_I.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(George_I, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Constantine_I is not assigned the required class :Ancestor or :Man for the property :hasFather of Helen.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_I, :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Alexander is not assigned the required class :Ancestor or :Man for the property :hasFather of Alexandra.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alexander, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Constantine_I is not assigned the required class :Ancestor or :Man for the property :hasFather of George_Crown_Prince.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_I, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Constantine_I is not assigned the required class :Ancestor or :Man for the property :hasFather of Paul.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_I, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Frederick_III is not assigned the required class :Ancestor or :Man for the property :hasFather of Sophia_of_Prussia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederick_III, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Petros_Manos is not assigned the required class :Ancestor or :Man for the property :hasFather of Aspasia_Manos.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Petros_Manos, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sophia_of_Prussia is not assigned the required class :Ancestor or :Woman for the property :hasMother of Alexander.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophia_of_Prussia, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Olga_Constantinovna is not assigned the required class :Ancestor or :Woman for the property :hasMother of Constantine_I.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Olga_Constantinovna, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sophia_of_Prussia is not assigned the required class :Ancestor or :Woman for the property :hasMother of Helen.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophia_of_Prussia, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Aspasia_Manos is not assigned the required class :Ancestor or :Woman for the property :hasMother of Alexandra.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Aspasia_Manos, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sophia_of_Prussia is not assigned the required class :Ancestor or :Woman for the property :hasMother of George_Crown_Prince.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophia_of_Prussia, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sophia_of_Prussia is not assigned the required class :Ancestor or :Woman for the property :hasMother of Paul.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophia_of_Prussia, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Victoria_Princess_Royal is not assigned the required class :Ancestor or :Woman for the property :hasMother of Sophia_of_Prussia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Victoria_Princess_Royal, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Maria_Argyropoulos is not assigned the required class :Ancestor or :Woman for the property :hasMother of Aspasia_Manos.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_Argyropoulos, :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Constantine_I is not assigned the required class :Ancestor or :Man for the property :hasFather of Alexander.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_I, :Ancestor)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node George_I is not assigned the required class :Ancestor or :Man for the property :hasFather of Constantine_I.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(George_I, :Ancestor)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Constantine_I is not assigned the required class :Ancestor or :Man for the property :hasFather of Helen.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_I, :Ancestor)
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Alexander is not assigned the required class :Ancestor or :Man for the property :hasFather of Alexandra.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alexander, :Ancestor)
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Constantine_I is not assigned the required class :Ancestor or :Man for the property :hasFather of Paul.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_I, :Ancestor)
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Constantine_I is not assigned the required class :Ancestor or :Man for the property :hasFather of George_Crown_Prince.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_I, :Ancestor)
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Frederick_III is not assigned the required class :Ancestor or :Man for the property :hasFather of Sophia_of_Prussia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederick_III, :Ancestor)
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Petros_Manos is not assigned the required class :Ancestor or :Man for the property :hasFather of Aspasia_Manos.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Petros_Manos, :Ancestor)
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sophia_of_Prussia is not assigned the required class :Ancestor or :Woman for the property :hasMother of Alexander.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophia_of_Prussia, :Ancestor)
+
+
+  Violation [34]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Olga_Constantinovna is not assigned the required class :Ancestor or :Woman for the property :hasMother of Constantine_I.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Olga_Constantinovna, :Ancestor)
+
+
+  Violation [35]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sophia_of_Prussia is not assigned the required class :Ancestor or :Woman for the property :hasMother of Helen.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophia_of_Prussia, :Ancestor)
+
+
+  Violation [36]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Aspasia_Manos is not assigned the required class :Ancestor or :Woman for the property :hasMother of Alexandra.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Aspasia_Manos, :Ancestor)
+
+
+  Violation [37]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sophia_of_Prussia is not assigned the required class :Ancestor or :Woman for the property :hasMother of Paul.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophia_of_Prussia, :Ancestor)
+
+
+  Violation [38]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sophia_of_Prussia is not assigned the required class :Ancestor or :Woman for the property :hasMother of George_Crown_Prince.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophia_of_Prussia, :Ancestor)
+
+
+  Violation [39]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Victoria_Princess_Royal is not assigned the required class :Ancestor or :Woman for the property :hasMother of Sophia_of_Prussia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Victoria_Princess_Royal, :Ancestor)
+
+
+  Violation [40]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Maria_Argyropoulos is not assigned the required class :Ancestor or :Woman for the property :hasMother of Aspasia_Manos.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_Argyropoulos, :Ancestor)
+
+
+  Violation [41]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Alexander is not assigned the required class :Ancestor or :Man for the property :hasFather of Alexandra.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alexander, :Ancestor)
+
+
+  Violation [42]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Constantine_I is not assigned the required class :Ancestor or :Man for the property :hasFather of Helen.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_I, :Ancestor)
+
+
+  Violation [43]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Frederick_III is not assigned the required class :Ancestor or :Man for the property :hasFather of Sophia_of_Prussia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederick_III, :Ancestor)
+
+
+  Violation [44]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Petros_Manos is not assigned the required class :Ancestor or :Man for the property :hasFather of Aspasia_Manos.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Petros_Manos, :Ancestor)
+
+
+  Violation [45]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Aspasia_Manos is not assigned the required class :Ancestor or :Woman for the property :hasMother of Alexandra.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Aspasia_Manos, :Ancestor)
+
+
+  Violation [46]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sophia_of_Prussia is not assigned the required class :Ancestor or :Woman for the property :hasMother of Helen.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophia_of_Prussia, :Ancestor)
+
+
+  Violation [47]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Victoria_Princess_Royal is not assigned the required class :Ancestor or :Woman for the property :hasMother of Sophia_of_Prussia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Victoria_Princess_Royal, :Ancestor)
+
+
+  Violation [48]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Maria_Argyropoulos is not assigned the required class :Ancestor or :Woman for the property :hasMother of Aspasia_Manos.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_Argyropoulos, :Ancestor)
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (db7beea2-d544-4def-ace2-cc0e7389d4d6)
+ Call ID: db7beea2-d544-4def-ace2-cc0e7389d4d6
   Args:
     source: :Constantine_I
     type: :Ancestor
-  AssignClass (6c71bcd3-4763-4c86-b6ea-875c39cce8f9)
- Call ID: 6c71bcd3-4763-4c86-b6ea-875c39cce8f9
-  Args:
-    source: :Olga_Constantinovna
-    type: :Ancestor
-  AssignClass (50dc599d-a3bd-499e-b207-42d364abeebc)
- Call ID: 50dc599d-a3bd-499e-b207-42d364abeebc
+  AssignClass (979b43f8-efbf-4712-9fff-35784e8791ed)
+ Call ID: 979b43f8-efbf-4712-9fff-35784e8791ed
   Args:
     type: :Ancestor
+    source: :George_I
+  AssignClass (79029f3b-c8fb-4350-9c97-5b3625c9557d)
+ Call ID: 79029f3b-c8fb-4350-9c97-5b3625c9557d
+  Args:
     source: :Sophia_of_Prussia
-  AssignClass (42c90c40-a7ad-4b88-b84d-a384f8deda8b)
- Call ID: 42c90c40-a7ad-4b88-b84d-a384f8deda8b
+    type: :Ancestor
+  AssignClass (f5f550e6-acd6-404b-a185-e961bf12e32a)
+ Call ID: f5f550e6-acd6-404b-a185-e961bf12e32a
   Args:
     type: :Ancestor
+    source: :Olga_Constantinovna
+  AssignClass (65cba7cb-18b8-422d-b4c4-66c6a6312f83)
+ Call ID: 65cba7cb-18b8-422d-b4c4-66c6a6312f83
+  Args:
     source: :Alexander
-  AssignClass (c387012b-fd7e-4bc5-8f62-cddc85e933b4)
- Call ID: c387012b-fd7e-4bc5-8f62-cddc85e933b4
+    type: :Ancestor
+  AssignClass (176241c9-3fe9-4689-8489-78660020e3be)
+ Call ID: 176241c9-3fe9-4689-8489-78660020e3be
   Args:
+    type: :Ancestor
     source: :Frederick_III
-    type: :Ancestor
-  AssignClass (d9867bab-5d64-45a1-adcf-617cce7d0572)
- Call ID: d9867bab-5d64-45a1-adcf-617cce7d0572
+  AssignClass (87c9e7f5-8909-428c-9cdc-eb4f7361af2d)
+ Call ID: 87c9e7f5-8909-428c-9cdc-eb4f7361af2d
   Args:
-    type: :Ancestor
     source: :Petros_Manos
-  AssignClass (d4f1e095-7c54-41a3-aa48-709e89292dc8)
- Call ID: d4f1e095-7c54-41a3-aa48-709e89292dc8
+    type: :Ancestor
+  AssignClass (51114b28-7d2a-47b3-805e-f1b4e99c9a2d)
+ Call ID: 51114b28-7d2a-47b3-805e-f1b4e99c9a2d
   Args:
+    type: :Ancestor
     source: :Aspasia_Manos
-    type: :Ancestor
-  AssignClass (d2a497b5-0ddd-46c7-b8ee-784cca115fc0)
- Call ID: d2a497b5-0ddd-46c7-b8ee-784cca115fc0
+  AssignClass (5f0b97fe-6dce-47aa-ac35-11a60146b957)
+ Call ID: 5f0b97fe-6dce-47aa-ac35-11a60146b957
   Args:
-    type: :Ancestor
     source: :Victoria_Princess_Royal
-  AssignClass (ffbff34f-75a5-4a6f-9a11-efd99e6f361c)
- Call ID: ffbff34f-75a5-4a6f-9a11-efd99e6f361c
+    type: :Ancestor
+  AssignClass (c9ae37b0-286a-47e5-895f-4e416e70d3c3)
+ Call ID: c9ae37b0-286a-47e5-895f-4e416e70d3c3
   Args:
     source: :Maria_Argyropoulos
     type: :Ancestor
-  ValidateShacl (d1c5754f-e93b-421a-a766-7408465163a8)
- Call ID: d1c5754f-e93b-421a-a766-7408465163a8
+  ValidateShacl (a2f4ef70-768d-4de1-aa5f-c622b522d778)
+ Call ID: a2f4ef70-768d-4de1-aa5f-c622b522d778
   Args:
 
 ================================= Tool Message =================================
@@ -1394,13 +1554,23 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexandra_of_Greece a :Person,
+  data:Alexandra a :Person,
           :Woman ;
       :hasFather data:Alexander ;
       :hasMother data:Aspasia_Manos .
 
-  data:Princess_Katherine a :Person,
+  data:George_Crown_Prince a :Man,
+          :Person ;
+      :hasFather data:Constantine_I ;
+      :hasMother data:Sophia_of_Prussia .
+
+  data:Helen a :Person,
           :Woman ;
+      :hasFather data:Constantine_I ;
+      :hasMother data:Sophia_of_Prussia .
+
+  data:Paul a :Man,
+          :Person ;
       :hasFather data:Constantine_I ;
       :hasMother data:Sophia_of_Prussia .
 
@@ -1408,28 +1578,23 @@ The final data graph after all the edits:
           :Man,
           :Person ;
       :hasBirthYear 1893 ;
-      :hasBrother data:George_of_Greece,
-          data:Paul_of_Greece ;
       :hasDeathYear 1920 ;
       :hasFather data:Constantine_I ;
-      :hasMarriageYear 1919 ;
-      :hasMother data:Sophia_of_Prussia ;
-      :hasRelation data:Aspasia_Manos ;
-      :hasSister data:Helen_of_Romania .
+      :hasMother data:Sophia_of_Prussia .
+
+  data:Aspasia_Manos a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Petros_Manos ;
+      :hasMother data:Maria_Argyropoulos .
 
   data:Frederick_III a :Ancestor,
           :Man,
           :Person .
 
-  data:George_I_of_Greece a :Ancestor,
+  data:George_I a :Ancestor,
           :Man,
           :Person .
-
-  data:George_of_Greece a :Man,
-          :Person .
-
-  data:Helen_of_Romania a :Person,
-          :Woman .
 
   data:Maria_Argyropoulos a :Ancestor,
           :Person,
@@ -1439,9 +1604,6 @@ The final data graph after all the edits:
           :Person,
           :Woman .
 
-  data:Paul_of_Greece a :Man,
-          :Person .
-
   data:Petros_Manos a :Ancestor,
           :Man,
           :Person .
@@ -1450,16 +1612,10 @@ The final data graph after all the edits:
           :Person,
           :Woman .
 
-  data:Aspasia_Manos a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Petros_Manos ;
-      :hasMother data:Maria_Argyropoulos .
-
   data:Constantine_I a :Ancestor,
           :Man,
           :Person ;
-      :hasFather data:George_I_of_Greece ;
+      :hasFather data:George_I ;
       :hasMother data:Olga_Constantinovna .
 
   data:Sophia_of_Prussia a :Ancestor,
@@ -1478,6 +1634,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (f1ff60f1-4d54-426a-b24c-31972efb8ce8)
- Call ID: f1ff60f1-4d54-426a-b24c-31972efb8ce8
+  Finish (fad2a612-baab-406f-9d10-1e89ab860b01)
+ Call ID: fad2a612-baab-406f-9d10-1e89ab860b01
   Args:

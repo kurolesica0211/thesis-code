@@ -1,0 +1,141 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Daniel_Chatto a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Daniel Chatto"^^xsd:string ;
+    data:posIndicesFull "159:172"^^xsd:string ;
+    data:posIndicesPart "295:301"^^xsd:string,
+        "394:400"^^xsd:string,
+        "467:473"^^xsd:string,
+        "536:542"^^xsd:string,
+        "631:637"^^xsd:string,
+        "848:854"^^xsd:string ;
+    data:wdtLink wdt:Q331657 ;
+    :alsoKnownAs "Daniel St George Chatto"^^xsd:string,
+        "Daniel St. George Chatto"^^xsd:string ;
+    :hasBrother data:Daniel_Chatto ;
+    :hasChild data:Samuel_Chatto ;
+    :hasRelation data:Daniel_Chatto,
+        data:Samuel_Chatto ;
+    :hasSex data:male ;
+    :hasSon data:Samuel_Chatto ;
+    :isAncestorOf data:Samuel_Chatto ;
+    :isBloodrelationOf data:Daniel_Chatto ;
+    :isBrotherOf data:Daniel_Chatto ;
+    :isFatherOf data:Samuel_Chatto ;
+    :isParentOf data:Samuel_Chatto ;
+    :isSiblingOf data:Daniel_Chatto ;
+    :isUncleOf data:Samuel_Chatto .
+
+data:Princess_Margaret-_Countess_of_Snowdon a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Margaret, Countess of Snowdon"^^xsd:string ;
+    data:posIndicesFull "220:258"^^xsd:string ;
+    data:wdtLink wdt:Q153815 ;
+    :alsoKnownAs "Margaret Rose"^^xsd:string,
+        "Margaret Windsor"^^xsd:string,
+        "Margaret York"^^xsd:string ;
+    :hasChild data:Lady_Sarah_Chatto ;
+    :hasDaughter data:Lady_Sarah_Chatto ;
+    :hasRelation data:Lady_Sarah_Chatto,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Samuel_Chatto ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isAncestorOf data:Lady_Sarah_Chatto,
+        data:Samuel_Chatto ;
+    :isAuntOf data:Lady_Sarah_Chatto ;
+    :isBloodrelationOf data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isMotherOf data:Lady_Sarah_Chatto ;
+    :isParentOf data:Lady_Sarah_Chatto ;
+    :isSiblingOf data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isSisterOf data:Princess_Margaret-_Countess_of_Snowdon .
+
+data:Lady_Sarah_Chatto a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Lady Sarah Chatto"^^xsd:string ;
+    data:posIndicesFull "137:154"^^xsd:string ;
+    data:posIndicesPart "295:301"^^xsd:string,
+        "394:400"^^xsd:string,
+        "467:473"^^xsd:string,
+        "536:542"^^xsd:string,
+        "631:637"^^xsd:string,
+        "848:854"^^xsd:string ;
+    data:wdtLink wdt:Q1040807 ;
+    :alsoKnownAs "Lady Sarah Frances Elizabeth Armstrong-Jones"^^xsd:string,
+        "Lady Sarah Frances Elizabeth Chatto"^^xsd:string,
+        "Sarah Armstrong-Jones"^^xsd:string,
+        "Sarah Frances Elizabeth Armstrong-Jones"^^xsd:string,
+        "Sarah Frances Elizabeth Chatto"^^xsd:string ;
+    :hasAncestor data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasChild data:Samuel_Chatto ;
+    :hasMother data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasParent data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasRelation data:Lady_Sarah_Chatto,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Samuel_Chatto ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Sarah_Chatto ;
+    :hasSon data:Samuel_Chatto ;
+    :isAncestorOf data:Samuel_Chatto ;
+    :isAuntOf data:Samuel_Chatto ;
+    :isBloodrelationOf data:Lady_Sarah_Chatto ;
+    :isChildOf data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isDaughterOf data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isMotherOf data:Samuel_Chatto ;
+    :isParentOf data:Samuel_Chatto ;
+    :isSiblingOf data:Lady_Sarah_Chatto ;
+    :isSisterOf data:Lady_Sarah_Chatto .
+
+data:Samuel_Chatto a :Man,
+        :Person ;
+    rdfs:label "Samuel Chatto"^^xsd:string ;
+    data:posIndicesFull "0:13"^^xsd:string ;
+    data:posIndicesPart "295:301"^^xsd:string,
+        "394:400"^^xsd:string,
+        "467:473"^^xsd:string,
+        "536:542"^^xsd:string,
+        "631:637"^^xsd:string,
+        "848:854"^^xsd:string ;
+    data:wdtLink wdt:Q4381222 ;
+    :hasAncestor data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasBrother data:Samuel_Chatto ;
+    :hasFather data:Daniel_Chatto ;
+    :hasMother data:Lady_Sarah_Chatto ;
+    :hasParent data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto ;
+    :hasRelation data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Samuel_Chatto ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Samuel_Chatto ;
+    :isBrotherOf data:Samuel_Chatto ;
+    :isChildOf data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto ;
+    :isSiblingOf data:Samuel_Chatto ;
+    :isSonOf data:Daniel_Chatto,
+        data:Lady_Sarah_Chatto .
+

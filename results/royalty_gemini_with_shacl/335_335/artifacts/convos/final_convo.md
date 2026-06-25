@@ -85,222 +85,48 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Bernhard of Lippe-Biesterfeld (later Prince Bernhard of the Netherlands; 29 June 1911 – 1 December 2004) was Prince of the Netherlands from 6 September 1948 to 30 April 1980 as the husband of Queen Juliana.
-They had four daughters together, including Queen Beatrix of the Netherlands.
-Bernhard belonged to the German princely House of Lippe-Biesterfeld and was a nephew of the last sovereign prince of Lippe, Leopold IV.
-From birth he held the title Count of Biesterfeld; his uncle raised him to princely rank with the style of Serene Highness in 1916.
-In 1937 he married Princess Juliana of the Netherlands, and was immediately given the title Prince of the Netherlands with the style of Royal Highness.
-Upon his wife's accession to the throne in 1948, he became prince consort.
-Bernhard was an early member of the Nazi Party (NSDAP) as well as the brown shirts or Sturmabteilung (SA), and served as an officer in the Schutzstaffel (SS).
-He switched his political allegiance to the Allies after the invasion of the Netherlands.
-Until his death, Bernhard denied being a NSDAP member or holding a NSDAP membership card.
-He was also an honorary general officer in the Dutch army and was an observer in negotiating the terms of surrender of Nazi forces in the Netherlands.
-Officially for proven bravery, leadership and loyalty during his wartime efforts, he was appointed a Commander of the Military William Order, the Netherlands' oldest and highest honour.
-In 1969, Bernhard was awarded the Grand Cross (Special Class) of the Order of Merit of the Federal Republic of Germany.
-Bernhard helped found the World Wildlife Fund (WWF, later renamed World Wide Fund for Nature), becoming its first president in 1961.
-In 1970, along with Prince Philip, Duke of Edinburgh, and other associates, he established the WWF's financial endowment "The 1001: A Nature Trust".
-Early life
+Count Ingolf of Rosenborg RE (born 17 February 1940) is a Danish count and former prince.
+Born Prince Ingolf of Denmark (Danish: Prins
+Ingolf Christian Frederik Knud Harald Gorm Gustav Viggo Valdemar Aage til Danmark), he appeared likely to some day become king until the constitution was changed in 1953 to allow females to inherit the crown, placing his branch of the dynasty behind that of his first cousin Princess Margrethe and her two younger sisters.
+Family
 
-Bernhard was born Bernhard Leopold Friedrich Eberhard Julius Kurt Karl Gottfried Peter, Count of Biesterfeld in Jena, Saxe-Weimar-Eisenach, German Empire on 29 June 1911, the elder son of Prince Bernhard of Lippe and his wife, Baroness Armgard von Sierstorpff-Cramm, member of one of the oldest Lower Saxon noble families, House of Cramm.
-He was a grandson of Ernest, Count of Lippe-Biesterfeld, who was regent of the Principality of Lippe until 1904, and was also a nephew of the principality's last sovereign, Leopold IV, Prince of Lippe.
-Because his parents' marriage did not conform with the marriage laws of the House of Lippe, it was initially deemed morganatic, as Armgard did not belong by birth to any ruling or the former ruling families of Europe, Bernhard was granted only the title of Count of Biesterfeld at birth.
-In 1916, his uncle Leopold IV as reigning Prince raised him and his mother to the rank of Prince and Princess of Lippe-Biesterfeld, thereby retroactively according his parents' marriage dynastic status.
-The suffix Biesterfeld revived the beginning of a new cadet line of the House of Lippe.
-After World War I, Bernhard's family lost their German Principality and the revenue that had accompanied it, but the family was still reasonably well-off.
-Bernhard spent his early years at Reckenwalde palace (Wojnowo, Poland), the family's new estate in East Brandenburg, thirty kilometres east of the River Oder.
-Bernhard suffered from poor health as a boy.
-This prediction might have inspired Bernhard's reckless driving and the risks that he took in the Second World War and thereafter.
-The prince wrecked several cars and planes in his lifetime.
-Bernhard studied law at the University of Lausanne, Switzerland, in fall 1929 until the spring of 1930, then in Berlin, then in Munich the following year in the fall of 1931, and then again in Berlin.
-In Munich Bernhard enrolled himself on 24 October 1930.
-(He later suffered a broken neck and crushed ribs in a 160 km/h (100 mph) car crash after his marriage to princess Juliana in 1938).
-Bernhard was an active member of the Motor-SA and of the Deutsche Studentenschaft, where he inscribed himself on 27 April 1933.
-While at university in Berlin for the year 1933, Bernhard joined the Nazi Party, exactly dated on his membership card as 1 May 1933.
-Bernhard left Berlin in December 1934 when he graduated and went to work for IG Farben.
-The Prince later denied that he had belonged to SA, to the Reiter-SS (SS Cavalry Corps), and to the paramilitary National-sozialistisches Kraftfahrerkorps (NSKK), but these are well-documented memberships.
-According to journalist Philip Dröge, Bernhard was also a member of Nazi youth movement Sturm.
-While he was not a fierce champion of democracy, the Prince was never known to hold any radical political views or express any racist sentiments, although he admitted that he briefly had sympathised with Adolf Hitler's regime.
-van der Zijl clearly demonstrates, that Bernhard again and again fabulates on his memberships and other activities, to enhance his postwar stance that he never willingly would have joined any Nazi-organization.
-In October 2023, Bernhard's original NSDAP membership card was discovered in his old residence in Germany.
-The Prince eventually went to work for the German chemical giant IG Farben in the early-to-mid 1930s, then the world's fourth-largest company.
-After training, Bernhard became a secretary in 1935 to the board of directors at IG Farben's Paris office.
-Marriage and children
+Ingolf was born at Sorgenfri Palace, Sorgenfri, as His Highness Prince Ingolf of Denmark.
+Loss of place in succession
 
-Bernhard met then-Princess Juliana at the 1936 Winter Olympics at Garmisch-Partenkirchen.
-Juliana's mother, Queen Wilhelmina, had spent most of the 1930s looking for a suitable husband for Juliana.
-As a Protestant of royal rank (the House of Lippe was a sovereign house in the German Empire), Bernhard was deemed acceptable for the devoutly religious Wilhelmina.
-They were distantly related, seventh cousins, both descending from Lebrecht, Prince of Anhalt-Zeitz-Hoym.
-Wilhelmina left nothing to chance, and had her lawyers draft a very detailed prenuptial agreement that specified exactly what Bernhard could and could not do.
-Earlier, Bernhard had been granted Dutch citizenship and changed the spelling of his names from German to Dutch.
-Prince Bernhard fathered six children, four of them with Queen Juliana.
-The eldest daughter is Beatrix, (born 1938), who later became Queen of the Netherlands.
-His other daughters with Juliana are Irene (born 1939), Margriet (born 1943) and Christina (1947–2019).
-In December 2004, Dutch historian Cees Fasseur claimed that Jonathan Aitken, former British Conservative Cabinet Minister, is also a child of Prince Bernhard, the result of his wartime affair with Penelope Maffey.
+From the 1947 death of his grandfather, Christian X of Denmark, Ingolf stood only behind his father in the order of hereditary succession to the throne and was expected to become king in his turn.
+His father, Prince Knud, was then the heir presumptive, due to succeed Ingolf's uncle King Frederik IX, who had three daughters but no sons.
+In 1953, the Constitution of Denmark was amended to allow cognatic primogeniture.
+Ingolf was thus relegated to fifth in the line of succession to the Danish throne, but more importantly, he now ranked behind Margrethe and others who were likely to have dynastic children of their own (as has, in fact, happened).
+Ingolf's place in the line of succession, were he still eligible, would be no higher than eleventh today.
+Loss of dynastic rights
 
+In 1968, now with little hope of ascending the throne, Ingolf chose to forfeit his right of succession to the throne by marrying without having received the royal assent of the monarch in the Council of State.
+The king's permission to marry was not sought because it was expected to be denied, since Ingolf's fiancée was an untitled commoner.
+Though Frederik IX had liberalized traditional practice by allowing royal spouses who were not themselves royal, but who claimed noble blood and were known by courtesy titles (Anne Bowes-Lyon was the granddaughter of an earl and through her first marriage to the son of an earl bore the title of viscountess; Henri de Laborde de Monpezat used the title of count, though his family's claim to nobility was later acknowledged to be flawed), it would not be until 1995 that Margrethe II would allow her children to marry commoners with neither title nor claim to noble blood.
+Ingolf was given the title count of Rosenborg and the style of Excellency, as was customary in the 20th century for Danish princes who forfeited their dynastic rights.
+Prior to his son's wedding, Prince Knud sought to convince his brother that Ingolf should be allowed to retain his royal title after marriage.
+But the king refused, on the grounds that other males of the dynasty who had been demoted to counts of Rosenborg upon marriage might try to reclaim their royal rank if Ingolf were allowed to do so, despite marrying a commoner as they had done.
+So, in 1968, Ingolf forfeited his rights to the throne and took the title count of Rosenborg.
+His younger brother Christian did the same three years later.
+Ingolf married firstly Inge Terney (21 January 1938 in Copenhagen – 21 July 1996 in Velje), daughter of Georg Terney (1906–1977), hardware storer, and wife Jenny Kamilla Hansen (1908–1990), on 13 January 1968, at Kongens Lyngby Kirke, Kongens Lyngby, Denmark.
+After being widowed, he married secondly Sussie Hjorhøy-Pedersen (born 20 February 1950 in Copenhagen), daughter of Frederick Walter Pedersen and wife Ruth Hjorhøy, who thus became "Her Excellency Countess Sussie of Rosenborg" on 7 March 1998, at Egtved, Denmark.
+Ingolf is godfather to his grandnephew, Leopold Rosanes af Rosenborg, who is the grandson of his brother Christian.
+Public role
 
-1930s:
-Relationship with Nazi Party
-
-Prince Bernhard was a member of the "Reiter-SS", a mounted unit of the SS, part of the National Socialist Motor Corps.
-Bernhard denied being a paid or active member of the Nazi party throughout his life, although he did admit to being part of the movement as part of the Sturmabteilung; he falsely claimed it was needed for him to be member of this organization as a student at the university.
-Bernhard claimed to have severed all ties to the ruling Nazi regime in 1937 when he married princess Juliana of the Netherlands.
-Protocol demanded that the prospective Prince-Consort be invited to an audience with his head of state, who was Adolf Hitler.
-Hitler gave an account of the conversation that he had with Bernhard in his Tischgespräche (Table Conversations).
-In those notes, Hitler is recorded to have said that Bernhard approached him, shortly after the start of the Nazi regime, with an offer of support to increase German influence in the Netherlands.
-When asked in an interview in 2004 why he changed sides and started fighting against his homeland Germany, Bernhard claimed that he did not believe that Hitler and his regime had no plans to invade the Netherlands.
-Once Germany attacked his new homeland of the Netherlands in 1940; Bernhard's feelings towards his birth country of Germany changed to antagonism, and he had no problems fighting against Germany for the rest of the war.
-The Dutch government's information bureau Rijksvoorlichtingsdienst (RVD) would later confirm in 2023, years after the death, that Bernhard was member of the NSDAP, and that the Koninklijk Huisarchief (Royal House Archive) does still have Bernhard's original party membership card in his file.
-Second World War
-
-At the outset of the Second World War, during the German invasion of the Netherlands; the prince, carrying a machine gun, organised the palace guards into a combat group and shot at German warplanes.
-The royal family fled the Netherlands and took refuge in England.
-Disagreeing with Queen Wilhelmina's decision to leave the Kingdom, the prince, aged 28, is said at first to have refused to go and to have wanted to oppose the German occupation from within the country.
-His wife Princess Juliana and their children continued on to Canada, where they remained until the end of the war.
-In England, Prince Bernhard asked to work in British Intelligence.
-On the recommendation of Bernhard's friend and admirer King George VI; however, who was also of German aristocratic descent through his mother Mary of Teck, he was given access into the Intelligence organization.
-Prince Bernhard was personally screened by British intelligence officer Ian Fleming at the behest of Winston Churchill.
-Ian Fleming, who personally knew Bernhard from their war efforts and from luncheons in the Lincoln's Inn Hotel in London, based some features of his fictional character James Bond on Bernhard.
-Prince Bernhard then lowered himself 20 feet to the lowest bit of staircase standing, and then said staunchly and with a mixture of Dutch/British flair, as nothing happened: "Most enjoyable evening!"
-Bernhard's favorite drink during his meeting with Ian Fleming was a vodka martini shaken, not stirred.
-Bernhard's favorite car in London was a Bentley 4.5 litre, the same car Bond had in Fleming's first books.
-Bernhard also had a close relationship with the Americans during the war, that continued after the war in his work as chairman of the Bilderberg conference.
-Bernhard also became acquainted with Ambassador Joseph Kennedy due to his role as a liaison between Europe and the US, connection to intelligence, multinationals and European royalty.
-"For Bernhard, the Prince of the Netherlands, the war was a frustrating business.
-Born a German, he had married Queen Wilhelmina's only child, Princess Juliana, and in due time made a conscious and meaningful transition of loyalties to his new homeland.
-On 25 June 1940, three days after France fell to the German war machine, Bernhard spoke on the Overseas Service of the BBC.
-In 1940, Flight Lieutenant Murray Payne gave the prince instruction in flying a Spitfire.
-The prince made 1,000 flight-hours in a Spitfire with the RAF's No. 322 (Dutch) Squadron RAF, wrecking two planes during landings.
-In 1941, Prince Bernhard was given the honorary rank of wing commander in the Royal Air Force.
-As "Wing Commander Gibbs (RAF)", Prince Bernhard flew over occupied Europe, attacking V-1 launch pads in a B-24 Liberator, bombing Pisa, and engaging submarines over the Atlantic in a B-25 Mitchell, and conducting reconnaissance over enemy-held territory in an L-5 Grasshopper.
-Prince Bernhard was awarded the Dutch Airman's Cross for his "ability and perseverance" (Dutch: "bekwaamheid en volharding").
-Queen Wilhelmina erased the style "honorary" (the exact words were "à la suite") in the decree promoting Bernhard to General.
-In this unconstitutional manner, she gave this Royal Prince a status that was never intended by either Parliament or her Ministers.
-The Minister of Defence did not choose to correct the Monarch, and the Prince took an active and important role in the Dutch armed forces.
-By 1944, Prince Bernhard became Commander of the Dutch Armed Forces.
-After the liberation of the Netherlands, he returned with his family and became active in the negotiations for the German surrender.
-He was present during the Armistice negotiations and German surrender at Hotel de Wereld                                                 ("The World Hotel"), Wageningen in The Netherlands on 5 May 1945, where he avoided speaking German.
-The Prince was a genuine war hero in the eyes of most of the Dutch; he kept cordial relations with the Communists who fought against the Nazis.
-In the post-war years, he earned respect for his work in helping to reinvigorate the economy of the Netherlands.
-Postwar roles
-
-After the War, the position of Inspector General was created for the Prince.
-On 4 September 1948, his mother-in-law Queen Wilhelmina abdicated the throne and Juliana became Queen of the Netherlands with Bernhard becoming prince consort.
-There have been claims that KLM helped Nazis to leave Germany for Argentina on KLM flights while Bernhard was on its board.
-After a 1952 trip with Queen Juliana to the United States, Prince Bernhard was heralded by the media as a business ambassador extraordinaire for the Netherlands.
-Bilderberg
-
-In the early 1951 Polish diplomat, Józef Retinger contacted Prince Berhard with the idea to create an international conference between European and US greatest influencers to create a better relationship between Europe and the United States.
-After this Bernhard contacted Walter Bedell Smith, director of the CIA and old war friend to help him get things started in the US.
-Finally in May 1954 Bernhard was organizer and chairman of the first Bilderberg and essential in organising a meeting at the Bilderberg Hotel in the Netherlands for the business elite and intellectuals of the Western World to discuss the economic problems in the face of what they characterised as the growing threat from Communism.
-Prince Bernhard was a very outspoken person who often flouted protocol by remarking upon subjects about which he felt deeply.
-Almost until his last day, he called for more recognition for the Polish veterans of the Second World War, who had figured greatly in the liberation of the Netherlands but it was not until after his death that the Dutch Government publicly recognised the important role of the Polish Army in the liberation, when on 31 May 2006, at the Binnenhof in The Hague, Queen Beatrix conferred the Military William Order, the highest Dutch military decoration, on the Polish 1st
-First president of the World Wildlife Fund
-
-Prince Bernhard helped found the WWF and was the first president of the WWF from its founding year 1961 until 1976.
-Friendships, jetset and international connections
-
-Prince Bernhard was seen as a jet-setting and charismatic ambassador for the Dutch during post-war reconstruction.
-Prince Bernhard reportedly maintained friendships with several high-profile international figures.
-Scandals and rumours
-
-BS militia
-
-The Binnenlandse Strijdkrachten (BS, Domestic Armed Forces) militia, set up and under command of Prince Bernhard towards the end of World War II, gained a notorious reputation for unruly and out-of-control behavior including incidents of pillaging and plundering at the time the country was being liberated from Nazi occupation.
-Prince Bernhard was appointed commander of this militia in early September 1944 by Queen Wilhelmina, who had unified several Dutch resistance groups into the BS.
-However, under Bernhard's leadership, the militia proved difficult to control and was marred by controversy due to its disorderly conduct and failure to reign in misbehavior among its ranks.
-The armistice agreement on May 4, 1945, included the condition that only Allied units would directly carry out the disarming of German troops in the Netherlands.
-However, Prince Bernhard's BS militia on the ground disregarded their orders and arrested two German soldiers nearby Dam square.
-In the mid-1950s, Queen Juliana and Prince Bernhard's marriage faced significant strain because of the ongoing influence of Greet Hofmans, a faith healer and layer-on of hands.
-For nine years she acted as a confidante and adviser to Queen Juliana, often residing at Palace Soestdijk.
-Originally, Hofmans was introduced to Queen Juliana at the initiative of Prince Bernhard in 1948 to treat an eye illness of their youngest daughter, Princess Christina (then still called Marijke).
-This illness arose because Juliana was infected with rubella during pregnancy.
-While the Dutch press did not report widely on the issue, outside the Netherlands, a great deal was written about the Hofmans affair.
-Later, Bernhard admitted that he had personally provided the information for the article.
-Historian Cees Fasseur drew from it for his book, Juliana & Bernhard (2008); in addition, the Queen had granted him access to the private royal archive.
-He noted that Bernhard was reprimanded in 1956 for having leaked confidential information to the international press.
-Fasseur said that Bernhard resorted to bringing in the international press only after repeated, desperate and often dramatic pleading with his wife to distance herself from the Hofmans group.
-"
-
-Lockheed scandal
-
-Scandal rocked the royal family in 1976 when the press reported that Prince Bernhard had accepted a US$1.1 million bribe from U.S. aircraft manufacturer Lockheed Corporation to influence the Dutch government's purchase of fighter aircraft.
-At the time he had served on more than 300 corporate boards and committees worldwide and had been praised in the Netherlands for his efforts to promote the economic well-being of the country.
-Prime Minister of the Netherlands Joop den Uyl ordered an inquiry into the Lockheed affair.
-Prince Bernhard refused to answer reporters' questions, stating: "I am above such things".
-They also brought up records of Prince Bernhard's Reiter SS membership and details of his numerous extramarital affairs.
-Bernhard had an older illegitimate daughter, Alicia, born in the United States (with a German pilot whom he met in Mexico in 1951).
-On 26 August 1976, a full report of Prince Bernhard's activities was released to a shocked Dutch public.
-The Prince's own letter of 1974, to Lockheed Corporation, was publicised; he had demanded "commissions" be paid to him on Dutch government aircraft purchases.
-Out of respect for Queen Juliana, the government did not press charges against Bernhard.
-Prince Bernhard resigned as Inspector-General of the Dutch Armed Forces.
-Prime Minister Joop den Uyl made a statement in Parliament and told the delegates that the Prince would also resign from his various high-profile positions in businesses, charities, and other institutions.
-Prince Bernhard turned over the Presidency of the international World Wildlife Fund to Prince Philip, Duke of Edinburgh.
-In an interview published after his death, on 14 December 2004, Prince Bernhard admitted that he had accepted more than one million dollars (US) in bribes from Lockheed.
-In February 2008, Joop den Uyl's biography claimed that the official report investigating the Lockheed bribe scandal also presented proof that the Prince had accepted money from yet another aerospace firm:
-Project Lock
-
-In 1988, Prince Bernhard and Princess Juliana sold two paintings from their personal collection to raise money for the World Wildlife Fund.
-In 1989, however, Charles de Haes, Director-General of the WWF, transferred £500,000 back to Bernhard, for what De Haes called a private project.
-In 1991, newspapers reported that WWF was acting as a front for an operation involving people of military and intelligence background and under the leadership or coordination of Prince Bernhard, who had hired KAS International or KAS Enterprises, a private contractor owned by Special Air Service founder Sir David Stirling, to use mercenaries – mostly British – to ostensibly fight poachers in nature reserves.
-Prince Bernhard was never accused of any crime in this context, but the Project Lock scandal negatively impacted the Prince's reputation.
-Additional controversies and rumours
-
-Prince Bernhard garnered media attention when, on 30 October 2002, he paid the fines of two Albert Heijn supermarket staff members, who were convicted of assaulting a shoplifter after they detained him.
-High Stakes at the Court of His Royal Highness by historian Harry Veenendaal and journalist Jort Kelder alleges that the Prince in 1950 attempted to oust the young government of the newly founded Republic of Indonesia and place himself to lead the islands as viceroy similar to Lord Mountbatten's role in British India.
-This was particularly contentious as in 1949 the Netherlands had already officially recognised its former colony as an independent nation.
-A 2016 biography by Jolande Withuis about Queen Juliana, titled Juliana, posited further rumours including that Bernhard had once sexually assaulted a minor, that he had refused to divorce the queen twice, and that later on during their final years in life he prohibited Juliana from seeing him.
-Later life and death
-
-In 1994, the Prince had a colon tumour removed and suffered severe complications due to respiratory distress.
-In December, his daughter Queen Beatrix rushed to the hospital straight after landing from a trip to Africa.
-Two days after intensive medical attention the Royal Press Office issued a statement the Prince was reading newspapers again.
-Over the following years Bernhard continued to appear at the military parades on the national liberation day celebrating the defeat of Nazi Germany.
-Only when Juliana died in March 2004 did Bernhard become exceedingly fragile.
-Bernhard died of lung cancer at the age of 93 at University Medical Center Utrecht in Utrecht on 1 December 2004.
-Bernhard's funeral was different from those of Prince Claus and Queen Juliana in that Bernhard's coffin was transported on the undercarriage of a cannon instead of in the traditional carriage used when the coffins of Prince Claus and Queen Juliana were transported to Delft.
-Together with the playing of many military marches and the forming of guards of honour by Second World War veterans this gave the funeral procession a military character as the late Prince, a Second World War veteran, had wished.
-As a final tribute to his former military role in the Royal Netherlands Air Force, three modern F-16 jet fighters and a World War II Spitfire plane performed a low flypast during the funeral in a classic missing man formation.
-In popular culture
-
-In the years after Bernhard died his life story has been the inspiration for literature, theatre, television and comic books.
-In 2010 fact and fiction of the life of Bernhard was portrayed in a Dutch television series.
-In a biographical dissertation by Dutch journalist and historian Annejet van der Zijl published in March 2010, Bernhard was called "a failure" in the history of the Dutch royal family and a "creature of his own myths".
-Titles, styles and honours
-
-Titles
-
-Honours
-
-National honours
-
-Foreign honours
-
-Military ranks
-
-Netherlands
-
-Discharged from all military functions in September 1976
-
-
-Honorary foreign ranks
-
-
-
-
-Ancestry
-
-References
-
-External links
-
-2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
-3 title granted by Royal Decree to descendants of Princess Irene
+Count Ingolf usually takes part in major public events associated with the royal family; he and Countess Sussie attended the May 2004 wedding of Crown Prince Frederik at Copenhagen Cathedral, and the subsequent reception at Fredensborg Palace.
+On some occasions, they are listed as members of the royal family, such as when they attended the wedding of Prince Joachim in 2008 and the luncheon to celebrate the 75th birthday of Prince Henrik at Fredensborg Palace on 11 June 2009 On other occasions, such as the celebrations for the Queen's 70th birthday, they are listed along with non-royal guests, but even in these cases at the ceremonies themselves they are usually given precedence immediately after his sister Princess Elisabeth of Denmark.
+Count Ingolf and Countess Sussie attended the Queen's ruby-jubilee (40th-anniversary) celebrations.
+In 1964, when still Prince Ingolf, he acted as groomsman to his third cousin, Constantine II of Greece, on his marriage to Princess Anne-Marie of Denmark (also Ingolf's first cousin).
+Ingolf receives an annual allowance of 1.4 million kroner according to the Danish Royal House website.
+His sister, Princess Elisabeth, did not receive such an allowance, though she remained in the line of succession.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -316,39 +142,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -363,6 +159,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -380,6 +193,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -447,29 +275,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -478,6 +298,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -490,6 +318,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -498,17 +328,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -536,6 +368,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -551,183 +467,326 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (46cb8d0b-58ad-4862-99a4-e9d0314b3b2c)
- Call ID: 46cb8d0b-58ad-4862-99a4-e9d0314b3b2c
+  AssignClass (0a781c7b-140e-40ad-abe5-5d915f476b02)
+ Call ID: 0a781c7b-140e-40ad-abe5-5d915f476b02
   Args:
-    source: Bernhard_of_Lippe-Biesterfeld
+    source: Ingolf_of_Rosenborg
     type: :Man
-  AddLiteral (6a5a7db1-b8ff-440c-a6de-9b1332a3c3bd)
- Call ID: 6a5a7db1-b8ff-440c-a6de-9b1332a3c3bd
+  AssignClass (97f7db4a-0ba6-4690-aab2-5c4c5c903d68)
+ Call ID: 97f7db4a-0ba6-4690-aab2-5c4c5c903d68
   Args:
-    literal_value: 1911
-    literal_type: xsd:integer
-    source: Bernhard_of_Lippe-Biesterfeld
+    type: :Person
+    source: Ingolf_of_Rosenborg
+  AddLiteral (0b5fc9b6-9469-42c9-9d6a-c9364b6a1832)
+ Call ID: 0b5fc9b6-9469-42c9-9d6a-c9364b6a1832
+  Args:
     relation: :hasBirthYear
-  AddLiteral (1c4bedf8-21d3-4f79-b215-4c0708d17b6d)
- Call ID: 1c4bedf8-21d3-4f79-b215-4c0708d17b6d
+    literal_type: xsd:integer
+    literal_value: 1940
+    source: Ingolf_of_Rosenborg
+  AddTriple (288b8a11-c94b-4d16-b3da-c737036632a7)
+ Call ID: 288b8a11-c94b-4d16-b3da-c737036632a7
+  Args:
+    source: Ingolf_of_Rosenborg
+    target: :Male
+    relation: :hasSex
+  AssignClass (1bec5d88-78d0-43ad-8501-df6e50882f88)
+ Call ID: 1bec5d88-78d0-43ad-8501-df6e50882f88
+  Args:
+    source: :Male
+    type: :Male
+  AssignClass (4e7feace-1b5c-48c9-a476-0d0132a63946)
+ Call ID: 4e7feace-1b5c-48c9-a476-0d0132a63946
+  Args:
+    type: :Sex
+    source: :Male
+  AssignClass (182fa470-2240-4e6a-b6e1-e0f21e722d26)
+ Call ID: 182fa470-2240-4e6a-b6e1-e0f21e722d26
+  Args:
+    type: :Man
+    source: Knud_of_Denmark
+  AssignClass (88e132a2-7bf9-4799-b3b2-99be102d6ce3)
+ Call ID: 88e132a2-7bf9-4799-b3b2-99be102d6ce3
+  Args:
+    source: Knud_of_Denmark
+    type: :Person
+  AddTriple (e2e49f3b-a446-4b22-ba08-bf4cd3d47bd3)
+ Call ID: e2e49f3b-a446-4b22-ba08-bf4cd3d47bd3
+  Args:
+    target: :Knud_of_Denmark
+    source: Ingolf_of_Rosenborg
+    relation: :hasFather
+  AssignClass (ded1485d-dbe4-491a-8b34-bc308840c1c3)
+ Call ID: ded1485d-dbe4-491a-8b34-bc308840c1c3
+  Args:
+    source: Christian_X_of_Denmark
+    type: :Man
+  AssignClass (e3f67b73-b045-4d3a-8f15-d129211b5b74)
+ Call ID: e3f67b73-b045-4d3a-8f15-d129211b5b74
+  Args:
+    type: :Person
+    source: Christian_X_of_Denmark
+  AddTriple (ba059bbc-cdf6-40b0-9f05-3e9fd16d1e23)
+ Call ID: ba059bbc-cdf6-40b0-9f05-3e9fd16d1e23
+  Args:
+    relation: :hasFather
+    target: :Christian_X_of_Denmark
+    source: Knud_of_Denmark
+  AssignClass (3c94a016-c378-4b68-86ba-ac27f12ff4dc)
+ Call ID: 3c94a016-c378-4b68-86ba-ac27f12ff4dc
+  Args:
+    source: Frederik_IX_of_Denmark
+    type: :Man
+  AssignClass (99993451-6720-48d6-b739-6fc70d9fe1ed)
+ Call ID: 99993451-6720-48d6-b739-6fc70d9fe1ed
+  Args:
+    source: Frederik_IX_of_Denmark
+    type: :Person
+  AddTriple (0380da96-d8a1-488c-808b-8a3034fd7ac8)
+ Call ID: 0380da96-d8a1-488c-808b-8a3034fd7ac8
+  Args:
+    source: Knud_of_Denmark
+    target: :Frederik_IX_of_Denmark
+    relation: :hasBrother
+  AssignClass (0360defd-58af-4c4d-9bc1-b34bd154cb67)
+ Call ID: 0360defd-58af-4c4d-9bc1-b34bd154cb67
+  Args:
+    source: Inge_Terney
+    type: :Woman
+  AssignClass (283e510f-217b-44a5-b31d-3ec687c49d5c)
+ Call ID: 283e510f-217b-44a5-b31d-3ec687c49d5c
+  Args:
+    type: :Person
+    source: Inge_Terney
+  AddLiteral (dee0aaa3-b1af-42f7-a426-efb23a7c8210)
+ Call ID: dee0aaa3-b1af-42f7-a426-efb23a7c8210
+  Args:
+    source: Inge_Terney
+    literal_value: 1938
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (c995ad44-4d68-4642-83a3-f6187ffe6573)
+ Call ID: c995ad44-4d68-4642-83a3-f6187ffe6573
   Args:
     relation: :hasDeathYear
-    source: Bernhard_of_Lippe-Biesterfeld
     literal_type: xsd:integer
-    literal_value: 2004
-  AssignClass (f710c6ba-d619-43d2-8c97-acdcba144f11)
- Call ID: f710c6ba-d619-43d2-8c97-acdcba144f11
+    literal_value: 1996
+    source: Inge_Terney
+  AddTriple (15f8e184-07ff-4ba0-b2b6-3a54049089f4)
+ Call ID: 15f8e184-07ff-4ba0-b2b6-3a54049089f4
   Args:
-    type: :Woman
-    source: Juliana_of_the_Netherlands
-  AddLiteral (04309a33-43c3-473a-ae15-e37b7d064c18)
- Call ID: 04309a33-43c3-473a-ae15-e37b7d064c18
-  Args:
-    literal_value: 1937
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: Bernhard_of_Lippe-Biesterfeld
-  AddTriple (4eda5570-739b-4508-a35e-79dfcc1e2465)
- Call ID: 4eda5570-739b-4508-a35e-79dfcc1e2465
-  Args:
-    source: Bernhard_of_Lippe-Biesterfeld
-    target: Juliana_of_the_Netherlands
+    source: Ingolf_of_Rosenborg
+    target: :Inge_Terney
     relation: :hasRelation
-  AssignClass (ef172ae7-51e6-495a-bd4e-2d644687f747)
- Call ID: ef172ae7-51e6-495a-bd4e-2d644687f747
+  AddLiteral (0a75a396-343c-434e-bdbc-3b40e28ee7e9)
+ Call ID: 0a75a396-343c-434e-bdbc-3b40e28ee7e9
   Args:
-    source: Beatrix_of_the_Netherlands
-    type: :Woman
-  AddTriple (d1eb1a25-5b41-4621-aee6-b2242c153b9d)
- Call ID: d1eb1a25-5b41-4621-aee6-b2242c153b9d
+    relation: :hasMarriageYear
+    source: Ingolf_of_Rosenborg
+    literal_type: xsd:integer
+    literal_value: 1968
+  AssignClass (7088b4b4-adfc-4b21-bb03-105e8a5e4459)
+ Call ID: 7088b4b4-adfc-4b21-bb03-105e8a5e4459
   Args:
-    relation: :isDaughterOf
-    target: Bernhard_of_Lippe-Biesterfeld
-    source: Beatrix_of_the_Netherlands
-  AddTriple (f4506d85-ba47-42a3-9a40-83bb065232c3)
- Call ID: f4506d85-ba47-42a3-9a40-83bb065232c3
-  Args:
-    relation: :isDaughterOf
-    target: Juliana_of_the_Netherlands
-    source: Beatrix_of_the_Netherlands
-  AssignClass (b02f0eb7-6ad6-4725-bbf6-912f21704088)
- Call ID: b02f0eb7-6ad6-4725-bbf6-912f21704088
-  Args:
-    type: :Woman
-    source: Irene_of_the_Netherlands
-  AddTriple (1fe2b5a2-868e-4985-b31a-794bae42eee9)
- Call ID: 1fe2b5a2-868e-4985-b31a-794bae42eee9
-  Args:
-    source: Irene_of_the_Netherlands
-    relation: :isDaughterOf
-    target: Bernhard_of_Lippe-Biesterfeld
-  AddTriple (09c42add-1587-469e-ba00-070c686d75b3)
- Call ID: 09c42add-1587-469e-ba00-070c686d75b3
-  Args:
-    source: Irene_of_the_Netherlands
-    relation: :isDaughterOf
-    target: Juliana_of_the_Netherlands
-  AssignClass (d05a360e-1950-47ac-9a55-a0671eb64abe)
- Call ID: d05a360e-1950-47ac-9a55-a0671eb64abe
-  Args:
-    source: Margriet_of_the_Netherlands
-    type: :Woman
-  AddTriple (5621757f-441e-4842-8659-3fbf49a79504)
- Call ID: 5621757f-441e-4842-8659-3fbf49a79504
-  Args:
-    target: Bernhard_of_Lippe-Biesterfeld
-    relation: :isDaughterOf
-    source: Margriet_of_the_Netherlands
-  AddTriple (076f0b7d-30e6-4ca4-b237-5f507e0f61ec)
- Call ID: 076f0b7d-30e6-4ca4-b237-5f507e0f61ec
-  Args:
-    source: Margriet_of_the_Netherlands
-    target: Juliana_of_the_Netherlands
-    relation: :isDaughterOf
-  AssignClass (45b07a33-2bc6-48bc-a5b6-91f1b7839e5b)
- Call ID: 45b07a33-2bc6-48bc-a5b6-91f1b7839e5b
-  Args:
-    source: Christina_of_the_Netherlands
-    type: :Woman
-  AddTriple (bd11a035-e1a5-4d87-819d-f96c84f01520)
- Call ID: bd11a035-e1a5-4d87-819d-f96c84f01520
-  Args:
-    source: Christina_of_the_Netherlands
-    relation: :isDaughterOf
-    target: Bernhard_of_Lippe-Biesterfeld
-  AddTriple (90d5d917-2859-493b-98ae-6652705fe6f2)
- Call ID: 90d5d917-2859-493b-98ae-6652705fe6f2
-  Args:
-    relation: :isDaughterOf
-    target: Juliana_of_the_Netherlands
-    source: Christina_of_the_Netherlands
-  AssignClass (193e433d-0507-495a-b33b-24c7a4ca277a)
- Call ID: 193e433d-0507-495a-b33b-24c7a4ca277a
-  Args:
-    source: Prince_Bernhard_of_Lippe
+    source: Georg_Terney
     type: :Man
-  AssignClass (0cd9af26-1f34-4128-aee3-081758ef909a)
- Call ID: 0cd9af26-1f34-4128-aee3-081758ef909a
+  AssignClass (266d8cbf-2b72-47e2-9058-8085d82e6d39)
+ Call ID: 266d8cbf-2b72-47e2-9058-8085d82e6d39
   Args:
-    type: :Woman
-    source: Armgard_von_Sierstorpff-Cramm
-  AddTriple (78e6998e-1624-4d51-9f70-a290a3a1293e)
- Call ID: 78e6998e-1624-4d51-9f70-a290a3a1293e
+    source: Georg_Terney
+    type: :Person
+  AddTriple (e20336df-da16-4003-bb27-85acd6b1d82c)
+ Call ID: e20336df-da16-4003-bb27-85acd6b1d82c
   Args:
-    source: Bernhard_of_Lippe-Biesterfeld
-    target: Prince_Bernhard_of_Lippe
     relation: :hasFather
-  AddTriple (1678670d-7d0e-4625-ad1b-bbbc44c5f9a3)
- Call ID: 1678670d-7d0e-4625-ad1b-bbbc44c5f9a3
+    target: :Georg_Terney
+    source: Inge_Terney
+  AssignClass (8ca13941-acfc-4fb6-b6b9-19d18f8f6570)
+ Call ID: 8ca13941-acfc-4fb6-b6b9-19d18f8f6570
   Args:
-    source: Bernhard_of_Lippe-Biesterfeld
-    target: Armgard_von_Sierstorpff-Cramm
-    relation: :hasMother
-  AssignClass (4d049f28-03f9-4961-b5f0-bf5e60cd62ea)
- Call ID: 4d049f28-03f9-4961-b5f0-bf5e60cd62ea
-  Args:
-    source: Leopold_IV_Prince_of_Lippe
-    type: :Man
-  AddTriple (03769e26-1b15-4ae4-8607-f452111fec6b)
- Call ID: 03769e26-1b15-4ae4-8607-f452111fec6b
-  Args:
-    relation: :isBloodrelationOf
-    target: Leopold_IV_Prince_of_Lippe
-    source: Bernhard_of_Lippe-Biesterfeld
-  AssignClass (a2e7df32-1bd1-4f9c-89ef-1ee365c179b1)
- Call ID: a2e7df32-1bd1-4f9c-89ef-1ee365c179b1
-  Args:
-    source: Ernest_Count_of_Lippe-Biesterfeld
-    type: :Man
-  AddTriple (3824281c-dce6-4f4f-83ed-c2ce82ff26c2)
- Call ID: 3824281c-dce6-4f4f-83ed-c2ce82ff26c2
-  Args:
-    relation: :hasAncestor
-    target: Ernest_Count_of_Lippe-Biesterfeld
-    source: Bernhard_of_Lippe-Biesterfeld
-  AssignClass (b1287b21-818a-4dad-95c3-563047ef413c)
- Call ID: b1287b21-818a-4dad-95c3-563047ef413c
-  Args:
-    source: Alicia
+    source: Jenny_Kamilla_Hansen
     type: :Woman
-  AddTriple (5dc26c40-7882-46a7-aae3-66b3fd148aec)
- Call ID: 5dc26c40-7882-46a7-aae3-66b3fd148aec
+  AssignClass (998a8b3f-f909-428a-84cf-c60ccb84b8eb)
+ Call ID: 998a8b3f-f909-428a-84cf-c60ccb84b8eb
   Args:
-    target: Bernhard_of_Lippe-Biesterfeld
-    relation: :isDaughterOf
-    source: Alicia
-  AssignClass (4d8d1723-7690-4b02-a9ec-ce5eb793641d)
- Call ID: 4d8d1723-7690-4b02-a9ec-ce5eb793641d
+    source: Jenny_Kamilla_Hansen
+    type: :Person
+  AddTriple (2634e67a-1bbf-47e9-8005-626c9c21025a)
+ Call ID: 2634e67a-1bbf-47e9-8005-626c9c21025a
   Args:
-    source: Jonathan_Aitken
+    relation: :hasMother
+    source: Inge_Terney
+    target: :Jenny_Kamilla_Hansen
+  AssignClass (45ba28bf-eb53-4afa-a463-579a8e0409d4)
+ Call ID: 45ba28bf-eb53-4afa-a463-579a8e0409d4
+  Args:
+    source: Sussie_Hjorhoy_Pedersen
+    type: :Woman
+  AssignClass (0bb67047-c263-4f77-8342-ca1311f0da27)
+ Call ID: 0bb67047-c263-4f77-8342-ca1311f0da27
+  Args:
+    source: Sussie_Hjorhoy_Pedersen
+    type: :Person
+  AddLiteral (9b3ecdbd-5c36-4a50-a867-9c8e547b3327)
+ Call ID: 9b3ecdbd-5c36-4a50-a867-9c8e547b3327
+  Args:
+    literal_value: 1950
+    source: Sussie_Hjorhoy_Pedersen
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddTriple (f67a7e6f-33fc-4bef-a4ee-af53fa2164c6)
+ Call ID: f67a7e6f-33fc-4bef-a4ee-af53fa2164c6
+  Args:
+    relation: :hasRelation
+    target: :Sussie_Hjorhoy_Pedersen
+    source: Ingolf_of_Rosenborg
+  AssignClass (b8f72b98-454d-4f0e-a3aa-9617bfc21a2a)
+ Call ID: b8f72b98-454d-4f0e-a3aa-9617bfc21a2a
+  Args:
     type: :Man
-  AddTriple (4ab4e914-00a6-4faa-9c98-53ab1ab5e4ff)
- Call ID: 4ab4e914-00a6-4faa-9c98-53ab1ab5e4ff
+    source: Frederick_Walter_Pedersen
+  AssignClass (9429c261-3c29-436a-a136-238593efb780)
+ Call ID: 9429c261-3c29-436a-a136-238593efb780
   Args:
-    relation: :isSonOf
-    target: Bernhard_of_Lippe-Biesterfeld
-    source: Jonathan_Aitken
-  ValidateShacl (421ac9c4-9660-4575-a793-2b40f66907a3)
- Call ID: 421ac9c4-9660-4575-a793-2b40f66907a3
+    type: :Person
+    source: Frederick_Walter_Pedersen
+  AddTriple (e0a65843-3af5-4986-a545-728ec2d7e066)
+ Call ID: e0a65843-3af5-4986-a545-728ec2d7e066
   Args:
-  Finish (926778b4-2d10-4f88-a6d9-a695dab1e22c)
- Call ID: 926778b4-2d10-4f88-a6d9-a695dab1e22c
+    relation: :hasFather
+    target: :Frederick_Walter_Pedersen
+    source: Sussie_Hjorhoy_Pedersen
+  AssignClass (ba5faf83-b4a0-47da-8e56-1a71570fca39)
+ Call ID: ba5faf83-b4a0-47da-8e56-1a71570fca39
   Args:
+    type: :Woman
+    source: Ruth_Hjorhoy
+  AssignClass (a3897e43-ed6b-4aa4-a10e-192666969f3d)
+ Call ID: a3897e43-ed6b-4aa4-a10e-192666969f3d
+  Args:
+    source: Ruth_Hjorhoy
+    type: :Person
+  AddTriple (97de475a-06dc-4d92-9147-05c737f37d0e)
+ Call ID: 97de475a-06dc-4d92-9147-05c737f37d0e
+  Args:
+    source: Sussie_Hjorhoy_Pedersen
+    target: :Ruth_Hjorhoy
+    relation: :hasMother
+  AssignClass (abe30823-53e5-4557-8c5a-37f30c131660)
+ Call ID: abe30823-53e5-4557-8c5a-37f30c131660
+  Args:
+    type: :Man
+    source: Christian_of_Rosenborg
+  AssignClass (f73c4302-20cc-43b1-8ca6-0e6057e43b9f)
+ Call ID: f73c4302-20cc-43b1-8ca6-0e6057e43b9f
+  Args:
+    type: :Person
+    source: Christian_of_Rosenborg
+  AddTriple (9ad29821-960b-445c-9d3d-005d694357bd)
+ Call ID: 9ad29821-960b-445c-9d3d-005d694357bd
+  Args:
+    relation: :hasBrother
+    source: Ingolf_of_Rosenborg
+    target: :Christian_of_Rosenborg
+  AssignClass (b31c0cdb-7826-41d9-8c35-55cf96882b71)
+ Call ID: b31c0cdb-7826-41d9-8c35-55cf96882b71
+  Args:
+    type: :Man
+    source: Leopold_Rosanes_af_Rosenborg
+  AssignClass (e0acd3ba-9633-45cd-a18d-f05f850ebe06)
+ Call ID: e0acd3ba-9633-45cd-a18d-f05f850ebe06
+  Args:
+    type: :Person
+    source: Leopold_Rosanes_af_Rosenborg
+  AddTriple (ad372458-79bb-4a71-9d4a-8682a37d10fb)
+ Call ID: ad372458-79bb-4a71-9d4a-8682a37d10fb
+  Args:
+    source: Leopold_Rosanes_af_Rosenborg
+    target: :Christian_of_Rosenborg
+    relation: :hasFather
+  AssignClass (cb819e89-7cb7-4dd2-a50a-48fe239cd999)
+ Call ID: cb819e89-7cb7-4dd2-a50a-48fe239cd999
+  Args:
+    source: Elisabeth_of_Denmark
+    type: :Woman
+  AssignClass (53cca2b8-e8f2-4613-9c12-1d4bfa918811)
+ Call ID: 53cca2b8-e8f2-4613-9c12-1d4bfa918811
+  Args:
+    type: :Person
+    source: Elisabeth_of_Denmark
+  AddTriple (ab2fbc5b-d58a-4f6b-aaa4-7e6ddd4d04d8)
+ Call ID: ab2fbc5b-d58a-4f6b-aaa4-7e6ddd4d04d8
+  Args:
+    relation: :hasSister
+    target: :Elisabeth_of_Denmark
+    source: Ingolf_of_Rosenborg
+  Finish (2d0b5b15-8764-4b08-a10b-dbd97dc743fe)
+ Call ID: 2d0b5b15-8764-4b08-a10b-dbd97dc743fe
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -852,367 +911,65 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alicia a :Woman ;
-      :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld .
-
-  data:Beatrix_of_the_Netherlands a :Woman ;
-      :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
-          data:Juliana_of_the_Netherlands .
-
-  data:Christina_of_the_Netherlands a :Woman ;
-      :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
-          data:Juliana_of_the_Netherlands .
-
-  data:Irene_of_the_Netherlands a :Woman ;
-      :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
-          data:Juliana_of_the_Netherlands .
-
-  data:Jonathan_Aitken a :Man ;
-      :isSonOf data:Bernhard_of_Lippe-Biesterfeld .
-
-  data:Margriet_of_the_Netherlands a :Woman ;
-      :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
-          data:Juliana_of_the_Netherlands .
-
-  data:Armgard_von_Sierstorpff-Cramm a :Woman .
-
-  data:Ernest_Count_of_Lippe-Biesterfeld a :Man .
-
-  data:Leopold_IV_Prince_of_Lippe a :Man .
-
-  data:Prince_Bernhard_of_Lippe a :Man .
-
-  data:Juliana_of_the_Netherlands a :Woman .
-
-  data:Bernhard_of_Lippe-Biesterfeld a :Man ;
-      :hasAncestor data:Ernest_Count_of_Lippe-Biesterfeld ;
-      :hasBirthYear 1911 ;
-      :hasDeathYear 2004 ;
-      :hasFather data:Prince_Bernhard_of_Lippe ;
-      :hasMarriageYear 1937 ;
-      :hasMother data:Armgard_von_Sierstorpff-Cramm ;
-      :hasRelation data:Juliana_of_the_Netherlands ;
-      :isBloodrelationOf data:Leopold_IV_Prince_of_Lippe .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:39
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isSonOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Ernest_Count_of_Lippe-Biesterfeld is used as a value for the hasAncestor property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernest_Count_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Bernhard_of_Lippe for property hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Bernhard_of_Lippe', class=':Ancestor')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Armgard_von_Sierstorpff-Cramm for property hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Armgard_von_Sierstorpff-Cramm', class=':Ancestor')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isSonOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Ernest_Count_of_Lippe-Biesterfeld is used as a value for the hasAncestor property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernest_Count_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Bernhard_of_Lippe for property hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Bernhard_of_Lippe', class=':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Armgard_von_Sierstorpff-Cramm for property hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Armgard_von_Sierstorpff-Cramm', class=':Ancestor')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Juliana_of_the_Netherlands is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Juliana_of_the_Netherlands is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Juliana_of_the_Netherlands is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Juliana_of_the_Netherlands is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isSonOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Ernest_Count_of_Lippe-Biesterfeld is used as a value for the hasAncestor property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernest_Count_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Bernhard_of_Lippe for property hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Bernhard_of_Lippe', class=':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Armgard_von_Sierstorpff-Cramm for property hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Armgard_von_Sierstorpff-Cramm', class=':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Juliana_of_the_Netherlands is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Juliana_of_the_Netherlands is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Juliana_of_the_Netherlands is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Juliana_of_the_Netherlands is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Juliana_of_the_Netherlands is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Juliana_of_the_Netherlands is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Juliana_of_the_Netherlands is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Juliana_of_the_Netherlands is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Bernhard_of_Lippe-Biesterfeld is used as a value for the isDaughterOf property but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
+  data:Ingolf_of_Rosenborg a :Man,
+          :Person ;
+      :hasBirthYear 1940 ;
+      :hasBrother data:Christian_of_Rosenborg ;
+      :hasFather data:Knud_of_Denmark ;
+      :hasMarriageYear 1968 ;
+      :hasRelation data:Inge_Terney,
+          data:Sussie_Hjorhoy_Pedersen ;
+      :hasSex data:Male ;
+      :hasSister data:Elisabeth_of_Denmark .
+
+  data:Leopold_Rosanes_af_Rosenborg a :Man,
+          :Person ;
+      :hasFather data:Christian_of_Rosenborg .
+
+  data:Christian_X_of_Denmark a :Man,
+          :Person .
+
+  data:Elisabeth_of_Denmark a :Person,
+          :Woman .
+
+  data:Frederick_Walter_Pedersen a :Man,
+          :Person .
+
+  data:Frederik_IX_of_Denmark a :Man,
+          :Person .
+
+  data:Georg_Terney a :Man,
+          :Person .
+
+  data:Inge_Terney a :Person,
+          :Woman ;
+      :hasBirthYear 1938 ;
+      :hasDeathYear 1996 ;
+      :hasFather data:Georg_Terney ;
+      :hasMother data:Jenny_Kamilla_Hansen .
+
+  data:Jenny_Kamilla_Hansen a :Person,
+          :Woman .
+
+  data:Knud_of_Denmark a :Man,
+          :Person ;
+      :hasBrother data:Frederik_IX_of_Denmark ;
+      :hasFather data:Christian_X_of_Denmark .
+
+  data:Male a :Male,
+          :Sex .
+
+  data:Ruth_Hjorhoy a :Person,
+          :Woman .
+
+  data:Sussie_Hjorhoy_Pedersen a :Person,
+          :Woman ;
+      :hasBirthYear 1950 ;
+      :hasFather data:Frederick_Walter_Pedersen ;
+      :hasMother data:Ruth_Hjorhoy .
+
+  data:Christian_of_Rosenborg a :Man,
+          :Person .
 
 
 
@@ -1224,37 +981,236 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  AssignClass (9cd15642-4c41-44f8-b74f-4e234913bf78)
- Call ID: 9cd15642-4c41-44f8-b74f-4e234913bf78
+  ValidateShacl (0b8648a5-ed6a-4a99-be53-9a3e927b9751)
+ Call ID: 0b8648a5-ed6a-4a99-be53-9a3e927b9751
   Args:
-    type: :Ancestor
-    source: Bernhard_of_Lippe-Biesterfeld
-  AssignClass (f5faeacc-7e62-461c-8aa9-8be9aad2d289)
- Call ID: f5faeacc-7e62-461c-8aa9-8be9aad2d289
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:21
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Christian_X_of_Denmark, linked as the father of Knud_of_Denmark, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_X_of_Denmark, :Man)
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Knud_of_Denmark, linked as the father of Ingolf_of_Rosenborg, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Knud_of_Denmark, :Man)
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Christian_of_Rosenborg, linked as the father of Leopold_Rosanes_af_Rosenborg, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_of_Rosenborg, :Man)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Georg_Terney, linked as the father of Inge_Terney, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Georg_Terney, :Man)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Christian_X_of_Denmark, linked as the father of Knud_of_Denmark, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_X_of_Denmark, :Man)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Knud_of_Denmark, linked as the father of Ingolf_of_Rosenborg, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Knud_of_Denmark, :Man)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Frederick_Walter_Pedersen, linked as the father of Sussie_Hjorhoy_Pedersen, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederick_Walter_Pedersen, :Man)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Christian_of_Rosenborg, linked as the father of Leopold_Rosanes_af_Rosenborg, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_of_Rosenborg, :Man)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Jenny_Kamilla_Hansen, linked as the mother of Inge_Terney, is not categorized as an :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jenny_Kamilla_Hansen, :Woman)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Ruth_Hjorhoy, linked as the mother of Sussie_Hjorhoy_Pedersen, is not categorized as an :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ruth_Hjorhoy, :Woman)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Georg_Terney, linked as the father of Inge_Terney, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Georg_Terney, :Man)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Christian_X_of_Denmark, linked as the father of Knud_of_Denmark, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_X_of_Denmark, :Man)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Knud_of_Denmark, linked as the father of Ingolf_of_Rosenborg, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Knud_of_Denmark, :Man)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Frederick_Walter_Pedersen, linked as the father of Sussie_Hjorhoy_Pedersen, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederick_Walter_Pedersen, :Man)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Christian_of_Rosenborg, linked as the father of Leopold_Rosanes_af_Rosenborg, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_of_Rosenborg, :Man)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Jenny_Kamilla_Hansen, linked as the mother of Inge_Terney, is not categorized as an :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jenny_Kamilla_Hansen, :Woman)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Ruth_Hjorhoy, linked as the mother of Sussie_Hjorhoy_Pedersen, is not categorized as an :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ruth_Hjorhoy, :Woman)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Georg_Terney, linked as the father of Inge_Terney, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Georg_Terney, :Man)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Frederick_Walter_Pedersen, linked as the father of Sussie_Hjorhoy_Pedersen, is not categorized as an :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederick_Walter_Pedersen, :Man)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Jenny_Kamilla_Hansen, linked as the mother of Inge_Terney, is not categorized as an :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jenny_Kamilla_Hansen, :Woman)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Ruth_Hjorhoy, linked as the mother of Sussie_Hjorhoy_Pedersen, is not categorized as an :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ruth_Hjorhoy, :Woman)
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (d199fd3a-505d-4053-993b-4fe4294954c4)
+ Call ID: d199fd3a-505d-4053-993b-4fe4294954c4
   Args:
-    type: :Ancestor
-    source: Ernest_Count_of_Lippe-Biesterfeld
-  AssignClass (c7e1ead8-d985-46fa-a6d4-ea7627065a35)
- Call ID: c7e1ead8-d985-46fa-a6d4-ea7627065a35
+    source: Christian_X_of_Denmark
+    type: :Man
+  AssignClass (ed0eb2dd-26df-4d52-981a-69d776d3d52d)
+ Call ID: ed0eb2dd-26df-4d52-981a-69d776d3d52d
   Args:
-    type: :Ancestor
-    source: Prince_Bernhard_of_Lippe
-  AssignClass (3343730e-38ca-4581-9ac6-b1bd8a0273f5)
- Call ID: 3343730e-38ca-4581-9ac6-b1bd8a0273f5
+    type: :Man
+    source: Knud_of_Denmark
+  AssignClass (b5be4e26-9251-4799-beb8-4cbb63754250)
+ Call ID: b5be4e26-9251-4799-beb8-4cbb63754250
   Args:
-    type: :Ancestor
-    source: Armgard_von_Sierstorpff-Cramm
-  AssignClass (e0c16aa3-e37e-49ee-bb06-d19f64cedddf)
- Call ID: e0c16aa3-e37e-49ee-bb06-d19f64cedddf
+    source: Christian_of_Rosenborg
+    type: :Man
+  AssignClass (83911ae1-1411-4e7a-b47c-b03facb76618)
+ Call ID: 83911ae1-1411-4e7a-b47c-b03facb76618
   Args:
-    type: :Ancestor
-    source: Juliana_of_the_Netherlands
-  ValidateShacl (19903479-797c-4431-b9d4-675b96a85e82)
- Call ID: 19903479-797c-4431-b9d4-675b96a85e82
+    type: :Man
+    source: Georg_Terney
+  AssignClass (701d53a5-b5c8-4e70-a722-454da0546d5c)
+ Call ID: 701d53a5-b5c8-4e70-a722-454da0546d5c
   Args:
-  Finish (b8fb3600-ec53-43aa-9ec7-4012b2599304)
- Call ID: b8fb3600-ec53-43aa-9ec7-4012b2599304
+    source: Frederick_Walter_Pedersen
+    type: :Man
+  AssignClass (b996cd38-7826-4736-ba95-d56b193a9c1e)
+ Call ID: b996cd38-7826-4736-ba95-d56b193a9c1e
   Args:
+    type: :Woman
+    source: Jenny_Kamilla_Hansen
+  AssignClass (af9ff3ed-1bf4-4c90-acf2-86448610ee42)
+ Call ID: af9ff3ed-1bf4-4c90-acf2-86448610ee42
+  Args:
+    source: Ruth_Hjorhoy
+    type: :Woman
+  Finish (c2c1c4f0-8112-4502-aa07-23cad2087942)
+ Call ID: c2c1c4f0-8112-4502-aa07-23cad2087942
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1279,58 +1235,67 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alicia a :Woman ;
-      :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld .
+  data:Ingolf_of_Rosenborg a :Man,
+          :Person ;
+      :hasBirthYear 1940 ;
+      :hasBrother data:Christian_of_Rosenborg ;
+      :hasFather data:Knud_of_Denmark ;
+      :hasMarriageYear 1968 ;
+      :hasRelation data:Inge_Terney,
+          data:Sussie_Hjorhoy_Pedersen ;
+      :hasSex data:Male ;
+      :hasSister data:Elisabeth_of_Denmark .
 
-  data:Beatrix_of_the_Netherlands a :Woman ;
-      :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
-          data:Juliana_of_the_Netherlands .
+  data:Leopold_Rosanes_af_Rosenborg a :Man,
+          :Person ;
+      :hasFather data:Christian_of_Rosenborg .
 
-  data:Christina_of_the_Netherlands a :Woman ;
-      :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
-          data:Juliana_of_the_Netherlands .
+  data:Christian_X_of_Denmark a :Man,
+          :Person .
 
-  data:Irene_of_the_Netherlands a :Woman ;
-      :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
-          data:Juliana_of_the_Netherlands .
-
-  data:Jonathan_Aitken a :Man ;
-      :isSonOf data:Bernhard_of_Lippe-Biesterfeld .
-
-  data:Margriet_of_the_Netherlands a :Woman ;
-      :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
-          data:Juliana_of_the_Netherlands .
-
-  data:Armgard_von_Sierstorpff-Cramm a :Ancestor,
+  data:Elisabeth_of_Denmark a :Person,
           :Woman .
 
-  data:Ernest_Count_of_Lippe-Biesterfeld a :Ancestor,
-          :Man .
+  data:Frederick_Walter_Pedersen a :Man,
+          :Person .
 
-  data:Leopold_IV_Prince_of_Lippe a :Man .
+  data:Frederik_IX_of_Denmark a :Man,
+          :Person .
 
-  data:Prince_Bernhard_of_Lippe a :Ancestor,
-          :Man .
+  data:Georg_Terney a :Man,
+          :Person .
 
-  data:Juliana_of_the_Netherlands a :Ancestor,
+  data:Inge_Terney a :Person,
+          :Woman ;
+      :hasBirthYear 1938 ;
+      :hasDeathYear 1996 ;
+      :hasFather data:Georg_Terney ;
+      :hasMother data:Jenny_Kamilla_Hansen .
+
+  data:Jenny_Kamilla_Hansen a :Person,
           :Woman .
 
-  data:Bernhard_of_Lippe-Biesterfeld a :Ancestor,
-          :Man ;
-      :hasAncestor data:Ernest_Count_of_Lippe-Biesterfeld ;
-      :hasBirthYear 1911 ;
-      :hasDeathYear 2004 ;
-      :hasFather data:Prince_Bernhard_of_Lippe ;
-      :hasMarriageYear 1937 ;
-      :hasMother data:Armgard_von_Sierstorpff-Cramm ;
-      :hasRelation data:Juliana_of_the_Netherlands ;
-      :isBloodrelationOf data:Leopold_IV_Prince_of_Lippe .
+  data:Knud_of_Denmark a :Man,
+          :Person ;
+      :hasBrother data:Frederik_IX_of_Denmark ;
+      :hasFather data:Christian_X_of_Denmark .
+
+  data:Male a :Male,
+          :Sex .
+
+  data:Ruth_Hjorhoy a :Person,
+          :Woman .
+
+  data:Sussie_Hjorhoy_Pedersen a :Person,
+          :Woman ;
+      :hasBirthYear 1950 ;
+      :hasFather data:Frederick_Walter_Pedersen ;
+      :hasMother data:Ruth_Hjorhoy .
+
+  data:Christian_of_Rosenborg a :Man,
+          :Person .
 
 
-
-================================= Tool Message =================================
-
-SHACL validation has not produced any violations.
 
 ================================= Tool Message =================================
 
@@ -1340,9 +1305,349 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (a2f12c60-bd98-497d-a634-c1abca29d656)
- Call ID: a2f12c60-bd98-497d-a634-c1abca29d656
+  ValidateShacl (82e5f0c6-b684-444d-9172-5b19f18da740)
+ Call ID: 82e5f0c6-b684-444d-9172-5b19f18da740
   Args:
-  Finish (7280dc73-a386-4e26-ae11-e59074b2815b)
- Call ID: 7280dc73-a386-4e26-ae11-e59074b2815b
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:21
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Christian_X_of_Denmark for property hasFather on node Knud_of_Denmark is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_X_of_Denmark, :Man)
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Knud_of_Denmark for property hasFather on node Ingolf_of_Rosenborg is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Knud_of_Denmark, :Man)
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Christian_of_Rosenborg for property hasFather on node Leopold_Rosanes_af_Rosenborg is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_of_Rosenborg, :Man)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Georg_Terney for property hasFather on node Inge_Terney is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Georg_Terney, :Man)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Christian_X_of_Denmark for property hasFather on node Knud_of_Denmark is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_X_of_Denmark, :Man)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Knud_of_Denmark for property hasFather on node Ingolf_of_Rosenborg is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Knud_of_Denmark, :Man)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Frederick_Walter_Pedersen for property hasFather on node Sussie_Hjorhoy_Pedersen is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederick_Walter_Pedersen, :Man)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Christian_of_Rosenborg for property hasFather on node Leopold_Rosanes_af_Rosenborg is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_of_Rosenborg, :Man)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Jenny_Kamilla_Hansen for property hasMother on node Inge_Terney is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jenny_Kamilla_Hansen, :Woman)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Ruth_Hjorhoy for property hasMother on node Sussie_Hjorhoy_Pedersen is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ruth_Hjorhoy, :Woman)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Georg_Terney for property hasFather on node Inge_Terney is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Georg_Terney, :Man)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Christian_X_of_Denmark for property hasFather on node Knud_of_Denmark is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_X_of_Denmark, :Man)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Knud_of_Denmark for property hasFather on node Ingolf_of_Rosenborg is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Knud_of_Denmark, :Man)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Frederick_Walter_Pedersen for property hasFather on node Sussie_Hjorhoy_Pedersen is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederick_Walter_Pedersen, :Man)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Christian_of_Rosenborg for property hasFather on node Leopold_Rosanes_af_Rosenborg is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_of_Rosenborg, :Man)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Jenny_Kamilla_Hansen for property hasMother on node Inge_Terney is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jenny_Kamilla_Hansen, :Woman)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Ruth_Hjorhoy for property hasMother on node Sussie_Hjorhoy_Pedersen is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ruth_Hjorhoy, :Woman)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Georg_Terney for property hasFather on node Inge_Terney is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Georg_Terney, :Man)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Frederick_Walter_Pedersen for property hasFather on node Sussie_Hjorhoy_Pedersen is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederick_Walter_Pedersen, :Man)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Jenny_Kamilla_Hansen for property hasMother on node Inge_Terney is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jenny_Kamilla_Hansen, :Woman)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Ruth_Hjorhoy for property hasMother on node Sussie_Hjorhoy_Pedersen is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ruth_Hjorhoy, :Woman)
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (18c36843-6e3f-4aa8-b582-e41e57aba269)
+ Call ID: 18c36843-6e3f-4aa8-b582-e41e57aba269
+  Args:
+    source: Christian_X_of_Denmark
+    type: :Ancestor
+  AssignClass (8b65c225-0e64-4164-a4a9-5dc52bb5211a)
+ Call ID: 8b65c225-0e64-4164-a4a9-5dc52bb5211a
+  Args:
+    type: :Ancestor
+    source: Knud_of_Denmark
+  AssignClass (2607fb2e-576a-4812-815a-97451e3e9ac7)
+ Call ID: 2607fb2e-576a-4812-815a-97451e3e9ac7
+  Args:
+    source: Christian_of_Rosenborg
+    type: :Ancestor
+  AssignClass (a2f38a5e-6648-4af0-98a8-14e43023593b)
+ Call ID: a2f38a5e-6648-4af0-98a8-14e43023593b
+  Args:
+    type: :Ancestor
+    source: Georg_Terney
+  AssignClass (5d175091-7266-4c3d-a6da-c49343a50f96)
+ Call ID: 5d175091-7266-4c3d-a6da-c49343a50f96
+  Args:
+    source: Frederick_Walter_Pedersen
+    type: :Ancestor
+  AssignClass (44785c22-0981-40ee-b439-691b8d38e6ab)
+ Call ID: 44785c22-0981-40ee-b439-691b8d38e6ab
+  Args:
+    type: :Ancestor
+    source: Jenny_Kamilla_Hansen
+  AssignClass (e52b4d25-a557-4a5c-81f5-f10da94b7315)
+ Call ID: e52b4d25-a557-4a5c-81f5-f10da94b7315
+  Args:
+    source: Ruth_Hjorhoy
+    type: :Ancestor
+  Finish (1b1a5213-651a-45a7-8345-ec068f7647b7)
+ Call ID: 1b1a5213-651a-45a7-8345-ec068f7647b7
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Ingolf_of_Rosenborg a :Man,
+          :Person ;
+      :hasBirthYear 1940 ;
+      :hasBrother data:Christian_of_Rosenborg ;
+      :hasFather data:Knud_of_Denmark ;
+      :hasMarriageYear 1968 ;
+      :hasRelation data:Inge_Terney,
+          data:Sussie_Hjorhoy_Pedersen ;
+      :hasSex data:Male ;
+      :hasSister data:Elisabeth_of_Denmark .
+
+  data:Leopold_Rosanes_af_Rosenborg a :Man,
+          :Person ;
+      :hasFather data:Christian_of_Rosenborg .
+
+  data:Christian_X_of_Denmark a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Elisabeth_of_Denmark a :Person,
+          :Woman .
+
+  data:Frederick_Walter_Pedersen a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Frederik_IX_of_Denmark a :Man,
+          :Person .
+
+  data:Georg_Terney a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Inge_Terney a :Person,
+          :Woman ;
+      :hasBirthYear 1938 ;
+      :hasDeathYear 1996 ;
+      :hasFather data:Georg_Terney ;
+      :hasMother data:Jenny_Kamilla_Hansen .
+
+  data:Jenny_Kamilla_Hansen a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Knud_of_Denmark a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBrother data:Frederik_IX_of_Denmark ;
+      :hasFather data:Christian_X_of_Denmark .
+
+  data:Male a :Male,
+          :Sex .
+
+  data:Ruth_Hjorhoy a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Sussie_Hjorhoy_Pedersen a :Person,
+          :Woman ;
+      :hasBirthYear 1950 ;
+      :hasFather data:Frederick_Walter_Pedersen ;
+      :hasMother data:Ruth_Hjorhoy .
+
+  data:Christian_of_Rosenborg a :Ancestor,
+          :Man,
+          :Person .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (90b1d17b-2023-4960-8674-6f602a023739)
+ Call ID: 90b1d17b-2023-4960-8674-6f602a023739
+  Args:
+
+================================= Tool Message =================================
+
+SHACL validation has not produced any violations.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (b19e6139-41c4-4495-b3b6-ed003bc86008)
+ Call ID: b19e6139-41c4-4495-b3b6-ed003bc86008
   Args:

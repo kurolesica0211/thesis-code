@@ -2,40 +2,14 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Infanta_Maria_Cristina_of_Spain a :Person,
-        :Woman ;
-    :isSisterOf data:Infante_Juan_Count_of_Barcelona .
-
-data:Infante_Alfonso_of_Spain a :Man,
+data:Carl-Friedrich_Hubertus_Georg_Eduardo_Paolo_Nickolos_Franz_Alois_Ignatius_Hieronymus_Maria a :Man,
         :Person ;
-    :alsoKnownAs "Alfonsito"^^xsd:string ;
-    :hasAncestor data:King_Alfonso_XIII ;
-    :hasBirthYear 1941 ;
-    :hasDeathYear 1956 ;
-    :hasFather data:Infante_Juan_Count_of_Barcelona ;
-    :hasMother data:Princess_Maria_Mercedes_of_Bourbon_Two_Sicilies ;
-    :hasSex data:Male ;
-    :isBrotherOf data:King_Juan_Carlos_I_of_Spain .
+    :hasBirthYear 1966 ;
+    :hasDeathYear 2010 ;
+    :isSonOf data:Alois-Konstantin_Prince_of_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :knownAs "Leonhard \"Leo\" Löwenstein"^^xsd:string .
 
-data:Pilar a :Person,
-        :Woman ;
-    :isSisterOf data:King_Juan_Carlos_I_of_Spain .
-
-data:King_Alfonso_XIII a :Ancestor,
+data:Alois-Konstantin_Prince_of_L%C3%B6wenstein-Wertheim-Rosenberg a :Ancestor,
         :Man,
-        :Person .
-
-data:Male a :Male,
-        :Sex .
-
-data:Princess_Maria_Mercedes_of_Bourbon_Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Infante_Juan_Count_of_Barcelona a :Ancestor,
-        :Man,
-        :Person .
-
-data:King_Juan_Carlos_I_of_Spain a :Man,
         :Person .
 

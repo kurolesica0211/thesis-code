@@ -69,18 +69,41 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Tatiana von Preussen (born 16 October 1980) is an architect who worked on the construction of the  High Line, an elevated linear park, greenway and rail trail in New York.
-In 2009 Tatiana von Preussen, Catherine Pease and Jessica Reynolds set up vPPR Architects.
-Personal life
+Prince Amedeo of Savoy-Aosta, 5th Duke of Aosta (Amedeo Umberto Costantino Giorgio
+Early life
 
-Tatiana von Preussen is the daughter of Prince Andreas of Prussia and Alexandra Blahova, and granddaughter of Prince Frederick of Prussia and Lady Brigid Guinness; on 28 June 2014 she married writer and journalist Philip Womack, and lives in London.
-They have one son, Arthur Frederick Richard Womack von Preussen (born 21 November 2015) and twin girls, Xenia Alexandra Selena Womack von Preussen and Amalia Maria Brigid Womack von Preussen (born 29 August 2020).
+Amedeo was born at Villa della Cisterna in Florence, the only child of Prince Aimone, Duke of Aosta, formerly designated king of Croatia as Tomislav II, and of Princess Irene of Greece and Denmark through whom he was a great-great-grandson of Queen Victoria.
+When Amedeo was only four years old, his father died in exile in Buenos Aires, and he succeeded him as Duke of Aosta, Prince della Cisterna e Belriguardo, Marchese di Voghera, and Count di Ponderano.
+He was an Honorary Companion of the Pennsylvania Commandery of the Military Order of the Loyal Legion of the United States, assigned insignia number 21015, as a great-grandson of Prince Philippe, Count of Paris.
+Marriages and family
+
+1st marriage and descendants
+
+On 22 July 1964, at the Igreja Paroquial De São Pedro in Sintra, Portugal, Amedeo married his second cousin, Princess Claude of Orléans (born 11 December 1943).
+She was the ninth child and fifth daughter of Henri, comte de Paris, Orléanist claimant to the French throne, and of Princess Isabelle of Orléans-Braganza.
+He was involved in various agricultural activities, including the production of wine marketed under the name Vini Savoia Aosta.
+Dynastic activities
+
+Amedeo was long viewed by Italian royalists as a likely claimant to the throne if Umberto's own son, Vittorio Emanuele, Prince of Naples, failed to live up to monarchist expectations.
+On 7 July 2006, Amedeo declared himself to be the Head of the House of Savoy and Duke of Savoy, claiming that in 1971, Vittorio Emanuele had lost his dynastic rights when he married without previously obtaining the permission of Umberto II, authorization which had been required under monarchical law.
+In 2009, Vittorio Emanuele and his son, Emanuele Filiberto, Prince of Venice, sought judicial intervention to forbid Amedeo's use of the surname di Savoia.
+In February 2010, the court of Arezzo ruled that the Amedeo and his son Aimone must pay damages totalling 50,000 euros to their cousins and cease using the surname di Savoia instead of di Savoia-Aosta.
+Amedeo's claim received the support of Vittorio Emanuele's sister, Princess Maria Gabriella of Savoy.
+Although many monarchists transferred their allegiance to Amedeo at some point after King Umberto's death, Amedeo was criticised by other Italian royalists who continue to support Prince Vittorio Emanuele.
+But others, including constitutional jurist Guido Locatello, declared the marriage of Vittorio Emanuele to be in violation of Savoy dynastic law years before the scandal evoked any clamour for Amedeo to replace him.
+The Unione Monarchica Italiana published in its newsletter, Monarchia Nuova, on 12 February 1987 that the Prince of Naples' marriage to Marina Doria violated the decree of Victor Amadeus III, issued 13 September 1780, regulating the marriages of princes of the blood royal, compelling the Unione to recognise Amedeo as rightful head of the royal house—although at that time Aosta had put forth no public dynastic claim.
+Amedeo was a Knight of the Supreme Order of the Most Holy Annunciation named by Umberto II, a Grand Cross of the Order of Saints Maurice and Lazarus named by his cousin Vittorio Emanuele, and a Knight of Honor and Devotion of the Sovereign Military Order of St. John of Jerusalem.
+Death
+
+Prince Amedeo died on 1 June 2021, at the age of 77, in Arezzo, Italy, from cardiac arrest after undergoing surgery on 27 May.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -96,39 +119,9 @@ They have one son, Arthur Frederick Richard Womack von Preussen (born 21 Novembe
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -143,6 +136,23 @@ They have one son, Arthur Frederick Richard Womack von Preussen (born 21 Novembe
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -160,6 +170,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -227,29 +252,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,6 +275,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -270,6 +295,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -278,17 +305,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -316,6 +345,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -331,426 +444,184 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (04bb4d58-8fd4-4310-b026-b5730727c8cc)
- Call ID: 04bb4d58-8fd4-4310-b026-b5730727c8cc
-  Args:
-    source: Tatiana von Preussen
-    type: :Woman
-  AssignClass (82b35b4d-1814-4519-b81f-32d832187d10)
- Call ID: 82b35b4d-1814-4519-b81f-32d832187d10
-  Args:
-    source: Tatiana von Preussen
-    type: :Person
-  AddLiteral (c882ccb3-fd3b-4c55-bbbd-fc2fc8e78d98)
- Call ID: c882ccb3-fd3b-4c55-bbbd-fc2fc8e78d98
-  Args:
-    literal_type: xsd:string
-    literal_value: 1980
-    relation: :hasBirthYear
-    source: Tatiana von Preussen
-  AssignClass (1664b7cf-bead-4ffe-b0a8-88a3bc3d1ff4)
- Call ID: 1664b7cf-bead-4ffe-b0a8-88a3bc3d1ff4
+  AssignClass (c6f88e0a-e18f-40c4-ab63-9a59c15e03e3)
+ Call ID: c6f88e0a-e18f-40c4-ab63-9a59c15e03e3
   Args:
     type: :Man
-    source: Prince Andreas of Prussia
-  AssignClass (4d559515-fdc1-42ba-abed-9dedb7a159f8)
- Call ID: 4d559515-fdc1-42ba-abed-9dedb7a159f8
+    source: :Amedeo_of_Savoy-Aosta
+  AssignClass (33e039ed-fdb2-42a1-8b20-33e97efcf6df)
+ Call ID: 33e039ed-fdb2-42a1-8b20-33e97efcf6df
   Args:
+    source: :Amedeo_of_Savoy-Aosta
     type: :Person
-    source: Prince Andreas of Prussia
-  AssignClass (7d70c217-fdc8-4ddd-aa51-2bc4a7ebeb56)
- Call ID: 7d70c217-fdc8-4ddd-aa51-2bc4a7ebeb56
+  AssignClass (942d5be2-8288-41f9-b85a-56b1309444ba)
+ Call ID: 942d5be2-8288-41f9-b85a-56b1309444ba
   Args:
-    source: Prince Andreas of Prussia
-    type: :Ancestor
-  AssignClass (5b94f440-9441-4733-a76b-0d9403a41b0a)
- Call ID: 5b94f440-9441-4733-a76b-0d9403a41b0a
+    type: :Man
+    source: :Aimone_Duke_of_Aosta
+  AssignClass (1bf0f9af-374d-462b-a5a1-1bc8f6e5370d)
+ Call ID: 1bf0f9af-374d-462b-a5a1-1bc8f6e5370d
   Args:
-    source: Alexandra Blahova
+    source: :Aimone_Duke_of_Aosta
+    type: :Person
+  AssignClass (88aa77b3-9124-4b25-aa6e-1211ce4bb628)
+ Call ID: 88aa77b3-9124-4b25-aa6e-1211ce4bb628
+  Args:
     type: :Woman
-  AssignClass (4cf01bff-c9a5-4dc9-9005-d97d87f2812f)
- Call ID: 4cf01bff-c9a5-4dc9-9005-d97d87f2812f
+    source: :Irene_of_Greece_and_Denmark
+  AssignClass (cb64f4ec-6837-434a-9846-20acdc15c219)
+ Call ID: cb64f4ec-6837-434a-9846-20acdc15c219
   Args:
     type: :Person
-    source: Alexandra Blahova
-  AssignClass (c6b42ee4-86dc-45a6-99e3-78d037283286)
- Call ID: c6b42ee4-86dc-45a6-99e3-78d037283286
+    source: :Irene_of_Greece_and_Denmark
+  AddTriple (277dc33e-4c66-45aa-9926-ecc9cd848e2b)
+ Call ID: 277dc33e-4c66-45aa-9926-ecc9cd848e2b
   Args:
-    source: Alexandra Blahova
-    type: :Ancestor
-  AddTriple (342598cd-6f88-4125-813b-7699dc36c03b)
- Call ID: 342598cd-6f88-4125-813b-7699dc36c03b
-  Args:
-    target: Prince Andreas of Prussia
-    source: Tatiana von Preussen
+    target: :Aimone_Duke_of_Aosta
     relation: :hasFather
-  AddTriple (efeb9d9b-b9d6-463e-b7ca-a1c28f6a352c)
- Call ID: efeb9d9b-b9d6-463e-b7ca-a1c28f6a352c
+    source: :Amedeo_of_Savoy-Aosta
+  AddTriple (014b5c38-3e7d-4c45-9991-02489ca5f424)
+ Call ID: 014b5c38-3e7d-4c45-9991-02489ca5f424
   Args:
-    source: Tatiana von Preussen
     relation: :hasMother
-    target: Alexandra Blahova
-  AssignClass (13b0cfe2-a627-40c9-9f1b-84f6e9ee61d1)
- Call ID: 13b0cfe2-a627-40c9-9f1b-84f6e9ee61d1
+    target: :Irene_of_Greece_and_Denmark
+    source: :Amedeo_of_Savoy-Aosta
+  AssignClass (6957f087-1f07-4f31-924a-df96bf901a98)
+ Call ID: 6957f087-1f07-4f31-924a-df96bf901a98
   Args:
-    type: :Man
-    source: Prince Frederick of Prussia
-  AssignClass (c8ee3127-a94c-4d32-8395-473a40fc34ef)
- Call ID: c8ee3127-a94c-4d32-8395-473a40fc34ef
-  Args:
-    type: :Person
-    source: Prince Frederick of Prussia
-  AssignClass (982bc55e-ad93-4898-8363-2c3e154808b4)
- Call ID: 982bc55e-ad93-4898-8363-2c3e154808b4
-  Args:
-    type: :Ancestor
-    source: Prince Frederick of Prussia
-  AssignClass (e96351e6-e8ca-4e8c-98ef-1cbd5c1639aa)
- Call ID: e96351e6-e8ca-4e8c-98ef-1cbd5c1639aa
-  Args:
+    source: :Princess_Claude_of_Orleans
     type: :Woman
-    source: Lady Brigid Guinness
-  AssignClass (94d5c451-ea95-40df-89bc-2ac12d8fb04e)
- Call ID: 94d5c451-ea95-40df-89bc-2ac12d8fb04e
+  AssignClass (c410b193-4c8e-4e68-8fb5-ab0efc328dd7)
+ Call ID: c410b193-4c8e-4e68-8fb5-ab0efc328dd7
   Args:
     type: :Person
-    source: Lady Brigid Guinness
-  AssignClass (74ac8890-dd31-4ec1-8d7d-0831066a429b)
- Call ID: 74ac8890-dd31-4ec1-8d7d-0831066a429b
+    source: :Princess_Claude_of_Orleans
+  AddLiteral (d628865e-9400-4202-8f97-d4d2a0deb1da)
+ Call ID: d628865e-9400-4202-8f97-d4d2a0deb1da
   Args:
-    source: Lady Brigid Guinness
-    type: :Ancestor
-  AddTriple (7a90fdf6-baa9-4bfd-a4ce-52b0691e3512)
- Call ID: 7a90fdf6-baa9-4bfd-a4ce-52b0691e3512
-  Args:
-    relation: :hasFather
-    source: Prince Andreas of Prussia
-    target: Prince Frederick of Prussia
-  AddTriple (bd254cc3-36cd-454a-a023-9be3c6bd2696)
- Call ID: bd254cc3-36cd-454a-a023-9be3c6bd2696
-  Args:
-    source: Prince Andreas of Prussia
-    relation: :hasMother
-    target: Lady Brigid Guinness
-  AssignClass (14920eab-b2bd-48c0-a9b9-d5dabe6b2a67)
- Call ID: 14920eab-b2bd-48c0-a9b9-d5dabe6b2a67
-  Args:
-    source: Philip Womack
-    type: :Man
-  AssignClass (31c04ddd-a1c9-4696-8842-80b9282bd278)
- Call ID: 31c04ddd-a1c9-4696-8842-80b9282bd278
-  Args:
-    type: :Person
-    source: Philip Womack
-  AddLiteral (86b7ea87-8887-45b3-8b3a-63bbd8ca8649)
- Call ID: 86b7ea87-8887-45b3-8b3a-63bbd8ca8649
-  Args:
-    literal_type: xsd:string
-    literal_value: 2014
     relation: :hasMarriageYear
-    source: Tatiana von Preussen
-  AddTriple (b2c24e67-3462-4e95-aa8a-2d9c1af1f7a3)
- Call ID: b2c24e67-3462-4e95-aa8a-2d9c1af1f7a3
+    literal_type: xsd:integer
+    literal_value: 1964
+    source: :Amedeo_of_Savoy-Aosta
+  AddTriple (ea4c3626-ba83-4c44-a60c-f72517bb68c3)
+ Call ID: ea4c3626-ba83-4c44-a60c-f72517bb68c3
   Args:
-    source: Tatiana von Preussen
     relation: :hasRelation
-    target: Philip Womack
-  AssignClass (1367b3c3-6ec3-4fa6-a795-f1c176e02064)
- Call ID: 1367b3c3-6ec3-4fa6-a795-f1c176e02064
+    target: :Princess_Claude_of_Orleans
+    source: :Amedeo_of_Savoy-Aosta
+  AssignClass (030463a2-a035-4bad-a6a8-44da27b85796)
+ Call ID: 030463a2-a035-4bad-a6a8-44da27b85796
   Args:
     type: :Man
-    source: Arthur Frederick Richard Womack von Preussen
-  AssignClass (23d0e16c-95f5-4207-b6e3-9ea669f9c05b)
- Call ID: 23d0e16c-95f5-4207-b6e3-9ea669f9c05b
+    source: :Henri_comte_de_Paris
+  AssignClass (6016cc69-1b79-4c76-b81b-dc267b7e7eeb)
+ Call ID: 6016cc69-1b79-4c76-b81b-dc267b7e7eeb
   Args:
+    source: :Henri_comte_de_Paris
     type: :Person
-    source: Arthur Frederick Richard Womack von Preussen
-  AddLiteral (50644f63-9949-442e-a20a-772302ede48f)
- Call ID: 50644f63-9949-442e-a20a-772302ede48f
+  AssignClass (5bceaa1a-c77a-43e5-a972-875d3e00106f)
+ Call ID: 5bceaa1a-c77a-43e5-a972-875d3e00106f
   Args:
-    literal_type: xsd:string
-    literal_value: 2015
-    relation: :hasBirthYear
-    source: Arthur Frederick Richard Womack von Preussen
-  AddTriple (9f4b6e2c-c54e-47bf-b9e4-90fa786a26f1)
- Call ID: 9f4b6e2c-c54e-47bf-b9e4-90fa786a26f1
-  Args:
-    target: Philip Womack
-    source: Arthur Frederick Richard Womack von Preussen
-    relation: :hasFather
-  AddTriple (ab0fbe49-60fd-4342-8b16-3e65947719d5)
- Call ID: ab0fbe49-60fd-4342-8b16-3e65947719d5
-  Args:
-    relation: :hasMother
-    source: Arthur Frederick Richard Womack von Preussen
-    target: Tatiana von Preussen
-  AssignClass (ce53930a-203b-4ca5-985c-9143978cc3d2)
- Call ID: ce53930a-203b-4ca5-985c-9143978cc3d2
-  Args:
+    source: :Isabelle_of_Orleans-Braganza
     type: :Woman
-    source: Xenia Alexandra Selena Womack von Preussen
-  AssignClass (e665e13a-c0aa-4727-8077-99fe4613d907)
- Call ID: e665e13a-c0aa-4727-8077-99fe4613d907
+  AssignClass (5fcac9bd-4f94-4def-87f0-dba19c7f9705)
+ Call ID: 5fcac9bd-4f94-4def-87f0-dba19c7f9705
   Args:
-    source: Xenia Alexandra Selena Womack von Preussen
+    source: :Isabelle_of_Orleans-Braganza
     type: :Person
-  AddLiteral (cf0873f6-9a4d-421d-a54c-0d7687b684bc)
- Call ID: cf0873f6-9a4d-421d-a54c-0d7687b684bc
+  AddTriple (517f4c95-dbcf-4403-adbe-9c1f02c9c992)
+ Call ID: 517f4c95-dbcf-4403-adbe-9c1f02c9c992
   Args:
-    literal_type: xsd:string
-    literal_value: 2020
-    relation: :hasBirthYear
-    source: Xenia Alexandra Selena Womack von Preussen
-  AddTriple (89be2001-d442-4a6e-962e-648557fe5597)
- Call ID: 89be2001-d442-4a6e-962e-648557fe5597
-  Args:
-    target: Philip Womack
-    source: Xenia Alexandra Selena Womack von Preussen
+    source: :Princess_Claude_of_Orleans
+    target: :Henri_comte_de_Paris
     relation: :hasFather
-  AddTriple (f85331fe-00cc-46b9-b7d8-abe5ed70ff74)
- Call ID: f85331fe-00cc-46b9-b7d8-abe5ed70ff74
+  AddTriple (3332a8a8-1545-4cac-ab7a-9fb3d473e385)
+ Call ID: 3332a8a8-1545-4cac-ab7a-9fb3d473e385
   Args:
-    target: Tatiana von Preussen
-    source: Xenia Alexandra Selena Womack von Preussen
+    source: :Princess_Claude_of_Orleans
+    target: :Isabelle_of_Orleans-Braganza
     relation: :hasMother
-  AssignClass (b8ce163c-dba1-4419-ba31-678630342fd8)
- Call ID: b8ce163c-dba1-4419-ba31-678630342fd8
+  AssignClass (b82bd3d8-f2cb-4a42-be2f-eb8947d793e6)
+ Call ID: b82bd3d8-f2cb-4a42-be2f-eb8947d793e6
   Args:
+    type: :Man
+    source: :Aimone_son_of_Amedeo
+  AssignClass (6e9c4fdc-8006-4925-bc19-180d1775229a)
+ Call ID: 6e9c4fdc-8006-4925-bc19-180d1775229a
+  Args:
+    source: :Aimone_son_of_Amedeo
+    type: :Person
+  AddTriple (fe10805f-bfb6-496d-92b4-ad3fc913cb9b)
+ Call ID: fe10805f-bfb6-496d-92b4-ad3fc913cb9b
+  Args:
+    source: :Aimone_son_of_Amedeo
+    target: :Amedeo_of_Savoy-Aosta
+    relation: :hasFather
+  AssignClass (6a8423e6-2464-49a4-a5f8-6aa76b5a3b80)
+ Call ID: 6a8423e6-2464-49a4-a5f8-6aa76b5a3b80
+  Args:
+    source: :Vittorio_Emanuele_Prince_of_Naples
+    type: :Man
+  AssignClass (347154fa-2c83-4d37-bbf6-becfba5f1a83)
+ Call ID: 347154fa-2c83-4d37-bbf6-becfba5f1a83
+  Args:
+    source: :Vittorio_Emanuele_Prince_of_Naples
+    type: :Person
+  AssignClass (599639ba-5953-4f41-a451-a1efd9205884)
+ Call ID: 599639ba-5953-4f41-a451-a1efd9205884
+  Args:
+    type: :Man
+    source: :Umberto_II
+  AssignClass (f26a19be-5cc9-43a6-9c59-e3e6b6560b4b)
+ Call ID: f26a19be-5cc9-43a6-9c59-e3e6b6560b4b
+  Args:
+    type: :Person
+    source: :Umberto_II
+  AddTriple (08b076e1-5740-4088-b74b-de4b219bc39e)
+ Call ID: 08b076e1-5740-4088-b74b-de4b219bc39e
+  Args:
+    relation: :hasFather
+    target: :Umberto_II
+    source: :Vittorio_Emanuele_Prince_of_Naples
+  AssignClass (bdc5b6fe-1803-41cd-b65f-5d417dafc027)
+ Call ID: bdc5b6fe-1803-41cd-b65f-5d417dafc027
+  Args:
+    source: :Emanuele_Filiberto_Prince_of_Venice
+    type: :Man
+  AssignClass (eb18f02f-f2c2-42e0-947e-ebe58a322fb4)
+ Call ID: eb18f02f-f2c2-42e0-947e-ebe58a322fb4
+  Args:
+    source: :Emanuele_Filiberto_Prince_of_Venice
+    type: :Person
+  AddTriple (1dad435c-24a7-45a8-a793-a7a1b0e0332e)
+ Call ID: 1dad435c-24a7-45a8-a793-a7a1b0e0332e
+  Args:
+    source: :Emanuele_Filiberto_Prince_of_Venice
+    target: :Vittorio_Emanuele_Prince_of_Naples
+    relation: :hasFather
+  AssignClass (eaa2259a-c198-4a21-b143-53c3fa06cb95)
+ Call ID: eaa2259a-c198-4a21-b143-53c3fa06cb95
+  Args:
+    source: :Maria_Gabriella_of_Savoy
     type: :Woman
-    source: Amalia Maria Brigid Womack von Preussen
-  AssignClass (95ce8501-1356-4168-a63c-110595c85688)
- Call ID: 95ce8501-1356-4168-a63c-110595c85688
+  AssignClass (b7447816-ae81-499b-a079-ca3f075ff2bf)
+ Call ID: b7447816-ae81-499b-a079-ca3f075ff2bf
   Args:
-    source: Amalia Maria Brigid Womack von Preussen
+    source: :Maria_Gabriella_of_Savoy
     type: :Person
-  AddLiteral (c6148527-c404-4f17-9b23-f225ca9a8c23)
- Call ID: c6148527-c404-4f17-9b23-f225ca9a8c23
+  AddTriple (0b6d698c-e78a-493f-86cf-0c29de361b48)
+ Call ID: 0b6d698c-e78a-493f-86cf-0c29de361b48
   Args:
-    literal_type: xsd:string
-    literal_value: 2020
-    relation: :hasBirthYear
-    source: Amalia Maria Brigid Womack von Preussen
-  AddTriple (42e97c5b-6b62-4efe-b48d-a64c9630706e)
- Call ID: 42e97c5b-6b62-4efe-b48d-a64c9630706e
-  Args:
-    source: Amalia Maria Brigid Womack von Preussen
+    source: :Maria_Gabriella_of_Savoy
+    target: :Umberto_II
     relation: :hasFather
-    target: Philip Womack
-  AddTriple (dbb3b753-3bcb-4ef7-87de-c535359568ec)
- Call ID: dbb3b753-3bcb-4ef7-87de-c535359568ec
+  AddLiteral (78d55795-7e4b-4019-9034-9c80550659d9)
+ Call ID: 78d55795-7e4b-4019-9034-9c80550659d9
   Args:
-    target: Tatiana von Preussen
-    source: Amalia Maria Brigid Womack von Preussen
-    relation: :hasMother
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Amalia_Maria_Brigid_Womack_von_Preussen a :Person,
-          :Woman ;
-      :hasBirthYear "2020"^^xsd:string ;
-      :hasFather data:Philip_Womack ;
-      :hasMother data:Tatiana_von_Preussen .
-
-  data:Arthur_Frederick_Richard_Womack_von_Preussen a :Man,
-          :Person ;
-      :hasBirthYear "2015"^^xsd:string ;
-      :hasFather data:Philip_Womack ;
-      :hasMother data:Tatiana_von_Preussen .
-
-  data:Xenia_Alexandra_Selena_Womack_von_Preussen a :Person,
-          :Woman ;
-      :hasBirthYear "2020"^^xsd:string ;
-      :hasFather data:Philip_Womack ;
-      :hasMother data:Tatiana_von_Preussen .
-
-  data:Alexandra_Blahova a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Lady_Brigid_Guinness a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_Andreas_of_Prussia a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Prince_Frederick_of_Prussia ;
-      :hasMother data:Lady_Brigid_Guinness .
-
-  data:Prince_Frederick_of_Prussia a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Tatiana_von_Preussen a :Person,
-          :Woman ;
-      :hasBirthYear "1980"^^xsd:string ;
-      :hasFather data:Prince_Andreas_of_Prussia ;
-      :hasMarriageYear "2014"^^xsd:string ;
-      :hasMother data:Alexandra_Blahova ;
-      :hasRelation data:Philip_Womack .
-
-  data:Philip_Womack a :Man,
-          :Person .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (3d571f8a-c948-4ba7-921d-28e4369ae44f)
- Call ID: 3d571f8a-c948-4ba7-921d-28e4369ae44f
+    literal_type: xsd:integer
+    source: :Amedeo_of_Savoy-Aosta
+    literal_value: 2021
+    relation: :hasDeathYear
+  Finish (d74978f3-f93c-40c7-909d-4af7675e5150)
+ Call ID: d74978f3-f93c-40c7-909d-4af7675e5150
   Args:

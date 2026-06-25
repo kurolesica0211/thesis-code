@@ -7,60 +7,14 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Princess_Isabelle_dOrléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Isabelle d’Orléans" ;
-    data:posIndicesFull "1096:1124" ;
-    data:posIndicesPart "2195:2203" ;
-    data:wdtLink wdt:Q261322 ;
-    :alsoKnownAs "Princess Isabelle of Orleans" ;
-    :hasSex data:female ;
-    :isAuntOf data:Prince_Aimone-_4th_Duke_of_Aosta .
-
-data:Princess_Margaret_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Margaret of Prussia" ;
-    data:posIndicesFull "3120:3124" ;
-    data:wdtLink wdt:Q61338 ;
-    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
-        "Margaret of Prussia",
-        "Margaret of Prussia, Queen consort-elect of Finland",
-        "Margaret of Prussia, Queen-elect of Finland",
-        "Margarethe Beatrice Feodora of Prussia",
-        "Margarethe of Prussia",
-        "Mossy",
-        "Princess Frederick Charles of Hesse",
-        "Princess Margaret Beatrice Feodora of Prussia",
-        "Princess Margarethe Beatrice Feodora of Prussia",
-        "Princess Margarethe of Prussia" ;
-    :hasSex data:female ;
-    :isAuntOf data:Princess_Irene-_Duchess_of_Aosta .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Irene_of_Greece_and_Denmark a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Irene of Greece and Denmark" ;
-    data:posIndicesFull "255:291" ;
-    data:posIndicesPart "2195:2203",
-        "927:935" ;
-    data:wdtLink wdt:Q242298 ;
-    :alsoKnownAs "Irene zu Schleswig-Holstein-Sonderburg-Glücksburg, Πριγκίπισσα της Ελλάδος",
-        "Ειρήνη της Ελλάδας και της Δανίας" ;
+data:Isabelle_of_Orléans-Braganza a :Person ;
+    rdfs:label "Isabelle of Orléans-Braganza" ;
+    data:posIndicesFull "1105:1133" ;
+    data:wdtLink wdt:Q261284 ;
+    :alsoKnownAs "Isabelle of Orleans-Braganza" ;
     :hasSex data:female .
 
-data:Prince_Aimone-_6th_Duke_of_Aosta a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Aimone-_6th_Duke_of_Aosta a :Person ;
     rdfs:label "Prince Aimone, 6th Duke of Aosta" ;
     data:posIndicesFull "166:194" ;
     data:posIndicesPart "1256:1261",
@@ -69,14 +23,12 @@ data:Prince_Aimone-_6th_Duke_of_Aosta a :Man,
         "1830:1836",
         "1998:2004",
         "2121:2126",
-        "2410:2416",
         "2758:2764",
         "3026:3031",
         "3360:3366",
         "457:461",
         "465:470",
-        "472:478",
-        "733:739" ;
+        "472:478" ;
     data:wdtLink wdt:Q2031618 ;
     :alsoKnownAs "Aimone di Savoia-Aoste",
         "Prince Aimone of Savoy-Aosta",
@@ -85,60 +37,54 @@ data:Prince_Aimone-_6th_Duke_of_Aosta a :Man,
         "Prince Aimone, Duke of Aosta",
         "Prince Aimone, The 6th Duke of Aosta",
         "Prince Aimone, The Duke of Aosta" ;
-    :hasFather data:Prince_Amedeo-_5th_Duke_of_Aosta ;
     :hasParent data:Prince_Amedeo-_5th_Duke_of_Aosta ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Amedeo-_5th_Duke_of_Aosta ;
-    :isSonOf data:Prince_Amedeo-_5th_Duke_of_Aosta .
+    :hasSex data:male .
 
-data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Emanuele Filiberto, 2nd Duke of Aosta" ;
-    data:posIndicesFull "1810:1828" ;
-    data:posIndicesPart "2121:2126",
-        "2176:2184",
-        "2410:2416",
-        "2426:2434",
-        "2531:2539",
+data:Prince_Philippe-_Count_of_Paris a :Person ;
+    rdfs:label "Prince Philippe, Count of Paris" ;
+    data:posIndicesFull "733:764" ;
+    data:posIndicesPart "1041:1046",
+        "1404:1410",
+        "1830:1836",
         "2758:2764",
-        "3026:3031",
-        "3250:3258",
         "3360:3366" ;
-    data:wdtLink wdt:Q445106 ;
-    :alsoKnownAs "Emanuele Filiberto" ;
-    :hasChild data:Prince_Aimone-_4th_Duke_of_Aosta ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Aimone-_4th_Duke_of_Aosta ;
-    :isFatherOf data:Prince_Aimone-_4th_Duke_of_Aosta ;
-    :isParentOf data:Prince_Aimone-_4th_Duke_of_Aosta .
+    data:wdtLink wdt:Q354477 ;
+    :alsoKnownAs "Louis-Philippe Albert d'Orléans",
+        "Louis-Philippe-Albert d' Orléans" ;
+    :hasSex data:male .
 
-data:Princess_Irene-_Duchess_of_Aosta a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Irene, Duchess of Aosta" ;
-    data:posIndicesFull "255:291" ;
-    data:posIndicesPart "1256:1261",
-        "2121:2126",
-        "2195:2203",
-        "3026:3031",
-        "465:470",
-        "927:935" ;
-    data:wdtLink wdt:Q236770 ;
-    :alsoKnownAs "Princess Irene of Greece and Denmark" ;
-    :hasChild data:Prince_Amedeo-_5th_Duke_of_Aosta ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Amedeo-_5th_Duke_of_Aosta ;
-    :isAuntOf data:Princess_Irene_of_Greece_and_Denmark ;
-    :isMotherOf data:Prince_Amedeo-_5th_Duke_of_Aosta ;
-    :isParentOf data:Prince_Amedeo-_5th_Duke_of_Aosta .
+data:Victoria-_Princess_Royal a :Person ;
+    rdfs:label "Victoria, Princess Royal" ;
+    data:posIndicesFull "2410:2425" ;
+    data:posIndicesPart "2919:2924",
+        "2992:2997" ;
+    data:wdtLink wdt:Q116728 ;
+    :alsoKnownAs "Empress Frederick",
+        "Empress Frederick of Germany",
+        "Empress Friedrich",
+        "Empress Victoria of Germany",
+        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise",
+        "Princess Victoria",
+        "Princess Victoria Adelaide Mary Louise",
+        "Princess Victoria Adelaide Mary Louise of the United Kingdom",
+        "Princess Victoria of the United Kingdom",
+        "Victoria Adelaide Mary Louisa",
+        "Victoria Adelaide Mary Louise",
+        "Victoria, Crown Princess of Prussia",
+        "Victoria, Empress Frederick of Germany",
+        "Victoria, Empress consort of Germany",
+        "Victoria, Empress of Germany",
+        "Victoria, German Empress",
+        "Victoria, Queen of Prussia and Empress of Germany" ;
+    :hasSex data:female .
 
-data:Prince_Aimone-_4th_Duke_of_Aosta a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Aimone-_4th_Duke_of_Aosta a :Person ;
     rdfs:label "Prince Aimone, 4th Duke of Aosta" ;
     data:posIndicesFull "166:194" ;
     data:posIndicesPart "1256:1261",
@@ -147,45 +93,56 @@ data:Prince_Aimone-_4th_Duke_of_Aosta a :Ancestor,
         "1830:1836",
         "1998:2004",
         "2121:2126",
-        "2410:2416",
         "2758:2764",
         "3026:3031",
         "3360:3366",
         "457:461",
         "465:470",
-        "472:478",
-        "733:739" ;
+        "472:478" ;
     data:wdtLink wdt:Q169902 ;
     :alsoKnownAs "Aimoe di Savoia-Aoste, Principe di Savoia",
         "Prince Aimone, Duke of Aosta" ;
-    :hasChild data:Prince_Amedeo-_5th_Duke_of_Aosta ;
-    :hasFather data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
     :hasParent data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Amedeo-_5th_Duke_of_Aosta ;
-    :isChildOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
-    :isFatherOf data:Prince_Amedeo-_5th_Duke_of_Aosta ;
-    :isParentOf data:Prince_Amedeo-_5th_Duke_of_Aosta ;
-    :isSonOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta .
+    :hasSex data:male .
 
-data:Prince_Amedeo-_5th_Duke_of_Aosta a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Amedeo-_5th_Duke_of_Aosta a :Person ;
     rdfs:label "Prince Amedeo, 5th Duke of Aosta" ;
     data:wdtLink wdt:Q452039 ;
     :alsoKnownAs "Amadeo di Savoia-Aosta" ;
-    :hasChild data:Prince_Aimone-_6th_Duke_of_Aosta ;
-    :hasFather data:Prince_Aimone-_4th_Duke_of_Aosta ;
-    :hasMother data:Princess_Irene-_Duchess_of_Aosta ;
     :hasParent data:Prince_Aimone-_4th_Duke_of_Aosta,
         data:Princess_Irene-_Duchess_of_Aosta ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Aimone-_6th_Duke_of_Aosta ;
-    :isChildOf data:Prince_Aimone-_4th_Duke_of_Aosta,
-        data:Princess_Irene-_Duchess_of_Aosta ;
-    :isFatherOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
-    :isParentOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
-    :isSonOf data:Prince_Aimone-_4th_Duke_of_Aosta,
-        data:Princess_Irene-_Duchess_of_Aosta .
+    :hasSex data:male .
+
+data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta a :Person ;
+    rdfs:label "Prince Emanuele Filiberto, 2nd Duke of Aosta" ;
+    data:posIndicesFull "1810:1828" ;
+    data:posIndicesPart "2121:2126",
+        "2176:2184",
+        "2426:2434",
+        "2531:2539",
+        "2758:2764",
+        "3026:3031",
+        "3250:3258",
+        "3360:3366" ;
+    data:wdtLink wdt:Q445106 ;
+    :alsoKnownAs "Emanuele Filiberto" ;
+    :hasSex data:male .
+
+data:Princess_Irene-_Duchess_of_Aosta a :Person ;
+    rdfs:label "Princess Irene, Duchess of Aosta" ;
+    data:posIndicesFull "255:291" ;
+    data:posIndicesPart "1096:1104",
+        "1256:1261",
+        "2121:2126",
+        "2195:2203",
+        "3026:3031",
+        "465:470",
+        "927:935" ;
+    data:wdtLink wdt:Q236770 ;
+    :alsoKnownAs "Princess Irene of Greece and Denmark" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

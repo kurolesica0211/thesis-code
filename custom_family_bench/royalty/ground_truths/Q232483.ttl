@@ -7,155 +7,19 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Victoria Melita of Saxe-Coburg and Gotha" ;
-    data:posIndicesFull "206:210",
-        "543:547",
-        "5678:5682" ;
-    data:posIndicesPart "2274:2282",
-        "2541:2549",
-        "3866:3874",
-        "4434:4442",
-        "4509:4517" ;
-    data:wdtLink wdt:Q164500 ;
-    :alsoKnownAs "Ducky",
-        "Grand Duchess Victoria Feodorovna of Russia",
-        "Princess Victoria Melita of Edinburgh",
-        "Victoria Feodorovna of Russia",
-        "Victoria Melita",
-        "Victoria Melita of Edinburgh",
-        "Victoria Melita of Saxe-Coburg-Gotha",
-        "Victoria Melita, Grand Duchess of Hesse and the Rhine" ;
-    :hasSex data:female .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Alexandrine of Mecklenburg-Schwerin" ;
-    data:posIndicesFull "441:476" ;
-    data:wdtLink wdt:Q57264 ;
-    :alsoKnownAs "Alexandrine Auguste of Mecklenburg-Schwerin",
-        "Alexandrine, Queen of Denmark",
-        "Duchess Alexandrine Auguste of Mecklenburg-Schwerin",
-        "Duchess Alexandrine of Mecklenburg-Schwerin",
-        "Queen Alexandrine of Denmark" ;
-    :hasSex data:female .
-
-data:Juliana_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Juliana of the Netherlands" ;
-    data:posIndicesFull "605:618",
-        "605:637",
-        "611:618",
-        "611:637" ;
-    data:wdtLink wdt:Q154946 ;
-    :alsoKnownAs "Juliana I of the Netherlands",
-        "Juliana Louise Emma Marie Wilhelmina",
-        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Juliana der Nederlanden",
-        "Julijana",
-        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Princess Juliana of the Netherlands",
-        "Queen Juliana",
-        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Queen Juliana of the Netherlands" ;
-    :hasSex data:female .
-
-data:Duchess_Marie_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Duchess Marie of Mecklenburg-Schwerin" ;
-    data:posIndicesFull "248:285",
-        "256:285" ;
-    data:posIndicesPart "2283:2288",
-        "2334:2339",
-        "2418:2423",
-        "2756:2763",
-        "3030:3037",
-        "4376:4383",
-        "4542:4549",
-        "4699:4706",
-        "5033:5040",
-        "5282:5289",
-        "5533:5540",
-        "5715:5722" ;
-    data:wdtLink wdt:Q231463 ;
-    :alsoKnownAs "Grand Duchess Maria Pavlovna of Russia",
-        "Maria Pavlovna of Russia",
-        "Maria Pavlovna the Elder",
-        "Marie of Mecklenburg-Schwerin" ;
-    :hasChild data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-    :hasDaughter data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-    :hasSex data:female ;
-    :isAuntOf data:Alexandrine_of_Mecklenburg-Schwerin,
-        data:Juliana_of_the_Netherlands ;
-    :isMotherOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-    :isParentOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
-
-data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Grand Duke Vladimir Alexandrovich of Russia" ;
-    data:posIndicesFull "200:243" ;
-    data:posIndicesPart "1733:1739",
-        "1755:1763",
-        "1764:1777",
-        "1781:1787",
-        "1917:1923",
-        "1963:1968",
-        "2024:2030",
-        "2103:2109",
-        "2120:2125",
-        "2750:2755",
-        "3024:3029",
-        "3101:3107",
-        "400:406",
-        "4370:4375",
-        "4536:4541",
-        "4626:4631",
-        "4641:4647",
-        "4693:4698",
-        "4749:4755",
-        "5027:5032",
-        "5276:5281",
-        "5709:5714" ;
-    data:wdtLink wdt:Q312819 ;
-    :hasChild data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-    :hasDaughter data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-    :hasSex data:male ;
-    :isFatherOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-    :isParentOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
-
-data:Prince_Edward-_Duke_of_Kent a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Edward-_Duke_of_Kent a :Person ;
     rdfs:label "Prince Edward, Duke of Kent" ;
     data:posIndicesFull "528:541",
         "528:555",
         "543:555",
-        "5678:5690" ;
-    data:posIndicesPart "1039:1045",
-        "3855:3861",
-        "4296:4302",
-        "4724:4730",
-        "5213:5219",
-        "5327:5333",
-        "5762:5768" ;
+        "5613:5625" ;
+    data:posIndicesPart "3790:3796",
+        "4231:4237",
+        "4659:4665",
+        "5148:5154",
+        "5262:5268",
+        "5697:5703",
+        "974:980" ;
     data:wdtLink wdt:Q158258 ;
     :alsoKnownAs "Duke of Kent",
         "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
@@ -164,173 +28,266 @@ data:Prince_Edward-_Duke_of_Kent a :Ancestor,
         "Prince Edward",
         "Prince Edward of Kent",
         "The Duke of Kent" ;
-    :hasBrother data:Prince_Michael_of_Kent ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Michael_of_Kent ;
-    :isSiblingOf data:Prince_Michael_of_Kent .
+    :hasParent data:Prince_George-_Duke_of_Kent ;
+    :hasSex data:male .
 
-data:Prince_Michael_of_Kent a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Michael_of_Kent a :Person ;
     rdfs:label "Prince Michael of Kent" ;
     data:posIndicesFull "581:603" ;
-    data:posIndicesPart "1039:1045",
-        "3855:3861",
-        "4296:4302",
-        "4724:4730",
-        "5213:5219",
-        "5327:5333",
-        "5663:5669",
-        "5762:5768" ;
+    data:posIndicesPart "3790:3796",
+        "4231:4237",
+        "4659:4665",
+        "5148:5154",
+        "5262:5268",
+        "5697:5703",
+        "974:980" ;
     data:wdtLink wdt:Q313752 ;
     :alsoKnownAs "Michael George Charles Franklin",
         "Prince Michael George Charles Franklin of Kent" ;
-    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Edward-_Duke_of_Kent ;
-    :isSiblingOf data:Prince_Edward-_Duke_of_Kent .
+    :hasParent data:Prince_George-_Duke_of_Kent ;
+    :hasSex data:male .
 
-data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Nicholas of Greece and Denmark" ;
-    data:posIndicesFull "1377:1414",
-        "303:340",
-        "4307:4346" ;
-    data:posIndicesPart "1039:1045",
-        "1651:1659",
-        "3210:3218",
-        "3247:3253",
-        "3467:3475",
-        "3691:3699",
-        "3779:3787",
-        "3855:3861",
-        "3875:3883",
-        "3925:3933",
-        "3971:3979",
-        "4164:4172",
-        "4528:4534",
-        "4724:4730",
-        "4731:4739",
-        "487:494",
-        "4915:4921",
-        "5168:5174",
-        "5213:5219",
-        "5220:5228",
-        "5327:5333",
-        "5334:5342",
-        "5404:5410",
-        "5468:5474",
-        "5648:5654",
-        "5663:5669",
-        "5762:5768",
-        "5769:5777",
-        "5837:5843" ;
-    data:wdtLink wdt:Q170160 ;
-    :alsoKnownAs "Prince Nikolaos of Greece and Denmark" ;
-    :hasChild data:Princess_Olga_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Olga_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Olga_of_Greece_and_Denmark ;
-    :isParentOf data:Princess_Olga_of_Greece_and_Denmark .
+data:Prince_Paul_of_Yugoslavia a :Person ;
+    rdfs:label "Prince Paul of Yugoslavia" ;
+    data:posIndicesFull "5354:5379",
+        "5361:5379" ;
+    data:posIndicesPart "5697:5703" ;
+    data:wdtLink wdt:Q313128 ;
+    :alsoKnownAs "Pablo Karagjorgjevich",
+        "Paul Karageorgevich",
+        "Paul of Yugoslavia",
+        "Pavle Karađorđević",
+        "Prince of Yugoslavia Paul",
+        "Prince of Yugoslavia Pavle",
+        "Prince of Yugoslavia Pavle Karađorđević" ;
+    :hasSex data:male .
 
-data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Olga_of_Greece_and_Denmark a :Person ;
     rdfs:label "Princess Olga of Greece and Denmark" ;
-    data:posIndicesFull "5419:5444" ;
-    data:posIndicesPart "5837:5843" ;
+    data:posIndicesFull "5354:5379" ;
+    data:posIndicesPart "5772:5778" ;
     data:wdtLink wdt:Q235432 ;
     :alsoKnownAs "Olga of Greece and Denmark",
         "Princess Paul of Yugoslavia" ;
-    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
     :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
         data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :isAuntOf data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Michael_of_Kent ;
-    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
-        data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
-        data:Prince_Nicholas_of_Greece_and_Denmark .
+    :hasSex data:female .
 
-data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Duchess_Marie_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Duchess Marie of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "248:285",
+        "256:285" ;
+    data:posIndicesPart "2218:2223",
+        "2269:2274",
+        "2353:2358",
+        "2691:2698",
+        "2965:2972",
+        "4311:4318",
+        "4477:4484",
+        "456:467",
+        "4634:4641",
+        "468:476",
+        "4968:4975",
+        "5217:5224",
+        "5468:5475",
+        "5650:5657" ;
+    data:wdtLink wdt:Q231463 ;
+    :alsoKnownAs "Grand Duchess Maria Pavlovna of Russia",
+        "Maria Pavlovna of Russia",
+        "Maria Pavlovna the Elder",
+        "Marie of Mecklenburg-Schwerin" ;
+    :hasSex data:female .
+
+data:George_I_of_Greece a :Person ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "1368:1376",
+        "1368:1386" ;
+    data:posIndicesPart "3182:3188",
+        "4463:4469",
+        "4850:4856",
+        "5103:5109",
+        "5403:5409",
+        "5583:5589",
+        "5772:5778" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasSex data:male .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person ;
     rdfs:label "Grand Duchess Elena Vladimirovna of Russia" ;
     data:posIndicesFull "0:42" ;
-    data:posIndicesPart "1098:1103",
-        "1152:1157",
-        "1231:1236",
-        "1481:1486",
-        "1639:1644",
-        "1669:1674",
-        "1733:1739",
-        "1781:1787",
-        "1917:1923",
-        "1963:1968",
-        "2024:2030",
-        "2103:2109",
-        "2111:2116",
-        "2120:2125",
+    data:posIndicesPart "1033:1038",
+        "1087:1092",
+        "1166:1171",
+        "1416:1421",
+        "1574:1579",
+        "1604:1609",
+        "1716:1722",
+        "1852:1858",
+        "1898:1903",
+        "1959:1965",
+        "2038:2044",
+        "2046:2051",
+        "2055:2060",
+        "2181:2186",
         "2246:2251",
-        "2311:2316",
-        "2399:2404",
-        "2498:2503",
-        "2643:2648",
-        "2750:2755",
-        "2756:2763",
-        "2765:2770",
-        "3024:3029",
-        "3030:3037",
-        "3101:3107",
-        "3120:3125",
-        "3200:3205",
-        "3484:3489",
-        "3769:3774",
+        "2334:2339",
+        "2433:2438",
+        "2578:2583",
+        "2685:2690",
+        "2691:2698",
+        "2700:2705",
+        "2959:2964",
+        "2965:2972",
+        "3036:3042",
+        "3055:3060",
+        "3135:3140",
+        "3419:3424",
+        "3704:3709",
         "400:406",
-        "4185:4190",
-        "4370:4375",
-        "4376:4383",
-        "4384:4389",
-        "4536:4541",
-        "4542:4549",
-        "4550:4555",
-        "4626:4631",
-        "4641:4647",
-        "4693:4698",
-        "4699:4706",
-        "4749:4755",
-        "5027:5032",
-        "5033:5040",
-        "5041:5046",
-        "5276:5281",
-        "5282:5289",
-        "5290:5295",
-        "5533:5540",
-        "5709:5714",
-        "5715:5722",
-        "5723:5728",
-        "682:687",
-        "829:834",
-        "882:887" ;
+        "4120:4125",
+        "4305:4310",
+        "4311:4318",
+        "4319:4324",
+        "4471:4476",
+        "4477:4484",
+        "4485:4490",
+        "4561:4566",
+        "4576:4582",
+        "4628:4633",
+        "4634:4641",
+        "4684:4690",
+        "4962:4967",
+        "4968:4975",
+        "4976:4981",
+        "5211:5216",
+        "5217:5224",
+        "5225:5230",
+        "5468:5475",
+        "5644:5649",
+        "5650:5657",
+        "5658:5663",
+        "617:622",
+        "764:769",
+        "817:822" ;
     data:wdtLink wdt:Q232483 ;
-    :hasChild data:Princess_Olga_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Olga_of_Greece_and_Denmark ;
-    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
-    :hasMother data:Duchess_Marie_of_Mecklenburg-Schwerin ;
     :hasParent data:Duchess_Marie_of_Mecklenburg-Schwerin,
         data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
-    :hasSex data:female ;
-    :isChildOf data:Duchess_Marie_of_Mecklenburg-Schwerin,
-        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
-    :isDaughterOf data:Duchess_Marie_of_Mecklenburg-Schwerin,
-        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
-    :isMotherOf data:Princess_Olga_of_Greece_and_Denmark ;
-    :isParentOf data:Princess_Olga_of_Greece_and_Denmark .
+    :hasSex data:female .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Person ;
+    rdfs:label "Grand Duke Vladimir Alexandrovich of Russia" ;
+    data:posIndicesFull "200:243" ;
+    data:posIndicesPart "1690:1698",
+        "1699:1712",
+        "1716:1722",
+        "1852:1858",
+        "1898:1903",
+        "1959:1965",
+        "2038:2044",
+        "2055:2060",
+        "2685:2690",
+        "2959:2964",
+        "3036:3042",
+        "400:406",
+        "4305:4310",
+        "4471:4476",
+        "4561:4566",
+        "4576:4582",
+        "4628:4633",
+        "4684:4690",
+        "4962:4967",
+        "5211:5216",
+        "5644:5649" ;
+    data:wdtLink wdt:Q312819 ;
+    :hasSex data:male .
+
+data:Olga_Constantinovna_of_Russia a :Person ;
+    rdfs:label "Olga Constantinovna of Russia" ;
+    data:posIndicesFull "1645:1674",
+        "5331:5345" ;
+    data:posIndicesPart "1852:1858",
+        "1959:1965",
+        "2038:2044",
+        "3036:3042",
+        "4576:4582",
+        "4684:4690" ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece",
+        "Queen Olga of Greece" ;
+    :hasSex data:female .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Nicholas of Greece and Denmark" ;
+    data:posIndicesFull "1312:1349",
+        "303:340",
+        "4242:4281" ;
+    data:posIndicesPart "1586:1594",
+        "3145:3153",
+        "3182:3188",
+        "3402:3410",
+        "3626:3634",
+        "3714:3722",
+        "3790:3796",
+        "3810:3818",
+        "3860:3868",
+        "3906:3914",
+        "4099:4107",
+        "4463:4469",
+        "4659:4665",
+        "4666:4674",
+        "4850:4856",
+        "487:494",
+        "5103:5109",
+        "5148:5154",
+        "5155:5163",
+        "5262:5268",
+        "5269:5277",
+        "5403:5409",
+        "5583:5589",
+        "5697:5703",
+        "5704:5712",
+        "5772:5778",
+        "974:980" ;
+    data:wdtLink wdt:Q170160 ;
+    :alsoKnownAs "Prince Nikolaos of Greece and Denmark" ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male .
+
+data:Prince_George-_Duke_of_Kent a :Person ;
+    rdfs:label "Prince George, Duke of Kent" ;
+    data:posIndicesFull "5598:5625",
+        "5605:5625" ;
+    data:posIndicesPart "5697:5703" ;
+    data:wdtLink wdt:Q160770 ;
+    :alsoKnownAs "George Edward Alexander Edmund of Wales",
+        "George Edward Alexander Edmund, Duke of Kent",
+        "George Kent",
+        "George of Wales",
+        "George, Duke of Kent",
+        "Prince George Edward Alexander Edmund of Wales",
+        "Prince George Edward Alexander Edmund, Duke of Kent",
+        "Prince George of Wales",
+        "The Prince George Edward Alexander Edmund of the United Kingdom",
+        "The Prince George Edward Alexander Edmund, Duke of Kent",
+        "The Prince George of the United Kingdom",
+        "The Prince George, Duke of Kent" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

@@ -7,9 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Beatrix_von_Storch a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Beatrix_von_Storch a :Person ;
     rdfs:label "Beatrix von Storch" ;
     data:posIndicesFull "0:42",
         "1269:1287",
@@ -32,9 +30,13 @@ data:Beatrix_von_Storch a :Person,
         "Beatrix Amelie Ehrengard Eilika von Storch" ;
     :hasSex data:female .
 
+data:male a :Male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
 

@@ -2,63 +2,12 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Dominik_Rainer_Radziwi%C5%82%C5%82 a :Man,
-        :Person ;
-    :hasFather data:Prince_Hieronim_Radziwi%C5%82%C5%82 ;
-    :hasMother data:Archduchess_Renata_of_Austria .
+data:Countess_Leonore_of_Orange-Nassau a :Woman ;
+    :hasBirthYear 2006 ;
+    :hasFather data:Prince_Constantijn_of_the_Netherlands ;
+    :hasMother data:Princess_Laurentien_of_the_Netherlands .
 
-data:Prince_Raymundo_della_Torre_e_Tasso a :Man,
-        :Person .
+data:Prince_Constantijn_of_the_Netherlands a :Man .
 
-data:Princess_Eugenie_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :hasBirthYear 1910 ;
-    :hasBrother data:Prince_Peter_of_Greece_and_Denmark ;
-    :hasDeathYear 1989 ;
-    :hasFather data:Prince_George_of_Greece_and_Denmark ;
-    :hasMarriageYear 1938,
-        1949 ;
-    :hasMother data:Princess_Marie_Bonaparte ;
-    :hasSex data:Female .
-
-data:Archduchess_Renata_of_Austria a :Person,
-        :Woman .
-
-data:Female a :Sex .
-
-data:George_I_of_Greece a :Ancestor,
-        :Man,
-        :Person .
-
-data:Marie-F%C3%A9lix_Blanc a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Olga_Constantinovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Prince_Hieronim_Radziwi%C5%82%C5%82 a :Man,
-        :Person .
-
-data:Prince_Peter_of_Greece_and_Denmark a :Man,
-        :Person ;
-    :hasFather data:Prince_George_of_Greece_and_Denmark ;
-    :hasMother data:Princess_Marie_Bonaparte .
-
-data:Prince_Roland_Bonaparte a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_George_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:George_I_of_Greece ;
-    :hasMother data:Olga_Constantinovna_of_Russia .
-
-data:Princess_Marie_Bonaparte a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Prince_Roland_Bonaparte ;
-    :hasMother data:Marie-F%C3%A9lix_Blanc .
+data:Princess_Laurentien_of_the_Netherlands a :Woman .
 

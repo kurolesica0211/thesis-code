@@ -1,0 +1,248 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Clamor_von_dem_Bussche a :Man ;
+    :hasBirthYear 1532 ;
+    :hasBrother data:Clamor_von_dem_Bussche ;
+    :hasDeathYear 1573 ;
+    :hasRelation data:Clamor_von_dem_Bussche ;
+    :isBloodrelationOf data:Clamor_von_dem_Bussche ;
+    :isBrotherOf data:Clamor_von_dem_Bussche ;
+    :isSiblingOf data:Clamor_von_dem_Bussche .
+
+data:Elise_von_Vieregge a :Ancestor,
+        :Woman ;
+    :hasChild data:Claus_Felix_von_Amsberg ;
+    :hasRelation data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasSister data:Elise_von_Vieregge ;
+    :hasSon data:Claus_Felix_von_Amsberg ;
+    :isAncestorOf data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg ;
+    :isAuntOf data:Claus_Felix_von_Amsberg ;
+    :isBloodrelationOf data:Elise_von_Vieregge ;
+    :isMotherOf data:Claus_Felix_von_Amsberg ;
+    :isParentOf data:Claus_Felix_von_Amsberg ;
+    :isSiblingOf data:Elise_von_Vieregge ;
+    :isSisterOf data:Elise_von_Vieregge .
+
+data:Wilhelm_von_Amsberg a :Ancestor,
+        :Man ;
+    :hasBrother data:Wilhelm_von_Amsberg ;
+    :hasChild data:Claus_Felix_von_Amsberg ;
+    :hasRelation data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasSon data:Claus_Felix_von_Amsberg ;
+    :isAncestorOf data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg ;
+    :isBloodrelationOf data:Wilhelm_von_Amsberg ;
+    :isBrotherOf data:Wilhelm_von_Amsberg ;
+    :isFatherOf data:Claus_Felix_von_Amsberg ;
+    :isParentOf data:Claus_Felix_von_Amsberg ;
+    :isSiblingOf data:Wilhelm_von_Amsberg ;
+    :isUncleOf data:Claus_Felix_von_Amsberg .
+
+data:Gabriele_von_dem_Bussche-Ippenburg a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1877 ;
+    :hasChild data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :hasDaughter data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasDeathYear 1973 ;
+    :hasRelation data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasSister data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :hasSon data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isAncestorOf data:Claus_von_Amsberg,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isAuntOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :isMotherOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :isSisterOf data:Gabriele_von_dem_Bussche-Ippenburg .
+
+data:George_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Man ;
+    :hasBirthYear 1869 ;
+    :hasBrother data:George_von_dem_Bussche-Haddenhausen ;
+    :hasChild data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :hasDaughter data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasDeathYear 1923 ;
+    :hasRelation data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasSon data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isAncestorOf data:Claus_von_Amsberg,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:George_von_dem_Bussche-Haddenhausen ;
+    :isBrotherOf data:George_von_dem_Bussche-Haddenhausen ;
+    :isFatherOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:George_von_dem_Bussche-Haddenhausen ;
+    :isUncleOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen .
+
+data:Julius_von_dem_Bussche-Haddenhausen a :Man ;
+    :hasAncestor data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Julius_von_dem_Bussche-Haddenhausen ;
+    :hasDeathYear 1977 ;
+    :hasFather data:George_von_dem_Bussche-Haddenhausen ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :hasParent data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasSister data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isBrotherOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isChildOf data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isSonOf data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :isUncleOf data:Claus_von_Amsberg .
+
+data:Claus_Felix_von_Amsberg a :Ancestor,
+        :Man ;
+    :hasAncestor data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :hasBirthYear 1890 ;
+    :hasBrother data:Claus_Felix_von_Amsberg ;
+    :hasChild data:Claus_von_Amsberg ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Wilhelm_von_Amsberg ;
+    :hasMother data:Elise_von_Vieregge ;
+    :hasParent data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :hasRelation data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasSon data:Claus_von_Amsberg ;
+    :isAncestorOf data:Claus_von_Amsberg ;
+    :isBloodrelationOf data:Claus_Felix_von_Amsberg ;
+    :isBrotherOf data:Claus_Felix_von_Amsberg ;
+    :isChildOf data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :isFatherOf data:Claus_von_Amsberg ;
+    :isParentOf data:Claus_von_Amsberg ;
+    :isSiblingOf data:Claus_Felix_von_Amsberg ;
+    :isSonOf data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :isUncleOf data:Claus_von_Amsberg .
+
+data:Claus_von_Amsberg a :Man ;
+    :hasAncestor data:Claus_Felix_von_Amsberg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasBirthYear 1926 ;
+    :hasBrother data:Claus_von_Amsberg ;
+    :hasFather data:Claus_Felix_von_Amsberg ;
+    :hasMother data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasParent data:Claus_Felix_von_Amsberg,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :isBloodrelationOf data:Claus_von_Amsberg ;
+    :isBrotherOf data:Claus_von_Amsberg ;
+    :isChildOf data:Claus_Felix_von_Amsberg,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Claus_von_Amsberg ;
+    :isSonOf data:Claus_Felix_von_Amsberg,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen .
+
+data:G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:Julius_von_dem_Bussche-Haddenhausen ;
+    :hasChild data:Claus_von_Amsberg ;
+    :hasDeathYear 1996 ;
+    :hasFather data:George_von_dem_Bussche-Haddenhausen ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :hasParent data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Claus_Felix_von_Amsberg,
+        data:Claus_von_Amsberg,
+        data:Elise_von_Vieregge,
+        data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen,
+        data:Wilhelm_von_Amsberg ;
+    :hasSister data:G%C3%B6sta_von_dem_Bussche-Haddenhausen ;
+    :hasSon data:Claus_von_Amsberg ;
+    :isAncestorOf data:Claus_von_Amsberg ;
+    :isAuntOf data:Claus_von_Amsberg ;
+    :isBloodrelationOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isChildOf data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :isDaughterOf data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:George_von_dem_Bussche-Haddenhausen ;
+    :isMotherOf data:Claus_von_Amsberg ;
+    :isParentOf data:Claus_von_Amsberg ;
+    :isSiblingOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen ;
+    :isSisterOf data:G%C3%B6sta_von_dem_Bussche-Haddenhausen,
+        data:Julius_von_dem_Bussche-Haddenhausen .
+

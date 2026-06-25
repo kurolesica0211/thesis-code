@@ -7,26 +7,23 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Beatrix_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Beatrix_of_the_Netherlands a :Person ;
     rdfs:label "Beatrix of the Netherlands" ;
     data:posIndicesFull "250:263" ;
     data:posIndicesPart "1677:1684",
         "1856:1863",
         "2104:2111",
-        "2244:2251",
-        "2417:2424",
-        "2458:2469",
+        "2350:2357",
+        "2523:2530",
+        "2564:2575",
         "377:384",
-        "3926:3937",
-        "4051:4058",
-        "4084:4095",
-        "4143:4154",
-        "4827:4838",
+        "4032:4043",
+        "4157:4164",
+        "4190:4201",
+        "4249:4260",
+        "4933:4944",
         "517:528",
-        "5541:5552" ;
+        "5647:5658" ;
     data:wdtLink wdt:Q29574 ;
     :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
         "Beatrix Wilhelmina Armgard",
@@ -36,7 +33,68 @@ data:Beatrix_of_the_Netherlands a :Ancestor,
         "Princess Beatrix of Orange-Nassau",
         "Princess Beatrix of the Netherlands",
         "Queen Beatrix" ;
+    :hasParent data:Juliana_of_the_Netherlands ;
     :hasSex data:female .
+
+data:Prince_Claus-_Prince_Consort_of_the_Netherlands a :Person ;
+    rdfs:label "Prince Claus, Prince Consort of the Netherlands" ;
+    data:posIndicesFull "0:53",
+        "580:631",
+        "60:111" ;
+    data:posIndicesPart "1191:1196",
+        "1417:1422",
+        "1522:1527",
+        "1658:1663",
+        "1846:1851",
+        "2458:2463",
+        "2474:2479",
+        "2564:2575",
+        "2597:2602",
+        "2810:2815",
+        "3065:3070",
+        "3267:3272",
+        "3417:3423",
+        "3424:3429",
+        "3473:3478",
+        "367:372",
+        "3711:3716",
+        "3851:3856",
+        "4032:4043",
+        "4088:4093",
+        "4190:4201",
+        "4249:4260",
+        "4286:4292",
+        "4293:4300",
+        "4302:4308",
+        "4309:4314",
+        "4459:4464",
+        "4711:4716",
+        "479:484",
+        "4933:4944",
+        "4949:4954",
+        "4981:4987",
+        "4988:4993",
+        "503:509",
+        "5114:5119",
+        "517:528",
+        "5206:5211",
+        "5363:5369",
+        "5370:5375",
+        "5475:5481",
+        "5482:5487",
+        "5633:5639",
+        "5647:5658",
+        "5686:5692" ;
+    data:wdtLink wdt:Q159609 ;
+    :alsoKnownAs "Claus van Amsberg",
+        "Claus von Amsberg",
+        "Claus, Prince Consort of the Netherlands",
+        "Klaus von Amsberg",
+        "Klaus-Georg Wilhelm Otto Friedrich Gerd von Amsberg",
+        "Prince Claus of the Netherlands, Jonkheer van Amsberg" ;
+    :hasParent data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
+        data:Claus_Felix_von_Amsberg ;
+    :hasSex data:male .
 
 data:posIndicesFull a owl:AnnotationProperty .
 
@@ -44,10 +102,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Baroness_Gösta_von_dem_Bussche-Haddenhausen a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Baroness_Gösta_von_dem_Bussche-Haddenhausen a :Person ;
     rdfs:label "Baroness Gösta von dem Bussche-Haddenhausen" ;
     data:posIndicesFull "812:855",
         "821:855" ;
@@ -60,16 +115,9 @@ data:Baroness_Gösta_von_dem_Bussche-Haddenhausen a :Ancestor,
         "Gösta Julie Adelheid Marion Marie von dem Bussche-Haddenhausen",
         "Gösta von Amsberg",
         "Gösta von dem Bussche-Haddenhausen" ;
-    :hasChild data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
-    :isMotherOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
-    :isParentOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands .
+    :hasSex data:female .
 
-data:Claus_Felix_von_Amsberg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Claus_Felix_von_Amsberg a :Person ;
     rdfs:label "Claus Felix von Amsberg" ;
     data:posIndicesFull "774:797" ;
     data:posIndicesPart "1191:1196",
@@ -77,101 +125,56 @@ data:Claus_Felix_von_Amsberg a :Ancestor,
         "1522:1527",
         "1658:1663",
         "1846:1851",
-        "2352:2357",
-        "2368:2373",
-        "2491:2496",
-        "2704:2709",
-        "2959:2964",
-        "3161:3166",
-        "3318:3323",
-        "3367:3372",
-        "3605:3610",
-        "3745:3750",
-        "3982:3987",
-        "4203:4208",
-        "4353:4358",
-        "4605:4610",
-        "4843:4848",
-        "4882:4887",
-        "5008:5013",
-        "5100:5105",
-        "5264:5269",
-        "5376:5381",
+        "2458:2463",
+        "2474:2479",
+        "2597:2602",
+        "2810:2815",
+        "3065:3070",
+        "3267:3272",
+        "3424:3429",
+        "3473:3478",
+        "3711:3716",
+        "3851:3856",
+        "4088:4093",
+        "4309:4314",
+        "4459:4464",
+        "4711:4716",
+        "4949:4954",
+        "4988:4993",
+        "5114:5119",
+        "5206:5211",
+        "5370:5375",
+        "5482:5487",
         "899:906" ;
     data:wdtLink wdt:Q2439092 ;
     :alsoKnownAs "Klaus Felix von Amsberg" ;
-    :hasChild data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
-    :isFatherOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
-    :isParentOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands .
+    :hasSex data:male .
 
-data:Prince_Claus-_Prince_Consort_of_the_Netherlands a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Claus, Prince Consort of the Netherlands" ;
-    data:posIndicesFull "0:53",
-        "580:631",
-        "60:111" ;
-    data:posIndicesPart "1191:1196",
-        "1417:1422",
-        "1522:1527",
-        "1658:1663",
-        "1846:1851",
-        "2352:2357",
-        "2368:2373",
-        "2458:2469",
-        "2491:2496",
-        "2704:2709",
-        "2959:2964",
-        "3161:3166",
-        "3311:3317",
-        "3318:3323",
-        "3367:3372",
-        "3605:3610",
-        "367:372",
-        "3745:3750",
-        "3926:3937",
-        "3982:3987",
-        "4084:4095",
-        "4143:4154",
-        "4180:4186",
-        "4187:4194",
-        "4196:4202",
-        "4203:4208",
-        "4353:4358",
-        "4605:4610",
-        "479:484",
-        "4827:4838",
-        "4843:4848",
-        "4875:4881",
-        "4882:4887",
-        "5008:5013",
-        "503:509",
-        "5100:5105",
-        "517:528",
-        "5257:5263",
-        "5264:5269",
-        "5369:5375",
-        "5376:5381",
-        "5527:5533",
-        "5541:5552",
-        "5580:5586" ;
-    data:wdtLink wdt:Q159609 ;
-    :alsoKnownAs "Claus van Amsberg",
-        "Claus von Amsberg",
-        "Claus, Prince Consort of the Netherlands",
-        "Klaus von Amsberg",
-        "Klaus-Georg Wilhelm Otto Friedrich Gerd von Amsberg",
-        "Prince Claus of the Netherlands, Jonkheer van Amsberg" ;
-    :hasFather data:Claus_Felix_von_Amsberg ;
-    :hasMother data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
-    :hasParent data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
-        data:Claus_Felix_von_Amsberg ;
-    :hasSex data:male ;
-    :isChildOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
-        data:Claus_Felix_von_Amsberg ;
-    :isSonOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
-        data:Claus_Felix_von_Amsberg .
+data:Juliana_of_the_Netherlands a :Person ;
+    rdfs:label "Juliana of the Netherlands" ;
+    data:posIndicesFull "2186:2199",
+        "2192:2199",
+        "4110:4123",
+        "4116:4123" ;
+    data:posIndicesPart "2564:2575",
+        "4032:4043",
+        "4249:4260",
+        "4933:4944",
+        "5647:5658" ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands",
+        "Juliana Louise Emma Marie Wilhelmina",
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Juliana der Nederlanden",
+        "Julijana",
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Princess Juliana of the Netherlands",
+        "Queen Juliana",
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Queen Juliana of the Netherlands" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

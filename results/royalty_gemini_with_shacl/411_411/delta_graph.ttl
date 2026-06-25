@@ -2,57 +2,64 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfonso_Prince_of_Asturias a :Man ;
-    :hasFather data:Alfonso_XIII ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg .
+data:Thyra_of_Mecklenburg a :Person,
+        :Woman ;
+    :hasFather data:Frederick_Francis_IV ;
+    :hasMother data:Alexandra_of_Hanover ;
+    :hasSex data:Female ;
+    :isSisterOf data:Christian_Louis_of_Mecklenburg .
 
-data:Alfonso_de_Borbon_son_of_Jaime a :Man ;
-    :hasFather data:Jaime_of_Spain ;
-    :hasMother data:Emanuela_de_Dampierre .
+data:Barbara_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1994 ;
+    :hasFather data:Sigismund_of_Prussia ;
+    :hasMother data:Charlotte_of_Saxe-Altenburg ;
+    :hasSex data:Female .
 
-data:Beatriz_of_Spain a :Woman ;
-    :hasFather data:Alfonso_XIII ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg .
+data:Charlotte_of_Saxe-Altenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
 
-data:Charlotte_Luise_Auguste_Tiedemann a :Woman ;
-    :hasFather data:Otto_Eugen_Tiedemann ;
-    :hasMother data:Luise_Amalia_Klein .
+data:Christian_Louis_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Frederick_Francis_IV ;
+    :hasMarriageYear 1954 ;
+    :hasMother data:Alexandra_of_Hanover ;
+    :hasRelation data:Barbara_of_Prussia ;
+    :hasSex data:Male .
 
-data:Gonzalo_of_Spain a :Man ;
-    :hasFather data:Alfonso_XIII ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg .
+data:Ernest_Augustus_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Gonzalo_son_of_Jaime a :Man ;
-    :hasFather data:Jaime_of_Spain ;
-    :hasMother data:Emanuela_de_Dampierre .
+data:Sigismund_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Juan_Count_of_Barcelona a :Man ;
-    :hasFather data:Alfonso_XIII ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg .
+data:Thyra_of_Denmark_Princess a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
 
-data:Maria_Cristina_of_Spain a :Woman ;
-    :hasFather data:Alfonso_XIII ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg .
+data:Alexandra_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Thyra_of_Denmark_Princess ;
+    :hasSex data:Female .
 
-data:Luise_Amalia_Klein a :Ancestor,
-        :Woman .
+data:Frederick_Francis_IV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Otto_Eugen_Tiedemann a :Ancestor,
-        :Man .
+data:Male a :Sex .
 
-data:Emanuela_de_Dampierre a :Ancestor,
-        :Woman .
-
-data:Jaime_of_Spain a :Ancestor,
-        :Man ;
-    :hasBirthYear 1908 ;
-    :hasDeathYear 1975 ;
-    :hasFather data:Alfonso_XIII ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg .
-
-data:Alfonso_XIII a :Ancestor,
-        :Man .
-
-data:Victoria_Eugenie_of_Battenberg a :Ancestor,
-        :Woman .
+data:Female a :Sex .
 

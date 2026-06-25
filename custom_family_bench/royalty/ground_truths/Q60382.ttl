@@ -7,156 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Frederica_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Frederica of Hanover" ;
-    data:posIndicesFull "1034:1050",
-        "1041:1050",
-        "130:139",
-        "3246:3255",
-        "5188:5204",
-        "5195:5204",
-        "5369:5378",
-        "5436:5445",
-        "5642:5651",
-        "6715:6724" ;
-    data:wdtLink wdt:Q61351 ;
-    :alsoKnownAs "Fredericka",
-        "Friederike Luise von Griechenland",
-        "Princess Fredericka" ;
-    :hasSex data:female .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Frederick_III-_German_Emperor a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Frederick III, German Emperor" ;
-    data:posIndicesFull "130:159" ;
-    data:posIndicesPart "11782:11788",
-        "12435:12442",
-        "13069:13076",
-        "3055:3061",
-        "3062:3069",
-        "3133:3139",
-        "4383:4390",
-        "4426:4432",
-        "4924:4930",
-        "4931:4938",
-        "5149:5156",
-        "5335:5342",
-        "5415:5422",
-        "5589:5596",
-        "5731:5738",
-        "804:810",
-        "8585:8592" ;
-    data:wdtLink wdt:Q58600 ;
-    :alsoKnownAs "Frederick III of Germany",
-        "Friedrich III",
-        "Friedrich III of Germany",
-        "Friedrich Wilhelm Nikolaus Karl",
-        "King Frederick III of Prussia",
-        "Kronprinz Friedrich Wilhelm" ;
-    :hasChild data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :hasDaughter data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Wilhelm_II ;
-    :isFatherOf data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :isParentOf data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II .
-
-data:Victoria-_Princess_Royal a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Victoria, Princess Royal" ;
-    data:posIndicesFull "0:17",
-        "1069:1086",
-        "1631:1648",
-        "1702:1719",
-        "173:197",
-        "6707:6724" ;
-    data:posIndicesPart "10682:10690",
-        "11062:11070",
-        "1160:1168",
-        "1205:1213",
-        "1255:1263",
-        "12851:12856",
-        "1453:1461",
-        "1564:1572",
-        "2301:2309",
-        "264:269",
-        "304:312",
-        "3111:3119",
-        "3268:3276",
-        "3740:3748",
-        "4029:4037",
-        "5391:5399",
-        "6153:6161",
-        "7466:7474",
-        "7865:7873",
-        "8351:8359",
-        "8547:8552",
-        "861:866",
-        "9104:9109",
-        "9924:9932" ;
-    data:wdtLink wdt:Q116728 ;
-    :alsoKnownAs "Empress Frederick",
-        "Empress Frederick of Germany",
-        "Empress Friedrich",
-        "Empress Victoria of Germany",
-        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise",
-        "Princess Victoria",
-        "Princess Victoria Adelaide Mary Louise",
-        "Princess Victoria Adelaide Mary Louise of the United Kingdom",
-        "Princess Victoria of the United Kingdom",
-        "Victoria Adelaide Mary Louisa",
-        "Victoria Adelaide Mary Louise",
-        "Victoria, Crown Princess of Prussia",
-        "Victoria, Empress Frederick of Germany",
-        "Victoria, Empress consort of Germany",
-        "Victoria, Empress of Germany",
-        "Victoria, German Empress",
-        "Victoria, Queen of Prussia and Empress of Germany" ;
-    :hasChild data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :hasDaughter data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Wilhelm_II ;
-    :isMotherOf data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :isParentOf data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II .
-
-data:Princess_Margaret_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Margaret_of_Prussia a :Person ;
     rdfs:label "Princess Margaret of Prussia" ;
     data:posIndicesFull "6198:6202" ;
     data:posIndicesPart "13975:13983",
@@ -179,28 +30,11 @@ data:Princess_Margaret_of_Prussia a :Ancestor,
         "Princess Margaret Beatrice Feodora of Prussia",
         "Princess Margarethe Beatrice Feodora of Prussia",
         "Princess Margarethe of Prussia" ;
-    :hasBrother data:Wilhelm_II ;
-    :hasFather data:Frederick_III-_German_Emperor ;
-    :hasMother data:Victoria-_Princess_Royal ;
     :hasParent data:Frederick_III-_German_Emperor,
         data:Victoria-_Princess_Royal ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isChildOf data:Frederick_III-_German_Emperor,
-        data:Victoria-_Princess_Royal ;
-    :isDaughterOf data:Frederick_III-_German_Emperor,
-        data:Victoria-_Princess_Royal ;
-    :isSiblingOf data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :isSisterOf data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II .
+    :hasSex data:female .
 
-data:Princess_Viktoria_of_Prussia a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Viktoria_of_Prussia a :Person ;
     rdfs:label "Princess Viktoria of Prussia" ;
     data:posIndicesFull "0:28",
         "1069:1097" ;
@@ -298,57 +132,21 @@ data:Princess_Viktoria_of_Prussia a :Person,
     data:wdtLink wdt:Q60382 ;
     :alsoKnownAs "Friederike Amalia Wilhelmine Viktoria Prinzessin von Preußen",
         "Princess Friederike Amalia Wilhelmine Viktoria of Prussia" ;
-    :hasBrother data:Wilhelm_II ;
-    :hasFather data:Frederick_III-_German_Emperor ;
-    :hasMother data:Victoria-_Princess_Royal ;
     :hasParent data:Frederick_III-_German_Emperor,
         data:Victoria-_Princess_Royal ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isChildOf data:Frederick_III-_German_Emperor,
-        data:Victoria-_Princess_Royal ;
-    :isDaughterOf data:Frederick_III-_German_Emperor,
-        data:Victoria-_Princess_Royal ;
-    :isSiblingOf data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :isSisterOf data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II .
+    :hasSex data:female .
 
-data:Sophia_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Sophia_of_Prussia a :Person ;
     rdfs:label "Sophia of Prussia" ;
     data:posIndicesFull "11670:11692" ;
     data:wdtLink wdt:Q155822 ;
     :alsoKnownAs "Queen Sophia of Greece",
         "Queen Sophia, Queen Consort of Greece" ;
-    :hasBrother data:Wilhelm_II ;
-    :hasFather data:Frederick_III-_German_Emperor ;
-    :hasMother data:Victoria-_Princess_Royal ;
     :hasParent data:Frederick_III-_German_Emperor,
         data:Victoria-_Princess_Royal ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia ;
-    :isChildOf data:Frederick_III-_German_Emperor,
-        data:Victoria-_Princess_Royal ;
-    :isDaughterOf data:Frederick_III-_German_Emperor,
-        data:Victoria-_Princess_Royal ;
-    :isSiblingOf data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia,
-        data:Wilhelm_II ;
-    :isSisterOf data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia,
-        data:Wilhelm_II .
+    :hasSex data:female .
 
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Wilhelm_II a :Person ;
     rdfs:label "Wilhelm II" ;
     data:posIndicesFull "11740:11750",
         "5597:5607",
@@ -370,22 +168,104 @@ data:Wilhelm_II a :Ancestor,
         "Wilhelm II, German Emperor",
         "Wilhelm II.",
         "William II" ;
-    :hasFather data:Frederick_III-_German_Emperor ;
-    :hasMother data:Victoria-_Princess_Royal ;
     :hasParent data:Frederick_III-_German_Emperor,
         data:Victoria-_Princess_Royal ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isBrotherOf data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isChildOf data:Frederick_III-_German_Emperor,
-        data:Victoria-_Princess_Royal ;
-    :isSiblingOf data:Princess_Margaret_of_Prussia,
-        data:Princess_Viktoria_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isSonOf data:Frederick_III-_German_Emperor,
-        data:Victoria-_Princess_Royal .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Frederick_III-_German_Emperor a :Person ;
+    rdfs:label "Frederick III, German Emperor" ;
+    data:posIndicesFull "130:159" ;
+    data:posIndicesPart "1041:1050",
+        "11782:11788",
+        "12435:12442",
+        "13069:13076",
+        "3055:3061",
+        "3062:3069",
+        "3133:3139",
+        "3246:3255",
+        "4383:4390",
+        "4426:4432",
+        "4924:4930",
+        "4931:4938",
+        "5149:5156",
+        "5195:5204",
+        "5335:5342",
+        "5369:5378",
+        "5415:5422",
+        "5436:5445",
+        "5589:5596",
+        "5642:5651",
+        "5731:5738",
+        "804:810",
+        "8585:8592" ;
+    data:wdtLink wdt:Q58600 ;
+    :alsoKnownAs "Frederick III of Germany",
+        "Friedrich III",
+        "Friedrich III of Germany",
+        "Friedrich Wilhelm Nikolaus Karl",
+        "King Frederick III of Prussia",
+        "Kronprinz Friedrich Wilhelm" ;
+    :hasSex data:male .
+
+data:Victoria-_Princess_Royal a :Person ;
+    rdfs:label "Victoria, Princess Royal" ;
+    data:posIndicesFull "0:17",
+        "1069:1086",
+        "1631:1648",
+        "1702:1719",
+        "173:197",
+        "6707:6724" ;
+    data:posIndicesPart "10682:10690",
+        "11062:11070",
+        "1160:1168",
+        "1205:1213",
+        "1255:1263",
+        "12851:12856",
+        "1453:1461",
+        "1564:1572",
+        "2301:2309",
+        "264:269",
+        "304:312",
+        "3111:3119",
+        "3268:3276",
+        "3740:3748",
+        "4029:4037",
+        "5391:5399",
+        "6153:6161",
+        "7466:7474",
+        "7865:7873",
+        "8351:8359",
+        "8547:8552",
+        "861:866",
+        "9104:9109",
+        "9924:9932" ;
+    data:wdtLink wdt:Q116728 ;
+    :alsoKnownAs "Empress Frederick",
+        "Empress Frederick of Germany",
+        "Empress Friedrich",
+        "Empress Victoria of Germany",
+        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise",
+        "Princess Victoria",
+        "Princess Victoria Adelaide Mary Louise",
+        "Princess Victoria Adelaide Mary Louise of the United Kingdom",
+        "Princess Victoria of the United Kingdom",
+        "Victoria Adelaide Mary Louisa",
+        "Victoria Adelaide Mary Louise",
+        "Victoria, Crown Princess of Prussia",
+        "Victoria, Empress Frederick of Germany",
+        "Victoria, Empress consort of Germany",
+        "Victoria, Empress of Germany",
+        "Victoria, German Empress",
+        "Victoria, Queen of Prussia and Empress of Germany" ;
+    :hasSex data:female .
+
+data:female a :Female .
 

@@ -2,82 +2,29 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Anna-Elisabeth_von_Pfuel a :Person,
+data:Adelaide_of_Lippe-Biesterfeld a :Person,
         :Woman ;
-    :hasBirthYear 1909 ;
-    :hasDeathYear 2005 .
+    :hasAncestor data:Modeste_Christiane_von_Unruh ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Ernest_II_of_Lippe-Biesterfeld ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Karoline_von_Wartensleben ;
+    :hasRelation data:Friedrich_Johann_of_Saxe-Meiningen .
 
-data:Armgard_von_Cramm a :Person,
-        :Woman ;
-    :hasFather data:Aschwin_of_Sierstorpff-Cramm ;
-    :hasMother data:Hedwig_von_Sierstorpff-Driburg .
+data:Ernest_II_of_Lippe-Biesterfeld a :Ancestor,
+        :Man .
 
-data:Claus_Netherlands a :Man,
+data:Friedrich_Johann_of_Saxe-Meiningen a :Man,
         :Person ;
-    :hasBirthYear 1926 ;
-    :hasFather data:Claus_Felix_von_Amsberg ;
-    :hasMother data:G%C3%B6sta_von_dem_Bussche-Haddenhausen .
+    :hasFather data:Georg_II_of_Saxe-Meiningen .
 
-data:Hedwig_von_Sierstorpff-Cramm a :Person,
-        :Woman ;
-    :hasBirthYear 1874 ;
-    :hasDeathYear 1907 ;
-    :hasFather data:Aschwin_of_Sierstorpff-Cramm ;
-    :hasMother data:Hedwig_von_Sierstorpff-Driburg .
+data:Georg_II_of_Saxe-Meiningen a :Ancestor,
+        :Man .
 
-data:Claus_Felix_von_Amsberg a :Man,
-        :Person ;
-    :hasBirthYear 1890 ;
-    :hasDeathYear 1953 ;
-    :hasFather data:Wilhelm_von_Amsberg ;
-    :hasMother data:Elise_von_Vieregge .
-
-data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg a :Man,
-        :Person .
-
-data:Elise_von_Vieregge a :Person,
+data:Karoline_von_Wartensleben a :Ancestor,
         :Woman .
 
-data:G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Person,
-        :Woman ;
-    :hasBirthYear 1902 ;
-    :hasBrother data:Julius_von_dem_Bussche-Haddenhausen ;
-    :hasDeathYear 1996 ;
-    :hasFather data:George_von_dem_Bussche-Haddenhausen ;
-    :hasMarriageYear 1924 ;
-    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .
-
-data:Gabriele_von_dem_Bussche-Ippenburg a :Person,
-        :Woman ;
-    :hasAncestor data:Clamor_von_dem_Bussche ;
-    :hasBirthYear 1877 ;
-    :hasDeathYear 1973 ;
-    :hasFather data:Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg .
-
-data:George_von_dem_Bussche-Haddenhausen a :Man,
-        :Person ;
-    :hasAncestor data:Clamor_von_dem_Bussche ;
-    :hasBirthYear 1869 ;
-    :hasDeathYear 1923 .
-
-data:Julius_von_dem_Bussche-Haddenhausen a :Man,
-        :Person ;
-    :hasBirthYear 1906 ;
-    :hasDeathYear 1977 .
-
-data:Wilhelm_von_Amsberg a :Man,
-        :Person .
-
-data:Aschwin_of_Sierstorpff-Cramm a :Man,
-        :Person ;
-    :hasBirthYear 1846 ;
-    :hasDeathYear 1909 .
-
-data:Clamor_von_dem_Bussche a :Man,
-        :Person .
-
-data:Hedwig_von_Sierstorpff-Driburg a :Person,
-        :Woman ;
-    :hasBirthYear 1848 ;
-    :hasDeathYear 1900 .
+data:Modeste_Christiane_von_Unruh a :Ancestor,
+        :Woman .
 

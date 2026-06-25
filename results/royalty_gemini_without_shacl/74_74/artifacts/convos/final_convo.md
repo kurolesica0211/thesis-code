@@ -80,7 +80,6 @@ George was born at 7:35 pm on 20 December 1902 at York Cottage on the Sandringha
 His father was the Prince of Wales (later King George V), the only surviving son of King Edward VII and Queen Alexandra.
 His mother was the Princess of Wales, later Queen Mary, the eldest child and only daughter of the Duke and Duchess of Teck.
 Edward, Albert, and Henry.
-He was baptised in the Private Chapel at Windsor Castle on 26 January 1903 by Francis Paget, the  Bishop of Oxford.
 His godparents were King Edward VII (his paternal grandfather); Prince Valdemar of Denmark (his paternal granduncle, represented by Prince Carl of Denmark, his paternal uncle and first cousin once removed); Prince Louis of Battenberg (husband of his father's cousin); Queen Alexandra (his paternal grandmother); Empress Dowager Maria Feodorovna (his paternal grandaunt, represented by Princess Victoria of the United Kingdom, his paternal aunt); and Princess Christian of Schleswig-Holstein (his paternal grandaunt).
 Education and career
 
@@ -90,7 +89,6 @@ He remained on active service in the Royal Navy until March 1929, serving on HMS
 He served on the latter as a lieutenant on the admiral's staff before transferring in 1928 to HMS Durban on the America and West Indies Station, based at the Royal Naval Dockyard in Bermuda.
 After leaving the navy, he briefly held posts at the Foreign Office and later the Home Office, becoming the first member of the royal family to work as a civil servant.
 From January to April 1931, George and his elder brother, the Prince of Wales, undertook an 18,000‐mile tour of South America.
-The princes travelled back via Paris and an Imperial Airways flight from Paris–Le Bourget Airport that landed specially in Windsor Great Park.
 On 23 June 1936, George was appointed a personal aide-de-camp to his eldest brother, the new king, Edward VIII.
 Following Edward's abdication, he was appointed a personal naval aide-de-camp to his elder brother, now George VI.
 On 12 March 1937, he was commissioned as a colonel in the British Army and as a group captain in the Royal Air Force (RAF).
@@ -137,7 +135,6 @@ His death in RAF service marked the first time in more than 450 years that a mem
 George's body was interred initially in the Royal Vault of St George's Chapel, Windsor; in 1968 he was reburied in the Royal Burial Ground, Frogmore, directly behind Queen Victoria's mausoleum.
 His elder son, six-year-old Edward, succeeded him as Duke of Kent.
 Marina, his wife, had given birth to their third child, Michael, only seven weeks before George's death.
-One RAF crew member survived the crash: Flight Sergeant Andrew Jack, the Sunderland's rear gunner.
 Jack's niece has claimed that he told his brother that George had been at the controls of the aircraft, that Jack had dragged him from the pilot's seat after the crash, and that there was an additional person on board whose identity has never been revealed.
 In popular culture
 
@@ -171,6 +168,8 @@ Around the time of his elder brother Prince Henry's twenty-first birthday, Princ
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -186,39 +185,9 @@ Around the time of his elder brother Prince Henry's twenty-first birthday, Princ
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -233,6 +202,23 @@ Around the time of his elder brother Prince Henry's twenty-first birthday, Princ
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -250,6 +236,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -317,29 +318,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -348,6 +341,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -360,6 +361,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -368,17 +371,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -406,6 +411,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -421,125 +510,183 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (aabe64b5-6019-474b-8825-cf667c18473c)
- Call ID: aabe64b5-6019-474b-8825-cf667c18473c
+  AssignClass (e777448c-f9a6-4e38-a01c-3933c72e0a57)
+ Call ID: e777448c-f9a6-4e38-a01c-3933c72e0a57
   Args:
-    source: George_Duke_of_Kent
+    source: Prince_George_Duke_of_Kent
     type: :Man
-  AssignClass (fbdb6432-27f8-46a8-8cb6-1e1f480dbe23)
- Call ID: fbdb6432-27f8-46a8-8cb6-1e1f480dbe23
+  AssignClass (67653634-2998-44d3-84e0-b298953da77b)
+ Call ID: 67653634-2998-44d3-84e0-b298953da77b
   Args:
+    source: Prince_George_Duke_of_Kent
+    type: :Person
+  AddLiteral (ad4061c7-ee5a-4153-b0da-dc6ee5608a52)
+ Call ID: ad4061c7-ee5a-4153-b0da-dc6ee5608a52
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1902
+    source: Prince_George_Duke_of_Kent
+  AddLiteral (52055786-72b4-4b13-b10b-bdbf46e52c3e)
+ Call ID: 52055786-72b4-4b13-b10b-bdbf46e52c3e
+  Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1942
+    source: Prince_George_Duke_of_Kent
+  AssignClass (e217fa43-42cb-4e07-b3c1-2f7edd7e692b)
+ Call ID: e217fa43-42cb-4e07-b3c1-2f7edd7e692b
+  Args:
+    source: King_George_V
     type: :Man
-    source: George_V
-  AssignClass (998ac072-ca80-43ed-a8ba-76775b8fefcf)
- Call ID: 998ac072-ca80-43ed-a8ba-76775b8fefcf
+  AssignClass (467a2c06-6b6f-40f3-bc24-54900d21275f)
+ Call ID: 467a2c06-6b6f-40f3-bc24-54900d21275f
+  Args:
+    source: King_George_V
+    type: :Person
+  AssignClass (932388f3-a399-45c9-9468-8f18f9b47f42)
+ Call ID: 932388f3-a399-45c9-9468-8f18f9b47f42
   Args:
     source: Queen_Mary
     type: :Woman
-  AssignClass (d775ddbc-6f9b-46c4-b949-b18519ed677f)
- Call ID: d775ddbc-6f9b-46c4-b949-b18519ed677f
+  AssignClass (b8bd5a75-8993-497c-9469-c85d5470873b)
+ Call ID: b8bd5a75-8993-497c-9469-c85d5470873b
   Args:
-    type: :Man
-    source: Edward_VIII
-  AssignClass (6db19eb9-1f7b-4049-b4fe-716a5dc5f616)
- Call ID: 6db19eb9-1f7b-4049-b4fe-716a5dc5f616
+    source: Queen_Mary
+    type: :Person
+  AddTriple (fd26eb0b-41e5-4a3b-bbe0-76ad46ff67af)
+ Call ID: fd26eb0b-41e5-4a3b-bbe0-76ad46ff67af
   Args:
-    type: :Man
-    source: George_VI
-  AssignClass (4fb4bc83-0046-48ec-ab43-e6419762e99d)
- Call ID: 4fb4bc83-0046-48ec-ab43-e6419762e99d
-  Args:
-    source: Princess_Marina
-    type: :Woman
-  AssignClass (69bb2af4-a402-4fec-830e-161573c161aa)
- Call ID: 69bb2af4-a402-4fec-830e-161573c161aa
-  Args:
-    type: :Man
-    source: Edward_Duke_of_Kent
-  AssignClass (fd05099b-c822-4a4f-8906-dc61b7ccb4fe)
- Call ID: fd05099b-c822-4a4f-8906-dc61b7ccb4fe
-  Args:
-    type: :Woman
-    source: Alexandra_of_Kent
-  AssignClass (c1274a83-7133-40e0-9dc6-f4f423a0345f)
- Call ID: c1274a83-7133-40e0-9dc6-f4f423a0345f
-  Args:
-    type: :Man
-    source: Michael_of_Kent
-  AddTriple (8a28651c-a241-4512-9949-da0e27c21894)
- Call ID: 8a28651c-a241-4512-9949-da0e27c21894
-  Args:
-    target: George_V
+    source: Prince_George_Duke_of_Kent
     relation: :hasFather
-    source: George_Duke_of_Kent
-  AddTriple (3a22b481-0769-4d9e-b54e-e552d8f0cf37)
- Call ID: 3a22b481-0769-4d9e-b54e-e552d8f0cf37
+    target: King_George_V
+  AddTriple (d763258d-ddb3-49cc-86a3-0c0098446d37)
+ Call ID: d763258d-ddb3-49cc-86a3-0c0098446d37
   Args:
-    source: George_Duke_of_Kent
-    relation: :hasMother
     target: Queen_Mary
-  AddTriple (82d8994c-72c1-4f93-ad8d-311c0ef531f3)
- Call ID: 82d8994c-72c1-4f93-ad8d-311c0ef531f3
+    relation: :hasMother
+    source: Prince_George_Duke_of_Kent
+  AssignClass (0308a93c-2675-435c-b1f6-4cf3c1440ad3)
+ Call ID: 0308a93c-2675-435c-b1f6-4cf3c1440ad3
   Args:
-    source: George_Duke_of_Kent
+    source: Edward_VIII
+    type: :Man
+  AssignClass (35df1679-3ac7-43cc-8c7d-467403578f9f)
+ Call ID: 35df1679-3ac7-43cc-8c7d-467403578f9f
+  Args:
+    source: Edward_VIII
+    type: :Person
+  AssignClass (07a23f02-895c-4185-8249-58378422913c)
+ Call ID: 07a23f02-895c-4185-8249-58378422913c
+  Args:
+    source: George_VI
+    type: :Man
+  AssignClass (3e79c537-d372-4910-9805-7254224a2537)
+ Call ID: 3e79c537-d372-4910-9805-7254224a2537
+  Args:
+    source: George_VI
+    type: :Person
+  AddTriple (7e39057b-c148-4f4e-b3d9-c4750c65913b)
+ Call ID: 7e39057b-c148-4f4e-b3d9-c4750c65913b
+  Args:
+    source: Prince_George_Duke_of_Kent
     target: Edward_VIII
     relation: :isBrotherOf
-  AddTriple (83bda037-f712-41b8-a285-7926b2f2299b)
- Call ID: 83bda037-f712-41b8-a285-7926b2f2299b
+  AddTriple (9aa272f1-1a09-442a-86de-ea6ed7cde936)
+ Call ID: 9aa272f1-1a09-442a-86de-ea6ed7cde936
   Args:
-    target: George_VI
     relation: :isBrotherOf
-    source: George_Duke_of_Kent
-  AddTriple (0301308c-6188-4d07-9972-eeb8824e92c3)
- Call ID: 0301308c-6188-4d07-9972-eeb8824e92c3
+    target: George_VI
+    source: Prince_George_Duke_of_Kent
+  AssignClass (9858a829-1750-4476-9ff9-d5ed2768c8a7)
+ Call ID: 9858a829-1750-4476-9ff9-d5ed2768c8a7
   Args:
-    relation: :hasFather
-    target: George_Duke_of_Kent
-    source: Edward_Duke_of_Kent
-  AddTriple (b2197909-4246-4f70-bb0b-6bad606f0023)
- Call ID: b2197909-4246-4f70-bb0b-6bad606f0023
+    source: Princess_Marina_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (e9c8efd1-d31d-4b66-9fc2-6f5cbbfc5a4a)
+ Call ID: e9c8efd1-d31d-4b66-9fc2-6f5cbbfc5a4a
   Args:
-    source: Alexandra_of_Kent
-    target: George_Duke_of_Kent
-    relation: :hasFather
-  AddTriple (82fece60-f82b-4edb-b6ee-fcaf95a00c93)
- Call ID: 82fece60-f82b-4edb-b6ee-fcaf95a00c93
+    source: Princess_Marina_of_Greece_and_Denmark
+    type: :Person
+  AddTriple (44d2b93d-9ba4-42de-9bb1-4fccffecb4be)
+ Call ID: 44d2b93d-9ba4-42de-9bb1-4fccffecb4be
   Args:
-    source: Michael_of_Kent
-    relation: :hasFather
-    target: George_Duke_of_Kent
-  AddTriple (b40f2faf-d982-48ba-aaa7-e0e04d8f03da)
- Call ID: b40f2faf-d982-48ba-aaa7-e0e04d8f03da
+    target: Princess_Marina_of_Greece_and_Denmark
+    relation: :hasRelation
+    source: Prince_George_Duke_of_Kent
+  AddLiteral (97a0f264-486d-4884-9233-91ca0c9e19c5)
+ Call ID: 97a0f264-486d-4884-9233-91ca0c9e19c5
   Args:
-    relation: :hasMother
-    target: Princess_Marina
-    source: Edward_Duke_of_Kent
-  AddTriple (1c99b1ae-15a8-4fc1-b28d-7c268c0896ed)
- Call ID: 1c99b1ae-15a8-4fc1-b28d-7c268c0896ed
-  Args:
-    target: Princess_Marina
-    relation: :hasMother
-    source: Alexandra_of_Kent
-  AddTriple (94c8f980-eb5e-4ef5-b321-a7ea60f05fbf)
- Call ID: 94c8f980-eb5e-4ef5-b321-a7ea60f05fbf
-  Args:
-    source: Michael_of_Kent
-    relation: :hasMother
-    target: Princess_Marina
-  AddLiteral (6cde0409-4b2e-443e-86a3-fa8a458029a0)
- Call ID: 6cde0409-4b2e-443e-86a3-fa8a458029a0
-  Args:
-    relation: :hasBirthYear
     literal_type: xsd:integer
-    literal_value: 1902
-    source: George_Duke_of_Kent
-  AddLiteral (ba81387f-969c-4548-a225-9be6fa8fb891)
- Call ID: ba81387f-969c-4548-a225-9be6fa8fb891
+    relation: :hasMarriageYear
+    literal_value: 1934
+    source: Prince_George_Duke_of_Kent
+  AssignClass (0ff7fcd0-46e0-4bda-b49b-6bbcdda0806f)
+ Call ID: 0ff7fcd0-46e0-4bda-b49b-6bbcdda0806f
   Args:
-    source: George_Duke_of_Kent
-    relation: :hasDeathYear
-    literal_value: 1942
-    literal_type: xsd:integer
-  Finish (2820b750-e868-4670-a9f5-74b8643051d8)
- Call ID: 2820b750-e868-4670-a9f5-74b8643051d8
+    source: Edward_child
+    type: :Man
+  AssignClass (b3944419-7b10-4a87-beb5-0d9504232ea7)
+ Call ID: b3944419-7b10-4a87-beb5-0d9504232ea7
+  Args:
+    source: Edward_child
+    type: :Person
+  AssignClass (730efd44-501d-4871-8103-c9eea623de49)
+ Call ID: 730efd44-501d-4871-8103-c9eea623de49
+  Args:
+    source: Alexandra_child
+    type: :Woman
+  AssignClass (ac7ce4f6-b11d-462f-bf2c-f721ad91996f)
+ Call ID: ac7ce4f6-b11d-462f-bf2c-f721ad91996f
+  Args:
+    source: Alexandra_child
+    type: :Person
+  AssignClass (46b579a0-c955-42a9-923f-40d720b08f14)
+ Call ID: 46b579a0-c955-42a9-923f-40d720b08f14
+  Args:
+    source: Michael_child
+    type: :Man
+  AssignClass (1bcd198d-b05e-43c7-9455-869363b6d8ae)
+ Call ID: 1bcd198d-b05e-43c7-9455-869363b6d8ae
+  Args:
+    source: Michael_child
+    type: :Person
+  AddTriple (3644e7f3-a087-418f-898b-3040418bebc8)
+ Call ID: 3644e7f3-a087-418f-898b-3040418bebc8
+  Args:
+    source: Prince_George_Duke_of_Kent
+    target: Edward_child
+    relation: :hasChild
+  AddTriple (b708fa1b-bf8c-4525-8d30-ffb40897c327)
+ Call ID: b708fa1b-bf8c-4525-8d30-ffb40897c327
+  Args:
+    source: Prince_George_Duke_of_Kent
+    target: Alexandra_child
+    relation: :hasChild
+  AddTriple (d1818e06-e69a-4a94-ad66-d38d84c38539)
+ Call ID: d1818e06-e69a-4a94-ad66-d38d84c38539
+  Args:
+    source: Prince_George_Duke_of_Kent
+    target: Michael_child
+    relation: :hasChild
+  AddTriple (2c7785b8-b059-4167-aa05-ea3f04090889)
+ Call ID: 2c7785b8-b059-4167-aa05-ea3f04090889
+  Args:
+    relation: :hasMother
+    target: Princess_Marina_of_Greece_and_Denmark
+    source: Edward_child
+  AddTriple (b67b08db-c10f-49cd-876f-5af4d8c8e818)
+ Call ID: b67b08db-c10f-49cd-876f-5af4d8c8e818
+  Args:
+    source: Alexandra_child
+    target: Princess_Marina_of_Greece_and_Denmark
+    relation: :hasMother
+  AddTriple (993cbc3d-ab6c-455f-a044-98fff2f38d3f)
+ Call ID: 993cbc3d-ab6c-455f-a044-98fff2f38d3f
+  Args:
+    target: Princess_Marina_of_Greece_and_Denmark
+    relation: :hasMother
+    source: Michael_child
+  Finish (58772819-0065-439c-b4fe-0f86994ac8b1)
+ Call ID: 58772819-0065-439c-b4fe-0f86994ac8b1
   Args:

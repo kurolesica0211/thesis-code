@@ -1,0 +1,135 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves a :Person,
+        :Woman ;
+    :hasRelation data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Irakli_Bagration-Mukhrani,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam ;
+    :hasSister data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves ;
+    :isBloodrelationOf data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves ;
+    :isSiblingOf data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves ;
+    :isSisterOf data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves .
+
+data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :hasRelation data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Irakli_Bagration-Mukhrani,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam ;
+    :hasSister data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon ;
+    :hasSon data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isAncestorOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isAuntOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isBloodrelationOf data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon ;
+    :isMotherOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isParentOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isSiblingOf data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon ;
+    :isSisterOf data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon .
+
+data:Prince_Irakli_Bagration-Mukhrani a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Irakli_Bagration-Mukhrani ;
+    :hasChild data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :hasRelation data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Irakli_Bagration-Mukhrani,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam ;
+    :hasSon data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isAncestorOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isBloodrelationOf data:Prince_Irakli_Bagration-Mukhrani ;
+    :isBrotherOf data:Prince_Irakli_Bagration-Mukhrani ;
+    :isFatherOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isParentOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isSiblingOf data:Prince_Irakli_Bagration-Mukhrani ;
+    :isUncleOf data:Prince_Bagrat_de_Bagration_y_de_Baviera .
+
+data:Prince_Jorge_de_Bagration a :Man,
+        :Person ;
+    :hasBrother data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Jorge_de_Bagration ;
+    :hasRelation data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Irakli_Bagration-Mukhrani,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam ;
+    :hasSister data:Princess_Mariam ;
+    :isBloodrelationOf data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam ;
+    :isBrotherOf data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam ;
+    :isSiblingOf data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam .
+
+data:Princess_Mariam a :Person,
+        :Woman ;
+    :hasBrother data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Jorge_de_Bagration ;
+    :hasRelation data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Irakli_Bagration-Mukhrani,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam ;
+    :hasSister data:Princess_Mariam ;
+    :isBloodrelationOf data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam ;
+    :isSiblingOf data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam ;
+    :isSisterOf data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam .
+
+data:Prince_Bagrat_de_Bagration_y_de_Baviera a :Man,
+        :Person ;
+    :alsoKnownAs "Prince Bagrat Bagration-Moukhransky"^^xsd:string,
+        "Prince Bagrat Bagrationi-Mukhraneli"^^xsd:string ;
+    :hasAncestor data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Irakli_Bagration-Mukhrani ;
+    :hasBirthYear 1949 ;
+    :hasBrother data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Jorge_de_Bagration ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Prince_Irakli_Bagration-Mukhrani ;
+    :hasMarriageYear 1976 ;
+    :hasMother data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon ;
+    :hasParent data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Irakli_Bagration-Mukhrani ;
+    :hasRelation data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Irakli_Bagration-Mukhrani,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam ;
+    :hasSister data:Princess_Mariam ;
+    :isBloodrelationOf data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam ;
+    :isBrotherOf data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam ;
+    :isChildOf data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Irakli_Bagration-Mukhrani ;
+    :isSiblingOf data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Jorge_de_Bagration,
+        data:Princess_Mariam ;
+    :isSonOf data:Infanta_Dona_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Irakli_Bagration-Mukhrani .
+

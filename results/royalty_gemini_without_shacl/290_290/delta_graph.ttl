@@ -2,43 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:George_Mihailovich a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBrother data:Nicholas_Mikhailovich .
-
-data:Herman_Jud a :Man,
-        :Person .
-
-data:Maria_Georgievna a :Ancestor,
-        :Person,
+data:Camilla_Parker_Bowles a :Person,
         :Woman .
 
-data:Nancy_Helen_Marie_Leeds a :Person,
-        :Woman ;
-    :hasFather data:William_Bateman_Leeds_Jr .
+data:Harry_Duke_of_Sussex a :Man,
+        :Person ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Lady_Diana_Spencer .
 
-data:Nicholas_Mikhailovich a :Man,
+data:William_Prince_of_Wales a :Man,
+        :Person ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Lady_Diana_Spencer .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :hasFather data:George_VI .
+
+data:George_VI a :Man,
         :Person .
 
-data:Nina_Georgievna a :Person,
-        :Woman ;
-    :hasSister data:Xenia_Georgievna .
-
-data:Xenia_Georgievna a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1903 ;
-    :hasDaughter data:Nancy_Helen_Marie_Leeds ;
-    :hasDeathYear 1965 ;
-    :hasFather data:George_Mihailovich ;
-    :hasMarriageYear 1921,
-        1946 ;
-    :hasMother data:Maria_Georgievna ;
-    :hasRelation data:Herman_Jud,
-        data:William_Bateman_Leeds_Jr ;
-    :hasSister data:Nina_Georgievna .
-
-data:William_Bateman_Leeds_Jr a :Man,
+data:Philip_Duke_of_Edinburgh a :Man,
         :Person .
+
+data:Charles_III a :Man,
+        :Person ;
+    :hasBirthYear 1948 ;
+    :hasFather data:Philip_Duke_of_Edinburgh ;
+    :hasMarriageYear 1981,
+        2005 ;
+    :hasMother data:Elizabeth_II .
+
+data:Lady_Diana_Spencer a :Person,
+        :Woman .
 

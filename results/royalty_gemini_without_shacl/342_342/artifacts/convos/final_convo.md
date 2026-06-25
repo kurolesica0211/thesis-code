@@ -69,30 +69,98 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Françoise d'Orléans (Françoise Isabelle Louise Marie; 25 December 1902 - 25 February 1953) was born an Orléans Princess of France and became a Princess of Greece and Denmark by marriage.
-She was thus a member of the Greek royal family and a descendant of the "Citizen-King" Louis Philippe I.
+Wilhelm, German Crown Prince, Crown Prince of Prussia (Friedrich Wilhelm Victor August Ernst; 6 May 1882 – 20 July 1951), was the eldest child of the last German emperor, Wilhelm II, and his consort Augusta Victoria of Schleswig-Holstein.
+As Emperor Wilhelm's heir, he was the last German Crown Prince and Crown Prince of Prussia, until the abolition of the monarchy.
+Wilhelm became crown prince at the age of six in 1888, when his grandfather Frederick III died and his father became emperor.
+He was crown prince for 30 years until his father's abdication and the fall of the empire on 9 November 1918.
+During World War I, he commanded the 5th Army from 1914 to 1916 and was commander of the Army Group German Crown Prince for the remainder of the war.
+After his plans to become President had been blocked by his father, Wilhelm supported Adolf Hitler's rise to power, but when Wilhelm realised that Hitler had no intention of restoring the monarchy, their relationship cooled.
+Wilhelm became head of the House of Hohenzollern on 4 June 1941 following the death of his father and held the position until his own death on 20 July 1951.
+Early life
+
+Wilhelm was born on 6 May 1882 as the eldest son of the then Prince Wilhelm of Prussia, and his first wife, Princess Augusta Victoria of Schleswig-Holstein.
+When he was born, his great-grandfather Wilhelm I was the German Emperor and his grandfather Crown Prince Frederick was the heir apparent, making Wilhelm third in line to the throne.
+His birth sparked an argument between his parents and his grandmother Crown Princess Victoria.
+Before Wilhelm was born, his grandmother had expected to be asked to help find a nurse, but since her son did everything he could to snub her, the future Wilhelm II asked his aunt Princess Helena to help instead.
+His mother was hurt and his grandmother, Queen Victoria, who was the younger Wilhelm's great-grandmother, was furious.
+Prince Wilhelm would have five younger brothers – Prince Eitel Friedrich, Prince Adalbert, Prince August Wilhelm, Prince Oskar and Prince Joachim – and one younger sister: Princess Viktoria Luise.
+In 1888, the Year of the Three Emperors when his great-grandfather and grandfather both died, his father became German Emperor, and six-year-old Wilhelm became the heir apparent to the German and Prussian thrones with the title of crown prince.
+He spent his school days with his brothers at the Prinzenhaus in Plön in his mother's ancestral Schleswig-Holstein.
+Wilhelm was a supporter of association football, then a relatively new sport in the country, donating a cup to the German Football Association in 1908 and thereby initiating the Kronprinzenpokal (now Länderpokal), the oldest cup competition in German football.
+The German club BFC Preussen was also originally named BFC Friedrich Wilhelm in his honour.
+In 1914, the Kaiser ordered the construction of Schloss Cecilienhof in Potsdam for Prince Wilhelm and his family which angered him.
+Completed in 1917, it became the main residence for the Crown Prince for a time.
+World War I
+
+Wilhelm had been active in pushing German expansion, and sought a leading role on the outbreak of war.
+Despite being only thirty-two and having never commanded a unit larger than a regiment, the German crown prince was named commander of the 5th Army in August 1914, shortly after the outbreak of World War I.
+However, under the well-established Prussian/German General Staff model then in use, inexperienced nobles who were afforded commands of large army formations were always provided with (and expected to defer to the advice of) experienced chiefs of staff to assist them in their duties.
+As emperor, Wilhelm's father instructed the crown prince to defer to the advice of his experienced chief of staff Konstantin Schmidt von Knobelsdorf.
+In October 1914 Wilhelm gave his first interview to a foreign correspondent and the first statement to the press made by a German noble since the outbreak of war.
+He denied promoting military solutions to diplomatic problems, and said this in English:
 
 
-Life
+Undoubtedly this is the most stupid, senseless and unnecessary war of modern times.
+It is a war not wanted by Germany, I can assure you, but it was forced on us, and the fact that we were so effectually prepared to defend ourselves is now being used as an argument to convince the world that we desired conflict.
 
-Françoise d'Orléans was born in Paris, the second daughter of Jean d'Orléans, duc de Guise (an Orléanist pretender to the throne of France under the name Jean III) and his wife, the French Princess Isabelle of Orléans.
-Françoise's brother, Prince Henri, Count of Paris, succeeded their father as the Orleanist pretender, under the name Henri VI.
-In Palermo on 11 February 1929, she married Prince Christopher of Greece and Denmark (1888–1940).
-This was Christopher's second marriage - he was the youngest son of King George I of Greece (1845–1913) and his wife, Grand Duchess Olga Constantinovna of Russia (1851–1926).
-Through his father, he was thus a grandson of King Christian IX of Denmark (1818–1906), nicknamed "the father-in-law of Europe" due to his six children all marrying into other royal families.
-They had only one child, the writer Prince Michael of Greece and Denmark (1939–2024), whose marriage to the Greek artist Marina Karella (born 1940) did not conform to the laws of the royal house and thus deprived him of all right of succession to the Greek throne.
-She is grandmother of Princess Alexandra of Greece, an artist, art collector, arts patron, and child life specialist.
-Her other grand-daughter is Princess Olga of Greece, who married Prince Aimone of Savoy-Aosta, one of two claimants to be Head of the House of Savoy.
-The civil war in Greece was preventing her from entering, and the British government refused to grant her asylum.
-Françoise and her son Michael went to Paris, where they lived in the home of Princess Isabella and her second husband, Prince Pierre Murat.
-Françoise did not want to see anyone in their residence and rarely left her rooms.
-She is buried alongside her husband in Tatoi Royal Cemetery, Greece.
+— Crown Prince Wilhelm, Wiegand
+
+From August 1915 onwards, Wilhelm was given the additional role as commander of the Army Group German Crown Prince.
+However, even these sorts of duties were essentially ceremonial with the actual planning of operations involving units under the Crown Prince's formal command being carried out by staff officers.
+Wilhelm relinquished command of the 5th Army in November of that year, but remained commander of the Army Group German Crown Prince for the rest of the war.
+1918–34
+
+After the outbreak of the German Revolution in 1918, both Emperor Wilhelm II and the crown prince signed the document of abdication.
+On 13 November, the former crown prince fled Germany, crossed into the Netherlands at Oudvroenhoven and was later interned on the island of Wieringen (now part of the mainland), near Den Helder.
+In the autumn of 1921, Gustav Stresemann visited Wilhelm, and the former crown prince voiced an interest in returning to Germany, even as a private citizen.
+After Stresemann became chancellor in August 1923, Wilhelm was allowed to return after giving assurances that he would not engage in politics.
+A settlement between the state and the family made Cecilienhof property of the state but granted a right of residence to Wilhelm and his wife Cecilie.
+9–12 
+
+
+Wilhelm broke the promise he had made to Stresemann to stay out of politics.
+Adolf Hitler visited Wilhelm at Cecilienhof three times, in 1926, in 1933 (on the "Day of Potsdam") and in 1935.
+Wilhelm joined Der Stahlhelm, which merged in 1931 into the Harzburg Front, a right-wing organisation of those opposed to the democratic republic.
+: 13 
+
+
+The former crown prince was reportedly interested in the idea of running for President as the right-wing candidate against Paul von Hindenburg in 1932, until his father (who privately supported Hindenburg) forbade him from acting on the idea.
+After this, Wilhelm supported Hitler's rise to power.
+Schleicher, the former Chancellor, in the Night of the Long Knives, Wilhelm withdrew from all political activities.
+When Wilhelm realised that Hitler had no intention of restoring the monarchy, their relationship cooled.
+Upon his father's death in 1941, Wilhelm succeeded him as head of the House of Hohenzollern, the former German imperial dynasty.
+He was approached by those in the military and the diplomatic service who wanted to replace Hitler, but Wilhelm turned them down.
+After the ill-fated assassination attempt on 20 July 1944, Hitler nevertheless had Wilhelm placed under supervision by the Gestapo and had his home at Cecilienhof watched.:
+11–15 
+
+
+In January 1945, Wilhelm left Potsdam for Oberstdorf for a treatment of his gall and liver problems.
+At the end of World War II in Europe, Wilhelm's home, Cecilienhof, was seized by the Soviets.:
+16 
+
+
+At the end of the war, Wilhelm was captured by French Moroccan troops in Baad, Austria, and was interned as a (World War I) war criminal.
+Wilhelm and his wife are buried at Hohenzollern Castle.
+Family and children
+
+Wilhelm married his third cousin, Duchess Cecilie of Mecklenburg-Schwerin (20 September 1886 – 6 May 1954) in Berlin on 6 June 1905.
+After their marriage, the couple lived at the Crown Prince's Palace in Berlin during the winter and at the Marmorpalais in Potsdam, later at Cecilienhof in Potsdam.
+Cecilie was the daughter of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin (1851–1897) and his wife, Grand Duchess Anastasia Mikhailovna of Russia (1860–1922).
+Their eldest son, Prince Wilhelm of Prussia, was killed fighting for the German Army in France in 1940.
+Their children were:
+
+
+In literature and popular culture
+
+Wilhelm's reputation as a military commander was satirised by Neil Munro in his Erchie MacPherson story, "Bad News", first published in the Glasgow Evening News on 8 January 1917.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -108,39 +176,9 @@ She is buried alongside her husband in Tatoi Royal Cemetery, Greece.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -155,6 +193,23 @@ She is buried alongside her husband in Tatoi Royal Cemetery, Greece.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -172,6 +227,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -239,29 +309,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -270,6 +332,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -282,6 +352,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -290,17 +362,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -328,6 +402,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -343,192 +501,235 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9be30181-7c7b-424e-aedc-3f0835b0a9cb)
- Call ID: 9be30181-7c7b-424e-aedc-3f0835b0a9cb
-  Args:
-    source: Francoise_dOrleans
-    type: :Woman
-  AssignClass (953bd211-25cd-4781-a3b7-22670590b16c)
- Call ID: 953bd211-25cd-4781-a3b7-22670590b16c
+  AssignClass (597023d0-a0f8-4337-ba39-d39c3907ee4a)
+ Call ID: 597023d0-a0f8-4337-ba39-d39c3907ee4a
   Args:
     type: :Man
-    source: Jean_dOrleans
-  AssignClass (fa70f44b-2c3b-46d1-91f7-02b19cdf5496)
- Call ID: fa70f44b-2c3b-46d1-91f7-02b19cdf5496
+    source: :Wilhelm_Crown_Prince
+  AssignClass (ff25ac61-c237-4106-8b5c-50a43c01e3fd)
+ Call ID: ff25ac61-c237-4106-8b5c-50a43c01e3fd
   Args:
-    source: Isabelle_dOrleans
-    type: :Woman
-  AssignClass (edea256b-2151-487f-bbc2-90f3600c4d0b)
- Call ID: edea256b-2151-487f-bbc2-90f3600c4d0b
+    source: :Wilhelm_Crown_Prince
+    type: :Person
+  AddLiteral (e7c1b2e5-b1d5-4f39-bf15-6ff66e2a6507)
+ Call ID: e7c1b2e5-b1d5-4f39-bf15-6ff66e2a6507
   Args:
-    type: :Man
-    source: Henri_dOrleans
-  AssignClass (34c9753e-78c2-40ca-a967-fd9179493651)
- Call ID: 34c9753e-78c2-40ca-a967-fd9179493651
-  Args:
-    source: Christopher_of_Greece_and_Denmark
-    type: :Man
-  AssignClass (1de4c867-a1e2-4620-ae4e-767005fedc79)
- Call ID: 1de4c867-a1e2-4620-ae4e-767005fedc79
-  Args:
-    type: :Man
-    source: George_I_of_Greece
-  AssignClass (a7150677-39c6-4b40-8086-b3bd73123766)
- Call ID: a7150677-39c6-4b40-8086-b3bd73123766
-  Args:
-    source: Olga_Constantinovna_of_Russia
-    type: :Woman
-  AssignClass (cd801bdb-a182-49dc-8183-806ca902c904)
- Call ID: cd801bdb-a182-49dc-8183-806ca902c904
-  Args:
-    source: Christian_IX_of_Denmark
-    type: :Man
-  AssignClass (4b6b44f1-80b3-43b4-9ddd-9be628d39b49)
- Call ID: 4b6b44f1-80b3-43b4-9ddd-9be628d39b49
-  Args:
-    type: :Man
-    source: Michael_of_Greece_and_Denmark
-  AssignClass (77fde275-4118-41ce-9d83-13413edbd107)
- Call ID: 77fde275-4118-41ce-9d83-13413edbd107
-  Args:
-    source: Marina_Karella
-    type: :Woman
-  AssignClass (73fd89e9-fc43-4c56-99d1-f7d14be1ccb9)
- Call ID: 73fd89e9-fc43-4c56-99d1-f7d14be1ccb9
-  Args:
-    source: Alexandra_of_Greece
-    type: :Woman
-  AssignClass (854768a5-5d8f-4fa9-a7b8-1f90c7459f15)
- Call ID: 854768a5-5d8f-4fa9-a7b8-1f90c7459f15
-  Args:
-    type: :Woman
-    source: Olga_of_Greece
-  AssignClass (d108ff34-91e7-442b-be70-41b4b2472d61)
- Call ID: d108ff34-91e7-442b-be70-41b4b2472d61
-  Args:
-    source: Aimone_of_Savoy_Aosta
-    type: :Man
-  AssignClass (7185ecb3-b445-445c-ac81-7e45ea8340bd)
- Call ID: 7185ecb3-b445-445c-ac81-7e45ea8340bd
-  Args:
-    source: Isabella_Murat
-    type: :Woman
-  AssignClass (5404c050-83fe-43da-a6a3-7abcf4b09a72)
- Call ID: 5404c050-83fe-43da-a6a3-7abcf4b09a72
-  Args:
-    source: Pierre_Murat
-    type: :Man
-  AddLiteral (c2416abb-9238-4f14-aa28-2385982fa63b)
- Call ID: c2416abb-9238-4f14-aa28-2385982fa63b
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1902
     relation: :hasBirthYear
-    source: Francoise_dOrleans
-  AddLiteral (f7dece68-e2c2-41c3-a186-7285cdd259b7)
- Call ID: f7dece68-e2c2-41c3-a186-7285cdd259b7
-  Args:
+    literal_value: 1882
+    source: :Wilhelm_Crown_Prince
     literal_type: xsd:integer
-    literal_value: 1953
+  AddLiteral (fbd16dae-4b18-4744-913b-5e011c086958)
+ Call ID: fbd16dae-4b18-4744-913b-5e011c086958
+  Args:
     relation: :hasDeathYear
-    source: Francoise_dOrleans
-  AddTriple (383f9d95-4b7f-4599-9c63-47bc4fb3051e)
- Call ID: 383f9d95-4b7f-4599-9c63-47bc4fb3051e
-  Args:
-    source: Francoise_dOrleans
-    target: Jean_dOrleans
-    relation: :hasFather
-  AddTriple (7d0ea430-984f-4fcc-be6a-1e6f688e13e0)
- Call ID: 7d0ea430-984f-4fcc-be6a-1e6f688e13e0
-  Args:
-    relation: :hasMother
-    target: Isabelle_dOrleans
-    source: Francoise_dOrleans
-  AddTriple (99af18c3-2171-46cd-906c-4aece2685a63)
- Call ID: 99af18c3-2171-46cd-906c-4aece2685a63
-  Args:
-    target: Henri_dOrleans
-    relation: :hasBrother
-    source: Francoise_dOrleans
-  AddTriple (17fd0672-8350-4db0-920a-9f939add3b30)
- Call ID: 17fd0672-8350-4db0-920a-9f939add3b30
-  Args:
-    source: Jean_dOrleans
-    relation: :isFatherOf
-    target: Henri_dOrleans
-  AddLiteral (aaf87797-ac4c-4a4b-bcc7-f90b27fe6c7d)
- Call ID: aaf87797-ac4c-4a4b-bcc7-f90b27fe6c7d
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1929
     literal_type: xsd:integer
-    source: Francoise_dOrleans
-  AddTriple (7f219048-f868-457f-b144-67a1d2d15ce6)
- Call ID: 7f219048-f868-457f-b144-67a1d2d15ce6
+    source: :Wilhelm_Crown_Prince
+    literal_value: 1951
+  AssignClass (0ce7cfb8-50bd-4f32-8c9a-87c3c87f30c4)
+ Call ID: 0ce7cfb8-50bd-4f32-8c9a-87c3c87f30c4
   Args:
-    relation: :hasRelation
-    target: Christopher_of_Greece_and_Denmark
-    source: Francoise_dOrleans
-  AddTriple (e402b706-af73-4eb7-91c5-ae66464f78ae)
- Call ID: e402b706-af73-4eb7-91c5-ae66464f78ae
+    type: :Man
+    source: :Wilhelm_II
+  AssignClass (5f07585a-4f98-47bc-84f9-dd3340764f42)
+ Call ID: 5f07585a-4f98-47bc-84f9-dd3340764f42
   Args:
-    source: Christopher_of_Greece_and_Denmark
-    target: George_I_of_Greece
+    source: :Wilhelm_II
+    type: :Person
+  AssignClass (af57b338-5bf8-4317-b7c7-6e776030084a)
+ Call ID: af57b338-5bf8-4317-b7c7-6e776030084a
+  Args:
+    type: :Woman
+    source: :Augusta_Victoria
+  AssignClass (a437829d-0781-45cf-bfae-e7a2f2274811)
+ Call ID: a437829d-0781-45cf-bfae-e7a2f2274811
+  Args:
+    source: :Augusta_Victoria
+    type: :Person
+  AddTriple (55464764-53fe-4dd1-9fbc-a4e35709a897)
+ Call ID: 55464764-53fe-4dd1-9fbc-a4e35709a897
+  Args:
     relation: :hasFather
-  AddTriple (4f7318a9-cba0-4a31-83d9-ce81284d3f3a)
- Call ID: 4f7318a9-cba0-4a31-83d9-ce81284d3f3a
+    source: :Wilhelm_Crown_Prince
+    target: :Wilhelm_II
+  AddTriple (1f96a258-70f0-48e7-8d01-321476c9761d)
+ Call ID: 1f96a258-70f0-48e7-8d01-321476c9761d
   Args:
-    source: Christopher_of_Greece_and_Denmark
+    target: :Augusta_Victoria
+    source: :Wilhelm_Crown_Prince
     relation: :hasMother
-    target: Olga_Constantinovna_of_Russia
-  AddTriple (2e15e7e2-216e-493d-a525-bff2248907a1)
- Call ID: 2e15e7e2-216e-493d-a525-bff2248907a1
+  AssignClass (f52e7737-b48b-4649-94eb-833ec07ca6e2)
+ Call ID: f52e7737-b48b-4649-94eb-833ec07ca6e2
   Args:
-    source: George_I_of_Greece
-    target: Christian_IX_of_Denmark
-    relation: :hasFather
-  AddTriple (b535fd72-4e65-41eb-8045-dd47baaf0ca1)
- Call ID: b535fd72-4e65-41eb-8045-dd47baaf0ca1
+    type: :Man
+    source: :Eitel_Friedrich
+  AssignClass (28366fe0-77a0-4c69-9b4d-2ca303169900)
+ Call ID: 28366fe0-77a0-4c69-9b4d-2ca303169900
   Args:
-    relation: :hasSon
-    target: Michael_of_Greece_and_Denmark
-    source: Francoise_dOrleans
-  AddTriple (d9785b3f-5e59-492c-a28c-f2e2e11f0dfb)
- Call ID: d9785b3f-5e59-492c-a28c-f2e2e11f0dfb
+    source: :Eitel_Friedrich
+    type: :Person
+  AddTriple (8e7cf525-d8c2-48e3-ad3a-d6ac6263d30e)
+ Call ID: 8e7cf525-d8c2-48e3-ad3a-d6ac6263d30e
   Args:
-    target: Christopher_of_Greece_and_Denmark
-    relation: :hasFather
-    source: Michael_of_Greece_and_Denmark
-  AddTriple (3077133c-2c99-4f40-acba-55d19b3304d5)
- Call ID: 3077133c-2c99-4f40-acba-55d19b3304d5
+    target: :Eitel_Friedrich
+    relation: :hasBrother
+    source: :Wilhelm_Crown_Prince
+  AssignClass (19b337da-7c9b-47e8-8b54-a618c3d48177)
+ Call ID: 19b337da-7c9b-47e8-8b54-a618c3d48177
   Args:
-    source: Michael_of_Greece_and_Denmark
-    target: Francoise_dOrleans
-    relation: :hasMother
-  AddTriple (85d572d9-6b79-4f40-b0d7-c60b203b9f74)
- Call ID: 85d572d9-6b79-4f40-b0d7-c60b203b9f74
+    type: :Man
+    source: :Adalbert
+  AssignClass (27c83519-3673-4102-a7c9-a8561821572e)
+ Call ID: 27c83519-3673-4102-a7c9-a8561821572e
   Args:
+    source: :Adalbert
+    type: :Person
+  AddTriple (77d29ea7-7f52-469c-8072-a22402b0dfbf)
+ Call ID: 77d29ea7-7f52-469c-8072-a22402b0dfbf
+  Args:
+    target: :Adalbert
+    relation: :hasBrother
+    source: :Wilhelm_Crown_Prince
+  AssignClass (78a1e97f-8057-4c8d-90bf-1e88142235ed)
+ Call ID: 78a1e97f-8057-4c8d-90bf-1e88142235ed
+  Args:
+    type: :Man
+    source: :August_Wilhelm
+  AssignClass (7a1612f5-5d62-49ab-9de6-1581cbd2d579)
+ Call ID: 7a1612f5-5d62-49ab-9de6-1581cbd2d579
+  Args:
+    type: :Person
+    source: :August_Wilhelm
+  AddTriple (ed36600e-59d2-4d78-a364-5647e82895c8)
+ Call ID: ed36600e-59d2-4d78-a364-5647e82895c8
+  Args:
+    target: :August_Wilhelm
+    relation: :hasBrother
+    source: :Wilhelm_Crown_Prince
+  AssignClass (3f4c4a46-4830-46be-8ebb-033c786a52bd)
+ Call ID: 3f4c4a46-4830-46be-8ebb-033c786a52bd
+  Args:
+    source: :Oskar
+    type: :Man
+  AssignClass (2c784322-5678-4601-b50e-54c254054d35)
+ Call ID: 2c784322-5678-4601-b50e-54c254054d35
+  Args:
+    type: :Person
+    source: :Oskar
+  AddTriple (ded5c925-5f91-4a5b-9fad-f9809dd5d46d)
+ Call ID: ded5c925-5f91-4a5b-9fad-f9809dd5d46d
+  Args:
+    source: :Wilhelm_Crown_Prince
+    relation: :hasBrother
+    target: :Oskar
+  AssignClass (a68cad54-ab83-4bfd-b4c6-96842f8677b8)
+ Call ID: a68cad54-ab83-4bfd-b4c6-96842f8677b8
+  Args:
+    source: :Joachim
+    type: :Man
+  AssignClass (7e528e7e-899e-4c12-97dd-74699e7c9232)
+ Call ID: 7e528e7e-899e-4c12-97dd-74699e7c9232
+  Args:
+    source: :Joachim
+    type: :Person
+  AddTriple (ab339d56-3f28-418f-9b2c-cb6f20f079b2)
+ Call ID: ab339d56-3f28-418f-9b2c-cb6f20f079b2
+  Args:
+    relation: :hasBrother
+    source: :Wilhelm_Crown_Prince
+    target: :Joachim
+  AssignClass (6cd44ef9-90cb-4c13-b852-06a69d8c4786)
+ Call ID: 6cd44ef9-90cb-4c13-b852-06a69d8c4786
+  Args:
+    source: :Viktoria_Luise
+    type: :Woman
+  AssignClass (69aee11e-d4fe-49aa-91bb-e3a54e97e551)
+ Call ID: 69aee11e-d4fe-49aa-91bb-e3a54e97e551
+  Args:
+    source: :Viktoria_Luise
+    type: :Person
+  AddTriple (58cb992d-f96b-4585-bf10-97b2923e9cab)
+ Call ID: 58cb992d-f96b-4585-bf10-97b2923e9cab
+  Args:
+    source: :Wilhelm_Crown_Prince
+    relation: :hasSister
+    target: :Viktoria_Luise
+  AssignClass (fb76c17e-73dd-4511-919d-4fe33702ea68)
+ Call ID: fb76c17e-73dd-4511-919d-4fe33702ea68
+  Args:
+    type: :Woman
+    source: :Cecilie_of_Mecklenburg-Schwerin
+  AssignClass (8bf9e2c4-bc18-4d21-8289-36e0e8b6c48d)
+ Call ID: 8bf9e2c4-bc18-4d21-8289-36e0e8b6c48d
+  Args:
+    type: :Person
+    source: :Cecilie_of_Mecklenburg-Schwerin
+  AddLiteral (31013a5f-dbce-40f7-bf09-8efd3408cbf2)
+ Call ID: 31013a5f-dbce-40f7-bf09-8efd3408cbf2
+  Args:
+    source: :Wilhelm_Crown_Prince
+    literal_type: xsd:integer
+    literal_value: 1905
+    relation: :hasMarriageYear
+  AddTriple (c7f14535-f991-4e10-b2c3-f88d83f140c5)
+ Call ID: c7f14535-f991-4e10-b2c3-f88d83f140c5
+  Args:
+    source: :Wilhelm_Crown_Prince
     relation: :hasRelation
-    target: Marina_Karella
-    source: Michael_of_Greece_and_Denmark
-  AddTriple (1d67159c-9f6e-44fc-924c-dc534a04e40d)
- Call ID: 1d67159c-9f6e-44fc-924c-dc534a04e40d
+    target: :Cecilie_of_Mecklenburg-Schwerin
+  AssignClass (c2d55e96-b490-4710-a0d5-a6f95f2d5a5a)
+ Call ID: c2d55e96-b490-4710-a0d5-a6f95f2d5a5a
   Args:
+    type: :Man
+    source: :Prince_Wilhelm_of_Prussia
+  AssignClass (9e5b4833-2d4d-40c0-885f-f86a879c02b5)
+ Call ID: 9e5b4833-2d4d-40c0-885f-f86a879c02b5
+  Args:
+    source: :Prince_Wilhelm_of_Prussia
+    type: :Person
+  AddTriple (387d24b6-f09c-4c1f-b6d2-86e194b17855)
+ Call ID: 387d24b6-f09c-4c1f-b6d2-86e194b17855
+  Args:
+    target: :Wilhelm_Crown_Prince
+    source: :Prince_Wilhelm_of_Prussia
+    relation: :isSonOf
+  AddTriple (33633155-00cf-41d9-9228-73487d724c50)
+ Call ID: 33633155-00cf-41d9-9228-73487d724c50
+  Args:
+    relation: :isSonOf
+    source: :Prince_Wilhelm_of_Prussia
+    target: :Cecilie_of_Mecklenburg-Schwerin
+  AssignClass (22cadd7e-5d03-4409-9ee9-0eb393a908cb)
+ Call ID: 22cadd7e-5d03-4409-9ee9-0eb393a908cb
+  Args:
+    source: :Frederick_Francis_III
+    type: :Man
+  AssignClass (533c0fc6-484d-4eab-86c9-f2b6631891ae)
+ Call ID: 533c0fc6-484d-4eab-86c9-f2b6631891ae
+  Args:
+    source: :Frederick_Francis_III
+    type: :Person
+  AssignClass (06c68f79-e82a-4c93-8e34-49cf3d920bd5)
+ Call ID: 06c68f79-e82a-4c93-8e34-49cf3d920bd5
+  Args:
+    type: :Woman
+    source: :Anastasia_Mikhailovna
+  AssignClass (480bd469-6fcc-4c60-83fe-21716468ed5f)
+ Call ID: 480bd469-6fcc-4c60-83fe-21716468ed5f
+  Args:
+    source: :Anastasia_Mikhailovna
+    type: :Person
+  AddTriple (5789fd46-48a2-44e3-8c75-a98ebb22036e)
+ Call ID: 5789fd46-48a2-44e3-8c75-a98ebb22036e
+  Args:
+    target: :Cecilie_of_Mecklenburg-Schwerin
+    source: :Frederick_Francis_III
+    relation: :isFatherOf
+  AddTriple (92572318-bbd1-41c5-b881-a41d257c03b6)
+ Call ID: 92572318-bbd1-41c5-b881-a41d257c03b6
+  Args:
+    target: :Cecilie_of_Mecklenburg-Schwerin
+    source: :Anastasia_Mikhailovna
     relation: :isMotherOf
-    target: Alexandra_of_Greece
-    source: Francoise_dOrleans
-  AddTriple (efaa70c1-c3c9-400b-b02a-6f6647203dfb)
- Call ID: efaa70c1-c3c9-400b-b02a-6f6647203dfb
-  Args:
-    target: Olga_of_Greece
-    relation: :isMotherOf
-    source: Francoise_dOrleans
-  AddTriple (6b58b143-0b07-445f-a716-babb3f60e1a0)
- Call ID: 6b58b143-0b07-445f-a716-babb3f60e1a0
-  Args:
-    target: Aimone_of_Savoy_Aosta
-    relation: :hasRelation
-    source: Olga_of_Greece
-  Finish (e4b55b4f-9235-4bad-86b8-9a830e607a1d)
- Call ID: e4b55b4f-9235-4bad-86b8-9a830e607a1d
+  Finish (89e541b2-06bd-463f-b3e1-21bda9124ccd)
+ Call ID: 89e541b2-06bd-463f-b3e1-21bda9124ccd
   Args:

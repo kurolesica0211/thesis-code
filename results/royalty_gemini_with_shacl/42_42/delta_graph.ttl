@@ -2,39 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_George_of_Wales a :Man,
+data:Elizabeth_II a :Person,
+        :Woman .
+
+data:George_of_Wales a :Man,
         :Person ;
+    :alsoKnownAs "George Alexander Louis"^^xsd:string ;
     :hasBirthYear 2013 ;
-    :hasBrother data:Prince_Louis ;
+    :hasBrother data:Louis_of_Wales ;
     :hasFather data:William_Prince_of_Wales ;
     :hasMother data:Catherine_Princess_of_Wales ;
-    :hasSister data:Princess_Charlotte .
+    :hasSister data:Charlotte_of_Wales .
 
-data:Queen_Elizabeth_II a :Person,
+data:Charles_III a :Ancestor,
+        :Man,
+        :Person .
+
+data:Charlotte_of_Wales a :Person,
         :Woman ;
-    :hasDeathYear 2022 .
-
-data:Catherine_Princess_of_Wales a :Ancestor,
-        :Person,
-        :Woman .
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Princess_of_Wales .
 
 data:Diana_Princess_of_Wales a :Ancestor,
         :Person,
         :Woman .
 
-data:King_Charles_III a :Ancestor,
-        :Man,
-        :Person .
+data:Louis_of_Wales a :Man,
+        :Person ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Princess_of_Wales .
 
-data:Prince_Louis a :Man,
-        :Person .
-
-data:Princess_Charlotte a :Person,
+data:Catherine_Princess_of_Wales a :Ancestor,
+        :Person,
         :Woman .
 
 data:William_Prince_of_Wales a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:King_Charles_III ;
+    :hasFather data:Charles_III ;
     :hasMother data:Diana_Princess_of_Wales .
 

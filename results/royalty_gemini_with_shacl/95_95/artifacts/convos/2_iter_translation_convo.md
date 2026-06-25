@@ -30,7 +30,7 @@ The SHACL validation process has identified the following violations in the curr
 ---
 ### Violations:
 VALIDATION RESULTS
-Total violations:26
+Total violations:18
 Violations:
 
   Violation [1]:
@@ -126,9 +126,9 @@ Violations:
 
   Violation [3]:
     Severity: Violation
-    Focus node: Illegitimate_Daughter_of_Nicholas_Medforth-Mills
+    Focus node: Crown_Princess_Margareta_of_Romania
     Path: hasFather
-    Value: Nicholas_Michael_de_Roumanie_Medforth-Mills
+    Value: King_Michael_I_of_Romania
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -253,82 +253,9 @@ Violations:
 
   Violation [6]:
     Severity: Violation
-    Focus node: Princess_Elena_of_Romania
-    Path: hasFather
-    Value: Alexander_Nixon
-    Constraint: ClassConstraintComponent
-    Source shape:
-      :Person-hasFather a sh:PropertyShape ;
-          sh:class :Ancestor,
-              :Man ;
-          sh:maxCount 1 ;
-          sh:path :hasFather .
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    Classes assigned to the focus node: [':Woman']
-    Definitions of the classes assigned to the focus node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-
-    Definition of the path:
-      :hasFather a owl:FunctionalProperty,
-              owl:ObjectProperty ;
-          rdfs:domain :Person ;
-          rdfs:range :Ancestor,
-              :Man ;
-          rdfs:subPropertyOf :hasParent ;
-          owl:inverseOf :isFatherOf .
-    Classes assigned to the value node: [':Man']
-    Definitions of the classes assigned to the value node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-
-
-
-  Violation [7]:
-    Severity: Violation
-    Focus node: Princess_Elena_of_Romania
-    Path: hasFather
-    Value: None
-    Constraint: MaxCountConstraintComponent
-    Source shape:
-      :Person-hasFather a sh:PropertyShape ;
-          sh:class :Ancestor,
-              :Man ;
-          sh:maxCount 1 ;
-          sh:path :hasFather .
-    SHACL message: More than 1 values on data:Princess_Elena_of_Romania->:hasFather
-    Classes assigned to the focus node: [':Woman']
-    Definitions of the classes assigned to the focus node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-
-    Definition of the path:
-      :hasFather a owl:FunctionalProperty,
-              owl:ObjectProperty ;
-          rdfs:domain :Person ;
-          rdfs:range :Ancestor,
-              :Man ;
-          rdfs:subPropertyOf :hasParent ;
-          owl:inverseOf :isFatherOf .
-
-
-  Violation [8]:
-    Severity: Violation
-    Focus node: Illegitimate_Daughter_of_Nicholas_Medforth-Mills
+    Focus node: Crown_Princess_Margareta_of_Romania
     Path: hasMother
-    Value: Nicoleta_C%C3%AErjan
+    Value: Queen_Anne_of_Romania
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -366,7 +293,7 @@ Violations:
 
 
 
-  Violation [9]:
+  Violation [7]:
     Severity: Violation
     Focus node: Nicholas_Michael_de_Roumanie_Medforth-Mills
     Path: hasMother
@@ -412,7 +339,7 @@ Violations:
 
 
 
-  Violation [10]:
+  Violation [8]:
     Severity: Violation
     Focus node: Princess_Elena_of_Romania
     Path: hasMother
@@ -454,44 +381,11 @@ Violations:
 
 
 
-  Violation [11]:
+  Violation [9]:
     Severity: Violation
-    Focus node: Queen_Anne_of_Romania
-    Path: None
-    Value: Queen_Anne_of_Romania
-    Constraint: ClassConstraintComponent
-    Source shape:
-      esh:DomainConjunctionShape_isMotherOf a sh:NodeShape ;
-          sh:class :Ancestor,
-              :Woman ;
-          sh:message "Any subject of isMotherOf must be all of: Ancestor, Woman." ;
-          sh:targetSubjectsOf :isMotherOf .
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
-    Classes assigned to the focus node: [':Woman']
-    Definitions of the classes assigned to the focus node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-
-    Classes assigned to the value node: [':Woman']
-    Definitions of the classes assigned to the value node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-
-
-
-  Violation [12]:
-    Severity: Violation
-    Focus node: Illegitimate_Daughter_of_Nicholas_Medforth-Mills
+    Focus node: Crown_Princess_Margareta_of_Romania
     Path: hasFather
-    Value: Nicholas_Michael_de_Roumanie_Medforth-Mills
+    Value: King_Michael_I_of_Romania
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -528,7 +422,7 @@ Violations:
 
 
 
-  Violation [13]:
+  Violation [10]:
     Severity: Violation
     Focus node: Nicholas_Michael_de_Roumanie_Medforth-Mills
     Path: hasFather
@@ -573,7 +467,7 @@ Violations:
 
 
 
-  Violation [14]:
+  Violation [11]:
     Severity: Violation
     Focus node: Princess_Elena_of_Romania
     Path: hasFather
@@ -614,84 +508,11 @@ Violations:
 
 
 
-  Violation [15]:
+  Violation [12]:
     Severity: Violation
-    Focus node: Princess_Elena_of_Romania
-    Path: hasFather
-    Value: Alexander_Nixon
-    Constraint: ClassConstraintComponent
-    Source shape:
-      :Person-hasFather a sh:PropertyShape ;
-          sh:class :Ancestor,
-              :Man ;
-          sh:maxCount 1 ;
-          sh:path :hasFather .
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    Classes assigned to the focus node: [':Woman']
-    Definitions of the classes assigned to the focus node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-
-    Definition of the path:
-      :hasFather a owl:FunctionalProperty,
-              owl:ObjectProperty ;
-          rdfs:domain :Person ;
-          rdfs:range :Ancestor,
-              :Man ;
-          rdfs:subPropertyOf :hasParent ;
-          owl:inverseOf :isFatherOf .
-    Classes assigned to the value node: [':Man']
-    Definitions of the classes assigned to the value node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-
-
-
-  Violation [16]:
-    Severity: Violation
-    Focus node: Princess_Elena_of_Romania
-    Path: hasFather
-    Value: None
-    Constraint: MaxCountConstraintComponent
-    Source shape:
-      :Person-hasFather a sh:PropertyShape ;
-          sh:class :Ancestor,
-              :Man ;
-          sh:maxCount 1 ;
-          sh:path :hasFather .
-    SHACL message: More than 1 values on data:Princess_Elena_of_Romania->:hasFather
-    Classes assigned to the focus node: [':Woman']
-    Definitions of the classes assigned to the focus node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-
-    Definition of the path:
-      :hasFather a owl:FunctionalProperty,
-              owl:ObjectProperty ;
-          rdfs:domain :Person ;
-          rdfs:range :Ancestor,
-              :Man ;
-          rdfs:subPropertyOf :hasParent ;
-          owl:inverseOf :isFatherOf .
-
-
-  Violation [17]:
-    Severity: Violation
-    Focus node: Illegitimate_Daughter_of_Nicholas_Medforth-Mills
+    Focus node: Crown_Princess_Margareta_of_Romania
     Path: hasMother
-    Value: Nicoleta_C%C3%AErjan
+    Value: Queen_Anne_of_Romania
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -729,7 +550,7 @@ Violations:
 
 
 
-  Violation [18]:
+  Violation [13]:
     Severity: Violation
     Focus node: Nicholas_Michael_de_Roumanie_Medforth-Mills
     Path: hasMother
@@ -775,7 +596,7 @@ Violations:
 
 
 
-  Violation [19]:
+  Violation [14]:
     Severity: Violation
     Focus node: Princess_Elena_of_Romania
     Path: hasMother
@@ -817,85 +638,7 @@ Violations:
 
 
 
-  Violation [20]:
-    Severity: Violation
-    Focus node: King_Michael_I_of_Romania
-    Path: None
-    Value: King_Michael_I_of_Romania
-    Constraint: ClassConstraintComponent
-    Source shape:
-      esh:DomainConjunctionShape_isFatherOf a sh:NodeShape ;
-          sh:class :Ancestor,
-              :Man ;
-          sh:message "Any subject of isFatherOf must be all of: Ancestor, Man." ;
-          sh:targetSubjectsOf :isFatherOf .
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    Classes assigned to the focus node: [':Man']
-    Definitions of the classes assigned to the focus node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
-
-    Classes assigned to the value node: [':Man']
-    Definitions of the classes assigned to the value node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
-
-
-
-  Violation [21]:
-    Severity: Violation
-    Focus node: Illegitimate_Daughter_of_Nicholas_Medforth-Mills
-    Path: hasFather
-    Value: Nicholas_Michael_de_Roumanie_Medforth-Mills
-    Constraint: ClassConstraintComponent
-    Source shape:
-      :Person-hasFather a sh:PropertyShape ;
-          sh:class :Ancestor,
-              :Man ;
-          sh:maxCount 1 ;
-          sh:path :hasFather .
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    Classes assigned to the focus node: [':Woman']
-    Definitions of the classes assigned to the focus node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-
-    Definition of the path:
-      :hasFather a owl:FunctionalProperty,
-              owl:ObjectProperty ;
-          rdfs:domain :Person ;
-          rdfs:range :Ancestor,
-              :Man ;
-          rdfs:subPropertyOf :hasParent ;
-          owl:inverseOf :isFatherOf .
-    Classes assigned to the value node: [':Man']
-    Definitions of the classes assigned to the value node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-
-
-
-  Violation [22]:
+  Violation [15]:
     Severity: Violation
     Focus node: Princess_Elena_of_Romania
     Path: hasFather
@@ -936,11 +679,11 @@ Violations:
 
 
 
-  Violation [23]:
+  Violation [16]:
     Severity: Violation
-    Focus node: Princess_Elena_of_Romania
+    Focus node: Crown_Princess_Margareta_of_Romania
     Path: hasFather
-    Value: Alexander_Nixon
+    Value: King_Michael_I_of_Romania
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -977,43 +720,11 @@ Violations:
 
 
 
-  Violation [24]:
+  Violation [17]:
     Severity: Violation
     Focus node: Princess_Elena_of_Romania
-    Path: hasFather
-    Value: None
-    Constraint: MaxCountConstraintComponent
-    Source shape:
-      :Person-hasFather a sh:PropertyShape ;
-          sh:class :Ancestor,
-              :Man ;
-          sh:maxCount 1 ;
-          sh:path :hasFather .
-    SHACL message: More than 1 values on data:Princess_Elena_of_Romania->:hasFather
-    Classes assigned to the focus node: [':Woman']
-    Definitions of the classes assigned to the focus node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-
-    Definition of the path:
-      :hasFather a owl:FunctionalProperty,
-              owl:ObjectProperty ;
-          rdfs:domain :Person ;
-          rdfs:range :Ancestor,
-              :Man ;
-          rdfs:subPropertyOf :hasParent ;
-          owl:inverseOf :isFatherOf .
-
-
-  Violation [25]:
-    Severity: Violation
-    Focus node: Illegitimate_Daughter_of_Nicholas_Medforth-Mills
     Path: hasMother
-    Value: Nicoleta_C%C3%AErjan
+    Value: Queen_Anne_of_Romania
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -1051,9 +762,9 @@ Violations:
 
 
 
-  Violation [26]:
+  Violation [18]:
     Severity: Violation
-    Focus node: Princess_Elena_of_Romania
+    Focus node: Crown_Princess_Margareta_of_Romania
     Path: hasMother
     Value: Queen_Anne_of_Romania
     Constraint: ClassConstraintComponent
@@ -1100,4 +811,4 @@ Please analyze each violation and provide the corresponding explanation and fix 
 
 ================================== Ai Message ==================================
 
-[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The value Robin_Medforth-Mills for the property hasFather of Nicholas_Michael_de_Roumanie_Medforth-Mills does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Robin_Medforth-Mills, :Ancestor)"\n    },\n    {\n      "explanation": "The value Princess_Elena_of_Romania for the property hasMother of Nicholas_Michael_de_Roumanie_Medforth-Mills does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Princess_Elena_of_Romania, :Ancestor)"\n    },\n    {\n      "explanation": "The value Nicholas_Michael_de_Roumanie_Medforth-Mills for the property hasFather of Illegitimate_Daughter_of_Nicholas_Medforth-Mills does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Nicholas_Michael_de_Roumanie_Medforth-Mills, :Ancestor)"\n    },\n    {\n      "explanation": "The value Robin_Medforth-Mills for the property hasFather of Nicholas_Michael_de_Roumanie_Medforth-Mills does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Robin_Medforth-Mills, :Ancestor)"\n    },\n    {\n      "explanation": "The value King_Michael_I_of_Romania for the property hasFather of Princess_Elena_of_Romania does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(King_Michael_I_of_Romania, :Ancestor)"\n    },\n    {\n      "explanation": "The value Alexander_Nixon for the property hasFather of Princess_Elena_of_Romania does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Alexander_Nixon, :Ancestor)"\n    },\n    {\n      "explanation": "Princess_Elena_of_Romania has more than one father defined via the hasFather property.",\n      "instruction": "RemoveTriple(Princess_Elena_of_Romania, :hasFather, Alexander_Nixon)"\n    },\n    {\n      "explanation": "The value Nicoleta_C%C3%AErjan for the property hasMother of Illegitimate_Daughter_of_Nicholas_Medforth-Mills does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Nicoleta_C%C3%AErjan, :Ancestor)"\n    },\n    {\n      "explanation": "The value Princess_Elena_of_Romania for the property hasMother of Nicholas_Michael_de_Roumanie_Medforth-Mills does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Princess_Elena_of_Romania, :Ancestor)"\n    },\n    {\n      "explanation": "The value Queen_Anne_of_Romania for the property hasMother of Princess_Elena_of_Romania does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Queen_Anne_of_Romania, :Ancestor)"\n    },\n    {\n      "explanation": "The node Queen_Anne_of_Romania is a subject of isMotherOf but lacks the required class :Ancestor.",\n      "instruction": "AssignClass(Queen_Anne_of_Romania, :Ancestor)"\n    },\n    {\n      "explanation": "The value Nicholas_Michael_de_Roumanie_Medforth-Mills for the property hasFather of Illegitimate_Daughter_of_Nicholas_Medforth-Mills does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Nicholas_Michael_de_Roumanie_Medforth-Mills, :Ancestor)"\n    },\n    {\n      "explanation": "The value Robin_Medforth-Mills for the property hasFather of Nicholas_Michael_de_Roumanie_Medforth-Mills does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Robin_Medforth-Mills, :Ancestor)"\n    },\n    {\n      "explanation": "The value King_Michael_I_of_Romania for the property hasFather of Princess_Elena_of_Romania does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(King_Michael_I_of_Romania, :Ancestor)"\n    },\n    {\n      "explanation": "The value Alexander_Nixon for the property hasFather of Princess_Elena_of_Romania does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Alexander_Nixon, :Ancestor)"\n    },\n    {\n      "explanation": "Princess_Elena_of_Romania has more than one father defined via the hasFather property.",\n      "instruction": "RemoveTriple(Princess_Elena_of_Romania, :hasFather, Alexander_Nixon)"\n    },\n    {\n      "explanation": "The value Nicoleta_C%C3%AErjan for the property hasMother of Illegitimate_Daughter_of_Nicholas_Medforth-Mills does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Nicoleta_C%C3%AErjan, :Ancestor)"\n    },\n    {\n      "explanation": "The value Princess_Elena_of_Romania for the property hasMother of Nicholas_Michael_de_Roumanie_Medforth-Mills does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Princess_Elena_of_Romania, :Ancestor)"\n    },\n    {\n      "explanation": "The value Queen_Anne_of_Romania for the property hasMother of Princess_Elena_of_Romania does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Queen_Anne_of_Romania, :Ancestor)"\n    },\n    {\n      "explanation": "The node King_Michael_I_of_Romania is a subject of isFatherOf but lacks the required class :Ancestor.",\n      "instruction": "AssignClass(King_Michael_I_of_Romania, :Ancestor)"\n    },\n    {\n      "explanation": "The value Nicholas_Michael_de_Roumanie_Medforth-Mills for the property hasFather of Illegitimate_Daughter_of_Nicholas_Medforth-Mills does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Nicholas_Michael_de_Roumanie_Medforth-Mills, :Ancestor)"\n    },\n    {\n      "explanation": "The value King_Michael_I_of_Romania for the property hasFather of Princess_Elena_of_Romania does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(King_Michael_I_of_Romania, :Ancestor)"\n    },\n    {\n      "explanation": "The value Alexander_Nixon for the property hasFather of Princess_Elena_of_Romania does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Alexander_Nixon, :Ancestor)"\n    },\n    {\n      "explanation": "Princess_Elena_of_Romania has more than one father defined via the hasFather property.",\n      "instruction": "RemoveTriple(Princess_Elena_of_Romania, :hasFather, Alexander_Nixon)"\n    },\n    {\n      "explanation": "The value Nicoleta_C%C3%AErjan for the property hasMother of Illegitimate_Daughter_of_Nicholas_Medforth-Mills does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Nicoleta_C%C3%AErjan, :Ancestor)"\n    },\n    {\n      "explanation": "The value Queen_Anne_of_Romania for the property hasMother of Princess_Elena_of_Romania does not belong to the required class :Ancestor.",\n      "instruction": "AssignClass(Queen_Anne_of_Romania, :Ancestor)"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHxKg6UQm35fvcaqap6fVaYf3khWr2M+QdtgLr6di0EhZS1AxZtSCCAab8t3C+'}}]
+[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The node Robin_Medforth-Mills lacks the required class \':Ancestor\' to satisfy the range constraint of the hasFather property for Nicholas_Michael_de_Roumanie_Medforth-Mills.",\n      "instruction": "AssignClass(node=\'Robin_Medforth-Mills\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Princess_Elena_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasMother property for Nicholas_Michael_de_Roumanie_Medforth-Mills.",\n      "instruction": "AssignClass(node=\'Princess_Elena_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node King_Michael_I_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasFather property for Crown_Princess_Margareta_of_Romania.",\n      "instruction": "AssignClass(node=\'King_Michael_I_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Robin_Medforth-Mills lacks the required class \':Ancestor\' to satisfy the range constraint of the hasFather property for Nicholas_Michael_de_Roumanie_Medforth-Mills.",\n      "instruction": "AssignClass(node=\'Robin_Medforth-Mills\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node King_Michael_I_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasFather property for Princess_Elena_of_Romania.",\n      "instruction": "AssignClass(node=\'King_Michael_I_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Queen_Anne_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasMother property for Crown_Princess_Margareta_of_Romania.",\n      "instruction": "AssignClass(node=\'Queen_Anne_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Princess_Elena_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasMother property for Nicholas_Michael_de_Roumanie_Medforth-Mills.",\n      "instruction": "AssignClass(node=\'Princess_Elena_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Queen_Anne_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasMother property for Princess_Elena_of_Romania.",\n      "instruction": "AssignClass(node=\'Queen_Anne_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node King_Michael_I_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasFather property for Crown_Princess_Margareta_of_Romania.",\n      "instruction": "AssignClass(node=\'King_Michael_I_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Robin_Medforth-Mills lacks the required class \':Ancestor\' to satisfy the range constraint of the hasFather property for Nicholas_Michael_de_Roumanie_Medforth-Mills.",\n      "instruction": "AssignClass(node=\'Robin_Medforth-Mills\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node King_Michael_I_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasFather property for Princess_Elena_of_Romania.",\n      "instruction": "AssignClass(node=\'King_Michael_I_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Queen_Anne_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasMother property for Crown_Princess_Margareta_of_Romania.",\n      "instruction": "AssignClass(node=\'Queen_Anne_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Princess_Elena_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasMother property for Nicholas_Michael_de_Roumanie_Medforth-Mills.",\n      "instruction": "AssignClass(node=\'Princess_Elena_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Queen_Anne_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasMother property for Princess_Elena_of_Romania.",\n      "instruction": "AssignClass(node=\'Queen_Anne_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node King_Michael_I_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasFather property for Princess_Elena_of_Romania.",\n      "instruction": "AssignClass(node=\'King_Michael_I_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node King_Michael_I_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasFather property for Crown_Princess_Margareta_of_Romania.",\n      "instruction": "AssignClass(node=\'King_Michael_I_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Queen_Anne_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasMother property for Princess_Elena_of_Romania.",\n      "instruction": "AssignClass(node=\'Queen_Anne_of_Romania\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Queen_Anne_of_Romania lacks the required class \':Ancestor\' to satisfy the range constraint of the hasMother property for Crown_Princess_Margareta_of_Romania.",\n      "instruction": "AssignClass(node=\'Queen_Anne_of_Romania\', class=\':Ancestor\')"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHxvuIGbHBxspiplYe4t2e66sXTzdecgonwvBwQHRyiq+41l+w2siY3A2d75oV'}}]

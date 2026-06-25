@@ -1,0 +1,256 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christoph_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Christoph_of_Hesse ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Christoph_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse ;
+    :isSiblingOf data:Christoph_of_Hesse .
+
+data:George_William_of_Hanover a :Man,
+        :Person ;
+    :hasBrother data:George_William_of_Hanover ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_William_of_Hanover ;
+    :isBrotherOf data:George_William_of_Hanover ;
+    :isSiblingOf data:George_William_of_Hanover .
+
+data:Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sophie_of_Greece_and_Denmark ;
+    :hasDaughter data:Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Alice_of_Battenberg ;
+    :isAncestorOf data:Sophie_of_Greece_and_Denmark ;
+    :isAuntOf data:Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alice_of_Battenberg ;
+    :isMotherOf data:Sophie_of_Greece_and_Denmark ;
+    :isParentOf data:Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alice_of_Battenberg ;
+    :isSisterOf data:Alice_of_Battenberg .
+
+data:Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Andrew_of_Greece_and_Denmark ;
+    :hasChild data:Sophie_of_Greece_and_Denmark ;
+    :hasDaughter data:Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isAncestorOf data:Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Andrew_of_Greece_and_Denmark ;
+    :isFatherOf data:Sophie_of_Greece_and_Denmark ;
+    :isParentOf data:Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Andrew_of_Greece_and_Denmark ;
+    :isUncleOf data:Sophie_of_Greece_and_Denmark .
+
+data:Cecilie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Margarita_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBrotherOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Theodora_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+
+data:Sophie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasAncestor data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark ;
+    :hasBirthYear 1914 ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasDeathYear 2001 ;
+    :hasFather data:Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1930,
+        1946 ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasParent data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Cecilie_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isChildOf data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark ;
+    :isDaughterOf data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark ;
+    :isSiblingOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark .
+

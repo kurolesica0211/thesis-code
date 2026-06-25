@@ -1,0 +1,206 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Albert a :Man,
+        :Person ;
+    :hasBrother data:Prince_Albert ;
+    :hasRelation data:Prince_Albert ;
+    :isBloodrelationOf data:Prince_Albert ;
+    :isBrotherOf data:Prince_Albert ;
+    :isSiblingOf data:Prince_Albert .
+
+data:Queen_Victoria a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Arthur_Duke_of_Connaught a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Arthur_Duke_of_Connaught ;
+    :hasChild data:Patricia_of_Connaught ;
+    :hasDaughter data:Patricia_of_Connaught ;
+    :hasRelation data:Arthur_Duke_of_Connaught,
+        data:Louise_Margaret_of_Prussia,
+        data:Patricia_of_Connaught ;
+    :isAncestorOf data:Patricia_of_Connaught ;
+    :isBloodrelationOf data:Arthur_Duke_of_Connaught ;
+    :isBrotherOf data:Arthur_Duke_of_Connaught ;
+    :isFatherOf data:Patricia_of_Connaught ;
+    :isParentOf data:Patricia_of_Connaught ;
+    :isSiblingOf data:Arthur_Duke_of_Connaught ;
+    :isUncleOf data:Patricia_of_Connaught .
+
+data:Louise_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Patricia_of_Connaught ;
+    :hasDaughter data:Patricia_of_Connaught ;
+    :hasRelation data:Arthur_Duke_of_Connaught,
+        data:Louise_Margaret_of_Prussia,
+        data:Patricia_of_Connaught ;
+    :hasSister data:Louise_Margaret_of_Prussia ;
+    :isAncestorOf data:Patricia_of_Connaught ;
+    :isAuntOf data:Patricia_of_Connaught ;
+    :isBloodrelationOf data:Louise_Margaret_of_Prussia ;
+    :isMotherOf data:Patricia_of_Connaught ;
+    :isParentOf data:Patricia_of_Connaught ;
+    :isSiblingOf data:Louise_Margaret_of_Prussia ;
+    :isSisterOf data:Louise_Margaret_of_Prussia .
+
+data:Luis_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Luis_I ;
+    :hasChild data:Carlos_I ;
+    :hasRelation data:Amelie_dOrleans,
+        data:Carlos_I,
+        data:Luis_Filipe,
+        data:Luis_I,
+        data:Manuel_II ;
+    :hasSon data:Carlos_I ;
+    :isAncestorOf data:Carlos_I,
+        data:Luis_Filipe,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Luis_I ;
+    :isBrotherOf data:Luis_I ;
+    :isFatherOf data:Carlos_I ;
+    :isParentOf data:Carlos_I ;
+    :isSiblingOf data:Luis_I ;
+    :isUncleOf data:Carlos_I .
+
+data:Amelie_dOrleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Luis_Filipe,
+        data:Manuel_II ;
+    :hasRelation data:Amelie_dOrleans,
+        data:Carlos_I,
+        data:Luis_Filipe,
+        data:Luis_I,
+        data:Manuel_II ;
+    :hasSister data:Amelie_dOrleans ;
+    :hasSon data:Luis_Filipe,
+        data:Manuel_II ;
+    :isAncestorOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isAuntOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Amelie_dOrleans ;
+    :isMotherOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isParentOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isSiblingOf data:Amelie_dOrleans ;
+    :isSisterOf data:Amelie_dOrleans .
+
+data:Patricia_of_Connaught a :Person,
+        :Woman ;
+    :hasAncestor data:Arthur_Duke_of_Connaught,
+        data:Louise_Margaret_of_Prussia ;
+    :hasFather data:Arthur_Duke_of_Connaught ;
+    :hasMother data:Louise_Margaret_of_Prussia ;
+    :hasParent data:Arthur_Duke_of_Connaught,
+        data:Louise_Margaret_of_Prussia ;
+    :hasRelation data:Arthur_Duke_of_Connaught,
+        data:Louise_Margaret_of_Prussia,
+        data:Patricia_of_Connaught ;
+    :hasSister data:Patricia_of_Connaught ;
+    :isBloodrelationOf data:Patricia_of_Connaught ;
+    :isChildOf data:Arthur_Duke_of_Connaught,
+        data:Louise_Margaret_of_Prussia ;
+    :isDaughterOf data:Arthur_Duke_of_Connaught,
+        data:Louise_Margaret_of_Prussia ;
+    :isSiblingOf data:Patricia_of_Connaught ;
+    :isSisterOf data:Patricia_of_Connaught .
+
+data:Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Luis_I ;
+    :hasBrother data:Carlos_I ;
+    :hasChild data:Luis_Filipe,
+        data:Manuel_II ;
+    :hasFather data:Luis_I ;
+    :hasParent data:Luis_I ;
+    :hasRelation data:Amelie_dOrleans,
+        data:Carlos_I,
+        data:Luis_Filipe,
+        data:Luis_I,
+        data:Manuel_II ;
+    :hasSon data:Luis_Filipe,
+        data:Manuel_II ;
+    :isAncestorOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Carlos_I ;
+    :isBrotherOf data:Carlos_I ;
+    :isChildOf data:Luis_I ;
+    :isFatherOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isParentOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isSiblingOf data:Carlos_I ;
+    :isSonOf data:Luis_I ;
+    :isUncleOf data:Luis_Filipe,
+        data:Manuel_II .
+
+data:Luis_Filipe a :Man,
+        :Person ;
+    :hasAncestor data:Amelie_dOrleans,
+        data:Carlos_I,
+        data:Luis_I ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:Luis_Filipe,
+        data:Manuel_II ;
+    :hasDeathYear 1908 ;
+    :hasFather data:Carlos_I ;
+    :hasMother data:Amelie_dOrleans ;
+    :hasParent data:Amelie_dOrleans,
+        data:Carlos_I ;
+    :hasRelation data:Amelie_dOrleans,
+        data:Carlos_I,
+        data:Luis_Filipe,
+        data:Luis_I,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isBrotherOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isChildOf data:Amelie_dOrleans,
+        data:Carlos_I ;
+    :isSiblingOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isSonOf data:Amelie_dOrleans,
+        data:Carlos_I .
+
+data:Manuel_II a :Man,
+        :Person ;
+    :hasAncestor data:Amelie_dOrleans,
+        data:Carlos_I,
+        data:Luis_I ;
+    :hasBrother data:Luis_Filipe,
+        data:Manuel_II ;
+    :hasFather data:Carlos_I ;
+    :hasMother data:Amelie_dOrleans ;
+    :hasParent data:Amelie_dOrleans,
+        data:Carlos_I ;
+    :hasRelation data:Amelie_dOrleans,
+        data:Carlos_I,
+        data:Luis_Filipe,
+        data:Luis_I,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isBrotherOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isChildOf data:Amelie_dOrleans,
+        data:Carlos_I ;
+    :isSiblingOf data:Luis_Filipe,
+        data:Manuel_II ;
+    :isSonOf data:Amelie_dOrleans,
+        data:Carlos_I .
+

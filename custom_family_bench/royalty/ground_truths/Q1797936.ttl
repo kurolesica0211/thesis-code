@@ -7,111 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Frederik_X_of_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Frederik X of Denmark" ;
-    data:posIndicesFull "253:263",
-        "253:274" ;
-    data:posIndicesPart "2189:2196",
-        "2223:2231" ;
-    data:wdtLink wdt:Q1004037 ;
-    :alsoKnownAs "Frederik André Henrik Christian",
-        "Frederik André Henrik Christian of Denmark",
-        "Frederik André Henrik Christian, Crown Prince of Denmark",
-        "Frederik Henriksen",
-        "Frederik X",
-        "Frederik of Denmark",
-        "Frederik of Denmark, Count of Monpezat" ;
-    :hasSex data:male .
-
-data:Princess_Benedikte_of_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Benedikte of Denmark" ;
-    data:posIndicesFull "142:171",
-        "607:636" ;
-    data:posIndicesPart "1259:1267",
-        "1975:1983",
-        "2189:2196" ;
-    data:wdtLink wdt:Q817052 ;
-    :alsoKnownAs "Benedikte Astrid Ingeborg Ingrid",
-        "Benedikte Astrid Ingeborg Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
-        "Princess Benedikte of Denmark, Princess of Sayn-Wittgenstein-Berleburg" ;
-    :hasChild data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-    :hasDaughter data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-    :hasSex data:female ;
-    :hasSon data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :isAuntOf data:Frederik_X_of_Denmark ;
-    :isMotherOf data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-    :isParentOf data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
-
-data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg" ;
-    data:posIndicesFull "176:226" ;
-    data:posIndicesPart "1010:1016",
-        "1026:1030",
-        "1031:1043",
-        "1044:1053",
-        "1796:1805",
-        "1825:1831",
-        "2042:2049",
-        "2171:2177",
-        "287:293",
-        "329:333",
-        "334:346",
-        "347:356",
-        "410:414",
-        "415:427",
-        "451:460",
-        "461:473",
-        "493:502",
-        "557:563",
-        "564:571",
-        "575:579",
-        "580:592",
-        "593:602",
-        "801:805",
-        "806:818",
-        "819:828" ;
-    data:wdtLink wdt:Q62492 ;
-    :alsoKnownAs "Richard Casimir Karl August Robert Konstantin zu Sayn-Wittgenstein-Berleburg",
-        "Richard Prince zu Sayn-Wittgenstein-Berleburg" ;
-    :hasChild data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-    :hasDaughter data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-    :hasSex data:male ;
-    :hasSon data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :isFatherOf data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-    :isParentOf data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
-
-data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg a :Person ;
     rdfs:label "Gustav, 7th Prince of Sayn-Wittgenstein-Berleburg" ;
     data:posIndicesFull "0:49" ;
     data:posIndicesPart "1010:1016",
@@ -149,25 +45,11 @@ data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man,
         "Gustav Prinz zu Sayn-Wittgenstein-Berleburg",
         "Gustav of Sayn-Wittgenstein-Berleburg",
         "Prince Gustav, 7th Prince of Sayn-Wittgenstein-Berleburg" ;
-    :hasFather data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :hasMother data:Princess_Benedikte_of_Denmark ;
     :hasParent data:Princess_Benedikte_of_Denmark,
         data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-    :isBrotherOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-    :isChildOf data:Princess_Benedikte_of_Denmark,
-        data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :isSiblingOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-    :isSonOf data:Princess_Benedikte_of_Denmark,
-        data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg .
+    :hasSex data:male .
 
-data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person ;
     rdfs:label "Princess Alexandra of Sayn-Wittgenstein-Berleburg" ;
     data:posIndicesFull "658:707",
         "667:707" ;
@@ -186,25 +68,11 @@ data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
         "Alexandra Rosemarie Ingrid Benedikte of Sayn-Wittgenstein-Berleburg",
         "Alexandra of Sayn-Wittgenstein-Berleburg",
         "Princess Alexandra Rosemarie Ingrid Benedikte of Sayn-Wittgenstein-Berleburg" ;
-    :hasBrother data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :hasFather data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :hasMother data:Princess_Benedikte_of_Denmark ;
     :hasParent data:Princess_Benedikte_of_Denmark,
         data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-    :isChildOf data:Princess_Benedikte_of_Denmark,
-        data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :isDaughterOf data:Princess_Benedikte_of_Denmark,
-        data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :isSiblingOf data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-    :isSisterOf data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
+    :hasSex data:female .
 
-data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person ;
     rdfs:label "Princess Nathalie of Sayn-Wittgenstein-Berleburg" ;
     data:posIndicesFull "712:760" ;
     data:posIndicesPart "1026:1030",
@@ -220,19 +88,64 @@ data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,
     data:wdtLink wdt:Q265691 ;
     :alsoKnownAs "Nathalie Xenia Margareta Benedikte Prinzessin zu Sayn-Wittgenstein-Berleburg",
         "Princess Nathalie, Mrs. Johannsmann" ;
-    :hasBrother data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :hasFather data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :hasMother data:Princess_Benedikte_of_Denmark ;
     :hasParent data:Princess_Benedikte_of_Denmark,
         data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
-    :isChildOf data:Princess_Benedikte_of_Denmark,
-        data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :isDaughterOf data:Princess_Benedikte_of_Denmark,
-        data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :isSiblingOf data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
-    :isSisterOf data:Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg .
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Princess_Benedikte_of_Denmark a :Person ;
+    rdfs:label "Princess Benedikte of Denmark" ;
+    data:posIndicesFull "142:171",
+        "607:636" ;
+    data:posIndicesPart "1259:1267",
+        "1975:1983",
+        "2189:2196",
+        "267:274" ;
+    data:wdtLink wdt:Q817052 ;
+    :alsoKnownAs "Benedikte Astrid Ingeborg Ingrid",
+        "Benedikte Astrid Ingeborg Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
+        "Princess Benedikte of Denmark, Princess of Sayn-Wittgenstein-Berleburg" ;
+    :hasSex data:female .
+
+data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Person ;
+    rdfs:label "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg" ;
+    data:posIndicesFull "176:226" ;
+    data:posIndicesPart "1010:1016",
+        "1026:1030",
+        "1031:1043",
+        "1044:1053",
+        "1796:1805",
+        "1825:1831",
+        "2042:2049",
+        "2171:2177",
+        "287:293",
+        "329:333",
+        "334:346",
+        "347:356",
+        "410:414",
+        "415:427",
+        "451:460",
+        "461:473",
+        "493:502",
+        "557:563",
+        "564:571",
+        "575:579",
+        "580:592",
+        "593:602",
+        "801:805",
+        "806:818",
+        "819:828" ;
+    data:wdtLink wdt:Q62492 ;
+    :alsoKnownAs "Richard Casimir Karl August Robert Konstantin zu Sayn-Wittgenstein-Berleburg",
+        "Richard Prince zu Sayn-Wittgenstein-Berleburg" ;
+    :hasSex data:male .
+
+data:female a :Female .
 

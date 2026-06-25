@@ -1,0 +1,183 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Beatrix_of_Hohenlohe-Langenburg a :Person,
+        :Woman ;
+    rdfs:label "Princess Beatrix of Hohenlohe-Langenburg"^^xsd:string ;
+    data:posIndicesFull "0:40"^^xsd:string ;
+    data:posIndicesPart "1038:1046"^^xsd:string,
+        "1199:1206"^^xsd:string,
+        "1252:1259"^^xsd:string,
+        "1414:1421"^^xsd:string,
+        "1494:1502"^^xsd:string,
+        "1557:1565"^^xsd:string,
+        "1588:1598"^^xsd:string,
+        "1807:1814"^^xsd:string,
+        "327:334"^^xsd:string,
+        "414:423"^^xsd:string,
+        "424:434"^^xsd:string,
+        "587:595"^^xsd:string,
+        "713:720"^^xsd:string,
+        "830:837"^^xsd:string,
+        "854:862"^^xsd:string,
+        "970:977"^^xsd:string ;
+    data:wdtLink wdt:Q75384169 ;
+    :hasAncestor data:Princess_Alice_of_Battenberg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasParent data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isChildOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isDaughterOf data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isSisterOf data:Princess_Beatrix_of_Hohenlohe-Langenburg .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Man,
+        :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "237:250"^^xsd:string,
+        "237:269"^^xsd:string,
+        "503:516"^^xsd:string,
+        "503:535"^^xsd:string,
+        "936:949"^^xsd:string ;
+    data:posIndicesPart "1108:1114"^^xsd:string,
+        "1319:1325"^^xsd:string,
+        "1717:1723"^^xsd:string,
+        "1761:1767"^^xsd:string,
+        "567:573"^^xsd:string ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip"^^xsd:string,
+        "H.R.H. The Duke Of Edinburgh"^^xsd:string,
+        "Lieutenant Philip Mountbatten"^^xsd:string,
+        "Philip Edinburgh"^^xsd:string,
+        "Philip Mountbatten"^^xsd:string,
+        "Philip Mountbatten; Prince Philip of Greece and Denmark"^^xsd:string,
+        "Philip of Greece and Denmark"^^xsd:string,
+        "Prince Philip"^^xsd:string,
+        "Prince Philip of Greece and Denmark"^^xsd:string,
+        "The Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isSonOf data:Princess_Alice_of_Battenberg ;
+    :isUncleOf data:Princess_Beatrix_of_Hohenlohe-Langenburg .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "1625:1629"^^xsd:string,
+        "58:63"^^xsd:string ;
+    data:posIndicesPart "1038:1046"^^xsd:string,
+        "1494:1502"^^xsd:string,
+        "1557:1565"^^xsd:string,
+        "587:595"^^xsd:string,
+        "854:862"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Margarita of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "440:480"^^xsd:string,
+        "449:480"^^xsd:string ;
+    data:posIndicesPart "1038:1046"^^xsd:string,
+        "1494:1502"^^xsd:string,
+        "1557:1565"^^xsd:string,
+        "587:595"^^xsd:string,
+        "854:862"^^xsd:string ;
+    data:wdtLink wdt:Q240317 ;
+    :alsoKnownAs "Margarita of Greece and Denmark"^^xsd:string,
+        "Margarita of Hohenlohe-Langenburg"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasChild data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :hasDaughter data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Beatrix_of_Hohenlohe-Langenburg,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isAncestorOf data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isAuntOf data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
+    :isSisterOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Greece_and_Denmark .
+

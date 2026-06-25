@@ -109,14 +109,12 @@ Family
 
 Claude was born on 11 December 1943 in Larache, Morocco as the ninth child and fifth daughter of Henri, Count of Paris, Orléanist claimant to the French throne, and Princess Isabelle of Orléans-Braganza.
 One of eleven siblings, Claude's eldest brother was Henri, Count of Paris, who succeeded their father as head of the Orléans family, and two of her sisters also became consorts of pretenders to abolished thrones; Anne, Duchess of Calabria and Diane, Duchess of Württemberg.
-She then spent some time at the Mayfield School in East Sussex, England.
 Marriage and issue
 
 On 22 July 1964 in Sintra, Princess Claude married her second cousin, Prince Amedeo of Savoy, Duke of Aosta.
 He was the only son of Prince Aimone, Duke of Aosta, second cousin once removed of Italy's last king, Umberto II.
 Aimone was briefly made nominal head of an Italian puppet state during World War II as King Tomislav II of Croatia.
 Claude was the third Orleanist princess to hold the title Duchess of Aosta by marriage.
-At the time of their wedding, Amedeo was a student at the Morosini Naval College in Venice, which his father had also attended.
 The couple met while attending the wedding of Infante Juan Carlos of Spain and Princess Sophia of Greece and Denmark in May 1962 in Athens.
 A Savoy family council having met at King Umberto's residence in exile at Cimiez, France, in the summer of 1963, another was held in London secretly at the king's hospital bedside to discuss the prospect of the king's only son Vittorio Emanuele, Prince of Naples, choosing to marry a commoner, Marina Doria, which had become the subject of much media speculation.
 In view of his illness, Amedeo's imminent marriage to a suitable princess, and his son's ongoing relationship with Doria, Umberto contemplated publicly abdicating (having left Italy for exile in 1946 pursuant to an anti-monarchy plebiscite, he had not formally renounced) and recognizing Amedeo as the successor to his claim to Italy's abolished throne.
@@ -129,6 +127,8 @@ Amedeo was remarried later that year to Silvia Paternò di Spedalotto, while Cla
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -144,39 +144,9 @@ Amedeo was remarried later that year to Silvia Paternò di Spedalotto, while Cla
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -191,6 +161,23 @@ Amedeo was remarried later that year to Silvia Paternò di Spedalotto, while Cla
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -208,6 +195,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -275,29 +277,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -306,6 +300,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -318,6 +320,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -326,17 +330,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -364,6 +370,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -379,188 +469,189 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (000d83b7-6c48-4269-ab58-11e86cc1bc23)
- Call ID: 000d83b7-6c48-4269-ab58-11e86cc1bc23
+  AssignClass (98a4d935-5496-400e-af51-243a692d9b89)
+ Call ID: 98a4d935-5496-400e-af51-243a692d9b89
   Args:
+    source: :Claude_of_Orleans
     type: :Person
-    source: Claude_of_Orléans
-  AssignClass (7df1551a-8a1e-4641-95a5-b0916c1b56bb)
- Call ID: 7df1551a-8a1e-4641-95a5-b0916c1b56bb
+  AssignClass (9e83f237-e182-4800-bd64-69f2ce0c16a3)
+ Call ID: 9e83f237-e182-4800-bd64-69f2ce0c16a3
   Args:
     type: :Woman
-    source: Claude_of_Orléans
-  AddLiteral (db59897a-b0ae-4f8c-bd8a-dacf1b2810c6)
- Call ID: db59897a-b0ae-4f8c-bd8a-dacf1b2810c6
+    source: :Claude_of_Orleans
+  AddLiteral (9415952b-a408-4d2e-99d1-c0fe869f42bd)
+ Call ID: 9415952b-a408-4d2e-99d1-c0fe869f42bd
   Args:
-    literal_value: 1943
-    source: Claude_of_Orléans
+    literal_type: xsd:integer
     relation: :hasBirthYear
+    source: :Claude_of_Orleans
+    literal_value: 1943
+  AssignClass (3af4db6a-4931-4a2a-8990-645eb0fbd593)
+ Call ID: 3af4db6a-4931-4a2a-8990-645eb0fbd593
+  Args:
+    source: :Henri_Count_of_Paris
+    type: :Person
+  AssignClass (6d5164be-9ce2-4a58-bd30-988c6d204a54)
+ Call ID: 6d5164be-9ce2-4a58-bd30-988c6d204a54
+  Args:
+    type: :Man
+    source: :Henri_Count_of_Paris
+  AssignClass (1ac77549-9558-4802-a076-0cd61df893c0)
+ Call ID: 1ac77549-9558-4802-a076-0cd61df893c0
+  Args:
+    source: :Henri_Count_of_Paris
+    type: :Ancestor
+  AssignClass (e700463a-7c3a-4c85-8d99-d5e295023b66)
+ Call ID: e700463a-7c3a-4c85-8d99-d5e295023b66
+  Args:
+    source: :Isabelle_of_Orleans_Braganza
+    type: :Person
+  AssignClass (2df738fd-2e09-4c18-82a3-5cd184c79a04)
+ Call ID: 2df738fd-2e09-4c18-82a3-5cd184c79a04
+  Args:
+    source: :Isabelle_of_Orleans_Braganza
+    type: :Woman
+  AssignClass (8c0f03ac-1b73-44bb-b85b-ced35030666f)
+ Call ID: 8c0f03ac-1b73-44bb-b85b-ced35030666f
+  Args:
+    source: :Isabelle_of_Orleans_Braganza
+    type: :Ancestor
+  AddTriple (c059d0dd-57e4-48f7-807a-72104bb38d6a)
+ Call ID: c059d0dd-57e4-48f7-807a-72104bb38d6a
+  Args:
+    target: :Henri_Count_of_Paris
+    relation: :isChildOf
+    source: :Claude_of_Orleans
+  AddTriple (4c2dcc6d-6596-4ec2-a3b1-68d3d5ccb7c6)
+ Call ID: 4c2dcc6d-6596-4ec2-a3b1-68d3d5ccb7c6
+  Args:
+    target: :Isabelle_of_Orleans_Braganza
+    relation: :isChildOf
+    source: :Claude_of_Orleans
+  AssignClass (65b44fc1-4a55-4035-8a9a-3b996037e42b)
+ Call ID: 65b44fc1-4a55-4035-8a9a-3b996037e42b
+  Args:
+    source: :Henri_Count_of_Paris_Jr
+    type: :Person
+  AssignClass (231eb42c-94df-47b9-8b1b-7e550db46f5e)
+ Call ID: 231eb42c-94df-47b9-8b1b-7e550db46f5e
+  Args:
+    type: :Man
+    source: :Henri_Count_of_Paris_Jr
+  AddTriple (50721b32-feb4-42b6-b07a-f20625bd8fa8)
+ Call ID: 50721b32-feb4-42b6-b07a-f20625bd8fa8
+  Args:
+    target: :Henri_Count_of_Paris_Jr
+    relation: :isSiblingOf
+    source: :Claude_of_Orleans
+  AssignClass (4e01f81b-b097-4a6d-8a9e-6475be711676)
+ Call ID: 4e01f81b-b097-4a6d-8a9e-6475be711676
+  Args:
+    source: :Anne_Duchess_of_Calabria
+    type: :Person
+  AssignClass (e8eda782-3ba8-40b5-99be-f95765e2025d)
+ Call ID: e8eda782-3ba8-40b5-99be-f95765e2025d
+  Args:
+    source: :Anne_Duchess_of_Calabria
+    type: :Woman
+  AddTriple (c96f2bf0-534a-4fd9-b241-b3daa20d0821)
+ Call ID: c96f2bf0-534a-4fd9-b241-b3daa20d0821
+  Args:
+    target: :Anne_Duchess_of_Calabria
+    relation: :isSiblingOf
+    source: :Claude_of_Orleans
+  AssignClass (6fb1346d-3ba6-43d3-8927-cd008b3f06b2)
+ Call ID: 6fb1346d-3ba6-43d3-8927-cd008b3f06b2
+  Args:
+    type: :Person
+    source: :Diane_Duchess_of_Wurttemberg
+  AssignClass (9e39603c-2222-4b55-873e-56c180e7b174)
+ Call ID: 9e39603c-2222-4b55-873e-56c180e7b174
+  Args:
+    source: :Diane_Duchess_of_Wurttemberg
+    type: :Woman
+  AddTriple (866002c3-fe22-49bf-8404-15bb7e9e6fa6)
+ Call ID: 866002c3-fe22-49bf-8404-15bb7e9e6fa6
+  Args:
+    source: :Claude_of_Orleans
+    relation: :isSiblingOf
+    target: :Diane_Duchess_of_Wurttemberg
+  AssignClass (d0b98777-6d60-45d6-aac6-f6706cded689)
+ Call ID: d0b98777-6d60-45d6-aac6-f6706cded689
+  Args:
+    source: :Amedeo_Duke_of_Aosta
+    type: :Person
+  AssignClass (d87584e2-72f4-45cb-bfe5-9b730003a056)
+ Call ID: d87584e2-72f4-45cb-bfe5-9b730003a056
+  Args:
+    source: :Amedeo_Duke_of_Aosta
+    type: :Man
+  AssignClass (f910223b-27b5-4ed2-a02b-5b2c53912f93)
+ Call ID: f910223b-27b5-4ed2-a02b-5b2c53912f93
+  Args:
+    type: :Person
+    source: :Aimone_Duke_of_Aosta
+  AssignClass (12016ebc-4378-4b6c-b9d0-72721f3f7612)
+ Call ID: 12016ebc-4378-4b6c-b9d0-72721f3f7612
+  Args:
+    type: :Man
+    source: :Aimone_Duke_of_Aosta
+  AssignClass (60eeb10e-e75c-4e89-a14b-a1073ebfeb1b)
+ Call ID: 60eeb10e-e75c-4e89-a14b-a1073ebfeb1b
+  Args:
+    type: :Ancestor
+    source: :Aimone_Duke_of_Aosta
+  AddTriple (5c396ba3-97b4-48e4-9b41-a9a90d5e83ac)
+ Call ID: 5c396ba3-97b4-48e4-9b41-a9a90d5e83ac
+  Args:
+    source: :Amedeo_Duke_of_Aosta
+    relation: :isChildOf
+    target: :Aimone_Duke_of_Aosta
+  AddLiteral (00a19556-74e6-4db0-9d23-e86b0f78d0e9)
+ Call ID: 00a19556-74e6-4db0-9d23-e86b0f78d0e9
+  Args:
     literal_type: xsd:integer
-  AssignClass (a9eb5a6a-7917-471b-bfa8-bcc142fe3221)
- Call ID: a9eb5a6a-7917-471b-bfa8-bcc142fe3221
-  Args:
-    type: :Person
-    source: Henri_Count_of_Paris
-  AssignClass (3a82099f-9b69-4c25-ab7f-730b72148207)
- Call ID: 3a82099f-9b69-4c25-ab7f-730b72148207
-  Args:
-    type: :Man
-    source: Henri_Count_of_Paris
-  AssignClass (7ce4cf97-afec-4899-ae5a-155f98b8529c)
- Call ID: 7ce4cf97-afec-4899-ae5a-155f98b8529c
-  Args:
-    type: :Person
-    source: Isabelle_of_Orléans-Braganza
-  AssignClass (a71604fa-8367-4bf3-bbc1-c3cf26ea348f)
- Call ID: a71604fa-8367-4bf3-bbc1-c3cf26ea348f
-  Args:
-    type: :Woman
-    source: Isabelle_of_Orléans-Braganza
-  AddTriple (88cbf2fa-77d0-4470-9e03-7937c76f3744)
- Call ID: 88cbf2fa-77d0-4470-9e03-7937c76f3744
-  Args:
-    relation: :hasFather
-    source: Claude_of_Orléans
-    target: Henri_Count_of_Paris
-  AddTriple (9b8756a0-c5d4-48b2-9061-3f61baaa170a)
- Call ID: 9b8756a0-c5d4-48b2-9061-3f61baaa170a
-  Args:
-    source: Claude_of_Orléans
-    relation: :hasMother
-    target: Isabelle_of_Orléans-Braganza
-  AssignClass (331814e6-0dfe-4655-bcc1-c44809cb3849)
- Call ID: 331814e6-0dfe-4655-bcc1-c44809cb3849
-  Args:
-    type: :Person
-    source: Henri_Count_of_Paris_II
-  AssignClass (38af8400-7884-49d0-9edb-13e0f347588d)
- Call ID: 38af8400-7884-49d0-9edb-13e0f347588d
-  Args:
-    type: :Man
-    source: Henri_Count_of_Paris_II
-  AddTriple (540ee545-742e-4cbe-968c-c53fad9e12b4)
- Call ID: 540ee545-742e-4cbe-968c-c53fad9e12b4
-  Args:
-    target: Claude_of_Orléans
-    source: Henri_Count_of_Paris_II
-    relation: :isBrotherOf
-  AssignClass (e7c9a69b-d15f-4165-8b87-72c4604b30f6)
- Call ID: e7c9a69b-d15f-4165-8b87-72c4604b30f6
-  Args:
-    type: :Person
-    source: Anne_Duchess_of_Calabria
-  AssignClass (6b1e1860-bb8e-4acc-b281-99ff0daa4aa5)
- Call ID: 6b1e1860-bb8e-4acc-b281-99ff0daa4aa5
-  Args:
-    type: :Woman
-    source: Anne_Duchess_of_Calabria
-  AddTriple (834aa24c-53ed-4114-b471-bef833a3b712)
- Call ID: 834aa24c-53ed-4114-b471-bef833a3b712
-  Args:
-    relation: :isSisterOf
-    source: Anne_Duchess_of_Calabria
-    target: Claude_of_Orléans
-  AssignClass (4955996c-0d66-46ab-8f23-0bdc7f8dc6e3)
- Call ID: 4955996c-0d66-46ab-8f23-0bdc7f8dc6e3
-  Args:
-    type: :Person
-    source: Diane_Duchess_of_Württemberg
-  AssignClass (4ee39ec1-21ec-4a95-b97a-76befbd03223)
- Call ID: 4ee39ec1-21ec-4a95-b97a-76befbd03223
-  Args:
-    type: :Woman
-    source: Diane_Duchess_of_Württemberg
-  AddTriple (2a4270f5-5a65-4058-bb5e-25885d410a40)
- Call ID: 2a4270f5-5a65-4058-bb5e-25885d410a40
-  Args:
-    target: Claude_of_Orléans
-    source: Diane_Duchess_of_Württemberg
-    relation: :isSisterOf
-  AssignClass (5d176367-cfac-4d9b-9de5-d9e96e4486d0)
- Call ID: 5d176367-cfac-4d9b-9de5-d9e96e4486d0
-  Args:
-    type: :Person
-    source: Amedeo_Duke_of_Aosta
-  AssignClass (d61eec4d-c795-4020-a323-e1f141f91e04)
- Call ID: d61eec4d-c795-4020-a323-e1f141f91e04
-  Args:
-    type: :Man
-    source: Amedeo_Duke_of_Aosta
-  AddLiteral (09b60c80-1f9c-4b03-ac68-386842642e30)
- Call ID: 09b60c80-1f9c-4b03-ac68-386842642e30
-  Args:
     literal_value: 1964
-    source: Claude_of_Orléans
-    literal_type: xsd:integer
     relation: :hasMarriageYear
-  AddTriple (6a083889-e27c-4750-9acb-0b95a3345cc6)
- Call ID: 6a083889-e27c-4750-9acb-0b95a3345cc6
+    source: :Claude_of_Orleans
+  AddTriple (990d9e75-8e8b-4927-9792-b22137871d65)
+ Call ID: 990d9e75-8e8b-4927-9792-b22137871d65
   Args:
     relation: :hasRelation
-    source: Claude_of_Orléans
-    target: Amedeo_Duke_of_Aosta
-  AssignClass (86296973-f631-41e9-9ccb-52c5386febc7)
- Call ID: 86296973-f631-41e9-9ccb-52c5386febc7
+    source: :Claude_of_Orleans
+    target: :Amedeo_Duke_of_Aosta
+  AssignClass (2fb43e31-c911-4c62-baea-1e468d795551)
+ Call ID: 2fb43e31-c911-4c62-baea-1e468d795551
   Args:
+    source: :Luigi_Arnaldo_La_Cagnina
     type: :Person
-    source: Aimone_Duke_of_Aosta
-  AssignClass (c52fdce2-b0a5-41b3-92b9-057333ace467)
- Call ID: c52fdce2-b0a5-41b3-92b9-057333ace467
+  AssignClass (0ab93f63-9feb-4357-80e3-b8586f12ce5d)
+ Call ID: 0ab93f63-9feb-4357-80e3-b8586f12ce5d
   Args:
+    source: :Luigi_Arnaldo_La_Cagnina
     type: :Man
-    source: Aimone_Duke_of_Aosta
-  AddTriple (715e63c3-1950-4455-a937-5739b538c54a)
- Call ID: 715e63c3-1950-4455-a937-5739b538c54a
-  Args:
-    relation: :hasFather
-    source: Amedeo_Duke_of_Aosta
-    target: Aimone_Duke_of_Aosta
-  AssignClass (bdf267c8-f64f-4a71-8ff8-6a43dd7ef420)
- Call ID: bdf267c8-f64f-4a71-8ff8-6a43dd7ef420
-  Args:
-    type: :Person
-    source: Luigi_Arnaldo_La_Cagnina
-  AssignClass (f8d9b20b-ead8-4651-9ef7-7ee86a0fbcec)
- Call ID: f8d9b20b-ead8-4651-9ef7-7ee86a0fbcec
-  Args:
-    type: :Man
-    source: Luigi_Arnaldo_La_Cagnina
-  AddLiteral (3cfd3906-03ca-43e0-8042-9c31119555ae)
- Call ID: 3cfd3906-03ca-43e0-8042-9c31119555ae
-  Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: Claude_of_Orléans
-    literal_value: 1982
-  AddTriple (b8a55177-e29c-4ac8-92a5-b069ebf60db2)
- Call ID: b8a55177-e29c-4ac8-92a5-b069ebf60db2
+  AddTriple (2bada494-b8c3-435e-a8df-2fd3e4e0a258)
+ Call ID: 2bada494-b8c3-435e-a8df-2fd3e4e0a258
   Args:
     relation: :hasRelation
-    source: Claude_of_Orléans
-    target: Luigi_Arnaldo_La_Cagnina
-  AssignClass (5ef3c703-7bc7-475f-a0db-6d64827635b8)
- Call ID: 5ef3c703-7bc7-475f-a0db-6d64827635b8
+    source: :Claude_of_Orleans
+    target: :Luigi_Arnaldo_La_Cagnina
+  AssignClass (39cc1f10-1dfb-4807-af8f-9f2e12fe75c3)
+ Call ID: 39cc1f10-1dfb-4807-af8f-9f2e12fe75c3
   Args:
+    source: :Enrico_Gandolfi
     type: :Person
-    source: Enrico_Gandolfi
-  AssignClass (114ab8dd-dcc1-4df8-a84d-4828f418d825)
- Call ID: 114ab8dd-dcc1-4df8-a84d-4828f418d825
+  AssignClass (02c8f83c-aec0-477c-a3e5-c5122d4336e4)
+ Call ID: 02c8f83c-aec0-477c-a3e5-c5122d4336e4
   Args:
     type: :Man
-    source: Enrico_Gandolfi
-  AddLiteral (190b9e61-281d-49f5-9d95-d518cb9e0157)
- Call ID: 190b9e61-281d-49f5-9d95-d518cb9e0157
+    source: :Enrico_Gandolfi
+  AddTriple (228ee07f-d69c-4d7f-a8f8-9fe3c7429160)
+ Call ID: 228ee07f-d69c-4d7f-a8f8-9fe3c7429160
   Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 2006
-    source: Claude_of_Orléans
-  AddTriple (954709ec-c53c-4af0-b441-f41356d61d65)
- Call ID: 954709ec-c53c-4af0-b441-f41356d61d65
-  Args:
-    source: Claude_of_Orléans
     relation: :hasRelation
-    target: Enrico_Gandolfi
-  Finish (b1c7f0e4-9b02-4ca6-8fc2-764505d7e9d4)
- Call ID: b1c7f0e4-9b02-4ca6-8fc2-764505d7e9d4
+    source: :Claude_of_Orleans
+    target: :Enrico_Gandolfi
+  Finish (28d0c923-b76a-4672-8244-75b39040887b)
+ Call ID: 28d0c923-b76a-4672-8244-75b39040887b
   Args:

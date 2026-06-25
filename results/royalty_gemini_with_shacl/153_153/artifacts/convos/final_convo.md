@@ -85,38 +85,32 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Maurice of Battenberg (Maurice Victor Donald; 3 October 1891 – 27 October 1914) was a member of the Hessian princely Battenberg family and the extended British royal family, and the youngest grandchild of Queen Victoria.
-He was styled as Prince Maurice throughout his life and died before the Battenberg family anglicised their surname to Mountbatten in 1917, meaning he was never known by that name.
-Early life
-
-Maurice was born on 3 October 1891.
-His father was Prince Henry of Battenberg, the son of Prince Alexander of Hesse and by Rhine and Julie Therese née Countess of Hauke.
-His mother was Princess Henry of Battenberg (née Princess Beatrice of the United Kingdom), the fifth daughter and the youngest child of Queen Victoria and Albert, Prince Consort.
-As he was the child of a morganatic marriage, Prince Henry of Battenberg took his style of Prince of Battenberg from his mother, Countess Julia Hauke, who was created Princess of Battenberg in her own right.
-As such, Maurice was styled as His Serene Highness Prince Maurice of Battenberg from birth.
-In the United Kingdom, he was styled His Highness Prince Maurice of Battenberg under a royal warrant passed by Queen Victoria in 1886.
-His godparents were the Duchess of Connaught and Strathearn (represented by Queen Victoria), the Princess of Leiningen (represented by Princess Christian of Schleswig-Holstein), the Duke of Clarence and Avondale (represented by Sir Henry Ponsonby), Prince Francis Joseph of Battenberg (represented by Sir Fleetwood Edwards) and the Hereditary Grand Duke of Hesse.
-The youngest of his four siblings, Maurice most resembled his father, who died when he was only four, the same age his mother was when her own father died.
-His elder sister Victoria Eugenie of Battenberg married Alfonso XIII of Spain and was Queen Consort of Spain between 1906 and 1931.
-Later life
-
-Maurice attended Wellington College and was a member of Benson House.
-Maurice was made a Freemason in the Old Wellingtonian Lodge No. 3404 (the Lodge of the Old Wellingtonians) on 21 June 1912 and was installed Master of the Twelve Brothers Lodge, No. 785 Southampton on 22 April 1914.
-After attending the Royal Military College, Sandhurst, Maurice was commissioned as a second lieutenant in the King's Royal Rifle Corps on 4 March 1911.
-Poor  Maurice was killed outright just on top of the ridge.
-"
+Princess María de las Mercedes of Bourbon-Two Sicilies (.mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}Spanish: ; María de las Mercedes Cristina Genara Isabel Luisa Carolina Victoria y Todos los Santos de Borbón y Orléans; 23 December 1910 – 2 January 2000) was a member of the Spanish royal family and the mother of King Juan Carlos I.
 
 
-Word of the Maurice's death was passed to Brigadier-General Fanshawe, commander of the 6th Infantry Brigade.
-He said, "By the death of H.H. Prince Maurice of Battenberg the Army loses a most gallant and valuable officer.
-His mother, Princess Beatrice, declined the offer of Lord Kitchener to have her son's body repatriated.
-The battalion war diary notes that his funeral took place on 31 October 1914 and records that, "Denison, Gough, the Sgt Major, Sgt O'Leary and a few others went down to poor Maurice's funeral in Ypres".
+The daughter of Prince Carlos of Bourbon-Two Sicilies and Princess Louise of Orléans, she married Infante Juan, Count of Barcelona, claimant to the Spanish throne.
+Biography
+
+María was born in Madrid, daughter of Prince Carlos of Bourbon-Two Sicilies, Infante of Spain, a grandson of King Ferdinand II of the Two Sicilies, and his second wife, Princess Louise of Orléans, daughter of Prince Philippe, Count of Paris, a pretender to the French throne.
+She was granted, at birth, the rank and precedence of an infanta of Spain, although not the actual use of the title, her own being Princess of Bourbon-Two Sicilies.
+When the Second Spanish Republic forced them into exile, they lived in Cannes and later in Paris, where she studied art at the Louvre.
+On 14 January 1935, she attended the wedding, in Rome, of Infanta Beatriz of Spain, daughter of King Alfonso XIII, to Alessandro Torlonia, 5th Prince of Civitella-Cesi.
+There she met the brother of the bride, her third cousin and future husband, the Infante Juan, fourth son and designated heir of Alfonso XIII.
+When her husband took up Count of Barcelona as a title of pretence on 8 March 1941, María became the Countess of Barcelona.
+They lived in Cannes and Rome, and, with the outbreak of World War II, they moved to Lausanne to live with Queen Victoria Eugenie, the mother of Infante Juan.
+In 1953, the Countess represented the Spanish Royal Family at the coronation of Queen Elizabeth II.
+In 1976, one year after the monarchy was restored in Spain in the person of her son, Juan Carlos, they returned to Spain.
+She mediated between her son and her husband, estranged since Juan Carlos had been designated heir by Franco.
+In 1977, Juan renounced his rights in favour of their son, who officially allowed him to retain the title of Count of Barcelona.
+In 1995, her granddaughter Infanta Elena married in Seville in part because the Countess' love for the city.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -132,39 +126,9 @@ The battalion war diary notes that his funeral took place on 31 October 1914 and
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -179,6 +143,23 @@ The battalion war diary notes that his funeral took place on 31 October 1914 and
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -196,6 +177,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -263,29 +259,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -294,6 +282,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -306,6 +302,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -314,17 +312,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -352,6 +352,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -367,167 +451,232 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a9dbf61d-fc10-4ebe-b770-53e1d150e1cb)
- Call ID: a9dbf61d-fc10-4ebe-b770-53e1d150e1cb
+  AssignClass (6b8b8f41-2f54-4aa3-ad1c-6addd9001e2b)
+ Call ID: 6b8b8f41-2f54-4aa3-ad1c-6addd9001e2b
   Args:
-    type: :Man
-    source: Prince_Maurice_of_Battenberg
-  AssignClass (9705e894-1be0-4d21-b5e4-e35f142ce94e)
- Call ID: 9705e894-1be0-4d21-b5e4-e35f142ce94e
-  Args:
-    source: Prince_Henry_of_Battenberg
-    type: :Man
-  AssignClass (cc8bee63-9f89-4050-87fa-eae4963d772f)
- Call ID: cc8bee63-9f89-4050-87fa-eae4963d772f
-  Args:
-    type: :Man
-    source: Prince_Alexander_of_Hesse_and_by_Rhine
-  AssignClass (f1857cd0-6ceb-42b8-9ae3-32b5631d2296)
- Call ID: f1857cd0-6ceb-42b8-9ae3-32b5631d2296
-  Args:
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
     type: :Woman
-    source: Julie_Therese_Countess_of_Hauke
-  AssignClass (6c01a2c0-5b2e-46cd-b2c7-ec98a1b8f960)
- Call ID: 6c01a2c0-5b2e-46cd-b2c7-ec98a1b8f960
+  AssignClass (881eb43b-8877-4855-8322-7e5a972bc9fa)
+ Call ID: 881eb43b-8877-4855-8322-7e5a972bc9fa
   Args:
-    type: :Woman
-    source: Princess_Beatrice_of_the_United_Kingdom
-  AssignClass (4cc0adbf-235b-43f4-8861-866eedb1bcd6)
- Call ID: 4cc0adbf-235b-43f4-8861-866eedb1bcd6
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+    type: :Person
+  AddLiteral (d559108e-469f-49ce-8b04-6f9558d7dad0)
+ Call ID: d559108e-469f-49ce-8b04-6f9558d7dad0
   Args:
-    source: Queen_Victoria
-    type: :Woman
-  AssignClass (5cd6658d-b95a-4c88-928b-41df8de3efd3)
- Call ID: 5cd6658d-b95a-4c88-928b-41df8de3efd3
-  Args:
-    type: :Man
-    source: Albert_Prince_Consort
-  AssignClass (28878c2a-367d-468f-a86c-fb6cd11bfdf5)
- Call ID: 28878c2a-367d-468f-a86c-fb6cd11bfdf5
-  Args:
-    type: :Woman
-    source: Victoria_Eugenie_of_Battenberg
-  AddTriple (d9a0a75e-cf0e-4d8c-9fdc-7fe8f50854ea)
- Call ID: d9a0a75e-cf0e-4d8c-9fdc-7fe8f50854ea
-  Args:
-    source: Prince_Maurice_of_Battenberg
-    target: Prince_Henry_of_Battenberg
-    relation: :hasFather
-  AddTriple (a55d7dff-4069-4cd0-b537-341b53365d5e)
- Call ID: a55d7dff-4069-4cd0-b537-341b53365d5e
-  Args:
-    source: Prince_Maurice_of_Battenberg
-    relation: :hasMother
-    target: Princess_Beatrice_of_the_United_Kingdom
-  AddTriple (f5a8cd81-54a8-4553-a13a-0df0800cda04)
- Call ID: f5a8cd81-54a8-4553-a13a-0df0800cda04
-  Args:
-    relation: :hasFather
-    target: Prince_Alexander_of_Hesse_and_by_Rhine
-    source: Prince_Henry_of_Battenberg
-  AddTriple (7fbc5b93-9d47-41bd-90af-5d8d07df4945)
- Call ID: 7fbc5b93-9d47-41bd-90af-5d8d07df4945
-  Args:
-    target: Julie_Therese_Countess_of_Hauke
-    relation: :hasMother
-    source: Prince_Henry_of_Battenberg
-  AddTriple (81670f44-d0b8-45df-9c81-d00ae8337307)
- Call ID: 81670f44-d0b8-45df-9c81-d00ae8337307
-  Args:
-    source: Princess_Beatrice_of_the_United_Kingdom
-    relation: :hasFather
-    target: Albert_Prince_Consort
-  AddTriple (ce5f19ea-68eb-42ed-a1f0-beb104ed9d96)
- Call ID: ce5f19ea-68eb-42ed-a1f0-beb104ed9d96
-  Args:
-    relation: :hasMother
-    target: Queen_Victoria
-    source: Princess_Beatrice_of_the_United_Kingdom
-  AddTriple (3de65218-6377-47ab-bd8e-939eb0c1ce68)
- Call ID: 3de65218-6377-47ab-bd8e-939eb0c1ce68
-  Args:
-    relation: :hasMother
-    target: Princess_Beatrice_of_the_United_Kingdom
-    source: Victoria_Eugenie_of_Battenberg
-  AddTriple (42983f92-6ba2-4af8-bfe0-be79ac5bf47b)
- Call ID: 42983f92-6ba2-4af8-bfe0-be79ac5bf47b
-  Args:
-    target: Prince_Henry_of_Battenberg
-    relation: :hasFather
-    source: Victoria_Eugenie_of_Battenberg
-  AddLiteral (74edbcb6-63f8-477f-a5b5-2b1841c38beb)
- Call ID: 74edbcb6-63f8-477f-a5b5-2b1841c38beb
-  Args:
+    literal_value: 1910
     relation: :hasBirthYear
-    source: Prince_Maurice_of_Battenberg
     literal_type: xsd:integer
-    literal_value: 1891
-  AddLiteral (e631d6cf-db48-483b-8f21-fe44d083179e)
- Call ID: e631d6cf-db48-483b-8f21-fe44d083179e
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+  AddLiteral (8798dacc-1ea8-49b0-b37d-61f81d68e6a7)
+ Call ID: 8798dacc-1ea8-49b0-b37d-61f81d68e6a7
   Args:
-    literal_value: 1914
-    literal_type: xsd:integer
-    source: Prince_Maurice_of_Battenberg
+    literal_value: 2000
     relation: :hasDeathYear
-  AddLiteral (75def74e-1c42-4ea9-8270-7b1b77a52a7d)
- Call ID: 75def74e-1c42-4ea9-8270-7b1b77a52a7d
+    literal_type: xsd:integer
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+  AssignClass (94a4629e-8214-4ede-94c4-95bb10a1b43b)
+ Call ID: 94a4629e-8214-4ede-94c4-95bb10a1b43b
   Args:
-    relation: :hasSex
-    source: Prince_Maurice_of_Battenberg
-    literal_type: xsd:string
-    literal_value: Male
-  AddLiteral (d7bed83c-8244-484b-bdd4-bfa00a26bf40)
- Call ID: d7bed83c-8244-484b-bdd4-bfa00a26bf40
+    source: Juan_Carlos_I
+    type: :Man
+  AssignClass (6f050f86-c5d8-4ecd-9e7c-5ffc5af15839)
+ Call ID: 6f050f86-c5d8-4ecd-9e7c-5ffc5af15839
   Args:
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-    source: Prince_Henry_of_Battenberg
-  AddLiteral (50f8607d-2ad2-430f-b784-4986dc817020)
- Call ID: 50f8607d-2ad2-430f-b784-4986dc817020
+    source: Juan_Carlos_I
+    type: :Person
+  AddTriple (786f6b3a-6ee5-4941-8bc4-e149bb578aa7)
+ Call ID: 786f6b3a-6ee5-4941-8bc4-e149bb578aa7
   Args:
-    relation: :hasSex
-    source: Prince_Alexander_of_Hesse_and_by_Rhine
-    literal_type: xsd:string
-    literal_value: Male
-  AddLiteral (fb798d11-0f07-445b-9af0-0a99ed680d2d)
- Call ID: fb798d11-0f07-445b-9af0-0a99ed680d2d
+    relation: :isMotherOf
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+    target: Juan_Carlos_I
+  AssignClass (b9533a6c-3be7-47b3-b28a-a4406082b474)
+ Call ID: b9533a6c-3be7-47b3-b28a-a4406082b474
   Args:
-    relation: :hasSex
-    source: Julie_Therese_Countess_of_Hauke
-    literal_type: xsd:string
-    literal_value: Female
-  AddLiteral (f8e89c85-fc5a-46c1-a753-582023797e3c)
- Call ID: f8e89c85-fc5a-46c1-a753-582023797e3c
+    source: Carlos_of_Bourbon-Two_Sicilies
+    type: :Man
+  AssignClass (e3fc2dfd-1f5a-40b4-a36a-a9367b4a9430)
+ Call ID: e3fc2dfd-1f5a-40b4-a36a-a9367b4a9430
   Args:
-    literal_value: Female
-    literal_type: xsd:string
-    source: Princess_Beatrice_of_the_United_Kingdom
-    relation: :hasSex
-  AddLiteral (ece65709-d1de-4cdd-abef-5e9199348c94)
- Call ID: ece65709-d1de-4cdd-abef-5e9199348c94
+    type: :Person
+    source: Carlos_of_Bourbon-Two_Sicilies
+  AssignClass (dd5ded86-5f88-4c92-b778-9433267677df)
+ Call ID: dd5ded86-5f88-4c92-b778-9433267677df
   Args:
-    source: Queen_Victoria
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-  AddLiteral (d6051cfe-6ab1-4c45-8dbf-742110d83b60)
- Call ID: d6051cfe-6ab1-4c45-8dbf-742110d83b60
+    source: Louise_of_Orleans
+    type: :Woman
+  AssignClass (76e39ad1-e168-49fc-ad5c-2891b8b1fd46)
+ Call ID: 76e39ad1-e168-49fc-ad5c-2891b8b1fd46
   Args:
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-    source: Albert_Prince_Consort
-  AddLiteral (a117bb6e-7939-4cf3-a078-cdf5eafac776)
- Call ID: a117bb6e-7939-4cf3-a078-cdf5eafac776
+    type: :Person
+    source: Louise_of_Orleans
+  AddTriple (9bfe61e0-6a3e-4c89-a6d3-40d1fcd8ea69)
+ Call ID: 9bfe61e0-6a3e-4c89-a6d3-40d1fcd8ea69
   Args:
-    relation: :hasSex
-    source: Victoria_Eugenie_of_Battenberg
-    literal_type: xsd:string
-    literal_value: Female
-  Finish (c4a5f6c9-31af-4404-a1a4-2165ba8586db)
- Call ID: c4a5f6c9-31af-4404-a1a4-2165ba8586db
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+    target: Carlos_of_Bourbon-Two_Sicilies
+    relation: :hasFather
+  AddTriple (5f516057-aab8-45a0-a26c-aa7b1e10d0e0)
+ Call ID: 5f516057-aab8-45a0-a26c-aa7b1e10d0e0
   Args:
+    relation: :hasMother
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+    target: Louise_of_Orleans
+  AssignClass (8c2dd936-60ea-4570-8c12-b3b39bccd838)
+ Call ID: 8c2dd936-60ea-4570-8c12-b3b39bccd838
+  Args:
+    type: :Man
+    source: Juan_Count_of_Barcelona
+  AssignClass (c9c34e1f-9c1f-4aaf-937f-57494b8c61e5)
+ Call ID: c9c34e1f-9c1f-4aaf-937f-57494b8c61e5
+  Args:
+    type: :Person
+    source: Juan_Count_of_Barcelona
+  AddTriple (f584c291-fe1a-47e0-b242-92d138d357ff)
+ Call ID: f584c291-fe1a-47e0-b242-92d138d357ff
+  Args:
+    relation: :hasRelation
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+    target: Juan_Count_of_Barcelona
+  AssignClass (49262913-9bd5-42e1-87dd-1aae89fe40ca)
+ Call ID: 49262913-9bd5-42e1-87dd-1aae89fe40ca
+  Args:
+    source: Ferdinand_II_of_the_Two_Sicilies
+    type: :Man
+  AssignClass (d76936b8-5447-4662-ac79-efa1060ee0b4)
+ Call ID: d76936b8-5447-4662-ac79-efa1060ee0b4
+  Args:
+    source: Ferdinand_II_of_the_Two_Sicilies
+    type: :Person
+  AddTriple (30a1320a-b88e-4ec6-8d86-e2bcd7718980)
+ Call ID: 30a1320a-b88e-4ec6-8d86-e2bcd7718980
+  Args:
+    source: Ferdinand_II_of_the_Two_Sicilies
+    target: Carlos_of_Bourbon-Two_Sicilies
+    relation: :isAncestorOf
+  AssignClass (ef462ccc-fcda-4bfc-a643-d1a5b8a9079d)
+ Call ID: ef462ccc-fcda-4bfc-a643-d1a5b8a9079d
+  Args:
+    source: Philippe_Count_of_Paris
+    type: :Man
+  AssignClass (45d43073-35c0-4d07-87c2-19ec2cd95d1e)
+ Call ID: 45d43073-35c0-4d07-87c2-19ec2cd95d1e
+  Args:
+    type: :Person
+    source: Philippe_Count_of_Paris
+  AddTriple (6a514d77-2b5f-474f-80cd-9e9f5844200a)
+ Call ID: 6a514d77-2b5f-474f-80cd-9e9f5844200a
+  Args:
+    relation: :isFatherOf
+    source: Philippe_Count_of_Paris
+    target: Louise_of_Orleans
+  AssignClass (540284fa-d743-4f3e-8d5e-3437bc8a5c2c)
+ Call ID: 540284fa-d743-4f3e-8d5e-3437bc8a5c2c
+  Args:
+    source: Beatriz_of_Spain
+    type: :Woman
+  AssignClass (5d9b36a4-24e6-45c8-b8ab-c9c8eb9345ac)
+ Call ID: 5d9b36a4-24e6-45c8-b8ab-c9c8eb9345ac
+  Args:
+    source: Beatriz_of_Spain
+    type: :Person
+  AddTriple (e20007ed-c685-49e0-9297-25c2c0e2efea)
+ Call ID: e20007ed-c685-49e0-9297-25c2c0e2efea
+  Args:
+    source: Beatriz_of_Spain
+    target: Juan_Count_of_Barcelona
+    relation: :isSisterOf
+  AssignClass (6c40331c-082e-4fa5-8df1-bcf749e10195)
+ Call ID: 6c40331c-082e-4fa5-8df1-bcf749e10195
+  Args:
+    type: :Man
+    source: Alfonso_XIII
+  AssignClass (71f92a32-12a2-4928-8410-eb39503c3db5)
+ Call ID: 71f92a32-12a2-4928-8410-eb39503c3db5
+  Args:
+    source: Alfonso_XIII
+    type: :Person
+  AddTriple (c6bb7f66-de34-4829-ad7a-c17907c5b367)
+ Call ID: c6bb7f66-de34-4829-ad7a-c17907c5b367
+  Args:
+    source: Alfonso_XIII
+    target: Beatriz_of_Spain
+    relation: :isFatherOf
+  AddTriple (92dddb78-b7a9-49f8-8d54-4ca63ea2d3f7)
+ Call ID: 92dddb78-b7a9-49f8-8d54-4ca63ea2d3f7
+  Args:
+    relation: :isFatherOf
+    target: Juan_Count_of_Barcelona
+    source: Alfonso_XIII
+  AssignClass (d01716ca-dcd3-40a9-b5bf-555a21365fc1)
+ Call ID: d01716ca-dcd3-40a9-b5bf-555a21365fc1
+  Args:
+    type: :Woman
+    source: Victoria_Eugenie
+  AssignClass (88eae670-dd60-4ae3-aea2-87e85350b26d)
+ Call ID: 88eae670-dd60-4ae3-aea2-87e85350b26d
+  Args:
+    source: Victoria_Eugenie
+    type: :Person
+  AddTriple (5ef35abd-9397-4ac0-a0c5-d16776b7dc12)
+ Call ID: 5ef35abd-9397-4ac0-a0c5-d16776b7dc12
+  Args:
+    relation: :isMotherOf
+    source: Victoria_Eugenie
+    target: Juan_Count_of_Barcelona
+  AssignClass (785aa312-bdab-472a-8662-7b9c0f95a3a2)
+ Call ID: 785aa312-bdab-472a-8662-7b9c0f95a3a2
+  Args:
+    source: Elena
+    type: :Woman
+  AssignClass (c1970b23-9fe1-4970-8367-0f0a8dae41dd)
+ Call ID: c1970b23-9fe1-4970-8367-0f0a8dae41dd
+  Args:
+    type: :Person
+    source: Elena
+  AddTriple (f2153ca9-38ee-492c-82bf-9f86ebf7ac02)
+ Call ID: f2153ca9-38ee-492c-82bf-9f86ebf7ac02
+  Args:
+    source: Elena
+    target: Juan_Carlos_I
+    relation: :isChildOf
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -636,41 +785,61 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Maurice_of_Battenberg a :Man ;
-      :hasBirthYear 1891 ;
-      :hasDeathYear 1914 ;
-      :hasFather data:Prince_Henry_of_Battenberg ;
-      :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-      :hasSex "Male"^^xsd:string .
+  data:Alfonso_XIII a :Man,
+          :Person ;
+      :isFatherOf data:Beatriz_of_Spain,
+          data:Juan_Count_of_Barcelona .
 
-  data:Victoria_Eugenie_of_Battenberg a :Woman ;
-      :hasFather data:Prince_Henry_of_Battenberg ;
-      :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-      :hasSex "Female"^^xsd:string .
+  data:Elena a :Person,
+          :Woman ;
+      :isChildOf data:Juan_Carlos_I .
 
-  data:Albert_Prince_Consort a :Man ;
-      :hasSex "Male"^^xsd:string .
+  data:Ferdinand_II_of_the_Two_Sicilies a :Man,
+          :Person ;
+      :isAncestorOf data:Carlos_of_Bourbon-Two_Sicilies .
 
-  data:Julie_Therese_Countess_of_Hauke a :Woman ;
-      :hasSex "Female"^^xsd:string .
+  data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,
+          :Woman ;
+      :hasBirthYear 1910 ;
+      :hasDeathYear 2000 ;
+      :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+      :hasMother data:Louise_of_Orleans ;
+      :hasRelation data:Juan_Count_of_Barcelona ;
+      :isMotherOf data:Juan_Carlos_I .
 
-  data:Prince_Alexander_of_Hesse_and_by_Rhine a :Man ;
-      :hasSex "Male"^^xsd:string .
+  data:Philippe_Count_of_Paris a :Man,
+          :Person ;
+      :isFatherOf data:Louise_of_Orleans .
 
-  data:Queen_Victoria a :Woman ;
-      :hasSex "Female"^^xsd:string .
+  data:Victoria_Eugenie a :Person,
+          :Woman ;
+      :isMotherOf data:Juan_Count_of_Barcelona .
 
-  data:Prince_Henry_of_Battenberg a :Man ;
-      :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
-      :hasMother data:Julie_Therese_Countess_of_Hauke ;
-      :hasSex "Male"^^xsd:string .
+  data:Beatriz_of_Spain a :Person,
+          :Woman ;
+      :isSisterOf data:Juan_Count_of_Barcelona .
 
-  data:Princess_Beatrice_of_the_United_Kingdom a :Woman ;
-      :hasFather data:Albert_Prince_Consort ;
-      :hasMother data:Queen_Victoria ;
-      :hasSex "Female"^^xsd:string .
+  data:Carlos_of_Bourbon-Two_Sicilies a :Man,
+          :Person .
+
+  data:Juan_Carlos_I a :Man,
+          :Person .
+
+  data:Louise_of_Orleans a :Person,
+          :Woman .
+
+  data:Juan_Count_of_Barcelona a :Man,
+          :Person .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (191d79a1-79db-4081-aabd-e62fbe2f9bb6)
+ Call ID: 191d79a1-79db-4081-aabd-e62fbe2f9bb6
+  Args:
 
 ================================= Tool Message =================================
 
@@ -680,718 +849,118 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (24c73167-c0c4-4c6d-96a6-871f90ecef05)
- Call ID: 24c73167-c0c4-4c6d-96a6-871f90ecef05
+  ValidateShacl (945569fb-fe21-4b57-9af7-e782cef5e243)
+ Call ID: 945569fb-fe21-4b57-9af7-e782cef5e243
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:88
+Total violations:13
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Prince_Henry_of_Battenberg' is missing the required class ':Sex'.
+      The node Carlos_of_Bourbon-Two_Sicilies is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Carlos_of_Bourbon-Two_Sicilies, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Prince_Maurice_of_Battenberg' is missing the required class ':Sex'.
+      The node Louise_of_Orleans is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Louise_of_Orleans, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Prince_Alexander_of_Hesse_and_by_Rhine' is missing the required class ':Sex'.
+      The node Juan_Carlos_I is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Juan_Carlos_I, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Albert_Prince_Consort' is missing the required class ':Sex'.
+      The node Carlos_of_Bourbon-Two_Sicilies is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Carlos_of_Bourbon-Two_Sicilies, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father 'Prince_Alexander_of_Hesse_and_by_Rhine' for 'Prince_Henry_of_Battenberg' lacks the required ':Ancestor' or ':Man' class.
+      The node Louise_of_Orleans is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Alexander_of_Hesse_and_by_Rhine', class=':Ancestor')
+      AssignClass(Louise_of_Orleans, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The father 'Prince_Henry_of_Battenberg' for 'Prince_Maurice_of_Battenberg' lacks the required ':Ancestor' or ':Man' class.
+      The node Juan_Carlos_I is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Henry_of_Battenberg', class=':Ancestor')
+      AssignClass(Juan_Carlos_I, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother 'Julie_Therese_Countess_of_Hauke' for 'Prince_Henry_of_Battenberg' lacks the required ':Ancestor' or ':Woman' class.
+      The node Carlos_of_Bourbon-Two_Sicilies is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Julie_Therese_Countess_of_Hauke', class=':Ancestor')
+      AssignClass(Carlos_of_Bourbon-Two_Sicilies, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother 'Princess_Beatrice_of_the_United_Kingdom' for 'Prince_Maurice_of_Battenberg' lacks the required ':Ancestor' or ':Woman' class.
+      The node Louise_of_Orleans is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Beatrice_of_the_United_Kingdom', class=':Ancestor')
+      AssignClass(Louise_of_Orleans, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Henry_of_Battenberg' is not typed as ':Sex'.
+      The node Juan_Carlos_I is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Juan_Carlos_I, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Maurice_of_Battenberg' is not typed as ':Sex'.
+      The node Alfonso_XIII is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Alfonso_XIII, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Alexander_of_Hesse_and_by_Rhine' is not typed as ':Sex'.
+      The node Philippe_Count_of_Paris is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Philippe_Count_of_Paris, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Albert_Prince_Consort' is not typed as ':Sex'.
+      The node Victoria_Eugenie is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Victoria_Eugenie, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Henry_of_Battenberg' is not typed as ':Sex'.
+      The node Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Alexander_of_Hesse_and_by_Rhine' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Victoria_Eugenie_of_Battenberg' is missing the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Albert_Prince_Consort' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Princess_Beatrice_of_the_United_Kingdom' is missing the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Queen_Victoria' is missing the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Maurice_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Julie_Therese_Countess_of_Hauke' is missing the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Prince_Alexander_of_Hesse_and_by_Rhine' for 'Prince_Henry_of_Battenberg' is missing the correct class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Alexander_of_Hesse_and_by_Rhine', class=':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Prince_Henry_of_Battenberg' for 'Victoria_Eugenie_of_Battenberg' is missing the correct class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Henry_of_Battenberg', class=':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Albert_Prince_Consort' for 'Princess_Beatrice_of_the_United_Kingdom' is missing the correct class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Albert_Prince_Consort', class=':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Prince_Henry_of_Battenberg' for 'Prince_Maurice_of_Battenberg' is missing the correct class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Henry_of_Battenberg', class=':Ancestor')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Julie_Therese_Countess_of_Hauke' for 'Prince_Henry_of_Battenberg' is missing the correct class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Julie_Therese_Countess_of_Hauke', class=':Ancestor')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Beatrice_of_the_United_Kingdom' for 'Victoria_Eugenie_of_Battenberg' is missing the correct class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Beatrice_of_the_United_Kingdom', class=':Ancestor')
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Queen_Victoria' for 'Princess_Beatrice_of_the_United_Kingdom' is missing the correct class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Beatrice_of_the_United_Kingdom' for 'Prince_Maurice_of_Battenberg' is missing the correct class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Beatrice_of_the_United_Kingdom', class=':Ancestor')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Henry_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Alexander_of_Hesse_and_by_Rhine' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Victoria_Eugenie_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Albert_Prince_Consort' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Princess_Beatrice_of_the_United_Kingdom' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Queen_Victoria' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Maurice_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Julie_Therese_Countess_of_Hauke' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Henry_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Alexander_of_Hesse_and_by_Rhine' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Victoria_Eugenie_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Albert_Prince_Consort' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Princess_Beatrice_of_the_United_Kingdom' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Queen_Victoria' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Maurice_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Julie_Therese_Countess_of_Hauke' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Henry_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Alexander_of_Hesse_and_by_Rhine' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Victoria_Eugenie_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Albert_Prince_Consort' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Princess_Beatrice_of_the_United_Kingdom' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Queen_Victoria' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Maurice_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Julie_Therese_Countess_of_Hauke' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Prince_Alexander_of_Hesse_and_by_Rhine' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Alexander_of_Hesse_and_by_Rhine', class=':Ancestor')
-
-
-  Violation [54]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Prince_Henry_of_Battenberg' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Henry_of_Battenberg', class=':Ancestor')
-
-
-  Violation [55]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Albert_Prince_Consort' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Albert_Prince_Consort', class=':Ancestor')
-
-
-  Violation [56]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Prince_Henry_of_Battenberg' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Henry_of_Battenberg', class=':Ancestor')
-
-
-  Violation [57]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Julie_Therese_Countess_of_Hauke' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Julie_Therese_Countess_of_Hauke', class=':Ancestor')
-
-
-  Violation [58]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Beatrice_of_the_United_Kingdom' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Beatrice_of_the_United_Kingdom', class=':Ancestor')
-
-
-  Violation [59]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Queen_Victoria' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
-
-
-  Violation [60]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Beatrice_of_the_United_Kingdom' lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Beatrice_of_the_United_Kingdom', class=':Ancestor')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Henry_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Alexander_of_Hesse_and_by_Rhine' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Victoria_Eugenie_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Albert_Prince_Consort' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Princess_Beatrice_of_the_United_Kingdom' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Queen_Victoria' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Maurice_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Julie_Therese_Countess_of_Hauke' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Henry_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Alexander_of_Hesse_and_by_Rhine' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Victoria_Eugenie_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Albert_Prince_Consort' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Princess_Beatrice_of_the_United_Kingdom' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Queen_Victoria' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Maurice_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Julie_Therese_Countess_of_Hauke' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [77]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Prince_Henry_of_Battenberg' for 'Victoria_Eugenie_of_Battenberg' lacks the ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Henry_of_Battenberg', class=':Ancestor')
-
-
-  Violation [78]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Albert_Prince_Consort' for 'Princess_Beatrice_of_the_United_Kingdom' lacks the ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Albert_Prince_Consort', class=':Ancestor')
-
-
-  Violation [79]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Princess_Beatrice_of_the_United_Kingdom' for 'Victoria_Eugenie_of_Battenberg' lacks the ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Beatrice_of_the_United_Kingdom', class=':Ancestor')
-
-
-  Violation [80]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother 'Queen_Victoria' for 'Princess_Beatrice_of_the_United_Kingdom' lacks the ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
-
-
-  Violation [81]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Queen_Victoria' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [82]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Victoria_Eugenie_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [83]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Princess_Beatrice_of_the_United_Kingdom' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [84]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Julie_Therese_Countess_of_Hauke' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [85]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Queen_Victoria' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [86]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Victoria_Eugenie_of_Battenberg' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [87]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Princess_Beatrice_of_the_United_Kingdom' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [88]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for 'hasSex' on 'Julie_Therese_Countess_of_Hauke' is not typed as ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies, :Ancestor)
 
 
 
@@ -1400,53 +969,41 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (bc8c3ec5-028a-48f2-9656-84c5b10aee79)
- Call ID: bc8c3ec5-028a-48f2-9656-84c5b10aee79
+  AssignClass (661205c9-729b-4e7a-bb78-bd0081bf0d80)
+ Call ID: 661205c9-729b-4e7a-bb78-bd0081bf0d80
   Args:
-    source: Male
-    type: :Sex
-  AssignClass (80300737-7ebf-4f94-a308-038167107073)
- Call ID: 80300737-7ebf-4f94-a308-038167107073
-  Args:
-    source: Female
-    type: :Sex
-  AssignClass (29dc85a1-4d69-4153-aa07-fb80567870d3)
- Call ID: 29dc85a1-4d69-4153-aa07-fb80567870d3
-  Args:
+    source: Carlos_of_Bourbon-Two_Sicilies
     type: :Ancestor
-    source: Prince_Alexander_of_Hesse_and_by_Rhine
-  AssignClass (ea84db6b-86da-4f7b-9511-130ac0647d5b)
- Call ID: ea84db6b-86da-4f7b-9511-130ac0647d5b
+  AssignClass (e5362127-c7ad-4636-b24e-0670145127d1)
+ Call ID: e5362127-c7ad-4636-b24e-0670145127d1
   Args:
-    source: Prince_Henry_of_Battenberg
+    source: Louise_of_Orleans
     type: :Ancestor
-  AssignClass (a77f39a9-a879-4e85-97ca-160bebbceae5)
- Call ID: a77f39a9-a879-4e85-97ca-160bebbceae5
+  AssignClass (a2bcee5c-c4df-4393-8bfb-d251aa53c94b)
+ Call ID: a2bcee5c-c4df-4393-8bfb-d251aa53c94b
   Args:
+    source: Juan_Carlos_I
     type: :Ancestor
-    source: Albert_Prince_Consort
-  AssignClass (8ffff2bd-8d4d-4732-86c2-b3ec73c802a3)
- Call ID: 8ffff2bd-8d4d-4732-86c2-b3ec73c802a3
+  AssignClass (9de5b66f-78d9-4c66-9c84-b853a8224f19)
+ Call ID: 9de5b66f-78d9-4c66-9c84-b853a8224f19
   Args:
+    source: Alfonso_XIII
     type: :Ancestor
-    source: Julie_Therese_Countess_of_Hauke
-  AssignClass (b94a816a-4a81-49ac-b9c0-49158afbe401)
- Call ID: b94a816a-4a81-49ac-b9c0-49158afbe401
+  AssignClass (b712ce6e-2e82-448f-86df-307785dcc1ec)
+ Call ID: b712ce6e-2e82-448f-86df-307785dcc1ec
   Args:
-    source: Princess_Beatrice_of_the_United_Kingdom
+    source: Philippe_Count_of_Paris
     type: :Ancestor
-  AssignClass (ac8ec03c-bcf7-4297-a5af-e712b6230147)
- Call ID: ac8ec03c-bcf7-4297-a5af-e712b6230147
+  AssignClass (0b2efd81-35bf-4988-876c-3d91a69979f6)
+ Call ID: 0b2efd81-35bf-4988-876c-3d91a69979f6
   Args:
+    source: Victoria_Eugenie
     type: :Ancestor
-    source: Queen_Victoria
-  Finish (cabeb212-b5af-4d42-9dec-67b3a9db9b02)
- Call ID: cabeb212-b5af-4d42-9dec-67b3a9db9b02
+  AssignClass (83c575b4-db16-4730-b474-abcf2811724c)
+ Call ID: 83c575b4-db16-4730-b474-abcf2811724c
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+    type: :Ancestor
 
 ================================= Tool Message =================================
 
@@ -1479,725 +1036,58 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Female a :Sex .
+  data:Alfonso_XIII a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Beatriz_of_Spain,
+          data:Juan_Count_of_Barcelona .
 
-  data:Male a :Sex .
-
-  data:Prince_Maurice_of_Battenberg a :Man ;
-      :hasBirthYear 1891 ;
-      :hasDeathYear 1914 ;
-      :hasFather data:Prince_Henry_of_Battenberg ;
-      :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Victoria_Eugenie_of_Battenberg a :Woman ;
-      :hasFather data:Prince_Henry_of_Battenberg ;
-      :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Albert_Prince_Consort a :Ancestor,
-          :Man ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Julie_Therese_Countess_of_Hauke a :Ancestor,
+  data:Elena a :Person,
           :Woman ;
-      :hasSex "Female"^^xsd:string .
+      :isChildOf data:Juan_Carlos_I .
 
-  data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
-          :Man ;
-      :hasSex "Male"^^xsd:string .
+  data:Ferdinand_II_of_the_Two_Sicilies a :Man,
+          :Person ;
+      :isAncestorOf data:Carlos_of_Bourbon-Two_Sicilies .
 
-  data:Queen_Victoria a :Ancestor,
+  data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Person,
           :Woman ;
-      :hasSex "Female"^^xsd:string .
+      :hasBirthYear 1910 ;
+      :hasDeathYear 2000 ;
+      :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
+      :hasMother data:Louise_of_Orleans ;
+      :hasRelation data:Juan_Count_of_Barcelona ;
+      :isMotherOf data:Juan_Carlos_I .
 
-  data:Prince_Henry_of_Battenberg a :Ancestor,
-          :Man ;
-      :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
-      :hasMother data:Julie_Therese_Countess_of_Hauke ;
-      :hasSex "Male"^^xsd:string .
+  data:Philippe_Count_of_Paris a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Louise_of_Orleans .
 
-  data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
+  data:Victoria_Eugenie a :Ancestor,
+          :Person,
           :Woman ;
-      :hasFather data:Albert_Prince_Consort ;
-      :hasMother data:Queen_Victoria ;
-      :hasSex "Female"^^xsd:string .
+      :isMotherOf data:Juan_Count_of_Barcelona .
 
+  data:Beatriz_of_Spain a :Person,
+          :Woman ;
+      :isSisterOf data:Juan_Count_of_Barcelona .
 
+  data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Man,
+          :Person .
 
-================================= Tool Message =================================
+  data:Juan_Carlos_I a :Ancestor,
+          :Man,
+          :Person .
 
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+  data:Louise_of_Orleans a :Ancestor,
+          :Person,
+          :Woman .
 
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (ec5b5249-b688-402a-9e5c-75eead03c7a5)
- Call ID: ec5b5249-b688-402a-9e5c-75eead03c7a5
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:82
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Henry_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Queen_Victoria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Alexander_of_Hesse_and_by_Rhine' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Julie_Therese_Countess_of_Hauke' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Albert_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Princess_Beatrice_of_the_United_Kingdom' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Henry_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Queen_Victoria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Alexander_of_Hesse_and_by_Rhine' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Julie_Therese_Countess_of_Hauke' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Albert_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Princess_Beatrice_of_the_United_Kingdom' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Henry_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Queen_Victoria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Alexander_of_Hesse_and_by_Rhine' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Julie_Therese_Countess_of_Hauke' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Albert_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Princess_Beatrice_of_the_United_Kingdom' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Henry_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Maurice_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Alexander_of_Hesse_and_by_Rhine' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Albert_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Henry_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Maurice_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Alexander_of_Hesse_and_by_Rhine' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Albert_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Henry_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Alexander_of_Hesse_and_by_Rhine' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Victoria_Eugenie_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Albert_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Princess_Beatrice_of_the_United_Kingdom' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Queen_Victoria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Maurice_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Julie_Therese_Countess_of_Hauke' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Henry_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Alexander_of_Hesse_and_by_Rhine' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Victoria_Eugenie_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Albert_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Princess_Beatrice_of_the_United_Kingdom' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Queen_Victoria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Maurice_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Julie_Therese_Countess_of_Hauke' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Henry_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Alexander_of_Hesse_and_by_Rhine' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Victoria_Eugenie_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Albert_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Princess_Beatrice_of_the_United_Kingdom' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Queen_Victoria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Maurice_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Julie_Therese_Countess_of_Hauke' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Henry_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Alexander_of_Hesse_and_by_Rhine' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Victoria_Eugenie_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Albert_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Princess_Beatrice_of_the_United_Kingdom' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Queen_Victoria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Maurice_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Julie_Therese_Countess_of_Hauke' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Henry_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Alexander_of_Hesse_and_by_Rhine' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Victoria_Eugenie_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Albert_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Princess_Beatrice_of_the_United_Kingdom' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Queen_Victoria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Maurice_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Julie_Therese_Countess_of_Hauke' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Henry_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Alexander_of_Hesse_and_by_Rhine' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Victoria_Eugenie_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Albert_Prince_Consort' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Princess_Beatrice_of_the_United_Kingdom' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Queen_Victoria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of the node 'Prince_Maurice_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Julie_Therese_Countess_of_Hauke' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Queen_Victoria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Victoria_Eugenie_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Princess_Beatrice_of_the_United_Kingdom' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Julie_Therese_Countess_of_Hauke' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [79]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Queen_Victoria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [80]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Victoria_Eugenie_of_Battenberg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [81]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Princess_Beatrice_of_the_United_Kingdom' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [82]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of the node 'Julie_Therese_Countess_of_Hauke' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
+  data:Juan_Count_of_Barcelona a :Man,
+          :Person .
 
 
 
@@ -2205,386 +1095,8 @@ Violations:
 
 []
 Tool Calls:
-  RemoveTriple (3ecba25b-372b-4dae-8315-e39608027337)
- Call ID: 3ecba25b-372b-4dae-8315-e39608027337
-  Args:
-    source: Prince_Maurice_of_Battenberg
-    relation: :hasSex
-    target: Male
-  RemoveTriple (0408918b-6c16-42b3-975b-5316af523459)
- Call ID: 0408918b-6c16-42b3-975b-5316af523459
-  Args:
-    target: Male
-    relation: :hasSex
-    source: Prince_Henry_of_Battenberg
-  RemoveTriple (9990317e-db7b-45d0-8907-74a947b7f7de)
- Call ID: 9990317e-db7b-45d0-8907-74a947b7f7de
-  Args:
-    target: Male
-    relation: :hasSex
-    source: Prince_Alexander_of_Hesse_and_by_Rhine
-  RemoveTriple (3f4dba15-3360-4d95-8daf-ba1cef888f27)
- Call ID: 3f4dba15-3360-4d95-8daf-ba1cef888f27
-  Args:
-    source: Albert_Prince_Consort
-    relation: :hasSex
-    target: Male
-  RemoveTriple (918e4143-a595-4eca-b579-f1d330f1615a)
- Call ID: 918e4143-a595-4eca-b579-f1d330f1615a
-  Args:
-    target: Female
-    relation: :hasSex
-    source: Princess_Beatrice_of_the_United_Kingdom
-  RemoveTriple (36d05849-8331-4275-abd1-22180d3ef04d)
- Call ID: 36d05849-8331-4275-abd1-22180d3ef04d
-  Args:
-    source: Queen_Victoria
-    target: Female
-    relation: :hasSex
-  RemoveTriple (7e20a901-9de9-498e-831e-671457028d8d)
- Call ID: 7e20a901-9de9-498e-831e-671457028d8d
-  Args:
-    source: Julie_Therese_Countess_of_Hauke
-    target: Female
-    relation: :hasSex
-  RemoveTriple (fdb0ba64-707d-4e89-812c-ae1906f4058f)
- Call ID: fdb0ba64-707d-4e89-812c-ae1906f4058f
-  Args:
-    target: Female
-    relation: :hasSex
-    source: Victoria_Eugenie_of_Battenberg
-  AddTriple (c1d1cd77-d702-4267-b03a-a9499b3dcc45)
- Call ID: c1d1cd77-d702-4267-b03a-a9499b3dcc45
-  Args:
-    target: Male
-    relation: :hasSex
-    source: Prince_Maurice_of_Battenberg
-  AddTriple (f522e4ec-5554-4cc4-8d5e-49f8664240b9)
- Call ID: f522e4ec-5554-4cc4-8d5e-49f8664240b9
-  Args:
-    relation: :hasSex
-    target: Male
-    source: Prince_Henry_of_Battenberg
-  AddTriple (3dc14845-3d41-4f96-940d-691b2b7fd3ab)
- Call ID: 3dc14845-3d41-4f96-940d-691b2b7fd3ab
-  Args:
-    source: Prince_Alexander_of_Hesse_and_by_Rhine
-    relation: :hasSex
-    target: Male
-  AddTriple (e60673ba-9ca8-4374-b74d-4cfe599ba001)
- Call ID: e60673ba-9ca8-4374-b74d-4cfe599ba001
-  Args:
-    source: Albert_Prince_Consort
-    relation: :hasSex
-    target: Male
-  AddTriple (4426ac51-6354-4288-9edc-e5694a2448b0)
- Call ID: 4426ac51-6354-4288-9edc-e5694a2448b0
-  Args:
-    source: Princess_Beatrice_of_the_United_Kingdom
-    target: Female
-    relation: :hasSex
-  AddTriple (d028cabb-4fd8-48ec-b139-04f607aba09c)
- Call ID: d028cabb-4fd8-48ec-b139-04f607aba09c
-  Args:
-    source: Queen_Victoria
-    target: Female
-    relation: :hasSex
-  AddTriple (321830b2-dc14-436e-89c5-d7d2c1a5f30e)
- Call ID: 321830b2-dc14-436e-89c5-d7d2c1a5f30e
-  Args:
-    relation: :hasSex
-    target: Female
-    source: Julie_Therese_Countess_of_Hauke
-  AddTriple (5fc70d49-e92d-4803-bb5a-a80e9a578fa7)
- Call ID: 5fc70d49-e92d-4803-bb5a-a80e9a578fa7
-  Args:
-    source: Victoria_Eugenie_of_Battenberg
-    relation: :hasSex
-    target: Female
-  Finish (0ee9aaa2-7461-439b-9c5a-fcde1156b97d)
- Call ID: 0ee9aaa2-7461-439b-9c5a-fcde1156b97d
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Prince_Maurice_of_Battenberg a :Man ;
-      :hasBirthYear 1891 ;
-      :hasDeathYear 1914 ;
-      :hasFather data:Prince_Henry_of_Battenberg ;
-      :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-      :hasSex data:Male,
-          "Male"^^xsd:string .
-
-  data:Victoria_Eugenie_of_Battenberg a :Woman ;
-      :hasFather data:Prince_Henry_of_Battenberg ;
-      :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-      :hasSex data:Female,
-          "Female"^^xsd:string .
-
-  data:Albert_Prince_Consort a :Ancestor,
-          :Man ;
-      :hasSex data:Male,
-          "Male"^^xsd:string .
-
-  data:Julie_Therese_Countess_of_Hauke a :Ancestor,
-          :Woman ;
-      :hasSex data:Female,
-          "Female"^^xsd:string .
-
-  data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
-          :Man ;
-      :hasSex data:Male,
-          "Male"^^xsd:string .
-
-  data:Queen_Victoria a :Ancestor,
-          :Woman ;
-      :hasSex data:Female,
-          "Female"^^xsd:string .
-
-  data:Prince_Henry_of_Battenberg a :Ancestor,
-          :Man ;
-      :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
-      :hasMother data:Julie_Therese_Countess_of_Hauke ;
-      :hasSex data:Male,
-          "Male"^^xsd:string .
-
-  data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
-          :Woman ;
-      :hasFather data:Albert_Prince_Consort ;
-      :hasMother data:Queen_Victoria ;
-      :hasSex data:Female,
-          "Female"^^xsd:string .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (ba0bad7e-4ec7-49e4-b3b8-f654175dc6d5)
- Call ID: ba0bad7e-4ec7-49e4-b3b8-f654175dc6d5
-  Args:
-    source: Prince_Maurice_of_Battenberg
-    literal_value: Male
-    relation: :hasSex
-    literal_type: xsd:string
-  RemoveLiteral (cebd411e-6f0d-4928-9b44-ef81c43d1eb0)
- Call ID: cebd411e-6f0d-4928-9b44-ef81c43d1eb0
-  Args:
-    literal_value: Male
-    source: Prince_Henry_of_Battenberg
-    literal_type: xsd:string
-    relation: :hasSex
-  RemoveLiteral (3fa4ef7e-3265-48de-a856-2df0af441d79)
- Call ID: 3fa4ef7e-3265-48de-a856-2df0af441d79
-  Args:
-    literal_value: Male
-    source: Prince_Alexander_of_Hesse_and_by_Rhine
-    literal_type: xsd:string
-    relation: :hasSex
-  RemoveLiteral (fadca32e-8ce5-4402-aea3-17dc691f2485)
- Call ID: fadca32e-8ce5-4402-aea3-17dc691f2485
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Albert_Prince_Consort
-    literal_value: Male
-  RemoveLiteral (61a457cb-df85-4295-a960-974ebb98ccc4)
- Call ID: 61a457cb-df85-4295-a960-974ebb98ccc4
-  Args:
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Female
-    source: Princess_Beatrice_of_the_United_Kingdom
-  RemoveLiteral (d2b6caf4-cba1-4850-aab2-2de116b1c6fe)
- Call ID: d2b6caf4-cba1-4850-aab2-2de116b1c6fe
-  Args:
-    source: Queen_Victoria
-    literal_value: Female
-    relation: :hasSex
-    literal_type: xsd:string
-  RemoveLiteral (db29662a-d7cb-4649-ac1a-e53b1b49e8bd)
- Call ID: db29662a-d7cb-4649-ac1a-e53b1b49e8bd
-  Args:
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Female
-    source: Julie_Therese_Countess_of_Hauke
-  RemoveLiteral (4723167c-7c6b-470e-b52e-da01c06a3a8e)
- Call ID: 4723167c-7c6b-470e-b52e-da01c06a3a8e
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Victoria_Eugenie_of_Battenberg
-    literal_value: Female
-  Finish (c5f1d36f-2aed-410f-817f-7b1f08452c81)
- Call ID: c5f1d36f-2aed-410f-817f-7b1f08452c81
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Prince_Maurice_of_Battenberg a :Man ;
-      :hasBirthYear 1891 ;
-      :hasDeathYear 1914 ;
-      :hasFather data:Prince_Henry_of_Battenberg ;
-      :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-      :hasSex data:Male .
-
-  data:Victoria_Eugenie_of_Battenberg a :Woman ;
-      :hasFather data:Prince_Henry_of_Battenberg ;
-      :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-      :hasSex data:Female .
-
-  data:Albert_Prince_Consort a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Julie_Therese_Countess_of_Hauke a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Queen_Victoria a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Prince_Henry_of_Battenberg a :Ancestor,
-          :Man ;
-      :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
-      :hasMother data:Julie_Therese_Countess_of_Hauke ;
-      :hasSex data:Male .
-
-  data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
-          :Woman ;
-      :hasFather data:Albert_Prince_Consort ;
-      :hasMother data:Queen_Victoria ;
-      :hasSex data:Female .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (dc79f807-d0c3-4e36-9054-0f2d01441e30)
- Call ID: dc79f807-d0c3-4e36-9054-0f2d01441e30
+  ValidateShacl (862eadaf-4b9e-413d-9a8b-512f37a985fd)
+ Call ID: 862eadaf-4b9e-413d-9a8b-512f37a985fd
   Args:
 
 ================================= Tool Message =================================
@@ -2595,6 +1107,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ac51e0fd-56e1-4156-8ca2-dd71b6c1ee78)
- Call ID: ac51e0fd-56e1-4156-8ca2-dd71b6c1ee78
+  Finish (cb6e7370-65c4-4918-98fd-abfbcc283736)
+ Call ID: cb6e7370-65c4-4918-98fd-abfbcc283736
   Args:

@@ -2,48 +2,79 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Cecilie_of_Greece_and_Denmark a :Woman ;
-    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-    :hasMother data:Princess_Alice_of_Battenberg .
+data:Duchess_Sophia_Charlotte_of_Oldenburg a :Person,
+        :Woman ;
+    :hasFather data:Frederick_Augustus_II ;
+    :hasMother data:Elisabeth_Anna .
 
-data:Ludwig_of_Baden a :Man ;
-    :hasFather data:Berthold_Margrave_of_Baden ;
-    :hasMother data:Theodora_of_Greece_and_Denmark .
+data:Elisabeth_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1955 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1896 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Frederick_Augustus_II ;
+    :isAuntOf data:Alexandrine_Queen_of_Denmark,
+        data:Cecilie_German_Crown_Princess,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
+        data:Marie_Grand_Duchess_of_Russia ;
+    :isSisterOf data:Hendrik_Prince_Consort_of_the_Netherlands .
 
-data:Margarita_of_Baden a :Woman ;
-    :hasFather data:Berthold_Margrave_of_Baden ;
-    :hasMother data:Theodora_of_Greece_and_Denmark .
+data:Grand_Duke_Cyril_Vladimirovich_of_Russia a :Man,
+        :Person ;
+    :hasMother data:Marie_Grand_Duchess_of_Russia .
 
-data:Margarita_of_Greece_and_Denmark a :Woman ;
-    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-    :hasMother data:Princess_Alice_of_Battenberg .
+data:Alexandrine_Queen_of_Denmark a :Person,
+        :Woman .
 
-data:Maximilian_of_Baden a :Man ;
-    :hasFather data:Berthold_Margrave_of_Baden ;
-    :hasMother data:Theodora_of_Greece_and_Denmark .
+data:Cecilie_German_Crown_Princess a :Person,
+        :Woman .
 
-data:Prince_Philip_Duke_of_Edinburgh a :Man ;
-    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-    :hasMother data:Princess_Alice_of_Battenberg .
+data:Frederick_Francis_II a :Ancestor,
+        :Man ;
+    :hasFather data:Paul_Frederick_Grand_Duke_of_Mecklenburg ;
+    :hasMother data:Princess_Alexandrine_of_Prussia .
 
-data:Sophie_of_Greece_and_Denmark a :Woman ;
-    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-    :hasMother data:Princess_Alice_of_Battenberg .
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
+        :Person .
 
-data:Prince_Maximilian_of_Baden a :Man .
+data:Hendrik_Prince_Consort_of_the_Netherlands a :Man,
+        :Person ;
+    :hasRelation data:Queen_Wilhelmina_of_the_Netherlands .
 
-data:Berthold_Margrave_of_Baden a :Man ;
-    :hasFather data:Prince_Maximilian_of_Baden .
+data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Woman ;
+    :hasFather data:Prince_Adolph_of_Schwarzburg-Rudolstadt ;
+    :hasMother data:Princess_Mathilde_of_Sch%C3%B6nburg-Waldenburg .
 
-data:Theodora_of_Greece_and_Denmark a :Woman ;
-    :hasBirthYear 1906 ;
-    :hasDeathYear 1969 ;
-    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-    :hasMarriageYear 1931 ;
-    :hasMother data:Princess_Alice_of_Battenberg ;
-    :knownAs "Theodora of Greece and Denmark"^^xsd:string .
+data:Paul_Frederick_Grand_Duke_of_Mecklenburg a :Ancestor,
+        :Man .
 
-data:Prince_Andrew_of_Greece_and_Denmark a :Man .
+data:Prince_Adolph_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Man .
 
-data:Princess_Alice_of_Battenberg a :Woman .
+data:Princess_Alexandrine_of_Prussia a :Ancestor,
+        :Woman .
+
+data:Princess_Mathilde_of_Sch%C3%B6nburg-Waldenburg a :Ancestor,
+        :Woman .
+
+data:Queen_Juliana_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Queen_Wilhelmina_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Elisabeth_Anna a :Ancestor,
+        :Woman .
+
+data:Frederick_Augustus_II a :Man,
+        :Person ;
+    :hasDeathYear 1931 ;
+    :hasRelation data:Elisabeth_Anna .
+
+data:Marie_Grand_Duchess_of_Russia a :Person,
+        :Woman .
 

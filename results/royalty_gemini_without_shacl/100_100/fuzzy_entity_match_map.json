@@ -16,28 +16,28 @@
       "qid": "Q1781299",
       "label": "Prince Dimitri Karađorđević",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_Alexander_of_Serbia",
       "qid": "Q2242035",
       "label": "Prince Alexander of Serbia",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Maria_Pia_of_Savoy",
       "qid": "Q922418",
       "label": "Princess Maria Pia of Savoy",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_Paul_of_Yugoslavia",
       "qid": "Q313128",
       "label": "Prince Paul of Yugoslavia",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     }
   ],
   "entities": [
@@ -52,11 +52,11 @@
       "ground_truth_qid": "Q2242035",
       "ground_truth_label": "Prince Alexander of Serbia",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Prince Alexander of Yugoslavia",
       "best_candidate_label": "Prince Alexander of Serbia",
       "best_candidate_qid": "Q2242035",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -70,11 +70,11 @@
       "ground_truth_qid": "Q922418",
       "ground_truth_label": "Princess Maria Pia of Savoy",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Maria Pia of Savoy",
       "best_candidate_label": "Princess Maria Pia of Savoy",
       "best_candidate_qid": "Q922418",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -88,11 +88,11 @@
       "ground_truth_qid": "Q313128",
       "ground_truth_label": "Prince Paul of Yugoslavia",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Prince of Yugoslavia Paul",
       "best_candidate_label": "Prince Paul of Yugoslavia",
       "best_candidate_qid": "Q313128",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.8333333333333333
     },
     {
@@ -107,11 +107,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Dimitri Nicolas Paul Georg Maria Karageorgievich",
-      "best_candidate_label": "Prince Dimitri Karađorđević",
-      "best_candidate_qid": "Q1781299",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.24
+      "best_candidate_match_text": "Maria Pia di Savoia",
+      "best_candidate_label": "Princess Maria Pia of Savoy",
+      "best_candidate_qid": "Q922418",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.391304347826087
     },
     {
       "extracted_uri": "http://example.org/data/PrinceMichaelOfYugoslavia",
@@ -125,11 +125,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Dimitri Nicolas Paul Georg Maria Karageorgievich",
-      "best_candidate_label": "Prince Dimitri Karađorđević",
-      "best_candidate_qid": "Q1781299",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.2631578947368421
+      "best_candidate_match_text": "Maria Pia di Savoia",
+      "best_candidate_label": "Princess Maria Pia of Savoy",
+      "best_candidate_qid": "Q922418",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5106382978723404
     },
     {
       "extracted_uri": "http://example.org/data/PrinceSergeOfYugoslavia",
@@ -143,11 +143,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Dimitri Nicolas Paul Georg Maria Karageorgievich",
-      "best_candidate_label": "Prince Dimitri Karađorđević",
-      "best_candidate_qid": "Q1781299",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.32432432432432434
+      "best_candidate_match_text": "Maria Pia di Savoia",
+      "best_candidate_label": "Princess Maria Pia of Savoy",
+      "best_candidate_qid": "Q922418",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.35555555555555557
     },
     {
       "extracted_uri": "http://example.org/data/PrincessBarbaraOfLiechtenstein",
@@ -161,11 +161,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Maria Pia di Savoia-Carignano, Principessa d'Italia",
-      "best_candidate_label": "Princess Maria Pia of Savoy",
-      "best_candidate_qid": "Q922418",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.2857142857142857
+      "best_candidate_match_text": "Dimitri Nicolas Paul Georg Maria Karageorgievich",
+      "best_candidate_label": "Prince Dimitri Karađorđević",
+      "best_candidate_qid": "Q1781299",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3950617283950617
     },
     {
       "extracted_uri": "http://example.org/data/PrincessHeleneOfYugoslavia",
@@ -182,13 +182,31 @@
       "best_candidate_match_text": "Maria Pia di Savoia-Carignano, Principessa d'Italia",
       "best_candidate_label": "Princess Maria Pia of Savoy",
       "best_candidate_qid": "Q922418",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.3
+    },
+    {
+      "extracted_uri": "http://example.org/data/UmbertoIIOfItaly",
+      "extracted_local_name": "UmbertoIIOfItaly",
+      "embedding_text": "Umberto IIOf Italy",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Dimitri Umberto Anton Peter Maria of Yugoslavia",
+      "best_candidate_label": "Prince Dimitri Karađorđević",
+      "best_candidate_qid": "Q1781299",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3888888888888889
     }
   ],
   "summary": {
-    "entities_total": 8,
+    "entities_total": 9,
     "entities_matched": 3,
-    "entities_unmatched": 5
+    "entities_unmatched": 6
   }
 }

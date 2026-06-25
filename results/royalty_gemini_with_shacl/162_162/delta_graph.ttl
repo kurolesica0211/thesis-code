@@ -2,41 +2,77 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carlos_Zurita_y_Delgado a :Man,
+data:Lu%C3%ADs_Filipe_Prince_Royal_of_Portugal a :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasFather data:Carlos_I_of_Portugal ;
+    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
 
-data:Felipe_VI a :Man,
+data:Manuel_II_of_Portugal a :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasFather data:Carlos_I_of_Portugal ;
+    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
 
-data:Infanta_Margarita a :Person,
-        :Woman ;
-    :hasBirthYear 1939 ;
-    :hasFather data:Infante_Juan ;
-    :hasMarriageYear 1972 ;
-    :hasMother data:Princess_Mercedes ;
-    :hasRelation data:Carlos_Zurita_y_Delgado ;
-    :hasSex data:Female ;
-    :isAuntOf data:Felipe_VI ;
-    :isSisterOf data:Juan_Carlos_I .
-
-data:Infante_Juan a :Ancestor,
+data:Antoine_Duke_of_Montpensier a :Ancestor,
         :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasFather data:Louis-Philippe_I_of_France ;
+    :hasMother data:Maria_Amalia_of_the_Two_Sicilies .
 
-data:Juan_Carlos_I a :Man,
+data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans a :Ancestor,
+        :Man,
         :Person ;
-    :hasSex data:Male ;
-    :hasSister data:Infanta_Margarita .
+    :hasFather data:Louis-Philippe_I_of_France ;
+    :hasMother data:Maria_Amalia_of_the_Two_Sicilies .
 
-data:Princess_Mercedes a :Ancestor,
+data:Helena_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Lu%C3%ADs_I_of_Portugal a :Ancestor,
+        :Man,
+        :Person .
+
+data:Luisa_Fernanda_of_Spain a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Maria_Pia_of_Savoy a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Marie_Isabelle_dOrl%C3%A9ans a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasFather data:Antoine_Duke_of_Montpensier ;
+    :hasMother data:Luisa_Fernanda_of_Spain .
 
-data:Female a :Sex .
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasMother data:Helena_of_Mecklenburg-Schwerin .
 
-data:Male a :Sex .
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1865 ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasMarriageYear 1886 ;
+    :hasMother data:Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasRelation data:Carlos_I_of_Portugal .
+
+data:Louis-Philippe_I_of_France a :Ancestor,
+        :Man,
+        :Person .
+
+data:Maria_Amalia_of_the_Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Carlos_I_of_Portugal a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Lu%C3%ADs_I_of_Portugal ;
+    :hasMother data:Maria_Pia_of_Savoy .
 

@@ -1,0 +1,345 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman ;
+    rdfs:label "Sophia of Prussia"^^xsd:string ;
+    data:posIndicesFull "13452:13469"^^xsd:string,
+        "14019:14036"^^xsd:string,
+        "630:647"^^xsd:string,
+        "6980:6997"^^xsd:string ;
+    data:wdtLink wdt:Q155822 ;
+    :alsoKnownAs "Queen Sophia of Greece"^^xsd:string,
+        "Queen Sophia, Queen Consort of Greece"^^xsd:string ;
+    :hasRelation data:Sophia_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Sophia_of_Prussia ;
+    :isSisterOf data:Sophia_of_Prussia .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Frederica of Hanover"^^xsd:string ;
+    data:posIndicesFull "8984:8993"^^xsd:string ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka"^^xsd:string,
+        "Friederike Luise von Griechenland"^^xsd:string,
+        "Princess Fredericka"^^xsd:string ;
+    :hasChild data:Constantine_II_of_Greece ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover ;
+    :hasSex data:female ;
+    :hasSister data:Frederica_of_Hanover ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece ;
+    :isAuntOf data:Constantine_II_of_Greece ;
+    :isBloodrelationOf data:Frederica_of_Hanover ;
+    :isMotherOf data:Constantine_II_of_Greece ;
+    :isParentOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Frederica_of_Hanover ;
+    :isSisterOf data:Frederica_of_Hanover .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "12014:12021"^^xsd:string,
+        "14093:14100"^^xsd:string,
+        "1730:1738"^^xsd:string,
+        "226:234"^^xsd:string,
+        "226:244"^^xsd:string,
+        "669:676"^^xsd:string,
+        "7009:7016"^^xsd:string,
+        "7131:7138"^^xsd:string,
+        "8713:8720"^^xsd:string,
+        "8895:8902"^^xsd:string ;
+    data:posIndicesPart "10054:10060"^^xsd:string,
+        "1022:1028"^^xsd:string,
+        "10285:10291"^^xsd:string,
+        "10358:10364"^^xsd:string,
+        "10800:10806"^^xsd:string,
+        "1099:1105"^^xsd:string,
+        "1149:1155"^^xsd:string,
+        "11908:11914"^^xsd:string,
+        "12407:12413"^^xsd:string,
+        "12534:12540"^^xsd:string,
+        "13431:13437"^^xsd:string,
+        "13497:13503"^^xsd:string,
+        "13624:13630"^^xsd:string,
+        "14526:14532"^^xsd:string,
+        "14743:14749"^^xsd:string,
+        "14944:14950"^^xsd:string,
+        "1565:1571"^^xsd:string,
+        "3061:3067"^^xsd:string,
+        "331:337"^^xsd:string,
+        "3776:3782"^^xsd:string,
+        "4500:4506"^^xsd:string,
+        "4580:4586"^^xsd:string,
+        "562:568"^^xsd:string,
+        "6389:6395"^^xsd:string,
+        "6535:6541"^^xsd:string,
+        "7355:7361"^^xsd:string,
+        "7543:7549"^^xsd:string,
+        "8122:8128"^^xsd:string,
+        "8186:8192"^^xsd:string,
+        "830:836"^^xsd:string,
+        "8580:8586"^^xsd:string,
+        "8664:8670"^^xsd:string,
+        "9137:9143"^^xsd:string,
+        "9339:9345"^^xsd:string,
+        "9531:9537"^^xsd:string,
+        "9598:9604"^^xsd:string,
+        "9636:9642"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isAncestorOf data:Constantine_I_of_Greece ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece ;
+    :isParentOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Constantine II of Greece"^^xsd:string ;
+    data:posIndicesFull "12213:12229"^^xsd:string,
+        "14429:14445"^^xsd:string,
+        "6606:6622"^^xsd:string,
+        "7700:7716"^^xsd:string ;
+    data:posIndicesPart "10054:10060"^^xsd:string,
+        "10285:10291"^^xsd:string,
+        "10358:10364"^^xsd:string,
+        "10446:10457"^^xsd:string,
+        "10621:10632"^^xsd:string,
+        "10800:10806"^^xsd:string,
+        "10826:10837"^^xsd:string,
+        "11004:11015"^^xsd:string,
+        "11226:11237"^^xsd:string,
+        "11590:11601"^^xsd:string,
+        "11642:11653"^^xsd:string,
+        "11908:11914"^^xsd:string,
+        "11929:11940"^^xsd:string,
+        "12065:12076"^^xsd:string,
+        "12378:12389"^^xsd:string,
+        "12534:12540"^^xsd:string,
+        "12840:12851"^^xsd:string,
+        "13059:13070"^^xsd:string,
+        "13116:13127"^^xsd:string,
+        "13334:13345"^^xsd:string,
+        "13497:13503"^^xsd:string,
+        "13851:13862"^^xsd:string,
+        "13982:13988"^^xsd:string,
+        "13990:14001"^^xsd:string,
+        "14163:14174"^^xsd:string,
+        "14526:14532"^^xsd:string,
+        "14668:14679"^^xsd:string,
+        "14743:14749"^^xsd:string,
+        "14944:14950"^^xsd:string,
+        "14977:14988"^^xsd:string,
+        "15010:15021"^^xsd:string,
+        "6765:6776"^^xsd:string,
+        "7101:7112"^^xsd:string,
+        "7172:7178"^^xsd:string,
+        "7236:7247"^^xsd:string,
+        "7355:7361"^^xsd:string,
+        "7402:7413"^^xsd:string,
+        "7543:7549"^^xsd:string,
+        "7899:7910"^^xsd:string,
+        "8122:8128"^^xsd:string,
+        "8186:8192"^^xsd:string,
+        "8352:8363"^^xsd:string,
+        "8413:8424"^^xsd:string,
+        "8517:8528"^^xsd:string,
+        "8580:8586"^^xsd:string,
+        "8664:8670"^^xsd:string,
+        "8726:8732"^^xsd:string,
+        "8785:8791"^^xsd:string,
+        "8822:8833"^^xsd:string,
+        "9078:9089"^^xsd:string,
+        "9137:9143"^^xsd:string,
+        "9243:9254"^^xsd:string,
+        "9339:9345"^^xsd:string,
+        "9531:9537"^^xsd:string,
+        "9598:9604"^^xsd:string,
+        "9636:9642"^^xsd:string,
+        "9733:9744"^^xsd:string,
+        "9768:9779"^^xsd:string,
+        "9997:10008"^^xsd:string ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece"^^xsd:string,
+        "Constantine Glucksburg"^^xsd:string,
+        "Constantine II"^^xsd:string,
+        "Constantino de Grecia"^^xsd:string,
+        "King Constantine"^^xsd:string,
+        "Konstantinos 2"^^xsd:string,
+        "Konstantinos II"^^xsd:string,
+        "Konstantinos II of Greece"^^xsd:string,
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes"^^xsd:string,
+        "Konstantínos 2"^^xsd:string,
+        "Konstantínos II"^^xsd:string ;
+    :hasAncestor data:Frederica_of_Hanover ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasParent data:Frederica_of_Hanover ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isChildOf data:Frederica_of_Hanover ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isSonOf data:Frederica_of_Hanover .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Constantine I of Greece"^^xsd:string ;
+    data:posIndicesFull "0:13"^^xsd:string,
+        "1502:1515"^^xsd:string,
+        "6904:6917"^^xsd:string ;
+    data:posIndicesPart "10054:10060"^^xsd:string,
+        "1022:1028"^^xsd:string,
+        "10285:10291"^^xsd:string,
+        "10358:10364"^^xsd:string,
+        "10446:10457"^^xsd:string,
+        "10621:10632"^^xsd:string,
+        "10800:10806"^^xsd:string,
+        "10826:10837"^^xsd:string,
+        "1099:1105"^^xsd:string,
+        "11004:11015"^^xsd:string,
+        "11226:11237"^^xsd:string,
+        "1149:1155"^^xsd:string,
+        "11590:11601"^^xsd:string,
+        "11642:11653"^^xsd:string,
+        "11908:11914"^^xsd:string,
+        "11929:11940"^^xsd:string,
+        "12065:12076"^^xsd:string,
+        "12378:12389"^^xsd:string,
+        "12534:12540"^^xsd:string,
+        "1275:1286"^^xsd:string,
+        "12840:12851"^^xsd:string,
+        "13059:13070"^^xsd:string,
+        "13116:13127"^^xsd:string,
+        "13334:13345"^^xsd:string,
+        "13497:13503"^^xsd:string,
+        "13851:13862"^^xsd:string,
+        "13982:13988"^^xsd:string,
+        "13990:14001"^^xsd:string,
+        "14163:14174"^^xsd:string,
+        "14526:14532"^^xsd:string,
+        "14668:14679"^^xsd:string,
+        "14743:14749"^^xsd:string,
+        "1474:1485"^^xsd:string,
+        "14944:14950"^^xsd:string,
+        "14977:14988"^^xsd:string,
+        "15010:15021"^^xsd:string,
+        "1651:1662"^^xsd:string,
+        "1939:1950"^^xsd:string,
+        "2121:2132"^^xsd:string,
+        "2174:2185"^^xsd:string,
+        "2262:2273"^^xsd:string,
+        "2613:2624"^^xsd:string,
+        "2716:2727"^^xsd:string,
+        "2816:2827"^^xsd:string,
+        "2946:2957"^^xsd:string,
+        "3304:3315"^^xsd:string,
+        "331:337"^^xsd:string,
+        "3400:3411"^^xsd:string,
+        "360:371"^^xsd:string,
+        "3613:3624"^^xsd:string,
+        "3942:3953"^^xsd:string,
+        "4232:4243"^^xsd:string,
+        "4580:4586"^^xsd:string,
+        "4643:4654"^^xsd:string,
+        "4754:4765"^^xsd:string,
+        "4937:4948"^^xsd:string,
+        "5107:5118"^^xsd:string,
+        "5242:5253"^^xsd:string,
+        "5364:5375"^^xsd:string,
+        "5487:5498"^^xsd:string,
+        "562:568"^^xsd:string,
+        "5827:5838"^^xsd:string,
+        "6139:6150"^^xsd:string,
+        "6287:6298"^^xsd:string,
+        "6490:6501"^^xsd:string,
+        "6535:6541"^^xsd:string,
+        "6765:6776"^^xsd:string,
+        "7101:7112"^^xsd:string,
+        "7172:7178"^^xsd:string,
+        "7236:7247"^^xsd:string,
+        "723:734"^^xsd:string,
+        "7355:7361"^^xsd:string,
+        "7402:7413"^^xsd:string,
+        "7543:7549"^^xsd:string,
+        "7899:7910"^^xsd:string,
+        "8122:8128"^^xsd:string,
+        "8186:8192"^^xsd:string,
+        "830:836"^^xsd:string,
+        "8352:8363"^^xsd:string,
+        "8413:8424"^^xsd:string,
+        "8517:8528"^^xsd:string,
+        "8580:8586"^^xsd:string,
+        "8664:8670"^^xsd:string,
+        "8726:8732"^^xsd:string,
+        "8785:8791"^^xsd:string,
+        "880:891"^^xsd:string,
+        "8822:8833"^^xsd:string,
+        "9078:9089"^^xsd:string,
+        "9137:9143"^^xsd:string,
+        "9243:9254"^^xsd:string,
+        "9339:9345"^^xsd:string,
+        "9531:9537"^^xsd:string,
+        "9598:9604"^^xsd:string,
+        "9636:9642"^^xsd:string,
+        "9733:9744"^^xsd:string,
+        "9768:9779"^^xsd:string,
+        "9997:10008"^^xsd:string ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I"^^xsd:string,
+        "Constantine Oldenburg I"^^xsd:string,
+        "King Constantine I"^^xsd:string,
+        "King Constantine I of Greece"^^xsd:string,
+        "Konstantinos I of Greece"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_I_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isSonOf data:George_I_of_Greece .
+

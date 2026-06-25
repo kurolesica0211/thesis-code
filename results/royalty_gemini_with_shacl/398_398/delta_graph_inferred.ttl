@@ -1,0 +1,244 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:DukeOfBuccleuch7th a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:DukeOfBuccleuch7th ;
+    :hasChild data:PrincessAliceDuchessOfGloucester ;
+    :hasDaughter data:PrincessAliceDuchessOfGloucester ;
+    :hasRelation data:DukeOfBuccleuch7th,
+        data:GeorgeV,
+        data:LadyMargaretBridgeman,
+        data:PrinceHenryDukeOfGloucester,
+        data:PrinceRichard,
+        data:PrinceWilliamOfGloucester,
+        data:PrincessAliceDuchessOfGloucester,
+        data:QueenMary ;
+    :isAncestorOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester,
+        data:PrincessAliceDuchessOfGloucester ;
+    :isBloodrelationOf data:DukeOfBuccleuch7th ;
+    :isBrotherOf data:DukeOfBuccleuch7th ;
+    :isFatherOf data:PrincessAliceDuchessOfGloucester ;
+    :isParentOf data:PrincessAliceDuchessOfGloucester ;
+    :isSiblingOf data:DukeOfBuccleuch7th ;
+    :isUncleOf data:PrincessAliceDuchessOfGloucester .
+
+data:GeorgeV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeV ;
+    :hasChild data:PrinceHenryDukeOfGloucester ;
+    :hasRelation data:DukeOfBuccleuch7th,
+        data:GeorgeV,
+        data:LadyMargaretBridgeman,
+        data:PrinceHenryDukeOfGloucester,
+        data:PrinceRichard,
+        data:PrinceWilliamOfGloucester,
+        data:PrincessAliceDuchessOfGloucester,
+        data:QueenMary ;
+    :hasSon data:PrinceHenryDukeOfGloucester ;
+    :isAncestorOf data:PrinceHenryDukeOfGloucester,
+        data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isBloodrelationOf data:GeorgeV ;
+    :isBrotherOf data:GeorgeV ;
+    :isFatherOf data:PrinceHenryDukeOfGloucester ;
+    :isParentOf data:PrinceHenryDukeOfGloucester ;
+    :isSiblingOf data:GeorgeV ;
+    :isUncleOf data:PrinceHenryDukeOfGloucester .
+
+data:LadyMargaretBridgeman a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessAliceDuchessOfGloucester ;
+    :hasDaughter data:PrincessAliceDuchessOfGloucester ;
+    :hasRelation data:DukeOfBuccleuch7th,
+        data:GeorgeV,
+        data:LadyMargaretBridgeman,
+        data:PrinceHenryDukeOfGloucester,
+        data:PrinceRichard,
+        data:PrinceWilliamOfGloucester,
+        data:PrincessAliceDuchessOfGloucester,
+        data:QueenMary ;
+    :hasSister data:LadyMargaretBridgeman ;
+    :isAncestorOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester,
+        data:PrincessAliceDuchessOfGloucester ;
+    :isAuntOf data:PrincessAliceDuchessOfGloucester ;
+    :isBloodrelationOf data:LadyMargaretBridgeman ;
+    :isMotherOf data:PrincessAliceDuchessOfGloucester ;
+    :isParentOf data:PrincessAliceDuchessOfGloucester ;
+    :isSiblingOf data:LadyMargaretBridgeman ;
+    :isSisterOf data:LadyMargaretBridgeman .
+
+data:QueenMary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceHenryDukeOfGloucester ;
+    :hasRelation data:DukeOfBuccleuch7th,
+        data:GeorgeV,
+        data:LadyMargaretBridgeman,
+        data:PrinceHenryDukeOfGloucester,
+        data:PrinceRichard,
+        data:PrinceWilliamOfGloucester,
+        data:PrincessAliceDuchessOfGloucester,
+        data:QueenMary ;
+    :hasSister data:QueenMary ;
+    :hasSon data:PrinceHenryDukeOfGloucester ;
+    :isAncestorOf data:PrinceHenryDukeOfGloucester,
+        data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isAuntOf data:PrinceHenryDukeOfGloucester ;
+    :isBloodrelationOf data:QueenMary ;
+    :isMotherOf data:PrinceHenryDukeOfGloucester ;
+    :isParentOf data:PrinceHenryDukeOfGloucester ;
+    :isSiblingOf data:QueenMary ;
+    :isSisterOf data:QueenMary .
+
+data:PrinceRichard a :Man,
+        :Person ;
+    :hasAncestor data:DukeOfBuccleuch7th,
+        data:GeorgeV,
+        data:LadyMargaretBridgeman,
+        data:PrinceHenryDukeOfGloucester,
+        data:PrincessAliceDuchessOfGloucester,
+        data:QueenMary ;
+    :hasBrother data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :hasFather data:PrinceHenryDukeOfGloucester ;
+    :hasMother data:PrincessAliceDuchessOfGloucester ;
+    :hasParent data:PrinceHenryDukeOfGloucester,
+        data:PrincessAliceDuchessOfGloucester ;
+    :hasRelation data:DukeOfBuccleuch7th,
+        data:GeorgeV,
+        data:LadyMargaretBridgeman,
+        data:PrinceHenryDukeOfGloucester,
+        data:PrinceRichard,
+        data:PrinceWilliamOfGloucester,
+        data:PrincessAliceDuchessOfGloucester,
+        data:QueenMary ;
+    :isBloodrelationOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isBrotherOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isChildOf data:PrinceHenryDukeOfGloucester,
+        data:PrincessAliceDuchessOfGloucester ;
+    :isSiblingOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isSonOf data:PrinceHenryDukeOfGloucester,
+        data:PrincessAliceDuchessOfGloucester .
+
+data:PrinceWilliamOfGloucester a :Man,
+        :Person ;
+    :hasAncestor data:DukeOfBuccleuch7th,
+        data:GeorgeV,
+        data:LadyMargaretBridgeman,
+        data:PrinceHenryDukeOfGloucester,
+        data:PrincessAliceDuchessOfGloucester,
+        data:QueenMary ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :hasDeathYear 1972 ;
+    :hasFather data:PrinceHenryDukeOfGloucester ;
+    :hasMother data:PrincessAliceDuchessOfGloucester ;
+    :hasParent data:PrinceHenryDukeOfGloucester,
+        data:PrincessAliceDuchessOfGloucester ;
+    :hasRelation data:DukeOfBuccleuch7th,
+        data:GeorgeV,
+        data:LadyMargaretBridgeman,
+        data:PrinceHenryDukeOfGloucester,
+        data:PrinceRichard,
+        data:PrinceWilliamOfGloucester,
+        data:PrincessAliceDuchessOfGloucester,
+        data:QueenMary ;
+    :isBloodrelationOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isBrotherOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isChildOf data:PrinceHenryDukeOfGloucester,
+        data:PrincessAliceDuchessOfGloucester ;
+    :isSiblingOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isSonOf data:PrinceHenryDukeOfGloucester,
+        data:PrincessAliceDuchessOfGloucester .
+
+data:PrinceHenryDukeOfGloucester a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:GeorgeV,
+        data:QueenMary ;
+    :hasBrother data:PrinceHenryDukeOfGloucester ;
+    :hasChild data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :hasFather data:GeorgeV ;
+    :hasMother data:QueenMary ;
+    :hasParent data:GeorgeV,
+        data:QueenMary ;
+    :hasRelation data:DukeOfBuccleuch7th,
+        data:GeorgeV,
+        data:LadyMargaretBridgeman,
+        data:PrinceHenryDukeOfGloucester,
+        data:PrinceRichard,
+        data:PrinceWilliamOfGloucester,
+        data:PrincessAliceDuchessOfGloucester,
+        data:QueenMary ;
+    :hasSon data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isAncestorOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isBloodrelationOf data:PrinceHenryDukeOfGloucester ;
+    :isBrotherOf data:PrinceHenryDukeOfGloucester ;
+    :isChildOf data:GeorgeV,
+        data:QueenMary ;
+    :isFatherOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isParentOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isSiblingOf data:PrinceHenryDukeOfGloucester ;
+    :isSonOf data:GeorgeV,
+        data:QueenMary ;
+    :isUncleOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester .
+
+data:PrincessAliceDuchessOfGloucester a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:DukeOfBuccleuch7th,
+        data:LadyMargaretBridgeman ;
+    :hasChild data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :hasFather data:DukeOfBuccleuch7th ;
+    :hasMother data:LadyMargaretBridgeman ;
+    :hasParent data:DukeOfBuccleuch7th,
+        data:LadyMargaretBridgeman ;
+    :hasRelation data:DukeOfBuccleuch7th,
+        data:GeorgeV,
+        data:LadyMargaretBridgeman,
+        data:PrinceHenryDukeOfGloucester,
+        data:PrinceRichard,
+        data:PrinceWilliamOfGloucester,
+        data:PrincessAliceDuchessOfGloucester,
+        data:QueenMary ;
+    :hasSister data:PrincessAliceDuchessOfGloucester ;
+    :hasSon data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isAncestorOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isAuntOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isBloodrelationOf data:PrincessAliceDuchessOfGloucester ;
+    :isChildOf data:DukeOfBuccleuch7th,
+        data:LadyMargaretBridgeman ;
+    :isDaughterOf data:DukeOfBuccleuch7th,
+        data:LadyMargaretBridgeman ;
+    :isMotherOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isParentOf data:PrinceRichard,
+        data:PrinceWilliamOfGloucester ;
+    :isSiblingOf data:PrincessAliceDuchessOfGloucester ;
+    :isSisterOf data:PrincessAliceDuchessOfGloucester .
+

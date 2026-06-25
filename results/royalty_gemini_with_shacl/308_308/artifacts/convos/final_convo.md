@@ -85,23 +85,27 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Duke of Castro  The Duchess of Castro
+Paul Dmitrievich Romanovsky-Ilyinsky (January 27, 1928 – February 10, 2004) was a three-time mayor of Palm Beach, Florida, and the only child of Grand Duke Dmitri Pavlovich of Russia and his morganatic wife, Cincinnati heiress Audrey Emery.
+He was a great-grandson of Tsar Alexander II of Russia and, following the death of Grand Duke Vladimir Kirillovich in 1992, the heir-male of the Ilyinsky claim of the House of Romanov (a position now held by his elder son), a first cousin once removed of Nicholas II, first cousin of Prince Lennart of Sweden, Duke of Småland and the second cousin of Charles III.
+Early life
 
+Prince Paul Romanovsky-Ilyinsky was born on 27 January 1928 at his parents' home, 26 Manchester Square, London.
+His father, Grand Duke Dmitri, as a direct consequence of his involvement in the murder of Grigori Rasputin in 1916, had been sent to the Persian front, which ultimately saved his life, as many of his Imperial relatives were executed by the Bolsheviks during the October Revolution .
+Dmitri, who was working as a champagne salesman, married Cincinnati heiress Audrey Emery in 1926.
+Grand Duke Cyril Vladimirovich of Russia, Dmitri's cousin and the self-proclaimed emperor in exile, elevated Grand Duke Dmitri's wife and their descendants to Russian princely (Russian: knyaz) rank (rank of nobility, not royalty).
+Any children the couple would have would be known as Romanovsky-Ilyinsky, the latter half of the surname derived from Dmitri's former property in Russia, Ilinskoe.
+Ilynskiy's parents were divorced in 1937, and Ilyinsky was raised by his mother, who mostly lived in France.
+Dmitri Pavlovich's health had always been somewhat frail, and in the 1930s, his chronic tuberculosis became acute, leading to his death in 1942.
+Education and career
 
-Princess Béatrice Marie Caroline Louise Françoise of Bourbon-Two Sicilies (born 16 June 1950 in Saint-Raphaël, Var, France) is the eldest daughter of Prince Ferdinand, Duke of Castro, Castro-line claimant to the headship of the House of Bourbon-Two Sicilies, and his wife, Chantal de Chevron-Villette.
-Her younger brother, Prince Carlo, Duke of Castro, is the current Castro-line claimant to the headship of the House of Bourbon-Two Sicilies.
-Marriage and issue
+Ilyinsky, who was a U.S. citizen, attended Woodberry Forest School in Virginia and the Royal Military Academy Sandhurst, England, before joining the U.S. Marine Corps.
+Ilyinsky lived in Cincinnati for about 20 years, serving on the board of the company founded by his mother's family, Emery Industries, and working as an author and photographer.
+Ilyinsky died at his home in Palm Beach, Florida, on February 10, 2004.
+Personal life
 
-Béatrice married Charles Napoléon Bonaparte, eldest son of Louis, Prince Napoléon and his wife, Alix de Foresta, on 19 December 1978 in Paris, France.
-Charles was the great-great-grandnephew of Napoleon I of France, founder of the Imperial House of France.
-Béatrice and Charles had two children:
+Ilyinsky was married twice; he married his first wife, Mary Evelyn Prince in 1948 (annulment in 1951), and married his second wife, Angelica Philippa Kauffmann in 1953.
+Ilyinsky had four children:
 
-
-Title, styles and honours
-
-Title and styles
-
-Honours
 
 Ancestry
 
@@ -112,6 +116,8 @@ References
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -127,39 +133,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -174,6 +150,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -191,6 +184,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,29 +266,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -289,6 +289,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -301,6 +309,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -309,17 +319,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -347,6 +359,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -362,177 +458,98 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (113cbd6b-5773-4270-925d-ada8ad63d869)
- Call ID: 113cbd6b-5773-4270-925d-ada8ad63d869
+  AssignClass (ec553b62-aa67-473f-b590-bd89f744d627)
+ Call ID: ec553b62-aa67-473f-b590-bd89f744d627
   Args:
-    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
-    type: :Person
-  AssignClass (45a69c3a-c716-400e-ac0a-a5f121555672)
- Call ID: 45a69c3a-c716-400e-ac0a-a5f121555672
+    type: :Man
+    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
+  AssignClass (820522cd-9563-4a04-b7f5-5835cc4ffa1f)
+ Call ID: 820522cd-9563-4a04-b7f5-5835cc4ffa1f
+  Args:
+    type: :Man
+    source: Dmitri_Pavlovich_of_Russia
+  AssignClass (0ce3246a-bdc9-4c35-ac98-edc28c7ae400)
+ Call ID: 0ce3246a-bdc9-4c35-ac98-edc28c7ae400
   Args:
     type: :Woman
-    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
-  AssignClass (db257769-0201-4347-9381-6f885cefba4a)
- Call ID: db257769-0201-4347-9381-6f885cefba4a
+    source: Audrey_Emery
+  AddLiteral (6d398a7e-a13d-4667-9e39-1a4e74e26b43)
+ Call ID: 6d398a7e-a13d-4667-9e39-1a4e74e26b43
   Args:
-    type: :Person
-    source: Prince_Ferdinand_Duke_of_Castro
-  AssignClass (da5f66dc-de0b-4eaa-8919-ab8fa8cc8eec)
- Call ID: da5f66dc-de0b-4eaa-8919-ab8fa8cc8eec
-  Args:
-    source: Prince_Ferdinand_Duke_of_Castro
-    type: :Man
-  AssignClass (ce0723f2-333c-4b4c-a5e4-a8d4d6c8dea1)
- Call ID: ce0723f2-333c-4b4c-a5e4-a8d4d6c8dea1
-  Args:
-    type: :Person
-    source: Chantal_de_Chevron-Villette
-  AssignClass (39928e2b-9fb1-4880-a781-1e2bb3053b93)
- Call ID: 39928e2b-9fb1-4880-a781-1e2bb3053b93
-  Args:
-    type: :Woman
-    source: Chantal_de_Chevron-Villette
-  AssignClass (16e9bf7a-90ef-4131-8a75-bf8f31ab1948)
- Call ID: 16e9bf7a-90ef-4131-8a75-bf8f31ab1948
-  Args:
-    type: :Person
-    source: Prince_Carlo_Duke_of_Castro
-  AssignClass (43dbe745-5d0c-40f6-98ba-5b3e2484afc7)
- Call ID: 43dbe745-5d0c-40f6-98ba-5b3e2484afc7
-  Args:
-    source: Prince_Carlo_Duke_of_Castro
-    type: :Man
-  AssignClass (8634e9fa-d937-4d7a-8c25-38bcec8449f0)
- Call ID: 8634e9fa-d937-4d7a-8c25-38bcec8449f0
-  Args:
-    type: :Person
-    source: Charles_Napoléon_Bonaparte
-  AssignClass (bcd6d016-d5b4-40f2-bf9e-1a8f6d159e29)
- Call ID: bcd6d016-d5b4-40f2-bf9e-1a8f6d159e29
-  Args:
-    type: :Man
-    source: Charles_Napoléon_Bonaparte
-  AssignClass (3300bc45-54c7-4f7c-bbdb-fc23fd062e9c)
- Call ID: 3300bc45-54c7-4f7c-bbdb-fc23fd062e9c
-  Args:
-    type: :Person
-    source: Louis_Prince_Napoléon
-  AssignClass (d8e105c2-6acf-404f-950f-e6afa55ffad6)
- Call ID: d8e105c2-6acf-404f-950f-e6afa55ffad6
-  Args:
-    type: :Man
-    source: Louis_Prince_Napoléon
-  AssignClass (ab279276-c1a5-45fc-8f14-11528da15b99)
- Call ID: ab279276-c1a5-45fc-8f14-11528da15b99
-  Args:
-    type: :Person
-    source: Alix_de_Foresta
-  AssignClass (56c5f699-f180-489f-b3b5-00a933aaeebe)
- Call ID: 56c5f699-f180-489f-b3b5-00a933aaeebe
-  Args:
-    source: Alix_de_Foresta
-    type: :Woman
-  AddLiteral (20a022c6-2206-458a-b9c5-d066ee997310)
- Call ID: 20a022c6-2206-458a-b9c5-d066ee997310
-  Args:
-    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
-    literal_value: 1950
+    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
+    literal_type: xsd:integer
     relation: :hasBirthYear
+    literal_value: 1928
+  AddLiteral (5bab9644-7afa-4fdd-b2bd-b376b1a0e90c)
+ Call ID: 5bab9644-7afa-4fdd-b2bd-b376b1a0e90c
+  Args:
+    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
     literal_type: xsd:integer
-  AddTriple (0a51a7b7-c675-4987-9d33-ed63119af71c)
- Call ID: 0a51a7b7-c675-4987-9d33-ed63119af71c
+    literal_value: 2004
+    relation: :hasDeathYear
+  AddTriple (2de55208-4b7e-40fa-be31-290a37095b02)
+ Call ID: 2de55208-4b7e-40fa-be31-290a37095b02
+  Args:
+    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
+    relation: :hasFather
+    target: Dmitri_Pavlovich_of_Russia
+  AddTriple (a6041214-70d9-453e-8e2e-00453a70c92c)
+ Call ID: a6041214-70d9-453e-8e2e-00453a70c92c
+  Args:
+    relation: :hasMother
+    target: Audrey_Emery
+    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
+  AddTriple (aeb4fb04-22a8-4e28-9275-51cda00355a5)
+ Call ID: aeb4fb04-22a8-4e28-9275-51cda00355a5
   Args:
     relation: :hasFather
-    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
-    target: Prince_Ferdinand_Duke_of_Castro
-  AddTriple (3c0818a0-13c7-45e6-9972-ecc778fcb0e0)
- Call ID: 3c0818a0-13c7-45e6-9972-ecc778fcb0e0
+    target: Paul_Dmitrievich_Romanovsky-Ilyinsky
+    source: Dmitri_Pavlovich_of_Russia
+  AddTriple (4566582d-2ceb-490a-9518-5f12761ef68b)
+ Call ID: 4566582d-2ceb-490a-9518-5f12761ef68b
   Args:
-    target: Chantal_de_Chevron-Villette
     relation: :hasMother
-    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
-  AddTriple (e3d97f35-4aec-4e75-a50c-51590840b952)
- Call ID: e3d97f35-4aec-4e75-a50c-51590840b952
+    target: Paul_Dmitrievich_Romanovsky-Ilyinsky
+    source: Audrey_Emery
+  AssignClass (9eadca07-8f31-43b4-be17-03113743c08b)
+ Call ID: 9eadca07-8f31-43b4-be17-03113743c08b
   Args:
-    target: Prince_Carlo_Duke_of_Castro
-    relation: :hasBrother
-    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
-  AddTriple (f0d75364-c900-4141-bbbc-83a3f8223202)
- Call ID: f0d75364-c900-4141-bbbc-83a3f8223202
+    type: :Woman
+    source: Mary_Evelyn_Prince
+  AssignClass (2e17cc1a-d37b-4683-b756-e1c2f78508ff)
+ Call ID: 2e17cc1a-d37b-4683-b756-e1c2f78508ff
   Args:
-    target: Prince_Ferdinand_Duke_of_Castro
-    source: Prince_Carlo_Duke_of_Castro
-    relation: :hasFather
-  AddTriple (7daea5a5-2993-4510-af3f-bff475f6f3ed)
- Call ID: 7daea5a5-2993-4510-af3f-bff475f6f3ed
+    type: :Woman
+    source: Angelica_Philippa_Kauffmann
+  AddTriple (fe82581b-2e93-4b99-888a-a93cc5fa1f52)
+ Call ID: fe82581b-2e93-4b99-888a-a93cc5fa1f52
   Args:
-    target: Chantal_de_Chevron-Villette
-    source: Prince_Carlo_Duke_of_Castro
-    relation: :hasMother
-  AddTriple (0a06346e-3558-4830-b9d4-03055b639309)
- Call ID: 0a06346e-3558-4830-b9d4-03055b639309
-  Args:
-    source: Charles_Napoléon_Bonaparte
-    relation: :hasFather
-    target: Louis_Prince_Napoléon
-  AddTriple (a6a00283-0ce6-45cb-9c06-69ae6a867672)
- Call ID: a6a00283-0ce6-45cb-9c06-69ae6a867672
-  Args:
-    target: Alix_de_Foresta
-    source: Charles_Napoléon_Bonaparte
-    relation: :hasMother
-  AddLiteral (bcafd100-ec5a-4243-9f9e-de39cdc2c287)
- Call ID: bcafd100-ec5a-4243-9f9e-de39cdc2c287
-  Args:
-    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
-    relation: :hasMarriageYear
-    literal_value: 1978
-    literal_type: xsd:integer
-  AddTriple (99e4ab48-8a5e-45ea-a019-8dd6e78c3594)
- Call ID: 99e4ab48-8a5e-45ea-a019-8dd6e78c3594
-  Args:
-    target: Charles_Napoléon_Bonaparte
-    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
+    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
     relation: :hasRelation
-  Finish (2bdd8f50-1336-41fb-947c-b2bed6932a0d)
- Call ID: 2bdd8f50-1336-41fb-947c-b2bed6932a0d
+    target: Mary_Evelyn_Prince
+  AddLiteral (487f9865-03fa-4aa2-8ee5-d9e918830c5b)
+ Call ID: 487f9865-03fa-4aa2-8ee5-d9e918830c5b
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1948
+    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
+  AddTriple (5a030751-4d33-4dca-aa7e-5162ba0f97e2)
+ Call ID: 5a030751-4d33-4dca-aa7e-5162ba0f97e2
+  Args:
+    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
+    relation: :hasRelation
+    target: Angelica_Philippa_Kauffmann
+  AddLiteral (674fcd88-3645-4e27-bb21-5e97c5468135)
+ Call ID: 674fcd88-3645-4e27-bb21-5e97c5468135
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1953
+    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
+  Finish (94a7f9e4-875c-4b4d-b3e3-11bb8ff80962)
+ Call ID: 94a7f9e4-875c-4b4d-b3e3-11bb8ff80962
+  Args:
 
 ================================= Tool Message =================================
 
@@ -597,36 +614,25 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,
-          :Woman ;
-      :hasBirthYear 1950 ;
-      :hasBrother data:Prince_Carlo_Duke_of_Castro ;
-      :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
-      :hasMarriageYear 1978 ;
-      :hasMother data:Chantal_de_Chevron-Villette ;
-      :hasRelation data:Charles_Napol%C3%A9on_Bonaparte .
+  data:Angelica_Philippa_Kauffmann a :Woman .
 
-  data:Alix_de_Foresta a :Person,
-          :Woman .
+  data:Audrey_Emery a :Woman ;
+      :hasMother data:Paul_Dmitrievich_Romanovsky-Ilyinsky .
 
-  data:Charles_Napol%C3%A9on_Bonaparte a :Man,
-          :Person ;
-      :hasFather data:Louis_Prince_Napol%C3%A9on ;
-      :hasMother data:Alix_de_Foresta .
+  data:Dmitri_Pavlovich_of_Russia a :Man ;
+      :hasFather data:Paul_Dmitrievich_Romanovsky-Ilyinsky .
 
-  data:Louis_Prince_Napol%C3%A9on a :Man,
-          :Person .
+  data:Mary_Evelyn_Prince a :Woman .
 
-  data:Prince_Carlo_Duke_of_Castro a :Man,
-          :Person ;
-      :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
-      :hasMother data:Chantal_de_Chevron-Villette .
-
-  data:Chantal_de_Chevron-Villette a :Person,
-          :Woman .
-
-  data:Prince_Ferdinand_Duke_of_Castro a :Man,
-          :Person .
+  data:Paul_Dmitrievich_Romanovsky-Ilyinsky a :Man ;
+      :hasBirthYear 1928 ;
+      :hasDeathYear 2004 ;
+      :hasFather data:Dmitri_Pavlovich_of_Russia ;
+      :hasMarriageYear 1948,
+          1953 ;
+      :hasMother data:Audrey_Emery ;
+      :hasRelation data:Angelica_Philippa_Kauffmann,
+          data:Mary_Evelyn_Prince .
 
 
 
@@ -638,158 +644,134 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (a96b14e5-6d7a-428d-8a7f-55e29b97c756)
- Call ID: a96b14e5-6d7a-428d-8a7f-55e29b97c756
+  ValidateShacl (bb6e9f4d-3e69-468e-9f30-eb40fa601b9a)
+ Call ID: bb6e9f4d-3e69-468e-9f30-eb40fa601b9a
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:15
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father node 'Louis_Prince_Napol%C3%A9on' is missing the mandatory class ':Ancestor'.
+      The node Dmitri_Pavlovich_of_Russia has a 'hasFather' relationship with Paul_Dmitrievich_Romanovsky-Ilyinsky, but the value node is not assigned the class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Prince_Napol%C3%A9on', class=':Ancestor')
+      Use AssignClass to assign :Man to Paul_Dmitrievich_Romanovsky-Ilyinsky.
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father node 'Prince_Ferdinand_Duke_of_Castro' is missing the mandatory class ':Ancestor'.
+      The node Paul_Dmitrievich_Romanovsky-Ilyinsky has a 'hasFather' relationship with Dmitri_Pavlovich_of_Russia, but the value node is not assigned the class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Ferdinand_Duke_of_Castro', class=':Ancestor')
+      Use AssignClass to assign :Man to Dmitri_Pavlovich_of_Russia.
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother node 'Alix_de_Foresta' is missing the mandatory class ':Ancestor'.
+      The node Paul_Dmitrievich_Romanovsky-Ilyinsky has a 'hasMother' relationship with Audrey_Emery, but the value node is not assigned the class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alix_de_Foresta', class=':Ancestor')
+      Use AssignClass to assign :Woman to Audrey_Emery.
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother node 'Chantal_de_Chevron-Villette' is missing the mandatory class ':Ancestor'.
+      The node Dmitri_Pavlovich_of_Russia has a 'hasFather' relationship with Paul_Dmitrievich_Romanovsky-Ilyinsky, but the value node is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Chantal_de_Chevron-Villette', class=':Ancestor')
+      Use AssignClass to assign :Man to Paul_Dmitrievich_Romanovsky-Ilyinsky.
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father node 'Louis_Prince_Napol%C3%A9on' is missing the mandatory class ':Ancestor'.
+      The node Paul_Dmitrievich_Romanovsky-Ilyinsky has a 'hasFather' relationship with Dmitri_Pavlovich_of_Russia, but the value node is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Prince_Napol%C3%A9on', class=':Ancestor')
+      Use AssignClass to assign :Man to Dmitri_Pavlovich_of_Russia.
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father node 'Prince_Ferdinand_Duke_of_Castro' is missing the mandatory class ':Ancestor'.
+      The node Audrey_Emery has a 'hasMother' relationship with Paul_Dmitrievich_Romanovsky-Ilyinsky, but the value node is a man and cannot be a mother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Ferdinand_Duke_of_Castro', class=':Ancestor')
+      Use RemoveTriple to delete the relationship :hasMother between Audrey_Emery and Paul_Dmitrievich_Romanovsky-Ilyinsky.
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father node 'Prince_Ferdinand_Duke_of_Castro' is missing the mandatory class ':Ancestor'.
+      The node Audrey_Emery has a 'hasMother' relationship with Paul_Dmitrievich_Romanovsky-Ilyinsky, but the value node is a man and cannot be a mother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Ferdinand_Duke_of_Castro', class=':Ancestor')
+      Use RemoveTriple to delete the relationship :hasMother between Audrey_Emery and Paul_Dmitrievich_Romanovsky-Ilyinsky.
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother node 'Alix_de_Foresta' is missing the mandatory class ':Ancestor'.
+      The node Paul_Dmitrievich_Romanovsky-Ilyinsky has a 'hasMother' relationship with Audrey_Emery, but the value node is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alix_de_Foresta', class=':Ancestor')
+      Use AssignClass to assign :Woman to Audrey_Emery.
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother node 'Chantal_de_Chevron-Villette' is missing the mandatory class ':Ancestor'.
+      The node Dmitri_Pavlovich_of_Russia has a 'hasFather' relationship with Paul_Dmitrievich_Romanovsky-Ilyinsky, but the value node is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Chantal_de_Chevron-Villette', class=':Ancestor')
+      Use AssignClass to assign :Man to Paul_Dmitrievich_Romanovsky-Ilyinsky.
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother node 'Chantal_de_Chevron-Villette' is missing the mandatory class ':Ancestor'.
+      The node Paul_Dmitrievich_Romanovsky-Ilyinsky has a 'hasFather' relationship with Dmitri_Pavlovich_of_Russia, but the value node is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Chantal_de_Chevron-Villette', class=':Ancestor')
+      Use AssignClass to assign :Man to Dmitri_Pavlovich_of_Russia.
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father node 'Louis_Prince_Napol%C3%A9on' is missing the mandatory class ':Ancestor'.
+      The node Audrey_Emery has a 'hasMother' relationship with Paul_Dmitrievich_Romanovsky-Ilyinsky, but the value node is a man and cannot be a mother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Prince_Napol%C3%A9on', class=':Ancestor')
+      Use RemoveTriple to delete the relationship :hasMother between Audrey_Emery and Paul_Dmitrievich_Romanovsky-Ilyinsky.
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father node 'Prince_Ferdinand_Duke_of_Castro' is missing the mandatory class ':Ancestor'.
+      The node Audrey_Emery has a 'hasMother' relationship with Paul_Dmitrievich_Romanovsky-Ilyinsky, but the value node is a man and cannot be a mother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Ferdinand_Duke_of_Castro', class=':Ancestor')
+      Use RemoveTriple to delete the relationship :hasMother between Audrey_Emery and Paul_Dmitrievich_Romanovsky-Ilyinsky.
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father node 'Prince_Ferdinand_Duke_of_Castro' is missing the mandatory class ':Ancestor'.
+      The node Paul_Dmitrievich_Romanovsky-Ilyinsky has a 'hasMother' relationship with Audrey_Emery, but the value node is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Ferdinand_Duke_of_Castro', class=':Ancestor')
+      Use AssignClass to assign :Woman to Audrey_Emery.
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother node 'Alix_de_Foresta' is missing the mandatory class ':Ancestor'.
+      The node Audrey_Emery has a 'hasMother' relationship with Paul_Dmitrievich_Romanovsky-Ilyinsky, but the value node is a man and cannot be a mother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alix_de_Foresta', class=':Ancestor')
+      Use RemoveTriple to delete the relationship :hasMother between Audrey_Emery and Paul_Dmitrievich_Romanovsky-Ilyinsky.
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother node 'Chantal_de_Chevron-Villette' is missing the mandatory class ':Ancestor'.
+      The node Audrey_Emery has a 'hasMother' relationship with Paul_Dmitrievich_Romanovsky-Ilyinsky, but the value node is a man and cannot be a mother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Chantal_de_Chevron-Villette', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Chantal_de_Chevron-Villette' is missing the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Chantal_de_Chevron-Villette', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Prince_Ferdinand_Duke_of_Castro' is missing the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Ferdinand_Duke_of_Castro', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Chantal_de_Chevron-Villette' is missing the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Chantal_de_Chevron-Villette', class=':Ancestor')
+      Use RemoveTriple to delete the relationship :hasMother between Audrey_Emery and Paul_Dmitrievich_Romanovsky-Ilyinsky.
 
 
 
@@ -798,29 +780,40 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (a8066fcb-991c-4853-9adf-f54df743339c)
- Call ID: a8066fcb-991c-4853-9adf-f54df743339c
+  RemoveTriple (09342fef-abda-4732-8ef0-234331f64003)
+ Call ID: 09342fef-abda-4732-8ef0-234331f64003
+  Args:
+    target: Paul_Dmitrievich_Romanovsky-Ilyinsky
+    relation: :hasFather
+    source: Dmitri_Pavlovich_of_Russia
+  RemoveTriple (3432773c-37cd-4519-b353-e16454da2cc2)
+ Call ID: 3432773c-37cd-4519-b353-e16454da2cc2
+  Args:
+    target: Paul_Dmitrievich_Romanovsky-Ilyinsky
+    relation: :hasMother
+    source: Audrey_Emery
+  AssignClass (dd71fcd0-c715-4a82-8155-2315a25f629c)
+ Call ID: dd71fcd0-c715-4a82-8155-2315a25f629c
   Args:
     type: :Ancestor
-    source: Louis_Prince_Napoléon
-  AssignClass (adb35974-684c-41e7-9ea0-6f689856b2a1)
- Call ID: adb35974-684c-41e7-9ea0-6f689856b2a1
+    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
+  AssignClass (67df3f9e-e7ba-4867-8847-a35d81173e96)
+ Call ID: 67df3f9e-e7ba-4867-8847-a35d81173e96
   Args:
     type: :Ancestor
-    source: Prince_Ferdinand_Duke_of_Castro
-  AssignClass (dfd0c529-3c89-4c2c-adf8-c3f6f15a31f5)
- Call ID: dfd0c529-3c89-4c2c-adf8-c3f6f15a31f5
+    source: Dmitri_Pavlovich_of_Russia
+  AssignClass (523cd6be-1540-4656-bb5c-78b6e92c25a0)
+ Call ID: 523cd6be-1540-4656-bb5c-78b6e92c25a0
   Args:
     type: :Ancestor
-    source: Alix_de_Foresta
-  AssignClass (2691021c-4c64-48e8-bb5d-288f1e2616b1)
- Call ID: 2691021c-4c64-48e8-bb5d-288f1e2616b1
+    source: Audrey_Emery
+  Finish (e0be5cc7-c90b-44fb-88e0-0b8dec9581ae)
+ Call ID: e0be5cc7-c90b-44fb-88e0-0b8dec9581ae
   Args:
-    type: :Ancestor
-    source: Chantal_de_Chevron-Villette
-  Finish (9ce83714-e75e-4c9c-b0e8-0ddf2879dfc4)
- Call ID: 9ce83714-e75e-4c9c-b0e8-0ddf2879dfc4
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -841,40 +834,26 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,
-          :Woman ;
-      :hasBirthYear 1950 ;
-      :hasBrother data:Prince_Carlo_Duke_of_Castro ;
-      :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
-      :hasMarriageYear 1978 ;
-      :hasMother data:Chantal_de_Chevron-Villette ;
-      :hasRelation data:Charles_Napol%C3%A9on_Bonaparte .
+  data:Paul_Dmitrievich_Romanovsky-Ilyinsky a :Ancestor,
+          :Man ;
+      :hasBirthYear 1928 ;
+      :hasDeathYear 2004 ;
+      :hasFather data:Dmitri_Pavlovich_of_Russia ;
+      :hasMarriageYear 1948,
+          1953 ;
+      :hasMother data:Audrey_Emery ;
+      :hasRelation data:Angelica_Philippa_Kauffmann,
+          data:Mary_Evelyn_Prince .
 
-  data:Alix_de_Foresta a :Ancestor,
-          :Person,
+  data:Angelica_Philippa_Kauffmann a :Woman .
+
+  data:Audrey_Emery a :Ancestor,
           :Woman .
 
-  data:Charles_Napol%C3%A9on_Bonaparte a :Man,
-          :Person ;
-      :hasFather data:Louis_Prince_Napol%C3%A9on ;
-      :hasMother data:Alix_de_Foresta .
+  data:Dmitri_Pavlovich_of_Russia a :Ancestor,
+          :Man .
 
-  data:Louis_Prince_Napol%C3%A9on a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Carlo_Duke_of_Castro a :Man,
-          :Person ;
-      :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
-      :hasMother data:Chantal_de_Chevron-Villette .
-
-  data:Chantal_de_Chevron-Villette a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_Ferdinand_Duke_of_Castro a :Ancestor,
-          :Man,
-          :Person .
+  data:Mary_Evelyn_Prince a :Woman .
 
 
 
@@ -886,8 +865,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (5133bca5-dd21-4f76-b6ae-3c74c7ef6860)
- Call ID: 5133bca5-dd21-4f76-b6ae-3c74c7ef6860
+  ValidateShacl (26e1133e-5fcc-494f-b5d8-9cad30c88e0c)
+ Call ID: 26e1133e-5fcc-494f-b5d8-9cad30c88e0c
   Args:
 
 ================================= Tool Message =================================
@@ -898,6 +877,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (9753eac2-93d4-4914-bb4c-9c9cb16b34ea)
- Call ID: 9753eac2-93d4-4914-bb4c-9c9cb16b34ea
+  Finish (957aadc5-d3a4-47f6-92c4-6c71acb12c64)
+ Call ID: 957aadc5-d3a4-47f6-92c4-6c71acb12c64
   Args:

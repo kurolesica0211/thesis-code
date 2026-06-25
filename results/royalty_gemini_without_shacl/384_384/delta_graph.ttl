@@ -2,44 +2,38 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Eitel_Friedrich_of_Prussia a :Man,
-        :Person ;
-    :isBrotherOf data:Prince_Joachim_of_Prussia .
+data:HouseOfHesse a :DomainEntity ;
+    :alsoKnownAs "House of Brabant"^^xsd:string .
 
-data:Prince_Karl_Franz_of_Prussia a :Man,
-        :Person ;
-    :hasBirthYear 1916 ;
-    :hasDeathYear 1975 ;
-    :hasFather data:Prince_Joachim_of_Prussia,
-        data:Wilhelm_II_German_Emperor ;
-    :hasMarriageYear 1940,
-        1946,
-        1959 ;
-    :hasMother data:Princess_Marie_Auguste_of_Anhalt ;
-    :hasRelation data:Eva_Maria_Herrera_y_Valdeavellano,
-        data:Luise_Dora_Hartmann,
-        data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich_Carolath .
+data:Louis a :Man .
 
-data:Eva_Maria_Herrera_y_Valdeavellano a :Person,
-        :Woman .
+data:MargaretCampbellGeddes a :Woman .
 
-data:Luise_Dora_Hartmann a :Person,
-        :Woman .
+data:Elisabeth a :Woman .
 
-data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich_Carolath a :Person,
-        :Woman ;
-    :hasMother data:Princess_Hermine_Reuss_of_Greiz .
+data:Heinrich a :Man .
 
-data:Princess_Hermine_Reuss_of_Greiz a :Person,
-        :Woman .
+data:MafaldaOfSavoy a :Woman ;
+    :isParentOf data:Moritz .
 
-data:Princess_Marie_Auguste_of_Anhalt a :Person,
-        :Woman .
+data:Otto a :Man .
 
-data:Prince_Joachim_of_Prussia a :Man,
-        :Person ;
-    :hasFather data:Wilhelm_II_German_Emperor .
+data:Philip a :Man ;
+    :isParentOf data:Moritz .
 
-data:Wilhelm_II_German_Emperor a :Man,
-        :Person .
+data:TatianaOfSaynWittgensteinBerleburg a :Woman ;
+    :hasFather data:GustavAlbrecht ;
+    :isDaughterOf data:GustavAlbrecht .
+
+data:GustavAlbrecht a :Man ;
+    :isFatherOf data:TatianaOfSaynWittgensteinBerleburg .
+
+data:Moritz a :Man ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Philip ;
+    :hasMother data:MafaldaOfSavoy ;
+    :isSiblingOf data:Elisabeth,
+        data:Heinrich,
+        data:Otto .
 

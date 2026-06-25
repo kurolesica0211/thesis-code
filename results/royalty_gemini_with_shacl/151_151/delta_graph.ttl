@@ -2,50 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Henry_Lascelles a :Man ;
-    :hasChild data:George_Lascelles,
-        data:Gerald_David_Lascelles ;
-    :hasSex data:Male .
-
-data:Mary_Princess_Royal a :Woman ;
-    :hasBirthYear 1897 ;
-    :hasBrother data:Edward_VIII,
-        data:George_VI ;
-    :hasChild data:George_Lascelles,
-        data:Gerald_David_Lascelles ;
-    :hasDeathYear 1965 ;
-    :hasFather data:King_George_V ;
-    :hasMarriageYear 1922 ;
-    :hasMother data:Queen_Mary ;
-    :hasSex data:Female ;
-    :isSisterOf data:Edward_VIII,
-        data:George_VI ;
-    :knownAs "Mary"^^xsd:string .
-
-data:Queen_Elizabeth_II a :Woman ;
-    :hasSex data:Female .
-
-data:King_George_V a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
-
-data:Queen_Mary a :Ancestor,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Edward_VIII a :Man ;
-    :hasSex data:Male .
-
-data:George_Lascelles a :Man ;
-    :hasSex data:Male .
-
-data:George_VI a :Man ;
-    :hasSex data:Male .
-
-data:Gerald_David_Lascelles a :Man ;
-    :hasSex data:Male .
-
 data:Female a :Sex .
 
+data:Prince_Aschwin_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasBirthYear 1914 ;
+    :hasBrother data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasDeathYear 1988 ;
+    :hasFather data:Prince_Bernhard_of_Lippe ;
+    :hasMarriageYear 1951 ;
+    :hasMother data:Baroness_Armgard_of_Sierstorpff-Cramm ;
+    :hasRelation data:Simone_Arnoux ;
+    :hasSex data:Male .
+
+data:Prince_Constantijn_of_the_Netherlands a :Man,
+        :Person .
+
+data:Stephan_von_Watzdorf a :Man,
+        :Person ;
+    :isChildOf data:Simone_Arnoux .
+
+data:Thilo_von_Watzdorf a :Man,
+        :Person ;
+    :isChildOf data:Simone_Arnoux .
+
+data:Baroness_Armgard_of_Sierstorpff-Cramm a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Gottfried_Adam_Vollrat_von_Watzdorf a :Man,
+        :Person .
+
 data:Male a :Sex .
+
+data:Prince_Bernhard_of_Lippe a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person .
+
+data:Simone_Arnoux a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Gottfried_Adam_Vollrat_von_Watzdorf .
 

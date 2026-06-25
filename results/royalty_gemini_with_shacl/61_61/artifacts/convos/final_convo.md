@@ -199,6 +199,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -214,39 +216,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -261,6 +233,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -278,6 +267,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -345,29 +349,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -376,6 +372,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -388,6 +392,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -396,17 +402,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -434,6 +442,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -449,131 +541,300 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2b232b08-0f79-47c2-a8f5-3658dfadf56b)
- Call ID: 2b232b08-0f79-47c2-a8f5-3658dfadf56b
-  Args:
-    source: Willem-Alexander
-    type: :Man
-  AssignClass (795887d7-f31d-45b7-aa90-57397237ce27)
- Call ID: 795887d7-f31d-45b7-aa90-57397237ce27
+  AssignClass (0519a5f4-195a-4ca1-a1e9-1596584d6204)
+ Call ID: 0519a5f4-195a-4ca1-a1e9-1596584d6204
   Args:
     source: Beatrix
     type: :Woman
-  AssignClass (25d66be6-86f9-45dc-ae4b-99862bd903a9)
- Call ID: 25d66be6-86f9-45dc-ae4b-99862bd903a9
+  AssignClass (2cc6e984-0e37-4853-a5d6-d05d5472c0d7)
+ Call ID: 2cc6e984-0e37-4853-a5d6-d05d5472c0d7
+  Args:
+    source: Margriet
+    type: :Woman
+  AssignClass (9d2a45a6-1678-47f5-ad7e-2b4b45eba71f)
+ Call ID: 9d2a45a6-1678-47f5-ad7e-2b4b45eba71f
+  Args:
+    source: Pieter_van_Vollenhoven
+    type: :Man
+  AssignClass (fb931e1c-0852-4b3c-b7a3-2dcbd6561c54)
+ Call ID: fb931e1c-0852-4b3c-b7a3-2dcbd6561c54
+  Args:
+    source: Willem-Alexander
+    type: :Man
+  AddLiteral (ac1ceaae-835e-4313-a06e-c66329a3cd2d)
+ Call ID: ac1ceaae-835e-4313-a06e-c66329a3cd2d
+  Args:
+    literal_type: xsd:integer
+    source: Willem-Alexander
+    relation: :hasBirthYear
+    literal_value: 1967
+  AssignClass (986f2bd9-6f08-4ae4-a2a6-99ff83f52ee0)
+ Call ID: 986f2bd9-6f08-4ae4-a2a6-99ff83f52ee0
+  Args:
+    source: Juliana
+    type: :Woman
+  AssignClass (fb45e225-7762-44d6-a192-e45882e4ffdb)
+ Call ID: fb45e225-7762-44d6-a192-e45882e4ffdb
   Args:
     source: Claus
     type: :Man
-  AssignClass (e9584725-75f5-45a3-8ad7-7425e9676867)
- Call ID: e9584725-75f5-45a3-8ad7-7425e9676867
+  AddTriple (4d617cd5-6d1c-446a-9660-868f3d5ec6b9)
+ Call ID: 4d617cd5-6d1c-446a-9660-868f3d5ec6b9
   Args:
+    source: Willem-Alexander
+    relation: :hasMother
+    target: Beatrix
+  AddTriple (5212f743-f0cd-403a-9439-efbfb2be7798)
+ Call ID: 5212f743-f0cd-403a-9439-efbfb2be7798
+  Args:
+    target: Claus
+    relation: :hasFather
+    source: Willem-Alexander
+  AddTriple (815e3cde-7fe7-4bb9-8c31-99f022f1f02a)
+ Call ID: 815e3cde-7fe7-4bb9-8c31-99f022f1f02a
+  Args:
+    source: Beatrix
+    relation: :hasMother
+    target: Juliana
+  AssignClass (35a0ed46-b240-488c-8d9a-b9cf5232e79f)
+ Call ID: 35a0ed46-b240-488c-8d9a-b9cf5232e79f
+  Args:
+    source: Máxima_Zorreguieta_Cerruti
     type: :Woman
-    source: Juliana
-  AssignClass (65c1d162-13b5-429b-b778-86cc608d999c)
- Call ID: 65c1d162-13b5-429b-b778-86cc608d999c
+  AddTriple (500734d9-abff-415d-ae9c-a903b710590d)
+ Call ID: 500734d9-abff-415d-ae9c-a903b710590d
   Args:
-    source: Bernhard
-    type: :Man
-  AssignClass (d3455101-d642-4811-986a-84a47f76cb54)
- Call ID: d3455101-d642-4811-986a-84a47f76cb54
+    relation: :hasRelation
+    source: Willem-Alexander
+    target: Máxima_Zorreguieta_Cerruti
+  AddLiteral (5d20a5fd-2e75-40a1-b65c-cb54d7ec3ff0)
+ Call ID: 5d20a5fd-2e75-40a1-b65c-cb54d7ec3ff0
   Args:
-    source: Máxima Zorreguieta Cerruti
-    type: :Woman
-  AssignClass (4076fe04-6bf7-4e31-972c-1fbd76f744d4)
- Call ID: 4076fe04-6bf7-4e31-972c-1fbd76f744d4
+    relation: :hasMarriageYear
+    literal_value: 2002
+    literal_type: xsd:integer
+    source: Willem-Alexander
+  AssignClass (f6ba77e6-eea0-4bf1-95b4-ac6b333c7c9f)
+ Call ID: f6ba77e6-eea0-4bf1-95b4-ac6b333c7c9f
   Args:
-    type: :Woman
     source: Catharina-Amalia
-  AssignClass (f01a0580-cb1f-458f-bac8-4eafb371c7f4)
- Call ID: f01a0580-cb1f-458f-bac8-4eafb371c7f4
+    type: :Woman
+  AssignClass (20490ac4-0ca9-40b8-bdec-277f5c1d613d)
+ Call ID: 20490ac4-0ca9-40b8-bdec-277f5c1d613d
   Args:
     source: Alexia
     type: :Woman
-  AssignClass (1b6e21f7-ba2a-4205-85d3-e1970f4356c4)
- Call ID: 1b6e21f7-ba2a-4205-85d3-e1970f4356c4
+  AssignClass (693e704c-55a2-4c53-a6c6-f22b63bb859a)
+ Call ID: 693e704c-55a2-4c53-a6c6-f22b63bb859a
   Args:
     source: Ariane
     type: :Woman
-  AssignClass (9ce02b30-7690-4f84-926f-6e1e2343dbbb)
- Call ID: 9ce02b30-7690-4f84-926f-6e1e2343dbbb
+  AddTriple (ffe46f06-176e-46bb-b540-0213a9c18e18)
+ Call ID: ffe46f06-176e-46bb-b540-0213a9c18e18
   Args:
-    type: :Man
-    source: Friso
-  AssignClass (32b54752-7347-4ee9-b63e-39320a56a24d)
- Call ID: 32b54752-7347-4ee9-b63e-39320a56a24d
-  Args:
-    type: :Man
-    source: Constantijn
-  AddLiteral (68911b66-293f-48cc-a402-972af76c89ad)
- Call ID: 68911b66-293f-48cc-a402-972af76c89ad
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1967
-    source: Willem-Alexander
-    literal_type: xsd:integer
-  AddTriple (0add4202-2d94-413c-9ef7-6adf460889b9)
- Call ID: 0add4202-2d94-413c-9ef7-6adf460889b9
-  Args:
-    source: Willem-Alexander
-    target: Beatrix
+    target: Máxima_Zorreguieta_Cerruti
     relation: :hasMother
-  AddTriple (8d2f8ee4-ce14-4fa1-9655-0ed53f1c9f92)
- Call ID: 8d2f8ee4-ce14-4fa1-9655-0ed53f1c9f92
+    source: Catharina-Amalia
+  AddTriple (47f15257-26b6-4193-bf41-a45d30ec10eb)
+ Call ID: 47f15257-26b6-4193-bf41-a45d30ec10eb
+  Args:
+    target: Willem-Alexander
+    relation: :hasFather
+    source: Catharina-Amalia
+  AddTriple (b82f4d60-146e-427e-b3f1-7168f068f4a4)
+ Call ID: b82f4d60-146e-427e-b3f1-7168f068f4a4
+  Args:
+    target: Máxima_Zorreguieta_Cerruti
+    relation: :hasMother
+    source: Alexia
+  AddTriple (e052e139-12d8-4716-91e0-14943918c37d)
+ Call ID: e052e139-12d8-4716-91e0-14943918c37d
+  Args:
+    target: Willem-Alexander
+    source: Alexia
+    relation: :hasFather
+  AddTriple (288dc60c-5187-4c0d-929d-81d9f69b1807)
+ Call ID: 288dc60c-5187-4c0d-929d-81d9f69b1807
+  Args:
+    target: Máxima_Zorreguieta_Cerruti
+    source: Ariane
+    relation: :hasMother
+  AddTriple (1a0dcc4e-30e5-4483-888c-4ba2ad865599)
+ Call ID: 1a0dcc4e-30e5-4483-888c-4ba2ad865599
+  Args:
+    target: Willem-Alexander
+    source: Ariane
+    relation: :hasFather
+  AssignClass (4125c29c-dbd7-4f30-be28-e0504f40e39d)
+ Call ID: 4125c29c-dbd7-4f30-be28-e0504f40e39d
+  Args:
+    source: William_III
+    type: :Man
+  AssignClass (84573096-7f8c-4f38-9316-f2de9464e964)
+ Call ID: 84573096-7f8c-4f38-9316-f2de9464e964
+  Args:
+    source: Wilhelmina
+    type: :Woman
+  AssignClass (442fe8ff-c487-4d33-b92b-7a4bd7d11ff2)
+ Call ID: 442fe8ff-c487-4d33-b92b-7a4bd7d11ff2
+  Args:
+    source: Bernhard
+    type: :Man
+  AssignClass (3d9a2fda-4247-4101-82d1-a05b83074eae)
+ Call ID: 3d9a2fda-4247-4101-82d1-a05b83074eae
+  Args:
+    source: Friso
+    type: :Man
+  AssignClass (9d012645-4a9b-4645-9dfa-8f69fbc67220)
+ Call ID: 9d012645-4a9b-4645-9dfa-8f69fbc67220
+  Args:
+    source: Constantijn
+    type: :Man
+  AddTriple (39344fab-80f0-40dd-9fd1-05fd4a31d8b7)
+ Call ID: 39344fab-80f0-40dd-9fd1-05fd4a31d8b7
+  Args:
+    source: Willem-Alexander
+    relation: :hasMother
+    target: Beatrix
+  AddTriple (62977017-8c15-4e89-9e17-ec9c838964a5)
+ Call ID: 62977017-8c15-4e89-9e17-ec9c838964a5
   Args:
     target: Claus
-    source: Willem-Alexander
     relation: :hasFather
-  AddTriple (5b6f168b-48ad-4913-8bbc-f9901596f2ce)
- Call ID: 5b6f168b-48ad-4913-8bbc-f9901596f2ce
-  Args:
-    source: Beatrix
-    target: Juliana
-    relation: :hasMother
-  AddTriple (ad81ab5b-238c-403d-abf9-0a0d896a792e)
- Call ID: ad81ab5b-238c-403d-abf9-0a0d896a792e
-  Args:
-    relation: :hasFather
-    target: Bernhard
-    source: Beatrix
-  AddTriple (cf9f532c-244f-4463-a3f3-e1d28021c156)
- Call ID: cf9f532c-244f-4463-a3f3-e1d28021c156
-  Args:
-    target: 2002
     source: Willem-Alexander
-    relation: :hasMarriageYear
-  AddTriple (7bdfb2cd-c59f-414d-a2e7-d19eaf32c367)
- Call ID: 7bdfb2cd-c59f-414d-a2e7-d19eaf32c367
-  Args:
-    relation: :hasChild
-    source: Willem-Alexander
-    target: Catharina-Amalia
-  AddTriple (82ec6bdb-72a2-4e11-9547-0a43912d5480)
- Call ID: 82ec6bdb-72a2-4e11-9547-0a43912d5480
-  Args:
-    relation: :hasChild
-    target: Alexia
-    source: Willem-Alexander
-  AddTriple (26588dde-9f85-450c-b7c3-1d53e118c793)
- Call ID: 26588dde-9f85-450c-b7c3-1d53e118c793
-  Args:
-    relation: :hasChild
-    source: Willem-Alexander
-    target: Ariane
-  AddTriple (ad316a59-180b-4c44-9d60-c5a1cea4602b)
- Call ID: ad316a59-180b-4c44-9d60-c5a1cea4602b
+  AddTriple (ca0ab60f-965b-462d-bf4a-eaaaf126d4c2)
+ Call ID: ca0ab60f-965b-462d-bf4a-eaaaf126d4c2
   Args:
     relation: :hasBrother
     source: Willem-Alexander
     target: Friso
-  AddTriple (a723d021-fe72-4fca-a912-732aa81bc2e3)
- Call ID: a723d021-fe72-4fca-a912-732aa81bc2e3
+  AddTriple (cd4645a0-173f-4bcf-8f3f-3992d9322293)
+ Call ID: cd4645a0-173f-4bcf-8f3f-3992d9322293
   Args:
-    source: Willem-Alexander
     target: Constantijn
+    source: Willem-Alexander
     relation: :hasBrother
-  Finish (abe201c0-18e2-41b3-a3fc-f26f8840cccc)
- Call ID: abe201c0-18e2-41b3-a3fc-f26f8840cccc
+  AddTriple (7bc937bd-afce-4fec-8e6b-98f1fe2c9fe7)
+ Call ID: 7bc937bd-afce-4fec-8e6b-98f1fe2c9fe7
   Args:
+    source: Friso
+    relation: :hasMother
+    target: Beatrix
+  AddTriple (309f993e-8e7b-4dd8-9d96-5f8f1f601845)
+ Call ID: 309f993e-8e7b-4dd8-9d96-5f8f1f601845
+  Args:
+    target: Claus
+    relation: :hasFather
+    source: Friso
+  AddTriple (0feaff2f-4021-4dea-99c7-4ffd577a9788)
+ Call ID: 0feaff2f-4021-4dea-99c7-4ffd577a9788
+  Args:
+    relation: :hasMother
+    source: Constantijn
+    target: Beatrix
+  AddTriple (20b83a6a-4a87-4c8b-9d06-485ec1d74447)
+ Call ID: 20b83a6a-4a87-4c8b-9d06-485ec1d74447
+  Args:
+    target: Claus
+    source: Constantijn
+    relation: :hasFather
+  AddLiteral (37146677-5d6e-42be-8b4d-646c27c41c82)
+ Call ID: 37146677-5d6e-42be-8b4d-646c27c41c82
+  Args:
+    relation: :hasDeathYear
+    literal_value: 2013
+    literal_type: xsd:integer
+    source: Friso
+  AddLiteral (27944fef-4036-4755-a8b3-caf12786630b)
+ Call ID: 27944fef-4036-4755-a8b3-caf12786630b
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1969
+    literal_type: xsd:integer
+    source: Constantijn
+  AddTriple (6f3be8b4-6435-48f6-8d79-02752aff71d9)
+ Call ID: 6f3be8b4-6435-48f6-8d79-02752aff71d9
+  Args:
+    source: Beatrix
+    relation: :hasMother
+    target: Juliana
+  AddTriple (517cc17e-c904-4ef9-b6b6-d82fa58f04a6)
+ Call ID: 517cc17e-c904-4ef9-b6b6-d82fa58f04a6
+  Args:
+    source: Beatrix
+    relation: :hasFather
+    target: Bernhard
+  Finish (9432171f-603d-4c70-9c08-7c3d152a71de)
+ Call ID: 9432171f-603d-4c70-9c08-7c3d152a71de
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -666,38 +927,56 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:M%C3%A1xima_Zorreguieta_Cerruti a :Woman .
+  data:Alexia a :Woman ;
+      :hasFather data:Willem-Alexander ;
+      :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti .
 
-  data:Willem-Alexander a :Man ;
-      :hasBirthYear 1967 ;
-      :hasBrother data:Constantijn,
-          data:Friso ;
-      :hasChild data:Alexia,
-          data:Ariane,
-          data:Catharina-Amalia ;
+  data:Ariane a :Woman ;
+      :hasFather data:Willem-Alexander ;
+      :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti .
+
+  data:Catharina-Amalia a :Woman ;
+      :hasFather data:Willem-Alexander ;
+      :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti .
+
+  data:Margriet a :Woman .
+
+  data:Pieter_van_Vollenhoven a :Man .
+
+  data:Wilhelmina a :Woman .
+
+  data:William_III a :Man .
+
+  data:Bernhard a :Man .
+
+  data:Constantijn a :Man ;
+      :hasBirthYear 1969 ;
       :hasFather data:Claus ;
-      :hasMarriageYear data:2002 ;
       :hasMother data:Beatrix .
 
-  data:Alexia a :Woman .
+  data:Friso a :Man ;
+      :hasDeathYear 2013 ;
+      :hasFather data:Claus ;
+      :hasMother data:Beatrix .
 
-  data:Ariane a :Woman .
+  data:Juliana a :Woman .
 
   data:Beatrix a :Woman ;
       :hasFather data:Bernhard ;
       :hasMother data:Juliana .
 
-  data:Bernhard a :Man .
-
-  data:Catharina-Amalia a :Woman .
-
   data:Claus a :Man .
 
-  data:Constantijn a :Man .
+  data:Willem-Alexander a :Man ;
+      :hasBirthYear 1967 ;
+      :hasBrother data:Constantijn,
+          data:Friso ;
+      :hasFather data:Claus ;
+      :hasMarriageYear 2002 ;
+      :hasMother data:Beatrix ;
+      :hasRelation data:M%C3%A1xima_Zorreguieta_Cerruti .
 
-  data:Friso a :Man .
-
-  data:Juliana a :Woman .
+  data:M%C3%A1xima_Zorreguieta_Cerruti a :Woman .
 
 
 
@@ -709,110 +988,350 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (c4ca7e04-0139-43d3-8e96-fedcf8a99f46)
- Call ID: c4ca7e04-0139-43d3-8e96-fedcf8a99f46
+  ValidateShacl (e873fb13-9b62-4f38-a023-9a28fa4e5c05)
+ Call ID: e873fb13-9b62-4f38-a023-9a28fa4e5c05
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:42
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Claus' is assigned as the father of 'Willem-Alexander' but lacks the required class ':Ancestor'.
+      The father (Claus) of node Friso is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claus', class=':Ancestor')
+      AssignClass(Claus, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Beatrix' is assigned as the mother of 'Willem-Alexander' but lacks the required class ':Ancestor'.
+      The father (Claus) of node Constantijn is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Beatrix', class=':Ancestor')
+      AssignClass(Claus, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Bernhard' is assigned as the father of 'Beatrix' but lacks the required class ':Ancestor'.
+      The father (Claus) of node Willem-Alexander is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard', class=':Ancestor')
+      AssignClass(Claus, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Claus' is assigned as the father of 'Willem-Alexander' but lacks the required class ':Ancestor'.
+      The mother (Beatrix) of node Friso is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claus', class=':Ancestor')
+      AssignClass(Beatrix, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Juliana' is assigned as the mother of 'Beatrix' but lacks the required class ':Ancestor'.
+      The mother (Beatrix) of node Constantijn is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana', class=':Ancestor')
+      AssignClass(Beatrix, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Beatrix' is assigned as the mother of 'Willem-Alexander' but lacks the required class ':Ancestor'.
+      The mother (Beatrix) of node Willem-Alexander is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Beatrix', class=':Ancestor')
+      AssignClass(Beatrix, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Bernhard' is assigned as the father of 'Beatrix' but lacks the required class ':Ancestor'.
+      The father (Willem-Alexander) of node Catharina-Amalia is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard', class=':Ancestor')
+      AssignClass(Willem-Alexander, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Claus' is assigned as the father of 'Willem-Alexander' but lacks the required class ':Ancestor'.
+      The father (Willem-Alexander) of node Ariane is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claus', class=':Ancestor')
+      AssignClass(Willem-Alexander, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Juliana' is assigned as the mother of 'Beatrix' but lacks the required class ':Ancestor'.
+      The father (Claus) of node Willem-Alexander is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana', class=':Ancestor')
+      AssignClass(Claus, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Beatrix' is assigned as the mother of 'Willem-Alexander' but lacks the required class ':Ancestor'.
+      The father (Claus) of node Friso is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Beatrix', class=':Ancestor')
+      AssignClass(Claus, :Ancestor)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Bernhard' is assigned as the father of 'Beatrix' but lacks the required class ':Ancestor'.
+      The father (Willem-Alexander) of node Alexia is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard', class=':Ancestor')
+      AssignClass(Willem-Alexander, :Ancestor)
 
 
   Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father (Bernhard) of node Beatrix is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Bernhard, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father (Claus) of node Constantijn is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Claus, :Ancestor)
+
+
+  Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Juliana' is assigned as the mother of 'Beatrix' but lacks the required class ':Ancestor'.
+      The mother (M%C3%A1xima_Zorreguieta_Cerruti) of node Catharina-Amalia is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana', class=':Ancestor')
+      AssignClass(M%C3%A1xima_Zorreguieta_Cerruti, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (M%C3%A1xima_Zorreguieta_Cerruti) of node Ariane is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(M%C3%A1xima_Zorreguieta_Cerruti, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (Beatrix) of node Willem-Alexander is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Beatrix, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (Beatrix) of node Friso is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Beatrix, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (M%C3%A1xima_Zorreguieta_Cerruti) of node Alexia is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(M%C3%A1xima_Zorreguieta_Cerruti, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (Juliana) of node Beatrix is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juliana, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (Beatrix) of node Constantijn is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Beatrix, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father (Willem-Alexander) of node Catharina-Amalia is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Willem-Alexander, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father (Willem-Alexander) of node Ariane is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Willem-Alexander, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father (Claus) of node Willem-Alexander is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Claus, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father (Claus) of node Friso is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Claus, :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father (Willem-Alexander) of node Alexia is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Willem-Alexander, :Ancestor)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father (Bernhard) of node Beatrix is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Bernhard, :Ancestor)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father (Claus) of node Constantijn is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Claus, :Ancestor)
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (M%C3%A1xima_Zorreguieta_Cerruti) of node Catharina-Amalia is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(M%C3%A1xima_Zorreguieta_Cerruti, :Ancestor)
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (M%C3%A1xima_Zorreguieta_Cerruti) of node Ariane is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(M%C3%A1xima_Zorreguieta_Cerruti, :Ancestor)
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (Beatrix) of node Willem-Alexander is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Beatrix, :Ancestor)
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (Beatrix) of node Friso is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Beatrix, :Ancestor)
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (M%C3%A1xima_Zorreguieta_Cerruti) of node Alexia is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(M%C3%A1xima_Zorreguieta_Cerruti, :Ancestor)
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (Juliana) of node Beatrix is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juliana, :Ancestor)
+
+
+  Violation [34]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (Beatrix) of node Constantijn is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Beatrix, :Ancestor)
+
+
+  Violation [35]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father (Willem-Alexander) of node Catharina-Amalia is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Willem-Alexander, :Ancestor)
+
+
+  Violation [36]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father (Willem-Alexander) of node Ariane is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Willem-Alexander, :Ancestor)
+
+
+  Violation [37]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father (Willem-Alexander) of node Alexia is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Willem-Alexander, :Ancestor)
+
+
+  Violation [38]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father (Bernhard) of node Beatrix is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Bernhard, :Ancestor)
+
+
+  Violation [39]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (M%C3%A1xima_Zorreguieta_Cerruti) of node Catharina-Amalia is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(M%C3%A1xima_Zorreguieta_Cerruti, :Ancestor)
+
+
+  Violation [40]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (M%C3%A1xima_Zorreguieta_Cerruti) of node Ariane is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(M%C3%A1xima_Zorreguieta_Cerruti, :Ancestor)
+
+
+  Violation [41]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (M%C3%A1xima_Zorreguieta_Cerruti) of node Alexia is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(M%C3%A1xima_Zorreguieta_Cerruti, :Ancestor)
+
+
+  Violation [42]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother (Juliana) of node Beatrix is missing the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juliana, :Ancestor)
 
 
 
@@ -821,29 +1340,47 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (dec44abe-d22f-4ec9-9275-0c9a3201dd5d)
- Call ID: dec44abe-d22f-4ec9-9275-0c9a3201dd5d
+  AssignClass (2cc4e2f7-c89e-4cad-8bce-29ff23792e31)
+ Call ID: 2cc4e2f7-c89e-4cad-8bce-29ff23792e31
   Args:
-    type: :Ancestor
     source: Claus
-  AssignClass (f26c9638-c532-49b7-be6d-dfa5d1b8cf5b)
- Call ID: f26c9638-c532-49b7-be6d-dfa5d1b8cf5b
+    type: :Ancestor
+  AssignClass (f81eb1db-15c1-4232-b699-38227b54da5a)
+ Call ID: f81eb1db-15c1-4232-b699-38227b54da5a
   Args:
     type: :Ancestor
     source: Beatrix
-  AssignClass (5f1dba12-bf8a-4d95-9553-a56c3a6a0969)
- Call ID: 5f1dba12-bf8a-4d95-9553-a56c3a6a0969
+  AssignClass (7e02be7f-1dc1-479a-9e46-90f9e8a1ce8e)
+ Call ID: 7e02be7f-1dc1-479a-9e46-90f9e8a1ce8e
   Args:
     type: :Ancestor
+    source: Willem-Alexander
+  AssignClass (a5f73c44-962b-44b7-81fd-0c03fda47df3)
+ Call ID: a5f73c44-962b-44b7-81fd-0c03fda47df3
+  Args:
     source: Bernhard
-  AssignClass (ba9d5bdf-8b90-42fc-9d87-f2348852e726)
- Call ID: ba9d5bdf-8b90-42fc-9d87-f2348852e726
+    type: :Ancestor
+  AssignClass (46818555-6530-4e9a-9d22-25d41faa38e5)
+ Call ID: 46818555-6530-4e9a-9d22-25d41faa38e5
   Args:
     type: :Ancestor
-    source: Juliana
-  Finish (63461008-6931-47ac-b52a-00c1c218e639)
- Call ID: 63461008-6931-47ac-b52a-00c1c218e639
+    source: M%C3%A1xima_Zorreguieta_Cerruti
+  AssignClass (ade98208-c3f5-4c90-8339-3b3e561b26d6)
+ Call ID: ade98208-c3f5-4c90-8339-3b3e561b26d6
   Args:
+    source: Juliana
+    type: :Ancestor
+  Finish (7f49fdc6-a18b-4fea-8826-39d4a115f303)
+ Call ID: 7f49fdc6-a18b-4fea-8826-39d4a115f303
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -864,41 +1401,61 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:M%C3%A1xima_Zorreguieta_Cerruti a :Woman .
+  data:Alexia a :Woman ;
+      :hasFather data:Willem-Alexander ;
+      :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti .
 
-  data:Willem-Alexander a :Man ;
-      :hasBirthYear 1967 ;
-      :hasBrother data:Constantijn,
-          data:Friso ;
-      :hasChild data:Alexia,
-          data:Ariane,
-          data:Catharina-Amalia ;
+  data:Ariane a :Woman ;
+      :hasFather data:Willem-Alexander ;
+      :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti .
+
+  data:Catharina-Amalia a :Woman ;
+      :hasFather data:Willem-Alexander ;
+      :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti .
+
+  data:Margriet a :Woman .
+
+  data:Pieter_van_Vollenhoven a :Man .
+
+  data:Wilhelmina a :Woman .
+
+  data:William_III a :Man .
+
+  data:Bernhard a :Ancestor,
+          :Man .
+
+  data:Constantijn a :Man ;
+      :hasBirthYear 1969 ;
       :hasFather data:Claus ;
-      :hasMarriageYear data:2002 ;
       :hasMother data:Beatrix .
 
-  data:Alexia a :Woman .
+  data:Friso a :Man ;
+      :hasDeathYear 2013 ;
+      :hasFather data:Claus ;
+      :hasMother data:Beatrix .
 
-  data:Ariane a :Woman .
+  data:Juliana a :Ancestor,
+          :Woman .
 
   data:Beatrix a :Ancestor,
           :Woman ;
       :hasFather data:Bernhard ;
       :hasMother data:Juliana .
 
-  data:Bernhard a :Ancestor,
-          :Man .
-
-  data:Catharina-Amalia a :Woman .
-
   data:Claus a :Ancestor,
           :Man .
 
-  data:Constantijn a :Man .
+  data:Willem-Alexander a :Ancestor,
+          :Man ;
+      :hasBirthYear 1967 ;
+      :hasBrother data:Constantijn,
+          data:Friso ;
+      :hasFather data:Claus ;
+      :hasMarriageYear 2002 ;
+      :hasMother data:Beatrix ;
+      :hasRelation data:M%C3%A1xima_Zorreguieta_Cerruti .
 
-  data:Friso a :Man .
-
-  data:Juliana a :Ancestor,
+  data:M%C3%A1xima_Zorreguieta_Cerruti a :Ancestor,
           :Woman .
 
 
@@ -911,8 +1468,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (6f9af693-ee8d-4fa0-9416-8529c981f273)
- Call ID: 6f9af693-ee8d-4fa0-9416-8529c981f273
+  ValidateShacl (5d98b0a3-5cee-4401-9736-b189a5fc7921)
+ Call ID: 5d98b0a3-5cee-4401-9736-b189a5fc7921
   Args:
 
 ================================= Tool Message =================================
@@ -923,237 +1480,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (3609b105-9733-4b8b-9e4d-6ef1e9c21a3e)
- Call ID: 3609b105-9733-4b8b-9e4d-6ef1e9c21a3e
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['2002']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (57d30934-4841-4a21-9f2f-882a0d76f8f4)
- Call ID: 57d30934-4841-4a21-9f2f-882a0d76f8f4
-  Args:
-    literal_value: 2002
-    literal_type: xsd:string
-    relation: :hasMarriageYear
-    source: Willem-Alexander
-  AddLiteral (d1f854d3-f5e3-4124-864c-fabaa99d606e)
- Call ID: d1f854d3-f5e3-4124-864c-fabaa99d606e
-  Args:
-    literal_value: 2002
-    source: Willem-Alexander
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-  Finish (f8c45f53-05ee-4cce-8e4c-233ed72722bb)
- Call ID: f8c45f53-05ee-4cce-8e4c-233ed72722bb
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:M%C3%A1xima_Zorreguieta_Cerruti a :Woman .
-
-  data:Willem-Alexander a :Man ;
-      :hasBirthYear 1967 ;
-      :hasBrother data:Constantijn,
-          data:Friso ;
-      :hasChild data:Alexia,
-          data:Ariane,
-          data:Catharina-Amalia ;
-      :hasFather data:Claus ;
-      :hasMarriageYear data:2002,
-          2002 ;
-      :hasMother data:Beatrix .
-
-  data:Alexia a :Woman .
-
-  data:Ariane a :Woman .
-
-  data:Beatrix a :Ancestor,
-          :Woman ;
-      :hasFather data:Bernhard ;
-      :hasMother data:Juliana .
-
-  data:Bernhard a :Ancestor,
-          :Man .
-
-  data:Catharina-Amalia a :Woman .
-
-  data:Claus a :Ancestor,
-          :Man .
-
-  data:Constantijn a :Man .
-
-  data:Friso a :Man .
-
-  data:Juliana a :Ancestor,
-          :Woman .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['2002']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (49e177af-77f8-45ff-8c67-c67e9b0ef43e)
- Call ID: 49e177af-77f8-45ff-8c67-c67e9b0ef43e
-  Args:
-    relation: :hasMarriageYear
-    source: Willem-Alexander
-    literal_type: xsd:integer
-    literal_value: 2002
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:M%C3%A1xima_Zorreguieta_Cerruti a :Woman .
-
-  data:Willem-Alexander a :Man ;
-      :hasBirthYear 1967 ;
-      :hasBrother data:Constantijn,
-          data:Friso ;
-      :hasChild data:Alexia,
-          data:Ariane,
-          data:Catharina-Amalia ;
-      :hasFather data:Claus ;
-      :hasMarriageYear data:2002 ;
-      :hasMother data:Beatrix .
-
-  data:Alexia a :Woman .
-
-  data:Ariane a :Woman .
-
-  data:Beatrix a :Ancestor,
-          :Woman ;
-      :hasFather data:Bernhard ;
-      :hasMother data:Juliana .
-
-  data:Bernhard a :Ancestor,
-          :Man .
-
-  data:Catharina-Amalia a :Woman .
-
-  data:Claus a :Ancestor,
-          :Man .
-
-  data:Constantijn a :Man .
-
-  data:Friso a :Man .
-
-  data:Juliana a :Ancestor,
-          :Woman .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (5ab3310a-6f5b-439a-9e0a-82597d76d053)
- Call ID: 5ab3310a-6f5b-439a-9e0a-82597d76d053
-  Args:
-    target: 2002
-    source: Willem-Alexander
-    relation: :hasMarriageYear
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:M%C3%A1xima_Zorreguieta_Cerruti a :Woman .
-
-  data:Willem-Alexander a :Man ;
-      :hasBirthYear 1967 ;
-      :hasBrother data:Constantijn,
-          data:Friso ;
-      :hasChild data:Alexia,
-          data:Ariane,
-          data:Catharina-Amalia ;
-      :hasFather data:Claus ;
-      :hasMother data:Beatrix .
-
-  data:Alexia a :Woman .
-
-  data:Ariane a :Woman .
-
-  data:Beatrix a :Ancestor,
-          :Woman ;
-      :hasFather data:Bernhard ;
-      :hasMother data:Juliana .
-
-  data:Bernhard a :Ancestor,
-          :Man .
-
-  data:Catharina-Amalia a :Woman .
-
-  data:Claus a :Ancestor,
-          :Man .
-
-  data:Constantijn a :Man .
-
-  data:Friso a :Man .
-
-  data:Juliana a :Ancestor,
-          :Woman .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (a5aec9e3-bf11-42f9-9855-85cb1cf0c2dd)
- Call ID: a5aec9e3-bf11-42f9-9855-85cb1cf0c2dd
+  Finish (072256a8-4682-4136-91c8-10af216db1a6)
+ Call ID: 072256a8-4682-4136-91c8-10af216db1a6
   Args:

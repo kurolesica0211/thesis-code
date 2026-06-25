@@ -69,31 +69,37 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Fergus Bowes-Lyon (18 April 1889 – 27 September 1915) was a British officer and older brother of Elizabeth Bowes-Lyon, who later became the queen consort of King George VI.
-He was a maternal uncle of Queen Elizabeth II.
-Early life and marriage
-
-Fergus Bowes-Lyon was born at Forbes House in Ham, Surrey, the son of Claude Bowes-Lyon, 14th
-Bowes-Lyon had his early education at Ludgrove School.
-On 17 September 1914, Bowes-Lyon married Lady Christian Norah Dawson-Damer (7 August 1890 – 29 March 1959), daughter of the 5th Earl of Portarlington.
-Rosemary was only two months old when Fergus died in the line of duty on 27 September 1915, only 10 days after the first anniversary of his wedding.
-His issue:
+Princess Nuria
 
 
-World War I
+Princess Françoise
 
-In the First World War, Bowes-Lyon served with the 8th Battalion, Black Watch: as a lieutenant since 19 August 1914, and as temporary captain since 17 November.
-Bowes-Lyon was killed in action on 27 September 1915, during the Battle of the Hohenzollern Redoubt in the Battle of Loos.
-At the time of Bowes-Lyon's death, his brother John was also serving with the Black Watch.
-His mother, Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne, was severely affected by the loss of her son, and after his death became an invalid, withdrawn from public life until the marriage of her daughter Elizabeth to the future king George VI in 1923.
-Fergus's widow later married Captain William Frederick Martin (d. 6 October 1947).
-In November 2011, Bowes-Lyon's grandson supplied family records to the Commonwealth War Graves Commission detailing his original burial place, and showing that it had remained marked until the end of the war.
+
+Princess Mariam
+
+
+Princess Monique
+
+
+Prince Don Bagrat de Bagration y de Baviera, also Prince Bagrat Bagrationi-Mukhraneli and Prince Bagrat Bagration-Moukhransky (12 January 1949 – 20 March 2017) was a member of the Bagration dynasty which once ruled the Kingdom of Georgia and a relative of the royal family of Spain.
+Background
+
+He was born in Madrid, Spain on 12 January 1949 and named Bagrat Juan María de Fátima de Todos los Santos, the third child of Prince Irakli Bagration-Mukhrani (1909-1977) by his third wife, Infanta Doña María de las Mercedes de Baviera y Borbón (1911-1953), a niece of King Alfonso XIII of Spain.
+His maternal great-grandfather was King Alfonso XII.
+Prince Jorge de Bagration, a Spanish race car driver and pretender to the throne of Georgia, was his elder half brother.
+His mother had been born in Madrid, and although part of her youth was spent in exile in the Basses Pyrénées of France, Bagrat was raised, along with Jorge and his elder sister Princess Mariam (born 1947), by his widowed father in Madrid and at the Palacio de Santillana del Mar in Santander.
+Marriage and issue
+
+Bagrat married Doña María del Carmen de Ulloa y Suelves (b. 6 May 1953) on 12 November 1976 at San Jerónimo el
+The couple were divorced on 16 September 2005, and Bagrat remarried in a civil ceremony to Mme.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -109,39 +115,9 @@ In November 2011, Bowes-Lyon's grandson supplied family records to the Commonwea
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -156,6 +132,23 @@ In November 2011, Bowes-Lyon's grandson supplied family records to the Commonwea
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -173,6 +166,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -240,29 +248,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,6 +271,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -283,6 +291,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -291,17 +301,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -329,6 +341,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -344,133 +440,131 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8aa48506-bc12-447e-ab2a-dae5098babd2)
- Call ID: 8aa48506-bc12-447e-ab2a-dae5098babd2
+  AssignClass (a9a8ec85-9f0b-480c-9814-6569a408c3dc)
+ Call ID: a9a8ec85-9f0b-480c-9814-6569a408c3dc
   Args:
-    source: Fergus Bowes-Lyon
     type: :Man
-  AssignClass (8facc506-4384-4bae-8976-3a693ba7173d)
- Call ID: 8facc506-4384-4bae-8976-3a693ba7173d
+    source: :Bagrat_Bagration_Mukhraneli
+  AssignClass (efec5d52-54cd-43aa-b888-7494ccf26b6b)
+ Call ID: efec5d52-54cd-43aa-b888-7494ccf26b6b
   Args:
-    source: Fergus Bowes-Lyon
     type: :Person
-  AddLiteral (922a8c87-e2f4-4704-8482-18723e978f45)
- Call ID: 922a8c87-e2f4-4704-8482-18723e978f45
+    source: :Bagrat_Bagration_Mukhraneli
+  AddLiteral (99a4845d-81b1-4aa0-b9a0-d701afa38851)
+ Call ID: 99a4845d-81b1-4aa0-b9a0-d701afa38851
   Args:
-    literal_type: xsd:string
-    source: Fergus Bowes-Lyon
+    literal_value: 1949
     relation: :hasBirthYear
-    literal_value: 1889
-  AddLiteral (a12f2527-d60a-419d-acfe-fd517bbdcb1d)
- Call ID: a12f2527-d60a-419d-acfe-fd517bbdcb1d
+    literal_type: xsd:integer
+    source: :Bagrat_Bagration_Mukhraneli
+  AddLiteral (ffe5bcc3-79fa-4df9-a607-77ddf8754801)
+ Call ID: ffe5bcc3-79fa-4df9-a607-77ddf8754801
   Args:
-    literal_value: 1915
-    literal_type: xsd:string
-    source: Fergus Bowes-Lyon
+    source: :Bagrat_Bagration_Mukhraneli
+    literal_value: 2017
     relation: :hasDeathYear
-  AssignClass (e78cf00a-2298-4db6-8865-f169452e8981)
- Call ID: e78cf00a-2298-4db6-8865-f169452e8981
+    literal_type: xsd:integer
+  AddLiteral (2604858f-665e-4ef5-99fd-2f88ccbf7145)
+ Call ID: 2604858f-665e-4ef5-99fd-2f88ccbf7145
   Args:
-    source: Elizabeth Bowes-Lyon
-    type: :Woman
-  AssignClass (c156384c-4ffb-4cda-ba2f-8da94a1ba307)
- Call ID: c156384c-4ffb-4cda-ba2f-8da94a1ba307
-  Args:
-    type: :Person
-    source: Elizabeth Bowes-Lyon
-  AddTriple (49aa851b-db63-409f-b0e3-3f209a9a697a)
- Call ID: 49aa851b-db63-409f-b0e3-3f209a9a697a
-  Args:
-    target: Elizabeth Bowes-Lyon
-    relation: :isBrotherOf
-    source: Fergus Bowes-Lyon
-  AssignClass (96b6ea7b-c634-4326-a4a4-f8140a0bc970)
- Call ID: 96b6ea7b-c634-4326-a4a4-f8140a0bc970
-  Args:
-    source: Queen Elizabeth II
-    type: :Woman
-  AssignClass (acc4b2b4-97e3-4a53-83b7-0ddb7ef6eee7)
- Call ID: acc4b2b4-97e3-4a53-83b7-0ddb7ef6eee7
-  Args:
-    source: Queen Elizabeth II
-    type: :Person
-  AddTriple (2f61040d-f3e9-40e8-9097-aba37d6565ce)
- Call ID: 2f61040d-f3e9-40e8-9097-aba37d6565ce
-  Args:
-    source: Fergus Bowes-Lyon
-    relation: :isUncleOf
-    target: Queen Elizabeth II
-  AssignClass (e14a256f-48c5-49ee-b6dd-7549c4c0ca0d)
- Call ID: e14a256f-48c5-49ee-b6dd-7549c4c0ca0d
-  Args:
-    type: :Man
-    source: Claude Bowes-Lyon
-  AssignClass (262049a6-4bf9-4768-879e-b8d5185ad0c6)
- Call ID: 262049a6-4bf9-4768-879e-b8d5185ad0c6
-  Args:
-    source: Claude Bowes-Lyon
-    type: :Person
-  AddTriple (a831fc60-0b21-4a41-938f-ecd6c9aae1fd)
- Call ID: a831fc60-0b21-4a41-938f-ecd6c9aae1fd
-  Args:
-    target: Claude Bowes-Lyon
-    source: Fergus Bowes-Lyon
-    relation: :hasFather
-  AssignClass (549bbc9c-36de-4cf2-b1d4-fa5fce872fb6)
- Call ID: 549bbc9c-36de-4cf2-b1d4-fa5fce872fb6
-  Args:
-    type: :Woman
-    source: Lady Christian Norah Dawson-Damer
-  AssignClass (d0a7a582-4b97-4934-a26e-65af83bce0b4)
- Call ID: d0a7a582-4b97-4934-a26e-65af83bce0b4
-  Args:
-    type: :Person
-    source: Lady Christian Norah Dawson-Damer
-  AddTriple (d347122d-130c-4c25-9c09-9dc3c5d0226e)
- Call ID: d347122d-130c-4c25-9c09-9dc3c5d0226e
-  Args:
-    target: Lady Christian Norah Dawson-Damer
-    source: Fergus Bowes-Lyon
-    relation: :hasRelation
-  AddLiteral (62ed6c8f-d886-4aa7-b0db-fb91310c65ab)
- Call ID: 62ed6c8f-d886-4aa7-b0db-fb91310c65ab
-  Args:
-    literal_value: 1914
+    source: :Bagrat_Bagration_Mukhraneli
+    literal_value: Prince Bagrat Bagrationi-Mukhraneli
     literal_type: xsd:string
-    relation: :hasMarriageYear
-    source: Fergus Bowes-Lyon
-  AssignClass (bc67140e-1d9f-4b30-bc22-9ee987caf88f)
- Call ID: bc67140e-1d9f-4b30-bc22-9ee987caf88f
+    relation: :alsoKnownAs
+  AddLiteral (d3921f53-9059-42df-826c-b7a49062b410)
+ Call ID: d3921f53-9059-42df-826c-b7a49062b410
+  Args:
+    literal_value: Prince Bagrat Bagration-Moukhransky
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    source: :Bagrat_Bagration_Mukhraneli
+  AssignClass (98492c30-e6f1-4bf6-8f5a-b572d8c76377)
+ Call ID: 98492c30-e6f1-4bf6-8f5a-b572d8c76377
+  Args:
+    source: :Irakli_Bagration_Mukhrani
+    type: :Man
+  AssignClass (c38e60c4-ce47-4909-9c7d-6aceb9ea9739)
+ Call ID: c38e60c4-ce47-4909-9c7d-6aceb9ea9739
+  Args:
+    type: :Person
+    source: :Irakli_Bagration_Mukhrani
+  AddTriple (a7961147-5a9f-4b55-b870-56f97d9eac03)
+ Call ID: a7961147-5a9f-4b55-b870-56f97d9eac03
+  Args:
+    source: :Irakli_Bagration_Mukhrani
+    target: :Bagrat_Bagration_Mukhraneli
+    relation: :isFatherOf
+  AssignClass (9895e8bc-0070-49f8-b6ec-30e28dfa6c5b)
+ Call ID: 9895e8bc-0070-49f8-b6ec-30e28dfa6c5b
+  Args:
+    source: :Maria_de_las_Mercedes_de_Baviera_y_Borbon
+    type: :Woman
+  AssignClass (1fd54a59-eee7-46ff-acb1-fa4f0bf50c80)
+ Call ID: 1fd54a59-eee7-46ff-acb1-fa4f0bf50c80
+  Args:
+    source: :Maria_de_las_Mercedes_de_Baviera_y_Borbon
+    type: :Person
+  AddTriple (b8495b29-10af-4aba-895c-ffa9be1ffc3b)
+ Call ID: b8495b29-10af-4aba-895c-ffa9be1ffc3b
+  Args:
+    relation: :isMotherOf
+    source: :Maria_de_las_Mercedes_de_Baviera_y_Borbon
+    target: :Bagrat_Bagration_Mukhraneli
+  AssignClass (93cc84fd-f6a2-4b95-8b49-714b91e0e950)
+ Call ID: 93cc84fd-f6a2-4b95-8b49-714b91e0e950
+  Args:
+    type: :Man
+    source: :Jorge_de_Bagration
+  AssignClass (6c727edd-aeaa-4388-a851-ffb9a757d7a0)
+ Call ID: 6c727edd-aeaa-4388-a851-ffb9a757d7a0
+  Args:
+    source: :Jorge_de_Bagration
+    type: :Person
+  AddTriple (00bd8d79-2b5f-4a9f-8827-780c05f5c3f9)
+ Call ID: 00bd8d79-2b5f-4a9f-8827-780c05f5c3f9
+  Args:
+    relation: :isBrotherOf
+    source: :Jorge_de_Bagration
+    target: :Bagrat_Bagration_Mukhraneli
+  AssignClass (10c1b3f1-215e-456b-99aa-ee04dfaaf0d3)
+ Call ID: 10c1b3f1-215e-456b-99aa-ee04dfaaf0d3
+  Args:
+    source: :Princess_Mariam
+    type: :Woman
+  AssignClass (4b78ad56-c9ae-4cbb-ad97-a531cdc396d2)
+ Call ID: 4b78ad56-c9ae-4cbb-ad97-a531cdc396d2
+  Args:
+    type: :Person
+    source: :Princess_Mariam
+  AddTriple (46120eee-9811-4164-b320-30c52b9134a2)
+ Call ID: 46120eee-9811-4164-b320-30c52b9134a2
+  Args:
+    relation: :isSisterOf
+    source: :Princess_Mariam
+    target: :Bagrat_Bagration_Mukhraneli
+  AssignClass (dc2590a5-c2e4-427a-a25e-2f7e4db74b9a)
+ Call ID: dc2590a5-c2e4-427a-a25e-2f7e4db74b9a
   Args:
     type: :Woman
-    source: Cecilia Bowes-Lyon
-  AssignClass (ee9ffc69-e7b9-4c90-b67a-d3a0fa11aa3b)
- Call ID: ee9ffc69-e7b9-4c90-b67a-d3a0fa11aa3b
-  Args:
-    source: Cecilia Bowes-Lyon
-    type: :Person
-  AddTriple (4f2b03ca-55c2-4f82-8e09-723fe388df47)
- Call ID: 4f2b03ca-55c2-4f82-8e09-723fe388df47
-  Args:
-    source: Fergus Bowes-Lyon
-    relation: :hasMother
-    target: Cecilia Bowes-Lyon
-  AssignClass (2015422f-b267-4fdf-96d6-fba4ccc612b3)
- Call ID: 2015422f-b267-4fdf-96d6-fba4ccc612b3
-  Args:
-    source: John Bowes-Lyon
-    type: :Man
-  AssignClass (e331ca61-ef1a-4a7f-940f-7623099a5444)
- Call ID: e331ca61-ef1a-4a7f-940f-7623099a5444
+    source: :Maria_del_Carmen_de_Ulloa_y_Suelves
+  AssignClass (8fe0d8b7-ab42-4eda-987e-aeeb06e8e604)
+ Call ID: 8fe0d8b7-ab42-4eda-987e-aeeb06e8e604
   Args:
     type: :Person
-    source: John Bowes-Lyon
-  AddTriple (4500c637-a7eb-4555-b021-f2812521f9ae)
- Call ID: 4500c637-a7eb-4555-b021-f2812521f9ae
+    source: :Maria_del_Carmen_de_Ulloa_y_Suelves
+  AddLiteral (a9f3bfb5-fff1-4031-83f0-a2101fed3f79)
+ Call ID: a9f3bfb5-fff1-4031-83f0-a2101fed3f79
   Args:
-    source: Fergus Bowes-Lyon
-    relation: :isBrotherOf
-    target: John Bowes-Lyon
-  Finish (eb050e84-8967-454b-85ff-9c666b7449f4)
- Call ID: eb050e84-8967-454b-85ff-9c666b7449f4
+    source: :Bagrat_Bagration_Mukhraneli
+    literal_value: 1976
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AddTriple (b0be0204-d53c-42e7-8105-d26f4e3a39ea)
+ Call ID: b0be0204-d53c-42e7-8105-d26f4e3a39ea
+  Args:
+    relation: :hasRelation
+    target: :Maria_del_Carmen_de_Ulloa_y_Suelves
+    source: :Bagrat_Bagration_Mukhraneli
+  Finish (08830490-4b0b-4a67-b092-50c77c839f4f)
+ Call ID: 08830490-4b0b-4a67-b092-50c77c839f4f
   Args:

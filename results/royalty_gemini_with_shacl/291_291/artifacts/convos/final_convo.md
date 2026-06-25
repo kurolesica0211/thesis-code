@@ -85,56 +85,58 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Christina of the Netherlands (Maria Christina; 18 February 1947 – 16 August 2019) was the youngest of four daughters of Queen Juliana of the Netherlands and Prince Bernhard of Lippe-Biesterfeld.
-She taught singing in New York and was a long-term supporter of the Youth Music Foundation in the Netherlands.
-Christina died of bone cancer in 2019.
-Early life
+Princess Xenia Georgievna of Russia (22 August 1903 – 17 September 1965) was the younger daughter of Grand Duke George Mihailovich of Russia and Princess Maria Georgievna of Greece and Denmark.
+She is known for recognizing Anna Anderson as Grand Duchess Anastasia.
+Youth
 
-Princess Christina, who was known as Princess Marijke in her youth, was born on 18 February 1947, at Soestdijk Palace, Baarn, the Netherlands.
-Her parents were Crown Princess Juliana, the only child of Queen Wilhelmina of the Netherlands, and Prince Bernhard of Lippe-Biesterfeld.
-At the time of her birth, she was fifth in the line to the throne after her mother and three older sisters: Princess Beatrix, Princess Irene and Princess Margriet.
-She was baptised on 9 October 1947 and her godparents included Queen Wilhelmina (her maternal grandmother), her eldest sister Princess Beatrix, Sir Winston Churchill (for whom her father stood proxy), her paternal grandmother Princess Armgard of Lippe-Biesterfeld, Prince Felix of Luxembourg, and his niece Princess Anne of Bourbon-Parma.
-On 4 September 1948, after a reign of nearly 58 years, Christina's grandmother Queen Wilhelmina (68) abdicated the throne and her mother was inaugurated as Queen of the Kingdom of the Netherlands on 6 September 1948.
-Childhood and education
+Xenia and her older sister Princess Nina Georgievna, who was born in 1901, left Russia in 1914 to spend the war years in England with their mother.
+In 1919, her father, his brother Grand Duke Nicholas Mikhailovich, and their cousins Grand Duke Paul Alexandrovich and Grand Duke Dmitry Konstantinovich, were executed by a Bolshevik firing squad in St. Petersburg.
+Anna Anderson controversy
 
-While her mother was pregnant with Christina, she contracted either measles or rubella and as a result, Christina was born nearly blind.
-In 1963, she stopped using her first name Maria, from then on referring to herself merely as Christina.
-Marriage
+In the summer of 1927, Xenia involved herself in the Anna Anderson/Anastasia Tchaikovsky affair by telephoning Gleb Botkin (son of imperial physician Eugene Botkin, who had been murdered along with the former tsar and his family in 1918) with an invitation for Anna to live as a guest at their luxurious estate in New York's Oyster Bay.
+Xenia explains her hospitality: "I had heard that Botkin was arranging to bring 'the invalid' to the United States through a newspaper organization.
+As children, Xenia and her sister Nina had played frequently with the two youngest daughters of Tsar Nicholas II, Grand Duchesses Maria Nikolaevna and Anastasia Nikolaevna, as well as the youngest child and only boy, Tsarevitch Alexei.
+Through her father, Xenia was Anastasia's second cousin, once removed and through her mother they were second cousins.
+According to Xenia, Anastasia "cheated at games, kicked, scratched, pulled hair, and generally knew how to make herself obnoxious.
+"
 
-While living in New York as Christina van Oranje, the Princess started a relationship with Cuban exile Jorge Guillermo.
-Although societal attitudes were changing, because Guillermo was a Catholic, it was still possible that a marriage could cause a public scandal in the Netherlands such as the one that occurred in 1964 when Christina's sister Princess Irene married the Catholic Prince Carlos Hugo of Bourbon-Parma.
-Accordingly, Princess Christina, at that time ninth in line for the Dutch throne, renounced her and her descendants' rights to the throne before officially announcing her engagement on St. Valentine's Day, 1975.
-After their wedding, they lived in New York but later moved to the Netherlands, where they built Villa Eikenhorst  in Wassenaar, near The Hague.
-She recorded and released several CDs (classical, Broadway) in 2000 and 2002, and was a long-term supporter of the Youth Music Foundation in the Netherlands.
-In 1989, she allowed her name to be used for the Prinses Christina Concours, an annual competition held in the Netherlands to encourage the musical talents of children in the Netherlands.
-One of her few public performances was at the marriage of her nephew Prince Bernhard Jr.
-She also sang at the funerals of both of her parents Princess Juliana and Prince Bernhard in the New Church (Delft).
-Early 2019, Christina made headlines when she decided to sell several works of art.
-These works came to her through inheritance from the Dutch royal family: art lover William II of the Netherlands.
+
+Xenia was on a cruise with her husband William in the West Indies at the time of Anna's arrival in New York.
+She had arranged for Anna to stay with Annie Burr Jennings, a friend of Xenia's who lived in a Park Avenue townhouse.
+Upon her return, Xenia sneaked unannounced into Annie Jennings's crowded salon to observe Anna.
+After watching Anna offer her hand to Gleb Botkin, Xenia declared that she knew she was watching an equal.
+"
+
+
+Xenia recognized Anna Anderson as the Grand Duchess Anastasia at once, asserting that Anna was herself at all times, never giving the slightest impression of playing a part.
+The two remained great friends for life even after Anna Anderson had to leave Xenia's home after quarreling.
+Then her treatment of the Grand Duchess Xenia, sister of the last Tsar, led to a quarrel with William Leeds, who turned her out of the house.
+Pierre Gilliard, tutor for the five children of Tsar Nicholas II from 1905 to 1918, pointed out that Princess Xenia had last seen her second cousin when Xenia was 10 and Anastasia was 12.
+Xenia responded that she did not recognize Anastasia visually, but felt she was qualified to tell the difference between a member of the Romanov family and a "Polish peasant woman."
+Anderson bore a strong family resemblance to Tsarina Alexandra's family and her moodiness and temper also reminded Xenia of her cousin Anastasia.
+Prince Dmitri, son of Grand Duchess Xenia, wrote about what Princess Xenia had stated,
+
+
+Xenia's irresponsible statement should be somehow refuted ...
+We know she left Russia in 1914 aged 10 years old, I also know that Nina (her sister) and Xenia never saw Uncle Nicky's family very often, and when they did see them that was when they were very young.
+Personal life
+
+Xenia married twice.
+At age 18 she married William Bateman Leeds Jr. (19 September 1902 – 31 December 1971), the son and heir of the American tin magnate William B. Leeds Sr. and the stepson of Xenia's maternal uncle Prince Christopher of Greece and Denmark, through his marriage to William’s mother, the former Nonie Stewart Leeds.
+Xenia and William had a daughter on 25 February 1925, Nancy Helen Marie Leeds.
+Xenia and William Leeds divorced in 1930.
+Xenia's second marriage was with Herman Jud (1911–1987), whom she married at Glen Cove, New York, on 10 August 1946.
 Death
 
-In June 2018, it was announced that Princess Christina had been diagnosed with bone cancer.
-Titles, styles and honours
-
-Honours
-
-National honours
-
-Foreign honours
-
-Ancestry
-
-References
-
-External links
-
-2 also Princess of Lippe-Biesterfeld
+Princess Xenia Georgievna died on 17 September 1965, aged 62, survived by her second husband and by her daughter, Nancy Leeds Wynkoop, and by granddaughter Alexandra.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -150,39 +152,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -197,6 +169,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -214,6 +203,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -281,29 +285,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -312,6 +308,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -324,6 +328,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -332,17 +338,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -370,6 +378,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -385,237 +477,147 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (386822ce-6a3a-4690-9be3-0b430d22e2d7)
- Call ID: 386822ce-6a3a-4690-9be3-0b430d22e2d7
+  AssignClass (1670073e-979f-44b2-90a4-5323357b0064)
+ Call ID: 1670073e-979f-44b2-90a4-5323357b0064
   Args:
     type: :Woman
-    source: Princess_Christina_of_the_Netherlands
-  AssignClass (6b08d58c-225a-45f8-b62a-ecc575f2ed1f)
- Call ID: 6b08d58c-225a-45f8-b62a-ecc575f2ed1f
+    source: :Xenia_Georgievna
+  AssignClass (1c011314-3d43-4719-ba83-abf1cb7975cc)
+ Call ID: 1c011314-3d43-4719-ba83-abf1cb7975cc
   Args:
-    source: Princess_Christina_of_the_Netherlands
+    source: :Xenia_Georgievna
     type: :Person
-  AssignClass (9cf9d4f8-9ed8-4d3f-b48c-99148b1557cb)
- Call ID: 9cf9d4f8-9ed8-4d3f-b48c-99148b1557cb
+  AddLiteral (2f3a5748-1b05-4c1f-a1d2-ceb286c7fb46)
+ Call ID: 2f3a5748-1b05-4c1f-a1d2-ceb286c7fb46
   Args:
-    type: :Woman
-    source: Queen_Juliana_of_the_Netherlands
-  AssignClass (65a5d223-5fe6-4ed9-a2fa-6a26338946b2)
- Call ID: 65a5d223-5fe6-4ed9-a2fa-6a26338946b2
-  Args:
-    type: :Person
-    source: Queen_Juliana_of_the_Netherlands
-  AssignClass (c333601c-330f-4ffe-ad63-b939d7ae0b2d)
- Call ID: c333601c-330f-4ffe-ad63-b939d7ae0b2d
-  Args:
-    type: :Man
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-  AssignClass (50b57cab-d138-4b35-bdf3-7c6242a7a4cf)
- Call ID: 50b57cab-d138-4b35-bdf3-7c6242a7a4cf
-  Args:
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-    type: :Person
-  AddLiteral (035d8837-3f08-4baf-8f98-c230df9d28f7)
- Call ID: 035d8837-3f08-4baf-8f98-c230df9d28f7
-  Args:
-    literal_value: 1947
-    source: Princess_Christina_of_the_Netherlands
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (d8c87db7-3c81-43bb-8c5d-c39ad9413173)
- Call ID: d8c87db7-3c81-43bb-8c5d-c39ad9413173
-  Args:
     literal_type: xsd:integer
+    source: :Xenia_Georgievna
+    literal_value: 1903
+  AddLiteral (bcb5b469-46dc-4deb-9a54-25dba86bd3a4)
+ Call ID: bcb5b469-46dc-4deb-9a54-25dba86bd3a4
+  Args:
     relation: :hasDeathYear
-    source: Princess_Christina_of_the_Netherlands
-    literal_value: 2019
-  AddLiteral (236678d4-d2b2-4be6-ac96-6c88c4a16570)
- Call ID: 236678d4-d2b2-4be6-ac96-6c88c4a16570
-  Args:
-    literal_type: xsd:string
-    relation: :knownAs
-    literal_value: Princess Marijke
-    source: Princess_Christina_of_the_Netherlands
-  AddTriple (20520512-f0d0-4a9c-8a2b-f0423e2b6717)
- Call ID: 20520512-f0d0-4a9c-8a2b-f0423e2b6717
-  Args:
-    source: Princess_Christina_of_the_Netherlands
-    target: Queen_Juliana_of_the_Netherlands
-    relation: :hasMother
-  AddTriple (cc5db5af-897c-4bc5-b80f-7f25a4782739)
- Call ID: cc5db5af-897c-4bc5-b80f-7f25a4782739
-  Args:
-    target: Prince_Bernhard_of_Lippe-Biesterfeld
-    relation: :hasFather
-    source: Princess_Christina_of_the_Netherlands
-  AssignClass (527a8ed2-c5a1-47c5-9d90-9e38cd1d844d)
- Call ID: 527a8ed2-c5a1-47c5-9d90-9e38cd1d844d
-  Args:
-    source: Queen_Wilhelmina_of_the_Netherlands
-    type: :Woman
-  AssignClass (6ffeae4b-d86d-4fa6-b19f-db91c9696b1f)
- Call ID: 6ffeae4b-d86d-4fa6-b19f-db91c9696b1f
-  Args:
-    source: Queen_Wilhelmina_of_the_Netherlands
-    type: :Person
-  AddTriple (ec994901-5b77-42b3-ad63-d2bfcfefd04c)
- Call ID: ec994901-5b77-42b3-ad63-d2bfcfefd04c
-  Args:
-    source: Queen_Juliana_of_the_Netherlands
-    target: Queen_Wilhelmina_of_the_Netherlands
-    relation: :hasMother
-  AssignClass (073dd133-bac4-4ad0-85de-5c17e1f3d3bb)
- Call ID: 073dd133-bac4-4ad0-85de-5c17e1f3d3bb
-  Args:
-    source: Princess_Beatrix
-    type: :Woman
-  AssignClass (b20677e3-e7a5-45db-a8c0-1fca10bb0528)
- Call ID: b20677e3-e7a5-45db-a8c0-1fca10bb0528
-  Args:
-    source: Princess_Beatrix
-    type: :Person
-  AssignClass (0cdfd769-3acd-4424-9891-6df84fdd1c8e)
- Call ID: 0cdfd769-3acd-4424-9891-6df84fdd1c8e
-  Args:
-    type: :Woman
-    source: Princess_Irene
-  AssignClass (62e11456-3c7e-464a-af15-07c2982510a8)
- Call ID: 62e11456-3c7e-464a-af15-07c2982510a8
-  Args:
-    type: :Person
-    source: Princess_Irene
-  AssignClass (6ddca46e-4b1e-4856-a92f-2a522533c535)
- Call ID: 6ddca46e-4b1e-4856-a92f-2a522533c535
-  Args:
-    type: :Woman
-    source: Princess_Margriet
-  AssignClass (01a246df-5e5b-45ad-b540-35a4a60df422)
- Call ID: 01a246df-5e5b-45ad-b540-35a4a60df422
-  Args:
-    type: :Person
-    source: Princess_Margriet
-  AddTriple (84e84b62-646d-4968-9c3f-702786b58c66)
- Call ID: 84e84b62-646d-4968-9c3f-702786b58c66
-  Args:
-    target: Princess_Beatrix
-    relation: :isSisterOf
-    source: Princess_Christina_of_the_Netherlands
-  AddTriple (cce373f5-d710-4b4f-8671-e95f58ecf57d)
- Call ID: cce373f5-d710-4b4f-8671-e95f58ecf57d
-  Args:
-    relation: :isSisterOf
-    target: Princess_Irene
-    source: Princess_Christina_of_the_Netherlands
-  AddTriple (9b30c350-43d0-42fb-8826-00143f135710)
- Call ID: 9b30c350-43d0-42fb-8826-00143f135710
-  Args:
-    source: Princess_Christina_of_the_Netherlands
-    relation: :isSisterOf
-    target: Princess_Margriet
-  AssignClass (1adfb275-5f57-4574-a9a7-481be5366f9f)
- Call ID: 1adfb275-5f57-4574-a9a7-481be5366f9f
-  Args:
-    source: Princess_Armgard_of_Lippe-Biesterfeld
-    type: :Woman
-  AssignClass (b0fcc316-9888-4cc4-9776-1b3178f72874)
- Call ID: b0fcc316-9888-4cc4-9776-1b3178f72874
-  Args:
-    source: Princess_Armgard_of_Lippe-Biesterfeld
-    type: :Person
-  AddTriple (c76a1627-fd26-417e-a928-2586c828ca5b)
- Call ID: c76a1627-fd26-417e-a928-2586c828ca5b
-  Args:
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-    target: Princess_Armgard_of_Lippe-Biesterfeld
-    relation: :hasMother
-  AssignClass (87910363-c556-49f4-9f6c-7937e5be23a6)
- Call ID: 87910363-c556-49f4-9f6c-7937e5be23a6
+    literal_value: 1965
+    source: :Xenia_Georgievna
+    literal_type: xsd:integer
+  AssignClass (4ccfe6cd-3346-471d-a37b-faf290c038a6)
+ Call ID: 4ccfe6cd-3346-471d-a37b-faf290c038a6
   Args:
     type: :Man
-    source: Jorge_Guillermo
-  AssignClass (55086bd6-6224-456f-8bea-e02e477f11a6)
- Call ID: 55086bd6-6224-456f-8bea-e02e477f11a6
+    source: :George_Mihailovich
+  AssignClass (d4d5d37b-936b-4ed6-8da1-3e8b41a0b39f)
+ Call ID: d4d5d37b-936b-4ed6-8da1-3e8b41a0b39f
   Args:
     type: :Person
-    source: Jorge_Guillermo
-  AddTriple (c2500df1-bcfa-49b4-9035-9191e47d1a88)
- Call ID: c2500df1-bcfa-49b4-9035-9191e47d1a88
+    source: :George_Mihailovich
+  AssignClass (72f2c27e-4c4d-49dd-be62-75ea0661efc9)
+ Call ID: 72f2c27e-4c4d-49dd-be62-75ea0661efc9
   Args:
-    relation: :hasRelation
-    target: Jorge_Guillermo
-    source: Princess_Christina_of_the_Netherlands
-  AssignClass (93738cde-b985-4d9e-b598-54546983f5a5)
- Call ID: 93738cde-b985-4d9e-b598-54546983f5a5
+    source: :Maria_Georgievna
+    type: :Woman
+  AssignClass (f4bf94d6-85c7-4cd6-afa6-0189f6ede472)
+ Call ID: f4bf94d6-85c7-4cd6-afa6-0189f6ede472
+  Args:
+    type: :Person
+    source: :Maria_Georgievna
+  AddTriple (caa1e980-d4f0-4b82-9faf-953b4f0607e2)
+ Call ID: caa1e980-d4f0-4b82-9faf-953b4f0607e2
+  Args:
+    source: :Xenia_Georgievna
+    target: :George_Mihailovich
+    relation: :isDaughterOf
+  AddTriple (97e467b7-ad45-476b-a45c-0aeb2caacfdf)
+ Call ID: 97e467b7-ad45-476b-a45c-0aeb2caacfdf
+  Args:
+    source: :Xenia_Georgievna
+    target: :Maria_Georgievna
+    relation: :isDaughterOf
+  AssignClass (717f3985-8383-414d-bb5d-0c5da01b77a6)
+ Call ID: 717f3985-8383-414d-bb5d-0c5da01b77a6
+  Args:
+    source: :Nina_Georgievna
+    type: :Woman
+  AssignClass (fc4c68eb-5e7a-4b0b-b78a-b5f47f788114)
+ Call ID: fc4c68eb-5e7a-4b0b-b78a-b5f47f788114
+  Args:
+    source: :Nina_Georgievna
+    type: :Person
+  AddTriple (da8b9d0b-a3bb-48f4-82f2-a73422ed966f)
+ Call ID: da8b9d0b-a3bb-48f4-82f2-a73422ed966f
+  Args:
+    relation: :isSisterOf
+    target: :Xenia_Georgievna
+    source: :Nina_Georgievna
+  AddTriple (f688f979-e4f6-4dbe-9af2-6c0b5a82441b)
+ Call ID: f688f979-e4f6-4dbe-9af2-6c0b5a82441b
+  Args:
+    target: :George_Mihailovich
+    source: :Nina_Georgievna
+    relation: :isDaughterOf
+  AddTriple (3c558aaa-705d-464d-a2c1-12f2924212a5)
+ Call ID: 3c558aaa-705d-464d-a2c1-12f2924212a5
+  Args:
+    relation: :isDaughterOf
+    source: :Nina_Georgievna
+    target: :Maria_Georgievna
+  AssignClass (9064c7a0-0e60-4fa3-9e09-dca81832d83f)
+ Call ID: 9064c7a0-0e60-4fa3-9e09-dca81832d83f
   Args:
     type: :Man
-    source: Prince_Carlos_Hugo_of_Bourbon-Parma
-  AssignClass (e18bad81-faba-4906-8990-9213a321a77d)
- Call ID: e18bad81-faba-4906-8990-9213a321a77d
+    source: :William_Bateman_Leeds_Jr
+  AssignClass (cc256d8d-3084-4c39-9599-76b4d9afcfa2)
+ Call ID: cc256d8d-3084-4c39-9599-76b4d9afcfa2
   Args:
     type: :Person
-    source: Prince_Carlos_Hugo_of_Bourbon-Parma
-  AddTriple (14e7f7f1-8e40-4f5d-9128-b121654258c7)
- Call ID: 14e7f7f1-8e40-4f5d-9128-b121654258c7
+    source: :William_Bateman_Leeds_Jr
+  AddTriple (b610e44a-483a-4ac8-a437-f34e174cdc67)
+ Call ID: b610e44a-483a-4ac8-a437-f34e174cdc67
   Args:
-    source: Princess_Irene
-    target: Prince_Carlos_Hugo_of_Bourbon-Parma
     relation: :hasRelation
-  AssignClass (6d1bf511-dc74-4a7a-bf98-fe17f5675005)
- Call ID: 6d1bf511-dc74-4a7a-bf98-fe17f5675005
+    target: :William_Bateman_Leeds_Jr
+    source: :Xenia_Georgievna
+  AssignClass (e4a11dc8-4697-4fc1-a157-d74910477ddf)
+ Call ID: e4a11dc8-4697-4fc1-a157-d74910477ddf
   Args:
+    type: :Woman
+    source: :Nancy_Helen_Marie_Leeds
+  AssignClass (8c52d14b-c861-452d-aeac-e148eab80ba9)
+ Call ID: 8c52d14b-c861-452d-aeac-e148eab80ba9
+  Args:
+    source: :Nancy_Helen_Marie_Leeds
+    type: :Person
+  AddTriple (daee2e7a-dfbb-4489-a9f3-4476c8e9ab1f)
+ Call ID: daee2e7a-dfbb-4489-a9f3-4476c8e9ab1f
+  Args:
+    target: :Xenia_Georgievna
+    source: :Nancy_Helen_Marie_Leeds
+    relation: :isDaughterOf
+  AddTriple (758c69fd-24d5-4541-acbd-3d5617edb331)
+ Call ID: 758c69fd-24d5-4541-acbd-3d5617edb331
+  Args:
+    relation: :isDaughterOf
+    target: :William_Bateman_Leeds_Jr
+    source: :Nancy_Helen_Marie_Leeds
+  AssignClass (3c15ff36-ab9b-41ac-98b1-d643d78aec44)
+ Call ID: 3c15ff36-ab9b-41ac-98b1-d643d78aec44
+  Args:
+    source: :Herman_Jud
     type: :Man
-    source: Prince_Bernhard_Jr
-  AssignClass (d0d0e1e1-eb6e-4be8-822f-7ea933866dd8)
- Call ID: d0d0e1e1-eb6e-4be8-822f-7ea933866dd8
+  AssignClass (148d813b-bf60-41df-b90d-70f09c3335d9)
+ Call ID: 148d813b-bf60-41df-b90d-70f09c3335d9
   Args:
+    source: :Herman_Jud
     type: :Person
-    source: Prince_Bernhard_Jr
-  AddTriple (a4eaa44e-582a-4eee-9073-a7d148fa991c)
- Call ID: a4eaa44e-582a-4eee-9073-a7d148fa991c
+  AddTriple (ff29379f-937d-4c99-b818-f1dc2d1402c2)
+ Call ID: ff29379f-937d-4c99-b818-f1dc2d1402c2
   Args:
-    source: Princess_Christina_of_the_Netherlands
     relation: :hasRelation
-    target: Prince_Bernhard_Jr
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    target: :Herman_Jud
+    source: :Xenia_Georgievna
+  Finish (380d68c7-a0e3-4607-8393-d64bc8a23f7c)
+ Call ID: 380d68c7-a0e3-4607-8393-d64bc8a23f7c
+  Args:
 
 ================================= Tool Message =================================
 
@@ -720,162 +722,200 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Princess_Christina_of_the_Netherlands a :Person,
+  data:Nancy_Helen_Marie_Leeds a :Person,
           :Woman ;
-      :hasBirthYear 1947 ;
-      :hasDeathYear 2019 ;
-      :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-      :hasMother data:Queen_Juliana_of_the_Netherlands ;
-      :hasRelation data:Jorge_Guillermo,
-          data:Prince_Bernhard_Jr ;
-      :isSisterOf data:Princess_Beatrix,
-          data:Princess_Irene,
-          data:Princess_Margriet ;
-      :knownAs "Princess Marijke"^^xsd:string .
+      :isDaughterOf data:William_Bateman_Leeds_Jr,
+          data:Xenia_Georgievna .
 
-  data:Jorge_Guillermo a :Man,
+  data:Nina_Georgievna a :Person,
+          :Woman ;
+      :isDaughterOf data:George_Mihailovich,
+          data:Maria_Georgievna ;
+      :isSisterOf data:Xenia_Georgievna .
+
+  data:Herman_Jud a :Man,
           :Person .
 
-  data:Prince_Bernhard_Jr a :Man,
+  data:George_Mihailovich a :Man,
           :Person .
 
-  data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
-          :Person ;
-      :hasMother data:Princess_Armgard_of_Lippe-Biesterfeld .
+  data:Maria_Georgievna a :Person,
+          :Woman .
 
-  data:Prince_Carlos_Hugo_of_Bourbon-Parma a :Man,
+  data:William_Bateman_Leeds_Jr a :Man,
           :Person .
 
-  data:Princess_Armgard_of_Lippe-Biesterfeld a :Person,
-          :Woman .
-
-  data:Princess_Beatrix a :Person,
-          :Woman .
-
-  data:Princess_Irene a :Person,
+  data:Xenia_Georgievna a :Person,
           :Woman ;
-      :hasRelation data:Prince_Carlos_Hugo_of_Bourbon-Parma .
-
-  data:Princess_Margriet a :Person,
-          :Woman .
-
-  data:Queen_Juliana_of_the_Netherlands a :Person,
-          :Woman ;
-      :hasMother data:Queen_Wilhelmina_of_the_Netherlands .
-
-  data:Queen_Wilhelmina_of_the_Netherlands a :Person,
-          :Woman .
+      :hasBirthYear 1903 ;
+      :hasDeathYear 1965 ;
+      :hasRelation data:Herman_Jud,
+          data:William_Bateman_Leeds_Jr ;
+      :isDaughterOf data:George_Mihailovich,
+          data:Maria_Georgievna .
 
 
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (d39b0ed1-ac3c-4154-b6e1-0bc7a2d399f7)
- Call ID: d39b0ed1-ac3c-4154-b6e1-0bc7a2d399f7
+  ValidateShacl (bffb32a0-a027-44e0-8283-3b394810ade2)
+ Call ID: bffb32a0-a027-44e0-8283-3b394810ade2
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:18
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Princess_Armgard_of_Lippe-Biesterfeld' is used as a mother but lacks the required 'Ancestor' class assignment.
+      The node 'Maria_Georgievna' linked via 'isDaughterOf' from 'Nina_Georgievna' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Armgard_of_Lippe-Biesterfeld', class=':Ancestor')
+      AssignClass(node='Maria_Georgievna', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Prince_Bernhard_of_Lippe-Biesterfeld' is used as a father but lacks the required 'Ancestor' class assignment.
+      The node 'George_Mihailovich' linked via 'isDaughterOf' from 'Nina_Georgievna' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
+      AssignClass(node='George_Mihailovich', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Queen_Juliana_of_the_Netherlands' is used as a mother but lacks the required 'Ancestor' class assignment.
+      The node 'Xenia_Georgievna' linked via 'isDaughterOf' from 'Nancy_Helen_Marie_Leeds' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Juliana_of_the_Netherlands', class=':Ancestor')
+      AssignClass(node='Xenia_Georgievna', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Queen_Wilhelmina_of_the_Netherlands' is used as a mother but lacks the required 'Ancestor' class assignment.
+      The node 'William_Bateman_Leeds_Jr' linked via 'isDaughterOf' from 'Nancy_Helen_Marie_Leeds' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Wilhelmina_of_the_Netherlands', class=':Ancestor')
+      AssignClass(node='William_Bateman_Leeds_Jr', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Princess_Armgard_of_Lippe-Biesterfeld' is used as a mother but lacks the required 'Ancestor' class assignment.
+      The node 'Maria_Georgievna' linked via 'isDaughterOf' from 'Xenia_Georgievna' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Armgard_of_Lippe-Biesterfeld', class=':Ancestor')
+      AssignClass(node='Maria_Georgievna', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Prince_Bernhard_of_Lippe-Biesterfeld' is used as a father but lacks the required 'Ancestor' class assignment.
+      The node 'George_Mihailovich' linked via 'isDaughterOf' from 'Xenia_Georgievna' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
+      AssignClass(node='George_Mihailovich', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Queen_Juliana_of_the_Netherlands' is used as a mother but lacks the required 'Ancestor' class assignment.
+      The node 'Maria_Georgievna' linked via 'isDaughterOf' from 'Nina_Georgievna' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Juliana_of_the_Netherlands', class=':Ancestor')
+      AssignClass(node='Maria_Georgievna', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Queen_Wilhelmina_of_the_Netherlands' is used as a mother but lacks the required 'Ancestor' class assignment.
+      The node 'George_Mihailovich' linked via 'isDaughterOf' from 'Nina_Georgievna' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Wilhelmina_of_the_Netherlands', class=':Ancestor')
+      AssignClass(node='George_Mihailovich', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Princess_Armgard_of_Lippe-Biesterfeld' is used as a mother but lacks the required 'Ancestor' class assignment.
+      The node 'Xenia_Georgievna' linked via 'isDaughterOf' from 'Nancy_Helen_Marie_Leeds' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Armgard_of_Lippe-Biesterfeld', class=':Ancestor')
+      AssignClass(node='Xenia_Georgievna', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Prince_Bernhard_of_Lippe-Biesterfeld' is used as a father but lacks the required 'Ancestor' class assignment.
+      The node 'William_Bateman_Leeds_Jr' linked via 'isDaughterOf' from 'Nancy_Helen_Marie_Leeds' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
+      AssignClass(node='William_Bateman_Leeds_Jr', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Queen_Juliana_of_the_Netherlands' is used as a mother but lacks the required 'Ancestor' class assignment.
+      The node 'Maria_Georgievna' linked via 'isDaughterOf' from 'Xenia_Georgievna' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Juliana_of_the_Netherlands', class=':Ancestor')
+      AssignClass(node='Maria_Georgievna', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Queen_Wilhelmina_of_the_Netherlands' is used as a mother but lacks the required 'Ancestor' class assignment.
+      The node 'George_Mihailovich' linked via 'isDaughterOf' from 'Xenia_Georgievna' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Wilhelmina_of_the_Netherlands', class=':Ancestor')
+      AssignClass(node='George_Mihailovich', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Xenia_Georgievna' linked via 'isDaughterOf' from 'Nancy_Helen_Marie_Leeds' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Xenia_Georgievna', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'William_Bateman_Leeds_Jr' linked via 'isDaughterOf' from 'Nancy_Helen_Marie_Leeds' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='William_Bateman_Leeds_Jr', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Maria_Georgievna' linked via 'isDaughterOf' from 'Xenia_Georgievna' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Georgievna', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'George_Mihailovich' linked via 'isDaughterOf' from 'Xenia_Georgievna' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='George_Mihailovich', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Maria_Georgievna' linked via 'isDaughterOf' from 'Nina_Georgievna' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Georgievna', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'George_Mihailovich' linked via 'isDaughterOf' from 'Nina_Georgievna' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='George_Mihailovich', class=':Ancestor')
 
 
 
@@ -884,26 +924,29 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (a9aa885d-fbaa-4c96-b882-80839ed486b3)
- Call ID: a9aa885d-fbaa-4c96-b882-80839ed486b3
+  AssignClass (683bea28-20ad-46a6-ad3a-1791b6689055)
+ Call ID: 683bea28-20ad-46a6-ad3a-1791b6689055
   Args:
-    source: Princess_Armgard_of_Lippe-Biesterfeld
+    source: :Maria_Georgievna
     type: :Ancestor
-  AssignClass (edad844f-78d1-441c-a592-3c86266129e7)
- Call ID: edad844f-78d1-441c-a592-3c86266129e7
+  AssignClass (dcf4965c-21ff-41b1-8221-f3f6fc96f187)
+ Call ID: dcf4965c-21ff-41b1-8221-f3f6fc96f187
   Args:
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
+    source: :George_Mihailovich
     type: :Ancestor
-  AssignClass (f19f3da9-9746-4389-9956-ced3354b0026)
- Call ID: f19f3da9-9746-4389-9956-ced3354b0026
+  AssignClass (30dc9d6c-7cad-47f7-a905-818ac0cd76b6)
+ Call ID: 30dc9d6c-7cad-47f7-a905-818ac0cd76b6
   Args:
-    source: Queen_Juliana_of_the_Netherlands
+    source: :Xenia_Georgievna
     type: :Ancestor
-  AssignClass (73e034ae-8199-40bd-8095-06046a380531)
- Call ID: 73e034ae-8199-40bd-8095-06046a380531
+  AssignClass (50c4d1da-d117-47e2-980c-1d295d0f7407)
+ Call ID: 50c4d1da-d117-47e2-980c-1d295d0f7407
   Args:
-    source: Queen_Wilhelmina_of_the_Netherlands
+    source: :William_Bateman_Leeds_Jr
     type: :Ancestor
+  ValidateShacl (b0532d9a-498e-46bb-8533-f8149bafac97)
+ Call ID: b0532d9a-498e-46bb-8533-f8149bafac97
+  Args:
 
 ================================= Tool Message =================================
 
@@ -924,65 +967,43 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Princess_Christina_of_the_Netherlands a :Person,
+  data:Nancy_Helen_Marie_Leeds a :Person,
           :Woman ;
-      :hasBirthYear 1947 ;
-      :hasDeathYear 2019 ;
-      :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-      :hasMother data:Queen_Juliana_of_the_Netherlands ;
-      :hasRelation data:Jorge_Guillermo,
-          data:Prince_Bernhard_Jr ;
-      :isSisterOf data:Princess_Beatrix,
-          data:Princess_Irene,
-          data:Princess_Margriet ;
-      :knownAs "Princess Marijke"^^xsd:string .
+      :isDaughterOf data:William_Bateman_Leeds_Jr,
+          data:Xenia_Georgievna .
 
-  data:Jorge_Guillermo a :Man,
+  data:Nina_Georgievna a :Person,
+          :Woman ;
+      :isDaughterOf data:George_Mihailovich,
+          data:Maria_Georgievna ;
+      :isSisterOf data:Xenia_Georgievna .
+
+  data:Herman_Jud a :Man,
           :Person .
 
-  data:Prince_Bernhard_Jr a :Man,
-          :Person .
-
-  data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+  data:George_Mihailovich a :Ancestor,
           :Man,
-          :Person ;
-      :hasMother data:Princess_Armgard_of_Lippe-Biesterfeld .
-
-  data:Prince_Carlos_Hugo_of_Bourbon-Parma a :Man,
           :Person .
 
-  data:Princess_Armgard_of_Lippe-Biesterfeld a :Ancestor,
+  data:Maria_Georgievna a :Ancestor,
           :Person,
           :Woman .
 
-  data:Princess_Beatrix a :Person,
-          :Woman .
+  data:William_Bateman_Leeds_Jr a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Princess_Irene a :Person,
-          :Woman ;
-      :hasRelation data:Prince_Carlos_Hugo_of_Bourbon-Parma .
-
-  data:Princess_Margriet a :Person,
-          :Woman .
-
-  data:Queen_Juliana_of_the_Netherlands a :Ancestor,
+  data:Xenia_Georgievna a :Ancestor,
           :Person,
           :Woman ;
-      :hasMother data:Queen_Wilhelmina_of_the_Netherlands .
+      :hasBirthYear 1903 ;
+      :hasDeathYear 1965 ;
+      :hasRelation data:Herman_Jud,
+          data:William_Bateman_Leeds_Jr ;
+      :isDaughterOf data:George_Mihailovich,
+          data:Maria_Georgievna .
 
-  data:Queen_Wilhelmina_of_the_Netherlands a :Ancestor,
-          :Person,
-          :Woman .
 
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (5daf3de5-7c7f-4253-989e-332ae3e4e795)
- Call ID: 5daf3de5-7c7f-4253-989e-332ae3e4e795
-  Args:
 
 ================================= Tool Message =================================
 
@@ -992,6 +1013,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (038d2517-e132-4821-9c35-11b5c7d16d98)
- Call ID: 038d2517-e132-4821-9c35-11b5c7d16d98
+  Finish (b2950634-5c7b-423d-b7a9-a504e61ffe6b)
+ Call ID: b2950634-5c7b-423d-b7a9-a504e61ffe6b
   Args:

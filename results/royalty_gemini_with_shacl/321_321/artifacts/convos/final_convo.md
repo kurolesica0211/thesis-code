@@ -85,24 +85,59 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Duchess Donata of Mecklenburg (born 11 March 1956) is the senior remaining member of the House of Mecklenburg-Schwerin.
-Since there are no males left in the family, the Schwerin branch itself is considered extinct due to the Salic law of succession, leaving Mecklenburg-Strelitz as the only remaining line of the House of Mecklenburg.
-Duchess of Mecklenburg
+Don Carlos María Alfonso Marcelo de Borbón-Dos Sicilias y Borbón-Parma, Infante of Spain, Duke of Calabria (16 January 1938 – 5 October 2015) was, at his death, the last male infante of Spain during the reigns of his cousins King Juan Carlos I and King Felipe VI.
+Early life and education
 
-She was born in Kiel in the state of Schleswig-Holstein the eldest daughter of Duke Christian Louis of Mecklenburg-Schwerin and his wife Princess Barbara of Prussia (1920-1994).
-Her father was the younger brother to the last surviving male of the House of Mecklenburg-Schwerin, Friedrich Franz, Hereditary Grand Duke of Mecklenburg-Schwerin.
-Her mother was the daughter of Princess Charlotte of Saxe-Altenburg, the eldest daughter of Ernst II, the last duke of Saxe-Altenburg.
-Donata had only one sister Edwina (born 25 September 1960), and as her uncle had no children the House of Mecklenburg-Schwerin became extinct in the male line in 2001 when her uncle died.
-As a result, the Mecklenburg-Strelitz line, headed by Borwin, Duke of Mecklenburg, will become the only surviving line of the House of Mecklenburg when both Donata and Edwina are dead.
-Her paternal grandfather was the last reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV.
-She is also a descendant of Christian IX of Denmark as her paternal grandmother, Alexandra of Hanover and Cumberland, a daughter of Ernest Augustus, Crown Prince of Hanover and Princess Thyra of Denmark, was the youngest daughter and fifth child of Christian IX of Denmark and Louise of Hesse-Kassel.
-Her maternal grandfather was Prince Sigismund of Prussia, a grandson of Grand Duke Louis IV and Alice, Grand Duchess of Hesse and by Rhine, the second daughter of Queen Victoria.
+The second of three children and the only son of Infante Alfonso de Borbón-Dos Sicilias y Borbón (1901–1964) and Princess Alicia of Bourbon-Parma (1917–2017), he was born during his parents' exile from republican Spain in Lausanne, Switzerland.
+As the elder son of Prince Carlo of Bourbon-Two Sicilies by Mercedes, Princess of Asturias (1880–1904), the eldest child of Alfonso XII of Spain, Alfonso had been heir presumptive to the Spanish throne between the death in childbirth of his mother and the birth in May 1907 of a son to his mother's brother, King Alfonso XIII.
+If Mateu Morral’s attempt to assassinate King Alfonso XIII of Spain had succeeded, Infante Alfonso (Infante Carlos's father) would have become at that moment the King of Spain.
+Raised from infancy side-by-side with his future king, Juan Carlos I (Carlos's elder by 11 days), the cousins attended school together first in Switzerland and later in Spain.
+Carlos was chosen by the Spanish pretender, Don Juan de Borbón, Count of Barcelona, to become Juan Carlos's roommate at a boarding school that Don Juan and Spain's dictator Francisco Franco agreed to establish to bring the potential future king from his family's exile in Portugal to be educated in Spain.
+In November 1948 Carlos and Juan Carlos took up residence there, along with eight selected sons of the aristocracy (and one commoner, the future cabinet member José Luis Leal Maldonado) and a team of tutors selected by Don Juan, including as headmaster the liberal scholar José Garrido, along with a traditionalist chaplain, Ignacio de Zulueta.
+Family
+
+Carlos lived in Madrid with his family.
+Carlos met his future wife, Princess Anne of Orléans, in Madrid, at the wedding of his elder sister, Princess Teresa, with Don Iñigo Moreno, future Marquess of Laula.
+In May 1962 they met again at the wedding in Athens of Infante Juan Carlos to Princess Sophia, daughter of the Greek king Paul of the Hellenes, appearing together at each of several occasions over the course of the week-long wedding celebrations.
+Two months later, Anne was invited to and visited the home of Carlos's parents at Toledana.
+Although both were Roman Catholic Bourbons by male-line descent, a disagreement now erupted between the couple's fathers about the dynastic claim of Carlos's father to the legacy of the deposed House of Bourbon-Two Sicilies dynasty, whose last undisputed head, Ferdinand, Duke of Calabria, died without a son in January 1960.
+Carlos's father, Infante Alfonso, had asserted himself as rightful heir because his late father, Carlo of Bourbon-Two Sicilies (1870–1949), had been Ferdinand's next oldest brother.
+Anne's father Henri, Count of Paris, however, upheld the claim of Ferdinand's next younger brother, Prince Ranieri, Duke of Castro (1883–1973) to the headship of the house, contending that Carlo had renounced his and his future descendants' Sicilian rights when he married the Spanish heiress presumptive, Mercedes of Asturias, in 1901, no doubt being mindful that his own claim to be head of the royal House of France depended upon the validity of the 1713 renunciation of a senior Bourbon prince, Philip V of Spain, in favor of the junior House of Orléans.
+Carlos's father died in 1964, and with patience, persistence and compromise from afar, he eventually obtained the hand of his bride.
+The 250 guests received one of two different invitations from either the bride's parents or the groom; the former referred to the bride's marriage to HRH Prince Carlos of Bourbon, while the latter announced the wedding of Princess Anne of France to the Duke of Calabria.
+Issue
+
+The couple had five children:
+
+
+Endeavors
+
+Departing Europe to spend a year abroad after his broken engagement, Carlos rounded out his study of the law with internships at several banks in the Americas, notably Chase Manhattan in New York, the National Bank of Mexico and the Banco Popular del Peru.
+Following marriage, Carlos and his wife remained for sometime guests of the Marquès de Decio, head of the household of Infante Alfonso in his capacity as Duke of Calabria.
+Carlos then launched a professional specialization in financial law and banking.
+After his father's death in 1964 he also managed his family's large agricultural holdings in Spain.
+Claimant
+
+Infante Carlos was one of two claimants of the dignity of Head of the Royal House of the Two Sicilies.
+The other claimant was his second cousin Prince Carlo of Bourbon-Two Sicilies, Duke of Castro.
+Infante Carlos was also one of two claimants to the Grand Magistery of the Sacred Military Constantinian Order of Saint George; the other claimant is Carlo, Duke of Castro.
+Infante Carlos was the senior male-line descendant of Ferdinand IV and III of Naples and Sicily (Ferdinand I of the Two Sicilies) and as such "first born legitimate heir of the Farnese" (primogenito legittimo farnesiano), as Ferdinand was designated by his father, King Charles III of Spain, on 16 October 1759 (ten days after abdicating the Two Sicilies Crown).
+Although Ferdinand had two elder brothers, his eldest brother was mentally impaired and deemed unfit to inherit any crown; his next eldest brother, meanwhile, was his father's heir to the crown of Spain; treaty provisions prevented the union of the crowns of Spain, Naples and Sicily on the head of one person.
+Titles and honors
+
+Titles
+
+Prince Carlos was created an Infante of Spain by King Juan Carlos I of Spain by Royal Decree 2412 dated 16 December 1994 as the "representative of a line linked historically to the Spanish Crown".
+Infante Carlos was also President of the Spanish Foundation of the United World College, President of the Patronato of the Naval Museum, President of the Spanish Confederation of Foundations, President of the Iberoamerican Confederation of Foundations, President of the Foundation of San Benito de Alcántara, and President of the Foundation for the Protection of Nature (Fundación Fondo para la Protección de la Naturaleza).
+Under the traditional succession laws of the Kingdom of Navarre, Carlos's mother Infanta Alicia, born a Princess of Bourbon-Parma, was the claimant to that throne, which was formally united with the Kingdom of France in the seventeenth century.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -118,39 +153,9 @@ Her maternal grandfather was Prince Sigismund of Prussia, a grandson of Grand Du
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -165,6 +170,23 @@ Her maternal grandfather was Prince Sigismund of Prussia, a grandson of Grand Du
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -182,6 +204,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -249,29 +286,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,6 +309,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -292,6 +329,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -300,17 +339,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -338,6 +379,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -353,367 +478,229 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bb4b72a8-3597-4829-a12a-70283d5ca908)
- Call ID: bb4b72a8-3597-4829-a12a-70283d5ca908
-  Args:
-    type: :Person
-    source: Donata_of_Mecklenburg
-  AssignClass (6839975c-90f4-40c2-a0a6-eede3df1e656)
- Call ID: 6839975c-90f4-40c2-a0a6-eede3df1e656
-  Args:
-    type: :Woman
-    source: Donata_of_Mecklenburg
-  AddLiteral (d209cacf-5a9f-4e28-b41f-d35266fb7dce)
- Call ID: d209cacf-5a9f-4e28-b41f-d35266fb7dce
-  Args:
-    source: Donata_of_Mecklenburg
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1956
-  AssignClass (de0acd2c-f026-4ad8-8587-157f1f9147c2)
- Call ID: de0acd2c-f026-4ad8-8587-157f1f9147c2
-  Args:
-    source: Christian_Louis_of_Mecklenburg-Schwerin
-    type: :Person
-  AssignClass (1ca44b8e-ffc8-4597-a80d-e42722604b3b)
- Call ID: 1ca44b8e-ffc8-4597-a80d-e42722604b3b
+  AssignClass (0ff3f26b-8678-4d2a-8a65-3f76915033c3)
+ Call ID: 0ff3f26b-8678-4d2a-8a65-3f76915033c3
   Args:
     type: :Man
-    source: Christian_Louis_of_Mecklenburg-Schwerin
-  AssignClass (24d8ae10-ee8f-416f-9883-a70c62071942)
- Call ID: 24d8ae10-ee8f-416f-9883-a70c62071942
+    source: Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma
+  AssignClass (5c2a85a6-d7db-49d2-93f1-9086e4db35ba)
+ Call ID: 5c2a85a6-d7db-49d2-93f1-9086e4db35ba
   Args:
+    source: Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma
     type: :Person
-    source: Barbara_of_Prussia
-  AssignClass (b08950fb-1d38-4067-9052-45b9154dfc26)
- Call ID: b08950fb-1d38-4067-9052-45b9154dfc26
+  AddLiteral (3b1ac23d-fbd2-4815-b813-643a9a9b8f63)
+ Call ID: 3b1ac23d-fbd2-4815-b813-643a9a9b8f63
   Args:
-    source: Barbara_of_Prussia
-    type: :Woman
-  AddLiteral (f7164aae-768d-4fd7-ad2d-d8792cf2dfe3)
- Call ID: f7164aae-768d-4fd7-ad2d-d8792cf2dfe3
-  Args:
-    literal_value: 1920
-    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Barbara_of_Prussia
-  AddLiteral (470b9003-2e8c-43d4-b2a0-a25460078245)
- Call ID: 470b9003-2e8c-43d4-b2a0-a25460078245
+    literal_value: 1938
+    source: Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma
+    literal_type: xsd:integer
+  AddLiteral (a6d77870-1146-4f5a-afc2-ce076500d9fc)
+ Call ID: a6d77870-1146-4f5a-afc2-ce076500d9fc
   Args:
     relation: :hasDeathYear
-    source: Barbara_of_Prussia
+    literal_value: 2015
+    source: Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma
     literal_type: xsd:integer
-    literal_value: 1994
-  AddTriple (5777a459-3197-4477-adbe-8805b0ce6522)
- Call ID: 5777a459-3197-4477-adbe-8805b0ce6522
+  AssignClass (996fc2c0-91d2-439b-b2d8-31a1082901b8)
+ Call ID: 996fc2c0-91d2-439b-b2d8-31a1082901b8
   Args:
-    source: Donata_of_Mecklenburg
-    relation: :hasFather
-    target: Christian_Louis_of_Mecklenburg-Schwerin
-  AddTriple (a47848e3-b571-4dc6-a98b-e091f7d4880b)
- Call ID: a47848e3-b571-4dc6-a98b-e091f7d4880b
+    source: Alfonso_de_Borbon-Dos_Sicilias_y_Borbon
+    type: :Man
+  AssignClass (7f3f5c32-cb59-4463-a73a-b4fc99b5a92c)
+ Call ID: 7f3f5c32-cb59-4463-a73a-b4fc99b5a92c
   Args:
-    target: Barbara_of_Prussia
-    relation: :hasMother
-    source: Donata_of_Mecklenburg
-  AssignClass (1af2a0d3-80a4-4726-956d-505156ce6cdc)
- Call ID: 1af2a0d3-80a4-4726-956d-505156ce6cdc
-  Args:
-    source: Edwina_of_Mecklenburg-Schwerin
     type: :Person
-  AssignClass (f251590e-ca0f-42f8-9ee6-ee1ec9ed3036)
- Call ID: f251590e-ca0f-42f8-9ee6-ee1ec9ed3036
+    source: Alfonso_de_Borbon-Dos_Sicilias_y_Borbon
+  AddLiteral (b7ab690d-0439-4d40-88c8-a7b61a472d34)
+ Call ID: b7ab690d-0439-4d40-88c8-a7b61a472d34
   Args:
-    type: :Woman
-    source: Edwina_of_Mecklenburg-Schwerin
-  AddLiteral (51c01246-999f-4126-b9e6-7b8dd861e068)
- Call ID: 51c01246-999f-4126-b9e6-7b8dd861e068
-  Args:
-    literal_value: 1960
+    literal_type: xsd:integer
+    source: Alfonso_de_Borbon-Dos_Sicilias_y_Borbon
+    literal_value: 1901
     relation: :hasBirthYear
-    source: Edwina_of_Mecklenburg-Schwerin
+  AddLiteral (e21095d6-6643-47ab-90c3-8a16405f839f)
+ Call ID: e21095d6-6643-47ab-90c3-8a16405f839f
+  Args:
+    literal_value: 1964
+    relation: :hasDeathYear
     literal_type: xsd:integer
-  AddTriple (32150ad7-8296-4f86-8896-4bf37d71ab35)
- Call ID: 32150ad7-8296-4f86-8896-4bf37d71ab35
-  Args:
-    target: Christian_Louis_of_Mecklenburg-Schwerin
-    relation: :hasFather
-    source: Edwina_of_Mecklenburg-Schwerin
-  AddTriple (6bf8910c-7ab8-45d2-aee6-9df4075c9708)
- Call ID: 6bf8910c-7ab8-45d2-aee6-9df4075c9708
-  Args:
-    target: Barbara_of_Prussia
-    source: Edwina_of_Mecklenburg-Schwerin
-    relation: :hasMother
-  AddTriple (b562a160-a0a3-461f-9d42-cde7e3058889)
- Call ID: b562a160-a0a3-461f-9d42-cde7e3058889
-  Args:
-    target: Edwina_of_Mecklenburg-Schwerin
-    source: Donata_of_Mecklenburg
-    relation: :hasSister
-  AssignClass (762c5ae6-8951-41b5-a6bb-c551f7946a48)
- Call ID: 762c5ae6-8951-41b5-a6bb-c551f7946a48
-  Args:
-    type: :Person
-    source: Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin
-  AssignClass (72b50229-43ae-4d3f-b170-0c8c2eb679a8)
- Call ID: 72b50229-43ae-4d3f-b170-0c8c2eb679a8
-  Args:
-    source: Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin
-    type: :Man
-  AddTriple (77781d7c-8674-4667-9442-d4f0c0c89ac0)
- Call ID: 77781d7c-8674-4667-9442-d4f0c0c89ac0
-  Args:
-    relation: :hasBrother
-    source: Christian_Louis_of_Mecklenburg-Schwerin
-    target: Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin
-  AssignClass (eca3b48f-7c3e-4fd9-aebc-89843f94f246)
- Call ID: eca3b48f-7c3e-4fd9-aebc-89843f94f246
-  Args:
-    source: Charlotte_of_Saxe-Altenburg
-    type: :Person
-  AssignClass (6dc142bc-4a53-49d5-834f-ade6f57edae7)
- Call ID: 6dc142bc-4a53-49d5-834f-ade6f57edae7
+    source: Alfonso_de_Borbon-Dos_Sicilias_y_Borbon
+  AssignClass (f59d1158-d74d-4538-9b65-2b1f7e0c9b54)
+ Call ID: f59d1158-d74d-4538-9b65-2b1f7e0c9b54
   Args:
     type: :Woman
-    source: Charlotte_of_Saxe-Altenburg
-  AddTriple (4fc71583-6c7f-41fd-a548-e1a633fda7a3)
- Call ID: 4fc71583-6c7f-41fd-a548-e1a633fda7a3
-  Args:
-    target: Charlotte_of_Saxe-Altenburg
-    source: Barbara_of_Prussia
-    relation: :hasMother
-  AssignClass (4107a28c-bfa2-4ab0-80ac-8ab2d97f376f)
- Call ID: 4107a28c-bfa2-4ab0-80ac-8ab2d97f376f
-  Args:
-    source: Ernst_II_of_Saxe-Altenburg
-    type: :Person
-  AssignClass (8da34b3f-3e28-4f86-b85f-39e22ca450f6)
- Call ID: 8da34b3f-3e28-4f86-b85f-39e22ca450f6
-  Args:
-    source: Ernst_II_of_Saxe-Altenburg
-    type: :Man
-  AddTriple (589fa916-3964-4307-bade-8072b11263f3)
- Call ID: 589fa916-3964-4307-bade-8072b11263f3
-  Args:
-    target: Ernst_II_of_Saxe-Altenburg
-    source: Charlotte_of_Saxe-Altenburg
-    relation: :hasFather
-  AssignClass (a1e0c49a-4dae-4a89-922e-dbb8f08cc74a)
- Call ID: a1e0c49a-4dae-4a89-922e-dbb8f08cc74a
+    source: Alicia_of_Bourbon-Parma
+  AssignClass (99abad70-e2eb-436f-84d6-3a54792455d1)
+ Call ID: 99abad70-e2eb-436f-84d6-3a54792455d1
   Args:
     type: :Person
-    source: Frederick_Francis_IV_of_Mecklenburg-Schwerin
-  AssignClass (02e288d6-0e45-4564-8fee-3251c033c4fb)
- Call ID: 02e288d6-0e45-4564-8fee-3251c033c4fb
+    source: Alicia_of_Bourbon-Parma
+  AddLiteral (aebe3035-feef-4c4d-937c-03020ec94ac2)
+ Call ID: aebe3035-feef-4c4d-937c-03020ec94ac2
   Args:
-    source: Frederick_Francis_IV_of_Mecklenburg-Schwerin
-    type: :Man
-  AddTriple (4a13f0e1-00be-48d8-a8c2-f859db3ba576)
- Call ID: 4a13f0e1-00be-48d8-a8c2-f859db3ba576
+    literal_type: xsd:integer
+    source: Alicia_of_Bourbon-Parma
+    literal_value: 1917
+    relation: :hasBirthYear
+  AddLiteral (e3cb87ad-c64a-4770-84cf-70156032afc1)
+ Call ID: e3cb87ad-c64a-4770-84cf-70156032afc1
   Args:
-    target: Frederick_Francis_IV_of_Mecklenburg-Schwerin
-    relation: :hasFather
-    source: Christian_Louis_of_Mecklenburg-Schwerin
-  AssignClass (d81267d1-cdc8-40b1-be94-d4951cfd96d0)
- Call ID: d81267d1-cdc8-40b1-be94-d4951cfd96d0
-  Args:
-    source: Alexandra_of_Hanover_and_Cumberland
-    type: :Person
-  AssignClass (1c206bb7-7942-419c-8f05-b899725296cd)
- Call ID: 1c206bb7-7942-419c-8f05-b899725296cd
-  Args:
-    type: :Woman
-    source: Alexandra_of_Hanover_and_Cumberland
-  AddTriple (6724905e-5612-4ead-9865-62ce1ffca919)
- Call ID: 6724905e-5612-4ead-9865-62ce1ffca919
-  Args:
-    target: Alexandra_of_Hanover_and_Cumberland
-    source: Christian_Louis_of_Mecklenburg-Schwerin
-    relation: :hasMother
-  AssignClass (8af00e5a-3e3b-49fd-8757-ebfbc43e5f18)
- Call ID: 8af00e5a-3e3b-49fd-8757-ebfbc43e5f18
-  Args:
-    type: :Person
-    source: Christian_IX_of_Denmark
-  AssignClass (bc536674-c3c7-4447-b093-66dcaf2bd8f2)
- Call ID: bc536674-c3c7-4447-b093-66dcaf2bd8f2
-  Args:
-    source: Christian_IX_of_Denmark
-    type: :Man
-  AddTriple (d294b307-0ef0-41ee-b9de-47fe2a0ef659)
- Call ID: d294b307-0ef0-41ee-b9de-47fe2a0ef659
+    source: Alicia_of_Bourbon-Parma
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 2017
+  AddTriple (0d7c7ca6-4ba6-4a22-acd9-184957b209b4)
+ Call ID: 0d7c7ca6-4ba6-4a22-acd9-184957b209b4
   Args:
     relation: :hasFather
-    source: Alexandra_of_Hanover_and_Cumberland
-    target: Christian_IX_of_Denmark
-  AssignClass (db4f2603-ba69-4250-af46-b39f4484a574)
- Call ID: db4f2603-ba69-4250-af46-b39f4484a574
+    target: Alfonso_de_Borbon-Dos_Sicilias_y_Borbon
+    source: Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma
+  AddTriple (0775305d-a8ed-4345-849a-c68406b34c50)
+ Call ID: 0775305d-a8ed-4345-849a-c68406b34c50
   Args:
-    source: Louise_of_Hesse-Kassel
+    source: Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma
+    target: Alicia_of_Bourbon-Parma
+    relation: :hasMother
+  AssignClass (39b005e1-1257-44d2-b88b-fa7aec2f8e2c)
+ Call ID: 39b005e1-1257-44d2-b88b-fa7aec2f8e2c
+  Args:
+    source: Carlo_of_Bourbon-Two_Sicilies
+    type: :Man
+  AssignClass (2efc144f-e698-4bc7-92ee-d7e84c53a0f6)
+ Call ID: 2efc144f-e698-4bc7-92ee-d7e84c53a0f6
+  Args:
     type: :Person
-  AssignClass (69277f9d-129a-4d48-b16c-b85231ee37ec)
- Call ID: 69277f9d-129a-4d48-b16c-b85231ee37ec
+    source: Carlo_of_Bourbon-Two_Sicilies
+  AddLiteral (bedcf190-282a-4d9c-ad34-4a69a9c9fe19)
+ Call ID: bedcf190-282a-4d9c-ad34-4a69a9c9fe19
+  Args:
+    literal_value: 1870
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Carlo_of_Bourbon-Two_Sicilies
+  AddLiteral (05a31471-3aff-4514-bd92-a27266f43485)
+ Call ID: 05a31471-3aff-4514-bd92-a27266f43485
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1949
+    source: Carlo_of_Bourbon-Two_Sicilies
+    literal_type: xsd:integer
+  AssignClass (a6ee4caa-b38b-4779-ab96-37db75247d2d)
+ Call ID: a6ee4caa-b38b-4779-ab96-37db75247d2d
   Args:
     type: :Woman
-    source: Louise_of_Hesse-Kassel
-  AddTriple (99d5fc0f-cbaa-40e2-b4ee-3b2fcde0d384)
- Call ID: 99d5fc0f-cbaa-40e2-b4ee-3b2fcde0d384
-  Args:
-    relation: :hasMother
-    source: Alexandra_of_Hanover_and_Cumberland
-    target: Louise_of_Hesse-Kassel
-  AssignClass (5cffb8bd-230f-4dfa-8ebc-28267817cc45)
- Call ID: 5cffb8bd-230f-4dfa-8ebc-28267817cc45
+    source: Mercedes_Princess_of_Asturias
+  AssignClass (40b03d71-3bc0-4c84-be55-6fcdc46ce48e)
+ Call ID: 40b03d71-3bc0-4c84-be55-6fcdc46ce48e
   Args:
     type: :Person
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AssignClass (8f9b7b5f-badb-4b29-b612-b30bb38a0958)
- Call ID: 8f9b7b5f-badb-4b29-b612-b30bb38a0958
+    source: Mercedes_Princess_of_Asturias
+  AddLiteral (4b863347-c15e-4510-b125-9a2f79f39ad7)
+ Call ID: 4b863347-c15e-4510-b125-9a2f79f39ad7
   Args:
-    type: :Man
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AddTriple (8ed3206f-214a-4e6d-8130-58d22d2dfebe)
- Call ID: 8ed3206f-214a-4e6d-8130-58d22d2dfebe
+    literal_type: xsd:integer
+    source: Mercedes_Princess_of_Asturias
+    literal_value: 1880
+    relation: :hasBirthYear
+  AddLiteral (5237fc92-8c3a-44c4-ae1a-009be9be7a95)
+ Call ID: 5237fc92-8c3a-44c4-ae1a-009be9be7a95
   Args:
-    target: Ernest_Augustus_Crown_Prince_of_Hanover
+    source: Mercedes_Princess_of_Asturias
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1904
+  AddTriple (0ae90e4c-79dc-411c-b867-9e71d4e4af85)
+ Call ID: 0ae90e4c-79dc-411c-b867-9e71d4e4af85
+  Args:
     relation: :hasFather
-    source: Alexandra_of_Hanover_and_Cumberland
-  AssignClass (20408c59-68d9-4490-b22e-2c99a726c7a5)
- Call ID: 20408c59-68d9-4490-b22e-2c99a726c7a5
+    target: Carlo_of_Bourbon-Two_Sicilies
+    source: Alfonso_de_Borbon-Dos_Sicilias_y_Borbon
+  AddTriple (fd28a187-5800-4dbd-a8b2-0c0f64c0573b)
+ Call ID: fd28a187-5800-4dbd-a8b2-0c0f64c0573b
   Args:
-    source: Thyra_of_Denmark
-    type: :Person
-  AssignClass (298218bb-9ab9-4e75-ac52-fcdab2fbb33a)
- Call ID: 298218bb-9ab9-4e75-ac52-fcdab2fbb33a
-  Args:
-    source: Thyra_of_Denmark
-    type: :Woman
-  AddTriple (193b3639-da12-4ef2-a1d2-a3722faa126e)
- Call ID: 193b3639-da12-4ef2-a1d2-a3722faa126e
-  Args:
+    target: Mercedes_Princess_of_Asturias
     relation: :hasMother
-    source: Alexandra_of_Hanover_and_Cumberland
-    target: Thyra_of_Denmark
-  AssignClass (b986ce5a-4271-4d19-b5dc-24280666426c)
- Call ID: b986ce5a-4271-4d19-b5dc-24280666426c
+    source: Alfonso_de_Borbon-Dos_Sicilias_y_Borbon
+  AssignClass (77bba14e-8708-473d-9968-41332e153541)
+ Call ID: 77bba14e-8708-473d-9968-41332e153541
   Args:
+    type: :Woman
+    source: Teresa_of_Bourbon-Dos_Sicilias
+  AssignClass (10b856c8-48b1-4dcb-8f72-9afd2bb6b71c)
+ Call ID: 10b856c8-48b1-4dcb-8f72-9afd2bb6b71c
+  Args:
+    source: Teresa_of_Bourbon-Dos_Sicilias
     type: :Person
-    source: Sigismund_of_Prussia
-  AssignClass (cf595d5d-2b9c-49d9-9414-117a632e9100)
- Call ID: cf595d5d-2b9c-49d9-9414-117a632e9100
+  AddTriple (63528803-40e1-42b9-ac12-ea5232df2dbb)
+ Call ID: 63528803-40e1-42b9-ac12-ea5232df2dbb
   Args:
-    source: Sigismund_of_Prussia
-    type: :Man
-  AddTriple (a97e3cd2-6059-4cf8-9f49-7162d0a93535)
- Call ID: a97e3cd2-6059-4cf8-9f49-7162d0a93535
-  Args:
-    target: Sigismund_of_Prussia
+    target: Alfonso_de_Borbon-Dos_Sicilias_y_Borbon
     relation: :hasFather
-    source: Barbara_of_Prussia
-  AssignClass (3224030b-098e-4991-adc5-0516392171ae)
- Call ID: 3224030b-098e-4991-adc5-0516392171ae
+    source: Teresa_of_Bourbon-Dos_Sicilias
+  AddTriple (570af658-9805-415b-8e6b-9287777f1a78)
+ Call ID: 570af658-9805-415b-8e6b-9287777f1a78
   Args:
+    target: Alicia_of_Bourbon-Parma
+    relation: :hasMother
+    source: Teresa_of_Bourbon-Dos_Sicilias
+  AddTriple (19454a6c-c5aa-418a-b90d-45cf03a85f09)
+ Call ID: 19454a6c-c5aa-418a-b90d-45cf03a85f09
+  Args:
+    relation: :isSisterOf
+    target: Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma
+    source: Teresa_of_Bourbon-Dos_Sicilias
+  AssignClass (0bd16cfd-79a3-40c8-b7e6-159c5e06c556)
+ Call ID: 0bd16cfd-79a3-40c8-b7e6-159c5e06c556
+  Args:
+    type: :Woman
+    source: Anne_of_Orleans
+  AssignClass (a12c978f-f8c5-46a5-8c3e-6f354454db98)
+ Call ID: a12c978f-f8c5-46a5-8c3e-6f354454db98
+  Args:
+    source: Anne_of_Orleans
     type: :Person
-    source: Louis_IV_of_Hesse_and_by_Rhine
-  AssignClass (774f0d40-a4a9-41f6-b3fa-91786dc53be1)
- Call ID: 774f0d40-a4a9-41f6-b3fa-91786dc53be1
+  AddTriple (e95840f9-fd35-42e6-8499-09cb9e7165a1)
+ Call ID: e95840f9-fd35-42e6-8499-09cb9e7165a1
+  Args:
+    relation: :hasRelation
+    target: Anne_of_Orleans
+    source: Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma
+  AssignClass (85da4d5c-23e2-40c1-911f-47c7b10b1c8a)
+ Call ID: 85da4d5c-23e2-40c1-911f-47c7b10b1c8a
   Args:
     type: :Man
-    source: Louis_IV_of_Hesse_and_by_Rhine
-  AssignClass (8b87982e-4e4f-48ee-a9ee-4ad7818ac7b4)
- Call ID: 8b87982e-4e4f-48ee-a9ee-4ad7818ac7b4
+    source: Henri_Count_of_Paris
+  AssignClass (7f028a5b-79f7-48c4-85eb-5009a49a26ee)
+ Call ID: 7f028a5b-79f7-48c4-85eb-5009a49a26ee
   Args:
-    source: Alice_of_Hesse_and_by_Rhine
+    source: Henri_Count_of_Paris
     type: :Person
-  AssignClass (03df6c84-2e0c-421c-a1ff-be900f7e976d)
- Call ID: 03df6c84-2e0c-421c-a1ff-be900f7e976d
+  AddTriple (85ec1ccd-5070-415f-883a-02b1e91ee3d1)
+ Call ID: 85ec1ccd-5070-415f-883a-02b1e91ee3d1
   Args:
-    type: :Woman
-    source: Alice_of_Hesse_and_by_Rhine
-  AssignClass (95a53db8-e03d-4cfa-ba34-5c97ec6ae7c8)
- Call ID: 95a53db8-e03d-4cfa-ba34-5c97ec6ae7c8
+    source: Anne_of_Orleans
+    target: Henri_Count_of_Paris
+    relation: :hasFather
+  AssignClass (7f50d111-fc5f-4fc7-9a7d-6ebbdb73ca11)
+ Call ID: 7f50d111-fc5f-4fc7-9a7d-6ebbdb73ca11
   Args:
+    source: Alfonso_XII_of_Spain
+    type: :Man
+  AssignClass (c18c6af3-4754-4002-9153-427194ec39cc)
+ Call ID: c18c6af3-4754-4002-9153-427194ec39cc
+  Args:
+    source: Alfonso_XII_of_Spain
     type: :Person
-    source: Queen_Victoria
-  AssignClass (d69636e6-d1fa-4b3b-a5a2-6fde064fa7f0)
- Call ID: d69636e6-d1fa-4b3b-a5a2-6fde064fa7f0
+  AddTriple (c6d1c31e-b584-44b8-beb3-e37716e51689)
+ Call ID: c6d1c31e-b584-44b8-beb3-e37716e51689
   Args:
-    source: Queen_Victoria
-    type: :Woman
-  AddTriple (ee31cd31-e058-4aa1-a292-6c1ee8a1a370)
- Call ID: ee31cd31-e058-4aa1-a292-6c1ee8a1a370
+    source: Mercedes_Princess_of_Asturias
+    relation: :hasFather
+    target: Alfonso_XII_of_Spain
+  Finish (8d260add-5b76-4f8c-851c-66ed0e7b5d9b)
+ Call ID: 8d260add-5b76-4f8c-851c-66ed0e7b5d9b
   Args:
-    target: Queen_Victoria
-    source: Alice_of_Hesse_and_by_Rhine
-    relation: :hasMother
-  Finish (4093fe3a-adbc-4c90-a0ff-01cf8d64a93e)
- Call ID: 4093fe3a-adbc-4c90-a0ff-01cf8d64a93e
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -870,76 +857,52 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alice_of_Hesse_and_by_Rhine a :Person,
+  data:Teresa_of_Bourbon-Dos_Sicilias a :Person,
           :Woman ;
-      :hasMother data:Queen_Victoria .
+      :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;
+      :hasMother data:Alicia_of_Bourbon-Parma ;
+      :isSisterOf data:Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma .
 
-  data:Donata_of_Mecklenburg a :Person,
+  data:Alfonso_XII_of_Spain a :Man,
+          :Person .
+
+  data:Anne_of_Orleans a :Person,
           :Woman ;
-      :hasBirthYear 1956 ;
-      :hasFather data:Christian_Louis_of_Mecklenburg-Schwerin ;
-      :hasMother data:Barbara_of_Prussia ;
-      :hasSister data:Edwina_of_Mecklenburg-Schwerin .
+      :hasFather data:Henri_Count_of_Paris .
 
-  data:Louis_IV_of_Hesse_and_by_Rhine a :Man,
-          :Person .
-
-  data:Alexandra_of_Hanover_and_Cumberland a :Person,
-          :Woman ;
-      :hasFather data:Christian_IX_of_Denmark,
-          data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-      :hasMother data:Louise_of_Hesse-Kassel,
-          data:Thyra_of_Denmark .
-
-  data:Charlotte_of_Saxe-Altenburg a :Person,
-          :Woman ;
-      :hasFather data:Ernst_II_of_Saxe-Altenburg .
-
-  data:Christian_IX_of_Denmark a :Man,
-          :Person .
-
-  data:Edwina_of_Mecklenburg-Schwerin a :Person,
-          :Woman ;
-      :hasBirthYear 1960 ;
-      :hasFather data:Christian_Louis_of_Mecklenburg-Schwerin ;
-      :hasMother data:Barbara_of_Prussia .
-
-  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,
-          :Person .
-
-  data:Ernst_II_of_Saxe-Altenburg a :Man,
-          :Person .
-
-  data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
-          :Person .
-
-  data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
-          :Person .
-
-  data:Louise_of_Hesse-Kassel a :Person,
-          :Woman .
-
-  data:Queen_Victoria a :Person,
-          :Woman .
-
-  data:Sigismund_of_Prussia a :Man,
-          :Person .
-
-  data:Thyra_of_Denmark a :Person,
-          :Woman .
-
-  data:Barbara_of_Prussia a :Person,
-          :Woman ;
-      :hasBirthYear 1920 ;
-      :hasDeathYear 1994 ;
-      :hasFather data:Sigismund_of_Prussia ;
-      :hasMother data:Charlotte_of_Saxe-Altenburg .
-
-  data:Christian_Louis_of_Mecklenburg-Schwerin a :Man,
+  data:Carlo_of_Bourbon-Two_Sicilies a :Man,
           :Person ;
-      :hasBrother data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
-      :hasFather data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
-      :hasMother data:Alexandra_of_Hanover_and_Cumberland .
+      :hasBirthYear 1870 ;
+      :hasDeathYear 1949 .
+
+  data:Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma a :Man,
+          :Person ;
+      :hasBirthYear 1938 ;
+      :hasDeathYear 2015 ;
+      :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;
+      :hasMother data:Alicia_of_Bourbon-Parma ;
+      :hasRelation data:Anne_of_Orleans .
+
+  data:Henri_Count_of_Paris a :Man,
+          :Person .
+
+  data:Mercedes_Princess_of_Asturias a :Person,
+          :Woman ;
+      :hasBirthYear 1880 ;
+      :hasDeathYear 1904 ;
+      :hasFather data:Alfonso_XII_of_Spain .
+
+  data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon a :Man,
+          :Person ;
+      :hasBirthYear 1901 ;
+      :hasDeathYear 1964 ;
+      :hasFather data:Carlo_of_Bourbon-Two_Sicilies ;
+      :hasMother data:Mercedes_Princess_of_Asturias .
+
+  data:Alicia_of_Bourbon-Parma a :Person,
+          :Woman ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 2017 .
 
 
 
@@ -951,398 +914,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (02ba3d0e-d9ce-497c-a343-a0b0cbae9737)
- Call ID: 02ba3d0e-d9ce-497c-a343-a0b0cbae9737
+  ValidateShacl (bcf7aeef-9233-4d47-90f5-ca45e35eabc4)
+ Call ID: bcf7aeef-9233-4d47-90f5-ca45e35eabc4
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:48
+Total violations:24
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Frederick_Francis_IV_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
+      The person Alfonso_XII_of_Spain is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_IV_of_Mecklenburg-Schwerin, :Ancestor)
+      AssignClass(Alfonso_XII_of_Spain, :Man)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother Alexandra_of_Hanover_and_Cumberland is missing the required class :Ancestor.
+      The person Alfonso_de_Borbon-Dos_Sicilias_y_Borbon is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_of_Hanover_and_Cumberland, :Ancestor)
+      AssignClass(Alfonso_de_Borbon-Dos_Sicilias_y_Borbon, :Man)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Christian_Louis_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
+      The person Henri_Count_of_Paris is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_Louis_of_Mecklenburg-Schwerin, :Ancestor)
+      AssignClass(Henri_Count_of_Paris, :Man)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father Frederick_Francis_IV_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
+      The person Alicia_of_Bourbon-Parma is linked as a mother but lacks the required :Woman or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_IV_of_Mecklenburg-Schwerin, :Ancestor)
+      AssignClass(Alicia_of_Bourbon-Parma, :Woman)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Ernst_II_of_Saxe-Altenburg is missing the required class :Ancestor.
+      The person Alfonso_de_Borbon-Dos_Sicilias_y_Borbon is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernst_II_of_Saxe-Altenburg, :Ancestor)
+      AssignClass(Alfonso_de_Borbon-Dos_Sicilias_y_Borbon, :Man)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Christian_IX_of_Denmark is missing the required class :Ancestor.
+      The person Carlo_of_Bourbon-Two_Sicilies is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_IX_of_Denmark, :Ancestor)
+      AssignClass(Carlo_of_Bourbon-Two_Sicilies, :Man)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father Ernest_Augustus_Crown_Prince_of_Hanover is missing the required class :Ancestor.
+      The person Alicia_of_Bourbon-Parma is linked as a mother but lacks the required :Woman or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
+      AssignClass(Alicia_of_Bourbon-Parma, :Woman)
 
 
   Violation [8]:
-    SHACL message: More than 1 values on data:Alexandra_of_Hanover_and_Cumberland->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      Alexandra_of_Hanover_and_Cumberland has more than one father defined, violating the maxCount constraint.
+      The person Mercedes_Princess_of_Asturias is linked as a mother but lacks the required :Woman or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Alexandra_of_Hanover_and_Cumberland, :hasFather, [extra_value])
+      AssignClass(Mercedes_Princess_of_Asturias, :Woman)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Christian_Louis_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
+      The person Henri_Count_of_Paris is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_Louis_of_Mecklenburg-Schwerin, :Ancestor)
+      AssignClass(Henri_Count_of_Paris, :Man)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Sigismund_of_Prussia is missing the required class :Ancestor.
+      The person Alfonso_de_Borbon-Dos_Sicilias_y_Borbon is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sigismund_of_Prussia, :Ancestor)
+      AssignClass(Alfonso_de_Borbon-Dos_Sicilias_y_Borbon, :Man)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother Queen_Victoria is missing the required class :Ancestor.
+      The person Carlo_of_Bourbon-Two_Sicilies is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Victoria, :Ancestor)
+      AssignClass(Carlo_of_Bourbon-Two_Sicilies, :Man)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother Barbara_of_Prussia is missing the required class :Ancestor.
+      The person Alfonso_XII_of_Spain is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Barbara_of_Prussia, :Ancestor)
+      AssignClass(Alfonso_XII_of_Spain, :Man)
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother Alexandra_of_Hanover_and_Cumberland is missing the required class :Ancestor.
+      The person Alfonso_de_Borbon-Dos_Sicilias_y_Borbon is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_of_Hanover_and_Cumberland, :Ancestor)
+      AssignClass(Alfonso_de_Borbon-Dos_Sicilias_y_Borbon, :Man)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother Louise_of_Hesse-Kassel is missing the required class :Ancestor.
+      The person Alicia_of_Bourbon-Parma is linked as a mother but lacks the required :Woman or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louise_of_Hesse-Kassel, :Ancestor)
+      AssignClass(Alicia_of_Bourbon-Parma, :Woman)
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother Thyra_of_Denmark is missing the required class :Ancestor.
+      The person Mercedes_Princess_of_Asturias is linked as a mother but lacks the required :Woman or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Thyra_of_Denmark, :Ancestor)
+      AssignClass(Mercedes_Princess_of_Asturias, :Woman)
 
 
   Violation [16]:
-    SHACL message: More than 1 values on data:Alexandra_of_Hanover_and_Cumberland->:hasMother
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      Alexandra_of_Hanover_and_Cumberland has more than one mother defined, violating the maxCount constraint.
+      The person Alicia_of_Bourbon-Parma is linked as a mother but lacks the required :Woman or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Alexandra_of_Hanover_and_Cumberland, :hasMother, [extra_value])
+      AssignClass(Alicia_of_Bourbon-Parma, :Woman)
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother Barbara_of_Prussia is missing the required class :Ancestor.
+      The person Henri_Count_of_Paris is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Barbara_of_Prussia, :Ancestor)
+      AssignClass(Henri_Count_of_Paris, :Man)
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother Charlotte_of_Saxe-Altenburg is missing the required class :Ancestor.
+      The person Alfonso_de_Borbon-Dos_Sicilias_y_Borbon is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charlotte_of_Saxe-Altenburg, :Ancestor)
+      AssignClass(Alfonso_de_Borbon-Dos_Sicilias_y_Borbon, :Man)
 
 
   Violation [19]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Christian_Louis_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
+      The person Carlo_of_Bourbon-Two_Sicilies is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_Louis_of_Mecklenburg-Schwerin, :Ancestor)
+      AssignClass(Carlo_of_Bourbon-Two_Sicilies, :Man)
 
 
   Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Frederick_Francis_IV_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
+      The person Alfonso_XII_of_Spain is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_IV_of_Mecklenburg-Schwerin, :Ancestor)
+      AssignClass(Alfonso_XII_of_Spain, :Man)
 
 
   Violation [21]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Ernst_II_of_Saxe-Altenburg is missing the required class :Ancestor.
+      The person Alfonso_de_Borbon-Dos_Sicilias_y_Borbon is linked as a father but lacks the required :Man or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernst_II_of_Saxe-Altenburg, :Ancestor)
+      AssignClass(Alfonso_de_Borbon-Dos_Sicilias_y_Borbon, :Man)
 
 
   Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father Christian_IX_of_Denmark is missing the required class :Ancestor.
+      The person Alicia_of_Bourbon-Parma is linked as a mother but lacks the required :Woman or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_IX_of_Denmark, :Ancestor)
+      AssignClass(Alicia_of_Bourbon-Parma, :Woman)
 
 
   Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father Ernest_Augustus_Crown_Prince_of_Hanover is missing the required class :Ancestor.
+      The person Mercedes_Princess_of_Asturias is linked as a mother but lacks the required :Woman or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
+      AssignClass(Mercedes_Princess_of_Asturias, :Woman)
 
 
   Violation [24]:
-    SHACL message: More than 1 values on data:Alexandra_of_Hanover_and_Cumberland->:hasFather
-    LLM-provided explanation of the violation:
-      Alexandra_of_Hanover_and_Cumberland has more than one father defined, violating the maxCount constraint.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Alexandra_of_Hanover_and_Cumberland, :hasFather, [extra_value])
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father Christian_Louis_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_Louis_of_Mecklenburg-Schwerin, :Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father Sigismund_of_Prussia is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Sigismund_of_Prussia, :Ancestor)
-
-
-  Violation [27]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother Queen_Victoria is missing the required class :Ancestor.
+      The person Alicia_of_Bourbon-Parma is linked as a mother but lacks the required :Woman or :Ancestor classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Victoria, :Ancestor)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Barbara_of_Prussia is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Barbara_of_Prussia, :Ancestor)
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Alexandra_of_Hanover_and_Cumberland is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_of_Hanover_and_Cumberland, :Ancestor)
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Louise_of_Hesse-Kassel is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Louise_of_Hesse-Kassel, :Ancestor)
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Thyra_of_Denmark is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thyra_of_Denmark, :Ancestor)
-
-
-  Violation [32]:
-    SHACL message: More than 1 values on data:Alexandra_of_Hanover_and_Cumberland->:hasMother
-    LLM-provided explanation of the violation:
-      Alexandra_of_Hanover_and_Cumberland has more than one mother defined, violating the maxCount constraint.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Alexandra_of_Hanover_and_Cumberland, :hasMother, [extra_value])
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Barbara_of_Prussia is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Barbara_of_Prussia, :Ancestor)
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Charlotte_of_Saxe-Altenburg is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charlotte_of_Saxe-Altenburg, :Ancestor)
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father Christian_IX_of_Denmark is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_IX_of_Denmark, :Ancestor)
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father Ernest_Augustus_Crown_Prince_of_Hanover is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
-
-
-  Violation [37]:
-    SHACL message: More than 1 values on data:Alexandra_of_Hanover_and_Cumberland->:hasFather
-    LLM-provided explanation of the violation:
-      Alexandra_of_Hanover_and_Cumberland has more than one father defined, violating the maxCount constraint.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Alexandra_of_Hanover_and_Cumberland, :hasFather, [extra_value])
-
-
-  Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father Christian_Louis_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_Louis_of_Mecklenburg-Schwerin, :Ancestor)
-
-
-  Violation [39]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father Christian_Louis_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_Louis_of_Mecklenburg-Schwerin, :Ancestor)
-
-
-  Violation [40]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father Sigismund_of_Prussia is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Sigismund_of_Prussia, :Ancestor)
-
-
-  Violation [41]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father Ernst_II_of_Saxe-Altenburg is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernst_II_of_Saxe-Altenburg, :Ancestor)
-
-
-  Violation [42]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Louise_of_Hesse-Kassel is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Louise_of_Hesse-Kassel, :Ancestor)
-
-
-  Violation [43]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Thyra_of_Denmark is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thyra_of_Denmark, :Ancestor)
-
-
-  Violation [44]:
-    SHACL message: More than 1 values on data:Alexandra_of_Hanover_and_Cumberland->:hasMother
-    LLM-provided explanation of the violation:
-      Alexandra_of_Hanover_and_Cumberland has more than one mother defined, violating the maxCount constraint.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Alexandra_of_Hanover_and_Cumberland, :hasMother, [extra_value])
-
-
-  Violation [45]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Queen_Victoria is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Victoria, :Ancestor)
-
-
-  Violation [46]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Barbara_of_Prussia is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Barbara_of_Prussia, :Ancestor)
-
-
-  Violation [47]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Barbara_of_Prussia is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Barbara_of_Prussia, :Ancestor)
-
-
-  Violation [48]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Charlotte_of_Saxe-Altenburg is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charlotte_of_Saxe-Altenburg, :Ancestor)
+      AssignClass(Alicia_of_Bourbon-Parma, :Woman)
 
 
 
@@ -1351,101 +1122,54 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (3294ebae-7e50-46f3-a0aa-7e11cfc91af8)
- Call ID: 3294ebae-7e50-46f3-a0aa-7e11cfc91af8
+  AssignClass (235b713a-5b15-4d52-8e94-f0b57d395595)
+ Call ID: 235b713a-5b15-4d52-8e94-f0b57d395595
+  Args:
+    type: :Man
+    source: Alfonso_XII_of_Spain
+  AssignClass (18db620a-1be4-4154-8348-f44266b1733a)
+ Call ID: 18db620a-1be4-4154-8348-f44266b1733a
+  Args:
+    source: Alfonso_de_Borbon-Dos_Sicilias_y_Borbon
+    type: :Man
+  AssignClass (36a96304-f0c1-4e08-806d-2bd51664a916)
+ Call ID: 36a96304-f0c1-4e08-806d-2bd51664a916
+  Args:
+    type: :Man
+    source: Henri_Count_of_Paris
+  AssignClass (f9c0dc59-a795-4f99-8f6b-ee3ecebf963f)
+ Call ID: f9c0dc59-a795-4f99-8f6b-ee3ecebf963f
+  Args:
+    source: Alicia_of_Bourbon-Parma
+    type: :Woman
+  AssignClass (342821b2-06b0-45d9-9b68-a0b3145d9b2a)
+ Call ID: 342821b2-06b0-45d9-9b68-a0b3145d9b2a
+  Args:
+    type: :Man
+    source: Carlo_of_Bourbon-Two_Sicilies
+  AssignClass (819a3ca9-eb94-4979-aed4-6a35f9fc2968)
+ Call ID: 819a3ca9-eb94-4979-aed4-6a35f9fc2968
+  Args:
+    source: Mercedes_Princess_of_Asturias
+    type: :Woman
+  AssignClass (caa0bb5f-aca1-41ee-ab95-541c0740bdb3)
+ Call ID: caa0bb5f-aca1-41ee-ab95-541c0740bdb3
   Args:
     type: :Ancestor
-    source: Frederick_Francis_IV_of_Mecklenburg-Schwerin
-  AssignClass (356a9f33-ef6d-4d7f-8e18-d39f485ac027)
- Call ID: 356a9f33-ef6d-4d7f-8e18-d39f485ac027
+    source: Alfonso_de_Borbon-Dos_Sicilias_y_Borbon
+  AssignClass (383ccff7-d219-4d2e-ae13-f0c682fbf93b)
+ Call ID: 383ccff7-d219-4d2e-ae13-f0c682fbf93b
   Args:
     type: :Ancestor
-    source: Alexandra_of_Hanover_and_Cumberland
-  AssignClass (ceccb82f-8bc6-422c-90cb-63911b028228)
- Call ID: ceccb82f-8bc6-422c-90cb-63911b028228
+    source: Carlo_of_Bourbon-Two_Sicilies
+  AssignClass (bc280d02-88d3-4ba3-aaac-68266c3e3b76)
+ Call ID: bc280d02-88d3-4ba3-aaac-68266c3e3b76
   Args:
+    source: Alfonso_XII_of_Spain
     type: :Ancestor
-    source: Christian_Louis_of_Mecklenburg-Schwerin
-  AssignClass (0c8674f9-b63e-4e78-8387-d988e776dcdb)
- Call ID: 0c8674f9-b63e-4e78-8387-d988e776dcdb
+  Finish (75416ab6-12be-49a9-a275-e4d613ba3212)
+ Call ID: 75416ab6-12be-49a9-a275-e4d613ba3212
   Args:
-    type: :Ancestor
-    source: Ernst_II_of_Saxe-Altenburg
-  AssignClass (0d3c0146-0b11-4c5e-8cfc-b2ef935e8025)
- Call ID: 0d3c0146-0b11-4c5e-8cfc-b2ef935e8025
-  Args:
-    type: :Ancestor
-    source: Christian_IX_of_Denmark
-  AssignClass (dc285de3-f707-4bbc-bde5-0d6ff4e6c916)
- Call ID: dc285de3-f707-4bbc-bde5-0d6ff4e6c916
-  Args:
-    type: :Ancestor
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AssignClass (86f59816-dce1-4df0-a70f-23d7be90678d)
- Call ID: 86f59816-dce1-4df0-a70f-23d7be90678d
-  Args:
-    type: :Ancestor
-    source: Sigismund_of_Prussia
-  AssignClass (77328682-ad11-4e1d-ba3f-ac8bd3465fbe)
- Call ID: 77328682-ad11-4e1d-ba3f-ac8bd3465fbe
-  Args:
-    type: :Ancestor
-    source: Queen_Victoria
-  AssignClass (17be905d-0cbf-4aa7-890f-19004070864c)
- Call ID: 17be905d-0cbf-4aa7-890f-19004070864c
-  Args:
-    type: :Ancestor
-    source: Barbara_of_Prussia
-  AssignClass (1e6b8bf1-7cf0-4682-ba10-98bffb91e59b)
- Call ID: 1e6b8bf1-7cf0-4682-ba10-98bffb91e59b
-  Args:
-    type: :Ancestor
-    source: Louise_of_Hesse-Kassel
-  AssignClass (563f82ec-ab49-453d-b6bd-391c50d2a577)
- Call ID: 563f82ec-ab49-453d-b6bd-391c50d2a577
-  Args:
-    type: :Ancestor
-    source: Thyra_of_Denmark
-  AssignClass (0be706f6-6a0f-47e6-a51e-fd8cd6ed9b88)
- Call ID: 0be706f6-6a0f-47e6-a51e-fd8cd6ed9b88
-  Args:
-    type: :Ancestor
-    source: Charlotte_of_Saxe-Altenburg
-  RemoveTriple (a6f8728a-8736-4e25-b429-9f6b3251696d)
- Call ID: a6f8728a-8736-4e25-b429-9f6b3251696d
-  Args:
-    source: Alexandra_of_Hanover_and_Cumberland
-    target: Ernest_Augustus_Crown_Prince_of_Hanover
-    relation: :hasFather
-  RemoveTriple (8786deea-efca-4cd4-9474-b586f15bb1b4)
- Call ID: 8786deea-efca-4cd4-9474-b586f15bb1b4
-  Args:
-    relation: :hasMother
-    source: Alexandra_of_Hanover_and_Cumberland
-    target: Thyra_of_Denmark
-  ValidateShacl (801e77d8-5b9c-48e0-a7b4-9c00a0b07053)
- Call ID: 801e77d8-5b9c-48e0-a7b4-9c00a0b07053
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1486,88 +1210,286 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alice_of_Hesse_and_by_Rhine a :Person,
+  data:Teresa_of_Bourbon-Dos_Sicilias a :Person,
           :Woman ;
-      :hasMother data:Queen_Victoria .
+      :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;
+      :hasMother data:Alicia_of_Bourbon-Parma ;
+      :isSisterOf data:Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma .
 
-  data:Donata_of_Mecklenburg a :Person,
-          :Woman ;
-      :hasBirthYear 1956 ;
-      :hasFather data:Christian_Louis_of_Mecklenburg-Schwerin ;
-      :hasMother data:Barbara_of_Prussia ;
-      :hasSister data:Edwina_of_Mecklenburg-Schwerin .
-
-  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
+  data:Alfonso_XII_of_Spain a :Ancestor,
           :Man,
           :Person .
 
-  data:Louis_IV_of_Hesse_and_by_Rhine a :Man,
-          :Person .
-
-  data:Thyra_of_Denmark a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Alexandra_of_Hanover_and_Cumberland a :Ancestor,
-          :Person,
+  data:Anne_of_Orleans a :Person,
           :Woman ;
-      :hasFather data:Christian_IX_of_Denmark ;
-      :hasMother data:Louise_of_Hesse-Kassel .
+      :hasFather data:Henri_Count_of_Paris .
 
-  data:Charlotte_of_Saxe-Altenburg a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Ernst_II_of_Saxe-Altenburg .
-
-  data:Christian_IX_of_Denmark a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Edwina_of_Mecklenburg-Schwerin a :Person,
-          :Woman ;
-      :hasBirthYear 1960 ;
-      :hasFather data:Christian_Louis_of_Mecklenburg-Schwerin ;
-      :hasMother data:Barbara_of_Prussia .
-
-  data:Ernst_II_of_Saxe-Altenburg a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
-          :Person .
-
-  data:Louise_of_Hesse-Kassel a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Queen_Victoria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Sigismund_of_Prussia a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Barbara_of_Prussia a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1920 ;
-      :hasDeathYear 1994 ;
-      :hasFather data:Sigismund_of_Prussia ;
-      :hasMother data:Charlotte_of_Saxe-Altenburg .
-
-  data:Christian_Louis_of_Mecklenburg-Schwerin a :Ancestor,
+  data:Carlo_of_Bourbon-Two_Sicilies a :Ancestor,
           :Man,
           :Person ;
-      :hasBrother data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
-      :hasFather data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
-      :hasMother data:Alexandra_of_Hanover_and_Cumberland .
+      :hasBirthYear 1870 ;
+      :hasDeathYear 1949 .
+
+  data:Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma a :Man,
+          :Person ;
+      :hasBirthYear 1938 ;
+      :hasDeathYear 2015 ;
+      :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;
+      :hasMother data:Alicia_of_Bourbon-Parma ;
+      :hasRelation data:Anne_of_Orleans .
+
+  data:Henri_Count_of_Paris a :Man,
+          :Person .
+
+  data:Mercedes_Princess_of_Asturias a :Person,
+          :Woman ;
+      :hasBirthYear 1880 ;
+      :hasDeathYear 1904 ;
+      :hasFather data:Alfonso_XII_of_Spain .
+
+  data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1901 ;
+      :hasDeathYear 1964 ;
+      :hasFather data:Carlo_of_Bourbon-Two_Sicilies ;
+      :hasMother data:Mercedes_Princess_of_Asturias .
+
+  data:Alicia_of_Bourbon-Parma a :Person,
+          :Woman ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 2017 .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (a66e24bf-e100-4561-b062-69ac5035e68e)
+ Call ID: a66e24bf-e100-4561-b062-69ac5035e68e
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:13
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Henri_Count_of_Paris for the property hasFather on node Anne_of_Orleans is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Henri_Count_of_Paris', class=':Man')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Alicia_of_Bourbon-Parma for the property hasMother on node Teresa_of_Bourbon-Dos_Sicilias is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alicia_of_Bourbon-Parma', class=':Woman')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Alicia_of_Bourbon-Parma for the property hasMother on node Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alicia_of_Bourbon-Parma', class=':Woman')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Mercedes_Princess_of_Asturias for the property hasMother on node Alfonso_de_Borbon-Dos_Sicilias_y_Borbon is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Mercedes_Princess_of_Asturias', class=':Woman')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Henri_Count_of_Paris for the property hasFather on node Anne_of_Orleans is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Henri_Count_of_Paris', class=':Man')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Mercedes_Princess_of_Asturias for the property hasMother on node Alfonso_de_Borbon-Dos_Sicilias_y_Borbon is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Mercedes_Princess_of_Asturias', class=':Woman')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Alicia_of_Bourbon-Parma for the property hasMother on node Teresa_of_Bourbon-Dos_Sicilias is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alicia_of_Bourbon-Parma', class=':Woman')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Alicia_of_Bourbon-Parma for the property hasMother on node Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alicia_of_Bourbon-Parma', class=':Woman')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Henri_Count_of_Paris for the property hasFather on node Anne_of_Orleans is missing the required class :Man or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Henri_Count_of_Paris', class=':Man')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Alicia_of_Bourbon-Parma for the property hasMother on node Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alicia_of_Bourbon-Parma', class=':Woman')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Mercedes_Princess_of_Asturias for the property hasMother on node Alfonso_de_Borbon-Dos_Sicilias_y_Borbon is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Mercedes_Princess_of_Asturias', class=':Woman')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Alicia_of_Bourbon-Parma for the property hasMother on node Teresa_of_Bourbon-Dos_Sicilias is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alicia_of_Bourbon-Parma', class=':Woman')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Mercedes_Princess_of_Asturias for the property hasMother on node Alfonso_de_Borbon-Dos_Sicilias_y_Borbon is missing the required class :Woman or :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Mercedes_Princess_of_Asturias', class=':Woman')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (16cfdee6-f26b-4c9a-9e12-49eea55f3f7c)
+ Call ID: 16cfdee6-f26b-4c9a-9e12-49eea55f3f7c
+  Args:
+    type: :Ancestor
+    source: Henri_Count_of_Paris
+  AssignClass (68a955d8-1a58-481a-97f1-56b344eb8ecc)
+ Call ID: 68a955d8-1a58-481a-97f1-56b344eb8ecc
+  Args:
+    source: Alicia_of_Bourbon-Parma
+    type: :Ancestor
+  AssignClass (17bb726e-681d-4089-9895-1892f1c32979)
+ Call ID: 17bb726e-681d-4089-9895-1892f1c32979
+  Args:
+    source: Mercedes_Princess_of_Asturias
+    type: :Ancestor
+  Finish (406aca90-a55f-4800-93ea-d3030d1d89c7)
+ Call ID: 406aca90-a55f-4800-93ea-d3030d1d89c7
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Teresa_of_Bourbon-Dos_Sicilias a :Person,
+          :Woman ;
+      :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;
+      :hasMother data:Alicia_of_Bourbon-Parma ;
+      :isSisterOf data:Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma .
+
+  data:Alfonso_XII_of_Spain a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Anne_of_Orleans a :Person,
+          :Woman ;
+      :hasFather data:Henri_Count_of_Paris .
+
+  data:Carlo_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1870 ;
+      :hasDeathYear 1949 .
+
+  data:Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma a :Man,
+          :Person ;
+      :hasBirthYear 1938 ;
+      :hasDeathYear 2015 ;
+      :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;
+      :hasMother data:Alicia_of_Bourbon-Parma ;
+      :hasRelation data:Anne_of_Orleans .
+
+  data:Henri_Count_of_Paris a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Mercedes_Princess_of_Asturias a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1880 ;
+      :hasDeathYear 1904 ;
+      :hasFather data:Alfonso_XII_of_Spain .
+
+  data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1901 ;
+      :hasDeathYear 1964 ;
+      :hasFather data:Carlo_of_Bourbon-Two_Sicilies ;
+      :hasMother data:Mercedes_Princess_of_Asturias .
+
+  data:Alicia_of_Bourbon-Parma a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 2017 .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (575e5753-7638-4dd1-8aec-958ac9dca7cd)
+ Call ID: 575e5753-7638-4dd1-8aec-958ac9dca7cd
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1577,6 +1499,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (909c84c7-6b60-4f97-af7e-8d7ab0bc1fa0)
- Call ID: 909c84c7-6b60-4f97-af7e-8d7ab0bc1fa0
+  Finish (50316226-5a7b-4b27-92be-59c885483ba0)
+ Call ID: 50316226-5a7b-4b27-92be-59c885483ba0
   Args:

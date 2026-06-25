@@ -7,15 +7,33 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:Prince_Philip-_Duke_of_Edinburgh a :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "237:250",
+        "237:269",
+        "503:516",
+        "503:535",
+        "936:949" ;
+    data:posIndicesPart "1108:1114",
+        "1319:1325",
+        "1717:1723",
+        "1761:1767",
+        "567:573" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male .
 
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Beatrix_of_Hohenlohe-Langenburg a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Beatrix_of_Hohenlohe-Langenburg a :Person ;
     rdfs:label "Princess Beatrix of Hohenlohe-Langenburg" ;
     data:posIndicesFull "0:40" ;
     data:posIndicesPart "1038:1046",
@@ -35,90 +53,33 @@ data:Princess_Beatrix_of_Hohenlohe-Langenburg a :Person,
         "854:862",
         "970:977" ;
     data:wdtLink wdt:Q75384169 ;
-    :hasMother data:Princess_Margarita_of_Greece_and_Denmark ;
     :hasParent data:Princess_Margarita_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :isChildOf data:Princess_Margarita_of_Greece_and_Denmark ;
-    :isDaughterOf data:Princess_Margarita_of_Greece_and_Denmark .
+    :hasSex data:female .
 
-data:Andrew_Mountbatten-Windsor a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Andrew Mountbatten-Windsor" ;
-    data:posIndicesFull "1108:1121",
-        "1761:1774" ;
-    data:wdtLink wdt:Q153330 ;
-    :alsoKnownAs "Andrew Albert Christian Edward",
-        "Andrew Albert Christian Edward Mountbatten-Windsor",
-        "Baron Killyleagh",
-        "Earl of Inverness",
-        "Prince Andrew",
-        "Prince Andrew of the United Kingdom",
-        "Prince Andrew, Duke of York",
-        "Randy Andy" ;
-    :hasBrother data:Charles_III ;
-    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasParent data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasSex data:male ;
-    :isBrotherOf data:Charles_III ;
-    :isChildOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSiblingOf data:Charles_III ;
-    :isSonOf data:Prince_Philip-_Duke_of_Edinburgh .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Charles_III a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Charles III" ;
-    data:posIndicesFull "1717:1731",
-        "1739:1751",
-        "1739:1755",
-        "1744:1755",
-        "298:310",
-        "298:314",
-        "303:314" ;
-    data:wdtLink wdt:Q43274 ;
-    :alsoKnownAs "C III",
-        "Charles III of England",
-        "Charles III of the United Kingdom",
-        "Charles Mountbatten-Windsor",
-        "Charles Philip Arthur George",
-        "Charles Philip Arthur George Mountbatten-Windsor",
-        "Charles Philip Arthur George Windsor",
-        "Charles Philip Arthur George, Prince of Wales",
-        "Charles Wales",
-        "Charles Windsor",
-        "Charles the Third",
-        "HM King Charles III",
-        "His Majesty",
-        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith",
-        "His Majesty The King",
-        "His Royal Highness Charles III of Great Britain",
-        "King Charles",
-        "King Charles III",
-        "King of England",
-        "Prince Charles",
-        "Prince Charles Philip Arthur George of Edinburgh",
-        "Prince Charles Philip Arthur George, Prince of Wales",
-        "Prince Charles of Edinburgh",
-        "Prince Charles, Duke of Rothesay",
-        "Prince Charles, Prince of Wales",
-        "The Prince Charles Philip Arthur George, Prince of Wales",
-        "The Prince Charles, Prince of Wales" ;
-    :hasBrother data:Andrew_Mountbatten-Windsor ;
-    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasParent data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasSex data:male ;
-    :isBrotherOf data:Andrew_Mountbatten-Windsor ;
-    :isChildOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSiblingOf data:Andrew_Mountbatten-Windsor ;
-    :isSonOf data:Prince_Philip-_Duke_of_Edinburgh .
+data:posIndicesPart a owl:AnnotationProperty .
 
-data:Princess_Alice_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Margarita of Greece and Denmark" ;
+    data:posIndicesFull "440:480",
+        "449:480" ;
+    data:posIndicesPart "1038:1046",
+        "1494:1502",
+        "1557:1565",
+        "587:595",
+        "854:862" ;
+    data:wdtLink wdt:Q240317 ;
+    :alsoKnownAs "Margarita of Greece and Denmark",
+        "Margarita of Hohenlohe-Langenburg" ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:Princess_Alice_of_Battenberg a :Person ;
     rdfs:label "Princess Alice of Battenberg" ;
     data:posIndicesFull "1625:1629",
         "58:63" ;
@@ -137,84 +98,7 @@ data:Princess_Alice_of_Battenberg a :Ancestor,
         "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
         "Victoria Alice Elizabeth Julia Marie",
         "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
-    :hasChild data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Margarita_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Margarita_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Margarita_of_Greece_and_Denmark ;
-    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Margarita_of_Greece_and_Denmark .
+    :hasSex data:female .
 
-data:Princess_Margarita_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Margarita of Greece and Denmark" ;
-    data:posIndicesFull "440:480",
-        "449:480" ;
-    data:posIndicesPart "1038:1046",
-        "1494:1502",
-        "1557:1565",
-        "587:595",
-        "854:862" ;
-    data:wdtLink wdt:Q240317 ;
-    :alsoKnownAs "Margarita of Greece and Denmark",
-        "Margarita of Hohenlohe-Langenburg" ;
-    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasChild data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
-    :hasDaughter data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
-    :hasMother data:Princess_Alice_of_Battenberg ;
-    :hasParent data:Princess_Alice_of_Battenberg ;
-    :hasSex data:female ;
-    :isAuntOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isChildOf data:Princess_Alice_of_Battenberg ;
-    :isDaughterOf data:Princess_Alice_of_Battenberg ;
-    :isMotherOf data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
-    :isParentOf data:Princess_Beatrix_of_Hohenlohe-Langenburg ;
-    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSisterOf data:Prince_Philip-_Duke_of_Edinburgh .
-
-data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Philip, Duke of Edinburgh" ;
-    data:posIndicesFull "237:250",
-        "237:269",
-        "503:516",
-        "503:535",
-        "936:949" ;
-    data:posIndicesPart "1319:1325",
-        "567:573" ;
-    data:wdtLink wdt:Q80976 ;
-    :alsoKnownAs "H.R.H. Prince Philip",
-        "H.R.H. The Duke Of Edinburgh",
-        "Lieutenant Philip Mountbatten",
-        "Philip Edinburgh",
-        "Philip Mountbatten",
-        "Philip Mountbatten; Prince Philip of Greece and Denmark",
-        "Philip of Greece and Denmark",
-        "Prince Philip",
-        "Prince Philip of Greece and Denmark",
-        "The Prince Philip, Duke of Edinburgh" ;
-    :hasChild data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :hasMother data:Princess_Alice_of_Battenberg ;
-    :hasParent data:Princess_Alice_of_Battenberg ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Margarita_of_Greece_and_Denmark ;
-    :hasSon data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isBrotherOf data:Princess_Margarita_of_Greece_and_Denmark ;
-    :isChildOf data:Princess_Alice_of_Battenberg ;
-    :isFatherOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isParentOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isSiblingOf data:Princess_Margarita_of_Greece_and_Denmark ;
-    :isSonOf data:Princess_Alice_of_Battenberg ;
-    :isUncleOf data:Princess_Beatrix_of_Hohenlohe-Langenburg .
+data:female a :Female .
 

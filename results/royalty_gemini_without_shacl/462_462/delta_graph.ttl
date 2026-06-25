@@ -2,27 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Nicholas_Windsor a :Man,
-        :Person ;
-    :hasBirthYear 1970 ;
-    :hasBrother data:Earl_of_St_Andrews ;
-    :hasFather data:Prince_Edward_Duke_of_Kent ;
-    :hasMother data:Katharine_Duchess_of_Kent ;
-    :hasRelation data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski ;
-    :hasSister data:Lady_Helen_Taylor .
+data:Lyla_Gilman a :Person,
+        :Woman ;
+    :isDaughterOf data:George_Gilman,
+        data:Rose_Gilman .
 
-data:Earl_of_St_Andrews a :Man,
+data:Rufus_Gilman a :Man,
+        :Person ;
+    :isSonOf data:George_Gilman,
+        data:Rose_Gilman .
+
+data:Birgitte_Duchess_of_Gloucester a :Person,
+        :Woman .
+
+data:Prince_Richard a :Man,
         :Person .
 
-data:Katharine_Duchess_of_Kent a :Person,
+data:Rose_Windsor a :Person,
         :Woman .
 
-data:Lady_Helen_Taylor a :Person,
-        :Woman .
+data:Rose_Gilman a :Person,
+        :Woman ;
+    :alsoKnownAs data:Rose_Windsor ;
+    :hasBirthYear 1980 ;
+    :hasFather data:Prince_Richard ;
+    :hasMother data:Birgitte_Duchess_of_Gloucester ;
+    :hasRelation data:George_Gilman .
 
-data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski a :Person,
-        :Woman .
-
-data:Prince_Edward_Duke_of_Kent a :Man,
+data:George_Gilman a :Man,
         :Person .
 

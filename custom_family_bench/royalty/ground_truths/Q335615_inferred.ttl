@@ -1,0 +1,154 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Isobel_Weatherall a :Person,
+        :Woman ;
+    rdfs:label "Isobel Weatherall"^^xsd:string ;
+    data:posIndicesFull "1380:1407"^^xsd:string ;
+    data:posIndicesPart "1579:1589"^^xsd:string ;
+    data:wdtLink wdt:Q75248473 ;
+    :alsoKnownAs "Isobel Bowes-Lyon, Countess of Strathmore and Kinghorne"^^xsd:string,
+        "Isobel Bowes-Lyon, Lady Glamis"^^xsd:string,
+        "Isobel Charlotte Bowes-Lyon, Countess of Strathmore and Kinghorne"^^xsd:string,
+        "Isobel Charlotte Bowes-Lyon, Lady Glamis"^^xsd:string,
+        "Isobel Charlotte Weatherall"^^xsd:string,
+        "Isobel Charlotte, Countess of Strathmore and Kinghorne"^^xsd:string,
+        "Isobel, Countess of Strathmore and Kinghorne"^^xsd:string ;
+    :hasRelation data:Isobel_Weatherall ;
+    :hasSex data:female ;
+    :hasSister data:Isobel_Weatherall ;
+    :isBloodrelationOf data:Isobel_Weatherall ;
+    :isSiblingOf data:Isobel_Weatherall ;
+    :isSisterOf data:Isobel_Weatherall .
+
+data:Mary_McCorquodale a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Mary McCorquodale"^^xsd:string ;
+    data:posIndicesFull "425:449"^^xsd:string ;
+    data:posIndicesPart "2266:2270"^^xsd:string ;
+    data:wdtLink wdt:Q75240080 ;
+    :alsoKnownAs "Mary Bowes-Lyon"^^xsd:string,
+        "Mary Bowes-Lyon, Countess of Strathmore and Kinghorne"^^xsd:string,
+        "Mary Pamela Bowes-Lyon"^^xsd:string,
+        "Mary Pamela Bowes-Lyon, Countess of Strathmore and Kinghorne"^^xsd:string,
+        "Mary Pamela McCorquodale"^^xsd:string,
+        "Mary Strathmore"^^xsd:string,
+        "The Countess of Strathmore"^^xsd:string ;
+    :hasChild data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasRelation data:Mary_McCorquodale,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:female ;
+    :hasSister data:Mary_McCorquodale ;
+    :hasSon data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isAncestorOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isAuntOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBloodrelationOf data:Mary_McCorquodale ;
+    :isMotherOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isParentOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isSiblingOf data:Mary_McCorquodale ;
+    :isSisterOf data:Mary_McCorquodale .
+
+data:Michael_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Michael Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "511:529"^^xsd:string ;
+    data:posIndicesPart "1193:1198"^^xsd:string,
+        "1964:1969"^^xsd:string,
+        "1970:1974"^^xsd:string ;
+    data:wdtLink wdt:Q63806478 ;
+    :alsoKnownAs "Hon. Michael Bowes-Lyon"^^xsd:string,
+        "Hon. Michael Claude Hamilton Bowes-Lyon"^^xsd:string,
+        "Michael Claude Hamilton Bowes-Lyon"^^xsd:string ;
+    :hasBrother data:Michael_Bowes-Lyon ;
+    :hasChild data:Albemarle_Bowes-Lyon ;
+    :hasRelation data:Albemarle_Bowes-Lyon,
+        data:Michael_Bowes-Lyon ;
+    :hasSex data:male ;
+    :hasSon data:Albemarle_Bowes-Lyon ;
+    :isAncestorOf data:Albemarle_Bowes-Lyon ;
+    :isBloodrelationOf data:Michael_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Bowes-Lyon ;
+    :isFatherOf data:Albemarle_Bowes-Lyon ;
+    :isParentOf data:Albemarle_Bowes-Lyon ;
+    :isSiblingOf data:Michael_Bowes-Lyon ;
+    :isUncleOf data:Albemarle_Bowes-Lyon .
+
+data:Albemarle_Bowes-Lyon a :Man,
+        :Person ;
+    rdfs:label "Albemarle Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "511:529"^^xsd:string ;
+    data:posIndicesPart "1193:1198"^^xsd:string,
+        "1964:1969"^^xsd:string,
+        "1970:1974"^^xsd:string ;
+    data:wdtLink wdt:Q75248478 ;
+    :alsoKnownAs "Hon. Albemarle Bowes-Lyon"^^xsd:string,
+        "Hon. Michael Albemarle Bowes-Lyon"^^xsd:string,
+        "Hon. Michael Bowes-Lyon"^^xsd:string,
+        "Michael Albemarle Bowes-Lyon"^^xsd:string,
+        "Michael Bowes-Lyon"^^xsd:string ;
+    :hasAncestor data:Michael_Bowes-Lyon ;
+    :hasBrother data:Albemarle_Bowes-Lyon ;
+    :hasFather data:Michael_Bowes-Lyon ;
+    :hasParent data:Michael_Bowes-Lyon ;
+    :hasRelation data:Albemarle_Bowes-Lyon,
+        data:Michael_Bowes-Lyon ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Albemarle_Bowes-Lyon ;
+    :isBrotherOf data:Albemarle_Bowes-Lyon ;
+    :isChildOf data:Michael_Bowes-Lyon ;
+    :isSiblingOf data:Albemarle_Bowes-Lyon ;
+    :isSonOf data:Michael_Bowes-Lyon .
+
+data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne a :Man,
+        :Person ;
+    rdfs:label "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne"^^xsd:string ;
+    data:posIndicesFull "511:529"^^xsd:string ;
+    data:posIndicesPart "1002:1012"^^xsd:string,
+        "1193:1198"^^xsd:string,
+        "1286:1296"^^xsd:string,
+        "1564:1574"^^xsd:string,
+        "1656:1666"^^xsd:string,
+        "1762:1772"^^xsd:string,
+        "1902:1912"^^xsd:string,
+        "1964:1969"^^xsd:string,
+        "1970:1974"^^xsd:string,
+        "2141:2151"^^xsd:string,
+        "707:717"^^xsd:string,
+        "773:783"^^xsd:string,
+        "813:817"^^xsd:string,
+        "821:831"^^xsd:string,
+        "836:845"^^xsd:string ;
+    data:wdtLink wdt:Q335615 ;
+    :alsoKnownAs "Michael Bowes-Lyon"^^xsd:string,
+        "Michael Bowes-Lyon, The Earl of Strathmore and Kinghorne"^^xsd:string ;
+    :hasAncestor data:Mary_McCorquodale ;
+    :hasBrother data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasMother data:Mary_McCorquodale ;
+    :hasParent data:Mary_McCorquodale ;
+    :hasRelation data:Mary_McCorquodale,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBrotherOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isChildOf data:Mary_McCorquodale ;
+    :isSiblingOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isSonOf data:Mary_McCorquodale .
+

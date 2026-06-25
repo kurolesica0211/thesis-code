@@ -1,0 +1,392 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CeciliaBowesLyon a :Ancestor,
+        :Woman ;
+    :hasChild data:ElizabethQueenMother ;
+    :hasDaughter data:ElizabethQueenMother ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:David,
+        data:ElizabethII,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Mary,
+        data:Sarah ;
+    :hasSister data:CeciliaBowesLyon ;
+    :isAncestorOf data:David,
+        data:ElizabethII,
+        data:ElizabethQueenMother,
+        data:Margaret,
+        data:Sarah ;
+    :isAuntOf data:ElizabethQueenMother ;
+    :isBloodrelationOf data:CeciliaBowesLyon ;
+    :isMotherOf data:ElizabethQueenMother ;
+    :isParentOf data:ElizabethQueenMother ;
+    :isSiblingOf data:CeciliaBowesLyon ;
+    :isSisterOf data:CeciliaBowesLyon .
+
+data:ClaudeBowesLyon a :Ancestor,
+        :Man ;
+    :hasBrother data:ClaudeBowesLyon ;
+    :hasChild data:ElizabethQueenMother ;
+    :hasDaughter data:ElizabethQueenMother ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:David,
+        data:ElizabethII,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Mary,
+        data:Sarah ;
+    :isAncestorOf data:David,
+        data:ElizabethII,
+        data:ElizabethQueenMother,
+        data:Margaret,
+        data:Sarah ;
+    :isBloodrelationOf data:ClaudeBowesLyon ;
+    :isBrotherOf data:ClaudeBowesLyon ;
+    :isFatherOf data:ElizabethQueenMother ;
+    :isParentOf data:ElizabethQueenMother ;
+    :isSiblingOf data:ClaudeBowesLyon ;
+    :isUncleOf data:ElizabethQueenMother .
+
+data:GeorgeV a :Ancestor,
+        :Man ;
+    :hasBrother data:GeorgeV ;
+    :hasChild data:GeorgeVI ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:David,
+        data:ElizabethII,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Mary,
+        data:Sarah ;
+    :hasSon data:GeorgeVI ;
+    :isAncestorOf data:David,
+        data:ElizabethII,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Sarah ;
+    :isBloodrelationOf data:GeorgeV ;
+    :isBrotherOf data:GeorgeV ;
+    :isFatherOf data:GeorgeVI ;
+    :isParentOf data:GeorgeVI ;
+    :isSiblingOf data:GeorgeV ;
+    :isUncleOf data:GeorgeVI .
+
+data:Mary a :Ancestor,
+        :Woman ;
+    :hasChild data:GeorgeVI ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:David,
+        data:ElizabethII,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Mary,
+        data:Sarah ;
+    :hasSister data:Mary ;
+    :hasSon data:GeorgeVI ;
+    :isAncestorOf data:David,
+        data:ElizabethII,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Sarah ;
+    :isAuntOf data:GeorgeVI ;
+    :isBloodrelationOf data:Mary ;
+    :isMotherOf data:GeorgeVI ;
+    :isParentOf data:GeorgeVI ;
+    :isSiblingOf data:Mary ;
+    :isSisterOf data:Mary .
+
+data:AntonyArmstrongJones a :Ancestor,
+        :Man ;
+    :hasBrother data:AntonyArmstrongJones ;
+    :hasChild data:David,
+        data:Sarah ;
+    :hasDaughter data:Sarah ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:David,
+        data:ElizabethII,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Mary,
+        data:Sarah ;
+    :hasSon data:David ;
+    :isAncestorOf data:David,
+        data:Sarah ;
+    :isBloodrelationOf data:AntonyArmstrongJones ;
+    :isBrotherOf data:AntonyArmstrongJones ;
+    :isFatherOf data:David,
+        data:Sarah ;
+    :isParentOf data:David,
+        data:Sarah ;
+    :isSiblingOf data:AntonyArmstrongJones ;
+    :isUncleOf data:David,
+        data:Sarah .
+
+data:ElizabethII a :Woman ;
+    :hasAncestor data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Mary ;
+    :hasFather data:GeorgeVI ;
+    :hasMother data:ElizabethQueenMother ;
+    :hasParent data:ElizabethQueenMother,
+        data:GeorgeVI ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:David,
+        data:ElizabethII,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Mary,
+        data:Sarah ;
+    :hasSister data:ElizabethII,
+        data:Margaret ;
+    :isAuntOf data:David,
+        data:Sarah ;
+    :isBloodrelationOf data:ElizabethII,
+        data:Margaret ;
+    :isChildOf data:ElizabethQueenMother,
+        data:GeorgeVI ;
+    :isDaughterOf data:ElizabethQueenMother,
+        data:GeorgeVI ;
+    :isSiblingOf data:ElizabethII,
+        data:Margaret ;
+    :isSisterOf data:ElizabethII,
+        data:Margaret .
+
+data:David a :Man ;
+    :hasAncestor data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Mary ;
+    :hasBrother data:David ;
+    :hasFather data:AntonyArmstrongJones ;
+    :hasMother data:Margaret ;
+    :hasParent data:AntonyArmstrongJones,
+        data:Margaret ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:David,
+        data:ElizabethII,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Mary,
+        data:Sarah ;
+    :hasSister data:Sarah ;
+    :isBloodrelationOf data:David,
+        data:Sarah ;
+    :isBrotherOf data:David,
+        data:Sarah ;
+    :isChildOf data:AntonyArmstrongJones,
+        data:Margaret ;
+    :isSiblingOf data:David,
+        data:Sarah ;
+    :isSonOf data:AntonyArmstrongJones,
+        data:Margaret .
+
+data:Sarah a :Woman ;
+    :hasAncestor data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Mary ;
+    :hasBrother data:David ;
+    :hasFather data:AntonyArmstrongJones ;
+    :hasMother data:Margaret ;
+    :hasParent data:AntonyArmstrongJones,
+        data:Margaret ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:David,
+        data:ElizabethII,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Mary,
+        data:Sarah ;
+    :hasSister data:Sarah ;
+    :isBloodrelationOf data:David,
+        data:Sarah ;
+    :isChildOf data:AntonyArmstrongJones,
+        data:Margaret ;
+    :isDaughterOf data:AntonyArmstrongJones,
+        data:Margaret ;
+    :isSiblingOf data:David,
+        data:Sarah ;
+    :isSisterOf data:David,
+        data:Sarah .
+
+data:ElizabethQueenMother a :Ancestor,
+        :Woman ;
+    :hasAncestor data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon ;
+    :hasChild data:ElizabethII,
+        data:Margaret ;
+    :hasDaughter data:ElizabethII,
+        data:Margaret ;
+    :hasFather data:ClaudeBowesLyon ;
+    :hasMother data:CeciliaBowesLyon ;
+    :hasParent data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:David,
+        data:ElizabethII,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Mary,
+        data:Sarah ;
+    :hasSister data:ElizabethQueenMother ;
+    :isAncestorOf data:David,
+        data:ElizabethII,
+        data:Margaret,
+        data:Sarah ;
+    :isAuntOf data:ElizabethII,
+        data:Margaret ;
+    :isBloodrelationOf data:ElizabethQueenMother ;
+    :isChildOf data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon ;
+    :isDaughterOf data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon ;
+    :isMotherOf data:ElizabethII,
+        data:Margaret ;
+    :isParentOf data:ElizabethII,
+        data:Margaret ;
+    :isSiblingOf data:ElizabethQueenMother ;
+    :isSisterOf data:ElizabethQueenMother .
+
+data:GeorgeVI a :Ancestor,
+        :Man ;
+    :hasAncestor data:GeorgeV,
+        data:Mary ;
+    :hasBrother data:GeorgeVI ;
+    :hasChild data:ElizabethII,
+        data:Margaret ;
+    :hasDaughter data:ElizabethII,
+        data:Margaret ;
+    :hasFather data:GeorgeV ;
+    :hasMother data:Mary ;
+    :hasParent data:GeorgeV,
+        data:Mary ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:David,
+        data:ElizabethII,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Mary,
+        data:Sarah ;
+    :isAncestorOf data:David,
+        data:ElizabethII,
+        data:Margaret,
+        data:Sarah ;
+    :isBloodrelationOf data:GeorgeVI ;
+    :isBrotherOf data:GeorgeVI ;
+    :isChildOf data:GeorgeV,
+        data:Mary ;
+    :isFatherOf data:ElizabethII,
+        data:Margaret ;
+    :isParentOf data:ElizabethII,
+        data:Margaret ;
+    :isSiblingOf data:GeorgeVI ;
+    :isSonOf data:GeorgeV,
+        data:Mary ;
+    :isUncleOf data:ElizabethII,
+        data:Margaret .
+
+data:Margaret a :Ancestor,
+        :Woman ;
+    :hasAncestor data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Mary ;
+    :hasBirthYear 1930 ;
+    :hasChild data:David,
+        data:Sarah ;
+    :hasDaughter data:Sarah ;
+    :hasDeathYear 2002 ;
+    :hasFather data:GeorgeVI ;
+    :hasMarriageYear 1960 ;
+    :hasMother data:ElizabethQueenMother ;
+    :hasParent data:ElizabethQueenMother,
+        data:GeorgeVI ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:CeciliaBowesLyon,
+        data:ClaudeBowesLyon,
+        data:David,
+        data:ElizabethII,
+        data:ElizabethQueenMother,
+        data:GeorgeV,
+        data:GeorgeVI,
+        data:Margaret,
+        data:Mary,
+        data:Sarah ;
+    :hasSister data:ElizabethII,
+        data:Margaret ;
+    :hasSon data:David ;
+    :isAncestorOf data:David,
+        data:Sarah ;
+    :isAuntOf data:David,
+        data:Sarah ;
+    :isBloodrelationOf data:ElizabethII,
+        data:Margaret ;
+    :isChildOf data:ElizabethQueenMother,
+        data:GeorgeVI ;
+    :isDaughterOf data:ElizabethQueenMother,
+        data:GeorgeVI ;
+    :isMotherOf data:David,
+        data:Sarah ;
+    :isParentOf data:David,
+        data:Sarah ;
+    :isSiblingOf data:ElizabethII,
+        data:Margaret ;
+    :isSisterOf data:ElizabethII,
+        data:Margaret .
+

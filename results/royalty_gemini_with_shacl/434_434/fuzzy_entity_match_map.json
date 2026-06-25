@@ -1,122 +1,136 @@
 {
   "run_directory": "results/royalty_gemini_with_shacl",
   "task_directory": "results/royalty_gemini_with_shacl/434_434",
-  "text_file": "Q7518316.txt",
-  "text_key": "Q7518316",
-  "article": "https://en.wikipedia.org/wiki/Simon_Bowes-Lyon,_19th_Earl_of_Strathmore_and_Kinghorne",
-  "article_key": "Simon Bowes-Lyon, 19th Earl of Strathmore and Kinghorne",
+  "text_file": "Q74913.txt",
+  "text_key": "Q74913",
+  "article": "https://en.wikipedia.org/wiki/Heinrich_Prinz_von_Hannover",
+  "article_key": "Heinrich Prinz von Hannover",
   "main_entity": {
-    "uri": "http://example.com/data#Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne",
-    "qid": "Q7518316",
-    "label": "Simon Bowes-Lyon, 19th Earl of Strathmore and Kinghorne"
+    "uri": "http://example.com/data#Prince_Heinrich_of_Hanover",
+    "qid": "Q74913",
+    "label": "Prince Heinrich of Hanover"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne",
-      "qid": "Q7518316",
-      "label": "Simon Bowes-Lyon, 19th Earl of Strathmore and Kinghorne",
+      "uri": "http://example.com/data#Prince_Heinrich_of_Hanover",
+      "qid": "Q74913",
+      "label": "Prince Heinrich of Hanover",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Isobel_Weatherall",
-      "qid": "Q75248473",
-      "label": "Isobel Weatherall",
+      "uri": "http://example.com/data#Ernst_August-_Prince_of_Hanover",
+      "qid": "Q61079",
+      "label": "Ernst August, Prince of Hanover",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne",
-      "qid": "Q335615",
-      "label": "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne",
+      "uri": "http://example.com/data#Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg",
+      "qid": "Q2534736",
+      "label": "Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Albemarle_Bowes-Lyon",
-      "qid": "Q75248478",
-      "label": "Albemarle Bowes-Lyon",
+      "uri": "http://example.com/data#Ernst_August-_Duke_of_Brunswick",
+      "qid": "Q57672",
+      "label": "Ernst August, Duke of Brunswick",
       "distance": 2,
-      "gender": "male"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Ernst_August-_Prince_of_Hanover_1",
+      "qid": "Q58070",
+      "label": "Ernst August, Prince of Hanover",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Ernst_August_of_Hanover",
+      "qid": "Q4383225",
+      "label": "Prince Ernst August of Hanover",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Isobel_Weatherall",
-      "extracted_local_name": "Isobel_Weatherall",
-      "embedding_text": "Isobel Weatherall",
+      "extracted_uri": "http://example.org/data/HeinrichPrinzVonHannover",
+      "extracted_local_name": "HeinrichPrinzVonHannover",
+      "embedding_text": "Heinrich Prinz Von Hannover",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Heinrich_of_Hanover",
+      "ground_truth_qid": "Q74913",
+      "ground_truth_label": "Prince Heinrich of Hanover",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Heinrich Prinz von Hannover",
+      "best_candidate_label": "Prince Heinrich of Hanover",
+      "best_candidate_qid": "Q74913",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrinceErnestAugustusOfHanover",
+      "extracted_local_name": "PrinceErnestAugustusOfHanover",
+      "embedding_text": "Prince Ernest Augustus Of Hanover",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Ernst_August-_Prince_of_Hanover",
+      "ground_truth_qid": "Q61079",
+      "ground_truth_label": "Ernst August, Prince of Hanover",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Ernest Augustus of Hanover",
+      "best_candidate_label": "Ernst August, Prince of Hanover",
+      "best_candidate_qid": "Q61079",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg",
+      "extracted_local_name": "PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg",
+      "embedding_text": "Princess Ortrud Of Schleswig Holstein Sonderburg Glücksburg",
       "extracted_gender": "female",
       "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Isobel_Weatherall",
-      "ground_truth_qid": "Q75248473",
-      "ground_truth_label": "Isobel Weatherall",
+      "score": 0.975,
+      "ground_truth_uri": "http://example.com/data#Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg",
+      "ground_truth_qid": "Q2534736",
+      "ground_truth_label": "Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Isobel Weatherall",
-      "best_candidate_label": "Isobel Weatherall",
-      "best_candidate_qid": "Q75248473",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 1.0
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg",
+      "best_candidate_label": "Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg",
+      "best_candidate_qid": "Q2534736",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.975
     },
     {
-      "extracted_uri": "http://example.org/data/Michael_Bowes-Lyon",
-      "extracted_local_name": "Michael_Bowes-Lyon",
-      "embedding_text": "Michael Bowes-Lyon",
+      "extracted_uri": "http://example.org/data/ErnestAugustusHereditaryPrinceOfBrunswick",
+      "extracted_local_name": "ErnestAugustusHereditaryPrinceOfBrunswick",
+      "embedding_text": "Ernest Augustus Hereditary Prince Of Brunswick",
       "extracted_gender": "male",
       "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne",
-      "ground_truth_qid": "Q335615",
-      "ground_truth_label": "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Michael Bowes-Lyon",
-      "best_candidate_label": "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne",
-      "best_candidate_qid": "Q335615",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Anthony_Edward_Weatherall",
-      "extracted_local_name": "Anthony_Edward_Weatherall",
-      "embedding_text": "Anthony Edward Weatherall",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
+      "score": 0.7978723404255319,
+      "ground_truth_uri": "http://example.com/data#Ernst_August-_Duke_of_Brunswick",
+      "ground_truth_qid": "Q57672",
+      "ground_truth_label": "Ernst August, Duke of Brunswick",
+      "ground_truth_distance": 2,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Hon. Albemarle Bowes-Lyon",
-      "best_candidate_label": "Albemarle Bowes-Lyon",
-      "best_candidate_qid": "Q75248478",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.44
-    },
-    {
-      "extracted_uri": "http://example.org/data/Simon_Patrick_Bowes-Lyon",
-      "extracted_local_name": "Simon_Patrick_Bowes-Lyon",
-      "embedding_text": "Simon Patrick Bowes-Lyon",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": "Hon. Michael Bowes-Lyon",
-      "best_candidate_label": "Albemarle Bowes-Lyon",
-      "best_candidate_qid": "Q75248478",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.6808510638297872
+      "best_candidate_match_text": "Ernst August I of Brunswick",
+      "best_candidate_label": "Ernst August, Duke of Brunswick",
+      "best_candidate_qid": "Q57672",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7978723404255319
     }
   ],
   "summary": {
     "entities_total": 4,
-    "entities_matched": 2,
-    "entities_unmatched": 2
+    "entities_matched": 4,
+    "entities_unmatched": 0
   }
 }

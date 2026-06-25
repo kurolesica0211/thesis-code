@@ -1,0 +1,37 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :hasChild data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :hasRelation data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg,
+        data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :hasSon data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :isAncestorOf data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :isBloodrelationOf data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :isBrotherOf data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :isFatherOf data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :isParentOf data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :isSiblingOf data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :isUncleOf data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg .
+
+data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,
+        :Person ;
+    :alsoKnownAs "Leonhard \"Leo\" Löwenstein"^^xsd:string ;
+    :hasAncestor data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :hasBirthYear 1966 ;
+    :hasBrother data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :hasDeathYear 2010 ;
+    :hasFather data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :hasParent data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :hasRelation data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg,
+        data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :isBloodrelationOf data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :isBrotherOf data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :isChildOf data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :isSiblingOf data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :isSonOf data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg .
+

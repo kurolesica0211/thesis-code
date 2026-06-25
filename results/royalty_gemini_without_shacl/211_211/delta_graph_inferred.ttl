@@ -1,0 +1,113 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Nadejda_Mikhailovna_of_Torby a :Ancestor,
+        :Woman ;
+    :hasChild data:David_Michael_Mountbatten ;
+    :hasRelation data:David_Michael_Mountbatten,
+        data:George_Mountbatten,
+        data:Louis_of_Battenberg,
+        data:Nadejda_Mikhailovna_of_Torby,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Nadejda_Mikhailovna_of_Torby ;
+    :hasSon data:David_Michael_Mountbatten ;
+    :isAncestorOf data:David_Michael_Mountbatten ;
+    :isAuntOf data:David_Michael_Mountbatten ;
+    :isBloodrelationOf data:Nadejda_Mikhailovna_of_Torby ;
+    :isMotherOf data:David_Michael_Mountbatten ;
+    :isParentOf data:David_Michael_Mountbatten ;
+    :isSiblingOf data:Nadejda_Mikhailovna_of_Torby ;
+    :isSisterOf data:Nadejda_Mikhailovna_of_Torby .
+
+data:Louis_of_Battenberg a :Ancestor,
+        :Man ;
+    :hasBrother data:Louis_of_Battenberg ;
+    :hasChild data:George_Mountbatten ;
+    :hasRelation data:David_Michael_Mountbatten,
+        data:George_Mountbatten,
+        data:Louis_of_Battenberg,
+        data:Nadejda_Mikhailovna_of_Torby,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSon data:George_Mountbatten ;
+    :isAncestorOf data:David_Michael_Mountbatten,
+        data:George_Mountbatten ;
+    :isBloodrelationOf data:Louis_of_Battenberg ;
+    :isBrotherOf data:Louis_of_Battenberg ;
+    :isFatherOf data:George_Mountbatten ;
+    :isParentOf data:George_Mountbatten ;
+    :isSiblingOf data:Louis_of_Battenberg ;
+    :isUncleOf data:George_Mountbatten .
+
+data:Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Woman ;
+    :hasChild data:George_Mountbatten ;
+    :hasRelation data:David_Michael_Mountbatten,
+        data:George_Mountbatten,
+        data:Louis_of_Battenberg,
+        data:Nadejda_Mikhailovna_of_Torby,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSister data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSon data:George_Mountbatten ;
+    :isAncestorOf data:David_Michael_Mountbatten,
+        data:George_Mountbatten ;
+    :isAuntOf data:George_Mountbatten ;
+    :isBloodrelationOf data:Victoria_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:George_Mountbatten ;
+    :isParentOf data:George_Mountbatten ;
+    :isSiblingOf data:Victoria_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Victoria_of_Hesse_and_by_Rhine .
+
+data:David_Michael_Mountbatten a :Man ;
+    :hasAncestor data:George_Mountbatten,
+        data:Louis_of_Battenberg,
+        data:Nadejda_Mikhailovna_of_Torby,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasBirthYear 1919 ;
+    :hasBrother data:David_Michael_Mountbatten ;
+    :hasDeathYear 1970 ;
+    :hasFather data:George_Mountbatten ;
+    :hasMother data:Nadejda_Mikhailovna_of_Torby ;
+    :hasParent data:George_Mountbatten,
+        data:Nadejda_Mikhailovna_of_Torby ;
+    :hasRelation data:David_Michael_Mountbatten,
+        data:George_Mountbatten,
+        data:Louis_of_Battenberg,
+        data:Nadejda_Mikhailovna_of_Torby,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:David_Michael_Mountbatten ;
+    :isBrotherOf data:David_Michael_Mountbatten ;
+    :isChildOf data:George_Mountbatten,
+        data:Nadejda_Mikhailovna_of_Torby ;
+    :isSiblingOf data:David_Michael_Mountbatten ;
+    :isSonOf data:George_Mountbatten,
+        data:Nadejda_Mikhailovna_of_Torby .
+
+data:George_Mountbatten a :Ancestor,
+        :Man ;
+    :hasAncestor data:Louis_of_Battenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:George_Mountbatten ;
+    :hasChild data:David_Michael_Mountbatten ;
+    :hasFather data:Louis_of_Battenberg ;
+    :hasMother data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Louis_of_Battenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:David_Michael_Mountbatten,
+        data:George_Mountbatten,
+        data:Louis_of_Battenberg,
+        data:Nadejda_Mikhailovna_of_Torby,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :hasSon data:David_Michael_Mountbatten ;
+    :isAncestorOf data:David_Michael_Mountbatten ;
+    :isBloodrelationOf data:George_Mountbatten ;
+    :isBrotherOf data:George_Mountbatten ;
+    :isChildOf data:Louis_of_Battenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :isFatherOf data:David_Michael_Mountbatten ;
+    :isParentOf data:David_Michael_Mountbatten ;
+    :isSiblingOf data:George_Mountbatten ;
+    :isSonOf data:Louis_of_Battenberg,
+        data:Victoria_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:David_Michael_Mountbatten .
+

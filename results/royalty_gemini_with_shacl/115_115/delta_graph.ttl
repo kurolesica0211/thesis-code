@@ -2,20 +2,16 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Nina_Nastassja_Flohr a :Woman ;
-    :hasFather data:Thomas_Flohr ;
-    :hasMother data:Katharina_Flohr .
+data:Marina a :Woman ;
+    :hasRelation data:Prince_Michael .
 
-data:Prince_Michael a :Man .
-
-data:Prince_Philippos_of_Greece_and_Denmark a :Man ;
-    :hasBirthYear "1986"^^xsd:int ;
+data:Philippos_of_Greece_and_Denmark a :Man ;
+    :hasBirthYear 1986 ;
     :hasFather data:Constantine_II ;
-    :hasMother data:Anne-Marie .
+    :hasMother data:Anne-Marie ;
+    :hasRelation data:Nina_Nastassja_Flohr .
 
-data:Princess_Marina a :Woman .
-
-data:Queen_Sofia_of_Spain a :Woman .
+data:Sof%C3%ADa_of_Spain a :Woman .
 
 data:Anne-Marie a :Ancestor,
         :Woman .
@@ -25,6 +21,12 @@ data:Constantine_II a :Ancestor,
 
 data:Katharina_Flohr a :Ancestor,
         :Woman .
+
+data:Nina_Nastassja_Flohr a :Woman ;
+    :hasFather data:Thomas_Flohr ;
+    :hasMother data:Katharina_Flohr .
+
+data:Prince_Michael a :Man .
 
 data:Thomas_Flohr a :Ancestor,
         :Man .

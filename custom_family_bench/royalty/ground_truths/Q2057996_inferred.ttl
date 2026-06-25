@@ -1,0 +1,97 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Robert-_Archduke_of_Austria-Este a :Man,
+        :Person ;
+    rdfs:label "Robert, Archduke of Austria-Este"^^xsd:string ;
+    data:posIndicesFull "1138:1170"^^xsd:string ;
+    data:wdtLink wdt:Q112108 ;
+    :alsoKnownAs "Robert Karl Erzherzog von Österreich"^^xsd:string,
+        "Robert Karl Ludwig Maximilian Michael Maria Anton Franz Ferdinand Joseph Otto Hubert Georg Pius Johannes Marcus d'Aviano"^^xsd:string,
+        "Roberto de Habsburgo"^^xsd:string ;
+    :hasBrother data:Robert-_Archduke_of_Austria-Este ;
+    :hasRelation data:Robert-_Archduke_of_Austria-Este ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Robert-_Archduke_of_Austria-Este ;
+    :isBrotherOf data:Robert-_Archduke_of_Austria-Este ;
+    :isSiblingOf data:Robert-_Archduke_of_Austria-Este .
+
+data:Princess_Astrid-_Archduchess_of_Austria-Este a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Astrid, Archduchess of Austria-Este"^^xsd:string ;
+    data:posIndicesFull "37:54"^^xsd:string ;
+    data:posIndicesPart "1009:1016"^^xsd:string,
+        "1017:1021"^^xsd:string,
+        "1187:1195"^^xsd:string,
+        "1235:1243"^^xsd:string,
+        "1244:1250"^^xsd:string,
+        "1303:1309"^^xsd:string,
+        "1407:1415"^^xsd:string,
+        "1513:1521"^^xsd:string,
+        "1599:1607"^^xsd:string,
+        "1608:1614"^^xsd:string,
+        "1836:1844"^^xsd:string,
+        "304:311"^^xsd:string,
+        "312:316"^^xsd:string,
+        "428:436"^^xsd:string,
+        "437:443"^^xsd:string,
+        "601:607"^^xsd:string,
+        "706:714"^^xsd:string,
+        "715:721"^^xsd:string,
+        "918:926"^^xsd:string,
+        "927:933"^^xsd:string,
+        "961:968"^^xsd:string,
+        "969:973"^^xsd:string ;
+    data:wdtLink wdt:Q170194 ;
+    :alsoKnownAs "Astrid of Belgium"^^xsd:string ;
+    :hasChild data:Princess_Luisa_Maria_of_Belgium ;
+    :hasDaughter data:Princess_Luisa_Maria_of_Belgium ;
+    :hasRelation data:Princess_Astrid-_Archduchess_of_Austria-Este,
+        data:Princess_Luisa_Maria_of_Belgium ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :isAncestorOf data:Princess_Luisa_Maria_of_Belgium ;
+    :isAuntOf data:Princess_Luisa_Maria_of_Belgium ;
+    :isBloodrelationOf data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :isMotherOf data:Princess_Luisa_Maria_of_Belgium ;
+    :isParentOf data:Princess_Luisa_Maria_of_Belgium ;
+    :isSiblingOf data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :isSisterOf data:Princess_Astrid-_Archduchess_of_Austria-Este .
+
+data:Princess_Luisa_Maria_of_Belgium a :Person,
+        :Woman ;
+    rdfs:label "Princess Luisa Maria of Belgium"^^xsd:string ;
+    data:wdtLink wdt:Q2057996 ;
+    :alsoKnownAs "Luisa Maria Anna Martine Pilar"^^xsd:string,
+        "Luisa Maria de Belgique, Princesse de Belgique"^^xsd:string,
+        "Luisa Maria van België"^^xsd:string ;
+    :hasAncestor data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasMother data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasParent data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasRelation data:Princess_Astrid-_Archduchess_of_Austria-Este,
+        data:Princess_Luisa_Maria_of_Belgium ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Luisa_Maria_of_Belgium ;
+    :isBloodrelationOf data:Princess_Luisa_Maria_of_Belgium ;
+    :isChildOf data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :isDaughterOf data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :isSiblingOf data:Princess_Luisa_Maria_of_Belgium ;
+    :isSisterOf data:Princess_Luisa_Maria_of_Belgium .
+

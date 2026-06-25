@@ -7,10 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Armgard_of_Sierstorpff-Cramm a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Armgard_of_Sierstorpff-Cramm a :Person ;
     rdfs:label "Armgard of Sierstorpff-Cramm" ;
     data:posIndicesFull "6918:6946" ;
     data:posIndicesPart "6986:6993" ;
@@ -23,9 +20,39 @@ data:Armgard_of_Sierstorpff-Cramm a :Ancestor,
         "Princess Bernhard of Lippe-Biesterfeld" ;
     :hasSex data:female .
 
-data:Prince_Hugo_de_Bourbon_de_Parme a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Beatrix_of_the_Netherlands a :Person ;
+    rdfs:label "Beatrix of the Netherlands" ;
+    data:posIndicesFull "496:531",
+        "505:531" ;
+    data:posIndicesPart "1009:1020",
+        "1548:1559",
+        "3472:3483",
+        "3907:3918",
+        "3949:3960",
+        "4366:4377",
+        "4533:4544",
+        "5000:5011",
+        "6330:6337",
+        "640:651",
+        "7265:7276",
+        "7458:7469",
+        "814:825",
+        "8798:8809",
+        "9177:9188",
+        "9291:9302" ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
+        "Beatrix Wilhelmina Armgard",
+        "Beatrix der Nederlanden",
+        "Beatrix of Orange",
+        "Beatrix van Oranje",
+        "Princess Beatrix of Orange-Nassau",
+        "Princess Beatrix of the Netherlands",
+        "Queen Beatrix" ;
+    :hasParent data:Juliana_of_the_Netherlands ;
+    :hasSex data:female .
+
+data:Prince_Hugo_de_Bourbon_de_Parme a :Person ;
     rdfs:label "Prince Hugo de Bourbon de Parme" ;
     data:posIndicesFull "220:231",
         "2588:2599",
@@ -57,57 +84,7 @@ data:Prince_Hugo_de_Bourbon_de_Parme a :Man,
         "Prince Carlos Hugo Roderik Sybren de Bourbon de Parme" ;
     :hasSex data:male .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Beatrix_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Beatrix of the Netherlands" ;
-    data:posIndicesFull "496:531",
-        "505:531" ;
-    data:posIndicesPart "1009:1020",
-        "1548:1559",
-        "3472:3483",
-        "3907:3918",
-        "3949:3960",
-        "4366:4377",
-        "4533:4544",
-        "5000:5011",
-        "6330:6337",
-        "640:651",
-        "7265:7276",
-        "7458:7469",
-        "814:825",
-        "8798:8809",
-        "9177:9188",
-        "9291:9302" ;
-    data:wdtLink wdt:Q29574 ;
-    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
-        "Beatrix Wilhelmina Armgard",
-        "Beatrix der Nederlanden",
-        "Beatrix of Orange",
-        "Beatrix van Oranje",
-        "Princess Beatrix of Orange-Nassau",
-        "Princess Beatrix of the Netherlands",
-        "Queen Beatrix" ;
-    :hasMother data:Juliana_of_the_Netherlands ;
-    :hasParent data:Juliana_of_the_Netherlands ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Irene_of_the_Netherlands ;
-    :isChildOf data:Juliana_of_the_Netherlands ;
-    :isDaughterOf data:Juliana_of_the_Netherlands ;
-    :isSiblingOf data:Princess_Irene_of_the_Netherlands ;
-    :isSisterOf data:Princess_Irene_of_the_Netherlands .
-
-data:Princess_Irene_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Irene_of_the_Netherlands a :Person ;
     rdfs:label "Princess Irene of the Netherlands" ;
     data:posIndicesFull "0:33",
         "10085:10118",
@@ -197,19 +174,18 @@ data:Princess_Irene_of_the_Netherlands a :Ancestor,
         "Irene of the Netherlands",
         "Irene van Oranje",
         "Princess Irene Emma Elisabeth of the Netherlands" ;
-    :hasMother data:Juliana_of_the_Netherlands ;
     :hasParent data:Juliana_of_the_Netherlands ;
-    :hasSex data:female ;
-    :hasSister data:Beatrix_of_the_Netherlands ;
-    :isChildOf data:Juliana_of_the_Netherlands ;
-    :isDaughterOf data:Juliana_of_the_Netherlands ;
-    :isSiblingOf data:Beatrix_of_the_Netherlands ;
-    :isSisterOf data:Beatrix_of_the_Netherlands .
+    :hasSex data:female .
 
-data:Juliana_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Juliana_of_the_Netherlands a :Person ;
     rdfs:label "Juliana of the Netherlands" ;
     data:posIndicesFull "100:113",
         "100:132",
@@ -246,13 +222,7 @@ data:Juliana_of_the_Netherlands a :Ancestor,
         "Queen Juliana",
         "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
         "Queen Juliana of the Netherlands" ;
-    :hasChild data:Beatrix_of_the_Netherlands,
-        data:Princess_Irene_of_the_Netherlands ;
-    :hasDaughter data:Beatrix_of_the_Netherlands,
-        data:Princess_Irene_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isMotherOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Irene_of_the_Netherlands ;
-    :isParentOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Irene_of_the_Netherlands .
+    :hasSex data:female .
+
+data:female a :Female .
 

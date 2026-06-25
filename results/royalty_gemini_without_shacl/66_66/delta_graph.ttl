@@ -2,59 +2,66 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Lady_Pamela_Hicks a :Person,
-        :Woman ;
-    :isDaughterOf data:Louis_Mountbatten .
-
-data:Patricia_Knatchbull a :Person,
-        :Woman ;
-    :isDaughterOf data:Louis_Mountbatten .
-
-data:Edwina_Ashley a :Person,
-        :Woman .
-
-data:Julia_Princess_of_Battenberg a :Person,
-        :Woman .
-
-data:Louis_IV_Grand_Duke_of_Hesse a :Man,
-        :Person .
-
-data:Prince_Alexander_of_Hesse a :Man,
-        :Person .
-
-data:Prince_George_of_Battenberg a :Man,
-        :Person .
-
-data:Prince_Louis_of_Battenberg_Sr a :Man,
+data:LouisMountbatten a :Man,
         :Person ;
-    :hasFather data:Prince_Alexander_of_Hesse ;
-    :hasMother data:Julia_Princess_of_Battenberg .
-
-data:Princess_Alice_of_Battenberg a :Person,
-        :Woman .
-
-data:Princess_Alice_of_the_United_Kingdom a :Person,
-        :Woman .
-
-data:Princess_Louise_of_Battenberg a :Person,
-        :Woman .
-
-data:Princess_Victoria_of_Hesse a :Person,
-        :Woman ;
-    :hasFather data:Louis_IV_Grand_Duke_of_Hesse ;
-    :hasMother data:Princess_Alice_of_the_United_Kingdom .
-
-data:Louis_Mountbatten a :Man,
-        :Person ;
-    :formerlyKnownAs "Prince Louis of Battenberg"^^xsd:string ;
     :hasBirthYear 1900 ;
-    :hasBrother data:Prince_George_of_Battenberg ;
+    :hasDaughter data:LadyPamelaHicks,
+        data:PatriciaKnatchbull ;
     :hasDeathYear 1979 ;
-    :hasFather data:Prince_Louis_of_Battenberg_Sr ;
+    :hasFather data:PrinceLouisOfBattenberg ;
     :hasMarriageYear 1922 ;
-    :hasMother data:Princess_Victoria_of_Hesse ;
-    :hasRelation data:Edwina_Ashley ;
-    :hasSister data:Princess_Alice_of_Battenberg,
-        data:Princess_Louise_of_Battenberg ;
-    :knownAs "Lord Mountbatten"^^xsd:string .
+    :hasMother data:PrincessVictoriaOfHesse ;
+    :isSiblingOf data:PrinceGeorgeOfBattenberg,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessLouiseOfBattenberg .
+
+data:JuliaPrincessOfBattenberg a :Person,
+        :Woman .
+
+data:LadyPamelaHicks a :Person,
+        :Woman ;
+    :hasMother data:EdwinaAshley .
+
+data:LouisIVGrandDukeOfHesse a :Man,
+        :Person .
+
+data:PatriciaKnatchbull a :Person,
+        :Woman ;
+    :hasMother data:EdwinaAshley .
+
+data:PrinceAlbertOfSaxeCoburgAndGotha a :Man,
+        :Person .
+
+data:PrinceAlexanderOfHesseAndByRhine a :Man,
+        :Person .
+
+data:PrinceGeorgeOfBattenberg a :Man,
+        :Person .
+
+data:PrinceLouisOfBattenberg a :Man,
+        :Person ;
+    :hasFather data:PrinceAlexanderOfHesseAndByRhine ;
+    :hasMother data:JuliaPrincessOfBattenberg .
+
+data:PrincessAliceOfBattenberg a :Person,
+        :Woman .
+
+data:PrincessAliceOfTheUnitedKingdom a :Person,
+        :Woman ;
+    :hasFather data:PrinceAlbertOfSaxeCoburgAndGotha ;
+    :hasMother data:QueenVictoria .
+
+data:PrincessLouiseOfBattenberg a :Person,
+        :Woman .
+
+data:PrincessVictoriaOfHesse a :Person,
+        :Woman ;
+    :hasFather data:LouisIVGrandDukeOfHesse ;
+    :hasMother data:PrincessAliceOfTheUnitedKingdom .
+
+data:QueenVictoria a :Person,
+        :Woman .
+
+data:EdwinaAshley a :Person,
+        :Woman .
 

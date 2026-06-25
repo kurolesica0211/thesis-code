@@ -2,34 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elizabeth_II a :Person,
-        :Woman .
-
-data:George_Alexander_Louis a :Man,
+data:Prince_George_of_Wales a :Man,
         :Person ;
+    :hasAncestor data:Queen_Elizabeth_II ;
     :hasBirthYear 2013 ;
-    :hasBrother data:Louis ;
+    :hasBrother data:Prince_Louis ;
     :hasFather data:William_Prince_of_Wales ;
     :hasMother data:Catherine_Princess_of_Wales ;
-    :hasSister data:Charlotte .
+    :hasSister data:Princess_Charlotte .
 
 data:Catherine_Princess_of_Wales a :Person,
-        :Woman .
-
-data:Charles_III a :Man,
-        :Person .
-
-data:Charlotte a :Person,
         :Woman .
 
 data:Diana_Princess_of_Wales a :Person,
         :Woman .
 
-data:Louis a :Man,
+data:King_Charles_III a :Man,
         :Person .
+
+data:Prince_Louis a :Man,
+        :Person .
+
+data:Princess_Charlotte a :Person,
+        :Woman .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
 
 data:William_Prince_of_Wales a :Man,
         :Person ;
-    :hasFather data:Charles_III ;
+    :hasFather data:King_Charles_III ;
     :hasMother data:Diana_Princess_of_Wales .
 

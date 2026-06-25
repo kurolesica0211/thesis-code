@@ -7,91 +7,12 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Prince_Constantijn_of_the_Netherlands a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Constantijn of the Netherlands" ;
-    data:posIndicesFull "1040:1077",
-        "1047:1077" ;
-    data:posIndicesPart "1375:1386" ;
-    data:wdtLink wdt:Q355254 ;
-    :alsoKnownAs "Constantijn Christof Frederik Aschwin of the Netherlands",
-        "Constantijn of the Netherlands",
-        "Constantijn van Oranje-Nassau",
-        "Prince Constantijn Christof Frederik Aschwin of the Netherlands",
-        "Prince Constantijn Christof Frederik Aschwin of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg" ;
-    :hasSex data:male .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Armgard_of_Sierstorpff-Cramm a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Armgard of Sierstorpff-Cramm" ;
-    data:posIndicesFull "209:245",
-        "334:371",
-        "343:371" ;
-    data:wdtLink wdt:Q2802589 ;
-    :alsoKnownAs "Armgard Kunigunde Alharda Agnes Oda von Cramm",
-        "Armgard von Cramm",
-        "Baroness Armgard of Sierstorpff-Cramm",
-        "Baroness Armgard von Cramm",
-        "Countess Bodo von Oeynhausen",
-        "Princess Bernhard of Lippe-Biesterfeld" ;
-    :hasChild data:Prince_Aschwin_of_Lippe-Biesterfeld,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Aschwin_of_Lippe-Biesterfeld,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isMotherOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isParentOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld .
-
-data:Prince_Bernhard_of_Lippe a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Bernhard of Lippe" ;
-    data:posIndicesFull "209:233",
-        "216:245",
-        "305:329" ;
-    data:posIndicesPart "1005:1011",
-        "1098:1104",
-        "1152:1160",
-        "1286:1294",
-        "1451:1456",
-        "459:467",
-        "745:751" ;
-    data:wdtLink wdt:Q649601 ;
-    :alsoKnownAs "Bernhard Prinz zur Lippe",
-        "Bernhard of Lippe-Biesterfeld",
-        "Bernhard zur Lippe",
-        "Prince Bernhard of Lippe (1872–1934)",
-        "Prince Bernhard of Lippe-Biesterfeld (1872–1934)" ;
-    :hasChild data:Prince_Aschwin_of_Lippe-Biesterfeld,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Aschwin_of_Lippe-Biesterfeld,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isFatherOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isParentOf data:Prince_Aschwin_of_Lippe-Biesterfeld,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld .
-
-data:Prince_Aschwin_of_Lippe-Biesterfeld a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Aschwin_of_Lippe-Biesterfeld a :Person ;
     rdfs:label "Prince Aschwin of Lippe-Biesterfeld" ;
     data:posIndicesFull "0:35" ;
     data:posIndicesPart "1005:1011",
         "1012:1019",
+        "1040:1046",
         "1098:1104",
         "1105:1112",
         "1305:1312",
@@ -107,27 +28,16 @@ data:Prince_Aschwin_of_Lippe-Biesterfeld a :Man,
     data:wdtLink wdt:Q2336212 ;
     :alsoKnownAs "Aschwin Prinz zur Lippe-Biesterfeld",
         "Ernst Aschwin Zur Lippe-Biesterfeld" ;
-    :hasBrother data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasFather data:Prince_Bernhard_of_Lippe ;
-    :hasMother data:Armgard_of_Sierstorpff-Cramm ;
     :hasParent data:Armgard_of_Sierstorpff-Cramm,
         data:Prince_Bernhard_of_Lippe ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isChildOf data:Armgard_of_Sierstorpff-Cramm,
-        data:Prince_Bernhard_of_Lippe ;
-    :isSiblingOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isSonOf data:Armgard_of_Sierstorpff-Cramm,
-        data:Prince_Bernhard_of_Lippe .
+    :hasSex data:male .
 
-data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Person ;
     rdfs:label "Prince Bernhard of Lippe-Biesterfeld" ;
     data:posIndicesFull "209:245",
         "216:245" ;
     data:posIndicesPart "1005:1011",
+        "1040:1046",
         "1098:1104",
         "1152:1160",
         "1286:1294",
@@ -144,16 +54,52 @@ data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
         "Prince Bernhard of the Netherlands",
         "Prince Bernhard, Prince Consort of the Netherlands",
         "Z.K.H. Prins Bernhard" ;
-    :hasBrother data:Prince_Aschwin_of_Lippe-Biesterfeld ;
-    :hasFather data:Prince_Bernhard_of_Lippe ;
-    :hasMother data:Armgard_of_Sierstorpff-Cramm ;
     :hasParent data:Armgard_of_Sierstorpff-Cramm,
         data:Prince_Bernhard_of_Lippe ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Aschwin_of_Lippe-Biesterfeld ;
-    :isChildOf data:Armgard_of_Sierstorpff-Cramm,
-        data:Prince_Bernhard_of_Lippe ;
-    :isSiblingOf data:Prince_Aschwin_of_Lippe-Biesterfeld ;
-    :isSonOf data:Armgard_of_Sierstorpff-Cramm,
-        data:Prince_Bernhard_of_Lippe .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Armgard_of_Sierstorpff-Cramm a :Person ;
+    rdfs:label "Armgard of Sierstorpff-Cramm" ;
+    data:posIndicesFull "209:245",
+        "334:371",
+        "343:371" ;
+    data:wdtLink wdt:Q2802589 ;
+    :alsoKnownAs "Armgard Kunigunde Alharda Agnes Oda von Cramm",
+        "Armgard von Cramm",
+        "Baroness Armgard of Sierstorpff-Cramm",
+        "Baroness Armgard von Cramm",
+        "Countess Bodo von Oeynhausen",
+        "Princess Bernhard of Lippe-Biesterfeld" ;
+    :hasSex data:female .
+
+data:Prince_Bernhard_of_Lippe a :Person ;
+    rdfs:label "Prince Bernhard of Lippe" ;
+    data:posIndicesFull "209:233",
+        "216:245",
+        "305:329" ;
+    data:posIndicesPart "1005:1011",
+        "1040:1046",
+        "1098:1104",
+        "1152:1160",
+        "1286:1294",
+        "1451:1456",
+        "459:467",
+        "745:751" ;
+    data:wdtLink wdt:Q649601 ;
+    :alsoKnownAs "Bernhard Prinz zur Lippe",
+        "Bernhard of Lippe-Biesterfeld",
+        "Bernhard zur Lippe",
+        "Prince Bernhard of Lippe (1872–1934)",
+        "Prince Bernhard of Lippe-Biesterfeld (1872–1934)" ;
+    :hasSex data:male .
+
+data:male a :Male .
 

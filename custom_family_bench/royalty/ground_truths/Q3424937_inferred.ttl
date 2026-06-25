@@ -1,0 +1,200 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Prince_Tomislav_of_Yugoslavia a :Man,
+        :Person ;
+    rdfs:label "Prince Tomislav of Yugoslavia"^^xsd:string ;
+    data:posIndicesFull "1784:1813"^^xsd:string,
+        "1791:1813"^^xsd:string ;
+    data:posIndicesPart "2374:2380"^^xsd:string,
+        "2384:2394"^^xsd:string ;
+    data:wdtLink wdt:Q594386 ;
+    :alsoKnownAs "Tomislav of Yugoslavia"^^xsd:string ;
+    :hasBrother data:Prince_Tomislav_of_Yugoslavia ;
+    :hasRelation data:Prince_Tomislav_of_Yugoslavia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isSiblingOf data:Prince_Tomislav_of_Yugoslavia .
+
+data:Princess_Margarita_of_Baden a :Person,
+        :Woman ;
+    rdfs:label "Princess Margarita of Baden"^^xsd:string ;
+    data:posIndicesFull "0:27"^^xsd:string ;
+    data:posIndicesPart "1041:1050"^^xsd:string,
+        "1138:1147"^^xsd:string,
+        "1392:1401"^^xsd:string,
+        "1485:1494"^^xsd:string,
+        "1766:1775"^^xsd:string,
+        "2091:2100"^^xsd:string,
+        "2205:2214"^^xsd:string,
+        "2421:2430"^^xsd:string,
+        "2485:2490"^^xsd:string,
+        "372:381"^^xsd:string,
+        "521:526"^^xsd:string,
+        "664:673"^^xsd:string,
+        "876:884"^^xsd:string,
+        "908:916"^^xsd:string,
+        "981:990"^^xsd:string ;
+    data:wdtLink wdt:Q3424937 ;
+    :alsoKnownAs "Margarita Prinzessin von Baden"^^xsd:string,
+        "Margarita von Baden"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasMother data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasParent data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasRelation data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margarita_of_Baden ;
+    :isBloodrelationOf data:Princess_Margarita_of_Baden ;
+    :isChildOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isDaughterOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isSiblingOf data:Princess_Margarita_of_Baden ;
+    :isSisterOf data:Princess_Margarita_of_Baden .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Man,
+        :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "1972:1985"^^xsd:string,
+        "1972:2004"^^xsd:string,
+        "326:339"^^xsd:string,
+        "326:358"^^xsd:string,
+        "630:643"^^xsd:string,
+        "630:662"^^xsd:string ;
+    data:posIndicesPart "1001:1007"^^xsd:string,
+        "1086:1092"^^xsd:string,
+        "1235:1241"^^xsd:string,
+        "1470:1476"^^xsd:string,
+        "2295:2299"^^xsd:string,
+        "2303:2312"^^xsd:string,
+        "2374:2380"^^xsd:string ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip"^^xsd:string,
+        "H.R.H. The Duke Of Edinburgh"^^xsd:string,
+        "Lieutenant Philip Mountbatten"^^xsd:string,
+        "Philip Edinburgh"^^xsd:string,
+        "Philip Mountbatten"^^xsd:string,
+        "Philip Mountbatten; Prince Philip of Greece and Denmark"^^xsd:string,
+        "Philip of Greece and Denmark"^^xsd:string,
+        "Prince Philip"^^xsd:string,
+        "Prince Philip of Greece and Denmark"^^xsd:string,
+        "The Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isBrotherOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isSonOf data:Princess_Alice_of_Battenberg ;
+    :isUncleOf data:Princess_Margarita_of_Baden .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "366:370"^^xsd:string,
+        "39:44"^^xsd:string,
+        "751:755"^^xsd:string ;
+    data:posIndicesPart "876:884"^^xsd:string,
+        "908:916"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasDaughter data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasRelation data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Princess_Theodora_of_Greece_and_Denmark_1 a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Theodora of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "176:215"^^xsd:string,
+        "573:612"^^xsd:string ;
+    data:posIndicesPart "1599:1605"^^xsd:string,
+        "2334:2340"^^xsd:string,
+        "876:884"^^xsd:string,
+        "908:916"^^xsd:string ;
+    data:wdtLink wdt:Q255382 ;
+    :alsoKnownAs "Princess Theodora, Margravine of Baden"^^xsd:string,
+        "Theodora, Margravine of Baden"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasChild data:Princess_Margarita_of_Baden ;
+    :hasDaughter data:Princess_Margarita_of_Baden ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isAncestorOf data:Princess_Margarita_of_Baden ;
+    :isAuntOf data:Princess_Margarita_of_Baden ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Princess_Margarita_of_Baden ;
+    :isParentOf data:Princess_Margarita_of_Baden ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isSisterOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 .
+

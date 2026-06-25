@@ -85,29 +85,26 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Woizlawa Feodora Princess Reuss (née Duchess of Mecklenburg-Schwerin, 17 December 1918 – 3 June 2019) was a member of the German nobility, by birth of the House of Mecklenburg-Schwerin.
-Early life and ancestry
+Princess Louise Françoise Marie Laure of Orléans (24 February 1882 – 18 April 1958) was a Princess of the Two-Sicilies and paternal great grandmother of King Felipe VI of Spain.
+Her mother was Princess Marie Isabelle d'Orléans, daughter of Antoine, Duke of Montpensier, and Infanta Luisa Fernanda of Spain.
+Marriage and issue
 
-Duchess Woizlawa Feodore Elise Marie Elisabeth of Mecklenburg-Schwerin was born at Rostock, Free State of Mecklenburg-Schwerin on 17 December 1918, just after the abdication of her first cousin Frederick Francis IV of the Grand Duchy of Mecklenburg-Schwerin, after the November Revolution, the expulsion of Kaiser Wilhelm II, and the proclamation of the Republic on 9 November 1918.
-Her father was the seventh son of Frederick Francis II, Grand Duke of Mecklenburg-Schwerin (1823–1883) by his third wife Princess Marie of Schwarzburg-Rudolstadt (1850–1922).
-Her mother was Viktoria Feodora Reuss zu Schleiz (1889–1918), the eldest child of Heinrich XXVII, Prince of Reuss zu Schleiz, regent of Principality of Reuss-Greiz and Princess Elise of Hohenlohe-Langenburg, granddaughter of Princess Feodora of Leiningen, half-sister of Queen Victoria.
-She was a first cousin of:
+On 16 November 1907, Louise married in Wood Norton, Worcestershire, UK, Infante Carlos, Prince of Bourbon-Two Sicilies, and widower of María de las Mercedes, Princess of Asturias.
+The couple lived in Madrid and had four children:
 
 
-Juliana's wedding
+Later life
 
-Preparations for the wedding of Queen Wilhelmina of the Netherlands' only child Crown Princess Juliana to the German Prince Bernhard of Lippe-Biesterfeld were underway in 1937 when a diplomatic scandal occurred.
-As a result, Juliana's chosen bridesmaids were either her relatives or relatives of her groom.
-These included Woizlawa herself (being first cousins), Duchess Thyra of Mecklenburg-Schwerin (her second cousin), Grand Duchess Kira Kirillovna of Russia (her first cousin once removed), Princess Sophie of Saxe-Weimar-Eisenach (her second cousin), and two of Bernhard's first cousins, Princess Sieglinde and Princess Elisabeth of Lippe.
-Marriage and family
-
-On 15 September 1939, she married in Bad Doberan to her distant relative Heinrich I Prinz Reuss (1910−1982), the eldest son of Prince Heinrich XXXIV Reuss of Schleiz (1887-1956) and his wife and cousin, Princess Sophie Renata Reuss of Köstritz (1884-1968).
+In 1931, when the Second Spanish Republic was proclaimed, the family left Spain for Italy and later Switzerland.
+In 1939, after the victory of Francisco Franco in the Spanish Civil War, they returned to Spain and settled in Seville.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -123,39 +120,9 @@ On 15 September 1939, she married in Bad Doberan to her distant relative Heinric
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -170,6 +137,23 @@ On 15 September 1939, she married in Bad Doberan to her distant relative Heinric
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -187,6 +171,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -254,29 +253,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -285,6 +276,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -297,6 +296,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -305,17 +306,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -343,6 +346,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -358,313 +445,120 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (43cbfda9-99ef-4554-9b37-e8bb6aabacb9)
- Call ID: 43cbfda9-99ef-4554-9b37-e8bb6aabacb9
+  AssignClass (00bc86b8-f171-4cb8-bba6-c25ea3bf33b0)
+ Call ID: 00bc86b8-f171-4cb8-bba6-c25ea3bf33b0
   Args:
+    source: Louise_of_Orleans
     type: :Woman
-    source: Woizlawa_Feodora_Princess_Reuss
-  AssignClass (46f65ab5-6f68-42aa-b25c-f7bc0fb0da9b)
- Call ID: 46f65ab5-6f68-42aa-b25c-f7bc0fb0da9b
+  AssignClass (7b56af06-93fe-460d-9859-adf35aa531ba)
+ Call ID: 7b56af06-93fe-460d-9859-adf35aa531ba
   Args:
+    source: Louise_of_Orleans
     type: :Person
-    source: Woizlawa_Feodora_Princess_Reuss
-  AddLiteral (4915f5bd-c131-41a0-a9a5-4930ba97bd57)
- Call ID: 4915f5bd-c131-41a0-a9a5-4930ba97bd57
+  AddLiteral (12c3882c-d954-4782-a8cf-f5356346e6c1)
+ Call ID: 12c3882c-d954-4782-a8cf-f5356346e6c1
   Args:
-    source: Woizlawa_Feodora_Princess_Reuss
+    source: Louise_of_Orleans
     relation: :hasBirthYear
+    literal_value: 1882
     literal_type: xsd:integer
-    literal_value: 1918
-  AddLiteral (af04855f-1d29-43f5-a8c9-0ebda34edd3e)
- Call ID: af04855f-1d29-43f5-a8c9-0ebda34edd3e
+  AddLiteral (546cd0b1-b477-4447-8af3-24ee4def0120)
+ Call ID: 546cd0b1-b477-4447-8af3-24ee4def0120
   Args:
-    source: Woizlawa_Feodora_Princess_Reuss
+    literal_value: 1958
+    literal_type: xsd:integer
+    source: Louise_of_Orleans
     relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 2019
-  AssignClass (b73b8b05-9797-426d-ac16-5cd30082c064)
- Call ID: b73b8b05-9797-426d-ac16-5cd30082c064
+  AssignClass (fe373a25-d698-4711-8b07-e83fcc5e37bf)
+ Call ID: fe373a25-d698-4711-8b07-e83fcc5e37bf
   Args:
-    type: :Man
-    source: Frederick_Francis_II_Grand_Duke_of_Mecklenburg-Schwerin
-  AssignClass (7462b7c6-abfa-4287-b375-785493a30d3c)
- Call ID: 7462b7c6-abfa-4287-b375-785493a30d3c
-  Args:
-    type: :Ancestor
-    source: Frederick_Francis_II_Grand_Duke_of_Mecklenburg-Schwerin
-  AddLiteral (ee9498b1-539b-491a-8983-71195d4e3a3a)
- Call ID: ee9498b1-539b-491a-8983-71195d4e3a3a
-  Args:
-    source: Frederick_Francis_II_Grand_Duke_of_Mecklenburg-Schwerin
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1823
-  AddLiteral (763ef4bc-e621-43bf-9945-a49a4c595ef1)
- Call ID: 763ef4bc-e621-43bf-9945-a49a4c595ef1
-  Args:
-    literal_value: 1883
-    literal_type: xsd:integer
-    source: Frederick_Francis_II_Grand_Duke_of_Mecklenburg-Schwerin
-    relation: :hasDeathYear
-  AssignClass (b85e18bf-5f6a-4010-a9ae-020ab949d754)
- Call ID: b85e18bf-5f6a-4010-a9ae-020ab949d754
-  Args:
+    source: Marie_Isabelle_dOrleans
     type: :Woman
-    source: Princess_Marie_of_Schwarzburg-Rudolstadt
-  AssignClass (5754fb07-9d8d-4957-8125-15ee26951731)
- Call ID: 5754fb07-9d8d-4957-8125-15ee26951731
+  AssignClass (b57943d0-79e9-4a32-932c-05bb32810a46)
+ Call ID: b57943d0-79e9-4a32-932c-05bb32810a46
   Args:
-    type: :Ancestor
-    source: Princess_Marie_of_Schwarzburg-Rudolstadt
-  AddLiteral (0a9a068c-61d8-492d-af12-2d5272da0f26)
- Call ID: 0a9a068c-61d8-492d-af12-2d5272da0f26
-  Args:
-    literal_value: 1850
-    source: Princess_Marie_of_Schwarzburg-Rudolstadt
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (164aff3e-6c93-48ef-b8ec-ab99154ca79d)
- Call ID: 164aff3e-6c93-48ef-b8ec-ab99154ca79d
-  Args:
-    literal_value: 1922
-    source: Princess_Marie_of_Schwarzburg-Rudolstadt
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AssignClass (1ae65380-e46f-47a2-a7c2-3ba9992a7013)
- Call ID: 1ae65380-e46f-47a2-a7c2-3ba9992a7013
-  Args:
-    type: :Woman
-    source: Viktoria_Feodora_Reuss_zu_Schleiz
-  AssignClass (dfe38584-4e4e-44eb-ae77-52e0cea238b3)
- Call ID: dfe38584-4e4e-44eb-ae77-52e0cea238b3
-  Args:
-    type: :Ancestor
-    source: Viktoria_Feodora_Reuss_zu_Schleiz
-  AddLiteral (18a60d24-98bc-4779-b528-6ffe57ef4f5c)
- Call ID: 18a60d24-98bc-4779-b528-6ffe57ef4f5c
-  Args:
-    source: Viktoria_Feodora_Reuss_zu_Schleiz
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1889
-  AddLiteral (d04f4a41-8bf1-4632-a91c-4f962f4e81da)
- Call ID: d04f4a41-8bf1-4632-a91c-4f962f4e81da
-  Args:
-    source: Viktoria_Feodora_Reuss_zu_Schleiz
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1918
-  AssignClass (5467fe0b-1256-4fd3-ae72-5c79773f8f1b)
- Call ID: 5467fe0b-1256-4fd3-ae72-5c79773f8f1b
-  Args:
-    type: :Man
-    source: Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz
-  AssignClass (1577f9c8-d633-43fc-a3ce-5ddb838b4be8)
- Call ID: 1577f9c8-d633-43fc-a3ce-5ddb838b4be8
-  Args:
-    type: :Ancestor
-    source: Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz
-  AssignClass (e83d263d-17ff-4d65-a330-5b2e058e86a2)
- Call ID: e83d263d-17ff-4d65-a330-5b2e058e86a2
-  Args:
-    type: :Woman
-    source: Princess_Elise_of_Hohenlohe-Langenburg
-  AssignClass (9bda6c9e-f283-4e5e-8426-3f6fe67acebb)
- Call ID: 9bda6c9e-f283-4e5e-8426-3f6fe67acebb
-  Args:
-    type: :Ancestor
-    source: Princess_Elise_of_Hohenlohe-Langenburg
-  AssignClass (d56f12ee-5c72-4322-a98c-a7e7327ecc49)
- Call ID: d56f12ee-5c72-4322-a98c-a7e7327ecc49
-  Args:
-    type: :Man
-    source: Heinrich_I_Prinz_Reuss
-  AssignClass (5489904d-0ab7-4f55-874d-126f195dc963)
- Call ID: 5489904d-0ab7-4f55-874d-126f195dc963
-  Args:
+    source: Marie_Isabelle_dOrleans
     type: :Person
-    source: Heinrich_I_Prinz_Reuss
-  AddLiteral (17a59200-5dd8-44a0-b405-74f5281b5daf)
- Call ID: 17a59200-5dd8-44a0-b405-74f5281b5daf
+  AddTriple (2ab101b8-d1e1-48a7-8cfb-c188ce86ce40)
+ Call ID: 2ab101b8-d1e1-48a7-8cfb-c188ce86ce40
   Args:
-    literal_value: 1910
-    literal_type: xsd:integer
-    source: Heinrich_I_Prinz_Reuss
-    relation: :hasBirthYear
-  AddLiteral (0c0682cd-a996-4c8a-ac4c-8266eef5acdd)
- Call ID: 0c0682cd-a996-4c8a-ac4c-8266eef5acdd
+    source: Louise_of_Orleans
+    relation: :hasMother
+    target: Marie_Isabelle_dOrleans
+  AssignClass (6353d911-1470-46f3-b895-825304b76f3f)
+ Call ID: 6353d911-1470-46f3-b895-825304b76f3f
   Args:
-    literal_type: xsd:integer
-    source: Heinrich_I_Prinz_Reuss
-    relation: :hasDeathYear
-    literal_value: 1982
-  AssignClass (70e1e658-240c-460a-9c20-c59363f25a9e)
- Call ID: 70e1e658-240c-460a-9c20-c59363f25a9e
-  Args:
+    source: Antoine_Duke_of_Montpensier
     type: :Man
-    source: Prince_Heinrich_XXXIV_Reuss_of_Schleiz
-  AssignClass (7228a00b-ebf8-46b3-9f7b-474b80d8628d)
- Call ID: 7228a00b-ebf8-46b3-9f7b-474b80d8628d
+  AssignClass (a823dd2a-4436-4952-8433-06be49582002)
+ Call ID: a823dd2a-4436-4952-8433-06be49582002
   Args:
-    type: :Ancestor
-    source: Prince_Heinrich_XXXIV_Reuss_of_Schleiz
-  AddLiteral (ab592099-456a-43c4-a323-ba2890a663ae)
- Call ID: ab592099-456a-43c4-a323-ba2890a663ae
+    source: Antoine_Duke_of_Montpensier
+    type: :Person
+  AssignClass (0ff8e2bc-ce8f-459c-953a-b46a65d60e02)
+ Call ID: 0ff8e2bc-ce8f-459c-953a-b46a65d60e02
   Args:
-    literal_value: 1887
-    literal_type: xsd:integer
-    source: Prince_Heinrich_XXXIV_Reuss_of_Schleiz
-    relation: :hasBirthYear
-  AddLiteral (946cafe3-ed7c-457f-b152-f66e21b540db)
- Call ID: 946cafe3-ed7c-457f-b152-f66e21b540db
-  Args:
-    literal_value: 1956
-    source: Prince_Heinrich_XXXIV_Reuss_of_Schleiz
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AssignClass (d08a4f3b-efb1-47a2-a489-56e04d2b21f9)
- Call ID: d08a4f3b-efb1-47a2-a489-56e04d2b21f9
-  Args:
+    source: Luisa_Fernanda_of_Spain
     type: :Woman
-    source: Princess_Sophie_Renata_Reuss_of_Köstritz
-  AssignClass (253af67a-be4a-4ef3-9030-4e999cf4354d)
- Call ID: 253af67a-be4a-4ef3-9030-4e999cf4354d
+  AssignClass (2c4c0acf-95e1-4040-a4a7-cb4d5dd6e8d0)
+ Call ID: 2c4c0acf-95e1-4040-a4a7-cb4d5dd6e8d0
   Args:
-    type: :Ancestor
-    source: Princess_Sophie_Renata_Reuss_of_Köstritz
-  AddLiteral (de381b0c-8923-42a7-bc59-bcf29b95812f)
- Call ID: de381b0c-8923-42a7-bc59-bcf29b95812f
+    source: Luisa_Fernanda_of_Spain
+    type: :Person
+  AddTriple (c4ea1da8-f79d-4260-801c-4260feb2e4d5)
+ Call ID: c4ea1da8-f79d-4260-801c-4260feb2e4d5
   Args:
-    literal_value: 1884
-    source: Princess_Sophie_Renata_Reuss_of_Köstritz
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (b34820d2-4db2-4763-b220-4b16c71f30a8)
- Call ID: b34820d2-4db2-4763-b220-4b16c71f30a8
-  Args:
-    source: Princess_Sophie_Renata_Reuss_of_Köstritz
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1968
-  AddTriple (863bc506-d644-4452-a898-ee5c54df96cb)
- Call ID: 863bc506-d644-4452-a898-ee5c54df96cb
-  Args:
-    source: Woizlawa_Feodora_Princess_Reuss
-    relation: :hasMother
-    target: Viktoria_Feodora_Reuss_zu_Schleiz
-  AddTriple (7d5b534f-53d4-49f8-8cd2-014526023da3)
- Call ID: 7d5b534f-53d4-49f8-8cd2-014526023da3
-  Args:
-    source: Viktoria_Feodora_Reuss_zu_Schleiz
-    relation: :hasMother
-    target: Princess_Elise_of_Hohenlohe-Langenburg
-  AddTriple (f6dab57f-72d3-4d36-b8ad-e53bdcdb2004)
- Call ID: f6dab57f-72d3-4d36-b8ad-e53bdcdb2004
-  Args:
-    source: Viktoria_Feodora_Reuss_zu_Schleiz
+    source: Marie_Isabelle_dOrleans
     relation: :hasFather
-    target: Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz
-  AddTriple (990dc6a7-f517-4e4c-a160-199fe37fc9c9)
- Call ID: 990dc6a7-f517-4e4c-a160-199fe37fc9c9
+    target: Antoine_Duke_of_Montpensier
+  AddTriple (93691033-90d4-4f45-bfd5-cd82f0bf9ab5)
+ Call ID: 93691033-90d4-4f45-bfd5-cd82f0bf9ab5
   Args:
-    source: Heinrich_I_Prinz_Reuss
-    relation: :hasFather
-    target: Prince_Heinrich_XXXIV_Reuss_of_Schleiz
-  AddTriple (f050515c-c4cc-47ac-a52f-f9fa29a03227)
- Call ID: f050515c-c4cc-47ac-a52f-f9fa29a03227
-  Args:
-    source: Heinrich_I_Prinz_Reuss
     relation: :hasMother
-    target: Princess_Sophie_Renata_Reuss_of_Köstritz
-  AddLiteral (9c43ac60-e090-4916-9ff1-783e0cf48b41)
- Call ID: 9c43ac60-e090-4916-9ff1-783e0cf48b41
+    source: Marie_Isabelle_dOrleans
+    target: Luisa_Fernanda_of_Spain
+  AssignClass (c7e096b6-58ae-4f5b-9008-85c67b035df8)
+ Call ID: c7e096b6-58ae-4f5b-9008-85c67b035df8
   Args:
-    source: Woizlawa_Feodora_Princess_Reuss
+    source: Carlos_Prince_of_Bourbon_Two_Sicilies
+    type: :Man
+  AssignClass (0d49927f-e433-41cb-a43a-ba574989a2e6)
+ Call ID: 0d49927f-e433-41cb-a43a-ba574989a2e6
+  Args:
+    source: Carlos_Prince_of_Bourbon_Two_Sicilies
+    type: :Person
+  AddLiteral (cd32836a-81a6-45c6-a389-3f419f8da66b)
+ Call ID: cd32836a-81a6-45c6-a389-3f419f8da66b
+  Args:
+    source: Louise_of_Orleans
     relation: :hasMarriageYear
+    literal_value: 1907
     literal_type: xsd:integer
-    literal_value: 1939
-  AddTriple (06a7ca5b-d3ae-4f7d-b45a-29afcdf82a1d)
- Call ID: 06a7ca5b-d3ae-4f7d-b45a-29afcdf82a1d
+  AddTriple (d56f3984-d3f6-43ab-9e8f-a493bf60acf6)
+ Call ID: d56f3984-d3f6-43ab-9e8f-a493bf60acf6
   Args:
-    source: Woizlawa_Feodora_Princess_Reuss
+    target: Carlos_Prince_of_Bourbon_Two_Sicilies
+    source: Louise_of_Orleans
     relation: :hasRelation
-    target: Heinrich_I_Prinz_Reuss
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+  AssignClass (5af2d9a7-bd4a-4932-9986-002239377740)
+ Call ID: 5af2d9a7-bd4a-4932-9986-002239377740
+  Args:
+    source: Maria_de_las_Mercedes_Princess_of_Asturias
+    type: :Woman
+  AssignClass (5fc31ac7-ca54-466b-ac54-f706eae6fc7f)
+ Call ID: 5fc31ac7-ca54-466b-ac54-f706eae6fc7f
+  Args:
+    source: Maria_de_las_Mercedes_Princess_of_Asturias
+    type: :Person
+  AddTriple (b3855168-d80e-4879-97a9-464836221d08)
+ Call ID: b3855168-d80e-4879-97a9-464836221d08
+  Args:
+    target: Maria_de_las_Mercedes_Princess_of_Asturias
+    relation: :hasRelation
+    source: Carlos_Prince_of_Bourbon_Two_Sicilies
+  Finish (d92cf297-74fb-44fa-a4cd-20be0a459974)
+ Call ID: d92cf297-74fb-44fa-a4cd-20be0a459974
+  Args:
 
 ================================= Tool Message =================================
 
@@ -749,53 +643,123 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg-Schwerin a :Ancestor,
-          :Man ;
-      :hasBirthYear 1823 ;
-      :hasDeathYear 1883 .
-
-  data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+  data:Louise_of_Orleans a :Person,
           :Woman ;
-      :hasBirthYear 1850 ;
-      :hasDeathYear 1922 .
+      :hasBirthYear 1882 ;
+      :hasDeathYear 1958 ;
+      :hasMarriageYear 1907 ;
+      :hasMother data:Marie_Isabelle_dOrleans ;
+      :hasRelation data:Carlos_Prince_of_Bourbon_Two_Sicilies .
 
-  data:Woizlawa_Feodora_Princess_Reuss a :Person,
-          :Woman ;
-      :hasBirthYear 1918 ;
-      :hasDeathYear 2019 ;
-      :hasMarriageYear 1939 ;
-      :hasMother data:Viktoria_Feodora_Reuss_zu_Schleiz ;
-      :hasRelation data:Heinrich_I_Prinz_Reuss .
+  data:Antoine_Duke_of_Montpensier a :Man,
+          :Person .
 
-  data:Heinrich_I_Prinz_Reuss a :Man,
+  data:Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,
           :Person ;
-      :hasBirthYear 1910 ;
-      :hasDeathYear 1982 ;
-      :hasFather data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz ;
-      :hasMother data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz .
+      :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .
 
-  data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz a :Ancestor,
-          :Man .
-
-  data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz a :Ancestor,
-          :Man ;
-      :hasBirthYear 1887 ;
-      :hasDeathYear 1956 .
-
-  data:Princess_Elise_of_Hohenlohe-Langenburg a :Ancestor,
+  data:Luisa_Fernanda_of_Spain a :Person,
           :Woman .
 
-  data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz a :Ancestor,
-          :Woman ;
-      :hasBirthYear 1884 ;
-      :hasDeathYear 1968 .
+  data:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,
+          :Woman .
 
-  data:Viktoria_Feodora_Reuss_zu_Schleiz a :Ancestor,
+  data:Marie_Isabelle_dOrleans a :Person,
           :Woman ;
-      :hasBirthYear 1889 ;
-      :hasDeathYear 1918 ;
-      :hasFather data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz ;
-      :hasMother data:Princess_Elise_of_Hohenlohe-Langenburg .
+      :hasFather data:Antoine_Duke_of_Montpensier ;
+      :hasMother data:Luisa_Fernanda_of_Spain .
+
+
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (18325814-f69c-42ae-83d5-69396ef01af2)
+ Call ID: 18325814-f69c-42ae-83d5-69396ef01af2
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:9
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Antoine_Duke_of_Montpensier, used as the value for the hasFather property of Marie_Isabelle_dOrleans, does not belong to the required class :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Antoine_Duke_of_Montpensier', class=':Man')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Marie_Isabelle_dOrleans, used as the value for the hasMother property of Louise_of_Orleans, does not belong to the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Marie_Isabelle_dOrleans', class=':Woman')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Luisa_Fernanda_of_Spain, used as the value for the hasMother property of Marie_Isabelle_dOrleans, does not belong to the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Luisa_Fernanda_of_Spain', class=':Woman')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Antoine_Duke_of_Montpensier, used as the value for the hasFather property of Marie_Isabelle_dOrleans, does not belong to the required class :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Antoine_Duke_of_Montpensier', class=':Man')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Marie_Isabelle_dOrleans, used as the value for the hasMother property of Louise_of_Orleans, does not belong to the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Marie_Isabelle_dOrleans', class=':Woman')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Luisa_Fernanda_of_Spain, used as the value for the hasMother property of Marie_Isabelle_dOrleans, does not belong to the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Luisa_Fernanda_of_Spain', class=':Woman')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Antoine_Duke_of_Montpensier, used as the value for the hasFather property of Marie_Isabelle_dOrleans, does not belong to the required class :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Antoine_Duke_of_Montpensier', class=':Man')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Marie_Isabelle_dOrleans, used as the value for the hasMother property of Louise_of_Orleans, does not belong to the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Marie_Isabelle_dOrleans', class=':Woman')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Luisa_Fernanda_of_Spain, used as the value for the hasMother property of Marie_Isabelle_dOrleans, does not belong to the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Luisa_Fernanda_of_Spain', class=':Woman')
+
 
 
 
@@ -803,9 +767,70 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (5ad5d0dd-a982-4097-8454-bcb405e39123)
- Call ID: 5ad5d0dd-a982-4097-8454-bcb405e39123
+  AssignClass (43fadef1-8b6c-4e39-8e6d-5e866f142761)
+ Call ID: 43fadef1-8b6c-4e39-8e6d-5e866f142761
   Args:
+    type: :Ancestor
+    source: Antoine_Duke_of_Montpensier
+  AssignClass (12d4c497-5b9a-4950-9b33-83ddb8e3c61b)
+ Call ID: 12d4c497-5b9a-4950-9b33-83ddb8e3c61b
+  Args:
+    type: :Ancestor
+    source: Marie_Isabelle_dOrleans
+  AssignClass (d3613d3d-460e-4c77-ba0b-0b5403eb5dc2)
+ Call ID: d3613d3d-460e-4c77-ba0b-0b5403eb5dc2
+  Args:
+    source: Luisa_Fernanda_of_Spain
+    type: :Ancestor
+  ValidateShacl (b1220123-984f-40bc-b3d3-a750d60a38db)
+ Call ID: b1220123-984f-40bc-b3d3-a750d60a38db
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Louise_of_Orleans a :Person,
+          :Woman ;
+      :hasBirthYear 1882 ;
+      :hasDeathYear 1958 ;
+      :hasMarriageYear 1907 ;
+      :hasMother data:Marie_Isabelle_dOrleans ;
+      :hasRelation data:Carlos_Prince_of_Bourbon_Two_Sicilies .
+
+  data:Antoine_Duke_of_Montpensier a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,
+          :Person ;
+      :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .
+
+  data:Luisa_Fernanda_of_Spain a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,
+          :Woman .
+
+  data:Marie_Isabelle_dOrleans a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Antoine_Duke_of_Montpensier ;
+      :hasMother data:Luisa_Fernanda_of_Spain .
+
+
 
 ================================= Tool Message =================================
 
@@ -815,6 +840,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (f7a64859-9ef2-4b35-bf0f-fa9c3ee953d4)
- Call ID: f7a64859-9ef2-4b35-bf0f-fa9c3ee953d4
+  Finish (09b98e35-0771-49a0-8c56-b100c44061c2)
+ Call ID: 09b98e35-0771-49a0-8c56-b100c44061c2
   Args:

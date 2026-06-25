@@ -1,0 +1,412 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:LeopoldIV a :Ancestor,
+        :Man ;
+    :hasBrother data:LeopoldIV ;
+    :hasChild data:ArminOfLippe ;
+    :hasRelation data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe,
+        data:LeopoldIV,
+        data:StephanOfLippe ;
+    :hasSon data:ArminOfLippe ;
+    :isAncestorOf data:ArminOfLippe,
+        data:StephanOfLippe ;
+    :isBloodrelationOf data:LeopoldIV ;
+    :isBrotherOf data:LeopoldIV ;
+    :isFatherOf data:ArminOfLippe ;
+    :isParentOf data:ArminOfLippe ;
+    :isSiblingOf data:LeopoldIV ;
+    :isUncleOf data:ArminOfLippe .
+
+data:CurtDavidVonArnim a :Ancestor,
+        :Man ;
+    :hasBrother data:CurtDavidVonArnim ;
+    :hasChild data:ChristaVonArnim ;
+    :hasDaughter data:ChristaVonArnim ;
+    :hasRelation data:ArminOfLippe,
+        data:ChristaVonArnim,
+        data:CurtDavidVonArnim,
+        data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe,
+        data:StephanOfLippe,
+        data:StephanieVonStechow ;
+    :isAncestorOf data:ChristaVonArnim ;
+    :isBloodrelationOf data:CurtDavidVonArnim ;
+    :isBrotherOf data:CurtDavidVonArnim ;
+    :isFatherOf data:ChristaVonArnim ;
+    :isParentOf data:ChristaVonArnim ;
+    :isSiblingOf data:CurtDavidVonArnim ;
+    :isUncleOf data:ChristaVonArnim .
+
+data:LeopoldOfLippe a :Man,
+        :Person ;
+    :hasBrother data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:LeopoldOfLippe ;
+    :hasRelation data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe,
+        data:LeopoldOfLippe ;
+    :isBloodrelationOf data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:LeopoldOfLippe ;
+    :isBrotherOf data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:LeopoldOfLippe ;
+    :isSiblingOf data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:LeopoldOfLippe ;
+    :isUncleOf data:FriedrichWilhelmOfLippe,
+        data:StephanOfLippe .
+
+data:StephanieVonStechow a :Ancestor,
+        :Woman ;
+    :hasChild data:ChristaVonArnim ;
+    :hasDaughter data:ChristaVonArnim ;
+    :hasRelation data:ArminOfLippe,
+        data:ChristaVonArnim,
+        data:CurtDavidVonArnim,
+        data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe,
+        data:StephanOfLippe,
+        data:StephanieVonStechow ;
+    :hasSister data:StephanieVonStechow ;
+    :isAncestorOf data:ChristaVonArnim ;
+    :isAuntOf data:ChristaVonArnim ;
+    :isBloodrelationOf data:StephanieVonStechow ;
+    :isMotherOf data:ChristaVonArnim ;
+    :isParentOf data:ChristaVonArnim ;
+    :isSiblingOf data:StephanieVonStechow ;
+    :isSisterOf data:StephanieVonStechow .
+
+data:AdolphusFrederickV a :Ancestor,
+        :Man ;
+    :hasBrother data:AdolphusFrederickV ;
+    :hasChild data:MarieOfMecklenburgStrelitz ;
+    :hasDaughter data:MarieOfMecklenburgStrelitz ;
+    :hasRelation data:AdolphusFrederickV,
+        data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe,
+        data:MarieOfMecklenburgStrelitz,
+        data:StephanOfLippe ;
+    :isAncestorOf data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe,
+        data:MarieOfMecklenburgStrelitz ;
+    :isBloodrelationOf data:AdolphusFrederickV ;
+    :isBrotherOf data:AdolphusFrederickV ;
+    :isFatherOf data:MarieOfMecklenburgStrelitz ;
+    :isParentOf data:MarieOfMecklenburgStrelitz ;
+    :isSiblingOf data:AdolphusFrederickV ;
+    :isUncleOf data:MarieOfMecklenburgStrelitz .
+
+data:CarolineVonWartensleben a :Ancestor,
+        :Woman ;
+    :hasChild data:JuliusErnstOfLippe ;
+    :hasRelation data:ArminOfLippe,
+        data:CarolineVonWartensleben,
+        data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe,
+        data:JuliusErnstOfLippe,
+        data:StephanOfLippe ;
+    :hasSister data:CarolineVonWartensleben ;
+    :hasSon data:JuliusErnstOfLippe ;
+    :isAncestorOf data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe,
+        data:JuliusErnstOfLippe ;
+    :isAuntOf data:JuliusErnstOfLippe ;
+    :isBloodrelationOf data:CarolineVonWartensleben ;
+    :isMotherOf data:JuliusErnstOfLippe ;
+    :isParentOf data:JuliusErnstOfLippe ;
+    :isSiblingOf data:CarolineVonWartensleben ;
+    :isSisterOf data:CarolineVonWartensleben .
+
+data:ElisabethOfAnhalt a :Ancestor,
+        :Woman ;
+    :hasChild data:MarieOfMecklenburgStrelitz ;
+    :hasDaughter data:MarieOfMecklenburgStrelitz ;
+    :hasRelation data:ArminOfLippe,
+        data:ElisabethOfAnhalt,
+        data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe,
+        data:MarieOfMecklenburgStrelitz,
+        data:StephanOfLippe ;
+    :hasSister data:ElisabethOfAnhalt ;
+    :isAncestorOf data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe,
+        data:MarieOfMecklenburgStrelitz ;
+    :isAuntOf data:MarieOfMecklenburgStrelitz ;
+    :isBloodrelationOf data:ElisabethOfAnhalt ;
+    :isMotherOf data:MarieOfMecklenburgStrelitz ;
+    :isParentOf data:MarieOfMecklenburgStrelitz ;
+    :isSiblingOf data:ElisabethOfAnhalt ;
+    :isSisterOf data:ElisabethOfAnhalt .
+
+data:ErnstCountOfLippeBiesterfeld a :Ancestor,
+        :Man ;
+    :hasBrother data:ErnstCountOfLippeBiesterfeld ;
+    :hasChild data:JuliusErnstOfLippe ;
+    :hasRelation data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FriedrichWilhelmOfLippe,
+        data:JuliusErnstOfLippe,
+        data:StephanOfLippe ;
+    :hasSon data:JuliusErnstOfLippe ;
+    :isAncestorOf data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe,
+        data:JuliusErnstOfLippe ;
+    :isBloodrelationOf data:ErnstCountOfLippeBiesterfeld ;
+    :isBrotherOf data:ErnstCountOfLippeBiesterfeld ;
+    :isFatherOf data:JuliusErnstOfLippe ;
+    :isParentOf data:JuliusErnstOfLippe ;
+    :isSiblingOf data:ErnstCountOfLippeBiesterfeld ;
+    :isUncleOf data:JuliusErnstOfLippe .
+
+data:ChristaVonArnim a :Person,
+        :Woman ;
+    :hasAncestor data:CurtDavidVonArnim,
+        data:StephanieVonStechow ;
+    :hasFather data:CurtDavidVonArnim ;
+    :hasMother data:StephanieVonStechow ;
+    :hasParent data:CurtDavidVonArnim,
+        data:StephanieVonStechow ;
+    :hasRelation data:ArminOfLippe,
+        data:ChristaVonArnim,
+        data:CurtDavidVonArnim,
+        data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe,
+        data:StephanOfLippe,
+        data:StephanieVonStechow ;
+    :hasSister data:ChristaVonArnim ;
+    :isBloodrelationOf data:ChristaVonArnim ;
+    :isChildOf data:CurtDavidVonArnim,
+        data:StephanieVonStechow ;
+    :isDaughterOf data:CurtDavidVonArnim,
+        data:StephanieVonStechow ;
+    :isSiblingOf data:ChristaVonArnim ;
+    :isSisterOf data:ChristaVonArnim .
+
+data:StephanOfLippe a :Man,
+        :Person ;
+    :hasAncestor data:ArminOfLippe,
+        data:LeopoldIV ;
+    :hasBrother data:StephanOfLippe ;
+    :hasFather data:ArminOfLippe ;
+    :hasParent data:ArminOfLippe ;
+    :hasRelation data:AdolphusFrederickV,
+        data:ArminOfLippe,
+        data:CarolineVonWartensleben,
+        data:ChristaVonArnim,
+        data:CurtDavidVonArnim,
+        data:ElisabethOfAnhalt,
+        data:ErnstAugustOfLippe,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FriedrichWilhelmOfLippe,
+        data:JuliusErnstOfLippe,
+        data:LeopoldIV,
+        data:MarieOfMecklenburgStrelitz,
+        data:StephanOfLippe,
+        data:StephanieVonStechow ;
+    :isBloodrelationOf data:StephanOfLippe ;
+    :isBrotherOf data:StephanOfLippe ;
+    :isChildOf data:ArminOfLippe ;
+    :isSiblingOf data:StephanOfLippe ;
+    :isSonOf data:ArminOfLippe .
+
+data:JuliusErnstOfLippe a :Ancestor,
+        :Man ;
+    :hasAncestor data:CarolineVonWartensleben,
+        data:ErnstCountOfLippeBiesterfeld ;
+    :hasBrother data:JuliusErnstOfLippe ;
+    :hasChild data:ErnstAugustOfLippe ;
+    :hasFather data:ErnstCountOfLippeBiesterfeld ;
+    :hasMother data:CarolineVonWartensleben ;
+    :hasParent data:CarolineVonWartensleben,
+        data:ErnstCountOfLippeBiesterfeld ;
+    :hasRelation data:ArminOfLippe,
+        data:CarolineVonWartensleben,
+        data:ErnstAugustOfLippe,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FriedrichWilhelmOfLippe,
+        data:JuliusErnstOfLippe,
+        data:StephanOfLippe ;
+    :hasSon data:ErnstAugustOfLippe ;
+    :isAncestorOf data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe ;
+    :isBloodrelationOf data:JuliusErnstOfLippe ;
+    :isBrotherOf data:JuliusErnstOfLippe ;
+    :isChildOf data:CarolineVonWartensleben,
+        data:ErnstCountOfLippeBiesterfeld ;
+    :isFatherOf data:ErnstAugustOfLippe ;
+    :isParentOf data:ErnstAugustOfLippe ;
+    :isSiblingOf data:JuliusErnstOfLippe ;
+    :isSonOf data:CarolineVonWartensleben,
+        data:ErnstCountOfLippeBiesterfeld ;
+    :isUncleOf data:ErnstAugustOfLippe .
+
+data:MarieOfMecklenburgStrelitz a :Ancestor,
+        :Woman ;
+    :hasAncestor data:AdolphusFrederickV,
+        data:ElisabethOfAnhalt ;
+    :hasChild data:ErnstAugustOfLippe ;
+    :hasFather data:AdolphusFrederickV ;
+    :hasMother data:ElisabethOfAnhalt ;
+    :hasParent data:AdolphusFrederickV,
+        data:ElisabethOfAnhalt ;
+    :hasRelation data:AdolphusFrederickV,
+        data:ArminOfLippe,
+        data:ElisabethOfAnhalt,
+        data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe,
+        data:MarieOfMecklenburgStrelitz,
+        data:StephanOfLippe ;
+    :hasSister data:MarieOfMecklenburgStrelitz ;
+    :hasSon data:ErnstAugustOfLippe ;
+    :isAncestorOf data:ErnstAugustOfLippe,
+        data:FriedrichWilhelmOfLippe ;
+    :isAuntOf data:ErnstAugustOfLippe ;
+    :isBloodrelationOf data:MarieOfMecklenburgStrelitz ;
+    :isChildOf data:AdolphusFrederickV,
+        data:ElisabethOfAnhalt ;
+    :isDaughterOf data:AdolphusFrederickV,
+        data:ElisabethOfAnhalt ;
+    :isMotherOf data:ErnstAugustOfLippe ;
+    :isParentOf data:ErnstAugustOfLippe ;
+    :isSiblingOf data:MarieOfMecklenburgStrelitz ;
+    :isSisterOf data:MarieOfMecklenburgStrelitz .
+
+data:FriedrichWilhelmOfLippe a :Man,
+        :Person ;
+    :hasAncestor data:AdolphusFrederickV,
+        data:CarolineVonWartensleben,
+        data:ElisabethOfAnhalt,
+        data:ErnstAugustOfLippe,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:JuliusErnstOfLippe,
+        data:MarieOfMecklenburgStrelitz ;
+    :hasBrother data:FriedrichWilhelmOfLippe ;
+    :hasFather data:ErnstAugustOfLippe ;
+    :hasParent data:ErnstAugustOfLippe ;
+    :hasRelation data:AdolphusFrederickV,
+        data:ArminOfLippe,
+        data:CarolineVonWartensleben,
+        data:ChristaVonArnim,
+        data:CurtDavidVonArnim,
+        data:ElisabethOfAnhalt,
+        data:ErnstAugustOfLippe,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FriedrichWilhelmOfLippe,
+        data:JuliusErnstOfLippe,
+        data:LeopoldIV,
+        data:LeopoldOfLippe,
+        data:MarieOfMecklenburgStrelitz,
+        data:StephanOfLippe,
+        data:StephanieVonStechow ;
+    :isBloodrelationOf data:FriedrichWilhelmOfLippe ;
+    :isBrotherOf data:FriedrichWilhelmOfLippe ;
+    :isChildOf data:ErnstAugustOfLippe ;
+    :isSiblingOf data:FriedrichWilhelmOfLippe ;
+    :isSonOf data:ErnstAugustOfLippe .
+
+data:ArminOfLippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:LeopoldIV ;
+    :hasBrother data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:LeopoldOfLippe ;
+    :hasChild data:StephanOfLippe ;
+    :hasFather data:LeopoldIV ;
+    :hasParent data:LeopoldIV ;
+    :hasRelation data:AdolphusFrederickV,
+        data:ArminOfLippe,
+        data:CarolineVonWartensleben,
+        data:ChristaVonArnim,
+        data:CurtDavidVonArnim,
+        data:ElisabethOfAnhalt,
+        data:ErnstAugustOfLippe,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FriedrichWilhelmOfLippe,
+        data:JuliusErnstOfLippe,
+        data:LeopoldIV,
+        data:LeopoldOfLippe,
+        data:MarieOfMecklenburgStrelitz,
+        data:StephanOfLippe,
+        data:StephanieVonStechow ;
+    :hasSon data:StephanOfLippe ;
+    :isAncestorOf data:StephanOfLippe ;
+    :isBloodrelationOf data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:LeopoldOfLippe ;
+    :isBrotherOf data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:LeopoldOfLippe ;
+    :isChildOf data:LeopoldIV ;
+    :isFatherOf data:StephanOfLippe ;
+    :isParentOf data:StephanOfLippe ;
+    :isSiblingOf data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:LeopoldOfLippe ;
+    :isSonOf data:LeopoldIV ;
+    :isUncleOf data:FriedrichWilhelmOfLippe,
+        data:StephanOfLippe .
+
+data:ErnstAugustOfLippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AdolphusFrederickV,
+        data:CarolineVonWartensleben,
+        data:ElisabethOfAnhalt,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:JuliusErnstOfLippe,
+        data:MarieOfMecklenburgStrelitz ;
+    :hasBirthYear 1917 ;
+    :hasBrother data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:LeopoldOfLippe ;
+    :hasChild data:FriedrichWilhelmOfLippe ;
+    :hasDeathYear 1990 ;
+    :hasFather data:JuliusErnstOfLippe ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:MarieOfMecklenburgStrelitz ;
+    :hasParent data:JuliusErnstOfLippe,
+        data:MarieOfMecklenburgStrelitz ;
+    :hasRelation data:AdolphusFrederickV,
+        data:ArminOfLippe,
+        data:CarolineVonWartensleben,
+        data:ChristaVonArnim,
+        data:CurtDavidVonArnim,
+        data:ElisabethOfAnhalt,
+        data:ErnstAugustOfLippe,
+        data:ErnstCountOfLippeBiesterfeld,
+        data:FriedrichWilhelmOfLippe,
+        data:JuliusErnstOfLippe,
+        data:LeopoldIV,
+        data:LeopoldOfLippe,
+        data:MarieOfMecklenburgStrelitz,
+        data:StephanOfLippe,
+        data:StephanieVonStechow ;
+    :hasSon data:FriedrichWilhelmOfLippe ;
+    :isAncestorOf data:FriedrichWilhelmOfLippe ;
+    :isBloodrelationOf data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:LeopoldOfLippe ;
+    :isBrotherOf data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:LeopoldOfLippe ;
+    :isChildOf data:JuliusErnstOfLippe,
+        data:MarieOfMecklenburgStrelitz ;
+    :isFatherOf data:FriedrichWilhelmOfLippe ;
+    :isParentOf data:FriedrichWilhelmOfLippe ;
+    :isSiblingOf data:ArminOfLippe,
+        data:ErnstAugustOfLippe,
+        data:LeopoldOfLippe ;
+    :isSonOf data:JuliusErnstOfLippe,
+        data:MarieOfMecklenburgStrelitz ;
+    :isUncleOf data:FriedrichWilhelmOfLippe,
+        data:StephanOfLippe .
+

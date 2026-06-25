@@ -7,16 +7,21 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Olimpia_Torlonia a :Person ;
+    rdfs:label "Olimpia Torlonia" ;
+    data:wdtLink wdt:Q6049946 ;
+    :alsoKnownAs "Olympia Torlonia" ;
+    :hasParent data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
+        data:Infanta_Beatriz_of_Spain ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi a :Person ;
     rdfs:label "Alessandro Torlonia, 5th Prince of Civitella-Cesi" ;
     data:posIndicesFull "4:53" ;
     data:posIndicesPart "1032:1040",
@@ -39,16 +44,9 @@ data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi a :Ancestor,
         "967:975" ;
     data:wdtLink wdt:Q4716439 ;
     :alsoKnownAs "Alessandro Torlonia, 5th Principe di Civitella-Cessi" ;
-    :hasChild data:Olimpia_Torlonia ;
-    :hasDaughter data:Olimpia_Torlonia ;
-    :hasSex data:male ;
-    :isFatherOf data:Olimpia_Torlonia ;
-    :isParentOf data:Olimpia_Torlonia .
+    :hasSex data:male .
 
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alfonso_XIII a :Person ;
     rdfs:label "Alfonso XIII" ;
     data:posIndicesFull "1207:1219",
         "1207:1228",
@@ -60,16 +58,19 @@ data:Alfonso_XIII a :Ancestor,
         "Don Alfonso de Borbon y Habsburgo",
         "Don Alfonso de Borbón y Habsburgo",
         "The African" ;
-    :hasChild data:Infanta_Beatriz_of_Spain ;
-    :hasDaughter data:Infanta_Beatriz_of_Spain ;
-    :hasSex data:male ;
-    :isFatherOf data:Infanta_Beatriz_of_Spain ;
-    :isParentOf data:Infanta_Beatriz_of_Spain .
+    :hasSex data:male .
 
-data:Victoria_Eugenie_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Infanta_Beatriz_of_Spain a :Person ;
+    rdfs:label "Infanta Beatriz of Spain" ;
+    data:posIndicesFull "1150:1174" ;
+    data:wdtLink wdt:Q269493 ;
+    :alsoKnownAs "Infanta Beatriz, Princess of Civitella-Cesi",
+        "Infanta Doña. Beatriz Isabel Federica Alfonsa Eugénie Cristina Maria Teresia Bienvenida Ladislàa of Spain" ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:female .
+
+data:Victoria_Eugenie_of_Battenberg a :Person ;
     rdfs:label "Victoria Eugenie of Battenberg" ;
     data:posIndicesFull "1236:1275",
         "1245:1275" ;
@@ -80,49 +81,9 @@ data:Victoria_Eugenie_of_Battenberg a :Ancestor,
         "Queen Victoria Eugenie of Spain",
         "Victoria Eugenie Julia Ena of Battenberg",
         "Victoria Eugenie, Queen of Spain" ;
-    :hasChild data:Infanta_Beatriz_of_Spain ;
-    :hasDaughter data:Infanta_Beatriz_of_Spain ;
-    :hasSex data:female ;
-    :isMotherOf data:Infanta_Beatriz_of_Spain ;
-    :isParentOf data:Infanta_Beatriz_of_Spain .
+    :hasSex data:female .
 
-data:Olimpia_Torlonia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Olimpia Torlonia" ;
-    data:wdtLink wdt:Q6049946 ;
-    :alsoKnownAs "Olympia Torlonia" ;
-    :hasFather data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi ;
-    :hasMother data:Infanta_Beatriz_of_Spain ;
-    :hasParent data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
-        data:Infanta_Beatriz_of_Spain ;
-    :hasSex data:female ;
-    :isChildOf data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
-        data:Infanta_Beatriz_of_Spain ;
-    :isDaughterOf data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
-        data:Infanta_Beatriz_of_Spain .
+data:male a :Male .
 
-data:Infanta_Beatriz_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta Beatriz of Spain" ;
-    data:posIndicesFull "1150:1174" ;
-    data:wdtLink wdt:Q269493 ;
-    :alsoKnownAs "Infanta Beatriz, Princess of Civitella-Cesi",
-        "Infanta Doña. Beatriz Isabel Federica Alfonsa Eugénie Cristina Maria Teresia Bienvenida Ladislàa of Spain" ;
-    :hasChild data:Olimpia_Torlonia ;
-    :hasDaughter data:Olimpia_Torlonia ;
-    :hasFather data:Alfonso_XIII ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg ;
-    :hasParent data:Alfonso_XIII,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :hasSex data:female ;
-    :isChildOf data:Alfonso_XIII,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :isDaughterOf data:Alfonso_XIII,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :isMotherOf data:Olimpia_Torlonia ;
-    :isParentOf data:Olimpia_Torlonia .
+data:female a :Female .
 

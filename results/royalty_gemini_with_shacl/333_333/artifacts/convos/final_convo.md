@@ -85,47 +85,178 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Count Ingolf of Rosenborg RE (born 17 February 1940) is a Danish count and former prince.
-Born Prince Ingolf of Denmark (Danish: Prins
-Ingolf Christian Frederik Knud Harald Gorm Gustav Viggo Valdemar Aage til Danmark), he appeared likely to some day become king until the constitution was changed in 1953 to allow females to inherit the crown, placing his branch of the dynasty behind that of his first cousin Princess Margrethe and her two younger sisters.
-Family
+Queen Anne-Marie
 
-Ingolf was born at Sorgenfri Palace, Sorgenfri, as His Highness Prince Ingolf of Denmark.
-Loss of place in succession
 
-From the 1947 death of his grandfather, Christian X of Denmark, Ingolf stood only behind his father in the order of hereditary succession to the throne and was expected to become king in his turn.
-His father, Prince Knud, was then the heir presumptive, due to succeed Ingolf's uncle King Frederik IX, who had three daughters but no sons.
-In 1953, the Constitution of Denmark was amended to allow cognatic primogeniture.
-Ingolf was thus relegated to fifth in the line of succession to the Danish throne, but more importantly, he now ranked behind Margrethe and others who were likely to have dynastic children of their own (as has, in fact, happened).
-The princess became Queen Margrethe II in 1972 and reigned until 2024.
-Ingolf's place in the line of succession, were he still eligible, would be no higher than eleventh today.
-Loss of dynastic rights
+Queen Sofía of Spain
 
-In 1968, now with little hope of ascending the throne, Ingolf chose to forfeit his right of succession to the throne by marrying without having received the royal assent of the monarch in the Council of State.
-The king's permission to marry was not sought because it was expected to be denied, since Ingolf's fiancée was an untitled commoner.
-Though Frederik IX had liberalized traditional practice by allowing royal spouses who were not themselves royal, but who claimed noble blood and were known by courtesy titles (Anne Bowes-Lyon was the granddaughter of an earl and through her first marriage to the son of an earl bore the title of viscountess; Henri de Laborde de Monpezat used the title of count, though his family's claim to nobility was later acknowledged to be flawed), it would not be until 1995 that Margrethe II would allow her children to marry commoners with neither title nor claim to noble blood.
-Ingolf was given the title count of Rosenborg and the style of Excellency, as was customary in the 20th century for Danish princes who forfeited their dynastic rights.
-Prior to his son's wedding, Prince Knud sought to convince his brother that Ingolf should be allowed to retain his royal title after marriage.
-But the king refused, on the grounds that other males of the dynasty who had been demoted to counts of Rosenborg upon marriage might try to reclaim their royal rank if Ingolf were allowed to do so, despite marrying a commoner as they had done.
-So, in 1968, Ingolf forfeited his rights to the throne and took the title count of Rosenborg.
-His younger brother Christian did the same three years later.
-Ingolf married firstly Inge Terney (21 January 1938 in Copenhagen – 21 July 1996 in Velje), daughter of Georg Terney (1906–1977), hardware storer, and wife Jenny Kamilla Hansen (1908–1990), on 13 January 1968, at Kongens Lyngby Kirke, Kongens Lyngby, Denmark.
-After being widowed, he married secondly Sussie Hjorhøy-Pedersen (born 20 February 1950 in Copenhagen), daughter of Frederick Walter Pedersen and wife Ruth Hjorhøy, who thus became "Her Excellency Countess Sussie of Rosenborg" on 7 March 1998, at Egtved, Denmark.
-Ingolf is godfather to his grandnephew, Leopold Rosanes af Rosenborg, who is the grandson of his brother Christian.
-Public role
 
-Count Ingolf usually takes part in major public events associated with the royal family; he and Countess Sussie attended the May 2004 wedding of Crown Prince Frederik at Copenhagen Cathedral, and the subsequent reception at Fredensborg Palace.
-On some occasions, they are listed as members of the royal family, such as when they attended the wedding of Prince Joachim in 2008 and the luncheon to celebrate the 75th birthday of Prince Henrik at Fredensborg Palace on 11 June 2009 On other occasions, such as the celebrations for the Queen's 70th birthday, they are listed along with non-royal guests, but even in these cases at the ceremonies themselves they are usually given precedence immediately after his sister Princess Elisabeth of Denmark.
-Count Ingolf and Countess Sussie attended the Queen's ruby-jubilee (40th-anniversary) celebrations.
-In 1964, when still Prince Ingolf, he acted as groomsman to his third cousin, Constantine II of Greece, on his marriage to Princess Anne-Marie of Denmark (also Ingolf's first cousin).
-Ingolf receives an annual allowance of 1.4 million kroner according to the Danish Royal House website.
-His sister, Princess Elisabeth, did not receive such an allowance, though she remained in the line of succession.
+Marina, consort of Prince Michael
+
+
+Queen Margrethe II
+
+
+Anne-Marie RE (Greek: Άννα-Μαρία, romanized: Ánna-María; born Princess Anne-Marie Dagmar Ingrid of Denmark, 30 August 1946) is a Danish princess who was Queen of Greece as the consort of King Constantine II from their marriage on 18 September 1964 until the abolition of the Greek monarchy on 1 June 1973.
+Anne-Marie is the youngest daughter of Frederik IX of Denmark and Ingrid of Sweden.
+In 1964, she married Constantine and became queen consort of Greece.
+As queen, Anne-Marie spent much of her time working for a charitable foundation known as "Her Majesty's Fund", a foundation established by her mother-in-law, Queen Frederica of Greece.
+In 1967, Anne-Marie and her family were forced into exile upon the rise of a military dictatorship.
+Anne-Marie and her family were stripped of their Greek citizenship and had their property revoked, leading them to sue in the European Court of Human Rights.
+From the compensation she earned, Anne-Marie set up the "Anne-Marie Foundation", which provided assistance to people in rural areas of Greece.
+In 2013, she and Constantine moved back to Greece.
+They moved to Athens in 2022, where Constantine died in January the following year.
+Birth and family
+
+Anne-Marie was born on 30 August 1946 at Frederik VIII's Palace, an 18th-century palace which forms part of the Amalienborg Palace complex in central Copenhagen.
+She was the third and last daughter and child of Crown Prince Frederik and Crown Princess Ingrid of Denmark.
+Her father was the eldest son of Christian X of Denmark and Alexandrine of Mecklenburg-Schwerin; her mother, born a princess of Sweden, was the only daughter of the Crown Prince of Sweden (later King Gustaf VI Adolf) and Princess Margaret of Connaught.
+At birth, Anne-Marie had two elder sisters: Princess Margrethe (later queen of Denmark) and Princess Benedikte (who became princess of Sayn-Wittgenstein-Berleburg).
+Anne-Marie was baptised on 9 October at the Holmen Church in Copenhagen.
+Her godparents were her paternal grandparents, King Christian X and Queen Alexandrine of Denmark; her maternal grandfather, Crown Prince Gustaf Adolf of Sweden; her maternal uncle Prince Bertil, Duke of Halland; her paternal great-uncle King Haakon VII of Norway; her paternal great-aunt Princess Dagmar of Denmark; her grandfather's cousin Prince George of Greece and Denmark; her father's cousin, Crown Princess Märtha of Norway; Queen Mary of the United Kingdom; and Crown Princess Juliana of the Netherlands.
+Anne-Marie is a great-great-granddaughter of both Queen Victoria and Christian IX of Denmark.
+Therefore, she is related to many other members of European royalty, such as her future husband Constantine II, who is also a great-great-grandchild of both Queen Victoria and Christian IX of Denmark.
+Moreover, Anne-Marie is the maternal aunt of Frederik X of Denmark, the first cousin of Carl XVI Gustaf of Sweden, and an aunt by marriage of Felipe VI of Spain.
+Early life
+
+Anne-Marie and her sisters grew up in apartments at Frederik VIII's Palace at Amalienborg in Copenhagen and in Fredensborg Palace in North Zealand.
+On 20 April 1947, less than a year after Anne-Marie's birth, her grandfather, Christian X, died, and her father ascended the throne as King Frederik IX.
+At the time of her father's accession to the throne, only males could ascend the throne of Denmark.
+As Anne-Marie's parents had no sons, it was assumed that her paternal uncle, Prince Knud, would one day assume the throne.
+The popularity of Frederik IX and his daughters and the more prominent role of women in Danish life paved the way for a new Act of Succession in 1953 which permitted female succession to the throne following the principle of male-preference primogeniture, where a female can ascend to the throne if she has no brothers.
+Her eldest sister, Margrethe, therefore became heir presumptive, and Benedikte and Anne-Marie became second and third in the line of succession.
+Anne-Marie was educated at N. Zahle's School, a private school in Copenhagen, from 1952 to 1961.
+Upon returning from schooling, Anne-Marie undertook childcare work for a few years.
+Marriage
+
+In 1959, at the age of 13, Anne-Marie first met her future husband, her third cousin Constantine, Crown Prince of Greece, who accompanied his parents, King Paul and Queen Frederica, on a state visit to Denmark.
+Constantine at the time was 19 years old.
+They met a second time in Denmark in 1961, when Constantine declared to his parents his intention to marry Anne-Marie.
+The pair became secretly engaged without telling the public nor members of their families due to Frederik IX's opposition to their relationship because of her young age.
+They met again in Athens in May 1962 at the wedding of Constantine's older sister, Princess Sophia of Greece and Denmark, and Prince Juan Carlos of Spain.
+Anne-Marie was a bridesmaid, while Constantine was a groomsman for the future monarchs of Spain.
+Following this, Anne-Marie began studying the history of Greece and the history of the Greek monarchy, as well as taking Modern Greek lessons in order to learn the language of the country her husband was to reign over.
+Constantine's mother, Frederica, initially requested that one million dollars be spent on the wedding, however, the private office of the Danish royal family denied this.
+In July 1964, the announcement of the engagement of Constantine and Anne-Marie raised the polite protests of the Left in Denmark.
+Previously, on 6 March 1964, King Paul died, and Constantine succeeded him as King of the Hellenes.
+However, Frederica requested that their marriage take place on its original date.
+Anne-Marie and Constantine were married on 18 September 1964 (two weeks after Anne-Marie's 18th birthday) in the Metropolis, the Greek Orthodox Cathedral of Athens.
+Anne-Marie converted from Lutheranism to the Greek Orthodox Church 7 months and 3 days after her marriage.
+There was a special permission, for this, from the Archbishop of Athens and all Greece, who is the head of the Orthodox Church of Greece.
+Also, as she was marrying a foreign ruler, consent to the marriage was given on the condition that Anne-Marie renounce her succession rights to the Danish throne for herself and her descendants.
+Queen of the Hellenes
+
+As Queen of Greece, Anne-Marie's initial primary role was to provide the nation with an heir who would eventually take over as King.
+Anne-Marie spent much of her time working for a charitable foundation known as "Her Majesty's Fund" and later as the "Anne-Marie Foundation", which provided assistance to people in rural areas of Greece.
+Her Majesty's Fund was an organisation set up by Frederica during her husband's reign which aimed at assisting the poor and disadvantaged.
+Anne-Marie also worked closely with the Red Cross and other not-for-profit charities.
+On 10 July 1965, Queen Anne-Marie gave birth at the villa Mon Repos in Corfu to her first child, Princess Alexia, who was heir presumptive to the throne of Greece, from her birth until the birth of her younger brother Crown Prince Pavlos on 20 May 1967 in accordance with Greece's order of succession adhering to male-preference primogeniture.
+At the time of Alexia and Pavlos' births, political stability within Greece was diminishing due to a schism between Constantine and the Prime Minister Georgios Papandreou, who wished to demote the minister of defence, Petros Garoufalias, in order to assume office himself.
+A group of Greek soldiers in April 1967 overthrew the government of the new Prime Minister, Panagiotis Kanellopoulos, which marked the beginning of a military dictatorship in Greece.
+The royal family was left unaware and in order to avoid fighting, Constantine and Anne-Marie agreed to recognise the dictatorship against their will, however many members of the public therefore believed that they supported and even funded the coup.
+The following month, Anne-Marie gave birth to a son, Pavlos, who immediately assumed the position of Crown Prince of Greece from his sister.
+At his baptism, Anne-Marie and Constantine decided to make Frederica his godmother and the Hellenic Army his godfather figure.
+Margrethe II of Denmark, the future queen of Denmark, was married to Henri de Laborde de Monpezat at their wedding on 10 June 1967.
+Anne-Marie, the sister of Margrethe, and Constantine were subsequently denied an invite to their wedding, further ruining relations for a period of time.
+Exile
+
+In December 1967, Constantine attempted to shake off the military's authoritarian regime by trying to stage a counter-coup with the help of his political allies.
+Upon the coup's abandonment, the military junta in Greece strongly advised Anne-Marie and Constantine to leave the country.
+Anne-Marie and Constantine fled to nearby Italy and sought refuge at the Greek Embassy in Rome, where Anne-Marie and Constantine became puppet monarchs.
+After two months of refuge at the Greek Embassy, Anne-Marie and Constantine received greeting from Moritz, Landgrave of Hesse, who organised to put them up at the Villa Polissena, an Italian palace where Moritz himself had previously lived upon his family's exile.
+Anne-Marie eventually agreed with Constantine to move to 13 Via di Porta Latina, where a large villa owned by Countess Cristina Paolozzi was located.
+Possibly due to stress and worry, Anne-Marie suffered a miscarriage in early 1968.
+Anne-Marie fell pregnant again in February of the next year and gave birth to Prince Nikolaos of Greece and Denmark.
+Anne-Marie and Constantine established a small school in their villa to preserve the Greek culture among their children.
+Despite the expansion of their family, Anne-Marie and Constantine had been experiencing some marital struggles in the early 1970s.
+It was reported that Anne-Marie in 1974 was considering filing a divorce and moving back to Denmark, however, their relationship was repaired and even "strengthened" as a result.
+Throughout this time, although they were living in exile, Anne-Marie and Constantine still formally remained the monarchs of Greece.
+They were still allowed to represent Greece and the Greek crown at international royal events.
+For example, the pair attended the 21st birthday of Charles, Prince of Wales, in 1969, the 2500th anniversary of the founding of the Persian Empire in 1971, and the baptism in Madrid of François, the eldest son of Alfonso, Duke of Anjou and Cádiz.
+One of the last events Anne-Marie and Constantine attended as the monarchs of Greece was the funeral of Frederik IX, Anne-Marie's father, whom she grieved deeply.
+Dethronement
+
+The military junta in Greece began noticeably distancing itself from the monarchy when Georgios Zoitakis replaced Georgios Papadopoulos as the Regent of Greece.
+In 1972, Constantine's face was replaced on coins by a phoenix, a symbol of the Greek military and the national bird of Greece.(Palmer & Greece 1990, p. 114)
+Anne-Marie and Constantine were officially dethroned by the 1974 Greek republic referendum on 29 July 1974.
+Margrethe II immediately agreed to house Anne-Marie, Constantine and their family in Amalienborg for a year.
+Anne-Marie moved with her family to England.
+The military dictatorship in Greece collapsed in 1974 after a failed coup d'état, which aimed to unite Greece and Cyprus.
+It was hoped that their positions as King and Queen of the Hellenes would be restored as democracy was reinstated, but another referendum confirmed that the monarchy would stay abolished and the Third Hellenic Republic was finally formed.
+The new Greek government continued to enforce the exile of Anne-Marie and her family as they saw them as a threat to the new republic.
+They were denied entry into the country even for Frederica's funeral.
+Frederica had died in exile in February 1981 in Madrid, where she had been staying with her daughter, Sofía.
+In London, Anne-Marie established with Constantine the Hellenic College of London to again help their children learn the Greek language and culture.
+Anne-Marie and Constantine received financial aid from Hussein of Jordan and Mohammad Reza Pahlavi, the Shah of Iran.
+Following a miscarriage in 1980, Anne-Marie and Constantine agreed to expand their family.
+After the christening of Prince Peter of Yugoslavia, whom Anne-Marie and Constantine baptised, the couple welcomed Princess Theodora in June 1983 and later Prince Philippos in April 1986.
+In 1989, the silver anniversary of Anne-Marie's marriage to Constantine was celebrated at Kronborg Castle in Denmark.
+Return to Greece
+
+The government of Greece in 1991 granted Anne-Marie and Constantine permission to retrieve over 68 tonnes of their belongings to either keep or sell.
+Two years later, the couple were allowed to enter Greece again in a private visit on their yacht with their children.
+When the family stopped for oil at a port in southern Greece, Anne-Marie and Constantine were swarmed with crowds of people and press, who greeted them with cheers and claps.
+This was called evidence that the pair still held "real influence in Greece".
+Finally, the government stripped the Greek royal family of their Greek citizenship and passport, unless they renounced their dynastic rights, abandoned the name "of Greece" and swore an oath to the republic.
+Anne-Marie and Constantine called it "the greatest insult in this world for a Greek to be told that he is not a Greek".
+In addition, they were accused by the Greek government of tampering with the 1974 republic referendum results by officiating the marriage of Pavlos and Marie-Chantal Miller in London as a real princely marriage.
+Anne-Marie and Constantine, along with Princess Irene and Princess Katherine, made the decision to take the Greek government to court in April 1996 over the confiscation of their citizenships and properties.
+The Supreme Civil and Criminal Court of Greece agreed with their discrimination claim, however, the Council of State overrode their decision and stated that the removal of their passports was a measure taken that conforms with the constitution of the Third Republic.
+As a result, the family took Greece to court in the European Court of Human Rights and sued them for €200 million.
+Of the €200 million claim, Anne-Marie and Constantine won €12 million, Irene won €900,000 and Katherine €300,000.
+Although originally requesting Spanish citizenships, Anne-Marie eventually requested from her sister, Margrethe II, to have Danish diplomatic passports established in the names of the members of the Greek royal family.
+She agreed and in their Danish passports, their names were established as "HM Queen Anne-Marie" and "HM King Constantine II".
+In 2003, Constantine used the money they received to establish the Anna-Maria Foundation, a not-for-profit organisation aimed to provide aid to victims of natural disasters, particularly those of floods, earthquakes and bushfires.
+Since 2019, Anne-Marie has headed the foundation as its president.
+On 14 August 2004, Anne-Marie and her husband Constantine visited their former home in Athens, the former Royal Palace, which is now the Presidential Palace, for the first time since 1967.
+They were received by then-President of Greece Costis Stephanopoulos along with other members of the International Olympic Committee, of which Constantine was an honorary member.
+In December 2004, Constantine, Anne-Marie and their children were again invited to pay a personal private visit by President Stephanopoulos.
+Once the games concluded, the government announced that Anne-Marie and Constantine's exile would finally be revoked.
+In 2013, Anne-Marie and Constantine returned to reside in Greece.
+They sold their home in London for €11.5 million and announced their return to Greece.
+He and his wife, Anne-Marie, purchased a villa in Porto Cheli, Peloponnese residing there until they relocated to Athens in the spring of 2022.
+For her 60th birthday, Anne-Marie boarded the cruise ship the Aphroessa, which Constantine had organised for her.
+Constantine began experiencing health and mobility issues, leading to him requiring more care from Anne-Marie.
+On 10 January 2023, Anne-Marie became widowed when her husband died of a stroke at the private Hygeia Hospital in Athens at the age of 82.
+On 19 December 2024, Anne-Marie's children and five of her grandchildren applied for Greek citizenship, selecting the surname "Ντε Γκρες" (De Grèce; "of Greece").
+Anne-Marie did not apply, with it being reported that she was "not interested".
+Titles, styles, honours, and arms
+
+Titles and styles
+
+She has been the titular Queen of the Hellenes since 1973.
+This title is not recognized under the terms of the republican Constitution of Greece.
+Honours
+
+National
+
+Foreign
+
+Arms and monogram
+
+The coats of arms of Queen Anne-Marie combine the 1936–1973 royal coat of arms of Greece and the 1948–1972 coat of arms of Denmark which was current at the time of her marriage in 1964.
+Issue
+
+Constantine and Anne-Marie had five children:
+
+
+Ancestry
+
+References
+
+Citations
+
+Bibliography
+
+External links
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -141,39 +272,9 @@ His sister, Princess Elisabeth, did not receive such an allowance, though she re
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -188,6 +289,23 @@ His sister, Princess Elisabeth, did not receive such an allowance, though she re
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -205,6 +323,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -272,29 +405,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -303,6 +428,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -315,6 +448,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -323,17 +458,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -361,6 +498,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -376,144 +597,309 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0a457c2b-9d36-43a5-939c-9f5aed8d1171)
- Call ID: 0a457c2b-9d36-43a5-939c-9f5aed8d1171
+  AssignClass (1a3f695f-708f-417f-911d-9171a9dc9334)
+ Call ID: 1a3f695f-708f-417f-911d-9171a9dc9334
   Args:
-    source: Ingolf_of_Rosenborg
-    type: :Man
-  AssignClass (f497a7b3-f8e3-476d-b05b-1ecbfbf8fafa)
- Call ID: f497a7b3-f8e3-476d-b05b-1ecbfbf8fafa
-  Args:
-    type: :Man
-    source: Prince_Knud
-  AssignClass (38923908-b5cb-4064-ab1b-83ecdd08a392)
- Call ID: 38923908-b5cb-4064-ab1b-83ecdd08a392
-  Args:
-    type: :Man
-    source: Christian_X_of_Denmark
-  AssignClass (5a0865a8-6ca7-42c6-b427-c00df13ed3c7)
- Call ID: 5a0865a8-6ca7-42c6-b427-c00df13ed3c7
-  Args:
-    type: :Man
-    source: Christian_of_Rosenborg
-  AssignClass (a2360c42-a070-417e-8bd5-7a2c260b4424)
- Call ID: a2360c42-a070-417e-8bd5-7a2c260b4424
-  Args:
-    source: Inge_Terney
+    source: Anne-Marie
     type: :Woman
-  AssignClass (f0d7b800-cf36-45d3-ab26-b40fc50ccc11)
- Call ID: f0d7b800-cf36-45d3-ab26-b40fc50ccc11
+  AssignClass (839704b1-6e2a-4090-946e-b2552545b851)
+ Call ID: 839704b1-6e2a-4090-946e-b2552545b851
   Args:
     type: :Man
-    source: Georg_Terney
-  AssignClass (1f922d1e-0449-4ce0-96a3-7ecaf8cd4976)
- Call ID: 1f922d1e-0449-4ce0-96a3-7ecaf8cd4976
-  Args:
-    source: Jenny_Kamilla_Hansen
-    type: :Woman
-  AssignClass (56eba6f8-e953-4590-a5b2-3e2e0a684c73)
- Call ID: 56eba6f8-e953-4590-a5b2-3e2e0a684c73
+    source: Frederik_IX
+  AssignClass (6ee4f8ea-788f-418f-b3d4-0a77a62c19e4)
+ Call ID: 6ee4f8ea-788f-418f-b3d4-0a77a62c19e4
   Args:
     type: :Woman
-    source: Sussie_Hjorhoy-Pedersen
-  AssignClass (b8e4182e-5a5b-4c41-a523-9288f4f4662a)
- Call ID: b8e4182e-5a5b-4c41-a523-9288f4f4662a
+    source: Ingrid_of_Sweden
+  AssignClass (fe38356b-5b7a-4fc7-80ef-c1a5a42a08b4)
+ Call ID: fe38356b-5b7a-4fc7-80ef-c1a5a42a08b4
   Args:
-    source: Frederick_Walter_Pedersen
     type: :Man
-  AssignClass (1bcfe089-dda1-46ef-98ed-7caa6400ee48)
- Call ID: 1bcfe089-dda1-46ef-98ed-7caa6400ee48
+    source: Constantine_II
+  AssignClass (d8e70b9a-feca-4b49-9f61-be3f270775c7)
+ Call ID: d8e70b9a-feca-4b49-9f61-be3f270775c7
   Args:
-    source: Ruth_Hjorhoy
+    type: :Man
+    source: Christian_X
+  AssignClass (47678915-1b46-434a-85a0-1548b90e38d9)
+ Call ID: 47678915-1b46-434a-85a0-1548b90e38d9
+  Args:
+    source: Alexandrine_of_Mecklenburg-Schwerin
     type: :Woman
-  AssignClass (08c29fc3-64b3-4ccc-a647-42dcf270ac2f)
- Call ID: 08c29fc3-64b3-4ccc-a647-42dcf270ac2f
+  AssignClass (abd8d3ad-6dea-403d-b04f-1ce3457699f3)
+ Call ID: abd8d3ad-6dea-403d-b04f-1ce3457699f3
   Args:
-    source: Princess_Elisabeth_of_Denmark
+    type: :Man
+    source: Gustaf_VI_Adolf
+  AssignClass (c8cdefaa-4410-4d1f-8084-652456d501ba)
+ Call ID: c8cdefaa-4410-4d1f-8084-652456d501ba
+  Args:
+    source: Margaret_of_Connaught
     type: :Woman
-  AddLiteral (0f2cbe0d-6b9a-4370-adcc-9f431cd01692)
- Call ID: 0f2cbe0d-6b9a-4370-adcc-9f431cd01692
+  AssignClass (e4467f4a-3f87-4911-b0ec-24200b70017e)
+ Call ID: e4467f4a-3f87-4911-b0ec-24200b70017e
   Args:
-    source: Ingolf_of_Rosenborg
+    source: Margrethe_II
+    type: :Woman
+  AssignClass (b0cf0d9b-9182-49e3-bf63-2b88f82d7471)
+ Call ID: b0cf0d9b-9182-49e3-bf63-2b88f82d7471
+  Args:
+    type: :Woman
+    source: Benedikte
+  AssignClass (e1134d8b-643d-4d4a-9858-089a0471728a)
+ Call ID: e1134d8b-643d-4d4a-9858-089a0471728a
+  Args:
+    type: :Man
+    source: Paul_of_Greece
+  AssignClass (9a91941f-fb2c-4565-8ffc-8a49d965beba)
+ Call ID: 9a91941f-fb2c-4565-8ffc-8a49d965beba
+  Args:
+    source: Frederica_of_Greece
+    type: :Woman
+  AssignClass (6a58d188-68f4-40b4-ae58-d3c4c30f361d)
+ Call ID: 6a58d188-68f4-40b4-ae58-d3c4c30f361d
+  Args:
+    type: :Woman
+    source: Alexia
+  AssignClass (9c18368c-3481-49bb-a8f2-75a2ea9736a7)
+ Call ID: 9c18368c-3481-49bb-a8f2-75a2ea9736a7
+  Args:
+    type: :Man
+    source: Pavlos
+  AssignClass (c5407e2f-b8ec-4f4b-a1fa-a9c5c41804ff)
+ Call ID: c5407e2f-b8ec-4f4b-a1fa-a9c5c41804ff
+  Args:
+    type: :Man
+    source: Nikolaos
+  AssignClass (9ea3d0fe-cbe0-48cc-8f37-8723d2377c5b)
+ Call ID: 9ea3d0fe-cbe0-48cc-8f37-8723d2377c5b
+  Args:
+    source: Theodora
+    type: :Woman
+  AssignClass (b9c1b687-020c-4be3-8d2f-cf76b95d46dd)
+ Call ID: b9c1b687-020c-4be3-8d2f-cf76b95d46dd
+  Args:
+    type: :Man
+    source: Philippos
+  AddLiteral (0fa407c8-a181-4bf5-9da0-e9420464d117)
+ Call ID: 0fa407c8-a181-4bf5-9da0-e9420464d117
+  Args:
+    literal_value: 1946
+    source: Anne-Marie
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1940
-    literal_type: xsd:integer
-  AddTriple (5b99e35d-201c-4707-8baf-6cd1e683e8cc)
- Call ID: 5b99e35d-201c-4707-8baf-6cd1e683e8cc
+  AddTriple (98d25d64-eaad-486f-8979-745940b78341)
+ Call ID: 98d25d64-eaad-486f-8979-745940b78341
   Args:
-    source: Ingolf_of_Rosenborg
     relation: :hasFather
-    target: Prince_Knud
-  AddTriple (c0820709-bc3b-4540-a61e-df410f4c8ab4)
- Call ID: c0820709-bc3b-4540-a61e-df410f4c8ab4
+    target: Frederik_IX
+    source: Anne-Marie
+  AddTriple (8a7abf75-5076-4777-a2c3-52922dc9b5c1)
+ Call ID: 8a7abf75-5076-4777-a2c3-52922dc9b5c1
   Args:
-    source: Prince_Knud
+    source: Anne-Marie
+    target: Ingrid_of_Sweden
+    relation: :hasMother
+  AddTriple (d84799f2-0e4f-460b-af0f-953e82db8d7c)
+ Call ID: d84799f2-0e4f-460b-af0f-953e82db8d7c
+  Args:
     relation: :hasFather
-    target: Christian_X_of_Denmark
-  AddTriple (21b16922-f622-4704-a971-1b6d527b0209)
- Call ID: 21b16922-f622-4704-a971-1b6d527b0209
+    source: Frederik_IX
+    target: Christian_X
+  AddTriple (91d1c84f-f4fa-4133-8659-77a8251f57a3)
+ Call ID: 91d1c84f-f4fa-4133-8659-77a8251f57a3
   Args:
-    target: Christian_of_Rosenborg
-    source: Ingolf_of_Rosenborg
-    relation: :hasBrother
-  AddTriple (21905ef3-9bd9-4d27-9f3a-f2768e62838b)
- Call ID: 21905ef3-9bd9-4d27-9f3a-f2768e62838b
+    relation: :hasMother
+    target: Alexandrine_of_Mecklenburg-Schwerin
+    source: Frederik_IX
+  AddTriple (e5a7b1fa-9a3f-4952-9b5f-4e09d0acc52e)
+ Call ID: e5a7b1fa-9a3f-4952-9b5f-4e09d0acc52e
   Args:
-    target: Princess_Elisabeth_of_Denmark
-    source: Ingolf_of_Rosenborg
+    relation: :hasFather
+    target: Gustaf_VI_Adolf
+    source: Ingrid_of_Sweden
+  AddTriple (3a1ffca3-76d8-4dc4-9281-fabc9f24791e)
+ Call ID: 3a1ffca3-76d8-4dc4-9281-fabc9f24791e
+  Args:
+    relation: :hasMother
+    source: Ingrid_of_Sweden
+    target: Margaret_of_Connaught
+  AddTriple (2020ced6-d530-4677-ad56-43e4ff36ab68)
+ Call ID: 2020ced6-d530-4677-ad56-43e4ff36ab68
+  Args:
+    source: Anne-Marie
+    target: Margrethe_II
     relation: :hasSister
-  AddTriple (08a97d84-8a8d-4d6d-9628-cbff7fd6b0b0)
- Call ID: 08a97d84-8a8d-4d6d-9628-cbff7fd6b0b0
+  AddTriple (a8502064-3ba9-454c-810d-a6258b23034b)
+ Call ID: a8502064-3ba9-454c-810d-a6258b23034b
   Args:
-    source: Ingolf_of_Rosenborg
+    relation: :hasSister
+    target: Benedikte
+    source: Anne-Marie
+  AddTriple (068e82ea-c6f9-4f52-a8b4-ca3035b67828)
+ Call ID: 068e82ea-c6f9-4f52-a8b4-ca3035b67828
+  Args:
     relation: :hasFather
-    target: Prince_Knud
-  AddTriple (0e94378a-9986-4771-938c-562d818fe9ff)
- Call ID: 0e94378a-9986-4771-938c-562d818fe9ff
+    source: Constantine_II
+    target: Paul_of_Greece
+  AddTriple (0f8916c4-7c9f-4895-8ab5-d945a10b4d2c)
+ Call ID: 0f8916c4-7c9f-4895-8ab5-d945a10b4d2c
   Args:
-    source: Inge_Terney
-    relation: :hasFather
-    target: Georg_Terney
-  AddTriple (373eb64f-6df3-4845-bc86-9e3a7fa5590e)
- Call ID: 373eb64f-6df3-4845-bc86-9e3a7fa5590e
-  Args:
-    target: Jenny_Kamilla_Hansen
-    source: Inge_Terney
     relation: :hasMother
-  AddTriple (1d6117c7-64e9-40f4-9b95-250ea5144b33)
- Call ID: 1d6117c7-64e9-40f4-9b95-250ea5144b33
-  Args:
-    source: Sussie_Hjorhoy-Pedersen
-    relation: :hasFather
-    target: Frederick_Walter_Pedersen
-  AddTriple (f20667b0-63a9-487c-9746-0b0e501c06df)
- Call ID: f20667b0-63a9-487c-9746-0b0e501c06df
-  Args:
-    target: Ruth_Hjorhoy
-    source: Sussie_Hjorhoy-Pedersen
-    relation: :hasMother
-  AddLiteral (5ddff416-1b88-4767-a946-37e1e82e668d)
- Call ID: 5ddff416-1b88-4767-a946-37e1e82e668d
+    source: Constantine_II
+    target: Frederica_of_Greece
+  AddLiteral (dbad8cfc-c544-4c04-8d52-2caf1e710068)
+ Call ID: dbad8cfc-c544-4c04-8d52-2caf1e710068
   Args:
     literal_type: xsd:integer
-    literal_value: 1968
+    source: Anne-Marie
+    literal_value: 1964
     relation: :hasMarriageYear
-    source: Ingolf_of_Rosenborg
-  AddTriple (76b715a1-31c7-430e-bab6-0536d3e9a4ab)
- Call ID: 76b715a1-31c7-430e-bab6-0536d3e9a4ab
+  AddTriple (690b29c1-120c-422a-865b-e425899db79e)
+ Call ID: 690b29c1-120c-422a-865b-e425899db79e
   Args:
-    source: Ingolf_of_Rosenborg
     relation: :hasRelation
-    target: Inge_Terney
-  AddTriple (0d8c3bcb-7f62-4266-90b4-d506e844572c)
- Call ID: 0d8c3bcb-7f62-4266-90b4-d506e844572c
+    source: Anne-Marie
+    target: Constantine_II
+  AddTriple (f846ebdd-605f-4af7-aab5-910a60dec5e0)
+ Call ID: f846ebdd-605f-4af7-aab5-910a60dec5e0
   Args:
-    source: Ingolf_of_Rosenborg
-    relation: :hasRelation
-    target: Sussie_Hjorhoy-Pedersen
-  Finish (e8806c92-67a4-46ad-bb3c-0b8c6d5060af)
- Call ID: e8806c92-67a4-46ad-bb3c-0b8c6d5060af
+    relation: :hasMother
+    source: Alexia
+    target: Anne-Marie
+  AddTriple (b9e0f47a-c272-402b-a740-4ab16af8f2fa)
+ Call ID: b9e0f47a-c272-402b-a740-4ab16af8f2fa
   Args:
+    target: Constantine_II
+    source: Alexia
+    relation: :hasFather
+  AddTriple (b4fd3674-09aa-48ce-b467-432549a50bd7)
+ Call ID: b4fd3674-09aa-48ce-b467-432549a50bd7
+  Args:
+    source: Pavlos
+    target: Anne-Marie
+    relation: :hasMother
+  AddTriple (88dbbb93-3074-4501-8b09-813a4fd4b5b3)
+ Call ID: 88dbbb93-3074-4501-8b09-813a4fd4b5b3
+  Args:
+    relation: :hasFather
+    source: Pavlos
+    target: Constantine_II
+  AddTriple (ff98bf97-ddbd-489e-ba2f-7b0d9065aa84)
+ Call ID: ff98bf97-ddbd-489e-ba2f-7b0d9065aa84
+  Args:
+    target: Anne-Marie
+    source: Nikolaos
+    relation: :hasMother
+  AddTriple (7b9bf7c4-1b48-43f4-8de5-eafdd162886e)
+ Call ID: 7b9bf7c4-1b48-43f4-8de5-eafdd162886e
+  Args:
+    source: Nikolaos
+    target: Constantine_II
+    relation: :hasFather
+  AddTriple (f097cf00-6313-4cd9-8712-90dbd6ce0a6a)
+ Call ID: f097cf00-6313-4cd9-8712-90dbd6ce0a6a
+  Args:
+    source: Theodora
+    target: Anne-Marie
+    relation: :hasMother
+  AddTriple (de646792-cb98-4a98-8236-11e17ec0d587)
+ Call ID: de646792-cb98-4a98-8236-11e17ec0d587
+  Args:
+    target: Constantine_II
+    source: Theodora
+    relation: :hasFather
+  AddTriple (f3e0ec58-0689-4ec8-ab15-2ebbe6355c64)
+ Call ID: f3e0ec58-0689-4ec8-ab15-2ebbe6355c64
+  Args:
+    relation: :hasMother
+    source: Philippos
+    target: Anne-Marie
+  AddTriple (bf121d2f-43a7-47c6-b3c7-8a6bcbba0e6f)
+ Call ID: bf121d2f-43a7-47c6-b3c7-8a6bcbba0e6f
+  Args:
+    target: Constantine_II
+    source: Philippos
+    relation: :hasFather
+  AddLiteral (04e1206e-32fd-4d47-860d-d1dfa4a6d97c)
+ Call ID: 04e1206e-32fd-4d47-860d-d1dfa4a6d97c
+  Args:
+    source: Constantine_II
+    literal_type: xsd:integer
+    literal_value: 2023
+    relation: :hasDeathYear
+  Finish (0c9964cf-02ad-42fe-9258-ff124db8dc3c)
+ Call ID: 0c9964cf-02ad-42fe-9258-ff124db8dc3c
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -614,39 +1000,63 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ingolf_of_Rosenborg a :Man ;
-      :hasBirthYear 1940 ;
-      :hasBrother data:Christian_of_Rosenborg ;
-      :hasFather data:Prince_Knud ;
-      :hasMarriageYear 1968 ;
-      :hasRelation data:Inge_Terney,
-          data:Sussie_Hjorhoy-Pedersen ;
-      :hasSister data:Princess_Elisabeth_of_Denmark .
+  data:Alexia a :Woman ;
+      :hasFather data:Constantine_II ;
+      :hasMother data:Anne-Marie .
 
-  data:Christian_X_of_Denmark a :Man .
+  data:Nikolaos a :Man ;
+      :hasFather data:Constantine_II ;
+      :hasMother data:Anne-Marie .
 
-  data:Christian_of_Rosenborg a :Man .
+  data:Pavlos a :Man ;
+      :hasFather data:Constantine_II ;
+      :hasMother data:Anne-Marie .
 
-  data:Frederick_Walter_Pedersen a :Man .
+  data:Philippos a :Man ;
+      :hasFather data:Constantine_II ;
+      :hasMother data:Anne-Marie .
 
-  data:Georg_Terney a :Man .
+  data:Theodora a :Woman ;
+      :hasFather data:Constantine_II ;
+      :hasMother data:Anne-Marie .
 
-  data:Inge_Terney a :Woman ;
-      :hasFather data:Georg_Terney ;
-      :hasMother data:Jenny_Kamilla_Hansen .
+  data:Alexandrine_of_Mecklenburg-Schwerin a :Woman .
 
-  data:Jenny_Kamilla_Hansen a :Woman .
+  data:Benedikte a :Woman .
 
-  data:Prince_Knud a :Man ;
-      :hasFather data:Christian_X_of_Denmark .
+  data:Christian_X a :Man .
 
-  data:Princess_Elisabeth_of_Denmark a :Woman .
+  data:Frederica_of_Greece a :Woman .
 
-  data:Ruth_Hjorhoy a :Woman .
+  data:Frederik_IX a :Man ;
+      :hasFather data:Christian_X ;
+      :hasMother data:Alexandrine_of_Mecklenburg-Schwerin .
 
-  data:Sussie_Hjorhoy-Pedersen a :Woman ;
-      :hasFather data:Frederick_Walter_Pedersen ;
-      :hasMother data:Ruth_Hjorhoy .
+  data:Gustaf_VI_Adolf a :Man .
+
+  data:Ingrid_of_Sweden a :Woman ;
+      :hasFather data:Gustaf_VI_Adolf ;
+      :hasMother data:Margaret_of_Connaught .
+
+  data:Margaret_of_Connaught a :Woman .
+
+  data:Margrethe_II a :Woman .
+
+  data:Paul_of_Greece a :Man .
+
+  data:Anne-Marie a :Woman ;
+      :hasBirthYear 1946 ;
+      :hasFather data:Frederik_IX ;
+      :hasMarriageYear 1964 ;
+      :hasMother data:Ingrid_of_Sweden ;
+      :hasRelation data:Constantine_II ;
+      :hasSister data:Benedikte,
+          data:Margrethe_II .
+
+  data:Constantine_II a :Man ;
+      :hasDeathYear 2023 ;
+      :hasFather data:Paul_of_Greece ;
+      :hasMother data:Frederica_of_Greece .
 
 
 
@@ -658,158 +1068,446 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (ad5c40dd-6562-4cad-970a-4e99a665ccc1)
- Call ID: ad5c40dd-6562-4cad-970a-4e99a665ccc1
+  ValidateShacl (d7a95ac0-1e0d-4a67-9ff7-02f401de14c3)
+ Call ID: d7a95ac0-1e0d-4a67-9ff7-02f401de14c3
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:54
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Knud is assigned as the father of Ingolf_of_Rosenborg, but it lacks the required Ancestor class.
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Pavlos' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Knud, :Ancestor)
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Christian_X_of_Denmark is assigned as the father of Prince_Knud, but it lacks the required Ancestor class.
+      The value node 'Paul_of_Greece' for the property 'hasFather' on node 'Constantine_II' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_X_of_Denmark, :Ancestor)
+      AssignClass(node: 'Paul_of_Greece', class: ':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Knud is assigned as the father of Ingolf_of_Rosenborg, but it lacks the required Ancestor class.
+      The value node 'Christian_X' for the property 'hasFather' on node 'Frederik_IX' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Knud, :Ancestor)
+      AssignClass(node: 'Christian_X', class: ':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Christian_X_of_Denmark is assigned as the father of Prince_Knud, but it lacks the required Ancestor class.
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Philippos' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_X_of_Denmark, :Ancestor)
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Frederick_Walter_Pedersen is assigned as the father of Sussie_Hjorhoy-Pedersen, but it lacks the required Ancestor class.
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Nikolaos' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Walter_Pedersen, :Ancestor)
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Georg_Terney is assigned as the father of Inge_Terney, but it lacks the required Ancestor class.
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Pavlos' is not classified as an ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Georg_Terney, :Ancestor)
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Ruth_Hjorhoy is assigned as the mother of Sussie_Hjorhoy-Pedersen, but it lacks the required Ancestor class.
+      The value node 'Frederica_of_Greece' for the property 'hasMother' on node 'Constantine_II' is not classified as an ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ruth_Hjorhoy, :Ancestor)
+      AssignClass(node: 'Frederica_of_Greece', class: ':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Jenny_Kamilla_Hansen is assigned as the mother of Inge_Terney, but it lacks the required Ancestor class.
+      The value node 'Alexandrine_of_Mecklenburg-Schwerin' for the property 'hasMother' on node 'Frederik_IX' is not classified as an ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jenny_Kamilla_Hansen, :Ancestor)
+      AssignClass(node: 'Alexandrine_of_Mecklenburg-Schwerin', class: ':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Prince_Knud is assigned as the father of Ingolf_of_Rosenborg, but it lacks the required Ancestor class.
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Philippos' is not classified as an ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Knud, :Ancestor)
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Christian_X_of_Denmark is assigned as the father of Prince_Knud, but it lacks the required Ancestor class.
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Nikolaos' is not classified as an ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_X_of_Denmark, :Ancestor)
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Frederick_Walter_Pedersen is assigned as the father of Sussie_Hjorhoy-Pedersen, but it lacks the required Ancestor class.
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Philippos' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Walter_Pedersen, :Ancestor)
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Georg_Terney is assigned as the father of Inge_Terney, but it lacks the required Ancestor class.
+      The value node 'Gustaf_VI_Adolf' for the property 'hasFather' on node 'Ingrid_of_Sweden' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Georg_Terney, :Ancestor)
+      AssignClass(node: 'Gustaf_VI_Adolf', class: ':Ancestor')
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Ruth_Hjorhoy is assigned as the mother of Sussie_Hjorhoy-Pedersen, but it lacks the required Ancestor class.
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Alexia' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ruth_Hjorhoy, :Ancestor)
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Jenny_Kamilla_Hansen is assigned as the mother of Inge_Terney, but it lacks the required Ancestor class.
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Nikolaos' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jenny_Kamilla_Hansen, :Ancestor)
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Georg_Terney is assigned as the father of Inge_Terney, but it lacks the required Ancestor class.
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Pavlos' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Georg_Terney, :Ancestor)
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Frederick_Walter_Pedersen is assigned as the father of Sussie_Hjorhoy-Pedersen, but it lacks the required Ancestor class.
+      The value node 'Christian_X' for the property 'hasFather' on node 'Frederik_IX' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Walter_Pedersen, :Ancestor)
+      AssignClass(node: 'Christian_X', class: ':Ancestor')
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Jenny_Kamilla_Hansen is assigned as the mother of Inge_Terney, but it lacks the required Ancestor class.
+      The value node 'Paul_of_Greece' for the property 'hasFather' on node 'Constantine_II' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jenny_Kamilla_Hansen, :Ancestor)
+      AssignClass(node: 'Paul_of_Greece', class: ':Ancestor')
 
 
   Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Frederik_IX' for the property 'hasFather' on node 'Anne-Marie' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Frederik_IX', class: ':Ancestor')
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Theodora' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
+
+
+  Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Ruth_Hjorhoy is assigned as the mother of Sussie_Hjorhoy-Pedersen, but it lacks the required Ancestor class.
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Philippos' is not classified as an ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ruth_Hjorhoy, :Ancestor)
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Margaret_of_Connaught' for the property 'hasMother' on node 'Ingrid_of_Sweden' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Margaret_of_Connaught', class: ':Ancestor')
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Alexia' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Nikolaos' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Pavlos' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Alexandrine_of_Mecklenburg-Schwerin' for the property 'hasMother' on node 'Frederik_IX' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Alexandrine_of_Mecklenburg-Schwerin', class: ':Ancestor')
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Frederica_of_Greece' for the property 'hasMother' on node 'Constantine_II' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Frederica_of_Greece', class: ':Ancestor')
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Ingrid_of_Sweden' for the property 'hasMother' on node 'Anne-Marie' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Ingrid_of_Sweden', class: ':Ancestor')
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Theodora' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Philippos' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Gustaf_VI_Adolf' for the property 'hasFather' on node 'Ingrid_of_Sweden' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Gustaf_VI_Adolf', class: ':Ancestor')
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Alexia' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Nikolaos' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Pavlos' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
+
+
+  Violation [34]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Christian_X' for the property 'hasFather' on node 'Frederik_IX' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Christian_X', class: ':Ancestor')
+
+
+  Violation [35]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Paul_of_Greece' for the property 'hasFather' on node 'Constantine_II' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Paul_of_Greece', class: ':Ancestor')
+
+
+  Violation [36]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Frederik_IX' for the property 'hasFather' on node 'Anne-Marie' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Frederik_IX', class: ':Ancestor')
+
+
+  Violation [37]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Theodora' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
+
+
+  Violation [38]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Philippos' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+
+
+  Violation [39]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Margaret_of_Connaught' for the property 'hasMother' on node 'Ingrid_of_Sweden' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Margaret_of_Connaught', class: ':Ancestor')
+
+
+  Violation [40]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Alexia' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+
+
+  Violation [41]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Nikolaos' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+
+
+  Violation [42]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Pavlos' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+
+
+  Violation [43]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Alexandrine_of_Mecklenburg-Schwerin' for the property 'hasMother' on node 'Frederik_IX' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Alexandrine_of_Mecklenburg-Schwerin', class: ':Ancestor')
+
+
+  Violation [44]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Frederica_of_Greece' for the property 'hasMother' on node 'Constantine_II' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Frederica_of_Greece', class: ':Ancestor')
+
+
+  Violation [45]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Ingrid_of_Sweden' for the property 'hasMother' on node 'Anne-Marie' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Ingrid_of_Sweden', class: ':Ancestor')
+
+
+  Violation [46]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Theodora' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+
+
+  Violation [47]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Gustaf_VI_Adolf' for the property 'hasFather' on node 'Ingrid_of_Sweden' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Gustaf_VI_Adolf', class: ':Ancestor')
+
+
+  Violation [48]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Frederik_IX' for the property 'hasFather' on node 'Anne-Marie' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Frederik_IX', class: ':Ancestor')
+
+
+  Violation [49]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Alexia' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
+
+
+  Violation [50]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Constantine_II' for the property 'hasFather' on node 'Theodora' is not classified as an ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Constantine_II', class: ':Ancestor')
+
+
+  Violation [51]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Margaret_of_Connaught' for the property 'hasMother' on node 'Ingrid_of_Sweden' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Margaret_of_Connaught', class: ':Ancestor')
+
+
+  Violation [52]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Ingrid_of_Sweden' for the property 'hasMother' on node 'Anne-Marie' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Ingrid_of_Sweden', class: ':Ancestor')
+
+
+  Violation [53]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Alexia' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+
+
+  Violation [54]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Anne-Marie' for the property 'hasMother' on node 'Theodora' is not classified as an ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
 
 
 
@@ -818,39 +1516,75 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (4472b466-8a62-4707-b82a-2ccfcc866aa5)
- Call ID: 4472b466-8a62-4707-b82a-2ccfcc866aa5
+  AssignClass (e679dabc-f8ae-436d-8207-fb4a0d0f02a9)
+ Call ID: e679dabc-f8ae-436d-8207-fb4a0d0f02a9
   Args:
+    source: Constantine_II
     type: :Ancestor
-    source: Prince_Knud
-  AssignClass (5241752e-01a1-4b74-accb-903715c69409)
- Call ID: 5241752e-01a1-4b74-accb-903715c69409
+  AssignClass (5fa3de11-37d2-43de-a232-65db347b9ea9)
+ Call ID: 5fa3de11-37d2-43de-a232-65db347b9ea9
   Args:
+    source: Paul_of_Greece
     type: :Ancestor
-    source: Christian_X_of_Denmark
-  AssignClass (b33e89a2-3df9-4f04-81c4-d9a3f052c72a)
- Call ID: b33e89a2-3df9-4f04-81c4-d9a3f052c72a
+  AssignClass (f1d520a7-6c78-4111-8e66-fd30369b915c)
+ Call ID: f1d520a7-6c78-4111-8e66-fd30369b915c
   Args:
+    source: Christian_X
     type: :Ancestor
-    source: Frederick_Walter_Pedersen
-  AssignClass (8ace19aa-3459-4ab3-989b-329cfeb45e31)
- Call ID: 8ace19aa-3459-4ab3-989b-329cfeb45e31
+  AssignClass (43b356ca-e2b0-4bba-b50d-f2759eb459d4)
+ Call ID: 43b356ca-e2b0-4bba-b50d-f2759eb459d4
   Args:
+    source: Frederica_of_Greece
     type: :Ancestor
-    source: Georg_Terney
-  AssignClass (79c66827-695a-419c-b83e-89b247e31d91)
- Call ID: 79c66827-695a-419c-b83e-89b247e31d91
+  AssignClass (ec81508c-7202-4523-8a41-f076e98a00a5)
+ Call ID: ec81508c-7202-4523-8a41-f076e98a00a5
   Args:
+    source: Alexandrine_of_Mecklenburg-Schwerin
     type: :Ancestor
-    source: Ruth_Hjorhoy
-  AssignClass (b308adb8-231c-481b-b4bf-4498e60e1394)
- Call ID: b308adb8-231c-481b-b4bf-4498e60e1394
+  AssignClass (7af25704-1e40-4576-b0b0-c904326bfff3)
+ Call ID: 7af25704-1e40-4576-b0b0-c904326bfff3
   Args:
+    source: Anne-Marie
     type: :Ancestor
-    source: Jenny_Kamilla_Hansen
-  ValidateShacl (c94b21cd-aee5-4aec-be73-77e8c27c1ebd)
- Call ID: c94b21cd-aee5-4aec-be73-77e8c27c1ebd
+  AssignClass (53c5dd1b-9136-498b-a015-d72318f441c8)
+ Call ID: 53c5dd1b-9136-498b-a015-d72318f441c8
   Args:
+    source: Gustaf_VI_Adolf
+    type: :Ancestor
+  AssignClass (825d2681-dbe8-4635-8e3e-dfd15dc54506)
+ Call ID: 825d2681-dbe8-4635-8e3e-dfd15dc54506
+  Args:
+    source: Frederik_IX
+    type: :Ancestor
+  AssignClass (25ba69a7-1127-4383-b012-30ce5674cb98)
+ Call ID: 25ba69a7-1127-4383-b012-30ce5674cb98
+  Args:
+    source: Margaret_of_Connaught
+    type: :Ancestor
+  AssignClass (801641d0-e59c-42fd-9bb7-670b79b5e48e)
+ Call ID: 801641d0-e59c-42fd-9bb7-670b79b5e48e
+  Args:
+    source: Ingrid_of_Sweden
+    type: :Ancestor
+  Finish (e3b76577-5b35-4d8b-8041-60e235f06b85)
+ Call ID: e3b76577-5b35-4d8b-8041-60e235f06b85
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -879,47 +1613,87 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ingolf_of_Rosenborg a :Man ;
-      :hasBirthYear 1940 ;
-      :hasBrother data:Christian_of_Rosenborg ;
-      :hasFather data:Prince_Knud ;
-      :hasMarriageYear 1968 ;
-      :hasRelation data:Inge_Terney,
-          data:Sussie_Hjorhoy-Pedersen ;
-      :hasSister data:Princess_Elisabeth_of_Denmark .
+  data:Alexia a :Woman ;
+      :hasFather data:Constantine_II ;
+      :hasMother data:Anne-Marie .
 
-  data:Christian_X_of_Denmark a :Ancestor,
-          :Man .
+  data:Nikolaos a :Man ;
+      :hasFather data:Constantine_II ;
+      :hasMother data:Anne-Marie .
 
-  data:Christian_of_Rosenborg a :Man .
+  data:Pavlos a :Man ;
+      :hasFather data:Constantine_II ;
+      :hasMother data:Anne-Marie .
 
-  data:Frederick_Walter_Pedersen a :Ancestor,
-          :Man .
+  data:Philippos a :Man ;
+      :hasFather data:Constantine_II ;
+      :hasMother data:Anne-Marie .
 
-  data:Georg_Terney a :Ancestor,
-          :Man .
+  data:Theodora a :Woman ;
+      :hasFather data:Constantine_II ;
+      :hasMother data:Anne-Marie .
 
-  data:Inge_Terney a :Woman ;
-      :hasFather data:Georg_Terney ;
-      :hasMother data:Jenny_Kamilla_Hansen .
-
-  data:Jenny_Kamilla_Hansen a :Ancestor,
+  data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
           :Woman .
 
-  data:Prince_Knud a :Ancestor,
+  data:Benedikte a :Woman .
+
+  data:Christian_X a :Ancestor,
+          :Man .
+
+  data:Frederica_of_Greece a :Ancestor,
+          :Woman .
+
+  data:Frederik_IX a :Ancestor,
           :Man ;
-      :hasFather data:Christian_X_of_Denmark .
+      :hasFather data:Christian_X ;
+      :hasMother data:Alexandrine_of_Mecklenburg-Schwerin .
 
-  data:Princess_Elisabeth_of_Denmark a :Woman .
+  data:Gustaf_VI_Adolf a :Ancestor,
+          :Man .
 
-  data:Ruth_Hjorhoy a :Ancestor,
+  data:Ingrid_of_Sweden a :Ancestor,
+          :Woman ;
+      :hasFather data:Gustaf_VI_Adolf ;
+      :hasMother data:Margaret_of_Connaught .
+
+  data:Margaret_of_Connaught a :Ancestor,
           :Woman .
 
-  data:Sussie_Hjorhoy-Pedersen a :Woman ;
-      :hasFather data:Frederick_Walter_Pedersen ;
-      :hasMother data:Ruth_Hjorhoy .
+  data:Margrethe_II a :Woman .
+
+  data:Paul_of_Greece a :Ancestor,
+          :Man .
+
+  data:Anne-Marie a :Ancestor,
+          :Woman ;
+      :hasBirthYear 1946 ;
+      :hasFather data:Frederik_IX ;
+      :hasMarriageYear 1964 ;
+      :hasMother data:Ingrid_of_Sweden ;
+      :hasRelation data:Constantine_II ;
+      :hasSister data:Benedikte,
+          data:Margrethe_II .
+
+  data:Constantine_II a :Ancestor,
+          :Man ;
+      :hasDeathYear 2023 ;
+      :hasFather data:Paul_of_Greece ;
+      :hasMother data:Frederica_of_Greece .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (0bb8c280-ce6b-423b-9145-64c6a06d084d)
+ Call ID: 0bb8c280-ce6b-423b-9145-64c6a06d084d
+  Args:
 
 ================================= Tool Message =================================
 
@@ -929,6 +1703,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (81194f9f-ef4d-4086-937e-1f3b049280bb)
- Call ID: 81194f9f-ef4d-4086-937e-1f3b049280bb
+  Finish (dcd7babb-146b-44e1-8a3d-f1ef43b50708)
+ Call ID: dcd7babb-146b-44e1-8a3d-f1ef43b50708
   Args:

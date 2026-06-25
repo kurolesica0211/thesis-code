@@ -1,0 +1,217 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasRelation data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isSiblingOf data:Juan_Carlos_I .
+
+data:Enrico_Eugenio a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Enrico_Eugenio ;
+    :hasChild data:Step_son_of_Maria_Cristina ;
+    :hasRelation data:Enrico_Eugenio,
+        data:Step_son_of_Maria_Cristina ;
+    :hasSon data:Step_son_of_Maria_Cristina ;
+    :isAncestorOf data:Step_son_of_Maria_Cristina ;
+    :isBloodrelationOf data:Enrico_Eugenio ;
+    :isBrotherOf data:Enrico_Eugenio ;
+    :isFatherOf data:Step_son_of_Maria_Cristina ;
+    :isParentOf data:Step_son_of_Maria_Cristina ;
+    :isSiblingOf data:Enrico_Eugenio ;
+    :isUncleOf data:Step_son_of_Maria_Cristina .
+
+data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Step_son_of_Maria_Cristina ;
+    :hasRelation data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla,
+        data:Step_son_of_Maria_Cristina ;
+    :hasSister data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla ;
+    :hasSon data:Step_son_of_Maria_Cristina ;
+    :isAncestorOf data:Step_son_of_Maria_Cristina ;
+    :isAuntOf data:Step_son_of_Maria_Cristina ;
+    :isBloodrelationOf data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla ;
+    :isMotherOf data:Step_son_of_Maria_Cristina ;
+    :isParentOf data:Step_son_of_Maria_Cristina ;
+    :isSiblingOf data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla ;
+    :isSisterOf data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasChild data:Maria_Cristina_of_Spain ;
+    :hasDaughter data:Maria_Cristina_of_Spain ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Maria_Cristina_of_Spain ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Maria_Cristina_of_Spain ;
+    :isParentOf data:Maria_Cristina_of_Spain ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Maria_Cristina_of_Spain .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_Cristina_of_Spain ;
+    :hasDaughter data:Maria_Cristina_of_Spain ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Maria_Cristina_of_Spain ;
+    :isAuntOf data:Maria_Cristina_of_Spain ;
+    :isBloodrelationOf data:Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Maria_Cristina_of_Spain ;
+    :isParentOf data:Maria_Cristina_of_Spain ;
+    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Step_son_of_Maria_Cristina a :Man,
+        :Person ;
+    :hasAncestor data:Enrico_Eugenio,
+        data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla ;
+    :hasBrother data:Step_son_of_Maria_Cristina ;
+    :hasFather data:Enrico_Eugenio ;
+    :hasMother data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla ;
+    :hasParent data:Enrico_Eugenio,
+        data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla ;
+    :hasRelation data:Enrico_Eugenio,
+        data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla,
+        data:Step_son_of_Maria_Cristina ;
+    :isBloodrelationOf data:Step_son_of_Maria_Cristina ;
+    :isBrotherOf data:Step_son_of_Maria_Cristina ;
+    :isChildOf data:Enrico_Eugenio,
+        data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla ;
+    :isSiblingOf data:Step_son_of_Maria_Cristina ;
+    :isSonOf data:Enrico_Eugenio,
+        data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla .
+
+data:Alfonso_son_of_Alfonso_XIII a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_son_of_Alfonso_XIII,
+        data:Gonzalo_son_of_Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isBloodrelationOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain ;
+    :isBrotherOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain ;
+    :isSiblingOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain .
+
+data:Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasBrother data:Alfonso_son_of_Alfonso_XIII,
+        data:Gonzalo_son_of_Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isBloodrelationOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain ;
+    :isSiblingOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain ;
+    :isSisterOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain .
+
+data:Gonzalo_son_of_Alfonso_XIII a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_son_of_Alfonso_XIII,
+        data:Gonzalo_son_of_Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isBloodrelationOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain ;
+    :isBrotherOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain ;
+    :isSiblingOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain .
+
+data:Maria_Cristina_of_Spain a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBirthYear 1911 ;
+    :hasBrother data:Alfonso_son_of_Alfonso_XIII,
+        data:Gonzalo_son_of_Alfonso_XIII ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Beatriz_of_Spain,
+        data:Maria_Cristina_of_Spain ;
+    :isAuntOf data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain ;
+    :isChildOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isDaughterOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain ;
+    :isSisterOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII,
+        data:Maria_Cristina_of_Spain .
+

@@ -2,39 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Granville_James_Leveson-Gower a :Man ;
-    :hasBirthYear 1918 ;
-    :hasDeathYear 1996 ;
-    :hasFather data:William_Leveson-Gower ;
-    :hasMarriageYear 1958 ;
-    :hasMother data:Rose_Bowes-Lyon ;
-    :hasRelation data:Doon_Aileen_Plunket .
+data:HowardOxenberg a :Man,
+        :Person .
 
-data:Aileen_Sibell_Mary_Guinness a :Ancestor,
+data:ManuelUlloaElias a :Man,
+        :Person ;
+    :hasDeathYear 1992 .
+
+data:NeilBalfourOfDawyck a :Man,
+        :Person .
+
+data:PrincessElizabethOfYugoslavia a :Person,
         :Woman ;
-    :hasFather data:Edward_Guinness .
+    :alsoKnownAs "Jelisaveta Karađorđević"^^xsd:string ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:PrinceAlexanderOfYugoslavia,
+        data:PrinceNicholasOfYugoslavia ;
+    :hasFather data:PrincePaulOfYugoslavia ;
+    :hasMarriageYear 1960,
+        1969,
+        1987 ;
+    :hasMother data:PrincessOlgaOfGreeceAndDenmark .
 
-data:Brindsley_Sheridan_Bushe_Plunket a :Ancestor,
-        :Man ;
-    :hasFather data:William_Plunket .
+data:PrinceAlexanderOfYugoslavia a :Man,
+        :Person ;
+    :hasFather data:PrincePaulOfYugoslavia ;
+    :hasMother data:PrincessOlgaOfGreeceAndDenmark .
 
-data:Claude_Bowes-Lyon a :Ancestor,
-        :Man .
+data:PrinceNicholasOfYugoslavia a :Man,
+        :Person ;
+    :hasFather data:PrincePaulOfYugoslavia ;
+    :hasMother data:PrincessOlgaOfGreeceAndDenmark .
 
-data:Doon_Aileen_Plunket a :Woman ;
-    :hasFather data:Brindsley_Sheridan_Bushe_Plunket ;
-    :hasMother data:Aileen_Sibell_Mary_Guinness .
+data:PrincePaulOfYugoslavia a :Ancestor,
+        :Man,
+        :Person .
 
-data:Edward_Guinness a :Ancestor,
-        :Man .
-
-data:Rose_Bowes-Lyon a :Ancestor,
-        :Woman ;
-    :hasFather data:Claude_Bowes-Lyon .
-
-data:William_Leveson-Gower a :Ancestor,
-        :Man .
-
-data:William_Plunket a :Ancestor,
-        :Man .
+data:PrincessOlgaOfGreeceAndDenmark a :Ancestor,
+        :Person,
+        :Woman .
 

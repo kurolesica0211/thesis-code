@@ -1,0 +1,120 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sylvana_Countess_of_St_Andrews a :Ancestor,
+        :Woman ;
+    :hasChild data:Edward_Edmund_Maximilian_George_Windsor ;
+    :hasRelation data:Edward_Edmund_Maximilian_George_Windsor,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sylvana_Countess_of_St_Andrews ;
+    :hasSister data:Sylvana_Countess_of_St_Andrews ;
+    :hasSon data:Edward_Edmund_Maximilian_George_Windsor ;
+    :isAncestorOf data:Edward_Edmund_Maximilian_George_Windsor ;
+    :isAuntOf data:Edward_Edmund_Maximilian_George_Windsor ;
+    :isBloodrelationOf data:Sylvana_Countess_of_St_Andrews ;
+    :isMotherOf data:Edward_Edmund_Maximilian_George_Windsor ;
+    :isParentOf data:Edward_Edmund_Maximilian_George_Windsor ;
+    :isSiblingOf data:Sylvana_Countess_of_St_Andrews ;
+    :isSisterOf data:Sylvana_Countess_of_St_Andrews .
+
+data:Lord_Nicholas_Windsor a :Man ;
+    :hasAncestor data:Prince_Edward_Duke_of_Kent ;
+    :hasBrother data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasParent data:Prince_Edward_Duke_of_Kent ;
+    :hasRelation data:Edward_Edmund_Maximilian_George_Windsor,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sylvana_Countess_of_St_Andrews ;
+    :isBloodrelationOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isBrotherOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isChildOf data:Prince_Edward_Duke_of_Kent ;
+    :isSiblingOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isSonOf data:Prince_Edward_Duke_of_Kent ;
+    :isUncleOf data:Edward_Edmund_Maximilian_George_Windsor .
+
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Edward_Duke_of_Kent ;
+    :hasChild data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasRelation data:Edward_Edmund_Maximilian_George_Windsor,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sylvana_Countess_of_St_Andrews ;
+    :hasSon data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isAncestorOf data:Edward_Edmund_Maximilian_George_Windsor,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isBloodrelationOf data:Prince_Edward_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward_Duke_of_Kent ;
+    :isFatherOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isParentOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isSiblingOf data:Prince_Edward_Duke_of_Kent ;
+    :isUncleOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor .
+
+data:Edward_Edmund_Maximilian_George_Windsor a :Man ;
+    :alsoKnownAs "Baron Downpatrick"^^xsd:string ;
+    :hasAncestor data:George_Windsor_Earl_of_St_Andrews,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sylvana_Countess_of_St_Andrews ;
+    :hasBirthYear 1988 ;
+    :hasBrother data:Edward_Edmund_Maximilian_George_Windsor ;
+    :hasFather data:George_Windsor_Earl_of_St_Andrews ;
+    :hasMother data:Sylvana_Countess_of_St_Andrews ;
+    :hasParent data:George_Windsor_Earl_of_St_Andrews,
+        data:Sylvana_Countess_of_St_Andrews ;
+    :hasRelation data:Edward_Edmund_Maximilian_George_Windsor,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sylvana_Countess_of_St_Andrews ;
+    :isBloodrelationOf data:Edward_Edmund_Maximilian_George_Windsor ;
+    :isBrotherOf data:Edward_Edmund_Maximilian_George_Windsor ;
+    :isChildOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Sylvana_Countess_of_St_Andrews ;
+    :isSiblingOf data:Edward_Edmund_Maximilian_George_Windsor ;
+    :isSonOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Sylvana_Countess_of_St_Andrews ;
+    :knownAs "Eddy Downpatrick"^^xsd:string .
+
+data:George_Windsor_Earl_of_St_Andrews a :Ancestor,
+        :Man ;
+    :hasAncestor data:Prince_Edward_Duke_of_Kent ;
+    :hasBrother data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasChild data:Edward_Edmund_Maximilian_George_Windsor ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasParent data:Prince_Edward_Duke_of_Kent ;
+    :hasRelation data:Edward_Edmund_Maximilian_George_Windsor,
+        data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor,
+        data:Prince_Edward_Duke_of_Kent,
+        data:Sylvana_Countess_of_St_Andrews ;
+    :hasSon data:Edward_Edmund_Maximilian_George_Windsor ;
+    :isAncestorOf data:Edward_Edmund_Maximilian_George_Windsor ;
+    :isBloodrelationOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isBrotherOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isChildOf data:Prince_Edward_Duke_of_Kent ;
+    :isFatherOf data:Edward_Edmund_Maximilian_George_Windsor ;
+    :isParentOf data:Edward_Edmund_Maximilian_George_Windsor ;
+    :isSiblingOf data:George_Windsor_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isSonOf data:Prince_Edward_Duke_of_Kent ;
+    :isUncleOf data:Edward_Edmund_Maximilian_George_Windsor .
+

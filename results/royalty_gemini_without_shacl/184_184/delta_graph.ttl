@@ -2,35 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Isabella_Vita_Marina a :Person,
-        :Woman ;
-    :hasFather data:Prince_Aimone_Duke_of_Aosta ;
-    :hasMother data:Princess_Olga_of_Greece .
+data:Alexander_Georgievich_Romanov a :Man ;
+    :hasBirthYear 2022 ;
+    :hasFather data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasMother data:Victoria_Romanovna_Bettarini .
 
-data:Amedeo_5th_Duke_of_Aosta a :Man,
-        :Person .
+data:Kira_Leonida_Georgievna_Romanova a :Woman ;
+    :hasBirthYear 2025 ;
+    :hasFather data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasMother data:Victoria_Romanovna_Bettarini .
 
-data:Marina_Karella a :Person,
-        :Woman ;
-    :hasFather data:Theodoros_Karellas .
+data:Grand_Duchess_Maria_Vladimirovna_of_Russia a :Woman ;
+    :hasFather data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasMother data:Leonida .
 
-data:Prince_Aimone_Duke_of_Aosta a :Man,
-        :Person ;
-    :hasFather data:Amedeo_5th_Duke_of_Aosta .
+data:Leonida a :Woman .
 
-data:Prince_Michael_of_Greece_and_Denmark a :Man,
-        :Person .
+data:Prince_Franz_Wilhelm_of_Prussia a :Man ;
+    :hasFather data:Prince_Karl_Franz_of_Prussia ;
+    :hasMother data:Princess_Henriette_of_Sch%C3%B6naich-Carolath .
 
-data:Princess_Alexandra a :Person,
-        :Woman .
+data:Prince_Karl_Franz_of_Prussia a :Man .
 
-data:Princess_Olga_of_Greece a :Person,
-        :Woman ;
-    :hasBirthYear 1971 ;
-    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;
-    :hasMother data:Marina_Karella ;
-    :hasSister data:Princess_Alexandra .
+data:Princess_Henriette_of_Sch%C3%B6naich-Carolath a :Woman .
 
-data:Theodoros_Karellas a :Man,
-        :Person .
+data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia a :Man .
+
+data:Grand_Duke_George_Mikhailovich_of_Russia a :Man ;
+    :hasBirthYear 1981 ;
+    :hasFather data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasMother data:Grand_Duchess_Maria_Vladimirovna_of_Russia .
+
+data:Victoria_Romanovna_Bettarini a :Woman ;
+    :hasBirthYear 1982 .
 

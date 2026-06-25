@@ -69,42 +69,20 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Infante Alfonso of Spain (Don Alfonso Cristino Teresa Ángelo Francisco de Asís y Todos los Santos de Borbón y Borbón Dos-Sicilias; 3 October 1941 – 29 March 1956) was the younger brother of King Juan Carlos I of Spain.
-He was also the youngest son of Infante Juan, Count of Barcelona and Princess María de las Mercedes of Bourbon-Two Sicilies, and the grandson of King Alfonso XIII.
-He died young at 14 from a shot to the forehead by Juan Carlos' gun, but the circumstances of his death remain unclear to this day.
-Early life
+Carl-Friedrich Hubertus Georg Eduardo Paolo Nickolos Franz Alois Ignatius Hieronymus Maria, Hereditary Prince of Löwenstein-Wertheim-Rosenberg (30 September 1966 – 24 April 2010), better known by his racing alias Leonhard "Leo" Löwenstein, was a German prince and endurance race driver participating in the VLN.
+Personal life
 
-Alfonso was born at Hotel NH Firenze Anglo American in Rome, the youngest son of the Infante Juan of Spain, Count of Barcelona, and of his wife, Princess Maria Mercedes of Bourbon-Two Sicilies.
-His godfather was the Infante Alfonso de Orleans y Borbón; his godmother was his father's sister Infanta Maria Cristina of Spain.
-Within his own family, he was called Alfonsito to distinguish him from other family members with the name Alfonso.
-When Alfonso was still just a baby, his family moved to Lausanne in Switzerland where they lived in the Villa Les Rocailles.
-In 1947, Alfonso visited Spain for the first time at the invitation of caudillo Francisco Franco.
-In 1950, he and his brother Juan Carlos were sent to study in Spain.
-Later, Alfonso and Juan Carlos attended the military academy in Zaragoza.
-
-
-Death and burial
-
-On the evening of Maundy Thursday, 29 March 1956, Alfonso and Juan Carlos were at their parents' home Villa Giralda in Estoril, Portugal, for the Easter vacation, where Alfonso died in a gun accident.
-The Spanish Embassy in Portugal issued an official communiqué:
-
-
-Alfonso had won a local junior golf tournament earlier on the day, then went to evening Mass and rushed up to the room to see Juan Carlos who had come home for the Easter holidays from military school.
-It is alleged that Juan Carlos began playing with a .22 caliber revolver that had apparently been given to Alfonso by General Francisco Franco.
-Rumors appeared in newspapers that the .22 caliber revolver had actually been held by Juan Carlos at the moment the shot was fired.
-As they were the only two in the room, it is unclear how Alfonso was shot but according to Josefina Carolo, dressmaker to Juan Carlos's mother, Juan Carlos pointed the pistol at Alfonso and pulled the trigger, unaware that the pistol was loaded.
-Bernardo Arnoso, a Portuguese friend of Juan Carlos, also said that Juan Carlos fired the pistol not knowing that it was loaded, and adding that the bullet ricocheted off a wall hitting Alfonso in the face.
-Helena Matheopoulos, a Greek author who spoke with Juan Carlos's sister Pilar, said that Alfonso had been out of the room and when he returned and pushed the door open, the door knocked Juan Carlos in the arm causing him to fire the pistol.
-In his 2025 autobiography Juan Carlos I d’Espagne:
-Réconciliation, Juan Carlos recounted how he and Alfonso had been playing with the gun, believing it to be safe as the magazine had been removed, without realising there was a bullet in the chamber, and that he had shot his brother into the forehead.
-It is alleged that Infante Juan, Count of Barcelona, the children's father, threw the gun into the sea some time after Alfonso's death.
-The funeral liturgy for Alfonso was held on Holy Saturday and was presided over by Monsignor Fernando Cento, Apostolic Nuncio to Portugal.
+Löwenstein was the eldest son and heir to Alois-Konstantin, Prince of Löwenstein-Wertheim-Rosenberg, who became Hereditary Prince in 1990 upon the death of his grandfather.
+(although as heir to the Roman Catholic branch of the Princely House of Löwenstein he may have been barred by the Act of Settlement from eligibility for succession to the British throne).
+Löwenstein and his family lived in the village of Laudenbach am Main in Bavaria, where they ran a vineyard.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -120,39 +98,9 @@ The funeral liturgy for Alfonso was held on Holy Saturday and was presided over 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -167,6 +115,23 @@ The funeral liturgy for Alfonso was held on Holy Saturday and was presided over 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -184,6 +149,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -251,29 +231,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -282,6 +254,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -294,6 +274,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -302,17 +284,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -340,6 +324,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -355,125 +423,53 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1f201514-a8b2-4a9b-be75-2edb60878919)
- Call ID: 1f201514-a8b2-4a9b-be75-2edb60878919
+  AssignClass (9f9f52b4-ff35-4ee5-9ef8-5fd7f0cd87f0)
+ Call ID: 9f9f52b4-ff35-4ee5-9ef8-5fd7f0cd87f0
   Args:
+    source: :Carl-Friedrich_Löwenstein-Wertheim-Rosenberg
     type: :Man
-    source: Alfonso
-  AssignClass (1f23525f-7f5a-46af-9cdc-3b44ac232fc4)
- Call ID: 1f23525f-7f5a-46af-9cdc-3b44ac232fc4
+  AssignClass (b32dd43f-8044-4315-92fb-29ff5c23470c)
+ Call ID: b32dd43f-8044-4315-92fb-29ff5c23470c
   Args:
+    source: :Carl-Friedrich_Löwenstein-Wertheim-Rosenberg
     type: :Person
-    source: Alfonso
-  AssignClass (c49e4432-a363-4c8f-b9c4-a2d21d896e93)
- Call ID: c49e4432-a363-4c8f-b9c4-a2d21d896e93
+  AddLiteral (46bfde3d-cbf5-4a79-a868-bbc0403d0bcd)
+ Call ID: 46bfde3d-cbf5-4a79-a868-bbc0403d0bcd
   Args:
-    type: :Man
-    source: Juan_Carlos_I
-  AssignClass (c3c16ae9-707f-4296-acd1-20d81f4e97f1)
- Call ID: c3c16ae9-707f-4296-acd1-20d81f4e97f1
-  Args:
-    type: :Person
-    source: Juan_Carlos_I
-  AssignClass (cf013428-dee0-42fa-9eee-d2a8b25f3fdb)
- Call ID: cf013428-dee0-42fa-9eee-d2a8b25f3fdb
-  Args:
-    type: :Man
-    source: Juan_Count_of_Barcelona
-  AssignClass (4a62dbe1-d26d-4250-bc3d-b7203e6e78fd)
- Call ID: 4a62dbe1-d26d-4250-bc3d-b7203e6e78fd
-  Args:
-    type: :Person
-    source: Juan_Count_of_Barcelona
-  AssignClass (6f21c82a-ba9f-4681-875c-3626e91bd23a)
- Call ID: 6f21c82a-ba9f-4681-875c-3626e91bd23a
-  Args:
-    type: :Woman
-    source: Maria_Mercedes_of_Bourbon_Two_Sicilies
-  AssignClass (741921b2-00c3-476b-94e2-bbc5049eb68c)
- Call ID: 741921b2-00c3-476b-94e2-bbc5049eb68c
-  Args:
-    type: :Person
-    source: Maria_Mercedes_of_Bourbon_Two_Sicilies
-  AssignClass (8f7f2a5e-aec2-4ac3-b048-ddf058c5bb8e)
- Call ID: 8f7f2a5e-aec2-4ac3-b048-ddf058c5bb8e
-  Args:
-    type: :Man
-    source: Alfonso_XIII
-  AssignClass (b37c92c6-a088-4df8-897b-379d93f2c0ed)
- Call ID: b37c92c6-a088-4df8-897b-379d93f2c0ed
-  Args:
-    type: :Person
-    source: Alfonso_XIII
-  AddLiteral (7dcca920-2af5-42fc-b1f8-e6101aea023e)
- Call ID: 7dcca920-2af5-42fc-b1f8-e6101aea023e
-  Args:
+    literal_value: 1966
+    source: :Carl-Friedrich_Löwenstein-Wertheim-Rosenberg
     literal_type: xsd:integer
-    source: Alfonso
     relation: :hasBirthYear
-    literal_value: 1941
-  AddLiteral (754f4d75-de90-4115-ac67-26da8023991a)
- Call ID: 754f4d75-de90-4115-ac67-26da8023991a
+  AddLiteral (baaf11d6-387f-442c-8940-7c9b493bbc20)
+ Call ID: baaf11d6-387f-442c-8940-7c9b493bbc20
   Args:
-    relation: :hasDeathYear
-    literal_value: 1956
-    source: Alfonso
     literal_type: xsd:integer
-  AddLiteral (8edd8be7-bf65-405d-a5d0-c32c523fee05)
- Call ID: 8edd8be7-bf65-405d-a5d0-c32c523fee05
+    source: :Carl-Friedrich_Löwenstein-Wertheim-Rosenberg
+    literal_value: 2010
+    relation: :hasDeathYear
+  AddLiteral (09f27424-db4c-40c7-b473-ed5f15fe1e3d)
+ Call ID: 09f27424-db4c-40c7-b473-ed5f15fe1e3d
   Args:
+    literal_value: Leonhard "Leo" Löwenstein
     literal_type: xsd:string
-    source: Alfonso
-    relation: :alsoKnownAs
-    literal_value: Alfonsito
-  AddTriple (c33bb893-d5aa-4761-91e8-943f2072ad99)
- Call ID: c33bb893-d5aa-4761-91e8-943f2072ad99
+    source: :Carl-Friedrich_Löwenstein-Wertheim-Rosenberg
+    relation: :knownAs
+  AssignClass (dfb214c0-7e7e-4241-924a-9f5886421144)
+ Call ID: dfb214c0-7e7e-4241-924a-9f5886421144
   Args:
-    source: Alfonso
-    target: Juan_Carlos_I
-    relation: :isBrotherOf
-  AddTriple (d66540da-2af5-4bdd-a596-06b25648b2df)
- Call ID: d66540da-2af5-4bdd-a596-06b25648b2df
+    type: :Man
+    source: :Alois-Konstantin_Löwenstein-Wertheim-Rosenberg
+  AssignClass (6a771b4b-dba3-4314-8218-8c61a5c8963d)
+ Call ID: 6a771b4b-dba3-4314-8218-8c61a5c8963d
   Args:
-    relation: :isSonOf
-    source: Alfonso
-    target: Juan_Count_of_Barcelona
-  AddTriple (943ea39b-2210-450c-871d-6841d6598a3f)
- Call ID: 943ea39b-2210-450c-871d-6841d6598a3f
+    type: :Person
+    source: :Alois-Konstantin_Löwenstein-Wertheim-Rosenberg
+  AddTriple (8104b7dd-0c67-4ee1-9f22-a8c471b83f96)
+ Call ID: 8104b7dd-0c67-4ee1-9f22-a8c471b83f96
   Args:
-    target: Maria_Mercedes_of_Bourbon_Two_Sicilies
-    source: Alfonso
-    relation: :isSonOf
-  AddTriple (e0e32f32-8dbe-487d-adf5-d218d363e14f)
- Call ID: e0e32f32-8dbe-487d-adf5-d218d363e14f
-  Args:
+    source: :Carl-Friedrich_Löwenstein-Wertheim-Rosenberg
+    target: :Alois-Konstantin_Löwenstein-Wertheim-Rosenberg
     relation: :hasFather
-    source: Alfonso
-    target: Juan_Count_of_Barcelona
-  AddTriple (1ad5af35-c68b-40f4-a8ff-0c9ab1ebb8bd)
- Call ID: 1ad5af35-c68b-40f4-a8ff-0c9ab1ebb8bd
-  Args:
-    relation: :hasMother
-    target: Maria_Mercedes_of_Bourbon_Two_Sicilies
-    source: Alfonso
-  AddTriple (cdae6802-63e4-4dda-926b-d0877fce96e2)
- Call ID: cdae6802-63e4-4dda-926b-d0877fce96e2
-  Args:
-    relation: :isSonOf
-    target: Juan_Count_of_Barcelona
-    source: Juan_Carlos_I
-  AddTriple (8453384d-ffd4-4e6c-980b-d4d1d912edcb)
- Call ID: 8453384d-ffd4-4e6c-980b-d4d1d912edcb
-  Args:
-    relation: :isSonOf
-    target: Maria_Mercedes_of_Bourbon_Two_Sicilies
-    source: Juan_Carlos_I
-  AddTriple (d9ea3454-304a-49b9-b811-8086248d7629)
- Call ID: d9ea3454-304a-49b9-b811-8086248d7629
-  Args:
-    relation: :hasAncestor
-    source: Alfonso
-    target: Alfonso_XIII
-  Finish (85cdb498-29ff-4e0d-84bb-054d888f19aa)
- Call ID: 85cdb498-29ff-4e0d-84bb-054d888f19aa
+  Finish (3f597084-3fc7-43e1-a2be-d83953ea1a64)
+ Call ID: 3f597084-3fc7-43e1-a2be-d83953ea1a64
   Args:

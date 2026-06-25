@@ -69,39 +69,19 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Adalbert Ferdinand Berengar Viktor of Prussia (14 July 1884 – 22 September 1948) was the third son of Wilhelm II, German Emperor, and Augusta Victoria of Schleswig-Holstein.
-Early life
+Prince Carlo Alessandro della Torre e Tasso, 3rd Duke of Castel Duino (born 10 February 1952) is the current head of the Castel Duino branch of the House of Thurn and Taxis.
+Family
 
-Prince Adalbert was born on 14 July 1884 as the third son of the then Prince Wilhelm of Prussia and his first wife, Princess Augusta Victoria of Schleswig-Holstein.
-He was born in the Marmorpalais of Potsdam in the Province of Brandenburg, where his parents resided until his father acceded to the throne as Emperor Wilhelm II in 1888.
-He spent his childhood with his siblings at the New Palace, also in Potsdam, and his school days with his brothers at the Prinzenhaus in Plön in his mother’s ancestral Schleswig-Holstein.
-His bride was Princess Adelheid "Adi" of Saxe-Meiningen (16 August 1891 – 25 April 1971), daughter of Prince Frederick and Countess Adelaide of Lippe-Biesterfeld.
-They married on 3 August 1914 in Wilhelmshaven, Germany, and had three children, five grandchildren, six great-grandchildren and two great-great-grandchildren:
-
-
-Kaiserliche Marine
-
-Regimental Commissions
-
-Source:
-
-
-Chivalric Orders
-
-Source:
-
-
-Military Decorations
-
-Death
-
-Adalbert died in La Tour de Peilz, Switzerland, aged 64.
+Carlo Alessandro is the only child of Raimundo, 2nd Duke of Castel Duino and his wife Princess Eugénie of Greece and Denmark.
+He is a maternal second cousin of Charles III, King of the United Kingdom, through their shared great-grandparents, King George I and Queen Olga of Greece, born a Grand Duchess of Russia.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -117,39 +97,9 @@ Adalbert died in La Tour de Peilz, Switzerland, aged 64.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -164,6 +114,23 @@ Adalbert died in La Tour de Peilz, Switzerland, aged 64.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -181,6 +148,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -248,29 +230,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -279,6 +253,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -291,6 +273,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -299,17 +283,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -337,6 +323,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -352,102 +422,109 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4c740429-edec-4e8c-9020-c30adbf365a9)
- Call ID: 4c740429-edec-4e8c-9020-c30adbf365a9
+  AssignClass (943a391d-01a8-4785-ad01-fc41d340e4ba)
+ Call ID: 943a391d-01a8-4785-ad01-fc41d340e4ba
   Args:
     type: :Man
-    source: Adalbert_of_Prussia
-  AssignClass (22ed2151-741e-44c7-9efe-a08822a2a1da)
- Call ID: 22ed2151-741e-44c7-9efe-a08822a2a1da
+    source: Carlo_Alessandro_della_Torre_e_Tasso
+  AssignClass (b5655412-2914-4f17-84a1-8d69f6de539f)
+ Call ID: b5655412-2914-4f17-84a1-8d69f6de539f
   Args:
-    type: :Man
-    source: Wilhelm_II_of_Prussia
-  AssignClass (0f91c0d7-695d-44a5-88e1-624a5e208ec1)
- Call ID: 0f91c0d7-695d-44a5-88e1-624a5e208ec1
+    source: Carlo_Alessandro_della_Torre_e_Tasso
+    type: :Person
+  AddLiteral (967b2c00-642b-46bf-a8f8-01773d453041)
+ Call ID: 967b2c00-642b-46bf-a8f8-01773d453041
   Args:
-    type: :Woman
-    source: Augusta_Victoria_of_Schleswig-Holstein
-  AssignClass (135f0656-e1f7-419f-b0be-7e1b19a441f9)
- Call ID: 135f0656-e1f7-419f-b0be-7e1b19a441f9
-  Args:
-    type: :Woman
-    source: Adelheid_of_Saxe-Meiningen
-  AssignClass (6acf2049-b706-4013-acaf-19f95501956a)
- Call ID: 6acf2049-b706-4013-acaf-19f95501956a
-  Args:
-    type: :Man
-    source: Frederick_of_Saxe-Meiningen
-  AssignClass (03da9aaf-b230-496d-98ef-683542cddc46)
- Call ID: 03da9aaf-b230-496d-98ef-683542cddc46
-  Args:
-    type: :Woman
-    source: Adelaide_of_Lippe-Biesterfeld
-  AddLiteral (865d07a7-a98c-4ea9-8103-02f433e6c20a)
- Call ID: 865d07a7-a98c-4ea9-8103-02f433e6c20a
-  Args:
+    literal_type: xsd:integer
+    source: Carlo_Alessandro_della_Torre_e_Tasso
+    literal_value: 1952
     relation: :hasBirthYear
-    literal_value: 1884
-    source: Adalbert_of_Prussia
-    literal_type: xsd:integer
-  AddLiteral (b9b6f191-1f56-461d-9fb0-caee154b8c26)
- Call ID: b9b6f191-1f56-461d-9fb0-caee154b8c26
+  AssignClass (df5fe46c-4dc6-498b-8caf-c1419cf0714f)
+ Call ID: df5fe46c-4dc6-498b-8caf-c1419cf0714f
   Args:
-    source: Adalbert_of_Prussia
-    literal_type: xsd:integer
-    literal_value: 1948
-    relation: :hasDeathYear
-  AddTriple (120a6ab1-7dcd-48e0-8d3c-d461692e7565)
- Call ID: 120a6ab1-7dcd-48e0-8d3c-d461692e7565
+    type: :Man
+    source: Raimundo_della_Torre_e_Tasso
+  AssignClass (d79f6f01-c8b5-4bb5-ade7-8f35ed236c38)
+ Call ID: d79f6f01-c8b5-4bb5-ade7-8f35ed236c38
   Args:
-    source: Adalbert_of_Prussia
-    target: Wilhelm_II_of_Prussia
+    source: Raimundo_della_Torre_e_Tasso
+    type: :Person
+  AssignClass (c7f1b2e5-d64f-4e48-83b2-200d8f7b1abb)
+ Call ID: c7f1b2e5-d64f-4e48-83b2-200d8f7b1abb
+  Args:
+    source: Eugenie_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (9ec0550c-8294-4a63-88b1-b31841b495bb)
+ Call ID: 9ec0550c-8294-4a63-88b1-b31841b495bb
+  Args:
+    type: :Person
+    source: Eugenie_of_Greece_and_Denmark
+  AddTriple (baa7584c-202c-4d3d-9e50-0426ae8ad093)
+ Call ID: baa7584c-202c-4d3d-9e50-0426ae8ad093
+  Args:
+    source: Carlo_Alessandro_della_Torre_e_Tasso
+    target: Raimundo_della_Torre_e_Tasso
     relation: :hasFather
-  AddTriple (d3edf961-11a8-42a2-af7b-d15459f50439)
- Call ID: d3edf961-11a8-42a2-af7b-d15459f50439
+  AddTriple (66a36f93-6ae3-497a-8aa1-b719bacf4598)
+ Call ID: 66a36f93-6ae3-497a-8aa1-b719bacf4598
   Args:
+    source: Carlo_Alessandro_della_Torre_e_Tasso
+    target: Eugenie_of_Greece_and_Denmark
     relation: :hasMother
-    source: Adalbert_of_Prussia
-    target: Augusta_Victoria_of_Schleswig-Holstein
-  AddLiteral (272da2dc-3b57-45ab-9b49-264b14d1bad3)
- Call ID: 272da2dc-3b57-45ab-9b49-264b14d1bad3
+  AssignClass (f45ba9b3-8799-4bb6-ade7-c4a058d9f093)
+ Call ID: f45ba9b3-8799-4bb6-ade7-c4a058d9f093
   Args:
-    source: Adelheid_of_Saxe-Meiningen
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1891
-  AddLiteral (6e90636c-a7ca-470d-8879-cf9ee7f459ea)
- Call ID: 6e90636c-a7ca-470d-8879-cf9ee7f459ea
+    source: Charles_III
+    type: :Man
+  AssignClass (0d9387bb-511e-4d32-a935-13018d46d3c4)
+ Call ID: 0d9387bb-511e-4d32-a935-13018d46d3c4
   Args:
-    literal_type: xsd:integer
-    source: Adelheid_of_Saxe-Meiningen
-    relation: :hasDeathYear
-    literal_value: 1971
-  AddLiteral (76b94da5-d0d8-486f-82b1-3ce373d02aa6)
- Call ID: 76b94da5-d0d8-486f-82b1-3ce373d02aa6
+    source: Charles_III
+    type: :Person
+  AssignClass (5b58739c-4e0c-460a-8474-ca3d5e35ec59)
+ Call ID: 5b58739c-4e0c-460a-8474-ca3d5e35ec59
   Args:
-    relation: :hasMarriageYear
-    literal_value: 1914
-    literal_type: xsd:integer
-    source: Adalbert_of_Prussia
-  AddTriple (85eff43a-b989-4b34-8d86-60bcca108d0e)
- Call ID: 85eff43a-b989-4b34-8d86-60bcca108d0e
+    type: :Man
+    source: George_I_of_Greece
+  AssignClass (221217f7-4afa-4b49-b4c8-767ad2b69725)
+ Call ID: 221217f7-4afa-4b49-b4c8-767ad2b69725
   Args:
-    relation: :hasFather
-    source: Adelheid_of_Saxe-Meiningen
-    target: Frederick_of_Saxe-Meiningen
-  AddTriple (ef345339-2618-474f-a341-084102a0af86)
- Call ID: ef345339-2618-474f-a341-084102a0af86
+    source: George_I_of_Greece
+    type: :Person
+  AssignClass (00bfafaf-99eb-41b2-bc4a-1b0643591e3b)
+ Call ID: 00bfafaf-99eb-41b2-bc4a-1b0643591e3b
   Args:
-    target: Adelaide_of_Lippe-Biesterfeld
-    source: Adelheid_of_Saxe-Meiningen
-    relation: :hasMother
-  AddLiteral (8b49284c-fb92-474d-a977-1c4652122cc5)
- Call ID: 8b49284c-fb92-474d-a977-1c4652122cc5
+    type: :Woman
+    source: Olga_of_Greece
+  AssignClass (a194de26-655b-4e38-8aab-bd8f5a3b76b0)
+ Call ID: a194de26-655b-4e38-8aab-bd8f5a3b76b0
   Args:
-    relation: :alsoKnownAs
-    literal_value: Adi
-    source: Adelheid_of_Saxe-Meiningen
-    literal_type: xsd:string
-  Finish (d21c61a2-80a7-47c1-a1f2-443f9e4ce284)
- Call ID: d21c61a2-80a7-47c1-a1f2-443f9e4ce284
+    source: Olga_of_Greece
+    type: :Person
+  AddTriple (78972a8f-0692-4cae-8e4e-9a7bf4932362)
+ Call ID: 78972a8f-0692-4cae-8e4e-9a7bf4932362
+  Args:
+    target: George_I_of_Greece
+    relation: :hasAncestor
+    source: Carlo_Alessandro_della_Torre_e_Tasso
+  AddTriple (29786750-98d6-47c8-af60-20ef04b4c96e)
+ Call ID: 29786750-98d6-47c8-af60-20ef04b4c96e
+  Args:
+    source: Carlo_Alessandro_della_Torre_e_Tasso
+    relation: :hasAncestor
+    target: Olga_of_Greece
+  AddTriple (e9b21e38-4fc8-4868-9b44-121fed53e35d)
+ Call ID: e9b21e38-4fc8-4868-9b44-121fed53e35d
+  Args:
+    target: George_I_of_Greece
+    relation: :hasAncestor
+    source: Charles_III
+  AddTriple (3dc4ea6a-8ccf-4124-a0df-6931c738038a)
+ Call ID: 3dc4ea6a-8ccf-4124-a0df-6931c738038a
+  Args:
+    source: Charles_III
+    target: Olga_of_Greece
+    relation: :hasAncestor
+  Finish (709a0365-c02a-497d-97ba-69368384194b)
+ Call ID: 709a0365-c02a-497d-97ba-69368384194b
   Args:

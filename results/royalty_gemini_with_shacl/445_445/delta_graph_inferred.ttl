@@ -1,0 +1,135 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:GeoffreyShakerley a :Man ;
+    :hasBrother data:GeoffreyShakerley ;
+    :hasRelation data:AnneBowesLyon,
+        data:GeoffreyShakerley,
+        data:LadyElizabethShakerley,
+        data:PatrickAnson,
+        data:PrinceGeorgOfDenmark,
+        data:ThomasAnson ;
+    :isBloodrelationOf data:GeoffreyShakerley ;
+    :isBrotherOf data:GeoffreyShakerley ;
+    :isSiblingOf data:GeoffreyShakerley .
+
+data:PrinceGeorgOfDenmark a :Man ;
+    :hasBrother data:PrinceGeorgOfDenmark ;
+    :hasRelation data:AnneBowesLyon,
+        data:GeoffreyShakerley,
+        data:LadyElizabethShakerley,
+        data:PatrickAnson,
+        data:PrinceGeorgOfDenmark,
+        data:ThomasAnson ;
+    :isBloodrelationOf data:PrinceGeorgOfDenmark ;
+    :isBrotherOf data:PrinceGeorgOfDenmark ;
+    :isSiblingOf data:PrinceGeorgOfDenmark .
+
+data:AnneBowesLyon a :Ancestor,
+        :Woman ;
+    :hasChild data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :hasDaughter data:LadyElizabethShakerley ;
+    :hasRelation data:AnneBowesLyon,
+        data:GeoffreyShakerley,
+        data:LadyElizabethShakerley,
+        data:PatrickAnson,
+        data:PrinceGeorgOfDenmark,
+        data:ThomasAnson ;
+    :hasSister data:AnneBowesLyon ;
+    :hasSon data:PatrickAnson ;
+    :isAncestorOf data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :isAuntOf data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :isBloodrelationOf data:AnneBowesLyon ;
+    :isMotherOf data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :isParentOf data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :isSiblingOf data:AnneBowesLyon ;
+    :isSisterOf data:AnneBowesLyon .
+
+data:ThomasAnson a :Ancestor,
+        :Man ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:ThomasAnson ;
+    :hasChild data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :hasDaughter data:LadyElizabethShakerley ;
+    :hasDeathYear 1958 ;
+    :hasRelation data:AnneBowesLyon,
+        data:GeoffreyShakerley,
+        data:LadyElizabethShakerley,
+        data:PatrickAnson,
+        data:PrinceGeorgOfDenmark,
+        data:ThomasAnson ;
+    :hasSon data:PatrickAnson ;
+    :isAncestorOf data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :isBloodrelationOf data:ThomasAnson ;
+    :isBrotherOf data:ThomasAnson ;
+    :isFatherOf data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :isParentOf data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :isSiblingOf data:ThomasAnson ;
+    :isUncleOf data:LadyElizabethShakerley,
+        data:PatrickAnson .
+
+data:LadyElizabethShakerley a :Woman ;
+    :hasAncestor data:AnneBowesLyon,
+        data:ThomasAnson ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:PatrickAnson ;
+    :hasDeathYear 2020 ;
+    :hasFather data:ThomasAnson ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:AnneBowesLyon ;
+    :hasParent data:AnneBowesLyon,
+        data:ThomasAnson ;
+    :hasRelation data:AnneBowesLyon,
+        data:GeoffreyShakerley,
+        data:LadyElizabethShakerley,
+        data:PatrickAnson,
+        data:PrinceGeorgOfDenmark,
+        data:ThomasAnson ;
+    :hasSister data:LadyElizabethShakerley ;
+    :isBloodrelationOf data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :isChildOf data:AnneBowesLyon,
+        data:ThomasAnson ;
+    :isDaughterOf data:AnneBowesLyon,
+        data:ThomasAnson ;
+    :isSiblingOf data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :isSisterOf data:LadyElizabethShakerley,
+        data:PatrickAnson .
+
+data:PatrickAnson a :Man ;
+    :hasAncestor data:AnneBowesLyon,
+        data:ThomasAnson ;
+    :hasBrother data:PatrickAnson ;
+    :hasFather data:ThomasAnson ;
+    :hasMother data:AnneBowesLyon ;
+    :hasParent data:AnneBowesLyon,
+        data:ThomasAnson ;
+    :hasRelation data:AnneBowesLyon,
+        data:GeoffreyShakerley,
+        data:LadyElizabethShakerley,
+        data:PatrickAnson,
+        data:PrinceGeorgOfDenmark,
+        data:ThomasAnson ;
+    :hasSister data:LadyElizabethShakerley ;
+    :isBloodrelationOf data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :isBrotherOf data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :isChildOf data:AnneBowesLyon,
+        data:ThomasAnson ;
+    :isSiblingOf data:LadyElizabethShakerley,
+        data:PatrickAnson ;
+    :isSonOf data:AnneBowesLyon,
+        data:ThomasAnson .
+

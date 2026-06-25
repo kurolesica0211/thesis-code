@@ -85,35 +85,123 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lord Frederick Michael George David Louis Windsor (born 6 April 1979) is a member of the British royal family.
-He is the only son of Prince and Princess Michael of Kent, and is 54th in the line of succession to the British throne.
-He is married to British actress Sophie Winkleman and is a financial analyst by profession.
-Early life and education
+Grand Duke Boris Vladimirovich of Russia (Russian: Борис Владимирович; 24 November 1877 – 9 November 1943) was a son of Grand Duke Vladimir Alexandrovich of Russia, a grandson of Tsar Alexander II of Russia and a first cousin of Tsar Nicholas II.
+He was known in Imperial Russia for his restless behavior and as a notorious playboy.
+He departed revolutionary Russia in March 1919 with his longtime mistress, whom he married in exile.
+Early life
 
-Frederick Michael George David Louis Windsor was born on 6 April 1979 at St Mary's Hospital, London, and was christened on 11 July at the Chapel Royal, St James's Palace, Westminster.
-A first cousin once removed of Queen Elizabeth II and a first cousin twice removed of Prince Philip, Duke of Edinburgh, he is therefore both a second cousin and a second cousin once removed of King Charles III and his siblings.
-Frederick and his sister, Lady Gabriella, were brought up in the Church of England.
-Career
+Grand Duke Boris Vladimirovich was born on 24 November  1877 at his parents' palace in Saint Petersburg.
+He was the third child and second surviving son among the five children of Grand Duke Vladimir Alexandrovich of Russia and his wife Grand Duchess Maria Pavlovna, née Duchess Marie Alexandrine of Mecklenburg-Schwerin.
+His parents were very wealthy and lived in the luxurious Vladimir Palace in Saint Petersburg.
+His father, Vladimir Alexandrovich, a brother of Tsar Alexander III of Russia, was a renowned patron of the arts; his mother, Maria Pavlovna, one of the greatest hostesses of Russian society.
+Boris, more extroverted than his siblings, was his mother's favorite.
+Grand Duke Boris was educated at home.
+As was customary in the Russian Imperial family, Boris and his siblings also have a sailor "nanny", a male attendant from the Imperial navy, who served as the children's companion looking after them.
+Boris Vladimirovich's education emphasized languages and military training.
+From his birth, Grand Duke Boris was appointed patron of the 45th Azov Infantry Regiment, and enrolled into the Semeonovsky Life Guards and the Life Guards Dragoon regiment, the 4th Life Guard Rifle Battalion of the Imperial Family.
+A Russian Grand Duke
 
-After graduating, Frederick worked as a fashion model, appearing in a campaign for Burberry and for the designer Tomasz Starzewski, and also as a music journalist, notably for Tatler magazine.
-Personal life
+At age eighteen, upon coming of age, Grand Duke Boris received from his father a plot of land at Tsarskoye Selo on the eastern bank of the Kolonistky pond near the Moskovskaya Gate.
+There, in 1895, the Grand Duke built his own residence in the style of an English country house.
+The estate, named Wolf Garden, compromised a cottage, coach house, stables, and a small tea house, where the grand duke could entertain his friends.
+Boris Vladimirovich lived in Wolf Garden all year round while still serving in the army.
+From his early youth Boris was notorious for his restless life style.
+The grand duke also got entangled with a Mademoiselle Demidov.
+The famous ballerina Anna Pavlova was one of Boris' lovers.
+Although loaded with wealth and privilege, Grand Duke Boris found his income insufficient and ran up a huge debt of nearly half a million rubles with his mother.
+In 1901, Grand Duke Boris, age twenty five, had a liaison with a Frenchwoman, Jeanne Aumont-Lacroix, and had a son by her, born in Paris.
+The child, Jean Boris Lacroix (1902–1984), was not recognized.
+To break the relationship and strengthen his character Boris's parents sent him, with the Tsar's approval, on a world tour.
+World tour
 
-On St Valentine's Day, 14 February 2009, Frederick became engaged to the actress Sophie Winkleman.
-She was baptised at St James's Palace in December 2013 and has Princess Eugenie among her godparents.
-Maud served as a bridesmaid at the wedding of Princess Eugenie and Jack Brooksbank in 2018.
-On 20 January 2016, it was announced Frederick and Sophie had become parents to a second daughter, Isabella Alexandra May, who was born on 16 January 2016 at Chelsea and Westminster Hospital in London.
-From September 2016 until its closure in 2023, Frederick was president of the charity Soldier On!, which supported vulnerable, disadvantaged, or socially isolated people through archaeology and heritage projects as well as personal development workshops.
-On 21 February 2017, Frederick was inducted into the Grand Order of Water Rats charitable fraternity.
-Titles and styles
+Grand Duke Boris' tour around the world lasted from 6 January  1902  until 20 October  1902.
+As there was an unexpected delay in the expedition, he spent the holidays with his aunt Grand Duchess Maria Alexandrovna and his cousin Victoria Melita in their winter home in Nice.
+On 1 August 1902, Grand Duke Boris arrived in San Francisco where he toured the city; attended the opera and went to a boxing match.
+In Newport, Boris Vladimirovich was invited to dinners and parties, he played tennis and even learned to play golf.
+The grand duke was favorably impressed with the city's skyline and the modern use of electricity Boris visited President Theodore Roosevelt at his estate Sagamore Hill, on the North Shore of Long Island.
+After six hectic weeks in America, Grand Duke Boris sailed back to Europe.
+Jovial and increasingly stout, Boris was famous for his wild and unpredictable behavior, but eventually these excesses began to lose their appeal.
+On 26 February, he left Russia for the Far East to take part in the Russo-Japanese War.
+He served under the command of the Russian governor in the Far East at the headquarters of the commander in chief of the Army, General A.N.  Kuropatkin, taking part in combat
 
-Under letters patent issued in 1917 and still in force today, Frederick's father is entitled to the dignity of prince and the style His Royal Highness as the son of a son of George V. Although these letters do not bestow these royal dignities beyond grandchildren of monarchs (except in the case of the children of the Prince of Wales, as modified by Elizabeth II), they allow the children of sons of sons of a British monarch to be styled as the children of a duke, with the honorific courtesy style of Lord or Lady before their given names.
-Since Lord Frederick is not a peer in his own right, his style is not hereditary and his children are not entitled to any distinctions, including the prefix The Honourable.
+
+On the morning of 31 March 1904, while galloping from the heights of Dacha Hill on the rim of Port Arthur, he witnessed the sinking of the Russian battleship Petropavlovsk in which more than 600 men died; his brother Grand Duke Kirill was among the few survivors.
+In 1905, in Nice, Grand Duke Boris proposed to Princess Victoria Eugenia of Battenberg.
+By then she had forgotten about Boris and in the next season she met her future husband King Alfonso XIII of Spain.
+1911 was a busy year for the grand duke.
+He was made colonel and in April he represented Russia at the Turin World Fair and the Fine Arts Exhibition in Rome during the celebrations for the 50th anniversary of Italy's unification.
+In November the same year, he was Russia's emissary at the coronation of Vajiravudh the King of Siam.
+War
+
+When World War I broke out, Boris Vladimirovich was put in command of the Guards regiment of the Ataman Cossacks.
+Military service was a burden to Boris, who sought every opportunity that would make him return to St. Petersburg.
+Even during the war Grand Duke Boris gave many parties at his luxurious mansion, furnished in the English style, which at night was a gathering place for the "golden youth" of St. Petersburg.
+The grand duke was famous for his hospitality, cheerful disposition, passion for entertainment, gourmet cuisine and excellent wines.
+In spite of Boris' reputation, his ambitious mother wanted to arrange a splendid marriage for him.
+In February 1916, she tried to marry him to Grand Duchess Olga Nikolaevna, Tsar Nicholas II's eldest daughter.
+Boris was thirty-eight with a long line of mistresses linked to his name.
+The refusal provoked the enmity of Boris' mother.
+Towards the end of the monarchy, they were involved in a conspiracy to put Boris' brother Kirill on the throne.
+Boris' Anglophobia got him into trouble during the War.
+His behavior was so insulting that the British Ambassador made a formal protest, and Boris was forced by the Emperor to apologize.
+By the summer of 1916, Grand Duke Boris fell in love with Zinaida Sergeievna Rachevskaya (1896–1963), the daughter of Colonel Sergei Alexandrovich Rachevsky, who had died in 1904 commanding the fortifications at Port Arthur.
+Zinaida, a vivacious brunette twenty years younger than Boris, belonged the minor Russian nobility.
+Grand Duke Boris would have liked to marry her, but as he was close in line to the Russian throne a morganatic marriage would not have been authorized.
+To get out of his predicament, Boris quickly arranged Zinaida's marriage to Peter Eliseev, a military officer from a prestigious family who accepted the deal in exchange for the grand duke payment of his gambling debts.
+Back in Russia, a divorce was obtained for her.
+Grand Duke Boris began to live openly with his mistress at his dasha in Tsarskoye Selo as the Russian Empire began to crumble.
+When Nicholas II abdicated, Boris was at Gatchina with Grand Duke Michael Alexandrovich, who declined the throne.
+This marked the fall of the Russian monarchy and Boris was one of the few members of the Romanov family who went to Mogilev to pay final respects to Tsar Nicholas II.
+
+
+Revolution
+
+During the period of the provisional government Boris Vladimirovich was living in Tsarskoye Selo.
+He was able to gain entrance to the Vladimir Palace.
+Disguised, with the help of Englishman Albert Stopford and a caretaker, Boris retrieved the money and jewels from the secret safe in his mother's bedroom.
+Before the Bolsheviks took power, Boris escaped the former Imperial capital to the Caucasus with his mistress Zinaida Rachevskaya.
+In September 1917, he joined his mother and younger brother Grand Duke Andrei Vladimirovich in Kislovodsk, a spa and resort town in the Caucasus.
+He lived in a villa with his brother, but their mistresses were placed in separate houses, because Grand Duchess Maria Pavlovna would not acknowledge their existence.
+For the next year they lived quietly away from danger, but in August 1918 Boris and his brother Andrei were arrested in the night after a systematic search of their villa.
+The Bolshevik commander sent to execute them had once been a struggling artist in Paris before the war whom Boris had helped by buying some of his paintings.
+Since they were no longer safe and would probably be arrested again, the two grand dukes decided to flee.
+On 26 August 1918, armed with false papers stating they were on a mission for the soviets, Boris and Andrei escaped heading for Kabarda, where the chief Circassian tribe, the Kabards, lived on the north slope of the mountain.
+However, Grand Duchess Maria Pavlovna was determined to remain in Russia hoping that the White movement would prevail and Boris' brother Grand Duke Kirill Vladimirovich would be installed as Tsar.
+By March 1919 Boris decided to leave with his mistress.
+Against his mother's wishes, he left Russia from Anapa by boat through the Black Sea.
+Exile
+
+Once safe in exile in Constantinople, Boris tried to get permission to go to Britain but was refused passage on a British warship.
+Boris and Zinaida went to France but were expelled after a few weeks.
+They wanted to settle in Spain, as Grand Duke Boris was a friend of King Alfonso XIII of Spain, but received no reply and settled in San Remo, instead.
+Eventually Boris and his wife settled provisionally in Nice, France.
+Boris and his siblings were reunited in exile in September 1920, at Contrexéville in the south of France, by the death of their mother Grand Duchess Maria Pavlovna.
+Boris inherited his mother's emeralds, the most valuable items of the Grand Duchess' jewel collection.
+With the money from the emeralds, and from an account with an American bank which he had opened prior to the Revolution, Boris bought a chateau, "Sans Souci", in Meudon near Paris, living comfortably with his wife.
+When asked by a reporter whether Henry Ford was a financial supporter of the effort to restore the monarchy in Russia, Boris did not know who Henry Ford was.
+His brother, Grand Duke Kirill, wanted to restore the Russian monarchy and in 1924 proclaimed himself czar-in-exile, but Boris was largely uninterested in politics.
+Last years
+
+During the long years of exile the former playboy-Grand Duke remained in love with his wife, who was twenty years his junior.
+Of the Romanovs, the couple was close only with Grand Duke Andrei Vladimirovich and his morganatic wife Mathilde Kschessinskaya.
+Zinaida was widely looked down upon by Boris' relatives.
+In exile, Boris frequented his illegitimate son, Boris Lacroix, who had been raised in France by his mother's family.
+Boris often visited his son, who became a famous designer under the name Jean Boris Lacroix.
+During World War II, Boris and Zinaida were at their villa in Biarritz when German troops occupied Paris in June 1940.
+Fleeing the French capital Grand Duke Andrei Vladimirovich and his wife Mathilde came to live with Boris.
+In 1943, Grand Duke Boris became critically ill, and died in his bed on 9 November 1943, in Paris, at age 65.
+In popular culture
+
+Grand Duke Boris was well known before the war as an international playboy, and appears in many memoirs and novels of the period.
+"If you'd only throw in Harry Thaw, Tod Sloan, Abe Hummel, and Grand Duke Boris it would be really chic, — a real salon!”
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -129,39 +217,9 @@ Since Lord Frederick is not a peer in his own right, his style is not hereditary
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -176,6 +234,23 @@ Since Lord Frederick is not a peer in his own right, his style is not hereditary
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -193,6 +268,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,29 +350,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -291,6 +373,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -303,6 +393,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -311,17 +403,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -349,6 +443,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -364,101 +542,181 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c0c00d8f-373d-4e50-9626-95a341939cbb)
- Call ID: c0c00d8f-373d-4e50-9626-95a341939cbb
+  AssignClass (1e10fb7f-87c9-4c02-9bef-feeed4990cab)
+ Call ID: 1e10fb7f-87c9-4c02-9bef-feeed4990cab
   Args:
     type: :Man
-    source: Frederick_Windsor
-  AssignClass (3e2f623e-cc51-42d2-99d1-ddad68289942)
- Call ID: 3e2f623e-cc51-42d2-99d1-ddad68289942
+    source: BorisVladimirovich
+  AssignClass (f127800f-118b-42f5-b9fc-efc63664cccf)
+ Call ID: f127800f-118b-42f5-b9fc-efc63664cccf
   Args:
-    type: :Man
-    source: Prince_Michael_of_Kent
-  AssignClass (f3616587-6834-49ec-9066-0c888c3d6656)
- Call ID: f3616587-6834-49ec-9066-0c888c3d6656
+    source: BorisVladimirovich
+    type: :Person
+  AddLiteral (9733e3c9-86a0-4b7b-9a8b-a4d731459f9f)
+ Call ID: 9733e3c9-86a0-4b7b-9a8b-a4d731459f9f
   Args:
-    type: :Woman
-    source: Princess_Michael_of_Kent
-  AssignClass (a54ec4c6-5bf4-476a-8c23-2298d294c1dc)
- Call ID: a54ec4c6-5bf4-476a-8c23-2298d294c1dc
-  Args:
-    type: :Woman
-    source: Sophie_Winkleman
-  AssignClass (500e8733-e42a-4bef-b9b1-d91ec488d1ca)
- Call ID: 500e8733-e42a-4bef-b9b1-d91ec488d1ca
-  Args:
-    type: :Woman
-    source: Lady_Gabriella
-  AssignClass (0781350a-0fe5-4057-92c1-d4838fee83c0)
- Call ID: 0781350a-0fe5-4057-92c1-d4838fee83c0
-  Args:
-    type: :Woman
-    source: Isabella_Alexandra_May
-  AddLiteral (50c113eb-fec7-4bcc-83d6-559549f3c301)
- Call ID: 50c113eb-fec7-4bcc-83d6-559549f3c301
-  Args:
-    literal_value: 1979
     literal_type: xsd:integer
-    source: Frederick_Windsor
+    literal_value: 1877
+    source: BorisVladimirovich
     relation: :hasBirthYear
-  AddTriple (bbe6cf00-234e-4f4b-94e6-0ace176f46f6)
- Call ID: bbe6cf00-234e-4f4b-94e6-0ace176f46f6
+  AddLiteral (5a745879-38be-4c40-8e67-d5350cc68e31)
+ Call ID: 5a745879-38be-4c40-8e67-d5350cc68e31
   Args:
-    target: Prince_Michael_of_Kent
-    source: Frederick_Windsor
+    literal_type: xsd:integer
+    literal_value: 1943
+    relation: :hasDeathYear
+    source: BorisVladimirovich
+  AssignClass (6e47a3ee-770b-4c2f-aeee-8dc185bfabb2)
+ Call ID: 6e47a3ee-770b-4c2f-aeee-8dc185bfabb2
+  Args:
+    type: :Man
+    source: VladimirAlexandrovich
+  AssignClass (9176fe02-b46c-4440-87ff-79974e92719e)
+ Call ID: 9176fe02-b46c-4440-87ff-79974e92719e
+  Args:
+    type: :Person
+    source: VladimirAlexandrovich
+  AssignClass (6ca7baf1-4445-40e4-a4e6-3fccddf3101e)
+ Call ID: 6ca7baf1-4445-40e4-a4e6-3fccddf3101e
+  Args:
+    source: MariaPavlovna
+    type: :Woman
+  AssignClass (4f1579db-2db2-492e-96aa-4acb8b163475)
+ Call ID: 4f1579db-2db2-492e-96aa-4acb8b163475
+  Args:
+    type: :Person
+    source: MariaPavlovna
+  AddTriple (9f147537-db6d-4d91-a84d-48eed73ca575)
+ Call ID: 9f147537-db6d-4d91-a84d-48eed73ca575
+  Args:
     relation: :hasFather
-  AddTriple (7fbffd9b-0a0b-4666-99a2-2950ab328bc1)
- Call ID: 7fbffd9b-0a0b-4666-99a2-2950ab328bc1
+    target: VladimirAlexandrovich
+    source: BorisVladimirovich
+  AddTriple (c4835185-b7d2-43d4-8868-0c915fac5fe6)
+ Call ID: c4835185-b7d2-43d4-8868-0c915fac5fe6
   Args:
     relation: :hasMother
-    source: Frederick_Windsor
-    target: Princess_Michael_of_Kent
-  AddTriple (a76d16ef-f93a-49f1-9aac-f2b95621abdd)
- Call ID: a76d16ef-f93a-49f1-9aac-f2b95621abdd
+    source: BorisVladimirovich
+    target: MariaPavlovna
+  AssignClass (a1956286-0b01-4491-bd19-2983da1b6d7e)
+ Call ID: a1956286-0b01-4491-bd19-2983da1b6d7e
   Args:
-    relation: :hasSister
-    source: Frederick_Windsor
-    target: Lady_Gabriella
-  AddTriple (d54b04a1-84a0-45a7-9e87-6f6ba1bbfe0d)
- Call ID: d54b04a1-84a0-45a7-9e87-6f6ba1bbfe0d
+    source: KirillVladimirovich
+    type: :Man
+  AssignClass (46f46134-f530-4a4a-a189-f99d6205ddfc)
+ Call ID: 46f46134-f530-4a4a-a189-f99d6205ddfc
   Args:
-    target: Frederick_Windsor
-    relation: :isSisterOf
-    source: Lady_Gabriella
-  AddTriple (18dbe496-1ee1-4f68-9878-e4a56374a988)
- Call ID: 18dbe496-1ee1-4f68-9878-e4a56374a988
+    source: KirillVladimirovich
+    type: :Person
+  AddTriple (47353cd1-6317-4516-a275-2a5bc1ba2319)
+ Call ID: 47353cd1-6317-4516-a275-2a5bc1ba2319
   Args:
-    target: Isabella_Alexandra_May
-    relation: :hasChild
-    source: Frederick_Windsor
-  AddTriple (870c4293-33d8-4eb1-8feb-9a00765f28a9)
- Call ID: 870c4293-33d8-4eb1-8feb-9a00765f28a9
+    relation: :isBrotherOf
+    target: KirillVladimirovich
+    source: BorisVladimirovich
+  AssignClass (72e360eb-f201-4494-869c-c71d19f2606d)
+ Call ID: 72e360eb-f201-4494-869c-c71d19f2606d
   Args:
-    target: Isabella_Alexandra_May
-    relation: :hasChild
-    source: Sophie_Winkleman
-  AddTriple (747617ea-f350-47e5-928f-000f22596cfe)
- Call ID: 747617ea-f350-47e5-928f-000f22596cfe
+    source: AndreiVladimirovich
+    type: :Man
+  AssignClass (c4df9a92-efc4-4fcd-b1d4-0e964dfe7287)
+ Call ID: c4df9a92-efc4-4fcd-b1d4-0e964dfe7287
   Args:
-    target: Frederick_Windsor
-    source: Isabella_Alexandra_May
-    relation: :isDaughterOf
-  AddTriple (76195bd7-a668-4c3e-a6d7-15aa251da481)
- Call ID: 76195bd7-a668-4c3e-a6d7-15aa251da481
+    type: :Person
+    source: AndreiVladimirovich
+  AddTriple (5331e2a0-217a-4fb8-8054-bdd1c2234fc3)
+ Call ID: 5331e2a0-217a-4fb8-8054-bdd1c2234fc3
   Args:
-    source: Isabella_Alexandra_May
-    relation: :isDaughterOf
-    target: Sophie_Winkleman
-  AddLiteral (8cb0bd73-d0a6-45c0-b4e7-3c2f3a4eaee4)
- Call ID: 8cb0bd73-d0a6-45c0-b4e7-3c2f3a4eaee4
+    source: BorisVladimirovich
+    target: AndreiVladimirovich
+    relation: :isBrotherOf
+  AssignClass (fb37112b-d381-47fe-bb9b-2828809c10e1)
+ Call ID: fb37112b-d381-47fe-bb9b-2828809c10e1
   Args:
-    literal_value: 2016
-    literal_type: xsd:integer
-    source: Isabella_Alexandra_May
-    relation: :hasBirthYear
-  Finish (08176be3-1af4-4a43-91e4-54a7464cf7ee)
- Call ID: 08176be3-1af4-4a43-91e4-54a7464cf7ee
+    type: :Woman
+    source: ZinaidaSergeievnaRachevskaya
+  AssignClass (9570c5cb-3482-434b-bc78-77888221d55c)
+ Call ID: 9570c5cb-3482-434b-bc78-77888221d55c
   Args:
+    type: :Person
+    source: ZinaidaSergeievnaRachevskaya
+  AddTriple (551f93d3-5c19-46b3-8c48-1c0f8eb051d0)
+ Call ID: 551f93d3-5c19-46b3-8c48-1c0f8eb051d0
+  Args:
+    target: ZinaidaSergeievnaRachevskaya
+    source: BorisVladimirovich
+    relation: :hasRelation
+  AssignClass (357ba432-c7b6-4385-a139-75bf371a952d)
+ Call ID: 357ba432-c7b6-4385-a139-75bf371a952d
+  Args:
+    type: :Woman
+    source: JeanneAumontLacroix
+  AssignClass (5f1414c1-6c1a-4b75-8ec8-5962b66774b2)
+ Call ID: 5f1414c1-6c1a-4b75-8ec8-5962b66774b2
+  Args:
+    type: :Person
+    source: JeanneAumontLacroix
+  AssignClass (58776d75-10a7-449f-9054-702255e29104)
+ Call ID: 58776d75-10a7-449f-9054-702255e29104
+  Args:
+    type: :Man
+    source: JeanBorisLacroix
+  AssignClass (0a351ff5-5449-45ce-a5a2-4234e0ab2a44)
+ Call ID: 0a351ff5-5449-45ce-a5a2-4234e0ab2a44
+  Args:
+    type: :Person
+    source: JeanBorisLacroix
+  AddTriple (d9cd7e7b-e442-4232-b9e2-f94d1a04cf90)
+ Call ID: d9cd7e7b-e442-4232-b9e2-f94d1a04cf90
+  Args:
+    relation: :isFatherOf
+    source: BorisVladimirovich
+    target: JeanBorisLacroix
+  AddTriple (e7d2cd41-f0b3-4c28-99ea-6d5f21fc2956)
+ Call ID: e7d2cd41-f0b3-4c28-99ea-6d5f21fc2956
+  Args:
+    target: JeanBorisLacroix
+    source: JeanneAumontLacroix
+    relation: :isMotherOf
+  Finish (ad5fef76-23c1-4b5a-a845-532ff0bf28c4)
+ Call ID: ad5fef76-23c1-4b5a-a845-532ff0bf28c4
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -527,27 +785,38 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Lady_Gabriella a :Woman ;
-      :isSisterOf data:Frederick_Windsor .
+  data:BorisVladimirovich a :Man,
+          :Person ;
+      :hasBirthYear 1877 ;
+      :hasDeathYear 1943 ;
+      :hasFather data:VladimirAlexandrovich ;
+      :hasMother data:MariaPavlovna ;
+      :hasRelation data:ZinaidaSergeievnaRachevskaya ;
+      :isBrotherOf data:AndreiVladimirovich,
+          data:KirillVladimirovich ;
+      :isFatherOf data:JeanBorisLacroix .
 
-  data:Prince_Michael_of_Kent a :Man .
+  data:JeanneAumontLacroix a :Person,
+          :Woman ;
+      :isMotherOf data:JeanBorisLacroix .
 
-  data:Princess_Michael_of_Kent a :Woman .
+  data:AndreiVladimirovich a :Man,
+          :Person .
 
-  data:Sophie_Winkleman a :Woman ;
-      :hasChild data:Isabella_Alexandra_May .
+  data:KirillVladimirovich a :Man,
+          :Person .
 
-  data:Frederick_Windsor a :Man ;
-      :hasBirthYear 1979 ;
-      :hasChild data:Isabella_Alexandra_May ;
-      :hasFather data:Prince_Michael_of_Kent ;
-      :hasMother data:Princess_Michael_of_Kent ;
-      :hasSister data:Lady_Gabriella .
+  data:MariaPavlovna a :Person,
+          :Woman .
 
-  data:Isabella_Alexandra_May a :Woman ;
-      :hasBirthYear 2016 ;
-      :isDaughterOf data:Frederick_Windsor,
-          data:Sophie_Winkleman .
+  data:VladimirAlexandrovich a :Man,
+          :Person .
+
+  data:ZinaidaSergeievnaRachevskaya a :Person,
+          :Woman .
+
+  data:JeanBorisLacroix a :Man,
+          :Person .
 
 
 
@@ -559,110 +828,78 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (f8175b8a-7bba-45c5-8f47-d336247959ad)
- Call ID: f8175b8a-7bba-45c5-8f47-d336247959ad
+  ValidateShacl (b8b97b1a-e8c8-4a84-a101-0e570f6aa75e)
+ Call ID: b8b97b1a-e8c8-4a84-a101-0e570f6aa75e
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:8
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Michael_of_Kent, linked as the father of Frederick_Windsor, is missing the required class :Ancestor.
+      The node 'BorisVladimirovich' has a 'hasFather' relationship pointing to 'VladimirAlexandrovich', but 'VladimirAlexandrovich' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Michael_of_Kent, :Ancestor)
+      Use 'AssignClass' to add ':Ancestor' to 'VladimirAlexandrovich'.
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Michael_of_Kent, linked as the mother of Frederick_Windsor, is missing the required class :Ancestor.
+      The node 'BorisVladimirovich' has a 'hasMother' relationship pointing to 'MariaPavlovna', but 'MariaPavlovna' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Michael_of_Kent, :Ancestor)
+      Use 'AssignClass' to add ':Ancestor' to 'MariaPavlovna'.
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Michael_of_Kent, linked as the father of Frederick_Windsor, is missing the required class :Ancestor.
+      The node 'BorisVladimirovich' has a 'hasFather' relationship pointing to 'VladimirAlexandrovich', which is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Michael_of_Kent, :Ancestor)
+      Use 'AssignClass' to add ':Ancestor' to 'VladimirAlexandrovich'.
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Michael_of_Kent, linked as the mother of Frederick_Windsor, is missing the required class :Ancestor.
+      The node 'BorisVladimirovich' has a 'hasMother' relationship pointing to 'MariaPavlovna', which is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Michael_of_Kent, :Ancestor)
+      Use 'AssignClass' to add ':Ancestor' to 'MariaPavlovna'.
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Sophie_Winkleman, linked as a parent of Isabella_Alexandra_May, is missing the required class :Ancestor.
+      The node 'BorisVladimirovich' has a 'hasFather' relationship pointing to 'VladimirAlexandrovich', which is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophie_Winkleman, :Ancestor)
+      Use 'AssignClass' to add ':Ancestor' to 'VladimirAlexandrovich'.
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Frederick_Windsor, linked as a parent of Isabella_Alexandra_May, is missing the required class :Ancestor.
+      The node 'BorisVladimirovich' has a 'hasMother' relationship pointing to 'MariaPavlovna', which is missing the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Windsor, :Ancestor)
+      Use 'AssignClass' to add ':Ancestor' to 'MariaPavlovna'.
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node Prince_Michael_of_Kent, linked as the father of Frederick_Windsor, is missing the required class :Ancestor.
+      The node 'BorisVladimirovich' is the subject of an 'isFatherOf' relation, which requires the subject to be classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Michael_of_Kent, :Ancestor)
+      Use 'AssignClass' to add ':Ancestor' to 'BorisVladimirovich'.
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The node Princess_Michael_of_Kent, linked as the mother of Frederick_Windsor, is missing the required class :Ancestor.
+      The node 'JeanneAumontLacroix' is the subject of an 'isMotherOf' relation, which requires the subject to be classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Michael_of_Kent, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Sophie_Winkleman, linked as a parent of Isabella_Alexandra_May, is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophie_Winkleman, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Frederick_Windsor, linked as a parent of Isabella_Alexandra_May, is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Windsor, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Sophie_Winkleman, linked as a parent of Isabella_Alexandra_May, is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophie_Winkleman, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Frederick_Windsor, linked as a parent of Isabella_Alexandra_May, is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Windsor, :Ancestor)
+      Use 'AssignClass' to add ':Ancestor' to 'JeanneAumontLacroix'.
 
 
 
@@ -671,28 +908,28 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (6b5f7a18-695b-4dea-9d3c-f50aa881454f)
- Call ID: 6b5f7a18-695b-4dea-9d3c-f50aa881454f
+  AssignClass (e9e80a40-92a0-48c7-85b1-caa4e035efa6)
+ Call ID: e9e80a40-92a0-48c7-85b1-caa4e035efa6
   Args:
     type: :Ancestor
-    source: Prince_Michael_of_Kent
-  AssignClass (ce3a6e5d-b436-454f-8430-db8d2c09becd)
- Call ID: ce3a6e5d-b436-454f-8430-db8d2c09becd
+    source: VladimirAlexandrovich
+  AssignClass (0c9d4b50-fb1d-4fb1-b3c0-97c3c16e4d99)
+ Call ID: 0c9d4b50-fb1d-4fb1-b3c0-97c3c16e4d99
   Args:
-    source: Princess_Michael_of_Kent
+    source: MariaPavlovna
     type: :Ancestor
-  AssignClass (691c31e8-c3dc-4230-858d-70af74469042)
- Call ID: 691c31e8-c3dc-4230-858d-70af74469042
-  Args:
-    source: Sophie_Winkleman
-    type: :Ancestor
-  AssignClass (3b367bef-1b73-4355-a9fc-7f67b636fa4f)
- Call ID: 3b367bef-1b73-4355-a9fc-7f67b636fa4f
+  AssignClass (6364cec2-4915-4c7a-ab20-0725fe4ac113)
+ Call ID: 6364cec2-4915-4c7a-ab20-0725fe4ac113
   Args:
     type: :Ancestor
-    source: Frederick_Windsor
-  ValidateShacl (c8081105-3f1f-40b4-b009-a6e7a78da3d0)
- Call ID: c8081105-3f1f-40b4-b009-a6e7a78da3d0
+    source: BorisVladimirovich
+  AssignClass (ccbe7187-eed9-4b42-aeb9-a7ab6aec9e81)
+ Call ID: ccbe7187-eed9-4b42-aeb9-a7ab6aec9e81
+  Args:
+    source: JeanneAumontLacroix
+    type: :Ancestor
+  ValidateShacl (8094678a-2f24-4ed3-a9c9-e5be14d72f36)
+ Call ID: 8094678a-2f24-4ed3-a9c9-e5be14d72f36
   Args:
 
 ================================= Tool Message =================================
@@ -714,31 +951,42 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Lady_Gabriella a :Woman ;
-      :isSisterOf data:Frederick_Windsor .
+  data:BorisVladimirovich a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1877 ;
+      :hasDeathYear 1943 ;
+      :hasFather data:VladimirAlexandrovich ;
+      :hasMother data:MariaPavlovna ;
+      :hasRelation data:ZinaidaSergeievnaRachevskaya ;
+      :isBrotherOf data:AndreiVladimirovich,
+          data:KirillVladimirovich ;
+      :isFatherOf data:JeanBorisLacroix .
 
-  data:Prince_Michael_of_Kent a :Ancestor,
-          :Man .
+  data:JeanneAumontLacroix a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:JeanBorisLacroix .
 
-  data:Princess_Michael_of_Kent a :Ancestor,
+  data:AndreiVladimirovich a :Man,
+          :Person .
+
+  data:KirillVladimirovich a :Man,
+          :Person .
+
+  data:MariaPavlovna a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Sophie_Winkleman a :Ancestor,
-          :Woman ;
-      :hasChild data:Isabella_Alexandra_May .
+  data:VladimirAlexandrovich a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Frederick_Windsor a :Ancestor,
-          :Man ;
-      :hasBirthYear 1979 ;
-      :hasChild data:Isabella_Alexandra_May ;
-      :hasFather data:Prince_Michael_of_Kent ;
-      :hasMother data:Princess_Michael_of_Kent ;
-      :hasSister data:Lady_Gabriella .
+  data:ZinaidaSergeievnaRachevskaya a :Person,
+          :Woman .
 
-  data:Isabella_Alexandra_May a :Woman ;
-      :hasBirthYear 2016 ;
-      :isDaughterOf data:Frederick_Windsor,
-          data:Sophie_Winkleman .
+  data:JeanBorisLacroix a :Man,
+          :Person .
 
 
 
@@ -750,6 +998,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (32183839-df42-4d63-9235-314e2d76e7cb)
- Call ID: 32183839-df42-4d63-9235-314e2d76e7cb
+  Finish (48552606-b985-404a-9dd1-978b4a5d2bd7)
+ Call ID: 48552606-b985-404a-9dd1-978b4a5d2bd7
   Args:

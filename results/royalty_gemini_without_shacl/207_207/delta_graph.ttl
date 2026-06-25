@@ -2,47 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:PrinceLucienMurat a :Man .
+data:Marie_Louise_of_Hanover_and_Cumberland a :Person,
+        :Woman ;
+    :hasAncestor data:Charlotte_of_Mecklenburg_Strelitz,
+        data:George_III_of_the_United_Kingdom ;
+    :hasBirthYear 1879 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMarriageYear 1900 ;
+    :hasMother data:Princess_Thyra_of_Denmark ;
+    :hasRelation data:Maximilian_of_Baden .
 
-data:PrinceMichelDOrleans a :Man ;
-    :hasFather data:HenriCountOfParis .
+data:Napoleon_III_of_France a :Man,
+        :Person .
 
-data:PrincessIsabelleDOrleans a :Woman ;
-    :hasBirthYear 1900 ;
-    :hasBrother data:HenriCountOfParis ;
-    :hasDeathYear 1983 ;
-    :hasFather data:PrinceJeanDukeOfGuise ;
-    :hasMarriageYear 1923,
-        1934 ;
-    :hasMother data:PrincessIsabelleOfOrleans ;
-    :hasRelation data:CountBrunoDHarcourt,
-        data:PrincePierreMurat ;
-    :hasSister data:PrincessFrancoiseOfGreece .
+data:Charlotte_of_Mecklenburg_Strelitz a :Person,
+        :Woman .
 
-data:ArmandeDePierreDeBernis a :Woman .
+data:Christian_IX_of_Denmark a :Man,
+        :Person .
 
-data:CountBrunoDHarcourt a :Man ;
-    :hasBirthYear 1899 ;
-    :hasDeathYear 1930 ;
-    :hasFather data:CountEugeneDHarcourt ;
-    :hasMother data:ArmandeDePierreDeBernis .
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,
+        :Person .
 
-data:CountEugeneDHarcourt a :Man .
+data:George_III_of_the_United_Kingdom a :Man,
+        :Person .
 
-data:PrinceChristopherOfGreece a :Man .
+data:Louise_of_Hesse_Kassel a :Person,
+        :Woman .
 
-data:PrinceJeanDukeOfGuise a :Man ;
-    :hasBirthYear 1874 ;
-    :hasDeathYear 1940 .
+data:Maria_Maximilianovna_of_Leuchtenberg a :Person,
+        :Woman .
 
-data:PrincePierreMurat a :Man ;
-    :hasBirthYear 1900 ;
-    :hasDeathYear 1948 .
+data:Maximilian_of_Baden a :Man,
+        :Person ;
+    :hasBirthYear 1867 ;
+    :hasDeathYear 1929 ;
+    :hasFather data:Wilhelm_of_Baden ;
+    :hasMother data:Maria_Maximilianovna_of_Leuchtenberg .
 
-data:PrincessFrancoiseOfGreece a :Woman ;
-    :hasRelation data:PrinceChristopherOfGreece .
+data:Princess_Thyra_of_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasMother data:Louise_of_Hesse_Kassel .
 
-data:PrincessIsabelleOfOrleans a :Woman .
-
-data:HenriCountOfParis a :Man .
+data:Wilhelm_of_Baden a :Man,
+        :Person .
 

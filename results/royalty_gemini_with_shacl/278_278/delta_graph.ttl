@@ -2,46 +2,71 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Achileas-Andreas a :Man .
+data:ChristianIX a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:FrederikVIII .
 
-data:Alexia a :Woman .
+data:Gustav a :Man,
+        :Person .
 
-data:Anne-Marie a :Ancestor,
+data:Harald a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:CarolineMathilde .
+
+data:Helena a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:CarolineMathilde .
+
+data:Knud a :Man,
+        :Person ;
+    :hasBirthYear 1900 ;
+    :hasDaughter data:Elisabeth ;
+    :hasDeathYear 1976 ;
+    :hasFather data:ChristianX ;
+    :hasMarriageYear 1933 ;
+    :hasMother data:Alexandrine ;
+    :hasRelation data:CarolineMathilde ;
+    :hasSon data:Christian_son_of_Knud,
+        data:Ingolf ;
+    :isBrotherOf data:FrederikIX .
+
+data:Alexandrine a :Ancestor,
+        :Person,
         :Woman .
 
-data:Aristides-Stavros a :Man .
+data:Christian_son_of_Knud a :Man,
+        :Person ;
+    :hasMother data:CarolineMathilde .
 
-data:Constantine-Alexios a :Man .
+data:Elisabeth a :Person,
+        :Woman ;
+    :hasMother data:CarolineMathilde .
 
-data:Constantine_II a :Ancestor,
-        :Man ;
-    :hasChild data:Alexia,
-        data:Nikolaos,
-        data:Pavlos,
-        data:Philippos,
-        data:Theodora .
+data:FrederikIX a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:MargretheII .
 
-data:Maria-Olympia a :Woman .
+data:FrederikVIII a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:ChristianX .
 
-data:Marie-Chantal_Miller a :Woman .
+data:Ingolf a :Man,
+        :Person ;
+    :hasMother data:CarolineMathilde .
 
-data:Nikolaos a :Man .
+data:MargretheII a :Person,
+        :Woman .
 
-data:Odysseas-Kimon a :Man .
+data:ChristianX a :Ancestor,
+        :Man,
+        :Person .
 
-data:Pavlos a :Man ;
-    :hasBirthYear "1967"^^xsd:positiveInteger ;
-    :hasChild data:Achileas-Andreas,
-        data:Aristides-Stavros,
-        data:Constantine-Alexios,
-        data:Maria-Olympia,
-        data:Odysseas-Kimon ;
-    :hasFather data:Constantine_II ;
-    :hasMarriageYear "1995"^^xsd:positiveInteger ;
-    :hasMother data:Anne-Marie ;
-    :hasRelation data:Marie-Chantal_Miller .
-
-data:Philippos a :Man .
-
-data:Theodora a :Woman .
+data:CarolineMathilde a :Ancestor,
+        :Person,
+        :Woman .
 

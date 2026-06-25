@@ -7,72 +7,17 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Maximilian_of_Baden a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Maximilian of Baden" ;
-    data:posIndicesFull "209:235" ;
-    data:posIndicesPart "332:338",
-        "350:355",
-        "443:453",
-        "745:751" ;
-    data:wdtLink wdt:Q76908 ;
-    :alsoKnownAs "Prinz Maximilian von Baden" ;
-    :hasChild data:Princess_Marie_Alexandra_of_Baden ;
-    :hasDaughter data:Princess_Marie_Alexandra_of_Baden ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Marie_Alexandra_of_Baden ;
-    :isParentOf data:Princess_Marie_Alexandra_of_Baden .
-
-data:Ernst_August-_Duke_of_Brunswick a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Ernst_August-_Duke_of_Brunswick a :Person ;
     rdfs:label "Ernst August, Duke of Brunswick" ;
     data:posIndicesFull "597:612" ;
     data:wdtLink wdt:Q57672 ;
     :alsoKnownAs "Ernest August I, Duke of Brunswick",
         "Ernest Augustus",
         "Ernst August I of Brunswick" ;
-    :hasFather data:Ernst_August-_Crown_Prince_of_Hanover ;
     :hasParent data:Ernst_August-_Crown_Prince_of_Hanover ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Marie_Louise_of_Hanover ;
-    :isBrotherOf data:Princess_Marie_Louise_of_Hanover ;
-    :isChildOf data:Ernst_August-_Crown_Prince_of_Hanover ;
-    :isSiblingOf data:Princess_Marie_Louise_of_Hanover ;
-    :isSonOf data:Ernst_August-_Crown_Prince_of_Hanover ;
-    :isUncleOf data:Princess_Marie_Alexandra_of_Baden .
+    :hasSex data:male .
 
-data:Ernst_August-_Crown_Prince_of_Hanover a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Ernst August, Crown Prince of Hanover" ;
-    data:posIndicesFull "597:637" ;
-    data:posIndicesPart "745:751" ;
-    data:wdtLink wdt:Q437001 ;
-    :alsoKnownAs "Crown Prince Ernest Augustus of Hanover" ;
-    :hasChild data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Marie_Louise_of_Hanover ;
-    :hasDaughter data:Princess_Marie_Louise_of_Hanover ;
-    :hasSex data:male ;
-    :hasSon data:Ernst_August-_Duke_of_Brunswick ;
-    :isFatherOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Marie_Louise_of_Hanover ;
-    :isParentOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Marie_Louise_of_Hanover .
-
-data:Princess_Marie_Alexandra_of_Baden a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Marie_Alexandra_of_Baden a :Person ;
     rdfs:label "Princess Marie Alexandra of Baden" ;
     data:posIndicesFull "0:33" ;
     data:posIndicesPart "1114:1119",
@@ -85,20 +30,28 @@ data:Princess_Marie_Alexandra_of_Baden a :Person,
         "799:804",
         "805:814" ;
     data:wdtLink wdt:Q3260259 ;
-    :hasFather data:Prince_Maximilian_of_Baden ;
-    :hasMother data:Princess_Marie_Louise_of_Hanover ;
     :hasParent data:Prince_Maximilian_of_Baden,
         data:Princess_Marie_Louise_of_Hanover ;
-    :hasSex data:female ;
-    :isChildOf data:Prince_Maximilian_of_Baden,
-        data:Princess_Marie_Louise_of_Hanover ;
-    :isDaughterOf data:Prince_Maximilian_of_Baden,
-        data:Princess_Marie_Louise_of_Hanover .
+    :hasSex data:female .
 
-data:Princess_Marie_Louise_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Maximilian_of_Baden a :Person ;
+    rdfs:label "Prince Maximilian of Baden" ;
+    data:posIndicesFull "209:235" ;
+    data:posIndicesPart "332:338",
+        "350:355",
+        "443:453",
+        "745:751" ;
+    data:wdtLink wdt:Q76908 ;
+    :alsoKnownAs "Prinz Maximilian von Baden" ;
+    :hasSex data:male .
+
+data:Princess_Marie_Louise_of_Hanover a :Person ;
     rdfs:label "Princess Marie Louise of Hanover" ;
     data:posIndicesFull "252:284",
         "252:299",
@@ -117,16 +70,18 @@ data:Princess_Marie_Louise_of_Hanover a :Ancestor,
         "Princess Marie Louise of Hanover",
         "Princess Marie Louise of Hanover and Cumberland",
         "Princess Marie Louise, Margravine of Baden" ;
-    :hasBrother data:Ernst_August-_Duke_of_Brunswick ;
-    :hasChild data:Princess_Marie_Alexandra_of_Baden ;
-    :hasDaughter data:Princess_Marie_Alexandra_of_Baden ;
-    :hasFather data:Ernst_August-_Crown_Prince_of_Hanover ;
     :hasParent data:Ernst_August-_Crown_Prince_of_Hanover ;
-    :hasSex data:female ;
-    :isChildOf data:Ernst_August-_Crown_Prince_of_Hanover ;
-    :isDaughterOf data:Ernst_August-_Crown_Prince_of_Hanover ;
-    :isMotherOf data:Princess_Marie_Alexandra_of_Baden ;
-    :isParentOf data:Princess_Marie_Alexandra_of_Baden ;
-    :isSiblingOf data:Ernst_August-_Duke_of_Brunswick ;
-    :isSisterOf data:Ernst_August-_Duke_of_Brunswick .
+    :hasSex data:female .
+
+data:Ernst_August-_Crown_Prince_of_Hanover a :Person ;
+    rdfs:label "Ernst August, Crown Prince of Hanover" ;
+    data:posIndicesFull "597:637" ;
+    data:posIndicesPart "745:751" ;
+    data:wdtLink wdt:Q437001 ;
+    :alsoKnownAs "Crown Prince Ernest Augustus of Hanover" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

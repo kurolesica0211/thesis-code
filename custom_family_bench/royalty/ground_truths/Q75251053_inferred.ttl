@@ -1,0 +1,510 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Fenella Hepburn-Stuart-Forbes-Trefusis"^^xsd:string ;
+    data:posIndicesFull "722:760"^^xsd:string ;
+    data:posIndicesPart "1002:1009"^^xsd:string,
+        "1010:1016"^^xsd:string,
+        "1017:1023"^^xsd:string,
+        "1024:1032"^^xsd:string,
+        "1103:1110"^^xsd:string,
+        "1111:1117"^^xsd:string,
+        "1118:1124"^^xsd:string,
+        "1125:1133"^^xsd:string,
+        "1186:1193"^^xsd:string,
+        "1194:1200"^^xsd:string,
+        "1282:1289"^^xsd:string,
+        "1290:1296"^^xsd:string,
+        "1297:1303"^^xsd:string,
+        "1304:1312"^^xsd:string,
+        "2040:2047"^^xsd:string,
+        "2132:2139"^^xsd:string,
+        "2746:2753"^^xsd:string,
+        "2835:2842"^^xsd:string,
+        "3176:3183"^^xsd:string,
+        "3328:3335"^^xsd:string,
+        "3336:3342"^^xsd:string,
+        "3343:3349"^^xsd:string,
+        "3350:3358"^^xsd:string,
+        "3413:3420"^^xsd:string,
+        "3629:3636"^^xsd:string,
+        "3637:3643"^^xsd:string,
+        "3644:3650"^^xsd:string,
+        "3651:3659"^^xsd:string,
+        "4236:4244"^^xsd:string ;
+    data:wdtLink wdt:Q75381423 ;
+    :alsoKnownAs "Fenella Bowes-Lyon"^^xsd:string,
+        "Hon. Fenella Bowes-Lyon"^^xsd:string,
+        "Hon. Fenella Hepburn-Stuart-Forbes-Trefusis"^^xsd:string ;
+    :hasChild data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasDaughter data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isAncestorOf data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isAuntOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isBloodrelationOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isMotherOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isParentOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isSiblingOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSisterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:Lady_Elizabeth_Shakerley a :Person,
+        :Woman ;
+    rdfs:label "Lady Elizabeth Shakerley"^^xsd:string ;
+    data:posIndicesFull "2809:2833"^^xsd:string,
+        "2814:2833"^^xsd:string,
+        "3194:3218"^^xsd:string,
+        "3199:3218"^^xsd:string,
+        "4854:4878"^^xsd:string,
+        "4859:4878"^^xsd:string ;
+    data:posIndicesPart "3824:3828"^^xsd:string,
+        "4562:4571"^^xsd:string,
+        "5245:5254"^^xsd:string ;
+    data:wdtLink wdt:Q75332807 ;
+    :alsoKnownAs "Elizabeth Anson"^^xsd:string,
+        "Elizabeth Georgiana Anson"^^xsd:string,
+        "Elizabeth Georgiana Shakerley"^^xsd:string,
+        "Elizabeth Shakerley"^^xsd:string,
+        "Lady Elizabeth Anson"^^xsd:string,
+        "Lady Elizabeth Georgiana Anson"^^xsd:string,
+        "Lady Elizabeth Georgiana Shakerley"^^xsd:string ;
+    :hasAncestor data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasMother data:Princess_Anne_of_Denmark ;
+    :hasParent data:Princess_Anne_of_Denmark ;
+    :hasRelation data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Elizabeth_Shakerley ;
+    :isBloodrelationOf data:Lady_Elizabeth_Shakerley ;
+    :isChildOf data:Princess_Anne_of_Denmark ;
+    :isDaughterOf data:Princess_Anne_of_Denmark ;
+    :isSiblingOf data:Lady_Elizabeth_Shakerley ;
+    :isSisterOf data:Lady_Elizabeth_Shakerley .
+
+data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne"^^xsd:string ;
+    data:posIndicesFull "509:565"^^xsd:string ;
+    data:posIndicesPart "2467:2472"^^xsd:string,
+        "2473:2477"^^xsd:string ;
+    data:wdtLink wdt:Q238820 ;
+    :alsoKnownAs "Cecilia Nina Bowes-Lyon, Countess of Strathmore and Kinghorne"^^xsd:string,
+        "Cecilia Nina Cavendish-Bentinck"^^xsd:string ;
+    :hasChild data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasDaughter data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne,
+        data:John_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :hasSon data:John_Bowes-Lyon ;
+    :isAncestorOf data:John_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAuntOf data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isBloodrelationOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :isMotherOf data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isParentOf data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :isSisterOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne .
+
+data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Claude Bowes-Lyon, 14th Earl of Strathmore and Kinghorne"^^xsd:string ;
+    data:posIndicesFull "794:850"^^xsd:string ;
+    data:posIndicesPart "2467:2472"^^xsd:string,
+        "2473:2477"^^xsd:string,
+        "3228:3232"^^xsd:string,
+        "4086:4090"^^xsd:string ;
+    data:wdtLink wdt:Q335159 ;
+    :alsoKnownAs "Claude George Bowes-Lyon, 14th and 1st Earl of Strathmore and Kinghorne"^^xsd:string ;
+    :hasBrother data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasChild data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasDaughter data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne,
+        data:John_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:male ;
+    :hasSon data:John_Bowes-Lyon ;
+    :isAncestorOf data:John_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isBloodrelationOf data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBrotherOf data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :isFatherOf data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isParentOf data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :isUncleOf data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "2517:2533"^^xsd:string,
+        "279:294"^^xsd:string,
+        "295:311"^^xsd:string,
+        "2994:3009"^^xsd:string,
+        "3010:3026"^^xsd:string,
+        "371:386"^^xsd:string,
+        "869:894"^^xsd:string,
+        "874:894"^^xsd:string,
+        "924:939"^^xsd:string ;
+    data:posIndicesPart "1494:1500"^^xsd:string,
+        "2053:2059"^^xsd:string,
+        "2739:2745"^^xsd:string,
+        "3406:3412"^^xsd:string,
+        "3851:3857"^^xsd:string,
+        "4285:4290"^^xsd:string,
+        "4384:4389"^^xsd:string,
+        "4562:4571"^^xsd:string,
+        "4806:4811"^^xsd:string,
+        "4901:4906"^^xsd:string,
+        "5257:5263"^^xsd:string,
+        "959:965"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasAncestor data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasBrother data:John_Bowes-Lyon ;
+    :hasFather data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasMother data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasRelation data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne,
+        data:John_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAuntOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isBloodrelationOf data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isChildOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :isDaughterOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :isSiblingOf data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:Katherine_Bowes-Lyon a :Person,
+        :Woman ;
+    rdfs:label "Katherine Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "631:651"^^xsd:string,
+        "71:98"^^xsd:string ;
+    data:posIndicesPart "1601:1610"^^xsd:string,
+        "1890:1899"^^xsd:string,
+        "2467:2472"^^xsd:string,
+        "2473:2477"^^xsd:string,
+        "3251:3260"^^xsd:string,
+        "3394:3403"^^xsd:string,
+        "454:459"^^xsd:string,
+        "460:464"^^xsd:string,
+        "4664:4673"^^xsd:string,
+        "5173:5182"^^xsd:string ;
+    data:wdtLink wdt:Q75248488 ;
+    :alsoKnownAs "Katherine Juliet Bowes-Lyon"^^xsd:string ;
+    :hasAncestor data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasFather data:John_Bowes-Lyon ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasParent data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isAuntOf data:Lady_Elizabeth_Shakerley ;
+    :isBloodrelationOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isChildOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :isDaughterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :isSiblingOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isSisterOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark .
+
+data:Nerissa_Bowes-Lyon a :Person,
+        :Woman ;
+    rdfs:label "Nerissa Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "0:29"^^xsd:string,
+        "3300:3318"^^xsd:string,
+        "579:597"^^xsd:string ;
+    data:posIndicesPart "1589:1596"^^xsd:string,
+        "1805:1812"^^xsd:string,
+        "2467:2472"^^xsd:string,
+        "2473:2477"^^xsd:string,
+        "2617:2624"^^xsd:string,
+        "3382:3389"^^xsd:string,
+        "454:459"^^xsd:string,
+        "460:464"^^xsd:string,
+        "4678:4685"^^xsd:string,
+        "5187:5194"^^xsd:string,
+        "5454:5461"^^xsd:string ;
+    data:wdtLink wdt:Q75251053 ;
+    :alsoKnownAs "Nerissa Jane Irene Bowes-Lyon"^^xsd:string ;
+    :hasAncestor data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasFather data:John_Bowes-Lyon ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasParent data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isAuntOf data:Lady_Elizabeth_Shakerley ;
+    :isBloodrelationOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isChildOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :isDaughterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :isSiblingOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isSisterOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark .
+
+data:Princess_Anne_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Anne of Denmark"^^xsd:string ;
+    data:posIndicesFull "5274:5298"^^xsd:string ;
+    data:wdtLink wdt:Q2871729 ;
+    :alsoKnownAs "Anne Anson"^^xsd:string,
+        "Anne Anson, Viscountess Anson"^^xsd:string,
+        "Anne Bowes-Lyon"^^xsd:string,
+        "Anne Ferelith Fenella Anson"^^xsd:string,
+        "Anne Ferelith Fenella Anson, Viscountess Anson"^^xsd:string,
+        "Anne Ferelith Fenella Bowes-Lyon"^^xsd:string,
+        "Princess Anne Ferelith Fenella of Denmark"^^xsd:string ;
+    :hasAncestor data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasChild data:Lady_Elizabeth_Shakerley ;
+    :hasDaughter data:Lady_Elizabeth_Shakerley ;
+    :hasFather data:John_Bowes-Lyon ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasParent data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isAncestorOf data:Lady_Elizabeth_Shakerley ;
+    :isAuntOf data:Lady_Elizabeth_Shakerley ;
+    :isBloodrelationOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isChildOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :isDaughterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :isMotherOf data:Lady_Elizabeth_Shakerley ;
+    :isParentOf data:Lady_Elizabeth_Shakerley ;
+    :isSiblingOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isSisterOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark .
+
+data:John_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "John Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "172:195"^^xsd:string,
+        "694:717"^^xsd:string ;
+    data:posIndicesPart "2467:2472"^^xsd:string,
+        "2473:2477"^^xsd:string,
+        "255:259"^^xsd:string,
+        "3188:3192"^^xsd:string,
+        "454:459"^^xsd:string,
+        "460:464"^^xsd:string,
+        "5361:5365"^^xsd:string ;
+    data:wdtLink wdt:Q75411 ;
+    :alsoKnownAs "Hon. John Bowes-Lyon"^^xsd:string,
+        "Hon. John Herbert \"Jock\" Bowes-Lyon"^^xsd:string,
+        "Hon. John Herbert Bowes-Lyon"^^xsd:string,
+        "Jock Bowes-Lyon"^^xsd:string,
+        "John Herbert Bowes-Lyon"^^xsd:string ;
+    :hasAncestor data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasBrother data:John_Bowes-Lyon ;
+    :hasChild data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasDaughter data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasFather data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasMother data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasRelation data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne,
+        data:John_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:male ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAncestorOf data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isBloodrelationOf data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isBrotherOf data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isChildOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :isFatherOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isParentOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isSiblingOf data:John_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSonOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne ;
+    :isUncleOf data:Katherine_Bowes-Lyon,
+        data:Nerissa_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark .
+

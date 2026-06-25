@@ -1,77 +1,26 @@
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Pieter_van_Vollenhoven a :Man .
+data:Adalbert_of_Prussia a :Man ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Wilhelm_II_of_Prussia ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasRelation data:Adelheid_of_Saxe-Meiningen .
 
-data:Prince_Carlos_Enrique a :Man ;
-    :hasFather data:Prince_Carlos ;
-    :hasMother data:Annemarie_Gualth%C3%A9rie_van_Weezel .
+data:Adelaide_of_Lippe-Biesterfeld a :Woman .
 
-data:Prince_Felix a :Man ;
-    :hasChild data:Princess_Joan .
+data:Adelheid_of_Saxe-Meiningen a :Woman ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1971 ;
+    :hasFather data:Frederick_of_Saxe-Meiningen ;
+    :hasMother data:Adelaide_of_Lippe-Biesterfeld .
 
-data:Prince_Jaime a :Man ;
-    :hasFather data:Carlos_Hugo ;
-    :hasMother data:Princess_Irene .
+data:Augusta_Victoria_of_Schleswig-Holstein a :Woman .
 
-data:Prince_Louis a :Man ;
-    :hasChild data:Prince_Jean,
-        data:Prince_R%C3%A9my,
-        data:Princess_Chantal,
-        data:Princess_Elisabeth,
-        data:Princess_Virginia .
+data:Frederick_of_Saxe-Meiningen a :Man .
 
-data:Prince_Ren%C3%A9 a :Man ;
-    :hasChild data:Princess_Maria_Pia,
-        data:Princess_Marina .
-
-data:Princess_Beatrix a :Woman .
-
-data:Princess_Carolina a :Woman ;
-    :hasFather data:Carlos_Hugo ;
-    :hasMother data:Princess_Irene .
-
-data:Princess_Cecilia a :Woman ;
-    :hasFather data:Prince_Carlos ;
-    :hasMother data:Annemarie_Gualth%C3%A9rie_van_Weezel .
-
-data:Princess_Luisa a :Woman ;
-    :hasFather data:Prince_Carlos ;
-    :hasMother data:Annemarie_Gualth%C3%A9rie_van_Weezel .
-
-data:Princess_Margarita a :Woman ;
-    :hasFather data:Carlos_Hugo ;
-    :hasMother data:Princess_Irene .
-
-data:Princess_Margriet a :Woman .
-
-data:Prince_Jean a :Man .
-
-data:Prince_R%C3%A9my a :Man .
-
-data:Prince_Xavier a :Man .
-
-data:Princess_Chantal a :Woman .
-
-data:Princess_Elisabeth a :Woman .
-
-data:Princess_Joan a :Woman .
-
-data:Princess_Maria_Pia a :Woman .
-
-data:Princess_Marina a :Woman .
-
-data:Princess_Virginia a :Woman .
-
-data:Prince_Carlos a :Man ;
-    :hasFather data:Carlos_Hugo ;
-    :hasMother data:Princess_Irene ;
-    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel .
-
-data:Annemarie_Gualth%C3%A9rie_van_Weezel a :Woman .
-
-data:Carlos_Hugo a :Man ;
-    :hasFather data:Prince_Xavier .
-
-data:Princess_Irene a :Woman .
+data:Wilhelm_II_of_Prussia a :Man .
 

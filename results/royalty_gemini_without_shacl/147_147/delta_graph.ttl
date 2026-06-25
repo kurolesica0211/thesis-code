@@ -2,38 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Karl_of_Leiningen a :Man,
-        :Person ;
-    :hasBirthYear 1928 ;
-    :hasDeathYear 1990 ;
-    :hasFather data:Karl_6th_Prince_of_Leiningen ;
-    :hasMother data:Maria_Kirillovna_of_Russia ;
-    :hasRelation data:Marie_Louise_of_Bulgaria .
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,
+        :Woman ;
+    :hasBirthYear 1882 ;
+    :hasBrother data:Andrei,
+        data:Boris,
+        data:Kirill ;
+    :hasDaughter data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :hasDeathYear 1957 ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasMarriageYear 1902 ;
+    :hasMother data:Duchess_Marie_of_Mecklenburg_Schwerin ;
+    :hasRelation data:Prince_Nicholas_of_Greece_and_Denmark .
 
-data:Boris_III_of_Bulgaria a :Man,
+data:Andrei a :Man,
         :Person .
 
-data:Giovanna_of_Italy a :Person,
+data:Boris a :Man,
+        :Person .
+
+data:Duchess_Marie_of_Mecklenburg_Schwerin a :Person,
         :Woman .
 
-data:Karl_6th_Prince_of_Leiningen a :Man,
-        :Person ;
-    :hasBirthYear 1898 ;
-    :hasDeathYear 1946 .
-
-data:Kirill_Vladimirovich_of_Russia a :Man,
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man,
         :Person .
 
-data:Maria_Kirillovna_of_Russia a :Person,
-        :Woman ;
-    :hasFather data:Kirill_Vladimirovich_of_Russia ;
-    :hasMother data:Victoria_Melita_of_Edinburgh .
+data:Kirill a :Man,
+        :Person .
 
-data:Marie_Louise_of_Bulgaria a :Person,
-        :Woman ;
-    :hasFather data:Boris_III_of_Bulgaria ;
-    :hasMother data:Giovanna_of_Italy .
+data:Prince_Nicholas_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasDaughter data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece .
 
-data:Victoria_Melita_of_Edinburgh a :Person,
+data:Princess_Elizabeth_of_Greece a :Person,
+        :Woman .
+
+data:Princess_Marina_of_Greece a :Person,
+        :Woman .
+
+data:Princess_Olga_of_Greece a :Person,
         :Woman .
 

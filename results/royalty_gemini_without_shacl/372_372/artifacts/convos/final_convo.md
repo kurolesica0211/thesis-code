@@ -69,31 +69,45 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Dowager Princess Napoléon
+Prince George William of Hanover and Cumberland (Georg Wilhelm Ernst August Friedrich Axel Prinz von Hannover; 25 March 1915 – 8 January 2006) was the second-eldest son of Ernest Augustus, Duke of Brunswick, and his wife Princess Victoria Louise of Prussia, the only daughter of Wilhelm II, German Emperor, and Augusta Victoria of Schleswig-Holstein.
+George William's wife was a sister of Prince Philip, Duke of Edinburgh, and his children are thus first cousins of King Charles III.
+His sister, Frederica, became Queen of the Hellenes as the consort of King Paul of Greece.
+He held the title of Prince of the United Kingdom of Great Britain and Ireland, granted ad personam to the children of the then-Duke of Brunswick by George V's letters patent of 1914, which remained unrevoked.
+Life
+
+George William was christened on 10 May 1915 in Brunswick.
+The prince's godparents included Maria Christina of Austria, Prince Axel of Denmark, and Princess Olga of Hanover and Cumberland who held the infant prince over the baptismal font.
+From 1930 through 1934, Prince George William attended the elite boarding school Schule Schloss Salem in Überlingen on Lake Constance.
+Schule Schloss Salem was co-founded by the prince's uncle, the last Chancellor of the German Empire, Prince Maximilian of Baden, and educator Kurt Hahn in 1920.
+A former student of the institution, the prince then went to Scotland with his wife to meet with Kurt Hahn, the founder of the school, and to visit Gordonstoun, the establishment that the latter founded when he had to flee Nazi Germany because of his Jewish origins.
+Together with his wife, as well as his three brothers, he took part in the ship tours organized by his sister Queen Frederica and her husband King Paul of Greece in 1954 and 1956, which became known as the “Cruises of the Kings” and were attended by over 100 royals from all over Europe.
+For many years Prince George William was a member of the International Olympic Committee (IOC) and of the Deutscher Olympischer Sportbund (DOSB), the German NOC.
+Prince George William of Hanover lived in Schliersee, near Munich, and died in Munich in 2006 aged 90.
+His wife, Sophie, sister of Prince Philip of Greece and Denmark, later Duke of Edinburgh, consort of Queen Elizabeth II of the United Kingdom, died in 2001.
+Marriage
+
+On 23 April 1946 in Salem, Baden-Württemberg, Germany, Prince George William married his third cousin Princess Sophie of Greece and Denmark, daughter of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, and the widow of Prince Christoph of Hesse.
+After consultations with the Foreign Office, Home Office and King George VI's private secretary, Sir Alan Lascelles, a ciphered telegram dated 18 April 1946 and crafted by Sir Albert Napier, permanent secretary to the Lord Chancellor, was transmitted from the British Foreign Office to the Foreign Adviser to the British Commander in Chief at Berlin:
 
 
-Jean-Christophe, Prince Napoléon, Prince of Montfort (born Jean-Christophe Louis Ferdinand Albéric Napoléon Bonaparte; 11 July 1986), is a French businessman and the disputed head of the Imperial House of France, and as such the heir of Napoleon Bonaparte, the first Emperor of the French.
-Family background
+"The Duke of Brunswick has formally applied to The King by letter of March 22nd for the consent of His Majesty under the Act 12 Geo.
+11 to the marriage of his son Prince George William with Princess Sophia Dowager Princess of Hesse.
+Please convey to the Duke an informal intimation that in view of the fact that a state of war still exists between Great Britain and Germany, His Majesty is advised that the case is not one in which it is practicable for His consent to be given in the manner contemplated by the Act.
+"
 
-Jean-Christophe was born on 11 July 1986 in Saint-Raphaël, Var, France.
-He is the son of Charles, Prince Napoléon and his first wife Princess Béatrice of Bourbon-Two Sicilies, daughter of the late Prince Ferdinand of Bourbon, Duke of Castro, a claimant to headship of the former Royal House of the Two Sicilies.
-His parents divorced on 2 May 1989, two months before his third birthday.
-Jean-Christophe is the great-great-great-grandnephew of Emperor Napoleon I (who has no legitimate direct descendants) through the emperor's youngest brother, Jérôme, King of Westphalia.
-Through his mother, he is a descendant of King Louis XIV of France and through his great-grandmother, Princess Clémentine of Belgium, he descends from Leopold II of Belgium, William IV, Prince of Orange, Charles III of Spain, Frederick William I of Prussia, George II of Great Britain, Victor Emmanuel II, the first King of Italy, and Louis Philippe I, King of the French, who was the last king to rule France, while his great-great-grandfather was Prince Napoléon Bonaparte, the cousin of the Emperor Napoleon III, France's most recent monarch.
-Prince Napoléon
+They had three children: Welf (1947–1981), Georg (born 1949) and Friederike (born 1954).
+Ancestry
 
-Jean-Christophe's grandfather, Louis, Prince Napoléon, died in 1997 and stipulated in his will that he wished his 11-year-old grandson Jean-Christophe to succeed him as Head of the Imperial House of France rather than the boy's father, Charles, who had embraced republican principles and decided to remarry without his father's consent.
-Despite the dynastic dispute, Jean-Christophe's father has stated that "there will never be conflict" between him and his son over the imperial succession.
-Education and career
-
-Jean-Christophe studied at Lycée Saint-Dominique in Neuilly-sur-Seine from 2001 to 2004, obtaining a baccalauréat with honours in the sciences and mathematics.
-Jean-Christophe and Olympia have one son, Prince Louis Charles Riprand Victor Jérôme Marie Napoléon, born 7 December 2022 in Paris.
+George William was a descendant of Victoria of the United Kingdom and Albert, Prince Consort through their eldest daughter Victoria, Princess Royal, the wife of Frederick III, German Emperor.
+He was born a Prince of the United Kingdom of Great Britain and Ireland.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -109,39 +123,9 @@ Jean-Christophe and Olympia have one son, Prince Louis Charles Riprand Victor J�
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -156,6 +140,23 @@ Jean-Christophe and Olympia have one son, Prince Louis Charles Riprand Victor J�
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -173,6 +174,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -240,29 +256,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,6 +279,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -283,6 +299,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -291,17 +309,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -329,6 +349,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -344,98 +448,260 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e6abd787-e91f-41c0-83a8-5f967cd34d7f)
- Call ID: e6abd787-e91f-41c0-83a8-5f967cd34d7f
+  AssignClass (745c1434-6878-4a64-8dd6-710fc4b66de0)
+ Call ID: 745c1434-6878-4a64-8dd6-710fc4b66de0
   Args:
-    source: Jean-Christophe_Napoléon_Bonaparte
+    source: :GeorgeWilliamOfHanover
     type: :Man
-  AssignClass (9566f723-eeca-4a3a-9ade-b64a1b3f6baf)
- Call ID: 9566f723-eeca-4a3a-9ade-b64a1b3f6baf
+  AssignClass (b9c505c3-6fa1-4334-bc93-ab45199ba559)
+ Call ID: b9c505c3-6fa1-4334-bc93-ab45199ba559
   Args:
-    type: :Man
-    source: Charles_Napoléon
-  AssignClass (64d7637d-206f-4e05-affa-139c6c2439be)
- Call ID: 64d7637d-206f-4e05-affa-139c6c2439be
+    source: :GeorgeWilliamOfHanover
+    type: :Person
+  AddLiteral (136e9d9c-3eb1-45ab-922f-1c3d5a2077fa)
+ Call ID: 136e9d9c-3eb1-45ab-922f-1c3d5a2077fa
   Args:
-    source: Béatrice_of_Bourbon-Two_Sicilies
-    type: :Woman
-  AssignClass (81f110c6-635d-446b-bd8e-228788bd47c7)
- Call ID: 81f110c6-635d-446b-bd8e-228788bd47c7
-  Args:
-    type: :Man
-    source: Louis_Napoléon
-  AssignClass (fe295558-a422-42eb-9e1b-089a5e0e47af)
- Call ID: fe295558-a422-42eb-9e1b-089a5e0e47af
-  Args:
-    type: :Man
-    source: Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon
-  AssignClass (d442d06f-4176-4f00-8ca9-89ae4fd92650)
- Call ID: d442d06f-4176-4f00-8ca9-89ae4fd92650
-  Args:
-    type: :Woman
-    source: Olympia
-  AssignClass (3cb734cb-393b-41ee-a9b9-1389f566cd0a)
- Call ID: 3cb734cb-393b-41ee-a9b9-1389f566cd0a
-  Args:
-    type: :Man
-    source: Ferdinand_of_Bourbon
-  AddLiteral (0ab6b19f-d7f6-4d69-bb79-d4dda5ea21b7)
- Call ID: 0ab6b19f-d7f6-4d69-bb79-d4dda5ea21b7
+    source: :GeorgeWilliamOfHanover
+    relation: :hasBirthYear
+    literal_value: 1915
+    literal_type: xsd:integer
+  AddLiteral (1d2d8d48-8160-422d-a858-c287cc8a41ef)
+ Call ID: 1d2d8d48-8160-422d-a858-c287cc8a41ef
   Args:
     literal_type: xsd:integer
-    literal_value: 1986
-    relation: :hasBirthYear
-    source: Jean-Christophe_Napoléon_Bonaparte
-  AddTriple (7156164e-19cd-4a93-b994-3c6635c8943b)
- Call ID: 7156164e-19cd-4a93-b994-3c6635c8943b
-  Args:
-    target: Charles_Napoléon
-    source: Jean-Christophe_Napoléon_Bonaparte
-    relation: :hasFather
-  AddTriple (03ab3055-04c3-4d58-b17c-6949df95ec18)
- Call ID: 03ab3055-04c3-4d58-b17c-6949df95ec18
-  Args:
-    target: Béatrice_of_Bourbon-Two_Sicilies
-    source: Jean-Christophe_Napoléon_Bonaparte
-    relation: :hasMother
-  AddTriple (fae1e759-c87e-4477-86f3-e2cca27e1ba0)
- Call ID: fae1e759-c87e-4477-86f3-e2cca27e1ba0
-  Args:
-    relation: :hasFather
-    source: Béatrice_of_Bourbon-Two_Sicilies
-    target: Ferdinand_of_Bourbon
-  AddTriple (3a15720a-f093-4265-9eba-53d281d04507)
- Call ID: 3a15720a-f093-4265-9eba-53d281d04507
-  Args:
-    target: Louis_Napoléon
-    relation: :hasFather
-    source: Charles_Napoléon
-  AddTriple (707cb791-0a44-4fc3-96b7-18f7348bcccf)
- Call ID: 707cb791-0a44-4fc3-96b7-18f7348bcccf
-  Args:
-    source: Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon
-    relation: :hasFather
-    target: Jean-Christophe_Napoléon_Bonaparte
-  AddTriple (215f1912-b996-4df6-8abc-e085b59f1fc7)
- Call ID: 215f1912-b996-4df6-8abc-e085b59f1fc7
-  Args:
-    target: Olympia
-    source: Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon
-    relation: :hasMother
-  AddLiteral (39e6c5bc-6709-498f-92a7-c4fbab42ac73)
- Call ID: 39e6c5bc-6709-498f-92a7-c4fbab42ac73
-  Args:
+    source: :GeorgeWilliamOfHanover
     relation: :hasDeathYear
-    source: Louis_Napoléon
-    literal_value: 1997
-    literal_type: xsd:integer
-  AddLiteral (0fd38d58-34fa-47b9-aa11-a37c2956341f)
- Call ID: 0fd38d58-34fa-47b9-aa11-a37c2956341f
+    literal_value: 2006
+  AssignClass (89b212e3-2252-45ad-97a5-bb1c8a8c38e5)
+ Call ID: 89b212e3-2252-45ad-97a5-bb1c8a8c38e5
   Args:
-    literal_value: 2022
-    source: Louis_Charles_Riprand_Victor_Jérôme_Marie_Napoléon
-    relation: :hasBirthYear
+    source: :ErnestAugustusDukeOfBrunswick
+    type: :Man
+  AssignClass (dda691c1-caea-42c3-9624-60fa1daf7cdb)
+ Call ID: dda691c1-caea-42c3-9624-60fa1daf7cdb
+  Args:
+    source: :ErnestAugustusDukeOfBrunswick
+    type: :Person
+  AssignClass (c5fc60e1-5e5a-4187-8b30-5f74351bccb0)
+ Call ID: c5fc60e1-5e5a-4187-8b30-5f74351bccb0
+  Args:
+    source: :VictoriaLouiseOfPrussia
+    type: :Woman
+  AssignClass (98ae9919-a98d-440d-8eb7-3417d5969f9a)
+ Call ID: 98ae9919-a98d-440d-8eb7-3417d5969f9a
+  Args:
+    source: :VictoriaLouiseOfPrussia
+    type: :Person
+  AddTriple (5346f3a3-4620-4341-bdfa-1342891ed3c6)
+ Call ID: 5346f3a3-4620-4341-bdfa-1342891ed3c6
+  Args:
+    target: :ErnestAugustusDukeOfBrunswick
+    relation: :hasFather
+    source: :GeorgeWilliamOfHanover
+  AddTriple (e807a4b5-781c-4714-bdc7-18fa60b4eb96)
+ Call ID: e807a4b5-781c-4714-bdc7-18fa60b4eb96
+  Args:
+    source: :GeorgeWilliamOfHanover
+    relation: :hasMother
+    target: :VictoriaLouiseOfPrussia
+  AssignClass (80adc319-4942-44c0-9638-7de5f617a210)
+ Call ID: 80adc319-4942-44c0-9638-7de5f617a210
+  Args:
+    source: :WilhelmII
+    type: :Man
+  AssignClass (7c0b96d1-eadc-4823-a190-612bf2676c9e)
+ Call ID: 7c0b96d1-eadc-4823-a190-612bf2676c9e
+  Args:
+    source: :WilhelmII
+    type: :Person
+  AssignClass (37d214bf-d939-4879-a270-aee7a9ca100d)
+ Call ID: 37d214bf-d939-4879-a270-aee7a9ca100d
+  Args:
+    source: :AugustaVictoriaOfSchleswigHolstein
+    type: :Woman
+  AssignClass (81f6fcc7-7846-4d6e-9314-7f8e18d53872)
+ Call ID: 81f6fcc7-7846-4d6e-9314-7f8e18d53872
+  Args:
+    source: :AugustaVictoriaOfSchleswigHolstein
+    type: :Person
+  AddTriple (246e51e9-7f35-4767-a66b-57a4d133f0cd)
+ Call ID: 246e51e9-7f35-4767-a66b-57a4d133f0cd
+  Args:
+    target: :WilhelmII
+    relation: :hasFather
+    source: :VictoriaLouiseOfPrussia
+  AddTriple (ee1273f1-e443-466a-8565-367fdb11aeec)
+ Call ID: ee1273f1-e443-466a-8565-367fdb11aeec
+  Args:
+    target: :AugustaVictoriaOfSchleswigHolstein
+    relation: :hasMother
+    source: :VictoriaLouiseOfPrussia
+  AssignClass (2cd5970d-48a1-422c-80f8-4d78ef140836)
+ Call ID: 2cd5970d-48a1-422c-80f8-4d78ef140836
+  Args:
+    source: :FredericaOfGreece
+    type: :Woman
+  AssignClass (65bda678-aad4-4ad0-9911-9a0d73a5ea7b)
+ Call ID: 65bda678-aad4-4ad0-9911-9a0d73a5ea7b
+  Args:
+    source: :FredericaOfGreece
+    type: :Person
+  AddTriple (855ec723-10e1-496d-b8ee-34ae761dc153)
+ Call ID: 855ec723-10e1-496d-b8ee-34ae761dc153
+  Args:
+    source: :GeorgeWilliamOfHanover
+    target: :FredericaOfGreece
+    relation: :hasSister
+  AssignClass (3319b1fd-fa2c-41a5-929d-d07f9fa2fa10)
+ Call ID: 3319b1fd-fa2c-41a5-929d-d07f9fa2fa10
+  Args:
+    source: :PaulOfGreece
+    type: :Man
+  AssignClass (f275d239-34b3-402d-aff1-a791f756ff22)
+ Call ID: f275d239-34b3-402d-aff1-a791f756ff22
+  Args:
+    source: :PaulOfGreece
+    type: :Person
+  AddTriple (db674c04-af0f-4f5b-a78b-4edb91c48fbb)
+ Call ID: db674c04-af0f-4f5b-a78b-4edb91c48fbb
+  Args:
+    relation: :hasMother
+    target: :VictoriaLouiseOfPrussia
+    source: :FredericaOfGreece
+  AddTriple (3f646797-1c20-476c-bfc2-60de2326a92a)
+ Call ID: 3f646797-1c20-476c-bfc2-60de2326a92a
+  Args:
+    source: :FredericaOfGreece
+    target: :ErnestAugustusDukeOfBrunswick
+    relation: :hasFather
+  AssignClass (edc81214-696b-48d1-a2bd-6a90adae9fd3)
+ Call ID: edc81214-696b-48d1-a2bd-6a90adae9fd3
+  Args:
+    source: :SophieOfGreeceAndDenmark
+    type: :Woman
+  AssignClass (62eab072-dcf9-450a-b8e8-505e332a1e65)
+ Call ID: 62eab072-dcf9-450a-b8e8-505e332a1e65
+  Args:
+    source: :SophieOfGreeceAndDenmark
+    type: :Person
+  AddTriple (0bb95481-4b6f-42cc-8613-cca42223df96)
+ Call ID: 0bb95481-4b6f-42cc-8613-cca42223df96
+  Args:
+    source: :GeorgeWilliamOfHanover
+    target: :SophieOfGreeceAndDenmark
+    relation: :hasMother
+  AddLiteral (b8c56d53-b62f-4a6d-839c-8fba6225b554)
+ Call ID: b8c56d53-b62f-4a6d-839c-8fba6225b554
+  Args:
+    source: :GeorgeWilliamOfHanover
+    relation: :hasMarriageYear
+    literal_value: 1946
     literal_type: xsd:integer
-  Finish (3dd012ac-3a96-422f-9904-b2a7b96f482b)
- Call ID: 3dd012ac-3a96-422f-9904-b2a7b96f482b
+  AddLiteral (43998121-b8b9-4a9d-8ac0-724ac1fea0bb)
+ Call ID: 43998121-b8b9-4a9d-8ac0-724ac1fea0bb
+  Args:
+    literal_type: xsd:integer
+    source: :SophieOfGreeceAndDenmark
+    literal_value: 2001
+    relation: :hasDeathYear
+  AssignClass (5a4cab1f-abfb-40bd-8337-94c67885952d)
+ Call ID: 5a4cab1f-abfb-40bd-8337-94c67885952d
+  Args:
+    source: :AndrewOfGreeceAndDenmark
+    type: :Man
+  AssignClass (2208a10d-87ce-4064-aafe-40bcd087e514)
+ Call ID: 2208a10d-87ce-4064-aafe-40bcd087e514
+  Args:
+    source: :AndrewOfGreeceAndDenmark
+    type: :Person
+  AssignClass (e7d283cf-1e80-46a8-8ba7-3e68eba7ddc6)
+ Call ID: e7d283cf-1e80-46a8-8ba7-3e68eba7ddc6
+  Args:
+    source: :AliceOfBattenberg
+    type: :Woman
+  AssignClass (bd2993f9-5333-484d-afa2-5f7798edf1d9)
+ Call ID: bd2993f9-5333-484d-afa2-5f7798edf1d9
+  Args:
+    source: :AliceOfBattenberg
+    type: :Person
+  AddTriple (15284203-fc2a-4280-88f9-fdf7ef829f46)
+ Call ID: 15284203-fc2a-4280-88f9-fdf7ef829f46
+  Args:
+    target: :AndrewOfGreeceAndDenmark
+    relation: :hasFather
+    source: :SophieOfGreeceAndDenmark
+  AddTriple (40bcd848-da60-4cfa-9143-c4be89269b43)
+ Call ID: 40bcd848-da60-4cfa-9143-c4be89269b43
+  Args:
+    source: :SophieOfGreeceAndDenmark
+    relation: :hasMother
+    target: :AliceOfBattenberg
+  AssignClass (33ffd0aa-4185-45fe-a0da-b53b50339c51)
+ Call ID: 33ffd0aa-4185-45fe-a0da-b53b50339c51
+  Args:
+    source: :Welf
+    type: :Man
+  AssignClass (5e85cf7f-41b5-45fa-a233-f250961c8b34)
+ Call ID: 5e85cf7f-41b5-45fa-a233-f250961c8b34
+  Args:
+    source: :Welf
+    type: :Person
+  AssignClass (2719ead5-11c6-4626-9eac-8a4b56025cb4)
+ Call ID: 2719ead5-11c6-4626-9eac-8a4b56025cb4
+  Args:
+    source: :Georg
+    type: :Man
+  AssignClass (74ae4d29-deee-4815-97b8-7c9622045670)
+ Call ID: 74ae4d29-deee-4815-97b8-7c9622045670
+  Args:
+    source: :Georg
+    type: :Person
+  AssignClass (bb60b97b-744d-4b49-b82f-74962d6308db)
+ Call ID: bb60b97b-744d-4b49-b82f-74962d6308db
+  Args:
+    source: :Friederike
+    type: :Woman
+  AssignClass (9c3808d4-2585-4186-a4c0-1532a1c0ec7a)
+ Call ID: 9c3808d4-2585-4186-a4c0-1532a1c0ec7a
+  Args:
+    source: :Friederike
+    type: :Person
+  AddTriple (e08dc926-a3cb-42db-a4c2-39e72ab8ef14)
+ Call ID: e08dc926-a3cb-42db-a4c2-39e72ab8ef14
+  Args:
+    source: :GeorgeWilliamOfHanover
+    relation: :hasSon
+    target: :Welf
+  AddTriple (9a9bb34f-7006-40f4-99e5-8f33dcaf7eb2)
+ Call ID: 9a9bb34f-7006-40f4-99e5-8f33dcaf7eb2
+  Args:
+    relation: :hasSon
+    target: :Georg
+    source: :GeorgeWilliamOfHanover
+  AddTriple (9ecf8ecd-e766-47a1-9d72-ddfa00ae5aaa)
+ Call ID: 9ecf8ecd-e766-47a1-9d72-ddfa00ae5aaa
+  Args:
+    source: :GeorgeWilliamOfHanover
+    relation: :hasDaughter
+    target: :Friederike
+  AddTriple (4fff60a6-4f3b-4646-b9d5-1abd7c29a427)
+ Call ID: 4fff60a6-4f3b-4646-b9d5-1abd7c29a427
+  Args:
+    relation: :hasMother
+    target: :SophieOfGreeceAndDenmark
+    source: :Welf
+  AddTriple (28f4b1f5-603a-4a75-933a-814125340a75)
+ Call ID: 28f4b1f5-603a-4a75-933a-814125340a75
+  Args:
+    source: :Georg
+    relation: :hasMother
+    target: :SophieOfGreeceAndDenmark
+  AddTriple (9e8678ce-d858-40b3-a776-bb0dac631712)
+ Call ID: 9e8678ce-d858-40b3-a776-bb0dac631712
+  Args:
+    relation: :hasMother
+    target: :SophieOfGreeceAndDenmark
+    source: :Friederike
+  Finish (7bb533db-43a6-4a6d-acb7-6d1b66cc2e18)
+ Call ID: 7bb533db-43a6-4a6d-acb7-6d1b66cc2e18
   Args:

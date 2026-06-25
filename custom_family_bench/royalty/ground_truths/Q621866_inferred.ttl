@@ -1,0 +1,125 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Claire_Booth a :Person,
+        :Woman ;
+    rdfs:label "Claire Booth"^^xsd:string ;
+    data:posIndicesFull "964:976"^^xsd:string ;
+    data:wdtLink wdt:Q45962 ;
+    :hasRelation data:Claire_Booth ;
+    :hasSex data:female ;
+    :hasSister data:Claire_Booth ;
+    :isBloodrelationOf data:Claire_Booth ;
+    :isSiblingOf data:Claire_Booth ;
+    :isSisterOf data:Claire_Booth .
+
+data:Birgitte-_Duchess_of_Gloucester a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Birgitte, Duchess of Gloucester"^^xsd:string ;
+    data:posIndicesFull "182:213"^^xsd:string,
+        "559:590"^^xsd:string ;
+    data:posIndicesPart "257:267"^^xsd:string ;
+    data:wdtLink wdt:Q241584 ;
+    :alsoKnownAs "Birgitte Eva Henriksen"^^xsd:string,
+        "Birgitte Eva van Deurs Henriksen"^^xsd:string ;
+    :hasChild data:Alexander_Windsor-_Earl_of_Ulster ;
+    :hasRelation data:Alexander_Windsor-_Earl_of_Ulster,
+        data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasSex data:female ;
+    :hasSister data:Birgitte-_Duchess_of_Gloucester ;
+    :hasSon data:Alexander_Windsor-_Earl_of_Ulster ;
+    :isAncestorOf data:Alexander_Windsor-_Earl_of_Ulster ;
+    :isAuntOf data:Alexander_Windsor-_Earl_of_Ulster ;
+    :isBloodrelationOf data:Birgitte-_Duchess_of_Gloucester ;
+    :isMotherOf data:Alexander_Windsor-_Earl_of_Ulster ;
+    :isParentOf data:Alexander_Windsor-_Earl_of_Ulster ;
+    :isSiblingOf data:Birgitte-_Duchess_of_Gloucester ;
+    :isSisterOf data:Birgitte-_Duchess_of_Gloucester .
+
+data:Prince_Richard-_Duke_of_Gloucester a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Richard, Duke of Gloucester"^^xsd:string ;
+    data:posIndicesFull "142:176"^^xsd:string,
+        "26:41"^^xsd:string,
+        "410:425"^^xsd:string,
+        "519:553"^^xsd:string ;
+    data:posIndicesPart "257:267"^^xsd:string ;
+    data:wdtLink wdt:Q170294 ;
+    :alsoKnownAs "Prince Richard Alexander Walter George of Gloucester"^^xsd:string,
+        "Prince Richard Alexander Walter George, Duke of Gloucester"^^xsd:string,
+        "Prince Richard of Gloucester"^^xsd:string,
+        "Richard Alexander Walter George"^^xsd:string,
+        "Richard Alexander Walter George Windsor, 2nd Duke of Gloucester"^^xsd:string,
+        "Richard Gloucester"^^xsd:string,
+        "Richard Windsor"^^xsd:string ;
+    :hasBrother data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasChild data:Alexander_Windsor-_Earl_of_Ulster ;
+    :hasRelation data:Alexander_Windsor-_Earl_of_Ulster,
+        data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasSex data:male ;
+    :hasSon data:Alexander_Windsor-_Earl_of_Ulster ;
+    :isAncestorOf data:Alexander_Windsor-_Earl_of_Ulster ;
+    :isBloodrelationOf data:Prince_Richard-_Duke_of_Gloucester ;
+    :isBrotherOf data:Prince_Richard-_Duke_of_Gloucester ;
+    :isFatherOf data:Alexander_Windsor-_Earl_of_Ulster ;
+    :isParentOf data:Alexander_Windsor-_Earl_of_Ulster ;
+    :isSiblingOf data:Prince_Richard-_Duke_of_Gloucester ;
+    :isUncleOf data:Alexander_Windsor-_Earl_of_Ulster .
+
+data:Alexander_Windsor-_Earl_of_Ulster a :Man,
+        :Person ;
+    rdfs:label "Alexander Windsor, Earl of Ulster"^^xsd:string ;
+    data:posIndicesFull "0:41"^^xsd:string,
+        "0:57"^^xsd:string,
+        "345:356"^^xsd:string,
+        "384:425"^^xsd:string ;
+    data:posIndicesPart "1038:1044"^^xsd:string,
+        "1180:1189"^^xsd:string,
+        "592:601"^^xsd:string,
+        "726:735"^^xsd:string,
+        "946:955"^^xsd:string ;
+    data:wdtLink wdt:Q621866 ;
+    :alsoKnownAs "Alex Ulster"^^xsd:string,
+        "Alexander Patrick Gregers Richard Windsor"^^xsd:string,
+        "Alexander Patrick Gregers Richard Windsor, Earl of Ulster"^^xsd:string,
+        "Alexander Ulster"^^xsd:string,
+        "Alexander Windsor"^^xsd:string ;
+    :hasAncestor data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasBrother data:Alexander_Windsor-_Earl_of_Ulster ;
+    :hasFather data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasMother data:Birgitte-_Duchess_of_Gloucester ;
+    :hasParent data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasRelation data:Alexander_Windsor-_Earl_of_Ulster,
+        data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Alexander_Windsor-_Earl_of_Ulster ;
+    :isBrotherOf data:Alexander_Windsor-_Earl_of_Ulster ;
+    :isChildOf data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester ;
+    :isSiblingOf data:Alexander_Windsor-_Earl_of_Ulster ;
+    :isSonOf data:Birgitte-_Duchess_of_Gloucester,
+        data:Prince_Richard-_Duke_of_Gloucester .
+

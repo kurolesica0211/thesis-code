@@ -30,14 +30,14 @@ The SHACL validation process has identified the following violations in the curr
 ---
 ### Violations:
 VALIDATION RESULTS
-Total violations:7
+Total violations:6
 Violations:
 
   Violation [1]:
     Severity: Violation
-    Focus node: Philippe_Duke_of_Orleans
+    Focus node: Prince_Hubertus_of_Prussia
     Path: hasFather
-    Value: Philippe_Count_of_Paris
+    Value: Crown_Prince_Wilhelm_of_Germany
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -118,9 +118,9 @@ Violations:
 
   Violation [2]:
     Severity: Violation
-    Focus node: Philippe_Duke_of_Orleans
+    Focus node: Prince_Hubertus_of_Prussia
     Path: hasMother
-    Value: Isabelle_of_Orleans
+    Value: Duchess_Cecilie_of_Mecklenburg-Schwerin
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -202,9 +202,9 @@ Violations:
 
   Violation [3]:
     Severity: Violation
-    Focus node: Philippe_Duke_of_Orleans
+    Focus node: Prince_Hubertus_of_Prussia
     Path: hasFather
-    Value: Philippe_Count_of_Paris
+    Value: Crown_Prince_Wilhelm_of_Germany
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -285,9 +285,9 @@ Violations:
 
   Violation [4]:
     Severity: Violation
-    Focus node: Philippe_Duke_of_Orleans
+    Focus node: Prince_Hubertus_of_Prussia
     Path: hasMother
-    Value: Isabelle_of_Orleans
+    Value: Duchess_Cecilie_of_Mecklenburg-Schwerin
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -369,9 +369,9 @@ Violations:
 
   Violation [5]:
     Severity: Violation
-    Focus node: Philippe_Duke_of_Orleans
+    Focus node: Prince_Hubertus_of_Prussia
     Path: hasFather
-    Value: Philippe_Count_of_Paris
+    Value: Crown_Prince_Wilhelm_of_Germany
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -452,9 +452,9 @@ Violations:
 
   Violation [6]:
     Severity: Violation
-    Focus node: Philippe_Duke_of_Orleans
+    Focus node: Prince_Hubertus_of_Prussia
     Path: hasMother
-    Value: Isabelle_of_Orleans
+    Value: Duchess_Cecilie_of_Mecklenburg-Schwerin
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -534,81 +534,6 @@ Violations:
 
 
 
-  Violation [7]:
-    Severity: Violation
-    Focus node: Philippe_Duke_of_Orleans
-    Path: None
-    Value: Philippe_Duke_of_Orleans
-    Constraint: ClassConstraintComponent
-    Source shape:
-      esh:DomainConjunctionShape_isFatherOf a sh:NodeShape ;
-          sh:class :Ancestor,
-              :Man ;
-          sh:message "Any subject of isFatherOf must be all of: Ancestor, Man." ;
-          sh:targetSubjectsOf :isFatherOf .
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    Classes assigned to the focus node: [':Man', ':Person']
-    Definitions of the classes assigned to the focus node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
-      Class :Person:
-        :Person a owl:Class ;
-            rdfs:subClassOf [ a owl:Restriction ;
-                    owl:onProperty :hasFather ;
-                    owl:someValuesFrom :Man ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasMother ;
-                    owl:someValuesFrom :Woman ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasSex ;
-                    owl:someValuesFrom :Sex ],
-                [ a owl:Restriction ;
-                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                    owl:onClass :Person ;
-                    owl:onProperty :hasParent ],
-                :DomainEntity ;
-            owl:disjointWith :Sex ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:unionOf ( :Man :Woman ) ] .
-
-    Classes assigned to the value node: [':Man', ':Person']
-    Definitions of the classes assigned to the value node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
-      Class :Person:
-        :Person a owl:Class ;
-            rdfs:subClassOf [ a owl:Restriction ;
-                    owl:onProperty :hasFather ;
-                    owl:someValuesFrom :Man ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasMother ;
-                    owl:someValuesFrom :Woman ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasSex ;
-                    owl:someValuesFrom :Sex ],
-                [ a owl:Restriction ;
-                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                    owl:onClass :Person ;
-                    owl:onProperty :hasParent ],
-                :DomainEntity ;
-            owl:disjointWith :Sex ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:unionOf ( :Man :Woman ) ] .
-
-
-
 
 ---
 
@@ -616,4 +541,4 @@ Please analyze each violation and provide the corresponding explanation and fix 
 
 ================================== Ai Message ==================================
 
-[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The node \'Philippe_Count_of_Paris\' is used as a father for \'Philippe_Duke_of_Orleans\', but it lacks the required \':Ancestor\' class assignment.",\n      "instruction": "AssignClass(node=\'Philippe_Count_of_Paris\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node \'Isabelle_of_Orleans\' is used as a mother for \'Philippe_Duke_of_Orleans\', but it lacks the required \':Ancestor\' class assignment.",\n      "instruction": "AssignClass(node=\'Isabelle_of_Orleans\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node \'Philippe_Count_of_Paris\' is missing the \':Ancestor\' class, which is mandatory for being a value of the \'hasFather\' property.",\n      "instruction": "AssignClass(node=\'Philippe_Count_of_Paris\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node \'Isabelle_of_Orleans\' is missing the \':Ancestor\' class, which is mandatory for being a value of the \'hasMother\' property.",\n      "instruction": "AssignClass(node=\'Isabelle_of_Orleans\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node \'Philippe_Count_of_Paris\' still requires the \':Ancestor\' class assignment to satisfy the \'hasFather\' constraint.",\n      "instruction": "AssignClass(node=\'Philippe_Count_of_Paris\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node \'Isabelle_of_Orleans\' still requires the \':Ancestor\' class assignment to satisfy the \'hasMother\' constraint.",\n      "instruction": "AssignClass(node=\'Isabelle_of_Orleans\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node \'Philippe_Duke_of_Orleans\' is acting as a subject of the \'isFatherOf\' property, but it lacks the mandatory \':Ancestor\' class assignment.",\n      "instruction": "AssignClass(node=\'Philippe_Duke_of_Orleans\', class=\':Ancestor\')"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHrrCXDGPRJqYwT854a7oxwLIUvfKv06iUISw8NqEQ6UIuwg9IPOosDuI0kKMQ'}}]
+[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The node Crown_Prince_Wilhelm_of_Germany, assigned as the father of Prince_Hubertus_of_Prussia, is missing the required :Ancestor class.",\n      "instruction": "AssignClass(Crown_Prince_Wilhelm_of_Germany, :Ancestor)"\n    },\n    {\n      "explanation": "The node Duchess_Cecilie_of_Mecklenburg-Schwerin, assigned as the mother of Prince_Hubertus_of_Prussia, is missing the required :Ancestor class.",\n      "instruction": "AssignClass(Duchess_Cecilie_of_Mecklenburg-Schwerin, :Ancestor)"\n    },\n    {\n      "explanation": "The node Crown_Prince_Wilhelm_of_Germany, assigned as the father of Prince_Hubertus_of_Prussia, is missing the required :Ancestor class.",\n      "instruction": "AssignClass(Crown_Prince_Wilhelm_of_Germany, :Ancestor)"\n    },\n    {\n      "explanation": "The node Duchess_Cecilie_of_Mecklenburg-Schwerin, assigned as the mother of Prince_Hubertus_of_Prussia, is missing the required :Ancestor class.",\n      "instruction": "AssignClass(Duchess_Cecilie_of_Mecklenburg-Schwerin, :Ancestor)"\n    },\n    {\n      "explanation": "The node Crown_Prince_Wilhelm_of_Germany, assigned as the father of Prince_Hubertus_of_Prussia, is missing the required :Ancestor class.",\n      "instruction": "AssignClass(Crown_Prince_Wilhelm_of_Germany, :Ancestor)"\n    },\n    {\n      "explanation": "The node Duchess_Cecilie_of_Mecklenburg-Schwerin, assigned as the mother of Prince_Hubertus_of_Prussia, is missing the required :Ancestor class.",\n      "instruction": "AssignClass(Duchess_Cecilie_of_Mecklenburg-Schwerin, :Ancestor)"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbH/QKOQ0QFoXRRoEtjat1Yns2yJAMlk6r417Fh/96x5cHMtMHSJpb7yr7GQedz'}}]

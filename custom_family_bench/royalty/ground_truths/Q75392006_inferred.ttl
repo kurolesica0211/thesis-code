@@ -1,0 +1,84 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Heinrich_XIII_Prinz_Reuss a :Man,
+        :Person ;
+    rdfs:label "Heinrich XIII Prinz Reuss"^^xsd:string ;
+    data:posIndicesFull "0:25"^^xsd:string ;
+    data:posIndicesPart "1161:1166"^^xsd:string,
+        "1179:1184"^^xsd:string,
+        "1350:1355"^^xsd:string,
+        "1416:1421"^^xsd:string,
+        "1522:1530"^^xsd:string,
+        "1660:1665"^^xsd:string,
+        "1693:1698"^^xsd:string,
+        "1913:1918"^^xsd:string,
+        "1985:1990"^^xsd:string,
+        "1991:1996"^^xsd:string,
+        "2187:2192"^^xsd:string,
+        "2242:2247"^^xsd:string,
+        "2437:2442"^^xsd:string,
+        "2528:2533"^^xsd:string,
+        "2619:2624"^^xsd:string,
+        "2837:2842"^^xsd:string,
+        "2916:2921"^^xsd:string,
+        "3116:3121"^^xsd:string,
+        "3137:3142"^^xsd:string,
+        "3223:3228"^^xsd:string,
+        "3348:3353"^^xsd:string,
+        "3485:3490"^^xsd:string,
+        "3662:3667"^^xsd:string,
+        "3859:3864"^^xsd:string,
+        "4010:4015"^^xsd:string,
+        "4106:4111"^^xsd:string,
+        "418:423"^^xsd:string,
+        "4325:4330"^^xsd:string,
+        "4485:4490"^^xsd:string,
+        "4557:4562"^^xsd:string,
+        "4571:4579"^^xsd:string,
+        "4590:4595"^^xsd:string,
+        "4687:4695"^^xsd:string,
+        "4857:4862"^^xsd:string,
+        "503:508"^^xsd:string,
+        "50:55"^^xsd:string,
+        "5199:5204"^^xsd:string,
+        "5222:5227"^^xsd:string,
+        "5379:5384"^^xsd:string,
+        "5538:5546"^^xsd:string,
+        "5557:5562"^^xsd:string,
+        "5608:5613"^^xsd:string,
+        "5644:5649"^^xsd:string,
+        "5779:5784"^^xsd:string,
+        "5952:5957"^^xsd:string,
+        "6154:6159"^^xsd:string,
+        "670:675"^^xsd:string,
+        "777:785"^^xsd:string,
+        "788:793"^^xsd:string,
+        "939:944"^^xsd:string ;
+    data:wdtLink wdt:Q75392006 ;
+    :alsoKnownAs "Heinrich Reuss"^^xsd:string,
+        "Heinrich XIII Prinz Reuss zu Köstritz"^^xsd:string,
+        "Prince Heinrich XIII"^^xsd:string ;
+    :hasBrother data:Heinrich_XIII_Prinz_Reuss ;
+    :hasRelation data:Heinrich_XIII_Prinz_Reuss ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Heinrich_XIII_Prinz_Reuss ;
+    :isBrotherOf data:Heinrich_XIII_Prinz_Reuss ;
+    :isSiblingOf data:Heinrich_XIII_Prinz_Reuss .
+

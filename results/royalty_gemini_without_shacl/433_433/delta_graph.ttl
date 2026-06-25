@@ -2,56 +2,73 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexandrine a :Person,
-        :Woman ;
-    :hasAncestor data:Queen_Victoria ;
-    :hasBirthYear 1915 ;
-    :hasBrother data:Frederick_brother,
-        data:Hubertus,
-        data:Louis_Ferdinand,
-        data:Wilhelm_brother ;
-    :hasDeathYear 1980 ;
-    :hasFather data:Wilhelm_German_Crown_Prince ;
-    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-    :hasSister data:Cecilie_sister .
-
-data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
-        :Woman .
-
-data:Cecilie_of_Mecklenburg-Schwerin a :Person,
-        :Woman ;
-    :hasParent data:Frederick_Francis_III_of_Mecklenburg-Schwerin,
-        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
-
-data:Cecilie_sister a :Person,
-        :Woman .
-
-data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
-        :Person .
-
-data:Frederick_brother a :Man,
-        :Person .
-
-data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Person,
-        :Woman .
-
-data:Hubertus a :Man,
-        :Person .
-
-data:Louis_Ferdinand a :Man,
-        :Person .
-
-data:Queen_Victoria a :Person,
-        :Woman .
-
-data:Wilhelm_German_Crown_Prince a :Man,
+data:Konrad_Saxe-Meiningen a :Man,
         :Person ;
-    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II_German_Emperor .
+    :hasFather data:Bernhard_Prince_of_Saxe-Meiningen ;
+    :hasMother data:Baroness_Vera_Sch%C3%A4ffer_von_Bernstein .
 
-data:Wilhelm_II_German_Emperor a :Man,
+data:Prince_Frederick_Alfred a :Man,
+        :Person ;
+    :hasFather data:Prince_Georg .
+
+data:Prince_Frederick_Konrad a :Man,
+        :Person ;
+    :hasFather data:Bernhard_Prince_of_Saxe-Meiningen ;
+    :hasMother data:Margot_Gr%C3%B6ssler .
+
+data:Baron_Friedrich_Fritz_Sch%C3%A4ffer_von_Bernstein a :Man,
+        :Person ;
+    :hasBirthYear 1868 ;
+    :hasDeathYear 1958 .
+
+data:Baroness_Vera_Sch%C3%A4ffer_von_Bernstein a :Person,
+        :Woman ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 1994 ;
+    :hasFather data:Baron_Friedrich_Fritz_Sch%C3%A4ffer_von_Bernstein ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Emma_Carola_Passavant .
+
+data:Count_Ernst_of_Lippe-Biesterfeld a :Man,
         :Person .
 
-data:Wilhelm_brother a :Man,
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Person,
+        :Woman ;
+    :hasFather data:Count_Ernst_of_Lippe-Biesterfeld .
+
+data:Emma_Carola_Passavant a :Person,
+        :Woman ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1971 .
+
+data:Erika_W%C3%A4gner a :Person,
+        :Woman .
+
+data:Friedrich_Gr%C3%B6ssler a :Man,
+        :Person .
+
+data:Georg_II_Duke_of_Saxe-Meiningen a :Man,
+        :Person .
+
+data:Margot_Gr%C3%B6ssler a :Person,
+        :Woman ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1998 ;
+    :hasFather data:Friedrich_Gr%C3%B6ssler ;
+    :hasMother data:Erika_W%C3%A4gner .
+
+data:Prince_Frederick_Johann_of_Saxe-Meiningen a :Man,
+        :Person ;
+    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+
+data:Bernhard_Prince_of_Saxe-Meiningen a :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1984 ;
+    :hasFather data:Prince_Frederick_Johann_of_Saxe-Meiningen ;
+    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Prince_Georg .
+
+data:Prince_Georg a :Man,
         :Person .
 

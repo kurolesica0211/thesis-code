@@ -7,95 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Wilhelm_of_Prussia a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Wilhelm of Prussia" ;
-    data:posIndicesFull "322:347" ;
-    data:posIndicesPart "1245:1251",
-        "1561:1567",
-        "1660:1666",
-        "1693:1699",
-        "1752:1758",
-        "1791:1798",
-        "798:804" ;
-    data:wdtLink wdt:Q77556 ;
-    :alsoKnownAs "Prince Wilhelm Friedrich Franz Joseph Christian Olaf of Prussia" ;
-    :hasSex data:male ;
-    :isUncleOf data:Princess_Kira_of_Prussia .
-
-data:Princess_Kira_of_Prussia a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Kira of Prussia" ;
-    data:posIndicesFull "41:56" ;
-    data:posIndicesPart "1791:1798",
-        "369:377" ;
-    data:wdtLink wdt:Q77937 ;
-    :alsoKnownAs "Kira Auguste Viktoria Friederike Prinzessin von Preußen",
-        "Kira Prussia",
-        "Kira of Prussia",
-        "Princess Kira Auguste Viktoria Friederike of Prussia" ;
-    :hasSex data:female .
-
-data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Augusta Victoria of Schleswig-Holstein" ;
-    data:posIndicesFull "169:185",
-        "169:207",
-        "378:394",
-        "378:416" ;
-    data:posIndicesPart "757:766",
-        "767:775" ;
-    data:wdtLink wdt:Q161247 ;
-    :alsoKnownAs "Augusta Victoria",
-        "Augusta Victoria, Empress of Germany",
-        "Augusta Viktoria",
-        "Augusta Viktoria of Schleswig-Holstein",
-        "Auguste Viktoria of Schleswig-Holstein" ;
-    :hasChild data:Prince_Eitel_Friedrich_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Eitel_Friedrich_of_Prussia ;
-    :isMotherOf data:Prince_Eitel_Friedrich_of_Prussia ;
-    :isParentOf data:Prince_Eitel_Friedrich_of_Prussia .
-
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelm II" ;
-    data:posIndicesFull "119:129",
-        "119:140",
-        "569:579" ;
-    data:wdtLink wdt:Q2677 ;
-    :alsoKnownAs "Emperor Willlam",
-        "Frederick William Victor Albert of Prussia",
-        "Friedrich Wilhelm Emperor William II",
-        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
-        "Friedrich Wilhelm Viktor Albrecht von Preußen",
-        "German Emperor Wilhelm II",
-        "Kaiser Wilhelm II",
-        "Wilhelm II of Germany",
-        "Wilhelm II, German Emperor",
-        "Wilhelm II.",
-        "William II" ;
-    :hasChild data:Prince_Eitel_Friedrich_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Eitel_Friedrich_of_Prussia ;
-    :isFatherOf data:Prince_Eitel_Friedrich_of_Prussia ;
-    :isParentOf data:Prince_Eitel_Friedrich_of_Prussia .
-
-data:Prince_Eitel_Friedrich_of_Prussia a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Eitel_Friedrich_of_Prussia a :Person ;
     rdfs:label "Prince Eitel Friedrich of Prussia" ;
     data:posIndicesFull "0:56",
         "1077:1092",
@@ -114,14 +26,66 @@ data:Prince_Eitel_Friedrich_of_Prussia a :Man,
     :alsoKnownAs "Eitel Friedrich",
         "Prince Wilhelm Eitel Friedrich Christian Karl of Prussia",
         "Wilhelm Eitel-Friedrich Christian Karl Prinz von Preußen" ;
-    :hasFather data:Wilhelm_II ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
     :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
         data:Wilhelm_II ;
-    :hasSex data:male ;
-    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II ;
-    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II ;
-    :isUncleOf data:Prince_Wilhelm_of_Prussia .
+    :hasSex data:male .
+
+data:Prince_Wilhelm_of_Prussia a :Person ;
+    rdfs:label "Prince Wilhelm of Prussia" ;
+    data:posIndicesFull "322:347" ;
+    data:posIndicesPart "1245:1251",
+        "1561:1567",
+        "1660:1666",
+        "1693:1699",
+        "1752:1758",
+        "1791:1798",
+        "798:804" ;
+    data:wdtLink wdt:Q77556 ;
+    :alsoKnownAs "Prince Wilhelm Friedrich Franz Joseph Christian Olaf of Prussia" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Person ;
+    rdfs:label "Augusta Victoria of Schleswig-Holstein" ;
+    data:posIndicesFull "169:185",
+        "169:207",
+        "378:394",
+        "378:416" ;
+    data:posIndicesPart "757:766",
+        "767:775" ;
+    data:wdtLink wdt:Q161247 ;
+    :alsoKnownAs "Augusta Victoria",
+        "Augusta Victoria, Empress of Germany",
+        "Augusta Viktoria",
+        "Augusta Viktoria of Schleswig-Holstein",
+        "Auguste Viktoria of Schleswig-Holstein" ;
+    :hasSex data:female .
+
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "119:129",
+        "119:140",
+        "569:579" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

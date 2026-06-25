@@ -109,6 +109,8 @@ Gabriela von Habsburg.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -124,39 +126,9 @@ Gabriela von Habsburg.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -171,6 +143,23 @@ Gabriela von Habsburg.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -188,6 +177,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -255,29 +259,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -286,6 +282,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -298,6 +302,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -306,17 +312,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -344,6 +352,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -359,96 +451,108 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c917c86a-55ed-47f1-8577-d5efeba67bc0)
- Call ID: c917c86a-55ed-47f1-8577-d5efeba67bc0
+  AssignClass (f26535d1-84bc-477b-bdb5-f1a215976b77)
+ Call ID: f26535d1-84bc-477b-bdb5-f1a215976b77
   Args:
     type: :Woman
     source: Gabriela_von_Habsburg
-  AssignClass (91fa7039-512d-4758-b119-ec0c8f2c5e30)
- Call ID: 91fa7039-512d-4758-b119-ec0c8f2c5e30
+  AssignClass (a743ce94-95d9-479f-bcc4-89004966d740)
+ Call ID: a743ce94-95d9-479f-bcc4-89004966d740
   Args:
+    source: Gabriela_von_Habsburg
     type: :Person
-    source: Gabriela_von_Habsburg
-  AddLiteral (71528679-65a1-4afd-8db4-01f30602a9cb)
- Call ID: 71528679-65a1-4afd-8db4-01f30602a9cb
+  AddLiteral (5ab38227-d7b8-462b-a6bc-c232152e943e)
+ Call ID: 5ab38227-d7b8-462b-a6bc-c232152e943e
   Args:
     relation: :hasBirthYear
+    source: Gabriela_von_Habsburg
+    literal_type: xsd:integer
     literal_value: 1956
-    literal_type: xsd:integer
-    source: Gabriela_von_Habsburg
-  AssignClass (70681c46-f2c6-43c9-8268-eceb0e870e4e)
- Call ID: 70681c46-f2c6-43c9-8268-eceb0e870e4e
+  AddLiteral (e86e2db4-5fde-4df2-8945-26dff8e12129)
+ Call ID: e86e2db4-5fde-4df2-8945-26dff8e12129
   Args:
-    type: :Man
+    source: Gabriela_von_Habsburg
+    literal_type: xsd:string
+    relation: :hasSex
+    literal_value: Female
+  AssignClass (6d7f8828-1db0-4f09-ab9d-3c52b366f8b2)
+ Call ID: 6d7f8828-1db0-4f09-ab9d-3c52b366f8b2
+  Args:
     source: Charles_I
-  AssignClass (4986f423-4fa6-4fed-b543-45a0115e49ae)
- Call ID: 4986f423-4fa6-4fed-b543-45a0115e49ae
+    type: :Man
+  AssignClass (cbd0b669-36ef-4404-add8-7f9266aae7b0)
+ Call ID: cbd0b669-36ef-4404-add8-7f9266aae7b0
   Args:
-    type: :Ancestor
     source: Charles_I
-  AssignClass (373bad4c-51a9-4937-a6f8-e55111a281c8)
- Call ID: 373bad4c-51a9-4937-a6f8-e55111a281c8
-  Args:
-    type: :Man
-    source: Otto_von_Habsburg
-  AssignClass (f22e1986-8b46-4ded-98a7-16c858bab141)
- Call ID: f22e1986-8b46-4ded-98a7-16c858bab141
-  Args:
     type: :Ancestor
-    source: Otto_von_Habsburg
-  AssignClass (47cdfcf6-7dac-43bd-80cd-8745c703c4da)
- Call ID: 47cdfcf6-7dac-43bd-80cd-8745c703c4da
+  AddTriple (08d12c36-5217-490c-85f1-884b42defd32)
+ Call ID: 08d12c36-5217-490c-85f1-884b42defd32
   Args:
-    type: :Woman
-    source: Regina_von_Sachsen-Meiningen
-  AssignClass (01d4a9ef-a15f-4e62-91d4-093e5e0c9af7)
- Call ID: 01d4a9ef-a15f-4e62-91d4-093e5e0c9af7
-  Args:
-    type: :Ancestor
-    source: Regina_von_Sachsen-Meiningen
-  AssignClass (2ef40e96-9e0b-4681-8d16-f652a90708a9)
- Call ID: 2ef40e96-9e0b-4681-8d16-f652a90708a9
-  Args:
-    type: :Man
-    source: Christian_Meister
-  AddLiteral (b901c923-c1e4-412f-a1ca-f2d7d884376d)
- Call ID: b901c923-c1e4-412f-a1ca-f2d7d884376d
-  Args:
-    source: Christian_Meister
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1954
-  AddTriple (055863e0-e959-4dcf-a6d9-80fce7e6c7d6)
- Call ID: 055863e0-e959-4dcf-a6d9-80fce7e6c7d6
-  Args:
-    source: Gabriela_von_Habsburg
-    target: Otto_von_Habsburg
-    relation: :hasFather
-  AddTriple (b17828c2-e9e1-4b45-9649-d3e977f5d321)
- Call ID: b17828c2-e9e1-4b45-9649-d3e977f5d321
-  Args:
-    source: Gabriela_von_Habsburg
-    target: Regina_von_Sachsen-Meiningen
-    relation: :hasMother
-  AddTriple (f210bc93-0f61-4e2d-b73a-da60261a6fc8)
- Call ID: f210bc93-0f61-4e2d-b73a-da60261a6fc8
-  Args:
-    target: Charles_I
     source: Gabriela_von_Habsburg
     relation: :hasAncestor
-  AddTriple (032b97b0-5275-4c4e-9b38-1fe054bed022)
- Call ID: 032b97b0-5275-4c4e-9b38-1fe054bed022
+    target: Charles_I
+  AssignClass (1d72e53b-5f34-4e59-87f3-5bb8cae94cb2)
+ Call ID: 1d72e53b-5f34-4e59-87f3-5bb8cae94cb2
   Args:
-    relation: :hasRelation
-    target: Christian_Meister
+    type: :Man
+    source: Otto_von_Habsburg
+  AssignClass (831f45cd-615e-4b40-a4ea-5d7fea992b3b)
+ Call ID: 831f45cd-615e-4b40-a4ea-5d7fea992b3b
+  Args:
+    type: :Ancestor
+    source: Otto_von_Habsburg
+  AssignClass (24514a45-efb5-4682-a2b6-1e8ecf56fc2c)
+ Call ID: 24514a45-efb5-4682-a2b6-1e8ecf56fc2c
+  Args:
+    source: Regina
+    type: :Woman
+  AssignClass (fb21b4e4-2733-48a0-b28a-3ffc174fbaf1)
+ Call ID: fb21b4e4-2733-48a0-b28a-3ffc174fbaf1
+  Args:
+    type: :Ancestor
+    source: Regina
+  AddTriple (e0843d46-498f-4b25-90f9-4a11d987ddc9)
+ Call ID: e0843d46-498f-4b25-90f9-4a11d987ddc9
+  Args:
+    target: Otto_von_Habsburg
     source: Gabriela_von_Habsburg
-  AddLiteral (2576170a-3d19-43fc-adcb-b04a3bd1fea7)
- Call ID: 2576170a-3d19-43fc-adcb-b04a3bd1fea7
+    relation: :hasFather
+  AddTriple (1006bd18-3303-46eb-a893-192f222d14ca)
+ Call ID: 1006bd18-3303-46eb-a893-192f222d14ca
   Args:
+    relation: :hasMother
+    source: Gabriela_von_Habsburg
+    target: Regina
+  AssignClass (d4929026-0dfb-46e0-9871-3b49059b0032)
+ Call ID: d4929026-0dfb-46e0-9871-3b49059b0032
+  Args:
+    type: :Man
+    source: Christian_Meister
+  AssignClass (269bf635-bf35-484d-9806-05279379d678)
+ Call ID: 269bf635-bf35-484d-9806-05279379d678
+  Args:
+    source: Christian_Meister
+    type: :Person
+  AddLiteral (de75135f-ec98-4cd7-b924-00d64d1efeac)
+ Call ID: de75135f-ec98-4cd7-b924-00d64d1efeac
+  Args:
+    literal_value: 1954
+    source: Christian_Meister
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (9b05f6c4-e76c-4386-895d-7df6a179eb56)
+ Call ID: 9b05f6c4-e76c-4386-895d-7df6a179eb56
+  Args:
+    relation: :hasMarriageYear
     source: Gabriela_von_Habsburg
     literal_type: xsd:integer
     literal_value: 1978
-    relation: :hasMarriageYear
-  Finish (2616e68b-fe87-4eb0-81f3-35d7572da530)
- Call ID: 2616e68b-fe87-4eb0-81f3-35d7572da530
+  AddTriple (c0e10937-e669-433b-9d5c-eae8fe222b67)
+ Call ID: c0e10937-e669-433b-9d5c-eae8fe222b67
+  Args:
+    relation: :hasRelation
+    source: Gabriela_von_Habsburg
+    target: Christian_Meister
+  Finish (ae93bae7-be32-4870-b1fa-c4ea1ffd56fd)
+ Call ID: ae93bae7-be32-4870-b1fa-c4ea1ffd56fd
   Args:

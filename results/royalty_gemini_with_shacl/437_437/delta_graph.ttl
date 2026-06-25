@@ -2,50 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Mary_Cecilia_Colman a :Person,
+data:Allison_Mack a :Woman .
+
+data:Casper_Van_Dien a :Man .
+
+data:India_Riven_Oxenberg a :Woman ;
+    :hasBirthYear 1991 ;
+    :hasFather data:William_Weitz_Shaffer ;
+    :hasMother data:Catherine_Oxenberg .
+
+data:Keith_Raniere a :Man .
+
+data:Patrick_DIgnazio a :Man .
+
+data:Princess_Katarina a :Woman ;
+    :hasDaughter data:Victoria_de_Silva .
+
+data:Catherine_Oxenberg a :Ancestor,
         :Woman ;
-    :hasBirthYear 1932 ;
-    :hasBrother data:Fergus_Bowes-Lyon,
-        data:Michael_Albemarle ;
-    :hasDeathYear 2021 ;
-    :hasFather data:Michael_Bowes-Lyon ;
-    :hasMarriageYear 1951 ;
-    :hasMother data:Elizabeth_Margaret_Cator ;
-    :hasRelation data:Timothy_Colman ;
-    :hasSister data:Patricia_Maud_Tetley .
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSisterOf data:Christina_Oxenberg .
 
-data:Cecilia_Bowes-Lyon a :Ancestor,
-        :Person,
+data:Christina_Oxenberg a :Woman .
+
+data:Howard_Oxenberg a :Ancestor,
+        :Man .
+
+data:Prince_Regent_Paul_of_Yugoslavia a :Ancestor,
+        :Man .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Ancestor,
+        :Woman ;
+    :hasFather data:Prince_Regent_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
         :Woman .
 
-data:Claude_Bowes-Lyon a :Ancestor,
-        :Man,
-        :Person .
+data:Sir_Desmond_de_Silva a :Ancestor,
+        :Man .
 
-data:Elizabeth_Margaret_Cator a :Ancestor,
-        :Person,
-        :Woman .
+data:Victoria_de_Silva a :Woman ;
+    :hasFather data:Sir_Desmond_de_Silva .
 
-data:Fergus_Bowes-Lyon a :Man,
-        :Person .
-
-data:Geoffrey_Colman a :Ancestor,
-        :Man,
-        :Person .
-
-data:Michael_Albemarle a :Man,
-        :Person .
-
-data:Michael_Bowes-Lyon a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Claude_Bowes-Lyon ;
-    :hasMother data:Cecilia_Bowes-Lyon .
-
-data:Patricia_Maud_Tetley a :Person,
-        :Woman .
-
-data:Timothy_Colman a :Man,
-        :Person ;
-    :hasFather data:Geoffrey_Colman .
+data:William_Weitz_Shaffer a :Ancestor,
+        :Man .
 

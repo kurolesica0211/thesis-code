@@ -100,6 +100,8 @@ Alfonso married Princess Alice of Bourbon-Parma (1917–2017), his second cousin
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +117,9 @@ Alfonso married Princess Alice of Bourbon-Parma (1917–2017), his second cousin
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +134,23 @@ Alfonso married Princess Alice of Bourbon-Parma (1917–2017), his second cousin
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +168,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +250,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +273,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +293,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +303,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +343,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,119 +442,119 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (69d9afa4-86ae-4992-b024-9c31dd485499)
- Call ID: 69d9afa4-86ae-4992-b024-9c31dd485499
+  AssignClass (c8d260c2-45fc-4c73-a468-5edf005de7d0)
+ Call ID: c8d260c2-45fc-4c73-a468-5edf005de7d0
+  Args:
+    source: Alfonso_of_Spain
+    type: :Man
+  AssignClass (15bfbbab-0825-4ee3-933c-d7ef48fe4f7d)
+ Call ID: 15bfbbab-0825-4ee3-933c-d7ef48fe4f7d
   Args:
     type: :Person
     source: Alfonso_of_Spain
-  AssignClass (4c324bf1-6725-475c-af82-0f79eca2b0e4)
- Call ID: 4c324bf1-6725-475c-af82-0f79eca2b0e4
+  AddLiteral (d496962e-fc2a-4157-b373-d6aa0d1ff498)
+ Call ID: d496962e-fc2a-4157-b373-d6aa0d1ff498
   Args:
-    type: :Man
-    source: Alfonso_of_Spain
-  AddLiteral (2857593b-980b-45e2-9a09-a31de95d60b9)
- Call ID: 2857593b-980b-45e2-9a09-a31de95d60b9
-  Args:
+    literal_value: 1901
     relation: :hasBirthYear
     literal_type: xsd:integer
     source: Alfonso_of_Spain
-    literal_value: 1901
-  AddLiteral (86ba6cdf-6dca-4660-8ae0-d8d1681138b0)
- Call ID: 86ba6cdf-6dca-4660-8ae0-d8d1681138b0
+  AddLiteral (74239632-6a4a-4091-9600-3906749126d0)
+ Call ID: 74239632-6a4a-4091-9600-3906749126d0
   Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
     literal_value: 1964
+    relation: :hasDeathYear
+    literal_type: xsd:integer
     source: Alfonso_of_Spain
-  AssignClass (470dab34-8385-47a6-818e-71a58c34f7a9)
- Call ID: 470dab34-8385-47a6-818e-71a58c34f7a9
-  Args:
-    type: :Person
-    source: Carlos_of_Bourbon-Two_Sicilies
-  AssignClass (35daefa7-0e5a-4725-a998-9380d406f877)
- Call ID: 35daefa7-0e5a-4725-a998-9380d406f877
+  AssignClass (ee3573f3-7735-444e-a064-4efee7b6a26a)
+ Call ID: ee3573f3-7735-444e-a064-4efee7b6a26a
   Args:
     type: :Man
     source: Carlos_of_Bourbon-Two_Sicilies
-  AssignClass (18584d54-0ba1-40de-bbcf-6f0228595bae)
- Call ID: 18584d54-0ba1-40de-bbcf-6f0228595bae
+  AssignClass (ac6597d1-be26-4525-9746-7f3292f75c71)
+ Call ID: ac6597d1-be26-4525-9746-7f3292f75c71
   Args:
+    source: Carlos_of_Bourbon-Two_Sicilies
     type: :Person
-    source: Maria_de_las_Mercedes_Princess_of_Asturias
-  AssignClass (6f023289-759c-4b74-8d75-829648046c06)
- Call ID: 6f023289-759c-4b74-8d75-829648046c06
+  AssignClass (2f32140f-0ca9-47b6-9ac2-881ebc687f81)
+ Call ID: 2f32140f-0ca9-47b6-9ac2-881ebc687f81
   Args:
     type: :Woman
-    source: Maria_de_las_Mercedes_Princess_of_Asturias
-  AddTriple (10d46b7e-2f88-439b-9384-c872689172e1)
- Call ID: 10d46b7e-2f88-439b-9384-c872689172e1
+    source: Maria_de_las_Mercedes
+  AssignClass (1c8930cc-6bcc-476b-8ee8-e94c48010674)
+ Call ID: 1c8930cc-6bcc-476b-8ee8-e94c48010674
   Args:
-    source: Alfonso_of_Spain
+    source: Maria_de_las_Mercedes
+    type: :Person
+  AddTriple (a07f610e-05b8-4826-bf55-6ad22321e5f6)
+ Call ID: a07f610e-05b8-4826-bf55-6ad22321e5f6
+  Args:
     target: Carlos_of_Bourbon-Two_Sicilies
-    relation: :hasFather
-  AddTriple (6d3faec9-1f39-41bf-9094-c3c4b368b2dd)
- Call ID: 6d3faec9-1f39-41bf-9094-c3c4b368b2dd
-  Args:
     source: Alfonso_of_Spain
-    target: Maria_de_las_Mercedes_Princess_of_Asturias
-    relation: :hasMother
-  AssignClass (92d5cbc8-bc7f-42cc-949a-b1ccfb7be4e8)
- Call ID: 92d5cbc8-bc7f-42cc-949a-b1ccfb7be4e8
+    relation: :hasFather
+  AddTriple (0c0155ef-dfd5-49bf-9ffa-f068b8638ccd)
+ Call ID: 0c0155ef-dfd5-49bf-9ffa-f068b8638ccd
   Args:
-    type: :Person
-    source: Alice_of_Bourbon-Parma
-  AssignClass (aea301c8-6f48-4ba8-83a3-bdfd4b8e97f6)
- Call ID: aea301c8-6f48-4ba8-83a3-bdfd4b8e97f6
+    relation: :hasMother
+    source: Alfonso_of_Spain
+    target: Maria_de_las_Mercedes
+  AssignClass (e99d9aa7-5318-41df-a525-7ee58cd067d3)
+ Call ID: e99d9aa7-5318-41df-a525-7ee58cd067d3
   Args:
     type: :Woman
     source: Alice_of_Bourbon-Parma
-  AddLiteral (8fe47f6a-2950-40c6-8643-2a759947196c)
- Call ID: 8fe47f6a-2950-40c6-8643-2a759947196c
+  AssignClass (cd466ed7-765a-40ef-a6ea-873552a760f3)
+ Call ID: cd466ed7-765a-40ef-a6ea-873552a760f3
   Args:
-    literal_value: 1936
+    type: :Person
+    source: Alice_of_Bourbon-Parma
+  AddLiteral (a2f1f6b3-f8ab-4cf7-8062-c397e172b6f0)
+ Call ID: a2f1f6b3-f8ab-4cf7-8062-c397e172b6f0
+  Args:
     source: Alfonso_of_Spain
     literal_type: xsd:integer
     relation: :hasMarriageYear
-  AddTriple (ded96f78-eb6f-4eea-ba87-a237db115ee8)
- Call ID: ded96f78-eb6f-4eea-ba87-a237db115ee8
+    literal_value: 1936
+  AddTriple (0ccefdd5-da0a-4795-8c11-f9fceae40d6a)
+ Call ID: 0ccefdd5-da0a-4795-8c11-f9fceae40d6a
   Args:
     relation: :hasRelation
     source: Alfonso_of_Spain
     target: Alice_of_Bourbon-Parma
-  AssignClass (7a5553aa-9d88-4f98-b5d8-2c0efa05700f)
- Call ID: 7a5553aa-9d88-4f98-b5d8-2c0efa05700f
+  AssignClass (1037cdd2-e406-4b28-9aa1-864b613b2f4e)
+ Call ID: 1037cdd2-e406-4b28-9aa1-864b613b2f4e
   Args:
-    type: :Person
-    source: Elias_Duke_of_Parma_and_Piacenza
-  AssignClass (2c4507e8-9775-4e71-9a72-a4e728cef60b)
- Call ID: 2c4507e8-9775-4e71-9a72-a4e728cef60b
-  Args:
+    source: Elias_of_Parma
     type: :Man
-    source: Elias_Duke_of_Parma_and_Piacenza
-  AssignClass (8a0db0cb-37e2-4ab0-a568-0d731693f24f)
- Call ID: 8a0db0cb-37e2-4ab0-a568-0d731693f24f
+  AssignClass (490df59d-d1e6-4b0b-9148-ad7cc272ab1e)
+ Call ID: 490df59d-d1e6-4b0b-9148-ad7cc272ab1e
+  Args:
+    type: :Person
+    source: Elias_of_Parma
+  AssignClass (69ff3af7-f3b5-4801-a512-73a196314cc0)
+ Call ID: 69ff3af7-f3b5-4801-a512-73a196314cc0
+  Args:
+    source: Maria_Anna_of_Austria
+    type: :Woman
+  AssignClass (88f19f6a-32b0-449e-a690-2d226e5c52c0)
+ Call ID: 88f19f6a-32b0-449e-a690-2d226e5c52c0
   Args:
     type: :Person
     source: Maria_Anna_of_Austria
-  AssignClass (04e192f8-6ec8-499a-b487-449fb7627fb9)
- Call ID: 04e192f8-6ec8-499a-b487-449fb7627fb9
+  AddTriple (cf5bc41c-eb26-43ae-a6bf-ea106c5e298c)
+ Call ID: cf5bc41c-eb26-43ae-a6bf-ea106c5e298c
   Args:
-    type: :Woman
-    source: Maria_Anna_of_Austria
-  AddTriple (a1a7329d-6cf8-4268-b59a-169765eac23a)
- Call ID: a1a7329d-6cf8-4268-b59a-169765eac23a
-  Args:
-    target: Elias_Duke_of_Parma_and_Piacenza
+    target: Elias_of_Parma
     source: Alice_of_Bourbon-Parma
     relation: :hasFather
-  AddTriple (27a30dc1-9d2a-4d1f-9b4c-cf6a27268d93)
- Call ID: 27a30dc1-9d2a-4d1f-9b4c-cf6a27268d93
+  AddTriple (93e3d515-12b8-4097-a9a0-47fcce2c92b7)
+ Call ID: 93e3d515-12b8-4097-a9a0-47fcce2c92b7
   Args:
+    relation: :hasMother
     source: Alice_of_Bourbon-Parma
     target: Maria_Anna_of_Austria
-    relation: :hasMother
-  Finish (ed20ebea-86cc-4ced-9495-4a4d3e5001d3)
- Call ID: ed20ebea-86cc-4ced-9495-4a4d3e5001d3
+  Finish (64c370b9-73b4-41cc-bcad-89673a289d17)
+ Call ID: 64c370b9-73b4-41cc-bcad-89673a289d17
   Args:
 
 ================================= Tool Message =================================
@@ -554,24 +646,24 @@ The final data graph after all the edits:
       :hasDeathYear 1964 ;
       :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
       :hasMarriageYear 1936 ;
-      :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+      :hasMother data:Maria_de_las_Mercedes ;
       :hasRelation data:Alice_of_Bourbon-Parma .
 
   data:Alice_of_Bourbon-Parma a :Person,
           :Woman ;
-      :hasFather data:Elias_Duke_of_Parma_and_Piacenza ;
+      :hasFather data:Elias_of_Parma ;
       :hasMother data:Maria_Anna_of_Austria .
 
   data:Carlos_of_Bourbon-Two_Sicilies a :Man,
           :Person .
 
-  data:Elias_Duke_of_Parma_and_Piacenza a :Man,
+  data:Elias_of_Parma a :Man,
           :Person .
 
   data:Maria_Anna_of_Austria a :Person,
           :Woman .
 
-  data:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,
+  data:Maria_de_las_Mercedes a :Person,
           :Woman .
 
 
@@ -584,8 +676,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (d7097957-9d15-4948-9e8a-288843d7027a)
- Call ID: d7097957-9d15-4948-9e8a-288843d7027a
+  ValidateShacl (ff006697-37c9-4cfe-9d04-6d4f94edcaba)
+ Call ID: ff006697-37c9-4cfe-9d04-6d4f94edcaba
   Args:
 
 ================================= Tool Message =================================
@@ -597,97 +689,97 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Alfonso_of_Spain' has a 'hasFather' relationship with 'Carlos_of_Bourbon-Two_Sicilies', but the value node is missing the mandatory class ':Ancestor'.
+      The node 'Carlos_of_Bourbon-Two_Sicilies' is acting as a father for 'Alfonso_of_Spain' but lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass: Alfonso_of_Spain hasFather Carlos_of_Bourbon-Two_Sicilies node :Ancestor
+      AssignClass('Carlos_of_Bourbon-Two_Sicilies', ':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Alfonso_of_Spain' has a 'hasMother' relationship with 'Maria_de_las_Mercedes_Princess_of_Asturias', but the value node is missing the mandatory class ':Ancestor'.
+      The node 'Maria_de_las_Mercedes' is acting as a mother for 'Alfonso_of_Spain' but lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass: Alfonso_of_Spain hasMother Maria_de_las_Mercedes_Princess_of_Asturias node :Ancestor
+      AssignClass('Maria_de_las_Mercedes', ':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Alfonso_of_Spain' has a 'hasFather' relationship with 'Carlos_of_Bourbon-Two_Sicilies', but the value node is missing the mandatory class ':Ancestor'.
+      The node 'Elias_of_Parma' is acting as a father for 'Alice_of_Bourbon-Parma' but lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass: Alfonso_of_Spain hasFather Carlos_of_Bourbon-Two_Sicilies node :Ancestor
+      AssignClass('Elias_of_Parma', ':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Alice_of_Bourbon-Parma' has a 'hasFather' relationship with 'Elias_Duke_of_Parma_and_Piacenza', but the value node is missing the mandatory class ':Ancestor'.
+      The node 'Carlos_of_Bourbon-Two_Sicilies' is acting as a father for 'Alfonso_of_Spain' but lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass: Alice_of_Bourbon-Parma hasFather Elias_Duke_of_Parma_and_Piacenza node :Ancestor
+      AssignClass('Carlos_of_Bourbon-Two_Sicilies', ':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Alfonso_of_Spain' has a 'hasMother' relationship with 'Maria_de_las_Mercedes_Princess_of_Asturias', but the value node is missing the mandatory class ':Ancestor'.
+      The node 'Maria_Anna_of_Austria' is acting as a mother for 'Alice_of_Bourbon-Parma' but lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass: Alfonso_of_Spain hasMother Maria_de_las_Mercedes_Princess_of_Asturias node :Ancestor
+      AssignClass('Maria_Anna_of_Austria', ':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Alice_of_Bourbon-Parma' has a 'hasMother' relationship with 'Maria_Anna_of_Austria', but the value node is missing the mandatory class ':Ancestor'.
+      The node 'Maria_de_las_Mercedes' is acting as a mother for 'Alfonso_of_Spain' but lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass: Alice_of_Bourbon-Parma hasMother Maria_Anna_of_Austria node :Ancestor
+      AssignClass('Maria_de_las_Mercedes', ':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Alfonso_of_Spain' has a 'hasFather' relationship with 'Carlos_of_Bourbon-Two_Sicilies', but the value node is missing the mandatory class ':Ancestor'.
+      The node 'Elias_of_Parma' is acting as a father for 'Alice_of_Bourbon-Parma' but lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass: Alfonso_of_Spain hasFather Carlos_of_Bourbon-Two_Sicilies node :Ancestor
+      AssignClass('Elias_of_Parma', ':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Alice_of_Bourbon-Parma' has a 'hasFather' relationship with 'Elias_Duke_of_Parma_and_Piacenza', but the value node is missing the mandatory class ':Ancestor'.
+      The node 'Carlos_of_Bourbon-Two_Sicilies' is acting as a father for 'Alfonso_of_Spain' but lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass: Alice_of_Bourbon-Parma hasFather Elias_Duke_of_Parma_and_Piacenza node :Ancestor
+      AssignClass('Carlos_of_Bourbon-Two_Sicilies', ':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Alfonso_of_Spain' has a 'hasMother' relationship with 'Maria_de_las_Mercedes_Princess_of_Asturias', but the value node is missing the mandatory class ':Ancestor'.
+      The node 'Maria_Anna_of_Austria' is acting as a mother for 'Alice_of_Bourbon-Parma' but lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass: Alfonso_of_Spain hasMother Maria_de_las_Mercedes_Princess_of_Asturias node :Ancestor
+      AssignClass('Maria_Anna_of_Austria', ':Ancestor')
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Alice_of_Bourbon-Parma' has a 'hasMother' relationship with 'Maria_Anna_of_Austria', but the value node is missing the mandatory class ':Ancestor'.
+      The node 'Maria_de_las_Mercedes' is acting as a mother for 'Alfonso_of_Spain' but lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass: Alice_of_Bourbon-Parma hasMother Maria_Anna_of_Austria node :Ancestor
+      AssignClass('Maria_de_las_Mercedes', ':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Alice_of_Bourbon-Parma' has a 'hasFather' relationship with 'Elias_Duke_of_Parma_and_Piacenza', but the value node is missing the mandatory class ':Ancestor'.
+      The node 'Elias_of_Parma' is acting as a father for 'Alice_of_Bourbon-Parma' but lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass: Alice_of_Bourbon-Parma hasFather Elias_Duke_of_Parma_and_Piacenza node :Ancestor
+      AssignClass('Elias_of_Parma', ':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Alice_of_Bourbon-Parma' has a 'hasMother' relationship with 'Maria_Anna_of_Austria', but the value node is missing the mandatory class ':Ancestor'.
+      The node 'Maria_Anna_of_Austria' is acting as a mother for 'Alice_of_Bourbon-Parma' but lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass: Alice_of_Bourbon-Parma hasMother Maria_Anna_of_Austria node :Ancestor
+      AssignClass('Maria_Anna_of_Austria', ':Ancestor')
 
 
 
@@ -696,29 +788,107 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (4a9a2d85-d5d1-4723-aa86-65f6425704ed)
- Call ID: 4a9a2d85-d5d1-4723-aa86-65f6425704ed
+  AssignClass (4a99f561-c044-483e-8781-db4cac9dda82)
+ Call ID: 4a99f561-c044-483e-8781-db4cac9dda82
   Args:
+    type: :Ancestor
     source: Carlos_of_Bourbon-Two_Sicilies
-    type: :Ancestor
-  AssignClass (51139747-0860-40b1-82e5-ed7179caf297)
- Call ID: 51139747-0860-40b1-82e5-ed7179caf297
-  Args:
-    source: Maria_de_las_Mercedes_Princess_of_Asturias
-    type: :Ancestor
-  AssignClass (be1ea967-5cbb-4b0d-b31a-d58eb4fbf947)
- Call ID: be1ea967-5cbb-4b0d-b31a-d58eb4fbf947
+  AssignClass (e91737ae-e2f2-4f16-ba95-a3de165a3092)
+ Call ID: e91737ae-e2f2-4f16-ba95-a3de165a3092
   Args:
     type: :Ancestor
-    source: Elias_Duke_of_Parma_and_Piacenza
-  AssignClass (68b828e2-3699-43de-9bf5-f43d5446aeda)
- Call ID: 68b828e2-3699-43de-9bf5-f43d5446aeda
+    source: Maria_de_las_Mercedes
+  AssignClass (f546fa46-1e9f-4738-86fd-073653e923ee)
+ Call ID: f546fa46-1e9f-4738-86fd-073653e923ee
   Args:
     type: :Ancestor
+    source: Elias_of_Parma
+  AssignClass (e7714683-ca2e-4422-aee3-dc061bc01db8)
+ Call ID: e7714683-ca2e-4422-aee3-dc061bc01db8
+  Args:
     source: Maria_Anna_of_Austria
-  ValidateShacl (d2282e78-f3ab-443b-abbd-1ace096feb68)
- Call ID: d2282e78-f3ab-443b-abbd-1ace096feb68
+    type: :Ancestor
+  AddTriple (3023afab-37cf-49ee-9af8-fc159f6fadaf)
+ Call ID: 3023afab-37cf-49ee-9af8-fc159f6fadaf
   Args:
+    target: :Male
+    relation: :hasSex
+    source: Alfonso_of_Spain
+  AddTriple (a008366b-fc9e-4e18-9c35-ecd15bc640ad)
+ Call ID: a008366b-fc9e-4e18-9c35-ecd15bc640ad
+  Args:
+    target: :Male
+    relation: :hasSex
+    source: Carlos_of_Bourbon-Two_Sicilies
+  AddTriple (381602bb-d28d-43cc-92eb-852f969d5cd4)
+ Call ID: 381602bb-d28d-43cc-92eb-852f969d5cd4
+  Args:
+    target: :Female
+    relation: :hasSex
+    source: Maria_de_las_Mercedes
+  AddTriple (35146e35-75d6-43e7-b7b0-fd740342ccef)
+ Call ID: 35146e35-75d6-43e7-b7b0-fd740342ccef
+  Args:
+    relation: :hasSex
+    target: :Female
+    source: Alice_of_Bourbon-Parma
+  AddTriple (105abc18-10b7-4be0-883e-6232cc5c0ba7)
+ Call ID: 105abc18-10b7-4be0-883e-6232cc5c0ba7
+  Args:
+    relation: :hasSex
+    target: :Male
+    source: Elias_of_Parma
+  AddTriple (d10b2c5e-5c19-40a3-a9da-cb449aa2c2fe)
+ Call ID: d10b2c5e-5c19-40a3-a9da-cb449aa2c2fe
+  Args:
+    relation: :hasSex
+    target: :Female
+    source: Maria_Anna_of_Austria
+  AssignClass (4cbf0851-c629-4900-8abf-854eb6cb491c)
+ Call ID: 4cbf0851-c629-4900-8abf-854eb6cb491c
+  Args:
+    type: :Sex
+    source: :Male
+  AssignClass (abf6a830-b8fa-4576-8a0b-4fee938adab1)
+ Call ID: abf6a830-b8fa-4576-8a0b-4fee938adab1
+  Args:
+    type: :Sex
+    source: :Female
+  ValidateShacl (a9bf1a39-aa56-4ef0-a267-7e25c34baa7d)
+ Call ID: a9bf1a39-aa56-4ef0-a267-7e25c34baa7d
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -745,29 +915,39 @@ The final data graph after all the edits:
       :hasDeathYear 1964 ;
       :hasFather data:Carlos_of_Bourbon-Two_Sicilies ;
       :hasMarriageYear 1936 ;
-      :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;
-      :hasRelation data:Alice_of_Bourbon-Parma .
+      :hasMother data:Maria_de_las_Mercedes ;
+      :hasRelation data:Alice_of_Bourbon-Parma ;
+      :hasSex data:Male .
 
   data:Alice_of_Bourbon-Parma a :Person,
           :Woman ;
-      :hasFather data:Elias_Duke_of_Parma_and_Piacenza ;
-      :hasMother data:Maria_Anna_of_Austria .
+      :hasFather data:Elias_of_Parma ;
+      :hasMother data:Maria_Anna_of_Austria ;
+      :hasSex data:Female .
 
   data:Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
           :Man,
-          :Person .
+          :Person ;
+      :hasSex data:Male .
 
-  data:Elias_Duke_of_Parma_and_Piacenza a :Ancestor,
+  data:Elias_of_Parma a :Ancestor,
           :Man,
-          :Person .
+          :Person ;
+      :hasSex data:Male .
 
   data:Maria_Anna_of_Austria a :Ancestor,
           :Person,
-          :Woman .
+          :Woman ;
+      :hasSex data:Female .
 
-  data:Maria_de_las_Mercedes_Princess_of_Asturias a :Ancestor,
+  data:Maria_de_las_Mercedes a :Ancestor,
           :Person,
-          :Woman .
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Female a :Sex .
+
+  data:Male a :Sex .
 
 
 
@@ -779,6 +959,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ced33542-35fc-4fd5-9061-1fc6b974c4f4)
- Call ID: ced33542-35fc-4fd5-9061-1fc6b974c4f4
+  Finish (aa5b7142-bdb8-4962-b146-d27054f4152e)
+ Call ID: aa5b7142-bdb8-4962-b146-d27054f4152e
   Args:

@@ -1,0 +1,182 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Olympia a :Ancestor,
+        :Woman ;
+    :hasChild data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :hasRelation data:B%C3%A9atrice,
+        data:Charles,
+        data:Ferdinand,
+        data:Jean-Christophe,
+        data:Louis,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Olympia ;
+    :hasSister data:Olympia ;
+    :hasSon data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isAncestorOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isAuntOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Olympia ;
+    :isMotherOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isParentOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isSiblingOf data:Olympia ;
+    :isSisterOf data:Olympia .
+
+data:Ferdinand a :Ancestor,
+        :Man ;
+    :hasBrother data:Ferdinand ;
+    :hasChild data:B%C3%A9atrice ;
+    :hasDaughter data:B%C3%A9atrice ;
+    :hasRelation data:B%C3%A9atrice,
+        data:Charles,
+        data:Ferdinand,
+        data:Jean-Christophe,
+        data:Louis,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Olympia ;
+    :isAncestorOf data:B%C3%A9atrice,
+        data:Jean-Christophe,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Ferdinand ;
+    :isBrotherOf data:Ferdinand ;
+    :isFatherOf data:B%C3%A9atrice ;
+    :isParentOf data:B%C3%A9atrice ;
+    :isSiblingOf data:Ferdinand ;
+    :isUncleOf data:B%C3%A9atrice .
+
+data:Louis a :Ancestor,
+        :Man ;
+    :hasBrother data:Louis ;
+    :hasChild data:Charles ;
+    :hasDeathYear 1997 ;
+    :hasRelation data:B%C3%A9atrice,
+        data:Charles,
+        data:Ferdinand,
+        data:Jean-Christophe,
+        data:Louis,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Olympia ;
+    :hasSon data:Charles ;
+    :isAncestorOf data:Charles,
+        data:Jean-Christophe,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Louis ;
+    :isBrotherOf data:Louis ;
+    :isFatherOf data:Charles ;
+    :isParentOf data:Charles ;
+    :isSiblingOf data:Louis ;
+    :isUncleOf data:Charles .
+
+data:B%C3%A9atrice a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Ferdinand ;
+    :hasChild data:Jean-Christophe ;
+    :hasFather data:Ferdinand ;
+    :hasParent data:Ferdinand ;
+    :hasRelation data:B%C3%A9atrice,
+        data:Charles,
+        data:Ferdinand,
+        data:Jean-Christophe,
+        data:Louis,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Olympia ;
+    :hasSister data:B%C3%A9atrice ;
+    :hasSon data:Jean-Christophe ;
+    :isAncestorOf data:Jean-Christophe,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isAuntOf data:Jean-Christophe ;
+    :isBloodrelationOf data:B%C3%A9atrice ;
+    :isChildOf data:Ferdinand ;
+    :isDaughterOf data:Ferdinand ;
+    :isMotherOf data:Jean-Christophe ;
+    :isParentOf data:Jean-Christophe ;
+    :isSiblingOf data:B%C3%A9atrice ;
+    :isSisterOf data:B%C3%A9atrice .
+
+data:Charles a :Ancestor,
+        :Man ;
+    :hasAncestor data:Louis ;
+    :hasBrother data:Charles ;
+    :hasChild data:Jean-Christophe ;
+    :hasFather data:Louis ;
+    :hasParent data:Louis ;
+    :hasRelation data:B%C3%A9atrice,
+        data:Charles,
+        data:Ferdinand,
+        data:Jean-Christophe,
+        data:Louis,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Olympia ;
+    :hasSon data:Jean-Christophe ;
+    :isAncestorOf data:Jean-Christophe,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Charles ;
+    :isBrotherOf data:Charles ;
+    :isChildOf data:Louis ;
+    :isFatherOf data:Jean-Christophe ;
+    :isParentOf data:Jean-Christophe ;
+    :isSiblingOf data:Charles ;
+    :isSonOf data:Louis ;
+    :isUncleOf data:Jean-Christophe .
+
+data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man ;
+    :hasAncestor data:B%C3%A9atrice,
+        data:Charles,
+        data:Ferdinand,
+        data:Jean-Christophe,
+        data:Louis,
+        data:Olympia ;
+    :hasBirthYear 2022 ;
+    :hasBrother data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :hasFather data:Jean-Christophe ;
+    :hasMother data:Olympia ;
+    :hasParent data:Jean-Christophe,
+        data:Olympia ;
+    :hasRelation data:B%C3%A9atrice,
+        data:Charles,
+        data:Ferdinand,
+        data:Jean-Christophe,
+        data:Louis,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Olympia ;
+    :isBloodrelationOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBrotherOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isChildOf data:Jean-Christophe,
+        data:Olympia ;
+    :isSiblingOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isSonOf data:Jean-Christophe,
+        data:Olympia .
+
+data:Jean-Christophe a :Ancestor,
+        :Man ;
+    :hasAncestor data:B%C3%A9atrice,
+        data:Charles,
+        data:Ferdinand,
+        data:Louis ;
+    :hasBirthYear 1986 ;
+    :hasBrother data:Jean-Christophe ;
+    :hasChild data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :hasFather data:Charles ;
+    :hasMother data:B%C3%A9atrice ;
+    :hasParent data:B%C3%A9atrice,
+        data:Charles ;
+    :hasRelation data:B%C3%A9atrice,
+        data:Charles,
+        data:Ferdinand,
+        data:Jean-Christophe,
+        data:Louis,
+        data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on,
+        data:Olympia ;
+    :hasSon data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isAncestorOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isBloodrelationOf data:Jean-Christophe ;
+    :isBrotherOf data:Jean-Christophe ;
+    :isChildOf data:B%C3%A9atrice,
+        data:Charles ;
+    :isFatherOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isParentOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on ;
+    :isSiblingOf data:Jean-Christophe ;
+    :isSonOf data:B%C3%A9atrice,
+        data:Charles ;
+    :isUncleOf data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on .
+

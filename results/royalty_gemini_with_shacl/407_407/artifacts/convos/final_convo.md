@@ -85,30 +85,17 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Mary Frances Elphinstone, Lady Elphinstone GCVO (née Bowes-Lyon; 30 August 1883 – 8 February 1961), was a British aristocrat.
-She was an elder sister of Queen Elizabeth the Queen Mother and an aunt and godmother of Queen Elizabeth II.
-Early life
-
-Lady Elphinstone was born The Honourable Mary Frances Bowes-Lyon on 30 August 1883 in Angus, Scotland, to Claude Bowes-Lyon, 14th
-She was an elder sister of Elizabeth Bowes-Lyon known as Queen Elizabeth of the United Kingdom (later the Queen Mother).
-Personal life
-
-Lady Mary married Sidney Elphinstone, 16th Lord Elphinstone (1869–1955) on 24 July 1910 in Westminster.
-Lord Elphinstone inherited extensive estates, some of which had been in the family since the reign of King David II of Scotland.
-He served as a governor of the Bank of Scotland, Lord Clerk Register of Scotland and Keeper of the Signet and Lord High Commissioner of the Church of Scotland.
-The couple had five children:
-
-
-In 1937, Lady Elphinstone attended her sister and brother-in-law's coronation whereby she sat behind her niece Princess Elizabeth, who would be the future queen, in the royal box.
-She was one of the leading guests in the wedding of Princess Elizabeth and Philip Mountbatten in 1947.
-Lord Elphinstone died at their home Carberry Tower, Musselburgh, on 28 November 1955.
-Lady Elphinstone, who served as president of the Midlothian branch of the British Red Cross, died on 8 February 1961, aged 77, also at Carberry Tower in Inveresk, Scotland.
+Don Marco Alfonso Torlonia, 6th Prince of Civitella-Cesi (2 July 1937 – 5 December 2014) was the son of Alessandro Torlonia, 5th Prince of Civitella-Cesi and Infanta Beatriz of Spain, daughter of King Alfonso XIII of Spain.
+King Juan Carlos I of Spain.
+He was also an uncle to Princess Sibilla of Luxembourg, daughter of his younger sister, Olimpia.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -124,39 +111,9 @@ Lady Elphinstone, who served as president of the Midlothian branch of the Britis
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -171,6 +128,23 @@ Lady Elphinstone, who served as president of the Midlothian branch of the Britis
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -188,6 +162,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -255,29 +244,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -286,6 +267,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -298,6 +287,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -306,17 +297,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -344,6 +337,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -359,156 +436,88 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (38b64937-ce4f-47eb-87ae-e7a733ec6744)
- Call ID: 38b64937-ce4f-47eb-87ae-e7a733ec6744
+  AssignClass (b44e108c-803c-4a8c-ab36-51cbd36ecbfa)
+ Call ID: b44e108c-803c-4a8c-ab36-51cbd36ecbfa
   Args:
-    type: :Woman
-    source: Mary_Frances_Elphinstone
-  AssignClass (cbe8d13c-3fa3-4fa9-ae37-2d6f3b9125ec)
- Call ID: cbe8d13c-3fa3-4fa9-ae37-2d6f3b9125ec
-  Args:
-    source: Mary_Frances_Elphinstone
-    type: :Person
-  AddLiteral (0dafd51b-3f0d-46ad-af67-800b38c26a3d)
- Call ID: 0dafd51b-3f0d-46ad-af67-800b38c26a3d
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1883
-    source: Mary_Frances_Elphinstone
-    relation: :hasBirthYear
-  AddLiteral (78a75340-1fb3-490a-a4da-1e2b34797682)
- Call ID: 78a75340-1fb3-490a-a4da-1e2b34797682
-  Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1961
-    source: Mary_Frances_Elphinstone
-  AssignClass (c0a10b41-82c3-4142-9259-5eaf692599c2)
- Call ID: c0a10b41-82c3-4142-9259-5eaf692599c2
-  Args:
-    type: :Woman
-    source: Elizabeth_Bowes-Lyon
-  AssignClass (ca021698-640d-40b2-bded-47bda3cab60f)
- Call ID: ca021698-640d-40b2-bded-47bda3cab60f
-  Args:
-    type: :Person
-    source: Elizabeth_Bowes-Lyon
-  AddTriple (12895a24-9270-4e98-81ed-7b1e3b6eb4ed)
- Call ID: 12895a24-9270-4e98-81ed-7b1e3b6eb4ed
-  Args:
-    target: Elizabeth_Bowes-Lyon
-    source: Mary_Frances_Elphinstone
-    relation: :hasSister
-  AssignClass (8dfa2f5c-2530-4a69-9e35-73512abbc8b0)
- Call ID: 8dfa2f5c-2530-4a69-9e35-73512abbc8b0
-  Args:
-    type: :Woman
-    source: Queen_Elizabeth_II
-  AssignClass (26f085af-59f0-46a7-b3b7-fbdf7e7c11ee)
- Call ID: 26f085af-59f0-46a7-b3b7-fbdf7e7c11ee
-  Args:
-    source: Queen_Elizabeth_II
-    type: :Person
-  AddTriple (b9e7a3e0-dc61-4e15-92ea-b6f0a41b3575)
- Call ID: b9e7a3e0-dc61-4e15-92ea-b6f0a41b3575
-  Args:
-    target: Queen_Elizabeth_II
-    source: Mary_Frances_Elphinstone
-    relation: :isAuntOf
-  AssignClass (4906b83e-fa41-4aa9-be98-4817acd29584)
- Call ID: 4906b83e-fa41-4aa9-be98-4817acd29584
-  Args:
-    source: Claude_Bowes-Lyon
     type: :Man
-  AssignClass (a15605e8-34d0-459c-a392-a34b496ea2be)
- Call ID: a15605e8-34d0-459c-a392-a34b496ea2be
+    source: Don_Marco_Alfonso_Torlonia
+  AssignClass (86ccc7e3-9e67-408d-9bf0-7490186ccff0)
+ Call ID: 86ccc7e3-9e67-408d-9bf0-7490186ccff0
   Args:
-    type: :Person
-    source: Claude_Bowes-Lyon
-  AddTriple (76275a79-1c30-421c-a7fb-f183ca5ac9f4)
- Call ID: 76275a79-1c30-421c-a7fb-f183ca5ac9f4
+    type: :Man
+    source: Alessandro_Torlonia
+  AssignClass (9eacc461-1aa5-46d1-9ce7-62b283307361)
+ Call ID: 9eacc461-1aa5-46d1-9ce7-62b283307361
   Args:
-    source: Mary_Frances_Elphinstone
-    target: Claude_Bowes-Lyon
+    source: Infanta_Beatriz_of_Spain
+    type: :Woman
+  AssignClass (d83375d1-f051-4875-9531-e0d92f59050f)
+ Call ID: d83375d1-f051-4875-9531-e0d92f59050f
+  Args:
+    source: King_Alfonso_XIII_of_Spain
+    type: :Man
+  AssignClass (ad903893-f924-4404-bdad-17dc764a88ed)
+ Call ID: ad903893-f924-4404-bdad-17dc764a88ed
+  Args:
+    type: :Man
+    source: King_Juan_Carlos_I_of_Spain
+  AssignClass (fb39381e-779a-4776-821c-4a1260ac5b50)
+ Call ID: fb39381e-779a-4776-821c-4a1260ac5b50
+  Args:
+    source: Princess_Sibilla_of_Luxembourg
+    type: :Woman
+  AssignClass (29e1803f-9298-48fe-b583-ef25319ce528)
+ Call ID: 29e1803f-9298-48fe-b583-ef25319ce528
+  Args:
+    type: :Woman
+    source: Olimpia
+  AddLiteral (f44a41ad-2291-4e7a-a3db-fe54cfbafae0)
+ Call ID: f44a41ad-2291-4e7a-a3db-fe54cfbafae0
+  Args:
+    literal_value: 1937
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: Don_Marco_Alfonso_Torlonia
+  AddLiteral (c34b480b-5391-46db-9e66-fc71e431fbd8)
+ Call ID: c34b480b-5391-46db-9e66-fc71e431fbd8
+  Args:
+    literal_type: xsd:integer
+    source: Don_Marco_Alfonso_Torlonia
+    relation: :hasDeathYear
+    literal_value: 2014
+  AddTriple (75dc588a-8614-4de1-b7e3-f341d39037c5)
+ Call ID: 75dc588a-8614-4de1-b7e3-f341d39037c5
+  Args:
+    target: Alessandro_Torlonia
+    source: Don_Marco_Alfonso_Torlonia
     relation: :hasFather
-  AssignClass (f60abd10-03a0-42db-93be-7d27a58a39c4)
- Call ID: f60abd10-03a0-42db-93be-7d27a58a39c4
+  AddTriple (3ed9f33d-72c1-4288-8ef0-8fde44dd5a5b)
+ Call ID: 3ed9f33d-72c1-4288-8ef0-8fde44dd5a5b
   Args:
-    type: :Man
-    source: Sidney_Elphinstone
-  AssignClass (cf6d637a-f2c0-4093-a697-9f069afadefb)
- Call ID: cf6d637a-f2c0-4093-a697-9f069afadefb
+    target: Infanta_Beatriz_of_Spain
+    relation: :hasMother
+    source: Don_Marco_Alfonso_Torlonia
+  AddTriple (96eca5cb-3756-4b39-a6eb-af75b309431b)
+ Call ID: 96eca5cb-3756-4b39-a6eb-af75b309431b
   Args:
-    type: :Person
-    source: Sidney_Elphinstone
-  AddLiteral (cc2a9f53-5027-46b3-bb43-5c19e86aeea4)
- Call ID: cc2a9f53-5027-46b3-bb43-5c19e86aeea4
+    target: King_Alfonso_XIII_of_Spain
+    source: Infanta_Beatriz_of_Spain
+    relation: :hasFather
+  AddTriple (36ec0f91-97a5-409c-9c1a-4b905b2ec6cd)
+ Call ID: 36ec0f91-97a5-409c-9c1a-4b905b2ec6cd
   Args:
-    literal_type: xsd:integer
-    source: Mary_Frances_Elphinstone
-    literal_value: 1910
-    relation: :hasMarriageYear
-  AddTriple (e7e2ac40-b30c-4cb6-a735-daa9e76c7039)
- Call ID: e7e2ac40-b30c-4cb6-a735-daa9e76c7039
+    target: Olimpia
+    relation: :hasSister
+    source: Don_Marco_Alfonso_Torlonia
+  AddTriple (cbacb957-aeef-4cf1-b5ae-5bb198c24b4e)
+ Call ID: cbacb957-aeef-4cf1-b5ae-5bb198c24b4e
   Args:
-    target: Sidney_Elphinstone
-    source: Mary_Frances_Elphinstone
-    relation: :hasRelation
-  AddLiteral (5e1dbed8-bb60-4037-9178-7c3621651720)
- Call ID: 5e1dbed8-bb60-4037-9178-7c3621651720
+    target: Olimpia
+    source: Princess_Sibilla_of_Luxembourg
+    relation: :hasMother
+  Finish (6942bef6-68a7-4057-b5b7-b1a591c0818a)
+ Call ID: 6942bef6-68a7-4057-b5b7-b1a591c0818a
   Args:
-    source: Sidney_Elphinstone
-    literal_value: 1869
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (1b9d4fe5-eba0-4823-a264-4794755fd27e)
- Call ID: 1b9d4fe5-eba0-4823-a264-4794755fd27e
-  Args:
-    source: Sidney_Elphinstone
-    literal_value: 1955
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AssignClass (20350532-6062-4b8a-a300-fecc8279e4c6)
- Call ID: 20350532-6062-4b8a-a300-fecc8279e4c6
-  Args:
-    source: Philip_Mountbatten
-    type: :Man
-  AssignClass (c11228c4-01f1-4b0b-bf75-b5da03cfbbbf)
- Call ID: c11228c4-01f1-4b0b-bf75-b5da03cfbbbf
-  Args:
-    type: :Person
-    source: Philip_Mountbatten
-  Finish (a7c7adf3-579d-4612-9043-90194a354444)
- Call ID: a7c7adf3-579d-4612-9043-90194a354444
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -569,32 +578,26 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Mary_Frances_Elphinstone a :Person,
-          :Woman ;
-      :hasBirthYear 1883 ;
-      :hasDeathYear 1961 ;
-      :hasFather data:Claude_Bowes-Lyon ;
-      :hasMarriageYear 1910 ;
-      :hasRelation data:Sidney_Elphinstone ;
-      :hasSister data:Elizabeth_Bowes-Lyon ;
-      :isAuntOf data:Queen_Elizabeth_II .
+  data:Don_Marco_Alfonso_Torlonia a :Man ;
+      :hasBirthYear 1937 ;
+      :hasDeathYear 2014 ;
+      :hasFather data:Alessandro_Torlonia ;
+      :hasMother data:Infanta_Beatriz_of_Spain ;
+      :hasSister data:Olimpia .
 
-  data:Philip_Mountbatten a :Man,
-          :Person .
+  data:King_Juan_Carlos_I_of_Spain a :Man .
 
-  data:Claude_Bowes-Lyon a :Man,
-          :Person .
+  data:Princess_Sibilla_of_Luxembourg a :Woman ;
+      :hasMother data:Olimpia .
 
-  data:Elizabeth_Bowes-Lyon a :Person,
-          :Woman .
+  data:Alessandro_Torlonia a :Man .
 
-  data:Queen_Elizabeth_II a :Person,
-          :Woman .
+  data:Infanta_Beatriz_of_Spain a :Woman ;
+      :hasFather data:King_Alfonso_XIII_of_Spain .
 
-  data:Sidney_Elphinstone a :Man,
-          :Person ;
-      :hasBirthYear 1869 ;
-      :hasDeathYear 1955 .
+  data:King_Alfonso_XIII_of_Spain a :Man .
+
+  data:Olimpia a :Woman .
 
 
 
@@ -606,38 +609,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (46bcd299-f83d-44e4-9b6b-f742759660b2)
- Call ID: 46bcd299-f83d-44e4-9b6b-f742759660b2
+  ValidateShacl (b5b98f5d-5746-4fe1-97e2-bf45eca99951)
+ Call ID: b5b98f5d-5746-4fe1-97e2-bf45eca99951
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:3
+Total violations:12
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Claude_Bowes-Lyon' is used as the value for the 'hasFather' property of 'Mary_Frances_Elphinstone', but it lacks the required class ':Ancestor'.
+      The node Alessandro_Torlonia is assigned the class :Man but does not have the required class :Ancestor to satisfy the :hasFather property constraints for Don_Marco_Alfonso_Torlonia.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Ancestor' to the node 'Claude_Bowes-Lyon'.
+      AssignClass(Alessandro_Torlonia, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Claude_Bowes-Lyon' is missing the necessary class assignment to satisfy the ':Ancestor' constraint for the 'hasFather' relationship.
+      The node Infanta_Beatriz_of_Spain is assigned the class :Woman but does not have the required class :Ancestor to satisfy the :hasMother property constraints for Don_Marco_Alfonso_Torlonia.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Ancestor' to the node 'Claude_Bowes-Lyon'.
+      AssignClass(Infanta_Beatriz_of_Spain, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Claude_Bowes-Lyon' currently lacks the ':Ancestor' class, which is a mandatory requirement for any node acting as a value for the 'hasFather' property.
+      The node King_Alfonso_XIII_of_Spain is assigned the class :Man but does not have the required class :Ancestor to satisfy the :hasFather property constraints for Infanta_Beatriz_of_Spain.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Ancestor' to the node 'Claude_Bowes-Lyon'.
+      AssignClass(King_Alfonso_XIII_of_Spain, :Ancestor)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alessandro_Torlonia is missing the mandatory :Ancestor class required for the :hasFather property of Don_Marco_Alfonso_Torlonia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alessandro_Torlonia, :Ancestor)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Infanta_Beatriz_of_Spain is missing the mandatory :Ancestor class required for the :hasMother property of Don_Marco_Alfonso_Torlonia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Infanta_Beatriz_of_Spain, :Ancestor)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Olimpia is missing the mandatory :Ancestor class required for the :hasMother property of Princess_Sibilla_of_Luxembourg.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Olimpia, :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node King_Alfonso_XIII_of_Spain is missing the mandatory :Ancestor class required for the :hasFather property of Infanta_Beatriz_of_Spain.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(King_Alfonso_XIII_of_Spain, :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alessandro_Torlonia is missing the mandatory :Ancestor class required for the :hasFather property of Don_Marco_Alfonso_Torlonia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alessandro_Torlonia, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Infanta_Beatriz_of_Spain is missing the mandatory :Ancestor class required for the :hasMother property of Don_Marco_Alfonso_Torlonia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Infanta_Beatriz_of_Spain, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Olimpia is missing the mandatory :Ancestor class required for the :hasMother property of Princess_Sibilla_of_Luxembourg.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Olimpia, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node King_Alfonso_XIII_of_Spain is missing the mandatory :Ancestor class required for the :hasFather property of Infanta_Beatriz_of_Spain.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(King_Alfonso_XIII_of_Spain, :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Olimpia is missing the mandatory :Ancestor class required for the :hasMother property of Princess_Sibilla_of_Luxembourg.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Olimpia, :Ancestor)
 
 
 
@@ -646,11 +721,41 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (60f52404-15b2-46e3-aa9e-f2aedda2d280)
- Call ID: 60f52404-15b2-46e3-aa9e-f2aedda2d280
+  AssignClass (8cc2ae11-0220-4320-8286-359802535a78)
+ Call ID: 8cc2ae11-0220-4320-8286-359802535a78
   Args:
     type: :Ancestor
-    source: Claude_Bowes-Lyon
+    source: Alessandro_Torlonia
+  AssignClass (af9dd659-d91a-4e36-8c28-f8e8cecec669)
+ Call ID: af9dd659-d91a-4e36-8c28-f8e8cecec669
+  Args:
+    type: :Ancestor
+    source: Infanta_Beatriz_of_Spain
+  AssignClass (38a7a499-84c1-40ff-9ebc-518819777207)
+ Call ID: 38a7a499-84c1-40ff-9ebc-518819777207
+  Args:
+    source: King_Alfonso_XIII_of_Spain
+    type: :Ancestor
+  AssignClass (2838b7ad-1be7-47e0-ba9b-190098881157)
+ Call ID: 2838b7ad-1be7-47e0-ba9b-190098881157
+  Args:
+    source: Olimpia
+    type: :Ancestor
+  Finish (0131bc2e-4051-4f7b-bc12-f82db0a09fd3)
+ Call ID: 0131bc2e-4051-4f7b-bc12-f82db0a09fd3
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -659,42 +764,43 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Mary_Frances_Elphinstone a :Person,
+  data:Don_Marco_Alfonso_Torlonia a :Man ;
+      :hasBirthYear 1937 ;
+      :hasDeathYear 2014 ;
+      :hasFather data:Alessandro_Torlonia ;
+      :hasMother data:Infanta_Beatriz_of_Spain ;
+      :hasSister data:Olimpia .
+
+  data:King_Juan_Carlos_I_of_Spain a :Man .
+
+  data:Princess_Sibilla_of_Luxembourg a :Woman ;
+      :hasMother data:Olimpia .
+
+  data:Alessandro_Torlonia a :Ancestor,
+          :Man .
+
+  data:Infanta_Beatriz_of_Spain a :Ancestor,
           :Woman ;
-      :hasBirthYear 1883 ;
-      :hasDeathYear 1961 ;
-      :hasFather data:Claude_Bowes-Lyon ;
-      :hasMarriageYear 1910 ;
-      :hasRelation data:Sidney_Elphinstone ;
-      :hasSister data:Elizabeth_Bowes-Lyon ;
-      :isAuntOf data:Queen_Elizabeth_II .
+      :hasFather data:King_Alfonso_XIII_of_Spain .
 
-  data:Philip_Mountbatten a :Man,
-          :Person .
+  data:King_Alfonso_XIII_of_Spain a :Ancestor,
+          :Man .
 
-  data:Claude_Bowes-Lyon a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Elizabeth_Bowes-Lyon a :Person,
+  data:Olimpia a :Ancestor,
           :Woman .
 
-  data:Queen_Elizabeth_II a :Person,
-          :Woman .
-
-  data:Sidney_Elphinstone a :Man,
-          :Person ;
-      :hasBirthYear 1869 ;
-      :hasDeathYear 1955 .
 
 
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (ee900ad3-19e9-4380-8f53-85aa7ef49114)
- Call ID: ee900ad3-19e9-4380-8f53-85aa7ef49114
+  ValidateShacl (13719726-5d22-48de-971c-289b9f472261)
+ Call ID: 13719726-5d22-48de-971c-289b9f472261
   Args:
 
 ================================= Tool Message =================================
@@ -705,6 +811,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5797528b-0611-449c-ac03-758acd73c4f6)
- Call ID: 5797528b-0611-449c-ac03-758acd73c4f6
+  Finish (33891157-ea6a-4387-9161-cc1fe04dc4b4)
+ Call ID: 33891157-ea6a-4387-9161-cc1fe04dc4b4
   Args:

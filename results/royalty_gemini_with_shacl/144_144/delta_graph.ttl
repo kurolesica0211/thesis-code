@@ -2,38 +2,61 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Count_Henrik_of_Monpezat a :Man,
+data:Christoph_of_Hesse a :Man,
         :Person ;
-    :formerlyKnownAs "Prince Henrik of Denmark"^^xsd:string ;
-    :hasBirthYear "2009"^^xsd:int ;
-    :hasFather data:Prince_Joachim ;
-    :hasMother data:Princess_Marie ;
-    :hasSex data:Male ;
-    :knownAs "Count Henrik of Monpezat"^^xsd:string .
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1943 ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1930 ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasRelation data:Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse .
 
-data:King_Frederik_X a :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Prince_Henrik a :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Queen_Margrethe_II a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Prince_Joachim a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Princess_Marie a :Ancestor,
+data:Alice_of_Battenberg a :Ancestor,
         :Person,
+        :Woman .
+
+data:Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person .
+
+data:Frederick_Charles_of_Hesse a :Ancestor,
+        :Man,
+        :Person .
+
+data:Friedrich_Wilhelm_of_Hesse a :Man,
+        :Person .
+
+data:George_William_of_Hanover a :Man,
+        :Person .
+
+data:Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Maximilian_of_Hesse a :Man,
+        :Person .
+
+data:Philip_Duke_of_Edinburgh a :Man,
+        :Person .
+
+data:Philipp_of_Hesse a :Man,
+        :Person .
+
+data:Richard_of_Hesse a :Man,
+        :Person .
+
+data:Sophie_of_Greece_and_Denmark a :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasFather data:Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasRelation data:George_William_of_Hanover ;
+    :isSiblingOf data:Philip_Duke_of_Edinburgh .
 
-data:Female a :Sex .
-
-data:Male a :Sex .
+data:Wolfgang_of_Hesse a :Man,
+        :Person .
 

@@ -1,0 +1,338 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Pieter_van_Vollenhoven a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Pieter van Vollenhoven"^^xsd:string ;
+    data:posIndicesFull "2002:2024"^^xsd:string,
+        "256:278"^^xsd:string ;
+    data:posIndicesPart "1449:1460"^^xsd:string,
+        "1783:1794"^^xsd:string,
+        "1839:1850"^^xsd:string,
+        "501:512"^^xsd:string,
+        "543:549"^^xsd:string,
+        "583:594"^^xsd:string,
+        "889:900"^^xsd:string ;
+    data:wdtLink wdt:Q301365 ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasChild data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :hasRelation data:Pieter_van_Vollenhoven,
+        data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isAncestorOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isFatherOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isParentOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isSiblingOf data:Pieter_van_Vollenhoven ;
+    :isUncleOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Juliana of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "1622:1635"^^xsd:string,
+        "1628:1635"^^xsd:string ;
+    data:posIndicesPart "2287:2298"^^xsd:string ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Juliana der Nederlanden"^^xsd:string,
+        "Julijana"^^xsd:string,
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Princess Juliana of the Netherlands"^^xsd:string,
+        "Queen Juliana"^^xsd:string,
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Juliana of the Netherlands"^^xsd:string ;
+    :hasChild data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Maurits_of_Orange-Nassau-Vollenhoven,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Juliana_of_the_Netherlands ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands,
+        data:Prince_Maurits_of_Orange-Nassau-Vollenhoven,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isAuntOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isBloodrelationOf data:Juliana_of_the_Netherlands ;
+    :isMotherOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isSiblingOf data:Juliana_of_the_Netherlands ;
+    :isSisterOf data:Juliana_of_the_Netherlands .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Bernhard of Lippe-Biesterfeld"^^xsd:string ;
+    data:posIndicesFull "1640:1674"^^xsd:string ;
+    data:posIndicesPart "1817:1822"^^xsd:string,
+        "1823:1834"^^xsd:string,
+        "2273:2279"^^xsd:string,
+        "2326:2332"^^xsd:string ;
+    data:wdtLink wdt:Q57304 ;
+    :alsoKnownAs "B. van Lippe Biesterfeld"^^xsd:string,
+        "Bernhard of Lippe-Biesterfeld"^^xsd:string,
+        "Bernhard zur Lippe-Biesterfeld"^^xsd:string,
+        "Bernhard, Prince Consort of the Netherlands"^^xsd:string,
+        "Prince Bernhard of the Netherlands"^^xsd:string,
+        "Prince Bernhard, Prince Consort of the Netherlands"^^xsd:string,
+        "Z.K.H. Prins Bernhard"^^xsd:string ;
+    :hasBrother data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasChild data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Maurits_of_Orange-Nassau-Vollenhoven,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands,
+        data:Prince_Maurits_of_Orange-Nassau-Vollenhoven,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isBloodrelationOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isFatherOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isUncleOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands .
+
+data:Prince_Maurits_of_Orange-Nassau-Vollenhoven a :Man,
+        :Person ;
+    rdfs:label "Prince Maurits of Orange-Nassau-Vollenhoven"^^xsd:string ;
+    data:posIndicesFull "64:134"^^xsd:string,
+        "71:134"^^xsd:string ;
+    data:posIndicesPart "1063:1070"^^xsd:string,
+        "1218:1225"^^xsd:string,
+        "1306:1312"^^xsd:string,
+        "1449:1460"^^xsd:string,
+        "1783:1794"^^xsd:string,
+        "1839:1850"^^xsd:string,
+        "2273:2279"^^xsd:string,
+        "2326:2332"^^xsd:string,
+        "2336:2342"^^xsd:string,
+        "2343:2349"^^xsd:string,
+        "297:304"^^xsd:string,
+        "390:396"^^xsd:string,
+        "501:512"^^xsd:string,
+        "583:594"^^xsd:string,
+        "731:737"^^xsd:string,
+        "889:900"^^xsd:string ;
+    data:wdtLink wdt:Q4992674 ;
+    :alsoKnownAs "Maurits Willem Pieter Hendrik of Orange-Nassau, van Vollenhoven"^^xsd:string,
+        "Maurits of Orange-Nassau, van Vollenhoven"^^xsd:string,
+        "Prince Maurits Willem Pieter Hendrik of Orange-Nassau, van Vollenhoven"^^xsd:string ;
+    :hasAncestor data:Juliana_of_the_Netherlands,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasBrother data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet_of_the_Netherlands ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasRelation data:Juliana_of_the_Netherlands,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Maurits_of_Orange-Nassau-Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isBrotherOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isChildOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isSonOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet_of_the_Netherlands .
+
+data:Beatrix_of_the_Netherlands a :Person,
+        :Woman ;
+    rdfs:label "Beatrix of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "1892:1905"^^xsd:string ;
+    data:posIndicesPart "2287:2298"^^xsd:string ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau"^^xsd:string,
+        "Beatrix Wilhelmina Armgard"^^xsd:string,
+        "Beatrix der Nederlanden"^^xsd:string,
+        "Beatrix of Orange"^^xsd:string,
+        "Beatrix van Oranje"^^xsd:string,
+        "Princess Beatrix of Orange-Nassau"^^xsd:string,
+        "Princess Beatrix of the Netherlands"^^xsd:string,
+        "Queen Beatrix"^^xsd:string ;
+    :hasAncestor data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isAuntOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isBloodrelationOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands .
+
+data:Princess_Christina_of_the_Netherlands a :Person,
+        :Woman ;
+    rdfs:label "Princess Christina of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "351:388"^^xsd:string,
+        "360:388"^^xsd:string ;
+    data:posIndicesPart "1200:1211"^^xsd:string,
+        "1980:1988"^^xsd:string,
+        "2287:2298"^^xsd:string,
+        "2401:2409"^^xsd:string,
+        "637:648"^^xsd:string,
+        "676:687"^^xsd:string ;
+    data:wdtLink wdt:Q435324 ;
+    :alsoKnownAs "Christina of the Netherlands"^^xsd:string,
+        "Christina van Lippe-Biesterfeld"^^xsd:string,
+        "Christina van Oranje"^^xsd:string,
+        "Maria Christina of the Netherlands"^^xsd:string,
+        "Maria Christina van Oranje-Nassau"^^xsd:string,
+        "Princess Maria Christina of the Netherlands"^^xsd:string,
+        "Princess Marijke"^^xsd:string ;
+    :hasAncestor data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isAuntOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isBloodrelationOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands .
+
+data:Princess_Margriet_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Margriet of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "215:251"^^xsd:string,
+        "224:251"^^xsd:string ;
+    data:posIndicesPart "1200:1211"^^xsd:string,
+        "1980:1988"^^xsd:string,
+        "1989:1997"^^xsd:string,
+        "2287:2298"^^xsd:string,
+        "2401:2409"^^xsd:string,
+        "637:648"^^xsd:string,
+        "676:687"^^xsd:string ;
+    data:wdtLink wdt:Q268821 ;
+    :alsoKnownAs "Margriet Francisca  of the Netherlands"^^xsd:string,
+        "Margriet Francisca van Oranje-Nassau"^^xsd:string,
+        "Margriet of the Netherlands"^^xsd:string,
+        "Margriet van Oranje"^^xsd:string,
+        "Princess Margriet Francisca of the Netherlands"^^xsd:string ;
+    :hasAncestor data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasChild data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Prince_Maurits_of_Orange-Nassau-Vollenhoven,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :hasSon data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isAncestorOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isAuntOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isBloodrelationOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isMotherOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isParentOf data:Prince_Maurits_of_Orange-Nassau-Vollenhoven ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands .
+

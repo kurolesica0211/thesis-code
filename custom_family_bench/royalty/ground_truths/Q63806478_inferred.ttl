@@ -1,0 +1,125 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Elizabeth_Cator a :Person,
+        :Woman ;
+    rdfs:label "Elizabeth Cator"^^xsd:string ;
+    data:posIndicesFull "527:551"^^xsd:string ;
+    data:posIndicesPart "621:626"^^xsd:string,
+        "663:672"^^xsd:string ;
+    data:wdtLink wdt:Q75240065 ;
+    :alsoKnownAs "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth Margaret Bowes-Lyon"^^xsd:string,
+        "Elizabeth Margaret Cator"^^xsd:string ;
+    :hasRelation data:Elizabeth_Cator ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_Cator ;
+    :isBloodrelationOf data:Elizabeth_Cator ;
+    :isSiblingOf data:Elizabeth_Cator ;
+    :isSisterOf data:Elizabeth_Cator .
+
+data:Michael_Bowes-Lyon a :Man,
+        :Person ;
+    rdfs:label "Michael Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "0:34"^^xsd:string ;
+    data:posIndicesPart "204:209"^^xsd:string,
+        "210:214"^^xsd:string,
+        "284:289"^^xsd:string,
+        "290:294"^^xsd:string,
+        "340:345"^^xsd:string,
+        "346:350"^^xsd:string,
+        "422:427"^^xsd:string,
+        "428:432"^^xsd:string,
+        "508:513"^^xsd:string,
+        "514:518"^^xsd:string,
+        "724:729"^^xsd:string,
+        "730:734"^^xsd:string,
+        "817:822"^^xsd:string,
+        "823:827"^^xsd:string ;
+    data:wdtLink wdt:Q63806478 ;
+    :alsoKnownAs "Hon. Michael Bowes-Lyon"^^xsd:string,
+        "Hon. Michael Claude Hamilton Bowes-Lyon"^^xsd:string,
+        "Michael Claude Hamilton Bowes-Lyon"^^xsd:string ;
+    :hasBrother data:Michael_Bowes-Lyon ;
+    :hasRelation data:Michael_Bowes-Lyon ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Michael_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Bowes-Lyon ;
+    :isSiblingOf data:Michael_Bowes-Lyon .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "118:133"^^xsd:string,
+        "134:150"^^xsd:string,
+        "173:188"^^xsd:string ;
+    data:posIndicesPart "663:672"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasRelation data:Elizabeth_II,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAncestorOf data:Elizabeth_II ;
+    :isAuntOf data:Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "173:191"^^xsd:string,
+        "179:191"^^xsd:string ;
+    data:posIndicesPart "663:672"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasAncestor data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:Elizabeth_II,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+

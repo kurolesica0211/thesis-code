@@ -2,37 +2,34 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Nicholas_Michael_de_Roumanie_Medforth-Mills a :Man ;
+data:Crown_Princess_Margareta_of_Romania a :Person,
+        :Woman ;
+    :hasFather data:King_Michael_I_of_Romania ;
+    :hasMother data:Queen_Anne_of_Romania .
+
+data:Nicholas_Michael_de_Roumanie_Medforth-Mills a :Man,
+        :Person ;
     :formerlyKnownAs "Prince Nicholas of Romania"^^xsd:string ;
+    :hasBirthYear 1985 ;
     :hasFather data:Robin_Medforth-Mills ;
+    :hasMarriageYear 2017 ;
     :hasMother data:Princess_Elena_of_Romania ;
-    :hasRelation data:Alina-Maria_Binder ;
-    :isFatherOf data:Unnamed_Daughter_of_Nicholas_and_Nicoleta_C%C3%AErjan ;
-    :knownAs "Nicholas Michael de Roumanie Medforth-Mills"^^xsd:string .
+    :hasRelation data:Alina-Maria_Binder .
 
-data:Nicoleta_C%C3%AErjan a :Woman ;
-    :isMotherOf data:Unnamed_Daughter_of_Nicholas_and_Nicoleta_C%C3%AErjan .
+data:Alina-Maria_Binder a :Person,
+        :Woman .
 
-data:Alina-Maria_Binder a :Woman .
-
-data:Robin_Medforth-Mills a :Man .
-
-data:Crown_Princess_Margareta_of_Romania a :Woman ;
+data:Princess_Elena_of_Romania a :Person,
+        :Woman ;
     :hasFather data:King_Michael_I_of_Romania ;
-    :hasMother data:Queen_Anne ;
-    :isSisterOf data:Princess_Elena_of_Romania .
+    :hasMother data:Queen_Anne_of_Romania .
 
-data:King_Michael_I_of_Romania a :Man ;
-    :isFatherOf data:Crown_Princess_Margareta_of_Romania,
-        data:Princess_Elena_of_Romania .
+data:Robin_Medforth-Mills a :Man,
+        :Person .
 
-data:Queen_Anne a :Woman ;
-    :isMotherOf data:Crown_Princess_Margareta_of_Romania,
-        data:Princess_Elena_of_Romania .
+data:King_Michael_I_of_Romania a :Man,
+        :Person .
 
-data:Unnamed_Daughter_of_Nicholas_and_Nicoleta_C%C3%AErjan a :Woman .
-
-data:Princess_Elena_of_Romania a :Woman ;
-    :hasFather data:King_Michael_I_of_Romania ;
-    :hasMother data:Queen_Anne .
+data:Queen_Anne_of_Romania a :Person,
+        :Woman .
 

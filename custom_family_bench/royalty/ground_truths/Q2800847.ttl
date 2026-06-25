@@ -7,168 +7,77 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Andrew of Greece and Denmark" ;
-    data:posIndicesFull "9004:9041",
-        "9013:9041",
-        "9060:9095",
-        "9067:9095" ;
-    data:posIndicesPart "10168:10174",
-        "10179:10186",
-        "10198:10204",
-        "10251:10257",
-        "10846:10852",
-        "11101:11107",
-        "11275:11281",
-        "11464:11470",
-        "11577:11583",
-        "11713:11719",
-        "11961:11967",
-        "12083:12089",
-        "12307:12313",
-        "12481:12487",
-        "12806:12812",
-        "12855:12861",
-        "13245:13251",
-        "13513:13519",
-        "13562:13568",
-        "13644:13650",
-        "13743:13750",
-        "13772:13779",
-        "13797:13803",
-        "13894:13900",
-        "13918:13924",
-        "14077:14083",
-        "14109:14115",
-        "14417:14423",
-        "14721:14727",
-        "14744:14750",
-        "15359:15365",
-        "15376:15382",
-        "15582:15588",
-        "16322:16328",
-        "16507:16513",
-        "16541:16547",
-        "16785:16791",
-        "9148:9154",
-        "9376:9382",
-        "9679:9685" ;
-    data:wdtLink wdt:Q156531 ;
-    :alsoKnownAs "Andrew of Greece and Denmark" ;
-    :hasSex data:male ;
-    :isUncleOf data:Princess_Katherine_of_Greece_and_Denmark .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Michael_I_of_Romania a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Michael I of Romania" ;
-    data:posIndicesFull "11545:11559",
-        "11550:11559",
-        "6725:6739",
-        "6730:6739" ;
-    data:posIndicesPart "11381:11388" ;
-    data:wdtLink wdt:Q930013 ;
-    :alsoKnownAs "King Michael I",
-        "King Michael I of Romania",
-        "King Michael I of the Romanians",
-        "Michael I",
-        "Michael I of the Romanians" ;
+data:Prince_August_Wilhelm_of_Prussia a :Person ;
+    rdfs:label "Prince August Wilhelm of Prussia" ;
+    data:posIndicesFull "15975:15979" ;
+    data:posIndicesPart "16300:16306",
+        "16334:16340",
+        "16578:16584" ;
+    data:wdtLink wdt:Q58777 ;
+    :alsoKnownAs "Auwi" ;
+    :hasParent data:Wilhelm_II ;
     :hasSex data:male .
 
-data:Constantine_II_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Constantine II of Greece" ;
-    data:posIndicesFull "6511:6527",
-        "6516:6530",
-        "6611:6627",
-        "6616:6630" ;
-    data:posIndicesPart "10168:10174",
-        "13894:13900" ;
-    data:wdtLink wdt:Q151773 ;
-    :alsoKnownAs "Constantine 2 of Greece",
-        "Constantine Glucksburg",
-        "Constantine II",
-        "Constantino de Grecia",
-        "King Constantine",
-        "Konstantinos 2",
-        "Konstantinos II",
-        "Konstantinos II of Greece",
-        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
-        "Konstantínos 2",
-        "Konstantínos II" ;
-    :hasMother data:Frederica_of_Hanover ;
-    :hasParent data:Frederica_of_Hanover ;
-    :hasSex data:male ;
-    :isChildOf data:Frederica_of_Hanover ;
-    :isSonOf data:Frederica_of_Hanover .
+data:Prince_Sigismund_of_Prussia_1 a :Person ;
+    rdfs:label "Prince Sigismund of Prussia" ;
+    data:wdtLink wdt:Q2800847 ;
+    :alsoKnownAs "Franz Friedrich Sigismund",
+        "Prince Francis Frederick Sigismund of Prussia" ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasSex data:male .
 
-data:Princess_Feodora_of_Saxe-Meiningen_1 a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Feodora_of_Saxe-Meiningen_1 a :Person ;
     rdfs:label "Princess Feodora of Saxe-Meiningen" ;
     data:posIndicesFull "1773:1807",
         "1782:1807",
         "6095:6129",
         "6104:6129" ;
-    data:posIndicesPart "10016:10024",
-        "10148:10156",
-        "10287:10295",
-        "10480:10488",
-        "10497:10505",
-        "10575:10583",
-        "10759:10767",
-        "10823:10827",
-        "11237:11241",
-        "11337:11345",
-        "11480:11488",
-        "11593:11601",
-        "11642:11650",
-        "11729:11737",
-        "11778:11786",
-        "11908:11916",
-        "11925:11933",
-        "12063:12071",
-        "12290:12298",
-        "12461:12469",
-        "12521:12529",
-        "12538:12546",
-        "12889:12897",
-        "13216:13224",
-        "13313:13321",
-        "13357:13365",
-        "13529:13537",
-        "13660:13668",
-        "13693:13701",
-        "13813:13821",
-        "13846:13854",
-        "13934:13942",
-        "14040:14048",
-        "14144:14152",
-        "14383:14391",
-        "14625:14633",
-        "14900:14904",
-        "15324:15332",
-        "15400:15408",
-        "15420:15424",
-        "15508:15516",
-        "15525:15533",
-        "15544:15552",
-        "15929:15937",
-        "16023:16031",
-        "16333:16341",
-        "16763:16771",
+    data:posIndicesPart "10047:10055",
+        "10186:10194",
+        "10379:10387",
+        "10396:10404",
+        "10474:10482",
+        "10658:10666",
+        "10722:10726",
+        "11136:11140",
+        "11236:11244",
+        "11379:11387",
+        "11492:11500",
+        "11541:11549",
+        "11628:11636",
+        "11677:11685",
+        "11807:11815",
+        "11824:11832",
+        "11962:11970",
+        "12189:12197",
+        "12360:12368",
+        "12420:12428",
+        "12437:12445",
+        "12788:12796",
+        "13115:13123",
+        "13212:13220",
+        "13256:13264",
+        "13428:13436",
+        "13559:13567",
+        "13592:13600",
+        "13712:13720",
+        "13745:13753",
+        "13833:13841",
+        "13939:13947",
+        "14043:14051",
+        "14282:14290",
+        "14524:14532",
+        "14693:14697",
+        "15117:15125",
+        "15193:15201",
+        "15213:15217",
+        "15301:15309",
+        "15318:15326",
+        "15337:15345",
+        "15722:15730",
+        "15816:15824",
+        "16126:16134",
+        "16556:16564",
         "1896:1904",
         "2311:2319",
         "2554:2562",
@@ -179,6 +88,7 @@ data:Princess_Feodora_of_Saxe-Meiningen_1 a :Person,
         "3576:3580",
         "3670:3674",
         "5638:5646",
+        "6455:6463",
         "6570:6578",
         "6670:6678",
         "6758:6766",
@@ -194,113 +104,81 @@ data:Princess_Feodora_of_Saxe-Meiningen_1 a :Person,
         "8543:8551",
         "8754:8762",
         "8944:8952",
+        "9004:9012",
         "9115:9123",
         "9299:9307",
         "9345:9353",
         "9446:9454",
-        "9837:9841",
-        "9909:9917" ;
+        "9736:9740",
+        "9808:9816",
+        "9915:9923" ;
     data:wdtLink wdt:Q177769 ;
     :alsoKnownAs "Feodora Viktoria Auguste Marie Marianne of Saxe-Meiningen",
         "Feodora de Saxonia-Meiningen",
         "Feodora de Saxònia-Meiningen",
         "Feodora of Saxe-Meiningen",
         "Princess Feodora Viktoria Auguste Marie Marianne of Saxe-Meiningen" ;
-    :hasMother data:Princess_Charlotte_of_Prussia ;
     :hasParent data:Princess_Charlotte_of_Prussia ;
-    :hasSex data:female ;
-    :isChildOf data:Princess_Charlotte_of_Prussia ;
-    :isDaughterOf data:Princess_Charlotte_of_Prussia .
+    :hasSex data:female .
 
-data:Frederica_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Frederica of Hanover" ;
-    data:posIndicesFull "13758:13766",
-        "5105:5114",
-        "5714:5730",
-        "5721:5730",
-        "6455:6473",
-        "6464:6473",
-        "6464:6484",
-        "6783:6799",
-        "6790:6799",
-        "6881:6890" ;
-    data:wdtLink wdt:Q61351 ;
-    :alsoKnownAs "Fredericka",
-        "Friederike Luise von Griechenland",
-        "Princess Fredericka" ;
-    :hasChild data:Constantine_II_of_Greece ;
-    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasParent data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Constantine_II_of_Greece ;
-    :isChildOf data:Princess_Viktoria_Luise_of_Prussia ;
-    :isDaughterOf data:Princess_Viktoria_Luise_of_Prussia ;
-    :isMotherOf data:Constantine_II_of_Greece ;
-    :isParentOf data:Constantine_II_of_Greece .
-
-data:Princess_Katherine_of_Greece_and_Denmark a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Katherine_of_Greece_and_Denmark a :Person ;
     rdfs:label "Princess Katherine of Greece and Denmark" ;
     data:posIndicesFull "2002:2042",
         "6251:6291" ;
-    data:posIndicesPart "10016:10024",
-        "10148:10156",
-        "10168:10174",
-        "10179:10186",
-        "10287:10295",
-        "10480:10488",
-        "10497:10505",
-        "10575:10583",
-        "10759:10767",
-        "11337:11345",
-        "11480:11488",
-        "11593:11601",
-        "11642:11650",
-        "11729:11737",
-        "11778:11786",
-        "11908:11916",
-        "11925:11933",
-        "12063:12071",
-        "12290:12298",
-        "12461:12469",
-        "12521:12529",
-        "12538:12546",
-        "12889:12897",
-        "13216:13224",
-        "13313:13321",
-        "13357:13365",
-        "13529:13537",
-        "13660:13668",
-        "13693:13701",
-        "13743:13750",
-        "13772:13779",
-        "13813:13821",
-        "13846:13854",
-        "13894:13900",
-        "13934:13942",
-        "14040:14048",
-        "14144:14152",
-        "14383:14391",
-        "14625:14633",
-        "15324:15332",
-        "15400:15408",
-        "15508:15516",
-        "15525:15533",
-        "15544:15552",
-        "15929:15937",
-        "16023:16031",
-        "16333:16341",
-        "16763:16771",
+    data:posIndicesPart "10047:10055",
+        "10067:10073",
+        "10078:10085",
+        "10186:10194",
+        "10379:10387",
+        "10396:10404",
+        "10474:10482",
+        "10658:10666",
+        "11236:11244",
+        "11379:11387",
+        "11492:11500",
+        "11541:11549",
+        "11628:11636",
+        "11677:11685",
+        "11807:11815",
+        "11824:11832",
+        "11962:11970",
+        "12189:12197",
+        "12360:12368",
+        "12420:12428",
+        "12437:12445",
+        "12788:12796",
+        "13115:13123",
+        "13212:13220",
+        "13256:13264",
+        "13428:13436",
+        "13559:13567",
+        "13592:13600",
+        "13642:13649",
+        "13671:13678",
+        "13712:13720",
+        "13745:13753",
+        "13793:13799",
+        "13833:13841",
+        "13939:13947",
+        "14043:14051",
+        "14282:14290",
+        "14524:14532",
+        "15117:15125",
+        "15193:15201",
+        "15301:15309",
+        "15318:15326",
+        "15337:15345",
+        "15722:15730",
+        "15816:15824",
+        "16126:16134",
+        "16556:16564",
         "2141:2150",
         "2311:2319",
         "2554:2562",
         "3043:3051",
         "3163:3171",
         "5638:5646",
+        "6455:6463",
         "6570:6578",
         "6670:6678",
         "6758:6766",
@@ -318,206 +196,70 @@ data:Princess_Katherine_of_Greece_and_Denmark a :Person,
         "8543:8551",
         "8754:8762",
         "8944:8952",
+        "9004:9012",
+        "9023:9029",
+        "9034:9041",
+        "9077:9083",
+        "9088:9095",
         "9115:9123",
         "9299:9307",
         "9345:9353",
         "9446:9454",
-        "9909:9917" ;
+        "9808:9816",
+        "9915:9923" ;
     data:wdtLink wdt:Q242338 ;
     :alsoKnownAs "Lady Katherine Brandram",
         "Princess Aikaterini of Greece and Denmark" ;
-    :hasMother data:Sophia_of_Prussia ;
     :hasParent data:Sophia_of_Prussia ;
-    :hasSex data:female ;
-    :isAuntOf data:Constantine_II_of_Greece,
-        data:Michael_I_of_Romania ;
-    :isChildOf data:Sophia_of_Prussia ;
-    :isDaughterOf data:Sophia_of_Prussia .
+    :hasSex data:female .
 
-data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince August Wilhelm of Prussia" ;
-    data:posIndicesFull "16182:16186" ;
-    data:posIndicesPart "16507:16513",
-        "16541:16547",
-        "16785:16791" ;
-    data:wdtLink wdt:Q58777 ;
-    :alsoKnownAs "Auwi" ;
-    :hasFather data:Wilhelm_II ;
-    :hasParent data:Wilhelm_II ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Viktoria_Luise_of_Prussia ;
-    :isBrotherOf data:Princess_Viktoria_Luise_of_Prussia ;
-    :isChildOf data:Wilhelm_II ;
-    :isSiblingOf data:Princess_Viktoria_Luise_of_Prussia ;
-    :isSonOf data:Wilhelm_II ;
-    :isUncleOf data:Frederica_of_Hanover .
-
-data:Princess_Viktoria_Luise_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Viktoria Luise of Prussia" ;
-    data:posIndicesFull "6417:6452",
-        "6426:6452" ;
-    data:posIndicesPart "10016:10024",
-        "10148:10156",
-        "10287:10295",
-        "10480:10488",
-        "10497:10505",
-        "10575:10583",
-        "10759:10767",
-        "11337:11345",
-        "11480:11488",
-        "11593:11601",
-        "11642:11650",
-        "11729:11737",
-        "11778:11786",
-        "11908:11916",
-        "11925:11933",
-        "12063:12071",
-        "12290:12298",
-        "12461:12469",
-        "12521:12529",
-        "12538:12546",
-        "12889:12897",
-        "13216:13224",
-        "13313:13321",
-        "13357:13365",
-        "13529:13537",
-        "13660:13668",
-        "13693:13701",
-        "13813:13821",
-        "13846:13854",
-        "13934:13942",
-        "14040:14048",
-        "14144:14152",
-        "14383:14391",
-        "14625:14633",
-        "15324:15332",
-        "15400:15408",
-        "15508:15516",
-        "15525:15533",
-        "15544:15552",
-        "15929:15937",
-        "16023:16031",
-        "16333:16341",
-        "16763:16771",
-        "7175:7183",
-        "7642:7650",
-        "7936:7944",
-        "8234:8242",
-        "8256:8264",
-        "8405:8413",
-        "8527:8535",
-        "8543:8551",
-        "8754:8762",
-        "8944:8952",
-        "9115:9123",
-        "9299:9307",
-        "9345:9353",
-        "9446:9454",
-        "9909:9917" ;
-    data:wdtLink wdt:Q57529 ;
-    :alsoKnownAs "Princess Victoria Louise Adelaide Matilda Charlotte of Prussia",
-        "Princess Victoria Louise of Prussia",
-        "Victoria Louise Adelaide Matilda",
-        "Viktoria Luise of Prussia",
-        "Viktoria Luise, Duchess Consort of Brunswick" ;
-    :hasBrother data:Prince_August_Wilhelm_of_Prussia ;
-    :hasChild data:Frederica_of_Hanover ;
-    :hasDaughter data:Frederica_of_Hanover ;
-    :hasFather data:Wilhelm_II ;
-    :hasParent data:Wilhelm_II ;
-    :hasSex data:female ;
-    :isChildOf data:Wilhelm_II ;
-    :isDaughterOf data:Wilhelm_II ;
-    :isMotherOf data:Frederica_of_Hanover ;
-    :isParentOf data:Frederica_of_Hanover ;
-    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isSisterOf data:Prince_August_Wilhelm_of_Prussia .
-
-data:Prince_Sigismund_of_Prussia_1 a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Sigismund of Prussia" ;
-    data:wdtLink wdt:Q2800847 ;
-    :alsoKnownAs "Franz Friedrich Sigismund",
-        "Prince Francis Frederick Sigismund of Prussia" ;
-    :hasBrother data:Wilhelm_II ;
-    :hasMother data:Victoria-_Princess_Royal ;
-    :hasParent data:Victoria-_Princess_Royal ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Charlotte_of_Prussia,
-        data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isBrotherOf data:Princess_Charlotte_of_Prussia,
-        data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :isChildOf data:Victoria-_Princess_Royal ;
-    :isSiblingOf data:Princess_Charlotte_of_Prussia,
-        data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :isSonOf data:Victoria-_Princess_Royal ;
-    :isUncleOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Feodora_of_Saxe-Meiningen_1,
-        data:Princess_Katherine_of_Greece_and_Denmark,
-        data:Princess_Viktoria_Luise_of_Prussia .
-
-data:Princess_Margaret_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Margaret_of_Prussia a :Person ;
     rdfs:label "Princess Margaret of Prussia" ;
-    data:posIndicesFull "12905:12924",
-        "14056:14075",
-        "14333:14337",
+    data:posIndicesFull "12804:12823",
+        "13955:13974",
+        "14232:14236",
         "5155:5159" ;
-    data:posIndicesPart "10016:10024",
-        "10148:10156",
-        "10287:10295",
-        "10480:10488",
-        "10497:10505",
-        "10575:10583",
-        "10759:10767",
-        "11337:11345",
-        "11480:11488",
-        "11593:11601",
-        "11642:11650",
-        "11729:11737",
-        "11778:11786",
-        "11908:11916",
-        "11925:11933",
-        "12063:12071",
-        "12290:12298",
-        "12461:12469",
-        "12521:12529",
-        "12538:12546",
-        "13216:13224",
-        "13313:13321",
-        "13322:13330",
-        "13357:13365",
-        "13454:13462",
-        "14383:14391",
-        "14625:14633",
-        "15324:15332",
-        "15400:15408",
-        "15508:15516",
-        "15525:15533",
-        "15544:15552",
-        "15929:15937",
-        "16023:16031",
-        "16333:16341",
-        "16763:16771",
+    data:posIndicesPart "10047:10055",
+        "10186:10194",
+        "10379:10387",
+        "10396:10404",
+        "10474:10482",
+        "10658:10666",
+        "11236:11244",
+        "11379:11387",
+        "11492:11500",
+        "11541:11549",
+        "11628:11636",
+        "11677:11685",
+        "11807:11815",
+        "11824:11832",
+        "11962:11970",
+        "12189:12197",
+        "12360:12368",
+        "12420:12428",
+        "12437:12445",
+        "13115:13123",
+        "13212:13220",
+        "13221:13229",
+        "13256:13264",
+        "13353:13361",
+        "14282:14290",
+        "14524:14532",
+        "15117:15125",
+        "15193:15201",
+        "15301:15309",
+        "15318:15326",
+        "15337:15345",
+        "15722:15730",
+        "15816:15824",
+        "16126:16134",
+        "16556:16564",
         "5638:5646",
         "5742:5749",
         "5836:5844",
         "6174:6182",
         "6335:6343",
+        "6455:6463",
         "6570:6578",
         "6670:6678",
         "6758:6766",
@@ -536,11 +278,13 @@ data:Princess_Margaret_of_Prussia a :Ancestor,
         "8543:8551",
         "8754:8762",
         "8944:8952",
+        "9004:9012",
         "9115:9123",
         "9299:9307",
         "9345:9353",
         "9446:9454",
-        "9909:9917" ;
+        "9808:9816",
+        "9915:9923" ;
     data:wdtLink wdt:Q61338 ;
     :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
         "Margaret of Prussia",
@@ -553,79 +297,134 @@ data:Princess_Margaret_of_Prussia a :Ancestor,
         "Princess Margaret Beatrice Feodora of Prussia",
         "Princess Margarethe Beatrice Feodora of Prussia",
         "Princess Margarethe of Prussia" ;
-    :hasBrother data:Prince_Sigismund_of_Prussia_1,
-        data:Wilhelm_II ;
-    :hasMother data:Victoria-_Princess_Royal ;
     :hasParent data:Victoria-_Princess_Royal ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Charlotte_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isAuntOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Feodora_of_Saxe-Meiningen_1,
-        data:Princess_Katherine_of_Greece_and_Denmark,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isChildOf data:Victoria-_Princess_Royal ;
-    :isDaughterOf data:Victoria-_Princess_Royal ;
-    :isSiblingOf data:Prince_Sigismund_of_Prussia_1,
-        data:Princess_Charlotte_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :isSisterOf data:Prince_Sigismund_of_Prussia_1,
-        data:Princess_Charlotte_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II .
+    :hasSex data:female .
 
-data:Princess_Charlotte_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Viktoria_Luise_of_Prussia a :Person ;
+    rdfs:label "Princess Viktoria Luise of Prussia" ;
+    data:posIndicesFull "6417:6452",
+        "6426:6452" ;
+    data:posIndicesPart "10047:10055",
+        "10186:10194",
+        "10379:10387",
+        "10396:10404",
+        "10474:10482",
+        "10658:10666",
+        "11236:11244",
+        "11379:11387",
+        "11492:11500",
+        "11541:11549",
+        "11628:11636",
+        "11677:11685",
+        "11807:11815",
+        "11824:11832",
+        "11962:11970",
+        "12189:12197",
+        "12360:12368",
+        "12420:12428",
+        "12437:12445",
+        "12788:12796",
+        "13115:13123",
+        "13212:13220",
+        "13256:13264",
+        "13428:13436",
+        "13559:13567",
+        "13592:13600",
+        "13712:13720",
+        "13745:13753",
+        "13833:13841",
+        "13939:13947",
+        "14043:14051",
+        "14282:14290",
+        "14524:14532",
+        "15117:15125",
+        "15193:15201",
+        "15301:15309",
+        "15318:15326",
+        "15337:15345",
+        "15722:15730",
+        "15816:15824",
+        "16126:16134",
+        "16556:16564",
+        "7175:7183",
+        "7642:7650",
+        "7936:7944",
+        "8234:8242",
+        "8256:8264",
+        "8405:8413",
+        "8527:8535",
+        "8543:8551",
+        "8754:8762",
+        "8944:8952",
+        "9004:9012",
+        "9115:9123",
+        "9299:9307",
+        "9345:9353",
+        "9446:9454",
+        "9808:9816",
+        "9915:9923" ;
+    data:wdtLink wdt:Q57529 ;
+    :alsoKnownAs "Princess Victoria Louise Adelaide Matilda Charlotte of Prussia",
+        "Princess Victoria Louise of Prussia",
+        "Victoria Louise Adelaide Matilda",
+        "Viktoria Luise of Prussia",
+        "Viktoria Luise, Duchess Consort of Brunswick" ;
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Charlotte_of_Prussia a :Person ;
     rdfs:label "Princess Charlotte of Prussia" ;
     data:posIndicesFull "1124:1153",
         "1133:1153" ;
-    data:posIndicesPart "10016:10024",
-        "10148:10156",
-        "10287:10295",
-        "10480:10488",
-        "10497:10505",
-        "10575:10583",
-        "10759:10767",
-        "11337:11345",
-        "11480:11488",
-        "11593:11601",
-        "11642:11650",
-        "11729:11737",
-        "11778:11786",
-        "11908:11916",
-        "11925:11933",
-        "12063:12071",
-        "12290:12298",
-        "12461:12469",
-        "12521:12529",
-        "12538:12546",
-        "12889:12897",
-        "13216:13224",
-        "13313:13321",
-        "13357:13365",
-        "13529:13537",
-        "13660:13668",
-        "13693:13701",
-        "13813:13821",
-        "13846:13854",
-        "13934:13942",
-        "14040:14048",
-        "14144:14152",
-        "14383:14391",
-        "14625:14633",
+    data:posIndicesPart "10047:10055",
+        "10186:10194",
+        "10379:10387",
+        "10396:10404",
+        "10474:10482",
+        "10658:10666",
+        "11236:11244",
+        "11379:11387",
+        "11492:11500",
+        "11541:11549",
+        "11628:11636",
+        "11677:11685",
+        "11807:11815",
+        "11824:11832",
+        "11962:11970",
+        "12189:12197",
+        "12360:12368",
+        "12420:12428",
+        "12437:12445",
+        "12788:12796",
+        "13115:13123",
+        "13212:13220",
+        "13256:13264",
+        "13428:13436",
+        "13559:13567",
+        "13592:13600",
+        "13712:13720",
+        "13745:13753",
+        "13833:13841",
+        "13939:13947",
+        "14043:14051",
+        "14282:14290",
+        "14524:14532",
         "1494:1502",
-        "15324:15332",
-        "15400:15408",
-        "15508:15516",
-        "15525:15533",
-        "15544:15552",
-        "15929:15937",
-        "16023:16031",
-        "16333:16341",
-        "16763:16771",
+        "15117:15125",
+        "15193:15201",
+        "15301:15309",
+        "15318:15326",
+        "15337:15345",
+        "15722:15730",
+        "15816:15824",
+        "16126:16134",
+        "16556:16564",
         "1833:1841",
         "1842:1851",
         "1896:1904",
@@ -639,6 +438,7 @@ data:Princess_Charlotte_of_Prussia a :Ancestor,
         "6174:6182",
         "6183:6192",
         "6335:6343",
+        "6455:6463",
         "6570:6578",
         "6670:6678",
         "6758:6766",
@@ -656,45 +456,22 @@ data:Princess_Charlotte_of_Prussia a :Ancestor,
         "8543:8551",
         "8754:8762",
         "8944:8952",
+        "9004:9012",
         "9115:9123",
         "9299:9307",
         "9345:9353",
         "9446:9454",
-        "9909:9917" ;
+        "9808:9816",
+        "9915:9923" ;
     data:wdtLink wdt:Q58670 ;
     :alsoKnownAs "Charlotte of Prussia",
         "Duchess Charlotte, Duchess Consort of Saxe-Meiningen",
         "Princess Victoria Elizabeth Augusta Charlotte of Prussia",
         "Victoria Elizabeth Augusta Charlotte of Prussia" ;
-    :hasBrother data:Prince_Sigismund_of_Prussia_1,
-        data:Wilhelm_II ;
-    :hasChild data:Princess_Feodora_of_Saxe-Meiningen_1 ;
-    :hasDaughter data:Princess_Feodora_of_Saxe-Meiningen_1 ;
-    :hasMother data:Victoria-_Princess_Royal ;
     :hasParent data:Victoria-_Princess_Royal ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isAuntOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Katherine_of_Greece_and_Denmark,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isChildOf data:Victoria-_Princess_Royal ;
-    :isDaughterOf data:Victoria-_Princess_Royal ;
-    :isMotherOf data:Princess_Feodora_of_Saxe-Meiningen_1 ;
-    :isParentOf data:Princess_Feodora_of_Saxe-Meiningen_1 ;
-    :isSiblingOf data:Prince_Sigismund_of_Prussia_1,
-        data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :isSisterOf data:Prince_Sigismund_of_Prussia_1,
-        data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II .
+    :hasSex data:female .
 
-data:Sophia_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Sophia_of_Prussia a :Person ;
     rdfs:label "Sophia of Prussia" ;
     data:posIndicesFull "2111:2133",
         "6579:6596",
@@ -703,37 +480,41 @@ data:Sophia_of_Prussia a :Ancestor,
     data:wdtLink wdt:Q155822 ;
     :alsoKnownAs "Queen Sophia of Greece",
         "Queen Sophia, Queen Consort of Greece" ;
-    :hasBrother data:Prince_Sigismund_of_Prussia_1,
-        data:Wilhelm_II ;
-    :hasChild data:Princess_Katherine_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Katherine_of_Greece_and_Denmark ;
-    :hasMother data:Victoria-_Princess_Royal ;
     :hasParent data:Victoria-_Princess_Royal ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Charlotte_of_Prussia,
-        data:Princess_Margaret_of_Prussia ;
-    :isAuntOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Feodora_of_Saxe-Meiningen_1,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isChildOf data:Victoria-_Princess_Royal ;
-    :isDaughterOf data:Victoria-_Princess_Royal ;
-    :isMotherOf data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isParentOf data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isSiblingOf data:Prince_Sigismund_of_Prussia_1,
-        data:Princess_Charlotte_of_Prussia,
-        data:Princess_Margaret_of_Prussia,
-        data:Wilhelm_II ;
-    :isSisterOf data:Prince_Sigismund_of_Prussia_1,
-        data:Princess_Charlotte_of_Prussia,
-        data:Princess_Margaret_of_Prussia,
-        data:Wilhelm_II .
+    :hasSex data:female .
 
-data:Victoria-_Princess_Royal a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "1086:1096",
+        "1653:1663",
+        "221:246",
+        "236:246",
+        "5966:5976",
+        "6389:6414",
+        "6404:6414",
+        "6966:6983",
+        "6973:6983" ;
+    data:posIndicesPart "5731:5738" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:Victoria-_Princess_Royal a :Person ;
     rdfs:label "Victoria, Princess Royal" ;
-    data:posIndicesFull "16043:16060",
+    data:posIndicesFull "15836:15853",
         "284:301",
         "3649:3666",
         "3790:3807",
@@ -746,83 +527,82 @@ data:Victoria-_Princess_Royal a :Ancestor,
         "8845:8862",
         "9217:9234",
         "9316:9333",
-        "9809:9826" ;
-    data:posIndicesPart "10016:10024",
-        "10148:10156",
+        "9708:9725" ;
+    data:posIndicesPart "10047:10055",
+        "10186:10194",
         "1021:1029",
-        "10287:10295",
         "1035:1043",
+        "10368:10376",
+        "10379:10387",
+        "10396:10404",
         "1044:1049",
-        "10469:10477",
-        "10480:10488",
-        "10497:10505",
-        "10575:10583",
-        "10759:10767",
-        "11128:11133",
-        "11311:11319",
-        "11337:11345",
-        "11453:11461",
-        "11480:11488",
-        "11566:11574",
-        "11593:11601",
-        "11642:11650",
-        "11702:11710",
-        "11729:11737",
-        "11778:11786",
+        "10474:10482",
+        "10658:10666",
+        "11027:11032",
+        "11210:11218",
+        "11236:11244",
+        "11352:11360",
+        "11379:11387",
+        "11465:11473",
+        "11492:11500",
+        "11541:11549",
+        "11601:11609",
+        "11628:11636",
+        "11677:11685",
         "1179:1187",
-        "11908:11916",
-        "11925:11933",
-        "12063:12071",
-        "12223:12228",
-        "12290:12298",
-        "12461:12469",
-        "12521:12529",
-        "12538:12546",
-        "12654:12662",
-        "12793:12798",
-        "12889:12897",
-        "13084:13089",
-        "13188:13193",
-        "13216:13224",
-        "13287:13295",
-        "13313:13321",
-        "13357:13365",
+        "11807:11815",
+        "11824:11832",
+        "11962:11970",
+        "12122:12127",
+        "12189:12197",
+        "12360:12368",
+        "12420:12428",
+        "12437:12445",
+        "12553:12561",
+        "12692:12697",
+        "12788:12796",
+        "12983:12988",
+        "13087:13092",
+        "13115:13123",
+        "13186:13194",
+        "13212:13220",
+        "13256:13264",
         "1335:1343",
-        "13502:13510",
-        "13529:13537",
-        "13633:13641",
-        "13660:13668",
-        "13693:13701",
-        "13786:13794",
-        "13813:13821",
-        "13846:13854",
-        "13907:13915",
-        "13934:13942",
-        "14040:14048",
-        "14144:14152",
-        "14313:14321",
-        "14383:14391",
-        "14625:14633",
-        "14647:14652",
-        "14711:14719",
+        "13401:13409",
+        "13428:13436",
+        "13532:13540",
+        "13559:13567",
+        "13592:13600",
+        "13685:13693",
+        "13712:13720",
+        "13745:13753",
+        "13806:13814",
+        "13833:13841",
+        "13939:13947",
+        "14043:14051",
+        "14212:14220",
+        "14282:14290",
+        "14524:14532",
+        "14546:14551",
+        "14610:14618",
         "1480:1488",
         "1494:1502",
+        "14994:14999",
         "1503:1508",
-        "15201:15206",
+        "15117:15125",
+        "15141:15149",
+        "15193:15201",
         "1528:1536",
-        "15324:15332",
-        "15348:15356",
-        "15400:15408",
-        "15508:15516",
-        "15525:15533",
-        "15544:15552",
-        "15742:15750",
-        "15880:15888",
-        "15929:15937",
-        "15996:16004",
-        "16410:16415",
-        "16573:16581",
-        "16763:16771",
+        "15301:15309",
+        "15318:15326",
+        "15337:15345",
+        "15535:15543",
+        "15673:15681",
+        "15722:15730",
+        "15789:15797",
+        "16203:16208",
+        "16366:16374",
+        "16556:16564",
         "1691:1699",
         "1833:1841",
         "1859:1867",
@@ -872,7 +652,8 @@ data:Victoria-_Princess_Royal a :Ancestor,
         "8527:8535",
         "8543:8551",
         "8754:8762",
-        "9115:9123" ;
+        "9115:9123",
+        "9915:9923" ;
     data:wdtLink wdt:Q116728 ;
     :alsoKnownAs "Empress Frederick",
         "Empress Frederick of Germany",
@@ -891,80 +672,7 @@ data:Victoria-_Princess_Royal a :Ancestor,
         "Victoria, Empress of Germany",
         "Victoria, German Empress",
         "Victoria, Queen of Prussia and Empress of Germany" ;
-    :hasChild data:Prince_Sigismund_of_Prussia_1,
-        data:Princess_Charlotte_of_Prussia,
-        data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :hasDaughter data:Princess_Charlotte_of_Prussia,
-        data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Sigismund_of_Prussia_1,
-        data:Wilhelm_II ;
-    :isMotherOf data:Prince_Sigismund_of_Prussia_1,
-        data:Princess_Charlotte_of_Prussia,
-        data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :isParentOf data:Prince_Sigismund_of_Prussia_1,
-        data:Princess_Charlotte_of_Prussia,
-        data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II .
+    :hasSex data:female .
 
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelm II" ;
-    data:posIndicesFull "1086:1096",
-        "1653:1663",
-        "221:246",
-        "236:246",
-        "5966:5976",
-        "6389:6414",
-        "6404:6414",
-        "6966:6983",
-        "6973:6983" ;
-    data:posIndicesPart "5731:5738" ;
-    data:wdtLink wdt:Q2677 ;
-    :alsoKnownAs "Emperor Willlam",
-        "Frederick William Victor Albert of Prussia",
-        "Friedrich Wilhelm Emperor William II",
-        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
-        "Friedrich Wilhelm Viktor Albrecht von Preußen",
-        "German Emperor Wilhelm II",
-        "Kaiser Wilhelm II",
-        "Wilhelm II of Germany",
-        "Wilhelm II, German Emperor",
-        "Wilhelm II.",
-        "William II" ;
-    :hasBrother data:Prince_Sigismund_of_Prussia_1 ;
-    :hasChild data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasDaughter data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasMother data:Victoria-_Princess_Royal ;
-    :hasParent data:Victoria-_Princess_Royal ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Charlotte_of_Prussia,
-        data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :hasSon data:Prince_August_Wilhelm_of_Prussia ;
-    :isBrotherOf data:Prince_Sigismund_of_Prussia_1,
-        data:Princess_Charlotte_of_Prussia,
-        data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isChildOf data:Victoria-_Princess_Royal ;
-    :isFatherOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isParentOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isSiblingOf data:Prince_Sigismund_of_Prussia_1,
-        data:Princess_Charlotte_of_Prussia,
-        data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isSonOf data:Victoria-_Princess_Royal ;
-    :isUncleOf data:Princess_Feodora_of_Saxe-Meiningen_1,
-        data:Princess_Katherine_of_Greece_and_Denmark .
+data:female a :Female .
 

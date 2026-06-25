@@ -2,27 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Beatrix a :Person .
-
-data:Claus a :Man,
-        :Person .
-
-data:Eloise_van_Oranje a :Person ;
-    :alsoKnownAs "Eloise van Oranje"^^xsd:string ;
+data:Countess_Eloise_of_Orange-Nassau a :Person,
+        :Woman ;
     :hasBirthYear 2002 ;
-    :hasFather data:Constantijn ;
-    :hasMother data:Laurentien .
-
-data:Margriet a :Person .
+    :hasFather data:Prince_Constantijn ;
+    :hasMother data:Princess_Laurentien ;
+    :knownAs data:Eloise_van_Oranje .
 
 data:Pieter_van_Vollenhoven a :Man,
         :Person .
 
-data:Constantijn a :Ancestor,
+data:Princess_Margriet a :Person,
+        :Woman .
+
+data:Eloise_van_Oranje a :Person,
+        :Woman .
+
+data:Prince_Claus a :Ancestor,
         :Man,
         :Person .
 
-data:Laurentien a :Ancestor,
+data:Prince_Constantijn a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Prince_Claus ;
+    :hasMother data:Princess_Beatrix .
+
+data:Princess_Beatrix a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Laurentien a :Ancestor,
         :Person,
         :Woman .
 

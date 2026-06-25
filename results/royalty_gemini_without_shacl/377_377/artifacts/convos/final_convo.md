@@ -69,23 +69,26 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Berthold Prinz und Markgraf von Baden (24 February 1906 – 27 October 1963), styled Margrave of Baden and Duke of Zähringen, was the head of the House of Baden, which had reigned over the Grand Duchy of Baden until 1918, from 1929 until his death.
-He was the brother-in-law of Prince Philip, Duke of Edinburgh, through his marriage to Philip's sister, Princess Theodora of Greece and Denmark.
-Marriage and children
+John Alexander Elphinstone, 17th Lord Elphinstone and 3rd Baron Elphinstone (22 March 1914 – 15 November 1975) was a British nobleman and serviceman during World War II.
+He was a first cousin of Queen Elizabeth II.
+He was a son of Sidney Elphinstone, 16th Lord Elphinstone, and Lady Mary Bowes-Lyon.
+Andrew Charles Victor Elphinstone (the aide-de-camp to the Viceroy of India from 1941 to 1943) and the Hon.
+Margaret Elphinstone, wife of writer Denys Rhodes.
+His paternal grandparents were William Elphinstone, 15th Lord Elphinstone (the 1st Baron Elphinstone) and the former Lady Constance Euphemia Woronzow Murray (second daughter of Alexander Murray, 6th Earl of Dunmore).
+He was a nephew of Queen Elizabeth
+The Queen Mother and a first cousin of Queen Elizabeth II and Princess Margaret, Countess of Snowdon.
+Lord Elphinstone served as president of the Scottish Association of Boys' Clubs, chairman of council of the Scottish branch of British Red Cross Society, and president of the Royal Zoological Society of Scotland.
+Personal life
 
-The only son and younger child of Prince Maximilian, Margrave of Baden and Princess Marie Louise of Hanover, Berthold married his second cousin Princess Theodora of Greece and Denmark, daughter of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, on 17 August 1931 in Baden-Baden.
-Via his marriage, he was the brother-in-law of Prince Philip of Greece and Denmark, later Prince Philip, Duke of Edinburgh from November 1947.
-His bride was also his second cousin, through Christian IX of Denmark.
-Death
-
-Berthold died on 27 October 1963, aged 57, in Spaichingen.
-He was succeeded as titular margrave and head of house by his son Max.
+In 1970, during Manitoba's centennial, he was invited by the community of Elphinstone and gave a silver map case, which is today located at the Elphinstone post office, all named in his family's honor.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -101,39 +104,9 @@ He was succeeded as titular margrave and head of house by his son Max.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -148,6 +121,23 @@ He was succeeded as titular margrave and head of house by his son Max.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -165,6 +155,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -232,29 +237,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -263,6 +260,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -275,6 +280,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -283,17 +290,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -321,6 +330,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -336,149 +429,131 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0e6eb3ad-216a-4298-bbfb-aa896a1c0250)
- Call ID: 0e6eb3ad-216a-4298-bbfb-aa896a1c0250
+  AssignClass (a3047d35-cba5-4b50-857b-25401c14021d)
+ Call ID: a3047d35-cba5-4b50-857b-25401c14021d
   Args:
+    source: John Alexander Elphinstone
     type: :Man
-    source: Berthold
-  AssignClass (d58b6a72-e0d2-45ff-af5c-34a119db3cbf)
- Call ID: d58b6a72-e0d2-45ff-af5c-34a119db3cbf
+  AssignClass (48b7c025-c0cd-41dd-b0be-93d5e00431cc)
+ Call ID: 48b7c025-c0cd-41dd-b0be-93d5e00431cc
   Args:
-    type: :Person
-    source: Berthold
-  AddLiteral (65d762f9-65a4-4b44-9927-104cba85139b)
- Call ID: 65d762f9-65a4-4b44-9927-104cba85139b
+    source: Sidney Elphinstone
+    type: :Man
+  AssignClass (595c70b4-8242-4503-803d-b772660f4455)
+ Call ID: 595c70b4-8242-4503-803d-b772660f4455
   Args:
-    source: Berthold
-    literal_value: 1906
-    literal_type: xsd:integer
+    source: Lady Mary Bowes-Lyon
+    type: :Woman
+  AssignClass (fa727ad5-d50e-4b4f-9ce2-76fffc53ed64)
+ Call ID: fa727ad5-d50e-4b4f-9ce2-76fffc53ed64
+  Args:
+    source: Andrew Charles Victor Elphinstone
+    type: :Man
+  AssignClass (3b1d6c33-4f20-4c5f-8105-fd95b1147cf7)
+ Call ID: 3b1d6c33-4f20-4c5f-8105-fd95b1147cf7
+  Args:
+    source: Margaret Elphinstone
+    type: :Woman
+  AssignClass (84c98a9e-855f-438e-8269-fc748917a880)
+ Call ID: 84c98a9e-855f-438e-8269-fc748917a880
+  Args:
+    source: Denys Rhodes
+    type: :Man
+  AssignClass (03dd51f7-ece8-4dfe-9780-93e370cc6c72)
+ Call ID: 03dd51f7-ece8-4dfe-9780-93e370cc6c72
+  Args:
+    source: William Elphinstone
+    type: :Man
+  AssignClass (a77ddcd1-fb91-4629-8cd0-ad0cd6e4a371)
+ Call ID: a77ddcd1-fb91-4629-8cd0-ad0cd6e4a371
+  Args:
+    source: Lady Constance Euphemia Woronzow Murray
+    type: :Woman
+  AssignClass (116707ef-ee0d-4306-ab6f-5b70ffd2c63f)
+ Call ID: 116707ef-ee0d-4306-ab6f-5b70ffd2c63f
+  Args:
+    source: Alexander Murray
+    type: :Man
+  AddLiteral (e63202a2-9e7b-47e1-a236-7d1c77ffd872)
+ Call ID: e63202a2-9e7b-47e1-a236-7d1c77ffd872
+  Args:
+    literal_value: 1914
     relation: :hasBirthYear
-  AddLiteral (22655910-f497-416f-8897-31bea282b3b1)
- Call ID: 22655910-f497-416f-8897-31bea282b3b1
+    literal_type: xsd:integer
+    source: John Alexander Elphinstone
+  AddLiteral (0864e5b9-a2c6-4ed1-8e61-48023db550d6)
+ Call ID: 0864e5b9-a2c6-4ed1-8e61-48023db550d6
   Args:
-    literal_value: 1963
-    source: Berthold
+    literal_value: 1975
     relation: :hasDeathYear
     literal_type: xsd:integer
-  AssignClass (8efbc010-c449-4229-aebf-355aa8e98f0d)
- Call ID: 8efbc010-c449-4229-aebf-355aa8e98f0d
+    source: John Alexander Elphinstone
+  AddTriple (2c181714-155e-4426-ab73-95ad03e2674b)
+ Call ID: 2c181714-155e-4426-ab73-95ad03e2674b
   Args:
-    type: :Man
-    source: Maximilian
-  AssignClass (fe99961a-50ad-4e49-a22f-195a625bfa10)
- Call ID: fe99961a-50ad-4e49-a22f-195a625bfa10
-  Args:
-    type: :Person
-    source: Maximilian
-  AssignClass (b7806dab-5919-4fb5-acb3-67bf166217bb)
- Call ID: b7806dab-5919-4fb5-acb3-67bf166217bb
-  Args:
-    source: MarieLouise
-    type: :Woman
-  AssignClass (125d4109-5394-4909-afba-cde436fa8e7c)
- Call ID: 125d4109-5394-4909-afba-cde436fa8e7c
-  Args:
-    type: :Person
-    source: MarieLouise
-  AddTriple (9b28e192-6cb3-4b3a-ac46-5b2b6ac0bee9)
- Call ID: 9b28e192-6cb3-4b3a-ac46-5b2b6ac0bee9
-  Args:
-    source: Berthold
-    target: Maximilian
+    source: John Alexander Elphinstone
     relation: :hasFather
-  AddTriple (9df1d301-30b2-4aab-b008-ea018bb6fe55)
- Call ID: 9df1d301-30b2-4aab-b008-ea018bb6fe55
+    target: Sidney Elphinstone
+  AddTriple (3d6a83ea-c764-4cf5-bdf2-ddaa827ad11a)
+ Call ID: 3d6a83ea-c764-4cf5-bdf2-ddaa827ad11a
   Args:
-    source: Berthold
-    target: MarieLouise
     relation: :hasMother
-  AssignClass (f1ad94e8-f822-4ed0-b921-4d85e7d3ab26)
- Call ID: f1ad94e8-f822-4ed0-b921-4d85e7d3ab26
+    source: John Alexander Elphinstone
+    target: Lady Mary Bowes-Lyon
+  AddTriple (209826a8-4ef5-44d5-b47e-ce9777104c2a)
+ Call ID: 209826a8-4ef5-44d5-b47e-ce9777104c2a
   Args:
-    type: :Woman
-    source: Theodora
-  AssignClass (04cdb38b-17ce-4154-834c-28e57f33d104)
- Call ID: 04cdb38b-17ce-4154-834c-28e57f33d104
+    source: John Alexander Elphinstone
+    relation: :hasFather
+    target: Sidney Elphinstone
+  AddTriple (59cde47a-be5b-4274-9af3-aa0531dcbf98)
+ Call ID: 59cde47a-be5b-4274-9af3-aa0531dcbf98
   Args:
-    type: :Person
-    source: Theodora
-  AddTriple (4eb372c4-307a-488d-9546-384c4dbf96dc)
- Call ID: 4eb372c4-307a-488d-9546-384c4dbf96dc
+    relation: :hasFather
+    source: Andrew Charles Victor Elphinstone
+    target: Sidney Elphinstone
+  AddTriple (5918f1d8-7eff-4d88-b660-41394f427910)
+ Call ID: 5918f1d8-7eff-4d88-b660-41394f427910
   Args:
-    source: Berthold
-    target: Theodora
+    target: Lady Mary Bowes-Lyon
+    source: Andrew Charles Victor Elphinstone
+    relation: :hasMother
+  AddTriple (81b8fd7f-eb01-4496-b846-23d4e579d509)
+ Call ID: 81b8fd7f-eb01-4496-b846-23d4e579d509
+  Args:
+    relation: :hasFather
+    source: Margaret Elphinstone
+    target: Sidney Elphinstone
+  AddTriple (f8f6572c-be5c-44f6-ba43-c799c76862f1)
+ Call ID: f8f6572c-be5c-44f6-ba43-c799c76862f1
+  Args:
+    relation: :hasMother
+    source: Margaret Elphinstone
+    target: Lady Mary Bowes-Lyon
+  AddTriple (926a5564-fef7-44e9-ac76-62dfb6264d43)
+ Call ID: 926a5564-fef7-44e9-ac76-62dfb6264d43
+  Args:
+    target: William Elphinstone
+    relation: :hasFather
+    source: Sidney Elphinstone
+  AddTriple (b2c452ac-91e4-4816-ae2f-306825c873e0)
+ Call ID: b2c452ac-91e4-4816-ae2f-306825c873e0
+  Args:
+    relation: :hasMother
+    source: Sidney Elphinstone
+    target: Lady Constance Euphemia Woronzow Murray
+  AddTriple (b1c4ee1b-17b3-4f4e-accf-1fd827cab7c9)
+ Call ID: b1c4ee1b-17b3-4f4e-accf-1fd827cab7c9
+  Args:
+    relation: :hasFather
+    source: Lady Constance Euphemia Woronzow Murray
+    target: Alexander Murray
+  AddTriple (1f94eb60-87d7-4f12-ac95-1c5d7ea66436)
+ Call ID: 1f94eb60-87d7-4f12-ac95-1c5d7ea66436
+  Args:
+    source: Margaret Elphinstone
     relation: :hasRelation
-  AddLiteral (2261b7fd-793c-4626-80e4-45e3f18a68b3)
- Call ID: 2261b7fd-793c-4626-80e4-45e3f18a68b3
-  Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: Berthold
-    literal_value: 1931
-  AssignClass (d6aecfdb-517b-4887-bf1e-093dd7c933f1)
- Call ID: d6aecfdb-517b-4887-bf1e-093dd7c933f1
-  Args:
-    type: :Man
-    source: Andrew
-  AssignClass (05a1ed3f-1eed-4120-9876-2335339872b1)
- Call ID: 05a1ed3f-1eed-4120-9876-2335339872b1
-  Args:
-    source: Andrew
-    type: :Person
-  AssignClass (9f87a0f1-653f-417e-8b3c-92e36dbc923f)
- Call ID: 9f87a0f1-653f-417e-8b3c-92e36dbc923f
-  Args:
-    source: Alice
-    type: :Woman
-  AssignClass (0cf7d108-f15c-46a0-bf8b-f0d5ec198553)
- Call ID: 0cf7d108-f15c-46a0-bf8b-f0d5ec198553
-  Args:
-    type: :Person
-    source: Alice
-  AddTriple (05a110f8-ed8c-43f8-b78b-4d39a0fef97f)
- Call ID: 05a110f8-ed8c-43f8-b78b-4d39a0fef97f
-  Args:
-    relation: :hasFather
-    source: Theodora
-    target: Andrew
-  AddTriple (d8e89bc2-f47b-42ee-9c26-07db0ace6add)
- Call ID: d8e89bc2-f47b-42ee-9c26-07db0ace6add
-  Args:
-    relation: :hasMother
-    source: Theodora
-    target: Alice
-  AssignClass (de7fe412-9291-4a11-a69e-87a263a6bdee)
- Call ID: de7fe412-9291-4a11-a69e-87a263a6bdee
-  Args:
-    type: :Man
-    source: Philip
-  AssignClass (68b8ac42-08c3-454c-b59d-1db4e7d7fdde)
- Call ID: 68b8ac42-08c3-454c-b59d-1db4e7d7fdde
-  Args:
-    source: Philip
-    type: :Person
-  AddTriple (206061ac-3e58-43ad-a626-d0f9b0fcae12)
- Call ID: 206061ac-3e58-43ad-a626-d0f9b0fcae12
-  Args:
-    relation: :isBrotherOf
-    target: Theodora
-    source: Philip
-  AssignClass (cfdb0e7a-b933-4ca2-88cf-56004aca3d87)
- Call ID: cfdb0e7a-b933-4ca2-88cf-56004aca3d87
-  Args:
-    source: Max
-    type: :Man
-  AssignClass (d95da101-9ed1-43c1-b8a5-a83778abf33a)
- Call ID: d95da101-9ed1-43c1-b8a5-a83778abf33a
-  Args:
-    source: Max
-    type: :Person
-  AddTriple (aabc558f-b256-40a4-aa3d-d86ba42cf29f)
- Call ID: aabc558f-b256-40a4-aa3d-d86ba42cf29f
-  Args:
-    target: Berthold
-    source: Max
-    relation: :isSonOf
-  Finish (25af526e-9829-47bc-aeda-6cf7286837d0)
- Call ID: 25af526e-9829-47bc-aeda-6cf7286837d0
+    target: Denys Rhodes
+  Finish (70ca09da-885b-4414-8290-092928d90b8a)
+ Call ID: 70ca09da-885b-4414-8290-092928d90b8a
   Args:

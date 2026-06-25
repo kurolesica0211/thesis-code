@@ -2,47 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Maria_Immaculata_of_Bourbon-Two_Sicilies a :Person,
-        :Woman ;
-    :hasBirthYear "1874"^^xsd:int ;
-    :hasDeathYear "1947"^^xsd:int ;
-    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
-    :hasMarriageYear "1906"^^xsd:int ;
-    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :hasRelation data:Frederick_Augustus_III_of_Saxony,
-        data:Johann_Georg_of_Saxony .
-
-data:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Man,
-        :Person .
-
-data:Ferdinand_II_of_Portugal a :Ancestor,
-        :Man,
-        :Person .
-
-data:Frederick_Augustus_III_of_Saxony a :Man,
-        :Person .
-
-data:George_of_Saxony a :Ancestor,
-        :Man,
-        :Person .
-
-data:Johann_Georg_of_Saxony a :Man,
+data:Karl_Adolf_Andreas_von_Hesse a :Man,
         :Person ;
-    :hasFather data:George_of_Saxony ;
-    :hasMother data:Maria_Anna_of_Portugal .
+    :hasBirthYear 1937 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Christoph_of_Hesse ;
+    :hasMother data:Sophie_of_Greece_and_Denmark ;
+    :knownAs data:Karl_Adolf_Andreas_Prinz_Von_Hessen .
 
-data:Maria_Anna_of_Portugal a :Ancestor,
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Paul_of_Greece a :Man,
+        :Person ;
+    :hasRelation data:Frederica_of_Greece .
+
+data:Wolfgang_of_Hesse a :Man,
+        :Person .
+
+data:Christoph_of_Hesse a :Ancestor,
+        :Man,
+        :Person .
+
+data:Frederica_of_Greece a :Person,
+        :Woman .
+
+data:George_William_of_Hanover a :Man,
+        :Person .
+
+data:Karl_Adolf_Andreas_Prinz_Von_Hessen a :Person .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Sophie_of_Greece_and_Denmark a :Ancestor,
         :Person,
         :Woman ;
-    :hasFather data:Ferdinand_II_of_Portugal ;
-    :hasMother data:Maria_II_of_Portugal .
-
-data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Maria_II_of_Portugal a :Ancestor,
-        :Person,
-        :Woman .
+    :hasMarriageYear 1946 ;
+    :hasRelation data:George_William_of_Hanover ;
+    :isSisterOf data:Prince_Philip .
 

@@ -2,42 +2,52 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Aschwin_of_Lippe-Biesterfeld a :Man,
-        :Person ;
-    :hasBirthYear 1914 ;
-    :hasBrother data:Bernhard_of_Lippe-Biesterfeld ;
-    :hasDeathYear 1988 ;
-    :hasFather data:Bernhard_of_Lippe-Biesterfeld_Sr ;
-    :hasMarriageYear 1951 ;
-    :hasMother data:Armgard_of_Sierstorpff-Cramm ;
-    :hasRelation data:Simone_Arnoux .
+data:AdmiralPericlesIoannides a :Man .
 
-data:Constantijn_of_the_Netherlands a :Man,
-        :Person .
+data:Alexandra a :Woman .
 
-data:Stephan_von_Watzdorf a :Man,
-        :Person ;
-    :isSonOf data:Gottfried_Adam_Vollrat_von_Watzdorf,
-        data:Simone_Arnoux .
+data:Andrew a :Man .
 
-data:Thilo_von_Watzdorf a :Man,
-        :Person ;
-    :isSonOf data:Gottfried_Adam_Vollrat_von_Watzdorf,
-        data:Simone_Arnoux .
+data:Christopher a :Man .
 
-data:Armgard_of_Sierstorpff-Cramm a :Person,
-        :Woman .
+data:ConstantineI a :Man .
 
-data:Bernhard_of_Lippe-Biesterfeld a :Man,
-        :Person .
+data:George a :Man .
 
-data:Bernhard_of_Lippe-Biesterfeld_Sr a :Man,
-        :Person .
+data:GrandDuchessOlgaConstantinovnaOfRussia a :Woman .
 
-data:Gottfried_Adam_Vollrat_von_Watzdorf a :Man,
-        :Person .
+data:KingGeorgeIOfGreece a :Man .
 
-data:Simone_Arnoux a :Person,
-        :Woman ;
-    :hasRelation data:Gottfried_Adam_Vollrat_von_Watzdorf .
+data:Nicholas a :Man .
+
+data:Olga a :Woman .
+
+data:PrincessNinaGeorgievna a :Woman ;
+    :hasFather data:GrandDukeGeorgeMikhailovichOfRussia ;
+    :hasMother data:PrincessMariaOfGreeceAndDenmark .
+
+data:PrincessXeniaGeorgievna a :Woman ;
+    :hasFather data:GrandDukeGeorgeMikhailovichOfRussia ;
+    :hasMother data:PrincessMariaOfGreeceAndDenmark .
+
+data:PrincessMariaOfGreeceAndDenmark a :Woman ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas ;
+    :hasDaughter data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasDeathYear 1940 ;
+    :hasFather data:KingGeorgeIOfGreece ;
+    :hasMarriageYear 1900,
+        1922 ;
+    :hasMother data:GrandDuchessOlgaConstantinovnaOfRussia ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:GrandDukeGeorgeMikhailovichOfRussia ;
+    :hasSister data:Alexandra,
+        data:Olga .
+
+data:GrandDukeGeorgeMikhailovichOfRussia a :Man .
 

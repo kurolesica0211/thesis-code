@@ -85,61 +85,70 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Peter Mark Andrew Phillips (born 15 November 1977) is a British businessman and member of the British royal family.
-He is the son of Anne, Princess Royal, and Mark Phillips, and a nephew of King Charles III.
-Born during the reign of his maternal grandmother Queen Elizabeth II, Phillips was fifth in the line of succession to the British throne; as of 2026, he is 19th.
-Phillips attended the University of Exeter and later worked for Jaguar Racing.
-In 2008, he married Canadian management consultant Autumn Kelly at St George's Chapel, Windsor Castle; they have two children.
-Early life and education
+Henri Philippe Pierre Marie d'Orléans (14 June 1933 – 21 January 2019) was the Orléanist pretender to the defunct French throne as Henry VII.
+Henri was a retired military officer as well as an author and painter.
+Early life
 
-Peter Mark Andrew Phillips was born at 10:46 am on 15 November 1977 at St Mary's Hospital, London.
-He was the first child of Princess Anne and Mark Phillips, who had married in 1973, and the first grandchild of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
-His godparents were his maternal uncle, Prince Charles; Geoffrey Tiarks; Captain Hamish Lochore; Lady Cecil Cameron of Lochiel and Jane Holderness-Roddam.
-Phillips was fifth in line to the throne at birth and remained so until the birth of his cousin William, Prince of Wales in 1982.
-Phillips was the first legitimate grandchild of a monarch in more than 500 years to be born without a title or courtesy title.
-Phillips has a younger sister, Zara Tindall (née Phillips; born 1981), and two younger half-sisters, Felicity Wade (née Tonkin; born 1985), the daughter of Mark Phillips and his former mistress Heather Tonkin; and Stephanie Phillips (born 1997), the daughter from his father's second marriage to Sandy Pflueger.
-Phillips went to Port Regis Prep School in Shaftesbury, Dorset before following some of his family by attending Gordonstoun School in Moray, Scotland.
-Phillips represented Scotland at rugby union at youth and junior level in the mid-1990s.
+He was the first son of Henri, Count of Paris (1908–1999), and his wife Princess Isabelle of Orléans-Braganza, and was born in Woluwe-Saint-Pierre, Belgium, a law in 1886 having permanently exiled from France the heads of its formerly reigning dynasties and their eldest sons.
+Despite the ban, while living in Belgium Henri occasionally accompanied his mother on brief visits to France and, later, to his mother's relatives in Brazil.
+While his father sought to play a role in the French resistance, Henri, in 1940 a child of 7, remained at Larache with his mother, siblings, grandmother and father's sisters' families during the Nazi occupation of France, sharing a small desert home that lacked electricity.
+Advised by Henri Giraud's Moroccan command that the Orléans had become unwelcome in the protectorate following the assassination of Vichy regime collaborater François Darlan by the monarchist Fernand Bonnier de La Chapelle, the family relocated to Pamplona in Spain until 1947, when they took up residence at the Quinta do Anjinho, an estate near Sintra, on the Portuguese Riviera.
+During that year, President Vincent Auriol allowed Henri and his brother François to visit France, and in 1948 he was allowed to enroll in a lycée in Bordeaux.
+The law of exile was abrogated in 1950, allowing Henri to repatriate with his parents.
+Later that year, his parents purchased an estate near Paris, the Manoir du Cœur-Volant in Louveciennes, which became Henri's first home in France.
+Henri studied at the Institut d'Études Politiques de Paris (Sciences Po), obtaining his bac in 1957, and on 30 June of that year, his father conferred upon him, as the heir apparent of his house, the title of "Count of Clermont", by which he was generally known during his father's lifetime.
 Career
 
-After his graduation in 2000, Phillips worked for Jaguar as corporate hospitality manager and then for Williams racing team, where he was sponsorship accounts manager.
-He left Williams in September 2005, for a job as a manager at the Royal Bank of Scotland in Edinburgh.
-In the year leading up to June 2016, Phillips was responsible for organising the "Patron's Lunch", in celebration of the Queen's 90th birthday.
-In January 2020, Phillips appeared in an advertisement for Chinese company Bright Food.
-In the video, he uses his status as a "British royal family member" to promote the company's milk, while surrounded by luxury.
-Royal funeral participation
+From October 1959 to April 1962, Henri worked at the Secretariat-General for National Defence and Security as a member of the French Foreign Legion.
+Returning to civilian life in 1967, Henri and his family briefly occupied the Blanche Neige pavilion on the grounds of his father's Cœur-Volant estate before renting an apartment of their own in the 15th arrondissement of Paris.
+Henri wrote several books, including:
 
-On 17 September 2022, during the period of official mourning for Queen Elizabeth II, Phillips joined his sister and six cousins to mount a 15-minute vigil around the coffin of their grandmother as it lay in state at Westminster Hall.
-On 19 September 2022, he joined the Queen's children and other senior members of the royal family in walking behind the cortege in the state funeral procession.
-Personal life
 
-Relationships
+Henri was also a painter and launched his own brand of perfume.
+Marriages and children
 
-Elizabeth Iorio and Tara Swain
+Henri met Duchess Marie Therese of Württemberg (born 1934), like himself a descendant of King Louis-Philippe, at a ball given by the Thurn and Taxis family in Munich.
+Five children were born from this union:
 
-Phillips dated Elizabeth Iorio, a cod liver oil heiress from the United States, for two years.
-Autumn Kelly
 
-In 2003, Phillips met Autumn Kelly, a Canadian management consultant, at the Formula 1 Canadian Grand Prix in Montreal.
-If she had been Roman Catholic at the time of the marriage, Phillips would have lost his place in the line of the succession to the throne because of since-repealed terms of the Act of Settlement 1701.
-Shortly before their wedding, the couple were interviewed and photographed by Hello! magazine, and were reported to have been paid £500,000, resulting in some concern in royal circles.
-The couple lived in Hong Kong after Phillips changed positions within the Royal Bank of Scotland and became head of their sponsorships activities in the region.
-Their first child, and the Queen's first great-grandchild, a daughter named Savannah Anne Kathleen, was born on 29 December 2010 at Gloucestershire Royal Hospital.
-The Queen was present for the baby's baptism, which took place on 23 April 2011 at Church of the Holy Cross in Avening, Gloucestershire, near Gatcombe Park, the home of Phillips' mother.
-On 29 March 2012, the couple's second daughter, Isla Elizabeth, was born at Gloucestershire Royal Hospital.
-On 11 February 2020, Phillips and his wife confirmed that they had separated in 2019 and announced they were planning to divorce.
-Lindsay Wallace
+In 1984, Henri and Marie-Thérèse were divorced.
+On 31 October 1984 Henri entered a civil marriage with Micaëla Anna María Cousiño y Quiñones de León (1938–2022), daughter of Luis Cousiño y Sebire and his wife, Antonia Maria Quiñones de Léon y Bañuelos, 4th Marquesa de San Carlos, and who had previously been divorced from Jean-Robert Bœuf.
+For remarrying without consent, Henri's father initially declared him disinherited, substituting the non-dynastic title Comte de Mortain for his son's Clermont countship (the latter once held in appanage by a son of Louis IX of France, who became ancestor of the Bourbon-Orléans line).
+Henri, though, refused all mail addressed to him as "Mortain".
+On 27 February 1984 Marie-Thérèse, the former Countess of Clermont, was granted the title Duchess of Montpensier by her father-in-law.
+On 11 February 1989 Henri was informed, by a hand-delivered letter written by his former wife, of the engagement of their eldest child Marie, to Prince Gundakar of Liechtenstein, a cousin of the ruler of that principality, the wedding date being set for 29 July 1989.
+Although Henri acknowledged, in a 12 May 1989 Point de Vue interview, that it had been three years since he had seen Marie, he and his second wife, Micaëla Cousiño, had been welcomed for the first time to the home of his mother, the Countess of Paris, that day: Henri further acknowledged to the press that, Marie having written to invite him to her wedding, he looked forward to conducting her to the altar, rumours to the contrary notwithstanding.
+At the engagement party held the next day at the Palais Pallavicini, the Vienna home of the fiancé's parents, photographs were taken, and would later be published, showing Henri speaking cordially with his daughter, sons, former wife and future son-in-law.
+However, it was on this occasion that Henri learned that he would not be escorting Marie to her bridegroom during the wedding.
+Meanwhile, Marie-Thérèse had sent out invitations to the wedding in her name alone, omitting not only mention of Marie's father, but also of her grandfather, Monseigneur the Count of Paris who, until then, had largely sided with the Duchess of Montpensier in family matters and had consented to his granddaughter's choice of a spouse.
+Henri and his father refused to attend the wedding but Marie proceeded to marry civilly at Dreux's city hall on 22 July 1989, and religiously at the castle of her mother's brother in Germany, on 29 July 1989.
+All but two of Henri's eight siblings also boycotted the ceremonies, but his sister Diane (wife of Montpensier's brother) hosted, and Henri's mother, Madame the Countess of Paris, was a guest at the religious wedding.
+Tensions lessened after several years, and on 7 March 1991 Henri's father reinstated him as heir apparent and Count of Clermont, simultaneously giving Micaëla the title "Princesse de Joinville".
+In 1980, Henri joined the Grand Orient de France where he became Grand Master of the regular Masonic Lodge "Lys de France" No 1297.
+Head of house
 
-After his divorce, Phillips began a relationship with Lindsay Wallace in 2021, with whom he made his official debut as a couple at the Epsom Derby in June 2022.
-Harriet Sperling
+Until he succeeded his father as royal claimant, Henri and his second wife occupied an apartment in Paris.
+On 19 June 1999, Henri's father died and he became the new head of the House of Orléans.
+He took the traditional title, Count of Paris, adding an ancient one, Duke of France, not borne by his Orléans or Bourbon forebears, but used a thousand years ago by his ancestors, before Hugh Capet took the title of king.
+His wife assumed the title "Duchess of France", deferring to the continued use of "Countess of Paris" by Henri's widowed mother until her death on 5 July 2003, whereupon Micaela assumed that title.
+After his father's death, Henri annulled his father's decision to deprive his brothers Michel (Count of Évreux) and Thibaut (the late Count of La Marche) of their succession rights because Michel married a French noblewoman without permission and because Thibaut married a commoner.
+He also bestowed titles upon the sons of his brother Prince Jacques, Duke of Orléans: Prince Charles-Louis d'Orléans, Duke of Chartres (born 1972), and Prince Foulques d'Orléans, Duke of Aumale and Count of Eu (born 1974).
+Henri recognised his disabled eldest son François as his dynastic heir-apparent, with the title Count of Clermont, declaring that François would exercise his prerogatives as head of the dynasty under the "regency" of his younger brother Prince Jean, Duke of Vendôme.
+In 2009, Henri obtained an annulment of his marriage to Marie-Thérèse of Württemberg from the Holy See.
+As Count of Paris, Henri took part in some European royal events attending, for instance, the 2011 marriage of Albert II of Monaco.
+Legal cases
 
-By June 2024, Phillips had introduced his partner, NHS paediatric nurse and freelance writer Harriet Sperling (née Sanders; born 1980), to King Charles III and Queen Camilla.
+Prior to succeeding his father as royal claimant, Henri launched an unsuccessful court case (1987–1989) in which he challenged the right of his rival paternal 10th cousin Louis-Alphonse, Duke of Anjou, to use the undifferenced royal arms of France and the Anjou title.
+The French courts dismissed the case on the grounds that Henri failed to prove that he had demonstrated a right to the hereditaments in questions, noting also that the court lacked jurisdiction in a dispute over dynastic claims of France's former royal family.
+In 2000 bailiffs pursued Henri for US$143,000 back rent after he fled the Villa Boileau, a 17th-century Paris house he had occupied.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -155,39 +164,9 @@ By June 2024, Phillips had introduced his partner, NHS paediatric nurse and free
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -202,6 +181,23 @@ By June 2024, Phillips had introduced his partner, NHS paediatric nurse and free
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -219,6 +215,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -286,29 +297,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -317,6 +320,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -329,6 +340,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -337,17 +350,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -375,6 +390,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -390,186 +489,461 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bb225af8-55e2-497b-a83f-f62a40378ffc)
- Call ID: bb225af8-55e2-497b-a83f-f62a40378ffc
+  AssignClass (76e9ab56-5061-4dca-94a1-7f57e38c4d17)
+ Call ID: 76e9ab56-5061-4dca-94a1-7f57e38c4d17
+  Args:
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    type: :Man
+  AssignClass (174adf17-2c1e-4e8b-b6b9-5d23039ab57b)
+ Call ID: 174adf17-2c1e-4e8b-b6b9-5d23039ab57b
+  Args:
+    type: :Person
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+  AddLiteral (273d6530-00cb-4e80-82a0-65044f40de5e)
+ Call ID: 273d6530-00cb-4e80-82a0-65044f40de5e
+  Args:
+    literal_value: 1933
+    literal_type: xsd:integer
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    relation: :hasBirthYear
+  AddLiteral (bcc3eac2-17f6-43c5-841e-54d8bb1c4844)
+ Call ID: bcc3eac2-17f6-43c5-841e-54d8bb1c4844
+  Args:
+    literal_value: 2019
+    literal_type: xsd:integer
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    relation: :hasDeathYear
+  AssignClass (5417f2e1-adcf-4c04-ae1c-380d21daae36)
+ Call ID: 5417f2e1-adcf-4c04-ae1c-380d21daae36
+  Args:
+    source: Henri_Count_of_Paris
+    type: :Man
+  AssignClass (3fee7839-2a9d-481b-af3a-8b1faa42fc87)
+ Call ID: 3fee7839-2a9d-481b-af3a-8b1faa42fc87
+  Args:
+    type: :Person
+    source: Henri_Count_of_Paris
+  AddLiteral (3a414f65-7826-4dac-a027-b101a38c368d)
+ Call ID: 3a414f65-7826-4dac-a027-b101a38c368d
+  Args:
+    literal_type: xsd:integer
+    source: Henri_Count_of_Paris
+    literal_value: 1908
+    relation: :hasBirthYear
+  AddLiteral (709e4cd5-52dc-4945-a9c4-a08a2971aa8f)
+ Call ID: 709e4cd5-52dc-4945-a9c4-a08a2971aa8f
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1999
+    source: Henri_Count_of_Paris
+    literal_type: xsd:integer
+  AssignClass (de7a1019-a404-45de-ae11-3d526d019964)
+ Call ID: de7a1019-a404-45de-ae11-3d526d019964
+  Args:
+    source: Princess_Isabelle_of_Orleans_Braganza
+    type: :Woman
+  AssignClass (0a0b7cdd-a19b-4b74-91f9-a7063f0d0ed9)
+ Call ID: 0a0b7cdd-a19b-4b74-91f9-a7063f0d0ed9
+  Args:
+    source: Princess_Isabelle_of_Orleans_Braganza
+    type: :Person
+  AddTriple (d490c5ba-1c23-49bc-8593-45c3318e67b8)
+ Call ID: d490c5ba-1c23-49bc-8593-45c3318e67b8
+  Args:
+    relation: :hasFather
+    target: Henri_Count_of_Paris
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+  AddTriple (019d7be3-8d92-4e51-89f8-bdfe82b749d3)
+ Call ID: 019d7be3-8d92-4e51-89f8-bdfe82b749d3
+  Args:
+    relation: :hasMother
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    target: Princess_Isabelle_of_Orleans_Braganza
+  AssignClass (697cb704-5ae8-4a22-8688-697448ea6caf)
+ Call ID: 697cb704-5ae8-4a22-8688-697448ea6caf
+  Args:
+    source: Duchess_Marie_Therese_of_Wurttemberg
+    type: :Woman
+  AssignClass (8253c4a8-e1b3-4ca7-887b-ced7d9521738)
+ Call ID: 8253c4a8-e1b3-4ca7-887b-ced7d9521738
+  Args:
+    source: Duchess_Marie_Therese_of_Wurttemberg
+    type: :Person
+  AddLiteral (6d148454-f00a-4523-bd36-46a2719ff6b4)
+ Call ID: 6d148454-f00a-4523-bd36-46a2719ff6b4
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Duchess_Marie_Therese_of_Wurttemberg
+    literal_value: 1934
+  AddTriple (30ff76bc-1918-4524-b25a-c43f96430daa)
+ Call ID: 30ff76bc-1918-4524-b25a-c43f96430daa
+  Args:
+    relation: :hasRelation
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    target: Duchess_Marie_Therese_of_Wurttemberg
+  AssignClass (43f55b50-4dbb-4f8e-985d-d5bf3a5d681d)
+ Call ID: 43f55b50-4dbb-4f8e-985d-d5bf3a5d681d
+  Args:
+    source: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    type: :Woman
+  AssignClass (54c4ad9a-2409-4941-b044-e2f7d800e581)
+ Call ID: 54c4ad9a-2409-4941-b044-e2f7d800e581
+  Args:
+    source: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    type: :Person
+  AddLiteral (b5ddbc4e-5260-4a21-9637-efeefc7817ef)
+ Call ID: b5ddbc4e-5260-4a21-9637-efeefc7817ef
+  Args:
+    source: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    literal_type: xsd:integer
+    literal_value: 1938
+    relation: :hasBirthYear
+  AddLiteral (c97e0604-6065-41a1-a4e0-05bbdfc3f0d1)
+ Call ID: c97e0604-6065-41a1-a4e0-05bbdfc3f0d1
+  Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    literal_value: 2022
+  AddLiteral (42856c35-7a62-4319-9f33-2972fa76e26e)
+ Call ID: 42856c35-7a62-4319-9f33-2972fa76e26e
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 1984
+    literal_type: xsd:integer
+    source: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+  AddTriple (7c5b1bea-1b2a-4b96-a2eb-34fb83bdd84b)
+ Call ID: 7c5b1bea-1b2a-4b96-a2eb-34fb83bdd84b
+  Args:
+    target: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    relation: :hasRelation
+  AssignClass (86c70175-a722-4805-89ee-e8ef46ee9b5e)
+ Call ID: 86c70175-a722-4805-89ee-e8ef46ee9b5e
   Args:
     type: :Man
-    source: Peter_Mark_Andrew_Phillips
-  AssignClass (ea028864-7697-47f2-8cf9-75ac14c24640)
- Call ID: ea028864-7697-47f2-8cf9-75ac14c24640
+    source: Luis_Cousino_y_Sebire
+  AssignClass (3b6ecf04-d111-4c39-907c-48f233c4e0a1)
+ Call ID: 3b6ecf04-d111-4c39-907c-48f233c4e0a1
   Args:
-    source: Peter_Mark_Andrew_Phillips
+    source: Luis_Cousino_y_Sebire
     type: :Person
-  AssignClass (c24318cc-f276-4ef4-8152-73d09edbde97)
- Call ID: c24318cc-f276-4ef4-8152-73d09edbde97
+  AssignClass (c3ccb464-0535-447e-84fa-4a549af35297)
+ Call ID: c3ccb464-0535-447e-84fa-4a549af35297
   Args:
-    source: Anne_Princess_Royal
     type: :Woman
-  AssignClass (b6af3593-6eb1-452a-b974-f70b33aa5b57)
- Call ID: b6af3593-6eb1-452a-b974-f70b33aa5b57
+    source: Antonia_Maria_Quinones_de_Leon_y_Banuelos
+  AssignClass (ddea0e1b-fb5c-421b-af9e-42e707bd5abd)
+ Call ID: ddea0e1b-fb5c-421b-af9e-42e707bd5abd
+  Args:
+    source: Antonia_Maria_Quinones_de_Leon_y_Banuelos
+    type: :Person
+  AddTriple (d8c6c8a7-88fe-4ec9-96c3-c8d3179fc136)
+ Call ID: d8c6c8a7-88fe-4ec9-96c3-c8d3179fc136
+  Args:
+    source: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    target: Luis_Cousino_y_Sebire
+    relation: :hasFather
+  AddTriple (79a22f73-e313-479f-930a-76604773b307)
+ Call ID: 79a22f73-e313-479f-930a-76604773b307
+  Args:
+    source: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    target: Antonia_Maria_Quinones_de_Leon_y_Banuelos
+    relation: :hasMother
+  AssignClass (8912c489-d281-464d-abd9-7d0e529de616)
+ Call ID: 8912c489-d281-464d-abd9-7d0e529de616
+  Args:
+    type: :Woman
+    source: Marie_of_Orleans
+  AssignClass (a747ce0f-6790-4bfb-895b-ada447d9ba29)
+ Call ID: a747ce0f-6790-4bfb-895b-ada447d9ba29
   Args:
     type: :Person
-    source: Anne_Princess_Royal
-  AssignClass (f73dcabe-6e4f-4ddf-9e37-3c8ca992ac7e)
- Call ID: f73dcabe-6e4f-4ddf-9e37-3c8ca992ac7e
+    source: Marie_of_Orleans
+  AddTriple (6fa36eff-9a50-4545-923a-53ecbbab4d02)
+ Call ID: 6fa36eff-9a50-4545-923a-53ecbbab4d02
+  Args:
+    source: Marie_of_Orleans
+    target: Henri_Philippe_Pierre_Marie_dOrleans
+    relation: :hasFather
+  AddTriple (7078266c-4189-46fa-baa6-e34c17192a3c)
+ Call ID: 7078266c-4189-46fa-baa6-e34c17192a3c
+  Args:
+    relation: :hasMother
+    target: Duchess_Marie_Therese_of_Wurttemberg
+    source: Marie_of_Orleans
+  AssignClass (5075fc15-b9a8-466e-b703-2fb94f236a18)
+ Call ID: 5075fc15-b9a8-466e-b703-2fb94f236a18
   Args:
     type: :Man
-    source: Mark_Phillips
-  AssignClass (ac8fa1c7-64a5-426e-bdfc-410ee25502df)
- Call ID: ac8fa1c7-64a5-426e-bdfc-410ee25502df
+    source: Prince_Gundakar_of_Liechtenstein
+  AssignClass (f8e3dfe2-383a-4fbc-9bdf-13cec71e54b4)
+ Call ID: f8e3dfe2-383a-4fbc-9bdf-13cec71e54b4
   Args:
-    source: Mark_Phillips
+    source: Prince_Gundakar_of_Liechtenstein
     type: :Person
-  AssignClass (7cbb334e-c1c8-44d6-8ce3-8655c430f1b9)
- Call ID: 7cbb334e-c1c8-44d6-8ce3-8655c430f1b9
+  AddTriple (55a02d22-b5f5-4dd4-9149-7cf101f471ba)
+ Call ID: 55a02d22-b5f5-4dd4-9149-7cf101f471ba
   Args:
-    type: :Woman
-    source: Queen_Elizabeth_II
-  AssignClass (033f525b-d20d-485c-8ca1-01a6109190f1)
- Call ID: 033f525b-d20d-485c-8ca1-01a6109190f1
-  Args:
-    type: :Person
-    source: Queen_Elizabeth_II
-  AssignClass (14ab4081-ad6f-4971-bfc8-1970202d7fd2)
- Call ID: 14ab4081-ad6f-4971-bfc8-1970202d7fd2
+    target: Prince_Gundakar_of_Liechtenstein
+    source: Marie_of_Orleans
+    relation: :hasRelation
+  AssignClass (6ef0a237-9d28-46ce-a067-53c073c5f969)
+ Call ID: 6ef0a237-9d28-46ce-a067-53c073c5f969
   Args:
     type: :Man
-    source: Prince_Philip_Duke_of_Edinburgh
-  AssignClass (083fdfc9-d2ac-48f9-9459-789373e04797)
- Call ID: 083fdfc9-d2ac-48f9-9459-789373e04797
+    source: Francois_of_Orleans_son_of_Henri
+  AssignClass (8aec590a-c98e-4547-a8e9-33ba20a9d8b6)
+ Call ID: 8aec590a-c98e-4547-a8e9-33ba20a9d8b6
   Args:
+    source: Francois_of_Orleans_son_of_Henri
     type: :Person
-    source: Prince_Philip_Duke_of_Edinburgh
-  AssignClass (e2053f29-14cd-4dbd-a094-afcd17aa3795)
- Call ID: e2053f29-14cd-4dbd-a094-afcd17aa3795
+  AddTriple (0407a974-307f-42db-86e2-d08cfb7d9256)
+ Call ID: 0407a974-307f-42db-86e2-d08cfb7d9256
   Args:
-    source: King_Charles_III
+    source: Francois_of_Orleans_son_of_Henri
+    target: Henri_Philippe_Pierre_Marie_dOrleans
+    relation: :hasFather
+  AddTriple (70e3e9ac-c214-4d1c-8395-4c52ee6d5b58)
+ Call ID: 70e3e9ac-c214-4d1c-8395-4c52ee6d5b58
+  Args:
+    source: Francois_of_Orleans_son_of_Henri
+    target: Duchess_Marie_Therese_of_Wurttemberg
+    relation: :hasMother
+  AssignClass (1668b104-c6d9-47b8-899f-fef45c315f47)
+ Call ID: 1668b104-c6d9-47b8-899f-fef45c315f47
+  Args:
+    source: Jean_Duke_of_Vendome
     type: :Man
-  AssignClass (5f784fac-a49a-4590-ac16-15d04a6feb00)
- Call ID: 5f784fac-a49a-4590-ac16-15d04a6feb00
-  Args:
-    source: King_Charles_III
-    type: :Person
-  AssignClass (82ab7f9e-25c3-426b-882a-7fd72d461f55)
- Call ID: 82ab7f9e-25c3-426b-882a-7fd72d461f55
-  Args:
-    source: Zara_Tindall
-    type: :Woman
-  AssignClass (097f4203-c557-4027-be5a-121027ac411c)
- Call ID: 097f4203-c557-4027-be5a-121027ac411c
+  AssignClass (e1a28a2f-21a9-4c06-8429-8edc790c10d1)
+ Call ID: e1a28a2f-21a9-4c06-8429-8edc790c10d1
   Args:
     type: :Person
-    source: Zara_Tindall
-  AssignClass (2c05ec15-074d-4d93-9742-65b44c00f960)
- Call ID: 2c05ec15-074d-4d93-9742-65b44c00f960
+    source: Jean_Duke_of_Vendome
+  AddTriple (64a4b0e6-fbbe-4f03-88a0-549a6a7212eb)
+ Call ID: 64a4b0e6-fbbe-4f03-88a0-549a6a7212eb
   Args:
-    source: Felicity_Wade
-    type: :Woman
-  AssignClass (7ad3071d-1b77-4717-a83f-09dba8b80aec)
- Call ID: 7ad3071d-1b77-4717-a83f-09dba8b80aec
+    target: Jean_Duke_of_Vendome
+    source: Francois_of_Orleans_son_of_Henri
+    relation: :hasBrother
+  AssignClass (9e73e8e4-609d-47ca-89a6-c78c883f922f)
+ Call ID: 9e73e8e4-609d-47ca-89a6-c78c883f922f
   Args:
-    source: Felicity_Wade
-    type: :Person
-  AssignClass (e947a84a-4176-4ff5-bd51-425d1f320514)
- Call ID: e947a84a-4176-4ff5-bd51-425d1f320514
-  Args:
-    type: :Woman
-    source: Stephanie_Phillips
-  AssignClass (cdad4f1d-8e37-4c65-9365-f24a14381885)
- Call ID: cdad4f1d-8e37-4c65-9365-f24a14381885
-  Args:
-    type: :Person
-    source: Stephanie_Phillips
-  AssignClass (151a25ce-83a9-4d4e-a09e-945a45377496)
- Call ID: 151a25ce-83a9-4d4e-a09e-945a45377496
-  Args:
-    type: :Woman
-    source: Heather_Tonkin
-  AssignClass (0adb59e2-4f98-4dd2-9144-433f58760093)
- Call ID: 0adb59e2-4f98-4dd2-9144-433f58760093
-  Args:
-    source: Heather_Tonkin
-    type: :Person
-  AssignClass (82f476a1-eff5-4dff-9c81-2646bb8383ee)
- Call ID: 82f476a1-eff5-4dff-9c81-2646bb8383ee
-  Args:
-    type: :Woman
-    source: Sandy_Pflueger
-  AssignClass (9eeb5c07-8a35-455f-91e4-ae693aa4dc13)
- Call ID: 9eeb5c07-8a35-455f-91e4-ae693aa4dc13
-  Args:
-    source: Sandy_Pflueger
-    type: :Person
-  AssignClass (f7137770-48fd-4f71-a730-f3b270fb0c12)
- Call ID: f7137770-48fd-4f71-a730-f3b270fb0c12
-  Args:
-    type: :Woman
-    source: Autumn_Kelly
-  AssignClass (d91f292f-f473-4eac-bfb9-7b7f087b1215)
- Call ID: d91f292f-f473-4eac-bfb9-7b7f087b1215
-  Args:
-    source: Autumn_Kelly
-    type: :Person
-  AssignClass (55f19903-7541-4867-9035-5a13ab5624dc)
- Call ID: 55f19903-7541-4867-9035-5a13ab5624dc
-  Args:
-    type: :Woman
-    source: Savannah_Anne_Kathleen
-  AssignClass (d5bc99a0-4435-46dd-b160-36d96fa298fc)
- Call ID: d5bc99a0-4435-46dd-b160-36d96fa298fc
-  Args:
-    type: :Person
-    source: Savannah_Anne_Kathleen
-  AssignClass (20551213-1484-4587-91ac-d08ca8a0c77a)
- Call ID: 20551213-1484-4587-91ac-d08ca8a0c77a
-  Args:
-    source: Isla_Elizabeth
-    type: :Woman
-  AssignClass (2759bbcc-254d-4787-abc9-9303701e572a)
- Call ID: 2759bbcc-254d-4787-abc9-9303701e572a
-  Args:
-    type: :Person
-    source: Isla_Elizabeth
-  AssignClass (a3f8a553-34fa-4a23-8ce6-ff34e29b1a99)
- Call ID: a3f8a553-34fa-4a23-8ce6-ff34e29b1a99
-  Args:
-    source: Lindsay_Wallace
-    type: :Woman
-  AssignClass (1a272f83-013e-4b6e-afc6-3d879f55104d)
- Call ID: 1a272f83-013e-4b6e-afc6-3d879f55104d
-  Args:
-    type: :Person
-    source: Lindsay_Wallace
-  AssignClass (40b77321-713d-4ea5-8d2c-8c4d40f1276a)
- Call ID: 40b77321-713d-4ea5-8d2c-8c4d40f1276a
-  Args:
-    type: :Woman
-    source: Harriet_Sperling
-  AssignClass (cbb7ce3f-3d50-4f5e-8901-ff7d95e1c953)
- Call ID: cbb7ce3f-3d50-4f5e-8901-ff7d95e1c953
-  Args:
-    type: :Person
-    source: Harriet_Sperling
-  AssignClass (353aec85-6674-4122-b7ea-e5526b5506aa)
- Call ID: 353aec85-6674-4122-b7ea-e5526b5506aa
-  Args:
-    source: Queen_Camilla
-    type: :Woman
-  AssignClass (308dea85-e08e-417b-a8a3-01fa80a1eb1c)
- Call ID: 308dea85-e08e-417b-a8a3-01fa80a1eb1c
-  Args:
-    source: Queen_Camilla
-    type: :Person
-  AssignClass (eb03e1ab-ba05-4100-bad1-f68a191e9d77)
- Call ID: eb03e1ab-ba05-4100-bad1-f68a191e9d77
-  Args:
-    source: William_Prince_of_Wales
     type: :Man
-  AssignClass (36806e1e-973d-4595-810e-61311fd3b4af)
- Call ID: 36806e1e-973d-4595-810e-61311fd3b4af
+    source: Michel_Count_of_Evreux
+  AssignClass (2a8ed40c-4b3c-47b8-9f28-88fb8353e89e)
+ Call ID: 2a8ed40c-4b3c-47b8-9f28-88fb8353e89e
   Args:
-    source: William_Prince_of_Wales
+    source: Michel_Count_of_Evreux
     type: :Person
+  AddTriple (4443912f-6acc-4aeb-8308-98db0e532b17)
+ Call ID: 4443912f-6acc-4aeb-8308-98db0e532b17
+  Args:
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    target: Michel_Count_of_Evreux
+    relation: :hasBrother
+  AssignClass (f939a8d8-cfed-4daf-a03b-22be2e71d062)
+ Call ID: f939a8d8-cfed-4daf-a03b-22be2e71d062
+  Args:
+    type: :Man
+    source: Thibaut_Count_of_La_Marche
+  AssignClass (9e439dcd-6990-4907-a83a-03bacbb7812d)
+ Call ID: 9e439dcd-6990-4907-a83a-03bacbb7812d
+  Args:
+    source: Thibaut_Count_of_La_Marche
+    type: :Person
+  AddTriple (eeeac7f5-547c-4501-b896-326c35c96380)
+ Call ID: eeeac7f5-547c-4501-b896-326c35c96380
+  Args:
+    relation: :hasBrother
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    target: Thibaut_Count_of_La_Marche
+  AssignClass (92ef3c38-6e6d-47e6-a76b-c7993cc09a26)
+ Call ID: 92ef3c38-6e6d-47e6-a76b-c7993cc09a26
+  Args:
+    type: :Man
+    source: Jacques_Duke_of_Orleans
+  AssignClass (cbb755ec-de38-4cd4-8f76-5b302de17c52)
+ Call ID: cbb755ec-de38-4cd4-8f76-5b302de17c52
+  Args:
+    type: :Person
+    source: Jacques_Duke_of_Orleans
+  AddTriple (5b376d8c-bd21-4bea-9d64-8235079bddd9)
+ Call ID: 5b376d8c-bd21-4bea-9d64-8235079bddd9
+  Args:
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    target: Jacques_Duke_of_Orleans
+    relation: :hasBrother
+  AssignClass (34829db2-e86b-400f-b021-7d7ae9028d39)
+ Call ID: 34829db2-e86b-400f-b021-7d7ae9028d39
+  Args:
+    source: Charles_Louis_dOrleans_Duke_of_Chartres
+    type: :Man
+  AssignClass (a57cc037-144a-405d-90a7-77c6f1b3c858)
+ Call ID: a57cc037-144a-405d-90a7-77c6f1b3c858
+  Args:
+    source: Charles_Louis_dOrleans_Duke_of_Chartres
+    type: :Person
+  AddLiteral (06199119-9610-48b1-810a-11793e0abd7e)
+ Call ID: 06199119-9610-48b1-810a-11793e0abd7e
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Charles_Louis_dOrleans_Duke_of_Chartres
+    literal_value: 1972
+  AddTriple (42babe44-007e-4733-8b95-71b06512f6d4)
+ Call ID: 42babe44-007e-4733-8b95-71b06512f6d4
+  Args:
+    target: Jacques_Duke_of_Orleans
+    source: Charles_Louis_dOrleans_Duke_of_Chartres
+    relation: :hasFather
+  AssignClass (6a83d4fa-b721-4223-9d95-c120596280ff)
+ Call ID: 6a83d4fa-b721-4223-9d95-c120596280ff
+  Args:
+    type: :Man
+    source: Foulques_dOrleans_Duke_of_Aumale
+  AssignClass (86055c06-e019-4866-92b2-3afafb0d9841)
+ Call ID: 86055c06-e019-4866-92b2-3afafb0d9841
+  Args:
+    source: Foulques_dOrleans_Duke_of_Aumale
+    type: :Person
+  AddLiteral (09494181-9a74-4602-a9a2-8bd860f2151e)
+ Call ID: 09494181-9a74-4602-a9a2-8bd860f2151e
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1974
+    literal_type: xsd:integer
+    source: Foulques_dOrleans_Duke_of_Aumale
+  AddTriple (8995d277-2ef3-4049-9d7f-392431552d87)
+ Call ID: 8995d277-2ef3-4049-9d7f-392431552d87
+  Args:
+    target: Jacques_Duke_of_Orleans
+    source: Foulques_dOrleans_Duke_of_Aumale
+    relation: :hasFather
+  AssignClass (0649794b-21dc-41ff-9385-423605e582a6)
+ Call ID: 0649794b-21dc-41ff-9385-423605e582a6
+  Args:
+    type: :Woman
+    source: Diane_dOrleans
+  AssignClass (5b6641bd-2936-4b71-8c6e-0515f9121f6e)
+ Call ID: 5b6641bd-2936-4b71-8c6e-0515f9121f6e
+  Args:
+    source: Diane_dOrleans
+    type: :Person
+  AddTriple (bb47c65e-f932-431c-8457-5aeca56e43b4)
+ Call ID: bb47c65e-f932-431c-8457-5aeca56e43b4
+  Args:
+    relation: :hasSister
+    target: Diane_dOrleans
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+  Finish (505412f0-6f54-4d95-a704-fc986e31ee84)
+ Call ID: 505412f0-6f54-4d95-a704-fc986e31ee84
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -716,734 +1090,345 @@ Look at the messages below to see the final data graph after all the edits.
 The final data graph after all the edits:
   @prefix : <http://example.com/family_TBOX.ttl#> .
   @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Anne_Princess_Royal a :Person,
+  data:Charles_Louis_dOrleans_Duke_of_Chartres a :Man,
+          :Person ;
+      :hasBirthYear 1972 ;
+      :hasFather data:Jacques_Duke_of_Orleans .
+
+  data:Foulques_dOrleans_Duke_of_Aumale a :Man,
+          :Person ;
+      :hasBirthYear 1974 ;
+      :hasFather data:Jacques_Duke_of_Orleans .
+
+  data:Francois_of_Orleans_son_of_Henri a :Man,
+          :Person ;
+      :hasBrother data:Jean_Duke_of_Vendome ;
+      :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+      :hasMother data:Duchess_Marie_Therese_of_Wurttemberg .
+
+  data:Marie_of_Orleans a :Person,
+          :Woman ;
+      :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+      :hasMother data:Duchess_Marie_Therese_of_Wurttemberg ;
+      :hasRelation data:Prince_Gundakar_of_Liechtenstein .
+
+  data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Person,
           :Woman .
 
-  data:Autumn_Kelly a :Person,
+  data:Diane_dOrleans a :Person,
           :Woman .
 
-  data:Felicity_Wade a :Person,
-          :Woman .
+  data:Henri_Count_of_Paris a :Man,
+          :Person ;
+      :hasBirthYear 1908 ;
+      :hasDeathYear 1999 .
 
-  data:Harriet_Sperling a :Person,
-          :Woman .
-
-  data:Heather_Tonkin a :Person,
-          :Woman .
-
-  data:Isla_Elizabeth a :Person,
-          :Woman .
-
-  data:King_Charles_III a :Man,
+  data:Jean_Duke_of_Vendome a :Man,
           :Person .
 
-  data:Lindsay_Wallace a :Person,
-          :Woman .
-
-  data:Mark_Phillips a :Man,
+  data:Luis_Cousino_y_Sebire a :Man,
           :Person .
 
-  data:Peter_Mark_Andrew_Phillips a :Man,
+  data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Person,
+          :Woman ;
+      :hasBirthYear 1938 ;
+      :hasDeathYear 2022 ;
+      :hasFather data:Luis_Cousino_y_Sebire ;
+      :hasMarriageYear 1984 ;
+      :hasMother data:Antonia_Maria_Quinones_de_Leon_y_Banuelos .
+
+  data:Michel_Count_of_Evreux a :Man,
           :Person .
 
-  data:Prince_Philip_Duke_of_Edinburgh a :Man,
+  data:Prince_Gundakar_of_Liechtenstein a :Man,
           :Person .
 
-  data:Queen_Camilla a :Person,
+  data:Princess_Isabelle_of_Orleans_Braganza a :Person,
           :Woman .
 
-  data:Queen_Elizabeth_II a :Person,
-          :Woman .
-
-  data:Sandy_Pflueger a :Person,
-          :Woman .
-
-  data:Savannah_Anne_Kathleen a :Person,
-          :Woman .
-
-  data:Stephanie_Phillips a :Person,
-          :Woman .
-
-  data:William_Prince_of_Wales a :Man,
+  data:Thibaut_Count_of_La_Marche a :Man,
           :Person .
 
-  data:Zara_Tindall a :Person,
-          :Woman .
+  data:Henri_Philippe_Pierre_Marie_dOrleans a :Man,
+          :Person ;
+      :hasBirthYear 1933 ;
+      :hasBrother data:Jacques_Duke_of_Orleans,
+          data:Michel_Count_of_Evreux,
+          data:Thibaut_Count_of_La_Marche ;
+      :hasDeathYear 2019 ;
+      :hasFather data:Henri_Count_of_Paris ;
+      :hasMother data:Princess_Isabelle_of_Orleans_Braganza ;
+      :hasRelation data:Duchess_Marie_Therese_of_Wurttemberg,
+          data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+      :hasSister data:Diane_dOrleans .
+
+  data:Duchess_Marie_Therese_of_Wurttemberg a :Person,
+          :Woman ;
+      :hasBirthYear 1934 .
+
+  data:Jacques_Duke_of_Orleans a :Man,
+          :Person .
 
 
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  AddTriple (dce50433-db00-4b87-84a4-9cd2b3bc3050)
- Call ID: dce50433-db00-4b87-84a4-9cd2b3bc3050
-  Args:
-    source: Peter_Mark_Andrew_Phillips
-    target: Anne_Princess_Royal
-    relation: :hasMother
-  AddTriple (fa5798b3-eae2-4fcc-8bba-79a5dfe56b21)
- Call ID: fa5798b3-eae2-4fcc-8bba-79a5dfe56b21
-  Args:
-    source: Peter_Mark_Andrew_Phillips
-    relation: :hasFather
-    target: Mark_Phillips
-  AddTriple (42422b15-c150-4d11-80ac-3b3db593f74a)
- Call ID: 42422b15-c150-4d11-80ac-3b3db593f74a
-  Args:
-    source: Zara_Tindall
-    target: Anne_Princess_Royal
-    relation: :hasMother
-  AddTriple (d7a4e4c3-ebe4-4215-b0a9-285c5f1af58d)
- Call ID: d7a4e4c3-ebe4-4215-b0a9-285c5f1af58d
-  Args:
-    target: Mark_Phillips
-    relation: :hasFather
-    source: Zara_Tindall
-  AddTriple (0111e7d4-2606-4e6c-ac4a-1bb3398b94b4)
- Call ID: 0111e7d4-2606-4e6c-ac4a-1bb3398b94b4
-  Args:
-    relation: :hasFather
-    target: Mark_Phillips
-    source: Felicity_Wade
-  AddTriple (be611408-d6cf-48af-a10b-d09b09918c4c)
- Call ID: be611408-d6cf-48af-a10b-d09b09918c4c
-  Args:
-    source: Felicity_Wade
-    target: Heather_Tonkin
-    relation: :hasMother
-  AddTriple (cdfda349-c923-4134-8b4c-fda425bf7be1)
- Call ID: cdfda349-c923-4134-8b4c-fda425bf7be1
-  Args:
-    source: Stephanie_Phillips
-    relation: :hasFather
-    target: Mark_Phillips
-  AddTriple (90a6e7a4-3864-43b7-8d42-bd27478bc12e)
- Call ID: 90a6e7a4-3864-43b7-8d42-bd27478bc12e
-  Args:
-    source: Stephanie_Phillips
-    relation: :hasMother
-    target: Sandy_Pflueger
-  AddTriple (54360a07-6425-49d5-9087-fe0be77ca6f5)
- Call ID: 54360a07-6425-49d5-9087-fe0be77ca6f5
-  Args:
-    relation: :hasMother
-    target: Queen_Elizabeth_II
-    source: Peter_Mark_Andrew_Phillips
-  AddTriple (64882250-ad5c-49f4-892e-b4f2b3eab2c1)
- Call ID: 64882250-ad5c-49f4-892e-b4f2b3eab2c1
-  Args:
-    source: Queen_Elizabeth_II
-    relation: :isMotherOf
-    target: Anne_Princess_Royal
-  AddTriple (85be7671-8f65-4abc-bc6a-9f4ea64ffb8c)
- Call ID: 85be7671-8f65-4abc-bc6a-9f4ea64ffb8c
-  Args:
-    source: Prince_Philip_Duke_of_Edinburgh
-    relation: :isFatherOf
-    target: Anne_Princess_Royal
-  AddTriple (9badb81e-3c2d-4bb8-b485-e6ec7c149c3b)
- Call ID: 9badb81e-3c2d-4bb8-b485-e6ec7c149c3b
-  Args:
-    relation: :isFatherOf
-    target: King_Charles_III
-    source: Queen_Elizabeth_II
-  AddTriple (9c1a903a-c13c-4114-a175-7ae9fe482684)
- Call ID: 9c1a903a-c13c-4114-a175-7ae9fe482684
-  Args:
-    source: Prince_Philip_Duke_of_Edinburgh
-    relation: :isFatherOf
-    target: King_Charles_III
-  AddTriple (2559b594-3f4c-4a91-9987-5d48f5b17c51)
- Call ID: 2559b594-3f4c-4a91-9987-5d48f5b17c51
-  Args:
-    target: Autumn_Kelly
-    relation: :hasMother
-    source: Savannah_Anne_Kathleen
-  AddTriple (6acea995-5d52-4800-99a0-947d171ea774)
- Call ID: 6acea995-5d52-4800-99a0-947d171ea774
-  Args:
-    target: Peter_Mark_Andrew_Phillips
-    relation: :hasFather
-    source: Savannah_Anne_Kathleen
-  AddTriple (61b0bd48-a119-4010-8527-605ef9f80def)
- Call ID: 61b0bd48-a119-4010-8527-605ef9f80def
-  Args:
-    target: Autumn_Kelly
-    relation: :hasMother
-    source: Isla_Elizabeth
-  AddTriple (bea50e37-904b-4286-a9a5-2e6e6fa956cf)
- Call ID: bea50e37-904b-4286-a9a5-2e6e6fa956cf
-  Args:
-    target: Peter_Mark_Andrew_Phillips
-    relation: :hasFather
-    source: Isla_Elizabeth
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-
-  data:Felicity_Wade a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Heather_Tonkin .
-
-  data:Harriet_Sperling a :Person,
-          :Woman .
-
-  data:Isla_Elizabeth a :Person,
-          :Woman ;
-      :hasFather data:Peter_Mark_Andrew_Phillips ;
-      :hasMother data:Autumn_Kelly .
-
-  data:Lindsay_Wallace a :Person,
-          :Woman .
-
-  data:Prince_Philip_Duke_of_Edinburgh a :Man,
-          :Person ;
-      :isFatherOf data:Anne_Princess_Royal,
-          data:King_Charles_III .
-
-  data:Queen_Camilla a :Person,
-          :Woman .
-
-  data:Savannah_Anne_Kathleen a :Person,
-          :Woman ;
-      :hasFather data:Peter_Mark_Andrew_Phillips ;
-      :hasMother data:Autumn_Kelly .
-
-  data:Stephanie_Phillips a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Sandy_Pflueger .
-
-  data:William_Prince_of_Wales a :Man,
-          :Person .
-
-  data:Zara_Tindall a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Anne_Princess_Royal .
-
-  data:Heather_Tonkin a :Person,
-          :Woman .
-
-  data:Queen_Elizabeth_II a :Person,
-          :Woman ;
-      :isFatherOf data:King_Charles_III ;
-      :isMotherOf data:Anne_Princess_Royal .
-
-  data:Sandy_Pflueger a :Person,
-          :Woman .
-
-  data:Autumn_Kelly a :Person,
-          :Woman .
-
-  data:King_Charles_III a :Man,
-          :Person .
-
-  data:Peter_Mark_Andrew_Phillips a :Man,
-          :Person ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Anne_Princess_Royal,
-          data:Queen_Elizabeth_II .
-
-  data:Anne_Princess_Royal a :Person,
-          :Woman .
-
-  data:Mark_Phillips a :Man,
-          :Person .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (fcd87ca5-e52d-49b8-afb1-0a1e5c7cab43)
- Call ID: fcd87ca5-e52d-49b8-afb1-0a1e5c7cab43
-  Args:
-    target: Queen_Elizabeth_II
-    relation: :hasMother
-    source: Peter_Mark_Andrew_Phillips
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-
-  data:Felicity_Wade a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Heather_Tonkin .
-
-  data:Harriet_Sperling a :Person,
-          :Woman .
-
-  data:Isla_Elizabeth a :Person,
-          :Woman ;
-      :hasFather data:Peter_Mark_Andrew_Phillips ;
-      :hasMother data:Autumn_Kelly .
-
-  data:Lindsay_Wallace a :Person,
-          :Woman .
-
-  data:Prince_Philip_Duke_of_Edinburgh a :Man,
-          :Person ;
-      :isFatherOf data:Anne_Princess_Royal,
-          data:King_Charles_III .
-
-  data:Queen_Camilla a :Person,
-          :Woman .
-
-  data:Queen_Elizabeth_II a :Person,
-          :Woman ;
-      :isFatherOf data:King_Charles_III ;
-      :isMotherOf data:Anne_Princess_Royal .
-
-  data:Savannah_Anne_Kathleen a :Person,
-          :Woman ;
-      :hasFather data:Peter_Mark_Andrew_Phillips ;
-      :hasMother data:Autumn_Kelly .
-
-  data:Stephanie_Phillips a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Sandy_Pflueger .
-
-  data:William_Prince_of_Wales a :Man,
-          :Person .
-
-  data:Zara_Tindall a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Anne_Princess_Royal .
-
-  data:Heather_Tonkin a :Person,
-          :Woman .
-
-  data:Sandy_Pflueger a :Person,
-          :Woman .
-
-  data:Autumn_Kelly a :Person,
-          :Woman .
-
-  data:King_Charles_III a :Man,
-          :Person .
-
-  data:Peter_Mark_Andrew_Phillips a :Man,
-          :Person ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Anne_Princess_Royal .
-
-  data:Anne_Princess_Royal a :Person,
-          :Woman .
-
-  data:Mark_Phillips a :Man,
-          :Person .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (e8478cef-026c-4fa0-9b58-759bf32575d3)
- Call ID: e8478cef-026c-4fa0-9b58-759bf32575d3
+  ValidateShacl (aed56e1b-6885-480b-9e57-4ab1a6960ade)
+ Call ID: aed56e1b-6885-480b-9e57-4ab1a6960ade
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:40
+Total violations:30
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Mark_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
+      The value node Henri_Philippe_Pierre_Marie_dOrleans is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Ancestor)
+      AssignClass(node='Henri_Philippe_Pierre_Marie_dOrleans', class=':Man')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Anne_Princess_Royal is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Henri_Count_of_Paris is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne_Princess_Royal, :Ancestor)
+      AssignClass(node='Henri_Count_of_Paris', class=':Man')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Mark_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
+      The value node Jacques_Duke_of_Orleans is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Ancestor)
+      AssignClass(node='Jacques_Duke_of_Orleans', class=':Man')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Mark_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
+      The value node Jacques_Duke_of_Orleans is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Ancestor)
+      AssignClass(node='Jacques_Duke_of_Orleans', class=':Man')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Peter_Mark_Andrew_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
+      The value node Duchess_Marie_Therese_of_Wurttemberg is missing the required class :Ancestor or :Woman for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Peter_Mark_Andrew_Phillips, :Ancestor)
+      AssignClass(node='Duchess_Marie_Therese_of_Wurttemberg', class=':Woman')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Mark_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
+      The value node Princess_Isabelle_of_Orleans_Braganza is missing the required class :Ancestor or :Woman for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Ancestor)
+      AssignClass(node='Princess_Isabelle_of_Orleans_Braganza', class=':Woman')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Mark_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
+      The value node Henri_Count_of_Paris is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Ancestor)
+      AssignClass(node='Henri_Count_of_Paris', class=':Man')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Peter_Mark_Andrew_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
+      The value node Jacques_Duke_of_Orleans is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Peter_Mark_Andrew_Phillips, :Ancestor)
+      AssignClass(node='Jacques_Duke_of_Orleans', class=':Man')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Sandy_Pflueger is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Henri_Philippe_Pierre_Marie_dOrleans is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sandy_Pflueger, :Ancestor)
+      AssignClass(node='Henri_Philippe_Pierre_Marie_dOrleans', class=':Man')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Anne_Princess_Royal is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Jacques_Duke_of_Orleans is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne_Princess_Royal, :Ancestor)
+      AssignClass(node='Jacques_Duke_of_Orleans', class=':Man')
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Autumn_Kelly is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Henri_Philippe_Pierre_Marie_dOrleans is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Autumn_Kelly, :Ancestor)
+      AssignClass(node='Henri_Philippe_Pierre_Marie_dOrleans', class=':Man')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Anne_Princess_Royal is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Luis_Cousino_y_Sebire is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne_Princess_Royal, :Ancestor)
+      AssignClass(node='Luis_Cousino_y_Sebire', class=':Man')
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Heather_Tonkin is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Princess_Isabelle_of_Orleans_Braganza is missing the required class :Ancestor or :Woman for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Heather_Tonkin, :Ancestor)
+      AssignClass(node='Princess_Isabelle_of_Orleans_Braganza', class=':Woman')
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Autumn_Kelly is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Duchess_Marie_Therese_of_Wurttemberg is missing the required class :Ancestor or :Woman for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Autumn_Kelly, :Ancestor)
+      AssignClass(node='Duchess_Marie_Therese_of_Wurttemberg', class=':Woman')
 
 
   Violation [15]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Elizabeth_II is missing the required class :Ancestor, which is necessary for it to be a valid subject of the isMotherOf relationship.
+      The value node Duchess_Marie_Therese_of_Wurttemberg is missing the required class :Ancestor or :Woman for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Elizabeth_II, :Ancestor)
+      AssignClass(node='Duchess_Marie_Therese_of_Wurttemberg', class=':Woman')
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Mark_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
+      The value node Antonia_Maria_Quinones_de_Leon_y_Banuelos is missing the required class :Ancestor or :Woman for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Ancestor)
+      AssignClass(node='Antonia_Maria_Quinones_de_Leon_y_Banuelos', class=':Woman')
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Peter_Mark_Andrew_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
+      The value node Henri_Count_of_Paris is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Peter_Mark_Andrew_Phillips, :Ancestor)
+      AssignClass(node='Henri_Count_of_Paris', class=':Man')
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Mark_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
+      The value node Jacques_Duke_of_Orleans is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Ancestor)
+      AssignClass(node='Jacques_Duke_of_Orleans', class=':Man')
 
 
   Violation [19]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Mark_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
+      The value node Henri_Philippe_Pierre_Marie_dOrleans is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Ancestor)
+      AssignClass(node='Henri_Philippe_Pierre_Marie_dOrleans', class=':Man')
 
 
   Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Mark_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
+      The value node Jacques_Duke_of_Orleans is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Ancestor)
+      AssignClass(node='Jacques_Duke_of_Orleans', class=':Man')
 
 
   Violation [21]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Peter_Mark_Andrew_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
+      The value node Henri_Philippe_Pierre_Marie_dOrleans is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Peter_Mark_Andrew_Phillips, :Ancestor)
+      AssignClass(node='Henri_Philippe_Pierre_Marie_dOrleans', class=':Man')
 
 
   Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Sandy_Pflueger is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Luis_Cousino_y_Sebire is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sandy_Pflueger, :Ancestor)
+      AssignClass(node='Luis_Cousino_y_Sebire', class=':Man')
 
 
   Violation [23]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Autumn_Kelly is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Princess_Isabelle_of_Orleans_Braganza is missing the required class :Ancestor or :Woman for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Autumn_Kelly, :Ancestor)
+      AssignClass(node='Princess_Isabelle_of_Orleans_Braganza', class=':Woman')
 
 
   Violation [24]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Anne_Princess_Royal is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Duchess_Marie_Therese_of_Wurttemberg is missing the required class :Ancestor or :Woman for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne_Princess_Royal, :Ancestor)
+      AssignClass(node='Duchess_Marie_Therese_of_Wurttemberg', class=':Woman')
 
 
   Violation [25]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Anne_Princess_Royal is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Duchess_Marie_Therese_of_Wurttemberg is missing the required class :Ancestor or :Woman for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne_Princess_Royal, :Ancestor)
+      AssignClass(node='Duchess_Marie_Therese_of_Wurttemberg', class=':Woman')
 
 
   Violation [26]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Heather_Tonkin is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Antonia_Maria_Quinones_de_Leon_y_Banuelos is missing the required class :Ancestor or :Woman for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Heather_Tonkin, :Ancestor)
+      AssignClass(node='Antonia_Maria_Quinones_de_Leon_y_Banuelos', class=':Woman')
 
 
   Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Autumn_Kelly is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Henri_Philippe_Pierre_Marie_dOrleans is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Autumn_Kelly, :Ancestor)
+      AssignClass(node='Henri_Philippe_Pierre_Marie_dOrleans', class=':Man')
 
 
   Violation [28]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Philip_Duke_of_Edinburgh is missing the required class :Ancestor, which is necessary for it to be a valid subject of the isFatherOf relationship.
+      The value node Luis_Cousino_y_Sebire is missing the required class :Ancestor or :Man for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Philip_Duke_of_Edinburgh, :Ancestor)
+      AssignClass(node='Luis_Cousino_y_Sebire', class=':Man')
 
 
   Violation [29]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Elizabeth_II is missing the required class :Ancestor, which is necessary for it to be a valid subject of the isFatherOf relationship.
+      The value node Duchess_Marie_Therese_of_Wurttemberg is missing the required class :Ancestor or :Woman for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Elizabeth_II, :Ancestor)
+      AssignClass(node='Duchess_Marie_Therese_of_Wurttemberg', class=':Woman')
 
 
   Violation [30]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The node Queen_Elizabeth_II is missing the required class :Ancestor, which is necessary for it to be a valid subject of the isFatherOf relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Elizabeth_II, :Ancestor)
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mark_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Ancestor)
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Peter_Mark_Andrew_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Peter_Mark_Andrew_Phillips, :Ancestor)
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mark_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Ancestor)
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mark_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Mark_Phillips, :Ancestor)
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Peter_Mark_Andrew_Phillips is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasFather property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Peter_Mark_Andrew_Phillips, :Ancestor)
-
-
-  Violation [36]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Sandy_Pflueger is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
+      The value node Antonia_Maria_Quinones_de_Leon_y_Banuelos is missing the required class :Ancestor or :Woman for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sandy_Pflueger, :Ancestor)
-
-
-  Violation [37]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Autumn_Kelly is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Autumn_Kelly, :Ancestor)
-
-
-  Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Anne_Princess_Royal is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Anne_Princess_Royal, :Ancestor)
-
-
-  Violation [39]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Heather_Tonkin is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Heather_Tonkin, :Ancestor)
-
-
-  Violation [40]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Autumn_Kelly is missing the required class :Ancestor, which is necessary for it to be a valid value for the hasMother property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Autumn_Kelly, :Ancestor)
+      AssignClass(node='Antonia_Maria_Quinones_de_Leon_y_Banuelos', class=':Woman')
 
 
 
@@ -1452,50 +1437,44 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (c7de0641-8a16-4887-93b0-257641bd5525)
- Call ID: c7de0641-8a16-4887-93b0-257641bd5525
+  AssignClass (cb8cc06f-b22a-4d41-b1ad-f02e65206e19)
+ Call ID: cb8cc06f-b22a-4d41-b1ad-f02e65206e19
+  Args:
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    type: :Ancestor
+  AssignClass (a41b3389-1378-4239-8fc9-240f12fc7149)
+ Call ID: a41b3389-1378-4239-8fc9-240f12fc7149
+  Args:
+    source: Henri_Count_of_Paris
+    type: :Ancestor
+  AssignClass (bdd069d9-1e57-4867-8733-5ff9715cfe59)
+ Call ID: bdd069d9-1e57-4867-8733-5ff9715cfe59
   Args:
     type: :Ancestor
-    source: Mark_Phillips
-  AssignClass (6031346e-37eb-4bd3-96bf-d431466f5301)
- Call ID: 6031346e-37eb-4bd3-96bf-d431466f5301
+    source: Jacques_Duke_of_Orleans
+  AssignClass (dcf58b4a-5253-438b-a568-416a5b5bb0ed)
+ Call ID: dcf58b4a-5253-438b-a568-416a5b5bb0ed
   Args:
-    source: Anne_Princess_Royal
+    source: Duchess_Marie_Therese_of_Wurttemberg
     type: :Ancestor
-  AssignClass (3a1d7cfb-7c3b-4fbe-b733-8b875ef12b21)
- Call ID: 3a1d7cfb-7c3b-4fbe-b733-8b875ef12b21
+  AssignClass (aef277b6-a054-431b-901c-7709e8f263aa)
+ Call ID: aef277b6-a054-431b-901c-7709e8f263aa
   Args:
-    source: Peter_Mark_Andrew_Phillips
+    source: Princess_Isabelle_of_Orleans_Braganza
     type: :Ancestor
-  AssignClass (833ed227-5d5c-4a12-928f-71942d61cac8)
- Call ID: 833ed227-5d5c-4a12-928f-71942d61cac8
+  AssignClass (115a690e-5abe-4b8d-987e-d2ea4f612824)
+ Call ID: 115a690e-5abe-4b8d-987e-d2ea4f612824
   Args:
-    source: Sandy_Pflueger
+    source: Luis_Cousino_y_Sebire
     type: :Ancestor
-  AssignClass (73729e0c-e941-4674-941a-eb62bd8edf4d)
- Call ID: 73729e0c-e941-4674-941a-eb62bd8edf4d
-  Args:
-    source: Autumn_Kelly
-    type: :Ancestor
-  AssignClass (96d573e2-3f68-4026-96b3-2751b8400e28)
- Call ID: 96d573e2-3f68-4026-96b3-2751b8400e28
+  AssignClass (a8c8823d-ced6-4946-8bab-190f3e284e16)
+ Call ID: a8c8823d-ced6-4946-8bab-190f3e284e16
   Args:
     type: :Ancestor
-    source: Heather_Tonkin
-  AssignClass (07887ed0-9f47-4d24-a6a6-c37816d5b95d)
- Call ID: 07887ed0-9f47-4d24-a6a6-c37816d5b95d
+    source: Antonia_Maria_Quinones_de_Leon_y_Banuelos
+  ValidateShacl (36f2f605-a218-4391-8dd8-7a810c45d8f3)
+ Call ID: 36f2f605-a218-4391-8dd8-7a810c45d8f3
   Args:
-    source: Queen_Elizabeth_II
-    type: :Ancestor
-  AssignClass (dc2c26be-bdc3-47a8-af71-ec9fd83d7aea)
- Call ID: dc2c26be-bdc3-47a8-af71-ec9fd83d7aea
-  Args:
-    source: Prince_Philip_Duke_of_Edinburgh
-    type: :Ancestor
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1526,214 +1505,95 @@ Look at the messages below to see the final data graph after all the edits.
 The final data graph after all the edits:
   @prefix : <http://example.com/family_TBOX.ttl#> .
   @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Felicity_Wade a :Person,
+  data:Charles_Louis_dOrleans_Duke_of_Chartres a :Man,
+          :Person ;
+      :hasBirthYear 1972 ;
+      :hasFather data:Jacques_Duke_of_Orleans .
+
+  data:Foulques_dOrleans_Duke_of_Aumale a :Man,
+          :Person ;
+      :hasBirthYear 1974 ;
+      :hasFather data:Jacques_Duke_of_Orleans .
+
+  data:Francois_of_Orleans_son_of_Henri a :Man,
+          :Person ;
+      :hasBrother data:Jean_Duke_of_Vendome ;
+      :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+      :hasMother data:Duchess_Marie_Therese_of_Wurttemberg .
+
+  data:Marie_of_Orleans a :Person,
           :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Heather_Tonkin .
+      :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+      :hasMother data:Duchess_Marie_Therese_of_Wurttemberg ;
+      :hasRelation data:Prince_Gundakar_of_Liechtenstein .
 
-  data:Harriet_Sperling a :Person,
+  data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Isla_Elizabeth a :Person,
-          :Woman ;
-      :hasFather data:Peter_Mark_Andrew_Phillips ;
-      :hasMother data:Autumn_Kelly .
-
-  data:Lindsay_Wallace a :Person,
+  data:Diane_dOrleans a :Person,
           :Woman .
 
-  data:Prince_Philip_Duke_of_Edinburgh a :Ancestor,
+  data:Henri_Count_of_Paris a :Ancestor,
           :Man,
           :Person ;
-      :isFatherOf data:Anne_Princess_Royal,
-          data:King_Charles_III .
+      :hasBirthYear 1908 ;
+      :hasDeathYear 1999 .
 
-  data:Queen_Camilla a :Person,
-          :Woman .
-
-  data:Queen_Elizabeth_II a :Ancestor,
-          :Person,
-          :Woman ;
-      :isFatherOf data:King_Charles_III ;
-      :isMotherOf data:Anne_Princess_Royal .
-
-  data:Savannah_Anne_Kathleen a :Person,
-          :Woman ;
-      :hasFather data:Peter_Mark_Andrew_Phillips ;
-      :hasMother data:Autumn_Kelly .
-
-  data:Stephanie_Phillips a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Sandy_Pflueger .
-
-  data:William_Prince_of_Wales a :Man,
+  data:Jean_Duke_of_Vendome a :Man,
           :Person .
 
-  data:Zara_Tindall a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Anne_Princess_Royal .
-
-  data:Heather_Tonkin a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Sandy_Pflueger a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Autumn_Kelly a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:King_Charles_III a :Man,
+  data:Luis_Cousino_y_Sebire a :Ancestor,
+          :Man,
           :Person .
 
-  data:Peter_Mark_Andrew_Phillips a :Ancestor,
+  data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Person,
+          :Woman ;
+      :hasBirthYear 1938 ;
+      :hasDeathYear 2022 ;
+      :hasFather data:Luis_Cousino_y_Sebire ;
+      :hasMarriageYear 1984 ;
+      :hasMother data:Antonia_Maria_Quinones_de_Leon_y_Banuelos .
+
+  data:Michel_Count_of_Evreux a :Man,
+          :Person .
+
+  data:Prince_Gundakar_of_Liechtenstein a :Man,
+          :Person .
+
+  data:Princess_Isabelle_of_Orleans_Braganza a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Thibaut_Count_of_La_Marche a :Man,
+          :Person .
+
+  data:Henri_Philippe_Pierre_Marie_dOrleans a :Ancestor,
           :Man,
           :Person ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Anne_Princess_Royal .
+      :hasBirthYear 1933 ;
+      :hasBrother data:Jacques_Duke_of_Orleans,
+          data:Michel_Count_of_Evreux,
+          data:Thibaut_Count_of_La_Marche ;
+      :hasDeathYear 2019 ;
+      :hasFather data:Henri_Count_of_Paris ;
+      :hasMother data:Princess_Isabelle_of_Orleans_Braganza ;
+      :hasRelation data:Duchess_Marie_Therese_of_Wurttemberg,
+          data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+      :hasSister data:Diane_dOrleans .
 
-  data:Anne_Princess_Royal a :Ancestor,
+  data:Duchess_Marie_Therese_of_Wurttemberg a :Ancestor,
           :Person,
-          :Woman .
+          :Woman ;
+      :hasBirthYear 1934 .
 
-  data:Mark_Phillips a :Ancestor,
+  data:Jacques_Duke_of_Orleans a :Ancestor,
           :Man,
           :Person .
 
 
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (59861d07-6c80-47fc-a322-ac61378201cd)
- Call ID: 59861d07-6c80-47fc-a322-ac61378201cd
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:1
-Violations:
-
-  Violation [1]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The node 'Queen_Elizabeth_II' is currently assigned the class ':Woman', but it is also used as a subject of the ':isFatherOf' relationship. The SHACL constraint requires that any subject of ':isFatherOf' must be classified as a ':Man'. Since Queen Elizabeth II is a woman, she cannot logically be a father.
-    LLM-provided instruction on how to handle the violation:
-      Use the 'RemoveTriple' tool to delete the ':isFatherOf' relationship originating from 'Queen_Elizabeth_II'. Do not assign the ':Man' class to this node as it contradicts the existing ':Woman' classification.
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (1c4c9e91-1655-483c-af81-73a81e9fc92c)
- Call ID: 1c4c9e91-1655-483c-af81-73a81e9fc92c
-  Args:
-    source: Queen_Elizabeth_II
-    target: King_Charles_III
-    relation: :isFatherOf
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-
-  data:Felicity_Wade a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Heather_Tonkin .
-
-  data:Harriet_Sperling a :Person,
-          :Woman .
-
-  data:Isla_Elizabeth a :Person,
-          :Woman ;
-      :hasFather data:Peter_Mark_Andrew_Phillips ;
-      :hasMother data:Autumn_Kelly .
-
-  data:Lindsay_Wallace a :Person,
-          :Woman .
-
-  data:Prince_Philip_Duke_of_Edinburgh a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:Anne_Princess_Royal,
-          data:King_Charles_III .
-
-  data:Queen_Camilla a :Person,
-          :Woman .
-
-  data:Queen_Elizabeth_II a :Ancestor,
-          :Person,
-          :Woman ;
-      :isMotherOf data:Anne_Princess_Royal .
-
-  data:Savannah_Anne_Kathleen a :Person,
-          :Woman ;
-      :hasFather data:Peter_Mark_Andrew_Phillips ;
-      :hasMother data:Autumn_Kelly .
-
-  data:Stephanie_Phillips a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Sandy_Pflueger .
-
-  data:William_Prince_of_Wales a :Man,
-          :Person .
-
-  data:Zara_Tindall a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Anne_Princess_Royal .
-
-  data:Heather_Tonkin a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:King_Charles_III a :Man,
-          :Person .
-
-  data:Sandy_Pflueger a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Autumn_Kelly a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Peter_Mark_Andrew_Phillips a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Anne_Princess_Royal .
-
-  data:Anne_Princess_Royal a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Mark_Phillips a :Ancestor,
-          :Man,
-          :Person .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (1cf45f79-831f-4d97-871e-bdea21f5f3f4)
- Call ID: 1cf45f79-831f-4d97-871e-bdea21f5f3f4
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1743,6 +1603,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (258ec692-9aab-45e5-8496-d4268bd5ed35)
- Call ID: 258ec692-9aab-45e5-8496-d4268bd5ed35
+  Finish (830a03db-070d-473e-9af7-8c24667bbbc6)
+ Call ID: 830a03db-070d-473e-9af7-8c24667bbbc6
   Args:

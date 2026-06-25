@@ -7,62 +7,63 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Oskar_of_Prussia a :Person ;
+    rdfs:label "Oskar of Prussia" ;
+    data:posIndicesFull "683:706",
+        "690:706" ;
+    data:posIndicesPart "1029:1034" ;
+    data:wdtLink wdt:Q100307 ;
+    :alsoKnownAs "Prince Oscar of Prussia" ;
+    :hasParent data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasSex data:male .
+
+data:female a :Female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Oskar_of_Prussia a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Oskar of Prussia" ;
-    data:posIndicesFull "330:353",
-        "337:353" ;
-    data:posIndicesPart "676:681" ;
-    data:wdtLink wdt:Q100307 ;
-    :alsoKnownAs "Prince Oscar of Prussia" ;
-    :hasFather data:Prince_Wilhelm-Karl_of_Prussia ;
-    :hasParent data:Prince_Wilhelm-Karl_of_Prussia ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Wilhelm-Karl_of_Prussia ;
-    :isSonOf data:Prince_Wilhelm-Karl_of_Prussia .
-
-data:Prince_Oskar_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Oskar_of_Prussia a :Person ;
     rdfs:label "Prince Oskar of Prussia" ;
-    data:posIndicesFull "330:353",
-        "337:353" ;
-    data:posIndicesPart "676:681" ;
+    data:posIndicesFull "683:706",
+        "690:706" ;
+    data:posIndicesPart "1029:1034" ;
     data:wdtLink wdt:Q61242 ;
     :alsoKnownAs "Oskar Karl Gustav Adolf of Prussia",
         "Oskar of Prussia",
         "Prince Oskar Karl Gustav Adolf of Prussia" ;
-    :hasChild data:Prince_Wilhelm-Karl_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Wilhelm-Karl_of_Prussia ;
-    :isFatherOf data:Prince_Wilhelm-Karl_of_Prussia ;
-    :isParentOf data:Prince_Wilhelm-Karl_of_Prussia .
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:male .
 
-data:Prince_Wilhelm-Karl_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Wilhelm-Karl_of_Prussia a :Person ;
     rdfs:label "Prince Wilhelm-Karl of Prussia" ;
-    data:posIndicesFull "279:309",
-        "286:309" ;
+    data:posIndicesFull "632:662",
+        "639:662" ;
     data:wdtLink wdt:Q92141 ;
     :alsoKnownAs "Prince Wilhelm Karl of Prussia",
         "Wilhelm-Karl of Prussia" ;
-    :hasChild data:Oskar_of_Prussia ;
-    :hasFather data:Prince_Oskar_of_Prussia ;
     :hasParent data:Prince_Oskar_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Oskar_of_Prussia ;
-    :isChildOf data:Prince_Oskar_of_Prussia ;
-    :isFatherOf data:Oskar_of_Prussia ;
-    :isParentOf data:Oskar_of_Prussia ;
-    :isSonOf data:Prince_Oskar_of_Prussia .
+    :hasSex data:male .
+
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "269:279",
+        "458:468" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasSex data:male .
+
+data:male a :Male .
 

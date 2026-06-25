@@ -85,31 +85,56 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Angelica Margherita Edwina Hicks (born 16 September 1992) is a British fashion illustrator and internet personality.
+Princess Beatrix*
+
+
+Princess Margriet*Pieter van Vollenhoven*
+
+
+Prince Hugo de Bourbon de Parme (Carlos Hugo Roderik Sybren; born 20 January 1997), formerly Hugo Klynstra, is a member of the extended Dutch royal family as the son of Prince Carlos, Hereditary Duke of Parma.
+He was the first great-grandchild of Queen Juliana of the Netherlands.
+Born out of wedlock, he was denied titles and family rights by his father until the Dutch Council of State ruled in his favor in 2018, granting him the style and title of His Royal Highness Prince Carlos Hugo
+Roderik Sybren de Bourbon de Parme.
+Despite the ruling, he is neither a member of the Dutch royal house (although considered a member of the extended Dutch royal family) nor a member of the House of Bourbon-Parma and is not in the line of succession to the defunct Parmese throne.
 Early life and family
 
-Hicks was born on 16 September 1992 to Marina Allegra Federica Silvia Tondato, an Italian designer, and Ashley Louis David Hicks, a British artist and interior designer.
-Hicks' paternal grandparents were the English interior decorator and designer David Nightingale Hicks and Lady Pamela Mountbatten, who served as a bridesmaid and as a lady-in-waiting to Elizabeth II.
-Through her grandmother, Hicks is a relative of the Mountbatten family, itself a branch of the German princely Battenberg family, and a relative of the British royal family.
-Hicks' great-grandparents, Louis Mountbatten, 1st Earl Mountbatten of Burma and The Honourable Edwina Ashley, served as the Viceroy and Vicereine of India.
-Hicks grew up in Chelsea, London and was educated at a boarding school.
-Career
+Carlos Hugo Roderik Sybren Klynstra was born in Nijmegen on 20 January 1997 to Prince Carlos de Bourbon de Parme, Prince of Piacenza and his friend Brigitte Klynstra.
+Due to being an illegitimate son, he was not born a prince.
+His father told Dutch media that Hugo's birth was "his mother's wish" and an "independent decision", denying his son any family rights.
+His maternal grandmother, Ingrid Pieksma-Klynstra, was the wife of Adolph Roderik Ernst Leopold, Count of Rechteren-Limpurg.
+Through his father, he is a grandson of Carlos Hugo, Duke of Parma and Princess Irene of the Netherlands.
+He is the first great-grandchild of Queen Juliana of the Netherlands and Prince Bernhard of Lippe-Biesterfeld.
+He is also a great-grandson of Prince Xavier of Bourbon-Parma and Madeleine de Bourbon-Busset.
+Upon the death of his grandfather, Carlos Hugo, in 2010, his father became the titular Duke of Parma and Piacenza, Carlist claimant to the Spanish throne, and the Head of the House of Bourbon-Parma.
+According to a royal decree of Queen Beatrix in 1996, his father is also a Dutch prince.
+He is the half-brother of Princess Luisa of Parma, Marchioness of Castell'Arquato, Princess Cecilia of Parma, Countess of Berceto and Prince Carlos of Parma, The Prince of Piacenza.
+Legal dispute over title
 
-Hicks works as a visual artist and fashion illustrator.
-Hicks also made commissioned pieces for the American fashion designer Tory Burch and illustrated for the magazines Elle and Porter.
-In 2021, Hicks launched a TikTok channel where she parodies haute couture outfits from red carpet events and fashion shows, recreating them out of duct tape, trash bags, metallic wrappers, foil, candy, and other materials.
-By July 2022, Hicks amassed over 48,000 followers and her videos collectively received over 4 million likes.
-Her videos led to Hicks collaborating with Valentino and Vogue Italia.
-By September 2022, Hicks had over 86,000 followers on TikTok.
-Personal life
+Upon turning eighteen in 2015, Hugo went to court to have his surname changed from Klynstra to his father's surname, 'de Bourbon de Parme', and claimed the dutch noble title of prince.
+The Hereditary Duke of Parma insisted that he had a formal agreement with Hugo's mother that their relationship was "no-strings-attached" and that there would be "no family entanglement" following Hugo's conception.
+In 2016 the Ministry of Justice and Security ruled in favor of Hugo's claim and granted him the use of his father's surname.
+On 28 February 2018, the Dutch Council of State ruled in Hugo's favor, stating that Dutch law on nobility was clear and that the circumstances of Hugo's birth are irrelevant, granting Hugo the right to claim both his father's surname and (dutch) noble title and address.
+As such, he became His Royal Highness Prince Carlos Hugo Roderik Sybren de Bourbon de Parme.
+The title of 'Prince(ss) de Bourbon de Parme' is a Dutch title, bestowed by Queen Beatrix in 1996, and does not mean that Hugo automatically became a member of the House of Bourbon-Parma.
+The court ruling stated that membership to the House of Bourbon-Parma is "a private matter for the royal house itself".
+As such, he is not in the line of succession to the defunct Parma throne.
+Titles and styles
 
-Hicks resides in Carroll Gardens in Brooklyn, New York.
+References
+
+
+
+
+2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
+3 title granted by Royal Decree to descendants of Princess Irene
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -125,39 +150,9 @@ Hicks resides in Carroll Gardens in Brooklyn, New York.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -172,6 +167,23 @@ Hicks resides in Carroll Gardens in Brooklyn, New York.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -189,6 +201,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -256,29 +283,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -287,6 +306,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -299,6 +326,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -307,17 +336,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -345,6 +376,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -360,133 +475,386 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9886e8ad-1533-4d34-a82c-f7abe1966065)
- Call ID: 9886e8ad-1533-4d34-a82c-f7abe1966065
+  AssignClass (fa7305af-d91c-44c0-9a1f-afadf43521d5)
+ Call ID: fa7305af-d91c-44c0-9a1f-afadf43521d5
   Args:
+    source: :Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
+    type: :Man
+  AssignClass (ee3bcd4a-34ed-4e6f-9b64-121f5aff6a8f)
+ Call ID: ee3bcd4a-34ed-4e6f-9b64-121f5aff6a8f
+  Args:
+    source: :Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
     type: :Person
-    source: Angelica_Margherita_Edwina_Hicks
-  AssignClass (a0b38d41-8e64-4d4f-8b7f-affabed97850)
- Call ID: a0b38d41-8e64-4d4f-8b7f-affabed97850
+  AddLiteral (89a9c710-ef94-42d7-aff8-5119769b3d95)
+ Call ID: 89a9c710-ef94-42d7-aff8-5119769b3d95
   Args:
-    type: :Woman
-    source: Angelica_Margherita_Edwina_Hicks
-  AssignClass (ac4b1196-1e9c-4c4c-9afb-47d2703f2cee)
- Call ID: ac4b1196-1e9c-4c4c-9afb-47d2703f2cee
+    relation: :knownAs
+    source: :Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
+    literal_value: Carlos Hugo Roderik Sybren de Bourbon de Parme
+    literal_type: xsd:string
+  AddLiteral (f8e6bac3-eeb6-47da-9d3c-82a7d0b68230)
+ Call ID: f8e6bac3-eeb6-47da-9d3c-82a7d0b68230
   Args:
-    type: :Female
-    source: Female
-  AddTriple (48f30c97-66f4-4ab8-ae54-17ec65fadc89)
- Call ID: 48f30c97-66f4-4ab8-ae54-17ec65fadc89
+    literal_value: Hugo Klynstra
+    relation: :formerlyKnownAs
+    source: :Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
+    literal_type: xsd:string
+  AddLiteral (1ed61975-ad7d-4d71-84cb-9cf20db9a026)
+ Call ID: 1ed61975-ad7d-4d71-84cb-9cf20db9a026
   Args:
-    target: Female
-    relation: :hasSex
-    source: Angelica_Margherita_Edwina_Hicks
-  AddLiteral (40d718db-8bca-4b95-ac53-206e9461bc3c)
- Call ID: 40d718db-8bca-4b95-ac53-206e9461bc3c
-  Args:
-    source: Angelica_Margherita_Edwina_Hicks
     literal_type: xsd:integer
+    literal_value: 1997
+    source: :Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
     relation: :hasBirthYear
-    literal_value: 1992
-  AssignClass (277fa65b-6bab-4343-9ab1-a3d133c557ba)
- Call ID: 277fa65b-6bab-4343-9ab1-a3d133c557ba
+  AssignClass (e9646db2-0ecb-4a29-bcb7-51cefd9bba82)
+ Call ID: e9646db2-0ecb-4a29-bcb7-51cefd9bba82
   Args:
-    type: :Person
-    source: Marina_Allegra_Federica_Silvia_Tondato
-  AssignClass (457bdf10-7523-4bf1-840a-18a7e2206252)
- Call ID: 457bdf10-7523-4bf1-840a-18a7e2206252
-  Args:
-    type: :Woman
-    source: Marina_Allegra_Federica_Silvia_Tondato
-  AddTriple (526912e5-695b-44f7-9422-6947186b615b)
- Call ID: 526912e5-695b-44f7-9422-6947186b615b
-  Args:
-    source: Angelica_Margherita_Edwina_Hicks
-    relation: :hasMother
-    target: Marina_Allegra_Federica_Silvia_Tondato
-  AssignClass (f344ecff-a43d-47ee-b29c-57a625d17237)
- Call ID: f344ecff-a43d-47ee-b29c-57a625d17237
-  Args:
-    type: :Person
-    source: Ashley_Louis_David_Hicks
-  AssignClass (140dc795-319a-4add-bb64-b0fb78509e99)
- Call ID: 140dc795-319a-4add-bb64-b0fb78509e99
-  Args:
+    source: :Prince_Carlos_de_Bourbon_de_Parme
     type: :Man
-    source: Ashley_Louis_David_Hicks
-  AddTriple (4b629bca-9182-49ce-9777-a8569261ef94)
- Call ID: 4b629bca-9182-49ce-9777-a8569261ef94
+  AssignClass (050b8b48-ad6a-4b0d-88d5-af3a61303b9f)
+ Call ID: 050b8b48-ad6a-4b0d-88d5-af3a61303b9f
   Args:
-    source: Angelica_Margherita_Edwina_Hicks
-    relation: :hasFather
-    target: Ashley_Louis_David_Hicks
-  AssignClass (bf019f58-63a3-4b5d-aae6-507f85b6d539)
- Call ID: bf019f58-63a3-4b5d-aae6-507f85b6d539
-  Args:
+    source: :Prince_Carlos_de_Bourbon_de_Parme
     type: :Person
-    source: David_Nightingale_Hicks
-  AssignClass (7a9a15db-1e3b-4a23-b7fb-3fee048c0cfe)
- Call ID: 7a9a15db-1e3b-4a23-b7fb-3fee048c0cfe
+  AssignClass (97bd6095-d803-4a12-a859-60ee0f2012d6)
+ Call ID: 97bd6095-d803-4a12-a859-60ee0f2012d6
   Args:
-    type: :Man
-    source: David_Nightingale_Hicks
-  AssignClass (3575ec05-088c-442a-9411-44d93126b89d)
- Call ID: 3575ec05-088c-442a-9411-44d93126b89d
-  Args:
-    type: :Person
-    source: Lady_Pamela_Mountbatten
-  AssignClass (31b56936-af0d-4ef8-9c95-127d2c34165c)
- Call ID: 31b56936-af0d-4ef8-9c95-127d2c34165c
-  Args:
+    source: :Brigitte_Klynstra
     type: :Woman
-    source: Lady_Pamela_Mountbatten
-  AddTriple (c55db32e-6ae9-4c06-a8c6-f786bf9a98bd)
- Call ID: c55db32e-6ae9-4c06-a8c6-f786bf9a98bd
+  AssignClass (a4393bc2-5a08-46c8-b178-d2513e401a95)
+ Call ID: a4393bc2-5a08-46c8-b178-d2513e401a95
   Args:
-    target: David_Nightingale_Hicks
+    source: :Brigitte_Klynstra
+    type: :Person
+  AddTriple (f1d53228-8580-400a-afbc-8a7113f2d1f2)
+ Call ID: f1d53228-8580-400a-afbc-8a7113f2d1f2
+  Args:
+    source: :Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
     relation: :hasFather
-    source: Ashley_Louis_David_Hicks
-  AddTriple (de6b39ef-87cb-4633-9da5-3d141a7b9ebb)
- Call ID: de6b39ef-87cb-4633-9da5-3d141a7b9ebb
+    target: :Prince_Carlos_de_Bourbon_de_Parme
+  AddTriple (6baccb8d-b866-4df5-824e-b2fbf323d996)
+ Call ID: 6baccb8d-b866-4df5-824e-b2fbf323d996
   Args:
-    target: Lady_Pamela_Mountbatten
+    target: :Brigitte_Klynstra
+    source: :Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme
     relation: :hasMother
-    source: Ashley_Louis_David_Hicks
-  AssignClass (e9f68ab1-93c4-4fe7-aef2-12526e5851aa)
- Call ID: e9f68ab1-93c4-4fe7-aef2-12526e5851aa
+  AssignClass (59366f17-56d6-493d-a9f8-bf68c340d7e1)
+ Call ID: 59366f17-56d6-493d-a9f8-bf68c340d7e1
   Args:
-    type: :Person
-    source: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
-  AssignClass (5b005d80-ed48-44c7-979a-06a07525a70c)
- Call ID: 5b005d80-ed48-44c7-979a-06a07525a70c
-  Args:
-    type: :Man
-    source: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
-  AssignClass (bc72045e-5c25-4167-893b-e1942f8c02cf)
- Call ID: bc72045e-5c25-4167-893b-e1942f8c02cf
-  Args:
-    type: :Person
-    source: The_Honourable_Edwina_Ashley
-  AssignClass (7e2848c4-36bc-4f1f-846d-283f620d04dc)
- Call ID: 7e2848c4-36bc-4f1f-846d-283f620d04dc
-  Args:
+    source: :Ingrid_Pieksma-Klynstra
     type: :Woman
-    source: The_Honourable_Edwina_Ashley
-  AddTriple (63f3c14a-18f9-44bb-a65a-11b7beefa800)
- Call ID: 63f3c14a-18f9-44bb-a65a-11b7beefa800
+  AssignClass (d596f1af-d724-4fd3-8cf9-6c3668051608)
+ Call ID: d596f1af-d724-4fd3-8cf9-6c3668051608
   Args:
-    target: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
-    relation: :hasFather
-    source: Lady_Pamela_Mountbatten
-  AddTriple (3ca7b8f2-763c-4e2c-b2cf-b9a75881ab24)
- Call ID: 3ca7b8f2-763c-4e2c-b2cf-b9a75881ab24
+    source: :Ingrid_Pieksma-Klynstra
+    type: :Person
+  AddTriple (17b58331-64d4-4c37-8f28-7fd8d3d7d402)
+ Call ID: 17b58331-64d4-4c37-8f28-7fd8d3d7d402
   Args:
-    target: The_Honourable_Edwina_Ashley
+    source: :Brigitte_Klynstra
     relation: :hasMother
-    source: Lady_Pamela_Mountbatten
-  Finish (b2be13dd-9c64-44e4-8d39-514053216126)
- Call ID: b2be13dd-9c64-44e4-8d39-514053216126
+    target: :Ingrid_Pieksma-Klynstra
+  AssignClass (18247b21-0c65-4087-ab49-a56d50fb1bb9)
+ Call ID: 18247b21-0c65-4087-ab49-a56d50fb1bb9
   Args:
+    source: :Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg
+    type: :Man
+  AssignClass (07e59e6a-20ba-4bee-af75-87b54af13810)
+ Call ID: 07e59e6a-20ba-4bee-af75-87b54af13810
+  Args:
+    source: :Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg
+    type: :Person
+  AddTriple (c59ec2bc-28af-48f5-bdbe-cd69001bdb25)
+ Call ID: c59ec2bc-28af-48f5-bdbe-cd69001bdb25
+  Args:
+    source: :Brigitte_Klynstra
+    relation: :hasFather
+    target: :Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg
+  AssignClass (c293dd61-592e-4282-963e-2450f059ed4c)
+ Call ID: c293dd61-592e-4282-963e-2450f059ed4c
+  Args:
+    source: :Carlos_Hugo_Duke_of_Parma
+    type: :Man
+  AssignClass (1a37c63a-795e-4215-abe1-23b4e64fda5f)
+ Call ID: 1a37c63a-795e-4215-abe1-23b4e64fda5f
+  Args:
+    source: :Carlos_Hugo_Duke_of_Parma
+    type: :Person
+  AssignClass (9b6e2411-28ae-4932-8a8f-75fe45fa7fa3)
+ Call ID: 9b6e2411-28ae-4932-8a8f-75fe45fa7fa3
+  Args:
+    source: :Princess_Irene_of_the_Netherlands
+    type: :Woman
+  AssignClass (7111326c-776f-4e75-9380-237f58a4a3cf)
+ Call ID: 7111326c-776f-4e75-9380-237f58a4a3cf
+  Args:
+    source: :Princess_Irene_of_the_Netherlands
+    type: :Person
+  AddTriple (1859c83a-b6f4-4f0f-8448-41ba3b7ddc28)
+ Call ID: 1859c83a-b6f4-4f0f-8448-41ba3b7ddc28
+  Args:
+    source: :Prince_Carlos_de_Bourbon_de_Parme
+    relation: :hasFather
+    target: :Carlos_Hugo_Duke_of_Parma
+  AddTriple (4273b8b5-f2ec-4649-8875-b953e5bfe75b)
+ Call ID: 4273b8b5-f2ec-4649-8875-b953e5bfe75b
+  Args:
+    source: :Prince_Carlos_de_Bourbon_de_Parme
+    relation: :hasMother
+    target: :Princess_Irene_of_the_Netherlands
+  AssignClass (493c193e-88f1-4201-ab0b-4b149cf73afb)
+ Call ID: 493c193e-88f1-4201-ab0b-4b149cf73afb
+  Args:
+    source: :Queen_Juliana_of_the_Netherlands
+    type: :Woman
+  AssignClass (a259f48d-bc58-4bed-b7f0-ffd9a2ff498e)
+ Call ID: a259f48d-bc58-4bed-b7f0-ffd9a2ff498e
+  Args:
+    source: :Queen_Juliana_of_the_Netherlands
+    type: :Person
+  AssignClass (c16b9db3-0c0a-4a05-9335-f26124f2655c)
+ Call ID: c16b9db3-0c0a-4a05-9335-f26124f2655c
+  Args:
+    source: :Prince_Bernhard_of_Lippe-Biesterfeld
+    type: :Man
+  AssignClass (527734ce-0a52-4bb3-a705-212fa2829c41)
+ Call ID: 527734ce-0a52-4bb3-a705-212fa2829c41
+  Args:
+    source: :Prince_Bernhard_of_Lippe-Biesterfeld
+    type: :Person
+  AddTriple (02bfb0c4-7811-4acd-99c4-8abcf8451e37)
+ Call ID: 02bfb0c4-7811-4acd-99c4-8abcf8451e37
+  Args:
+    target: :Queen_Juliana_of_the_Netherlands
+    source: :Princess_Irene_of_the_Netherlands
+    relation: :hasMother
+  AddTriple (c379986a-aee6-490a-a52c-8776efd2d3d5)
+ Call ID: c379986a-aee6-490a-a52c-8776efd2d3d5
+  Args:
+    target: :Prince_Bernhard_of_Lippe-Biesterfeld
+    source: :Princess_Irene_of_the_Netherlands
+    relation: :hasFather
+  AssignClass (b1ca2cb2-b69b-4652-9822-dbf893e22f51)
+ Call ID: b1ca2cb2-b69b-4652-9822-dbf893e22f51
+  Args:
+    source: :Prince_Xavier_of_Bourbon-Parma
+    type: :Man
+  AssignClass (f3207fc1-30ef-4aae-8bc4-b27eb1dc71a8)
+ Call ID: f3207fc1-30ef-4aae-8bc4-b27eb1dc71a8
+  Args:
+    source: :Prince_Xavier_of_Bourbon-Parma
+    type: :Person
+  AssignClass (4ca1ece1-2fac-48f4-ac9a-7b9f57781538)
+ Call ID: 4ca1ece1-2fac-48f4-ac9a-7b9f57781538
+  Args:
+    source: :Madeleine_de_Bourbon-Busset
+    type: :Woman
+  AssignClass (c7e7cd9b-6cd7-4c06-a076-49baac393aa1)
+ Call ID: c7e7cd9b-6cd7-4c06-a076-49baac393aa1
+  Args:
+    source: :Madeleine_de_Bourbon-Busset
+    type: :Person
+  AddTriple (92ab3ea0-7666-441d-bc50-589c2c676d88)
+ Call ID: 92ab3ea0-7666-441d-bc50-589c2c676d88
+  Args:
+    source: :Carlos_Hugo_Duke_of_Parma
+    relation: :hasFather
+    target: :Prince_Xavier_of_Bourbon-Parma
+  AddTriple (bd3bd679-56b5-43d6-8d01-36bf9506a143)
+ Call ID: bd3bd679-56b5-43d6-8d01-36bf9506a143
+  Args:
+    target: :Madeleine_de_Bourbon-Busset
+    source: :Carlos_Hugo_Duke_of_Parma
+    relation: :hasMother
+  AssignClass (8f7866f6-e6a3-49b8-931c-2a69f935102c)
+ Call ID: 8f7866f6-e6a3-49b8-931c-2a69f935102c
+  Args:
+    source: :Princess_Luisa_of_Parma
+    type: :Woman
+  AssignClass (b81ccddc-68eb-4f98-90d2-376413e825f5)
+ Call ID: b81ccddc-68eb-4f98-90d2-376413e825f5
+  Args:
+    source: :Princess_Luisa_of_Parma
+    type: :Person
+  AssignClass (cca72557-c7c8-4fe6-9a92-ccbb0ae237ea)
+ Call ID: cca72557-c7c8-4fe6-9a92-ccbb0ae237ea
+  Args:
+    source: :Princess_Cecilia_of_Parma
+    type: :Woman
+  AssignClass (97568c42-f986-47d2-a515-33e2df8d48ad)
+ Call ID: 97568c42-f986-47d2-a515-33e2df8d48ad
+  Args:
+    source: :Princess_Cecilia_of_Parma
+    type: :Person
+  AssignClass (da8d9de5-b465-4dd4-8fdf-9a7d3c4a4a46)
+ Call ID: da8d9de5-b465-4dd4-8fdf-9a7d3c4a4a46
+  Args:
+    source: :Prince_Carlos_of_Parma
+    type: :Man
+  AssignClass (93799352-d91d-4a66-91a8-69f85582157d)
+ Call ID: 93799352-d91d-4a66-91a8-69f85582157d
+  Args:
+    source: :Prince_Carlos_of_Parma
+    type: :Person
+  AddTriple (8a4fc450-5493-460c-b69f-320008f76095)
+ Call ID: 8a4fc450-5493-460c-b69f-320008f76095
+  Args:
+    target: :Princess_Luisa_of_Parma
+    source: :Prince_Carlos_de_Bourbon_de_Parme
+    relation: :isFatherOf
+  AddTriple (b427f536-436e-4017-9706-039d5a816d31)
+ Call ID: b427f536-436e-4017-9706-039d5a816d31
+  Args:
+    target: :Princess_Cecilia_of_Parma
+    source: :Prince_Carlos_de_Bourbon_de_Parme
+    relation: :isFatherOf
+  AddTriple (546816b5-b073-4935-9500-1538c04685e6)
+ Call ID: 546816b5-b073-4935-9500-1538c04685e6
+  Args:
+    source: :Prince_Carlos_de_Bourbon_de_Parme
+    relation: :isFatherOf
+    target: :Prince_Carlos_of_Parma
+  AssignClass (7597a032-6e2b-4178-b77d-27d8e3e8a71f)
+ Call ID: 7597a032-6e2b-4178-b77d-27d8e3e8a71f
+  Args:
+    source: :Queen_Beatrix
+    type: :Woman
+  AssignClass (709fbdc6-ff1b-4321-aa67-0335c9b6a80e)
+ Call ID: 709fbdc6-ff1b-4321-aa67-0335c9b6a80e
+  Args:
+    source: :Queen_Beatrix
+    type: :Person
+  AssignClass (056c915d-2010-428b-b298-8daa4e45292d)
+ Call ID: 056c915d-2010-428b-b298-8daa4e45292d
+  Args:
+    source: :Princess_Margriet
+    type: :Woman
+  AssignClass (0b54b683-c216-48e8-8c20-2e1855982053)
+ Call ID: 0b54b683-c216-48e8-8c20-2e1855982053
+  Args:
+    source: :Princess_Margriet
+    type: :Person
+  AssignClass (05c0addc-1a37-4c83-b830-12caa107d3fa)
+ Call ID: 05c0addc-1a37-4c83-b830-12caa107d3fa
+  Args:
+    source: :Pieter_van_Vollenhoven
+    type: :Man
+  AssignClass (cd6a579b-32dc-4895-b3c4-6d7de556f828)
+ Call ID: cd6a579b-32dc-4895-b3c4-6d7de556f828
+  Args:
+    source: :Pieter_van_Vollenhoven
+    type: :Person
+  Finish (07216177-610e-42e2-8199-25242fc8e5df)
+ Call ID: 07216177-610e-42e2-8199-25242fc8e5df
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -583,35 +951,71 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Angelica_Margherita_Edwina_Hicks a :Person,
-          :Woman ;
-      :hasBirthYear 1992 ;
-      :hasFather data:Ashley_Louis_David_Hicks ;
-      :hasMother data:Marina_Allegra_Federica_Silvia_Tondato ;
-      :hasSex data:Female .
+  data:Pieter_van_Vollenhoven a :Man,
+          :Person .
 
-  data:Ashley_Louis_David_Hicks a :Man,
+  data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme a :Man,
           :Person ;
-      :hasFather data:David_Nightingale_Hicks ;
-      :hasMother data:Lady_Pamela_Mountbatten .
+      :formerlyKnownAs "Hugo Klynstra"^^xsd:string ;
+      :hasBirthYear 1997 ;
+      :hasFather data:Prince_Carlos_de_Bourbon_de_Parme ;
+      :hasMother data:Brigitte_Klynstra ;
+      :knownAs "Carlos Hugo Roderik Sybren de Bourbon de Parme"^^xsd:string .
 
-  data:David_Nightingale_Hicks a :Man,
-          :Person .
-
-  data:Female a :Female .
-
-  data:Lady_Pamela_Mountbatten a :Person,
-          :Woman ;
-      :hasFather data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
-      :hasMother data:The_Honourable_Edwina_Ashley .
-
-  data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man,
-          :Person .
-
-  data:Marina_Allegra_Federica_Silvia_Tondato a :Person,
+  data:Princess_Margriet a :Person,
           :Woman .
 
-  data:The_Honourable_Edwina_Ashley a :Person,
+  data:Queen_Beatrix a :Person,
+          :Woman .
+
+  data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg a :Man,
+          :Person .
+
+  data:Brigitte_Klynstra a :Person,
+          :Woman ;
+      :hasFather data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg ;
+      :hasMother data:Ingrid_Pieksma-Klynstra .
+
+  data:Carlos_Hugo_Duke_of_Parma a :Man,
+          :Person ;
+      :hasFather data:Prince_Xavier_of_Bourbon-Parma ;
+      :hasMother data:Madeleine_de_Bourbon-Busset .
+
+  data:Ingrid_Pieksma-Klynstra a :Person,
+          :Woman .
+
+  data:Madeleine_de_Bourbon-Busset a :Person,
+          :Woman .
+
+  data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
+          :Person .
+
+  data:Prince_Carlos_de_Bourbon_de_Parme a :Man,
+          :Person ;
+      :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+      :hasMother data:Princess_Irene_of_the_Netherlands ;
+      :isFatherOf data:Prince_Carlos_of_Parma,
+          data:Princess_Cecilia_of_Parma,
+          data:Princess_Luisa_of_Parma .
+
+  data:Prince_Carlos_of_Parma a :Man,
+          :Person .
+
+  data:Prince_Xavier_of_Bourbon-Parma a :Man,
+          :Person .
+
+  data:Princess_Cecilia_of_Parma a :Person,
+          :Woman .
+
+  data:Princess_Irene_of_the_Netherlands a :Person,
+          :Woman ;
+      :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+      :hasMother data:Queen_Juliana_of_the_Netherlands .
+
+  data:Princess_Luisa_of_Parma a :Person,
+          :Woman .
+
+  data:Queen_Juliana_of_the_Netherlands a :Person,
           :Woman .
 
 
@@ -624,158 +1028,262 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (a4775316-9a62-4d23-91b4-33a83d9b77ed)
- Call ID: a4775316-9a62-4d23-91b4-33a83d9b77ed
+  ValidateShacl (14254a01-8b80-4a22-ad5e-76edc17da146)
+ Call ID: 14254a01-8b80-4a22-ad5e-76edc17da146
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:31
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node David_Nightingale_Hicks lacks the required class :Ancestor.
+      The person 'Carlos_Hugo_Duke_of_Parma' indicated as the father of 'Prince_Carlos_de_Bourbon_de_Parme' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='David_Nightingale_Hicks', class=':Ancestor')
+      AssignClass(node='Carlos_Hugo_Duke_of_Parma', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Lady_Pamela_Mountbatten lacks the required class :Ancestor.
+      The person 'Prince_Xavier_of_Bourbon-Parma' indicated as the father of 'Carlos_Hugo_Duke_of_Parma' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Lady_Pamela_Mountbatten', class=':Ancestor')
+      AssignClass(node='Prince_Xavier_of_Bourbon-Parma', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma lacks the required class :Ancestor.
+      The person 'Prince_Carlos_de_Bourbon_de_Parme' indicated as the father of 'Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma', class=':Ancestor')
+      AssignClass(node='Prince_Carlos_de_Bourbon_de_Parme', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node David_Nightingale_Hicks lacks the required class :Ancestor.
+      The person 'Princess_Irene_of_the_Netherlands' indicated as the mother of 'Prince_Carlos_de_Bourbon_de_Parme' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='David_Nightingale_Hicks', class=':Ancestor')
+      AssignClass(node='Princess_Irene_of_the_Netherlands', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Ashley_Louis_David_Hicks lacks the required class :Ancestor.
+      The person 'Madeleine_de_Bourbon-Busset' indicated as the mother of 'Carlos_Hugo_Duke_of_Parma' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ashley_Louis_David_Hicks', class=':Ancestor')
+      AssignClass(node='Madeleine_de_Bourbon-Busset', class=':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node The_Honourable_Edwina_Ashley lacks the required class :Ancestor.
+      The person 'Brigitte_Klynstra' indicated as the mother of 'Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='The_Honourable_Edwina_Ashley', class=':Ancestor')
+      AssignClass(node='Brigitte_Klynstra', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Lady_Pamela_Mountbatten lacks the required class :Ancestor.
+      The person 'Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg' indicated as the father of 'Brigitte_Klynstra' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Lady_Pamela_Mountbatten', class=':Ancestor')
+      AssignClass(node='Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Marina_Allegra_Federica_Silvia_Tondato lacks the required class :Ancestor.
+      The person 'Prince_Carlos_de_Bourbon_de_Parme' indicated as the father of 'Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Marina_Allegra_Federica_Silvia_Tondato', class=':Ancestor')
+      AssignClass(node='Prince_Carlos_de_Bourbon_de_Parme', class=':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma lacks the required class :Ancestor.
+      The person 'Prince_Xavier_of_Bourbon-Parma' indicated as the father of 'Carlos_Hugo_Duke_of_Parma' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma', class=':Ancestor')
+      AssignClass(node='Prince_Xavier_of_Bourbon-Parma', class=':Ancestor')
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Ashley_Louis_David_Hicks lacks the required class :Ancestor.
+      The person 'Prince_Bernhard_of_Lippe-Biesterfeld' indicated as the father of 'Princess_Irene_of_the_Netherlands' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ashley_Louis_David_Hicks', class=':Ancestor')
+      AssignClass(node='Prince_Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node David_Nightingale_Hicks lacks the required class :Ancestor.
+      The person 'Carlos_Hugo_Duke_of_Parma' indicated as the father of 'Prince_Carlos_de_Bourbon_de_Parme' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='David_Nightingale_Hicks', class=':Ancestor')
+      AssignClass(node='Carlos_Hugo_Duke_of_Parma', class=':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node The_Honourable_Edwina_Ashley lacks the required class :Ancestor.
+      The person 'Ingrid_Pieksma-Klynstra' indicated as the mother of 'Brigitte_Klynstra' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='The_Honourable_Edwina_Ashley', class=':Ancestor')
+      AssignClass(node='Ingrid_Pieksma-Klynstra', class=':Ancestor')
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Marina_Allegra_Federica_Silvia_Tondato lacks the required class :Ancestor.
+      The person 'Brigitte_Klynstra' indicated as the mother of 'Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Marina_Allegra_Federica_Silvia_Tondato', class=':Ancestor')
+      AssignClass(node='Brigitte_Klynstra', class=':Ancestor')
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Lady_Pamela_Mountbatten lacks the required class :Ancestor.
+      The person 'Madeleine_de_Bourbon-Busset' indicated as the mother of 'Carlos_Hugo_Duke_of_Parma' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Lady_Pamela_Mountbatten', class=':Ancestor')
+      AssignClass(node='Madeleine_de_Bourbon-Busset', class=':Ancestor')
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma lacks the required class :Ancestor.
+      The person 'Queen_Juliana_of_the_Netherlands' indicated as the mother of 'Princess_Irene_of_the_Netherlands' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma', class=':Ancestor')
+      AssignClass(node='Queen_Juliana_of_the_Netherlands', class=':Ancestor')
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Ashley_Louis_David_Hicks lacks the required class :Ancestor.
+      The person 'Princess_Irene_of_the_Netherlands' indicated as the mother of 'Prince_Carlos_de_Bourbon_de_Parme' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ashley_Louis_David_Hicks', class=':Ancestor')
+      AssignClass(node='Princess_Irene_of_the_Netherlands', class=':Ancestor')
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node The_Honourable_Edwina_Ashley lacks the required class :Ancestor.
+      The person 'Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg' indicated as the father of 'Brigitte_Klynstra' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='The_Honourable_Edwina_Ashley', class=':Ancestor')
+      AssignClass(node='Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg', class=':Ancestor')
 
 
   Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'Prince_Carlos_de_Bourbon_de_Parme' indicated as the father of 'Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme' is not categorized as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Carlos_de_Bourbon_de_Parme', class=':Ancestor')
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'Carlos_Hugo_Duke_of_Parma' indicated as the father of 'Prince_Carlos_de_Bourbon_de_Parme' is not categorized as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Carlos_Hugo_Duke_of_Parma', class=':Ancestor')
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'Prince_Xavier_of_Bourbon-Parma' indicated as the father of 'Carlos_Hugo_Duke_of_Parma' is not categorized as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Xavier_of_Bourbon-Parma', class=':Ancestor')
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'Prince_Bernhard_of_Lippe-Biesterfeld' indicated as the father of 'Princess_Irene_of_the_Netherlands' is not categorized as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
+
+
+  Violation [22]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Marina_Allegra_Federica_Silvia_Tondato lacks the required class :Ancestor.
+      The person 'Ingrid_Pieksma-Klynstra' indicated as the mother of 'Brigitte_Klynstra' is not categorized as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Marina_Allegra_Federica_Silvia_Tondato', class=':Ancestor')
+      AssignClass(node='Ingrid_Pieksma-Klynstra', class=':Ancestor')
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'Brigitte_Klynstra' indicated as the mother of 'Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme' is not categorized as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Brigitte_Klynstra', class=':Ancestor')
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'Princess_Irene_of_the_Netherlands' indicated as the mother of 'Prince_Carlos_de_Bourbon_de_Parme' is not categorized as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Irene_of_the_Netherlands', class=':Ancestor')
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'Madeleine_de_Bourbon-Busset' indicated as the mother of 'Carlos_Hugo_Duke_of_Parma' is not categorized as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Madeleine_de_Bourbon-Busset', class=':Ancestor')
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'Queen_Juliana_of_the_Netherlands' indicated as the mother of 'Princess_Irene_of_the_Netherlands' is not categorized as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Juliana_of_the_Netherlands', class=':Ancestor')
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg' indicated as the father of 'Brigitte_Klynstra' is not categorized as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg', class=':Ancestor')
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'Prince_Bernhard_of_Lippe-Biesterfeld' indicated as the father of 'Princess_Irene_of_the_Netherlands' is not categorized as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'Ingrid_Pieksma-Klynstra' indicated as the mother of 'Brigitte_Klynstra' is not categorized as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Ingrid_Pieksma-Klynstra', class=':Ancestor')
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'Queen_Juliana_of_the_Netherlands' indicated as the mother of 'Princess_Irene_of_the_Netherlands' is not categorized as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Juliana_of_the_Netherlands', class=':Ancestor')
+
+
+  Violation [31]:
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    LLM-provided explanation of the violation:
+      The node 'Prince_Carlos_de_Bourbon_de_Parme' is involved in an 'isFatherOf' relationship but is not categorized as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Carlos_de_Bourbon_de_Parme', class=':Ancestor')
 
 
 
@@ -784,36 +1292,75 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (de9f2429-2bc9-4002-ad7c-3206ee565ceb)
- Call ID: de9f2429-2bc9-4002-ad7c-3206ee565ceb
+  AssignClass (d53b5135-7f0b-4cb3-98b6-7b5867772882)
+ Call ID: d53b5135-7f0b-4cb3-98b6-7b5867772882
+  Args:
+    source: :Carlos_Hugo_Duke_of_Parma
+    type: :Ancestor
+  AssignClass (ccc717b6-196d-4856-adc5-39baa440f070)
+ Call ID: ccc717b6-196d-4856-adc5-39baa440f070
+  Args:
+    source: :Prince_Xavier_of_Bourbon-Parma
+    type: :Ancestor
+  AssignClass (e670c7f4-ff04-43da-89f4-dbf75c8ca729)
+ Call ID: e670c7f4-ff04-43da-89f4-dbf75c8ca729
+  Args:
+    source: :Prince_Carlos_de_Bourbon_de_Parme
+    type: :Ancestor
+  AssignClass (705b3eab-3c11-4125-8a03-2f08824a1671)
+ Call ID: 705b3eab-3c11-4125-8a03-2f08824a1671
+  Args:
+    source: :Princess_Irene_of_the_Netherlands
+    type: :Ancestor
+  AssignClass (7a566a92-9672-4cd4-b6d1-85ae73558782)
+ Call ID: 7a566a92-9672-4cd4-b6d1-85ae73558782
   Args:
     type: :Ancestor
-    source: David_Nightingale_Hicks
-  AssignClass (f3884b65-7f8f-4f27-9d2c-11e8a1b7c28d)
- Call ID: f3884b65-7f8f-4f27-9d2c-11e8a1b7c28d
+    source: :Madeleine_de_Bourbon-Busset
+  AssignClass (e8f8808f-da24-401f-8b94-05bf64c858c8)
+ Call ID: e8f8808f-da24-401f-8b94-05bf64c858c8
   Args:
-    source: Lady_Pamela_Mountbatten
+    source: :Brigitte_Klynstra
     type: :Ancestor
-  AssignClass (85189d20-247c-48bd-9924-21e0dcdadeb1)
- Call ID: 85189d20-247c-48bd-9924-21e0dcdadeb1
-  Args:
-    source: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
-    type: :Ancestor
-  AssignClass (0c9389f8-f84e-4fb4-95aa-108228e30c50)
- Call ID: 0c9389f8-f84e-4fb4-95aa-108228e30c50
-  Args:
-    source: Ashley_Louis_David_Hicks
-    type: :Ancestor
-  AssignClass (386d4b71-05b8-403c-be2b-16599d3d86a4)
- Call ID: 386d4b71-05b8-403c-be2b-16599d3d86a4
-  Args:
-    source: The_Honourable_Edwina_Ashley
-    type: :Ancestor
-  AssignClass (1effeace-3724-4da8-9451-166d04bd93cf)
- Call ID: 1effeace-3724-4da8-9451-166d04bd93cf
+  AssignClass (56c8bd62-6954-4a47-bb68-43f216227db9)
+ Call ID: 56c8bd62-6954-4a47-bb68-43f216227db9
   Args:
     type: :Ancestor
-    source: Marina_Allegra_Federica_Silvia_Tondato
+    source: :Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg
+  AssignClass (afe17e09-43f4-43ba-9ba9-40117268f707)
+ Call ID: afe17e09-43f4-43ba-9ba9-40117268f707
+  Args:
+    type: :Ancestor
+    source: :Prince_Bernhard_of_Lippe-Biesterfeld
+  AssignClass (912bcef9-9219-4dcd-a389-45dff2fda539)
+ Call ID: 912bcef9-9219-4dcd-a389-45dff2fda539
+  Args:
+    source: :Ingrid_Pieksma-Klynstra
+    type: :Ancestor
+  AssignClass (2b7baccc-5d6c-4bdf-8b2c-4e408ed0ffd0)
+ Call ID: 2b7baccc-5d6c-4bdf-8b2c-4e408ed0ffd0
+  Args:
+    source: :Queen_Juliana_of_the_Netherlands
+    type: :Ancestor
+  Finish (9e86db18-7219-4e16-8fa8-e00c3ba8d063)
+ Call ID: 9e86db18-7219-4e16-8fa8-e00c3ba8d063
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -842,51 +1389,95 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Angelica_Margherita_Edwina_Hicks a :Person,
-          :Woman ;
-      :hasBirthYear 1992 ;
-      :hasFather data:Ashley_Louis_David_Hicks ;
-      :hasMother data:Marina_Allegra_Federica_Silvia_Tondato ;
-      :hasSex data:Female .
+  data:Pieter_van_Vollenhoven a :Man,
+          :Person .
 
-  data:Ashley_Louis_David_Hicks a :Ancestor,
+  data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme a :Man,
+          :Person ;
+      :formerlyKnownAs "Hugo Klynstra"^^xsd:string ;
+      :hasBirthYear 1997 ;
+      :hasFather data:Prince_Carlos_de_Bourbon_de_Parme ;
+      :hasMother data:Brigitte_Klynstra ;
+      :knownAs "Carlos Hugo Roderik Sybren de Bourbon de Parme"^^xsd:string .
+
+  data:Princess_Margriet a :Person,
+          :Woman .
+
+  data:Queen_Beatrix a :Person,
+          :Woman .
+
+  data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Brigitte_Klynstra a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg ;
+      :hasMother data:Ingrid_Pieksma-Klynstra .
+
+  data:Carlos_Hugo_Duke_of_Parma a :Ancestor,
           :Man,
           :Person ;
-      :hasFather data:David_Nightingale_Hicks ;
-      :hasMother data:Lady_Pamela_Mountbatten .
+      :hasFather data:Prince_Xavier_of_Bourbon-Parma ;
+      :hasMother data:Madeleine_de_Bourbon-Busset .
 
-  data:David_Nightingale_Hicks a :Ancestor,
+  data:Ingrid_Pieksma-Klynstra a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Madeleine_de_Bourbon-Busset a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
           :Man,
           :Person .
 
-  data:Female a :Female .
+  data:Prince_Carlos_de_Bourbon_de_Parme a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+      :hasMother data:Princess_Irene_of_the_Netherlands ;
+      :isFatherOf data:Prince_Carlos_of_Parma,
+          data:Princess_Cecilia_of_Parma,
+          data:Princess_Luisa_of_Parma .
 
-  data:Lady_Pamela_Mountbatten a :Ancestor,
+  data:Prince_Carlos_of_Parma a :Man,
+          :Person .
+
+  data:Prince_Xavier_of_Bourbon-Parma a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Princess_Cecilia_of_Parma a :Person,
+          :Woman .
+
+  data:Princess_Irene_of_the_Netherlands a :Ancestor,
           :Person,
           :Woman ;
-      :hasFather data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
-      :hasMother data:The_Honourable_Edwina_Ashley .
+      :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+      :hasMother data:Queen_Juliana_of_the_Netherlands .
 
-  data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Marina_Allegra_Federica_Silvia_Tondato a :Ancestor,
-          :Person,
+  data:Princess_Luisa_of_Parma a :Person,
           :Woman .
 
-  data:The_Honourable_Edwina_Ashley a :Ancestor,
+  data:Queen_Juliana_of_the_Netherlands a :Ancestor,
           :Person,
           :Woman .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (f863f93d-28f1-4d33-afef-c3683db20fba)
- Call ID: f863f93d-28f1-4d33-afef-c3683db20fba
+  ValidateShacl (56da09d9-d061-44c7-b044-dc7b6008b76e)
+ Call ID: 56da09d9-d061-44c7-b044-dc7b6008b76e
   Args:
 
 ================================= Tool Message =================================
@@ -897,6 +1488,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (89049b55-cc4f-4aea-bf02-dd5df386bd9f)
- Call ID: 89049b55-cc4f-4aea-bf02-dd5df386bd9f
+  Finish (fcb20cee-4043-4d1b-a572-eb96cf578753)
+ Call ID: fcb20cee-4043-4d1b-a572-eb96cf578753
   Args:

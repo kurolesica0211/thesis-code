@@ -1,0 +1,203 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Duchess Cecilie of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "150:189"^^xsd:string,
+        "970:1009"^^xsd:string ;
+    data:wdtLink wdt:Q235812 ;
+    :alsoKnownAs "Cecilie, Crown Princess of Germany"^^xsd:string,
+        "Duchess Cecilie Auguste Marie of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasChild data:Prince_Wilhelm_of_Prussia ;
+    :hasRelation data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasSon data:Prince_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Prince_Wilhelm_of_Prussia ;
+    :isAuntOf data:Prince_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Prince_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "335:345"^^xsd:string,
+        "943:953"^^xsd:string,
+        "943:954"^^xsd:string ;
+    data:posIndicesPart "1108:1115"^^xsd:string,
+        "1251:1258"^^xsd:string,
+        "1444:1451"^^xsd:string,
+        "1634:1641"^^xsd:string,
+        "1737:1744"^^xsd:string,
+        "1866:1873"^^xsd:string,
+        "2067:2074"^^xsd:string,
+        "2167:2174"^^xsd:string,
+        "2306:2313"^^xsd:string,
+        "2392:2399"^^xsd:string,
+        "2434:2441"^^xsd:string,
+        "2804:2811"^^xsd:string,
+        "3022:3029"^^xsd:string,
+        "3079:3086"^^xsd:string,
+        "3261:3268"^^xsd:string,
+        "3320:3327"^^xsd:string,
+        "631:638"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Wilhelm-_German_Crown_Prince ;
+    :hasRelation data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Wilhelm-_German_Crown_Prince ;
+    :isAncestorOf data:Prince_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Wilhelm-_German_Crown_Prince ;
+    :isParentOf data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Wilhelm-_German_Crown_Prince .
+
+data:Wilhelm-_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm, German Crown Prince"^^xsd:string ;
+    data:posIndicesFull "116:144"^^xsd:string,
+        "363:383"^^xsd:string,
+        "874:894"^^xsd:string ;
+    data:posIndicesPart "1058:1064"^^xsd:string,
+        "1108:1115"^^xsd:string,
+        "1251:1258"^^xsd:string,
+        "1413:1419"^^xsd:string,
+        "1444:1451"^^xsd:string,
+        "1579:1584"^^xsd:string,
+        "1585:1591"^^xsd:string,
+        "1634:1641"^^xsd:string,
+        "1737:1744"^^xsd:string,
+        "1866:1873"^^xsd:string,
+        "2067:2074"^^xsd:string,
+        "2167:2174"^^xsd:string,
+        "2257:2263"^^xsd:string,
+        "2306:2313"^^xsd:string,
+        "2392:2399"^^xsd:string,
+        "2434:2441"^^xsd:string,
+        "2804:2811"^^xsd:string,
+        "3022:3029"^^xsd:string,
+        "3079:3086"^^xsd:string,
+        "3133:3139"^^xsd:string,
+        "3261:3268"^^xsd:string,
+        "3320:3327"^^xsd:string,
+        "3376:3382"^^xsd:string,
+        "3439:3445"^^xsd:string,
+        "430:436"^^xsd:string,
+        "570:576"^^xsd:string,
+        "631:638"^^xsd:string ;
+    data:wdtLink wdt:Q57621 ;
+    :alsoKnownAs "Crown Prince Wilhelm"^^xsd:string,
+        "Friedrich Wilhelm Victor August Ernst"^^xsd:string ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBrother data:Wilhelm-_German_Crown_Prince ;
+    :hasChild data:Prince_Wilhelm_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Prince_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm-_German_Crown_Prince ;
+    :isBrotherOf data:Wilhelm-_German_Crown_Prince ;
+    :isChildOf data:Wilhelm_II ;
+    :isFatherOf data:Prince_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Wilhelm-_German_Crown_Prince ;
+    :isSonOf data:Wilhelm_II ;
+    :isUncleOf data:Prince_Wilhelm_of_Prussia .
+
+data:Prince_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Wilhelm of Prussia"^^xsd:string ;
+    data:posIndicesFull "0:63"^^xsd:string ;
+    data:posIndicesPart "1058:1064"^^xsd:string,
+        "1108:1115"^^xsd:string,
+        "1251:1258"^^xsd:string,
+        "1444:1451"^^xsd:string,
+        "1585:1591"^^xsd:string,
+        "1634:1641"^^xsd:string,
+        "1737:1744"^^xsd:string,
+        "1866:1873"^^xsd:string,
+        "2067:2074"^^xsd:string,
+        "2167:2174"^^xsd:string,
+        "2306:2313"^^xsd:string,
+        "2392:2399"^^xsd:string,
+        "2434:2441"^^xsd:string,
+        "2602:2609"^^xsd:string,
+        "2804:2811"^^xsd:string,
+        "3022:3029"^^xsd:string,
+        "3079:3086"^^xsd:string,
+        "3261:3268"^^xsd:string,
+        "3320:3327"^^xsd:string,
+        "3376:3382"^^xsd:string,
+        "631:638"^^xsd:string ;
+    data:wdtLink wdt:Q77556 ;
+    :alsoKnownAs "Prince Wilhelm Friedrich Franz Joseph Christian Olaf of Prussia"^^xsd:string ;
+    :hasAncestor data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Wilhelm_of_Prussia ;
+    :hasFather data:Wilhelm-_German_Crown_Prince ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasRelation data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Prince_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_Wilhelm_of_Prussia ;
+    :isChildOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Prince_Wilhelm_of_Prussia ;
+    :isSonOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince .
+

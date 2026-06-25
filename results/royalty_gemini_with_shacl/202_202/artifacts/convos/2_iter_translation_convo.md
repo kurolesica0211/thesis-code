@@ -35,15 +35,17 @@ Violations:
 
   Violation [1]:
     Severity: Violation
-    Focus node: Ari
-    Path: isSonOf
-    Value: GaryLewis
+    Focus node: Gottfried
+    Path: hasFather
+    Value: PeterFerdinand
     Constraint: ClassConstraintComponent
     Source shape:
-      :Man-isSonOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isSonOf .
-    SHACL message: Value does not have class :Ancestor
+      :Person-hasFather a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Man ;
+          sh:maxCount 1 ;
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -75,11 +77,13 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isSonOf a owl:ObjectProperty ;
-          rdfs:domain :Man ;
-          rdfs:range :Ancestor ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf .
+      :hasFather a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
     Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
@@ -114,15 +118,17 @@ Violations:
 
   Violation [2]:
     Severity: Violation
-    Focus node: TaneMahuta
-    Path: isSonOf
-    Value: DavinaWindsor
+    Focus node: PeterFerdinand
+    Path: hasFather
+    Value: FerdinandIV
     Constraint: ClassConstraintComponent
     Source shape:
-      :Man-isSonOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isSonOf .
-    SHACL message: Value does not have class :Ancestor
+      :Person-hasFather a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Man ;
+          sh:maxCount 1 ;
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -154,12 +160,14 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isSonOf a owl:ObjectProperty ;
-          rdfs:domain :Man ;
-          rdfs:range :Ancestor ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf .
-    Classes assigned to the value node: [':Woman', ':Person']
+      :hasFather a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
+    Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
         :Man a owl:Class ;
@@ -193,15 +201,17 @@ Violations:
 
   Violation [3]:
     Severity: Violation
-    Focus node: TaneMahuta
-    Path: isSonOf
-    Value: GaryLewis
+    Focus node: Gottfried
+    Path: hasMother
+    Value: MariaCristina
     Constraint: ClassConstraintComponent
     Source shape:
-      :Man-isSonOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isSonOf .
-    SHACL message: Value does not have class :Ancestor
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
+          sh:maxCount 1 ;
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -233,12 +243,15 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isSonOf a owl:ObjectProperty ;
-          rdfs:domain :Man ;
-          rdfs:range :Ancestor ;
+      :hasMother a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Woman ;
           rdfs:subPropertyOf :hasParent,
-              :isChildOf .
-    Classes assigned to the value node: [':Man', ':Person']
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
+    Classes assigned to the value node: [':Woman', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
         :Man a owl:Class ;
@@ -272,25 +285,25 @@ Violations:
 
   Violation [4]:
     Severity: Violation
-    Focus node: TaneMahuta
-    Path: isSonOf
-    Value: DavinaWindsor
+    Focus node: Dorothea
+    Path: hasFather
+    Value: FranzOfBavaria
     Constraint: ClassConstraintComponent
     Source shape:
-      :Man-isSonOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isSonOf .
-    SHACL message: Value does not have class :Ancestor
-    Classes assigned to the focus node: [':Man', ':Person']
+      :Person-hasFather a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Man ;
+          sh:maxCount 1 ;
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    Classes assigned to the focus node: [':Woman', ':Person']
     Definitions of the classes assigned to the focus node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
+      Class :Woman:
+        :Woman a owl:Class ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
+                                owl:someValuesFrom :Female ] ) ] .
       Class :Person:
         :Person a owl:Class ;
             rdfs:subClassOf [ a owl:Restriction ;
@@ -312,21 +325,21 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isSonOf a owl:ObjectProperty ;
-          rdfs:domain :Man ;
-          rdfs:range :Ancestor ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf .
-    Classes assigned to the value node: [':Woman', ':Person']
+      :hasFather a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
+    Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
+      Class :Woman:
+        :Woman a owl:Class ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
+                                owl:someValuesFrom :Female ] ) ] .
       Class :Person:
         :Person a owl:Class ;
             rdfs:subClassOf [ a owl:Restriction ;
@@ -351,15 +364,17 @@ Violations:
 
   Violation [5]:
     Severity: Violation
-    Focus node: TaneMahuta
-    Path: isSonOf
-    Value: GaryLewis
+    Focus node: Gottfried
+    Path: hasFather
+    Value: PeterFerdinand
     Constraint: ClassConstraintComponent
     Source shape:
-      :Man-isSonOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isSonOf .
-    SHACL message: Value does not have class :Ancestor
+      :Person-hasFather a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Man ;
+          sh:maxCount 1 ;
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -391,11 +406,13 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isSonOf a owl:ObjectProperty ;
-          rdfs:domain :Man ;
-          rdfs:range :Ancestor ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf .
+      :hasFather a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
     Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
@@ -430,15 +447,17 @@ Violations:
 
   Violation [6]:
     Severity: Violation
-    Focus node: Ari
-    Path: isSonOf
-    Value: GaryLewis
+    Focus node: PeterFerdinand
+    Path: hasFather
+    Value: FerdinandIV
     Constraint: ClassConstraintComponent
     Source shape:
-      :Man-isSonOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isSonOf .
-    SHACL message: Value does not have class :Ancestor
+      :Person-hasFather a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Man ;
+          sh:maxCount 1 ;
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -470,11 +489,13 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isSonOf a owl:ObjectProperty ;
-          rdfs:domain :Man ;
-          rdfs:range :Ancestor ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf .
+      :hasFather a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
     Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
@@ -509,15 +530,17 @@ Violations:
 
   Violation [7]:
     Severity: Violation
-    Focus node: SennaKowhai
-    Path: isDaughterOf
-    Value: DavinaWindsor
+    Focus node: Dorothea
+    Path: hasMother
+    Value: IsabellaAntonie
     Constraint: ClassConstraintComponent
     Source shape:
-      :Woman-isDaughterOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isDaughterOf .
-    SHACL message: Value does not have class :Ancestor
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
+          sh:maxCount 1 ;
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     Classes assigned to the focus node: [':Woman', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Woman:
@@ -547,11 +570,14 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isDaughterOf a owl:ObjectProperty ;
-          rdfs:domain :Woman ;
-          rdfs:range :Ancestor ;
+      :hasMother a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Woman ;
           rdfs:subPropertyOf :hasParent,
-              :isChildOf .
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
     Classes assigned to the value node: [':Woman', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Woman:
@@ -584,90 +610,17 @@ Violations:
 
   Violation [8]:
     Severity: Violation
-    Focus node: SennaKowhai
-    Path: isDaughterOf
-    Value: GaryLewis
+    Focus node: Gottfried
+    Path: hasMother
+    Value: MariaCristina
     Constraint: ClassConstraintComponent
     Source shape:
-      :Woman-isDaughterOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isDaughterOf .
-    SHACL message: Value does not have class :Ancestor
-    Classes assigned to the focus node: [':Woman', ':Person']
-    Definitions of the classes assigned to the focus node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-      Class :Person:
-        :Person a owl:Class ;
-            rdfs:subClassOf [ a owl:Restriction ;
-                    owl:onProperty :hasFather ;
-                    owl:someValuesFrom :Man ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasMother ;
-                    owl:someValuesFrom :Woman ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasSex ;
-                    owl:someValuesFrom :Sex ],
-                [ a owl:Restriction ;
-                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                    owl:onClass :Person ;
-                    owl:onProperty :hasParent ],
-                :DomainEntity ;
-            owl:disjointWith :Sex ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:unionOf ( :Man :Woman ) ] .
-
-    Definition of the path:
-      :isDaughterOf a owl:ObjectProperty ;
-          rdfs:domain :Woman ;
-          rdfs:range :Ancestor ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf .
-    Classes assigned to the value node: [':Man', ':Person']
-    Definitions of the classes assigned to the value node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-      Class :Person:
-        :Person a owl:Class ;
-            rdfs:subClassOf [ a owl:Restriction ;
-                    owl:onProperty :hasFather ;
-                    owl:someValuesFrom :Man ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasMother ;
-                    owl:someValuesFrom :Woman ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasSex ;
-                    owl:someValuesFrom :Sex ],
-                [ a owl:Restriction ;
-                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                    owl:onClass :Person ;
-                    owl:onProperty :hasParent ],
-                :DomainEntity ;
-            owl:disjointWith :Sex ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:unionOf ( :Man :Woman ) ] .
-
-
-
-  Violation [9]:
-    Severity: Violation
-    Focus node: TaneMahuta
-    Path: isSonOf
-    Value: DavinaWindsor
-    Constraint: ClassConstraintComponent
-    Source shape:
-      :Man-isSonOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isSonOf .
-    SHACL message: Value does not have class :Ancestor
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
+          sh:maxCount 1 ;
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -699,11 +652,14 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isSonOf a owl:ObjectProperty ;
-          rdfs:domain :Man ;
-          rdfs:range :Ancestor ;
+      :hasMother a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Woman ;
           rdfs:subPropertyOf :hasParent,
-              :isChildOf .
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
     Classes assigned to the value node: [':Woman', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
@@ -736,17 +692,98 @@ Violations:
 
 
 
-  Violation [10]:
+  Violation [9]:
     Severity: Violation
-    Focus node: TaneMahuta
-    Path: isSonOf
-    Value: GaryLewis
+    Focus node: Dorothea
+    Path: hasFather
+    Value: FranzOfBavaria
     Constraint: ClassConstraintComponent
     Source shape:
-      :Man-isSonOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isSonOf .
-    SHACL message: Value does not have class :Ancestor
+      :Person-hasFather a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Man ;
+          sh:maxCount 1 ;
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    Classes assigned to the focus node: [':Woman', ':Person']
+    Definitions of the classes assigned to the focus node:
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+    Definition of the path:
+      :hasFather a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
+    Classes assigned to the value node: [':Man', ':Person']
+    Definitions of the classes assigned to the value node:
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+
+
+  Violation [10]:
+    Severity: Violation
+    Focus node: Gottfried
+    Path: hasFather
+    Value: PeterFerdinand
+    Constraint: ClassConstraintComponent
+    Source shape:
+      :Person-hasFather a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Man ;
+          sh:maxCount 1 ;
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -778,11 +815,13 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isSonOf a owl:ObjectProperty ;
-          rdfs:domain :Man ;
-          rdfs:range :Ancestor ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf .
+      :hasFather a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
     Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
@@ -817,15 +856,17 @@ Violations:
 
   Violation [11]:
     Severity: Violation
-    Focus node: Ari
-    Path: isSonOf
-    Value: GaryLewis
+    Focus node: PeterFerdinand
+    Path: hasFather
+    Value: FerdinandIV
     Constraint: ClassConstraintComponent
     Source shape:
-      :Man-isSonOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isSonOf .
-    SHACL message: Value does not have class :Ancestor
+      :Person-hasFather a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Man ;
+          sh:maxCount 1 ;
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -857,11 +898,13 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isSonOf a owl:ObjectProperty ;
-          rdfs:domain :Man ;
-          rdfs:range :Ancestor ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf .
+      :hasFather a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
     Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
@@ -896,15 +939,17 @@ Violations:
 
   Violation [12]:
     Severity: Violation
-    Focus node: SennaKowhai
-    Path: isDaughterOf
-    Value: DavinaWindsor
+    Focus node: Dorothea
+    Path: hasMother
+    Value: IsabellaAntonie
     Constraint: ClassConstraintComponent
     Source shape:
-      :Woman-isDaughterOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isDaughterOf .
-    SHACL message: Value does not have class :Ancestor
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
+          sh:maxCount 1 ;
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     Classes assigned to the focus node: [':Woman', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Woman:
@@ -934,11 +979,14 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isDaughterOf a owl:ObjectProperty ;
-          rdfs:domain :Woman ;
-          rdfs:range :Ancestor ;
+      :hasMother a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Woman ;
           rdfs:subPropertyOf :hasParent,
-              :isChildOf .
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
     Classes assigned to the value node: [':Woman', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Woman:
@@ -971,23 +1019,27 @@ Violations:
 
   Violation [13]:
     Severity: Violation
-    Focus node: SennaKowhai
-    Path: isDaughterOf
-    Value: GaryLewis
+    Focus node: Gottfried
+    Path: hasMother
+    Value: MariaCristina
     Constraint: ClassConstraintComponent
     Source shape:
-      :Woman-isDaughterOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isDaughterOf .
-    SHACL message: Value does not have class :Ancestor
-    Classes assigned to the focus node: [':Woman', ':Person']
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
+          sh:maxCount 1 ;
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
-      Class :Woman:
-        :Woman a owl:Class ;
+      Class :Man:
+        :Man a owl:Class ;
+            owl:disjointWith :Sex,
+                :Woman ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
+                                owl:someValuesFrom :Male ] ) ] .
       Class :Person:
         :Person a owl:Class ;
             rdfs:subClassOf [ a owl:Restriction ;
@@ -1009,19 +1061,24 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isDaughterOf a owl:ObjectProperty ;
-          rdfs:domain :Woman ;
-          rdfs:range :Ancestor ;
+      :hasMother a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Woman ;
           rdfs:subPropertyOf :hasParent,
-              :isChildOf .
-    Classes assigned to the value node: [':Man', ':Person']
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
+    Classes assigned to the value node: [':Woman', ':Person']
     Definitions of the classes assigned to the value node:
-      Class :Woman:
-        :Woman a owl:Class ;
+      Class :Man:
+        :Man a owl:Class ;
+            owl:disjointWith :Sex,
+                :Woman ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
+                                owl:someValuesFrom :Male ] ) ] .
       Class :Person:
         :Person a owl:Class ;
             rdfs:subClassOf [ a owl:Restriction ;
@@ -1046,15 +1103,17 @@ Violations:
 
   Violation [14]:
     Severity: Violation
-    Focus node: SennaKowhai
-    Path: isDaughterOf
-    Value: DavinaWindsor
+    Focus node: Dorothea
+    Path: hasFather
+    Value: FranzOfBavaria
     Constraint: ClassConstraintComponent
     Source shape:
-      :Woman-isDaughterOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isDaughterOf .
-    SHACL message: Value does not have class :Ancestor
+      :Person-hasFather a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Man ;
+          sh:maxCount 1 ;
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     Classes assigned to the focus node: [':Woman', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Woman:
@@ -1084,12 +1143,14 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isDaughterOf a owl:ObjectProperty ;
-          rdfs:domain :Woman ;
-          rdfs:range :Ancestor ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf .
-    Classes assigned to the value node: [':Woman', ':Person']
+      :hasFather a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
+    Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Woman:
         :Woman a owl:Class ;
@@ -1121,15 +1182,17 @@ Violations:
 
   Violation [15]:
     Severity: Violation
-    Focus node: SennaKowhai
-    Path: isDaughterOf
-    Value: GaryLewis
+    Focus node: Dorothea
+    Path: hasMother
+    Value: IsabellaAntonie
     Constraint: ClassConstraintComponent
     Source shape:
-      :Woman-isDaughterOf a sh:PropertyShape ;
-          sh:class :Ancestor ;
-          sh:path :isDaughterOf .
-    SHACL message: Value does not have class :Ancestor
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
+          sh:maxCount 1 ;
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     Classes assigned to the focus node: [':Woman', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Woman:
@@ -1159,12 +1222,15 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :isDaughterOf a owl:ObjectProperty ;
-          rdfs:domain :Woman ;
-          rdfs:range :Ancestor ;
+      :hasMother a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Woman ;
           rdfs:subPropertyOf :hasParent,
-              :isChildOf .
-    Classes assigned to the value node: [':Man', ':Person']
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
+    Classes assigned to the value node: [':Woman', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Woman:
         :Woman a owl:Class ;
@@ -1201,4 +1267,4 @@ Please analyze each violation and provide the corresponding explanation and fix 
 
 ================================== Ai Message ==================================
 
-[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The node \'GaryLewis\' linked via \'isSonOf\' for \'Ari\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(GaryLewis, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'DavinaWindsor\' linked via \'isSonOf\' for \'TaneMahuta\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(DavinaWindsor, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'GaryLewis\' linked via \'isSonOf\' for \'TaneMahuta\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(GaryLewis, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'DavinaWindsor\' linked via \'isSonOf\' for \'TaneMahuta\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(DavinaWindsor, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'GaryLewis\' linked via \'isSonOf\' for \'TaneMahuta\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(GaryLewis, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'GaryLewis\' linked via \'isSonOf\' for \'Ari\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(GaryLewis, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'DavinaWindsor\' linked via \'isDaughterOf\' for \'SennaKowhai\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(DavinaWindsor, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'GaryLewis\' linked via \'isDaughterOf\' for \'SennaKowhai\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(GaryLewis, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'DavinaWindsor\' linked via \'isSonOf\' for \'TaneMahuta\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(DavinaWindsor, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'GaryLewis\' linked via \'isSonOf\' for \'TaneMahuta\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(GaryLewis, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'GaryLewis\' linked via \'isSonOf\' for \'Ari\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(GaryLewis, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'DavinaWindsor\' linked via \'isDaughterOf\' for \'SennaKowhai\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(DavinaWindsor, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'GaryLewis\' linked via \'isDaughterOf\' for \'SennaKowhai\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(GaryLewis, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'DavinaWindsor\' linked via \'isDaughterOf\' for \'SennaKowhai\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(DavinaWindsor, :Ancestor)"\n    },\n    {\n      "explanation": "The node \'GaryLewis\' linked via \'isDaughterOf\' for \'SennaKowhai\' is not classified as an \':Ancestor\'.",\n      "instruction": "AssignClass(GaryLewis, :Ancestor)"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbH6usAo2YWZ6WzkrVrLjcoc4++vcERxavA+KJZFIJ0TCauqNGQUEko4siqZjan'}}]
+[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The node PeterFerdinand, which is the value of the \'hasFather\' property for Gottfried, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(PeterFerdinand, :Ancestor)"\n    },\n    {\n      "explanation": "The node FerdinandIV, which is the value of the \'hasFather\' property for PeterFerdinand, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(FerdinandIV, :Ancestor)"\n    },\n    {\n      "explanation": "The node MariaCristina, which is the value of the \'hasMother\' property for Gottfried, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(MariaCristina, :Ancestor)"\n    },\n    {\n      "explanation": "The node FranzOfBavaria, which is the value of the \'hasFather\' property for Dorothea, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(FranzOfBavaria, :Ancestor)"\n    },\n    {\n      "explanation": "The node PeterFerdinand, which is the value of the \'hasFather\' property for Gottfried, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(PeterFerdinand, :Ancestor)"\n    },\n    {\n      "explanation": "The node FerdinandIV, which is the value of the \'hasFather\' property for PeterFerdinand, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(FerdinandIV, :Ancestor)"\n    },\n    {\n      "explanation": "The node IsabellaAntonie, which is the value of the \'hasMother\' property for Dorothea, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(IsabellaAntonie, :Ancestor)"\n    },\n    {\n      "explanation": "The node MariaCristina, which is the value of the \'hasMother\' property for Gottfried, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(MariaCristina, :Ancestor)"\n    },\n    {\n      "explanation": "The node FranzOfBavaria, which is the value of the \'hasFather\' property for Dorothea, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(FranzOfBavaria, :Ancestor)"\n    },\n    {\n      "explanation": "The node PeterFerdinand, which is the value of the \'hasFather\' property for Gottfried, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(PeterFerdinand, :Ancestor)"\n    },\n    {\n      "explanation": "The node FerdinandIV, which is the value of the \'hasFather\' property for PeterFerdinand, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(FerdinandIV, :Ancestor)"\n    },\n    {\n      "explanation": "The node IsabellaAntonie, which is the value of the \'hasMother\' property for Dorothea, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(IsabellaAntonie, :Ancestor)"\n    },\n    {\n      "explanation": "The node MariaCristina, which is the value of the \'hasMother\' property for Gottfried, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(MariaCristina, :Ancestor)"\n    },\n    {\n      "explanation": "The node FranzOfBavaria, which is the value of the \'hasFather\' property for Dorothea, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(FranzOfBavaria, :Ancestor)"\n    },\n    {\n      "explanation": "The node IsabellaAntonie, which is the value of the \'hasMother\' property for Dorothea, is missing the mandatory class \':Ancestor\'.",\n      "instruction": "AssignClass(IsabellaAntonie, :Ancestor)"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbH12nKbHtch/MLDfo38sohYO5Wy/9eNmnkugtLEXUC3iyIxPrD8hKtOFsXiBuY'}}]

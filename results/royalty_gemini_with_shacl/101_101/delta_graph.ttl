@@ -2,46 +2,49 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
-        :Man,
-        :Person ;
+data:CountRichardVonPfeilUndKleinEllguth a :Man ;
+    :hasMother data:PrincessAlexandra .
+
+data:KonstantinJohannsmann a :Man ;
+    :hasMother data:PrincessNathalie .
+
+data:PrinceGustavAlbrecht a :Man ;
+    :hasFather data:Gustav ;
+    :hasMother data:CarinaAxelsson .
+
+data:PrinceVincentOfDenmark a :Man ;
+    :hasFather data:KingFrederikX .
+
+data:PrincessMafalda a :Woman ;
+    :hasFather data:Gustav ;
+    :hasMother data:CarinaAxelsson .
+
+data:KingFrederikX a :Ancestor,
+        :Man .
+
+data:PrinceRichard a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceRobin .
+
+data:PrinceRobin a :Man .
+
+data:PrincessBenedikte a :Ancestor,
+        :Woman .
+
+data:CarinaAxelsson a :Ancestor,
+        :Woman .
+
+data:Gustav a :Ancestor,
+        :Man ;
     :hasBirthYear 1969 ;
-    :hasDaughter data:Princess_Mafalda ;
-    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-    :hasMother data:Princess_Benedikte_of_Denmark ;
-    :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-    :hasSon data:Prince_Gustav_Albrecht .
+    :hasFather data:PrinceRichard ;
+    :hasMother data:PrincessBenedikte ;
+    :hasSister data:PrincessAlexandra,
+        data:PrincessNathalie .
 
-data:Prince_Gustav_Albrecht a :Ancestor,
-        :Man,
-        :Person ;
-    :hasMother data:Carina_Axelsson .
-
-data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg a :Man,
-        :Person .
-
-data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
+data:PrincessAlexandra a :Ancestor,
         :Woman .
 
-data:Princess_Benedikte_of_Denmark a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Princess_Mafalda a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasMother data:Carina_Axelsson .
-
-data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,
-        :Woman .
-
-data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBrother data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg .
-
-data:Carina_Axelsson a :Ancestor,
-        :Person,
+data:PrincessNathalie a :Ancestor,
         :Woman .
 

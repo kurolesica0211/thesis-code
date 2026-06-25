@@ -1,0 +1,826 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Christopher a :Man,
+        :Person ;
+    :hasBrother data:Christopher ;
+    :hasRelation data:Christopher ;
+    :isBloodrelationOf data:Christopher ;
+    :isBrotherOf data:Christopher ;
+    :isSiblingOf data:Christopher ;
+    :isUncleOf data:GeorgeII .
+
+data:Aimone a :Man,
+        :Person ;
+    :hasBrother data:Aimone ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :isBloodrelationOf data:Aimone ;
+    :isBrotherOf data:Aimone ;
+    :isSiblingOf data:Aimone .
+
+data:CarolOfRomania a :Man,
+        :Person ;
+    :hasBrother data:CarolOfRomania ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSister data:ElisabethOfRomania ;
+    :isBloodrelationOf data:CarolOfRomania,
+        data:ElisabethOfRomania ;
+    :isBrotherOf data:CarolOfRomania,
+        data:ElisabethOfRomania ;
+    :isSiblingOf data:CarolOfRomania,
+        data:ElisabethOfRomania .
+
+data:FerdinandI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FerdinandI ;
+    :hasChild data:ElisabethOfRomania ;
+    :hasDaughter data:ElisabethOfRomania ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :isAncestorOf data:ElisabethOfRomania ;
+    :isBloodrelationOf data:FerdinandI ;
+    :isBrotherOf data:FerdinandI ;
+    :isFatherOf data:ElisabethOfRomania ;
+    :isParentOf data:ElisabethOfRomania ;
+    :isSiblingOf data:FerdinandI ;
+    :isUncleOf data:ElisabethOfRomania .
+
+data:MarieOfRomania a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:ElisabethOfRomania ;
+    :hasDaughter data:ElisabethOfRomania ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSister data:MarieOfRomania ;
+    :isAncestorOf data:ElisabethOfRomania ;
+    :isAuntOf data:ElisabethOfRomania ;
+    :isBloodrelationOf data:MarieOfRomania ;
+    :isMotherOf data:ElisabethOfRomania ;
+    :isParentOf data:ElisabethOfRomania ;
+    :isSiblingOf data:MarieOfRomania ;
+    :isSisterOf data:MarieOfRomania .
+
+data:SophiaOfPrussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:GeorgeII ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSister data:SophiaOfPrussia ;
+    :hasSon data:GeorgeII ;
+    :isAncestorOf data:GeorgeII ;
+    :isAuntOf data:GeorgeII ;
+    :isBloodrelationOf data:SophiaOfPrussia ;
+    :isMotherOf data:GeorgeII ;
+    :isParentOf data:GeorgeII ;
+    :isSiblingOf data:SophiaOfPrussia ;
+    :isSisterOf data:SophiaOfPrussia .
+
+data:GeorgeI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeI ;
+    :hasChild data:ConstantineI ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSon data:ConstantineI ;
+    :isAncestorOf data:ConstantineI,
+        data:GeorgeII ;
+    :isBloodrelationOf data:GeorgeI ;
+    :isBrotherOf data:GeorgeI ;
+    :isFatherOf data:ConstantineI ;
+    :isParentOf data:ConstantineI ;
+    :isSiblingOf data:GeorgeI ;
+    :isUncleOf data:ConstantineI .
+
+data:OlgaConstantinovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:ConstantineI ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSister data:OlgaConstantinovna ;
+    :hasSon data:ConstantineI ;
+    :isAncestorOf data:ConstantineI,
+        data:GeorgeII ;
+    :isAuntOf data:ConstantineI ;
+    :isBloodrelationOf data:OlgaConstantinovna ;
+    :isMotherOf data:ConstantineI ;
+    :isParentOf data:ConstantineI ;
+    :isSiblingOf data:OlgaConstantinovna ;
+    :isSisterOf data:OlgaConstantinovna .
+
+data:VictoriaLouise a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:FredericaOfHanover ;
+    :hasDaughter data:FredericaOfHanover ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSister data:VictoriaLouise ;
+    :isAncestorOf data:ConstantineII,
+        data:FredericaOfHanover ;
+    :isAuntOf data:FredericaOfHanover ;
+    :isBloodrelationOf data:VictoriaLouise ;
+    :isMotherOf data:FredericaOfHanover ;
+    :isParentOf data:FredericaOfHanover ;
+    :isSiblingOf data:VictoriaLouise ;
+    :isSisterOf data:VictoriaLouise .
+
+data:Philip a :Man,
+        :Person ;
+    :hasAncestor data:Andrew ;
+    :hasBrother data:Philip ;
+    :hasFather data:Andrew ;
+    :hasParent data:Andrew ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :isBloodrelationOf data:Philip ;
+    :isBrotherOf data:Philip ;
+    :isChildOf data:Andrew ;
+    :isSiblingOf data:Philip ;
+    :isSonOf data:Andrew .
+
+data:Andrew a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Andrew,
+        data:ConstantineI ;
+    :hasChild data:Philip ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSon data:Philip ;
+    :isAncestorOf data:Philip ;
+    :isBloodrelationOf data:Andrew,
+        data:ConstantineI ;
+    :isBrotherOf data:Andrew,
+        data:ConstantineI ;
+    :isFatherOf data:Philip ;
+    :isParentOf data:Philip ;
+    :isSiblingOf data:Andrew,
+        data:ConstantineI ;
+    :isUncleOf data:GeorgeII,
+        data:Philip .
+
+data:FredericaOfHanover a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:VictoriaLouise ;
+    :hasChild data:ConstantineII ;
+    :hasMother data:VictoriaLouise ;
+    :hasParent data:VictoriaLouise ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSister data:FredericaOfHanover ;
+    :hasSon data:ConstantineII ;
+    :isAncestorOf data:ConstantineII ;
+    :isAuntOf data:ConstantineII ;
+    :isBloodrelationOf data:FredericaOfHanover ;
+    :isChildOf data:VictoriaLouise ;
+    :isDaughterOf data:VictoriaLouise ;
+    :isMotherOf data:ConstantineII ;
+    :isParentOf data:ConstantineII ;
+    :isSiblingOf data:FredericaOfHanover ;
+    :isSisterOf data:FredericaOfHanover .
+
+data:ElisabethOfRomania a :Person,
+        :Woman ;
+    :hasAncestor data:FerdinandI,
+        data:MarieOfRomania ;
+    :hasBrother data:CarolOfRomania ;
+    :hasFather data:FerdinandI ;
+    :hasMother data:MarieOfRomania ;
+    :hasParent data:FerdinandI,
+        data:MarieOfRomania ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSister data:ElisabethOfRomania ;
+    :isBloodrelationOf data:CarolOfRomania,
+        data:ElisabethOfRomania ;
+    :isChildOf data:FerdinandI,
+        data:MarieOfRomania ;
+    :isDaughterOf data:FerdinandI,
+        data:MarieOfRomania ;
+    :isSiblingOf data:CarolOfRomania,
+        data:ElisabethOfRomania ;
+    :isSisterOf data:CarolOfRomania,
+        data:ElisabethOfRomania .
+
+data:ConstantineII a :Man,
+        :Person ;
+    :hasAncestor data:FredericaOfHanover,
+        data:Paul,
+        data:VictoriaLouise ;
+    :hasBrother data:ConstantineII ;
+    :hasFather data:Paul ;
+    :hasMother data:FredericaOfHanover ;
+    :hasParent data:FredericaOfHanover,
+        data:Paul ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :isBloodrelationOf data:ConstantineII ;
+    :isBrotherOf data:ConstantineII ;
+    :isChildOf data:FredericaOfHanover,
+        data:Paul ;
+    :isSiblingOf data:ConstantineII ;
+    :isSonOf data:FredericaOfHanover,
+        data:Paul .
+
+data:Alexander a :Man,
+        :Person ;
+    :hasBrother data:Alexander,
+        data:GeorgeII,
+        data:Paul ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine ;
+    :isBloodrelationOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isBrotherOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isSiblingOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isUncleOf data:ConstantineII .
+
+data:Helen a :Person,
+        :Woman ;
+    :hasBrother data:Alexander,
+        data:GeorgeII,
+        data:Paul ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine ;
+    :isAuntOf data:ConstantineII ;
+    :isBloodrelationOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isSiblingOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isSisterOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul .
+
+data:Irene a :Person,
+        :Woman ;
+    :hasBrother data:Alexander,
+        data:GeorgeII,
+        data:Paul ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine ;
+    :isAuntOf data:ConstantineII ;
+    :isBloodrelationOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isSiblingOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isSisterOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul .
+
+data:Katherine a :Person,
+        :Woman ;
+    :hasBrother data:Alexander,
+        data:GeorgeII,
+        data:Paul ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine ;
+    :isAuntOf data:ConstantineII ;
+    :isBloodrelationOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isSiblingOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isSisterOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul .
+
+data:ConstantineI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:GeorgeI,
+        data:OlgaConstantinovna ;
+    :hasBrother data:Andrew,
+        data:ConstantineI ;
+    :hasChild data:GeorgeII ;
+    :hasFather data:GeorgeI ;
+    :hasMother data:OlgaConstantinovna ;
+    :hasParent data:GeorgeI,
+        data:OlgaConstantinovna ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSon data:GeorgeII ;
+    :isAncestorOf data:GeorgeII ;
+    :isBloodrelationOf data:Andrew,
+        data:ConstantineI ;
+    :isBrotherOf data:Andrew,
+        data:ConstantineI ;
+    :isChildOf data:GeorgeI,
+        data:OlgaConstantinovna ;
+    :isFatherOf data:GeorgeII ;
+    :isParentOf data:GeorgeII ;
+    :isSiblingOf data:Andrew,
+        data:ConstantineI ;
+    :isSonOf data:GeorgeI,
+        data:OlgaConstantinovna ;
+    :isUncleOf data:GeorgeII,
+        data:Philip .
+
+data:Paul a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander,
+        data:GeorgeII,
+        data:Paul ;
+    :hasChild data:ConstantineII ;
+    :hasMarriageYear 1938 ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine ;
+    :hasSon data:ConstantineII ;
+    :isAncestorOf data:ConstantineII ;
+    :isBloodrelationOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isBrotherOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isFatherOf data:ConstantineII ;
+    :isParentOf data:ConstantineII ;
+    :isSiblingOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isUncleOf data:ConstantineII .
+
+data:GeorgeII a :Man,
+        :Person ;
+    :hasAncestor data:ConstantineI,
+        data:GeorgeI,
+        data:OlgaConstantinovna,
+        data:SophiaOfPrussia ;
+    :hasBirthYear 1890 ;
+    :hasBrother data:Alexander,
+        data:GeorgeII,
+        data:Paul ;
+    :hasDeathYear 1947 ;
+    :hasFather data:ConstantineI ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:SophiaOfPrussia ;
+    :hasParent data:ConstantineI,
+        data:SophiaOfPrussia ;
+    :hasRelation data:Aimone,
+        data:Alexander,
+        data:Andrew,
+        data:CarolOfRomania,
+        data:ConstantineI,
+        data:ConstantineII,
+        data:ElisabethOfRomania,
+        data:FerdinandI,
+        data:FredericaOfHanover,
+        data:GeorgeI,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:MarieOfRomania,
+        data:OlgaConstantinovna,
+        data:Paul,
+        data:Philip,
+        data:SophiaOfPrussia,
+        data:VictoriaLouise ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine ;
+    :isBloodrelationOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isBrotherOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isChildOf data:ConstantineI,
+        data:SophiaOfPrussia ;
+    :isSiblingOf data:Alexander,
+        data:GeorgeII,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Paul ;
+    :isSonOf data:ConstantineI,
+        data:SophiaOfPrussia ;
+    :isUncleOf data:ConstantineII .
+

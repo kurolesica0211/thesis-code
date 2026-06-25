@@ -69,49 +69,23 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Ernst August, Hereditary Prince of Hanover (German:
-Ernst August Prinz von Hannover Herzog zu Braunschweig und Lüneburg, Königlicher Prinz von Großbritannien und Irland; born 19 July 1983) is a German financier and the eldest child of Ernst August, Prince of Hanover (head of the ancient House of Hanover which once ruled the Kingdom of Hanover and were rulers of Great Britain until 1901) and his first wife Chantal Hochuli.
-Due to his father's second marriage, he is also the stepson of Caroline, Princess of Hanover, a Monegasque Princess and the sister of Albert II of Monaco.
-Background
-
-Ernst August and his younger brother Christian were born in Hildesheim, Lower Saxony, while their half-sister, Alexandra, was born in Austria and lives with her mother in Monaco.
-Ernst August was baptized on 15 October 1983 at Marienburg Castle, his godparents including Felipe VI of Spain and Constantine II of Greece.
-Until his mid-teens, Ernst August and his brother lived at Hurlingham Lodge in London.
-Education
-
-Ernst August began his secondary education at Malvern College, but ultimately completed that phase of his education with an International Baccalaureate back on the Continent.
-After his marriage in 2017 he and his wife moved to Hanover.
-Already in 2004, his father had signed over to him the German property of the House of Hanover, including gothic-revival Marienburg Castle, the agricultural estates of Calenberg Castle and the Fürstenhaus ("Princely House") at Herrenhausen Gardens in Hanover; the elaborate museum in this small palace, built by King George I of Great Britain in 1720, has been closed to the public since 2011.
-Since 2004, the prince has taken over many representative tasks on behalf of his father.
-The father remained in charge of the Austrian family assets until 2013 when he was removed from the chairmanship of a family foundation based in Liechtenstein, the Duke of Cumberland Foundation, which holds the properties near Gmunden in Austria, the Hanovers' main residence in exile after 1866 when their Kingdom of Hanover was annexed by Prussia.
-Instead, the younger Ernst August was put in charge, reportedly for negligence on part of his father, at the initiative of the foundation's trustee Prince Michael of Liechtenstein.
-In 2017 Ernst August the Elder filed legal action to recover chairmanship.
-In 2014, Ernst August lent a number of paintings and objects for a Lower Saxony state exhibition, When the Royals came from Hanover - The rulers of Hanover on England's throne, which included exhibits in five museums and castles under the auspices of Charles, Prince of Wales.
-Thirty of more than 1000 items were contributed by Elizabeth II, including the State Crown of George I, while Ernst August provided the king's famous Augsburg silver throne and other furniture dating to 1720.
-He hosted a parallel exhibition, The Way to the Crown, at Marienburg Castle until through 2016, displaying—among other items—the crown jewels of the Kingdom of Hanover.
-Marriage and issue
-
-In the summer of 2016 Ernst August became engaged to Ekaterina Igorievna Malysheva (born 30 July 1986, Apatity, Soviet Russia), a Russian designer, general manager of Audiotube and founder of EKAT, and daughter of Igor Malyshev and Svetlana Malysheva.
-Days before the wedding, his father, the elder Ernst August publicly stated concerns about potential adverse impacts on family assets if the younger Ernst August were to marry his chosen fiancée.
-Despite the dynastic tradition of obtaining the head of the House of Hanover's express, prior authorization for an heir's marriage in accordance with an 1836 Hanoverian house law (as Ernst August's father had done when marrying his sons' future mother in 1981), the bridegroom's father declared his intention to withhold consent for his son's marriage to Ekaterina Malysheva, reportedly in a dispute over family assets.
-Nonetheless, the civil marriage took place on 6 July 2017 in Hanover's New Town Hall and was conducted by the mayor of Hanover, Stefan Schostok.
-The church marriage took place on 8 July 2017 in the Hanover Market Church at which the former Landesbischof of the Evangelical-Lutheran Church of Hanover, Horst Hirschler, presided.
-Her wedding dress was the work of Lebanese designer Sandra Mansour, and she wore a tiara that belonged to the former Kaiser Wilhelm II's only daughter, Princess Victoria Louise of Prussia.
-Among the wedding guests were: Prince Christian of Hanover, Princess Alexandra of Hanover, Andrea Casiraghi, Tatiana Santo Domingo, Pierre Casiraghi, Beatrice Borromeo, Charlotte Casiraghi, Georg Friedrich, Prince of Prussia and his wife Princess Sophie, Crown Prince Pavlos of Greece and his wife Crown Princess Marie-Chantal, Hereditary Prince Hubertus of Saxe-Coburg and Gotha, Alexander, Prince of Schaumburg-Lippe and Princess Elisabeth von Thurn und Taxis.
-The father of the groom, Prince Ernst August, did not attend the wedding.
-Thus, while descendants of non-dynastic marriages may have a legal right to the use of "Prinz/Prinzessin von Hannover Herzog/Herzogin zu Braunschweig und Lüneburg Königlicher Prinz/Prinzessin von Großbritannien und Irland" as surnames, they are not recognized as bearing rank, styles titles or membership appertaining to the House of Hanover, according to its house rules.
-Nor is the title "Prince/ss of Great Britain and Ireland", re-claimed by the deposed House of Hanover in 1931, accorded by British sovereigns to members thereof born after 30 November 1917.
-
-
-Notes and references
-
-External links
+Samuel Chatto (born 28 July 1996) is a British ceramic artist.
+He is a member of the extended British royal family as the elder child of Lady Sarah Chatto and Daniel Chatto, both of whom are artists.
+He is a grandson of Princess Margaret, Countess of Snowdon and a great-nephew of Elizabeth II.
+Chatto studied at the University of Edinburgh, and graduated in 2018 with a degree in art history.
+Chatto has a home studio, and has sold his creations on his own website.
+Chatto has spent time in Japan to learn pottery techniques.
+In 2019, Chatto spent six weeks in India to complete 200 hours of training to become a yoga instructor.
+Chatto does not have any official royal duties, but has attended several events such as the state funeral of Elizabeth II, the coronation of Charles III and Camilla, and the wedding of Prince Harry and Meghan Markle.
+Chatto attended a banquet during a state visit by Japanese Emperor Naruhito to the United Kingdom in 2024.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -127,39 +101,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -174,6 +118,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -191,6 +152,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,29 +234,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -289,6 +257,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -301,6 +277,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -309,17 +287,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -347,6 +327,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -362,115 +426,87 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f6a61ae9-cae5-4baf-a593-0d1baf8de5ca)
- Call ID: f6a61ae9-cae5-4baf-a593-0d1baf8de5ca
+  AssignClass (9880759d-07d5-406c-881f-4cdaa90c159f)
+ Call ID: 9880759d-07d5-406c-881f-4cdaa90c159f
   Args:
-    source: ErnstAugust_HereditaryPrinceOfHanover
+    source: SamuelChatto
     type: :Man
-  AssignClass (a4400a92-3d69-498d-ae6c-3d6cda540f00)
- Call ID: a4400a92-3d69-498d-ae6c-3d6cda540f00
+  AssignClass (9b3940fb-200f-489e-ba1f-86add769bcda)
+ Call ID: 9b3940fb-200f-489e-ba1f-86add769bcda
   Args:
-    source: ErnstAugust_PrinceOfHanover
-    type: :Man
-  AssignClass (5fb9f617-4b4f-49d7-9ceb-8b771c291b37)
- Call ID: 5fb9f617-4b4f-49d7-9ceb-8b771c291b37
+    source: SamuelChatto
+    type: :Person
+  AddLiteral (65ba9292-a08c-4348-8cdd-ac085f80b0a1)
+ Call ID: 65ba9292-a08c-4348-8cdd-ac085f80b0a1
   Args:
-    type: :Woman
-    source: ChantalHochuli
-  AssignClass (fec7fd2b-b74d-40d0-b503-8642dbb1ddba)
- Call ID: fec7fd2b-b74d-40d0-b503-8642dbb1ddba
-  Args:
-    type: :Man
-    source: ChristianOfHanover
-  AssignClass (5dc5a6fc-3ade-44c7-bf23-c0de5e6cae40)
- Call ID: 5dc5a6fc-3ade-44c7-bf23-c0de5e6cae40
-  Args:
-    type: :Woman
-    source: AlexandraOfHanover
-  AssignClass (ec677dbf-1dc1-4cdc-8a19-ec9370f23d26)
- Call ID: ec677dbf-1dc1-4cdc-8a19-ec9370f23d26
-  Args:
-    type: :Woman
-    source: EkaterinaIgorievnaMalysheva
-  AssignClass (00007625-54ef-44c7-aed1-cda74491d70d)
- Call ID: 00007625-54ef-44c7-aed1-cda74491d70d
-  Args:
-    source: IgorMalyshev
-    type: :Man
-  AssignClass (5ad80e38-0efc-4fca-be2d-63b0d0fce528)
- Call ID: 5ad80e38-0efc-4fca-be2d-63b0d0fce528
-  Args:
-    type: :Woman
-    source: SvetlanaMalysheva
-  AddLiteral (a9ed685b-6a55-4d43-8d6c-49f97d43b636)
- Call ID: a9ed685b-6a55-4d43-8d6c-49f97d43b636
-  Args:
-    source: ErnstAugust_HereditaryPrinceOfHanover
-    literal_value: 1983
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddTriple (6c97ecf2-72cb-41c0-987e-c666e24e19ee)
- Call ID: 6c97ecf2-72cb-41c0-987e-c666e24e19ee
+    source: SamuelChatto
+    literal_value: 1996
+  AssignClass (947d1e6d-207c-4b08-8b4c-e1b9871053ac)
+ Call ID: 947d1e6d-207c-4b08-8b4c-e1b9871053ac
   Args:
-    source: ErnstAugust_HereditaryPrinceOfHanover
-    target: ErnstAugust_PrinceOfHanover
-    relation: :hasFather
-  AddTriple (7ef9e6f1-9699-41a2-95fc-8ed45e53fc69)
- Call ID: 7ef9e6f1-9699-41a2-95fc-8ed45e53fc69
+    source: LadySarahChatto
+    type: :Woman
+  AssignClass (14ba6810-3731-49ab-8621-773d105b5c6a)
+ Call ID: 14ba6810-3731-49ab-8621-773d105b5c6a
   Args:
-    source: ErnstAugust_HereditaryPrinceOfHanover
-    target: ChantalHochuli
+    type: :Person
+    source: LadySarahChatto
+  AssignClass (9ecc3780-b30b-4783-a112-ca63ad6e31dd)
+ Call ID: 9ecc3780-b30b-4783-a112-ca63ad6e31dd
+  Args:
+    type: :Man
+    source: DanielChatto
+  AssignClass (b0c9a5c2-3a9f-4c62-bfe6-d00b1790e06d)
+ Call ID: b0c9a5c2-3a9f-4c62-bfe6-d00b1790e06d
+  Args:
+    type: :Person
+    source: DanielChatto
+  AddTriple (ba6d584c-dd4c-4060-a9c5-488d646796dc)
+ Call ID: ba6d584c-dd4c-4060-a9c5-488d646796dc
+  Args:
+    source: SamuelChatto
     relation: :hasMother
-  AddTriple (f4c999c5-cdfb-41af-ba56-9540b2693a31)
- Call ID: f4c999c5-cdfb-41af-ba56-9540b2693a31
+    target: LadySarahChatto
+  AddTriple (381b1fe8-e3a8-4fd8-be89-a2ccb9061620)
+ Call ID: 381b1fe8-e3a8-4fd8-be89-a2ccb9061620
   Args:
-    relation: :hasBrother
-    source: ErnstAugust_HereditaryPrinceOfHanover
-    target: ChristianOfHanover
-  AddTriple (50ba878c-7371-4ef7-839c-daabede4abd6)
- Call ID: 50ba878c-7371-4ef7-839c-daabede4abd6
-  Args:
-    target: ErnstAugust_PrinceOfHanover
-    source: ChristianOfHanover
+    target: DanielChatto
+    source: SamuelChatto
     relation: :hasFather
-  AddTriple (89c561c5-3786-425a-b6dc-baf6f5e8dc21)
- Call ID: 89c561c5-3786-425a-b6dc-baf6f5e8dc21
+  AssignClass (798ef052-b232-48c5-b230-367c62543dce)
+ Call ID: 798ef052-b232-48c5-b230-367c62543dce
   Args:
-    source: ChristianOfHanover
-    target: ChantalHochuli
-    relation: :hasMother
-  AddTriple (cc3db428-f89d-4ff6-929a-1da1525c41c4)
- Call ID: cc3db428-f89d-4ff6-929a-1da1525c41c4
+    source: PrincessMargaret
+    type: :Woman
+  AssignClass (9201a545-1e80-45fd-ac87-aadfe0da7434)
+ Call ID: 9201a545-1e80-45fd-ac87-aadfe0da7434
   Args:
-    relation: :hasFather
-    target: ErnstAugust_PrinceOfHanover
-    source: AlexandraOfHanover
-  AddLiteral (34d39c44-60f3-4010-a53c-6a28812dfb50)
- Call ID: 34d39c44-60f3-4010-a53c-6a28812dfb50
+    type: :Person
+    source: PrincessMargaret
+  AddTriple (61d91e3e-cf1e-4e80-a5bf-4254fe898645)
+ Call ID: 61d91e3e-cf1e-4e80-a5bf-4254fe898645
   Args:
-    source: EkaterinaIgorievnaMalysheva
-    literal_value: 1986
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddTriple (bea81ab5-8bd4-44a8-8ce0-2cba84978bd2)
- Call ID: bea81ab5-8bd4-44a8-8ce0-2cba84978bd2
+    source: SamuelChatto
+    relation: :hasAncestor
+    target: PrincessMargaret
+  AssignClass (8d2e0a6b-cde0-4bf4-a0a8-fcf9103f0411)
+ Call ID: 8d2e0a6b-cde0-4bf4-a0a8-fcf9103f0411
   Args:
-    source: EkaterinaIgorievnaMalysheva
-    target: IgorMalyshev
-    relation: :hasFather
-  AddTriple (59a87af6-c2e6-4ff2-80fe-60567cbb6ed4)
- Call ID: 59a87af6-c2e6-4ff2-80fe-60567cbb6ed4
+    type: :Woman
+    source: ElizabethII
+  AssignClass (73874921-2591-48a5-a2f0-f90cde8798a9)
+ Call ID: 73874921-2591-48a5-a2f0-f90cde8798a9
   Args:
-    source: EkaterinaIgorievnaMalysheva
-    target: SvetlanaMalysheva
-    relation: :hasMother
-  AddLiteral (0c4311a1-5acc-4710-b65d-52768faf8fcb)
- Call ID: 0c4311a1-5acc-4710-b65d-52768faf8fcb
+    type: :Person
+    source: ElizabethII
+  AddTriple (c120addc-dd71-45b3-a65a-6bdb22d965b6)
+ Call ID: c120addc-dd71-45b3-a65a-6bdb22d965b6
   Args:
-    source: ErnstAugust_HereditaryPrinceOfHanover
-    literal_value: 2017
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-  Finish (0650da61-0c6f-4682-8f52-554436a0c0a0)
- Call ID: 0650da61-0c6f-4682-8f52-554436a0c0a0
+    target: ElizabethII
+    relation: :hasAncestor
+    source: SamuelChatto
+  Finish (da858ba9-4a5c-483e-bf89-2abaa486f171)
+ Call ID: da858ba9-4a5c-483e-bf89-2abaa486f171
   Args:

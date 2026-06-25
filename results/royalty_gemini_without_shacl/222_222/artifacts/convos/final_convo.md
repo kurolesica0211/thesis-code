@@ -69,28 +69,56 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Luiz Philippe of Orléans-Braganza (Portuguese: Luiz Philippe de Orléans e Bragança; born 3 April 1969) is a Brazilian politician, activist, businessman, and member of the former ruling House of Orléans-Braganza.
-A great-great-grandson of Emperor Pedro II, Luiz Philippe is a member of the Brazilian imperial family’s Vassouras branch.
+Queen Anne-Marie
+
+
+Queen Sofía of Spain
+
+
+Marina, consort of Prince Michael
+
+
+Princess Theodora of Greece and Denmark (Greek: Θεοδώρα Ντε Γκρες, romanized: Theodora de Grèce; born 9 June 1983), also known under her stage name Theodora Greece, is a British-Greek actress and member of the Greek and Danish royal families.
+She is the fourth child and younger daughter of deposed King Constantine II of Greece and Queen Anne-Marie of Greece.
+Theodora made her television debut in 2011 as Alison Montgomery in the American soap opera The Bold and the Beautiful.
 Biography
 
-Luiz Philippe was born in Rio de Janeiro in 1969, the son of Eudes of Orléans-Braganza and Ana Maria de Moraes Barros.
-Luiz Philippe is the grandson of Pedro Henrique of Orléans-Braganza.
-Luiz Philippe studied business at Fundação Armando Álvares Penteado (FAAP) and in 1993 received a master's degree in political science from Stanford University.
-Professional life
+Early life
 
-The professional trajectory of Luiz Philippe began in the United States, where he worked in companies of the financial market.
-Luiz Philippe was part of the financial planning of Saint-Gobain, a French multinational, between 1993 and 1996.
-In 2012 Luiz Philippe founded ZAP Tech, an incubator of means of payment for mobile platforms.
-Political activism
+Theodora was born on 9 June 1983 at St Mary's Hospital, London.
+She is the younger daughter and fourth of the five children of the deposed Greek king Constantine II and his wife, Anne-Marie of Denmark.
+Education
 
-Luiz Philippe founded the liberal movement "Acorda Brasil" (Wake up Brazil) in 2014.
-Luiz Philippe also participates in the Canal Terça Livre with the Caia na Real program, and travels Brazil with the lecture Redefinindo o Brasil.
+Theodora attended Woldingham School, an all-girls boarding school in Surrey, England, between 1994 and 2001.
+After a gap year spent at St Philip's College in Alice Springs, Australia, Theodora attended Brown University where she received her Bachelor of Arts on 28 May 2006 in Theatre Arts, having also attended Northeastern University in Boston.
+Career
+
+In April 2010, Theodora moved to Los Angeles to pursue an acting career, appearing in supporting roles under the stage name Theodora Greece.
+Personal life
+
+On 16 November 2018, it was announced that Princess Theodora was engaged to American attorney Matthew Jeremiah Kumar.
+On 28 September 2024, Theodora married Kumar in a Greek Orthodox ceremony officiated by Metropolitan Dorotheos II of Syros at the Metropolitan Cathedral of Athens.
+Guests included 250 friends and relatives, including members of European royal families, such as the bride's aunt, Queen Sofia of Spain, and Infanta Cristina of Spain, Infanta Elena of Spain, Princess Alexandra of Sayn-Wittgenstein-Berleburg, Count Michael Ahlefeldt-Laurvig-Bille, Princess Benedikte of Denmark, Crown Prince Alexander of Yugoslavia, Crown Princess Katherine of Serbia, and Prince Christian of Hanover.
+Her nieces, Princess Maria-Olympia and Arrietta Morales y de Grecia, served as bridesmaids.
+For the ceremony, Theodora wore a custom gown by Celia Kritharioti, an Irish lace veil that once belonged to her great-grandmother Princess Margaret of Connaught, and a Cartier diamond tiara that was given to Princess Margaret of Connaught by Abbas II of Egypt.
+The veil and tiara have been worn by all of Queen Ingrid of Denmark's female descendants.
+Οn 20 December 2024, Theodora, along with the other members of the former royal family acquired Greek citizenship, under the surname Theodora de Grèce.
+The family was deprived of citizenship in 1994 when the former King Constantine refused to acquire a surname, as required by law for all Greek citizens.
+Filmography
+
+Ancestry
+
+Her paternal grandparents were King Paul of Greece and Frederica of Hanover.
+Her maternal grandparents are Frederik IX of Denmark and Ingrid of Sweden.
+As an agnatic descendant of Christian IX of Denmark Theodora is a Danish princess, and because King Christian's second son, Prince William of Denmark, was elected "George I, King of the Hellenes" in 1863, her father (George's great-grandson) inherited the throne of Greece in 1964.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -106,39 +134,9 @@ Luiz Philippe also participates in the Canal Terça Livre with the Caia na Real 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -153,6 +151,23 @@ Luiz Philippe also participates in the Canal Terça Livre with the Caia na Real 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -170,6 +185,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -237,29 +267,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -268,6 +290,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -280,6 +310,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -288,17 +320,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -326,6 +360,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -341,71 +459,179 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bce0beb1-a892-443c-b93c-0c79676e8fb4)
- Call ID: bce0beb1-a892-443c-b93c-0c79676e8fb4
-  Args:
-    type: :Person
-    source: Luiz_Philippe_of_Orleans-Braganza
-  AssignClass (21c31c2f-6d8a-44a9-8b9f-433a02fc8bdb)
- Call ID: 21c31c2f-6d8a-44a9-8b9f-433a02fc8bdb
-  Args:
-    source: Luiz_Philippe_of_Orleans-Braganza
-    type: :Man
-  AssignClass (fe495584-3ef6-499e-8b22-52f812f2b616)
- Call ID: fe495584-3ef6-499e-8b22-52f812f2b616
-  Args:
-    type: :Person
-    source: Eudes_of_Orleans-Braganza
-  AssignClass (278a8bda-e21a-4004-a504-d1565824c9de)
- Call ID: 278a8bda-e21a-4004-a504-d1565824c9de
-  Args:
-    type: :Man
-    source: Eudes_of_Orleans-Braganza
-  AssignClass (6bc48a3f-f77c-48d8-b806-c7718e457754)
- Call ID: 6bc48a3f-f77c-48d8-b806-c7718e457754
-  Args:
-    type: :Person
-    source: Ana_Maria_de_Moraes_Barros
-  AssignClass (f8060b85-9efd-4245-acf4-e6e221d4512c)
- Call ID: f8060b85-9efd-4245-acf4-e6e221d4512c
+  AssignClass (40f871e3-c1be-40bb-b534-0f9f600350d1)
+ Call ID: 40f871e3-c1be-40bb-b534-0f9f600350d1
   Args:
     type: :Woman
-    source: Ana_Maria_de_Moraes_Barros
-  AssignClass (26133f09-2300-4207-ac74-08bfedcb823d)
- Call ID: 26133f09-2300-4207-ac74-08bfedcb823d
+    source: :Theodora_of_Greece_and_Denmark
+  AssignClass (f3311e36-54fe-4ac3-8154-d89ef905ad64)
+ Call ID: f3311e36-54fe-4ac3-8154-d89ef905ad64
   Args:
-    source: Pedro_Henrique_of_Orleans-Braganza
+    source: :Theodora_of_Greece_and_Denmark
     type: :Person
-  AssignClass (5bcb9f6a-5cdf-452b-b35d-dc0808f1e8de)
- Call ID: 5bcb9f6a-5cdf-452b-b35d-dc0808f1e8de
+  AddLiteral (d22d129c-9775-4b3d-9947-e8699accbc13)
+ Call ID: d22d129c-9775-4b3d-9947-e8699accbc13
   Args:
-    source: Pedro_Henrique_of_Orleans-Braganza
-    type: :Man
-  AddLiteral (1d3bc4e2-fa02-4c11-9796-ba4b3cce61de)
- Call ID: 1d3bc4e2-fa02-4c11-9796-ba4b3cce61de
+    relation: :knownAs
+    literal_type: xsd:string
+    source: :Theodora_of_Greece_and_Denmark
+    literal_value: Theodora Greece
+  AddLiteral (0848d431-b736-4c81-a724-18c1c050cb91)
+ Call ID: 0848d431-b736-4c81-a724-18c1c050cb91
   Args:
-    literal_value: 1969
-    relation: :hasBirthYear
-    source: Luiz_Philippe_of_Orleans-Braganza
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    source: :Theodora_of_Greece_and_Denmark
+    literal_value: Theodora de Grèce
+  AddLiteral (282f9e92-8ebe-4563-a747-ca60e1b7b8b6)
+ Call ID: 282f9e92-8ebe-4563-a747-ca60e1b7b8b6
+  Args:
+    source: :Theodora_of_Greece_and_Denmark
     literal_type: xsd:integer
-  AddTriple (c523b07a-c516-476d-a902-c75a28ea1fee)
- Call ID: c523b07a-c516-476d-a902-c75a28ea1fee
+    literal_value: 1983
+    relation: :hasBirthYear
+  AssignClass (432216bb-a749-443b-baec-17a3ab7646f7)
+ Call ID: 432216bb-a749-443b-baec-17a3ab7646f7
   Args:
-    source: Luiz_Philippe_of_Orleans-Braganza
-    target: Eudes_of_Orleans-Braganza
+    source: :Constantine_II_of_Greece
+    type: :Man
+  AssignClass (0854b3f4-b6d0-46d7-b7b5-071f130faae4)
+ Call ID: 0854b3f4-b6d0-46d7-b7b5-071f130faae4
+  Args:
+    source: :Constantine_II_of_Greece
+    type: :Person
+  AssignClass (a32c5720-d107-475b-ad55-18bc596323c2)
+ Call ID: a32c5720-d107-475b-ad55-18bc596323c2
+  Args:
+    type: :Woman
+    source: :Anne-Marie_of_Denmark
+  AssignClass (477ab4b9-1701-496f-8f1a-04a8c9146d6a)
+ Call ID: 477ab4b9-1701-496f-8f1a-04a8c9146d6a
+  Args:
+    source: :Anne-Marie_of_Denmark
+    type: :Person
+  AddTriple (ed24dd98-bbad-46af-8c2e-e1c78269bd0b)
+ Call ID: ed24dd98-bbad-46af-8c2e-e1c78269bd0b
+  Args:
+    target: :Constantine_II_of_Greece
     relation: :hasFather
-  AddTriple (902b6a2a-56fd-41bd-9e48-2cd3b528465a)
- Call ID: 902b6a2a-56fd-41bd-9e48-2cd3b528465a
+    source: :Theodora_of_Greece_and_Denmark
+  AddTriple (33dab734-a25d-4bad-ad92-febb9e1aa5b7)
+ Call ID: 33dab734-a25d-4bad-ad92-febb9e1aa5b7
   Args:
     relation: :hasMother
-    target: Ana_Maria_de_Moraes_Barros
-    source: Luiz_Philippe_of_Orleans-Braganza
-  AddTriple (951cc4c2-fd60-47db-a378-a076ddefec97)
- Call ID: 951cc4c2-fd60-47db-a378-a076ddefec97
+    target: :Anne-Marie_of_Denmark
+    source: :Theodora_of_Greece_and_Denmark
+  AssignClass (4a2365b2-aae2-4101-af5c-a5336343e30e)
+ Call ID: 4a2365b2-aae2-4101-af5c-a5336343e30e
   Args:
-    source: Luiz_Philippe_of_Orleans-Braganza
-    relation: :hasParent
-    target: Pedro_Henrique_of_Orleans-Braganza
-  Finish (e9d0d8e7-e258-4cef-8fc3-94c547b9dfe3)
- Call ID: e9d0d8e7-e258-4cef-8fc3-94c547b9dfe3
+    source: :Matthew_Jeremiah_Kumar
+    type: :Man
+  AssignClass (6e59ee05-43b0-49d4-aff4-52c146ceb0c3)
+ Call ID: 6e59ee05-43b0-49d4-aff4-52c146ceb0c3
+  Args:
+    type: :Person
+    source: :Matthew_Jeremiah_Kumar
+  AddLiteral (ee9c5416-8f35-4eee-b1df-8873f3b9c2cf)
+ Call ID: ee9c5416-8f35-4eee-b1df-8873f3b9c2cf
+  Args:
+    literal_type: xsd:integer
+    source: :Theodora_of_Greece_and_Denmark
+    literal_value: 2024
+    relation: :hasMarriageYear
+  AddTriple (40f37f15-cfb7-4564-ac9a-409d82e68b15)
+ Call ID: 40f37f15-cfb7-4564-ac9a-409d82e68b15
+  Args:
+    target: :Matthew_Jeremiah_Kumar
+    relation: :hasRelation
+    source: :Theodora_of_Greece_and_Denmark
+  AssignClass (dce0da59-e2d0-4719-afee-0dd80ed4adef)
+ Call ID: dce0da59-e2d0-4719-afee-0dd80ed4adef
+  Args:
+    source: :Sofia_of_Spain
+    type: :Woman
+  AssignClass (70b15320-2676-4499-a5a8-8c4f06bbd3ec)
+ Call ID: 70b15320-2676-4499-a5a8-8c4f06bbd3ec
+  Args:
+    type: :Person
+    source: :Sofia_of_Spain
+  AddTriple (f29ceea4-7150-485e-af55-d623ee4fcbeb)
+ Call ID: f29ceea4-7150-485e-af55-d623ee4fcbeb
+  Args:
+    source: :Sofia_of_Spain
+    target: :Theodora_of_Greece_and_Denmark
+    relation: :hasRelation
+  AddLiteral (338a7a67-a735-4a28-9587-ec53ef71b2e1)
+ Call ID: 338a7a67-a735-4a28-9587-ec53ef71b2e1
+  Args:
+    literal_value: Queen Sofia of Spain
+    literal_type: xsd:string
+    source: :Sofia_of_Spain
+    relation: :knownAs
+  AssignClass (7e4b6813-287e-45a7-bcbb-7a78afb45cb5)
+ Call ID: 7e4b6813-287e-45a7-bcbb-7a78afb45cb5
+  Args:
+    type: :Man
+    source: :Paul_of_Greece
+  AssignClass (1ab6e473-5dcf-4402-bc62-c9c767948cfc)
+ Call ID: 1ab6e473-5dcf-4402-bc62-c9c767948cfc
+  Args:
+    source: :Paul_of_Greece
+    type: :Person
+  AssignClass (997c9526-133a-4fab-8b8b-103d3e73bebc)
+ Call ID: 997c9526-133a-4fab-8b8b-103d3e73bebc
+  Args:
+    type: :Woman
+    source: :Frederica_of_Hanover
+  AssignClass (8135a9e8-bc0e-4f89-963a-885c28b89270)
+ Call ID: 8135a9e8-bc0e-4f89-963a-885c28b89270
+  Args:
+    type: :Person
+    source: :Frederica_of_Hanover
+  AddTriple (b70e4948-def6-49e7-aef6-a45892645524)
+ Call ID: b70e4948-def6-49e7-aef6-a45892645524
+  Args:
+    target: :Paul_of_Greece
+    relation: :hasFather
+    source: :Constantine_II_of_Greece
+  AddTriple (fcabdb3e-cc42-4242-85ff-f113ed496d48)
+ Call ID: fcabdb3e-cc42-4242-85ff-f113ed496d48
+  Args:
+    source: :Constantine_II_of_Greece
+    target: :Frederica_of_Hanover
+    relation: :hasMother
+  AssignClass (e4ba5361-03e5-44be-8729-47f13317a1ff)
+ Call ID: e4ba5361-03e5-44be-8729-47f13317a1ff
+  Args:
+    type: :Man
+    source: :Frederik_IX_of_Denmark
+  AssignClass (0059a0ce-a35f-4b1a-9910-a897a223ac1b)
+ Call ID: 0059a0ce-a35f-4b1a-9910-a897a223ac1b
+  Args:
+    source: :Frederik_IX_of_Denmark
+    type: :Person
+  AssignClass (91821a12-4319-4432-a4db-6fc5e93ea688)
+ Call ID: 91821a12-4319-4432-a4db-6fc5e93ea688
+  Args:
+    source: :Ingrid_of_Sweden
+    type: :Woman
+  AssignClass (776a6c40-209e-4e61-b0bd-028865f5c350)
+ Call ID: 776a6c40-209e-4e61-b0bd-028865f5c350
+  Args:
+    type: :Person
+    source: :Ingrid_of_Sweden
+  AddTriple (abaeb5e2-7cdc-4415-a0e6-540785a2ac3c)
+ Call ID: abaeb5e2-7cdc-4415-a0e6-540785a2ac3c
+  Args:
+    target: :Frederik_IX_of_Denmark
+    relation: :hasFather
+    source: :Anne-Marie_of_Denmark
+  AddTriple (31512f42-4dde-4b88-999b-4667f5903baa)
+ Call ID: 31512f42-4dde-4b88-999b-4667f5903baa
+  Args:
+    source: :Anne-Marie_of_Denmark
+    target: :Ingrid_of_Sweden
+    relation: :hasMother
+  Finish (9ff4c05d-80c4-4f61-abf4-11129908af5a)
+ Call ID: 9ff4c05d-80c4-4f61-abf4-11129908af5a
   Args:

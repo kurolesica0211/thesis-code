@@ -1,0 +1,324 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Adalbert_of_Bavaria a :Ancestor,
+        :Man ;
+    :hasBrother data:Adalbert_of_Bavaria ;
+    :hasRelation data:Adalbert_of_Bavaria ;
+    :isBloodrelationOf data:Adalbert_of_Bavaria ;
+    :isBrotherOf data:Adalbert_of_Bavaria ;
+    :isSiblingOf data:Adalbert_of_Bavaria .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isSiblingOf data:Alfonso_XIII .
+
+data:Mar%C3%ADa_de_la_Paz_of_Spain a :Ancestor,
+        :Woman ;
+    :hasRelation data:Mar%C3%ADa_de_la_Paz_of_Spain ;
+    :hasSister data:Mar%C3%ADa_de_la_Paz_of_Spain ;
+    :isBloodrelationOf data:Mar%C3%ADa_de_la_Paz_of_Spain ;
+    :isSiblingOf data:Mar%C3%ADa_de_la_Paz_of_Spain ;
+    :isSisterOf data:Mar%C3%ADa_de_la_Paz_of_Spain .
+
+data:Vladimir a :Man,
+        :Person ;
+    :hasBrother data:Vladimir ;
+    :hasRelation data:Alfonso_XII,
+        data:Ferdinand_of_Bavaria,
+        data:Irakli_Bagration_of_Mukhrani,
+        data:Isabella_II_of_Spain,
+        data:Jos%C3%A9_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar,
+        data:Vladimir ;
+    :isBloodrelationOf data:Vladimir ;
+    :isBrotherOf data:Vladimir ;
+    :isSiblingOf data:Vladimir .
+
+data:Alfonso_XII a :Ancestor,
+        :Man ;
+    :hasBrother data:Alfonso_XII ;
+    :hasRelation data:Alfonso_XII,
+        data:Ferdinand_of_Bavaria,
+        data:Irakli_Bagration_of_Mukhrani,
+        data:Isabella_II_of_Spain,
+        data:Jos%C3%A9_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar,
+        data:Vladimir ;
+    :isAncestorOf data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria ;
+    :isBloodrelationOf data:Alfonso_XII ;
+    :isBrotherOf data:Alfonso_XII ;
+    :isSiblingOf data:Alfonso_XII .
+
+data:Isabella_II_of_Spain a :Ancestor,
+        :Woman ;
+    :hasRelation data:Alfonso_XII,
+        data:Ferdinand_of_Bavaria,
+        data:Irakli_Bagration_of_Mukhrani,
+        data:Isabella_II_of_Spain,
+        data:Jos%C3%A9_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar,
+        data:Vladimir ;
+    :hasSister data:Isabella_II_of_Spain ;
+    :isAncestorOf data:Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria ;
+    :isBloodrelationOf data:Isabella_II_of_Spain ;
+    :isSiblingOf data:Isabella_II_of_Spain ;
+    :isSisterOf data:Isabella_II_of_Spain .
+
+data:Irakli_Bagration_of_Mukhrani a :Man,
+        :Person ;
+    :hasBrother data:Irakli_Bagration_of_Mukhrani ;
+    :hasRelation data:Alfonso_XII,
+        data:Ferdinand_of_Bavaria,
+        data:Irakli_Bagration_of_Mukhrani,
+        data:Isabella_II_of_Spain,
+        data:Jos%C3%A9_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar,
+        data:Vladimir ;
+    :hasSister data:Leonida ;
+    :isBloodrelationOf data:Irakli_Bagration_of_Mukhrani,
+        data:Leonida ;
+    :isBrotherOf data:Irakli_Bagration_of_Mukhrani,
+        data:Leonida ;
+    :isSiblingOf data:Irakli_Bagration_of_Mukhrani,
+        data:Leonida .
+
+data:Leonida a :Person,
+        :Woman ;
+    :hasBrother data:Irakli_Bagration_of_Mukhrani ;
+    :hasMarriageYear 1948 ;
+    :hasRelation data:Alfonso_XII,
+        data:Ferdinand_of_Bavaria,
+        data:Irakli_Bagration_of_Mukhrani,
+        data:Isabella_II_of_Spain,
+        data:Jos%C3%A9_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar,
+        data:Vladimir ;
+    :hasSister data:Leonida ;
+    :isBloodrelationOf data:Irakli_Bagration_of_Mukhrani,
+        data:Leonida ;
+    :isSiblingOf data:Irakli_Bagration_of_Mukhrani,
+        data:Leonida ;
+    :isSisterOf data:Irakli_Bagration_of_Mukhrani,
+        data:Leonida .
+
+data:Ferdinand_of_Bavaria a :Ancestor,
+        :Man ;
+    :hasAncestor data:Isabella_II_of_Spain ;
+    :hasBrother data:Ferdinand_of_Bavaria ;
+    :hasChild data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria ;
+    :hasDaughter data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria ;
+    :hasRelation data:Alfonso_XII,
+        data:Ferdinand_of_Bavaria,
+        data:Irakli_Bagration_of_Mukhrani,
+        data:Isabella_II_of_Spain,
+        data:Jos%C3%A9_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar,
+        data:Vladimir ;
+    :isAncestorOf data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria ;
+    :isBloodrelationOf data:Ferdinand_of_Bavaria ;
+    :isBrotherOf data:Ferdinand_of_Bavaria ;
+    :isFatherOf data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria ;
+    :isParentOf data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria ;
+    :isSiblingOf data:Ferdinand_of_Bavaria ;
+    :isUncleOf data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria .
+
+data:Mar%C3%ADa_Teresa_of_Spain a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Alfonso_XII,
+        data:Isabella_II_of_Spain ;
+    :hasChild data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria ;
+    :hasDaughter data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria ;
+    :hasRelation data:Alfonso_XII,
+        data:Ferdinand_of_Bavaria,
+        data:Irakli_Bagration_of_Mukhrani,
+        data:Isabella_II_of_Spain,
+        data:Jos%C3%A9_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar,
+        data:Vladimir ;
+    :hasSister data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isAncestorOf data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria ;
+    :isAuntOf data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria ;
+    :isBloodrelationOf data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isMotherOf data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria ;
+    :isParentOf data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria ;
+    :isSiblingOf data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isSisterOf data:Mar%C3%ADa_Teresa_of_Spain .
+
+data:Jos%C3%A9_Eugenio a :Man,
+        :Person ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso ;
+    :hasDeathYear 1966 ;
+    :hasRelation data:Alfonso_XII,
+        data:Ferdinand_of_Bavaria,
+        data:Irakli_Bagration_of_Mukhrani,
+        data:Isabella_II_of_Spain,
+        data:Jos%C3%A9_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar,
+        data:Vladimir ;
+    :hasSister data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar ;
+    :isBloodrelationOf data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar ;
+    :isBrotherOf data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar ;
+    :isSiblingOf data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar .
+
+data:Luis_Alfonso a :Man,
+        :Person ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso ;
+    :hasDeathYear 1983 ;
+    :hasRelation data:Alfonso_XII,
+        data:Ferdinand_of_Bavaria,
+        data:Irakli_Bagration_of_Mukhrani,
+        data:Isabella_II_of_Spain,
+        data:Jos%C3%A9_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar,
+        data:Vladimir ;
+    :hasSister data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar ;
+    :isBloodrelationOf data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar ;
+    :isBrotherOf data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar ;
+    :isSiblingOf data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar .
+
+data:Mar%C3%ADa_del_Pilar a :Person,
+        :Woman ;
+    :hasBirthYear 1912 ;
+    :hasBrother data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso ;
+    :hasDeathYear 1918 ;
+    :hasRelation data:Alfonso_XII,
+        data:Ferdinand_of_Bavaria,
+        data:Irakli_Bagration_of_Mukhrani,
+        data:Isabella_II_of_Spain,
+        data:Jos%C3%A9_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar,
+        data:Vladimir ;
+    :hasSister data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar ;
+    :isBloodrelationOf data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar ;
+    :isSiblingOf data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar ;
+    :isSisterOf data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar .
+
+data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_XII,
+        data:Ferdinand_of_Bavaria,
+        data:Isabella_II_of_Spain,
+        data:Mar%C3%ADa_Teresa_of_Spain ;
+    :hasBirthYear 1911 ;
+    :hasBrother data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Ferdinand_of_Bavaria ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:Mar%C3%ADa_Teresa_of_Spain ;
+    :hasParent data:Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_Teresa_of_Spain ;
+    :hasRelation data:Alfonso_XII,
+        data:Ferdinand_of_Bavaria,
+        data:Irakli_Bagration_of_Mukhrani,
+        data:Isabella_II_of_Spain,
+        data:Jos%C3%A9_Eugenio,
+        data:Leonida,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_Teresa_of_Spain,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar,
+        data:Vladimir ;
+    :hasSister data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar ;
+    :isBloodrelationOf data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar ;
+    :isChildOf data:Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isDaughterOf data:Ferdinand_of_Bavaria,
+        data:Mar%C3%ADa_Teresa_of_Spain ;
+    :isSiblingOf data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar ;
+    :isSisterOf data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria,
+        data:Mar%C3%ADa_del_Pilar .
+

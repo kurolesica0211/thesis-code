@@ -7,16 +7,22 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Wittekind-_Prince_of_Waldeck_and_Pyrmont a :Person ;
+    rdfs:label "Wittekind, Prince of Waldeck and Pyrmont" ;
+    data:wdtLink wdt:Q70797 ;
+    :alsoKnownAs "Wittekind Adolf Heinrich Georg Wilhelm Prinz zu Waldeck und Pyrmont" ;
+    :hasParent data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
+    :hasSex data:male .
+
+data:female a :Female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont a :Person ;
     rdfs:label "Josias, Hereditary Prince of Waldeck and Pyrmont" ;
     data:posIndicesFull "372:398" ;
     data:posIndicesPart "1228:1234",
@@ -28,21 +34,7 @@ data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont a :Ancestor,
         "999:1006" ;
     data:wdtLink wdt:Q75911 ;
     :alsoKnownAs "Josias Georg Wilhelm Adolf" ;
-    :hasChild data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
-    :hasSex data:male ;
-    :hasSon data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
-    :isFatherOf data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
-    :isParentOf data:Wittekind-_Prince_of_Waldeck_and_Pyrmont .
+    :hasSex data:male .
 
-data:Wittekind-_Prince_of_Waldeck_and_Pyrmont a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Wittekind, Prince of Waldeck and Pyrmont" ;
-    data:wdtLink wdt:Q70797 ;
-    :alsoKnownAs "Wittekind Adolf Heinrich Georg Wilhelm Prinz zu Waldeck und Pyrmont" ;
-    :hasFather data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
-    :hasParent data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
-    :hasSex data:male ;
-    :isChildOf data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
-    :isSonOf data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont .
+data:male a :Male .
 

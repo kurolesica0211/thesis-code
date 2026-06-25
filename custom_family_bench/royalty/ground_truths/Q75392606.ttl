@@ -7,49 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo" ;
-    data:posIndicesFull "235:239",
-        "630:634" ;
-    data:posIndicesPart "388:394",
-        "395:398",
-        "399:407",
-        "413:419",
-        "814:820",
-        "821:824",
-        "825:833" ;
-    data:wdtLink wdt:Q75317760 ;
-    :alsoKnownAs "Jaime",
-        "Jaime de Borbón y Landaluce",
-        "Jaime di Borbone-Due Sicilie" ;
-    :hasSex data:male .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Infanta_Alicia-_Duchess_of_Calabria a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta Alicia, Duchess of Calabria" ;
-    data:posIndicesFull "436:468" ;
-    data:wdtLink wdt:Q33218 ;
-    :alsoKnownAs "Princess Alicia Maria Teresa Francesca Luisa Pia Anna Valeria of Bourbon-Parma",
-        "Princess Alicia of Bourbon-Parma" ;
-    :hasChild data:Inés_de_Borbón-Dos_Sicilias ;
-    :hasDaughter data:Inés_de_Borbón-Dos_Sicilias ;
-    :hasSex data:female ;
-    :isMotherOf data:Inés_de_Borbón-Dos_Sicilias ;
-    :isParentOf data:Inés_de_Borbón-Dos_Sicilias .
-
-data:Inés_de_Borbón-Dos_Sicilias a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Inés_de_Borbón-Dos_Sicilias a :Person ;
     rdfs:label "Inés de Borbón-Dos Sicilias" ;
     data:wdtLink wdt:Q75392606 ;
     :alsoKnownAs "Inés Maria Alicia",
@@ -57,9 +15,24 @@ data:Inés_de_Borbón-Dos_Sicilias a :Person,
         "Inés María de Borbón-Dos Sicilias y Borbón-Parma, Duchess of Syracuse",
         "Inés de Borbón-Dos Sicilias",
         "Princess Inés Maria Alicia" ;
-    :hasMother data:Infanta_Alicia-_Duchess_of_Calabria ;
     :hasParent data:Infanta_Alicia-_Duchess_of_Calabria ;
-    :hasSex data:female ;
-    :isChildOf data:Infanta_Alicia-_Duchess_of_Calabria ;
-    :isDaughterOf data:Infanta_Alicia-_Duchess_of_Calabria .
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Infanta_Alicia-_Duchess_of_Calabria a :Person ;
+    rdfs:label "Infanta Alicia, Duchess of Calabria" ;
+    data:posIndicesFull "342:374" ;
+    data:wdtLink wdt:Q33218 ;
+    :alsoKnownAs "Princess Alicia Maria Teresa Francesca Luisa Pia Anna Valeria of Bourbon-Parma",
+        "Princess Alicia of Bourbon-Parma" ;
+    :hasSex data:female .
+
+data:female a :Female .
 

@@ -85,51 +85,39 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Alexandra of Greece and Denmark (Greek: Αλεξάνδρα; romanized: Alexándra), later known as Grand Duchess Alexandra Georgievna of Russia (Russian: Алекса́ндра Гео́ргиевна); 30 August  1870 – 24 September  1891), was a member of the Greek royal family by birth and of the Russian imperial family by marriage.
-Alexandra was the daughter of George I of Greece and Olga Constantinovna of Russia, and grew up in Athens.
-In 1889, she married Grand Duke Paul Alexandrovich of Russia, her first cousin once removed.
-The couple settled in Saint Petersburg and they had two children: Grand Duchess Maria Pavlovna (1890–1958) and Grand Duke Dmitri Pavlovich (1891–1942).
-Early life
+Prince Karl of Leiningen (Karl Vladimir Ernst Heinrich; 2 January 1928 – 28 September 1990) was the second son of Karl, 6th Prince of Leiningen (1898–1946), and Grand Duchess Maria Kirillovna of Russia.
+She was the elder daughter of Grand Duke Kirill Vladimirovich of Russia and Princess Victoria Melita of Edinburgh.
+As such, Karl was a great-great-grandson of both Queen Victoria of the United Kingdom and Emperor Alexander II of Russia (as Victoria Melita and Kirill Vladimirovich were both grandchildren of Alexander II).
+Biography
 
-Princess Alexandra of Greece and Denmark was born on 30 August  1870 at Mon Repos, the summer residence of the Greek royal family on the island of Corfu.
-She was the third child and eldest daughter of King George I of Greece and his wife, Grand Duchess Olga Constantinovna of Russia.
-Alexandra's father was not a native Greek, but he had been born a Danish prince named Christian Wilhelm of Schleswig-Holstein-Sonderburg-Glücksburg, a son of Christian IX, King of Denmark, and he had been elected to the Greek throne at the age of seventeen.
-Five of his sons (Constantine, George, Nicholas, Andrew and Christopher), and two daughters (Alexandra and Maria), attained adulthood.
-King George was a taciturn man, but contrary to the general approach of the time, he believed in happy rambunctious children.
-The long corridors of the royal palace in Athens were used by Alexandra and her siblings for all types of play and sometimes a "bike ride" would be led by the King himself.
-Alexandra, nicknamed "Aline" within her family, or Greek Alix, to distinguish her from her aunt and godmother, Alexandra, Princess of Wales, had a sunny disposition and was much loved by her family.
-"She looked young and beautiful, and ever since she was a child, life looked as it had nothing but joy and happiness in store for her.
-"
+Career
 
+Born in Coburg, Germany, he worked mainly as a salesman in Paris as a young man.
+With his wife, Karl subsequently resolved to take up a business career in Toronto, Canada.
+Marriage and issue
 
-Alexandra's playmates were her brother Nicholas and her sister Maria, who followed her in age.
-Alexandra spent many holidays in Denmark visiting her paternal grandparents.
-In Denmark, Alexandra and her siblings met their Russian and British cousins in large family gatherings.
-Marriage and children
-
-When she was 18 years old, she was married to Grand Duke Paul Alexandrovich of Russia, her maternal first cousin once removed and the youngest child and sixth son of Emperor Alexander II and his first wife, Princess Marie of Hesse and by Rhine.
-They had become close when Grand Duke Paul spent winters in Greece due to his frequent respiratory illnesses.
-The Greek royal family also frequently spent holidays with the Romanov family on visits to Russia or Denmark.
-The wedding took place on 17 June  1889 in St. Petersburg, at the chapel of the Winter Palace.
-They had two children:
+Karl met Princess Marie Louise of Bulgaria in Madrid, where she was living with her mother.
+She was the only daughter of Boris III of Bulgaria by his wife Princess Giovanna of Italy.
+Karl announced his engagement to Marie Louise in December 1956.
+Amorbach had been the residence of the House of Leiningen since 1803, and the town's streets were lined with hundreds of cheering spectators; Karl's family owns huge estates in South Germany, and was considered to be one of the wealthiest of Germany's noble families.
+Karl traveled to Canada early in their marriage, and the couple decided to settle there.
+The marriage produced two sons:
 
 
-Death
+The marriage was unhappy, and Karl and Marie Louise divorced on 4 December 1968.
+Later in life, Karl reminisced, "Princes are expected to marry princesses, so I married Marie-Louise, the daughter of Bulgarian ex-King Boris III".
+Later life
 
-Seven months into her second pregnancy, Alexandra took a walk with her friends on the bank of the Moskva River and jumped directly into a boat that was permanently moored there, but fell as she got in.
-The Grand Duchess was buried in the Peter and Paul Cathedral, St. Petersburg.
-Her husband later morganatically remarried Olga Karnovich.
-Alexandra's son would be involved in the murder of Grigori Rasputin, a friend of Tsarina Alexandra Feodorovna, in 1916.
-In 1939 during the reign of her nephew George II of Greece, the Greek government obtained permission from the Soviet government under Joseph Stalin to rebury Princess Alexandra in Greece.
-It was finally laid to rest near the Tatoi Palace.
-Alexandra's marble tombstone over an empty tomb is still in its place in the Peter and Paul Cathedral.
-The "Alexandra Maternity Hospital" (now "Alexandra General Hospital") in Athens was later named in her memory by another nephew, King Paul; it was affiliated with the University of Athens with a special remit to research and combat postpartum maternal mortality.
+Karl eventually became a naturalized Canadian citizen.
+Persuaded by some Jewish friends to visit Israel, Karl eventually found a job through the help of new-found Israeli friends.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -145,39 +133,9 @@ The "Alexandra Maternity Hospital" (now "Alexandra General Hospital") in Athens 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -192,6 +150,23 @@ The "Alexandra Maternity Hospital" (now "Alexandra General Hospital") in Athens 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -209,6 +184,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -276,29 +266,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -307,6 +289,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -319,6 +309,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -327,17 +319,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -365,6 +359,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -380,150 +458,212 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (36f63ef6-e33b-49a0-8be9-956a0544d298)
- Call ID: 36f63ef6-e33b-49a0-8be9-956a0544d298
+  AssignClass (69b48b30-d7c1-4e35-87f2-9bd8fd908890)
+ Call ID: 69b48b30-d7c1-4e35-87f2-9bd8fd908890
   Args:
-    source: Alexandra_of_Greece_and_Denmark
-    type: :Woman
-  AssignClass (fae4c09f-a19f-486e-8665-9e52d27482ef)
- Call ID: fae4c09f-a19f-486e-8665-9e52d27482ef
-  Args:
-    source: Alexandra_of_Greece_and_Denmark
-    type: :Person
-  AssignClass (3a3f9210-ad56-4dad-8731-6cfe833b4228)
- Call ID: 3a3f9210-ad56-4dad-8731-6cfe833b4228
-  Args:
+    source: Karl_of_Leiningen
     type: :Man
-    source: George_I_of_Greece
-  AssignClass (2b2a4ebb-3ecc-4d99-9cb1-44761287d08f)
- Call ID: 2b2a4ebb-3ecc-4d99-9cb1-44761287d08f
+  AssignClass (3e17b193-3f44-4489-903d-884324cd4c61)
+ Call ID: 3e17b193-3f44-4489-903d-884324cd4c61
   Args:
-    source: George_I_of_Greece
+    source: Karl_of_Leiningen
     type: :Person
-  AssignClass (627045e6-21b2-49fb-8fd3-25564a58b138)
- Call ID: 627045e6-21b2-49fb-8fd3-25564a58b138
+  AddLiteral (a6973503-77c4-4758-b463-6ddcf19fcf0d)
+ Call ID: a6973503-77c4-4758-b463-6ddcf19fcf0d
   Args:
-    source: George_I_of_Greece
-    type: :Ancestor
-  AssignClass (e42719e2-97c1-45ca-b79d-a2f00ab62ae7)
- Call ID: e42719e2-97c1-45ca-b79d-a2f00ab62ae7
-  Args:
-    source: Olga_Constantinovna_of_Russia
-    type: :Woman
-  AssignClass (fa15379f-6886-4aa1-9282-4c436859235b)
- Call ID: fa15379f-6886-4aa1-9282-4c436859235b
-  Args:
-    source: Olga_Constantinovna_of_Russia
-    type: :Person
-  AssignClass (3002908f-5185-4b49-8988-07213141fbfa)
- Call ID: 3002908f-5185-4b49-8988-07213141fbfa
-  Args:
-    source: Olga_Constantinovna_of_Russia
-    type: :Ancestor
-  AssignClass (68a4403c-c8d1-4bac-a179-aa0fca5e38cb)
- Call ID: 68a4403c-c8d1-4bac-a179-aa0fca5e38cb
-  Args:
-    source: Paul_Alexandrovich_of_Russia
-    type: :Man
-  AssignClass (fb26ffd4-9fb3-4bdf-b851-f59d2672ef29)
- Call ID: fb26ffd4-9fb3-4bdf-b851-f59d2672ef29
-  Args:
-    source: Paul_Alexandrovich_of_Russia
-    type: :Person
-  AssignClass (245762a9-8084-4253-97bc-416d8ab30c30)
- Call ID: 245762a9-8084-4253-97bc-416d8ab30c30
-  Args:
-    type: :Woman
-    source: Maria_Pavlovna_of_Russia
-  AssignClass (ce6e2d47-4776-43a7-979d-8097f9b7dda9)
- Call ID: ce6e2d47-4776-43a7-979d-8097f9b7dda9
-  Args:
-    type: :Person
-    source: Maria_Pavlovna_of_Russia
-  AssignClass (fb1115fc-665d-426c-bbde-06cc098bd5c7)
- Call ID: fb1115fc-665d-426c-bbde-06cc098bd5c7
-  Args:
-    source: Dmitri_Pavlovich_of_Russia
-    type: :Man
-  AssignClass (0a44ec66-05cb-4866-aa6d-ea202d5f47ae)
- Call ID: 0a44ec66-05cb-4866-aa6d-ea202d5f47ae
-  Args:
-    source: Dmitri_Pavlovich_of_Russia
-    type: :Person
-  AddTriple (3604889c-840d-4c30-bf3e-d549146ad355)
- Call ID: 3604889c-840d-4c30-bf3e-d549146ad355
-  Args:
-    source: Alexandra_of_Greece_and_Denmark
-    relation: :hasFather
-    target: George_I_of_Greece
-  AddTriple (a603b22e-be2a-45f4-89a1-96ea7c88c53f)
- Call ID: a603b22e-be2a-45f4-89a1-96ea7c88c53f
-  Args:
-    target: Olga_Constantinovna_of_Russia
-    source: Alexandra_of_Greece_and_Denmark
-    relation: :hasMother
-  AddTriple (3a1fb83e-8af4-4633-a0fc-93b45226cf7a)
- Call ID: 3a1fb83e-8af4-4633-a0fc-93b45226cf7a
-  Args:
-    relation: :hasChild
-    source: Alexandra_of_Greece_and_Denmark
-    target: Maria_Pavlovna_of_Russia
-  AddTriple (fa8f35fb-7565-4aab-a182-4f3e1abd6b1a)
- Call ID: fa8f35fb-7565-4aab-a182-4f3e1abd6b1a
-  Args:
-    target: Dmitri_Pavlovich_of_Russia
-    relation: :hasChild
-    source: Alexandra_of_Greece_and_Denmark
-  AddTriple (1fcfb6b5-3706-4173-b95b-18d56447e203)
- Call ID: 1fcfb6b5-3706-4173-b95b-18d56447e203
-  Args:
-    target: Maria_Pavlovna_of_Russia
-    relation: :hasChild
-    source: Paul_Alexandrovich_of_Russia
-  AddTriple (985e173f-122e-41ba-a7ad-954890a2cc7b)
- Call ID: 985e173f-122e-41ba-a7ad-954890a2cc7b
-  Args:
-    relation: :hasChild
-    source: Paul_Alexandrovich_of_Russia
-    target: Dmitri_Pavlovich_of_Russia
-  AddLiteral (4acf946b-4b46-4fd9-849e-70783ac2fb24)
- Call ID: 4acf946b-4b46-4fd9-849e-70783ac2fb24
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1870
     relation: :hasBirthYear
-    source: Alexandra_of_Greece_and_Denmark
-  AddLiteral (80088910-6a19-4cd6-b187-f2f239754428)
- Call ID: 80088910-6a19-4cd6-b187-f2f239754428
+    literal_value: 1928
+    source: Karl_of_Leiningen
+    literal_type: xsd:integer
+  AddLiteral (be9fe512-0f1e-4c4b-a5cb-746d45cf378a)
+ Call ID: be9fe512-0f1e-4c4b-a5cb-746d45cf378a
   Args:
     literal_type: xsd:integer
-    literal_value: 1891
-    source: Alexandra_of_Greece_and_Denmark
+    literal_value: 1990
+    source: Karl_of_Leiningen
     relation: :hasDeathYear
-  AddLiteral (16fbd4a2-25d0-47bd-b5a8-4db3fabf54f4)
- Call ID: 16fbd4a2-25d0-47bd-b5a8-4db3fabf54f4
+  AssignClass (1042283d-0564-409c-bdbe-dab7c9da3caa)
+ Call ID: 1042283d-0564-409c-bdbe-dab7c9da3caa
   Args:
-    literal_value: 1889
-    source: Alexandra_of_Greece_and_Denmark
+    source: Karl_6th_Prince_of_Leiningen
+    type: :Man
+  AssignClass (f0df31cd-a759-4caa-8d23-12fa2c111f9c)
+ Call ID: f0df31cd-a759-4caa-8d23-12fa2c111f9c
+  Args:
+    source: Karl_6th_Prince_of_Leiningen
+    type: :Person
+  AddLiteral (85913745-032e-4311-8aef-f50cdfb85c5c)
+ Call ID: 85913745-032e-4311-8aef-f50cdfb85c5c
+  Args:
+    relation: :hasBirthYear
+    source: Karl_6th_Prince_of_Leiningen
+    literal_value: 1898
+    literal_type: xsd:integer
+  AddLiteral (bbf0f7d5-1b93-452f-bac3-03c2c2915bcc)
+ Call ID: bbf0f7d5-1b93-452f-bac3-03c2c2915bcc
+  Args:
+    literal_value: 1946
+    source: Karl_6th_Prince_of_Leiningen
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AssignClass (d9e0f507-74f3-4be2-8702-cc8fcfe138f3)
+ Call ID: d9e0f507-74f3-4be2-8702-cc8fcfe138f3
+  Args:
+    source: Maria_Kirillovna_of_Russia
+    type: :Woman
+  AssignClass (5eedd3a4-352f-4c62-b244-766e28dbc739)
+ Call ID: 5eedd3a4-352f-4c62-b244-766e28dbc739
+  Args:
+    source: Maria_Kirillovna_of_Russia
+    type: :Person
+  AddTriple (f9982096-22aa-4c93-a078-e4ad49237903)
+ Call ID: f9982096-22aa-4c93-a078-e4ad49237903
+  Args:
+    source: Karl_of_Leiningen
+    relation: :hasFather
+    target: Karl_6th_Prince_of_Leiningen
+  AddTriple (10404843-100b-4ba8-bc63-6257ddbea238)
+ Call ID: 10404843-100b-4ba8-bc63-6257ddbea238
+  Args:
+    relation: :hasMother
+    target: Maria_Kirillovna_of_Russia
+    source: Karl_of_Leiningen
+  AssignClass (a2aa363e-cb76-4e36-95cf-99ca526c1089)
+ Call ID: a2aa363e-cb76-4e36-95cf-99ca526c1089
+  Args:
+    source: Kirill_Vladimirovich_of_Russia
+    type: :Man
+  AssignClass (f8333299-668c-49a4-9382-ec6f2971bf50)
+ Call ID: f8333299-668c-49a4-9382-ec6f2971bf50
+  Args:
+    source: Kirill_Vladimirovich_of_Russia
+    type: :Person
+  AssignClass (6759ad1f-3e95-4d16-a334-5828c053a9f5)
+ Call ID: 6759ad1f-3e95-4d16-a334-5828c053a9f5
+  Args:
+    source: Victoria_Melita_of_Edinburgh
+    type: :Woman
+  AssignClass (85522b6c-cd1d-4712-87ad-9683f9697bdf)
+ Call ID: 85522b6c-cd1d-4712-87ad-9683f9697bdf
+  Args:
+    source: Victoria_Melita_of_Edinburgh
+    type: :Person
+  AddTriple (96c9402b-e854-4aae-846b-f8a3cb2bd028)
+ Call ID: 96c9402b-e854-4aae-846b-f8a3cb2bd028
+  Args:
+    source: Maria_Kirillovna_of_Russia
+    relation: :hasFather
+    target: Kirill_Vladimirovich_of_Russia
+  AddTriple (fcf72809-60a3-48e1-86dd-c26faed3d8aa)
+ Call ID: fcf72809-60a3-48e1-86dd-c26faed3d8aa
+  Args:
+    target: Victoria_Melita_of_Edinburgh
+    relation: :hasMother
+    source: Maria_Kirillovna_of_Russia
+  AssignClass (d526e907-8d05-4762-bbb7-b3682558c0bb)
+ Call ID: d526e907-8d05-4762-bbb7-b3682558c0bb
+  Args:
+    source: Queen_Victoria_of_the_United_Kingdom
+    type: :Woman
+  AssignClass (b76705e5-afd8-4952-88e9-efca0320f4cb)
+ Call ID: b76705e5-afd8-4952-88e9-efca0320f4cb
+  Args:
+    source: Queen_Victoria_of_the_United_Kingdom
+    type: :Person
+  AssignClass (b50b0011-ad14-4237-811b-273eda99cfae)
+ Call ID: b50b0011-ad14-4237-811b-273eda99cfae
+  Args:
+    source: Emperor_Alexander_II_of_Russia
+    type: :Man
+  AssignClass (061d5419-f8c6-457f-8d9f-6807672bc11d)
+ Call ID: 061d5419-f8c6-457f-8d9f-6807672bc11d
+  Args:
+    source: Emperor_Alexander_II_of_Russia
+    type: :Person
+  AssignClass (a52a7948-3535-432f-86b5-2570ca2bf15a)
+ Call ID: a52a7948-3535-432f-86b5-2570ca2bf15a
+  Args:
+    source: Marie_Louise_of_Bulgaria
+    type: :Woman
+  AssignClass (bede7103-f6a1-4e56-8a8e-2751ed6adcfb)
+ Call ID: bede7103-f6a1-4e56-8a8e-2751ed6adcfb
+  Args:
+    source: Marie_Louise_of_Bulgaria
+    type: :Person
+  AssignClass (12d6e618-1c4f-440c-bd29-b14c99009026)
+ Call ID: 12d6e618-1c4f-440c-bd29-b14c99009026
+  Args:
+    source: Boris_III_of_Bulgaria
+    type: :Man
+  AssignClass (a86a654b-f9e1-4ce3-a9b9-38059e9f510a)
+ Call ID: a86a654b-f9e1-4ce3-a9b9-38059e9f510a
+  Args:
+    source: Boris_III_of_Bulgaria
+    type: :Person
+  AssignClass (5f23608e-1f1d-4bff-8cb6-c29271340144)
+ Call ID: 5f23608e-1f1d-4bff-8cb6-c29271340144
+  Args:
+    source: Giovanna_of_Italy
+    type: :Woman
+  AssignClass (a50190de-243a-43f8-9fe6-9801aa0daf65)
+ Call ID: a50190de-243a-43f8-9fe6-9801aa0daf65
+  Args:
+    source: Giovanna_of_Italy
+    type: :Person
+  AddTriple (a96045fb-1e86-4492-a8d9-ba58f506f8cb)
+ Call ID: a96045fb-1e86-4492-a8d9-ba58f506f8cb
+  Args:
+    source: Marie_Louise_of_Bulgaria
+    target: Boris_III_of_Bulgaria
+    relation: :hasFather
+  AddTriple (a93f765c-3f12-424b-8c46-c43b430b88da)
+ Call ID: a93f765c-3f12-424b-8c46-c43b430b88da
+  Args:
+    target: Giovanna_of_Italy
+    relation: :hasMother
+    source: Marie_Louise_of_Bulgaria
+  AddLiteral (4602a506-b20f-4e22-810e-f6cd64d65411)
+ Call ID: 4602a506-b20f-4e22-810e-f6cd64d65411
+  Args:
     relation: :hasMarriageYear
     literal_type: xsd:integer
-  AddLiteral (b6115f58-757f-4d0d-ab6f-54755932097c)
- Call ID: b6115f58-757f-4d0d-ab6f-54755932097c
+    source: Karl_of_Leiningen
+    literal_value: 1956
+  AddLiteral (1cccbc5c-9923-43d2-be5a-dd5d20e9b57f)
+ Call ID: 1cccbc5c-9923-43d2-be5a-dd5d20e9b57f
   Args:
-    relation: :alsoKnownAs
-    source: Alexandra_of_Greece_and_Denmark
-    literal_value: Alexandra Georgievna
-    literal_type: xsd:string
-  AddLiteral (06585e9e-c1f1-4f7f-ba2f-3a84a3f5adc5)
- Call ID: 06585e9e-c1f1-4f7f-ba2f-3a84a3f5adc5
-  Args:
-    relation: :knownAs
-    source: Alexandra_of_Greece_and_Denmark
-    literal_value: Aline
-    literal_type: xsd:string
-  Finish (64ad16c7-de7a-4d1e-a65c-4e0b02f59215)
- Call ID: 64ad16c7-de7a-4d1e-a65c-4e0b02f59215
-  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Karl_of_Leiningen
+    literal_value: 1968
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -628,38 +768,57 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexandra_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :alsoKnownAs "Alexandra Georgievna"^^xsd:string ;
-      :hasBirthYear 1870 ;
-      :hasChild data:Dmitri_Pavlovich_of_Russia,
-          data:Maria_Pavlovna_of_Russia ;
-      :hasDeathYear 1891 ;
-      :hasFather data:George_I_of_Greece ;
-      :hasMarriageYear 1889 ;
-      :hasMother data:Olga_Constantinovna_of_Russia ;
-      :knownAs "Aline"^^xsd:string .
+  data:Emperor_Alexander_II_of_Russia a :Man,
+          :Person .
 
-  data:Paul_Alexandrovich_of_Russia a :Man,
+  data:Karl_of_Leiningen a :Man,
           :Person ;
-      :hasChild data:Dmitri_Pavlovich_of_Russia,
-          data:Maria_Pavlovna_of_Russia .
+      :hasBirthYear 1928 ;
+      :hasDeathYear 1990 ;
+      :hasFather data:Karl_6th_Prince_of_Leiningen ;
+      :hasMarriageYear 1956,
+          1968 ;
+      :hasMother data:Maria_Kirillovna_of_Russia .
 
-  data:George_I_of_Greece a :Ancestor,
-          :Man,
-          :Person .
+  data:Marie_Louise_of_Bulgaria a :Person,
+          :Woman ;
+      :hasFather data:Boris_III_of_Bulgaria ;
+      :hasMother data:Giovanna_of_Italy .
 
-  data:Olga_Constantinovna_of_Russia a :Ancestor,
-          :Person,
+  data:Queen_Victoria_of_the_United_Kingdom a :Person,
           :Woman .
 
-  data:Dmitri_Pavlovich_of_Russia a :Man,
+  data:Boris_III_of_Bulgaria a :Man,
           :Person .
 
-  data:Maria_Pavlovna_of_Russia a :Person,
+  data:Giovanna_of_Italy a :Person,
+          :Woman .
+
+  data:Karl_6th_Prince_of_Leiningen a :Man,
+          :Person ;
+      :hasBirthYear 1898 ;
+      :hasDeathYear 1946 .
+
+  data:Kirill_Vladimirovich_of_Russia a :Man,
+          :Person .
+
+  data:Maria_Kirillovna_of_Russia a :Person,
+          :Woman ;
+      :hasFather data:Kirill_Vladimirovich_of_Russia ;
+      :hasMother data:Victoria_Melita_of_Edinburgh .
+
+  data:Victoria_Melita_of_Edinburgh a :Person,
           :Woman .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (d7ae1d5b-6c2d-4d1f-b0e9-38480b58da64)
+ Call ID: d7ae1d5b-6c2d-4d1f-b0e9-38480b58da64
+  Args:
 
 ================================= Tool Message =================================
 
@@ -669,8 +828,1128 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (87f67dd2-ceea-4d36-9a01-c2405394037f)
- Call ID: 87f67dd2-ceea-4d36-9a01-c2405394037f
+  ValidateShacl (6d4cf390-7913-4b39-8703-0f7d2c2c276f)
+ Call ID: 6d4cf390-7913-4b39-8703-0f7d2c2c276f
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:18
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Boris_III_of_Bulgaria lacks the required :Man or :Ancestor class assignment, which is needed for the hasFather relationship of Marie_Louise_of_Bulgaria.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Boris_III_of_Bulgaria, class: :Man)
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Kirill_Vladimirovich_of_Russia lacks the required :Man or :Ancestor class assignment, which is needed for the hasFather relationship of Maria_Kirillovna_of_Russia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Kirill_Vladimirovich_of_Russia, class: :Man)
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Giovanna_of_Italy lacks the required :Woman or :Ancestor class assignment, which is needed for the hasMother relationship of Marie_Louise_of_Bulgaria.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Giovanna_of_Italy, class: :Woman)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Victoria_Melita_of_Edinburgh lacks the required :Woman or :Ancestor class assignment, which is needed for the hasMother relationship of Maria_Kirillovna_of_Russia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Victoria_Melita_of_Edinburgh, class: :Woman)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Karl_6th_Prince_of_Leiningen lacks the required :Man or :Ancestor class assignment, which is needed for the hasFather relationship of Karl_of_Leiningen.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Karl_6th_Prince_of_Leiningen, class: :Man)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Maria_Kirillovna_of_Russia lacks the required :Woman or :Ancestor class assignment, which is needed for the hasMother relationship of Karl_of_Leiningen.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Maria_Kirillovna_of_Russia, class: :Woman)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Kirill_Vladimirovich_of_Russia is missing the mandatory class :Man or :Ancestor required for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Kirill_Vladimirovich_of_Russia, class: :Man)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Boris_III_of_Bulgaria is missing the mandatory class :Man or :Ancestor required for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Boris_III_of_Bulgaria, class: :Man)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Karl_6th_Prince_of_Leiningen is missing the mandatory class :Man or :Ancestor required for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Karl_6th_Prince_of_Leiningen, class: :Man)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Victoria_Melita_of_Edinburgh is missing the mandatory class :Woman or :Ancestor required for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Victoria_Melita_of_Edinburgh, class: :Woman)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Giovanna_of_Italy is missing the mandatory class :Woman or :Ancestor required for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Giovanna_of_Italy, class: :Woman)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Kirillovna_of_Russia is missing the mandatory class :Woman or :Ancestor required for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Maria_Kirillovna_of_Russia, class: :Woman)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Kirill_Vladimirovich_of_Russia is missing the mandatory class :Man or :Ancestor required for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Kirill_Vladimirovich_of_Russia, class: :Man)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Boris_III_of_Bulgaria is missing the mandatory class :Man or :Ancestor required for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Boris_III_of_Bulgaria, class: :Man)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Karl_6th_Prince_of_Leiningen is missing the mandatory class :Man or :Ancestor required for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Karl_6th_Prince_of_Leiningen, class: :Man)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Victoria_Melita_of_Edinburgh is missing the mandatory class :Woman or :Ancestor required for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Victoria_Melita_of_Edinburgh, class: :Woman)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Giovanna_of_Italy is missing the mandatory class :Woman or :Ancestor required for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Giovanna_of_Italy, class: :Woman)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Kirillovna_of_Russia is missing the mandatory class :Woman or :Ancestor required for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Maria_Kirillovna_of_Russia, class: :Woman)
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (b4997cbe-726e-4e42-8104-cf9bb54fb17f)
+ Call ID: b4997cbe-726e-4e42-8104-cf9bb54fb17f
+  Args:
+    source: Boris_III_of_Bulgaria
+    type: :Ancestor
+  AssignClass (3373606f-7ab2-4d7a-b003-b3cd48264bed)
+ Call ID: 3373606f-7ab2-4d7a-b003-b3cd48264bed
+  Args:
+    source: Kirill_Vladimirovich_of_Russia
+    type: :Ancestor
+  AssignClass (7e629cbb-eecf-4a49-b1fa-c3630030a7e7)
+ Call ID: 7e629cbb-eecf-4a49-b1fa-c3630030a7e7
+  Args:
+    source: Giovanna_of_Italy
+    type: :Ancestor
+  AssignClass (fe9e3490-6ac8-4c88-a0a0-c928168f026a)
+ Call ID: fe9e3490-6ac8-4c88-a0a0-c928168f026a
+  Args:
+    source: Victoria_Melita_of_Edinburgh
+    type: :Ancestor
+  AssignClass (1a43a4c4-8ea5-439e-ab5a-929d1b3c3723)
+ Call ID: 1a43a4c4-8ea5-439e-ab5a-929d1b3c3723
+  Args:
+    source: Karl_6th_Prince_of_Leiningen
+    type: :Ancestor
+  AssignClass (a3d04e0c-a306-4ed8-a362-076eef4809f8)
+ Call ID: a3d04e0c-a306-4ed8-a362-076eef4809f8
+  Args:
+    source: Maria_Kirillovna_of_Russia
+    type: :Ancestor
+  AddTriple (ab36ee63-e95c-49a5-9358-e0899e6fc268)
+ Call ID: ab36ee63-e95c-49a5-9358-e0899e6fc268
+  Args:
+    target: :Male
+    relation: :hasSex
+    source: Karl_of_Leiningen
+  AddTriple (84c81a4b-440b-4f07-ba3d-de39d858826e)
+ Call ID: 84c81a4b-440b-4f07-ba3d-de39d858826e
+  Args:
+    target: :Male
+    source: Karl_6th_Prince_of_Leiningen
+    relation: :hasSex
+  AddTriple (3cb17012-62f0-4554-99ca-172336613e1d)
+ Call ID: 3cb17012-62f0-4554-99ca-172336613e1d
+  Args:
+    source: Maria_Kirillovna_of_Russia
+    relation: :hasSex
+    target: :Female
+  AddTriple (ae0e239a-d8b5-4ecd-a7bf-0fa61a8dea52)
+ Call ID: ae0e239a-d8b5-4ecd-a7bf-0fa61a8dea52
+  Args:
+    source: Kirill_Vladimirovich_of_Russia
+    relation: :hasSex
+    target: :Male
+  AddTriple (7d16e966-fa05-441b-811d-c0e4dc6c6a47)
+ Call ID: 7d16e966-fa05-441b-811d-c0e4dc6c6a47
+  Args:
+    target: :Female
+    relation: :hasSex
+    source: Victoria_Melita_of_Edinburgh
+  AddTriple (dbc39bb2-2656-4b19-aa41-461b29213011)
+ Call ID: dbc39bb2-2656-4b19-aa41-461b29213011
+  Args:
+    target: :Female
+    relation: :hasSex
+    source: Marie_Louise_of_Bulgaria
+  AddTriple (115d1202-8df5-473c-90f7-da61502cf5d7)
+ Call ID: 115d1202-8df5-473c-90f7-da61502cf5d7
+  Args:
+    relation: :hasSex
+    source: Boris_III_of_Bulgaria
+    target: :Male
+  AddTriple (a69dd028-7cfe-4e63-8e96-ee0ce3ba2462)
+ Call ID: a69dd028-7cfe-4e63-8e96-ee0ce3ba2462
+  Args:
+    target: :Female
+    relation: :hasSex
+    source: Giovanna_of_Italy
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Emperor_Alexander_II_of_Russia a :Man,
+          :Person .
+
+  data:Karl_of_Leiningen a :Man,
+          :Person ;
+      :hasBirthYear 1928 ;
+      :hasDeathYear 1990 ;
+      :hasFather data:Karl_6th_Prince_of_Leiningen ;
+      :hasMarriageYear 1956,
+          1968 ;
+      :hasMother data:Maria_Kirillovna_of_Russia ;
+      :hasSex data:Male .
+
+  data:Marie_Louise_of_Bulgaria a :Person,
+          :Woman ;
+      :hasFather data:Boris_III_of_Bulgaria ;
+      :hasMother data:Giovanna_of_Italy ;
+      :hasSex data:Female .
+
+  data:Queen_Victoria_of_the_United_Kingdom a :Person,
+          :Woman .
+
+  data:Boris_III_of_Bulgaria a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Giovanna_of_Italy a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Karl_6th_Prince_of_Leiningen a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1898 ;
+      :hasDeathYear 1946 ;
+      :hasSex data:Male .
+
+  data:Kirill_Vladimirovich_of_Russia a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Maria_Kirillovna_of_Russia a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Kirill_Vladimirovich_of_Russia ;
+      :hasMother data:Victoria_Melita_of_Edinburgh ;
+      :hasSex data:Female .
+
+  data:Victoria_Melita_of_Edinburgh a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (a9ed5382-61a8-4391-897d-7c5fabe1fec6)
+ Call ID: a9ed5382-61a8-4391-897d-7c5fabe1fec6
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:82
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Giovanna_of_Italy' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [2]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Marie_Louise_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [3]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Victoria_Melita_of_Edinburgh' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [4]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Maria_Kirillovna_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [5]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Giovanna_of_Italy' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [6]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Marie_Louise_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [7]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Victoria_Melita_of_Edinburgh' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [8]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Maria_Kirillovna_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [9]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_6th_Prince_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [10]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Kirill_Vladimirovich_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Boris_III_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [13]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_6th_Prince_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [14]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Kirill_Vladimirovich_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Boris_III_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Maria_Kirillovna_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Giovanna_of_Italy' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Marie_Louise_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_6th_Prince_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [21]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [22]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Victoria_Melita_of_Edinburgh' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [23]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Kirill_Vladimirovich_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [24]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Boris_III_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [25]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Maria_Kirillovna_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [26]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Giovanna_of_Italy' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Marie_Louise_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [28]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_6th_Prince_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [29]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [30]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Victoria_Melita_of_Edinburgh' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [31]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Kirill_Vladimirovich_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [32]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Boris_III_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [33]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Maria_Kirillovna_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [34]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Giovanna_of_Italy' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [35]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Marie_Louise_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [36]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_6th_Prince_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [37]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [38]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Victoria_Melita_of_Edinburgh' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [39]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Kirill_Vladimirovich_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [40]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Boris_III_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [41]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Maria_Kirillovna_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [42]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Giovanna_of_Italy' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [43]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Marie_Louise_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [44]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_6th_Prince_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [45]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [46]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Victoria_Melita_of_Edinburgh' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [47]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Kirill_Vladimirovich_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [48]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Boris_III_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [49]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Maria_Kirillovna_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [50]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Giovanna_of_Italy' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [51]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Marie_Louise_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [52]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_6th_Prince_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [53]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [54]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Victoria_Melita_of_Edinburgh' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [55]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Kirill_Vladimirovich_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [56]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Boris_III_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [57]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Maria_Kirillovna_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [58]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Giovanna_of_Italy' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [59]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Marie_Louise_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [60]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_6th_Prince_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [61]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [62]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Victoria_Melita_of_Edinburgh' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [63]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Kirill_Vladimirovich_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [64]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Boris_III_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [65]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Giovanna_of_Italy' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [66]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_6th_Prince_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [67]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Maria_Kirillovna_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [68]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Victoria_Melita_of_Edinburgh' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [69]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Kirill_Vladimirovich_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [70]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Boris_III_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [71]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Giovanna_of_Italy' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [72]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_6th_Prince_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [73]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Maria_Kirillovna_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [74]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Victoria_Melita_of_Edinburgh' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [75]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Kirill_Vladimirovich_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [76]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Boris_III_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [77]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Giovanna_of_Italy' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [78]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Karl_6th_Prince_of_Leiningen' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [79]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Maria_Kirillovna_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [80]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the 'hasSex' property of 'Victoria_Melita_of_Edinburgh' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [81]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Kirill_Vladimirovich_of_Russia' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [82]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the 'hasSex' property of 'Boris_III_of_Bulgaria' is not correctly typed as a member of the ':Sex' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (0b263c56-a0e5-4727-83d9-3f72e35dee64)
+ Call ID: 0b263c56-a0e5-4727-83d9-3f72e35dee64
+  Args:
+    source: Male
+    type: :Sex
+  AssignClass (af78b88c-7a24-4e84-a0d9-d74a653f43c7)
+ Call ID: af78b88c-7a24-4e84-a0d9-d74a653f43c7
+  Args:
+    source: Female
+    type: :Sex
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Emperor_Alexander_II_of_Russia a :Man,
+          :Person .
+
+  data:Karl_of_Leiningen a :Man,
+          :Person ;
+      :hasBirthYear 1928 ;
+      :hasDeathYear 1990 ;
+      :hasFather data:Karl_6th_Prince_of_Leiningen ;
+      :hasMarriageYear 1956,
+          1968 ;
+      :hasMother data:Maria_Kirillovna_of_Russia ;
+      :hasSex data:Male .
+
+  data:Marie_Louise_of_Bulgaria a :Person,
+          :Woman ;
+      :hasFather data:Boris_III_of_Bulgaria ;
+      :hasMother data:Giovanna_of_Italy ;
+      :hasSex data:Female .
+
+  data:Queen_Victoria_of_the_United_Kingdom a :Person,
+          :Woman .
+
+  data:Boris_III_of_Bulgaria a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Giovanna_of_Italy a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Karl_6th_Prince_of_Leiningen a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1898 ;
+      :hasDeathYear 1946 ;
+      :hasSex data:Male .
+
+  data:Kirill_Vladimirovich_of_Russia a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Maria_Kirillovna_of_Russia a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Kirill_Vladimirovich_of_Russia ;
+      :hasMother data:Victoria_Melita_of_Edinburgh ;
+      :hasSex data:Female .
+
+  data:Victoria_Melita_of_Edinburgh a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Female a :Sex .
+
+  data:Male a :Sex .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (7d111a48-a259-46bb-9bdc-f7a1ca30d32d)
+ Call ID: 7d111a48-a259-46bb-9bdc-f7a1ca30d32d
   Args:
 
 ================================= Tool Message =================================
@@ -681,6 +1960,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (24dd6fa7-b3ce-4a9f-b463-86ba0ba59c29)
- Call ID: 24dd6fa7-b3ce-4a9f-b463-86ba0ba59c29
+  Finish (73c3be46-178a-4842-9a07-1393f8605e0a)
+ Call ID: 73c3be46-178a-4842-9a07-1393f8605e0a
   Args:

@@ -7,30 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Duchess_Marie_of_Mecklenburg-Strelitz a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Duchess Marie of Mecklenburg-Strelitz" ;
-    data:posIndicesFull "438:475" ;
-    data:wdtLink wdt:Q69425 ;
-    :alsoKnownAs "Marie Herzogin zu Mecklenburg" ;
-    :hasChild data:Prince_Ernst_August_of_Lippe ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Ernst_August_of_Lippe ;
-    :isMotherOf data:Prince_Ernst_August_of_Lippe ;
-    :isParentOf data:Prince_Ernst_August_of_Lippe .
-
-data:Prince_Ernst_August_of_Lippe a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Ernst_August_of_Lippe a :Person ;
     rdfs:label "Prince Ernst August of Lippe" ;
     data:posIndicesFull "0:28" ;
     data:posIndicesPart "1031:1037",
@@ -69,9 +46,23 @@ data:Prince_Ernst_August_of_Lippe a :Ancestor,
         "760:766",
         "979:984" ;
     data:wdtLink wdt:Q2295856 ;
-    :hasMother data:Duchess_Marie_of_Mecklenburg-Strelitz ;
     :hasParent data:Duchess_Marie_of_Mecklenburg-Strelitz ;
-    :hasSex data:male ;
-    :isChildOf data:Duchess_Marie_of_Mecklenburg-Strelitz ;
-    :isSonOf data:Duchess_Marie_of_Mecklenburg-Strelitz .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Duchess_Marie_of_Mecklenburg-Strelitz a :Person ;
+    rdfs:label "Duchess Marie of Mecklenburg-Strelitz" ;
+    data:posIndicesFull "438:475" ;
+    data:wdtLink wdt:Q69425 ;
+    :alsoKnownAs "Marie Herzogin zu Mecklenburg" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

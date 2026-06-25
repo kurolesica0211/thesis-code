@@ -2,43 +2,71 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Ingolf_of_Rosenborg a :Man ;
-    :hasBirthYear 1940 ;
-    :hasBrother data:Christian_of_Rosenborg ;
-    :hasFather data:Prince_Knud ;
-    :hasMarriageYear 1968 ;
-    :hasRelation data:Inge_Terney,
-        data:Sussie_Hjorhoy-Pedersen ;
-    :hasSister data:Princess_Elisabeth_of_Denmark .
+data:Alexia a :Woman ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
 
-data:Christian_X_of_Denmark a :Ancestor,
-        :Man .
+data:Nikolaos a :Man ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
 
-data:Christian_of_Rosenborg a :Man .
+data:Pavlos a :Man ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
 
-data:Frederick_Walter_Pedersen a :Ancestor,
-        :Man .
+data:Philippos a :Man ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
 
-data:Georg_Terney a :Ancestor,
-        :Man .
+data:Theodora a :Woman ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
 
-data:Inge_Terney a :Woman ;
-    :hasFather data:Georg_Terney ;
-    :hasMother data:Jenny_Kamilla_Hansen .
-
-data:Jenny_Kamilla_Hansen a :Ancestor,
+data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
         :Woman .
 
-data:Prince_Knud a :Ancestor,
+data:Benedikte a :Woman .
+
+data:Christian_X a :Ancestor,
+        :Man .
+
+data:Frederica_of_Greece a :Ancestor,
+        :Woman .
+
+data:Frederik_IX a :Ancestor,
         :Man ;
-    :hasFather data:Christian_X_of_Denmark .
+    :hasFather data:Christian_X ;
+    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin .
 
-data:Princess_Elisabeth_of_Denmark a :Woman .
+data:Gustaf_VI_Adolf a :Ancestor,
+        :Man .
 
-data:Ruth_Hjorhoy a :Ancestor,
+data:Ingrid_of_Sweden a :Ancestor,
+        :Woman ;
+    :hasFather data:Gustaf_VI_Adolf ;
+    :hasMother data:Margaret_of_Connaught .
+
+data:Margaret_of_Connaught a :Ancestor,
         :Woman .
 
-data:Sussie_Hjorhoy-Pedersen a :Woman ;
-    :hasFather data:Frederick_Walter_Pedersen ;
-    :hasMother data:Ruth_Hjorhoy .
+data:Margrethe_II a :Woman .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man .
+
+data:Anne-Marie a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1946 ;
+    :hasFather data:Frederik_IX ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasRelation data:Constantine_II ;
+    :hasSister data:Benedikte,
+        data:Margrethe_II .
+
+data:Constantine_II a :Ancestor,
+        :Man ;
+    :hasDeathYear 2023 ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Greece .
 

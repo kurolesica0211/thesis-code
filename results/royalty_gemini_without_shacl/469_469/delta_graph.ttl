@@ -2,44 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Emich_Kirill a :Man,
+data:Mauritz_Otto_Wenzel_Douglas a :Man,
         :Person ;
-    :hasFather data:Karl_6th_Prince_of_Leiningen ;
-    :hasMother data:Maria_Kirillovna_of_Russia .
+    :hasBirthYear 1994 ;
+    :hasFather data:Carl_Axel_Archibald_Douglas ;
+    :hasMother data:Walburga_Douglas .
 
-data:Ileana_of_Romania a :Person,
-        :Woman ;
-    :isSisterOf data:Maria_Kirillovna_of_Romania_Wait_No_Ileana_is_cousin .
-
-data:Marie_of_Romania a :Person,
-        :Woman ;
-    :isAuntOf data:Maria_Kirillovna_of_Russia .
-
-data:Carl_of_Leiningen a :Man,
+data:Archibald_Douglas a :Ancestor,
+        :Man,
         :Person .
 
-data:Karl_6th_Prince_of_Leiningen a :Man,
-        :Person ;
-    :hasFather data:Carl_of_Leiningen .
-
-data:Kirill_Vladimirovich_of_Russia a :Man,
+data:Charles_I a :Ancestor,
+        :Man,
         :Person .
 
-data:Maria_Alexandrovna_of_Russia a :Person,
+data:Margareta_Lagerfelt a :Ancestor,
+        :Person,
         :Woman .
 
-data:Maria_Kirillovna_of_Romania_Wait_No_Ileana_is_cousin a :Person,
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Regina_of_Saxe-Meiningen a :Ancestor,
+        :Person,
         :Woman .
 
-data:Victoria_Melita_of_Edinburgh a :Person,
+data:Walburga_Douglas a :Person,
         :Woman ;
-    :hasMother data:Maria_Alexandrovna_of_Russia .
+    :hasAncestor data:Charles_I ;
+    :hasBirthYear 1958 ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMarriageYear 1992 ;
+    :hasMother data:Regina_of_Saxe-Meiningen ;
+    :hasRelation data:Carl_Axel_Archibald_Douglas .
 
-data:Maria_Kirillovna_of_Russia a :Person,
-        :Woman ;
-    :hasBirthYear 1907 ;
-    :hasDeathYear 1951 ;
-    :hasFather data:Kirill_Vladimirovich_of_Russia ;
-    :hasMarriageYear 1925 ;
-    :hasMother data:Victoria_Melita_of_Edinburgh .
+data:Carl_Axel_Archibald_Douglas a :Man,
+        :Person ;
+    :hasBirthYear 1949 ;
+    :hasFather data:Archibald_Douglas ;
+    :hasMother data:Margareta_Lagerfelt .
 

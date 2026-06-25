@@ -85,39 +85,52 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Amedeo of Savoy-Aosta, 5th Duke of Aosta (Amedeo Umberto Costantino Giorgio
+The Duchess of Montpensier
+
+
+The Count of ÉvreuxThe Countess of Évreux
+
+
+Princess Béatrice
+
+
+The Duke of OrléansThe Duchess of Orléans
+
+
+The Dowager Countess of La Marche
+
+
+The Countess of Schönborn-Buchheim
+
+
+Princess Hélène, Countess of Limburg Stirum
+
+
+The Dowager Duchess of Calabria
+
+
+The Dowager Duchess of Württemberg
+
+
+Princess Claude, Mrs. Gandolfi
+
+
+Princess Chantal, Baroness of Sambucy de Sorgue
+
+
+Diane, Dowager Duchess of Württemberg (née Princess Diane of Orléans; born 24 March 1940) is a French-German painter, sculptor, writer and philanthropist.
+She is the fourth daughter and sixth child of Henri, Count of Paris, Orléanist pretender to the throne of France, and his wife, Princess Isabelle of Orléans-Braganza.
 Early life
 
-Amedeo was born at Villa della Cisterna in Florence, the only child of Prince Aimone, Duke of Aosta, formerly designated king of Croatia as Tomislav II, and of Princess Irene of Greece and Denmark through whom he was a great-great-grandson of Queen Victoria.
-When Amedeo was only four years old, his father died in exile in Buenos Aires, and he succeeded him as Duke of Aosta, Prince della Cisterna e Belriguardo, Marchese di Voghera, and Count di Ponderano.
-He was an Honorary Companion of the Pennsylvania Commandery of the Military Order of the Loyal Legion of the United States, assigned insignia number 21015, as a great-grandson of Prince Philippe, Count of Paris.
-Marriages and family
-
-1st marriage and descendants
-
-On 22 July 1964, at the Igreja Paroquial De São Pedro in Sintra, Portugal, Amedeo married his second cousin, Princess Claude of Orléans (born 11 December 1943).
-She was the ninth child and fifth daughter of Henri, comte de Paris, Orléanist claimant to the French throne, and of Princess Isabelle of Orléans-Braganza.
-He was involved in various agricultural activities, including the production of wine marketed under the name Vini Savoia Aosta.
-Dynastic activities
-
-Amedeo was long viewed by Italian royalists as a likely claimant to the throne if Umberto's own son, Vittorio Emanuele, Prince of Naples, failed to live up to monarchist expectations.
-On 7 July 2006, Amedeo declared himself to be the Head of the House of Savoy and Duke of Savoy, claiming that in 1971, Vittorio Emanuele had lost his dynastic rights when he married without previously obtaining the permission of Umberto II, authorization which had been required under monarchical law.
-In 2009, Vittorio Emanuele and his son, Emanuele Filiberto, Prince of Venice, sought judicial intervention to forbid Amedeo's use of the surname di Savoia.
-In February 2010, the court of Arezzo ruled that the Amedeo and his son Aimone must pay damages totalling 50,000 euros to their cousins and cease using the surname di Savoia instead of di Savoia-Aosta.
-Amedeo's claim received the support of Vittorio Emanuele's sister, Princess Maria Gabriella of Savoy.
-Although many monarchists transferred their allegiance to Amedeo at some point after King Umberto's death, Amedeo was criticised by other Italian royalists who continue to support Prince Vittorio Emanuele.
-But others, including constitutional jurist Guido Locatello, declared the marriage of Vittorio Emanuele to be in violation of Savoy dynastic law years before the scandal evoked any clamour for Amedeo to replace him.
-The Unione Monarchica Italiana published in its newsletter, Monarchia Nuova, on 12 February 1987 that the Prince of Naples' marriage to Marina Doria violated the decree of Victor Amadeus III, issued 13 September 1780, regulating the marriages of princes of the blood royal, compelling the Unione to recognise Amedeo as rightful head of the royal house—although at that time Aosta had put forth no public dynastic claim.
-Amedeo was a Knight of the Supreme Order of the Most Holy Annunciation named by Umberto II, a Grand Cross of the Order of Saints Maurice and Lazarus named by his cousin Vittorio Emanuele, and a Knight of Honor and Devotion of the Sovereign Military Order of St. John of Jerusalem.
-Death
-
-Prince Amedeo died on 1 June 2021, at the age of 77, in Arezzo, Italy, from cardiac arrest after undergoing surgery on 27 May.
+Diane was born in Petrópolis, Brazil, the fourth daughter and sixth child of the Orléanist claimant to the French throne, Henri, Count of Paris, and his wife, Princess Isabelle of Orléans-Braganza.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -133,39 +146,9 @@ Prince Amedeo died on 1 June 2021, at the age of 77, in Arezzo, Italy, from card
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -180,6 +163,23 @@ Prince Amedeo died on 1 June 2021, at the age of 77, in Arezzo, Italy, from card
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -197,6 +197,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,29 +279,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -295,6 +302,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -307,6 +322,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -315,17 +332,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -353,6 +372,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -368,188 +471,76 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2f0bdff2-8c8b-499e-925d-952cd6d9482f)
- Call ID: 2f0bdff2-8c8b-499e-925d-952cd6d9482f
+  AssignClass (52775051-386f-408e-a34b-d40afbf28773)
+ Call ID: 52775051-386f-408e-a34b-d40afbf28773
   Args:
-    type: :Man
-    source: Amedeo_of_Savoy-Aosta
-  AssignClass (c835e480-9349-4039-ada0-91a4616cd986)
- Call ID: c835e480-9349-4039-ada0-91a4616cd986
-  Args:
-    type: :Person
-    source: Amedeo_of_Savoy-Aosta
-  AssignClass (bb072a8f-f3d3-405b-a868-8ba3ba4dd2d3)
- Call ID: bb072a8f-f3d3-405b-a868-8ba3ba4dd2d3
-  Args:
-    type: :Male
-    source: Male
-  AddTriple (2531fc33-7ae1-4e6c-ba05-14d05e632eb0)
- Call ID: 2531fc33-7ae1-4e6c-ba05-14d05e632eb0
-  Args:
-    source: Amedeo_of_Savoy-Aosta
-    target: Male
-    relation: :hasSex
-  AssignClass (757d977e-762c-499c-b6ba-77696107da8b)
- Call ID: 757d977e-762c-499c-b6ba-77696107da8b
-  Args:
-    type: :Man
-    source: Aimone_Duke_of_Aosta
-  AssignClass (47270a4b-6325-48c6-8817-e8eeead596c7)
- Call ID: 47270a4b-6325-48c6-8817-e8eeead596c7
+    source: Diane_Dowager_Duchess_of_Württemberg
+    type: :Woman
+  AssignClass (275fec8b-f361-485e-8312-8f6e25e8db48)
+ Call ID: 275fec8b-f361-485e-8312-8f6e25e8db48
   Args:
     type: :Person
-    source: Aimone_Duke_of_Aosta
-  AddTriple (8a8c6f88-b6bb-454c-82d8-1bdfbd52ca99)
- Call ID: 8a8c6f88-b6bb-454c-82d8-1bdfbd52ca99
+    source: Diane_Dowager_Duchess_of_Württemberg
+  AddLiteral (2e20c7f4-1dbd-40c3-8960-078957516607)
+ Call ID: 2e20c7f4-1dbd-40c3-8960-078957516607
   Args:
-    source: Amedeo_of_Savoy-Aosta
-    relation: :hasFather
-    target: Aimone_Duke_of_Aosta
-  AssignClass (c6a05bb1-3f9d-4dbb-8859-06ead054f138)
- Call ID: c6a05bb1-3f9d-4dbb-8859-06ead054f138
+    source: Diane_Dowager_Duchess_of_Württemberg
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1940
+  AddTriple (37f92bf3-23f7-49bf-a57c-556b1007fc90)
+ Call ID: 37f92bf3-23f7-49bf-a57c-556b1007fc90
+  Args:
+    relation: :alsoKnownAs
+    target: Princess_Diane_of_Orléans
+    source: Diane_Dowager_Duchess_of_Württemberg
+  AssignClass (a04a28a2-bbe5-4a22-8029-03314f58720b)
+ Call ID: a04a28a2-bbe5-4a22-8029-03314f58720b
+  Args:
+    type: :Man
+    source: Henri_Count_of_Paris
+  AssignClass (bed7770c-7d29-4689-a49a-22317093993f)
+ Call ID: bed7770c-7d29-4689-a49a-22317093993f
+  Args:
+    source: Henri_Count_of_Paris
+    type: :Person
+  AssignClass (7dac2098-5c7d-4c85-8a04-036ffee2f19c)
+ Call ID: 7dac2098-5c7d-4c85-8a04-036ffee2f19c
   Args:
     type: :Woman
-    source: Irene_of_Greece_and_Denmark
-  AssignClass (5c0c4d00-ff15-49c0-af57-a0e24a605c81)
- Call ID: 5c0c4d00-ff15-49c0-af57-a0e24a605c81
+    source: Princess_Isabelle_of_Orléans-Braganza
+  AssignClass (aaa45ba6-0afc-4155-ad5c-04a71656aa3d)
+ Call ID: aaa45ba6-0afc-4155-ad5c-04a71656aa3d
   Args:
     type: :Person
-    source: Irene_of_Greece_and_Denmark
-  AddTriple (a7776e56-588e-481c-b8c8-029a6e1451b9)
- Call ID: a7776e56-588e-481c-b8c8-029a6e1451b9
+    source: Princess_Isabelle_of_Orléans-Braganza
+  AddTriple (5377939f-aed9-4e49-a7f5-21ae400f1ce5)
+ Call ID: 5377939f-aed9-4e49-a7f5-21ae400f1ce5
+  Args:
+    target: Henri_Count_of_Paris
+    relation: :isDaughterOf
+    source: Diane_Dowager_Duchess_of_Württemberg
+  AddTriple (1d5d7e59-7dec-4dd8-b342-12d51a1e0ecf)
+ Call ID: 1d5d7e59-7dec-4dd8-b342-12d51a1e0ecf
+  Args:
+    target: Princess_Isabelle_of_Orléans-Braganza
+    relation: :isDaughterOf
+    source: Diane_Dowager_Duchess_of_Württemberg
+  AddTriple (c4fe89c9-f599-45fd-9d0a-efcf29448174)
+ Call ID: c4fe89c9-f599-45fd-9d0a-efcf29448174
+  Args:
+    target: Henri_Count_of_Paris
+    relation: :hasFather
+    source: Diane_Dowager_Duchess_of_Württemberg
+  AddTriple (d6e713db-e4d8-4a80-b238-a073c090d7b8)
+ Call ID: d6e713db-e4d8-4a80-b238-a073c090d7b8
   Args:
     relation: :hasMother
-    target: Irene_of_Greece_and_Denmark
-    source: Amedeo_of_Savoy-Aosta
-  AddLiteral (2f40a3f7-bbd9-4df5-9046-8a7944dff265)
- Call ID: 2f40a3f7-bbd9-4df5-9046-8a7944dff265
+    target: Princess_Isabelle_of_Orléans-Braganza
+    source: Diane_Dowager_Duchess_of_Württemberg
+  Finish (bb5f24fa-993a-4daa-a1c4-8aa557a66a09)
+ Call ID: bb5f24fa-993a-4daa-a1c4-8aa557a66a09
   Args:
-    relation: :hasDeathYear
-    literal_value: 2021
-    literal_type: xsd:integer
-    source: Amedeo_of_Savoy-Aosta
-  AssignClass (f75f07e1-e343-4984-90fe-b0ea47eabec9)
- Call ID: f75f07e1-e343-4984-90fe-b0ea47eabec9
-  Args:
-    type: :Woman
-    source: Claude_of_Orleans
-  AssignClass (7fa1a991-0c39-4e48-8f24-1ff3dbee7c6c)
- Call ID: 7fa1a991-0c39-4e48-8f24-1ff3dbee7c6c
-  Args:
-    type: :Person
-    source: Claude_of_Orleans
-  AddLiteral (320a1d14-e83c-4b6f-a839-007251705a6a)
- Call ID: 320a1d14-e83c-4b6f-a839-007251705a6a
-  Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 1964
-    source: Amedeo_of_Savoy-Aosta
-  AddTriple (8df7e0e8-a625-4630-9770-1b4067580337)
- Call ID: 8df7e0e8-a625-4630-9770-1b4067580337
-  Args:
-    source: Amedeo_of_Savoy-Aosta
-    relation: :hasRelation
-    target: Claude_of_Orleans
-  AssignClass (9ce77381-5aa9-4138-92d2-9a3e927eb213)
- Call ID: 9ce77381-5aa9-4138-92d2-9a3e927eb213
-  Args:
-    type: :Man
-    source: Henri_comte_de_Paris
-  AssignClass (7b725294-b16f-4a77-a58b-25a20f803d9f)
- Call ID: 7b725294-b16f-4a77-a58b-25a20f803d9f
-  Args:
-    type: :Person
-    source: Henri_comte_de_Paris
-  AddTriple (25b3bce2-1e10-4dcc-93f3-3aa7c3068170)
- Call ID: 25b3bce2-1e10-4dcc-93f3-3aa7c3068170
-  Args:
-    source: Claude_of_Orleans
-    relation: :hasFather
-    target: Henri_comte_de_Paris
-  AssignClass (1361c9f5-eb5d-4711-970c-8b1d6fbe4a80)
- Call ID: 1361c9f5-eb5d-4711-970c-8b1d6fbe4a80
-  Args:
-    type: :Woman
-    source: Isabelle_of_Orleans-Braganza
-  AssignClass (9326b589-b4b2-4a64-82ff-590da948af7a)
- Call ID: 9326b589-b4b2-4a64-82ff-590da948af7a
-  Args:
-    type: :Person
-    source: Isabelle_of_Orleans-Braganza
-  AddTriple (06ab4765-6ba8-4c34-933e-793c33e6deb8)
- Call ID: 06ab4765-6ba8-4c34-933e-793c33e6deb8
-  Args:
-    target: Isabelle_of_Orleans-Braganza
-    relation: :hasMother
-    source: Claude_of_Orleans
-  AssignClass (4e3ee773-8363-40cb-a181-88cc95cf07c5)
- Call ID: 4e3ee773-8363-40cb-a181-88cc95cf07c5
-  Args:
-    type: :Man
-    source: Aimone_son_of_Amedeo
-  AssignClass (57504f35-99b7-4eaa-bf6a-6f6a991f31e9)
- Call ID: 57504f35-99b7-4eaa-bf6a-6f6a991f31e9
-  Args:
-    type: :Person
-    source: Aimone_son_of_Amedeo
-  AddTriple (ba379860-4fbf-44bd-b5f1-e967c4dd6946)
- Call ID: ba379860-4fbf-44bd-b5f1-e967c4dd6946
-  Args:
-    source: Aimone_son_of_Amedeo
-    target: Amedeo_of_Savoy-Aosta
-    relation: :hasFather
-  Finish (a4cf4565-92df-43c8-b9d3-83c6c232cb7c)
- Call ID: a4cf4565-92df-43c8-b9d3-83c6c232cb7c
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -602,37 +593,20 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Aimone_son_of_Amedeo a :Man,
-          :Person ;
-      :hasFather data:Amedeo_of_Savoy-Aosta .
-
-  data:Aimone_Duke_of_Aosta a :Man,
-          :Person .
-
-  data:Amedeo_of_Savoy-Aosta a :Man,
-          :Person ;
-      :hasDeathYear 2021 ;
-      :hasFather data:Aimone_Duke_of_Aosta ;
-      :hasMarriageYear 1964 ;
-      :hasMother data:Irene_of_Greece_and_Denmark ;
-      :hasRelation data:Claude_of_Orleans ;
-      :hasSex data:Male .
-
-  data:Claude_of_Orleans a :Person,
+  data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg a :Person,
           :Woman ;
-      :hasFather data:Henri_comte_de_Paris ;
-      :hasMother data:Isabelle_of_Orleans-Braganza .
+      :alsoKnownAs data:Princess_Diane_of_Orl%C3%A9ans ;
+      :hasBirthYear 1940 ;
+      :hasFather data:Henri_Count_of_Paris ;
+      :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+      :isDaughterOf data:Henri_Count_of_Paris,
+          data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .
 
-  data:Henri_comte_de_Paris a :Man,
+  data:Henri_Count_of_Paris a :Man,
           :Person .
 
-  data:Irene_of_Greece_and_Denmark a :Person,
+  data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Person,
           :Woman .
-
-  data:Isabelle_of_Orleans-Braganza a :Person,
-          :Woman .
-
-  data:Male a :Male .
 
 
 
@@ -644,134 +618,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (2f4786a6-c11e-462e-9dcd-15a9806e1803)
- Call ID: 2f4786a6-c11e-462e-9dcd-15a9806e1803
+  ValidateShacl (63b85af4-f1af-43bd-93a1-8e2d5fe40ebe)
+ Call ID: 63b85af4-f1af-43bd-93a1-8e2d5fe40ebe
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:15
+Total violations:12
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Aimone_Duke_of_Aosta is assigned as the father of Amedeo_of_Savoy-Aosta, but Aimone_Duke_of_Aosta lacks the required class :Ancestor.
+      The person 'Henri_Count_of_Paris' is set as the father of 'Diane_Dowager_Duchess_of_Württemberg', but he lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Aimone_Duke_of_Aosta, :Ancestor)
+      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Amedeo_of_Savoy-Aosta is assigned as the father of Aimone_son_of_Amedeo, but Amedeo_of_Savoy-Aosta lacks the required class :Ancestor.
+      The person 'Princess_Isabelle_of_Orléans-Braganza' is set as the mother of 'Diane_Dowager_Duchess_of_Württemberg', but she lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Amedeo_of_Savoy-Aosta, :Ancestor)
+      AssignClass(node='Princess_Isabelle_of_Orléans-Braganza', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Irene_of_Greece_and_Denmark is assigned as the mother of Amedeo_of_Savoy-Aosta, but Irene_of_Greece_and_Denmark lacks the required class :Ancestor.
+      The node 'Henri_Count_of_Paris' is linked via 'isDaughterOf', but it does not have the mandatory ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Irene_of_Greece_and_Denmark, :Ancestor)
+      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Amedeo_of_Savoy-Aosta is assigned as the father of Aimone_son_of_Amedeo, but Amedeo_of_Savoy-Aosta lacks the required class :Ancestor.
+      The node 'Princess_Isabelle_of_Orléans-Braganza' is linked via 'isDaughterOf', but it does not have the mandatory ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Amedeo_of_Savoy-Aosta, :Ancestor)
+      AssignClass(node='Princess_Isabelle_of_Orléans-Braganza', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Aimone_Duke_of_Aosta is assigned as the father of Amedeo_of_Savoy-Aosta, but Aimone_Duke_of_Aosta lacks the required class :Ancestor.
+      The person 'Henri_Count_of_Paris' is set as the father of 'Diane_Dowager_Duchess_of_Württemberg', but he lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Aimone_Duke_of_Aosta, :Ancestor)
+      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Henri_comte_de_Paris is assigned as the father of Claude_of_Orleans, but Henri_comte_de_Paris lacks the required class :Ancestor.
+      The person 'Princess_Isabelle_of_Orléans-Braganza' is set as the mother of 'Diane_Dowager_Duchess_of_Württemberg', but she lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Henri_comte_de_Paris, :Ancestor)
+      AssignClass(node='Princess_Isabelle_of_Orléans-Braganza', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Irene_of_Greece_and_Denmark is assigned as the mother of Amedeo_of_Savoy-Aosta, but Irene_of_Greece_and_Denmark lacks the required class :Ancestor.
+      The node 'Henri_Count_of_Paris' is linked via 'isDaughterOf', but it does not have the mandatory ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Irene_of_Greece_and_Denmark, :Ancestor)
+      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Isabelle_of_Orleans-Braganza is assigned as the mother of Claude_of_Orleans, but Isabelle_of_Orleans-Braganza lacks the required class :Ancestor.
+      The node 'Princess_Isabelle_of_Orléans-Braganza' is linked via 'isDaughterOf', but it does not have the mandatory ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Isabelle_of_Orleans-Braganza, :Ancestor)
+      AssignClass(node='Princess_Isabelle_of_Orléans-Braganza', class=':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Amedeo_of_Savoy-Aosta is assigned as the father of Aimone_son_of_Amedeo, but Amedeo_of_Savoy-Aosta lacks the required class :Ancestor.
+      The person 'Henri_Count_of_Paris' is set as the father of 'Diane_Dowager_Duchess_of_Württemberg', but he lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Amedeo_of_Savoy-Aosta, :Ancestor)
+      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Aimone_Duke_of_Aosta is assigned as the father of Amedeo_of_Savoy-Aosta, but Aimone_Duke_of_Aosta lacks the required class :Ancestor.
+      The person 'Princess_Isabelle_of_Orléans-Braganza' is set as the mother of 'Diane_Dowager_Duchess_of_Württemberg', but she lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Aimone_Duke_of_Aosta, :Ancestor)
+      AssignClass(node='Princess_Isabelle_of_Orléans-Braganza', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Henri_comte_de_Paris is assigned as the father of Claude_of_Orleans, but Henri_comte_de_Paris lacks the required class :Ancestor.
+      The node 'Henri_Count_of_Paris' is linked via 'isDaughterOf', but it does not have the mandatory ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Henri_comte_de_Paris, :Ancestor)
+      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person Irene_of_Greece_and_Denmark is assigned as the mother of Amedeo_of_Savoy-Aosta, but Irene_of_Greece_and_Denmark lacks the required class :Ancestor.
+      The node 'Princess_Isabelle_of_Orléans-Braganza' is linked via 'isDaughterOf', but it does not have the mandatory ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Irene_of_Greece_and_Denmark, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Isabelle_of_Orleans-Braganza is assigned as the mother of Claude_of_Orleans, but Isabelle_of_Orleans-Braganza lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Isabelle_of_Orleans-Braganza, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Henri_comte_de_Paris is assigned as the father of Claude_of_Orleans, but Henri_comte_de_Paris lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Henri_comte_de_Paris, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Isabelle_of_Orleans-Braganza is assigned as the mother of Claude_of_Orleans, but Isabelle_of_Orleans-Braganza lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Isabelle_of_Orleans-Braganza, :Ancestor)
+      AssignClass(node='Princess_Isabelle_of_Orléans-Braganza', class=':Ancestor')
 
 
 
@@ -780,31 +730,55 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (a2ebbbb5-2ae2-4877-8a53-b053fd68a173)
- Call ID: a2ebbbb5-2ae2-4877-8a53-b053fd68a173
+  AssignClass (7325767d-cf9a-458c-bd85-61320214f4e1)
+ Call ID: 7325767d-cf9a-458c-bd85-61320214f4e1
+  Args:
+    source: Henri_Count_of_Paris
+    type: :Ancestor
+  AssignClass (a05b9989-261e-4096-8534-b37eb0a01511)
+ Call ID: a05b9989-261e-4096-8534-b37eb0a01511
   Args:
     type: :Ancestor
-    source: Aimone_Duke_of_Aosta
-  AssignClass (ad337a0c-2e8d-4660-bad6-25340b15a049)
- Call ID: ad337a0c-2e8d-4660-bad6-25340b15a049
+    source: Princess_Isabelle_of_Orléans-Braganza
+  AddTriple (03be8a02-e51d-4d60-a8dc-df379bd9ebe8)
+ Call ID: 03be8a02-e51d-4d60-a8dc-df379bd9ebe8
   Args:
-    type: :Ancestor
-    source: Amedeo_of_Savoy-Aosta
-  AssignClass (05a441f8-d45e-40ee-9ddc-10b82894c37c)
- Call ID: 05a441f8-d45e-40ee-9ddc-10b82894c37c
+    source: Diane_Dowager_Duchess_of_Württemberg
+    relation: :hasSex
+    target: :Female
+  AddTriple (e6441d11-1779-4a4c-b42d-0df81338fcbb)
+ Call ID: e6441d11-1779-4a4c-b42d-0df81338fcbb
   Args:
-    type: :Ancestor
-    source: Irene_of_Greece_and_Denmark
-  AssignClass (3b05d0d6-ca2c-474a-9804-69b2e3c387fe)
- Call ID: 3b05d0d6-ca2c-474a-9804-69b2e3c387fe
+    target: :Male
+    relation: :hasSex
+    source: Henri_Count_of_Paris
+  AddTriple (9cff7ccb-a49c-4f1a-9ab8-1c7afcfe5cb4)
+ Call ID: 9cff7ccb-a49c-4f1a-9ab8-1c7afcfe5cb4
   Args:
-    type: :Ancestor
-    source: Henri_comte_de_Paris
-  AssignClass (a65d8a25-d378-4561-937b-49149d7370e6)
- Call ID: a65d8a25-d378-4561-937b-49149d7370e6
+    source: Princess_Isabelle_of_Orléans-Braganza
+    relation: :hasSex
+    target: :Female
+  AssignClass (b9cdfd3e-6ba5-4ca5-9761-1b9f386ed2a3)
+ Call ID: b9cdfd3e-6ba5-4ca5-9761-1b9f386ed2a3
   Args:
-    type: :Ancestor
-    source: Isabelle_of_Orleans-Braganza
+    source: :Female
+    type: :Sex
+  AssignClass (978e7421-9738-4c57-9284-bb334436df09)
+ Call ID: 978e7421-9738-4c57-9284-bb334436df09
+  Args:
+    source: :Male
+    type: :Sex
+  Finish (b58feb47-567a-4368-b413-f7b579926143)
+ Call ID: b58feb47-567a-4368-b413-f7b579926143
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -829,51 +803,42 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Aimone_son_of_Amedeo a :Man,
-          :Person ;
-      :hasFather data:Amedeo_of_Savoy-Aosta .
+  data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg a :Person,
+          :Woman ;
+      :alsoKnownAs data:Princess_Diane_of_Orl%C3%A9ans ;
+      :hasBirthYear 1940 ;
+      :hasFather data:Henri_Count_of_Paris ;
+      :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+      :hasSex data:Female ;
+      :isDaughterOf data:Henri_Count_of_Paris,
+          data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .
 
-  data:Aimone_Duke_of_Aosta a :Ancestor,
-          :Man,
-          :Person .
+  data:Male a :Sex .
 
-  data:Amedeo_of_Savoy-Aosta a :Ancestor,
+  data:Female a :Sex .
+
+  data:Henri_Count_of_Paris a :Ancestor,
           :Man,
           :Person ;
-      :hasDeathYear 2021 ;
-      :hasFather data:Aimone_Duke_of_Aosta ;
-      :hasMarriageYear 1964 ;
-      :hasMother data:Irene_of_Greece_and_Denmark ;
-      :hasRelation data:Claude_of_Orleans ;
       :hasSex data:Male .
 
-  data:Claude_of_Orleans a :Person,
+  data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Ancestor,
+          :Person,
           :Woman ;
-      :hasFather data:Henri_comte_de_Paris ;
-      :hasMother data:Isabelle_of_Orleans-Braganza .
-
-  data:Henri_comte_de_Paris a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Irene_of_Greece_and_Denmark a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Isabelle_of_Orleans-Braganza a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Male a :Male .
+      :hasSex data:Female .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (dc7ee0cd-d037-4913-b6d9-6ff4382e061f)
- Call ID: dc7ee0cd-d037-4913-b6d9-6ff4382e061f
+  ValidateShacl (b0f4549d-8965-4bda-8c0c-cb11dd20270f)
+ Call ID: b0f4549d-8965-4bda-8c0c-cb11dd20270f
   Args:
 
 ================================= Tool Message =================================
@@ -884,6 +849,42 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5995b77f-b05d-4aa5-8e39-cb3006b83d21)
- Call ID: 5995b77f-b05d-4aa5-8e39-cb3006b83d21
+  Finish (4eaf436f-1656-4314-a850-c242e65e9839)
+ Call ID: 4eaf436f-1656-4314-a850-c242e65e9839
+  Args:
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Princess_Diane_of_Orl%C3%A9ans']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (30faf1ef-13a4-46f0-be02-d197828b2597)
+ Call ID: 30faf1ef-13a4-46f0-be02-d197828b2597
+  Args:
+    type: :Person
+    source: Princess_Diane_of_Orléans
+  AssignClass (ac55e446-88e3-4a90-9a9e-897342e3dd14)
+ Call ID: ac55e446-88e3-4a90-9a9e-897342e3dd14
+  Args:
+    source: Princess_Diane_of_Orléans
+    type: :Woman
+  Finish (4e6b52be-1ea9-4509-b10e-410408142a16)
+ Call ID: 4e6b52be-1ea9-4509-b10e-410408142a16
   Args:

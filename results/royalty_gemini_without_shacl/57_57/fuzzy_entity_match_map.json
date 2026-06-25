@@ -16,119 +16,109 @@
       "qid": "Q153815",
       "label": "Princess Margaret, Countess of Snowdon",
       "distance": 0,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
-      "qid": "Q153330",
-      "label": "Andrew Mountbatten-Windsor",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Anne-_Princess_Royal",
-      "qid": "Q151754",
-      "label": "Anne, Princess Royal",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Charles_III",
-      "qid": "Q43274",
-      "label": "Charles III",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Edward_VIII",
-      "qid": "Q590227",
-      "label": "Edward VIII",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Elizabeth_II",
-      "qid": "Q9682",
-      "label": "Elizabeth II",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#George_VI",
       "qid": "Q280856",
       "label": "George VI",
       "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Mary-_Princess_Royal_and_Countess_of_Harewood",
-      "qid": "Q233913",
-      "label": "Mary, Princess Royal and Countess of Harewood",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Prince_Henry-_Duke_of_Gloucester",
-      "qid": "Q117174",
-      "label": "Prince Henry, Duke of Gloucester",
-      "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
       "qid": "Q10633",
       "label": "Queen Elizabeth, The Queen Mother",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne",
       "qid": "Q238820",
       "label": "Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne",
       "distance": 2,
-      "gender": "female"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 2,
+      "gender": null
     },
     {
       "uri": "http://example.com/data#George_V",
       "qid": "Q269412",
       "label": "George V",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#James-_Earl_of_Wessex",
-      "qid": "Q550183",
-      "label": "James, Earl of Wessex",
-      "distance": 2,
-      "gender": "male"
+      "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
+      "qid": "Q153330",
+      "label": "Andrew Mountbatten-Windsor",
+      "distance": 3,
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Prince_Harry-_Duke_of_Sussex",
-      "qid": "Q152316",
-      "label": "Prince Harry, Duke of Sussex",
-      "distance": 2,
-      "gender": "male"
+      "uri": "http://example.com/data#Anne-_Princess_Royal",
+      "qid": "Q151754",
+      "label": "Anne, Princess Royal",
+      "distance": 3,
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
-      "qid": "Q80976",
-      "label": "Prince Philip, Duke of Edinburgh",
-      "distance": 2,
-      "gender": "male"
+      "uri": "http://example.com/data#Charles_III",
+      "qid": "Q43274",
+      "label": "Charles III",
+      "distance": 3,
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Princess_Anne_of_Denmark",
-      "qid": "Q2871729",
-      "label": "Princess Anne of Denmark",
-      "distance": 2,
-      "gender": "female"
+      "uri": "http://example.com/data#Edward_VIII",
+      "qid": "Q590227",
+      "label": "Edward VIII",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Mary-_Princess_Royal_and_Countess_of_Harewood",
+      "qid": "Q233913",
+      "label": "Mary, Princess Royal and Countess of Harewood",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Henry-_Duke_of_Gloucester",
+      "qid": "Q117174",
+      "label": "Prince Henry, Duke of Gloucester",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/KingGeorgeV",
-      "extracted_local_name": "KingGeorgeV",
-      "embedding_text": "King George V",
+      "extracted_uri": "http://example.org/data/ElizabethII",
+      "extracted_local_name": "ElizabethII",
+      "embedding_text": "Elizabeth II",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Elizabeth_II",
+      "ground_truth_qid": "Q9682",
+      "ground_truth_label": "Elizabeth II",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Elizabeth II",
+      "best_candidate_label": "Elizabeth II",
+      "best_candidate_qid": "Q9682",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/GeorgeV",
+      "extracted_local_name": "GeorgeV",
+      "embedding_text": "George V",
       "extracted_gender": "male",
       "matched": true,
       "score": 1.0,
@@ -136,17 +126,17 @@
       "ground_truth_qid": "Q269412",
       "ground_truth_label": "George V",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "King George V",
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "George V",
       "best_candidate_label": "George V",
       "best_candidate_qid": "Q269412",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/KingGeorgeVI",
-      "extracted_local_name": "KingGeorgeVI",
-      "embedding_text": "King George VI",
+      "extracted_uri": "http://example.org/data/GeorgeVI",
+      "extracted_local_name": "GeorgeVI",
+      "embedding_text": "George VI",
       "extracted_gender": "male",
       "matched": true,
       "score": 1.0,
@@ -154,66 +144,66 @@
       "ground_truth_qid": "Q280856",
       "ground_truth_label": "George VI",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "King George VI",
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "George VI",
       "best_candidate_label": "George VI",
       "best_candidate_qid": "Q280856",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/QueenElizabethII",
-      "extracted_local_name": "QueenElizabethII",
-      "embedding_text": "Queen Elizabeth II",
+      "extracted_uri": "http://example.org/data/ElizabethQueenMother",
+      "extracted_local_name": "ElizabethQueenMother",
+      "embedding_text": "Elizabeth Queen Mother",
       "extracted_gender": "female",
       "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Elizabeth_II",
-      "ground_truth_qid": "Q9682",
-      "ground_truth_label": "Elizabeth II",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Queen Elizabeth II",
-      "best_candidate_label": "Elizabeth II",
-      "best_candidate_qid": "Q9682",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/QueenElizabethTheQueenMother",
-      "extracted_local_name": "QueenElizabethTheQueenMother",
-      "embedding_text": "Queen Elizabeth The Queen Mother",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 0.9905660377358491,
+      "score": 0.8,
       "ground_truth_uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
       "ground_truth_qid": "Q10633",
       "ground_truth_label": "Queen Elizabeth, The Queen Mother",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Queen Elizabeth- The Queen Mother",
       "best_candidate_label": "Queen Elizabeth, The Queen Mother",
       "best_candidate_qid": "Q10633",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.9905660377358491
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8
     },
     {
-      "extracted_uri": "http://example.org/data/PrincessMargaret",
-      "extracted_local_name": "PrincessMargaret",
-      "embedding_text": "Princess Margaret",
+      "extracted_uri": "http://example.org/data/Margaret",
+      "extracted_local_name": "Margaret",
+      "embedding_text": "Margaret",
       "extracted_gender": "female",
       "matched": true,
-      "score": 0.75,
-      "ground_truth_uri": "http://example.com/data#Mary-_Princess_Royal_and_Countess_of_Harewood",
-      "ground_truth_qid": "Q233913",
-      "ground_truth_label": "Mary, Princess Royal and Countess of Harewood",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Princess Mary",
-      "best_candidate_label": "Mary, Princess Royal and Countess of Harewood",
-      "best_candidate_qid": "Q233913",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.75
+      "score": 0.7619047619047619,
+      "ground_truth_uri": "http://example.com/data#Princess_Margaret-_Countess_of_Snowdon",
+      "ground_truth_qid": "Q153815",
+      "ground_truth_label": "Princess Margaret, Countess of Snowdon",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margaret Rose",
+      "best_candidate_label": "Princess Margaret, Countess of Snowdon",
+      "best_candidate_qid": "Q153815",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7619047619047619
+    },
+    {
+      "extracted_uri": "http://example.org/data/AntonyArmstrongJones",
+      "extracted_local_name": "AntonyArmstrongJones",
+      "embedding_text": "Antony Armstrong Jones",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Albert of Wales",
+      "best_candidate_label": "George VI",
+      "best_candidate_qid": "Q280856",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4090909090909091
     },
     {
       "extracted_uri": "http://example.org/data/CeciliaBowesLyon",
@@ -230,7 +220,7 @@
       "best_candidate_match_text": "Elizabeth Bowes-Lyon",
       "best_candidate_label": "Queen Elizabeth, The Queen Mother",
       "best_candidate_qid": "Q10633",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.7368421052631579
     },
     {
@@ -245,11 +235,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Duke of Windsor",
-      "best_candidate_label": "Edward VIII",
-      "best_candidate_qid": "Q590227",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.4375
+      "best_candidate_match_text": "Elizabeth Bowes-Lyon",
+      "best_candidate_label": "Queen Elizabeth, The Queen Mother",
+      "best_candidate_qid": "Q10633",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7027027027027027
     },
     {
       "extracted_uri": "http://example.org/data/David",
@@ -266,7 +256,7 @@
       "best_candidate_match_text": "David Windsor",
       "best_candidate_label": "Edward VIII",
       "best_candidate_qid": "Q590227",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.5555555555555556
     },
     {
@@ -281,11 +271,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Anne Ferelith Fenella Anson",
-      "best_candidate_label": "Princess Anne of Denmark",
-      "best_candidate_qid": "Q2871729",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.2702702702702703
+      "best_candidate_match_text": "The Prince Henry",
+      "best_candidate_label": "Prince Henry, Duke of Gloucester",
+      "best_candidate_qid": "Q117174",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.38461538461538464
     },
     {
       "extracted_uri": "http://example.org/data/Sarah",
@@ -299,16 +289,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Margaret Rose",
-      "best_candidate_label": "Princess Margaret, Countess of Snowdon",
-      "best_candidate_qid": "Q153815",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.3333333333333333
+      "best_candidate_match_text": "Baron Killyleagh",
+      "best_candidate_label": "Andrew Mountbatten-Windsor",
+      "best_candidate_qid": "Q153330",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.38095238095238093
     }
   ],
   "summary": {
-    "entities_total": 10,
+    "entities_total": 11,
     "entities_matched": 5,
-    "entities_unmatched": 5
+    "entities_unmatched": 6
   }
 }

@@ -2,47 +2,38 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Sofia_of_Spain a :Person,
-        :Woman ;
-    :isAuntOf data:Alexia_of_Greece_and_Denmark .
-
-data:Alexia_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :hasBirthYear 1965 ;
-    :hasBrother data:Pavlos_of_Greece ;
-    :hasFather data:Constantine_II ;
-    :hasMarriageYear 1999 ;
-    :hasMother data:Anne-Marie_of_Greece ;
-    :hasRelation data:Carlos_Javier_Morales_Quintana,
-        data:Maria-Olympia ;
-    :hasSister data:Theodora_of_Greece ;
-    :isBloodrelationOf data:Felipe_VI .
-
-data:Anne-Marie_of_Greece a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasMother data:Ingrid_of_Denmark .
-
-data:Carlos_Javier_Morales_Quintana a :Man,
+data:Major_Richard_Campbell_Andrew_Brandram a :Man,
         :Person .
 
-data:Constantine_II a :Ancestor,
+data:Princess_Katherine_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :alsoKnownAs "Lady Katherine Brandram"^^xsd:string ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:Alexander_King_of_the_Hellenes,
+        data:George_King_of_the_Hellenes,
+        data:Paul_King_of_the_Hellenes ;
+    :hasDeathYear 2007 ;
+    :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:Princess_Sophia_of_Prussia ;
+    :hasSister data:Princess_Helen,
+        data:Princess_Irene .
+
+data:Alexander_King_of_the_Hellenes a :Man .
+
+data:George_King_of_the_Hellenes a :Man .
+
+data:King_Constantine_I_of_Greece a :Ancestor,
         :Man,
         :Person .
 
-data:Felipe_VI a :Man,
-        :Person .
+data:Paul_King_of_the_Hellenes a :Man .
 
-data:Ingrid_of_Denmark a :Ancestor,
+data:Princess_Helen a :Woman .
+
+data:Princess_Irene a :Woman .
+
+data:Princess_Sophia_of_Prussia a :Ancestor,
         :Person,
-        :Woman .
-
-data:Maria-Olympia a :Person,
-        :Woman .
-
-data:Pavlos_of_Greece a :Man,
-        :Person .
-
-data:Theodora_of_Greece a :Person,
         :Woman .
 

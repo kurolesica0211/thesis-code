@@ -164,6 +164,8 @@ After her marriage she was styled Her Royal Highness The Duchess of Kent, and wa
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -179,39 +181,9 @@ After her marriage she was styled Her Royal Highness The Duchess of Kent, and wa
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -226,6 +198,23 @@ After her marriage she was styled Her Royal Highness The Duchess of Kent, and wa
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -243,6 +232,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -310,29 +314,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -341,6 +337,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -353,6 +357,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -361,17 +367,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -399,6 +407,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -414,332 +506,282 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (be5e8385-0170-43fd-ba65-522271e77ce9)
- Call ID: be5e8385-0170-43fd-ba65-522271e77ce9
+  AssignClass (3dc51d9b-43df-4259-89a7-3fd5a25c7cd9)
+ Call ID: 3dc51d9b-43df-4259-89a7-3fd5a25c7cd9
   Args:
     type: :Woman
     source: Princess_Marina_of_Greece_and_Denmark
-  AssignClass (bce9a861-2ee7-4063-97f8-5c0f80278a78)
- Call ID: bce9a861-2ee7-4063-97f8-5c0f80278a78
+  AssignClass (6d12578b-1165-4192-9bd7-8c3feb1b5717)
+ Call ID: 6d12578b-1165-4192-9bd7-8c3feb1b5717
   Args:
     type: :Person
     source: Princess_Marina_of_Greece_and_Denmark
-  AddLiteral (0fed13c7-4e63-4d7f-926f-9a1d1fa32c32)
- Call ID: 0fed13c7-4e63-4d7f-926f-9a1d1fa32c32
+  AddLiteral (38597c3f-ad93-4499-991c-dccd0cbd7926)
+ Call ID: 38597c3f-ad93-4499-991c-dccd0cbd7926
   Args:
+    relation: :hasBirthYear
     literal_value: 1906
     source: Princess_Marina_of_Greece_and_Denmark
     literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (24235d34-bc03-4bc1-8f7d-afae539bda1d)
- Call ID: 24235d34-bc03-4bc1-8f7d-afae539bda1d
+  AddLiteral (2e26de92-3601-484c-9daf-2cad78127083)
+ Call ID: 2e26de92-3601-484c-9daf-2cad78127083
   Args:
     literal_type: xsd:integer
-    relation: :hasDeathYear
     literal_value: 1968
+    relation: :hasDeathYear
     source: Princess_Marina_of_Greece_and_Denmark
-  AssignClass (3acea850-db10-400e-aca7-a769c020b4c2)
- Call ID: 3acea850-db10-400e-aca7-a769c020b4c2
+  AssignClass (2d73b8d9-ed31-47a0-803c-54e1431f120c)
+ Call ID: 2d73b8d9-ed31-47a0-803c-54e1431f120c
   Args:
+    source: Prince_Nicholas_of_Greece_and_Denmark
     type: :Man
-    source: Prince_Nicholas_of_Greece_and_Denmark
-  AssignClass (ff5756cb-1c2b-47c6-a2a0-460d5309076a)
- Call ID: ff5756cb-1c2b-47c6-a2a0-460d5309076a
+  AssignClass (1b8bbe4f-daf3-43e9-976f-daee8ae466e4)
+ Call ID: 1b8bbe4f-daf3-43e9-976f-daee8ae466e4
   Args:
+    source: Prince_Nicholas_of_Greece_and_Denmark
     type: :Person
-    source: Prince_Nicholas_of_Greece_and_Denmark
-  AssignClass (3bd9f528-4d8e-46e5-9845-d57cc92a5340)
- Call ID: 3bd9f528-4d8e-46e5-9845-d57cc92a5340
+  AssignClass (fda91a4b-fa41-42bd-8345-93e428089a6f)
+ Call ID: fda91a4b-fa41-42bd-8345-93e428089a6f
   Args:
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
     type: :Woman
-    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AssignClass (e1092d73-d838-435c-bd49-a0b98b727577)
- Call ID: e1092d73-d838-435c-bd49-a0b98b727577
+  AssignClass (287547c8-1f29-457c-964e-6e8ed2aca1ad)
+ Call ID: 287547c8-1f29-457c-964e-6e8ed2aca1ad
   Args:
     type: :Person
     source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AddTriple (22ad8089-1b9d-4e66-a3ba-edb19e62ae19)
- Call ID: 22ad8089-1b9d-4e66-a3ba-edb19e62ae19
+  AddTriple (f00c9ee1-7c4b-4261-beca-83f2930c7ddc)
+ Call ID: f00c9ee1-7c4b-4261-beca-83f2930c7ddc
   Args:
-    target: Prince_Nicholas_of_Greece_and_Denmark
     relation: :hasFather
     source: Princess_Marina_of_Greece_and_Denmark
-  AddTriple (8420cee5-8b0e-4605-b001-8da0b25207f8)
- Call ID: 8420cee5-8b0e-4605-b001-8da0b25207f8
+    target: Prince_Nicholas_of_Greece_and_Denmark
+  AddTriple (3344b55a-f9c9-468c-80a6-2683952864b9)
+ Call ID: 3344b55a-f9c9-468c-80a6-2683952864b9
   Args:
     target: Grand_Duchess_Elena_Vladimirovna_of_Russia
+    source: Princess_Marina_of_Greece_and_Denmark
     relation: :hasMother
-    source: Princess_Marina_of_Greece_and_Denmark
-  AssignClass (30a4695b-7c44-4bff-a766-3f594b087204)
- Call ID: 30a4695b-7c44-4bff-a766-3f594b087204
+  AssignClass (bf41eaaa-1c63-4519-872a-3628e69bb85e)
+ Call ID: bf41eaaa-1c63-4519-872a-3628e69bb85e
   Args:
-    type: :Man
-    source: Prince_George_Duke_of_Kent
-  AssignClass (6d40597f-0247-4347-88df-a8743489cd42)
- Call ID: 6d40597f-0247-4347-88df-a8743489cd42
-  Args:
-    type: :Person
-    source: Prince_George_Duke_of_Kent
-  AddTriple (1aaa9132-8ef8-404b-b6c0-98b088c08c04)
- Call ID: 1aaa9132-8ef8-404b-b6c0-98b088c08c04
-  Args:
-    target: Prince_George_Duke_of_Kent
-    relation: :hasRelation
-    source: Princess_Marina_of_Greece_and_Denmark
-  AddLiteral (63ae754d-f3f9-4248-b3f9-96f3169cc4aa)
- Call ID: 63ae754d-f3f9-4248-b3f9-96f3169cc4aa
-  Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1934
-    source: Princess_Marina_of_Greece_and_Denmark
-  AssignClass (7b59d5a0-7233-4649-936e-17185f659c22)
- Call ID: 7b59d5a0-7233-4649-936e-17185f659c22
-  Args:
-    type: :Man
     source: King_George_I_of_Greece
-  AssignClass (051aaf31-b710-4ace-b277-83f067141b78)
- Call ID: 051aaf31-b710-4ace-b277-83f067141b78
+    type: :Man
+  AssignClass (83f28333-61cf-4e4a-bd0c-2d7f9287e5bb)
+ Call ID: 83f28333-61cf-4e4a-bd0c-2d7f9287e5bb
   Args:
-    type: :Person
     source: King_George_I_of_Greece
-  AssignClass (ea202c45-bfc6-4b04-852d-bc668cfaaf0d)
- Call ID: ea202c45-bfc6-4b04-852d-bc668cfaaf0d
+    type: :Person
+  AssignClass (14d425c2-083e-4321-887e-fe26cee044ec)
+ Call ID: 14d425c2-083e-4321-887e-fe26cee044ec
   Args:
+    source: Queen_Olga_of_Greece
     type: :Woman
-    source: Queen_Olga_of_Greece
-  AssignClass (36b3c80c-a14a-4362-8a91-71824a7acabf)
- Call ID: 36b3c80c-a14a-4362-8a91-71824a7acabf
+  AssignClass (94fece23-f918-4014-95e6-4af2c4283a32)
+ Call ID: 94fece23-f918-4014-95e6-4af2c4283a32
   Args:
     type: :Person
     source: Queen_Olga_of_Greece
-  AddTriple (2a5a0117-49b5-49e4-a42b-4fe0793b5379)
- Call ID: 2a5a0117-49b5-49e4-a42b-4fe0793b5379
+  AddTriple (065ce952-2760-4f85-9d4a-d78f420fbf53)
+ Call ID: 065ce952-2760-4f85-9d4a-d78f420fbf53
   Args:
+    source: Prince_Nicholas_of_Greece_and_Denmark
     relation: :hasFather
     target: King_George_I_of_Greece
-    source: Prince_Nicholas_of_Greece_and_Denmark
-  AddTriple (ee264ed5-e0be-464a-8ad2-e601992f4069)
- Call ID: ee264ed5-e0be-464a-8ad2-e601992f4069
+  AddTriple (7f474052-ee78-4f18-a635-c09c6b8de8a0)
+ Call ID: 7f474052-ee78-4f18-a635-c09c6b8de8a0
   Args:
     source: Prince_Nicholas_of_Greece_and_Denmark
     relation: :hasMother
     target: Queen_Olga_of_Greece
-  AssignClass (0c6cdc4c-7cb9-4a2d-ac06-2d746b6b848e)
- Call ID: 0c6cdc4c-7cb9-4a2d-ac06-2d746b6b848e
+  AssignClass (83c597fd-6601-4a1f-8d77-890fb5fce8de)
+ Call ID: 83c597fd-6601-4a1f-8d77-890fb5fce8de
   Args:
     type: :Man
-    source: Grand_Duke_Vladimir_Alexandrovich
-  AssignClass (63f08960-1ed1-4e3f-9243-98ec5b7e5485)
- Call ID: 63f08960-1ed1-4e3f-9243-98ec5b7e5485
+    source: Grand_Duke_Vladimir_Alexandrovich_of_Russia
+  AssignClass (bc40cb7b-14e6-434f-87d9-f8e1508072ff)
+ Call ID: bc40cb7b-14e6-434f-87d9-f8e1508072ff
   Args:
+    source: Grand_Duke_Vladimir_Alexandrovich_of_Russia
     type: :Person
-    source: Grand_Duke_Vladimir_Alexandrovich
-  AssignClass (0a536091-ed1a-4fe2-8972-0fdbc5ccb1d1)
- Call ID: 0a536091-ed1a-4fe2-8972-0fdbc5ccb1d1
+  AssignClass (f6fcfd7a-f3f8-4837-85ce-627dcc4e4b6a)
+ Call ID: f6fcfd7a-f3f8-4837-85ce-627dcc4e4b6a
   Args:
     type: :Woman
     source: Grand_Duchess_Maria_Pavlovna_of_Russia
-  AssignClass (745fee99-ebe2-4890-a51b-3cc1ed109e1d)
- Call ID: 745fee99-ebe2-4890-a51b-3cc1ed109e1d
+  AssignClass (b0a2c468-80c3-4560-9b59-d2eb2a6263e8)
+ Call ID: b0a2c468-80c3-4560-9b59-d2eb2a6263e8
   Args:
-    type: :Person
     source: Grand_Duchess_Maria_Pavlovna_of_Russia
-  AddTriple (f47babe6-8a9b-4acf-8afa-b08fe1fadfb8)
- Call ID: f47babe6-8a9b-4acf-8afa-b08fe1fadfb8
+    type: :Person
+  AddTriple (193bef30-d536-4926-8689-800483d03331)
+ Call ID: 193bef30-d536-4926-8689-800483d03331
   Args:
-    relation: :hasFather
-    target: Grand_Duke_Vladimir_Alexandrovich
+    target: Grand_Duke_Vladimir_Alexandrovich_of_Russia
     source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AddTriple (a19fa367-adb9-42e1-ad3b-550f3115d807)
- Call ID: a19fa367-adb9-42e1-ad3b-550f3115d807
+    relation: :hasFather
+  AddTriple (96623dbe-0a84-4fb5-9ef2-156a98346135)
+ Call ID: 96623dbe-0a84-4fb5-9ef2-156a98346135
   Args:
-    relation: :hasMother
     target: Grand_Duchess_Maria_Pavlovna_of_Russia
     source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AssignClass (251999dc-17d8-404b-a893-a3f4617e89ab)
- Call ID: 251999dc-17d8-404b-a893-a3f4617e89ab
-  Args:
-    type: :Woman
-    source: Princess_Olga
-  AssignClass (d4d31430-fb4d-4e69-bd47-9322c313cfb8)
- Call ID: d4d31430-fb4d-4e69-bd47-9322c313cfb8
-  Args:
-    type: :Person
-    source: Princess_Olga
-  AssignClass (b984030b-2d11-45ab-b798-f8ec057d6370)
- Call ID: b984030b-2d11-45ab-b798-f8ec057d6370
-  Args:
-    type: :Woman
-    source: Princess_Elizabeth
-  AssignClass (af1c329c-a326-402c-bd9e-692acec8b657)
- Call ID: af1c329c-a326-402c-bd9e-692acec8b657
-  Args:
-    type: :Person
-    source: Princess_Elizabeth
-  AddTriple (eba7f512-ebc9-4e6e-83e7-eb96a26a2c3c)
- Call ID: eba7f512-ebc9-4e6e-83e7-eb96a26a2c3c
-  Args:
-    target: Princess_Olga
-    relation: :isSisterOf
-    source: Princess_Marina_of_Greece_and_Denmark
-  AddTriple (0ecf9898-3baa-4b92-a786-440a3bacf906)
- Call ID: 0ecf9898-3baa-4b92-a786-440a3bacf906
-  Args:
-    source: Princess_Marina_of_Greece_and_Denmark
-    relation: :isSisterOf
-    target: Princess_Elizabeth
-  AssignClass (e8d21305-b53d-45a1-9b1b-79201c31c199)
- Call ID: e8d21305-b53d-45a1-9b1b-79201c31c199
-  Args:
-    type: :Man
-    source: Prince_Paul_of_Yugoslavia
-  AssignClass (8ff8abf8-e568-427c-a40b-8699392ebdbc)
- Call ID: 8ff8abf8-e568-427c-a40b-8699392ebdbc
-  Args:
-    type: :Person
-    source: Prince_Paul_of_Yugoslavia
-  AddTriple (e137437d-b4e2-4c48-8ba4-77a533321006)
- Call ID: e137437d-b4e2-4c48-8ba4-77a533321006
-  Args:
-    source: Princess_Olga
-    target: Prince_Paul_of_Yugoslavia
-    relation: :hasRelation
-  AddLiteral (a50d9d1e-0d09-4b83-b558-16b21f3cbf70)
- Call ID: a50d9d1e-0d09-4b83-b558-16b21f3cbf70
-  Args:
-    source: Princess_Olga
-    literal_value: 1923
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-  AssignClass (6d79a331-6933-495a-be67-d3e50c2a7cde)
- Call ID: 6d79a331-6933-495a-be67-d3e50c2a7cde
-  Args:
-    type: :Man
-    source: King_George_V
-  AssignClass (830aa7be-cce0-4e2c-bb05-8ee3111ecbfc)
- Call ID: 830aa7be-cce0-4e2c-bb05-8ee3111ecbfc
-  Args:
-    type: :Person
-    source: King_George_V
-  AssignClass (99907780-b927-4cbd-a754-66d750e09188)
- Call ID: 99907780-b927-4cbd-a754-66d750e09188
-  Args:
-    type: :Woman
-    source: Queen_Mary
-  AssignClass (88d2c514-9597-46c8-8f3a-ba525da86c8c)
- Call ID: 88d2c514-9597-46c8-8f3a-ba525da86c8c
-  Args:
-    type: :Person
-    source: Queen_Mary
-  AddTriple (ca297347-a238-483f-b00d-b10656c1d750)
- Call ID: ca297347-a238-483f-b00d-b10656c1d750
-  Args:
-    source: Prince_George_Duke_of_Kent
-    relation: :hasFather
-    target: King_George_V
-  AddTriple (308a9c57-287d-4ab5-933c-c53e98149aeb)
- Call ID: 308a9c57-287d-4ab5-933c-c53e98149aeb
-  Args:
-    source: Prince_George_Duke_of_Kent
     relation: :hasMother
-    target: Queen_Mary
-  AssignClass (af9c7576-1fa3-40fb-ba24-16d6409d51dd)
- Call ID: af9c7576-1fa3-40fb-ba24-16d6409d51dd
+  AssignClass (9f1f2663-b19a-4c7c-baf6-56491f52f4a8)
+ Call ID: 9f1f2663-b19a-4c7c-baf6-56491f52f4a8
   Args:
     type: :Man
-    source: Edward_Duke_of_Kent
-  AssignClass (dfee8826-e6aa-4850-8269-f10eb6e31dcd)
- Call ID: dfee8826-e6aa-4850-8269-f10eb6e31dcd
+    source: Prince_George_Duke_of_Kent
+  AssignClass (7758dc43-921d-4f17-9e0b-12f4415ee79a)
+ Call ID: 7758dc43-921d-4f17-9e0b-12f4415ee79a
   Args:
     type: :Person
-    source: Edward_Duke_of_Kent
-  AssignClass (e9284bd3-bf19-4711-82f1-102de58d7ba0)
- Call ID: e9284bd3-bf19-4711-82f1-102de58d7ba0
+    source: Prince_George_Duke_of_Kent
+  AddLiteral (4442f098-b02e-497c-aab4-a12cc87e5ed6)
+ Call ID: 4442f098-b02e-497c-aab4-a12cc87e5ed6
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1934
+    relation: :hasMarriageYear
+    source: Princess_Marina_of_Greece_and_Denmark
+  AddTriple (211c0d9e-59b7-4f58-8af8-fc9643199ce0)
+ Call ID: 211c0d9e-59b7-4f58-8af8-fc9643199ce0
+  Args:
+    relation: :hasRelation
+    source: Princess_Marina_of_Greece_and_Denmark
+    target: Prince_George_Duke_of_Kent
+  AssignClass (9e9272ea-f595-41a1-8b2d-4fe56fa6b758)
+ Call ID: 9e9272ea-f595-41a1-8b2d-4fe56fa6b758
+  Args:
+    source: King_George_V
+    type: :Man
+  AssignClass (d1d6ab12-1980-43c6-8aa2-ca9b9df8e72e)
+ Call ID: d1d6ab12-1980-43c6-8aa2-ca9b9df8e72e
+  Args:
+    type: :Person
+    source: King_George_V
+  AssignClass (f8fc08d4-ca8c-435e-9b75-5d5a402188de)
+ Call ID: f8fc08d4-ca8c-435e-9b75-5d5a402188de
+  Args:
+    source: Queen_Mary
+    type: :Woman
+  AssignClass (7388527a-e0f2-4d32-b52b-0287db29b51c)
+ Call ID: 7388527a-e0f2-4d32-b52b-0287db29b51c
+  Args:
+    type: :Person
+    source: Queen_Mary
+  AddTriple (6e464241-0c8f-4661-aca4-8b4b4b652b3b)
+ Call ID: 6e464241-0c8f-4661-aca4-8b4b4b652b3b
+  Args:
+    relation: :hasFather
+    source: Prince_George_Duke_of_Kent
+    target: King_George_V
+  AddTriple (69e8339f-b1dd-46f5-a9b3-f7bd59b98186)
+ Call ID: 69e8339f-b1dd-46f5-a9b3-f7bd59b98186
+  Args:
+    relation: :hasMother
+    source: Prince_George_Duke_of_Kent
+    target: Queen_Mary
+  AssignClass (c4e6f01c-b86b-4d0b-aeae-d7c1313fb8e9)
+ Call ID: c4e6f01c-b86b-4d0b-aeae-d7c1313fb8e9
   Args:
     type: :Woman
-    source: Alexandra_of_Kent
-  AssignClass (813369bb-ff17-4a3c-a74f-019af00af88e)
- Call ID: 813369bb-ff17-4a3c-a74f-019af00af88e
+    source: Princess_Olga
+  AssignClass (40d85386-6612-46a7-b6ad-d54630512e75)
+ Call ID: 40d85386-6612-46a7-b6ad-d54630512e75
+  Args:
+    source: Princess_Olga
+    type: :Person
+  AssignClass (4ec99d36-a21b-49b1-8e95-df4601d29e13)
+ Call ID: 4ec99d36-a21b-49b1-8e95-df4601d29e13
+  Args:
+    type: :Woman
+    source: Princess_Elizabeth
+  AssignClass (8e74ad4a-1f84-4b80-b21d-a863df996b50)
+ Call ID: 8e74ad4a-1f84-4b80-b21d-a863df996b50
   Args:
     type: :Person
-    source: Alexandra_of_Kent
-  AssignClass (52318cef-3ef6-49e4-ad27-ed6b42e4fca3)
- Call ID: 52318cef-3ef6-49e4-ad27-ed6b42e4fca3
+    source: Princess_Elizabeth
+  AddTriple (41b1b78a-4e9a-42d7-96c9-ef77592e83e2)
+ Call ID: 41b1b78a-4e9a-42d7-96c9-ef77592e83e2
   Args:
+    relation: :hasSister
+    source: Princess_Marina_of_Greece_and_Denmark
+    target: Princess_Olga
+  AddTriple (79ed3154-1e35-48d7-a352-aaf634986e57)
+ Call ID: 79ed3154-1e35-48d7-a352-aaf634986e57
+  Args:
+    relation: :hasSister
+    source: Princess_Marina_of_Greece_and_Denmark
+    target: Princess_Elizabeth
+  AssignClass (ff2aa9f4-0494-4df1-997f-d299b2b2ff79)
+ Call ID: ff2aa9f4-0494-4df1-997f-d299b2b2ff79
+  Args:
+    source: Edward_Duke_of_Kent
     type: :Man
-    source: Michael_of_Kent
-  AssignClass (6129c06b-75b1-4c0b-be3e-ca1e7aa83307)
- Call ID: 6129c06b-75b1-4c0b-be3e-ca1e7aa83307
+  AssignClass (b1e64112-5929-4886-96f5-47020a6a1f7b)
+ Call ID: b1e64112-5929-4886-96f5-47020a6a1f7b
   Args:
     type: :Person
-    source: Michael_of_Kent
-  AddTriple (7b5dc100-c77f-4f16-afaf-b4ef43087d65)
- Call ID: 7b5dc100-c77f-4f16-afaf-b4ef43087d65
-  Args:
     source: Edward_Duke_of_Kent
-    target: Princess_Marina_of_Greece_and_Denmark
-    relation: :isChildOf
-  AddTriple (47e1d4f0-c4e9-4788-8185-2d0c00fdb2ee)
- Call ID: 47e1d4f0-c4e9-4788-8185-2d0c00fdb2ee
+  AssignClass (f0d4f651-f774-4f9a-9fdd-8eb042bc38a6)
+ Call ID: f0d4f651-f774-4f9a-9fdd-8eb042bc38a6
   Args:
-    source: Alexandra_of_Kent
-    target: Princess_Marina_of_Greece_and_Denmark
-    relation: :isChildOf
-  AddTriple (f82eef3c-0a3d-4fe0-b869-7d1e3300d1d4)
- Call ID: f82eef3c-0a3d-4fe0-b869-7d1e3300d1d4
+    type: :Woman
+    source: Alexandra_Princess_of_Kent
+  AssignClass (f1faea5f-4474-4a2f-a289-0c1f53846086)
+ Call ID: f1faea5f-4474-4a2f-a289-0c1f53846086
   Args:
-    source: Michael_of_Kent
-    relation: :isChildOf
-    target: Princess_Marina_of_Greece_and_Denmark
-  AddTriple (95c7b3d7-e062-4c1e-9b4d-5f5faa7997c7)
- Call ID: 95c7b3d7-e062-4c1e-9b4d-5f5faa7997c7
+    type: :Person
+    source: Alexandra_Princess_of_Kent
+  AssignClass (1dfbfdc3-0d63-47e6-95e6-6152e7af3ce9)
+ Call ID: 1dfbfdc3-0d63-47e6-95e6-6152e7af3ce9
   Args:
-    source: Edward_Duke_of_Kent
-    relation: :isChildOf
-    target: Prince_George_Duke_of_Kent
-  AddTriple (3e3f3a3b-f7d6-4fb2-aacd-301de3e7e996)
- Call ID: 3e3f3a3b-f7d6-4fb2-aacd-301de3e7e996
+    source: Michael_Prince_of_Kent
+    type: :Man
+  AssignClass (848cf149-0e18-4b8a-a4e6-88da01996e60)
+ Call ID: 848cf149-0e18-4b8a-a4e6-88da01996e60
   Args:
-    relation: :isChildOf
-    target: Prince_George_Duke_of_Kent
-    source: Alexandra_of_Kent
-  AddTriple (c23fc684-a5bc-434e-acb9-c17e6c9e7a5a)
- Call ID: c23fc684-a5bc-434e-acb9-c17e6c9e7a5a
+    type: :Person
+    source: Michael_Prince_of_Kent
+  AddTriple (3aede16a-77b3-4b30-920c-e61481e7f156)
+ Call ID: 3aede16a-77b3-4b30-920c-e61481e7f156
   Args:
-    source: Michael_of_Kent
-    target: Prince_George_Duke_of_Kent
-    relation: :isChildOf
-  AddLiteral (c9c5fa19-fe3f-45b8-86a2-2de5c4a7c14b)
- Call ID: c9c5fa19-fe3f-45b8-86a2-2de5c4a7c14b
+    target: Edward_Duke_of_Kent
+    relation: :hasChild
+    source: Princess_Marina_of_Greece_and_Denmark
+  AddTriple (850bcc48-3f91-43c6-ab0c-8018e7426677)
+ Call ID: 850bcc48-3f91-43c6-ab0c-8018e7426677
   Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
+    target: Alexandra_Princess_of_Kent
+    relation: :hasChild
+    source: Princess_Marina_of_Greece_and_Denmark
+  AddTriple (14075bb8-0e3d-4506-89f0-1718f9ef6b9e)
+ Call ID: 14075bb8-0e3d-4506-89f0-1718f9ef6b9e
+  Args:
+    target: Michael_Prince_of_Kent
+    relation: :hasChild
+    source: Princess_Marina_of_Greece_and_Denmark
+  AddTriple (e3195818-a00f-4eb5-94c4-032222828041)
+ Call ID: e3195818-a00f-4eb5-94c4-032222828041
+  Args:
+    target: Edward_Duke_of_Kent
     source: Prince_George_Duke_of_Kent
-    literal_value: 1942
-  Finish (8c8ae2f2-8e5c-4041-a249-25b7b45c16ae)
- Call ID: 8c8ae2f2-8e5c-4041-a249-25b7b45c16ae
+    relation: :hasChild
+  AddTriple (ab22ce90-61c6-4805-aad2-f16a28853fd0)
+ Call ID: ab22ce90-61c6-4805-aad2-f16a28853fd0
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Prince_George_Duke_of_Kent
+    relation: :hasChild
+    target: Alexandra_Princess_of_Kent
+  AddTriple (93d3d8fb-1b37-47f9-8e25-f68e2e7a2aef)
+ Call ID: 93d3d8fb-1b37-47f9-8e25-f68e2e7a2aef
+  Args:
+    relation: :hasChild
+    source: Prince_George_Duke_of_Kent
+    target: Michael_Prince_of_Kent
+  Finish (d9c9fa85-f420-4476-adc0-e1d6bc05d681)
+ Call ID: d9c9fa85-f420-4476-adc0-e1d6bc05d681
+  Args:
 
 ================================= Tool Message =================================
 
@@ -944,30 +986,29 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexandra_of_Kent a :Person,
+  data:Princess_Marina_of_Greece_and_Denmark a :Person,
           :Woman ;
-      :isChildOf data:Prince_George_Duke_of_Kent,
-          data:Princess_Marina_of_Greece_and_Denmark .
-
-  data:Edward_Duke_of_Kent a :Man,
-          :Person ;
-      :isChildOf data:Prince_George_Duke_of_Kent,
-          data:Princess_Marina_of_Greece_and_Denmark .
-
-  data:Michael_of_Kent a :Man,
-          :Person ;
-      :isChildOf data:Prince_George_Duke_of_Kent,
-          data:Princess_Marina_of_Greece_and_Denmark .
+      :hasBirthYear 1906 ;
+      :hasChild data:Alexandra_Princess_of_Kent,
+          data:Edward_Duke_of_Kent,
+          data:Michael_Prince_of_Kent ;
+      :hasDeathYear 1968 ;
+      :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+      :hasMarriageYear 1934 ;
+      :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+      :hasRelation data:Prince_George_Duke_of_Kent ;
+      :hasSister data:Princess_Elizabeth,
+          data:Princess_Olga .
 
   data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,
           :Woman ;
-      :hasFather data:Grand_Duke_Vladimir_Alexandrovich ;
+      :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
       :hasMother data:Grand_Duchess_Maria_Pavlovna_of_Russia .
 
   data:Grand_Duchess_Maria_Pavlovna_of_Russia a :Person,
           :Woman .
 
-  data:Grand_Duke_Vladimir_Alexandrovich a :Man,
+  data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man,
           :Person .
 
   data:King_George_I_of_Greece a :Man,
@@ -976,21 +1017,24 @@ The final data graph after all the edits:
   data:King_George_V a :Man,
           :Person .
 
+  data:Prince_George_Duke_of_Kent a :Man,
+          :Person ;
+      :hasChild data:Alexandra_Princess_of_Kent,
+          data:Edward_Duke_of_Kent,
+          data:Michael_Prince_of_Kent ;
+      :hasFather data:King_George_V ;
+      :hasMother data:Queen_Mary .
+
   data:Prince_Nicholas_of_Greece_and_Denmark a :Man,
           :Person ;
       :hasFather data:King_George_I_of_Greece ;
       :hasMother data:Queen_Olga_of_Greece .
 
-  data:Prince_Paul_of_Yugoslavia a :Man,
-          :Person .
-
   data:Princess_Elizabeth a :Person,
           :Woman .
 
   data:Princess_Olga a :Person,
-          :Woman ;
-      :hasMarriageYear 1923 ;
-      :hasRelation data:Prince_Paul_of_Yugoslavia .
+          :Woman .
 
   data:Queen_Mary a :Person,
           :Woman .
@@ -998,22 +1042,14 @@ The final data graph after all the edits:
   data:Queen_Olga_of_Greece a :Person,
           :Woman .
 
-  data:Princess_Marina_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :hasBirthYear 1906 ;
-      :hasDeathYear 1968 ;
-      :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
-      :hasMarriageYear 1934 ;
-      :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-      :hasRelation data:Prince_George_Duke_of_Kent ;
-      :isSisterOf data:Princess_Elizabeth,
-          data:Princess_Olga .
+  data:Alexandra_Princess_of_Kent a :Person,
+          :Woman .
 
-  data:Prince_George_Duke_of_Kent a :Man,
-          :Person ;
-      :hasDeathYear 1942 ;
-      :hasFather data:King_George_V ;
-      :hasMother data:Queen_Mary .
+  data:Edward_Duke_of_Kent a :Man,
+          :Person .
+
+  data:Michael_Prince_of_Kent a :Man,
+          :Person .
 
 
 
@@ -1025,350 +1061,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (34cc8046-4d5e-4463-9f2d-b76af6e268bc)
- Call ID: 34cc8046-4d5e-4463-9f2d-b76af6e268bc
+  ValidateShacl (fd39b6e3-0cad-49c9-8e92-89649e190419)
+ Call ID: fd39b6e3-0cad-49c9-8e92-89649e190419
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:42
+Total violations:24
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'King_George_I_of_Greece' used for the 'hasFather' property of 'Prince_Nicholas_of_Greece_and_Denmark' is not classified as an ':Ancestor'.
+      The value node King_George_I_of_Greece is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_George_I_of_Greece', ':Ancestor')
+      AssignClass(node='King_George_I_of_Greece', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'King_George_V' used for the 'hasFather' property of 'Prince_George_Duke_of_Kent' is not classified as an ':Ancestor'.
+      The value node King_George_V is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_George_V', ':Ancestor')
+      AssignClass(node='King_George_V', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Queen_Olga_of_Greece' used for the 'hasMother' property of 'Prince_Nicholas_of_Greece_and_Denmark' is not classified as an ':Ancestor'.
+      The value node Queen_Olga_of_Greece is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Olga_of_Greece', ':Ancestor')
+      AssignClass(node='Queen_Olga_of_Greece', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Queen_Mary' used for the 'hasMother' property of 'Prince_George_Duke_of_Kent' is not classified as an ':Ancestor'.
+      The value node Queen_Mary is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Mary', ':Ancestor')
+      AssignClass(node='Queen_Mary', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Princess_Marina_of_Greece_and_Denmark' linked via 'isChildOf' to 'Edward_Duke_of_Kent' is missing the required ':Ancestor' class.
+      The value node King_George_V is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Marina_of_Greece_and_Denmark', ':Ancestor')
+      AssignClass(node='King_George_V', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Prince_George_Duke_of_Kent' linked via 'isChildOf' to 'Edward_Duke_of_Kent' is missing the required ':Ancestor' class.
+      The value node Prince_Nicholas_of_Greece_and_Denmark is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_George_Duke_of_Kent', ':Ancestor')
+      AssignClass(node='Prince_Nicholas_of_Greece_and_Denmark', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Princess_Marina_of_Greece_and_Denmark' linked via 'isChildOf' to 'Michael_of_Kent' is missing the required ':Ancestor' class.
+      The value node King_George_I_of_Greece is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Marina_of_Greece_and_Denmark', ':Ancestor')
+      AssignClass(node='King_George_I_of_Greece', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Prince_George_Duke_of_Kent' linked via 'isChildOf' to 'Michael_of_Kent' is missing the required ':Ancestor' class.
+      The value node Grand_Duke_Vladimir_Alexandrovich_of_Russia is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_George_Duke_of_Kent', ':Ancestor')
+      AssignClass(node='Grand_Duke_Vladimir_Alexandrovich_of_Russia', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Grand_Duke_Vladimir_Alexandrovich' used for the 'hasFather' property of 'Grand_Duchess_Elena_Vladimirovna_of_Russia' is not classified as an ':Ancestor'.
+      The value node Queen_Mary is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Grand_Duke_Vladimir_Alexandrovich', ':Ancestor')
+      AssignClass(node='Queen_Mary', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'King_George_I_of_Greece' used for the 'hasFather' property of 'Prince_Nicholas_of_Greece_and_Denmark' is not classified as an ':Ancestor'.
+      The value node Grand_Duchess_Elena_Vladimirovna_of_Russia is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_George_I_of_Greece', ':Ancestor')
+      AssignClass(node='Grand_Duchess_Elena_Vladimirovna_of_Russia', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Prince_Nicholas_of_Greece_and_Denmark' used for the 'hasFather' property of 'Princess_Marina_of_Greece_and_Denmark' is not classified as an ':Ancestor'.
+      The value node Queen_Olga_of_Greece is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Nicholas_of_Greece_and_Denmark', ':Ancestor')
+      AssignClass(node='Queen_Olga_of_Greece', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'King_George_V' used for the 'hasFather' property of 'Prince_George_Duke_of_Kent' is not classified as an ':Ancestor'.
+      The value node Grand_Duchess_Maria_Pavlovna_of_Russia is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_George_V', ':Ancestor')
+      AssignClass(node='Grand_Duchess_Maria_Pavlovna_of_Russia', class=':Ancestor')
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Grand_Duchess_Maria_Pavlovna_of_Russia' used for the 'hasMother' property of 'Grand_Duchess_Elena_Vladimirovna_of_Russia' is not classified as an ':Ancestor'.
+      The value node Prince_Nicholas_of_Greece_and_Denmark is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Grand_Duchess_Maria_Pavlovna_of_Russia', ':Ancestor')
+      AssignClass(node='Prince_Nicholas_of_Greece_and_Denmark', class=':Ancestor')
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Queen_Olga_of_Greece' used for the 'hasMother' property of 'Prince_Nicholas_of_Greece_and_Denmark' is not classified as an ':Ancestor'.
+      The value node King_George_I_of_Greece is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Olga_of_Greece', ':Ancestor')
+      AssignClass(node='King_George_I_of_Greece', class=':Ancestor')
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Grand_Duchess_Elena_Vladimirovna_of_Russia' used for the 'hasMother' property of 'Princess_Marina_of_Greece_and_Denmark' is not classified as an ':Ancestor'.
+      The value node Grand_Duke_Vladimir_Alexandrovich_of_Russia is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Grand_Duchess_Elena_Vladimirovna_of_Russia', ':Ancestor')
+      AssignClass(node='Grand_Duke_Vladimir_Alexandrovich_of_Russia', class=':Ancestor')
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Queen_Mary' used for the 'hasMother' property of 'Prince_George_Duke_of_Kent' is not classified as an ':Ancestor'.
+      The value node King_George_V is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Mary', ':Ancestor')
+      AssignClass(node='King_George_V', class=':Ancestor')
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Princess_Marina_of_Greece_and_Denmark' linked via 'isChildOf' to 'Edward_Duke_of_Kent' is missing the required ':Ancestor' class.
+      The value node Grand_Duchess_Elena_Vladimirovna_of_Russia is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Marina_of_Greece_and_Denmark', ':Ancestor')
+      AssignClass(node='Grand_Duchess_Elena_Vladimirovna_of_Russia', class=':Ancestor')
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Prince_George_Duke_of_Kent' linked via 'isChildOf' to 'Edward_Duke_of_Kent' is missing the required ':Ancestor' class.
+      The value node Queen_Olga_of_Greece is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_George_Duke_of_Kent', ':Ancestor')
+      AssignClass(node='Queen_Olga_of_Greece', class=':Ancestor')
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Princess_Marina_of_Greece_and_Denmark' linked via 'isChildOf' to 'Michael_of_Kent' is missing the required ':Ancestor' class.
+      The value node Grand_Duchess_Maria_Pavlovna_of_Russia is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Marina_of_Greece_and_Denmark', ':Ancestor')
+      AssignClass(node='Grand_Duchess_Maria_Pavlovna_of_Russia', class=':Ancestor')
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Prince_George_Duke_of_Kent' linked via 'isChildOf' to 'Michael_of_Kent' is missing the required ':Ancestor' class.
+      The value node Queen_Mary is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_George_Duke_of_Kent', ':Ancestor')
+      AssignClass(node='Queen_Mary', class=':Ancestor')
 
 
   Violation [21]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Princess_Marina_of_Greece_and_Denmark' linked via 'isChildOf' to 'Alexandra_of_Kent' is missing the required ':Ancestor' class.
+      The value node Prince_Nicholas_of_Greece_and_Denmark is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Marina_of_Greece_and_Denmark', ':Ancestor')
+      AssignClass(node='Prince_Nicholas_of_Greece_and_Denmark', class=':Ancestor')
 
 
   Violation [22]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Prince_George_Duke_of_Kent' linked via 'isChildOf' to 'Alexandra_of_Kent' is missing the required ':Ancestor' class.
+      The value node Grand_Duke_Vladimir_Alexandrovich_of_Russia is missing the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_George_Duke_of_Kent', ':Ancestor')
+      AssignClass(node='Grand_Duke_Vladimir_Alexandrovich_of_Russia', class=':Ancestor')
 
 
   Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Grand_Duke_Vladimir_Alexandrovich' used for the 'hasFather' property of 'Grand_Duchess_Elena_Vladimirovna_of_Russia' is not classified as an ':Ancestor'.
+      The value node Grand_Duchess_Elena_Vladimirovna_of_Russia is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Grand_Duke_Vladimir_Alexandrovich', ':Ancestor')
+      AssignClass(node='Grand_Duchess_Elena_Vladimirovna_of_Russia', class=':Ancestor')
 
 
   Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'King_George_I_of_Greece' used for the 'hasFather' property of 'Prince_Nicholas_of_Greece_and_Denmark' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('King_George_I_of_Greece', ':Ancestor')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Prince_Nicholas_of_Greece_and_Denmark' used for the 'hasFather' property of 'Princess_Marina_of_Greece_and_Denmark' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Nicholas_of_Greece_and_Denmark', ':Ancestor')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'King_George_V' used for the 'hasFather' property of 'Prince_George_Duke_of_Kent' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('King_George_V', ':Ancestor')
-
-
-  Violation [27]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Grand_Duchess_Maria_Pavlovna_of_Russia' used for the 'hasMother' property of 'Grand_Duchess_Elena_Vladimirovna_of_Russia' is not classified as an ':Ancestor'.
+      The value node Grand_Duchess_Maria_Pavlovna_of_Russia is missing the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Grand_Duchess_Maria_Pavlovna_of_Russia', ':Ancestor')
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Queen_Olga_of_Greece' used for the 'hasMother' property of 'Prince_Nicholas_of_Greece_and_Denmark' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Olga_of_Greece', ':Ancestor')
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Grand_Duchess_Elena_Vladimirovna_of_Russia' used for the 'hasMother' property of 'Princess_Marina_of_Greece_and_Denmark' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Grand_Duchess_Elena_Vladimirovna_of_Russia', ':Ancestor')
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Queen_Mary' used for the 'hasMother' property of 'Prince_George_Duke_of_Kent' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Mary', ':Ancestor')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value node 'Princess_Marina_of_Greece_and_Denmark' linked via 'isChildOf' to 'Edward_Duke_of_Kent' is missing the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Marina_of_Greece_and_Denmark', ':Ancestor')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value node 'Prince_George_Duke_of_Kent' linked via 'isChildOf' to 'Edward_Duke_of_Kent' is missing the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_George_Duke_of_Kent', ':Ancestor')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value node 'Princess_Marina_of_Greece_and_Denmark' linked via 'isChildOf' to 'Michael_of_Kent' is missing the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Marina_of_Greece_and_Denmark', ':Ancestor')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value node 'Prince_George_Duke_of_Kent' linked via 'isChildOf' to 'Michael_of_Kent' is missing the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_George_Duke_of_Kent', ':Ancestor')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value node 'Princess_Marina_of_Greece_and_Denmark' linked via 'isChildOf' to 'Alexandra_of_Kent' is missing the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Marina_of_Greece_and_Denmark', ':Ancestor')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value node 'Prince_George_Duke_of_Kent' linked via 'isChildOf' to 'Alexandra_of_Kent' is missing the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_George_Duke_of_Kent', ':Ancestor')
-
-
-  Violation [37]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Grand_Duke_Vladimir_Alexandrovich' used for the 'hasFather' property of 'Grand_Duchess_Elena_Vladimirovna_of_Russia' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Grand_Duke_Vladimir_Alexandrovich', ':Ancestor')
-
-
-  Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Prince_Nicholas_of_Greece_and_Denmark' used for the 'hasFather' property of 'Princess_Marina_of_Greece_and_Denmark' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Nicholas_of_Greece_and_Denmark', ':Ancestor')
-
-
-  Violation [39]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Grand_Duchess_Maria_Pavlovna_of_Russia' used for the 'hasMother' property of 'Grand_Duchess_Elena_Vladimirovna_of_Russia' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Grand_Duchess_Maria_Pavlovna_of_Russia', ':Ancestor')
-
-
-  Violation [40]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Grand_Duchess_Elena_Vladimirovna_of_Russia' used for the 'hasMother' property of 'Princess_Marina_of_Greece_and_Denmark' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Grand_Duchess_Elena_Vladimirovna_of_Russia', ':Ancestor')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value node 'Princess_Marina_of_Greece_and_Denmark' linked via 'isChildOf' to 'Alexandra_of_Kent' is missing the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Marina_of_Greece_and_Denmark', ':Ancestor')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value node 'Prince_George_Duke_of_Kent' linked via 'isChildOf' to 'Alexandra_of_Kent' is missing the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_George_Duke_of_Kent', ':Ancestor')
+      AssignClass(node='Grand_Duchess_Maria_Pavlovna_of_Russia', class=':Ancestor')
 
 
 
@@ -1377,67 +1269,49 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (7dd1b58d-5d67-45f9-bcc9-5aa0a4acec39)
- Call ID: 7dd1b58d-5d67-45f9-bcc9-5aa0a4acec39
+  AssignClass (56d77e94-820a-4904-a9e6-512225d87d1a)
+ Call ID: 56d77e94-820a-4904-a9e6-512225d87d1a
   Args:
     source: King_George_I_of_Greece
     type: :Ancestor
-  AssignClass (bebb7fc6-fef9-43c2-97bb-153e4d035e56)
- Call ID: bebb7fc6-fef9-43c2-97bb-153e4d035e56
+  AssignClass (5891755b-6f6f-4f0f-986b-64372a6959bd)
+ Call ID: 5891755b-6f6f-4f0f-986b-64372a6959bd
   Args:
-    type: :Ancestor
     source: King_George_V
-  AssignClass (0925a81f-21f6-42ba-b06b-f31fb3df33f1)
- Call ID: 0925a81f-21f6-42ba-b06b-f31fb3df33f1
-  Args:
     type: :Ancestor
+  AssignClass (d6fe2084-3a95-474c-b3a9-68e7cba5ba17)
+ Call ID: d6fe2084-3a95-474c-b3a9-68e7cba5ba17
+  Args:
     source: Queen_Olga_of_Greece
-  AssignClass (f786dec7-b64d-4187-9538-357095bd3b8f)
- Call ID: f786dec7-b64d-4187-9538-357095bd3b8f
+    type: :Ancestor
+  AssignClass (261448b1-efb1-44bc-8dad-a63a0c1fb1bf)
+ Call ID: 261448b1-efb1-44bc-8dad-a63a0c1fb1bf
   Args:
     source: Queen_Mary
     type: :Ancestor
-  AssignClass (b7ed8912-891f-45e6-a0cf-99d8fdc6e642)
- Call ID: b7ed8912-891f-45e6-a0cf-99d8fdc6e642
+  AssignClass (750d58de-c902-4a40-8f96-12d7cf657412)
+ Call ID: 750d58de-c902-4a40-8f96-12d7cf657412
   Args:
-    type: :Ancestor
-    source: Princess_Marina_of_Greece_and_Denmark
-  AssignClass (748dc3a9-742a-43e5-beee-b3a147f9c612)
- Call ID: 748dc3a9-742a-43e5-beee-b3a147f9c612
-  Args:
-    type: :Ancestor
-    source: Prince_George_Duke_of_Kent
-  AssignClass (69ef2aa3-0e8f-4302-9cb4-f7665cbe4100)
- Call ID: 69ef2aa3-0e8f-4302-9cb4-f7665cbe4100
-  Args:
-    source: Grand_Duke_Vladimir_Alexandrovich
-    type: :Ancestor
-  AssignClass (6f3c5b2a-bf54-43f8-8cd2-640eef85863d)
- Call ID: 6f3c5b2a-bf54-43f8-8cd2-640eef85863d
-  Args:
-    type: :Ancestor
     source: Prince_Nicholas_of_Greece_and_Denmark
-  AssignClass (ab6fca82-2e07-428e-a616-859ea5fcabb5)
- Call ID: ab6fca82-2e07-428e-a616-859ea5fcabb5
-  Args:
     type: :Ancestor
-    source: Grand_Duchess_Maria_Pavlovna_of_Russia
-  AssignClass (5f0b8f8a-1568-4a5e-91b8-92c15e4c2fc6)
- Call ID: 5f0b8f8a-1568-4a5e-91b8-92c15e4c2fc6
+  AssignClass (de267312-669a-4553-a22e-3ab7d178ecd2)
+ Call ID: de267312-669a-4553-a22e-3ab7d178ecd2
   Args:
+    source: Grand_Duke_Vladimir_Alexandrovich_of_Russia
     type: :Ancestor
+  AssignClass (c5f7d1ad-1c76-409f-bcc0-91a03f677a8c)
+ Call ID: c5f7d1ad-1c76-409f-bcc0-91a03f677a8c
+  Args:
     source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  Finish (13b2e25b-e50c-44da-8d72-b8c0981188a1)
- Call ID: 13b2e25b-e50c-44da-8d72-b8c0981188a1
+    type: :Ancestor
+  AssignClass (3b594f94-c1bf-45ce-a3a0-ba0303c064b4)
+ Call ID: 3b594f94-c1bf-45ce-a3a0-ba0303c064b4
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Grand_Duchess_Maria_Pavlovna_of_Russia
+    type: :Ancestor
+  ValidateShacl (ffad1578-46b7-4a07-81eb-5025c6c904ff)
+ Call ID: ffad1578-46b7-4a07-81eb-5025c6c904ff
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1474,32 +1348,31 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexandra_of_Kent a :Person,
+  data:Princess_Marina_of_Greece_and_Denmark a :Person,
           :Woman ;
-      :isChildOf data:Prince_George_Duke_of_Kent,
-          data:Princess_Marina_of_Greece_and_Denmark .
-
-  data:Edward_Duke_of_Kent a :Man,
-          :Person ;
-      :isChildOf data:Prince_George_Duke_of_Kent,
-          data:Princess_Marina_of_Greece_and_Denmark .
-
-  data:Michael_of_Kent a :Man,
-          :Person ;
-      :isChildOf data:Prince_George_Duke_of_Kent,
-          data:Princess_Marina_of_Greece_and_Denmark .
+      :hasBirthYear 1906 ;
+      :hasChild data:Alexandra_Princess_of_Kent,
+          data:Edward_Duke_of_Kent,
+          data:Michael_Prince_of_Kent ;
+      :hasDeathYear 1968 ;
+      :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+      :hasMarriageYear 1934 ;
+      :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+      :hasRelation data:Prince_George_Duke_of_Kent ;
+      :hasSister data:Princess_Elizabeth,
+          data:Princess_Olga .
 
   data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
           :Person,
           :Woman ;
-      :hasFather data:Grand_Duke_Vladimir_Alexandrovich ;
+      :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
       :hasMother data:Grand_Duchess_Maria_Pavlovna_of_Russia .
 
   data:Grand_Duchess_Maria_Pavlovna_of_Russia a :Ancestor,
           :Person,
           :Woman .
 
-  data:Grand_Duke_Vladimir_Alexandrovich a :Ancestor,
+  data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor,
           :Man,
           :Person .
 
@@ -1511,22 +1384,25 @@ The final data graph after all the edits:
           :Man,
           :Person .
 
+  data:Prince_George_Duke_of_Kent a :Man,
+          :Person ;
+      :hasChild data:Alexandra_Princess_of_Kent,
+          data:Edward_Duke_of_Kent,
+          data:Michael_Prince_of_Kent ;
+      :hasFather data:King_George_V ;
+      :hasMother data:Queen_Mary .
+
   data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
           :Man,
           :Person ;
       :hasFather data:King_George_I_of_Greece ;
       :hasMother data:Queen_Olga_of_Greece .
 
-  data:Prince_Paul_of_Yugoslavia a :Man,
-          :Person .
-
   data:Princess_Elizabeth a :Person,
           :Woman .
 
   data:Princess_Olga a :Person,
-          :Woman ;
-      :hasMarriageYear 1923 ;
-      :hasRelation data:Prince_Paul_of_Yugoslavia .
+          :Woman .
 
   data:Queen_Mary a :Ancestor,
           :Person,
@@ -1536,38 +1412,16 @@ The final data graph after all the edits:
           :Person,
           :Woman .
 
-  data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1906 ;
-      :hasDeathYear 1968 ;
-      :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
-      :hasMarriageYear 1934 ;
-      :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-      :hasRelation data:Prince_George_Duke_of_Kent ;
-      :isSisterOf data:Princess_Elizabeth,
-          data:Princess_Olga .
+  data:Alexandra_Princess_of_Kent a :Person,
+          :Woman .
 
-  data:Prince_George_Duke_of_Kent a :Ancestor,
-          :Man,
-          :Person ;
-      :hasDeathYear 1942 ;
-      :hasFather data:King_George_V ;
-      :hasMother data:Queen_Mary .
+  data:Edward_Duke_of_Kent a :Man,
+          :Person .
+
+  data:Michael_Prince_of_Kent a :Man,
+          :Person .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (a81757ee-9f73-4f4c-b229-83007e58168b)
- Call ID: a81757ee-9f73-4f4c-b229-83007e58168b
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1577,6 +1431,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (32e1196f-14d2-4029-a168-a5f1ecdb2f66)
- Call ID: 32e1196f-14d2-4029-a168-a5f1ecdb2f66
+  Finish (61b50ab4-06ba-4b47-8e47-23d7370408fc)
+ Call ID: 61b50ab4-06ba-4b47-8e47-23d7370408fc
   Args:

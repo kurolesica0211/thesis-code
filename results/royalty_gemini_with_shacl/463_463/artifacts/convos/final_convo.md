@@ -114,6 +114,8 @@ Since Lord Frederick is not a peer in his own right, his style is not hereditary
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -129,39 +131,9 @@ Since Lord Frederick is not a peer in his own right, his style is not hereditary
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -176,6 +148,23 @@ Since Lord Frederick is not a peer in his own right, his style is not hereditary
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -193,6 +182,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,29 +264,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -291,6 +287,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -303,6 +307,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -311,17 +317,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -349,6 +357,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -364,76 +456,160 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c83531cd-d36f-4ff4-a067-3d88b74373f9)
- Call ID: c83531cd-d36f-4ff4-a067-3d88b74373f9
+  AssignClass (7a3437ec-cd63-43ef-bd81-bc2870671916)
+ Call ID: 7a3437ec-cd63-43ef-bd81-bc2870671916
   Args:
+    source: Frederick_Windsor
     type: :Man
-    source: Lord_Frederick_Windsor
-  AssignClass (4534c3ee-5327-4314-a278-d7287a1eb9ab)
- Call ID: 4534c3ee-5327-4314-a278-d7287a1eb9ab
+  AssignClass (1408d1c0-0d75-4f1d-b1ee-551145cfeb58)
+ Call ID: 1408d1c0-0d75-4f1d-b1ee-551145cfeb58
+  Args:
+    type: :Person
+    source: Frederick_Windsor
+  AddLiteral (8776ad64-a25c-4d5c-bc71-65af4df9d933)
+ Call ID: 8776ad64-a25c-4d5c-bc71-65af4df9d933
+  Args:
+    source: Frederick_Windsor
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1979
+  AssignClass (2614d799-949a-44d3-aa2a-6810612a19c2)
+ Call ID: 2614d799-949a-44d3-aa2a-6810612a19c2
   Args:
     type: :Man
     source: Prince_Michael_of_Kent
-  AssignClass (dfd576b7-b5e2-4e84-95cf-9582fef0147a)
- Call ID: dfd576b7-b5e2-4e84-95cf-9582fef0147a
+  AssignClass (368fdf43-8623-4825-af63-447396abf98b)
+ Call ID: 368fdf43-8623-4825-af63-447396abf98b
+  Args:
+    type: :Person
+    source: Prince_Michael_of_Kent
+  AssignClass (3643e600-c62f-42b6-a268-076173a4a061)
+ Call ID: 3643e600-c62f-42b6-a268-076173a4a061
   Args:
     type: :Woman
     source: Princess_Michael_of_Kent
-  AssignClass (dc449fc4-3f6c-4501-919c-a17682c64792)
- Call ID: dc449fc4-3f6c-4501-919c-a17682c64792
+  AssignClass (01eb917b-97c1-4456-a37d-3652792f430c)
+ Call ID: 01eb917b-97c1-4456-a37d-3652792f430c
   Args:
-    type: :Woman
-    source: Sophie_Winkleman
-  AssignClass (a67fd126-ac73-46a6-82c9-c2229bb29789)
- Call ID: a67fd126-ac73-46a6-82c9-c2229bb29789
+    type: :Person
+    source: Princess_Michael_of_Kent
+  AddTriple (96f4837c-f83d-420d-9d5f-6df85e2ad8fe)
+ Call ID: 96f4837c-f83d-420d-9d5f-6df85e2ad8fe
   Args:
-    type: :Woman
-    source: Lady_Gabriella
-  AssignClass (3ea0fcc5-50c1-41f3-9bd6-44257bd9e175)
- Call ID: 3ea0fcc5-50c1-41f3-9bd6-44257bd9e175
-  Args:
-    type: :Woman
-    source: Isabella_Alexandra_May
-  AddLiteral (f0426461-d0ea-434c-8e10-309c07b8dbe3)
- Call ID: f0426461-d0ea-434c-8e10-309c07b8dbe3
-  Args:
-    source: Lord_Frederick_Windsor
-    literal_value: 1979
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddTriple (fd8ff986-e3d4-4043-a86e-1b598b0f5de8)
- Call ID: fd8ff986-e3d4-4043-a86e-1b598b0f5de8
-  Args:
-    source: Lord_Frederick_Windsor
     relation: :hasFather
+    source: Frederick_Windsor
     target: Prince_Michael_of_Kent
-  AddTriple (6a13bc9c-5a5f-436d-a697-710e37e7fda8)
- Call ID: 6a13bc9c-5a5f-436d-a697-710e37e7fda8
+  AddTriple (e75c3c68-bbde-4df2-8210-32a017499460)
+ Call ID: e75c3c68-bbde-4df2-8210-32a017499460
   Args:
+    source: Frederick_Windsor
     target: Princess_Michael_of_Kent
     relation: :hasMother
-    source: Lord_Frederick_Windsor
-  AddTriple (c9f504eb-af65-4026-ae85-53bded935c79)
- Call ID: c9f504eb-af65-4026-ae85-53bded935c79
+  AssignClass (5850eb74-1efe-46db-8794-a113b721b530)
+ Call ID: 5850eb74-1efe-46db-8794-a113b721b530
+  Args:
+    type: :Woman
+    source: Sophie_Winkleman
+  AssignClass (4a5e16e3-515a-45b2-b1dd-6797a4afa539)
+ Call ID: 4a5e16e3-515a-45b2-b1dd-6797a4afa539
+  Args:
+    type: :Person
+    source: Sophie_Winkleman
+  AddTriple (cab64db9-c063-498a-ac82-2c7bb84bcaca)
+ Call ID: cab64db9-c063-498a-ac82-2c7bb84bcaca
+  Args:
+    source: Frederick_Windsor
+    target: Sophie_Winkleman
+    relation: :hasRelation
+  AssignClass (3e84c83e-16b6-425d-83f1-0a555c7882c5)
+ Call ID: 3e84c83e-16b6-425d-83f1-0a555c7882c5
+  Args:
+    source: Lady_Gabriella
+    type: :Woman
+  AssignClass (3927973d-6b98-4161-b04d-6dfde628d9cb)
+ Call ID: 3927973d-6b98-4161-b04d-6dfde628d9cb
+  Args:
+    source: Lady_Gabriella
+    type: :Person
+  AddTriple (b763f5c5-756f-4751-b411-6ae95d5ec0ae)
+ Call ID: b763f5c5-756f-4751-b411-6ae95d5ec0ae
   Args:
     relation: :hasSister
+    source: Frederick_Windsor
     target: Lady_Gabriella
-    source: Lord_Frederick_Windsor
-  AddTriple (15dbb7ef-90c4-45e4-82c6-21ae2db5cbdc)
- Call ID: 15dbb7ef-90c4-45e4-82c6-21ae2db5cbdc
+  AddTriple (40cabc2e-9b88-4944-b17a-44442bc9255c)
+ Call ID: 40cabc2e-9b88-4944-b17a-44442bc9255c
   Args:
-    source: Lord_Frederick_Windsor
-    target: Isabella_Alexandra_May
-    relation: :isFatherOf
-  AddTriple (b333eb08-f1b4-4a93-8a15-7de1613c12a5)
- Call ID: b333eb08-f1b4-4a93-8a15-7de1613c12a5
+    source: Lady_Gabriella
+    target: Prince_Michael_of_Kent
+    relation: :hasFather
+  AddTriple (8ffff67e-ed35-45c9-87f3-d03745f50fdc)
+ Call ID: 8ffff67e-ed35-45c9-87f3-d03745f50fdc
   Args:
-    source: Sophie_Winkleman
-    target: Isabella_Alexandra_May
-    relation: :isMotherOf
-  Finish (3d475f2d-7776-4ebb-b6eb-728f5f7c758b)
- Call ID: 3d475f2d-7776-4ebb-b6eb-728f5f7c758b
+    source: Lady_Gabriella
+    target: Princess_Michael_of_Kent
+    relation: :hasMother
+  AssignClass (6aa1c8f1-e598-4d79-bdd8-9436840f65a6)
+ Call ID: 6aa1c8f1-e598-4d79-bdd8-9436840f65a6
   Args:
+    source: Isabella_Alexandra_May
+    type: :Woman
+  AssignClass (5d50659d-3d62-4528-8815-a37bb3f81b45)
+ Call ID: 5d50659d-3d62-4528-8815-a37bb3f81b45
+  Args:
+    type: :Person
+    source: Isabella_Alexandra_May
+  AddTriple (82b61a48-026d-4e0a-b1f9-75a2ae88b6a6)
+ Call ID: 82b61a48-026d-4e0a-b1f9-75a2ae88b6a6
+  Args:
+    relation: :hasFather
+    source: Isabella_Alexandra_May
+    target: Frederick_Windsor
+  AddTriple (53697a8e-90ac-4d0d-843d-0f50dc74a1b8)
+ Call ID: 53697a8e-90ac-4d0d-843d-0f50dc74a1b8
+  Args:
+    source: Isabella_Alexandra_May
+    target: Sophie_Winkleman
+    relation: :hasMother
+  Finish (806b77ca-52cd-47a4-bbeb-245bbe013f72)
+ Call ID: 806b77ca-52cd-47a4-bbeb-245bbe013f72
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -486,23 +662,32 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Lord_Frederick_Windsor a :Man ;
+  data:Isabella_Alexandra_May a :Person,
+          :Woman ;
+      :hasFather data:Frederick_Windsor ;
+      :hasMother data:Sophie_Winkleman .
+
+  data:Frederick_Windsor a :Man,
+          :Person ;
       :hasBirthYear 1979 ;
       :hasFather data:Prince_Michael_of_Kent ;
       :hasMother data:Princess_Michael_of_Kent ;
-      :hasSister data:Lady_Gabriella ;
-      :isFatherOf data:Isabella_Alexandra_May .
+      :hasRelation data:Sophie_Winkleman ;
+      :hasSister data:Lady_Gabriella .
 
-  data:Sophie_Winkleman a :Woman ;
-      :isMotherOf data:Isabella_Alexandra_May .
+  data:Lady_Gabriella a :Person,
+          :Woman ;
+      :hasFather data:Prince_Michael_of_Kent ;
+      :hasMother data:Princess_Michael_of_Kent .
 
-  data:Lady_Gabriella a :Woman .
+  data:Prince_Michael_of_Kent a :Man,
+          :Person .
 
-  data:Prince_Michael_of_Kent a :Man .
+  data:Princess_Michael_of_Kent a :Person,
+          :Woman .
 
-  data:Princess_Michael_of_Kent a :Woman .
-
-  data:Isabella_Alexandra_May a :Woman .
+  data:Sophie_Winkleman a :Person,
+          :Woman .
 
 
 
@@ -514,20 +699,20 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (1f040b13-eff6-450c-b46f-c5d247ac0795)
- Call ID: 1f040b13-eff6-450c-b46f-c5d247ac0795
+  ValidateShacl (30e72421-22bb-421c-9333-d764688122bd)
+ Call ID: 30e72421-22bb-421c-9333-d764688122bd
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:8
+Total violations:18
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Michael_of_Kent is missing the required class ':Ancestor' to satisfy the constraint for the 'hasFather' property.
+      The value Prince_Michael_of_Kent for property :hasFather on node Frederick_Windsor is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Prince_Michael_of_Kent, :Ancestor)
 
@@ -535,7 +720,7 @@ Violations:
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Michael_of_Kent is missing the required class ':Ancestor' to satisfy the constraint for the 'hasMother' property.
+      The value Princess_Michael_of_Kent for property :hasMother on node Frederick_Windsor is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Princess_Michael_of_Kent, :Ancestor)
 
@@ -543,49 +728,129 @@ Violations:
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Michael_of_Kent is missing the required class ':Ancestor' to satisfy the constraint for the 'hasFather' property.
+      The value Prince_Michael_of_Kent for property :hasFather on node Frederick_Windsor is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Prince_Michael_of_Kent, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Princess_Michael_of_Kent is missing the required class ':Ancestor' to satisfy the constraint for the 'hasMother' property.
+      The value Frederick_Windsor for property :hasFather on node Isabella_Alexandra_May is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Michael_of_Kent, :Ancestor)
+      AssignClass(Frederick_Windsor, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Sophie_Winkleman acts as a subject for 'isMotherOf' but lacks the mandatory ':Ancestor' class.
+      The value Prince_Michael_of_Kent for property :hasFather on node Lady_Gabriella is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophie_Winkleman, :Ancestor)
+      AssignClass(Prince_Michael_of_Kent, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Prince_Michael_of_Kent is missing the required class ':Ancestor' to satisfy the constraint for the 'hasFather' property.
+      The value Princess_Michael_of_Kent for property :hasMother on node Frederick_Windsor is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Michael_of_Kent, :Ancestor)
+      AssignClass(Princess_Michael_of_Kent, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Michael_of_Kent is missing the required class ':Ancestor' to satisfy the constraint for the 'hasMother' property.
+      The value Sophie_Winkleman for property :hasMother on node Isabella_Alexandra_May is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophie_Winkleman, :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Princess_Michael_of_Kent for property :hasMother on node Lady_Gabriella is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Princess_Michael_of_Kent, :Ancestor)
 
 
-  Violation [8]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Lord_Frederick_Windsor acts as a subject for 'isFatherOf' but lacks the mandatory ':Ancestor' class.
+      The value Prince_Michael_of_Kent for property :hasFather on node Frederick_Windsor is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Lord_Frederick_Windsor, :Ancestor)
+      AssignClass(Prince_Michael_of_Kent, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Frederick_Windsor for property :hasFather on node Isabella_Alexandra_May is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederick_Windsor, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Prince_Michael_of_Kent for property :hasFather on node Lady_Gabriella is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Michael_of_Kent, :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Princess_Michael_of_Kent for property :hasMother on node Frederick_Windsor is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Michael_of_Kent, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Sophie_Winkleman for property :hasMother on node Isabella_Alexandra_May is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophie_Winkleman, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Princess_Michael_of_Kent for property :hasMother on node Lady_Gabriella is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Michael_of_Kent, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Frederick_Windsor for property :hasFather on node Isabella_Alexandra_May is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederick_Windsor, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Prince_Michael_of_Kent for property :hasFather on node Lady_Gabriella is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Michael_of_Kent, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Sophie_Winkleman for property :hasMother on node Isabella_Alexandra_May is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sophie_Winkleman, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Princess_Michael_of_Kent for property :hasMother on node Lady_Gabriella is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Michael_of_Kent, :Ancestor)
 
 
 
@@ -594,26 +859,29 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (774b3b33-6aec-4734-a780-4a14e1b21180)
- Call ID: 774b3b33-6aec-4734-a780-4a14e1b21180
+  AssignClass (2750e873-13c4-4293-9a69-c5baf7b504d9)
+ Call ID: 2750e873-13c4-4293-9a69-c5baf7b504d9
   Args:
     source: Prince_Michael_of_Kent
     type: :Ancestor
-  AssignClass (364882fa-10d9-4376-9a2c-6ef169d29be0)
- Call ID: 364882fa-10d9-4376-9a2c-6ef169d29be0
+  AssignClass (babfacbf-c5cf-444b-a15e-139df3300659)
+ Call ID: babfacbf-c5cf-444b-a15e-139df3300659
   Args:
     type: :Ancestor
     source: Princess_Michael_of_Kent
-  AssignClass (c943af8d-27ce-410e-8809-bc5b7d2ad7ee)
- Call ID: c943af8d-27ce-410e-8809-bc5b7d2ad7ee
+  AssignClass (cb80bd73-43a1-42e9-a758-fdccb0d783d1)
+ Call ID: cb80bd73-43a1-42e9-a758-fdccb0d783d1
   Args:
     type: :Ancestor
+    source: Frederick_Windsor
+  AssignClass (046c7197-9220-4086-b605-d053946321ca)
+ Call ID: 046c7197-9220-4086-b605-d053946321ca
+  Args:
     source: Sophie_Winkleman
-  AssignClass (86ebf99d-3bf8-4032-9c63-44484865eebe)
- Call ID: 86ebf99d-3bf8-4032-9c63-44484865eebe
-  Args:
-    source: Lord_Frederick_Windsor
     type: :Ancestor
+  ValidateShacl (e7dcad8b-387f-4fe6-8815-5e31d49e688d)
+ Call ID: e7dcad8b-387f-4fe6-8815-5e31d49e688d
+  Args:
 
 ================================= Tool Message =================================
 
@@ -634,37 +902,38 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Lord_Frederick_Windsor a :Ancestor,
-          :Man ;
+  data:Isabella_Alexandra_May a :Person,
+          :Woman ;
+      :hasFather data:Frederick_Windsor ;
+      :hasMother data:Sophie_Winkleman .
+
+  data:Frederick_Windsor a :Ancestor,
+          :Man,
+          :Person ;
       :hasBirthYear 1979 ;
       :hasFather data:Prince_Michael_of_Kent ;
       :hasMother data:Princess_Michael_of_Kent ;
-      :hasSister data:Lady_Gabriella ;
-      :isFatherOf data:Isabella_Alexandra_May .
+      :hasRelation data:Sophie_Winkleman ;
+      :hasSister data:Lady_Gabriella .
 
-  data:Sophie_Winkleman a :Ancestor,
+  data:Lady_Gabriella a :Person,
           :Woman ;
-      :isMotherOf data:Isabella_Alexandra_May .
-
-  data:Lady_Gabriella a :Woman .
+      :hasFather data:Prince_Michael_of_Kent ;
+      :hasMother data:Princess_Michael_of_Kent .
 
   data:Prince_Michael_of_Kent a :Ancestor,
-          :Man .
+          :Man,
+          :Person .
 
   data:Princess_Michael_of_Kent a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Isabella_Alexandra_May a :Woman .
+  data:Sophie_Winkleman a :Ancestor,
+          :Person,
+          :Woman .
 
 
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (51a7e350-48d8-49ad-854c-a12e399a3459)
- Call ID: 51a7e350-48d8-49ad-854c-a12e399a3459
-  Args:
 
 ================================= Tool Message =================================
 
@@ -674,6 +943,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ec553e03-7138-474d-b509-1ef3e27f4bfd)
- Call ID: ec553e03-7138-474d-b509-1ef3e27f4bfd
+  Finish (0f87283e-f359-40db-9005-faddec3721d0)
+ Call ID: 0f87283e-f359-40db-9005-faddec3721d0
   Args:

@@ -85,27 +85,32 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Eugenie of Greece and Denmark (Greek: Ευγενία, romanized: Evyenía; 10 February 1910 – 13 February 1989) was by birth member of the Greek royal family and by marriage member of the House of Radziwiłł and House of Thurn und Taxis.
-Early life and ancestry
-
-Eugenie was the youngest child and only daughter of Prince George of Greece and Denmark and his wife, Princess Marie Bonaparte, daughter of Marie-Félix Blanc and Prince Roland Bonaparte, a great-nephew of Napoleon I.
-Her father was the second son of George I of Greece and Olga Constantinovna of Russia.
-She had one elder brother, Prince Peter of Greece and Denmark, who, at the time of his birth, was third in line of succession to the Greek throne, preceded only by his unmarried cousin Paul and his own and Eugenia's father, Prince George.
-As a cousin of the bridegroom, Eugenie was a leading guest at the 1947 wedding of Princess Elizabeth and Philip, Duke of Edinburgh.
-She authored Le Tsarevitch, Enfant Martyr, a biography of Aleksey Nikolaevich, Tsarevich of Russia, written in French, which was published in 1990.
-Marriage and issue
-
-She married Prince Dominik Rainer Radziwiłł, member of the House of Radziwiłł (and son of Prince Hieronim Radziwiłł and Archduchess Renata of Austria), on 30 May 1938 in Paris.
-They had two children:
+Princess Beatrix*
 
 
-Eugénie remarried on 28 November 1949 to Prince Raymundo della Torre e Tasso, Duke of Castel Duino, a cadet member of the House of Thurn and Taxis.
+Princess Margriet*Pieter van Vollenhoven*
+
+
+Countess Leonore of Orange-Nassau, Jonkvrouwe van Amsberg (Leonore Marie Irene Enrica; born 3 June 2006), is a member of the Dutch royal family.
+She is the third child and second daughter of Prince Constantijn of the Netherlands and Princess Laurentien of the Netherlands.
+Life and education
+
+Countess Leonore was born on 3 June 2006 at HMC Bronovo in The Hague, Netherlands, as the third child and second daughter of Prince Constantijn and Princess Laurentien.
+She was baptised on 8 October 2006 in the chapel of Het Loo Palace in Apeldoorn; her godparents included her paternal aunt, Queen Máxima; her maternal uncle, Marius Brinkhorst; her father’s first cousin, Juliana Guillermo; and Count Jean‐Charles Ullens de Schooten Whettnall.
+After spending the early years of her life partly in Belgium where her family lived while her parents worked, Countess Leonore later relocated with her family to the Netherlands in 2015.
+Since September 2022, she has been studying at UWC Atlantic College in Wales, a United World College known for its international education programme, the same school attended by her cousin, Princess Alexia.
+Titles and styles
+
+By royal decree of 11 May 2001 (nr. 227), it was determined that the children born from the marriage of Prince Constantijn and Princess Laurentien of the Netherlands would bear the title Count/Countess of Orange‐Nassau and the honorific Jonkheer/Jonkvrouwe van Amsberg with the surname Van Oranje-Nassau van Amsberg.
+Upon the abdication of Queen Beatrix on 30 April 2013, the children of Prince Constantijn and Princess Laurentien ceased to be members of the Royal House, although continue to be members of the royal family.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -121,39 +126,9 @@ Eugénie remarried on 28 November 1949 to Prince Raymundo della Torre e Tasso, D
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -168,6 +143,23 @@ Eugénie remarried on 28 November 1949 to Prince Raymundo della Torre e Tasso, D
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -185,6 +177,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -252,29 +259,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -283,6 +282,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -295,6 +302,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -303,17 +312,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -341,6 +352,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -356,251 +451,150 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e3550d30-36ad-4b33-9dab-2ec3d80eecac)
- Call ID: e3550d30-36ad-4b33-9dab-2ec3d80eecac
-  Args:
-    source: Princess_Eugenie_of_Greece_and_Denmark
-    type: :Woman
-  AssignClass (85c77d70-1815-4fcc-b528-8e5a42eeaefb)
- Call ID: 85c77d70-1815-4fcc-b528-8e5a42eeaefb
+  AssignClass (6937be48-9c76-4c87-93bb-26972df8027a)
+ Call ID: 6937be48-9c76-4c87-93bb-26972df8027a
   Args:
     type: :Person
-    source: Princess_Eugenie_of_Greece_and_Denmark
-  AddLiteral (8db8fc9c-283e-4c54-978b-2abaaffdb5f4)
- Call ID: 8db8fc9c-283e-4c54-978b-2abaaffdb5f4
+    source: :Leonore
+  AssignClass (042eaeff-cb1d-4813-98f5-38cbe1a71f21)
+ Call ID: 042eaeff-cb1d-4813-98f5-38cbe1a71f21
   Args:
+    type: :Woman
+    source: :Leonore
+  AddLiteral (95ab80bc-9648-40d1-bc3b-36ba02931a21)
+ Call ID: 95ab80bc-9648-40d1-bc3b-36ba02931a21
+  Args:
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1910
-    literal_type: xsd:integer
-    source: Princess_Eugenie_of_Greece_and_Denmark
-  AddLiteral (c3936d05-70c4-4623-855e-a0890fcc6ddb)
- Call ID: c3936d05-70c4-4623-855e-a0890fcc6ddb
-  Args:
-    literal_type: xsd:integer
-    source: Princess_Eugenie_of_Greece_and_Denmark
-    literal_value: 1989
-    relation: :hasDeathYear
-  AssignClass (6fbcd136-8be1-4435-8232-aa5ce8a82303)
- Call ID: 6fbcd136-8be1-4435-8232-aa5ce8a82303
-  Args:
-    source: Prince_George_of_Greece_and_Denmark
-    type: :Man
-  AssignClass (b3882a10-0ac4-4606-a407-6c29f119d31b)
- Call ID: b3882a10-0ac4-4606-a407-6c29f119d31b
+    literal_value: 2006
+    source: :Leonore
+  AssignClass (c4666b29-feec-4802-bc44-6347be39d6b1)
+ Call ID: c4666b29-feec-4802-bc44-6347be39d6b1
   Args:
     type: :Person
-    source: Prince_George_of_Greece_and_Denmark
-  AddTriple (835b6979-cd89-449c-b115-edeb2ba849d0)
- Call ID: 835b6979-cd89-449c-b115-edeb2ba849d0
+    source: :Constantijn
+  AssignClass (8ec8be24-e79c-4576-ab7b-c0d5e7b65912)
+ Call ID: 8ec8be24-e79c-4576-ab7b-c0d5e7b65912
   Args:
-    source: Princess_Eugenie_of_Greece_and_Denmark
-    target: Prince_George_of_Greece_and_Denmark
-    relation: :hasFather
-  AssignClass (51f8b01b-9e4d-437a-8b30-0d8d0ebc1f2f)
- Call ID: 51f8b01b-9e4d-437a-8b30-0d8d0ebc1f2f
+    type: :Man
+    source: :Constantijn
+  AssignClass (e4f4ad18-9b67-444d-ad69-cac40d0254d7)
+ Call ID: e4f4ad18-9b67-444d-ad69-cac40d0254d7
+  Args:
+    source: :Laurentien
+    type: :Person
+  AssignClass (1830b29c-ee1a-4836-b56c-903439f76937)
+ Call ID: 1830b29c-ee1a-4836-b56c-903439f76937
   Args:
     type: :Woman
-    source: Princess_Marie_Bonaparte
-  AssignClass (42c39197-f0c4-4d32-aa96-e6db06f95529)
- Call ID: 42c39197-f0c4-4d32-aa96-e6db06f95529
+    source: :Laurentien
+  AddTriple (f9ffc4c0-906a-422c-b2df-eecc3bf185d0)
+ Call ID: f9ffc4c0-906a-422c-b2df-eecc3bf185d0
   Args:
-    source: Princess_Marie_Bonaparte
-    type: :Person
-  AddTriple (fefd236b-3b37-4598-9226-cda9f08751bb)
- Call ID: fefd236b-3b37-4598-9226-cda9f08751bb
+    relation: :hasFather
+    target: :Constantijn
+    source: :Leonore
+  AddTriple (e1ccfb2d-b640-4b56-ba4e-d451e18ae172)
+ Call ID: e1ccfb2d-b640-4b56-ba4e-d451e18ae172
   Args:
+    target: :Laurentien
+    source: :Leonore
     relation: :hasMother
-    target: Princess_Marie_Bonaparte
-    source: Princess_Eugenie_of_Greece_and_Denmark
-  AssignClass (0c916c53-18dc-4f69-8f92-64df5f787aa6)
- Call ID: 0c916c53-18dc-4f69-8f92-64df5f787aa6
+  AddTriple (7cea9df2-0bc0-4201-8159-298c3c71e35c)
+ Call ID: 7cea9df2-0bc0-4201-8159-298c3c71e35c
   Args:
-    source: Marie-Felix_Blanc
+    relation: :isChildOf
+    source: :Leonore
+    target: :Constantijn
+  AddTriple (d59c4ecf-7afe-44fb-b598-e2a53bf47150)
+ Call ID: d59c4ecf-7afe-44fb-b598-e2a53bf47150
+  Args:
+    source: :Leonore
+    target: :Laurentien
+    relation: :isChildOf
+  AssignClass (68197689-a5b7-420f-8f96-d3f61e018b06)
+ Call ID: 68197689-a5b7-420f-8f96-d3f61e018b06
+  Args:
+    type: :Person
+    source: :Beatrix
+  AssignClass (b7e7983a-7e86-4254-bc38-4d87af032a9e)
+ Call ID: b7e7983a-7e86-4254-bc38-4d87af032a9e
+  Args:
+    source: :Beatrix
     type: :Woman
-  AssignClass (26d14756-0faa-4aee-99d2-1400aa2a11d2)
- Call ID: 26d14756-0faa-4aee-99d2-1400aa2a11d2
+  AssignClass (15afd890-1d6e-4fc8-88ca-5109d7c44bd0)
+ Call ID: 15afd890-1d6e-4fc8-88ca-5109d7c44bd0
   Args:
     type: :Person
-    source: Marie-Felix_Blanc
-  AddTriple (383a47e9-ee27-4eb9-8181-da4c96b8c8fc)
- Call ID: 383a47e9-ee27-4eb9-8181-da4c96b8c8fc
+    source: :Margriet
+  AssignClass (c67b3b41-a460-444b-8192-ac177585227f)
+ Call ID: c67b3b41-a460-444b-8192-ac177585227f
   Args:
-    source: Princess_Marie_Bonaparte
-    relation: :hasMother
-    target: Marie-Felix_Blanc
-  AssignClass (24d62674-e6ff-4e64-9df0-1e4e19a4b7b5)
- Call ID: 24d62674-e6ff-4e64-9df0-1e4e19a4b7b5
-  Args:
-    source: Prince_Roland_Bonaparte
-    type: :Man
-  AssignClass (388e40b9-9d82-43a6-bba3-8a7be332b3cc)
- Call ID: 388e40b9-9d82-43a6-bba3-8a7be332b3cc
-  Args:
-    type: :Person
-    source: Prince_Roland_Bonaparte
-  AddTriple (83ff1136-3577-4700-88a8-29906dfad86c)
- Call ID: 83ff1136-3577-4700-88a8-29906dfad86c
-  Args:
-    source: Princess_Marie_Bonaparte
-    target: Prince_Roland_Bonaparte
-    relation: :hasFather
-  AssignClass (8456874a-8549-4765-a208-ab98628fa08a)
- Call ID: 8456874a-8549-4765-a208-ab98628fa08a
-  Args:
-    type: :Man
-    source: George_I_of_Greece
-  AssignClass (2b622533-3360-49a0-870f-8e1de28807b2)
- Call ID: 2b622533-3360-49a0-870f-8e1de28807b2
-  Args:
-    source: George_I_of_Greece
-    type: :Person
-  AddTriple (6941a5c2-3ba9-431c-84e0-0f25bad3634c)
- Call ID: 6941a5c2-3ba9-431c-84e0-0f25bad3634c
-  Args:
-    source: Prince_George_of_Greece_and_Denmark
-    relation: :hasFather
-    target: George_I_of_Greece
-  AssignClass (1a11791a-f0e9-4301-a9f7-70bd41594552)
- Call ID: 1a11791a-f0e9-4301-a9f7-70bd41594552
-  Args:
+    source: :Margriet
     type: :Woman
-    source: Olga_Constantinovna_of_Russia
-  AssignClass (d9b48e55-d907-4b62-bca3-c27a05502ae6)
- Call ID: d9b48e55-d907-4b62-bca3-c27a05502ae6
+  AssignClass (1b6ce98a-3186-4ea9-b78b-fda07562a0d2)
+ Call ID: 1b6ce98a-3186-4ea9-b78b-fda07562a0d2
   Args:
+    source: :PieterVanVollenhoven
     type: :Person
-    source: Olga_Constantinovna_of_Russia
-  AddTriple (b3dc1b52-acf2-4e00-acc5-6d05074c3456)
- Call ID: b3dc1b52-acf2-4e00-acc5-6d05074c3456
+  AssignClass (7c79075d-bba8-4173-98b9-d84d962336d5)
+ Call ID: 7c79075d-bba8-4173-98b9-d84d962336d5
   Args:
-    target: Olga_Constantinovna_of_Russia
-    relation: :hasMother
-    source: Prince_George_of_Greece_and_Denmark
-  AssignClass (58b509c9-a18b-459d-b0fe-8b17b0bcba2b)
- Call ID: 58b509c9-a18b-459d-b0fe-8b17b0bcba2b
-  Args:
-    source: Prince_Peter_of_Greece_and_Denmark
+    source: :PieterVanVollenhoven
     type: :Man
-  AssignClass (6747af2e-68d8-4e49-9490-f89205df9f5e)
- Call ID: 6747af2e-68d8-4e49-9490-f89205df9f5e
+  AssignClass (1d2ba21f-921d-4c38-965c-332cf9a6e426)
+ Call ID: 1d2ba21f-921d-4c38-965c-332cf9a6e426
   Args:
     type: :Person
-    source: Prince_Peter_of_Greece_and_Denmark
-  AddTriple (4cc4e689-fe07-4f2e-b9b8-a1f9c108acd1)
- Call ID: 4cc4e689-fe07-4f2e-b9b8-a1f9c108acd1
-  Args:
-    source: Princess_Eugenie_of_Greece_and_Denmark
-    target: Prince_Peter_of_Greece_and_Denmark
-    relation: :hasBrother
-  AssignClass (dc99de0a-e42e-4c24-b67f-f6bb0aa869c0)
- Call ID: dc99de0a-e42e-4c24-b67f-f6bb0aa869c0
-  Args:
-    type: :Man
-    source: Prince_Dominik_Rainer_Radziwill
-  AssignClass (a1313bc4-3083-459e-b1b1-830afd37e7ff)
- Call ID: a1313bc4-3083-459e-b1b1-830afd37e7ff
-  Args:
-    source: Prince_Dominik_Rainer_Radziwill
-    type: :Person
-  AddLiteral (14ff5b37-945b-481c-865c-5e8977036866)
- Call ID: 14ff5b37-945b-481c-865c-5e8977036866
-  Args:
-    literal_value: 1938
-    relation: :hasMarriageYear
-    source: Princess_Eugenie_of_Greece_and_Denmark
-    literal_type: xsd:integer
-  AssignClass (5566fd66-c784-4ece-ae54-2e2ab99368ad)
- Call ID: 5566fd66-c784-4ece-ae54-2e2ab99368ad
-  Args:
-    type: :Man
-    source: Prince_Hieronim_Radziwill
-  AssignClass (6824aed7-151b-4852-82fe-eedb37b407d1)
- Call ID: 6824aed7-151b-4852-82fe-eedb37b407d1
-  Args:
-    source: Prince_Hieronim_Radziwill
-    type: :Person
-  AddTriple (1738b100-486c-486b-8b9a-153428fd19f8)
- Call ID: 1738b100-486c-486b-8b9a-153428fd19f8
-  Args:
-    source: Prince_Dominik_Rainer_Radziwill
-    target: Prince_Hieronim_Radziwill
-    relation: :hasFather
-  AssignClass (008efb36-6aa8-4c1a-b5b7-60dd298f22bd)
- Call ID: 008efb36-6aa8-4c1a-b5b7-60dd298f22bd
+    source: :Maxima
+  AssignClass (79264ad4-2a03-4487-a40a-adaac8e3927d)
+ Call ID: 79264ad4-2a03-4487-a40a-adaac8e3927d
   Args:
     type: :Woman
-    source: Archduchess_Renata_of_Austria
-  AssignClass (c8db54d0-0587-4cce-90c7-fbd6b58cd614)
- Call ID: c8db54d0-0587-4cce-90c7-fbd6b58cd614
+    source: :Maxima
+  AssignClass (fabeef49-4c13-4f40-b51a-21477b065062)
+ Call ID: fabeef49-4c13-4f40-b51a-21477b065062
   Args:
+    source: :MariusBrinkhorst
     type: :Person
-    source: Archduchess_Renata_of_Austria
-  AddTriple (633f8144-2650-41f8-a4ef-875cb6bb11b1)
- Call ID: 633f8144-2650-41f8-a4ef-875cb6bb11b1
-  Args:
-    target: Archduchess_Renata_of_Austria
-    relation: :hasMother
-    source: Prince_Dominik_Rainer_Radziwill
-  AssignClass (b981fcbd-cc8a-4d45-846c-358318f4967b)
- Call ID: b981fcbd-cc8a-4d45-846c-358318f4967b
+  AssignClass (1a35938e-a58c-41b6-84f4-58a63683a2a1)
+ Call ID: 1a35938e-a58c-41b6-84f4-58a63683a2a1
   Args:
     type: :Man
-    source: Prince_Raymundo_della_Torre_e_Tasso
-  AssignClass (dc71849a-8fe5-4c75-b81b-3e6938c9b696)
- Call ID: dc71849a-8fe5-4c75-b81b-3e6938c9b696
+    source: :MariusBrinkhorst
+  AssignClass (066fa0f8-8233-4533-8524-6fc36f5033fa)
+ Call ID: 066fa0f8-8233-4533-8524-6fc36f5033fa
   Args:
     type: :Person
-    source: Prince_Raymundo_della_Torre_e_Tasso
-  AddLiteral (ad8c5ddc-fdb5-426f-b31e-9f97b72f9abe)
- Call ID: ad8c5ddc-fdb5-426f-b31e-9f97b72f9abe
+    source: :JulianaGuillermo
+  AssignClass (eedd505a-932b-47b6-88a2-dd67d109b490)
+ Call ID: eedd505a-932b-47b6-88a2-dd67d109b490
   Args:
-    literal_value: 1949
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: Princess_Eugenie_of_Greece_and_Denmark
-  Finish (11fbe865-1e81-4a5e-9692-ade9d99056b2)
- Call ID: 11fbe865-1e81-4a5e-9692-ade9d99056b2
+    source: :JulianaGuillermo,type:
+    type: :Woman
+  AssignClass (9833ca84-309f-4e67-8ccf-f62f550fdbbf)
+ Call ID: 9833ca84-309f-4e67-8ccf-f62f550fdbbf
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :JeanCharlesUllens
+    type: :Person
+  AssignClass (863120e3-2113-4aca-94b9-79fa372e8f21)
+ Call ID: 863120e3-2113-4aca-94b9-79fa372e8f21
+  Args:
+    source: :JeanCharlesUllens,type:
+    type: :Man
+  AssignClass (00d7626a-9943-4ebe-a8d1-2ab0e811c959)
+ Call ID: 00d7626a-9943-4ebe-a8d1-2ab0e811c959
+  Args:
+    source: :Alexia
+    type: :Person
+  AssignClass (1d3103a6-2d02-475b-ba7f-ab7a277bc294)
+ Call ID: 1d3103a6-2d02-475b-ba7f-ab7a277bc294
+  Args:
+    source: :Alexia
+    type: :Woman
+  Finish (4f40c1f2-d125-411e-bb4f-574eb1cdab87)
+ Call ID: 4f40c1f2-d125-411e-bb4f-574eb1cdab87
+  Args:
 
 ================================= Tool Message =================================
 
@@ -713,54 +707,45 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Dominik_Rainer_Radziwill a :Man,
-          :Person ;
-      :hasFather data:Prince_Hieronim_Radziwill ;
-      :hasMother data:Archduchess_Renata_of_Austria .
+  data:Alexia a :Person,
+          :Woman .
 
-  data:Prince_Raymundo_della_Torre_e_Tasso a :Man,
-          :Person .
+  data:Beatrix a :Person,
+          :Woman .
 
-  data:Princess_Eugenie_of_Greece_and_Denmark a :Person,
+  data:JeanCharlesUllens a :Person .
+
+  data:JeanCharlesUllens%2Ctype a :Man .
+
+  data:JulianaGuillermo a :Person .
+
+  data:JulianaGuillermo%2Ctype a :Woman .
+
+  data:Leonore a :Person,
           :Woman ;
-      :hasBirthYear 1910 ;
-      :hasBrother data:Prince_Peter_of_Greece_and_Denmark ;
-      :hasDeathYear 1989 ;
-      :hasFather data:Prince_George_of_Greece_and_Denmark ;
-      :hasMarriageYear 1938,
-          1949 ;
-      :hasMother data:Princess_Marie_Bonaparte .
+      :hasBirthYear 2006 ;
+      :hasFather data:Constantijn ;
+      :hasMother data:Laurentien ;
+      :isChildOf data:Constantijn,
+          data:Laurentien .
 
-  data:Archduchess_Renata_of_Austria a :Person,
+  data:Margriet a :Person,
           :Woman .
 
-  data:George_I_of_Greece a :Man,
+  data:MariusBrinkhorst a :Man,
           :Person .
 
-  data:Marie-Felix_Blanc a :Person,
+  data:Maxima a :Person,
           :Woman .
 
-  data:Olga_Constantinovna_of_Russia a :Person,
+  data:PieterVanVollenhoven a :Man,
+          :Person .
+
+  data:Constantijn a :Man,
+          :Person .
+
+  data:Laurentien a :Person,
           :Woman .
-
-  data:Prince_George_of_Greece_and_Denmark a :Man,
-          :Person ;
-      :hasFather data:George_I_of_Greece ;
-      :hasMother data:Olga_Constantinovna_of_Russia .
-
-  data:Prince_Hieronim_Radziwill a :Man,
-          :Person .
-
-  data:Prince_Peter_of_Greece_and_Denmark a :Man,
-          :Person .
-
-  data:Prince_Roland_Bonaparte a :Man,
-          :Person .
-
-  data:Princess_Marie_Bonaparte a :Person,
-          :Woman ;
-      :hasFather data:Prince_Roland_Bonaparte ;
-      :hasMother data:Marie-Felix_Blanc .
 
 
 
@@ -772,206 +757,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (4d239f3c-d3da-41ae-90e2-17df45b7db09)
- Call ID: 4d239f3c-d3da-41ae-90e2-17df45b7db09
+  ValidateShacl (b71ce823-d8ee-40e7-9526-2659c99c79be)
+ Call ID: b71ce823-d8ee-40e7-9526-2659c99c79be
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:24
+Total violations:12
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'George_I_of_Greece' used for 'hasFather' on 'Prince_George_of_Greece_and_Denmark' lacks the required class ':Ancestor'.
+      The node Constantijn, linked via hasFather to Leonore, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('George_I_of_Greece', ':Ancestor')
+      AssignClass(Constantijn, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Prince_Hieronim_Radziwill' used for 'hasFather' on 'Prince_Dominik_Rainer_Radziwill' lacks the required class ':Ancestor'.
+      The node Laurentien, linked via hasMother to Leonore, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Hieronim_Radziwill', ':Ancestor')
+      AssignClass(Laurentien, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node 'Olga_Constantinovna_of_Russia' used for 'hasMother' on 'Prince_George_of_Greece_and_Denmark' lacks the required class ':Ancestor'.
+      The node Constantijn, linked via isChildOf to Leonore, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Olga_Constantinovna_of_Russia', ':Ancestor')
+      AssignClass(Constantijn, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node 'Archduchess_Renata_of_Austria' used for 'hasMother' on 'Prince_Dominik_Rainer_Radziwill' lacks the required class ':Ancestor'.
+      The node Laurentien, linked via isChildOf to Leonore, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Archduchess_Renata_of_Austria', ':Ancestor')
+      AssignClass(Laurentien, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'George_I_of_Greece' used for 'hasFather' on 'Prince_George_of_Greece_and_Denmark' lacks the required class ':Ancestor'.
+      The node Constantijn, linked via hasFather to Leonore, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('George_I_of_Greece', ':Ancestor')
+      AssignClass(Constantijn, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Prince_George_of_Greece_and_Denmark' used for 'hasFather' on 'Princess_Eugenie_of_Greece_and_Denmark' lacks the required class ':Ancestor'.
+      The node Laurentien, linked via hasMother to Leonore, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_George_of_Greece_and_Denmark', ':Ancestor')
+      AssignClass(Laurentien, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node 'Prince_Roland_Bonaparte' used for 'hasFather' on 'Princess_Marie_Bonaparte' lacks the required class ':Ancestor'.
+      The node Constantijn, linked via isChildOf to Leonore, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Roland_Bonaparte', ':Ancestor')
+      AssignClass(Constantijn, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node 'Prince_Hieronim_Radziwill' used for 'hasFather' on 'Prince_Dominik_Rainer_Radziwill' lacks the required class ':Ancestor'.
+      The node Laurentien, linked via isChildOf to Leonore, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Hieronim_Radziwill', ':Ancestor')
+      AssignClass(Laurentien, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Olga_Constantinovna_of_Russia' used for 'hasMother' on 'Prince_George_of_Greece_and_Denmark' lacks the required class ':Ancestor'.
+      The node Constantijn, linked via hasFather to Leonore, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Olga_Constantinovna_of_Russia', ':Ancestor')
+      AssignClass(Constantijn, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Princess_Marie_Bonaparte' used for 'hasMother' on 'Princess_Eugenie_of_Greece_and_Denmark' lacks the required class ':Ancestor'.
+      The node Laurentien, linked via hasMother to Leonore, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Marie_Bonaparte', ':Ancestor')
+      AssignClass(Laurentien, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node 'Marie-Felix_Blanc' used for 'hasMother' on 'Princess_Marie_Bonaparte' lacks the required class ':Ancestor'.
+      The node Constantijn, linked via isChildOf to Leonore, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Marie-Felix_Blanc', ':Ancestor')
+      AssignClass(Constantijn, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node 'Archduchess_Renata_of_Austria' used for 'hasMother' on 'Prince_Dominik_Rainer_Radziwill' lacks the required class ':Ancestor'.
+      The node Laurentien, linked via isChildOf to Leonore, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Archduchess_Renata_of_Austria', ':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'George_I_of_Greece' used for 'hasFather' on 'Prince_George_of_Greece_and_Denmark' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('George_I_of_Greece', ':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Prince_George_of_Greece_and_Denmark' used for 'hasFather' on 'Princess_Eugenie_of_Greece_and_Denmark' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_George_of_Greece_and_Denmark', ':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Prince_Roland_Bonaparte' used for 'hasFather' on 'Princess_Marie_Bonaparte' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Roland_Bonaparte', ':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Prince_Hieronim_Radziwill' used for 'hasFather' on 'Prince_Dominik_Rainer_Radziwill' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Hieronim_Radziwill', ':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Olga_Constantinovna_of_Russia' used for 'hasMother' on 'Prince_George_of_Greece_and_Denmark' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Olga_Constantinovna_of_Russia', ':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Princess_Marie_Bonaparte' used for 'hasMother' on 'Princess_Eugenie_of_Greece_and_Denmark' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Marie_Bonaparte', ':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Marie-Felix_Blanc' used for 'hasMother' on 'Princess_Marie_Bonaparte' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Marie-Felix_Blanc', ':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Archduchess_Renata_of_Austria' used for 'hasMother' on 'Prince_Dominik_Rainer_Radziwill' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Archduchess_Renata_of_Austria', ':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Prince_George_of_Greece_and_Denmark' used for 'hasFather' on 'Princess_Eugenie_of_Greece_and_Denmark' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_George_of_Greece_and_Denmark', ':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Prince_Roland_Bonaparte' used for 'hasFather' on 'Princess_Marie_Bonaparte' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Roland_Bonaparte', ':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Princess_Marie_Bonaparte' used for 'hasMother' on 'Princess_Eugenie_of_Greece_and_Denmark' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Marie_Bonaparte', ':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Marie-Felix_Blanc' used for 'hasMother' on 'Princess_Marie_Bonaparte' lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Marie-Felix_Blanc', ':Ancestor')
+      AssignClass(Laurentien, :Ancestor)
 
 
 
@@ -980,70 +869,19 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (c7390df5-0ed6-40e4-80df-bd561a9480b3)
- Call ID: c7390df5-0ed6-40e4-80df-bd561a9480b3
+  AssignClass (b24ea455-cca6-4d7c-8424-fbd041811562)
+ Call ID: b24ea455-cca6-4d7c-8424-fbd041811562
   Args:
-    source: George_I_of_Greece
+    source: :Constantijn
     type: :Ancestor
-  AssignClass (ebe080f1-b77f-4b30-a259-47d5b5d167a0)
- Call ID: ebe080f1-b77f-4b30-a259-47d5b5d167a0
-  Args:
-    source: Prince_Hieronim_Radziwill
-    type: :Ancestor
-  AssignClass (8bfc3818-e9a9-4e12-90c5-616d2e814713)
- Call ID: 8bfc3818-e9a9-4e12-90c5-616d2e814713
-  Args:
-    source: Olga_Constantinovna_of_Russia
-    type: :Ancestor
-  AssignClass (100c3b34-0774-44fc-bfeb-8ea2ba9e85cd)
- Call ID: 100c3b34-0774-44fc-bfeb-8ea2ba9e85cd
-  Args:
-    source: Archduchess_Renata_of_Austria
-    type: :Ancestor
-  AssignClass (726469f3-fa10-4d04-8a36-dbdf425eb5f8)
- Call ID: 726469f3-fa10-4d04-8a36-dbdf425eb5f8
-  Args:
-    source: Prince_George_of_Greece_and_Denmark
-    type: :Ancestor
-  AssignClass (a9904b3a-6283-46a6-aafc-821e38926ec5)
- Call ID: a9904b3a-6283-46a6-aafc-821e38926ec5
+  AssignClass (b5369149-790d-4bb4-bef7-6b1bf3bf5c2d)
+ Call ID: b5369149-790d-4bb4-bef7-6b1bf3bf5c2d
   Args:
     type: :Ancestor
-    source: Prince_Roland_Bonaparte
-  AssignClass (328dbb73-64e5-49b8-a3fd-d875233dcc90)
- Call ID: 328dbb73-64e5-49b8-a3fd-d875233dcc90
+    source: :Laurentien
+  ValidateShacl (8d6a97aa-5f63-4e50-8668-05ce7d76e1d1)
+ Call ID: 8d6a97aa-5f63-4e50-8668-05ce7d76e1d1
   Args:
-    source: Princess_Marie_Bonaparte
-    type: :Ancestor
-  AssignClass (3cb29654-8553-4610-a638-159dd433104d)
- Call ID: 3cb29654-8553-4610-a638-159dd433104d
-  Args:
-    type: :Ancestor
-    source: Marie-Felix_Blanc
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1056,72 +894,49 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Dominik_Rainer_Radziwill a :Man,
-          :Person ;
-      :hasFather data:Prince_Hieronim_Radziwill ;
-      :hasMother data:Archduchess_Renata_of_Austria .
+  data:Alexia a :Person,
+          :Woman .
 
-  data:Prince_Raymundo_della_Torre_e_Tasso a :Man,
-          :Person .
+  data:Beatrix a :Person,
+          :Woman .
 
-  data:Princess_Eugenie_of_Greece_and_Denmark a :Person,
+  data:JeanCharlesUllens a :Person .
+
+  data:JeanCharlesUllens%2Ctype a :Man .
+
+  data:JulianaGuillermo a :Person .
+
+  data:JulianaGuillermo%2Ctype a :Woman .
+
+  data:Leonore a :Person,
           :Woman ;
-      :hasBirthYear 1910 ;
-      :hasBrother data:Prince_Peter_of_Greece_and_Denmark ;
-      :hasDeathYear 1989 ;
-      :hasFather data:Prince_George_of_Greece_and_Denmark ;
-      :hasMarriageYear 1938,
-          1949 ;
-      :hasMother data:Princess_Marie_Bonaparte .
+      :hasBirthYear 2006 ;
+      :hasFather data:Constantijn ;
+      :hasMother data:Laurentien ;
+      :isChildOf data:Constantijn,
+          data:Laurentien .
 
-  data:Archduchess_Renata_of_Austria a :Ancestor,
+  data:Margriet a :Person,
+          :Woman .
+
+  data:MariusBrinkhorst a :Man,
+          :Person .
+
+  data:Maxima a :Person,
+          :Woman .
+
+  data:PieterVanVollenhoven a :Man,
+          :Person .
+
+  data:Constantijn a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Laurentien a :Ancestor,
           :Person,
           :Woman .
 
-  data:George_I_of_Greece a :Ancestor,
-          :Man,
-          :Person .
 
-  data:Marie-Felix_Blanc a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Olga_Constantinovna_of_Russia a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_George_of_Greece_and_Denmark a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:George_I_of_Greece ;
-      :hasMother data:Olga_Constantinovna_of_Russia .
-
-  data:Prince_Hieronim_Radziwill a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Peter_of_Greece_and_Denmark a :Man,
-          :Person .
-
-  data:Prince_Roland_Bonaparte a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Princess_Marie_Bonaparte a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Prince_Roland_Bonaparte ;
-      :hasMother data:Marie-Felix_Blanc .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (763c1130-5f34-4e4a-b82f-645e30d56557)
- Call ID: 763c1130-5f34-4e4a-b82f-645e30d56557
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1131,6 +946,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (0a227bdc-86ee-4d9e-81cc-7222db07853b)
- Call ID: 0a227bdc-86ee-4d9e-81cc-7222db07853b
+  Finish (d5234b36-5df2-45f1-ad41-f3b5984be36a)
+ Call ID: d5234b36-5df2-45f1-ad41-f3b5984be36a
   Args:

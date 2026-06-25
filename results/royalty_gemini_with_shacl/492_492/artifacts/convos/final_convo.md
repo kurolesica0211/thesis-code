@@ -85,31 +85,29 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Bernhard Prinz und Markgraf von Baden (born 27 May 1970), styled Margrave of Baden and Duke of Zähringen, is the head of the House of Baden since 29 December 2022 following the death of his father, Maximilian.
-Early life and family
+Philipp, Prince of Hohenlohe-Langenburg (Philipp Gottfried Alexander; born 20 January 1970), is the head of the House of Hohenlohe-Langenburg, since the death of his father in 2004.
+Early life and ancestry
 
-Bernhard was born at Schloss Salem in Salem, Baden-Württemberg, on 27 May 1970.
-He is the eldest son of Maximilian, Margrave of Baden, and Archduchess Valerie of Austria (born 1941) and was styled as the heir of his father, Hereditary Prince of Baden.
-His paternal grandparents were Berthold, Margrave of Baden, and Princess Theodora of Greece and Denmark, who was a sister of Prince Philip, Duke of Edinburgh.
-His maternal grandparents were Archduke Hubert Salvator of Austria and Princess Rosemary of Salm-Salm.
-Prince Bernhard manages the family estates, including Staufenberg Castle, and the margravial wineries dedicated to preserving the grape variety Müller-Thurgau.
-Bernhard has close relations with the British royal family, and his granduncle, Prince Philip, Duke of Edinburgh, often came to Germany to shoot with the Baden family.
-On 17 April 2021, Bernhard was one of only thirty mourners at Prince Philip's ceremonial funeral at St George's Chapel, Windsor Castle.
-Bernhard, along with his cousins Philipp, Prince of Hohenlohe-Langenburg, and Donatus, Landgrave of Hesse, was chosen to represent the families of the Duke's late sisters who had been prevented from attending his wedding in 1947.
-Bernhard and his wife and siblings later attended a service of thanksgiving for Prince Philip's life at Westminster Abbey on 29 March 2022.
-On 29 December 2022, his father, Maximilian, died and Bernhard became head of the former grand ducal house of Baden.
-Though royal and noble titles were abolished in Germany in 1919 when the Weimar Republic was proclaimed, he is sometimes styled and titled His Royal Highness The Margrave of Baden, Duke of Zähringen, by courtesy.
-Prior to this, he was styled and titled His Grand Ducal Highness Hereditary Prince of Baden.
-On 24 April 2025 the Margrave attended the funeral of Andreas, Prince of Saxe-Coburg and Gotha as the representative of Charles III.
-Marriage and children
+He was born in Crailsheim, West Germany, the middle child and only son of Kraft, Prince of Hohenlohe-Langenburg (1935–2004) and his first wife, Princess Charlotte of Croÿ (b. 1938).
+Paternally, he is a grandson of Princess Margarita of Greece and Denmark, and a grandnephew of Prince Philip, Duke of Edinburgh, whose funeral he attended.
+Anne, Princess Royal is one of his godmothers.
+Maternally, he is the grandson of Prince Alexander of Croy (1912–2002) and his Scottish wife, Anna Elspeth Campbell (1917–1986), granddaughter of Archibald Campbell, 6th of Glendaruel.
+He sought public support from (then) Charles, Prince of Wales, the current King Charles III, and from former vice chancellor and foreign minister Joschka Fischer of the Green Party, who both attended a conference at Langenburg Castle in 2013.
+Together with Fischer he founded the Langenburg Forum for Sustainability which cooperates with Charles' International Sustainability Unit
 
-Bernhard married Stephanie Anne Kaul (born 27 June 1966), daughter of Christian Kaul and Hannelore Scheel, in a civil ceremony on 22 June 2001 and a religious ceremony the following day at Schloss Salem.
+
+Langenburg castle is partially open to the public, including the state rooms and a museum of classic cars.
+Marriage and issue
+
+He married Saskia Binder (b. 15 January 1973 in Munich), daughter of former Deutsche Bank Munich director Hans Peter Binder, on 6 September 2003 in a civil ceremony at Langenburg.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -125,39 +123,9 @@ Bernhard married Stephanie Anne Kaul (born 27 June 1966), daughter of Christian 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -172,6 +140,23 @@ Bernhard married Stephanie Anne Kaul (born 27 June 1966), daughter of Christian 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -189,6 +174,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -256,29 +256,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -287,6 +279,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -299,6 +299,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -307,17 +309,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -345,6 +349,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -360,195 +448,307 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c878ee3e-1f2e-4e92-bd24-df98a95d8b90)
- Call ID: c878ee3e-1f2e-4e92-bd24-df98a95d8b90
+  AssignClass (686dd8fc-c86b-4912-ae26-4a4ed9c6950f)
+ Call ID: 686dd8fc-c86b-4912-ae26-4a4ed9c6950f
   Args:
-    source: Bernhard_Prinz_und_Markgraf_von_Baden
+    source: :Philipp_Prince_of_Hohenlohe-Langenburg
     type: :Man
-  AssignClass (84d534a8-b139-46c5-a08c-355d2846f11a)
- Call ID: 84d534a8-b139-46c5-a08c-355d2846f11a
+  AssignClass (432e7837-2805-4a22-b270-c3cd4dd28906)
+ Call ID: 432e7837-2805-4a22-b270-c3cd4dd28906
   Args:
+    source: :Philipp_Prince_of_Hohenlohe-Langenburg
     type: :Person
-    source: Bernhard_Prinz_und_Markgraf_von_Baden
-  AddLiteral (3e6e0529-7fb9-48cd-bf49-0447969dba5d)
- Call ID: 3e6e0529-7fb9-48cd-bf49-0447969dba5d
+  AddLiteral (2ebcd371-5e69-4939-8805-11458f0dedbc)
+ Call ID: 2ebcd371-5e69-4939-8805-11458f0dedbc
   Args:
-    relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Bernhard_Prinz_und_Markgraf_von_Baden
+    source: :Philipp_Prince_of_Hohenlohe-Langenburg
+    relation: :hasBirthYear
     literal_value: 1970
-  AssignClass (00c0b153-cfb6-4c4a-8563-133ae3c87eb9)
- Call ID: 00c0b153-cfb6-4c4a-8563-133ae3c87eb9
+  AddTriple (4fefb07f-8225-4beb-98e0-dce15f1a35b8)
+ Call ID: 4fefb07f-8225-4beb-98e0-dce15f1a35b8
   Args:
-    source: Maximilian_Margrave_of_Baden
+    target: :Male
+    relation: :hasSex
+    source: :Philipp_Prince_of_Hohenlohe-Langenburg
+  AssignClass (f0caff2e-a61f-4a03-9d66-9a8a4a041027)
+ Call ID: f0caff2e-a61f-4a03-9d66-9a8a4a041027
+  Args:
+    source: :Male
+    type: :Male
+  AssignClass (238cd6d5-4831-48f1-b4e3-9664a3b5c29b)
+ Call ID: 238cd6d5-4831-48f1-b4e3-9664a3b5c29b
+  Args:
+    source: :Kraft_Prince_of_Hohenlohe-Langenburg
     type: :Man
-  AssignClass (3bc806a3-940a-4aa4-8046-98a931a36a1d)
- Call ID: 3bc806a3-940a-4aa4-8046-98a931a36a1d
+  AssignClass (7ced3456-116b-4d18-ac82-20041c2b4db3)
+ Call ID: 7ced3456-116b-4d18-ac82-20041c2b4db3
   Args:
-    source: Maximilian_Margrave_of_Baden
+    source: :Kraft_Prince_of_Hohenlohe-Langenburg
     type: :Person
-  AssignClass (a578f4ed-691d-446c-b7be-7138117a96fe)
- Call ID: a578f4ed-691d-446c-b7be-7138117a96fe
+  AssignClass (61b7bc9a-d733-4090-8871-92e17b1d86cf)
+ Call ID: 61b7bc9a-d733-4090-8871-92e17b1d86cf
   Args:
-    type: :Woman
-    source: Valerie_of_Austria
-  AssignClass (2e4fda2c-893e-43fd-b5ec-2a3a8f202f4b)
- Call ID: 2e4fda2c-893e-43fd-b5ec-2a3a8f202f4b
+    source: :Kraft_Prince_of_Hohenlohe-Langenburg
+    type: :Ancestor
+  AddLiteral (236f07fd-86db-452c-99b6-e750437ec9d5)
+ Call ID: 236f07fd-86db-452c-99b6-e750437ec9d5
   Args:
-    source: Valerie_of_Austria
-    type: :Person
-  AddLiteral (87cec186-16f5-44ba-a172-05052a398738)
- Call ID: 87cec186-16f5-44ba-a172-05052a398738
-  Args:
-    literal_value: 1941
-    literal_type: xsd:integer
+    literal_value: 1935
     relation: :hasBirthYear
-    source: Valerie_of_Austria
-  AddTriple (d98d4681-ee74-4231-95da-0227e8524cb2)
- Call ID: d98d4681-ee74-4231-95da-0227e8524cb2
+    source: :Kraft_Prince_of_Hohenlohe-Langenburg
+    literal_type: xsd:integer
+  AddLiteral (14d7acd8-d047-4a08-84b5-bad68bc8231f)
+ Call ID: 14d7acd8-d047-4a08-84b5-bad68bc8231f
   Args:
+    literal_value: 2004
+    relation: :hasDeathYear
+    source: :Kraft_Prince_of_Hohenlohe-Langenburg
+    literal_type: xsd:integer
+  AddTriple (779e845b-26c7-49b8-b6ab-ac5368473603)
+ Call ID: 779e845b-26c7-49b8-b6ab-ac5368473603
+  Args:
+    source: :Philipp_Prince_of_Hohenlohe-Langenburg
+    target: :Kraft_Prince_of_Hohenlohe-Langenburg
     relation: :hasFather
-    target: Maximilian_Margrave_of_Baden
-    source: Bernhard_Prinz_und_Markgraf_von_Baden
-  AddTriple (0aefbb2a-6d28-47d4-b09c-ab41807ab493)
- Call ID: 0aefbb2a-6d28-47d4-b09c-ab41807ab493
+  AssignClass (f8d51e2b-e078-46a5-9033-1946f5536e20)
+ Call ID: f8d51e2b-e078-46a5-9033-1946f5536e20
   Args:
-    target: Valerie_of_Austria
-    source: Bernhard_Prinz_und_Markgraf_von_Baden
+    source: :Princess_Charlotte_of_Croy
+    type: :Woman
+  AssignClass (25125c6a-9dbf-487d-8f9c-38c198993415)
+ Call ID: 25125c6a-9dbf-487d-8f9c-38c198993415
+  Args:
+    source: :Princess_Charlotte_of_Croy
+    type: :Person
+  AssignClass (7d52d16d-eff7-4a7f-8577-f80816aecee5)
+ Call ID: 7d52d16d-eff7-4a7f-8577-f80816aecee5
+  Args:
+    source: :Princess_Charlotte_of_Croy
+    type: :Ancestor
+  AddLiteral (205c8282-9e6c-41eb-83ae-485d2e371d72)
+ Call ID: 205c8282-9e6c-41eb-83ae-485d2e371d72
+  Args:
+    relation: :hasBirthYear
+    source: :Princess_Charlotte_of_Croy
+    literal_type: xsd:integer
+    literal_value: 1938
+  AddTriple (7313837c-0470-44d0-89d2-4d90df1b5ec3)
+ Call ID: 7313837c-0470-44d0-89d2-4d90df1b5ec3
+  Args:
     relation: :hasMother
-  AddLiteral (668b6694-f5c2-4eb3-ae64-179d817b273f)
- Call ID: 668b6694-f5c2-4eb3-ae64-179d817b273f
+    target: :Princess_Charlotte_of_Croy
+    source: :Philipp_Prince_of_Hohenlohe-Langenburg
+  AssignClass (5c7deff8-5c66-47c4-8172-31a449e66f92)
+ Call ID: 5c7deff8-5c66-47c4-8172-31a449e66f92
   Args:
+    source: :Saskia_Binder
+    type: :Woman
+  AssignClass (b388efa6-dc8a-4a44-b1bc-fca730a8c6f9)
+ Call ID: b388efa6-dc8a-4a44-b1bc-fca730a8c6f9
+  Args:
+    source: :Saskia_Binder
+    type: :Person
+  AddLiteral (8ff877aa-dbdb-40bc-bb5d-32f97627c35e)
+ Call ID: 8ff877aa-dbdb-40bc-bb5d-32f97627c35e
+  Args:
+    literal_value: 1973
+    relation: :hasBirthYear
+    source: :Saskia_Binder
+    literal_type: xsd:integer
+  AddLiteral (8e09e66a-de13-4f82-b864-44ca58eb15bb)
+ Call ID: 8e09e66a-de13-4f82-b864-44ca58eb15bb
+  Args:
+    literal_value: 2003
+    literal_type: xsd:integer
+    source: :Philipp_Prince_of_Hohenlohe-Langenburg
+    relation: :hasMarriageYear
+  AddTriple (8bc44afe-9af5-425d-99e6-9f74a466e938)
+ Call ID: 8bc44afe-9af5-425d-99e6-9f74a466e938
+  Args:
+    relation: :hasRelation
+    target: :Saskia_Binder
+    source: :Philipp_Prince_of_Hohenlohe-Langenburg
+  AssignClass (d3f0c645-88e0-4928-a063-bc323eed42da)
+ Call ID: d3f0c645-88e0-4928-a063-bc323eed42da
+  Args:
+    source: :Hans_Peter_Binder
+    type: :Man
+  AssignClass (4ded7c78-0207-42a5-81cf-ddd6e1827f10)
+ Call ID: 4ded7c78-0207-42a5-81cf-ddd6e1827f10
+  Args:
+    source: :Hans_Peter_Binder
+    type: :Person
+  AssignClass (d86ad981-72cf-41b8-a901-d35c9007a089)
+ Call ID: d86ad981-72cf-41b8-a901-d35c9007a089
+  Args:
+    source: :Hans_Peter_Binder
+    type: :Ancestor
+  AddTriple (fc27f369-543f-451d-a143-24a4e19736ae)
+ Call ID: fc27f369-543f-451d-a143-24a4e19736ae
+  Args:
+    target: :Hans_Peter_Binder
+    relation: :hasFather
+    source: :Saskia_Binder
+  AssignClass (3b4a4594-9cd2-45c9-a33c-8a14c423e690)
+ Call ID: 3b4a4594-9cd2-45c9-a33c-8a14c423e690
+  Args:
+    source: :Princess_Margarita_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (a399b55f-872d-44a6-9fa7-278e21157c57)
+ Call ID: a399b55f-872d-44a6-9fa7-278e21157c57
+  Args:
+    source: :Princess_Margarita_of_Greece_and_Denmark
+    type: :Person
+  AssignClass (215acd5a-6246-416a-9a0d-b6814c521174)
+ Call ID: 215acd5a-6246-416a-9a0d-b6814c521174
+  Args:
+    source: :Princess_Margarita_of_Greece_and_Denmark
+    type: :Ancestor
+  AddTriple (0e0913b6-17ae-4104-bbcb-ae0acb182b71)
+ Call ID: 0e0913b6-17ae-4104-bbcb-ae0acb182b71
+  Args:
+    relation: :hasAncestor
+    target: :Princess_Margarita_of_Greece_and_Denmark
+    source: :Philipp_Prince_of_Hohenlohe-Langenburg
+  AssignClass (691c8e40-e29d-4e8d-a98c-2e4a9602def7)
+ Call ID: 691c8e40-e29d-4e8d-a98c-2e4a9602def7
+  Args:
+    source: :Prince_Alexander_of_Croy
+    type: :Man
+  AssignClass (3804c025-de08-48a2-abe5-d14de870c21b)
+ Call ID: 3804c025-de08-48a2-abe5-d14de870c21b
+  Args:
+    source: :Prince_Alexander_of_Croy
+    type: :Person
+  AssignClass (fd8a79ac-0e37-42a9-b825-9b6c717b577b)
+ Call ID: fd8a79ac-0e37-42a9-b825-9b6c717b577b
+  Args:
+    source: :Prince_Alexander_of_Croy
+    type: :Ancestor
+  AddLiteral (3dbb6ced-5658-4c6d-9b72-e3f2f84aeb00)
+ Call ID: 3dbb6ced-5658-4c6d-9b72-e3f2f84aeb00
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: :Prince_Alexander_of_Croy
+    literal_value: 1912
+  AddLiteral (7747a493-174d-4471-8e2a-5414858be836)
+ Call ID: 7747a493-174d-4471-8e2a-5414858be836
+  Args:
+    source: :Prince_Alexander_of_Croy
     literal_type: xsd:integer
     relation: :hasDeathYear
-    source: Maximilian_Margrave_of_Baden
-    literal_value: 2022
-  AssignClass (b748c91f-ee76-4a8a-ad7c-b6b7157598b1)
- Call ID: b748c91f-ee76-4a8a-ad7c-b6b7157598b1
+    literal_value: 2002
+  AddTriple (8647b610-24db-4556-be08-f7746c245a7e)
+ Call ID: 8647b610-24db-4556-be08-f7746c245a7e
   Args:
-    source: Berthold_Margrave_of_Baden
-    type: :Man
-  AssignClass (80b69c76-4fae-459f-8cc8-28779aa1517b)
- Call ID: 80b69c76-4fae-459f-8cc8-28779aa1517b
+    source: :Philipp_Prince_of_Hohenlohe-Langenburg
+    relation: :hasAncestor
+    target: :Prince_Alexander_of_Croy
+  AssignClass (a30f2daa-860e-4601-89a7-ba8e656e1436)
+ Call ID: a30f2daa-860e-4601-89a7-ba8e656e1436
   Args:
-    type: :Person
-    source: Berthold_Margrave_of_Baden
-  AssignClass (7bcb55d6-6870-4756-b7b3-c0eef39acd7a)
- Call ID: 7bcb55d6-6870-4756-b7b3-c0eef39acd7a
-  Args:
-    source: Princess_Theodora_of_Greece_and_Denmark
+    source: :Anna_Elspeth_Campbell
     type: :Woman
-  AssignClass (260774f4-1829-466c-a3eb-56c47cf5b9d3)
- Call ID: 260774f4-1829-466c-a3eb-56c47cf5b9d3
+  AssignClass (84b56cdd-62a1-40df-be74-ab288f890e20)
+ Call ID: 84b56cdd-62a1-40df-be74-ab288f890e20
   Args:
+    source: :Anna_Elspeth_Campbell
     type: :Person
-    source: Princess_Theodora_of_Greece_and_Denmark
-  AddTriple (d498dbc3-2220-4719-8f75-fb974b12e5a9)
- Call ID: d498dbc3-2220-4719-8f75-fb974b12e5a9
+  AssignClass (6ed3e712-fc3f-4847-a27a-231e00e83201)
+ Call ID: 6ed3e712-fc3f-4847-a27a-231e00e83201
   Args:
-    source: Maximilian_Margrave_of_Baden
-    target: Berthold_Margrave_of_Baden
-    relation: :hasFather
-  AddTriple (eaa21426-011e-422e-9b04-906452c4f2e5)
- Call ID: eaa21426-011e-422e-9b04-906452c4f2e5
+    source: :Anna_Elspeth_Campbell
+    type: :Ancestor
+  AddLiteral (87d6d9a2-b32c-4348-b38b-db1220190c5f)
+ Call ID: 87d6d9a2-b32c-4348-b38b-db1220190c5f
   Args:
-    source: Maximilian_Margrave_of_Baden
-    target: Princess_Theodora_of_Greece_and_Denmark
-    relation: :hasMother
-  AssignClass (ceffad1e-f06b-44c6-9b29-f7ff149f97c4)
- Call ID: ceffad1e-f06b-44c6-9b29-f7ff149f97c4
-  Args:
-    source: Archduke_Hubert_Salvator_of_Austria
-    type: :Man
-  AssignClass (90d61b66-bc60-4a01-bf8d-47c1a02d05c9)
- Call ID: 90d61b66-bc60-4a01-bf8d-47c1a02d05c9
-  Args:
-    type: :Person
-    source: Archduke_Hubert_Salvator_of_Austria
-  AssignClass (51e7172e-3219-4c0c-909e-62efa0e1520b)
- Call ID: 51e7172e-3219-4c0c-909e-62efa0e1520b
-  Args:
-    source: Princess_Rosemary_of_Salm-Salm
-    type: :Woman
-  AssignClass (ba316066-a67c-4257-be20-95da47494d0f)
- Call ID: ba316066-a67c-4257-be20-95da47494d0f
-  Args:
-    type: :Person
-    source: Princess_Rosemary_of_Salm-Salm
-  AddTriple (5c69c73e-7cc2-456c-8176-944cd4d40dbb)
- Call ID: 5c69c73e-7cc2-456c-8176-944cd4d40dbb
-  Args:
-    target: Archduke_Hubert_Salvator_of_Austria
-    source: Valerie_of_Austria
-    relation: :hasFather
-  AddTriple (7d1fb3dd-85e0-403c-9ce3-9cc602723d48)
- Call ID: 7d1fb3dd-85e0-403c-9ce3-9cc602723d48
-  Args:
-    relation: :hasMother
-    target: Princess_Rosemary_of_Salm-Salm
-    source: Valerie_of_Austria
-  AssignClass (3e2fcd31-2672-4d4b-874e-ebca8b88c5f8)
- Call ID: 3e2fcd31-2672-4d4b-874e-ebca8b88c5f8
-  Args:
-    source: Stephanie_Anne_Kaul
-    type: :Woman
-  AssignClass (027367e1-81f6-498f-8a81-45e6ee06b121)
- Call ID: 027367e1-81f6-498f-8a81-45e6ee06b121
-  Args:
-    type: :Person
-    source: Stephanie_Anne_Kaul
-  AddLiteral (7e203001-18f6-4a3e-86a3-b0c7eb6da7fb)
- Call ID: 7e203001-18f6-4a3e-86a3-b0c7eb6da7fb
-  Args:
-    literal_value: 1966
-    literal_type: xsd:integer
+    literal_value: 1917
     relation: :hasBirthYear
-    source: Stephanie_Anne_Kaul
-  AddTriple (c246f09a-9a58-4b8f-8391-a8273780f439)
- Call ID: c246f09a-9a58-4b8f-8391-a8273780f439
-  Args:
-    target: Stephanie_Anne_Kaul
-    source: Bernhard_Prinz_und_Markgraf_von_Baden
-    relation: :hasRelation
-  AddLiteral (0252a936-f4b6-4225-9108-8d5962bd5157)
- Call ID: 0252a936-f4b6-4225-9108-8d5962bd5157
-  Args:
-    source: Bernhard_Prinz_und_Markgraf_von_Baden
-    relation: :hasMarriageYear
     literal_type: xsd:integer
-    literal_value: 2001
-  AssignClass (a976ff47-de60-4ddb-8024-b06d242d3356)
- Call ID: a976ff47-de60-4ddb-8024-b06d242d3356
+    source: :Anna_Elspeth_Campbell
+  AddLiteral (9ef5c9a5-ff76-463f-832b-9a4ff813f22f)
+ Call ID: 9ef5c9a5-ff76-463f-832b-9a4ff813f22f
   Args:
+    literal_value: 1986
+    relation: :hasDeathYear
+    source: :Anna_Elspeth_Campbell
+    literal_type: xsd:integer
+  AddTriple (45e1e2d9-6e89-4a03-9444-7d950c6e694d)
+ Call ID: 45e1e2d9-6e89-4a03-9444-7d950c6e694d
+  Args:
+    relation: :hasAncestor
+    target: :Anna_Elspeth_Campbell
+    source: :Philipp_Prince_of_Hohenlohe-Langenburg
+  AssignClass (ab7eb38a-9046-4ec8-9efa-1d7668128dcc)
+ Call ID: ab7eb38a-9046-4ec8-9efa-1d7668128dcc
+  Args:
+    source: :Archibald_Campbell_6th_of_Glendaruel
     type: :Man
-    source: Christian_Kaul
-  AssignClass (07f67a84-e821-4152-b46b-e809c212067c)
- Call ID: 07f67a84-e821-4152-b46b-e809c212067c
+  AssignClass (2761e0be-33f7-44dd-b467-a103e1761b18)
+ Call ID: 2761e0be-33f7-44dd-b467-a103e1761b18
   Args:
-    source: Christian_Kaul
+    source: :Archibald_Campbell_6th_of_Glendaruel
     type: :Person
-  AssignClass (b486fe97-6c18-409d-8947-21b3bdf93248)
- Call ID: b486fe97-6c18-409d-8947-21b3bdf93248
+  AssignClass (b3f1749b-1f87-4ede-824b-1ab1bf590680)
+ Call ID: b3f1749b-1f87-4ede-824b-1ab1bf590680
   Args:
-    type: :Woman
-    source: Hannelore_Scheel
-  AssignClass (c83f88e5-c0a7-4084-8430-b467f6758f09)
- Call ID: c83f88e5-c0a7-4084-8430-b467f6758f09
+    source: :Archibald_Campbell_6th_of_Glendaruel
+    type: :Ancestor
+  AddTriple (a84434c5-bc6e-42da-a6d8-84a3bda7d59b)
+ Call ID: a84434c5-bc6e-42da-a6d8-84a3bda7d59b
   Args:
-    type: :Person
-    source: Hannelore_Scheel
-  AddTriple (95b19131-67d3-43ec-ac95-5fc6265d5437)
- Call ID: 95b19131-67d3-43ec-ac95-5fc6265d5437
+    source: :Anna_Elspeth_Campbell
+    target: :Archibald_Campbell_6th_of_Glendaruel
+    relation: :hasAncestor
+  ValidateShacl (e54d7e05-983e-459d-b7c7-b9fa4619bbc3)
+ Call ID: e54d7e05-983e-459d-b7c7-b9fa4619bbc3
   Args:
-    target: Christian_Kaul
-    source: Stephanie_Anne_Kaul
-    relation: :hasFather
-  AddTriple (56000bb2-c1a1-4804-a99e-2f3a6ef2e5e1)
- Call ID: 56000bb2-c1a1-4804-a99e-2f3a6ef2e5e1
-  Args:
-    relation: :hasMother
-    source: Stephanie_Anne_Kaul
-    target: Hannelore_Scheel
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -689,394 +889,60 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Bernhard_Prinz_und_Markgraf_von_Baden a :Man,
+  data:Philipp_Prince_of_Hohenlohe-Langenburg a :Man,
           :Person ;
+      :hasAncestor data:Anna_Elspeth_Campbell,
+          data:Prince_Alexander_of_Croy,
+          data:Princess_Margarita_of_Greece_and_Denmark ;
       :hasBirthYear 1970 ;
-      :hasFather data:Maximilian_Margrave_of_Baden ;
-      :hasMarriageYear 2001 ;
-      :hasMother data:Valerie_of_Austria ;
-      :hasRelation data:Stephanie_Anne_Kaul .
-
-  data:Archduke_Hubert_Salvator_of_Austria a :Man,
-          :Person .
-
-  data:Berthold_Margrave_of_Baden a :Man,
-          :Person .
-
-  data:Christian_Kaul a :Man,
-          :Person .
-
-  data:Hannelore_Scheel a :Person,
-          :Woman .
-
-  data:Maximilian_Margrave_of_Baden a :Man,
-          :Person ;
-      :hasDeathYear 2022 ;
-      :hasFather data:Berthold_Margrave_of_Baden ;
-      :hasMother data:Princess_Theodora_of_Greece_and_Denmark .
-
-  data:Princess_Rosemary_of_Salm-Salm a :Person,
-          :Woman .
-
-  data:Princess_Theodora_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Stephanie_Anne_Kaul a :Person,
-          :Woman ;
-      :hasBirthYear 1966 ;
-      :hasFather data:Christian_Kaul ;
-      :hasMother data:Hannelore_Scheel .
-
-  data:Valerie_of_Austria a :Person,
-          :Woman ;
-      :hasBirthYear 1941 ;
-      :hasFather data:Archduke_Hubert_Salvator_of_Austria ;
-      :hasMother data:Princess_Rosemary_of_Salm-Salm .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (3a218081-93b6-460f-b2f0-a24e48656c66)
- Call ID: 3a218081-93b6-460f-b2f0-a24e48656c66
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:24
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Archduke_Hubert_Salvator_of_Austria linked to Valerie_of_Austria via hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Archduke_Hubert_Salvator_of_Austria, :Man)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Berthold_Margrave_of_Baden linked to Maximilian_Margrave_of_Baden via hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Berthold_Margrave_of_Baden, :Man)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Christian_Kaul linked to Stephanie_Anne_Kaul via hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_Kaul, :Man)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Maximilian_Margrave_of_Baden linked to Bernhard_Prinz_und_Markgraf_von_Baden via hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maximilian_Margrave_of_Baden, :Man)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Princess_Rosemary_of_Salm-Salm linked to Valerie_of_Austria via hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Rosemary_of_Salm-Salm, :Woman)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Princess_Theodora_of_Greece_and_Denmark linked to Maximilian_Margrave_of_Baden via hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Theodora_of_Greece_and_Denmark, :Woman)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Hannelore_Scheel linked to Stephanie_Anne_Kaul via hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Hannelore_Scheel, :Woman)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Valerie_of_Austria linked to Bernhard_Prinz_und_Markgraf_von_Baden via hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Valerie_of_Austria, :Woman)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Berthold_Margrave_of_Baden linked to Maximilian_Margrave_of_Baden via hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Berthold_Margrave_of_Baden, :Man)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Maximilian_Margrave_of_Baden linked to Bernhard_Prinz_und_Markgraf_von_Baden via hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maximilian_Margrave_of_Baden, :Man)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Princess_Theodora_of_Greece_and_Denmark linked to Maximilian_Margrave_of_Baden via hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Theodora_of_Greece_and_Denmark, :Woman)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Valerie_of_Austria linked to Bernhard_Prinz_und_Markgraf_von_Baden via hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Valerie_of_Austria, :Woman)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Archduke_Hubert_Salvator_of_Austria linked to Valerie_of_Austria via hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Archduke_Hubert_Salvator_of_Austria, :Man)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Berthold_Margrave_of_Baden linked to Maximilian_Margrave_of_Baden via hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Berthold_Margrave_of_Baden, :Man)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Christian_Kaul linked to Stephanie_Anne_Kaul via hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_Kaul, :Man)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Maximilian_Margrave_of_Baden linked to Bernhard_Prinz_und_Markgraf_von_Baden via hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maximilian_Margrave_of_Baden, :Man)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Princess_Rosemary_of_Salm-Salm linked to Valerie_of_Austria via hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Rosemary_of_Salm-Salm, :Woman)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Princess_Theodora_of_Greece_and_Denmark linked to Maximilian_Margrave_of_Baden via hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Theodora_of_Greece_and_Denmark, :Woman)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Hannelore_Scheel linked to Stephanie_Anne_Kaul via hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Hannelore_Scheel, :Woman)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Valerie_of_Austria linked to Bernhard_Prinz_und_Markgraf_von_Baden via hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Valerie_of_Austria, :Woman)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Archduke_Hubert_Salvator_of_Austria linked to Valerie_of_Austria via hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Archduke_Hubert_Salvator_of_Austria, :Man)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Christian_Kaul linked to Stephanie_Anne_Kaul via hasFather is not categorized as an :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_Kaul, :Man)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Princess_Rosemary_of_Salm-Salm linked to Valerie_of_Austria via hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Rosemary_of_Salm-Salm, :Woman)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Hannelore_Scheel linked to Stephanie_Anne_Kaul via hasMother is not categorized as an :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Hannelore_Scheel, :Woman)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (808dd7cd-b272-4fb9-82a2-660799df6a1e)
- Call ID: 808dd7cd-b272-4fb9-82a2-660799df6a1e
-  Args:
-    type: :Ancestor
-    source: Archduke_Hubert_Salvator_of_Austria
-  AssignClass (1b8cd207-382b-443e-bd91-f17fc1790d2c)
- Call ID: 1b8cd207-382b-443e-bd91-f17fc1790d2c
-  Args:
-    type: :Ancestor
-    source: Berthold_Margrave_of_Baden
-  AssignClass (a74b3f30-f444-4f83-abe1-8c086bbc7aaa)
- Call ID: a74b3f30-f444-4f83-abe1-8c086bbc7aaa
-  Args:
-    type: :Ancestor
-    source: Christian_Kaul
-  AssignClass (1effd6c1-7e0b-4c85-bdc3-4800cd1592eb)
- Call ID: 1effd6c1-7e0b-4c85-bdc3-4800cd1592eb
-  Args:
-    type: :Ancestor
-    source: Maximilian_Margrave_of_Baden
-  AssignClass (8be37cf9-ab95-4980-932f-72b95aabc1e3)
- Call ID: 8be37cf9-ab95-4980-932f-72b95aabc1e3
-  Args:
-    type: :Ancestor
-    source: Princess_Rosemary_of_Salm-Salm
-  AssignClass (66fbdf25-3d57-4a74-a739-0db647609708)
- Call ID: 66fbdf25-3d57-4a74-a739-0db647609708
-  Args:
-    type: :Ancestor
-    source: Princess_Theodora_of_Greece_and_Denmark
-  AssignClass (0ed5676e-09fb-482c-99d6-ad2ea2bc38d8)
- Call ID: 0ed5676e-09fb-482c-99d6-ad2ea2bc38d8
-  Args:
-    type: :Ancestor
-    source: Hannelore_Scheel
-  AssignClass (1647a333-5e70-4334-ac36-a13a936179ff)
- Call ID: 1647a333-5e70-4334-ac36-a13a936179ff
-  Args:
-    type: :Ancestor
-    source: Valerie_of_Austria
-  ValidateShacl (d88dbdb1-be19-460c-8655-c9976ff67663)
- Call ID: d88dbdb1-be19-460c-8655-c9976ff67663
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Bernhard_Prinz_und_Markgraf_von_Baden a :Man,
-          :Person ;
-      :hasBirthYear 1970 ;
-      :hasFather data:Maximilian_Margrave_of_Baden ;
-      :hasMarriageYear 2001 ;
-      :hasMother data:Valerie_of_Austria ;
-      :hasRelation data:Stephanie_Anne_Kaul .
-
-  data:Archduke_Hubert_Salvator_of_Austria a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Berthold_Margrave_of_Baden a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Christian_Kaul a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Hannelore_Scheel a :Ancestor,
+      :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;
+      :hasMarriageYear 2003 ;
+      :hasMother data:Princess_Charlotte_of_Croy ;
+      :hasRelation data:Saskia_Binder ;
+      :hasSex data:Male .
+
+  data:Anna_Elspeth_Campbell a :Ancestor,
           :Person,
-          :Woman .
+          :Woman ;
+      :hasAncestor data:Archibald_Campbell_6th_of_Glendaruel ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1986 .
 
-  data:Maximilian_Margrave_of_Baden a :Ancestor,
+  data:Archibald_Campbell_6th_of_Glendaruel a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Hans_Peter_Binder a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Kraft_Prince_of_Hohenlohe-Langenburg a :Ancestor,
           :Man,
           :Person ;
-      :hasDeathYear 2022 ;
-      :hasFather data:Berthold_Margrave_of_Baden ;
-      :hasMother data:Princess_Theodora_of_Greece_and_Denmark .
+      :hasBirthYear 1935 ;
+      :hasDeathYear 2004 .
 
-  data:Princess_Rosemary_of_Salm-Salm a :Ancestor,
+  data:Male a :Male .
+
+  data:Prince_Alexander_of_Croy a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 2002 .
+
+  data:Princess_Charlotte_of_Croy a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1938 .
+
+  data:Princess_Margarita_of_Greece_and_Denmark a :Ancestor,
           :Person,
           :Woman .
 
-  data:Princess_Theodora_of_Greece_and_Denmark a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Stephanie_Anne_Kaul a :Person,
+  data:Saskia_Binder a :Person,
           :Woman ;
-      :hasBirthYear 1966 ;
-      :hasFather data:Christian_Kaul ;
-      :hasMother data:Hannelore_Scheel .
-
-  data:Valerie_of_Austria a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1941 ;
-      :hasFather data:Archduke_Hubert_Salvator_of_Austria ;
-      :hasMother data:Princess_Rosemary_of_Salm-Salm .
+      :hasBirthYear 1973 ;
+      :hasFather data:Hans_Peter_Binder .
 
 
 
@@ -1088,6 +954,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (096ab7e4-d6aa-45fa-9e81-82f962ae62b0)
- Call ID: 096ab7e4-d6aa-45fa-9e81-82f962ae62b0
+  Finish (b9640a2f-ba98-4ca2-b88a-8e185380251b)
+ Call ID: b9640a2f-ba98-4ca2-b88a-8e185380251b
   Args:

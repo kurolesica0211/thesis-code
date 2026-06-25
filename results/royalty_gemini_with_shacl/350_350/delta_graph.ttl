@@ -2,41 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Bernhard_III_of_Saxe-Meiningen a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Alfonso_XIII_of_Spain a :Man .
 
-data:Prince_Frederick_of_Prussia a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Francoise_Cazaudehore a :Woman .
 
-data:Princess_Charlotte_of_Prussia a :Ancestor,
-        :Person,
+data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro a :Man .
+
+data:Prince_Juan_Jorge_de_Bagration-Mukhrani a :Man ;
+    :hasBirthYear 1977 ;
+    :hasFather data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :hasMarriageYear 2009,
+        2014 ;
+    :hasMother data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves ;
+    :hasRelation data:Kristine_Dzidziguri .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man .
+
+data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves a :Ancestor,
+        :Woman .
+
+data:Infanta_Maria_de_las_Mercedes_of_Spain a :Ancestor,
         :Woman ;
-    :hasBirthYear 1860 ;
-    :hasChild data:Princess_Feodora_of_Saxe-Meiningen ;
-    :hasDeathYear 1919 ;
-    :hasFather data:Prince_Frederick_of_Prussia ;
-    :hasMarriageYear 1878 ;
-    :hasMother data:Victoria_Princess_Royal ;
-    :hasSex data:Female ;
-    :knownAs "Victoria Elisabeth Augusta Charlotte"^^xsd:string .
+    :hasFather data:Prince_Ferdinand_of_Bavaria .
 
-data:Princess_Feodora_of_Saxe-Meiningen a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Prince_Bernhard_III_of_Saxe-Meiningen ;
-    :hasMother data:Princess_Charlotte_of_Prussia ;
-    :hasSex data:Female .
+data:Kristine_Dzidziguri a :Woman .
 
-data:Victoria_Princess_Royal a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSex data:Female .
+data:Prince_Bagrat_de_Bagration_y_de_Baviera a :Ancestor,
+        :Man ;
+    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasMother data:Infanta_Maria_de_las_Mercedes_of_Spain .
 
-data:Male a :Sex .
+data:Prince_Ferdinand_of_Bavaria a :Ancestor,
+        :Man ;
+    :hasFather data:Alfonso_XII_of_Spain .
 
-data:Female a :Sex .
+data:Prince_Irakli_Bagration_of_Mukhrani a :Ancestor,
+        :Man .
 

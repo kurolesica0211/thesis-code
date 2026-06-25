@@ -1,0 +1,205 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:David_Nightingale_Hicks a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "David Nightingale Hicks"^^xsd:string ;
+    data:posIndicesFull "657:680"^^xsd:string ;
+    data:posIndicesPart "1070:1075"^^xsd:string,
+        "1263:1268"^^xsd:string,
+        "1412:1417"^^xsd:string,
+        "1585:1590"^^xsd:string,
+        "1680:1685"^^xsd:string,
+        "1732:1737"^^xsd:string,
+        "1840:1845"^^xsd:string,
+        "1984:1989"^^xsd:string,
+        "2220:2225"^^xsd:string,
+        "2327:2332"^^xsd:string,
+        "2478:2483"^^xsd:string,
+        "2583:2588"^^xsd:string,
+        "2711:2716"^^xsd:string,
+        "2733:2738"^^xsd:string,
+        "2933:2938"^^xsd:string,
+        "2987:2992"^^xsd:string,
+        "3132:3137"^^xsd:string,
+        "3204:3209"^^xsd:string,
+        "3248:3253"^^xsd:string,
+        "3298:3303"^^xsd:string,
+        "913:918"^^xsd:string,
+        "952:957"^^xsd:string ;
+    data:wdtLink wdt:Q5238032 ;
+    :alsoKnownAs "David Hicks"^^xsd:string ;
+    :hasBrother data:David_Nightingale_Hicks ;
+    :hasChild data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:India_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:male ;
+    :isAncestorOf data:India_Hicks ;
+    :isBloodrelationOf data:David_Nightingale_Hicks ;
+    :isBrotherOf data:David_Nightingale_Hicks ;
+    :isFatherOf data:India_Hicks ;
+    :isParentOf data:India_Hicks ;
+    :isSiblingOf data:David_Nightingale_Hicks ;
+    :isUncleOf data:India_Hicks .
+
+data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Edwina Mountbatten, Countess Mountbatten of Burma"^^xsd:string ;
+    data:posIndicesFull "829:849"^^xsd:string ;
+    data:wdtLink wdt:Q271995 ;
+    :alsoKnownAs "Countess Mountbatten"^^xsd:string,
+        "Dame Edwina Cynthia Annette Mountbatten"^^xsd:string,
+        "Edwina Cynthia Annette Ashley"^^xsd:string,
+        "Edwina Cynthia Annette Mountbatten"^^xsd:string,
+        "Lady Edwina (Cynthia Annette) Mountbatten Countess Mountbatten of Burma"^^xsd:string,
+        "Lady Mountbatten of Burma"^^xsd:string ;
+    :hasChild data:Lady_Pamela_Hicks ;
+    :hasDaughter data:Lady_Pamela_Hicks ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:India_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:female ;
+    :hasSister data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :isAncestorOf data:India_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isAuntOf data:Lady_Pamela_Hicks ;
+    :isBloodrelationOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :isMotherOf data:Lady_Pamela_Hicks ;
+    :isParentOf data:Lady_Pamela_Hicks ;
+    :isSiblingOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :isSisterOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma .
+
+data:Lady_Pamela_Hicks a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Lady Pamela Hicks"^^xsd:string ;
+    data:posIndicesFull "392:409"^^xsd:string,
+        "629:652"^^xsd:string,
+        "634:652"^^xsd:string ;
+    data:posIndicesPart "1070:1075"^^xsd:string,
+        "1210:1214"^^xsd:string,
+        "1263:1268"^^xsd:string,
+        "1412:1417"^^xsd:string,
+        "1585:1590"^^xsd:string,
+        "1680:1685"^^xsd:string,
+        "1732:1737"^^xsd:string,
+        "1840:1845"^^xsd:string,
+        "1984:1989"^^xsd:string,
+        "2220:2225"^^xsd:string,
+        "2327:2332"^^xsd:string,
+        "2478:2483"^^xsd:string,
+        "2583:2588"^^xsd:string,
+        "2711:2716"^^xsd:string,
+        "2815:2819"^^xsd:string,
+        "3132:3137"^^xsd:string,
+        "3204:3209"^^xsd:string,
+        "3248:3253"^^xsd:string,
+        "3298:3303"^^xsd:string,
+        "699:703"^^xsd:string,
+        "913:918"^^xsd:string,
+        "952:957"^^xsd:string ;
+    data:wdtLink wdt:Q3268202 ;
+    :alsoKnownAs "Lady Pamela Carmen Louise Hicks"^^xsd:string,
+        "Lady Pamela Carmen Louise Mountbatten"^^xsd:string,
+        "Lady Pamela Mountbatten"^^xsd:string,
+        "Pamela Carmen Louise Hicks"^^xsd:string,
+        "Pamela Carmen Louise Mountbatten"^^xsd:string,
+        "Pamela Mountbatten"^^xsd:string ;
+    :hasAncestor data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :hasChild data:India_Hicks ;
+    :hasDaughter data:India_Hicks ;
+    :hasMother data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :hasParent data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:India_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Pamela_Hicks ;
+    :isAncestorOf data:India_Hicks ;
+    :isAuntOf data:India_Hicks ;
+    :isBloodrelationOf data:Lady_Pamela_Hicks ;
+    :isChildOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :isDaughterOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
+    :isMotherOf data:India_Hicks ;
+    :isParentOf data:India_Hicks ;
+    :isSiblingOf data:Lady_Pamela_Hicks ;
+    :isSisterOf data:Lady_Pamela_Hicks .
+
+data:India_Hicks a :Person,
+        :Woman ;
+    rdfs:label "India Hicks"^^xsd:string ;
+    data:posIndicesFull "0:27"^^xsd:string,
+        "2117:2128"^^xsd:string,
+        "2147:2158"^^xsd:string,
+        "2521:2532"^^xsd:string,
+        "2669:2680"^^xsd:string,
+        "3235:3246"^^xsd:string,
+        "524:551"^^xsd:string ;
+    data:posIndicesPart "1070:1075"^^xsd:string,
+        "1263:1268"^^xsd:string,
+        "1405:1410"^^xsd:string,
+        "1412:1417"^^xsd:string,
+        "1585:1590"^^xsd:string,
+        "1680:1685"^^xsd:string,
+        "1732:1737"^^xsd:string,
+        "1840:1845"^^xsd:string,
+        "184:189"^^xsd:string,
+        "1984:1989"^^xsd:string,
+        "2220:2225"^^xsd:string,
+        "2327:2332"^^xsd:string,
+        "262:267"^^xsd:string,
+        "2711:2716"^^xsd:string,
+        "2977:2982"^^xsd:string,
+        "3132:3137"^^xsd:string,
+        "3248:3253"^^xsd:string,
+        "3298:3303"^^xsd:string,
+        "3507:3512"^^xsd:string,
+        "601:606"^^xsd:string,
+        "913:918"^^xsd:string,
+        "952:957"^^xsd:string ;
+    data:wdtLink wdt:Q1936171 ;
+    :alsoKnownAs "India Amanda Caroline Hicks"^^xsd:string ;
+    :hasAncestor data:David_Nightingale_Hicks,
+        data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:Lady_Pamela_Hicks ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMother data:Lady_Pamela_Hicks ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasRelation data:David_Nightingale_Hicks,
+        data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
+        data:India_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:female ;
+    :hasSister data:India_Hicks ;
+    :isBloodrelationOf data:India_Hicks ;
+    :isChildOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isDaughterOf data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :isSiblingOf data:India_Hicks ;
+    :isSisterOf data:India_Hicks .
+

@@ -7,15 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Pedro_Luiz_de_Orleans_e_Bragança a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Pedro_Luiz_de_Orleans_e_Bragança a :Person ;
     rdfs:label "Pedro Luiz de Orleans e Bragança" ;
     data:posIndicesFull "0:30" ;
     data:posIndicesPart "1062:1067",
@@ -66,16 +58,16 @@ data:Pedro_Luiz_de_Orleans_e_Bragança a :Man,
     :alsoKnownAs "Pedro Luis of Orleans-Braganza",
         "Pedro Luiz of Orléans-Braganza",
         "Pedro Luís van Orléans-Braganza" ;
-    :hasMother data:Princess_Christine_of_Ligne ;
     :hasParent data:Princess_Christine_of_Ligne ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Christine_of_Ligne ;
-    :isSonOf data:Princess_Christine_of_Ligne .
+    :hasSex data:male .
 
-data:Princess_Christine_of_Ligne a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Christine_of_Ligne a :Person ;
     rdfs:label "Princess Christine of Ligne" ;
     data:posIndicesFull "1012:1039" ;
     data:posIndicesPart "1280:1288",
@@ -88,9 +80,9 @@ data:Princess_Christine_of_Ligne a :Ancestor,
     data:wdtLink wdt:Q7244586 ;
     :alsoKnownAs "Christine, Princess Imperial of Brazil",
         "Princess Christine of Orleans-Braganza" ;
-    :hasChild data:Pedro_Luiz_de_Orleans_e_Bragança ;
-    :hasSex data:female ;
-    :hasSon data:Pedro_Luiz_de_Orleans_e_Bragança ;
-    :isMotherOf data:Pedro_Luiz_de_Orleans_e_Bragança ;
-    :isParentOf data:Pedro_Luiz_de_Orleans_e_Bragança .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

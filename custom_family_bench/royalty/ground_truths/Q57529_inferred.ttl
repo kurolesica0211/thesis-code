@@ -1,0 +1,984 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Felipe_VI_of_Spain a :Man,
+        :Person ;
+    rdfs:label "Felipe VI of Spain"^^xsd:string ;
+    data:posIndicesFull "5323:5332"^^xsd:string,
+        "5323:5341"^^xsd:string ;
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia"^^xsd:string,
+        "Felipe VI"^^xsd:string,
+        "Philip John Paul Alphonse of All Saints of Bourbon"^^xsd:string,
+        "Philip VI of Spain"^^xsd:string ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasRelation data:Felipe_VI_of_Spain ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain ;
+    :isBrotherOf data:Felipe_VI_of_Spain ;
+    :isSiblingOf data:Felipe_VI_of_Spain .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Paul of Greece"^^xsd:string ;
+    data:posIndicesFull "7192:7211"^^xsd:string,
+        "7197:7211"^^xsd:string ;
+    data:wdtLink wdt:Q155394 ;
+    :alsoKnownAs "King Paul I of Greece"^^xsd:string,
+        "King Paul of Greece"^^xsd:string,
+        "King Pavlos I of Greece"^^xsd:string,
+        "Paul I of Greece"^^xsd:string,
+        "Pavlos I of Greece"^^xsd:string ;
+    :hasBrother data:Paul_of_Greece ;
+    :hasChild data:Constantine_II_of_Greece ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece ;
+    :isBloodrelationOf data:Paul_of_Greece ;
+    :isBrotherOf data:Paul_of_Greece ;
+    :isFatherOf data:Constantine_II_of_Greece ;
+    :isParentOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Paul_of_Greece ;
+    :isUncleOf data:Constantine_II_of_Greece .
+
+data:Princess_Margaret_of_Prussia a :Person,
+        :Woman ;
+    rdfs:label "Princess Margaret of Prussia"^^xsd:string ;
+    data:posIndicesFull "1198:1203"^^xsd:string ;
+    data:posIndicesPart "1695:1703"^^xsd:string,
+        "1945:1953"^^xsd:string,
+        "2007:2015"^^xsd:string,
+        "2309:2317"^^xsd:string,
+        "3012:3019"^^xsd:string,
+        "3861:3868"^^xsd:string,
+        "8351:8359"^^xsd:string,
+        "8689:8697"^^xsd:string ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Margaret of Prussia"^^xsd:string,
+        "Margaret of Prussia, Queen consort-elect of Finland"^^xsd:string,
+        "Margaret of Prussia, Queen-elect of Finland"^^xsd:string,
+        "Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Margarethe of Prussia"^^xsd:string,
+        "Mossy"^^xsd:string,
+        "Princess Frederick Charles of Hesse"^^xsd:string,
+        "Princess Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe of Prussia"^^xsd:string ;
+    :hasAncestor data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasRelation data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :isAuntOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II .
+
+data:Ernst_August-_Duke_of_Brunswick a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Ernst August, Duke of Brunswick"^^xsd:string ;
+    data:posIndicesFull "2412:2427"^^xsd:string,
+        "2760:2775"^^xsd:string,
+        "2930:2945"^^xsd:string,
+        "3140:3155"^^xsd:string,
+        "371:386"^^xsd:string,
+        "4523:4538"^^xsd:string,
+        "5024:5039"^^xsd:string,
+        "5723:5738"^^xsd:string,
+        "5851:5866"^^xsd:string,
+        "6295:6310"^^xsd:string,
+        "6425:6440"^^xsd:string,
+        "8522:8537"^^xsd:string ;
+    data:posIndicesPart "3388:3397"^^xsd:string,
+        "5494:5503"^^xsd:string,
+        "6273:6279"^^xsd:string,
+        "647:656"^^xsd:string,
+        "6763:6767"^^xsd:string,
+        "6783:6792"^^xsd:string,
+        "7013:7017"^^xsd:string,
+        "7981:7990"^^xsd:string,
+        "8137:8146"^^xsd:string ;
+    data:wdtLink wdt:Q57672 ;
+    :alsoKnownAs "Ernest August I, Duke of Brunswick"^^xsd:string,
+        "Ernest Augustus"^^xsd:string,
+        "Ernst August I of Brunswick"^^xsd:string ;
+    :hasBrother data:Ernst_August-_Duke_of_Brunswick ;
+    :hasChild data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover ;
+    :hasDaughter data:Frederica_of_Hanover ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Frederica_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :hasSex data:male ;
+    :hasSon data:Ernst_August-_Prince_of_Hanover ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Frederica_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August-_Duke_of_Brunswick ;
+    :isBrotherOf data:Ernst_August-_Duke_of_Brunswick ;
+    :isFatherOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover ;
+    :isParentOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover ;
+    :isSiblingOf data:Ernst_August-_Duke_of_Brunswick ;
+    :isUncleOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover .
+
+data:Prince_Ernst_August_of_Hanover a :Man,
+        :Person ;
+    rdfs:label "Prince Ernst August of Hanover"^^xsd:string ;
+    data:posIndicesFull "364:397"^^xsd:string ;
+    data:posIndicesPart "1781:1787"^^xsd:string,
+        "2592:2598"^^xsd:string,
+        "2650:2656"^^xsd:string,
+        "2699:2706"^^xsd:string,
+        "2982:2989"^^xsd:string,
+        "3087:3093"^^xsd:string,
+        "3185:3192"^^xsd:string,
+        "3590:3597"^^xsd:string,
+        "5017:5023"^^xsd:string,
+        "5123:5129"^^xsd:string,
+        "5190:5196"^^xsd:string,
+        "5230:5236"^^xsd:string,
+        "5901:5908"^^xsd:string,
+        "6088:6095"^^xsd:string,
+        "6266:6272"^^xsd:string,
+        "6273:6279"^^xsd:string,
+        "6417:6423"^^xsd:string,
+        "6742:6748"^^xsd:string,
+        "8483:8490"^^xsd:string,
+        "8547:8554"^^xsd:string ;
+    data:wdtLink wdt:Q4383225 ;
+    :alsoKnownAs "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph Prince of Hanover"^^xsd:string,
+        "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph of Hanover"^^xsd:string,
+        "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph, Hereditary Prince of Hanover"^^xsd:string,
+        "Ernst August Prince of Hanover"^^xsd:string,
+        "Ernst August Prinz von Hannover"^^xsd:string,
+        "Ernst August von Hannover"^^xsd:string,
+        "Ernst August, Hereditary Prince of Hanover"^^xsd:string,
+        "Prince Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph of Hanover"^^xsd:string,
+        "Prince Ernst August Jr."^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Ernst_August_of_Hanover ;
+    :hasFather data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasParent data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Ernst_August_of_Hanover,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Ernst_August_of_Hanover ;
+    :isBrotherOf data:Prince_Ernst_August_of_Hanover ;
+    :isChildOf data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isSiblingOf data:Prince_Ernst_August_of_Hanover ;
+    :isSonOf data:Ernst_August-_Prince_of_Hanover_1 .
+
+data:Ernst_August-_Prince_of_Hanover_1 a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Ernst August, Prince of Hanover"^^xsd:string ;
+    data:posIndicesFull "364:397"^^xsd:string,
+        "371:397"^^xsd:string ;
+    data:posIndicesPart "1781:1787"^^xsd:string,
+        "2592:2598"^^xsd:string,
+        "2650:2656"^^xsd:string,
+        "2699:2706"^^xsd:string,
+        "2982:2989"^^xsd:string,
+        "3087:3093"^^xsd:string,
+        "3185:3192"^^xsd:string,
+        "3590:3597"^^xsd:string,
+        "5017:5023"^^xsd:string,
+        "5123:5129"^^xsd:string,
+        "5190:5196"^^xsd:string,
+        "5230:5236"^^xsd:string,
+        "5901:5908"^^xsd:string,
+        "6088:6095"^^xsd:string,
+        "6266:6272"^^xsd:string,
+        "6273:6279"^^xsd:string,
+        "6417:6423"^^xsd:string,
+        "6742:6748"^^xsd:string,
+        "8483:8490"^^xsd:string,
+        "8547:8554"^^xsd:string ;
+    data:wdtLink wdt:Q58070 ;
+    :alsoKnownAs "Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig of Hanover"^^xsd:string,
+        "Ernst August Prinz von Hannover"^^xsd:string,
+        "Ernst August of Hanover"^^xsd:string,
+        "Ernst August von Hanover"^^xsd:string,
+        "Prince Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig of Hanover"^^xsd:string,
+        "Prince Ernst August Sr."^^xsd:string,
+        "Prince Ernst August of Hanover"^^xsd:string,
+        "Prince Ernst August of Hanover (born 1954)"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasChild data:Prince_Ernst_August_of_Hanover ;
+    :hasFather data:Ernst_August-_Prince_of_Hanover ;
+    :hasParent data:Ernst_August-_Prince_of_Hanover ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Ernst_August_of_Hanover,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Ernst_August_of_Hanover ;
+    :isAncestorOf data:Prince_Ernst_August_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isBrotherOf data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isChildOf data:Ernst_August-_Prince_of_Hanover ;
+    :isFatherOf data:Prince_Ernst_August_of_Hanover ;
+    :isParentOf data:Prince_Ernst_August_of_Hanover ;
+    :isSiblingOf data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isSonOf data:Ernst_August-_Prince_of_Hanover ;
+    :isUncleOf data:Prince_Ernst_August_of_Hanover .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Constantine II of Greece"^^xsd:string ;
+    data:posIndicesFull "4669:4683"^^xsd:string,
+        "4669:4693"^^xsd:string ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece"^^xsd:string,
+        "Constantine Glucksburg"^^xsd:string,
+        "Constantine II"^^xsd:string,
+        "Constantino de Grecia"^^xsd:string,
+        "King Constantine"^^xsd:string,
+        "Konstantinos 2"^^xsd:string,
+        "Konstantinos II"^^xsd:string,
+        "Konstantinos II of Greece"^^xsd:string,
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes"^^xsd:string,
+        "Konstantínos 2"^^xsd:string,
+        "Konstantínos II"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Frederica_of_Hanover,
+        data:Paul_of_Greece,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasParent data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Constantine_II_of_Greece,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Frederica_of_Hanover,
+        data:Paul_of_Greece,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isChildOf data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isSonOf data:Frederica_of_Hanover,
+        data:Paul_of_Greece .
+
+data:Victoria-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Victoria, Princess Royal"^^xsd:string ;
+    data:posIndicesFull "0:17"^^xsd:string,
+        "1319:1336"^^xsd:string ;
+    data:posIndicesPart "1045:1053"^^xsd:string,
+        "1162:1170"^^xsd:string,
+        "1474:1482"^^xsd:string,
+        "1695:1703"^^xsd:string,
+        "1843:1851"^^xsd:string,
+        "2007:2015"^^xsd:string,
+        "2094:2102"^^xsd:string,
+        "2141:2146"^^xsd:string,
+        "2265:2273"^^xsd:string,
+        "2309:2317"^^xsd:string,
+        "247:255"^^xsd:string,
+        "2780:2788"^^xsd:string,
+        "298:306"^^xsd:string,
+        "330:338"^^xsd:string,
+        "3461:3469"^^xsd:string,
+        "3902:3910"^^xsd:string,
+        "5280:5288"^^xsd:string,
+        "6159:6167"^^xsd:string,
+        "6452:6460"^^xsd:string,
+        "684:692"^^xsd:string,
+        "7293:7301"^^xsd:string,
+        "7450:7458"^^xsd:string,
+        "7682:7690"^^xsd:string,
+        "7776:7784"^^xsd:string,
+        "8351:8359"^^xsd:string,
+        "8422:8427"^^xsd:string,
+        "861:869"^^xsd:string,
+        "8689:8697"^^xsd:string,
+        "992:1000"^^xsd:string ;
+    data:wdtLink wdt:Q116728 ;
+    :alsoKnownAs "Empress Frederick"^^xsd:string,
+        "Empress Frederick of Germany"^^xsd:string,
+        "Empress Friedrich"^^xsd:string,
+        "Empress Victoria of Germany"^^xsd:string,
+        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise of the United Kingdom"^^xsd:string,
+        "Princess Victoria of the United Kingdom"^^xsd:string,
+        "Victoria Adelaide Mary Louisa"^^xsd:string,
+        "Victoria Adelaide Mary Louise"^^xsd:string,
+        "Victoria, Crown Princess of Prussia"^^xsd:string,
+        "Victoria, Empress Frederick of Germany"^^xsd:string,
+        "Victoria, Empress consort of Germany"^^xsd:string,
+        "Victoria, Empress of Germany"^^xsd:string,
+        "Victoria, German Empress"^^xsd:string,
+        "Victoria, Queen of Prussia and Empress of Germany"^^xsd:string ;
+    :hasChild data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :hasDaughter data:Princess_Margaret_of_Prussia ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Frederica_of_Hanover,
+        data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Ernst_August_of_Hanover,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Victoria-_Princess_Royal ;
+    :hasSon data:Wilhelm_II ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Frederica_of_Hanover,
+        data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Ernst_August_of_Hanover,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :isAuntOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Victoria-_Princess_Royal ;
+    :isMotherOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isParentOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Victoria-_Princess_Royal ;
+    :isSisterOf data:Victoria-_Princess_Royal .
+
+data:Prince_Eitel_Friedrich_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Eitel Friedrich of Prussia"^^xsd:string ;
+    data:posIndicesFull "2599:2614"^^xsd:string ;
+    data:posIndicesPart "3012:3019"^^xsd:string,
+        "3087:3093"^^xsd:string,
+        "3861:3868"^^xsd:string,
+        "5017:5023"^^xsd:string,
+        "5123:5129"^^xsd:string,
+        "5190:5196"^^xsd:string,
+        "5230:5236"^^xsd:string,
+        "6266:6272"^^xsd:string,
+        "6417:6423"^^xsd:string,
+        "6742:6748"^^xsd:string ;
+    data:wdtLink wdt:Q62056 ;
+    :alsoKnownAs "Eitel Friedrich"^^xsd:string,
+        "Prince Wilhelm Eitel Friedrich Christian Karl of Prussia"^^xsd:string,
+        "Wilhelm Eitel-Friedrich Christian Karl Prinz von Preußen"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Viktoria_Luise_of_Prussia ;
+    :isBloodrelationOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isBrotherOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isUncleOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover .
+
+data:Wilhelm-_German_Crown_Prince a :Man,
+        :Person ;
+    rdfs:label "Wilhelm, German Crown Prince"^^xsd:string ;
+    data:posIndicesFull "1452:1472"^^xsd:string,
+        "2567:2587"^^xsd:string,
+        "6241:6261"^^xsd:string ;
+    data:posIndicesPart "1781:1787"^^xsd:string,
+        "3081:3086"^^xsd:string,
+        "3087:3093"^^xsd:string,
+        "4005:4012"^^xsd:string,
+        "4294:4300"^^xsd:string,
+        "4449:4456"^^xsd:string,
+        "5017:5023"^^xsd:string,
+        "5123:5129"^^xsd:string,
+        "5190:5196"^^xsd:string,
+        "5230:5236"^^xsd:string,
+        "5430:5436"^^xsd:string,
+        "5659:5665"^^xsd:string,
+        "6417:6423"^^xsd:string,
+        "6742:6748"^^xsd:string,
+        "7373:7380"^^xsd:string,
+        "8345:8350"^^xsd:string ;
+    data:wdtLink wdt:Q57621 ;
+    :alsoKnownAs "Crown Prince Wilhelm"^^xsd:string,
+        "Friedrich Wilhelm Victor August Ernst"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Viktoria_Luise_of_Prussia ;
+    :isBloodrelationOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isBrotherOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isUncleOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover .
+
+data:Prince_Joachim_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Joachim of Prussia"^^xsd:string ;
+    data:posIndicesFull "1788:1795"^^xsd:string,
+        "1863:1870"^^xsd:string ;
+    data:posIndicesPart "2592:2598"^^xsd:string,
+        "2650:2656"^^xsd:string,
+        "3012:3019"^^xsd:string,
+        "3087:3093"^^xsd:string,
+        "3861:3868"^^xsd:string,
+        "5017:5023"^^xsd:string,
+        "5123:5129"^^xsd:string,
+        "5190:5196"^^xsd:string,
+        "5230:5236"^^xsd:string,
+        "6266:6272"^^xsd:string,
+        "6417:6423"^^xsd:string,
+        "6742:6748"^^xsd:string ;
+    data:wdtLink wdt:Q60371 ;
+    :alsoKnownAs "Joachim"^^xsd:string,
+        "Joachim Franz Hubert"^^xsd:string,
+        "Prince Joachim Franz Humbert of Prussia"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Viktoria_Luise_of_Prussia ;
+    :isBloodrelationOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isBrotherOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isUncleOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Augusta Victoria of Schleswig-Holstein"^^xsd:string ;
+    data:posIndicesFull "187:203"^^xsd:string,
+        "187:225"^^xsd:string,
+        "4570:4586"^^xsd:string,
+        "839:855"^^xsd:string ;
+    data:posIndicesPart "1045:1053"^^xsd:string,
+        "1162:1170"^^xsd:string,
+        "1257:1265"^^xsd:string,
+        "1474:1482"^^xsd:string,
+        "1843:1851"^^xsd:string,
+        "2094:2102"^^xsd:string,
+        "2265:2273"^^xsd:string,
+        "247:255"^^xsd:string,
+        "2780:2788"^^xsd:string,
+        "298:306"^^xsd:string,
+        "330:338"^^xsd:string,
+        "3461:3469"^^xsd:string,
+        "3902:3910"^^xsd:string,
+        "5280:5288"^^xsd:string,
+        "6159:6167"^^xsd:string,
+        "6452:6460"^^xsd:string,
+        "7293:7301"^^xsd:string,
+        "7450:7458"^^xsd:string,
+        "7682:7690"^^xsd:string,
+        "7776:7784"^^xsd:string,
+        "992:1000"^^xsd:string ;
+    data:wdtLink wdt:Q161247 ;
+    :alsoKnownAs "Augusta Victoria"^^xsd:string,
+        "Augusta Victoria, Empress of Germany"^^xsd:string,
+        "Augusta Viktoria"^^xsd:string,
+        "Augusta Viktoria of Schleswig-Holstein"^^xsd:string,
+        "Auguste Viktoria of Schleswig-Holstein"^^xsd:string ;
+    :hasChild data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasDaughter data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Constantine_II_of_Greece,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Frederica_of_Hanover,
+        data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Ernst_August_of_Hanover,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:female ;
+    :hasSister data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasSon data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Frederica_of_Hanover,
+        data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Ernst_August_of_Hanover,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isAuntOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isBloodrelationOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isMotherOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isParentOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isSisterOf data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Frederica of Hanover"^^xsd:string ;
+    data:posIndicesFull "1327:1336"^^xsd:string,
+        "4161:4170"^^xsd:string,
+        "5158:5176"^^xsd:string,
+        "5167:5176"^^xsd:string,
+        "5269:5278"^^xsd:string,
+        "6715:6733"^^xsd:string,
+        "6724:6733"^^xsd:string,
+        "6851:6869"^^xsd:string,
+        "6860:6869"^^xsd:string,
+        "7135:7153"^^xsd:string,
+        "7144:7153"^^xsd:string ;
+    data:posIndicesPart "2699:2706"^^xsd:string,
+        "2982:2989"^^xsd:string,
+        "3185:3192"^^xsd:string,
+        "3590:3597"^^xsd:string,
+        "5901:5908"^^xsd:string,
+        "6088:6095"^^xsd:string,
+        "8483:8490"^^xsd:string,
+        "8547:8554"^^xsd:string ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka"^^xsd:string,
+        "Friederike Luise von Griechenland"^^xsd:string,
+        "Princess Fredericka"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Ernst_August-_Prince_of_Hanover ;
+    :hasChild data:Constantine_II_of_Greece ;
+    :hasFather data:Ernst_August-_Duke_of_Brunswick ;
+    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasParent data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Constantine_II_of_Greece,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover,
+        data:Paul_of_Greece,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Frederica_of_Hanover ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece ;
+    :isAuntOf data:Constantine_II_of_Greece,
+        data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isBloodrelationOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover ;
+    :isChildOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :isDaughterOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :isMotherOf data:Constantine_II_of_Greece ;
+    :isParentOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover ;
+    :isSisterOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover .
+
+data:Ernst_August-_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Ernst August, Prince of Hanover"^^xsd:string ;
+    data:posIndicesFull "364:397"^^xsd:string,
+        "371:397"^^xsd:string ;
+    data:posIndicesPart "1781:1787"^^xsd:string,
+        "2592:2598"^^xsd:string,
+        "2650:2656"^^xsd:string,
+        "2699:2706"^^xsd:string,
+        "2982:2989"^^xsd:string,
+        "3087:3093"^^xsd:string,
+        "3185:3192"^^xsd:string,
+        "3590:3597"^^xsd:string,
+        "5017:5023"^^xsd:string,
+        "5123:5129"^^xsd:string,
+        "5190:5196"^^xsd:string,
+        "5230:5236"^^xsd:string,
+        "5901:5908"^^xsd:string,
+        "6088:6095"^^xsd:string,
+        "6266:6272"^^xsd:string,
+        "6273:6279"^^xsd:string,
+        "6417:6423"^^xsd:string,
+        "6742:6748"^^xsd:string,
+        "8483:8490"^^xsd:string,
+        "8547:8554"^^xsd:string ;
+    data:wdtLink wdt:Q61079 ;
+    :alsoKnownAs "Ernest Augustus of Hanover"^^xsd:string,
+        "Ernest Augustus, Prince of Hanover"^^xsd:string,
+        "Ernst August IV"^^xsd:string,
+        "Ernst August of Hanover"^^xsd:string,
+        "Prince Ernest Augustus of Hanover"^^xsd:string,
+        "Prince Ernst August of Hanover"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Ernst_August-_Prince_of_Hanover ;
+    :hasChild data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasFather data:Ernst_August-_Duke_of_Brunswick ;
+    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasParent data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Frederica_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSister data:Frederica_of_Hanover ;
+    :hasSon data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isAncestorOf data:Ernst_August-_Prince_of_Hanover_1,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover ;
+    :isBrotherOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover ;
+    :isChildOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :isFatherOf data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isParentOf data:Ernst_August-_Prince_of_Hanover_1 ;
+    :isSiblingOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover ;
+    :isSonOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :isUncleOf data:Constantine_II_of_Greece,
+        data:Ernst_August-_Prince_of_Hanover_1 .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "171:181"^^xsd:string,
+        "801:826"^^xsd:string,
+        "816:826"^^xsd:string ;
+    data:posIndicesPart "2548:2555"^^xsd:string,
+        "4005:4012"^^xsd:string,
+        "4449:4456"^^xsd:string,
+        "6280:6287"^^xsd:string,
+        "7373:7380"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasAncestor data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasDaughter data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Frederica_of_Hanover,
+        data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Ernst_August_of_Hanover,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :hasSon data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Frederica_of_Hanover,
+        data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Ernst_August_of_Hanover,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isBrotherOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isFatherOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isParentOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isSonOf data:Victoria-_Princess_Royal ;
+    :isUncleOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince .
+
+data:Princess_Viktoria_Luise_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Viktoria Luise of Prussia"^^xsd:string ;
+    data:posIndicesFull "0:35"^^xsd:string,
+        "9:35"^^xsd:string ;
+    data:posIndicesPart "1695:1703"^^xsd:string,
+        "2007:2015"^^xsd:string,
+        "2309:2317"^^xsd:string,
+        "3012:3019"^^xsd:string,
+        "3861:3868"^^xsd:string,
+        "8351:8359"^^xsd:string,
+        "861:869"^^xsd:string,
+        "8689:8697"^^xsd:string ;
+    data:wdtLink wdt:Q57529 ;
+    :alsoKnownAs "Princess Victoria Louise Adelaide Matilda Charlotte of Prussia"^^xsd:string,
+        "Princess Victoria Louise of Prussia"^^xsd:string,
+        "Victoria Louise Adelaide Matilda"^^xsd:string,
+        "Viktoria Luise of Prussia"^^xsd:string,
+        "Viktoria Luise, Duchess Consort of Brunswick"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasChild data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover ;
+    :hasDaughter data:Frederica_of_Hanover ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Constantine_II_of_Greece,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Frederica_of_Hanover,
+        data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Ernst_August_of_Hanover,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSon data:Ernst_August-_Prince_of_Hanover ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Ernst_August-_Prince_of_Hanover,
+        data:Ernst_August-_Prince_of_Hanover_1,
+        data:Frederica_of_Hanover,
+        data:Prince_Ernst_August_of_Hanover ;
+    :isAuntOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover ;
+    :isBloodrelationOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isDaughterOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isMotherOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover ;
+    :isParentOf data:Ernst_August-_Prince_of_Hanover,
+        data:Frederica_of_Hanover ;
+    :isSiblingOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSisterOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Princess_Viktoria_Luise_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince .
+

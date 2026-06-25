@@ -85,42 +85,38 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Alexander of Yugoslavia (Serbian: Александар П. Карађорђевић / Aleksandar P. Karađorđević; 13 August 1924 – 12 May 2016) was the elder son of Prince Paul, who served as Regent of Yugoslavia in the 1930s, and his wife, Princess Olga of Greece and Denmark.
-Birth and education
+Lord Leopold Arthur Louis Mountbatten (21 May 1889 – 23 April 1922) was a British Army officer and a descendant of the Hessian princely Battenberg family and the British royal family.
+A grandson of Queen Victoria, he was known as Prince Leopold of Battenberg from his birth until 1917, when the British royal family relinquished their German titles during World War I, and the Battenberg family changed their name to Mountbatten.
+Early life
 
-Alexander was born at White Lodge, Richmond Park, United Kingdom.
-As a nephew of Princess Marina, Duchess of Kent (née of Greece and Denmark), he was a first cousin of Prince Edward, Duke of Kent, Prince Michael of Kent, and Princess Alexandra of Kent; he was also a first cousin once removed of Prince Philip, Duke of Edinburgh.
-Marriages and family
+Leopold was born on 21 May 1889.
+His father was Prince Henry of Battenberg, the son of Prince Alexander of Hesse and by Rhine and Julia, Princess of Battenberg.
+His mother was Princess Beatrice of the United Kingdom, the fifth daughter and the youngest child of Queen Victoria and Prince Albert.
+As he was the product of a morganatic marriage, Prince Henry of Battenberg took his style of Prince of Battenberg from his mother, Julia von Hauke, who was created Princess of Battenberg in her own right.
+As such, Leopold was styled as His Serene Highness Prince Leopold of Battenberg from birth.
+In the United Kingdom, he was styled His Highness Prince Leopold of Battenberg under a royal warrant passed by Queen Victoria in 1886.
+His godparents were Leopold II of Belgium (his first cousin twice removed, represented by the Prince of Wales, his maternal uncle), the Duke of Connaught and Strathearn (his maternal uncle, represented by Prince Albert of Schleswig-Holstein, his first cousin), Prince Louis of Battenberg (his paternal uncle, represented by the Marquess of Lorne, his maternal uncle), the Marchioness of Lorne (his maternal aunt), the Duchess of Albany (his maternal aunt) and Princess Marie of Erbach-Schönberg (his paternal aunt).
+Leopold was a haemophiliac, a condition he inherited through his mother.
+His namesake maternal uncle, Prince Leopold, Duke of Albany, had died from the same condition.
+Military career
 
-He took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
-On 12 February 1955, Alexander married Princess Maria Pia of Savoy, daughter of King Umberto II of Italy and of his wife, Princess Marie José of Belgium.
-The couple had met on 22 August 1954 during the royal cruise of the Agamemnon, hosted by King Paul and Queen Frederica of Greece.
-Alexander and Maria Pia have twin sons born in 1958:
-Alexander and Maria Pia divorced in 1967, and in 2003 she married Prince Michel of Bourbon-Parma, himself divorced from Princess Yolande de Broglie-Revel.
-On 2 November 1973, in a civil ceremony in Paris, Alexander married Princess Barbara Eleonore Marie of Liechtenstein(born 9 July 1942), daughter of Prince Johannes of Liechtenstein (first cousin once removed to Prince Hans-Adam II of Liechtenstein) and Countess Karoline of Ledebur-Wicheln (aunt of Hans Adam's late wife Marie, Princess of Liechtenstein).
-On 28 October 1995 Prince Alexander and Princess Barbara were married in the Orthodox faith in
-Oplenac, and had issue:
+Leopold was commissioned a lieutenant (supernumerary) on 16 October 1909 in the 8th Battalion of the Isle of Wight Rifles, a Territorial Force unit.
+Relinquishment of titles
 
-
-Flying career
-
-The Prince wished to serve in the British Royal Air Force during World War Two, but was initially prevented by his father's political affiliations.
-He was eventually commissioned in the RAF through the intervention of Prince George, Duke of Kent, his uncle.
-Associations
-
-Alexander was one of the four founding members of the Serbian Unity Congress.
-On 17 February 2008, Alexander issued a statement condemning the declaration of independence by Kosovo.
-On the occasion of Prince Alexander's 90th birthday on 13 August 2014, a celebration of his life in words and pictures appeared in that month's UK magazine Majesty.
+During the First World War, anti-German feeling in the United Kingdom led Leopold's first cousin, George V to change the name of the royal house from the Germanic House of Saxe-Coburg and Gotha to the more English-sounding House of Windsor.
+In response to this, Leopold renounced his title of Prince, the style His Highness and the designation 'of Battenberg' through a royal warrant from the King dated 14 July 1917, and became Sir Leopold Mountbatten by virtue of his being a Knight Grand Cross of the Royal Victorian Order.
+Under a further warrant of 11 September 1917 he was granted the style and precedence of the younger son of a marquess, and became Lord Leopold Mountbatten.
 Death
 
-Prince Alexander died on 12 May 2016 in Paris, where he and his wife had lived for many years.
-He was buried at Oplenac, Serbia, with his parents and brother, his coffin being carried by Serbian Air Force fighter pilots.
+Lord Leopold died on 23 April 1922(1922-04-23) (aged 32), during a hip operation.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -136,39 +132,9 @@ He was buried at Oplenac, Serbia, with his parents and brother, his coffin being
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -183,6 +149,23 @@ He was buried at Oplenac, Serbia, with his parents and brother, his coffin being
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -200,6 +183,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -267,29 +265,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -298,6 +288,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -310,6 +308,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -318,17 +318,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -356,6 +358,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -371,139 +457,169 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1aab7e13-3eab-4a3a-8999-d2bb7b9aad3a)
- Call ID: 1aab7e13-3eab-4a3a-8999-d2bb7b9aad3a
+  AssignClass (9266e784-6df3-4b3c-91e4-42e7c3695277)
+ Call ID: 9266e784-6df3-4b3c-91e4-42e7c3695277
   Args:
-    source: PrinceAlexanderOfYugoslavia
-    type: :Man
-  AssignClass (4e3a20fa-7670-4dbf-b851-2d965b5b3f24)
- Call ID: 4e3a20fa-7670-4dbf-b851-2d965b5b3f24
-  Args:
-    type: :Man
-    source: PrincePaul
-  AssignClass (9754e461-c879-40ad-8da0-b4ed350d82ee)
- Call ID: 9754e461-c879-40ad-8da0-b4ed350d82ee
-  Args:
-    type: :Woman
-    source: PrincessOlga
-  AssignClass (fc372481-9dfc-4275-974e-cc136feada89)
- Call ID: fc372481-9dfc-4275-974e-cc136feada89
-  Args:
-    source: PrincessMariaPiaOfSavoy
-    type: :Woman
-  AssignClass (41647be7-a6a0-450b-9336-0ca44093f9a5)
- Call ID: 41647be7-a6a0-450b-9336-0ca44093f9a5
+    source: :LeopoldMountbatten
+    type: :Person
+  AssignClass (04789401-768f-42ae-b519-69367688a60b)
+ Call ID: 04789401-768f-42ae-b519-69367688a60b
   Args:
     type: :Man
-    source: KingUmbertoII
-  AssignClass (8a104fea-e38d-4c85-a93c-99cce5a60523)
- Call ID: 8a104fea-e38d-4c85-a93c-99cce5a60523
+    source: :LeopoldMountbatten
+  AddLiteral (3642b051-7e22-4a42-a51c-e93b6d3b5ecf)
+ Call ID: 3642b051-7e22-4a42-a51c-e93b6d3b5ecf
   Args:
-    type: :Woman
-    source: PrincessMarieJoseOfBelgium
-  AssignClass (11372ce6-f460-4782-b05f-b0a9a4408436)
- Call ID: 11372ce6-f460-4782-b05f-b0a9a4408436
-  Args:
-    type: :Man
-    source: PrinceMichelOfBourbonParma
-  AssignClass (7552fe9b-a407-4eb4-8719-b3e0e77cd161)
- Call ID: 7552fe9b-a407-4eb4-8719-b3e0e77cd161
-  Args:
-    type: :Woman
-    source: PrincessYolandeDeBroglieRevel
-  AssignClass (33be2e8a-750a-4190-91e9-122f10e29c57)
- Call ID: 33be2e8a-750a-4190-91e9-122f10e29c57
-  Args:
-    source: PrincessBarbaraEleonoreMarieOfLiechtenstein
-    type: :Woman
-  AssignClass (a4a3d79d-5e4b-4884-972b-a5b9c461d8e1)
- Call ID: a4a3d79d-5e4b-4884-972b-a5b9c461d8e1
-  Args:
-    source: PrinceJohannesOfLiechtenstein
-    type: :Man
-  AssignClass (c1a52cf1-55e7-4a3a-a3f8-4fad9ea301a9)
- Call ID: c1a52cf1-55e7-4a3a-a3f8-4fad9ea301a9
-  Args:
-    type: :Woman
-    source: CountessKarolineOfLedeburWicheln
-  AssignClass (21858ca3-c357-4983-a10f-cafd1bc75a86)
- Call ID: 21858ca3-c357-4983-a10f-cafd1bc75a86
-  Args:
-    source: PrinceGeorgeDukeOfKent
-    type: :Man
-  AddLiteral (75908fac-8ff9-4cf8-8f11-1ddfda77952c)
- Call ID: 75908fac-8ff9-4cf8-8f11-1ddfda77952c
-  Args:
-    relation: :hasBirthYear
-    source: PrinceAlexanderOfYugoslavia
+    source: :LeopoldMountbatten
     literal_type: xsd:integer
-    literal_value: 1924
-  AddLiteral (ed9c30de-08e3-4885-8963-f177b2827834)
- Call ID: ed9c30de-08e3-4885-8963-f177b2827834
+    literal_value: 1889
+    relation: :hasBirthYear
+  AddLiteral (c914f64c-c07e-4f42-9fcf-31315edc17af)
+ Call ID: c914f64c-c07e-4f42-9fcf-31315edc17af
   Args:
+    source: :LeopoldMountbatten
     relation: :hasDeathYear
     literal_type: xsd:integer
-    source: PrinceAlexanderOfYugoslavia
-    literal_value: 2016
-  AddTriple (38d3922f-e98e-4501-a922-ea4be736cf4c)
- Call ID: 38d3922f-e98e-4501-a922-ea4be736cf4c
+    literal_value: 1922
+  AssignClass (c25416cf-d9c2-4045-91cf-bf8588c21fd1)
+ Call ID: c25416cf-d9c2-4045-91cf-bf8588c21fd1
   Args:
-    source: PrinceAlexanderOfYugoslavia
-    target: PrincePaul
+    type: :Person
+    source: :HenryOfBattenberg
+  AssignClass (c0f92eb1-73dc-4675-968e-c60b2c76f3e1)
+ Call ID: c0f92eb1-73dc-4675-968e-c60b2c76f3e1
+  Args:
+    source: :HenryOfBattenberg
+    type: :Man
+  AssignClass (29b62ac0-21fe-44ab-9514-be47807b5c6e)
+ Call ID: 29b62ac0-21fe-44ab-9514-be47807b5c6e
+  Args:
+    type: :Person
+    source: :BeatriceUnitedKingdom
+  AssignClass (f454abe4-aa06-4eae-adc4-07aefeeeb385)
+ Call ID: f454abe4-aa06-4eae-adc4-07aefeeeb385
+  Args:
+    source: :BeatriceUnitedKingdom
+    type: :Woman
+  AddTriple (cad779ba-6d48-4e1e-bfe3-0e41941f36c6)
+ Call ID: cad779ba-6d48-4e1e-bfe3-0e41941f36c6
+  Args:
     relation: :hasFather
-  AddTriple (7fbfd109-3b53-4e00-8ea5-17996f60d643)
- Call ID: 7fbfd109-3b53-4e00-8ea5-17996f60d643
+    source: :LeopoldMountbatten
+    target: :HenryOfBattenberg
+  AddTriple (dab75499-84a0-4d02-8c9a-4c5fb0575943)
+ Call ID: dab75499-84a0-4d02-8c9a-4c5fb0575943
   Args:
-    target: PrincessOlga
     relation: :hasMother
-    source: PrinceAlexanderOfYugoslavia
-  AddTriple (1f2d95e2-8a35-418d-8163-f88897aa0b36)
- Call ID: 1f2d95e2-8a35-418d-8163-f88897aa0b36
+    source: :LeopoldMountbatten
+    target: :BeatriceUnitedKingdom
+  AssignClass (b5a7442c-e486-4183-bf5f-7cbc26dd5270)
+ Call ID: b5a7442c-e486-4183-bf5f-7cbc26dd5270
   Args:
-    target: KingUmbertoII
+    source: :AlexanderOfHesseAndByRhine
+    type: :Person
+  AssignClass (42e280e8-a37a-4568-a20d-e026f2b9842c)
+ Call ID: 42e280e8-a37a-4568-a20d-e026f2b9842c
+  Args:
+    source: :AlexanderOfHesseAndByRhine
+    type: :Man
+  AssignClass (2fdffcd9-70ed-4d90-9d94-d53be5a3a32b)
+ Call ID: 2fdffcd9-70ed-4d90-9d94-d53be5a3a32b
+  Args:
+    source: :JuliaPrincessOfBattenberg
+    type: :Person
+  AssignClass (56ffb903-3b49-4ba6-a7a6-dce734138573)
+ Call ID: 56ffb903-3b49-4ba6-a7a6-dce734138573
+  Args:
+    source: :JuliaPrincessOfBattenberg
+    type: :Woman
+  AddTriple (950005e8-ee72-41e1-a3b6-51d2c30efb3e)
+ Call ID: 950005e8-ee72-41e1-a3b6-51d2c30efb3e
+  Args:
+    source: :HenryOfBattenberg
+    target: :AlexanderOfHesseAndByRhine
     relation: :hasFather
-    source: PrincessMariaPiaOfSavoy
-  AddTriple (4b2907e4-e6e8-4aa6-8506-f819d65114ba)
- Call ID: 4b2907e4-e6e8-4aa6-8506-f819d65114ba
+  AddTriple (d043bf6f-fd54-4496-b54a-602de16ca913)
+ Call ID: d043bf6f-fd54-4496-b54a-602de16ca913
   Args:
-    target: PrincessMarieJoseOfBelgium
+    target: :JuliaPrincessOfBattenberg
+    source: :HenryOfBattenberg
     relation: :hasMother
-    source: PrincessMariaPiaOfSavoy
-  AddLiteral (cdf28229-284a-4d39-bcb0-39d5c4bd0a32)
- Call ID: cdf28229-284a-4d39-bcb0-39d5c4bd0a32
+  AssignClass (7c1f85c1-6a5a-4dbd-96af-eac996edb542)
+ Call ID: 7c1f85c1-6a5a-4dbd-96af-eac996edb542
   Args:
-    relation: :hasMarriageYear
-    literal_value: 1955
-    source: PrinceAlexanderOfYugoslavia
-    literal_type: xsd:integer
-  AddTriple (62f221de-f17c-4b48-b928-eb52db434570)
- Call ID: 62f221de-f17c-4b48-b928-eb52db434570
+    type: :Person
+    source: :QueenVictoria
+  AssignClass (8571fed5-a069-40e9-9e6b-db936db1eb92)
+ Call ID: 8571fed5-a069-40e9-9e6b-db936db1eb92
   Args:
+    source: :QueenVictoria
+    type: :Woman
+  AssignClass (41d44f35-4f25-40e9-8acd-e3aba2b99243)
+ Call ID: 41d44f35-4f25-40e9-8acd-e3aba2b99243
+  Args:
+    source: :PrinceAlbert
+    type: :Person
+  AssignClass (4cd9cc66-3867-400b-829e-accd2c895739)
+ Call ID: 4cd9cc66-3867-400b-829e-accd2c895739
+  Args:
+    source: :PrinceAlbert
+    type: :Man
+  AddTriple (59e3a2c4-93d2-45a9-8301-4a9dd4fd43f4)
+ Call ID: 59e3a2c4-93d2-45a9-8301-4a9dd4fd43f4
+  Args:
+    source: :BeatriceUnitedKingdom
+    target: :PrinceAlbert
     relation: :hasFather
-    target: PrinceJohannesOfLiechtenstein
-    source: PrincessBarbaraEleonoreMarieOfLiechtenstein
-  AddTriple (10fe018e-e941-40a1-9a4f-38588af815c4)
- Call ID: 10fe018e-e941-40a1-9a4f-38588af815c4
+  AddTriple (a801d597-accc-400c-98c6-b3cc65927691)
+ Call ID: a801d597-accc-400c-98c6-b3cc65927691
   Args:
-    source: PrincessBarbaraEleonoreMarieOfLiechtenstein
-    target: CountessKarolineOfLedeburWicheln
     relation: :hasMother
-  AddLiteral (0b7fad60-1e42-4999-8ae0-a779cef5570f)
- Call ID: 0b7fad60-1e42-4999-8ae0-a779cef5570f
+    source: :BeatriceUnitedKingdom
+    target: :QueenVictoria
+  AddLiteral (9928e8ed-327a-4e1d-88d6-a5f74dbf7574)
+ Call ID: 9928e8ed-327a-4e1d-88d6-a5f74dbf7574
   Args:
-    literal_type: xsd:integer
-    source: PrinceAlexanderOfYugoslavia
-    literal_value: 1973
-    relation: :hasMarriageYear
-  AddTriple (1bba7ad0-7528-45f1-9282-fa1d8becc386)
- Call ID: 1bba7ad0-7528-45f1-9282-fa1d8becc386
+    source: :LeopoldMountbatten
+    relation: :knownAs
+    literal_type: xsd:string
+    literal_value: Leopold Mountbatten
+  AddLiteral (27513cd0-3f81-43a2-8164-09cca3b92d49)
+ Call ID: 27513cd0-3f81-43a2-8164-09cca3b92d49
   Args:
-    relation: :hasFather
-    target: PrinceGeorgeDukeOfKent
-    source: PrinceAlexanderOfYugoslavia
-  Finish (b0576888-a99d-48f7-b6c7-087dcd5dad1e)
- Call ID: b0576888-a99d-48f7-b6c7-087dcd5dad1e
+    literal_type: xsd:string
+    literal_value: Prince Leopold of Battenberg
+    relation: :formerlyKnownAs
+    source: :LeopoldMountbatten
+  AddLiteral (7e4d5edb-bab7-449a-b637-c72a567d7040)
+ Call ID: 7e4d5edb-bab7-449a-b637-c72a567d7040
   Args:
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    literal_value: Sir Leopold Mountbatten
+    source: :LeopoldMountbatten
+  AddLiteral (beb5cc81-2794-43a6-9c9d-255f067d5be0)
+ Call ID: beb5cc81-2794-43a6-9c9d-255f067d5be0
+  Args:
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    literal_value: Lord Leopold Mountbatten
+    source: :LeopoldMountbatten
+  Finish (232b900e-a60d-47ac-a05b-447f4d8e86ff)
+ Call ID: 232b900e-a60d-47ac-a05b-447f4d8e86ff
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -600,40 +716,38 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:PrinceAlexanderOfYugoslavia a :Man ;
-      :hasBirthYear 1924 ;
-      :hasDeathYear 2016 ;
-      :hasFather data:PrinceGeorgeDukeOfKent,
-          data:PrincePaul ;
-      :hasMarriageYear 1955,
-          1973 ;
-      :hasMother data:PrincessOlga .
+  data:LeopoldMountbatten a :Man,
+          :Person ;
+      :alsoKnownAs "Lord Leopold Mountbatten"^^xsd:string,
+          "Sir Leopold Mountbatten"^^xsd:string ;
+      :formerlyKnownAs "Prince Leopold of Battenberg"^^xsd:string ;
+      :hasBirthYear 1889 ;
+      :hasDeathYear 1922 ;
+      :hasFather data:HenryOfBattenberg ;
+      :hasMother data:BeatriceUnitedKingdom ;
+      :knownAs "Leopold Mountbatten"^^xsd:string .
 
-  data:PrinceMichelOfBourbonParma a :Man .
+  data:AlexanderOfHesseAndByRhine a :Man,
+          :Person .
 
-  data:PrincessBarbaraEleonoreMarieOfLiechtenstein a :Woman ;
-      :hasFather data:PrinceJohannesOfLiechtenstein ;
-      :hasMother data:CountessKarolineOfLedeburWicheln .
+  data:BeatriceUnitedKingdom a :Person,
+          :Woman ;
+      :hasFather data:PrinceAlbert ;
+      :hasMother data:QueenVictoria .
 
-  data:PrincessMariaPiaOfSavoy a :Woman ;
-      :hasFather data:KingUmbertoII ;
-      :hasMother data:PrincessMarieJoseOfBelgium .
+  data:HenryOfBattenberg a :Man,
+          :Person ;
+      :hasFather data:AlexanderOfHesseAndByRhine ;
+      :hasMother data:JuliaPrincessOfBattenberg .
 
-  data:PrincessYolandeDeBroglieRevel a :Woman .
+  data:JuliaPrincessOfBattenberg a :Person,
+          :Woman .
 
-  data:CountessKarolineOfLedeburWicheln a :Woman .
+  data:PrinceAlbert a :Man,
+          :Person .
 
-  data:KingUmbertoII a :Man .
-
-  data:PrinceGeorgeDukeOfKent a :Man .
-
-  data:PrinceJohannesOfLiechtenstein a :Man .
-
-  data:PrincePaul a :Man .
-
-  data:PrincessMarieJoseOfBelgium a :Woman .
-
-  data:PrincessOlga a :Woman .
+  data:QueenVictoria a :Person,
+          :Woman .
 
 
 
@@ -645,206 +759,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (7244bdd1-a99a-4c85-bd83-f8e59fb324f2)
- Call ID: 7244bdd1-a99a-4c85-bd83-f8e59fb324f2
+  ValidateShacl (494ab0ee-e61c-4de8-920d-11d11f23a477)
+ Call ID: 494ab0ee-e61c-4de8-920d-11d11f23a477
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:24
+Total violations:18
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person PrincePaul is not classified as an Ancestor, which is required for the hasFather property.
+      The person HenryOfBattenberg is not classified as an Ancestor, which is required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincePaul, :Ancestor)
+      AssignClass(HenryOfBattenberg, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person PrinceGeorgeDukeOfKent is not classified as an Ancestor, which is required for the hasFather property.
+      The person AlexanderOfHesseAndByRhine is not classified as an Ancestor, which is required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceGeorgeDukeOfKent, :Ancestor)
+      AssignClass(AlexanderOfHesseAndByRhine, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: More than 1 values on data:PrinceAlexanderOfYugoslavia->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      PrinceAlexanderOfYugoslavia has more than one value for the functional property hasFather.
+      The person BeatriceUnitedKingdom is not classified as an Ancestor, which is required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(PrinceAlexanderOfYugoslavia, :hasFather, [value_to_remove])
+      AssignClass(BeatriceUnitedKingdom, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person PrincessOlga is not classified as an Ancestor, which is required for the hasMother property.
+      The person JuliaPrincessOfBattenberg is not classified as an Ancestor, which is required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessOlga, :Ancestor)
+      AssignClass(JuliaPrincessOfBattenberg, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person PrincePaul is not classified as an Ancestor, which is required for the hasFather property.
+      The person HenryOfBattenberg is not classified as an Ancestor, which is required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincePaul, :Ancestor)
+      AssignClass(HenryOfBattenberg, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person PrinceGeorgeDukeOfKent is not classified as an Ancestor, which is required for the hasFather property.
+      The person PrinceAlbert is not classified as an Ancestor, which is required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceGeorgeDukeOfKent, :Ancestor)
+      AssignClass(PrinceAlbert, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: More than 1 values on data:PrinceAlexanderOfYugoslavia->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      PrinceAlexanderOfYugoslavia has more than one value for the functional property hasFather.
+      The person AlexanderOfHesseAndByRhine is not classified as an Ancestor, which is required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(PrinceAlexanderOfYugoslavia, :hasFather, [value_to_remove])
+      AssignClass(AlexanderOfHesseAndByRhine, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person KingUmbertoII is not classified as an Ancestor, which is required for the hasFather property.
+      The person BeatriceUnitedKingdom is not classified as an Ancestor, which is required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(KingUmbertoII, :Ancestor)
+      AssignClass(BeatriceUnitedKingdom, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person PrinceJohannesOfLiechtenstein is not classified as an Ancestor, which is required for the hasFather property.
+      The person QueenVictoria is not classified as an Ancestor, which is required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceJohannesOfLiechtenstein, :Ancestor)
+      AssignClass(QueenVictoria, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person PrincessOlga is not classified as an Ancestor, which is required for the hasMother property.
+      The person JuliaPrincessOfBattenberg is not classified as an Ancestor, which is required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessOlga, :Ancestor)
+      AssignClass(JuliaPrincessOfBattenberg, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person PrincessMarieJoseOfBelgium is not classified as an Ancestor, which is required for the hasMother property.
+      The person HenryOfBattenberg is not classified as an Ancestor, which is required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessMarieJoseOfBelgium, :Ancestor)
+      AssignClass(HenryOfBattenberg, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person CountessKarolineOfLedeburWicheln is not classified as an Ancestor, which is required for the hasMother property.
+      The person PrinceAlbert is not classified as an Ancestor, which is required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(CountessKarolineOfLedeburWicheln, :Ancestor)
+      AssignClass(PrinceAlbert, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person PrincePaul is not classified as an Ancestor, which is required for the hasFather property.
+      The person AlexanderOfHesseAndByRhine is not classified as an Ancestor, which is required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincePaul, :Ancestor)
+      AssignClass(AlexanderOfHesseAndByRhine, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person PrinceGeorgeDukeOfKent is not classified as an Ancestor, which is required for the hasFather property.
+      The person BeatriceUnitedKingdom is not classified as an Ancestor, which is required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceGeorgeDukeOfKent, :Ancestor)
+      AssignClass(BeatriceUnitedKingdom, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: More than 1 values on data:PrinceAlexanderOfYugoslavia->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      PrinceAlexanderOfYugoslavia has more than one value for the functional property hasFather.
+      The person QueenVictoria is not classified as an Ancestor, which is required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(PrinceAlexanderOfYugoslavia, :hasFather, [value_to_remove])
+      AssignClass(QueenVictoria, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person KingUmbertoII is not classified as an Ancestor, which is required for the hasFather property.
+      The person JuliaPrincessOfBattenberg is not classified as an Ancestor, which is required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(KingUmbertoII, :Ancestor)
+      AssignClass(JuliaPrincessOfBattenberg, :Ancestor)
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person PrinceJohannesOfLiechtenstein is not classified as an Ancestor, which is required for the hasFather property.
+      The person PrinceAlbert is not classified as an Ancestor, which is required for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceJohannesOfLiechtenstein, :Ancestor)
+      AssignClass(PrinceAlbert, :Ancestor)
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person PrincessOlga is not classified as an Ancestor, which is required for the hasMother property.
+      The person QueenVictoria is not classified as an Ancestor, which is required for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessOlga, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person PrincessMarieJoseOfBelgium is not classified as an Ancestor, which is required for the hasMother property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessMarieJoseOfBelgium, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person CountessKarolineOfLedeburWicheln is not classified as an Ancestor, which is required for the hasMother property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(CountessKarolineOfLedeburWicheln, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person PrinceJohannesOfLiechtenstein is not classified as an Ancestor, which is required for the hasFather property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceJohannesOfLiechtenstein, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person KingUmbertoII is not classified as an Ancestor, which is required for the hasFather property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(KingUmbertoII, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person CountessKarolineOfLedeburWicheln is not classified as an Ancestor, which is required for the hasMother property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(CountessKarolineOfLedeburWicheln, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person PrincessMarieJoseOfBelgium is not classified as an Ancestor, which is required for the hasMother property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessMarieJoseOfBelgium, :Ancestor)
+      AssignClass(QueenVictoria, :Ancestor)
 
 
 
@@ -853,67 +919,36 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (a5fd5e94-8a10-447d-96d5-bed0b8556e1e)
- Call ID: a5fd5e94-8a10-447d-96d5-bed0b8556e1e
+  AssignClass (ba98635e-c2b4-4c95-9038-822b45a4076a)
+ Call ID: ba98635e-c2b4-4c95-9038-822b45a4076a
   Args:
+    source: :HenryOfBattenberg
     type: :Ancestor
-    source: PrincePaul
-  AssignClass (8b0fac32-c80b-4d1a-8bdf-f52b512d6fe3)
- Call ID: 8b0fac32-c80b-4d1a-8bdf-f52b512d6fe3
+  AssignClass (0c40fc75-9733-491a-9683-db3dad44a09f)
+ Call ID: 0c40fc75-9733-491a-9683-db3dad44a09f
   Args:
+    source: :AlexanderOfHesseAndByRhine
     type: :Ancestor
-    source: PrinceGeorgeDukeOfKent
-  AssignClass (22fbc173-f04d-4e56-bfc9-634b9833c4f7)
- Call ID: 22fbc173-f04d-4e56-bfc9-634b9833c4f7
+  AssignClass (bb17d45a-0047-439e-8b94-3780cf7a10d5)
+ Call ID: bb17d45a-0047-439e-8b94-3780cf7a10d5
   Args:
+    source: :BeatriceUnitedKingdom
     type: :Ancestor
-    source: PrincessOlga
-  AssignClass (29cd6c65-34b3-4532-b77c-8e4355bb6c8a)
- Call ID: 29cd6c65-34b3-4532-b77c-8e4355bb6c8a
+  AssignClass (f70ff720-5d5c-4211-95d8-cf4dcdf55a65)
+ Call ID: f70ff720-5d5c-4211-95d8-cf4dcdf55a65
   Args:
+    source: :JuliaPrincessOfBattenberg
     type: :Ancestor
-    source: KingUmbertoII
-  AssignClass (981e0f85-1121-40c0-852d-ab90d24994fe)
- Call ID: 981e0f85-1121-40c0-852d-ab90d24994fe
+  AssignClass (febcd377-9d95-4eeb-9f01-7871c2fd2eed)
+ Call ID: febcd377-9d95-4eeb-9f01-7871c2fd2eed
   Args:
+    source: :PrinceAlbert
     type: :Ancestor
-    source: PrincessMarieJoseOfBelgium
-  AssignClass (024d8ff8-7e61-4b7a-8ae3-b7d3415b2472)
- Call ID: 024d8ff8-7e61-4b7a-8ae3-b7d3415b2472
+  AssignClass (2a05ca12-d2e1-45d3-b036-8d33bc607d9b)
+ Call ID: 2a05ca12-d2e1-45d3-b036-8d33bc607d9b
   Args:
+    source: :QueenVictoria
     type: :Ancestor
-    source: PrinceJohannesOfLiechtenstein
-  AssignClass (5e5ba1b0-ace4-4b45-ac67-35d21888b386)
- Call ID: 5e5ba1b0-ace4-4b45-ac67-35d21888b386
-  Args:
-    type: :Ancestor
-    source: CountessKarolineOfLedeburWicheln
-  RemoveTriple (5d438db3-cd98-4ab8-a345-ef2752678eb3)
- Call ID: 5d438db3-cd98-4ab8-a345-ef2752678eb3
-  Args:
-    source: PrinceAlexanderOfYugoslavia
-    relation: :hasFather
-    target: PrinceGeorgeDukeOfKent
-  AssignClass (610ff261-b657-412b-9238-52466d9c8d3d)
- Call ID: 610ff261-b657-412b-9238-52466d9c8d3d
-  Args:
-    type: :Man
-    source: PrinceGeorgeDukeOfKent
-  ValidateShacl (d173ff1a-470d-47d5-bd40-4ee45b06fa42)
- Call ID: d173ff1a-470d-47d5-bd40-4ee45b06fa42
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -942,48 +977,54 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:PrinceAlexanderOfYugoslavia a :Man ;
-      :hasBirthYear 1924 ;
-      :hasDeathYear 2016 ;
-      :hasFather data:PrincePaul ;
-      :hasMarriageYear 1955,
-          1973 ;
-      :hasMother data:PrincessOlga .
+  data:LeopoldMountbatten a :Man,
+          :Person ;
+      :alsoKnownAs "Lord Leopold Mountbatten"^^xsd:string,
+          "Sir Leopold Mountbatten"^^xsd:string ;
+      :formerlyKnownAs "Prince Leopold of Battenberg"^^xsd:string ;
+      :hasBirthYear 1889 ;
+      :hasDeathYear 1922 ;
+      :hasFather data:HenryOfBattenberg ;
+      :hasMother data:BeatriceUnitedKingdom ;
+      :knownAs "Leopold Mountbatten"^^xsd:string .
 
-  data:PrinceGeorgeDukeOfKent a :Ancestor,
-          :Man .
+  data:AlexanderOfHesseAndByRhine a :Ancestor,
+          :Man,
+          :Person .
 
-  data:PrinceMichelOfBourbonParma a :Man .
+  data:BeatriceUnitedKingdom a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:PrinceAlbert ;
+      :hasMother data:QueenVictoria .
 
-  data:PrincessBarbaraEleonoreMarieOfLiechtenstein a :Woman ;
-      :hasFather data:PrinceJohannesOfLiechtenstein ;
-      :hasMother data:CountessKarolineOfLedeburWicheln .
+  data:HenryOfBattenberg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:AlexanderOfHesseAndByRhine ;
+      :hasMother data:JuliaPrincessOfBattenberg .
 
-  data:PrincessMariaPiaOfSavoy a :Woman ;
-      :hasFather data:KingUmbertoII ;
-      :hasMother data:PrincessMarieJoseOfBelgium .
-
-  data:PrincessYolandeDeBroglieRevel a :Woman .
-
-  data:CountessKarolineOfLedeburWicheln a :Ancestor,
+  data:JuliaPrincessOfBattenberg a :Ancestor,
+          :Person,
           :Woman .
 
-  data:KingUmbertoII a :Ancestor,
-          :Man .
+  data:PrinceAlbert a :Ancestor,
+          :Man,
+          :Person .
 
-  data:PrinceJohannesOfLiechtenstein a :Ancestor,
-          :Man .
-
-  data:PrincePaul a :Ancestor,
-          :Man .
-
-  data:PrincessMarieJoseOfBelgium a :Ancestor,
-          :Woman .
-
-  data:PrincessOlga a :Ancestor,
+  data:QueenVictoria a :Ancestor,
+          :Person,
           :Woman .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (aac5fb51-be4b-43de-b36a-744325ba9fbd)
+ Call ID: aac5fb51-be4b-43de-b36a-744325ba9fbd
+  Args:
 
 ================================= Tool Message =================================
 
@@ -993,6 +1034,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ccf549ac-cf83-4380-ac13-595166eae905)
- Call ID: ccf549ac-cf83-4380-ac13-595166eae905
+  Finish (bda5bfb0-63b3-4dc7-aa7b-5e465ebdb62b)
+ Call ID: bda5bfb0-63b3-4dc7-aa7b-5e465ebdb62b
   Args:

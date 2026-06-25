@@ -2,24 +2,19 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Sigismund a :Man,
-        :Person ;
-    :isBrotherOf data:Prince_Henry_Victor_Louis_Frederick_of_Prussia .
+data:Alexandra a :Woman .
 
-data:Prince_Waldemar a :Man,
-        :Person ;
-    :isBrotherOf data:Prince_Henry_Victor_Louis_Frederick_of_Prussia .
+data:Albrecht a :Man ;
+    :hasBirthYear 1954 ;
+    :isSiblingOf data:Karl_Friedrich .
 
-data:Prince_Henry_of_Prussia a :Man,
-        :Person .
+data:Friedrich_Wilhelm a :Man .
 
-data:Princess_Irene_of_Hesse_and_by_Rhine a :Person,
-        :Woman .
+data:Karl_Friedrich a :Man ;
+    :hasBirthYear 1952 ;
+    :hasFather data:Friedrich_Wilhelm ;
+    :hasMother data:Margarita_of_Leiningen ;
+    :isSiblingOf data:Albrecht .
 
-data:Prince_Henry_Victor_Louis_Frederick_of_Prussia a :Man,
-        :Person ;
-    :hasBirthYear 1900 ;
-    :hasDeathYear 1904 ;
-    :hasFather data:Prince_Henry_of_Prussia ;
-    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine .
+data:Margarita_of_Leiningen a :Woman .
 

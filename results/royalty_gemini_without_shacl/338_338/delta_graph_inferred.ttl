@@ -1,0 +1,128 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne_Dorte_of_Rosenborg a :Person,
+        :Woman ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 2014 ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg,
+        data:Christian_of_Rosenborg,
+        data:Frederik_IX,
+        data:Hereditary_Prince_Knud,
+        data:Prince_Ingolf,
+        data:Princess_Caroline-Mathilde ;
+    :hasSister data:Anne_Dorte_of_Rosenborg ;
+    :isBloodrelationOf data:Anne_Dorte_of_Rosenborg ;
+    :isSiblingOf data:Anne_Dorte_of_Rosenborg ;
+    :isSisterOf data:Anne_Dorte_of_Rosenborg .
+
+data:Frederik_IX a :Man,
+        :Person ;
+    :hasBrother data:Frederik_IX,
+        data:Hereditary_Prince_Knud ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg,
+        data:Christian_of_Rosenborg,
+        data:Frederik_IX,
+        data:Hereditary_Prince_Knud,
+        data:Prince_Ingolf,
+        data:Princess_Caroline-Mathilde ;
+    :isBloodrelationOf data:Frederik_IX,
+        data:Hereditary_Prince_Knud ;
+    :isBrotherOf data:Frederik_IX,
+        data:Hereditary_Prince_Knud ;
+    :isSiblingOf data:Frederik_IX,
+        data:Hereditary_Prince_Knud ;
+    :isUncleOf data:Christian_of_Rosenborg .
+
+data:Prince_Ingolf a :Man,
+        :Person ;
+    :hasBrother data:Christian_of_Rosenborg,
+        data:Prince_Ingolf ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg,
+        data:Christian_of_Rosenborg,
+        data:Frederik_IX,
+        data:Hereditary_Prince_Knud,
+        data:Prince_Ingolf,
+        data:Princess_Caroline-Mathilde ;
+    :isBloodrelationOf data:Christian_of_Rosenborg,
+        data:Prince_Ingolf ;
+    :isBrotherOf data:Christian_of_Rosenborg,
+        data:Prince_Ingolf ;
+    :isSiblingOf data:Christian_of_Rosenborg,
+        data:Prince_Ingolf .
+
+data:Princess_Caroline-Mathilde a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Christian_of_Rosenborg ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg,
+        data:Christian_of_Rosenborg,
+        data:Frederik_IX,
+        data:Hereditary_Prince_Knud,
+        data:Prince_Ingolf,
+        data:Princess_Caroline-Mathilde ;
+    :hasSister data:Princess_Caroline-Mathilde ;
+    :hasSon data:Christian_of_Rosenborg ;
+    :isAncestorOf data:Christian_of_Rosenborg ;
+    :isAuntOf data:Christian_of_Rosenborg ;
+    :isBloodrelationOf data:Princess_Caroline-Mathilde ;
+    :isMotherOf data:Christian_of_Rosenborg ;
+    :isParentOf data:Christian_of_Rosenborg ;
+    :isSiblingOf data:Princess_Caroline-Mathilde ;
+    :isSisterOf data:Princess_Caroline-Mathilde .
+
+data:Hereditary_Prince_Knud a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederik_IX,
+        data:Hereditary_Prince_Knud ;
+    :hasChild data:Christian_of_Rosenborg ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg,
+        data:Christian_of_Rosenborg,
+        data:Frederik_IX,
+        data:Hereditary_Prince_Knud,
+        data:Prince_Ingolf,
+        data:Princess_Caroline-Mathilde ;
+    :hasSon data:Christian_of_Rosenborg ;
+    :isAncestorOf data:Christian_of_Rosenborg ;
+    :isBloodrelationOf data:Frederik_IX,
+        data:Hereditary_Prince_Knud ;
+    :isBrotherOf data:Frederik_IX,
+        data:Hereditary_Prince_Knud ;
+    :isFatherOf data:Christian_of_Rosenborg ;
+    :isParentOf data:Christian_of_Rosenborg ;
+    :isSiblingOf data:Frederik_IX,
+        data:Hereditary_Prince_Knud ;
+    :isUncleOf data:Christian_of_Rosenborg .
+
+data:Christian_of_Rosenborg a :Man,
+        :Person ;
+    :hasAncestor data:Hereditary_Prince_Knud,
+        data:Princess_Caroline-Mathilde ;
+    :hasBirthYear 1942 ;
+    :hasBrother data:Christian_of_Rosenborg,
+        data:Prince_Ingolf ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Hereditary_Prince_Knud ;
+    :hasMarriageYear 1971 ;
+    :hasMother data:Princess_Caroline-Mathilde ;
+    :hasParent data:Hereditary_Prince_Knud,
+        data:Princess_Caroline-Mathilde ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg,
+        data:Christian_of_Rosenborg,
+        data:Frederik_IX,
+        data:Hereditary_Prince_Knud,
+        data:Prince_Ingolf,
+        data:Princess_Caroline-Mathilde ;
+    :isBloodrelationOf data:Christian_of_Rosenborg,
+        data:Prince_Ingolf ;
+    :isBrotherOf data:Christian_of_Rosenborg,
+        data:Prince_Ingolf ;
+    :isChildOf data:Hereditary_Prince_Knud,
+        data:Princess_Caroline-Mathilde ;
+    :isSiblingOf data:Christian_of_Rosenborg,
+        data:Prince_Ingolf ;
+    :isSonOf data:Hereditary_Prince_Knud,
+        data:Princess_Caroline-Mathilde .
+

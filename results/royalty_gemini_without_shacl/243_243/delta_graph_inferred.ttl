@@ -1,0 +1,204 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:Peter_Karadordevic a :Man,
+        :Person ;
+    :hasBrother data:Filip_Karadordevic,
+        data:Peter_Karadordevic ;
+    :hasRelation data:Alexander_Karadordevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadordevic,
+        data:Maria_da_Gloria,
+        data:Marija_Karadordevic,
+        data:Peter_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isBloodrelationOf data:Filip_Karadordevic,
+        data:Peter_Karadordevic ;
+    :isBrotherOf data:Filip_Karadordevic,
+        data:Peter_Karadordevic ;
+    :isSiblingOf data:Filip_Karadordevic,
+        data:Peter_Karadordevic ;
+    :isUncleOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic .
+
+data:Alexander_Karadordevic a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_Karadordevic ;
+    :hasChild data:Filip_Karadordevic ;
+    :hasRelation data:Alexander_Karadordevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadordevic,
+        data:Maria_da_Gloria,
+        data:Marija_Karadordevic,
+        data:Peter_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :hasSon data:Filip_Karadordevic ;
+    :isAncestorOf data:Filip_Karadordevic,
+        data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isBloodrelationOf data:Alexander_Karadordevic ;
+    :isBrotherOf data:Alexander_Karadordevic ;
+    :isFatherOf data:Filip_Karadordevic ;
+    :isParentOf data:Filip_Karadordevic ;
+    :isSiblingOf data:Alexander_Karadordevic ;
+    :isUncleOf data:Filip_Karadordevic .
+
+data:Maria_da_Gloria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Filip_Karadordevic ;
+    :hasRelation data:Alexander_Karadordevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadordevic,
+        data:Maria_da_Gloria,
+        data:Marija_Karadordevic,
+        data:Peter_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :hasSister data:Maria_da_Gloria ;
+    :hasSon data:Filip_Karadordevic ;
+    :isAncestorOf data:Filip_Karadordevic,
+        data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isAuntOf data:Filip_Karadordevic ;
+    :isBloodrelationOf data:Maria_da_Gloria ;
+    :isMotherOf data:Filip_Karadordevic ;
+    :isParentOf data:Filip_Karadordevic ;
+    :isSiblingOf data:Maria_da_Gloria ;
+    :isSisterOf data:Maria_da_Gloria .
+
+data:Danica_Marinkovic a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :hasDaughter data:Marija_Karadordevic ;
+    :hasRelation data:Alexander_Karadordevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadordevic,
+        data:Maria_da_Gloria,
+        data:Marija_Karadordevic,
+        data:Peter_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :hasSister data:Danica_Marinkovic ;
+    :hasSon data:Stefan_Karadordevic ;
+    :isAncestorOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isAuntOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isBloodrelationOf data:Danica_Marinkovic ;
+    :isMotherOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isParentOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isSiblingOf data:Danica_Marinkovic ;
+    :isSisterOf data:Danica_Marinkovic .
+
+data:Marija_Karadordevic a :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_Karadordevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadordevic,
+        data:Maria_da_Gloria ;
+    :hasBrother data:Stefan_Karadordevic ;
+    :hasFather data:Filip_Karadordevic ;
+    :hasMother data:Danica_Marinkovic ;
+    :hasParent data:Danica_Marinkovic,
+        data:Filip_Karadordevic ;
+    :hasRelation data:Alexander_Karadordevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadordevic,
+        data:Maria_da_Gloria,
+        data:Marija_Karadordevic,
+        data:Peter_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :hasSister data:Marija_Karadordevic ;
+    :isBloodrelationOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isChildOf data:Danica_Marinkovic,
+        data:Filip_Karadordevic ;
+    :isDaughterOf data:Danica_Marinkovic,
+        data:Filip_Karadordevic ;
+    :isSiblingOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isSisterOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic .
+
+data:Stefan_Karadordevic a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_Karadordevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadordevic,
+        data:Maria_da_Gloria ;
+    :hasBrother data:Stefan_Karadordevic ;
+    :hasFather data:Filip_Karadordevic ;
+    :hasMother data:Danica_Marinkovic ;
+    :hasParent data:Danica_Marinkovic,
+        data:Filip_Karadordevic ;
+    :hasRelation data:Alexander_Karadordevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadordevic,
+        data:Maria_da_Gloria,
+        data:Marija_Karadordevic,
+        data:Peter_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :hasSister data:Marija_Karadordevic ;
+    :isBloodrelationOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isBrotherOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isChildOf data:Danica_Marinkovic,
+        data:Filip_Karadordevic ;
+    :isSiblingOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isSonOf data:Danica_Marinkovic,
+        data:Filip_Karadordevic .
+
+data:Filip_Karadordevic a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_Karadordevic,
+        data:Maria_da_Gloria ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Filip_Karadordevic,
+        data:Peter_Karadordevic ;
+    :hasChild data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :hasDaughter data:Marija_Karadordevic ;
+    :hasFather data:Alexander_Karadordevic ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Alexander_Karadordevic,
+        data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Karadordevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadordevic,
+        data:Maria_da_Gloria,
+        data:Marija_Karadordevic,
+        data:Peter_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :hasSex data:Male ;
+    :hasSon data:Stefan_Karadordevic ;
+    :isAncestorOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isBloodrelationOf data:Filip_Karadordevic,
+        data:Peter_Karadordevic ;
+    :isBrotherOf data:Filip_Karadordevic,
+        data:Peter_Karadordevic ;
+    :isChildOf data:Alexander_Karadordevic,
+        data:Maria_da_Gloria ;
+    :isFatherOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isParentOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic ;
+    :isSiblingOf data:Filip_Karadordevic,
+        data:Peter_Karadordevic ;
+    :isSonOf data:Alexander_Karadordevic,
+        data:Maria_da_Gloria ;
+    :isUncleOf data:Marija_Karadordevic,
+        data:Stefan_Karadordevic .
+

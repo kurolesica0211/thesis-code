@@ -2,84 +2,56 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alice_of_Hesse_and_by_Rhine a :Person,
+data:Teresa_of_Bourbon-Dos_Sicilias a :Person,
         :Woman ;
-    :hasMother data:Queen_Victoria .
+    :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;
+    :hasMother data:Alicia_of_Bourbon-Parma ;
+    :isSisterOf data:Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma .
 
-data:Donata_of_Mecklenburg a :Person,
-        :Woman ;
-    :hasBirthYear 1956 ;
-    :hasFather data:Christian_Louis_of_Mecklenburg-Schwerin ;
-    :hasMother data:Barbara_of_Prussia ;
-    :hasSister data:Edwina_of_Mecklenburg-Schwerin .
-
-data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
+data:Alfonso_XII_of_Spain a :Ancestor,
         :Man,
         :Person .
 
-data:Louis_IV_of_Hesse_and_by_Rhine a :Man,
-        :Person .
-
-data:Thyra_of_Denmark a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Alexandra_of_Hanover_and_Cumberland a :Ancestor,
-        :Person,
+data:Anne_of_Orleans a :Person,
         :Woman ;
-    :hasFather data:Christian_IX_of_Denmark ;
-    :hasMother data:Louise_of_Hesse-Kassel .
+    :hasFather data:Henri_Count_of_Paris .
 
-data:Charlotte_of_Saxe-Altenburg a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Ernst_II_of_Saxe-Altenburg .
-
-data:Christian_IX_of_Denmark a :Ancestor,
-        :Man,
-        :Person .
-
-data:Edwina_of_Mecklenburg-Schwerin a :Person,
-        :Woman ;
-    :hasBirthYear 1960 ;
-    :hasFather data:Christian_Louis_of_Mecklenburg-Schwerin ;
-    :hasMother data:Barbara_of_Prussia .
-
-data:Ernst_II_of_Saxe-Altenburg a :Ancestor,
-        :Man,
-        :Person .
-
-data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Ancestor,
-        :Man,
-        :Person .
-
-data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
-        :Person .
-
-data:Louise_of_Hesse-Kassel a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Queen_Victoria a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Sigismund_of_Prussia a :Ancestor,
-        :Man,
-        :Person .
-
-data:Barbara_of_Prussia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1920 ;
-    :hasDeathYear 1994 ;
-    :hasFather data:Sigismund_of_Prussia ;
-    :hasMother data:Charlotte_of_Saxe-Altenburg .
-
-data:Christian_Louis_of_Mecklenburg-Schwerin a :Ancestor,
+data:Carlo_of_Bourbon-Two_Sicilies a :Ancestor,
         :Man,
         :Person ;
-    :hasBrother data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
-    :hasFather data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
-    :hasMother data:Alexandra_of_Hanover_and_Cumberland .
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1949 .
+
+data:Carlos_de_Borbon-Dos_Sicilias_y_Borbon-Parma a :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2015 ;
+    :hasFather data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon ;
+    :hasMother data:Alicia_of_Bourbon-Parma ;
+    :hasRelation data:Anne_of_Orleans .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person .
+
+data:Mercedes_Princess_of_Asturias a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1880 ;
+    :hasDeathYear 1904 ;
+    :hasFather data:Alfonso_XII_of_Spain .
+
+data:Alfonso_de_Borbon-Dos_Sicilias_y_Borbon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1964 ;
+    :hasFather data:Carlo_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Mercedes_Princess_of_Asturias .
+
+data:Alicia_of_Bourbon-Parma a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 2017 .
 

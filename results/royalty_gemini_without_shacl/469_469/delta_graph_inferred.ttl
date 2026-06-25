@@ -1,0 +1,213 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_I ;
+    :hasRelation data:Archibald_Douglas,
+        data:Carl_Axel_Archibald_Douglas,
+        data:Charles_I,
+        data:Margareta_Lagerfelt,
+        data:Mauritz_Otto_Wenzel_Douglas,
+        data:Otto_von_Habsburg,
+        data:Regina_of_Saxe-Meiningen,
+        data:Walburga_Douglas ;
+    :isAncestorOf data:Mauritz_Otto_Wenzel_Douglas,
+        data:Walburga_Douglas ;
+    :isBloodrelationOf data:Charles_I ;
+    :isBrotherOf data:Charles_I ;
+    :isSiblingOf data:Charles_I .
+
+data:Archibald_Douglas a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Archibald_Douglas ;
+    :hasChild data:Carl_Axel_Archibald_Douglas ;
+    :hasRelation data:Archibald_Douglas,
+        data:Carl_Axel_Archibald_Douglas,
+        data:Charles_I,
+        data:Margareta_Lagerfelt,
+        data:Mauritz_Otto_Wenzel_Douglas,
+        data:Otto_von_Habsburg,
+        data:Regina_of_Saxe-Meiningen,
+        data:Walburga_Douglas ;
+    :hasSon data:Carl_Axel_Archibald_Douglas ;
+    :isAncestorOf data:Carl_Axel_Archibald_Douglas,
+        data:Mauritz_Otto_Wenzel_Douglas ;
+    :isBloodrelationOf data:Archibald_Douglas ;
+    :isBrotherOf data:Archibald_Douglas ;
+    :isFatherOf data:Carl_Axel_Archibald_Douglas ;
+    :isParentOf data:Carl_Axel_Archibald_Douglas ;
+    :isSiblingOf data:Archibald_Douglas ;
+    :isUncleOf data:Carl_Axel_Archibald_Douglas .
+
+data:Margareta_Lagerfelt a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Carl_Axel_Archibald_Douglas ;
+    :hasRelation data:Archibald_Douglas,
+        data:Carl_Axel_Archibald_Douglas,
+        data:Charles_I,
+        data:Margareta_Lagerfelt,
+        data:Mauritz_Otto_Wenzel_Douglas,
+        data:Otto_von_Habsburg,
+        data:Regina_of_Saxe-Meiningen,
+        data:Walburga_Douglas ;
+    :hasSister data:Margareta_Lagerfelt ;
+    :hasSon data:Carl_Axel_Archibald_Douglas ;
+    :isAncestorOf data:Carl_Axel_Archibald_Douglas,
+        data:Mauritz_Otto_Wenzel_Douglas ;
+    :isAuntOf data:Carl_Axel_Archibald_Douglas ;
+    :isBloodrelationOf data:Margareta_Lagerfelt ;
+    :isMotherOf data:Carl_Axel_Archibald_Douglas ;
+    :isParentOf data:Carl_Axel_Archibald_Douglas ;
+    :isSiblingOf data:Margareta_Lagerfelt ;
+    :isSisterOf data:Margareta_Lagerfelt .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Otto_von_Habsburg ;
+    :hasChild data:Walburga_Douglas ;
+    :hasDaughter data:Walburga_Douglas ;
+    :hasRelation data:Archibald_Douglas,
+        data:Carl_Axel_Archibald_Douglas,
+        data:Charles_I,
+        data:Margareta_Lagerfelt,
+        data:Mauritz_Otto_Wenzel_Douglas,
+        data:Otto_von_Habsburg,
+        data:Regina_of_Saxe-Meiningen,
+        data:Walburga_Douglas ;
+    :isAncestorOf data:Mauritz_Otto_Wenzel_Douglas,
+        data:Walburga_Douglas ;
+    :isBloodrelationOf data:Otto_von_Habsburg ;
+    :isBrotherOf data:Otto_von_Habsburg ;
+    :isFatherOf data:Walburga_Douglas ;
+    :isParentOf data:Walburga_Douglas ;
+    :isSiblingOf data:Otto_von_Habsburg ;
+    :isUncleOf data:Walburga_Douglas .
+
+data:Regina_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Walburga_Douglas ;
+    :hasDaughter data:Walburga_Douglas ;
+    :hasRelation data:Archibald_Douglas,
+        data:Carl_Axel_Archibald_Douglas,
+        data:Charles_I,
+        data:Margareta_Lagerfelt,
+        data:Mauritz_Otto_Wenzel_Douglas,
+        data:Otto_von_Habsburg,
+        data:Regina_of_Saxe-Meiningen,
+        data:Walburga_Douglas ;
+    :hasSister data:Regina_of_Saxe-Meiningen ;
+    :isAncestorOf data:Mauritz_Otto_Wenzel_Douglas,
+        data:Walburga_Douglas ;
+    :isAuntOf data:Walburga_Douglas ;
+    :isBloodrelationOf data:Regina_of_Saxe-Meiningen ;
+    :isMotherOf data:Walburga_Douglas ;
+    :isParentOf data:Walburga_Douglas ;
+    :isSiblingOf data:Regina_of_Saxe-Meiningen ;
+    :isSisterOf data:Regina_of_Saxe-Meiningen .
+
+data:Carl_Axel_Archibald_Douglas a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Archibald_Douglas,
+        data:Margareta_Lagerfelt ;
+    :hasBirthYear 1949 ;
+    :hasBrother data:Carl_Axel_Archibald_Douglas ;
+    :hasChild data:Mauritz_Otto_Wenzel_Douglas ;
+    :hasFather data:Archibald_Douglas ;
+    :hasMother data:Margareta_Lagerfelt ;
+    :hasParent data:Archibald_Douglas,
+        data:Margareta_Lagerfelt ;
+    :hasRelation data:Archibald_Douglas,
+        data:Carl_Axel_Archibald_Douglas,
+        data:Charles_I,
+        data:Margareta_Lagerfelt,
+        data:Mauritz_Otto_Wenzel_Douglas,
+        data:Otto_von_Habsburg,
+        data:Regina_of_Saxe-Meiningen,
+        data:Walburga_Douglas ;
+    :hasSon data:Mauritz_Otto_Wenzel_Douglas ;
+    :isAncestorOf data:Mauritz_Otto_Wenzel_Douglas ;
+    :isBloodrelationOf data:Carl_Axel_Archibald_Douglas ;
+    :isBrotherOf data:Carl_Axel_Archibald_Douglas ;
+    :isChildOf data:Archibald_Douglas,
+        data:Margareta_Lagerfelt ;
+    :isFatherOf data:Mauritz_Otto_Wenzel_Douglas ;
+    :isParentOf data:Mauritz_Otto_Wenzel_Douglas ;
+    :isSiblingOf data:Carl_Axel_Archibald_Douglas ;
+    :isSonOf data:Archibald_Douglas,
+        data:Margareta_Lagerfelt ;
+    :isUncleOf data:Mauritz_Otto_Wenzel_Douglas .
+
+data:Mauritz_Otto_Wenzel_Douglas a :Man,
+        :Person ;
+    :hasAncestor data:Archibald_Douglas,
+        data:Carl_Axel_Archibald_Douglas,
+        data:Charles_I,
+        data:Margareta_Lagerfelt,
+        data:Otto_von_Habsburg,
+        data:Regina_of_Saxe-Meiningen,
+        data:Walburga_Douglas ;
+    :hasBirthYear 1994 ;
+    :hasBrother data:Mauritz_Otto_Wenzel_Douglas ;
+    :hasFather data:Carl_Axel_Archibald_Douglas ;
+    :hasMother data:Walburga_Douglas ;
+    :hasParent data:Carl_Axel_Archibald_Douglas,
+        data:Walburga_Douglas ;
+    :hasRelation data:Archibald_Douglas,
+        data:Carl_Axel_Archibald_Douglas,
+        data:Charles_I,
+        data:Margareta_Lagerfelt,
+        data:Mauritz_Otto_Wenzel_Douglas,
+        data:Otto_von_Habsburg,
+        data:Regina_of_Saxe-Meiningen,
+        data:Walburga_Douglas ;
+    :isBloodrelationOf data:Mauritz_Otto_Wenzel_Douglas ;
+    :isBrotherOf data:Mauritz_Otto_Wenzel_Douglas ;
+    :isChildOf data:Carl_Axel_Archibald_Douglas,
+        data:Walburga_Douglas ;
+    :isSiblingOf data:Mauritz_Otto_Wenzel_Douglas ;
+    :isSonOf data:Carl_Axel_Archibald_Douglas,
+        data:Walburga_Douglas .
+
+data:Walburga_Douglas a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Charles_I,
+        data:Otto_von_Habsburg,
+        data:Regina_of_Saxe-Meiningen ;
+    :hasBirthYear 1958 ;
+    :hasChild data:Mauritz_Otto_Wenzel_Douglas ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMarriageYear 1992 ;
+    :hasMother data:Regina_of_Saxe-Meiningen ;
+    :hasParent data:Otto_von_Habsburg,
+        data:Regina_of_Saxe-Meiningen ;
+    :hasRelation data:Archibald_Douglas,
+        data:Carl_Axel_Archibald_Douglas,
+        data:Charles_I,
+        data:Margareta_Lagerfelt,
+        data:Mauritz_Otto_Wenzel_Douglas,
+        data:Otto_von_Habsburg,
+        data:Regina_of_Saxe-Meiningen,
+        data:Walburga_Douglas ;
+    :hasSister data:Walburga_Douglas ;
+    :hasSon data:Mauritz_Otto_Wenzel_Douglas ;
+    :isAncestorOf data:Mauritz_Otto_Wenzel_Douglas ;
+    :isAuntOf data:Mauritz_Otto_Wenzel_Douglas ;
+    :isBloodrelationOf data:Walburga_Douglas ;
+    :isChildOf data:Otto_von_Habsburg,
+        data:Regina_of_Saxe-Meiningen ;
+    :isDaughterOf data:Otto_von_Habsburg,
+        data:Regina_of_Saxe-Meiningen ;
+    :isMotherOf data:Mauritz_Otto_Wenzel_Douglas ;
+    :isParentOf data:Mauritz_Otto_Wenzel_Douglas ;
+    :isSiblingOf data:Walburga_Douglas ;
+    :isSisterOf data:Walburga_Douglas .
+

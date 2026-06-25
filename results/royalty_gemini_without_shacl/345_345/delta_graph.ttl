@@ -2,58 +2,56 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Count_Ariprand a :Man ;
-    :isFatherOf data:Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli .
+data:Adolphus_Frederick_VI a :Man,
+        :Person .
 
-data:Johann_Gustav_Hans_Hochuli a :Man ;
-    :isFatherOf data:Chantal_Hochuli .
+data:Christian_IX a :Man,
+        :Person ;
+    :isFatherOf data:Thyra_of_Denmark .
 
-data:Otto_Heinrich a :Man ;
-    :isSonOf data:Prince_Ludwig_Rudolph_of_Hannover .
+data:Frederick_Francis_II a :Man,
+        :Person ;
+    :isFatherOf data:Frederick_Francis_III .
 
-data:Prince_Christian_1985 a :Man ;
-    :isSonOf data:Chantal_Hochuli,
-        data:Ernst_August_von_Hannover .
+data:Frederick_Francis_IV a :Man,
+        :Person ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMarriageYear 1904 ;
+    :hasMother data:Anastasia_Mikhailovna ;
+    :hasRelation data:Alexandra_of_Hanover ;
+    :hasSon data:Friedrich_Franz_son ;
+    :isSiblingOf data:Alexandrine,
+        data:Cecilie .
 
-data:Prince_Ernst_August_1983 a :Man ;
-    :isSonOf data:Chantal_Hochuli,
-        data:Ernst_August_von_Hannover .
+data:Johann_Albrecht a :Man,
+        :Person ;
+    :isSiblingOf data:Frederick_Francis_III .
 
-data:Prince_Rainier_III a :Man ;
-    :isFatherOf data:Princess_Caroline_of_Monaco .
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Thyra_of_Denmark .
 
-data:Princess_Alexandra_1999 a :Woman ;
-    :isDaughterOf data:Ernst_August_von_Hannover,
-        data:Princess_Caroline_of_Monaco .
+data:Alexandrine a :Person,
+        :Woman .
 
-data:Rosmarie_Lembeck a :Woman ;
-    :isMotherOf data:Chantal_Hochuli .
+data:Anastasia_Mikhailovna a :Person,
+        :Woman .
 
-data:Prince_Ernest_Augustus_of_Hannover a :Man ;
-    :hasBirthYear 1914 ;
-    :hasDeathYear 1987 .
+data:Cecilie a :Person,
+        :Woman .
 
-data:Prince_Ludwig_Rudolph_of_Hannover a :Man ;
-    :isBrotherOf data:Ernst_August_von_Hannover .
+data:Ernest_Augustus_of_Hanover a :Man,
+        :Person .
 
-data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;
-    :hasBirthYear 1925 ;
-    :hasDeathYear 1980 .
+data:Friedrich_Franz_son a :Man,
+        :Person .
 
-data:Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli a :Woman ;
-    :isMotherOf data:Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli .
+data:Thyra_of_Denmark a :Person,
+        :Woman .
 
-data:Princess_Caroline_of_Monaco a :Woman .
-
-data:Ernst_August_von_Hannover a :Man ;
-    :hasBirthYear 1954 ;
-    :hasFather data:Prince_Ernest_Augustus_of_Hannover ;
-    :hasMarriageYear 1981,
-        1999 ;
-    :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
-    :hasRelation data:Chantal_Hochuli,
-        data:Princess_Caroline_of_Monaco .
-
-data:Chantal_Hochuli a :Woman ;
-    :hasBirthYear 1955 .
+data:Frederick_Francis_III a :Man,
+        :Person .
 

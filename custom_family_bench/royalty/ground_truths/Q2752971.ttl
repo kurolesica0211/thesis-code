@@ -7,16 +7,119 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven a :Person ;
+    rdfs:label "David Mountbatten, 3rd Marquess of Milford Haven" ;
+    data:posIndicesFull "11:67" ;
+    data:posIndicesPart "1090:1098",
+        "1102:1109",
+        "1110:1115",
+        "1141:1152",
+        "1212:1219",
+        "1220:1225",
+        "1445:1452",
+        "1453:1458",
+        "1487:1494",
+        "1495:1500",
+        "323:328",
+        "337:348" ;
+    data:wdtLink wdt:Q2752971 ;
+    :alsoKnownAs "David Michael Mountbatten, 3rd Marquess of Milford Haven" ;
+    :hasParent data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasSex data:male .
+
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Person ;
+    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma" ;
+    data:posIndicesFull "599:625" ;
+    data:posIndicesPart "1141:1152" ;
+    data:wdtLink wdt:Q157068 ;
+    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten",
+        "Lord Louis Mountbatten",
+        "Lord Mountbatten",
+        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma",
+        "Louis Mountbatten",
+        "Prince Louis of Battenberg",
+        "The Earl Mountbatten of Burma" ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:male .
+
+data:Louise_Mountbatten a :Person ;
+    rdfs:label "Louise Mountbatten" ;
+    data:posIndicesFull "599:625",
+        "606:625" ;
+    data:posIndicesPart "1141:1152" ;
+    data:wdtLink wdt:Q115477 ;
+    :alsoKnownAs "Countess of Gripsholm",
+        "Lady Louise Alexandra Marie Irene Mountbatten",
+        "Lady Louise Mountbatten",
+        "Louise Alexandra Marie Irene Mountbatten",
+        "Louise Alexandra Marie Irene of Battenberg",
+        "Louise of Battenberg",
+        "Louise of Sweden",
+        "Mrs Olsson",
+        "Princess Louise Alexandra Marie Irene of Battenberg",
+        "Princess Louise of Battenberg",
+        "Queen Louise of Sweden" ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:female .
+
+data:Princess_Alice_of_Battenberg a :Person ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "1178:1182",
+        "1405:1409",
+        "1471:1476" ;
+    data:posIndicesPart "1591:1601" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven a :Person ;
+    rdfs:label "George Mountbatten, 2nd Marquess of Milford Haven" ;
+    data:posIndicesFull "203:252",
+        "397:446",
+        "469:496" ;
+    data:posIndicesPart "1090:1098",
+        "1102:1109",
+        "1110:1115",
+        "1141:1152",
+        "1212:1219",
+        "1220:1225",
+        "1445:1452",
+        "1453:1458",
+        "1487:1494",
+        "1495:1500",
+        "337:348" ;
+    data:wdtLink wdt:Q335129 ;
+    :alsoKnownAs "George Louis Victor Henry Serge Mountbatten, 2nd Marquess of Milford Haven",
+        "George Louis Victor Henry Serge Mountbatten, Earl of Medina",
+        "George Medina",
+        "George Milford Haven",
+        "George Mountbatten, Earl of Medina",
+        "Prince George Louis Victor Henry Serge of Battenberg",
+        "Prince George of Battenberg" ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:male .
+
+data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven a :Person ;
     rdfs:label "Nadejda Mountbatten, Marchioness of Milford Haven" ;
     data:posIndicesFull "469:496" ;
     data:posIndicesPart "1102:1109",
@@ -41,76 +144,14 @@ data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven a :Ancestor,
         "Nadejda Mountbatten, Countess of Medina",
         "Nadejda de Torby",
         "Princess George of Battenberg" ;
-    :hasChild data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :hasSex data:female ;
-    :hasSon data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :isMotherOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :isParentOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven .
+    :hasSex data:female .
 
-data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Philip, Duke of Edinburgh" ;
-    data:posIndicesFull "838:851",
-        "838:873",
-        "845:873" ;
-    data:posIndicesPart "933:939" ;
-    data:wdtLink wdt:Q80976 ;
-    :alsoKnownAs "H.R.H. Prince Philip",
-        "H.R.H. The Duke Of Edinburgh",
-        "Lieutenant Philip Mountbatten",
-        "Philip Edinburgh",
-        "Philip Mountbatten",
-        "Philip Mountbatten; Prince Philip of Greece and Denmark",
-        "Philip of Greece and Denmark",
-        "Prince Philip",
-        "Prince Philip of Greece and Denmark",
-        "The Prince Philip, Duke of Edinburgh" ;
-    :hasMother data:Princess_Alice_of_Battenberg ;
-    :hasParent data:Princess_Alice_of_Battenberg ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Alice_of_Battenberg ;
-    :isSonOf data:Princess_Alice_of_Battenberg .
-
-data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "David Mountbatten, 3rd Marquess of Milford Haven" ;
-    data:posIndicesFull "11:67" ;
-    data:posIndicesPart "1090:1098",
-        "1102:1109",
-        "1110:1115",
-        "1141:1152",
-        "1212:1219",
-        "1220:1225",
-        "1445:1452",
-        "1453:1458",
-        "1487:1494",
-        "1495:1500",
-        "323:328",
-        "337:348" ;
-    data:wdtLink wdt:Q2752971 ;
-    :alsoKnownAs "David Michael Mountbatten, 3rd Marquess of Milford Haven" ;
-    :hasFather data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
-    :hasMother data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
-    :hasParent data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
-    :hasSex data:male ;
-    :isChildOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
-    :isSonOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven .
-
-data:Prince_Louis_of_Battenberg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Louis_of_Battenberg a :Person ;
     rdfs:label "Prince Louis of Battenberg" ;
     data:posIndicesFull "599:625",
         "606:625" ;
     data:posIndicesPart "1591:1601",
+        "838:844",
         "933:939" ;
     data:wdtLink wdt:Q57468 ;
     :alsoKnownAs "Count Alexander of Battenberg",
@@ -123,28 +164,9 @@ data:Prince_Louis_of_Battenberg a :Ancestor,
         "Prince Louis Alexander of Battenberg",
         "Sir Louis Alexander Mountbatten",
         "Sir Louis Mountbatten" ;
-    :hasChild data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :hasDaughter data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :hasSex data:male ;
-    :hasSon data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :isFatherOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isParentOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg .
+    :hasSex data:male .
 
-data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Person ;
     rdfs:label "Princess Victoria of Hesse and by Rhine" ;
     data:posIndicesFull "630:669",
         "639:669" ;
@@ -158,191 +180,9 @@ data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
         "Victoria Milford Haven",
         "Victoria of Hesse and by Rhine",
         "Victoria, Marchioness of Milford Haven" ;
-    :hasChild data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :hasDaughter data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :hasSex data:female ;
-    :hasSon data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :isMotherOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isParentOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg .
+    :hasSex data:female .
 
-data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma" ;
-    data:posIndicesFull "599:625" ;
-    data:posIndicesPart "1141:1152" ;
-    data:wdtLink wdt:Q157068 ;
-    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten",
-        "Lord Louis Mountbatten",
-        "Lord Mountbatten",
-        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma",
-        "Louis Mountbatten",
-        "Prince Louis of Battenberg",
-        "The Earl Mountbatten of Burma" ;
-    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
-    :hasFather data:Prince_Louis_of_Battenberg ;
-    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :hasParent data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :hasSex data:male ;
-    :hasSister data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isBrotherOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isChildOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isSonOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isUncleOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
-        data:Prince_Philip-_Duke_of_Edinburgh .
+data:female a :Female .
 
-data:Louise_Mountbatten a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Louise Mountbatten" ;
-    data:posIndicesFull "599:625",
-        "606:625" ;
-    data:posIndicesPart "1141:1152" ;
-    data:wdtLink wdt:Q115477 ;
-    :alsoKnownAs "Countess of Gripsholm",
-        "Lady Louise Alexandra Marie Irene Mountbatten",
-        "Lady Louise Mountbatten",
-        "Louise Alexandra Marie Irene Mountbatten",
-        "Louise Alexandra Marie Irene of Battenberg",
-        "Louise of Battenberg",
-        "Louise of Sweden",
-        "Mrs Olsson",
-        "Princess Louise Alexandra Marie Irene of Battenberg",
-        "Princess Louise of Battenberg",
-        "Queen Louise of Sweden" ;
-    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :hasFather data:Prince_Louis_of_Battenberg ;
-    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :hasParent data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Alice_of_Battenberg ;
-    :isAuntOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isChildOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isDaughterOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Princess_Alice_of_Battenberg ;
-    :isSisterOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Princess_Alice_of_Battenberg .
-
-data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George Mountbatten, 2nd Marquess of Milford Haven" ;
-    data:posIndicesFull "203:252",
-        "397:446",
-        "469:496" ;
-    data:posIndicesPart "1090:1098",
-        "1102:1109",
-        "1110:1115",
-        "1141:1152",
-        "1212:1219",
-        "1220:1225",
-        "1445:1452",
-        "1453:1458",
-        "1487:1494",
-        "1495:1500",
-        "337:348" ;
-    data:wdtLink wdt:Q335129 ;
-    :alsoKnownAs "George Louis Victor Henry Serge Mountbatten, 2nd Marquess of Milford Haven",
-        "George Louis Victor Henry Serge Mountbatten, Earl of Medina",
-        "George Medina",
-        "George Milford Haven",
-        "George Mountbatten, Earl of Medina",
-        "Prince George Louis Victor Henry Serge of Battenberg",
-        "Prince George of Battenberg" ;
-    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :hasChild data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :hasFather data:Prince_Louis_of_Battenberg ;
-    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :hasParent data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :hasSex data:male ;
-    :hasSister data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :hasSon data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :isBrotherOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isChildOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isFatherOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :isParentOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isSonOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh .
-
-data:Princess_Alice_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Alice of Battenberg" ;
-    data:posIndicesFull "1178:1182",
-        "1405:1409",
-        "1471:1476" ;
-    data:posIndicesPart "1591:1601" ;
-    data:wdtLink wdt:Q116062 ;
-    :alsoKnownAs "Alice",
-        "Alice of Battenberg",
-        "Alice, Princess Andrew of Greece and Denmark",
-        "Mother Superior Alice-Elizabeth",
-        "Princess Alice of Greece and Denmark",
-        "Princess Andrew of Greece and Denmark",
-        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
-        "Victoria Alice Elizabeth Julia Marie",
-        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
-    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :hasChild data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasFather data:Prince_Louis_of_Battenberg ;
-    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :hasParent data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :hasSex data:female ;
-    :hasSister data:Louise_Mountbatten ;
-    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isAuntOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :isChildOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isDaughterOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten ;
-    :isSisterOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten .
+data:male a :Male .
 

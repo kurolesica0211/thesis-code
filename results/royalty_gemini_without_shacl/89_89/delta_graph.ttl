@@ -2,52 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:GrandDuchessElenaVladimirovnaOfRussia a :Person,
-        :Woman ;
-    :hasBirthYear 1882 ;
-    :hasDeathYear 1957 ;
-    :hasFather data:GrandDukeVladimirAlexandrovichOfRussia ;
-    :hasMother data:MarieOfMecklenburgSchwerin ;
-    :isSisterOf data:GrandDukeKirillVladimirovich .
-
-data:KostasSimitis a :Man,
+data:Grand_Duke_Kirill_Vladimirovich a :Man,
         :Person ;
-    :hasFather data:GeorgeSimitis .
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
 
-data:PrinceNicholasOfGreeceAndDenmark a :Man,
+data:Kostas_Simitis a :Man,
+        :Person ;
+    :hasFather data:George_Simitis .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Man,
         :Person ;
     :alsoKnownAs "Nicolas Leprince"^^xsd:string ;
     :hasBirthYear 1872 ;
+    :hasBrother data:Constantine_of_Greece,
+        data:George_of_Greece ;
     :hasDeathYear 1938 ;
-    :hasFather data:KingGeorgeIOfGreece ;
+    :hasFather data:King_George_I_of_Greece ;
     :hasMarriageYear 1902 ;
-    :hasMother data:QueenOlga ;
-    :hasSex "male"^^xsd:string ;
-    :isBrotherOf data:Constantine,
-        data:George ;
+    :hasMother data:Queen_Olga ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
     :knownAs "Greek Nicky"^^xsd:string .
 
-data:Constantine a :Man,
+data:Constantine_of_Greece a :Man,
         :Person .
 
-data:George a :Man,
+data:George_Simitis a :Man,
         :Person .
 
-data:GeorgeSimitis a :Man,
+data:George_of_Greece a :Man,
         :Person .
 
-data:GrandDukeKirillVladimirovich a :Man,
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man,
         :Person .
 
-data:GrandDukeVladimirAlexandrovichOfRussia a :Man,
+data:King_George_I_of_Greece a :Man,
         :Person .
 
-data:KingGeorgeIOfGreece a :Man,
-        :Person .
-
-data:MarieOfMecklenburgSchwerin a :Person,
+data:Marie_of_Mecklenburg-Schwerin a :Person,
         :Woman .
 
-data:QueenOlga a :Person,
+data:Queen_Olga a :Person,
         :Woman .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,
+        :Woman ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasMother data:Marie_of_Mecklenburg-Schwerin .
 

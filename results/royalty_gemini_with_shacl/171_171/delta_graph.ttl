@@ -2,52 +2,40 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Antony_Armstrong-Jones a :Ancestor,
-        :Man,
+data:Alfonso_son_of_Alfonso_XIII a :Man,
         :Person ;
-    :hasSex data:Male_Sex ;
-    :isFatherOf data:David_Armstrong-Jones .
+    :hasFather data:Alfonso_XIII_of_Spain .
 
-data:Charles_Stanhope a :Man,
+data:Beatriz_of_Spain a :Person,
+        :Woman .
+
+data:Enrico_Eugenio a :Man,
+        :Person .
+
+data:Gonzalo_son_of_Alfonso_XIII a :Man,
         :Person ;
-    :hasSex data:Male_Sex .
+    :hasFather data:Alfonso_XIII_of_Spain .
 
-data:Lady_Sarah_Chatto a :Person,
-        :Woman ;
-    :hasSex data:Female_Sex ;
-    :isSisterOf data:David_Armstrong-Jones .
-
-data:Princess_Margaret a :Ancestor,
+data:Infanta_Maria_Cristina_of_Spain a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female_Sex ;
-    :isMotherOf data:David_Armstrong-Jones .
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :isAuntOf data:Juan_Carlos_I_of_Spain .
 
-data:Viscount_Linley a :Man,
-        :Person ;
-    :hasSex data:Male_Sex ;
-    :isBrotherOf data:Lady_Margarita_Armstrong-Jones ;
-    :isSonOf data:David_Armstrong-Jones,
-        data:Serena_Stanhope .
+data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla a :Person,
+        :Woman .
 
-data:Serena_Stanhope a :Ancestor,
+data:Juan_Carlos_I_of_Spain a :Man,
+        :Person .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female_Sex ;
-    :isMotherOf data:Lady_Margarita_Armstrong-Jones .
+        :Woman .
 
-data:Lady_Margarita_Armstrong-Jones a :Person,
-        :Woman ;
-    :hasBirthYear 2002 ;
-    :hasSex data:Female_Sex .
-
-data:David_Armstrong-Jones a :Ancestor,
+data:Alfonso_XIII_of_Spain a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male_Sex ;
-    :isFatherOf data:Lady_Margarita_Armstrong-Jones .
-
-data:Female_Sex a :Female .
-
-data:Male_Sex a :Male .
+        :Person .
 

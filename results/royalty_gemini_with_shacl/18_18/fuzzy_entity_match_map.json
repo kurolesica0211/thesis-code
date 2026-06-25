@@ -16,56 +16,17 @@
       "qid": "Q110952627",
       "label": "Princess María de la Esperanza of Bourbon-Two Sicilies",
       "distance": 0,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Infante_Carlos-_Duke_of_Calabria",
-      "qid": "Q526743",
-      "label": "Infante Carlos, Duke of Calabria",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Juan_Carlos_I_of_Spain",
-      "qid": "Q19943",
-      "label": "Juan Carlos I of Spain",
-      "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Louise_of_Orléans",
       "qid": "Q962762",
       "label": "Princess Louise of Orléans",
       "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Infante_Juan-_Count_of_Barcelona",
-      "qid": "Q313857",
-      "label": "Infante Juan, Count of Barcelona",
-      "distance": 2,
-      "gender": "male"
+      "gender": null
     }
   ],
   "entities": [
-    {
-      "extracted_uri": "http://example.org/data/Prince_Carlos_of_Bourbon-Two_Sicilies",
-      "extracted_local_name": "Prince_Carlos_of_Bourbon-Two_Sicilies",
-      "embedding_text": "Prince Carlos of Bourbon-Two Sicilies",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Infante_Carlos-_Duke_of_Calabria",
-      "ground_truth_qid": "Q526743",
-      "ground_truth_label": "Infante Carlos, Duke of Calabria",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Prince Carlos of Bourbon-Two Sicilies",
-      "best_candidate_label": "Infante Carlos, Duke of Calabria",
-      "best_candidate_qid": "Q526743",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 1.0
-    },
     {
       "extracted_uri": "http://example.org/data/Princess_Louise_of_Orleans",
       "extracted_local_name": "Princess_Louise_of_Orleans",
@@ -77,48 +38,12 @@
       "ground_truth_qid": "Q962762",
       "ground_truth_label": "Princess Louise of Orléans",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Louise of Orleans",
       "best_candidate_label": "Princess Louise of Orléans",
       "best_candidate_qid": "Q962762",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Infante_Juan_Count_of_Barcelona",
-      "extracted_local_name": "Infante_Juan_Count_of_Barcelona",
-      "embedding_text": "Infante Juan Count of Barcelona",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 0.9841269841269842,
-      "ground_truth_uri": "http://example.com/data#Infante_Juan-_Count_of_Barcelona",
-      "ground_truth_qid": "Q313857",
-      "ground_truth_label": "Infante Juan, Count of Barcelona",
-      "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Infante Juan- Count of Barcelona",
-      "best_candidate_label": "Infante Juan, Count of Barcelona",
-      "best_candidate_qid": "Q313857",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.9841269841269842
-    },
-    {
-      "extracted_uri": "http://example.org/data/King_Juan_Carlos_I_of_Spain",
-      "extracted_local_name": "King_Juan_Carlos_I_of_Spain",
-      "embedding_text": "King Juan Carlos I of Spain",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 0.9193548387096775,
-      "ground_truth_uri": "http://example.com/data#Juan_Carlos_I_of_Spain",
-      "ground_truth_qid": "Q19943",
-      "ground_truth_label": "Juan Carlos I of Spain",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Juan Carlos I of Spain",
-      "best_candidate_label": "Juan Carlos I of Spain",
-      "best_candidate_qid": "Q19943",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.9193548387096775
     },
     {
       "extracted_uri": "http://example.org/data/Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies",
@@ -131,12 +56,84 @@
       "ground_truth_qid": "Q110952627",
       "ground_truth_label": "Princess María de la Esperanza of Bourbon-Two Sicilies",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Maria de la Esperanza",
       "best_candidate_label": "Princess María de la Esperanza of Bourbon-Two Sicilies",
       "best_candidate_qid": "Q110952627",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.75
+    },
+    {
+      "extracted_uri": "http://example.org/data/Infante_Juan_Count_of_Barcelona",
+      "extracted_local_name": "Infante_Juan_Count_of_Barcelona",
+      "embedding_text": "Infante Juan Count of Barcelona",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Maria de la Esperanza",
+      "best_candidate_label": "Princess María de la Esperanza of Bourbon-Two Sicilies",
+      "best_candidate_qid": "Q110952627",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.15384615384615385
+    },
+    {
+      "extracted_uri": "http://example.org/data/King_Juan_Carlos_I_of_Spain",
+      "extracted_local_name": "King_Juan_Carlos_I_of_Spain",
+      "embedding_text": "King Juan Carlos I of Spain",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Maria de la Esperanza",
+      "best_candidate_label": "Princess María de la Esperanza of Bourbon-Two Sicilies",
+      "best_candidate_qid": "Q110952627",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.20833333333333334
+    },
+    {
+      "extracted_uri": "http://example.org/data/Philippe_Count_of_Paris",
+      "extracted_local_name": "Philippe_Count_of_Paris",
+      "embedding_text": "Philippe Count of Paris",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Louise of Orléans",
+      "best_candidate_label": "Princess Louise of Orléans",
+      "best_candidate_qid": "Q962762",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Carlos_of_Bourbon-Two_Sicilies",
+      "extracted_local_name": "Prince_Carlos_of_Bourbon-Two_Sicilies",
+      "embedding_text": "Prince Carlos of Bourbon-Two Sicilies",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Louise of Orléans",
+      "best_candidate_label": "Princess Louise of Orléans",
+      "best_candidate_qid": "Q962762",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.0
     },
     {
       "extracted_uri": "http://example.org/data/Prince_Pedro_Gastao_of_Orleans-Braganza",
@@ -150,11 +147,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Princess Louise of Orléans",
+      "best_candidate_label": "Princess Louise of Orléans",
+      "best_candidate_qid": "Q962762",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.0
     },
     {
       "extracted_uri": "http://example.org/data/Prince_Pedro_de_Alcantara_of_Orleans-Braganza",
@@ -168,11 +165,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Princess Louise of Orléans",
+      "best_candidate_label": "Princess Louise of Orléans",
+      "best_candidate_qid": "Q962762",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.0
     },
     {
       "extracted_uri": "http://example.org/data/Princess_Maria_de_las_Mercedes",
@@ -194,8 +191,8 @@
     }
   ],
   "summary": {
-    "entities_total": 8,
-    "entities_matched": 5,
-    "entities_unmatched": 3
+    "entities_total": 9,
+    "entities_matched": 2,
+    "entities_unmatched": 7
   }
 }

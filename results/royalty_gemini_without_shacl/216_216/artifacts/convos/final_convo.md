@@ -69,148 +69,45 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-George VI (Albert Frederick Arthur George; 14 December 1895 – 6 February 1952) was King of the United Kingdom and the Dominions of the British Commonwealth from 11 December 1936 until his death in 1952.
-The future George VI was born during the reign of his great-grandmother Queen Victoria; he was named Albert at birth after his late great-grandfather Prince Albert of Saxe-Coburg and Gotha and was known as "Bertie" to his family and close friends.
-His father ascended the throne as George V in 1910.
-He married Lady Elizabeth Bowes-Lyon in 1923, and they had two daughters, Elizabeth and Margaret.
-His elder brother ascended the throne as Edward VIII after their father died in 1936, but Edward abdicated later that year to marry the twice-divorced American socialite Wallis Simpson.
-As heir presumptive to Edward VIII, Albert became king, taking the regnal name George VI.
-George VI was seen as sharing the hardships of the common people and his popularity soared.
-Buckingham Palace was bombed during the Blitz while the King and Queen were there, and his younger brother the Duke of Kent was killed on active service.
-George became known as a symbol of British determination to win the war.
-George relinquished the title of Emperor of India in June 1948 and instead adopted the new title of Head of the Commonwealth.
-He was succeeded by his elder daughter, Elizabeth II.
+Baroness Armgard of Sierstorpff-Cramm, known as Armgard von Cramm (German: Armgard Kunigunde Alharda Agnes Oda von Cramm; 18 December 1883 – 27 April 1971) was the mother of Prince Bernhard of Lippe-Biesterfeld, Prince consort of Queen Juliana of the Netherlands.
 Early life
 
-Albert was born at 3:05 am on 14 December 1895 at York Cottage, on the Sandringham Estate in Norfolk, during the reign of his great-grandmother Queen Victoria.
-His father was Prince George, Duke of York (later King George V), the second and only surviving son of the Prince and Princess of Wales (later King Edward VII and Queen Alexandra).
-His mother, the Duchess of York (later Queen Mary), was the eldest child and only daughter of Francis, Duke of Teck, and Princess Mary Adelaide, Duchess of Teck.
-His birth date coincided with the 34th anniversary of the death of his great-grandfather Albert, Prince Consort.
-Uncertain of how the Prince Consort's widow, Queen Victoria, would take the news of the birth, the Prince of Wales wrote to the Duke of York that the Queen had been "rather distressed".
-"
+Armgard was born at Bad Driburg, Kingdom of Prussia (now in North Rhine-Westphalia, Germany), as the fourth child and fourth daughter of Baron Aschwin of Sierstorpff-Cramm, and his wife, Baroness Hedwig of Sierstorpff-Driburg.
+By birth, she belonged to the ancient German Cramm family.
+Marriages
 
+Armgard married on 24 October 1905 at Hanover to Count Bodo von Oeynhausen, an officer in the 8th Hussars in Paderborn, son of Count Erich von Oeynhausen and his wife, Therese von Lenthe.
+Armgard married secondly, after the death of her ex-husband, on 4 March 1909 at Oelber, Brunswick to Prince Bernhard of Lippe-Biesterfeld, a younger son of Ernest II, Count of Lippe-Biesterfeld, regent (1897–1904) of the Principality of Lippe, and his wife, Countess Karoline von Wartensleben.
+The marriage was at first considered morganatic, as Armgard's family didn't belong to one of the reigning or former reigning families.
+Thus, she was created "Countess of Biesterfeld" (German: Gräfin von Biesterfeld) on 8 February 1909.
+On 24 February 1916, her marriage was declared equal and she was made "Princess of Lippe-Biesterfeld" (German: Prinzessin zur Lippe-Biesterfeld) along with the style Serene Highness by her brother-in-law, Leopold IV, Prince of Lippe, and this title was extended to her two sons in order to produce a new branch of the Lippe family.
+World War II
 
-The Queen was mollified by the proposal to name the new baby Albert, and wrote to the Duchess of York: "I am all impatience to see the new one, born on such a sad day but rather more dear to me, especially as he will be called by that dear name which is a byword for all that is great and good."
-Consequently, he was baptised "Albert Frederick Arthur George" at St Mary Magdalene Church, Sandringham on 17 February 1896.
-Formally he was His Highness Prince Albert of York; within the royal family he was known informally as "Bertie".
-Albert was fourth in line to the throne at birth, after his grandfather, father and elder brother, Edward.
-Queen Victoria died on 22 January 1901, and the Prince of Wales succeeded her as King Edward VII.
-Prince Albert moved up to third in line to the throne, after his father and elder brother.
-Military career and education
+After the death of her husband in 1934, Armgard moved into Reckenwalde palace with her sons and managed an estate in Wojnowo, Lubusz Voivodeship, Province of Brandenburg (now Wojnowo, Poland), together with her new partner, Alexis Pantchoulidzew, an exiled Russian nobleman.
+Alexis accompanied Armgard to the wedding of Bernhard to Princess Juliana.
+During World War II Armgard and Alexis were observed by the local Gestapo.
+The SS demanded in September 1944 in Recke, one of Armgard's properties, Schloss Woynowo Walde for military purposes.
+Armgard and Alexis gave an account of the withdrawal in 1945 of the Wehrmacht behind the Oder-line on their estate at Neumark.
+Wim Klinkenberg and some other writers have accused Armgard of sexual promiscuity, intrigue, conspiracy, and – as with her son Aschwin – of Nazi sympathies.
+In March 2004, her son Bernhard tried to rectify this image with an open letter to The Times.
+Life in the Netherlands
 
-Beginning in 1909, Albert attended the Royal Naval College, Osborne, as a naval cadet.
-In 1911, he came bottom of the class in the final examination, but despite this he progressed to the Royal Naval College, Dartmouth.
-When his grandfather Edward VII died in 1910, his father became King George V. Prince Edward became Prince of Wales, with Albert second in line to the throne.
-In February 1918, Albert was appointed Officer in Charge of Boys at the Royal Naval Air Service's training establishment at Cranwell.
-With the establishment of the Royal Air Force Albert transferred from the Royal Navy to the Royal Air Force.
-He was the first member of the British royal family to be certified as a fully qualified pilot.
-The prince qualified as an RAF pilot on 31 July 1919 and was promoted to squadron leader the following day.
-On 4 June 1920, his father created him Duke of York, Earl of Inverness and Baron Killarney.
-He began to take on more royal duties.
-Through such visits he acquired the nickname of the "Industrial Prince".
-His stutter, and his embarrassment over it, together with a tendency to shyness, caused him to appear less confident in public than his older brother, Edward.
-That year, Albert met for the first time since childhood Lady Elizabeth Bowes-Lyon, the youngest daughter of the Earl and Countess of Strathmore.
-Elizabeth rejected his proposal twice, in 1921 and 1922, reportedly because she was reluctant to make the sacrifices necessary to become a member of the royal family.
-After a protracted courtship, Elizabeth agreed to marry him.
-Albert and Elizabeth were married on 26 April 1923 at Westminster Abbey.
-Albert's marriage to someone not of royal birth was considered a modernising gesture.
-The newly formed British Broadcasting Company wished to record and broadcast the event on radio, but the Abbey Chapter vetoed the idea (although the Dean, Herbert Edward Ryle, was in favour).
-From December 1924 to April 1925, the Duke and Duchess toured Kenya, Uganda, and the Sudan, travelling via the Suez Canal and Aden.
-The Duke and Logue practised breathing exercises, and the Duchess rehearsed with him patiently.
-The Duke and Duchess had two children, Elizabeth (called "Lilibet" by the family, later Elizabeth II) in 1926 and Margaret in 1930.
-The family lived at White Lodge, Richmond Park, and then at 145 Piccadilly, rather than one of the royal palaces.
-In 1931, the Canadian prime minister, R. B. Bennett, considered Albert for Governor General of Canada—a proposal that King George V rejected on the advice of the Secretary of State for Dominion Affairs, J. H. Thomas.
-Reign
+She lived from early 1952 with her partner Alexis Pantchoulidzew in House Warmelo at Diepenheim.
+Alexis went on to be the Netherlands' sole representative at the 1956 Summer Olympics, competing in dressage.
+Armgard was a convert to Roman Catholicism like her granddaughter Princess Irene, but decided against attending Irene's controversial wedding to Carlos Hugo, Duke of Parma, which neither the Dutch royal family nor any Dutch diplomatic representative attended.
+The family nevertheless gathered at Armgard's home for the television coverage of the wedding.
+Death
 
-Reluctant king
-
-King George V had severe reservations about Prince Edward, saying "After I am dead, the boy will ruin himself in twelve months" and "I pray God that my eldest son will never marry and that nothing will come between Bertie and Lilibet and the throne."
-On 20 January 1936, George V died and Edward ascended the throne as King Edward VIII.
-In the Vigil of the Princes, Prince Albert and his three brothers (the new king; Prince Henry, Duke of Gloucester; and Prince George, Duke of Kent) took a shift standing guard over their father's body as it lay in state, in a closed casket, in Westminster Hall.
-As Edward was unmarried and had no children, Albert was the heir presumptive to the throne.
-Less than a year later, on 11 December 1936, Edward abdicated in order to marry Wallis Simpson, who was divorced from her first husband and divorcing her second.
-Edward had been advised by British prime minister Stanley Baldwin that he could not remain king and marry a divorced woman with two living ex-husbands.
-The day before the abdication, Albert went to London to see his mother, Queen Mary.
-"
-
-
-On the day of Edward's abdication, the Oireachtas, the parliament of the Irish Free State, removed all direct mention of the monarch from the Irish constitution.
-No evidence has been found to support the contemporaneous rumour that the government considered bypassing him, his children and his brother Prince Henry, in favour of their younger brother Prince George, Duke of Kent.
-This seems to have been suggested on the grounds that Prince George was at that time the only brother with a son.
-Early reign
-
-Albert assumed the regnal name "George VI" to emphasise continuity with his father and restore confidence in the monarchy.
-The beginning of George VI's reign was taken up by questions surrounding his predecessor and brother, whose titles, style and position were uncertain.
-He had been introduced as "His Royal Highness Prince Edward" for the abdication broadcast, but George VI felt that by abdicating and renouncing the succession, Edward had lost the right to bear royal titles, including "Royal Highness".
-In settling the issue, George's first act as king was to confer upon Edward the title "Duke of Windsor" with the style "Royal Highness", but the letters patent creating the dukedom prevented any wife or children from bearing royal styles.
-George VI was forced to buy from Edward the royal residences of Balmoral Castle and Sandringham House, as these were private properties and did not pass to him automatically.
-Three days after his accession, on his 41st birthday, he invested his wife, the new queen consort, with the Order of the Garter.
-George VI's coronation at Westminster Abbey took place on 12 May 1937, the date previously intended for Edward's coronation.
-In a break with tradition, Queen Mary attended the ceremony in a show of support for her son.
-There was no Durbar held in Delhi for George VI, as had occurred for his father, as the cost would have been a burden to the Government of India.
-Rising Indian nationalism made the welcome that the royal party would have received likely to be muted at best, and a prolonged absence from Britain would have been undesirable in the tense period before the Second World War.
-The growing likelihood of war in Europe dominated the early reign of George VI.
-When the King and Queen greeted Chamberlain on his return from negotiating the Munich Agreement in 1938, they invited him to appear on the balcony of Buckingham Palace with them.
-This public association of the monarchy with a politician was exceptional, as balcony appearances were traditionally restricted to the royal family.
-While broadly popular among the general public, Chamberlain's policy towards Hitler was the subject of some opposition in the House of Commons, which led historian and politician John Grigg to describe George's behaviour in associating himself so prominently with a politician as "the most unconstitutional act by a British sovereign in the present century".
-In May and June 1939, the King and Queen toured Canada and the United States; it was the first visit of a reigning British monarch to North America, although George had been to Canada prior to his accession.
-From Ottawa, George and Elizabeth were accompanied by Canadian prime minister Mackenzie King, to present themselves in North America as King and Queen of Canada.
-Both Mackenzie King and the Canadian governor general, Lord Tweedsmuir, hoped that George's presence in Canada would demonstrate the principles of the Statute of Westminster 1931, which gave full sovereignty to the British Dominions.
-On 19 May, George personally accepted and approved the letter of credence of the new U.S. ambassador to Canada, Daniel Calhoun Roper; gave royal assent to nine parliamentary bills; and ratified two   international treaties with the Great Seal of Canada.
-The official royal tour historian, Gustave Lanctot, wrote "the Statute of Westminster had assumed full reality" and George gave a speech emphasising "the free and equal association of the nations of the Commonwealth".
-Although the aim of the tour was mainly political, to shore up Atlantic support for the United Kingdom in any future war, the King and Queen were enthusiastically received by the public.
-The fear that George would be compared unfavourably to his predecessor was dispelled.
-A strong bond of friendship was forged between Roosevelt and the royal couple during the tour, which had major significance in the relations between the United States and the United Kingdom through the ensuing war years.
-The King and Queen resolved to stay in London, despite German bombing raids.
-They officially stayed in Buckingham Palace throughout the war, although they usually spent nights at Windsor Castle.
-In defiance, the Queen declared: "I am glad we have been bombed.
-The royal family were portrayed as sharing the same dangers and deprivations as the rest of the country.
-In August 1942, the King's brother, the Duke of Kent, was killed on active service.
-In 1940, Winston Churchill replaced Neville Chamberlain as prime minister, though personally George would have preferred to appoint Lord Halifax.
-George related much of what the two discussed in his diary, which is the only extant first-hand account of these conversations.
-Throughout the war, George and Elizabeth provided morale-boosting visits throughout the United Kingdom, visiting bomb sites, munitions factories, and troops.
-George visited military forces abroad in France in December 1939, North Africa and Malta in June 1943, Normandy in June 1944, southern Italy in July 1944, and the Low Countries in October 1944.
-George replied: "You should worry, when I meet him, I always think he's after mine!"
-In an echo of Chamberlain's appearance, the King invited Churchill to appear with the royal family on the balcony to public acclaim.
-In January 1946, George addressed the United Nations at its first assembly, which was held in London, and reaffirmed "our faith in the equal rights of men and women and of nations great and small".
-Empire to Commonwealth
-
-George VI's reign saw the acceleration of the dissolution of the British Empire.
-George relinquished the title of Emperor of India, and became King of India and King of Pakistan instead.
-In late April 1949, the Commonwealth leaders issued the London Declaration, which laid the foundation of the modern Commonwealth and recognised George as Head of the Commonwealth.
-In 1947, George and his family toured southern Africa.
-George was appalled, however, when instructed by the South African government to shake hands only with whites, and referred to his South African bodyguards as "the Gestapo".
-Illness and death
-
-The stress of the war had taken its toll on George's health, made worse by his heavy smoking, and subsequent development of lung cancer, as well as other ailments including arteriosclerosis and Buerger's disease.
-His elder daughter and heir presumptive, Elizabeth, took on more royal duties as his health deteriorated.
-The delayed tour was re-organised, with Princess Elizabeth and her husband, Philip, Duke of Edinburgh, taking the place of the King and Queen.
-George was well enough to open the Festival of Britain in May 1951, but on 4 June it was announced that he would need immediate and complete rest for the next four weeks, despite the arrival of Haakon VII of Norway the following afternoon for an official visit.
-In October 1951, Elizabeth and Philip undertook a month-long tour of Canada; the trip had been delayed for a week because of George's illness.
-On 31 January 1952, against the advice of those close to him, George travelled to London Airport to see Elizabeth and Philip depart for their tour of Australia via Kenya.
-His daughter returned to Britain from Kenya as Queen Elizabeth II.
-From 9 February, George's coffin rested in St Mary Magdalene Church, Sandringham, before lying in state at Westminster Hall from 11 February.
-His funeral took place at St George's Chapel, Windsor Castle, on 15 February.
-He was interred initially in the Royal Vault, and was transferred to the King George VI Memorial Chapel inside St George's on 26 March 1969.
-In 2002, fifty years after his death, the remains of his widow, Queen Elizabeth the Queen Mother, and the ashes of his younger daughter, Princess Margaret, who both died that year, were interred in the chapel alongside him.
-In 2022, the remains of Queen Elizabeth II and her husband, Prince Philip, were also interred in the chapel.
-Legacy
-
-In the words of Labour Member of Parliament (MP) George Hardie, the abdication crisis of 1936 did "more for republicanism than fifty years of propaganda".
-George VI wrote to his brother Edward that in the aftermath of the abdication he had reluctantly assumed "a rocking throne" and tried "to make it steady again".
-The George Cross and the George Medal were founded at the King's suggestion during the Second World War to recognise acts of exceptional civilian bravery.
-He bestowed the George Cross on the entire "island fortress of Malta" in 1943.
-Colin Firth won an Academy Award for Best Actor for his performance as George VI in the 2010 film The King's Speech.
-Titles, honours and arms
-
-As Duke of York, Albert bore the royal arms of the United Kingdom differenced with a label of three points argent, the centre point bearing an anchor azure—a difference earlier awarded to his father, George V, when he was Duke of York, and then later awarded to his grandson Andrew Mountbatten-Windsor, when he bore the title Prince.
-As king he bore the royal arms undifferenced.
+Armgard died on 27 April 1971 in House Warmelo in Diepenheim, at the age of 87.
+Zur Lippe-Biesterfeld- Prof. mr. E.J.H.Schrage
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -226,39 +123,9 @@ As king he bore the royal arms undifferenced.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -273,6 +140,23 @@ As king he bore the royal arms undifferenced.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -290,6 +174,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -357,29 +256,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -388,6 +279,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -400,6 +299,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -408,17 +309,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -446,6 +349,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -461,283 +448,512 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (83342d9a-c32b-4873-935a-9a2fb19719d6)
- Call ID: 83342d9a-c32b-4873-935a-9a2fb19719d6
+  AssignClass (0f51cbb2-9b72-4b47-85e5-72e0f772e02f)
+ Call ID: 0f51cbb2-9b72-4b47-85e5-72e0f772e02f
   Args:
-    type: :Man
-    source: George_VI
-  AssignClass (589a1a96-a9d2-43e4-bf8b-ec0de3ad52fe)
- Call ID: 589a1a96-a9d2-43e4-bf8b-ec0de3ad52fe
+    source: Armgard_von_Cramm
+    type: :Woman
+  AssignClass (2014593b-e930-4571-8cc8-859b903496d3)
+ Call ID: 2014593b-e930-4571-8cc8-859b903496d3
   Args:
     type: :Person
-    source: George_VI
-  AssignClass (abc94ada-642c-4b4e-85cf-217d78051b3e)
- Call ID: abc94ada-642c-4b4e-85cf-217d78051b3e
+    source: Armgard_von_Cramm
+  AssignClass (b1c7bb24-9223-4115-8306-fed527242b4b)
+ Call ID: b1c7bb24-9223-4115-8306-fed527242b4b
   Args:
     type: :Ancestor
-    source: George_VI
-  AddLiteral (e5d70b22-204b-4b67-aa33-060b92141108)
- Call ID: e5d70b22-204b-4b67-aa33-060b92141108
+    source: Armgard_von_Cramm
+  AddLiteral (efd691b9-bce2-418f-bb4e-ed60c9db0cdf)
+ Call ID: efd691b9-bce2-418f-bb4e-ed60c9db0cdf
   Args:
-    literal_type: xsd:integer
-    source: George_VI
+    literal_value: 1883
     relation: :hasBirthYear
-    literal_value: 1895
-  AddLiteral (0e625fbe-064d-45dd-adca-bec3815a413b)
- Call ID: 0e625fbe-064d-45dd-adca-bec3815a413b
+    source: Armgard_von_Cramm
+    literal_type: xsd:integer
+  AddLiteral (06009165-3880-4fc3-a346-6b46088ee73e)
+ Call ID: 06009165-3880-4fc3-a346-6b46088ee73e
   Args:
-    literal_value: 1952
-    source: George_VI
+    literal_value: 1971
     relation: :hasDeathYear
+    source: Armgard_von_Cramm
     literal_type: xsd:integer
-  AddLiteral (264b33b1-14ab-414b-84e9-851b17811d3a)
- Call ID: 264b33b1-14ab-414b-84e9-851b17811d3a
+  AddTriple (bae3f5fe-519b-49a9-9df1-c32fd64b84e5)
+ Call ID: bae3f5fe-519b-49a9-9df1-c32fd64b84e5
   Args:
-    literal_value: Bertie
+    target: Armgard_Kunigunde_Alharda_Agnes_Oda_von_Cramm
+    source: Armgard_von_Cramm
     relation: :knownAs
-    source: George_VI
-    literal_type: xsd:string
-  AssignClass (87cb86d3-a406-4a37-b59b-f9c3fcb83d58)
- Call ID: 87cb86d3-a406-4a37-b59b-f9c3fcb83d58
+  AssignClass (277e38bc-319f-40f6-9b1d-921b0e6659e7)
+ Call ID: 277e38bc-319f-40f6-9b1d-921b0e6659e7
   Args:
-    type: :Woman
-    source: Elizabeth_Bowes_Lyon
-  AssignClass (5732a344-1a6b-4a0b-a0d7-4e6ae8c6d47d)
- Call ID: 5732a344-1a6b-4a0b-a0d7-4e6ae8c6d47d
+    source: Prince_Bernhard_of_Lippe-Biesterfeld_son
+    type: :Man
+  AssignClass (8561649e-03b9-4d89-8749-9861f8abe01c)
+ Call ID: 8561649e-03b9-4d89-8749-9861f8abe01c
   Args:
     type: :Person
-    source: Elizabeth_Bowes_Lyon
-  AddLiteral (0fbb607c-6e61-46ea-931c-2bfa936a9af1)
- Call ID: 0fbb607c-6e61-46ea-931c-2bfa936a9af1
+    source: Prince_Bernhard_of_Lippe-Biesterfeld_son
+  AddTriple (fb0aecd5-cd83-400a-9a18-f1b39e17a59a)
+ Call ID: fb0aecd5-cd83-400a-9a18-f1b39e17a59a
+  Args:
+    target: Armgard_von_Cramm
+    source: Prince_Bernhard_of_Lippe-Biesterfeld_son
+    relation: :isSonOf
+  AssignClass (6ddb91be-057a-40d3-93aa-3cc6cc8fd983)
+ Call ID: 6ddb91be-057a-40d3-93aa-3cc6cc8fd983
+  Args:
+    source: Aschwin_of_Sierstorpff-Cramm
+    type: :Man
+  AssignClass (598560d1-644f-473c-8eb8-d70364258e90)
+ Call ID: 598560d1-644f-473c-8eb8-d70364258e90
+  Args:
+    type: :Person
+    source: Aschwin_of_Sierstorpff-Cramm
+  AssignClass (835c8960-af38-424a-9673-d65e1b7c5f95)
+ Call ID: 835c8960-af38-424a-9673-d65e1b7c5f95
+  Args:
+    source: Aschwin_of_Sierstorpff-Cramm
+    type: :Ancestor
+  AssignClass (d708334c-9cb9-45d4-abf9-61719ca801f3)
+ Call ID: d708334c-9cb9-45d4-abf9-61719ca801f3
+  Args:
+    source: Hedwig_of_Sierstorpff-Driburg
+    type: :Woman
+  AssignClass (76bc7a77-a6f9-42ea-a1d2-ca725583d217)
+ Call ID: 76bc7a77-a6f9-42ea-a1d2-ca725583d217
+  Args:
+    source: Hedwig_of_Sierstorpff-Driburg
+    type: :Person
+  AssignClass (4dc82c9a-81ce-4fe5-976f-e239051ef5ac)
+ Call ID: 4dc82c9a-81ce-4fe5-976f-e239051ef5ac
+  Args:
+    type: :Ancestor
+    source: Hedwig_of_Sierstorpff-Driburg
+  AddTriple (efe49960-ca3d-4a60-ae10-847d49cc4164)
+ Call ID: efe49960-ca3d-4a60-ae10-847d49cc4164
+  Args:
+    target: Aschwin_of_Sierstorpff-Cramm
+    source: Armgard_von_Cramm
+    relation: :isDaughterOf
+  AddTriple (57ecce67-c59c-41c6-ba8e-76339836a675)
+ Call ID: 57ecce67-c59c-41c6-ba8e-76339836a675
+  Args:
+    target: Hedwig_of_Sierstorpff-Driburg
+    source: Armgard_von_Cramm
+    relation: :isDaughterOf
+  AssignClass (268b2821-37da-4137-b3a1-f749c8d2d177)
+ Call ID: 268b2821-37da-4137-b3a1-f749c8d2d177
+  Args:
+    source: Bodo_von_Oeynhausen
+    type: :Man
+  AssignClass (2ba65f77-8bd5-4adb-8cf8-55df855e2a24)
+ Call ID: 2ba65f77-8bd5-4adb-8cf8-55df855e2a24
+  Args:
+    type: :Person
+    source: Bodo_von_Oeynhausen
+  AddLiteral (31704935-2521-4dd7-8c9f-b8325645cfae)
+ Call ID: 31704935-2521-4dd7-8c9f-b8325645cfae
   Args:
     literal_type: xsd:integer
+    source: Armgard_von_Cramm
     relation: :hasMarriageYear
-    source: George_VI
-    literal_value: 1923
-  AddTriple (0d364308-0e46-4499-85bb-78d0c6f705a8)
- Call ID: 0d364308-0e46-4499-85bb-78d0c6f705a8
+    literal_value: 1905
+  AssignClass (7982f6e7-73e3-4506-b936-461b3c9f931c)
+ Call ID: 7982f6e7-73e3-4506-b936-461b3c9f931c
   Args:
-    target: Elizabeth_Bowes_Lyon
-    source: George_VI
-    relation: :hasRelation
-  AssignClass (80cb2c14-835b-479a-9393-b1fb8fd678a5)
- Call ID: 80cb2c14-835b-479a-9393-b1fb8fd678a5
+    source: Erich_von_Oeynhausen
+    type: :Man
+  AssignClass (7afc15b2-1b87-44bf-b00b-8a67ac21f426)
+ Call ID: 7afc15b2-1b87-44bf-b00b-8a67ac21f426
+  Args:
+    source: Erich_von_Oeynhausen
+    type: :Person
+  AssignClass (53320a9a-5dd8-4777-b915-6214b798e022)
+ Call ID: 53320a9a-5dd8-4777-b915-6214b798e022
   Args:
     type: :Woman
-    source: Elizabeth_II
-  AssignClass (babc4004-2665-4182-8ec9-1fcefd3e3d25)
- Call ID: babc4004-2665-4182-8ec9-1fcefd3e3d25
+    source: Therese_von_Lenthe
+  AssignClass (6c246dd6-8d68-47af-9592-cbebe7649b78)
+ Call ID: 6c246dd6-8d68-47af-9592-cbebe7649b78
   Args:
     type: :Person
-    source: Elizabeth_II
-  AssignClass (29679714-e840-4836-bc98-3ae9fb4fa303)
- Call ID: 29679714-e840-4836-bc98-3ae9fb4fa303
+    source: Therese_von_Lenthe
+  AddTriple (7237c4a4-96fb-453a-a99c-69258a9e752e)
+ Call ID: 7237c4a4-96fb-453a-a99c-69258a9e752e
   Args:
-    type: :Woman
-    source: Margaret
-  AssignClass (3ae28f83-7bb3-4ed3-9ada-3b649dc6a712)
- Call ID: 3ae28f83-7bb3-4ed3-9ada-3b649dc6a712
+    relation: :isSonOf
+    source: Bodo_von_Oeynhausen
+    target: Erich_von_Oeynhausen
+  AddTriple (5e10ecf4-0f40-4233-8e97-79a0d953a607)
+ Call ID: 5e10ecf4-0f40-4233-8e97-79a0d953a607
   Args:
-    type: :Person
-    source: Margaret
-  AddTriple (bdd22f40-595f-4a76-87a3-05511ffa4e5d)
- Call ID: bdd22f40-595f-4a76-87a3-05511ffa4e5d
-  Args:
-    target: Elizabeth_II
-    source: George_VI
-    relation: :hasDaughter
-  AddTriple (f121cdd2-07d3-44d3-a069-7b781ff1217d)
- Call ID: f121cdd2-07d3-44d3-a069-7b781ff1217d
-  Args:
-    source: George_VI
-    relation: :hasDaughter
-    target: Margaret
-  AssignClass (7e1c90ab-2e72-48ed-aa9e-8eba9878debc)
- Call ID: 7e1c90ab-2e72-48ed-aa9e-8eba9878debc
+    target: Therese_von_Lenthe
+    source: Bodo_von_Oeynhausen
+    relation: :isSonOf
+  AssignClass (48b987b8-1164-41e2-9922-cbb974042b13)
+ Call ID: 48b987b8-1164-41e2-9922-cbb974042b13
   Args:
     type: :Man
-    source: George_V
-  AssignClass (3c917036-9b45-4716-8cdc-990cff98256e)
- Call ID: 3c917036-9b45-4716-8cdc-990cff98256e
+    source: Prince_Bernhard_of_Lippe-Biesterfeld_husband
+  AssignClass (768510c1-885a-411b-bcb8-320cf4bc7ddd)
+ Call ID: 768510c1-885a-411b-bcb8-320cf4bc7ddd
   Args:
     type: :Person
-    source: George_V
-  AssignClass (0536249f-2e6e-4943-a59e-6059ecdeafa4)
- Call ID: 0536249f-2e6e-4943-a59e-6059ecdeafa4
+    source: Prince_Bernhard_of_Lippe-Biesterfeld_husband
+  AssignClass (89eef24d-87e7-4d5a-9f41-47f9ae22cc76)
+ Call ID: 89eef24d-87e7-4d5a-9f41-47f9ae22cc76
   Args:
     type: :Ancestor
-    source: George_V
-  AddTriple (efb61fd3-d089-44ff-97d4-6ca5a035757c)
- Call ID: efb61fd3-d089-44ff-97d4-6ca5a035757c
+    source: Prince_Bernhard_of_Lippe-Biesterfeld_husband
+  AddLiteral (74d344aa-18f8-4084-925f-bfbc32fdd3c1)
+ Call ID: 74d344aa-18f8-4084-925f-bfbc32fdd3c1
   Args:
-    target: George_V
-    relation: :hasFather
-    source: George_VI
-  AssignClass (80fac9ff-da93-4f0b-a09e-453bf59fb9d0)
- Call ID: 80fac9ff-da93-4f0b-a09e-453bf59fb9d0
+    literal_value: 1909
+    relation: :hasMarriageYear
+    source: Armgard_von_Cramm
+    literal_type: xsd:integer
+  AssignClass (99404182-4219-49fc-b0fc-aa52e89e654b)
+ Call ID: 99404182-4219-49fc-b0fc-aa52e89e654b
   Args:
-    type: :Woman
-    source: Queen_Mary
-  AssignClass (7a116ed1-5c15-418a-9aa2-ee22110304dc)
- Call ID: 7a116ed1-5c15-418a-9aa2-ee22110304dc
+    source: Ernest_II_Count_of_Lippe-Biesterfeld
+    type: :Man
+  AssignClass (106a671d-e886-4099-8918-7aa8c1004496)
+ Call ID: 106a671d-e886-4099-8918-7aa8c1004496
   Args:
     type: :Person
-    source: Queen_Mary
-  AssignClass (b0c1a6f8-b11c-4afd-8417-f89e95da5cc6)
- Call ID: b0c1a6f8-b11c-4afd-8417-f89e95da5cc6
+    source: Ernest_II_Count_of_Lippe-Biesterfeld
+  AssignClass (c7ad6217-3be8-4a46-bddc-d20a5ef02c46)
+ Call ID: c7ad6217-3be8-4a46-bddc-d20a5ef02c46
+  Args:
+    source: Ernest_II_Count_of_Lippe-Biesterfeld
+    type: :Ancestor
+  AssignClass (2ba1b3d0-8790-4b19-b8f0-045d5ae2a6c7)
+ Call ID: 2ba1b3d0-8790-4b19-b8f0-045d5ae2a6c7
+  Args:
+    source: Karoline_von_Wartensleben
+    type: :Woman
+  AssignClass (37563882-f2f9-48e5-92be-ec9424484775)
+ Call ID: 37563882-f2f9-48e5-92be-ec9424484775
+  Args:
+    type: :Person
+    source: Karoline_von_Wartensleben
+  AssignClass (b592d5ff-5797-4188-aad9-d016131393c9)
+ Call ID: b592d5ff-5797-4188-aad9-d016131393c9
   Args:
     type: :Ancestor
-    source: Queen_Mary
-  AddTriple (3ed7c75d-a17b-479a-85bd-a71a26f398d6)
- Call ID: 3ed7c75d-a17b-479a-85bd-a71a26f398d6
+    source: Karoline_von_Wartensleben
+  AddTriple (3c3092cb-6bb7-40f9-b2c6-3e09a0b4bcd2)
+ Call ID: 3c3092cb-6bb7-40f9-b2c6-3e09a0b4bcd2
   Args:
-    target: Queen_Mary
-    source: George_VI
-    relation: :hasMother
-  AssignClass (90b977cc-ad4c-4135-a095-188648bc9aff)
- Call ID: 90b977cc-ad4c-4135-a095-188648bc9aff
+    target: Ernest_II_Count_of_Lippe-Biesterfeld
+    source: Prince_Bernhard_of_Lippe-Biesterfeld_husband
+    relation: :isSonOf
+  AddTriple (d83c57f3-8ab0-4fd5-902a-1b2cbd153a11)
+ Call ID: d83c57f3-8ab0-4fd5-902a-1b2cbd153a11
   Args:
-    type: :Man
-    source: Edward_VIII
-  AssignClass (82d85e4b-9f27-4e12-aff0-08a61536ec85)
- Call ID: 82d85e4b-9f27-4e12-aff0-08a61536ec85
-  Args:
-    type: :Person
-    source: Edward_VIII
-  AddTriple (0b4c975e-fe50-4197-bbec-6d5472674241)
- Call ID: 0b4c975e-fe50-4197-bbec-6d5472674241
-  Args:
-    target: Edward_VIII
-    relation: :hasBrother
-    source: George_VI
-  AssignClass (c11adfb4-d683-4732-932d-359842664577)
- Call ID: c11adfb4-d683-4732-932d-359842664577
+    target: Karoline_von_Wartensleben
+    relation: :isSonOf
+    source: Prince_Bernhard_of_Lippe-Biesterfeld_husband
+  AssignClass (6ada4492-b292-4658-a122-0e7ed98b0d10)
+ Call ID: 6ada4492-b292-4658-a122-0e7ed98b0d10
   Args:
     type: :Man
-    source: Duke_of_Kent
-  AssignClass (f33b3565-d789-4797-823f-c9d45df9bd84)
- Call ID: f33b3565-d789-4797-823f-c9d45df9bd84
+    source: Aschwin_son
+  AssignClass (de7bad7a-4db9-454c-8f88-a0ddedef3513)
+ Call ID: de7bad7a-4db9-454c-8f88-a0ddedef3513
   Args:
     type: :Person
-    source: Duke_of_Kent
-  AddTriple (60120447-d4aa-42c3-977e-8a21933cc061)
- Call ID: 60120447-d4aa-42c3-977e-8a21933cc061
+    source: Aschwin_son
+  AddTriple (a13097d8-fb2b-43fe-b66c-af41f5f3d618)
+ Call ID: a13097d8-fb2b-43fe-b66c-af41f5f3d618
   Args:
-    source: George_VI
-    relation: :hasBrother
-    target: Duke_of_Kent
-  AssignClass (e002e35f-1feb-47c0-91b3-7b1073cbaf59)
- Call ID: e002e35f-1feb-47c0-91b3-7b1073cbaf59
-  Args:
-    type: :Man
-    source: Prince_Henry
-  AssignClass (3badc9b6-5ce1-4b89-b2e4-2c77eac1166d)
- Call ID: 3badc9b6-5ce1-4b89-b2e4-2c77eac1166d
-  Args:
-    type: :Person
-    source: Prince_Henry
-  AddTriple (0ed90866-ff08-4c8d-b932-ca002ab8d379)
- Call ID: 0ed90866-ff08-4c8d-b932-ca002ab8d379
-  Args:
-    target: Prince_Henry
-    source: George_VI
-    relation: :hasBrother
-  AssignClass (a6969479-bae5-40df-bf73-fd07400362c9)
- Call ID: a6969479-bae5-40df-bf73-fd07400362c9
-  Args:
-    type: :Man
-    source: Francis_Duke_of_Teck
-  AssignClass (bf5c627f-a1d7-4c7d-bc7e-d6750325ba30)
- Call ID: bf5c627f-a1d7-4c7d-bc7e-d6750325ba30
-  Args:
-    type: :Person
-    source: Francis_Duke_of_Teck
-  AssignClass (7648d2f4-10bb-4898-a7f1-3dcb66dbde5a)
- Call ID: 7648d2f4-10bb-4898-a7f1-3dcb66dbde5a
+    target: Armgard_von_Cramm
+    source: Aschwin_son
+    relation: :isSonOf
+  AssignClass (1a456c4b-cfdb-42ab-b761-d845f5260172)
+ Call ID: 1a456c4b-cfdb-42ab-b761-d845f5260172
   Args:
     type: :Woman
-    source: Princess_Mary_Adelaide_Duchess_of_Teck
-  AssignClass (fb077cb7-0360-4a1a-abf5-218533733f6d)
- Call ID: fb077cb7-0360-4a1a-abf5-218533733f6d
+    source: Princess_Irene
+  AssignClass (bf9557e3-d5da-46ed-9113-5858f2198c3c)
+ Call ID: bf9557e3-d5da-46ed-9113-5858f2198c3c
   Args:
     type: :Person
-    source: Princess_Mary_Adelaide_Duchess_of_Teck
-  AddTriple (f2ba47ad-9d89-42e1-aff9-e39ab527fe8a)
- Call ID: f2ba47ad-9d89-42e1-aff9-e39ab527fe8a
+    source: Princess_Irene
+  AddTriple (0c5a83c8-f132-4286-a5ae-9d345e40259b)
+ Call ID: 0c5a83c8-f132-4286-a5ae-9d345e40259b
   Args:
-    target: Francis_Duke_of_Teck
-    source: Queen_Mary
-    relation: :hasFather
-  AddTriple (28b9e485-4783-439a-8f0a-640353743675)
- Call ID: 28b9e485-4783-439a-8f0a-640353743675
+    relation: :isAncestorOf
+    source: Armgard_von_Cramm
+    target: Princess_Irene
+  Finish (4e9525d8-7cd0-42b1-be05-615fc6fc3d2a)
+ Call ID: 4e9525d8-7cd0-42b1-be05-615fc6fc3d2a
   Args:
-    relation: :hasMother
-    source: Queen_Mary
-    target: Princess_Mary_Adelaide_Duchess_of_Teck
-  AssignClass (27f83ccc-0846-4433-bf63-2fc7a92eb3d9)
- Call ID: 27f83ccc-0846-4433-bf63-2fc7a92eb3d9
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Aschwin_son a :Man,
+          :Person ;
+      :isSonOf data:Armgard_von_Cramm .
+
+  data:Bodo_von_Oeynhausen a :Man,
+          :Person ;
+      :isSonOf data:Erich_von_Oeynhausen,
+          data:Therese_von_Lenthe .
+
+  data:Prince_Bernhard_of_Lippe-Biesterfeld_husband a :Ancestor,
+          :Man,
+          :Person ;
+      :isSonOf data:Ernest_II_Count_of_Lippe-Biesterfeld,
+          data:Karoline_von_Wartensleben .
+
+  data:Prince_Bernhard_of_Lippe-Biesterfeld_son a :Man,
+          :Person ;
+      :isSonOf data:Armgard_von_Cramm .
+
+  data:Aschwin_of_Sierstorpff-Cramm a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Erich_von_Oeynhausen a :Man,
+          :Person .
+
+  data:Ernest_II_Count_of_Lippe-Biesterfeld a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Hedwig_of_Sierstorpff-Driburg a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Karoline_von_Wartensleben a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Princess_Irene a :Person,
+          :Woman .
+
+  data:Therese_von_Lenthe a :Person,
+          :Woman .
+
+  data:Armgard_von_Cramm a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1883 ;
+      :hasDeathYear 1971 ;
+      :hasMarriageYear 1905,
+          1909 ;
+      :isAncestorOf data:Princess_Irene ;
+      :isDaughterOf data:Aschwin_of_Sierstorpff-Cramm,
+          data:Hedwig_of_Sierstorpff-Driburg ;
+      :knownAs data:Armgard_Kunigunde_Alharda_Agnes_Oda_von_Cramm .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Armgard_Kunigunde_Alharda_Agnes_Oda_von_Cramm']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (90987a30-6820-45e1-8286-6697d18e2b37)
+ Call ID: 90987a30-6820-45e1-8286-6697d18e2b37
   Args:
-    type: :Man
-    source: King_Edward_VII
-  AssignClass (d54a377e-91fd-4599-ad90-2d41d783055c)
- Call ID: d54a377e-91fd-4599-ad90-2d41d783055c
-  Args:
-    type: :Person
-    source: King_Edward_VII
-  AssignClass (b14369bd-02b7-47b0-8e83-01fed1b30269)
- Call ID: b14369bd-02b7-47b0-8e83-01fed1b30269
-  Args:
-    type: :Woman
-    source: Queen_Alexandra
-  AssignClass (7825f9bf-bfa5-4f28-b92b-785b96c832fa)
- Call ID: 7825f9bf-bfa5-4f28-b92b-785b96c832fa
-  Args:
-    type: :Person
-    source: Queen_Alexandra
-  AddTriple (c2a9d06a-f372-4c6e-9055-69c91bcaf34f)
- Call ID: c2a9d06a-f372-4c6e-9055-69c91bcaf34f
-  Args:
-    target: King_Edward_VII
-    source: George_V
-    relation: :hasFather
-  AddTriple (a6d3c57a-9085-44de-b8df-3c5215559060)
- Call ID: a6d3c57a-9085-44de-b8df-3c5215559060
-  Args:
-    relation: :hasMother
-    source: George_V
-    target: Queen_Alexandra
-  AssignClass (11500335-89f2-4569-91a2-12ed473774bc)
- Call ID: 11500335-89f2-4569-91a2-12ed473774bc
-  Args:
-    type: :Woman
-    source: Queen_Victoria
-  AssignClass (e0cb48ef-5d8f-4a75-a7c5-e6633415b07c)
- Call ID: e0cb48ef-5d8f-4a75-a7c5-e6633415b07c
-  Args:
-    type: :Person
-    source: Queen_Victoria
-  AssignClass (ac58321c-81d1-42f6-be5f-642abf13dea0)
- Call ID: ac58321c-81d1-42f6-be5f-642abf13dea0
-  Args:
-    type: :Man
-    source: Prince_Albert_Prince_Consort
-  AssignClass (acfa9cc7-d44f-43e9-8d16-8a04719b7173)
- Call ID: acfa9cc7-d44f-43e9-8d16-8a04719b7173
-  Args:
-    type: :Person
-    source: Prince_Albert_Prince_Consort
-  AddTriple (41d6ea6d-e6ca-4a50-a18a-04f6f9153030)
- Call ID: 41d6ea6d-e6ca-4a50-a18a-04f6f9153030
-  Args:
-    target: Queen_Victoria
-    relation: :hasMother
-    source: King_Edward_VII
-  AddTriple (c694010a-b12c-47ba-93e2-618cd0d20630)
- Call ID: c694010a-b12c-47ba-93e2-618cd0d20630
-  Args:
-    relation: :hasFather
-    source: King_Edward_VII
-    target: Prince_Albert_Prince_Consort
-  Finish (b6ce23f4-e6cc-40f4-8a94-e9914a783eb6)
- Call ID: b6ce23f4-e6cc-40f4-8a94-e9914a783eb6
+    source: Armgard_Kunigunde_Alharda_Agnes_Oda_von_Cramm
+    type: :DomainEntity
+  Finish (cae11450-8e62-4cca-a077-f6f31c049478)
+ Call ID: cae11450-8e62-4cca-a077-f6f31c049478
   Args:

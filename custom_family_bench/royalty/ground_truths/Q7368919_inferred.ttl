@@ -1,0 +1,129 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Lady_Mary_Leveson-Gower a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Lady Mary Leveson-Gower"^^xsd:string ;
+    data:posIndicesFull "320:351"^^xsd:string,
+        "325:351"^^xsd:string ;
+    data:posIndicesPart "424:431"^^xsd:string,
+        "432:437"^^xsd:string,
+        "525:532"^^xsd:string,
+        "533:538"^^xsd:string ;
+    data:wdtLink wdt:Q75721792 ;
+    :alsoKnownAs "Lady Mary Cecilia Clayton"^^xsd:string,
+        "Lady Mary Cecilia Leveson-Gower"^^xsd:string,
+        "Lady Mary Clayton"^^xsd:string,
+        "Mary Cecilia Clayton"^^xsd:string,
+        "Mary Cecilia Leveson-Gower"^^xsd:string,
+        "Mary Cecilia, Lady Clayton"^^xsd:string,
+        "Mary Clayton"^^xsd:string,
+        "Mary Leveson-Gower"^^xsd:string,
+        "Mary, Lady Clayton"^^xsd:string ;
+    :hasChild data:Rosie_Stancer ;
+    :hasDaughter data:Rosie_Stancer ;
+    :hasRelation data:Lady_Mary_Leveson-Gower,
+        data:Rosie_Stancer,
+        data:Sir_Samuel_Clayton ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Mary_Leveson-Gower ;
+    :isAncestorOf data:Rosie_Stancer ;
+    :isAuntOf data:Rosie_Stancer ;
+    :isBloodrelationOf data:Lady_Mary_Leveson-Gower ;
+    :isMotherOf data:Rosie_Stancer ;
+    :isParentOf data:Rosie_Stancer ;
+    :isSiblingOf data:Lady_Mary_Leveson-Gower ;
+    :isSisterOf data:Lady_Mary_Leveson-Gower .
+
+data:Sir_Samuel_Clayton a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Sir Samuel Clayton"^^xsd:string ;
+    data:posIndicesFull "368:386"^^xsd:string,
+        "372:386"^^xsd:string ;
+    data:posIndicesPart "672:675"^^xsd:string,
+        "695:702"^^xsd:string ;
+    data:wdtLink wdt:Q75721793 ;
+    :alsoKnownAs "Samuel Clayton"^^xsd:string,
+        "Samuel Wittewronge Clayton"^^xsd:string,
+        "Sir Samuel Wittewronge Clayton"^^xsd:string ;
+    :hasBrother data:Sir_Samuel_Clayton ;
+    :hasChild data:Rosie_Stancer ;
+    :hasDaughter data:Rosie_Stancer ;
+    :hasRelation data:Lady_Mary_Leveson-Gower,
+        data:Rosie_Stancer,
+        data:Sir_Samuel_Clayton ;
+    :hasSex data:male ;
+    :isAncestorOf data:Rosie_Stancer ;
+    :isBloodrelationOf data:Sir_Samuel_Clayton ;
+    :isBrotherOf data:Sir_Samuel_Clayton ;
+    :isFatherOf data:Rosie_Stancer ;
+    :isParentOf data:Rosie_Stancer ;
+    :isSiblingOf data:Sir_Samuel_Clayton ;
+    :isUncleOf data:Rosie_Stancer .
+
+data:Rosie_Stancer a :Person,
+        :Woman ;
+    rdfs:label "Rosie Stancer"^^xsd:string ;
+    data:posIndicesFull "198:211"^^xsd:string ;
+    data:posIndicesPart "1144:1151"^^xsd:string,
+        "1345:1352"^^xsd:string,
+        "1535:1542"^^xsd:string,
+        "1661:1668"^^xsd:string,
+        "1692:1699"^^xsd:string,
+        "1789:1796"^^xsd:string,
+        "1923:1930"^^xsd:string,
+        "2060:2067"^^xsd:string,
+        "2244:2251"^^xsd:string,
+        "2337:2344"^^xsd:string,
+        "2383:2390"^^xsd:string,
+        "2444:2451"^^xsd:string,
+        "2622:2629"^^xsd:string,
+        "2834:2841"^^xsd:string,
+        "293:300"^^xsd:string,
+        "809:816"^^xsd:string,
+        "849:856"^^xsd:string,
+        "894:901"^^xsd:string,
+        "951:958"^^xsd:string ;
+    data:wdtLink wdt:Q7368919 ;
+    :alsoKnownAs "Rose Cecilia Clayton"^^xsd:string,
+        "Rose Cecilia Stancer"^^xsd:string,
+        "Rose Clayton"^^xsd:string,
+        "Rose Stancer"^^xsd:string,
+        "Rosie Clayton"^^xsd:string ;
+    :hasAncestor data:Lady_Mary_Leveson-Gower,
+        data:Sir_Samuel_Clayton ;
+    :hasFather data:Sir_Samuel_Clayton ;
+    :hasMother data:Lady_Mary_Leveson-Gower ;
+    :hasParent data:Lady_Mary_Leveson-Gower,
+        data:Sir_Samuel_Clayton ;
+    :hasRelation data:Lady_Mary_Leveson-Gower,
+        data:Rosie_Stancer,
+        data:Sir_Samuel_Clayton ;
+    :hasSex data:female ;
+    :hasSister data:Rosie_Stancer ;
+    :isBloodrelationOf data:Rosie_Stancer ;
+    :isChildOf data:Lady_Mary_Leveson-Gower,
+        data:Sir_Samuel_Clayton ;
+    :isDaughterOf data:Lady_Mary_Leveson-Gower,
+        data:Sir_Samuel_Clayton ;
+    :isSiblingOf data:Rosie_Stancer ;
+    :isSisterOf data:Rosie_Stancer .
+

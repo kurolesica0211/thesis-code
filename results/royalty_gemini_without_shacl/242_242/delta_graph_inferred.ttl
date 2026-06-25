@@ -1,0 +1,303 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Wolfgang_of_Hesse a :Man ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Prince_Wolfgang_of_Hesse ;
+    :hasDeathYear 1989 ;
+    :hasRelation data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Alexandra_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isBloodrelationOf data:Prince_Wolfgang_of_Hesse ;
+    :isBrotherOf data:Prince_Wolfgang_of_Hesse ;
+    :isSiblingOf data:Prince_Wolfgang_of_Hesse .
+
+data:Prince_Maximilian_of_Baden a :Ancestor,
+        :Man ;
+    :hasBirthYear 1867 ;
+    :hasBrother data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden ;
+    :hasChild data:Princess_Marie_Alexandra_of_Baden ;
+    :hasDaughter data:Princess_Marie_Alexandra_of_Baden ;
+    :hasDeathYear 1929 ;
+    :hasRelation data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Alexandra_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isAncestorOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isBloodrelationOf data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden ;
+    :isBrotherOf data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden ;
+    :isFatherOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isParentOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isSiblingOf data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden ;
+    :isUncleOf data:Princess_Marie_Alexandra_of_Baden .
+
+data:Prince_Wilhelm_of_Baden a :Ancestor,
+        :Man ;
+    :hasBirthYear 1829 ;
+    :hasBrother data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden ;
+    :hasChild data:Princess_Marie_Alexandra_of_Baden ;
+    :hasDaughter data:Princess_Marie_Alexandra_of_Baden ;
+    :hasDeathYear 1897 ;
+    :hasRelation data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Alexandra_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isAncestorOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isBloodrelationOf data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden ;
+    :isBrotherOf data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden ;
+    :isFatherOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isParentOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isSiblingOf data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden ;
+    :isUncleOf data:Princess_Marie_Alexandra_of_Baden .
+
+data:Grand_Duchess_Maria_Nikolaevna a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1819 ;
+    :hasChild data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasDaughter data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasDeathYear 1876 ;
+    :hasRelation data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Alexandra_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasSister data:Grand_Duchess_Maria_Nikolaevna ;
+    :isAncestorOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Alexandra_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isAuntOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Nikolaevna ;
+    :isMotherOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isParentOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isSiblingOf data:Grand_Duchess_Maria_Nikolaevna ;
+    :isSisterOf data:Grand_Duchess_Maria_Nikolaevna .
+
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
+        :Man ;
+    :hasBrother data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :hasChild data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasDaughter data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasRelation data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Alexandra_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isAncestorOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Alexandra_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isBloodrelationOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :isBrotherOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :isFatherOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isParentOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isSiblingOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :isUncleOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland .
+
+data:Maximilian_Duke_of_Leuchtenberg a :Ancestor,
+        :Man ;
+    :hasBirthYear 1817 ;
+    :hasBrother data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :hasChild data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasDaughter data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasDeathYear 1852 ;
+    :hasRelation data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Alexandra_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isAncestorOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Alexandra_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isBloodrelationOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :isBrotherOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :isFatherOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isParentOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isSiblingOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :isUncleOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland .
+
+data:Princess_Maria_Maximilianovna_of_Leuchtenberg a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :hasBirthYear 1841 ;
+    :hasChild data:Princess_Marie_Alexandra_of_Baden ;
+    :hasDaughter data:Princess_Marie_Alexandra_of_Baden ;
+    :hasDeathYear 1914 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :hasMother data:Grand_Duchess_Maria_Nikolaevna ;
+    :hasParent data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :hasRelation data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Alexandra_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasSister data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isAncestorOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isAuntOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isBloodrelationOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isChildOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :isDaughterOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :isMotherOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isParentOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isSiblingOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isSisterOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland .
+
+data:Princess_Marie_Alexandra_of_Baden a :Woman ;
+    :hasAncestor data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden,
+        data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1944 ;
+    :hasFather data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasParent data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden,
+        data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasRelation data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Alexandra_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasSister data:Princess_Marie_Alexandra_of_Baden ;
+    :isBloodrelationOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isChildOf data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden,
+        data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isDaughterOf data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden,
+        data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isSiblingOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isSisterOf data:Princess_Marie_Alexandra_of_Baden .
+
+data:Princess_Marie_Louise_of_Hanover_and_Cumberland a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :hasBirthYear 1879 ;
+    :hasChild data:Princess_Marie_Alexandra_of_Baden ;
+    :hasDaughter data:Princess_Marie_Alexandra_of_Baden ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :hasMother data:Grand_Duchess_Maria_Nikolaevna ;
+    :hasParent data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :hasRelation data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg,
+        data:Prince_Maximilian_of_Baden,
+        data:Prince_Wilhelm_of_Baden,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Alexandra_of_Baden,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :hasSister data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isAncestorOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isAuntOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isBloodrelationOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isChildOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :isDaughterOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Grand_Duchess_Maria_Nikolaevna,
+        data:Maximilian_Duke_of_Leuchtenberg ;
+    :isMotherOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isParentOf data:Princess_Marie_Alexandra_of_Baden ;
+    :isSiblingOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland ;
+    :isSisterOf data:Princess_Maria_Maximilianovna_of_Leuchtenberg,
+        data:Princess_Marie_Louise_of_Hanover_and_Cumberland .
+

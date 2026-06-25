@@ -7,54 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Karl_of_Leiningen a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Karl of Leiningen" ;
-    data:posIndicesFull "182:206" ;
-    data:posIndicesPart "252:261",
-        "312:321",
-        "478:487",
-        "586:595",
-        "659:668",
-        "716:722" ;
-    data:wdtLink wdt:Q2325684 ;
-    :alsoKnownAs "Karl Vladimir Ernst Heinrich",
-        "Karl Wladimir Ernst Heinrich Prinz zu Leiningen" ;
-    :hasChild data:Hermann_Leiningen ;
-    :hasSex data:male ;
-    :hasSon data:Hermann_Leiningen ;
-    :isFatherOf data:Hermann_Leiningen ;
-    :isParentOf data:Hermann_Leiningen .
-
-data:Princess_Maria_Luisa-_9th_Princess_of_Koháry a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Maria Luisa, 9th Princess of Koháry" ;
-    data:posIndicesFull "211:244" ;
-    data:posIndicesPart "791:799" ;
-    data:wdtLink wdt:Q3292104 ;
-    :alsoKnownAs "Mariya Luiza of Bulgaria, Princess of Bulgaria",
-        "Princess Maria Louisa of Bulgaria",
-        "Princess Marie Louise of Bulgaria",
-        "Princess Marie Louise, 9th Princess of Koháry" ;
-    :hasChild data:Hermann_Leiningen ;
-    :hasSex data:female ;
-    :hasSon data:Hermann_Leiningen ;
-    :isMotherOf data:Hermann_Leiningen ;
-    :isParentOf data:Hermann_Leiningen .
-
-data:Hermann_Leiningen a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Hermann_Leiningen a :Person ;
     rdfs:label "Hermann Leiningen" ;
     data:posIndicesFull "0:53",
         "540:557" ;
@@ -67,13 +20,42 @@ data:Hermann_Leiningen a :Man,
         "Prince Hermann Friedrich Fernando Roland of Leiningen",
         "Prince Hermann Friedrich of Leiningen",
         "Prince Hermann of Leiningen" ;
-    :hasFather data:Prince_Karl_of_Leiningen ;
-    :hasMother data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
     :hasParent data:Prince_Karl_of_Leiningen,
         data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Karl_of_Leiningen,
-        data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
-    :isSonOf data:Prince_Karl_of_Leiningen,
-        data:Princess_Maria_Luisa-_9th_Princess_of_Koháry .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Karl_of_Leiningen a :Person ;
+    rdfs:label "Prince Karl of Leiningen" ;
+    data:posIndicesFull "182:206" ;
+    data:posIndicesPart "252:261",
+        "312:321",
+        "478:487",
+        "586:595",
+        "659:668",
+        "716:722" ;
+    data:wdtLink wdt:Q2325684 ;
+    :alsoKnownAs "Karl Vladimir Ernst Heinrich",
+        "Karl Wladimir Ernst Heinrich Prinz zu Leiningen" ;
+    :hasSex data:male .
+
+data:Princess_Maria_Luisa-_9th_Princess_of_Koháry a :Person ;
+    rdfs:label "Princess Maria Luisa, 9th Princess of Koháry" ;
+    data:posIndicesFull "211:244" ;
+    data:posIndicesPart "791:799" ;
+    data:wdtLink wdt:Q3292104 ;
+    :alsoKnownAs "Mariya Luiza of Bulgaria, Princess of Bulgaria",
+        "Princess Maria Louisa of Bulgaria",
+        "Princess Marie Louise of Bulgaria",
+        "Princess Marie Louise, 9th Princess of Koháry" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

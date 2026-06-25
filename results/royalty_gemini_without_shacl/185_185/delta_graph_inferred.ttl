@@ -1,0 +1,366 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Amedeo%2C_5th_Duke_of_Aosta a :Ancestor,
+        :Man ;
+    :hasBrother data:Amedeo%2C_5th_Duke_of_Aosta ;
+    :hasChild data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :hasRelation data:Amedeo%2C_5th_Duke_of_Aosta,
+        data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Marina_Karella,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece,
+        data:The%C3%B3doros_Kar%C3%A9llas,
+        data:Umberto ;
+    :hasSon data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :isAncestorOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Umberto ;
+    :isBloodrelationOf data:Amedeo%2C_5th_Duke_of_Aosta ;
+    :isBrotherOf data:Amedeo%2C_5th_Duke_of_Aosta ;
+    :isFatherOf data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :isParentOf data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :isSiblingOf data:Amedeo%2C_5th_Duke_of_Aosta ;
+    :isUncleOf data:Prince_Aimone%2C_Duke_of_Aosta .
+
+data:The%C3%B3doros_Kar%C3%A9llas a :Ancestor,
+        :Man ;
+    :hasBrother data:The%C3%B3doros_Kar%C3%A9llas ;
+    :hasChild data:Marina_Karella ;
+    :hasDaughter data:Marina_Karella ;
+    :hasRelation data:Amedeo%2C_5th_Duke_of_Aosta,
+        data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Marina_Karella,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece,
+        data:The%C3%B3doros_Kar%C3%A9llas,
+        data:Umberto ;
+    :isAncestorOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Marina_Karella,
+        data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece,
+        data:Umberto ;
+    :isBloodrelationOf data:The%C3%B3doros_Kar%C3%A9llas ;
+    :isBrotherOf data:The%C3%B3doros_Kar%C3%A9llas ;
+    :isFatherOf data:Marina_Karella ;
+    :isParentOf data:Marina_Karella ;
+    :isSiblingOf data:The%C3%B3doros_Kar%C3%A9llas ;
+    :isUncleOf data:Marina_Karella .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :hasDaughter data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :hasRelation data:Amedeo%2C_5th_Duke_of_Aosta,
+        data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Marina_Karella,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece,
+        data:The%C3%B3doros_Kar%C3%A9llas,
+        data:Umberto ;
+    :isAncestorOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece,
+        data:Umberto ;
+    :isBloodrelationOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :isParentOf data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :isSiblingOf data:Prince_Michael_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece .
+
+data:Princess_Alexandra a :Woman ;
+    :hasAncestor data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:The%C3%B3doros_Kar%C3%A9llas ;
+    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasMother data:Marina_Karella ;
+    :hasParent data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasRelation data:Amedeo%2C_5th_Duke_of_Aosta,
+        data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Marina_Karella,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece,
+        data:The%C3%B3doros_Kar%C3%A9llas,
+        data:Umberto ;
+    :hasSister data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :isAuntOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isBloodrelationOf data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :isChildOf data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :isDaughterOf data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :isSisterOf data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece .
+
+data:Marina_Karella a :Ancestor,
+        :Woman ;
+    :hasAncestor data:The%C3%B3doros_Kar%C3%A9llas ;
+    :hasChild data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :hasDaughter data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :hasFather data:The%C3%B3doros_Kar%C3%A9llas ;
+    :hasParent data:The%C3%B3doros_Kar%C3%A9llas ;
+    :hasRelation data:Amedeo%2C_5th_Duke_of_Aosta,
+        data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Marina_Karella,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece,
+        data:The%C3%B3doros_Kar%C3%A9llas,
+        data:Umberto ;
+    :hasSister data:Marina_Karella ;
+    :isAncestorOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece,
+        data:Umberto ;
+    :isAuntOf data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :isBloodrelationOf data:Marina_Karella ;
+    :isChildOf data:The%C3%B3doros_Kar%C3%A9llas ;
+    :isDaughterOf data:The%C3%B3doros_Kar%C3%A9llas ;
+    :isMotherOf data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :isParentOf data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :isSiblingOf data:Marina_Karella ;
+    :isSisterOf data:Marina_Karella .
+
+data:Prince_Aimone%2C_Duke_of_Aosta a :Ancestor,
+        :Man ;
+    :hasAncestor data:Amedeo%2C_5th_Duke_of_Aosta ;
+    :hasBrother data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :hasChild data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :hasDaughter data:Isabella_Vita_Marina ;
+    :hasFather data:Amedeo%2C_5th_Duke_of_Aosta ;
+    :hasParent data:Amedeo%2C_5th_Duke_of_Aosta ;
+    :hasRelation data:Amedeo%2C_5th_Duke_of_Aosta,
+        data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Marina_Karella,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece,
+        data:The%C3%B3doros_Kar%C3%A9llas,
+        data:Umberto ;
+    :hasSon data:Amedeo_Michele,
+        data:Umberto ;
+    :isAncestorOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isBloodrelationOf data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :isChildOf data:Amedeo%2C_5th_Duke_of_Aosta ;
+    :isFatherOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isParentOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isSiblingOf data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :isSonOf data:Amedeo%2C_5th_Duke_of_Aosta ;
+    :isUncleOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto .
+
+data:Amedeo_Michele a :Man ;
+    :hasAncestor data:Amedeo%2C_5th_Duke_of_Aosta,
+        data:Marina_Karella,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece,
+        data:The%C3%B3doros_Kar%C3%A9llas ;
+    :hasBrother data:Amedeo_Michele,
+        data:Umberto ;
+    :hasFather data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :hasMother data:Princess_Olga_of_Greece ;
+    :hasParent data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Princess_Olga_of_Greece ;
+    :hasRelation data:Amedeo%2C_5th_Duke_of_Aosta,
+        data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Marina_Karella,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece,
+        data:The%C3%B3doros_Kar%C3%A9llas,
+        data:Umberto ;
+    :hasSister data:Isabella_Vita_Marina ;
+    :isBloodrelationOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isBrotherOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isChildOf data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Princess_Olga_of_Greece ;
+    :isSiblingOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isSonOf data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Princess_Olga_of_Greece .
+
+data:Isabella_Vita_Marina a :Woman ;
+    :hasAncestor data:Amedeo%2C_5th_Duke_of_Aosta,
+        data:Marina_Karella,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece,
+        data:The%C3%B3doros_Kar%C3%A9llas ;
+    :hasBrother data:Amedeo_Michele,
+        data:Umberto ;
+    :hasFather data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :hasMother data:Princess_Olga_of_Greece ;
+    :hasParent data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Princess_Olga_of_Greece ;
+    :hasRelation data:Amedeo%2C_5th_Duke_of_Aosta,
+        data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Marina_Karella,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece,
+        data:The%C3%B3doros_Kar%C3%A9llas,
+        data:Umberto ;
+    :hasSister data:Isabella_Vita_Marina ;
+    :isBloodrelationOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isChildOf data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Princess_Olga_of_Greece ;
+    :isDaughterOf data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Princess_Olga_of_Greece ;
+    :isSiblingOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isSisterOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto .
+
+data:Umberto a :Man ;
+    :hasAncestor data:Amedeo%2C_5th_Duke_of_Aosta,
+        data:Marina_Karella,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece,
+        data:The%C3%B3doros_Kar%C3%A9llas ;
+    :hasBrother data:Amedeo_Michele,
+        data:Umberto ;
+    :hasFather data:Prince_Aimone%2C_Duke_of_Aosta ;
+    :hasMother data:Princess_Olga_of_Greece ;
+    :hasParent data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Princess_Olga_of_Greece ;
+    :hasRelation data:Amedeo%2C_5th_Duke_of_Aosta,
+        data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Marina_Karella,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece,
+        data:The%C3%B3doros_Kar%C3%A9llas,
+        data:Umberto ;
+    :hasSister data:Isabella_Vita_Marina ;
+    :isBloodrelationOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isBrotherOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isChildOf data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Princess_Olga_of_Greece ;
+    :isSiblingOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isSonOf data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Princess_Olga_of_Greece .
+
+data:Princess_Olga_of_Greece a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:The%C3%B3doros_Kar%C3%A9llas ;
+    :hasBirthYear 1971 ;
+    :hasChild data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :hasDaughter data:Isabella_Vita_Marina ;
+    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasMother data:Marina_Karella ;
+    :hasParent data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasRelation data:Amedeo%2C_5th_Duke_of_Aosta,
+        data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Marina_Karella,
+        data:Prince_Aimone%2C_Duke_of_Aosta,
+        data:Prince_Michael_of_Greece_and_Denmark,
+        data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece,
+        data:The%C3%B3doros_Kar%C3%A9llas,
+        data:Umberto ;
+    :hasSister data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :hasSon data:Amedeo_Michele,
+        data:Umberto ;
+    :isAncestorOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isAuntOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isBloodrelationOf data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :isChildOf data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :isDaughterOf data:Marina_Karella,
+        data:Prince_Michael_of_Greece_and_Denmark ;
+    :isMotherOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isParentOf data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :isSiblingOf data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece ;
+    :isSisterOf data:Princess_Alexandra,
+        data:Princess_Olga_of_Greece .
+

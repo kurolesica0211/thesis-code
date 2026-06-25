@@ -1,0 +1,350 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person,
+        :Woman ;
+    rdfs:label "Princess Victoria Melita of Saxe-Coburg and Gotha"^^xsd:string ;
+    data:posIndicesFull "1061:1065"^^xsd:string,
+        "1333:1337"^^xsd:string,
+        "1739:1743"^^xsd:string,
+        "1967:1971"^^xsd:string,
+        "2666:2670"^^xsd:string,
+        "3877:3881"^^xsd:string,
+        "4134:4138"^^xsd:string,
+        "4225:4229"^^xsd:string,
+        "4886:4890"^^xsd:string,
+        "51:55"^^xsd:string,
+        "538:542"^^xsd:string,
+        "5438:5442"^^xsd:string,
+        "983:987"^^xsd:string ;
+    data:posIndicesPart "3255:3263"^^xsd:string,
+        "3455:3463"^^xsd:string,
+        "3626:3634"^^xsd:string,
+        "5573:5581"^^xsd:string,
+        "5666:5674"^^xsd:string ;
+    data:wdtLink wdt:Q164500 ;
+    :alsoKnownAs "Ducky"^^xsd:string,
+        "Grand Duchess Victoria Feodorovna of Russia"^^xsd:string,
+        "Princess Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Feodorovna of Russia"^^xsd:string,
+        "Victoria Melita"^^xsd:string,
+        "Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Melita of Saxe-Coburg-Gotha"^^xsd:string,
+        "Victoria Melita, Grand Duchess of Hesse and the Rhine"^^xsd:string ;
+    :hasRelation data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isBloodrelationOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSiblingOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSisterOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
+
+data:Prince_Karl_Franz_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Karl Franz of Prussia"^^xsd:string ;
+    data:posIndicesFull "1092:1120"^^xsd:string ;
+    data:posIndicesPart "1347:1353"^^xsd:string,
+        "1617:1623"^^xsd:string,
+        "2034:2040"^^xsd:string,
+        "2060:2067"^^xsd:string,
+        "2327:2333"^^xsd:string,
+        "2344:2351"^^xsd:string,
+        "3153:3159"^^xsd:string,
+        "3829:3835"^^xsd:string,
+        "3936:3942"^^xsd:string,
+        "3963:3969"^^xsd:string,
+        "3989:3995"^^xsd:string,
+        "4120:4126"^^xsd:string,
+        "4206:4212"^^xsd:string,
+        "4628:4635"^^xsd:string,
+        "5167:5173"^^xsd:string,
+        "5206:5212"^^xsd:string,
+        "5256:5262"^^xsd:string,
+        "5697:5703"^^xsd:string,
+        "5733:5739"^^xsd:string,
+        "5759:5765"^^xsd:string ;
+    data:wdtLink wdt:Q635489 ;
+    :alsoKnownAs "Karl Franz Joseph"^^xsd:string,
+        "Karl Franz Joseph Prinz von Preußen"^^xsd:string,
+        "Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul of Prussia"^^xsd:string ;
+    :hasBrother data:Prince_Karl_Franz_of_Prussia ;
+    :hasChild data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasRelation data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Prince_Karl_Franz_of_Prussia ;
+    :isBrotherOf data:Prince_Karl_Franz_of_Prussia ;
+    :isFatherOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Prince_Karl_Franz_of_Prussia ;
+    :isUncleOf data:Prince_Franz_Wilhelm_of_Prussia .
+
+data:Princess_Henriette_of_Schönaich-Carolath a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Henriette of Schönaich-Carolath"^^xsd:string ;
+    data:posIndicesFull "1125:1165"^^xsd:string ;
+    data:posIndicesPart "3455:3463"^^xsd:string,
+        "4026:4034"^^xsd:string,
+        "4161:4169"^^xsd:string,
+        "4258:4266"^^xsd:string,
+        "4895:4903"^^xsd:string,
+        "5447:5455"^^xsd:string,
+        "5530:5538"^^xsd:string,
+        "5573:5581"^^xsd:string,
+        "5666:5674"^^xsd:string ;
+    data:wdtLink wdt:Q2306331 ;
+    :hasChild data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasRelation data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Princess_Henriette_of_Schönaich-Carolath ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Henriette_of_Schönaich-Carolath ;
+    :hasSon data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isAuntOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Princess_Henriette_of_Schönaich-Carolath ;
+    :isMotherOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Princess_Henriette_of_Schönaich-Carolath ;
+    :isSisterOf data:Princess_Henriette_of_Schönaich-Carolath .
+
+data:Princess_Leonida_Bagration_of_Mukhrani a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Leonida Bagration of Mukhrani"^^xsd:string ;
+    data:posIndicesFull "5544:5571"^^xsd:string ;
+    data:posIndicesPart "5573:5581"^^xsd:string,
+        "5666:5674"^^xsd:string ;
+    data:wdtLink wdt:Q788565 ;
+    :alsoKnownAs "Leonida Georgiievna Bagration-Moukhranskya, Princess Bagration-Moukhranskya"^^xsd:string,
+        "Leonida Georgiyevna Romanova"^^xsd:string,
+        "Leonida Kirby"^^xsd:string,
+        "Leonida Romanova"^^xsd:string ;
+    :hasChild data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasRelation data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :isAncestorOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isAuntOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :isMotherOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :isSisterOf data:Princess_Leonida_Bagration_of_Mukhrani .
+
+data:Grand_Duchess_Maria_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Maria Vladimirovna of Russia"^^xsd:string ;
+    data:posIndicesFull "0:42"^^xsd:string,
+        "890:932"^^xsd:string ;
+    data:posIndicesPart "1327:1332"^^xsd:string,
+        "1733:1738"^^xsd:string,
+        "1961:1966"^^xsd:string,
+        "2660:2665"^^xsd:string,
+        "268:273"^^xsd:string,
+        "274:286"^^xsd:string,
+        "2782:2788"^^xsd:string,
+        "2873:2879"^^xsd:string,
+        "3030:3036"^^xsd:string,
+        "3376:3381"^^xsd:string,
+        "3382:3389"^^xsd:string,
+        "3390:3395"^^xsd:string,
+        "350:356"^^xsd:string,
+        "382:387"^^xsd:string,
+        "3915:3922"^^xsd:string,
+        "4188:4195"^^xsd:string,
+        "4742:4747"^^xsd:string,
+        "4748:4755"^^xsd:string,
+        "4756:4761"^^xsd:string,
+        "4880:4885"^^xsd:string,
+        "5003:5008"^^xsd:string,
+        "5009:5016"^^xsd:string,
+        "5017:5022"^^xsd:string,
+        "5023:5035"^^xsd:string,
+        "5087:5093"^^xsd:string,
+        "532:537"^^xsd:string,
+        "5391:5397"^^xsd:string,
+        "5432:5437"^^xsd:string ;
+    data:wdtLink wdt:Q538532 ;
+    :alsoKnownAs "Crown Princess Maria Vladimirovna"^^xsd:string,
+        "Crown Princess Maria Vladimirovna of Russia"^^xsd:string,
+        "Grand Duchess Maria Vladimirovna, Grand Duchess of Russia"^^xsd:string,
+        "Maria Vladimirovna, Crown Princess of Russia"^^xsd:string,
+        "Maria Vladimirovna, Grand Duchess of Russia"^^xsd:string,
+        "Mariya Vladimirovna Romanov, Grand Duchess of Russia"^^xsd:string ;
+    :hasAncestor data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasChild data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasMother data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasParent data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasRelation data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasSon data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isAncestorOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isAuntOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isChildOf data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :isDaughterOf data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :isMotherOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isParentOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isSiblingOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia .
+
+data:Grand_Duke_George_Mikhailovich_of_Russia a :Man,
+        :Person ;
+    rdfs:label "Grand Duke George Mikhailovich of Russia"^^xsd:string ;
+    data:posIndicesFull "45:85"^^xsd:string ;
+    data:posIndicesPart "1055:1060"^^xsd:string,
+        "1168:1174"^^xsd:string,
+        "1279:1285"^^xsd:string,
+        "1286:1298"^^xsd:string,
+        "1327:1332"^^xsd:string,
+        "1733:1738"^^xsd:string,
+        "1961:1966"^^xsd:string,
+        "2180:2186"^^xsd:string,
+        "2334:2340"^^xsd:string,
+        "2354:2360"^^xsd:string,
+        "2451:2457"^^xsd:string,
+        "2660:2665"^^xsd:string,
+        "2693:2699"^^xsd:string,
+        "2782:2788"^^xsd:string,
+        "2873:2879"^^xsd:string,
+        "3030:3036"^^xsd:string,
+        "3227:3233"^^xsd:string,
+        "3376:3381"^^xsd:string,
+        "350:356"^^xsd:string,
+        "445:451"^^xsd:string,
+        "4721:4727"^^xsd:string,
+        "4742:4747"^^xsd:string,
+        "4880:4885"^^xsd:string,
+        "5003:5008"^^xsd:string,
+        "5087:5093"^^xsd:string,
+        "532:537"^^xsd:string,
+        "5391:5397"^^xsd:string,
+        "5432:5437"^^xsd:string,
+        "844:850"^^xsd:string,
+        "977:982"^^xsd:string,
+        "991:997"^^xsd:string ;
+    data:wdtLink wdt:Q2468206 ;
+    :alsoKnownAs "George Mikhailovich Romanov"^^xsd:string,
+        "Grand Duke George Mikhailovich, The Grand Duke of Russia"^^xsd:string,
+        "Grand Duke George Mikhailovich, The Grand Duke of Russia, Prince of Prussia"^^xsd:string,
+        "The Grand Duke George Mikhailovich"^^xsd:string,
+        "The Grand Duke George Mikhailovich of Russia"^^xsd:string ;
+    :hasAncestor data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Schönaich-Carolath,
+        data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasBrother data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasFather data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasMother data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasRelation data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Schönaich-Carolath,
+        data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isChildOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isSonOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia .
+
+data:Prince_Franz_Wilhelm_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Franz Wilhelm of Prussia"^^xsd:string ;
+    data:posIndicesFull "1003:1034"^^xsd:string,
+        "1880:1911"^^xsd:string,
+        "412:443"^^xsd:string ;
+    data:posIndicesPart "1347:1353"^^xsd:string,
+        "1617:1623"^^xsd:string,
+        "2034:2040"^^xsd:string,
+        "2060:2067"^^xsd:string,
+        "2327:2333"^^xsd:string,
+        "2344:2351"^^xsd:string,
+        "3153:3159"^^xsd:string,
+        "3829:3835"^^xsd:string,
+        "3936:3942"^^xsd:string,
+        "3963:3969"^^xsd:string,
+        "3989:3995"^^xsd:string,
+        "4120:4126"^^xsd:string,
+        "4206:4212"^^xsd:string,
+        "4628:4635"^^xsd:string,
+        "5167:5173"^^xsd:string,
+        "5206:5212"^^xsd:string,
+        "5256:5262"^^xsd:string,
+        "5697:5703"^^xsd:string,
+        "5733:5739"^^xsd:string,
+        "5759:5765"^^xsd:string,
+        "739:746"^^xsd:string,
+        "779:785"^^xsd:string,
+        "789:796"^^xsd:string ;
+    data:wdtLink wdt:Q64217 ;
+    :alsoKnownAs "Franz Wilhelm Victor Christoph Stephan"^^xsd:string,
+        "Franz Wilhelm Viktor Christoph Stephan Prinz von Preußen"^^xsd:string ;
+    :hasAncestor data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Schönaich-Carolath ;
+    :hasBrother data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasChild data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasFather data:Prince_Karl_Franz_of_Prussia ;
+    :hasMother data:Princess_Henriette_of_Schönaich-Carolath ;
+    :hasParent data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Schönaich-Carolath ;
+    :hasRelation data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Schönaich-Carolath,
+        data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasSex data:male ;
+    :hasSon data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isAncestorOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isBloodrelationOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isChildOf data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Schönaich-Carolath ;
+    :isFatherOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isParentOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isSiblingOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isSonOf data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Schönaich-Carolath ;
+    :isUncleOf data:Grand_Duke_George_Mikhailovich_of_Russia .
+

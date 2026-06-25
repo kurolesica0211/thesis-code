@@ -4,8 +4,8 @@
 
 data:Alexander a :Man,
         :Person ;
-    :hasFather data:William_III ;
-    :hasMother data:Sophie_of_Wurttemberg .
+    :hasFather data:WilliamIII ;
+    :hasMother data:Sophie .
 
 data:Beatrix a :Person,
         :Woman ;
@@ -18,29 +18,30 @@ data:Margriet a :Person,
         :Woman ;
     :hasMother data:Juliana .
 
-data:Emma_of_Waldeck_and_Pyrmont a :Person,
-        :Woman .
-
-data:Sophie_of_Wurttemberg a :Person,
+data:Emma a :Person,
         :Woman .
 
 data:Wilhelmina a :Person,
         :Woman ;
     :hasBirthYear 1880 ;
     :hasDeathYear 1962 ;
-    :hasFather data:William_III ;
+    :hasFather data:WilliamIII ;
     :hasMarriageYear 1901 ;
-    :hasMother data:Emma_of_Waldeck_and_Pyrmont ;
-    :hasRelation data:Henry_of_Mecklenburg-Schwerin .
+    :hasMother data:Emma ;
+    :hasRelation data:Henry .
 
-data:Henry_of_Mecklenburg-Schwerin a :Man,
+data:Henry a :Man,
         :Person .
 
 data:Juliana a :Person,
         :Woman ;
-    :hasFather data:Henry_of_Mecklenburg-Schwerin ;
+    :hasFather data:Henry ;
     :hasMother data:Wilhelmina .
 
-data:William_III a :Man,
-        :Person .
+data:Sophie a :Person,
+        :Woman .
+
+data:WilliamIII a :Man,
+        :Person ;
+    :hasRelation data:Sophie .
 

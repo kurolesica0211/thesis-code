@@ -1,0 +1,138 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Marina_consort_of_Prince_Michael a :Woman ;
+    :hasRelation data:Marina_consort_of_Prince_Michael ;
+    :hasSister data:Marina_consort_of_Prince_Michael ;
+    :isBloodrelationOf data:Marina_consort_of_Prince_Michael ;
+    :isSiblingOf data:Marina_consort_of_Prince_Michael ;
+    :isSisterOf data:Marina_consort_of_Prince_Michael .
+
+data:Queen_Sofia_of_Spain a :Woman ;
+    :hasRelation data:Queen_Sofia_of_Spain ;
+    :hasSister data:Queen_Sofia_of_Spain ;
+    :isBloodrelationOf data:Queen_Sofia_of_Spain ;
+    :isSiblingOf data:Queen_Sofia_of_Spain ;
+    :isSisterOf data:Queen_Sofia_of_Spain .
+
+data:Anne-Marie_of_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Crown_Prince_Pavlos,
+        data:Crown_Princess_Marie-Chantal,
+        data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasSister data:Anne-Marie_of_Denmark,
+        data:Crown_Princess_Marie-Chantal ;
+    :hasSon data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Anne-Marie_of_Denmark,
+        data:Crown_Princess_Marie-Chantal ;
+    :isMotherOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isSiblingOf data:Anne-Marie_of_Denmark,
+        data:Crown_Princess_Marie-Chantal ;
+    :isSisterOf data:Anne-Marie_of_Denmark,
+        data:Crown_Princess_Marie-Chantal .
+
+data:Constantine_II a :Ancestor,
+        :Man ;
+    :hasBrother data:Constantine_II,
+        data:Crown_Prince_Pavlos ;
+    :hasChild data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Crown_Prince_Pavlos,
+        data:Crown_Princess_Marie-Chantal,
+        data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_II,
+        data:Crown_Prince_Pavlos ;
+    :isBrotherOf data:Constantine_II,
+        data:Crown_Prince_Pavlos ;
+    :isFatherOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II,
+        data:Crown_Prince_Pavlos ;
+    :isUncleOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark .
+
+data:Crown_Prince_Pavlos a :Ancestor,
+        :Man ;
+    :hasBrother data:Constantine_II,
+        data:Crown_Prince_Pavlos ;
+    :hasChild data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Crown_Prince_Pavlos,
+        data:Crown_Princess_Marie-Chantal,
+        data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_II,
+        data:Crown_Prince_Pavlos ;
+    :isBrotherOf data:Constantine_II,
+        data:Crown_Prince_Pavlos ;
+    :isFatherOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II,
+        data:Crown_Prince_Pavlos ;
+    :isUncleOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark .
+
+data:Crown_Princess_Marie-Chantal a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Crown_Prince_Pavlos,
+        data:Crown_Princess_Marie-Chantal,
+        data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasSister data:Anne-Marie_of_Denmark,
+        data:Crown_Princess_Marie-Chantal ;
+    :hasSon data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Anne-Marie_of_Denmark,
+        data:Crown_Princess_Marie-Chantal ;
+    :isMotherOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isSiblingOf data:Anne-Marie_of_Denmark,
+        data:Crown_Princess_Marie-Chantal ;
+    :isSisterOf data:Anne-Marie_of_Denmark,
+        data:Crown_Princess_Marie-Chantal .
+
+data:Prince_Constantine-Alexios_of_Greece_and_Denmark a :Man ;
+    :hasAncestor data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Crown_Prince_Pavlos,
+        data:Crown_Princess_Marie-Chantal ;
+    :hasBirthYear 1998 ;
+    :hasBrother data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :hasFather data:Constantine_II,
+        data:Crown_Prince_Pavlos ;
+    :hasMother data:Anne-Marie_of_Denmark,
+        data:Crown_Princess_Marie-Chantal ;
+    :hasParent data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Crown_Prince_Pavlos,
+        data:Crown_Princess_Marie-Chantal ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Crown_Prince_Pavlos,
+        data:Crown_Princess_Marie-Chantal,
+        data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isChildOf data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Crown_Prince_Pavlos,
+        data:Crown_Princess_Marie-Chantal ;
+    :isSiblingOf data:Prince_Constantine-Alexios_of_Greece_and_Denmark ;
+    :isSonOf data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Crown_Prince_Pavlos,
+        data:Crown_Princess_Marie-Chantal .
+

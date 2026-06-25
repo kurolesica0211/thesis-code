@@ -69,139 +69,101 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Grand Duke Andrei Vladimirovich of Russia (Russian: Андре́й Влади́мирович; 14 May  1879 – 30 October 1956) was the youngest son of Grand Duke Vladimir Alexandrovich of Russia, and thus a grandson of Emperor Alexander II and the first cousin of Nicholas II, the last Russian emperor.
-In 1900, he began an affair with the famous ballerina Mathilde Kschessinska, becoming the third grand duke to fall for her.
-Grand Duke Andrei followed a military career and graduated from the  Alexandrovskaya Military Law academy in Saint Petersburg in 1905.
-He took part in World War I, but was away from real combat, spending most of the conflict at Russia's General Staff headquarters or in idle time in ceremonial positions in Saint Petersburg.
-In February 1917, shortly before the fall of the Russian monarchy, Grand Duke Andrei left Saint Petersburg to join his mother in Kislovodsk in the northern Caucasus.
-After the October Revolution of November 1917, he was briefly arrested along with his brother, Grand Duke Boris, but they escaped.
-He departed revolutionary Russia in March 1920, being the last grand duke to leave for exile.
-In 1921, he married his longtime mistress, Mathilde Kschessinska (1872-1971), and recognized her son Vladimir (or "Vova") as his own.
-After World War II, Grand Duke Andrei lived in reduced circumstances.
-At his death at age 77, he was the last surviving Russian grand duke born in Imperial Russia.
-Early life
+The Crown PrinceThe Crown Princess
 
-Grand Duke Andrei Vladimirovich of Russia was born on 14 May  1879 in Tsarskoye Selo, at his parents country residence, the Vladimir Villa.
-He was the youngest of the four Vladimirovich sons; a sister followed him a few years later, and the eldest of his brothers died in early childhood.
-His father, Grand Duke Vladimir Alexandrovich, a brother of Tsar Alexander III of Russia, was a renowned patron of the arts.
-Andrei's mother, Grand Duchess, Maria Pavlovna, née a Duchess of Mecklenburg-Schwerin, was one of the greatest hostesses of Russian society.
-Both parents doted on their four surviving children: Andrei, his two eldest brothers, Kirill and Boris, and their younger sister, Grand Duchess Elena.
-Raised by British nannies, English was Andrei's first language.
-Grand Duke Andrei grew up in opulence.
-The family's main residence was the Vladimir Palace in Saint Petersburg, but as his father preferred country life, they spent the greater part of the year at the Vladimir Villa, a mansion in Tsarskoye Selo, returning to Saint Petersburg during the winter.
-The children also accompanied their parents in many of their travels abroad to France, Germany and Italy, staying in Coburg, Paris, Berlin and Schwerin.
-Following Romanov tradition, Andrei was destined to follow a military career.
-While his eldest brother, Kirill, chose the Imperial navy, Andrei and his brother Boris joined the infantry.
-Andrei began his military service in August 1898 as lieutenant in the Guards Horse-Artillery Brigade.
-In spite of his appointments, Grand Duke Andrei did not have much interest in his military career.
-Relationship with Kschessinska
 
-Grand Duke Andrei was tall, shy and good looking.
-He was a good friend of his cousin Grand Duke Michael Alexandrovich, who was a year older.
-In February 1900, Grand Duke Andrei was invited by his brothers, Grand Dukes Kirill and Boris, to a dinner party at the house of Mathilde Kschessinska.
-Grand Duke Andrei sat next to his hostess during the dinner, but accidentally spilt a glass of red wine on her.
-Mathilde, attracted to the young grand duke, seven years her junior, took the incident as good omen.
-She subsequently began a long time affair with Grand Duke Sergei Mikhailovich of Russia, Nicholas and Andrei's first cousin once removed.
-As she was not in love with Sergei, but enjoyed his company and protection, Mathilde pursued a relationship with Grand Duke Andrei, the third Romanov to become involved with her.
-Grand Duke Sergei tolerated their affair, remaining a close and loyal friend to the famous ballerina, but the relationship between the two grand dukes grew tense.
-Both grand dukes were at first convinced they were the child's father.
-After the Revolution, Kschessinska and Grand Duke Andrei maintained that Andrei was the father.
-The child, who became known within the family by his nickname, Vova, received the name and patronymic Vladimir Sergeievich.
-Grand Duke Sergei was devoted to the child, looking after mother and son until his exile and subsequent execution following the fall of the Russian monarchy.
-The question of Vladimir's paternity remains unresolved.
-However, most sources attribute the paternity to Grand Duke Andrei Vladimirovich, whom the child resembled.
-A Russian Grand Duke
+Princess Tomislav
 
-In 1903, Grand Duke Andrei purchased his own palace.
-As upkeep of the mansion was expensive, it was sold to Grand Duke Andrei for 400 thousand rubles.
-Grand Duke Andrei seldom lived there.
-Grand Duke Andrei could neither openly live together with Mathilda nor did there exist the possibility of contracting a morganatic marriage with her.
-The couple always had to travel with his Aide-de-camp, Feodor Von Kube, and when Grand Duke Andrei was invited to events, Mathilda could not join him.
-As a member of the Russian Imperial family, Grand Duke Andrei took some duties of representation.
-In 1911, he visited Ferdinand I of Bulgaria for a second time as a representative of Russia, and he was appointed senator in that year.
-In the summer of 1912, Grand Duke Andrei fell ill with bronchitis.
-Fearing the onset of tuberculosis, he was sent to recuperate in the Crimea, staying in a palace owned by his cousin Grand Duke Nikolai Nikolayevich.
-Upon his return to Russia, Andrei Vladimirovich took part in the 300th anniversary celebrations of the Romanov dynasty.
-Villa Alam was completely remodeled and Andrei and Mathilde returned there in the spring of 1914, hoping to stay there every spring.
-War and revolution
 
-With the outbreak of World War I, Grand Duke Andrei joined the staff at the headquarters of the Northwestern front fighting against Germany.
-By 1916, Grand Duke Andrei joined other members of his family in political intrigues against the Empress who was in charge of the government in Saint Petersburg while Nicholas II was away at Russia's war military headquarters.
-In December 1916, the Assassination of Rasputin, in which Grand Duke Dmitri Pavlovich and Prince Felix Yusupov took part, divided the Romanov family further.
-Grand Duke Andrei joined many of his relatives in asking for clemency for the culprits.
-As Andrei's ambitious mother intrigued against Empress Alexandra, Nicholas II ordered the Grand Duchess to leave Saint Petersburg for a time.
-After a short personal interview with Nicholas II, on 16 January 1917, Grand Duke Andrei left for Kislovodsk, a spa resort town in the Caucasus.
-Andrei Vladimirovich and his mother were in Kislovodsk when Nicholas II was forced to abdicate at the outbreak of the February Revolution.
-The diaries of Grand Duke Andrei, written while he was in the army in the North-Eastern Front (1914–1915) and in Petrograd (1916–1917), have survived at the State Archives of the Russian Federation.
-In July 1917, Mathilde and her son escaped the disturbance in Saint Petersburg, joining Andrei in Kislovodsk.
-However, they could not live together as Grand Duchess Maria Pavlovna was reluctant to acknowledge their presence.
-Andrei found separate living arrangements for them while he settled in a different villa with his brother Grand Duke Boris, who arrived in September.
-During the period of the provisional government Grand Duke Andrei, his brother and mother lived mostly undisturbed in Kislovodsk, protected by local Cossacks.
-Seventeen of the 52 Romanovs living in Russia were executed during the red terror.
-Escaping the Bolsheviks
+Princess Alexander
 
-The Bolsheviks arrested Grand Duke Andrei and his brother Boris on the night of 7 August 1918, after a systematic search of their villa.
-Likely to be rearrested, the two grand dukes escaped to the surrounding mountains with Andrei's aide-de-camp, Colonel Von Kube, on 26 August 1918.
-They lived in hiding for almost five weeks, moving from village to village under protection of the Kabarda tribes, sheltered by Colonel Andrei Shkuro and his band of loyal Cossacks.
-On the evening of 23 September, Grand Duke Andrei, his brother Boris and Colonel Von Kube returned to the city on horseback, accompanied by Kabardian nobles who had protected them.
-During their time hiding in the mountains, Andrei allowed his beard to become overgrown.
-However, Grand Duchess Maria Pavlovna was determined to remain in Russia hoping that the White movement would prevail and Andrei's brother, Grand Duke Kirill Vladimirovich, would be installed as Tsar.
-It was suggested that Grand Duke Andrei should join the White army of General Anton Denikin, but the grand duchess opposed the idea, stating that members of the Romanov family should not take part in Russia's civil war.
-Against his mother's wishes, Grand Duke Boris left with his future wife, Zinaida Rashevskaya, in March 1919.
-On 29 March, Admiral Edward Hobart Seymour, commander of the British fleet in the Black Sea, offered to take Grand Duke Andrei and his mother to Constantinople, but Grand Duchess Maria Pavlovna again flatly refused.
-By Christmas, the Red army was to retake Kislovodsk and Grand Duke Andrei, with his mother and their entourage, decided to go to Novorossiysk, on the eastern coast of the Black Sea, where General Peter Wrangel had kept the Reds away.
-One day before their departure from Kislovodsk, Von Kube, Andrei's faithful adjutant, died of typhus.
-Grand Duke Andrei and his mother were the last Romanovs to leave Russia for exile.
-Exile
 
-Once in Venice, Grand Duke Andrei accompanied his mother via train to Cannes, on the French Riviera.
-Grand Duchess Maria Pavlovna died a few months later in September 1920.
-During her illness in Contrexéville, Grand Duke Andrei was reunited for the first time in exile with his three siblings.
-At his mother's death the last obstacle for Grand Duke Andrei to marry Mathilde Kchessinska was lifted.
-Andrei asked permission to marry Kchessinska from his brother Grand Duke Kirill and from Empress Maria Feodorovna, widow of Tsar Alexander III, the senior members of the Romanov family; both gave their consent.
-Grand Duke Andrei also claimed paternity of Kchessinska's son, Prince Vladimir Romanovsky-Krasinsky (30 June 1902 – 23 April 1974).
-In 1924, Grand Duke Andrei's eldest brother, Kirill, proclaimed himself Tsar in exile.
-Grand Duke Andrei supported his brother's claim.
-Grand Duke Kirill granted to Mathilde and her son the titles of Princess and Prince Romanovsky-Krasinsky, with the treatment of Serene Highness.
-During their first years in exile, Grand Duke Andrei and his wife were in better economic circumstances than many of the other Romanovs.
-Tsar Nicholas II made his relatives sell their properties abroad, repatriating their fortune to Russia during the war, but Grand Duke Andrei was able to keep Villa Alam in Cap-d'Ail because the property was under Mathilda's name.
-To have cash flow and maintain his standard of living, Andrei sold the jewel collection that he inherited from his mother, and he mortgaged Villa Alam.
-They traveled frequently to Paris, and Grand Duke Andrei was also active in philanthropic work, raising funds for Russian refugees.
-In 1928, Grand Duke Andrei became one of the few members of the Romanov family to believe the claim of Anna Anderson, the best known of several impostors who claimed to be the youngest daughter of Tsar Nicholas II, Grand Duchess Anastasia.
-Anderson was on the eve of her first trip to the United States when Grand Duke Andrei visited her once in January 1928.
-Although he had not been particularly close to Nicholas II and his family, Grand Duke Andrei had met the real Anastasia in family events through the years and while in service as aide-de-camp to the Tsar.
-Grand Duke Kirill protested his brother's support of Anderson and discouraged his intervention in the case.
-In later years, Grand Duke Andrei recanted his opinion.
-Grand Duke Andrei and his wife liked to gamble.
-Last years
+Princess Elizabeth
 
-During the 1930s, Mathilde's ballet school prospered, allowing Grand Duke Andrei and his family to have a comfortable, yet modest life.
-Andrei Vladimirovich also kept in touch with his Romanov relatives, particularly his brothers and many of his cousins, such as Grand Duke Dmitri Pavlovich, Grand Duchess Maria Pavlovna, Jr. and Prince Gabriel Constantinovich.
-His relationship with his sister, Grand Duchess Elena Vladimirovna of Russia, became strained as she never truly accepted Mathilde as a member of the family.
-At the outbreak of World War II, under the threat of a German bombing of Paris, Grand Duke Andrei and his family moved to Le Vésinet.
-Following the German invasion of France, they fled by train to Grand Duke Boris's Villa in Biarritz.
-Prince Vladimir Romanovsky-Krasinsky (who took a Westernized version of his mother's Polish name, Krzesińska, hyphenated with the adjective version of his father's name) was spoiled by his parents and never had an independent life.
-Vladimir was arrested by the Gestapo and held in a camp for Russian emigrants in Compiègne.
-Grand Duke Andrei visited German Police Headquarters multiple times and asked for help from Russian émigrés to get his son released, but neither group would help him.
-Vladimir was finally freed after 119 days in detention.
-During the war years the two other surviving grand dukes died; Grand Duke Dmitri Pavlovich in 1942 and Grand Duke Boris in 1943.
-With the death of his brother Boris, Andrei became the last surviving Grand Duke of the Romanov dynasty who had been born in Imperial Russia.
-Grand Duke Andrei's last years were marked by increasingly frail health and straitened financial circumstances.
-To balance his finances, he relied partially on economic aid from his nephew, Grand Duke Vladimir Kirillovich.
-In 1954, Grand Duke Andrei became a godfather of Grand Duke Vladimir's only child, Grand Duchess Maria Vladimirovna of Russia, the current claimant to the headship of the Romanov family.
-Despite poor health, Grand Duke Andrei lived to be 77 years old, an age reached by few in the Romanov family.
-He surpassed the longevity record held by his great-uncle, Grand Duke Michael Nikolaevich, by almost six months.
-On the morning of 31 October 1956, Grand Duke Andrei worked in his study.
-Prince Vladimir Romanovsky-Krasinsky died unmarried and childless in France in 1974, three years after his mother.
-Portrayal
 
-Actor Grigory Dobrygin portrayed Grand Duke Andrei Vladimirovich in Matilda, a Russian biopic from director Alexei Uchitel released in 2017.
+Filip Karađorđević (Serbian Cyrillic: Филип Карађорђевић; born 15 January 1982), sometimes referred to in English as Prince Philip Karageorgevitch and unofficially titled Philip, Hereditary Prince of Serbia and Yugoslavia (Serbian Cyrillic: Филип, принц наследник од Србије и Југославије, Filip, princ naslednik od Srbije i Jugoslavije), is a Serbian business manager, a member of the House of Karađorđević, and heir apparent to Crown Prince Alexander.
+In 2020, he moved to his homeland Serbia and took a more active role in public life, often travelling across Serbia, Kosovo, Montenegro, and Bosnia.
+In 2022, he became the hereditary prince, following his elder brother's renunciation.
+Early life and education
+
+Prince Philip was born on 15 January 1982 in Vienna, Virginia, as the second son and second child of the last Crown Prince of the former Kingdom of Yugoslavia, Alexander, and his first wife, Princess Maria da Gloria of Orléans-Braganza, the eldest daughter of Pedro Gastão of Orléans-Braganza, a claimant to the defunct Brazilian throne, and Princess Maria de la Esperanza of Bourbon-Two Sicilies (1914–2005), a maternal aunt of King Juan Carlos I of Spain.
+Philip is the fraternal twin of Alexander.
+His godparents are Queen Sofía of Spain, King Constantine II of Greece (both first cousins of his paternal grandmother), and Princess Anne, Duchess of Calabria (first cousin of his mother).
+Philip lived in Virginia until 1984.
+Philip's parents divorced in 1985.
+After the divorce, his father remarried Katherine Clairy Batis later that year, while his mother remarried Ignacio, Duke of Segorbe, member of the House of Medinaceli, later that year.
+Philip has two younger half-sisters through his mother, Sol María de la Blanca Medina y Orléans-Braganza, 54th Countess of Ampurias (b. 1986) and Ana Luna Medina y Orléans-Braganza, 17th Countess of Ricla (b. 1988).
+Together with his twin brother, Philip was educated in London and Canterbury.
+In June 2000, Philip completed sixth form at The King's School, Canterbury, obtaining three A levels and ten GCSEs.
+In 1991, Philip, with his father and brothers, briefly visited Belgrade, Yugoslavia.
+In February 2001, the Parliament of FR Yugoslavia passed legislation conferring citizenship on members of the Karađorđević family, making Philip eligible for Yugoslav citizenship.
+In July 2001, his father and step-mother moved to Belgrade, Serbia, FR Yugoslavia.
+After the dissolution of FR Yugoslavia (later renamed Serbia and Montenegro), Philip obtained citizenship of Serbia.
+Personal life
+
+After completing his studies, Philip started to work for financial institutions in the City of London.
+Most recently, Philip has been working with a renowned global asset manager in London.
+Philip lived and worked in London until 2020, when he relocated to Serbia and started to work remotely following the COVID-19 pandemic in Europe.
+Philip completed the 2010 Athens Marathon, the 2011 Belgrade Half-marathon, and the 2014 London Marathon.
+Marriage and children
+
+On 24 July 2017, his parents announced his engagement to Danica Marinković.
+Philip married Danica Marinković on 7 October 2017 at the Cathedral Church of Saint Michael the Archangel in Belgrade, Serbia.
+Their witnesses were Victoria, the Crown Princess of Sweden and his brother Peter.
+His two godmothers, Queen Sofía of Spain and Princess Anne, Duchess of Calabria, attended the wedding.
+It was the first royal wedding in Serbia since the 1922 wedding of his great-grandfather King Alexander I and Princess Maria of Romania.
+Several members of royal families also attended, including Prince Guillaume of Luxembourg with his wife, Prince Amyn Aga Khan, Princess Jeet Nabha Khemka, and guests of the Karađorđević Royal Family and the Marinković family, including the president of the National Assembly of Serbia Maja Gojković among others.
+Princess Danica gave birth to their son, Prince Stefan, in Belgrade on 25 February 2018 at 10:30 am.
+Stefan is the first male child born to the royal family on Serbian soil for 90 years, the last such birth being that of Prince Tomislav in Belgrade in 1928.
+On 5 November 2023 in Belgrade, Philip and Danica welcomed their second child, a daughter.
+They named her Princess Marija.
+Public life
+
+Prince Philip attended the reburial of his grandparents, King Peter II and Queen Alexandra, great-grandmother Queen Maria, and granduncle Prince Andrew in the Royal Family Mausoleum at Oplenac on 26 May 2013.
+The Serbian Royal Regalia were placed over King Peter's coffin, having Philip placed the Royal Orb and Sceptre near the Karađorđević Crown.
+On 17 July 2015, Prince Philip and his brothers attended their father's 70th birthday celebration in Royal Compound, Belgrade.
+Prince in Serbia (2020–2022)
+Philip used to live in London with his family, a wife and a son, but as of July 2020, they relocated and currently live in Belgrade, Serbia.
+With his relocation to Serbia, Philip fulfilled the promise he gave to Serbian Patriarch Irinej to do so.
+In January 2020, Prince Philip voiced support for the clerical protests in Montenegro.
+On 22 November 2020, Philip and his wife, Princess Danica, were the only members of the House of Karađorđević who attended the funeral service of Patriarch Irinej at the Church of Saint Sava.
+Prince Philip and his wife were also the only members of the House of Karađorđević who attended the enthronement of newly elected Patriarch Porfirije  on 19 February 2021 in St. Michael's Cathedral in Belgrade.
+In April 2021, before Easter, Philip visited Kosovo to support the Serbian community there.
+On 13 September 2021, Philip and his wife, Princess Danica, attended Holy Liturgy led by Patriarch Porfirije in the Jasenovac Monastery in Croatia and visited the Jasenovac concentration camp and Stone Flower sculpture, becoming the first members of the House of Karađorđević who visited this memorial site from World War II.
+In December 2021, Philip voiced support for the environmental protests in Serbia.
+In February 2022, Philip and his wife travelled to Han Pijesak, Bosnia and Herzegovina.
+Devastated by time, the summer house will be rebuilt and renovated as Prince Philip has agreed with local authorities and the Government of Republika Srpska to fund it.
+Furthermore, on 10 February, Prince Philip and his wife met with Milorad Dodik, a Serb member of the Presidency of Bosnia and Herzegovina.
+On 21 March 2022, Philip and his wife signed the People's initiative to ban the exploitation of lithium and boron in Serbia.
+Hereditary Prince (2022–present)
+
+On 27 April 2022, his elder brother Prince Peter renounced the title of a hereditary prince – for himself and his descendants.
+Philip became the Hereditary Prince of Serbia and Yugoslavia, heir apparent to his father, Alexander.
+The ceremony took place at Casa de Pilatos in Seville, Spain, in the presence of his mother, Princess Maria da Gloria, his stepfather Duke Ignacio, his wife Princess Danica, his half-sister Countess Sol, Ljubodrag Grujić, a member of the Crown Council, Chancellor of the Orders and the Herald of the House of Karađorđević and Nikola Stanković, Chief of Staff of the Crown Prince.
+His father, Crown Prince Alexander, did not attend the event.
+The Crown Prince was dissatisfied with Peter's renunciation.
+A grandson of King Alexander I of Yugoslavia, Prince Michael, supported the act.
+On 5 May 2022, Philip and his wife attended mass at the Cathedral of Saint-Louis des Invalides in Paris in honour of Napoleon I and soldiers of the Grande Armée who died for France, by invitation from his cousin Jean-Christophe, Prince Napoléon, a descendant of Napoleon, and his wife, Princess Olympia.
+Afterwards, they travelled to Mileševa Monastery in southwest Serbia and Pljevlja, Montenegro, attending the Holy Liturgy in Mileševa led by Patriarch Porfirije and Metropolitan Joanikije II of Montenegro and the Littoral.
+In the first week of June 2022, Philip and his family travelled to Kosovo, visiting Gazimestan, Gračanica Monastery, Prizren (Church of the Holy Saviour and Monastery of the Holy Archangels), Priština (St. Nicholas Church), and Visoki Dečani Monastery.
+Furthermore, Prince Philip gave a copy of Prince Peter's renunciation paper to the library of Visoki Dečani Monastery.
+On 11 September 2022, Philip and his wife attended a march from Loznica to the top of Gučevo mountain in honour of soldiers fallen in the Battle of the Drina in September 1914.
+In May 2023, Philip and his wife attended the Serbia Against Violence protests in Belgrade, following the Belgrade school shooting and a mass murder near Mladenovac and Smederevo.
+Arms
+
+Ancestry
+
+Philip is a member of the House of Karađorđević.
+Through his father, Philip descends from kings Nicholas I of Montenegro, Ferdinand I of Romania, Christian IX of Denmark, and Alexander of Greece, and furthermore from emperors Nicholas I of Russia and Frederick III of the Germans and Queen Victoria of the United Kingdom of Great Britain and Ireland.
+Through his mother, Philip descends from the Emperor Pedro II of Brazil, and kings Louis Philippe I of France and Francis I of the Two Sicilies, and furthermore from Francis I, Holy Roman Emperor and his Empress Maria Theresa, and king Charles III of Spain.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -217,39 +179,9 @@ Actor Grigory Dobrygin portrayed Grand Duke Andrei Vladimirovich in Matilda, a R
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -264,6 +196,23 @@ Actor Grigory Dobrygin portrayed Grand Duke Andrei Vladimirovich in Matilda, a R
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -281,6 +230,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -348,29 +312,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -379,6 +335,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -391,6 +355,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -399,17 +365,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -437,6 +405,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -452,155 +504,202 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (78bbe214-fb60-4966-8483-5a3567b82ced)
- Call ID: 78bbe214-fb60-4966-8483-5a3567b82ced
+  AssignClass (0b51ec00-330b-4422-9965-abdb8dcd22eb)
+ Call ID: 0b51ec00-330b-4422-9965-abdb8dcd22eb
   Args:
-    source: Grand_Duke_Andrei_Vladimirovich
+    source: Filip_Karadjordjevic
     type: :Man
-  AssignClass (c2c883a9-18e9-4de2-98d2-0a38f7e663cb)
- Call ID: c2c883a9-18e9-4de2-98d2-0a38f7e663cb
+  AssignClass (908c72fc-0aff-4e67-a938-f9a0e017be5a)
+ Call ID: 908c72fc-0aff-4e67-a938-f9a0e017be5a
   Args:
     type: :Person
-    source: Grand_Duke_Andrei_Vladimirovich
-  AddLiteral (b475189b-e502-4e5a-8b2f-633cb0e27fa1)
- Call ID: b475189b-e502-4e5a-8b2f-633cb0e27fa1
+    source: Filip_Karadjordjevic
+  AddLiteral (04543585-95f5-47e0-be87-0a5928055626)
+ Call ID: 04543585-95f5-47e0-be87-0a5928055626
   Args:
     relation: :hasBirthYear
-    source: Grand_Duke_Andrei_Vladimirovich
-    literal_value: 1879
     literal_type: xsd:integer
-  AddLiteral (8e329efb-629d-4e89-b54a-c392633ccc09)
- Call ID: 8e329efb-629d-4e89-b54a-c392633ccc09
-  Args:
-    relation: :hasDeathYear
-    source: Grand_Duke_Andrei_Vladimirovich
-    literal_value: 1956
-    literal_type: xsd:integer
-  AssignClass (982643d5-cebd-4027-90ba-e3abfcaf70aa)
- Call ID: 982643d5-cebd-4027-90ba-e3abfcaf70aa
+    source: Filip_Karadjordjevic
+    literal_value: 1982
+  AssignClass (8fa03e33-3fc4-45f6-a733-dc90c62a65cb)
+ Call ID: 8fa03e33-3fc4-45f6-a733-dc90c62a65cb
   Args:
     type: :Man
-    source: Grand_Duke_Vladimir_Alexandrovich
-  AssignClass (fe514e15-0c24-47fc-8d84-e21f67fe6d47)
- Call ID: fe514e15-0c24-47fc-8d84-e21f67fe6d47
+    source: Alexander_Karadjordjevic
+  AssignClass (0c19e882-5c0a-4eb0-9d28-fd7e44de7d1e)
+ Call ID: 0c19e882-5c0a-4eb0-9d28-fd7e44de7d1e
   Args:
-    source: Grand_Duke_Vladimir_Alexandrovich
     type: :Person
-  AddTriple (ee6a38cf-c0d4-468d-b938-d6626ede4e77)
- Call ID: ee6a38cf-c0d4-468d-b938-d6626ede4e77
+    source: Alexander_Karadjordjevic
+  AssignClass (a504e34a-775d-4923-840b-5c7070aa3229)
+ Call ID: a504e34a-775d-4923-840b-5c7070aa3229
   Args:
-    target: Grand_Duke_Vladimir_Alexandrovich
-    relation: :hasFather
-    source: Grand_Duke_Andrei_Vladimirovich
-  AssignClass (16aa3d11-1cb5-435e-a983-33b426e29ebf)
- Call ID: 16aa3d11-1cb5-435e-a983-33b426e29ebf
-  Args:
-    source: Grand_Duchess_Maria_Pavlovna
+    source: Maria_da_Gloria
     type: :Woman
-  AssignClass (187de011-97b4-4cb7-b628-acce61879657)
- Call ID: 187de011-97b4-4cb7-b628-acce61879657
+  AssignClass (76eb8dec-13c7-46c3-ab7f-c131d837b202)
+ Call ID: 76eb8dec-13c7-46c3-ab7f-c131d837b202
   Args:
-    source: Grand_Duchess_Maria_Pavlovna
     type: :Person
-  AddTriple (e9c3b6a6-bbb3-4063-825c-90ac095edfe5)
- Call ID: e9c3b6a6-bbb3-4063-825c-90ac095edfe5
+    source: Maria_da_Gloria
+  AddTriple (06316dae-d7b5-4fd8-a36b-7a50b6b055db)
+ Call ID: 06316dae-d7b5-4fd8-a36b-7a50b6b055db
+  Args:
+    relation: :hasFather
+    target: Alexander_Karadjordjevic
+    source: Filip_Karadjordjevic
+  AddTriple (87a3533b-10ee-4fbf-bd48-383c769659b4)
+ Call ID: 87a3533b-10ee-4fbf-bd48-383c769659b4
   Args:
     relation: :hasMother
-    source: Grand_Duke_Andrei_Vladimirovich
-    target: Grand_Duchess_Maria_Pavlovna
-  AssignClass (520dd430-efc5-4fab-ba52-6ad02993e23e)
- Call ID: 520dd430-efc5-4fab-ba52-6ad02993e23e
+    source: Filip_Karadjordjevic
+    target: Maria_da_Gloria
+  AssignClass (8c455a51-a880-4fc1-a145-219cdff2ddbd)
+ Call ID: 8c455a51-a880-4fc1-a145-219cdff2ddbd
   Args:
-    type: :Woman
-    source: Mathilde_Kschessinska
-  AssignClass (4cb86447-cb55-492d-b860-cac858ceccdb)
- Call ID: 4cb86447-cb55-492d-b860-cac858ceccdb
+    type: :Man
+    source: Peter_Karadjordjevic
+  AssignClass (03d2830b-2136-4b3f-a66e-d2569c42f7af)
+ Call ID: 03d2830b-2136-4b3f-a66e-d2569c42f7af
   Args:
     type: :Person
-    source: Mathilde_Kschessinska
-  AddLiteral (704c8358-22d8-49b4-b605-6ff21a14a69c)
- Call ID: 704c8358-22d8-49b4-b605-6ff21a14a69c
+    source: Peter_Karadjordjevic
+  AddTriple (a3d99393-dfd0-4e21-9f2f-bcf503233195)
+ Call ID: a3d99393-dfd0-4e21-9f2f-bcf503233195
   Args:
-    relation: :hasMarriageYear
-    source: Grand_Duke_Andrei_Vladimirovich
-    literal_value: 1921
-    literal_type: xsd:integer
-  AddTriple (d05d42a2-42db-4097-9b1a-c83d1204fb24)
- Call ID: d05d42a2-42db-4097-9b1a-c83d1204fb24
+    source: Filip_Karadjordjevic
+    target: Peter_Karadjordjevic
+    relation: :isBrotherOf
+  AssignClass (6590bc03-d177-4782-b8ac-44534c9990d7)
+ Call ID: 6590bc03-d177-4782-b8ac-44534c9990d7
   Args:
-    source: Grand_Duke_Andrei_Vladimirovich
+    source: Danica_Marinkovic
+    type: :Woman
+  AssignClass (8d79248a-44bc-484c-aea0-bae692dc3668)
+ Call ID: 8d79248a-44bc-484c-aea0-bae692dc3668
+  Args:
+    source: Danica_Marinkovic
+    type: :Person
+  AddTriple (87e725a3-b515-4650-b2bc-88025ca0d933)
+ Call ID: 87e725a3-b515-4650-b2bc-88025ca0d933
+  Args:
+    target: Danica_Marinkovic
+    source: Filip_Karadjordjevic
     relation: :hasRelation
-    target: Mathilde_Kschessinska
-  AssignClass (20448cf7-9ef5-4b73-bd7d-5ca700404e65)
- Call ID: 20448cf7-9ef5-4b73-bd7d-5ca700404e65
+  AddLiteral (ce98c0f8-d5e9-46a9-b831-2e941e5fc0cc)
+ Call ID: ce98c0f8-d5e9-46a9-b831-2e941e5fc0cc
   Args:
+    literal_value: 2017
+    source: Filip_Karadjordjevic
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AssignClass (114d5d5a-7243-463a-8d26-23f04e24bdbe)
+ Call ID: 114d5d5a-7243-463a-8d26-23f04e24bdbe
+  Args:
+    source: Stefan_Karadjordjevic
     type: :Man
-    source: Prince_Vladimir_Romanovsky-Krasinsky
-  AssignClass (1b6b1480-b8a1-47f2-bb15-16520bcea4b8)
- Call ID: 1b6b1480-b8a1-47f2-bb15-16520bcea4b8
-  Args:
-    source: Prince_Vladimir_Romanovsky-Krasinsky
-    type: :Person
-  AddTriple (dccf1483-1eb6-4f01-b5c5-d3b590d7b718)
- Call ID: dccf1483-1eb6-4f01-b5c5-d3b590d7b718
-  Args:
-    target: Grand_Duke_Andrei_Vladimirovich
-    relation: :hasFather
-    source: Prince_Vladimir_Romanovsky-Krasinsky
-  AddTriple (cb6edcee-aa7e-463f-9210-6a8d5a927408)
- Call ID: cb6edcee-aa7e-463f-9210-6a8d5a927408
-  Args:
-    target: Mathilde_Kschessinska
-    relation: :hasMother
-    source: Prince_Vladimir_Romanovsky-Krasinsky
-  AssignClass (e4a29f1d-7878-4898-a2f5-56ba1d771b3f)
- Call ID: e4a29f1d-7878-4898-a2f5-56ba1d771b3f
-  Args:
-    source: Grand_Duke_Kirill_Vladimirovich
-    type: :Man
-  AssignClass (6303ac9b-e1dd-436a-a015-4402c90750d4)
- Call ID: 6303ac9b-e1dd-436a-a015-4402c90750d4
-  Args:
-    source: Grand_Duke_Kirill_Vladimirovich
-    type: :Person
-  AddTriple (9d4fe439-ca7e-4380-8c8f-5607dc8a8d9e)
- Call ID: 9d4fe439-ca7e-4380-8c8f-5607dc8a8d9e
-  Args:
-    relation: :isBrotherOf
-    source: Grand_Duke_Andrei_Vladimirovich
-    target: Grand_Duke_Kirill_Vladimirovich
-  AssignClass (6bd537db-d707-42b1-a90f-4774cd8cd127)
- Call ID: 6bd537db-d707-42b1-a90f-4774cd8cd127
-  Args:
-    source: Grand_Duke_Boris_Vladimirovich
-    type: :Man
-  AssignClass (5a338a85-2ef0-4602-87d8-89f2554a4c45)
- Call ID: 5a338a85-2ef0-4602-87d8-89f2554a4c45
+  AssignClass (41d6bb49-f818-49b5-a334-eebda8222c85)
+ Call ID: 41d6bb49-f818-49b5-a334-eebda8222c85
   Args:
     type: :Person
-    source: Grand_Duke_Boris_Vladimirovich
-  AddTriple (4d9c98bc-d6f6-433c-95f8-7ad0e78612f4)
- Call ID: 4d9c98bc-d6f6-433c-95f8-7ad0e78612f4
+    source: Stefan_Karadjordjevic
+  AddTriple (ff363617-5ff3-4b3c-bdd6-c2e9417a2e8c)
+ Call ID: ff363617-5ff3-4b3c-bdd6-c2e9417a2e8c
   Args:
-    target: Grand_Duke_Boris_Vladimirovich
-    relation: :isBrotherOf
-    source: Grand_Duke_Andrei_Vladimirovich
-  AssignClass (ff641337-43c5-4bcb-bcf4-3d92afb2d1b0)
- Call ID: ff641337-43c5-4bcb-bcf4-3d92afb2d1b0
+    source: Stefan_Karadjordjevic
+    target: Filip_Karadjordjevic
+    relation: :isSonOf
+  AddTriple (2d2f9e04-7f35-46b4-ac50-7d907fcb15ac)
+ Call ID: 2d2f9e04-7f35-46b4-ac50-7d907fcb15ac
+  Args:
+    relation: :isSonOf
+    target: Danica_Marinkovic
+    source: Stefan_Karadjordjevic
+  AssignClass (ffc4c89a-3206-41bd-afee-31ccf2633090)
+ Call ID: ffc4c89a-3206-41bd-afee-31ccf2633090
   Args:
     type: :Woman
-    source: Grand_Duchess_Elena_Vladimirovna
-  AssignClass (b830ec4a-4559-40e6-b03b-75eee1069be6)
- Call ID: b830ec4a-4559-40e6-b03b-75eee1069be6
+    source: Marija_Karadjordjevic
+  AssignClass (496f1e08-27ee-4738-9f0d-669f2693f65c)
+ Call ID: 496f1e08-27ee-4738-9f0d-669f2693f65c
+  Args:
+    source: Marija_Karadjordjevic
+    type: :Person
+  AddTriple (7bc4483c-1b88-4fc3-9031-a106fd77e520)
+ Call ID: 7bc4483c-1b88-4fc3-9031-a106fd77e520
+  Args:
+    relation: :isDaughterOf
+    target: Filip_Karadjordjevic
+    source: Marija_Karadjordjevic
+  AddTriple (e1fa03aa-7203-497a-b177-6860ec74f6ac)
+ Call ID: e1fa03aa-7203-497a-b177-6860ec74f6ac
+  Args:
+    relation: :isDaughterOf
+    target: Danica_Marinkovic
+    source: Marija_Karadjordjevic
+  AssignClass (596b62de-7b5d-4b8a-9dd1-d206e1f2b363)
+ Call ID: 596b62de-7b5d-4b8a-9dd1-d206e1f2b363
+  Args:
+    source: Katherine_Clairy_Batis
+    type: :Woman
+  AssignClass (0b89ffac-2f74-4aa9-840d-2857a49c2e21)
+ Call ID: 0b89ffac-2f74-4aa9-840d-2857a49c2e21
   Args:
     type: :Person
-    source: Grand_Duchess_Elena_Vladimirovna
-  AddTriple (d7f26560-e9c2-45b5-a927-646162f68efa)
- Call ID: d7f26560-e9c2-45b5-a927-646162f68efa
+    source: Katherine_Clairy_Batis
+  AssignClass (d8838e41-c5e3-4533-9a46-844f2daee3e4)
+ Call ID: d8838e41-c5e3-4533-9a46-844f2daee3e4
   Args:
-    relation: :isSisterOf
-    source: Grand_Duke_Andrei_Vladimirovich
-    target: Grand_Duchess_Elena_Vladimirovna
-  Finish (9fb40f7a-7c99-4f94-a02e-be3c1be28f29)
- Call ID: 9fb40f7a-7c99-4f94-a02e-be3c1be28f29
+    source: Ignacio_Duke_of_Segorbe
+    type: :Man
+  AssignClass (0f10fbb8-e713-4f02-bd85-34a8016cfa59)
+ Call ID: 0f10fbb8-e713-4f02-bd85-34a8016cfa59
+  Args:
+    type: :Person
+    source: Ignacio_Duke_of_Segorbe
+  AssignClass (3d3cce99-7555-43ae-8b7d-273aa5de250f)
+ Call ID: 3d3cce99-7555-43ae-8b7d-273aa5de250f
+  Args:
+    type: :Woman
+    source: Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza
+  AssignClass (7532326f-5b4f-4ccc-979e-df74c6eb64b7)
+ Call ID: 7532326f-5b4f-4ccc-979e-df74c6eb64b7
+  Args:
+    type: :Person
+    source: Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza
+  AssignClass (6cceeefb-658f-48dc-9b6a-0b5256d41cf7)
+ Call ID: 6cceeefb-658f-48dc-9b6a-0b5256d41cf7
+  Args:
+    source: Ana_Luna_Medina_y_Orleans_Braganza
+    type: :Woman
+  AssignClass (07f5917e-c0f9-459f-b280-dc7f6ca0ef2b)
+ Call ID: 07f5917e-c0f9-459f-b280-dc7f6ca0ef2b
+  Args:
+    source: Ana_Luna_Medina_y_Orleans_Braganza
+    type: :Person
+  AddTriple (33b15b5d-c3cb-4b3e-8322-8d187b9be65b)
+ Call ID: 33b15b5d-c3cb-4b3e-8322-8d187b9be65b
+  Args:
+    source: Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza
+    target: Maria_da_Gloria
+    relation: :hasMother
+  AddTriple (3b0e6ba2-1f95-4bbd-9679-ce773e4ac43e)
+ Call ID: 3b0e6ba2-1f95-4bbd-9679-ce773e4ac43e
+  Args:
+    target: Maria_da_Gloria
+    source: Ana_Luna_Medina_y_Orleans_Braganza
+    relation: :hasMother
+  AddTriple (80f7a5a5-33ee-4137-95d5-709278db3086)
+ Call ID: 80f7a5a5-33ee-4137-95d5-709278db3086
+  Args:
+    relation: :hasFather
+    target: Ignacio_Duke_of_Segorbe
+    source: Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza
+  AddTriple (e3ebb15f-e854-4c61-8117-8666385ccb8d)
+ Call ID: e3ebb15f-e854-4c61-8117-8666385ccb8d
+  Args:
+    relation: :hasFather
+    target: Ignacio_Duke_of_Segorbe
+    source: Ana_Luna_Medina_y_Orleans_Braganza
+  Finish (a3c053eb-173b-48ef-8d6f-b149eeb44e89)
+ Call ID: a3c053eb-173b-48ef-8d6f-b149eeb44e89
   Args:

@@ -74,11 +74,8 @@ He served as high commissioner of the Cretan State during its transition towards
 Childhood
 
 Born at Mon Repos palace in Corfu, Prince George spent his childhood in Greece with his parents and his six siblings, splitting their time between the Royal Palace on Syntagma Square and the Tatoi Palace, north of Athens, at the foot of Mount Parnitha.
-When the bus's route passed the palace, the omnibus would stop for them, the palace trumpets played a salute, and the family would get out hastily, taking care to show that they didn't make the other passengers wait too long.
 George I often reminded his children: "Never forget that you are strangers among the Greeks, and make sure they never remember it".
 A typical day for young Prince George and his siblings began at 6am, with a cold bath.
-After a first breakfast, they had lessons from 7 to 9.30am, and then had a second breakfast, with their father and any other available family members.
-Their studies then continued from 10am to midday, when the children would go to the palace gardens to do exercise and gymnastics.
 George followed this routine until the age of fourteen, after which he was allowed to dine with his elders, but still had to be in bed at precisely 10pm.
 George and his brothers were taught by three foreign tutors:
 The children's mother tongue was English, which they spoke with their parents, but their father, George I, insisted that they use Greek during their lessons.
@@ -87,7 +84,6 @@ Naval training with Prince Valdemar
 
 In 1883, George's father sent him to live at Bernstorff Palace near Copenhagen in Denmark.
 George was to enlist in the Danish royal navy, aged just fourteen.
-Freed from the constraints of the palace and his tutors, he became one of the best students in his class at the Danish Naval Academy.
 While in Denmark, the teenage George was in the care of his grandfather, King Christian IX, and his youngest uncle, Prince Valdemar.
 However, George and Valdemar's relationship quickly developed beyond familial relations.
 While watching his parents' boat leave Denmark, George was overwhelmed by a strong sense of abandonment.
@@ -95,7 +91,6 @@ Realising this, Valdemar took George's hand.
 For the teenage George, this sign of affection was a revelation.
 This passion between the two men would last until Prince Valdemar's death on 14th January 1939.
 Even after they were both married, George and Valdemar would meet every year for several weeks, in Denmark or abroad.
-Hidden behind the guise of a strong friendship, their homosexuality never seems to have attracted the family's disapproval, and many photographs of them taken together during their annual reunions or family occasions show that they were never reluctant to be seen together.
 As his duty as a prince was principally to have a family and continue the royal family line, George's family sought to find him a wife.
 In 1888, while his older brother Prince Constantine's marriage was being arranged with Sophie of Prussia, negociations were begun for a marriage the following year for George and Princess Marguerite of Orléans.
 This marriage would have made George Valdemar's brother-in-law, as Marguerite's sister Marie was Valdemar's wife.
@@ -170,7 +165,6 @@ Death
 
 On 21 November 1957 Princess Marie and her husband celebrated their golden wedding anniversary.
 Prince George died 25 November 1957, aged eighty-eight, the longest-living dynast of the House of Oldenburg of his generation.
-He was buried at Tatoi Royal Cemetery with Danish and Greek flags, his wedding ring, a lock of Valdemar's hair, a photo of Valdemar, and earth from Bernstorff.
 Prince George was the last living child of King George and Queen Olga.
 Georgioupolis, a coastal resort between Chania and Rethimno, was named after Prince George.
 
@@ -179,6 +173,8 @@ Georgioupolis, a coastal resort between Chania and Rethimno, was named after Pri
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -194,39 +190,9 @@ Georgioupolis, a coastal resort between Chania and Rethimno, was named after Pri
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -241,6 +207,23 @@ Georgioupolis, a coastal resort between Chania and Rethimno, was named after Pri
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -258,6 +241,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -325,29 +323,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -356,6 +346,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -368,6 +366,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -376,17 +376,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -414,6 +416,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -429,181 +515,209 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d1605c01-bfd9-446c-80b2-68593aa6ddf6)
- Call ID: d1605c01-bfd9-446c-80b2-68593aa6ddf6
+  AssignClass (e95be75c-9114-47b0-9cc3-4616e2040fb9)
+ Call ID: e95be75c-9114-47b0-9cc3-4616e2040fb9
   Args:
     type: :Man
-    source: :George_of_Greece_and_Denmark
-  AssignClass (eacbf0ba-0233-4026-85b4-d3b3b7a1b589)
- Call ID: eacbf0ba-0233-4026-85b4-d3b3b7a1b589
+    source: Prince_George_of_Greece_and_Denmark
+  AssignClass (8993ce00-28c9-46b1-8e81-a72c7ed61208)
+ Call ID: 8993ce00-28c9-46b1-8e81-a72c7ed61208
   Args:
     type: :Person
-    source: :George_of_Greece_and_Denmark
-  AddLiteral (5d042786-0258-4278-91c7-5a2baf4e248e)
- Call ID: 5d042786-0258-4278-91c7-5a2baf4e248e
+    source: Prince_George_of_Greece_and_Denmark
+  AddLiteral (d7ed0c8b-e81f-4b2b-8000-fca39e83cadd)
+ Call ID: d7ed0c8b-e81f-4b2b-8000-fca39e83cadd
   Args:
-    source: :George_of_Greece_and_Denmark
-    literal_value: 1869
-    relation: :hasBirthYear
     literal_type: xsd:integer
-  AddLiteral (6609f651-9ca6-4753-9782-59f1019bc6cb)
- Call ID: 6609f651-9ca6-4753-9782-59f1019bc6cb
+    relation: :hasBirthYear
+    source: Prince_George_of_Greece_and_Denmark
+    literal_value: 1869
+  AddLiteral (75d4da0a-f575-4a88-81e5-3dad6c647d2e)
+ Call ID: 75d4da0a-f575-4a88-81e5-3dad6c647d2e
   Args:
-    source: :George_of_Greece_and_Denmark
-    literal_value: 1957
     relation: :hasDeathYear
     literal_type: xsd:integer
-  AssignClass (bfb4edaf-ef5c-4325-9074-f1f38f437642)
- Call ID: bfb4edaf-ef5c-4325-9074-f1f38f437642
+    source: Prince_George_of_Greece_and_Denmark
+    literal_value: 1957
+  AssignClass (08994d3e-8b65-47fb-bb05-171ab47575b5)
+ Call ID: 08994d3e-8b65-47fb-bb05-171ab47575b5
   Args:
+    source: George_I_of_Greece
     type: :Man
-    source: :George_I_of_Greece
-  AssignClass (1adae2ae-80a5-4ad4-8152-237a6ca6c9ab)
- Call ID: 1adae2ae-80a5-4ad4-8152-237a6ca6c9ab
+  AssignClass (d3c034b4-fd5c-4c62-a0b9-21df762fbc9f)
+ Call ID: d3c034b4-fd5c-4c62-a0b9-21df762fbc9f
   Args:
-    source: :George_I_of_Greece
     type: :Person
-  AssignClass (06bc0f37-e95d-4b54-a35c-3565e1c0aae4)
- Call ID: 06bc0f37-e95d-4b54-a35c-3565e1c0aae4
+    source: George_I_of_Greece
+  AssignClass (dbbf99da-3859-4796-982d-7a0e0bf0de4c)
+ Call ID: dbbf99da-3859-4796-982d-7a0e0bf0de4c
   Args:
-    source: :Olga_Konstantinovna_of_Russia
+    source: Olga_Konstantinovna_of_Russia
     type: :Woman
-  AssignClass (9e608f86-8d96-4a82-b5d2-079aa37eaf8a)
- Call ID: 9e608f86-8d96-4a82-b5d2-079aa37eaf8a
+  AssignClass (6ee71eea-1b6b-41d9-927d-6c08064693e5)
+ Call ID: 6ee71eea-1b6b-41d9-927d-6c08064693e5
   Args:
-    source: :Olga_Konstantinovna_of_Russia
+    source: Olga_Konstantinovna_of_Russia
     type: :Person
-  AddTriple (06ee3ffe-96ad-4494-a185-f43cb36294c3)
- Call ID: 06ee3ffe-96ad-4494-a185-f43cb36294c3
+  AddTriple (bfa706b7-f6ce-4f26-b65a-ab94ca662a8f)
+ Call ID: bfa706b7-f6ce-4f26-b65a-ab94ca662a8f
   Args:
     relation: :hasFather
-    target: :George_I_of_Greece
-    source: :George_of_Greece_and_Denmark
-  AddTriple (15b8af98-5b0f-420a-89c8-7ac8370d8f57)
- Call ID: 15b8af98-5b0f-420a-89c8-7ac8370d8f57
+    target: George_I_of_Greece
+    source: Prince_George_of_Greece_and_Denmark
+  AddTriple (5c833711-208d-43d1-9d09-ad5da5a0e18b)
+ Call ID: 5c833711-208d-43d1-9d09-ad5da5a0e18b
   Args:
-    target: :Olga_Konstantinovna_of_Russia
     relation: :hasMother
-    source: :George_of_Greece_and_Denmark
-  AssignClass (8c01adb8-d681-43f2-b13a-c18d37dc22b7)
- Call ID: 8c01adb8-d681-43f2-b13a-c18d37dc22b7
+    target: Olga_Konstantinovna_of_Russia
+    source: Prince_George_of_Greece_and_Denmark
+  AssignClass (d268587f-f6ad-4106-938c-d39ff32267cc)
+ Call ID: d268587f-f6ad-4106-938c-d39ff32267cc
   Args:
     type: :Man
-    source: :Christian_IX_of_Denmark
-  AssignClass (1e86b631-3954-4882-a08d-fdb88e93c4a5)
- Call ID: 1e86b631-3954-4882-a08d-fdb88e93c4a5
+    source: Prince_Constantine
+  AssignClass (077bd8af-e6f6-46f9-9866-44a746de2f1a)
+ Call ID: 077bd8af-e6f6-46f9-9866-44a746de2f1a
   Args:
-    source: :Christian_IX_of_Denmark
     type: :Person
-  AddTriple (73f6fc22-ab94-4b37-b517-9185dfecc994)
- Call ID: 73f6fc22-ab94-4b37-b517-9185dfecc994
+    source: Prince_Constantine
+  AddTriple (bb83cd7a-0889-4ef3-8f16-d6c423c60aa2)
+ Call ID: bb83cd7a-0889-4ef3-8f16-d6c423c60aa2
   Args:
-    source: :George_of_Greece_and_Denmark
-    relation: :hasFather
-    target: :Christian_IX_of_Denmark
-  AssignClass (782549c2-0575-4b64-ac86-475088f5dd7c)
- Call ID: 782549c2-0575-4b64-ac86-475088f5dd7c
+    source: Prince_George_of_Greece_and_Denmark
+    relation: :isBrotherOf
+    target: Prince_Constantine
+  AssignClass (050283aa-4d0b-4d22-990b-5b34c9ac6ada)
+ Call ID: 050283aa-4d0b-4d22-990b-5b34c9ac6ada
   Args:
-    source: :Valdemar_of_Denmark
     type: :Man
-  AssignClass (b2f8f675-556d-4cca-b8b2-3d5cde9f6942)
- Call ID: b2f8f675-556d-4cca-b8b2-3d5cde9f6942
+    source: Prince_Nicholas
+  AssignClass (9ae5dae0-0086-4f95-ace5-76de00628d17)
+ Call ID: 9ae5dae0-0086-4f95-ace5-76de00628d17
   Args:
-    source: :Valdemar_of_Denmark
+    source: Prince_Nicholas
     type: :Person
-  AddTriple (daee437c-a9fb-4942-ac9c-ab7cd64ed921)
- Call ID: daee437c-a9fb-4942-ac9c-ab7cd64ed921
+  AddTriple (311154dd-ce84-4a90-b1ba-aaae98ed9d8f)
+ Call ID: 311154dd-ce84-4a90-b1ba-aaae98ed9d8f
   Args:
-    source: :Valdemar_of_Denmark
-    relation: :isUncleOf
-    target: :George_of_Greece_and_Denmark
-  AssignClass (81c5aeb1-7f55-4c01-a2f0-b8b6641d4fdc)
- Call ID: 81c5aeb1-7f55-4c01-a2f0-b8b6641d4fdc
+    relation: :isBrotherOf
+    target: Prince_Nicholas
+    source: Prince_George_of_Greece_and_Denmark
+  AssignClass (09f8cc4c-0dd8-44a7-b3c1-e7500624b6bd)
+ Call ID: 09f8cc4c-0dd8-44a7-b3c1-e7500624b6bd
   Args:
+    source: King_Christian_IX
+    type: :Man
+  AssignClass (565543c6-f266-4ef9-9ca1-1d99dd2cd36c)
+ Call ID: 565543c6-f266-4ef9-9ca1-1d99dd2cd36c
+  Args:
+    type: :Person
+    source: King_Christian_IX
+  AddTriple (716cec7a-ac8c-4203-a63c-803e490a2c79)
+ Call ID: 716cec7a-ac8c-4203-a63c-803e490a2c79
+  Args:
+    target: King_Christian_IX
+    relation: :isChildOf
+    source: Prince_George_of_Greece_and_Denmark
+  AssignClass (2e846b41-ee59-4285-88fd-77275906a8b3)
+ Call ID: 2e846b41-ee59-4285-88fd-77275906a8b3
+  Args:
+    source: Prince_Valdemar
+    type: :Man
+  AssignClass (c83b119f-bfc7-4e13-babb-75437d5c2deb)
+ Call ID: c83b119f-bfc7-4e13-babb-75437d5c2deb
+  Args:
+    type: :Person
+    source: Prince_Valdemar
+  AddTriple (14bf14f2-99e2-44bb-bc07-ddc0f030b1fe)
+ Call ID: 14bf14f2-99e2-44bb-bc07-ddc0f030b1fe
+  Args:
+    source: Prince_Valdemar
+    relation: :isChildOf
+    target: King_Christian_IX
+  AssignClass (3a727ec8-92a7-4cb2-a5a5-667cf9d4c863)
+ Call ID: 3a727ec8-92a7-4cb2-a5a5-667cf9d4c863
+  Args:
+    source: Princess_Marie_Bonaparte
     type: :Woman
-    source: :Marie_Bonaparte
-  AssignClass (76048cf2-98f1-453b-a1e1-ee10321a11ff)
- Call ID: 76048cf2-98f1-453b-a1e1-ee10321a11ff
+  AssignClass (5d35b147-1783-4874-bc6c-6efed0689a83)
+ Call ID: 5d35b147-1783-4874-bc6c-6efed0689a83
   Args:
-    source: :Marie_Bonaparte
     type: :Person
-  AddLiteral (661cf494-23a8-4d45-b6a6-b939a146951d)
- Call ID: 661cf494-23a8-4d45-b6a6-b939a146951d
+    source: Princess_Marie_Bonaparte
+  AddLiteral (b3271677-e952-49b1-b713-7af03a083f2c)
+ Call ID: b3271677-e952-49b1-b713-7af03a083f2c
   Args:
-    literal_value: 1907
-    source: :George_of_Greece_and_Denmark
-    literal_type: xsd:integer
     relation: :hasMarriageYear
-  AddTriple (47164c64-a880-49fb-a580-1e1daae5dacb)
- Call ID: 47164c64-a880-49fb-a580-1e1daae5dacb
+    literal_type: xsd:integer
+    literal_value: 1907
+    source: Prince_George_of_Greece_and_Denmark
+  AddTriple (455c45e8-d85d-445f-a59e-ea3adfb6cfcf)
+ Call ID: 455c45e8-d85d-445f-a59e-ea3adfb6cfcf
   Args:
-    source: :George_of_Greece_and_Denmark
     relation: :hasRelation
-    target: :Marie_Bonaparte
-  AssignClass (b5735d4c-cc3c-4168-b1ad-01f2afaf2771)
- Call ID: b5735d4c-cc3c-4168-b1ad-01f2afaf2771
+    target: Princess_Marie_Bonaparte
+    source: Prince_George_of_Greece_and_Denmark
+  AssignClass (b80d1159-ee96-49f0-a2af-2ad71344efbf)
+ Call ID: b80d1159-ee96-49f0-a2af-2ad71344efbf
   Args:
-    source: :Petros_of_Greece_and_Denmark
+    source: Prince_Roland_Bonaparte
     type: :Man
-  AssignClass (17eb0be9-3fea-4c76-926c-36e16413651b)
- Call ID: 17eb0be9-3fea-4c76-926c-36e16413651b
+  AssignClass (a2afa60a-4aa0-4960-9cd5-3b1c084035c7)
+ Call ID: a2afa60a-4aa0-4960-9cd5-3b1c084035c7
   Args:
-    source: :Petros_of_Greece_and_Denmark
+    source: Prince_Roland_Bonaparte
     type: :Person
-  AssignClass (3d0d0f80-ffda-43aa-9dd6-d0ef086402bc)
- Call ID: 3d0d0f80-ffda-43aa-9dd6-d0ef086402bc
+  AddTriple (42a073c8-cb58-4cad-9815-ed7c26470f2d)
+ Call ID: 42a073c8-cb58-4cad-9815-ed7c26470f2d
   Args:
-    source: :Evgenia_of_Greece_and_Denmark
+    target: Princess_Marie_Bonaparte
+    relation: :isFatherOf
+    source: Prince_Roland_Bonaparte
+  AssignClass (cbc94f20-9f4d-4974-9337-e988f105053b)
+ Call ID: cbc94f20-9f4d-4974-9337-e988f105053b
+  Args:
+    type: :Man
+    source: Petros
+  AssignClass (90feac3b-8371-4c3c-b7d4-5dc0851387dd)
+ Call ID: 90feac3b-8371-4c3c-b7d4-5dc0851387dd
+  Args:
+    type: :Person
+    source: Petros
+  AddTriple (5ac75fd1-3415-42e1-a16c-c3c6ab804118)
+ Call ID: 5ac75fd1-3415-42e1-a16c-c3c6ab804118
+  Args:
+    target: Prince_George_of_Greece_and_Denmark
+    relation: :isSonOf
+    source: Petros
+  AddTriple (35e18cb5-8dcf-408c-819d-7a58d2c4569f)
+ Call ID: 35e18cb5-8dcf-408c-819d-7a58d2c4569f
+  Args:
+    relation: :isSonOf
+    target: Princess_Marie_Bonaparte
+    source: Petros
+  AssignClass (8f6b7e1d-9fc9-4f2e-9676-05406e920668)
+ Call ID: 8f6b7e1d-9fc9-4f2e-9676-05406e920668
+  Args:
+    source: Evgenia
     type: :Woman
-  AssignClass (b85f11e7-c374-4cc4-83be-69381642c66f)
- Call ID: b85f11e7-c374-4cc4-83be-69381642c66f
+  AssignClass (a9bd377a-6de6-4d73-89bb-47cca6fdf0b7)
+ Call ID: a9bd377a-6de6-4d73-89bb-47cca6fdf0b7
   Args:
     type: :Person
-    source: :Evgenia_of_Greece_and_Denmark
-  AddTriple (8f507ed9-4dca-460f-95ea-1f0b4cf48454)
- Call ID: 8f507ed9-4dca-460f-95ea-1f0b4cf48454
+    source: Evgenia
+  AddTriple (a7893d06-9a2e-4ab8-b691-1924d270e539)
+ Call ID: a7893d06-9a2e-4ab8-b691-1924d270e539
   Args:
-    target: :Petros_of_Greece_and_Denmark
-    relation: :hasSon
-    source: :George_of_Greece_and_Denmark
-  AddTriple (ac9017ed-3c36-4a27-a61a-886c507c36df)
- Call ID: ac9017ed-3c36-4a27-a61a-886c507c36df
+    target: Prince_George_of_Greece_and_Denmark
+    relation: :isDaughterOf
+    source: Evgenia
+  AddTriple (7c2a7f85-6974-4245-aaf2-d454f7c31e54)
+ Call ID: 7c2a7f85-6974-4245-aaf2-d454f7c31e54
   Args:
-    relation: :hasDaughter
-    target: :Evgenia_of_Greece_and_Denmark
-    source: :George_of_Greece_and_Denmark
-  AssignClass (8ca302ab-af17-49af-8df8-672dafee26a2)
- Call ID: 8ca302ab-af17-49af-8df8-672dafee26a2
-  Args:
-    source: :Constantine_I_of_Greece
-    type: :Man
-  AssignClass (0a9b2a3f-03ff-4048-a407-6cafb9e950d6)
- Call ID: 0a9b2a3f-03ff-4048-a407-6cafb9e950d6
-  Args:
-    type: :Person
-    source: :Constantine_I_of_Greece
-  AddTriple (afd4d70c-e49d-4e39-bbb8-d3c34b97025f)
- Call ID: afd4d70c-e49d-4e39-bbb8-d3c34b97025f
-  Args:
-    source: :George_of_Greece_and_Denmark
-    target: :Constantine_I_of_Greece
-    relation: :hasBrother
-  AssignClass (3550c0e5-4b25-4ac7-be83-6edff6901bbb)
- Call ID: 3550c0e5-4b25-4ac7-be83-6edff6901bbb
-  Args:
-    source: :Nicholas_of_Greece_and_Denmark
-    type: :Man
-  AssignClass (77250aaa-087f-4f72-8a80-5bfb3d0a63b2)
- Call ID: 77250aaa-087f-4f72-8a80-5bfb3d0a63b2
-  Args:
-    type: :Person
-    source: :Nicholas_of_Greece_and_Denmark
-  AddTriple (9a9ea446-ac4b-4c84-9455-c838316a3c08)
- Call ID: 9a9ea446-ac4b-4c84-9455-c838316a3c08
-  Args:
-    relation: :hasBrother
-    target: :Nicholas_of_Greece_and_Denmark
-    source: :George_of_Greece_and_Denmark
-  Finish (728d4aa2-1380-4c94-9800-4965f56ab37e)
- Call ID: 728d4aa2-1380-4c94-9800-4965f56ab37e
+    source: Evgenia
+    relation: :isDaughterOf
+    target: Princess_Marie_Bonaparte
+  Finish (e7b0c870-9eac-449e-b68b-558cfa4866cd)
+ Call ID: e7b0c870-9eac-449e-b68b-558cfa4866cd
   Args:

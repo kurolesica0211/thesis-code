@@ -2,37 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Karageorgevitch a :Man,
+data:Marija_Karadjordjevic a :Person,
+        :Woman ;
+    :hasFather data:Filip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic .
+
+data:Stefan_Karadjordjevic a :Man,
         :Person ;
-    :alsoKnownAs data:Prince_Aleksandar_III_Kara%C4%91or%C4%91evi%C4%87 ;
-    :hasBirthYear "1982"^^xsd:int ;
-    :hasFather data:Alexander_Father ;
-    :hasMother data:Maria_da_Gloria ;
-    :knownAs data:Prince_Alexander_of_Serbia_and_Yugoslavia .
+    :hasFather data:Filip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic .
 
-data:Ana_Luna_Medina_y_Orleans_Braganza a :Person,
-        :Woman ;
-    :hasMother data:Maria_da_Gloria .
-
-data:Ignacio_Duke_of_Segorbe a :Man,
-        :Person .
-
-data:Katherine_Clairy_Batis a :Person,
-        :Woman .
-
-data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,
-        :Woman ;
-    :hasMother data:Maria_da_Gloria .
-
-data:Alexander_Father a :Ancestor,
+data:Crown_Prince_Alexander a :Ancestor,
         :Man,
         :Person .
 
-data:Prince_Aleksandar_III_Kara%C4%91or%C4%91evi%C4%87 a :Person .
+data:Peter_Karadjordjevic a :Man,
+        :Person .
 
-data:Prince_Alexander_of_Serbia_and_Yugoslavia a :Person .
-
-data:Maria_da_Gloria a :Ancestor,
+data:Princess_Maria_da_Gloria a :Ancestor,
         :Person,
         :Woman .
+
+data:Danica_Marinkovic a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Filip_Karadjordjevic a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1982 ;
+    :hasFather data:Crown_Prince_Alexander ;
+    :hasMother data:Princess_Maria_da_Gloria ;
+    :isBrotherOf data:Peter_Karadjordjevic .
 

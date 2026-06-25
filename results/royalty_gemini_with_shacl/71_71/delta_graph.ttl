@@ -2,44 +2,85 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Victoria_Eugenie_of_Battenberg a :Person,
+data:FelipeVI a :Man,
+        :Person ;
+    :hasFather data:JuanCarlosI .
+
+data:VictoriaEugenieJuliaEnaOfBattenberg a :Person,
         :Woman ;
     :hasBirthYear 1887 ;
+    :hasBrother data:Leopold ;
+    :hasDaughter data:InfantaBeatriz,
+        data:InfantaMariaCristina ;
     :hasDeathYear 1969 ;
-    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasFather data:PrinceHenryOfBattenberg ;
     :hasMarriageYear 1906 ;
-    :hasMother data:Princess_Beatrice ;
-    :hasRelation data:King_Alfonso_XIII ;
+    :hasMother data:PrincessBeatrice ;
+    :hasRelation data:AlfonsoXIII ;
+    :hasSon data:AlfonsoPrinceOfAsturias,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
     :knownAs "Ena"^^xsd:string .
 
-data:Julia_Princess_of_Battenberg a :Ancestor,
+data:AlfonsoPrinceOfAsturias a :Man,
+        :Person .
+
+data:AlfonsoXIII a :Man,
+        :Person .
+
+data:InfantaBeatriz a :Person,
+        :Woman .
+
+data:InfantaMariaCristina a :Person,
+        :Woman .
+
+data:InfanteAlfonso a :Man,
+        :Person .
+
+data:InfanteGonzalo a :Man,
+        :Person .
+
+data:InfanteJaime a :Man,
+        :Person .
+
+data:JuanCountOfBarcelona a :Man,
+        :Person ;
+    :hasSon data:JuanCarlosI .
+
+data:JuliaPrincessOfBattenberg a :Ancestor,
         :Person,
         :Woman .
 
-data:King_Alfonso_XIII a :Man,
+data:Leopold a :Man,
         :Person .
 
-data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Ancestor,
+data:PrinceAlbertOfSaxeCoburgAndGotha a :Ancestor,
         :Man,
         :Person .
 
-data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
+data:PrinceAlexanderOfHesseAndByRhine a :Ancestor,
         :Man,
         :Person .
 
-data:Prince_Henry_of_Battenberg a :Ancestor,
+data:PrinceHenryOfBattenberg a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
-    :hasMother data:Julia_Princess_of_Battenberg .
+    :hasFather data:PrinceAlexanderOfHesseAndByRhine ;
+    :hasMother data:JuliaPrincessOfBattenberg .
 
-data:Princess_Beatrice a :Ancestor,
+data:PrincessBeatrice a :Ancestor,
         :Person,
         :Woman ;
-    :hasFather data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
-    :hasMother data:Queen_Victoria .
+    :hasFather data:PrinceAlbertOfSaxeCoburgAndGotha ;
+    :hasMother data:QueenVictoria .
 
-data:Queen_Victoria a :Ancestor,
+data:QueenVictoria a :Ancestor,
         :Person,
         :Woman .
+
+data:JuanCarlosI a :Ancestor,
+        :Man,
+        :Person .
 

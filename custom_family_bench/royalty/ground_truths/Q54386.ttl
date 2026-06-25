@@ -7,114 +7,19 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:Alfonso_XIII a :Person ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "3302:3314" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasSex data:male .
 
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Infanta_Pilar-_Duchess_of_Badajoz a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta Pilar, Duchess of Badajoz" ;
-    data:posIndicesFull "3106:3139" ;
-    data:posIndicesPart "3450:3457",
-        "3792:3799",
-        "3935:3942",
-        "5050:5057",
-        "5362:5369" ;
-    data:wdtLink wdt:Q240580 ;
-    :hasBrother data:Juan_Carlos_I_of_Spain ;
-    :hasSex data:female ;
-    :isAuntOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isSiblingOf data:Juan_Carlos_I_of_Spain ;
-    :isSisterOf data:Juan_Carlos_I_of_Spain .
-
-data:Leonor-_Princess_of_Asturias a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Leonor, Princess of Asturias" ;
-    data:posIndicesFull "451:479" ;
-    data:posIndicesPart "1127:1135",
-        "1431:1439",
-        "3025:3033",
-        "3319:3327",
-        "4577:4585",
-        "4751:4759" ;
-    data:wdtLink wdt:Q214369 ;
-    :alsoKnownAs "Infanta Leonor of Spain",
-        "Leonor de Todos los Santos de Borbón y Ortiz",
-        "Princess Leonor" ;
-    :hasFather data:Felipe_VI_of_Spain ;
-    :hasParent data:Felipe_VI_of_Spain ;
-    :hasSex data:female ;
-    :isChildOf data:Felipe_VI_of_Spain ;
-    :isDaughterOf data:Felipe_VI_of_Spain .
-
-data:Jaime_de_Marichalar a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Jaime de Marichalar" ;
-    data:posIndicesFull "2722:2741",
-        "2722:2759",
-        "4149:4168",
-        "595:614",
-        "595:632" ;
-    data:posIndicesPart "1728:1733",
-        "2945:2950" ;
-    data:wdtLink wdt:Q726890 ;
-    :alsoKnownAs "Jaime de Marichalar y Saenz de Tejada" ;
-    :hasChild data:Felipe_de_Marichalar_y_Borbón,
-        data:Victoria_de_Marichalar_y_Borbón ;
-    :hasDaughter data:Victoria_de_Marichalar_y_Borbón ;
-    :hasSex data:male ;
-    :hasSon data:Felipe_de_Marichalar_y_Borbón ;
-    :isFatherOf data:Felipe_de_Marichalar_y_Borbón,
-        data:Victoria_de_Marichalar_y_Borbón ;
-    :isParentOf data:Felipe_de_Marichalar_y_Borbón,
-        data:Victoria_de_Marichalar_y_Borbón .
-
-data:Queen_Sofía_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Sofía of Spain" ;
-    data:posIndicesFull "1109:1120",
-        "17:29",
-        "311:322" ;
-    data:posIndicesPart "2378:2383",
-        "2648:2653",
-        "3270:3275",
-        "3803:3808",
-        "3843:3848",
-        "4622:4627",
-        "4721:4726",
-        "492:497" ;
-    data:wdtLink wdt:Q156548 ;
-    :alsoKnownAs "Princess Sophia of Greece and Denmark",
-        "Queen Sofia of Spain",
-        "Queen Sofía",
-        "Queen Sofía, Queen Consort of Spain" ;
-    :hasChild data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :hasDaughter data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :hasSex data:female ;
-    :hasSon data:Felipe_VI_of_Spain ;
-    :isMotherOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isParentOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo .
-
-data:Felipe_de_Marichalar_y_Borbón a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Felipe_de_Marichalar_y_Borbón a :Person ;
     rdfs:label "Felipe de Marichalar y Borbón" ;
     data:posIndicesFull "3496:3525" ;
     data:wdtLink wdt:Q3239518 ;
@@ -123,45 +28,11 @@ data:Felipe_de_Marichalar_y_Borbón a :Man,
         "Felipe Juan Froilán de Marichalar y Borbón",
         "Felipe Juan Froilán de Todos los Santos de Marichalar y de Borbón",
         "Froilán" ;
-    :hasFather data:Jaime_de_Marichalar ;
-    :hasMother data:Infanta_Elena-_Duchess_of_Lugo ;
     :hasParent data:Infanta_Elena-_Duchess_of_Lugo,
         data:Jaime_de_Marichalar ;
-    :hasSex data:male ;
-    :hasSister data:Victoria_de_Marichalar_y_Borbón ;
-    :isBrotherOf data:Victoria_de_Marichalar_y_Borbón ;
-    :isChildOf data:Infanta_Elena-_Duchess_of_Lugo,
-        data:Jaime_de_Marichalar ;
-    :isSiblingOf data:Victoria_de_Marichalar_y_Borbón ;
-    :isSonOf data:Infanta_Elena-_Duchess_of_Lugo,
-        data:Jaime_de_Marichalar .
+    :hasSex data:male .
 
-data:Victoria_de_Marichalar_y_Borbón a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Victoria de Marichalar y Borbón" ;
-    data:posIndicesFull "3550:3581" ;
-    data:posIndicesPart "4628:4636" ;
-    data:wdtLink wdt:Q3232562 ;
-    :alsoKnownAs "Victoria Federica de Marichalar y Borbón",
-        "Victoria Federica de Todos los Santos Marichalar y de Borbón" ;
-    :hasBrother data:Felipe_de_Marichalar_y_Borbón ;
-    :hasFather data:Jaime_de_Marichalar ;
-    :hasMother data:Infanta_Elena-_Duchess_of_Lugo ;
-    :hasParent data:Infanta_Elena-_Duchess_of_Lugo,
-        data:Jaime_de_Marichalar ;
-    :hasSex data:female ;
-    :isChildOf data:Infanta_Elena-_Duchess_of_Lugo,
-        data:Jaime_de_Marichalar ;
-    :isDaughterOf data:Infanta_Elena-_Duchess_of_Lugo,
-        data:Jaime_de_Marichalar ;
-    :isSiblingOf data:Felipe_de_Marichalar_y_Borbón ;
-    :isSisterOf data:Felipe_de_Marichalar_y_Borbón .
-
-data:Infanta_Cristina_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Infanta_Cristina_of_Spain a :Person ;
     rdfs:label "Infanta Cristina of Spain" ;
     data:posIndicesFull "525:541" ;
     data:posIndicesPart "1929:1936",
@@ -177,67 +48,68 @@ data:Infanta_Cristina_of_Spain a :Ancestor,
     :alsoKnownAs "Cristina Federica Victoria Antonia de la Santísima Trinidad de Borbón y Grecia",
         "Cristina Federica Victoria de Borbón y Grecia, Infanta de España",
         "Infanta Cristina" ;
-    :hasBrother data:Felipe_VI_of_Spain ;
-    :hasFather data:Juan_Carlos_I_of_Spain ;
-    :hasMother data:Queen_Sofía_of_Spain ;
     :hasParent data:Juan_Carlos_I_of_Spain,
         data:Queen_Sofía_of_Spain ;
-    :hasSex data:female ;
-    :hasSister data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isAuntOf data:Felipe_de_Marichalar_y_Borbón,
-        data:Leonor-_Princess_of_Asturias,
-        data:Victoria_de_Marichalar_y_Borbón ;
-    :isChildOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isDaughterOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isSiblingOf data:Felipe_VI_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isSisterOf data:Felipe_VI_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo .
+    :hasSex data:female .
 
-data:Juan_Carlos_I_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Juan Carlos I of Spain" ;
-    data:posIndicesFull "1062:1075",
-        "293:306" ;
-    data:posIndicesPart "1015:1019",
-        "1020:1026",
-        "1522:1526",
-        "1527:1533",
-        "2648:2653",
-        "3270:3275",
-        "3406:3410",
-        "3411:3417",
-        "3803:3808",
-        "3843:3848",
-        "4721:4726" ;
-    data:wdtLink wdt:Q19943 ;
-    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
-        "Juan Carlos I" ;
-    :hasChild data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :hasDaughter data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :hasSex data:male ;
-    :hasSister data:Infanta_Pilar-_Duchess_of_Badajoz ;
-    :hasSon data:Felipe_VI_of_Spain ;
-    :isBrotherOf data:Infanta_Pilar-_Duchess_of_Badajoz ;
-    :isFatherOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isParentOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isSiblingOf data:Infanta_Pilar-_Duchess_of_Badajoz .
+data:Infanta_Pilar-_Duchess_of_Badajoz a :Person ;
+    rdfs:label "Infanta Pilar, Duchess of Badajoz" ;
+    data:posIndicesFull "3106:3139" ;
+    data:posIndicesPart "3450:3457",
+        "3792:3799",
+        "3935:3942",
+        "5050:5057",
+        "5362:5369" ;
+    data:wdtLink wdt:Q240580 ;
+    :hasSex data:female .
 
-data:Felipe_VI_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Leonor-_Princess_of_Asturias a :Person ;
+    rdfs:label "Leonor, Princess of Asturias" ;
+    data:posIndicesFull "451:479" ;
+    data:posIndicesPart "1127:1135",
+        "1431:1439",
+        "3025:3033",
+        "4577:4585",
+        "4751:4759" ;
+    data:wdtLink wdt:Q214369 ;
+    :alsoKnownAs "Infanta Leonor of Spain",
+        "Leonor de Todos los Santos de Borbón y Ortiz",
+        "Princess Leonor" ;
+    :hasParent data:Felipe_VI_of_Spain ;
+    :hasSex data:female .
+
+data:Victoria_Eugenie_of_Battenberg a :Person ;
+    rdfs:label "Victoria Eugenie of Battenberg" ;
+    data:posIndicesFull "3319:3358",
+        "3328:3358" ;
+    data:posIndicesPart "4628:4636" ;
+    data:wdtLink wdt:Q160001 ;
+    :alsoKnownAs "Ena",
+        "Princess Ena",
+        "Princess Victoria Eugenie of Battenberg",
+        "Queen Victoria Eugenie of Spain",
+        "Victoria Eugenie Julia Ena of Battenberg",
+        "Victoria Eugenie, Queen of Spain" ;
+    :hasSex data:female .
+
+data:Victoria_de_Marichalar_y_Borbón a :Person ;
+    rdfs:label "Victoria de Marichalar y Borbón" ;
+    data:posIndicesFull "3550:3581" ;
+    data:posIndicesPart "4628:4636" ;
+    data:wdtLink wdt:Q3232562 ;
+    :alsoKnownAs "Victoria Federica de Marichalar y Borbón",
+        "Victoria Federica de Todos los Santos Marichalar y de Borbón" ;
+    :hasParent data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Jaime_de_Marichalar ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Felipe_VI_of_Spain a :Person ;
     rdfs:label "Felipe VI of Spain" ;
     data:posIndicesFull "353:362" ;
     data:posIndicesPart "2241:2247",
@@ -251,32 +123,11 @@ data:Felipe_VI_of_Spain a :Ancestor,
         "Felipe VI",
         "Philip John Paul Alphonse of All Saints of Bourbon",
         "Philip VI of Spain" ;
-    :hasChild data:Leonor-_Princess_of_Asturias ;
-    :hasDaughter data:Leonor-_Princess_of_Asturias ;
-    :hasFather data:Juan_Carlos_I_of_Spain ;
-    :hasMother data:Queen_Sofía_of_Spain ;
     :hasParent data:Juan_Carlos_I_of_Spain,
         data:Queen_Sofía_of_Spain ;
-    :hasSex data:male ;
-    :hasSister data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isBrotherOf data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isChildOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isFatherOf data:Leonor-_Princess_of_Asturias ;
-    :isParentOf data:Leonor-_Princess_of_Asturias ;
-    :isSiblingOf data:Infanta_Cristina_of_Spain,
-        data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isSonOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isUncleOf data:Felipe_de_Marichalar_y_Borbón,
-        data:Victoria_de_Marichalar_y_Borbón .
+    :hasSex data:male .
 
-data:Infanta_Elena-_Duchess_of_Lugo a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Infanta_Elena-_Duchess_of_Lugo a :Person ;
     rdfs:label "Infanta Elena, Duchess of Lugo" ;
     data:posIndicesFull "130:143",
         "130:160",
@@ -317,28 +168,64 @@ data:Infanta_Elena-_Duchess_of_Lugo a :Ancestor,
         "Elena de Borbón",
         "Infanta Elena",
         "Infanta Elena of Spain" ;
-    :hasBrother data:Felipe_VI_of_Spain ;
-    :hasChild data:Felipe_de_Marichalar_y_Borbón,
-        data:Victoria_de_Marichalar_y_Borbón ;
-    :hasDaughter data:Victoria_de_Marichalar_y_Borbón ;
-    :hasFather data:Juan_Carlos_I_of_Spain ;
-    :hasMother data:Queen_Sofía_of_Spain ;
     :hasParent data:Juan_Carlos_I_of_Spain,
         data:Queen_Sofía_of_Spain ;
-    :hasSex data:female ;
-    :hasSister data:Infanta_Cristina_of_Spain ;
-    :hasSon data:Felipe_de_Marichalar_y_Borbón ;
-    :isAuntOf data:Leonor-_Princess_of_Asturias ;
-    :isChildOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isDaughterOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isMotherOf data:Felipe_de_Marichalar_y_Borbón,
-        data:Victoria_de_Marichalar_y_Borbón ;
-    :isParentOf data:Felipe_de_Marichalar_y_Borbón,
-        data:Victoria_de_Marichalar_y_Borbón ;
-    :isSiblingOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain ;
-    :isSisterOf data:Felipe_VI_of_Spain,
-        data:Infanta_Cristina_of_Spain .
+    :hasSex data:female .
+
+data:Jaime_de_Marichalar a :Person ;
+    rdfs:label "Jaime de Marichalar" ;
+    data:posIndicesFull "2722:2741",
+        "2722:2759",
+        "4149:4168",
+        "595:614",
+        "595:632" ;
+    data:posIndicesPart "1728:1733",
+        "2945:2950" ;
+    data:wdtLink wdt:Q726890 ;
+    :alsoKnownAs "Jaime de Marichalar y Saenz de Tejada" ;
+    :hasSex data:male .
+
+data:Juan_Carlos_I_of_Spain a :Person ;
+    rdfs:label "Juan Carlos I of Spain" ;
+    data:posIndicesFull "1062:1075",
+        "293:306" ;
+    data:posIndicesPart "1015:1019",
+        "1020:1026",
+        "1522:1526",
+        "1527:1533",
+        "2648:2653",
+        "3270:3275",
+        "3406:3410",
+        "3411:3417",
+        "3803:3808",
+        "3843:3848",
+        "4721:4726" ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
+        "Juan Carlos I" ;
+    :hasSex data:male .
+
+data:Queen_Sofía_of_Spain a :Person ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:posIndicesFull "1109:1120",
+        "17:29",
+        "311:322" ;
+    data:posIndicesPart "2378:2383",
+        "2648:2653",
+        "3270:3275",
+        "3803:3808",
+        "3843:3848",
+        "4622:4627",
+        "4721:4726",
+        "492:497" ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark",
+        "Queen Sofia of Spain",
+        "Queen Sofía",
+        "Queen Sofía, Queen Consort of Spain" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

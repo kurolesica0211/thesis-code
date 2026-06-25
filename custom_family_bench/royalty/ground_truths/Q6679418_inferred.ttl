@@ -1,0 +1,317 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George Mountbatten, 2nd Marquess of Milford Haven"^^xsd:string ;
+    data:posIndicesFull "426:453"^^xsd:string ;
+    data:posIndicesPart "1040:1051"^^xsd:string,
+        "1179:1190"^^xsd:string,
+        "1360:1371"^^xsd:string,
+        "1486:1497"^^xsd:string,
+        "1552:1563"^^xsd:string,
+        "1687:1698"^^xsd:string,
+        "1851:1862"^^xsd:string,
+        "2073:2084"^^xsd:string,
+        "2223:2234"^^xsd:string,
+        "2333:2344"^^xsd:string,
+        "2438:2449"^^xsd:string,
+        "531:542"^^xsd:string,
+        "612:623"^^xsd:string,
+        "813:820"^^xsd:string,
+        "821:826"^^xsd:string,
+        "828:839"^^xsd:string,
+        "855:866"^^xsd:string ;
+    data:wdtLink wdt:Q335129 ;
+    :alsoKnownAs "George Louis Victor Henry Serge Mountbatten, 2nd Marquess of Milford Haven"^^xsd:string,
+        "George Louis Victor Henry Serge Mountbatten, Earl of Medina"^^xsd:string,
+        "George Medina"^^xsd:string,
+        "George Milford Haven"^^xsd:string,
+        "George Mountbatten, Earl of Medina"^^xsd:string,
+        "Prince George Louis Victor Henry Serge of Battenberg"^^xsd:string,
+        "Prince George of Battenberg"^^xsd:string ;
+    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
+    :hasChild data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :hasRelation data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten,
+        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasSex data:male ;
+    :hasSon data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :isAncestorOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isBloodrelationOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
+    :isBrotherOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
+    :isFatherOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :isParentOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
+    :isUncleOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven .
+
+data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Nadejda Mountbatten, Marchioness of Milford Haven"^^xsd:string ;
+    data:posIndicesFull "426:453"^^xsd:string ;
+    data:posIndicesPart "1040:1051"^^xsd:string,
+        "1179:1190"^^xsd:string,
+        "1360:1371"^^xsd:string,
+        "1486:1497"^^xsd:string,
+        "1552:1563"^^xsd:string,
+        "1687:1698"^^xsd:string,
+        "1851:1862"^^xsd:string,
+        "2073:2084"^^xsd:string,
+        "2223:2234"^^xsd:string,
+        "2333:2344"^^xsd:string,
+        "2438:2449"^^xsd:string,
+        "531:542"^^xsd:string,
+        "612:623"^^xsd:string,
+        "798:809"^^xsd:string,
+        "813:820"^^xsd:string,
+        "821:826"^^xsd:string,
+        "828:839"^^xsd:string,
+        "855:866"^^xsd:string ;
+    data:wdtLink wdt:Q259488 ;
+    :alsoKnownAs "Countess Nada de Torby"^^xsd:string,
+        "Countess Nadejda Mikhailovna de Torby"^^xsd:string,
+        "Countess Nadejda de Torby"^^xsd:string,
+        "Nada Mountbatten"^^xsd:string,
+        "Nada de Torby"^^xsd:string,
+        "Nadejda Medina"^^xsd:string,
+        "Nadejda Mikhailovna Mountbatten, Countess of Medina"^^xsd:string,
+        "Nadejda Mikhailovna Mountbatten, Marchioness of Milford Haven"^^xsd:string,
+        "Nadejda Milford Haven"^^xsd:string,
+        "Nadejda Mountbatten, Countess of Medina"^^xsd:string,
+        "Nadejda de Torby"^^xsd:string,
+        "Princess George of Battenberg"^^xsd:string ;
+    :hasChild data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :hasRelation data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten,
+        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasSex data:female ;
+    :hasSister data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasSon data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :isAncestorOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isAuntOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :isBloodrelationOf data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :isMotherOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :isParentOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :isSiblingOf data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :isSisterOf data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven .
+
+data:Janet_Bryce a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Janet Bryce"^^xsd:string ;
+    data:posIndicesFull "303:323"^^xsd:string ;
+    data:wdtLink wdt:Q75383906 ;
+    :alsoKnownAs "Janet Mercedes Bryce"^^xsd:string,
+        "Janet Mercedes Mountbatten, Marchioness of Milford Haven"^^xsd:string,
+        "Janet Mountbatten, Marchioness of Milford Haven"^^xsd:string ;
+    :hasChild data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :hasRelation data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Janet_Bryce,
+        data:Lord_Ivar_Mountbatten ;
+    :hasSex data:female ;
+    :hasSister data:Janet_Bryce ;
+    :hasSon data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isAncestorOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isAuntOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isBloodrelationOf data:Janet_Bryce ;
+    :isMotherOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isParentOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isSiblingOf data:Janet_Bryce ;
+    :isSisterOf data:Janet_Bryce .
+
+data:George_Mountbatten-_4th_Marquess_of_Milford_Haven a :Man,
+        :Person ;
+    rdfs:label "George Mountbatten, 4th Marquess of Milford Haven"^^xsd:string ;
+    data:posIndicesFull "2503:2552"^^xsd:string,
+        "346:395"^^xsd:string ;
+    data:posIndicesPart "1040:1051"^^xsd:string,
+        "1179:1190"^^xsd:string,
+        "1360:1371"^^xsd:string,
+        "1486:1497"^^xsd:string,
+        "1552:1563"^^xsd:string,
+        "1687:1698"^^xsd:string,
+        "1851:1862"^^xsd:string,
+        "2073:2084"^^xsd:string,
+        "2223:2234"^^xsd:string,
+        "2333:2344"^^xsd:string,
+        "531:542"^^xsd:string,
+        "612:623"^^xsd:string,
+        "813:820"^^xsd:string,
+        "821:826"^^xsd:string,
+        "828:839"^^xsd:string,
+        "855:866"^^xsd:string ;
+    data:wdtLink wdt:Q336783 ;
+    :alsoKnownAs "George Ivar Louis Mountbatten, 4th Marquess of Milford Haven"^^xsd:string,
+        "George Ivar Louis Mountbatten, Earl of Medina"^^xsd:string,
+        "George Mountbatten, Earl of Medina"^^xsd:string ;
+    :hasAncestor data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Janet_Bryce,
+        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasBrother data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :hasFather data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :hasMother data:Janet_Bryce ;
+    :hasParent data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:Janet_Bryce ;
+    :hasRelation data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Janet_Bryce,
+        data:Lord_Ivar_Mountbatten,
+        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isBrotherOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isChildOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:Janet_Bryce ;
+    :isSiblingOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isSonOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:Janet_Bryce .
+
+data:Lord_Ivar_Mountbatten a :Man,
+        :Person ;
+    rdfs:label "Lord Ivar Mountbatten"^^xsd:string ;
+    data:posIndicesFull "0:39"^^xsd:string,
+        "5:39"^^xsd:string ;
+    data:posIndicesPart "1040:1051"^^xsd:string,
+        "1179:1190"^^xsd:string,
+        "1360:1371"^^xsd:string,
+        "1486:1497"^^xsd:string,
+        "1552:1563"^^xsd:string,
+        "1687:1698"^^xsd:string,
+        "180:184"^^xsd:string,
+        "1851:1862"^^xsd:string,
+        "203:214"^^xsd:string,
+        "2073:2084"^^xsd:string,
+        "2223:2234"^^xsd:string,
+        "2333:2344"^^xsd:string,
+        "2438:2449"^^xsd:string,
+        "531:542"^^xsd:string,
+        "612:623"^^xsd:string,
+        "828:839"^^xsd:string,
+        "855:866"^^xsd:string ;
+    data:wdtLink wdt:Q6679418 ;
+    :alsoKnownAs "Ivar Alexander Michael Mountbatten"^^xsd:string,
+        "Ivar Mountbatten"^^xsd:string,
+        "Lord Ivar Alexander Michael Mountbatten"^^xsd:string ;
+    :hasAncestor data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Janet_Bryce,
+        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasBrother data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :hasFather data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :hasMother data:Janet_Bryce ;
+    :hasParent data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:Janet_Bryce ;
+    :hasRelation data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Janet_Bryce,
+        data:Lord_Ivar_Mountbatten,
+        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isBrotherOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isChildOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:Janet_Bryce ;
+    :isSiblingOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isSonOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:Janet_Bryce .
+
+data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "David Mountbatten, 3rd Marquess of Milford Haven"^^xsd:string ;
+    data:posIndicesFull "238:286"^^xsd:string ;
+    data:posIndicesPart "1040:1051"^^xsd:string,
+        "1179:1190"^^xsd:string,
+        "1360:1371"^^xsd:string,
+        "1486:1497"^^xsd:string,
+        "1552:1563"^^xsd:string,
+        "1687:1698"^^xsd:string,
+        "1851:1862"^^xsd:string,
+        "2073:2084"^^xsd:string,
+        "2223:2234"^^xsd:string,
+        "2333:2344"^^xsd:string,
+        "2438:2449"^^xsd:string,
+        "531:542"^^xsd:string,
+        "612:623"^^xsd:string,
+        "813:820"^^xsd:string,
+        "821:826"^^xsd:string,
+        "828:839"^^xsd:string,
+        "855:866"^^xsd:string ;
+    data:wdtLink wdt:Q2752971 ;
+    :alsoKnownAs "David Michael Mountbatten, 3rd Marquess of Milford Haven"^^xsd:string ;
+    :hasAncestor data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasBrother data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :hasChild data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :hasFather data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
+    :hasMother data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasParent data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasRelation data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten,
+        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasSex data:male ;
+    :hasSon data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isAncestorOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isBloodrelationOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :isBrotherOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :isChildOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :isFatherOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isParentOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten ;
+    :isSiblingOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
+    :isSonOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :isUncleOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Lord_Ivar_Mountbatten .
+

@@ -16,28 +16,28 @@
       "qid": "Q10382174",
       "label": "Thomas Anson, 6th Earl of Lichfield",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Leonora_Anson-_Countess_of_Lichfield",
       "qid": "Q6526686",
       "label": "Leonora Anson, Countess of Lichfield",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Patrick_Anson-_5th_Earl_of_Lichfield",
       "qid": "Q246026",
       "label": "Patrick Anson, 5th Earl of Lichfield",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Thomas_Anson-_Viscount_Anson",
       "qid": "Q75390868",
       "label": "Thomas Anson, Viscount Anson",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     }
   ],
   "entities": [
@@ -52,11 +52,11 @@
       "ground_truth_qid": "Q6526686",
       "ground_truth_label": "Leonora Anson, Countess of Lichfield",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Lady Leonora Mary Grosvenor",
       "best_candidate_label": "Leonora Anson, Countess of Lichfield",
       "best_candidate_qid": "Q6526686",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -70,30 +70,30 @@
       "ground_truth_qid": "Q246026",
       "ground_truth_label": "Patrick Anson, 5th Earl of Lichfield",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Patrick Anson- 5th Earl of Lichfield",
       "best_candidate_label": "Patrick Anson, 5th Earl of Lichfield",
       "best_candidate_qid": "Q246026",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9888888888888889
     },
     {
-      "extracted_uri": "http://example.org/data/Thomas_William_Arnold_Anson_Viscount_Anson",
-      "extracted_local_name": "Thomas_William_Arnold_Anson_Viscount_Anson",
-      "embedding_text": "Thomas William Arnold Anson Viscount Anson",
+      "extracted_uri": "http://example.org/data/Thomas_Anson_2nd_Viscount_Anson",
+      "extracted_local_name": "Thomas_Anson_2nd_Viscount_Anson",
+      "embedding_text": "Thomas Anson 2nd Viscount Anson",
       "extracted_gender": "male",
       "matched": true,
-      "score": 0.9882352941176471,
+      "score": 0.9152542372881356,
       "ground_truth_uri": "http://example.com/data#Thomas_Anson-_Viscount_Anson",
       "ground_truth_qid": "Q75390868",
       "ground_truth_label": "Thomas Anson, Viscount Anson",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Thomas William Arnold Anson, Viscount Anson",
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Thomas Anson- Viscount Anson",
       "best_candidate_label": "Thomas Anson, Viscount Anson",
       "best_candidate_qid": "Q75390868",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.9882352941176471
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9152542372881356
     },
     {
       "extracted_uri": "http://example.org/data/Thomas_Anson_1st_Viscount_Anson",
@@ -106,11 +106,11 @@
       "ground_truth_qid": "Q10382174",
       "ground_truth_label": "Thomas Anson, 6th Earl of Lichfield",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Thomas Anson",
       "best_candidate_label": "Thomas Anson, 6th Earl of Lichfield",
       "best_candidate_qid": "Q10382174",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.5581395348837209
     },
     {
@@ -128,14 +128,14 @@
       "best_candidate_match_text": "Thomas Patrick John Anson",
       "best_candidate_label": "Patrick Anson, 5th Earl of Lichfield",
       "best_candidate_qid": "Q246026",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.42105263157894735
     },
     {
-      "extracted_uri": "http://example.org/data/Thomas_Anson_2nd_Viscount_Anson_1st_Earl_of_Lichfield",
-      "extracted_local_name": "Thomas_Anson_2nd_Viscount_Anson_1st_Earl_of_Lichfield",
-      "embedding_text": "Thomas Anson 2nd Viscount Anson 1st Earl of Lichfield",
-      "extracted_gender": "male",
+      "extracted_uri": "http://example.org/data/Lady_Henrietta_Conyngham",
+      "extracted_local_name": "Lady_Henrietta_Conyngham",
+      "embedding_text": "Lady Henrietta Conyngham",
+      "extracted_gender": "female",
       "matched": false,
       "score": null,
       "ground_truth_uri": null,
@@ -143,11 +143,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Thomas Anson- Viscount Anson",
-      "best_candidate_label": "Thomas Anson, Viscount Anson",
-      "best_candidate_qid": "Q75390868",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.6666666666666666
+      "best_candidate_match_text": "Patrick Anson",
+      "best_candidate_label": "Patrick Anson, 5th Earl of Lichfield",
+      "best_candidate_qid": "Q246026",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.32432432432432434
     },
     {
       "extracted_uri": "http://example.org/data/Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson",
@@ -161,11 +161,29 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Thomas William Arnold Anson, Viscount Anson",
-      "best_candidate_label": "Thomas Anson, Viscount Anson",
-      "best_candidate_qid": "Q75390868",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.7252747252747253
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Thomas_William_Arnold_Anson_Viscount_Anson",
+      "extracted_local_name": "Thomas_William_Arnold_Anson_Viscount_Anson",
+      "embedding_text": "Thomas William Arnold Anson Viscount Anson",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
     },
     {
       "extracted_uri": "http://example.org/data/Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield",
@@ -187,8 +205,8 @@
     }
   ],
   "summary": {
-    "entities_total": 8,
+    "entities_total": 9,
     "entities_matched": 4,
-    "entities_unmatched": 4
+    "entities_unmatched": 5
   }
 }

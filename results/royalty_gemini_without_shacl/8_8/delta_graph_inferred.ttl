@@ -1,0 +1,319 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Charles_III a :Man ;
+    :hasBrother data:King_Charles_III ;
+    :hasRelation data:King_Charles_III ;
+    :isBloodrelationOf data:King_Charles_III ;
+    :isBrotherOf data:King_Charles_III ;
+    :isSiblingOf data:King_Charles_III .
+
+data:Ros_Chatto a :Ancestor,
+        :Woman ;
+    :hasChild data:Daniel_Chatto ;
+    :hasDeathYear 2012 ;
+    :hasRelation data:Daniel_Chatto,
+        data:Ros_Chatto,
+        data:Tom_Chatto ;
+    :hasSister data:Ros_Chatto ;
+    :hasSon data:Daniel_Chatto ;
+    :isAncestorOf data:Daniel_Chatto ;
+    :isAuntOf data:Daniel_Chatto ;
+    :isBloodrelationOf data:Ros_Chatto ;
+    :isMotherOf data:Daniel_Chatto ;
+    :isParentOf data:Daniel_Chatto ;
+    :isSiblingOf data:Ros_Chatto ;
+    :isSisterOf data:Ros_Chatto .
+
+data:Tom_Chatto a :Ancestor,
+        :Man ;
+    :hasBirthYear 1920 ;
+    :hasBrother data:Tom_Chatto ;
+    :hasChild data:Daniel_Chatto ;
+    :hasDeathYear 1982 ;
+    :hasRelation data:Daniel_Chatto,
+        data:Ros_Chatto,
+        data:Tom_Chatto ;
+    :hasSon data:Daniel_Chatto ;
+    :isAncestorOf data:Daniel_Chatto ;
+    :isBloodrelationOf data:Tom_Chatto ;
+    :isBrotherOf data:Tom_Chatto ;
+    :isFatherOf data:Daniel_Chatto ;
+    :isParentOf data:Daniel_Chatto ;
+    :isSiblingOf data:Tom_Chatto ;
+    :isUncleOf data:Daniel_Chatto .
+
+data:Daniel_Chatto a :Man ;
+    :hasAncestor data:Ros_Chatto,
+        data:Tom_Chatto ;
+    :hasBrother data:Daniel_Chatto ;
+    :hasFather data:Tom_Chatto ;
+    :hasMother data:Ros_Chatto ;
+    :hasParent data:Ros_Chatto,
+        data:Tom_Chatto ;
+    :hasRelation data:Daniel_Chatto,
+        data:Ros_Chatto,
+        data:Tom_Chatto ;
+    :isBloodrelationOf data:Daniel_Chatto ;
+    :isBrotherOf data:Daniel_Chatto ;
+    :isChildOf data:Ros_Chatto,
+        data:Tom_Chatto ;
+    :isSiblingOf data:Daniel_Chatto ;
+    :isSonOf data:Ros_Chatto,
+        data:Tom_Chatto .
+
+data:Princess_Margaret a :Ancestor,
+        :Woman ;
+    :hasChild data:David_Armstrong-Jones,
+        data:Sarah_Chatto ;
+    :hasDaughter data:Sarah_Chatto ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Princess_Margaret,
+        data:Sarah_Chatto ;
+    :hasSister data:Princess_Margaret ;
+    :hasSon data:David_Armstrong-Jones ;
+    :isAncestorOf data:David_Armstrong-Jones,
+        data:Sarah_Chatto ;
+    :isAuntOf data:David_Armstrong-Jones,
+        data:Sarah_Chatto ;
+    :isBloodrelationOf data:Princess_Margaret ;
+    :isMotherOf data:David_Armstrong-Jones,
+        data:Sarah_Chatto ;
+    :isParentOf data:David_Armstrong-Jones,
+        data:Sarah_Chatto ;
+    :isSiblingOf data:Princess_Margaret ;
+    :isSisterOf data:Princess_Margaret .
+
+data:Jasper_Cable-Alexander a :Man ;
+    :hasAncestor data:Antony_Armstrong-Jones ;
+    :hasBirthYear 1998 ;
+    :hasBrother data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasParent data:Antony_Armstrong-Jones ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Princess_Margaret,
+        data:Sarah_Chatto ;
+    :hasSister data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isBloodrelationOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isBrotherOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isChildOf data:Antony_Armstrong-Jones ;
+    :isSiblingOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isSonOf data:Antony_Armstrong-Jones .
+
+data:Lady_Frances_Armstrong-Jones a :Woman ;
+    :hasAncestor data:Antony_Armstrong-Jones ;
+    :hasBirthYear 1979 ;
+    :hasBrother data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasParent data:Antony_Armstrong-Jones ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Princess_Margaret,
+        data:Sarah_Chatto ;
+    :hasSister data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isBloodrelationOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isChildOf data:Antony_Armstrong-Jones ;
+    :isDaughterOf data:Antony_Armstrong-Jones ;
+    :isSiblingOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isSisterOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto .
+
+data:Polly_Fry a :Woman ;
+    :hasAncestor data:Antony_Armstrong-Jones ;
+    :hasBirthYear 1960 ;
+    :hasBrother data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasParent data:Antony_Armstrong-Jones ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Princess_Margaret,
+        data:Sarah_Chatto ;
+    :hasSister data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isBloodrelationOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isChildOf data:Antony_Armstrong-Jones ;
+    :isDaughterOf data:Antony_Armstrong-Jones ;
+    :isSiblingOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isSisterOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto .
+
+data:Antony_Armstrong-Jones a :Ancestor,
+        :Man ;
+    :hasBrother data:Antony_Armstrong-Jones ;
+    :hasChild data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :hasDaughter data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Princess_Margaret,
+        data:Sarah_Chatto ;
+    :hasSon data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander ;
+    :isAncestorOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isBloodrelationOf data:Antony_Armstrong-Jones ;
+    :isBrotherOf data:Antony_Armstrong-Jones ;
+    :isFatherOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isParentOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isSiblingOf data:Antony_Armstrong-Jones ;
+    :isUncleOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto .
+
+data:David_Armstrong-Jones a :Man ;
+    :hasAncestor data:Antony_Armstrong-Jones,
+        data:Princess_Margaret ;
+    :hasBrother data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret ;
+    :hasParent data:Antony_Armstrong-Jones,
+        data:Princess_Margaret ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Princess_Margaret,
+        data:Sarah_Chatto ;
+    :hasSister data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isBloodrelationOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isBrotherOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isChildOf data:Antony_Armstrong-Jones,
+        data:Princess_Margaret ;
+    :isSiblingOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isSonOf data:Antony_Armstrong-Jones,
+        data:Princess_Margaret .
+
+data:Sarah_Chatto a :Woman ;
+    :hasAncestor data:Antony_Armstrong-Jones,
+        data:Princess_Margaret ;
+    :hasBirthYear 1964 ;
+    :hasBrother data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret ;
+    :hasParent data:Antony_Armstrong-Jones,
+        data:Princess_Margaret ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Princess_Margaret,
+        data:Sarah_Chatto ;
+    :hasSister data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isBloodrelationOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isChildOf data:Antony_Armstrong-Jones,
+        data:Princess_Margaret ;
+    :isDaughterOf data:Antony_Armstrong-Jones,
+        data:Princess_Margaret ;
+    :isSiblingOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto ;
+    :isSisterOf data:David_Armstrong-Jones,
+        data:Jasper_Cable-Alexander,
+        data:Lady_Frances_Armstrong-Jones,
+        data:Polly_Fry,
+        data:Sarah_Chatto .
+

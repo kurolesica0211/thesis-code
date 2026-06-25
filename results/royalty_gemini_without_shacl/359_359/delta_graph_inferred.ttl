@@ -1,0 +1,296 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carmen_Franco_y_Polo a :Ancestor,
+        :Woman ;
+    :hasChild data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasDaughter data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Alfonso_XIII_of_Spain,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Jaime_Duke_of_Segovia,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasSister data:Carmen_Franco_y_Polo ;
+    :isAncestorOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isAuntOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isBloodrelationOf data:Carmen_Franco_y_Polo ;
+    :isMotherOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isParentOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isSiblingOf data:Carmen_Franco_y_Polo ;
+    :isSisterOf data:Carmen_Franco_y_Polo .
+
+data:Cristobal_Martinez-Bordiu a :Ancestor,
+        :Man ;
+    :hasBrother data:Cristobal_Martinez-Bordiu ;
+    :hasChild data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasDaughter data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Alfonso_XIII_of_Spain,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Jaime_Duke_of_Segovia,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :isAncestorOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isBloodrelationOf data:Cristobal_Martinez-Bordiu ;
+    :isBrotherOf data:Cristobal_Martinez-Bordiu ;
+    :isFatherOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isParentOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isSiblingOf data:Cristobal_Martinez-Bordiu ;
+    :isUncleOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasChild data:Jaime_Duke_of_Segovia ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Alfonso_XIII_of_Spain,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Jaime_Duke_of_Segovia,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasSon data:Jaime_Duke_of_Segovia ;
+    :isAncestorOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon,
+        data:Jaime_Duke_of_Segovia ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Jaime_Duke_of_Segovia ;
+    :isParentOf data:Jaime_Duke_of_Segovia ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Jaime_Duke_of_Segovia .
+
+data:Roger_Duke_of_San_Lorenzo a :Ancestor,
+        :Man ;
+    :hasBrother data:Roger_Duke_of_San_Lorenzo ;
+    :hasChild data:Emanuela_de_Dampierre ;
+    :hasDaughter data:Emanuela_de_Dampierre ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Alfonso_XIII_of_Spain,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Jaime_Duke_of_Segovia,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :isAncestorOf data:Alfonso_Duke_of_Anjou,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borbon ;
+    :isBloodrelationOf data:Roger_Duke_of_San_Lorenzo ;
+    :isBrotherOf data:Roger_Duke_of_San_Lorenzo ;
+    :isFatherOf data:Emanuela_de_Dampierre ;
+    :isParentOf data:Emanuela_de_Dampierre ;
+    :isSiblingOf data:Roger_Duke_of_San_Lorenzo ;
+    :isUncleOf data:Emanuela_de_Dampierre .
+
+data:Vittoria_Ruspoli a :Ancestor,
+        :Woman ;
+    :hasChild data:Emanuela_de_Dampierre ;
+    :hasDaughter data:Emanuela_de_Dampierre ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Alfonso_XIII_of_Spain,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Jaime_Duke_of_Segovia,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasSister data:Vittoria_Ruspoli ;
+    :isAncestorOf data:Alfonso_Duke_of_Anjou,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borbon ;
+    :isAuntOf data:Emanuela_de_Dampierre ;
+    :isBloodrelationOf data:Vittoria_Ruspoli ;
+    :isMotherOf data:Emanuela_de_Dampierre ;
+    :isParentOf data:Emanuela_de_Dampierre ;
+    :isSiblingOf data:Vittoria_Ruspoli ;
+    :isSisterOf data:Vittoria_Ruspoli .
+
+data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Person,
+        :Woman ;
+    :hasAncestor data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu ;
+    :hasFather data:Cristobal_Martinez-Bordiu ;
+    :hasMother data:Carmen_Franco_y_Polo ;
+    :hasParent data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Alfonso_XIII_of_Spain,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Jaime_Duke_of_Segovia,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasSister data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isBloodrelationOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isChildOf data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu ;
+    :isDaughterOf data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu ;
+    :isSiblingOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isSisterOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+
+data:Jaime_Duke_of_Segovia a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alfonso_XIII_of_Spain ;
+    :hasBrother data:Jaime_Duke_of_Segovia ;
+    :hasChild data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasParent data:Alfonso_XIII_of_Spain ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Alfonso_XIII_of_Spain,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Jaime_Duke_of_Segovia,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasSon data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isAncestorOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isBloodrelationOf data:Jaime_Duke_of_Segovia ;
+    :isBrotherOf data:Jaime_Duke_of_Segovia ;
+    :isChildOf data:Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isParentOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isSiblingOf data:Jaime_Duke_of_Segovia ;
+    :isSonOf data:Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon .
+
+data:Alfonso_Duke_of_Anjou a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Emanuela_de_Dampierre,
+        data:Jaime_Duke_of_Segovia,
+        data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Jaime_Duke_of_Segovia ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Emanuela_de_Dampierre ;
+    :hasParent data:Emanuela_de_Dampierre,
+        data:Jaime_Duke_of_Segovia ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Alfonso_XIII_of_Spain,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Jaime_Duke_of_Segovia,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :isBloodrelationOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isBrotherOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isChildOf data:Emanuela_de_Dampierre,
+        data:Jaime_Duke_of_Segovia ;
+    :isSiblingOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isSonOf data:Emanuela_de_Dampierre,
+        data:Jaime_Duke_of_Segovia .
+
+data:Gonzalo_de_Borbon a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Emanuela_de_Dampierre,
+        data:Jaime_Duke_of_Segovia,
+        data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasBrother data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :hasFather data:Jaime_Duke_of_Segovia ;
+    :hasMother data:Emanuela_de_Dampierre ;
+    :hasParent data:Emanuela_de_Dampierre,
+        data:Jaime_Duke_of_Segovia ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Alfonso_XIII_of_Spain,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Jaime_Duke_of_Segovia,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :isBloodrelationOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isBrotherOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isChildOf data:Emanuela_de_Dampierre,
+        data:Jaime_Duke_of_Segovia ;
+    :isSiblingOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isSonOf data:Emanuela_de_Dampierre,
+        data:Jaime_Duke_of_Segovia .
+
+data:Emanuela_de_Dampierre a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasChild data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :hasFather data:Roger_Duke_of_San_Lorenzo ;
+    :hasMother data:Vittoria_Ruspoli ;
+    :hasParent data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasRelation data:Alfonso_Duke_of_Anjou,
+        data:Alfonso_XIII_of_Spain,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo_de_Borbon,
+        data:Jaime_Duke_of_Segovia,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasSister data:Emanuela_de_Dampierre ;
+    :hasSon data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isAncestorOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isAuntOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isBloodrelationOf data:Emanuela_de_Dampierre ;
+    :isChildOf data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :isDaughterOf data:Roger_Duke_of_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :isMotherOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isParentOf data:Alfonso_Duke_of_Anjou,
+        data:Gonzalo_de_Borbon ;
+    :isSiblingOf data:Emanuela_de_Dampierre ;
+    :isSisterOf data:Emanuela_de_Dampierre .
+

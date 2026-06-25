@@ -2,64 +2,27 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexis_Pantchoulidzew a :Man,
-        :Person .
+data:CountessAugusta a :Woman ;
+    :isParentOf data:PrinceErnestI,
+        data:PrincessVictoriaMother .
 
-data:Aschwin_of_Lippe-Biesterfeld a :Man,
-        :Person ;
-    :hasMother data:Armgard_von_Cramm .
+data:DukeFrancis a :Man ;
+    :isParentOf data:PrinceErnestI,
+        data:PrincessVictoriaMother .
 
-data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
-        :Person ;
-    :hasMother data:Armgard_von_Cramm .
+data:QueenVictoria a :Woman ;
+    :hasBirthYear 1819 ;
+    :hasDeathYear 1901 ;
+    :hasMarriageYear 1840 ;
+    :hasRelation data:PrinceAlbert .
 
-data:Princess_Irene a :Person,
-        :Woman .
+data:PrinceAlbert a :Man ;
+    :hasBirthYear 1819 ;
+    :hasDeathYear 1861 .
 
-data:Baron_Aschwin_of_Sierstorpff-Cramm a :Ancestor,
-        :Man,
-        :Person .
+data:PrinceErnestI a :Man ;
+    :isParentOf data:PrinceAlbert .
 
-data:Baroness_Hedwig_of_Sierstorpff-Driburg a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Count_Bodo_von_Oeynhausen a :Man,
-        :Person ;
-    :hasFather data:Count_Erich_von_Oeynhausen ;
-    :hasMother data:Therese_von_Lenthe .
-
-data:Count_Erich_von_Oeynhausen a :Ancestor,
-        :Man,
-        :Person .
-
-data:Countess_Karoline_von_Wartensleben a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Ernest_II_Count_of_Lippe-Biesterfeld a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Bernhard_of_Lippe-Biesterfeld_Senior a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;
-    :hasMother data:Countess_Karoline_von_Wartensleben .
-
-data:Therese_von_Lenthe a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Armgard_von_Cramm a :Person,
-        :Woman ;
-    :hasBirthYear 1883 ;
-    :hasDeathYear 1971 ;
-    :hasFather data:Baron_Aschwin_of_Sierstorpff-Cramm ;
-    :hasMarriageYear 1905,
-        1909 ;
-    :hasMother data:Baroness_Hedwig_of_Sierstorpff-Driburg ;
-    :hasRelation data:Count_Bodo_von_Oeynhausen,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld_Senior ;
-    :knownAs "Armgard von Cramm"^^xsd:string .
+data:PrincessVictoriaMother a :Woman ;
+    :isParentOf data:QueenVictoria .
 

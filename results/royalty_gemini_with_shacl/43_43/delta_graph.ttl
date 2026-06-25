@@ -2,53 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfonso_Count_of_Caserta a :Man,
+data:Prince_Alfonso_Count_of_Caserta a :Man,
         :Person .
 
-data:Luiz_Gastao_of_Orleans-Braganza a :Man,
-        :Person ;
-    :isBrotherOf data:Pedro_Henrique_of_Orleans-Braganza .
-
-data:Pedro_Gastao_of_Orleans-Braganza a :Man,
+data:Prince_Pedro_Gastao_of_Orleans-Braganza a :Man,
         :Person ;
     :hasFather data:Pedro_de_Alcantara_Prince_of_Grao-Para .
 
-data:Pia_Maria_of_Orleans-Braganza a :Person,
-        :Woman ;
-    :isSisterOf data:Pedro_Henrique_of_Orleans-Braganza .
-
-data:Gaston_Count_of_Eu a :Ancestor,
-        :Man,
-        :Person .
-
-data:Isabel_of_Brazil a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Luis_of_Orleans-Braganza a :Ancestor,
-        :Man,
+data:Prince_Pedro_Henrique_of_Orleans-Braganza a :Man,
         :Person ;
-    :hasFather data:Gaston_Count_of_Eu ;
-    :hasMother data:Isabel_of_Brazil .
+    :alsoKnownAs "O Príncipe Esperado"^^xsd:string ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1981 ;
+    :hasFather data:Prince_Luis_of_Orleans-Braganza ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Princess_Maria_Pia_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Luiz_Gastao,
+        data:Pia_Maria ;
+    :knownAs "The Expected Prince"^^xsd:string .
 
-data:Maria_Elisabeth_of_Bavaria a :Person,
+data:Princess_Maria_Elisabeth_of_Bavaria a :Person,
         :Woman .
 
-data:Maria_di_Grazia_of_Bourbon-Two_Sicilies a :Ancestor,
+data:Princess_Maria_di_Grazia_of_Bourbon-Two_Sicilies a :Ancestor,
         :Person,
         :Woman .
+
+data:Luiz_Gastao a :Man,
+        :Person .
 
 data:Pedro_de_Alcantara_Prince_of_Grao-Para a :Ancestor,
         :Man,
         :Person .
 
-data:Pedro_Henrique_of_Orleans-Braganza a :Man,
+data:Pia_Maria a :Person,
+        :Woman .
+
+data:Prince_Gaston_Count_of_Eu a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Luis_of_Orleans-Braganza a :Ancestor,
+        :Man,
         :Person ;
-    :hasBirthYear 1909 ;
-    :hasDeathYear 1981 ;
-    :hasFather data:Luis_of_Orleans-Braganza ;
-    :hasMarriageYear 1937 ;
-    :hasMother data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
-    :hasRelation data:Maria_Elisabeth_of_Bavaria ;
-    :knownAs "The Expected Prince"^^xsd:string .
+    :hasFather data:Prince_Gaston_Count_of_Eu ;
+    :hasMother data:Princess_Isabel_of_Brazil .
+
+data:Princess_Isabel_of_Brazil a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Maria_Pia_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman .
 

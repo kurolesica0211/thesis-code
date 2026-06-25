@@ -7,49 +7,66 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:James_Ogilvy a :Person ;
+    rdfs:label "James Ogilvy" ;
+    data:posIndicesFull "440:452" ;
+    data:wdtLink wdt:Q662282 ;
+    :alsoKnownAs "James Robert Bruce Ogilvy" ;
+    :hasParent data:Angus_Ogilvy ;
+    :hasSex data:male .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Marina of Greece and Denmark" ;
+    data:posIndicesFull "310:347" ;
+    data:posIndicesPart "476:482",
+        "567:573",
+        "704:710",
+        "837:843" ;
+    data:wdtLink wdt:Q170184 ;
+    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent",
+        "Princess Marina of Greece and Denmark, The Duchess of Kent",
+        "Princess Marina, The Duchess Of Kent" ;
+    :hasSex data:female .
+
+data:Zenouska_Mowatt a :Person ;
+    rdfs:label "Zenouska Mowatt" ;
+    data:posIndicesFull "1020:1039" ;
+    data:wdtLink wdt:Q12379343 ;
+    :alsoKnownAs "Zenouska May Mowatt" ;
+    :hasParent data:Marina_Ogilvy,
+        data:Paul_Mowatt ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Paul_Mowatt a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Marina_Ogilvy a :Person ;
+    rdfs:label "Marina Ogilvy" ;
+    data:posIndicesFull "0:32" ;
+    data:posIndicesPart "156:162",
+        "476:482",
+        "567:573",
+        "704:710",
+        "837:843" ;
+    data:wdtLink wdt:Q3312290 ;
+    :alsoKnownAs "Marina Victoria Alexandra Mowatt",
+        "Marina Victoria Alexandra Ogilvy" ;
+    :hasParent data:Angus_Ogilvy ;
+    :hasSex data:female .
+
+data:Paul_Mowatt a :Person ;
     rdfs:label "Paul Mowatt" ;
     data:posIndicesFull "623:641" ;
     data:posIndicesPart "1084:1090",
         "852:858" ;
     data:wdtLink wdt:Q17429006 ;
     :alsoKnownAs "Paul Julian Mowatt" ;
-    :hasChild data:Zenouska_Mowatt ;
-    :hasDaughter data:Zenouska_Mowatt ;
-    :hasSex data:male ;
-    :isFatherOf data:Zenouska_Mowatt ;
-    :isParentOf data:Zenouska_Mowatt .
+    :hasSex data:male .
 
-data:James_Ogilvy a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "James Ogilvy" ;
-    data:posIndicesFull "440:452" ;
-    data:wdtLink wdt:Q662282 ;
-    :alsoKnownAs "James Robert Bruce Ogilvy" ;
-    :hasFather data:Angus_Ogilvy ;
-    :hasParent data:Angus_Ogilvy ;
-    :hasSex data:male ;
-    :hasSister data:Marina_Ogilvy ;
-    :isBrotherOf data:Marina_Ogilvy ;
-    :isChildOf data:Angus_Ogilvy ;
-    :isSiblingOf data:Marina_Ogilvy ;
-    :isSonOf data:Angus_Ogilvy ;
-    :isUncleOf data:Zenouska_Mowatt .
-
-data:Angus_Ogilvy a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Angus_Ogilvy a :Person ;
     rdfs:label "Angus Ogilvy" ;
     data:posIndicesFull "95:111",
         "99:111" ;
@@ -63,58 +80,9 @@ data:Angus_Ogilvy a :Ancestor,
         "Rt. Hon. Sir Angus Ogilvy",
         "Sir Angus James Bruce Ogilvy",
         "Sir Angus Ogilvy" ;
-    :hasChild data:James_Ogilvy,
-        data:Marina_Ogilvy ;
-    :hasDaughter data:Marina_Ogilvy ;
-    :hasSex data:male ;
-    :hasSon data:James_Ogilvy ;
-    :isFatherOf data:James_Ogilvy,
-        data:Marina_Ogilvy ;
-    :isParentOf data:James_Ogilvy,
-        data:Marina_Ogilvy .
+    :hasSex data:male .
 
-data:Zenouska_Mowatt a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Zenouska Mowatt" ;
-    data:posIndicesFull "1020:1039" ;
-    data:wdtLink wdt:Q12379343 ;
-    :alsoKnownAs "Zenouska May Mowatt" ;
-    :hasFather data:Paul_Mowatt ;
-    :hasMother data:Marina_Ogilvy ;
-    :hasParent data:Marina_Ogilvy,
-        data:Paul_Mowatt ;
-    :hasSex data:female ;
-    :isChildOf data:Marina_Ogilvy,
-        data:Paul_Mowatt ;
-    :isDaughterOf data:Marina_Ogilvy,
-        data:Paul_Mowatt .
+data:female a :Female .
 
-data:Marina_Ogilvy a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Marina Ogilvy" ;
-    data:posIndicesFull "0:32" ;
-    data:posIndicesPart "156:162",
-        "319:325",
-        "476:482",
-        "567:573",
-        "704:710",
-        "837:843" ;
-    data:wdtLink wdt:Q3312290 ;
-    :alsoKnownAs "Marina Victoria Alexandra Mowatt",
-        "Marina Victoria Alexandra Ogilvy" ;
-    :hasBrother data:James_Ogilvy ;
-    :hasChild data:Zenouska_Mowatt ;
-    :hasDaughter data:Zenouska_Mowatt ;
-    :hasFather data:Angus_Ogilvy ;
-    :hasParent data:Angus_Ogilvy ;
-    :hasSex data:female ;
-    :isChildOf data:Angus_Ogilvy ;
-    :isDaughterOf data:Angus_Ogilvy ;
-    :isMotherOf data:Zenouska_Mowatt ;
-    :isParentOf data:Zenouska_Mowatt ;
-    :isSiblingOf data:James_Ogilvy ;
-    :isSisterOf data:James_Ogilvy .
+data:male a :Male .
 

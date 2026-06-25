@@ -1,0 +1,295 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_Spencer_9th_Earl_Spencer a :Man,
+        :Person ;
+    :hasBrother data:Charles_Spencer_9th_Earl_Spencer ;
+    :hasRelation data:Charles_Spencer_9th_Earl_Spencer ;
+    :isBloodrelationOf data:Charles_Spencer_9th_Earl_Spencer ;
+    :isBrotherOf data:Charles_Spencer_9th_Earl_Spencer ;
+    :isSiblingOf data:Charles_Spencer_9th_Earl_Spencer .
+
+data:Meghan_Markle a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :hasDaughter data:Lilibet_Mountbatten-Windsor ;
+    :hasRelation data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor,
+        data:Meghan_Markle ;
+    :hasSister data:Meghan_Markle ;
+    :hasSon data:Archie_Mountbatten-Windsor ;
+    :isAncestorOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :isAuntOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Meghan_Markle ;
+    :isMotherOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :isParentOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :isSiblingOf data:Meghan_Markle ;
+    :isSisterOf data:Meghan_Markle .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasChild data:King_Charles_III ;
+    :hasRelation data:Archie_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lilibet_Mountbatten-Windsor,
+        data:Prince_Harry,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:William_Prince_of_Wales ;
+    :hasSon data:King_Charles_III ;
+    :isAncestorOf data:Archie_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lilibet_Mountbatten-Windsor,
+        data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isFatherOf data:King_Charles_III ;
+    :isParentOf data:King_Charles_III ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isUncleOf data:King_Charles_III .
+
+data:Queen_Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:King_Charles_III ;
+    :hasRelation data:Archie_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lilibet_Mountbatten-Windsor,
+        data:Prince_Harry,
+        data:Queen_Elizabeth_II,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :hasSon data:King_Charles_III ;
+    :isAncestorOf data:Archie_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lilibet_Mountbatten-Windsor,
+        data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isAuntOf data:King_Charles_III ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isMotherOf data:King_Charles_III ;
+    :isParentOf data:King_Charles_III ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Diana_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :hasRelation data:Archie_Mountbatten-Windsor,
+        data:Diana_Princess_of_Wales,
+        data:Lilibet_Mountbatten-Windsor,
+        data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Diana_Princess_of_Wales ;
+    :hasSon data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isAncestorOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor,
+        data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isAuntOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isBloodrelationOf data:Diana_Princess_of_Wales ;
+    :isMotherOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isParentOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isSiblingOf data:Diana_Princess_of_Wales ;
+    :isSisterOf data:Diana_Princess_of_Wales .
+
+data:William_Prince_of_Wales a :Man,
+        :Person ;
+    :hasAncestor data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II ;
+    :hasBrother data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :hasFather data:King_Charles_III ;
+    :hasMother data:Diana_Princess_of_Wales ;
+    :hasParent data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :hasRelation data:Archie_Mountbatten-Windsor,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Lilibet_Mountbatten-Windsor,
+        data:Prince_Harry,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II,
+        data:William_Prince_of_Wales ;
+    :isBloodrelationOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isBrotherOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isChildOf data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :isSiblingOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isSonOf data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :isUncleOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor .
+
+data:Archie_Mountbatten-Windsor a :Man,
+        :Person ;
+    :hasAncestor data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Harry,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II ;
+    :hasBrother data:Archie_Mountbatten-Windsor ;
+    :hasFather data:Prince_Harry ;
+    :hasMother data:Meghan_Markle ;
+    :hasParent data:Meghan_Markle,
+        data:Prince_Harry ;
+    :hasRelation data:Archie_Mountbatten-Windsor,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Lilibet_Mountbatten-Windsor,
+        data:Meghan_Markle,
+        data:Prince_Harry,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Lilibet_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :isBrotherOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :isChildOf data:Meghan_Markle,
+        data:Prince_Harry ;
+    :isSiblingOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :isSonOf data:Meghan_Markle,
+        data:Prince_Harry .
+
+data:Lilibet_Mountbatten-Windsor a :Person,
+        :Woman ;
+    :hasAncestor data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Meghan_Markle,
+        data:Prince_Harry,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II ;
+    :hasBrother data:Archie_Mountbatten-Windsor ;
+    :hasFather data:Prince_Harry ;
+    :hasMother data:Meghan_Markle ;
+    :hasParent data:Meghan_Markle,
+        data:Prince_Harry ;
+    :hasRelation data:Archie_Mountbatten-Windsor,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Lilibet_Mountbatten-Windsor,
+        data:Meghan_Markle,
+        data:Prince_Harry,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II,
+        data:William_Prince_of_Wales ;
+    :hasSister data:Lilibet_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :isChildOf data:Meghan_Markle,
+        data:Prince_Harry ;
+    :isDaughterOf data:Meghan_Markle,
+        data:Prince_Harry ;
+    :isSiblingOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :isSisterOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor .
+
+data:King_Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Prince_Philip_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II ;
+    :hasBrother data:King_Charles_III ;
+    :hasChild data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :hasFather data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasParent data:Prince_Philip_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II ;
+    :hasRelation data:Archie_Mountbatten-Windsor,
+        data:King_Charles_III,
+        data:Lilibet_Mountbatten-Windsor,
+        data:Prince_Harry,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II,
+        data:William_Prince_of_Wales ;
+    :hasSon data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isAncestorOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor,
+        data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isBloodrelationOf data:King_Charles_III ;
+    :isBrotherOf data:King_Charles_III ;
+    :isChildOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II ;
+    :isFatherOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isParentOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isSiblingOf data:King_Charles_III ;
+    :isSonOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II ;
+    :isUncleOf data:Prince_Harry,
+        data:William_Prince_of_Wales .
+
+data:Prince_Harry a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II ;
+    :hasBirthYear 1984 ;
+    :hasBrother data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :hasChild data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :hasDaughter data:Lilibet_Mountbatten-Windsor ;
+    :hasFather data:King_Charles_III ;
+    :hasMother data:Diana_Princess_of_Wales ;
+    :hasParent data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :hasRelation data:Archie_Mountbatten-Windsor,
+        data:Diana_Princess_of_Wales,
+        data:King_Charles_III,
+        data:Lilibet_Mountbatten-Windsor,
+        data:Prince_Harry,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Queen_Elizabeth_II,
+        data:William_Prince_of_Wales ;
+    :hasSon data:Archie_Mountbatten-Windsor ;
+    :isAncestorOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isBrotherOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isChildOf data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :isFatherOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :isParentOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor ;
+    :isSiblingOf data:Prince_Harry,
+        data:William_Prince_of_Wales ;
+    :isSonOf data:Diana_Princess_of_Wales,
+        data:King_Charles_III ;
+    :isUncleOf data:Archie_Mountbatten-Windsor,
+        data:Lilibet_Mountbatten-Windsor .
+

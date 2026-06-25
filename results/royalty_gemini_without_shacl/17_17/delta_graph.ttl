@@ -2,27 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:David_Albert_Charles_Armstrong-Jones a :Man ;
+data:Lady_Margarita_Armstrong-Jones a :Person,
+        :Woman ;
+    :hasFather data:David_Albert_Charles_Armstrong-Jones ;
+    :hasMother data:Serena_Alleyne_Stanhope .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :isSisterOf data:Princess_Margaret .
+
+data:Viscount_Linley_Son a :Man,
+        :Person ;
+    :hasFather data:David_Albert_Charles_Armstrong-Jones ;
+    :hasMother data:Serena_Alleyne_Stanhope .
+
+data:Antony_Armstrong-Jones a :Man,
+        :Person ;
+    :hasDeathYear 2017 .
+
+data:Lady_Frances_von_Hofmannsthal a :Person,
+        :Woman .
+
+data:Lady_Sarah_Chatto a :Person,
+        :Woman .
+
+data:Polly_Fry a :Person,
+        :Woman .
+
+data:David_Albert_Charles_Armstrong-Jones a :Man,
+        :Person ;
+    :formerlyKnownAs "Viscount Linley"^^xsd:string ;
     :hasBirthYear 1961 ;
-    :hasChild data:Lady_Margarita_Armstrong-Jones ;
     :hasFather data:Antony_Armstrong-Jones ;
     :hasMother data:Princess_Margaret ;
-    :hasSister data:Lady_Sarah_Chatto .
+    :hasSister data:Lady_Frances_von_Hofmannsthal,
+        data:Lady_Sarah_Chatto,
+        data:Polly_Fry ;
+    :knownAs "David Linley"^^xsd:string .
 
-data:Serena_Alleyne_Stanhope a :Woman ;
+data:Princess_Margaret a :Person,
+        :Woman .
+
+data:Serena_Alleyne_Stanhope a :Person,
+        :Woman ;
     :hasBirthYear 1970 .
-
-data:Antony_Armstrong-Jones a :Man ;
-    :isFatherOf data:Lady_Frances_von_Hofmannsthal,
-        data:Polly_Fry .
-
-data:Lady_Frances_von_Hofmannsthal a :Woman .
-
-data:Lady_Margarita_Armstrong-Jones a :Woman .
-
-data:Lady_Sarah_Chatto a :Woman .
-
-data:Polly_Fry a :Woman .
-
-data:Princess_Margaret a :Woman .
 

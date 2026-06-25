@@ -2,28 +2,21 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Simon_Patrick_Bowes-Lyon a :Man ;
-    :formerlyKnownAs "Lord Glamis"^^xsd:string ;
-    :hasBirthYear 1986 ;
-    :hasFather data:Michael_Bowes-Lyon ;
-    :hasMother data:Isobel_Weatherall ;
-    :hasSex data:Male ;
-    :knownAs "19th and 6th Earl of Strathmore and Kinghorne"^^xsd:string .
+data:PrinceErnestAugustusOfHanover a :Man,
+        :Person ;
+    :isBrotherOf data:HeinrichPrinzVonHannover .
 
-data:Anthony_Edward_Weatherall a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
+data:ErnestAugustusHereditaryPrinceOfBrunswick a :Ancestor,
+        :Man,
+        :Person .
 
-data:Female a :Sex .
+data:HeinrichPrinzVonHannover a :Man,
+        :Person ;
+    :hasBirthYear 1961 ;
+    :hasFather data:ErnestAugustusHereditaryPrinceOfBrunswick ;
+    :hasMother data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg .
 
-data:Isobel_Weatherall a :Ancestor,
-        :Woman ;
-    :hasFather data:Anthony_Edward_Weatherall ;
-    :hasSex data:Female .
-
-data:Michael_Bowes-Lyon a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
-
-data:Male a :Sex .
+data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg a :Ancestor,
+        :Person,
+        :Woman .
 

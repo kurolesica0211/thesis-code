@@ -7,58 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Infanta_Maria_Teresa_Isabel_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta Maria Teresa Isabel of Spain" ;
-    data:posIndicesFull "800:814" ;
-    data:wdtLink wdt:Q255389 ;
-    :alsoKnownAs "Maria Teresa",
-        "Maria Teresa de Borbón y Habsburgo, Infanta de España" ;
-    :hasSex data:female .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Alfonso-_Count_of_Caserta a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Alfonso, Count of Caserta" ;
-    data:posIndicesFull "320:352" ;
-    data:posIndicesPart "517:523",
-        "759:765" ;
-    data:wdtLink wdt:Q439014 ;
-    :alsoKnownAs "Alfonso Maria Giuseppe Alberto" ;
-    :hasChild data:Prince_Gabriel_of_the_Two_Sicilies ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Gabriel_of_the_Two_Sicilies ;
-    :isFatherOf data:Prince_Gabriel_of_the_Two_Sicilies ;
-    :isParentOf data:Prince_Gabriel_of_the_Two_Sicilies .
-
-data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Maria Antonietta of Bourbon-Two Sicilies" ;
-    data:posIndicesFull "368:417" ;
-    data:posIndicesPart "463:471",
-        "561:566",
-        "718:726" ;
-    data:wdtLink wdt:Q255400 ;
-    :hasChild data:Prince_Gabriel_of_the_Two_Sicilies ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Gabriel_of_the_Two_Sicilies ;
-    :isMotherOf data:Prince_Gabriel_of_the_Two_Sicilies ;
-    :isParentOf data:Prince_Gabriel_of_the_Two_Sicilies .
-
-data:Prince_Gabriel_of_the_Two_Sicilies a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Gabriel_of_the_Two_Sicilies a :Person ;
     rdfs:label "Prince Gabriel of the Two Sicilies" ;
     data:posIndicesFull "0:39" ;
     data:posIndicesPart "270:277",
@@ -69,13 +18,36 @@ data:Prince_Gabriel_of_the_Two_Sicilies a :Man,
     data:wdtLink wdt:Q3756709 ;
     :alsoKnownAs "Gabriele di Borbone-Due Sicilie",
         "Prince Gabriele of Bourbon-Two Sicilies" ;
-    :hasFather data:Prince_Alfonso-_Count_of_Caserta ;
-    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
     :hasParent data:Prince_Alfonso-_Count_of_Caserta,
         data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Alfonso-_Count_of_Caserta,
-        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :isSonOf data:Prince_Alfonso-_Count_of_Caserta,
-        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Alfonso-_Count_of_Caserta a :Person ;
+    rdfs:label "Prince Alfonso, Count of Caserta" ;
+    data:posIndicesFull "320:352" ;
+    data:posIndicesPart "517:523",
+        "759:765" ;
+    data:wdtLink wdt:Q439014 ;
+    :alsoKnownAs "Alfonso Maria Giuseppe Alberto" ;
+    :hasSex data:male .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person ;
+    rdfs:label "Princess Maria Antonietta of Bourbon-Two Sicilies" ;
+    data:posIndicesFull "368:417" ;
+    data:posIndicesPart "463:471",
+        "561:566",
+        "718:726",
+        "800:805" ;
+    data:wdtLink wdt:Q255400 ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

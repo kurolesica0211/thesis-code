@@ -1,0 +1,1183 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Iñaki_Urdangarin a :Man,
+        :Person ;
+    rdfs:label "Iñaki Urdangarin"^^xsd:string ;
+    data:posIndicesFull "17032:17048"^^xsd:string ;
+    data:wdtLink wdt:Q356560 ;
+    :alsoKnownAs "Don Iñaki Urdangarin Liebaert"^^xsd:string ;
+    :hasBrother data:Iñaki_Urdangarin ;
+    :hasRelation data:Iñaki_Urdangarin ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Iñaki_Urdangarin ;
+    :isBrotherOf data:Iñaki_Urdangarin ;
+    :isSiblingOf data:Iñaki_Urdangarin .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Frederica of Hanover"^^xsd:string ;
+    data:posIndicesFull "4005:4014"^^xsd:string ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka"^^xsd:string,
+        "Friederike Luise von Griechenland"^^xsd:string,
+        "Princess Fredericka"^^xsd:string ;
+    :hasChild data:Queen_Sofía_of_Spain ;
+    :hasDaughter data:Queen_Sofía_of_Spain ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Frederica_of_Hanover,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Sofía_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Frederica_of_Hanover ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Sofía_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isAuntOf data:Queen_Sofía_of_Spain ;
+    :isBloodrelationOf data:Frederica_of_Hanover ;
+    :isMotherOf data:Queen_Sofía_of_Spain ;
+    :isParentOf data:Queen_Sofía_of_Spain ;
+    :isSiblingOf data:Frederica_of_Hanover ;
+    :isSisterOf data:Frederica_of_Hanover .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Paul of Greece"^^xsd:string ;
+    data:posIndicesFull "25707:25726"^^xsd:string,
+        "25712:25726"^^xsd:string,
+        "4031:4050"^^xsd:string,
+        "4036:4050"^^xsd:string ;
+    data:posIndicesPart "13933:13937"^^xsd:string,
+        "6114:6118"^^xsd:string ;
+    data:wdtLink wdt:Q155394 ;
+    :alsoKnownAs "King Paul I of Greece"^^xsd:string,
+        "King Paul of Greece"^^xsd:string,
+        "King Pavlos I of Greece"^^xsd:string,
+        "Paul I of Greece"^^xsd:string,
+        "Pavlos I of Greece"^^xsd:string ;
+    :hasBrother data:Paul_of_Greece ;
+    :hasChild data:Queen_Sofía_of_Spain ;
+    :hasDaughter data:Queen_Sofía_of_Spain ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Sofía_of_Spain,
+        data:Paul_of_Greece,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:male ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Sofía_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isBloodrelationOf data:Paul_of_Greece ;
+    :isBrotherOf data:Paul_of_Greece ;
+    :isFatherOf data:Queen_Sofía_of_Spain ;
+    :isParentOf data:Queen_Sofía_of_Spain ;
+    :isSiblingOf data:Paul_of_Greece ;
+    :isUncleOf data:Queen_Sofía_of_Spain .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alfonso XIII"^^xsd:string ;
+    data:posIndicesFull "1271:1283"^^xsd:string,
+        "26838:26850"^^xsd:string,
+        "3025:3037"^^xsd:string,
+        "7262:7274"^^xsd:string,
+        "770:782"^^xsd:string ;
+    data:posIndicesPart "12498:12505"^^xsd:string,
+        "27752:27759"^^xsd:string,
+        "3675:3682"^^xsd:string,
+        "4346:4353"^^xsd:string,
+        "4478:4485"^^xsd:string,
+        "4769:4776"^^xsd:string,
+        "5001:5008"^^xsd:string,
+        "5111:5118"^^xsd:string,
+        "5170:5177"^^xsd:string,
+        "5292:5299"^^xsd:string,
+        "5559:5566"^^xsd:string,
+        "5669:5676"^^xsd:string,
+        "6223:6230"^^xsd:string,
+        "7303:7310"^^xsd:string,
+        "7381:7388"^^xsd:string ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena"^^xsd:string,
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena"^^xsd:string,
+        "Alfonso XIII of Spain"^^xsd:string,
+        "Don Alfonso de Borbon y Habsburgo"^^xsd:string,
+        "Don Alfonso de Borbón y Habsburgo"^^xsd:string,
+        "The African"^^xsd:string ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Infante_Juan-_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infanta_Sofía_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:male ;
+    :hasSon data:Infante_Juan-_Count_of_Barcelona ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infanta_Sofía_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isParentOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Infante_Juan-_Count_of_Barcelona .
+
+data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Infanta María de las Mercedes, Countess of Barcelona"^^xsd:string ;
+    data:posIndicesFull "2913:2967"^^xsd:string ;
+    data:posIndicesPart "13876:13881"^^xsd:string,
+        "14904:14909"^^xsd:string,
+        "25965:25974"^^xsd:string,
+        "27023:27032"^^xsd:string,
+        "27321:27328"^^xsd:string,
+        "5861:5870"^^xsd:string,
+        "7466:7471"^^xsd:string,
+        "9867:9870"^^xsd:string ;
+    data:wdtLink wdt:Q235128 ;
+    :alsoKnownAs "Princess Maria de las Mercedes of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasChild data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasDaughter data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infanta_Sofía_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasSon data:Juan_Carlos_I_of_Spain ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infanta_Sofía_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isAuntOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :isMotherOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isParentOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :isSisterOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona .
+
+data:Infanta_Sofía_of_Spain a :Person,
+        :Woman ;
+    rdfs:label "Infanta Sofía of Spain"^^xsd:string ;
+    data:posIndicesFull "1554:1569"^^xsd:string,
+        "25656:25671"^^xsd:string ;
+    data:posIndicesPart "10706:10711"^^xsd:string,
+        "11265:11270"^^xsd:string,
+        "11400:11405"^^xsd:string,
+        "11573:11578"^^xsd:string,
+        "11813:11818"^^xsd:string,
+        "12050:12055"^^xsd:string,
+        "14226:14231"^^xsd:string,
+        "15087:15092"^^xsd:string,
+        "15599:15604"^^xsd:string,
+        "15769:15774"^^xsd:string,
+        "15794:15799"^^xsd:string,
+        "16415:16420"^^xsd:string,
+        "1744:1749"^^xsd:string,
+        "17674:17679"^^xsd:string,
+        "17874:17879"^^xsd:string,
+        "17889:17894"^^xsd:string,
+        "19114:19119"^^xsd:string,
+        "19234:19239"^^xsd:string,
+        "21081:21086"^^xsd:string,
+        "21430:21435"^^xsd:string,
+        "21674:21679"^^xsd:string,
+        "2210:2215"^^xsd:string,
+        "22269:22274"^^xsd:string,
+        "22566:22571"^^xsd:string,
+        "2474:2479"^^xsd:string,
+        "24778:24783"^^xsd:string,
+        "25207:25212"^^xsd:string,
+        "25269:25274"^^xsd:string,
+        "2647:2652"^^xsd:string,
+        "27321:27328"^^xsd:string,
+        "27910:27915"^^xsd:string,
+        "28537:28542"^^xsd:string,
+        "28616:28621"^^xsd:string,
+        "28707:28712"^^xsd:string,
+        "28905:28910"^^xsd:string,
+        "3433:3438"^^xsd:string,
+        "6696:6701"^^xsd:string,
+        "7140:7145"^^xsd:string,
+        "7202:7207"^^xsd:string,
+        "7724:7729"^^xsd:string,
+        "9297:9302"^^xsd:string,
+        "9733:9738"^^xsd:string ;
+    data:wdtLink wdt:Q847010 ;
+    :alsoKnownAs "Princess Sofia"^^xsd:string,
+        "Sofía de Borbón y Ortiz, infanta de España"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_of_Hanover,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Paul_of_Greece,
+        data:Queen_Sofía_of_Spain ;
+    :hasFather data:Felipe_VI_of_Spain ;
+    :hasParent data:Felipe_VI_of_Spain ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_of_Hanover,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infanta_Sofía_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Paul_of_Greece,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Sofía_of_Spain ;
+    :isBloodrelationOf data:Infanta_Sofía_of_Spain ;
+    :isChildOf data:Felipe_VI_of_Spain ;
+    :isDaughterOf data:Felipe_VI_of_Spain ;
+    :isSiblingOf data:Infanta_Sofía_of_Spain ;
+    :isSisterOf data:Infanta_Sofía_of_Spain .
+
+data:Infanta_Pilar-_Duchess_of_Badajoz a :Person,
+        :Woman ;
+    rdfs:label "Infanta Pilar, Duchess of Badajoz"^^xsd:string ;
+    data:posIndicesFull "3544:3577"^^xsd:string ;
+    data:posIndicesPart "16986:16993"^^xsd:string,
+        "27321:27328"^^xsd:string,
+        "27329:27334"^^xsd:string,
+        "3949:3954"^^xsd:string,
+        "5652:5657"^^xsd:string ;
+    data:wdtLink wdt:Q240580 ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasBrother data:Juan_Carlos_I_of_Spain ;
+    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
+    :hasMother data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_XIII,
+        data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :isAuntOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isBloodrelationOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isDaughterOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isSiblingOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSisterOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain .
+
+data:Infanta_Margarita-_Duchess_of_Soria a :Person,
+        :Woman ;
+    rdfs:label "Infanta Margarita, Duchess of Soria"^^xsd:string ;
+    data:posIndicesFull "3595:3630"^^xsd:string ;
+    data:posIndicesPart "16986:16993"^^xsd:string,
+        "27321:27328"^^xsd:string ;
+    data:wdtLink wdt:Q237165 ;
+    :alsoKnownAs "Margarita Maria"^^xsd:string,
+        "Margarita Maria de Borbón y de Borbón, Infanta de España"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasBrother data:Juan_Carlos_I_of_Spain ;
+    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
+    :hasMother data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infanta_Sofía_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :isAuntOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isBloodrelationOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isDaughterOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isSiblingOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSisterOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain .
+
+data:Queen_Sofía_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Sofía of Spain"^^xsd:string ;
+    data:posIndicesFull "1554:1591"^^xsd:string,
+        "16155:16166"^^xsd:string,
+        "17:29"^^xsd:string,
+        "25656:25693"^^xsd:string ;
+    data:posIndicesPart "1032:1037"^^xsd:string,
+        "10706:10711"^^xsd:string,
+        "1102:1107"^^xsd:string,
+        "11265:11270"^^xsd:string,
+        "11400:11405"^^xsd:string,
+        "11573:11578"^^xsd:string,
+        "11813:11818"^^xsd:string,
+        "12050:12055"^^xsd:string,
+        "13464:13469"^^xsd:string,
+        "14226:14231"^^xsd:string,
+        "1486:1491"^^xsd:string,
+        "15087:15092"^^xsd:string,
+        "15599:15604"^^xsd:string,
+        "15769:15774"^^xsd:string,
+        "15794:15799"^^xsd:string,
+        "16415:16420"^^xsd:string,
+        "16544:16549"^^xsd:string,
+        "17380:17385"^^xsd:string,
+        "1744:1749"^^xsd:string,
+        "17674:17679"^^xsd:string,
+        "17874:17879"^^xsd:string,
+        "17889:17894"^^xsd:string,
+        "19114:19119"^^xsd:string,
+        "19234:19239"^^xsd:string,
+        "21081:21086"^^xsd:string,
+        "21430:21435"^^xsd:string,
+        "21674:21679"^^xsd:string,
+        "2210:2215"^^xsd:string,
+        "22269:22274"^^xsd:string,
+        "22566:22571"^^xsd:string,
+        "2474:2479"^^xsd:string,
+        "24778:24783"^^xsd:string,
+        "25207:25212"^^xsd:string,
+        "25269:25274"^^xsd:string,
+        "2647:2652"^^xsd:string,
+        "27910:27915"^^xsd:string,
+        "28537:28542"^^xsd:string,
+        "28616:28621"^^xsd:string,
+        "28707:28712"^^xsd:string,
+        "28905:28910"^^xsd:string,
+        "3433:3438"^^xsd:string,
+        "3999:4004"^^xsd:string,
+        "573:578"^^xsd:string,
+        "6696:6701"^^xsd:string,
+        "7140:7145"^^xsd:string,
+        "7202:7207"^^xsd:string,
+        "7724:7729"^^xsd:string,
+        "801:806"^^xsd:string,
+        "9297:9302"^^xsd:string,
+        "9733:9738"^^xsd:string ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark"^^xsd:string,
+        "Queen Sofia of Spain"^^xsd:string,
+        "Queen Sofía"^^xsd:string,
+        "Queen Sofía, Queen Consort of Spain"^^xsd:string ;
+    :hasAncestor data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasChild data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :hasDaughter data:Infanta_Cristina_of_Spain ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasParent data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Frederica_of_Hanover,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Sofía_of_Spain,
+        data:Juan_Carlos_I_of_Spain,
+        data:Paul_of_Greece,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Sofía_of_Spain ;
+    :hasSon data:Felipe_VI_of_Spain ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Sofía_of_Spain ;
+    :isAuntOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isBloodrelationOf data:Queen_Sofía_of_Spain ;
+    :isChildOf data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :isDaughterOf data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :isMotherOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isParentOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isSiblingOf data:Queen_Sofía_of_Spain ;
+    :isSisterOf data:Queen_Sofía_of_Spain .
+
+data:Infante_Juan-_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Infante Juan, Count of Barcelona"^^xsd:string ;
+    data:posIndicesFull "2875:2907"^^xsd:string,
+        "720:752"^^xsd:string,
+        "7212:7244"^^xsd:string ;
+    data:posIndicesPart "10080:10084"^^xsd:string,
+        "10157:10161"^^xsd:string,
+        "10375:10379"^^xsd:string,
+        "10579:10583"^^xsd:string,
+        "10927:10931"^^xsd:string,
+        "11168:11172"^^xsd:string,
+        "11444:11448"^^xsd:string,
+        "11628:11632"^^xsd:string,
+        "11907:11911"^^xsd:string,
+        "12013:12017"^^xsd:string,
+        "1206:1210"^^xsd:string,
+        "12210:12214"^^xsd:string,
+        "12288:12292"^^xsd:string,
+        "12419:12423"^^xsd:string,
+        "12656:12660"^^xsd:string,
+        "12968:12972"^^xsd:string,
+        "13011:13015"^^xsd:string,
+        "13095:13099"^^xsd:string,
+        "1327:1331"^^xsd:string,
+        "13337:13341"^^xsd:string,
+        "13712:13716"^^xsd:string,
+        "13801:13805"^^xsd:string,
+        "13871:13875"^^xsd:string,
+        "1387:1391"^^xsd:string,
+        "14017:14021"^^xsd:string,
+        "1431:1435"^^xsd:string,
+        "14445:14449"^^xsd:string,
+        "14650:14654"^^xsd:string,
+        "15236:15240"^^xsd:string,
+        "1534:1538"^^xsd:string,
+        "15431:15435"^^xsd:string,
+        "15506:15510"^^xsd:string,
+        "15944:15948"^^xsd:string,
+        "16590:16594"^^xsd:string,
+        "1697:1701"^^xsd:string,
+        "17183:17187"^^xsd:string,
+        "17255:17259"^^xsd:string,
+        "18310:18314"^^xsd:string,
+        "1837:1841"^^xsd:string,
+        "1862:1866"^^xsd:string,
+        "18779:18783"^^xsd:string,
+        "19010:19014"^^xsd:string,
+        "19447:19451"^^xsd:string,
+        "19545:19549"^^xsd:string,
+        "19754:19758"^^xsd:string,
+        "19946:19950"^^xsd:string,
+        "20132:20136"^^xsd:string,
+        "20418:20422"^^xsd:string,
+        "20522:20526"^^xsd:string,
+        "2065:2069"^^xsd:string,
+        "20698:20702"^^xsd:string,
+        "20875:20879"^^xsd:string,
+        "21137:21141"^^xsd:string,
+        "21458:21462"^^xsd:string,
+        "21681:21685"^^xsd:string,
+        "21854:21858"^^xsd:string,
+        "22007:22011"^^xsd:string,
+        "22136:22140"^^xsd:string,
+        "22394:22398"^^xsd:string,
+        "22523:22527"^^xsd:string,
+        "23092:23096"^^xsd:string,
+        "23118:23122"^^xsd:string,
+        "23345:23349"^^xsd:string,
+        "23441:23445"^^xsd:string,
+        "23621:23625"^^xsd:string,
+        "23634:23638"^^xsd:string,
+        "23849:23853"^^xsd:string,
+        "23972:23976"^^xsd:string,
+        "24141:24145"^^xsd:string,
+        "24306:24310"^^xsd:string,
+        "24444:24448"^^xsd:string,
+        "24559:24563"^^xsd:string,
+        "24742:24746"^^xsd:string,
+        "2495:2499"^^xsd:string,
+        "24978:24982"^^xsd:string,
+        "25068:25072"^^xsd:string,
+        "25332:25336"^^xsd:string,
+        "25485:25489"^^xsd:string,
+        "25613:25617"^^xsd:string,
+        "25900:25904"^^xsd:string,
+        "25965:25974"^^xsd:string,
+        "2598:2602"^^xsd:string,
+        "26188:26192"^^xsd:string,
+        "26365:26369"^^xsd:string,
+        "26465:26469"^^xsd:string,
+        "26637:26641"^^xsd:string,
+        "26944:26948"^^xsd:string,
+        "27023:27032"^^xsd:string,
+        "27093:27097"^^xsd:string,
+        "27168:27172"^^xsd:string,
+        "2759:2763"^^xsd:string,
+        "28447:28451"^^xsd:string,
+        "28579:28583"^^xsd:string,
+        "28750:28754"^^xsd:string,
+        "3305:3309"^^xsd:string,
+        "3515:3519"^^xsd:string,
+        "3726:3730"^^xsd:string,
+        "3888:3892"^^xsd:string,
+        "4180:4184"^^xsd:string,
+        "4338:4345"^^xsd:string,
+        "4663:4670"^^xsd:string,
+        "4895:4899"^^xsd:string,
+        "4976:4980"^^xsd:string,
+        "5236:5240"^^xsd:string,
+        "5258:5262"^^xsd:string,
+        "5392:5396"^^xsd:string,
+        "5420:5424"^^xsd:string,
+        "5766:5770"^^xsd:string,
+        "5852:5857"^^xsd:string,
+        "5861:5870"^^xsd:string,
+        "5890:5894"^^xsd:string,
+        "6010:6015"^^xsd:string,
+        "6092:6096"^^xsd:string,
+        "6188:6192"^^xsd:string,
+        "6304:6308"^^xsd:string,
+        "6404:6408"^^xsd:string,
+        "6558:6562"^^xsd:string,
+        "7276:7280"^^xsd:string,
+        "7575:7582"^^xsd:string,
+        "7583:7587"^^xsd:string,
+        "7631:7635"^^xsd:string,
+        "7772:7776"^^xsd:string,
+        "8088:8092"^^xsd:string,
+        "8274:8278"^^xsd:string,
+        "8331:8335"^^xsd:string,
+        "8603:8607"^^xsd:string,
+        "8734:8738"^^xsd:string,
+        "8820:8824"^^xsd:string,
+        "8889:8893"^^xsd:string,
+        "915:919"^^xsd:string,
+        "9277:9281"^^xsd:string,
+        "9334:9338"^^xsd:string,
+        "9543:9547"^^xsd:string,
+        "9569:9573"^^xsd:string,
+        "9584:9588"^^xsd:string ;
+    data:wdtLink wdt:Q313857 ;
+    :alsoKnownAs "Infante Juan of Barcelona"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Infante_Juan-_Count_of_Barcelona ;
+    :hasChild data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasDaughter data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infanta_Sofía_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:male ;
+    :hasSon data:Juan_Carlos_I_of_Spain ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infanta_Sofía_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isBrotherOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isChildOf data:Alfonso_XIII ;
+    :isFatherOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isParentOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Infante_Juan-_Count_of_Barcelona ;
+    :isSonOf data:Alfonso_XIII ;
+    :isUncleOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain .
+
+data:Infanta_Cristina_of_Spain a :Person,
+        :Woman ;
+    rdfs:label "Infanta Cristina of Spain"^^xsd:string ;
+    data:posIndicesFull "16968:16984"^^xsd:string ;
+    data:posIndicesPart "17674:17679"^^xsd:string,
+        "17874:17879"^^xsd:string,
+        "17889:17894"^^xsd:string,
+        "19114:19119"^^xsd:string,
+        "19234:19239"^^xsd:string,
+        "21081:21086"^^xsd:string,
+        "21430:21435"^^xsd:string,
+        "21674:21679"^^xsd:string,
+        "22269:22274"^^xsd:string,
+        "22566:22571"^^xsd:string,
+        "24778:24783"^^xsd:string,
+        "25207:25212"^^xsd:string,
+        "25269:25274"^^xsd:string,
+        "27321:27328"^^xsd:string,
+        "28537:28542"^^xsd:string,
+        "28616:28621"^^xsd:string,
+        "28707:28712"^^xsd:string,
+        "28905:28910"^^xsd:string ;
+    data:wdtLink wdt:Q230580 ;
+    :alsoKnownAs "Cristina Federica Victoria Antonia de la Santísima Trinidad de Borbón y Grecia"^^xsd:string,
+        "Cristina Federica Victoria de Borbón y Grecia, Infanta de España"^^xsd:string,
+        "Infanta Cristina"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Frederica_of_Hanover,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Paul_of_Greece,
+        data:Queen_Sofía_of_Spain ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasFather data:Juan_Carlos_I_of_Spain ;
+    :hasMother data:Queen_Sofía_of_Spain ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_of_Hanover,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infanta_Sofía_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Paul_of_Greece,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Cristina_of_Spain ;
+    :isAuntOf data:Infanta_Sofía_of_Spain ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isChildOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isDaughterOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isSiblingOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isSisterOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain .
+
+data:Felipe_VI_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Felipe VI of Spain"^^xsd:string ;
+    data:posIndicesFull "19367:19376"^^xsd:string,
+        "21303:21312"^^xsd:string,
+        "24187:24196"^^xsd:string,
+        "2568:2577"^^xsd:string ;
+    data:posIndicesPart "10706:10711"^^xsd:string,
+        "11113:11119"^^xsd:string,
+        "11265:11270"^^xsd:string,
+        "11400:11405"^^xsd:string,
+        "11573:11578"^^xsd:string,
+        "11813:11818"^^xsd:string,
+        "12050:12055"^^xsd:string,
+        "14226:14231"^^xsd:string,
+        "15087:15092"^^xsd:string,
+        "15599:15604"^^xsd:string,
+        "15769:15774"^^xsd:string,
+        "15794:15799"^^xsd:string,
+        "16415:16420"^^xsd:string,
+        "17135:17141"^^xsd:string,
+        "17674:17679"^^xsd:string,
+        "17874:17879"^^xsd:string,
+        "17889:17894"^^xsd:string,
+        "18181:18187"^^xsd:string,
+        "19114:19119"^^xsd:string,
+        "19234:19239"^^xsd:string,
+        "19991:19997"^^xsd:string,
+        "21065:21071"^^xsd:string,
+        "21081:21086"^^xsd:string,
+        "21430:21435"^^xsd:string,
+        "21674:21679"^^xsd:string,
+        "22269:22274"^^xsd:string,
+        "22566:22571"^^xsd:string,
+        "24778:24783"^^xsd:string,
+        "25207:25212"^^xsd:string,
+        "25269:25274"^^xsd:string,
+        "2647:2652"^^xsd:string,
+        "27839:27845"^^xsd:string,
+        "28537:28542"^^xsd:string,
+        "28616:28621"^^xsd:string,
+        "28707:28712"^^xsd:string,
+        "28905:28910"^^xsd:string,
+        "3433:3438"^^xsd:string,
+        "6696:6701"^^xsd:string,
+        "7140:7145"^^xsd:string,
+        "7202:7207"^^xsd:string,
+        "7724:7729"^^xsd:string,
+        "9297:9302"^^xsd:string,
+        "9733:9738"^^xsd:string ;
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia"^^xsd:string,
+        "Felipe VI"^^xsd:string,
+        "Philip John Paul Alphonse of All Saints of Bourbon"^^xsd:string,
+        "Philip VI of Spain"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Frederica_of_Hanover,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Paul_of_Greece,
+        data:Queen_Sofía_of_Spain ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasChild data:Infanta_Sofía_of_Spain ;
+    :hasDaughter data:Infanta_Sofía_of_Spain ;
+    :hasFather data:Juan_Carlos_I_of_Spain ;
+    :hasMother data:Queen_Sofía_of_Spain ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_of_Hanover,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infanta_Sofía_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Paul_of_Greece,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:male ;
+    :hasSister data:Infanta_Cristina_of_Spain ;
+    :isAncestorOf data:Infanta_Sofía_of_Spain ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isBrotherOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isChildOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isFatherOf data:Infanta_Sofía_of_Spain ;
+    :isParentOf data:Infanta_Sofía_of_Spain ;
+    :isSiblingOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isSonOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isUncleOf data:Infanta_Sofía_of_Spain .
+
+data:Juan_Carlos_I_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Juan Carlos I of Spain"^^xsd:string ;
+    data:posIndicesFull "10025:10038"^^xsd:string,
+        "130:143"^^xsd:string,
+        "16137:16150"^^xsd:string,
+        "27261:27274"^^xsd:string,
+        "27349:27362"^^xsd:string,
+        "27406:27419"^^xsd:string,
+        "3185:3249"^^xsd:string,
+        "354:418"^^xsd:string ;
+    data:posIndicesPart "10080:10084"^^xsd:string,
+        "10085:10091"^^xsd:string,
+        "10157:10161"^^xsd:string,
+        "10162:10168"^^xsd:string,
+        "1032:1037"^^xsd:string,
+        "10375:10379"^^xsd:string,
+        "10380:10386"^^xsd:string,
+        "10412:10418"^^xsd:string,
+        "10579:10583"^^xsd:string,
+        "10584:10590"^^xsd:string,
+        "10706:10711"^^xsd:string,
+        "10927:10931"^^xsd:string,
+        "10932:10938"^^xsd:string,
+        "1102:1107"^^xsd:string,
+        "11168:11172"^^xsd:string,
+        "11173:11179"^^xsd:string,
+        "11265:11270"^^xsd:string,
+        "11400:11405"^^xsd:string,
+        "11444:11448"^^xsd:string,
+        "11449:11455"^^xsd:string,
+        "11573:11578"^^xsd:string,
+        "11628:11632"^^xsd:string,
+        "11633:11639"^^xsd:string,
+        "11813:11818"^^xsd:string,
+        "11907:11911"^^xsd:string,
+        "11912:11918"^^xsd:string,
+        "12013:12017"^^xsd:string,
+        "12018:12024"^^xsd:string,
+        "12050:12055"^^xsd:string,
+        "1206:1210"^^xsd:string,
+        "1211:1217"^^xsd:string,
+        "12210:12214"^^xsd:string,
+        "12215:12221"^^xsd:string,
+        "12288:12292"^^xsd:string,
+        "12293:12299"^^xsd:string,
+        "12419:12423"^^xsd:string,
+        "12424:12430"^^xsd:string,
+        "12656:12660"^^xsd:string,
+        "12661:12667"^^xsd:string,
+        "12968:12972"^^xsd:string,
+        "12973:12979"^^xsd:string,
+        "13011:13015"^^xsd:string,
+        "13016:13022"^^xsd:string,
+        "13095:13099"^^xsd:string,
+        "13100:13106"^^xsd:string,
+        "1327:1331"^^xsd:string,
+        "1332:1338"^^xsd:string,
+        "13337:13341"^^xsd:string,
+        "13342:13348"^^xsd:string,
+        "13712:13716"^^xsd:string,
+        "13717:13723"^^xsd:string,
+        "13801:13805"^^xsd:string,
+        "13806:13812"^^xsd:string,
+        "13871:13875"^^xsd:string,
+        "1387:1391"^^xsd:string,
+        "1392:1398"^^xsd:string,
+        "14017:14021"^^xsd:string,
+        "14022:14028"^^xsd:string,
+        "14226:14231"^^xsd:string,
+        "1431:1435"^^xsd:string,
+        "1436:1442"^^xsd:string,
+        "14445:14449"^^xsd:string,
+        "14450:14456"^^xsd:string,
+        "14650:14654"^^xsd:string,
+        "14655:14661"^^xsd:string,
+        "1486:1491"^^xsd:string,
+        "15087:15092"^^xsd:string,
+        "15236:15240"^^xsd:string,
+        "15241:15247"^^xsd:string,
+        "1534:1538"^^xsd:string,
+        "1539:1545"^^xsd:string,
+        "15431:15435"^^xsd:string,
+        "15436:15442"^^xsd:string,
+        "15506:15510"^^xsd:string,
+        "15511:15517"^^xsd:string,
+        "15599:15604"^^xsd:string,
+        "15769:15774"^^xsd:string,
+        "15794:15799"^^xsd:string,
+        "15944:15948"^^xsd:string,
+        "15949:15955"^^xsd:string,
+        "16415:16420"^^xsd:string,
+        "16590:16594"^^xsd:string,
+        "16595:16601"^^xsd:string,
+        "1697:1701"^^xsd:string,
+        "1702:1708"^^xsd:string,
+        "17126:17132"^^xsd:string,
+        "17183:17187"^^xsd:string,
+        "17188:17194"^^xsd:string,
+        "17255:17259"^^xsd:string,
+        "17260:17266"^^xsd:string,
+        "1744:1749"^^xsd:string,
+        "17674:17679"^^xsd:string,
+        "17874:17879"^^xsd:string,
+        "17889:17894"^^xsd:string,
+        "18310:18314"^^xsd:string,
+        "18315:18321"^^xsd:string,
+        "1837:1841"^^xsd:string,
+        "1842:1848"^^xsd:string,
+        "1862:1866"^^xsd:string,
+        "1867:1873"^^xsd:string,
+        "18779:18783"^^xsd:string,
+        "18784:18790"^^xsd:string,
+        "19010:19014"^^xsd:string,
+        "19015:19021"^^xsd:string,
+        "19114:19119"^^xsd:string,
+        "19234:19239"^^xsd:string,
+        "19447:19451"^^xsd:string,
+        "19452:19458"^^xsd:string,
+        "19545:19549"^^xsd:string,
+        "19550:19556"^^xsd:string,
+        "19754:19758"^^xsd:string,
+        "19946:19950"^^xsd:string,
+        "19951:19957"^^xsd:string,
+        "20132:20136"^^xsd:string,
+        "20137:20143"^^xsd:string,
+        "20418:20422"^^xsd:string,
+        "20423:20429"^^xsd:string,
+        "20522:20526"^^xsd:string,
+        "20527:20533"^^xsd:string,
+        "2065:2069"^^xsd:string,
+        "20698:20702"^^xsd:string,
+        "20703:20709"^^xsd:string,
+        "2070:2076"^^xsd:string,
+        "20875:20879"^^xsd:string,
+        "20880:20886"^^xsd:string,
+        "21081:21086"^^xsd:string,
+        "21137:21141"^^xsd:string,
+        "21142:21148"^^xsd:string,
+        "21430:21435"^^xsd:string,
+        "21458:21462"^^xsd:string,
+        "21463:21469"^^xsd:string,
+        "21674:21679"^^xsd:string,
+        "21681:21685"^^xsd:string,
+        "21686:21692"^^xsd:string,
+        "21854:21858"^^xsd:string,
+        "21859:21865"^^xsd:string,
+        "22007:22011"^^xsd:string,
+        "22012:22018"^^xsd:string,
+        "2210:2215"^^xsd:string,
+        "22136:22140"^^xsd:string,
+        "22141:22147"^^xsd:string,
+        "22269:22274"^^xsd:string,
+        "22394:22398"^^xsd:string,
+        "22399:22405"^^xsd:string,
+        "22523:22527"^^xsd:string,
+        "22528:22534"^^xsd:string,
+        "22566:22571"^^xsd:string,
+        "23092:23096"^^xsd:string,
+        "23097:23103"^^xsd:string,
+        "23118:23122"^^xsd:string,
+        "23123:23129"^^xsd:string,
+        "23345:23349"^^xsd:string,
+        "23350:23356"^^xsd:string,
+        "23441:23445"^^xsd:string,
+        "23446:23452"^^xsd:string,
+        "23621:23625"^^xsd:string,
+        "23626:23632"^^xsd:string,
+        "23634:23638"^^xsd:string,
+        "23639:23645"^^xsd:string,
+        "23849:23853"^^xsd:string,
+        "23854:23860"^^xsd:string,
+        "23972:23976"^^xsd:string,
+        "23977:23983"^^xsd:string,
+        "24141:24145"^^xsd:string,
+        "24146:24152"^^xsd:string,
+        "24306:24310"^^xsd:string,
+        "24311:24317"^^xsd:string,
+        "24444:24448"^^xsd:string,
+        "24449:24455"^^xsd:string,
+        "24559:24563"^^xsd:string,
+        "24564:24570"^^xsd:string,
+        "24742:24746"^^xsd:string,
+        "24747:24753"^^xsd:string,
+        "2474:2479"^^xsd:string,
+        "24778:24783"^^xsd:string,
+        "2495:2499"^^xsd:string,
+        "24978:24982"^^xsd:string,
+        "24983:24989"^^xsd:string,
+        "2500:2506"^^xsd:string,
+        "25068:25072"^^xsd:string,
+        "25073:25079"^^xsd:string,
+        "25207:25212"^^xsd:string,
+        "25269:25274"^^xsd:string,
+        "25332:25336"^^xsd:string,
+        "25337:25343"^^xsd:string,
+        "25485:25489"^^xsd:string,
+        "25490:25496"^^xsd:string,
+        "25613:25617"^^xsd:string,
+        "25618:25624"^^xsd:string,
+        "25900:25904"^^xsd:string,
+        "25905:25911"^^xsd:string,
+        "2598:2602"^^xsd:string,
+        "2603:2609"^^xsd:string,
+        "26188:26192"^^xsd:string,
+        "26193:26199"^^xsd:string,
+        "26365:26369"^^xsd:string,
+        "26370:26376"^^xsd:string,
+        "26465:26469"^^xsd:string,
+        "26470:26476"^^xsd:string,
+        "2647:2652"^^xsd:string,
+        "26637:26641"^^xsd:string,
+        "26642:26648"^^xsd:string,
+        "26944:26948"^^xsd:string,
+        "26949:26955"^^xsd:string,
+        "27093:27097"^^xsd:string,
+        "27098:27104"^^xsd:string,
+        "27168:27172"^^xsd:string,
+        "27173:27179"^^xsd:string,
+        "2759:2763"^^xsd:string,
+        "2764:2770"^^xsd:string,
+        "2833:2837"^^xsd:string,
+        "2838:2844"^^xsd:string,
+        "28447:28451"^^xsd:string,
+        "28452:28458"^^xsd:string,
+        "28537:28542"^^xsd:string,
+        "28579:28583"^^xsd:string,
+        "28584:28590"^^xsd:string,
+        "28616:28621"^^xsd:string,
+        "28707:28712"^^xsd:string,
+        "28750:28754"^^xsd:string,
+        "28755:28761"^^xsd:string,
+        "28905:28910"^^xsd:string,
+        "3305:3309"^^xsd:string,
+        "3310:3316"^^xsd:string,
+        "3433:3438"^^xsd:string,
+        "3515:3519"^^xsd:string,
+        "3520:3526"^^xsd:string,
+        "3726:3730"^^xsd:string,
+        "3731:3737"^^xsd:string,
+        "3888:3892"^^xsd:string,
+        "4180:4184"^^xsd:string,
+        "4185:4191"^^xsd:string,
+        "4895:4899"^^xsd:string,
+        "4900:4906"^^xsd:string,
+        "4976:4980"^^xsd:string,
+        "4981:4987"^^xsd:string,
+        "5236:5240"^^xsd:string,
+        "5241:5247"^^xsd:string,
+        "5258:5262"^^xsd:string,
+        "5263:5269"^^xsd:string,
+        "5392:5396"^^xsd:string,
+        "5397:5403"^^xsd:string,
+        "5420:5424"^^xsd:string,
+        "5425:5431"^^xsd:string,
+        "573:578"^^xsd:string,
+        "5766:5770"^^xsd:string,
+        "5771:5777"^^xsd:string,
+        "5890:5894"^^xsd:string,
+        "5895:5901"^^xsd:string,
+        "602:606"^^xsd:string,
+        "607:613"^^xsd:string,
+        "6092:6096"^^xsd:string,
+        "6097:6103"^^xsd:string,
+        "6188:6192"^^xsd:string,
+        "6193:6199"^^xsd:string,
+        "6304:6308"^^xsd:string,
+        "6309:6315"^^xsd:string,
+        "6404:6408"^^xsd:string,
+        "6409:6415"^^xsd:string,
+        "6558:6562"^^xsd:string,
+        "6563:6569"^^xsd:string,
+        "6696:6701"^^xsd:string,
+        "694:698"^^xsd:string,
+        "699:705"^^xsd:string,
+        "7140:7145"^^xsd:string,
+        "7202:7207"^^xsd:string,
+        "7276:7280"^^xsd:string,
+        "7281:7287"^^xsd:string,
+        "7583:7587"^^xsd:string,
+        "7588:7594"^^xsd:string,
+        "7631:7635"^^xsd:string,
+        "7636:7642"^^xsd:string,
+        "7724:7729"^^xsd:string,
+        "7772:7776"^^xsd:string,
+        "7777:7783"^^xsd:string,
+        "801:806"^^xsd:string,
+        "8088:8092"^^xsd:string,
+        "8093:8099"^^xsd:string,
+        "8274:8278"^^xsd:string,
+        "8279:8285"^^xsd:string,
+        "8331:8335"^^xsd:string,
+        "8336:8342"^^xsd:string,
+        "8603:8607"^^xsd:string,
+        "8608:8614"^^xsd:string,
+        "8734:8738"^^xsd:string,
+        "8739:8745"^^xsd:string,
+        "8820:8824"^^xsd:string,
+        "8825:8831"^^xsd:string,
+        "8889:8893"^^xsd:string,
+        "8894:8900"^^xsd:string,
+        "915:919"^^xsd:string,
+        "920:926"^^xsd:string,
+        "9277:9281"^^xsd:string,
+        "9282:9288"^^xsd:string,
+        "9297:9302"^^xsd:string,
+        "9334:9338"^^xsd:string,
+        "9339:9345"^^xsd:string,
+        "9543:9547"^^xsd:string,
+        "9555:9561"^^xsd:string,
+        "9569:9573"^^xsd:string,
+        "9574:9580"^^xsd:string,
+        "9584:9588"^^xsd:string,
+        "9589:9595"^^xsd:string,
+        "9733:9738"^^xsd:string ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias"^^xsd:string,
+        "Juan Carlos I"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasBrother data:Juan_Carlos_I_of_Spain ;
+    :hasChild data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :hasDaughter data:Infanta_Cristina_of_Spain ;
+    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
+    :hasMother data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_XIII,
+        data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Infanta_Sofía_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:male ;
+    :hasSister data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz ;
+    :hasSon data:Felipe_VI_of_Spain ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Sofía_of_Spain ;
+    :isBloodrelationOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isFatherOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isParentOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain ;
+    :isSiblingOf data:Infanta_Margarita-_Duchess_of_Soria,
+        data:Infanta_Pilar-_Duchess_of_Badajoz,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSonOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isUncleOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain .
+

@@ -2,51 +2,34 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charles%2C_Prince_of_Wales a :Man,
+data:Michael_Claude_Hamilton_Bowes-Lyon a :Man,
         :Person ;
-    :hasRelation data:Louis_Mountbatten%2C_1st_Earl_Mountbatten_of_Burma .
+    :hasBirthYear 1893 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMarriageYear 1928 ;
+    :hasRelation data:Elizabeth_Margaret_Cator ;
+    :hasSister data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasSon data:Fergus_Bowes-Lyon ;
+    :isUncleOf data:Queen_Elizabeth_II ;
+    :knownAs "Mickie Bowes-Lyon"^^xsd:string .
 
-data:Lady_Amanda_Patricia_Victoria_Ellingworth a :Person,
+data:Claude_Bowes-Lyon a :Man,
+        :Person .
+
+data:Elizabeth_Margaret_Cator a :Person,
         :Woman ;
-    :alsoKnownAs "Amanda Patricia Victoria Knatchbull"^^xsd:string ;
-    :formerlyKnownAs "Amanda Knatchbull"^^xsd:string ;
-    :hasAncestor data:Louis_Mountbatten%2C_1st_Earl_Mountbatten_of_Burma,
-        data:Princess_Alice,
-        data:Queen_Victoria ;
-    :hasFather data:7th_Baron_Brabourne ;
-    :hasMarriageYear 1987 ;
-    :hasMother data:2nd_Countess_Mountbatten_of_Burma ;
-    :hasRelation data:Charles_Vincent_Ellingworth .
+    :hasFather data:John_Cator .
 
-data:2nd_Countess_Mountbatten_of_Burma a :Ancestor,
-        :Person,
-        :Woman .
-
-data:7th_Baron_Brabourne a :Ancestor,
-        :Man,
+data:Fergus_Bowes-Lyon a :Man,
         :Person .
 
-data:Charles_Vincent_Ellingworth a :Man,
+data:John_Cator a :Man,
         :Person .
-
-data:Prince_Philip%2C_Duke_of_Edinburgh a :Man,
-        :Person .
-
-data:Princess_Alice a :Ancestor,
-        :Person,
-        :Woman ;
-    :isChildOf data:Queen_Victoria .
 
 data:Queen_Elizabeth_II a :Person,
         :Woman .
 
-data:Louis_Mountbatten%2C_1st_Earl_Mountbatten_of_Burma a :Ancestor,
-        :Man,
-        :Person ;
-    :hasRelation data:Prince_Philip%2C_Duke_of_Edinburgh,
-        data:Queen_Elizabeth_II .
-
-data:Queen_Victoria a :Ancestor,
-        :Person,
+data:Queen_Elizabeth_The_Queen_Mother a :Person,
         :Woman .
 

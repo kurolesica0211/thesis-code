@@ -69,38 +69,33 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Maria di Grazia of Bourbon-Two Sicilies (12 August 1878 – 20 June 1973) was a Princess of Bourbon-Two Sicilies by birth as well as Princess Imperial of Brazil and Princess of Orleans-Braganza through her marriage to Prince Luiz of Orléans-Braganza, secondborn son and pretense heir of Isabel, Princess Imperial of Brazil.
+James Alexander Elphinstone, 18th Lord Elphinstone and 4th Baron Elphinstone, AssocRICS (22 April 1953 – 19 December 1994), was a British nobleman, farmer, and financier.
 Early life and family
 
-Princess Maria was born at their parents' Villa Maria Teresa in Cannes, where her family had been exiled since the 1861 due to the Italian Unification.
-She was the sixth child and third daughter of Prince Alfonso, Count of Caserta and his wife Princess Antonietta of Bourbon-Two Sicilies.
-She was usually called “Maria Pia”.
-Her father, the third son of King Ferdinand II of the Two Sicilies, became Head of the Royal House of the Two Sicilies with the death of his elder brother, King Francis II, in 1894.
-Maria di Grazia was baptized and had Robert I, Duke of Parma, and his first wife, Princess Maria Pia of the Two Sicilies, as godparents.
-Maria di Grazia and her sisters were educated at the College of the Sacred Heart of Aix-Provence, an institution run by nuns near Cannes.
-There, Maria di Grazia spent her childhood and, after finishing her studies, her youth.
-In one of the visits of the Emperor Pedro II of Brazil to Cannes, he visited the Villa Maria Teresa.
-The Count of Caserta gathered all his children to present them to the monarch, and Maria di Grazia, at the age of ten, had to play "Turkish March" by Mozart, on the piano.
-Upon turning 18, Maria di Grazia was taken with her sisters to be presented to the court of Emperor Franz Joseph I of Austria.
-After Austria, the princesses were taken to Munich, where they were given a gala lunch by Luitpold, Prince Regent of Bavaria.
-Marriage and issue
+Lord Elphinstone was the son of Rev. Hon.
+Andrew Charles Victor Elphinstone and Jean Frances Hambro.
+His paternal grandparents were Sidney Buller-Fullerton-Elphinstone, 16th Lord Elphinstone, and the former Lady Mary Bowes-Lyon, elder sister of Queen Elizabeth The Queen Mother.
+Personal life
 
-Princess Maria di Grazia met her future fiancé when they were still young, when Luiz eventually arrived in Europe due to the exile imposed by the proclamation of the republic in Brazil in 1889.
-They later reconnected in 1903 when Prince Luiz, then serving in the Austrian Army, was visiting several relatives in France.
-On 4 November 1908 Princess Maria di Grazia married Prince Luiz Maria of Orléans-Braganza, son of Prince Gaston of Orléans, Count of Eu and Isabel, Princess Imperial of Brazil, in Cannes.
-Later life
+On 22 April 1978, Lord Elphinstone married Willa Mary Gabrielle Chetwode, daughter of Major George David Chetwode and Lady Willa Elliot-Murray-Kynynmound (herself the daughter of Victor Elliot-Murray-Kynynmound, 5th Earl of Minto, and his wife, Marion Cook).
+The couple had four children:
 
-Prince Luiz died in 1920 leaving Maria a widow for the remainder of her life.
-In 1922, Maria accompanied the Brazilian Imperial Family to Brazil for the country's centennial celebrations of its independence.
-During the course of the trip, the Count of Eu died while recumbent upon her shoulder.
-After that, Princess Maria preferred to live with her children in France, where they could have a better education.
-}} Media related to Princess Maria di Grazia of the Two Sicilies at Wikimedia Commons
+
+He was succeeded in his titles by his eldest son, Alexander.
+References
+
+
+
+
+This biography of a Lord of Parliament in the Peerage of Scotland is a stub.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -116,39 +111,9 @@ After that, Princess Maria preferred to live with her children in France, where 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -163,6 +128,23 @@ After that, Princess Maria preferred to live with her children in France, where 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -180,6 +162,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -247,29 +244,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -278,6 +267,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -290,6 +287,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -298,17 +297,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -336,6 +337,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -351,156 +436,197 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b2159f00-b994-4b42-81fb-15e56b9fc410)
- Call ID: b2159f00-b994-4b42-81fb-15e56b9fc410
+  AssignClass (01827ac4-c88d-4f0e-a755-5ffd3dac081b)
+ Call ID: 01827ac4-c88d-4f0e-a755-5ffd3dac081b
   Args:
-    type: :Woman
-    source: Maria_di_Grazia
-  AssignClass (353ced2a-719c-4e34-aed3-0590d3fc3adf)
- Call ID: 353ced2a-719c-4e34-aed3-0590d3fc3adf
+    source: James_Alexander_Elphinstone
+    type: :Man
+  AssignClass (af057d62-824f-4169-be00-811a3d18c9fa)
+ Call ID: af057d62-824f-4169-be00-811a3d18c9fa
   Args:
-    source: Maria_di_Grazia
+    source: James_Alexander_Elphinstone
     type: :Person
-  AddLiteral (9771e86f-5273-4608-85ce-9c64a44617ff)
- Call ID: 9771e86f-5273-4608-85ce-9c64a44617ff
+  AddLiteral (8431eddc-4ff0-4698-9c4d-fe55e9ccb44d)
+ Call ID: 8431eddc-4ff0-4698-9c4d-fe55e9ccb44d
   Args:
-    source: Maria_di_Grazia
-    literal_type: xsd:string
-    literal_value: Maria Pia
-    relation: :knownAs
-  AddLiteral (284d309f-1f32-4714-ac73-41ec5314a8b2)
- Call ID: 284d309f-1f32-4714-ac73-41ec5314a8b2
-  Args:
+    literal_value: 1953
     relation: :hasBirthYear
     literal_type: xsd:integer
-    literal_value: 1878
-    source: Maria_di_Grazia
-  AddLiteral (aaabc1c5-526d-4e85-9018-dd246a510330)
- Call ID: aaabc1c5-526d-4e85-9018-dd246a510330
+    source: James_Alexander_Elphinstone
+  AddLiteral (f988cc73-8f43-40eb-97d4-23a112ccc445)
+ Call ID: f988cc73-8f43-40eb-97d4-23a112ccc445
   Args:
-    source: Maria_di_Grazia
     literal_type: xsd:integer
-    literal_value: 1973
+    source: James_Alexander_Elphinstone
     relation: :hasDeathYear
-  AssignClass (9d796e70-f244-455a-a5e4-90512f0fe2ca)
- Call ID: 9d796e70-f244-455a-a5e4-90512f0fe2ca
+    literal_value: 1994
+  AssignClass (6c5a6fd0-23af-40af-9cfd-d62c77f0096d)
+ Call ID: 6c5a6fd0-23af-40af-9cfd-d62c77f0096d
   Args:
+    source: Andrew_Charles_Victor_Elphinstone
     type: :Man
-    source: Alfonso_Count_of_Caserta
-  AssignClass (fd2d3e5d-b9a0-49be-96e1-f5d735cf64d4)
- Call ID: fd2d3e5d-b9a0-49be-96e1-f5d735cf64d4
+  AssignClass (70b7303f-e159-433c-9d5e-49725fa9560a)
+ Call ID: 70b7303f-e159-433c-9d5e-49725fa9560a
   Args:
-    source: Alfonso_Count_of_Caserta
+    source: Andrew_Charles_Victor_Elphinstone
     type: :Person
-  AssignClass (20502a9e-6d95-422e-bea1-e571eddf7873)
- Call ID: 20502a9e-6d95-422e-bea1-e571eddf7873
+  AssignClass (9957bcbf-db40-4212-9c16-f840c8010319)
+ Call ID: 9957bcbf-db40-4212-9c16-f840c8010319
   Args:
+    source: Jean_Frances_Hambro
     type: :Woman
-    source: Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (4bd68c15-db05-4251-966b-7f7e4b39e20b)
- Call ID: 4bd68c15-db05-4251-966b-7f7e4b39e20b
+  AssignClass (3093418b-1575-4a9a-882e-6a160326c1fb)
+ Call ID: 3093418b-1575-4a9a-882e-6a160326c1fb
   Args:
-    source: Antonietta_of_Bourbon-Two_Sicilies
+    source: Jean_Frances_Hambro
     type: :Person
-  AddTriple (8db988df-3b99-4780-ac5e-de26075de2eb)
- Call ID: 8db988df-3b99-4780-ac5e-de26075de2eb
+  AddTriple (1330a28e-1f50-4188-81f9-a9f38e59637f)
+ Call ID: 1330a28e-1f50-4188-81f9-a9f38e59637f
   Args:
-    source: Maria_di_Grazia
-    target: Alfonso_Count_of_Caserta
     relation: :hasFather
-  AddTriple (87ff07ce-dcc5-4e90-bd6a-873c6814d8b8)
- Call ID: 87ff07ce-dcc5-4e90-bd6a-873c6814d8b8
+    target: Andrew_Charles_Victor_Elphinstone
+    source: James_Alexander_Elphinstone
+  AddTriple (77597d44-2187-4ef9-b1a2-0ccd2b0b24cd)
+ Call ID: 77597d44-2187-4ef9-b1a2-0ccd2b0b24cd
   Args:
+    source: James_Alexander_Elphinstone
     relation: :hasMother
-    source: Maria_di_Grazia
-    target: Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (2d61580d-6ca3-4e6f-bf3c-c110921e14d8)
- Call ID: 2d61580d-6ca3-4e6f-bf3c-c110921e14d8
+    target: Jean_Frances_Hambro
+  AssignClass (58f24776-c964-4d9a-8898-afe302afbaf8)
+ Call ID: 58f24776-c964-4d9a-8898-afe302afbaf8
   Args:
-    source: Luiz_Maria_of_Orléans-Braganza
+    source: Sidney_Buller-Fullerton-Elphinstone
     type: :Man
-  AssignClass (90f61adb-6c50-4953-9c6b-9b6749045410)
- Call ID: 90f61adb-6c50-4953-9c6b-9b6749045410
+  AssignClass (ee86cbb7-cc03-4f60-a5b2-86cc7f81e930)
+ Call ID: ee86cbb7-cc03-4f60-a5b2-86cc7f81e930
   Args:
-    source: Luiz_Maria_of_Orléans-Braganza
+    source: Sidney_Buller-Fullerton-Elphinstone
     type: :Person
-  AddTriple (6bb725f0-614a-4fd0-b5a4-df93f6682f46)
- Call ID: 6bb725f0-614a-4fd0-b5a4-df93f6682f46
+  AssignClass (b95837e5-1c90-4418-81bd-38742af85d8e)
+ Call ID: b95837e5-1c90-4418-81bd-38742af85d8e
   Args:
-    source: Maria_di_Grazia
-    target: Luiz_Maria_of_Orléans-Braganza
-    relation: :hasRelation
-  AddLiteral (5356337f-4c2b-4cbe-bde2-42b743ab9cfd)
- Call ID: 5356337f-4c2b-4cbe-bde2-42b743ab9cfd
+    source: Mary_Bowes-Lyon
+    type: :Woman
+  AssignClass (a1e34963-1ffd-4685-b0b4-03be52fbe852)
+ Call ID: a1e34963-1ffd-4685-b0b4-03be52fbe852
+  Args:
+    source: Mary_Bowes-Lyon
+    type: :Person
+  AddTriple (207c415e-cc2f-487e-a468-5e9f56470e32)
+ Call ID: 207c415e-cc2f-487e-a468-5e9f56470e32
+  Args:
+    source: Andrew_Charles_Victor_Elphinstone
+    relation: :hasFather
+    target: Sidney_Buller-Fullerton-Elphinstone
+  AddTriple (88103e7c-59a7-4afe-9bba-71eacd9820c1)
+ Call ID: 88103e7c-59a7-4afe-9bba-71eacd9820c1
+  Args:
+    source: Andrew_Charles_Victor_Elphinstone
+    target: Mary_Bowes-Lyon
+    relation: :hasMother
+  AssignClass (db7e0e95-d1a6-41d3-91c4-f4280381e4de)
+ Call ID: db7e0e95-d1a6-41d3-91c4-f4280381e4de
+  Args:
+    source: Willa_Mary_Gabrielle_Chetwode
+    type: :Woman
+  AssignClass (e1b787a5-d3e0-48c0-8635-c3fa9a18f481)
+ Call ID: e1b787a5-d3e0-48c0-8635-c3fa9a18f481
+  Args:
+    source: Willa_Mary_Gabrielle_Chetwode
+    type: :Person
+  AddLiteral (fc04372a-d56b-4708-9e27-d5a1ccc436b4)
+ Call ID: fc04372a-d56b-4708-9e27-d5a1ccc436b4
   Args:
     relation: :hasMarriageYear
-    literal_value: 1908
+    literal_value: 1978
     literal_type: xsd:integer
-    source: Maria_di_Grazia
-  AssignClass (871a508d-cb4a-4012-b6e3-f55198d7aa48)
- Call ID: 871a508d-cb4a-4012-b6e3-f55198d7aa48
+    source: James_Alexander_Elphinstone
+  AddTriple (4cbe8673-390e-4806-812b-021a6a381dc1)
+ Call ID: 4cbe8673-390e-4806-812b-021a6a381dc1
   Args:
+    source: James_Alexander_Elphinstone
+    relation: :hasRelation
+    target: Willa_Mary_Gabrielle_Chetwode
+  AssignClass (4fbc5be3-97c8-42d2-91c3-3b97be1a22aa)
+ Call ID: 4fbc5be3-97c8-42d2-91c3-3b97be1a22aa
+  Args:
+    source: George_David_Chetwode
     type: :Man
-    source: Gaston_of_Orléans_Count_of_Eu
-  AssignClass (753468da-a13e-4cfb-855a-1b0ef7ebcd73)
- Call ID: 753468da-a13e-4cfb-855a-1b0ef7ebcd73
+  AssignClass (5a4d2aa8-31ec-430a-9c82-1ccebb9a5978)
+ Call ID: 5a4d2aa8-31ec-430a-9c82-1ccebb9a5978
   Args:
+    source: George_David_Chetwode
     type: :Person
-    source: Gaston_of_Orléans_Count_of_Eu
-  AssignClass (26a7bb8f-7a10-4051-afcf-f3620ce125b9)
- Call ID: 26a7bb8f-7a10-4051-afcf-f3620ce125b9
+  AssignClass (022bade9-4c3a-4bf7-945a-14289f0e2638)
+ Call ID: 022bade9-4c3a-4bf7-945a-14289f0e2638
   Args:
+    source: Willa_Elliot-Murray-Kynynmound
     type: :Woman
-    source: Isabel_Princess_Imperial_of_Brazil
-  AssignClass (20bb4a32-725e-4a12-aabc-59264d18c818)
- Call ID: 20bb4a32-725e-4a12-aabc-59264d18c818
+  AssignClass (7addcb5d-6a7e-4cc7-8cb5-32dde7662439)
+ Call ID: 7addcb5d-6a7e-4cc7-8cb5-32dde7662439
   Args:
-    source: Isabel_Princess_Imperial_of_Brazil
+    source: Willa_Elliot-Murray-Kynynmound
     type: :Person
-  AddTriple (5f9c5e6f-5d36-4397-9adf-a97ddeaf0ec9)
- Call ID: 5f9c5e6f-5d36-4397-9adf-a97ddeaf0ec9
+  AddTriple (4aa63b8f-bbdf-422f-b6dc-9ee318f4f7c2)
+ Call ID: 4aa63b8f-bbdf-422f-b6dc-9ee318f4f7c2
   Args:
+    target: George_David_Chetwode
     relation: :hasFather
-    target: Gaston_of_Orléans_Count_of_Eu
-    source: Luiz_Maria_of_Orléans-Braganza
-  AddTriple (3df13666-2af6-4ef6-95d0-2371cbf18ec8)
- Call ID: 3df13666-2af6-4ef6-95d0-2371cbf18ec8
+    source: Willa_Mary_Gabrielle_Chetwode
+  AddTriple (6b8d5311-8d55-4b34-a843-567967c28471)
+ Call ID: 6b8d5311-8d55-4b34-a843-567967c28471
   Args:
+    source: Willa_Mary_Gabrielle_Chetwode
+    target: Willa_Elliot-Murray-Kynynmound
     relation: :hasMother
-    source: Luiz_Maria_of_Orléans-Braganza
-    target: Isabel_Princess_Imperial_of_Brazil
-  AssignClass (ce6b5708-75a9-403a-8612-cc97ae8dba07)
- Call ID: ce6b5708-75a9-403a-8612-cc97ae8dba07
+  AssignClass (d2296431-3f93-42dc-b809-29664a5e21ae)
+ Call ID: d2296431-3f93-42dc-b809-29664a5e21ae
   Args:
-    source: Ferdinand_II_of_the_Two_Sicilies
+    source: Victor_Elliot-Murray-Kynynmound
     type: :Man
-  AssignClass (4d3fa389-6c0f-42d3-aef1-6b1c98f00bd9)
- Call ID: 4d3fa389-6c0f-42d3-aef1-6b1c98f00bd9
+  AssignClass (fe953873-7263-4f56-9ef3-8ca5dd6d9da7)
+ Call ID: fe953873-7263-4f56-9ef3-8ca5dd6d9da7
   Args:
+    source: Victor_Elliot-Murray-Kynynmound
     type: :Person
-    source: Ferdinand_II_of_the_Two_Sicilies
-  AddTriple (1ef1738f-6820-4ed7-a431-1f4cfb89e42a)
- Call ID: 1ef1738f-6820-4ed7-a431-1f4cfb89e42a
+  AssignClass (b22f1ea1-c845-41d0-87b7-fb79189f1ada)
+ Call ID: b22f1ea1-c845-41d0-87b7-fb79189f1ada
   Args:
+    source: Marion_Cook
+    type: :Woman
+  AssignClass (66ee04e2-5996-4fe1-8934-91c7efedc416)
+ Call ID: 66ee04e2-5996-4fe1-8934-91c7efedc416
+  Args:
+    source: Marion_Cook
+    type: :Person
+  AddTriple (c348e363-57dc-492f-bea2-15c65c3abe93)
+ Call ID: c348e363-57dc-492f-bea2-15c65c3abe93
+  Args:
+    target: Victor_Elliot-Murray-Kynynmound
     relation: :hasFather
-    source: Alfonso_Count_of_Caserta
-    target: Ferdinand_II_of_the_Two_Sicilies
-  AssignClass (2a24c82b-52e7-4f2f-97d0-21d0ebde6664)
- Call ID: 2a24c82b-52e7-4f2f-97d0-21d0ebde6664
+    source: Willa_Elliot-Murray-Kynynmound
+  AddTriple (43d68162-65b1-4874-b90b-2e01dc6b92ed)
+ Call ID: 43d68162-65b1-4874-b90b-2e01dc6b92ed
   Args:
+    source: Willa_Elliot-Murray-Kynynmound
+    target: Marion_Cook
+    relation: :hasMother
+  AssignClass (43df8d54-f6ed-4de4-8513-4fada2fb02f9)
+ Call ID: 43df8d54-f6ed-4de4-8513-4fada2fb02f9
+  Args:
+    source: Alexander_Elphinstone
     type: :Man
-    source: Francis_II_of_the_Two_Sicilies
-  AssignClass (b393c9b5-a1b3-4a45-bd89-c37d43761c06)
- Call ID: b393c9b5-a1b3-4a45-bd89-c37d43761c06
+  AssignClass (6162cc15-23cc-4003-9331-6043f526ab84)
+ Call ID: 6162cc15-23cc-4003-9331-6043f526ab84
   Args:
+    source: Alexander_Elphinstone
     type: :Person
-    source: Francis_II_of_the_Two_Sicilies
-  AddTriple (76608c7a-39b8-4645-a0f1-2c83abbd4052)
- Call ID: 76608c7a-39b8-4645-a0f1-2c83abbd4052
+  AddTriple (113d9f17-b22e-4a32-a5f0-05237e8d1869)
+ Call ID: 113d9f17-b22e-4a32-a5f0-05237e8d1869
   Args:
-    relation: :hasBrother
-    source: Alfonso_Count_of_Caserta
-    target: Francis_II_of_the_Two_Sicilies
-  Finish (e66ae371-3c7d-48a5-bb09-1278664320dc)
- Call ID: e66ae371-3c7d-48a5-bb09-1278664320dc
+    relation: :hasSon
+    target: Alexander_Elphinstone
+    source: James_Alexander_Elphinstone
+  Finish (82155b38-abb9-471c-8454-991afef57415)
+ Call ID: 82155b38-abb9-471c-8454-991afef57415
   Args:

@@ -69,21 +69,30 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Wilhelm Karl Adalbert Erich Detloff Prinz von Preussen (30 January 1922 in Potsdam – 9 April 2007 in Holzminden) was the third son of Prince Oskar of Prussia, and the last surviving grandson of Wilhelm II, the last German Emperor.
-Biography
+Eleonore von Habsburg-Lothringen (Eleonore Maria del Pilar Iona Christina Jelena; born 28 February 1994) is an Austrian jewellery designer, gemologist, and model.
+She is the daughter of Karl von Habsburg, the head of the House of Habsburg-Lorraine.
+Early life and background
 
-Wilhelm-Karl was the youngest of Prince Oskar of Prussia and Countess Ina Marie von Bassewitz's four children.
-Wilhelm-Karl worked tirelessly to keep the Order intact during the Cold War and helped to reunite its membership after the fall of East Germany.
-Amongst other orders and awards, Wilhelm-Karl received the Grand Merit Cross (with star) of the Order of Merit of the Federal Republic of Germany and the Grand Cross of the Order pro merito Melitensi of the Sovereign Military Order of Malta.
-Marriage and issue
+Eleonore Habsburg-Lorraine was born in 1994 in Salzburg to Karl von Habsburg, a politician and head of the House of Habsburg-Lorraine, and Francesca von Thyssen-Bornemisza de Kászon et Impérfalva, an art collector and by birth member of the Thyssen-Bornemisza family.
+Her paternal grandparents were Otto, Crown Prince of Austria and Princess Regina of Saxe-Meiningen.
+Her paternal great-grandparents Charles I of Austria and Zita of Bourbon-Parma were the last Emperor and Empress of Austria.
+Her brother is racing car driver Ferdinand Habsburg.
+Education and career
 
-In 1952, Wilhelm-Karl married Armgard Else Helene von Veltheim (17 February 1926 - 1 November 2019), daughter of Friedrich von Veltheim (1881–1955) and his wife, Ottonie von Alvensleben (1883–1960).
+Habsburg-Lorraine attended boarding school in Gstaad before studying law at the European Business School London.
+Habsburg has also worked as a fashion model, being featured in advertisement campaigns and walking the runway for Dolce & Gabbana.
+Personal life
+
+On 20 July 2020, Eleonore von Habsburg-Lorraine married Belgian race car driver Jérôme d'Ambrosio in a small civil ceremony at the Civil Registry of Monaco, conducted by the Mayor of Monaco Georges Marsan.
+On 20 October 2021 she gave birth to a son, Otto d'Ambrosio, named after her grandfather Otto von Habsburg.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -99,39 +108,9 @@ In 1952, Wilhelm-Karl married Armgard Else Helene von Veltheim (17 February 1926
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -146,6 +125,23 @@ In 1952, Wilhelm-Karl married Armgard Else Helene von Veltheim (17 February 1926
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -163,6 +159,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -230,29 +241,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,6 +264,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -273,6 +284,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -281,17 +294,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -319,6 +334,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -334,129 +433,186 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b0e09aa0-146e-419a-a569-524a803106de)
- Call ID: b0e09aa0-146e-419a-a569-524a803106de
-  Args:
-    source: Wilhelm-Karl_von_Preussen
-    type: :Man
-  AssignClass (a672cb4a-b6c8-4a11-882c-3ae1bd29c03a)
- Call ID: a672cb4a-b6c8-4a11-882c-3ae1bd29c03a
-  Args:
-    type: :Man
-    source: Prince_Oskar_of_Prussia
-  AssignClass (aa5121f0-d0ab-4d5e-923b-9faca85224ba)
- Call ID: aa5121f0-d0ab-4d5e-923b-9faca85224ba
-  Args:
-    source: Ina_Marie_von_Bassewitz
-    type: :Woman
-  AssignClass (57d8f640-cc0b-45a7-9055-87585462336e)
- Call ID: 57d8f640-cc0b-45a7-9055-87585462336e
+  AssignClass (e61f1ae1-c7aa-4a49-82ad-44a5d977feb1)
+ Call ID: e61f1ae1-c7aa-4a49-82ad-44a5d977feb1
   Args:
     type: :Woman
-    source: Armgard_Else_Helene_von_Veltheim
-  AssignClass (63db5aef-8e38-4342-b4b4-e6da2aadb532)
- Call ID: 63db5aef-8e38-4342-b4b4-e6da2aadb532
+    source: Eleonore_von_Habsburg-Lothringen
+  AssignClass (c6c77583-5894-4066-a205-6f0f0e708582)
+ Call ID: c6c77583-5894-4066-a205-6f0f0e708582
   Args:
-    type: :Man
-    source: Friedrich_von_Veltheim
-  AssignClass (1b7f21ae-e85a-4c2e-8d62-146e950a21d6)
- Call ID: 1b7f21ae-e85a-4c2e-8d62-146e950a21d6
+    source: Eleonore_von_Habsburg-Lothringen
+    type: :Person
+  AddLiteral (56df32e0-7993-40c2-b638-a2db5b6cb615)
+ Call ID: 56df32e0-7993-40c2-b638-a2db5b6cb615
   Args:
-    source: Ottonie_von_Alvensleben
-    type: :Woman
-  AddLiteral (e065699f-0bea-4dd8-9a7f-a22039fad5b6)
- Call ID: e065699f-0bea-4dd8-9a7f-a22039fad5b6
-  Args:
-    literal_type: xsd:string
-    literal_value: 1922
-    source: Wilhelm-Karl_von_Preussen
+    literal_type: xsd:integer
+    literal_value: 1994
+    source: Eleonore_von_Habsburg-Lothringen
     relation: :hasBirthYear
-  AddLiteral (4657a88d-601d-4bc8-b101-ad257d76bc7a)
- Call ID: 4657a88d-601d-4bc8-b101-ad257d76bc7a
+  AssignClass (ad5a610b-63b1-4518-a5c0-3c8d5c2b5c48)
+ Call ID: ad5a610b-63b1-4518-a5c0-3c8d5c2b5c48
   Args:
-    literal_type: xsd:string
-    source: Wilhelm-Karl_von_Preussen
-    relation: :hasDeathYear
-    literal_value: 2007
-  AddTriple (5f94828f-51e5-4d8c-9971-2c4a2dbcb1d3)
- Call ID: 5f94828f-51e5-4d8c-9971-2c4a2dbcb1d3
+    source: Karl_von_Habsburg
+    type: :Man
+  AssignClass (dbbb4382-13c9-4d78-a9f0-e36aa3091081)
+ Call ID: dbbb4382-13c9-4d78-a9f0-e36aa3091081
   Args:
-    target: Prince_Oskar_of_Prussia
+    type: :Person
+    source: Karl_von_Habsburg
+  AddTriple (97ca66b8-8842-41bb-80da-1ded6f289e82)
+ Call ID: 97ca66b8-8842-41bb-80da-1ded6f289e82
+  Args:
+    source: Eleonore_von_Habsburg-Lothringen
     relation: :hasFather
-    source: Wilhelm-Karl_von_Preussen
-  AddTriple (7f94fbaa-3f71-428c-b3c9-746b24bd7918)
- Call ID: 7f94fbaa-3f71-428c-b3c9-746b24bd7918
+    target: Karl_von_Habsburg
+  AssignClass (432b8798-0f45-41a6-b696-b3e166538d8f)
+ Call ID: 432b8798-0f45-41a6-b696-b3e166538d8f
   Args:
-    source: Wilhelm-Karl_von_Preussen
+    source: Francesca_von_Thyssen-Bornemisza
+    type: :Woman
+  AssignClass (850c232f-74c6-4584-98e6-e76fc581f077)
+ Call ID: 850c232f-74c6-4584-98e6-e76fc581f077
+  Args:
+    type: :Person
+    source: Francesca_von_Thyssen-Bornemisza
+  AddTriple (31e961ee-67b0-481b-96b7-e214a5d2ea15)
+ Call ID: 31e961ee-67b0-481b-96b7-e214a5d2ea15
+  Args:
+    source: Eleonore_von_Habsburg-Lothringen
     relation: :hasMother
-    target: Ina_Marie_von_Bassewitz
-  AddLiteral (2743a3e2-cda7-443c-ac16-e8f35009b659)
- Call ID: 2743a3e2-cda7-443c-ac16-e8f35009b659
+    target: Francesca_von_Thyssen-Bornemisza
+  AssignClass (d00e378c-9e50-4a74-9ea6-6e5b136d47e5)
+ Call ID: d00e378c-9e50-4a74-9ea6-6e5b136d47e5
   Args:
-    source: Wilhelm-Karl_von_Preussen
+    source: Otto_von_Habsburg
+    type: :Man
+  AssignClass (3ccbbda7-2df5-453a-8b14-a55b473f9bfd)
+ Call ID: 3ccbbda7-2df5-453a-8b14-a55b473f9bfd
+  Args:
+    type: :Person
+    source: Otto_von_Habsburg
+  AssignClass (febc297a-12f8-4ecb-af7c-d70651a1e9bc)
+ Call ID: febc297a-12f8-4ecb-af7c-d70651a1e9bc
+  Args:
+    source: Regina_von_Saxe-Meiningen
+    type: :Woman
+  AssignClass (d437f963-a155-4434-a449-b2075cef5c1c)
+ Call ID: d437f963-a155-4434-a449-b2075cef5c1c
+  Args:
+    type: :Person
+    source: Regina_von_Saxe-Meiningen
+  AddTriple (558e21c8-e5d7-4280-bb4f-94f003cba642)
+ Call ID: 558e21c8-e5d7-4280-bb4f-94f003cba642
+  Args:
+    target: Otto_von_Habsburg
+    relation: :hasFather
+    source: Karl_von_Habsburg
+  AddTriple (ca9c6920-3919-42b8-8fac-212f1f535d06)
+ Call ID: ca9c6920-3919-42b8-8fac-212f1f535d06
+  Args:
+    source: Karl_von_Habsburg
+    relation: :hasMother
+    target: Regina_von_Saxe-Meiningen
+  AssignClass (cc26b02f-1de5-499b-a4dc-2866f0d8d158)
+ Call ID: cc26b02f-1de5-499b-a4dc-2866f0d8d158
+  Args:
+    type: :Man
+    source: Charles_I_of_Austria
+  AssignClass (1aac8e9a-ac44-4ceb-926c-5b1accddbdc8)
+ Call ID: 1aac8e9a-ac44-4ceb-926c-5b1accddbdc8
+  Args:
+    source: Charles_I_of_Austria
+    type: :Person
+  AssignClass (035d590c-15a1-4fd0-97ca-740e85b5b6ca)
+ Call ID: 035d590c-15a1-4fd0-97ca-740e85b5b6ca
+  Args:
+    type: :Woman
+    source: Zita_of_Bourbon-Parma
+  AssignClass (972bf602-6b90-4b85-8844-f663ce57d9d7)
+ Call ID: 972bf602-6b90-4b85-8844-f663ce57d9d7
+  Args:
+    source: Zita_of_Bourbon-Parma
+    type: :Person
+  AddTriple (e7680e5b-bd86-4c55-a989-d322be5cc04e)
+ Call ID: e7680e5b-bd86-4c55-a989-d322be5cc04e
+  Args:
+    target: Charles_I_of_Austria
+    source: Otto_von_Habsburg
+    relation: :hasFather
+  AddTriple (17721777-b2dc-4807-82c8-0fefa9250c70)
+ Call ID: 17721777-b2dc-4807-82c8-0fefa9250c70
+  Args:
+    relation: :hasMother
+    source: Otto_von_Habsburg
+    target: Zita_of_Bourbon-Parma
+  AssignClass (1d635af2-de61-4aae-b401-816a2cf6c68f)
+ Call ID: 1d635af2-de61-4aae-b401-816a2cf6c68f
+  Args:
+    source: Ferdinand_Habsburg
+    type: :Man
+  AssignClass (285f2c61-61ad-406d-ac94-bf48783d38b2)
+ Call ID: 285f2c61-61ad-406d-ac94-bf48783d38b2
+  Args:
+    type: :Person
+    source: Ferdinand_Habsburg
+  AddTriple (a9daab62-86c8-4527-984e-32fe21dd2c65)
+ Call ID: a9daab62-86c8-4527-984e-32fe21dd2c65
+  Args:
+    target: Karl_von_Habsburg
+    relation: :hasFather
+    source: Ferdinand_Habsburg
+  AddTriple (c3fdc470-6c4d-416f-9f5b-a94113d6ac30)
+ Call ID: c3fdc470-6c4d-416f-9f5b-a94113d6ac30
+  Args:
+    target: Francesca_von_Thyssen-Bornemisza
+    relation: :hasMother
+    source: Ferdinand_Habsburg
+  AssignClass (83a36800-a477-4ecb-876f-8499156da07a)
+ Call ID: 83a36800-a477-4ecb-876f-8499156da07a
+  Args:
+    source: Jerome_d_Ambrosio
+    type: :Man
+  AssignClass (3c33a1c9-c747-4564-8549-855532451cb5)
+ Call ID: 3c33a1c9-c747-4564-8549-855532451cb5
+  Args:
+    source: Jerome_d_Ambrosio
+    type: :Person
+  AddLiteral (7bcc59d0-fde5-4ee2-b10e-4ee93ccb5347)
+ Call ID: 7bcc59d0-fde5-4ee2-b10e-4ee93ccb5347
+  Args:
+    literal_value: 2020
+    literal_type: xsd:integer
+    source: Eleonore_von_Habsburg-Lothringen
     relation: :hasMarriageYear
-    literal_value: 1952
-    literal_type: xsd:string
-  AddTriple (4fcc415b-53a6-48b2-8602-49f7ed314b50)
- Call ID: 4fcc415b-53a6-48b2-8602-49f7ed314b50
+  AddTriple (88caa367-8dcd-45e9-b800-c7d625e2f545)
+ Call ID: 88caa367-8dcd-45e9-b800-c7d625e2f545
   Args:
-    target: Armgard_Else_Helene_von_Veltheim
+    target: Jerome_d_Ambrosio
     relation: :hasRelation
-    source: Wilhelm-Karl_von_Preussen
-  AddLiteral (b983c078-961e-4f80-b379-43d642d8b475)
- Call ID: b983c078-961e-4f80-b379-43d642d8b475
+    source: Eleonore_von_Habsburg-Lothringen
+  AssignClass (bd669deb-9722-415d-b482-3116ddf4b3c2)
+ Call ID: bd669deb-9722-415d-b482-3116ddf4b3c2
   Args:
-    literal_type: xsd:string
-    source: Armgard_Else_Helene_von_Veltheim
-    relation: :hasBirthYear
-    literal_value: 1926
-  AddLiteral (8bfb6d05-3b51-4aaf-af64-f75944f14126)
- Call ID: 8bfb6d05-3b51-4aaf-af64-f75944f14126
+    type: :Man
+    source: Otto_d_Ambrosio
+  AssignClass (830775e9-e8d3-4e37-a1dd-f715790e76d7)
+ Call ID: 830775e9-e8d3-4e37-a1dd-f715790e76d7
   Args:
-    literal_type: xsd:string
-    literal_value: 2019
-    source: Armgard_Else_Helene_von_Veltheim
-    relation: :hasDeathYear
-  AddTriple (6ac0dd89-5b47-4c90-a7f2-a5518a01e823)
- Call ID: 6ac0dd89-5b47-4c90-a7f2-a5518a01e823
+    source: Otto_d_Ambrosio
+    type: :Person
+  AddTriple (fcafd648-6491-46c6-be33-bc918476bb8c)
+ Call ID: fcafd648-6491-46c6-be33-bc918476bb8c
   Args:
-    source: Armgard_Else_Helene_von_Veltheim
     relation: :hasFather
-    target: Friedrich_von_Veltheim
-  AddTriple (6c2792bc-3dd8-4987-9718-b035f4ee1ccf)
- Call ID: 6c2792bc-3dd8-4987-9718-b035f4ee1ccf
+    source: Otto_d_Ambrosio
+    target: Jerome_d_Ambrosio
+  AddTriple (dc8eaf15-b7d2-4beb-a237-d480a3923e39)
+ Call ID: dc8eaf15-b7d2-4beb-a237-d480a3923e39
   Args:
-    target: Ottonie_von_Alvensleben
+    target: Eleonore_von_Habsburg-Lothringen
+    source: Otto_d_Ambrosio
     relation: :hasMother
-    source: Armgard_Else_Helene_von_Veltheim
-  AddLiteral (13271ace-869f-4f06-88ef-dd13356504ad)
- Call ID: 13271ace-869f-4f06-88ef-dd13356504ad
-  Args:
-    source: Friedrich_von_Veltheim
-    relation: :hasBirthYear
-    literal_value: 1881
-    literal_type: xsd:string
-  AddLiteral (d1766c09-3301-4038-93ab-d6edd622e8f6)
- Call ID: d1766c09-3301-4038-93ab-d6edd622e8f6
-  Args:
-    literal_type: xsd:string
-    literal_value: 1955
-    source: Friedrich_von_Veltheim
-    relation: :hasDeathYear
-  AddLiteral (6853cd8d-c30f-4216-95dd-2e2f466a2ff7)
- Call ID: 6853cd8d-c30f-4216-95dd-2e2f466a2ff7
-  Args:
-    literal_type: xsd:string
-    literal_value: 1883
-    source: Ottonie_von_Alvensleben
-    relation: :hasBirthYear
-  AddLiteral (36209efd-ec36-4234-8307-d13b07cbf64d)
- Call ID: 36209efd-ec36-4234-8307-d13b07cbf64d
-  Args:
-    literal_value: 1960
-    source: Ottonie_von_Alvensleben
-    relation: :hasDeathYear
-    literal_type: xsd:string
-  Finish (ad86d7cc-0257-40a9-b8d2-e8caff69ec31)
- Call ID: ad86d7cc-0257-40a9-b8d2-e8caff69ec31
+  Finish (2df2b87a-7158-4269-975c-783f1d40daf0)
+ Call ID: 2df2b87a-7158-4269-975c-783f1d40daf0
   Args:

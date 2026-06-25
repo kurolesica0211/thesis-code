@@ -69,28 +69,86 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Eleonore von Habsburg-Lothringen (Eleonore Maria del Pilar Iona Christina Jelena; born 28 February 1994) is an Austrian jewellery designer, gemologist, and model.
-She is the daughter of Karl von Habsburg, the head of the House of Habsburg-Lorraine.
-Early life and background
+Prince Friso of Orange-Nassau (Dutch: Johan Friso Bernhard Christiaan David van Oranje-Nassau van Amsberg; 25 September 1968 – 12 August 2013) was the second son of Queen Beatrix of the Netherlands and Claus von Amsberg, and younger brother of King Willem-Alexander.
+On 17 February 2012, Prince Friso was buried under an avalanche in Lech, Austria, while skiing off piste.
+On 12 August 2013, one and a half years after the accident, Prince Friso died from complications.
+Early life and education
 
-Eleonore Habsburg-Lorraine was born in 1994 in Salzburg to Karl von Habsburg, a politician and head of the House of Habsburg-Lorraine, and Francesca von Thyssen-Bornemisza de Kászon et Impérfalva, an art collector and by birth member of the Thyssen-Bornemisza family.
-Her paternal grandparents were Otto, Crown Prince of Austria and Princess Regina of Saxe-Meiningen.
-Her paternal great-grandparents Charles I of Austria and Zita of Bourbon-Parma were the last Emperor and Empress of Austria.
-Her brother is racing car driver Ferdinand Habsburg.
-Education and career
+Johan Friso Bernhard Christiaan David was born on 25 September 1968 at the Academic Hospital Utrecht (now the University Medical Center Utrecht) in Utrecht, Netherlands.
+He was the second son of Princess Beatrix and Prince Claus, and grandson of Queen Juliana of the Netherlands and Prince Bernhard.
+He had one older brother, current King Willem-Alexander of the Netherlands (b. 1967), and one younger brother, Prince Constantijn (b. 1969).
+His titles at birth were Prince of the Netherlands, Prince of Orange-Nassau, and Jonkheer van Amsberg.
+Prince Friso was baptized on 28 December 1968 in the Dom Church in Utrecht.
+His godparents were Prince Harald of Norway, Johan Christian Baron von Jenisch, Herman van Roijen, Queen Juliana of the Netherlands and Christina von Amsberg.
+Work
 
-Habsburg-Lorraine attended boarding school in Gstaad before studying law at the European Business School London.
-Habsburg has also worked as a fashion model, being featured in advertisement campaigns and walking the runway for Dolce & Gabbana.
-Personal life
+Prince Friso worked from 1995 to 1996 at the Amsterdam branch of the international management consultancy McKinsey.
+After completing an MBA-programme at INSEAD, Prince Friso worked from 1998 to 2003 as a vice president at Goldman Sachs International in London.
+From October 2006, Prince Friso was managing director in the London office of a private investment and advisory firm, Wolfensohn & Company.
+Prince Friso was a co-founder of the MRI Centre in Amsterdam and was also a founding shareholder of Wizzair, the largest low-cost airline in Eastern Europe.
+He was honorary chairman of the Prince Claus Fund for Culture and Development (a position he held together with his younger brother, Prince Constantijn).
+Prior to his accident, Prince Friso was working as a chief financial officer for URENCO, a uranium enrichment company.
+Marriage and children
 
-On 20 July 2020, Eleonore von Habsburg-Lorraine married Belgian race car driver Jérôme d'Ambrosio in a small civil ceremony at the Civil Registry of Monaco, conducted by the Mayor of Monaco Georges Marsan.
-On 20 October 2021 she gave birth to a son, Otto d'Ambrosio, named after her grandfather Otto von Habsburg.
+On 30 June 2003, it was announced that Prince Friso was to marry Mabel Wisse Smit.
+The Dutch cabinet, however, did not seek permission from parliament for this marriage, a constitutional requirement if Prince Friso was to remain a member of the Dutch Royal House and in line of succession for the throne; at the time, he was second in line after his older brother, Willem-Alexander.
+The Prime Minister Jan Peter Balkenende explained that this was due to discussions with Mabel Wisse Smit in October 2003, when she had admitted that her previous statements about an alleged relationship with Klaas Bruinsma (1953–1991), a known Dutch drug baron, had not been complete and accurate.
+They nevertheless married at Oude Kerk (Delft) on 24 April 2004, and Mabel Wisse Smit became a member of the Dutch Royal Family but not a member of the Dutch Royal House.
+Considering that his elder brother King Willem-Alexander has three daughters, Prince Friso's exclusion from the succession was unlikely to have an effect on the monarchy in the Netherlands.
+After their marriage, Prince Friso and his wife Princess Mabel set up home in London, in the suburb of Kew.
+The couple's first daughter, Countess Emma Luana Ninette Sophie of Orange-Nassau, Jonkvrouwe van Amsberg, was born on 26 March 2005 in London.
+Their second daughter, Countess Joanna Zaria Nicoline Milou of Orange-Nassau, Jonkvrouwe van Amsberg, was born on 18 June 2006, also in London.
+Avalanche accident
+
+Accident
+
+On 17 February 2012, Prince Friso was buried under an avalanche in Lech, Austria, and he was taken to a hospital in Innsbruck.
+According to a formal statement of the Netherlands Government Information Service (RVD), a prognosis could be given only after some days.
+The prince's condition was described as "stable, but critical".
+Resulting complications
+
+The Dutch Royal Family issued a statement on 19 February saying "The Royal Family is very grateful and deeply touched by all expressions of support and sympathy after the ski accident of His Royal Highness Prince Friso.
+On 24 February, an Innsbruck medical team announced that the prince had been buried for 25 minutes, followed by a 50-minute CPR to treat his cardiac arrest.
+It remained unclear whether the prince would ever regain full consciousness.
+Koller said that the Prince's family might now look for a rehabilitation institution.
+On the same day the Dutch Royal Family issued a statement requesting that the privacy of the Prince's family be respected to enable them to come to terms with his condition.
+On 1 March 2012, Prince Friso was transferred to the Wellington Hospital, in London where he and his wife had lived for many years.
+On 19 November 2012, it was announced that the prince had started to show some signs of consciousness but it was still not certain whether he would ever wake up, and if he did, in what state.
+On 9 July 2013, Prince Friso was moved back to Huis ten Bosch in the Netherlands.
+Death and funeral
+
+On 12 August 2013, it was announced that Prince Friso had died in Huis ten Bosch of complications from the accident.
+He was buried on 16 August in the Dutch Reformed Cemetery in the hamlet of Lage Vuursche near Drakesteijn Castle, where he had spent his childhood and where Princess Beatrix returned to live in February 2014.
+Titles, styles and honours
+
+Titles and styles
+
+Under the Act on the Membership of the Royal House (2002), Prince Friso lost the title 'Prince of the Netherlands' by entering into a marriage without an Act of Consent.
+By a royal decree of 19 March 2004, Prince Friso was granted the surname 'Van Oranje-Nassau van Amsberg', the hereditary noble predicate 'Jonkheer (Jonkvrouw) van Amsberg and the hereditary title 'Count of Orange-Nassau', to take effect upon his marriage.
+By the same decree, he was allowed to retain his title 'Prince of Orange-Nassau' as a personal and non-hereditary title and the style of 'Royal Highness'.
+According to the notification of this Royal Decree, any children born to the couple were to receive the surname 'van Oranje-Nassau van Amsberg' and become a 'Count (Countess) of Orange-Nassau' and also have the noble predicate 'Jonkheer (Jonkvrouw) van Amsberg'.
+So his children had the same titles and names as those of Prince Constantijn, and showing that they belong to the royal family descending from Queen Beatrix and Prince Claus.
+Referred to from birth as Prince Johan-Friso, in 2004, the royal court announced that he had requested that he would henceforth be called "Prince Friso".
+Honours
+
+National
+
+Ancestry
+
+References
+
+External links
+
+2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
+3 title granted by Royal Decree to descendants of Princess Irene
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -106,39 +164,9 @@ On 20 October 2021 she gave birth to a son, Otto d'Ambrosio, named after her gra
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -153,6 +181,23 @@ On 20 October 2021 she gave birth to a son, Otto d'Ambrosio, named after her gra
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -170,6 +215,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -237,29 +297,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -268,6 +320,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -280,6 +340,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -288,17 +350,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -326,6 +390,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -341,180 +489,143 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (18e2afb4-36c6-484e-a739-76fc25d4daf5)
- Call ID: 18e2afb4-36c6-484e-a739-76fc25d4daf5
+  AssignClass (81cbdf36-2dbc-40e3-8eff-95139f61d758)
+ Call ID: 81cbdf36-2dbc-40e3-8eff-95139f61d758
+  Args:
+    source: Prince_Friso
+    type: :Man
+  AssignClass (4ec1b412-240e-453d-8d5e-a6e8fbc94d16)
+ Call ID: 4ec1b412-240e-453d-8d5e-a6e8fbc94d16
   Args:
     type: :Woman
-    source: Eleonore_von_Habsburg-Lothringen
-  AssignClass (dc192bb3-a200-4b77-94f6-94e34ca26ce1)
- Call ID: dc192bb3-a200-4b77-94f6-94e34ca26ce1
+    source: Queen_Beatrix
+  AssignClass (f3d7fc07-2b3b-4393-b43a-e722d6f76784)
+ Call ID: f3d7fc07-2b3b-4393-b43a-e722d6f76784
   Args:
-    source: Eleonore_von_Habsburg-Lothringen
-    type: :Person
-  AddLiteral (c2459d44-40be-496c-9bb8-f44b64bbb484)
- Call ID: c2459d44-40be-496c-9bb8-f44b64bbb484
+    source: Claus_von_Amsberg
+    type: :Man
+  AssignClass (da8e93fb-9239-4bf4-9519-9b03044e5dd3)
+ Call ID: da8e93fb-9239-4bf4-9519-9b03044e5dd3
   Args:
-    source: Eleonore_von_Habsburg-Lothringen
+    source: King_Willem-Alexander
+    type: :Man
+  AssignClass (ac1d85d7-ce11-4a76-9127-2c4f3ffd61de)
+ Call ID: ac1d85d7-ce11-4a76-9127-2c4f3ffd61de
+  Args:
+    source: Prince_Constantijn
+    type: :Man
+  AssignClass (2efafbec-91d1-4796-983a-40b83195aa02)
+ Call ID: 2efafbec-91d1-4796-983a-40b83195aa02
+  Args:
+    type: :Woman
+    source: Queen_Juliana
+  AssignClass (a648ff01-edff-405b-a4c6-a911f2de3153)
+ Call ID: a648ff01-edff-405b-a4c6-a911f2de3153
+  Args:
+    source: Prince_Bernhard
+    type: :Man
+  AssignClass (a89c578e-c873-4095-a508-0ade61cced1e)
+ Call ID: a89c578e-c873-4095-a508-0ade61cced1e
+  Args:
+    type: :Woman
+    source: Mabel_Wisse_Smit
+  AssignClass (9d3c2160-30b2-4dca-9c43-f61f63ec900b)
+ Call ID: 9d3c2160-30b2-4dca-9c43-f61f63ec900b
+  Args:
+    source: Countess_Emma_Luana_Ninette_Sophie
+    type: :Woman
+  AssignClass (a5c9c3cc-d722-4108-a9b1-83999eb1822f)
+ Call ID: a5c9c3cc-d722-4108-a9b1-83999eb1822f
+  Args:
+    type: :Woman
+    source: Countess_Joanna_Zaria_Nicoline_Milou
+  AddLiteral (e516213c-918f-4728-834d-ebbe93dd253f)
+ Call ID: e516213c-918f-4728-834d-ebbe93dd253f
+  Args:
+    literal_value: 1968
+    literal_type: xsd:integer
+    source: Prince_Friso
     relation: :hasBirthYear
-    literal_value: 1994
+  AddLiteral (4c68cb58-20eb-4e6a-bdb8-8b35d749289a)
+ Call ID: 4c68cb58-20eb-4e6a-bdb8-8b35d749289a
+  Args:
+    literal_value: 2013
+    relation: :hasDeathYear
+    source: Prince_Friso
     literal_type: xsd:integer
-  AssignClass (64a14cf0-bbbd-4bf2-80b5-db62abed3f07)
- Call ID: 64a14cf0-bbbd-4bf2-80b5-db62abed3f07
+  AddTriple (69adf1eb-b4c4-4e9e-8ea3-698d28d2a369)
+ Call ID: 69adf1eb-b4c4-4e9e-8ea3-698d28d2a369
   Args:
-    type: :Man
-    source: Karl_von_Habsburg
-  AssignClass (d5b08dba-69e5-4abb-b303-1ef16512e5b5)
- Call ID: d5b08dba-69e5-4abb-b303-1ef16512e5b5
-  Args:
-    source: Karl_von_Habsburg
-    type: :Person
-  AssignClass (3db5bd8d-4d8e-49ba-bf26-5576e7917428)
- Call ID: 3db5bd8d-4d8e-49ba-bf26-5576e7917428
-  Args:
-    type: :Woman
-    source: Francesca_von_Thyssen-Bornemisza
-  AssignClass (fd11ac9d-2494-475c-a6d0-17fb4f670bba)
- Call ID: fd11ac9d-2494-475c-a6d0-17fb4f670bba
-  Args:
-    source: Francesca_von_Thyssen-Bornemisza
-    type: :Person
-  AddTriple (94103813-554b-407e-892a-38cf88ebf7ce)
- Call ID: 94103813-554b-407e-892a-38cf88ebf7ce
-  Args:
-    source: Eleonore_von_Habsburg-Lothringen
-    relation: :hasFather
-    target: Karl_von_Habsburg
-  AddTriple (9801acbb-c2b9-4b0b-bdd7-79151f2388d0)
- Call ID: 9801acbb-c2b9-4b0b-bdd7-79151f2388d0
-  Args:
+    source: Prince_Friso
     relation: :hasMother
-    source: Eleonore_von_Habsburg-Lothringen
-    target: Francesca_von_Thyssen-Bornemisza
-  AssignClass (f0bfa51f-e64f-45b1-aa78-5c199be1691c)
- Call ID: f0bfa51f-e64f-45b1-aa78-5c199be1691c
-  Args:
-    source: Otto_von_Habsburg
-    type: :Man
-  AssignClass (3c9784b6-c175-42aa-8077-3ee1f8cf0982)
- Call ID: 3c9784b6-c175-42aa-8077-3ee1f8cf0982
-  Args:
-    type: :Person
-    source: Otto_von_Habsburg
-  AssignClass (a997dd4e-3858-4d4c-8ea0-4aee0e199b1d)
- Call ID: a997dd4e-3858-4d4c-8ea0-4aee0e199b1d
-  Args:
-    source: Regina_von_Saxe-Meiningen
-    type: :Woman
-  AssignClass (420ade95-30ab-49ce-a256-0c7e4b657186)
- Call ID: 420ade95-30ab-49ce-a256-0c7e4b657186
-  Args:
-    source: Regina_von_Saxe-Meiningen
-    type: :Person
-  AddTriple (9970558a-3f1f-4ff3-a65f-ad44fd35aeb0)
- Call ID: 9970558a-3f1f-4ff3-a65f-ad44fd35aeb0
-  Args:
-    target: Otto_von_Habsburg
-    source: Karl_von_Habsburg
-    relation: :hasFather
-  AddTriple (fa14c0ea-0cbe-4014-8039-809a5b55d041)
- Call ID: fa14c0ea-0cbe-4014-8039-809a5b55d041
-  Args:
-    source: Karl_von_Habsburg
-    relation: :hasMother
-    target: Regina_von_Saxe-Meiningen
-  AssignClass (99a1cf4c-8ed6-4f9a-b108-2ccf7e7ccef7)
- Call ID: 99a1cf4c-8ed6-4f9a-b108-2ccf7e7ccef7
-  Args:
-    type: :Man
-    source: Charles_I_of_Austria
-  AssignClass (14158aba-8b5d-49b4-bab3-418cc7b964b3)
- Call ID: 14158aba-8b5d-49b4-bab3-418cc7b964b3
-  Args:
-    type: :Person
-    source: Charles_I_of_Austria
-  AssignClass (c183a51b-34ee-4e92-8850-f14440696ea7)
- Call ID: c183a51b-34ee-4e92-8850-f14440696ea7
-  Args:
-    source: Zita_of_Bourbon-Parma
-    type: :Woman
-  AssignClass (43d46dc8-feb5-4cf4-9444-88c3f9fc9fb7)
- Call ID: 43d46dc8-feb5-4cf4-9444-88c3f9fc9fb7
-  Args:
-    type: :Person
-    source: Zita_of_Bourbon-Parma
-  AddTriple (7ef79017-57fb-4d33-bebf-97fe8a08ca97)
- Call ID: 7ef79017-57fb-4d33-bebf-97fe8a08ca97
+    target: Queen_Beatrix
+  AddTriple (d83e60d4-798e-45ff-84f4-646b8b73c206)
+ Call ID: d83e60d4-798e-45ff-84f4-646b8b73c206
   Args:
     relation: :hasFather
-    source: Otto_von_Habsburg
-    target: Charles_I_of_Austria
-  AddTriple (6b0993f6-4ca6-4465-a9c5-f7a741d84c8c)
- Call ID: 6b0993f6-4ca6-4465-a9c5-f7a741d84c8c
+    source: Prince_Friso
+    target: Claus_von_Amsberg
+  AddTriple (fb1932d9-7f52-43e4-87f2-6caca9ec528c)
+ Call ID: fb1932d9-7f52-43e4-87f2-6caca9ec528c
+  Args:
+    target: King_Willem-Alexander
+    relation: :isBrotherOf
+    source: Prince_Friso
+  AddTriple (26b22145-861d-4bd9-a2d6-7bb90b3b7eea)
+ Call ID: 26b22145-861d-4bd9-a2d6-7bb90b3b7eea
+  Args:
+    target: Prince_Constantijn
+    source: Prince_Friso
+    relation: :isBrotherOf
+  AddTriple (f9c6607f-0c08-49c2-aa49-e55fff64b4bc)
+ Call ID: f9c6607f-0c08-49c2-aa49-e55fff64b4bc
+  Args:
+    target: Queen_Beatrix
+    relation: :isMotherOf
+    source: Queen_Juliana
+  AddTriple (5e75709e-064e-4b6f-a82c-b755b12ee69a)
+ Call ID: 5e75709e-064e-4b6f-a82c-b755b12ee69a
+  Args:
+    target: Queen_Beatrix
+    source: Prince_Bernhard
+    relation: :isFatherOf
+  AddTriple (5185b955-0ace-4269-ab7e-a2497dcd58fe)
+ Call ID: 5185b955-0ace-4269-ab7e-a2497dcd58fe
   Args:
     relation: :hasMother
-    source: Otto_von_Habsburg
-    target: Zita_of_Bourbon-Parma
-  AssignClass (644a0a11-27f6-4771-913a-4819596f5753)
- Call ID: 644a0a11-27f6-4771-913a-4819596f5753
+    source: Prince_Friso
+    target: Mabel_Wisse_Smit
+  AddTriple (a377c715-71d2-4609-a71d-b3a18c468856)
+ Call ID: a377c715-71d2-4609-a71d-b3a18c468856
   Args:
-    source: Ferdinand_Habsburg
-    type: :Man
-  AssignClass (9cc045e6-feee-4348-bf59-618e3c63b6fc)
- Call ID: 9cc045e6-feee-4348-bf59-618e3c63b6fc
+    target: Countess_Emma_Luana_Ninette_Sophie
+    source: Mabel_Wisse_Smit
+    relation: :isMotherOf
+  AddTriple (bf123d10-02c2-47de-afa8-683f31f19c27)
+ Call ID: bf123d10-02c2-47de-afa8-683f31f19c27
   Args:
-    source: Ferdinand_Habsburg
-    type: :Person
-  AddTriple (32295846-d059-4465-aa04-5dcb795f4813)
- Call ID: 32295846-d059-4465-aa04-5dcb795f4813
+    target: Countess_Joanna_Zaria_Nicoline_Milou
+    relation: :isMotherOf
+    source: Mabel_Wisse_Smit
+  AddTriple (c4496612-9943-4334-8aac-b23035c86f93)
+ Call ID: c4496612-9943-4334-8aac-b23035c86f93
   Args:
-    source: Eleonore_von_Habsburg-Lothringen
-    relation: :hasBrother
-    target: Ferdinand_Habsburg
-  AssignClass (dd4bbf1f-4ee4-4c4f-aaec-c11b9deb0a85)
- Call ID: dd4bbf1f-4ee4-4c4f-aaec-c11b9deb0a85
+    target: Countess_Emma_Luana_Ninette_Sophie
+    relation: :isFatherOf
+    source: Prince_Friso
+  AddTriple (677043de-4229-46e5-b550-b1c3dc3dcc48)
+ Call ID: 677043de-4229-46e5-b550-b1c3dc3dcc48
   Args:
-    type: :Man
-    source: Jérôme_d'Ambrosio
-  AssignClass (34f5c3bf-8ecf-45c7-90c5-ceff9f174baa)
- Call ID: 34f5c3bf-8ecf-45c7-90c5-ceff9f174baa
+    target: Countess_Joanna_Zaria_Nicoline_Milou
+    source: Prince_Friso
+    relation: :isFatherOf
+  AddLiteral (01c563db-86c5-4ab2-b9bf-d5e7da2eac96)
+ Call ID: 01c563db-86c5-4ab2-b9bf-d5e7da2eac96
   Args:
-    source: Jérôme_d'Ambrosio
-    type: :Person
-  AddLiteral (c8c79d25-8d9d-41c8-8715-bd9c3ab09425)
- Call ID: c8c79d25-8d9d-41c8-8715-bd9c3ab09425
-  Args:
-    literal_type: xsd:integer
-    literal_value: 2020
+    literal_value: 2004
     relation: :hasMarriageYear
-    source: Eleonore_von_Habsburg-Lothringen
-  AddTriple (12785a45-50d2-4532-ba6c-45232257c404)
- Call ID: 12785a45-50d2-4532-ba6c-45232257c404
-  Args:
-    target: Jérôme_d'Ambrosio
-    relation: :hasRelation
-    source: Eleonore_von_Habsburg-Lothringen
-  AssignClass (af2d2a4f-b061-4294-a2f0-89da9d800d8d)
- Call ID: af2d2a4f-b061-4294-a2f0-89da9d800d8d
-  Args:
-    type: :Man
-    source: Otto_d'Ambrosio
-  AssignClass (c6183c1b-0d11-4543-a081-e75f91e57007)
- Call ID: c6183c1b-0d11-4543-a081-e75f91e57007
-  Args:
-    source: Otto_d'Ambrosio
-    type: :Person
-  AddTriple (01de8b79-160d-4bdd-88d6-2ee84250db97)
- Call ID: 01de8b79-160d-4bdd-88d6-2ee84250db97
-  Args:
-    target: Jérôme_d'Ambrosio
-    source: Otto_d'Ambrosio
-    relation: :hasFather
-  AddTriple (90863996-a925-4bc7-b3ea-98abcff46a30)
- Call ID: 90863996-a925-4bc7-b3ea-98abcff46a30
-  Args:
-    relation: :hasMother
-    source: Otto_d'Ambrosio
-    target: Eleonore_von_Habsburg-Lothringen
-  Finish (1f53b8fa-c8b4-40df-af95-e1747bb11427)
- Call ID: 1f53b8fa-c8b4-40df-af95-e1747bb11427
+    source: Prince_Friso
+    literal_type: xsd:integer
+  Finish (619d054e-365d-43b3-a109-ec4968c081c1)
+ Call ID: 619d054e-365d-43b3-a109-ec4968c081c1
   Args:

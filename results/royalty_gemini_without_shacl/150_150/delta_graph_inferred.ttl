@@ -1,0 +1,612 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AdmiralPericlesIoannides a :Man ;
+    :hasBrother data:AdmiralPericlesIoannides ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isBloodrelationOf data:AdmiralPericlesIoannides ;
+    :isBrotherOf data:AdmiralPericlesIoannides ;
+    :isSiblingOf data:AdmiralPericlesIoannides .
+
+data:GrandDuchessOlgaConstantinovnaOfRussia a :Ancestor,
+        :Woman ;
+    :hasChild data:PrincessMariaOfGreeceAndDenmark ;
+    :hasDaughter data:PrincessMariaOfGreeceAndDenmark ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasSister data:GrandDuchessOlgaConstantinovnaOfRussia ;
+    :isAncestorOf data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isAuntOf data:PrincessMariaOfGreeceAndDenmark ;
+    :isBloodrelationOf data:GrandDuchessOlgaConstantinovnaOfRussia ;
+    :isMotherOf data:PrincessMariaOfGreeceAndDenmark ;
+    :isParentOf data:PrincessMariaOfGreeceAndDenmark ;
+    :isSiblingOf data:GrandDuchessOlgaConstantinovnaOfRussia ;
+    :isSisterOf data:GrandDuchessOlgaConstantinovnaOfRussia .
+
+data:KingGeorgeIOfGreece a :Ancestor,
+        :Man ;
+    :hasBrother data:KingGeorgeIOfGreece ;
+    :hasChild data:PrincessMariaOfGreeceAndDenmark ;
+    :hasDaughter data:PrincessMariaOfGreeceAndDenmark ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isAncestorOf data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isBloodrelationOf data:KingGeorgeIOfGreece ;
+    :isBrotherOf data:KingGeorgeIOfGreece ;
+    :isFatherOf data:PrincessMariaOfGreeceAndDenmark ;
+    :isParentOf data:PrincessMariaOfGreeceAndDenmark ;
+    :isSiblingOf data:KingGeorgeIOfGreece ;
+    :isUncleOf data:PrincessMariaOfGreeceAndDenmark .
+
+data:GrandDukeGeorgeMikhailovichOfRussia a :Ancestor,
+        :Man ;
+    :hasBrother data:GrandDukeGeorgeMikhailovichOfRussia ;
+    :hasChild data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasDaughter data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isAncestorOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isBloodrelationOf data:GrandDukeGeorgeMikhailovichOfRussia ;
+    :isBrotherOf data:GrandDukeGeorgeMikhailovichOfRussia ;
+    :isFatherOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isParentOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isSiblingOf data:GrandDukeGeorgeMikhailovichOfRussia ;
+    :isUncleOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna .
+
+data:PrincessNinaGeorgievna a :Woman ;
+    :hasAncestor data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :hasFather data:GrandDukeGeorgeMikhailovichOfRussia ;
+    :hasMother data:PrincessMariaOfGreeceAndDenmark ;
+    :hasParent data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasSister data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isBloodrelationOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isChildOf data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isDaughterOf data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isSiblingOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isSisterOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna .
+
+data:PrincessXeniaGeorgievna a :Woman ;
+    :hasAncestor data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :hasFather data:GrandDukeGeorgeMikhailovichOfRussia ;
+    :hasMother data:PrincessMariaOfGreeceAndDenmark ;
+    :hasParent data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasSister data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isBloodrelationOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isChildOf data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isDaughterOf data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isSiblingOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isSisterOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna .
+
+data:Alexandra a :Woman ;
+    :hasBrother data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasSister data:Alexandra,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isAuntOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isBloodrelationOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isSiblingOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isSisterOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark .
+
+data:Andrew a :Man ;
+    :hasBrother data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasSister data:Alexandra,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isBloodrelationOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isBrotherOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isSiblingOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isUncleOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna .
+
+data:Christopher a :Man ;
+    :hasBrother data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasSister data:Alexandra,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isBloodrelationOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isBrotherOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isSiblingOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isUncleOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna .
+
+data:ConstantineI a :Man ;
+    :hasBrother data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasSister data:Alexandra,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isBloodrelationOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isBrotherOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isSiblingOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isUncleOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna .
+
+data:George a :Man ;
+    :hasBrother data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasSister data:Alexandra,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isBloodrelationOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isBrotherOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isSiblingOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isUncleOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna .
+
+data:Nicholas a :Man ;
+    :hasBrother data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasSister data:Alexandra,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isBloodrelationOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isBrotherOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isSiblingOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isUncleOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna .
+
+data:Olga a :Woman ;
+    :hasBrother data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasSister data:Alexandra,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isAuntOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isBloodrelationOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isSiblingOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isSisterOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark .
+
+data:PrincessMariaOfGreeceAndDenmark a :Ancestor,
+        :Woman ;
+    :hasAncestor data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:KingGeorgeIOfGreece ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas ;
+    :hasChild data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasDaughter data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasDeathYear 1940 ;
+    :hasFather data:KingGeorgeIOfGreece ;
+    :hasMarriageYear 1900,
+        1922 ;
+    :hasMother data:GrandDuchessOlgaConstantinovnaOfRussia ;
+    :hasParent data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:KingGeorgeIOfGreece ;
+    :hasRelation data:AdmiralPericlesIoannides,
+        data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:GrandDukeGeorgeMikhailovichOfRussia,
+        data:KingGeorgeIOfGreece,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark,
+        data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :hasSister data:Alexandra,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isAncestorOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isAuntOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isBloodrelationOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isChildOf data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:KingGeorgeIOfGreece ;
+    :isDaughterOf data:GrandDuchessOlgaConstantinovnaOfRussia,
+        data:KingGeorgeIOfGreece ;
+    :isMotherOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isParentOf data:PrincessNinaGeorgievna,
+        data:PrincessXeniaGeorgievna ;
+    :isSiblingOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark ;
+    :isSisterOf data:Alexandra,
+        data:Andrew,
+        data:Christopher,
+        data:ConstantineI,
+        data:George,
+        data:Nicholas,
+        data:Olga,
+        data:PrincessMariaOfGreeceAndDenmark .
+

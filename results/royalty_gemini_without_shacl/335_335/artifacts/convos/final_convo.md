@@ -69,222 +69,48 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Bernhard of Lippe-Biesterfeld (later Prince Bernhard of the Netherlands; 29 June 1911 – 1 December 2004) was Prince of the Netherlands from 6 September 1948 to 30 April 1980 as the husband of Queen Juliana.
-They had four daughters together, including Queen Beatrix of the Netherlands.
-Bernhard belonged to the German princely House of Lippe-Biesterfeld and was a nephew of the last sovereign prince of Lippe, Leopold IV.
-From birth he held the title Count of Biesterfeld; his uncle raised him to princely rank with the style of Serene Highness in 1916.
-In 1937 he married Princess Juliana of the Netherlands, and was immediately given the title Prince of the Netherlands with the style of Royal Highness.
-Upon his wife's accession to the throne in 1948, he became prince consort.
-Bernhard was an early member of the Nazi Party (NSDAP) as well as the brown shirts or Sturmabteilung (SA), and served as an officer in the Schutzstaffel (SS).
-He switched his political allegiance to the Allies after the invasion of the Netherlands.
-Until his death, Bernhard denied being a NSDAP member or holding a NSDAP membership card.
-He was also an honorary general officer in the Dutch army and was an observer in negotiating the terms of surrender of Nazi forces in the Netherlands.
-Officially for proven bravery, leadership and loyalty during his wartime efforts, he was appointed a Commander of the Military William Order, the Netherlands' oldest and highest honour.
-In 1969, Bernhard was awarded the Grand Cross (Special Class) of the Order of Merit of the Federal Republic of Germany.
-Bernhard helped found the World Wildlife Fund (WWF, later renamed World Wide Fund for Nature), becoming its first president in 1961.
-In 1970, along with Prince Philip, Duke of Edinburgh, and other associates, he established the WWF's financial endowment "The 1001: A Nature Trust".
-Early life
+Count Ingolf of Rosenborg RE (born 17 February 1940) is a Danish count and former prince.
+Born Prince Ingolf of Denmark (Danish: Prins
+Ingolf Christian Frederik Knud Harald Gorm Gustav Viggo Valdemar Aage til Danmark), he appeared likely to some day become king until the constitution was changed in 1953 to allow females to inherit the crown, placing his branch of the dynasty behind that of his first cousin Princess Margrethe and her two younger sisters.
+Family
 
-Bernhard was born Bernhard Leopold Friedrich Eberhard Julius Kurt Karl Gottfried Peter, Count of Biesterfeld in Jena, Saxe-Weimar-Eisenach, German Empire on 29 June 1911, the elder son of Prince Bernhard of Lippe and his wife, Baroness Armgard von Sierstorpff-Cramm, member of one of the oldest Lower Saxon noble families, House of Cramm.
-He was a grandson of Ernest, Count of Lippe-Biesterfeld, who was regent of the Principality of Lippe until 1904, and was also a nephew of the principality's last sovereign, Leopold IV, Prince of Lippe.
-Because his parents' marriage did not conform with the marriage laws of the House of Lippe, it was initially deemed morganatic, as Armgard did not belong by birth to any ruling or the former ruling families of Europe, Bernhard was granted only the title of Count of Biesterfeld at birth.
-In 1916, his uncle Leopold IV as reigning Prince raised him and his mother to the rank of Prince and Princess of Lippe-Biesterfeld, thereby retroactively according his parents' marriage dynastic status.
-The suffix Biesterfeld revived the beginning of a new cadet line of the House of Lippe.
-After World War I, Bernhard's family lost their German Principality and the revenue that had accompanied it, but the family was still reasonably well-off.
-Bernhard spent his early years at Reckenwalde palace (Wojnowo, Poland), the family's new estate in East Brandenburg, thirty kilometres east of the River Oder.
-Bernhard suffered from poor health as a boy.
-This prediction might have inspired Bernhard's reckless driving and the risks that he took in the Second World War and thereafter.
-The prince wrecked several cars and planes in his lifetime.
-Bernhard studied law at the University of Lausanne, Switzerland, in fall 1929 until the spring of 1930, then in Berlin, then in Munich the following year in the fall of 1931, and then again in Berlin.
-In Munich Bernhard enrolled himself on 24 October 1930.
-(He later suffered a broken neck and crushed ribs in a 160 km/h (100 mph) car crash after his marriage to princess Juliana in 1938).
-Bernhard was an active member of the Motor-SA and of the Deutsche Studentenschaft, where he inscribed himself on 27 April 1933.
-While at university in Berlin for the year 1933, Bernhard joined the Nazi Party, exactly dated on his membership card as 1 May 1933.
-Bernhard left Berlin in December 1934 when he graduated and went to work for IG Farben.
-The Prince later denied that he had belonged to SA, to the Reiter-SS (SS Cavalry Corps), and to the paramilitary National-sozialistisches Kraftfahrerkorps (NSKK), but these are well-documented memberships.
-According to journalist Philip Dröge, Bernhard was also a member of Nazi youth movement Sturm.
-While he was not a fierce champion of democracy, the Prince was never known to hold any radical political views or express any racist sentiments, although he admitted that he briefly had sympathised with Adolf Hitler's regime.
-van der Zijl clearly demonstrates, that Bernhard again and again fabulates on his memberships and other activities, to enhance his postwar stance that he never willingly would have joined any Nazi-organization.
-In October 2023, Bernhard's original NSDAP membership card was discovered in his old residence in Germany.
-The Prince eventually went to work for the German chemical giant IG Farben in the early-to-mid 1930s, then the world's fourth-largest company.
-After training, Bernhard became a secretary in 1935 to the board of directors at IG Farben's Paris office.
-Marriage and children
+Ingolf was born at Sorgenfri Palace, Sorgenfri, as His Highness Prince Ingolf of Denmark.
+Loss of place in succession
 
-Bernhard met then-Princess Juliana at the 1936 Winter Olympics at Garmisch-Partenkirchen.
-Juliana's mother, Queen Wilhelmina, had spent most of the 1930s looking for a suitable husband for Juliana.
-As a Protestant of royal rank (the House of Lippe was a sovereign house in the German Empire), Bernhard was deemed acceptable for the devoutly religious Wilhelmina.
-They were distantly related, seventh cousins, both descending from Lebrecht, Prince of Anhalt-Zeitz-Hoym.
-Wilhelmina left nothing to chance, and had her lawyers draft a very detailed prenuptial agreement that specified exactly what Bernhard could and could not do.
-Earlier, Bernhard had been granted Dutch citizenship and changed the spelling of his names from German to Dutch.
-Prince Bernhard fathered six children, four of them with Queen Juliana.
-The eldest daughter is Beatrix, (born 1938), who later became Queen of the Netherlands.
-His other daughters with Juliana are Irene (born 1939), Margriet (born 1943) and Christina (1947–2019).
-In December 2004, Dutch historian Cees Fasseur claimed that Jonathan Aitken, former British Conservative Cabinet Minister, is also a child of Prince Bernhard, the result of his wartime affair with Penelope Maffey.
+From the 1947 death of his grandfather, Christian X of Denmark, Ingolf stood only behind his father in the order of hereditary succession to the throne and was expected to become king in his turn.
+His father, Prince Knud, was then the heir presumptive, due to succeed Ingolf's uncle King Frederik IX, who had three daughters but no sons.
+In 1953, the Constitution of Denmark was amended to allow cognatic primogeniture.
+Ingolf was thus relegated to fifth in the line of succession to the Danish throne, but more importantly, he now ranked behind Margrethe and others who were likely to have dynastic children of their own (as has, in fact, happened).
+Ingolf's place in the line of succession, were he still eligible, would be no higher than eleventh today.
+Loss of dynastic rights
 
+In 1968, now with little hope of ascending the throne, Ingolf chose to forfeit his right of succession to the throne by marrying without having received the royal assent of the monarch in the Council of State.
+The king's permission to marry was not sought because it was expected to be denied, since Ingolf's fiancée was an untitled commoner.
+Though Frederik IX had liberalized traditional practice by allowing royal spouses who were not themselves royal, but who claimed noble blood and were known by courtesy titles (Anne Bowes-Lyon was the granddaughter of an earl and through her first marriage to the son of an earl bore the title of viscountess; Henri de Laborde de Monpezat used the title of count, though his family's claim to nobility was later acknowledged to be flawed), it would not be until 1995 that Margrethe II would allow her children to marry commoners with neither title nor claim to noble blood.
+Ingolf was given the title count of Rosenborg and the style of Excellency, as was customary in the 20th century for Danish princes who forfeited their dynastic rights.
+Prior to his son's wedding, Prince Knud sought to convince his brother that Ingolf should be allowed to retain his royal title after marriage.
+But the king refused, on the grounds that other males of the dynasty who had been demoted to counts of Rosenborg upon marriage might try to reclaim their royal rank if Ingolf were allowed to do so, despite marrying a commoner as they had done.
+So, in 1968, Ingolf forfeited his rights to the throne and took the title count of Rosenborg.
+His younger brother Christian did the same three years later.
+Ingolf married firstly Inge Terney (21 January 1938 in Copenhagen – 21 July 1996 in Velje), daughter of Georg Terney (1906–1977), hardware storer, and wife Jenny Kamilla Hansen (1908–1990), on 13 January 1968, at Kongens Lyngby Kirke, Kongens Lyngby, Denmark.
+After being widowed, he married secondly Sussie Hjorhøy-Pedersen (born 20 February 1950 in Copenhagen), daughter of Frederick Walter Pedersen and wife Ruth Hjorhøy, who thus became "Her Excellency Countess Sussie of Rosenborg" on 7 March 1998, at Egtved, Denmark.
+Ingolf is godfather to his grandnephew, Leopold Rosanes af Rosenborg, who is the grandson of his brother Christian.
+Public role
 
-1930s:
-Relationship with Nazi Party
-
-Prince Bernhard was a member of the "Reiter-SS", a mounted unit of the SS, part of the National Socialist Motor Corps.
-Bernhard denied being a paid or active member of the Nazi party throughout his life, although he did admit to being part of the movement as part of the Sturmabteilung; he falsely claimed it was needed for him to be member of this organization as a student at the university.
-Bernhard claimed to have severed all ties to the ruling Nazi regime in 1937 when he married princess Juliana of the Netherlands.
-Protocol demanded that the prospective Prince-Consort be invited to an audience with his head of state, who was Adolf Hitler.
-Hitler gave an account of the conversation that he had with Bernhard in his Tischgespräche (Table Conversations).
-In those notes, Hitler is recorded to have said that Bernhard approached him, shortly after the start of the Nazi regime, with an offer of support to increase German influence in the Netherlands.
-When asked in an interview in 2004 why he changed sides and started fighting against his homeland Germany, Bernhard claimed that he did not believe that Hitler and his regime had no plans to invade the Netherlands.
-Once Germany attacked his new homeland of the Netherlands in 1940; Bernhard's feelings towards his birth country of Germany changed to antagonism, and he had no problems fighting against Germany for the rest of the war.
-The Dutch government's information bureau Rijksvoorlichtingsdienst (RVD) would later confirm in 2023, years after the death, that Bernhard was member of the NSDAP, and that the Koninklijk Huisarchief (Royal House Archive) does still have Bernhard's original party membership card in his file.
-Second World War
-
-At the outset of the Second World War, during the German invasion of the Netherlands; the prince, carrying a machine gun, organised the palace guards into a combat group and shot at German warplanes.
-The royal family fled the Netherlands and took refuge in England.
-Disagreeing with Queen Wilhelmina's decision to leave the Kingdom, the prince, aged 28, is said at first to have refused to go and to have wanted to oppose the German occupation from within the country.
-His wife Princess Juliana and their children continued on to Canada, where they remained until the end of the war.
-In England, Prince Bernhard asked to work in British Intelligence.
-On the recommendation of Bernhard's friend and admirer King George VI; however, who was also of German aristocratic descent through his mother Mary of Teck, he was given access into the Intelligence organization.
-Prince Bernhard was personally screened by British intelligence officer Ian Fleming at the behest of Winston Churchill.
-Ian Fleming, who personally knew Bernhard from their war efforts and from luncheons in the Lincoln's Inn Hotel in London, based some features of his fictional character James Bond on Bernhard.
-Prince Bernhard then lowered himself 20 feet to the lowest bit of staircase standing, and then said staunchly and with a mixture of Dutch/British flair, as nothing happened: "Most enjoyable evening!"
-Bernhard's favorite drink during his meeting with Ian Fleming was a vodka martini shaken, not stirred.
-Bernhard's favorite car in London was a Bentley 4.5 litre, the same car Bond had in Fleming's first books.
-Bernhard also had a close relationship with the Americans during the war, that continued after the war in his work as chairman of the Bilderberg conference.
-Bernhard also became acquainted with Ambassador Joseph Kennedy due to his role as a liaison between Europe and the US, connection to intelligence, multinationals and European royalty.
-"For Bernhard, the Prince of the Netherlands, the war was a frustrating business.
-Born a German, he had married Queen Wilhelmina's only child, Princess Juliana, and in due time made a conscious and meaningful transition of loyalties to his new homeland.
-On 25 June 1940, three days after France fell to the German war machine, Bernhard spoke on the Overseas Service of the BBC.
-In 1940, Flight Lieutenant Murray Payne gave the prince instruction in flying a Spitfire.
-The prince made 1,000 flight-hours in a Spitfire with the RAF's No. 322 (Dutch) Squadron RAF, wrecking two planes during landings.
-In 1941, Prince Bernhard was given the honorary rank of wing commander in the Royal Air Force.
-As "Wing Commander Gibbs (RAF)", Prince Bernhard flew over occupied Europe, attacking V-1 launch pads in a B-24 Liberator, bombing Pisa, and engaging submarines over the Atlantic in a B-25 Mitchell, and conducting reconnaissance over enemy-held territory in an L-5 Grasshopper.
-Prince Bernhard was awarded the Dutch Airman's Cross for his "ability and perseverance" (Dutch: "bekwaamheid en volharding").
-Queen Wilhelmina erased the style "honorary" (the exact words were "à la suite") in the decree promoting Bernhard to General.
-In this unconstitutional manner, she gave this Royal Prince a status that was never intended by either Parliament or her Ministers.
-The Minister of Defence did not choose to correct the Monarch, and the Prince took an active and important role in the Dutch armed forces.
-By 1944, Prince Bernhard became Commander of the Dutch Armed Forces.
-After the liberation of the Netherlands, he returned with his family and became active in the negotiations for the German surrender.
-He was present during the Armistice negotiations and German surrender at Hotel de Wereld                                                 ("The World Hotel"), Wageningen in The Netherlands on 5 May 1945, where he avoided speaking German.
-The Prince was a genuine war hero in the eyes of most of the Dutch; he kept cordial relations with the Communists who fought against the Nazis.
-In the post-war years, he earned respect for his work in helping to reinvigorate the economy of the Netherlands.
-Postwar roles
-
-After the War, the position of Inspector General was created for the Prince.
-On 4 September 1948, his mother-in-law Queen Wilhelmina abdicated the throne and Juliana became Queen of the Netherlands with Bernhard becoming prince consort.
-There have been claims that KLM helped Nazis to leave Germany for Argentina on KLM flights while Bernhard was on its board.
-After a 1952 trip with Queen Juliana to the United States, Prince Bernhard was heralded by the media as a business ambassador extraordinaire for the Netherlands.
-Bilderberg
-
-In the early 1951 Polish diplomat, Józef Retinger contacted Prince Berhard with the idea to create an international conference between European and US greatest influencers to create a better relationship between Europe and the United States.
-After this Bernhard contacted Walter Bedell Smith, director of the CIA and old war friend to help him get things started in the US.
-Finally in May 1954 Bernhard was organizer and chairman of the first Bilderberg and essential in organising a meeting at the Bilderberg Hotel in the Netherlands for the business elite and intellectuals of the Western World to discuss the economic problems in the face of what they characterised as the growing threat from Communism.
-Prince Bernhard was a very outspoken person who often flouted protocol by remarking upon subjects about which he felt deeply.
-Almost until his last day, he called for more recognition for the Polish veterans of the Second World War, who had figured greatly in the liberation of the Netherlands but it was not until after his death that the Dutch Government publicly recognised the important role of the Polish Army in the liberation, when on 31 May 2006, at the Binnenhof in The Hague, Queen Beatrix conferred the Military William Order, the highest Dutch military decoration, on the Polish 1st
-First president of the World Wildlife Fund
-
-Prince Bernhard helped found the WWF and was the first president of the WWF from its founding year 1961 until 1976.
-Friendships, jetset and international connections
-
-Prince Bernhard was seen as a jet-setting and charismatic ambassador for the Dutch during post-war reconstruction.
-Prince Bernhard reportedly maintained friendships with several high-profile international figures.
-Scandals and rumours
-
-BS militia
-
-The Binnenlandse Strijdkrachten (BS, Domestic Armed Forces) militia, set up and under command of Prince Bernhard towards the end of World War II, gained a notorious reputation for unruly and out-of-control behavior including incidents of pillaging and plundering at the time the country was being liberated from Nazi occupation.
-Prince Bernhard was appointed commander of this militia in early September 1944 by Queen Wilhelmina, who had unified several Dutch resistance groups into the BS.
-However, under Bernhard's leadership, the militia proved difficult to control and was marred by controversy due to its disorderly conduct and failure to reign in misbehavior among its ranks.
-The armistice agreement on May 4, 1945, included the condition that only Allied units would directly carry out the disarming of German troops in the Netherlands.
-However, Prince Bernhard's BS militia on the ground disregarded their orders and arrested two German soldiers nearby Dam square.
-In the mid-1950s, Queen Juliana and Prince Bernhard's marriage faced significant strain because of the ongoing influence of Greet Hofmans, a faith healer and layer-on of hands.
-For nine years she acted as a confidante and adviser to Queen Juliana, often residing at Palace Soestdijk.
-Originally, Hofmans was introduced to Queen Juliana at the initiative of Prince Bernhard in 1948 to treat an eye illness of their youngest daughter, Princess Christina (then still called Marijke).
-This illness arose because Juliana was infected with rubella during pregnancy.
-While the Dutch press did not report widely on the issue, outside the Netherlands, a great deal was written about the Hofmans affair.
-Later, Bernhard admitted that he had personally provided the information for the article.
-Historian Cees Fasseur drew from it for his book, Juliana & Bernhard (2008); in addition, the Queen had granted him access to the private royal archive.
-He noted that Bernhard was reprimanded in 1956 for having leaked confidential information to the international press.
-Fasseur said that Bernhard resorted to bringing in the international press only after repeated, desperate and often dramatic pleading with his wife to distance herself from the Hofmans group.
-"
-
-Lockheed scandal
-
-Scandal rocked the royal family in 1976 when the press reported that Prince Bernhard had accepted a US$1.1 million bribe from U.S. aircraft manufacturer Lockheed Corporation to influence the Dutch government's purchase of fighter aircraft.
-At the time he had served on more than 300 corporate boards and committees worldwide and had been praised in the Netherlands for his efforts to promote the economic well-being of the country.
-Prime Minister of the Netherlands Joop den Uyl ordered an inquiry into the Lockheed affair.
-Prince Bernhard refused to answer reporters' questions, stating: "I am above such things".
-They also brought up records of Prince Bernhard's Reiter SS membership and details of his numerous extramarital affairs.
-Bernhard had an older illegitimate daughter, Alicia, born in the United States (with a German pilot whom he met in Mexico in 1951).
-On 26 August 1976, a full report of Prince Bernhard's activities was released to a shocked Dutch public.
-The Prince's own letter of 1974, to Lockheed Corporation, was publicised; he had demanded "commissions" be paid to him on Dutch government aircraft purchases.
-Out of respect for Queen Juliana, the government did not press charges against Bernhard.
-Prince Bernhard resigned as Inspector-General of the Dutch Armed Forces.
-Prime Minister Joop den Uyl made a statement in Parliament and told the delegates that the Prince would also resign from his various high-profile positions in businesses, charities, and other institutions.
-Prince Bernhard turned over the Presidency of the international World Wildlife Fund to Prince Philip, Duke of Edinburgh.
-In an interview published after his death, on 14 December 2004, Prince Bernhard admitted that he had accepted more than one million dollars (US) in bribes from Lockheed.
-In February 2008, Joop den Uyl's biography claimed that the official report investigating the Lockheed bribe scandal also presented proof that the Prince had accepted money from yet another aerospace firm:
-Project Lock
-
-In 1988, Prince Bernhard and Princess Juliana sold two paintings from their personal collection to raise money for the World Wildlife Fund.
-In 1989, however, Charles de Haes, Director-General of the WWF, transferred £500,000 back to Bernhard, for what De Haes called a private project.
-In 1991, newspapers reported that WWF was acting as a front for an operation involving people of military and intelligence background and under the leadership or coordination of Prince Bernhard, who had hired KAS International or KAS Enterprises, a private contractor owned by Special Air Service founder Sir David Stirling, to use mercenaries – mostly British – to ostensibly fight poachers in nature reserves.
-Prince Bernhard was never accused of any crime in this context, but the Project Lock scandal negatively impacted the Prince's reputation.
-Additional controversies and rumours
-
-Prince Bernhard garnered media attention when, on 30 October 2002, he paid the fines of two Albert Heijn supermarket staff members, who were convicted of assaulting a shoplifter after they detained him.
-High Stakes at the Court of His Royal Highness by historian Harry Veenendaal and journalist Jort Kelder alleges that the Prince in 1950 attempted to oust the young government of the newly founded Republic of Indonesia and place himself to lead the islands as viceroy similar to Lord Mountbatten's role in British India.
-This was particularly contentious as in 1949 the Netherlands had already officially recognised its former colony as an independent nation.
-A 2016 biography by Jolande Withuis about Queen Juliana, titled Juliana, posited further rumours including that Bernhard had once sexually assaulted a minor, that he had refused to divorce the queen twice, and that later on during their final years in life he prohibited Juliana from seeing him.
-Later life and death
-
-In 1994, the Prince had a colon tumour removed and suffered severe complications due to respiratory distress.
-In December, his daughter Queen Beatrix rushed to the hospital straight after landing from a trip to Africa.
-Two days after intensive medical attention the Royal Press Office issued a statement the Prince was reading newspapers again.
-Over the following years Bernhard continued to appear at the military parades on the national liberation day celebrating the defeat of Nazi Germany.
-Only when Juliana died in March 2004 did Bernhard become exceedingly fragile.
-Bernhard died of lung cancer at the age of 93 at University Medical Center Utrecht in Utrecht on 1 December 2004.
-Bernhard's funeral was different from those of Prince Claus and Queen Juliana in that Bernhard's coffin was transported on the undercarriage of a cannon instead of in the traditional carriage used when the coffins of Prince Claus and Queen Juliana were transported to Delft.
-Together with the playing of many military marches and the forming of guards of honour by Second World War veterans this gave the funeral procession a military character as the late Prince, a Second World War veteran, had wished.
-As a final tribute to his former military role in the Royal Netherlands Air Force, three modern F-16 jet fighters and a World War II Spitfire plane performed a low flypast during the funeral in a classic missing man formation.
-In popular culture
-
-In the years after Bernhard died his life story has been the inspiration for literature, theatre, television and comic books.
-In 2010 fact and fiction of the life of Bernhard was portrayed in a Dutch television series.
-In a biographical dissertation by Dutch journalist and historian Annejet van der Zijl published in March 2010, Bernhard was called "a failure" in the history of the Dutch royal family and a "creature of his own myths".
-Titles, styles and honours
-
-Titles
-
-Honours
-
-National honours
-
-Foreign honours
-
-Military ranks
-
-Netherlands
-
-Discharged from all military functions in September 1976
-
-
-Honorary foreign ranks
-
-
-
-
-Ancestry
-
-References
-
-External links
-
-2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
-3 title granted by Royal Decree to descendants of Princess Irene
+Count Ingolf usually takes part in major public events associated with the royal family; he and Countess Sussie attended the May 2004 wedding of Crown Prince Frederik at Copenhagen Cathedral, and the subsequent reception at Fredensborg Palace.
+On some occasions, they are listed as members of the royal family, such as when they attended the wedding of Prince Joachim in 2008 and the luncheon to celebrate the 75th birthday of Prince Henrik at Fredensborg Palace on 11 June 2009 On other occasions, such as the celebrations for the Queen's 70th birthday, they are listed along with non-royal guests, but even in these cases at the ceremonies themselves they are usually given precedence immediately after his sister Princess Elisabeth of Denmark.
+Count Ingolf and Countess Sussie attended the Queen's ruby-jubilee (40th-anniversary) celebrations.
+In 1964, when still Prince Ingolf, he acted as groomsman to his third cousin, Constantine II of Greece, on his marriage to Princess Anne-Marie of Denmark (also Ingolf's first cousin).
+Ingolf receives an annual allowance of 1.4 million kroner according to the Danish Royal House website.
+His sister, Princess Elisabeth, did not receive such an allowance, though she remained in the line of succession.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -300,39 +126,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -347,6 +143,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -364,6 +177,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -431,29 +259,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -462,6 +282,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -474,6 +302,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -482,17 +312,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -520,6 +352,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -535,155 +451,244 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (15d26f7e-4e20-4aa9-85da-160dbf711b76)
- Call ID: 15d26f7e-4e20-4aa9-85da-160dbf711b76
+  AssignClass (d94a51e9-5b37-4394-8bfb-3cd61769f975)
+ Call ID: d94a51e9-5b37-4394-8bfb-3cd61769f975
   Args:
     type: :Man
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-  AddLiteral (d33151a2-1718-4f06-be21-558c2014347a)
- Call ID: d33151a2-1718-4f06-be21-558c2014347a
+    source: Ingolf_of_Rosenborg
+  AssignClass (60d77800-ecdc-4583-a140-e91c3090320f)
+ Call ID: 60d77800-ecdc-4583-a140-e91c3090320f
   Args:
+    source: Ingolf_of_Rosenborg
+    type: :Person
+  AddLiteral (b0a04fbf-3d86-437f-8c03-41a202809e8a)
+ Call ID: b0a04fbf-3d86-437f-8c03-41a202809e8a
+  Args:
+    literal_value: 1940
     literal_type: xsd:integer
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-    literal_value: 1911
+    source: Ingolf_of_Rosenborg
     relation: :hasBirthYear
-  AddLiteral (df4570da-4a1d-4c10-9fe4-b7c8628aa7a6)
- Call ID: df4570da-4a1d-4c10-9fe4-b7c8628aa7a6
+  AddLiteral (e45444d5-5d51-458e-85d1-6777defb9fad)
+ Call ID: e45444d5-5d51-458e-85d1-6777defb9fad
   Args:
-    literal_value: 2004
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AssignClass (3319c769-09cc-4be7-9645-adf18fc71c34)
- Call ID: 3319c769-09cc-4be7-9645-adf18fc71c34
+    relation: :knownAs
+    source: Ingolf_of_Rosenborg
+    literal_value: Count Ingolf of Rosenborg
+    literal_type: xsd:string
+  AssignClass (dd6f50fd-b682-46a1-b620-36e14ae4fed2)
+ Call ID: dd6f50fd-b682-46a1-b620-36e14ae4fed2
+  Args:
+    source: Knud_of_Denmark
+    type: :Man
+  AssignClass (f8b3588a-7dd6-4e11-815c-c6ae6044fcea)
+ Call ID: f8b3588a-7dd6-4e11-815c-c6ae6044fcea
+  Args:
+    type: :Person
+    source: Knud_of_Denmark
+  AddTriple (90e4d91d-26d2-4144-9bd4-002b2c636dcc)
+ Call ID: 90e4d91d-26d2-4144-9bd4-002b2c636dcc
+  Args:
+    target: Knud_of_Denmark
+    relation: :hasFather
+    source: Ingolf_of_Rosenborg
+  AssignClass (e9e68b90-bf8b-4acf-9d03-d8d9e41ae582)
+ Call ID: e9e68b90-bf8b-4acf-9d03-d8d9e41ae582
+  Args:
+    type: :Man
+    source: Christian_X_of_Denmark
+  AssignClass (cf2ac6ff-b8e7-48b1-816b-88318b5e95e4)
+ Call ID: cf2ac6ff-b8e7-48b1-816b-88318b5e95e4
+  Args:
+    source: Christian_X_of_Denmark
+    type: :Person
+  AddTriple (386609c4-94e9-4c85-8349-831a9544b037)
+ Call ID: 386609c4-94e9-4c85-8349-831a9544b037
+  Args:
+    source: Knud_of_Denmark
+    relation: :hasFather
+    target: Christian_X_of_Denmark
+  AssignClass (ea0d83c7-9bbf-4c2e-9b0c-f87ce947119d)
+ Call ID: ea0d83c7-9bbf-4c2e-9b0c-f87ce947119d
+  Args:
+    type: :Man
+    source: Christian_of_Rosenborg
+  AssignClass (ab11ee42-6e16-486d-9f18-da3d793563ea)
+ Call ID: ab11ee42-6e16-486d-9f18-da3d793563ea
+  Args:
+    source: Christian_of_Rosenborg
+    type: :Person
+  AddTriple (bc7af22a-9b3d-4759-bceb-62d84ebdfb20)
+ Call ID: bc7af22a-9b3d-4759-bceb-62d84ebdfb20
+  Args:
+    source: Christian_of_Rosenborg
+    target: Ingolf_of_Rosenborg
+    relation: :isBrotherOf
+  AssignClass (f3381db1-968c-4739-8762-a0e5d085fc88)
+ Call ID: f3381db1-968c-4739-8762-a0e5d085fc88
+  Args:
+    source: Elisabeth_of_Denmark
+    type: :Woman
+  AssignClass (4c42619f-5639-4620-aead-e50d4192f03e)
+ Call ID: 4c42619f-5639-4620-aead-e50d4192f03e
+  Args:
+    type: :Person
+    source: Elisabeth_of_Denmark
+  AddTriple (16cf07b5-1b78-4524-a035-8c6af65c7107)
+ Call ID: 16cf07b5-1b78-4524-a035-8c6af65c7107
+  Args:
+    source: Elisabeth_of_Denmark
+    target: Ingolf_of_Rosenborg
+    relation: :isSisterOf
+  AssignClass (3d548eeb-93b5-42bf-9a4c-cc469ff85eaf)
+ Call ID: 3d548eeb-93b5-42bf-9a4c-cc469ff85eaf
   Args:
     type: :Woman
-    source: Queen_Juliana
-  AddLiteral (decd27c4-a486-49d2-b0c8-b76f29959ac0)
- Call ID: decd27c4-a486-49d2-b0c8-b76f29959ac0
+    source: Inge_Terney
+  AssignClass (5a3e5ec2-105c-4a14-a7b9-0e3c73e42a1b)
+ Call ID: 5a3e5ec2-105c-4a14-a7b9-0e3c73e42a1b
   Args:
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-    literal_value: 1937
+    source: Inge_Terney
+    type: :Person
+  AddLiteral (5ef70e4a-e812-454e-959c-26cd9b74274e)
+ Call ID: 5ef70e4a-e812-454e-959c-26cd9b74274e
+  Args:
+    relation: :hasBirthYear
+    source: Inge_Terney
+    literal_type: xsd:integer
+    literal_value: 1938
+  AddLiteral (e17d05f3-9d20-4ffc-b4f4-b48c9601c9ca)
+ Call ID: e17d05f3-9d20-4ffc-b4f4-b48c9601c9ca
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1996
+    relation: :hasDeathYear
+    source: Inge_Terney
+  AddLiteral (53e21051-b78a-401a-9a77-6ec9c728e927)
+ Call ID: 53e21051-b78a-401a-9a77-6ec9c728e927
+  Args:
+    literal_value: 1968
     literal_type: xsd:integer
     relation: :hasMarriageYear
-  AddTriple (151c3053-07a5-4ec3-9c90-f16b53773746)
- Call ID: 151c3053-07a5-4ec3-9c90-f16b53773746
+    source: Ingolf_of_Rosenborg
+  AssignClass (1a8f43c3-6a07-4712-8bb2-e5bb779effc4)
+ Call ID: 1a8f43c3-6a07-4712-8bb2-e5bb779effc4
   Args:
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-    relation: :hasRelation
-    target: Queen_Juliana
-  AssignClass (90a14f09-c719-4d02-8728-837e24de2ec8)
- Call ID: 90a14f09-c719-4d02-8728-837e24de2ec8
+    source: Georg_Terney
+    type: :Man
+  AssignClass (9adb7411-a678-4bce-ad50-129008f18b4c)
+ Call ID: 9adb7411-a678-4bce-ad50-129008f18b4c
   Args:
-    type: :Woman
-    source: Queen_Beatrix
-  AddTriple (7d457b41-8db2-440c-851b-be893c3fbd37)
- Call ID: 7d457b41-8db2-440c-851b-be893c3fbd37
+    type: :Person
+    source: Georg_Terney
+  AddLiteral (860aacb5-aab4-4102-856e-0daab375471b)
+ Call ID: 860aacb5-aab4-4102-856e-0daab375471b
   Args:
-    source: Queen_Beatrix
-    target: Prince_Bernhard_of_Lippe-Biesterfeld
-    relation: :isDaughterOf
-  AddTriple (4ce91cf9-a4a3-48a9-9cd3-fe16dac88dcb)
- Call ID: 4ce91cf9-a4a3-48a9-9cd3-fe16dac88dcb
+    literal_type: xsd:integer
+    literal_value: 1906
+    source: Georg_Terney
+    relation: :hasBirthYear
+  AddLiteral (5f0f8906-3f31-4222-8737-d6bd587a0750)
+ Call ID: 5f0f8906-3f31-4222-8737-d6bd587a0750
   Args:
-    source: Queen_Beatrix
-    relation: :isDaughterOf
-    target: Queen_Juliana
-  AssignClass (fd325369-b6d5-4340-be46-3cdf2fca9613)
- Call ID: fd325369-b6d5-4340-be46-3cdf2fca9613
+    literal_type: xsd:integer
+    literal_value: 1977
+    source: Georg_Terney
+    relation: :hasDeathYear
+  AddTriple (fec832b0-c160-4385-b4eb-30a52fbb24d8)
+ Call ID: fec832b0-c160-4385-b4eb-30a52fbb24d8
   Args:
-    type: :Woman
-    source: Irene
-  AddTriple (36d6df01-b020-4cd0-a179-df82e54d0416)
- Call ID: 36d6df01-b020-4cd0-a179-df82e54d0416
-  Args:
-    source: Irene
-    relation: :isDaughterOf
-    target: Prince_Bernhard_of_Lippe-Biesterfeld
-  AddTriple (e59e9301-1138-48f9-b21e-1374de22d365)
- Call ID: e59e9301-1138-48f9-b21e-1374de22d365
-  Args:
-    source: Irene
-    relation: :isDaughterOf
-    target: Queen_Juliana
-  AssignClass (b8ebf11a-b8da-4e45-8b0b-11665964a682)
- Call ID: b8ebf11a-b8da-4e45-8b0b-11665964a682
+    source: Georg_Terney
+    relation: :isFatherOf
+    target: Inge_Terney
+  AssignClass (8a4a0286-1680-4de4-82d4-b9557cbf2a4d)
+ Call ID: 8a4a0286-1680-4de4-82d4-b9557cbf2a4d
   Args:
     type: :Woman
-    source: Margriet
-  AddTriple (3a4a6379-89ce-4a56-9cff-a819c63c0b85)
- Call ID: 3a4a6379-89ce-4a56-9cff-a819c63c0b85
+    source: Jenny_Kamilla_Hansen
+  AssignClass (2500d468-639c-4e19-8849-dc841fbe68e9)
+ Call ID: 2500d468-639c-4e19-8849-dc841fbe68e9
   Args:
-    source: Margriet
-    relation: :isDaughterOf
-    target: Prince_Bernhard_of_Lippe-Biesterfeld
-  AddTriple (e4c91cc7-93e3-43bf-86d6-9455dd4d0acc)
- Call ID: e4c91cc7-93e3-43bf-86d6-9455dd4d0acc
+    source: Jenny_Kamilla_Hansen
+    type: :Person
+  AddLiteral (199af902-4209-49c2-bfb2-6abb4823d0de)
+ Call ID: 199af902-4209-49c2-bfb2-6abb4823d0de
   Args:
-    source: Margriet
-    target: Queen_Juliana
-    relation: :isDaughterOf
-  AssignClass (e76cfd9d-b627-4aa1-bd16-5391859e3f36)
- Call ID: e76cfd9d-b627-4aa1-bd16-5391859e3f36
+    relation: :hasBirthYear
+    source: Jenny_Kamilla_Hansen
+    literal_type: xsd:integer
+    literal_value: 1908
+  AddLiteral (f299d30c-93ab-4302-a1ba-fd51feb854d9)
+ Call ID: f299d30c-93ab-4302-a1ba-fd51feb854d9
   Args:
+    literal_type: xsd:integer
+    literal_value: 1990
+    relation: :hasDeathYear
+    source: Jenny_Kamilla_Hansen
+  AddTriple (7f1b4044-5d80-4d9b-9ecc-edb1ad56696c)
+ Call ID: 7f1b4044-5d80-4d9b-9ecc-edb1ad56696c
+  Args:
+    target: Inge_Terney
+    relation: :isMotherOf
+    source: Jenny_Kamilla_Hansen
+  AssignClass (65aaa4c0-23a4-4d4f-9b48-bff7f7ba8efd)
+ Call ID: 65aaa4c0-23a4-4d4f-9b48-bff7f7ba8efd
+  Args:
+    source: Sussie_Hjorhøy-Pedersen
     type: :Woman
-    source: Christina
-  AddTriple (ce814f77-318b-4e75-8adc-89a4328558cd)
- Call ID: ce814f77-318b-4e75-8adc-89a4328558cd
+  AssignClass (43037298-d697-45f8-94b7-a9dabe812db9)
+ Call ID: 43037298-d697-45f8-94b7-a9dabe812db9
   Args:
-    target: Prince_Bernhard_of_Lippe-Biesterfeld
-    relation: :isDaughterOf
-    source: Christina
-  AddTriple (6d687601-243b-4668-987b-1d5d98ac3c98)
- Call ID: 6d687601-243b-4668-987b-1d5d98ac3c98
+    source: Sussie_Hjorhøy-Pedersen
+    type: :Person
+  AddLiteral (a8085545-8cc2-45d3-99e3-920a5e1f9007)
+ Call ID: a8085545-8cc2-45d3-99e3-920a5e1f9007
   Args:
-    source: Christina
-    relation: :isDaughterOf
-    target: Queen_Juliana
-  AssignClass (3518c13d-c7fe-497d-b56c-a9eb9453fd43)
- Call ID: 3518c13d-c7fe-497d-b56c-a9eb9453fd43
+    source: Sussie_Hjorhøy-Pedersen
+    relation: :hasBirthYear
+    literal_value: 1950
+    literal_type: xsd:integer
+  AssignClass (9a85ccc7-72dd-43d1-a7b5-58fbfdd96880)
+ Call ID: 9a85ccc7-72dd-43d1-a7b5-58fbfdd96880
   Args:
     type: :Man
-    source: Prince_Bernhard_of_Lippe
-  AssignClass (0eaec9ff-56ed-4c66-8049-8ea97680dbd2)
- Call ID: 0eaec9ff-56ed-4c66-8049-8ea97680dbd2
+    source: Frederick_Walter_Pedersen
+  AssignClass (cf2d25c2-4ef4-471d-88cf-f4c17f18c458)
+ Call ID: cf2d25c2-4ef4-471d-88cf-f4c17f18c458
+  Args:
+    source: Frederick_Walter_Pedersen
+    type: :Person
+  AddTriple (9344014d-ac55-4e62-8fdd-4a20fd5c22ec)
+ Call ID: 9344014d-ac55-4e62-8fdd-4a20fd5c22ec
+  Args:
+    source: Frederick_Walter_Pedersen
+    target: Sussie_Hjorhøy-Pedersen
+    relation: :isFatherOf
+  AssignClass (b35ae92a-b3ac-49de-95b9-b88a701b2993)
+ Call ID: b35ae92a-b3ac-49de-95b9-b88a701b2993
   Args:
     type: :Woman
-    source: Baroness_Armgard_von_Sierstorpff-Cramm
-  AddTriple (115789f4-20f2-4ba9-a71e-1c88f2327e54)
- Call ID: 115789f4-20f2-4ba9-a71e-1c88f2327e54
+    source: Ruth_Hjorhøy
+  AssignClass (a15cb929-6f6a-4712-996c-204f4fe51163)
+ Call ID: a15cb929-6f6a-4712-996c-204f4fe51163
   Args:
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-    relation: :hasFather
-    target: Prince_Bernhard_of_Lippe
-  AddTriple (e6d848ff-6ec6-4aba-8c7f-49217457b422)
- Call ID: e6d848ff-6ec6-4aba-8c7f-49217457b422
+    source: Ruth_Hjorhøy
+    type: :Person
+  AddTriple (99351263-bb04-4ece-b762-58237fb99a6e)
+ Call ID: 99351263-bb04-4ece-b762-58237fb99a6e
   Args:
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-    target: Baroness_Armgard_von_Sierstorpff-Cramm
-    relation: :hasMother
-  AssignClass (fdee2fd9-8672-4592-8747-a3b95c923c17)
- Call ID: fdee2fd9-8672-4592-8747-a3b95c923c17
-  Args:
-    type: :Woman
-    source: Alicia
-  AddTriple (0d9fda48-44a9-4712-a503-0b722585a197)
- Call ID: 0d9fda48-44a9-4712-a503-0b722585a197
-  Args:
-    relation: :isDaughterOf
-    target: Prince_Bernhard_of_Lippe-Biesterfeld
-    source: Alicia
-  AssignClass (367dbc21-2449-4a4f-99c4-ad5936c45475)
- Call ID: 367dbc21-2449-4a4f-99c4-ad5936c45475
+    relation: :isMotherOf
+    target: Sussie_Hjorhøy-Pedersen
+    source: Ruth_Hjorhøy
+  AssignClass (7c29b552-5795-422e-aa11-7c8b481bcacb)
+ Call ID: 7c29b552-5795-422e-aa11-7c8b481bcacb
   Args:
     type: :Man
-    source: Jonathan_Aitken
-  AddTriple (d5ca2468-f69e-46cf-9e3c-a4781271496f)
- Call ID: d5ca2468-f69e-46cf-9e3c-a4781271496f
+    source: Leopold_Rosanes_af_Rosenborg
+  AssignClass (ce5a9eb8-03df-4720-b2ca-c8e29ead35b6)
+ Call ID: ce5a9eb8-03df-4720-b2ca-c8e29ead35b6
   Args:
-    relation: :isSonOf
-    target: Prince_Bernhard_of_Lippe-Biesterfeld
-    source: Jonathan_Aitken
-  Finish (9e62cde5-9963-4094-970d-b4b610c24c08)
- Call ID: 9e62cde5-9963-4094-970d-b4b610c24c08
+    type: :Person
+    source: Leopold_Rosanes_af_Rosenborg
+  Finish (660696ae-8002-4d0d-94b1-c0a2add7c1ca)
+ Call ID: 660696ae-8002-4d0d-94b1-c0a2add7c1ca
   Args:

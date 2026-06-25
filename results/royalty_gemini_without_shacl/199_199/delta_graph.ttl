@@ -2,34 +2,19 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Konstantin_Gustav_Heinrich_Richard a :Man,
+data:Fernando_Sanz_y_Martinez_de_Arizala a :Man,
         :Person ;
-    :hasFather data:Alexander_Johannsmann ;
-    :hasMother data:Nathalie_of_Sayn-Wittgenstein-Berleburg .
+    :hasBirthYear 1881 ;
+    :hasDeathYear 1925 ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Elena_Sanz ;
+    :knownAs "Fernando \"Fernand\" Sanz y Martínez de Arizala"^^xsd:string .
 
-data:Louisa_Margareta_Benedikte_Hanna a :Person,
-        :Woman ;
-    :hasFather data:Alexander_Johannsmann ;
-    :hasMother data:Nathalie_of_Sayn-Wittgenstein-Berleburg .
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man,
+        :Person .
 
-data:Benedikte_of_Denmark a :Person,
+data:Elena_Sanz a :Ancestor,
+        :Person,
         :Woman .
-
-data:Heinrich-Wilhelm_Johannsmann a :Man,
-        :Person .
-
-data:Richard_of_Sayn-Wittgenstein-Berleburg a :Man,
-        :Person .
-
-data:Alexander_Johannsmann a :Man,
-        :Person ;
-    :hasBirthYear 1977 ;
-    :hasFather data:Heinrich-Wilhelm_Johannsmann .
-
-data:Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,
-        :Woman ;
-    :hasBirthYear 1975 ;
-    :hasFather data:Richard_of_Sayn-Wittgenstein-Berleburg ;
-    :hasMarriageYear 2010 ;
-    :hasMother data:Benedikte_of_Denmark .
 

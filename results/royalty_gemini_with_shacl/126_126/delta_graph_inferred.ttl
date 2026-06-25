@@ -1,0 +1,108 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasChild data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Princess_Anne_of_Bourbon-Two_Sicilies,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Henri_Count_of_Paris ;
+    :isBrotherOf data:Henri_Count_of_Paris ;
+    :isFatherOf data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Henri_Count_of_Paris ;
+    :isUncleOf data:Princess_Anne_of_Bourbon-Two_Sicilies .
+
+data:Infanta_Alicia_Duchess_of_Calabria a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Carlos_Duke_of_Calabria ;
+    :hasRelation data:Infanta_Alicia_Duchess_of_Calabria,
+        data:Infante_Alfonso_Duke_of_Calabria,
+        data:Prince_Carlos_Duke_of_Calabria ;
+    :hasSister data:Infanta_Alicia_Duchess_of_Calabria ;
+    :hasSon data:Prince_Carlos_Duke_of_Calabria ;
+    :isAncestorOf data:Prince_Carlos_Duke_of_Calabria ;
+    :isAuntOf data:Prince_Carlos_Duke_of_Calabria ;
+    :isBloodrelationOf data:Infanta_Alicia_Duchess_of_Calabria ;
+    :isMotherOf data:Prince_Carlos_Duke_of_Calabria ;
+    :isParentOf data:Prince_Carlos_Duke_of_Calabria ;
+    :isSiblingOf data:Infanta_Alicia_Duchess_of_Calabria ;
+    :isSisterOf data:Infanta_Alicia_Duchess_of_Calabria .
+
+data:Infante_Alfonso_Duke_of_Calabria a :Ancestor,
+        :Man ;
+    :hasBrother data:Infante_Alfonso_Duke_of_Calabria ;
+    :hasChild data:Prince_Carlos_Duke_of_Calabria ;
+    :hasRelation data:Infanta_Alicia_Duchess_of_Calabria,
+        data:Infante_Alfonso_Duke_of_Calabria,
+        data:Prince_Carlos_Duke_of_Calabria ;
+    :hasSon data:Prince_Carlos_Duke_of_Calabria ;
+    :isAncestorOf data:Prince_Carlos_Duke_of_Calabria ;
+    :isBloodrelationOf data:Infante_Alfonso_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Alfonso_Duke_of_Calabria ;
+    :isFatherOf data:Prince_Carlos_Duke_of_Calabria ;
+    :isParentOf data:Prince_Carlos_Duke_of_Calabria ;
+    :isSiblingOf data:Infante_Alfonso_Duke_of_Calabria ;
+    :isUncleOf data:Prince_Carlos_Duke_of_Calabria .
+
+data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Princess_Anne_of_Bourbon-Two_Sicilies,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasSister data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isMotherOf data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isSisterOf data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .
+
+data:Prince_Carlos_Duke_of_Calabria a :Man ;
+    :hasAncestor data:Infanta_Alicia_Duchess_of_Calabria,
+        data:Infante_Alfonso_Duke_of_Calabria ;
+    :hasBrother data:Prince_Carlos_Duke_of_Calabria ;
+    :hasDeathYear 2015 ;
+    :hasFather data:Infante_Alfonso_Duke_of_Calabria ;
+    :hasMother data:Infanta_Alicia_Duchess_of_Calabria ;
+    :hasParent data:Infanta_Alicia_Duchess_of_Calabria,
+        data:Infante_Alfonso_Duke_of_Calabria ;
+    :hasRelation data:Infanta_Alicia_Duchess_of_Calabria,
+        data:Infante_Alfonso_Duke_of_Calabria,
+        data:Prince_Carlos_Duke_of_Calabria ;
+    :isBloodrelationOf data:Prince_Carlos_Duke_of_Calabria ;
+    :isBrotherOf data:Prince_Carlos_Duke_of_Calabria ;
+    :isChildOf data:Infanta_Alicia_Duchess_of_Calabria,
+        data:Infante_Alfonso_Duke_of_Calabria ;
+    :isSiblingOf data:Prince_Carlos_Duke_of_Calabria ;
+    :isSonOf data:Infanta_Alicia_Duchess_of_Calabria,
+        data:Infante_Alfonso_Duke_of_Calabria .
+
+data:Princess_Anne_of_Bourbon-Two_Sicilies a :Woman ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasBirthYear 1938 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasParent data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Princess_Anne_of_Bourbon-Two_Sicilies,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasSister data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isDaughterOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Princess_Anne_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Princess_Anne_of_Bourbon-Two_Sicilies .
+

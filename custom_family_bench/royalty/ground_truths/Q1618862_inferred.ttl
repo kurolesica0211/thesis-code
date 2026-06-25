@@ -1,0 +1,56 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Hilmar_Bussche-Haddenhausen a :Man,
+        :Person ;
+    rdfs:label "Hilmar Bussche-Haddenhausen"^^xsd:string ;
+    data:posIndicesFull "0:44"^^xsd:string ;
+    data:posIndicesPart "1179:1186"^^xsd:string,
+        "1187:1199"^^xsd:string,
+        "132:138"^^xsd:string,
+        "1354:1361"^^xsd:string,
+        "1362:1374"^^xsd:string,
+        "1573:1580"^^xsd:string,
+        "1581:1593"^^xsd:string,
+        "1671:1678"^^xsd:string,
+        "1679:1691"^^xsd:string,
+        "1946:1953"^^xsd:string,
+        "1954:1966"^^xsd:string,
+        "215:222"^^xsd:string,
+        "346:353"^^xsd:string,
+        "354:366"^^xsd:string,
+        "463:470"^^xsd:string,
+        "471:483"^^xsd:string,
+        "526:533"^^xsd:string,
+        "534:546"^^xsd:string,
+        "666:673"^^xsd:string,
+        "674:686"^^xsd:string,
+        "769:776"^^xsd:string,
+        "777:789"^^xsd:string,
+        "872:879"^^xsd:string,
+        "880:892"^^xsd:string ;
+    data:wdtLink wdt:Q1618862 ;
+    :alsoKnownAs "Hilmar Freiherr von dem Bussche-Haddenhausen"^^xsd:string ;
+    :hasBrother data:Hilmar_Bussche-Haddenhausen ;
+    :hasRelation data:Hilmar_Bussche-Haddenhausen ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Hilmar_Bussche-Haddenhausen ;
+    :isBrotherOf data:Hilmar_Bussche-Haddenhausen ;
+    :isSiblingOf data:Hilmar_Bussche-Haddenhausen .
+

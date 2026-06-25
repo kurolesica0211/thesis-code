@@ -1,0 +1,191 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Timothy_Laurence a :Man ;
+    :hasBrother data:Timothy_Laurence ;
+    :hasRelation data:Timothy_Laurence ;
+    :isBloodrelationOf data:Timothy_Laurence ;
+    :isBrotherOf data:Timothy_Laurence ;
+    :isSiblingOf data:Timothy_Laurence .
+
+data:King_Charles_III a :Man ;
+    :hasBrother data:King_Charles_III ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:King_Charles_III,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Zara_Tindall ;
+    :hasSister data:Anne_Princess_Royal ;
+    :isBloodrelationOf data:Anne_Princess_Royal,
+        data:King_Charles_III ;
+    :isBrotherOf data:Anne_Princess_Royal,
+        data:King_Charles_III ;
+    :isSiblingOf data:Anne_Princess_Royal,
+        data:King_Charles_III ;
+    :isUncleOf data:Peter_Phillips,
+        data:Zara_Tindall .
+
+data:Prince_Philip a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Philip ;
+    :hasChild data:Anne_Princess_Royal ;
+    :hasDaughter data:Anne_Princess_Royal ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:King_Charles_III,
+        data:Peter_Phillips,
+        data:Prince_Philip,
+        data:Zara_Tindall ;
+    :isAncestorOf data:Anne_Princess_Royal,
+        data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isBloodrelationOf data:Prince_Philip ;
+    :isBrotherOf data:Prince_Philip ;
+    :isFatherOf data:Anne_Princess_Royal ;
+    :isParentOf data:Anne_Princess_Royal ;
+    :isSiblingOf data:Prince_Philip ;
+    :isUncleOf data:Anne_Princess_Royal .
+
+data:Queen_Elizabeth_II a :Ancestor,
+        :Woman ;
+    :hasChild data:Anne_Princess_Royal ;
+    :hasDaughter data:Anne_Princess_Royal ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:King_Charles_III,
+        data:Peter_Phillips,
+        data:Queen_Elizabeth_II,
+        data:Zara_Tindall ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isAncestorOf data:Anne_Princess_Royal,
+        data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isAuntOf data:Anne_Princess_Royal ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isMotherOf data:Anne_Princess_Royal ;
+    :isParentOf data:Anne_Princess_Royal ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Mark_Phillips a :Ancestor,
+        :Man ;
+    :hasBrother data:Mark_Phillips ;
+    :hasChild data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :hasDaughter data:Zara_Tindall ;
+    :hasRelation data:Mark_Phillips,
+        data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :hasSon data:Peter_Phillips ;
+    :isAncestorOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isBloodrelationOf data:Mark_Phillips ;
+    :isBrotherOf data:Mark_Phillips ;
+    :isFatherOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isParentOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isSiblingOf data:Mark_Phillips ;
+    :isUncleOf data:Peter_Phillips,
+        data:Zara_Tindall .
+
+data:Peter_Phillips a :Man ;
+    :hasAncestor data:Anne_Princess_Royal,
+        data:Mark_Phillips,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasBirthYear 1977 ;
+    :hasBrother data:Peter_Phillips ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasParent data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Mark_Phillips,
+        data:Peter_Phillips,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Zara_Tindall ;
+    :hasSister data:Zara_Tindall ;
+    :isBloodrelationOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isBrotherOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isChildOf data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :isSiblingOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isSonOf data:Anne_Princess_Royal,
+        data:Mark_Phillips .
+
+data:Zara_Tindall a :Woman ;
+    :hasAncestor data:Anne_Princess_Royal,
+        data:Mark_Phillips,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasBirthYear 1981 ;
+    :hasBrother data:Peter_Phillips ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasParent data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:King_Charles_III,
+        data:Mark_Phillips,
+        data:Peter_Phillips,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Zara_Tindall ;
+    :hasSister data:Zara_Tindall ;
+    :isBloodrelationOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isChildOf data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :isDaughterOf data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :isSiblingOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isSisterOf data:Peter_Phillips,
+        data:Zara_Tindall .
+
+data:Anne_Princess_Royal a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasBirthYear 1950 ;
+    :hasBrother data:King_Charles_III ;
+    :hasChild data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :hasDaughter data:Zara_Tindall ;
+    :hasFather data:Prince_Philip ;
+    :hasMarriageYear 1973,
+        1992 ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasParent data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:King_Charles_III,
+        data:Peter_Phillips,
+        data:Prince_Philip,
+        data:Queen_Elizabeth_II,
+        data:Zara_Tindall ;
+    :hasSister data:Anne_Princess_Royal ;
+    :hasSon data:Peter_Phillips ;
+    :isAncestorOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isAuntOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isBloodrelationOf data:Anne_Princess_Royal,
+        data:King_Charles_III ;
+    :isChildOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isDaughterOf data:Prince_Philip,
+        data:Queen_Elizabeth_II ;
+    :isMotherOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isParentOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isSiblingOf data:Anne_Princess_Royal,
+        data:King_Charles_III ;
+    :isSisterOf data:Anne_Princess_Royal,
+        data:King_Charles_III .
+

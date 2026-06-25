@@ -1,0 +1,191 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Henrik-_Prince_Consort_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Henrik, Prince Consort of Denmark"^^xsd:string ;
+    data:posIndicesFull "1182:1186"^^xsd:string,
+        "2052:2058"^^xsd:string,
+        "339:345"^^xsd:string ;
+    data:posIndicesPart "1306:1313"^^xsd:string,
+        "1574:1581"^^xsd:string,
+        "1799:1806"^^xsd:string,
+        "2277:2283"^^xsd:string,
+        "2707:2714"^^xsd:string,
+        "445:451"^^xsd:string,
+        "4573:4580"^^xsd:string,
+        "4628:4634"^^xsd:string,
+        "623:629"^^xsd:string,
+        "928:934"^^xsd:string ;
+    data:wdtLink wdt:Q1389258 ;
+    :alsoKnownAs "Enric de Monpezat"^^xsd:string,
+        "Henri Marie Jean Andre de Laborde de Monpezat"^^xsd:string,
+        "Henri Marie Jean André de Laborde de Monpezat"^^xsd:string,
+        "Henri Marie Jean André de Laborde de Monpezat, Comte de Laborde de Monpezat"^^xsd:string,
+        "Henri de Monpezat"^^xsd:string,
+        "Henrik"^^xsd:string,
+        "Prince Henrik of Denmark"^^xsd:string ;
+    :hasBrother data:Henrik-_Prince_Consort_of_Denmark ;
+    :hasChild data:Frederik_X_of_Denmark ;
+    :hasRelation data:Frederik_X_of_Denmark,
+        data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Princess_Isabella_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Frederik_X_of_Denmark ;
+    :isAncestorOf data:Frederik_X_of_Denmark,
+        data:Princess_Isabella_of_Denmark ;
+    :isBloodrelationOf data:Henrik-_Prince_Consort_of_Denmark ;
+    :isBrotherOf data:Henrik-_Prince_Consort_of_Denmark ;
+    :isFatherOf data:Frederik_X_of_Denmark ;
+    :isParentOf data:Frederik_X_of_Denmark ;
+    :isSiblingOf data:Henrik-_Prince_Consort_of_Denmark ;
+    :isUncleOf data:Frederik_X_of_Denmark .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Margrethe II of Denmark"^^xsd:string ;
+    data:posIndicesFull "315:327"^^xsd:string,
+        "3478:3490"^^xsd:string,
+        "4464:4476"^^xsd:string,
+        "6:18"^^xsd:string ;
+    data:posIndicesPart "1306:1313"^^xsd:string,
+        "1799:1806"^^xsd:string,
+        "2707:2714"^^xsd:string ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer"^^xsd:string,
+        "Margrethe II"^^xsd:string ;
+    :hasChild data:Frederik_X_of_Denmark ;
+    :hasRelation data:Frederik_X_of_Denmark,
+        data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Princess_Isabella_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark ;
+    :hasSon data:Frederik_X_of_Denmark ;
+    :isAncestorOf data:Frederik_X_of_Denmark,
+        data:Princess_Isabella_of_Denmark ;
+    :isAuntOf data:Frederik_X_of_Denmark ;
+    :isBloodrelationOf data:Margrethe_II_of_Denmark ;
+    :isMotherOf data:Frederik_X_of_Denmark ;
+    :isParentOf data:Frederik_X_of_Denmark ;
+    :isSiblingOf data:Margrethe_II_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark .
+
+data:Princess_Isabella_of_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Isabella of Denmark"^^xsd:string ;
+    data:posIndicesFull "1514:1549"^^xsd:string,
+        "21:49"^^xsd:string,
+        "21:71"^^xsd:string,
+        "4762:4790"^^xsd:string,
+        "4855:4883"^^xsd:string,
+        "4855:4905"^^xsd:string,
+        "77:112"^^xsd:string ;
+    data:posIndicesPart "1306:1313"^^xsd:string,
+        "1769:1777"^^xsd:string,
+        "1799:1806"^^xsd:string,
+        "1936:1944"^^xsd:string,
+        "2178:2186"^^xsd:string,
+        "2204:2212"^^xsd:string,
+        "2329:2337"^^xsd:string,
+        "2448:2456"^^xsd:string,
+        "2707:2714"^^xsd:string,
+        "2753:2761"^^xsd:string,
+        "2906:2914"^^xsd:string,
+        "3166:3174"^^xsd:string,
+        "3345:3353"^^xsd:string,
+        "347:355"^^xsd:string,
+        "3740:3748"^^xsd:string,
+        "3833:3841"^^xsd:string,
+        "3939:3947"^^xsd:string,
+        "4157:4165"^^xsd:string,
+        "489:497"^^xsd:string,
+        "649:657"^^xsd:string,
+        "678:686"^^xsd:string,
+        "701:709"^^xsd:string ;
+    data:wdtLink wdt:Q1429306 ;
+    :alsoKnownAs "Isabella Henrietta Ingrid Margrethe"^^xsd:string,
+        "Isabella Henrietta Ingrid Margrethe, Princess of Denmark"^^xsd:string,
+        "Princess Isabella Henrietta Ingrid Margrethe of Denmark, Countess of Monpezat"^^xsd:string,
+        "Princess Isabella of Denmark, Countess of Monpezat"^^xsd:string ;
+    :hasAncestor data:Frederik_X_of_Denmark,
+        data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :hasFather data:Frederik_X_of_Denmark ;
+    :hasParent data:Frederik_X_of_Denmark ;
+    :hasRelation data:Frederik_X_of_Denmark,
+        data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Princess_Isabella_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Isabella_of_Denmark ;
+    :isBloodrelationOf data:Princess_Isabella_of_Denmark ;
+    :isChildOf data:Frederik_X_of_Denmark ;
+    :isDaughterOf data:Frederik_X_of_Denmark ;
+    :isSiblingOf data:Princess_Isabella_of_Denmark ;
+    :isSisterOf data:Princess_Isabella_of_Denmark .
+
+data:Frederik_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederik X of Denmark"^^xsd:string ;
+    data:posIndicesFull "225:235"^^xsd:string ;
+    data:posIndicesPart "1306:1313"^^xsd:string,
+        "1799:1806"^^xsd:string,
+        "2707:2714"^^xsd:string,
+        "3257:3265"^^xsd:string,
+        "4573:4580"^^xsd:string,
+        "630:638"^^xsd:string ;
+    data:wdtLink wdt:Q1004037 ;
+    :alsoKnownAs "Frederik André Henrik Christian"^^xsd:string,
+        "Frederik André Henrik Christian of Denmark"^^xsd:string,
+        "Frederik André Henrik Christian, Crown Prince of Denmark"^^xsd:string,
+        "Frederik Henriksen"^^xsd:string,
+        "Frederik X"^^xsd:string,
+        "Frederik of Denmark"^^xsd:string,
+        "Frederik of Denmark, Count of Monpezat"^^xsd:string ;
+    :hasAncestor data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :hasBrother data:Frederik_X_of_Denmark ;
+    :hasChild data:Princess_Isabella_of_Denmark ;
+    :hasDaughter data:Princess_Isabella_of_Denmark ;
+    :hasFather data:Henrik-_Prince_Consort_of_Denmark ;
+    :hasMother data:Margrethe_II_of_Denmark ;
+    :hasParent data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :hasRelation data:Frederik_X_of_Denmark,
+        data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Princess_Isabella_of_Denmark ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Isabella_of_Denmark ;
+    :isBloodrelationOf data:Frederik_X_of_Denmark ;
+    :isBrotherOf data:Frederik_X_of_Denmark ;
+    :isChildOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :isFatherOf data:Princess_Isabella_of_Denmark ;
+    :isParentOf data:Princess_Isabella_of_Denmark ;
+    :isSiblingOf data:Frederik_X_of_Denmark ;
+    :isSonOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :isUncleOf data:Princess_Isabella_of_Denmark .
+

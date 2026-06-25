@@ -7,10 +7,8 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Albemarle_Bowes-Lyon a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Albemarle Bowes-Lyon" ;
+data:Michael_Bowes-Lyon a :Person ;
+    rdfs:label "Michael Bowes-Lyon" ;
     data:posIndicesFull "224:242",
         "674:692" ;
     data:posIndicesPart "2657:2661",
@@ -20,14 +18,19 @@ data:Albemarle_Bowes-Lyon a :Man,
         "604:608",
         "643:648",
         "649:653" ;
-    data:wdtLink wdt:Q75248478 ;
-    :alsoKnownAs "Hon. Albemarle Bowes-Lyon",
-        "Hon. Michael Albemarle Bowes-Lyon",
-        "Hon. Michael Bowes-Lyon",
-        "Michael Albemarle Bowes-Lyon",
-        "Michael Bowes-Lyon" ;
-    :hasSex data:male ;
-    :isUncleOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne .
+    data:wdtLink wdt:Q63806478 ;
+    :alsoKnownAs "Hon. Michael Bowes-Lyon",
+        "Hon. Michael Claude Hamilton Bowes-Lyon",
+        "Michael Claude Hamilton Bowes-Lyon" ;
+    :hasSex data:male .
+
+data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne a :Person ;
+    rdfs:label "Simon Bowes-Lyon, 19th Earl of Strathmore and Kinghorne" ;
+    data:wdtLink wdt:Q7518316 ;
+    :alsoKnownAs "Simon Patrick Bowes-Lyon, 19th Earl of Strathmore and Kinghorne" ;
+    :hasParent data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male .
 
 data:posIndicesFull a owl:AnnotationProperty .
 
@@ -35,10 +38,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Isobel_Weatherall a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Isobel_Weatherall a :Person ;
     rdfs:label "Isobel Weatherall" ;
     data:posIndicesFull "303:320",
         "821:838" ;
@@ -50,16 +50,9 @@ data:Isobel_Weatherall a :Ancestor,
         "Isobel Charlotte Weatherall",
         "Isobel Charlotte, Countess of Strathmore and Kinghorne",
         "Isobel, Countess of Strathmore and Kinghorne" ;
-    :hasChild data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
-    :hasSex data:female ;
-    :hasSon data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
-    :isMotherOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
-    :isParentOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne .
+    :hasSex data:female .
 
-data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne a :Person ;
     rdfs:label "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne" ;
     data:posIndicesFull "224:242",
         "224:281",
@@ -92,25 +85,9 @@ data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
     data:wdtLink wdt:Q335615 ;
     :alsoKnownAs "Michael Bowes-Lyon",
         "Michael Bowes-Lyon, The Earl of Strathmore and Kinghorne" ;
-    :hasChild data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
-    :hasSex data:male ;
-    :hasSon data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
-    :isFatherOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne ;
-    :isParentOf data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne .
+    :hasSex data:male .
 
-data:Simon_Bowes-Lyon-_19th_Earl_of_Strathmore_and_Kinghorne a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Simon Bowes-Lyon, 19th Earl of Strathmore and Kinghorne" ;
-    data:wdtLink wdt:Q7518316 ;
-    :alsoKnownAs "Simon Patrick Bowes-Lyon, 19th Earl of Strathmore and Kinghorne" ;
-    :hasFather data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
-    :hasMother data:Isobel_Weatherall ;
-    :hasParent data:Isobel_Weatherall,
-        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
-    :hasSex data:male ;
-    :isChildOf data:Isobel_Weatherall,
-        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
-    :isSonOf data:Isobel_Weatherall,
-        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne .
+data:female a :Female .
+
+data:male a :Male .
 

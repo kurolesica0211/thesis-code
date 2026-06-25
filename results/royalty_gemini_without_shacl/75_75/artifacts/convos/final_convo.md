@@ -162,6 +162,8 @@ In the 1986 miniseries Anastasia: The Mystery of Anna, Sir Rex Harrison portraye
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -177,39 +179,9 @@ In the 1986 miniseries Anastasia: The Mystery of Anna, Sir Rex Harrison portraye
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -224,6 +196,23 @@ In the 1986 miniseries Anastasia: The Mystery of Anna, Sir Rex Harrison portraye
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -241,6 +230,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -308,29 +312,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -339,6 +335,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -351,6 +355,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -359,17 +365,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -397,6 +405,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -412,177 +504,210 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9e27108a-a0c1-4d95-8076-5cf38bdf5c3c)
- Call ID: 9e27108a-a0c1-4d95-8076-5cf38bdf5c3c
+  AssignClass (d430665c-8a56-4027-bb87-5f31c1aebe0f)
+ Call ID: d430665c-8a56-4027-bb87-5f31c1aebe0f
   Args:
     type: :Man
     source: Kirill_Vladimirovich_Romanov
-  AssignClass (f05c0442-f328-43eb-9e43-1e49518c4425)
- Call ID: f05c0442-f328-43eb-9e43-1e49518c4425
+  AssignClass (f0f63056-7535-46c9-9099-fdcfe07502d4)
+ Call ID: f0f63056-7535-46c9-9099-fdcfe07502d4
   Args:
-    source: Kirill_Vladimirovich_Romanov
-    type: :Person
-  AddLiteral (0e4422f8-49dc-4fcc-af21-ddbd3c0e50e5)
- Call ID: 0e4422f8-49dc-4fcc-af21-ddbd3c0e50e5
+    source: Vladimir_Alexandrovich
+    type: :Man
+  AssignClass (72c5333b-f255-4fab-a651-91db26a5d427)
+ Call ID: 72c5333b-f255-4fab-a651-91db26a5d427
+  Args:
+    type: :Man
+    source: Alexander_II
+  AssignClass (77f30805-f168-4f3c-b7e0-e61b76f4eb39)
+ Call ID: 77f30805-f168-4f3c-b7e0-e61b76f4eb39
+  Args:
+    source: Maria_Pavlovna
+    type: :Woman
+  AssignClass (5d8e0991-cf98-4990-abf1-3de0083e9965)
+ Call ID: 5d8e0991-cf98-4990-abf1-3de0083e9965
+  Args:
+    source: Victoria_Melita
+    type: :Woman
+  AssignClass (ab690465-d634-4345-937e-4d74cb06316f)
+ Call ID: ab690465-d634-4345-937e-4d74cb06316f
+  Args:
+    source: Alexander_brother_of_Kirill
+    type: :Man
+  AssignClass (549f413e-e4da-4f42-a100-5c96ceeb65f6)
+ Call ID: 549f413e-e4da-4f42-a100-5c96ceeb65f6
+  Args:
+    type: :Man
+    source: Nicholas_II
+  AssignClass (b05a8cde-d2cc-4f4f-a0a7-29aefd85d359)
+ Call ID: b05a8cde-d2cc-4f4f-a0a7-29aefd85d359
+  Args:
+    source: Ernest_Louis
+    type: :Man
+  AssignClass (ee28c82c-44f2-4ea8-932d-af3465c6e476)
+ Call ID: ee28c82c-44f2-4ea8-932d-af3465c6e476
+  Args:
+    type: :Woman
+    source: Alexandra_Feodorovna
+  AssignClass (4fb57d19-8651-4fb9-8426-74e3687f57fe)
+ Call ID: 4fb57d19-8651-4fb9-8426-74e3687f57fe
+  Args:
+    source: Alfred_Duke_of_Saxe_Coburg_and_Gotha
+    type: :Man
+  AssignClass (3fe8fe4b-c6f0-4730-8ca6-983538fefcb8)
+ Call ID: 3fe8fe4b-c6f0-4730-8ca6-983538fefcb8
+  Args:
+    type: :Woman
+    source: Maria_Alexandrovna_of_Russia
+  AssignClass (13c42ffe-3c15-4310-a56f-13d403cedf8f)
+ Call ID: 13c42ffe-3c15-4310-a56f-13d403cedf8f
+  Args:
+    type: :Woman
+    source: Queen_Victoria
+  AssignClass (13d4e2a3-3b63-480e-9af2-f93a311ec691)
+ Call ID: 13d4e2a3-3b63-480e-9af2-f93a311ec691
+  Args:
+    type: :Woman
+    source: Maria_Feodorovna
+  AssignClass (ce48a38f-3e07-4857-8388-507a7ab98fe1)
+ Call ID: ce48a38f-3e07-4857-8388-507a7ab98fe1
+  Args:
+    source: Alexei_Alexandrovich
+    type: :Man
+  AssignClass (573224a2-bb0f-4f5f-b574-1d9902f2f7b2)
+ Call ID: 573224a2-bb0f-4f5f-b574-1d9902f2f7b2
+  Args:
+    type: :Man
+    source: Vladimir_Kirillovich
+  AssignClass (cb71c75f-4cc4-4583-acac-b743d0d00f78)
+ Call ID: cb71c75f-4cc4-4583-acac-b743d0d00f78
+  Args:
+    type: :Woman
+    source: Maria_Vladimirovna
+  AssignClass (3d5ecf07-dc9b-4810-ae87-64183ab1009e)
+ Call ID: 3d5ecf07-dc9b-4810-ae87-64183ab1009e
+  Args:
+    source: Paul_Alexandrovich
+    type: :Man
+  AssignClass (3c1d28a7-5c3c-4358-b128-49e3bdace59a)
+ Call ID: 3c1d28a7-5c3c-4358-b128-49e3bdace59a
+  Args:
+    source: Michael_Alexandrovich
+    type: :Man
+  AssignClass (01a06f8d-aa47-4042-a91b-14eba456b86d)
+ Call ID: 01a06f8d-aa47-4042-a91b-14eba456b86d
+  Args:
+    type: :Man
+    source: Alexander_III
+  AssignClass (990955b4-f3ff-4a75-af21-9c65fb7073be)
+ Call ID: 990955b4-f3ff-4a75-af21-9c65fb7073be
+  Args:
+    source: Xenia
+    type: :Woman
+  AddLiteral (45335cec-96cd-4c30-a5c3-924e2f5602ee)
+ Call ID: 45335cec-96cd-4c30-a5c3-924e2f5602ee
   Args:
     source: Kirill_Vladimirovich_Romanov
     literal_value: 1876
     literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (81d73f2c-b03e-4941-ae85-76ea2b6ee4bc)
- Call ID: 81d73f2c-b03e-4941-ae85-76ea2b6ee4bc
+  AddLiteral (02c57aa9-e65a-4892-8582-ee95e98946fd)
+ Call ID: 02c57aa9-e65a-4892-8582-ee95e98946fd
   Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
     literal_value: 1938
     source: Kirill_Vladimirovich_Romanov
-  AssignClass (4ccf6aba-9968-4d60-b7c8-eb1444ca1f94)
- Call ID: 4ccf6aba-9968-4d60-b7c8-eb1444ca1f94
-  Args:
-    type: :Man
-    source: Vladimir_Alexandrovich_of_Russia
-  AssignClass (d931fd50-4357-4e49-a326-570c32c4508e)
- Call ID: d931fd50-4357-4e49-a326-570c32c4508e
-  Args:
-    source: Vladimir_Alexandrovich_of_Russia
-    type: :Person
-  AddTriple (cb9ef368-456d-4b09-a58f-b0d30fdd7d15)
- Call ID: cb9ef368-456d-4b09-a58f-b0d30fdd7d15
-  Args:
-    target: Vladimir_Alexandrovich_of_Russia
-    relation: :hasFather
-    source: Kirill_Vladimirovich_Romanov
-  AssignClass (2de6676c-1b53-43a8-88e5-53664ff9668d)
- Call ID: 2de6676c-1b53-43a8-88e5-53664ff9668d
-  Args:
-    source: Maria_Pavlovna
-    type: :Woman
-  AssignClass (840dff7d-9c01-478d-bff2-d9e14bd9ae7f)
- Call ID: 840dff7d-9c01-478d-bff2-d9e14bd9ae7f
-  Args:
-    source: Maria_Pavlovna
-    type: :Person
-  AddTriple (d7a575f2-0083-44ee-8064-33ebc59572ee)
- Call ID: d7a575f2-0083-44ee-8064-33ebc59572ee
-  Args:
-    relation: :hasMother
-    target: Maria_Pavlovna
-    source: Kirill_Vladimirovich_Romanov
-  AssignClass (01d4b616-0793-43aa-ba29-7a485299e6e7)
- Call ID: 01d4b616-0793-43aa-ba29-7a485299e6e7
-  Args:
-    type: :Man
-    source: Alexander_II_of_Russia
-  AssignClass (3ff3ee2e-8aac-4b38-a6d8-be4b9f7738a9)
- Call ID: 3ff3ee2e-8aac-4b38-a6d8-be4b9f7738a9
-  Args:
-    type: :Person
-    source: Alexander_II_of_Russia
-  AddTriple (ab2aa300-fe75-4060-bb07-3a02d3c2f089)
- Call ID: ab2aa300-fe75-4060-bb07-3a02d3c2f089
-  Args:
-    relation: :hasFather
-    target: Alexander_II_of_Russia
-    source: Vladimir_Alexandrovich_of_Russia
-  AssignClass (e7d96e22-69e0-4f10-91f7-a90c0314c9c8)
- Call ID: e7d96e22-69e0-4f10-91f7-a90c0314c9c8
-  Args:
-    source: Victoria_Melita_of_Saxe-Coburg_and_Gotha
-    type: :Woman
-  AssignClass (b9b6b9b9-c558-4691-8feb-1f2cb6224145)
- Call ID: b9b6b9b9-c558-4691-8feb-1f2cb6224145
-  Args:
-    type: :Person
-    source: Victoria_Melita_of_Saxe-Coburg_and_Gotha
-  AddLiteral (ff8e0388-bc82-4724-bb57-251ec306ef58)
- Call ID: ff8e0388-bc82-4724-bb57-251ec306ef58
-  Args:
-    literal_value: 1905
-    source: Kirill_Vladimirovich_Romanov
+    relation: :hasDeathYear
     literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AddTriple (1bc81cec-a195-48eb-b648-228746ac32b7)
- Call ID: 1bc81cec-a195-48eb-b648-228746ac32b7
-  Args:
-    source: Kirill_Vladimirovich_Romanov
-    target: Victoria_Melita_of_Saxe-Coburg_and_Gotha
-    relation: :hasRelation
-  AssignClass (7a4b8ef4-49b1-42a6-888d-9af7a77cd6d1)
- Call ID: 7a4b8ef4-49b1-42a6-888d-9af7a77cd6d1
-  Args:
-    source: Alfred_Duke_of_Saxe-Coburg_and_Gotha
-    type: :Man
-  AssignClass (d984f9e1-b559-443c-98d3-c23fe6fc3e6c)
- Call ID: d984f9e1-b559-443c-98d3-c23fe6fc3e6c
-  Args:
-    type: :Person
-    source: Alfred_Duke_of_Saxe-Coburg_and_Gotha
-  AddTriple (4b8d1548-f76e-4e0b-9bf7-cfe0df7f22b5)
- Call ID: 4b8d1548-f76e-4e0b-9bf7-cfe0df7f22b5
+  AddTriple (9861bcff-1475-447f-a3ce-a85fbef78f7a)
+ Call ID: 9861bcff-1475-447f-a3ce-a85fbef78f7a
   Args:
     relation: :hasFather
-    target: Alfred_Duke_of_Saxe-Coburg_and_Gotha
-    source: Victoria_Melita_of_Saxe-Coburg_and_Gotha
-  AssignClass (5194bb18-7c70-44b3-8f84-600da783bf57)
- Call ID: 5194bb18-7c70-44b3-8f84-600da783bf57
+    source: Kirill_Vladimirovich_Romanov
+    target: Vladimir_Alexandrovich
+  AddTriple (efe9f09e-93e1-44fb-946a-8053149fd6d9)
+ Call ID: efe9f09e-93e1-44fb-946a-8053149fd6d9
   Args:
-    type: :Woman
-    source: Maria_Alexandrovna_of_Russia
-  AssignClass (f89790f7-cd6e-4adc-9e93-c11c1732ca95)
- Call ID: f89790f7-cd6e-4adc-9e93-c11c1732ca95
+    source: Kirill_Vladimirovich_Romanov
+    target: Maria_Pavlovna
+    relation: :hasMother
+  AddTriple (3a6228c7-c5ab-489c-8da9-a3e56db8a1d5)
+ Call ID: 3a6228c7-c5ab-489c-8da9-a3e56db8a1d5
   Args:
-    type: :Person
-    source: Maria_Alexandrovna_of_Russia
-  AddTriple (e5f5d7a8-ca0c-434d-b3b1-9958cf7b43d6)
- Call ID: e5f5d7a8-ca0c-434d-b3b1-9958cf7b43d6
+    relation: :hasFather
+    target: Alexander_II
+    source: Vladimir_Alexandrovich
+  AddTriple (37d2f3b9-b79f-472b-b399-f435583efebd)
+ Call ID: 37d2f3b9-b79f-472b-b399-f435583efebd
   Args:
+    relation: :hasFather
+    target: Alfred_Duke_of_Saxe_Coburg_and_Gotha
+    source: Victoria_Melita
+  AddTriple (fe9908c7-8677-433f-b77f-68983e78406b)
+ Call ID: fe9908c7-8677-433f-b77f-68983e78406b
+  Args:
+    source: Victoria_Melita
     target: Maria_Alexandrovna_of_Russia
     relation: :hasMother
-    source: Victoria_Melita_of_Saxe-Coburg_and_Gotha
-  AddTriple (ae2f6b10-1081-482b-a28e-a6b972e31e3c)
- Call ID: ae2f6b10-1081-482b-a28e-a6b972e31e3c
+  AddTriple (87b58086-6f10-4e30-9907-0d6519efc5ee)
+ Call ID: 87b58086-6f10-4e30-9907-0d6519efc5ee
   Args:
+    relation: :hasFather
     source: Maria_Alexandrovna_of_Russia
-    relation: :hasFather
-    target: Alexander_II_of_Russia
-  AssignClass (29783240-a4b2-4169-ba8c-a67aebbff6ac)
- Call ID: 29783240-a4b2-4169-ba8c-a67aebbff6ac
+    target: Alexander_II
+  AddTriple (5fcf468c-50ed-4f94-bb42-e08ff732f0a4)
+ Call ID: 5fcf468c-50ed-4f94-bb42-e08ff732f0a4
   Args:
-    source: Vladimir_Kirillovich
-    type: :Man
-  AssignClass (025dc480-d343-4646-8430-9bb46c62694b)
- Call ID: 025dc480-d343-4646-8430-9bb46c62694b
-  Args:
-    type: :Person
-    source: Vladimir_Kirillovich
-  AddTriple (355686bd-5a00-4d35-b0b4-18b418870025)
- Call ID: 355686bd-5a00-4d35-b0b4-18b418870025
-  Args:
-    relation: :hasFather
-    target: Kirill_Vladimirovich_Romanov
-    source: Vladimir_Kirillovich
-  AddTriple (4744f1dc-5674-4af5-bf93-d4f34b81001f)
- Call ID: 4744f1dc-5674-4af5-bf93-d4f34b81001f
-  Args:
-    source: Vladimir_Kirillovich
-    target: Victoria_Melita_of_Saxe-Coburg_and_Gotha
+    target: Queen_Victoria
+    source: Alfred_Duke_of_Saxe_Coburg_and_Gotha
     relation: :hasMother
-  AssignClass (0208f5e4-8908-4bf2-9235-ac8b713517d3)
- Call ID: 0208f5e4-8908-4bf2-9235-ac8b713517d3
-  Args:
-    source: Alexander_brother_of_Kirill
-    type: :Man
-  AssignClass (30e9273b-21b5-49b6-ace5-9358502f81d9)
- Call ID: 30e9273b-21b5-49b6-ace5-9358502f81d9
-  Args:
-    source: Alexander_brother_of_Kirill
-    type: :Person
-  AddTriple (2a3e646e-d241-4d36-9a5e-ea3752a4d831)
- Call ID: 2a3e646e-d241-4d36-9a5e-ea3752a4d831
+  AddTriple (57d65fc4-37d0-4cdb-bb93-41cf32237a81)
+ Call ID: 57d65fc4-37d0-4cdb-bb93-41cf32237a81
   Args:
     source: Kirill_Vladimirovich_Romanov
+    target: Vladimir_Alexandrovich
+    relation: :hasFather
+  AddTriple (06179b9c-6583-4383-8023-10bbcac8134a)
+ Call ID: 06179b9c-6583-4383-8023-10bbcac8134a
+  Args:
+    relation: :hasSon
+    source: Kirill_Vladimirovich_Romanov
+    target: Vladimir_Kirillovich
+  AddTriple (f9d364c3-615e-46e1-8534-19ba6714e8e5)
+ Call ID: f9d364c3-615e-46e1-8534-19ba6714e8e5
+  Args:
+    source: Kirill_Vladimirovich_Romanov
+    target: Vladimir_Kirillovich
+    relation: :isFatherOf
+  AddTriple (c1510fdc-aeb4-4cf9-bed5-8a1ba7e0dbf1)
+ Call ID: c1510fdc-aeb4-4cf9-bed5-8a1ba7e0dbf1
+  Args:
+    source: Vladimir_Kirillovich
+    target: Kirill_Vladimirovich_Romanov
+    relation: :hasFather
+  AddTriple (13aa3b30-8445-41d5-850c-d5c8153eebc5)
+ Call ID: 13aa3b30-8445-41d5-850c-d5c8153eebc5
+  Args:
+    source: Vladimir_Kirillovich
+    target: Victoria_Melita
+    relation: :hasMother
+  AddTriple (51adcf1f-fec8-4ddb-aa1e-f3f2045f3af5)
+ Call ID: 51adcf1f-fec8-4ddb-aa1e-f3f2045f3af5
+  Args:
     target: Alexander_brother_of_Kirill
+    source: Kirill_Vladimirovich_Romanov
     relation: :hasBrother
-  Finish (dc4eb60a-c728-42ae-ab3a-6c008ed42d80)
- Call ID: dc4eb60a-c728-42ae-ab3a-6c008ed42d80
+  AddTriple (4633910b-d00e-4d9d-9016-8ca120b650fe)
+ Call ID: 4633910b-d00e-4d9d-9016-8ca120b650fe
+  Args:
+    target: Vladimir_Alexandrovich
+    source: Kirill_Vladimirovich_Romanov
+    relation: :hasFather
+  AddTriple (23e1337e-4775-4c8a-930b-500c21051107)
+ Call ID: 23e1337e-4775-4c8a-930b-500c21051107
+  Args:
+    target: Vladimir_Alexandrovich
+    source: Alexander_brother_of_Kirill
+    relation: :hasFather
+  Finish (7973dfe1-465d-4522-ad08-210654ea338a)
+ Call ID: 7973dfe1-465d-4522-ad08-210654ea338a
   Args:

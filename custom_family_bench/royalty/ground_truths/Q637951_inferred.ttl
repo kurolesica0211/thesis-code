@@ -1,0 +1,190 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Frederick_Francis_IV a :Man,
+        :Person ;
+    rdfs:label "Frederick Francis IV"^^xsd:string ;
+    data:posIndicesFull "1173:1193"^^xsd:string,
+        "1173:1229"^^xsd:string ;
+    data:posIndicesPart "1385:1394"^^xsd:string ;
+    data:wdtLink wdt:Q57930 ;
+    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz IV"^^xsd:string,
+        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasRelation data:Frederick_Francis_IV ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Frederick_Francis_IV ;
+    :isBrotherOf data:Frederick_Francis_IV ;
+    :isSiblingOf data:Frederick_Francis_IV .
+
+data:Princess_Marie_of_Windisch-Graetz a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Marie of Windisch-Graetz"^^xsd:string ;
+    data:posIndicesFull "540:573"^^xsd:string ;
+    data:posIndicesPart "760:768"^^xsd:string,
+        "769:774"^^xsd:string ;
+    data:wdtLink wdt:Q2071733 ;
+    :hasChild data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :hasRelation data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSon data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isAncestorOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isAuntOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isBloodrelationOf data:Princess_Marie_of_Windisch-Graetz ;
+    :isMotherOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isParentOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isSiblingOf data:Princess_Marie_of_Windisch-Graetz ;
+    :isSisterOf data:Princess_Marie_of_Windisch-Graetz .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Francis II"^^xsd:string ;
+    data:posIndicesFull "290:310"^^xsd:string,
+        "290:346"^^xsd:string ;
+    data:posIndicesPart "1287:1296"^^xsd:string,
+        "1385:1394"^^xsd:string,
+        "466:475"^^xsd:string,
+        "833:842"^^xsd:string ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II."^^xsd:string ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1,
+        data:Frederick_Francis_II ;
+    :hasSex data:male ;
+    :hasSon data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isFatherOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isUncleOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin .
+
+data:Princess_Augusta_Reuss_of_Köstritz a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Augusta Reuss of Köstritz"^^xsd:string ;
+    data:posIndicesFull "366:400"^^xsd:string ;
+    data:posIndicesPart "760:768"^^xsd:string ;
+    data:wdtLink wdt:Q63095 ;
+    :hasChild data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSon data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isAuntOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isMotherOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isSisterOf data:Princess_Augusta_Reuss_of_Köstritz .
+
+data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 a :Man,
+        :Person ;
+    rdfs:label "Duke Paul Friedrich of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "0:34"^^xsd:string ;
+    data:posIndicesPart "1022:1026"^^xsd:string,
+        "1027:1031"^^xsd:string,
+        "1277:1281"^^xsd:string,
+        "1282:1286"^^xsd:string,
+        "1375:1379"^^xsd:string,
+        "1380:1384"^^xsd:string,
+        "211:215"^^xsd:string,
+        "216:220"^^xsd:string,
+        "456:460"^^xsd:string,
+        "461:465"^^xsd:string,
+        "487:495"^^xsd:string,
+        "653:664"^^xsd:string,
+        "665:673"^^xsd:string,
+        "823:827"^^xsd:string,
+        "828:832"^^xsd:string,
+        "894:905"^^xsd:string,
+        "906:914"^^xsd:string ;
+    data:wdtLink wdt:Q2754379 ;
+    :alsoKnownAs "Duke Paul Frederick of Mecklenburg"^^xsd:string ;
+    :hasAncestor data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasBrother data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :hasFather data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :hasMother data:Princess_Marie_of_Windisch-Graetz ;
+    :hasParent data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasRelation data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1,
+        data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isBrotherOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isChildOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz ;
+    :isSiblingOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isSonOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Princess_Marie_of_Windisch-Graetz .
+
+data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Duke Paul Friedrich of Mecklenburg-Schwerin"^^xsd:string ;
+    data:wdtLink wdt:Q637951 ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasBrother data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :hasChild data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasRelation data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin,
+        data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1,
+        data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:male ;
+    :hasSon data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isAncestorOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isBloodrelationOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isFatherOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isParentOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
+    :isSiblingOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin ;
+    :isSonOf data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isUncleOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 .
+

@@ -1,51 +1,53 @@
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:FerdinandHabsburg a :Man,
+data:Ferdinand_Habsburg-Lothringen a :Man,
         :Person ;
-    :hasFather data:KarlVonHabsburg ;
-    :hasMother data:FrancescaVonThyssenBornemisza ;
+    :hasBirthYear 1997 ;
+    :hasFather data:Karl_von_Habsburg ;
+    :hasMother data:Francesca_von_Thyssen-Bornemisza ;
+    :hasRelation data:Georg_von_Habsburg ;
     :hasSex data:Male ;
-    :hasSister data:EleonoreVonHabsburg,
-        data:GloriaVonHabsburg .
+    :hasSister data:Eleonore_von_Habsburg,
+        data:Gloria_von_Habsburg .
 
-data:BaronHansHeinrichThyssenBornemisza a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
+data:Eleonore_von_Habsburg a :Person,
+        :Woman .
 
-data:EleonoreVonHabsburg a :Person,
+data:Fiona_Campbell-Walter a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Francesca_von_Thyssen-Bornemisza a :Ancestor,
+        :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasFather data:Hans_Heinrich_Thyssen-Bornemisza ;
+    :hasMother data:Fiona_Campbell-Walter .
 
-data:FionaCampbellWalter a :Ancestor,
-        :Woman ;
-    :hasSex data:Female .
+data:Georg_von_Habsburg a :Man,
+        :Person .
 
-data:FrancescaVonThyssenBornemisza a :Ancestor,
-        :Woman ;
-    :hasFather data:BaronHansHeinrichThyssenBornemisza ;
-    :hasMother data:FionaCampbellWalter ;
-    :hasSex data:Female .
+data:Gloria_von_Habsburg a :Person,
+        :Woman .
 
-data:GloriaVonHabsburg a :Person,
-        :Woman ;
-    :hasSex data:Female .
+data:Hans_Heinrich_Thyssen-Bornemisza a :Ancestor,
+        :Man,
+        :Person .
 
-data:KarlVonHabsburg a :Ancestor,
-        :Man ;
-    :hasFather data:OttoVonHabsburg ;
-    :hasMother data:PrincessReginaOfSaxeMeiningen ;
-    :hasSex data:Male .
-
-data:OttoVonHabsburg a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
-
-data:PrincessReginaOfSaxeMeiningen a :Ancestor,
-        :Woman ;
-    :hasSex data:Female .
+data:Karl_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMother data:Regina_of_Saxe-Meiningen .
 
 data:Male a :Sex .
 
-data:Female a :Sex .
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Regina_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman .
 

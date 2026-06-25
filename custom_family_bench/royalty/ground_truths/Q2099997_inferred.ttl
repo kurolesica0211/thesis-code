@@ -1,0 +1,257 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Beatrix_of_the_Netherlands a :Person,
+        :Woman ;
+    rdfs:label "Beatrix of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "2731:2766"^^xsd:string,
+        "2740:2766"^^xsd:string ;
+    data:posIndicesPart "2787:2794"^^xsd:string,
+        "2861:2868"^^xsd:string,
+        "3168:3175"^^xsd:string ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau"^^xsd:string,
+        "Beatrix Wilhelmina Armgard"^^xsd:string,
+        "Beatrix der Nederlanden"^^xsd:string,
+        "Beatrix of Orange"^^xsd:string,
+        "Beatrix van Oranje"^^xsd:string,
+        "Princess Beatrix of Orange-Nassau"^^xsd:string,
+        "Princess Beatrix of the Netherlands"^^xsd:string,
+        "Queen Beatrix"^^xsd:string ;
+    :hasRelation data:Beatrix_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Beatrix_of_the_Netherlands ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands .
+
+data:Elise_von_Vieregge a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elise von Vieregge"^^xsd:string ;
+    data:posIndicesFull "1272:1290"^^xsd:string ;
+    data:wdtLink wdt:Q13576445 ;
+    :alsoKnownAs "Elise Hedwig Alexandrine von Vieregge"^^xsd:string ;
+    :hasChild data:Claus_Felix_von_Amsberg ;
+    :hasRelation data:Claus_Felix_von_Amsberg,
+        data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :hasSex data:female ;
+    :hasSister data:Elise_von_Vieregge ;
+    :hasSon data:Claus_Felix_von_Amsberg ;
+    :isAncestorOf data:Claus_Felix_von_Amsberg ;
+    :isAuntOf data:Claus_Felix_von_Amsberg ;
+    :isBloodrelationOf data:Elise_von_Vieregge ;
+    :isMotherOf data:Claus_Felix_von_Amsberg ;
+    :isParentOf data:Claus_Felix_von_Amsberg ;
+    :isSiblingOf data:Elise_von_Vieregge ;
+    :isSisterOf data:Elise_von_Vieregge .
+
+data:Gabriele_von_dem_Bussche-Ippenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Gabriele von dem Bussche-Ippenburg"^^xsd:string ;
+    data:posIndicesFull "441:475"^^xsd:string ;
+    data:posIndicesPart "1624:1631"^^xsd:string,
+        "2526:2529"^^xsd:string,
+        "2530:2537"^^xsd:string,
+        "2538:2547"^^xsd:string,
+        "516:523"^^xsd:string,
+        "551:558"^^xsd:string,
+        "598:605"^^xsd:string,
+        "606:615"^^xsd:string,
+        "679:682"^^xsd:string,
+        "683:690"^^xsd:string,
+        "980:983"^^xsd:string,
+        "984:991"^^xsd:string ;
+    data:wdtLink wdt:Q13638711 ;
+    :hasChild data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :hasDaughter data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasSex data:female ;
+    :hasSister data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :isAncestorOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isAuntOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :isMotherOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :isSisterOf data:Gabriele_von_dem_Bussche-Ippenburg .
+
+data:Georg_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Georg von dem Bussche-Haddenhausen"^^xsd:string ;
+    data:posIndicesFull "369:404"^^xsd:string ;
+    data:posIndicesPart "1624:1631"^^xsd:string,
+        "2526:2529"^^xsd:string,
+        "2530:2537"^^xsd:string,
+        "516:523"^^xsd:string,
+        "524:536"^^xsd:string,
+        "551:558"^^xsd:string,
+        "598:605"^^xsd:string,
+        "679:682"^^xsd:string,
+        "683:690"^^xsd:string,
+        "980:983"^^xsd:string,
+        "984:991"^^xsd:string,
+        "992:1004"^^xsd:string ;
+    data:wdtLink wdt:Q4329958 ;
+    :hasBrother data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasChild data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :hasDaughter data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasSex data:male ;
+    :isAncestorOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:Georg_von_dem_Bussche-Haddenhausen ;
+    :isBrotherOf data:Georg_von_dem_Bussche-Haddenhausen ;
+    :isFatherOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Georg_von_dem_Bussche-Haddenhausen ;
+    :isUncleOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen .
+
+data:Wilhelm_von_Amsberg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm von Amsberg"^^xsd:string ;
+    data:posIndicesFull "1248:1267"^^xsd:string ;
+    data:posIndicesPart "2142:2149"^^xsd:string,
+        "2191:2198"^^xsd:string,
+        "3385:3392"^^xsd:string ;
+    data:wdtLink wdt:Q4285590 ;
+    :alsoKnownAs "Wilhelm Karl Friedrich August Louis von Amsberg"^^xsd:string ;
+    :hasBrother data:Wilhelm_von_Amsberg ;
+    :hasChild data:Claus_Felix_von_Amsberg ;
+    :hasRelation data:Claus_Felix_von_Amsberg,
+        data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :hasSex data:male ;
+    :hasSon data:Claus_Felix_von_Amsberg ;
+    :isAncestorOf data:Claus_Felix_von_Amsberg ;
+    :isBloodrelationOf data:Wilhelm_von_Amsberg ;
+    :isBrotherOf data:Wilhelm_von_Amsberg ;
+    :isFatherOf data:Claus_Felix_von_Amsberg ;
+    :isParentOf data:Claus_Felix_von_Amsberg ;
+    :isSiblingOf data:Wilhelm_von_Amsberg ;
+    :isUncleOf data:Claus_Felix_von_Amsberg .
+
+data:Baroness_Gösta_von_dem_Bussche-Haddenhausen a :Person,
+        :Woman ;
+    rdfs:label "Baroness Gösta von dem Bussche-Haddenhausen"^^xsd:string ;
+    data:posIndicesFull "0:43"^^xsd:string,
+        "60:122"^^xsd:string,
+        "9:43"^^xsd:string ;
+    data:posIndicesPart "1024:1029"^^xsd:string,
+        "1129:1134"^^xsd:string,
+        "1190:1195"^^xsd:string,
+        "1336:1341"^^xsd:string,
+        "1407:1412"^^xsd:string,
+        "1624:1631"^^xsd:string,
+        "1649:1654"^^xsd:string,
+        "1907:1912"^^xsd:string,
+        "2019:2024"^^xsd:string,
+        "2082:2087"^^xsd:string,
+        "2294:2299"^^xsd:string,
+        "2399:2404"^^xsd:string,
+        "248:253"^^xsd:string,
+        "2526:2529"^^xsd:string,
+        "2530:2537"^^xsd:string,
+        "2704:2709"^^xsd:string,
+        "2801:2806"^^xsd:string,
+        "2989:2997"^^xsd:string,
+        "3237:3245"^^xsd:string,
+        "432:440"^^xsd:string,
+        "516:523"^^xsd:string,
+        "524:536"^^xsd:string,
+        "551:558"^^xsd:string,
+        "598:605"^^xsd:string,
+        "632:637"^^xsd:string,
+        "679:682"^^xsd:string,
+        "683:690"^^xsd:string,
+        "704:709"^^xsd:string,
+        "856:861"^^xsd:string,
+        "947:952"^^xsd:string,
+        "980:983"^^xsd:string,
+        "984:991"^^xsd:string,
+        "992:1004"^^xsd:string ;
+    data:wdtLink wdt:Q2099997 ;
+    :alsoKnownAs "Gösta Julie Adelheid Marion Marie von Amsberg"^^xsd:string,
+        "Gösta Julie Adelheid Marion Marie von dem Bussche-Haddenhausen"^^xsd:string,
+        "Gösta von Amsberg"^^xsd:string,
+        "Gösta von dem Bussche-Haddenhausen"^^xsd:string ;
+    :hasAncestor data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasFather data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg ;
+    :hasParent data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Baroness_Gösta_von_dem_Bussche-Haddenhausen,
+        data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasSex data:female ;
+    :hasSister data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isChildOf data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :isDaughterOf data:Gabriele_von_dem_Bussche-Ippenburg,
+        data:Georg_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
+    :isSisterOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen .
+
+data:Claus_Felix_von_Amsberg a :Man,
+        :Person ;
+    rdfs:label "Claus Felix von Amsberg"^^xsd:string ;
+    data:posIndicesFull "1204:1227"^^xsd:string ;
+    data:posIndicesPart "1346:1351"^^xsd:string,
+        "1352:1357"^^xsd:string,
+        "1423:1428"^^xsd:string,
+        "1429:1434"^^xsd:string,
+        "1659:1664"^^xsd:string,
+        "1665:1670"^^xsd:string,
+        "1703:1708"^^xsd:string,
+        "1732:1737"^^xsd:string,
+        "1738:1743"^^xsd:string,
+        "1806:1811"^^xsd:string,
+        "1938:1943"^^xsd:string,
+        "2716:2721"^^xsd:string,
+        "2811:2816"^^xsd:string ;
+    data:wdtLink wdt:Q2439092 ;
+    :alsoKnownAs "Klaus Felix von Amsberg"^^xsd:string ;
+    :hasAncestor data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :hasBrother data:Claus_Felix_von_Amsberg ;
+    :hasFather data:Wilhelm_von_Amsberg ;
+    :hasMother data:Elise_von_Vieregge ;
+    :hasParent data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :hasRelation data:Claus_Felix_von_Amsberg,
+        data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Claus_Felix_von_Amsberg ;
+    :isBrotherOf data:Claus_Felix_von_Amsberg ;
+    :isChildOf data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :isSiblingOf data:Claus_Felix_von_Amsberg ;
+    :isSonOf data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg .
+

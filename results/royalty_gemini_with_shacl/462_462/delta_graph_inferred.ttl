@@ -1,0 +1,169 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Birgitte_Gloucester a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Rose_Windsor ;
+    :hasDaughter data:Rose_Windsor ;
+    :hasRelation data:Birgitte_Gloucester,
+        data:George_Gilman,
+        data:Lyla_Gilman,
+        data:Prince_Richard,
+        data:Rose_Windsor,
+        data:Rufus_Gilman ;
+    :hasSister data:Birgitte_Gloucester ;
+    :isAncestorOf data:Lyla_Gilman,
+        data:Rose_Windsor,
+        data:Rufus_Gilman ;
+    :isAuntOf data:Rose_Windsor ;
+    :isBloodrelationOf data:Birgitte_Gloucester ;
+    :isMotherOf data:Rose_Windsor ;
+    :isParentOf data:Rose_Windsor ;
+    :isSiblingOf data:Birgitte_Gloucester ;
+    :isSisterOf data:Birgitte_Gloucester .
+
+data:Prince_Richard a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Richard ;
+    :hasChild data:Rose_Windsor ;
+    :hasDaughter data:Rose_Windsor ;
+    :hasRelation data:Birgitte_Gloucester,
+        data:George_Gilman,
+        data:Lyla_Gilman,
+        data:Prince_Richard,
+        data:Rose_Windsor,
+        data:Rufus_Gilman ;
+    :isAncestorOf data:Lyla_Gilman,
+        data:Rose_Windsor,
+        data:Rufus_Gilman ;
+    :isBloodrelationOf data:Prince_Richard ;
+    :isBrotherOf data:Prince_Richard ;
+    :isFatherOf data:Rose_Windsor ;
+    :isParentOf data:Rose_Windsor ;
+    :isSiblingOf data:Prince_Richard ;
+    :isUncleOf data:Rose_Windsor .
+
+data:George_Gilman a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_Gilman ;
+    :hasChild data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :hasDaughter data:Lyla_Gilman ;
+    :hasRelation data:Birgitte_Gloucester,
+        data:George_Gilman,
+        data:Lyla_Gilman,
+        data:Prince_Richard,
+        data:Rose_Windsor,
+        data:Rufus_Gilman ;
+    :hasSon data:Rufus_Gilman ;
+    :isAncestorOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isBloodrelationOf data:George_Gilman ;
+    :isBrotherOf data:George_Gilman ;
+    :isFatherOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isParentOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isSiblingOf data:George_Gilman ;
+    :isUncleOf data:Lyla_Gilman,
+        data:Rufus_Gilman .
+
+data:Lyla_Gilman a :Person,
+        :Woman ;
+    :hasAncestor data:Birgitte_Gloucester,
+        data:George_Gilman,
+        data:Prince_Richard,
+        data:Rose_Windsor ;
+    :hasBrother data:Rufus_Gilman ;
+    :hasFather data:George_Gilman ;
+    :hasMother data:Rose_Windsor ;
+    :hasParent data:George_Gilman,
+        data:Rose_Windsor ;
+    :hasRelation data:Birgitte_Gloucester,
+        data:George_Gilman,
+        data:Lyla_Gilman,
+        data:Prince_Richard,
+        data:Rose_Windsor,
+        data:Rufus_Gilman ;
+    :hasSister data:Lyla_Gilman ;
+    :isBloodrelationOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isChildOf data:George_Gilman,
+        data:Rose_Windsor ;
+    :isDaughterOf data:George_Gilman,
+        data:Rose_Windsor ;
+    :isSiblingOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isSisterOf data:Lyla_Gilman,
+        data:Rufus_Gilman .
+
+data:Rufus_Gilman a :Man,
+        :Person ;
+    :hasAncestor data:Birgitte_Gloucester,
+        data:George_Gilman,
+        data:Prince_Richard,
+        data:Rose_Windsor ;
+    :hasBrother data:Rufus_Gilman ;
+    :hasFather data:George_Gilman ;
+    :hasMother data:Rose_Windsor ;
+    :hasParent data:George_Gilman,
+        data:Rose_Windsor ;
+    :hasRelation data:Birgitte_Gloucester,
+        data:George_Gilman,
+        data:Lyla_Gilman,
+        data:Prince_Richard,
+        data:Rose_Windsor,
+        data:Rufus_Gilman ;
+    :hasSister data:Lyla_Gilman ;
+    :isBloodrelationOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isBrotherOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isChildOf data:George_Gilman,
+        data:Rose_Windsor ;
+    :isSiblingOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isSonOf data:George_Gilman,
+        data:Rose_Windsor .
+
+data:Rose_Windsor a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Birgitte_Gloucester,
+        data:Prince_Richard ;
+    :hasBirthYear 1980 ;
+    :hasChild data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :hasDaughter data:Lyla_Gilman ;
+    :hasFather data:Prince_Richard ;
+    :hasMother data:Birgitte_Gloucester ;
+    :hasParent data:Birgitte_Gloucester,
+        data:Prince_Richard ;
+    :hasRelation data:Birgitte_Gloucester,
+        data:George_Gilman,
+        data:Lyla_Gilman,
+        data:Prince_Richard,
+        data:Rose_Windsor,
+        data:Rufus_Gilman ;
+    :hasSister data:Rose_Windsor ;
+    :hasSon data:Rufus_Gilman ;
+    :isAncestorOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isAuntOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isBloodrelationOf data:Rose_Windsor ;
+    :isChildOf data:Birgitte_Gloucester,
+        data:Prince_Richard ;
+    :isDaughterOf data:Birgitte_Gloucester,
+        data:Prince_Richard ;
+    :isMotherOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isParentOf data:Lyla_Gilman,
+        data:Rufus_Gilman ;
+    :isSiblingOf data:Rose_Windsor ;
+    :isSisterOf data:Rose_Windsor .
+

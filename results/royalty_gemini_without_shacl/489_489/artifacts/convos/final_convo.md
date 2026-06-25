@@ -69,24 +69,23 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Don Gonzalo, Duke of Aquitaine (5 June 1937 – 27 May 2000) (Spanish: Gonzalo Víctor Alfonso José Bonifacio Antonio María y Todos los Santos de Borbón y Dampierre; French: Gonzalve Victor Alphonse Joseph Boniface Antoine Marie Toussaint de Bourbon) was a grandson of Alfonso XIII, King of Spain.
-Life
+Wilhelm Karl Adalbert Erich Detloff Prinz von Preussen (30 January 1922 in Potsdam – 9 April 2007 in Holzminden) was the third son of Prince Oskar of Prussia, and the last surviving grandson of Wilhelm II, the last German Emperor.
+Biography
 
-Gonzalo was born in the Sant'Anna Clinic in Rome on 5 June 1937, the younger son of Infante Jaime, Duke of Segovia and his first wife, Emmanuelle de Dampierre.
-In 1941, after the death of his paternal grandfather Alfonso XIII, Gonzalo moved with his family to Lausanne, Switzerland.
-They lived first at the Hotel Royal before Gonzalo and his older brother Alfonso were sent to the Collège Saint-Jean in Fribourg.
-The following year, General Francisco Franco allowed Gonzalo and Alfonso to continue their education in Spain.
-In September 1955, Gonzalo and Alfonso were both injured in an automobile accident near Lausanne, on a return trip from Windsor during which they had driven all day and night.
-In November 1961, Alfonso and Gonzalo, concerned that their father was wasting away his money, sought an injunction from a French court to compel him to turn over management of his affairs to a court-appointed trustee, being supported in their action by their grandmother, Queen Victoria Eugenie, as well as by other members of the Spanish royal family.
-In January 1962, the court ruled that although there were insufficient grounds to find Jaime completely incompetent, a trustee was installed to restrain undue extravagance on his part.
-On 8 March 1972, Jaime named Gonzalo a knight of the Order of the Holy Spirit and of the Order of Saint Michael; the declarative letters patent were dated 21 September 1972.
-Also on 21 September 1972, Jaime gave Gonzalo the title duc d'Aquitaine (Duke of Aquitaine).
+Wilhelm-Karl was the youngest of Prince Oskar of Prussia and Countess Ina Marie von Bassewitz's four children.
+Wilhelm-Karl worked tirelessly to keep the Order intact during the Cold War and helped to reunite its membership after the fall of East Germany.
+Amongst other orders and awards, Wilhelm-Karl received the Grand Merit Cross (with star) of the Order of Merit of the Federal Republic of Germany and the Grand Cross of the Order pro merito Melitensi of the Sovereign Military Order of Malta.
+Marriage and issue
+
+In 1952, Wilhelm-Karl married Armgard Else Helene von Veltheim (17 February 1926 - 1 November 2019), daughter of Friedrich von Veltheim (1881–1955) and his wife, Ottonie von Alvensleben (1883–1960).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -102,39 +101,9 @@ Also on 21 September 1972, Jaime gave Gonzalo the title duc d'Aquitaine (Duke of
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -149,6 +118,23 @@ Also on 21 September 1972, Jaime gave Gonzalo the title duc d'Aquitaine (Duke of
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -166,6 +152,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -233,29 +234,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,6 +257,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -276,6 +277,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -284,17 +287,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -322,6 +327,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -337,120 +426,169 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0cee2319-22f3-41df-b42b-329f0ad187cc)
- Call ID: 0cee2319-22f3-41df-b42b-329f0ad187cc
+  AssignClass (ba1fd71d-b862-402d-9585-8d8be526be15)
+ Call ID: ba1fd71d-b862-402d-9585-8d8be526be15
   Args:
+    source: Wilhelm_Karl_Prinz_von_Preussen
     type: :Man
-    source: Gonzalo_de_Borbon_y_Dampierre
-  AssignClass (7797e934-34b0-47c9-bc18-01e3b2efc168)
- Call ID: 7797e934-34b0-47c9-bc18-01e3b2efc168
+  AssignClass (e9a22901-8aa6-4bd4-9e2e-040f4ba2fb57)
+ Call ID: e9a22901-8aa6-4bd4-9e2e-040f4ba2fb57
   Args:
     type: :Person
-    source: Gonzalo_de_Borbon_y_Dampierre
-  AddLiteral (1f072cae-ddaa-4b32-ad51-ca9375e1b8b5)
- Call ID: 1f072cae-ddaa-4b32-ad51-ca9375e1b8b5
+    source: Wilhelm_Karl_Prinz_von_Preussen
+  AddLiteral (cea1202f-a2a6-488c-a7fd-0bc37a555d47)
+ Call ID: cea1202f-a2a6-488c-a7fd-0bc37a555d47
   Args:
+    source: Wilhelm_Karl_Prinz_von_Preussen
+    literal_value: 1922
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1937
-    literal_type: xsd:integer
-    source: Gonzalo_de_Borbon_y_Dampierre
-  AddLiteral (f3511fda-ad05-4e85-ab99-a5e02e4ac67e)
- Call ID: f3511fda-ad05-4e85-ab99-a5e02e4ac67e
+  AddLiteral (f3c76a10-636e-4dd6-8ed7-3489b217fc3a)
+ Call ID: f3c76a10-636e-4dd6-8ed7-3489b217fc3a
   Args:
-    source: Gonzalo_de_Borbon_y_Dampierre
-    literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_value: 2000
-  AssignClass (49eb1f1c-a244-40d7-b1f7-1428fe89d546)
- Call ID: 49eb1f1c-a244-40d7-b1f7-1428fe89d546
+    literal_type: xsd:integer
+    literal_value: 2007
+    source: Wilhelm_Karl_Prinz_von_Preussen
+  AssignClass (9cef71fb-286c-4627-bb54-8cc535241e61)
+ Call ID: 9cef71fb-286c-4627-bb54-8cc535241e61
   Args:
-    type: :Ancestor
-    source: Alfonso_XIII_of_Spain
-  AssignClass (32767ed8-3164-4676-a71c-67888f07f6e9)
- Call ID: 32767ed8-3164-4676-a71c-67888f07f6e9
-  Args:
+    source: Prince_Oskar_of_Prussia
     type: :Man
-    source: Alfonso_XIII_of_Spain
-  AssignClass (dc48766b-3cfd-44e9-8583-8cee2c5b9b74)
- Call ID: dc48766b-3cfd-44e9-8583-8cee2c5b9b74
+  AssignClass (11e7ddb4-2d8b-4a92-be64-ac66b62897a0)
+ Call ID: 11e7ddb4-2d8b-4a92-be64-ac66b62897a0
   Args:
     type: :Person
-    source: Alfonso_XIII_of_Spain
-  AddTriple (51a8eaa2-c24c-49cf-b67b-37cec54cb3f2)
- Call ID: 51a8eaa2-c24c-49cf-b67b-37cec54cb3f2
+    source: Prince_Oskar_of_Prussia
+  AddTriple (1748bd27-72b4-438e-8133-4d3510ed2d45)
+ Call ID: 1748bd27-72b4-438e-8133-4d3510ed2d45
   Args:
-    source: Alfonso_XIII_of_Spain
-    relation: :isAncestorOf
-    target: Gonzalo_de_Borbon_y_Dampierre
-  AssignClass (36681d98-eb8a-4588-b498-cc6bcb978b16)
- Call ID: 36681d98-eb8a-4588-b498-cc6bcb978b16
+    source: Wilhelm_Karl_Prinz_von_Preussen
+    relation: :hasFather
+    target: Prince_Oskar_of_Prussia
+  AssignClass (5afd73f1-4fd6-49e8-abcf-c26e18ae23d4)
+ Call ID: 5afd73f1-4fd6-49e8-abcf-c26e18ae23d4
   Args:
-    type: :Ancestor
-    source: Jaime_Duke_of_Segovia
-  AssignClass (cbbc63c2-8776-43ae-8202-f5b8fd272f2a)
- Call ID: cbbc63c2-8776-43ae-8202-f5b8fd272f2a
+    type: :Woman
+    source: Ina_Marie_von_Bassewitz
+  AssignClass (9c7f2e5c-12c8-4136-b71f-987eaf6f08ce)
+ Call ID: 9c7f2e5c-12c8-4136-b71f-987eaf6f08ce
+  Args:
+    source: Ina_Marie_von_Bassewitz
+    type: :Person
+  AddTriple (e9ce55fa-5144-403d-8e68-d1fcc2810cdc)
+ Call ID: e9ce55fa-5144-403d-8e68-d1fcc2810cdc
+  Args:
+    relation: :hasMother
+    target: Ina_Marie_von_Bassewitz
+    source: Wilhelm_Karl_Prinz_von_Preussen
+  AssignClass (00a89a4e-b59f-4d1e-a3b2-1dcc6798e250)
+ Call ID: 00a89a4e-b59f-4d1e-a3b2-1dcc6798e250
   Args:
     type: :Man
-    source: Jaime_Duke_of_Segovia
-  AssignClass (be1eb551-2437-4d5e-89cf-1c4e77dc1281)
- Call ID: be1eb551-2437-4d5e-89cf-1c4e77dc1281
+    source: Wilhelm_II
+  AssignClass (32d4684c-c1c6-4b44-817a-6a1601d5f1be)
+ Call ID: 32d4684c-c1c6-4b44-817a-6a1601d5f1be
+  Args:
+    source: Wilhelm_II
+    type: :Person
+  AssignClass (4aea82c4-83c1-4c10-ac11-c86f08c72fa2)
+ Call ID: 4aea82c4-83c1-4c10-ac11-c86f08c72fa2
+  Args:
+    type: :Woman
+    source: Armgard_Else_Helene_von_Veltheim
+  AssignClass (3458dc22-0c32-4619-880e-faa135f86675)
+ Call ID: 3458dc22-0c32-4619-880e-faa135f86675
   Args:
     type: :Person
-    source: Jaime_Duke_of_Segovia
-  AddTriple (83be9ed8-d4ad-4c60-9fee-4073cf43b7cf)
- Call ID: 83be9ed8-d4ad-4c60-9fee-4073cf43b7cf
+    source: Armgard_Else_Helene_von_Veltheim
+  AddLiteral (20006484-57aa-42e2-8191-0fbd5d90e61b)
+ Call ID: 20006484-57aa-42e2-8191-0fbd5d90e61b
+  Args:
+    source: Wilhelm_Karl_Prinz_von_Preussen
+    literal_value: 1952
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AddTriple (a64fee11-e377-4e87-9dea-1dd439177433)
+ Call ID: a64fee11-e377-4e87-9dea-1dd439177433
+  Args:
+    relation: :hasRelation
+    target: Armgard_Else_Helene_von_Veltheim
+    source: Wilhelm_Karl_Prinz_von_Preussen
+  AddLiteral (68ca06b7-6c52-4f32-82b6-5bcecaececb6)
+ Call ID: 68ca06b7-6c52-4f32-82b6-5bcecaececb6
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1926
+    relation: :hasBirthYear
+    source: Armgard_Else_Helene_von_Veltheim
+  AddLiteral (17d38cd9-be9d-4e1e-9476-2ac8493505be)
+ Call ID: 17d38cd9-be9d-4e1e-9476-2ac8493505be
+  Args:
+    source: Armgard_Else_Helene_von_Veltheim
+    relation: :hasDeathYear
+    literal_value: 2019
+    literal_type: xsd:integer
+  AssignClass (749eba94-457b-498d-8b37-ef69640fbbdc)
+ Call ID: 749eba94-457b-498d-8b37-ef69640fbbdc
+  Args:
+    source: Friedrich_von_Veltheim
+    type: :Man
+  AssignClass (e36a62c3-0e21-44f9-bb0c-60305907e05d)
+ Call ID: e36a62c3-0e21-44f9-bb0c-60305907e05d
+  Args:
+    type: :Person
+    source: Friedrich_von_Veltheim
+  AddLiteral (8c999e92-9984-4da4-97df-302603b33bd6)
+ Call ID: 8c999e92-9984-4da4-97df-302603b33bd6
+  Args:
+    source: Friedrich_von_Veltheim
+    relation: :hasBirthYear
+    literal_value: 1881
+    literal_type: xsd:integer
+  AddLiteral (c735b6ff-384f-42c0-b0bc-5cc8180bca80)
+ Call ID: c735b6ff-384f-42c0-b0bc-5cc8180bca80
+  Args:
+    source: Friedrich_von_Veltheim
+    literal_type: xsd:integer
+    literal_value: 1955
+    relation: :hasDeathYear
+  AddTriple (02fd143d-cfae-4e2e-84e2-768268989133)
+ Call ID: 02fd143d-cfae-4e2e-84e2-768268989133
   Args:
     relation: :hasFather
-    target: Jaime_Duke_of_Segovia
-    source: Gonzalo_de_Borbon_y_Dampierre
-  AssignClass (de2bcdc4-1ffa-4833-84a0-71349f7c6df7)
- Call ID: de2bcdc4-1ffa-4833-84a0-71349f7c6df7
+    target: Friedrich_von_Veltheim
+    source: Armgard_Else_Helene_von_Veltheim
+  AssignClass (f2a97326-63e6-4e8d-944b-1f6af17a998e)
+ Call ID: f2a97326-63e6-4e8d-944b-1f6af17a998e
   Args:
+    source: Ottonie_von_Alvensleben
     type: :Woman
-    source: Emmanuelle_de_Dampierre
-  AssignClass (34005e6a-fd5e-4ec3-8cf8-d9c524032783)
- Call ID: 34005e6a-fd5e-4ec3-8cf8-d9c524032783
+  AssignClass (4bf64afd-0709-4040-af69-3bde3b6b1ca9)
+ Call ID: 4bf64afd-0709-4040-af69-3bde3b6b1ca9
   Args:
     type: :Person
-    source: Emmanuelle_de_Dampierre
-  AddTriple (38a14961-2a12-4953-9122-b89028fe73b0)
- Call ID: 38a14961-2a12-4953-9122-b89028fe73b0
+    source: Ottonie_von_Alvensleben
+  AddLiteral (cddf938c-3cd4-4a27-aabf-f611a1b84c5e)
+ Call ID: cddf938c-3cd4-4a27-aabf-f611a1b84c5e
   Args:
-    target: Emmanuelle_de_Dampierre
+    source: Ottonie_von_Alvensleben
+    literal_type: xsd:integer
+    literal_value: 1883
+    relation: :hasBirthYear
+  AddLiteral (b14c7f77-3347-4f51-9c39-e363dad459de)
+ Call ID: b14c7f77-3347-4f51-9c39-e363dad459de
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1960
+    literal_type: xsd:integer
+    source: Ottonie_von_Alvensleben
+  AddTriple (af03f088-7af4-414d-9fbb-e3dc9a597169)
+ Call ID: af03f088-7af4-414d-9fbb-e3dc9a597169
+  Args:
     relation: :hasMother
-    source: Gonzalo_de_Borbon_y_Dampierre
-  AssignClass (2e907502-a529-47c8-8be0-a60f7deaf1a2)
- Call ID: 2e907502-a529-47c8-8be0-a60f7deaf1a2
-  Args:
-    type: :Man
-    source: Alfonso_brother_of_Gonzalo
-  AssignClass (94f4ae93-495c-4054-8e5f-c5bed6ad9f2d)
- Call ID: 94f4ae93-495c-4054-8e5f-c5bed6ad9f2d
-  Args:
-    type: :Person
-    source: Alfonso_brother_of_Gonzalo
-  AddTriple (5fdb36a1-ac38-47be-bd9c-c8234ea476cf)
- Call ID: 5fdb36a1-ac38-47be-bd9c-c8234ea476cf
-  Args:
-    source: Gonzalo_de_Borbon_y_Dampierre
-    relation: :hasBrother
-    target: Alfonso_brother_of_Gonzalo
-  AssignClass (65e70415-0e7a-43c6-8eaf-b83ea27bbe28)
- Call ID: 65e70415-0e7a-43c6-8eaf-b83ea27bbe28
-  Args:
-    type: :Woman
-    source: Victoria_Eugenie_of_Battenberg
-  AssignClass (73ecc3da-d6cd-496a-accf-81beca547973)
- Call ID: 73ecc3da-d6cd-496a-accf-81beca547973
-  Args:
-    type: :Person
-    source: Victoria_Eugenie_of_Battenberg
-  AddTriple (c03bffa6-9c6b-4211-83f1-ed040eb3fd71)
- Call ID: c03bffa6-9c6b-4211-83f1-ed040eb3fd71
-  Args:
-    relation: :isAncestorOf
-    target: Gonzalo_de_Borbon_y_Dampierre
-    source: Victoria_Eugenie_of_Battenberg
-  Finish (76fd40e0-76a6-403b-817c-2417f7a454ae)
- Call ID: 76fd40e0-76a6-403b-817c-2417f7a454ae
+    target: Ottonie_von_Alvensleben
+    source: Armgard_Else_Helene_von_Veltheim
+  Finish (815fcb04-1fcf-4c18-8129-1e268cba58fd)
+ Call ID: 815fcb04-1fcf-4c18-8129-1e268cba58fd
   Args:

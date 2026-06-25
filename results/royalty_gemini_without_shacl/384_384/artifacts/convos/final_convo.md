@@ -69,46 +69,27 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul of Prussia (15 December 1916 – 23 January 1975) was the only child of Prince Joachim of Prussia and Princess Marie-Auguste of Anhalt.
-He was also a grandson of Wilhelm II, German Emperor.
-Early life
+Moritz, Landgrave of Hesse (legally Moritz Friedrich Karl Emanuel Humbert Prinz und Landgraf von Hessen; 6 August 1926 – 23 May 2013) was the son of Prince Philip, Landgrave of Hesse, and the head of the House of Hesse, also known as the House of Brabant.
+Life
 
-Prince Karl Franz was born on 15 December 1916 in Potsdam.
-He was the only child born to Prince Joachim of Prussia and Princess Marie-Auguste of Anhalt and was the Emperor's fourth grandchild to be born since World War I began; he was consequently very young when Hohenzollern fortunes fell.
-His grandfather abdicated in 1918, and his father, Prince Joachim, committed suicide in 1920.
-At the time of his grandfather's abdication, Prince Karl Franz was twelfth in line of succession to the German and Prussian thrones.
-After his father's suicide, Karl Franz was taken into custody by his paternal uncle, Prince Eitel Friedrich of Prussia.
-As the legal head of the House of Hohenzollern, he claimed this right because Emperor Wilhelm had issued an edict placing Hohenzollern powers in Eitel's hands.
-Eitel's defence had also stated that Marie-Auguste was not a fit person for Karl Franz's guardianship.
-Marie-Auguste went to court however and made a plea that she was heartbroken, which may have helped win the case for her.
-In 1922, Marie-Auguste sued ex-Emperor Wilhelm for financial support that had been promised in her and Joachim's marriage contract.
-Wilhelm's attorney argued that the House of Hohenzollern laws were no longer valid, and therefore there was no obligation to support her.
-In World War II, Karl Franz served as a lieutenant in an armoured car division, and at one point was stationed on the Polish front.
-Marriages
+Landgrave Moritz was born at Racconigi Castle, in Italy.
+During the Second World War, Moritz's mother, Princess Mafalda of Savoy, was arrested by the Nazis for alleged subversive activities and died in the Buchenwald concentration camp in 1944 as a result of a U.S. bombing raid on the camp.
+Moritz and his siblings (Heinrich, Otto and Elisabeth) were given sanctuary in the Vatican under the care of their uncle Louis, Prince of Hesse and by Rhine and aunt Margaret Campbell Geddes who adopted them.
+Prince Louis of Hesse and by Rhine, the last head of the Hesse-Darmstadt line, died in 1968, at which time Moritz's father succeeded him as head of the entire house.
+Moritz became the head of the House of Hesse after the death of his father Philip on 25 October 1980.
+Moritz was a world-famous art collector.
+He presided over the Foundation of the House of Hesse which is the proprietor of the Kronberg Palace Hotel and several manor estates and palaces.
+Marriage and children
 
-First
-
-On 1 October 1940, Karl Franz married Princess Henriette Hermine Wanda Ida Luise of Schönaich-Carolath.
-She was the daughter of Princess Hermine Reuss of Greiz, who had been the second wife of Karl Franz's grandfather Emperor Wilhelm II since 1922 (Henriette was thus Kaiser Wilhelm's stepdaughter).
-Held at Wilhelm's private residence without much ceremony, he and Hermine attended the ceremony, as did a few other guests.
-Second
-
-Karl Franz married secondly, on 9 November 1946, to Luise Dora Hartmann (5 September 1909 Hamburg, Germany –
-Third
-
-Karl Franz married lastly, on 20 July 1959 in Lima, Peru, Eva Maria Herrera y Valdeavellano (10 June 1922 Lima, Peru – 6 March 1987 Lima, Peru).
-They were married until Prince Karl's death and had two daughters:
-
-
-Ancestry
-
-References
+Moritz married Princess Tatiana of Sayn-Wittgenstein-Berleburg, daughter of Prince Gustav Albrecht.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -124,39 +105,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -171,6 +122,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -188,6 +156,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -255,29 +238,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -286,6 +261,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -298,6 +281,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -306,17 +291,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -344,6 +331,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -359,185 +430,348 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (52e00f24-4130-4f94-b2e9-3e9e4eca24e5)
- Call ID: 52e00f24-4130-4f94-b2e9-3e9e4eca24e5
-  Args:
-    source: Prince_Karl_Franz_of_Prussia
-    type: :Man
-  AssignClass (06e73aeb-d38b-4067-90ca-83364850326d)
- Call ID: 06e73aeb-d38b-4067-90ca-83364850326d
-  Args:
-    type: :Person
-    source: Prince_Karl_Franz_of_Prussia
-  AssignClass (6ed55155-70fe-48b3-b131-503658ae3c19)
- Call ID: 6ed55155-70fe-48b3-b131-503658ae3c19
+  AssignClass (af2bad12-073e-4db8-91bc-b25c8bcc369c)
+ Call ID: af2bad12-073e-4db8-91bc-b25c8bcc369c
   Args:
     type: :Man
-    source: Prince_Joachim_of_Prussia
-  AssignClass (e6755fbb-cad3-4dc7-9584-7369773978ed)
- Call ID: e6755fbb-cad3-4dc7-9584-7369773978ed
+    source: Moritz
+  AssignClass (4f0325bb-4cf8-4ac4-b76b-a44a89977412)
+ Call ID: 4f0325bb-4cf8-4ac4-b76b-a44a89977412
   Args:
-    source: Prince_Joachim_of_Prussia
-    type: :Person
-  AssignClass (6d5cc75f-1af6-4911-a893-0ad529cdbf3f)
- Call ID: 6d5cc75f-1af6-4911-a893-0ad529cdbf3f
+    source: Philip
+    type: :Man
+  AssignClass (ab623f64-6e89-4353-9daf-4347d0f091af)
+ Call ID: ab623f64-6e89-4353-9daf-4347d0f091af
   Args:
-    source: Princess_Marie_Auguste_of_Anhalt
+    source: MafaldaOfSavoy
     type: :Woman
-  AssignClass (7d54f421-c392-452f-9bd5-d080777ea92a)
- Call ID: 7d54f421-c392-452f-9bd5-d080777ea92a
+  AssignClass (2c789108-cfd5-4c00-97cf-aebd08560b44)
+ Call ID: 2c789108-cfd5-4c00-97cf-aebd08560b44
   Args:
-    type: :Person
-    source: Princess_Marie_Auguste_of_Anhalt
-  AssignClass (cbc35d2c-4fb0-4cc5-90f2-a121b4bc152b)
- Call ID: cbc35d2c-4fb0-4cc5-90f2-a121b4bc152b
+    source: Heinrich
+    type: :Man
+  AssignClass (a6a0ab6f-9f09-4640-8dcb-ed0db5ecf9ac)
+ Call ID: a6a0ab6f-9f09-4640-8dcb-ed0db5ecf9ac
   Args:
     type: :Man
-    source: Wilhelm_II_German_Emperor
-  AssignClass (1ee779fa-0086-4a2b-a382-955ebcfeb545)
- Call ID: 1ee779fa-0086-4a2b-a382-955ebcfeb545
+    source: Otto
+  AssignClass (d9505d29-26f5-407b-926e-3d62943c9094)
+ Call ID: d9505d29-26f5-407b-926e-3d62943c9094
   Args:
-    type: :Person
-    source: Wilhelm_II_German_Emperor
-  AssignClass (6eac3ba3-7e18-464f-bbcd-4387cb20fa82)
- Call ID: 6eac3ba3-7e18-464f-bbcd-4387cb20fa82
+    source: Elisabeth
+    type: :Woman
+  AssignClass (0e3b4485-7c1c-4703-9d40-364b4753ab3b)
+ Call ID: 0e3b4485-7c1c-4703-9d40-364b4753ab3b
   Args:
     type: :Man
-    source: Prince_Eitel_Friedrich_of_Prussia
-  AssignClass (9d543191-0325-407f-b706-cfea888819f3)
- Call ID: 9d543191-0325-407f-b706-cfea888819f3
+    source: Louis
+  AssignClass (801b8774-e113-4ba1-8b35-decdf332840b)
+ Call ID: 801b8774-e113-4ba1-8b35-decdf332840b
   Args:
-    source: Prince_Eitel_Friedrich_of_Prussia
-    type: :Person
-  AssignClass (8ed60286-6bac-4617-bfa9-606e48c97e05)
- Call ID: 8ed60286-6bac-4617-bfa9-606e48c97e05
-  Args:
-    source: Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Schönaich_Carolath
+    source: MargaretCampbellGeddes
     type: :Woman
-  AssignClass (0c7babea-54ce-470b-ac4b-a510a4def2f8)
- Call ID: 0c7babea-54ce-470b-ac4b-a510a4def2f8
+  AssignClass (c4346152-37fc-4596-bb7e-fb7c6fb45567)
+ Call ID: c4346152-37fc-4596-bb7e-fb7c6fb45567
   Args:
-    source: Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Schönaich_Carolath
-    type: :Person
-  AssignClass (a8674ab4-3122-446a-a1d6-c1c925b08ca4)
- Call ID: a8674ab4-3122-446a-a1d6-c1c925b08ca4
-  Args:
-    source: Princess_Hermine_Reuss_of_Greiz
     type: :Woman
-  AssignClass (f63ccccb-fd53-4ef2-82c3-3dc24f7066a9)
- Call ID: f63ccccb-fd53-4ef2-82c3-3dc24f7066a9
+    source: TatianaOfSaynWittgensteinBerleburg
+  AssignClass (7ee6a882-0dd8-4a8b-9c5a-481748defa18)
+ Call ID: 7ee6a882-0dd8-4a8b-9c5a-481748defa18
   Args:
-    type: :Person
-    source: Princess_Hermine_Reuss_of_Greiz
-  AssignClass (83190577-f6e5-4a3e-a850-e0c8e87ad3f6)
- Call ID: 83190577-f6e5-4a3e-a850-e0c8e87ad3f6
+    type: :Man
+    source: GustavAlbrecht
+  AddLiteral (6c7c33bf-229b-49b4-81b9-0ba526c266ac)
+ Call ID: 6c7c33bf-229b-49b4-81b9-0ba526c266ac
   Args:
-    source: Luise_Dora_Hartmann
-    type: :Woman
-  AssignClass (fbb6cb24-2b24-4a9c-b479-f6a6d5d20683)
- Call ID: fbb6cb24-2b24-4a9c-b479-f6a6d5d20683
-  Args:
-    type: :Person
-    source: Luise_Dora_Hartmann
-  AssignClass (36320285-deb8-4a4e-88e3-68e2eb3df115)
- Call ID: 36320285-deb8-4a4e-88e3-68e2eb3df115
-  Args:
-    source: Eva_Maria_Herrera_y_Valdeavellano
-    type: :Woman
-  AssignClass (198e6223-df0a-42c3-b427-c0e5e84a24c2)
- Call ID: 198e6223-df0a-42c3-b427-c0e5e84a24c2
-  Args:
-    type: :Person
-    source: Eva_Maria_Herrera_y_Valdeavellano
-  AddLiteral (817c786a-eccc-4173-86d6-746cc1277c91)
- Call ID: 817c786a-eccc-4173-86d6-746cc1277c91
-  Args:
+    literal_value: 1926
     literal_type: xsd:integer
-    source: Prince_Karl_Franz_of_Prussia
-    literal_value: 1916
+    source: Moritz
     relation: :hasBirthYear
-  AddLiteral (848f5d86-8541-4bbd-9aca-c0693c93b59f)
- Call ID: 848f5d86-8541-4bbd-9aca-c0693c93b59f
+  AddLiteral (20682c42-6ac2-402a-85b4-e35f9854df78)
+ Call ID: 20682c42-6ac2-402a-85b4-e35f9854df78
   Args:
-    source: Prince_Karl_Franz_of_Prussia
-    literal_value: 1975
+    literal_value: 2013
+    literal_type: xsd:integer
+    source: Moritz
     relation: :hasDeathYear
-    literal_type: xsd:integer
-  AddTriple (b8b629b7-6afc-41dc-b02b-c7f23e968e2b)
- Call ID: b8b629b7-6afc-41dc-b02b-c7f23e968e2b
+  AddTriple (027f16dd-4b9c-4ebf-85df-3fa9f7f439aa)
+ Call ID: 027f16dd-4b9c-4ebf-85df-3fa9f7f439aa
   Args:
+    target: Philip
     relation: :hasFather
-    source: Prince_Karl_Franz_of_Prussia
-    target: Prince_Joachim_of_Prussia
-  AddTriple (690070b6-dfb1-4a6d-82b3-917a514b971a)
- Call ID: 690070b6-dfb1-4a6d-82b3-917a514b971a
+    source: Moritz
+  AddTriple (70fb1bc7-5f9d-4db8-92d2-4b86b320d132)
+ Call ID: 70fb1bc7-5f9d-4db8-92d2-4b86b320d132
   Args:
+    source: Moritz
     relation: :hasMother
-    source: Prince_Karl_Franz_of_Prussia
-    target: Princess_Marie_Auguste_of_Anhalt
-  AddTriple (57d4b6c4-a257-464b-9787-bd6a444ae00b)
- Call ID: 57d4b6c4-a257-464b-9787-bd6a444ae00b
+    target: MafaldaOfSavoy
+  AddTriple (561a1823-f01f-48fb-9fe5-230971217fdf)
+ Call ID: 561a1823-f01f-48fb-9fe5-230971217fdf
   Args:
-    source: Prince_Karl_Franz_of_Prussia
+    target: Heinrich
+    source: Moritz
+    relation: :isSiblingOf
+  AddTriple (89f4cd1d-aa1d-4ab7-a81f-88fc1635d1b1)
+ Call ID: 89f4cd1d-aa1d-4ab7-a81f-88fc1635d1b1
+  Args:
+    relation: :isSiblingOf
+    source: Moritz
+    target: Otto
+  AddTriple (411926fe-3a92-4fe2-8591-3b4dcd096518)
+ Call ID: 411926fe-3a92-4fe2-8591-3b4dcd096518
+  Args:
+    target: Elisabeth
+    source: Moritz
+    relation: :isSiblingOf
+  AddTriple (926962a5-d072-4f30-9327-c50fa850a426)
+ Call ID: 926962a5-d072-4f30-9327-c50fa850a426
+  Args:
+    source: Philip
+    relation: :isParentOf
+    target: Moritz
+  AddTriple (ac27c85a-581e-4d51-a74d-4f0c3a98700d)
+ Call ID: ac27c85a-581e-4d51-a74d-4f0c3a98700d
+  Args:
+    target: Moritz
+    relation: :isParentOf
+    source: MafaldaOfSavoy
+  AddTriple (1180ca16-3317-4723-8967-de8cc3beb41c)
+ Call ID: 1180ca16-3317-4723-8967-de8cc3beb41c
+  Args:
+    target: GustavAlbrecht
     relation: :hasFather
-    target: Wilhelm_II_German_Emperor
-  AddTriple (8e61388c-5799-4803-81b3-34a6c46e24f6)
- Call ID: 8e61388c-5799-4803-81b3-34a6c46e24f6
+    source: TatianaOfSaynWittgensteinBerleburg
+  AddTriple (fa9c5239-b2f1-4335-b535-c1dc5049dad7)
+ Call ID: fa9c5239-b2f1-4335-b535-c1dc5049dad7
   Args:
-    target: Wilhelm_II_German_Emperor
-    relation: :hasFather
-    source: Prince_Joachim_of_Prussia
-  AddTriple (e186d1ea-5f1d-4cd1-a5ef-61d85be71c90)
- Call ID: e186d1ea-5f1d-4cd1-a5ef-61d85be71c90
+    relation: :isDaughterOf
+    source: TatianaOfSaynWittgensteinBerleburg
+    target: GustavAlbrecht
+  AddTriple (c32ed91c-2155-4f0d-ba99-db7be178edae)
+ Call ID: c32ed91c-2155-4f0d-ba99-db7be178edae
   Args:
-    target: Prince_Joachim_of_Prussia
-    source: Prince_Eitel_Friedrich_of_Prussia
-    relation: :isBrotherOf
-  AddLiteral (3264491c-7de4-45a0-8e1a-089a593cdb55)
- Call ID: 3264491c-7de4-45a0-8e1a-089a593cdb55
+    target: TatianaOfSaynWittgensteinBerleburg
+    relation: :isFatherOf
+    source: GustavAlbrecht
+  AddLiteral (044767a0-82dd-46b2-a584-182205239fa3)
+ Call ID: 044767a0-82dd-46b2-a584-182205239fa3
   Args:
-    literal_value: 1940
-    source: Prince_Karl_Franz_of_Prussia
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-  AddTriple (9ee5e981-3d8e-4a02-8ab9-97e7c409e48f)
- Call ID: 9ee5e981-3d8e-4a02-8ab9-97e7c409e48f
+    literal_type: xsd:string
+    literal_value: House of Brabant
+    relation: :alsoKnownAs
+    source: HouseOfHesse
+  Finish (d2982cb2-cb67-4439-82af-c277de0211c1)
+ Call ID: d2982cb2-cb67-4439-82af-c277de0211c1
   Args:
-    source: Prince_Karl_Franz_of_Prussia
-    relation: :hasRelation
-    target: Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Schönaich_Carolath
-  AddTriple (a0354fb1-e0ad-4e63-a678-477a35dc9c8c)
- Call ID: a0354fb1-e0ad-4e63-a678-477a35dc9c8c
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:HouseOfHesse :alsoKnownAs "House of Brabant"^^xsd:string .
+
+  data:Louis a :Man .
+
+  data:MargaretCampbellGeddes a :Woman .
+
+  data:Elisabeth a :Woman .
+
+  data:Heinrich a :Man .
+
+  data:MafaldaOfSavoy a :Woman ;
+      :isParentOf data:Moritz .
+
+  data:Otto a :Man .
+
+  data:Philip a :Man ;
+      :isParentOf data:Moritz .
+
+  data:TatianaOfSaynWittgensteinBerleburg a :Woman ;
+      :hasFather data:GustavAlbrecht ;
+      :isDaughterOf data:GustavAlbrecht .
+
+  data:GustavAlbrecht a :Man ;
+      :isFatherOf data:TatianaOfSaynWittgensteinBerleburg .
+
+  data:Moritz a :Man ;
+      :hasBirthYear 1926 ;
+      :hasDeathYear 2013 ;
+      :hasFather data:Philip ;
+      :hasMother data:MafaldaOfSavoy ;
+      :isSiblingOf data:Elisabeth,
+          data:Heinrich,
+          data:Otto .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['HouseOfHesse']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (b7c4f01d-e27c-4601-b746-d11bf33d0378)
+ Call ID: b7c4f01d-e27c-4601-b746-d11bf33d0378
   Args:
-    target: Princess_Hermine_Reuss_of_Greiz
-    source: Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Schönaich_Carolath
-    relation: :hasMother
-  AddLiteral (433c185e-f0bf-490e-a7ac-dfe6146ae5de)
- Call ID: 433c185e-f0bf-490e-a7ac-dfe6146ae5de
-  Args:
-    source: Prince_Karl_Franz_of_Prussia
-    literal_value: 1946
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-  AddTriple (f7d99d9a-fa4e-47e2-9a82-9e5e27296cf2)
- Call ID: f7d99d9a-fa4e-47e2-9a82-9e5e27296cf2
-  Args:
-    source: Prince_Karl_Franz_of_Prussia
-    relation: :hasRelation
-    target: Luise_Dora_Hartmann
-  AddLiteral (5c2cac94-0a47-42d4-b918-166a8b03bd78)
- Call ID: 5c2cac94-0a47-42d4-b918-166a8b03bd78
-  Args:
-    relation: :hasMarriageYear
-    source: Prince_Karl_Franz_of_Prussia
-    literal_value: 1959
-    literal_type: xsd:integer
-  AddTriple (55af93e8-3215-405b-81f5-ec14d9fdf859)
- Call ID: 55af93e8-3215-405b-81f5-ec14d9fdf859
-  Args:
-    relation: :hasRelation
-    source: Prince_Karl_Franz_of_Prussia
-    target: Eva_Maria_Herrera_y_Valdeavellano
-  Finish (5b78eba9-9e13-460b-88dc-35b3f71b8a72)
- Call ID: 5b78eba9-9e13-460b-88dc-35b3f71b8a72
+    source: HouseOfHesse
+    type: :DomainEntity
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:HouseOfHesse a :DomainEntity ;
+      :alsoKnownAs "House of Brabant"^^xsd:string .
+
+  data:Louis a :Man .
+
+  data:MargaretCampbellGeddes a :Woman .
+
+  data:Elisabeth a :Woman .
+
+  data:Heinrich a :Man .
+
+  data:MafaldaOfSavoy a :Woman ;
+      :isParentOf data:Moritz .
+
+  data:Otto a :Man .
+
+  data:Philip a :Man ;
+      :isParentOf data:Moritz .
+
+  data:TatianaOfSaynWittgensteinBerleburg a :Woman ;
+      :hasFather data:GustavAlbrecht ;
+      :isDaughterOf data:GustavAlbrecht .
+
+  data:GustavAlbrecht a :Man ;
+      :isFatherOf data:TatianaOfSaynWittgensteinBerleburg .
+
+  data:Moritz a :Man ;
+      :hasBirthYear 1926 ;
+      :hasDeathYear 2013 ;
+      :hasFather data:Philip ;
+      :hasMother data:MafaldaOfSavoy ;
+      :isSiblingOf data:Elisabeth,
+          data:Heinrich,
+          data:Otto .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (1a3a2578-8ee6-4b73-8366-b56ea216c048)
+ Call ID: 1a3a2578-8ee6-4b73-8366-b56ea216c048
   Args:

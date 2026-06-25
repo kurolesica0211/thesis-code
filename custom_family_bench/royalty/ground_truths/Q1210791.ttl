@@ -7,63 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Marie_Alix-_Duchess_of_Schleswig-Holstein a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Marie Alix, Duchess of Schleswig-Holstein" ;
-    data:posIndicesFull "1560:1599" ;
-    data:posIndicesPart "1864:1873",
-        "1878:1886",
-        "1955:1964",
-        "2154:2163",
-        "2164:2172",
-        "2321:2330",
-        "2331:2339",
-        "2581:2590",
-        "2591:2599" ;
-    data:wdtLink wdt:Q6490795 ;
-    :alsoKnownAs "Marie-Alix Prinzessin zu Schaumburg-Lippe",
-        "Princess Marie Alix of Schaumburg-Lippe" ;
-    :hasChild data:Prince_Christoph_of_Schleswig-Holstein ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Christoph_of_Schleswig-Holstein ;
-    :isMotherOf data:Prince_Christoph_of_Schleswig-Holstein ;
-    :isParentOf data:Prince_Christoph_of_Schleswig-Holstein .
-
-data:Peter-_Duke_of_Schleswig-Holstein a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Peter, Duke of Schleswig-Holstein" ;
-    data:posIndicesFull "1499:1532" ;
-    data:posIndicesPart "1864:1873",
-        "1878:1886",
-        "1955:1964",
-        "2146:2150",
-        "2154:2163",
-        "2164:2172",
-        "2321:2330",
-        "2331:2339",
-        "2581:2590",
-        "2591:2599" ;
-    data:wdtLink wdt:Q739253 ;
-    :alsoKnownAs "Friedrich Ernst Peter Herzog zu Schleswig-Holstein-Sonderburg-Glücksburg" ;
-    :hasChild data:Prince_Christoph_of_Schleswig-Holstein ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Christoph_of_Schleswig-Holstein ;
-    :isFatherOf data:Prince_Christoph_of_Schleswig-Holstein ;
-    :isParentOf data:Prince_Christoph_of_Schleswig-Holstein .
-
-data:Prince_Christoph_of_Schleswig-Holstein a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Christoph_of_Schleswig-Holstein a :Person ;
     rdfs:label "Prince Christoph of Schleswig-Holstein" ;
     data:posIndicesFull "0:31",
         "78:115" ;
@@ -103,13 +47,51 @@ data:Prince_Christoph_of_Schleswig-Holstein a :Man,
     :alsoKnownAs "Christoph Herzog zu Schleswig-Holstein-Sonderburg-Glücksburg",
         "Christoph Prinz zu Schleswig-Holstein",
         "Christoph of Schleswig-Holstein" ;
-    :hasFather data:Peter-_Duke_of_Schleswig-Holstein ;
-    :hasMother data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
     :hasParent data:Marie_Alix-_Duchess_of_Schleswig-Holstein,
         data:Peter-_Duke_of_Schleswig-Holstein ;
-    :hasSex data:male ;
-    :isChildOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein,
-        data:Peter-_Duke_of_Schleswig-Holstein ;
-    :isSonOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein,
-        data:Peter-_Duke_of_Schleswig-Holstein .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Marie_Alix-_Duchess_of_Schleswig-Holstein a :Person ;
+    rdfs:label "Marie Alix, Duchess of Schleswig-Holstein" ;
+    data:posIndicesFull "1560:1599" ;
+    data:posIndicesPart "1864:1873",
+        "1878:1886",
+        "1955:1964",
+        "2154:2163",
+        "2164:2172",
+        "2321:2330",
+        "2331:2339",
+        "2581:2590",
+        "2591:2599" ;
+    data:wdtLink wdt:Q6490795 ;
+    :alsoKnownAs "Marie-Alix Prinzessin zu Schaumburg-Lippe",
+        "Princess Marie Alix of Schaumburg-Lippe" ;
+    :hasSex data:female .
+
+data:Peter-_Duke_of_Schleswig-Holstein a :Person ;
+    rdfs:label "Peter, Duke of Schleswig-Holstein" ;
+    data:posIndicesFull "1499:1532" ;
+    data:posIndicesPart "1864:1873",
+        "1878:1886",
+        "1955:1964",
+        "2146:2150",
+        "2154:2163",
+        "2164:2172",
+        "2321:2330",
+        "2331:2339",
+        "2581:2590",
+        "2591:2599" ;
+    data:wdtLink wdt:Q739253 ;
+    :alsoKnownAs "Friedrich Ernst Peter Herzog zu Schleswig-Holstein-Sonderburg-Glücksburg" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

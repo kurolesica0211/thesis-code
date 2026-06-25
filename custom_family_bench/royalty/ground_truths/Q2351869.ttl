@@ -7,92 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alfonso XIII" ;
-    data:posIndicesFull "1780:1792",
-        "1780:1801" ;
-    data:wdtLink wdt:Q18363 ;
-    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
-        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
-        "Alfonso XIII of Spain",
-        "Don Alfonso de Borbon y Habsburgo",
-        "Don Alfonso de Borbón y Habsburgo",
-        "The African" ;
-    :hasSex data:male .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Henry_of_Battenberg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Henry of Battenberg" ;
-    data:posIndicesFull "471:497",
-        "478:497",
-        "605:633",
-        "614:633",
-        "815:841",
-        "822:841" ;
-    data:posIndicesPart "1436:1441",
-        "1453:1459",
-        "1478:1488" ;
-    data:wdtLink wdt:Q444347 ;
-    :alsoKnownAs "Heinrich Moritz von Battenberg",
-        "Henry Maurice Battenberg",
-        "Henry of Battenberg",
-        "Prince Henry Maurice of Battenberg" ;
-    :hasChild data:Prince_Maurice_of_Battenberg,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :hasDaughter data:Victoria_Eugenie_of_Battenberg ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Maurice_of_Battenberg ;
-    :isFatherOf data:Prince_Maurice_of_Battenberg,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :isParentOf data:Prince_Maurice_of_Battenberg,
-        data:Victoria_Eugenie_of_Battenberg .
-
-data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Beatrice of the United Kingdom" ;
-    data:posIndicesFull "2603:2620",
-        "471:497",
-        "605:633",
-        "639:656",
-        "639:678",
-        "815:841" ;
-    data:posIndicesPart "1076:1082",
-        "1083:1090",
-        "1301:1309",
-        "1339:1347" ;
-    data:wdtLink wdt:Q158140 ;
-    :alsoKnownAs "Beatrice Mary Victoria Feodore",
-        "Princess Beatrice",
-        "Princess Beatrice Mary Victoria Feodore of the United Kingdom",
-        "Princess Beatrice of Battenberg",
-        "Princess Henry of Battenberg",
-        "The Princess Beatrice" ;
-    :hasChild data:Prince_Maurice_of_Battenberg,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :hasDaughter data:Victoria_Eugenie_of_Battenberg ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Maurice_of_Battenberg ;
-    :isMotherOf data:Prince_Maurice_of_Battenberg,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :isParentOf data:Prince_Maurice_of_Battenberg,
-        data:Victoria_Eugenie_of_Battenberg .
-
-data:Prince_Maurice_of_Battenberg a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Maurice_of_Battenberg a :Person ;
     rdfs:label "Prince Maurice of Battenberg" ;
     data:posIndicesFull "0:28",
         "1028:1056",
@@ -119,23 +34,11 @@ data:Prince_Maurice_of_Battenberg a :Man,
     data:wdtLink wdt:Q2351869 ;
     :alsoKnownAs "Maurice Victor Donald Battenberg",
         "Prince Maurice Victor Donald of Battenberg" ;
-    :hasFather data:Prince_Henry_of_Battenberg ;
-    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
     :hasParent data:Prince_Henry_of_Battenberg,
         data:Princess_Beatrice_of_the_United_Kingdom ;
-    :hasSex data:male ;
-    :hasSister data:Victoria_Eugenie_of_Battenberg ;
-    :isBrotherOf data:Victoria_Eugenie_of_Battenberg ;
-    :isChildOf data:Prince_Henry_of_Battenberg,
-        data:Princess_Beatrice_of_the_United_Kingdom ;
-    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
-    :isSonOf data:Prince_Henry_of_Battenberg,
-        data:Princess_Beatrice_of_the_United_Kingdom .
+    :hasSex data:male .
 
-data:Victoria_Eugenie_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Victoria_Eugenie_of_Battenberg a :Person ;
     rdfs:label "Victoria Eugenie of Battenberg" ;
     data:posIndicesFull "1741:1771" ;
     data:wdtLink wdt:Q160001 ;
@@ -145,16 +48,56 @@ data:Victoria_Eugenie_of_Battenberg a :Ancestor,
         "Queen Victoria Eugenie of Spain",
         "Victoria Eugenie Julia Ena of Battenberg",
         "Victoria Eugenie, Queen of Spain" ;
-    :hasBrother data:Prince_Maurice_of_Battenberg ;
-    :hasFather data:Prince_Henry_of_Battenberg ;
-    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
     :hasParent data:Prince_Henry_of_Battenberg,
         data:Princess_Beatrice_of_the_United_Kingdom ;
-    :hasSex data:female ;
-    :isChildOf data:Prince_Henry_of_Battenberg,
-        data:Princess_Beatrice_of_the_United_Kingdom ;
-    :isDaughterOf data:Prince_Henry_of_Battenberg,
-        data:Princess_Beatrice_of_the_United_Kingdom ;
-    :isSiblingOf data:Prince_Maurice_of_Battenberg ;
-    :isSisterOf data:Prince_Maurice_of_Battenberg .
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Henry_of_Battenberg a :Person ;
+    rdfs:label "Prince Henry of Battenberg" ;
+    data:posIndicesFull "471:497",
+        "478:497",
+        "605:633",
+        "614:633",
+        "815:841",
+        "822:841" ;
+    data:posIndicesPart "1436:1441",
+        "1453:1459",
+        "1478:1488" ;
+    data:wdtLink wdt:Q444347 ;
+    :alsoKnownAs "Heinrich Moritz von Battenberg",
+        "Henry Maurice Battenberg",
+        "Henry of Battenberg",
+        "Prince Henry Maurice of Battenberg" ;
+    :hasSex data:male .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Person ;
+    rdfs:label "Princess Beatrice of the United Kingdom" ;
+    data:posIndicesFull "2603:2620",
+        "471:497",
+        "605:633",
+        "639:656",
+        "639:678",
+        "815:841" ;
+    data:posIndicesPart "1076:1082",
+        "1083:1090",
+        "1301:1309",
+        "1339:1347" ;
+    data:wdtLink wdt:Q158140 ;
+    :alsoKnownAs "Beatrice Mary Victoria Feodore",
+        "Princess Beatrice",
+        "Princess Beatrice Mary Victoria Feodore of the United Kingdom",
+        "Princess Beatrice of Battenberg",
+        "Princess Henry of Battenberg",
+        "The Princess Beatrice" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

@@ -2,33 +2,60 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:LylaGilman a :Ancestor,
-        :Person,
+data:Cecilie a :Person,
         :Woman ;
-    :isDaughterOf data:GeorgeGilman,
-        data:LadyRoseGilman .
+    :hasRelation data:GeorgDonatus .
 
-data:RufusGilman a :Ancestor,
-        :Man,
+data:FrederickII a :Man,
         :Person ;
-    :isSonOf data:GeorgeGilman,
-        data:LadyRoseGilman .
+    :isAncestorOf data:Donatus,
+        data:FloriaFranziska .
 
-data:BirgitteGloucester a :Ancestor,
-        :Person,
+data:MaryOfGreatBritain a :Person,
+        :Woman ;
+    :isAncestorOf data:Donatus,
+        data:FloriaFranziska .
+
+data:GeorgDonatus a :Man,
+        :Person ;
+    :hasBrother data:Louis .
+
+data:HubertusVonFaberCastell a :Man,
+        :Person .
+
+data:Louis a :Man,
+        :Person ;
+    :hasDeathYear 1968 ;
+    :hasRelation data:MargaretCampbellGeddes .
+
+data:Male a :Sex .
+
+data:MargaretCampbellGeddes a :Person,
         :Woman .
 
-data:PrinceRichard a :Ancestor,
-        :Man,
-        :Person .
+data:Moritz a :Man,
+        :Person ;
+    :hasFather data:Philipp .
 
-data:GeorgeGilman a :Man,
-        :Person .
+data:Philipp a :Man,
+        :Person ;
+    :hasDeathYear 1980 .
 
-data:LadyRoseGilman a :Person,
+data:Tatiana a :Person,
         :Woman ;
-    :hasBirthYear 1980 ;
-    :hasFather data:PrinceRichard ;
-    :hasMarriageYear 2007 ;
-    :hasMother data:BirgitteGloucester .
+    :hasBirthYear 1940 .
+
+data:Donatus a :Man,
+        :Person ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Moritz ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Tatiana ;
+    :hasRelation data:FloriaFranziska ;
+    :hasSex data:Male .
+
+data:FloriaFranziska a :Person,
+        :Woman ;
+    :hasBirthYear 1974 ;
+    :hasFather data:HubertusVonFaberCastell .
 

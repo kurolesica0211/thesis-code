@@ -2,42 +2,40 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfonso_Prince_of_Asturias a :Man,
-        :Person ;
-    :alsoKnownAs "Count of Covadonga"^^xsd:string ;
-    :hasBirthYear 1907 ;
-    :hasBrother data:Gonzalo ;
-    :hasDeathYear 1938 ;
-    :hasFather data:Alfonso_XIII_of_Spain ;
-    :hasMarriageYear 1933,
-        1937 ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg ;
-    :hasSex data:Male_Sex ;
-    :knownAs "Alfonso Pío Cristino Eduardo Francisco Guillermo Carlos Enrique Eugenio Fernando Antonio Venancio"^^xsd:string .
+data:CarlosHugo a :Ancestor,
+        :Man ;
+    :isFatherOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita .
 
-data:Edelmira_Sampedro_y_Robato a :Person,
+data:PrincessIrene a :Ancestor,
         :Woman ;
-    :hasSex data:Female_Sex .
+    :isMotherOf data:PrinceCarlos,
+        data:PrinceJaime,
+        data:PrincessCarolina,
+        data:PrincessMargarita .
 
-data:Marta_Esther_Rocafort-Altuzarra a :Person,
-        :Woman ;
-    :hasSex data:Female_Sex .
+data:AnnemarieGualtherieVanWeezel a :Woman .
 
-data:Alfonso_XIII_of_Spain a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male_Sex .
+data:PrinceCarlosEnrique a :Man .
 
-data:Gonzalo a :Man,
-        :Person ;
-    :hasSex data:Male_Sex .
+data:PrincessCecilia a :Woman .
 
-data:Victoria_Eugenie_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSex data:Female_Sex .
+data:PrincessLuisa a :Woman .
 
-data:Female_Sex a :Female .
+data:PrinceCarlos a :Ancestor,
+        :Man ;
+    :hasBirthYear 1970 ;
+    :hasMarriageYear 2010 ;
+    :hasRelation data:AnnemarieGualtherieVanWeezel ;
+    :isFatherOf data:PrinceCarlosEnrique,
+        data:PrincessCecilia,
+        data:PrincessLuisa .
 
-data:Male_Sex a :Male .
+data:PrinceJaime a :Man .
+
+data:PrincessCarolina a :Woman .
+
+data:PrincessMargarita a :Woman .
 

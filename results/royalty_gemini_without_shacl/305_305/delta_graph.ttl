@@ -2,40 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Edgar_Lascelles a :Man,
+data:AlexanderMountstuartElphinstone a :Man,
         :Person ;
     :hasBirthYear 1980 ;
-    :hasDaughter data:Ivy_Lascelles ;
-    :hasFather data:David_Lascelles ;
-    :hasMarriageYear 2017 ;
-    :hasMother data:Margaret_Lascelles ;
-    :hasSon data:Kit_Lascelles,
-        data:Leo_Lascelles .
+    :hasFather data:JamesElphinstone ;
+    :hasMother data:WillaMaryGabrielleChetwode .
 
-data:David_Lascelles a :Man,
+data:ElizabethII a :Person,
+        :Woman .
+
+data:GeorgeChetwode a :Man,
+        :Person ;
+    :isFatherOf data:WillaMaryGabrielleChetwode .
+
+data:MaryBowesLyon a :Person,
+        :Woman ;
+    :isMotherOf data:AndrewElphinstone ;
+    :isSisterOf data:ElizabethQueenMother .
+
+data:VictorElliotMurrayKynynmound a :Man,
+        :Person ;
+    :isFatherOf data:WillaElliotMurrayKynynmound .
+
+data:ElizabethQueenMother a :Person,
+        :Woman .
+
+data:JamesElphinstone a :Man,
+        :Person ;
+    :hasFather data:AndrewElphinstone .
+
+data:WillaElliotMurrayKynynmound a :Person,
+        :Woman ;
+    :isMotherOf data:WillaMaryGabrielleChetwode .
+
+data:AndrewElphinstone a :Man,
         :Person .
 
-data:Ivy_Lascelles a :Person,
-        :Woman ;
-    :hasBirthYear 2018 ;
-    :hasMother data:Annika_Reed .
-
-data:Kit_Lascelles a :Man,
-        :Person ;
-    :hasBirthYear 2023 ;
-    :hasMother data:Annika_Reed .
-
-data:Laleh_Yeganegy a :Person,
-        :Woman .
-
-data:Leo_Lascelles a :Man,
-        :Person ;
-    :hasBirthYear 2008 ;
-    :hasMother data:Laleh_Yeganegy .
-
-data:Margaret_Lascelles a :Person,
-        :Woman .
-
-data:Annika_Reed a :Person,
+data:WillaMaryGabrielleChetwode a :Person,
         :Woman .
 

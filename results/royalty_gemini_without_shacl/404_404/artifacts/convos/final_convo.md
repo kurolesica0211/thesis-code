@@ -69,32 +69,39 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lady Helen Marina Lucy Taylor (née Windsor; born 28 April 1964) is a relative of the British royal family.
-She is the daughter of Prince Edward, Duke of Kent, and Katharine, Duchess of Kent, and a great-granddaughter of King George V.
+Lord Ivar Alexander Michael Mountbatten, DL (born 9 March 1963) is a British aristocrat, farmer, geologist, businessman, and reality television personality.
+Early life and family
 
+Ivar
+Alexander Michael Mountbatten was born in London, to David Mountbatten, 3rd Marquess of Milford Haven, and the former Janet Mercedes Bryce.
+His elder brother is George Mountbatten, 4th Marquess of Milford Haven.
+His paternal grandfather was Prince George of Battenberg, through whom he is a morganatic descendant of the House of Hesse-Darmstadt.
+Mountbatten grew up at Moyns Park in Essex.
+In a June 2022 interview with Tatler Mountbatten commented on the 1930s Gloria Vanderbilt child custody trial, where a maid made an allegation of a lesbian affair between the child's mother Gloria Morgan Vanderbilt and the Marchioness of Milford Haven, Mountbatten's grandmother.
+Mountbatten was educated at Gordonstoun School, the same school attended by Prince Philip and Charles III, and he graduated from Middlebury College in Vermont with a BA degree.
+Career
 
-Early life and youth
+Mountbatten began his career as a geologist and spent significant time working in South America during his early career.
+Starting in 1995, Mountbatten began his involvement in business pursuits, including being the director of the UK subsidiary of DMX Music and being involved with Coldharbour Mill Working Wool Museum.
+Mountbatten was later involved with SCL Group, the parent company of the now-defunct data analytics firm Cambridge Analytica.
+Mountbatten also serves as a Deputy Lieutenant of Devon.
+In 2019, Mountbatten began a career in reality television by starring in the sixth series of Treasure Island with Bear Grylls.
+In October 2024, Mountbatten was announced to be part of the third season of the American reality competition series The Traitors, which premiered on 9 January 2025.
+Personal life
 
-Lady Helen Marina Lucy Windsor was born on 28 April 1964 at Coppins, a country house in Iver, Buckinghamshire, the only daughter of the Duke and Duchess of Kent.
-According to Lol Tolhurst of The Cure, Helen was a "mad Cure fan" who visited the band backstage at a gig in Bath in 1983.
-Helen worked with the art dealer Karsten Schubert between 1987 and 1991, behind the front desk, and was later credited with discovering Rachel Whiteread and Gary Hume, but confessed in a television interview that she had turned down representing artist Damien Hirst.
-For 17 years, Helen was a fashion ambassador and muse to Giorgio Armani.
-Marriage and children
-
-At some point Helen reportedly dated David Flint Wood, who would later marry her cousin India Hicks.
-At 19, Helen met Timothy Verner Taylor (born 8 August 1963), an art dealer.
-Helen and her husband have four children, who immediately follow her in the Line of succession to the British throne:
-
-
-Charity work
-
-She is a patron of the CLIC Sargent children's cancer charity.
+Mountbatten married Penelope Anne Vere Thompson (born Salisbury, Wiltshire, 17 March 1966), only daughter of Colin Graham Thompson of Old Manor House, Sutton Veny, Wiltshire, and Rosemary Vere Edwardes.
+In September 2016, Mountbatten revealed that he was in a relationship with James Coyle, an airline cabin services director whom he met while at a ski resort in Verbier.
+Mountbatten's former wife walked him down the aisle and 'gave him away' at the suggestion of their daughters.
+Mountbatten is a godparent of Lady Louise Windsor (born 2003), the daughter of Prince Edward and Sophie.
+Mountbatten inherited Moyns Park in 1992 along with his brother, George Mountbatten, 4th Marquess of Milford Haven, but in 1997 moved to Bridwell Park in Uffculme, Devon.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -110,39 +117,9 @@ She is a patron of the CLIC Sargent children's cancer charity.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -157,6 +134,23 @@ She is a patron of the CLIC Sargent children's cancer charity.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -174,6 +168,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -241,29 +250,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -272,6 +273,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -284,6 +293,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -292,17 +303,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -330,6 +343,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -345,94 +442,195 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (306ae82a-59a7-4ac7-a374-10475e173c38)
- Call ID: 306ae82a-59a7-4ac7-a374-10475e173c38
+  AssignClass (b3840c62-7880-4af4-9bce-701e888f33ba)
+ Call ID: b3840c62-7880-4af4-9bce-701e888f33ba
   Args:
-    source: Lady_Helen_Windsor
-    type: :Person
-  AssignClass (e0b4eeee-6014-4ef8-8376-2111a7e50dc3)
- Call ID: e0b4eeee-6014-4ef8-8376-2111a7e50dc3
-  Args:
-    type: :Woman
-    source: Lady_Helen_Windsor
-  AddLiteral (c69d503b-f364-4970-92dd-cd0705bdb38c)
- Call ID: c69d503b-f364-4970-92dd-cd0705bdb38c
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1964
-    literal_type: xsd:integer
-    source: Lady_Helen_Windsor
-  AssignClass (7036d2b9-8c71-462b-8c72-9c0381db0bb8)
- Call ID: 7036d2b9-8c71-462b-8c72-9c0381db0bb8
-  Args:
-    type: :Person
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (e255ed3d-51da-4e01-9368-23d4d29fd332)
- Call ID: e255ed3d-51da-4e01-9368-23d4d29fd332
-  Args:
+    source: Ivar_Mountbatten
     type: :Man
-    source: Prince_Edward_Duke_of_Kent
-  AddTriple (c283464b-dc79-4f09-9407-45463e66ab10)
- Call ID: c283464b-dc79-4f09-9407-45463e66ab10
+  AssignClass (23236d40-0ca4-4604-b883-900645896346)
+ Call ID: 23236d40-0ca4-4604-b883-900645896346
   Args:
-    relation: :isFatherOf
-    target: Lady_Helen_Windsor
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (75e82007-2ccb-4c07-a2be-3bb01fb22e02)
- Call ID: 75e82007-2ccb-4c07-a2be-3bb01fb22e02
-  Args:
+    source: Ivar_Mountbatten
     type: :Person
-    source: Katharine_Duchess_of_Kent
-  AssignClass (598b93d6-4463-4691-9b7c-6814a72164af)
- Call ID: 598b93d6-4463-4691-9b7c-6814a72164af
-  Args:
-    type: :Woman
-    source: Katharine_Duchess_of_Kent
-  AddTriple (6eee890f-d6ef-42a0-94b0-d34aa3cc1767)
- Call ID: 6eee890f-d6ef-42a0-94b0-d34aa3cc1767
-  Args:
-    relation: :isMotherOf
-    target: Lady_Helen_Windsor
-    source: Katharine_Duchess_of_Kent
-  AssignClass (7cdc13a1-6f8d-46a9-a06e-d3671b725865)
- Call ID: 7cdc13a1-6f8d-46a9-a06e-d3671b725865
-  Args:
-    source: King_George_V
-    type: :Person
-  AssignClass (30aec0cf-e1aa-4c47-a582-76f91b9b8b7b)
- Call ID: 30aec0cf-e1aa-4c47-a582-76f91b9b8b7b
-  Args:
-    type: :Man
-    source: King_George_V
-  AddTriple (7528d081-a9ff-466b-9e3c-6e1cc007fd3d)
- Call ID: 7528d081-a9ff-466b-9e3c-6e1cc007fd3d
-  Args:
-    source: King_George_V
-    relation: :isAncestorOf
-    target: Lady_Helen_Windsor
-  AssignClass (23cd440b-c717-4ba5-adc6-509157732481)
- Call ID: 23cd440b-c717-4ba5-adc6-509157732481
-  Args:
-    source: Timothy_Verner_Taylor
-    type: :Person
-  AssignClass (31494739-5aed-4fac-ad09-3be89f81edc4)
- Call ID: 31494739-5aed-4fac-ad09-3be89f81edc4
-  Args:
-    source: Timothy_Verner_Taylor
-    type: :Man
-  AddLiteral (ae223fd5-9e29-47dc-9610-e19ebee1fba6)
- Call ID: ae223fd5-9e29-47dc-9610-e19ebee1fba6
+  AddLiteral (03c7fc8a-7026-4e7b-bdf5-936fd5cc6219)
+ Call ID: 03c7fc8a-7026-4e7b-bdf5-936fd5cc6219
   Args:
     relation: :hasBirthYear
     literal_value: 1963
-    source: Timothy_Verner_Taylor
     literal_type: xsd:integer
-  AddTriple (57a62e3b-8999-4b7c-b629-d2e4a7dd21b9)
- Call ID: 57a62e3b-8999-4b7c-b629-d2e4a7dd21b9
+    source: Ivar_Mountbatten
+  AssignClass (477cc2c6-b3ff-4835-afca-c3573a052cdf)
+ Call ID: 477cc2c6-b3ff-4835-afca-c3573a052cdf
   Args:
-    relation: :hasRelation
-    target: Timothy_Verner_Taylor
-    source: Lady_Helen_Windsor
-  Finish (9375af14-ce23-431d-b3b0-8edb26dccddc)
- Call ID: 9375af14-ce23-431d-b3b0-8edb26dccddc
+    source: David_Mountbatten
+    type: :Man
+  AssignClass (2062f0ca-704d-48b1-968f-7feb15dcd871)
+ Call ID: 2062f0ca-704d-48b1-968f-7feb15dcd871
+  Args:
+    source: David_Mountbatten
+    type: :Person
+  AssignClass (19810071-80f4-4fc8-bf19-fddd86fbb63c)
+ Call ID: 19810071-80f4-4fc8-bf19-fddd86fbb63c
+  Args:
+    type: :Woman
+    source: Janet_Mercedes_Bryce
+  AssignClass (80b802d0-f3e9-4d1a-838a-adc92ed6839e)
+ Call ID: 80b802d0-f3e9-4d1a-838a-adc92ed6839e
+  Args:
+    source: Janet_Mercedes_Bryce
+    type: :Person
+  AddTriple (11b49870-0703-491a-88d6-d5e44b3401cf)
+ Call ID: 11b49870-0703-491a-88d6-d5e44b3401cf
+  Args:
+    target: David_Mountbatten
+    relation: :hasFather
+    source: Ivar_Mountbatten
+  AddTriple (201bae99-a99b-4712-9e2d-097fb7d92e6c)
+ Call ID: 201bae99-a99b-4712-9e2d-097fb7d92e6c
+  Args:
+    relation: :hasMother
+    target: Janet_Mercedes_Bryce
+    source: Ivar_Mountbatten
+  AssignClass (14b16c88-7399-4c7f-9893-a7d49c2aed3c)
+ Call ID: 14b16c88-7399-4c7f-9893-a7d49c2aed3c
+  Args:
+    source: George_Mountbatten_4th_Marquess
+    type: :Man
+  AssignClass (63f8fd2d-cc55-4689-acbf-7d04b6d2e8ac)
+ Call ID: 63f8fd2d-cc55-4689-acbf-7d04b6d2e8ac
+  Args:
+    type: :Person
+    source: George_Mountbatten_4th_Marquess
+  AddTriple (7f66c24c-ad59-439f-aceb-90670730bb78)
+ Call ID: 7f66c24c-ad59-439f-aceb-90670730bb78
+  Args:
+    target: George_Mountbatten_4th_Marquess
+    relation: :hasBrother
+    source: Ivar_Mountbatten
+  AssignClass (2a3941ae-737f-4619-9d6b-fef11fab4433)
+ Call ID: 2a3941ae-737f-4619-9d6b-fef11fab4433
+  Args:
+    type: :Man
+    source: Prince_George_of_Battenberg
+  AssignClass (a6044bac-14de-46db-91d3-7e766ac01226)
+ Call ID: a6044bac-14de-46db-91d3-7e766ac01226
+  Args:
+    source: Prince_George_of_Battenberg
+    type: :Person
+  AddTriple (a704fc7f-bd24-4fb2-9adf-26604d392c61)
+ Call ID: a704fc7f-bd24-4fb2-9adf-26604d392c61
+  Args:
+    relation: :hasFather
+    target: Prince_George_of_Battenberg
+    source: David_Mountbatten
+  AssignClass (6e1df429-0bb3-4a27-87d8-0c05875d5472)
+ Call ID: 6e1df429-0bb3-4a27-87d8-0c05875d5472
+  Args:
+    source: Penelope_Anne_Vere_Thompson
+    type: :Woman
+  AssignClass (1bbbf2b0-2d96-4099-80c4-da9d94c01c02)
+ Call ID: 1bbbf2b0-2d96-4099-80c4-da9d94c01c02
+  Args:
+    source: Penelope_Anne_Vere_Thompson
+    type: :Person
+  AddLiteral (4221b917-46fd-4617-9d62-baa2e9cfcdd0)
+ Call ID: 4221b917-46fd-4617-9d62-baa2e9cfcdd0
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1966
+    relation: :hasBirthYear
+    source: Penelope_Anne_Vere_Thompson
+  AssignClass (e179fd84-224e-4959-8cdc-1d6d71f13e3b)
+ Call ID: e179fd84-224e-4959-8cdc-1d6d71f13e3b
+  Args:
+    type: :Man
+    source: Colin_Graham_Thompson
+  AssignClass (945f63e9-c2dd-4468-9f10-db2df4b17eda)
+ Call ID: 945f63e9-c2dd-4468-9f10-db2df4b17eda
+  Args:
+    source: Colin_Graham_Thompson
+    type: :Person
+  AssignClass (068d27d6-a4b1-4edb-9d43-c2e68aeda221)
+ Call ID: 068d27d6-a4b1-4edb-9d43-c2e68aeda221
+  Args:
+    type: :Woman
+    source: Rosemary_Vere_Edwardes
+  AssignClass (f88a8753-de29-40bf-b8fd-c369ce09db0a)
+ Call ID: f88a8753-de29-40bf-b8fd-c369ce09db0a
+  Args:
+    source: Rosemary_Vere_Edwardes
+    type: :Person
+  AddTriple (c49b7748-d73b-4628-9406-0cfa3798311e)
+ Call ID: c49b7748-d73b-4628-9406-0cfa3798311e
+  Args:
+    source: Penelope_Anne_Vere_Thompson
+    relation: :hasFather
+    target: Colin_Graham_Thompson
+  AddTriple (a18c1bce-4d9d-4a6c-84e8-ab18943a648b)
+ Call ID: a18c1bce-4d9d-4a6c-84e8-ab18943a648b
+  Args:
+    relation: :hasMother
+    target: Rosemary_Vere_Edwardes
+    source: Penelope_Anne_Vere_Thompson
+  AssignClass (9540dbe9-0d3d-4136-bd95-1a5143e84ebc)
+ Call ID: 9540dbe9-0d3d-4136-bd95-1a5143e84ebc
+  Args:
+    type: :Man
+    source: James_Coyle
+  AssignClass (d232cb1c-d965-47fc-bd8b-0a91742d179d)
+ Call ID: d232cb1c-d965-47fc-bd8b-0a91742d179d
+  Args:
+    source: James_Coyle
+    type: :Person
+  AssignClass (127fe7f1-418a-45bd-b2fd-d2e7e0628c52)
+ Call ID: 127fe7f1-418a-45bd-b2fd-d2e7e0628c52
+  Args:
+    source: Lady_Louise_Windsor
+    type: :Woman
+  AssignClass (d982194c-c36c-4668-91e0-8dc16b64c28b)
+ Call ID: d982194c-c36c-4668-91e0-8dc16b64c28b
+  Args:
+    type: :Person
+    source: Lady_Louise_Windsor
+  AddLiteral (17312796-6736-4a13-a8ff-e3e1aab2d488)
+ Call ID: 17312796-6736-4a13-a8ff-e3e1aab2d488
+  Args:
+    source: Lady_Louise_Windsor
+    literal_type: xsd:integer
+    literal_value: 2003
+    relation: :hasBirthYear
+  AssignClass (dceae698-2429-4dfa-9e31-fca8cd283d1d)
+ Call ID: dceae698-2429-4dfa-9e31-fca8cd283d1d
+  Args:
+    source: Prince_Edward
+    type: :Man
+  AssignClass (aee328d0-15ee-422a-a011-b77110780d95)
+ Call ID: aee328d0-15ee-422a-a011-b77110780d95
+  Args:
+    source: Prince_Edward
+    type: :Person
+  AssignClass (858c56cf-c56a-4e0e-8839-15c7f0ed3c3d)
+ Call ID: 858c56cf-c56a-4e0e-8839-15c7f0ed3c3d
+  Args:
+    source: Sophie
+    type: :Woman
+  AssignClass (04dc07e2-1f17-4a97-854a-73891458eef5)
+ Call ID: 04dc07e2-1f17-4a97-854a-73891458eef5
+  Args:
+    source: Sophie
+    type: :Person
+  AddTriple (aa22e611-edcb-4dcc-b3a6-9625c4b4bdc3)
+ Call ID: aa22e611-edcb-4dcc-b3a6-9625c4b4bdc3
+  Args:
+    source: Lady_Louise_Windsor
+    target: Prince_Edward
+    relation: :hasFather
+  AddTriple (8fd80540-3248-4310-93d5-eea5126b461d)
+ Call ID: 8fd80540-3248-4310-93d5-eea5126b461d
+  Args:
+    source: Lady_Louise_Windsor
+    target: Sophie
+    relation: :hasMother
+  Finish (3a597330-3de1-462a-9749-1458950932db)
+ Call ID: 3a597330-3de1-462a-9749-1458950932db
   Args:

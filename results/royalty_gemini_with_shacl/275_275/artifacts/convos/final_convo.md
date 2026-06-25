@@ -85,23 +85,21 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Gabriele of Bourbon-Two Sicilies (Gabriele Maria Giuseppe Carlo Ignazio Antonio Alfonso Pietro Giovanni Gerardo di Majella et Omni Sancti; 11 January 1897 – 22 October 1975) was a prince of the deposed dynasty which ruled the Kingdom of the Two Sicilies.
+Prince Philip of Bourbon-Two Sicilies (Filippo Maria Alfonso Antonio Ferdinando Francesco di Paola Lodovico Enrico Alberto Taddeo Francesco Saverio Uberto; 10 December 1885 – 9 March 1949) was a member of the House of Bourbon-Two Sicilies and a Prince of Bourbon-Two Sicilies.
 Family
 
-Gabriel was the twelfth child and youngest son of Prince Alfonso, Count of Caserta, and his wife, Princess Maria Antonietta of Bourbon-Two Sicilies.
+Prince Philip was the tenth child of Prince Alfonso of Bourbon-Two Sicilies, Count of Caserta, and his wife, Princess Maria Antonietta of Bourbon-Two Sicilies.
 Marriage and issue
 
-Gabriel married firstly Princess Malgorzata Izabella Czartoryska, daughter of Prince Adam Ludwik Czartoryski and Countess Maria Ludwika Krasińska, on 25 August 1927 in Paris.
-The couple had one child before Malgorzata died in Cannes on 8 March 1929:
-
-
-Gabriel married, secondly, Princess Cecylia Lubomirska, daughter of Prince Kasimierz Lubomirski and Countess Maria Theresia Granow-Wodicka, on 15 September 1932 in Kraków.
+Philip married firstly to Princess Marie Louise of Orléans, eldest daughter and child of Prince Emmanuel, Duke of Vendôme and his wife Princess Henriette of Belgium, on 12 January 1916 in Neuilly-sur-Seine.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -117,39 +115,9 @@ Gabriel married, secondly, Princess Cecylia Lubomirska, daughter of Prince Kasim
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -164,6 +132,23 @@ Gabriel married, secondly, Princess Cecylia Lubomirska, daughter of Prince Kasim
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -181,6 +166,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -248,29 +248,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -279,6 +271,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -291,6 +291,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -299,17 +301,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -337,6 +341,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -352,179 +440,140 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4118e061-861c-491e-b7fb-3173d3a94700)
- Call ID: 4118e061-861c-491e-b7fb-3173d3a94700
+  AssignClass (257feb74-71a8-4234-9954-12374690109b)
+ Call ID: 257feb74-71a8-4234-9954-12374690109b
   Args:
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
     type: :Man
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
-  AssignClass (2c7ef999-64aa-4e1e-acbf-ff66932701b9)
- Call ID: 2c7ef999-64aa-4e1e-acbf-ff66932701b9
+  AssignClass (0cb134d4-4ef6-4c9b-bd7f-f79aa9e7bdd5)
+ Call ID: 0cb134d4-4ef6-4c9b-bd7f-f79aa9e7bdd5
   Args:
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
     type: :Person
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
-  AddLiteral (c7d738f9-823d-499e-9a55-6773e36d3d90)
- Call ID: c7d738f9-823d-499e-9a55-6773e36d3d90
+  AddLiteral (aeae096c-4a63-4f98-9d68-df5e1a2429e2)
+ Call ID: aeae096c-4a63-4f98-9d68-df5e1a2429e2
   Args:
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
+    literal_value: 1885
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
     literal_type: xsd:integer
-    literal_value: 1897
     relation: :hasBirthYear
-  AddLiteral (5f73f276-c6eb-42c7-ac5b-bb8472639e4d)
- Call ID: 5f73f276-c6eb-42c7-ac5b-bb8472639e4d
+  AddLiteral (2423a430-ce37-4f99-b3d8-c3ece1f1b9e4)
+ Call ID: 2423a430-ce37-4f99-b3d8-c3ece1f1b9e4
   Args:
-    literal_value: 1975
-    literal_type: xsd:integer
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
     relation: :hasDeathYear
-  AssignClass (638610eb-fddc-43ed-88a6-59d1fcf3f806)
- Call ID: 638610eb-fddc-43ed-88a6-59d1fcf3f806
+    literal_type: xsd:integer
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
+    literal_value: 1949
+  AssignClass (a9728fe5-60f9-416e-995e-28680b0647ed)
+ Call ID: a9728fe5-60f9-416e-995e-28680b0647ed
   Args:
+    source: Prince_Alfonso_of_Bourbon-Two_Sicilies
+    type: :Ancestor
+  AssignClass (d30645b2-583f-4428-8a5c-149448e9778c)
+ Call ID: d30645b2-583f-4428-8a5c-149448e9778c
+  Args:
+    source: Prince_Alfonso_of_Bourbon-Two_Sicilies
     type: :Man
-    source: Prince_Alfonso_Count_of_Caserta
-  AssignClass (d5bbd958-fb21-4c22-8054-abd6bf15bc31)
- Call ID: d5bbd958-fb21-4c22-8054-abd6bf15bc31
+  AssignClass (b0df5888-42e4-4794-82a0-b26cc81ec783)
+ Call ID: b0df5888-42e4-4794-82a0-b26cc81ec783
   Args:
+    source: Prince_Alfonso_of_Bourbon-Two_Sicilies
     type: :Person
-    source: Prince_Alfonso_Count_of_Caserta
-  AssignClass (15ed8259-c5df-47e0-96d3-74a034cc694d)
- Call ID: 15ed8259-c5df-47e0-96d3-74a034cc694d
+  AssignClass (6dacdebc-9594-418b-b5e9-c6e9931a3946)
+ Call ID: 6dacdebc-9594-418b-b5e9-c6e9931a3946
   Args:
+    source: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
+    type: :Ancestor
+  AssignClass (e6873063-7a12-44d5-8204-7232a932132e)
+ Call ID: e6873063-7a12-44d5-8204-7232a932132e
+  Args:
+    source: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
     type: :Woman
-    source: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (6fbfe4ec-9a16-4f28-9d0a-d3bcf22ad1bd)
- Call ID: 6fbfe4ec-9a16-4f28-9d0a-d3bcf22ad1bd
+  AssignClass (ef979096-b5da-44df-9d8f-e3aee851e8b7)
+ Call ID: ef979096-b5da-44df-9d8f-e3aee851e8b7
   Args:
+    source: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
     type: :Person
-    source: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AddTriple (d9b1deb9-9283-418c-89c6-7027d967b48d)
- Call ID: d9b1deb9-9283-418c-89c6-7027d967b48d
+  AddTriple (ea4d3d9a-c02c-4bfe-8784-0582d7dd4ee7)
+ Call ID: ea4d3d9a-c02c-4bfe-8784-0582d7dd4ee7
   Args:
-    target: Prince_Alfonso_Count_of_Caserta
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
+    target: Prince_Alfonso_of_Bourbon-Two_Sicilies
     relation: :hasFather
-  AddTriple (9be3da74-f220-4de5-90e6-38b36de8cd6d)
- Call ID: 9be3da74-f220-4de5-90e6-38b36de8cd6d
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
+  AddTriple (07806e63-5c4f-4d37-94e9-5bf5d2bee199)
+ Call ID: 07806e63-5c4f-4d37-94e9-5bf5d2bee199
   Args:
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
     relation: :hasMother
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
     target: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (17964991-52bc-42c5-b6ad-1ace5ad2d2c7)
- Call ID: 17964991-52bc-42c5-b6ad-1ace5ad2d2c7
+  AssignClass (30e2ad14-e3ae-4415-85ef-730552632b25)
+ Call ID: 30e2ad14-e3ae-4415-85ef-730552632b25
   Args:
+    source: Princess_Marie_Louise_of_Orléans
     type: :Woman
-    source: Princess_Malgorzata_Izabella_Czartoryska
-  AssignClass (221d9653-2d5e-4c97-8ce1-769e6202e09e)
- Call ID: 221d9653-2d5e-4c97-8ce1-769e6202e09e
+  AssignClass (d5221213-abf0-4398-8fc0-f296dcc39a6a)
+ Call ID: d5221213-abf0-4398-8fc0-f296dcc39a6a
   Args:
+    source: Princess_Marie_Louise_of_Orléans
     type: :Person
-    source: Princess_Malgorzata_Izabella_Czartoryska
-  AssignClass (48317886-1330-4195-abd7-8a6ea64f4499)
- Call ID: 48317886-1330-4195-abd7-8a6ea64f4499
+  AddLiteral (f15e63f5-a92a-4938-8afb-796d814bdd92)
+ Call ID: f15e63f5-a92a-4938-8afb-796d814bdd92
   Args:
-    type: :Man
-    source: Prince_Adam_Ludwik_Czartoryski
-  AssignClass (71d6dfc6-ebdd-4c2d-97dd-7a51f14300f3)
- Call ID: 71d6dfc6-ebdd-4c2d-97dd-7a51f14300f3
-  Args:
-    type: :Person
-    source: Prince_Adam_Ludwik_Czartoryski
-  AssignClass (7d2f4d6f-8e76-47f3-bc02-0655987c654a)
- Call ID: 7d2f4d6f-8e76-47f3-bc02-0655987c654a
-  Args:
-    type: :Woman
-    source: Countess_Maria_Ludwika_Krasinska
-  AssignClass (1d3bda66-d944-4373-8174-6d6e0160334d)
- Call ID: 1d3bda66-d944-4373-8174-6d6e0160334d
-  Args:
-    type: :Person
-    source: Countess_Maria_Ludwika_Krasinska
-  AddTriple (86ed59e8-671c-44e1-b3cc-82221738a04f)
- Call ID: 86ed59e8-671c-44e1-b3cc-82221738a04f
-  Args:
-    source: Princess_Malgorzata_Izabella_Czartoryska
-    target: Prince_Adam_Ludwik_Czartoryski
-    relation: :hasFather
-  AddTriple (901c5a52-5a60-4bad-9d61-660e0a24ab05)
- Call ID: 901c5a52-5a60-4bad-9d61-660e0a24ab05
-  Args:
-    relation: :hasMother
-    target: Countess_Maria_Ludwika_Krasinska
-    source: Princess_Malgorzata_Izabella_Czartoryska
-  AddLiteral (680db87f-1a15-4054-b8bb-72b0a3d92652)
- Call ID: 680db87f-1a15-4054-b8bb-72b0a3d92652
-  Args:
+    literal_value: 1916
     relation: :hasMarriageYear
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
     literal_type: xsd:integer
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
-    literal_value: 1927
-  AssignClass (95f6534c-3eca-450a-9e42-72fceb29e0e6)
- Call ID: 95f6534c-3eca-450a-9e42-72fceb29e0e6
+  AddTriple (abc21058-a716-420d-b95e-623e5a8223c9)
+ Call ID: abc21058-a716-420d-b95e-623e5a8223c9
   Args:
-    type: :Woman
-    source: Princess_Cecylia_Lubomirska
-  AssignClass (a6092f19-2841-45b9-98a2-c94d8172f466)
- Call ID: a6092f19-2841-45b9-98a2-c94d8172f466
+    relation: :hasRelation
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
+    target: Princess_Marie_Louise_of_Orléans
+  AssignClass (a7dc4d8d-2603-4fa9-bba3-a67e1ad49445)
+ Call ID: a7dc4d8d-2603-4fa9-bba3-a67e1ad49445
   Args:
-    type: :Person
-    source: Princess_Cecylia_Lubomirska
-  AssignClass (1ac3e03c-17cc-4416-b9ed-21c9e442a3a4)
- Call ID: 1ac3e03c-17cc-4416-b9ed-21c9e442a3a4
+    source: Prince_Emmanuel_Duke_of_Vendôme
+    type: :Ancestor
+  AssignClass (c977abb1-543a-43e2-a88b-3f22ae6c9233)
+ Call ID: c977abb1-543a-43e2-a88b-3f22ae6c9233
   Args:
+    source: Prince_Emmanuel_Duke_of_Vendôme
     type: :Man
-    source: Prince_Kasimierz_Lubomirski
-  AssignClass (a198fc17-09af-4a38-8191-3de8f004f81f)
- Call ID: a198fc17-09af-4a38-8191-3de8f004f81f
+  AssignClass (343fa1b0-32fb-4aad-ac3d-d373436cee01)
+ Call ID: 343fa1b0-32fb-4aad-ac3d-d373436cee01
   Args:
+    source: Prince_Emmanuel_Duke_of_Vendôme
     type: :Person
-    source: Prince_Kasimierz_Lubomirski
-  AssignClass (3b463538-39a6-4fb6-8640-b6df4e952996)
- Call ID: 3b463538-39a6-4fb6-8640-b6df4e952996
+  AssignClass (203dbbee-7195-4b54-9f26-96111a4bcb49)
+ Call ID: 203dbbee-7195-4b54-9f26-96111a4bcb49
   Args:
+    source: Princess_Henriette_of_Belgium
+    type: :Ancestor
+  AssignClass (685d3b72-eb57-4a68-879e-33aee68c1bf5)
+ Call ID: 685d3b72-eb57-4a68-879e-33aee68c1bf5
+  Args:
+    source: Princess_Henriette_of_Belgium
     type: :Woman
-    source: Countess_Maria_Theresia_Granow-Wodicka
-  AssignClass (9867fda4-d53d-4eeb-a1bd-cae0c4a3c99f)
- Call ID: 9867fda4-d53d-4eeb-a1bd-cae0c4a3c99f
+  AssignClass (ac9d26ad-44c8-4c06-98e3-bde63aa4ecfd)
+ Call ID: ac9d26ad-44c8-4c06-98e3-bde63aa4ecfd
   Args:
+    source: Princess_Henriette_of_Belgium
     type: :Person
-    source: Countess_Maria_Theresia_Granow-Wodicka
-  AddTriple (e0cf5d7b-e1bf-4839-8d47-4baca09e55de)
- Call ID: e0cf5d7b-e1bf-4839-8d47-4baca09e55de
+  AddTriple (840bfa6e-6deb-4cc2-ad82-55e9a93c5d63)
+ Call ID: 840bfa6e-6deb-4cc2-ad82-55e9a93c5d63
   Args:
+    source: Princess_Marie_Louise_of_Orléans
     relation: :hasFather
-    target: Prince_Kasimierz_Lubomirski
-    source: Princess_Cecylia_Lubomirska
-  AddTriple (b74f3b51-4e97-4acb-9345-0d13f3479071)
- Call ID: b74f3b51-4e97-4acb-9345-0d13f3479071
+    target: Prince_Emmanuel_Duke_of_Vendôme
+  AddTriple (8fa387cb-6b0f-4293-b648-8fe5ea36940f)
+ Call ID: 8fa387cb-6b0f-4293-b648-8fe5ea36940f
   Args:
+    target: Princess_Henriette_of_Belgium
+    source: Princess_Marie_Louise_of_Orléans
     relation: :hasMother
-    source: Princess_Cecylia_Lubomirska
-    target: Countess_Maria_Theresia_Granow-Wodicka
-  AddLiteral (1e6a1d4c-f849-4e6d-a268-8dcc11bc7295)
- Call ID: 1e6a1d4c-f849-4e6d-a268-8dcc11bc7295
+  Finish (07f6ee94-6f4c-4f8c-9f50-c443636dd72f)
+ Call ID: 07f6ee94-6f4c-4f8c-9f50-c443636dd72f
   Args:
-    relation: :hasMarriageYear
-    literal_value: 1932
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
-    literal_type: xsd:integer
-  Finish (714243f1-d83d-424f-88ee-73cedcdda1e6)
- Call ID: 714243f1-d83d-424f-88ee-73cedcdda1e6
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -625,42 +674,35 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Gabriele_of_Bourbon-Two_Sicilies a :Man,
+  data:Prince_Philip_of_Bourbon-Two_Sicilies a :Man,
           :Person ;
-      :hasBirthYear 1897 ;
-      :hasDeathYear 1975 ;
-      :hasFather data:Prince_Alfonso_Count_of_Caserta ;
-      :hasMarriageYear 1927,
-          1932 ;
-      :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+      :hasBirthYear 1885 ;
+      :hasDeathYear 1949 ;
+      :hasFather data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;
+      :hasMarriageYear 1916 ;
+      :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+      :hasRelation data:Princess_Marie_Louise_of_Orl%C3%A9ans .
 
-  data:Princess_Cecylia_Lubomirska a :Person,
+  data:Prince_Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_Emmanuel_Duke_of_Vend%C3%B4me a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Princess_Henriette_of_Belgium a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Princess_Marie_Louise_of_Orl%C3%A9ans a :Person,
           :Woman ;
-      :hasFather data:Prince_Kasimierz_Lubomirski ;
-      :hasMother data:Countess_Maria_Theresia_Granow-Wodicka .
-
-  data:Princess_Malgorzata_Izabella_Czartoryska a :Person,
-          :Woman ;
-      :hasFather data:Prince_Adam_Ludwik_Czartoryski ;
-      :hasMother data:Countess_Maria_Ludwika_Krasinska .
-
-  data:Countess_Maria_Ludwika_Krasinska a :Person,
-          :Woman .
-
-  data:Countess_Maria_Theresia_Granow-Wodicka a :Person,
-          :Woman .
-
-  data:Prince_Adam_Ludwik_Czartoryski a :Man,
-          :Person .
-
-  data:Prince_Alfonso_Count_of_Caserta a :Man,
-          :Person .
-
-  data:Prince_Kasimierz_Lubomirski a :Man,
-          :Person .
-
-  data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,
-          :Woman .
+      :hasFather data:Prince_Emmanuel_Duke_of_Vend%C3%B4me ;
+      :hasMother data:Princess_Henriette_of_Belgium .
 
 
 
@@ -672,275 +714,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (d2352729-d55f-488e-bae9-ebbe125b79da)
- Call ID: d2352729-d55f-488e-bae9-ebbe125b79da
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:18
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Alfonso_Count_of_Caserta does not have the required class :Ancestor assigned, which is mandatory for the hasFather property of Prince_Gabriele_of_Bourbon-Two_Sicilies.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Alfonso_Count_of_Caserta, :Ancestor)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies does not have the required class :Ancestor assigned, which is mandatory for the hasMother property of Prince_Gabriele_of_Bourbon-Two_Sicilies.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies, :Ancestor)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Adam_Ludwik_Czartoryski does not have the required class :Ancestor assigned, which is mandatory for the hasFather property of Princess_Malgorzata_Izabella_Czartoryska.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Adam_Ludwik_Czartoryski, :Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Alfonso_Count_of_Caserta does not have the required class :Ancestor assigned, which is mandatory for the hasFather property of Prince_Gabriele_of_Bourbon-Two_Sicilies.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Alfonso_Count_of_Caserta, :Ancestor)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Kasimierz_Lubomirski does not have the required class :Ancestor assigned, which is mandatory for the hasFather property of Princess_Cecylia_Lubomirska.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Kasimierz_Lubomirski, :Ancestor)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Countess_Maria_Ludwika_Krasinska does not have the required class :Ancestor assigned, which is mandatory for the hasMother property of Princess_Malgorzata_Izabella_Czartoryska.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Maria_Ludwika_Krasinska, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies does not have the required class :Ancestor assigned, which is mandatory for the hasMother property of Prince_Gabriele_of_Bourbon-Two_Sicilies.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Countess_Maria_Theresia_Granow-Wodicka does not have the required class :Ancestor assigned, which is mandatory for the hasMother property of Princess_Cecylia_Lubomirska.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Maria_Theresia_Granow-Wodicka, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Adam_Ludwik_Czartoryski does not have the required class :Ancestor assigned, which is mandatory for the hasFather property of Princess_Malgorzata_Izabella_Czartoryska.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Adam_Ludwik_Czartoryski, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Alfonso_Count_of_Caserta does not have the required class :Ancestor assigned, which is mandatory for the hasFather property of Prince_Gabriele_of_Bourbon-Two_Sicilies.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Alfonso_Count_of_Caserta, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Kasimierz_Lubomirski does not have the required class :Ancestor assigned, which is mandatory for the hasFather property of Princess_Cecylia_Lubomirska.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Kasimierz_Lubomirski, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Countess_Maria_Ludwika_Krasinska does not have the required class :Ancestor assigned, which is mandatory for the hasMother property of Princess_Malgorzata_Izabella_Czartoryska.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Maria_Ludwika_Krasinska, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies does not have the required class :Ancestor assigned, which is mandatory for the hasMother property of Prince_Gabriele_of_Bourbon-Two_Sicilies.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Countess_Maria_Theresia_Granow-Wodicka does not have the required class :Ancestor assigned, which is mandatory for the hasMother property of Princess_Cecylia_Lubomirska.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Maria_Theresia_Granow-Wodicka, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Adam_Ludwik_Czartoryski does not have the required class :Ancestor assigned, which is mandatory for the hasFather property of Princess_Malgorzata_Izabella_Czartoryska.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Adam_Ludwik_Czartoryski, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Prince_Kasimierz_Lubomirski does not have the required class :Ancestor assigned, which is mandatory for the hasFather property of Princess_Cecylia_Lubomirska.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Kasimierz_Lubomirski, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Countess_Maria_Ludwika_Krasinska does not have the required class :Ancestor assigned, which is mandatory for the hasMother property of Princess_Malgorzata_Izabella_Czartoryska.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Maria_Ludwika_Krasinska, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Countess_Maria_Theresia_Granow-Wodicka does not have the required class :Ancestor assigned, which is mandatory for the hasMother property of Princess_Cecylia_Lubomirska.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Maria_Theresia_Granow-Wodicka, :Ancestor)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (903825be-34e3-425a-8fc9-83e3c2abffd1)
- Call ID: 903825be-34e3-425a-8fc9-83e3c2abffd1
-  Args:
-    source: Prince_Alfonso_Count_of_Caserta
-    type: :Ancestor
-  AssignClass (3d238bc2-2713-4f68-aeea-12e3c48a4b86)
- Call ID: 3d238bc2-2713-4f68-aeea-12e3c48a4b86
-  Args:
-    type: :Ancestor
-    source: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (5d2a40d5-1014-4b94-a008-c59b2aaf4778)
- Call ID: 5d2a40d5-1014-4b94-a008-c59b2aaf4778
-  Args:
-    type: :Ancestor
-    source: Prince_Adam_Ludwik_Czartoryski
-  AssignClass (88485682-0a7d-4599-b90c-9c7e176a8b1a)
- Call ID: 88485682-0a7d-4599-b90c-9c7e176a8b1a
-  Args:
-    source: Countess_Maria_Ludwika_Krasinska
-    type: :Ancestor
-  AssignClass (2913abc9-46ac-463f-af0e-566b3d72a303)
- Call ID: 2913abc9-46ac-463f-af0e-566b3d72a303
-  Args:
-    type: :Ancestor
-    source: Prince_Kasimierz_Lubomirski
-  AssignClass (0af9c982-c729-4cba-9067-95fa07a84082)
- Call ID: 0af9c982-c729-4cba-9067-95fa07a84082
-  Args:
-    source: Countess_Maria_Theresia_Granow-Wodicka
-    type: :Ancestor
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Prince_Gabriele_of_Bourbon-Two_Sicilies a :Man,
-          :Person ;
-      :hasBirthYear 1897 ;
-      :hasDeathYear 1975 ;
-      :hasFather data:Prince_Alfonso_Count_of_Caserta ;
-      :hasMarriageYear 1927,
-          1932 ;
-      :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
-
-  data:Princess_Cecylia_Lubomirska a :Person,
-          :Woman ;
-      :hasFather data:Prince_Kasimierz_Lubomirski ;
-      :hasMother data:Countess_Maria_Theresia_Granow-Wodicka .
-
-  data:Princess_Malgorzata_Izabella_Czartoryska a :Person,
-          :Woman ;
-      :hasFather data:Prince_Adam_Ludwik_Czartoryski ;
-      :hasMother data:Countess_Maria_Ludwika_Krasinska .
-
-  data:Countess_Maria_Ludwika_Krasinska a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Countess_Maria_Theresia_Granow-Wodicka a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_Adam_Ludwik_Czartoryski a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Alfonso_Count_of_Caserta a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Kasimierz_Lubomirski a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Person,
-          :Woman .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (b2ef02f1-6997-4a90-a05a-6af6fdc6967a)
- Call ID: b2ef02f1-6997-4a90-a05a-6af6fdc6967a
+  ValidateShacl (d2c58c41-c520-479f-bece-f1cec59ae5e5)
+ Call ID: d2c58c41-c520-479f-bece-f1cec59ae5e5
   Args:
 
 ================================= Tool Message =================================
@@ -951,6 +726,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (043472c3-a0fc-4b0d-8a30-87528fd5b153)
- Call ID: 043472c3-a0fc-4b0d-8a30-87528fd5b153
+  Finish (d6ed312a-109e-4404-bf30-e8a66d3043ad)
+ Call ID: d6ed312a-109e-4404-bf30-e8a66d3043ad
   Args:

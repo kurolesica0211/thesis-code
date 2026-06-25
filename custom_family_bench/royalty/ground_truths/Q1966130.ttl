@@ -7,174 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Marie-Chantal-_Crown_Princess_of_Greece a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Marie-Chantal, Crown Princess of Greece" ;
-    data:posIndicesFull "1727:1740",
-        "461:476" ;
-    data:posIndicesPart "1224:1232",
-        "1545:1551",
-        "1938:1946",
-        "1958:1966",
-        "2079:2087",
-        "2111:2119",
-        "2165:2173",
-        "2215:2223",
-        "3052:3058",
-        "650:658",
-        "856:861" ;
-    data:wdtLink wdt:Q243049 ;
-    :alsoKnownAs "Mari Santal",
-        "Mari Santal Miler",
-        "Maria of Greece",
-        "Marie Chantal",
-        "Marie-Chantal Miller",
-        "Marie-Chantel Miller" ;
-    :hasSex data:female .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Benedikte_of_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Benedikte of Denmark" ;
-    data:posIndicesFull "2011:2040",
-        "693:722" ;
-    data:posIndicesPart "1224:1232",
-        "1938:1946",
-        "1958:1966",
-        "3220:3227" ;
-    data:wdtLink wdt:Q817052 ;
-    :alsoKnownAs "Benedikte Astrid Ingeborg Ingrid",
-        "Benedikte Astrid Ingeborg Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
-        "Princess Benedikte of Denmark, Princess of Sayn-Wittgenstein-Berleburg" ;
-    :hasSex data:female ;
-    :hasSister data:Queen_Anne-Marie_of_Greece ;
-    :isAuntOf data:Prince_Philippos_of_Greece_and_Denmark,
-        data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isSiblingOf data:Queen_Anne-Marie_of_Greece ;
-    :isSisterOf data:Queen_Anne-Marie_of_Greece .
-
-data:Infanta_Elena-_Duchess_of_Lugo a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta Elena, Duchess of Lugo" ;
-    data:posIndicesFull "669:682",
-        "669:691" ;
-    data:wdtLink wdt:Q54386 ;
-    :alsoKnownAs "Elena Maria Isabela Dominica de Silas de Borbón y Grecia, Infanta de España",
-        "Elena de Borbón",
-        "Infanta Elena",
-        "Infanta Elena of Spain" ;
-    :hasMother data:Queen_Sofía_of_Spain ;
-    :hasParent data:Queen_Sofía_of_Spain ;
-    :hasSex data:female ;
-    :isChildOf data:Queen_Sofía_of_Spain ;
-    :isDaughterOf data:Queen_Sofía_of_Spain .
-
-data:Queen_Sofía_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Sofía of Spain" ;
-    data:posIndicesFull "1900:1911",
-        "1900:1920",
-        "19:30",
-        "19:39" ;
-    data:posIndicesPart "602:607" ;
-    data:wdtLink wdt:Q156548 ;
-    :alsoKnownAs "Princess Sophia of Greece and Denmark",
-        "Queen Sofia of Spain",
-        "Queen Sofía",
-        "Queen Sofía, Queen Consort of Spain" ;
-    :hasBrother data:Constantine_II_of_Greece ;
-    :hasChild data:Infanta_Elena-_Duchess_of_Lugo ;
-    :hasDaughter data:Infanta_Elena-_Duchess_of_Lugo ;
-    :hasSex data:female ;
-    :isAuntOf data:Prince_Philippos_of_Greece_and_Denmark,
-        data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isMotherOf data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isParentOf data:Infanta_Elena-_Duchess_of_Lugo ;
-    :isSiblingOf data:Constantine_II_of_Greece ;
-    :isSisterOf data:Constantine_II_of_Greece .
-
-data:Constantine_II_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Constantine II of Greece" ;
-    data:posIndicesFull "221:235",
-        "2838:2854",
-        "426:442",
-        "431:445" ;
-    data:posIndicesPart "1545:1551",
-        "2447:2458",
-        "3052:3058" ;
-    data:wdtLink wdt:Q151773 ;
-    :alsoKnownAs "Constantine 2 of Greece",
-        "Constantine Glucksburg",
-        "Constantine II",
-        "Constantino de Grecia",
-        "King Constantine",
-        "Konstantinos 2",
-        "Konstantinos II",
-        "Konstantinos II of Greece",
-        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
-        "Konstantínos 2",
-        "Konstantínos II" ;
-    :hasChild data:Prince_Philippos_of_Greece_and_Denmark,
-        data:Princess_Theodora_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Theodora_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :hasSister data:Queen_Sofía_of_Spain ;
-    :hasSon data:Prince_Philippos_of_Greece_and_Denmark ;
-    :isBrotherOf data:Queen_Sofía_of_Spain ;
-    :isFatherOf data:Prince_Philippos_of_Greece_and_Denmark,
-        data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isParentOf data:Prince_Philippos_of_Greece_and_Denmark,
-        data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isSiblingOf data:Queen_Sofía_of_Spain ;
-    :isUncleOf data:Infanta_Elena-_Duchess_of_Lugo .
-
-data:Queen_Anne-Marie_of_Greece a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Anne-Marie of Greece" ;
-    data:posIndicesFull "450:476" ;
-    data:posIndicesPart "1545:1551",
-        "3052:3058",
-        "851:855",
-        "856:861" ;
-    data:wdtLink wdt:Q564889 ;
-    :alsoKnownAs "Anne Marie Dagmar Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
-        "Anne-Marie Dagmar Ingrid",
-        "Anne-Marie of the Hellenes (née Princess Anne-Marie of Denmark)",
-        "Princess Anne-Marie of Denmark" ;
-    :hasChild data:Prince_Philippos_of_Greece_and_Denmark,
-        data:Princess_Theodora_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Theodora_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Benedikte_of_Denmark ;
-    :hasSon data:Prince_Philippos_of_Greece_and_Denmark ;
-    :isMotherOf data:Prince_Philippos_of_Greece_and_Denmark,
-        data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isParentOf data:Prince_Philippos_of_Greece_and_Denmark,
-        data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isSiblingOf data:Princess_Benedikte_of_Denmark ;
-    :isSisterOf data:Princess_Benedikte_of_Denmark .
-
-data:Prince_Philippos_of_Greece_and_Denmark a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Philippos_of_Greece_and_Denmark a :Person ;
     rdfs:label "Prince Philippos of Greece and Denmark" ;
     data:posIndicesFull "78:116",
         "85:116" ;
@@ -200,22 +33,25 @@ data:Prince_Philippos_of_Greece_and_Denmark a :Man,
     data:wdtLink wdt:Q1966130 ;
     :alsoKnownAs "Philippos of Greece and Denmark",
         "Philippos zu Schleswig-Holstein-Sonderburg-Glücksburg, Prince of Greece and Denmark" ;
-    :hasFather data:Constantine_II_of_Greece ;
-    :hasMother data:Queen_Anne-Marie_of_Greece ;
     :hasParent data:Constantine_II_of_Greece,
         data:Queen_Anne-Marie_of_Greece ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isBrotherOf data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isChildOf data:Constantine_II_of_Greece,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isSiblingOf data:Princess_Theodora_of_Greece_and_Denmark ;
-    :isSonOf data:Constantine_II_of_Greece,
-        data:Queen_Anne-Marie_of_Greece .
+    :hasSex data:male .
 
-data:Princess_Theodora_of_Greece_and_Denmark a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Benedikte_of_Denmark a :Person ;
+    rdfs:label "Princess Benedikte of Denmark" ;
+    data:posIndicesFull "2011:2040",
+        "693:722" ;
+    data:posIndicesPart "1224:1232",
+        "1938:1946",
+        "1958:1966",
+        "3220:3227" ;
+    data:wdtLink wdt:Q817052 ;
+    :alsoKnownAs "Benedikte Astrid Ingeborg Ingrid",
+        "Benedikte Astrid Ingeborg Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
+        "Princess Benedikte of Denmark, Princess of Sayn-Wittgenstein-Berleburg" ;
+    :hasSex data:female .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Person ;
     rdfs:label "Princess Theodora of Greece and Denmark" ;
     data:posIndicesFull "2533:2572",
         "2542:2572" ;
@@ -225,16 +61,70 @@ data:Princess_Theodora_of_Greece_and_Denmark a :Person,
     :alsoKnownAs "Theodora Greece",
         "Theodora of Greece and Denmark",
         "Theodora zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Greece and Denmark" ;
-    :hasBrother data:Prince_Philippos_of_Greece_and_Denmark ;
-    :hasFather data:Constantine_II_of_Greece ;
-    :hasMother data:Queen_Anne-Marie_of_Greece ;
     :hasParent data:Constantine_II_of_Greece,
         data:Queen_Anne-Marie_of_Greece ;
-    :hasSex data:female ;
-    :isChildOf data:Constantine_II_of_Greece,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isDaughterOf data:Constantine_II_of_Greece,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isSiblingOf data:Prince_Philippos_of_Greece_and_Denmark ;
-    :isSisterOf data:Prince_Philippos_of_Greece_and_Denmark .
+    :hasSex data:female .
+
+data:Queen_Sofía_of_Spain a :Person ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:posIndicesFull "1900:1911",
+        "1900:1920",
+        "19:30",
+        "19:39" ;
+    data:posIndicesPart "602:607",
+        "686:691" ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark",
+        "Queen Sofia of Spain",
+        "Queen Sofía",
+        "Queen Sofía, Queen Consort of Spain" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Constantine_II_of_Greece a :Person ;
+    rdfs:label "Constantine II of Greece" ;
+    data:posIndicesFull "221:235",
+        "2838:2854",
+        "426:442",
+        "431:445" ;
+    data:posIndicesPart "1545:1551",
+        "2447:2458",
+        "3052:3058" ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece",
+        "Constantine Glucksburg",
+        "Constantine II",
+        "Constantino de Grecia",
+        "King Constantine",
+        "Konstantinos 2",
+        "Konstantinos II",
+        "Konstantinos II of Greece",
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
+        "Konstantínos 2",
+        "Konstantínos II" ;
+    :hasSex data:male .
+
+data:Queen_Anne-Marie_of_Greece a :Person ;
+    rdfs:label "Queen Anne-Marie of Greece" ;
+    data:posIndicesFull "450:476" ;
+    data:posIndicesPart "1545:1551",
+        "1727:1732",
+        "3052:3058",
+        "851:855",
+        "856:861" ;
+    data:wdtLink wdt:Q564889 ;
+    :alsoKnownAs "Anne Marie Dagmar Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
+        "Anne-Marie Dagmar Ingrid",
+        "Anne-Marie of the Hellenes (née Princess Anne-Marie of Denmark)",
+        "Princess Anne-Marie of Denmark" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

@@ -81,39 +81,89 @@ Princess Alexander
 Princess Elizabeth
 
 
-Alexander Karageorgevitch (Serbian Cyrillic: Александар Карађорђевић, romanized: Aleksandar Karađorđević; born 15 January 1982), also known as Prince Alexander of Serbia and Yugoslavia or Prince Aleksandar III Karađorđević, is a member of the House of Karađorđević, the former ruling family of the defunct Kingdom of Yugoslavia.
+Filip Karađorđević (Serbian Cyrillic: Филип Карађорђевић; born 15 January 1982), sometimes referred to in English as Prince Philip Karageorgevitch and unofficially titled Philip, Hereditary Prince of Serbia and Yugoslavia (Serbian Cyrillic: Филип, принц наследник од Србије и Југославије, Filip, princ naslednik od Srbije i Jugoslavije), is a Serbian business manager, a member of the House of Karađorđević, and heir apparent to Crown Prince Alexander.
+In 2020, he moved to his homeland Serbia and took a more active role in public life, often travelling across Serbia, Kosovo, Montenegro, and Bosnia.
+In 2022, he became the hereditary prince, following his elder brother's renunciation.
 Early life and education
 
-Prince Alexander was born 15 January 1982 in Vienna, Virginia, Alexander is the third and youngest child of the last crown prince of Yugoslavia, Alexander, and his first wife, Princess Maria da Gloria of Orléans-Braganza.
-His godparents are Queen Sofía of Spain, King Constantine II of Greece (first cousins of his father), and Princess Anne, Duchess of Calabria (first cousin of his mother).
-Alexander lived in Virginia until 1984.
-In 1982, Alexander and his twin brother were baptized by Lavrentije, Serbian Orthodox Bishop of Western Europe, at a castle in Villamanrique de la Condesa, near Seville, Spain.
-Alexander's parents divorced in 1985.
-After the divorce, his father married Katherine Clairy Batis later that year, while his mother married Ignacio, 19th Duke of Segorbe in the same year.
-Through his mother, Alexander has two younger half-sisters, Sol María de la Blanca Medina y Orléans-Braganza, 54th Countess of Ampurias (b. 1986) and Ana Luna Medina y Orléans-Braganza, 17th Countess of Ricla (b. 1988).
-Alexander was educated in London and Canterbury with his twin brother.
-Alexander was at a graduate school at an American university completing a MFA degree in advertising (Art Direction).
-Patronages
-
-In Serbia he is Chairman of the Board of Directors of the Crown Prince Foundation for Education and Culture (since 2024).
+Prince Philip was born on 15 January 1982 in Vienna, Virginia, as the second son and second child of the last Crown Prince of the former Kingdom of Yugoslavia, Alexander, and his first wife, Princess Maria da Gloria of Orléans-Braganza, the eldest daughter of Pedro Gastão of Orléans-Braganza, a claimant to the defunct Brazilian throne, and Princess Maria de la Esperanza of Bourbon-Two Sicilies (1914–2005), a maternal aunt of King Juan Carlos I of Spain.
+Philip is the fraternal twin of Alexander.
+His godparents are Queen Sofía of Spain, King Constantine II of Greece (both first cousins of his paternal grandmother), and Princess Anne, Duchess of Calabria (first cousin of his mother).
+Philip lived in Virginia until 1984.
+Philip's parents divorced in 1985.
+After the divorce, his father remarried Katherine Clairy Batis later that year, while his mother remarried Ignacio, Duke of Segorbe, member of the House of Medinaceli, later that year.
+Philip has two younger half-sisters through his mother, Sol María de la Blanca Medina y Orléans-Braganza, 54th Countess of Ampurias (b. 1986) and Ana Luna Medina y Orléans-Braganza, 17th Countess of Ricla (b. 1988).
+Together with his twin brother, Philip was educated in London and Canterbury.
+In June 2000, Philip completed sixth form at The King's School, Canterbury, obtaining three A levels and ten GCSEs.
+In 1991, Philip, with his father and brothers, briefly visited Belgrade, Yugoslavia.
+In February 2001, the Parliament of FR Yugoslavia passed legislation conferring citizenship on members of the Karađorđević family, making Philip eligible for Yugoslav citizenship.
+In July 2001, his father and step-mother moved to Belgrade, Serbia, FR Yugoslavia.
+After the dissolution of FR Yugoslavia (later renamed Serbia and Montenegro), Philip obtained citizenship of Serbia.
 Personal life
 
-Prince Alexander attended the reburial of his grandparents King Peter II and Queen Alexandra, great-grandmother Queen Maria, and granduncle Prince Andrew in the Royal Family Mausoleum at Oplenac on 26 May 2013.
-The Serbian Royal Regalia were placed over King Peter's coffin, having Alexander placing a diamond sabre near to the Karađorđević Crown.
-In 2015, Alexander dated Dunja Kusturica, a daughter of Serbian filmmaker and musician Emir Kusturica.
-At the time, their relationship was compared to one of Catherine and Prince William by Serbian media.
-On 17 July 2015, Prince Alexander and his brothers were present at their father's 70th birthday celebration in Belgrade.
-Ancestors
+After completing his studies, Philip started to work for financial institutions in the City of London.
+Most recently, Philip has been working with a renowned global asset manager in London.
+Philip lived and worked in London until 2020, when he relocated to Serbia and started to work remotely following the COVID-19 pandemic in Europe.
+Philip completed the 2010 Athens Marathon, the 2011 Belgrade Half-marathon, and the 2014 London Marathon.
+Marriage and children
 
-Alexander is a member of the House of Karađorđević.
-Through his father, Alexander descends from kings Nicholas I of Montenegro, Ferdinand I of Romania, and Alexander of Greece, and furthermore from emperors Nicholas I of Russia and Frederick III of the Germans and Queen Victoria of the United Kingdom of Great Britain and Ireland.
-Through his mother, Alexander descends from the Emperor Pedro II of Brazil, and kings Louis Philippe I of France and Francis I of the Two Sicilies, and furthermore from Francis I, Holy Roman Emperor and king Charles III of Spain.
+On 24 July 2017, his parents announced his engagement to Danica Marinković.
+Philip married Danica Marinković on 7 October 2017 at the Cathedral Church of Saint Michael the Archangel in Belgrade, Serbia.
+Their witnesses were Victoria, the Crown Princess of Sweden and his brother Peter.
+His two godmothers, Queen Sofía of Spain and Princess Anne, Duchess of Calabria, attended the wedding.
+It was the first royal wedding in Serbia since the 1922 wedding of his great-grandfather King Alexander I and Princess Maria of Romania.
+Several members of royal families also attended, including Prince Guillaume of Luxembourg with his wife, Prince Amyn Aga Khan, Princess Jeet Nabha Khemka, and guests of the Karađorđević Royal Family and the Marinković family, including the president of the National Assembly of Serbia Maja Gojković among others.
+Princess Danica gave birth to their son, Prince Stefan, in Belgrade on 25 February 2018 at 10:30 am.
+Stefan is the first male child born to the royal family on Serbian soil for 90 years, the last such birth being that of Prince Tomislav in Belgrade in 1928.
+On 5 November 2023 in Belgrade, Philip and Danica welcomed their second child, a daughter.
+They named her Princess Marija.
+Public life
+
+Prince Philip attended the reburial of his grandparents, King Peter II and Queen Alexandra, great-grandmother Queen Maria, and granduncle Prince Andrew in the Royal Family Mausoleum at Oplenac on 26 May 2013.
+The Serbian Royal Regalia were placed over King Peter's coffin, having Philip placed the Royal Orb and Sceptre near the Karađorđević Crown.
+On 17 July 2015, Prince Philip and his brothers attended their father's 70th birthday celebration in Royal Compound, Belgrade.
+Prince in Serbia (2020–2022)
+Philip used to live in London with his family, a wife and a son, but as of July 2020, they relocated and currently live in Belgrade, Serbia.
+With his relocation to Serbia, Philip fulfilled the promise he gave to Serbian Patriarch Irinej to do so.
+In January 2020, Prince Philip voiced support for the clerical protests in Montenegro.
+On 22 November 2020, Philip and his wife, Princess Danica, were the only members of the House of Karađorđević who attended the funeral service of Patriarch Irinej at the Church of Saint Sava.
+Prince Philip and his wife were also the only members of the House of Karađorđević who attended the enthronement of newly elected Patriarch Porfirije  on 19 February 2021 in St. Michael's Cathedral in Belgrade.
+In April 2021, before Easter, Philip visited Kosovo to support the Serbian community there.
+On 13 September 2021, Philip and his wife, Princess Danica, attended Holy Liturgy led by Patriarch Porfirije in the Jasenovac Monastery in Croatia and visited the Jasenovac concentration camp and Stone Flower sculpture, becoming the first members of the House of Karađorđević who visited this memorial site from World War II.
+In December 2021, Philip voiced support for the environmental protests in Serbia.
+In February 2022, Philip and his wife travelled to Han Pijesak, Bosnia and Herzegovina.
+Devastated by time, the summer house will be rebuilt and renovated as Prince Philip has agreed with local authorities and the Government of Republika Srpska to fund it.
+Furthermore, on 10 February, Prince Philip and his wife met with Milorad Dodik, a Serb member of the Presidency of Bosnia and Herzegovina.
+On 21 March 2022, Philip and his wife signed the People's initiative to ban the exploitation of lithium and boron in Serbia.
+Hereditary Prince (2022–present)
+
+On 27 April 2022, his elder brother Prince Peter renounced the title of a hereditary prince – for himself and his descendants.
+Philip became the Hereditary Prince of Serbia and Yugoslavia, heir apparent to his father, Alexander.
+The ceremony took place at Casa de Pilatos in Seville, Spain, in the presence of his mother, Princess Maria da Gloria, his stepfather Duke Ignacio, his wife Princess Danica, his half-sister Countess Sol, Ljubodrag Grujić, a member of the Crown Council, Chancellor of the Orders and the Herald of the House of Karađorđević and Nikola Stanković, Chief of Staff of the Crown Prince.
+His father, Crown Prince Alexander, did not attend the event.
+The Crown Prince was dissatisfied with Peter's renunciation.
+A grandson of King Alexander I of Yugoslavia, Prince Michael, supported the act.
+On 5 May 2022, Philip and his wife attended mass at the Cathedral of Saint-Louis des Invalides in Paris in honour of Napoleon I and soldiers of the Grande Armée who died for France, by invitation from his cousin Jean-Christophe, Prince Napoléon, a descendant of Napoleon, and his wife, Princess Olympia.
+Afterwards, they travelled to Mileševa Monastery in southwest Serbia and Pljevlja, Montenegro, attending the Holy Liturgy in Mileševa led by Patriarch Porfirije and Metropolitan Joanikije II of Montenegro and the Littoral.
+In the first week of June 2022, Philip and his family travelled to Kosovo, visiting Gazimestan, Gračanica Monastery, Prizren (Church of the Holy Saviour and Monastery of the Holy Archangels), Priština (St. Nicholas Church), and Visoki Dečani Monastery.
+Furthermore, Prince Philip gave a copy of Prince Peter's renunciation paper to the library of Visoki Dečani Monastery.
+On 11 September 2022, Philip and his wife attended a march from Loznica to the top of Gučevo mountain in honour of soldiers fallen in the Battle of the Drina in September 1914.
+In May 2023, Philip and his wife attended the Serbia Against Violence protests in Belgrade, following the Belgrade school shooting and a mass murder near Mladenovac and Smederevo.
+Arms
+
+Ancestry
+
+Philip is a member of the House of Karađorđević.
+Through his father, Philip descends from kings Nicholas I of Montenegro, Ferdinand I of Romania, Christian IX of Denmark, and Alexander of Greece, and furthermore from emperors Nicholas I of Russia and Frederick III of the Germans and Queen Victoria of the United Kingdom of Great Britain and Ireland.
+Through his mother, Philip descends from the Emperor Pedro II of Brazil, and kings Louis Philippe I of France and Francis I of the Two Sicilies, and furthermore from Francis I, Holy Roman Emperor and his Empress Maria Theresa, and king Charles III of Spain.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -129,39 +179,9 @@ Through his mother, Alexander descends from the Emperor Pedro II of Brazil, and 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -176,6 +196,23 @@ Through his mother, Alexander descends from the Emperor Pedro II of Brazil, and 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -193,6 +230,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,29 +312,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -291,6 +335,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -303,6 +355,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -311,17 +365,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -349,6 +405,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -364,121 +504,312 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5048f9c5-2509-4121-ae5b-5031ccc57b83)
- Call ID: 5048f9c5-2509-4121-ae5b-5031ccc57b83
+  AssignClass (42e695e3-8fee-488d-8c93-6c379c3a8793)
+ Call ID: 42e695e3-8fee-488d-8c93-6c379c3a8793
   Args:
+    source: Filip_Karadordevic
     type: :Man
-    source: Alexander_Karageorgevitch
-  AssignClass (c29e8907-05ff-4989-bdcb-e6b550eed541)
- Call ID: c29e8907-05ff-4989-bdcb-e6b550eed541
+  AssignClass (7ad012d9-dc91-4d7d-b8d4-05acfd84f709)
+ Call ID: 7ad012d9-dc91-4d7d-b8d4-05acfd84f709
   Args:
     type: :Person
-    source: Alexander_Karageorgevitch
-  AddLiteral (35ae21aa-85cc-41e9-a72b-c21faa5e4200)
- Call ID: 35ae21aa-85cc-41e9-a72b-c21faa5e4200
+    source: Filip_Karadordevic
+  AddLiteral (42f43f81-d051-4df6-9572-5150e68e7b02)
+ Call ID: 42f43f81-d051-4df6-9572-5150e68e7b02
   Args:
-    source: Alexander_Karageorgevitch
+    literal_value: 1982
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1982
-  AddLiteral (6b7637b8-b607-47d1-a891-f44ab40187f2)
- Call ID: 6b7637b8-b607-47d1-a891-f44ab40187f2
+    source: Filip_Karadordevic
+  AddTriple (401c5666-df79-4a56-8880-bb0d7e5e43e9)
+ Call ID: 401c5666-df79-4a56-8880-bb0d7e5e43e9
   Args:
-    source: Alexander_Karageorgevitch
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    literal_value: Prince Alexander of Serbia and Yugoslavia
-  AddLiteral (4aff046c-392d-4ca4-824b-7f6d2b556d71)
- Call ID: 4aff046c-392d-4ca4-824b-7f6d2b556d71
+    source: Filip_Karadordevic
+    relation: :hasSex
+    target: :Male
+  AssignClass (7ab0b284-3068-4781-a835-ed2c825e03ba)
+ Call ID: 7ab0b284-3068-4781-a835-ed2c825e03ba
   Args:
-    source: Alexander_Karageorgevitch
-    literal_value: Prince Aleksandar III Karađorđević
-    relation: :alsoKnownAs
-    literal_type: xsd:string
-  AssignClass (3ec79bd1-cdd6-4259-9f8e-68de4a37cce3)
- Call ID: 3ec79bd1-cdd6-4259-9f8e-68de4a37cce3
-  Args:
+    source: Alexander_Karadordevic
     type: :Man
-    source: Alexander_Sr_Yugoslavia
-  AssignClass (045d5ca3-9fcc-499b-bc87-86bae5501416)
- Call ID: 045d5ca3-9fcc-499b-bc87-86bae5501416
+  AssignClass (8fb7c52b-dae6-4d3d-848f-dafb030a782a)
+ Call ID: 8fb7c52b-dae6-4d3d-848f-dafb030a782a
   Args:
+    source: Alexander_Karadordevic
     type: :Person
-    source: Alexander_Sr_Yugoslavia
-  AssignClass (e8bf3a83-b696-40e2-89a6-cb6666ed105b)
- Call ID: e8bf3a83-b696-40e2-89a6-cb6666ed105b
+  AssignClass (74d0ac89-15f4-48ce-ae85-693388d0bfee)
+ Call ID: 74d0ac89-15f4-48ce-ae85-693388d0bfee
   Args:
     type: :Woman
-    source: Maria_da_Gloria_Orleans_Braganza
-  AssignClass (b5ff5774-5a7a-4f33-8166-60353130ee92)
- Call ID: b5ff5774-5a7a-4f33-8166-60353130ee92
+    source: Maria_da_Gloria
+  AssignClass (4b5ec6d0-1907-40dd-8921-747677fe8519)
+ Call ID: 4b5ec6d0-1907-40dd-8921-747677fe8519
   Args:
+    source: Maria_da_Gloria
     type: :Person
-    source: Maria_da_Gloria_Orleans_Braganza
-  AddTriple (ebe73055-f5e0-42b2-851a-e27ace760b30)
- Call ID: ebe73055-f5e0-42b2-851a-e27ace760b30
+  AddTriple (b225a347-c6f6-46c2-8e7e-7747f64c8f97)
+ Call ID: b225a347-c6f6-46c2-8e7e-7747f64c8f97
   Args:
     relation: :hasFather
-    source: Alexander_Karageorgevitch
-    target: Alexander_Sr_Yugoslavia
-  AddTriple (41b6d513-c1c1-4686-9101-ee098649d2d0)
- Call ID: 41b6d513-c1c1-4686-9101-ee098649d2d0
+    source: Filip_Karadordevic
+    target: :Alexander_Karadordevic
+  AddTriple (f5a0624c-cee6-421f-aa7a-1b2aa0288851)
+ Call ID: f5a0624c-cee6-421f-aa7a-1b2aa0288851
   Args:
     relation: :hasMother
-    source: Alexander_Karageorgevitch
-    target: Maria_da_Gloria_Orleans_Braganza
-  AssignClass (b0ee921a-2ad7-4053-a7cb-2ae94cc0f62d)
- Call ID: b0ee921a-2ad7-4053-a7cb-2ae94cc0f62d
+    source: Filip_Karadordevic
+    target: :Maria_da_Gloria
+  AssignClass (71510445-e9ee-4b75-a3dd-8fa082ca75c6)
+ Call ID: 71510445-e9ee-4b75-a3dd-8fa082ca75c6
   Args:
-    type: :Woman
-    source: Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza
-  AssignClass (7b814e7e-f482-4b0a-9ce8-ea0144bef877)
- Call ID: 7b814e7e-f482-4b0a-9ce8-ea0144bef877
-  Args:
-    type: :Person
-    source: Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza
-  AssignClass (77cd3950-5a46-49bb-b008-ccbbb74ff32f)
- Call ID: 77cd3950-5a46-49bb-b008-ccbbb74ff32f
-  Args:
-    type: :Woman
-    source: Ana_Luna_Medina_y_Orleans_Braganza
-  AssignClass (1daf4ec0-81df-49f3-8ee9-bb011bce3e77)
- Call ID: 1daf4ec0-81df-49f3-8ee9-bb011bce3e77
-  Args:
-    type: :Person
-    source: Ana_Luna_Medina_y_Orleans_Braganza
-  AddTriple (360b7b4d-5106-4282-8ead-e2cc99588fda)
- Call ID: 360b7b4d-5106-4282-8ead-e2cc99588fda
-  Args:
-    relation: :hasMother
-    source: Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza
-    target: Maria_da_Gloria_Orleans_Braganza
-  AddTriple (a09a4be7-9f8b-4ba3-9607-444972a64ba5)
- Call ID: a09a4be7-9f8b-4ba3-9607-444972a64ba5
-  Args:
-    relation: :hasMother
-    source: Ana_Luna_Medina_y_Orleans_Braganza
-    target: Maria_da_Gloria_Orleans_Braganza
-  AssignClass (fe817bfc-ee43-46a0-9398-1e7602313840)
- Call ID: fe817bfc-ee43-46a0-9398-1e7602313840
-  Args:
-    type: :Woman
-    source: Katherine_Clairy_Batis
-  AssignClass (d9429c1a-a99d-46f6-8b86-e99ede49d495)
- Call ID: d9429c1a-a99d-46f6-8b86-e99ede49d495
-  Args:
-    type: :Person
-    source: Katherine_Clairy_Batis
-  AssignClass (12e10d88-7db2-4d11-8306-ef764056b39b)
- Call ID: 12e10d88-7db2-4d11-8306-ef764056b39b
-  Args:
+    source: Peter_Karadordevic
     type: :Man
-    source: Ignacio_19th_Duke_of_Segorbe
-  AssignClass (9f9dbb9c-e542-49e3-863e-d42fdc0f5c3e)
- Call ID: 9f9dbb9c-e542-49e3-863e-d42fdc0f5c3e
+  AssignClass (77ce4137-0221-4e7d-bea8-12a42081efd6)
+ Call ID: 77ce4137-0221-4e7d-bea8-12a42081efd6
   Args:
     type: :Person
-    source: Ignacio_19th_Duke_of_Segorbe
-  Finish (3bfcee04-1389-4f36-a151-1b2e823f27da)
- Call ID: 3bfcee04-1389-4f36-a151-1b2e823f27da
+    source: Peter_Karadordevic
+  AddTriple (5b5161b3-8b1d-4723-892b-9ea2a30c2694)
+ Call ID: 5b5161b3-8b1d-4723-892b-9ea2a30c2694
+  Args:
+    source: Filip_Karadordevic
+    relation: :isSiblingOf
+    target: :Peter_Karadordevic
+  AssignClass (4868f70a-4270-4067-ac2e-7f6af527fadd)
+ Call ID: 4868f70a-4270-4067-ac2e-7f6af527fadd
+  Args:
+    source: Danica_Marinkovic
+    type: :Woman
+  AssignClass (8128b1af-6c0f-4931-9581-a5cfa589cacb)
+ Call ID: 8128b1af-6c0f-4931-9581-a5cfa589cacb
+  Args:
+    type: :Person
+    source: Danica_Marinkovic
+  AddTriple (cc784219-6e76-4699-8c95-cd7ef7a06e67)
+ Call ID: cc784219-6e76-4699-8c95-cd7ef7a06e67
+  Args:
+    target: :Danica_Marinkovic
+    source: Filip_Karadordevic
+    relation: :hasRelation
+  AddLiteral (d927a80e-4c95-4e76-a97e-c43760697b51)
+ Call ID: d927a80e-4c95-4e76-a97e-c43760697b51
+  Args:
+    source: Filip_Karadordevic
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 2017
+  AssignClass (00f10018-686c-4133-ab87-a73467d4d041)
+ Call ID: 00f10018-686c-4133-ab87-a73467d4d041
+  Args:
+    source: Stefan_Karadordevic
+    type: :Man
+  AssignClass (3bb57fec-259d-4a90-b54d-d42176a601e1)
+ Call ID: 3bb57fec-259d-4a90-b54d-d42176a601e1
+  Args:
+    type: :Person
+    source: Stefan_Karadordevic
+  AddTriple (4e06fa3f-2d47-498d-9b94-f38ea9de4e27)
+ Call ID: 4e06fa3f-2d47-498d-9b94-f38ea9de4e27
+  Args:
+    relation: :hasFather
+    source: Stefan_Karadordevic
+    target: :Filip_Karadordevic
+  AddTriple (d061b9b0-a17a-4f24-8a3a-2eb72ebed98b)
+ Call ID: d061b9b0-a17a-4f24-8a3a-2eb72ebed98b
+  Args:
+    source: Stefan_Karadordevic
+    relation: :hasMother
+    target: :Danica_Marinkovic
+  AssignClass (600d6c3a-4067-4e95-b31d-9bf55707d592)
+ Call ID: 600d6c3a-4067-4e95-b31d-9bf55707d592
+  Args:
+    type: :Woman
+    source: Marija_Karadordevic
+  AssignClass (2eef1f1b-81df-4ef7-8b04-78ccde58180a)
+ Call ID: 2eef1f1b-81df-4ef7-8b04-78ccde58180a
+  Args:
+    type: :Person
+    source: Marija_Karadordevic
+  AddTriple (6640cfac-385a-4521-b6cb-adc9c85392df)
+ Call ID: 6640cfac-385a-4521-b6cb-adc9c85392df
+  Args:
+    target: :Filip_Karadordevic
+    relation: :hasFather
+    source: Marija_Karadordevic
+  AddTriple (05405e8f-4876-4bca-b127-10b39c8b655c)
+ Call ID: 05405e8f-4876-4bca-b127-10b39c8b655c
+  Args:
+    target: :Danica_Marinkovic
+    source: Marija_Karadordevic
+    relation: :hasMother
+  Finish (decea288-8fce-44fc-acda-8e17997def07)
+ Call ID: decea288-8fce-44fc-acda-8e17997def07
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Marija_Karadordevic a :Person,
+          :Woman ;
+      :hasFather data:Filip_Karadordevic ;
+      :hasMother data:Danica_Marinkovic .
+
+  data:Stefan_Karadordevic a :Man,
+          :Person ;
+      :hasFather data:Filip_Karadordevic ;
+      :hasMother data:Danica_Marinkovic .
+
+  data:Alexander_Karadordevic a :Man,
+          :Person .
+
+  data:Maria_da_Gloria a :Person,
+          :Woman .
+
+  data:Peter_Karadordevic a :Man,
+          :Person .
+
+  data:Filip_Karadordevic a :Man,
+          :Person ;
+      :hasBirthYear 1982 ;
+      :hasFather data:Alexander_Karadordevic ;
+      :hasMarriageYear 2017 ;
+      :hasMother data:Maria_da_Gloria ;
+      :hasRelation data:Danica_Marinkovic ;
+      :hasSex data:Male ;
+      :isSiblingOf data:Peter_Karadordevic .
+
+  data:Danica_Marinkovic a :Person,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Male']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (ea55c5a1-a175-4a0c-9c90-ce58aa24ded4)
+ Call ID: ea55c5a1-a175-4a0c-9c90-ce58aa24ded4
+  Args:
+    type: :Sex
+    source: Male
+  Finish (c01ab658-1012-43a4-a970-b37c2ab90a83)
+ Call ID: c01ab658-1012-43a4-a970-b37c2ab90a83
   Args:

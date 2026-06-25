@@ -1,0 +1,246 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Gl%C3%BCcksburg a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Gl%C3%BCcksburg ;
+    :hasSister data:Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Gl%C3%BCcksburg ;
+    :isBloodrelationOf data:Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Gl%C3%BCcksburg ;
+    :isSiblingOf data:Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Gl%C3%BCcksburg ;
+    :isSisterOf data:Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Gl%C3%BCcksburg .
+
+data:Georg_9th_Count_of_Solms_Laubach a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Georg_9th_Count_of_Solms_Laubach ;
+    :hasChild data:Countess_Monika_zu_Solms_Laubach ;
+    :hasDaughter data:Countess_Monika_zu_Solms_Laubach ;
+    :hasRelation data:Countess_Monika_zu_Solms_Laubach,
+        data:Georg_9th_Count_of_Solms_Laubach,
+        data:Princess_Johanna_of_Solms_Hohensolms_Lich ;
+    :isAncestorOf data:Countess_Monika_zu_Solms_Laubach ;
+    :isBloodrelationOf data:Georg_9th_Count_of_Solms_Laubach ;
+    :isBrotherOf data:Georg_9th_Count_of_Solms_Laubach ;
+    :isFatherOf data:Countess_Monika_zu_Solms_Laubach ;
+    :isParentOf data:Countess_Monika_zu_Solms_Laubach ;
+    :isSiblingOf data:Georg_9th_Count_of_Solms_Laubach ;
+    :isUncleOf data:Countess_Monika_zu_Solms_Laubach .
+
+data:Princess_Johanna_of_Solms_Hohensolms_Lich a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Countess_Monika_zu_Solms_Laubach ;
+    :hasDaughter data:Countess_Monika_zu_Solms_Laubach ;
+    :hasRelation data:Countess_Monika_zu_Solms_Laubach,
+        data:Georg_9th_Count_of_Solms_Laubach,
+        data:Princess_Johanna_of_Solms_Hohensolms_Lich ;
+    :hasSister data:Princess_Johanna_of_Solms_Hohensolms_Lich ;
+    :isAncestorOf data:Countess_Monika_zu_Solms_Laubach ;
+    :isAuntOf data:Countess_Monika_zu_Solms_Laubach ;
+    :isBloodrelationOf data:Princess_Johanna_of_Solms_Hohensolms_Lich ;
+    :isMotherOf data:Countess_Monika_zu_Solms_Laubach ;
+    :isParentOf data:Countess_Monika_zu_Solms_Laubach ;
+    :isSiblingOf data:Princess_Johanna_of_Solms_Hohensolms_Lich ;
+    :isSisterOf data:Princess_Johanna_of_Solms_Hohensolms_Lich .
+
+data:Maria_Anna_von_Humboldt_Dachroeden a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :hasRelation data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Maria_Anna_von_Humboldt_Dachroeden,
+        data:Prince_George_William,
+        data:Princess_Frederica,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSister data:Maria_Anna_von_Humboldt_Dachroeden ;
+    :hasSon data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :isAncestorOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :isAuntOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :isBloodrelationOf data:Maria_Anna_von_Humboldt_Dachroeden ;
+    :isMotherOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :isParentOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :isSiblingOf data:Maria_Anna_von_Humboldt_Dachroeden ;
+    :isSisterOf data:Maria_Anna_von_Humboldt_Dachroeden .
+
+data:Ernest_Augustus_Duke_of_Brunswick a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_Augustus_Duke_of_Brunswick ;
+    :hasChild data:Ernst_August_Hereditary_Prince_of_Brunswick ;
+    :hasRelation data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Maria_Anna_von_Humboldt_Dachroeden,
+        data:Prince_George_William,
+        data:Princess_Frederica,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSon data:Ernst_August_Hereditary_Prince_of_Brunswick ;
+    :isAncestorOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden,
+        data:Ernst_August_Hereditary_Prince_of_Brunswick ;
+    :isBloodrelationOf data:Ernest_Augustus_Duke_of_Brunswick ;
+    :isBrotherOf data:Ernest_Augustus_Duke_of_Brunswick ;
+    :isFatherOf data:Ernst_August_Hereditary_Prince_of_Brunswick ;
+    :isParentOf data:Ernst_August_Hereditary_Prince_of_Brunswick ;
+    :isSiblingOf data:Ernest_Augustus_Duke_of_Brunswick ;
+    :isUncleOf data:Ernst_August_Hereditary_Prince_of_Brunswick .
+
+data:Princess_Viktoria_Luise_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ernst_August_Hereditary_Prince_of_Brunswick ;
+    :hasRelation data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Maria_Anna_von_Humboldt_Dachroeden,
+        data:Prince_George_William,
+        data:Princess_Frederica,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSister data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSon data:Ernst_August_Hereditary_Prince_of_Brunswick ;
+    :isAncestorOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden,
+        data:Ernst_August_Hereditary_Prince_of_Brunswick ;
+    :isAuntOf data:Ernst_August_Hereditary_Prince_of_Brunswick ;
+    :isBloodrelationOf data:Princess_Viktoria_Luise_of_Prussia ;
+    :isMotherOf data:Ernst_August_Hereditary_Prince_of_Brunswick ;
+    :isParentOf data:Ernst_August_Hereditary_Prince_of_Brunswick ;
+    :isSiblingOf data:Princess_Viktoria_Luise_of_Prussia ;
+    :isSisterOf data:Princess_Viktoria_Luise_of_Prussia .
+
+data:Countess_Monika_zu_Solms_Laubach a :Person,
+        :Woman ;
+    :hasAncestor data:Georg_9th_Count_of_Solms_Laubach,
+        data:Princess_Johanna_of_Solms_Hohensolms_Lich ;
+    :hasFather data:Georg_9th_Count_of_Solms_Laubach ;
+    :hasMother data:Princess_Johanna_of_Solms_Hohensolms_Lich ;
+    :hasParent data:Georg_9th_Count_of_Solms_Laubach,
+        data:Princess_Johanna_of_Solms_Hohensolms_Lich ;
+    :hasRelation data:Countess_Monika_zu_Solms_Laubach,
+        data:Georg_9th_Count_of_Solms_Laubach,
+        data:Princess_Johanna_of_Solms_Hohensolms_Lich ;
+    :hasSister data:Countess_Monika_zu_Solms_Laubach ;
+    :isBloodrelationOf data:Countess_Monika_zu_Solms_Laubach ;
+    :isChildOf data:Georg_9th_Count_of_Solms_Laubach,
+        data:Princess_Johanna_of_Solms_Hohensolms_Lich ;
+    :isDaughterOf data:Georg_9th_Count_of_Solms_Laubach,
+        data:Princess_Johanna_of_Solms_Hohensolms_Lich ;
+    :isSiblingOf data:Countess_Monika_zu_Solms_Laubach ;
+    :isSisterOf data:Countess_Monika_zu_Solms_Laubach .
+
+data:Prince_George_William a :Man,
+        :Person ;
+    :hasBrother data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Prince_George_William ;
+    :hasRelation data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Maria_Anna_von_Humboldt_Dachroeden,
+        data:Prince_George_William,
+        data:Princess_Frederica,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSister data:Princess_Frederica ;
+    :isBloodrelationOf data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Prince_George_William,
+        data:Princess_Frederica ;
+    :isBrotherOf data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Prince_George_William,
+        data:Princess_Frederica ;
+    :isSiblingOf data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Prince_George_William,
+        data:Princess_Frederica ;
+    :isUncleOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden .
+
+data:Princess_Frederica a :Person,
+        :Woman ;
+    :hasBrother data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Prince_George_William ;
+    :hasRelation data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Maria_Anna_von_Humboldt_Dachroeden,
+        data:Prince_George_William,
+        data:Princess_Frederica,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSister data:Princess_Frederica ;
+    :isAuntOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :isBloodrelationOf data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Prince_George_William,
+        data:Princess_Frederica ;
+    :isSiblingOf data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Prince_George_William,
+        data:Princess_Frederica ;
+    :isSisterOf data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Prince_George_William,
+        data:Princess_Frederica .
+
+data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden a :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Maria_Anna_von_Humboldt_Dachroeden,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasBrother data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :hasFather data:Ernst_August_Hereditary_Prince_of_Brunswick ;
+    :hasMother data:Maria_Anna_von_Humboldt_Dachroeden ;
+    :hasParent data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Maria_Anna_von_Humboldt_Dachroeden ;
+    :hasRelation data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Maria_Anna_von_Humboldt_Dachroeden,
+        data:Prince_George_William,
+        data:Princess_Frederica,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :isBloodrelationOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :isBrotherOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :isChildOf data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Maria_Anna_von_Humboldt_Dachroeden ;
+    :isSiblingOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :isSonOf data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Maria_Anna_von_Humboldt_Dachroeden .
+
+data:Ernst_August_Hereditary_Prince_of_Brunswick a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasBirthYear 1914 ;
+    :hasBrother data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Prince_George_William ;
+    :hasChild data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :hasDeathYear 1987 ;
+    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
+    :hasMarriageYear 1951,
+        1981 ;
+    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasParent data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasRelation data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Maria_Anna_von_Humboldt_Dachroeden,
+        data:Prince_George_William,
+        data:Princess_Frederica,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSister data:Princess_Frederica ;
+    :hasSon data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :isAncestorOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :isBloodrelationOf data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Prince_George_William,
+        data:Princess_Frederica ;
+    :isBrotherOf data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Prince_George_William,
+        data:Princess_Frederica ;
+    :isChildOf data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :isFatherOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :isParentOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden ;
+    :isSiblingOf data:Ernst_August_Hereditary_Prince_of_Brunswick,
+        data:Prince_George_William,
+        data:Princess_Frederica ;
+    :isSonOf data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :isUncleOf data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden .
+

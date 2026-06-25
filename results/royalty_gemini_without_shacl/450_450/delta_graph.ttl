@@ -2,43 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:In%C3%A9s_of_Bourbon-Two_Sicilies a :Person,
-        :Woman ;
-    :hasBirthYear 1940 ;
-    :hasFather data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;
-    :hasMother data:Alicia_of_Bourbon-Parma ;
-    :isMotherOf data:Eugenia,
-        data:Isabel,
-        data:Manuel,
-        data:Menc%C3%ADa_de_Morales_y_Borb%C3%B3n-Dos_Sicilias,
-        data:Sonia .
-
-data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1901 ;
-    :hasDeathYear 1964 .
-
-data:Alicia_of_Bourbon-Parma a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1917 ;
-    :hasDeathYear 2017 .
-
-data:Eugenia a :Person,
+data:Archduchess_Valerie_of_Austria a :Person,
         :Woman .
 
-data:Isabel a :Person,
-        :Woman .
+data:Beatrix_of_Hohenlohe-Langenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 1997 ;
+    :hasFather data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg ;
+    :hasMother data:Margarita_of_Greece_and_Denmark .
 
-data:Manuel a :Man,
+data:King_Charles_III a :Man,
         :Person .
 
-data:Menc%C3%ADa_de_Morales_y_Borb%C3%B3n-Dos_Sicilias a :Person,
+data:Margaret_Princess_of_Hesse_and_by_Rhine a :Person,
         :Woman .
 
-data:Sonia a :Person,
-        :Woman ;
-    :hasBirthYear 1969 ;
-    :hasDeathYear 2022 .
+data:Maximilian_Hereditary_Prince_of_Baden a :Man,
+        :Person ;
+    :hasMarriageYear 1966 .
+
+data:Prince_Andrew_of_Yugoslavia a :Man,
+        :Person .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :isBrotherOf data:Margarita_of_Greece_and_Denmark .
+
+data:Princess_Cecilie a :Person,
+        :Woman .
+
+data:Princess_Christina_of_Hesse a :Person,
+        :Woman .
+
+data:Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg a :Man,
+        :Person .
+
+data:Margarita_of_Greece_and_Denmark a :Person,
+        :Woman .
 

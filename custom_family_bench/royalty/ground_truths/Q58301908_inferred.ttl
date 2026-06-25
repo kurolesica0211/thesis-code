@@ -1,0 +1,115 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven a :Man,
+        :Person ;
+    rdfs:label "George Mountbatten, 2nd Marquess of Milford Haven"^^xsd:string ;
+    data:posIndicesFull "353:380"^^xsd:string ;
+    data:posIndicesPart "641:652"^^xsd:string ;
+    data:wdtLink wdt:Q335129 ;
+    :alsoKnownAs "George Louis Victor Henry Serge Mountbatten, 2nd Marquess of Milford Haven"^^xsd:string,
+        "George Louis Victor Henry Serge Mountbatten, Earl of Medina"^^xsd:string,
+        "George Medina"^^xsd:string,
+        "George Milford Haven"^^xsd:string,
+        "George Mountbatten, Earl of Medina"^^xsd:string,
+        "Prince George Louis Victor Henry Serge of Battenberg"^^xsd:string,
+        "Prince George of Battenberg"^^xsd:string ;
+    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
+    :hasRelation data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
+    :isBrotherOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
+    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven .
+
+data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven a :Person,
+        :Woman ;
+    rdfs:label "Nadejda Mountbatten, Marchioness of Milford Haven"^^xsd:string ;
+    data:posIndicesFull "353:380"^^xsd:string,
+        "385:422"^^xsd:string ;
+    data:posIndicesPart "641:652"^^xsd:string ;
+    data:wdtLink wdt:Q259488 ;
+    :alsoKnownAs "Countess Nada de Torby"^^xsd:string,
+        "Countess Nadejda Mikhailovna de Torby"^^xsd:string,
+        "Countess Nadejda de Torby"^^xsd:string,
+        "Nada Mountbatten"^^xsd:string,
+        "Nada de Torby"^^xsd:string,
+        "Nadejda Medina"^^xsd:string,
+        "Nadejda Mikhailovna Mountbatten, Countess of Medina"^^xsd:string,
+        "Nadejda Mikhailovna Mountbatten, Marchioness of Milford Haven"^^xsd:string,
+        "Nadejda Milford Haven"^^xsd:string,
+        "Nadejda Mountbatten, Countess of Medina"^^xsd:string,
+        "Nadejda de Torby"^^xsd:string,
+        "Princess George of Battenberg"^^xsd:string ;
+    :hasRelation data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :hasSex data:female ;
+    :hasSister data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :isBloodrelationOf data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :isSiblingOf data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
+    :isSisterOf data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven .
+
+data:George_Mountbatten-_4th_Marquess_of_Milford_Haven a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George Mountbatten, 4th Marquess of Milford Haven"^^xsd:string ;
+    data:posIndicesFull "160:209"^^xsd:string ;
+    data:posIndicesPart "291:302"^^xsd:string,
+        "641:652"^^xsd:string ;
+    data:wdtLink wdt:Q336783 ;
+    :alsoKnownAs "George Ivar Louis Mountbatten, 4th Marquess of Milford Haven"^^xsd:string,
+        "George Ivar Louis Mountbatten, Earl of Medina"^^xsd:string,
+        "George Mountbatten, Earl of Medina"^^xsd:string ;
+    :hasBrother data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
+    :hasChild data:Tatiana_Mountbatten ;
+    :hasDaughter data:Tatiana_Mountbatten ;
+    :hasRelation data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Tatiana_Mountbatten ;
+    :hasSex data:male ;
+    :isAncestorOf data:Tatiana_Mountbatten ;
+    :isBloodrelationOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
+    :isBrotherOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
+    :isFatherOf data:Tatiana_Mountbatten ;
+    :isParentOf data:Tatiana_Mountbatten ;
+    :isSiblingOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
+    :isUncleOf data:Tatiana_Mountbatten .
+
+data:Tatiana_Mountbatten a :Person,
+        :Woman ;
+    rdfs:label "Tatiana Mountbatten"^^xsd:string ;
+    data:posIndicesFull "111:130"^^xsd:string ;
+    data:posIndicesPart "291:302"^^xsd:string,
+        "641:652"^^xsd:string,
+        "679:686"^^xsd:string,
+        "881:888"^^xsd:string,
+        "961:968"^^xsd:string ;
+    data:wdtLink wdt:Q58301908 ;
+    :alsoKnownAs "Lady Tatiana Helen Georgia Mountbatten"^^xsd:string,
+        "Tatiana Helen Georgia Mountbatten"^^xsd:string ;
+    :hasAncestor data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
+    :hasFather data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
+    :hasParent data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
+    :hasRelation data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
+        data:Tatiana_Mountbatten ;
+    :hasSex data:female ;
+    :hasSister data:Tatiana_Mountbatten ;
+    :isBloodrelationOf data:Tatiana_Mountbatten ;
+    :isChildOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
+    :isDaughterOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
+    :isSiblingOf data:Tatiana_Mountbatten ;
+    :isSisterOf data:Tatiana_Mountbatten .
+

@@ -2,58 +2,53 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Constantijn_van_de_Nederlanden a :Man,
-        :Person ;
-    :hasBirthYear "1969"^^xsd:int ;
-    :hasBrother data:Johan_Friso_der_Nederlanden,
-        data:Willem-Alexander_der_Nederlanden ;
-    :hasChild data:Claus-Casimir_van_Oranje-Nassau,
-        data:Eloise_van_Oranje-Nassau,
-        data:Leonore_van_Oranje-Nassau ;
-    :hasFather data:Claus_von_Amsberg ;
-    :hasMother data:Beatrix_der_Nederlanden ;
-    :hasSex data:Male_Sex .
-
-data:Laurentien_Brinkhorst a :Person,
+data:Countess_Emma_Luana_Ninette_Sophie a :Person,
         :Woman ;
-    :hasChild data:Claus-Casimir_van_Oranje-Nassau,
-        data:Eloise_van_Oranje-Nassau,
-        data:Leonore_van_Oranje-Nassau ;
-    :hasSex data:Female_Sex .
+    :hasFather data:Prince_Friso ;
+    :hasMother data:Mabel_Wisse_Smit .
 
-data:Beatrix_der_Nederlanden a :Ancestor,
-        :Person,
+data:Countess_Joanna_Zaria_Nicoline_Milou a :Person,
         :Woman ;
-    :hasSex data:Female_Sex .
+    :hasFather data:Prince_Friso ;
+    :hasMother data:Mabel_Wisse_Smit .
 
 data:Claus_von_Amsberg a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male_Sex .
+        :Person .
 
-data:Johan_Friso_der_Nederlanden a :Man,
-        :Person ;
-    :hasSex data:Male_Sex .
+data:King_Willem-Alexander a :Man,
+        :Person .
 
-data:Willem-Alexander_der_Nederlanden a :Man,
-        :Person ;
-    :hasSex data:Male_Sex .
+data:Prince_Bernhard a :Ancestor,
+        :Man,
+        :Person .
 
-data:Claus-Casimir_van_Oranje-Nassau a :Man,
-        :Person ;
-    :hasSex data:Male_Sex .
+data:Prince_Constantijn a :Man,
+        :Person .
 
-data:Eloise_van_Oranje-Nassau a :Person,
+data:Queen_Beatrix a :Ancestor,
+        :Person,
         :Woman ;
-    :hasSex data:Female_Sex .
+    :isChildOf data:Prince_Bernhard,
+        data:Queen_Juliana .
 
-data:Leonore_van_Oranje-Nassau a :Person,
-        :Woman ;
-    :hasSex data:Female_Sex .
+data:Queen_Juliana a :Ancestor,
+        :Person,
+        :Woman .
 
-data:Female_Sex a :Female,
-        :Sex .
+data:Prince_Friso a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1968 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Claus_von_Amsberg ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:Queen_Beatrix ;
+    :hasRelation data:Mabel_Wisse_Smit ;
+    :isBrotherOf data:King_Willem-Alexander,
+        data:Prince_Constantijn .
 
-data:Male_Sex a :Male,
-        :Sex .
+data:Mabel_Wisse_Smit a :Ancestor,
+        :Person,
+        :Woman .
 

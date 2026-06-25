@@ -2,35 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elena a :Person,
+data:Lady_Amanda_Patricia_Victoria_Knatchbull a :Person,
         :Woman ;
-    :isDaughterOf data:Heinrich_XIII_Prinz_Reuss .
+    :isDaughterOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten .
 
-data:Heinrich_XXVIII a :Man,
+data:Louise_Mountbatten a :Person,
+        :Woman ;
+    :isAuntOf data:Patricia_Mountbatten .
+
+data:Nicholas_Timothy_Charles_Knatchbull a :Man,
         :Person ;
-    :isSonOf data:Heinrich_XIII_Prinz_Reuss .
+    :isSonOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten .
 
-data:Duchess_Woizlawa_Feodora_of_Mecklenburg a :Ancestor,
-        :Woman ;
-    :hasFather data:Duke_Adolf_Friedrich_of_Mecklenburg .
+data:Norton_Louis_Philip_Knatchbull a :Man,
+        :Person ;
+    :isSonOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten .
 
-data:Duke_Adolf_Friedrich_of_Mecklenburg a :Ancestor,
-        :Man .
+data:Timothy_Knatchbull a :Man,
+        :Person ;
+    :isSonOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten .
 
-data:Male a :Sex .
-
-data:Prince_Heinrich_I_Reuss a :Ancestor,
-        :Man .
-
-data:Susan_Doukht_Jalali a :Person,
+data:Lady_Doreen_Browne a :Person,
         :Woman .
 
-data:Heinrich_XIII_Prinz_Reuss a :Man,
+data:Louis_Mountbatten a :Man,
+        :Person .
+
+data:Michael_Knatchbull a :Man,
+        :Person .
+
+data:John_Ulick_Knatchbull a :Man,
         :Person ;
-    :hasBirthYear 1951 ;
-    :hasFather data:Prince_Heinrich_I_Reuss ;
-    :hasMarriageYear 1989 ;
-    :hasMother data:Duchess_Woizlawa_Feodora_of_Mecklenburg ;
-    :hasRelation data:Susan_Doukht_Jalali ;
-    :hasSex data:Male .
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2005 ;
+    :hasFather data:Michael_Knatchbull ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:Lady_Doreen_Browne ;
+    :hasRelation data:Patricia_Mountbatten ;
+    :knownAs "John Brabourne"^^xsd:string .
+
+data:Patricia_Mountbatten a :Person,
+        :Woman ;
+    :hasFather data:Louis_Mountbatten .
 

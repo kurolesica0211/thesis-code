@@ -2,48 +2,28 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Sofia a :Person,
-        :Woman ;
-    :hasFather data:Paul_of_Greece ;
-    :hasMother data:Frederica .
+data:Prince_Michael_of_Kent a :Man ;
+    :hasBirthYear 1942 ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMarriageYear 1978 ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Baroness_Marie_Christine_von_Reibnitz .
 
-data:Alfonso_Prince_of_Asturias a :Man,
-        :Person .
+data:Baroness_Marie_Christine_von_Reibnitz a :Woman .
 
-data:Alfonso_XIII a :Man,
-        :Person .
+data:George_V a :Man .
 
-data:Frederica a :Person,
-        :Woman .
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Woman .
 
-data:Jaime_Duke_of_Segovia a :Man,
-        :Person .
+data:Prince_George_Duke_of_Kent a :Man ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary .
 
-data:Juan_Carlos_I a :Man,
-        :Person ;
-    :hasFather data:Juan_Count_of_Barcelona .
+data:Prince_Nicholas_of_Greece_and_Denmark a :Man .
 
-data:Juan_Count_of_Barcelona a :Man,
-        :Person ;
-    :hasBirthYear 1913 ;
-    :hasChild data:Juan_Carlos_I,
-        data:Pilar ;
-    :hasDeathYear 1993 ;
-    :hasFather data:Alfonso_XIII ;
-    :hasMother data:Maria_de_las_Mercedes,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :isBrotherOf data:Alfonso_Prince_of_Asturias,
-        data:Jaime_Duke_of_Segovia .
+data:Princess_Marina_of_Greece_and_Denmark a :Woman ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
 
-data:Maria_de_las_Mercedes a :Person,
-        :Woman .
-
-data:Paul_of_Greece a :Man,
-        :Person .
-
-data:Pilar a :Person,
-        :Woman .
-
-data:Victoria_Eugenie_of_Battenberg a :Person,
-        :Woman .
+data:Queen_Mary a :Woman .
 

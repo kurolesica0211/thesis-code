@@ -4,16 +4,24 @@
 
 data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
         :Person ;
-    :hasFather data:Peter_II_of_Yugoslavia ;
-    :hasMother data:Alexandra_of_Greece_and_Denmark ;
-    :hasSex data:Male .
+    :isSonOf data:Alexandra,
+        data:Peter_II .
 
-data:Alexander_of_Greece a :Ancestor,
+data:King_George_II a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
-data:Alexandra_of_Greece_and_Denmark a :Ancestor,
+data:Maria_of_Yugoslavia a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Peter_II .
+
+data:Queen_Sophia a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Alexander_of_Greece .
+
+data:Alexandra a :Ancestor,
         :Person,
         :Woman ;
     :hasBirthYear 1921 ;
@@ -21,26 +29,17 @@ data:Alexandra_of_Greece_and_Denmark a :Ancestor,
     :hasFather data:Alexander_of_Greece ;
     :hasMarriageYear 1944 ;
     :hasMother data:Aspasia_Manos ;
-    :hasSex data:Female .
+    :hasRelation data:Peter_II .
 
 data:Aspasia_Manos a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female .
+        :Woman .
 
-data:Maria_of_Yugoslavia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Peter_II_of_Yugoslavia a :Ancestor,
+data:Alexander_of_Greece a :Ancestor,
         :Man,
-        :Person ;
-    :hasDeathYear 1970 ;
-    :hasMother data:Maria_of_Yugoslavia ;
-    :hasSex data:Male .
+        :Person .
 
-data:Female a :Sex .
-
-data:Male a :Sex .
+data:Peter_II a :Ancestor,
+        :Man,
+        :Person .
 

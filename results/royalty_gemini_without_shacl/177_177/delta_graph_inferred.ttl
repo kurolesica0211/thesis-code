@@ -1,0 +1,162 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FrederikIX a :Man,
+        :Person ;
+    :hasBrother data:FrederikIX ;
+    :hasRelation data:FrederikIX ;
+    :isBloodrelationOf data:FrederikIX ;
+    :isBrotherOf data:FrederikIX ;
+    :isSiblingOf data:FrederikIX .
+
+data:MargretheII a :Person,
+        :Woman ;
+    :hasRelation data:MargretheII ;
+    :hasSister data:MargretheII ;
+    :isBloodrelationOf data:MargretheII ;
+    :isSiblingOf data:MargretheII ;
+    :isSisterOf data:MargretheII .
+
+data:PrincessCarolineMathildeOfDenmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessElisabethOfDenmark ;
+    :hasDaughter data:PrincessElisabethOfDenmark ;
+    :hasRelation data:ChristianX,
+        data:KnudHereditaryPrinceOfDenmark,
+        data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessCarolineMathildeOfDenmark,
+        data:PrincessElisabethOfDenmark ;
+    :hasSister data:PrincessCarolineMathildeOfDenmark ;
+    :isAncestorOf data:PrincessElisabethOfDenmark ;
+    :isAuntOf data:PrincessElisabethOfDenmark ;
+    :isBloodrelationOf data:PrincessCarolineMathildeOfDenmark ;
+    :isMotherOf data:PrincessElisabethOfDenmark ;
+    :isParentOf data:PrincessElisabethOfDenmark ;
+    :isSiblingOf data:PrincessCarolineMathildeOfDenmark ;
+    :isSisterOf data:PrincessCarolineMathildeOfDenmark .
+
+data:ChristianX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ChristianX ;
+    :hasChild data:KnudHereditaryPrinceOfDenmark ;
+    :hasRelation data:ChristianX,
+        data:KnudHereditaryPrinceOfDenmark,
+        data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessCarolineMathildeOfDenmark,
+        data:PrincessElisabethOfDenmark ;
+    :hasSon data:KnudHereditaryPrinceOfDenmark ;
+    :isAncestorOf data:KnudHereditaryPrinceOfDenmark,
+        data:PrincessElisabethOfDenmark ;
+    :isBloodrelationOf data:ChristianX ;
+    :isBrotherOf data:ChristianX ;
+    :isFatherOf data:KnudHereditaryPrinceOfDenmark ;
+    :isParentOf data:KnudHereditaryPrinceOfDenmark ;
+    :isSiblingOf data:ChristianX ;
+    :isUncleOf data:KnudHereditaryPrinceOfDenmark .
+
+data:PrinceChristian a :Man,
+        :Person ;
+    :hasBrother data:PrinceChristian,
+        data:PrinceIngolf ;
+    :hasRelation data:ChristianX,
+        data:KnudHereditaryPrinceOfDenmark,
+        data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessCarolineMathildeOfDenmark,
+        data:PrincessElisabethOfDenmark ;
+    :hasSister data:PrincessElisabethOfDenmark ;
+    :isBloodrelationOf data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessElisabethOfDenmark ;
+    :isBrotherOf data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessElisabethOfDenmark ;
+    :isSiblingOf data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessElisabethOfDenmark .
+
+data:PrinceIngolf a :Man,
+        :Person ;
+    :hasBrother data:PrinceChristian,
+        data:PrinceIngolf ;
+    :hasRelation data:ChristianX,
+        data:KnudHereditaryPrinceOfDenmark,
+        data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessCarolineMathildeOfDenmark,
+        data:PrincessElisabethOfDenmark ;
+    :hasSister data:PrincessElisabethOfDenmark ;
+    :isBloodrelationOf data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessElisabethOfDenmark ;
+    :isBrotherOf data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessElisabethOfDenmark ;
+    :isSiblingOf data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessElisabethOfDenmark .
+
+data:KnudHereditaryPrinceOfDenmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:ChristianX ;
+    :hasBrother data:KnudHereditaryPrinceOfDenmark ;
+    :hasChild data:PrincessElisabethOfDenmark ;
+    :hasDaughter data:PrincessElisabethOfDenmark ;
+    :hasFather data:ChristianX ;
+    :hasParent data:ChristianX ;
+    :hasRelation data:ChristianX,
+        data:KnudHereditaryPrinceOfDenmark,
+        data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessCarolineMathildeOfDenmark,
+        data:PrincessElisabethOfDenmark ;
+    :isAncestorOf data:PrincessElisabethOfDenmark ;
+    :isBloodrelationOf data:KnudHereditaryPrinceOfDenmark ;
+    :isBrotherOf data:KnudHereditaryPrinceOfDenmark ;
+    :isChildOf data:ChristianX ;
+    :isFatherOf data:PrincessElisabethOfDenmark ;
+    :isParentOf data:PrincessElisabethOfDenmark ;
+    :isSiblingOf data:KnudHereditaryPrinceOfDenmark ;
+    :isSonOf data:ChristianX ;
+    :isUncleOf data:PrincessElisabethOfDenmark .
+
+data:PrincessElisabethOfDenmark a :Person,
+        :Woman ;
+    :hasAncestor data:ChristianX,
+        data:KnudHereditaryPrinceOfDenmark,
+        data:PrincessCarolineMathildeOfDenmark ;
+    :hasBirthYear 1935 ;
+    :hasBrother data:PrinceChristian,
+        data:PrinceIngolf ;
+    :hasDeathYear 2018 ;
+    :hasFather data:KnudHereditaryPrinceOfDenmark ;
+    :hasMother data:PrincessCarolineMathildeOfDenmark ;
+    :hasParent data:KnudHereditaryPrinceOfDenmark,
+        data:PrincessCarolineMathildeOfDenmark ;
+    :hasRelation data:ChristianX,
+        data:KnudHereditaryPrinceOfDenmark,
+        data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessCarolineMathildeOfDenmark,
+        data:PrincessElisabethOfDenmark ;
+    :hasSister data:PrincessElisabethOfDenmark ;
+    :isBloodrelationOf data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessElisabethOfDenmark ;
+    :isChildOf data:KnudHereditaryPrinceOfDenmark,
+        data:PrincessCarolineMathildeOfDenmark ;
+    :isDaughterOf data:KnudHereditaryPrinceOfDenmark,
+        data:PrincessCarolineMathildeOfDenmark ;
+    :isSiblingOf data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessElisabethOfDenmark ;
+    :isSisterOf data:PrinceChristian,
+        data:PrinceIngolf,
+        data:PrincessElisabethOfDenmark .
+

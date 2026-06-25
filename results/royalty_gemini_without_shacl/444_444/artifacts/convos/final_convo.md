@@ -69,22 +69,36 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lady Mary Luise Wellesley (born 16 December 1986) is a British writer and historian specialising in Medieval studies.
-Early life, family, and education
+Angelica Margherita Edwina Hicks (born 16 September 1992) is a British fashion illustrator and internet personality.
+As the great-granddaughter of Louis Mountbatten, 1st Earl Mountbatten of Burma, she is a relative of the British royal family and is included in the line of succession to the British throne.
+Early life and family
 
-Lady Mary Wellesley was born in 1986 to Charles Wellesley, Marquess of Douro and Princess Antonia of Prussia.
-Her godmother was Diana, Princess of Wales.
+Hicks was born on 16 September 1992 to Marina Allegra Federica Silvia Tondato, an Italian designer, and Ashley Louis David Hicks, a British artist and interior designer.
+Hicks' paternal grandparents were the English interior decorator and designer David Nightingale Hicks and Lady Pamela Mountbatten, who served as a bridesmaid and as a lady-in-waiting to Elizabeth II.
+Through her grandmother, Hicks is a relative of the Mountbatten family, itself a branch of the German princely Battenberg family, and a relative of the British royal family.
+Hicks' great-grandparents, Louis Mountbatten, 1st Earl Mountbatten of Burma and The Honourable Edwina Ashley, served as the Viceroy and Vicereine of India.
+She is a great-great-granddaughter of Prince Louis of Battenberg (later the 1st Marquess of Milford Haven) and Princess Victoria of Hesse and by Rhine, a granddaughter of Queen Victoria.
+Hicks grew up in Chelsea, London and was educated at a boarding school.
 Career
 
-Wellesley is an associate fellow at the University of London's Institute of Historical Research and an associate member of the English faculty at Oxford University.
-Wellesley has also written about Francis of Assisi and people of the Victorian period, including Thomas Hardy.
-In 2023, Wellesley authored two books, Hidden Hands: The Lives of Manuscripts and Their Makers and The Gilded Page: The Secret Lives of Medieval Manuscripts.
+Hicks works as a visual artist and fashion illustrator.
+Hicks also made commissioned pieces for the American fashion designer Tory Burch and illustrated for the magazines Elle and Porter.
+In 2021, Hicks launched a TikTok channel where she parodies haute couture outfits from red carpet events and fashion shows, recreating them out of duct tape, trash bags, metallic wrappers, foil, candy, and other materials.
+Her recreations included a Louis Vuitton tank dress worn by Emma Corrin on the cover of Vogue, which she made out of multigrain crackers, a Maison Schiaparelli couture cape that she made out of a white mattress cover, and Cagole boots by Balenciaga that she made out of duct tape.
+By July 2022, Hicks amassed over 48,000 followers and her videos collectively received over 4 million likes.
+Her videos led to Hicks collaborating with Valentino and Vogue Italia.
+By September 2022, Hicks had over 86,000 followers on TikTok.
+Personal life
+
+Hicks resides in Carroll Gardens in Brooklyn, New York.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -100,39 +114,9 @@ In 2023, Wellesley authored two books, Hidden Hands: The Lives of Manuscripts an
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -147,6 +131,23 @@ In 2023, Wellesley authored two books, Hidden Hands: The Lives of Manuscripts an
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -164,6 +165,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -231,29 +247,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,6 +270,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -274,6 +290,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -282,17 +300,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -320,6 +340,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -335,55 +439,387 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9a108da6-14e1-486d-a6be-2ca75ac8c004)
- Call ID: 9a108da6-14e1-486d-a6be-2ca75ac8c004
+  AssignClass (64407c15-1c6e-453a-b118-980f37ceade7)
+ Call ID: 64407c15-1c6e-453a-b118-980f37ceade7
   Args:
-    source: Lady_Mary_Wellesley
-    type: :Person
-  AssignClass (7aa45f2e-9dc9-4c69-b466-e0545670c6c9)
- Call ID: 7aa45f2e-9dc9-4c69-b466-e0545670c6c9
-  Args:
-    source: Lady_Mary_Wellesley
+    source: Angelica Margherita Edwina Hicks
     type: :Woman
-  AssignClass (4353b851-5fda-48be-a661-6967ca37bd92)
- Call ID: 4353b851-5fda-48be-a661-6967ca37bd92
+  AssignClass (e120f5a6-c9b9-4dc4-b976-f91d9bea8f9e)
+ Call ID: e120f5a6-c9b9-4dc4-b976-f91d9bea8f9e
   Args:
+    source: Angelica Margherita Edwina Hicks
     type: :Person
-    source: Charles_Wellesley
-  AssignClass (bddf4a8b-9a5e-481a-afff-1f6b0ee3fad9)
- Call ID: bddf4a8b-9a5e-481a-afff-1f6b0ee3fad9
+  AddLiteral (a295144a-626c-4e42-8176-c4d048ab7727)
+ Call ID: a295144a-626c-4e42-8176-c4d048ab7727
   Args:
-    source: Charles_Wellesley
-    type: :Man
-  AssignClass (32da52bd-afc3-49a2-aa87-20aecbfd96a1)
- Call ID: 32da52bd-afc3-49a2-aa87-20aecbfd96a1
-  Args:
-    source: Princess_Antonia_of_Prussia
-    type: :Person
-  AssignClass (5defc5a1-1630-40f3-9c25-e21577e89697)
- Call ID: 5defc5a1-1630-40f3-9c25-e21577e89697
-  Args:
-    source: Princess_Antonia_of_Prussia
-    type: :Woman
-  AddLiteral (4c944964-bcc7-4c90-95b4-fa707885abd2)
- Call ID: 4c944964-bcc7-4c90-95b4-fa707885abd2
-  Args:
-    literal_value: 1986
-    source: Lady_Mary_Wellesley
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddTriple (b5ce8481-5429-4305-84d2-10d038867e63)
- Call ID: b5ce8481-5429-4305-84d2-10d038867e63
+    literal_value: 1992
+    source: Angelica Margherita Edwina Hicks
+    literal_type: xsd:integer
+  AssignClass (c3380e71-c602-4b29-9829-6e35941b0294)
+ Call ID: c3380e71-c602-4b29-9829-6e35941b0294
+  Args:
+    source: Marina Allegra Federica Silvia Tondato
+    type: :Woman
+  AssignClass (55603332-618e-49ef-b3c0-5ccf570dcf2a)
+ Call ID: 55603332-618e-49ef-b3c0-5ccf570dcf2a
+  Args:
+    source: Marina Allegra Federica Silvia Tondato
+    type: :Person
+  AssignClass (0f8ebe69-b27d-409d-bed5-22c7984bb07a)
+ Call ID: 0f8ebe69-b27d-409d-bed5-22c7984bb07a
+  Args:
+    source: Ashley Louis David Hicks
+    type: :Man
+  AssignClass (a9e84c66-8d97-48ec-a6c2-03d5e661ef72)
+ Call ID: a9e84c66-8d97-48ec-a6c2-03d5e661ef72
+  Args:
+    source: Ashley Louis David Hicks
+    type: :Person
+  AddTriple (6a51103a-a10e-4f61-bad3-40047945c0ad)
+ Call ID: 6a51103a-a10e-4f61-bad3-40047945c0ad
+  Args:
+    target: Marina Allegra Federica Silvia Tondato
+    source: Angelica Margherita Edwina Hicks
+    relation: :hasMother
+  AddTriple (89703d8f-7b7d-44c1-af43-4564155abc59)
+ Call ID: 89703d8f-7b7d-44c1-af43-4564155abc59
   Args:
     relation: :hasFather
-    target: Charles_Wellesley
-    source: Lady_Mary_Wellesley
-  AddTriple (4336d13a-b1f8-4653-a63a-a3ad6b0e32de)
- Call ID: 4336d13a-b1f8-4653-a63a-a3ad6b0e32de
+    target: Ashley Louis David Hicks
+    source: Angelica Margherita Edwina Hicks
+  AssignClass (8f1f1515-b457-410b-b7c6-4b0086757e7d)
+ Call ID: 8f1f1515-b457-410b-b7c6-4b0086757e7d
   Args:
-    source: Lady_Mary_Wellesley
-    target: Princess_Antonia_of_Prussia
+    source: David Nightingale Hicks
+    type: :Man
+  AssignClass (9cadf295-7238-458a-ac6f-5fcb373f7d66)
+ Call ID: 9cadf295-7238-458a-ac6f-5fcb373f7d66
+  Args:
+    source: David Nightingale Hicks
+    type: :Person
+  AssignClass (7585a3fe-e0be-4ff9-b0d2-d4a5c21148fa)
+ Call ID: 7585a3fe-e0be-4ff9-b0d2-d4a5c21148fa
+  Args:
+    source: Lady Pamela Mountbatten
+    type: :Woman
+  AssignClass (09de2b44-f3dd-4086-bc97-18f5f755cb01)
+ Call ID: 09de2b44-f3dd-4086-bc97-18f5f755cb01
+  Args:
+    source: Lady Pamela Mountbatten
+    type: :Person
+  AddTriple (9f982de9-48e5-413d-b42e-1b87ffec5a91)
+ Call ID: 9f982de9-48e5-413d-b42e-1b87ffec5a91
+  Args:
+    source: Ashley Louis David Hicks
+    target: David Nightingale Hicks
+    relation: :hasFather
+  AddTriple (a35678a8-66c3-4be6-bbdd-f6371e7f78eb)
+ Call ID: a35678a8-66c3-4be6-bbdd-f6371e7f78eb
+  Args:
     relation: :hasMother
-  Finish (7fa52bc1-07cc-45e0-a368-6eca881553cb)
- Call ID: 7fa52bc1-07cc-45e0-a368-6eca881553cb
+    target: Lady Pamela Mountbatten
+    source: Ashley Louis David Hicks
+  AssignClass (13e98526-d844-4251-9c90-a2fadbcc71db)
+ Call ID: 13e98526-d844-4251-9c90-a2fadbcc71db
+  Args:
+    source: Louis Mountbatten, 1st Earl Mountbatten of Burma
+    type: :Man
+  AssignClass (14715919-fc78-4fb5-85de-276d2306774a)
+ Call ID: 14715919-fc78-4fb5-85de-276d2306774a
+  Args:
+    source: Louis Mountbatten, 1st Earl Mountbatten of Burma
+    type: :Ancestor
+  AssignClass (0d51cb48-5724-4dc3-b717-36cda583dbff)
+ Call ID: 0d51cb48-5724-4dc3-b717-36cda583dbff
+  Args:
+    source: Louis Mountbatten, 1st Earl Mountbatten of Burma
+    type: :Person
+  AssignClass (870beb2f-88bd-4d48-99c6-d407e4b29a2f)
+ Call ID: 870beb2f-88bd-4d48-99c6-d407e4b29a2f
+  Args:
+    source: The Honourable Edwina Ashley
+    type: :Woman
+  AssignClass (cb58e7e8-1272-4226-a276-178324697982)
+ Call ID: cb58e7e8-1272-4226-a276-178324697982
+  Args:
+    source: The Honourable Edwina Ashley
+    type: :Ancestor
+  AssignClass (8f8e7e22-e432-4d7d-9530-d5d21f26031b)
+ Call ID: 8f8e7e22-e432-4d7d-9530-d5d21f26031b
+  Args:
+    source: The Honourable Edwina Ashley
+    type: :Person
+  AddTriple (e410cdea-7120-4354-b19d-f3aebd4de2c5)
+ Call ID: e410cdea-7120-4354-b19d-f3aebd4de2c5
+  Args:
+    relation: :hasFather
+    target: Louis Mountbatten, 1st Earl Mountbatten of Burma
+    source: Lady Pamela Mountbatten
+  AddTriple (3ebf967d-967e-49a6-b633-f39d725028a4)
+ Call ID: 3ebf967d-967e-49a6-b633-f39d725028a4
+  Args:
+    relation: :hasMother
+    target: The Honourable Edwina Ashley
+    source: Lady Pamela Mountbatten
+  AssignClass (e9f084b3-9adf-47ce-a719-83dfcd733dc8)
+ Call ID: e9f084b3-9adf-47ce-a719-83dfcd733dc8
+  Args:
+    source: Prince Louis of Battenberg
+    type: :Man
+  AssignClass (2c92fd8d-f2b1-4de0-8edf-376b05e71350)
+ Call ID: 2c92fd8d-f2b1-4de0-8edf-376b05e71350
+  Args:
+    source: Prince Louis of Battenberg
+    type: :Ancestor
+  AssignClass (dcf7f838-2cec-4d19-8d10-65b99627964b)
+ Call ID: dcf7f838-2cec-4d19-8d10-65b99627964b
+  Args:
+    source: Prince Louis of Battenberg
+    type: :Person
+  AssignClass (9f4be141-2331-4ae5-9e8a-b21ba3163a8e)
+ Call ID: 9f4be141-2331-4ae5-9e8a-b21ba3163a8e
+  Args:
+    source: Princess Victoria of Hesse and by Rhine
+    type: :Woman
+  AssignClass (7ecc7b12-5aae-4995-82ee-44bd69ebc70e)
+ Call ID: 7ecc7b12-5aae-4995-82ee-44bd69ebc70e
+  Args:
+    source: Princess Victoria of Hesse and by Rhine
+    type: :Ancestor
+  AssignClass (4ac8875f-58fc-4336-9a09-f13e8c63c968)
+ Call ID: 4ac8875f-58fc-4336-9a09-f13e8c63c968
+  Args:
+    source: Princess Victoria of Hesse and by Rhine
+    type: :Person
+  AssignClass (37d2156f-54cd-41d0-a229-ffa111b537fa)
+ Call ID: 37d2156f-54cd-41d0-a229-ffa111b537fa
+  Args:
+    source: Queen Victoria
+    type: :Woman
+  AssignClass (875743e0-3bce-4971-ae2e-ae291a2398ae)
+ Call ID: 875743e0-3bce-4971-ae2e-ae291a2398ae
+  Args:
+    source: Queen Victoria
+    type: :Ancestor
+  AssignClass (5a9619e8-70cd-49a9-9570-e34eafb4060d)
+ Call ID: 5a9619e8-70cd-49a9-9570-e34eafb4060d
+  Args:
+    source: Queen Victoria
+    type: :Person
+  AddTriple (3acbf221-01cb-4848-b99d-ae0d224267b2)
+ Call ID: 3acbf221-01cb-4848-b99d-ae0d224267b2
+  Args:
+    target: Prince Louis of Battenberg
+    source: Louis Mountbatten, 1st Earl Mountbatten of Burma
+    relation: :hasFather
+  AddTriple (6d51dcce-c7d6-475f-bb14-f9a6defc93e6)
+ Call ID: 6d51dcce-c7d6-475f-bb14-f9a6defc93e6
+  Args:
+    target: Princess Victoria of Hesse and by Rhine
+    source: Louis Mountbatten, 1st Earl Mountbatten of Burma
+    relation: :hasMother
+  AddTriple (be92f101-f2f5-4172-9858-08f365edb026)
+ Call ID: be92f101-f2f5-4172-9858-08f365edb026
+  Args:
+    source: Princess Victoria of Hesse and by Rhine
+    target: Queen Victoria
+    relation: :hasMother
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Angelica_Margherita_Edwina_Hicks a :Person,
+          :Woman ;
+      :hasBirthYear 1992 ;
+      :hasFather data:Ashley_Louis_David_Hicks ;
+      :hasMother data:Marina_Allegra_Federica_Silvia_Tondato .
+
+  data:Ashley_Louis_David_Hicks a :Man,
+          :Person ;
+      :hasFather data:David_Nightingale_Hicks ;
+      :hasMother data:Lady_Pamela_Mountbatten .
+
+  data:David_Nightingale_Hicks a :Man,
+          :Person .
+
+  data:Lady_Pamela_Mountbatten a :Person,
+          :Woman ;
+      :hasFather data:Louis_Mountbatten%2C_1st_Earl_Mountbatten_of_Burma ;
+      :hasMother data:The_Honourable_Edwina_Ashley .
+
+  data:Louis_Mountbatten%2C_1st_Earl_Mountbatten_of_Burma a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Prince_Louis_of_Battenberg ;
+      :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine .
+
+  data:Marina_Allegra_Federica_Silvia_Tondato a :Person,
+          :Woman .
+
+  data:Prince_Louis_of_Battenberg a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasMother data:Queen_Victoria .
+
+  data:Queen_Victoria a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:The_Honourable_Edwina_Ashley a :Ancestor,
+          :Person,
+          :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (327a4a96-5702-4cc9-a8a7-f7d49a4d0c72)
+ Call ID: 327a4a96-5702-4cc9-a8a7-f7d49a4d0c72
   Args:

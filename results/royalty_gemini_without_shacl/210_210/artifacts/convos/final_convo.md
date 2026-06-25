@@ -69,35 +69,17 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lieutenant David Michael Mountbatten, 3rd Marquess of Milford Haven, OBE, DSC (12 May 1919 – 14 April 1970), styled Viscount Alderney before 1921 and Earl of Medina between 1921 and 1938, was the son of George Mountbatten, 2nd Marquess of Milford Haven and Countess Nadejda Mikhailovna of Torby.
-Early years and education
-
-David Michael Mountbatten was born on 12 May 1919.
-He was the only son of George Mountbatten, 2nd Marquess of Milford Haven (who had been born as Prince George of Battenberg), and Russian Countess Nadejda (Nada) Torby, who were married in 1916.
-His paternal grandparents were Prince Louis of Battenberg and Princess Victoria of Hesse and by Rhine.
-Therefore, he was a great-great-grandson of Queen Victoria.
-He grew up at the family home in Holyport, Berkshire, and enjoyed a close friendship with his first cousin Prince Philip of Greece and Denmark, later the Duke of Edinburgh.
-He served as best man to the prince at his marriage in November 1947 to the Princess Elizabeth, later Queen Elizabeth II.
-Upon the death of his father on 8 April 1938, he became the 3rd Marquess of Milford Haven and head of the House of Mountbatten.
-Navy and postwar social life
-
-During the Second World War Milford Haven served in the Royal Navy.
-He then played a prominent part in the London demi-monde of the 1950s, which brought together a colourful mix of aristocrats and shadowy social climbers like osteopath Stephen Ward.
-Marriages
-
-Milford Haven was married twice:
-
-
-Death
-
-Milford Haven died of a heart attack, aged 50, on 14 April 1970 in London.
-His ashes were buried in the Battenberg Chapel at St. Mildred's Church, Whippingham, on the Isle of Wight (photo).
+Prince François of Orléans, Count of Clermont (François Henri Louis Marie; 7 February 1961 – 30 December 2017) was the eldest son and heir apparent of the Orléanist pretender to the French throne, Prince Henri, Count of Paris, Duke of France and Duchess Marie-Thérèse of Württemberg.
+However, his mother had been infected with toxoplasmosis during her second and third pregnancies, and the pre-natal exposure left both Prince François and his younger sister, Princess Blanche, developmentally disabled.
+When he was 13, his parents separated and François spent weekdays in a facility at Beaumont-sur-Oise and, from the early 1980s, in a L'Arche community, rejoining his mother and siblings at the Orléans estate in Dreux on weekends, while sometimes vacationing with his paternal grandmother at the Chateau d'Eu, where she taught him to walk when he was 4 or 5.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -113,39 +95,9 @@ His ashes were buried in the Battenberg Chapel at St. Mildred's Church, Whipping
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -160,6 +112,23 @@ His ashes were buried in the Battenberg Chapel at St. Mildred's Church, Whipping
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -177,6 +146,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -244,29 +228,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -275,6 +251,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -287,6 +271,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -295,17 +281,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -333,6 +321,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -348,69 +420,90 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (3d4e7660-17e8-4fbc-83e8-7080d75fabad)
- Call ID: 3d4e7660-17e8-4fbc-83e8-7080d75fabad
+  AssignClass (59169dde-a198-4232-88b4-9e19d62965b5)
+ Call ID: 59169dde-a198-4232-88b4-9e19d62965b5
   Args:
+    source: :Prince_Francois_of_Orleans
+    type: :Person
+  AssignClass (742fc9da-b295-4cec-9f7f-f343ccf66e35)
+ Call ID: 742fc9da-b295-4cec-9f7f-f343ccf66e35
+  Args:
+    source: :Prince_Francois_of_Orleans
     type: :Man
-    source: David_Michael_Mountbatten
-  AssignClass (2084173c-0184-4de2-bf4a-8f09e0b43319)
- Call ID: 2084173c-0184-4de2-bf4a-8f09e0b43319
+  AddLiteral (3505e784-5f71-4550-9e00-584c909517fe)
+ Call ID: 3505e784-5f71-4550-9e00-584c909517fe
   Args:
-    type: :Man
-    source: George_Mountbatten
-  AssignClass (083f552e-6cca-4961-8b3e-f729287f0871)
- Call ID: 083f552e-6cca-4961-8b3e-f729287f0871
-  Args:
-    type: :Woman
-    source: Nadejda_Mikhailovna_of_Torby
-  AssignClass (5d861bda-f22a-4917-8cc6-c8904da54f63)
- Call ID: 5d861bda-f22a-4917-8cc6-c8904da54f63
-  Args:
-    type: :Man
-    source: Louis_of_Battenberg
-  AssignClass (9f51aea5-82f4-443b-80c0-d8f6dd18f991)
- Call ID: 9f51aea5-82f4-443b-80c0-d8f6dd18f991
-  Args:
-    type: :Woman
-    source: Victoria_of_Hesse_and_by_Rhine
-  AddLiteral (41175e6f-785b-4cff-a21e-ced1e3edf438)
- Call ID: 41175e6f-785b-4cff-a21e-ced1e3edf438
-  Args:
+    literal_value: 1961
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1919
-    source: David_Michael_Mountbatten
-  AddLiteral (d5144c53-a5c0-47c4-b471-0affbe4d8aee)
- Call ID: d5144c53-a5c0-47c4-b471-0affbe4d8aee
+    source: :Prince_Francois_of_Orleans
+  AddLiteral (306e035a-0a14-4eba-83d3-b0bdd0815184)
+ Call ID: 306e035a-0a14-4eba-83d3-b0bdd0815184
   Args:
-    literal_value: 1970
     literal_type: xsd:integer
-    source: David_Michael_Mountbatten
+    source: :Prince_Francois_of_Orleans
     relation: :hasDeathYear
-  AddTriple (b8d6fa99-185f-4496-a7b3-65b3ad5dbb33)
- Call ID: b8d6fa99-185f-4496-a7b3-65b3ad5dbb33
+    literal_value: 2017
+  AssignClass (45e0f29b-92f9-4a3b-9b9c-91e38826af28)
+ Call ID: 45e0f29b-92f9-4a3b-9b9c-91e38826af28
   Args:
-    source: David_Michael_Mountbatten
+    source: :Prince_Henri
+    type: :Person
+  AssignClass (afe4381c-9112-47d9-ad27-37fc8030b635)
+ Call ID: afe4381c-9112-47d9-ad27-37fc8030b635
+  Args:
+    source: :Prince_Henri
+    type: :Man
+  AssignClass (d6a370f5-c577-4c58-b405-2f2fb7ca029d)
+ Call ID: d6a370f5-c577-4c58-b405-2f2fb7ca029d
+  Args:
+    source: :Duchess_Marie-Therese_of_Wurttemberg
+    type: :Person
+  AssignClass (ad1d41df-29f6-4cd3-8ec6-03496f5b12c2)
+ Call ID: ad1d41df-29f6-4cd3-8ec6-03496f5b12c2
+  Args:
+    source: :Duchess_Marie-Therese_of_Wurttemberg
+    type: :Woman
+  AddTriple (b8df08f8-9259-42d8-a641-d5601e6275be)
+ Call ID: b8df08f8-9259-42d8-a641-d5601e6275be
+  Args:
+    source: :Prince_Francois_of_Orleans
     relation: :hasFather
-    target: George_Mountbatten
-  AddTriple (18d8de32-5680-4fea-913c-646707387234)
- Call ID: 18d8de32-5680-4fea-913c-646707387234
+    target: :Prince_Henri
+  AddTriple (35135862-cf2b-492f-97ae-ac20c3a4306a)
+ Call ID: 35135862-cf2b-492f-97ae-ac20c3a4306a
   Args:
-    source: David_Michael_Mountbatten
+    target: :Duchess_Marie-Therese_of_Wurttemberg
     relation: :hasMother
-    target: Nadejda_Mikhailovna_of_Torby
-  AddTriple (c6382c90-b24c-4ae2-82b4-161cfc6cd240)
- Call ID: c6382c90-b24c-4ae2-82b4-161cfc6cd240
+    source: :Prince_Francois_of_Orleans
+  AssignClass (41e37bb6-a03a-46f6-a959-fa1f5f56a009)
+ Call ID: 41e37bb6-a03a-46f6-a959-fa1f5f56a009
   Args:
-    target: Louis_of_Battenberg
+    source: :Princess_Blanche
+    type: :Person
+  AssignClass (64350794-b329-4d56-b42f-3ff9ae47ad5c)
+ Call ID: 64350794-b329-4d56-b42f-3ff9ae47ad5c
+  Args:
+    source: :Princess_Blanche
+    type: :Woman
+  AddTriple (8102c245-337e-4226-99e8-5b88d39aebe8)
+ Call ID: 8102c245-337e-4226-99e8-5b88d39aebe8
+  Args:
+    target: :Prince_Henri
+    source: :Princess_Blanche
     relation: :hasFather
-    source: George_Mountbatten
-  AddTriple (f90d0075-32f5-431e-adb7-7ad4c2344e56)
- Call ID: f90d0075-32f5-431e-adb7-7ad4c2344e56
+  AddTriple (05067bc7-ef39-4bf9-9324-3d179b6a7719)
+ Call ID: 05067bc7-ef39-4bf9-9324-3d179b6a7719
   Args:
-    source: George_Mountbatten
-    target: Victoria_of_Hesse_and_by_Rhine
+    target: :Duchess_Marie-Therese_of_Wurttemberg
     relation: :hasMother
-  Finish (de5fe480-a501-4e35-84a1-fdbe8d39ab31)
- Call ID: de5fe480-a501-4e35-84a1-fdbe8d39ab31
+    source: :Princess_Blanche
+  AddTriple (93c8798c-ee06-47e3-9a5a-05d74b1c4996)
+ Call ID: 93c8798c-ee06-47e3-9a5a-05d74b1c4996
+  Args:
+    target: :Princess_Blanche
+    source: :Prince_Francois_of_Orleans
+    relation: :isSiblingOf
+  Finish (ba10df68-b263-44dd-89c8-5f27a6fd2b8e)
+ Call ID: ba10df68-b263-44dd-89c8-5f27a6fd2b8e
   Args:

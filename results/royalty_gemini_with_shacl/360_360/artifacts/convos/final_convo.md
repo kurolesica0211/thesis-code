@@ -85,24 +85,84 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Don Alessandro Torlonia, 5th Prince of Civitella-Cesi (7 December 1911 – 1 May/12 May 1986) was an Italian banking heir and a member of the House of Torlonia.
-About
+Prince Joachim Franz Humbert of Prussia (17 December 1890 – 18 July 1920) was the youngest son and sixth child of Wilhelm II, German Emperor, by his first wife, Augusta Victoria of Schleswig-Holstein.
+Prince Joachim was educated as an officer and participated in the First World War.
+Early life
 
-Born in Rome on 7 December 1911, Torlonia was the son of Marino Torlonia, 4th Prince di Civitella-Cesi and his American wife, Mary Elsie Moore.
-Don Alessandro's youngest sister was Donna Marina Torlonia di Civitella-Cesi, grandmother of the American actress Brooke Shields.
-In 1941, when his mother was dying in New York City, Torlonia took a high speed boat from Portugal and was arrested in error by FBI, thinking he was an enemy of the state and taken to Ellis Island.
-Not to be confused with his cousin with the same name, Alessandro Torlonia (1925–2017), Prince of Fucino and Prince assistant to the papal throne, head of another branch of the family.
-In the 1980s, this cousin Torlonia held the title as the "richest man in Rome", as he was the heir to a banking fortune and owner of the famous Torlonia Collection of ancient art.
-He died in the Palazzo Nuñez-Torlonia, Rome, in 1986.
-Marriage and children
+Birth and family
 
-On 14 January 1935, Don Alessandro morganatically married in Rome the Infanta Beatriz of Spain (1909–2002), a daughter of King Alfonso XIII of Spain and of Princess Victoria Eugenie of Battenberg.
+Prince Joachim was born on 17 December 1890, two years after his father had become the German Emperor, at the Berlin Palace in central Berlin.
+He was the sixth and youngest son of Emperor Wilhelm II, and his first wife, Princess Augusta Victoria of Schleswig-Holstein.
+Education
+
+Prince Joachim spent his childhood with his siblings at the New Palace in Potsdam, and his school days at the Prinzenhaus in Plön, in his mother's ancestral Schleswig-Holstein, as his brothers had been before him.
+Marriage
+
+On 11 March 1916 in Berlin, Joachim married Princess Marie-Auguste of Anhalt (10 June 1898 – 22 May 1983), the daughter of Eduard, Duke of Anhalt and his wife Princess Luise of Saxe-Altenburg (daughter of Prince Moritz of Saxe-Altenburg).
+He and Marie-Auguste had been engaged since 14 October of the previous year.
+The wedding was celebrated at Bellevue Palace, and was attended by Joachim's father and mother, the Duke and Duchess of Anhalt, as well as other relatives.
+The couple had one son, Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul (15 December 1916 in Potsdam – 22 January 1975 in Arica, Chile).
+Their grandson, Prince Franz Wilhelm, married Maria Vladimirovna of Russia, a claimant to the Imperial Russian throne.
+Candidate for thrones
+
+Ireland
+
+During the Easter Rising in Dublin in 1916, some republican leaders, including Patrick Pearse and Joseph Plunkett, contemplated giving the throne of an independent Ireland to Prince Joachim.
+Pearse and Plunkett thought that if the rising were successful and Germany won the First World War, an independent Ireland would be a monarchy with a German prince as king, like Romania and Bulgaria before it.
+The fact that Joachim did not speak English was also considered an advantage, as he might be more disposed to learning and promoting the use of the Irish language.
+He would naturally turn to those who were more Irish and Gaelic, as to his friends, for the non-nationalist element in our country had shown themselves to be so bitterly anti-German.
+For the first generation or so it would be an advantage, in view of our natural weakness, to have a ruler who linked us with a dominant European power, and thereafter, when we were better prepared to stand alone, or when it might be undesirable that our ruler should turn by personal choice to one power rather than be guided by what was most natural and beneficial for our country, the ruler of that time would have become completely Irish."
+
+Ernest Blythe recalled that in January 1915 he heard Plunkett and Thomas MacDonagh express support for the idea at an Irish Volunteers meeting.
+Georgia
+
+After Georgia's declaration of independence following the Russian Revolution of 1917, Joachim was briefly considered by the German representative Count Friedrich Werner von der Schulenburg and Georgian royalists as a candidate for the Georgian throne.
+The Germans presented various proposals to incorporate Lithuania into the German Empire, particularly Prussia.
+One such proposal offered the crown of Lithuania to Joachim.
+On 4 June 1918, they voted to offer the Lithuanian throne to the German noble Wilhelm Karl, Duke of Urach.
+Divorce and death
+
+Following the German Revolution in November 1918, the Emperor was forced to abdicate, thus depriving Joachim of his titles, position and prospects for heading any newly established monarchies in Europe.
+On 31 May 1918, Joachim was examined by the psychiatrist Robert Gaupp, who submitted a report concluding that he "was incurably ill, both mentally and physically ... was extremely easily emotionally and sexually aroused", and "was inclined to 'violent, uncontrollably exploding outbursts of anger in which all self-control  lost'".
+The relationship between Joachim and his wife had already started to deteriorate.
+According to one report, Marie-Auguste had previously abandoned her husband and child to run away with another man, had been forcibly brought back home on the orders of the Kaiser, but had filed for divorce as soon as the war ended, when she saw that her husband's family were at their lowest ebb.
+According to Hans von Gontard, who served as the Kaiser's Hofmarschall in exile, Joachim was "quite out of control and had beaten his wife".
+Following the divorce, Joachim shot himself in Potsdam on 18 July 1920.
+His own brother Prince Eitel Friedrich of Prussia commented that he suffered from "a fit of excessive dementia".
+Kaiser Wilhelm's reaction to the news of his son's suicide was one of fury, commenting that he was outraged "that the oaf should have done this, too, to us and especially to his mother!"
+She desperately wanted to believe that his death had been accidental but she knew better.
+
+
+Children and grandchildren
+
+The only issue of the marriage of Prince Joachim and Princess Marie-Auguste was their son, Prince Karl Franz Josef Wilhelm Friedrich Eduard of Prussia (15 December 1916 – 22 January 1975).
+On 5 October 1940, Prince Karl married Princess Henriette Hermine Wanda Ida Luise von Schönaich-Carolath (25 November 1918 –
+They were the parents of three children:
+
+
+After the divorce, Prince Karl married, morganatically, Luise Dora Hartmann (5 September 1909 – 23 April 1961) on 9 November 1946.
+Prince Karl's last marriage was to Eva Maria Herrera y Valdeavellano (10 June 1922 – 6 March 1987) on 20 July 1959 in Lima, Peru.
+They were married until Prince Karl's death and had two daughters;
+
+
+Regimental Commissions
+
+Honours
+
+Prince Joachim received the following orders and decorations:
+Ancestry
+
+Portrayal in fiction
+
+Prince Joachim was played by American actor Jesse Plemons and portrayed as the main antagonist in the 2021 Disney fantasy adventure film Jungle Cruise.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -118,39 +178,9 @@ On 14 January 1935, Don Alessandro morganatically married in Rome the Infanta Be
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -165,6 +195,23 @@ On 14 January 1935, Don Alessandro morganatically married in Rome the Infanta Be
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -182,6 +229,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -249,29 +311,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,6 +334,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -292,6 +354,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -300,17 +364,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -338,6 +404,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -353,136 +503,212 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (00156ba8-8a26-4363-9271-017a45940c74)
- Call ID: 00156ba8-8a26-4363-9271-017a45940c74
+  AssignClass (06e431d9-6e73-4912-b623-a4f525e903c3)
+ Call ID: 06e431d9-6e73-4912-b623-a4f525e903c3
+  Args:
+    source: Prince_Joachim_of_Prussia
+    type: :Man
+  AssignClass (e9df11e4-10da-4fd2-80c1-3f7b1cc476ed)
+ Call ID: e9df11e4-10da-4fd2-80c1-3f7b1cc476ed
   Args:
     type: :Man
-    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
-  AssignClass (ff2df228-0f5c-46ef-ac0d-98aa05af2eb1)
- Call ID: ff2df228-0f5c-46ef-ac0d-98aa05af2eb1
+    source: Wilhelm_II
+  AssignClass (7dc5b5b1-637c-4985-a240-d1aa129293a4)
+ Call ID: 7dc5b5b1-637c-4985-a240-d1aa129293a4
   Args:
-    type: :Person
-    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
-  AddLiteral (b25300f5-5838-4b35-891d-1dffa61febf4)
- Call ID: b25300f5-5838-4b35-891d-1dffa61febf4
+    source: Augusta_Victoria_of_Schleswig-Holstein
+    type: :Woman
+  AssignClass (5f13e57f-05bd-4df5-be8c-22c1a8ed0f3c)
+ Call ID: 5f13e57f-05bd-4df5-be8c-22c1a8ed0f3c
   Args:
-    literal_value: 1911
+    type: :Woman
+    source: Marie-Auguste_of_Anhalt
+  AssignClass (56181da1-23e9-4bb8-9013-506d216b6917)
+ Call ID: 56181da1-23e9-4bb8-9013-506d216b6917
+  Args:
+    type: :Man
+    source: Eduard_Duke_of_Anhalt
+  AssignClass (64dd6338-077b-4341-bef0-1ad21dc45579)
+ Call ID: 64dd6338-077b-4341-bef0-1ad21dc45579
+  Args:
+    source: Luise_of_Saxe-Altenburg
+    type: :Woman
+  AssignClass (4d6b89fc-bf26-4056-81bc-84f5ee97e3bc)
+ Call ID: 4d6b89fc-bf26-4056-81bc-84f5ee97e3bc
+  Args:
+    source: Moritz_of_Saxe-Altenburg
+    type: :Man
+  AssignClass (a06803dd-239a-429f-b77f-5c60b69851a3)
+ Call ID: a06803dd-239a-429f-b77f-5c60b69851a3
+  Args:
+    type: :Man
+    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+  AddLiteral (e4d0c577-4a17-40d9-92dd-d7a886dfeff5)
+ Call ID: e4d0c577-4a17-40d9-92dd-d7a886dfeff5
+  Args:
+    relation: :hasBirthYear
+    source: Prince_Joachim_of_Prussia
+    literal_value: 1890
+    literal_type: xsd:integer
+  AddLiteral (0a4ff1a1-469d-47ac-8725-dbb91a57f552)
+ Call ID: 0a4ff1a1-469d-47ac-8725-dbb91a57f552
+  Args:
+    source: Prince_Joachim_of_Prussia
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1920
+  AddTriple (039c0957-67ca-4d31-898b-a988c07fdc9f)
+ Call ID: 039c0957-67ca-4d31-898b-a988c07fdc9f
+  Args:
+    source: Prince_Joachim_of_Prussia
+    relation: :hasFather
+    target: Wilhelm_II
+  AddTriple (2e107379-7d95-4482-bd1e-1c0b605d4c16)
+ Call ID: 2e107379-7d95-4482-bd1e-1c0b605d4c16
+  Args:
+    source: Prince_Joachim_of_Prussia
+    relation: :hasMother
+    target: Augusta_Victoria_of_Schleswig-Holstein
+  AddTriple (0f6d9c44-d058-459a-92ed-93cc7d41272d)
+ Call ID: 0f6d9c44-d058-459a-92ed-93cc7d41272d
+  Args:
+    target: Eduard_Duke_of_Anhalt
+    source: Marie-Auguste_of_Anhalt
+    relation: :hasFather
+  AddTriple (611c2b93-f2a5-4a0f-b4bb-eaf7e85a2954)
+ Call ID: 611c2b93-f2a5-4a0f-b4bb-eaf7e85a2954
+  Args:
+    target: Luise_of_Saxe-Altenburg
+    relation: :hasMother
+    source: Marie-Auguste_of_Anhalt
+  AddTriple (896bcc20-0f54-415e-86c4-396d85344a3a)
+ Call ID: 896bcc20-0f54-415e-86c4-396d85344a3a
+  Args:
+    relation: :hasFather
+    source: Luise_of_Saxe-Altenburg
+    target: Moritz_of_Saxe-Altenburg
+  AddTriple (bdc46e7e-6b2c-4283-9758-c4a34f306cc7)
+ Call ID: bdc46e7e-6b2c-4283-9758-c4a34f306cc7
+  Args:
+    target: Prince_Joachim_of_Prussia
+    relation: :hasFather
+    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+  AddTriple (587d26c5-d6b6-4b91-9747-2007c341cc59)
+ Call ID: 587d26c5-d6b6-4b91-9747-2007c341cc59
+  Args:
+    target: Marie-Auguste_of_Anhalt
+    relation: :hasMother
+    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+  AddLiteral (ddaa7b1b-8e12-4edd-a98f-faa5b72d9e3f)
+ Call ID: ddaa7b1b-8e12-4edd-a98f-faa5b72d9e3f
+  Args:
+    source: Prince_Joachim_of_Prussia
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 1916
+  AddLiteral (59e7c8e0-0e2c-4f6e-988c-3df68a1162a9)
+ Call ID: 59e7c8e0-0e2c-4f6e-988c-3df68a1162a9
+  Args:
+    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
     relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
-  AddLiteral (8aa99217-9ea2-416a-8a1d-665bd1defe66)
- Call ID: 8aa99217-9ea2-416a-8a1d-665bd1defe66
+    literal_value: 1916
+  AddLiteral (e44b5768-d6b4-44b3-854f-78b1fda48c1a)
+ Call ID: e44b5768-d6b4-44b3-854f-78b1fda48c1a
   Args:
-    literal_type: xsd:integer
-    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
     relation: :hasDeathYear
-    literal_value: 1986
-  AssignClass (743b62e8-cfc0-4f19-820c-d8998db195a8)
- Call ID: 743b62e8-cfc0-4f19-820c-d8998db195a8
-  Args:
-    type: :Man
-    source: Marino_Torlonia_4th_Prince_di_Civitella_Cesi
-  AssignClass (4fc9319a-a226-4dc0-88b5-06bd85df9cc1)
- Call ID: 4fc9319a-a226-4dc0-88b5-06bd85df9cc1
-  Args:
-    type: :Person
-    source: Marino_Torlonia_4th_Prince_di_Civitella_Cesi
-  AssignClass (5f0d034a-2f43-4fa9-9ab5-13c4913cd640)
- Call ID: 5f0d034a-2f43-4fa9-9ab5-13c4913cd640
-  Args:
-    type: :Woman
-    source: Mary_Elsie_Moore
-  AssignClass (8fdec176-36a7-431a-8fe5-661b6f694c96)
- Call ID: 8fdec176-36a7-431a-8fe5-661b6f694c96
-  Args:
-    type: :Person
-    source: Mary_Elsie_Moore
-  AddTriple (1db8f8e5-1258-47e3-af67-cc24e3cf185c)
- Call ID: 1db8f8e5-1258-47e3-af67-cc24e3cf185c
-  Args:
-    relation: :hasFather
-    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
-    target: Marino_Torlonia_4th_Prince_di_Civitella_Cesi
-  AddTriple (3608a0f7-1e02-4f49-bd7c-93f1aebeae72)
- Call ID: 3608a0f7-1e02-4f49-bd7c-93f1aebeae72
-  Args:
-    target: Mary_Elsie_Moore
-    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
-    relation: :hasMother
-  AssignClass (2dc5fb67-3d5b-4c5b-a7e4-1643e5778819)
- Call ID: 2dc5fb67-3d5b-4c5b-a7e4-1643e5778819
-  Args:
-    type: :Woman
-    source: Marina_Torlonia_di_Civitella_Cesi
-  AssignClass (6d724a70-4397-4678-99d6-a378b1881e2c)
- Call ID: 6d724a70-4397-4678-99d6-a378b1881e2c
-  Args:
-    source: Marina_Torlonia_di_Civitella_Cesi
-    type: :Person
-  AddTriple (04d93a1e-2ee0-49d2-b17c-bee1c1802d85)
- Call ID: 04d93a1e-2ee0-49d2-b17c-bee1c1802d85
-  Args:
-    target: Marina_Torlonia_di_Civitella_Cesi
-    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
-    relation: :hasSister
-  AssignClass (25298d52-7f11-49a0-bf95-7784c61855f6)
- Call ID: 25298d52-7f11-49a0-bf95-7784c61855f6
-  Args:
-    source: Infanta_Beatriz_of_Spain
-    type: :Woman
-  AssignClass (0a09ecb1-d224-4b6c-a69b-dd099a4da596)
- Call ID: 0a09ecb1-d224-4b6c-a69b-dd099a4da596
-  Args:
-    source: Infanta_Beatriz_of_Spain
-    type: :Person
-  AddLiteral (3f53525b-b19e-4b44-83ff-dfd336215c21)
- Call ID: 3f53525b-b19e-4b44-83ff-dfd336215c21
-  Args:
-    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
+    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+    literal_value: 1975
     literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1935
-  AddTriple (f8df262c-42de-4df0-b6b6-d379d7603d05)
- Call ID: f8df262c-42de-4df0-b6b6-d379d7603d05
+  AddLiteral (8d2d91f3-5f9c-449b-b572-547481254deb)
+ Call ID: 8d2d91f3-5f9c-449b-b572-547481254deb
   Args:
-    relation: :hasRelation
-    source: Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi
-    target: Infanta_Beatriz_of_Spain
-  AssignClass (b85732f9-1c6c-48f6-bff6-e2475a208733)
- Call ID: b85732f9-1c6c-48f6-bff6-e2475a208733
+    literal_value: 1898
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: Marie-Auguste_of_Anhalt
+  AddLiteral (cb5fb5b2-c512-40d4-83bd-b649ee1570a0)
+ Call ID: cb5fb5b2-c512-40d4-83bd-b649ee1570a0
   Args:
-    source: Alfonso_XIII_of_Spain
+    literal_value: 1983
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Marie-Auguste_of_Anhalt
+  AssignClass (3d60dbb2-8cf6-4e2e-b8e8-010a2db2ff1c)
+ Call ID: 3d60dbb2-8cf6-4e2e-b8e8-010a2db2ff1c
+  Args:
     type: :Man
-  AssignClass (34abb877-9531-490b-912a-4a9cbb1052da)
- Call ID: 34abb877-9531-490b-912a-4a9cbb1052da
+    source: Eitel_Friedrich_of_Prussia
+  AddTriple (17af7060-13c3-46f8-8b6a-26f462f173d9)
+ Call ID: 17af7060-13c3-46f8-8b6a-26f462f173d9
   Args:
-    type: :Person
-    source: Alfonso_XIII_of_Spain
-  AssignClass (9530fea0-68c1-402a-9752-a94bae06d0ed)
- Call ID: 9530fea0-68c1-402a-9752-a94bae06d0ed
+    target: Eitel_Friedrich_of_Prussia
+    source: Prince_Joachim_of_Prussia
+    relation: :hasBrother
+  AssignClass (65929fd3-ce9b-4609-af49-6de5a8a2e41d)
+ Call ID: 65929fd3-ce9b-4609-af49-6de5a8a2e41d
   Args:
-    source: Victoria_Eugenie_of_Battenberg
+    source: Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath
     type: :Woman
-  AssignClass (b5bb0269-915c-4bfd-93ac-8fe90f88e010)
- Call ID: b5bb0269-915c-4bfd-93ac-8fe90f88e010
+  AddTriple (ea4fd263-61e0-41ef-8da6-0b79fed74bd7)
+ Call ID: ea4fd263-61e0-41ef-8da6-0b79fed74bd7
   Args:
-    type: :Person
-    source: Victoria_Eugenie_of_Battenberg
-  AddTriple (82ac823c-feb2-4542-9afb-dd80cbb654bf)
- Call ID: 82ac823c-feb2-4542-9afb-dd80cbb654bf
-  Args:
+    target: Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath
+    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
     relation: :hasFather
-    target: Alfonso_XIII_of_Spain
-    source: Infanta_Beatriz_of_Spain
-  AddTriple (ae1e90a2-77b9-4524-a6d4-df230027c828)
- Call ID: ae1e90a2-77b9-4524-a6d4-df230027c828
+  AssignClass (a4ed8a92-c25a-4049-bbca-d6235a810835)
+ Call ID: a4ed8a92-c25a-4049-bbca-d6235a810835
   Args:
-    source: Infanta_Beatriz_of_Spain
-    target: Victoria_Eugenie_of_Battenberg
-    relation: :hasMother
-  Finish (1755ef94-f99e-47ad-8382-1e1749372181)
- Call ID: 1755ef94-f99e-47ad-8382-1e1749372181
+    type: :Woman
+    source: Luise_Dora_Hartmann
+  AddTriple (e456fa1f-9ef4-4c04-a64a-4246566a3501)
+ Call ID: e456fa1f-9ef4-4c04-a64a-4246566a3501
   Args:
+    target: Luise_Dora_Hartmann
+    relation: :hasFather
+    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+  AssignClass (b1b1735d-1862-4c8c-adad-9a8c063bf943)
+ Call ID: b1b1735d-1862-4c8c-adad-9a8c063bf943
+  Args:
+    source: Eva_Maria_Herrera_y_Valdeavellano
+    type: :Woman
+  AddTriple (cf4e20b9-9a59-45fb-91a6-cb075ed68193)
+ Call ID: cf4e20b9-9a59-45fb-91a6-cb075ed68193
+  Args:
+    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+    relation: :hasFather
+    target: Eva_Maria_Herrera_y_Valdeavellano
+  Finish (e941d953-d507-48bd-abe0-e1a6516ebb03)
+ Call ID: e941d953-d507-48bd-abe0-e1a6516ebb03
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -579,35 +805,47 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi a :Man,
-          :Person ;
-      :hasBirthYear 1911 ;
-      :hasDeathYear 1986 ;
-      :hasFather data:Marino_Torlonia_4th_Prince_di_Civitella_Cesi ;
-      :hasMarriageYear 1935 ;
-      :hasMother data:Mary_Elsie_Moore ;
-      :hasRelation data:Infanta_Beatriz_of_Spain ;
-      :hasSister data:Marina_Torlonia_di_Civitella_Cesi .
+  data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia a :Man ;
+      :hasBirthYear 1916 ;
+      :hasDeathYear 1975 ;
+      :hasFather data:Eva_Maria_Herrera_y_Valdeavellano,
+          data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich-Carolath,
+          data:Luise_Dora_Hartmann,
+          data:Prince_Joachim_of_Prussia ;
+      :hasMother data:Marie-Auguste_of_Anhalt .
 
-  data:Alfonso_XIII_of_Spain a :Man,
-          :Person .
+  data:Augusta_Victoria_of_Schleswig-Holstein a :Woman .
 
-  data:Infanta_Beatriz_of_Spain a :Person,
-          :Woman ;
-      :hasFather data:Alfonso_XIII_of_Spain ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
+  data:Eduard_Duke_of_Anhalt a :Man .
 
-  data:Marina_Torlonia_di_Civitella_Cesi a :Person,
-          :Woman .
+  data:Eitel_Friedrich_of_Prussia a :Man .
 
-  data:Marino_Torlonia_4th_Prince_di_Civitella_Cesi a :Man,
-          :Person .
+  data:Eva_Maria_Herrera_y_Valdeavellano a :Woman .
 
-  data:Mary_Elsie_Moore a :Person,
-          :Woman .
+  data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich-Carolath a :Woman .
 
-  data:Victoria_Eugenie_of_Battenberg a :Person,
-          :Woman .
+  data:Luise_Dora_Hartmann a :Woman .
+
+  data:Luise_of_Saxe-Altenburg a :Woman ;
+      :hasFather data:Moritz_of_Saxe-Altenburg .
+
+  data:Marie-Auguste_of_Anhalt a :Woman ;
+      :hasBirthYear 1898 ;
+      :hasDeathYear 1983 ;
+      :hasFather data:Eduard_Duke_of_Anhalt ;
+      :hasMother data:Luise_of_Saxe-Altenburg .
+
+  data:Moritz_of_Saxe-Altenburg a :Man .
+
+  data:Prince_Joachim_of_Prussia a :Man ;
+      :hasBirthYear 1890 ;
+      :hasBrother data:Eitel_Friedrich_of_Prussia ;
+      :hasDeathYear 1920 ;
+      :hasFather data:Wilhelm_II ;
+      :hasMarriageYear 1916 ;
+      :hasMother data:Augusta_Victoria_of_Schleswig-Holstein .
+
+  data:Wilhelm_II a :Man .
 
 
 
@@ -619,110 +857,350 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (5fbce662-d9de-417c-aead-b13e6f27822b)
- Call ID: 5fbce662-d9de-417c-aead-b13e6f27822b
+  ValidateShacl (5ba04736-1c64-42b4-8622-68da8ec2e1b6)
+ Call ID: 5ba04736-1c64-42b4-8622-68da8ec2e1b6
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:42
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Marino_Torlonia_4th_Prince_di_Civitella_Cesi is missing the mandatory class :Ancestor required for the :hasFather relation of Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi.
+      The node Wilhelm_II is used as a father but is not assigned the class :Ancestor, which is required by the :hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Marino_Torlonia_4th_Prince_di_Civitella_Cesi, :Ancestor)
+      AssignClass(Wilhelm_II, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Mary_Elsie_Moore is missing the mandatory class :Ancestor required for the :hasMother relation of Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi.
+      The node Eva_Maria_Herrera_y_Valdeavellano is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mary_Elsie_Moore, :Ancestor)
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Eva_Maria_Herrera_y_Valdeavellano)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Alfonso_XIII_of_Spain is missing the mandatory class :Ancestor required for the :hasFather relation of Infanta_Beatriz_of_Spain.
+      The node Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII_of_Spain, :Ancestor)
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Marino_Torlonia_4th_Prince_di_Civitella_Cesi is missing the mandatory class :Ancestor required for the :hasFather relation of Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi.
+      The node Luise_Dora_Hartmann is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Marino_Torlonia_4th_Prince_di_Civitella_Cesi, :Ancestor)
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Luise_Dora_Hartmann)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Victoria_Eugenie_of_Battenberg is missing the mandatory class :Ancestor required for the :hasMother relation of Infanta_Beatriz_of_Spain.
+      The node Prince_Joachim_of_Prussia is used as a father but is not assigned the class :Ancestor, which is required by the :hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
+      AssignClass(Prince_Joachim_of_Prussia, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Mary_Elsie_Moore is missing the mandatory class :Ancestor required for the :hasMother relation of Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi.
+      The node Eva_Maria_Herrera_y_Valdeavellano is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mary_Elsie_Moore, :Ancestor)
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Eva_Maria_Herrera_y_Valdeavellano)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Alfonso_XIII_of_Spain is missing the mandatory class :Ancestor required for the :hasFather relation of Infanta_Beatriz_of_Spain.
+      The node Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII_of_Spain, :Ancestor)
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Marino_Torlonia_4th_Prince_di_Civitella_Cesi is missing the mandatory class :Ancestor required for the :hasFather relation of Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi.
+      The node Luise_Dora_Hartmann is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Marino_Torlonia_4th_Prince_di_Civitella_Cesi, :Ancestor)
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Luise_Dora_Hartmann)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: More than 1 values on data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia->:hasFather
     LLM-provided explanation of the violation:
-      The value Victoria_Eugenie_of_Battenberg is missing the mandatory class :Ancestor required for the :hasMother relation of Infanta_Beatriz_of_Spain.
+      The node Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia has more than one father defined, which violates the functional property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
+      Remove all extra :hasFather triples for Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia except for the correct one.
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Mary_Elsie_Moore is missing the mandatory class :Ancestor required for the :hasMother relation of Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi.
+      The node Augusta_Victoria_of_Schleswig-Holstein is used as a mother but is not assigned the class :Ancestor, which is required by the :hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Mary_Elsie_Moore, :Ancestor)
+      AssignClass(Augusta_Victoria_of_Schleswig-Holstein, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Alfonso_XIII_of_Spain is missing the mandatory class :Ancestor required for the :hasFather relation of Infanta_Beatriz_of_Spain.
+      The node Marie-Auguste_of_Anhalt is used as a mother but is not assigned the class :Ancestor, which is required by the :hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII_of_Spain, :Ancestor)
+      AssignClass(Marie-Auguste_of_Anhalt, :Ancestor)
 
 
   Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Eduard_Duke_of_Anhalt is used as a father but is not assigned the class :Ancestor, which is required by the :hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Eduard_Duke_of_Anhalt, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Moritz_of_Saxe-Altenburg is used as a father but is not assigned the class :Ancestor, which is required by the :hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Moritz_of_Saxe-Altenburg, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Wilhelm_II is used as a father but is not assigned the class :Ancestor, which is required by the :hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Wilhelm_II, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Eva_Maria_Herrera_y_Valdeavellano is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Eva_Maria_Herrera_y_Valdeavellano)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Luise_Dora_Hartmann is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Luise_Dora_Hartmann)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Joachim_of_Prussia is used as a father but is not assigned the class :Ancestor, which is required by the :hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Joachim_of_Prussia, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Eva_Maria_Herrera_y_Valdeavellano is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Eva_Maria_Herrera_y_Valdeavellano)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Luise_Dora_Hartmann is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Luise_Dora_Hartmann)
+
+
+  Violation [22]:
+    SHACL message: More than 1 values on data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia->:hasFather
+    LLM-provided explanation of the violation:
+      The node Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia has more than one father defined, which violates the functional property constraint.
+    LLM-provided instruction on how to handle the violation:
+      Remove all extra :hasFather triples for Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia except for the correct one.
+
+
+  Violation [23]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Victoria_Eugenie_of_Battenberg is missing the mandatory class :Ancestor required for the :hasMother relation of Infanta_Beatriz_of_Spain.
+      The node Luise_of_Saxe-Altenburg is used as a mother but is not assigned the class :Ancestor, which is required by the :hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
+      AssignClass(Luise_of_Saxe-Altenburg, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Augusta_Victoria_of_Schleswig-Holstein is used as a mother but is not assigned the class :Ancestor, which is required by the :hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Augusta_Victoria_of_Schleswig-Holstein, :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Marie-Auguste_of_Anhalt is used as a mother but is not assigned the class :Ancestor, which is required by the :hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Marie-Auguste_of_Anhalt, :Ancestor)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Eduard_Duke_of_Anhalt is used as a father but is not assigned the class :Ancestor, which is required by the :hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Eduard_Duke_of_Anhalt, :Ancestor)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Moritz_of_Saxe-Altenburg is used as a father but is not assigned the class :Ancestor, which is required by the :hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Moritz_of_Saxe-Altenburg, :Ancestor)
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Wilhelm_II is used as a father but is not assigned the class :Ancestor, which is required by the :hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Wilhelm_II, :Ancestor)
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Eva_Maria_Herrera_y_Valdeavellano is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Eva_Maria_Herrera_y_Valdeavellano)
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath)
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Luise_Dora_Hartmann is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Luise_Dora_Hartmann)
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Joachim_of_Prussia is used as a father but is not assigned the class :Ancestor, which is required by the :hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Joachim_of_Prussia, :Ancestor)
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Eva_Maria_Herrera_y_Valdeavellano is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Eva_Maria_Herrera_y_Valdeavellano)
+
+
+  Violation [34]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath)
+
+
+  Violation [35]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Luise_Dora_Hartmann is incorrectly linked as a father. Only instances of :Man or :Ancestor are permitted.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia, :hasFather, Luise_Dora_Hartmann)
+
+
+  Violation [36]:
+    SHACL message: More than 1 values on data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia->:hasFather
+    LLM-provided explanation of the violation:
+      The node Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia has more than one father defined, which violates the functional property constraint.
+    LLM-provided instruction on how to handle the violation:
+      Remove all extra :hasFather triples for Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia except for the correct one.
+
+
+  Violation [37]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Luise_of_Saxe-Altenburg is used as a mother but is not assigned the class :Ancestor, which is required by the :hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Luise_of_Saxe-Altenburg, :Ancestor)
+
+
+  Violation [38]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Augusta_Victoria_of_Schleswig-Holstein is used as a mother but is not assigned the class :Ancestor, which is required by the :hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Augusta_Victoria_of_Schleswig-Holstein, :Ancestor)
+
+
+  Violation [39]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Marie-Auguste_of_Anhalt is used as a mother but is not assigned the class :Ancestor, which is required by the :hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Marie-Auguste_of_Anhalt, :Ancestor)
+
+
+  Violation [40]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Moritz_of_Saxe-Altenburg is used as a father but is not assigned the class :Ancestor, which is required by the :hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Moritz_of_Saxe-Altenburg, :Ancestor)
+
+
+  Violation [41]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Eduard_Duke_of_Anhalt is used as a father but is not assigned the class :Ancestor, which is required by the :hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Eduard_Duke_of_Anhalt, :Ancestor)
+
+
+  Violation [42]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Luise_of_Saxe-Altenburg is used as a mother but is not assigned the class :Ancestor, which is required by the :hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Luise_of_Saxe-Altenburg, :Ancestor)
 
 
 
@@ -731,26 +1209,86 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (a50d0014-9fa4-437e-a392-07829b5bc88e)
- Call ID: a50d0014-9fa4-437e-a392-07829b5bc88e
-  Args:
-    source: Marino_Torlonia_4th_Prince_di_Civitella_Cesi
-    type: :Ancestor
-  AssignClass (390ce5fe-5a75-4510-9978-afe8ddad35f6)
- Call ID: 390ce5fe-5a75-4510-9978-afe8ddad35f6
+  AssignClass (c5503c05-23ff-4776-b72c-6bbb8b127966)
+ Call ID: c5503c05-23ff-4776-b72c-6bbb8b127966
   Args:
     type: :Ancestor
-    source: Mary_Elsie_Moore
-  AssignClass (067c904e-6631-4a11-bed8-353f43a1743c)
- Call ID: 067c904e-6631-4a11-bed8-353f43a1743c
+    source: Wilhelm_II
+  AssignClass (ed251af0-6de2-466e-8a44-b2bc45b963ac)
+ Call ID: ed251af0-6de2-466e-8a44-b2bc45b963ac
   Args:
-    source: Alfonso_XIII_of_Spain
     type: :Ancestor
-  AssignClass (4b839c34-ee81-4ade-8322-c82ea6ef7ddf)
- Call ID: 4b839c34-ee81-4ade-8322-c82ea6ef7ddf
+    source: Prince_Joachim_of_Prussia
+  AssignClass (fd70bb12-c622-48fa-8680-11b533feb329)
+ Call ID: fd70bb12-c622-48fa-8680-11b533feb329
   Args:
-    source: Victoria_Eugenie_of_Battenberg
     type: :Ancestor
+    source: Augusta_Victoria_of_Schleswig-Holstein
+  AssignClass (8e770584-efd5-4198-9404-8fb323dbc5a1)
+ Call ID: 8e770584-efd5-4198-9404-8fb323dbc5a1
+  Args:
+    source: Marie-Auguste_of_Anhalt
+    type: :Ancestor
+  AssignClass (f7b1ef2b-6d35-4e09-a623-ae9a52828b14)
+ Call ID: f7b1ef2b-6d35-4e09-a623-ae9a52828b14
+  Args:
+    source: Eduard_Duke_of_Anhalt
+    type: :Ancestor
+  AssignClass (970d0aa7-af25-4d88-992e-60d0ed9aff37)
+ Call ID: 970d0aa7-af25-4d88-992e-60d0ed9aff37
+  Args:
+    type: :Ancestor
+    source: Moritz_of_Saxe-Altenburg
+  AssignClass (74c2555e-3614-403a-a71d-3f45b52419bc)
+ Call ID: 74c2555e-3614-403a-a71d-3f45b52419bc
+  Args:
+    source: Luise_of_Saxe-Altenburg
+    type: :Ancestor
+  RemoveTriple (c12a3946-9fce-4fa6-ac9c-24e78ad533f9)
+ Call ID: c12a3946-9fce-4fa6-ac9c-24e78ad533f9
+  Args:
+    target: Eva_Maria_Herrera_y_Valdeavellano
+    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+    relation: :hasFather
+  RemoveTriple (ed899134-ba1b-454a-ba5a-b759db8efab0)
+ Call ID: ed899134-ba1b-454a-ba5a-b759db8efab0
+  Args:
+    target: Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath
+    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+    relation: :hasFather
+  RemoveTriple (16d067d5-1835-417e-8e2a-6d6a3019fdd8)
+ Call ID: 16d067d5-1835-417e-8e2a-6d6a3019fdd8
+  Args:
+    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
+    target: Luise_Dora_Hartmann
+    relation: :hasFather
+  Finish (ea03856e-6fa1-486b-a287-d539cefee3c0)
+ Call ID: ea03856e-6fa1-486b-a287-d539cefee3c0
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -771,48 +1309,64 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alessandro_Torlonia_5th_Prince_of_Civitella_Cesi a :Man,
-          :Person ;
-      :hasBirthYear 1911 ;
-      :hasDeathYear 1986 ;
-      :hasFather data:Marino_Torlonia_4th_Prince_di_Civitella_Cesi ;
-      :hasMarriageYear 1935 ;
-      :hasMother data:Mary_Elsie_Moore ;
-      :hasRelation data:Infanta_Beatriz_of_Spain ;
-      :hasSister data:Marina_Torlonia_di_Civitella_Cesi .
+  data:Eva_Maria_Herrera_y_Valdeavellano a :Woman .
 
-  data:Alfonso_XIII_of_Spain a :Ancestor,
-          :Man,
-          :Person .
+  data:Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich-Carolath a :Woman .
 
-  data:Infanta_Beatriz_of_Spain a :Person,
+  data:Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia a :Man ;
+      :hasBirthYear 1916 ;
+      :hasDeathYear 1975 ;
+      :hasFather data:Prince_Joachim_of_Prussia ;
+      :hasMother data:Marie-Auguste_of_Anhalt .
+
+  data:Luise_Dora_Hartmann a :Woman .
+
+  data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+          :Woman .
+
+  data:Eduard_Duke_of_Anhalt a :Ancestor,
+          :Man .
+
+  data:Eitel_Friedrich_of_Prussia a :Man .
+
+  data:Luise_of_Saxe-Altenburg a :Ancestor,
           :Woman ;
-      :hasFather data:Alfonso_XIII_of_Spain ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
+      :hasFather data:Moritz_of_Saxe-Altenburg .
 
-  data:Marina_Torlonia_di_Civitella_Cesi a :Person,
-          :Woman .
+  data:Marie-Auguste_of_Anhalt a :Ancestor,
+          :Woman ;
+      :hasBirthYear 1898 ;
+      :hasDeathYear 1983 ;
+      :hasFather data:Eduard_Duke_of_Anhalt ;
+      :hasMother data:Luise_of_Saxe-Altenburg .
 
-  data:Marino_Torlonia_4th_Prince_di_Civitella_Cesi a :Ancestor,
-          :Man,
-          :Person .
+  data:Moritz_of_Saxe-Altenburg a :Ancestor,
+          :Man .
 
-  data:Mary_Elsie_Moore a :Ancestor,
-          :Person,
-          :Woman .
+  data:Prince_Joachim_of_Prussia a :Ancestor,
+          :Man ;
+      :hasBirthYear 1890 ;
+      :hasBrother data:Eitel_Friedrich_of_Prussia ;
+      :hasDeathYear 1920 ;
+      :hasFather data:Wilhelm_II ;
+      :hasMarriageYear 1916 ;
+      :hasMother data:Augusta_Victoria_of_Schleswig-Holstein .
 
-  data:Victoria_Eugenie_of_Battenberg a :Ancestor,
-          :Person,
-          :Woman .
+  data:Wilhelm_II a :Ancestor,
+          :Man .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (e8a46cbb-d2a7-425e-a503-3a86229e49b9)
- Call ID: e8a46cbb-d2a7-425e-a503-3a86229e49b9
+  ValidateShacl (5529c52b-30ab-4fd6-915c-7d2a4d110731)
+ Call ID: 5529c52b-30ab-4fd6-915c-7d2a4d110731
   Args:
 
 ================================= Tool Message =================================
@@ -823,6 +1377,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (772bf797-579c-40cb-81ac-e35b1efeb875)
- Call ID: 772bf797-579c-40cb-81ac-e35b1efeb875
+  Finish (2301ff0a-e873-4219-9b8f-fdcb295f938d)
+ Call ID: 2301ff0a-e873-4219-9b8f-fdcb295f938d
   Args:

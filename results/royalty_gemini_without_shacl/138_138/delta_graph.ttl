@@ -2,24 +2,55 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_Anne_of_Orleans a :Person,
-        :Woman ;
-    :alsoKnownAs "Anne Hélène Marie"^^xsd:string ;
-    :hasBirthYear 1906 ;
-    :hasDeathYear 1986 ;
-    :hasFather data:Prince_Jean_Duke_of_Guise ;
-    :hasMarriageYear 1927 ;
-    :hasMother data:Princess_Isabelle_of_Orleans ;
-    :hasRelation data:Prince_Amedeo_of_Savoy_Duke_of_Aosta .
-
-data:Prince_Amedeo_of_Savoy_Duke_of_Aosta a :Man,
+data:Prince_Alexander_of_Yugoslavia a :Man,
         :Person ;
-    :hasBirthYear 1898 ;
-    :hasDeathYear 1942 .
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2016 ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMarriageYear 1955,
+        1973 ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_George_Duke_of_Kent,
+        data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein,
+        data:Princess_Maria_Pia_of_Savoy .
 
-data:Prince_Jean_Duke_of_Guise a :Man,
+data:Countess_Karoline_of_Ledebur-Wicheln a :Person,
+        :Woman .
+
+data:King_Umberto_II_of_Italy a :Man,
         :Person .
 
-data:Princess_Isabelle_of_Orleans a :Person,
+data:Prince_George_Duke_of_Kent a :Man,
+        :Person .
+
+data:Prince_Johannes_of_Liechtenstein a :Man,
+        :Person .
+
+data:Prince_Michel_of_Bourbon-Parma a :Man,
+        :Person ;
+    :hasRelation data:Princess_Yolande_de_Broglie-Revel .
+
+data:Prince_Paul_of_Yugoslavia a :Man,
+        :Person .
+
+data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein a :Person,
+        :Woman ;
+    :hasFather data:Prince_Johannes_of_Liechtenstein ;
+    :hasMother data:Countess_Karoline_of_Ledebur-Wicheln .
+
+data:Princess_Maria_Pia_of_Savoy a :Person,
+        :Woman ;
+    :hasFather data:King_Umberto_II_of_Italy ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Princess_Marie_Jose_of_Belgium ;
+    :hasRelation data:Prince_Michel_of_Bourbon-Parma .
+
+data:Princess_Marie_Jose_of_Belgium a :Person,
+        :Woman .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Princess_Yolande_de_Broglie-Revel a :Person,
         :Woman .
 

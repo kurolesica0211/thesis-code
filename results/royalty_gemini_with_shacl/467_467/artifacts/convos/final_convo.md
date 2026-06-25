@@ -85,27 +85,41 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Countess Walburga Douglas (née von Habsburg-Lothringen; born 5 October 1958) is a German-born Swedish lawyer and politician, who served as a member of the Riksdag of Sweden for the Moderate Party from 2006 to 2014.
-Early life
+Regina von Habsburg (née Princess Regina Helene Elisabeth Margarete of Saxe-Meiningen; 6 January 1925 – 3 February 2010), also known by the traditional royal title of Archduchess Regina of Austria, was a German-born Austrian social worker.
+She was a member of the House of Wettin by birth and married to Otto von Habsburg, the last heir of the Austro-Hungarian Empire.
+Early years
 
-Born in 1958 in Berg am Starnberger See, West Germany, she is the fifth daughter of Otto von Habsburg, the last crown prince of Austria-Hungary, and his wife Princess Regina of Saxe-Meiningen.
-Walburga was banished from the Republic of Austria from birth and well into adult life, along with her siblings, by the Habsburg Law that had been in effect since 1938, having been (re)imposed by the Nazis.
-She is a granddaughter of the last Austrian emperor, Charles I, and a member of the House of Habsburg-Lorraine.
-Her ancestral titles (abolished in Austria since 1919) are Archduchess Walburga of Austria, Archduchess of Austria, Princess of Hungary and Bohemia, with the style of Her Imperial and Royal Highness (HI&RH).
-She does not currently use her ancestral titles actively in her daily life; however, by law she holds the title of Countess Douglas in the Kingdom of Sweden, her current country of residence and citizenship.
-On 17 September 2023, Douglas visited Armenia to dedicate the opening of the PanEuropa Armenia branch in Yerevan.
-Personal life
+Regina was born in Würzburg.
+Although the Saxe-Meiningen dynasty was Protestant, Regina was raised in the Roman Catholic faith of her mother.
+Regina studied social work at Bamberg and then worked in Munich at a Caritas home for Hungarian refugees.
+In 1949, she met Otto von Habsburg, the heir of the House of Habsburg-Lorraine and the last crown prince of the dissolved Austria-Hungary, when he came to visit his former subjects in the Caritas home.
+Regina and Otto were engaged in 1950.
+Marriage
 
-On 5 December 1992 in Budapest, Hungary, Walburga married a Swedish nobleman, Count Carl Axel Archibald Douglas (born 27 November 1949 in Stockholm), son of Count Archibald Douglas and Baroness Margareta Lagerfelt.
-Her husband's family is a  noble family in Sweden, descended from the Scot Robert Douglas, Count of Skenninge, member of the Scottish Clan Douglas and founder of its Swedish branch.
-Her husband is a first cousin of Count Gustaf Douglas and his sisters Rosita Spencer-Churchill, Duchess of Marlborough, and Princess Elisabeth, Duchess in Bavaria, the wife of Prince Max, Duke in Bavaria.
-They have a son, Count Mauritz Otto Wenzel Douglas (born 30 March 1994 in Stockholm).
+As Otto was prohibited from entering Austria until 1966, his and Regina's wedding had to be celebrated elsewhere.
+Unusually among the heirs to deposed monarchies, Otto did not use royal titles or pursue his claim.
+Instead, he had a political career in the European Parliament, the success of which he attributed to Regina's support.
+From 10 May 1954 until her death Regina and Otto lived at Villa Austria, also called the Kaiservilla, in Pöcking near Lake Starnberg.
+In her dynastic role as wife of the head of the House of Habsburg-Lorraine, Regina acted as protectress of the all-female Roman Catholic Order of the Starry Cross, grand mistress of the similar Order of Saint Elizabeth, and an honorary lady grand cross of the Sovereign Order of Malta.
+In April 1985 she represented her husband Otto at the reburial of the remains of Albert II, Duke of Austria in the Gaming Charterhouse.
+Later life
+
+On 2 December 2005 Regina had a stroke and was taken to a hospital in Nancy.
+Regina died in Pöcking on 3 February 2010, aged 85, and was entombed at Veste Heldburg on 10 February.
+Children
+
+Regina and Otto had two sons and five daughters: 
+
+
+References
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -121,39 +135,9 @@ They have a son, Count Mauritz Otto Wenzel Douglas (born 30 March 1994 in Stockh
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -168,6 +152,23 @@ They have a son, Count Mauritz Otto Wenzel Douglas (born 30 March 1994 in Stockh
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -185,6 +186,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -252,29 +268,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -283,6 +291,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -295,6 +311,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -303,17 +321,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -341,6 +361,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -356,219 +460,81 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (de0bb0ba-0b14-480d-9476-fe915052abe2)
- Call ID: de0bb0ba-0b14-480d-9476-fe915052abe2
-  Args:
-    source: Walburga_Douglas
-    type: :Woman
-  AssignClass (c8650c0b-df77-4d45-89f3-e3d92e646a11)
- Call ID: c8650c0b-df77-4d45-89f3-e3d92e646a11
-  Args:
-    type: :Person
-    source: Walburga_Douglas
-  AddLiteral (99e24d6f-bb0e-46e9-99e5-3a13f7afe79f)
- Call ID: 99e24d6f-bb0e-46e9-99e5-3a13f7afe79f
-  Args:
-    literal_type: xsd:integer
-    source: Walburga_Douglas
-    literal_value: 1958
-    relation: :hasBirthYear
-  AssignClass (35230b61-084b-4c7b-bb7d-0781b1ea7a56)
- Call ID: 35230b61-084b-4c7b-bb7d-0781b1ea7a56
-  Args:
-    type: :Man
-    source: Otto_von_Habsburg
-  AssignClass (1c7be89d-dff5-4cf5-b28f-fab68cfb8424)
- Call ID: 1c7be89d-dff5-4cf5-b28f-fab68cfb8424
-  Args:
-    type: :Ancestor
-    source: Otto_von_Habsburg
-  AssignClass (1cd1c33a-9ed3-4d8e-a95c-c8113fc2ee24)
- Call ID: 1cd1c33a-9ed3-4d8e-a95c-c8113fc2ee24
+  AssignClass (69efbf92-0350-441b-a5dd-a00200d28329)
+ Call ID: 69efbf92-0350-441b-a5dd-a00200d28329
   Args:
     type: :Woman
-    source: Regina_of_Saxe-Meiningen
-  AssignClass (a732ba50-c6b0-4789-9614-c50ace12563b)
- Call ID: a732ba50-c6b0-4789-9614-c50ace12563b
+    source: Regina von Habsburg
+  AssignClass (159db2a3-396d-4191-a2c5-1de00d1b1ccf)
+ Call ID: 159db2a3-396d-4191-a2c5-1de00d1b1ccf
   Args:
-    type: :Ancestor
-    source: Regina_of_Saxe-Meiningen
-  AddTriple (4a9a6896-af4c-4d93-bfc9-d5669a052fa8)
- Call ID: 4a9a6896-af4c-4d93-bfc9-d5669a052fa8
-  Args:
-    source: Walburga_Douglas
-    relation: :hasFather
-    target: Otto_von_Habsburg
-  AddTriple (82a88e4e-3993-49c1-b611-2a4d509a22e6)
- Call ID: 82a88e4e-3993-49c1-b611-2a4d509a22e6
-  Args:
-    source: Walburga_Douglas
-    target: Regina_of_Saxe-Meiningen
-    relation: :hasMother
-  AssignClass (8e721b0e-2a78-4e74-b884-207d7a4b31d6)
- Call ID: 8e721b0e-2a78-4e74-b884-207d7a4b31d6
-  Args:
-    source: Carl_Axel_Archibald_Douglas
-    type: :Man
-  AssignClass (c0b5af90-a6e4-4d30-8d67-bbba4f769b20)
- Call ID: c0b5af90-a6e4-4d30-8d67-bbba4f769b20
-  Args:
-    source: Carl_Axel_Archibald_Douglas
+    source: Regina von Habsburg
     type: :Person
-  AddLiteral (b99823f0-549a-4f96-90c6-a5518555a751)
- Call ID: b99823f0-549a-4f96-90c6-a5518555a751
+  AddLiteral (890ca7db-0958-45b3-902a-0685949ceab8)
+ Call ID: 890ca7db-0958-45b3-902a-0685949ceab8
   Args:
+    source: Regina von Habsburg
     relation: :hasBirthYear
-    literal_value: 1949
+    literal_value: 1925
     literal_type: xsd:integer
-    source: Carl_Axel_Archibald_Douglas
-  AddLiteral (6cca4de0-bc76-4319-af6b-345fb3b59b7e)
- Call ID: 6cca4de0-bc76-4319-af6b-345fb3b59b7e
+  AddLiteral (16e4251c-53d0-4246-a4f4-7ad8c852940f)
+ Call ID: 16e4251c-53d0-4246-a4f4-7ad8c852940f
   Args:
-    literal_value: 1992
+    source: Regina von Habsburg
+    relation: :hasDeathYear
     literal_type: xsd:integer
-    source: Walburga_Douglas
-    relation: :hasMarriageYear
-  AssignClass (772fd167-1a00-4052-aa4f-293a606ee4f8)
- Call ID: 772fd167-1a00-4052-aa4f-293a606ee4f8
+    literal_value: 2010
+  AddLiteral (fb4e753c-ac39-42ca-b939-bcc6c2e1c295)
+ Call ID: fb4e753c-ac39-42ca-b939-bcc6c2e1c295
   Args:
-    source: Archibald_Douglas
+    source: Regina von Habsburg
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    literal_value: Archduchess Regina of Austria
+  AssignClass (fb7bba07-8b9e-436b-b77a-594d695fec8c)
+ Call ID: fb7bba07-8b9e-436b-b77a-594d695fec8c
+  Args:
+    source: Otto von Habsburg
     type: :Man
-  AssignClass (a068c66a-e822-4790-ac85-d18978ff36c9)
- Call ID: a068c66a-e822-4790-ac85-d18978ff36c9
+  AssignClass (fa68e1ce-3298-4bfa-b34b-76add7428b5f)
+ Call ID: fa68e1ce-3298-4bfa-b34b-76add7428b5f
   Args:
-    type: :Ancestor
-    source: Archibald_Douglas
-  AssignClass (74beba58-d44d-45fc-b4f2-82320c59ed3d)
- Call ID: 74beba58-d44d-45fc-b4f2-82320c59ed3d
-  Args:
-    source: Margareta_Lagerfelt
-    type: :Woman
-  AssignClass (b0ae71f6-fb7f-4fcb-adf0-06f00a3ab626)
- Call ID: b0ae71f6-fb7f-4fcb-adf0-06f00a3ab626
-  Args:
-    source: Margareta_Lagerfelt
-    type: :Ancestor
-  AddTriple (26b4e980-9533-4639-8bec-81ae802dd8bf)
- Call ID: 26b4e980-9533-4639-8bec-81ae802dd8bf
-  Args:
-    source: Carl_Axel_Archibald_Douglas
-    relation: :hasFather
-    target: Archibald_Douglas
-  AddTriple (9f08cab0-961e-4355-a5ba-d9e14d191547)
- Call ID: 9f08cab0-961e-4355-a5ba-d9e14d191547
-  Args:
-    source: Carl_Axel_Archibald_Douglas
-    target: Margareta_Lagerfelt
-    relation: :hasMother
-  AssignClass (58cb4f78-e529-4d42-9d61-7737ce82561d)
- Call ID: 58cb4f78-e529-4d42-9d61-7737ce82561d
-  Args:
-    source: Mauritz_Otto_Wenzel_Douglas
-    type: :Man
-  AssignClass (9400262d-2ca4-4a16-a67c-c76b239e750a)
- Call ID: 9400262d-2ca4-4a16-a67c-c76b239e750a
-  Args:
-    source: Mauritz_Otto_Wenzel_Douglas
+    source: Otto von Habsburg
     type: :Person
-  AddLiteral (fce0a8d5-e6a7-4f41-bdf4-167c1c41936b)
- Call ID: fce0a8d5-e6a7-4f41-bdf4-167c1c41936b
+  AddTriple (e6267c33-50d8-4f32-9110-03cde0f66199)
+ Call ID: e6267c33-50d8-4f32-9110-03cde0f66199
   Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Mauritz_Otto_Wenzel_Douglas
-    literal_value: 1994
-  AddTriple (571e4964-63f3-4b59-9414-47ec3d8487b9)
- Call ID: 571e4964-63f3-4b59-9414-47ec3d8487b9
+    target: Otto von Habsburg
+    relation: :hasRelation
+    source: Regina von Habsburg
+  AssignClass (83575c76-5cf9-4780-918c-b66f8898eba6)
+ Call ID: 83575c76-5cf9-4780-918c-b66f8898eba6
   Args:
-    relation: :hasFather
-    target: Carl_Axel_Archibald_Douglas
-    source: Mauritz_Otto_Wenzel_Douglas
-  AddTriple (df7b6ad4-7c09-43ba-be55-3ae2c5fd62bc)
- Call ID: df7b6ad4-7c09-43ba-be55-3ae2c5fd62bc
+    type: :Sex
+    source: Female
+  AssignClass (1d833d27-7244-40ea-be41-fe7f69e7fd42)
+ Call ID: 1d833d27-7244-40ea-be41-fe7f69e7fd42
   Args:
-    target: Walburga_Douglas
-    relation: :hasMother
-    source: Mauritz_Otto_Wenzel_Douglas
-  AssignClass (8ede6ef7-60a6-4468-ad9a-70a98b84ab9c)
- Call ID: 8ede6ef7-60a6-4468-ad9a-70a98b84ab9c
+    source: Male
+    type: :Sex
+  AddTriple (94b80104-d349-46a9-a2f4-94863b9af33b)
+ Call ID: 94b80104-d349-46a9-a2f4-94863b9af33b
   Args:
-    type: :Man
-    source: Charles_I
-  AssignClass (0d506f71-41cd-4423-a1a6-c80dd02276c0)
- Call ID: 0d506f71-41cd-4423-a1a6-c80dd02276c0
+    target: Female
+    relation: :hasSex
+    source: Regina von Habsburg
+  AddTriple (f8e4ee37-9dde-4a24-8a45-6f817d8b87fd)
+ Call ID: f8e4ee37-9dde-4a24-8a45-6f817d8b87fd
   Args:
-    source: Charles_I
-    type: :Ancestor
-  AddTriple (4ee8a37d-6e8d-41e3-b1df-80f7f659d985)
- Call ID: 4ee8a37d-6e8d-41e3-b1df-80f7f659d985
+    relation: :hasSex
+    source: Otto von Habsburg
+    target: Male
+  ValidateShacl (5b68db77-1e79-4a44-902e-51971f1c1844)
+ Call ID: 5b68db77-1e79-4a44-902e-51971f1c1844
   Args:
-    source: Walburga_Douglas
-    relation: :hasAncestor
-    target: Charles_I
-  Finish (42728b9f-1805-4020-837f-f35083ee5e8e)
- Call ID: 42728b9f-1805-4020-837f-f35083ee5e8e
+  Finish (64f77844-d805-4e27-b4c3-0a52f17287b3)
+ Call ID: 64f77844-d805-4e27-b4c3-0a52f17287b3
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -621,42 +587,27 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Mauritz_Otto_Wenzel_Douglas a :Man,
-          :Person ;
-      :hasBirthYear 1994 ;
-      :hasFather data:Carl_Axel_Archibald_Douglas ;
-      :hasMother data:Walburga_Douglas .
-
-  data:Archibald_Douglas a :Ancestor,
-          :Man .
-
-  data:Carl_Axel_Archibald_Douglas a :Man,
-          :Person ;
-      :hasBirthYear 1949 ;
-      :hasFather data:Archibald_Douglas ;
-      :hasMother data:Margareta_Lagerfelt .
-
-  data:Charles_I a :Ancestor,
-          :Man .
-
-  data:Margareta_Lagerfelt a :Ancestor,
-          :Woman .
-
-  data:Otto_von_Habsburg a :Ancestor,
-          :Man .
-
-  data:Regina_of_Saxe-Meiningen a :Ancestor,
-          :Woman .
-
-  data:Walburga_Douglas a :Person,
+  data:Regina_von_Habsburg a :Person,
           :Woman ;
-      :hasAncestor data:Charles_I ;
-      :hasBirthYear 1958 ;
-      :hasFather data:Otto_von_Habsburg ;
-      :hasMarriageYear 1992 ;
-      :hasMother data:Regina_of_Saxe-Meiningen .
+      :alsoKnownAs "Archduchess Regina of Austria"^^xsd:string ;
+      :hasBirthYear 1925 ;
+      :hasDeathYear 2010 ;
+      :hasRelation data:Otto_von_Habsburg ;
+      :hasSex data:Female .
+
+  data:Female a :Sex .
+
+  data:Male a :Sex .
+
+  data:Otto_von_Habsburg a :Man,
+          :Person ;
+      :hasSex data:Male .
 
 
+
+================================= Tool Message =================================
+
+SHACL validation has not produced any violations.
 
 ================================= Tool Message =================================
 
@@ -666,133 +617,9 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (51101902-f325-41ba-82f6-4f97153dc92c)
- Call ID: 51101902-f325-41ba-82f6-4f97153dc92c
+  ValidateShacl (63829360-6a23-49dc-89bd-24c0e6bf957a)
+ Call ID: 63829360-6a23-49dc-89bd-24c0e6bf957a
   Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:6
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Carl_Axel_Archibald_Douglas, identified as the father of Mauritz_Otto_Wenzel_Douglas via the hasFather property, is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node Carl_Axel_Archibald_Douglas.
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Walburga_Douglas, identified as the mother of Mauritz_Otto_Wenzel_Douglas via the hasMother property, is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node Walburga_Douglas.
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Carl_Axel_Archibald_Douglas is missing the mandatory class :Ancestor, which is required for all entities linked via the hasFather property.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node Carl_Axel_Archibald_Douglas.
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Walburga_Douglas is missing the mandatory class :Ancestor, which is required for all entities linked via the hasMother property.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node Walburga_Douglas.
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Carl_Axel_Archibald_Douglas, while currently identified as a :Man, does not possess the :Ancestor class required for the hasFather property range.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node Carl_Axel_Archibald_Douglas.
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Walburga_Douglas, while currently identified as a :Woman, does not possess the :Ancestor class required for the hasMother property range.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node Walburga_Douglas.
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (9a2b3e7e-9870-4d7d-ad57-857005a80956)
- Call ID: 9a2b3e7e-9870-4d7d-ad57-857005a80956
-  Args:
-    source: Carl_Axel_Archibald_Douglas
-    type: :Ancestor
-  AssignClass (576d4376-0c40-4bf6-8dd1-d4ad842a2ee0)
- Call ID: 576d4376-0c40-4bf6-8dd1-d4ad842a2ee0
-  Args:
-    source: Walburga_Douglas
-    type: :Ancestor
-  ValidateShacl (2ddc8c74-2f34-447e-8318-64cfde9c77e5)
- Call ID: 2ddc8c74-2f34-447e-8318-64cfde9c77e5
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Mauritz_Otto_Wenzel_Douglas a :Man,
-          :Person ;
-      :hasBirthYear 1994 ;
-      :hasFather data:Carl_Axel_Archibald_Douglas ;
-      :hasMother data:Walburga_Douglas .
-
-  data:Archibald_Douglas a :Ancestor,
-          :Man .
-
-  data:Carl_Axel_Archibald_Douglas a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1949 ;
-      :hasFather data:Archibald_Douglas ;
-      :hasMother data:Margareta_Lagerfelt .
-
-  data:Charles_I a :Ancestor,
-          :Man .
-
-  data:Margareta_Lagerfelt a :Ancestor,
-          :Woman .
-
-  data:Otto_von_Habsburg a :Ancestor,
-          :Man .
-
-  data:Regina_of_Saxe-Meiningen a :Ancestor,
-          :Woman .
-
-  data:Walburga_Douglas a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasAncestor data:Charles_I ;
-      :hasBirthYear 1958 ;
-      :hasFather data:Otto_von_Habsburg ;
-      :hasMarriageYear 1992 ;
-      :hasMother data:Regina_of_Saxe-Meiningen .
-
-
 
 ================================= Tool Message =================================
 
@@ -802,6 +629,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (37479099-c361-471c-99a5-aa94018424f6)
- Call ID: 37479099-c361-471c-99a5-aa94018424f6
+  Finish (78c5e028-166b-4822-b256-05b64f3b4d15)
+ Call ID: 78c5e028-166b-4822-b256-05b64f3b4d15
   Args:

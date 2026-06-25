@@ -1,0 +1,268 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Ernst_August-_Crown_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Ernst August, Crown Prince of Hanover"^^xsd:string ;
+    data:posIndicesFull "2072:2112"^^xsd:string ;
+    data:wdtLink wdt:Q437001 ;
+    :alsoKnownAs "Crown Prince Ernest Augustus of Hanover"^^xsd:string ;
+    :hasBrother data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :hasChild data:Princess_Alexandra_of_Hanover ;
+    :hasDaughter data:Princess_Alexandra_of_Hanover ;
+    :hasRelation data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Princess_Alexandra_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :isBrotherOf data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :isFatherOf data:Princess_Alexandra_of_Hanover ;
+    :isParentOf data:Princess_Alexandra_of_Hanover ;
+    :isSiblingOf data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :isUncleOf data:Princess_Alexandra_of_Hanover .
+
+data:Thyra-_Crown_Princess_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Thyra, Crown Princess of Hanover"^^xsd:string ;
+    data:posIndicesFull "2128:2153"^^xsd:string ;
+    data:wdtLink wdt:Q217504 ;
+    :alsoKnownAs "Princess Thyra Amalie Caroline Charlotte Anna of Denmark"^^xsd:string,
+        "Princess Thyra of Denmark"^^xsd:string ;
+    :hasChild data:Princess_Alexandra_of_Hanover ;
+    :hasDaughter data:Princess_Alexandra_of_Hanover ;
+    :hasRelation data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Princess_Alexandra_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:female ;
+    :hasSister data:Thyra-_Crown_Princess_of_Hanover ;
+    :isAncestorOf data:Princess_Alexandra_of_Hanover ;
+    :isAuntOf data:Princess_Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Thyra-_Crown_Princess_of_Hanover ;
+    :isMotherOf data:Princess_Alexandra_of_Hanover ;
+    :isParentOf data:Princess_Alexandra_of_Hanover ;
+    :isSiblingOf data:Thyra-_Crown_Princess_of_Hanover ;
+    :isSisterOf data:Thyra-_Crown_Princess_of_Hanover .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Anastasia Mikhailovna of Russia"^^xsd:string ;
+    data:posIndicesFull "318:363"^^xsd:string,
+        "332:363"^^xsd:string ;
+    data:posIndicesPart "1016:1021"^^xsd:string,
+        "1204:1213"^^xsd:string,
+        "1320:1325"^^xsd:string,
+        "1401:1406"^^xsd:string,
+        "1492:1497"^^xsd:string,
+        "1590:1595"^^xsd:string,
+        "1596:1603"^^xsd:string,
+        "1604:1613"^^xsd:string,
+        "1736:1741"^^xsd:string,
+        "2256:2261"^^xsd:string,
+        "2397:2402"^^xsd:string,
+        "2510:2515"^^xsd:string,
+        "2746:2751"^^xsd:string,
+        "2786:2791"^^xsd:string,
+        "497:502"^^xsd:string,
+        "949:954"^^xsd:string ;
+    data:wdtLink wdt:Q232159 ;
+    :alsoKnownAs "Anastasia Mikhailovna of Russia"^^xsd:string,
+        "Anastasia Mikhailovna, Grand Duchess of Mecklenburg-Schwerin"^^xsd:string,
+        "Anastasia, Grand Duchess of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasChild data:Frederick_Francis_IV ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isAncestorOf data:Frederick_Francis_IV ;
+    :isAuntOf data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isMotherOf data:Frederick_Francis_IV ;
+    :isParentOf data:Frederick_Francis_IV ;
+    :isSiblingOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Francis II"^^xsd:string ;
+    data:posIndicesFull "1027:1047"^^xsd:string ;
+    data:posIndicesPart "1562:1571"^^xsd:string,
+        "1572:1579"^^xsd:string,
+        "1843:1852"^^xsd:string,
+        "1853:1860"^^xsd:string,
+        "1966:1975"^^xsd:string,
+        "1976:1983"^^xsd:string,
+        "2276:2285"^^xsd:string,
+        "2314:2323"^^xsd:string,
+        "2324:2331"^^xsd:string,
+        "2365:2374"^^xsd:string,
+        "2375:2382"^^xsd:string,
+        "2570:2579"^^xsd:string,
+        "2580:2587"^^xsd:string ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II."^^xsd:string ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Frederick_Francis_III ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:male ;
+    :hasSon data:Frederick_Francis_III ;
+    :isAncestorOf data:Frederick_Francis_III,
+        data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isFatherOf data:Frederick_Francis_III ;
+    :isParentOf data:Frederick_Francis_III ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isUncleOf data:Frederick_Francis_III .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Francis III"^^xsd:string ;
+    data:posIndicesFull "1148:1168"^^xsd:string ;
+    data:posIndicesPart "1562:1571"^^xsd:string,
+        "1572:1579"^^xsd:string,
+        "1843:1852"^^xsd:string,
+        "1853:1860"^^xsd:string,
+        "1966:1975"^^xsd:string,
+        "1976:1983"^^xsd:string,
+        "2276:2285"^^xsd:string,
+        "2314:2323"^^xsd:string,
+        "2324:2331"^^xsd:string,
+        "2365:2374"^^xsd:string,
+        "2375:2382"^^xsd:string,
+        "2570:2579"^^xsd:string,
+        "2580:2587"^^xsd:string ;
+    data:wdtLink wdt:Q57974 ;
+    :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz III"^^xsd:string,
+        "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_II ;
+    :hasBrother data:Frederick_Francis_III ;
+    :hasChild data:Frederick_Francis_IV ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasParent data:Frederick_Francis_II ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:male ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isAncestorOf data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Frederick_Francis_III ;
+    :isBrotherOf data:Frederick_Francis_III ;
+    :isChildOf data:Frederick_Francis_II ;
+    :isFatherOf data:Frederick_Francis_IV ;
+    :isParentOf data:Frederick_Francis_IV ;
+    :isSiblingOf data:Frederick_Francis_III ;
+    :isSonOf data:Frederick_Francis_II ;
+    :isUncleOf data:Frederick_Francis_IV .
+
+data:Princess_Alexandra_of_Hanover a :Person,
+        :Woman ;
+    rdfs:label "Princess Alexandra of Hanover"^^xsd:string ;
+    data:posIndicesFull "1992:2021"^^xsd:string ;
+    data:wdtLink wdt:Q61243 ;
+    :alsoKnownAs "Alexandra of Hanover and Cumberland"^^xsd:string,
+        "Princess Alexandra Louise Marie Olga Elisabeth Therese Vera of Hanover and Cumberland"^^xsd:string,
+        "Princess Alexandra of Hanover and Cumberland"^^xsd:string ;
+    :hasAncestor data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasFather data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :hasMother data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasRelation data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Princess_Alexandra_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alexandra_of_Hanover ;
+    :isBloodrelationOf data:Princess_Alexandra_of_Hanover ;
+    :isChildOf data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :isDaughterOf data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :isSiblingOf data:Princess_Alexandra_of_Hanover ;
+    :isSisterOf data:Princess_Alexandra_of_Hanover .
+
+data:Frederick_Francis_IV a :Man,
+        :Person ;
+    rdfs:label "Frederick Francis IV"^^xsd:string ;
+    data:posIndicesFull "0:20"^^xsd:string,
+        "1066:1086"^^xsd:string,
+        "1356:1376"^^xsd:string,
+        "203:223"^^xsd:string ;
+    data:posIndicesPart "1562:1571"^^xsd:string,
+        "1572:1579"^^xsd:string,
+        "1843:1852"^^xsd:string,
+        "1853:1860"^^xsd:string,
+        "1966:1975"^^xsd:string,
+        "1976:1983"^^xsd:string,
+        "2276:2285"^^xsd:string,
+        "2314:2323"^^xsd:string,
+        "2324:2331"^^xsd:string,
+        "2365:2374"^^xsd:string,
+        "2375:2382"^^xsd:string,
+        "2570:2579"^^xsd:string,
+        "2580:2587"^^xsd:string,
+        "509:518"^^xsd:string,
+        "519:526"^^xsd:string,
+        "673:682"^^xsd:string,
+        "683:690"^^xsd:string,
+        "884:893"^^xsd:string,
+        "894:901"^^xsd:string ;
+    data:wdtLink wdt:Q57930 ;
+    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz IV"^^xsd:string,
+        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Frederick_Francis_IV ;
+    :isBrotherOf data:Frederick_Francis_IV ;
+    :isChildOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSiblingOf data:Frederick_Francis_IV ;
+    :isSonOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+

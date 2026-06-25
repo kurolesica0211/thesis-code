@@ -88,13 +88,14 @@ The Margrave and Margravine had four children:
 The Margravine represented the Margrave for the funeral of Queen Elizabeth II, his aunt, at Westminster Abbey in London on 19 September 2022, with Prince Bernhard and his wife, Princess Stephanie.
 He was succeeded as titular margrave and head of house by his son Bernhard.
 The Margrave's funeral service on 13 January 2023 in the church of Salem Abbey was attended by numerous representatives from politics, including the minister president of Baden-Württemberg, Winfried Kretschmann, and royalty and aristocracy, such as King Philippe of Belgium, Prince Albert II of Monaco and his sister Caroline, Princess of Hanover, Prince Hassan of Jordan and the Hereditary Princess of Liechtenstein as well as the heads or representatives of most of the former ruling houses of Germany.
-His first cousin King Charles III was represented by Donatus, Landgrave of Hesse.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -110,39 +111,9 @@ His first cousin King Charles III was represented by Donatus, Landgrave of Hesse
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -157,6 +128,23 @@ His first cousin King Charles III was represented by Donatus, Landgrave of Hesse
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -174,6 +162,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -241,29 +244,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -272,6 +267,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -284,6 +287,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -292,17 +297,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -330,6 +337,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -345,118 +436,238 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8c5d6b2e-857e-4b85-ac31-e9c9a24bb1fe)
- Call ID: 8c5d6b2e-857e-4b85-ac31-e9c9a24bb1fe
+  AssignClass (4e85fa4b-a650-4f24-b3f1-02dadada603d)
+ Call ID: 4e85fa4b-a650-4f24-b3f1-02dadada603d
   Args:
     source: Maximilian_Margrave_of_Baden
     type: :Man
-  AssignClass (2ca652f0-4cd8-452e-8fab-97ddb9e61f5d)
- Call ID: 2ca652f0-4cd8-452e-8fab-97ddb9e61f5d
+  AssignClass (d20c8fcd-9f5f-404b-8878-074817e63c54)
+ Call ID: d20c8fcd-9f5f-404b-8878-074817e63c54
+  Args:
+    source: Maximilian_Margrave_of_Baden
+    type: :Person
+  AddLiteral (3b5ee7c5-ef3b-4215-9e40-06d1f5bbfdd6)
+ Call ID: 3b5ee7c5-ef3b-4215-9e40-06d1f5bbfdd6
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1933
+    source: Maximilian_Margrave_of_Baden
+  AddLiteral (27f1212c-7ecf-4f7e-adfd-7c0b671b08eb)
+ Call ID: 27f1212c-7ecf-4f7e-adfd-7c0b671b08eb
+  Args:
+    source: Maximilian_Margrave_of_Baden
+    literal_value: 2022
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddLiteral (a53c2372-a9a1-40aa-b426-c370ec736716)
+ Call ID: a53c2372-a9a1-40aa-b426-c370ec736716
+  Args:
+    literal_value: Max von Baden
+    source: Maximilian_Margrave_of_Baden
+    literal_type: xsd:string
+    relation: :alsoKnownAs
+  AssignClass (a889c61f-0702-42f5-9042-0d9475ea9432)
+ Call ID: a889c61f-0702-42f5-9042-0d9475ea9432
   Args:
     source: Berthold_Margrave_of_Baden
     type: :Man
-  AssignClass (a5b52615-e6dc-4527-baee-cef937fd18e2)
- Call ID: a5b52615-e6dc-4527-baee-cef937fd18e2
+  AssignClass (0f7a52d1-52ff-4b2b-961f-280157a46b90)
+ Call ID: 0f7a52d1-52ff-4b2b-961f-280157a46b90
+  Args:
+    source: Berthold_Margrave_of_Baden
+    type: :Person
+  AssignClass (36bb7bdd-c7d5-405f-99ef-6ba422a223d0)
+ Call ID: 36bb7bdd-c7d5-405f-99ef-6ba422a223d0
   Args:
     type: :Woman
     source: Princess_Theodora_of_Greece_and_Denmark
-  AssignClass (6c281169-63fb-477c-8d98-aa84258fdf06)
- Call ID: 6c281169-63fb-477c-8d98-aa84258fdf06
+  AssignClass (239e8ee5-d63e-4c96-b862-7cae73ff55ec)
+ Call ID: 239e8ee5-d63e-4c96-b862-7cae73ff55ec
   Args:
-    source: Princess_Margarita_of_Baden
+    source: Princess_Theodora_of_Greece_and_Denmark
+    type: :Person
+  AddTriple (873ba6e6-3d59-45a8-a6ba-c7a5936c20fc)
+ Call ID: 873ba6e6-3d59-45a8-a6ba-c7a5936c20fc
+  Args:
+    target: Berthold_Margrave_of_Baden
+    source: Maximilian_Margrave_of_Baden
+    relation: :hasFather
+  AddTriple (6bc588ec-ca87-49d8-8cb6-e574c438df38)
+ Call ID: 6bc588ec-ca87-49d8-8cb6-e574c438df38
+  Args:
+    relation: :hasMother
+    source: Maximilian_Margrave_of_Baden
+    target: Princess_Theodora_of_Greece_and_Denmark
+  AssignClass (aee87283-d0c8-46ae-acfe-65f4290d63a6)
+ Call ID: aee87283-d0c8-46ae-acfe-65f4290d63a6
+  Args:
     type: :Woman
-  AssignClass (78d3c22b-f031-4a7d-abdb-2dc82bff4876)
- Call ID: 78d3c22b-f031-4a7d-abdb-2dc82bff4876
+    source: Princess_Margarita
+  AssignClass (0fd52c75-5a12-4a77-a2a0-dfeb356f5f36)
+ Call ID: 0fd52c75-5a12-4a77-a2a0-dfeb356f5f36
   Args:
-    source: Prince_Ludwig_of_Baden
+    source: Princess_Margarita
+    type: :Person
+  AddTriple (5d2efe47-e370-4aed-a519-fc73fb113c49)
+ Call ID: 5d2efe47-e370-4aed-a519-fc73fb113c49
+  Args:
+    relation: :hasSister
+    source: Maximilian_Margrave_of_Baden
+    target: Princess_Margarita
+  AssignClass (937e81ea-4df1-4a49-8a23-9df43407cebd)
+ Call ID: 937e81ea-4df1-4a49-8a23-9df43407cebd
+  Args:
+    source: Prince_Ludwig
     type: :Man
-  AssignClass (cfcbe9e6-bbdb-412e-890e-ef39dad50338)
- Call ID: cfcbe9e6-bbdb-412e-890e-ef39dad50338
+  AssignClass (99beb4c3-4b33-4498-99c5-174cf702b4d1)
+ Call ID: 99beb4c3-4b33-4498-99c5-174cf702b4d1
+  Args:
+    source: Prince_Ludwig
+    type: :Person
+  AddLiteral (27ef12d1-b1c5-430b-a080-509d57e26839)
+ Call ID: 27ef12d1-b1c5-430b-a080-509d57e26839
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1937
+    source: Prince_Ludwig
+  AddTriple (6403d341-5fd9-440c-b2cf-1fd13bed2624)
+ Call ID: 6403d341-5fd9-440c-b2cf-1fd13bed2624
+  Args:
+    target: Prince_Ludwig
+    source: Maximilian_Margrave_of_Baden
+    relation: :hasBrother
+  AssignClass (50701420-78c5-48bd-809e-f50ac2ddc7b7)
+ Call ID: 50701420-78c5-48bd-809e-f50ac2ddc7b7
   Args:
     source: Archduchess_Valerie_of_Austria
     type: :Woman
-  AssignClass (1db2d05c-46a1-48b8-bfb4-a7d43554beb0)
- Call ID: 1db2d05c-46a1-48b8-bfb4-a7d43554beb0
+  AssignClass (863ca1aa-a808-4a57-9758-df2c698e4011)
+ Call ID: 863ca1aa-a808-4a57-9758-df2c698e4011
+  Args:
+    type: :Person
+    source: Archduchess_Valerie_of_Austria
+  AddLiteral (7d743aff-2383-4163-b6d3-d6654af5b03f)
+ Call ID: 7d743aff-2383-4163-b6d3-d6654af5b03f
+  Args:
+    literal_value: 1941
+    source: Archduchess_Valerie_of_Austria
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (ab02b96f-33ef-47ca-a5d2-339a2c973ec0)
+ Call ID: ab02b96f-33ef-47ca-a5d2-339a2c973ec0
+  Args:
+    literal_value: 1966
+    source: Maximilian_Margrave_of_Baden
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AddTriple (1ab6f3b6-c5a3-4850-a085-7f6980f67822)
+ Call ID: 1ab6f3b6-c5a3-4850-a085-7f6980f67822
+  Args:
+    source: Maximilian_Margrave_of_Baden
+    target: Archduchess_Valerie_of_Austria
+    relation: :hasRelation
+  AssignClass (7596457f-4a93-40d4-b182-0ad4cbd9fc65)
+ Call ID: 7596457f-4a93-40d4-b182-0ad4cbd9fc65
   Args:
     source: Bernhard_Margrave_of_Baden
     type: :Man
-  AddLiteral (8e403053-59f0-4aa4-bd1a-3b5bb0663477)
- Call ID: 8e403053-59f0-4aa4-bd1a-3b5bb0663477
+  AssignClass (237c54cb-c554-4564-8dc5-e7c236026b2f)
+ Call ID: 237c54cb-c554-4564-8dc5-e7c236026b2f
   Args:
-    literal_value: 1933
-    source: Maximilian_Margrave_of_Baden
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (dd340290-8d37-482e-bc04-66729e040ff2)
- Call ID: dd340290-8d37-482e-bc04-66729e040ff2
-  Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 2022
-    source: Maximilian_Margrave_of_Baden
-  AddLiteral (8ab56fd3-df25-43e3-9f31-014b1ea6e266)
- Call ID: 8ab56fd3-df25-43e3-9f31-014b1ea6e266
-  Args:
-    relation: :alsoKnownAs
-    literal_type: xsd:string
-    source: Maximilian_Margrave_of_Baden
-    literal_value: Max von Baden
-  AddTriple (8fc9be98-f656-45a8-958c-98b3dd2a3e6a)
- Call ID: 8fc9be98-f656-45a8-958c-98b3dd2a3e6a
+    type: :Person
+    source: Bernhard_Margrave_of_Baden
+  AddTriple (bbfe9c93-0030-47e4-8caf-48156e451132)
+ Call ID: bbfe9c93-0030-47e4-8caf-48156e451132
   Args:
     source: Maximilian_Margrave_of_Baden
-    target: Berthold_Margrave_of_Baden
-    relation: :hasFather
-  AddTriple (c10ee827-b08f-4e3d-8b81-98636f703ef1)
- Call ID: c10ee827-b08f-4e3d-8b81-98636f703ef1
+    target: Bernhard_Margrave_of_Baden
+    relation: :hasSon
+  AssignClass (9947b753-651b-472c-b541-1bcf482d926c)
+ Call ID: 9947b753-651b-472c-b541-1bcf482d926c
   Args:
-    relation: :hasMother
-    target: Princess_Theodora_of_Greece_and_Denmark
-    source: Maximilian_Margrave_of_Baden
-  AddTriple (e363d98a-f301-415a-ade5-1681da4f2b3d)
- Call ID: e363d98a-f301-415a-ade5-1681da4f2b3d
+    type: :Man
+    source: Prince_Philip_Duke_of_Edinburgh
+  AssignClass (4a969517-0d41-4a78-909b-f501f5389f25)
+ Call ID: 4a969517-0d41-4a78-909b-f501f5389f25
   Args:
-    source: Maximilian_Margrave_of_Baden
-    target: Princess_Margarita_of_Baden
+    source: Prince_Philip_Duke_of_Edinburgh
+    type: :Person
+  AddTriple (5a86080e-ad53-4cf6-8014-bd3faa489316)
+ Call ID: 5a86080e-ad53-4cf6-8014-bd3faa489316
+  Args:
     relation: :hasSister
-  AddTriple (111c4a82-f780-4018-9751-76206d01c65d)
- Call ID: 111c4a82-f780-4018-9751-76206d01c65d
+    target: Princess_Theodora_of_Greece_and_Denmark
+    source: Prince_Philip_Duke_of_Edinburgh
+  AssignClass (86d9454f-676d-4a97-9b8a-fbe91053cfeb)
+ Call ID: 86d9454f-676d-4a97-9b8a-fbe91053cfeb
   Args:
-    target: Prince_Ludwig_of_Baden
-    relation: :hasBrother
-    source: Maximilian_Margrave_of_Baden
-  AddLiteral (5cef08e9-8ec3-4ef4-8ceb-54d6a865a505)
- Call ID: 5cef08e9-8ec3-4ef4-8ceb-54d6a865a505
+    source: Charles_III_King_of_the_United_Kingdom
+    type: :Man
+  AssignClass (4269a380-ab8d-4923-bcd7-7f1cb8a3b238)
+ Call ID: 4269a380-ab8d-4923-bcd7-7f1cb8a3b238
   Args:
-    literal_value: 1937
-    source: Prince_Ludwig_of_Baden
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddTriple (aff5d63d-9215-4d65-a336-01e5f8992298)
- Call ID: aff5d63d-9215-4d65-a336-01e5f8992298
+    source: Charles_III_King_of_the_United_Kingdom
+    type: :Person
+  AssignClass (ef9aec6f-ad8d-487f-93a1-0e41495d9148)
+ Call ID: ef9aec6f-ad8d-487f-93a1-0e41495d9148
   Args:
-    relation: :hasFather
-    target: Maximilian_Margrave_of_Baden
-    source: Bernhard_Margrave_of_Baden
-  AddTriple (149299ac-530f-4bd1-a417-3b2c6661957d)
- Call ID: 149299ac-530f-4bd1-a417-3b2c6661957d
+    type: :Woman
+    source: Margarita_Princess_of_Hohenlohe_Langenburg
+  AssignClass (f5a7be4f-cfa9-4129-8390-a11fda6869fa)
+ Call ID: f5a7be4f-cfa9-4129-8390-a11fda6869fa
   Args:
-    target: Archduchess_Valerie_of_Austria
+    source: Margarita_Princess_of_Hohenlohe_Langenburg
+    type: :Person
+  AssignClass (95fd3215-2fe9-41db-952c-0504c31df0a8)
+ Call ID: 95fd3215-2fe9-41db-952c-0504c31df0a8
+  Args:
+    type: :Woman
+    source: Princess_Beatrix_of_Hohenlohe_Langenburg
+  AssignClass (e397015a-d25f-405f-9813-cdbb01b6f093)
+ Call ID: e397015a-d25f-405f-9813-cdbb01b6f093
+  Args:
+    source: Princess_Beatrix_of_Hohenlohe_Langenburg
+    type: :Person
+  AddTriple (b5936abc-323c-4312-8eec-a56b817a85f3)
+ Call ID: b5936abc-323c-4312-8eec-a56b817a85f3
+  Args:
+    target: Margarita_Princess_of_Hohenlohe_Langenburg
+    source: Princess_Beatrix_of_Hohenlohe_Langenburg
     relation: :hasMother
-    source: Bernhard_Margrave_of_Baden
-  AddLiteral (f988d12c-a173-4108-8f02-bf788731f202)
- Call ID: f988d12c-a173-4108-8f02-bf788731f202
+  AddTriple (6dff8680-3ff6-4b6d-86ec-dfe6ebc6df7b)
+ Call ID: 6dff8680-3ff6-4b6d-86ec-dfe6ebc6df7b
   Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1966
-    source: Maximilian_Margrave_of_Baden
-  AddTriple (da93005c-b517-4844-8759-93c2b043654d)
- Call ID: da93005c-b517-4844-8759-93c2b043654d
+    source: Archduchess_Valerie_of_Austria
+    target: Archduke_Hubert_Salvator_of_Austria
+    relation: :hasFather
+  AssignClass (dbef654b-f9b7-4866-a158-35703e9c642e)
+ Call ID: dbef654b-f9b7-4866-a158-35703e9c642e
   Args:
-    source: Maximilian_Margrave_of_Baden
-    relation: :hasRelation
-    target: Archduchess_Valerie_of_Austria
-  Finish (cb9c586b-48ec-4c78-b858-e7352e92be82)
- Call ID: cb9c586b-48ec-4c78-b858-e7352e92be82
+    source: Archduke_Hubert_Salvator_of_Austria
+    type: :Man
+  AssignClass (d844541a-58c5-422e-9912-83c8ef9014f1)
+ Call ID: d844541a-58c5-422e-9912-83c8ef9014f1
+  Args:
+    source: Archduke_Hubert_Salvator_of_Austria
+    type: :Person
+  AddTriple (c3036b33-d941-4ea3-9b8f-748b2a6c3bb7)
+ Call ID: c3036b33-d941-4ea3-9b8f-748b2a6c3bb7
+  Args:
+    relation: :hasMother
+    target: Princess_Rosemary_of_Salm_Salm
+    source: Archduchess_Valerie_of_Austria
+  AssignClass (7270738c-86d1-4200-800a-1bc5679a65bd)
+ Call ID: 7270738c-86d1-4200-800a-1bc5679a65bd
+  Args:
+    source: Princess_Rosemary_of_Salm_Salm
+    type: :Woman
+  AssignClass (4b78e1ec-d5d2-4cd3-9462-624df028e5f2)
+ Call ID: 4b78e1ec-d5d2-4cd3-9462-624df028e5f2
+  Args:
+    source: Princess_Rosemary_of_Salm_Salm
+    type: :Person
+  Finish (e9671578-5c0e-40f7-8414-7b134df825aa)
+ Call ID: e9671578-5c0e-40f7-8414-7b134df825aa
   Args:

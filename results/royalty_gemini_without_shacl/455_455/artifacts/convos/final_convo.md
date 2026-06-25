@@ -69,23 +69,50 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Sophie Franziska Maria Germaine Habsburg also known as Archduchess Sophie of Austria (born 19 January 1959) is a French-born Italian designer, German aristocrat and former model.
-Career
+Princess Alexia of Greece and Denmark (Greek: Αλεξία Ντε Γκρες, romanized: Alexía de Grèce; born 10 July 1965) is the eldest child of Constantine II and Anne-Marie, who were King and Queen of Greece from 1964 until the abolition of the monarchy in 1973.
+Biography
 
-Sophie Habsburg was born in Paris on 19 January 1959, the daughter of Archduke Ferdinand Karl Max of Austria and Countess Helene of Törring-Jettenbach.
-She descends from the House of Habsburg-Lorraine, which reigned over Austria-Hungary until its deposition in 1918.
-Ancestry
+Alexia was born on 10 July 1965 at Mon Repos, a villa on the Greek island of Corfu used at the time as a summer residence by the Greek royal family.
+She was the first child born to the then King Constantine II and Queen Anne-Marie of the Hellenes.
+At the time of her birth, her father was King of Greece, her grandfather was King of Denmark, and her great-grandfather was King of Sweden.
+As the monarch's only child, between her own birth and the birth on 20 May 1967 of her brother Pavlos, Alexia was heir presumptive to the throne of the Hellenes, then an extant monarchy.
+The Greek Constitution of 1952 had changed Greece's order of succession to the throne from the previous Salic law, prevalent in much of the continent, and which precluded the succession of women, to male-preference primogeniture, which accorded succession to the throne to a female member of a dynasty if she has no brothers, similar to the then extant succession laws of the United Kingdom, Denmark and Spain.
+Alexia grew up in exile and was raised in between Rome and London.
+The family then briefly moved to Denmark and stayed at Amalienborg Palace, and then to London the following year.
+Prior to Alexia's education at the Hellenic College of London, she attended the Miss Surtee's School for Boys and Girls in Rome, Italy.
+Οn 20 December 2024, Alexia along with other members of the former royal family acquired Greek citizenship, under the surname "de Grèce".
+Marriage and children
 
-Through her maternal grandmother, Princess Elizabeth of Greece and Denmark, Sophie is a first cousin once removed of: Prince Edward, Duke of Kent, Princess Alexandra, The Honourable Lady Ogilvy, Prince Michael of Kent and Princess Elizabeth of Yugoslavia.
-Habsburg is a second cousin once removed of Queen Sofía of Spain and King Charles III, making Sophie a third cousin of Felipe VI of Spain and William, Prince of Wales.
-, Sophie Habsburg married Mariano Hugo, Prince of Windisch-Graetz, member of the House of Windisch-Graetz.
-They had three children, one of whom, Alexis Ferdinand, died in a car accident in 2010.
+Queen Anne-Marie
+
+
+Queen Sofía of Spain
+
+
+Marina, consort of Prince Michael
+
+
+On 9 July 1999, Alexia married Carlos Javier Morales Quintana, an architect and a champion yachtsman, at St. Sophia Cathedral, London.
+In May 1999, two months before their wedding, Alexia and Carlos were involved in a yachting accident on a boat named the Alexia.
+Alexia and Carlos were the only two people out of the thirteen on board to be injured.
+Alexia suffered a broken collarbone and Carlos a fractured kneecap.
+At her wedding, Alexia wore a gown by the Austrian designer Inge Sprawson.
+Alexia's mother, Anne-Marie, and grandmother, Ingrid, had both also worn the same tiara on their own wedding day.
+Her attendants included her sister Princess Theodora, her niece Princess Maria-Olympia, and Princess Mafalda, daughter of Kyril, Prince of Preslav, a son of former King Simeon of Bulgaria.
+The couple have four children: 
+
+
+Their children's last names are "Morales y de Grecia", which translates to "Morales and of Greece", taking their father's surname and their mother's royal title.
+Alexia and her family now live in her husband's native land, at Puerto Calero marina, Yaiza, Lanzarote in the Canary Islands, in a house designed by her husband.
+The Canary Islands are an autonomous community of Spain, where Alexia's aunt, Queen Sofía, lives and first cousin, Felipe VI, lives and rules.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -101,39 +128,9 @@ They had three children, one of whom, Alexis Ferdinand, died in a car accident i
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -148,6 +145,23 @@ They had three children, one of whom, Alexis Ferdinand, died in a car accident i
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -165,6 +179,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -232,29 +261,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -263,6 +284,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -275,6 +304,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -283,17 +314,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -321,6 +354,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -336,317 +453,216 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c2447d90-0613-4590-a852-b2a11522601c)
- Call ID: c2447d90-0613-4590-a852-b2a11522601c
+  AssignClass (a9d9f9cd-da77-48c7-9ce2-f1a644096d40)
+ Call ID: a9d9f9cd-da77-48c7-9ce2-f1a644096d40
+  Args:
+    source: :Alexia
+    type: :Woman
+  AssignClass (b53cb3cc-f275-4d14-a988-1a6f52b5e74a)
+ Call ID: b53cb3cc-f275-4d14-a988-1a6f52b5e74a
   Args:
     type: :Person
-    source: Sophie_Habsburg
-  AssignClass (2904a784-f0de-4148-b8ed-ae33c3ca9c76)
- Call ID: 2904a784-f0de-4148-b8ed-ae33c3ca9c76
+    source: :Alexia
+  AddLiteral (dce6b2a7-f334-420a-8e29-ad82fa836d8f)
+ Call ID: dce6b2a7-f334-420a-8e29-ad82fa836d8f
   Args:
-    type: :Woman
-    source: Sophie_Habsburg
-  AddLiteral (c2c30183-d92b-403a-8cc9-2d50f8ca73ed)
- Call ID: c2c30183-d92b-403a-8cc9-2d50f8ca73ed
-  Args:
-    source: Sophie_Habsburg
-    literal_type: xsd:integer
+    source: :Alexia
+    literal_value: 1965
     relation: :hasBirthYear
-    literal_value: 1959
-  AddTriple (f6b6c69a-fe1a-4339-b814-3399da8f94ff)
- Call ID: f6b6c69a-fe1a-4339-b814-3399da8f94ff
-  Args:
-    relation: :knownAs
-    source: Sophie_Habsburg
-    target: Archduchess_Sophie_of_Austria
-  AssignClass (323388cc-9d24-4293-8585-9573bd77e7ce)
- Call ID: 323388cc-9d24-4293-8585-9573bd77e7ce
-  Args:
-    type: :Person
-    source: Archduke_Ferdinand_Karl_Max_of_Austria
-  AssignClass (3ca4a9da-a5e8-4bf8-8301-1350b6fc0100)
- Call ID: 3ca4a9da-a5e8-4bf8-8301-1350b6fc0100
-  Args:
-    type: :Man
-    source: Archduke_Ferdinand_Karl_Max_of_Austria
-  AssignClass (ae285627-352b-488e-a448-58586e2bece0)
- Call ID: ae285627-352b-488e-a448-58586e2bece0
-  Args:
-    type: :Person
-    source: Countess_Helene_of_Torring-Jettenbach
-  AssignClass (bdf420ea-9066-49f9-92c4-fcd8eaa805fe)
- Call ID: bdf420ea-9066-49f9-92c4-fcd8eaa805fe
-  Args:
-    type: :Woman
-    source: Countess_Helene_of_Torring-Jettenbach
-  AddTriple (0f7371fd-eeec-45eb-9190-68cc38d23b0b)
- Call ID: 0f7371fd-eeec-45eb-9190-68cc38d23b0b
-  Args:
-    relation: :hasFather
-    source: Sophie_Habsburg
-    target: Archduke_Ferdinand_Karl_Max_of_Austria
-  AddTriple (295c7153-8a5e-4323-b3c5-459161ee7712)
- Call ID: 295c7153-8a5e-4323-b3c5-459161ee7712
-  Args:
-    target: Countess_Helene_of_Torring-Jettenbach
-    relation: :hasMother
-    source: Sophie_Habsburg
-  AssignClass (b35934d1-9309-4f6a-afdf-5355a967f003)
- Call ID: b35934d1-9309-4f6a-afdf-5355a967f003
-  Args:
-    type: :Person
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-  AssignClass (c12e8470-a93a-4be7-bc0a-6d554a122fb5)
- Call ID: c12e8470-a93a-4be7-bc0a-6d554a122fb5
-  Args:
-    type: :Woman
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-  AddTriple (5706522d-99bf-43e0-8bce-3c75f296beac)
- Call ID: 5706522d-99bf-43e0-8bce-3c75f296beac
-  Args:
-    target: Princess_Elizabeth_of_Greece_and_Denmark
-    source: Countess_Helene_of_Torring-Jettenbach
-    relation: :hasMother
-  AssignClass (6c9296e6-eaa1-49df-ab38-2856b196a822)
- Call ID: 6c9296e6-eaa1-49df-ab38-2856b196a822
-  Args:
-    type: :Person
-    source: Mariano_Hugo_Prince_of_Windisch-Graetz
-  AssignClass (2579a843-c672-40fe-92e9-65e715e82aad)
- Call ID: 2579a843-c672-40fe-92e9-65e715e82aad
-  Args:
-    type: :Man
-    source: Mariano_Hugo_Prince_of_Windisch-Graetz
-  AddTriple (97b1215e-7db5-43d3-82d0-5ee72e81a1ae)
- Call ID: 97b1215e-7db5-43d3-82d0-5ee72e81a1ae
-  Args:
-    relation: :hasRelation
-    source: Sophie_Habsburg
-    target: Mariano_Hugo_Prince_of_Windisch-Graetz
-  AssignClass (62db5f16-81e5-4972-a18b-96c3be00cec7)
- Call ID: 62db5f16-81e5-4972-a18b-96c3be00cec7
-  Args:
-    type: :Person
-    source: Alexis_Ferdinand_of_Windisch-Graetz
-  AssignClass (6d735f16-d7ec-470b-a231-dcd87ee69389)
- Call ID: 6d735f16-d7ec-470b-a231-dcd87ee69389
-  Args:
-    type: :Man
-    source: Alexis_Ferdinand_of_Windisch-Graetz
-  AddTriple (bf607152-ab9b-4759-8911-fb1cb611ba74)
- Call ID: bf607152-ab9b-4759-8911-fb1cb611ba74
-  Args:
-    target: Mariano_Hugo_Prince_of_Windisch-Graetz
-    source: Alexis_Ferdinand_of_Windisch-Graetz
-    relation: :hasFather
-  AddTriple (d0c4d4b1-3bea-4d3e-976e-42e1feda0e11)
- Call ID: d0c4d4b1-3bea-4d3e-976e-42e1feda0e11
-  Args:
-    target: Sophie_Habsburg
-    source: Alexis_Ferdinand_of_Windisch-Graetz
-    relation: :hasMother
-  AddLiteral (1a142f4e-3530-4d81-83b7-6407e4a71303)
- Call ID: 1a142f4e-3530-4d81-83b7-6407e4a71303
-  Args:
-    source: Alexis_Ferdinand_of_Windisch-Graetz
     literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 2010
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Alexis_Ferdinand_of_Windisch-Graetz a :Man,
-          :Person ;
-      :hasDeathYear 2010 ;
-      :hasFather data:Mariano_Hugo_Prince_of_Windisch-Graetz ;
-      :hasMother data:Sophie_Habsburg .
-
-  data:Archduke_Ferdinand_Karl_Max_of_Austria a :Man,
-          :Person .
-
-  data:Countess_Helene_of_Torring-Jettenbach a :Person,
-          :Woman ;
-      :hasMother data:Princess_Elizabeth_of_Greece_and_Denmark .
-
-  data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Sophie_Habsburg a :Person,
-          :Woman ;
-      :hasBirthYear 1959 ;
-      :hasFather data:Archduke_Ferdinand_Karl_Max_of_Austria ;
-      :hasMother data:Countess_Helene_of_Torring-Jettenbach ;
-      :hasRelation data:Mariano_Hugo_Prince_of_Windisch-Graetz ;
-      :knownAs data:Archduchess_Sophie_of_Austria .
-
-  data:Mariano_Hugo_Prince_of_Windisch-Graetz a :Man,
-          :Person .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (cedadde0-7a76-4cb5-a0c4-3ca1d19f487f)
- Call ID: cedadde0-7a76-4cb5-a0c4-3ca1d19f487f
+  AssignClass (60a3161f-f710-48ee-a6de-383c5a6d68d0)
+ Call ID: 60a3161f-f710-48ee-a6de-383c5a6d68d0
   Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Archduchess_Sophie_of_Austria']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (8aad6e6d-ed6e-4c31-93cc-d941a079b8db)
- Call ID: 8aad6e6d-ed6e-4c31-93cc-d941a079b8db
+    source: :ConstantineII
+    type: :Man
+  AssignClass (92ef441c-0eaf-41df-973a-c0914b834195)
+ Call ID: 92ef441c-0eaf-41df-973a-c0914b834195
   Args:
-    source: Archduchess_Sophie_of_Austria
+    source: :ConstantineII
     type: :Person
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Alexis_Ferdinand_of_Windisch-Graetz a :Man,
-          :Person ;
-      :hasDeathYear 2010 ;
-      :hasFather data:Mariano_Hugo_Prince_of_Windisch-Graetz ;
-      :hasMother data:Sophie_Habsburg .
-
-  data:Archduchess_Sophie_of_Austria a :Person .
-
-  data:Archduke_Ferdinand_Karl_Max_of_Austria a :Man,
-          :Person .
-
-  data:Countess_Helene_of_Torring-Jettenbach a :Person,
-          :Woman ;
-      :hasMother data:Princess_Elizabeth_of_Greece_and_Denmark .
-
-  data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Sophie_Habsburg a :Person,
-          :Woman ;
-      :hasBirthYear 1959 ;
-      :hasFather data:Archduke_Ferdinand_Karl_Max_of_Austria ;
-      :hasMother data:Countess_Helene_of_Torring-Jettenbach ;
-      :hasRelation data:Mariano_Hugo_Prince_of_Windisch-Graetz ;
-      :knownAs data:Archduchess_Sophie_of_Austria .
-
-  data:Mariano_Hugo_Prince_of_Windisch-Graetz a :Man,
-          :Person .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (7018253c-9612-414a-9604-baa5d6fc1efc)
- Call ID: 7018253c-9612-414a-9604-baa5d6fc1efc
+  AssignClass (33df0a31-8fb3-4eb2-861a-ad42a55f49e5)
+ Call ID: 33df0a31-8fb3-4eb2-861a-ad42a55f49e5
+  Args:
+    type: :Woman
+    source: :AnneMarie
+  AssignClass (4703df6f-6089-4512-816d-fa5121131667)
+ Call ID: 4703df6f-6089-4512-816d-fa5121131667
+  Args:
+    source: :AnneMarie
+    type: :Person
+  AddTriple (0c891bd7-8b02-45b0-a71b-0eec1cb63295)
+ Call ID: 0c891bd7-8b02-45b0-a71b-0eec1cb63295
+  Args:
+    target: :ConstantineII
+    source: :Alexia
+    relation: :hasFather
+  AddTriple (dc811f8c-1a8f-4369-9d9c-42dd76369321)
+ Call ID: dc811f8c-1a8f-4369-9d9c-42dd76369321
+  Args:
+    relation: :hasMother
+    source: :Alexia
+    target: :AnneMarie
+  AssignClass (60955352-a6d7-499c-b47b-4847278df771)
+ Call ID: 60955352-a6d7-499c-b47b-4847278df771
+  Args:
+    source: :Pavlos
+    type: :Man
+  AssignClass (07740ce8-28f3-4f7f-86ff-b5cd690284d8)
+ Call ID: 07740ce8-28f3-4f7f-86ff-b5cd690284d8
+  Args:
+    type: :Person
+    source: :Pavlos
+  AddTriple (7b47c6c4-87e2-4af2-a40f-8520e5dd3996)
+ Call ID: 7b47c6c4-87e2-4af2-a40f-8520e5dd3996
+  Args:
+    target: :Pavlos
+    relation: :isSiblingOf
+    source: :Alexia
+  AssignClass (a3ad793b-4605-4417-aaf6-7af321f48385)
+ Call ID: a3ad793b-4605-4417-aaf6-7af321f48385
+  Args:
+    type: :Man
+    source: :CarlosJavierMoralesQuintana
+  AssignClass (2ff857d6-0149-4939-bf02-981f0675fb99)
+ Call ID: 2ff857d6-0149-4939-bf02-981f0675fb99
+  Args:
+    source: :CarlosJavierMoralesQuintana
+    type: :Person
+  AddTriple (f1368db4-de64-499b-9739-773cea3dec3b)
+ Call ID: f1368db4-de64-499b-9739-773cea3dec3b
+  Args:
+    source: :Alexia
+    relation: :hasRelation
+    target: :CarlosJavierMoralesQuintana
+  AddLiteral (cdf41ab9-0299-4ecd-b4bd-944ed9b86711)
+ Call ID: cdf41ab9-0299-4ecd-b4bd-944ed9b86711
+  Args:
+    literal_value: 1999
+    source: :Alexia
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AssignClass (7ea8e1da-9b2d-4546-a07b-3dfa2d6d8a1f)
+ Call ID: 7ea8e1da-9b2d-4546-a07b-3dfa2d6d8a1f
+  Args:
+    type: :Woman
+    source: :Theodora
+  AssignClass (f8a59063-6bf7-41b1-8a3b-822a505ecde6)
+ Call ID: f8a59063-6bf7-41b1-8a3b-822a505ecde6
+  Args:
+    type: :Person
+    source: :Theodora
+  AddTriple (017f20b2-6c10-4544-8169-dfd697ffbf21)
+ Call ID: 017f20b2-6c10-4544-8169-dfd697ffbf21
+  Args:
+    target: :Alexia
+    source: :Theodora
+    relation: :isSisterOf
+  AssignClass (93f80563-5c0f-489b-86f4-8cd14d913e51)
+ Call ID: 93f80563-5c0f-489b-86f4-8cd14d913e51
+  Args:
+    source: :MariaOlympia
+    type: :Woman
+  AssignClass (0f1e90a1-c225-4387-b032-0bcad7bdad16)
+ Call ID: 0f1e90a1-c225-4387-b032-0bcad7bdad16
+  Args:
+    type: :Person
+    source: :MariaOlympia
+  AddTriple (db032921-af55-4d70-b49f-a028b6dd41c7)
+ Call ID: db032921-af55-4d70-b49f-a028b6dd41c7
+  Args:
+    source: :MariaOlympia
+    relation: :hasMother
+    target: :Pavlos
+  AssignClass (35d6592d-4be2-42f1-8756-c2f790f5de95)
+ Call ID: 35d6592d-4be2-42f1-8756-c2f790f5de95
+  Args:
+    type: :Woman
+    source: :Sofia
+  AssignClass (602744e9-beb7-4c6f-9f04-b25b9b9e9842)
+ Call ID: 602744e9-beb7-4c6f-9f04-b25b9b9e9842
+  Args:
+    source: :Sofia
+    type: :Person
+  AddTriple (96eac1fb-4587-48d4-9a3e-9aece15ab011)
+ Call ID: 96eac1fb-4587-48d4-9a3e-9aece15ab011
+  Args:
+    relation: :isAuntOf
+    source: :Sofia
+    target: :Alexia
+  AssignClass (21c0e299-e3ec-4ce8-bcdc-ba8f3675e9c6)
+ Call ID: 21c0e299-e3ec-4ce8-bcdc-ba8f3675e9c6
+  Args:
+    type: :Man
+    source: :FelipeVI
+  AssignClass (b90e42ba-af2c-4a6a-8304-db8fb25cf88d)
+ Call ID: b90e42ba-af2c-4a6a-8304-db8fb25cf88d
+  Args:
+    source: :FelipeVI
+    type: :Person
+  AddTriple (90bbb26b-961e-43a1-9f1c-be39f380bd72)
+ Call ID: 90bbb26b-961e-43a1-9f1c-be39f380bd72
+  Args:
+    relation: :isBloodrelationOf
+    source: :Alexia
+    target: :FelipeVI
+  AssignClass (ab388cd6-918a-4101-9ecc-74c15c8f6bbc)
+ Call ID: ab388cd6-918a-4101-9ecc-74c15c8f6bbc
+  Args:
+    type: :Woman
+    source: :Ingrid
+  AssignClass (281a0f60-fb92-4d93-82c7-b4017d296b8a)
+ Call ID: 281a0f60-fb92-4d93-82c7-b4017d296b8a
+  Args:
+    source: :Ingrid
+    type: :Person
+  AddTriple (d9f80695-855d-4a22-876c-05e96f3b2eba)
+ Call ID: d9f80695-855d-4a22-876c-05e96f3b2eba
+  Args:
+    relation: :hasMother
+    source: :AnneMarie
+    target: :Ingrid
+  AssignClass (f9044905-677a-46af-9fb5-0c7043773a1a)
+ Call ID: f9044905-677a-46af-9fb5-0c7043773a1a
+  Args:
+    source: :Mafalda
+    type: :Woman
+  AssignClass (58fecf20-32d9-48fe-b85a-5bd4295627c0)
+ Call ID: 58fecf20-32d9-48fe-b85a-5bd4295627c0
+  Args:
+    source: :Mafalda
+    type: :Person
+  AssignClass (9898aac9-c488-469a-99d6-49c475973942)
+ Call ID: 9898aac9-c488-469a-99d6-49c475973942
+  Args:
+    type: :Man
+    source: :Kyril
+  AssignClass (f252243b-05c1-4397-be9d-551571728c9f)
+ Call ID: f252243b-05c1-4397-be9d-551571728c9f
+  Args:
+    source: :Kyril
+    type: :Person
+  AddTriple (8560a7b3-bc8e-4349-a591-474a08a726d3)
+ Call ID: 8560a7b3-bc8e-4349-a591-474a08a726d3
+  Args:
+    source: :Mafalda
+    relation: :hasFather
+    target: :Kyril
+  AssignClass (b6d52b44-a178-446b-9682-cd22dde039b7)
+ Call ID: b6d52b44-a178-446b-9682-cd22dde039b7
+  Args:
+    type: :Man
+    source: :Simeon
+  AssignClass (196489ea-d042-4533-8693-fdf34a6b28c0)
+ Call ID: 196489ea-d042-4533-8693-fdf34a6b28c0
+  Args:
+    source: :Simeon
+    type: :Person
+  AddTriple (5f3344f8-1b3b-4e50-ad97-40479a23ba28)
+ Call ID: 5f3344f8-1b3b-4e50-ad97-40479a23ba28
+  Args:
+    relation: :hasFather
+    source: :Kyril
+    target: :Simeon
+  Finish (47afa4bf-9c49-4284-b935-00394851570a)
+ Call ID: 47afa4bf-9c49-4284-b935-00394851570a
   Args:

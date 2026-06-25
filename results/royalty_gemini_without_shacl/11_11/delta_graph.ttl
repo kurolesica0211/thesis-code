@@ -2,41 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Mia_Tindall a :Person,
+data:AnnePrincessRoyal a :Person,
         :Woman ;
-    :hasFather data:Mike_Tindall ;
-    :hasMother data:Zara_Tindall .
+    :isMotherOf data:ZaraTindall .
 
-data:Anne_Princess_Royal a :Ancestor,
-        :Person,
+data:MarkPhillips a :Man,
+        :Person ;
+    :isFatherOf data:FelicityWade,
+        data:StephaniePhillips,
+        data:ZaraTindall .
+
+data:FelicityWade a :Person,
         :Woman .
 
-data:Felicity_Wade a :Person,
-        :Woman ;
-    :hasFather data:Mark_Phillips .
-
-data:Mike_Tindall a :Man,
-        :Person .
-
-data:Peter_Phillips a :Man,
-        :Person .
-
-data:Stephanie_Phillips a :Person,
-        :Woman ;
-    :hasFather data:Mark_Phillips .
-
-data:Zara_Tindall a :Person,
-        :Woman ;
-    :formerlyKnownAs "Zara Phillips"^^xsd:string ;
-    :hasBirthYear 1981 ;
-    :hasBrother data:Peter_Phillips ;
-    :hasFather data:Mark_Phillips ;
-    :hasMarriageYear 2011 ;
-    :hasMother data:Anne_Princess_Royal .
-
-data:Mark_Phillips a :Ancestor,
-        :Man,
+data:MikeTindall a :Man,
         :Person ;
-    :hasSister data:Felicity_Wade,
-        data:Stephanie_Phillips .
+    :isFatherOf data:LenaElizabethTindall,
+        data:MiaGraceTindall .
+
+data:PeterPhillips a :Man,
+        :Person .
+
+data:StephaniePhillips a :Person,
+        :Woman .
+
+data:ZaraPhillips a :Person,
+        :Woman .
+
+data:LenaElizabethTindall a :Person,
+        :Woman .
+
+data:MiaGraceTindall a :Person,
+        :Woman .
+
+data:ZaraTindall a :Person,
+        :Woman ;
+    :alsoKnownAs data:ZaraPhillips ;
+    :hasBirthYear 1981 ;
+    :hasMarriageYear 2011 ;
+    :hasRelation data:MikeTindall ;
+    :isMotherOf data:LenaElizabethTindall,
+        data:MiaGraceTindall ;
+    :isSiblingOf data:PeterPhillips .
 

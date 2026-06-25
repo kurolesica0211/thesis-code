@@ -1,0 +1,501 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Prince_Edward-_Duke_of_Kent a :Man,
+        :Person ;
+    rdfs:label "Prince Edward, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "15479:15495"^^xsd:string,
+        "15483:15495"^^xsd:string,
+        "1559:1575"^^xsd:string,
+        "1563:1575"^^xsd:string,
+        "17590:17606"^^xsd:string,
+        "17594:17606"^^xsd:string ;
+    data:posIndicesPart "10590:10596"^^xsd:string,
+        "10729:10735"^^xsd:string,
+        "11752:11758"^^xsd:string,
+        "11909:11915"^^xsd:string,
+        "12265:12271"^^xsd:string,
+        "12407:12413"^^xsd:string,
+        "12794:12800"^^xsd:string,
+        "12851:12857"^^xsd:string,
+        "12907:12913"^^xsd:string,
+        "12935:12941"^^xsd:string,
+        "13631:13637"^^xsd:string,
+        "14135:14141"^^xsd:string,
+        "14646:14652"^^xsd:string,
+        "14677:14683"^^xsd:string,
+        "15626:15632"^^xsd:string,
+        "15860:15866"^^xsd:string,
+        "15919:15925"^^xsd:string,
+        "17467:17473"^^xsd:string,
+        "17799:17805"^^xsd:string,
+        "18705:18711"^^xsd:string,
+        "3097:3103"^^xsd:string,
+        "3416:3420"^^xsd:string,
+        "3567:3571"^^xsd:string,
+        "3621:3627"^^xsd:string,
+        "3817:3821"^^xsd:string,
+        "4718:4724"^^xsd:string,
+        "5314:5320"^^xsd:string,
+        "6076:6082"^^xsd:string,
+        "6796:6802"^^xsd:string,
+        "6865:6871"^^xsd:string,
+        "7681:7687"^^xsd:string,
+        "8638:8644"^^xsd:string,
+        "9071:9077"^^xsd:string,
+        "9323:9329"^^xsd:string,
+        "9433:9439"^^xsd:string,
+        "9505:9511"^^xsd:string,
+        "9642:9648"^^xsd:string,
+        "9955:9961"^^xsd:string ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent"^^xsd:string,
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent"^^xsd:string,
+        "Edward Kent"^^xsd:string,
+        "His Royal Highness The Duke of Kent"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward of Kent"^^xsd:string,
+        "The Duke of Kent"^^xsd:string ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
+    :hasRelation data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Edward-_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Elena Vladimirovna of Russia"^^xsd:string ;
+    data:posIndicesFull "2077:2119"^^xsd:string,
+        "305:347"^^xsd:string ;
+    data:posIndicesPart "14234:14239"^^xsd:string,
+        "14240:14247"^^xsd:string,
+        "14248:14253"^^xsd:string,
+        "16057:16062"^^xsd:string,
+        "16063:16070"^^xsd:string,
+        "16071:16076"^^xsd:string,
+        "16816:16821"^^xsd:string,
+        "16822:16829"^^xsd:string,
+        "16830:16835"^^xsd:string,
+        "19237:19244"^^xsd:string,
+        "2599:2605"^^xsd:string,
+        "3139:3145"^^xsd:string,
+        "3293:3299"^^xsd:string,
+        "3410:3415"^^xsd:string,
+        "3445:3450"^^xsd:string,
+        "3451:3458"^^xsd:string,
+        "3561:3566"^^xsd:string,
+        "3811:3816"^^xsd:string,
+        "3886:3891"^^xsd:string,
+        "3892:3899"^^xsd:string,
+        "4049:4054"^^xsd:string,
+        "4055:4062"^^xsd:string,
+        "4330:4336"^^xsd:string,
+        "5415:5420"^^xsd:string,
+        "5421:5428"^^xsd:string,
+        "5429:5434"^^xsd:string,
+        "5663:5669"^^xsd:string,
+        "7118:7123"^^xsd:string,
+        "7124:7131"^^xsd:string,
+        "7132:7137"^^xsd:string,
+        "7778:7783"^^xsd:string,
+        "7784:7791"^^xsd:string,
+        "8030:8035"^^xsd:string,
+        "8036:8043"^^xsd:string,
+        "8044:8049"^^xsd:string,
+        "8123:8128"^^xsd:string,
+        "8129:8136"^^xsd:string ;
+    data:wdtLink wdt:Q232483 ;
+    :hasChild data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isMotherOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Constantine I of Greece"^^xsd:string ;
+    data:posIndicesFull "10460:10473"^^xsd:string,
+        "11008:11026"^^xsd:string,
+        "11013:11026"^^xsd:string,
+        "11358:11376"^^xsd:string,
+        "11363:11376"^^xsd:string,
+        "2785:2798"^^xsd:string,
+        "5983:6001"^^xsd:string,
+        "5988:6001"^^xsd:string,
+        "644:662"^^xsd:string,
+        "6499:6512"^^xsd:string,
+        "649:662"^^xsd:string,
+        "6742:6755"^^xsd:string,
+        "8861:8874"^^xsd:string ;
+    data:posIndicesPart "10851:10857"^^xsd:string,
+        "14632:14638"^^xsd:string,
+        "15691:15697"^^xsd:string,
+        "15973:15979"^^xsd:string,
+        "19479:19485"^^xsd:string,
+        "19551:19557"^^xsd:string,
+        "2008:2014"^^xsd:string,
+        "2492:2498"^^xsd:string,
+        "4603:4609"^^xsd:string,
+        "4782:4788"^^xsd:string,
+        "6924:6930"^^xsd:string,
+        "8965:8971"^^xsd:string,
+        "9291:9297"^^xsd:string ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I"^^xsd:string,
+        "Constantine Oldenburg I"^^xsd:string,
+        "King Constantine I"^^xsd:string,
+        "King Constantine I of Greece"^^xsd:string,
+        "Konstantinos I of Greece"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Princess_Elizabeth_of_Greece_and_Denmark .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "2641:2649"^^xsd:string,
+        "4698:4706"^^xsd:string,
+        "4936:4944"^^xsd:string,
+        "5895:5902"^^xsd:string ;
+    data:posIndicesPart "10322:10328"^^xsd:string,
+        "10800:10806"^^xsd:string,
+        "10851:10857"^^xsd:string,
+        "12161:12167"^^xsd:string,
+        "14619:14625"^^xsd:string,
+        "14632:14638"^^xsd:string,
+        "15691:15697"^^xsd:string,
+        "15973:15979"^^xsd:string,
+        "19479:19485"^^xsd:string,
+        "19551:19557"^^xsd:string,
+        "4603:4609"^^xsd:string,
+        "4782:4788"^^xsd:string,
+        "6924:6930"^^xsd:string,
+        "8965:8971"^^xsd:string,
+        "9291:9297"^^xsd:string,
+        "9330:9336"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark .
+
+data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Elizabeth of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "0:40"^^xsd:string,
+        "19966:20006"^^xsd:string,
+        "19975:20006"^^xsd:string,
+        "9:40"^^xsd:string ;
+    data:posIndicesPart "10011:10020"^^xsd:string,
+        "10129:10138"^^xsd:string,
+        "10291:10300"^^xsd:string,
+        "10322:10328"^^xsd:string,
+        "10851:10857"^^xsd:string,
+        "10919:10928"^^xsd:string,
+        "11038:11047"^^xsd:string,
+        "11201:11210"^^xsd:string,
+        "11432:11440"^^xsd:string,
+        "11499:11508"^^xsd:string,
+        "11638:11647"^^xsd:string,
+        "11847:11856"^^xsd:string,
+        "1185:1194"^^xsd:string,
+        "12075:12084"^^xsd:string,
+        "12376:12384"^^xsd:string,
+        "12509:12518"^^xsd:string,
+        "12648:12656"^^xsd:string,
+        "12765:12773"^^xsd:string,
+        "12892:12901"^^xsd:string,
+        "13006:13014"^^xsd:string,
+        "1308:1317"^^xsd:string,
+        "13239:13247"^^xsd:string,
+        "13430:13438"^^xsd:string,
+        "13439:13448"^^xsd:string,
+        "13750:13759"^^xsd:string,
+        "13931:13939"^^xsd:string,
+        "14073:14082"^^xsd:string,
+        "1409:1417"^^xsd:string,
+        "14314:14323"^^xsd:string,
+        "14353:14362"^^xsd:string,
+        "14632:14638"^^xsd:string,
+        "14876:14885"^^xsd:string,
+        "14926:14934"^^xsd:string,
+        "15115:15124"^^xsd:string,
+        "15263:15271"^^xsd:string,
+        "15364:15373"^^xsd:string,
+        "15455:15463"^^xsd:string,
+        "15608:15616"^^xsd:string,
+        "15691:15697"^^xsd:string,
+        "15702:15711"^^xsd:string,
+        "15768:15777"^^xsd:string,
+        "15875:15883"^^xsd:string,
+        "1589:1598"^^xsd:string,
+        "15973:15979"^^xsd:string,
+        "16001:16009"^^xsd:string,
+        "16117:16126"^^xsd:string,
+        "16186:16194"^^xsd:string,
+        "16299:16308"^^xsd:string,
+        "16440:16449"^^xsd:string,
+        "16517:16525"^^xsd:string,
+        "16572:16581"^^xsd:string,
+        "16903:16912"^^xsd:string,
+        "16974:16983"^^xsd:string,
+        "17154:17162"^^xsd:string,
+        "17349:17358"^^xsd:string,
+        "18013:18022"^^xsd:string,
+        "18153:18161"^^xsd:string,
+        "18244:18252"^^xsd:string,
+        "18337:18346"^^xsd:string,
+        "1837:1846"^^xsd:string,
+        "18435:18444"^^xsd:string,
+        "18536:18545"^^xsd:string,
+        "18601:18609"^^xsd:string,
+        "18610:18619"^^xsd:string,
+        "18671:18680"^^xsd:string,
+        "18766:18775"^^xsd:string,
+        "18837:18845"^^xsd:string,
+        "18942:18950"^^xsd:string,
+        "2008:2014"^^xsd:string,
+        "2121:2129"^^xsd:string,
+        "2130:2139"^^xsd:string,
+        "2249:2257"^^xsd:string,
+        "2362:2371"^^xsd:string,
+        "2492:2498"^^xsd:string,
+        "2500:2509"^^xsd:string,
+        "2700:2709"^^xsd:string,
+        "2839:2847"^^xsd:string,
+        "2952:2961"^^xsd:string,
+        "3172:3181"^^xsd:string,
+        "349:357"^^xsd:string,
+        "358:367"^^xsd:string,
+        "4115:4124"^^xsd:string,
+        "411:417"^^xsd:string,
+        "4162:4171"^^xsd:string,
+        "4338:4346"^^xsd:string,
+        "4347:4356"^^xsd:string,
+        "4521:4530"^^xsd:string,
+        "4603:4609"^^xsd:string,
+        "4782:4788"^^xsd:string,
+        "5006:5015"^^xsd:string,
+        "503:509"^^xsd:string,
+        "5055:5064"^^xsd:string,
+        "5330:5338"^^xsd:string,
+        "5606:5615"^^xsd:string,
+        "5806:5815"^^xsd:string,
+        "5949:5958"^^xsd:string,
+        "6353:6362"^^xsd:string,
+        "6589:6598"^^xsd:string,
+        "6924:6930"^^xsd:string,
+        "6982:6991"^^xsd:string,
+        "7272:7281"^^xsd:string,
+        "7372:7380"^^xsd:string,
+        "7649:7658"^^xsd:string,
+        "804:812"^^xsd:string,
+        "8217:8226"^^xsd:string,
+        "8414:8423"^^xsd:string,
+        "8457:8466"^^xsd:string,
+        "8965:8971"^^xsd:string,
+        "9123:9132"^^xsd:string,
+        "9248:9257"^^xsd:string,
+        "9291:9297"^^xsd:string,
+        "9345:9353"^^xsd:string,
+        "9410:9418"^^xsd:string,
+        "9618:9626"^^xsd:string,
+        "9661:9668"^^xsd:string,
+        "976:984"^^xsd:string,
+        "9825:9834"^^xsd:string,
+        "9877:9885"^^xsd:string ;
+    data:wdtLink wdt:Q19006 ;
+    :alsoKnownAs "Elizabeth Oldenburg"^^xsd:string,
+        "Elizabeth of Greece and Denmark"^^xsd:string,
+        "Princess Elizabeth, Countess of Toerring-Jettenbach"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:George_I_of_Greece,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Elizabeth_of_Greece_and_Denmark .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Nicholas of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "2035:2072"^^xsd:string,
+        "263:300"^^xsd:string ;
+    data:posIndicesPart "10322:10328"^^xsd:string,
+        "10590:10596"^^xsd:string,
+        "10729:10735"^^xsd:string,
+        "10736:10744"^^xsd:string,
+        "1083:1089"^^xsd:string,
+        "10851:10857"^^xsd:string,
+        "1104:1110"^^xsd:string,
+        "1124:1130"^^xsd:string,
+        "1131:1139"^^xsd:string,
+        "11752:11758"^^xsd:string,
+        "11759:11767"^^xsd:string,
+        "11909:11915"^^xsd:string,
+        "11916:11924"^^xsd:string,
+        "12265:12271"^^xsd:string,
+        "12407:12413"^^xsd:string,
+        "12794:12800"^^xsd:string,
+        "12907:12913"^^xsd:string,
+        "12935:12941"^^xsd:string,
+        "12942:12950"^^xsd:string,
+        "13631:13637"^^xsd:string,
+        "14135:14141"^^xsd:string,
+        "14142:14150"^^xsd:string,
+        "14632:14638"^^xsd:string,
+        "14646:14652"^^xsd:string,
+        "14677:14683"^^xsd:string,
+        "1527:1533"^^xsd:string,
+        "15626:15632"^^xsd:string,
+        "15691:15697"^^xsd:string,
+        "15860:15866"^^xsd:string,
+        "15919:15925"^^xsd:string,
+        "15926:15934"^^xsd:string,
+        "15973:15979"^^xsd:string,
+        "17467:17473"^^xsd:string,
+        "17799:17805"^^xsd:string,
+        "18705:18711"^^xsd:string,
+        "19479:19485"^^xsd:string,
+        "19551:19557"^^xsd:string,
+        "2492:2498"^^xsd:string,
+        "2540:2548"^^xsd:string,
+        "3097:3103"^^xsd:string,
+        "3104:3112"^^xsd:string,
+        "3621:3627"^^xsd:string,
+        "3628:3636"^^xsd:string,
+        "3743:3751"^^xsd:string,
+        "4603:4609"^^xsd:string,
+        "4718:4724"^^xsd:string,
+        "4725:4733"^^xsd:string,
+        "4782:4788"^^xsd:string,
+        "503:509"^^xsd:string,
+        "5314:5320"^^xsd:string,
+        "6076:6082"^^xsd:string,
+        "6083:6091"^^xsd:string,
+        "6416:6424"^^xsd:string,
+        "6796:6802"^^xsd:string,
+        "6865:6871"^^xsd:string,
+        "6872:6880"^^xsd:string,
+        "6924:6930"^^xsd:string,
+        "7681:7687"^^xsd:string,
+        "7688:7696"^^xsd:string,
+        "8638:8644"^^xsd:string,
+        "8965:8971"^^xsd:string,
+        "9071:9077"^^xsd:string,
+        "9078:9086"^^xsd:string,
+        "9291:9297"^^xsd:string,
+        "9323:9329"^^xsd:string,
+        "9433:9439"^^xsd:string,
+        "9505:9511"^^xsd:string,
+        "9642:9648"^^xsd:string,
+        "9661:9668"^^xsd:string,
+        "9955:9961"^^xsd:string ;
+    data:wdtLink wdt:Q170160 ;
+    :alsoKnownAs "Prince Nikolaos of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isFatherOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Princess_Elizabeth_of_Greece_and_Denmark .
+

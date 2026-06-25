@@ -1,0 +1,80 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Ernest_II-_Count_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Ernest II, Count of Lippe-Biesterfeld"^^xsd:string ;
+    data:posIndicesFull "235:272"^^xsd:string,
+        "97:134"^^xsd:string ;
+    data:posIndicesPart "1034:1039"^^xsd:string,
+        "362:367"^^xsd:string,
+        "462:467"^^xsd:string,
+        "512:517"^^xsd:string,
+        "578:583"^^xsd:string,
+        "675:681"^^xsd:string,
+        "706:711"^^xsd:string,
+        "930:935"^^xsd:string,
+        "985:990"^^xsd:string ;
+    data:wdtLink wdt:Q66592 ;
+    :hasBrother data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :hasChild data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasDaughter data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :hasSex data:male ;
+    :isAncestorOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :isFatherOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isParentOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :isUncleOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Person,
+        :Woman ;
+    rdfs:label "Countess Adelaide of Lippe-Biesterfeld"^^xsd:string ;
+    data:posIndicesFull "0:38"^^xsd:string ;
+    data:posIndicesPart "1034:1039"^^xsd:string,
+        "1052:1060"^^xsd:string,
+        "1296:1304"^^xsd:string,
+        "198:206"^^xsd:string,
+        "287:295"^^xsd:string,
+        "362:367"^^xsd:string,
+        "462:467"^^xsd:string,
+        "512:517"^^xsd:string,
+        "578:583"^^xsd:string,
+        "706:711"^^xsd:string,
+        "769:777"^^xsd:string,
+        "930:935"^^xsd:string,
+        "985:990"^^xsd:string ;
+    data:wdtLink wdt:Q2085981 ;
+    :hasAncestor data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :hasFather data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :hasParent data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :hasRelation data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :hasSex data:female ;
+    :hasSister data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isChildOf data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Ernest_II-_Count_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isSisterOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+

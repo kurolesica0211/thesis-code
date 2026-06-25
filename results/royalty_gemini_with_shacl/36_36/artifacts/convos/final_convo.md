@@ -87,16 +87,20 @@ Please update the Knowledge Graph based on the provided data.
 ### Input Text:
 Wilhelm Heinrich Michael Louis Ferdinand Friedrich Franz Wladimir Prinz von Preussen (22 March 1940 – 3 April 2014) was a descendant of the Hohenzollern dynasty which ruled Germany until the end of World War I.
 His great-grandfather Wilhelm II was the German Emperor and King of Prussia until 1918.
+Although Kaiser Wilhelm died in exile and his family was stripped of much of its wealth and recognition of its rank and titles by the German Republic, Michael spent nearly all of his life in Germany.
 Biography
 
 Michael was the second son of Louis Ferdinand, Prince of Prussia, and Grand Duchess Kira Kirillovna of Russia.
 Having made the decision to contract a non-dynastic marriage, he submitted to his father (then head of the family) a renunciation on behalf of himself and his future descendants to the family's claim to the defunct thrones of Imperial Germany and Royal Prussia, executed at Bremen on 29 August 1966.
+Along with his elder brother, Michael eventually repudiated the implications of his renunciation claiming, in a lawsuit against his nephew Georg Friedrich Prinz von Preussen, that the forfeiture of an equal share with his siblings in the family's remaining fortune, the bulk of which had been placed in a trust for William II's heir, was discriminatory.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -112,39 +116,9 @@ Having made the decision to contract a non-dynastic marriage, he submitted to hi
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -159,6 +133,23 @@ Having made the decision to contract a non-dynastic marriage, he submitted to hi
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -176,6 +167,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -243,29 +249,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -274,6 +272,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -286,6 +292,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -294,17 +302,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -332,6 +342,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -347,87 +441,89 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (6832e0ef-aa3d-441d-9fec-ef268cc4c027)
- Call ID: 6832e0ef-aa3d-441d-9fec-ef268cc4c027
+  AssignClass (02c08da2-a949-41cc-80c8-b4b52366dc5e)
+ Call ID: 02c08da2-a949-41cc-80c8-b4b52366dc5e
   Args:
     type: :Man
     source: :Michael_Prinz_von_Preussen
-  AssignClass (b7fb60bc-18e0-428a-aae6-72c64e18357f)
- Call ID: b7fb60bc-18e0-428a-aae6-72c64e18357f
+  AssignClass (6462db25-4436-49dc-953e-5bd399bea3f6)
+ Call ID: 6462db25-4436-49dc-953e-5bd399bea3f6
   Args:
-    type: :Person
-    source: :Michael_Prinz_von_Preussen
-  AddLiteral (7378b643-4158-470a-b890-3014f34f3faa)
- Call ID: 7378b643-4158-470a-b890-3014f34f3faa
+    type: :Man
+    source: :Louis_Ferdinand_Prince_of_Prussia
+  AssignClass (188b5869-aa38-41cf-95f8-bea9f2849f48)
+ Call ID: 188b5869-aa38-41cf-95f8-bea9f2849f48
   Args:
-    literal_value: Male
-    relation: :hasSex
-    source: :Michael_Prinz_von_Preussen
-    literal_type: xsd:string
-  AddLiteral (8b72cba4-03a4-4429-b540-700d9099d6b5)
- Call ID: 8b72cba4-03a4-4429-b540-700d9099d6b5
+    source: :Kira_Kirillovna_of_Russia
+    type: :Woman
+  AssignClass (5d677d97-299c-49cf-8d51-66a752fa8aa4)
+ Call ID: 5d677d97-299c-49cf-8d51-66a752fa8aa4
   Args:
-    literal_type: xsd:integer
-    literal_value: 1940
+    source: :Wilhelm_II
+    type: :Man
+  AssignClass (e570a860-3562-4d2a-adf4-2fd87d1c66d6)
+ Call ID: e570a860-3562-4d2a-adf4-2fd87d1c66d6
+  Args:
+    source: :Georg_Friedrich_Prinz_von_Preussen
+    type: :Man
+  AddLiteral (b45001c0-f14d-4fb7-98bb-cee65c9dbad4)
+ Call ID: b45001c0-f14d-4fb7-98bb-cee65c9dbad4
+  Args:
     relation: :hasBirthYear
+    literal_type: xsd:integer
     source: :Michael_Prinz_von_Preussen
-  AddLiteral (16460aae-86cf-4aea-972d-73e180ce52b1)
- Call ID: 16460aae-86cf-4aea-972d-73e180ce52b1
+    literal_value: 1940
+  AddLiteral (18a16ef3-4511-4599-9099-d5f0ebca5377)
+ Call ID: 18a16ef3-4511-4599-9099-d5f0ebca5377
   Args:
     literal_value: 2014
-    relation: :hasDeathYear
     source: :Michael_Prinz_von_Preussen
     literal_type: xsd:integer
-  AssignClass (873043f3-7707-4da8-b8fd-4ec863b0f104)
- Call ID: 873043f3-7707-4da8-b8fd-4ec863b0f104
+    relation: :hasDeathYear
+  AddTriple (35232ba0-8862-433c-bb98-214a4ff7611b)
+ Call ID: 35232ba0-8862-433c-bb98-214a4ff7611b
   Args:
-    source: :Wilhelm_II
-    type: :Man
-  AssignClass (b7ca705a-f402-46e5-9520-5298961c36c9)
- Call ID: b7ca705a-f402-46e5-9520-5298961c36c9
-  Args:
-    type: :Person
-    source: :Wilhelm_II
-  AssignClass (fd1bb4bb-e937-4dfe-ba79-77a9e256f283)
- Call ID: fd1bb4bb-e937-4dfe-ba79-77a9e256f283
-  Args:
-    type: :Man
-    source: :Louis_Ferdinand_Prinz_von_Preussen
-  AssignClass (691bb156-8581-4824-80cc-3b6bc463f672)
- Call ID: 691bb156-8581-4824-80cc-3b6bc463f672
-  Args:
-    source: :Louis_Ferdinand_Prinz_von_Preussen
-    type: :Person
-  AssignClass (0ec4cf89-0b0f-45ed-9628-f797f59e0a09)
- Call ID: 0ec4cf89-0b0f-45ed-9628-f797f59e0a09
-  Args:
-    type: :Woman
-    source: :Kira_Kirillovna
-  AssignClass (d05e8af8-48be-4b06-b33d-c4e65e374375)
- Call ID: d05e8af8-48be-4b06-b33d-c4e65e374375
-  Args:
-    source: :Kira_Kirillovna
-    type: :Person
-  AddTriple (bb28b978-2fa1-4dfb-afd9-bebf495d71d8)
- Call ID: bb28b978-2fa1-4dfb-afd9-bebf495d71d8
-  Args:
-    source: :Michael_Prinz_von_Preussen
+    target: :Louis_Ferdinand_Prince_of_Prussia
     relation: :hasFather
-    target: :Louis_Ferdinand_Prinz_von_Preussen
-  AddTriple (ad08aa81-cd6e-4890-ad1f-aa9ee37b0525)
- Call ID: ad08aa81-cd6e-4890-ad1f-aa9ee37b0525
+    source: :Michael_Prinz_von_Preussen
+  AddTriple (3caea92c-9ca7-420e-96e8-468746d90cd5)
+ Call ID: 3caea92c-9ca7-420e-96e8-468746d90cd5
   Args:
-    target: :Kira_Kirillovna
+    target: :Kira_Kirillovna_of_Russia
+    source: :Michael_Prinz_von_Preussen
     relation: :hasMother
-    source: :Michael_Prinz_von_Preussen
-  AddTriple (50217898-dd6a-4567-b4d7-8ba2c31a3481)
- Call ID: 50217898-dd6a-4567-b4d7-8ba2c31a3481
+  AddTriple (e600b91c-7ca7-424d-a973-1e2f64575608)
+ Call ID: e600b91c-7ca7-424d-a973-1e2f64575608
   Args:
-    relation: :hasAncestor
-    source: :Michael_Prinz_von_Preussen
+    relation: :hasFather
+    source: :Louis_Ferdinand_Prince_of_Prussia
     target: :Wilhelm_II
-  Finish (b6603f70-7182-4e8c-8cd8-053fc3b63a75)
- Call ID: b6603f70-7182-4e8c-8cd8-053fc3b63a75
+  AddTriple (d1ac6610-5436-4c8e-94fa-18ae60479f27)
+ Call ID: d1ac6610-5436-4c8e-94fa-18ae60479f27
+  Args:
+    relation: :isFatherOf
+    source: :Wilhelm_II
+    target: :Louis_Ferdinand_Prince_of_Prussia
+  AddTriple (4797b4db-e467-43de-b980-f6af97d03a66)
+ Call ID: 4797b4db-e467-43de-b980-f6af97d03a66
+  Args:
+    target: :Michael_Prinz_von_Preussen
+    source: :Louis_Ferdinand_Prince_of_Prussia
+    relation: :isFatherOf
+  AddTriple (d42fa848-a04d-476f-a262-c7b8af480bb1)
+ Call ID: d42fa848-a04d-476f-a262-c7b8af480bb1
+  Args:
+    source: :Kira_Kirillovna_of_Russia
+    relation: :isMotherOf
+    target: :Michael_Prinz_von_Preussen
+  AddTriple (4a0eaa45-556d-4e20-9608-ccabf48dcd1d)
+ Call ID: 4a0eaa45-556d-4e20-9608-ccabf48dcd1d
+  Args:
+    target: :Georg_Friedrich_Prinz_von_Preussen
+    source: :Michael_Prinz_von_Preussen
+    relation: :isUncleOf
+  Finish (c5ab2c67-0c0a-41f7-a057-7022bff33761)
+ Call ID: c5ab2c67-0c0a-41f7-a057-7022bff33761
   Args:
 
 ================================= Tool Message =================================
@@ -489,23 +585,24 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Michael_Prinz_von_Preussen a :Man,
-          :Person ;
-      :hasAncestor data:Wilhelm_II ;
+  data:Georg_Friedrich_Prinz_von_Preussen a :Man .
+
+  data:Kira_Kirillovna_of_Russia a :Woman ;
+      :isMotherOf data:Michael_Prinz_von_Preussen .
+
+  data:Wilhelm_II a :Man ;
+      :isFatherOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+  data:Louis_Ferdinand_Prince_of_Prussia a :Man ;
+      :hasFather data:Wilhelm_II ;
+      :isFatherOf data:Michael_Prinz_von_Preussen .
+
+  data:Michael_Prinz_von_Preussen a :Man ;
       :hasBirthYear 1940 ;
       :hasDeathYear 2014 ;
-      :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;
-      :hasMother data:Kira_Kirillovna ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Kira_Kirillovna a :Person,
-          :Woman .
-
-  data:Louis_Ferdinand_Prinz_von_Preussen a :Man,
-          :Person .
-
-  data:Wilhelm_II a :Man,
-          :Person .
+      :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
+      :hasMother data:Kira_Kirillovna_of_Russia ;
+      :isUncleOf data:Georg_Friedrich_Prinz_von_Preussen .
 
 
 
@@ -517,150 +614,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (b6195a0b-9751-4355-b982-4be0e47c807a)
- Call ID: b6195a0b-9751-4355-b982-4be0e47c807a
+  ValidateShacl (3b21fedb-404e-42e1-918e-d53726e08305)
+ Call ID: 3b21fedb-404e-42e1-918e-d53726e08305
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:17
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Prinz_von_Preussen' is not assigned the required class ':Sex'.
+      The node Wilhelm_II is used as a subject of :isFatherOf but lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(node='Wilhelm_II', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The value 'Wilhelm_II' for the property 'hasAncestor' on node 'Michael_Prinz_von_Preussen' is missing the required class ':Ancestor'.
+      The node Louis_Ferdinand_Prince_of_Prussia is used as a subject of :isFatherOf but lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Wilhelm_II, :Ancestor)
+      AssignClass(node='Louis_Ferdinand_Prince_of_Prussia', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Louis_Ferdinand_Prinz_von_Preussen' for the property 'hasFather' on node 'Michael_Prinz_von_Preussen' is missing the required class ':Ancestor'.
+      The father of Michael_Prinz_von_Preussen, Louis_Ferdinand_Prince_of_Prussia, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_Ferdinand_Prinz_von_Preussen, :Ancestor)
+      AssignClass(node='Louis_Ferdinand_Prince_of_Prussia', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Kira_Kirillovna' for the property 'hasMother' on node 'Michael_Prinz_von_Preussen' is missing the required class ':Ancestor'.
+      The father of Louis_Ferdinand_Prince_of_Prussia, Wilhelm_II, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Kira_Kirillovna, :Ancestor)
+      AssignClass(node='Wilhelm_II', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Prinz_von_Preussen' lacks the mandatory ':Sex' class assignment.
+      The mother of Michael_Prinz_von_Preussen, Kira_Kirillovna_of_Russia, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(node='Kira_Kirillovna_of_Russia', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Prinz_von_Preussen' is missing the required ':Sex' class.
+      The father of Louis_Ferdinand_Prince_of_Prussia, Wilhelm_II, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(node='Wilhelm_II', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Wilhelm_II' used in the 'hasAncestor' relationship is missing the required ':Ancestor' class.
+      The father of Michael_Prinz_von_Preussen, Louis_Ferdinand_Prince_of_Prussia, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Wilhelm_II, :Ancestor)
+      AssignClass(node='Louis_Ferdinand_Prince_of_Prussia', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Louis_Ferdinand_Prinz_von_Preussen' used in the 'hasFather' relationship is missing the required ':Ancestor' class.
+      The mother of Michael_Prinz_von_Preussen, Kira_Kirillovna_of_Russia, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_Ferdinand_Prinz_von_Preussen, :Ancestor)
+      AssignClass(node='Kira_Kirillovna_of_Russia', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Kira_Kirillovna' used in the 'hasMother' relationship is missing the required ':Ancestor' class.
+      The father of Louis_Ferdinand_Prince_of_Prussia, Wilhelm_II, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Kira_Kirillovna, :Ancestor)
+      AssignClass(node='Wilhelm_II', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Prinz_von_Preussen' is missing the required ':Sex' class.
+      The father of Michael_Prinz_von_Preussen, Louis_Ferdinand_Prince_of_Prussia, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(node='Louis_Ferdinand_Prince_of_Prussia', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Prinz_von_Preussen' is missing the required ':Sex' class.
+      The mother of Michael_Prinz_von_Preussen, Kira_Kirillovna_of_Russia, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(node='Kira_Kirillovna_of_Russia', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Prinz_von_Preussen' is missing the required ':Sex' class.
+      The node Kira_Kirillovna_of_Russia is used as a subject of :isMotherOf but lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Wilhelm_II' used in the 'hasAncestor' relationship is missing the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Wilhelm_II, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Louis_Ferdinand_Prinz_von_Preussen' used in the 'hasFather' relationship is missing the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_Ferdinand_Prinz_von_Preussen, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Kira_Kirillovna' used in the 'hasMother' relationship is missing the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Kira_Kirillovna, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Prinz_von_Preussen' is missing the required ':Sex' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Prinz_von_Preussen' is missing the required ':Sex' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(node='Kira_Kirillovna_of_Russia', class=':Ancestor')
 
 
 
@@ -669,54 +726,24 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (668b91b4-a636-4a6a-9930-d2243fd9d5d7)
- Call ID: 668b91b4-a636-4a6a-9930-d2243fd9d5d7
+  AssignClass (f9354d3a-337d-4a0e-b37e-acddd84da0b9)
+ Call ID: f9354d3a-337d-4a0e-b37e-acddd84da0b9
   Args:
     type: :Ancestor
     source: :Wilhelm_II
-  AssignClass (afffd6cd-8f40-47ab-a9d9-9be1026b909a)
- Call ID: afffd6cd-8f40-47ab-a9d9-9be1026b909a
+  AssignClass (0a7c3867-bfd5-4e85-9323-c8b07dd2bd33)
+ Call ID: 0a7c3867-bfd5-4e85-9323-c8b07dd2bd33
   Args:
     type: :Ancestor
-    source: :Louis_Ferdinand_Prinz_von_Preussen
-  AssignClass (ff2ff64c-411b-45e6-9a04-0dd16ce598f8)
- Call ID: ff2ff64c-411b-45e6-9a04-0dd16ce598f8
+    source: :Louis_Ferdinand_Prince_of_Prussia
+  AssignClass (3941ecdf-b719-4b17-832f-1a31ae0d0c3a)
+ Call ID: 3941ecdf-b719-4b17-832f-1a31ae0d0c3a
   Args:
     type: :Ancestor
-    source: :Kira_Kirillovna
-  RemoveLiteral (1fb1ca75-ec17-40b9-9f74-27900368fb0b)
- Call ID: 1fb1ca75-ec17-40b9-9f74-27900368fb0b
+    source: :Kira_Kirillovna_of_Russia
+  ValidateShacl (545ffc38-1965-40f1-9b04-26b4afcbcbfa)
+ Call ID: 545ffc38-1965-40f1-9b04-26b4afcbcbfa
   Args:
-    source: :Michael_Prinz_von_Preussen
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-  AssignClass (9875466a-914f-4269-9623-861e8cdeb9d2)
- Call ID: 9875466a-914f-4269-9623-861e8cdeb9d2
-  Args:
-    source: :Male
-    type: :Sex
-  AddTriple (acf642d8-bcb6-4d70-b6eb-842c68c7ceec)
- Call ID: acf642d8-bcb6-4d70-b6eb-842c68c7ceec
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: :Michael_Prinz_von_Preussen
-  Finish (700d6667-1c6b-47a6-8ad5-cd629e5c7e9c)
- Call ID: 700d6667-1c6b-47a6-8ad5-cd629e5c7e9c
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -733,42 +760,29 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Michael_Prinz_von_Preussen a :Man,
-          :Person ;
-      :hasAncestor data:Wilhelm_II ;
-      :hasBirthYear 1940 ;
-      :hasDeathYear 2014 ;
-      :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;
-      :hasMother data:Kira_Kirillovna ;
-      :hasSex data:Male .
+  data:Georg_Friedrich_Prinz_von_Preussen a :Man .
 
-  data:Kira_Kirillovna a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Louis_Ferdinand_Prinz_von_Preussen a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Male a :Sex .
+  data:Kira_Kirillovna_of_Russia a :Ancestor,
+          :Woman ;
+      :isMotherOf data:Michael_Prinz_von_Preussen .
 
   data:Wilhelm_II a :Ancestor,
-          :Man,
-          :Person .
+          :Man ;
+      :isFatherOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+  data:Louis_Ferdinand_Prince_of_Prussia a :Ancestor,
+          :Man ;
+      :hasFather data:Wilhelm_II ;
+      :isFatherOf data:Michael_Prinz_von_Preussen .
+
+  data:Michael_Prinz_von_Preussen a :Man ;
+      :hasBirthYear 1940 ;
+      :hasDeathYear 2014 ;
+      :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
+      :hasMother data:Kira_Kirillovna_of_Russia ;
+      :isUncleOf data:Georg_Friedrich_Prinz_von_Preussen .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (50265890-6982-489f-9de5-8052a532da65)
- Call ID: 50265890-6982-489f-9de5-8052a532da65
-  Args:
 
 ================================= Tool Message =================================
 
@@ -778,6 +792,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (e4933d23-c77b-4c78-920e-33e09762b43d)
- Call ID: e4933d23-c77b-4c78-920e-33e09762b43d
+  Finish (62f3a9b5-a9ec-4335-af7e-c0e2eca34166)
+ Call ID: 62f3a9b5-a9ec-4335-af7e-c0e2eca34166
   Args:

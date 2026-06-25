@@ -2,44 +2,54 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Damaris_Stuart-William a :Person,
-        :Woman .
-
-data:Isobel_Charlotte_Weatherall a :Person,
-        :Woman .
-
-data:Karen_Baxter_Orrock a :Person,
-        :Woman .
-
-data:Michael_Fergus_Bowes-Lyon a :Man,
+data:GeorgeMountbatten a :Man,
         :Person ;
-    :alsoKnownAs "Mikey Strathmore"^^xsd:string ;
-    :hasBirthYear 1957 ;
-    :hasDeathYear 2016 ;
-    :hasFather data:Fergus_Bowes-Lyon ;
-    :hasMarriageYear 1984,
-        2005,
-        2012 ;
-    :hasMother data:Mary_Pamela_McCorquodale ;
-    :hasSister data:Diana_Bowes-Lyon,
-        data:Elizabeth_Bowes-Lyon_Sister .
+    :alsoKnownAs "Lord Milford Haven"^^xsd:string ;
+    :formerlyKnownAs "Prince George of Battenberg"^^xsd:string ;
+    :hasBirthYear 1892 ;
+    :hasDeathYear 1938 ;
+    :hasFather data:LouisMountbatten1stMarquess ;
+    :hasMarriageYear data:NadejdaMikhailovnaDeTorby,
+        1916 ;
+    :hasMother data:VictoriaOfHesse ;
+    :hasRelation data:NadejdaMikhailovnaDeTorby ;
+    :isSiblingOf data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden ;
+    :knownAs "GeorgeMountbatten"^^xsd:string .
 
-data:Diana_Bowes-Lyon a :Person,
-        :Woman .
+data:PrincePhilip a :Man,
+        :Person ;
+    :hasMother data:PrincessAlice .
 
-data:Elizabeth_Bowes-Lyon_Sister a :Person,
-        :Woman .
+data:LouisMountbatten1stEarl a :Man,
+        :Person .
 
-data:Fergus_Bowes-Lyon a :Ancestor,
+data:LouisMountbatten1stMarquess a :Ancestor,
         :Man,
-        :Person ;
-    :hasFather data:Michael_Bowes-Lyon_Grandfather .
+        :Person .
 
-data:Mary_Pamela_McCorquodale a :Ancestor,
+data:MichaelMikhailovichRomanov a :Ancestor,
+        :Man,
+        :Person .
+
+data:QueenLouiseOfSweden a :Person,
+        :Woman .
+
+data:SophieVonMerenberg a :Ancestor,
         :Person,
         :Woman .
 
-data:Michael_Bowes-Lyon_Grandfather a :Ancestor,
-        :Man,
-        :Person .
+data:VictoriaOfHesse a :Ancestor,
+        :Person,
+        :Woman .
+
+data:NadejdaMikhailovnaDeTorby a :Person,
+        :Woman ;
+    :hasFather data:MichaelMikhailovichRomanov ;
+    :hasMother data:SophieVonMerenberg .
+
+data:PrincessAlice a :Ancestor,
+        :Person,
+        :Woman .
 

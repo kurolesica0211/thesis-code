@@ -1,0 +1,120 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Olivier a :Man,
+        :Person ;
+    :hasBrother data:Olivier,
+        data:Roger_de_Vilmorin ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Melanie_de_Gaufridy_de_Dortan,
+        data:Olivier,
+        data:Philippe_de_Vilmorin,
+        data:Roger_de_Vilmorin ;
+    :isBloodrelationOf data:Olivier,
+        data:Roger_de_Vilmorin ;
+    :isBrotherOf data:Olivier,
+        data:Roger_de_Vilmorin ;
+    :isSiblingOf data:Olivier,
+        data:Roger_de_Vilmorin .
+
+data:Melanie_de_Gaufridy_de_Dortan a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1876 ;
+    :hasChild data:Roger_de_Vilmorin ;
+    :hasDeathYear 1937 ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Melanie_de_Gaufridy_de_Dortan,
+        data:Olivier,
+        data:Philippe_de_Vilmorin,
+        data:Roger_de_Vilmorin ;
+    :hasSister data:Melanie_de_Gaufridy_de_Dortan ;
+    :hasSon data:Roger_de_Vilmorin ;
+    :isAncestorOf data:Roger_de_Vilmorin ;
+    :isAuntOf data:Roger_de_Vilmorin ;
+    :isBloodrelationOf data:Melanie_de_Gaufridy_de_Dortan ;
+    :isMotherOf data:Roger_de_Vilmorin ;
+    :isParentOf data:Roger_de_Vilmorin ;
+    :isSiblingOf data:Melanie_de_Gaufridy_de_Dortan ;
+    :isSisterOf data:Melanie_de_Gaufridy_de_Dortan .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII_of_Spain,
+        data:Philippe_de_Vilmorin ;
+    :hasChild data:Roger_de_Vilmorin ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Melanie_de_Gaufridy_de_Dortan,
+        data:Olivier,
+        data:Philippe_de_Vilmorin,
+        data:Roger_de_Vilmorin ;
+    :hasSon data:Roger_de_Vilmorin ;
+    :isAncestorOf data:Roger_de_Vilmorin ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain,
+        data:Philippe_de_Vilmorin ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain,
+        data:Philippe_de_Vilmorin ;
+    :isFatherOf data:Roger_de_Vilmorin ;
+    :isParentOf data:Roger_de_Vilmorin ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain,
+        data:Philippe_de_Vilmorin ;
+    :isUncleOf data:Roger_de_Vilmorin .
+
+data:Philippe_de_Vilmorin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII_of_Spain,
+        data:Philippe_de_Vilmorin ;
+    :hasChild data:Roger_de_Vilmorin ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Melanie_de_Gaufridy_de_Dortan,
+        data:Olivier,
+        data:Philippe_de_Vilmorin,
+        data:Roger_de_Vilmorin ;
+    :hasSon data:Roger_de_Vilmorin ;
+    :isAncestorOf data:Roger_de_Vilmorin ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain,
+        data:Philippe_de_Vilmorin ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain,
+        data:Philippe_de_Vilmorin ;
+    :isFatherOf data:Roger_de_Vilmorin ;
+    :isParentOf data:Roger_de_Vilmorin ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain,
+        data:Philippe_de_Vilmorin ;
+    :isUncleOf data:Roger_de_Vilmorin .
+
+data:Roger_de_Vilmorin a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII_of_Spain,
+        data:Melanie_de_Gaufridy_de_Dortan,
+        data:Philippe_de_Vilmorin ;
+    :hasBirthYear 1905 ;
+    :hasBrother data:Olivier,
+        data:Roger_de_Vilmorin ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Alfonso_XIII_of_Spain,
+        data:Philippe_de_Vilmorin ;
+    :hasMother data:Melanie_de_Gaufridy_de_Dortan ;
+    :hasParent data:Alfonso_XIII_of_Spain,
+        data:Melanie_de_Gaufridy_de_Dortan,
+        data:Philippe_de_Vilmorin ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Melanie_de_Gaufridy_de_Dortan,
+        data:Olivier,
+        data:Philippe_de_Vilmorin,
+        data:Roger_de_Vilmorin ;
+    :isBloodrelationOf data:Olivier,
+        data:Roger_de_Vilmorin ;
+    :isBrotherOf data:Olivier,
+        data:Roger_de_Vilmorin ;
+    :isChildOf data:Alfonso_XIII_of_Spain,
+        data:Melanie_de_Gaufridy_de_Dortan,
+        data:Philippe_de_Vilmorin ;
+    :isSiblingOf data:Olivier,
+        data:Roger_de_Vilmorin ;
+    :isSonOf data:Alfonso_XIII_of_Spain,
+        data:Melanie_de_Gaufridy_de_Dortan,
+        data:Philippe_de_Vilmorin .
+

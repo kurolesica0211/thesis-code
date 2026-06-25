@@ -2,87 +2,61 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Aga_Khan_IV a :Man ;
-    :hasSex data:Male_Sex .
-
-data:Karl_Emich_of_Leiningen a :Man ;
-    :alsoKnownAs "Emperor Nicholas III"^^xsd:string,
-        "Nikolai Kirillovich Romanov"^^xsd:string ;
-    :hasAncestor data:Alexander_II_of_Russia,
-        data:Maria_Kirillovna ;
-    :hasBirthYear 1952 ;
-    :hasBrother data:Andreas_8th_Prince_of_Leiningen ;
-    :hasDaughter data:Cecilia_Marie_Stephanie_Margarita_of_Leiningen,
-        data:Theresa_Anna_Elisabeth_of_Leiningen ;
-    :hasFather data:Emich_7th_Prince_of_Leiningen ;
-    :hasMother data:Duchess_Eilika_of_Oldenburg ;
-    :hasSex data:Male_Sex ;
-    :hasSon data:Emich_Albrecht_Karl_of_Leiningen .
-
-data:Leonida_Bagration_Mukhranskaya a :Ancestor,
+data:Cecilie_of_Greece_and_Denmark a :Person,
         :Woman ;
-    :hasSex data:Female_Sex ;
-    :isMotherOf data:Maria_Vladimirovna_of_Russia .
+    :hasRelation data:Georg_Donatus_of_Hesse .
 
-data:Tatiana_Constantinovna_of_Russia a :Woman ;
-    :hasFather data:Constantine_Bagration_Mukhransky ;
-    :hasSex data:Female_Sex .
+data:Frederick_II_of_Hesse-Kassel a :Man,
+        :Person ;
+    :isAncestorOf data:Donatus_of_Hesse,
+        data:Floria_Franziska_von_Faber-Castell .
 
-data:Vladimir_Kirillovich_of_Russia a :Ancestor,
-        :Man ;
-    :hasSex data:Male_Sex ;
-    :isFatherOf data:Maria_Vladimirovna_of_Russia .
-
-data:Alexander_II_of_Russia a :Ancestor,
-        :Man ;
-    :hasSex data:Male_Sex .
-
-data:Andreas_8th_Prince_of_Leiningen a :Man ;
-    :hasSex data:Male_Sex .
-
-data:Cecilia_Marie_Stephanie_Margarita_of_Leiningen a :Woman ;
-    :hasBirthYear 1988 ;
-    :hasSex data:Female_Sex .
-
-data:Constantine_Bagration_Mukhransky a :Ancestor,
-        :Man ;
-    :hasSex data:Male_Sex .
-
-data:Duchess_Eilika_of_Oldenburg a :Ancestor,
+data:Mary_of_Great_Britain a :Person,
         :Woman ;
-    :hasSex data:Female_Sex .
+    :isAncestorOf data:Donatus_of_Hesse,
+        data:Floria_Franziska_von_Faber-Castell .
 
-data:Emich_7th_Prince_of_Leiningen a :Ancestor,
-        :Man ;
-    :hasSex data:Male_Sex .
+data:Georg_Donatus_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Louis_of_Hesse_and_by_Rhine .
 
-data:Emich_Albrecht_Karl_of_Leiningen a :Man ;
-    :hasBirthYear 2010 ;
-    :hasMother data:Gabriele_Renate_Thyssen ;
-    :hasSex data:Male_Sex .
+data:Hubertus_von_Faber-Castell a :Ancestor,
+        :Man,
+        :Person .
 
-data:Kirill_Vladimirovich a :Ancestor,
-        :Man ;
-    :hasSex data:Male_Sex .
+data:Louis_of_Hesse_and_by_Rhine a :Man,
+        :Person ;
+    :hasDeathYear 1968 ;
+    :hasRelation data:Margaret_Campbell_Geddes .
 
-data:Maria_Kirillovna a :Ancestor,
+data:Margaret_Campbell_Geddes a :Person,
+        :Woman .
+
+data:Moritz_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Philipp_of_Hesse .
+
+data:Philipp_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear 1980 .
+
+data:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Person,
         :Woman ;
-    :hasSex data:Female_Sex ;
-    :isChildOf data:Kirill_Vladimirovich .
+    :hasBirthYear 1940 .
 
-data:Theresa_Anna_Elisabeth_of_Leiningen a :Woman ;
-    :hasBirthYear 1992 ;
-    :hasMother data:Gabriele_Renate_Thyssen ;
-    :hasSex data:Female_Sex .
+data:Donatus_of_Hesse a :Man,
+        :Person ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Moritz_of_Hesse ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Floria_Franziska_von_Faber-Castell .
 
-data:Gabriele_Renate_Thyssen a :Ancestor,
+data:Floria_Franziska_von_Faber-Castell a :Person,
         :Woman ;
-    :hasSex data:Female_Sex .
-
-data:Maria_Vladimirovna_of_Russia a :Woman ;
-    :hasSex data:Female_Sex .
-
-data:Female_Sex a :Female .
-
-data:Male_Sex a :Male .
+    :hasBirthYear 1974 ;
+    :hasFather data:Hubertus_von_Faber-Castell .
 

@@ -1,0 +1,415 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Alice-_Duchess_of_Gloucester a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice, Duchess of Gloucester"^^xsd:string ;
+    data:posIndicesFull "194:231"^^xsd:string,
+        "203:231"^^xsd:string,
+        "802:830"^^xsd:string ;
+    data:posIndicesPart "1086:1094"^^xsd:string,
+        "1673:1681"^^xsd:string,
+        "2250:2260"^^xsd:string,
+        "3820:3828"^^xsd:string,
+        "5483:5493"^^xsd:string ;
+    data:wdtLink wdt:Q246915 ;
+    :alsoKnownAs "Alice Christabel Montagu Douglas Scott"^^xsd:string,
+        "Alice Christabel, Duchess of Gloucester"^^xsd:string,
+        "Alice Montagu Douglas Scott"^^xsd:string,
+        "Alice, Duchess of Gloucester"^^xsd:string,
+        "Lady Alice Christabel Montagu Douglas Scott"^^xsd:string,
+        "Lady Alice Montagu Douglas Scott"^^xsd:string ;
+    :hasChild data:Prince_William_of_Gloucester ;
+    :hasRelation data:Prince_William_of_Gloucester,
+        data:Princess_Alice-_Duchess_of_Gloucester ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice-_Duchess_of_Gloucester ;
+    :hasSon data:Prince_William_of_Gloucester ;
+    :isAncestorOf data:Prince_William_of_Gloucester ;
+    :isAuntOf data:Prince_William_of_Gloucester ;
+    :isBloodrelationOf data:Princess_Alice-_Duchess_of_Gloucester ;
+    :isMotherOf data:Prince_William_of_Gloucester ;
+    :isParentOf data:Prince_William_of_Gloucester ;
+    :isSiblingOf data:Princess_Alice-_Duchess_of_Gloucester ;
+    :isSisterOf data:Princess_Alice-_Duchess_of_Gloucester .
+
+data:Prince_William_of_Gloucester a :Man,
+        :Person ;
+    rdfs:label "Prince William of Gloucester"^^xsd:string ;
+    data:posIndicesFull "0:28"^^xsd:string,
+        "30:60"^^xsd:string,
+        "7:28"^^xsd:string ;
+    data:posIndicesPart "1208:1215"^^xsd:string,
+        "1337:1344"^^xsd:string,
+        "1579:1585"^^xsd:string,
+        "1586:1593"^^xsd:string,
+        "1615:1622"^^xsd:string,
+        "1745:1751"^^xsd:string,
+        "1769:1776"^^xsd:string,
+        "1974:1981"^^xsd:string,
+        "2250:2260"^^xsd:string,
+        "2306:2313"^^xsd:string,
+        "2488:2494"^^xsd:string,
+        "2572:2579"^^xsd:string,
+        "2664:2671"^^xsd:string,
+        "2758:2765"^^xsd:string,
+        "2917:2924"^^xsd:string,
+        "3007:3014"^^xsd:string,
+        "3379:3386"^^xsd:string,
+        "3591:3597"^^xsd:string,
+        "3598:3605"^^xsd:string,
+        "3685:3692"^^xsd:string,
+        "3861:3868"^^xsd:string,
+        "4004:4011"^^xsd:string,
+        "4100:4107"^^xsd:string,
+        "4368:4375"^^xsd:string,
+        "4727:4733"^^xsd:string,
+        "488:495"^^xsd:string,
+        "5036:5043"^^xsd:string,
+        "5147:5154"^^xsd:string,
+        "5218:5225"^^xsd:string,
+        "5252:5259"^^xsd:string,
+        "535:542"^^xsd:string,
+        "5382:5388"^^xsd:string,
+        "5389:5396"^^xsd:string,
+        "5419:5426"^^xsd:string,
+        "5483:5493"^^xsd:string,
+        "5567:5573"^^xsd:string,
+        "5645:5652"^^xsd:string,
+        "5783:5789"^^xsd:string,
+        "5790:5797"^^xsd:string,
+        "641:648"^^xsd:string ;
+    data:wdtLink wdt:Q657778 ;
+    :alsoKnownAs "Prince William Henry Andrew Frederick of Gloucester"^^xsd:string,
+        "William Henry Andrew Frederick"^^xsd:string,
+        "William Henry Andrew Frederick Windsor, Prince of Gloucester"^^xsd:string,
+        "William Henry Andrew Frederick of Gloucester"^^xsd:string,
+        "William of Gloucester"^^xsd:string ;
+    :hasAncestor data:George_V,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Princess_Alice-_Duchess_of_Gloucester ;
+    :hasBrother data:Prince_William_of_Gloucester ;
+    :hasFather data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasMother data:Princess_Alice-_Duchess_of_Gloucester ;
+    :hasParent data:Prince_Henry-_Duke_of_Gloucester,
+        data:Princess_Alice-_Duchess_of_Gloucester ;
+    :hasRelation data:George_V,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_William_of_Gloucester,
+        data:Princess_Alice-_Duchess_of_Gloucester ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_William_of_Gloucester ;
+    :isBrotherOf data:Prince_William_of_Gloucester ;
+    :isChildOf data:Prince_Henry-_Duke_of_Gloucester,
+        data:Princess_Alice-_Duchess_of_Gloucester ;
+    :isSiblingOf data:Prince_William_of_Gloucester ;
+    :isSonOf data:Prince_Henry-_Duke_of_Gloucester,
+        data:Princess_Alice-_Duchess_of_Gloucester .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    rdfs:label "Edward VIII"^^xsd:string ;
+    data:posIndicesFull "274:285"^^xsd:string ;
+    data:posIndicesPart "3487:3493"^^xsd:string ;
+    data:wdtLink wdt:Q590227 ;
+    :alsoKnownAs "David Windsor"^^xsd:string,
+        "Duke of Windsor"^^xsd:string,
+        "Edward Albert Christian George Andrew Patrick David"^^xsd:string,
+        "Edward Albert Christian George Andrew Patrick David Windsor"^^xsd:string,
+        "Edward VIII Edward VIII of the United Kingdom"^^xsd:string,
+        "Edward VIII Edward VIII, King of the United Kingdom"^^xsd:string,
+        "Edward VIII of the United Kingdom"^^xsd:string,
+        "Edward Windsor"^^xsd:string,
+        "Edward, Duke of Windsor"^^xsd:string,
+        "Edward, Prince of Wales"^^xsd:string,
+        "King Edward VIII"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward, Duke of Windsor"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_William_of_Gloucester .
+
+data:George_VI a :Man,
+        :Person ;
+    rdfs:label "George VI"^^xsd:string ;
+    data:posIndicesFull "1010:1024"^^xsd:string,
+        "1015:1024"^^xsd:string,
+        "1464:1473"^^xsd:string,
+        "290:299"^^xsd:string ;
+    data:posIndicesPart "372:378"^^xsd:string,
+        "450:456"^^xsd:string,
+        "5059:5065"^^xsd:string ;
+    data:wdtLink wdt:Q280856 ;
+    :alsoKnownAs "Albert Frederick Arthur George"^^xsd:string,
+        "Albert Frederick Arthur George Windsor"^^xsd:string,
+        "Albert Windsor"^^xsd:string,
+        "Bertie"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "H.M. King George VI"^^xsd:string,
+        "Industrial Prince"^^xsd:string,
+        "King George VI"^^xsd:string,
+        "Prince Albert Frederick Arthur George of Cornwall and York"^^xsd:string,
+        "Prince Albert Frederick Arthur George of Wales"^^xsd:string,
+        "Prince Albert Frederick Arthur George of York"^^xsd:string,
+        "Prince Albert Frederick Arthur George, Duke of York"^^xsd:string,
+        "Prince Albert of Cornwall and York"^^xsd:string,
+        "Prince Albert of Wales"^^xsd:string,
+        "Prince Albert of York"^^xsd:string,
+        "Prince Albert, Duke of York"^^xsd:string,
+        "The Prince Albert Frederick Arthur George of the United Kingdom"^^xsd:string,
+        "The Prince Albert Frederick Arthur George, Duke of York"^^xsd:string,
+        "The Prince Albert of the United Kingdom"^^xsd:string,
+        "The Prince Albert, Duke of York"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_William_of_Gloucester .
+
+data:Prince_George-_Duke_of_Kent a :Man,
+        :Person ;
+    rdfs:label "Prince George, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "2159:2186"^^xsd:string,
+        "2166:2186"^^xsd:string ;
+    data:posIndicesPart "2242:2246"^^xsd:string,
+        "2488:2494"^^xsd:string,
+        "3591:3597"^^xsd:string,
+        "4727:4733"^^xsd:string,
+        "5059:5065"^^xsd:string,
+        "5382:5388"^^xsd:string,
+        "5475:5479"^^xsd:string,
+        "5567:5573"^^xsd:string,
+        "5783:5789"^^xsd:string ;
+    data:wdtLink wdt:Q160770 ;
+    :alsoKnownAs "George Edward Alexander Edmund of Wales"^^xsd:string,
+        "George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "George Kent"^^xsd:string,
+        "George of Wales"^^xsd:string,
+        "George, Duke of Kent"^^xsd:string,
+        "Prince George Edward Alexander Edmund of Wales"^^xsd:string,
+        "Prince George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "Prince George of Wales"^^xsd:string,
+        "The Prince George Edward Alexander Edmund of the United Kingdom"^^xsd:string,
+        "The Prince George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "The Prince George of the United Kingdom"^^xsd:string,
+        "The Prince George, Duke of Kent"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_William_of_Gloucester .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George V"^^xsd:string ;
+    data:posIndicesFull "254:262"^^xsd:string,
+        "5681:5694"^^xsd:string,
+        "5686:5694"^^xsd:string,
+        "864:877"^^xsd:string,
+        "869:877"^^xsd:string ;
+    data:posIndicesPart "372:378"^^xsd:string,
+        "450:456"^^xsd:string,
+        "5059:5065"^^xsd:string ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert"^^xsd:string,
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha"^^xsd:string,
+        "George Frederick Ernest Albert Windsor"^^xsd:string,
+        "George Saxe-Coburg-Gotha"^^xsd:string,
+        "George V (King of Great Britain)"^^xsd:string,
+        "George V of the United Kingdom"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "King George V"^^xsd:string ;
+    :hasBrother data:George_V ;
+    :hasChild data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_William_of_Gloucester ;
+    :hasSex data:male ;
+    :hasSon data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isAncestorOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_William_of_Gloucester ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isFatherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isParentOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isSiblingOf data:George_V ;
+    :isUncleOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester .
+
+data:Prince_Henry-_Duke_of_Gloucester a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Henry, Duke of Gloucester"^^xsd:string ;
+    data:posIndicesFull "156:168"^^xsd:string,
+        "156:188"^^xsd:string,
+        "764:776"^^xsd:string,
+        "764:796"^^xsd:string ;
+    data:posIndicesPart "1381:1386"^^xsd:string,
+        "1579:1585"^^xsd:string,
+        "1703:1707"^^xsd:string,
+        "1745:1751"^^xsd:string,
+        "2242:2246"^^xsd:string,
+        "2250:2260"^^xsd:string,
+        "2488:2494"^^xsd:string,
+        "3591:3597"^^xsd:string,
+        "4727:4733"^^xsd:string,
+        "5382:5388"^^xsd:string,
+        "5475:5479"^^xsd:string,
+        "5483:5493"^^xsd:string,
+        "5567:5573"^^xsd:string,
+        "5783:5789"^^xsd:string,
+        "943:947"^^xsd:string ;
+    data:wdtLink wdt:Q117174 ;
+    :alsoKnownAs "Henry Gloucester"^^xsd:string,
+        "Henry William Frederick Albert"^^xsd:string,
+        "Henry Windsor"^^xsd:string,
+        "Prince Henry"^^xsd:string,
+        "Prince Henry William Frederick Albert, Duke of Gloucester"^^xsd:string,
+        "Prince Henry of Cornwall and York"^^xsd:string,
+        "Prince Henry of Wales"^^xsd:string,
+        "Prince Henry of York"^^xsd:string,
+        "The Prince Henry"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :hasChild data:Prince_William_of_Gloucester ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_William_of_Gloucester ;
+    :hasSex data:male ;
+    :hasSon data:Prince_William_of_Gloucester ;
+    :isAncestorOf data:Prince_William_of_Gloucester ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isChildOf data:George_V ;
+    :isFatherOf data:Prince_William_of_Gloucester ;
+    :isParentOf data:Prince_William_of_Gloucester ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_William_of_Gloucester .
+

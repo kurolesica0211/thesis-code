@@ -2,51 +2,47 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:PrincessAlexandra a :Person,
-        :Woman ;
+data:Charles_III a :Man .
+
+data:Edward_VIII a :Man .
+
+data:Elizabeth_II a :Woman .
+
+data:George_VI a :Man .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man .
+
+data:Princess_Alexandra_The_Honourable_Lady_Ogilvy a :Woman ;
     :hasBirthYear 1936 ;
-    :hasBrother data:PrinceEdward ;
-    :hasFather data:PrinceGeorgeDukeOfKent ;
+    :hasBrother data:Prince_Edward_Duke_of_Kent ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
     :hasMarriageYear 1963 ;
-    :hasMother data:PrincessMarinaOfGreeceAndDenmark ;
-    :hasRelation data:SirAngusOgilvy .
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark .
 
-data:DavidOgilvy12thEarlOfAirlie a :Man,
-        :Person .
-
-data:GeorgeV a :Man,
-        :Person .
-
-data:GrandDuchessElenaVladimirovnaOfRussia a :Person,
-        :Woman .
-
-data:LadyAlexandraCoke a :Person,
-        :Woman .
-
-data:PrinceEdward a :Man,
-        :Person ;
-    :hasFather data:PrinceGeorgeDukeOfKent ;
-    :hasMother data:PrincessMarinaOfGreeceAndDenmark .
-
-data:PrinceNicholasOfGreeceAndDenmark a :Man,
-        :Person .
-
-data:QueenMary a :Person,
-        :Woman .
-
-data:SirAngusOgilvy a :Man,
-        :Person ;
+data:Sir_Angus_Ogilvy a :Man ;
     :hasDeathYear 2004 ;
-    :hasFather data:DavidOgilvy12thEarlOfAirlie ;
-    :hasMother data:LadyAlexandraCoke .
+    :hasFather data:David_Ogilvy_12th_Earl_of_Airlie ;
+    :hasMother data:Lady_Alexandra_Coke .
 
-data:PrinceGeorgeDukeOfKent a :Man,
-        :Person ;
-    :hasFather data:GeorgeV ;
-    :hasMother data:QueenMary .
+data:David_Ogilvy_12th_Earl_of_Airlie a :Man .
 
-data:PrincessMarinaOfGreeceAndDenmark a :Person,
-        :Woman ;
-    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;
-    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia .
+data:George_V a :Man .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Woman .
+
+data:Lady_Alexandra_Coke a :Woman .
+
+data:Prince_Edward_Duke_of_Kent a :Man .
+
+data:Prince_George_Duke_of_Kent a :Man ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Man .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Woman ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Queen_Mary a :Woman .
 

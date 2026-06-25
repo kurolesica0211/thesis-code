@@ -1,0 +1,144 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "269:279"^^xsd:string,
+        "458:468"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Prince_Oskar_of_Prussia ;
+    :hasRelation data:Oskar_of_Prussia,
+        data:Prince_Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Oskar_of_Prussia ;
+    :isAncestorOf data:Oskar_of_Prussia,
+        data:Prince_Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Prince_Oskar_of_Prussia ;
+    :isParentOf data:Prince_Oskar_of_Prussia ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Prince_Oskar_of_Prussia .
+
+data:Oskar_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Oskar of Prussia"^^xsd:string ;
+    data:posIndicesFull "683:706"^^xsd:string,
+        "690:706"^^xsd:string ;
+    data:posIndicesPart "1029:1034"^^xsd:string ;
+    data:wdtLink wdt:Q100307 ;
+    :alsoKnownAs "Prince Oscar of Prussia"^^xsd:string ;
+    :hasAncestor data:Prince_Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Oskar_of_Prussia ;
+    :hasFather data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasParent data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasRelation data:Oskar_of_Prussia,
+        data:Prince_Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Oskar_of_Prussia ;
+    :isBrotherOf data:Oskar_of_Prussia ;
+    :isChildOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isSiblingOf data:Oskar_of_Prussia ;
+    :isSonOf data:Prince_Wilhelm-Karl_of_Prussia .
+
+data:Prince_Oskar_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Oskar of Prussia"^^xsd:string ;
+    data:posIndicesFull "683:706"^^xsd:string,
+        "690:706"^^xsd:string ;
+    data:posIndicesPart "1029:1034"^^xsd:string ;
+    data:wdtLink wdt:Q61242 ;
+    :alsoKnownAs "Oskar Karl Gustav Adolf of Prussia"^^xsd:string,
+        "Oskar of Prussia"^^xsd:string,
+        "Prince Oskar Karl Gustav Adolf of Prussia"^^xsd:string ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBrother data:Prince_Oskar_of_Prussia ;
+    :hasChild data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Oskar_of_Prussia,
+        data:Prince_Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isAncestorOf data:Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isBloodrelationOf data:Prince_Oskar_of_Prussia ;
+    :isBrotherOf data:Prince_Oskar_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isFatherOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isSiblingOf data:Prince_Oskar_of_Prussia ;
+    :isSonOf data:Wilhelm_II ;
+    :isUncleOf data:Prince_Wilhelm-Karl_of_Prussia .
+
+data:Prince_Wilhelm-Karl_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Wilhelm-Karl of Prussia"^^xsd:string ;
+    data:posIndicesFull "632:662"^^xsd:string,
+        "639:662"^^xsd:string ;
+    data:wdtLink wdt:Q92141 ;
+    :alsoKnownAs "Prince Wilhelm Karl of Prussia"^^xsd:string,
+        "Wilhelm-Karl of Prussia"^^xsd:string ;
+    :hasAncestor data:Prince_Oskar_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasChild data:Oskar_of_Prussia ;
+    :hasFather data:Prince_Oskar_of_Prussia ;
+    :hasParent data:Prince_Oskar_of_Prussia ;
+    :hasRelation data:Oskar_of_Prussia,
+        data:Prince_Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Oskar_of_Prussia ;
+    :isAncestorOf data:Oskar_of_Prussia ;
+    :isBloodrelationOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isBrotherOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isChildOf data:Prince_Oskar_of_Prussia ;
+    :isFatherOf data:Oskar_of_Prussia ;
+    :isParentOf data:Oskar_of_Prussia ;
+    :isSiblingOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isSonOf data:Prince_Oskar_of_Prussia ;
+    :isUncleOf data:Oskar_of_Prussia .
+

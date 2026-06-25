@@ -69,44 +69,86 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Nuria
+Descendants of Prince Felix and also members of the Grand Ducal Family of Luxembourg:
 
 
-Princess Françoise
+Princess Joan
 
 
-Princess Mariam
+Descendants of Prince René:
 
 
-Princess Monique
+Princess Maria Pia
 
 
-Prince Juan Jorge de Bagration-Mukhrani (born 18 August 1977) is a Spanish-born Georgian prince and member of the House of Mukhrani of the Bagrationi dynasty and a distant relation to the Spanish royal family.
-Early life and family
+Princess Marina
 
-Prince Juan Jorge de Bagration-Mukhrani was born on 18 August 1977 in Madrid to Prince Bagrat de Bagration y de Baviera and Doña María del Carmen de Ulloa y Suelves.
-His paternal grandfather, Prince Irakli Bagration of Mukhrani, was exiled from Georgia during the invasion of the Red Army, living in Germany, Italy, and finally settling in Spain.
-His paternal grandmother, Infanta María de las Mercedes of Spain was a member of the Spanish royal family and the German House of Wittelsbach; she was the daughter of Prince Ferdinand of Bavaria, granddaughter of Alfonso XII of Spain, and niece of Alfonso XIII of Spain.
-His maternal grandfather was Gonzalo Maria de Ulloa y Ramírez de Haro, Marqués de Castro-Serna, Count de Adanero.
-Prince Juan's parents divorced in 2005 and his father remarried in 2009 to Françoise Cazaudehore.
-Prince Juan is a member of the House of Mukhrani, a branch of the Bagrationi dynasty that ruled Georgia from the Middle Ages until the nineteenth century, when Georgia was annexed into the Russian Empire.
-Prince Juan studied at Collège Alpin International Beau Soleil, a boarding school in Villars-sur-Ollon, Switzerland and was a schoolmate and childhood friend of Cayetano Rivera Ordóñez.
-Personal life
 
-Prince Juan met Kristine Dzidziguri, a Georgian model, in 2014.
-They were married a few months later in a civil ceremony on 10 May 2014 in Ronda, Spain.
-The couple began planning a religious ceremony but were delayed due to social and political conflicts within Georgia and because of Prince Juan's father's declining health.
-On 2 June 2018, Prince Juan and Dzidziguri received a blessing from Ilia II of Georgia, the Catholicos-Patriarch of All Georgia.
-Their wedding reception was held at the Palace of Mukhrani.
-Later during their Indonesian tour, Prince Juan and Princess Kristine attended a gala lunch focused on establishing a cultural relationship between Indonesia and Georgia.
-Prince Juan is the founder of the Georgian Foundation, a non-profit organization that promotes Georgian culture.
-In October 2019 he launched a wine brand called Prince Ioane Bagrationi wines.
+Descendants of Prince Louis:
+
+
+Prince RémyPrincess Elisabeth
+
+
+Princess Chantal
+Prince JeanPrincess Virginia
+
+
+Princess Beatrix*
+
+
+Princess Margriet*Pieter van Vollenhoven*
+
+
+Prince Jaime Bernardo of Bourbon-Parma, Count of Bardi (born 13 October 1972) is a Dutch diplomat and the second son and third child of Princess Irene of the Netherlands and Carlos Hugo, Duke of Parma.
+He is a member of the House of Bourbon-Parma as well a member of the extended Dutch royal family.
+He was the senior advisor on private sector partnerships at the United Nations High Commissioner for Refugees until 2021 and served as the climate envoy of the Netherlands.
+Early life
+
+Jaime was born in Nijmegen, Netherlands.
+He has a twin sister, Princess Margarita, who was born one minute earlier.
+Besides his twin sister, the prince has one elder brother, Carlos, Duke of Parma, and one younger sister, Princess Carolina.
+Prince Jaime was born six weeks prematurely and stayed with his sister in an incubator at the hospital.
+Jaime was baptised by Bernardus Johannes Cardinal Alfrink, with his grandfather Prince Bernhard of Lippe-Biesterfeld and his grandmother Princess Madeleine of Bourbon-Parma as his godparents.
+Together with his mother and his siblings he moved to the Soestdijk Palace (Baarn), then residence of his grandparents, Queen Juliana and Prince Bernhard, where he lived for several years.
+He now works for the Ministry of Foreign Affairs of the Netherlands.
+His first role was as the first secretary of the Netherlands Embassy in Baghdad, before becoming a political advisor to the peace mission in Pol-e Khomri in the Baghlan Province in the northern part of Afghanistan.
+Until the summer of 2007 the prince worked on secondment in the cabinet of the European Commissioner Neelie Kroes.
+On 7 February 2014, the Ministry of Foreign Affairs announced that he would be appointed as ambassador of the Kingdom of the Netherlands to the Holy See.
+Prince Jaime was, on 15 July 2014, sworn in as ambassador by King Willem-Alexander and he served till August 2018.
+In August 2021 he started as the Climate Envoy of the Netherlands and served for over four years.
+The prince performs representative tasks for the Ducal House of Bourbon-Parma.
+On 9 November 2015, it was announced that the couple were expecting a second child; daughter Gloria Irene was born on (2016-05-09)9 May 2016.
+In a 2015 interview, Princess Viktória stated that the gender of her future child did not matter ("fortunately, we can not influence nature in the terms of gender"), after being told that there were no grandsons for the late Duke of Parma (in April 2016, Jaime's elder brother Carlos, Duke of Parma finally had a son, named Carlos Enrique).
+Titles, styles and honours
+
+Titles
+
+Honours
+
+Dynastic honours
+
+Foreign honours
+
+Notes
+
+Already a ducal prince from birth, his father bestowed the substantive title Conte di Bardi ('Count of Bardi') upon him on 2 September 1996.
+In 1996 he was incorporated into the Dutch nobility by Queen Beatrix, with the highest noble title Prins de Bourbon de Parme (Prince of Bourbon-Parma), and styled Zijne Koninklijke Hoogheid ('His Royal Highness').
+He does not belong to the House of Orange-Nassau or the limited Dutch royal house, but as a grandson of Queen Juliana and cousin of the present King Willem-Alexander, he is an official member of the more extended Dutch royal family.
+References
+
+External links
+
+2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
+3 title granted by Royal Decree to descendants of Princess Irene
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +164,9 @@ In October 2019 he launched a wine brand called Prince Ioane Bagrationi wines.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +181,23 @@ In October 2019 he launched a wine brand called Prince Ioane Bagrationi wines.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +215,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +297,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +320,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +340,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +350,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +390,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,152 +489,240 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (fadb805e-f861-4cfc-bdc5-a7cb5d921551)
- Call ID: fadb805e-f861-4cfc-bdc5-a7cb5d921551
+  AssignClass (7f2a3fea-c35b-4a96-9917-1fdb0066ac28)
+ Call ID: 7f2a3fea-c35b-4a96-9917-1fdb0066ac28
   Args:
-    source: :Prince_Juan_Jorge_de_Bagration-Mukhrani
     type: :Man
-  AssignClass (b773175f-0aa8-47ac-8418-ad4668400452)
- Call ID: b773175f-0aa8-47ac-8418-ad4668400452
+    source: Prince_Felix
+  AssignClass (0003da65-1e0c-4a31-a406-265add5906f3)
+ Call ID: 0003da65-1e0c-4a31-a406-265add5906f3
   Args:
-    source: :Prince_Juan_Jorge_de_Bagration-Mukhrani
-    type: :Person
-  AddLiteral (4b058aa8-29e0-4d8e-9c95-a12e081d3758)
- Call ID: 4b058aa8-29e0-4d8e-9c95-a12e081d3758
+    source: Prince_Rene
+    type: :Man
+  AssignClass (9e1ed2fb-4c5b-45e3-891a-25063be169e9)
+ Call ID: 9e1ed2fb-4c5b-45e3-891a-25063be169e9
   Args:
-    literal_value: 1977
-    literal_type: xsd:integer
+    source: Prince_Louis
+    type: :Man
+  AssignClass (353e511a-d332-4fbb-946a-ecf0d3904ace)
+ Call ID: 353e511a-d332-4fbb-946a-ecf0d3904ace
+  Args:
+    type: :Woman
+    source: Princess_Joan
+  AssignClass (843b7f8c-2486-4320-b09d-81e8ed80e173)
+ Call ID: 843b7f8c-2486-4320-b09d-81e8ed80e173
+  Args:
+    type: :Woman
+    source: Princess_Maria_Pia
+  AssignClass (2f6c2ffe-f5eb-4593-883b-d2f9ce55390e)
+ Call ID: 2f6c2ffe-f5eb-4593-883b-d2f9ce55390e
+  Args:
+    source: Princess_Marina
+    type: :Woman
+  AssignClass (60a8f12c-78ca-40ea-bf3e-f544d4d9ab6e)
+ Call ID: 60a8f12c-78ca-40ea-bf3e-f544d4d9ab6e
+  Args:
+    type: :Man
+    source: Prince_Remy
+  AssignClass (34059674-f69a-45c2-b43a-405d1681d0d8)
+ Call ID: 34059674-f69a-45c2-b43a-405d1681d0d8
+  Args:
+    source: Princess_Elisabeth
+    type: :Woman
+  AssignClass (cf253cbb-e4c2-4a0b-843e-fdb70ca5d208)
+ Call ID: cf253cbb-e4c2-4a0b-843e-fdb70ca5d208
+  Args:
+    source: Princess_Chantal
+    type: :Woman
+  AssignClass (d45a029e-97c8-4985-a408-35344770e559)
+ Call ID: d45a029e-97c8-4985-a408-35344770e559
+  Args:
+    source: Prince_Jean
+    type: :Man
+  AssignClass (82be778d-a249-4e3f-b614-c6a3d4756c91)
+ Call ID: 82be778d-a249-4e3f-b614-c6a3d4756c91
+  Args:
+    type: :Woman
+    source: Princess_Virginia
+  AssignClass (89e9b163-3265-4f57-aab0-3e48f6a85722)
+ Call ID: 89e9b163-3265-4f57-aab0-3e48f6a85722
+  Args:
+    source: Princess_Beatrix
+    type: :Woman
+  AssignClass (e309617e-1121-4dad-ab95-3efbe8f2e2e4)
+ Call ID: e309617e-1121-4dad-ab95-3efbe8f2e2e4
+  Args:
+    type: :Woman
+    source: Princess_Margriet
+  AssignClass (e5ffb5ee-de79-442a-bf27-8ef7878173c6)
+ Call ID: e5ffb5ee-de79-442a-bf27-8ef7878173c6
+  Args:
+    source: Pieter_van_Vollenhoven
+    type: :Man
+  AssignClass (83365cbd-63e9-4c49-9fad-41b28c84df74)
+ Call ID: 83365cbd-63e9-4c49-9fad-41b28c84df74
+  Args:
+    type: :Man
+    source: Prince_Jaime_Bernardo_of_Bourbon_Parma
+  AssignClass (36dda378-02d2-4ac2-8c14-46200a8db22d)
+ Call ID: 36dda378-02d2-4ac2-8c14-46200a8db22d
+  Args:
+    type: :Woman
+    source: Princess_Irene_of_the_Netherlands
+  AssignClass (2b93268d-7565-4821-9541-8157e4ecd520)
+ Call ID: 2b93268d-7565-4821-9541-8157e4ecd520
+  Args:
+    type: :Man
+    source: Carlos_Hugo_Duke_of_Parma
+  AssignClass (509c48e6-5755-4488-9472-f5f02edefb10)
+ Call ID: 509c48e6-5755-4488-9472-f5f02edefb10
+  Args:
+    source: Princess_Margarita
+    type: :Woman
+  AssignClass (9fbb3510-61a3-4e46-9ed0-65e7e4145c2e)
+ Call ID: 9fbb3510-61a3-4e46-9ed0-65e7e4145c2e
+  Args:
+    type: :Man
+    source: Carlos_Duke_of_Parma
+  AssignClass (78145efa-3976-4b40-a2e6-167a53e7b996)
+ Call ID: 78145efa-3976-4b40-a2e6-167a53e7b996
+  Args:
+    source: Princess_Carolina
+    type: :Woman
+  AssignClass (18e69758-6c8b-438c-94e2-fd04dd325e06)
+ Call ID: 18e69758-6c8b-438c-94e2-fd04dd325e06
+  Args:
+    source: Prince_Bernhard_of_Lippe_Biesterfeld
+    type: :Man
+  AssignClass (06adf36f-136d-4fdf-8459-cbb661590ff2)
+ Call ID: 06adf36f-136d-4fdf-8459-cbb661590ff2
+  Args:
+    source: Princess_Madeleine_of_Bourbon_Parma
+    type: :Woman
+  AssignClass (f0da0eff-953d-47b4-843c-86fb203bdd08)
+ Call ID: f0da0eff-953d-47b4-843c-86fb203bdd08
+  Args:
+    type: :Woman
+    source: Queen_Juliana
+  AssignClass (673174cc-6d28-492e-9c83-78ab3b1fbff7)
+ Call ID: 673174cc-6d28-492e-9c83-78ab3b1fbff7
+  Args:
+    source: Gloria_Irene
+    type: :Woman
+  AssignClass (d3ee0f6f-2c0b-468b-9ba8-24ef09a0f158)
+ Call ID: d3ee0f6f-2c0b-468b-9ba8-24ef09a0f158
+  Args:
+    type: :Woman
+    source: Princess_Viktoria
+  AssignClass (4f349b11-29bf-43a3-8ee3-776844854d8e)
+ Call ID: 4f349b11-29bf-43a3-8ee3-776844854d8e
+  Args:
+    type: :Man
+    source: Carlos_Enrique
+  AddTriple (cb30a536-2a3a-41c9-9fbc-3acb5dac54d8)
+ Call ID: cb30a536-2a3a-41c9-9fbc-3acb5dac54d8
+  Args:
+    relation: :hasChild
+    target: Princess_Joan
+    source: Prince_Felix
+  AddTriple (803986d6-e882-47b4-aa85-a75c99736490)
+ Call ID: 803986d6-e882-47b4-aa85-a75c99736490
+  Args:
+    relation: :hasChild
+    target: Princess_Maria_Pia
+    source: Prince_Rene
+  AddTriple (34ef4735-009c-4f0e-9e56-9bd719e4ddde)
+ Call ID: 34ef4735-009c-4f0e-9e56-9bd719e4ddde
+  Args:
+    source: Prince_Rene
+    target: Princess_Marina
+    relation: :hasChild
+  AddTriple (a27650b1-d5ec-4161-a73d-6e55512a3e78)
+ Call ID: a27650b1-d5ec-4161-a73d-6e55512a3e78
+  Args:
+    source: Prince_Louis
+    relation: :hasChild
+    target: Prince_Remy
+  AddTriple (793a0ae3-5545-4407-b071-1b83d57fb242)
+ Call ID: 793a0ae3-5545-4407-b071-1b83d57fb242
+  Args:
+    target: Princess_Elisabeth
+    relation: :hasChild
+    source: Prince_Louis
+  AddTriple (f025d322-0841-40c8-bac5-40e977bcb03c)
+ Call ID: f025d322-0841-40c8-bac5-40e977bcb03c
+  Args:
+    relation: :hasChild
+    target: Princess_Chantal
+    source: Prince_Louis
+  AddTriple (83115f82-bc7c-4b7d-8ffb-5b7b9a41864f)
+ Call ID: 83115f82-bc7c-4b7d-8ffb-5b7b9a41864f
+  Args:
+    source: Prince_Louis
+    target: Prince_Jean
+    relation: :hasChild
+  AddTriple (91643b61-7ef8-461f-93a9-13b47461f054)
+ Call ID: 91643b61-7ef8-461f-93a9-13b47461f054
+  Args:
+    relation: :hasChild
+    target: Princess_Virginia
+    source: Prince_Louis
+  AddTriple (69179ec8-566d-444e-8124-05f4b077812f)
+ Call ID: 69179ec8-566d-444e-8124-05f4b077812f
+  Args:
+    source: Prince_Jaime_Bernardo_of_Bourbon_Parma
+    relation: :hasMother
+    target: Princess_Irene_of_the_Netherlands
+  AddTriple (14376fff-cc17-437c-8676-b3ea8573c0d6)
+ Call ID: 14376fff-cc17-437c-8676-b3ea8573c0d6
+  Args:
+    source: Prince_Jaime_Bernardo_of_Bourbon_Parma
+    relation: :hasFather
+    target: Carlos_Hugo_Duke_of_Parma
+  AddLiteral (794bdba0-8ea3-47ae-a623-21eafd039d88)
+ Call ID: 794bdba0-8ea3-47ae-a623-21eafd039d88
+  Args:
+    source: Prince_Jaime_Bernardo_of_Bourbon_Parma
+    literal_value: 1972
     relation: :hasBirthYear
-    source: :Prince_Juan_Jorge_de_Bagration-Mukhrani
-  AssignClass (8f556251-f478-46d2-b753-61bcc77c9b01)
- Call ID: 8f556251-f478-46d2-b753-61bcc77c9b01
-  Args:
-    source: :Prince_Bagrat_de_Bagration_y_de_Baviera
-    type: :Man
-  AssignClass (37ba28d9-8211-49bc-b029-615b07e98f50)
- Call ID: 37ba28d9-8211-49bc-b029-615b07e98f50
-  Args:
-    source: :Prince_Bagrat_de_Bagration_y_de_Baviera
-    type: :Person
-  AssignClass (09198063-1cf6-47e1-991c-b063a114befe)
- Call ID: 09198063-1cf6-47e1-991c-b063a114befe
-  Args:
-    source: :Dona_Maria_del_Carmen_de_Ulloa_y_Suelves
-    type: :Woman
-  AssignClass (108a9f01-9cf7-4e64-b8fc-96dcf480d8ff)
- Call ID: 108a9f01-9cf7-4e64-b8fc-96dcf480d8ff
-  Args:
-    type: :Person
-    source: :Dona_Maria_del_Carmen_de_Ulloa_y_Suelves
-  AddTriple (0c850b3f-a530-40cb-9dcf-afaa203ade7e)
- Call ID: 0c850b3f-a530-40cb-9dcf-afaa203ade7e
-  Args:
-    relation: :hasFather
-    source: :Prince_Juan_Jorge_de_Bagration-Mukhrani
-    target: :Prince_Bagrat_de_Bagration_y_de_Baviera
-  AddTriple (75ff13f1-645c-4828-99f8-4d82df6e8c62)
- Call ID: 75ff13f1-645c-4828-99f8-4d82df6e8c62
-  Args:
-    relation: :hasMother
-    source: :Prince_Juan_Jorge_de_Bagration-Mukhrani
-    target: :Dona_Maria_del_Carmen_de_Ulloa_y_Suelves
-  AssignClass (03c5f017-d554-471c-bd84-d388f61008fd)
- Call ID: 03c5f017-d554-471c-bd84-d388f61008fd
-  Args:
-    type: :Man
-    source: :Prince_Irakli_Bagration_of_Mukhrani
-  AssignClass (d3d18048-16a5-4237-8dab-fc2a7ef3ae23)
- Call ID: d3d18048-16a5-4237-8dab-fc2a7ef3ae23
-  Args:
-    source: :Prince_Irakli_Bagration_of_Mukhrani
-    type: :Person
-  AddTriple (16677561-5205-4368-82d8-75499c7558e6)
- Call ID: 16677561-5205-4368-82d8-75499c7558e6
-  Args:
-    target: :Prince_Irakli_Bagration_of_Mukhrani
-    relation: :hasFather
-    source: :Prince_Bagrat_de_Bagration_y_de_Baviera
-  AssignClass (5f96ef7b-2745-4f18-b290-879fb037d2d0)
- Call ID: 5f96ef7b-2745-4f18-b290-879fb037d2d0
-  Args:
-    source: :Infanta_Maria_de_las_Mercedes_of_Spain
-    type: :Woman
-  AssignClass (2065ba8d-27c9-49ab-8463-637a1aac77a8)
- Call ID: 2065ba8d-27c9-49ab-8463-637a1aac77a8
-  Args:
-    type: :Person
-    source: :Infanta_Maria_de_las_Mercedes_of_Spain
-  AddTriple (69c34692-e7c5-4f0a-97cc-ea468fa8423c)
- Call ID: 69c34692-e7c5-4f0a-97cc-ea468fa8423c
-  Args:
-    target: :Infanta_Maria_de_las_Mercedes_of_Spain
-    source: :Prince_Bagrat_de_Bagration_y_de_Baviera
-    relation: :hasMother
-  AssignClass (28e6aba0-4d9a-436a-9dac-7594911de299)
- Call ID: 28e6aba0-4d9a-436a-9dac-7594911de299
-  Args:
-    type: :Man
-    source: :Prince_Ferdinand_of_Bavaria
-  AssignClass (114b4696-541f-4942-ad56-9957a7dae918)
- Call ID: 114b4696-541f-4942-ad56-9957a7dae918
-  Args:
-    source: :Prince_Ferdinand_of_Bavaria
-    type: :Person
-  AddTriple (0f011952-4ce1-49e6-80f0-911d88beff54)
- Call ID: 0f011952-4ce1-49e6-80f0-911d88beff54
-  Args:
-    relation: :hasFather
-    source: :Infanta_Maria_de_las_Mercedes_of_Spain
-    target: :Prince_Ferdinand_of_Bavaria
-  AssignClass (59ccf60c-68ce-42ae-b794-748f5cc37979)
- Call ID: 59ccf60c-68ce-42ae-b794-748f5cc37979
-  Args:
-    type: :Man
-    source: :Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro
-  AssignClass (5312a66f-10cd-4a6c-ab8f-c366cf8ee4ac)
- Call ID: 5312a66f-10cd-4a6c-ab8f-c366cf8ee4ac
-  Args:
-    source: :Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro
-    type: :Person
-  AddTriple (fadaf702-9fa1-46af-84e5-6d8441f177f8)
- Call ID: fadaf702-9fa1-46af-84e5-6d8441f177f8
-  Args:
-    relation: :hasFather
-    source: :Dona_Maria_del_Carmen_de_Ulloa_y_Suelves
-    target: :Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro
-  AssignClass (a8649526-43ce-423b-9bbd-2ff81f8cc3ed)
- Call ID: a8649526-43ce-423b-9bbd-2ff81f8cc3ed
-  Args:
-    type: :Woman
-    source: :Francoise_Cazaudehore
-  AssignClass (bd836a4a-f7d0-4e84-94cb-e513d7b5c71c)
- Call ID: bd836a4a-f7d0-4e84-94cb-e513d7b5c71c
-  Args:
-    source: :Francoise_Cazaudehore
-    type: :Person
-  AssignClass (fa53ddf2-7fc4-47dd-8d17-ab1714bfcad1)
- Call ID: fa53ddf2-7fc4-47dd-8d17-ab1714bfcad1
-  Args:
-    type: :Woman
-    source: :Princess_Kristine_Dzidziguri
-  AssignClass (eb8cb0c9-0e6f-48c2-b868-80d66f34d863)
- Call ID: eb8cb0c9-0e6f-48c2-b868-80d66f34d863
-  Args:
-    type: :Person
-    source: :Princess_Kristine_Dzidziguri
-  AddLiteral (e5deb30f-6f50-4610-999e-ceb232a6dfb4)
- Call ID: e5deb30f-6f50-4610-999e-ceb232a6dfb4
-  Args:
     literal_type: xsd:integer
-    literal_value: 2014
-    relation: :hasMarriageYear
-    source: :Prince_Juan_Jorge_de_Bagration-Mukhrani
-  AddTriple (a44e3491-d100-4d98-b4ad-a4e97f831db3)
- Call ID: a44e3491-d100-4d98-b4ad-a4e97f831db3
+  AddTriple (90af76d2-eaf5-479a-bcb1-a99015f7e234)
+ Call ID: 90af76d2-eaf5-479a-bcb1-a99015f7e234
   Args:
-    target: :Princess_Kristine_Dzidziguri
-    relation: :hasRelation
-    source: :Prince_Juan_Jorge_de_Bagration-Mukhrani
-  Finish (19780116-04e2-4e6e-bda0-926947022196)
- Call ID: 19780116-04e2-4e6e-bda0-926947022196
+    target: Princess_Margarita
+    relation: :isSiblingOf
+    source: Prince_Jaime_Bernardo_of_Bourbon_Parma
+  AddTriple (aade34c6-9ef8-4e77-8f33-141540cb5bd2)
+ Call ID: aade34c6-9ef8-4e77-8f33-141540cb5bd2
+  Args:
+    source: Prince_Jaime_Bernardo_of_Bourbon_Parma
+    relation: :isSiblingOf
+    target: Carlos_Duke_of_Parma
+  AddTriple (bb611ff7-89ca-42a7-bb98-bffe5bd6daae)
+ Call ID: bb611ff7-89ca-42a7-bb98-bffe5bd6daae
+  Args:
+    source: Prince_Jaime_Bernardo_of_Bourbon_Parma
+    target: Princess_Carolina
+    relation: :isSiblingOf
+  AddTriple (add5a2b0-dee7-4b70-80b3-0f278fe92e93)
+ Call ID: add5a2b0-dee7-4b70-80b3-0f278fe92e93
+  Args:
+    source: Prince_Jaime_Bernardo_of_Bourbon_Parma
+    relation: :hasChild
+    target: Gloria_Irene
+  AddLiteral (b1e9c950-ac01-4836-939e-d387377d1360)
+ Call ID: b1e9c950-ac01-4836-939e-d387377d1360
+  Args:
+    source: Gloria_Irene
+    literal_value: 2016-05-09
+    literal_type: xsd:date
+    relation: :hasBirthYear
+  AddTriple (50b0fb43-9d02-408d-af1b-e5f9a7c37ae8)
+ Call ID: 50b0fb43-9d02-408d-af1b-e5f9a7c37ae8
+  Args:
+    source: Carlos_Enrique
+    target: Carlos_Duke_of_Parma
+    relation: :hasFather
+  Finish (e56c4a64-132a-43d4-9030-a54cb91fdfd5)
+ Call ID: e56c4a64-132a-43d4-9030-a54cb91fdfd5
   Args:

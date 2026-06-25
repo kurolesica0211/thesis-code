@@ -111,6 +111,8 @@ In 2020, the branch of the Constantinian Order led by Prince Carlo was alleged t
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -126,39 +128,9 @@ In 2020, the branch of the Constantinian Order led by Prince Carlo was alleged t
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -173,6 +145,23 @@ In 2020, the branch of the Constantinian Order led by Prince Carlo was alleged t
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -190,6 +179,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,29 +261,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,6 +284,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -300,6 +304,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -308,17 +314,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -346,6 +354,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -361,80 +453,110 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (606b690b-6f53-49da-8047-982d105b245d)
- Call ID: 606b690b-6f53-49da-8047-982d105b245d
+  AssignClass (b4d61db0-1519-4f7b-94bc-6c0d10c5c100)
+ Call ID: b4d61db0-1519-4f7b-94bc-6c0d10c5c100
   Args:
     type: :Man
-    source: Prince_Carlo_of_Bourbon-Two_Sicilies
-  AssignClass (24a77a15-fefe-4c8b-a04a-861465e08dfc)
- Call ID: 24a77a15-fefe-4c8b-a04a-861465e08dfc
+    source: :Prince_Carlo_of_Bourbon-Two_Sicilies
+  AssignClass (f6489508-3aad-4ac3-baaf-65e3d69f1678)
+ Call ID: f6489508-3aad-4ac3-baaf-65e3d69f1678
+  Args:
+    source: :Prince_Carlo_of_Bourbon-Two_Sicilies
+    type: :Person
+  AssignClass (0cd35e88-56e3-49bc-b22c-69e0fc239915)
+ Call ID: 0cd35e88-56e3-49bc-b22c-69e0fc239915
   Args:
     type: :Man
-    source: Prince_Ferdinand_Duke_of_Castro
-  AssignClass (6a544ee5-1b28-4fa3-b047-105c683dfb5e)
- Call ID: 6a544ee5-1b28-4fa3-b047-105c683dfb5e
+    source: :Prince_Ferdinand_Duke_of_Castro
+  AssignClass (d2a4e7f3-3895-4d4e-9a13-2a593c6cbe95)
+ Call ID: d2a4e7f3-3895-4d4e-9a13-2a593c6cbe95
   Args:
+    source: :Prince_Ferdinand_Duke_of_Castro
+    type: :Person
+  AssignClass (ff49ceba-6992-4723-bbb4-f490f42ea056)
+ Call ID: ff49ceba-6992-4723-bbb4-f490f42ea056
+  Args:
+    source: :Chantal_de_Chevron-Villette
     type: :Woman
-    source: Chantal_de_Chevron-Villette
-  AssignClass (42daa146-23d3-42e6-b446-fb1fbc05361c)
- Call ID: 42daa146-23d3-42e6-b446-fb1fbc05361c
+  AssignClass (dd937b1a-8efb-4fae-a2b8-f6959a6a46b3)
+ Call ID: dd937b1a-8efb-4fae-a2b8-f6959a6a46b3
   Args:
-    type: :Woman
-    source: Camilla_Crociani
-  AssignClass (4dfcddf5-0aa4-4157-918a-10e4323b7872)
- Call ID: 4dfcddf5-0aa4-4157-918a-10e4323b7872
-  Args:
-    type: :Man
-    source: Camillo_Crociani
-  AssignClass (99de8597-d88e-4c82-87fe-6232045ca3b2)
- Call ID: 99de8597-d88e-4c82-87fe-6232045ca3b2
-  Args:
-    type: :Woman
-    source: Edy_Vessel
-  AddLiteral (e4ba2ffe-acdf-4962-bc44-d42468167ecb)
- Call ID: e4ba2ffe-acdf-4962-bc44-d42468167ecb
+    source: :Chantal_de_Chevron-Villette
+    type: :Person
+  AddLiteral (f66310b0-70d6-4373-afcf-e80e0cee772a)
+ Call ID: f66310b0-70d6-4373-afcf-e80e0cee772a
   Args:
     literal_type: xsd:integer
-    source: Prince_Carlo_of_Bourbon-Two_Sicilies
-    literal_value: 1963
     relation: :hasBirthYear
-  AddTriple (d2cce0f0-a363-497d-9b16-c4899f5cc8f1)
- Call ID: d2cce0f0-a363-497d-9b16-c4899f5cc8f1
+    literal_value: 1963
+    source: :Prince_Carlo_of_Bourbon-Two_Sicilies
+  AddTriple (7ca8faa0-4bf5-4623-9e25-c566c4b831a9)
+ Call ID: 7ca8faa0-4bf5-4623-9e25-c566c4b831a9
   Args:
-    target: Prince_Ferdinand_Duke_of_Castro
-    source: Prince_Carlo_of_Bourbon-Two_Sicilies
+    target: :Prince_Ferdinand_Duke_of_Castro
+    source: :Prince_Carlo_of_Bourbon-Two_Sicilies
     relation: :hasFather
-  AddTriple (14dd6984-bd61-4306-acaf-27e0e90c16dd)
- Call ID: 14dd6984-bd61-4306-acaf-27e0e90c16dd
-  Args:
-    target: Chantal_de_Chevron-Villette
-    source: Prince_Carlo_of_Bourbon-Two_Sicilies
-    relation: :hasMother
-  AddTriple (86c6023c-48dd-4b49-ab51-42d3bf21d68d)
- Call ID: 86c6023c-48dd-4b49-ab51-42d3bf21d68d
-  Args:
-    target: Camillo_Crociani
-    source: Camilla_Crociani
-    relation: :hasFather
-  AddTriple (cabb0d63-7a40-4757-a56e-e8966b84a39a)
- Call ID: cabb0d63-7a40-4757-a56e-e8966b84a39a
+  AddTriple (39c5e56e-a0e8-43b9-9250-53ddce4b4403)
+ Call ID: 39c5e56e-a0e8-43b9-9250-53ddce4b4403
   Args:
     relation: :hasMother
-    target: Edy_Vessel
-    source: Camilla_Crociani
-  AddLiteral (a3c7fbdd-0bc8-4b0b-af1c-3d3b5be98bba)
- Call ID: a3c7fbdd-0bc8-4b0b-af1c-3d3b5be98bba
+    target: :Chantal_de_Chevron-Villette
+    source: :Prince_Carlo_of_Bourbon-Two_Sicilies
+  AssignClass (b636cd4c-c6ec-4eea-9c4d-97f7024b0d4d)
+ Call ID: b636cd4c-c6ec-4eea-9c4d-97f7024b0d4d
+  Args:
+    type: :Woman
+    source: :Camilla_Crociani
+  AssignClass (21a656ca-4a53-4cda-a04c-9487001e1583)
+ Call ID: 21a656ca-4a53-4cda-a04c-9487001e1583
+  Args:
+    source: :Camilla_Crociani
+    type: :Person
+  AssignClass (842b560a-e95a-4b25-acce-6ee4bed22129)
+ Call ID: 842b560a-e95a-4b25-acce-6ee4bed22129
+  Args:
+    type: :Man
+    source: :Camillo_Crociani
+  AssignClass (cb14adad-cbb3-4e7a-ba46-1b2f31836d46)
+ Call ID: cb14adad-cbb3-4e7a-ba46-1b2f31836d46
+  Args:
+    source: :Camillo_Crociani
+    type: :Person
+  AssignClass (b25bcf75-d433-47ab-90a9-f2baa532d5f6)
+ Call ID: b25bcf75-d433-47ab-90a9-f2baa532d5f6
+  Args:
+    source: :Edy_Vessel
+    type: :Woman
+  AssignClass (4d37ba3c-92a8-41a4-ae25-d2cc73572678)
+ Call ID: 4d37ba3c-92a8-41a4-ae25-d2cc73572678
+  Args:
+    type: :Person
+    source: :Edy_Vessel
+  AddTriple (0d6e5414-d083-46dc-978d-dbd1ffc412d0)
+ Call ID: 0d6e5414-d083-46dc-978d-dbd1ffc412d0
+  Args:
+    source: :Camilla_Crociani
+    target: :Camillo_Crociani
+    relation: :hasFather
+  AddTriple (0b6ce35f-26f7-4f54-ac42-31247a2bf68b)
+ Call ID: 0b6ce35f-26f7-4f54-ac42-31247a2bf68b
+  Args:
+    source: :Camilla_Crociani
+    target: :Edy_Vessel
+    relation: :hasMother
+  AddLiteral (68dca382-0c0d-4abc-9707-b24433f6b5f6)
+ Call ID: 68dca382-0c0d-4abc-9707-b24433f6b5f6
   Args:
     literal_value: 1998
     relation: :hasMarriageYear
-    source: Prince_Carlo_of_Bourbon-Two_Sicilies
+    source: :Prince_Carlo_of_Bourbon-Two_Sicilies
     literal_type: xsd:integer
-  AddTriple (0a30358b-2cf2-4024-836c-d67b38625688)
- Call ID: 0a30358b-2cf2-4024-836c-d67b38625688
+  AddTriple (4eb0a016-d567-4999-9294-d41e3677daf0)
+ Call ID: 4eb0a016-d567-4999-9294-d41e3677daf0
   Args:
-    source: Prince_Carlo_of_Bourbon-Two_Sicilies
-    target: Camilla_Crociani
     relation: :hasRelation
-  Finish (bed7f22e-672f-412e-85e8-418932f6f339)
- Call ID: bed7f22e-672f-412e-85e8-418932f6f339
+    source: :Prince_Carlo_of_Bourbon-Two_Sicilies
+    target: :Camilla_Crociani
+  Finish (aee5f54e-ce8a-4dac-973d-f48932c3d871)
+ Call ID: aee5f54e-ce8a-4dac-973d-f48932c3d871
   Args:

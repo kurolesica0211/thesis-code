@@ -268,6 +268,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -283,39 +285,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -330,6 +302,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -347,6 +336,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -414,29 +418,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -445,6 +441,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -457,6 +461,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -465,17 +471,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -503,6 +511,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -518,175 +610,210 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2a86ac12-2cce-4e7b-9156-5a48b9b98b23)
- Call ID: 2a86ac12-2cce-4e7b-9156-5a48b9b98b23
+  AssignClass (5f9cc89c-ba9a-45f4-882f-56b66ecef4f6)
+ Call ID: 5f9cc89c-ba9a-45f4-882f-56b66ecef4f6
   Args:
+    source: :Princess_Elizabeth_of_Greece_and_Denmark
     type: :Woman
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-  AssignClass (643e1144-f604-463f-82d9-34257e286492)
- Call ID: 643e1144-f604-463f-82d9-34257e286492
+  AssignClass (038a798c-e860-47d5-944b-7391d3e1e740)
+ Call ID: 038a798c-e860-47d5-944b-7391d3e1e740
   Args:
-    source: Princess_Elizabeth_of_Greece_and_Denmark
+    source: :Princess_Elizabeth_of_Greece_and_Denmark
     type: :Person
-  AddLiteral (f5a76d91-da17-41f8-a0fe-f09a2381ba19)
- Call ID: f5a76d91-da17-41f8-a0fe-f09a2381ba19
+  AddLiteral (41b30d28-5971-45e1-bdc6-f53fd9b1c2a4)
+ Call ID: 41b30d28-5971-45e1-bdc6-f53fd9b1c2a4
   Args:
-    literal_type: xsd:string
-    literal_value: Female
-    relation: :hasSex
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-  AddLiteral (f67d17fb-7602-4914-8a5e-0ae31870ff61)
- Call ID: f67d17fb-7602-4914-8a5e-0ae31870ff61
-  Args:
-    source: Princess_Elizabeth_of_Greece_and_Denmark
     relation: :hasBirthYear
-    literal_value: 1904
     literal_type: xsd:integer
-  AddLiteral (57b9871f-63c9-4417-af8e-a056fb95060a)
- Call ID: 57b9871f-63c9-4417-af8e-a056fb95060a
+    source: :Princess_Elizabeth_of_Greece_and_Denmark
+    literal_value: 1904
+  AddLiteral (67215ecd-4a84-4c54-b820-df04ec3b686a)
+ Call ID: 67215ecd-4a84-4c54-b820-df04ec3b686a
   Args:
     literal_value: 1955
+    source: :Princess_Elizabeth_of_Greece_and_Denmark
     literal_type: xsd:integer
-    source: Princess_Elizabeth_of_Greece_and_Denmark
     relation: :hasDeathYear
-  AssignClass (84560177-156c-4ad4-9ea2-e63a55335ea7)
- Call ID: 84560177-156c-4ad4-9ea2-e63a55335ea7
+  AssignClass (048ea283-2492-491e-be9b-d967895664e7)
+ Call ID: 048ea283-2492-491e-be9b-d967895664e7
   Args:
-    source: Prince_Nicholas_of_Greece_and_Denmark
     type: :Man
-  AssignClass (b7a0eab5-9e76-4bc1-a830-173d219b79ea)
- Call ID: b7a0eab5-9e76-4bc1-a830-173d219b79ea
+    source: :Prince_Nicholas_of_Greece_and_Denmark
+  AssignClass (3d20dd0c-c746-4264-8d44-5027972fe2c6)
+ Call ID: 3d20dd0c-c746-4264-8d44-5027972fe2c6
   Args:
+    source: :Prince_Nicholas_of_Greece_and_Denmark
     type: :Person
-    source: Prince_Nicholas_of_Greece_and_Denmark
-  AddTriple (278db002-b78c-4784-92a7-ee82ea57f370)
- Call ID: 278db002-b78c-4784-92a7-ee82ea57f370
+  AssignClass (18cc509b-a8df-4d37-a56f-8f97a52a2eff)
+ Call ID: 18cc509b-a8df-4d37-a56f-8f97a52a2eff
   Args:
-    target: Prince_Nicholas_of_Greece_and_Denmark
+    source: :Prince_Nicholas_of_Greece_and_Denmark
+    type: :Ancestor
+  AssignClass (36193d22-58d6-46b9-9f43-98ac9d61b7a2)
+ Call ID: 36193d22-58d6-46b9-9f43-98ac9d61b7a2
+  Args:
+    type: :Woman
+    source: :Grand_Duchess_Elena_Vladimirovna_of_Russia
+  AssignClass (05d52eb7-5be5-487b-8f10-d7b5363b1054)
+ Call ID: 05d52eb7-5be5-487b-8f10-d7b5363b1054
+  Args:
+    source: :Grand_Duchess_Elena_Vladimirovna_of_Russia
+    type: :Person
+  AssignClass (275eefd4-738c-4852-a7d2-842ce98b7f22)
+ Call ID: 275eefd4-738c-4852-a7d2-842ce98b7f22
+  Args:
+    type: :Ancestor
+    source: :Grand_Duchess_Elena_Vladimirovna_of_Russia
+  AddTriple (69503b21-17a0-441f-9477-7b9d004e6ce2)
+ Call ID: 69503b21-17a0-441f-9477-7b9d004e6ce2
+  Args:
+    source: :Princess_Elizabeth_of_Greece_and_Denmark
     relation: :hasFather
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-  AssignClass (360c0afc-9d96-4bb8-8524-8c110ded4b41)
- Call ID: 360c0afc-9d96-4bb8-8524-8c110ded4b41
+    target: :Prince_Nicholas_of_Greece_and_Denmark
+  AddTriple (e629ed3f-a6ac-418c-8448-dec3f5a1ffbc)
+ Call ID: e629ed3f-a6ac-418c-8448-dec3f5a1ffbc
   Args:
-    type: :Woman
-    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AssignClass (268356c7-fb70-4869-8154-6590a348e9bf)
- Call ID: 268356c7-fb70-4869-8154-6590a348e9bf
-  Args:
-    type: :Person
-    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AddTriple (b49a3c2e-c9b5-4e84-829c-44139390fdd5)
- Call ID: b49a3c2e-c9b5-4e84-829c-44139390fdd5
-  Args:
-    target: Grand_Duchess_Elena_Vladimirovna_of_Russia
     relation: :hasMother
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-  AssignClass (cf907ca6-2ac7-46fd-969c-133591c295a0)
- Call ID: cf907ca6-2ac7-46fd-969c-133591c295a0
+    target: :Grand_Duchess_Elena_Vladimirovna_of_Russia
+    source: :Princess_Elizabeth_of_Greece_and_Denmark
+  AssignClass (ef9b7eba-50ce-441c-b6ec-2cc178f31b54)
+ Call ID: ef9b7eba-50ce-441c-b6ec-2cc178f31b54
   Args:
-    source: Princess_Marina
-    type: :Woman
-  AssignClass (7cf325a9-29ec-4cb4-a243-4810d209d7a0)
- Call ID: 7cf325a9-29ec-4cb4-a243-4810d209d7a0
-  Args:
-    type: :Person
-    source: Princess_Marina
-  AddTriple (4d0ead9b-4676-4af6-b4db-223712bcf331)
- Call ID: 4d0ead9b-4676-4af6-b4db-223712bcf331
-  Args:
-    relation: :isSisterOf
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-    target: Princess_Marina
-  AssignClass (c3aa9ba2-1dbe-4a73-ac54-427d06a4f963)
- Call ID: c3aa9ba2-1dbe-4a73-ac54-427d06a4f963
-  Args:
-    source: Princess_Olga
-    type: :Woman
-  AssignClass (39e40772-fbec-4910-9dcb-602262b01cd7)
- Call ID: 39e40772-fbec-4910-9dcb-602262b01cd7
-  Args:
-    type: :Person
-    source: Princess_Olga
-  AddTriple (c71bb344-d7dc-4936-97a7-d32eea4ff7ae)
- Call ID: c71bb344-d7dc-4936-97a7-d32eea4ff7ae
-  Args:
-    target: Princess_Olga
-    relation: :isSisterOf
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-  AssignClass (13a4f693-6e31-46fc-a8c9-e449c1e53ea7)
- Call ID: 13a4f693-6e31-46fc-a8c9-e449c1e53ea7
-  Args:
-    source: Count_Carl_Theodor_of_Törring-Jettenbach
     type: :Man
-  AssignClass (cfb6a1db-a4fc-4f75-8cbe-2d5f58b136f6)
- Call ID: cfb6a1db-a4fc-4f75-8cbe-2d5f58b136f6
+    source: :Count_Carl_Theodor_of_Torring_Jettenbach
+  AssignClass (4bdf7dc2-9890-45f0-8217-5dc06c0bede6)
+ Call ID: 4bdf7dc2-9890-45f0-8217-5dc06c0bede6
   Args:
-    source: Count_Carl_Theodor_of_Törring-Jettenbach
+    source: :Count_Carl_Theodor_of_Torring_Jettenbach
     type: :Person
-  AddLiteral (63a3ec27-7905-42e3-bb08-fb1d9cac732c)
- Call ID: 63a3ec27-7905-42e3-bb08-fb1d9cac732c
+  AddLiteral (bfcf1859-0539-48e6-ba8c-0debafe49f44)
+ Call ID: bfcf1859-0539-48e6-ba8c-0debafe49f44
   Args:
-    relation: :hasMarriageYear
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-    literal_type: xsd:integer
     literal_value: 1934
-  AddTriple (b54291bb-1c5f-47a4-9283-84d95b63b5e3)
- Call ID: b54291bb-1c5f-47a4-9283-84d95b63b5e3
+    source: :Princess_Elizabeth_of_Greece_and_Denmark
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AddTriple (f1bdd1b0-abc2-41f6-8648-f70152fb535d)
+ Call ID: f1bdd1b0-abc2-41f6-8648-f70152fb535d
   Args:
-    relation: :hasFather
-    source: Count_Carl_Theodor_of_Törring-Jettenbach
-    target: Count_Hans_Veit_zu_Toerring-Jettenbach
-  AssignClass (fb44b8e7-d533-472c-8837-4e6792582c3d)
- Call ID: fb44b8e7-d533-472c-8837-4e6792582c3d
-  Args:
-    source: Count_Hans_Veit_zu_Toerring-Jettenbach
-    type: :Man
-  AssignClass (27997244-c748-47bf-bbe2-f30291b70920)
- Call ID: 27997244-c748-47bf-bbe2-f30291b70920
-  Args:
-    type: :Person
-    source: Count_Hans_Veit_zu_Toerring-Jettenbach
-  AddTriple (f6b38aaf-5909-493d-a7c5-f21d52f57c48)
- Call ID: f6b38aaf-5909-493d-a7c5-f21d52f57c48
-  Args:
-    source: Count_Carl_Theodor_of_Törring-Jettenbach
-    relation: :hasMother
-    target: Duchess_Sophie_in_Bavaria
-  AssignClass (1e178a80-6b6d-471d-a7fb-0479c7c7c594)
- Call ID: 1e178a80-6b6d-471d-a7fb-0479c7c7c594
+    source: :Princess_Elizabeth_of_Greece_and_Denmark
+    target: :Count_Carl_Theodor_of_Torring_Jettenbach
+    relation: :hasRelation
+  AssignClass (f522a925-0b09-4f72-a585-59eae464340d)
+ Call ID: f522a925-0b09-4f72-a585-59eae464340d
   Args:
     type: :Woman
-    source: Duchess_Sophie_in_Bavaria
-  AssignClass (163e291f-1013-4890-894c-10148a9544e8)
- Call ID: 163e291f-1013-4890-894c-10148a9544e8
+    source: :Princess_Marina
+  AssignClass (37f74f8a-227f-463f-844a-cfb773022c71)
+ Call ID: 37f74f8a-227f-463f-844a-cfb773022c71
+  Args:
+    source: :Princess_Marina
+    type: :Person
+  AddTriple (d3533d53-cbdb-4bf9-b5fa-ad43149cf5bb)
+ Call ID: d3533d53-cbdb-4bf9-b5fa-ad43149cf5bb
+  Args:
+    source: :Princess_Elizabeth_of_Greece_and_Denmark
+    relation: :hasSister
+    target: :Princess_Marina
+  AssignClass (a87ec7db-aa8f-410a-a3f0-a472dc09ba04)
+ Call ID: a87ec7db-aa8f-410a-a3f0-a472dc09ba04
+  Args:
+    source: :Princess_Olga
+    type: :Woman
+  AssignClass (75fec4df-aea5-4dea-a710-76eb5c697d88)
+ Call ID: 75fec4df-aea5-4dea-a710-76eb5c697d88
   Args:
     type: :Person
-    source: Duchess_Sophie_in_Bavaria
-  AssignClass (77f0621f-f765-4709-bcca-8ba638eb56c5)
- Call ID: 77f0621f-f765-4709-bcca-8ba638eb56c5
+    source: :Princess_Olga
+  AddTriple (527a0ed2-4b24-477d-88e3-f36a57eb6fa3)
+ Call ID: 527a0ed2-4b24-477d-88e3-f36a57eb6fa3
   Args:
-    source: Hans_Veit
+    source: :Princess_Elizabeth_of_Greece_and_Denmark
+    target: :Princess_Olga
+    relation: :hasSister
+  AssignClass (0373a38c-343a-4a35-a4e4-c898ccafdd7f)
+ Call ID: 0373a38c-343a-4a35-a4e4-c898ccafdd7f
+  Args:
+    source: :Hans_Veit_of_Torring_Jettenbach
     type: :Man
-  AssignClass (2f8b428e-a754-4dd9-b8e3-a965a6016cd6)
- Call ID: 2f8b428e-a754-4dd9-b8e3-a965a6016cd6
+  AssignClass (ac6b1596-e640-479b-b27e-584ce090b399)
+ Call ID: ac6b1596-e640-479b-b27e-584ce090b399
+  Args:
+    source: :Hans_Veit_of_Torring_Jettenbach
+    type: :Person
+  AddTriple (5e9f8a5c-c4dc-4e3a-bcde-3ef8d75268c7)
+ Call ID: 5e9f8a5c-c4dc-4e3a-bcde-3ef8d75268c7
+  Args:
+    target: :Princess_Elizabeth_of_Greece_and_Denmark
+    relation: :isSonOf
+    source: :Hans_Veit_of_Torring_Jettenbach
+  AddTriple (34706c87-cff0-4cff-ba5a-5fe99e77aae3)
+ Call ID: 34706c87-cff0-4cff-ba5a-5fe99e77aae3
+  Args:
+    relation: :isSonOf
+    target: :Count_Carl_Theodor_of_Torring_Jettenbach
+    source: :Hans_Veit_of_Torring_Jettenbach
+  AssignClass (93a5106b-fd18-4c2a-b23a-d4e0ff4569d1)
+ Call ID: 93a5106b-fd18-4c2a-b23a-d4e0ff4569d1
+  Args:
+    source: :Count_Hans_Veit_zu_Torring_Jettenbach
+    type: :Man
+  AssignClass (9175b208-d2e2-4d8f-ac3e-f9d3ae61a5de)
+ Call ID: 9175b208-d2e2-4d8f-ac3e-f9d3ae61a5de
   Args:
     type: :Person
-    source: Hans_Veit
-  AddTriple (af4ca99f-e4cd-46d5-8684-12896c01849a)
- Call ID: af4ca99f-e4cd-46d5-8684-12896c01849a
+    source: :Count_Hans_Veit_zu_Torring_Jettenbach
+  AssignClass (5f5c70a8-3c2e-493e-8aa7-33d7cc093806)
+ Call ID: 5f5c70a8-3c2e-493e-8aa7-33d7cc093806
   Args:
+    type: :Ancestor
+    source: :Count_Hans_Veit_zu_Torring_Jettenbach
+  AssignClass (96029ea5-21e7-49c7-967d-bb803020732f)
+ Call ID: 96029ea5-21e7-49c7-967d-bb803020732f
+  Args:
+    type: :Woman
+    source: :Duchess_Sophie_in_Bavaria
+  AssignClass (4a7e626e-e9f8-4552-befa-000d844f9363)
+ Call ID: 4a7e626e-e9f8-4552-befa-000d844f9363
+  Args:
+    source: :Duchess_Sophie_in_Bavaria
+    type: :Person
+  AssignClass (83641bdc-d9f9-4093-900f-20cb9bb47ad1)
+ Call ID: 83641bdc-d9f9-4093-900f-20cb9bb47ad1
+  Args:
+    type: :Ancestor
+    source: :Duchess_Sophie_in_Bavaria
+  AddTriple (787f6da6-e50d-4580-8082-daf3e7f5a314)
+ Call ID: 787f6da6-e50d-4580-8082-daf3e7f5a314
+  Args:
+    source: :Count_Carl_Theodor_of_Torring_Jettenbach
+    target: :Count_Hans_Veit_zu_Torring_Jettenbach
     relation: :hasFather
-    source: Hans_Veit
-    target: Count_Carl_Theodor_of_Törring-Jettenbach
-  AddTriple (54511d37-6deb-437f-b1ef-b21b30ddc3ef)
- Call ID: 54511d37-6deb-437f-b1ef-b21b30ddc3ef
+  AddTriple (ef57f62b-6bdb-4d5a-9434-2b9ec5269bb9)
+ Call ID: ef57f62b-6bdb-4d5a-9434-2b9ec5269bb9
   Args:
-    target: Princess_Elizabeth_of_Greece_and_Denmark
-    source: Hans_Veit
+    target: :Duchess_Sophie_in_Bavaria
     relation: :hasMother
-  Finish (73a17a83-6a65-4567-b3d2-3ab913907680)
- Call ID: 73a17a83-6a65-4567-b3d2-3ab913907680
+    source: :Count_Carl_Theodor_of_Torring_Jettenbach
+  Finish (8acadfba-6a33-47ce-aff4-3561f3c3250e)
+ Call ID: 8acadfba-6a33-47ce-aff4-3561f3c3250e
   Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -811,26 +938,25 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Hans_Veit a :Man,
+  data:Hans_Veit_of_Torring_Jettenbach a :Man,
           :Person ;
-      :hasFather data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach ;
-      :hasMother data:Princess_Elizabeth_of_Greece_and_Denmark .
+      :isSonOf data:Count_Carl_Theodor_of_Torring_Jettenbach,
+          data:Princess_Elizabeth_of_Greece_and_Denmark .
 
-  data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach a :Man,
-          :Person ;
-      :hasFather data:Count_Hans_Veit_zu_Toerring-Jettenbach ;
-      :hasMother data:Duchess_Sophie_in_Bavaria .
-
-  data:Count_Hans_Veit_zu_Toerring-Jettenbach a :Man,
+  data:Count_Hans_Veit_zu_Torring_Jettenbach a :Ancestor,
+          :Man,
           :Person .
 
-  data:Duchess_Sophie_in_Bavaria a :Person,
+  data:Duchess_Sophie_in_Bavaria a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,
+  data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Prince_Nicholas_of_Greece_and_Denmark a :Man,
+  data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+          :Man,
           :Person .
 
   data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
@@ -840,8 +966,8 @@ The final data graph after all the edits:
       :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
       :hasMarriageYear 1934 ;
       :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-      :hasSex "Female"^^xsd:string ;
-      :isSisterOf data:Princess_Marina,
+      :hasRelation data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+      :hasSister data:Princess_Marina,
           data:Princess_Olga .
 
   data:Princess_Marina a :Person,
@@ -849,6 +975,11 @@ The final data graph after all the edits:
 
   data:Princess_Olga a :Person,
           :Woman .
+
+  data:Count_Carl_Theodor_of_Torring_Jettenbach a :Man,
+          :Person ;
+      :hasFather data:Count_Hans_Veit_zu_Torring_Jettenbach ;
+      :hasMother data:Duchess_Sophie_in_Bavaria .
 
 
 
@@ -860,222 +991,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (da313e22-ce3a-483d-9362-67a8a9d56500)
- Call ID: da313e22-ce3a-483d-9362-67a8a9d56500
+  ValidateShacl (af4fdf51-a81b-4a0a-b339-5909fecd2400)
+ Call ID: af4fdf51-a81b-4a0a-b339-5909fecd2400
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:26
+Total violations:6
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach lacks the required classification as :Ancestor or :Man.
+      The node Princess_Elizabeth_of_Greece_and_Denmark is identified as an ancestor of Hans_Veit_of_Torring_Jettenbach via the isSonOf property, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach", class: ":Man")
+      AssignClass(Princess_Elizabeth_of_Greece_and_Denmark, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node Count_Hans_Veit_zu_Toerring-Jettenbach lacks the required classification as :Ancestor or :Man.
+      The node Count_Carl_Theodor_of_Torring_Jettenbach is identified as an ancestor of Hans_Veit_of_Torring_Jettenbach via the isSonOf property, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Count_Hans_Veit_zu_Toerring-Jettenbach", class: ":Man")
+      AssignClass(Count_Carl_Theodor_of_Torring_Jettenbach, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node Princess_Elizabeth_of_Greece_and_Denmark lacks the required classification as :Ancestor or :Woman.
+      The node Princess_Elizabeth_of_Greece_and_Denmark is identified as an ancestor of Hans_Veit_of_Torring_Jettenbach via the isSonOf property, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Princess_Elizabeth_of_Greece_and_Denmark", class: ":Woman")
+      AssignClass(Princess_Elizabeth_of_Greece_and_Denmark, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node Duchess_Sophie_in_Bavaria lacks the required classification as :Ancestor or :Woman.
+      The node Count_Carl_Theodor_of_Torring_Jettenbach is identified as an ancestor of Hans_Veit_of_Torring_Jettenbach via the isSonOf property, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Duchess_Sophie_in_Bavaria", class: ":Woman")
+      AssignClass(Count_Carl_Theodor_of_Torring_Jettenbach, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Female' lacks the required class :Sex.
+      The node Princess_Elizabeth_of_Greece_and_Denmark is identified as an ancestor of Hans_Veit_of_Torring_Jettenbach via the isSonOf property, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(Princess_Elizabeth_of_Greece_and_Denmark, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach lacks the required classification as :Ancestor or :Man.
+      The node Count_Carl_Theodor_of_Torring_Jettenbach is identified as an ancestor of Hans_Veit_of_Torring_Jettenbach via the isSonOf property, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach", class: ":Man")
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Count_Hans_Veit_zu_Toerring-Jettenbach lacks the required classification as :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Count_Hans_Veit_zu_Toerring-Jettenbach", class: ":Man")
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Nicholas_of_Greece_and_Denmark lacks the required classification as :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Prince_Nicholas_of_Greece_and_Denmark", class: ":Man")
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Princess_Elizabeth_of_Greece_and_Denmark lacks the required classification as :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Princess_Elizabeth_of_Greece_and_Denmark", class: ":Woman")
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Duchess_Sophie_in_Bavaria lacks the required classification as :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Duchess_Sophie_in_Bavaria", class: ":Woman")
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Grand_Duchess_Elena_Vladimirovna_of_Russia lacks the required classification as :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Grand_Duchess_Elena_Vladimirovna_of_Russia", class: ":Woman")
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach lacks the required classification as :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach", class: ":Man")
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Count_Hans_Veit_zu_Toerring-Jettenbach lacks the required classification as :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Count_Hans_Veit_zu_Toerring-Jettenbach", class: ":Man")
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Nicholas_of_Greece_and_Denmark lacks the required classification as :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Prince_Nicholas_of_Greece_and_Denmark", class: ":Man")
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Princess_Elizabeth_of_Greece_and_Denmark lacks the required classification as :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Princess_Elizabeth_of_Greece_and_Denmark", class: ":Woman")
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Duchess_Sophie_in_Bavaria lacks the required classification as :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Duchess_Sophie_in_Bavaria", class: ":Woman")
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Grand_Duchess_Elena_Vladimirovna_of_Russia lacks the required classification as :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Grand_Duchess_Elena_Vladimirovna_of_Russia", class: ":Woman")
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Nicholas_of_Greece_and_Denmark lacks the required classification as :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Prince_Nicholas_of_Greece_and_Denmark", class: ":Man")
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Grand_Duchess_Elena_Vladimirovna_of_Russia lacks the required classification as :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Grand_Duchess_Elena_Vladimirovna_of_Russia", class: ":Woman")
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' lacks the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Female", class: ":Sex")
+      AssignClass(Count_Carl_Theodor_of_Torring_Jettenbach, :Ancestor)
 
 
 
@@ -1084,64 +1055,19 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (9f6a1c63-bd47-4741-913a-ffc8eba4c559)
- Call ID: 9f6a1c63-bd47-4741-913a-ffc8eba4c559
+  AssignClass (1f94e740-4d19-4139-9353-29d03a22ab11)
+ Call ID: 1f94e740-4d19-4139-9353-29d03a22ab11
   Args:
     type: :Ancestor
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-  AssignClass (89587230-f17e-4cc8-be04-aa81e486b4fa)
- Call ID: 89587230-f17e-4cc8-be04-aa81e486b4fa
+    source: :Princess_Elizabeth_of_Greece_and_Denmark
+  AssignClass (e4d460bb-4fb2-4a7b-a8a8-6a3dc711c328)
+ Call ID: e4d460bb-4fb2-4a7b-a8a8-6a3dc711c328
   Args:
+    source: :Count_Carl_Theodor_of_Torring_Jettenbach
     type: :Ancestor
-    source: Prince_Nicholas_of_Greece_and_Denmark
-  AssignClass (2defca45-7a48-46bc-bdac-5d2ce0669881)
- Call ID: 2defca45-7a48-46bc-bdac-5d2ce0669881
+  ValidateShacl (005f14d2-b282-4abc-855f-d71f85659c0e)
+ Call ID: 005f14d2-b282-4abc-855f-d71f85659c0e
   Args:
-    type: :Ancestor
-    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AssignClass (6304a1d4-fafd-4901-a382-b1583dc762db)
- Call ID: 6304a1d4-fafd-4901-a382-b1583dc762db
-  Args:
-    type: :Ancestor
-    source: Count_Carl_Theodor_of_Törring-Jettenbach
-  AssignClass (dcfd0b9b-6fe7-4e0d-826c-886ab4b02c35)
- Call ID: dcfd0b9b-6fe7-4e0d-826c-886ab4b02c35
-  Args:
-    type: :Ancestor
-    source: Count_Hans_Veit_zu_Toerring-Jettenbach
-  AssignClass (c7d38db4-9ca8-4095-94c4-2a2a3df86ef1)
- Call ID: c7d38db4-9ca8-4095-94c4-2a2a3df86ef1
-  Args:
-    type: :Ancestor
-    source: Duchess_Sophie_in_Bavaria
-  AssignClass (0807d0de-3845-4bfe-955b-ee67286be0b1)
- Call ID: 0807d0de-3845-4bfe-955b-ee67286be0b1
-  Args:
-    type: :Sex
-    source: Female
-  Finish (1b2d8c0e-0de6-47d5-9ae9-b84715e8b00e)
- Call ID: 1b2d8c0e-0de6-47d5-9ae9-b84715e8b00e
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1154,20 +1080,12 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Female a :Sex .
-
-  data:Hans_Veit a :Man,
+  data:Hans_Veit_of_Torring_Jettenbach a :Man,
           :Person ;
-      :hasFather data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach ;
-      :hasMother data:Princess_Elizabeth_of_Greece_and_Denmark .
+      :isSonOf data:Count_Carl_Theodor_of_Torring_Jettenbach,
+          data:Princess_Elizabeth_of_Greece_and_Denmark .
 
-  data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Count_Hans_Veit_zu_Toerring-Jettenbach ;
-      :hasMother data:Duchess_Sophie_in_Bavaria .
-
-  data:Count_Hans_Veit_zu_Toerring-Jettenbach a :Ancestor,
+  data:Count_Hans_Veit_zu_Torring_Jettenbach a :Ancestor,
           :Man,
           :Person .
 
@@ -1191,8 +1109,8 @@ The final data graph after all the edits:
       :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
       :hasMarriageYear 1934 ;
       :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-      :hasSex "Female"^^xsd:string ;
-      :isSisterOf data:Princess_Marina,
+      :hasRelation data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+      :hasSister data:Princess_Marina,
           data:Princess_Olga .
 
   data:Princess_Marina a :Person,
@@ -1201,218 +1119,13 @@ The final data graph after all the edits:
   data:Princess_Olga a :Person,
           :Woman .
 
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (4ff68e2b-4cb3-4751-8e56-3443d51805e8)
- Call ID: 4ff68e2b-4cb3-4751-8e56-3443d51805e8
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:11
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property ':hasSex' for node ':Princess_Elizabeth_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property ':hasSex' for node ':Princess_Elizabeth_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property ':hasSex' for node ':Princess_Elizabeth_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property ':hasSex' for node ':Princess_Elizabeth_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property ':hasSex' for node ':Princess_Elizabeth_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property ':hasSex' for node ':Princess_Elizabeth_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property ':hasSex' for node ':Princess_Elizabeth_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property ':hasSex' for node ':Princess_Elizabeth_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property ':hasSex' for node ':Princess_Elizabeth_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property ':hasSex' for node ':Princess_Elizabeth_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property ':hasSex' for node ':Princess_Elizabeth_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (2e90e4e8-6e8e-4ab8-be11-4b90b1db50fa)
- Call ID: 2e90e4e8-6e8e-4ab8-be11-4b90b1db50fa
-  Args:
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-    literal_value: Female
-    literal_type: xsd:string
-    relation: :hasSex
-  AddTriple (d75f4655-9e65-4a52-85ba-853c93fca76c)
- Call ID: d75f4655-9e65-4a52-85ba-853c93fca76c
-  Args:
-    source: Princess_Elizabeth_of_Greece_and_Denmark
-    relation: :hasSex
-    target: Female
-  AssignClass (bc719ae2-017d-4aca-bf00-c4c5d3ca3846)
- Call ID: bc719ae2-017d-4aca-bf00-c4c5d3ca3846
-  Args:
-    source: Female
-    type: :Female
-  Finish (fad5fa5a-117d-4db1-9bac-0ec73eb6edd4)
- Call ID: fad5fa5a-117d-4db1-9bac-0ec73eb6edd4
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Hans_Veit a :Man,
-          :Person ;
-      :hasFather data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach ;
-      :hasMother data:Princess_Elizabeth_of_Greece_and_Denmark .
-
-  data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach a :Ancestor,
+  data:Count_Carl_Theodor_of_Torring_Jettenbach a :Ancestor,
           :Man,
           :Person ;
-      :hasFather data:Count_Hans_Veit_zu_Toerring-Jettenbach ;
+      :hasFather data:Count_Hans_Veit_zu_Torring_Jettenbach ;
       :hasMother data:Duchess_Sophie_in_Bavaria .
 
-  data:Count_Hans_Veit_zu_Toerring-Jettenbach a :Ancestor,
-          :Man,
-          :Person .
 
-  data:Duchess_Sophie_in_Bavaria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Female a :Female,
-          :Sex .
-
-  data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Princess_Elizabeth_of_Greece_and_Denmark a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1904 ;
-      :hasDeathYear 1955 ;
-      :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
-      :hasMarriageYear 1934 ;
-      :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-      :hasSex data:Female ;
-      :isSisterOf data:Princess_Marina,
-          data:Princess_Olga .
-
-  data:Princess_Marina a :Person,
-          :Woman .
-
-  data:Princess_Olga a :Person,
-          :Woman .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (63cb10c4-0542-4bc9-8cb0-ddd247480cb7)
- Call ID: 63cb10c4-0542-4bc9-8cb0-ddd247480cb7
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1422,6 +1135,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (8e857da6-5cd3-4a08-a033-afd41fd98516)
- Call ID: 8e857da6-5cd3-4a08-a033-afd41fd98516
+  Finish (f5be45c1-5ee8-4e35-a326-c8036db01701)
+ Call ID: f5be45c1-5ee8-4e35-a326-c8036db01701
   Args:

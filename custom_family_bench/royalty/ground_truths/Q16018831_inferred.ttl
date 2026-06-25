@@ -1,0 +1,163 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Alice_of_Battenberg a :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "1114:1118"^^xsd:string,
+        "1258:1262"^^xsd:string,
+        "764:768"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasRelation data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Ian_Malcolm a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Ian Malcolm"^^xsd:string ;
+    data:posIndicesFull "308:319"^^xsd:string ;
+    data:posIndicesPart "1120:1127"^^xsd:string,
+        "1209:1216"^^xsd:string,
+        "770:777"^^xsd:string,
+        "955:962"^^xsd:string ;
+    data:wdtLink wdt:Q3147302 ;
+    :alsoKnownAs "Ian Zachary Malcolm"^^xsd:string,
+        "Sir Ian Zachary Malcolm"^^xsd:string,
+        "Sir Ian Zachary Malcolm, 17th of Poltalloch"^^xsd:string ;
+    :hasBrother data:Ian_Malcolm ;
+    :hasChild data:Mary_Malcolm ;
+    :hasDaughter data:Mary_Malcolm ;
+    :hasRelation data:Ian_Malcolm,
+        data:Mary_Malcolm ;
+    :hasSex data:male ;
+    :isAncestorOf data:Mary_Malcolm ;
+    :isBloodrelationOf data:Ian_Malcolm ;
+    :isBrotherOf data:Ian_Malcolm ;
+    :isFatherOf data:Mary_Malcolm ;
+    :isParentOf data:Mary_Malcolm ;
+    :isSiblingOf data:Ian_Malcolm ;
+    :isUncleOf data:Mary_Malcolm .
+
+data:Lillie_Langtry a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Lillie Langtry"^^xsd:string ;
+    data:posIndicesFull "408:422"^^xsd:string ;
+    data:wdtLink wdt:Q297743 ;
+    :alsoKnownAs "Emilie Charlotte Langtry"^^xsd:string,
+        "Emilie Charlotte Le Breton"^^xsd:string,
+        "Emilie Charlotte Le Breton De Bathe"^^xsd:string,
+        "Emilie Charlotte Le Breton Langtry"^^xsd:string,
+        "Emily Charlotte le Breton"^^xsd:string,
+        "Jersey Lilly"^^xsd:string,
+        "Jersey Lily"^^xsd:string,
+        "Lilly Langtry"^^xsd:string,
+        "Lily Langtry"^^xsd:string,
+        "Mrs. Langtry"^^xsd:string ;
+    :hasChild data:Jeanne_Marie_Langtry ;
+    :hasDaughter data:Jeanne_Marie_Langtry ;
+    :hasRelation data:Jeanne_Marie_Langtry,
+        data:Lillie_Langtry,
+        data:Mary_Malcolm ;
+    :hasSex data:female ;
+    :hasSister data:Lillie_Langtry ;
+    :isAncestorOf data:Jeanne_Marie_Langtry,
+        data:Mary_Malcolm ;
+    :isAuntOf data:Jeanne_Marie_Langtry ;
+    :isBloodrelationOf data:Lillie_Langtry ;
+    :isMotherOf data:Jeanne_Marie_Langtry ;
+    :isParentOf data:Jeanne_Marie_Langtry ;
+    :isSiblingOf data:Lillie_Langtry ;
+    :isSisterOf data:Lillie_Langtry .
+
+data:Jeanne_Marie_Langtry a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Jeanne Marie Langtry"^^xsd:string ;
+    data:posIndicesFull "324:338"^^xsd:string ;
+    data:wdtLink wdt:Q84795732 ;
+    :alsoKnownAs "Jeanne Langtry"^^xsd:string,
+        "Jeanne Marie Malcolm"^^xsd:string ;
+    :hasAncestor data:Lillie_Langtry ;
+    :hasChild data:Mary_Malcolm ;
+    :hasDaughter data:Mary_Malcolm ;
+    :hasMother data:Lillie_Langtry ;
+    :hasParent data:Lillie_Langtry ;
+    :hasRelation data:Jeanne_Marie_Langtry,
+        data:Lillie_Langtry,
+        data:Mary_Malcolm ;
+    :hasSex data:female ;
+    :hasSister data:Jeanne_Marie_Langtry ;
+    :isAncestorOf data:Mary_Malcolm ;
+    :isAuntOf data:Mary_Malcolm ;
+    :isBloodrelationOf data:Jeanne_Marie_Langtry ;
+    :isChildOf data:Lillie_Langtry ;
+    :isDaughterOf data:Lillie_Langtry ;
+    :isMotherOf data:Mary_Malcolm ;
+    :isParentOf data:Mary_Malcolm ;
+    :isSiblingOf data:Jeanne_Marie_Langtry ;
+    :isSisterOf data:Jeanne_Marie_Langtry .
+
+data:Mary_Malcolm a :Person,
+        :Woman ;
+    rdfs:label "Mary Malcolm"^^xsd:string ;
+    data:posIndicesFull "0:18"^^xsd:string,
+        "455:467"^^xsd:string,
+        "546:558"^^xsd:string,
+        "6:18"^^xsd:string ;
+    data:posIndicesPart "1120:1127"^^xsd:string,
+        "1209:1216"^^xsd:string,
+        "770:777"^^xsd:string,
+        "955:962"^^xsd:string ;
+    data:wdtLink wdt:Q16018831 ;
+    :alsoKnownAs "Helen Mary Malcolm"^^xsd:string ;
+    :hasAncestor data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry,
+        data:Lillie_Langtry ;
+    :hasFather data:Ian_Malcolm ;
+    :hasMother data:Jeanne_Marie_Langtry ;
+    :hasParent data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry ;
+    :hasRelation data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry,
+        data:Lillie_Langtry,
+        data:Mary_Malcolm ;
+    :hasSex data:female ;
+    :hasSister data:Mary_Malcolm ;
+    :isBloodrelationOf data:Mary_Malcolm ;
+    :isChildOf data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry ;
+    :isDaughterOf data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry ;
+    :isSiblingOf data:Mary_Malcolm ;
+    :isSisterOf data:Mary_Malcolm .
+

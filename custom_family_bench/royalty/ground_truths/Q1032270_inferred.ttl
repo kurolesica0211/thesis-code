@@ -1,0 +1,329 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Georg_von_Habsburg a :Man,
+        :Person ;
+    rdfs:label "Georg von Habsburg"^^xsd:string ;
+    data:posIndicesFull "883:901"^^xsd:string ;
+    data:posIndicesPart "1104:1112"^^xsd:string,
+        "1168:1176"^^xsd:string,
+        "1213:1221"^^xsd:string,
+        "1275:1283"^^xsd:string,
+        "1476:1484"^^xsd:string,
+        "1603:1611"^^xsd:string,
+        "1755:1763"^^xsd:string,
+        "1956:1964"^^xsd:string,
+        "2088:2096"^^xsd:string,
+        "2216:2224"^^xsd:string,
+        "2407:2415"^^xsd:string,
+        "2582:2590"^^xsd:string,
+        "2725:2733"^^xsd:string,
+        "2819:2827"^^xsd:string,
+        "3087:3095"^^xsd:string,
+        "3176:3184"^^xsd:string,
+        "3333:3341"^^xsd:string,
+        "3534:3542"^^xsd:string,
+        "3671:3679"^^xsd:string,
+        "3795:3803"^^xsd:string,
+        "3901:3909"^^xsd:string,
+        "4036:4044"^^xsd:string,
+        "4278:4286"^^xsd:string,
+        "4388:4396"^^xsd:string,
+        "4555:4563"^^xsd:string,
+        "4773:4781"^^xsd:string,
+        "4960:4968"^^xsd:string,
+        "5079:5087"^^xsd:string,
+        "5289:5297"^^xsd:string,
+        "5435:5443"^^xsd:string,
+        "5554:5562"^^xsd:string,
+        "5691:5699"^^xsd:string,
+        "5864:5872"^^xsd:string,
+        "6070:6078"^^xsd:string,
+        "6344:6352"^^xsd:string,
+        "6405:6413"^^xsd:string,
+        "6555:6563"^^xsd:string,
+        "6663:6671"^^xsd:string,
+        "6745:6753"^^xsd:string,
+        "6825:6833"^^xsd:string,
+        "7192:7200"^^xsd:string,
+        "7476:7484"^^xsd:string,
+        "7941:7949"^^xsd:string ;
+    data:wdtLink wdt:Q112096 ;
+    :alsoKnownAs "Archduke Georg of Austria"^^xsd:string,
+        "Archduke Georg von Habsburg"^^xsd:string,
+        "Archduke Paul Georg Maria Joseph Dominikus of Austria"^^xsd:string ;
+    :hasAncestor data:Otto_von_Habsburg ;
+    :hasBrother data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasParent data:Otto_von_Habsburg ;
+    :hasRelation data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isBrotherOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isChildOf data:Otto_von_Habsburg ;
+    :isSiblingOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isSonOf data:Otto_von_Habsburg ;
+    :isUncleOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria .
+
+data:Archduchess_Eleonore_of_Austria a :Person,
+        :Woman ;
+    rdfs:label "Archduchess Eleonore of Austria"^^xsd:string ;
+    data:posIndicesFull "1131:1152"^^xsd:string ;
+    data:posIndicesPart "1376:1383"^^xsd:string,
+        "7539:7546"^^xsd:string,
+        "7706:7713"^^xsd:string,
+        "7783:7790"^^xsd:string,
+        "8109:8116"^^xsd:string ;
+    data:wdtLink wdt:Q8951675 ;
+    :alsoKnownAs "Eleonore Jelena Maria del Pilar Iona Erzherzogin von Österreich"^^xsd:string,
+        "Eleonore von Habsburg"^^xsd:string,
+        "Eleonore von Habsburg-Lothringen"^^xsd:string ;
+    :hasAncestor data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasBrother data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :hasFather data:Karl_von_Habsburg ;
+    :hasParent data:Karl_von_Habsburg ;
+    :hasRelation data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasSex data:female ;
+    :hasSister data:Archduchess_Eleonore_of_Austria ;
+    :isBloodrelationOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isChildOf data:Karl_von_Habsburg ;
+    :isDaughterOf data:Karl_von_Habsburg ;
+    :isSiblingOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isSisterOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria .
+
+data:Archduke_Ferdinand_Zvonimir_of_Austria a :Man,
+        :Person ;
+    rdfs:label "Archduke Ferdinand Zvonimir of Austria"^^xsd:string ;
+    data:posIndicesFull "0:18"^^xsd:string,
+        "266:284"^^xsd:string ;
+    data:posIndicesPart "1094:1102"^^xsd:string,
+        "1376:1383"^^xsd:string,
+        "479:486"^^xsd:string,
+        "7337:7346"^^xsd:string,
+        "7539:7546"^^xsd:string,
+        "7613:7622"^^xsd:string,
+        "7663:7671"^^xsd:string,
+        "7678:7687"^^xsd:string,
+        "7706:7713"^^xsd:string,
+        "7783:7790"^^xsd:string,
+        "7832:7840"^^xsd:string,
+        "8023:8032"^^xsd:string,
+        "8109:8116"^^xsd:string ;
+    data:wdtLink wdt:Q1032270 ;
+    :alsoKnownAs "Ferdinand Erzherzog von Österreich"^^xsd:string,
+        "Ferdinand Habsburg"^^xsd:string,
+        "Ferdinand Zvonimir Maria Balthus Keith Michael Otto Antal Bahnam Leonhard von Habsburg-Lothringen"^^xsd:string ;
+    :hasAncestor data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasBrother data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :hasFather data:Karl_von_Habsburg ;
+    :hasParent data:Karl_von_Habsburg ;
+    :hasRelation data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :hasSister data:Archduchess_Eleonore_of_Austria ;
+    :isBloodrelationOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isBrotherOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isChildOf data:Karl_von_Habsburg ;
+    :isSiblingOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isSonOf data:Karl_von_Habsburg .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Otto von Habsburg"^^xsd:string ;
+    data:posIndicesFull "435:452"^^xsd:string,
+        "7429:7446"^^xsd:string ;
+    data:posIndicesPart "1104:1112"^^xsd:string,
+        "1168:1176"^^xsd:string,
+        "1213:1221"^^xsd:string,
+        "1275:1283"^^xsd:string,
+        "1476:1484"^^xsd:string,
+        "1603:1611"^^xsd:string,
+        "1755:1763"^^xsd:string,
+        "1956:1964"^^xsd:string,
+        "2088:2096"^^xsd:string,
+        "2216:2224"^^xsd:string,
+        "2407:2415"^^xsd:string,
+        "2582:2590"^^xsd:string,
+        "2725:2733"^^xsd:string,
+        "2819:2827"^^xsd:string,
+        "3087:3095"^^xsd:string,
+        "3176:3184"^^xsd:string,
+        "3333:3341"^^xsd:string,
+        "3534:3542"^^xsd:string,
+        "3671:3679"^^xsd:string,
+        "3795:3803"^^xsd:string,
+        "3901:3909"^^xsd:string,
+        "4036:4044"^^xsd:string,
+        "4278:4286"^^xsd:string,
+        "4388:4396"^^xsd:string,
+        "4555:4563"^^xsd:string,
+        "4773:4781"^^xsd:string,
+        "4960:4968"^^xsd:string,
+        "5079:5087"^^xsd:string,
+        "5289:5297"^^xsd:string,
+        "5435:5443"^^xsd:string,
+        "5554:5562"^^xsd:string,
+        "5691:5699"^^xsd:string,
+        "5864:5872"^^xsd:string,
+        "6070:6078"^^xsd:string,
+        "6344:6352"^^xsd:string,
+        "6405:6413"^^xsd:string,
+        "6555:6563"^^xsd:string,
+        "6663:6671"^^xsd:string,
+        "6745:6753"^^xsd:string,
+        "6825:6833"^^xsd:string,
+        "7192:7200"^^xsd:string,
+        "752:760"^^xsd:string,
+        "772:780"^^xsd:string,
+        "7941:7949"^^xsd:string ;
+    data:wdtLink wdt:Q76343 ;
+    :alsoKnownAs "Crown Prince Otto of Austria"^^xsd:string,
+        "Otto, Crown Prince of Austria"^^xsd:string ;
+    :hasBrother data:Otto_von_Habsburg ;
+    :hasChild data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :hasRelation data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria,
+        data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :hasSon data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isAncestorOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria,
+        data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isBloodrelationOf data:Otto_von_Habsburg ;
+    :isBrotherOf data:Otto_von_Habsburg ;
+    :isFatherOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isParentOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isSiblingOf data:Otto_von_Habsburg ;
+    :isUncleOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg .
+
+data:Karl_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Karl von Habsburg"^^xsd:string ;
+    data:posIndicesFull "313:330"^^xsd:string ;
+    data:posIndicesPart "1104:1112"^^xsd:string,
+        "1168:1176"^^xsd:string,
+        "1213:1221"^^xsd:string,
+        "1275:1283"^^xsd:string,
+        "1476:1484"^^xsd:string,
+        "1603:1611"^^xsd:string,
+        "1755:1763"^^xsd:string,
+        "1956:1964"^^xsd:string,
+        "2088:2096"^^xsd:string,
+        "2216:2224"^^xsd:string,
+        "2407:2415"^^xsd:string,
+        "2582:2590"^^xsd:string,
+        "2725:2733"^^xsd:string,
+        "2819:2827"^^xsd:string,
+        "3087:3095"^^xsd:string,
+        "3176:3184"^^xsd:string,
+        "3333:3341"^^xsd:string,
+        "3534:3542"^^xsd:string,
+        "3671:3679"^^xsd:string,
+        "3795:3803"^^xsd:string,
+        "3901:3909"^^xsd:string,
+        "394:402"^^xsd:string,
+        "4036:4044"^^xsd:string,
+        "4278:4286"^^xsd:string,
+        "4388:4396"^^xsd:string,
+        "4555:4563"^^xsd:string,
+        "4773:4781"^^xsd:string,
+        "4960:4968"^^xsd:string,
+        "5079:5087"^^xsd:string,
+        "5289:5297"^^xsd:string,
+        "5435:5443"^^xsd:string,
+        "5554:5562"^^xsd:string,
+        "5691:5699"^^xsd:string,
+        "5864:5872"^^xsd:string,
+        "6070:6078"^^xsd:string,
+        "6344:6352"^^xsd:string,
+        "6405:6413"^^xsd:string,
+        "6555:6563"^^xsd:string,
+        "6663:6671"^^xsd:string,
+        "6745:6753"^^xsd:string,
+        "6825:6833"^^xsd:string,
+        "7192:7200"^^xsd:string,
+        "7476:7484"^^xsd:string,
+        "752:760"^^xsd:string,
+        "772:780"^^xsd:string,
+        "7841:7845"^^xsd:string,
+        "7941:7949"^^xsd:string ;
+    data:wdtLink wdt:Q78515 ;
+    :alsoKnownAs "Karl Thomas Erzherzog von Österreich"^^xsd:string ;
+    :hasAncestor data:Otto_von_Habsburg ;
+    :hasBrother data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :hasChild data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :hasDaughter data:Archduchess_Eleonore_of_Austria ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasParent data:Otto_von_Habsburg ;
+    :hasRelation data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria,
+        data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :hasSon data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isAncestorOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isBloodrelationOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isBrotherOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isChildOf data:Otto_von_Habsburg ;
+    :isFatherOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isParentOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria ;
+    :isSiblingOf data:Georg_von_Habsburg,
+        data:Karl_von_Habsburg ;
+    :isSonOf data:Otto_von_Habsburg ;
+    :isUncleOf data:Archduchess_Eleonore_of_Austria,
+        data:Archduke_Ferdinand_Zvonimir_of_Austria .
+

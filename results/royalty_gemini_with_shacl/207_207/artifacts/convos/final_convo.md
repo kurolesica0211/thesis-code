@@ -85,26 +85,28 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Isabelle Françoise Hélène Marie d'Orléans (27 November 1900, Le Nouvion-en-Thiérache, France – 12 February 1983, Neuilly-sur-Seine, France) was a member of the House of Orléans and, by marriage, a member of the ducal Harcourt family and of the princely House of Murat.
-She was one of the four children of Prince Jean, Duke of Guise (1874–1940), who would become the Orleanist pretender to the French throne in 1926, and Princess Isabelle of Orléans.
-Marriages
+Princess Marie Louise of Hanover and Cumberland (11 October 1879 – 31 January 1948) was the eldest child of Ernest Augustus, Crown Prince of Hanover, and Princess Thyra of Denmark, the youngest daughter of Christian IX of Denmark and Louise of Hesse-Kassel.
+Through her father, Marie Louise was a great-great-granddaughter of George III of the United Kingdom and Charlotte of Mecklenburg-Strelitz.
+Marriage and children
 
-In 1923 the tradition of Orléans princesses marrying only other royalty (since the alleged 1681 wedding of La Grande Mademoiselle) was dispensed with, as nearly all of her relatives attended Isabelle's wedding at Amélie of Orléans château in Le Chesnay on 12 September to Count Bruno d'Harcourt (1899–1930), son of Count Eugène d'Harcourt and Armande de Pierre de Bernis.
-An automobile racer, Harcourt was killed during practice for the Moroccan Grand Prix, leaving his wife with four children:
+Marie Louise married Prince Maximilian of Baden (1867–1929), her third cousin twice removed, on 10 July 1900 in Gmunden, Austria-Hungary.
+He was the son of Prince Wilhelm of Baden and Princess Maria Maximilianovna of Leuchtenberg and became a first cousin twice removed of Napoleon III of France.
+Marie Louise and Maximilian had one daughter and one son:
 
 
-As a widow, Isabelle remarried the Bonapartist Prince Pierre Murat (1900–1948) in 1934, at Jouy-en-Josas, "upon renunciation of the rank and prerogatives appertaining to princesses of the House of France".
-Prince Murat was a  great-grandson of Prince Lucien Murat.
-In 1940, as World War II began and when her father died, Isabelle again took refuge at the family estate, Larache, in Morocco, where she shared quarters with her mother, and her elder sister the widowed Princess Françoise of Greece, along with her brother Henri, Count of Paris and the latter's son, Prince Michel d'Orléans.Isabella often visited her parents in Morocco, Belgium and France, especially during World 
-War II.
-In 1953, her younger sister,Princess Françoise, widow of Prince Christopher of Greece, died in her Paris home after a long period of depression.
-Princess Isabella herself died in 1983 and is buried in the Montparnasse Cemetery in Paris.
+Ancestry
+
+References
+
+External links
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -120,39 +122,9 @@ Princess Isabella herself died in 1983 and is buried in the Montparnasse Cemeter
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -167,6 +139,23 @@ Princess Isabella herself died in 1983 and is buried in the Montparnasse Cemeter
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -184,6 +173,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -251,29 +255,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -282,6 +278,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -294,6 +298,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -302,17 +308,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -340,6 +348,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -355,436 +447,214 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e2c6aaed-b74c-4dcc-b71f-4c202b61915e)
- Call ID: e2c6aaed-b74c-4dcc-b71f-4c202b61915e
+  AssignClass (adc324b0-5fa5-4d8d-93a2-df35b40cc053)
+ Call ID: adc324b0-5fa5-4d8d-93a2-df35b40cc053
   Args:
+    source: :Marie_Louise_of_Hanover_and_Cumberland
     type: :Woman
-    source: Isabelle_dOrleans
-  AssignClass (5910bfe7-ebd6-4ca6-8d71-31f26eb5c53e)
- Call ID: 5910bfe7-ebd6-4ca6-8d71-31f26eb5c53e
+  AssignClass (11921a26-a5c6-4156-9340-12d56bed37ae)
+ Call ID: 11921a26-a5c6-4156-9340-12d56bed37ae
   Args:
+    source: :Marie_Louise_of_Hanover_and_Cumberland
     type: :Person
-    source: Isabelle_dOrleans
-  AddLiteral (d9af7646-2222-4f2a-8259-6f77cc9f0ae7)
- Call ID: d9af7646-2222-4f2a-8259-6f77cc9f0ae7
+  AddLiteral (d8747541-9554-431d-b0a6-7a5deb960f3f)
+ Call ID: d8747541-9554-431d-b0a6-7a5deb960f3f
   Args:
-    relation: :knownAs
-    literal_type: xsd:string
-    literal_value: Princess Isabelle Françoise Hélène Marie d'Orléans
-    source: Isabelle_dOrleans
-  AddLiteral (2a421a00-3e00-4dfc-895b-9f2253f1f7ad)
- Call ID: 2a421a00-3e00-4dfc-895b-9f2253f1f7ad
-  Args:
-    literal_value: 1900
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Isabelle_dOrleans
-  AddLiteral (210590de-5e08-4415-b633-47167899ac10)
- Call ID: 210590de-5e08-4415-b633-47167899ac10
-  Args:
-    source: Isabelle_dOrleans
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 1983
-  AssignClass (9a993446-0da9-4924-b4de-a9b10041f83f)
- Call ID: 9a993446-0da9-4924-b4de-a9b10041f83f
-  Args:
-    type: :Man
-    source: Prince_Jean_Duke_of_Guise
-  AssignClass (28a35e02-3d1e-4ec4-b475-7bc54dfd099e)
- Call ID: 28a35e02-3d1e-4ec4-b475-7bc54dfd099e
-  Args:
-    type: :Ancestor
-    source: Prince_Jean_Duke_of_Guise
-  AssignClass (0a7064d5-c79a-401c-8d65-39ada27bd8f8)
- Call ID: 0a7064d5-c79a-401c-8d65-39ada27bd8f8
-  Args:
-    type: :Person
-    source: Prince_Jean_Duke_of_Guise
-  AddLiteral (db3751dd-eb9f-4b64-bf48-9f8b1315c15f)
- Call ID: db3751dd-eb9f-4b64-bf48-9f8b1315c15f
-  Args:
-    source: Prince_Jean_Duke_of_Guise
-    literal_value: Prince Jean, Duke of Guise
-    literal_type: xsd:string
-    relation: :knownAs
-  AddLiteral (d2d3a5da-dfe5-416b-afeb-189a706eca12)
- Call ID: d2d3a5da-dfe5-416b-afeb-189a706eca12
-  Args:
-    literal_value: 1874
+    source: :Marie_Louise_of_Hanover_and_Cumberland
     literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Prince_Jean_Duke_of_Guise
-  AddLiteral (876554d2-96b1-480b-a6ac-49ec40fe51e1)
- Call ID: 876554d2-96b1-480b-a6ac-49ec40fe51e1
+    literal_value: 1879
+  AddLiteral (4b8888eb-1d2f-4069-aa37-2171c22e511d)
+ Call ID: 4b8888eb-1d2f-4069-aa37-2171c22e511d
   Args:
-    source: Prince_Jean_Duke_of_Guise
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 1940
-  AssignClass (f18e136c-94fd-466c-92d2-f6af2cefb5a4)
- Call ID: f18e136c-94fd-466c-92d2-f6af2cefb5a4
-  Args:
-    type: :Woman
-    source: Princess_Isabelle_of_Orleans_mother
-  AssignClass (7322962f-21d3-47b0-b491-196f46ebf671)
- Call ID: 7322962f-21d3-47b0-b491-196f46ebf671
-  Args:
-    type: :Ancestor
-    source: Princess_Isabelle_of_Orleans_mother
-  AssignClass (32314947-5c32-4087-80b5-c25e1e20450e)
- Call ID: 32314947-5c32-4087-80b5-c25e1e20450e
-  Args:
-    type: :Person
-    source: Princess_Isabelle_of_Orleans_mother
-  AddLiteral (0d3b1e4c-380b-4266-9758-3a9e243b14e8)
- Call ID: 0d3b1e4c-380b-4266-9758-3a9e243b14e8
-  Args:
-    source: Princess_Isabelle_of_Orleans_mother
-    literal_type: xsd:string
-    relation: :knownAs
-    literal_value: Princess Isabelle of Orléans
-  AddTriple (9f48ff47-5bc6-4cd3-b6d4-32768f1913e8)
- Call ID: 9f48ff47-5bc6-4cd3-b6d4-32768f1913e8
-  Args:
-    target: Prince_Jean_Duke_of_Guise
-    source: Isabelle_dOrleans
-    relation: :hasFather
-  AddTriple (f7163eb7-e247-4c13-bb30-33a95f4415df)
- Call ID: f7163eb7-e247-4c13-bb30-33a95f4415df
-  Args:
-    source: Isabelle_dOrleans
-    target: Princess_Isabelle_of_Orleans_mother
-    relation: :hasMother
-  AssignClass (abf0de6c-30cd-4331-b626-f131dbd0d99f)
- Call ID: abf0de6c-30cd-4331-b626-f131dbd0d99f
-  Args:
-    type: :Man
-    source: Bruno_dHarcourt
-  AssignClass (65fed5be-7b09-4e17-9a3f-ce3221577914)
- Call ID: 65fed5be-7b09-4e17-9a3f-ce3221577914
-  Args:
-    type: :Person
-    source: Bruno_dHarcourt
-  AddLiteral (33e0c98d-2873-4e3f-b0b4-f880154272ed)
- Call ID: 33e0c98d-2873-4e3f-b0b4-f880154272ed
-  Args:
-    literal_value: Count Bruno d'Harcourt
-    relation: :knownAs
-    literal_type: xsd:string
-    source: Bruno_dHarcourt
-  AddLiteral (ff3b21f1-873d-47c2-9d0b-72d7e5e5e0fb)
- Call ID: ff3b21f1-873d-47c2-9d0b-72d7e5e5e0fb
-  Args:
-    literal_value: 1899
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Bruno_dHarcourt
-  AddLiteral (0d4cec7c-cd74-4f55-aa50-c797ddc311a7)
- Call ID: 0d4cec7c-cd74-4f55-aa50-c797ddc311a7
-  Args:
-    source: Bruno_dHarcourt
-    literal_value: 1930
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddLiteral (d3639775-0d11-42fa-8d9e-b62aa4f26f07)
- Call ID: d3639775-0d11-42fa-8d9e-b62aa4f26f07
-  Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1923
-    source: Isabelle_dOrleans
-  AddTriple (d7b3f597-d669-463c-bc55-127c0ad5bc90)
- Call ID: d7b3f597-d669-463c-bc55-127c0ad5bc90
-  Args:
-    source: Isabelle_dOrleans
-    target: Bruno_dHarcourt
-    relation: :hasRelation
-  AssignClass (ed7fdd4e-f353-41f6-ba8b-cf632480291e)
- Call ID: ed7fdd4e-f353-41f6-ba8b-cf632480291e
-  Args:
-    type: :Man
-    source: Eugene_dHarcourt
-  AssignClass (f20e3ee9-40f5-4136-9132-e68433a801ff)
- Call ID: f20e3ee9-40f5-4136-9132-e68433a801ff
-  Args:
-    type: :Ancestor
-    source: Eugene_dHarcourt
-  AssignClass (66e40775-cc7f-4c00-a01a-d67723ab10b2)
- Call ID: 66e40775-cc7f-4c00-a01a-d67723ab10b2
-  Args:
-    type: :Person
-    source: Eugene_dHarcourt
-  AddTriple (e36d689e-89b6-4acb-920d-67d2a9a99b64)
- Call ID: e36d689e-89b6-4acb-920d-67d2a9a99b64
-  Args:
-    source: Bruno_dHarcourt
-    target: Eugene_dHarcourt
-    relation: :hasFather
-  AssignClass (38ced5e1-e6c5-4d1b-b7a2-c3090f8bb672)
- Call ID: 38ced5e1-e6c5-4d1b-b7a2-c3090f8bb672
-  Args:
-    type: :Woman
-    source: Armande_de_Pierre_de_Bernis
-  AssignClass (e4135f42-52f1-4b7f-a7ff-4d99311b0a03)
- Call ID: e4135f42-52f1-4b7f-a7ff-4d99311b0a03
-  Args:
-    type: :Ancestor
-    source: Armande_de_Pierre_de_Bernis
-  AssignClass (61f80349-2fcf-41bb-b6cd-037428709b3f)
- Call ID: 61f80349-2fcf-41bb-b6cd-037428709b3f
-  Args:
-    type: :Person
-    source: Armande_de_Pierre_de_Bernis
-  AddTriple (3e13e3d3-c32b-44ca-92cb-c60c2b4f5282)
- Call ID: 3e13e3d3-c32b-44ca-92cb-c60c2b4f5282
-  Args:
-    source: Bruno_dHarcourt
-    target: Armande_de_Pierre_de_Bernis
-    relation: :hasMother
-  AssignClass (accc5595-9fce-4d98-8c93-3b61d7daa2da)
- Call ID: accc5595-9fce-4d98-8c93-3b61d7daa2da
-  Args:
-    type: :Man
-    source: Pierre_Murat
-  AssignClass (8508438e-5c1b-4ebb-9744-bb32c2f1321a)
- Call ID: 8508438e-5c1b-4ebb-9744-bb32c2f1321a
-  Args:
-    type: :Person
-    source: Pierre_Murat
-  AddLiteral (18a0bf21-7da9-4303-8e17-77fc9e264154)
- Call ID: 18a0bf21-7da9-4303-8e17-77fc9e264154
-  Args:
-    source: Pierre_Murat
-    literal_value: Prince Pierre Murat
-    literal_type: xsd:string
-    relation: :knownAs
-  AddLiteral (7f87256b-a3b0-4eaf-bece-140c7d66e8bc)
- Call ID: 7f87256b-a3b0-4eaf-bece-140c7d66e8bc
-  Args:
-    source: Pierre_Murat
-    literal_value: 1900
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (8a2087fa-3699-4023-99d2-e802503e6c85)
- Call ID: 8a2087fa-3699-4023-99d2-e802503e6c85
-  Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
+    source: :Marie_Louise_of_Hanover_and_Cumberland
     literal_value: 1948
-    source: Pierre_Murat
-  AddLiteral (2e20483d-4de3-47cf-bdaa-abdba0b8c788)
- Call ID: 2e20483d-4de3-47cf-bdaa-abdba0b8c788
-  Args:
-    source: Isabelle_dOrleans
-    literal_value: 1934
+    relation: :hasDeathYear
     literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AddTriple (2dab1e55-907a-4f68-9814-52e352df965c)
- Call ID: 2dab1e55-907a-4f68-9814-52e352df965c
+  AssignClass (a5a6e3f1-027a-44b4-9d31-05c253680de2)
+ Call ID: a5a6e3f1-027a-44b4-9d31-05c253680de2
   Args:
-    target: Pierre_Murat
-    source: Isabelle_dOrleans
-    relation: :hasRelation
-  AssignClass (b00024b9-69ed-4825-bd73-578768436b31)
- Call ID: b00024b9-69ed-4825-bd73-578768436b31
+    source: :Ernest_Augustus_Crown_Prince_of_Hanover
+    type: :Man
+  AssignClass (68f6408e-6ab9-426a-8e27-44898ab01f3a)
+ Call ID: 68f6408e-6ab9-426a-8e27-44898ab01f3a
+  Args:
+    source: :Ernest_Augustus_Crown_Prince_of_Hanover
+    type: :Person
+  AssignClass (d8b5fb95-ae83-4f27-94dc-65b4a397c721)
+ Call ID: d8b5fb95-ae83-4f27-94dc-65b4a397c721
+  Args:
+    source: :Princess_Thyra_of_Denmark
+    type: :Woman
+  AssignClass (c116c1c6-7ee4-417b-b320-d4b838643e99)
+ Call ID: c116c1c6-7ee4-417b-b320-d4b838643e99
+  Args:
+    source: :Princess_Thyra_of_Denmark
+    type: :Person
+  AddTriple (54d17742-f603-47fd-bbf5-94f03bee3ebe)
+ Call ID: 54d17742-f603-47fd-bbf5-94f03bee3ebe
+  Args:
+    target: :Ernest_Augustus_Crown_Prince_of_Hanover
+    relation: :hasFather
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+  AddTriple (1f7f6e82-b93d-4339-867d-41f673140c6e)
+ Call ID: 1f7f6e82-b93d-4339-867d-41f673140c6e
+  Args:
+    relation: :hasMother
+    target: :Princess_Thyra_of_Denmark
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+  AssignClass (0e0e1937-03be-4849-8687-111fd048d877)
+ Call ID: 0e0e1937-03be-4849-8687-111fd048d877
   Args:
     type: :Man
-    source: Lucien_Murat
-  AssignClass (854ec7dc-93a1-47c9-832a-8821df5cdd0a)
- Call ID: 854ec7dc-93a1-47c9-832a-8821df5cdd0a
+    source: :Christian_IX_of_Denmark
+  AssignClass (051071b9-db0d-4d47-a9c6-02c95fa7c988)
+ Call ID: 051071b9-db0d-4d47-a9c6-02c95fa7c988
   Args:
-    type: :Ancestor
-    source: Lucien_Murat
-  AssignClass (0ad32000-aad6-4be1-bb33-9276fb21239c)
- Call ID: 0ad32000-aad6-4be1-bb33-9276fb21239c
-  Args:
+    source: :Christian_IX_of_Denmark
     type: :Person
-    source: Lucien_Murat
-  AddTriple (975e4a60-77af-4ce5-88c0-3ab7c5a24afe)
- Call ID: 975e4a60-77af-4ce5-88c0-3ab7c5a24afe
-  Args:
-    target: Lucien_Murat
-    source: Pierre_Murat
-    relation: :hasAncestor
-  AssignClass (6a695d95-757f-49f1-b278-d2dd5b0fcf78)
- Call ID: 6a695d95-757f-49f1-b278-d2dd5b0fcf78
+  AssignClass (7d851e69-0970-40fc-b808-0ede140d2951)
+ Call ID: 7d851e69-0970-40fc-b808-0ede140d2951
   Args:
     type: :Woman
-    source: Francoise_of_Greece
-  AssignClass (7aaa5daf-047e-41bb-b97d-c02f08b4813c)
- Call ID: 7aaa5daf-047e-41bb-b97d-c02f08b4813c
+    source: :Louise_of_Hesse-Kassel
+  AssignClass (9f902b71-aea4-4e5e-bb2a-e4ff398900d8)
+ Call ID: 9f902b71-aea4-4e5e-bb2a-e4ff398900d8
   Args:
     type: :Person
-    source: Francoise_of_Greece
-  AddLiteral (13d76594-a7aa-49ca-9c91-7b7cdc7a241d)
- Call ID: 13d76594-a7aa-49ca-9c91-7b7cdc7a241d
+    source: :Louise_of_Hesse-Kassel
+  AddTriple (befb6612-a0fe-4117-9b97-9189b32afc2c)
+ Call ID: befb6612-a0fe-4117-9b97-9189b32afc2c
   Args:
-    source: Francoise_of_Greece
-    literal_value: Princess Françoise of Greece
-    literal_type: xsd:string
-    relation: :knownAs
-  AddTriple (fb13c8cf-6a0e-4f4d-a7aa-4179b49e26ec)
- Call ID: fb13c8cf-6a0e-4f4d-a7aa-4179b49e26ec
-  Args:
-    relation: :isSisterOf
-    source: Isabelle_dOrleans
-    target: Francoise_of_Greece
-  AssignClass (3d384685-3949-4af0-8a0f-5484a0b3a2d3)
- Call ID: 3d384685-3949-4af0-8a0f-5484a0b3a2d3
-  Args:
-    type: :Man
-    source: Henri_Count_of_Paris
-  AssignClass (690d4b32-0f9b-4b53-b1c7-ecd502a006f4)
- Call ID: 690d4b32-0f9b-4b53-b1c7-ecd502a006f4
-  Args:
-    type: :Person
-    source: Henri_Count_of_Paris
-  AddLiteral (2aa3723b-31c3-4f90-9feb-d6c1506be77a)
- Call ID: 2aa3723b-31c3-4f90-9feb-d6c1506be77a
-  Args:
-    literal_value: Henri, Count of Paris
-    relation: :knownAs
-    literal_type: xsd:string
-    source: Henri_Count_of_Paris
-  AddTriple (a6a30f5f-3366-4ab9-8165-d8da3ce4b817)
- Call ID: a6a30f5f-3366-4ab9-8165-d8da3ce4b817
-  Args:
-    relation: :isBrotherOf
-    source: Isabelle_dOrleans
-    target: Henri_Count_of_Paris
-  AssignClass (90af9bfb-99fa-480a-8d99-0ec4f6806a90)
- Call ID: 90af9bfb-99fa-480a-8d99-0ec4f6806a90
-  Args:
-    type: :Man
-    source: Michel_dOrleans
-  AssignClass (35a3eb91-dd0c-4600-b66f-eea614848b58)
- Call ID: 35a3eb91-dd0c-4600-b66f-eea614848b58
-  Args:
-    type: :Person
-    source: Michel_dOrleans
-  AddLiteral (5c9b6630-0d37-4efd-80da-85fdeb3edf27)
- Call ID: 5c9b6630-0d37-4efd-80da-85fdeb3edf27
-  Args:
-    relation: :knownAs
-    literal_type: xsd:string
-    literal_value: Prince Michel d'Orléans
-    source: Michel_dOrleans
-  AddTriple (4a1fbe56-30ad-47fc-b815-21058749118e)
- Call ID: 4a1fbe56-30ad-47fc-b815-21058749118e
-  Args:
-    target: Henri_Count_of_Paris
-    source: Michel_dOrleans
+    source: :Princess_Thyra_of_Denmark
     relation: :hasFather
-  AssignClass (d9c45c98-8493-4db5-bbbc-189e6fe18e04)
- Call ID: d9c45c98-8493-4db5-bbbc-189e6fe18e04
+    target: :Christian_IX_of_Denmark
+  AddTriple (7aac876b-60c3-4a83-9d23-93a77098dca3)
+ Call ID: 7aac876b-60c3-4a83-9d23-93a77098dca3
+  Args:
+    source: :Princess_Thyra_of_Denmark
+    target: :Louise_of_Hesse-Kassel
+    relation: :hasMother
+  AssignClass (5aa26931-f23d-462d-a4a7-91d5d521c708)
+ Call ID: 5aa26931-f23d-462d-a4a7-91d5d521c708
+  Args:
+    source: :George_III_of_the_United_Kingdom
+    type: :Man
+  AssignClass (1d85a65f-30db-4c36-a5a3-2f6a2d804172)
+ Call ID: 1d85a65f-30db-4c36-a5a3-2f6a2d804172
+  Args:
+    source: :George_III_of_the_United_Kingdom
+    type: :Person
+  AssignClass (3f3070fe-26a6-445b-9ec3-60edf71eab11)
+ Call ID: 3f3070fe-26a6-445b-9ec3-60edf71eab11
+  Args:
+    type: :Woman
+    source: :Charlotte_of_Mecklenburg-Strelitz
+  AssignClass (8c9f143d-5310-48bd-8537-858eef2d2063)
+ Call ID: 8c9f143d-5310-48bd-8537-858eef2d2063
+  Args:
+    source: :Charlotte_of_Mecklenburg-Strelitz
+    type: :Person
+  AddTriple (2d6282d7-4a1c-490a-8295-1f0205565c48)
+ Call ID: 2d6282d7-4a1c-490a-8295-1f0205565c48
+  Args:
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+    target: :George_III_of_the_United_Kingdom
+    relation: :hasAncestor
+  AddTriple (5fba4a4a-7a8c-4c9f-8f88-2378dee192d0)
+ Call ID: 5fba4a4a-7a8c-4c9f-8f88-2378dee192d0
+  Args:
+    relation: :hasAncestor
+    target: :Charlotte_of_Mecklenburg-Strelitz
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+  AssignClass (88344a7a-db8a-4d06-b0ee-c1fa6c681fc4)
+ Call ID: 88344a7a-db8a-4d06-b0ee-c1fa6c681fc4
   Args:
     type: :Man
-    source: Christopher_of_Greece
-  AssignClass (2492f691-de24-4f14-95f9-6b3479da3eba)
- Call ID: 2492f691-de24-4f14-95f9-6b3479da3eba
-  Args:
-    type: :Ancestor
-    source: Christopher_of_Greece
-  AssignClass (758ee01d-4508-40fe-bd0e-61f03932610f)
- Call ID: 758ee01d-4508-40fe-bd0e-61f03932610f
+    source: :Maximilian_of_Baden
+  AssignClass (9da5dfee-7c1a-412c-b6c5-6808428f2d01)
+ Call ID: 9da5dfee-7c1a-412c-b6c5-6808428f2d01
   Args:
     type: :Person
-    source: Christopher_of_Greece
-  AddTriple (e0b77f9f-df41-44ca-95db-22e34414e444)
- Call ID: e0b77f9f-df41-44ca-95db-22e34414e444
+    source: :Maximilian_of_Baden
+  AddLiteral (c16fbb39-3e40-41dd-92b7-f5f18238a640)
+ Call ID: c16fbb39-3e40-41dd-92b7-f5f18238a640
   Args:
+    source: :Maximilian_of_Baden
+    literal_type: xsd:integer
+    literal_value: 1867
+    relation: :hasBirthYear
+  AddLiteral (31e4d05c-0ed3-4ca7-9642-800903b2df51)
+ Call ID: 31e4d05c-0ed3-4ca7-9642-800903b2df51
+  Args:
+    source: :Maximilian_of_Baden
+    relation: :hasDeathYear
+    literal_value: 1929
+    literal_type: xsd:integer
+  AddLiteral (5b22b3fd-5131-4ce5-a111-1f5683e40e56)
+ Call ID: 5b22b3fd-5131-4ce5-a111-1f5683e40e56
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1900
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+  AddTriple (f10629cd-e2e2-48b3-a52f-cf4618103779)
+ Call ID: f10629cd-e2e2-48b3-a52f-cf4618103779
+  Args:
+    source: :Marie_Louise_of_Hanover_and_Cumberland
+    target: :Maximilian_of_Baden
     relation: :hasRelation
-    target: Christopher_of_Greece
-    source: Francoise_of_Greece
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+  AssignClass (02a9ca23-1a20-4fa5-8055-225bb1632575)
+ Call ID: 02a9ca23-1a20-4fa5-8055-225bb1632575
+  Args:
+    type: :Man
+    source: :Wilhelm_of_Baden
+  AssignClass (cb8a93c5-338e-436f-9dfa-053f6e6b9afd)
+ Call ID: cb8a93c5-338e-436f-9dfa-053f6e6b9afd
+  Args:
+    type: :Person
+    source: :Wilhelm_of_Baden
+  AssignClass (7737786d-9f22-4c9c-83f0-379cabad00a2)
+ Call ID: 7737786d-9f22-4c9c-83f0-379cabad00a2
+  Args:
+    type: :Woman
+    source: :Maria_Maximilianovna_of_Leuchtenberg
+  AssignClass (ed5f27a3-e3dc-4a8d-9a60-ee989a8cd58c)
+ Call ID: ed5f27a3-e3dc-4a8d-9a60-ee989a8cd58c
+  Args:
+    type: :Person
+    source: :Maria_Maximilianovna_of_Leuchtenberg
+  AddTriple (2722967d-d5f8-4ed3-a074-b41ba4f9018e)
+ Call ID: 2722967d-d5f8-4ed3-a074-b41ba4f9018e
+  Args:
+    target: :Wilhelm_of_Baden
+    relation: :hasFather
+    source: :Maximilian_of_Baden
+  AddTriple (f8af90e4-794d-4867-9b4a-9a366f29463e)
+ Call ID: f8af90e4-794d-4867-9b4a-9a366f29463e
+  Args:
+    target: :Maria_Maximilianovna_of_Leuchtenberg
+    relation: :hasMother
+    source: :Maximilian_of_Baden
+  AssignClass (cf15122e-887b-4d33-945d-eaef33eab386)
+ Call ID: cf15122e-887b-4d33-945d-eaef33eab386
+  Args:
+    source: :Napoleon_III_of_France
+    type: :Man
+  AssignClass (ca3c8ef1-7cd0-48d3-80b3-5ff807ce64da)
+ Call ID: ca3c8ef1-7cd0-48d3-80b3-5ff807ce64da
+  Args:
+    type: :Person
+    source: :Napoleon_III_of_France
+  AddTriple (0fa514ce-bb1d-48f7-9a06-a14d00ef86e7)
+ Call ID: 0fa514ce-bb1d-48f7-9a06-a14d00ef86e7
+  Args:
+    target: :Napoleon_III_of_France
+    relation: :hasRelation
+    source: :Maximilian_of_Baden
+  Finish (acffe76e-2560-4095-b86e-fc6a3a00b1b3)
+ Call ID: acffe76e-2560-4095-b86e-fc6a3a00b1b3
+  Args:
 
 ================================= Tool Message =================================
 
@@ -937,86 +807,55 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Isabelle_dOrleans a :Person,
+  data:Marie_Louise_of_Hanover_and_Cumberland a :Person,
           :Woman ;
-      :hasBirthYear 1900 ;
-      :hasDeathYear 1983 ;
-      :hasFather data:Prince_Jean_Duke_of_Guise ;
-      :hasMarriageYear 1923,
-          1934 ;
-      :hasMother data:Princess_Isabelle_of_Orleans_mother ;
-      :hasRelation data:Bruno_dHarcourt,
-          data:Pierre_Murat ;
-      :isBrotherOf data:Henri_Count_of_Paris ;
-      :isSisterOf data:Francoise_of_Greece ;
-      :knownAs "Princess Isabelle Françoise Hélène Marie d'Orléans"^^xsd:string .
+      :hasAncestor data:Charlotte_of_Mecklenburg-Strelitz,
+          data:George_III_of_the_United_Kingdom ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1948 ;
+      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+      :hasMarriageYear 1900 ;
+      :hasMother data:Princess_Thyra_of_Denmark ;
+      :hasRelation data:Maximilian_of_Baden .
 
-  data:Michel_dOrleans a :Man,
-          :Person ;
-      :hasFather data:Henri_Count_of_Paris ;
-      :knownAs "Prince Michel d'Orléans"^^xsd:string .
-
-  data:Armande_de_Pierre_de_Bernis a :Ancestor,
-          :Person,
+  data:Charlotte_of_Mecklenburg-Strelitz a :Person,
           :Woman .
 
-  data:Bruno_dHarcourt a :Man,
+  data:Christian_IX_of_Denmark a :Man,
+          :Person .
+
+  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,
+          :Person .
+
+  data:George_III_of_the_United_Kingdom a :Man,
+          :Person .
+
+  data:Louise_of_Hesse-Kassel a :Person,
+          :Woman .
+
+  data:Maria_Maximilianovna_of_Leuchtenberg a :Person,
+          :Woman .
+
+  data:Maximilian_of_Baden a :Man,
           :Person ;
-      :hasBirthYear 1899 ;
-      :hasDeathYear 1930 ;
-      :hasFather data:Eugene_dHarcourt ;
-      :hasMother data:Armande_de_Pierre_de_Bernis ;
-      :knownAs "Count Bruno d'Harcourt"^^xsd:string .
+      :hasBirthYear 1867 ;
+      :hasDeathYear 1929 ;
+      :hasFather data:Wilhelm_of_Baden ;
+      :hasMother data:Maria_Maximilianovna_of_Leuchtenberg ;
+      :hasRelation data:Napoleon_III_of_France .
 
-  data:Christopher_of_Greece a :Ancestor,
-          :Man,
+  data:Napoleon_III_of_France a :Man,
           :Person .
 
-  data:Eugene_dHarcourt a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Francoise_of_Greece a :Person,
+  data:Princess_Thyra_of_Denmark a :Person,
           :Woman ;
-      :hasRelation data:Christopher_of_Greece ;
-      :knownAs "Princess Françoise of Greece"^^xsd:string .
+      :hasFather data:Christian_IX_of_Denmark ;
+      :hasMother data:Louise_of_Hesse-Kassel .
 
-  data:Lucien_Murat a :Ancestor,
-          :Man,
+  data:Wilhelm_of_Baden a :Man,
           :Person .
 
-  data:Pierre_Murat a :Man,
-          :Person ;
-      :hasAncestor data:Lucien_Murat ;
-      :hasBirthYear 1900 ;
-      :hasDeathYear 1948 ;
-      :knownAs "Prince Pierre Murat"^^xsd:string .
 
-  data:Prince_Jean_Duke_of_Guise a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1874 ;
-      :hasDeathYear 1940 ;
-      :knownAs "Prince Jean, Duke of Guise"^^xsd:string .
-
-  data:Princess_Isabelle_of_Orleans_mother a :Ancestor,
-          :Person,
-          :Woman ;
-      :knownAs "Princess Isabelle of Orléans"^^xsd:string .
-
-  data:Henri_Count_of_Paris a :Man,
-          :Person ;
-      :knownAs "Henri, Count of Paris"^^xsd:string .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (b97440cc-bace-4871-bd80-11df32d8884e)
- Call ID: b97440cc-bace-4871-bd80-11df32d8884e
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1026,46 +865,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (8dd50b76-a309-4881-afb9-afc47bb49d6d)
- Call ID: 8dd50b76-a309-4881-afb9-afc47bb49d6d
+  ValidateShacl (b0f34558-9475-4b69-936e-ee3d03d455aa)
+ Call ID: b0f34558-9475-4b69-936e-ee3d03d455aa
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:4
+Total violations:24
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Michel_dOrleans' has a 'hasFather' relationship with 'Henri_Count_of_Paris', but 'Henri_Count_of_Paris' does not have the required class ':Ancestor'.
+      The value Wilhelm_of_Baden for the property hasFather of Maximilian_of_Baden does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
+      AssignClass(Wilhelm_of_Baden, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Michel_dOrleans' has a 'hasFather' relationship with 'Henri_Count_of_Paris', but 'Henri_Count_of_Paris' does not have the required class ':Ancestor'.
+      The value Maria_Maximilianovna_of_Leuchtenberg for the property hasMother of Maximilian_of_Baden does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
+      AssignClass(Maria_Maximilianovna_of_Leuchtenberg, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Michel_dOrleans' has a 'hasFather' relationship with 'Henri_Count_of_Paris', but 'Henri_Count_of_Paris' does not have the required class ':Ancestor'.
+      The value Charlotte_of_Mecklenburg-Strelitz for the property hasAncestor of Marie_Louise_of_Hanover_and_Cumberland does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
+      AssignClass(Charlotte_of_Mecklenburg-Strelitz, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Node data:Isabelle_dOrleans is closed. It cannot have value: data:Henri_Count_of_Paris
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Isabelle_dOrleans' is classified as a ':Woman', which is a closed shape. The property 'isBrotherOf' is not allowed for instances of ':Woman'.
+      The value George_III_of_the_United_Kingdom for the property hasAncestor of Marie_Louise_of_Hanover_and_Cumberland does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject='Isabelle_dOrleans', predicate=':isBrotherOf', object='Henri_Count_of_Paris')
+      AssignClass(George_III_of_the_United_Kingdom, :Ancestor)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Ernest_Augustus_Crown_Prince_of_Hanover for the property hasFather of Marie_Louise_of_Hanover_and_Cumberland does not belong to the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Wilhelm_of_Baden for the property hasFather of Maximilian_of_Baden does not belong to the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Wilhelm_of_Baden, :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Christian_IX_of_Denmark for the property hasFather of Princess_Thyra_of_Denmark does not belong to the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_IX_of_Denmark, :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Princess_Thyra_of_Denmark for the property hasMother of Marie_Louise_of_Hanover_and_Cumberland does not belong to the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Thyra_of_Denmark, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Maria_Maximilianovna_of_Leuchtenberg for the property hasMother of Maximilian_of_Baden does not belong to the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_Maximilianovna_of_Leuchtenberg, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Louise_of_Hesse-Kassel for the property hasMother of Princess_Thyra_of_Denmark does not belong to the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louise_of_Hesse-Kassel, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value Charlotte_of_Mecklenburg-Strelitz for the property hasAncestor of Marie_Louise_of_Hanover_and_Cumberland does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charlotte_of_Mecklenburg-Strelitz, :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value George_III_of_the_United_Kingdom for the property hasAncestor of Marie_Louise_of_Hanover_and_Cumberland does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(George_III_of_the_United_Kingdom, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Ernest_Augustus_Crown_Prince_of_Hanover for the property hasFather of Marie_Louise_of_Hanover_and_Cumberland does not belong to the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Wilhelm_of_Baden for the property hasFather of Maximilian_of_Baden does not belong to the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Wilhelm_of_Baden, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Christian_IX_of_Denmark for the property hasFather of Princess_Thyra_of_Denmark does not belong to the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_IX_of_Denmark, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Princess_Thyra_of_Denmark for the property hasMother of Marie_Louise_of_Hanover_and_Cumberland does not belong to the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Thyra_of_Denmark, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Maria_Maximilianovna_of_Leuchtenberg for the property hasMother of Maximilian_of_Baden does not belong to the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_Maximilianovna_of_Leuchtenberg, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Louise_of_Hesse-Kassel for the property hasMother of Princess_Thyra_of_Denmark does not belong to the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louise_of_Hesse-Kassel, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value Charlotte_of_Mecklenburg-Strelitz for the property hasAncestor of Marie_Louise_of_Hanover_and_Cumberland does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charlotte_of_Mecklenburg-Strelitz, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value George_III_of_the_United_Kingdom for the property hasAncestor of Marie_Louise_of_Hanover_and_Cumberland does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(George_III_of_the_United_Kingdom, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Ernest_Augustus_Crown_Prince_of_Hanover for the property hasFather of Marie_Louise_of_Hanover_and_Cumberland does not belong to the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Christian_IX_of_Denmark for the property hasFather of Princess_Thyra_of_Denmark does not belong to the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Christian_IX_of_Denmark, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Princess_Thyra_of_Denmark for the property hasMother of Marie_Louise_of_Hanover_and_Cumberland does not belong to the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Thyra_of_Denmark, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Louise_of_Hesse-Kassel for the property hasMother of Princess_Thyra_of_Denmark does not belong to the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louise_of_Hesse-Kassel, :Ancestor)
 
 
 
@@ -1074,17 +1073,70 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (157752f3-45c9-4d21-9083-2fa4428d449f)
- Call ID: 157752f3-45c9-4d21-9083-2fa4428d449f
+  AssignClass (1f366a51-a708-47b8-8dd7-542cb18d1905)
+ Call ID: 1f366a51-a708-47b8-8dd7-542cb18d1905
   Args:
-    source: Henri_Count_of_Paris
     type: :Ancestor
-  RemoveTriple (299c0c1a-666f-47bd-8b29-4719e6b224e6)
- Call ID: 299c0c1a-666f-47bd-8b29-4719e6b224e6
+    source: :Wilhelm_of_Baden
+  AssignClass (20a63f8a-92b7-4c27-85ce-57a0a93b8889)
+ Call ID: 20a63f8a-92b7-4c27-85ce-57a0a93b8889
   Args:
-    target: Henri_Count_of_Paris
-    source: Isabelle_dOrleans
-    relation: :isBrotherOf
+    source: :Maria_Maximilianovna_of_Leuchtenberg
+    type: :Ancestor
+  AssignClass (5d60d478-a0d4-473a-91a1-ee9b6bbfbf48)
+ Call ID: 5d60d478-a0d4-473a-91a1-ee9b6bbfbf48
+  Args:
+    source: :Charlotte_of_Mecklenburg-Strelitz
+    type: :Ancestor
+  AssignClass (6a526db5-ec40-4369-9133-8566639b58e3)
+ Call ID: 6a526db5-ec40-4369-9133-8566639b58e3
+  Args:
+    type: :Ancestor
+    source: :George_III_of_the_United_Kingdom
+  AssignClass (20198c5a-4f99-48dd-a480-5be5f67888ac)
+ Call ID: 20198c5a-4f99-48dd-a480-5be5f67888ac
+  Args:
+    type: :Ancestor
+    source: :Ernest_Augustus_Crown_Prince_of_Hanover
+  AssignClass (a96e4035-953f-4af8-b1cb-05ef6922a194)
+ Call ID: a96e4035-953f-4af8-b1cb-05ef6922a194
+  Args:
+    source: :Christian_IX_of_Denmark
+    type: :Ancestor
+  AssignClass (7ae2bffd-5910-48f8-98ba-cc51562d9b5f)
+ Call ID: 7ae2bffd-5910-48f8-98ba-cc51562d9b5f
+  Args:
+    source: :Princess_Thyra_of_Denmark
+    type: :Ancestor
+  AssignClass (6088aff9-af4d-4e7c-9f59-e8a0c5733435)
+ Call ID: 6088aff9-af4d-4e7c-9f59-e8a0c5733435
+  Args:
+    source: :Louise_of_Hesse-Kassel
+    type: :Ancestor
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1097,76 +1149,61 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Isabelle_dOrleans a :Person,
+  data:Marie_Louise_of_Hanover_and_Cumberland a :Person,
           :Woman ;
-      :hasBirthYear 1900 ;
-      :hasDeathYear 1983 ;
-      :hasFather data:Prince_Jean_Duke_of_Guise ;
-      :hasMarriageYear 1923,
-          1934 ;
-      :hasMother data:Princess_Isabelle_of_Orleans_mother ;
-      :hasRelation data:Bruno_dHarcourt,
-          data:Pierre_Murat ;
-      :isSisterOf data:Francoise_of_Greece ;
-      :knownAs "Princess Isabelle Françoise Hélène Marie d'Orléans"^^xsd:string .
+      :hasAncestor data:Charlotte_of_Mecklenburg-Strelitz,
+          data:George_III_of_the_United_Kingdom ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1948 ;
+      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+      :hasMarriageYear 1900 ;
+      :hasMother data:Princess_Thyra_of_Denmark ;
+      :hasRelation data:Maximilian_of_Baden .
 
-  data:Michel_dOrleans a :Man,
-          :Person ;
-      :hasFather data:Henri_Count_of_Paris ;
-      :knownAs "Prince Michel d'Orléans"^^xsd:string .
-
-  data:Armande_de_Pierre_de_Bernis a :Ancestor,
+  data:Charlotte_of_Mecklenburg-Strelitz a :Ancestor,
           :Person,
           :Woman .
 
-  data:Bruno_dHarcourt a :Man,
-          :Person ;
-      :hasBirthYear 1899 ;
-      :hasDeathYear 1930 ;
-      :hasFather data:Eugene_dHarcourt ;
-      :hasMother data:Armande_de_Pierre_de_Bernis ;
-      :knownAs "Count Bruno d'Harcourt"^^xsd:string .
-
-  data:Christopher_of_Greece a :Ancestor,
+  data:Christian_IX_of_Denmark a :Ancestor,
           :Man,
           :Person .
 
-  data:Eugene_dHarcourt a :Ancestor,
+  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
           :Man,
           :Person .
 
-  data:Francoise_of_Greece a :Person,
-          :Woman ;
-      :hasRelation data:Christopher_of_Greece ;
-      :knownAs "Princess Françoise of Greece"^^xsd:string .
-
-  data:Henri_Count_of_Paris a :Ancestor,
-          :Man,
-          :Person ;
-      :knownAs "Henri, Count of Paris"^^xsd:string .
-
-  data:Lucien_Murat a :Ancestor,
+  data:George_III_of_the_United_Kingdom a :Ancestor,
           :Man,
           :Person .
 
-  data:Pierre_Murat a :Man,
-          :Person ;
-      :hasAncestor data:Lucien_Murat ;
-      :hasBirthYear 1900 ;
-      :hasDeathYear 1948 ;
-      :knownAs "Prince Pierre Murat"^^xsd:string .
+  data:Louise_of_Hesse-Kassel a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Prince_Jean_Duke_of_Guise a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1874 ;
-      :hasDeathYear 1940 ;
-      :knownAs "Prince Jean, Duke of Guise"^^xsd:string .
+  data:Maria_Maximilianovna_of_Leuchtenberg a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Princess_Isabelle_of_Orleans_mother a :Ancestor,
+  data:Maximilian_of_Baden a :Man,
+          :Person ;
+      :hasBirthYear 1867 ;
+      :hasDeathYear 1929 ;
+      :hasFather data:Wilhelm_of_Baden ;
+      :hasMother data:Maria_Maximilianovna_of_Leuchtenberg ;
+      :hasRelation data:Napoleon_III_of_France .
+
+  data:Napoleon_III_of_France a :Man,
+          :Person .
+
+  data:Princess_Thyra_of_Denmark a :Ancestor,
           :Person,
           :Woman ;
-      :knownAs "Princess Isabelle of Orléans"^^xsd:string .
+      :hasFather data:Christian_IX_of_Denmark ;
+      :hasMother data:Louise_of_Hesse-Kassel .
+
+  data:Wilhelm_of_Baden a :Ancestor,
+          :Man,
+          :Person .
 
 
 
@@ -1174,8 +1211,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (8633916c-6509-4b9a-baf5-af1b48ef0b77)
- Call ID: 8633916c-6509-4b9a-baf5-af1b48ef0b77
+  ValidateShacl (1c3db38c-3ffb-43d8-b192-3df93d12c039)
+ Call ID: 1c3db38c-3ffb-43d8-b192-3df93d12c039
   Args:
 
 ================================= Tool Message =================================
@@ -1186,6 +1223,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (d867aa7b-a19a-479e-b2e1-dd1eaba6e636)
- Call ID: d867aa7b-a19a-479e-b2e1-dd1eaba6e636
+  Finish (9896a48c-48ff-4af9-a564-57ca487e0026)
+ Call ID: 9896a48c-48ff-4af9-a564-57ca487e0026
   Args:

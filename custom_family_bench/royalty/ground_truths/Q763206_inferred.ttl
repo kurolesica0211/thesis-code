@@ -1,0 +1,85 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Luís_de_Orléans_e_Bragança a :Man,
+        :Person ;
+    rdfs:label "Luís de Orléans e Bragança"^^xsd:string ;
+    data:posIndicesFull "0:31"^^xsd:string,
+        "7:31"^^xsd:string ;
+    data:posIndicesPart "1089:1096"^^xsd:string,
+        "244:251"^^xsd:string,
+        "523:530"^^xsd:string,
+        "891:898"^^xsd:string ;
+    data:wdtLink wdt:Q2617325 ;
+    :alsoKnownAs "Luis of Orleans-Braganza"^^xsd:string,
+        "Prince Luís of Orléans-Braganza"^^xsd:string ;
+    :hasBrother data:Luís_de_Orléans_e_Bragança ;
+    :hasRelation data:Luís_de_Orléans_e_Bragança ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Luís_de_Orléans_e_Bragança ;
+    :isBrotherOf data:Luís_de_Orléans_e_Bragança ;
+    :isSiblingOf data:Luís_de_Orléans_e_Bragança .
+
+data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Maria Elisabeth of Bavaria"^^xsd:string ;
+    data:posIndicesFull "265:300"^^xsd:string ;
+    data:posIndicesPart "1002:1009"^^xsd:string,
+        "1047:1054"^^xsd:string,
+        "592:600"^^xsd:string,
+        "780:785"^^xsd:string,
+        "983:988"^^xsd:string,
+        "989:998"^^xsd:string ;
+    data:wdtLink wdt:Q285326 ;
+    :alsoKnownAs "Maria Elisabeth Franziska Josepha Therese von Bayern"^^xsd:string,
+        "Maria Isabel da Baviera"^^xsd:string ;
+    :hasChild data:Luís_Gastão_de_Orléans_e_Bragança ;
+    :hasRelation data:Luís_Gastão_de_Orléans_e_Bragança,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSon data:Luís_Gastão_de_Orléans_e_Bragança ;
+    :isAncestorOf data:Luís_Gastão_de_Orléans_e_Bragança ;
+    :isAuntOf data:Luís_Gastão_de_Orléans_e_Bragança ;
+    :isBloodrelationOf data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isMotherOf data:Luís_Gastão_de_Orléans_e_Bragança ;
+    :isParentOf data:Luís_Gastão_de_Orléans_e_Bragança ;
+    :isSiblingOf data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isSisterOf data:Princess_Maria_Elisabeth_of_Bavaria .
+
+data:Luís_Gastão_de_Orléans_e_Bragança a :Man,
+        :Person ;
+    rdfs:label "Luís Gastão de Orléans e Bragança"^^xsd:string ;
+    data:wdtLink wdt:Q763206 ;
+    :alsoKnownAs "Don Louis of Orléans-Braganza"^^xsd:string,
+        "Louis Gaston of Orleans-Braganza"^^xsd:string ;
+    :hasAncestor data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasBrother data:Luís_Gastão_de_Orléans_e_Bragança ;
+    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasParent data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasRelation data:Luís_Gastão_de_Orléans_e_Bragança,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Luís_Gastão_de_Orléans_e_Bragança ;
+    :isBrotherOf data:Luís_Gastão_de_Orléans_e_Bragança ;
+    :isChildOf data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isSiblingOf data:Luís_Gastão_de_Orléans_e_Bragança ;
+    :isSonOf data:Princess_Maria_Elisabeth_of_Bavaria .
+

@@ -1,0 +1,123 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_August_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince August Wilhelm of Prussia"^^xsd:string ;
+    data:posIndicesFull "941:945"^^xsd:string ;
+    data:wdtLink wdt:Q58777 ;
+    :alsoKnownAs "Auwi"^^xsd:string ;
+    :hasBrother data:Prince_August_Wilhelm_of_Prussia ;
+    :hasRelation data:Prince_August_Wilhelm_of_Prussia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia .
+
+data:Prince_Joachim_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Joachim of Prussia"^^xsd:string ;
+    data:posIndicesFull "28:35"^^xsd:string ;
+    data:posIndicesPart "230:236"^^xsd:string ;
+    data:wdtLink wdt:Q60371 ;
+    :alsoKnownAs "Joachim"^^xsd:string,
+        "Joachim Franz Hubert"^^xsd:string,
+        "Prince Joachim Franz Humbert of Prussia"^^xsd:string ;
+    :hasBrother data:Prince_Joachim_of_Prussia ;
+    :hasRelation data:Prince_Joachim_of_Prussia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Joachim_of_Prussia ;
+    :isBrotherOf data:Prince_Joachim_of_Prussia ;
+    :isSiblingOf data:Prince_Joachim_of_Prussia .
+
+data:Prince_Sigismund_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Sigismund of Prussia"^^xsd:string ;
+    data:posIndicesFull "1210:1237"^^xsd:string ;
+    data:wdtLink wdt:Q64704 ;
+    :alsoKnownAs "Prince William Victor Charles Augustus Henry Sigismund of Prussia"^^xsd:string,
+        "Sigismund Prinz von Preußen"^^xsd:string,
+        "Wilhelm Viktor Karl August Heinrich Sigismund Prinz von Preußen"^^xsd:string ;
+    :hasBrother data:Prince_Sigismund_of_Prussia ;
+    :hasRelation data:Prince_Sigismund_of_Prussia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Sigismund_of_Prussia ;
+    :isBrotherOf data:Prince_Sigismund_of_Prussia ;
+    :isSiblingOf data:Prince_Sigismund_of_Prussia .
+
+data:Prince_Sigismund_of_Prussia_1 a :Man,
+        :Person ;
+    rdfs:label "Prince Sigismund of Prussia"^^xsd:string ;
+    data:posIndicesFull "1210:1237"^^xsd:string ;
+    data:wdtLink wdt:Q2800847 ;
+    :alsoKnownAs "Franz Friedrich Sigismund"^^xsd:string,
+        "Prince Francis Frederick Sigismund of Prussia"^^xsd:string ;
+    :hasBrother data:Prince_Sigismund_of_Prussia_1 ;
+    :hasRelation data:Prince_Sigismund_of_Prussia_1 ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Sigismund_of_Prussia_1 ;
+    :isBrotherOf data:Prince_Sigismund_of_Prussia_1 ;
+    :isSiblingOf data:Prince_Sigismund_of_Prussia_1 .
+
+data:Prince_Waldemar_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Waldemar of Prussia"^^xsd:string ;
+    data:posIndicesFull "0:26"^^xsd:string ;
+    data:posIndicesPart "230:236"^^xsd:string,
+        "237:245"^^xsd:string,
+        "361:369"^^xsd:string,
+        "432:440"^^xsd:string,
+        "595:603"^^xsd:string,
+        "746:754"^^xsd:string,
+        "824:832"^^xsd:string,
+        "996:1004"^^xsd:string ;
+    data:wdtLink wdt:Q63093 ;
+    :alsoKnownAs "Prince Waldemar William Louis Frederick Victor of Prussia"^^xsd:string,
+        "Waldemar Prinz von Preußen"^^xsd:string,
+        "Waldemar Wilhelm Ludwig Friedrich Viktor Heinrich Prinz von Preußen"^^xsd:string ;
+    :hasBrother data:Prince_Waldemar_of_Prussia ;
+    :hasRelation data:Prince_Waldemar_of_Prussia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Waldemar_of_Prussia ;
+    :isBrotherOf data:Prince_Waldemar_of_Prussia ;
+    :isSiblingOf data:Prince_Waldemar_of_Prussia .
+
+data:Prince_Waldemar_of_Prussia_1 a :Man,
+        :Person ;
+    rdfs:label "Prince Waldemar of Prussia"^^xsd:string ;
+    data:posIndicesFull "0:26"^^xsd:string ;
+    data:posIndicesPart "230:236"^^xsd:string,
+        "237:245"^^xsd:string,
+        "361:369"^^xsd:string,
+        "432:440"^^xsd:string,
+        "595:603"^^xsd:string,
+        "746:754"^^xsd:string,
+        "824:832"^^xsd:string,
+        "996:1004"^^xsd:string ;
+    data:wdtLink wdt:Q3026877 ;
+    :alsoKnownAs "Joachim Friedrich Ernst Waldemar Prinz von Preußen"^^xsd:string,
+        "Prince Joachim Friedrich Ernst Waldemar of Prussia"^^xsd:string,
+        "Waldemar Prinz von Preßen"^^xsd:string ;
+    :hasBrother data:Prince_Waldemar_of_Prussia_1 ;
+    :hasRelation data:Prince_Waldemar_of_Prussia_1 ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Waldemar_of_Prussia_1 ;
+    :isBrotherOf data:Prince_Waldemar_of_Prussia_1 ;
+    :isSiblingOf data:Prince_Waldemar_of_Prussia_1 .
+
+data:male a :Male .
+

@@ -1,0 +1,163 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Alexandra_of_Greece_and_Denmark ;
+    :hasDaughter data:Alexandra_of_Greece_and_Denmark ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_Pavlovna ;
+    :isAncestorOf data:Alexandra_of_Greece_and_Denmark,
+        data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Alexandra_of_Greece_and_Denmark ;
+    :isParentOf data:Alexandra_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Alexandra_of_Greece_and_Denmark .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexandra_of_Greece_and_Denmark ;
+    :hasDaughter data:Alexandra_of_Greece_and_Denmark ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :isAncestorOf data:Alexandra_of_Greece_and_Denmark,
+        data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isAuntOf data:Alexandra_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Alexandra_of_Greece_and_Denmark ;
+    :isParentOf data:Alexandra_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Paul_Alexandrovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Paul_Alexandrovich_of_Russia ;
+    :hasChild data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :hasDaughter data:Maria_Pavlovna ;
+    :hasRelation data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasSon data:Dmitri_Pavlovich ;
+    :isAncestorOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isBloodrelationOf data:Paul_Alexandrovich_of_Russia ;
+    :isBrotherOf data:Paul_Alexandrovich_of_Russia ;
+    :isFatherOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isParentOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isSiblingOf data:Paul_Alexandrovich_of_Russia ;
+    :isUncleOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna .
+
+data:Dmitri_Pavlovich a :Man,
+        :Person ;
+    :hasAncestor data:Alexandra_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasBrother data:Dmitri_Pavlovich ;
+    :hasFather data:Paul_Alexandrovich_of_Russia ;
+    :hasMother data:Alexandra_of_Greece_and_Denmark ;
+    :hasParent data:Alexandra_of_Greece_and_Denmark,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_Pavlovna,
+        data:Olga_Constantinovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasSister data:Maria_Pavlovna ;
+    :isBloodrelationOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isBrotherOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isChildOf data:Alexandra_of_Greece_and_Denmark,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isSonOf data:Alexandra_of_Greece_and_Denmark,
+        data:Paul_Alexandrovich_of_Russia .
+
+data:Maria_Pavlovna a :Person,
+        :Woman ;
+    :hasAncestor data:Alexandra_of_Greece_and_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasBrother data:Dmitri_Pavlovich ;
+    :hasFather data:Paul_Alexandrovich_of_Russia ;
+    :hasMother data:Alexandra_of_Greece_and_Denmark ;
+    :hasParent data:Alexandra_of_Greece_and_Denmark,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_Pavlovna,
+        data:Olga_Constantinovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasSister data:Maria_Pavlovna ;
+    :isBloodrelationOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isChildOf data:Alexandra_of_Greece_and_Denmark,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isDaughterOf data:Alexandra_of_Greece_and_Denmark,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isSisterOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna .
+
+data:Alexandra_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBirthYear 1870 ;
+    :hasChild data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :hasDaughter data:Maria_Pavlovna ;
+    :hasDeathYear 1891 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_Pavlovna,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSister data:Alexandra_of_Greece_and_Denmark ;
+    :hasSon data:Dmitri_Pavlovich ;
+    :isAncestorOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isAuntOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isBloodrelationOf data:Alexandra_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isDaughterOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isParentOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isSiblingOf data:Alexandra_of_Greece_and_Denmark ;
+    :isSisterOf data:Alexandra_of_Greece_and_Denmark .
+

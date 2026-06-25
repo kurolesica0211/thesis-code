@@ -134,6 +134,8 @@ In the 1990s, the historian John Röhl and his colleagues Martin Warren and Davi
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -149,39 +151,9 @@ In the 1990s, the historian John Röhl and his colleagues Martin Warren and Davi
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -196,6 +168,23 @@ In the 1990s, the historian John Röhl and his colleagues Martin Warren and Davi
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -213,6 +202,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,29 +284,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -311,6 +307,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -323,6 +327,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -331,17 +337,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -369,6 +377,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -384,144 +476,111 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bc54f474-5c83-4ed5-ae47-3e55526159e2)
- Call ID: bc54f474-5c83-4ed5-ae47-3e55526159e2
+  AssignClass (efded95f-efba-4989-ae85-28761ac693a4)
+ Call ID: efded95f-efba-4989-ae85-28761ac693a4
   Args:
-    type: :Person
-    source: :Feodora_of_Saxe-Meiningen
-  AssignClass (e936eb0e-bb40-4886-b2d0-8dbfe38d774d)
- Call ID: e936eb0e-bb40-4886-b2d0-8dbfe38d774d
-  Args:
+    source: Feodora
     type: :Woman
-    source: :Feodora_of_Saxe-Meiningen
-  AddLiteral (7ed5348d-3f0a-4002-bf53-5264be108028)
- Call ID: 7ed5348d-3f0a-4002-bf53-5264be108028
+  AddLiteral (5e60b330-c868-4f63-b101-cc39acad2162)
+ Call ID: 5e60b330-c868-4f63-b101-cc39acad2162
   Args:
-    relation: :alsoKnownAs
-    source: :Feodora_of_Saxe-Meiningen
-    literal_value: Feodora Viktoria Auguste Marie Marianne
-    literal_type: xsd:string
-  AddLiteral (eac962a3-2855-4571-8c1c-1d160c1b9a2f)
- Call ID: eac962a3-2855-4571-8c1c-1d160c1b9a2f
-  Args:
-    relation: :hasBirthYear
-    source: :Feodora_of_Saxe-Meiningen
     literal_value: 1879
     literal_type: xsd:integer
-  AddLiteral (eccc6d58-6c37-4033-bdb3-9929a9f1c39d)
- Call ID: eccc6d58-6c37-4033-bdb3-9929a9f1c39d
+    relation: :hasBirthYear
+    source: Feodora
+  AddLiteral (931a4776-41a8-49eb-b900-04acfbb597b1)
+ Call ID: 931a4776-41a8-49eb-b900-04acfbb597b1
   Args:
-    literal_type: xsd:integer
-    literal_value: 1945
-    source: :Feodora_of_Saxe-Meiningen
     relation: :hasDeathYear
-  AssignClass (0df54551-325b-48b8-a634-afece9443bb7)
- Call ID: 0df54551-325b-48b8-a634-afece9443bb7
-  Args:
-    type: :Person
-    source: :Bernhard_III_of_Saxe-Meiningen
-  AssignClass (ac8f8bd9-fbd3-4075-84e9-b448fd699f40)
- Call ID: ac8f8bd9-fbd3-4075-84e9-b448fd699f40
+    source: Feodora
+    literal_value: 1945
+    literal_type: xsd:integer
+  AssignClass (9c946942-d90f-4aad-b7ca-b3a9ba79179d)
+ Call ID: 9c946942-d90f-4aad-b7ca-b3a9ba79179d
   Args:
     type: :Man
-    source: :Bernhard_III_of_Saxe-Meiningen
-  AssignClass (2cc54687-07f4-4f38-a71d-b4d62e4628e2)
- Call ID: 2cc54687-07f4-4f38-a71d-b4d62e4628e2
-  Args:
-    type: :Person
-    source: :Charlotte_of_Prussia
-  AssignClass (9fb01021-a2ef-406b-a6ed-1f52bf0f29b9)
- Call ID: 9fb01021-a2ef-406b-a6ed-1f52bf0f29b9
+    source: Bernhard_III
+  AssignClass (2c3dd5a7-616e-4b60-a158-d737b32a517d)
+ Call ID: 2c3dd5a7-616e-4b60-a158-d737b32a517d
   Args:
     type: :Woman
-    source: :Charlotte_of_Prussia
-  AddTriple (fbb9614e-663d-4341-9d8e-4e6d138336f1)
- Call ID: fbb9614e-663d-4341-9d8e-4e6d138336f1
+    source: Charlotte
+  AddTriple (8fa8f5ed-5150-431a-9368-5278931c7729)
+ Call ID: 8fa8f5ed-5150-431a-9368-5278931c7729
   Args:
-    target: :Bernhard_III_of_Saxe-Meiningen
-    source: :Feodora_of_Saxe-Meiningen
+    target: Bernhard_III
     relation: :hasFather
-  AddTriple (be0369e6-1803-4af6-8a24-ca49bfbbd870)
- Call ID: be0369e6-1803-4af6-8a24-ca49bfbbd870
+    source: Feodora
+  AddTriple (3b3c4618-90c3-4dc5-b377-3651bfc72584)
+ Call ID: 3b3c4618-90c3-4dc5-b377-3651bfc72584
   Args:
-    source: :Feodora_of_Saxe-Meiningen
-    target: :Charlotte_of_Prussia
+    source: Feodora
+    target: Charlotte
     relation: :hasMother
-  AssignClass (a62b9f37-9b70-46e5-82d7-9071c016a780)
- Call ID: a62b9f37-9b70-46e5-82d7-9071c016a780
-  Args:
-    type: :Person
-    source: :Friedrich_III_of_Germany
-  AssignClass (1152e235-9747-41b7-9efe-ba6a33527aea)
- Call ID: 1152e235-9747-41b7-9efe-ba6a33527aea
+  AssignClass (487c0511-059a-4fcf-a797-e3ada3c4bdda)
+ Call ID: 487c0511-059a-4fcf-a797-e3ada3c4bdda
   Args:
     type: :Man
-    source: :Friedrich_III_of_Germany
-  AssignClass (8e914b8d-27a7-4303-a9ed-808864bfe5fb)
- Call ID: 8e914b8d-27a7-4303-a9ed-808864bfe5fb
-  Args:
-    type: :Person
-    source: :Empress_Victoria
-  AssignClass (f3f5a289-916e-4ac7-a10f-4229a733c169)
- Call ID: f3f5a289-916e-4ac7-a10f-4229a733c169
+    source: Friedrich_III
+  AssignClass (91de710e-4761-448c-8731-cfec8cd49f0a)
+ Call ID: 91de710e-4761-448c-8731-cfec8cd49f0a
   Args:
     type: :Woman
-    source: :Empress_Victoria
-  AddTriple (22f815f4-b2c1-4151-8940-b69a143c24f6)
- Call ID: 22f815f4-b2c1-4151-8940-b69a143c24f6
+    source: Victoria_Empress
+  AddTriple (4bff1ecc-1073-44d7-90d9-33c3215f7555)
+ Call ID: 4bff1ecc-1073-44d7-90d9-33c3215f7555
   Args:
-    source: :Charlotte_of_Prussia
-    target: :Friedrich_III_of_Germany
+    target: Friedrich_III
     relation: :hasFather
-  AddTriple (2fa8967f-727c-4b6e-bc9c-7a275e5f3512)
- Call ID: 2fa8967f-727c-4b6e-bc9c-7a275e5f3512
+    source: Charlotte
+  AddTriple (b533a7c1-a777-4e58-9bf1-6c94f76ebb9e)
+ Call ID: b533a7c1-a777-4e58-9bf1-6c94f76ebb9e
   Args:
+    source: Charlotte
+    target: Victoria_Empress
     relation: :hasMother
-    source: :Charlotte_of_Prussia
-    target: :Empress_Victoria
-  AssignClass (3b9004fd-44ce-4864-8d04-3a0f3eea3bba)
- Call ID: 3b9004fd-44ce-4864-8d04-3a0f3eea3bba
-  Args:
-    type: :Person
-    source: :William_I_German_Emperor
-  AssignClass (b4785f7f-fdb0-491e-b8c2-84c28a49bd7b)
- Call ID: b4785f7f-fdb0-491e-b8c2-84c28a49bd7b
+  AssignClass (5146fd6e-79f6-4cf6-9b69-146d0dc49383)
+ Call ID: 5146fd6e-79f6-4cf6-9b69-146d0dc49383
   Args:
     type: :Man
-    source: :William_I_German_Emperor
-  AssignClass (64f31cf1-6d0b-49c7-bed8-8f11c0b1216a)
- Call ID: 64f31cf1-6d0b-49c7-bed8-8f11c0b1216a
+    source: William_I
+  AssignClass (1e4b5937-c37f-4cd8-8a1b-2587899ad446)
+ Call ID: 1e4b5937-c37f-4cd8-8a1b-2587899ad446
   Args:
-    type: :Person
-    source: :Queen_Victoria_of_the_United_Kingdom
-  AssignClass (c645e88e-1fcf-42b5-ac15-d2378b84b233)
- Call ID: c645e88e-1fcf-42b5-ac15-d2378b84b233
-  Args:
+    source: Queen_Victoria
     type: :Woman
-    source: :Queen_Victoria_of_the_United_Kingdom
-  AssignClass (e091b050-6711-49dd-95bc-6aee9ad8321e)
- Call ID: e091b050-6711-49dd-95bc-6aee9ad8321e
-  Args:
-    type: :Person
-    source: :Heinrich_XXX_Reuss_of_Köstritz
-  AssignClass (f0171037-bb54-4048-a541-f5bcfdecab8b)
- Call ID: f0171037-bb54-4048-a541-f5bcfdecab8b
+  AssignClass (6d0feaef-52ee-47ec-bfef-8ed5f444b0e7)
+ Call ID: 6d0feaef-52ee-47ec-bfef-8ed5f444b0e7
   Args:
     type: :Man
-    source: :Heinrich_XXX_Reuss_of_Köstritz
-  AddLiteral (41b61ca3-257c-4a96-bb22-88ac1def98e6)
- Call ID: 41b61ca3-257c-4a96-bb22-88ac1def98e6
+    source: Heinrich_XXX
+  AddLiteral (e58de4d9-c5bd-40c2-93e8-3a47d0981030)
+ Call ID: e58de4d9-c5bd-40c2-93e8-3a47d0981030
   Args:
     relation: :hasMarriageYear
-    source: :Feodora_of_Saxe-Meiningen
-    literal_value: 1898
+    source: Feodora
     literal_type: xsd:integer
-  AddTriple (e47a277d-cc56-4571-9dcc-02b7ddf98390)
- Call ID: e47a277d-cc56-4571-9dcc-02b7ddf98390
+    literal_value: 1898
+  AddTriple (ef343372-d27d-4a54-ae53-5566e02a075a)
+ Call ID: ef343372-d27d-4a54-ae53-5566e02a075a
   Args:
     relation: :hasRelation
-    source: :Feodora_of_Saxe-Meiningen
-    target: :Heinrich_XXX_Reuss_of_Köstritz
-  Finish (30814086-a158-49e2-8a77-7a8d1d8707ea)
- Call ID: 30814086-a158-49e2-8a77-7a8d1d8707ea
+    target: Heinrich_XXX
+    source: Feodora
+  AddLiteral (ba059da8-eb60-48f1-a610-7afca28d63b2)
+ Call ID: ba059da8-eb60-48f1-a610-7afca28d63b2
+  Args:
+    relation: :hasBirthYear
+    source: Heinrich_XXX
+    literal_value: 1864
+    literal_type: xsd:integer
+  AddLiteral (2d63c263-976d-47a1-ae96-4c22d343d90a)
+ Call ID: 2d63c263-976d-47a1-ae96-4c22d343d90a
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1939
+    source: Heinrich_XXX
+    relation: :hasDeathYear
+  Finish (1176d6b1-6159-47a9-b999-d052cf10be2b)
+ Call ID: 1176d6b1-6159-47a9-b999-d052cf10be2b
   Args:

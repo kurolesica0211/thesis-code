@@ -1,0 +1,105 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:David_Lascelles-_8th_Earl_of_Harewood a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "David Lascelles, 8th Earl of Harewood"^^xsd:string ;
+    data:posIndicesFull "123:160"^^xsd:string ;
+    data:posIndicesPart "252:260"^^xsd:string,
+        "344:353"^^xsd:string,
+        "437:446"^^xsd:string,
+        "517:526"^^xsd:string ;
+    data:wdtLink wdt:Q619788 ;
+    :alsoKnownAs "David Harewood"^^xsd:string,
+        "David Henry George Lascelles, 8th Earl of Harewood"^^xsd:string,
+        "David Henry George Lascelles, Viscount Lascelles"^^xsd:string,
+        "David Lascelles, Viscount Lascelles"^^xsd:string ;
+    :hasBrother data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :hasChild data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :hasRelation data:Alexander_Lascelles-_Viscount_Lascelles,
+        data:David_Lascelles-_8th_Earl_of_Harewood,
+        data:Margaret_Messenger ;
+    :hasSex data:male ;
+    :hasSon data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :isAncestorOf data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :isBloodrelationOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isBrotherOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isFatherOf data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :isParentOf data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :isSiblingOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isUncleOf data:Alexander_Lascelles-_Viscount_Lascelles .
+
+data:Margaret_Messenger a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Margaret Messenger"^^xsd:string ;
+    data:posIndicesFull "181:212"^^xsd:string ;
+    data:wdtLink wdt:Q75381841 ;
+    :alsoKnownAs "Margaret Lascelles, Viscountess Lascelles"^^xsd:string,
+        "Margaret Rosalind Lascelles, Viscountess Lascelles"^^xsd:string,
+        "Margaret Rosalind Messenger"^^xsd:string,
+        "Margaret Rosalind, Viscountess Lascelles"^^xsd:string,
+        "Margaret, Viscountess Lascelles"^^xsd:string ;
+    :hasChild data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :hasRelation data:Alexander_Lascelles-_Viscount_Lascelles,
+        data:David_Lascelles-_8th_Earl_of_Harewood,
+        data:Margaret_Messenger ;
+    :hasSex data:female ;
+    :hasSister data:Margaret_Messenger ;
+    :hasSon data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :isAncestorOf data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :isAuntOf data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :isBloodrelationOf data:Margaret_Messenger ;
+    :isMotherOf data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :isParentOf data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :isSiblingOf data:Margaret_Messenger ;
+    :isSisterOf data:Margaret_Messenger .
+
+data:Alexander_Lascelles-_Viscount_Lascelles a :Man,
+        :Person ;
+    rdfs:label "Alexander Lascelles, Viscount Lascelles"^^xsd:string ;
+    data:posIndicesFull "0:45"^^xsd:string ;
+    data:posIndicesPart "344:353"^^xsd:string,
+        "437:446"^^xsd:string,
+        "517:526"^^xsd:string ;
+    data:wdtLink wdt:Q4719359 ;
+    :alsoKnownAs "Alexander Edgar Lascelles, Viscount Lascelles"^^xsd:string,
+        "Hon. Alexander Edgar Lascelles"^^xsd:string,
+        "Hon. Alexander Lascelles"^^xsd:string,
+        "Orly Lascelles"^^xsd:string ;
+    :hasAncestor data:David_Lascelles-_8th_Earl_of_Harewood,
+        data:Margaret_Messenger ;
+    :hasBrother data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :hasFather data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :hasMother data:Margaret_Messenger ;
+    :hasParent data:David_Lascelles-_8th_Earl_of_Harewood,
+        data:Margaret_Messenger ;
+    :hasRelation data:Alexander_Lascelles-_Viscount_Lascelles,
+        data:David_Lascelles-_8th_Earl_of_Harewood,
+        data:Margaret_Messenger ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :isBrotherOf data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :isChildOf data:David_Lascelles-_8th_Earl_of_Harewood,
+        data:Margaret_Messenger ;
+    :isSiblingOf data:Alexander_Lascelles-_Viscount_Lascelles ;
+    :isSonOf data:David_Lascelles-_8th_Earl_of_Harewood,
+        data:Margaret_Messenger .
+

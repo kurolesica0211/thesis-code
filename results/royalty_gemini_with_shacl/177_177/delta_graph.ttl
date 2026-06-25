@@ -2,48 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Claus_of_the_Netherlands a :Man,
-        :Person ;
-    :hasFather data:Klaus_Felix_von_Amsberg .
+data:Frederik_IX a :Man,
+        :Person .
 
-data:Elise_von_Vieregg a :Ancestor,
+data:Margrethe_II a :Person,
+        :Woman .
+
+data:Princess_Elisabeth_of_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1935 ;
+    :hasDeathYear 2018 ;
+    :hasFather data:Prince_Knud ;
+    :hasMother data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isSiblingOf data:Prince_Christian,
+        data:Prince_Ingolf .
+
+data:Christian_X a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Christian a :Man,
+        :Person .
+
+data:Prince_Ingolf a :Man,
+        :Person .
+
+data:Prince_Knud a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Christian_X .
+
+data:Princess_Caroline-Mathilde_of_Denmark a :Ancestor,
         :Person,
-        :Woman ;
-    :hasBirthYear 1866 ;
-    :hasDeathYear 1951 .
-
-data:Gabriele_von_dem_Bussche_Ippenburg a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1877 ;
-    :hasDeathYear 1973 .
-
-data:Georg_von_dem_Bussche_Haddenhausen a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1869 ;
-    :hasDeathYear 1923 .
-
-data:Gosta_von_dem_Bussche_Haddenhausen a :Person,
-        :Woman ;
-    :hasBirthYear 1902 ;
-    :hasDeathYear 1996 ;
-    :hasFather data:Georg_von_dem_Bussche_Haddenhausen ;
-    :hasMother data:Gabriele_von_dem_Bussche_Ippenburg .
-
-data:Klaus_Felix_von_Amsberg a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1890 ;
-    :hasDeathYear 1953 ;
-    :hasFather data:Wilhelm_von_Amsberg ;
-    :hasMarriageYear 1924 ;
-    :hasMother data:Elise_von_Vieregg ;
-    :hasRelation data:Gosta_von_dem_Bussche_Haddenhausen .
-
-data:Wilhelm_von_Amsberg a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1856 ;
-    :hasDeathYear 1929 .
+        :Woman .
 

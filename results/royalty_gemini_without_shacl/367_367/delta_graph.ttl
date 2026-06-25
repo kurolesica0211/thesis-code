@@ -2,25 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Margaret_of_Prussia a :Woman ;
-    :alsoKnownAs "Margarethe Beatrice Feodora"^^xsd:string ;
-    :hasBirthYear 1872 ;
-    :hasDeathYear 1954 ;
-    :hasFather data:Frederick_III ;
-    :hasMother data:Victoria_Princess_Royal ;
-    :hasParent data:Queen_Victoria ;
-    :hasRelation data:Frederick_Charles_of_Hesse ;
-    :isSisterOf data:Wilhelm_II ;
-    :knownAs "Mossy"^^xsd:string .
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1963 ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMarriageYear data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        1904 ;
+    :hasMother data:Thyra_of_Denmark .
 
-data:Frederick_Charles_of_Hesse a :Man .
+data:Charlotte_of_Mecklenburg-Strelitz a :Person,
+        :Woman ;
+    :hasBirthYear 1744 ;
+    :hasDeathYear 1818 .
 
-data:Frederick_III a :Man .
+data:George_III_of_the_United_Kingdom a :Man,
+        :Person ;
+    :hasBirthYear 1738 ;
+    :hasDeathYear 1820 .
 
-data:Victoria_Princess_Royal a :Woman ;
-    :hasParent data:Queen_Victoria .
+data:Anastasia_Mikhailovna_of_Russia a :Person,
+        :Woman .
 
-data:Wilhelm_II a :Man .
+data:Christian_IX_of_Denmark a :Man,
+        :Person ;
+    :hasBirthYear 1818 ;
+    :hasDeathYear 1906 .
 
-data:Queen_Victoria a :Woman .
+data:Ernest_Augustus_of_Hanover a :Man,
+        :Person ;
+    :hasBirthYear 1845 ;
+    :hasDeathYear 1923 .
+
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
+        :Person .
+
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia .
+
+data:Louise_of_Hesse-Kassel a :Person,
+        :Woman ;
+    :hasBirthYear 1817 ;
+    :hasDeathYear 1898 .
+
+data:Thyra_of_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1853 ;
+    :hasDeathYear 1933 ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasMother data:Louise_of_Hesse-Kassel .
 

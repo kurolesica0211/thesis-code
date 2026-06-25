@@ -2,31 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Angelica_Margherita_Edwina_Hicks a :Person,
-        :Woman ;
-    :hasBirthYear 1992 ;
-    :hasFather data:Ashley_Louis_David_Hicks ;
-    :hasMother data:Marina_Allegra_Federica_Silvia_Tondato .
+data:Adolph_Roderik_Ernst_Leopold a :Man .
 
-data:Ashley_Louis_David_Hicks a :Man,
-        :Person ;
-    :hasFather data:David_Nightingale_Hicks ;
-    :hasMother data:Lady_Pamela_Mountbatten .
+data:Beatrix a :Woman .
 
-data:David_Nightingale_Hicks a :Man,
-        :Person .
+data:Bernhard_of_Lippe-Biesterfeld a :Man .
 
-data:Lady_Pamela_Mountbatten a :Person,
-        :Woman ;
-    :hasFather data:Louis_Mountbatten%2C_1st_Earl_Mountbatten_of_Burma ;
-    :hasMother data:The_Honourable_Edwina_Ashley .
+data:Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme a :Man ;
+    :alsoKnownAs data:Hugo_Klynstra ;
+    :hasBirthYear 1997 ;
+    :hasFather data:Carlos_de_Bourbon_de_Parme ;
+    :hasMother data:Brigitte_Klynstra .
 
-data:Louis_Mountbatten%2C_1st_Earl_Mountbatten_of_Burma a :Man,
-        :Person .
+data:Carlos_of_Parma a :Man ;
+    :hasParent data:Carlos_de_Bourbon_de_Parme .
 
-data:Marina_Allegra_Federica_Silvia_Tondato a :Person,
-        :Woman .
+data:Cecilia_of_Parma a :Woman ;
+    :hasParent data:Carlos_de_Bourbon_de_Parme .
 
-data:The_Honourable_Edwina_Ashley a :Person,
-        :Woman .
+data:Ingrid_Pieksma-Klynstra a :Woman .
+
+data:Juliana_of_the_Netherlands a :Woman .
+
+data:Luisa_of_Parma a :Woman ;
+    :hasParent data:Carlos_de_Bourbon_de_Parme .
+
+data:Madeleine_de_Bourbon-Busset a :Woman .
+
+data:Margriet a :Woman .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Xavier_of_Bourbon-Parma a :Man .
+
+data:Brigitte_Klynstra a :Woman .
+
+data:Carlos_Hugo_Duke_of_Parma a :Man .
+
+data:Hugo_Klynstra a :Person .
+
+data:Irene_of_the_Netherlands a :Woman .
+
+data:Carlos_de_Bourbon_de_Parme a :Man ;
+    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+    :hasMother data:Irene_of_the_Netherlands .
 

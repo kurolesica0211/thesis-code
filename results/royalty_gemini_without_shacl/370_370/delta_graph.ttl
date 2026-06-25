@@ -2,61 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_George_William_of_Hanover_and_Cumberland a :Man,
+data:Constantine_II_of_Greece a :Man,
         :Person ;
-    :hasBirthYear 1915 ;
-    :hasDaughter data:Friederike ;
-    :hasDeathYear 2006 ;
-    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
-    :hasMarriageYear 1946 ;
-    :hasMother data:Princess_Victoria_Louise_of_Prussia ;
-    :hasRelation data:Sophie_of_Greece_and_Denmark ;
-    :hasSister data:Frederica_Queen_of_the_Hellenes ;
-    :hasSon data:Georg,
-        data:Welf .
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover .
 
-data:Prince_Philip_Duke_of_Edinburgh a :Man,
-        :Person ;
-    :hasSister data:Sophie_of_Greece_and_Denmark .
-
-data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
-        :Woman .
-
-data:Ernest_Augustus_Duke_of_Brunswick a :Man,
+data:Constantine_I_of_Greece a :Man,
         :Person .
 
-data:Frederica_Queen_of_the_Hellenes a :Person,
-        :Woman .
-
-data:Friederike a :Person,
-        :Woman ;
-    :hasMother data:Sophie_of_Greece_and_Denmark .
-
-data:Georg a :Man,
-        :Person ;
-    :hasMother data:Sophie_of_Greece_and_Denmark .
-
-data:Prince_Andrew_of_Greece_and_Denmark a :Man,
+data:Ernest_Augustus_of_Brunswick a :Man,
         :Person .
 
-data:Princess_Alice_of_Battenberg a :Person,
+data:Irene_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover .
+
+data:Sophia_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Hanover .
+
+data:Sophia_of_Prussia a :Person,
         :Woman .
 
-data:Princess_Victoria_Louise_of_Prussia a :Person,
+data:Viktoria_Luise_of_Prussia a :Person,
         :Woman ;
-    :hasFather data:Wilhelm_II_German_Emperor ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein .
+    :hasFather data:Wilhelm_II .
 
-data:Welf a :Man,
-        :Person ;
-    :hasMother data:Sophie_of_Greece_and_Denmark .
-
-data:Wilhelm_II_German_Emperor a :Man,
+data:Wilhelm_II a :Man,
         :Person .
 
-data:Sophie_of_Greece_and_Denmark a :Person,
+data:Frederica_of_Hanover a :Person,
         :Woman ;
-    :hasDeathYear 2001 ;
-    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-    :hasMother data:Princess_Alice_of_Battenberg .
+    :hasBirthYear 1917 ;
+    :hasChild data:Constantine_II_of_Greece,
+        data:Irene_of_Greece_and_Denmark,
+        data:Sophia_of_Greece_and_Denmark ;
+    :hasDeathYear 1981 ;
+    :hasFather data:Ernest_Augustus_of_Brunswick ;
+    :hasMother data:Viktoria_Luise_of_Prussia ;
+    :hasRelation data:Paul_of_Greece .
+
+data:Paul_of_Greece a :Man,
+        :Person ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
 

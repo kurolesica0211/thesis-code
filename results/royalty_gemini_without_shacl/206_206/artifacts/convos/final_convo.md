@@ -69,26 +69,56 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Marie Louise of Hanover and Cumberland (11 October 1879 – 31 January 1948) was the eldest child of Ernest Augustus, Crown Prince of Hanover, and Princess Thyra of Denmark, the youngest daughter of Christian IX of Denmark and Louise of Hesse-Kassel.
-Through her father, Marie Louise was a great-great-granddaughter of George III of the United Kingdom and Charlotte of Mecklenburg-Strelitz.
-Marriage and children
+Christina Oxenberg (born December 27, 1962) is an American writer, humorist, and fashion designer.
+Her two knitwear clothing lines, Christina Oxenberg and Ox, have appeared in Barneys, Bloomingdale's, and luxury boutiques throughout the world.
+Oxenberg is the daughter of Princess Elizabeth of Yugoslavia and is a descendant of the Serbian House of Karađorđević.
+Early life
 
-Marie Louise married Prince Maximilian of Baden (1867–1929), her third cousin twice removed, on 10 July 1900 in Gmunden, Austria-Hungary.
-He was the son of Prince Wilhelm of Baden and Princess Maria Maximilianovna of Leuchtenberg and became a first cousin twice removed of Napoleon III of France.
-Marie Louise and Maximilian had one daughter and one son:
+Christina Oxenberg was born in New York City.
+She is a daughter of Princess Elizabeth of Yugoslavia (born 1936) and her first husband Howard Oxenberg (1919–2010), a Jewish self-made textile and clothing tycoon and close friend of the Kennedy family.
+Princess Elizabeth is the only daughter of Prince Paul of Yugoslavia (who served as regent for his cousin's eldest son King Peter II of Yugoslavia) and Princess Olga of Greece and Denmark.
+She has a full sister, Catherine Oxenberg, and a half-brother on her mother's side, Neil Balfour (born 1970).
+On her father's side she has a half-brother, Robert Oxenberg, and two half-sisters Starr Oxenberg and Ashley Harcourt.
+She is a first cousin of Prince Edward, Duke of Kent, and also a maternal second cousin of Queen Sofía of Spain, making her a second cousin once removed of King Charles III.
+Career
+
+After high school, Oxenberg worked various jobs in New York ranging from a secretary to a roller-rink attendant.
+Upon her return, Oxenberg secured a job at Studio 54.
+In 1994, Simon & Schuster commissioned Oxenberg to write a semi-autobiographical novel that would eventually be published as Royal Blue.
+As a result of the book, Oxenberg appeared on the cover of New York Magazine and was profiled in People.
+In 2000, Oxenberg went on hiatus from writing and took a job at Robert F. Kennedy Jr.'s Waterkeeper Alliance.
+The two discussed the possibility of a clothing line using Oxenberg's name.
+From 2002 to 2010, Oxenberg produced two clothing lines (Christina Oxenberg and Ox).
+Christina Oxenberg would go on to self-publish several collections of short stories between 2010 and 2014, including Do These Gloves Make My Ass Look Fat?, Life is Short: Read Short Stories, and When in Doubt...Double the Dosage.
+Since 2012 Oxenberg has contributed articles to Key West weekly magazine Konk Life.
+In 2014, Oxenberg helped organize a visit by John Hemingway (Ernest Hemingway's grandson) to David Wolkowsky's Tennessee Williams Collection.
+In 2015, Christina Oxenberg moved to Serbia for a year to write and research her book, Royal Dynasty – An Insider's History of the Serbian Royal Family, which was published in Serbian in 2015 by the publisher, Laguna.
+For her work, Oxenberg received an award from the Serbian Academy of Sciences and Arts in 2016.
+Subsequently, Oxenberg was interviewed by the Sunday Times, Radio Gorgeous and Tatler, and she presented the book at the Oxford Literary Festival on 22 March 2018.
+Bibliography
+
+Novels
+
+
+Short story collections
+
+
+Autobiographies
 
 
 Ancestry
 
-References
-
-External links
+Christina Oxenberg is a direct descendant of Karađorđe, a peasant from Šumadija region in today's Serbia, leader of First Serbian Uprising against the Ottomans, and founder of the Karađorđević Dynasty; of King George I of Greece; of Tsar Alexander II of Russia; of King George II of Great Britain, Empress Catherine II of Russia, and  William the Conqueror, through Frederick of Mecklenburg-Schwerin.
+Oxenberg's maternal grandmother, Princess Olga, was the daughter of Grand Duchess Elena Vladimirovna of Russia and Prince Nicholas of Greece and Denmark, himself the son of another Romanov grand duchess, Queen Olga Konstantinovna of the Hellenes and her Danish-born husband King George of Greece, brother of Queen Alexandra of the United Kingdom and the Empress Maria Fyodorovna.
+Princess Olga was the sister of Princess Marina, who married Prince George, Duke of Kent (an uncle of Queen Elizabeth II); and Olga/Marina were also paternal first cousins of the Duke of Edinburgh (husband of Queen Elizabeth II) through their respective fathers Prince Nicholas of Greece and Denmark and Prince Andrew of Greece and Denmark, who were brothers.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -104,39 +134,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -151,6 +151,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -168,6 +185,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -235,29 +267,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -266,6 +290,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -278,6 +310,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -286,17 +320,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -324,6 +360,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -339,211 +459,201 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (16ef3f4e-9d5a-4898-9695-8ca5e77bfca0)
- Call ID: 16ef3f4e-9d5a-4898-9695-8ca5e77bfca0
+  AssignClass (e1d86fe5-a574-4bb8-8e61-6ebfe276d42e)
+ Call ID: e1d86fe5-a574-4bb8-8e61-6ebfe276d42e
   Args:
-    source: :Marie_Louise_of_Hanover_and_Cumberland
+    source: :Christina_Oxenberg
     type: :Woman
-  AssignClass (1e335ff4-aeb7-46c0-af90-a22ff59ff5b4)
- Call ID: 1e335ff4-aeb7-46c0-af90-a22ff59ff5b4
+  AssignClass (7911895c-c14b-4a51-81e9-3ce1a935184c)
+ Call ID: 7911895c-c14b-4a51-81e9-3ce1a935184c
   Args:
-    source: :Marie_Louise_of_Hanover_and_Cumberland
+    source: :Christina_Oxenberg
     type: :Person
-  AddLiteral (43c6e0d5-da29-413f-90ec-d23ce904a2f5)
- Call ID: 43c6e0d5-da29-413f-90ec-d23ce904a2f5
+  AddLiteral (064ec713-db7e-4585-9de9-0b544df2c870)
+ Call ID: 064ec713-db7e-4585-9de9-0b544df2c870
   Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: :Marie_Louise_of_Hanover_and_Cumberland
-    literal_value: 1879
-  AddLiteral (4d386661-3d96-44f8-bdea-373372fa99a7)
- Call ID: 4d386661-3d96-44f8-bdea-373372fa99a7
-  Args:
-    literal_value: 1948
-    relation: :hasDeathYear
-    source: :Marie_Louise_of_Hanover_and_Cumberland
-    literal_type: xsd:integer
-  AssignClass (844f1213-dbe6-469c-8514-ca6f1d43faa2)
- Call ID: 844f1213-dbe6-469c-8514-ca6f1d43faa2
-  Args:
-    type: :Man
-    source: :Ernest_Augustus_Crown_Prince_of_Hanover
-  AssignClass (36f3c9b1-0390-4b75-b1d2-6e7710647bc8)
- Call ID: 36f3c9b1-0390-4b75-b1d2-6e7710647bc8
-  Args:
-    type: :Person
-    source: :Ernest_Augustus_Crown_Prince_of_Hanover
-  AssignClass (ce2c85c0-e1a1-4919-8125-310cc83d143f)
- Call ID: ce2c85c0-e1a1-4919-8125-310cc83d143f
-  Args:
-    type: :Woman
-    source: :Princess_Thyra_of_Denmark
-  AssignClass (54238f1e-5268-4e46-b45c-b25126f2fa83)
- Call ID: 54238f1e-5268-4e46-b45c-b25126f2fa83
-  Args:
-    source: :Princess_Thyra_of_Denmark
-    type: :Person
-  AddTriple (d5b8e2b5-68c3-49f3-a494-4e0068fd7623)
- Call ID: d5b8e2b5-68c3-49f3-a494-4e0068fd7623
-  Args:
-    relation: :hasFather
-    source: :Marie_Louise_of_Hanover_and_Cumberland
-    target: :Ernest_Augustus_Crown_Prince_of_Hanover
-  AddTriple (e3e17a1a-adf0-4f3a-aefb-edc0a96f30bf)
- Call ID: e3e17a1a-adf0-4f3a-aefb-edc0a96f30bf
-  Args:
-    target: :Princess_Thyra_of_Denmark
-    relation: :hasMother
-    source: :Marie_Louise_of_Hanover_and_Cumberland
-  AssignClass (d5069642-c440-431f-a5e6-0ff54cc43ef5)
- Call ID: d5069642-c440-431f-a5e6-0ff54cc43ef5
-  Args:
-    source: :Christian_IX_of_Denmark
-    type: :Man
-  AssignClass (e44ea899-d9ca-4d72-aab7-afb1d1a4e861)
- Call ID: e44ea899-d9ca-4d72-aab7-afb1d1a4e861
-  Args:
-    type: :Person
-    source: :Christian_IX_of_Denmark
-  AssignClass (8229d16d-c8aa-481f-960f-1c204c291d8d)
- Call ID: 8229d16d-c8aa-481f-960f-1c204c291d8d
-  Args:
-    source: :Louise_of_Hesse_Kassel
-    type: :Woman
-  AssignClass (43661af0-733d-4c02-894c-597b2ed7a2be)
- Call ID: 43661af0-733d-4c02-894c-597b2ed7a2be
-  Args:
-    source: :Louise_of_Hesse_Kassel
-    type: :Person
-  AddTriple (3f051d03-27c1-41d5-87df-19e8a2175ec2)
- Call ID: 3f051d03-27c1-41d5-87df-19e8a2175ec2
-  Args:
-    target: :Christian_IX_of_Denmark
-    source: :Princess_Thyra_of_Denmark
-    relation: :hasFather
-  AddTriple (52e2acca-553e-49d1-9b98-cf3789ea873b)
- Call ID: 52e2acca-553e-49d1-9b98-cf3789ea873b
-  Args:
-    target: :Louise_of_Hesse_Kassel
-    source: :Princess_Thyra_of_Denmark
-    relation: :hasMother
-  AssignClass (a15123f4-9c3a-4cbd-ad5a-224ed34c88ce)
- Call ID: a15123f4-9c3a-4cbd-ad5a-224ed34c88ce
-  Args:
-    source: :George_III_of_the_United_Kingdom
-    type: :Man
-  AssignClass (67490008-c7f7-4c97-bd9d-90b3ecadb033)
- Call ID: 67490008-c7f7-4c97-bd9d-90b3ecadb033
-  Args:
-    source: :George_III_of_the_United_Kingdom
-    type: :Person
-  AssignClass (86c937f9-4811-40fb-96dc-194e8f4c5e26)
- Call ID: 86c937f9-4811-40fb-96dc-194e8f4c5e26
-  Args:
-    source: :Charlotte_of_Mecklenburg_Strelitz
-    type: :Woman
-  AssignClass (c70d6e2e-cb82-435c-bb90-20a0f99bce00)
- Call ID: c70d6e2e-cb82-435c-bb90-20a0f99bce00
-  Args:
-    source: :Charlotte_of_Mecklenburg_Strelitz
-    type: :Person
-  AddTriple (6f7c1b6d-5e0f-42d2-948f-481642d6d8ad)
- Call ID: 6f7c1b6d-5e0f-42d2-948f-481642d6d8ad
-  Args:
-    source: :Marie_Louise_of_Hanover_and_Cumberland
-    relation: :hasAncestor
-    target: :George_III_of_the_United_Kingdom
-  AddTriple (5e2b060c-299c-40ca-af11-a63f5b59a5c9)
- Call ID: 5e2b060c-299c-40ca-af11-a63f5b59a5c9
-  Args:
-    target: :Charlotte_of_Mecklenburg_Strelitz
-    relation: :hasAncestor
-    source: :Marie_Louise_of_Hanover_and_Cumberland
-  AssignClass (f4c510cd-42ab-4896-a1ee-4a5ae30a9174)
- Call ID: f4c510cd-42ab-4896-a1ee-4a5ae30a9174
-  Args:
-    type: :Man
-    source: :Maximilian_of_Baden
-  AssignClass (9b0fb565-9685-4d17-883a-83dae2af5a36)
- Call ID: 9b0fb565-9685-4d17-883a-83dae2af5a36
-  Args:
-    source: :Maximilian_of_Baden
-    type: :Person
-  AddLiteral (3a07ea05-b863-4bba-a539-48acd82e5e17)
- Call ID: 3a07ea05-b863-4bba-a539-48acd82e5e17
-  Args:
-    literal_value: 1867
-    source: :Maximilian_of_Baden
+    literal_value: 1962
     relation: :hasBirthYear
     literal_type: xsd:integer
-  AddLiteral (85ff6bad-5f72-43ad-9a74-a925fa858784)
- Call ID: 85ff6bad-5f72-43ad-9a74-a925fa858784
+    source: :Christina_Oxenberg
+  AssignClass (b8b59895-7154-4b44-bb94-c93d0dd669ac)
+ Call ID: b8b59895-7154-4b44-bb94-c93d0dd669ac
   Args:
-    literal_value: 1929
-    source: :Maximilian_of_Baden
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AddLiteral (84ec127b-7a00-409b-a20b-d1d74c9b19c7)
- Call ID: 84ec127b-7a00-409b-a20b-d1d74c9b19c7
-  Args:
-    literal_value: 1900
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: :Marie_Louise_of_Hanover_and_Cumberland
-  AddTriple (a1d3a046-fbe6-4ef5-b189-c512c7f15485)
- Call ID: a1d3a046-fbe6-4ef5-b189-c512c7f15485
-  Args:
-    target: :Maximilian_of_Baden
-    source: :Marie_Louise_of_Hanover_and_Cumberland
-    relation: :hasRelation
-  AssignClass (54907aeb-3cd0-4d4a-aff9-f5c15a6caed6)
- Call ID: 54907aeb-3cd0-4d4a-aff9-f5c15a6caed6
-  Args:
-    type: :Man
-    source: :Wilhelm_of_Baden
-  AssignClass (443bee88-2fb8-49fd-9273-a186c2de735c)
- Call ID: 443bee88-2fb8-49fd-9273-a186c2de735c
-  Args:
-    source: :Wilhelm_of_Baden
-    type: :Person
-  AssignClass (80167f0a-77ac-4d50-a619-9a71c12fa391)
- Call ID: 80167f0a-77ac-4d50-a619-9a71c12fa391
-  Args:
-    source: :Maria_Maximilianovna_of_Leuchtenberg
+    source: :Princess_Elizabeth_of_Yugoslavia
     type: :Woman
-  AssignClass (23874983-3d3a-47d8-a375-94a55e05ed91)
- Call ID: 23874983-3d3a-47d8-a375-94a55e05ed91
+  AssignClass (9d8735f9-e02b-4038-8021-30560903be1d)
+ Call ID: 9d8735f9-e02b-4038-8021-30560903be1d
   Args:
+    source: :Princess_Elizabeth_of_Yugoslavia
     type: :Person
-    source: :Maria_Maximilianovna_of_Leuchtenberg
-  AddTriple (d610ec8c-f143-4730-9618-3705148110f0)
- Call ID: d610ec8c-f143-4730-9618-3705148110f0
+  AddLiteral (890f60ec-46ba-488f-8e12-4ead79059400)
+ Call ID: 890f60ec-46ba-488f-8e12-4ead79059400
+  Args:
+    source: :Princess_Elizabeth_of_Yugoslavia
+    literal_type: xsd:integer
+    literal_value: 1936
+    relation: :hasBirthYear
+  AssignClass (fd57f428-7d4f-4729-bf2d-5a10655f6cd1)
+ Call ID: fd57f428-7d4f-4729-bf2d-5a10655f6cd1
+  Args:
+    source: :Howard_Oxenberg
+    type: :Man
+  AssignClass (a9795081-8619-4763-a6d3-2e2b71160ea3)
+ Call ID: a9795081-8619-4763-a6d3-2e2b71160ea3
+  Args:
+    source: :Howard_Oxenberg
+    type: :Person
+  AddLiteral (a0f627df-47fa-4d08-a9dd-5de7e6bc37e0)
+ Call ID: a0f627df-47fa-4d08-a9dd-5de7e6bc37e0
+  Args:
+    literal_type: xsd:integer
+    source: :Howard_Oxenberg
+    relation: :hasBirthYear
+    literal_value: 1919
+  AddLiteral (6760f199-4d8f-4fd8-9fdf-aabb70010d0a)
+ Call ID: 6760f199-4d8f-4fd8-9fdf-aabb70010d0a
+  Args:
+    literal_value: 2010
+    relation: :hasDeathYear
+    source: :Howard_Oxenberg
+    literal_type: xsd:integer
+  AddTriple (3a08e5b0-35ab-43be-b3d7-d7866687d30a)
+ Call ID: 3a08e5b0-35ab-43be-b3d7-d7866687d30a
+  Args:
+    target: :Princess_Elizabeth_of_Yugoslavia
+    source: :Christina_Oxenberg
+    relation: :hasMother
+  AddTriple (2ac028ac-3b2f-4ead-a458-bda48faede7c)
+ Call ID: 2ac028ac-3b2f-4ead-a458-bda48faede7c
+  Args:
+    source: :Christina_Oxenberg
+    target: :Howard_Oxenberg
+    relation: :hasFather
+  AssignClass (125ef981-9d73-4cbd-b6f3-69c5d2431b05)
+ Call ID: 125ef981-9d73-4cbd-b6f3-69c5d2431b05
+  Args:
+    source: :Prince_Paul_of_Yugoslavia
+    type: :Man
+  AssignClass (69762788-964f-43f9-b07c-e0c106241414)
+ Call ID: 69762788-964f-43f9-b07c-e0c106241414
+  Args:
+    source: :Prince_Paul_of_Yugoslavia
+    type: :Person
+  AssignClass (37de9007-7e6b-4c19-98aa-a490daa1e174)
+ Call ID: 37de9007-7e6b-4c19-98aa-a490daa1e174
+  Args:
+    source: :Princess_Olga_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (27f8553e-f8c0-48eb-ae38-53d3e8f162a5)
+ Call ID: 27f8553e-f8c0-48eb-ae38-53d3e8f162a5
+  Args:
+    source: :Princess_Olga_of_Greece_and_Denmark
+    type: :Person
+  AddTriple (6ac3f336-1e2f-4636-a62e-8c33e658ae86)
+ Call ID: 6ac3f336-1e2f-4636-a62e-8c33e658ae86
   Args:
     relation: :hasFather
-    source: :Maximilian_of_Baden
-    target: :Wilhelm_of_Baden
-  AddTriple (41d17536-df1a-4a7e-be42-0d7643934043)
- Call ID: 41d17536-df1a-4a7e-be42-0d7643934043
+    source: :Princess_Elizabeth_of_Yugoslavia
+    target: :Prince_Paul_of_Yugoslavia
+  AddTriple (bd93a9e1-e97d-4c20-89de-e3d98e86e674)
+ Call ID: bd93a9e1-e97d-4c20-89de-e3d98e86e674
   Args:
-    source: :Maximilian_of_Baden
     relation: :hasMother
-    target: :Maria_Maximilianovna_of_Leuchtenberg
-  AssignClass (94b14e02-b0ab-43e7-b88b-e32371c9013f)
- Call ID: 94b14e02-b0ab-43e7-b88b-e32371c9013f
+    source: :Princess_Elizabeth_of_Yugoslavia
+    target: :Princess_Olga_of_Greece_and_Denmark
+  AssignClass (dead47ff-db26-4d7d-a3a5-6c3f96c988d8)
+ Call ID: dead47ff-db26-4d7d-a3a5-6c3f96c988d8
   Args:
-    source: :Napoleon_III_of_France
-    type: :Man
-  AssignClass (92265c72-7f66-489b-b275-c980e435f649)
- Call ID: 92265c72-7f66-489b-b275-c980e435f649
+    source: :Catherine_Oxenberg
+    type: :Woman
+  AssignClass (b84d142c-781b-4534-aa05-f4199010388a)
+ Call ID: b84d142c-781b-4534-aa05-f4199010388a
   Args:
+    source: :Catherine_Oxenberg
     type: :Person
-    source: :Napoleon_III_of_France
-  AddTriple (b24565ba-c242-40cc-b020-a528fd533e2e)
- Call ID: b24565ba-c242-40cc-b020-a528fd533e2e
+  AddTriple (d05464ae-e84b-4429-81e9-a871cc7a5616)
+ Call ID: d05464ae-e84b-4429-81e9-a871cc7a5616
   Args:
-    target: :Napoleon_III_of_France
-    relation: :hasRelation
-    source: :Maximilian_of_Baden
-  Finish (9059b59f-8eab-4661-b7b6-a6bd1a21cb36)
- Call ID: 9059b59f-8eab-4661-b7b6-a6bd1a21cb36
+    relation: :hasMother
+    target: :Princess_Elizabeth_of_Yugoslavia
+    source: :Catherine_Oxenberg
+  AddTriple (7fc5a8c1-2be1-4e4b-af31-c975cc6f4ca6)
+ Call ID: 7fc5a8c1-2be1-4e4b-af31-c975cc6f4ca6
+  Args:
+    relation: :hasFather
+    target: :Howard_Oxenberg
+    source: :Catherine_Oxenberg
+  AssignClass (115897b5-1612-4762-855f-7ffce475f5ad)
+ Call ID: 115897b5-1612-4762-855f-7ffce475f5ad
+  Args:
+    source: :Neil_Balfour
+    type: :Man
+  AssignClass (3b2b31b4-e580-490f-b37d-35636819a777)
+ Call ID: 3b2b31b4-e580-490f-b37d-35636819a777
+  Args:
+    source: :Neil_Balfour
+    type: :Person
+  AddLiteral (7d6565b7-eb1e-4c90-8798-4748c23a9cce)
+ Call ID: 7d6565b7-eb1e-4c90-8798-4748c23a9cce
+  Args:
+    literal_value: 1970
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: :Neil_Balfour
+  AddTriple (f174a22c-4ffe-4d34-8862-d7431aee5b2a)
+ Call ID: f174a22c-4ffe-4d34-8862-d7431aee5b2a
+  Args:
+    relation: :hasMother
+    source: :Neil_Balfour
+    target: :Princess_Elizabeth_of_Yugoslavia
+  AssignClass (947a64a0-9389-4fb1-adb4-01a8b89d8cee)
+ Call ID: 947a64a0-9389-4fb1-adb4-01a8b89d8cee
+  Args:
+    source: :Robert_Oxenberg
+    type: :Man
+  AssignClass (49f9d13c-4c42-4762-a696-bcb1d1c4a913)
+ Call ID: 49f9d13c-4c42-4762-a696-bcb1d1c4a913
+  Args:
+    source: :Robert_Oxenberg
+    type: :Person
+  AddTriple (4fae8d93-06d4-47f1-8212-7f7dc2766404)
+ Call ID: 4fae8d93-06d4-47f1-8212-7f7dc2766404
+  Args:
+    relation: :hasFather
+    target: :Howard_Oxenberg
+    source: :Robert_Oxenberg
+  AssignClass (163e0988-4262-49c0-b9be-4e99f13c0ebc)
+ Call ID: 163e0988-4262-49c0-b9be-4e99f13c0ebc
+  Args:
+    source: :Starr_Oxenberg
+    type: :Woman
+  AssignClass (fe1bc77b-7d11-441b-837b-b9c85c6c529f)
+ Call ID: fe1bc77b-7d11-441b-837b-b9c85c6c529f
+  Args:
+    source: :Starr_Oxenberg
+    type: :Person
+  AddTriple (b86eee3f-fd19-4e91-a448-8d0fd088779b)
+ Call ID: b86eee3f-fd19-4e91-a448-8d0fd088779b
+  Args:
+    target: :Howard_Oxenberg
+    source: :Starr_Oxenberg
+    relation: :hasFather
+  AssignClass (470557ad-c913-4f84-8f4d-c820622bc550)
+ Call ID: 470557ad-c913-4f84-8f4d-c820622bc550
+  Args:
+    source: :Ashley_Harcourt
+    type: :Woman
+  AssignClass (98bf394b-3495-40c5-bfe2-7bc988241226)
+ Call ID: 98bf394b-3495-40c5-bfe2-7bc988241226
+  Args:
+    source: :Ashley_Harcourt
+    type: :Person
+  AddTriple (4f219858-2422-4445-aef8-a345097cab6f)
+ Call ID: 4f219858-2422-4445-aef8-a345097cab6f
+  Args:
+    source: :Ashley_Harcourt
+    target: :Howard_Oxenberg
+    relation: :hasFather
+  Finish (136c48c3-d059-4f5e-91de-edf3dba76989)
+ Call ID: 136c48c3-d059-4f5e-91de-edf3dba76989
   Args:

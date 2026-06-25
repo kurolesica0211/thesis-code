@@ -1,0 +1,140 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne-Marie_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Anne-Marie_of_Denmark ;
+    :hasSister data:Anne-Marie_of_Denmark ;
+    :isBloodrelationOf data:Anne-Marie_of_Denmark ;
+    :isSiblingOf data:Anne-Marie_of_Denmark ;
+    :isSisterOf data:Anne-Marie_of_Denmark .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasRelation data:Constantine_II_of_Greece ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Constantine_II_of_Greece .
+
+data:Marina_consort_of_Michael a :Person,
+        :Woman ;
+    :hasRelation data:Marina_consort_of_Michael ;
+    :hasSister data:Marina_consort_of_Michael ;
+    :isBloodrelationOf data:Marina_consort_of_Michael ;
+    :isSiblingOf data:Marina_consort_of_Michael ;
+    :isSisterOf data:Marina_consort_of_Michael .
+
+data:Matthew_Kumar a :Man,
+        :Person ;
+    :hasBrother data:Matthew_Kumar ;
+    :hasRelation data:Matthew_Kumar ;
+    :isBloodrelationOf data:Matthew_Kumar ;
+    :isBrotherOf data:Matthew_Kumar ;
+    :isSiblingOf data:Matthew_Kumar .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Sofia_of_Spain a :Person,
+        :Woman ;
+    :hasRelation data:Sofia_of_Spain ;
+    :hasSister data:Sofia_of_Spain ;
+    :isBloodrelationOf data:Sofia_of_Spain ;
+    :isSiblingOf data:Sofia_of_Spain ;
+    :isSisterOf data:Sofia_of_Spain .
+
+data:Natalie_Massenet a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Isabella_Massenet ;
+    :hasDaughter data:Isabella_Massenet ;
+    :hasRelation data:Isabella_Massenet,
+        data:Natalie_Massenet ;
+    :hasSister data:Natalie_Massenet ;
+    :isAncestorOf data:Isabella_Massenet ;
+    :isAuntOf data:Isabella_Massenet ;
+    :isBloodrelationOf data:Natalie_Massenet ;
+    :isMotherOf data:Isabella_Massenet ;
+    :isParentOf data:Isabella_Massenet ;
+    :isSiblingOf data:Natalie_Massenet ;
+    :isSisterOf data:Natalie_Massenet .
+
+data:Isabella_Massenet a :Person,
+        :Woman ;
+    :hasAncestor data:Natalie_Massenet ;
+    :hasMother data:Natalie_Massenet ;
+    :hasParent data:Natalie_Massenet ;
+    :hasRelation data:Isabella_Massenet,
+        data:Natalie_Massenet ;
+    :hasSister data:Isabella_Massenet ;
+    :isBloodrelationOf data:Isabella_Massenet ;
+    :isChildOf data:Natalie_Massenet ;
+    :isDaughterOf data:Natalie_Massenet ;
+    :isSiblingOf data:Isabella_Massenet ;
+    :isSisterOf data:Isabella_Massenet .
+
+data:Marie-Chantal_Miller a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :hasRelation data:Achileas-Andreas_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller,
+        data:Pavlos_Crown_Prince_of_Greece ;
+    :hasSister data:Marie-Chantal_Miller ;
+    :hasSon data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :isAncestorOf data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :isAuntOf data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Marie-Chantal_Miller ;
+    :isMotherOf data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :isParentOf data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Marie-Chantal_Miller ;
+    :isSisterOf data:Marie-Chantal_Miller .
+
+data:Pavlos_Crown_Prince_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Pavlos_Crown_Prince_of_Greece ;
+    :hasChild data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :hasRelation data:Achileas-Andreas_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller,
+        data:Pavlos_Crown_Prince_of_Greece ;
+    :hasSon data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :isAncestorOf data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Pavlos_Crown_Prince_of_Greece ;
+    :isBrotherOf data:Pavlos_Crown_Prince_of_Greece ;
+    :isFatherOf data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :isParentOf data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Pavlos_Crown_Prince_of_Greece ;
+    :isUncleOf data:Achileas-Andreas_of_Greece_and_Denmark .
+
+data:Achileas-Andreas_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasAncestor data:Marie-Chantal_Miller,
+        data:Pavlos_Crown_Prince_of_Greece ;
+    :hasBirthYear 2000 ;
+    :hasBrother data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :hasFather data:Pavlos_Crown_Prince_of_Greece ;
+    :hasMother data:Marie-Chantal_Miller ;
+    :hasParent data:Marie-Chantal_Miller,
+        data:Pavlos_Crown_Prince_of_Greece ;
+    :hasRelation data:Achileas-Andreas_of_Greece_and_Denmark,
+        data:Marie-Chantal_Miller,
+        data:Pavlos_Crown_Prince_of_Greece ;
+    :isBloodrelationOf data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :isChildOf data:Marie-Chantal_Miller,
+        data:Pavlos_Crown_Prince_of_Greece ;
+    :isSiblingOf data:Achileas-Andreas_of_Greece_and_Denmark ;
+    :isSonOf data:Marie-Chantal_Miller,
+        data:Pavlos_Crown_Prince_of_Greece ;
+    :knownAs "Achi Miller"^^xsd:string .
+

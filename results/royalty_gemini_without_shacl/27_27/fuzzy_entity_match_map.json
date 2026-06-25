@@ -16,70 +16,49 @@
       "qid": "Q117174",
       "label": "Prince Henry, Duke of Gloucester",
       "distance": 0,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Edward_VIII",
-      "qid": "Q590227",
-      "label": "Edward VIII",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Elizabeth_II",
-      "qid": "Q9682",
-      "label": "Elizabeth II",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#George_V",
       "qid": "Q269412",
       "label": "George V",
       "distance": 1,
-      "gender": "male"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Edward_VIII",
+      "qid": "Q590227",
+      "label": "Edward VIII",
+      "distance": 2,
+      "gender": null
     },
     {
       "uri": "http://example.com/data#George_VI",
       "qid": "Q280856",
       "label": "George VI",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
-      "qid": "Q158258",
-      "label": "Prince Edward, Duke of Kent",
-      "distance": 1,
-      "gender": "male"
+      "distance": 2,
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_George-_Duke_of_Kent",
       "qid": "Q160770",
       "label": "Prince George, Duke of Kent",
-      "distance": 1,
-      "gender": "male"
+      "distance": 2,
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Andrew_Mountbatten-Windsor",
-      "qid": "Q153330",
-      "label": "Andrew Mountbatten-Windsor",
-      "distance": 2,
-      "gender": "male"
+      "uri": "http://example.com/data#Elizabeth_II",
+      "qid": "Q9682",
+      "label": "Elizabeth II",
+      "distance": 3,
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Anne-_Princess_Royal",
-      "qid": "Q151754",
-      "label": "Anne, Princess Royal",
-      "distance": 2,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
-      "qid": "Q10633",
-      "label": "Queen Elizabeth, The Queen Mother",
-      "distance": 2,
-      "gender": "female"
+      "uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
+      "qid": "Q158258",
+      "label": "Prince Edward, Duke of Kent",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
@@ -93,12 +72,12 @@
       "ground_truth_uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
       "ground_truth_qid": "Q158258",
       "ground_truth_label": "Prince Edward, Duke of Kent",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Duke of Kent",
       "best_candidate_label": "Prince Edward, Duke of Kent",
       "best_candidate_qid": "Q158258",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -111,12 +90,48 @@
       "ground_truth_uri": "http://example.com/data#Edward_VIII",
       "ground_truth_qid": "Q590227",
       "ground_truth_label": "Edward VIII",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Edward VIII",
       "best_candidate_label": "Edward VIII",
       "best_candidate_qid": "Q590227",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/ElizabethII",
+      "extracted_local_name": "ElizabethII",
+      "embedding_text": "Elizabeth II",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Elizabeth_II",
+      "ground_truth_qid": "Q9682",
+      "ground_truth_label": "Elizabeth II",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Elizabeth II",
+      "best_candidate_label": "Elizabeth II",
+      "best_candidate_qid": "Q9682",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/GeorgeV",
+      "extracted_local_name": "GeorgeV",
+      "embedding_text": "George V",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#George_V",
+      "ground_truth_qid": "Q269412",
+      "ground_truth_label": "George V",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "George V",
+      "best_candidate_label": "George V",
+      "best_candidate_qid": "Q269412",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -129,54 +144,18 @@
       "ground_truth_uri": "http://example.com/data#George_VI",
       "ground_truth_qid": "Q280856",
       "ground_truth_label": "George VI",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "George VI",
       "best_candidate_label": "George VI",
       "best_candidate_qid": "Q280856",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/KingGeorgeV",
-      "extracted_local_name": "KingGeorgeV",
-      "embedding_text": "King George V",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#George_V",
-      "ground_truth_qid": "Q269412",
-      "ground_truth_label": "George V",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "King George V",
-      "best_candidate_label": "George V",
-      "best_candidate_qid": "Q269412",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/PrinceHenry",
-      "extracted_local_name": "PrinceHenry",
-      "embedding_text": "Prince Henry",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Prince_Henry-_Duke_of_Gloucester",
-      "ground_truth_qid": "Q117174",
-      "ground_truth_label": "Prince Henry, Duke of Gloucester",
-      "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Prince Henry",
-      "best_candidate_label": "Prince Henry, Duke of Gloucester",
-      "best_candidate_qid": "Q117174",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/LadyAliceMontaguDouglasScott",
-      "extracted_local_name": "LadyAliceMontaguDouglasScott",
-      "embedding_text": "Lady Alice Montagu Douglas Scott",
+      "extracted_uri": "http://example.org/data/AliceMontaguDouglasScott",
+      "extracted_local_name": "AliceMontaguDouglasScott",
+      "embedding_text": "Alice Montagu Douglas Scott",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -185,16 +164,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Anne Elizabeth Alice Louise",
-      "best_candidate_label": "Anne, Princess Royal",
-      "best_candidate_qid": "Q151754",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.4067796610169492
+      "best_candidate_match_text": "Prince Henry- Duke of Gloucester",
+      "best_candidate_label": "Prince Henry, Duke of Gloucester",
+      "best_candidate_qid": "Q117174",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3728813559322034
     },
     {
-      "extracted_uri": "http://example.org/data/PrinceRichard",
-      "extracted_local_name": "PrinceRichard",
-      "embedding_text": "Prince Richard",
+      "extracted_uri": "http://example.org/data/Henry",
+      "extracted_local_name": "Henry",
+      "embedding_text": "Henry",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -203,17 +182,17 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "The Prince George, Duke of Kent",
-      "best_candidate_label": "Prince George, Duke of Kent",
-      "best_candidate_qid": "Q160770",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.4
+      "best_candidate_match_text": "Prince Henry",
+      "best_candidate_label": "Prince Henry, Duke of Gloucester",
+      "best_candidate_qid": "Q117174",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5882352941176471
     },
     {
-      "extracted_uri": "http://example.org/data/PrinceWilliam",
-      "extracted_local_name": "PrinceWilliam",
-      "embedding_text": "Prince William",
-      "extracted_gender": "male",
+      "extracted_uri": "http://example.org/data/Margaret",
+      "extracted_local_name": "Margaret",
+      "embedding_text": "Margaret",
+      "extracted_gender": "female",
       "matched": false,
       "score": null,
       "ground_truth_uri": null,
@@ -221,11 +200,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "The Prince George of the United Kingdom",
+      "best_candidate_match_text": "George Kent",
       "best_candidate_label": "Prince George, Duke of Kent",
       "best_candidate_qid": "Q160770",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.37735849056603776
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.42105263157894735
     },
     {
       "extracted_uri": "http://example.org/data/QueenMary",
@@ -239,16 +218,52 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "The Queen Mother",
-      "best_candidate_label": "Queen Elizabeth, The Queen Mother",
-      "best_candidate_qid": "Q10633",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.6153846153846154
+      "best_candidate_match_text": "The Prince Henry",
+      "best_candidate_label": "Prince Henry, Duke of Gloucester",
+      "best_candidate_qid": "Q117174",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.38461538461538464
+    },
+    {
+      "extracted_uri": "http://example.org/data/Richard",
+      "extracted_local_name": "Richard",
+      "embedding_text": "Richard",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Henry",
+      "best_candidate_label": "Prince Henry, Duke of Gloucester",
+      "best_candidate_qid": "Q117174",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5263157894736842
+    },
+    {
+      "extracted_uri": "http://example.org/data/William",
+      "extracted_local_name": "William",
+      "embedding_text": "William",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Henry William Frederick Albert",
+      "best_candidate_label": "Prince Henry, Duke of Gloucester",
+      "best_candidate_qid": "Q117174",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3783783783783784
     }
   ],
   "summary": {
-    "entities_total": 9,
+    "entities_total": 11,
     "entities_matched": 5,
-    "entities_unmatched": 4
+    "entities_unmatched": 6
   }
 }

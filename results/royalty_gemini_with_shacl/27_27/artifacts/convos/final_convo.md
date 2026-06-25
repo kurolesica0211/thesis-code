@@ -104,7 +104,6 @@ Childhood and education
 
 As a child, Henry suffered from poor health, much like his elder brother Albert.
 Both brothers had rhotacism, which prevented them from pronouncing the sound r; while Albert's pronunciation was reminiscent of the "French r", Henry was unable to produce the sound at all, replacing it with .
-He also had a nasal lisp and an unusually high-pitched tone, which together gave him a distinctive voice.
 By 1909, Henry's health had become a matter of concern to his parents.
 George wrote to Henry's tutor, Henry Peter Hansell, that he should be treated differently from his more robust elder brothers, noting, "You must remember that he is rather fragile and must be treated differently to his two elder brothers who are more robust".
 On 6 May 1910, George succeeded to the throne as George V, and Henry became third in line to the throne.
@@ -112,7 +111,6 @@ Hansell persuaded the King that attending school would benefit Henry's character
 Although the King had previously rejected the idea for his elder sons, he agreed on the grounds that it would help Henry "behave like a boy and not like a little child".
 Henry thus became the first son of a British monarch to attend school.
 Henry spent three years at St Peter’s Court.
-His mother once wrote to him in exasperation, "All you write about is your everlasting football of which I am heartily sick", replying to a detailed letter he had sent about a match..
 In September 1913, Henry entered Eton College.
 During the First World War, Crown Prince Leopold of Belgium, later Leopold III, was a member of his house, Mr Lubbock's.
 Henry's academic performance did not improve, but his nerves and general disposition did.
@@ -120,24 +118,15 @@ By the time he began his studies at Trinity College, Cambridge in 1919 with Albe
 Military career
 
 Unlike his brothers, Henry joined the Army rather than the Royal Navy.
-He attended the Royal Military College, Sandhurst, in 1919, and was commissioned as a second lieutenant in the King's Royal Rifle Corps on 16 July.
-On 16 July 1921, he was promoted to lieutenant in the 10th Royal Hussars, with whom he continued to serve.
-Although he wished to undertake more active military duties, his position as a senior member of the royal family effectively precluded such roles.
 He retained a strong interest in sport, and The Cricketer reported in August 1921 that the touring Philadelphians had been presented to Henry at The Oval.
 Henry was promoted to captain on 11 May 1927, and was appointed a personal aide-de-camp to his father on 2 August 1929.
 On 23 June 1936, he was appointed a personal aide-de-camp to his eldest brother, Edward VIII.
 Following Edward's abdication and the accession of Albert as George VI, Henry was effectively retired from active duty and received a ceremonial promotion to major‐general on 1 January 1937, skipping three ranks.
-He was also granted a Royal Air Force commission as air vice-marshal on the same day.
-On 12 March, he received the colonelcy of his former regiment, the 10th Royal Hussars, together with the colonelcies of the Royal Inniskilling Fusiliers and the Gordon Highlanders.
-On 28 May, he received an honorary appointment as a captain in the Royal Naval Volunteer Reserve, followed on 10 November by the honorary colonelcies of the Ceylon Planters' Rifle Corps and the Ceylon Light Infantry (now the Sri Lanka Light Infantry).
-In January 1940, he was appointed to the colonelcies of the Ulster Anti‐Aircraft Regiments of the Royal Artillery in the Territorial Army.
-He was appointed a Field Marshal in 1955 and a Marshal of the Royal Air Force in 1958.
 Duke of Gloucester
 
 On 31 March 1928, his father created him Duke of Gloucester, Earl of Ulster, and Baron Culloden, three titles that linked him with England, Northern Ireland, and Scotland.
 Later that year, Henry visited Canada.
 Before his marriage, Henry's chief ambition was to command his regiment, the 10th Royal Hussars, or at least to spend as much time in the Army as possible.
-To his increasing frustration, he was required to undertake the many royal duties assigned to him by his father.
 In September 1928, Henry left England with his brother Edward to shoot big game in Africa.
 The brothers parted in Nairobi, where Henry remained for a time.
 Henry and Beryl began an affair, although sources differ on when it started; many state that it did not begin until her later visit to England.
@@ -198,7 +187,6 @@ Although generally optimistic, Henry experienced bouts of depression during his 
 "My beloved Alice, I did hate leaving you yesterday so very much that I could hardly keep a straight face," he wrote after reporting back.
 it is such an awful waste of everything," he told Alice.
 In June, after the fall of Dunkirk, Henry was ordered back to England by an embarrassed General Headquarters, which had been unable to guarantee the King's brother's safety.
-"Wherever I went or had been, I was bombed," he wrote to his mother, amused by the situation.
 In early 1942, the King arranged a four‐month military and diplomatic mission for Henry to the Middle East, India, and East Africa.
 The King wrote to his sister‐in‐law that he would act as guardian to the newborn William should anything happen to Henry.
 After Henry's younger brother, the Duke of Kent, was killed in a plane crash in Scotland in August 1942, it was decided that Henry would not be sent on any further missions that might place him at similar risk.
@@ -222,7 +210,6 @@ Death
 
 Henry died on 10 June 1974 at the age of 74.
 He was the last surviving son of King George V and Queen Mary, and the last living knight of the Order of St Patrick.
-He was buried in the Royal Burial Ground, Frogmore.
 His only living son, Richard, inherited the title of Duke of Gloucester.
 Alice received permission from Queen Elizabeth II to be styled Princess Alice, Duchess of Gloucester, to distinguish her from Richard's wife.
 She outlived Henry by 30 years, dying on 29 October 2004 at the age of 102, and became the longest-lived member of the British royal family in history.
@@ -241,6 +228,8 @@ In 1921, Prince Henry was granted a personal coat of arms, being the royal arms,
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -256,39 +245,9 @@ In 1921, Prince Henry was granted a personal coat of arms, being the royal arms,
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -303,6 +262,23 @@ In 1921, Prince Henry was granted a personal coat of arms, being the royal arms,
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -320,6 +296,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -387,29 +378,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -418,6 +401,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -430,6 +421,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -438,17 +431,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -476,6 +471,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -491,203 +570,124 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c4c713a8-832a-46a2-8da4-3034ee5bc1fd)
- Call ID: c4c713a8-832a-46a2-8da4-3034ee5bc1fd
+  AssignClass (70139b07-2bd8-4e80-81e4-6701eb9f6d21)
+ Call ID: 70139b07-2bd8-4e80-81e4-6701eb9f6d21
   Args:
     type: :Man
     source: Prince_Henry_Duke_of_Gloucester
-  AssignClass (bac9779c-1eed-448a-8459-2b72f0c27c74)
- Call ID: bac9779c-1eed-448a-8459-2b72f0c27c74
+  AssignClass (b64154b8-c6e8-4c4e-8e12-0d12472035f1)
+ Call ID: b64154b8-c6e8-4c4e-8e12-0d12472035f1
   Args:
-    type: :Man
     source: King_George_V
-  AssignClass (735fe6ab-eeb8-4873-bb54-c0ad2c684bc3)
- Call ID: 735fe6ab-eeb8-4873-bb54-c0ad2c684bc3
+    type: :Man
+  AssignClass (8f4fa734-2007-4a89-a1c5-0c4b2689a84f)
+ Call ID: 8f4fa734-2007-4a89-a1c5-0c4b2689a84f
   Args:
-    type: :Woman
     source: Queen_Mary
-  AssignClass (d4cb5495-995e-4795-b62f-3a62a4808928)
- Call ID: d4cb5495-995e-4795-b62f-3a62a4808928
-  Args:
-    type: :Man
-    source: King_Edward_VIII
-  AssignClass (b5c64247-cd58-47ce-a36c-490feda8f518)
- Call ID: b5c64247-cd58-47ce-a36c-490feda8f518
-  Args:
-    type: :Man
-    source: King_George_VI
-  AssignClass (dfeb6e9b-b044-49ad-9628-e0ff3b0edf63)
- Call ID: dfeb6e9b-b044-49ad-9628-e0ff3b0edf63
-  Args:
     type: :Woman
+  AssignClass (e415f3f2-12d6-4508-a68a-75285a0ed461)
+ Call ID: e415f3f2-12d6-4508-a68a-75285a0ed461
+  Args:
+    source: Edward_VIII
+    type: :Man
+  AssignClass (8c9bdadf-95f6-4d09-bcc4-bad06ec36185)
+ Call ID: 8c9bdadf-95f6-4d09-bcc4-bad06ec36185
+  Args:
+    type: :Man
+    source: George_VI
+  AssignClass (4a6e550b-18d0-4776-b5c8-40826363f3c5)
+ Call ID: 4a6e550b-18d0-4776-b5c8-40826363f3c5
+  Args:
     source: Lady_Alice_Montagu_Douglas_Scott
-  AssignClass (47a9c72f-f0be-499e-bd9e-8b924235677e)
- Call ID: 47a9c72f-f0be-499e-bd9e-8b924235677e
+    type: :Woman
+  AssignClass (4a409c25-de68-496c-8d90-272858d8954d)
+ Call ID: 4a409c25-de68-496c-8d90-272858d8954d
+  Args:
+    source: Prince_William_of_Gloucester
+    type: :Man
+  AssignClass (55748b03-f044-4a80-b3e0-710f0d5b85a3)
+ Call ID: 55748b03-f044-4a80-b3e0-710f0d5b85a3
   Args:
     type: :Man
-    source: Prince_William
-  AssignClass (ff3aca6e-d026-4cf6-a88f-ce8e2b653a79)
- Call ID: ff3aca6e-d026-4cf6-a88f-ce8e2b653a79
+    source: Prince_Richard_of_Gloucester
+  AddLiteral (ec915abc-6e8e-4423-bc44-3dc3a5a7ea7b)
+ Call ID: ec915abc-6e8e-4423-bc44-3dc3a5a7ea7b
   Args:
-    type: :Man
-    source: Prince_Richard
-  AssignClass (a6778d76-233e-42b1-9e63-f4b61c7a2a67)
- Call ID: a6778d76-233e-42b1-9e63-f4b61c7a2a67
-  Args:
-    type: :Man
-    source: Duke_of_Kent
-  AddLiteral (421f5d9f-bc0d-4e7a-8e87-e26aa1f6f3b2)
- Call ID: 421f5d9f-bc0d-4e7a-8e87-e26aa1f6f3b2
-  Args:
-    literal_type: xsd:integer
     literal_value: 1900
-    source: Prince_Henry_Duke_of_Gloucester
     relation: :hasBirthYear
-  AddLiteral (db073d10-83f8-40b6-869d-8d21f91a10f2)
- Call ID: db073d10-83f8-40b6-869d-8d21f91a10f2
+    source: Prince_Henry_Duke_of_Gloucester
+    literal_type: xsd:integer
+  AddLiteral (8d91e225-da4f-488e-a79d-265cebb92a02)
+ Call ID: 8d91e225-da4f-488e-a79d-265cebb92a02
   Args:
+    source: Prince_Henry_Duke_of_Gloucester
+    literal_type: xsd:integer
     literal_value: 1974
-    literal_type: xsd:integer
-    source: Prince_Henry_Duke_of_Gloucester
     relation: :hasDeathYear
-  AddTriple (6f1bcd63-9a68-4b65-aae5-671b70bb0f1c)
- Call ID: 6f1bcd63-9a68-4b65-aae5-671b70bb0f1c
+  AddTriple (d82124ef-30c2-40b5-906e-6a94decd51b0)
+ Call ID: d82124ef-30c2-40b5-906e-6a94decd51b0
   Args:
     relation: :hasFather
+    source: Prince_Henry_Duke_of_Gloucester
     target: King_George_V
-    source: Prince_Henry_Duke_of_Gloucester
-  AddTriple (f65d2a2c-184f-4c07-967a-214933c8aad5)
- Call ID: f65d2a2c-184f-4c07-967a-214933c8aad5
+  AddTriple (e13901d7-0495-4028-bbec-74699e81133b)
+ Call ID: e13901d7-0495-4028-bbec-74699e81133b
   Args:
-    target: Queen_Mary
     relation: :hasMother
+    target: Queen_Mary
     source: Prince_Henry_Duke_of_Gloucester
-  AddTriple (be628fa4-0aa4-47c3-8263-729d29ae48a1)
- Call ID: be628fa4-0aa4-47c3-8263-729d29ae48a1
-  Args:
-    source: Prince_Henry_Duke_of_Gloucester
-    target: King_Edward_VIII
-    relation: :isBrotherOf
-  AddTriple (d31dd0ed-79c4-4c6c-b4f9-b3f32733bc8c)
- Call ID: d31dd0ed-79c4-4c6c-b4f9-b3f32733bc8c
-  Args:
-    source: Prince_Henry_Duke_of_Gloucester
-    relation: :isBrotherOf
-    target: King_George_VI
-  AddTriple (c70234c1-9207-4c83-be2b-1b39d1d7dd7b)
- Call ID: c70234c1-9207-4c83-be2b-1b39d1d7dd7b
+  AddTriple (3efc576d-c7b1-4374-acda-c179a0ba7270)
+ Call ID: 3efc576d-c7b1-4374-acda-c179a0ba7270
   Args:
     relation: :isBrotherOf
-    target: Duke_of_Kent
     source: Prince_Henry_Duke_of_Gloucester
-  AddTriple (76c50f6c-8244-493e-8ed3-eb70d8c14dde)
- Call ID: 76c50f6c-8244-493e-8ed3-eb70d8c14dde
+    target: Edward_VIII
+  AddTriple (3724945b-aefc-4388-aabe-cf7462fc17d1)
+ Call ID: 3724945b-aefc-4388-aabe-cf7462fc17d1
   Args:
-    source: King_Edward_VIII
-    target: King_George_V
-    relation: :hasFather
-  AddTriple (a48b491a-6763-45b9-886b-7073573d43ff)
- Call ID: a48b491a-6763-45b9-886b-7073573d43ff
+    source: Prince_Henry_Duke_of_Gloucester
+    target: George_VI
+    relation: :isBrotherOf
+  AddTriple (48869222-54ca-4772-a7b8-fe227cfb5055)
+ Call ID: 48869222-54ca-4772-a7b8-fe227cfb5055
   Args:
-    source: King_Edward_VIII
-    relation: :hasMother
-    target: Queen_Mary
-  AddTriple (5af4f50a-1df9-4428-bb85-822bcf678b59)
- Call ID: 5af4f50a-1df9-4428-bb85-822bcf678b59
+    source: Prince_Henry_Duke_of_Gloucester
+    target: Prince_William_of_Gloucester
+    relation: :hasChild
+  AddTriple (7765958d-e8f5-403a-bcda-92e143da01b1)
+ Call ID: 7765958d-e8f5-403a-bcda-92e143da01b1
   Args:
-    relation: :hasFather
-    target: King_George_V
-    source: King_George_VI
-  AddTriple (d247154d-8f3e-4f34-bb5f-de031ebc1454)
- Call ID: d247154d-8f3e-4f34-bb5f-de031ebc1454
+    target: Prince_Richard_of_Gloucester
+    source: Prince_Henry_Duke_of_Gloucester
+    relation: :hasChild
+  AddTriple (d7cdb6df-fa20-448c-ad1c-a008e0a4be12)
+ Call ID: d7cdb6df-fa20-448c-ad1c-a008e0a4be12
   Args:
-    source: King_George_VI
-    relation: :hasMother
-    target: Queen_Mary
-  AddTriple (02566d8c-6eb8-4ac1-8bf2-7e26bccabb05)
- Call ID: 02566d8c-6eb8-4ac1-8bf2-7e26bccabb05
+    relation: :hasChild
+    source: Lady_Alice_Montagu_Douglas_Scott
+    target: Prince_William_of_Gloucester
+  AddTriple (a0b8e2cf-f8ab-4685-ac76-79f721029904)
+ Call ID: a0b8e2cf-f8ab-4685-ac76-79f721029904
   Args:
-    source: Duke_of_Kent
-    target: King_George_V
-    relation: :hasFather
-  AddTriple (f570781c-b565-4032-9250-641cb64ed2be)
- Call ID: f570781c-b565-4032-9250-641cb64ed2be
+    relation: :hasChild
+    target: Prince_Richard_of_Gloucester
+    source: Lady_Alice_Montagu_Douglas_Scott
+  AddLiteral (c9cf69ce-76ed-4550-b819-ec64390a2c39)
+ Call ID: c9cf69ce-76ed-4550-b819-ec64390a2c39
   Args:
-    source: Duke_of_Kent
-    relation: :hasMother
-    target: Queen_Mary
-  AddLiteral (1859bfa4-e265-419a-af62-4c3c55396ef2)
- Call ID: 1859bfa4-e265-419a-af62-4c3c55396ef2
-  Args:
-    literal_type: xsd:integer
     literal_value: 1935
-    source: Prince_Henry_Duke_of_Gloucester
     relation: :hasMarriageYear
-  AddTriple (7a9b6b50-8de4-46bc-aba5-53fb533a4a07)
- Call ID: 7a9b6b50-8de4-46bc-aba5-53fb533a4a07
+    source: Prince_Henry_Duke_of_Gloucester
+    literal_type: xsd:integer
+  AddTriple (3c629d11-5fdb-4e1f-93a6-c42f2b17e8ec)
+ Call ID: 3c629d11-5fdb-4e1f-93a6-c42f2b17e8ec
   Args:
+    source: Prince_Henry_Duke_of_Gloucester
     target: Lady_Alice_Montagu_Douglas_Scott
     relation: :hasRelation
-    source: Prince_Henry_Duke_of_Gloucester
-  AddTriple (a7491cdd-243f-4bbd-bbdd-0212cacc45ed)
- Call ID: a7491cdd-243f-4bbd-bbdd-0212cacc45ed
+  Finish (ef2456f1-5501-41e0-85b0-3492b021535e)
+ Call ID: ef2456f1-5501-41e0-85b0-3492b021535e
   Args:
-    target: Prince_William
-    relation: :hasSon
-    source: Prince_Henry_Duke_of_Gloucester
-  AddTriple (2f98e398-93e9-4843-a08a-eeae3d037ddd)
- Call ID: 2f98e398-93e9-4843-a08a-eeae3d037ddd
-  Args:
-    relation: :hasSon
-    target: Prince_Richard
-    source: Prince_Henry_Duke_of_Gloucester
-  AddTriple (569cba19-69cc-4c0b-b852-268e83b4f419)
- Call ID: 569cba19-69cc-4c0b-b852-268e83b4f419
-  Args:
-    target: Lady_Alice_Montagu_Douglas_Scott
-    relation: :hasMother
-    source: Prince_William
-  AddTriple (486ef256-9186-495d-9aac-ea784a8c2c40)
- Call ID: 486ef256-9186-495d-9aac-ea784a8c2c40
-  Args:
-    target: Lady_Alice_Montagu_Douglas_Scott
-    relation: :hasMother
-    source: Prince_Richard
-  ValidateShacl (d90984a2-e75c-48c3-a02f-2e40f1ecd966)
- Call ID: d90984a2-e75c-48c3-a02f-2e40f1ecd966
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -774,285 +774,96 @@ The final data graph after all the edits:
 
   data:Prince_Henry_Duke_of_Gloucester a :Man ;
       :hasBirthYear 1900 ;
+      :hasChild data:Prince_Richard_of_Gloucester,
+          data:Prince_William_of_Gloucester ;
       :hasDeathYear 1974 ;
       :hasFather data:King_George_V ;
       :hasMarriageYear 1935 ;
       :hasMother data:Queen_Mary ;
       :hasRelation data:Lady_Alice_Montagu_Douglas_Scott ;
-      :hasSon data:Prince_Richard,
-          data:Prince_William ;
-      :isBrotherOf data:Duke_of_Kent,
-          data:King_Edward_VIII,
-          data:King_George_VI .
+      :isBrotherOf data:Edward_VIII,
+          data:George_VI .
 
-  data:Duke_of_Kent a :Man ;
-      :hasFather data:King_George_V ;
-      :hasMother data:Queen_Mary .
+  data:Edward_VIII a :Man .
 
-  data:King_Edward_VIII a :Man ;
-      :hasFather data:King_George_V ;
-      :hasMother data:Queen_Mary .
-
-  data:King_George_VI a :Man ;
-      :hasFather data:King_George_V ;
-      :hasMother data:Queen_Mary .
-
-  data:Prince_Richard a :Man ;
-      :hasMother data:Lady_Alice_Montagu_Douglas_Scott .
-
-  data:Prince_William a :Man ;
-      :hasMother data:Lady_Alice_Montagu_Douglas_Scott .
-
-  data:Lady_Alice_Montagu_Douglas_Scott a :Woman .
+  data:George_VI a :Man .
 
   data:King_George_V a :Man .
 
+  data:Lady_Alice_Montagu_Douglas_Scott a :Woman ;
+      :hasChild data:Prince_Richard_of_Gloucester,
+          data:Prince_William_of_Gloucester .
+
   data:Queen_Mary a :Woman .
+
+  data:Prince_Richard_of_Gloucester a :Man .
+
+  data:Prince_William_of_Gloucester a :Man .
 
 
 
 ================================= Tool Message =================================
 
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (e73c9061-b5ea-4916-9255-f8fb402761f2)
+ Call ID: e73c9061-b5ea-4916-9255-f8fb402761f2
+  Args:
+
+================================= Tool Message =================================
+
 VALIDATION RESULTS
-Total violations:30
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Duke_of_Kent has a father node King_George_V that does not belong to the required classes :Ancestor or :Man.
+      The node King_George_V does not belong to the required class :Ancestor, which is expected for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
       AssignClass(King_George_V, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person King_Edward_VIII has a father node King_George_V that does not belong to the required classes :Ancestor or :Man.
+      The node Queen_Mary does not belong to the required class :Ancestor, which is expected for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_George_V, :Ancestor)
+      AssignClass(Queen_Mary, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person King_George_VI has a father node King_George_V that does not belong to the required classes :Ancestor or :Man.
+      The node King_George_V does not belong to the required class :Ancestor, which is expected for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
       AssignClass(King_George_V, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Prince_Henry_Duke_of_Gloucester has a father node King_George_V that does not belong to the required classes :Ancestor or :Man.
+      The node Queen_Mary does not belong to the required class :Ancestor, which is expected for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_George_V, :Ancestor)
+      AssignClass(Queen_Mary, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Duke_of_Kent has a mother node Queen_Mary that does not belong to the required classes :Ancestor or :Woman.
+      The node King_George_V does not belong to the required class :Ancestor, which is expected for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Mary, :Ancestor)
+      AssignClass(King_George_V, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person King_Edward_VIII has a mother node Queen_Mary that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Mary, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person King_George_VI has a mother node Queen_Mary that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Mary, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Prince_Henry_Duke_of_Gloucester has a mother node Queen_Mary that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Mary, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Prince_Richard has a mother node Lady_Alice_Montagu_Douglas_Scott that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Alice_Montagu_Douglas_Scott, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Prince_William has a mother node Lady_Alice_Montagu_Douglas_Scott that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Alice_Montagu_Douglas_Scott, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Duke_of_Kent has a father node King_George_V that does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_George_V, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person King_George_VI has a father node King_George_V that does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_George_V, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Prince_Henry_Duke_of_Gloucester has a father node King_George_V that does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_George_V, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person King_Edward_VIII has a father node King_George_V that does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_George_V, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Duke_of_Kent has a mother node Queen_Mary that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Mary, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person King_George_VI has a mother node Queen_Mary that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Mary, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Prince_Henry_Duke_of_Gloucester has a mother node Queen_Mary that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Mary, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Prince_Richard has a mother node Lady_Alice_Montagu_Douglas_Scott that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Alice_Montagu_Douglas_Scott, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Prince_William has a mother node Lady_Alice_Montagu_Douglas_Scott that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Alice_Montagu_Douglas_Scott, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person King_Edward_VIII has a mother node Queen_Mary that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Mary, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Duke_of_Kent has a father node King_George_V that does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_George_V, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person King_George_VI has a father node King_George_V that does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_George_V, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Prince_Henry_Duke_of_Gloucester has a father node King_George_V that does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_George_V, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person King_Edward_VIII has a father node King_George_V that does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(King_George_V, :Ancestor)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Duke_of_Kent has a mother node Queen_Mary that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Mary, :Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person King_George_VI has a mother node Queen_Mary that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Mary, :Ancestor)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Prince_Henry_Duke_of_Gloucester has a mother node Queen_Mary that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Mary, :Ancestor)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Prince_Richard has a mother node Lady_Alice_Montagu_Douglas_Scott that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Alice_Montagu_Douglas_Scott, :Ancestor)
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Prince_William has a mother node Lady_Alice_Montagu_Douglas_Scott that does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Alice_Montagu_Douglas_Scott, :Ancestor)
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person King_Edward_VIII has a mother node Queen_Mary that does not belong to the required classes :Ancestor or :Woman.
+      The node Queen_Mary does not belong to the required class :Ancestor, which is expected for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Queen_Mary, :Ancestor)
 
@@ -1063,28 +874,19 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (b58d4ad6-aa4d-4bed-969c-9780645097a1)
- Call ID: b58d4ad6-aa4d-4bed-969c-9780645097a1
+  AssignClass (a14325c7-9bd0-4afc-a1a9-4ec44095b55e)
+ Call ID: a14325c7-9bd0-4afc-a1a9-4ec44095b55e
   Args:
     source: King_George_V
     type: :Ancestor
-  AssignClass (51330741-1c4c-4ac6-94e7-cc91551b9d1a)
- Call ID: 51330741-1c4c-4ac6-94e7-cc91551b9d1a
+  AssignClass (79aa2e86-d96d-423d-9ff0-584f07a6e9b9)
+ Call ID: 79aa2e86-d96d-423d-9ff0-584f07a6e9b9
   Args:
-    type: :Ancestor
     source: Queen_Mary
-  AssignClass (50150c7d-bb22-4bba-8f85-6839db679f84)
- Call ID: 50150c7d-bb22-4bba-8f85-6839db679f84
-  Args:
     type: :Ancestor
-    source: Lady_Alice_Montagu_Douglas_Scott
-  ValidateShacl (84ae8306-abce-4040-ab50-877c965cfb27)
- Call ID: 84ae8306-abce-4040-ab50-877c965cfb27
+  Finish (c966c59f-c331-4960-b54a-cfb191fbaea1)
+ Call ID: c966c59f-c331-4960-b54a-cfb191fbaea1
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1099,45 +901,47 @@ The final data graph after all the edits:
 
   data:Prince_Henry_Duke_of_Gloucester a :Man ;
       :hasBirthYear 1900 ;
+      :hasChild data:Prince_Richard_of_Gloucester,
+          data:Prince_William_of_Gloucester ;
       :hasDeathYear 1974 ;
       :hasFather data:King_George_V ;
       :hasMarriageYear 1935 ;
       :hasMother data:Queen_Mary ;
       :hasRelation data:Lady_Alice_Montagu_Douglas_Scott ;
-      :hasSon data:Prince_Richard,
-          data:Prince_William ;
-      :isBrotherOf data:Duke_of_Kent,
-          data:King_Edward_VIII,
-          data:King_George_VI .
+      :isBrotherOf data:Edward_VIII,
+          data:George_VI .
 
-  data:Duke_of_Kent a :Man ;
-      :hasFather data:King_George_V ;
-      :hasMother data:Queen_Mary .
+  data:Edward_VIII a :Man .
 
-  data:King_Edward_VIII a :Man ;
-      :hasFather data:King_George_V ;
-      :hasMother data:Queen_Mary .
-
-  data:King_George_VI a :Man ;
-      :hasFather data:King_George_V ;
-      :hasMother data:Queen_Mary .
-
-  data:Prince_Richard a :Man ;
-      :hasMother data:Lady_Alice_Montagu_Douglas_Scott .
-
-  data:Prince_William a :Man ;
-      :hasMother data:Lady_Alice_Montagu_Douglas_Scott .
-
-  data:Lady_Alice_Montagu_Douglas_Scott a :Ancestor,
-          :Woman .
+  data:George_VI a :Man .
 
   data:King_George_V a :Ancestor,
           :Man .
 
+  data:Lady_Alice_Montagu_Douglas_Scott a :Woman ;
+      :hasChild data:Prince_Richard_of_Gloucester,
+          data:Prince_William_of_Gloucester .
+
   data:Queen_Mary a :Ancestor,
           :Woman .
 
+  data:Prince_Richard_of_Gloucester a :Man .
 
+  data:Prince_William_of_Gloucester a :Man .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (58012215-58bb-42dd-800f-91e1113876e0)
+ Call ID: 58012215-58bb-42dd-800f-91e1113876e0
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1147,6 +951,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (742a1aea-76b9-44db-ab2e-90dbbdc04a77)
- Call ID: 742a1aea-76b9-44db-ab2e-90dbbdc04a77
+  Finish (1ecddc5f-0b5e-4f8b-98e6-96aa681656d9)
+ Call ID: 1ecddc5f-0b5e-4f8b-98e6-96aa681656d9
   Args:

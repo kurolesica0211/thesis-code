@@ -7,10 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Otto_von_Habsburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Otto_von_Habsburg a :Person ;
     rdfs:label "Otto von Habsburg" ;
     data:posIndicesFull "304:321",
         "647:664" ;
@@ -26,10 +23,7 @@ data:Otto_von_Habsburg a :Ancestor,
         "Otto, Crown Prince of Austria" ;
     :hasSex data:male .
 
-data:Regina-_Crown_Princess_of_Austria a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Regina-_Crown_Princess_of_Austria a :Person ;
     rdfs:label "Regina, Crown Princess of Austria" ;
     data:posIndicesFull "0:19" ;
     data:posIndicesPart "1195:1201",
@@ -58,4 +52,8 @@ data:posIndicesFull a owl:AnnotationProperty .
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
 

@@ -1,0 +1,218 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Henry_Lascelles-_6th_Earl_of_Harewood a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Henry Lascelles, 6th Earl of Harewood"^^xsd:string ;
+    data:posIndicesFull "103:118"^^xsd:string,
+        "103:140"^^xsd:string ;
+    data:posIndicesPart "1084:1088"^^xsd:string,
+        "1120:1129"^^xsd:string,
+        "1215:1224"^^xsd:string,
+        "1375:1384"^^xsd:string,
+        "794:803"^^xsd:string,
+        "987:996"^^xsd:string ;
+    data:wdtLink wdt:Q2653986 ;
+    :alsoKnownAs "Henry George Charles Lascelles"^^xsd:string,
+        "Henry George Charles Lascelles, 6th Earl of Harewood"^^xsd:string,
+        "Henry George Charles Lascelles, Viscount Lascelles"^^xsd:string,
+        "Henry Harewood"^^xsd:string,
+        "Henry Lascelles"^^xsd:string,
+        "Henry Lascelles, Viscount Lascelles"^^xsd:string,
+        "Lord Harewood"^^xsd:string ;
+    :hasBrother data:Henry_Lascelles-_6th_Earl_of_Harewood ;
+    :hasChild data:Gerald_David_Lascelles ;
+    :hasRelation data:Gerald_David_Lascelles,
+        data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSex data:male ;
+    :hasSon data:Gerald_David_Lascelles ;
+    :isAncestorOf data:Gerald_David_Lascelles ;
+    :isBloodrelationOf data:Henry_Lascelles-_6th_Earl_of_Harewood ;
+    :isBrotherOf data:Henry_Lascelles-_6th_Earl_of_Harewood ;
+    :isFatherOf data:Gerald_David_Lascelles ;
+    :isParentOf data:Gerald_David_Lascelles ;
+    :isSiblingOf data:Henry_Lascelles-_6th_Earl_of_Harewood ;
+    :isUncleOf data:Gerald_David_Lascelles .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    rdfs:label "Edward VIII"^^xsd:string ;
+    data:posIndicesFull "461:477"^^xsd:string,
+        "466:477"^^xsd:string,
+        "738:749"^^xsd:string,
+        "755:770"^^xsd:string ;
+    data:wdtLink wdt:Q590227 ;
+    :alsoKnownAs "David Windsor"^^xsd:string,
+        "Duke of Windsor"^^xsd:string,
+        "Edward Albert Christian George Andrew Patrick David"^^xsd:string,
+        "Edward Albert Christian George Andrew Patrick David Windsor"^^xsd:string,
+        "Edward VIII Edward VIII of the United Kingdom"^^xsd:string,
+        "Edward VIII Edward VIII, King of the United Kingdom"^^xsd:string,
+        "Edward VIII of the United Kingdom"^^xsd:string,
+        "Edward Windsor"^^xsd:string,
+        "Edward, Duke of Windsor"^^xsd:string,
+        "Edward, Prince of Wales"^^xsd:string,
+        "King Edward VIII"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward, Duke of Windsor"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSex data:male ;
+    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isBrotherOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Gerald_David_Lascelles .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George V"^^xsd:string ;
+    data:posIndicesFull "189:202"^^xsd:string,
+        "194:202"^^xsd:string ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert"^^xsd:string,
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha"^^xsd:string,
+        "George Frederick Ernest Albert Windsor"^^xsd:string,
+        "George Saxe-Coburg-Gotha"^^xsd:string,
+        "George V (King of Great Britain)"^^xsd:string,
+        "George V of the United Kingdom"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "King George V"^^xsd:string ;
+    :hasBrother data:George_V ;
+    :hasChild data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasDaughter data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:Gerald_David_Lascelles,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSex data:male ;
+    :hasSon data:Edward_VIII ;
+    :isAncestorOf data:Edward_VIII,
+        data:Gerald_David_Lascelles,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isFatherOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isParentOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isSiblingOf data:George_V ;
+    :isUncleOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood .
+
+data:Gerald_David_Lascelles a :Man,
+        :Person ;
+    rdfs:label "Gerald David Lascelles"^^xsd:string ;
+    data:posIndicesFull "0:22"^^xsd:string,
+        "248:264"^^xsd:string,
+        "272:294"^^xsd:string,
+        "712:728"^^xsd:string ;
+    data:posIndicesPart "1120:1129"^^xsd:string,
+        "1215:1224"^^xsd:string,
+        "1375:1384"^^xsd:string,
+        "794:803"^^xsd:string,
+        "987:996"^^xsd:string ;
+    data:wdtLink wdt:Q2962982 ;
+    :alsoKnownAs "Gerald Lascelles"^^xsd:string,
+        "Hon. Gerald David Lascelles"^^xsd:string,
+        "Hon. Gerald Lascelles"^^xsd:string ;
+    :hasAncestor data:George_V,
+        data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasBrother data:Gerald_David_Lascelles ;
+    :hasFather data:Henry_Lascelles-_6th_Earl_of_Harewood ;
+    :hasMother data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasParent data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasRelation data:George_V,
+        data:Gerald_David_Lascelles,
+        data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Gerald_David_Lascelles ;
+    :isBrotherOf data:Gerald_David_Lascelles ;
+    :isChildOf data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isSiblingOf data:Gerald_David_Lascelles ;
+    :isSonOf data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood .
+
+data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Mary, Princess Royal and Countess of Harewood"^^xsd:string ;
+    data:posIndicesFull "146:166"^^xsd:string ;
+    data:posIndicesPart "586:590"^^xsd:string ;
+    data:wdtLink wdt:Q233913 ;
+    :alsoKnownAs "Mary Harewood"^^xsd:string,
+        "Mary, Princess Royal"^^xsd:string,
+        "Princess Mary"^^xsd:string,
+        "Princess Mary of Wales"^^xsd:string,
+        "Princess Mary of York"^^xsd:string,
+        "Princess Mary of the United Kingdom"^^xsd:string,
+        "Princess Mary, Countess of Harewood"^^xsd:string,
+        "Princess Mary, Princess Royal of the United Kingdom"^^xsd:string,
+        "Princess Mary, Viscountess Lascelles"^^xsd:string,
+        "Princess Victoria Alexandra Alice Mary of Wales"^^xsd:string,
+        "Princess Victoria Alexandra Alice Mary of York"^^xsd:string,
+        "Princess Victoria Alexandra Alice Mary of the United Kingdom"^^xsd:string,
+        "Princess Victoria Alexandra Alice Mary, Countess of Harewood"^^xsd:string,
+        "Princess Victoria Alexandra Alice Mary, Viscountess Lascelles"^^xsd:string,
+        "Victoria Alexandra Alice Mary Windsor"^^xsd:string,
+        "Victoria Alexandra Alice Mary, Princess Royal and Countess of Harewood"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII ;
+    :hasChild data:Gerald_David_Lascelles ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:Gerald_David_Lascelles,
+        data:Henry_Lascelles-_6th_Earl_of_Harewood,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSex data:female ;
+    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :hasSon data:Gerald_David_Lascelles ;
+    :isAncestorOf data:Gerald_David_Lascelles ;
+    :isAuntOf data:Gerald_David_Lascelles ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isChildOf data:George_V ;
+    :isDaughterOf data:George_V ;
+    :isMotherOf data:Gerald_David_Lascelles ;
+    :isParentOf data:Gerald_David_Lascelles ;
+    :isSiblingOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
+    :isSisterOf data:Edward_VIII,
+        data:Mary-_Princess_Royal_and_Countess_of_Harewood .
+

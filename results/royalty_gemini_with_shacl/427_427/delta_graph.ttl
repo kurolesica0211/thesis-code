@@ -2,32 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Kraft_Hohenlohe-Langenburg a :Man,
-        :Person ;
-    :hasBirthYear 1935 ;
-    :hasDeathYear 2004 ;
-    :hasFather data:Gottfried_Hohenlohe-Langenburg ;
-    :hasMarriageYear 1965 ;
-    :hasMother data:Margarita_Greece_Denmark ;
-    :hasRelation data:Charlotte_Croy ;
-    :hasSister data:Beatrix_Hohenlohe-Langenburg .
+data:Prince_Alfred_of_Liechtenstein a :Man .
 
-data:Prince_Philip_Duke_Edinburgh a :Man,
-        :Person ;
-    :hasSister data:Margarita_Greece_Denmark .
+data:Prince_Gundakar_of_Liechtenstein a :Man ;
+    :alsoKnownAs "Gundakar Albert Alfred Petrus of Liechtenstein"^^xsd:string ;
+    :hasFather data:Prince_Johann_of_Liechtenstein ;
+    :hasMother data:Princess_Clothilde_of_Thurn_und_Taxis .
 
-data:Beatrix_Hohenlohe-Langenburg a :Person,
-        :Woman .
+data:Princess_Marie_of_Liechtenstein a :Woman ;
+    :alsoKnownAs "Marie Isabelle Marguerite Anne Geneviève of Orléans"^^xsd:string ;
+    :hasFather data:Prince_Henri_Count_of_Paris ;
+    :hasMother data:Duchess_Marie_Therese_of_Wurttemberg .
 
-data:Charlotte_Croy a :Person,
+data:Duchess_Marie_Therese_of_Wurttemberg a :Ancestor,
         :Woman ;
-    :hasBirthYear 1938 .
+    :hasChild data:Prince_Jean_Duke_of_Vendome .
 
-data:Gottfried_Hohenlohe-Langenburg a :Ancestor,
-        :Man,
-        :Person .
+data:Prince_Henri_Count_of_Paris a :Ancestor,
+        :Man .
 
-data:Margarita_Greece_Denmark a :Ancestor,
-        :Person,
+data:Prince_Jean_Duke_of_Vendome a :Man .
+
+data:Prince_Johann_of_Liechtenstein a :Ancestor,
+        :Man .
+
+data:Princess_Clothilde_of_Thurn_und_Taxis a :Ancestor,
         :Woman .
 

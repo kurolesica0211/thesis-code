@@ -16,56 +16,31 @@
       "qid": "Q105976",
       "label": "Princess Cecilie Viktoria of Prussia",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Duchess_Cecilie_of_Mecklenburg-Schwerin",
       "qid": "Q235812",
       "label": "Duchess Cecilie of Mecklenburg-Schwerin",
       "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Kira_of_Prussia",
-      "qid": "Q77937",
-      "label": "Princess Kira of Prussia",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Wilhelm-_German_Crown_Prince",
       "qid": "Q57621",
       "label": "Wilhelm, German Crown Prince",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Wilhelm_II",
       "qid": "Q2677",
       "label": "Wilhelm II",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     }
   ],
   "entities": [
-    {
-      "extracted_uri": "http://example.org/data/Wilhelm_II",
-      "extracted_local_name": "Wilhelm_II",
-      "embedding_text": "Wilhelm II",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Wilhelm_II",
-      "ground_truth_qid": "Q2677",
-      "ground_truth_label": "Wilhelm II",
-      "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Wilhelm II",
-      "best_candidate_label": "Wilhelm II",
-      "best_candidate_qid": "Q2677",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 1.0
-    },
     {
       "extracted_uri": "http://example.org/data/Wilhelm_German_Crown_Prince",
       "extracted_local_name": "Wilhelm_German_Crown_Prince",
@@ -77,11 +52,11 @@
       "ground_truth_qid": "Q57621",
       "ground_truth_label": "Wilhelm, German Crown Prince",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Wilhelm- German Crown Prince",
       "best_candidate_label": "Wilhelm, German Crown Prince",
       "best_candidate_qid": "Q57621",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9818181818181818
     },
     {
@@ -95,11 +70,11 @@
       "ground_truth_qid": "Q235812",
       "ground_truth_label": "Duchess Cecilie of Mecklenburg-Schwerin",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Duchess Cecilie of Mecklenburg-Schwerin",
       "best_candidate_label": "Duchess Cecilie of Mecklenburg-Schwerin",
       "best_candidate_qid": "Q235812",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.8181818181818181
     },
     {
@@ -113,11 +88,11 @@
       "ground_truth_qid": "Q105976",
       "ground_truth_label": "Princess Cecilie Viktoria of Prussia",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Cecilie of Prussia",
       "best_candidate_label": "Princess Cecilie Viktoria of Prussia",
       "best_candidate_qid": "Q105976",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.8043478260869565
     },
     {
@@ -135,7 +110,7 @@
       "best_candidate_match_text": "Wilhelm II, German Emperor",
       "best_candidate_label": "Wilhelm II",
       "best_candidate_qid": "Q2677",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.34782608695652173
     },
     {
@@ -153,7 +128,7 @@
       "best_candidate_match_text": "Crown Prince Wilhelm",
       "best_candidate_label": "Wilhelm, German Crown Prince",
       "best_candidate_qid": "Q57621",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.3902439024390244
     },
     {
@@ -168,11 +143,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Kira Auguste Viktoria Friederike Prinzessin von Preußen",
-      "best_candidate_label": "Princess Kira of Prussia",
-      "best_candidate_qid": "Q77937",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.32
+      "best_candidate_match_text": "Kaiser Wilhelm II",
+      "best_candidate_label": "Wilhelm II",
+      "best_candidate_qid": "Q2677",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3225806451612903
     },
     {
       "extracted_uri": "http://example.org/data/Philip_Louis_Johnson",
@@ -189,13 +164,13 @@
       "best_candidate_match_text": "Friedrich Wilhelm Viktor Albert von Hohenzollern",
       "best_candidate_label": "Wilhelm II",
       "best_candidate_qid": "Q2677",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.38235294117647056
     }
   ],
   "summary": {
-    "entities_total": 8,
-    "entities_matched": 4,
+    "entities_total": 7,
+    "entities_matched": 3,
     "entities_unmatched": 4
   }
 }

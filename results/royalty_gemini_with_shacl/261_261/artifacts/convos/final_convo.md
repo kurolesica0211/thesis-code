@@ -85,14 +85,68 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Georg von Habsburg (born 16 December 1964) is a Hungarian diplomat.
-He married Duchess Eilika of Oldenburg (born 22 August 1972 in Bad Segeberg), the elder daughter of Duke Johann of Oldenburg (younger son of Nikolaus, Hereditary Grand Duke of Oldenburg, and his wife Princess Helena of Waldeck and Pyrmont) and Countess Ilka of Ortenburg, on 18 October 1997 in Budapest, Hungary.
+Peter Mark Andrew Phillips (born 15 November 1977) is a British businessman and member of the British royal family.
+He is the son of Anne, Princess Royal, and Mark Phillips, and a nephew of King Charles III.
+Born during the reign of his maternal grandmother Queen Elizabeth II, Phillips was fifth in the line of succession to the British throne; as of 2026, he is 19th.
+Phillips attended the University of Exeter and later worked for Jaguar Racing.
+In 2008, he married Canadian management consultant Autumn Kelly at St George's Chapel, Windsor Castle; they have two children.
+Early life and education
+
+Peter Mark Andrew Phillips was born at 10:46 am on 15 November 1977 at St Mary's Hospital, London.
+He was the first child of Princess Anne and Mark Phillips, who had married in 1973, and the first grandchild of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
+He was baptised on 22 December by the Archbishop of Canterbury Donald Coggan in the Music Room of Buckingham Palace.
+His godparents were his maternal uncle, Prince Charles; Geoffrey Tiarks; Captain Hamish Lochore; Lady Cecil Cameron of Lochiel and Jane Holderness-Roddam.
+Phillips was fifth in line to the throne at birth and remained so until the birth of his cousin William, Prince of Wales in 1982.
+His parents were said to have refused offers from his grandmother Queen Elizabeth II that would have led to his being born in the peerage.
+Phillips was the first legitimate grandchild of a monarch in more than 500 years to be born without a title or courtesy title.
+Phillips has a younger sister, Zara Tindall (née Phillips; born 1981), and two younger half-sisters, Felicity Wade (née Tonkin; born 1985), the daughter of Mark Phillips and his former mistress Heather Tonkin; and Stephanie Phillips (born 1997), the daughter from his father's second marriage to Sandy Pflueger.
+Phillips went to Port Regis Prep School in Shaftesbury, Dorset before following some of his family by attending Gordonstoun School in Moray, Scotland.
+Phillips represented Scotland at rugby union at youth and junior level in the mid-1990s.
+Career
+
+After his graduation in 2000, Phillips worked for Jaguar as corporate hospitality manager and then for Williams racing team, where he was sponsorship accounts manager.
+He left Williams in September 2005, for a job as a manager at the Royal Bank of Scotland in Edinburgh.
+In the year leading up to June 2016, Phillips was responsible for organising the "Patron's Lunch", in celebration of the Queen's 90th birthday.
+In January 2020, Phillips appeared in an advertisement for Chinese company Bright Food.
+In the video, he uses his status as a "British royal family member" to promote the company's milk, while surrounded by luxury.
+Royal funeral participation
+
+On 17 September 2022, during the period of official mourning for Queen Elizabeth II, Phillips joined his sister and six cousins to mount a 15-minute vigil around the coffin of their grandmother as it lay in state at Westminster Hall.
+On 19 September 2022, he joined the Queen's children and other senior members of the royal family in walking behind the cortege in the state funeral procession.
+Personal life
+
+Relationships
+
+Elizabeth Iorio and Tara Swain
+
+Phillips dated Elizabeth Iorio, a cod liver oil heiress from the United States, for two years.
+Autumn Kelly
+
+In 2003, Phillips met Autumn Kelly, a Canadian management consultant, at the Formula 1 Canadian Grand Prix in Montreal.
+If she had been Roman Catholic at the time of the marriage, Phillips would have lost his place in the line of the succession to the throne because of since-repealed terms of the Act of Settlement 1701.
+Shortly before their wedding, the couple were interviewed and photographed by Hello! magazine, and were reported to have been paid £500,000, resulting in some concern in royal circles.
+The couple lived in Hong Kong after Phillips changed positions within the Royal Bank of Scotland and became head of their sponsorships activities in the region.
+Their first child, and the Queen's first great-grandchild, a daughter named Savannah Anne Kathleen, was born on 29 December 2010 at Gloucestershire Royal Hospital.
+The Queen was present for the baby's baptism, which took place on 23 April 2011 at Church of the Holy Cross in Avening, Gloucestershire, near Gatcombe Park, the home of Phillips' mother.
+Savannah was born 12th in the line to the throne and is now 20th.
+On 29 March 2012, the couple's second daughter, Isla Elizabeth, was born at Gloucestershire Royal Hospital.
+She was born 13th in the line to the throne and is now 21st.
+On 11 February 2020, Phillips and his wife confirmed that they had separated in 2019 and announced they were planning to divorce.
+Lindsay Wallace
+
+After his divorce, Phillips began a relationship with Lindsay Wallace in 2021, with whom he made his official debut as a couple at the Epsom Derby in June 2022.
+Harriet Sperling
+
+By June 2024, Phillips had introduced his partner, NHS paediatric nurse and freelance writer Harriet Sperling (née Sanders; born 1980), to King Charles III and Queen Camilla.
+According to the BBC, Sperling is a distant relation of Prince Richard, Duke of Gloucester through her father Rupert Sanders (1946–2023).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -108,39 +162,9 @@ He married Duchess Eilika of Oldenburg (born 22 August 1972 in Bad Segeberg), th
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -155,6 +179,23 @@ He married Duchess Eilika of Oldenburg (born 22 August 1972 in Bad Segeberg), th
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -172,6 +213,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -239,29 +295,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -270,6 +318,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -282,6 +338,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -290,17 +348,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -328,6 +388,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -343,156 +487,349 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ab87d25c-c57c-44cc-8973-b131db10de71)
- Call ID: ab87d25c-c57c-44cc-8973-b131db10de71
+  AssignClass (998caef4-637d-4656-b9ff-466868938440)
+ Call ID: 998caef4-637d-4656-b9ff-466868938440
   Args:
     type: :Man
-    source: :Georg_von_Habsburg
-  AssignClass (2abb7f9c-24cb-47ba-9657-f24ad3a889d1)
- Call ID: 2abb7f9c-24cb-47ba-9657-f24ad3a889d1
+    source: Peter_Phillips
+  AssignClass (d0c006d4-820b-4fba-bae9-eb912d143310)
+ Call ID: d0c006d4-820b-4fba-bae9-eb912d143310
   Args:
     type: :Person
-    source: :Georg_von_Habsburg
-  AddLiteral (059bbad5-bbdd-4162-8771-4bfee141203a)
- Call ID: 059bbad5-bbdd-4162-8771-4bfee141203a
+    source: Peter_Phillips
+  AddLiteral (fc074372-e088-4ce1-b23e-d09df442bbfb)
+ Call ID: fc074372-e088-4ce1-b23e-d09df442bbfb
   Args:
+    literal_type: xsd:positiveInteger
+    source: Peter_Phillips
     relation: :hasBirthYear
-    literal_type: xsd:positiveInteger
-    source: :Georg_von_Habsburg
-    literal_value: 1964
-  AssignClass (4d65890b-d980-43ec-996c-9b2e0d73b5a5)
- Call ID: 4d65890b-d980-43ec-996c-9b2e0d73b5a5
+    literal_value: 1977
+  AssignClass (1329f779-6843-4b17-96c1-6dee38547403)
+ Call ID: 1329f779-6843-4b17-96c1-6dee38547403
   Args:
-    source: :Eilika_of_Oldenburg
     type: :Woman
-  AssignClass (37e1701b-582b-4552-8f12-3d8b601d878d)
- Call ID: 37e1701b-582b-4552-8f12-3d8b601d878d
+    source: Anne_Princess_Royal
+  AssignClass (6666ab2a-1f60-4d93-98a2-5cabb83d9570)
+ Call ID: 6666ab2a-1f60-4d93-98a2-5cabb83d9570
   Args:
-    source: :Eilika_of_Oldenburg
+    source: Anne_Princess_Royal
     type: :Person
-  AddLiteral (8d3a976a-13c7-490f-bc24-2d63ebc0d70d)
- Call ID: 8d3a976a-13c7-490f-bc24-2d63ebc0d70d
-  Args:
-    relation: :hasBirthYear
-    source: :Eilika_of_Oldenburg
-    literal_value: 1972
-    literal_type: xsd:positiveInteger
-  AssignClass (6ddd605a-55eb-4891-94df-3d653b7a0e72)
- Call ID: 6ddd605a-55eb-4891-94df-3d653b7a0e72
-  Args:
-    source: :Johann_of_Oldenburg
-    type: :Man
-  AssignClass (ecc3f103-1675-4537-8d93-666511a208ec)
- Call ID: ecc3f103-1675-4537-8d93-666511a208ec
-  Args:
-    source: :Johann_of_Oldenburg
-    type: :Person
-  AssignClass (b198d208-885e-4a35-814a-694b95f6ea28)
- Call ID: b198d208-885e-4a35-814a-694b95f6ea28
-  Args:
-    source: :Ilka_of_Ortenburg
-    type: :Woman
-  AssignClass (0ca269bf-7c03-472e-9383-d3e687398137)
- Call ID: 0ca269bf-7c03-472e-9383-d3e687398137
-  Args:
-    type: :Person
-    source: :Ilka_of_Ortenburg
-  AssignClass (296f3160-fa93-47cc-a188-907a2118de97)
- Call ID: 296f3160-fa93-47cc-a188-907a2118de97
+  AssignClass (4b296a2a-c57c-455a-8529-2c7f6b4fe705)
+ Call ID: 4b296a2a-c57c-455a-8529-2c7f6b4fe705
   Args:
     type: :Man
-    source: :Nikolaus_Hereditary_Grand_Duke_of_Oldenburg
-  AssignClass (0ab2daa6-a0d2-4f13-bae0-6d8431d5f201)
- Call ID: 0ab2daa6-a0d2-4f13-bae0-6d8431d5f201
+    source: Mark_Phillips
+  AssignClass (a6782145-808b-4eef-ba64-154b15aebb9d)
+ Call ID: a6782145-808b-4eef-ba64-154b15aebb9d
   Args:
-    source: :Nikolaus_Hereditary_Grand_Duke_of_Oldenburg
+    source: Mark_Phillips
     type: :Person
-  AssignClass (87e1fd52-6b1f-42d2-8934-1b24badd89f1)
- Call ID: 87e1fd52-6b1f-42d2-8934-1b24badd89f1
+  AddTriple (c2d86047-4ed9-45cb-871a-c8c68827bd91)
+ Call ID: c2d86047-4ed9-45cb-871a-c8c68827bd91
+  Args:
+    source: Peter_Phillips
+    relation: :hasMother
+    target: Anne_Princess_Royal
+  AddTriple (e11b08bb-212c-46b9-a548-516a563daf8b)
+ Call ID: e11b08bb-212c-46b9-a548-516a563daf8b
+  Args:
+    target: Mark_Phillips
+    relation: :hasFather
+    source: Peter_Phillips
+  AssignClass (1631df39-5e22-4896-8177-ff186dbe93ec)
+ Call ID: 1631df39-5e22-4896-8177-ff186dbe93ec
+  Args:
+    source: King_Charles_III
+    type: :Man
+  AssignClass (621f5ae4-6929-419f-8569-3dbb7285d18a)
+ Call ID: 621f5ae4-6929-419f-8569-3dbb7285d18a
+  Args:
+    type: :Person
+    source: King_Charles_III
+  AddTriple (afddae6a-a0db-4e23-beb1-3f180774e66f)
+ Call ID: afddae6a-a0db-4e23-beb1-3f180774e66f
+  Args:
+    relation: :isBrotherOf
+    source: King_Charles_III
+    target: Anne_Princess_Royal
+  AssignClass (8e7d028e-a080-4061-844d-46675efe91ed)
+ Call ID: 8e7d028e-a080-4061-844d-46675efe91ed
   Args:
     type: :Woman
-    source: :Helena_of_Waldeck_and_Pyrmont
-  AssignClass (c78e00a7-606b-486a-857b-a4b28c6fbb86)
- Call ID: c78e00a7-606b-486a-857b-a4b28c6fbb86
+    source: Queen_Elizabeth_II
+  AssignClass (d1505c83-4df7-41fc-b4f3-51e059d9b8d1)
+ Call ID: d1505c83-4df7-41fc-b4f3-51e059d9b8d1
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Person
+  AddTriple (71c59541-916c-4fb6-acff-4501bf390af4)
+ Call ID: 71c59541-916c-4fb6-acff-4501bf390af4
+  Args:
+    target: Anne_Princess_Royal
+    source: Queen_Elizabeth_II
+    relation: :isMotherOf
+  AssignClass (07e40c1f-1c48-4379-8223-9d8d53e5fb82)
+ Call ID: 07e40c1f-1c48-4379-8223-9d8d53e5fb82
+  Args:
+    source: Prince_Philip_Duke_of_Edinburgh
+    type: :Man
+  AssignClass (0c95a1d0-cafc-4f1b-bda7-774dcd31375b)
+ Call ID: 0c95a1d0-cafc-4f1b-bda7-774dcd31375b
   Args:
     type: :Person
-    source: :Helena_of_Waldeck_and_Pyrmont
-  AddTriple (ec352580-065a-49e2-a37a-d6ddbff75ff4)
- Call ID: ec352580-065a-49e2-a37a-d6ddbff75ff4
+    source: Prince_Philip_Duke_of_Edinburgh
+  AddTriple (dad11ec8-cbeb-4308-ae97-5bdb5de9e584)
+ Call ID: dad11ec8-cbeb-4308-ae97-5bdb5de9e584
   Args:
-    source: :Georg_von_Habsburg
-    relation: :hasMarriageYear
-    target: :Eilika_of_Oldenburg
-  AddLiteral (0dcdc2c2-a5dc-4844-8af2-b29ab7bcb8a0)
- Call ID: 0dcdc2c2-a5dc-4844-8af2-b29ab7bcb8a0
+    target: Anne_Princess_Royal
+    source: Prince_Philip_Duke_of_Edinburgh
+    relation: :isFatherOf
+  AssignClass (98062ad6-1b10-4ff5-8ac3-1a32574df51e)
+ Call ID: 98062ad6-1b10-4ff5-8ac3-1a32574df51e
   Args:
+    type: :Woman
+    source: Zara_Tindall
+  AssignClass (a9fa6998-2de3-4f54-ae68-b75869dcde4e)
+ Call ID: a9fa6998-2de3-4f54-ae68-b75869dcde4e
+  Args:
+    source: Zara_Tindall
+    type: :Person
+  AddTriple (88535a1b-2af3-4df8-92bf-27d942e24936)
+ Call ID: 88535a1b-2af3-4df8-92bf-27d942e24936
+  Args:
+    target: Peter_Phillips
+    source: Zara_Tindall
+    relation: :isSisterOf
+  AddTriple (c6698ad0-8c09-4e0b-8e38-58b79211b3eb)
+ Call ID: c6698ad0-8c09-4e0b-8e38-58b79211b3eb
+  Args:
+    source: Zara_Tindall
+    relation: :hasMother
+    target: Anne_Princess_Royal
+  AddTriple (c8a4bc13-7329-455f-a2ae-841241cb0c31)
+ Call ID: c8a4bc13-7329-455f-a2ae-841241cb0c31
+  Args:
+    relation: :hasFather
+    source: Zara_Tindall
+    target: Mark_Phillips
+  AssignClass (e0ae95bd-cd2d-417a-942e-36aff5877033)
+ Call ID: e0ae95bd-cd2d-417a-942e-36aff5877033
+  Args:
+    type: :Woman
+    source: Felicity_Wade
+  AssignClass (1f6ba55f-5fdf-4dce-a229-8f3296581e7f)
+ Call ID: 1f6ba55f-5fdf-4dce-a229-8f3296581e7f
+  Args:
+    type: :Person
+    source: Felicity_Wade
+  AddTriple (abd54d92-001e-4836-826e-ae6510729671)
+ Call ID: abd54d92-001e-4836-826e-ae6510729671
+  Args:
+    source: Felicity_Wade
+    relation: :hasFather
+    target: Mark_Phillips
+  AssignClass (3ad7e366-36c4-45ad-83f6-75043e01282b)
+ Call ID: 3ad7e366-36c4-45ad-83f6-75043e01282b
+  Args:
+    source: Heather_Tonkin
+    type: :Woman
+  AssignClass (745ed22a-ae0c-41f6-b7a9-42bc8e721a81)
+ Call ID: 745ed22a-ae0c-41f6-b7a9-42bc8e721a81
+  Args:
+    source: Heather_Tonkin
+    type: :Person
+  AddTriple (b573690c-2656-4dc9-bb8c-5279e00dafc1)
+ Call ID: b573690c-2656-4dc9-bb8c-5279e00dafc1
+  Args:
+    target: Felicity_Wade
+    source: Heather_Tonkin
+    relation: :isMotherOf
+  AssignClass (2ef4184e-a9db-4a9d-bada-07f0e5e180a9)
+ Call ID: 2ef4184e-a9db-4a9d-bada-07f0e5e180a9
+  Args:
+    source: Stephanie_Phillips
+    type: :Woman
+  AssignClass (5ba2be44-643b-4a4e-9f32-e2b2e0a90b81)
+ Call ID: 5ba2be44-643b-4a4e-9f32-e2b2e0a90b81
+  Args:
+    type: :Person
+    source: Stephanie_Phillips
+  AddTriple (8e9ae859-28b9-4122-8285-3f23beb6c9b4)
+ Call ID: 8e9ae859-28b9-4122-8285-3f23beb6c9b4
+  Args:
+    relation: :hasFather
+    source: Stephanie_Phillips
+    target: Mark_Phillips
+  AssignClass (0803e9f0-a543-41e6-b8fb-cdd51a0453db)
+ Call ID: 0803e9f0-a543-41e6-b8fb-cdd51a0453db
+  Args:
+    type: :Woman
+    source: Sandy_Pflueger
+  AssignClass (cf293c7f-634b-47ed-97aa-165ccb871086)
+ Call ID: cf293c7f-634b-47ed-97aa-165ccb871086
+  Args:
+    source: Sandy_Pflueger
+    type: :Person
+  AddTriple (fd499a20-1d45-4ad8-bf4d-741cff6a3f7a)
+ Call ID: fd499a20-1d45-4ad8-bf4d-741cff6a3f7a
+  Args:
+    source: Sandy_Pflueger
+    relation: :isMotherOf
+    target: Stephanie_Phillips
+  AssignClass (9f516f20-c361-4f3a-aa6d-83513e4c512d)
+ Call ID: 9f516f20-c361-4f3a-aa6d-83513e4c512d
+  Args:
+    type: :Woman
+    source: Autumn_Kelly
+  AssignClass (049e734e-df25-42af-a1f9-f2c833f0d149)
+ Call ID: 049e734e-df25-42af-a1f9-f2c833f0d149
+  Args:
+    source: Autumn_Kelly
+    type: :Person
+  AddLiteral (aa788c49-0bec-4aff-9771-cca861d48749)
+ Call ID: aa788c49-0bec-4aff-9771-cca861d48749
+  Args:
+    source: Peter_Phillips
     relation: :hasMarriageYear
-    source: :Georg_von_Habsburg
-    literal_value: 1997
     literal_type: xsd:positiveInteger
-  AddTriple (6f35f892-613e-4d7d-88b8-781e84f6b427)
- Call ID: 6f35f892-613e-4d7d-88b8-781e84f6b427
+    literal_value: 2008
+  AddTriple (3551fed0-5f21-4062-8a5c-4e4119ef6eee)
+ Call ID: 3551fed0-5f21-4062-8a5c-4e4119ef6eee
   Args:
-    relation: :isDaughterOf
-    target: :Johann_of_Oldenburg
-    source: :Eilika_of_Oldenburg
-  AddTriple (b373478e-d0e3-4047-ae7e-bedd33b7c254)
- Call ID: b373478e-d0e3-4047-ae7e-bedd33b7c254
+    relation: :hasRelation
+    source: Peter_Phillips
+    target: Autumn_Kelly
+  AssignClass (7ca9818a-284f-44f8-90f3-67e5dd749420)
+ Call ID: 7ca9818a-284f-44f8-90f3-67e5dd749420
   Args:
-    target: :Ilka_of_Ortenburg
-    relation: :isDaughterOf
-    source: :Eilika_of_Oldenburg
-  AddTriple (ef062404-658f-4c09-b44f-82af0ebd60c2)
- Call ID: ef062404-658f-4c09-b44f-82af0ebd60c2
+    source: Savannah_Anne_Kathleen_Phillips
+    type: :Woman
+  AssignClass (74ad999b-75c1-47cb-b6fb-3b8f6fa52ccb)
+ Call ID: 74ad999b-75c1-47cb-b6fb-3b8f6fa52ccb
   Args:
-    relation: :isSonOf
-    target: :Nikolaus_Hereditary_Grand_Duke_of_Oldenburg
-    source: :Johann_of_Oldenburg
-  AddTriple (8a03872d-a84e-44c7-b857-523e93a0f47e)
- Call ID: 8a03872d-a84e-44c7-b857-523e93a0f47e
+    source: Savannah_Anne_Kathleen_Phillips
+    type: :Person
+  AddTriple (1e64fcf5-8dda-47eb-9200-ae26a4a81ca1)
+ Call ID: 1e64fcf5-8dda-47eb-9200-ae26a4a81ca1
   Args:
-    source: :Johann_of_Oldenburg
-    relation: :isSonOf
-    target: :Helena_of_Waldeck_and_Pyrmont
-  AddTriple (ce8fbc59-22fc-4036-8e68-b094ba9f6c0a)
- Call ID: ce8fbc59-22fc-4036-8e68-b094ba9f6c0a
+    target: Peter_Phillips
+    source: Savannah_Anne_Kathleen_Phillips
+    relation: :hasFather
+  AddTriple (d7abf655-21d8-4f93-8af1-9bbb2f0af876)
+ Call ID: d7abf655-21d8-4f93-8af1-9bbb2f0af876
   Args:
-    relation: :hasSex
-    target: :Male
-    source: :Georg_von_Habsburg
-  AddTriple (97b6c040-f265-48a9-9599-bb103712652b)
- Call ID: 97b6c040-f265-48a9-9599-bb103712652b
+    relation: :hasMother
+    source: Savannah_Anne_Kathleen_Phillips
+    target: Autumn_Kelly
+  AssignClass (b0f9e6b3-c4a9-45c0-97b6-16e24316e1f7)
+ Call ID: b0f9e6b3-c4a9-45c0-97b6-16e24316e1f7
   Args:
-    relation: :hasSex
-    target: :Female
-    source: :Eilika_of_Oldenburg
-  AddTriple (bc4f96a1-4f47-49a7-a402-8b2dc850d40b)
- Call ID: bc4f96a1-4f47-49a7-a402-8b2dc850d40b
+    source: Isla_Elizabeth_Phillips
+    type: :Woman
+  AssignClass (a1e4ceef-0759-454f-a68a-03428f2f6756)
+ Call ID: a1e4ceef-0759-454f-a68a-03428f2f6756
   Args:
-    source: :Johann_of_Oldenburg
-    relation: :hasSex
-    target: :Male
-  AddTriple (9430ed0d-95c8-4122-8f9b-0d009456423e)
- Call ID: 9430ed0d-95c8-4122-8f9b-0d009456423e
+    source: Isla_Elizabeth_Phillips
+    type: :Person
+  AddTriple (55e55d58-ae83-47b5-a342-304478af489a)
+ Call ID: 55e55d58-ae83-47b5-a342-304478af489a
   Args:
-    source: :Ilka_of_Ortenburg
-    target: :Female
-    relation: :hasSex
-  AddTriple (845d0097-b1fd-46c1-90b0-807054049094)
- Call ID: 845d0097-b1fd-46c1-90b0-807054049094
+    source: Isla_Elizabeth_Phillips
+    relation: :hasFather
+    target: Peter_Phillips
+  AddTriple (1e39a079-fcb5-46a3-90a8-c0fd4ce979ab)
+ Call ID: 1e39a079-fcb5-46a3-90a8-c0fd4ce979ab
   Args:
-    relation: :hasSex
-    target: :Male
-    source: :Nikolaus_Hereditary_Grand_Duke_of_Oldenburg
-  AddTriple (5765f53a-42e0-489f-83e6-7367045b2f9c)
- Call ID: 5765f53a-42e0-489f-83e6-7367045b2f9c
+    source: Isla_Elizabeth_Phillips
+    relation: :hasMother
+    target: Autumn_Kelly
+  Finish (0da12cad-54dc-4091-b7cf-8aed2bb458fc)
+ Call ID: 0da12cad-54dc-4091-b7cf-8aed2bb458fc
   Args:
-    target: :Female
-    relation: :hasSex
-    source: :Helena_of_Waldeck_and_Pyrmont
-  Finish (768e3d6a-1ebe-4750-a944-b5b704c37a49)
- Call ID: 768e3d6a-1ebe-4750-a944-b5b704c37a49
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -601,37 +938,66 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Georg_von_Habsburg a :Man,
-          :Person ;
-      :hasBirthYear "1964"^^xsd:positiveInteger ;
-      :hasMarriageYear data:Eilika_of_Oldenburg,
-          "1997"^^xsd:positiveInteger ;
-      :hasSex data:Male .
-
-  data:Eilika_of_Oldenburg a :Person,
+  data:Heather_Tonkin a :Person,
           :Woman ;
-      :hasBirthYear "1972"^^xsd:positiveInteger ;
-      :hasSex data:Female ;
-      :isDaughterOf data:Ilka_of_Ortenburg,
-          data:Johann_of_Oldenburg .
+      :isMotherOf data:Felicity_Wade .
 
-  data:Helena_of_Waldeck_and_Pyrmont a :Person,
+  data:Isla_Elizabeth_Phillips a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasFather data:Peter_Phillips ;
+      :hasMother data:Autumn_Kelly .
 
-  data:Ilka_of_Ortenburg a :Person,
+  data:King_Charles_III a :Man,
+          :Person ;
+      :isBrotherOf data:Anne_Princess_Royal .
+
+  data:Prince_Philip_Duke_of_Edinburgh a :Man,
+          :Person ;
+      :isFatherOf data:Anne_Princess_Royal .
+
+  data:Queen_Elizabeth_II a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :isMotherOf data:Anne_Princess_Royal .
 
-  data:Johann_of_Oldenburg a :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :isSonOf data:Helena_of_Waldeck_and_Pyrmont,
-          data:Nikolaus_Hereditary_Grand_Duke_of_Oldenburg .
+  data:Sandy_Pflueger a :Person,
+          :Woman ;
+      :isMotherOf data:Stephanie_Phillips .
 
-  data:Nikolaus_Hereditary_Grand_Duke_of_Oldenburg a :Man,
+  data:Savannah_Anne_Kathleen_Phillips a :Person,
+          :Woman ;
+      :hasFather data:Peter_Phillips ;
+      :hasMother data:Autumn_Kelly .
+
+  data:Zara_Tindall a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Anne_Princess_Royal ;
+      :isSisterOf data:Peter_Phillips .
+
+  data:Felicity_Wade a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips .
+
+  data:Stephanie_Phillips a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips .
+
+  data:Autumn_Kelly a :Person,
+          :Woman .
+
+  data:Peter_Phillips a :Man,
           :Person ;
-      :hasSex data:Male .
+      :hasBirthYear "1977"^^xsd:positiveInteger ;
+      :hasFather data:Mark_Phillips ;
+      :hasMarriageYear "2008"^^xsd:positiveInteger ;
+      :hasMother data:Anne_Princess_Royal ;
+      :hasRelation data:Autumn_Kelly .
+
+  data:Mark_Phillips a :Man,
+          :Person .
+
+  data:Anne_Princess_Royal a :Person,
+          :Woman .
 
 
 
@@ -643,494 +1009,286 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (b40b3432-dd2a-4106-8271-38ec73fb5f52)
- Call ID: b40b3432-dd2a-4106-8271-38ec73fb5f52
+  ValidateShacl (0d0c4e02-6e1d-4981-b7af-a5aaeed467f5)
+ Call ID: 0d0c4e02-6e1d-4981-b7af-a5aaeed467f5
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:60
+Total violations:34
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Johann_of_Oldenburg' is missing the required class ':Sex'.
+      The node Mark_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolaus_Hereditary_Grand_Duke_of_Oldenburg' is missing the required class ':Sex'.
+      The node Anne_Princess_Royal is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Anne_Princess_Royal, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Georg_von_Habsburg' is missing the required class ':Sex'.
+      The node Mark_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Nikolaus_Hereditary_Grand_Duke_of_Oldenburg', used as a value for 'isSonOf' on 'Johann_of_Oldenburg', is missing the required class ':Ancestor'.
+      The node Peter_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Nikolaus_Hereditary_Grand_Duke_of_Oldenburg', class=':Ancestor')
+      AssignClass(Peter_Phillips, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Helena_of_Waldeck_and_Pyrmont', used as a value for 'isSonOf' on 'Johann_of_Oldenburg', is missing the required class ':Ancestor'.
+      The node Mark_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Helena_of_Waldeck_and_Pyrmont', class=':Ancestor')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Johann_of_Oldenburg' is missing the required class ':Sex'.
+      The node Peter_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Peter_Phillips, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolaus_Hereditary_Grand_Duke_of_Oldenburg' is missing the required class ':Sex'.
+      The node Mark_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Georg_von_Habsburg' is missing the required class ':Sex'.
+      The node Mark_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Ilka_of_Ortenburg' is missing the required class ':Sex'.
+      The node Autumn_Kelly is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Autumn_Kelly, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolaus_Hereditary_Grand_Duke_of_Oldenburg' is missing the required class ':Sex'.
+      The node Anne_Princess_Royal is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Anne_Princess_Royal, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Georg_von_Habsburg' is missing the required class ':Sex'.
+      The node Autumn_Kelly is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Autumn_Kelly, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Johann_of_Oldenburg' is missing the required class ':Sex'.
+      The node Anne_Princess_Royal is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Anne_Princess_Royal, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Eilika_of_Oldenburg' is missing the required class ':Sex'.
+      The node Mark_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Helena_of_Waldeck_and_Pyrmont' is missing the required class ':Sex'.
+      The node Peter_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Peter_Phillips, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Nikolaus_Hereditary_Grand_Duke_of_Oldenburg', used as a value for 'isSonOf' on 'Johann_of_Oldenburg', is missing the required class ':Ancestor'.
+      The node Mark_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Nikolaus_Hereditary_Grand_Duke_of_Oldenburg', class=':Ancestor')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Helena_of_Waldeck_and_Pyrmont', used as a value for 'isSonOf' on 'Johann_of_Oldenburg', is missing the required class ':Ancestor'.
+      The node Peter_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Helena_of_Waldeck_and_Pyrmont', class=':Ancestor')
+      AssignClass(Peter_Phillips, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Ilka_of_Ortenburg' is missing the required class ':Sex'.
+      The node Mark_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolaus_Hereditary_Grand_Duke_of_Oldenburg' is missing the required class ':Sex'.
+      The node Mark_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Georg_von_Habsburg' is missing the required class ':Sex'.
+      The node Autumn_Kelly is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Autumn_Kelly, :Ancestor)
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Johann_of_Oldenburg' is missing the required class ':Sex'.
+      The node Anne_Princess_Royal is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Anne_Princess_Royal, :Ancestor)
 
 
   Violation [21]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Eilika_of_Oldenburg' is missing the required class ':Sex'.
+      The node Autumn_Kelly is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Autumn_Kelly, :Ancestor)
 
 
   Violation [22]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Helena_of_Waldeck_and_Pyrmont' is missing the required class ':Sex'.
+      The node Anne_Princess_Royal is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Anne_Princess_Royal, :Ancestor)
 
 
   Violation [23]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Ilka_of_Ortenburg' is missing the required class ':Sex'.
+      The node Mark_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [24]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolaus_Hereditary_Grand_Duke_of_Oldenburg' is missing the required class ':Sex'.
+      The node Peter_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Peter_Phillips, :Ancestor)
 
 
   Violation [25]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Georg_von_Habsburg' is missing the required class ':Sex'.
+      The node Mark_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [26]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Johann_of_Oldenburg' is missing the required class ':Sex'.
+      The node Peter_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Peter_Phillips, :Ancestor)
 
 
   Violation [27]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Eilika_of_Oldenburg' is missing the required class ':Sex'.
+      The node Mark_Phillips is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [28]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Helena_of_Waldeck_and_Pyrmont' is missing the required class ':Sex'.
+      The node Autumn_Kelly is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Autumn_Kelly, :Ancestor)
 
 
   Violation [29]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Ilka_of_Ortenburg', used as a value for 'isDaughterOf' on 'Eilika_of_Oldenburg', is missing the required class ':Ancestor'.
+      The node Anne_Princess_Royal is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ilka_of_Ortenburg', class=':Ancestor')
+      AssignClass(Anne_Princess_Royal, :Ancestor)
 
 
   Violation [30]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Johann_of_Oldenburg', used as a value for 'isDaughterOf' on 'Eilika_of_Oldenburg', is missing the required class ':Ancestor'.
+      The node Autumn_Kelly is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Johann_of_Oldenburg', class=':Ancestor')
+      AssignClass(Autumn_Kelly, :Ancestor)
 
 
   Violation [31]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Ilka_of_Ortenburg' is missing the required class ':Sex'.
+      The node Prince_Philip_Duke_of_Edinburgh is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Prince_Philip_Duke_of_Edinburgh, :Ancestor)
 
 
   Violation [32]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolaus_Hereditary_Grand_Duke_of_Oldenburg' is missing the required class ':Sex'.
+      The node Queen_Elizabeth_II is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Queen_Elizabeth_II, :Ancestor)
 
 
   Violation [33]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Georg_von_Habsburg' is missing the required class ':Sex'.
+      The node Sandy_Pflueger is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Sandy_Pflueger, :Ancestor)
 
 
   Violation [34]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Johann_of_Oldenburg' is missing the required class ':Sex'.
+      The node Heather_Tonkin is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Eilika_of_Oldenburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Helena_of_Waldeck_and_Pyrmont' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Nikolaus_Hereditary_Grand_Duke_of_Oldenburg', used as a value for 'isSonOf' on 'Johann_of_Oldenburg', is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Nikolaus_Hereditary_Grand_Duke_of_Oldenburg', class=':Ancestor')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Helena_of_Waldeck_and_Pyrmont', used as a value for 'isSonOf' on 'Johann_of_Oldenburg', is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Helena_of_Waldeck_and_Pyrmont', class=':Ancestor')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Ilka_of_Ortenburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolaus_Hereditary_Grand_Duke_of_Oldenburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Georg_von_Habsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Johann_of_Oldenburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Eilika_of_Oldenburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Helena_of_Waldeck_and_Pyrmont' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Ilka_of_Ortenburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Nikolaus_Hereditary_Grand_Duke_of_Oldenburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Georg_von_Habsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Johann_of_Oldenburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Eilika_of_Oldenburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Helena_of_Waldeck_and_Pyrmont' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Ilka_of_Ortenburg', used as a value for 'isDaughterOf' on 'Eilika_of_Oldenburg', is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ilka_of_Ortenburg', class=':Ancestor')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Johann_of_Oldenburg', used as a value for 'isDaughterOf' on 'Eilika_of_Oldenburg', is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Johann_of_Oldenburg', class=':Ancestor')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Ilka_of_Ortenburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Eilika_of_Oldenburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Helena_of_Waldeck_and_Pyrmont' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Ilka_of_Ortenburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Eilika_of_Oldenburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Helena_of_Waldeck_and_Pyrmont' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Ilka_of_Ortenburg', used as a value for 'isDaughterOf' on 'Eilika_of_Oldenburg', is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ilka_of_Ortenburg', class=':Ancestor')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Johann_of_Oldenburg', used as a value for 'isDaughterOf' on 'Eilika_of_Oldenburg', is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Johann_of_Oldenburg', class=':Ancestor')
+      AssignClass(Heather_Tonkin, :Ancestor)
 
 
 
@@ -1139,39 +1297,57 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (0cff8513-9927-4e0a-87b7-84b10ae3fda8)
- Call ID: 0cff8513-9927-4e0a-87b7-84b10ae3fda8
+  AssignClass (bdb861a5-3f3b-4343-a80b-2d325234af2c)
+ Call ID: bdb861a5-3f3b-4343-a80b-2d325234af2c
   Args:
-    source: :Male
-    type: :Sex
-  AssignClass (1e7a7d20-0e17-4531-8bdf-6eb54ef60885)
- Call ID: 1e7a7d20-0e17-4531-8bdf-6eb54ef60885
-  Args:
-    type: :Sex
-    source: :Female
-  AssignClass (ff4f4e82-c04b-4392-9d50-f28b64abaaab)
- Call ID: ff4f4e82-c04b-4392-9d50-f28b64abaaab
-  Args:
-    source: :Nikolaus_Hereditary_Grand_Duke_of_Oldenburg
+    source: Mark_Phillips
     type: :Ancestor
-  AssignClass (4aff0e36-56a2-43af-8b70-739ddf8db0a2)
- Call ID: 4aff0e36-56a2-43af-8b70-739ddf8db0a2
+  AssignClass (ce083853-066a-4410-a8fe-a7e3003b00f1)
+ Call ID: ce083853-066a-4410-a8fe-a7e3003b00f1
   Args:
+    source: Anne_Princess_Royal
     type: :Ancestor
-    source: :Helena_of_Waldeck_and_Pyrmont
-  AssignClass (9f1aee1f-2ae0-4a53-9eaf-3e1e1bab9f55)
- Call ID: 9f1aee1f-2ae0-4a53-9eaf-3e1e1bab9f55
+  AssignClass (28530dee-cfcb-4d35-831d-a4f49cd44f15)
+ Call ID: 28530dee-cfcb-4d35-831d-a4f49cd44f15
   Args:
-    source: :Ilka_of_Ortenburg
+    source: Peter_Phillips
     type: :Ancestor
-  AssignClass (8e116f9e-1944-46f5-b5d7-4c0a5c781612)
- Call ID: 8e116f9e-1944-46f5-b5d7-4c0a5c781612
+  AssignClass (bdaab2fe-967c-47c2-a1c6-36cbd7f640fc)
+ Call ID: bdaab2fe-967c-47c2-a1c6-36cbd7f640fc
   Args:
+    source: Autumn_Kelly
     type: :Ancestor
-    source: :Johann_of_Oldenburg
-  ValidateShacl (791c106a-cc30-4d44-812c-a61e471cf980)
- Call ID: 791c106a-cc30-4d44-812c-a61e471cf980
+  AssignClass (ad669521-baa5-4189-a5d8-0872cb15b74d)
+ Call ID: ad669521-baa5-4189-a5d8-0872cb15b74d
   Args:
+    source: Prince_Philip_Duke_of_Edinburgh
+    type: :Ancestor
+  AssignClass (9ed42c19-3ac9-4c25-9e2c-2dbdc1fa556f)
+ Call ID: 9ed42c19-3ac9-4c25-9e2c-2dbdc1fa556f
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Ancestor
+  AssignClass (9fdd80a2-589a-4eac-82f1-0e255648021d)
+ Call ID: 9fdd80a2-589a-4eac-82f1-0e255648021d
+  Args:
+    source: Sandy_Pflueger
+    type: :Ancestor
+  AssignClass (433fd381-b6fd-4d1b-811d-62071b009c20)
+ Call ID: 433fd381-b6fd-4d1b-811d-62071b009c20
+  Args:
+    source: Heather_Tonkin
+    type: :Ancestor
+  ValidateShacl (a4e4a45c-62d4-49e4-aaa0-3dbf7dcb869c)
+ Call ID: a4e4a45c-62d4-49e4-aaa0-3dbf7dcb869c
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1200,45 +1376,74 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Georg_von_Habsburg a :Man,
-          :Person ;
-      :hasBirthYear "1964"^^xsd:positiveInteger ;
-      :hasMarriageYear data:Eilika_of_Oldenburg,
-          "1997"^^xsd:positiveInteger ;
-      :hasSex data:Male .
-
-  data:Eilika_of_Oldenburg a :Person,
-          :Woman ;
-      :hasBirthYear "1972"^^xsd:positiveInteger ;
-      :hasSex data:Female ;
-      :isDaughterOf data:Ilka_of_Ortenburg,
-          data:Johann_of_Oldenburg .
-
-  data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
+  data:Heather_Tonkin a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex data:Female .
+      :isMotherOf data:Felicity_Wade .
 
-  data:Ilka_of_Ortenburg a :Ancestor,
+  data:Isla_Elizabeth_Phillips a :Person,
+          :Woman ;
+      :hasFather data:Peter_Phillips ;
+      :hasMother data:Autumn_Kelly .
+
+  data:King_Charles_III a :Man,
+          :Person ;
+      :isBrotherOf data:Anne_Princess_Royal .
+
+  data:Prince_Philip_Duke_of_Edinburgh a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Anne_Princess_Royal .
+
+  data:Queen_Elizabeth_II a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex data:Female .
+      :isMotherOf data:Anne_Princess_Royal .
 
-  data:Johann_of_Oldenburg a :Ancestor,
+  data:Sandy_Pflueger a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Stephanie_Phillips .
+
+  data:Savannah_Anne_Kathleen_Phillips a :Person,
+          :Woman ;
+      :hasFather data:Peter_Phillips ;
+      :hasMother data:Autumn_Kelly .
+
+  data:Zara_Tindall a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Anne_Princess_Royal ;
+      :isSisterOf data:Peter_Phillips .
+
+  data:Felicity_Wade a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips .
+
+  data:Stephanie_Phillips a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips .
+
+  data:Autumn_Kelly a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Peter_Phillips a :Ancestor,
           :Man,
           :Person ;
-      :hasSex data:Male ;
-      :isSonOf data:Helena_of_Waldeck_and_Pyrmont,
-          data:Nikolaus_Hereditary_Grand_Duke_of_Oldenburg .
+      :hasBirthYear "1977"^^xsd:positiveInteger ;
+      :hasFather data:Mark_Phillips ;
+      :hasMarriageYear "2008"^^xsd:positiveInteger ;
+      :hasMother data:Anne_Princess_Royal ;
+      :hasRelation data:Autumn_Kelly .
 
-  data:Nikolaus_Hereditary_Grand_Duke_of_Oldenburg a :Ancestor,
+  data:Mark_Phillips a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
-  data:Female a :Sex .
-
-  data:Male a :Sex .
+  data:Anne_Princess_Royal a :Ancestor,
+          :Person,
+          :Woman .
 
 
 
@@ -1250,6 +1455,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (d12a30a0-d4e0-491a-855c-c039345a884d)
- Call ID: d12a30a0-d4e0-491a-855c-c039345a884d
+  Finish (e9879d6d-5ac9-48de-a51e-dbe85854d354)
+ Call ID: e9879d6d-5ac9-48de-a51e-dbe85854d354
   Args:

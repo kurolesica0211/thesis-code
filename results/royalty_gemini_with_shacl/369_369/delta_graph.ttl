@@ -2,44 +2,74 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Duke_John_Albert_of_Mecklenburg a :Man,
+data:Charlotte a :Person,
+        :Woman .
+
+data:Christoph a :Man,
         :Person ;
-    :hasBirthYear 1857 ;
-    :hasDeathYear 1920 ;
-    :hasFather data:Frederick_Francis_II ;
-    :hasMarriageYear 1886,
-        1909 ;
-    :hasMother data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
-    :hasSex data:Male ;
-    :isBrotherOf data:Duke_Adolf_Friedrich,
-        data:Duke_Paul_Frederick,
-        data:Frederick_Francis_III .
+    :isSonOf data:MargaretOfPrussia .
 
-data:Frederick_Francis_IV a :Man,
-        :Person .
+data:FrederickCharlesOfHesse a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang .
 
-data:Princess_Elisabeth_Sybille_of_Saxe-Weimar-Eisenach a :Person,
-        :Woman .
-
-data:Princess_Elisabeth_of_Stolberg-Rossla a :Person,
-        :Woman .
-
-data:Duke_Adolf_Friedrich a :Man,
-        :Person .
-
-data:Duke_Paul_Frederick a :Man,
-        :Person .
-
-data:Frederick_Francis_II a :Ancestor,
+data:FrederickIII a :Ancestor,
         :Man,
         :Person .
 
-data:Frederick_Francis_III a :Man,
+data:FriedrichWilhelm a :Man,
+        :Person ;
+    :isSonOf data:MargaretOfPrussia .
+
+data:Henry a :Man,
         :Person .
 
-data:Male a :Sex .
+data:Maximilian a :Man,
+        :Person ;
+    :isSonOf data:MargaretOfPrussia .
 
-data:Princess_Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
+data:Philipp a :Man,
+        :Person ;
+    :isSonOf data:MargaretOfPrussia .
+
+data:QueenVictoria a :Ancestor,
         :Person,
         :Woman .
+
+data:Sophie a :Person,
+        :Woman .
+
+data:VictoriaPrincessRoyal a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Viktoria a :Person,
+        :Woman .
+
+data:WilhelmII a :Man,
+        :Person .
+
+data:Wolfgang a :Man,
+        :Person ;
+    :isSonOf data:MargaretOfPrussia .
+
+data:MargaretOfPrussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:QueenVictoria ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1954 ;
+    :hasFather data:FrederickIII ;
+    :hasMother data:VictoriaPrincessRoyal ;
+    :hasRelation data:FrederickCharlesOfHesse ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII .
 

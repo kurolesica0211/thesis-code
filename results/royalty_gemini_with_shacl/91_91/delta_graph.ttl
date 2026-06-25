@@ -3,21 +3,21 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 data:Princess_Alexandra a :Woman ;
-    :hasBirthYear 1936 ;
-    :hasBrother data:Prince_Edward_Duke_of_Kent ;
-    :hasFather data:Prince_George_Duke_of_Kent ;
-    :hasMarriageYear 1963 ;
+    :hasBirthYear "1936"^^xsd:positiveInteger ;
+    :hasBrother data:Prince_Edward ;
+    :hasFather data:Prince_George%2C_Duke_of_Kent ;
+    :hasMarriageYear "1963"^^xsd:positiveInteger ;
     :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
     :hasRelation data:Sir_Angus_Ogilvy .
+
+data:George_V a :Ancestor,
+        :Man .
 
 data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
         :Woman .
 
-data:King_George_V a :Ancestor,
-        :Man .
-
-data:Prince_Edward_Duke_of_Kent a :Man ;
-    :hasFather data:Prince_George_Duke_of_Kent ;
+data:Prince_Edward a :Man ;
+    :hasFather data:Prince_George%2C_Duke_of_Kent ;
     :hasMother data:Princess_Marina_of_Greece_and_Denmark .
 
 data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
@@ -27,11 +27,11 @@ data:Queen_Mary a :Ancestor,
         :Woman .
 
 data:Sir_Angus_Ogilvy a :Man ;
-    :hasDeathYear 2004 .
+    :hasDeathYear "2004"^^xsd:positiveInteger .
 
-data:Prince_George_Duke_of_Kent a :Ancestor,
+data:Prince_George%2C_Duke_of_Kent a :Ancestor,
         :Man ;
-    :hasFather data:King_George_V ;
+    :hasFather data:George_V ;
     :hasMother data:Queen_Mary .
 
 data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,

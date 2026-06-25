@@ -85,18 +85,41 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Tatiana von Preussen (born 16 October 1980) is an architect who worked on the construction of the  High Line, an elevated linear park, greenway and rail trail in New York.
-In 2009 Tatiana von Preussen, Catherine Pease and Jessica Reynolds set up vPPR Architects.
-Personal life
+Prince Amedeo of Savoy-Aosta, 5th Duke of Aosta (Amedeo Umberto Costantino Giorgio
+Early life
 
-Tatiana von Preussen is the daughter of Prince Andreas of Prussia and Alexandra Blahova, and granddaughter of Prince Frederick of Prussia and Lady Brigid Guinness; on 28 June 2014 she married writer and journalist Philip Womack, and lives in London.
-They have one son, Arthur Frederick Richard Womack von Preussen (born 21 November 2015) and twin girls, Xenia Alexandra Selena Womack von Preussen and Amalia Maria Brigid Womack von Preussen (born 29 August 2020).
+Amedeo was born at Villa della Cisterna in Florence, the only child of Prince Aimone, Duke of Aosta, formerly designated king of Croatia as Tomislav II, and of Princess Irene of Greece and Denmark through whom he was a great-great-grandson of Queen Victoria.
+When Amedeo was only four years old, his father died in exile in Buenos Aires, and he succeeded him as Duke of Aosta, Prince della Cisterna e Belriguardo, Marchese di Voghera, and Count di Ponderano.
+He was an Honorary Companion of the Pennsylvania Commandery of the Military Order of the Loyal Legion of the United States, assigned insignia number 21015, as a great-grandson of Prince Philippe, Count of Paris.
+Marriages and family
+
+1st marriage and descendants
+
+On 22 July 1964, at the Igreja Paroquial De São Pedro in Sintra, Portugal, Amedeo married his second cousin, Princess Claude of Orléans (born 11 December 1943).
+She was the ninth child and fifth daughter of Henri, comte de Paris, Orléanist claimant to the French throne, and of Princess Isabelle of Orléans-Braganza.
+He was involved in various agricultural activities, including the production of wine marketed under the name Vini Savoia Aosta.
+Dynastic activities
+
+Amedeo was long viewed by Italian royalists as a likely claimant to the throne if Umberto's own son, Vittorio Emanuele, Prince of Naples, failed to live up to monarchist expectations.
+On 7 July 2006, Amedeo declared himself to be the Head of the House of Savoy and Duke of Savoy, claiming that in 1971, Vittorio Emanuele had lost his dynastic rights when he married without previously obtaining the permission of Umberto II, authorization which had been required under monarchical law.
+In 2009, Vittorio Emanuele and his son, Emanuele Filiberto, Prince of Venice, sought judicial intervention to forbid Amedeo's use of the surname di Savoia.
+In February 2010, the court of Arezzo ruled that the Amedeo and his son Aimone must pay damages totalling 50,000 euros to their cousins and cease using the surname di Savoia instead of di Savoia-Aosta.
+Amedeo's claim received the support of Vittorio Emanuele's sister, Princess Maria Gabriella of Savoy.
+Although many monarchists transferred their allegiance to Amedeo at some point after King Umberto's death, Amedeo was criticised by other Italian royalists who continue to support Prince Vittorio Emanuele.
+But others, including constitutional jurist Guido Locatello, declared the marriage of Vittorio Emanuele to be in violation of Savoy dynastic law years before the scandal evoked any clamour for Amedeo to replace him.
+The Unione Monarchica Italiana published in its newsletter, Monarchia Nuova, on 12 February 1987 that the Prince of Naples' marriage to Marina Doria violated the decree of Victor Amadeus III, issued 13 September 1780, regulating the marriages of princes of the blood royal, compelling the Unione to recognise Amedeo as rightful head of the royal house—although at that time Aosta had put forth no public dynastic claim.
+Amedeo was a Knight of the Supreme Order of the Most Holy Annunciation named by Umberto II, a Grand Cross of the Order of Saints Maurice and Lazarus named by his cousin Vittorio Emanuele, and a Knight of Honor and Devotion of the Sovereign Military Order of St. John of Jerusalem.
+Death
+
+Prince Amedeo died on 1 June 2021, at the age of 77, in Arezzo, Italy, from cardiac arrest after undergoing surgery on 27 May.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -112,39 +135,9 @@ They have one son, Arthur Frederick Richard Womack von Preussen (born 21 Novembe
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -159,6 +152,23 @@ They have one son, Arthur Frederick Richard Womack von Preussen (born 21 Novembe
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -176,6 +186,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -243,29 +268,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -274,6 +291,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -286,6 +311,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -294,17 +321,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -332,6 +361,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -347,208 +460,179 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9c6a5af4-8744-4433-957b-f9ab696421bc)
- Call ID: 9c6a5af4-8744-4433-957b-f9ab696421bc
+  AssignClass (b23d58ac-729c-4fca-b9cb-59fff4740ae2)
+ Call ID: b23d58ac-729c-4fca-b9cb-59fff4740ae2
+  Args:
+    source: Amedeo_of_Savoy-Aosta
+    type: :Man
+  AssignClass (c03551e6-c48f-4fc4-a0f4-b4a031d851bb)
+ Call ID: c03551e6-c48f-4fc4-a0f4-b4a031d851bb
+  Args:
+    source: Amedeo_of_Savoy-Aosta
+    type: :Person
+  AssignClass (50e8507d-2fcc-4d99-ad1f-9089bec5219e)
+ Call ID: 50e8507d-2fcc-4d99-ad1f-9089bec5219e
+  Args:
+    source: Aimone_Duke_of_Aosta
+    type: :Man
+  AssignClass (3f39e06e-7f9c-4d2e-b109-07f38004d1f4)
+ Call ID: 3f39e06e-7f9c-4d2e-b109-07f38004d1f4
   Args:
     type: :Person
-    source: Tatiana von Preussen
-  AssignClass (05ec3518-38a5-4cc2-ba28-1c09f23ad847)
- Call ID: 05ec3518-38a5-4cc2-ba28-1c09f23ad847
+    source: Aimone_Duke_of_Aosta
+  AssignClass (a61a2944-29f7-487c-981a-50e19af543f1)
+ Call ID: a61a2944-29f7-487c-981a-50e19af543f1
   Args:
     type: :Woman
-    source: Tatiana von Preussen
-  AddLiteral (f2bcc78d-b2fa-4033-be88-c068a0ae0808)
- Call ID: f2bcc78d-b2fa-4033-be88-c068a0ae0808
+    source: Irene_of_Greece_and_Denmark
+  AssignClass (7e17d740-af26-43bd-8086-7826c4625a76)
+ Call ID: 7e17d740-af26-43bd-8086-7826c4625a76
   Args:
-    relation: :hasBirthYear
-    source: Tatiana von Preussen
-    literal_value: 1980
+    type: :Person
+    source: Irene_of_Greece_and_Denmark
+  AssignClass (490fcc71-083c-4dc0-9c04-cd2d8c5678cd)
+ Call ID: 490fcc71-083c-4dc0-9c04-cd2d8c5678cd
+  Args:
+    source: Claude_of_Orleans
+    type: :Woman
+  AssignClass (52c6a984-4183-465d-9c4d-08f8bb2f0afd)
+ Call ID: 52c6a984-4183-465d-9c4d-08f8bb2f0afd
+  Args:
+    type: :Person
+    source: Claude_of_Orleans
+  AssignClass (323f66fa-7e75-462b-8769-a9a84fd01ba2)
+ Call ID: 323f66fa-7e75-462b-8769-a9a84fd01ba2
+  Args:
+    type: :Man
+    source: Henri_comte_de_Paris
+  AssignClass (75911cf1-c00b-4bf0-8df4-53ac6e892cc2)
+ Call ID: 75911cf1-c00b-4bf0-8df4-53ac6e892cc2
+  Args:
+    source: Henri_comte_de_Paris
+    type: :Person
+  AssignClass (26a3aca6-7422-4fb2-b5b2-000d802d75a3)
+ Call ID: 26a3aca6-7422-4fb2-b5b2-000d802d75a3
+  Args:
+    source: Isabelle_of_Orleans-Braganza
+    type: :Woman
+  AssignClass (24beeb5e-8d57-4272-b412-0ccc01d63d6d)
+ Call ID: 24beeb5e-8d57-4272-b412-0ccc01d63d6d
+  Args:
+    type: :Person
+    source: Isabelle_of_Orleans-Braganza
+  AssignClass (58547adb-3e1f-4d0b-b631-518676b8dcba)
+ Call ID: 58547adb-3e1f-4d0b-b631-518676b8dcba
+  Args:
+    type: :Man
+    source: Vittorio_Emanuele_Prince_of_Naples
+  AssignClass (afee4238-e78f-4bff-9792-0147d204f666)
+ Call ID: afee4238-e78f-4bff-9792-0147d204f666
+  Args:
+    type: :Person
+    source: Vittorio_Emanuele_Prince_of_Naples
+  AssignClass (6147e76b-44d8-434c-9c49-1941caf5129a)
+ Call ID: 6147e76b-44d8-434c-9c49-1941caf5129a
+  Args:
+    source: Umberto_II
+    type: :Man
+  AssignClass (24ebac21-2722-49ef-8b23-4cb522a07169)
+ Call ID: 24ebac21-2722-49ef-8b23-4cb522a07169
+  Args:
+    type: :Person
+    source: Umberto_II
+  AssignClass (dce68fbf-f29a-429f-aa98-3bc26d9825ea)
+ Call ID: dce68fbf-f29a-429f-aa98-3bc26d9825ea
+  Args:
+    type: :Man
+    source: Emanuele_Filiberto_Prince_of_Venice
+  AssignClass (a0bed102-cb55-4e60-892c-81a030e62a24)
+ Call ID: a0bed102-cb55-4e60-892c-81a030e62a24
+  Args:
+    source: Emanuele_Filiberto_Prince_of_Venice
+    type: :Person
+  AssignClass (a2c2d4b2-9287-4e19-9a4b-9617fe01b27a)
+ Call ID: a2c2d4b2-9287-4e19-9a4b-9617fe01b27a
+  Args:
+    type: :Man
+    source: Aimone_son_of_Amedeo
+  AssignClass (45211aa9-b306-4cc3-9925-24d4c43100cb)
+ Call ID: 45211aa9-b306-4cc3-9925-24d4c43100cb
+  Args:
+    source: Aimone_son_of_Amedeo
+    type: :Person
+  AssignClass (b725b30e-f699-43bb-b70c-099d97d8b990)
+ Call ID: b725b30e-f699-43bb-b70c-099d97d8b990
+  Args:
+    type: :Woman
+    source: Maria_Gabriella_of_Savoy
+  AssignClass (5c3eee46-c7e1-4bd0-8ab3-63a85931d42a)
+ Call ID: 5c3eee46-c7e1-4bd0-8ab3-63a85931d42a
+  Args:
+    source: Maria_Gabriella_of_Savoy
+    type: :Person
+  AddTriple (adf960fb-c206-4515-980d-42496cde89fb)
+ Call ID: adf960fb-c206-4515-980d-42496cde89fb
+  Args:
+    relation: :hasFather
+    source: Amedeo_of_Savoy-Aosta
+    target: Aimone_Duke_of_Aosta
+  AddTriple (815d23bc-2ed7-4c88-93a3-0df8c75ead78)
+ Call ID: 815d23bc-2ed7-4c88-93a3-0df8c75ead78
+  Args:
+    target: Irene_of_Greece_and_Denmark
+    source: Amedeo_of_Savoy-Aosta
+    relation: :hasMother
+  AddTriple (af4fd326-4f17-44a2-82de-a64660d8ac1d)
+ Call ID: af4fd326-4f17-44a2-82de-a64660d8ac1d
+  Args:
+    relation: :hasFather
+    source: Claude_of_Orleans
+    target: Henri_comte_de_Paris
+  AddTriple (3832d288-0618-459b-bc8e-3655054ca5cc)
+ Call ID: 3832d288-0618-459b-bc8e-3655054ca5cc
+  Args:
+    relation: :hasMother
+    target: Isabelle_of_Orleans-Braganza
+    source: Claude_of_Orleans
+  AddTriple (d1da13d5-1129-45f5-a48e-0e05db2232d7)
+ Call ID: d1da13d5-1129-45f5-a48e-0e05db2232d7
+  Args:
+    target: Vittorio_Emanuele_Prince_of_Naples
+    source: Emanuele_Filiberto_Prince_of_Venice
+    relation: :hasFather
+  AddTriple (151e037f-345b-42a1-aef1-b7778c9ea320)
+ Call ID: 151e037f-345b-42a1-aef1-b7778c9ea320
+  Args:
+    target: Amedeo_of_Savoy-Aosta
+    source: Aimone_son_of_Amedeo
+    relation: :hasFather
+  AddTriple (5bb9bdd1-eb2b-46af-8d52-59196efb0a9f)
+ Call ID: 5bb9bdd1-eb2b-46af-8d52-59196efb0a9f
+  Args:
+    source: Vittorio_Emanuele_Prince_of_Naples
+    target: Maria_Gabriella_of_Savoy
+    relation: :hasSister
+  AddLiteral (5dfcda73-e1fd-49fb-a494-9fdc59d304ad)
+ Call ID: 5dfcda73-e1fd-49fb-a494-9fdc59d304ad
+  Args:
+    literal_value: 2021
+    source: Amedeo_of_Savoy-Aosta
     literal_type: xsd:integer
-  AssignClass (2287d649-f2c7-4d76-b4c7-7398d532156e)
- Call ID: 2287d649-f2c7-4d76-b4c7-7398d532156e
-  Args:
-    type: :Person
-    source: Prince Andreas of Prussia
-  AssignClass (577a5fbb-f161-4ac0-8fca-c2a131168dc2)
- Call ID: 577a5fbb-f161-4ac0-8fca-c2a131168dc2
-  Args:
-    type: :Man
-    source: Prince Andreas of Prussia
-  AssignClass (3e4de71d-f788-4ebc-9b0e-654c66430fbe)
- Call ID: 3e4de71d-f788-4ebc-9b0e-654c66430fbe
-  Args:
-    type: :Person
-    source: Alexandra Blahova
-  AssignClass (13ebd2a7-6ba1-41c9-9ad6-ac0c1427b328)
- Call ID: 13ebd2a7-6ba1-41c9-9ad6-ac0c1427b328
-  Args:
-    type: :Woman
-    source: Alexandra Blahova
-  AddTriple (86260706-1e47-4a99-bb41-30eb63b1b910)
- Call ID: 86260706-1e47-4a99-bb41-30eb63b1b910
-  Args:
-    source: Tatiana von Preussen
-    relation: :hasFather
-    target: Prince Andreas of Prussia
-  AddTriple (98d89d6d-82eb-4a11-a982-c244450102c5)
- Call ID: 98d89d6d-82eb-4a11-a982-c244450102c5
-  Args:
-    relation: :hasMother
-    target: Alexandra Blahova
-    source: Tatiana von Preussen
-  AssignClass (784b8414-078b-4d6e-b803-be3a06262d47)
- Call ID: 784b8414-078b-4d6e-b803-be3a06262d47
-  Args:
-    type: :Person
-    source: Prince Frederick of Prussia
-  AssignClass (3a239e96-13de-4ff3-b137-13ead98d582e)
- Call ID: 3a239e96-13de-4ff3-b137-13ead98d582e
-  Args:
-    type: :Man
-    source: Prince Frederick of Prussia
-  AssignClass (453a73fa-ea6d-41a8-a50c-af640c10ca5a)
- Call ID: 453a73fa-ea6d-41a8-a50c-af640c10ca5a
-  Args:
-    type: :Person
-    source: Lady Brigid Guinness
-  AssignClass (01925ee2-a1ab-42e2-967a-60dc6281dad7)
- Call ID: 01925ee2-a1ab-42e2-967a-60dc6281dad7
-  Args:
-    type: :Woman
-    source: Lady Brigid Guinness
-  AddTriple (04104b07-623d-45b2-93ef-4be5c798b3a5)
- Call ID: 04104b07-623d-45b2-93ef-4be5c798b3a5
-  Args:
-    source: Prince Andreas of Prussia
-    target: Prince Frederick of Prussia
-    relation: :hasFather
-  AddTriple (584c997e-1f9c-4e25-aee2-2842f7653c5c)
- Call ID: 584c997e-1f9c-4e25-aee2-2842f7653c5c
-  Args:
-    target: Lady Brigid Guinness
-    relation: :hasMother
-    source: Prince Andreas of Prussia
-  AssignClass (e70729fa-75b5-4656-b139-ca9b9cc0dd93)
- Call ID: e70729fa-75b5-4656-b139-ca9b9cc0dd93
-  Args:
-    type: :Person
-    source: Philip Womack
-  AssignClass (f54af590-28b9-481e-831b-9e7a18c3bbb7)
- Call ID: f54af590-28b9-481e-831b-9e7a18c3bbb7
-  Args:
-    type: :Man
-    source: Philip Womack
-  AddLiteral (29aca05b-52f4-422c-9d41-f35a12eda7ab)
- Call ID: 29aca05b-52f4-422c-9d41-f35a12eda7ab
+    relation: :hasDeathYear
+  AddLiteral (029102ad-e483-4870-9e1d-93866c03871b)
+ Call ID: 029102ad-e483-4870-9e1d-93866c03871b
   Args:
     relation: :hasMarriageYear
-    literal_value: 2014
-    source: Tatiana von Preussen
     literal_type: xsd:integer
-  AddTriple (ff4191d8-102e-4a50-ab10-68bc5804fe67)
- Call ID: ff4191d8-102e-4a50-ab10-68bc5804fe67
-  Args:
-    source: Tatiana von Preussen
-    relation: :hasRelation
-    target: Philip Womack
-  AssignClass (f12590ba-cd0b-4ed2-9244-c31e8c9bcea0)
- Call ID: f12590ba-cd0b-4ed2-9244-c31e8c9bcea0
-  Args:
-    type: :Person
-    source: Arthur Frederick Richard Womack von Preussen
-  AssignClass (cea95560-d52c-4033-9778-15aa21d7a3ac)
- Call ID: cea95560-d52c-4033-9778-15aa21d7a3ac
-  Args:
-    type: :Man
-    source: Arthur Frederick Richard Womack von Preussen
-  AddLiteral (bfe99ae1-8110-4c8e-a200-0bd537fb6200)
- Call ID: bfe99ae1-8110-4c8e-a200-0bd537fb6200
+    source: Amedeo_of_Savoy-Aosta
+    literal_value: 1964
+  AddLiteral (bb387f62-d246-455c-b7d4-eeefc2ec7854)
+ Call ID: bb387f62-d246-455c-b7d4-eeefc2ec7854
   Args:
     relation: :hasBirthYear
+    literal_value: 1943
+    source: Claude_of_Orleans
     literal_type: xsd:integer
-    literal_value: 2015
-    source: Arthur Frederick Richard Womack von Preussen
-  AddTriple (7a7d32d9-6b9a-49cc-a8cf-05fbc3677dd2)
- Call ID: 7a7d32d9-6b9a-49cc-a8cf-05fbc3677dd2
-  Args:
-    source: Arthur Frederick Richard Womack von Preussen
-    relation: :hasMother
-    target: Tatiana von Preussen
-  AddTriple (31bea036-2703-4aca-902d-7fb93b6d0385)
- Call ID: 31bea036-2703-4aca-902d-7fb93b6d0385
-  Args:
-    source: Arthur Frederick Richard Womack von Preussen
-    relation: :hasFather
-    target: Philip Womack
-  AssignClass (63188813-10e5-439d-bb53-b4e6c6a3a59d)
- Call ID: 63188813-10e5-439d-bb53-b4e6c6a3a59d
-  Args:
-    type: :Person
-    source: Xenia Alexandra Selena Womack von Preussen
-  AssignClass (10d1b40c-ec8a-4856-85fb-d085d107c6c4)
- Call ID: 10d1b40c-ec8a-4856-85fb-d085d107c6c4
-  Args:
-    type: :Woman
-    source: Xenia Alexandra Selena Womack von Preussen
-  AddLiteral (13d0b80f-44d5-4101-ba3e-30e84645895b)
- Call ID: 13d0b80f-44d5-4101-ba3e-30e84645895b
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 2020
-    source: Xenia Alexandra Selena Womack von Preussen
-  AddTriple (780c4c20-b32f-4210-927f-3ab9e74c3b79)
- Call ID: 780c4c20-b32f-4210-927f-3ab9e74c3b79
-  Args:
-    source: Xenia Alexandra Selena Womack von Preussen
-    relation: :hasMother
-    target: Tatiana von Preussen
-  AddTriple (4d90e05e-a0cb-43b8-b858-54ed1248086f)
- Call ID: 4d90e05e-a0cb-43b8-b858-54ed1248086f
-  Args:
-    source: Xenia Alexandra Selena Womack von Preussen
-    target: Philip Womack
-    relation: :hasFather
-  AssignClass (0916a326-8517-4ed2-bb0a-1b771ceb1166)
- Call ID: 0916a326-8517-4ed2-bb0a-1b771ceb1166
-  Args:
-    type: :Person
-    source: Amalia Maria Brigid Womack von Preussen
-  AssignClass (0ffd417c-2696-418b-9053-6d54fd119456)
- Call ID: 0ffd417c-2696-418b-9053-6d54fd119456
-  Args:
-    type: :Woman
-    source: Amalia Maria Brigid Womack von Preussen
-  AddLiteral (1ee697e7-ff2a-4fe5-892f-e0eedbcf9a28)
- Call ID: 1ee697e7-ff2a-4fe5-892f-e0eedbcf9a28
-  Args:
-    literal_type: xsd:integer
-    literal_value: 2020
-    source: Amalia Maria Brigid Womack von Preussen
-    relation: :hasBirthYear
-  AddTriple (ced55907-ae8b-4946-824c-64bc6d969d20)
- Call ID: ced55907-ae8b-4946-824c-64bc6d969d20
-  Args:
-    target: Tatiana von Preussen
-    relation: :hasMother
-    source: Amalia Maria Brigid Womack von Preussen
-  AddTriple (eab18973-6378-4f77-80b6-4fd9bed4cc06)
- Call ID: eab18973-6378-4f77-80b6-4fd9bed4cc06
-  Args:
-    relation: :hasFather
-    target: Philip Womack
-    source: Amalia Maria Brigid Womack von Preussen
-  Finish (66280dad-c04d-4577-ac3f-295820da3288)
- Call ID: 66280dad-c04d-4577-ac3f-295820da3288
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -681,50 +765,58 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Amalia_Maria_Brigid_Womack_von_Preussen a :Person,
-          :Woman ;
-      :hasBirthYear 2020 ;
-      :hasFather data:Philip_Womack ;
-      :hasMother data:Tatiana_von_Preussen .
-
-  data:Arthur_Frederick_Richard_Womack_von_Preussen a :Man,
+  data:Aimone_son_of_Amedeo a :Man,
           :Person ;
-      :hasBirthYear 2015 ;
-      :hasFather data:Philip_Womack ;
-      :hasMother data:Tatiana_von_Preussen .
+      :hasFather data:Amedeo_of_Savoy-Aosta .
 
-  data:Xenia_Alexandra_Selena_Womack_von_Preussen a :Person,
+  data:Claude_of_Orleans a :Person,
           :Woman ;
-      :hasBirthYear 2020 ;
-      :hasFather data:Philip_Womack ;
-      :hasMother data:Tatiana_von_Preussen .
+      :hasBirthYear 1943 ;
+      :hasFather data:Henri_comte_de_Paris ;
+      :hasMother data:Isabelle_of_Orleans-Braganza .
 
-  data:Alexandra_Blahova a :Person,
-          :Woman .
-
-  data:Lady_Brigid_Guinness a :Person,
-          :Woman .
-
-  data:Prince_Andreas_of_Prussia a :Man,
+  data:Emanuele_Filiberto_Prince_of_Venice a :Man,
           :Person ;
-      :hasFather data:Prince_Frederick_of_Prussia ;
-      :hasMother data:Lady_Brigid_Guinness .
+      :hasFather data:Vittorio_Emanuele_Prince_of_Naples .
 
-  data:Prince_Frederick_of_Prussia a :Man,
+  data:Umberto_II a :Man,
           :Person .
 
-  data:Tatiana_von_Preussen a :Person,
-          :Woman ;
-      :hasBirthYear 1980 ;
-      :hasFather data:Prince_Andreas_of_Prussia ;
-      :hasMarriageYear 2014 ;
-      :hasMother data:Alexandra_Blahova ;
-      :hasRelation data:Philip_Womack .
-
-  data:Philip_Womack a :Man,
+  data:Aimone_Duke_of_Aosta a :Man,
           :Person .
 
+  data:Amedeo_of_Savoy-Aosta a :Man,
+          :Person ;
+      :hasDeathYear 2021 ;
+      :hasFather data:Aimone_Duke_of_Aosta ;
+      :hasMarriageYear 1964 ;
+      :hasMother data:Irene_of_Greece_and_Denmark .
 
+  data:Henri_comte_de_Paris a :Man,
+          :Person .
+
+  data:Irene_of_Greece_and_Denmark a :Person,
+          :Woman .
+
+  data:Isabelle_of_Orleans-Braganza a :Person,
+          :Woman .
+
+  data:Maria_Gabriella_of_Savoy a :Person,
+          :Woman .
+
+  data:Vittorio_Emanuele_Prince_of_Naples a :Man,
+          :Person ;
+      :hasSister data:Maria_Gabriella_of_Savoy .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (6e4c5bb0-204e-4955-9b4a-6eefe581ec61)
+ Call ID: 6e4c5bb0-204e-4955-9b4a-6eefe581ec61
+  Args:
 
 ================================= Tool Message =================================
 
@@ -734,353 +826,9 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (e90d2e50-cd7b-4070-aba1-251479880669)
- Call ID: e90d2e50-cd7b-4070-aba1-251479880669
+  ValidateShacl (662b0fee-34ac-4703-ac33-c94815243d29)
+ Call ID: 662b0fee-34ac-4703-ac33-c94815243d29
   Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:30
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Philip_Womack is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Frederick_of_Prussia is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Frederick_of_Prussia, :Man)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Tatiana_von_Preussen is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Lady_Brigid_Guinness is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Brigid_Guinness, :Woman)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Andreas_of_Prussia is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Andreas_of_Prussia, :Man)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Philip_Womack is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Frederick_of_Prussia is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Frederick_of_Prussia, :Man)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Philip_Womack is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Philip_Womack is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Alexandra_Blahova is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_Blahova, :Woman)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Tatiana_von_Preussen is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Lady_Brigid_Guinness is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Brigid_Guinness, :Woman)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Tatiana_von_Preussen is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Tatiana_von_Preussen is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Andreas_of_Prussia is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Andreas_of_Prussia, :Man)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Philip_Womack is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Frederick_of_Prussia is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Frederick_of_Prussia, :Man)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Philip_Womack is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Philip_Womack is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Alexandra_Blahova is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_Blahova, :Woman)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Tatiana_von_Preussen is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Lady_Brigid_Guinness is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Brigid_Guinness, :Woman)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Tatiana_von_Preussen is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Tatiana_von_Preussen is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Philip_Womack is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Andreas_of_Prussia is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Andreas_of_Prussia, :Man)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Philip_Womack is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Tatiana_von_Preussen is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Alexandra_Blahova is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_Blahova, :Woman)
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Tatiana_von_Preussen is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (f61c8146-e9f7-40f0-b0c6-a9938acf14be)
- Call ID: f61c8146-e9f7-40f0-b0c6-a9938acf14be
-  Args:
-    type: :Ancestor
-    source: Prince Andreas of Prussia
-  AssignClass (f8523946-f5b1-4e54-b4ab-ce30ccad7283)
- Call ID: f8523946-f5b1-4e54-b4ab-ce30ccad7283
-  Args:
-    type: :Ancestor
-    source: Alexandra Blahova
-  AssignClass (ba348c75-3fb1-4906-a5ea-29f234202256)
- Call ID: ba348c75-3fb1-4906-a5ea-29f234202256
-  Args:
-    type: :Ancestor
-    source: Prince Frederick of Prussia
-  AssignClass (4ce65e36-036e-4f12-ab4c-3c2e29455645)
- Call ID: 4ce65e36-036e-4f12-ab4c-3c2e29455645
-  Args:
-    type: :Ancestor
-    source: Lady Brigid Guinness
-  ValidateShacl (3bed5a1a-7cd7-44e7-86ee-1b2105d92320)
- Call ID: 3bed5a1a-7cd7-44e7-86ee-1b2105d92320
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Amalia_Maria_Brigid_Womack_von_Preussen a :Person,
-          :Woman ;
-      :hasBirthYear 2020 ;
-      :hasFather data:Philip_Womack ;
-      :hasMother data:Tatiana_von_Preussen .
-
-  data:Arthur_Frederick_Richard_Womack_von_Preussen a :Man,
-          :Person ;
-      :hasBirthYear 2015 ;
-      :hasFather data:Philip_Womack ;
-      :hasMother data:Tatiana_von_Preussen .
-
-  data:Xenia_Alexandra_Selena_Womack_von_Preussen a :Person,
-          :Woman ;
-      :hasBirthYear 2020 ;
-      :hasFather data:Philip_Womack ;
-      :hasMother data:Tatiana_von_Preussen .
-
-  data:Alexandra_Blahova a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Lady_Brigid_Guinness a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_Andreas_of_Prussia a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Prince_Frederick_of_Prussia ;
-      :hasMother data:Lady_Brigid_Guinness .
-
-  data:Prince_Frederick_of_Prussia a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Tatiana_von_Preussen a :Person,
-          :Woman ;
-      :hasBirthYear 1980 ;
-      :hasFather data:Prince_Andreas_of_Prussia ;
-      :hasMarriageYear 2014 ;
-      :hasMother data:Alexandra_Blahova ;
-      :hasRelation data:Philip_Womack .
-
-  data:Philip_Womack a :Man,
-          :Person .
-
-
 
 ================================= Tool Message =================================
 
@@ -1091,145 +839,145 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Philip_Womack linked via hasFather is not classified as :Ancestor or :Man.
+      The person Amedeo_of_Savoy-Aosta is set as the father of Aimone_son_of_Amedeo, but Amedeo_of_Savoy-Aosta is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
+      AssignClass(node='Amedeo_of_Savoy-Aosta', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Tatiana_von_Preussen linked via hasMother is not classified as :Ancestor or :Woman.
+      The person Aimone_Duke_of_Aosta is set as the father of Amedeo_of_Savoy-Aosta, but Aimone_Duke_of_Aosta is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
+      AssignClass(node='Aimone_Duke_of_Aosta', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Philip_Womack linked via hasFather is not classified as :Ancestor or :Man.
+      The person Vittorio_Emanuele_Prince_of_Naples is set as the father of Emanuele_Filiberto_Prince_of_Venice, but Vittorio_Emanuele_Prince_of_Naples is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
+      AssignClass(node='Vittorio_Emanuele_Prince_of_Naples', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Philip_Womack linked via hasFather is not classified as :Ancestor or :Man.
+      The person Irene_of_Greece_and_Denmark is set as the mother of Amedeo_of_Savoy-Aosta, but Irene_of_Greece_and_Denmark is missing the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
+      AssignClass(node='Irene_of_Greece_and_Denmark', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Philip_Womack linked via hasFather is not classified as :Ancestor or :Man.
+      The person Amedeo_of_Savoy-Aosta is set as the father of Aimone_son_of_Amedeo, but Amedeo_of_Savoy-Aosta is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
+      AssignClass(node='Amedeo_of_Savoy-Aosta', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Tatiana_von_Preussen linked via hasMother is not classified as :Ancestor or :Woman.
+      The person Aimone_Duke_of_Aosta is set as the father of Amedeo_of_Savoy-Aosta, but Aimone_Duke_of_Aosta is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
+      AssignClass(node='Aimone_Duke_of_Aosta', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Tatiana_von_Preussen linked via hasMother is not classified as :Ancestor or :Woman.
+      The person Henri_comte_de_Paris is set as the father of Claude_of_Orleans, but Henri_comte_de_Paris is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
+      AssignClass(node='Henri_comte_de_Paris', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Tatiana_von_Preussen linked via hasMother is not classified as :Ancestor or :Woman.
+      The person Vittorio_Emanuele_Prince_of_Naples is set as the father of Emanuele_Filiberto_Prince_of_Venice, but Vittorio_Emanuele_Prince_of_Naples is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
+      AssignClass(node='Vittorio_Emanuele_Prince_of_Naples', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Philip_Womack linked via hasFather is not classified as :Ancestor or :Man.
+      The person Irene_of_Greece_and_Denmark is set as the mother of Amedeo_of_Savoy-Aosta, but Irene_of_Greece_and_Denmark is missing the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
+      AssignClass(node='Irene_of_Greece_and_Denmark', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Philip_Womack linked via hasFather is not classified as :Ancestor or :Man.
+      The person Isabelle_of_Orleans-Braganza is set as the mother of Claude_of_Orleans, but Isabelle_of_Orleans-Braganza is missing the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
+      AssignClass(node='Isabelle_of_Orleans-Braganza', class=':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Philip_Womack linked via hasFather is not classified as :Ancestor or :Man.
+      The person Amedeo_of_Savoy-Aosta is set as the father of Aimone_son_of_Amedeo, but Amedeo_of_Savoy-Aosta is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
+      AssignClass(node='Amedeo_of_Savoy-Aosta', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Tatiana_von_Preussen linked via hasMother is not classified as :Ancestor or :Woman.
+      The person Aimone_Duke_of_Aosta is set as the father of Amedeo_of_Savoy-Aosta, but Aimone_Duke_of_Aosta is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
+      AssignClass(node='Aimone_Duke_of_Aosta', class=':Ancestor')
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Tatiana_von_Preussen linked via hasMother is not classified as :Ancestor or :Woman.
+      The person Henri_comte_de_Paris is set as the father of Claude_of_Orleans, but Henri_comte_de_Paris is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
+      AssignClass(node='Henri_comte_de_Paris', class=':Ancestor')
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Tatiana_von_Preussen linked via hasMother is not classified as :Ancestor or :Woman.
+      The person Vittorio_Emanuele_Prince_of_Naples is set as the father of Emanuele_Filiberto_Prince_of_Venice, but Vittorio_Emanuele_Prince_of_Naples is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
+      AssignClass(node='Vittorio_Emanuele_Prince_of_Naples', class=':Ancestor')
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Philip_Womack linked via hasFather is not classified as :Ancestor or :Man.
+      The person Irene_of_Greece_and_Denmark is set as the mother of Amedeo_of_Savoy-Aosta, but Irene_of_Greece_and_Denmark is missing the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
+      AssignClass(node='Irene_of_Greece_and_Denmark', class=':Ancestor')
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Philip_Womack linked via hasFather is not classified as :Ancestor or :Man.
+      The person Isabelle_of_Orleans-Braganza is set as the mother of Claude_of_Orleans, but Isabelle_of_Orleans-Braganza is missing the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philip_Womack, :Man)
+      AssignClass(node='Isabelle_of_Orleans-Braganza', class=':Ancestor')
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Tatiana_von_Preussen linked via hasMother is not classified as :Ancestor or :Woman.
+      The person Henri_comte_de_Paris is set as the father of Claude_of_Orleans, but Henri_comte_de_Paris is missing the required :Ancestor or :Man class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
+      AssignClass(node='Henri_comte_de_Paris', class=':Ancestor')
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Tatiana_von_Preussen linked via hasMother is not classified as :Ancestor or :Woman.
+      The person Isabelle_of_Orleans-Braganza is set as the mother of Claude_of_Orleans, but Isabelle_of_Orleans-Braganza is missing the required :Ancestor or :Woman class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Tatiana_von_Preussen, :Woman)
+      AssignClass(node='Isabelle_of_Orleans-Braganza', class=':Ancestor')
 
 
 
@@ -1238,19 +986,52 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (e09ed589-1f07-4fab-9e7b-dbae83c03ea2)
- Call ID: e09ed589-1f07-4fab-9e7b-dbae83c03ea2
+  AssignClass (55d3b46c-6b9e-4f0c-bbd3-c7e596eed80d)
+ Call ID: 55d3b46c-6b9e-4f0c-bbd3-c7e596eed80d
   Args:
-    source: Tatiana von Preussen
+    source: Amedeo_of_Savoy-Aosta
     type: :Ancestor
-  AssignClass (f9b260a0-8dda-408f-bd9a-14b452da2195)
- Call ID: f9b260a0-8dda-408f-bd9a-14b452da2195
+  AssignClass (f4cc5388-aac4-4358-827c-077ab9b413a7)
+ Call ID: f4cc5388-aac4-4358-827c-077ab9b413a7
   Args:
-    source: Philip Womack
     type: :Ancestor
-  ValidateShacl (e69f0b80-4979-4763-963b-237f703fc747)
- Call ID: e69f0b80-4979-4763-963b-237f703fc747
+    source: Aimone_Duke_of_Aosta
+  AssignClass (c00a61fe-dec0-4841-a989-35464a3f8157)
+ Call ID: c00a61fe-dec0-4841-a989-35464a3f8157
   Args:
+    type: :Ancestor
+    source: Vittorio_Emanuele_Prince_of_Naples
+  AssignClass (3fcbbfe3-cf67-4689-a6d8-29e8f63aae77)
+ Call ID: 3fcbbfe3-cf67-4689-a6d8-29e8f63aae77
+  Args:
+    type: :Ancestor
+    source: Irene_of_Greece_and_Denmark
+  AssignClass (1b5515c5-ca8a-4965-9147-b41d7865a110)
+ Call ID: 1b5515c5-ca8a-4965-9147-b41d7865a110
+  Args:
+    source: Henri_comte_de_Paris
+    type: :Ancestor
+  AssignClass (ed4b7d0f-be26-4314-abcb-2c9d95e9622e)
+ Call ID: ed4b7d0f-be26-4314-abcb-2c9d95e9622e
+  Args:
+    type: :Ancestor
+    source: Isabelle_of_Orleans-Braganza
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1263,56 +1044,64 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Amalia_Maria_Brigid_Womack_von_Preussen a :Person,
-          :Woman ;
-      :hasBirthYear 2020 ;
-      :hasFather data:Philip_Womack ;
-      :hasMother data:Tatiana_von_Preussen .
-
-  data:Arthur_Frederick_Richard_Womack_von_Preussen a :Man,
+  data:Aimone_son_of_Amedeo a :Man,
           :Person ;
-      :hasBirthYear 2015 ;
-      :hasFather data:Philip_Womack ;
-      :hasMother data:Tatiana_von_Preussen .
+      :hasFather data:Amedeo_of_Savoy-Aosta .
 
-  data:Xenia_Alexandra_Selena_Womack_von_Preussen a :Person,
+  data:Claude_of_Orleans a :Person,
           :Woman ;
-      :hasBirthYear 2020 ;
-      :hasFather data:Philip_Womack ;
-      :hasMother data:Tatiana_von_Preussen .
+      :hasBirthYear 1943 ;
+      :hasFather data:Henri_comte_de_Paris ;
+      :hasMother data:Isabelle_of_Orleans-Braganza .
 
-  data:Alexandra_Blahova a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Lady_Brigid_Guinness a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_Andreas_of_Prussia a :Ancestor,
-          :Man,
+  data:Emanuele_Filiberto_Prince_of_Venice a :Man,
           :Person ;
-      :hasFather data:Prince_Frederick_of_Prussia ;
-      :hasMother data:Lady_Brigid_Guinness .
+      :hasFather data:Vittorio_Emanuele_Prince_of_Naples .
 
-  data:Prince_Frederick_of_Prussia a :Ancestor,
+  data:Umberto_II a :Man,
+          :Person .
+
+  data:Aimone_Duke_of_Aosta a :Ancestor,
           :Man,
           :Person .
 
-  data:Tatiana_von_Preussen a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1980 ;
-      :hasFather data:Prince_Andreas_of_Prussia ;
-      :hasMarriageYear 2014 ;
-      :hasMother data:Alexandra_Blahova ;
-      :hasRelation data:Philip_Womack .
+  data:Amedeo_of_Savoy-Aosta a :Ancestor,
+          :Man,
+          :Person ;
+      :hasDeathYear 2021 ;
+      :hasFather data:Aimone_Duke_of_Aosta ;
+      :hasMarriageYear 1964 ;
+      :hasMother data:Irene_of_Greece_and_Denmark .
 
-  data:Philip_Womack a :Ancestor,
+  data:Henri_comte_de_Paris a :Ancestor,
           :Man,
           :Person .
 
+  data:Irene_of_Greece_and_Denmark a :Ancestor,
+          :Person,
+          :Woman .
 
+  data:Isabelle_of_Orleans-Braganza a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Maria_Gabriella_of_Savoy a :Person,
+          :Woman .
+
+  data:Vittorio_Emanuele_Prince_of_Naples a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSister data:Maria_Gabriella_of_Savoy .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (0cfda383-0f38-4df4-8e9e-469e132d22c7)
+ Call ID: 0cfda383-0f38-4df4-8e9e-469e132d22c7
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1322,6 +1111,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (3af3ca2c-b8e6-4b69-aa9f-337877ee805d)
- Call ID: 3af3ca2c-b8e6-4b69-aa9f-337877ee805d
+  Finish (b03b33df-b359-475b-b8f4-02355643e390)
+ Call ID: b03b33df-b359-475b-b8f4-02355643e390
   Args:

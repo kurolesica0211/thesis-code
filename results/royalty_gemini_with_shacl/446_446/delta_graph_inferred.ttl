@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Antonia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Mary_Wellesley ;
+    :hasDaughter data:Lady_Mary_Wellesley ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Charles_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasSister data:Antonia_of_Prussia ;
+    :isAncestorOf data:Lady_Mary_Wellesley ;
+    :isAuntOf data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Antonia_of_Prussia ;
+    :isMotherOf data:Lady_Mary_Wellesley ;
+    :isParentOf data:Lady_Mary_Wellesley ;
+    :isSiblingOf data:Antonia_of_Prussia ;
+    :isSisterOf data:Antonia_of_Prussia .
+
+data:Charles_Wellesley a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_Wellesley ;
+    :hasChild data:Lady_Mary_Wellesley ;
+    :hasDaughter data:Lady_Mary_Wellesley ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Charles_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :isAncestorOf data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Charles_Wellesley ;
+    :isBrotherOf data:Charles_Wellesley ;
+    :isFatherOf data:Lady_Mary_Wellesley ;
+    :isParentOf data:Lady_Mary_Wellesley ;
+    :isSiblingOf data:Charles_Wellesley ;
+    :isUncleOf data:Lady_Mary_Wellesley .
+
+data:Lady_Mary_Wellesley a :Person,
+        :Woman ;
+    :hasAncestor data:Antonia_of_Prussia,
+        data:Charles_Wellesley ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Charles_Wellesley ;
+    :hasMother data:Antonia_of_Prussia ;
+    :hasParent data:Antonia_of_Prussia,
+        data:Charles_Wellesley ;
+    :hasRelation data:Antonia_of_Prussia,
+        data:Charles_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasSister data:Lady_Mary_Wellesley ;
+    :isBloodrelationOf data:Lady_Mary_Wellesley ;
+    :isChildOf data:Antonia_of_Prussia,
+        data:Charles_Wellesley ;
+    :isDaughterOf data:Antonia_of_Prussia,
+        data:Charles_Wellesley ;
+    :isSiblingOf data:Lady_Mary_Wellesley ;
+    :isSisterOf data:Lady_Mary_Wellesley .
+

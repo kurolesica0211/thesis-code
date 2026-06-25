@@ -2,54 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfonso_XIII a :Man,
-        :Person .
+data:Marilene_van_den_Broek a :Woman ;
+    :hasBirthYear 1970 ;
+    :hasMarriageYear 1989 ;
+    :isDaughterOf data:Hans_van_den_Broek,
+        data:Josee_van_Schendel .
 
-data:Alfonso_son_of_Carlos a :Man,
-        :Person ;
-    :hasFather data:Don_Carlos .
+data:Prince_Maurits a :Man ;
+    :hasBirthYear 1968 ;
+    :hasMarriageYear 1989 ;
+    :isBrotherOf data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan ;
+    :isSonOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet .
 
-data:Ferdinand a :Man,
-        :Person ;
-    :isBrotherOf data:Don_Carlos .
+data:Bernhard a :Man .
 
-data:Francis_II a :Man,
-        :Person .
+data:Floris a :Man .
 
-data:Louise_of_Orleans a :Person,
-        :Woman ;
-    :hasFather data:Philippe_Count_of_Paris .
+data:Hans_van_den_Broek a :Man .
 
-data:Mercedes a :Person,
-        :Woman ;
-    :hasFather data:Alfonso_XII ;
-    :hasMother data:Maria_Christina .
+data:Josee_van_Schendel a :Woman .
 
-data:Ranieri a :Man,
-        :Person ;
-    :isBrotherOf data:Don_Carlos .
+data:Pieter-Christiaan a :Man .
 
-data:Alfonso_XII a :Man,
-        :Person .
+data:Pieter_van_Vollenhoven a :Man .
 
-data:Maria_Antonietta a :Person,
-        :Woman .
-
-data:Maria_Christina a :Person,
-        :Woman .
-
-data:Philippe_Count_of_Paris a :Man,
-        :Person .
-
-data:Prince_Alfonso a :Man,
-        :Person .
-
-data:Don_Carlos a :Man,
-        :Person ;
-    :hasBirthYear 1870 ;
-    :hasDeathYear 1949 ;
-    :hasFather data:Prince_Alfonso ;
-    :hasMarriageYear 1901,
-        1907 ;
-    :hasMother data:Maria_Antonietta .
+data:Princess_Margriet a :Woman .
 

@@ -100,6 +100,8 @@ Charles Augustus was married at the Wartburg Castle on 5 October 1944 to Barones
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +117,9 @@ Charles Augustus was married at the Wartburg Castle on 5 October 1944 to Barones
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +134,23 @@ Charles Augustus was married at the Wartburg Castle on 5 October 1944 to Barones
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +168,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +250,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +273,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +293,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +303,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +343,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,156 +442,115 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1c4cf5ff-9b35-4871-be33-c214f4c38254)
- Call ID: 1c4cf5ff-9b35-4871-be33-c214f4c38254
+  AssignClass (98005c2f-71cb-49f2-b26a-4495981ebf2d)
+ Call ID: 98005c2f-71cb-49f2-b26a-4495981ebf2d
   Args:
     type: :Man
-    source: :CharlesAugustus
-  AssignClass (d80afccc-4833-457f-b5a0-abf6be5bbcf5)
- Call ID: d80afccc-4833-457f-b5a0-abf6be5bbcf5
+    source: Charles_Augustus
+  AssignClass (130d75f5-ff7b-4999-83f6-0370b1f65ea5)
+ Call ID: 130d75f5-ff7b-4999-83f6-0370b1f65ea5
   Args:
-    type: :Person
-    source: :CharlesAugustus
-  AddLiteral (810f3bf2-cffe-4fc0-82f3-5de2848e8c64)
- Call ID: 810f3bf2-cffe-4fc0-82f3-5de2848e8c64
+    source: Wilhelm_Ernst
+    type: :Man
+  AssignClass (9928cb17-2402-4517-9bd1-53fcbcdbb1e5)
+ Call ID: 9928cb17-2402-4517-9bd1-53fcbcdbb1e5
   Args:
+    source: Feodora_of_Saxe-Meiningen
+    type: :Woman
+  AssignClass (0998d798-ee1f-4fc1-a8c0-f95912630122)
+ Call ID: 0998d798-ee1f-4fc1-a8c0-f95912630122
+  Args:
+    source: Michael
+    type: :Man
+  AssignClass (c46087c7-e5db-41c7-b3fa-b338ffbc11be)
+ Call ID: c46087c7-e5db-41c7-b3fa-b338ffbc11be
+  Args:
+    source: Elisabeth_of_Wangenheim-Winterstein
+    type: :Woman
+  AssignClass (b9f7082b-65bd-4ac7-8ebc-de32ee6f7a3b)
+ Call ID: b9f7082b-65bd-4ac7-8ebc-de32ee6f7a3b
+  Args:
+    source: Othmar_Baron_von_Wangenheim-Winterstein
+    type: :Man
+  AssignClass (6e1ad85f-7300-442b-a853-1fe7ffb5c97e)
+ Call ID: 6e1ad85f-7300-442b-a853-1fe7ffb5c97e
+  Args:
+    type: :Woman
+    source: Maud_von_Trützschler
+  AddLiteral (888272f6-3ee2-419d-99ee-a9d68b563612)
+ Call ID: 888272f6-3ee2-419d-99ee-a9d68b563612
+  Args:
+    source: Charles_Augustus
     literal_value: 1912
     relation: :hasBirthYear
-    source: :CharlesAugustus
     literal_type: xsd:integer
-  AddLiteral (a8e914de-3a77-47ec-9405-a5d2e8c21826)
- Call ID: a8e914de-3a77-47ec-9405-a5d2e8c21826
+  AddLiteral (0f252e4c-ea86-489f-b0e9-4162728d1502)
+ Call ID: 0f252e4c-ea86-489f-b0e9-4162728d1502
   Args:
+    literal_value: 1988
     relation: :hasDeathYear
     literal_type: xsd:integer
-    source: :CharlesAugustus
-    literal_value: 1988
-  AssignClass (b345a9f3-64ec-4484-a864-0506b32a81c2)
- Call ID: b345a9f3-64ec-4484-a864-0506b32a81c2
+    source: Charles_Augustus
+  AddTriple (6bed56fc-5944-4238-aeb6-43437b3e563a)
+ Call ID: 6bed56fc-5944-4238-aeb6-43437b3e563a
   Args:
-    type: :Man
-    source: :WilhelmErnst
-  AssignClass (e177d70e-a57a-4a52-9885-2aee224f8215)
- Call ID: e177d70e-a57a-4a52-9885-2aee224f8215
-  Args:
-    type: :Person
-    source: :WilhelmErnst
-  AssignClass (057f8105-8d49-40a9-a0a4-895b3a971534)
- Call ID: 057f8105-8d49-40a9-a0a4-895b3a971534
-  Args:
-    type: :Woman
-    source: :Feodora
-  AssignClass (01fc084f-6e08-4d10-a82d-bc7bece034a2)
- Call ID: 01fc084f-6e08-4d10-a82d-bc7bece034a2
-  Args:
-    type: :Person
-    source: :Feodora
-  AddTriple (6cd66b2e-7d11-4541-95cb-8415a691f478)
- Call ID: 6cd66b2e-7d11-4541-95cb-8415a691f478
-  Args:
-    target: :WilhelmErnst
-    source: :CharlesAugustus
+    target: Wilhelm_Ernst
+    source: Charles_Augustus
     relation: :hasFather
-  AddTriple (44febaff-fcf4-4c5d-8320-3a9aacd7b401)
- Call ID: 44febaff-fcf4-4c5d-8320-3a9aacd7b401
+  AddTriple (2bef8d5a-0077-492c-b6a3-c3ba7296f33a)
+ Call ID: 2bef8d5a-0077-492c-b6a3-c3ba7296f33a
   Args:
-    target: :Feodora
+    source: Charles_Augustus
+    target: Feodora_of_Saxe-Meiningen
     relation: :hasMother
-    source: :CharlesAugustus
-  AssignClass (c18973fb-6785-4285-81e2-ae81a62928c6)
- Call ID: c18973fb-6785-4285-81e2-ae81a62928c6
+  AddTriple (6e09404f-a1e6-40ae-b286-6caff4be8fad)
+ Call ID: 6e09404f-a1e6-40ae-b286-6caff4be8fad
   Args:
-    type: :Man
-    source: :Michael
-  AssignClass (a231a48f-818f-47a3-9308-493d9fd22703)
- Call ID: a231a48f-818f-47a3-9308-493d9fd22703
-  Args:
-    type: :Person
-    source: :Michael
-  AddTriple (d6b527e8-f98b-45bd-8353-13b72b463d12)
- Call ID: d6b527e8-f98b-45bd-8353-13b72b463d12
-  Args:
-    target: :Michael
-    relation: :hasSon
-    source: :CharlesAugustus
-  AssignClass (739af113-9078-4661-80e4-1a04489917a4)
- Call ID: 739af113-9078-4661-80e4-1a04489917a4
-  Args:
-    type: :Woman
-    source: :Elisabeth
-  AssignClass (834c0736-b890-467e-9550-50d78764c232)
- Call ID: 834c0736-b890-467e-9550-50d78764c232
-  Args:
-    type: :Person
-    source: :Elisabeth
-  AddLiteral (11ed53bf-a474-47ea-85a7-2ee5cb5386ee)
- Call ID: 11ed53bf-a474-47ea-85a7-2ee5cb5386ee
+    relation: :hasFather
+    source: Michael
+    target: Charles_Augustus
+  AddLiteral (263a3687-95af-41bb-82b9-cd3bbf0c07d0)
+ Call ID: 263a3687-95af-41bb-82b9-cd3bbf0c07d0
   Args:
     literal_value: 1944
     relation: :hasMarriageYear
-    source: :CharlesAugustus
     literal_type: xsd:integer
-  AddTriple (5019676f-58c0-4fe2-8e94-35d067440a3f)
- Call ID: 5019676f-58c0-4fe2-8e94-35d067440a3f
+    source: Charles_Augustus
+  AddTriple (0ac7f9d2-c6f6-4e39-b290-5880384f520f)
+ Call ID: 0ac7f9d2-c6f6-4e39-b290-5880384f520f
   Args:
-    target: :Elisabeth
+    target: Elisabeth_of_Wangenheim-Winterstein
+    source: Charles_Augustus
     relation: :hasRelation
-    source: :CharlesAugustus
-  AssignClass (89505951-bace-4e87-b71e-46a1bfe157c4)
- Call ID: 89505951-bace-4e87-b71e-46a1bfe157c4
+  AddLiteral (c44cdd5a-f204-4d04-ae96-064d4b08878f)
+ Call ID: c44cdd5a-f204-4d04-ae96-064d4b08878f
   Args:
-    type: :Man
-    source: :Othmar
-  AssignClass (8d001fce-b3be-4881-b733-918503551962)
- Call ID: 8d001fce-b3be-4881-b733-918503551962
+    source: Elisabeth_of_Wangenheim-Winterstein
+    literal_value: 1912
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (3d3558ba-4c69-42de-a654-dc0d8958e836)
+ Call ID: 3d3558ba-4c69-42de-a654-dc0d8958e836
   Args:
-    type: :Person
-    source: :Othmar
-  AssignClass (2c01d5bb-b235-435c-abf1-a8e89d532afa)
- Call ID: 2c01d5bb-b235-435c-abf1-a8e89d532afa
+    source: Elisabeth_of_Wangenheim-Winterstein
+    literal_value: 2010
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddTriple (6e7826c5-4851-4dc0-9a27-fe987096c266)
+ Call ID: 6e7826c5-4851-4dc0-9a27-fe987096c266
   Args:
-    type: :Woman
-    source: :Maud
-  AssignClass (51b9acfb-2bb6-422c-b673-720c2860f85b)
- Call ID: 51b9acfb-2bb6-422c-b673-720c2860f85b
-  Args:
-    type: :Person
-    source: :Maud
-  AddTriple (24997106-86cf-4387-a6cc-39e6934c8df9)
- Call ID: 24997106-86cf-4387-a6cc-39e6934c8df9
-  Args:
+    source: Elisabeth_of_Wangenheim-Winterstein
+    target: Othmar_Baron_von_Wangenheim-Winterstein
     relation: :hasFather
-    source: :Elisabeth
-    target: :Othmar
-  AddTriple (59256098-5f06-4cdd-ad98-913fb5e372b7)
- Call ID: 59256098-5f06-4cdd-ad98-913fb5e372b7
+  AddTriple (a1a8f013-27b7-4c71-b9c9-4c2508cf96a0)
+ Call ID: a1a8f013-27b7-4c71-b9c9-4c2508cf96a0
   Args:
-    target: :Maud
-    source: :Elisabeth
+    target: Maud_von_Trützschler
+    source: Elisabeth_of_Wangenheim-Winterstein
     relation: :hasMother
-  Finish (b7651a0d-aa1b-4c7e-88fc-78a0501ac01f)
- Call ID: b7651a0d-aa1b-4c7e-88fc-78a0501ac01f
+  Finish (2c538e30-a42c-4ea9-a510-f055c8a8bd80)
+ Call ID: 2c538e30-a42c-4ea9-a510-f055c8a8bd80
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -576,35 +627,30 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:CharlesAugustus a :Man,
-          :Person ;
+  data:Michael a :Man ;
+      :hasFather data:Charles_Augustus .
+
+  data:Charles_Augustus a :Man ;
       :hasBirthYear 1912 ;
       :hasDeathYear 1988 ;
-      :hasFather data:WilhelmErnst ;
+      :hasFather data:Wilhelm_Ernst ;
       :hasMarriageYear 1944 ;
-      :hasMother data:Feodora ;
-      :hasRelation data:Elisabeth ;
-      :hasSon data:Michael .
+      :hasMother data:Feodora_of_Saxe-Meiningen ;
+      :hasRelation data:Elisabeth_of_Wangenheim-Winterstein .
 
-  data:Elisabeth a :Person,
-          :Woman ;
-      :hasFather data:Othmar ;
-      :hasMother data:Maud .
+  data:Elisabeth_of_Wangenheim-Winterstein a :Woman ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 2010 ;
+      :hasFather data:Othmar_Baron_von_Wangenheim-Winterstein ;
+      :hasMother data:Maud_von_Tr%C3%BCtzschler .
 
-  data:Feodora a :Person,
-          :Woman .
+  data:Feodora_of_Saxe-Meiningen a :Woman .
 
-  data:Maud a :Person,
-          :Woman .
+  data:Maud_von_Tr%C3%BCtzschler a :Woman .
 
-  data:Michael a :Man,
-          :Person .
+  data:Othmar_Baron_von_Wangenheim-Winterstein a :Man .
 
-  data:Othmar a :Man,
-          :Person .
-
-  data:WilhelmErnst a :Man,
-          :Person .
+  data:Wilhelm_Ernst a :Man .
 
 
 
@@ -616,110 +662,134 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (40c4d441-2a07-4194-b599-2f85038fdbcf)
- Call ID: 40c4d441-2a07-4194-b599-2f85038fdbcf
+  ValidateShacl (00aba075-b9d2-4b72-ba17-c6a7ce564ded)
+ Call ID: 00aba075-b9d2-4b72-ba17-c6a7ce564ded
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:15
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'WilhelmErnst' is assigned as the father of 'CharlesAugustus' via the 'hasFather' property, but 'WilhelmErnst' is not correctly classified as an ':Ancestor'.
+      The node Wilhelm_Ernst is not assigned the required class :Ancestor, which is mandatory for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='WilhelmErnst', class=':Ancestor')
+      AssignClass(node: 'Wilhelm_Ernst', class: ':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Feodora' is assigned as the mother of 'CharlesAugustus' via the 'hasMother' property, but 'Feodora' is not correctly classified as an ':Ancestor'.
+      The node Charles_Augustus is not assigned the required class :Ancestor, which is mandatory for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Feodora', class=':Ancestor')
+      AssignClass(node: 'Charles_Augustus', class: ':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'WilhelmErnst' is missing the required ':Ancestor' class assignment for the 'hasFather' relationship with 'CharlesAugustus'.
+      The node Feodora_of_Saxe-Meiningen is not assigned the required class :Ancestor, which is mandatory for the :hasMother relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='WilhelmErnst', class=':Ancestor')
+      AssignClass(node: 'Feodora_of_Saxe-Meiningen', class: ':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Othmar' is assigned as the father of 'Elisabeth', but 'Othmar' is not classified as an ':Ancestor'.
+      The node Wilhelm_Ernst is not assigned the required class :Ancestor, which is mandatory for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Othmar', class=':Ancestor')
+      AssignClass(node: 'Wilhelm_Ernst', class: ':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Feodora' is missing the required ':Ancestor' class assignment for the 'hasMother' relationship with 'CharlesAugustus'.
+      The node Othmar_Baron_von_Wangenheim-Winterstein is not assigned the required class :Ancestor, which is mandatory for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Feodora', class=':Ancestor')
+      AssignClass(node: 'Othmar_Baron_von_Wangenheim-Winterstein', class: ':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Maud' is assigned as the mother of 'Elisabeth', but 'Maud' is not classified as an ':Ancestor'.
+      The node Charles_Augustus is not assigned the required class :Ancestor, which is mandatory for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maud', class=':Ancestor')
+      AssignClass(node: 'Charles_Augustus', class: ':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'WilhelmErnst' is missing the required ':Ancestor' class assignment for the 'hasFather' relationship with 'CharlesAugustus'.
+      The node Feodora_of_Saxe-Meiningen is not assigned the required class :Ancestor, which is mandatory for the :hasMother relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='WilhelmErnst', class=':Ancestor')
+      AssignClass(node: 'Feodora_of_Saxe-Meiningen', class: ':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Othmar' is missing the required ':Ancestor' class assignment for the 'hasFather' relationship with 'Elisabeth'.
+      The node Maud_von_Tr%C3%BCtzschler is not assigned the required class :Ancestor, which is mandatory for the :hasMother relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Othmar', class=':Ancestor')
+      AssignClass(node: 'Maud_von_Tr%C3%BCtzschler', class: ':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Feodora' is missing the required ':Ancestor' class assignment for the 'hasMother' relationship with 'CharlesAugustus'.
+      The node Wilhelm_Ernst is not assigned the required class :Ancestor, which is mandatory for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Feodora', class=':Ancestor')
+      AssignClass(node: 'Wilhelm_Ernst', class: ':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Maud' is missing the required ':Ancestor' class assignment for the 'hasMother' relationship with 'Elisabeth'.
+      The node Othmar_Baron_von_Wangenheim-Winterstein is not assigned the required class :Ancestor, which is mandatory for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maud', class=':Ancestor')
+      AssignClass(node: 'Othmar_Baron_von_Wangenheim-Winterstein', class: ':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Othmar' is missing the required ':Ancestor' class assignment for the 'hasFather' relationship with 'Elisabeth'.
+      The node Charles_Augustus is not assigned the required class :Ancestor, which is mandatory for the :hasFather relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Othmar', class=':Ancestor')
+      AssignClass(node: 'Charles_Augustus', class: ':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Maud' is missing the required ':Ancestor' class assignment for the 'hasMother' relationship with 'Elisabeth'.
+      The node Feodora_of_Saxe-Meiningen is not assigned the required class :Ancestor, which is mandatory for the :hasMother relation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maud', class=':Ancestor')
+      AssignClass(node: 'Feodora_of_Saxe-Meiningen', class: ':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maud_von_Tr%C3%BCtzschler is not assigned the required class :Ancestor, which is mandatory for the :hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Maud_von_Tr%C3%BCtzschler', class: ':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Othmar_Baron_von_Wangenheim-Winterstein is not assigned the required class :Ancestor, which is mandatory for the :hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Othmar_Baron_von_Wangenheim-Winterstein', class: ':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maud_von_Tr%C3%BCtzschler is not assigned the required class :Ancestor, which is mandatory for the :hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Maud_von_Tr%C3%BCtzschler', class: ':Ancestor')
 
 
 
@@ -728,26 +798,38 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (ba6481f6-1085-4545-b8a5-3c5393956519)
- Call ID: ba6481f6-1085-4545-b8a5-3c5393956519
+  AssignClass (1b085637-d29c-49ee-b411-a80a7530a5f7)
+ Call ID: 1b085637-d29c-49ee-b411-a80a7530a5f7
+  Args:
+    source: Wilhelm_Ernst
+    type: :Ancestor
+  AssignClass (b9294e22-2864-4db5-b667-5fb987c69e91)
+ Call ID: b9294e22-2864-4db5-b667-5fb987c69e91
   Args:
     type: :Ancestor
-    source: :WilhelmErnst
-  AssignClass (320ea899-5ac0-497b-8fd2-0e0367558e63)
- Call ID: 320ea899-5ac0-497b-8fd2-0e0367558e63
+    source: Charles_Augustus
+  AssignClass (828ba241-6c24-4cad-9865-7efff41f7dc9)
+ Call ID: 828ba241-6c24-4cad-9865-7efff41f7dc9
   Args:
     type: :Ancestor
-    source: :Feodora
-  AssignClass (6cd26b21-7c8a-4e56-bf68-eb4ffbad89a7)
- Call ID: 6cd26b21-7c8a-4e56-bf68-eb4ffbad89a7
+    source: Feodora_of_Saxe-Meiningen
+  AssignClass (0fdd5336-5dd6-4f2d-aec3-763716dbe25d)
+ Call ID: 0fdd5336-5dd6-4f2d-aec3-763716dbe25d
+  Args:
+    source: Othmar_Baron_von_Wangenheim-Winterstein
+    type: :Ancestor
+  AssignClass (873c993a-a4ec-49e6-b08c-9c308e239a0a)
+ Call ID: 873c993a-a4ec-49e6-b08c-9c308e239a0a
   Args:
     type: :Ancestor
-    source: :Othmar
-  AssignClass (6c8b4735-dcd6-4c85-978c-9b57952de319)
- Call ID: 6c8b4735-dcd6-4c85-978c-9b57952de319
+    source: Maud_von_Trützschler
+  Finish (6df6a092-1154-4516-9ae6-c1e3261d210a)
+ Call ID: 6df6a092-1154-4516-9ae6-c1e3261d210a
   Args:
-    source: :Maud
-    type: :Ancestor
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -768,48 +850,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:CharlesAugustus a :Man,
-          :Person ;
+  data:Michael a :Man ;
+      :hasFather data:Charles_Augustus .
+
+  data:Charles_Augustus a :Ancestor,
+          :Man ;
       :hasBirthYear 1912 ;
       :hasDeathYear 1988 ;
-      :hasFather data:WilhelmErnst ;
+      :hasFather data:Wilhelm_Ernst ;
       :hasMarriageYear 1944 ;
-      :hasMother data:Feodora ;
-      :hasRelation data:Elisabeth ;
-      :hasSon data:Michael .
+      :hasMother data:Feodora_of_Saxe-Meiningen ;
+      :hasRelation data:Elisabeth_of_Wangenheim-Winterstein .
 
-  data:Elisabeth a :Person,
-          :Woman ;
-      :hasFather data:Othmar ;
-      :hasMother data:Maud .
+  data:Elisabeth_of_Wangenheim-Winterstein a :Woman ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 2010 ;
+      :hasFather data:Othmar_Baron_von_Wangenheim-Winterstein ;
+      :hasMother data:Maud_von_Tr%C3%BCtzschler .
 
-  data:Feodora a :Ancestor,
-          :Person,
+  data:Feodora_of_Saxe-Meiningen a :Ancestor,
           :Woman .
 
-  data:Maud a :Ancestor,
-          :Person,
+  data:Maud_von_Tr%C3%BCtzschler a :Ancestor,
           :Woman .
 
-  data:Michael a :Man,
-          :Person .
+  data:Othmar_Baron_von_Wangenheim-Winterstein a :Ancestor,
+          :Man .
 
-  data:Othmar a :Ancestor,
-          :Man,
-          :Person .
-
-  data:WilhelmErnst a :Ancestor,
-          :Man,
-          :Person .
+  data:Wilhelm_Ernst a :Ancestor,
+          :Man .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (9979aebc-a50a-49d0-98de-7a13cc982f8b)
- Call ID: 9979aebc-a50a-49d0-98de-7a13cc982f8b
+  ValidateShacl (813e4941-b5aa-49b7-ac83-763534a21bd2)
+ Call ID: 813e4941-b5aa-49b7-ac83-763534a21bd2
   Args:
 
 ================================= Tool Message =================================
@@ -820,6 +902,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (05cc15fa-de36-45fa-a0f8-b94104f2719c)
- Call ID: 05cc15fa-de36-45fa-a0f8-b94104f2719c
+  Finish (b245a39c-5a60-4774-bcd7-e6320297fb2d)
+ Call ID: b245a39c-5a60-4774-bcd7-e6320297fb2d
   Args:

@@ -1,0 +1,177 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Louise_of_Orleans a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Louise_of_Orleans ;
+    :hasSister data:Princess_Louise_of_Orleans ;
+    :isBloodrelationOf data:Princess_Louise_of_Orleans ;
+    :isSiblingOf data:Princess_Louise_of_Orleans ;
+    :isSisterOf data:Princess_Louise_of_Orleans .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Infante_Juan ;
+    :hasRelation data:Alfonso_XIII,
+        data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Infante_Juan,
+        data:Juan_Carlos_I ;
+    :hasSon data:Infante_Juan ;
+    :isAncestorOf data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Infante_Juan,
+        data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Infante_Juan ;
+    :isParentOf data:Infante_Juan ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Infante_Juan .
+
+data:Maria_Mercedes a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :hasDaughter data:Infanta_Pilar ;
+    :hasRelation data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Maria_Mercedes ;
+    :hasSister data:Maria_Mercedes ;
+    :hasSon data:Juan_Carlos_I ;
+    :isAncestorOf data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isAuntOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Maria_Mercedes ;
+    :isMotherOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isParentOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isSiblingOf data:Maria_Mercedes ;
+    :isSisterOf data:Maria_Mercedes .
+
+data:Bruno_Alejandro_Gomez_Acebo_Borbon a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infanta_Pilar,
+        data:Infante_Juan,
+        data:Maria_Mercedes ;
+    :hasBrother data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :hasMother data:Infanta_Pilar ;
+    :hasParent data:Infanta_Pilar ;
+    :hasRelation data:Alfonso_XIII,
+        data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:Maria_Mercedes ;
+    :isBloodrelationOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isBrotherOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isChildOf data:Infanta_Pilar ;
+    :isSiblingOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isSonOf data:Infanta_Pilar .
+
+data:Infante_Juan a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Infante_Juan ;
+    :hasChild data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :hasDaughter data:Infanta_Pilar ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII,
+        data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Infante_Juan,
+        data:Juan_Carlos_I ;
+    :hasSon data:Juan_Carlos_I ;
+    :isAncestorOf data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isBloodrelationOf data:Infante_Juan ;
+    :isBrotherOf data:Infante_Juan ;
+    :isChildOf data:Alfonso_XIII ;
+    :isFatherOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isParentOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isSiblingOf data:Infante_Juan ;
+    :isSonOf data:Alfonso_XIII ;
+    :isUncleOf data:Infanta_Pilar,
+        data:Juan_Carlos_I .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infante_Juan,
+        data:Maria_Mercedes ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasFather data:Infante_Juan ;
+    :hasMother data:Maria_Mercedes ;
+    :hasParent data:Infante_Juan,
+        data:Maria_Mercedes ;
+    :hasRelation data:Alfonso_XIII,
+        data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:Maria_Mercedes ;
+    :hasSister data:Infanta_Pilar ;
+    :isBloodrelationOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isBrotherOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isChildOf data:Infante_Juan,
+        data:Maria_Mercedes ;
+    :isSiblingOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isSonOf data:Infante_Juan,
+        data:Maria_Mercedes ;
+    :isUncleOf data:Bruno_Alejandro_Gomez_Acebo_Borbon .
+
+data:Infanta_Pilar a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infante_Juan,
+        data:Maria_Mercedes ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasChild data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Infante_Juan ;
+    :hasMother data:Maria_Mercedes ;
+    :hasParent data:Infante_Juan,
+        data:Maria_Mercedes ;
+    :hasRelation data:Alfonso_XIII,
+        data:Bruno_Alejandro_Gomez_Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:Maria_Mercedes ;
+    :hasSister data:Infanta_Pilar ;
+    :hasSon data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isAncestorOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isAuntOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isBloodrelationOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isChildOf data:Infante_Juan,
+        data:Maria_Mercedes ;
+    :isDaughterOf data:Infante_Juan,
+        data:Maria_Mercedes ;
+    :isMotherOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isParentOf data:Bruno_Alejandro_Gomez_Acebo_Borbon ;
+    :isSiblingOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isSisterOf data:Infanta_Pilar,
+        data:Juan_Carlos_I .
+

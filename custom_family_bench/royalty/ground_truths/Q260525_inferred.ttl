@@ -1,0 +1,180 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta a :Man,
+        :Person ;
+    rdfs:label "Prince Emanuele Filiberto, 2nd Duke of Aosta"^^xsd:string ;
+    data:posIndicesFull "5826:5844"^^xsd:string ;
+    data:posIndicesPart "5920:5926"^^xsd:string,
+        "5957:5963"^^xsd:string ;
+    data:wdtLink wdt:Q445106 ;
+    :alsoKnownAs "Emanuele Filiberto"^^xsd:string ;
+    :hasBrother data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :hasRelation data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta .
+
+data:Prince_Philippe-_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Philippe, Count of Paris"^^xsd:string ;
+    data:posIndicesFull "325:356"^^xsd:string ;
+    data:posIndicesPart "1190:1195"^^xsd:string,
+        "1212:1217"^^xsd:string,
+        "1352:1357"^^xsd:string,
+        "1609:1615"^^xsd:string,
+        "1653:1658"^^xsd:string,
+        "1768:1773"^^xsd:string,
+        "1777:1782"^^xsd:string,
+        "1848:1853"^^xsd:string,
+        "1971:1977"^^xsd:string,
+        "2566:2574"^^xsd:string,
+        "3039:3045"^^xsd:string,
+        "428:436"^^xsd:string,
+        "5292:5300"^^xsd:string,
+        "5819:5825"^^xsd:string,
+        "5920:5926"^^xsd:string,
+        "5957:5963"^^xsd:string,
+        "6203:6211"^^xsd:string,
+        "631:636"^^xsd:string ;
+    data:wdtLink wdt:Q354477 ;
+    :alsoKnownAs "Louis-Philippe Albert d'Orléans"^^xsd:string,
+        "Louis-Philippe-Albert d' Orléans"^^xsd:string ;
+    :hasBrother data:Prince_Philippe-_Count_of_Paris ;
+    :hasChild data:Princess_Hélène_of_Orléans ;
+    :hasDaughter data:Princess_Hélène_of_Orléans ;
+    :hasRelation data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_Hélène_of_Orléans ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Hélène_of_Orléans ;
+    :isBloodrelationOf data:Prince_Philippe-_Count_of_Paris ;
+    :isBrotherOf data:Prince_Philippe-_Count_of_Paris ;
+    :isFatherOf data:Princess_Hélène_of_Orléans ;
+    :isParentOf data:Princess_Hélène_of_Orléans ;
+    :isSiblingOf data:Prince_Philippe-_Count_of_Paris ;
+    :isUncleOf data:Princess_Hélène_of_Orléans .
+
+data:Princess_María_Isabel_of_Orléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess María Isabel of Orléans"^^xsd:string ;
+    data:posIndicesFull "370:382"^^xsd:string ;
+    data:posIndicesPart "1072:1079"^^xsd:string,
+        "1458:1465"^^xsd:string,
+        "2066:2073"^^xsd:string,
+        "2194:2201"^^xsd:string,
+        "2254:2261"^^xsd:string,
+        "2584:2591"^^xsd:string,
+        "3312:3320"^^xsd:string,
+        "4592:4600"^^xsd:string,
+        "4843:4851"^^xsd:string,
+        "5968:5976"^^xsd:string,
+        "6070:6078"^^xsd:string,
+        "840:847"^^xsd:string ;
+    data:wdtLink wdt:Q242879 ;
+    :alsoKnownAs "Infanta Maria Isabel of Orléans"^^xsd:string,
+        "Maria Isabella"^^xsd:string,
+        "Princess Maria Isabel of Orléans, Infanta of Spain"^^xsd:string,
+        "Princess Marie Isabelle of Orleans"^^xsd:string ;
+    :hasChild data:Princess_Hélène_of_Orléans ;
+    :hasDaughter data:Princess_Hélène_of_Orléans ;
+    :hasRelation data:Princess_Hélène_of_Orléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_María_Isabel_of_Orléans ;
+    :isAncestorOf data:Princess_Hélène_of_Orléans ;
+    :isAuntOf data:Princess_Hélène_of_Orléans ;
+    :isBloodrelationOf data:Princess_María_Isabel_of_Orléans ;
+    :isMotherOf data:Princess_Hélène_of_Orléans ;
+    :isParentOf data:Princess_Hélène_of_Orléans ;
+    :isSiblingOf data:Princess_María_Isabel_of_Orléans ;
+    :isSisterOf data:Princess_María_Isabel_of_Orléans .
+
+data:Princess_Hélène_of_Orléans a :Person,
+        :Woman ;
+    rdfs:label "Princess Hélène of Orléans"^^xsd:string ;
+    data:posIndicesFull "0:26"^^xsd:string,
+        "46:79"^^xsd:string ;
+    data:posIndicesPart "1072:1079"^^xsd:string,
+        "1458:1465"^^xsd:string,
+        "1522:1528"^^xsd:string,
+        "1911:1917"^^xsd:string,
+        "2066:2073"^^xsd:string,
+        "2194:2201"^^xsd:string,
+        "2254:2261"^^xsd:string,
+        "2289:2295"^^xsd:string,
+        "2493:2499"^^xsd:string,
+        "2584:2591"^^xsd:string,
+        "2680:2686"^^xsd:string,
+        "278:284"^^xsd:string,
+        "2790:2796"^^xsd:string,
+        "3237:3243"^^xsd:string,
+        "3312:3320"^^xsd:string,
+        "3417:3423"^^xsd:string,
+        "3569:3575"^^xsd:string,
+        "3733:3739"^^xsd:string,
+        "3813:3819"^^xsd:string,
+        "3829:3835"^^xsd:string,
+        "3945:3951"^^xsd:string,
+        "4014:4020"^^xsd:string,
+        "4181:4187"^^xsd:string,
+        "4372:4378"^^xsd:string,
+        "4592:4600"^^xsd:string,
+        "4843:4851"^^xsd:string,
+        "5117:5123"^^xsd:string,
+        "5302:5308"^^xsd:string,
+        "5567:5573"^^xsd:string,
+        "5696:5702"^^xsd:string,
+        "5804:5810"^^xsd:string,
+        "5968:5976"^^xsd:string,
+        "6070:6078"^^xsd:string,
+        "6079:6085"^^xsd:string,
+        "6169:6175"^^xsd:string,
+        "6336:6342"^^xsd:string,
+        "6428:6434"^^xsd:string,
+        "6565:6571"^^xsd:string,
+        "6723:6729"^^xsd:string,
+        "6850:6856"^^xsd:string,
+        "840:847"^^xsd:string ;
+    data:wdtLink wdt:Q260525 ;
+    :alsoKnownAs "Elena D'Aosta"^^xsd:string,
+        "H.R.H. Elena di Francia"^^xsd:string,
+        "Hélène Louise Henriette d'Orléans"^^xsd:string,
+        "Princess Helene of Orleans"^^xsd:string ;
+    :hasAncestor data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasFather data:Prince_Philippe-_Count_of_Paris ;
+    :hasMother data:Princess_María_Isabel_of_Orléans ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasRelation data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_Hélène_of_Orléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Hélène_of_Orléans ;
+    :isBloodrelationOf data:Princess_Hélène_of_Orléans ;
+    :isChildOf data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :isDaughterOf data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :isSiblingOf data:Princess_Hélène_of_Orléans ;
+    :isSisterOf data:Princess_Hélène_of_Orléans .
+

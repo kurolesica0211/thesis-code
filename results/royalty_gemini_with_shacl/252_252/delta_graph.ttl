@@ -2,17 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Claus-Casimir_of_Orange-Nassau a :Man,
+data:Michael_Fergus_Bowes-Lyon a :Man,
         :Person ;
-    :hasBirthYear 2004 ;
-    :hasFather data:Prince_Constantijn ;
-    :hasMother data:Princess_Laurentien .
+    :hasBirthYear 1957 ;
+    :hasDeathYear 2016 ;
+    :hasFather data:Fergus_Bowes-Lyon ;
+    :hasMarriageYear 1984,
+        2005,
+        2012 ;
+    :hasMother data:Mary_Pamela_McCorquodale ;
+    :hasRelation data:Damaris_Stuart-William,
+        data:Isobel_Charlotte_Weatherall,
+        data:Karen_Baxter ;
+    :knownAs "Mikey Strathmore"^^xsd:string .
 
-data:Prince_Constantijn a :Ancestor,
+data:Percy_Weatherall a :Man ;
+    :hasSister data:Isobel_Charlotte_Weatherall .
+
+data:Percy_Weatherall%2Ctype a :Person .
+
+data:Damaris_Stuart-William a :Person,
+        :Woman .
+
+data:Fergus_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Michael_Bowes-Lyon_Grandfather .
+
+data:Karen_Baxter a :Person,
+        :Woman .
+
+data:Mary_Pamela_McCorquodale a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Michael_Bowes-Lyon_Grandfather a :Ancestor,
         :Man,
         :Person .
 
-data:Princess_Laurentien a :Ancestor,
-        :Person,
+data:Isobel_Charlotte_Weatherall a :Person,
         :Woman .
 

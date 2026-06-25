@@ -7,476 +7,59 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Philip, Duke of Edinburgh" ;
-    data:posIndicesFull "34418:34431",
-        "34418:34453",
-        "34425:34453" ;
-    data:posIndicesPart "36047:36053",
-        "36108:36114",
-        "37087:37093",
-        "37458:37464",
-        "40436:40442" ;
-    data:wdtLink wdt:Q80976 ;
-    :alsoKnownAs "H.R.H. Prince Philip",
-        "H.R.H. The Duke Of Edinburgh",
-        "Lieutenant Philip Mountbatten",
-        "Philip Edinburgh",
-        "Philip Mountbatten",
-        "Philip Mountbatten; Prince Philip of Greece and Denmark",
-        "Philip of Greece and Denmark",
-        "Prince Philip",
-        "Prince Philip of Greece and Denmark",
-        "The Prince Philip, Duke of Edinburgh" ;
-    :hasSex data:male .
-
-data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Marina of Greece and Denmark" ;
-    data:posIndicesFull "8273:8309" ;
-    data:posIndicesPart "10320:10328",
+data:Alexander_of_Greece a :Person ;
+    rdfs:label "Alexander of Greece" ;
+    data:posIndicesFull "514:535" ;
+    data:posIndicesPart "10568:10577",
         "10624:10630",
-        "10989:10997",
         "11517:11523",
         "11749:11755",
-        "12022:12030",
-        "12261:12269",
-        "12537:12545",
-        "13334:13342",
-        "13504:13510",
-        "13759:13765",
-        "13788:13794",
-        "14260:14268",
-        "15566:15574",
-        "16652:16660",
-        "17394:17402",
-        "18184:18192",
-        "19093:19101",
-        "19311:19319",
-        "20378:20386",
-        "20797:20805",
-        "21069:21077",
-        "22073:22081",
-        "23039:23047",
-        "24259:24267",
-        "25531:25539",
-        "25769:25775",
-        "28217:28223",
-        "30691:30697",
-        "31498:31506",
-        "32063:32069",
-        "34075:34083",
-        "34372:34380",
-        "34629:34637",
-        "36542:36550",
-        "36855:36863",
-        "37216:37224",
-        "37237:37244",
-        "37311:37319",
-        "38625:38633",
-        "38827:38833",
-        "38903:38911",
-        "8614:8622",
-        "8865:8873" ;
-    data:wdtLink wdt:Q170184 ;
-    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent",
-        "Princess Marina of Greece and Denmark, The Duchess of Kent",
-        "Princess Marina, The Duchess Of Kent" ;
-    :hasSex data:female .
-
-data:Carol_II_of_Romania a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Carol II of Romania" ;
-    data:posIndicesFull "1681:1689",
-        "19910:19918",
-        "19951:19959",
-        "19984:19992",
-        "20659:20667",
-        "21012:21020",
-        "21224:21232",
-        "21347:21355",
-        "21509:21517",
-        "22403:22411",
-        "23216:23224",
-        "24191:24199",
-        "24528:24536",
-        "24778:24786",
-        "26609:26617",
-        "31885:31893",
-        "35838:35846",
-        "35999:36007",
-        "38016:38024",
-        "40299:40307" ;
-    data:posIndicesPart "10008:10015",
-        "10139:10144",
-        "10256:10263",
-        "10406:10411",
-        "10891:10896",
-        "10965:10972",
-        "11150:11155",
-        "11867:11874",
-        "12231:12238",
-        "12273:12280",
-        "12328:12335",
-        "12390:12395",
-        "13085:13090",
-        "13777:13782",
-        "13952:13959",
-        "14113:14118",
-        "14898:14905",
-        "15068:15073",
-        "15200:15205",
-        "15519:15524",
-        "15688:15693",
-        "15718:15723",
-        "15954:15959",
-        "16254:16259",
-        "16401:16406",
-        "16504:16511",
-        "16537:16542",
-        "16761:16766",
-        "17317:17322",
-        "17406:17413",
-        "18328:18333",
-        "1871:1878",
-        "18745:18752",
-        "18754:18759",
-        "19377:19382",
-        "19459:19466",
-        "2023:2030",
-        "21833:21840",
-        "22736:22743",
-        "25851:25858",
-        "25876:25883",
-        "26990:26997",
-        "27181:27188",
-        "28228:28235",
-        "30156:30163",
-        "31244:31251",
-        "31632:31639",
-        "32787:32794",
-        "33421:33428",
-        "34334:34341",
-        "34900:34907",
-        "35145:35152",
-        "35382:35389",
-        "35614:35621",
-        "39629:39636",
-        "40514:40521",
-        "8338:8343",
-        "8347:8354",
-        "8424:8431",
-        "8985:8992",
-        "9178:9183",
-        "9323:9328",
-        "9333:9340",
-        "9512:9517",
-        "9781:9788" ;
-    data:wdtLink wdt:Q212897 ;
-    :alsoKnownAs "Carol II",
-        "Charles II" ;
-    :hasChild data:Michael_I_of_Romania ;
-    :hasSex data:male ;
-    :hasSon data:Michael_I_of_Romania ;
-    :isFatherOf data:Michael_I_of_Romania ;
-    :isParentOf data:Michael_I_of_Romania .
-
-data:Frederica_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Frederica of Hanover" ;
-    data:posIndicesFull "25350:25368",
-        "25359:25368",
-        "25359:25379",
-        "25467:25476",
-        "25633:25642",
-        "36036:36045",
-        "38783:38792" ;
-    data:wdtLink wdt:Q61351 ;
-    :alsoKnownAs "Fredericka",
-        "Friederike Luise von Griechenland",
-        "Princess Fredericka" ;
-    :hasChild data:Constantine_II_of_Greece ;
-    :hasSex data:female ;
-    :hasSon data:Constantine_II_of_Greece ;
-    :isMotherOf data:Constantine_II_of_Greece ;
-    :isParentOf data:Constantine_II_of_Greece .
-
-data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince August Wilhelm of Prussia" ;
-    data:posIndicesFull "14495:14499",
-        "27541:27545",
-        "8268:8272" ;
-    data:posIndicesPart "10132:10138",
-        "10275:10281",
-        "10884:10890",
-        "11323:11329",
-        "12627:12633",
-        "13182:13188",
-        "14012:14018",
-        "15309:15315",
-        "15378:15384",
-        "15644:15650",
-        "15681:15687",
-        "15914:15920",
-        "16473:16479",
-        "16951:16957",
-        "17201:17207",
-        "17656:17662",
-        "18876:18882",
-        "19719:19725",
-        "21459:21465",
-        "23488:23494",
-        "23780:23786",
-        "24991:24997",
-        "26290:26296",
-        "28524:28530",
-        "29871:29877",
-        "30587:30593",
-        "30894:30900",
-        "31164:31170",
-        "31294:31300",
-        "31760:31766",
-        "33212:33218",
-        "36047:36053",
-        "36108:36114",
-        "37087:37093",
-        "37458:37464",
-        "40436:40442",
-        "8331:8337",
-        "9171:9177",
-        "9505:9511" ;
-    data:wdtLink wdt:Q58777 ;
-    :alsoKnownAs "Auwi" ;
-    :hasFather data:Wilhelm_II ;
-    :hasParent data:Wilhelm_II ;
-    :hasSex data:male ;
-    :isChildOf data:Wilhelm_II ;
-    :isSonOf data:Wilhelm_II ;
-    :isUncleOf data:Frederica_of_Hanover .
-
-data:Princess_Margaret_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Margaret of Prussia" ;
-    data:posIndicesFull "26004:26008",
-        "27096:27101",
-        "28023:28027",
-        "2982:2986",
-        "32895:32899",
-        "33734:33738",
-        "34317:34322",
-        "3449:3453",
-        "35647:35653",
-        "36779:36783",
-        "37884:37888",
-        "570:574" ;
-    data:posIndicesPart "10320:10328",
-        "10989:10997",
-        "12022:12030",
-        "12261:12269",
-        "12537:12545",
-        "13334:13342",
-        "14260:14268",
-        "15566:15574",
-        "16652:16660",
-        "17394:17402",
-        "18184:18192",
-        "19093:19101",
-        "19311:19319",
-        "20378:20386",
-        "20797:20805",
-        "21069:21077",
-        "22073:22081",
-        "23039:23047",
-        "24259:24267",
-        "2501:2509",
-        "25531:25539",
-        "2630:2638",
-        "3044:3052",
-        "31498:31506",
-        "34075:34083",
-        "34372:34380",
-        "34629:34637",
-        "36542:36550",
-        "36855:36863",
-        "37216:37224",
-        "37225:37233",
-        "37311:37319",
-        "38625:38633",
-        "38903:38911",
-        "5910:5918",
-        "6382:6390",
-        "707:715",
-        "8614:8622",
-        "8865:8873" ;
-    data:wdtLink wdt:Q61338 ;
-    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
-        "Margaret of Prussia",
-        "Margaret of Prussia, Queen consort-elect of Finland",
-        "Margaret of Prussia, Queen-elect of Finland",
-        "Margarethe Beatrice Feodora of Prussia",
-        "Margarethe of Prussia",
-        "Mossy",
-        "Princess Frederick Charles of Hesse",
-        "Princess Margaret Beatrice Feodora of Prussia",
-        "Princess Margarethe Beatrice Feodora of Prussia",
-        "Princess Margarethe of Prussia" ;
-    :hasBrother data:Wilhelm_II ;
-    :hasSex data:female ;
-    :hasSister data:Sophia_of_Prussia ;
-    :isAuntOf data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece,
-        data:Prince_August_Wilhelm_of_Prussia ;
-    :isSiblingOf data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :isSisterOf data:Sophia_of_Prussia,
-        data:Wilhelm_II .
-
-data:George_I_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George I of Greece" ;
-    data:posIndicesFull "27892:27899",
-        "3689:3697",
-        "3922:3930",
-        "4547:4555" ;
-    data:posIndicesPart "10624:10630",
-        "11517:11523",
-        "11749:11755",
-        "11842:11848",
-        "13504:13510",
-        "13759:13765",
-        "13788:13794",
-        "14698:14704",
-        "25733:25739",
-        "25769:25775",
-        "28217:28223",
-        "30691:30697",
-        "32029:32035",
-        "32063:32069",
-        "34007:34013",
+        "13346:13352",
+        "13601:13607",
+        "13630:13636",
+        "13701:13710",
+        "13939:13948",
+        "24579:24585",
+        "2513:2519",
+        "2619:2625",
+        "27027:27033",
+        "2811:2820",
+        "2930:2939",
+        "29501:29507",
+        "30679:30685",
+        "32896:32902",
+        "37314:37320",
         "3807:3813",
-        "38827:38833",
-        "40681:40687",
-        "40739:40745",
         "4084:4090",
         "4273:4279",
         "4413:4419",
         "4736:4742",
+        "4846:4855",
         "4956:4962",
         "5193:5199",
         "5435:5441",
         "5641:5647",
         "6586:6592",
         "6680:6686",
-        "6781:6787",
+        "6964:6973",
         "7126:7132",
+        "7332:7341",
         "7698:7704",
-        "8578:8584",
-        "9341:9347" ;
-    data:wdtLink wdt:Q17142 ;
-    :alsoKnownAs "George I",
-        "George I of the Hellens",
-        "George I, King of Greece",
-        "George I, King of the Hellenes",
-        "King George I of Greece",
-        "King George I of the Hellens",
-        "Vilhelm" ;
-    :hasChild data:Constantine_I_of_Greece,
-        data:Princess_Maria_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Maria_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :hasSon data:Constantine_I_of_Greece ;
-    :isFatherOf data:Constantine_I_of_Greece,
-        data:Princess_Maria_of_Greece_and_Denmark ;
-    :isParentOf data:Constantine_I_of_Greece,
-        data:Princess_Maria_of_Greece_and_Denmark .
-
-data:Olga_Constantinovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Olga Constantinovna of Russia" ;
-    data:posIndicesFull "18098:18118",
-        "18104:18118" ;
-    data:wdtLink wdt:Q155178 ;
-    :alsoKnownAs "Olga of Greece",
-        "Queen Olga of Greece" ;
-    :hasChild data:Constantine_I_of_Greece,
-        data:Princess_Maria_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Maria_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :hasSon data:Constantine_I_of_Greece ;
-    :isMotherOf data:Constantine_I_of_Greece,
-        data:Princess_Maria_of_Greece_and_Denmark ;
-    :isParentOf data:Constantine_I_of_Greece,
-        data:Princess_Maria_of_Greece_and_Denmark .
-
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelm II" ;
-    data:posIndicesFull "5268:5283",
-        "5276:5286" ;
-    data:wdtLink wdt:Q2677 ;
-    :alsoKnownAs "Emperor Willlam",
-        "Frederick William Victor Albert of Prussia",
-        "Friedrich Wilhelm Emperor William II",
-        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
-        "Friedrich Wilhelm Viktor Albrecht von Preußen",
-        "German Emperor Wilhelm II",
-        "Kaiser Wilhelm II",
-        "Wilhelm II of Germany",
-        "Wilhelm II, German Emperor",
-        "Wilhelm II.",
-        "William II" ;
-    :hasChild data:Prince_August_Wilhelm_of_Prussia ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Margaret_of_Prussia,
+        "8069:8078",
+        "9869:9878" ;
+    data:wdtLink wdt:Q151742 ;
+    :alsoKnownAs "Alexander I of Greece",
+        "King Alexander I of Greece",
+        "King Alexander of Greece" ;
+    :hasParent data:Constantine_I_of_Greece,
         data:Sophia_of_Prussia ;
-    :hasSon data:Prince_August_Wilhelm_of_Prussia ;
-    :isBrotherOf data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isFatherOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isParentOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isSiblingOf data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isUncleOf data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece .
+    :hasSex data:male .
 
-data:Constantine_II_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Constantine_II_of_Greece a :Person ;
     rdfs:label "Constantine II of Greece" ;
     data:posIndicesFull "11072:11088",
-        "13616:13632",
-        "14647:14663",
+        "13458:13474",
+        "14378:14394",
         "209:225",
         "4665:4681",
         "5149:5165" ;
@@ -484,20 +67,21 @@ data:Constantine_II_of_Greece a :Ancestor,
         "11517:11523",
         "11571:11582",
         "11749:11755",
-        "13504:13510",
-        "13759:13765",
-        "13788:13794",
-        "17787:17798",
+        "13346:13352",
+        "13601:13607",
+        "13630:13636",
+        "17097:17108",
+        "24579:24585",
         "2513:2519",
-        "25769:25775",
         "2604:2615",
         "2619:2625",
-        "28217:28223",
-        "30691:30697",
-        "32063:32069",
+        "27027:27033",
+        "29501:29507",
+        "30679:30685",
+        "32896:32902",
+        "37314:37320",
         "3777:3788",
         "3807:3813",
-        "38827:38833",
         "4084:4090",
         "4273:4279",
         "4284:4295",
@@ -523,49 +107,60 @@ data:Constantine_II_of_Greece a :Ancestor,
         "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
         "Konstantínos 2",
         "Konstantínos II" ;
-    :hasFather data:Paul_of_Greece ;
-    :hasMother data:Frederica_of_Hanover ;
-    :hasParent data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :hasSex data:male ;
-    :isChildOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isSonOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece .
+    :hasParent data:Paul_of_Greece ;
+    :hasSex data:male .
 
-data:Michael_I_of_Romania a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:George_II_of_Greece a :Person ;
+    rdfs:label "George II of Greece" ;
+    data:posIndicesFull "21446:21470",
+        "21451:21470" ;
+    data:posIndicesPart "24543:24549",
+        "24579:24585",
+        "27027:27033",
+        "29501:29507",
+        "30645:30651",
+        "30679:30685",
+        "32468:32474",
+        "32896:32902",
+        "37314:37320",
+        "39301:39307",
+        "39359:39365" ;
+    data:wdtLink wdt:Q152935 ;
+    :alsoKnownAs "King George II of Greece" ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasSex data:male .
+
+data:Michael_I_of_Romania a :Person ;
     rdfs:label "Michael I of Romania" ;
     data:posIndicesFull "169:183",
         "174:183",
-        "18390:18399",
+        "17700:17709",
         "2258:2267",
-        "27369:27378",
-        "28301:28310",
-        "28465:28474",
-        "29584:29593",
-        "29967:29976",
-        "30371:30380",
-        "30809:30818",
-        "30906:30915",
-        "32389:32398",
-        "32503:32512",
-        "32833:32842",
-        "33072:33081",
-        "34498:34507",
-        "34788:34797",
-        "35036:35045",
-        "35326:35335",
-        "35357:35366",
-        "35439:35448",
-        "36184:36193",
-        "36392:36401",
-        "36460:36469",
-        "36653:36662",
-        "38182:38191",
-        "39835:39844" ;
+        "26179:26188",
+        "27111:27120",
+        "27275:27284",
+        "28394:28403",
+        "28777:28786",
+        "29181:29190",
+        "29619:29628",
+        "29716:29725",
+        "31005:31014",
+        "31119:31128",
+        "31449:31458",
+        "31688:31697",
+        "32959:32968",
+        "33389:33398",
+        "33637:33646",
+        "33927:33936",
+        "33958:33967",
+        "34040:34049",
+        "34785:34794",
+        "34993:35002",
+        "35061:35070",
+        "35254:35263",
+        "36669:36678",
+        "38539:38548" ;
     data:posIndicesPart "10008:10015",
         "10256:10263",
         "10965:10972",
@@ -577,56 +172,56 @@ data:Michael_I_of_Romania a :Ancestor,
         "12661:12668",
         "1281:1288",
         "1311:1318",
-        "13952:13959",
+        "13794:13801",
         "1425:1432",
-        "14898:14905",
-        "15651:15658",
-        "16504:16511",
-        "17208:17215",
+        "14629:14636",
+        "15202:15209",
+        "15966:15973",
+        "16518:16525",
+        "16716:16723",
+        "16942:16949",
         "1734:1741",
-        "17406:17413",
-        "17632:17639",
+        "18035:18042",
+        "18055:18062",
         "1871:1878",
-        "18725:18732",
-        "18745:18752",
-        "19459:19466",
+        "18769:18776",
+        "19419:19426",
         "1958:1965",
-        "20239:20246",
         "2023:2030",
-        "21260:21267",
-        "21593:21600",
-        "21833:21840",
-        "21933:21940",
-        "22466:22473",
-        "22736:22743",
-        "23268:23275",
-        "24098:24105",
-        "24110:24117",
-        "24893:24900",
-        "24998:25005",
-        "25851:25858",
-        "25876:25883",
-        "26094:26101",
-        "26422:26429",
-        "26712:26719",
-        "26990:26997",
-        "27181:27188",
-        "29434:29441",
-        "30156:30163",
-        "31244:31251",
-        "31632:31639",
-        "31953:31960",
-        "32787:32794",
-        "33421:33428",
-        "34334:34341",
-        "34753:34760",
-        "35145:35152",
-        "35910:35917",
-        "36127:36134",
-        "37073:37080",
-        "37719:37726",
-        "39629:39636",
-        "40514:40521",
+        "20440:20447",
+        "20773:20780",
+        "21013:21020",
+        "21113:21120",
+        "21646:21653",
+        "21916:21923",
+        "22448:22455",
+        "22991:22998",
+        "23003:23010",
+        "23786:23793",
+        "23891:23898",
+        "24661:24668",
+        "24686:24693",
+        "24904:24911",
+        "25232:25239",
+        "25522:25529",
+        "25800:25807",
+        "25991:25998",
+        "28244:28251",
+        "28966:28973",
+        "29860:29867",
+        "30248:30255",
+        "30569:30576",
+        "31403:31410",
+        "31882:31889",
+        "32795:32802",
+        "33354:33361",
+        "33746:33753",
+        "34511:34518",
+        "34728:34735",
+        "35674:35681",
+        "36206:36213",
+        "38333:38340",
+        "39134:39141",
         "743:750",
         "8347:8354",
         "8424:8431",
@@ -641,20 +236,77 @@ data:Michael_I_of_Romania a :Ancestor,
         "King Michael I of the Romanians",
         "Michael I",
         "Michael I of the Romanians" ;
-    :hasFather data:Carol_II_of_Romania ;
-    :hasMother data:Helen_of_Greece_and_Denmark ;
     :hasParent data:Carol_II_of_Romania,
         data:Helen_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :isChildOf data:Carol_II_of_Romania,
-        data:Helen_of_Greece_and_Denmark ;
-    :isSonOf data:Carol_II_of_Romania,
-        data:Helen_of_Greece_and_Denmark .
+    :hasSex data:male .
 
-data:Princess_Maria_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Margaret_of_Prussia a :Person ;
+    rdfs:label "Princess Margaret of Prussia" ;
+    data:posIndicesFull "24814:24818",
+        "25906:25911",
+        "26833:26837",
+        "2982:2986",
+        "31511:31515",
+        "32195:32199",
+        "32778:32783",
+        "34248:34254",
+        "3449:3453",
+        "35380:35384",
+        "36371:36375",
+        "570:574" ;
+    data:posIndicesPart "10320:10328",
+        "10989:10997",
+        "12022:12030",
+        "12261:12269",
+        "12537:12545",
+        "13176:13184",
+        "13991:13999",
+        "15117:15125",
+        "16114:16122",
+        "16704:16712",
+        "17494:17502",
+        "18403:18411",
+        "18621:18629",
+        "19558:19566",
+        "19977:19985",
+        "20249:20257",
+        "21253:21261",
+        "22219:22227",
+        "23152:23160",
+        "24243:24251",
+        "24341:24349",
+        "2501:2509",
+        "2630:2638",
+        "30114:30122",
+        "3044:3052",
+        "32536:32544",
+        "32833:32841",
+        "35456:35464",
+        "35817:35825",
+        "35826:35834",
+        "35912:35920",
+        "37112:37120",
+        "37390:37398",
+        "5910:5918",
+        "6382:6390",
+        "707:715",
+        "8614:8622",
+        "8865:8873" ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
+        "Margaret of Prussia",
+        "Margaret of Prussia, Queen consort-elect of Finland",
+        "Margaret of Prussia, Queen-elect of Finland",
+        "Margarethe Beatrice Feodora of Prussia",
+        "Margarethe of Prussia",
+        "Mossy",
+        "Princess Frederick Charles of Hesse",
+        "Princess Margaret Beatrice Feodora of Prussia",
+        "Princess Margarethe Beatrice Feodora of Prussia",
+        "Princess Margarethe of Prussia" ;
+    :hasSex data:female .
+
+data:Princess_Maria_of_Greece_and_Denmark a :Person ;
     rdfs:label "Princess Maria of Greece and Denmark" ;
     data:posIndicesFull "8273:8309" ;
     data:posIndicesPart "10320:10328",
@@ -665,44 +317,45 @@ data:Princess_Maria_of_Greece_and_Denmark a :Ancestor,
         "12022:12030",
         "12261:12269",
         "12537:12545",
-        "13334:13342",
-        "13504:13510",
-        "13759:13765",
-        "13788:13794",
-        "13845:13850",
-        "14224:14229",
-        "14260:14268",
-        "14500:14505",
-        "15566:15574",
-        "16652:16660",
-        "17394:17402",
-        "18184:18192",
-        "19093:19101",
-        "19311:19319",
-        "20378:20386",
-        "20797:20805",
-        "21069:21077",
-        "22073:22081",
-        "23039:23047",
-        "24259:24267",
-        "25531:25539",
-        "25769:25775",
-        "28217:28223",
-        "30691:30697",
-        "31498:31506",
-        "32063:32069",
-        "34075:34083",
-        "34372:34380",
-        "34629:34637",
-        "36542:36550",
-        "36855:36863",
-        "37216:37224",
-        "37237:37244",
-        "37311:37319",
-        "38401:38406",
-        "38625:38633",
-        "38827:38833",
-        "38903:38911",
+        "13176:13184",
+        "13346:13352",
+        "13601:13607",
+        "13630:13636",
+        "13687:13692",
+        "13955:13960",
+        "13991:13999",
+        "14231:14236",
+        "15117:15125",
+        "16114:16122",
+        "16704:16712",
+        "17494:17502",
+        "18403:18411",
+        "18621:18629",
+        "19558:19566",
+        "19977:19985",
+        "20249:20257",
+        "21253:21261",
+        "22219:22227",
+        "23152:23160",
+        "24243:24251",
+        "24341:24349",
+        "24579:24585",
+        "27027:27033",
+        "29501:29507",
+        "30114:30122",
+        "30679:30685",
+        "32536:32544",
+        "32833:32841",
+        "32896:32902",
+        "32907:32914",
+        "35456:35464",
+        "35817:35825",
+        "35838:35845",
+        "35912:35920",
+        "36888:36893",
+        "37112:37120",
+        "37314:37320",
+        "37390:37398",
         "8485:8490",
         "8614:8622",
         "8865:8873" ;
@@ -713,182 +366,161 @@ data:Princess_Maria_of_Greece_and_Denmark a :Ancestor,
         "Grand Duchess Maria Georgievna, The Grand Duchess Georgievna of Russia, Princess of Greece and Denmark",
         "Laci Marie",
         "The Princess Maria of Greece and Denmark" ;
-    :hasBrother data:Constantine_I_of_Greece ;
-    :hasFather data:George_I_of_Greece ;
-    :hasMother data:Olga_Constantinovna_of_Russia ;
     :hasParent data:George_I_of_Greece,
         data:Olga_Constantinovna_of_Russia ;
-    :hasSex data:female ;
-    :isAuntOf data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece,
-        data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Marina_of_Greece_and_Denmark ;
-    :isChildOf data:George_I_of_Greece,
-        data:Olga_Constantinovna_of_Russia ;
-    :isDaughterOf data:George_I_of_Greece,
-        data:Olga_Constantinovna_of_Russia ;
-    :isSiblingOf data:Constantine_I_of_Greece ;
-    :isSisterOf data:Constantine_I_of_Greece .
+    :hasSex data:female .
 
-data:Alexander_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alexander of Greece" ;
-    data:posIndicesFull "514:535" ;
-    data:posIndicesPart "10568:10577",
-        "10624:10630",
-        "11517:11523",
-        "11749:11755",
-        "13504:13510",
-        "13759:13765",
-        "13788:13794",
-        "13859:13868",
-        "14208:14217",
-        "2513:2519",
-        "25769:25775",
-        "2619:2625",
-        "2811:2820",
-        "28217:28223",
-        "2930:2939",
-        "30691:30697",
-        "32063:32069",
-        "3807:3813",
-        "38827:38833",
-        "4084:4090",
-        "4273:4279",
-        "4413:4419",
-        "4736:4742",
-        "4846:4855",
-        "4956:4962",
-        "5193:5199",
-        "5435:5441",
-        "5641:5647",
-        "6586:6592",
-        "6680:6686",
-        "6964:6973",
-        "7126:7132",
-        "7332:7341",
-        "7698:7704",
-        "8069:8078",
-        "9869:9878" ;
-    data:wdtLink wdt:Q151742 ;
-    :alsoKnownAs "Alexander I of Greece",
-        "King Alexander I of Greece",
-        "King Alexander of Greece" ;
-    :hasBrother data:George_II_of_Greece,
-        data:Paul_of_Greece ;
-    :hasFather data:Constantine_I_of_Greece ;
-    :hasMother data:Sophia_of_Prussia ;
-    :hasParent data:Constantine_I_of_Greece,
-        data:Sophia_of_Prussia ;
-    :hasSex data:male ;
-    :hasSister data:Helen_of_Greece_and_Denmark ;
-    :isBrotherOf data:George_II_of_Greece,
-        data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece ;
-    :isChildOf data:Constantine_I_of_Greece,
-        data:Sophia_of_Prussia ;
-    :isSiblingOf data:George_II_of_Greece,
-        data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece ;
-    :isSonOf data:Constantine_I_of_Greece,
-        data:Sophia_of_Prussia ;
-    :isUncleOf data:Constantine_II_of_Greece,
-        data:Michael_I_of_Romania .
+data:Queen_Anne_of_Romania a :Person ;
+    rdfs:label "Queen Anne of Romania" ;
+    data:posIndicesFull "33090:33120",
+        "35143:35173" ;
+    data:posIndicesPart "33217:33222",
+        "33501:33508",
+        "33746:33753",
+        "33983:33990",
+        "34215:34222",
+        "34511:34518",
+        "34728:34735",
+        "35465:35469",
+        "35847:35851",
+        "35921:35925",
+        "36025:36030",
+        "36071:36075",
+        "36683:36687",
+        "37264:37269",
+        "37785:37790",
+        "38333:38340",
+        "38553:38557",
+        "39092:39097",
+        "39112:39117",
+        "39134:39141" ;
+    data:wdtLink wdt:Q563765 ;
+    :alsoKnownAs "Princess Anne of Bourbon-Parma",
+        "Queen Anne",
+        "Queen Anne, Queen Consort of Romania" ;
+    :hasSex data:female .
 
-data:George_II_of_Greece a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George II of Greece" ;
-    data:posIndicesFull "22266:22290",
-        "22271:22290" ;
-    data:posIndicesPart "25733:25739",
-        "25769:25775",
-        "28217:28223",
-        "30691:30697",
-        "32029:32035",
-        "32063:32069",
-        "34007:34013",
-        "38827:38833",
-        "40681:40687",
-        "40739:40745" ;
-    data:wdtLink wdt:Q152935 ;
-    :alsoKnownAs "King George II of Greece" ;
-    :hasBrother data:Alexander_of_Greece,
-        data:Paul_of_Greece ;
-    :hasFather data:Constantine_I_of_Greece ;
-    :hasMother data:Sophia_of_Prussia ;
-    :hasParent data:Constantine_I_of_Greece,
-        data:Sophia_of_Prussia ;
-    :hasSex data:male ;
-    :hasSister data:Helen_of_Greece_and_Denmark ;
-    :isBrotherOf data:Alexander_of_Greece,
-        data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece ;
-    :isChildOf data:Constantine_I_of_Greece,
-        data:Sophia_of_Prussia ;
-    :isSiblingOf data:Alexander_of_Greece,
-        data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece ;
-    :isSonOf data:Constantine_I_of_Greece,
-        data:Sophia_of_Prussia ;
-    :isUncleOf data:Constantine_II_of_Greece,
-        data:Michael_I_of_Romania .
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "5268:5283",
+        "5276:5286" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasSex data:male .
 
-data:Sophia_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Sophia of Prussia" ;
-    data:posIndicesFull "22814:22836",
-        "261:278",
-        "2639:2656" ;
-    data:posIndicesPart "11222:11228",
-        "3153:3159",
-        "38912:38918",
-        "5756:5762",
-        "7087:7093",
-        "8433:8439",
-        "8660:8666" ;
-    data:wdtLink wdt:Q155822 ;
-    :alsoKnownAs "Queen Sophia of Greece",
-        "Queen Sophia, Queen Consort of Greece" ;
-    :hasBrother data:Wilhelm_II ;
-    :hasChild data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece ;
-    :hasDaughter data:Helen_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Margaret_of_Prussia ;
-    :hasSon data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Paul_of_Greece ;
-    :isAuntOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isMotherOf data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece ;
-    :isParentOf data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece ;
-    :isSiblingOf data:Princess_Margaret_of_Prussia,
-        data:Wilhelm_II ;
-    :isSisterOf data:Princess_Margaret_of_Prussia,
-        data:Wilhelm_II .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Helen_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Carol_II_of_Romania a :Person ;
+    rdfs:label "Carol II of Romania" ;
+    data:posIndicesFull "1681:1689",
+        "19090:19098",
+        "19131:19139",
+        "19164:19172",
+        "19839:19847",
+        "20192:20200",
+        "20404:20412",
+        "20527:20535",
+        "20689:20697",
+        "21583:21591",
+        "22396:22404",
+        "23084:23092",
+        "23421:23429",
+        "23671:23679",
+        "25419:25427",
+        "30501:30509",
+        "34439:34447",
+        "34600:34608",
+        "36503:36511",
+        "39003:39011" ;
+    data:posIndicesPart "10008:10015",
+        "10139:10144",
+        "10256:10263",
+        "10406:10411",
+        "10891:10896",
+        "10965:10972",
+        "11150:11155",
+        "11867:11874",
+        "12231:12238",
+        "12273:12280",
+        "12328:12335",
+        "12390:12395",
+        "13085:13090",
+        "13619:13624",
+        "13794:13801",
+        "13844:13849",
+        "14629:14636",
+        "14799:14804",
+        "14931:14936",
+        "15070:15075",
+        "15239:15244",
+        "15269:15274",
+        "15416:15421",
+        "15716:15721",
+        "15863:15868",
+        "15966:15973",
+        "15999:16004",
+        "16223:16228",
+        "16627:16632",
+        "16716:16723",
+        "17638:17643",
+        "18055:18062",
+        "18064:18069",
+        "18687:18692",
+        "1871:1878",
+        "18769:18776",
+        "2023:2030",
+        "21013:21020",
+        "21916:21923",
+        "24661:24668",
+        "24686:24693",
+        "25800:25807",
+        "25991:25998",
+        "27038:27045",
+        "28966:28973",
+        "29860:29867",
+        "30248:30255",
+        "31403:31410",
+        "31882:31889",
+        "32795:32802",
+        "33501:33508",
+        "33746:33753",
+        "33983:33990",
+        "34215:34222",
+        "38333:38340",
+        "39134:39141",
+        "8338:8343",
+        "8347:8354",
+        "8424:8431",
+        "8985:8992",
+        "9178:9183",
+        "9323:9328",
+        "9333:9340",
+        "9512:9517",
+        "9781:9788" ;
+    data:wdtLink wdt:Q212897 ;
+    :alsoKnownAs "Carol II",
+        "Charles II" ;
+    :hasSex data:male .
+
+data:Helen_of_Greece_and_Denmark a :Person ;
     rdfs:label "Helen of Greece and Denmark" ;
     data:posIndicesFull "0:27",
-        "39902:39932",
-        "40625:40636" ;
+        "38606:38636",
+        "39245:39256" ;
     data:posIndicesPart "10231:10236",
         "10424:10429",
         "10467:10472",
@@ -908,108 +540,110 @@ data:Helen_of_Greece_and_Denmark a :Ancestor,
         "12844:12849",
         "12916:12921",
         "13095:13100",
-        "13504:13510",
-        "13705:13710",
-        "13759:13765",
-        "13788:13794",
-        "13886:13891",
-        "14123:14128",
-        "14355:14360",
-        "14759:14764",
-        "14940:14945",
-        "15223:15228",
-        "15509:15514",
+        "13346:13352",
+        "13547:13552",
+        "13601:13607",
+        "13630:13636",
+        "13728:13733",
+        "13854:13859",
+        "14086:14091",
+        "14490:14495",
+        "14671:14676",
+        "14954:14959",
+        "15060:15065",
+        "15497:15502",
         "1584:1589",
-        "16035:16040",
-        "16513:16518",
-        "17378:17383",
+        "15975:15980",
+        "16688:16693",
+        "17134:17139",
+        "17329:17334",
         "1768:1773",
-        "17824:17829",
-        "18019:18024",
-        "18519:18524",
-        "18941:18946",
-        "19150:19155",
-        "19644:19649",
-        "20018:20023",
-        "20461:20466",
-        "20507:20512",
-        "21039:21044",
-        "21250:21255",
+        "17829:17834",
+        "18251:18256",
+        "18460:18465",
+        "18954:18959",
+        "19198:19203",
+        "19641:19646",
+        "19687:19692",
+        "20219:20224",
+        "20430:20435",
+        "20540:20545",
+        "20738:20743",
+        "20831:20836",
+        "20855:20860",
+        "20917:20922",
+        "21144:21149",
         "2131:2136",
-        "21360:21365",
-        "21558:21563",
-        "21651:21656",
-        "21675:21680",
-        "21737:21742",
-        "21964:21969",
-        "22325:22330",
-        "22547:22552",
-        "22725:22730",
-        "22901:22906",
-        "23142:23147",
-        "23206:23211",
-        "23325:23330",
-        "23448:23453",
-        "23587:23592",
-        "23902:23907",
+        "21505:21510",
+        "21727:21732",
+        "21905:21910",
+        "22081:22086",
+        "22322:22327",
+        "22386:22391",
+        "22505:22510",
+        "22628:22633",
+        "22642:22647",
+        "22795:22800",
+        "22966:22971",
+        "23414:23419",
+        "23746:23751",
+        "23989:23994",
         "2399:2404",
-        "24073:24078",
-        "24521:24526",
-        "24853:24858",
-        "25096:25101",
+        "24579:24585",
+        "24755:24760",
         "2513:2519",
         "2524:2531",
-        "25769:25775",
-        "25945:25950",
+        "25764:25769",
+        "26020:26025",
         "2619:2625",
+        "26235:26240",
+        "26377:26382",
         "2658:2663",
-        "26954:26959",
-        "27210:27215",
+        "26809:26814",
+        "27027:27033",
+        "27173:27178",
         "27425:27430",
-        "27567:27572",
-        "27999:28004",
         "280:285",
-        "28217:28223",
-        "28363:28368",
-        "28615:28620",
         "2890:2895",
+        "29084:29089",
+        "29501:29507",
         "2970:2975",
-        "30274:30279",
-        "30691:30697",
+        "29977:29982",
+        "30155:30160",
+        "30679:30685",
+        "30714:30719",
         "309:315",
-        "31361:31366",
-        "31539:31544",
-        "32063:32069",
-        "32098:32103",
+        "31981:31986",
+        "32233:32238",
         "3230:3235",
-        "33520:33525",
-        "33772:33777",
-        "34455:34460",
-        "34697:34702",
-        "35371:35376",
-        "35453:35458",
-        "35637:35642",
+        "32896:32902",
+        "32907:32914",
+        "32916:32921",
+        "33158:33163",
+        "33972:33977",
+        "34054:34059",
+        "34238:34243",
+        "35784:35789",
+        "35838:35845",
+        "36107:36112",
+        "36552:36557",
+        "36689:36694",
+        "36921:36926",
         "3699:3704",
-        "37183:37188",
-        "37237:37244",
-        "37620:37625",
-        "38065:38070",
+        "37046:37051",
+        "37140:37145",
+        "37281:37286",
+        "37314:37320",
+        "37436:37441",
+        "37506:37511",
+        "37650:37655",
+        "37930:37935",
         "3807:3813",
-        "38202:38207",
-        "38434:38439",
-        "38559:38564",
-        "38653:38658",
-        "38794:38799",
-        "38827:38833",
-        "38949:38954",
-        "39019:39024",
-        "39163:39168",
-        "39226:39231",
-        "39400:39405",
-        "39709:39714",
-        "40054:40059",
-        "40401:40406",
-        "40505:40510",
+        "38104:38109",
+        "38413:38418",
+        "38758:38763",
+        "39105:39110",
+        "39125:39130",
         "4084:4090",
         "4171:4176",
         "4273:4279",
@@ -1048,79 +682,93 @@ data:Helen_of_Greece_and_Denmark a :Ancestor,
         "Queen Helen, Queen Mother of Romania, Princess of Greece and Denmark",
         "Queen Helen, The Queen Mother of Romania",
         "Queen Helen, The Queen Mother of Romania, Princess of Greece and Denmark" ;
-    :hasBrother data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Paul_of_Greece ;
-    :hasChild data:Michael_I_of_Romania ;
-    :hasFather data:Constantine_I_of_Greece ;
-    :hasMother data:Sophia_of_Prussia ;
     :hasParent data:Constantine_I_of_Greece,
         data:Sophia_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Michael_I_of_Romania ;
-    :isAuntOf data:Constantine_II_of_Greece ;
-    :isChildOf data:Constantine_I_of_Greece,
-        data:Sophia_of_Prussia ;
-    :isDaughterOf data:Constantine_I_of_Greece,
-        data:Sophia_of_Prussia ;
-    :isMotherOf data:Michael_I_of_Romania ;
-    :isParentOf data:Michael_I_of_Romania ;
-    :isSiblingOf data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Paul_of_Greece ;
-    :isSisterOf data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Paul_of_Greece .
+    :hasSex data:female .
 
-data:Paul_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Paul_of_Greece a :Person ;
     rdfs:label "Paul of Greece" ;
-    data:posIndicesFull "37676:37697",
-        "37681:37697" ;
-    data:posIndicesPart "38827:38833" ;
+    data:posIndicesFull "36163:36184",
+        "36168:36184" ;
+    data:posIndicesPart "37314:37320" ;
     data:wdtLink wdt:Q155394 ;
     :alsoKnownAs "King Paul I of Greece",
         "King Paul of Greece",
         "King Pavlos I of Greece",
         "Paul I of Greece",
         "Pavlos I of Greece" ;
-    :hasBrother data:Alexander_of_Greece,
-        data:George_II_of_Greece ;
-    :hasChild data:Constantine_II_of_Greece ;
-    :hasFather data:Constantine_I_of_Greece ;
-    :hasMother data:Sophia_of_Prussia ;
     :hasParent data:Constantine_I_of_Greece,
         data:Sophia_of_Prussia ;
-    :hasSex data:male ;
-    :hasSister data:Helen_of_Greece_and_Denmark ;
-    :hasSon data:Constantine_II_of_Greece ;
-    :isBrotherOf data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Helen_of_Greece_and_Denmark ;
-    :isChildOf data:Constantine_I_of_Greece,
-        data:Sophia_of_Prussia ;
-    :isFatherOf data:Constantine_II_of_Greece ;
-    :isParentOf data:Constantine_II_of_Greece ;
-    :isSiblingOf data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Helen_of_Greece_and_Denmark ;
-    :isSonOf data:Constantine_I_of_Greece,
-        data:Sophia_of_Prussia ;
-    :isUncleOf data:Michael_I_of_Romania .
+    :hasSex data:male .
 
-data:Constantine_I_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:George_I_of_Greece a :Person ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "26702:26709",
+        "3689:3697",
+        "3922:3930",
+        "4547:4555" ;
+    data:posIndicesPart "10624:10630",
+        "11517:11523",
+        "11749:11755",
+        "11842:11848",
+        "13346:13352",
+        "13601:13607",
+        "13630:13636",
+        "14429:14435",
+        "24543:24549",
+        "24579:24585",
+        "27027:27033",
+        "29501:29507",
+        "30645:30651",
+        "30679:30685",
+        "32468:32474",
+        "32896:32902",
+        "37314:37320",
+        "3807:3813",
+        "39301:39307",
+        "39359:39365",
+        "4084:4090",
+        "4273:4279",
+        "4413:4419",
+        "4736:4742",
+        "4956:4962",
+        "5193:5199",
+        "5435:5441",
+        "5641:5647",
+        "6586:6592",
+        "6680:6686",
+        "6781:6787",
+        "7126:7132",
+        "7698:7704",
+        "8578:8584",
+        "9341:9347" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasSex data:male .
+
+data:Olga_Constantinovna_of_Russia a :Person ;
+    rdfs:label "Olga Constantinovna of Russia" ;
+    data:posIndicesFull "17408:17428",
+        "17414:17428" ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece",
+        "Queen Olga of Greece" ;
+    :hasSex data:female .
+
+data:Constantine_I_of_Greece a :Person ;
     rdfs:label "Constantine I of Greece" ;
     data:posIndicesFull "11072:11090",
         "11077:11090",
-        "13616:13634",
-        "13621:13634",
-        "14647:14665",
-        "14652:14665",
+        "13458:13476",
+        "13463:13476",
+        "14378:14396",
+        "14383:14396",
         "209:227",
         "209:237",
         "214:227",
@@ -1136,20 +784,21 @@ data:Constantine_I_of_Greece a :Ancestor,
         "11517:11523",
         "11571:11582",
         "11749:11755",
-        "13504:13510",
-        "13759:13765",
-        "13788:13794",
-        "17787:17798",
+        "13346:13352",
+        "13601:13607",
+        "13630:13636",
+        "17097:17108",
+        "24579:24585",
         "2513:2519",
-        "25769:25775",
         "2604:2615",
         "2619:2625",
-        "28217:28223",
-        "30691:30697",
-        "32063:32069",
+        "27027:27033",
+        "29501:29507",
+        "30679:30685",
+        "32896:32902",
+        "37314:37320",
         "3777:3788",
         "3807:3813",
-        "38827:38833",
         "4084:4090",
         "4273:4279",
         "4284:4295",
@@ -1168,34 +817,28 @@ data:Constantine_I_of_Greece a :Ancestor,
         "King Constantine I",
         "King Constantine I of Greece",
         "Konstantinos I of Greece" ;
-    :hasChild data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece ;
-    :hasDaughter data:Helen_of_Greece_and_Denmark ;
-    :hasFather data:George_I_of_Greece ;
-    :hasMother data:Olga_Constantinovna_of_Russia ;
     :hasParent data:George_I_of_Greece,
         data:Olga_Constantinovna_of_Russia ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Maria_of_Greece_and_Denmark ;
-    :hasSon data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Paul_of_Greece ;
-    :isBrotherOf data:Princess_Maria_of_Greece_and_Denmark ;
-    :isChildOf data:George_I_of_Greece,
-        data:Olga_Constantinovna_of_Russia ;
-    :isFatherOf data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece ;
-    :isParentOf data:Alexander_of_Greece,
-        data:George_II_of_Greece,
-        data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece ;
-    :isSiblingOf data:Princess_Maria_of_Greece_and_Denmark ;
-    :isSonOf data:George_I_of_Greece,
-        data:Olga_Constantinovna_of_Russia ;
-    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Marina_of_Greece_and_Denmark .
+    :hasSex data:male .
+
+data:Sophia_of_Prussia a :Person ;
+    rdfs:label "Sophia of Prussia" ;
+    data:posIndicesFull "21994:22016",
+        "261:278",
+        "2639:2656" ;
+    data:posIndicesPart "11222:11228",
+        "3153:3159",
+        "37399:37405",
+        "5756:5762",
+        "7087:7093",
+        "8433:8439",
+        "8660:8666" ;
+    data:wdtLink wdt:Q155822 ;
+    :alsoKnownAs "Queen Sophia of Greece",
+        "Queen Sophia, Queen Consort of Greece" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

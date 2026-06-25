@@ -69,32 +69,23 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Dowager Princess Napoléon
+Wittekind Adolf Heinrich Georg-Wilhelm, Prince of Waldeck and Pyrmont (Wittekind Adolf Heinrich Georg-Wilhelm Fürst zu Waldeck und Pyrmont; 9 March 1936 – 16 December 2024), was a member of the German nobility who from 1967 to 2024 was head of the House of Waldeck and Pyrmont.
+Biography
 
+Born in Arolsen (now Bad Arolsen) in Hesse, Germany, Wittekind was the only son of Josias Georg Wilhelm Adolf, Hereditary Prince of Waldeck and Pyrmont (1896−1967), an SS officer later found guilty of war crimes, and Duchess Altburg Marie Mathilde von Oldenburg (1903–2001), daughter of Frederick Augustus II, Grand Duke of Oldenburg.
+He was the great-nephew of Emma of Waldeck and Pyrmont (later Queen of the Netherlands and Grand Duchess of Luxembourg) and thus a second cousin of Queen Beatrix of the Netherlands, whom he welcomed to Arolsen Castle in both 2008, on the 150th anniversary of Queen Emma's birth, and 2016, to celebrate his own 80th birthday.
+Wittekind became head of the House of Waldeck and Pyrmont on his father's death in 1967.
+Marriage and family
 
-Olympia Bonaparte, Princess Napoléon (Olympia Elene Marie; née Countess Olympia von und zu Arco-Zinneberg, born 4 January 1988), is the wife of Jean-Christophe, Prince Napoléon, the disputed head of the House of Bonaparte and, in the view of Bonapartists, the pretender to the abolished French imperial throne.
-Early life and family
-
-Countess Olympia Elene Marie von und zu Arco-Zinneberg was born on 4 January 1988 in Munich to Count Riprand von und zu Arco-Zinneberg (1955-2021) and his wife, Archduchess Maria Beatrice of Austria-Este.
-Through her father she is a great-great-granddaughter of Ludwig III and Maria Theresa of Austria-Este, the last king and queen of Bavaria.
-Through her mother she is the granddaughter of Robert, Archduke of Austria-Este and Princess Margherita of Savoy-Aosta.
-She is a great-granddaughter of Charles I and Zita of Bourbon-Parma, the last emperor and empress of Austria.
-Olympia is also the great-great-great-great-grandniece of Marie Louise, Duchess of Parma, the second wife of Napoleon I.
-
-
-Personal life
-
-Olympia graduated from Yale University with a bachelor's degree in political science and from Columbia University in 2015 with a Master of Arts degree in art history.
-She met Jean-Christophe, Prince Napoléon during a semester studying abroad in Paris.
-Olympia and Jean-Christophe first held a civil marriage on 17 October 2019 at the town hall of Neuilly-sur-Seine.
-The wedding festivities were attended by members of European royal and noble families including Henri, Grand Duke of Luxembourg; Guillaume, Hereditary Grand Duke of Luxembourg; Stéphanie, Hereditary Grand Duchess of Luxembourg; Princess Maria Laura of Belgium, Archduchess of Austria-Este; Pavlos, Crown Prince of Greece; Princess Maria-Olympia of Greece and Denmark; Prince Philippos of Greece and Denmark; Nina Flohr; Prince Félix of Luxembourg; Princess Claire of Luxembourg; Prince Christian of Hanover; Princess Christian of Hanover; Princess Beatrice of York; and Edoardo Mapelli Mozzi.
-The Princess gave birth to a son, Louis Charles Riprand Victor Jérôme Marie, on 7 December 2022 in Paris.
+On 19 May 1988, in Frohnleiten, Wittekind married Countess Cecilia von Goëss-Saurau (born 1956), with whom he had three sons, including Carl-Anton, who succeeded him as Prince of Waldeck and Pyrmont.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -110,39 +101,9 @@ The Princess gave birth to a son, Louis Charles Riprand Victor Jérôme Marie, o
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -157,6 +118,23 @@ The Princess gave birth to a son, Louis Charles Riprand Victor Jérôme Marie, o
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -174,6 +152,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -241,29 +234,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -272,6 +257,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -284,6 +277,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -292,17 +287,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -330,6 +327,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -345,138 +426,158 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (3ffb9359-d260-41df-be4b-52275b1b0367)
- Call ID: 3ffb9359-d260-41df-be4b-52275b1b0367
+  AssignClass (74310181-e53a-4dfe-934d-994cb7bafdac)
+ Call ID: 74310181-e53a-4dfe-934d-994cb7bafdac
   Args:
-    source: Olympia_Bonaparte
-    type: :Woman
-  AssignClass (201ee729-e61a-4b69-93d2-6cd3af71544b)
- Call ID: 201ee729-e61a-4b69-93d2-6cd3af71544b
+    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
+    type: :Man
+  AssignClass (00756e19-6c0b-496c-9af5-d444d49bfd0a)
+ Call ID: 00756e19-6c0b-496c-9af5-d444d49bfd0a
   Args:
+    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
     type: :Person
-    source: Olympia_Bonaparte
-  AddLiteral (1e9b6053-c020-444f-8aeb-11d3506ff407)
- Call ID: 1e9b6053-c020-444f-8aeb-11d3506ff407
+  AddLiteral (d5481793-7e5e-47aa-9b55-d0011265aba2)
+ Call ID: d5481793-7e5e-47aa-9b55-d0011265aba2
   Args:
-    literal_type: xsd:integer
+    literal_value: 1936
     relation: :hasBirthYear
-    source: Olympia_Bonaparte
-    literal_value: 1988
-  AddLiteral (d2d01b21-1c46-4a50-999f-8a98801e3201)
- Call ID: d2d01b21-1c46-4a50-999f-8a98801e3201
-  Args:
-    relation: :alsoKnownAs
-    literal_type: xsd:string
-    source: Olympia_Bonaparte
-    literal_value: Olympia Elene Marie
-  AddLiteral (bb40bf7c-4d80-453d-8861-c601be5cb47d)
- Call ID: bb40bf7c-4d80-453d-8861-c601be5cb47d
-  Args:
-    literal_value: Countess Olympia von und zu Arco-Zinneberg
-    source: Olympia_Bonaparte
-    literal_type: xsd:string
-    relation: :formerlyKnownAs
-  AssignClass (1ed6206a-9643-49d0-b1f8-174124b171d2)
- Call ID: 1ed6206a-9643-49d0-b1f8-174124b171d2
-  Args:
-    source: Jean-Christophe_Prince_Napoleon
-    type: :Man
-  AssignClass (145f89ce-615b-4c59-8bc4-2b7659a50dfd)
- Call ID: 145f89ce-615b-4c59-8bc4-2b7659a50dfd
-  Args:
-    source: Jean-Christophe_Prince_Napoleon
-    type: :Person
-  AddTriple (0bc64de6-4cc9-45f5-9bea-74ac7205882b)
- Call ID: 0bc64de6-4cc9-45f5-9bea-74ac7205882b
-  Args:
-    target: Jean-Christophe_Prince_Napoleon
-    relation: :hasRelation
-    source: Olympia_Bonaparte
-  AddLiteral (8a20faba-50d2-4c64-b93a-4b0133a2d434)
- Call ID: 8a20faba-50d2-4c64-b93a-4b0133a2d434
-  Args:
-    literal_value: 2019
-    source: Olympia_Bonaparte
+    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
     literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AssignClass (b05c910b-9ec5-46c4-921d-2b3a4e809108)
- Call ID: b05c910b-9ec5-46c4-921d-2b3a4e809108
+  AddLiteral (20ec67fb-41d9-459f-bccc-802670de42ea)
+ Call ID: 20ec67fb-41d9-459f-bccc-802670de42ea
   Args:
-    source: Riprand_von_und_zu_Arco-Zinneberg
+    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
+    relation: :hasDeathYear
+    literal_value: 2024
+    literal_type: xsd:integer
+  AssignClass (ce4e7477-46d1-4dab-bbbc-1998c04fcab6)
+ Call ID: ce4e7477-46d1-4dab-bbbc-1998c04fcab6
+  Args:
+    source: Josias_Georg_Wilhelm_Adolf
     type: :Man
-  AssignClass (927ec206-ea9b-4eeb-a75e-589d537699df)
- Call ID: 927ec206-ea9b-4eeb-a75e-589d537699df
-  Args:
-    type: :Ancestor
-    source: Riprand_von_und_zu_Arco-Zinneberg
-  AssignClass (a9f3df46-05a7-4c0f-b6d4-79941509c64d)
- Call ID: a9f3df46-05a7-4c0f-b6d4-79941509c64d
+  AssignClass (71fc0148-9a45-499b-a1ba-8d85a92ffdf6)
+ Call ID: 71fc0148-9a45-499b-a1ba-8d85a92ffdf6
   Args:
     type: :Person
-    source: Riprand_von_und_zu_Arco-Zinneberg
-  AddLiteral (1fb34805-162f-4351-93b6-2fc2de1aa6fc)
- Call ID: 1fb34805-162f-4351-93b6-2fc2de1aa6fc
+    source: Josias_Georg_Wilhelm_Adolf
+  AddLiteral (7c885469-1c62-407a-83af-f54c73a477a4)
+ Call ID: 7c885469-1c62-407a-83af-f54c73a477a4
   Args:
-    source: Riprand_von_und_zu_Arco-Zinneberg
-    literal_value: 1955
+    source: Josias_Georg_Wilhelm_Adolf
+    literal_value: 1896
     relation: :hasBirthYear
     literal_type: xsd:integer
-  AddLiteral (f909d9d6-ca61-421e-9c49-4421bbda59e1)
- Call ID: f909d9d6-ca61-421e-9c49-4421bbda59e1
+  AddLiteral (7ee36a76-c5fd-46e8-9a78-e86cd5115e6f)
+ Call ID: 7ee36a76-c5fd-46e8-9a78-e86cd5115e6f
   Args:
     literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_value: 2021
-    source: Riprand_von_und_zu_Arco-Zinneberg
-  AssignClass (6218d85c-62ea-4596-a2b6-0573984ee9f4)
- Call ID: 6218d85c-62ea-4596-a2b6-0573984ee9f4
+    literal_value: 1967
+    source: Josias_Georg_Wilhelm_Adolf
+  AssignClass (77f37789-a22d-4a84-a3e3-ed2c25927992)
+ Call ID: 77f37789-a22d-4a84-a3e3-ed2c25927992
   Args:
-    source: Maria_Beatrice_of_Austria-Este
     type: :Woman
-  AssignClass (b8f55e36-6f24-4299-b2dc-05e551fde608)
- Call ID: b8f55e36-6f24-4299-b2dc-05e551fde608
+    source: Altburg_Marie_Mathilde_von_Oldenburg
+  AssignClass (f6f3adea-2779-4ea3-96f5-c6650b5a0e1d)
+ Call ID: f6f3adea-2779-4ea3-96f5-c6650b5a0e1d
   Args:
-    source: Maria_Beatrice_of_Austria-Este
-    type: :Ancestor
-  AssignClass (58ef42f6-fc15-4843-9b90-6bf74c4e66d9)
- Call ID: 58ef42f6-fc15-4843-9b90-6bf74c4e66d9
-  Args:
-    source: Maria_Beatrice_of_Austria-Este
+    source: Altburg_Marie_Mathilde_von_Oldenburg
     type: :Person
-  AddTriple (106d169d-706b-46e6-a292-76feb4bb4874)
- Call ID: 106d169d-706b-46e6-a292-76feb4bb4874
+  AddLiteral (026d86a5-56f6-4bea-aa7c-9fc2ea75d30c)
+ Call ID: 026d86a5-56f6-4bea-aa7c-9fc2ea75d30c
   Args:
-    source: Olympia_Bonaparte
+    relation: :hasBirthYear
+    literal_value: 1903
+    source: Altburg_Marie_Mathilde_von_Oldenburg
+    literal_type: xsd:integer
+  AddLiteral (a58cc49b-345a-4130-84bc-a2f30d2318df)
+ Call ID: a58cc49b-345a-4130-84bc-a2f30d2318df
+  Args:
+    literal_type: xsd:integer
+    source: Altburg_Marie_Mathilde_von_Oldenburg
+    literal_value: 2001
+    relation: :hasDeathYear
+  AddTriple (481cd4f0-4057-4601-aded-dca67704c8ef)
+ Call ID: 481cd4f0-4057-4601-aded-dca67704c8ef
+  Args:
+    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
+    target: Josias_Georg_Wilhelm_Adolf
     relation: :hasFather
-    target: Riprand_von_und_zu_Arco-Zinneberg
-  AddTriple (8c98c308-b1f9-46c8-a274-56e5edcc830f)
- Call ID: 8c98c308-b1f9-46c8-a274-56e5edcc830f
+  AddTriple (5573c828-fde9-4b0e-9812-f96840e928a3)
+ Call ID: 5573c828-fde9-4b0e-9812-f96840e928a3
   Args:
-    source: Olympia_Bonaparte
+    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
     relation: :hasMother
-    target: Maria_Beatrice_of_Austria-Este
-  AssignClass (f737a260-2839-4b91-a205-7ad81926edb8)
- Call ID: f737a260-2839-4b91-a205-7ad81926edb8
+    target: Altburg_Marie_Mathilde_von_Oldenburg
+  AssignClass (a0881f9b-328f-465e-b8de-a9095e6f1dcc)
+ Call ID: a0881f9b-328f-465e-b8de-a9095e6f1dcc
   Args:
-    source: Louis_Charles_Riprand_Victor_Jerome_Marie
+    source: Frederick_Augustus_II
     type: :Man
-  AssignClass (0aeda58c-5cac-4b43-98a9-d7c0bd165ad8)
- Call ID: 0aeda58c-5cac-4b43-98a9-d7c0bd165ad8
+  AssignClass (b2ac60aa-70ec-45fb-bd57-d5e37e9242f1)
+ Call ID: b2ac60aa-70ec-45fb-bd57-d5e37e9242f1
   Args:
-    source: Louis_Charles_Riprand_Victor_Jerome_Marie
     type: :Person
-  AddTriple (f1b01501-0be4-4154-901f-f893245e8f88)
- Call ID: f1b01501-0be4-4154-901f-f893245e8f88
+    source: Frederick_Augustus_II
+  AddTriple (8363270c-593a-4f2c-8b1e-cdac41e6c523)
+ Call ID: 8363270c-593a-4f2c-8b1e-cdac41e6c523
   Args:
-    relation: :isSonOf
-    target: Olympia_Bonaparte
-    source: Louis_Charles_Riprand_Victor_Jerome_Marie
-  AddTriple (99a16721-bf50-4df6-90e7-51ec6578636c)
- Call ID: 99a16721-bf50-4df6-90e7-51ec6578636c
+    source: Altburg_Marie_Mathilde_von_Oldenburg
+    relation: :hasFather
+    target: Frederick_Augustus_II
+  AssignClass (934305c0-5970-40a9-9b83-17a14821cab4)
+ Call ID: 934305c0-5970-40a9-9b83-17a14821cab4
   Args:
-    source: Louis_Charles_Riprand_Victor_Jerome_Marie
-    target: Jean-Christophe_Prince_Napoleon
-    relation: :isSonOf
-  Finish (c3939d91-8be0-4f86-8360-86f12117234d)
- Call ID: c3939d91-8be0-4f86-8360-86f12117234d
+    type: :Woman
+    source: Cecilia_von_Goëss-Saurau
+  AssignClass (04718258-0535-44b2-8e18-573bd3a52dbb)
+ Call ID: 04718258-0535-44b2-8e18-573bd3a52dbb
+  Args:
+    source: Cecilia_von_Goëss-Saurau
+    type: :Person
+  AddLiteral (068793f6-c08e-4379-a8cc-535ae6cff70f)
+ Call ID: 068793f6-c08e-4379-a8cc-535ae6cff70f
+  Args:
+    literal_value: 1956
+    relation: :hasBirthYear
+    source: Cecilia_von_Goëss-Saurau
+    literal_type: xsd:integer
+  AddLiteral (e6f12c2e-003c-4752-b72e-31527ee68a11)
+ Call ID: e6f12c2e-003c-4752-b72e-31527ee68a11
+  Args:
+    literal_value: 1988
+    relation: :hasMarriageYear
+    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
+    literal_type: xsd:integer
+  AddTriple (a228cd06-3b0a-42a3-ab2a-3fb76cc48669)
+ Call ID: a228cd06-3b0a-42a3-ab2a-3fb76cc48669
+  Args:
+    relation: :hasRelation
+    target: Cecilia_von_Goëss-Saurau
+    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
+  AssignClass (df162252-c3f0-4dbe-bb0b-acdae342fbae)
+ Call ID: df162252-c3f0-4dbe-bb0b-acdae342fbae
+  Args:
+    source: Carl-Anton
+    type: :Man
+  AssignClass (e9546e8b-0c96-41b8-9713-20c36afc9973)
+ Call ID: e9546e8b-0c96-41b8-9713-20c36afc9973
+  Args:
+    type: :Person
+    source: Carl-Anton
+  AddTriple (b8c02c48-8ed7-4672-8494-fab434c22c40)
+ Call ID: b8c02c48-8ed7-4672-8494-fab434c22c40
+  Args:
+    target: Wittekind_Adolf_Heinrich_Georg-Wilhelm
+    relation: :hasFather
+    source: Carl-Anton
+  AddTriple (f3ccb2d8-11e7-4823-9bf2-cb99401adc22)
+ Call ID: f3ccb2d8-11e7-4823-9bf2-cb99401adc22
+  Args:
+    target: Cecilia_von_Goëss-Saurau
+    relation: :hasMother
+    source: Carl-Anton
+  Finish (1c779f6d-ebd1-4072-83b2-17ca2b7cfa3b)
+ Call ID: 1c779f6d-ebd1-4072-83b2-17ca2b7cfa3b
   Args:

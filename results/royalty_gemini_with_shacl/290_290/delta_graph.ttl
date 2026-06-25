@@ -2,39 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:HermanJud a :Man,
-        :Person ;
-    :hasMarriageYear 1946 .
+data:Charles_III a :Man ;
+    :hasBirthYear 1948 ;
+    :hasChild data:Harry,
+        data:William ;
+    :hasFather data:Philip_Duke_of_Edinburgh ;
+    :hasMarriageYear 1981,
+        2005 ;
+    :hasMother data:Elizabeth_II ;
+    :hasRelation data:Camilla_Parker_Bowles ;
+    :knownAs "Charles III"^^xsd:string .
 
-data:NancyHelenMarieLeeds a :Person,
+data:Camilla_Parker_Bowles a :Woman .
+
+data:Elizabeth_II a :Ancestor,
         :Woman ;
-    :isDaughterOf data:WilliamBatemanLeedsJr,
-        data:XeniaGeorgievna .
+    :hasFather data:George_VI .
 
-data:GeorgeMihailovich a :Ancestor,
-        :Man,
-        :Person .
+data:George_VI a :Ancestor,
+        :Man .
 
-data:MariaGeorgievna a :Ancestor,
-        :Person,
+data:Harry a :Man ;
+    :hasMother data:Diana_Spencer .
+
+data:Philip_Duke_of_Edinburgh a :Ancestor,
+        :Man .
+
+data:William a :Man ;
+    :hasMother data:Diana_Spencer .
+
+data:Diana_Spencer a :Ancestor,
         :Woman .
-
-data:NinaGeorgievna a :Person,
-        :Woman .
-
-data:WilliamBatemanLeedsJr a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1902 ;
-    :hasDeathYear 1971 .
-
-data:XeniaGeorgievna a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1903 ;
-    :hasDeathYear 1965 ;
-    :hasFather data:GeorgeMihailovich ;
-    :hasMarriageYear 1921 ;
-    :hasMother data:MariaGeorgievna ;
-    :hasSister data:NinaGeorgievna .
 

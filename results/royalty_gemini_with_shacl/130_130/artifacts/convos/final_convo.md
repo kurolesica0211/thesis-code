@@ -85,120 +85,36 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-King Juan Carlos IQueen Sofía
+George William, Hereditary Prince of Hanover, Duke of Brunswick-Lüneburg (German: Georg Wilhelm Christian Albert Edward Alexander Friedrich Ernst Waldemar Adolf; 28 October 1880 – 20 May 1912) was a German prince from the House of Hanover.
+He was the second child and eldest son of Ernest Augustus, Crown Prince of Hanover and Duke of Cumberland, and Princess Thyra of Denmark.
+His father was the only son of George V of Hanover and his mother was the youngest daughter of Christian IX of Denmark.
+His great-grandfather, Prince Ernest Augustus, Duke of Cumberland and Teviotdale, the fifth son of George III of the United Kingdom, became king of Hanover in 1837 because Salic Law barred Queen Victoria from inheriting the Hanoverian throne.
+His godparents included his maternal grandfather Christian IX of Denmark, his uncle George I of Greece, his uncle Frederick, Crown Prince of Denmark, his uncle Alexander Alexandrovich, Tsarevich of Russia, his uncle Albert Edward, Prince of Wales, his uncle Prince Valdemar of Denmark, Prince George, Duke of Cambridge, and William, Duke of Brunswick.
+The family had lived in exile in Austria since the Kingdom of Hanover was annexed by Prussia in the aftermath of the 1866 Austro-Prussian War.
+His father succeeded as pretender to the Hanoverian throne and as Duke of Cumberland and Teviotdale in the peerage of Great Britain in 1878.
+He represented his father at the funeral of Edward VII and the coronation of George V.
 
 
-The Duchess of Soria and HernaniThe Duke of Soria and Hernani
+When his kinsman William, Duke of Brunswick, died unmarried in 1884, George William was his heir after his father.
+Otto von Bismarck blocked Crown Ernest Augustus's claim because he had never relinquished his claim to Hanover and instead appointed Prince Albert of Prussia regent.
+Prince Albert died in 1906 and Crown Ernest Augustus offered that he and George William would renounce their claims to Brunswick to allow his second son Prince Ernest Augustus to succeed.
+The Bundesrat rejected this and appointed Duke John Albert of Mecklenburg as regent.
+The younger Ernest Augustus finally succeeded in 1913 after he married the German Emperor's daughter after George William's death.
+Death
 
-
-The Dowager Duchess of Calabria
-
-
-Leonor, Princess of Asturias
-(Leonor de Todos los Santos de Borbón y Ortiz; born 31 October 2005) is the heir presumptive to the Spanish throne.
-She is the elder daughter of King Felipe VI and Queen Letizia.
-Leonor was born during the reign of her paternal grandfather, King Juan Carlos I.
-On 17 August 2023, Leonor joined the General Military Academy to start her 3-year military education.
-In 2014, following her father's accession to the throne after the abdication of her grandfather, Leonor was granted all the traditional titles of the heir to the Spanish crown.
-These are Princess of Asturias, Princess of Girona, Princess of Viana, Duchess of Montblanc, Countess of Cervera, and Lady of Balaguer.
-Leonor was formally proclaimed heir before the Cortes on 31 October 2023, her 18th birthday.
-Should Leonor ascend to the throne as expected, she will be Spain's first queen regnant since her fourth great-grandmother Isabella II, who reigned from 1833 to 1868.
-Early life and education
-
-Leonor was born on 31 October 2005 at 01:46, three weeks before her due date, to Felipe and Letizia, then the Prince and Princess of Asturias, during the reign of her paternal grandfather, King Juan Carlos I, in the Ruber International Hospital in Madrid using a caesarean section necessitated by non-progression of labour.
-Shortly after her birth, Leonor's umbilical cord stem cells were sent to a blood bank in Tucson, Arizona.
-This decision sparked public debate in Spain, as the blood bank was private and located abroad.
-Leonor left the Ruber International Hospital with her parents on 7 November 2005.
-Like her father, Leonor was baptised – with water from the Jordan River – in a Romanesque baptismal font that has been used to christen Spanish princes since the 17th century.
-Her godparents were her paternal grandparents, King Juan Carlos I and Queen Sofía.
-She received the name of Leonor de Todos los Santos.
-During her early months, Leonor developed a small angioma, a benign tumor of blood vessels, on her nose.
-Leonor's education began at Escuela Infantil Guardia Real, the daycare for the children of the Spanish Royal Guard.
-Leonor was reported to have good grades during her studies in Rosales.
-In September 2021, Leonor began studying a 2-year International Baccalaureate program at the UWC Atlantic College in the Llantwit Major, Wales.
-Leonor also attended summer camps in the United States.
-She is fluent in Spanish, Catalan and English (the latter learnt from her British nanny and also from her grandmother, Queen Sofía) and has studied French, Galician, Basque, Arabic and Mandarin.
-Military service
-
-In preparation for her role as Spain's commander-in-chief, following her father's footsteps, Leonor is currently spending three years of army, naval and air force training at the General Military Academy in Zaragoza, the Naval Military Academy in Marín and the General Air Academy in Murcia, respectively.
-In this sense, in March 2023, the minister of defense, Margarita Robles, announced that the government had approved a royal decree for Leonor to begin a 3-year military training education program.
-Leonor chose to use both of her parents surnames "Borbón Ortiz" in her military career.
-Also, whilst attending the military academies, Leonor will renounce her salary and any money that cadets receive.
-Leonor swore an oath of allegiance to the Spanish flag at the General Military Academy on 7 October 2023, in the presence of her parents.
-In January 2024, Leonor participated in the 24th Sports Championship of Military Academies for Officers, competing in fencing and volleyball as one of the representatives of the General Military Academy.
-Leonor was promoted to the rank of Cadet Ensign (Spanish: Alférez) and awarded the Grand Cross of Military Merit by her father King Felipe VI on 3 July 2024.
-In September 2024, Leonor and other students from the Naval School conducted seamanship instruction activities in the Pontevedra Estuary.
-On 8 January 2025, she boarded the training ship Juan Sebastián de Elcano, beginning three days later a five-month voyage in which she trained as a sailor and visited many Latin American countries, as well as New York City.
-After disembarking at this last port, the heir to the Crown returned to Spain by plane to embark for a month on the frigate Blas de Lezo, where she participated in naval maneuvers with live fire.
-On 16 July 2025, Leonor was promoted to the rank of as Midshipman of 2nd grade and awarded the Grand Cross of Naval Merit by her father.
-On 1 September 2025, Leonor started her third and final year of military training in the General Air and Space Academy in San Javier.
-On 25 April 2026, Leonor participated in the 25th Inter-University Canoeing Regatta held in Santiago de la Ribera, on the Mar Menor.
-Princess of Asturias
-
-Early years
-
-In May 2014, Leonor made her first official visit to the San Javier Air Force base in Murcia.
-On 18 June 2014, King Juan Carlos signed the Abdication Act, and the following day at the stroke of midnight (18–19 June 2014)
-Leonor's father ascended the throne becoming King Felipe VI, and Leonor became his heir presumptive and Princess of Asturias.
-In October 2014, a wax figure of Leonor was unveiled at the Museo de Cera in Madrid.
-On 20 May 2015, Leonor received First Communion as per Catholic custom.
-According to the Spanish constitution of 1978, the succession to the Spanish throne is under a system of male-preference cognatic primogeniture, meaning that Leonor, as the elder of Felipe's two daughters, is first in line to inherit the throne.
-Under the current law, however, if her father has a legitimate son while still king, Leonor would be displaced in the line of succession and again become an infanta of Spain.
-There have been discussions about changing the succession law to absolute primogeniture, allowing for the inheritance of the eldest child, regardless of sex; however, the birth of Leonor, followed by that of her younger sister Sofía, stalled these plans.
-Coinciding with the 50th birthday of King Felipe, in January 2018, the King officially gave Leonor the collar of the Golden Fleece in a ceremony at the Royal Palace of Madrid.
-In September 2018, Leonor conducted her first public engagement outside the palace by accompanying her parents to Covadonga to celebrate the 1300th anniversary of the Kingdom of Asturias.
-On 31 October 2018, Leonor gave her first public speech, held at the Instituto Cervantes in Madrid, where she read the first article of the Constitution of Spain.
-She made her first significant speech at Premio Princesa de Asturias on 18 October 2019.
-She made her first speech on 4 November 2019 at the Princess of Girona Foundation awards in Barcelona, in which she spoke in Spanish, Catalan, English and Arabic.
-Leonor carried out her first public solo engagement on 24 March 2021 by attending a ceremony to mark the 30th anniversary of the Instituto Cervantes.
-Leonor made her first official international trip on 16 July 2022.
-She did it without the presence of her parents, although she was accompanied by her younger sister, Infanta Sofía.
-Together, they attended a match between Spain and Denmark at the UEFA Women's Euro 2022.
-In December 2022, Leonor visited the Spanish Red Cross headquarters in Madrid where she met young volunteers of The Red Cross Youth, the youth section of the Spanish Red Cross.
-In July 2025 she alongside Infanta Sofía attended the match between England and Spain for the UEFA Women’s Euro 2025.
-Heir's oath
-
-The Royal Household made public on 22 September 2023 that, as required under the Spanish Constitution, the princess would swear allegiance to the Constitution and the King upon reaching the age of majority.
-At the  Palacio de las Cortes the royal family received state honors, and the Princess of Asturias took her oath before a joint session of the Spanish Parliament, which received her oath with an ovation of more than four minutes.
-After this ceremony, the royal family and the main authorities of the country went to the Royal Palace, where her father, King Felipe, awarded her with the Collar of the Order of Charles III, the highest civil honor in Spain.
-The entire paternal and maternal family attended this private event, as well as the Greek royal family, represented by Queen Anne-Marie and Princess Alexia and her husband, some members of the House of Bourbon-Two Sicilies including Prince Pedro, Duke of Calabria, representatives of the Bulgarian royal family, and Princess Miriam Ghazi.
-Official agenda
-
-On 6 January 2024, Leonor attended the Pascua Militar for the first time, a more than two-centuries-old Spanish military celebration.
-On 12 July 2024, Leonor made her first official foreign visit.
-In this trip, Leonor, who was accompanied by the Portuguese leader, the Spanish foreign minister, José Manuel Albares, and the private secretary to the king, Camilo Villarino, focused her activities on environmental protection and ocean conservation, visiting the Lisbon Oceanarium and attending a debate on ocean protection.
-She also visited the Jerónimos Monastery, where she paid tribute to the poet Luís de Camões, and later went to Belém Palace, where delegations from both countries met and had a lunch, and where President Rebelo de Sousa awarded Leonor the Grand Cross of the Military Order of Christ.
-On 25 October 2024, she attended the Princess of Asturias Awards ceremony for the first time as an adult, being in charge of giving the speech to the winners and, later, declaring the event closed and convening the awards for its next edition.
-On 4 August 2025, Leonor along with her sister Infanta Sofía attended the annual reception at Marivent Palace for authorities and relevant citizens of the Balearic Islands.
-The reception was also attended by King Felipe VI, Queen Letizia, and Queen Sofía.
-This event marked the first reception attended by Leonor and Sofía.
-From 26 to 27 September 2025, Leonor made an official visit —with her parents— to the Chartered Community of Navarre.
-The two-day trip was made to celebrate the 600th anniversary of the title of Princess of Viana, one of the titles of the heir to the Crown —as heir of the ancient Kingdom of Navarre—.
-On 24 October 2025, she presided over the seventh edition of the Princess of Asturias Awards.
-As Leonor is the heir to the throne, King Felipe confessed the 2026 ceremony would only be her presiding over it.
-Titles, styles, honours and arms
-
-As children of the prince of Asturias, Leonor was born infanta and initially styled "Her Royal Highness Infanta Doña Leonor".
-Upon her father's accession to the throne, Leonor became the heir presumptive to the Spanish throne, and she inherited the traditional titles of the heir:
-Princess of Asturias, Princess of Girona, Princess of Viana, Duchess of Montblanc, Countess of Cervera and Lady of Balaguer.
-Leonor is the 36th person to bear the title of princess of Asturias since its creation in 1388.
-Since then, Leonor is generally styled as "Her Royal Highness The Princess of Asturias", although depending on the province of the country, another title may be added.
-For example, when visiting the territories of the former Crown of Aragon, she is usually titled "Her Royal Highness the Princess of Asturias and Girona" and, in Navarre, she is referred as "Her Royal Highness the Princess of Asturias and Viana".
-Honours
-
-As heir to the throne, she is the nominal chairwoman of the Princess of Asturias Foundation and the Princess of Girona Foundation.
-Coins
-
-On 31 October 2023, the Royal Mint of Spain minted a gold-silver coin which depicts Leonor, to commemorate her coming of age as an emblematic event.
-Other
-
-A collector stamp was made in her honor alongside her father King Felipe, to commemorate 50 years since the end of the dictatorship of former leader Francisco Franco.
+On 20 May 1912, George William was killed, aged 31, in a car crash near Nackel, Brandenburg, while driving from Prague to Copenhagen to attend the funeral of his uncle, Frederick VIII of Denmark.
+In response to George William's death, Wilhelm II, German Emperor, sent his sons Prince Eitel Friedrich and Prince August Wilhelm of Prussia to Nackel and sent a message of condolence to the Duke of Cumberland.
+In response to this friendly gesture, the Duke sent his only surviving son, Ernest Augustus, to Berlin to thank the Emperor.
+In Berlin, Ernest Augustus met and fell in love with the emperor's only daughter, Princess Victoria Louise of Prussia.
+They married in 1913, thus reconciling the Houses of Hohenzollern and Hanover, and the Emperor approved Ernest Augustus's succession to the duchy of Brunswick shortly after.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -214,39 +130,9 @@ A collector stamp was made in her honor alongside her father King Felipe, to com
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -261,6 +147,23 @@ A collector stamp was made in her honor alongside her father King Felipe, to com
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -278,6 +181,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -345,29 +263,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -376,6 +286,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -388,6 +306,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -396,17 +316,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -434,6 +356,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -449,124 +455,200 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (cf16c990-cd35-4df3-99ff-2037a5eb43db)
- Call ID: cf16c990-cd35-4df3-99ff-2037a5eb43db
+  AssignClass (87857703-072f-43ba-a717-b367c66c532b)
+ Call ID: 87857703-072f-43ba-a717-b367c66c532b
   Args:
-    type: :Person
-    source: Leonor
-  AssignClass (c4bd33e7-7f32-46a6-818d-75c45d3f6f8f)
- Call ID: c4bd33e7-7f32-46a6-818d-75c45d3f6f8f
-  Args:
-    type: :Woman
-    source: Leonor
-  AssignClass (7f578edc-025c-404e-bb48-465f12965164)
- Call ID: 7f578edc-025c-404e-bb48-465f12965164
-  Args:
-    type: :Person
-    source: Felipe_VI
-  AssignClass (4b4f769f-8e5a-42be-b4c5-3e6b5127d198)
- Call ID: 4b4f769f-8e5a-42be-b4c5-3e6b5127d198
-  Args:
+    source: :George_William
     type: :Man
-    source: Felipe_VI
-  AssignClass (48593358-e7a6-4383-950f-77a8dd91c6ac)
- Call ID: 48593358-e7a6-4383-950f-77a8dd91c6ac
+  AssignClass (47ddd270-9791-44b0-b878-7a49a749fe14)
+ Call ID: 47ddd270-9791-44b0-b878-7a49a749fe14
   Args:
+    source: :George_William
     type: :Person
-    source: Letizia
-  AssignClass (99b0eb38-068d-44b0-b026-9863e66b49c4)
- Call ID: 99b0eb38-068d-44b0-b026-9863e66b49c4
+  AddLiteral (8142dd2c-30e8-4a22-9edf-1d1df521857d)
+ Call ID: 8142dd2c-30e8-4a22-9edf-1d1df521857d
   Args:
-    type: :Woman
-    source: Letizia
-  AssignClass (965ca21c-3578-4486-87aa-4359bd5ef3df)
- Call ID: 965ca21c-3578-4486-87aa-4359bd5ef3df
-  Args:
-    type: :Person
-    source: Juan_Carlos_I
-  AssignClass (e562a613-c0ae-4239-87e5-cf41499fb871)
- Call ID: e562a613-c0ae-4239-87e5-cf41499fb871
-  Args:
-    type: :Man
-    source: Juan_Carlos_I
-  AssignClass (f2223651-7984-4405-ace5-72927d861b97)
- Call ID: f2223651-7984-4405-ace5-72927d861b97
-  Args:
-    type: :Person
-    source: Sofia
-  AssignClass (b8f9ddd5-38b1-4694-94a8-8ad2477c2232)
- Call ID: b8f9ddd5-38b1-4694-94a8-8ad2477c2232
-  Args:
-    type: :Woman
-    source: Sofia
-  AssignClass (e194b000-288c-4665-8052-9a1ad44335a1)
- Call ID: e194b000-288c-4665-8052-9a1ad44335a1
-  Args:
-    type: :Person
-    source: Infanta_Sofia
-  AssignClass (8f0dc3dc-a927-4acb-b9a5-6c5d31e76e97)
- Call ID: 8f0dc3dc-a927-4acb-b9a5-6c5d31e76e97
-  Args:
-    type: :Woman
-    source: Infanta_Sofia
-  AddTriple (6ff4b0b1-521c-4c47-97fa-d0d642142c01)
- Call ID: 6ff4b0b1-521c-4c47-97fa-d0d642142c01
-  Args:
-    relation: :hasFather
-    target: Felipe_VI
-    source: Leonor
-  AddTriple (ddc93a23-b374-4b3e-bca2-d9b202805147)
- Call ID: ddc93a23-b374-4b3e-bca2-d9b202805147
-  Args:
-    source: Leonor
-    target: Letizia
-    relation: :hasMother
-  AddTriple (ba037ed2-9431-4799-af03-3da4bd005f3f)
- Call ID: ba037ed2-9431-4799-af03-3da4bd005f3f
-  Args:
-    source: Felipe_VI
-    target: Juan_Carlos_I
-    relation: :hasFather
-  AddTriple (11bfe547-fde8-4ad5-a4b9-2cce98cb172a)
- Call ID: 11bfe547-fde8-4ad5-a4b9-2cce98cb172a
-  Args:
-    relation: :hasMother
-    source: Felipe_VI
-    target: Sofia
-  AddTriple (7d095b62-6134-45d5-89e4-a9ed94479f77)
- Call ID: 7d095b62-6134-45d5-89e4-a9ed94479f77
-  Args:
-    relation: :hasFather
-    source: Infanta_Sofia
-    target: Felipe_VI
-  AddTriple (ef305065-adb6-4867-9af4-6c6616bc2d8d)
- Call ID: ef305065-adb6-4867-9af4-6c6616bc2d8d
-  Args:
-    target: Letizia
-    source: Infanta_Sofia
-    relation: :hasMother
-  AddTriple (c1b3c169-41d3-45e8-9ba3-14be9b9e521a)
- Call ID: c1b3c169-41d3-45e8-9ba3-14be9b9e521a
-  Args:
-    relation: :isSisterOf
-    source: Leonor
-    target: Infanta_Sofia
-  AddTriple (10997c72-e57c-4338-a4fc-a7e29981a603)
- Call ID: 10997c72-e57c-4338-a4fc-a7e29981a603
-  Args:
-    relation: :isSisterOf
-    source: Infanta_Sofia
-    target: Leonor
-  AddLiteral (5523892f-7027-4446-b037-c58428b30cff)
- Call ID: 5523892f-7027-4446-b037-c58428b30cff
-  Args:
-    source: Leonor
-    literal_value: 2005
+    literal_value: 1880
     relation: :hasBirthYear
     literal_type: xsd:integer
-  Finish (10ee1355-e70e-4624-b36f-b2cbe5be5f6a)
- Call ID: 10ee1355-e70e-4624-b36f-b2cbe5be5f6a
+    source: :George_William
+  AddLiteral (d0d38c77-c67f-47db-8e01-91d9b8ebcf51)
+ Call ID: d0d38c77-c67f-47db-8e01-91d9b8ebcf51
   Args:
+    literal_value: 1912
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: :George_William
+  AssignClass (13478374-8086-438f-be93-42bd542b20fd)
+ Call ID: 13478374-8086-438f-be93-42bd542b20fd
+  Args:
+    source: :Ernest_Augustus_Cumberland
+    type: :Man
+  AssignClass (e37b9e54-ad32-4b82-8835-10ecad8c16a1)
+ Call ID: e37b9e54-ad32-4b82-8835-10ecad8c16a1
+  Args:
+    source: :Ernest_Augustus_Cumberland
+    type: :Person
+  AssignClass (808e4957-12c5-4b88-b2b4-9306be1ee5e2)
+ Call ID: 808e4957-12c5-4b88-b2b4-9306be1ee5e2
+  Args:
+    source: :Thyra_Denmark
+    type: :Woman
+  AssignClass (f9147a54-0d69-4454-b76d-3ecb2a946fe2)
+ Call ID: f9147a54-0d69-4454-b76d-3ecb2a946fe2
+  Args:
+    source: :Thyra_Denmark
+    type: :Person
+  AddTriple (f5391ef1-b7e7-4536-81bb-3e45a767d4e3)
+ Call ID: f5391ef1-b7e7-4536-81bb-3e45a767d4e3
+  Args:
+    source: :George_William
+    target: :Ernest_Augustus_Cumberland
+    relation: :hasFather
+  AddTriple (14126699-148d-4ab3-87ae-b0951674be28)
+ Call ID: 14126699-148d-4ab3-87ae-b0951674be28
+  Args:
+    relation: :hasMother
+    target: :Thyra_Denmark
+    source: :George_William
+  AssignClass (a31c7401-38d9-4e84-8aaf-d3e2f81c3ac3)
+ Call ID: a31c7401-38d9-4e84-8aaf-d3e2f81c3ac3
+  Args:
+    source: :George_V_Hanover
+    type: :Man
+  AssignClass (f53f955b-c36a-4699-841d-e1ff959e8d92)
+ Call ID: f53f955b-c36a-4699-841d-e1ff959e8d92
+  Args:
+    source: :George_V_Hanover
+    type: :Person
+  AddTriple (026f33d5-524a-452f-8218-29899e7b62dd)
+ Call ID: 026f33d5-524a-452f-8218-29899e7b62dd
+  Args:
+    source: :Ernest_Augustus_Cumberland
+    relation: :hasFather
+    target: :George_V_Hanover
+  AssignClass (9228c250-dcb3-4024-bed3-4ba2688338b8)
+ Call ID: 9228c250-dcb3-4024-bed3-4ba2688338b8
+  Args:
+    source: :Christian_IX_Denmark
+    type: :Man
+  AssignClass (cde4b581-7bf9-42a9-8ab6-60774cc180aa)
+ Call ID: cde4b581-7bf9-42a9-8ab6-60774cc180aa
+  Args:
+    source: :Christian_IX_Denmark
+    type: :Person
+  AddTriple (78eb731a-2af5-448f-84dd-3c479aa7b7e8)
+ Call ID: 78eb731a-2af5-448f-84dd-3c479aa7b7e8
+  Args:
+    source: :Thyra_Denmark
+    relation: :hasFather
+    target: :Christian_IX_Denmark
+  AssignClass (f9bfb911-bf58-4629-b654-1133f2083068)
+ Call ID: f9bfb911-bf58-4629-b654-1133f2083068
+  Args:
+    source: :Ernest_Augustus_Cumberland_GreatGrandfather
+    type: :Man
+  AssignClass (0b944994-a3d0-4279-aa5e-565537ae2cd7)
+ Call ID: 0b944994-a3d0-4279-aa5e-565537ae2cd7
+  Args:
+    source: :Ernest_Augustus_Cumberland_GreatGrandfather
+    type: :Person
+  AssignClass (f93c369a-4433-4ed2-9420-189b6a1223ab)
+ Call ID: f93c369a-4433-4ed2-9420-189b6a1223ab
+  Args:
+    source: :George_III_UK
+    type: :Man
+  AssignClass (8aad3ee0-6231-497a-9068-4c88185158ce)
+ Call ID: 8aad3ee0-6231-497a-9068-4c88185158ce
+  Args:
+    source: :George_III_UK
+    type: :Person
+  AddTriple (d49221c1-1d5b-47d0-b9e0-240f21c787e1)
+ Call ID: d49221c1-1d5b-47d0-b9e0-240f21c787e1
+  Args:
+    source: :Ernest_Augustus_Cumberland_GreatGrandfather
+    target: :George_III_UK
+    relation: :hasFather
+  AddTriple (883f2f42-5e10-46ef-8ffe-d550369f75f0)
+ Call ID: 883f2f42-5e10-46ef-8ffe-d550369f75f0
+  Args:
+    source: :Ernest_Augustus_Cumberland
+    relation: :hasFather
+    target: :Ernest_Augustus_Cumberland_GreatGrandfather
+  AssignClass (e79597f3-5469-47ba-98ed-d6bb62fe8d52)
+ Call ID: e79597f3-5469-47ba-98ed-d6bb62fe8d52
+  Args:
+    source: :Ernest_Augustus_Junior
+    type: :Man
+  AssignClass (83621276-6093-49ef-8c11-518b5452d05e)
+ Call ID: 83621276-6093-49ef-8c11-518b5452d05e
+  Args:
+    source: :Ernest_Augustus_Junior
+    type: :Person
+  AddTriple (fb10b0d2-473b-4dce-b53d-70fc89968a84)
+ Call ID: fb10b0d2-473b-4dce-b53d-70fc89968a84
+  Args:
+    target: :Ernest_Augustus_Cumberland
+    relation: :hasFather
+    source: :Ernest_Augustus_Junior
+  AssignClass (4abf5f3a-795a-4237-afde-523175ec37b9)
+ Call ID: 4abf5f3a-795a-4237-afde-523175ec37b9
+  Args:
+    source: :Victoria_Louise_Prussia
+    type: :Woman
+  AssignClass (6940c0e2-8adc-464d-b7f6-26a573d625a1)
+ Call ID: 6940c0e2-8adc-464d-b7f6-26a573d625a1
+  Args:
+    source: :Victoria_Louise_Prussia
+    type: :Person
+  AddLiteral (d3b20c49-b9d0-486a-97af-a50d311ccf12)
+ Call ID: d3b20c49-b9d0-486a-97af-a50d311ccf12
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: :Ernest_Augustus_Junior
+    literal_value: 1913
+  AddTriple (6c4e2afa-40b8-4c40-a44c-e3ec4fa2d3b2)
+ Call ID: 6c4e2afa-40b8-4c40-a44c-e3ec4fa2d3b2
+  Args:
+    target: :Victoria_Louise_Prussia
+    relation: :hasRelation
+    source: :Ernest_Augustus_Junior
+  Finish (733bf0df-7756-4d04-9585-bd42dffc0c71)
+ Call ID: 733bf0df-7756-4d04-9585-bd42dffc0c71
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -655,32 +737,43 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Infanta_Sofia a :Person,
-          :Woman ;
-      :hasFather data:Felipe_VI ;
-      :hasMother data:Letizia ;
-      :isSisterOf data:Leonor .
+  data:Ernest_Augustus_Junior a :Man,
+          :Person ;
+      :hasFather data:Ernest_Augustus_Cumberland ;
+      :hasMarriageYear 1913 ;
+      :hasRelation data:Victoria_Louise_Prussia .
 
-  data:Juan_Carlos_I a :Man,
+  data:George_William a :Man,
+          :Person ;
+      :hasBirthYear 1880 ;
+      :hasDeathYear 1912 ;
+      :hasFather data:Ernest_Augustus_Cumberland ;
+      :hasMother data:Thyra_Denmark .
+
+  data:Christian_IX_Denmark a :Man,
           :Person .
 
-  data:Leonor a :Person,
-          :Woman ;
-      :hasBirthYear 2005 ;
-      :hasFather data:Felipe_VI ;
-      :hasMother data:Letizia ;
-      :isSisterOf data:Infanta_Sofia .
-
-  data:Sofia a :Person,
-          :Woman .
-
-  data:Felipe_VI a :Man,
+  data:Ernest_Augustus_Cumberland_GreatGrandfather a :Man,
           :Person ;
-      :hasFather data:Juan_Carlos_I ;
-      :hasMother data:Sofia .
+      :hasFather data:George_III_UK .
 
-  data:Letizia a :Person,
+  data:George_III_UK a :Man,
+          :Person .
+
+  data:George_V_Hanover a :Man,
+          :Person .
+
+  data:Thyra_Denmark a :Person,
+          :Woman ;
+      :hasFather data:Christian_IX_Denmark .
+
+  data:Victoria_Louise_Prussia a :Person,
           :Woman .
+
+  data:Ernest_Augustus_Cumberland a :Man,
+          :Person ;
+      :hasFather data:Ernest_Augustus_Cumberland_GreatGrandfather,
+          data:George_V_Hanover .
 
 
 
@@ -692,158 +785,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (f0cc250a-b870-405b-956e-70ef99acb4a2)
- Call ID: f0cc250a-b870-405b-956e-70ef99acb4a2
+  ValidateShacl (aec7ccd7-be94-49a8-a0af-d019ae77d348)
+ Call ID: aec7ccd7-be94-49a8-a0af-d019ae77d348
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:24
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Juan_Carlos_I is missing the required class :Ancestor, which is necessary to be a valid value for the :hasFather property of Felipe_VI.
+      The node 'Christian_IX_Denmark' is assigned as the father of 'Thyra_Denmark', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Juan_Carlos_I, :Ancestor)
+      AssignClass('Christian_IX_Denmark', ':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Sofia is missing the required class :Ancestor, which is necessary to be a valid value for the :hasMother property of Felipe_VI.
+      The node 'George_III_UK' is assigned as the father of 'Ernest_Augustus_Cumberland_GreatGrandfather', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sofia, :Ancestor)
+      AssignClass('George_III_UK', ':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Felipe_VI is missing the required class :Ancestor, which is necessary to be a valid value for the :hasFather property of Infanta_Sofia.
+      The node 'Ernest_Augustus_Cumberland' is assigned as the father of 'George_William', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Felipe_VI, :Ancestor)
+      AssignClass('Ernest_Augustus_Cumberland', ':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Juan_Carlos_I is missing the required class :Ancestor, which is necessary to be a valid value for the :hasFather property of Felipe_VI.
+      The node 'Ernest_Augustus_Cumberland' is assigned as the father of 'Ernest_Augustus_Junior', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Juan_Carlos_I, :Ancestor)
+      AssignClass('Ernest_Augustus_Cumberland', ':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Felipe_VI is missing the required class :Ancestor, which is necessary to be a valid value for the :hasFather property of Leonor.
+      The node 'Ernest_Augustus_Cumberland_GreatGrandfather' is assigned as the father of 'Ernest_Augustus_Cumberland', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Felipe_VI, :Ancestor)
+      AssignClass('Ernest_Augustus_Cumberland_GreatGrandfather', ':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Letizia is missing the required class :Ancestor, which is necessary to be a valid value for the :hasMother property of Infanta_Sofia.
+      The node 'George_V_Hanover' is assigned as the father of 'Ernest_Augustus_Cumberland', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Letizia, :Ancestor)
+      AssignClass('George_V_Hanover', ':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: More than 1 values on data:Ernest_Augustus_Cumberland->:hasFather
     LLM-provided explanation of the violation:
-      The node Sofia is missing the required class :Ancestor, which is necessary to be a valid value for the :hasMother property of Felipe_VI.
+      The entity 'Ernest_Augustus_Cumberland' has more than one father defined, violating the functional property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sofia, :Ancestor)
+      RemoveTriple('Ernest_Augustus_Cumberland', ':hasFather', 'George_V_Hanover')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Letizia is missing the required class :Ancestor, which is necessary to be a valid value for the :hasMother property of Leonor.
+      The node 'Thyra_Denmark' is assigned as the mother of 'George_William', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Letizia, :Ancestor)
+      AssignClass('Thyra_Denmark', ':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Felipe_VI is missing the required class :Ancestor, which is necessary to be a valid value for the :hasFather property of Infanta_Sofia.
+      The node 'Ernest_Augustus_Cumberland' is assigned as the father of 'George_William', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Felipe_VI, :Ancestor)
+      AssignClass('Ernest_Augustus_Cumberland', ':Ancestor')
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Juan_Carlos_I is missing the required class :Ancestor, which is necessary to be a valid value for the :hasFather property of Felipe_VI.
+      The node 'Ernest_Augustus_Cumberland' is assigned as the father of 'Ernest_Augustus_Junior', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Juan_Carlos_I, :Ancestor)
+      AssignClass('Ernest_Augustus_Cumberland', ':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Felipe_VI is missing the required class :Ancestor, which is necessary to be a valid value for the :hasFather property of Leonor.
+      The node 'Christian_IX_Denmark' is assigned as the father of 'Thyra_Denmark', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Felipe_VI, :Ancestor)
+      AssignClass('Christian_IX_Denmark', ':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Letizia is missing the required class :Ancestor, which is necessary to be a valid value for the :hasMother property of Infanta_Sofia.
+      The node 'George_III_UK' is assigned as the father of 'Ernest_Augustus_Cumberland_GreatGrandfather', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Letizia, :Ancestor)
+      AssignClass('George_III_UK', ':Ancestor')
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Sofia is missing the required class :Ancestor, which is necessary to be a valid value for the :hasMother property of Felipe_VI.
+      The node 'Ernest_Augustus_Cumberland_GreatGrandfather' is assigned as the father of 'Ernest_Augustus_Cumberland', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sofia, :Ancestor)
+      AssignClass('Ernest_Augustus_Cumberland_GreatGrandfather', ':Ancestor')
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Letizia is missing the required class :Ancestor, which is necessary to be a valid value for the :hasMother property of Leonor.
+      The node 'George_V_Hanover' is assigned as the father of 'Ernest_Augustus_Cumberland', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Letizia, :Ancestor)
+      AssignClass('George_V_Hanover', ':Ancestor')
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: More than 1 values on data:Ernest_Augustus_Cumberland->:hasFather
     LLM-provided explanation of the violation:
-      The node Felipe_VI is missing the required class :Ancestor, which is necessary to be a valid value for the :hasFather property of Leonor.
+      The entity 'Ernest_Augustus_Cumberland' has more than one father defined, violating the functional property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Felipe_VI, :Ancestor)
+      RemoveTriple('Ernest_Augustus_Cumberland', ':hasFather', 'George_V_Hanover')
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Felipe_VI is missing the required class :Ancestor, which is necessary to be a valid value for the :hasFather property of Infanta_Sofia.
+      The node 'Thyra_Denmark' is assigned as the mother of 'George_William', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Felipe_VI, :Ancestor)
+      AssignClass('Thyra_Denmark', ':Ancestor')
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Letizia is missing the required class :Ancestor, which is necessary to be a valid value for the :hasMother property of Leonor.
+      The node 'Ernest_Augustus_Cumberland' is assigned as the father of 'George_William', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Letizia, :Ancestor)
+      AssignClass('Ernest_Augustus_Cumberland', ':Ancestor')
 
 
   Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Ernest_Augustus_Cumberland' is assigned as the father of 'Ernest_Augustus_Junior', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Ernest_Augustus_Cumberland', ':Ancestor')
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Christian_IX_Denmark' is assigned as the father of 'Thyra_Denmark', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Christian_IX_Denmark', ':Ancestor')
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'George_III_UK' is assigned as the father of 'Ernest_Augustus_Cumberland_GreatGrandfather', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('George_III_UK', ':Ancestor')
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Ernest_Augustus_Cumberland_GreatGrandfather' is assigned as the father of 'Ernest_Augustus_Cumberland', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Ernest_Augustus_Cumberland_GreatGrandfather', ':Ancestor')
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'George_V_Hanover' is assigned as the father of 'Ernest_Augustus_Cumberland', but it lacks the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('George_V_Hanover', ':Ancestor')
+
+
+  Violation [23]:
+    SHACL message: More than 1 values on data:Ernest_Augustus_Cumberland->:hasFather
+    LLM-provided explanation of the violation:
+      The entity 'Ernest_Augustus_Cumberland' has more than one father defined, violating the functional property constraint.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple('Ernest_Augustus_Cumberland', ':hasFather', 'George_V_Hanover')
+
+
+  Violation [24]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Letizia is missing the required class :Ancestor, which is necessary to be a valid value for the :hasMother property of Infanta_Sofia.
+      The node 'Thyra_Denmark' is assigned as the mother of 'George_William', but it lacks the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Letizia, :Ancestor)
+      AssignClass('Thyra_Denmark', ':Ancestor')
 
 
 
@@ -852,29 +993,111 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (8c32f6b6-0d3b-49dd-82b5-050d0bdd1d0c)
- Call ID: 8c32f6b6-0d3b-49dd-82b5-050d0bdd1d0c
+  AssignClass (d91c2b47-4192-4bf9-a813-3176c839726f)
+ Call ID: d91c2b47-4192-4bf9-a813-3176c839726f
   Args:
+    source: :Christian_IX_Denmark
     type: :Ancestor
-    source: Juan_Carlos_I
-  AssignClass (9436f162-8a9a-4378-8be7-955b499eb410)
- Call ID: 9436f162-8a9a-4378-8be7-955b499eb410
+  AssignClass (33a5dc25-c188-4abd-85d2-a52ce5829587)
+ Call ID: 33a5dc25-c188-4abd-85d2-a52ce5829587
   Args:
+    source: :George_III_UK
     type: :Ancestor
-    source: Sofia
-  AssignClass (4ef24515-e287-457d-a4dd-fcf545f57575)
- Call ID: 4ef24515-e287-457d-a4dd-fcf545f57575
+  AssignClass (8af4803c-ae66-4404-93e7-73a29cfd7fc6)
+ Call ID: 8af4803c-ae66-4404-93e7-73a29cfd7fc6
   Args:
+    source: :Ernest_Augustus_Cumberland
     type: :Ancestor
-    source: Felipe_VI
-  AssignClass (7e31deb9-4d00-4775-a747-0fd2b3f8dfa3)
- Call ID: 7e31deb9-4d00-4775-a747-0fd2b3f8dfa3
+  AssignClass (44da8fea-6c9d-4221-82fa-c5aa7b9dcf24)
+ Call ID: 44da8fea-6c9d-4221-82fa-c5aa7b9dcf24
   Args:
+    source: :Ernest_Augustus_Cumberland_GreatGrandfather
     type: :Ancestor
-    source: Letizia
-  ValidateShacl (e9be4e2c-3b26-4017-a26a-ffa61b33528d)
- Call ID: e9be4e2c-3b26-4017-a26a-ffa61b33528d
+  AssignClass (2f8336a6-4635-4cb7-b732-89bf4607504f)
+ Call ID: 2f8336a6-4635-4cb7-b732-89bf4607504f
   Args:
+    source: :George_V_Hanover
+    type: :Ancestor
+  AssignClass (e852d8af-0016-41fc-bfaa-8d5708be44bc)
+ Call ID: e852d8af-0016-41fc-bfaa-8d5708be44bc
+  Args:
+    source: :Thyra_Denmark
+    type: :Ancestor
+  RemoveTriple (bd6e5746-c386-42d0-91d4-67d328f5e7e5)
+ Call ID: bd6e5746-c386-42d0-91d4-67d328f5e7e5
+  Args:
+    target: :George_V_Hanover
+    relation: :hasFather
+    source: :Ernest_Augustus_Cumberland
+  AssignClass (87f534c7-1abd-417a-83df-ebd361bc3490)
+ Call ID: 87f534c7-1abd-417a-83df-ebd361bc3490
+  Args:
+    source: :George_V_Hanover
+    type: :Man
+  AssignClass (c1693d9b-62d2-4ee3-9ec5-97843c29e854)
+ Call ID: c1693d9b-62d2-4ee3-9ec5-97843c29e854
+  Args:
+    source: :Christian_IX_Denmark
+    type: :Man
+  AssignClass (e96568ab-7b0d-4edf-9326-bc1900986e14)
+ Call ID: e96568ab-7b0d-4edf-9326-bc1900986e14
+  Args:
+    source: :George_III_UK
+    type: :Man
+  AssignClass (98746c30-d1be-476d-b8d2-68d04d1f9c86)
+ Call ID: 98746c30-d1be-476d-b8d2-68d04d1f9c86
+  Args:
+    source: :Ernest_Augustus_Cumberland_GreatGrandfather
+    type: :Man
+  AssignClass (b7f0c0fc-820e-45bf-b565-4b6c44d8329a)
+ Call ID: b7f0c0fc-820e-45bf-b565-4b6c44d8329a
+  Args:
+    source: :Ernest_Augustus_Cumberland
+    type: :Man
+  AssignClass (b9535e82-7009-41b6-83bb-0f1eabd7084b)
+ Call ID: b9535e82-7009-41b6-83bb-0f1eabd7084b
+  Args:
+    source: :Thyra_Denmark
+    type: :Woman
+  Finish (c77dc163-3f08-4c66-827b-0501d59a4229)
+ Call ID: c77dc163-3f08-4c66-827b-0501d59a4229
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -895,38 +1118,62 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Infanta_Sofia a :Person,
-          :Woman ;
-      :hasFather data:Felipe_VI ;
-      :hasMother data:Letizia ;
-      :isSisterOf data:Leonor .
+  data:Ernest_Augustus_Junior a :Man,
+          :Person ;
+      :hasFather data:Ernest_Augustus_Cumberland ;
+      :hasMarriageYear 1913 ;
+      :hasRelation data:Victoria_Louise_Prussia .
 
-  data:Juan_Carlos_I a :Ancestor,
+  data:George_V_Hanover a :Ancestor,
           :Man,
           :Person .
 
-  data:Leonor a :Person,
-          :Woman ;
-      :hasBirthYear 2005 ;
-      :hasFather data:Felipe_VI ;
-      :hasMother data:Letizia ;
-      :isSisterOf data:Infanta_Sofia .
+  data:George_William a :Man,
+          :Person ;
+      :hasBirthYear 1880 ;
+      :hasDeathYear 1912 ;
+      :hasFather data:Ernest_Augustus_Cumberland ;
+      :hasMother data:Thyra_Denmark .
 
-  data:Sofia a :Ancestor,
-          :Person,
-          :Woman .
+  data:Christian_IX_Denmark a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Felipe_VI a :Ancestor,
+  data:Ernest_Augustus_Cumberland_GreatGrandfather a :Ancestor,
           :Man,
           :Person ;
-      :hasFather data:Juan_Carlos_I ;
-      :hasMother data:Sofia .
+      :hasFather data:George_III_UK .
 
-  data:Letizia a :Ancestor,
+  data:George_III_UK a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Thyra_Denmark a :Ancestor,
           :Person,
+          :Woman ;
+      :hasFather data:Christian_IX_Denmark .
+
+  data:Victoria_Louise_Prussia a :Person,
           :Woman .
 
+  data:Ernest_Augustus_Cumberland a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Ernest_Augustus_Cumberland_GreatGrandfather .
 
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (55e1ad87-4d53-48d4-b6ac-a9720cf42101)
+ Call ID: 55e1ad87-4d53-48d4-b6ac-a9720cf42101
+  Args:
 
 ================================= Tool Message =================================
 
@@ -936,6 +1183,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (1d05e041-e73a-4bc5-8fa2-bf07114945ac)
- Call ID: 1d05e041-e73a-4bc5-8fa2-bf07114945ac
+  Finish (1bf64d92-db65-4955-9357-05b5137d72f5)
+ Call ID: 1bf64d92-db65-4955-9357-05b5137d72f5
   Args:

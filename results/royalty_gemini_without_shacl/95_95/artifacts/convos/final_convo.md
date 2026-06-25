@@ -138,6 +138,8 @@ Nicholas married civilly in Henley-on-Thames on 6 October 2017 to Alina-Maria Bi
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -153,39 +155,9 @@ Nicholas married civilly in Henley-on-Thames on 6 October 2017 to Alina-Maria Bi
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -200,6 +172,23 @@ Nicholas married civilly in Henley-on-Thames on 6 October 2017 to Alina-Maria Bi
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -217,6 +206,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,29 +288,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -315,6 +311,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -327,6 +331,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -335,17 +341,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -373,6 +381,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -388,149 +480,139 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4f1cb1f7-ea48-46a4-8345-caf7b253fbc0)
- Call ID: 4f1cb1f7-ea48-46a4-8345-caf7b253fbc0
+  AssignClass (0516d461-6474-4b5d-92b2-12542253efc5)
+ Call ID: 0516d461-6474-4b5d-92b2-12542253efc5
   Args:
-    type: :Man
     source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-  AssignClass (82aa523e-a986-4c8a-a542-0ebea7bc87ce)
- Call ID: 82aa523e-a986-4c8a-a542-0ebea7bc87ce
+    type: :Man
+  AssignClass (9c490e32-fb30-4b61-9636-252fe0aa52f4)
+ Call ID: 9c490e32-fb30-4b61-9636-252fe0aa52f4
+  Args:
+    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
+    type: :Person
+  AddLiteral (61693581-5aef-488d-8b1f-c4ec60cabdee)
+ Call ID: 61693581-5aef-488d-8b1f-c4ec60cabdee
+  Args:
+    relation: :formerlyKnownAs
+    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
+    literal_value: Prince Nicholas of Romania
+    literal_type: xsd:string
+  AddLiteral (fd1115ed-522e-4573-a817-b8ec8e6634d9)
+ Call ID: fd1115ed-522e-4573-a817-b8ec8e6634d9
+  Args:
+    relation: :hasBirthYear
+    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
+    literal_value: 1985
+    literal_type: xsd:integer
+  AssignClass (dd312acc-6d12-4aef-98e1-6d9ee7ad8f0f)
+ Call ID: dd312acc-6d12-4aef-98e1-6d9ee7ad8f0f
   Args:
     type: :Woman
     source: Princess_Elena_of_Romania
-  AssignClass (c3fe6e7c-4467-4d93-8480-3093fb8acd16)
- Call ID: c3fe6e7c-4467-4d93-8480-3093fb8acd16
+  AssignClass (85611bcc-ec6b-477c-8b44-aad44582aa07)
+ Call ID: 85611bcc-ec6b-477c-8b44-aad44582aa07
+  Args:
+    type: :Person
+    source: Princess_Elena_of_Romania
+  AssignClass (7014bab3-0fb8-47e5-b247-4d0bf39300fd)
+ Call ID: 7014bab3-0fb8-47e5-b247-4d0bf39300fd
   Args:
     type: :Man
     source: Robin_Medforth-Mills
-  AssignClass (08ecab7f-b0e2-40e1-a8c5-2008e8008b97)
- Call ID: 08ecab7f-b0e2-40e1-a8c5-2008e8008b97
+  AssignClass (7dcc3018-c2db-4045-84ab-3c09fb3ba997)
+ Call ID: 7dcc3018-c2db-4045-84ab-3c09fb3ba997
   Args:
-    type: :Man
-    source: King_Michael_I_of_Romania
-  AssignClass (65581b41-bbff-45b0-8b70-98d7c3b1ba7b)
- Call ID: 65581b41-bbff-45b0-8b70-98d7c3b1ba7b
+    source: Robin_Medforth-Mills
+    type: :Person
+  AddTriple (8f5f499b-09b2-4ac8-a9f2-bf18d51acd33)
+ Call ID: 8f5f499b-09b2-4ac8-a9f2-bf18d51acd33
   Args:
-    type: :Woman
-    source: Queen_Anne
-  AssignClass (2bb4e04b-27b1-47ae-8060-2679b9651e77)
- Call ID: 2bb4e04b-27b1-47ae-8060-2679b9651e77
-  Args:
-    type: :Woman
-    source: Crown_Princess_Margareta_of_Romania
-  AssignClass (1c5edaba-9d2a-423b-b1a6-679e8226bd37)
- Call ID: 1c5edaba-9d2a-423b-b1a6-679e8226bd37
-  Args:
-    type: :Woman
-    source: Alina-Maria_Binder
-  AssignClass (95eb48b0-2590-4ad0-8945-d0e9300abbb2)
- Call ID: 95eb48b0-2590-4ad0-8945-d0e9300abbb2
-  Args:
-    type: :Woman
-    source: Nicoleta_Cîrjan
-  AddLiteral (f0986e3c-053a-438e-abf5-c1ea56968368)
- Call ID: f0986e3c-053a-438e-abf5-c1ea56968368
-  Args:
-    relation: :knownAs
-    literal_value: Nicholas Michael de Roumanie Medforth-Mills
+    target: Princess_Elena_of_Romania
     source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-    literal_type: xsd:string
-  AddLiteral (05bff35e-1fe8-4ea0-8f55-7235cdde2d68)
- Call ID: 05bff35e-1fe8-4ea0-8f55-7235cdde2d68
+    relation: :hasMother
+  AddTriple (b5d84b21-69f5-4a8e-b504-dee22d4790d5)
+ Call ID: b5d84b21-69f5-4a8e-b504-dee22d4790d5
   Args:
-    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-    literal_type: xsd:string
-    relation: :formerlyKnownAs
-    literal_value: Prince Nicholas of Romania
-  AddTriple (a460924e-e334-44b2-8b72-bd3126058152)
- Call ID: a460924e-e334-44b2-8b72-bd3126058152
-  Args:
-    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
     relation: :hasFather
+    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
     target: Robin_Medforth-Mills
-  AddTriple (12888c70-3b42-4df4-978a-280c16958ed6)
- Call ID: 12888c70-3b42-4df4-978a-280c16958ed6
-  Args:
-    relation: :hasMother
-    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-    target: Princess_Elena_of_Romania
-  AddTriple (a23bfd40-3b69-44cf-99ee-8d7a99923ac2)
- Call ID: a23bfd40-3b69-44cf-99ee-8d7a99923ac2
-  Args:
-    relation: :hasFather
-    source: Princess_Elena_of_Romania
-    target: King_Michael_I_of_Romania
-  AddTriple (f4e097ab-42d1-4bb8-ad84-0956bde2d785)
- Call ID: f4e097ab-42d1-4bb8-ad84-0956bde2d785
-  Args:
-    relation: :hasMother
-    source: Princess_Elena_of_Romania
-    target: Queen_Anne
-  AddTriple (a2473596-a68e-40dc-8f93-9660017ed962)
- Call ID: a2473596-a68e-40dc-8f93-9660017ed962
-  Args:
-    source: Queen_Anne
-    relation: :isMotherOf
-    target: Princess_Elena_of_Romania
-  AddTriple (6ae4ed0f-29cf-46a1-9c8d-e326a6f9c4f0)
- Call ID: 6ae4ed0f-29cf-46a1-9c8d-e326a6f9c4f0
+  AssignClass (4920f3fe-25f3-4fe3-bcb9-540e5ea170a0)
+ Call ID: 4920f3fe-25f3-4fe3-bcb9-540e5ea170a0
   Args:
     source: King_Michael_I_of_Romania
-    relation: :isFatherOf
-    target: Princess_Elena_of_Romania
-  AddTriple (bf21dd8a-4ca9-4a75-8ae5-13eb4aa2a621)
- Call ID: bf21dd8a-4ca9-4a75-8ae5-13eb4aa2a621
-  Args:
-    relation: :isSisterOf
-    source: Crown_Princess_Margareta_of_Romania
-    target: Princess_Elena_of_Romania
-  AddTriple (3d23c9e7-d398-4ac1-ac28-9e8813cac147)
- Call ID: 3d23c9e7-d398-4ac1-ac28-9e8813cac147
-  Args:
-    target: Crown_Princess_Margareta_of_Romania
-    relation: :isMotherOf
-    source: Queen_Anne
-  AddTriple (2bf1c7d5-e6c6-453c-99eb-251df777d7b9)
- Call ID: 2bf1c7d5-e6c6-453c-99eb-251df777d7b9
+    type: :Man
+  AssignClass (25831786-9936-41a4-8c11-2842ecc8ba97)
+ Call ID: 25831786-9936-41a4-8c11-2842ecc8ba97
   Args:
     source: King_Michael_I_of_Romania
-    relation: :isFatherOf
-    target: Crown_Princess_Margareta_of_Romania
-  AddTriple (1359a915-d629-464b-b8f2-e464190470f6)
- Call ID: 1359a915-d629-464b-b8f2-e464190470f6
-  Args:
-    target: King_Michael_I_of_Romania
-    source: Crown_Princess_Margareta_of_Romania
-    relation: :hasFather
-  AddTriple (70b227c5-bcc6-4c52-afaf-d5d65433dfa2)
- Call ID: 70b227c5-bcc6-4c52-afaf-d5d65433dfa2
-  Args:
-    source: Crown_Princess_Margareta_of_Romania
-    relation: :hasMother
-    target: Queen_Anne
-  AddTriple (7abdba88-2d52-4530-8f2c-47f055e46b00)
- Call ID: 7abdba88-2d52-4530-8f2c-47f055e46b00
-  Args:
-    relation: :isFatherOf
-    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
-    target: Unnamed_Daughter_of_Nicholas_and_Nicoleta_Cîrjan
-  AddTriple (03a1128a-ce3f-4837-bb35-9de4b0368677)
- Call ID: 03a1128a-ce3f-4837-bb35-9de4b0368677
-  Args:
-    target: Unnamed_Daughter_of_Nicholas_and_Nicoleta_Cîrjan
-    relation: :isMotherOf
-    source: Nicoleta_Cîrjan
-  AssignClass (a9e849c2-48da-42e4-976c-891711a96b79)
- Call ID: a9e849c2-48da-42e4-976c-891711a96b79
+    type: :Person
+  AssignClass (20296339-d98b-43a4-a204-f9cf70032567)
+ Call ID: 20296339-d98b-43a4-a204-f9cf70032567
   Args:
     type: :Woman
-    source: Unnamed_Daughter_of_Nicholas_and_Nicoleta_Cîrjan
-  AddTriple (35a30676-771b-4f7b-9bdc-eef10a1db02d)
- Call ID: 35a30676-771b-4f7b-9bdc-eef10a1db02d
+    source: Queen_Anne_of_Romania
+  AssignClass (7b5598c0-e16d-4ca1-a7a7-9659652e1436)
+ Call ID: 7b5598c0-e16d-4ca1-a7a7-9659652e1436
   Args:
-    target: Alina-Maria_Binder
+    type: :Person
+    source: Queen_Anne_of_Romania
+  AddTriple (f9c2018b-605e-4106-9f09-65e60de0f843)
+ Call ID: f9c2018b-605e-4106-9f09-65e60de0f843
+  Args:
+    source: Princess_Elena_of_Romania
+    relation: :hasFather
+    target: King_Michael_I_of_Romania
+  AddTriple (16a6de1d-e1d0-4683-b17a-4238471f2dee)
+ Call ID: 16a6de1d-e1d0-4683-b17a-4238471f2dee
+  Args:
+    relation: :hasMother
+    source: Princess_Elena_of_Romania
+    target: Queen_Anne_of_Romania
+  AssignClass (13ce1d02-c829-4757-9360-2342aa367c56)
+ Call ID: 13ce1d02-c829-4757-9360-2342aa367c56
+  Args:
+    type: :Woman
+    source: Crown_Princess_Margareta_of_Romania
+  AssignClass (876f1661-0dd1-44ab-b14e-35ae27837d0c)
+ Call ID: 876f1661-0dd1-44ab-b14e-35ae27837d0c
+  Args:
+    type: :Person
+    source: Crown_Princess_Margareta_of_Romania
+  AddTriple (65e20fa8-2610-485f-8f5d-9a9c640751e5)
+ Call ID: 65e20fa8-2610-485f-8f5d-9a9c640751e5
+  Args:
+    target: King_Michael_I_of_Romania
+    source: Crown_Princess_Margareta_of_Romania
+    relation: :hasFather
+  AddTriple (f444754a-09a0-4d37-9fce-2397b8190655)
+ Call ID: f444754a-09a0-4d37-9fce-2397b8190655
+  Args:
+    target: Queen_Anne_of_Romania
+    relation: :hasMother
+    source: Crown_Princess_Margareta_of_Romania
+  AssignClass (10b3f933-7fe8-48f8-aadc-d6ac900d889d)
+ Call ID: 10b3f933-7fe8-48f8-aadc-d6ac900d889d
+  Args:
+    source: Alina-Maria_Binder
+    type: :Woman
+  AssignClass (01ed3cd8-4bcf-42f1-b0a6-759c131e309c)
+ Call ID: 01ed3cd8-4bcf-42f1-b0a6-759c131e309c
+  Args:
+    type: :Person
+    source: Alina-Maria_Binder
+  AddLiteral (57ff2900-fc5e-4cfc-a805-92a513859eb3)
+ Call ID: 57ff2900-fc5e-4cfc-a805-92a513859eb3
+  Args:
+    literal_type: xsd:integer
+    literal_value: 2017
     source: Nicholas_Michael_de_Roumanie_Medforth-Mills
+    relation: :hasMarriageYear
+  AddTriple (2bde0f77-fe89-46e3-a860-4873059717b0)
+ Call ID: 2bde0f77-fe89-46e3-a860-4873059717b0
+  Args:
     relation: :hasRelation
-  Finish (9e770304-4072-4b6b-b823-d58493a4abe9)
- Call ID: 9e770304-4072-4b6b-b823-d58493a4abe9
+    source: Nicholas_Michael_de_Roumanie_Medforth-Mills
+    target: Alina-Maria_Binder
+  Finish (09490ee7-dd4c-4160-a41e-bf3611451778)
+ Call ID: 09490ee7-dd4c-4160-a41e-bf3611451778
   Args:

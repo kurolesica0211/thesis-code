@@ -1,0 +1,139 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male_Sex a :Male,
+        :Sex .
+
+data:Infante_Carlos_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:Infante_Carlos_Duke_of_Calabria ;
+    :hasChild data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :hasDeathYear 2015 ;
+    :hasRelation data:Infante_Carlos_Duke_of_Calabria,
+        data:Jose_Manuel_Landaluce_y_Dominguez,
+        data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez,
+        data:Prince_Pedro_of_Bourbon-Two_Sicilies,
+        data:Princess_Anne_of_Orleans,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSon data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isFatherOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isUncleOf data:Prince_Pedro_of_Bourbon-Two_Sicilies .
+
+data:Jose_Manuel_Landaluce_y_Dominguez a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Jose_Manuel_Landaluce_y_Dominguez ;
+    :hasChild data:Sofia_Landaluce_y_Melgarejo ;
+    :hasDaughter data:Sofia_Landaluce_y_Melgarejo ;
+    :hasRelation data:Infante_Carlos_Duke_of_Calabria,
+        data:Jose_Manuel_Landaluce_y_Dominguez,
+        data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez,
+        data:Prince_Pedro_of_Bourbon-Two_Sicilies,
+        data:Princess_Anne_of_Orleans,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :isAncestorOf data:Sofia_Landaluce_y_Melgarejo ;
+    :isBloodrelationOf data:Jose_Manuel_Landaluce_y_Dominguez ;
+    :isBrotherOf data:Jose_Manuel_Landaluce_y_Dominguez ;
+    :isFatherOf data:Sofia_Landaluce_y_Melgarejo ;
+    :isParentOf data:Sofia_Landaluce_y_Melgarejo ;
+    :isSiblingOf data:Jose_Manuel_Landaluce_y_Dominguez ;
+    :isUncleOf data:Sofia_Landaluce_y_Melgarejo .
+
+data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sofia_Landaluce_y_Melgarejo ;
+    :hasDaughter data:Sofia_Landaluce_y_Melgarejo ;
+    :hasRelation data:Infante_Carlos_Duke_of_Calabria,
+        data:Jose_Manuel_Landaluce_y_Dominguez,
+        data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez,
+        data:Prince_Pedro_of_Bourbon-Two_Sicilies,
+        data:Princess_Anne_of_Orleans,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSister data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez ;
+    :isAncestorOf data:Sofia_Landaluce_y_Melgarejo ;
+    :isAuntOf data:Sofia_Landaluce_y_Melgarejo ;
+    :isBloodrelationOf data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez ;
+    :isMotherOf data:Sofia_Landaluce_y_Melgarejo ;
+    :isParentOf data:Sofia_Landaluce_y_Melgarejo ;
+    :isSiblingOf data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez ;
+    :isSisterOf data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez .
+
+data:Princess_Anne_of_Orleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Infante_Carlos_Duke_of_Calabria,
+        data:Jose_Manuel_Landaluce_y_Dominguez,
+        data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez,
+        data:Prince_Pedro_of_Bourbon-Two_Sicilies,
+        data:Princess_Anne_of_Orleans,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSister data:Princess_Anne_of_Orleans ;
+    :hasSon data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Princess_Anne_of_Orleans ;
+    :isMotherOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Princess_Anne_of_Orleans ;
+    :isSisterOf data:Princess_Anne_of_Orleans .
+
+data:Prince_Pedro_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasAncestor data:Infante_Carlos_Duke_of_Calabria,
+        data:Princess_Anne_of_Orleans ;
+    :hasBirthYear 1968 ;
+    :hasBrother data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Infante_Carlos_Duke_of_Calabria ;
+    :hasMarriageYear 2001 ;
+    :hasMother data:Princess_Anne_of_Orleans ;
+    :hasParent data:Infante_Carlos_Duke_of_Calabria,
+        data:Princess_Anne_of_Orleans ;
+    :hasRelation data:Infante_Carlos_Duke_of_Calabria,
+        data:Jose_Manuel_Landaluce_y_Dominguez,
+        data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez,
+        data:Prince_Pedro_of_Bourbon-Two_Sicilies,
+        data:Princess_Anne_of_Orleans,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSex data:Male_Sex ;
+    :isBloodrelationOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Infante_Carlos_Duke_of_Calabria,
+        data:Princess_Anne_of_Orleans ;
+    :isSiblingOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isSonOf data:Infante_Carlos_Duke_of_Calabria,
+        data:Princess_Anne_of_Orleans .
+
+data:Sofia_Landaluce_y_Melgarejo a :Person,
+        :Woman ;
+    :hasAncestor data:Jose_Manuel_Landaluce_y_Dominguez,
+        data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez ;
+    :hasBirthYear 1973 ;
+    :hasFather data:Jose_Manuel_Landaluce_y_Dominguez ;
+    :hasMother data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez ;
+    :hasParent data:Jose_Manuel_Landaluce_y_Dominguez,
+        data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez ;
+    :hasRelation data:Infante_Carlos_Duke_of_Calabria,
+        data:Jose_Manuel_Landaluce_y_Dominguez,
+        data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez,
+        data:Prince_Pedro_of_Bourbon-Two_Sicilies,
+        data:Princess_Anne_of_Orleans,
+        data:Sofia_Landaluce_y_Melgarejo ;
+    :hasSister data:Sofia_Landaluce_y_Melgarejo ;
+    :isBloodrelationOf data:Sofia_Landaluce_y_Melgarejo ;
+    :isChildOf data:Jose_Manuel_Landaluce_y_Dominguez,
+        data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez ;
+    :isDaughterOf data:Jose_Manuel_Landaluce_y_Dominguez,
+        data:Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez ;
+    :isSiblingOf data:Sofia_Landaluce_y_Melgarejo ;
+    :isSisterOf data:Sofia_Landaluce_y_Melgarejo .
+

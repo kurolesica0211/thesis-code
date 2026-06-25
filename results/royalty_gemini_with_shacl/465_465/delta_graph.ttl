@@ -2,20 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Regina_von_Habsburg a :Person,
+data:IsabellaAlexandraMay a :Person,
         :Woman ;
-    :alsoKnownAs "Archduchess Regina of Austria"^^xsd:string ;
-    :hasBirthYear 1925 ;
-    :hasDeathYear 2010 ;
-    :hasRelation data:Otto_von_Habsburg ;
-    :hasSex data:Female_Sex_Node ;
-    :knownAs "Regina von Habsburg"^^xsd:string .
+    :hasSex data:Female ;
+    :isDaughterOf data:FrederickWindsor,
+        data:SophieWinkleman .
 
-data:Female_Sex_Node a :Female .
-
-data:Male_Sex_Node a :Male .
-
-data:Otto_von_Habsburg a :Man,
+data:FrederickWindsor a :Ancestor,
+        :Man,
         :Person ;
-    :hasSex data:Male_Sex_Node .
+    :hasBirthYear 1979 ;
+    :hasRelation data:SophieWinkleman ;
+    :hasSex data:Male ;
+    :isSiblingOf data:LadyGabriella ;
+    :isSonOf data:PrinceMichaelOfKent,
+        data:PrincessMichaelOfKent .
+
+data:LadyGabriella a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:PrinceMichaelOfKent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:PrincessMichaelOfKent a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+
+data:SophieWinkleman a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
 

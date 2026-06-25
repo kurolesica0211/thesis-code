@@ -1,0 +1,56 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasChild data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :hasDaughter data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :hasRelation data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Henri_Count_of_Paris ;
+    :isBrotherOf data:Henri_Count_of_Paris ;
+    :isFatherOf data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :isParentOf data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Henri_Count_of_Paris ;
+    :isUncleOf data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg .
+
+data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Woman ;
+    :hasChild data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :hasDaughter data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :hasRelation data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasSister data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :isAuntOf data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isMotherOf data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :isParentOf data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isSisterOf data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .
+
+data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg a :Woman ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasBirthYear 1940 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasParent data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg,
+        data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasSister data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :isBloodrelationOf data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :isChildOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isDaughterOf data:Henri_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg ;
+    :isSisterOf data:Diane_Dowager_Duchess_of_W%C3%BCrttemberg .
+

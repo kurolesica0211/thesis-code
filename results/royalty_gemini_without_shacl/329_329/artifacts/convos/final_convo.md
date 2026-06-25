@@ -69,43 +69,70 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-James Alexander Philip Theo Mountbatten-Windsor, Earl of Wessex (born 17 December 2007), styled Viscount Severn until 2023, is a member of the British royal family.
-He is the younger child and only son of Prince Edward, Duke of Edinburgh, and Sophie, Duchess of Edinburgh.
-James is the youngest grandchild of Queen Elizabeth II and Prince Philip, Duke of Edinburgh, and a nephew of King Charles III.
-Infancy
+King Juan Carlos IQueen Sofía
 
-James Alexander Philip Theo Mountbatten-Windsor was born at 4:20 pm on 17 December 2007 at Frimley Park Hospital, Surrey by caesarean section.
-His father Prince Edward, Duke of Edinburgh, is the youngest child of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
-His mother Sophie, Duchess of Edinburgh, worked in public relations before becoming a full-time member of the royal family after her marriage in 1999.
-His full name, James Alexander Philip Theo, was announced on 21 December.
-James was baptised on 19 April 2008 in the private chapel at Windsor Castle by David Conner, Dean of Windsor, witnessed by his godparents, Alastair Bruce, Duncan Bullivant, Thomas Hill, Denise Poulton, Jeanye Irwin, and his paternal grandparents, Elizabeth II and Prince Philip.
-Education
 
-James attended Eagle House School, a coeducational preparatory school near Sandhurst, Berkshire, from 2011 to 2021, before enrolling at the private Radley College in Oxfordshire.
-Official appearances
+The Duchess of Soria and HernaniThe Duke of Soria and Hernani
 
-James made his first official appearance in the carriage procession at Trooping the Colour in 2016, and also took part in the 2022 Trooping the Colour.
-Following the thanksgiving memorial service for his grandfather Prince Philip on 29 March 2022, James attended the Platinum Jubilee National Service of Thanksgiving and the Platinum Party at the Palace in June 2022.
-On 17 September 2022, during the period of official mourning for his grandmother Queen Elizabeth II, James joined his sister Louise and six cousins in mounting a 15-minute vigil around the Queen's coffin as it lay in state at Westminster Hall.
-On 6 May 2023, James, who then held the courtesy title Earl of Wessex, attended his uncle Charles III's coronation at Westminster Abbey, together with the rest of the royal family.
-The following day, he attended the Coronation Concert at Windsor Castle.
-On 31 March 2024, James attended the Easter Matins Service at St. George's Chapel, Windsor Castle, with his mother and father.
-James was accorded this courtesy title at birth as heir apparent to his father's earldom.
-At birth, James automatically became a prince of the United Kingdom (Prince James of Wessex, now Prince James of Edinburgh) under the terms of the 1917 letters patent, which assigned princely status and the style of Royal Highness to all male-line grandchildren of a sovereign.
-However, when his parents married, Buckingham Palace announced that their children would be styled as the children of an earl rather than as prince or princess.
-In 2020, James's mother reaffirmed that James and his sister retained the right to their royal titles and styles, and could choose whether to use them from the age of 18.
-When his father was created Duke of Edinburgh in March 2023, James became styled by courtesy as Earl of Wessex, the family's senior subsidiary title.
-The Dukedom of Edinburgh, having been created as a life peerage, will become extinct upon his father's death, but James remains heir apparent to his father's hereditary peerages of Earl of Wessex, Earl of Forfar, and Viscount Severn.
-Honours and decorations
 
-In June 2008, to recognise Prince Edward's visit to the Canadian province of Manitoba, a lake in the north of the province was named Lake James.
-James's sister was similarly honoured by Lake Louise in the same province.
+The Dowager Duchess of Calabria
+
+
+Infanta Elena, Duchess of Lugo (Elena María Isabel Dominica de Silos de Borbón y de Grecia; born 20 December 1963), is the first child and eldest daughter of King Juan Carlos I and Queen Sofía.
+As the eldest sister of King Felipe VI, Elena is the third in the line of succession to the Spanish throne, behind her nieces, Leonor, Princess of Asturias and Infanta Sofía.
+She has a younger sister, Infanta Cristina.
+On 3 March 1995, on the occasion of her marriage to Jaime de Marichalar y Sáenz de Tejada, Lord of Tejada, her father gave her the title of Duchess of Lugo.
+Since the ascension of her younger brother to the Spanish throne, Elena has not been part of the royal family.
+Early life and family
+
+Infanta Elena was born on 20 December 1963 at Our Lady of Loreto Sanatorium, now known as ORPEA Madrid Loreto, in Madrid.
+She is the first member to be born in a hospital from King Juan Carlos
+I's family and the eldest child of Juan Carlos I, the former Spanish monarch, and Queen Sofía (born Princess of Greece and Denmark).
+Elena studied at Santa María del Camino School in Madrid and got a diploma as a secondary school teacher in 1986, with a specialty in English studies.
+Equestrianism
+
+From her childhood, Elena had a love of horse riding, a passion that she inherited from her grandmother, Princess María de las Mercedes, Countess of Barcelona.
+Afterwards, in the late 1980s, King Juan Carlos ordered the construction of stables and a riding arena at the Royal Palace of Zarzuela so that his daughter could practice her hobby in the palace.
+Elena was described by fellow equestrian
+Luis Jaime Carvajal y Salas, 5th Duke of Aveyro, as a "very good " but he pointed that her problem was that horse riding "requires time and she doesn't have it" as a member of the royal family.
+Some of the Infanta's most notable horses are Qant (her favorite horse since 2011) and Jordano EB (Qant's successor), a chestnut horse that she bred herself.
+As of 2016, Elena owned at least eight horses.
+Elena has had several equestrian teachers, but no official one since she left the royal family.
+The most important are Felipe de Zuleta y Alejandro from 2006 to 2015, an official of the Royal Guard and brother of the Duke of Abrantes, private secretary of Queen Letizia from 2014 to 2024, and Luis Astolfi Pérez de Guzmán, a former boyfriend and currently a close friend of hers.
+Luis and Elena rekindled their friendship in 2013 after many years with no contact.
+She shares this hobby with her daughter, Victoria, Grandee of Spain, as well as watching bullfighting.
+Marriage and children
+
+Elena met Jaime de Marichalar y Sáenz de Tejada, Lord of Tejada, son of the Amalio de Marichalar y Bruguera, 8th Count of Ripalda, for the first time in 1987 in Paris.
+Elena was studying French literature in the French capital while Jaime was working for Credit Suisse.
+In addition to the immediate royal family, Princess María de las Mercedes, Countess of Barcelona (the bride's grandmother), Infanta Pilar, Duchess of Badajoz (the bride's aunt) and the Duchess and Duke of Soria (the bride's aunt and uncle) were present.
+It was the first royal wedding in Spain since the wedding of King Alfonso XIII and Princess Victoria Eugenie of Battenberg in 1906.
+Also, to celebrate the occasion, King Juan Carlos gave Infanta Elena the title of Duchess of Lugo.
+The couple has two children: Felipe de Marichalar y Borbón (born 17 July 1998) and Victoria de Marichalar y Borbón (born 9 September 2000) were born at Ruber International Hospital in Madrid.
+On 26 June 2003, a few days after the king announced his daughter's third pregnancy, Elena suffered a miscarriage.
+As children of an Infanta of Spain, Elena's children are Grandees of Spain.
+On 13 November 2007, it was announced that Elena had separated from her husband.
+The Duchess and Duke consort of Lugo were divorced in December 2009.
+On 21 January 2010, the divorce was registered at the Civil Registry of the Spanish Royal Family and it was officially announced on 9 February 2010; Jaime de Marichalar was no longer permitted to use the ducal title nor was he considered an official member of the Spanish Royal Family.
+Activities and personal work
+
+Elena started to attend official events at a very young age.
+Since finishing her basic education in 1983, Elena, along with her sister Cristina, has supported their parents.
+They represented the Crown at official events such as the National Day, the wedding of Princess Astrid of Belgium, the re-burial of Queen Victoria Eugenia at El Escorial, the state visit of Mexican president Miguel de la Madrid to Spain, and the 1984 Prince of Asturias Awards ceremony, among others.
+Since her brother's ascension to the throne in June 2014 and her departure from the royal family, Elena has reduced her public appearances.
+However, that year she did represent the Crown at some events, such as the funeral of Cayetana Fitz-James Stuart, 18th Duchess of Alba in November 2014 and the presentation of the National Sports Awards in December 2014.
+Since then, Elena has limited her institutional activity to annually presiding over the awards ceremony for the Patrimonio Nacional's Children's and Youth Painting Contest.
+In addition to her obligations as an infanta, Elena has a job that allows her to compensate for the lack of public salary by not being a member of the royal family.
+Elena has worked at the Mapfre Foundation since 2008 and currently serves as director of social and cultural projects.
+In this role, Elena has helped the foundation to promote projects and give visibility to various cooperation programs in Latin America through several international tours.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -121,39 +148,9 @@ James's sister was similarly honoured by Lake Louise in the same province.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -168,6 +165,23 @@ James's sister was similarly honoured by Lake Louise in the same province.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -185,6 +199,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -252,29 +281,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -283,6 +304,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -295,6 +324,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -303,17 +334,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -341,6 +374,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -356,145 +473,134 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (49e5e21e-580b-4c7a-8b8c-2b8a2a711678)
- Call ID: 49e5e21e-580b-4c7a-8b8c-2b8a2a711678
+  AssignClass (d8519fc2-d36b-4dd7-93ee-cd19dbb60c05)
+ Call ID: d8519fc2-d36b-4dd7-93ee-cd19dbb60c05
   Args:
+    source: Juan_Carlos_I
     type: :Man
-    source: James_Alexander_Philip_Theo_Mountbatten-Windsor
-  AssignClass (fd1d804b-4bdd-4e82-aaf6-8dc283af3f3b)
- Call ID: fd1d804b-4bdd-4e82-aaf6-8dc283af3f3b
-  Args:
-    type: :Person
-    source: James_Alexander_Philip_Theo_Mountbatten-Windsor
-  AssignClass (21cd10d2-31c9-4de2-904b-0dab943759c0)
- Call ID: 21cd10d2-31c9-4de2-904b-0dab943759c0
-  Args:
-    type: :Man
-    source: Prince_Edward_Duke_of_Edinburgh
-  AssignClass (adafc8cf-a8cc-44bf-98b2-9279c4e054f7)
- Call ID: adafc8cf-a8cc-44bf-98b2-9279c4e054f7
-  Args:
-    type: :Person
-    source: Prince_Edward_Duke_of_Edinburgh
-  AssignClass (50f7c06e-c938-4185-94b9-52c85ec7f2c0)
- Call ID: 50f7c06e-c938-4185-94b9-52c85ec7f2c0
-  Args:
-    type: :Ancestor
-    source: Prince_Edward_Duke_of_Edinburgh
-  AssignClass (8c0da115-7a51-4d83-841d-eeb30af4f7f5)
- Call ID: 8c0da115-7a51-4d83-841d-eeb30af4f7f5
+  AssignClass (3621ddd1-db99-4f08-8fd0-9bb6dcd37e10)
+ Call ID: 3621ddd1-db99-4f08-8fd0-9bb6dcd37e10
   Args:
     type: :Woman
-    source: Sophie_Duchess_of_Edinburgh
-  AssignClass (621fc74e-aad1-456a-9ca2-1f2cf3178b5e)
- Call ID: 621fc74e-aad1-456a-9ca2-1f2cf3178b5e
-  Args:
-    type: :Person
-    source: Sophie_Duchess_of_Edinburgh
-  AssignClass (5de1dc30-0306-4668-a9cd-d41fb7fe6ecb)
- Call ID: 5de1dc30-0306-4668-a9cd-d41fb7fe6ecb
-  Args:
-    source: Sophie_Duchess_of_Edinburgh
-    type: :Ancestor
-  AssignClass (0d10286c-bf74-4a27-ba51-07e4a7e21b83)
- Call ID: 0d10286c-bf74-4a27-ba51-07e4a7e21b83
+    source: Sofia
+  AssignClass (12a1e1e7-0b29-463b-b972-c52d58dcc12b)
+ Call ID: 12a1e1e7-0b29-463b-b972-c52d58dcc12b
   Args:
     type: :Woman
-    source: Queen_Elizabeth_II
-  AssignClass (698b2bd5-9082-4a65-bdbe-d9de40ce73d1)
- Call ID: 698b2bd5-9082-4a65-bdbe-d9de40ce73d1
-  Args:
-    type: :Person
-    source: Queen_Elizabeth_II
-  AssignClass (c6f1b9da-25d8-4d33-a427-b8e8fb8b4de9)
- Call ID: c6f1b9da-25d8-4d33-a427-b8e8fb8b4de9
-  Args:
-    source: Queen_Elizabeth_II
-    type: :Ancestor
-  AssignClass (cff1bd4b-76cc-4de1-9d9f-59e8c93f87f2)
- Call ID: cff1bd4b-76cc-4de1-9d9f-59e8c93f87f2
+    source: Elena_de_Borbon
+  AssignClass (b0ea2493-8e41-44cf-9fbc-39893f3a9653)
+ Call ID: b0ea2493-8e41-44cf-9fbc-39893f3a9653
   Args:
     type: :Man
-    source: Prince_Philip_Duke_of_Edinburgh
-  AssignClass (7025630e-db4f-44ee-89af-39bb45d0c3a9)
- Call ID: 7025630e-db4f-44ee-89af-39bb45d0c3a9
+    source: Felipe_VI
+  AssignClass (1b6ad52d-f905-4f05-bc6f-7891b61ea2f3)
+ Call ID: 1b6ad52d-f905-4f05-bc6f-7891b61ea2f3
   Args:
-    source: Prince_Philip_Duke_of_Edinburgh
-    type: :Person
-  AssignClass (a7d95de0-1da5-4873-bfd5-20a32901c14b)
- Call ID: a7d95de0-1da5-4873-bfd5-20a32901c14b
-  Args:
-    source: Prince_Philip_Duke_of_Edinburgh
-    type: :Ancestor
-  AssignClass (0c885111-5f4c-458b-9510-132b4a27f61f)
- Call ID: 0c885111-5f4c-458b-9510-132b4a27f61f
-  Args:
-    type: :Man
-    source: King_Charles_III
-  AssignClass (1d1149a9-a585-4d90-85d0-47530d666047)
- Call ID: 1d1149a9-a585-4d90-85d0-47530d666047
-  Args:
-    type: :Person
-    source: King_Charles_III
-  AssignClass (c48d89b2-72cc-4660-a489-c7e78228f333)
- Call ID: c48d89b2-72cc-4660-a489-c7e78228f333
-  Args:
-    source: Louise
     type: :Woman
-  AssignClass (40109240-2a6a-4449-beee-4188790b38ec)
- Call ID: 40109240-2a6a-4449-beee-4188790b38ec
+    source: Cristina_de_Borbon
+  AssignClass (ca2ae7ac-40d1-496d-8d5e-105f08065e41)
+ Call ID: ca2ae7ac-40d1-496d-8d5e-105f08065e41
   Args:
-    source: Louise
-    type: :Person
-  AddLiteral (309438a2-1906-4d59-bc41-97b80d91e760)
- Call ID: 309438a2-1906-4d59-bc41-97b80d91e760
+    source: Jaime_de_Marichalar
+    type: :Man
+  AssignClass (3d6d49cd-5320-4cf3-acbd-63416809f2dd)
+ Call ID: 3d6d49cd-5320-4cf3-acbd-63416809f2dd
   Args:
-    relation: :hasBirthYear
-    literal_value: 2007
+    type: :Man
+    source: Felipe_de_Marichalar
+  AssignClass (5512655f-e325-45d7-8043-032b5bfeea21)
+ Call ID: 5512655f-e325-45d7-8043-032b5bfeea21
+  Args:
+    type: :Woman
+    source: Victoria_de_Marichalar
+  AddTriple (0e68b3ea-75d6-4777-95f3-3927a88d561b)
+ Call ID: 0e68b3ea-75d6-4777-95f3-3927a88d561b
+  Args:
+    relation: :isFatherOf
+    target: Elena_de_Borbon
+    source: Juan_Carlos_I
+  AddTriple (c305bd17-372d-44d3-a2b5-102703c6281f)
+ Call ID: c305bd17-372d-44d3-a2b5-102703c6281f
+  Args:
+    source: Sofia
+    target: Elena_de_Borbon
+    relation: :isMotherOf
+  AddTriple (34bf1144-3f62-4762-83d7-70695110b345)
+ Call ID: 34bf1144-3f62-4762-83d7-70695110b345
+  Args:
+    target: Felipe_VI
+    relation: :isFatherOf
+    source: Juan_Carlos_I
+  AddTriple (38d423f0-2970-4253-bf76-954cff368d11)
+ Call ID: 38d423f0-2970-4253-bf76-954cff368d11
+  Args:
+    source: Sofia
+    relation: :isMotherOf
+    target: Felipe_VI
+  AddTriple (f37be3f3-5536-457c-a3cc-1ff6101e4311)
+ Call ID: f37be3f3-5536-457c-a3cc-1ff6101e4311
+  Args:
+    relation: :isFatherOf
+    target: Cristina_de_Borbon
+    source: Juan_Carlos_I
+  AddTriple (2a126b41-c758-4ebf-9166-8c1b2e07b3fe)
+ Call ID: 2a126b41-c758-4ebf-9166-8c1b2e07b3fe
+  Args:
+    source: Sofia
+    target: Cristina_de_Borbon
+    relation: :isMotherOf
+  AddTriple (16a766e4-8f09-46f5-b181-dc6c5d3ecb4f)
+ Call ID: 16a766e4-8f09-46f5-b181-dc6c5d3ecb4f
+  Args:
+    target: Felipe_de_Marichalar
+    relation: :isFatherOf
+    source: Jaime_de_Marichalar
+  AddTriple (e13f723e-adb8-405d-b9b0-92340993d18c)
+ Call ID: e13f723e-adb8-405d-b9b0-92340993d18c
+  Args:
+    source: Elena_de_Borbon
+    relation: :isMotherOf
+    target: Felipe_de_Marichalar
+  AddTriple (ca37a28f-f447-4305-a774-a0b38200eba2)
+ Call ID: ca37a28f-f447-4305-a774-a0b38200eba2
+  Args:
+    target: Victoria_de_Marichalar
+    relation: :isFatherOf
+    source: Jaime_de_Marichalar
+  AddTriple (ca990589-849e-4135-a467-ecd1f112b7cc)
+ Call ID: ca990589-849e-4135-a467-ecd1f112b7cc
+  Args:
+    source: Elena_de_Borbon
+    relation: :isMotherOf
+    target: Victoria_de_Marichalar
+  AddLiteral (e241c592-4579-492d-8cc9-414e3f48091b)
+ Call ID: e241c592-4579-492d-8cc9-414e3f48091b
+  Args:
+    source: Elena_de_Borbon
     literal_type: xsd:integer
-    source: James_Alexander_Philip_Theo_Mountbatten-Windsor
-  AddTriple (c0488434-6480-4c36-bd8f-32d15d8c91f0)
- Call ID: c0488434-6480-4c36-bd8f-32d15d8c91f0
+    relation: :hasBirthYear
+    literal_value: 1963
+  AddLiteral (179a0d53-6aa8-407a-af87-bda83600f628)
+ Call ID: 179a0d53-6aa8-407a-af87-bda83600f628
   Args:
-    relation: :hasFather
-    source: James_Alexander_Philip_Theo_Mountbatten-Windsor
-    target: Prince_Edward_Duke_of_Edinburgh
-  AddTriple (ece9df85-fac6-4b8e-b3ab-0d66d49697e7)
- Call ID: ece9df85-fac6-4b8e-b3ab-0d66d49697e7
+    source: Felipe_de_Marichalar
+    literal_value: 1998
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (299798cd-321d-49dc-b55c-1d94c549037c)
+ Call ID: 299798cd-321d-49dc-b55c-1d94c549037c
   Args:
-    relation: :hasMother
-    source: James_Alexander_Philip_Theo_Mountbatten-Windsor
-    target: Sophie_Duchess_of_Edinburgh
-  AddTriple (a371894f-e365-4fa7-a6b0-0b5d437e621a)
- Call ID: a371894f-e365-4fa7-a6b0-0b5d437e621a
+    source: Victoria_de_Marichalar
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 2000
+  AddLiteral (0f440897-9f16-4c2b-9777-86be4b560c58)
+ Call ID: 0f440897-9f16-4c2b-9777-86be4b560c58
   Args:
-    source: Prince_Edward_Duke_of_Edinburgh
-    target: Prince_Philip_Duke_of_Edinburgh
-    relation: :hasFather
-  AddTriple (795c756a-cc79-4501-83a3-2bb4b38c8623)
- Call ID: 795c756a-cc79-4501-83a3-2bb4b38c8623
-  Args:
-    target: Queen_Elizabeth_II
-    source: Prince_Edward_Duke_of_Edinburgh
-    relation: :hasMother
-  AddTriple (043212c3-1c55-4439-8dd8-f42ccc1e320c)
- Call ID: 043212c3-1c55-4439-8dd8-f42ccc1e320c
-  Args:
-    relation: :hasSister
-    target: Louise
-    source: James_Alexander_Philip_Theo_Mountbatten-Windsor
-  AddTriple (da0fb638-bd36-464f-89b4-2470c265f13c)
- Call ID: da0fb638-bd36-464f-89b4-2470c265f13c
-  Args:
-    relation: :hasFather
-    target: Prince_Edward_Duke_of_Edinburgh
-    source: Louise
-  AddTriple (e8661812-4434-474b-90d7-0bd14ab5af71)
- Call ID: e8661812-4434-474b-90d7-0bd14ab5af71
-  Args:
-    relation: :hasMother
-    target: Sophie_Duchess_of_Edinburgh
-    source: Louise
-  Finish (3a2c4474-1995-47d4-90ce-3b2fbdc8df2c)
- Call ID: 3a2c4474-1995-47d4-90ce-3b2fbdc8df2c
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1995
+    source: Elena_de_Borbon
+  Finish (7527e862-8c3e-472a-98d3-deedf854db4e)
+ Call ID: 7527e862-8c3e-472a-98d3-deedf854db4e
   Args:

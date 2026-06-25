@@ -69,29 +69,59 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Rose Constance Leveson-Gower, Countess Granville (née Bowes-Lyon; 6 May 1890 – 17 November 1967) was the third daughter of the 14th Earl of Strathmore and Kinghorne by his wife, Cecilia Cavendish-Bentinck.
-An elder sister of Queen Elizabeth the Queen Mother, she was therefore a maternal aunt of Queen Elizabeth II.
+Prince Michael of Greece and Denmark (Greek: Μισέλ ντε Γκρες, romanized: Michel de Grèce; 7 January 1939 – 28 July 2024) was a Greek historian, author, and member of the Greek royal family.
+He was a first cousin, among others, of Kings George II of Greece, Paul of Greece, their sister,  Queen Helen, Queen Mother of Romania, in addition to Prince Philip, Duke of Edinburgh and also of Prince Henri d'Orléans.
 
 
-Life and family
+Birth and family
 
-On 24 May 1916, Lady Rose Bowes-Lyon married The Hon.
-William Leveson-Gower, who succeeded to his childless brother's earldom on 21 July 1939.
-As a result, she was styled as Countess Granville.
-The couple had two children:
+Michael was born in Rome to Prince Christopher of Greece and Denmark (youngest son of King George I of Greece) and his second wife, Princess Françoise d'Orléans (daughter of the Orleanist claimant to the defunct French throne, Jean d'Orléans, Duke of Guise).
+His godparents were his two first cousins Queen Helen, Queen Mother of Romania and King George II of Greece (eldest children of his paternal uncle King Constantine I).
+His father died in 1940, when Michael was a year old.
+His mother died in 1953, when Michael was 14, leaving him an orphan.
+Although a Greek prince, like many members of his dynasty he grew up largely abroad, sometimes in exile.
+As Europe marched into World War II, the infant Michael's family scattered: his mother's father, the Duke of Guise, left his residence of exile in Brussels, the Manoir d'Anjou, for their property at Larache, Morocco, in March 1939 where he died on 24 August, the Manoir having become the Belgian headquarters for Germany's invading Wehrmacht.
+About eight months before her father's death, Françoise was widowed by the death of Prince Christopher, following an abscess of the lung, in Athens in January.
+She took Michael to join her mother's household in Larache where her elder sister, Princess Isabelle Murat and her family, had also taken refuge from Europe.
+Their brother, Henri, Count of Paris, who succeeded his own father as head of the Orleanist monarchist movement, sent for his wife and children to come from their relatives in Brazil, and by the spring of 1941 they too were settled in Spanish Morocco (still being banned from the French sector), near Casablanca, in a small house without electricity that was named Oued Akreech in the town of Rabat.
+Michael lived his early childhood years on the African continent in the midst of his mother's family.
+By the time Michael's mother died in Paris in early 1953, France had repealed the law of banishment against its former ruling families (24 June 1950) and the Comte de Paris had taken up residence in the capital.
+When, in August 1953, Monseigneur moved the Comtesse and their children to a new estate, the Manoir du Cœur Volant in Louveciennes, Michael joined the couple and their four eldest children in the main building, while the seven younger children and their governesses occupied an annex given the name la maison de Blanche Neige ("Snow White's cottage").
+Henceforth, Michael was given into the care of his uncle and raised with his Orléans cousins.
+Michael later acknowledged that his uncle had been a poor manager of his ward's assets, but maintained that there was no malfeasance or attempt to conceal losses.
+Following the death of his second cousin, Christian Ludwig Gustav Fritz Castenskiold (1926–2024), on 16 July 2024, he became the last surviving great-grandchild of King Christian IX of Denmark.
+Activities
+
+Michael studied political science in Paris.
+He then re-patriated to Greece for military duty, serving for four years in the Cavalry-Tank Corps, in Athens and Thessaloniki.
+He inherited from his mother a half-interest in the domain of the Nouvion-en-Thiérache, once the seat of the Dukes of Guise, from whom the Bourbon-Orléans inherited the vast property, which included a grand château and a petit château, in Aisne.
+He and Michael sold the grand château in 1980 to the city of Roubaix, which subsequently became a conference center for environmental studies, while the petit château was sold in 1986 to the local government of Nouvion.
+List of works
+
+Having watched his mother observe a family tradition by igniting what he called a kind of auto-da-fé in which she burned his late father's papers and memorabilia following the sale of his villa in Rome after the war, Prince Michael grew up to become a biographer and historian.
+Marriage and issue
+
+Michael married Marina Karella (born 17 July 1940) on 7 February 1965 in Athens, daughter of Theódoros Karellas and Elli Chalikiopoulos.
+Marina is a Greek artist and sculptor of international reputation whose work has often been exhibited in Athens, Paris and New York.
+This was a non-dynastic marriage, which obtained the legally required authorisation of King Constantine II only after Michael renounced all rights of succession to the Greek throne for himself and his descendants.
+The couple have two daughters:
 
 
-The Countess Granville stood godmother to her niece, Princess Margaret Rose of York, at the latter's christening on 3 October 1930.
-She was also awarded the honorary degree of Doctor of Laws (LL.D.) by Queen's University Belfast.
-Lord Granville died on 25 June 1953, aged 72.
-Lady Granville outlived him by fourteen years when she died on 17 November 1967, aged 77.
-She was the last surviving sibling of Queen Elizabeth The Queen Mother.
+Death
+
+Prince Michael died at a hospital in Athens, on 28 July 2024, at the age of 85.
+He was the last surviving grandchild of George I of Greece.
+He has lineage to the House of Bourbon through his mother's side of the family and the last surviving great-grandchild of Christian IX of Denmark.
+His immediate family – Marina Karella, Princess Alexandra of Greece, Nicolas Mirzayantz, Princess Olga, Duchess of Aosta, Prince Aimone, Duke of Aosta, and his grandchildren – attended the funeral.
+Other dignitaries included Queen Anne-Marie of Greece, Pavlos, Crown Prince of Greece, Marie-Chantal, Crown Princess of Greece, Princess Alexia of Greece and Denmark, Prince Nikolaos of Greece and Denmark, Princess Theodora of Greece and Denmark, Prince Philippos of Greece and Denmark, Queen Sofía of Spain, Princess Irene of Greece and Denmark, Princess Anne, Duchess of Calabria, Princess Mafalda of Savoy-Aosta, Princess Bianca of Savoy-Aosta and Mareva Grabowski, the wife of the Prime Minister of Greece, Kyriakos Mitsotakis.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -107,39 +137,9 @@ She was the last surviving sibling of Queen Elizabeth The Queen Mother.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -154,6 +154,23 @@ She was the last surviving sibling of Queen Elizabeth The Queen Mother.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -171,6 +188,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -238,29 +270,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,6 +293,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -281,6 +313,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -289,17 +323,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -327,6 +363,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -342,309 +462,109 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (fe106c8d-bf96-4170-8655-53987464a44e)
- Call ID: fe106c8d-bf96-4170-8655-53987464a44e
+  AssignClass (32a8c305-4196-4210-9a6c-9a264c393d3f)
+ Call ID: 32a8c305-4196-4210-9a6c-9a264c393d3f
   Args:
-    type: :Woman
-    source: Rose_Constance_Leveson-Gower
-  AssignClass (95339083-47a6-4024-8b90-b08c77fe0da8)
- Call ID: 95339083-47a6-4024-8b90-b08c77fe0da8
-  Args:
-    type: :Person
-    source: Rose_Constance_Leveson-Gower
-  AddLiteral (eee3c3d0-e56c-40b3-829f-595759fbdafa)
- Call ID: eee3c3d0-e56c-40b3-829f-595759fbdafa
-  Args:
-    source: Rose_Constance_Leveson-Gower
-    literal_type: xsd:string
-    literal_value: Rose Constance Leveson-Gower, Countess Granville
-    relation: :knownAs
-  AddLiteral (9a37d253-156f-4352-a3ce-c273c336ec49)
- Call ID: 9a37d253-156f-4352-a3ce-c273c336ec49
-  Args:
-    source: Rose_Constance_Leveson-Gower
-    literal_type: xsd:string
-    literal_value: 1890
-    relation: :hasBirthYear
-  AddLiteral (026e2c72-327d-46dc-8b62-decbe0e551e9)
- Call ID: 026e2c72-327d-46dc-8b62-decbe0e551e9
-  Args:
-    relation: :hasDeathYear
-    literal_type: xsd:string
-    literal_value: 1967
-    source: Rose_Constance_Leveson-Gower
-  AssignClass (367b5567-eb20-4bbe-a6e7-f20ff5c57fe1)
- Call ID: 367b5567-eb20-4bbe-a6e7-f20ff5c57fe1
+    source: Prince_Michael_of_Greece_and_Denmark
+    type: :Man
+  AssignClass (f697cd17-80e0-4c1d-94bd-ca5e0bc18f95)
+ Call ID: f697cd17-80e0-4c1d-94bd-ca5e0bc18f95
   Args:
     type: :Man
-    source: 14th_Earl_of_Strathmore_and_Kinghorne
-  AssignClass (f19174dc-e8dc-4989-b5ba-7371fd126861)
- Call ID: f19174dc-e8dc-4989-b5ba-7371fd126861
+    source: Prince_Christopher_of_Greece_and_Denmark
+  AssignClass (6245c577-1e19-4175-8247-8d6629f86c3b)
+ Call ID: 6245c577-1e19-4175-8247-8d6629f86c3b
   Args:
-    type: :Ancestor
-    source: 14th_Earl_of_Strathmore_and_Kinghorne
-  AssignClass (28192bf0-42cb-4dd3-ba05-b081499f1008)
- Call ID: 28192bf0-42cb-4dd3-ba05-b081499f1008
+    source: Princess_Francoise_dOrleans
+    type: :Woman
+  AssignClass (df668284-7d7d-450e-b7b7-d782a27d2271)
+ Call ID: df668284-7d7d-450e-b7b7-d782a27d2271
   Args:
-    type: :Person
-    source: 14th_Earl_of_Strathmore_and_Kinghorne
-  AssignClass (c47a33e1-7066-4ec2-bc18-333cab82f172)
- Call ID: c47a33e1-7066-4ec2-bc18-333cab82f172
+    type: :Man
+    source: King_George_I_of_Greece
+  AssignClass (a02762a2-6e3f-4295-b143-090aa4fbd54b)
+ Call ID: a02762a2-6e3f-4295-b143-090aa4fbd54b
+  Args:
+    source: Jean_dOrleans_Duke_of_Guise
+    type: :Man
+  AssignClass (18e2fcd0-3769-42fd-8a6e-3cfc0aa05aeb)
+ Call ID: 18e2fcd0-3769-42fd-8a6e-3cfc0aa05aeb
   Args:
     type: :Woman
-    source: Cecilia_Cavendish-Bentinck
-  AssignClass (526c056f-7caf-4128-8bb5-7689b148a4e9)
- Call ID: 526c056f-7caf-4128-8bb5-7689b148a4e9
+    source: Marina_Karella
+  AssignClass (dcf56427-377c-4969-a4ec-bea3234219ef)
+ Call ID: dcf56427-377c-4969-a4ec-bea3234219ef
   Args:
-    type: :Ancestor
-    source: Cecilia_Cavendish-Bentinck
-  AssignClass (affbc5a9-c104-4216-9122-7029535eda46)
- Call ID: affbc5a9-c104-4216-9122-7029535eda46
+    type: :Man
+    source: Theodoros_Karellas
+  AssignClass (c43cfed9-0e0d-4914-9a1b-c6ef6db0719d)
+ Call ID: c43cfed9-0e0d-4914-9a1b-c6ef6db0719d
   Args:
-    type: :Person
-    source: Cecilia_Cavendish-Bentinck
-  AddTriple (cacd6d01-f3c6-4efe-b0c4-b530ddd7c73c)
- Call ID: cacd6d01-f3c6-4efe-b0c4-b530ddd7c73c
+    type: :Woman
+    source: Elli_Chalikiopoulos
+  AddLiteral (cb88ea07-9231-4ac5-94a9-730171127ad1)
+ Call ID: cb88ea07-9231-4ac5-94a9-730171127ad1
   Args:
-    source: Rose_Constance_Leveson-Gower
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Prince_Michael_of_Greece_and_Denmark
+    literal_value: 1939
+  AddLiteral (d5118b78-c5a3-4929-bc6c-712d2b06e761)
+ Call ID: d5118b78-c5a3-4929-bc6c-712d2b06e761
+  Args:
+    literal_value: 2024
+    source: Prince_Michael_of_Greece_and_Denmark
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddTriple (3485e2e5-ce2a-4b00-b25e-c8c2c32b1924)
+ Call ID: 3485e2e5-ce2a-4b00-b25e-c8c2c32b1924
+  Args:
+    target: Prince_Christopher_of_Greece_and_Denmark
+    source: Prince_Michael_of_Greece_and_Denmark
     relation: :hasFather
-    target: 14th_Earl_of_Strathmore_and_Kinghorne
-  AddTriple (e56793bc-4b9e-4ea5-ba23-7bc90a25478a)
- Call ID: e56793bc-4b9e-4ea5-ba23-7bc90a25478a
+  AddTriple (8b3546e2-71a7-43c0-9213-9fab2a1d745c)
+ Call ID: 8b3546e2-71a7-43c0-9213-9fab2a1d745c
   Args:
     relation: :hasMother
-    target: Cecilia_Cavendish-Bentinck
-    source: Rose_Constance_Leveson-Gower
-  AssignClass (fbbf302d-1aeb-4e2f-8aa6-01b3ffbc5e90)
- Call ID: fbbf302d-1aeb-4e2f-8aa6-01b3ffbc5e90
+    source: Prince_Michael_of_Greece_and_Denmark
+    target: Princess_Francoise_dOrleans
+  AddTriple (513eeed0-a63e-4816-a473-b66ca654ae6f)
+ Call ID: 513eeed0-a63e-4816-a473-b66ca654ae6f
   Args:
-    type: :Woman
-    source: Queen_Elizabeth_The_Queen_Mother
-  AssignClass (8ddef088-d56d-417c-a3b6-cc4f47c64056)
- Call ID: 8ddef088-d56d-417c-a3b6-cc4f47c64056
+    target: King_George_I_of_Greece
+    source: Prince_Christopher_of_Greece_and_Denmark
+    relation: :hasFather
+  AddTriple (f39f16f7-fc2f-4011-96e4-2c6e187a1467)
+ Call ID: f39f16f7-fc2f-4011-96e4-2c6e187a1467
   Args:
-    type: :Person
-    source: Queen_Elizabeth_The_Queen_Mother
-  AddTriple (ce68600d-750e-4a29-870d-e1ab285fa962)
- Call ID: ce68600d-750e-4a29-870d-e1ab285fa962
+    relation: :hasFather
+    target: Jean_dOrleans_Duke_of_Guise
+    source: Princess_Francoise_dOrleans
+  AddTriple (b45c5811-2f1b-473b-b24e-41d850430ef5)
+ Call ID: b45c5811-2f1b-473b-b24e-41d850430ef5
   Args:
-    source: Rose_Constance_Leveson-Gower
-    target: Queen_Elizabeth_The_Queen_Mother
-    relation: :isSisterOf
-  AssignClass (0e847843-1e84-47b2-bbdb-8e89a9848754)
- Call ID: 0e847843-1e84-47b2-bbdb-8e89a9848754
+    relation: :hasFather
+    source: Marina_Karella
+    target: Theodoros_Karellas
+  AddTriple (778b6b4a-efc3-4015-ba41-01483ad1b318)
+ Call ID: 778b6b4a-efc3-4015-ba41-01483ad1b318
   Args:
-    type: :Woman
-    source: Queen_Elizabeth_II
-  AssignClass (b15c570c-70ec-4650-aae1-8a21bcc7a20f)
- Call ID: b15c570c-70ec-4650-aae1-8a21bcc7a20f
+    source: Marina_Karella
+    target: Elli_Chalikiopoulos
+    relation: :hasMother
+  AddLiteral (5461e6d9-9e99-45bf-8b4d-01e855a7c470)
+ Call ID: 5461e6d9-9e99-45bf-8b4d-01e855a7c470
   Args:
-    type: :Person
-    source: Queen_Elizabeth_II
-  AddTriple (2aa068d6-941a-475d-bcfa-ff1626bc4340)
- Call ID: 2aa068d6-941a-475d-bcfa-ff1626bc4340
-  Args:
-    source: Rose_Constance_Leveson-Gower
-    target: Queen_Elizabeth_II
-    relation: :isAuntOf
-  AssignClass (70027d85-119c-4f34-ab36-b4462d751c5c)
- Call ID: 70027d85-119c-4f34-ab36-b4462d751c5c
-  Args:
-    type: :Man
-    source: William_Leveson-Gower
-  AssignClass (d42ac4fe-c3c0-45fe-9e3f-ed9cf4c33330)
- Call ID: d42ac4fe-c3c0-45fe-9e3f-ed9cf4c33330
-  Args:
-    type: :Person
-    source: William_Leveson-Gower
-  AddLiteral (09ffb498-9e1a-4fdf-a80a-57f4000fe282)
- Call ID: 09ffb498-9e1a-4fdf-a80a-57f4000fe282
-  Args:
-    source: Rose_Constance_Leveson-Gower
-    literal_type: xsd:string
-    literal_value: 1916
+    literal_type: xsd:integer
     relation: :hasMarriageYear
-  AddTriple (24dca0fe-1364-4713-8cc5-5e87ccebb866)
- Call ID: 24dca0fe-1364-4713-8cc5-5e87ccebb866
+    literal_value: 1965
+    source: Prince_Michael_of_Greece_and_Denmark
+  AddTriple (384b5008-1e06-4f12-90b5-cfd077b4dcdc)
+ Call ID: 384b5008-1e06-4f12-90b5-cfd077b4dcdc
   Args:
-    source: Rose_Constance_Leveson-Gower
-    target: William_Leveson-Gower
+    target: Marina_Karella
+    source: Prince_Michael_of_Greece_and_Denmark
     relation: :hasRelation
-  AddLiteral (eb6e10c4-45e2-42a2-814e-2e4a3245b5e8)
- Call ID: eb6e10c4-45e2-42a2-814e-2e4a3245b5e8
-  Args:
-    literal_type: xsd:string
-    literal_value: 1953
-    source: William_Leveson-Gower
-    relation: :hasDeathYear
-  AssignClass (a6010b4e-f0bc-40b3-aaf7-05220d37b1c2)
- Call ID: a6010b4e-f0bc-40b3-aaf7-05220d37b1c2
-  Args:
-    type: :Woman
-    source: Princess_Margaret_Rose_of_York
-  AssignClass (4a31a46a-51e8-4c1c-8741-7d1fb01bd30d)
- Call ID: 4a31a46a-51e8-4c1c-8741-7d1fb01bd30d
-  Args:
-    type: :Person
-    source: Princess_Margaret_Rose_of_York
-  AddTriple (6d3ad3fb-4ec4-4e61-b0f5-a21e8eef87ca)
- Call ID: 6d3ad3fb-4ec4-4e61-b0f5-a21e8eef87ca
-  Args:
-    relation: :isAuntOf
-    target: Princess_Margaret_Rose_of_York
-    source: Rose_Constance_Leveson-Gower
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Rose_Constance_Leveson-Gower a :Person,
-          :Woman ;
-      :hasBirthYear "1890"^^xsd:string ;
-      :hasDeathYear "1967"^^xsd:string ;
-      :hasFather data:14th_Earl_of_Strathmore_and_Kinghorne ;
-      :hasMarriageYear "1916"^^xsd:string ;
-      :hasMother data:Cecilia_Cavendish-Bentinck ;
-      :hasRelation data:William_Leveson-Gower ;
-      :isAuntOf data:Princess_Margaret_Rose_of_York,
-          data:Queen_Elizabeth_II ;
-      :isSisterOf data:Queen_Elizabeth_The_Queen_Mother ;
-      :knownAs "Rose Constance Leveson-Gower, Countess Granville"^^xsd:string .
-
-  data:14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Cecilia_Cavendish-Bentinck a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Margaret_Rose_of_York a :Person,
-          :Woman .
-
-  data:Queen_Elizabeth_II a :Person,
-          :Woman .
-
-  data:Queen_Elizabeth_The_Queen_Mother a :Person,
-          :Woman .
-
-  data:William_Leveson-Gower a :Man,
-          :Person ;
-      :hasDeathYear "1953"^^xsd:string .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (e5b235e4-1913-4383-9aba-21f9b5d80268)
- Call ID: e5b235e4-1913-4383-9aba-21f9b5d80268
+  Finish (01122ee0-e955-4432-aeaa-d9007d53d149)
+ Call ID: 01122ee0-e955-4432-aeaa-d9007d53d149
   Args:

@@ -108,6 +108,8 @@ Other prominent members of the AfD quickly sprang to von Storch's defense, inclu
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -123,39 +125,9 @@ Other prominent members of the AfD quickly sprang to von Storch's defense, inclu
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -170,6 +142,23 @@ Other prominent members of the AfD quickly sprang to von Storch's defense, inclu
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -187,6 +176,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -254,29 +258,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -285,6 +281,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -297,6 +301,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -305,17 +311,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -343,6 +351,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -358,278 +450,106 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (51854ef2-0e35-42fb-b8a2-1a70dcc663ad)
- Call ID: 51854ef2-0e35-42fb-b8a2-1a70dcc663ad
+  AssignClass (4708ff13-94d8-43e8-9947-12d0a839059a)
+ Call ID: 4708ff13-94d8-43e8-9947-12d0a839059a
   Args:
     type: :Woman
-    source: Beatrix_von_Storch
-  AssignClass (ba7f8f4f-5de8-403a-88f6-9a4cf22ec3a4)
- Call ID: ba7f8f4f-5de8-403a-88f6-9a4cf22ec3a4
+    source: :BeatrixVonStorch
+  AssignClass (3bc96d74-2685-4dbf-92ab-5c3072bfd08c)
+ Call ID: 3bc96d74-2685-4dbf-92ab-5c3072bfd08c
   Args:
-    source: Beatrix_von_Storch
+    source: :BeatrixVonStorch
     type: :Person
-  AddLiteral (d99b69d1-e955-44a3-be4b-a950e407873b)
- Call ID: d99b69d1-e955-44a3-be4b-a950e407873b
+  AddLiteral (61f34e16-cf6b-4dcc-ac2c-794e3d482355)
+ Call ID: 61f34e16-cf6b-4dcc-ac2c-794e3d482355
   Args:
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Beatrix_von_Storch
     literal_value: 1971
-  AddTriple (7bab5ddf-184d-4e70-97bc-72ad3ffb5a13)
- Call ID: 7bab5ddf-184d-4e70-97bc-72ad3ffb5a13
-  Args:
-    source: Beatrix_von_Storch
-    target: :Female
-    relation: :hasSex
-  AssignClass (c4ea7d85-2747-4343-a1f6-722271f6922c)
- Call ID: c4ea7d85-2747-4343-a1f6-722271f6922c
+    source: :BeatrixVonStorch
+    literal_type: xsd:integer
+  AssignClass (ad9be799-2b84-4abb-8f77-57175665fa8e)
+ Call ID: ad9be799-2b84-4abb-8f77-57175665fa8e
   Args:
     type: :Man
-    source: Sven_von_Storch
-  AssignClass (960592b9-c3ad-4664-9f48-865a3bb14441)
- Call ID: 960592b9-c3ad-4664-9f48-865a3bb14441
+    source: :SvenVonStorch
+  AssignClass (d1625f18-706f-4c72-9bee-1562e15e099b)
+ Call ID: d1625f18-706f-4c72-9bee-1562e15e099b
   Args:
-    source: Sven_von_Storch
+    source: :SvenVonStorch
     type: :Person
-  AddLiteral (7638e738-c7de-4868-92bc-315fedd24528)
- Call ID: 7638e738-c7de-4868-92bc-315fedd24528
+  AddLiteral (61d6a9d2-2d1a-4a11-afc2-58fe293524e6)
+ Call ID: 61d6a9d2-2d1a-4a11-afc2-58fe293524e6
   Args:
-    source: Sven_von_Storch
     literal_value: 1970
     relation: :hasBirthYear
+    source: :SvenVonStorch
     literal_type: xsd:integer
-  AddTriple (83b2fbc7-34eb-42cf-837f-e571825d512d)
- Call ID: 83b2fbc7-34eb-42cf-837f-e571825d512d
+  AddLiteral (7de11548-077a-4fc9-aa9b-bed8e9ccf869)
+ Call ID: 7de11548-077a-4fc9-aa9b-bed8e9ccf869
   Args:
-    source: Sven_von_Storch
-    target: :Male
-    relation: :hasSex
-  AddLiteral (c1b3526e-1c61-4b3f-8b72-d1ee3ab8f6f7)
- Call ID: c1b3526e-1c61-4b3f-8b72-d1ee3ab8f6f7
-  Args:
-    source: Beatrix_von_Storch
-    literal_value: 2010
+    source: :BeatrixVonStorch
+    literal_type: xsd:integer
     relation: :hasMarriageYear
-    literal_type: xsd:integer
-  AddTriple (f5a4d063-5f26-4bff-adf9-c68aa2320056)
- Call ID: f5a4d063-5f26-4bff-adf9-c68aa2320056
+    literal_value: 2010
+  AddTriple (5ab991ae-0ffc-4eeb-a8fb-178afbacf223)
+ Call ID: 5ab991ae-0ffc-4eeb-a8fb-178afbacf223
   Args:
+    source: :BeatrixVonStorch
     relation: :hasRelation
-    target: :Sven_von_Storch
-    source: Beatrix_von_Storch
-  AssignClass (fba3892f-a4b8-4cb1-8ebd-e984f0154ab6)
- Call ID: fba3892f-a4b8-4cb1-8ebd-e984f0154ab6
+    target: :SvenVonStorch
+  AssignClass (94bd0f6e-a5e0-4424-8245-0f1e34578498)
+ Call ID: 94bd0f6e-a5e0-4424-8245-0f1e34578498
   Args:
+    source: :BerndtDetlevVonStorch
     type: :Man
-    source: Berndt_Detlev_von_Storch
-  AssignClass (2ef60309-7eaf-4821-bdb5-7c6089e6b60f)
- Call ID: 2ef60309-7eaf-4821-bdb5-7c6089e6b60f
+  AssignClass (8a282a46-e72c-4ae3-9cb0-dec4d5f617a1)
+ Call ID: 8a282a46-e72c-4ae3-9cb0-dec4d5f617a1
   Args:
-    source: Berndt_Detlev_von_Storch
     type: :Person
-  AssignClass (e70c2c24-7f91-45fb-b861-b3a98533a4e5)
- Call ID: e70c2c24-7f91-45fb-b861-b3a98533a4e5
+    source: :BerndtDetlevVonStorch
+  AddLiteral (3195df67-517a-435b-befe-61b268d42e0c)
+ Call ID: 3195df67-517a-435b-befe-61b268d42e0c
   Args:
-    source: Berndt_Detlev_von_Storch
-    type: :Ancestor
-  AddLiteral (f85b4f17-986a-4669-ba52-808b9ac200ae)
- Call ID: f85b4f17-986a-4669-ba52-808b9ac200ae
-  Args:
-    literal_value: 1930
-    source: Berndt_Detlev_von_Storch
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (42c164ef-1472-452d-bed3-e673f9fd4730)
- Call ID: 42c164ef-1472-452d-bed3-e673f9fd4730
-  Args:
+    literal_value: 1930
     literal_type: xsd:integer
+    source: :BerndtDetlevVonStorch
+  AddLiteral (559bd465-1e11-4a43-945e-a7396e3ce932)
+ Call ID: 559bd465-1e11-4a43-945e-a7396e3ce932
+  Args:
     relation: :hasDeathYear
     literal_value: 2004
-    source: Berndt_Detlev_von_Storch
-  AssignClass (3549b713-962d-4cc9-9295-99a4d5123c42)
- Call ID: 3549b713-962d-4cc9-9295-99a4d5123c42
+    source: :BerndtDetlevVonStorch
+    literal_type: xsd:integer
+  AssignClass (1e144fa1-def8-40ec-be59-25f9042f2dd3)
+ Call ID: 1e144fa1-def8-40ec-be59-25f9042f2dd3
   Args:
+    source: :AntjeLieteKrugerFranke
     type: :Woman
-    source: Antje_Liete_Krüger-Franke
-  AssignClass (d10ca1e7-6449-4b80-84e4-cd3a66fa42fe)
- Call ID: d10ca1e7-6449-4b80-84e4-cd3a66fa42fe
+  AssignClass (43902712-bc36-4c82-b04f-eb37de373c16)
+ Call ID: 43902712-bc36-4c82-b04f-eb37de373c16
   Args:
     type: :Person
-    source: Antje_Liete_Krüger-Franke
-  AssignClass (9695f1b5-f0e4-4d3f-9d09-9a85bee95185)
- Call ID: 9695f1b5-f0e4-4d3f-9d09-9a85bee95185
+    source: :AntjeLieteKrugerFranke
+  AddLiteral (6ce05c3d-3154-49ef-b4f3-e50c54261e96)
+ Call ID: 6ce05c3d-3154-49ef-b4f3-e50c54261e96
   Args:
-    type: :Ancestor
-    source: Antje_Liete_Krüger-Franke
-  AddLiteral (76649872-44b0-467a-8c1c-69c4ffd85a47)
- Call ID: 76649872-44b0-467a-8c1c-69c4ffd85a47
-  Args:
-    source: Antje_Liete_Krüger-Franke
-    literal_value: 1938
-    relation: :hasBirthYear
     literal_type: xsd:integer
-  AddTriple (5be8d340-0fbc-478b-a58e-855bc7ae82d9)
- Call ID: 5be8d340-0fbc-478b-a58e-855bc7ae82d9
+    source: :AntjeLieteKrugerFranke
+    relation: :hasBirthYear
+    literal_value: 1938
+  AddTriple (b0c061db-0592-43f5-81db-fb6f479b9cf5)
+ Call ID: b0c061db-0592-43f5-81db-fb6f479b9cf5
   Args:
-    target: :Berndt_Detlev_von_Storch
-    source: Sven_von_Storch
+    target: :BerndtDetlevVonStorch
     relation: :hasFather
-  AddTriple (5a956ea0-3844-4e1e-9eee-61cd10257a0e)
- Call ID: 5a956ea0-3844-4e1e-9eee-61cd10257a0e
+    source: :SvenVonStorch
+  AddTriple (c68c7dfa-80f6-4c78-b191-fa7abd841e32)
+ Call ID: c68c7dfa-80f6-4c78-b191-fa7abd841e32
   Args:
+    source: :SvenVonStorch
     relation: :hasMother
-    target: :Antje_Liete_Krüger-Franke
-    source: Sven_von_Storch
-  Finish (d5dfb553-c617-4118-9497-e935caf7d88f)
- Call ID: d5dfb553-c617-4118-9497-e935caf7d88f
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Beatrix_von_Storch a :Person,
-          :Woman ;
-      :hasBirthYear 1971 ;
-      :hasMarriageYear 2010 ;
-      :hasRelation data:Sven_von_Storch ;
-      :hasSex data:Female .
-
-  data:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1938 .
-
-  data:Berndt_Detlev_von_Storch a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1930 ;
-      :hasDeathYear 2004 .
-
-  data:Sven_von_Storch a :Man,
-          :Person ;
-      :hasBirthYear 1970 ;
-      :hasFather data:Berndt_Detlev_von_Storch ;
-      :hasMother data:Antje_Liete_Kr%C3%BCger-Franke ;
-      :hasSex data:Male .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male', 'Female']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (71a0c725-9f29-44cb-8740-005f7983c307)
- Call ID: 71a0c725-9f29-44cb-8740-005f7983c307
-  Args:
-    type: :Sex
-    source: Male
-  AssignClass (c16ec366-a712-40af-88ed-f47eecd0bca4)
- Call ID: c16ec366-a712-40af-88ed-f47eecd0bca4
-  Args:
-    type: :Sex
-    source: Female
-  Finish (ee0c453f-e01b-4ea4-a115-634cf6f08488)
- Call ID: ee0c453f-e01b-4ea4-a115-634cf6f08488
+    target: :AntjeLieteKrugerFranke
+  Finish (79da82c1-f151-4dfb-a621-2f326a3f4747)
+ Call ID: 79da82c1-f151-4dfb-a621-2f326a3f4747
   Args:

@@ -1,0 +1,404 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederica a :Person,
+        :Woman ;
+    :hasBrother data:GeorgeWilliam ;
+    :hasRelation data:AugustaVictoria,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:VictoriaLouise,
+        data:Welf,
+        data:WilhelmII ;
+    :hasSister data:Frederica ;
+    :isAuntOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isBloodrelationOf data:Frederica,
+        data:GeorgeWilliam ;
+    :isSiblingOf data:Frederica,
+        data:GeorgeWilliam ;
+    :isSisterOf data:Frederica,
+        data:GeorgeWilliam .
+
+data:AliceOfBattenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sophie ;
+    :hasDaughter data:Sophie ;
+    :hasRelation data:AliceOfBattenberg,
+        data:Friederike,
+        data:GeorgChild,
+        data:Sophie,
+        data:Welf ;
+    :hasSister data:AliceOfBattenberg ;
+    :isAncestorOf data:Friederike,
+        data:GeorgChild,
+        data:Sophie,
+        data:Welf ;
+    :isAuntOf data:Sophie ;
+    :isBloodrelationOf data:AliceOfBattenberg ;
+    :isMotherOf data:Sophie ;
+    :isParentOf data:Sophie ;
+    :isSiblingOf data:AliceOfBattenberg ;
+    :isSisterOf data:AliceOfBattenberg .
+
+data:PrinceAndrew a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceAndrew ;
+    :hasChild data:Sophie ;
+    :hasDaughter data:Sophie ;
+    :hasRelation data:Friederike,
+        data:GeorgChild,
+        data:PrinceAndrew,
+        data:Sophie,
+        data:Welf ;
+    :isAncestorOf data:Friederike,
+        data:GeorgChild,
+        data:Sophie,
+        data:Welf ;
+    :isBloodrelationOf data:PrinceAndrew ;
+    :isBrotherOf data:PrinceAndrew ;
+    :isFatherOf data:Sophie ;
+    :isParentOf data:Sophie ;
+    :isSiblingOf data:PrinceAndrew ;
+    :isUncleOf data:Sophie .
+
+data:ErnestAugustus a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ErnestAugustus ;
+    :hasChild data:GeorgeWilliam ;
+    :hasRelation data:ErnestAugustus,
+        data:Frederica,
+        data:Friederike,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:Welf ;
+    :hasSon data:GeorgeWilliam ;
+    :isAncestorOf data:Friederike,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:Welf ;
+    :isBloodrelationOf data:ErnestAugustus ;
+    :isBrotherOf data:ErnestAugustus ;
+    :isFatherOf data:GeorgeWilliam ;
+    :isParentOf data:GeorgeWilliam ;
+    :isSiblingOf data:ErnestAugustus ;
+    :isUncleOf data:GeorgeWilliam .
+
+data:AugustaVictoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:VictoriaLouise ;
+    :hasDaughter data:VictoriaLouise ;
+    :hasRelation data:AugustaVictoria,
+        data:Frederica,
+        data:Friederike,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:VictoriaLouise,
+        data:Welf ;
+    :hasSister data:AugustaVictoria ;
+    :isAncestorOf data:Friederike,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:VictoriaLouise,
+        data:Welf ;
+    :isAuntOf data:VictoriaLouise ;
+    :isBloodrelationOf data:AugustaVictoria ;
+    :isMotherOf data:VictoriaLouise ;
+    :isParentOf data:VictoriaLouise ;
+    :isSiblingOf data:AugustaVictoria ;
+    :isSisterOf data:AugustaVictoria .
+
+data:WilhelmII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilhelmII ;
+    :hasChild data:VictoriaLouise ;
+    :hasDaughter data:VictoriaLouise ;
+    :hasRelation data:Frederica,
+        data:Friederike,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:VictoriaLouise,
+        data:Welf,
+        data:WilhelmII ;
+    :isAncestorOf data:Friederike,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:VictoriaLouise,
+        data:Welf ;
+    :isBloodrelationOf data:WilhelmII ;
+    :isBrotherOf data:WilhelmII ;
+    :isFatherOf data:VictoriaLouise ;
+    :isParentOf data:VictoriaLouise ;
+    :isSiblingOf data:WilhelmII ;
+    :isUncleOf data:VictoriaLouise .
+
+data:VictoriaLouise a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:AugustaVictoria,
+        data:WilhelmII ;
+    :hasChild data:GeorgeWilliam ;
+    :hasFather data:WilhelmII ;
+    :hasMother data:AugustaVictoria ;
+    :hasParent data:AugustaVictoria,
+        data:WilhelmII ;
+    :hasRelation data:AugustaVictoria,
+        data:Frederica,
+        data:Friederike,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:VictoriaLouise,
+        data:Welf,
+        data:WilhelmII ;
+    :hasSister data:VictoriaLouise ;
+    :hasSon data:GeorgeWilliam ;
+    :isAncestorOf data:Friederike,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:Welf ;
+    :isAuntOf data:GeorgeWilliam ;
+    :isBloodrelationOf data:VictoriaLouise ;
+    :isChildOf data:AugustaVictoria,
+        data:WilhelmII ;
+    :isDaughterOf data:AugustaVictoria,
+        data:WilhelmII ;
+    :isMotherOf data:GeorgeWilliam ;
+    :isParentOf data:GeorgeWilliam ;
+    :isSiblingOf data:VictoriaLouise ;
+    :isSisterOf data:VictoriaLouise .
+
+data:Sophie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:PrinceAndrew ;
+    :hasChild data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :hasDaughter data:Friederike ;
+    :hasFather data:PrinceAndrew ;
+    :hasMother data:AliceOfBattenberg ;
+    :hasParent data:AliceOfBattenberg,
+        data:PrinceAndrew ;
+    :hasRelation data:AliceOfBattenberg,
+        data:Friederike,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:PrinceAndrew,
+        data:Sophie,
+        data:Welf ;
+    :hasSister data:Sophie ;
+    :hasSon data:GeorgChild,
+        data:Welf ;
+    :isAncestorOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isAuntOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isBloodrelationOf data:Sophie ;
+    :isChildOf data:AliceOfBattenberg,
+        data:PrinceAndrew ;
+    :isDaughterOf data:AliceOfBattenberg,
+        data:PrinceAndrew ;
+    :isMotherOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isParentOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isSiblingOf data:Sophie ;
+    :isSisterOf data:Sophie .
+
+data:Friederike a :Person,
+        :Woman ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AugustaVictoria,
+        data:ErnestAugustus,
+        data:GeorgeWilliam,
+        data:PrinceAndrew,
+        data:Sophie,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :hasBrother data:GeorgChild,
+        data:Welf ;
+    :hasFather data:GeorgeWilliam ;
+    :hasMother data:Sophie ;
+    :hasParent data:GeorgeWilliam,
+        data:Sophie ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AugustaVictoria,
+        data:ErnestAugustus,
+        data:Friederike,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:PrinceAndrew,
+        data:Sophie,
+        data:VictoriaLouise,
+        data:Welf,
+        data:WilhelmII ;
+    :hasSister data:Friederike ;
+    :isBloodrelationOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isChildOf data:GeorgeWilliam,
+        data:Sophie ;
+    :isDaughterOf data:GeorgeWilliam,
+        data:Sophie ;
+    :isSiblingOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isSisterOf data:Friederike,
+        data:GeorgChild,
+        data:Welf .
+
+data:GeorgChild a :Man,
+        :Person ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AugustaVictoria,
+        data:ErnestAugustus,
+        data:GeorgeWilliam,
+        data:PrinceAndrew,
+        data:Sophie,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :hasBrother data:GeorgChild,
+        data:Welf ;
+    :hasFather data:GeorgeWilliam ;
+    :hasMother data:Sophie ;
+    :hasParent data:GeorgeWilliam,
+        data:Sophie ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AugustaVictoria,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:Friederike,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:PrinceAndrew,
+        data:Sophie,
+        data:VictoriaLouise,
+        data:Welf,
+        data:WilhelmII ;
+    :hasSister data:Friederike ;
+    :isBloodrelationOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isBrotherOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isChildOf data:GeorgeWilliam,
+        data:Sophie ;
+    :isSiblingOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isSonOf data:GeorgeWilliam,
+        data:Sophie .
+
+data:Welf a :Man,
+        :Person ;
+    :hasAncestor data:AliceOfBattenberg,
+        data:AugustaVictoria,
+        data:ErnestAugustus,
+        data:GeorgeWilliam,
+        data:PrinceAndrew,
+        data:Sophie,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :hasBrother data:GeorgChild,
+        data:Welf ;
+    :hasFather data:GeorgeWilliam ;
+    :hasMother data:Sophie ;
+    :hasParent data:GeorgeWilliam,
+        data:Sophie ;
+    :hasRelation data:AliceOfBattenberg,
+        data:AugustaVictoria,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:Friederike,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:PrinceAndrew,
+        data:Sophie,
+        data:VictoriaLouise,
+        data:Welf,
+        data:WilhelmII ;
+    :hasSister data:Friederike ;
+    :isBloodrelationOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isBrotherOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isChildOf data:GeorgeWilliam,
+        data:Sophie ;
+    :isSiblingOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isSonOf data:GeorgeWilliam,
+        data:Sophie .
+
+data:GeorgeWilliam a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AugustaVictoria,
+        data:ErnestAugustus,
+        data:VictoriaLouise,
+        data:WilhelmII ;
+    :hasBirthYear 1915 ;
+    :hasBrother data:GeorgeWilliam ;
+    :hasChild data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :hasDaughter data:Friederike ;
+    :hasDeathYear 2006 ;
+    :hasFather data:ErnestAugustus ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:VictoriaLouise ;
+    :hasParent data:ErnestAugustus,
+        data:VictoriaLouise ;
+    :hasRelation data:AugustaVictoria,
+        data:ErnestAugustus,
+        data:Frederica,
+        data:Friederike,
+        data:GeorgChild,
+        data:GeorgeWilliam,
+        data:Sophie,
+        data:VictoriaLouise,
+        data:Welf,
+        data:WilhelmII ;
+    :hasSister data:Frederica ;
+    :hasSon data:GeorgChild,
+        data:Welf ;
+    :isAncestorOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isBloodrelationOf data:Frederica,
+        data:GeorgeWilliam ;
+    :isBrotherOf data:Frederica,
+        data:GeorgeWilliam ;
+    :isChildOf data:ErnestAugustus,
+        data:VictoriaLouise ;
+    :isFatherOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isParentOf data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :isSiblingOf data:Frederica,
+        data:GeorgeWilliam ;
+    :isSonOf data:ErnestAugustus,
+        data:VictoriaLouise ;
+    :isUncleOf data:Friederike,
+        data:GeorgChild,
+        data:Welf .
+

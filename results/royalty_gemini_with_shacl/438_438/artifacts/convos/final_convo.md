@@ -85,49 +85,25 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Nerissa Jane Irene Bowes-Lyon (18 February 1919 – 22 January 1986) and Katherine Juliet Bowes-Lyon (4 July 1926 – 23 February 2014) were two mentally disabled daughters of John Herbert Bowes-Lyon and his wife Fenella (née Hepburn-Stuart-Forbes-Trefusis).
-John was the brother of Queen Elizabeth the Queen Mother, thus his two daughters were the maternal first cousins of Queen Elizabeth II and Princess Margaret, sharing one pair of grandparents, Claude Bowes-Lyon, 14th
-Earl of Strathmore and Kinghorne, and Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne.
-Background
+Michael Albemarle Bowes-Lyon (29 May 1940 – 30 October 2023) was a British banker and nephew of Queen Elizabeth The Queen Mother.
+Biography
 
-Nerissa Bowes-Lyon was born on 18 February 1919 and Katherine Bowes-Lyon was born on 4 July 1926, the daughters of John Herbert Bowes-Lyon and Fenella Hepburn-Stuart-Forbes-Trefusis.
-Their father, the second son of Claude Bowes-Lyon, 14th Earl of Strathmore and Kinghorne, was a brother of Lady Elizabeth Bowes-Lyon, Duchess of York, the future Queen Elizabeth II's mother.
-Their mother was the younger daughter of Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton.
-The sisters’ maternal great-grandparents Charles Hepburn-Stuart-Forbes-Trefusis, 20th Baron Clinton and his wife Harriet Williamina Hepburn-Forbes had been first cousins and their son (the sisters maternal grand-father)
-Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton, married his second cousin once removed Lady Jane McDonnell.
-Their father died 7 February 1930 after having contracted pneumonia at the age of 43, leaving their mother alone to care for their four young children.
-The 1963 edition of Burke's Peerage listed Nerissa and Katherine as having died in 1940 and 1961 respectively; but in 1987 it was revealed by The Sun that the sisters were alive, and had been placed in Earlswood Hospital for mentally disabled people in 1941.
-Nerissa died in 1986, aged 66, with only hospital staff attending the funeral, while Katherine died in 2014, aged 87.
-Controversy
-
-Suggestions of a cover-up were rejected in the press by Lord Clinton in 1987, who claimed that his aunt Fenella (the mother of the two women) had completed the form for Burke's incorrectly due to Fenella being "a vague person"; however, Burke's included specific dates of death for both sisters.
-According to a 2011 television documentary about the sisters, The Queen's Hidden Cousins, broadcast by Channel 4, "throughout their time at the hospital, there is no known record that the sisters were ever visited by any member of the Bowes-Lyon or royal families, despite their aunt, the Queen Mother, being a Patron of Mencap" (a charity for people with learning disabilities).
-When Nerissa died in 1986, none of her family attended the funeral.
-Sources from within the family, however, report that their mother Fenella often visited the two sisters until her death in 1966; Lady Elizabeth Shakerley, Fenella's granddaughter, also said other members of the family had often visited over the years and had often sent gifts and cards on Christmas and birthdays.
-Queen Elizabeth The Queen Mother, upon discovering that her nieces were alive in 1982, sent money for toys and sweets on their birthdays and at Christmas.
-The three grandchildren of Fenella and John (Lady Elizabeth Shakerley, the 5th Earl of Lichfield, and Katherine Somervell) organised the headstone for Nerissa Bowes-Lyon.
-Harriet Hepburn-Stuart-Forbes-Trefusis (1887–1958), sister of Nerissa and Katherine's mother Fenella, married Major Henry Nevile Fane, and three of their seven children lived in Earlswood Hospital.
-David Danks, then director of the Murdoch Children's Research Institute, thought that a genetic disease in the Hepburn-Stuart-Forbes-Trefusis family may have been the cause of death of some male family members in early childhood and caused learning disabilities in some female family members.
-According to Lady Colin Campbell, whose mother was a friend of a doctor who treated the sisters, they suffered from Huntington's disease.
-Anne Tennant, Baroness Glenconner was, as a young woman and 1950s debutante of the year, engaged to Johnnie, Viscount Althorp, later the Earl Spencer and father to Diana, Princess of Wales; his father objected to the match on the grounds of "mad blood", as one of her grandmothers was a Trefusis, and the engagement was broken off.
-The Queen's Hidden Cousins
-
-In November 2011, Channel 4 broadcast a documentary about the sisters, The Queen's Hidden Cousins.
-The documentary was directed by Kelly Close and made by Minnow Films, an independent production company, whose synopsis states that "Whilst their sisters Elizabeth and Anne enjoyed lives of privilege and inclusion in the upper echelons of the aristocracy, Katherine and Nerissa were all but forgotten, written out of family history."
-"
-
-
-Prior to the screening, the Daily Express reported that the Queen was said to be "hugely distressed" by it.
-Lady Elizabeth Shakerley, party planner to the Queen and the sisters' niece, responded at length, disputing both the assertions by the programme-makers of familial abandonment and the methods of "this supposedly factual documentary".
-She called it "cruel" and "intrusive" and said that "far from being a taboo subject, Katherine and Nerissa were very much a part of the family as sisters of Shakerley's mother, the late Princess Anne of Denmark.
-Following the programme's broadcast, The Guardian's reviewer John Crace wrote that "All we learned was just common knowledge."
-Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid interest in the story the following year.
+Bowes-Lyon was the second son and youngest child of Lieutenant-Colonel
+The Honourable Michael Claude Hamilton Bowes-Lyon (1893–1953) and Elizabeth Margaret Cator (1899–1959).
+He was page to his cousin, Princess Margaret, at the coronation of Queen Elizabeth II in 1953.
+He was also page to his aunt, the Queen Mother, when she was installed as chancellor of the University of London in November 1955.
+Bowes-Lyon was recruited to Coutts in 1963, later joining the board of directors in 1969.
+Subsequently, Bowes-Lyon received the courtesy title The Honourable and precedence of the younger son of an earl by royal warrant of precedence on 15 February 1974.
+He was a favourite nephew of Queen Elizabeth The Queen Mother and a frequent guest of hers at Royal Lodge.
+Bowes-Lyon died at the age of 83 on 30 October 2023.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -143,39 +119,9 @@ Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -190,6 +136,23 @@ Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -207,6 +170,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -274,29 +252,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -305,6 +275,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -317,6 +295,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -325,17 +305,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -363,6 +345,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -378,410 +444,81 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (7d86f96b-485a-43db-9eb9-2ab97a6b5e7a)
- Call ID: 7d86f96b-485a-43db-9eb9-2ab97a6b5e7a
-  Args:
-    type: :Woman
-    source: Nerissa_Bowes-Lyon
-  AssignClass (74526c9f-19a4-4b3e-8df3-98b20273e42d)
- Call ID: 74526c9f-19a4-4b3e-8df3-98b20273e42d
-  Args:
-    type: :Woman
-    source: Katherine_Bowes-Lyon
-  AssignClass (3024217d-61ba-4fa2-be3a-b2241fc60ae5)
- Call ID: 3024217d-61ba-4fa2-be3a-b2241fc60ae5
+  AssignClass (46a8c107-9504-4b3e-a9d7-3c7d1b41756c)
+ Call ID: 46a8c107-9504-4b3e-a9d7-3c7d1b41756c
   Args:
     type: :Man
-    source: John_Herbert_Bowes-Lyon
-  AssignClass (703f59bc-825d-49f8-a9fd-69461bb0ebf9)
- Call ID: 703f59bc-825d-49f8-a9fd-69461bb0ebf9
+    source: Michael_Albemarle_Bowes-Lyon
+  AssignClass (7037445d-bf51-407c-83cc-77e8d21851c7)
+ Call ID: 7037445d-bf51-407c-83cc-77e8d21851c7
   Args:
-    type: :Woman
-    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
-  AssignClass (5a6a52e8-b845-45cd-8790-63d09f8452c1)
- Call ID: 5a6a52e8-b845-45cd-8790-63d09f8452c1
+    type: :Person
+    source: Michael_Albemarle_Bowes-Lyon
+  AddLiteral (4d891ec9-1147-4b9c-bc55-1e28367e3166)
+ Call ID: 4d891ec9-1147-4b9c-bc55-1e28367e3166
   Args:
-    type: :Man
-    source: Claude_Bowes-Lyon
-  AssignClass (62752e0b-608b-427a-a177-85376a751a6c)
- Call ID: 62752e0b-608b-427a-a177-85376a751a6c
-  Args:
-    type: :Woman
-    source: Cecilia_Bowes-Lyon
-  AssignClass (e9655b13-875c-4b44-a4f3-fd01f6e24d77)
- Call ID: e9655b13-875c-4b44-a4f3-fd01f6e24d77
-  Args:
-    type: :Woman
-    source: Lady_Elizabeth_Bowes-Lyon
-  AssignClass (1ad10902-fdfe-4833-8f66-cc096a302df2)
- Call ID: 1ad10902-fdfe-4833-8f66-cc096a302df2
-  Args:
-    type: :Man
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-  AssignClass (4a82856d-9582-43e4-8e18-c338739d59a6)
- Call ID: 4a82856d-9582-43e4-8e18-c338739d59a6
-  Args:
-    type: :Man
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-  AssignClass (dfb367bd-ae99-447e-ba86-98d0cf8616e8)
- Call ID: dfb367bd-ae99-447e-ba86-98d0cf8616e8
-  Args:
-    type: :Woman
-    source: Harriet_Williamina_Hepburn-Forbes
-  AssignClass (d3db2999-5fb2-4c81-ae29-834253752539)
- Call ID: d3db2999-5fb2-4c81-ae29-834253752539
-  Args:
-    type: :Woman
-    source: Lady_Jane_McDonnell
-  AddLiteral (0c30e70e-4fb6-44fc-b6f4-eb9c97ea76db)
- Call ID: 0c30e70e-4fb6-44fc-b6f4-eb9c97ea76db
-  Args:
-    source: Nerissa_Bowes-Lyon
     literal_type: xsd:integer
-    literal_value: 1919
+    source: Michael_Albemarle_Bowes-Lyon
     relation: :hasBirthYear
-  AddLiteral (f720e4e7-667c-46ed-b0db-e893fe411ef3)
- Call ID: f720e4e7-667c-46ed-b0db-e893fe411ef3
+    literal_value: 1940
+  AddLiteral (24706d39-3564-4810-98b5-1da0b984a06c)
+ Call ID: 24706d39-3564-4810-98b5-1da0b984a06c
   Args:
-    literal_value: 1986
+    literal_type: xsd:integer
+    source: Michael_Albemarle_Bowes-Lyon
     relation: :hasDeathYear
-    source: Nerissa_Bowes-Lyon
-    literal_type: xsd:integer
-  AddLiteral (1cb2fc04-38f2-45f0-aa58-23fc04ed2fd4)
- Call ID: 1cb2fc04-38f2-45f0-aa58-23fc04ed2fd4
+    literal_value: 2023
+  AddTriple (fadeae5b-4d47-4817-b00c-045b859586f7)
+ Call ID: fadeae5b-4d47-4817-b00c-045b859586f7
   Args:
-    source: Katherine_Bowes-Lyon
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1926
-  AddLiteral (e4974215-9297-43be-9a41-67d0583a8da9)
- Call ID: e4974215-9297-43be-9a41-67d0583a8da9
+    target: :Male
+    relation: :hasSex
+    source: Michael_Albemarle_Bowes-Lyon
+  AssignClass (f7578785-2205-4a73-8600-e646420b52d6)
+ Call ID: f7578785-2205-4a73-8600-e646420b52d6
   Args:
-    literal_type: xsd:integer
-    source: Katherine_Bowes-Lyon
-    relation: :hasDeathYear
-    literal_value: 2014
-  AddTriple (2c320414-a164-47d4-a94f-b6ab4b9e91be)
- Call ID: 2c320414-a164-47d4-a94f-b6ab4b9e91be
+    type: :Man
+    source: Michael_Claude_Hamilton_Bowes-Lyon
+  AssignClass (3df25d06-00b5-4b06-a7e4-5ae03896cc4f)
+ Call ID: 3df25d06-00b5-4b06-a7e4-5ae03896cc4f
   Args:
+    type: :Person
+    source: Michael_Claude_Hamilton_Bowes-Lyon
+  AssignClass (114362a2-8ee5-4e39-8e3b-eb8c4938abbc)
+ Call ID: 114362a2-8ee5-4e39-8e3b-eb8c4938abbc
+  Args:
+    source: Michael_Claude_Hamilton_Bowes-Lyon
+    type: :Ancestor
+  AddTriple (bbd837a1-6de2-4489-b8c5-0c8f601b45e4)
+ Call ID: bbd837a1-6de2-4489-b8c5-0c8f601b45e4
+  Args:
+    source: Michael_Albemarle_Bowes-Lyon
     relation: :hasFather
-    source: Nerissa_Bowes-Lyon
-    target: John_Herbert_Bowes-Lyon
-  AddTriple (94b9bf55-89c8-499d-a24e-08736afc4522)
- Call ID: 94b9bf55-89c8-499d-a24e-08736afc4522
+    target: :Michael_Claude_Hamilton_Bowes-Lyon
+  AssignClass (36210bfc-f393-489e-8ac3-cbfb84a042c1)
+ Call ID: 36210bfc-f393-489e-8ac3-cbfb84a042c1
   Args:
+    source: Elizabeth_Margaret_Cator
+    type: :Woman
+  AssignClass (8f660ee0-538e-4e1a-a4c7-cdd6892ed365)
+ Call ID: 8f660ee0-538e-4e1a-a4c7-cdd6892ed365
+  Args:
+    source: Elizabeth_Margaret_Cator
+    type: :Person
+  AssignClass (85274a5d-ba93-4a3a-8640-8a0efc4b9ae7)
+ Call ID: 85274a5d-ba93-4a3a-8640-8a0efc4b9ae7
+  Args:
+    source: Elizabeth_Margaret_Cator
+    type: :Ancestor
+  AddTriple (881a6a6d-ef6b-40eb-9f4e-3ed54e8f05cb)
+ Call ID: 881a6a6d-ef6b-40eb-9f4e-3ed54e8f05cb
+  Args:
+    target: :Elizabeth_Margaret_Cator
     relation: :hasMother
-    source: Nerissa_Bowes-Lyon
-    target: Fenella_Hepburn-Stuart-Forbes-Trefusis
-  AddTriple (78b270e1-0ded-440f-81e6-4fe104d77de7)
- Call ID: 78b270e1-0ded-440f-81e6-4fe104d77de7
+    source: Michael_Albemarle_Bowes-Lyon
+  Finish (f423674d-da25-47e8-bc29-6aae08ef2c45)
+ Call ID: f423674d-da25-47e8-bc29-6aae08ef2c45
   Args:
-    relation: :hasFather
-    source: Katherine_Bowes-Lyon
-    target: John_Herbert_Bowes-Lyon
-  AddTriple (3288d6a7-5375-4fdf-bfa1-295d34df5fb2)
- Call ID: 3288d6a7-5375-4fdf-bfa1-295d34df5fb2
-  Args:
-    relation: :hasMother
-    source: Katherine_Bowes-Lyon
-    target: Fenella_Hepburn-Stuart-Forbes-Trefusis
-  AddTriple (0439d778-5af7-4a93-9957-e37f0e0ac4fa)
- Call ID: 0439d778-5af7-4a93-9957-e37f0e0ac4fa
-  Args:
-    relation: :hasFather
-    source: John_Herbert_Bowes-Lyon
-    target: Claude_Bowes-Lyon
-  AddTriple (bd015d53-95f6-4efd-be28-b3bff7e12023)
- Call ID: bd015d53-95f6-4efd-be28-b3bff7e12023
-  Args:
-    relation: :hasMother
-    target: Cecilia_Bowes-Lyon
-    source: John_Herbert_Bowes-Lyon
-  AddTriple (5bf4b9d9-ab88-4a88-a18b-9a4b7ab0289d)
- Call ID: 5bf4b9d9-ab88-4a88-a18b-9a4b7ab0289d
-  Args:
-    relation: :hasSister
-    target: Lady_Elizabeth_Bowes-Lyon
-    source: John_Herbert_Bowes-Lyon
-  AddTriple (ed7bbdca-787b-4abd-bf5f-f2a72b02c4c7)
- Call ID: ed7bbdca-787b-4abd-bf5f-f2a72b02c4c7
-  Args:
-    relation: :hasFather
-    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-  AddTriple (e45b0407-c9be-4d9d-8c2e-a47a6bc95fca)
- Call ID: e45b0407-c9be-4d9d-8c2e-a47a6bc95fca
-  Args:
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-    relation: :hasFather
-  AddTriple (c55e53e1-14ae-430a-9c25-21b8945aadef)
- Call ID: c55e53e1-14ae-430a-9c25-21b8945aadef
-  Args:
-    relation: :hasMother
-    target: Harriet_Williamina_Hepburn-Forbes
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-  AddTriple (1c5cd55a-568c-49bf-a821-d7eb3dce3406)
- Call ID: 1c5cd55a-568c-49bf-a821-d7eb3dce3406
-  Args:
-    relation: :hasFather
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-  AddTriple (3eb5f000-661e-4933-9ac4-1b621232f829)
- Call ID: 3eb5f000-661e-4933-9ac4-1b621232f829
-  Args:
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-    target: Harriet_Williamina_Hepburn-Forbes
-    relation: :hasMother
-  AddTriple (89f2f97d-7250-4b37-a381-5a3f6db46737)
- Call ID: 89f2f97d-7250-4b37-a381-5a3f6db46737
-  Args:
-    target: Harriet_Williamina_Hepburn-Forbes
-    source: Harriet_Williamina_Hepburn-Forbes
-    relation: :hasMother
-  AddTriple (18c2d1e8-1c05-46fc-8af8-28c0ce56bf00)
- Call ID: 18c2d1e8-1c05-46fc-8af8-28c0ce56bf00
-  Args:
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-    relation: :hasFather
-  AddTriple (73439473-01b1-4e8e-85a8-98fa634d1f87)
- Call ID: 73439473-01b1-4e8e-85a8-98fa634d1f87
-  Args:
-    relation: :hasMother
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-    target: Harriet_Williamina_Hepburn-Forbes
-  AddTriple (2800829c-3eef-4bb6-92e8-1ee83795eeb9)
- Call ID: 2800829c-3eef-4bb6-92e8-1ee83795eeb9
-  Args:
-    source: Harriet_Williamina_Hepburn-Forbes
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-    relation: :hasFather
-  AddTriple (a37c2070-250f-473b-948b-e429fc7feb97)
- Call ID: a37c2070-250f-473b-948b-e429fc7feb97
-  Args:
-    relation: :hasMother
-    source: Harriet_Williamina_Hepburn-Forbes
-    target: Harriet_Williamina_Hepburn-Forbes
-  AddTriple (b76241d9-9472-4f5a-8a4e-53786c737317)
- Call ID: b76241d9-9472-4f5a-8a4e-53786c737317
-  Args:
-    relation: :hasFather
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-  AddTriple (55e9a438-1fb9-48b3-a8ce-c00348290afa)
- Call ID: 55e9a438-1fb9-48b3-a8ce-c00348290afa
-  Args:
-    relation: :hasMother
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-    target: Harriet_Williamina_Hepburn-Forbes
-  AddTriple (28f3760f-88eb-42f1-913f-ec9537260385)
- Call ID: 28f3760f-88eb-42f1-913f-ec9537260385
-  Args:
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-    relation: :hasFather
-  AddTriple (b55e1397-bdf5-473f-82cf-87a1752c53a1)
- Call ID: b55e1397-bdf5-473f-82cf-87a1752c53a1
-  Args:
-    relation: :hasMother
-    target: Harriet_Williamina_Hepburn-Forbes
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-  AddTriple (f307ea86-239d-46ea-a17e-c34594ac78d6)
- Call ID: f307ea86-239d-46ea-a17e-c34594ac78d6
-  Args:
-    relation: :hasFather
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-  AddTriple (3c44b4c4-4c8e-4fd2-be43-c7ff516ffa15)
- Call ID: 3c44b4c4-4c8e-4fd2-be43-c7ff516ffa15
-  Args:
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-    target: Harriet_Williamina_Hepburn-Forbes
-    relation: :hasMother
-  AddTriple (3b39a159-6642-430c-abf5-a29299a3f5da)
- Call ID: 3b39a159-6642-430c-abf5-a29299a3f5da
-  Args:
-    relation: :hasFather
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-  AddTriple (64ca99e5-c6ba-400a-8cd6-53bf4fd8f28b)
- Call ID: 64ca99e5-c6ba-400a-8cd6-53bf4fd8f28b
-  Args:
-    relation: :hasMother
-    target: Harriet_Williamina_Hepburn-Forbes
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-  AddTriple (92f8388b-c9d6-4aca-a876-36d240956aeb)
- Call ID: 92f8388b-c9d6-4aca-a876-36d240956aeb
-  Args:
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-    relation: :hasFather
-  AddTriple (687ae952-e79e-4024-8e7f-8b5bce8c58ec)
- Call ID: 687ae952-e79e-4024-8e7f-8b5bce8c58ec
-  Args:
-    target: Harriet_Williamina_Hepburn-Forbes
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-    relation: :hasMother
-  RemoveTriple (242c68c8-35a7-4593-bc26-fd7ce24125f4)
- Call ID: 242c68c8-35a7-4593-bc26-fd7ce24125f4
-  Args:
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-    relation: :hasFather
-  RemoveTriple (552877df-7d28-45f7-b960-bc6b3fc0fb9d)
- Call ID: 552877df-7d28-45f7-b960-bc6b3fc0fb9d
-  Args:
-    relation: :hasMother
-    target: Harriet_Williamina_Hepburn-Forbes
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-  AddTriple (7ae76a0c-2118-4b63-b7b4-6937a2965eca)
- Call ID: 7ae76a0c-2118-4b63-b7b4-6937a2965eca
-  Args:
-    relation: :hasFather
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-  AddTriple (da4ac8a1-c1a9-4734-9e38-11cc1fc65480)
- Call ID: da4ac8a1-c1a9-4734-9e38-11cc1fc65480
-  Args:
-    target: Harriet_Williamina_Hepburn-Forbes
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,target:
-    relation: :hasMother
-  ValidateShacl (cdfd2949-b040-48ee-9035-338b423726c2)
- Call ID: cdfd2949-b040-48ee-9035-338b423726c2
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -838,367 +575,104 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton%2Ctarget :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
-      :hasMother data:Harriet_Williamina_Hepburn-Forbes .
+  data:Michael_Albemarle_Bowes-Lyon a :Man,
+          :Person ;
+      :hasBirthYear 1940 ;
+      :hasDeathYear 2023 ;
+      :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;
+      :hasMother data:Elizabeth_Margaret_Cator ;
+      :hasSex data:Male .
 
-  data:Katherine_Bowes-Lyon a :Woman ;
-      :hasBirthYear 1926 ;
-      :hasDeathYear 2014 ;
-      :hasFather data:John_Herbert_Bowes-Lyon ;
-      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+  data:Elizabeth_Margaret_Cator a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Lady_Jane_McDonnell a :Woman .
-
-  data:Nerissa_Bowes-Lyon a :Woman ;
-      :hasBirthYear 1919 ;
-      :hasDeathYear 1986 ;
-      :hasFather data:John_Herbert_Bowes-Lyon ;
-      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
-
-  data:Cecilia_Bowes-Lyon a :Woman .
-
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Man ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
-      :hasMother data:Harriet_Williamina_Hepburn-Forbes .
-
-  data:Claude_Bowes-Lyon a :Man .
-
-  data:Lady_Elizabeth_Bowes-Lyon a :Woman .
-
-  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .
-
-  data:John_Herbert_Bowes-Lyon a :Man ;
-      :hasFather data:Claude_Bowes-Lyon ;
-      :hasMother data:Cecilia_Bowes-Lyon ;
-      :hasSister data:Lady_Elizabeth_Bowes-Lyon .
-
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton a :Man ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
-      :hasMother data:Harriet_Williamina_Hepburn-Forbes .
-
-  data:Harriet_Williamina_Hepburn-Forbes a :Woman ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
-      :hasMother data:Harriet_Williamina_Hepburn-Forbes .
+  data:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person .
 
 
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (ab62b44d-68db-4a6c-bfce-a54d77a2f83a)
+ Call ID: ab62b44d-68db-4a6c-bfce-a54d77a2f83a
+  Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:39
+Total violations:8
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The person 'Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton' has a father, but the father node lacks the required 'Ancestor' class assignment.
+      The value 'Male' for the property 'hasSex' on node 'Michael_Albemarle_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The person 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' has a father, but the father node lacks the required 'Ancestor' class assignment.
+      The value 'Male' for the property 'hasSex' on node 'Michael_Albemarle_Bowes-Lyon' is missing the required ':Sex' class membership.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The person 'John_Herbert_Bowes-Lyon' has a father, but the father node lacks the required 'Ancestor' class assignment.
+      The value 'Male' for the property 'hasSex' on node 'Michael_Albemarle_Bowes-Lyon' is not identified as an instance of ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Claude_Bowes-Lyon, :Ancestor)
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The person 'Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
+      The value 'Male' for the property 'hasSex' on node 'Michael_Albemarle_Bowes-Lyon' requires the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The person 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
+      The node 'Michael_Albemarle_Bowes-Lyon' is incorrectly linked to 'Male' as a sex, but the value 'Male' is not an instance of the required ':Sex' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The person 'John_Herbert_Bowes-Lyon' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
+      The value 'Male' associated with 'hasSex' for 'Michael_Albemarle_Bowes-Lyon' is missing the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilia_Bowes-Lyon, :Ancestor)
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The person 'Harriet_Williamina_Hepburn-Forbes' has a father, but the father node lacks the required 'Ancestor' class assignment.
+      The value 'Male' used for the property 'hasSex' on 'Michael_Albemarle_Bowes-Lyon' does not satisfy the class requirement of ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The person 'Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton' has a father, but the father node lacks the required 'Ancestor' class assignment.
+      The value 'Male' assigned to 'hasSex' for 'Michael_Albemarle_Bowes-Lyon' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'John_Herbert_Bowes-Lyon' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Claude_Bowes-Lyon, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Nerissa_Bowes-Lyon' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Katherine_Bowes-Lyon' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Fenella_Hepburn-Stuart-Forbes-Trefusis' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Harriet_Williamina_Hepburn-Forbes' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'John_Herbert_Bowes-Lyon' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilia_Bowes-Lyon, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Nerissa_Bowes-Lyon' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Katherine_Bowes-Lyon' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Harriet_Williamina_Hepburn-Forbes' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'John_Herbert_Bowes-Lyon' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Claude_Bowes-Lyon, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Nerissa_Bowes-Lyon' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Katherine_Bowes-Lyon' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Fenella_Hepburn-Stuart-Forbes-Trefusis' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton, :Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Harriet_Williamina_Hepburn-Forbes' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'John_Herbert_Bowes-Lyon' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilia_Bowes-Lyon, :Ancestor)
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Nerissa_Bowes-Lyon' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Katherine_Bowes-Lyon' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Nerissa_Bowes-Lyon' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Katherine_Bowes-Lyon' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Fenella_Hepburn-Stuart-Forbes-Trefusis' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton, :Ancestor)
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Harriet_Williamina_Hepburn-Forbes' has a father, but the father node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
-
-
-  Violation [37]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Nerissa_Bowes-Lyon' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
-
-
-  Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Katherine_Bowes-Lyon' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
-
-
-  Violation [39]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Harriet_Williamina_Hepburn-Forbes' has a mother, but the mother node lacks the required 'Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
+      AssignClass(node='Male', class=':Sex')
 
 
 
@@ -1207,68 +681,11 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (49527346-0cc2-46be-bc51-73f9ccfa7c97)
- Call ID: 49527346-0cc2-46be-bc51-73f9ccfa7c97
+  AssignClass (1574e1a6-8f9b-4788-9f77-15db4793a0cc)
+ Call ID: 1574e1a6-8f9b-4788-9f77-15db4793a0cc
   Args:
-    type: :Ancestor
-    source: John_Herbert_Bowes-Lyon
-  AssignClass (2f04c75d-7136-4305-b4a2-f6292573a813)
- Call ID: 2f04c75d-7136-4305-b4a2-f6292573a813
-  Args:
-    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
-    type: :Ancestor
-  AssignClass (bebedd34-d439-4fc4-8a6f-3f8795090d18)
- Call ID: bebedd34-d439-4fc4-8a6f-3f8795090d18
-  Args:
-    source: Claude_Bowes-Lyon
-    type: :Ancestor
-  AssignClass (fefec514-25df-4387-8727-653e822200db)
- Call ID: fefec514-25df-4387-8727-653e822200db
-  Args:
-    type: :Ancestor
-    source: Cecilia_Bowes-Lyon
-  AssignClass (c43172de-a8e9-4a91-a522-9c4bbdda61d7)
- Call ID: c43172de-a8e9-4a91-a522-9c4bbdda61d7
-  Args:
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-    type: :Ancestor
-  AssignClass (9fa7077b-63b1-4604-a1d1-5476ea0ccc5e)
- Call ID: 9fa7077b-63b1-4604-a1d1-5476ea0ccc5e
-  Args:
-    type: :Ancestor
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-  AssignClass (7b813aa7-b5e0-4933-9c7a-f59c35e68d78)
- Call ID: 7b813aa7-b5e0-4933-9c7a-f59c35e68d78
-  Args:
-    type: :Ancestor
-    source: Harriet_Williamina_Hepburn-Forbes
-  Finish (b835335d-afa8-4f1c-b236-aec3ca842a7a)
- Call ID: b835335d-afa8-4f1c-b236-aec3ca842a7a
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Male
+    type: :Sex
 
 ================================= Tool Message =================================
 
@@ -1277,68 +694,32 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton%2Ctarget :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
-      :hasMother data:Harriet_Williamina_Hepburn-Forbes .
+  data:Michael_Albemarle_Bowes-Lyon a :Man,
+          :Person ;
+      :hasBirthYear 1940 ;
+      :hasDeathYear 2023 ;
+      :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;
+      :hasMother data:Elizabeth_Margaret_Cator ;
+      :hasSex data:Male .
 
-  data:Katherine_Bowes-Lyon a :Woman ;
-      :hasBirthYear 1926 ;
-      :hasDeathYear 2014 ;
-      :hasFather data:John_Herbert_Bowes-Lyon ;
-      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
-
-  data:Lady_Jane_McDonnell a :Woman .
-
-  data:Nerissa_Bowes-Lyon a :Woman ;
-      :hasBirthYear 1919 ;
-      :hasDeathYear 1986 ;
-      :hasFather data:John_Herbert_Bowes-Lyon ;
-      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
-
-  data:Cecilia_Bowes-Lyon a :Ancestor,
+  data:Elizabeth_Margaret_Cator a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Ancestor,
-          :Man ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
-      :hasMother data:Harriet_Williamina_Hepburn-Forbes .
+  data:Male a :Sex .
 
-  data:Claude_Bowes-Lyon a :Ancestor,
-          :Man .
-
-  data:Lady_Elizabeth_Bowes-Lyon a :Woman .
-
-  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
-          :Woman ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .
-
-  data:John_Herbert_Bowes-Lyon a :Ancestor,
-          :Man ;
-      :hasFather data:Claude_Bowes-Lyon ;
-      :hasMother data:Cecilia_Bowes-Lyon ;
-      :hasSister data:Lady_Elizabeth_Bowes-Lyon .
-
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton a :Ancestor,
-          :Man ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
-      :hasMother data:Harriet_Williamina_Hepburn-Forbes .
-
-  data:Harriet_Williamina_Hepburn-Forbes a :Ancestor,
-          :Woman ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
-      :hasMother data:Harriet_Williamina_Hepburn-Forbes .
+  data:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (47ddac84-2e9f-4e61-b02c-81c0adb7219b)
- Call ID: 47ddac84-2e9f-4e61-b02c-81c0adb7219b
+  ValidateShacl (ba8a3e5c-1075-4568-af69-aaa9817cacf0)
+ Call ID: ba8a3e5c-1075-4568-af69-aaa9817cacf0
   Args:
 
 ================================= Tool Message =================================
@@ -1349,44 +730,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (70abd360-7d0b-4546-8313-5f332aa977ba)
- Call ID: 70abd360-7d0b-4546-8313-5f332aa977ba
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton%2Ctarget']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (365928dc-d270-4e0c-a776-eb48fbba1259)
- Call ID: 365928dc-d270-4e0c-a776-eb48fbba1259
-  Args:
-    relation: :hasFather
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton%2Ctarget
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
-  RemoveTriple (e3ec198c-9d67-41f3-817f-8581d798f0e1)
- Call ID: e3ec198c-9d67-41f3-817f-8581d798f0e1
-  Args:
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton%2Ctarget
-    target: Harriet_Williamina_Hepburn-Forbes
-    relation: :hasMother
-  Finish (a3baaf6e-a32a-4529-ae91-fcdb2cdd13a2)
- Call ID: a3baaf6e-a32a-4529-ae91-fcdb2cdd13a2
+  Finish (36051875-f886-4ea5-93e3-6575f756bf59)
+ Call ID: 36051875-f886-4ea5-93e3-6575f756bf59
   Args:

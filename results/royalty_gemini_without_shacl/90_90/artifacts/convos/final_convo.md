@@ -148,6 +148,8 @@ After her marriage she was styled Her Royal Highness The Duchess of Kent, and wa
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -163,39 +165,9 @@ After her marriage she was styled Her Royal Highness The Duchess of Kent, and wa
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -210,6 +182,23 @@ After her marriage she was styled Her Royal Highness The Duchess of Kent, and wa
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -227,6 +216,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -294,29 +298,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -325,6 +321,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -337,6 +341,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -345,17 +351,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -383,6 +391,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -398,154 +490,509 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (61ef0e74-2ff0-40b0-ae5e-271b1ef8074b)
- Call ID: 61ef0e74-2ff0-40b0-ae5e-271b1ef8074b
+  AssignClass (3b4afcbb-672f-49da-8a7e-6e744804bcbe)
+ Call ID: 3b4afcbb-672f-49da-8a7e-6e744804bcbe
   Args:
+    source: Princess_Marina_of_Greece_and_Denmark
     type: :Woman
-    source: :Princess_Marina_of_Greece_and_Denmark
-  AssignClass (7936fff4-b455-42b9-ba59-a025302e5cb3)
- Call ID: 7936fff4-b455-42b9-ba59-a025302e5cb3
+  AddLiteral (f0de0709-d840-4251-80cb-1aa57cab58af)
+ Call ID: f0de0709-d840-4251-80cb-1aa57cab58af
   Args:
-    type: :Man
-    source: :Prince_Nicholas_of_Greece_and_Denmark
-  AssignClass (391ff06c-60ac-4c01-9a89-168808b5664d)
- Call ID: 391ff06c-60ac-4c01-9a89-168808b5664d
-  Args:
-    type: :Woman
-    source: :Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AssignClass (2704eb1b-2b77-44e5-9576-4c632c48ea93)
- Call ID: 2704eb1b-2b77-44e5-9576-4c632c48ea93
-  Args:
-    type: :Man
-    source: :King_George_I_of_Greece
-  AssignClass (b583489d-b643-40e4-9f6e-700251888eec)
- Call ID: b583489d-b643-40e4-9f6e-700251888eec
-  Args:
-    type: :Woman
-    source: :Queen_Olga_of_Greece
-  AssignClass (9d09f0f1-3cb9-4a2b-b566-fe8250766d8b)
- Call ID: 9d09f0f1-3cb9-4a2b-b566-fe8250766d8b
-  Args:
-    type: :Man
-    source: :Prince_George_Duke_of_Kent
-  AssignClass (fb598cdb-1d84-40b3-81dd-9200e6bb7d00)
- Call ID: fb598cdb-1d84-40b3-81dd-9200e6bb7d00
-  Args:
-    type: :Man
-    source: :King_George_V
-  AssignClass (53699ac2-fbf4-43c9-a348-19c6a31743d6)
- Call ID: 53699ac2-fbf4-43c9-a348-19c6a31743d6
-  Args:
-    type: :Woman
-    source: :Queen_Mary
-  AssignClass (1b71cc5d-2f5c-4e49-8932-d56d397a4985)
- Call ID: 1b71cc5d-2f5c-4e49-8932-d56d397a4985
-  Args:
-    type: :Man
-    source: :Edward
-  AssignClass (a54b08c9-1d4f-4edb-9089-1a8d2b3b6765)
- Call ID: a54b08c9-1d4f-4edb-9089-1a8d2b3b6765
-  Args:
-    type: :Woman
-    source: :Alexandra
-  AssignClass (ca86ce52-0cb8-4c94-9962-bce25e5fd4d4)
- Call ID: ca86ce52-0cb8-4c94-9962-bce25e5fd4d4
-  Args:
-    type: :Man
-    source: :Michael
-  AddTriple (57325ea5-6f69-4ed1-945d-f0b125a8ca66)
- Call ID: 57325ea5-6f69-4ed1-945d-f0b125a8ca66
-  Args:
-    target: :Prince_Nicholas_of_Greece_and_Denmark
-    source: :Princess_Marina_of_Greece_and_Denmark
-    relation: :hasFather
-  AddTriple (1bc82d1c-8c85-4c58-9abb-e28789b6596c)
- Call ID: 1bc82d1c-8c85-4c58-9abb-e28789b6596c
-  Args:
-    source: :Princess_Marina_of_Greece_and_Denmark
-    target: :Grand_Duchess_Elena_Vladimirovna_of_Russia
-    relation: :hasMother
-  AddTriple (aa096956-ed00-4384-8166-ec4a39b1cd2b)
- Call ID: aa096956-ed00-4384-8166-ec4a39b1cd2b
-  Args:
-    relation: :hasFather
-    source: :Prince_Nicholas_of_Greece_and_Denmark
-    target: :King_George_I_of_Greece
-  AddTriple (785fe42b-7433-4448-8d98-8b9a02daf65e)
- Call ID: 785fe42b-7433-4448-8d98-8b9a02daf65e
-  Args:
-    relation: :hasMother
-    target: :Queen_Olga_of_Greece
-    source: :Prince_Nicholas_of_Greece_and_Denmark
-  AddTriple (f634f732-e3aa-428d-966e-84bb22a185f9)
- Call ID: f634f732-e3aa-428d-966e-84bb22a185f9
-  Args:
-    target: :King_George_V
-    source: :Prince_George_Duke_of_Kent
-    relation: :hasFather
-  AddTriple (52408b20-8a1d-4930-a3c9-0b3d8375a75a)
- Call ID: 52408b20-8a1d-4930-a3c9-0b3d8375a75a
-  Args:
-    source: :Prince_George_Duke_of_Kent
-    target: :Queen_Mary
-    relation: :hasMother
-  AddTriple (944f1431-ce90-4cb4-8ece-cd05f52bbe8b)
- Call ID: 944f1431-ce90-4cb4-8ece-cd05f52bbe8b
-  Args:
-    relation: :hasFather
-    source: :Edward
-    target: :Prince_George_Duke_of_Kent
-  AddTriple (a7ebca9a-de30-4d83-a2df-0c36cb8251d5)
- Call ID: a7ebca9a-de30-4d83-a2df-0c36cb8251d5
-  Args:
-    target: :Princess_Marina_of_Greece_and_Denmark
-    source: :Edward
-    relation: :hasMother
-  AddTriple (699d05c2-0775-4c6b-a79c-b461acd7a1ce)
- Call ID: 699d05c2-0775-4c6b-a79c-b461acd7a1ce
-  Args:
-    source: :Alexandra
-    target: :Prince_George_Duke_of_Kent
-    relation: :hasFather
-  AddTriple (86a1ac26-6bf1-41b7-8f66-0f6d9bd15c96)
- Call ID: 86a1ac26-6bf1-41b7-8f66-0f6d9bd15c96
-  Args:
-    relation: :hasMother
-    target: :Princess_Marina_of_Greece_and_Denmark
-    source: :Alexandra
-  AddTriple (d9dcfa1e-7f19-40b5-a9b7-4d8b643563c2)
- Call ID: d9dcfa1e-7f19-40b5-a9b7-4d8b643563c2
-  Args:
-    target: :Prince_George_Duke_of_Kent
-    source: :Michael
-    relation: :hasFather
-  AddTriple (9c8de994-394a-4126-86b7-c38e2c54276e)
- Call ID: 9c8de994-394a-4126-86b7-c38e2c54276e
-  Args:
-    source: :Michael
-    target: :Princess_Marina_of_Greece_and_Denmark
-    relation: :hasMother
-  AddLiteral (d00fbd4e-9a58-4bbb-acb9-096f92dce60b)
- Call ID: d00fbd4e-9a58-4bbb-acb9-096f92dce60b
-  Args:
-    literal_value: 1906
-    source: :Princess_Marina_of_Greece_and_Denmark
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (10cf49ef-d673-474d-b6d9-46630179434f)
- Call ID: 10cf49ef-d673-474d-b6d9-46630179434f
+    source: Princess_Marina_of_Greece_and_Denmark
+    literal_value: 1906
+    literal_type: xsd:integer
+  AddLiteral (06533e3f-bedd-48f1-9e39-fc033a14196f)
+ Call ID: 06533e3f-bedd-48f1-9e39-fc033a14196f
   Args:
-    source: :Princess_Marina_of_Greece_and_Denmark
     literal_value: 1968
     relation: :hasDeathYear
+    source: Princess_Marina_of_Greece_and_Denmark
     literal_type: xsd:integer
-  AddLiteral (6f3ed35f-1a3a-439c-9d1f-f55b622c57ad)
- Call ID: 6f3ed35f-1a3a-439c-9d1f-f55b622c57ad
+  AssignClass (eb8ede45-d55c-4020-a34c-435c8dbc76fc)
+ Call ID: eb8ede45-d55c-4020-a34c-435c8dbc76fc
   Args:
-    literal_value: 1934
-    source: :Princess_Marina_of_Greece_and_Denmark
-    literal_type: xsd:integer
+    source: Prince_Nicholas_of_Greece_and_Denmark
+    type: :Man
+  AssignClass (e128f083-8ed3-4d85-b288-a68c829ada61)
+ Call ID: e128f083-8ed3-4d85-b288-a68c829ada61
+  Args:
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
+    type: :Woman
+  AddTriple (aac4b068-6f15-4952-ad5c-45e10411e3f3)
+ Call ID: aac4b068-6f15-4952-ad5c-45e10411e3f3
+  Args:
+    source: Princess_Marina_of_Greece_and_Denmark
+    relation: :hasFather
+    target: Prince_Nicholas_of_Greece_and_Denmark
+  AddTriple (e03b60ec-b8cb-4549-802e-cc3959d85ec2)
+ Call ID: e03b60ec-b8cb-4549-802e-cc3959d85ec2
+  Args:
+    relation: :hasMother
+    source: Princess_Marina_of_Greece_and_Denmark
+    target: Grand_Duchess_Elena_Vladimirovna_of_Russia
+  AssignClass (01d649ec-b16e-440c-8a3a-23f136362ab9)
+ Call ID: 01d649ec-b16e-440c-8a3a-23f136362ab9
+  Args:
+    type: :Man
+    source: King_George_I_of_Greece
+  AssignClass (a3ac4f14-34e9-40db-90a6-046908292e50)
+ Call ID: a3ac4f14-34e9-40db-90a6-046908292e50
+  Args:
+    type: :Woman
+    source: Queen_Olga_of_Greece
+  AddTriple (dab2c8a9-fab2-40e8-bed2-0950cd9d1a8e)
+ Call ID: dab2c8a9-fab2-40e8-bed2-0950cd9d1a8e
+  Args:
+    source: Prince_Nicholas_of_Greece_and_Denmark
+    relation: :hasFather
+    target: King_George_I_of_Greece
+  AddTriple (4d06a289-8da2-463d-822e-0e07671ac1d4)
+ Call ID: 4d06a289-8da2-463d-822e-0e07671ac1d4
+  Args:
+    target: Queen_Olga_of_Greece
+    relation: :hasMother
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AssignClass (c5929ee0-2c94-4931-bf4a-04a3203271e2)
+ Call ID: c5929ee0-2c94-4931-bf4a-04a3203271e2
+  Args:
+    source: Prince_George_Duke_of_Kent
+    type: :Man
+  AddLiteral (8c8a0896-efd9-455f-9aee-627d000e8f7d)
+ Call ID: 8c8a0896-efd9-455f-9aee-627d000e8f7d
+  Args:
+    source: Princess_Marina_of_Greece_and_Denmark
     relation: :hasMarriageYear
-  Finish (d687705d-40c7-4d7f-873a-76feb587d36e)
- Call ID: d687705d-40c7-4d7f-873a-76feb587d36e
+    literal_value: 1934
+    literal_type: xsd:integer
+  AddTriple (b5bf27b7-1e4a-45f1-a707-ec7c5b3fcc5e)
+ Call ID: b5bf27b7-1e4a-45f1-a707-ec7c5b3fcc5e
+  Args:
+    source: Princess_Marina_of_Greece_and_Denmark
+    relation: :hasRelation
+    target: Prince_George_Duke_of_Kent
+  AssignClass (015ad8cb-0622-48a4-a765-9afe89444e3c)
+ Call ID: 015ad8cb-0622-48a4-a765-9afe89444e3c
+  Args:
+    source: King_George_V
+    type: :Man
+  AssignClass (cff9ef5d-0b2b-42f8-9ccc-4841d5c38260)
+ Call ID: cff9ef5d-0b2b-42f8-9ccc-4841d5c38260
+  Args:
+    type: :Woman
+    source: Queen_Mary
+  AddTriple (4ee01567-474b-412a-8c1e-632f8d16305d)
+ Call ID: 4ee01567-474b-412a-8c1e-632f8d16305d
+  Args:
+    relation: :hasFather
+    source: Prince_George_Duke_of_Kent
+    target: King_George_V
+  AddTriple (81144dba-7c8c-4c6b-bc01-830db5849135)
+ Call ID: 81144dba-7c8c-4c6b-bc01-830db5849135
+  Args:
+    source: Prince_George_Duke_of_Kent
+    relation: :hasMother
+    target: Queen_Mary
+  AssignClass (ffcb664a-a602-4be8-b1f3-b5c0a4e6046e)
+ Call ID: ffcb664a-a602-4be8-b1f3-b5c0a4e6046e
+  Args:
+    type: :Man
+    source: Edward
+  AssignClass (8d3dee62-004f-416a-b0ae-5b9c907113ce)
+ Call ID: 8d3dee62-004f-416a-b0ae-5b9c907113ce
+  Args:
+    type: :Woman
+    source: Alexandra
+  AssignClass (7f66a12a-81e2-4e65-a9b4-d7a2dda97466)
+ Call ID: 7f66a12a-81e2-4e65-a9b4-d7a2dda97466
+  Args:
+    source: Michael
+    type: :Man
+  AddTriple (38fc1b85-32d1-4d3e-a6c8-a7cfc073022e)
+ Call ID: 38fc1b85-32d1-4d3e-a6c8-a7cfc073022e
+  Args:
+    target: Edward
+    source: Princess_Marina_of_Greece_and_Denmark
+    relation: :hasChild
+  AddTriple (74711248-0b5a-4985-90ee-a1a9318e7b3c)
+ Call ID: 74711248-0b5a-4985-90ee-a1a9318e7b3c
+  Args:
+    source: Princess_Marina_of_Greece_and_Denmark
+    relation: :hasChild
+    target: Alexandra
+  AddTriple (5a3f322f-af16-450b-a9db-c0bbd7955bea)
+ Call ID: 5a3f322f-af16-450b-a9db-c0bbd7955bea
+  Args:
+    source: Princess_Marina_of_Greece_and_Denmark
+    relation: :hasChild
+    target: Michael
+  AddTriple (96bb856a-670d-4e0d-86e1-e6bc3fa6fa59)
+ Call ID: 96bb856a-670d-4e0d-86e1-e6bc3fa6fa59
+  Args:
+    target: Edward
+    relation: :hasChild
+    source: Prince_George_Duke_of_Kent
+  AddTriple (77827982-0195-4d41-b63f-977e698901b9)
+ Call ID: 77827982-0195-4d41-b63f-977e698901b9
+  Args:
+    target: Alexandra
+    source: Prince_George_Duke_of_Kent,target:
+    relation: :hasChild
+  AddTriple (60d63d4d-ba6b-4c14-8a27-ecd72d82a4f5)
+ Call ID: 60d63d4d-ba6b-4c14-8a27-ecd72d82a4f5
+  Args:
+    target: Michael
+    relation: :hasChild
+    source: Prince_George_Duke_of_Kent
+  AssignClass (502513b0-45c8-4f8a-b582-4948d3ccb6ee)
+ Call ID: 502513b0-45c8-4f8a-b582-4948d3ccb6ee
+  Args:
+    type: :Woman
+    source: Princess_Olga
+  AssignClass (f14980b7-e5d8-4f65-8df2-877e544786d1)
+ Call ID: f14980b7-e5d8-4f65-8df2-877e544786d1
+  Args:
+    type: :Woman
+    source: Princess_Elizabeth
+  AddTriple (6d4dc2b5-249c-4466-9a70-51ddea5e8fe4)
+ Call ID: 6d4dc2b5-249c-4466-9a70-51ddea5e8fe4
+  Args:
+    target: Princess_Olga
+    relation: :isSiblingOf
+    source: Princess_Marina_of_Greece_and_Denmark
+  AddTriple (a2128d3a-c90c-443d-b46a-4e626faca86b)
+ Call ID: a2128d3a-c90c-443d-b46a-4e626faca86b
+  Args:
+    source: Princess_Marina_of_Greece_and_Denmark
+    relation: :isSiblingOf
+    target: Princess_Elizabeth
+  Finish (ee1eca24-6ca9-43c3-9800-a4270aa65c3b)
+ Call ID: ee1eca24-6ca9-43c3-9800-a4270aa65c3b
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Prince_George_Duke_of_Kent%2Ctarget :hasChild data:Alexandra .
+
+  data:Princess_Marina_of_Greece_and_Denmark a :Woman ;
+      :hasBirthYear 1906 ;
+      :hasChild data:Alexandra,
+          data:Edward,
+          data:Michael ;
+      :hasDeathYear 1968 ;
+      :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+      :hasMarriageYear 1934 ;
+      :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+      :hasRelation data:Prince_George_Duke_of_Kent ;
+      :isSiblingOf data:Princess_Elizabeth,
+          data:Princess_Olga .
+
+  data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Woman .
+
+  data:King_George_I_of_Greece a :Man .
+
+  data:King_George_V a :Man .
+
+  data:Prince_George_Duke_of_Kent a :Man ;
+      :hasChild data:Edward,
+          data:Michael ;
+      :hasFather data:King_George_V ;
+      :hasMother data:Queen_Mary .
+
+  data:Prince_Nicholas_of_Greece_and_Denmark a :Man ;
+      :hasFather data:King_George_I_of_Greece ;
+      :hasMother data:Queen_Olga_of_Greece .
+
+  data:Princess_Elizabeth a :Woman .
+
+  data:Princess_Olga a :Woman .
+
+  data:Queen_Mary a :Woman .
+
+  data:Queen_Olga_of_Greece a :Woman .
+
+  data:Alexandra a :Woman .
+
+  data:Edward a :Man .
+
+  data:Michael a :Man .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Prince_George_Duke_of_Kent%2Ctarget']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (7bd9b570-3f77-4d02-b1bd-4353f06f6f38)
+ Call ID: 7bd9b570-3f77-4d02-b1bd-4353f06f6f38
+  Args:
+    relation: :hasChild
+    source: Prince_George_Duke_of_Kent,target:
+    target: Alexandra
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Princess_Marina_of_Greece_and_Denmark a :Woman ;
+      :hasBirthYear 1906 ;
+      :hasChild data:Alexandra,
+          data:Edward,
+          data:Michael ;
+      :hasDeathYear 1968 ;
+      :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+      :hasMarriageYear 1934 ;
+      :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+      :hasRelation data:Prince_George_Duke_of_Kent ;
+      :isSiblingOf data:Princess_Elizabeth,
+          data:Princess_Olga .
+
+  data:Alexandra a :Woman .
+
+  data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Woman .
+
+  data:King_George_I_of_Greece a :Man .
+
+  data:King_George_V a :Man .
+
+  data:Prince_George_Duke_of_Kent a :Man ;
+      :hasChild data:Edward,
+          data:Michael ;
+      :hasFather data:King_George_V ;
+      :hasMother data:Queen_Mary .
+
+  data:Prince_Nicholas_of_Greece_and_Denmark a :Man ;
+      :hasFather data:King_George_I_of_Greece ;
+      :hasMother data:Queen_Olga_of_Greece .
+
+  data:Princess_Elizabeth a :Woman .
+
+  data:Princess_Olga a :Woman .
+
+  data:Queen_Mary a :Woman .
+
+  data:Queen_Olga_of_Greece a :Woman .
+
+  data:Edward a :Man .
+
+  data:Michael a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (704d5f94-6213-4beb-841f-726bf6f0589e)
+ Call ID: 704d5f94-6213-4beb-841f-726bf6f0589e
+  Args:
+    source: Prince_George_Duke_of_Kent
+    relation: :hasChild
+    target: Alexandra
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Princess_Marina_of_Greece_and_Denmark a :Woman ;
+      :hasBirthYear 1906 ;
+      :hasChild data:Alexandra,
+          data:Edward,
+          data:Michael ;
+      :hasDeathYear 1968 ;
+      :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+      :hasMarriageYear 1934 ;
+      :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+      :hasRelation data:Prince_George_Duke_of_Kent ;
+      :isSiblingOf data:Princess_Elizabeth,
+          data:Princess_Olga .
+
+  data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Woman .
+
+  data:King_George_I_of_Greece a :Man .
+
+  data:King_George_V a :Man .
+
+  data:Prince_George_Duke_of_Kent a :Man ;
+      :hasChild data:Alexandra,
+          data:Edward,
+          data:Michael ;
+      :hasFather data:King_George_V ;
+      :hasMother data:Queen_Mary .
+
+  data:Prince_Nicholas_of_Greece_and_Denmark a :Man ;
+      :hasFather data:King_George_I_of_Greece ;
+      :hasMother data:Queen_Olga_of_Greece .
+
+  data:Princess_Elizabeth a :Woman .
+
+  data:Princess_Olga a :Woman .
+
+  data:Queen_Mary a :Woman .
+
+  data:Queen_Olga_of_Greece a :Woman .
+
+  data:Alexandra a :Woman .
+
+  data:Edward a :Man .
+
+  data:Michael a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (2caf5a46-c5bf-4dc4-ae89-48ed4b3626fd)
+ Call ID: 2caf5a46-c5bf-4dc4-ae89-48ed4b3626fd
   Args:

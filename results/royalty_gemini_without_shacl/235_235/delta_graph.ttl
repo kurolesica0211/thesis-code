@@ -2,34 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_Josephine_of_Denmark a :Person,
+data:Eliane_Sophia_Carolina_van_Vollenhoven a :Person,
         :Woman ;
-    :hasBirthYear 2011 ;
-    :hasBrother data:Prince_Vincent ;
-    :hasFather data:King_Frederik_X ;
-    :hasMother data:Queen_Mary ;
-    :isSisterOf data:Prince_Vincent .
+    :hasFather data:Prince_Floris ;
+    :hasMother data:Princess_Aim%C3%A9e .
 
-data:Prince_Henrik a :Ancestor,
-        :Man,
+data:Magali_Margriet_Eleonoor_van_Vollenhoven a :Person,
+        :Woman ;
+    :hasFather data:Prince_Floris ;
+    :hasMother data:Princess_Aim%C3%A9e .
+
+data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven a :Man,
+        :Person ;
+    :hasFather data:Prince_Floris ;
+    :hasMother data:Princess_Aim%C3%A9e .
+
+data:Eleonoor_Stammeijer a :Person,
+        :Woman .
+
+data:Hans_S%C3%B6hngen a :Man,
         :Person .
 
-data:Queen_Margrethe_II a :Ancestor,
-        :Person,
+data:Magali_S%C3%B6hngen a :Person,
         :Woman .
 
-data:King_Frederik_X a :Ancestor,
-        :Man,
-        :Person ;
-    :hasParent data:Prince_Henrik,
-        data:Queen_Margrethe_II .
+data:Pieter_van_Vollenhoven a :Man,
+        :Person .
 
-data:Prince_Vincent a :Man,
-        :Person ;
-    :hasFather data:King_Frederik_X ;
-    :hasMother data:Queen_Mary .
+data:Prince_Bernhard a :Man,
+        :Person .
 
-data:Queen_Mary a :Ancestor,
-        :Person,
+data:Prince_Maurits a :Man,
+        :Person .
+
+data:Prince_Pieter-Christiaan a :Man,
+        :Person .
+
+data:Princess_Margriet a :Person,
         :Woman .
+
+data:Prince_Floris a :Man,
+        :Person ;
+    :hasBirthYear 1975 ;
+    :hasBrother data:Prince_Bernhard,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet .
+
+data:Princess_Aim%C3%A9e a :Person,
+        :Woman ;
+    :hasFather data:Hans_S%C3%B6hngen ;
+    :hasMother data:Eleonoor_Stammeijer ;
+    :hasSister data:Magali_S%C3%B6hngen .
 

@@ -2,42 +2,69 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carl_of_Wurttemberg a :Man,
+data:Edward_VIII a :Man,
         :Person ;
-    :isBrotherOf data:Marie_Therese_of_Wurttemberg .
+    :alsoKnownAs "Duke of Windsor"^^xsd:string ;
+    :hasAncestor data:Queen_Victoria ;
+    :hasBirthYear 1894 ;
+    :hasDeathYear 1972 ;
+    :hasFather data:George_V ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Queen_Mary ;
+    :hasRelation data:Prince_Albert_Victor_Duke_of_Clarence_and_Avondale,
+        data:Wallis_Simpson ;
+    :isSiblingOf data:George_VI,
+        data:Prince_George_Duke_of_Kent,
+        data:Prince_Henry_Duke_of_Gloucester,
+        data:Prince_John .
 
-data:Jean_d_Orleans a :Man,
-        :Person ;
-    :hasBirthYear 1965 ;
-    :hasFather data:Henri_Count_of_Paris_1933 ;
-    :hasMother data:Marie_Therese_of_Wurttemberg ;
-    :knownAs "Prince Jean Carl Pierre Marie d'Orléans, Count of Paris"^^xsd:string .
+data:Edward_VII a :Ancestor,
+        :Man,
+        :Person .
 
-data:Philomena_de_Tornos_y_Steinhart a :Person,
-        :Woman ;
-    :hasBirthYear 1977 ;
-    :knownAs "Maria Magdalena Philomena Juliana Johanna de Tornos y Steinhart"^^xsd:string .
+data:Francis_Duke_of_Teck a :Ancestor,
+        :Man,
+        :Person .
 
-data:Princess_Chantal_of_Orleans a :Person,
-        :Woman ;
-    :isSisterOf data:Henri_Count_of_Paris_1933 .
-
-data:Henri_VI_Count_of_Paris a :Ancestor,
+data:George_V a :Ancestor,
         :Man,
         :Person ;
-    :knownAs "Henri VI, Count of Paris"^^xsd:string .
+    :hasFather data:Edward_VII ;
+    :hasMother data:Queen_Alexandra .
 
-data:Henri_Count_of_Paris_1933 a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1933 ;
-    :hasDeathYear 2019 ;
-    :hasFather data:Henri_VI_Count_of_Paris ;
-    :knownAs "Henri, Count of Paris"^^xsd:string .
+data:George_VI a :Man,
+        :Person .
 
-data:Marie_Therese_of_Wurttemberg a :Ancestor,
+data:Prince_Albert_Victor_Duke_of_Clarence_and_Avondale a :Man,
+        :Person .
+
+data:Prince_George_Duke_of_Kent a :Man,
+        :Person .
+
+data:Prince_Henry_Duke_of_Gloucester a :Man,
+        :Person .
+
+data:Prince_John a :Man,
+        :Person .
+
+data:Princess_Mary_Adelaide_of_Cambridge a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Queen_Alexandra a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Queen_Mary a :Ancestor,
         :Person,
         :Woman ;
-    :hasBirthYear 1934 ;
-    :knownAs "Duchess Marie-Thérèse of Württemberg"^^xsd:string .
+    :hasFather data:Francis_Duke_of_Teck ;
+    :hasMother data:Princess_Mary_Adelaide_of_Cambridge .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Wallis_Simpson a :Person,
+        :Woman .
 

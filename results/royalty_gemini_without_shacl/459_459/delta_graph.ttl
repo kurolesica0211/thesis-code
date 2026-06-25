@@ -2,21 +2,34 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_Maria a :Person,
-        :Woman .
+data:Daisy_Isadora_Louise_Knatchbull a :Person,
+        :Woman ;
+    :hasBirthYear 1992 ;
+    :hasFather data:Philip_Knatchbull ;
+    :hasMother data:Atalanta_Cowan .
 
-data:Stephan_Prince_of_Lippe a :Man,
+data:Frederick_Freddy_Knatchbull a :Man,
         :Person ;
-    :hasBirthYear 1959 ;
-    :hasFather data:Armin_Prince_of_Lippe ;
-    :hasMother data:Traute_Becker ;
-    :hasSex data:Male .
+    :hasBirthYear 2003 ;
+    :hasFather data:Philip_Knatchbull ;
+    :hasMother data:Wendy_Leach ;
+    :knownAs data:Freddy_Knatchbull .
 
-data:Armin_Prince_of_Lippe a :Man,
+data:Giovanni_Damiani a :Man,
         :Person .
 
-data:Male a :Sex .
+data:Atalanta_Cowan a :Person,
+        :Woman ;
+    :hasBirthYear 1962 .
 
-data:Traute_Becker a :Person,
-        :Woman .
+data:Freddy_Knatchbull a :Man,
+        :Person .
+
+data:Wendy_Leach a :Person,
+        :Woman ;
+    :hasBirthYear 1966 .
+
+data:Philip_Knatchbull a :Man,
+        :Person ;
+    :hasBirthYear 1961 .
 

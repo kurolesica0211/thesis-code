@@ -1,0 +1,207 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Prince_Tomislav_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Tomislav of Yugoslavia"^^xsd:string ;
+    data:posIndicesFull "348:377"^^xsd:string,
+        "355:377"^^xsd:string ;
+    data:posIndicesPart "1793:1799"^^xsd:string,
+        "438:448"^^xsd:string,
+        "532:538"^^xsd:string,
+        "549:559"^^xsd:string,
+        "584:590"^^xsd:string,
+        "602:608"^^xsd:string,
+        "660:666"^^xsd:string,
+        "670:680"^^xsd:string,
+        "757:763"^^xsd:string ;
+    data:wdtLink wdt:Q594386 ;
+    :alsoKnownAs "Tomislav of Yugoslavia"^^xsd:string ;
+    :hasBrother data:Prince_Tomislav_of_Yugoslavia ;
+    :hasChild data:Princess_Katarina_of_Serbia ;
+    :hasDaughter data:Princess_Katarina_of_Serbia ;
+    :hasRelation data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Katarina_of_Serbia ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Katarina_of_Serbia ;
+    :isBloodrelationOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isFatherOf data:Princess_Katarina_of_Serbia ;
+    :isParentOf data:Princess_Katarina_of_Serbia ;
+    :isSiblingOf data:Prince_Tomislav_of_Yugoslavia ;
+    :isUncleOf data:Princess_Katarina_of_Serbia .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "1036:1064"^^xsd:string,
+        "1045:1050"^^xsd:string,
+        "1045:1064"^^xsd:string,
+        "1319:1323"^^xsd:string,
+        "252:256"^^xsd:string,
+        "867:871"^^xsd:string,
+        "938:943"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasChild data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasDaughter data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasRelation data:Princess_Alice_of_Battenberg,
+        data:Princess_Katarina_of_Serbia,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isAncestorOf data:Princess_Katarina_of_Serbia,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isAuntOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isParentOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Princess_Margarita_of_Baden a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Margarita of Baden"^^xsd:string ;
+    data:posIndicesFull "316:343"^^xsd:string ;
+    data:posIndicesPart "1436:1445"^^xsd:string,
+        "2224:2229"^^xsd:string,
+        "827:835"^^xsd:string,
+        "996:1004"^^xsd:string ;
+    data:wdtLink wdt:Q3424937 ;
+    :alsoKnownAs "Margarita Prinzessin von Baden"^^xsd:string,
+        "Margarita von Baden"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasChild data:Princess_Katarina_of_Serbia ;
+    :hasDaughter data:Princess_Katarina_of_Serbia ;
+    :hasMother data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasParent data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasRelation data:Princess_Alice_of_Battenberg,
+        data:Princess_Katarina_of_Serbia,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margarita_of_Baden ;
+    :isAncestorOf data:Princess_Katarina_of_Serbia ;
+    :isAuntOf data:Princess_Katarina_of_Serbia ;
+    :isBloodrelationOf data:Princess_Margarita_of_Baden ;
+    :isChildOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isDaughterOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isMotherOf data:Princess_Katarina_of_Serbia ;
+    :isParentOf data:Princess_Katarina_of_Serbia ;
+    :isSiblingOf data:Princess_Margarita_of_Baden ;
+    :isSisterOf data:Princess_Margarita_of_Baden .
+
+data:Princess_Theodora_of_Greece_and_Denmark_1 a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Theodora of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "699:737"^^xsd:string,
+        "708:737"^^xsd:string ;
+    data:posIndicesPart "2274:2281"^^xsd:string,
+        "2295:2301"^^xsd:string,
+        "827:835"^^xsd:string,
+        "996:1004"^^xsd:string ;
+    data:wdtLink wdt:Q255382 ;
+    :alsoKnownAs "Princess Theodora, Margravine of Baden"^^xsd:string,
+        "Theodora, Margravine of Baden"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasChild data:Princess_Margarita_of_Baden ;
+    :hasDaughter data:Princess_Margarita_of_Baden ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Princess_Alice_of_Battenberg,
+        data:Princess_Katarina_of_Serbia,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isAncestorOf data:Princess_Katarina_of_Serbia,
+        data:Princess_Margarita_of_Baden ;
+    :isAuntOf data:Princess_Margarita_of_Baden ;
+    :isBloodrelationOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Princess_Margarita_of_Baden ;
+    :isParentOf data:Princess_Margarita_of_Baden ;
+    :isSiblingOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isSisterOf data:Princess_Theodora_of_Greece_and_Denmark_1 .
+
+data:Princess_Katarina_of_Serbia a :Person,
+        :Woman ;
+    rdfs:label "Princess Katarina of Serbia"^^xsd:string ;
+    data:posIndicesFull "99:130"^^xsd:string,
+        "99:145"^^xsd:string ;
+    data:posIndicesPart "1083:1091"^^xsd:string,
+        "1215:1223"^^xsd:string,
+        "1325:1333"^^xsd:string,
+        "1496:1504"^^xsd:string,
+        "1633:1641"^^xsd:string,
+        "1836:1844"^^xsd:string,
+        "1907:1915"^^xsd:string,
+        "2178:2186"^^xsd:string,
+        "258:266"^^xsd:string,
+        "827:835"^^xsd:string,
+        "996:1004"^^xsd:string ;
+    data:wdtLink wdt:Q16911051 ;
+    :alsoKnownAs "Princess Katarina Karađorđević of Serbia"^^xsd:string,
+        "Princess Katarina Karađorđević of Serbia, Lady de Silva"^^xsd:string,
+        "Princess Katarina Karađorđević of Yugoslavia"^^xsd:string,
+        "Princess Katarina Karađorđević of Yugoslavia, Lady de Silva"^^xsd:string,
+        "Princess Katarina Karađorđević, Lady de Silva"^^xsd:string,
+        "Princess Katarina of Serbia, Lady de Silva"^^xsd:string,
+        "Princess Katarina of Yugoslavia"^^xsd:string,
+        "Princess Katarina of Yugoslavia, Lady de Silva"^^xsd:string,
+        "Princess Katarina, Lady de Silva"^^xsd:string ;
+    :hasAncestor data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasFather data:Prince_Tomislav_of_Yugoslavia ;
+    :hasMother data:Princess_Margarita_of_Baden ;
+    :hasParent data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :hasRelation data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Katarina_of_Serbia,
+        data:Princess_Margarita_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Katarina_of_Serbia ;
+    :isBloodrelationOf data:Princess_Katarina_of_Serbia ;
+    :isChildOf data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :isDaughterOf data:Prince_Tomislav_of_Yugoslavia,
+        data:Princess_Margarita_of_Baden ;
+    :isSiblingOf data:Princess_Katarina_of_Serbia ;
+    :isSisterOf data:Princess_Katarina_of_Serbia .
+

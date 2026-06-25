@@ -4,15 +4,24 @@
 
 data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen a :Man,
         :Person ;
+    :hasAncestor data:Wilhelm_II ;
     :hasBirthYear 1959 ;
-    :isSonOf data:Wilhelm-Karl_of_Prussia .
+    :hasFather data:Wilhelm-Karl_Prince_of_Prussia ;
+    :hasMother data:Armgard_von_Veltheim ;
+    :hasSex data:Male .
 
-data:Oskar_of_Prussia a :Ancestor,
-        :Man,
+data:Armgard_von_Veltheim a :Person,
+        :Woman .
+
+data:Male a :Sex .
+
+data:Oskar_of_Prussia a :Man,
         :Person .
 
-data:Wilhelm-Karl_of_Prussia a :Ancestor,
-        :Man,
+data:Wilhelm-Karl_Prince_of_Prussia a :Man,
         :Person ;
-    :isSonOf data:Oskar_of_Prussia .
+    :hasFather data:Oskar_of_Prussia .
+
+data:Wilhelm_II a :Man,
+        :Person .
 

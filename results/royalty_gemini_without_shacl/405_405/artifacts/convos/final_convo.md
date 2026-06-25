@@ -69,15 +69,23 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Don Marco Alfonso Torlonia, 6th Prince of Civitella-Cesi (2 July 1937 – 5 December 2014) was the son of Alessandro Torlonia, 5th Prince of Civitella-Cesi and Infanta Beatriz of Spain, daughter of King Alfonso XIII of Spain.
-King Juan Carlos I of Spain.
-He was also an uncle to Princess Sibilla of Luxembourg, daughter of his younger sister, Olimpia.
+Prince Wolfgang of Hesse (Wolfgang Moritz Prinz von Hessen; 6 November 1896 – 12 July 1989) was the district administrator of Obertaunuskreis from 1933 to 1945.
+Wolfgang was born at Castle Rumpenheim, Offenbach am Main, the fourth son of Prince Frederick Charles of Hesse (1868–1940) and Princess Margaret of Prussia (1872–1954).
+His maternal uncle was the German Emperor Willhelm II.
+In World War I, Wolfgang served as an officer in the command of Field Marshal August von Mackensen.
+Towards the end of the war, Wolfgang's father Frederick Charles of Hesse was selected by the Central Powers as a prospective King of Finland on 9 October 1918, to replace his first cousin once removed, the deposed Russian emperor, Nicholas II, who was titled Grand Duke of Finland.
+Wolfgang was designated heir, in preference to his elder twin brother Philipp to ensure the separation of the thrones of Hesse and Finland.
+However, Frederick Charles renounced his candidature on 14 December 1918, and the title was never actually held by the family.
+Wolfgang married on 17 September 1924 Princess Marie Alexandra of Baden (1902–1944), daughter of Prince Maximilian of Baden and Princess Marie Louise of Hanover; they had no children.
+He joined the NSDAP and the SA in December 1933, and was appointed Landrat (district administrator) of Obertaunuskreis, a landkreis in the state of Hesse, serving in that capacity until the end of  World War II.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -93,39 +101,9 @@ He was also an uncle to Princess Sibilla of Luxembourg, daughter of his younger 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -140,6 +118,23 @@ He was also an uncle to Princess Sibilla of Luxembourg, daughter of his younger 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -157,6 +152,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -224,29 +234,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -255,6 +257,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -267,6 +277,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -275,17 +287,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -313,6 +327,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -328,102 +426,147 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (316d6a75-af0d-4a8f-8772-cea8ba9f6d7e)
- Call ID: 316d6a75-af0d-4a8f-8772-cea8ba9f6d7e
+  AssignClass (c94273db-a641-4fd3-a3a1-2d7be95e9f17)
+ Call ID: c94273db-a641-4fd3-a3a1-2d7be95e9f17
   Args:
-    source: :MarcoAlfonsoTorlonia
+    source: Wolfgang_of_Hesse
     type: :Man
-  AssignClass (e5a2abee-20eb-44f0-a4fb-ad8cdd155c27)
- Call ID: e5a2abee-20eb-44f0-a4fb-ad8cdd155c27
+  AddLiteral (b09093ef-4133-448b-9e69-ce689d50e6ed)
+ Call ID: b09093ef-4133-448b-9e69-ce689d50e6ed
   Args:
-    type: :Person
-    source: :MarcoAlfonsoTorlonia
-  AssignClass (2cb2dca0-42f4-425b-b847-7ee74a47020a)
- Call ID: 2cb2dca0-42f4-425b-b847-7ee74a47020a
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: Wolfgang_of_Hesse
+    literal_value: 1896
+  AddLiteral (83c73356-aa80-4462-a445-713bccc16a9c)
+ Call ID: 83c73356-aa80-4462-a445-713bccc16a9c
   Args:
-    type: :Man
-    source: :AlessandroTorlonia
-  AssignClass (b79e804a-f2f4-4be8-9a80-d7c52e3e510e)
- Call ID: b79e804a-f2f4-4be8-9a80-d7c52e3e510e
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Wolfgang_of_Hesse
+    literal_value: 1989
+  AddLiteral (11cc20ef-8caa-445e-80f1-046844334268)
+ Call ID: 11cc20ef-8caa-445e-80f1-046844334268
   Args:
-    type: :Person
-    source: :AlessandroTorlonia
-  AssignClass (bc4f404a-87b9-4ed4-b432-2fe81f6f2a77)
- Call ID: bc4f404a-87b9-4ed4-b432-2fe81f6f2a77
-  Args:
-    type: :Woman
-    source: :BeatrizOfSpain
-  AssignClass (60c5c50d-9bc9-4d12-b3d7-31cf6b7c316c)
- Call ID: 60c5c50d-9bc9-4d12-b3d7-31cf6b7c316c
-  Args:
-    source: :BeatrizOfSpain
-    type: :Person
-  AssignClass (1eb4ccdd-caac-4a8e-a937-7b1817789bab)
- Call ID: 1eb4ccdd-caac-4a8e-a937-7b1817789bab
+    source: Wolfgang_of_Hesse
+    literal_value: Wolfgang Moritz Prinz von Hessen
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+  AssignClass (85406583-07e2-49f5-8ac8-68b9999495ce)
+ Call ID: 85406583-07e2-49f5-8ac8-68b9999495ce
   Args:
     type: :Man
-    source: :AlfonsoXIIIOfSpain
-  AssignClass (ed0104d9-e412-4f70-a5e6-12d7b1756183)
- Call ID: ed0104d9-e412-4f70-a5e6-12d7b1756183
+    source: Frederick_Charles_of_Hesse
+  AddLiteral (ea6cc70b-02ee-4ce7-9fad-b3274bf8fbe6)
+ Call ID: ea6cc70b-02ee-4ce7-9fad-b3274bf8fbe6
   Args:
-    type: :Person
-    source: :AlfonsoXIIIOfSpain
-  AssignClass (8d170ea1-087c-42f6-be2a-5d7310f7023c)
- Call ID: 8d170ea1-087c-42f6-be2a-5d7310f7023c
+    source: Frederick_Charles_of_Hesse
+    literal_value: 1868
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (77693831-e887-44af-817a-71c9a0958cc4)
+ Call ID: 77693831-e887-44af-817a-71c9a0958cc4
   Args:
-    source: :OlimpiaTorlonia
+    source: Frederick_Charles_of_Hesse
+    literal_value: 1940
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AssignClass (9071f47e-e939-418a-adb9-75c8a8a2a943)
+ Call ID: 9071f47e-e939-418a-adb9-75c8a8a2a943
+  Args:
     type: :Woman
-  AssignClass (7ca255a2-1b12-45c9-818e-2f40572e111d)
- Call ID: 7ca255a2-1b12-45c9-818e-2f40572e111d
+    source: Margaret_of_Prussia
+  AddLiteral (e7d054a2-0f1e-4223-a0cb-5af7be94f9f9)
+ Call ID: e7d054a2-0f1e-4223-a0cb-5af7be94f9f9
   Args:
-    type: :Person
-    source: :OlimpiaTorlonia
-  AssignClass (51cacc77-d3d6-4eec-9c83-21c67065a938)
- Call ID: 51cacc77-d3d6-4eec-9c83-21c67065a938
+    source: Margaret_of_Prussia
+    literal_value: 1872
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (5e511b9b-abb5-41ff-b737-72d1adb8e256)
+ Call ID: 5e511b9b-abb5-41ff-b737-72d1adb8e256
   Args:
-    type: :Woman
-    source: :SibillaOfLuxembourg
-  AssignClass (1ed2b432-e2c5-4389-b881-14a54459d27b)
- Call ID: 1ed2b432-e2c5-4389-b881-14a54459d27b
+    source: Margaret_of_Prussia
+    literal_value: 1954
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddTriple (c399a9d2-21bf-48ee-8e0e-85635d2d6e2d)
+ Call ID: c399a9d2-21bf-48ee-8e0e-85635d2d6e2d
   Args:
-    source: :SibillaOfLuxembourg
-    type: :Person
-  AddTriple (77144124-9b73-4c6c-bafe-af3ca42024a1)
- Call ID: 77144124-9b73-4c6c-bafe-af3ca42024a1
-  Args:
-    source: :MarcoAlfonsoTorlonia
-    target: :AlessandroTorlonia
+    source: Wolfgang_of_Hesse
+    target: Frederick_Charles_of_Hesse
     relation: :hasFather
-  AddTriple (1392245a-2fc9-4854-8ace-2897c121cb95)
- Call ID: 1392245a-2fc9-4854-8ace-2897c121cb95
+  AddTriple (c6212312-419d-45ee-8a83-2605fb4eacc1)
+ Call ID: c6212312-419d-45ee-8a83-2605fb4eacc1
   Args:
-    target: :BeatrizOfSpain
-    source: :MarcoAlfonsoTorlonia
+    source: Wolfgang_of_Hesse
+    target: Margaret_of_Prussia
     relation: :hasMother
-  AddTriple (be65be3d-495c-4bc2-9e52-f621ab9685b2)
- Call ID: be65be3d-495c-4bc2-9e52-f621ab9685b2
+  AssignClass (9503df11-240c-4ed6-ad24-6fa2f5318fbd)
+ Call ID: 9503df11-240c-4ed6-ad24-6fa2f5318fbd
   Args:
-    target: :AlfonsoXIIIOfSpain
-    source: :BeatrizOfSpain
+    source: Philipp_of_Hesse
+    type: :Man
+  AddTriple (cfc6d449-ad92-423b-bc6d-8bb034bd8b73)
+ Call ID: cfc6d449-ad92-423b-bc6d-8bb034bd8b73
+  Args:
+    relation: :isSiblingOf
+    target: Philipp_of_Hesse
+    source: Wolfgang_of_Hesse
+  AssignClass (211f5235-3b38-45b4-a027-64a22cd7d16d)
+ Call ID: 211f5235-3b38-45b4-a027-64a22cd7d16d
+  Args:
+    source: Marie_Alexandra_of_Baden
+    type: :Woman
+  AddLiteral (5836be94-bc23-4daa-ab00-3b5ace7b9482)
+ Call ID: 5836be94-bc23-4daa-ab00-3b5ace7b9482
+  Args:
+    literal_value: 1902
+    source: Marie_Alexandra_of_Baden
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (487feb3a-0912-4061-9fb3-76489ff82f35)
+ Call ID: 487feb3a-0912-4061-9fb3-76489ff82f35
+  Args:
+    literal_value: 1944
+    source: Marie_Alexandra_of_Baden
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddLiteral (5b1749b6-66d4-4b10-9088-213d9dadc897)
+ Call ID: 5b1749b6-66d4-4b10-9088-213d9dadc897
+  Args:
+    source: Wolfgang_of_Hesse
+    literal_value: 1924
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AddTriple (645acd01-aebb-4d32-ba7a-4a96070d4d06)
+ Call ID: 645acd01-aebb-4d32-ba7a-4a96070d4d06
+  Args:
+    relation: :hasRelation
+    target: Marie_Alexandra_of_Baden
+    source: Wolfgang_of_Hesse
+  AssignClass (def66468-cfbf-4497-9cbc-037dfc8aa768)
+ Call ID: def66468-cfbf-4497-9cbc-037dfc8aa768
+  Args:
+    type: :Man
+    source: Maximilian_of_Baden
+  AssignClass (03d280fb-56b0-4d8a-a2fe-23df6a497c29)
+ Call ID: 03d280fb-56b0-4d8a-a2fe-23df6a497c29
+  Args:
+    source: Marie_Louise_of_Hanover
+    type: :Woman
+  AddTriple (a8ff6830-31b6-4e9c-8570-94c8256896c3)
+ Call ID: a8ff6830-31b6-4e9c-8570-94c8256896c3
+  Args:
+    source: Marie_Alexandra_of_Baden
+    target: Maximilian_of_Baden
     relation: :hasFather
-  AddTriple (cc4023bc-cf62-4ec5-bad5-493a028f108d)
- Call ID: cc4023bc-cf62-4ec5-bad5-493a028f108d
+  AddTriple (4456f593-6179-44e2-8957-b04f8ae377de)
+ Call ID: 4456f593-6179-44e2-8957-b04f8ae377de
   Args:
-    relation: :hasSister
-    target: :OlimpiaTorlonia
-    source: :MarcoAlfonsoTorlonia
-  AddTriple (3c3db930-aba7-4726-b05f-a42e1b2866ee)
- Call ID: 3c3db930-aba7-4726-b05f-a42e1b2866ee
-  Args:
-    relation: :hasChild
-    target: :SibillaOfLuxembourg
-    source: :OlimpiaTorlonia
-  AddTriple (ebffbb19-23c7-4e4d-854c-02d153777bd6)
- Call ID: ebffbb19-23c7-4e4d-854c-02d153777bd6
-  Args:
-    relation: :isUncleOf
-    source: :MarcoAlfonsoTorlonia
-    target: :SibillaOfLuxembourg
-  Finish (6577c923-716c-4dfe-bb3d-edbd509c7000)
- Call ID: 6577c923-716c-4dfe-bb3d-edbd509c7000
+    target: Marie_Louise_of_Hanover
+    source: Marie_Alexandra_of_Baden
+    relation: :hasMother
+  Finish (ccd3e160-e37c-4dad-bee6-eb851ec7225a)
+ Call ID: ccd3e160-e37c-4dad-bee6-eb851ec7225a
   Args:

@@ -1,0 +1,289 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:George_I_of_Greece a :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "700:707"^^xsd:string ;
+    data:posIndicesPart "1036:1042"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasRelation data:George_I_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece .
+
+data:male a :Male .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Man,
+        :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "1193:1206"^^xsd:string,
+        "261:274"^^xsd:string,
+        "570:583"^^xsd:string,
+        "570:602"^^xsd:string ;
+    data:posIndicesPart "645:651"^^xsd:string ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip"^^xsd:string,
+        "H.R.H. The Duke Of Edinburgh"^^xsd:string,
+        "Lieutenant Philip Mountbatten"^^xsd:string,
+        "Philip Edinburgh"^^xsd:string,
+        "Philip Mountbatten"^^xsd:string,
+        "Philip Mountbatten; Prince Philip of Greece and Denmark"^^xsd:string,
+        "Philip of Greece and Denmark"^^xsd:string,
+        "Prince Philip"^^xsd:string,
+        "Prince Philip of Greece and Denmark"^^xsd:string,
+        "The Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Karl_of_Hesse,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSonOf data:Princess_Alice_of_Battenberg ;
+    :isUncleOf data:Prince_Karl_of_Hesse .
+
+data:Prince_Wolfgang_of_Hesse a :Man,
+        :Person ;
+    rdfs:label "Prince Wolfgang of Hesse"^^xsd:string ;
+    data:posIndicesFull "806:830"^^xsd:string ;
+    data:wdtLink wdt:Q67038 ;
+    :alsoKnownAs "Wolfgang Moritz von Hessen-Kassel"^^xsd:string ;
+    :hasAncestor data:Princess_Margaret_of_Prussia ;
+    :hasBrother data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Wolfgang_of_Hesse ;
+    :hasMother data:Princess_Margaret_of_Prussia ;
+    :hasParent data:Princess_Margaret_of_Prussia ;
+    :hasRelation data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isBrotherOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isChildOf data:Princess_Margaret_of_Prussia ;
+    :isSiblingOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isSonOf data:Princess_Margaret_of_Prussia ;
+    :isUncleOf data:Prince_Karl_of_Hesse .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "282:286"^^xsd:string,
+        "349:353"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Karl_of_Hesse,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Prince_Karl_of_Hesse,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Princess_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Margaret of Prussia"^^xsd:string ;
+    data:posIndicesFull "852:856"^^xsd:string ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Margaret of Prussia"^^xsd:string,
+        "Margaret of Prussia, Queen consort-elect of Finland"^^xsd:string,
+        "Margaret of Prussia, Queen-elect of Finland"^^xsd:string,
+        "Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Margarethe of Prussia"^^xsd:string,
+        "Mossy"^^xsd:string,
+        "Princess Frederick Charles of Hesse"^^xsd:string,
+        "Princess Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe of Prussia"^^xsd:string ;
+    :hasChild data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Wolfgang_of_Hesse ;
+    :hasRelation data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :hasSon data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isAncestorOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isAuntOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia ;
+    :isMotherOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isParentOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia ;
+    :isSisterOf data:Princess_Margaret_of_Prussia .
+
+data:Prince_Christoph_of_Hesse-Kassel a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Christoph of Hesse-Kassel"^^xsd:string ;
+    data:posIndicesFull "472:497"^^xsd:string ;
+    data:posIndicesPart "645:651"^^xsd:string ;
+    data:wdtLink wdt:Q2314771 ;
+    :alsoKnownAs "Prince Christoph Ernst August of Hesse"^^xsd:string,
+        "Prince Christoph of Hesse"^^xsd:string ;
+    :hasAncestor data:Princess_Margaret_of_Prussia ;
+    :hasBrother data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Wolfgang_of_Hesse ;
+    :hasChild data:Prince_Karl_of_Hesse ;
+    :hasMother data:Princess_Margaret_of_Prussia ;
+    :hasParent data:Princess_Margaret_of_Prussia ;
+    :hasRelation data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Karl_of_Hesse ;
+    :isAncestorOf data:Prince_Karl_of_Hesse ;
+    :isBloodrelationOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isBrotherOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isChildOf data:Princess_Margaret_of_Prussia ;
+    :isFatherOf data:Prince_Karl_of_Hesse ;
+    :isParentOf data:Prince_Karl_of_Hesse ;
+    :isSiblingOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Wolfgang_of_Hesse ;
+    :isSonOf data:Princess_Margaret_of_Prussia ;
+    :isUncleOf data:Prince_Karl_of_Hesse .
+
+data:Princess_Sophie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Sophie of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "512:537"^^xsd:string,
+        "512:549"^^xsd:string ;
+    data:posIndicesPart "1036:1042"^^xsd:string ;
+    data:wdtLink wdt:Q630371 ;
+    :alsoKnownAs "Princess Sophie of Greece"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasChild data:Prince_Karl_of_Hesse ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Karl_of_Hesse,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Karl_of_Hesse ;
+    :isAncestorOf data:Prince_Karl_of_Hesse ;
+    :isAuntOf data:Prince_Karl_of_Hesse ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Prince_Karl_of_Hesse ;
+    :isParentOf data:Prince_Karl_of_Hesse ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSisterOf data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Karl_of_Hesse a :Man,
+        :Person ;
+    rdfs:label "Prince Karl of Hesse"^^xsd:string ;
+    data:posIndicesFull "1215:1235"^^xsd:string,
+        "1315:1342"^^xsd:string ;
+    data:wdtLink wdt:Q2464604 ;
+    :alsoKnownAs "Karl Adolf Andreas Prinz von Hessen-Kassel"^^xsd:string,
+        "Karl Adolf Andreas of Hesse"^^xsd:string,
+        "Karl Adolf Andreas von Hessen-Kassel"^^xsd:string,
+        "Karl Prinz von Hessen-Kassel"^^xsd:string,
+        "Karl van Hessen-Kassel"^^xsd:string,
+        "Karl von Hessen-Kassel"^^xsd:string,
+        "Prince Karl Adolf Andreas of Hesse"^^xsd:string ;
+    :hasAncestor data:Prince_Christoph_of_Hesse-Kassel,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Karl_of_Hesse ;
+    :hasFather data:Prince_Christoph_of_Hesse-Kassel ;
+    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Christoph_of_Hesse-Kassel,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Christoph_of_Hesse-Kassel,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Prince_Wolfgang_of_Hesse,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Margaret_of_Prussia,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Karl_of_Hesse ;
+    :isBrotherOf data:Prince_Karl_of_Hesse ;
+    :isChildOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Karl_of_Hesse ;
+    :isSonOf data:Prince_Christoph_of_Hesse-Kassel,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+

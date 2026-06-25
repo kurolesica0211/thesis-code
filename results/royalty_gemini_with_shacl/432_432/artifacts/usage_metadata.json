@@ -5,27 +5,27 @@
             "iteration": 3,
             "metadata": [
                 {
-                    "input_tokens": 8173,
-                    "output_tokens": 670,
-                    "total_tokens": 8843,
+                    "input_tokens": 10665,
+                    "output_tokens": 1027,
+                    "total_tokens": 11692,
                     "input_token_details": {
-                        "cache_read": 8168
+                        "cache_read": 10660
                     }
                 },
                 {
-                    "input_tokens": 9645,
+                    "input_tokens": 12863,
                     "output_tokens": 10,
-                    "total_tokens": 9655,
+                    "total_tokens": 12873,
                     "input_token_details": {
-                        "cache_read": 8168
+                        "cache_read": 10660
                     }
                 },
                 {
-                    "input_tokens": 9677,
+                    "input_tokens": 12895,
                     "output_tokens": 8,
-                    "total_tokens": 9685,
+                    "total_tokens": 12903,
                     "input_token_details": {
-                        "cache_read": 8168
+                        "cache_read": 10660
                     }
                 }
             ]

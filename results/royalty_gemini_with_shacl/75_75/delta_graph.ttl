@@ -4,18 +4,16 @@
 
 data:Vladimir_Kirillovich a :Man,
         :Person ;
+    :hasChild data:Maria_Vladimirovna ;
     :isSonOf data:Kirill_Vladimirovich_Romanov .
-
-data:Alexander_II_of_Russia a :Ancestor,
-        :Man,
-        :Person .
 
 data:Alexander_brother_of_Kirill a :Man,
         :Person .
 
 data:Alfred_Duke_of_Saxe-Coburg_and_Gotha a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :hasSex data:Male .
 
 data:Kirill_Vladimirovich_Romanov a :Ancestor,
         :Man,
@@ -23,28 +21,44 @@ data:Kirill_Vladimirovich_Romanov a :Ancestor,
     :hasBirthYear 1876 ;
     :hasBrother data:Alexander_brother_of_Kirill ;
     :hasDeathYear 1938 ;
-    :hasFather data:Vladimir_Alexandrovich_of_Russia ;
+    :hasFather data:Vladimir_Alexandrovich ;
     :hasMarriageYear 1905 ;
     :hasMother data:Maria_Pavlovna ;
     :hasRelation data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:Male ;
     :knownAs "Kirill Vladimirovich Romanov"^^xsd:string .
 
 data:Maria_Alexandrovna_of_Russia a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasFather data:Alexander_II_of_Russia ;
+    :hasSex data:Female .
 
 data:Maria_Pavlovna a :Ancestor,
         :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Maria_Vladimirovna a :Person,
         :Woman .
 
-data:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
-        :Person,
+data:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person,
         :Woman ;
     :hasFather data:Alfred_Duke_of_Saxe-Coburg_and_Gotha ;
     :hasMother data:Maria_Alexandrovna_of_Russia .
 
-data:Vladimir_Alexandrovich_of_Russia a :Ancestor,
+data:Vladimir_Alexandrovich a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Alexander_II_of_Russia .
+    :hasFather data:Alexander_II_of_Russia ;
+    :hasSex data:Male .
+
+data:Alexander_II_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

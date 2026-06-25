@@ -69,31 +69,27 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Ferdinand d'Orléans, Duke of Montpensier (French: Ferdinand François Philippe Marie Laurent d'Orléans, Duc de Montpensier) (9 September 1884 – 30 January 1924) was a member of the House of Orléans and a Prince of France.
-Early life
+Woizlawa Feodora Princess Reuss (née Duchess of Mecklenburg-Schwerin, 17 December 1918 – 3 June 2019) was a member of the German nobility, by birth of the House of Mecklenburg-Schwerin.
+Her father was the seventh son of Frederick Francis II, Grand Duke of Mecklenburg-Schwerin (1823–1883) by his third wife Princess Marie of Schwarzburg-Rudolstadt (1850–1922).
+Her mother was Viktoria Feodora Reuss zu Schleiz (1889–1918), the eldest child of Heinrich XXVII, Prince of Reuss zu Schleiz, regent of Principality of Reuss-Greiz and Princess Elise of Hohenlohe-Langenburg, granddaughter of Princess Feodora of Leiningen, half-sister of Queen Victoria.
+She was a first cousin of:
 
-Ferdinand was born on 9 September 1884 at Château d'Eu, Eu, Seine-Inférieure, French Republic.
-He was the eighth, and youngest, child of Philippe d'Orléans, Count of Paris and his wife Marie Isabelle d'Orléans.
-His elder siblings were Princess Amélie (wife of Carlos I of Portugal), Prince Philippe (who married Archduchess Maria Dorothea, daughter of Archduke Joseph Karl of Austria), Princess Hélène (the wife of Emmanuel Philibert, 2nd Duke of Aosta), Prince Charles (who died young), Princess Isabelle (wife of Prince Jean D'Orléans, Duke of Guise), Prince Jacques (who also died young), and Princess Louise (wife of Prince Carlos of Bourbon-Two Sicilies).
-His paternal grandparents were Prince Ferdinand, Duke of Orléans and Duchess Helene of Mecklenburg-Schwerin.
-Through his father, he was a great-grandson of Louis-Philippe I, King of the French and his wife Queen Maria Amalia of the Two Sicilies.
-His maternal grandparents were Infanta Luisa Fernanda of Spain and Prince Antoine, Duke of Montpensier (the youngest son of Louis-Philippe of France and Maria Amalia of Naples and Sicily).
-Career
 
-The Duke lived in England for many years, until "his reported indiscretions with regard to his recollections of Queen Victoria made it somewhat uncomfortable for him when in London."
-Others considered for the throne were Prince Ghika of Romania, Prince Karl, Duke of Urach, Prince Moritz of Schaumburg-Lippe, Prince Vittorio Emanuele, Count of Turin and Prince Arthur of Connaught.
-Personal life
+Juliana's wedding
 
-On 20 August 1921, Ferdinand married Doña María Isabel González de Olañeta e Ibarreta (22 April 1895 – 11 July 1958), 3rd Marchioness of Valdeterrazo and Grandee of Spain, 2nd
-She was the daughter of Don Ulpiano González de Olañeta y González de Ocampo, 2nd Marquis of Valdeterrazo and Grandee of Spain, and his wife Doña Isabel de Ibarreta y Uhagón.
-Ferdinand and María Isabel did not have children.
-The Duke of Montpensier died on 30 January 1924 at the Château de Randan in Randan in the French Republic.
+Preparations for the wedding of Queen Wilhelmina of the Netherlands' only child Crown Princess Juliana to the German Prince Bernhard of Lippe-Biesterfeld were underway in 1937 when a diplomatic scandal occurred.
+These included Woizlawa herself (being first cousins), Duchess Thyra of Mecklenburg-Schwerin (her second cousin), Grand Duchess Kira Kirillovna of Russia (her first cousin once removed), Princess Sophie of Saxe-Weimar-Eisenach (her second cousin), and two of Bernhard's first cousins, Princess Sieglinde and Princess Elisabeth of Lippe.
+Marriage and family
+
+On 15 September 1939, she married in Bad Doberan to her distant relative Heinrich I Prinz Reuss (1910−1982), the eldest son of Prince Heinrich XXXIV Reuss of Schleiz (1887-1956) and his wife and cousin, Princess Sophie Renata Reuss of Köstritz (1884-1968).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -109,39 +105,9 @@ The Duke of Montpensier died on 30 January 1924 at the Château de Randan in Ran
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -156,6 +122,23 @@ The Duke of Montpensier died on 30 January 1924 at the Château de Randan in Ran
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -173,6 +156,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -240,29 +238,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,6 +261,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -283,6 +281,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -291,17 +291,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -329,6 +331,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -344,117 +430,226 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2cfd0916-3876-4ed6-9e74-c309dd793e12)
- Call ID: 2cfd0916-3876-4ed6-9e74-c309dd793e12
+  AssignClass (0472ed8f-8330-46ee-b26a-4f6ab351f2a8)
+ Call ID: 0472ed8f-8330-46ee-b26a-4f6ab351f2a8
   Args:
-    type: :Man
-    source: Ferdinand_dOrleans_Duke_of_Montpensier
-  AssignClass (f0ad7d16-6a44-456f-b2b1-ce1e482bcdc7)
- Call ID: f0ad7d16-6a44-456f-b2b1-ce1e482bcdc7
+    source: :Woizlawa_Feodora_Princess_Reuss
+    type: :Woman
+  AddLiteral (868caefc-8a1d-4ebb-a704-77c1dff7bef4)
+ Call ID: 868caefc-8a1d-4ebb-a704-77c1dff7bef4
   Args:
-    type: :Person
-    source: Ferdinand_dOrleans_Duke_of_Montpensier
-  AddLiteral (11870cfb-170e-4aad-81f8-aa6a61b2379d)
- Call ID: 11870cfb-170e-4aad-81f8-aa6a61b2379d
-  Args:
-    source: Ferdinand_dOrleans_Duke_of_Montpensier
     relation: :hasBirthYear
-    literal_value: 1884
     literal_type: xsd:integer
-  AddLiteral (81dcedde-f1ed-4a93-8d64-e384ca7e6693)
- Call ID: 81dcedde-f1ed-4a93-8d64-e384ca7e6693
+    source: :Woizlawa_Feodora_Princess_Reuss
+    literal_value: 1918
+  AddLiteral (9904e05a-abfe-4e69-bbc4-961fbb9a6853)
+ Call ID: 9904e05a-abfe-4e69-bbc4-961fbb9a6853
   Args:
-    source: Ferdinand_dOrleans_Duke_of_Montpensier
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_value: 1924
-    literal_type: xsd:integer
-  AssignClass (2b86058c-83cd-4460-a463-1a5f763cab95)
- Call ID: 2b86058c-83cd-4460-a463-1a5f763cab95
+    source: :Woizlawa_Feodora_Princess_Reuss
+    literal_value: 2019
+  AssignClass (370ba2da-3067-449d-83b9-30e7ade5cc42)
+ Call ID: 370ba2da-3067-449d-83b9-30e7ade5cc42
   Args:
     type: :Man
-    source: Philippe_dOrleans_Count_of_Paris
-  AssignClass (590ede57-cfd7-4308-b4ac-4297b64d235e)
- Call ID: 590ede57-cfd7-4308-b4ac-4297b64d235e
+    source: :Frederick_Francis_II
+  AddLiteral (80fbdeb9-c24e-4233-aa88-2b5a9001609c)
+ Call ID: 80fbdeb9-c24e-4233-aa88-2b5a9001609c
   Args:
-    type: :Person
-    source: Philippe_dOrleans_Count_of_Paris
-  AssignClass (d46b0707-533d-4313-82f2-9fbfb3fa580b)
- Call ID: d46b0707-533d-4313-82f2-9fbfb3fa580b
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1823
+    source: :Frederick_Francis_II
+  AddLiteral (e00e7dcd-8e96-4dfe-8c88-9a9e37679846)
+ Call ID: e00e7dcd-8e96-4dfe-8c88-9a9e37679846
   Args:
+    source: :Frederick_Francis_II
+    literal_value: 1883
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AssignClass (33231689-0ec6-4710-8932-b3a6b582334b)
+ Call ID: 33231689-0ec6-4710-8932-b3a6b582334b
+  Args:
+    source: :Princess_Marie_of_Schwarzburg-Rudolstadt
     type: :Woman
-    source: Marie_Isabelle_dOrleans
-  AssignClass (486b7fac-ae6f-4834-8df3-e2c463c4ed88)
- Call ID: 486b7fac-ae6f-4834-8df3-e2c463c4ed88
+  AddLiteral (73e0af38-86b6-4763-8a8d-4adc3a6492f0)
+ Call ID: 73e0af38-86b6-4763-8a8d-4adc3a6492f0
   Args:
-    type: :Person
-    source: Marie_Isabelle_dOrleans
-  AddTriple (1a5e1cf9-1df8-4ad8-98dc-a8d0e37f465b)
- Call ID: 1a5e1cf9-1df8-4ad8-98dc-a8d0e37f465b
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1850
+    source: :Princess_Marie_of_Schwarzburg-Rudolstadt
+  AddLiteral (d9816ff1-8dcc-46f5-ac66-d26dd0d6fe0e)
+ Call ID: d9816ff1-8dcc-46f5-ac66-d26dd0d6fe0e
   Args:
-    source: Ferdinand_dOrleans_Duke_of_Montpensier
+    source: :Princess_Marie_of_Schwarzburg-Rudolstadt
+    literal_value: 1922
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddTriple (307317ce-f8ee-4674-9802-eb0397754b65)
+ Call ID: 307317ce-f8ee-4674-9802-eb0397754b65
+  Args:
+    target: :Woizlawa_Father
+    source: :Woizlawa_Feodora_Princess_Reuss
     relation: :hasFather
-    target: Philippe_dOrleans_Count_of_Paris
-  AddTriple (c050a5d0-6cfb-48d9-ac21-d856f0cd5d35)
- Call ID: c050a5d0-6cfb-48d9-ac21-d856f0cd5d35
+  AssignClass (b69032a3-2e58-4da0-8c51-508f42a47e87)
+ Call ID: b69032a3-2e58-4da0-8c51-508f42a47e87
   Args:
-    source: Ferdinand_dOrleans_Duke_of_Montpensier
+    type: :Man
+    source: :Woizlawa_Father
+  AddTriple (19b8d66c-be01-41b8-9ac8-b6d35b5af1ec)
+ Call ID: 19b8d66c-be01-41b8-9ac8-b6d35b5af1ec
+  Args:
+    relation: :isFatherOf
+    target: :Woizlawa_Father
+    source: :Frederick_Francis_II
+  AddTriple (016c511c-96fe-4251-b707-b0bb4a2087a2)
+ Call ID: 016c511c-96fe-4251-b707-b0bb4a2087a2
+  Args:
+    relation: :isMotherOf
+    source: :Princess_Marie_of_Schwarzburg-Rudolstadt
+    target: :Woizlawa_Father
+  AssignClass (8cb65948-d62c-485a-b91b-023901b92539)
+ Call ID: 8cb65948-d62c-485a-b91b-023901b92539
+  Args:
+    source: :Viktoria_Feodora_Reuss_zu_Schleiz
+    type: :Woman
+  AddLiteral (b3bef963-7cfd-404f-bc12-925f245fbefb)
+ Call ID: b3bef963-7cfd-404f-bc12-925f245fbefb
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: :Viktoria_Feodora_Reuss_zu_Schleiz
+    literal_value: 1889
+  AddLiteral (26e8f880-ed67-4f0c-85ea-e788296da0fa)
+ Call ID: 26e8f880-ed67-4f0c-85ea-e788296da0fa
+  Args:
+    source: :Viktoria_Feodora_Reuss_zu_Schleiz
+    literal_value: 1918
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddTriple (ac809bda-1a7a-4b99-954b-a4ad16a5a141)
+ Call ID: ac809bda-1a7a-4b99-954b-a4ad16a5a141
+  Args:
+    source: :Woizlawa_Feodora_Princess_Reuss
+    target: :Viktoria_Feodora_Reuss_zu_Schleiz
     relation: :hasMother
-    target: Marie_Isabelle_dOrleans
-  AssignClass (39bd9046-9330-4bcc-a3e1-3316bbaa6171)
- Call ID: 39bd9046-9330-4bcc-a3e1-3316bbaa6171
+  AssignClass (76e8fc95-5622-453d-8ba4-654977b6bee7)
+ Call ID: 76e8fc95-5622-453d-8ba4-654977b6bee7
+  Args:
+    source: :Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz
+    type: :Man
+  AssignClass (53891ece-8144-4f71-9201-96b541f25a84)
+ Call ID: 53891ece-8144-4f71-9201-96b541f25a84
+  Args:
+    source: :Princess_Elise_of_Hohenlohe-Langenburg
+    type: :Woman
+  AddTriple (908815b3-8b90-4a0c-8a87-ab88a98d13c0)
+ Call ID: 908815b3-8b90-4a0c-8a87-ab88a98d13c0
+  Args:
+    relation: :hasFather
+    target: :Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz
+    source: :Viktoria_Feodora_Reuss_zu_Schleiz
+  AddTriple (0f93e5f4-439d-4733-b5b5-83232e9ef318)
+ Call ID: 0f93e5f4-439d-4733-b5b5-83232e9ef318
+  Args:
+    relation: :hasMother
+    source: :Viktoria_Feodora_Reuss_zu_Schleiz
+    target: :Princess_Elise_of_Hohenlohe-Langenburg
+  AssignClass (62ad7717-6edf-44a1-8196-850f65dfc1d1)
+ Call ID: 62ad7717-6edf-44a1-8196-850f65dfc1d1
   Args:
     type: :Woman
-    source: Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta
-  AssignClass (ba61e95b-3f0a-4d5f-857c-3708d666d406)
- Call ID: ba61e95b-3f0a-4d5f-857c-3708d666d406
+    source: :Princess_Feodora_of_Leiningen
+  AddTriple (2f2f0071-c455-477f-8526-0f40e6c15710)
+ Call ID: 2f2f0071-c455-477f-8526-0f40e6c15710
   Args:
-    type: :Person
-    source: Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta
-  AddLiteral (8c6a6efc-0b1e-44ea-8795-13fc96f22e1a)
- Call ID: 8c6a6efc-0b1e-44ea-8795-13fc96f22e1a
+    source: :Princess_Elise_of_Hohenlohe-Langenburg
+    target: :Princess_Feodora_of_Leiningen
+    relation: :hasMother
+  AssignClass (3b0706df-4c7c-40a1-9c78-c6936e7a7814)
+ Call ID: 3b0706df-4c7c-40a1-9c78-c6936e7a7814
   Args:
-    source: Ferdinand_dOrleans_Duke_of_Montpensier
+    type: :Man
+    source: :Heinrich_I_Prinz_Reuss
+  AddLiteral (a876b194-71fd-4651-a20e-258250a8dcae)
+ Call ID: a876b194-71fd-4651-a20e-258250a8dcae
+  Args:
+    source: :Heinrich_I_Prinz_Reuss
+    literal_value: 1910
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (b4e6f06f-11f8-4dca-a953-86021c8d8150)
+ Call ID: b4e6f06f-11f8-4dca-a953-86021c8d8150
+  Args:
+    literal_value: 1982
+    source: :Heinrich_I_Prinz_Reuss
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddTriple (1837013e-95d7-4e01-8ccc-bec5c40aecfa)
+ Call ID: 1837013e-95d7-4e01-8ccc-bec5c40aecfa
+  Args:
     relation: :hasMarriageYear
-    literal_value: 1921
-    literal_type: xsd:integer
-  AddTriple (0b35be52-11a2-4d74-87fb-73b6dd726b6a)
- Call ID: 0b35be52-11a2-4d74-87fb-73b6dd726b6a
+    target: :Heinrich_I_Prinz_Reuss
+    source: :Woizlawa_Feodora_Princess_Reuss
+  AddLiteral (c2a421a0-3f61-4864-9912-ad2b69647b62)
+ Call ID: c2a421a0-3f61-4864-9912-ad2b69647b62
   Args:
-    source: Ferdinand_dOrleans_Duke_of_Montpensier
-    relation: :hasRelation
-    target: Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta
-  AssignClass (6c4cad39-ae01-4812-8a64-30746897d362)
- Call ID: 6c4cad39-ae01-4812-8a64-30746897d362
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1939
+    source: :Woizlawa_Feodora_Princess_Reuss
+  AssignClass (21237523-ad4e-4ae4-9a12-6aec2574d1b3)
+ Call ID: 21237523-ad4e-4ae4-9a12-6aec2574d1b3
   Args:
     type: :Man
-    source: Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo
-  AssignClass (9070723a-8441-487c-9dba-392d063d7898)
- Call ID: 9070723a-8441-487c-9dba-392d063d7898
+    source: :Prince_Heinrich_XXXIV_Reuss_of_Schleiz
+  AddLiteral (bd78f6ce-598d-4954-8788-20607362c507)
+ Call ID: bd78f6ce-598d-4954-8788-20607362c507
   Args:
-    type: :Person
-    source: Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo
-  AssignClass (44ee7455-a689-4a40-873e-778c2d767d33)
- Call ID: 44ee7455-a689-4a40-873e-778c2d767d33
+    source: :Prince_Heinrich_XXXIV_Reuss_of_Schleiz
+    literal_value: 1887
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (bea3b9e6-aa3b-4a49-bb1c-457250c4e888)
+ Call ID: bea3b9e6-aa3b-4a49-bb1c-457250c4e888
   Args:
+    literal_value: 1956
+    source: :Prince_Heinrich_XXXIV_Reuss_of_Schleiz
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AssignClass (0d0733af-b460-4c39-9f01-53c65cf3900f)
+ Call ID: 0d0733af-b460-4c39-9f01-53c65cf3900f
+  Args:
+    source: :Princess_Sophie_Renata_Reuss_of_Köstritz
     type: :Woman
-    source: Isabel_de_Ibarreta_y_Uhagon
-  AssignClass (32e0efa1-95f3-4054-a5fb-81c326e79051)
- Call ID: 32e0efa1-95f3-4054-a5fb-81c326e79051
+  AddLiteral (73adc1ad-4424-4047-8576-8d80ae6c177f)
+ Call ID: 73adc1ad-4424-4047-8576-8d80ae6c177f
   Args:
-    type: :Person
-    source: Isabel_de_Ibarreta_y_Uhagon
-  AddTriple (54def5e9-81d7-4713-ba22-f7937815b4bf)
- Call ID: 54def5e9-81d7-4713-ba22-f7937815b4bf
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1884
+    source: :Princess_Sophie_Renata_Reuss_of_Köstritz
+  AddLiteral (1c825278-1f9a-4e94-9a02-01da8332b6a0)
+ Call ID: 1c825278-1f9a-4e94-9a02-01da8332b6a0
   Args:
-    source: Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta
+    literal_value: 1968
+    source: :Princess_Sophie_Renata_Reuss_of_Köstritz
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddTriple (9cfa5712-8ab3-41aa-b967-6fb7166834d2)
+ Call ID: 9cfa5712-8ab3-41aa-b967-6fb7166834d2
+  Args:
+    target: :Prince_Heinrich_XXXIV_Reuss_of_Schleiz
+    source: :Heinrich_I_Prinz_Reuss
     relation: :hasFather
-    target: Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo
-  AddTriple (2ca7c75b-7bcc-405f-a2e4-24844fb9f4e8)
- Call ID: 2ca7c75b-7bcc-405f-a2e4-24844fb9f4e8
+  AddTriple (39b5d601-e2f9-4b49-9055-c22006d04b03)
+ Call ID: 39b5d601-e2f9-4b49-9055-c22006d04b03
   Args:
-    source: Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta
     relation: :hasMother
-    target: Isabel_de_Ibarreta_y_Uhagon
-  Finish (77337302-f847-4970-a635-e10133a4c16f)
- Call ID: 77337302-f847-4970-a635-e10133a4c16f
+    target: :Princess_Sophie_Renata_Reuss_of_Köstritz
+    source: :Heinrich_I_Prinz_Reuss
+  Finish (bdfdd478-fe64-40b9-98f7-7c6730ab0f27)
+ Call ID: bdfdd478-fe64-40b9-98f7-7c6730ab0f27
   Args:

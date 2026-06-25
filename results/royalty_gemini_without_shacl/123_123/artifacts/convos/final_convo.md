@@ -69,37 +69,28 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-King Albert IIQueen Paola
+James Edward Lascelles (born 5 October 1953) is an English musician and the second son of the 7th Earl of Harewood and his first wife, Marion.
+Lascelles is a second cousin to King Charles III.
+Music
 
+When young, Lascelles had classical piano and drum lessons, and claims that "John Tavener 'taught' him to improvise" by performing duets on a church organ.
+Global Village Trucking Company
 
-Princess Astrid of Belgium, Archduchess of Austria-Este (born 5 June 1962), is the second child and first daughter of King Albert II and Queen Paola, and the younger sister to the current Belgian monarch, King Philippe.
-She is married to Prince Lorenz of Belgium, head of the Austria-Este branch of the House of Habsburg-Lorraine, and is fifth in line of succession to the Belgian throne.
-Biography
+Lascelles was a co-founder of the Global Village Trucking Company, known to its fans as "The Globs", in the early 1970s.
+Later career
 
-Princess Astrid was born one day before her father's 28th birthday at the Belvédère Château in Laeken, northern Brussels, and was named after her late paternal grandmother, Astrid of Sweden, King Leopold III's popular first wife, who had died in 1935 in a car accident aged 29.
-Princess Astrid's godparents were her uncle Fabrizio, Prince Ruffo di Calabria-Santapau, 7th Duke di Guardia Lombarda, and her aunt Hereditary Grand Duchess Joséphine-Charlotte of Luxembourg.
-Marriage and issue
-
-Princess Astrid married Archduke Lorenz of Austria-Este, subsequently head of the House of Austria-Este, on 22 September 1984 at the Church of Our Lady of Victories at the Sablon in Brussels.
-Lorenz is the eldest son of Robert, Archduke of Austria-Este (1915–1996) and Princess Margherita of Savoy-Aosta (1930–2022).
-Princess Astrid and Prince Lorenz have five children:
-
-
-Royal role
-
-Astrid was formerly President of the Belgian Red Cross, a position which ended on 31 December 2007.
-The princess is also a colonel in the Belgian Medical Service of the Belgian Armed Forces.
-In April 2015, the Princess took over the Prince Albert Fund from her father King Albert.
-Special Envoy
-
-Princess Astrid has been for many years an advocate for landmine survivors rights, participating actively in the work of the Anti-Personnel Mine Ban Convention, also known as the Ottawa Treaty, since Belgium joined in 1998.
-In 2013, the Princess was named Special Envoy of the convention, and has promoted the acceptance of a global ban on landmines and promoted the rights of survivors in various UN meetings.
+Lascelles then became a session musician, until in 1980 he joined The Breakfast Band, a jazz/funk band, which released two albums, Dolphin Ride and Waters Edge, and had a dance hit, "L.A. 14".
+Lascelles played keyboards, synthesisers, and percussion for Cockney Rebel between 2000 and 2023, and continues to perform this role with  his own world music band, Talking Spirits, as of 2024.
+Lascelles also works with disaffected inner-city children.
+As of 2011 Lascelles was appearing with Mike Storey as "The Ivory Brothers".
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +106,9 @@ In 2013, the Princess was named Special Envoy of the convention, and has promote
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +123,23 @@ In 2013, the Princess was named Special Envoy of the convention, and has promote
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +157,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +239,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +262,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +282,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +292,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +332,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,142 +431,71 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e40ca95a-a56f-4840-aa5f-8c228efd6f68)
- Call ID: e40ca95a-a56f-4840-aa5f-8c228efd6f68
+  AssignClass (916657a8-14aa-43f2-a001-81c3098a7e5b)
+ Call ID: 916657a8-14aa-43f2-a001-81c3098a7e5b
   Args:
-    type: :Woman
-    source: Princess_Astrid_of_Belgium
-  AssignClass (20190a1e-99f9-4d78-8cf6-ad0937da8dc7)
- Call ID: 20190a1e-99f9-4d78-8cf6-ad0937da8dc7
-  Args:
-    source: King_Albert_II
+    source: James_Edward_Lascelles
     type: :Man
-  AssignClass (143821b0-b7df-4a06-b7d6-620d002ec86c)
- Call ID: 143821b0-b7df-4a06-b7d6-620d002ec86c
+  AssignClass (eead73f0-4e67-49f8-acba-cb60e5eba6da)
+ Call ID: eead73f0-4e67-49f8-acba-cb60e5eba6da
   Args:
-    type: :Woman
-    source: Queen_Paola
-  AssignClass (17d698a9-5529-4177-80be-856a60c1a7a5)
- Call ID: 17d698a9-5529-4177-80be-856a60c1a7a5
+    type: :Person
+    source: James_Edward_Lascelles
+  AddLiteral (76fcedcc-b9e7-466f-89d0-f9e15c4e6bab)
+ Call ID: 76fcedcc-b9e7-466f-89d0-f9e15c4e6bab
   Args:
-    source: King_Philippe
-    type: :Man
-  AssignClass (92b4cbb3-4a4e-4e32-9c69-a7d2c0a06d2b)
- Call ID: 92b4cbb3-4a4e-4e32-9c69-a7d2c0a06d2b
-  Args:
-    type: :Man
-    source: Prince_Lorenz_of_Belgium
-  AssignClass (a55f8848-2de2-49f4-a6a2-415a682ded28)
- Call ID: a55f8848-2de2-49f4-a6a2-415a682ded28
-  Args:
-    source: Astrid_of_Sweden
-    type: :Woman
-  AssignClass (43628a45-5ee0-459f-90f9-e57e1b4684d1)
- Call ID: 43628a45-5ee0-459f-90f9-e57e1b4684d1
-  Args:
-    type: :Man
-    source: King_Leopold_III
-  AssignClass (57dce328-774f-4169-85d2-1388860fc2bc)
- Call ID: 57dce328-774f-4169-85d2-1388860fc2bc
-  Args:
-    type: :Man
-    source: Robert_Archduke_of_Austria-Este
-  AssignClass (3ec5e5e8-8088-46ae-96e7-6eec75e33a9e)
- Call ID: 3ec5e5e8-8088-46ae-96e7-6eec75e33a9e
-  Args:
-    type: :Woman
-    source: Princess_Margherita_of_Savoy-Aosta
-  AddLiteral (2439dc5f-525b-4978-9e08-eec586d28197)
- Call ID: 2439dc5f-525b-4978-9e08-eec586d28197
-  Args:
-    literal_value: 1962
-    source: Princess_Astrid_of_Belgium
     literal_type: xsd:integer
+    literal_value: 1953
+    source: James_Edward_Lascelles
     relation: :hasBirthYear
-  AddTriple (327bab42-f10a-49b4-8cb5-f81f2f2e7bb9)
- Call ID: 327bab42-f10a-49b4-8cb5-f81f2f2e7bb9
+  AssignClass (dac5c6e3-f698-42c3-8237-4696d75b67b8)
+ Call ID: dac5c6e3-f698-42c3-8237-4696d75b67b8
   Args:
+    type: :Man
+    source: 7th_Earl_of_Harewood
+  AssignClass (67e66c4f-38b1-427d-b790-9d9a6f365ffb)
+ Call ID: 67e66c4f-38b1-427d-b790-9d9a6f365ffb
+  Args:
+    source: 7th_Earl_of_Harewood
+    type: :Person
+  AssignClass (cba38b8b-c6f7-4a38-849a-73f806e84123)
+ Call ID: cba38b8b-c6f7-4a38-849a-73f806e84123
+  Args:
+    source: Marion
+    type: :Woman
+  AssignClass (e4a3139c-80d2-4807-86dc-84341ac53854)
+ Call ID: e4a3139c-80d2-4807-86dc-84341ac53854
+  Args:
+    type: :Person
+    source: Marion
+  AddTriple (ade04c9f-d8f6-44a8-b559-a9489fab414a)
+ Call ID: ade04c9f-d8f6-44a8-b559-a9489fab414a
+  Args:
+    source: James_Edward_Lascelles
     relation: :hasFather
-    target: King_Albert_II
-    source: Princess_Astrid_of_Belgium
-  AddTriple (5d0ae58e-fe0f-43a0-a798-b67766727bfd)
- Call ID: 5d0ae58e-fe0f-43a0-a798-b67766727bfd
+    target: 7th_Earl_of_Harewood
+  AddTriple (1c8154ea-fbac-4733-bfcf-5e7757d30829)
+ Call ID: 1c8154ea-fbac-4733-bfcf-5e7757d30829
   Args:
-    target: Queen_Paola
-    source: Princess_Astrid_of_Belgium
+    target: Marion
     relation: :hasMother
-  AddTriple (ace979cd-c07a-4291-81bc-b0027a9dcd29)
- Call ID: ace979cd-c07a-4291-81bc-b0027a9dcd29
+    source: James_Edward_Lascelles
+  AssignClass (2da36099-664a-453f-8b71-0f14fe4d4c06)
+ Call ID: 2da36099-664a-453f-8b71-0f14fe4d4c06
   Args:
-    source: King_Philippe
-    target: Princess_Astrid_of_Belgium
-    relation: :hasSister
-  AddTriple (6cbb3a44-a809-4540-a789-59eb0697e3d3)
- Call ID: 6cbb3a44-a809-4540-a789-59eb0697e3d3
+    source: King_Charles_III
+    type: :Man
+  AssignClass (6302cd33-09fa-45aa-b2ea-c31833bd2e41)
+ Call ID: 6302cd33-09fa-45aa-b2ea-c31833bd2e41
   Args:
-    relation: :hasBrother
-    source: Princess_Astrid_of_Belgium
-    target: King_Philippe
-  AddTriple (dde40879-60da-41fa-aee0-2791eddb0601)
- Call ID: dde40879-60da-41fa-aee0-2791eddb0601
+    source: King_Charles_III
+    type: :Person
+  AddTriple (b7213cca-4bea-4a64-b15c-c281ec414dc1)
+ Call ID: b7213cca-4bea-4a64-b15c-c281ec414dc1
   Args:
-    relation: :hasFather
-    target: Robert_Archduke_of_Austria-Este
-    source: Prince_Lorenz_of_Belgium
-  AddTriple (b5e65b32-bb67-43c2-80cc-53cc69072729)
- Call ID: b5e65b32-bb67-43c2-80cc-53cc69072729
-  Args:
-    relation: :hasMother
-    source: Prince_Lorenz_of_Belgium
-    target: Princess_Margherita_of_Savoy-Aosta
-  AddLiteral (515f8fca-7380-42ec-9fb5-c85e139a143d)
- Call ID: 515f8fca-7380-42ec-9fb5-c85e139a143d
-  Args:
-    literal_type: xsd:integer
-    source: Princess_Astrid_of_Belgium
-    literal_value: 1984
-    relation: :hasMarriageYear
-  AddTriple (3871346f-a0dd-4989-9272-92bbc0eaccf9)
- Call ID: 3871346f-a0dd-4989-9272-92bbc0eaccf9
-  Args:
-    relation: :hasFather
-    source: Astrid_of_Sweden
-    target: King_Leopold_III
-  AddLiteral (9868580d-f04f-47de-828f-981e79150bba)
- Call ID: 9868580d-f04f-47de-828f-981e79150bba
-  Args:
-    source: Astrid_of_Sweden
-    literal_value: 1935
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddLiteral (5f711a77-ea62-41d2-9870-f9a44abb4e75)
- Call ID: 5f711a77-ea62-41d2-9870-f9a44abb4e75
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1915
-    source: Robert_Archduke_of_Austria-Este
-    relation: :hasBirthYear
-  AddLiteral (4c4d0329-a062-4b4a-a1de-3efc00daa57a)
- Call ID: 4c4d0329-a062-4b4a-a1de-3efc00daa57a
-  Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: Robert_Archduke_of_Austria-Este
-    literal_value: 1996
-  AddLiteral (937094ad-4b39-4c14-a98c-78c3caa89866)
- Call ID: 937094ad-4b39-4c14-a98c-78c3caa89866
-  Args:
-    relation: :hasBirthYear
-    source: Princess_Margherita_of_Savoy-Aosta
-    literal_value: 1930
-    literal_type: xsd:integer
-  AddLiteral (568e4299-ce9c-403e-9545-19d29cadd0d6)
- Call ID: 568e4299-ce9c-403e-9545-19d29cadd0d6
-  Args:
-    source: Princess_Margherita_of_Savoy-Aosta
-    literal_value: 2022
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  Finish (0329fde9-bb53-4733-9f1e-d6ee61d13963)
- Call ID: 0329fde9-bb53-4733-9f1e-d6ee61d13963
+    relation: :isBloodrelationOf
+    source: James_Edward_Lascelles
+    target: King_Charles_III
+  Finish (bc5a031d-b539-4b7d-8aba-a50053bac027)
+ Call ID: bc5a031d-b539-4b7d-8aba-a50053bac027
   Args:

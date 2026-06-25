@@ -1,0 +1,328 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:George_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isUncleOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederik_IX_of_Denmark ;
+    :hasChild data:Anne-Marie_of_Denmark ;
+    :hasDaughter data:Anne-Marie_of_Denmark ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:George_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :isAncestorOf data:Anne-Marie_of_Denmark ;
+    :isBloodrelationOf data:Frederik_IX_of_Denmark ;
+    :isBrotherOf data:Frederik_IX_of_Denmark ;
+    :isFatherOf data:Anne-Marie_of_Denmark ;
+    :isParentOf data:Anne-Marie_of_Denmark ;
+    :isSiblingOf data:Frederik_IX_of_Denmark ;
+    :isUncleOf data:Anne-Marie_of_Denmark .
+
+data:Anne-Marie_of_Denmark a :Person,
+        :Woman ;
+    :hasAncestor data:Frederik_IX_of_Denmark ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasParent data:Frederik_IX_of_Denmark ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:George_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Anne-Marie_of_Denmark ;
+    :isBloodrelationOf data:Anne-Marie_of_Denmark ;
+    :isChildOf data:Frederik_IX_of_Denmark ;
+    :isDaughterOf data:Frederik_IX_of_Denmark ;
+    :isSiblingOf data:Anne-Marie_of_Denmark ;
+    :isSisterOf data:Anne-Marie_of_Denmark .
+
+data:Ernest_Augustus_Duke_of_Brunswick a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_Augustus_Duke_of_Brunswick ;
+    :hasChild data:Frederica_of_Greece ;
+    :hasDaughter data:Frederica_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:George_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :isAncestorOf data:Constantine_II,
+        data:Frederica_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isBloodrelationOf data:Ernest_Augustus_Duke_of_Brunswick ;
+    :isBrotherOf data:Ernest_Augustus_Duke_of_Brunswick ;
+    :isFatherOf data:Frederica_of_Greece ;
+    :isParentOf data:Frederica_of_Greece ;
+    :isSiblingOf data:Ernest_Augustus_Duke_of_Brunswick ;
+    :isUncleOf data:Frederica_of_Greece .
+
+data:Victoria_Louise_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Frederica_of_Greece ;
+    :hasDaughter data:Frederica_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:George_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :isAncestorOf data:Constantine_II,
+        data:Frederica_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isAuntOf data:Frederica_of_Greece ;
+    :isBloodrelationOf data:Victoria_Louise_of_Prussia ;
+    :isMotherOf data:Frederica_of_Greece ;
+    :isParentOf data:Frederica_of_Greece ;
+    :isSiblingOf data:Victoria_Louise_of_Prussia ;
+    :isSisterOf data:Victoria_Louise_of_Prussia .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasChild data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :hasDaughter data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:George_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSon data:Constantine_II ;
+    :isAncestorOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isBloodrelationOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isBrotherOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isFatherOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isParentOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isSiblingOf data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :isUncleOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece .
+
+data:Constantine_II a :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Greece,
+        data:Paul_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:Constantine_II ;
+    :hasDeathYear 2023 ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Frederica_of_Greece ;
+    :hasParent data:Frederica_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:George_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isBloodrelationOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isBrotherOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isChildOf data:Frederica_of_Greece,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isSonOf data:Frederica_of_Greece,
+        data:Paul_of_Greece .
+
+data:Irene_of_Greece a :Person,
+        :Woman ;
+    :hasAncestor data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Greece,
+        data:Paul_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :hasBrother data:Constantine_II ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Greece ;
+    :hasParent data:Frederica_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:George_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isBloodrelationOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isChildOf data:Frederica_of_Greece,
+        data:Paul_of_Greece ;
+    :isDaughterOf data:Frederica_of_Greece,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isSisterOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece .
+
+data:Sofia_of_Greece a :Person,
+        :Woman ;
+    :hasAncestor data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Greece,
+        data:Paul_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :hasBrother data:Constantine_II ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Greece ;
+    :hasParent data:Frederica_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:George_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isBloodrelationOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isChildOf data:Frederica_of_Greece,
+        data:Paul_of_Greece ;
+    :isDaughterOf data:Frederica_of_Greece,
+        data:Paul_of_Greece ;
+    :isSiblingOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isSisterOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece .
+
+data:Frederica_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Victoria_Louise_of_Prussia ;
+    :hasChild data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :hasDaughter data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Anne-Marie_of_Denmark,
+        data:Constantine_II,
+        data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Frederica_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:George_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Greece,
+        data:Victoria_Louise_of_Prussia ;
+    :hasSister data:Frederica_of_Greece ;
+    :hasSon data:Constantine_II ;
+    :isAncestorOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isAuntOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isBloodrelationOf data:Frederica_of_Greece ;
+    :isChildOf data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Victoria_Louise_of_Prussia ;
+    :isDaughterOf data:Ernest_Augustus_Duke_of_Brunswick,
+        data:Victoria_Louise_of_Prussia ;
+    :isMotherOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isParentOf data:Constantine_II,
+        data:Irene_of_Greece,
+        data:Sofia_of_Greece ;
+    :isSiblingOf data:Frederica_of_Greece ;
+    :isSisterOf data:Frederica_of_Greece .
+

@@ -69,51 +69,51 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Heinrich of Prussia (German: Albert Wilhelm Heinrich; 14 August 1862 – 20 April 1929) was a younger brother of German Emperor and King of Prussia Wilhelm II and a Prince of Prussia.
-Biography
+Georg Friedrich Prinz von Preussen (born 10 June 1976, as Georg Friedrich Ferdinand Prinz von Preußen) is a German heir who is the current head of the Prussian branch of the House of Hohenzollern, a dynasty that ruled over the German Empire and the Kingdom of Prussia until near the end of World War I.
+He is the great-great-grandson of Wilhelm II, the last German Emperor and last King of Prussia, who abdicated and went into exile upon Germany's defeat in World War I in 1918.
+Education and career
 
-Born in Berlin, Prince Heinrich was the third child and second son of eight children born to Crown Prince Frederick William (later Emperor Frederick III), and Victoria, Princess Royal (later Empress Victoria and in widowhood Empress Frederick), eldest daughter of the British Queen Victoria.
-Henry was three years younger than his brother, the future Emperor William II (born 27 January 1859).
-He was born on the same day as King Frederick William I "Soldier-King" of Prussia.
-Early commands
+Georg Friedrich is the only son and eldest child of Louis Ferdinand Prinz von Preussen (1944–1977) and Countess Donata of Castell-Rüdenhausen (1950–2015).
+Born into a mediatised princely family, his mother later became Duchess Donata of Oldenburg when she married secondly Duke Friedrich August of Oldenburg, who had previously been married to her sister-in-law Princess Marie Cécile of Prussia.
+Georg Friedrich earned his degree in business economics at the Freiberg University of Mining and Technology.
+Georg Friedrich works for a company specialising in helping universities to bring their innovations to market.
+He also administered the Princess Kira of Prussia Foundation, founded by his grandmother Grand Duchess Kira of Russia in 1952, now administered by his wife.
+Until 30 December 2025, Georg Friedrich owned a two-thirds share of his family's original seat, Hohenzollern Castle, with the head of the Swabian branch, Karl Friedrich, Prince of Hohenzollern, owning the remaining third.
+In an agreement taking effect on 31 December 2025, Karl Friedrich transferred his share to Georg Friedrich, giving the latter full responsibility for the operation, maintenance and cultural development of the castle.
+Georg Friedrich continues to claim compensation for land and palaces in Berlin expropriated from his family, a claim begun in March 1991 by his grandfather Prince Louis Ferdinand of Prussia under the Compensation Act (EALG).
+House of Hohenzollern
 
-As a Prussian prince, Henry quickly achieved command.
-Squadron commands
-
-From 1897, Prince Henry commanded several naval task forces; these included an improvised squadron that took part with the East Asia Squadron in consolidating and securing the German hold on the region of Kiaochow and the port of Tsingtao in 1898.
-The prince's success was more of the diplomatic than the military variety; he became the first European potentate ever to be received at the Chinese imperial court.
-From 1906 to 1909, Henry was commander of the High Seas Fleet.
-I
-
-At the beginning of World War I, Prince Henry was named as Commander-in-Chief of the Baltic Fleet.
-After the end of hostilities with Russia, his mission was ended, and Prince Henry simply left active duty.
-With the war's end and the dissolution of the monarchy in Germany, Prince Henry left the navy.
+Georg Friedrich succeeded his grandfather, Louis Ferdinand, as Head of the Royal House of Prussia, a branch of the House of Hohenzollern, on 26 September 1994.
+His position as sole heir to the estate of his grandfather was challenged by his uncles, Friedrich Wilhelm and Michael, who filed a lawsuit claiming that, despite their renunciations as dynasts at the time of their marriages, the loss of their inheritance rights based on their selection of spouse was discriminatory and unconstitutional.
+However, the Federal Court of Justice of Germany overturned the original rulings in favour of Georg Friedrich's uncles, the case being remanded to the courts at Hechingen and Stuttgart.
+This time both courts ruled in favour of Georg Friedrich.
+His uncles then took their case to the Federal Constitutional Court of Germany which overruled the previous court rulings in Georg Friedrich's favour, on 22 March 2004.
+On 19 October 2005, a German regional court ruled that Georg Friedrich was indeed the principal heir of his grandfather, Louis Ferdinand (who was the primary beneficiary of the trust set up for the estate of Wilhelm II), but also concluded that each of the children of Louis Ferdinand was entitled to a portion of the Prussian inheritance.
 Family
 
-On 24 May 1888, Henry married Princess Irene of Hesse and by Rhine, his first cousin.
-His dying father, German Emperor Frederick III and his mother Empress Victoria were in attendance.
-The marriage produced three children:
+In 2011, Georg Friedrich married Princess Sophie of Isenburg.
+On 20 January 2013, Georg Friedrich's wife, Sophie, gave birth to twin sons in Bremen, Carl Friedrich Franz Alexander and Louis Ferdinand Christian Albrecht.
+Carl Friedrich, the elder of the two, is his father's heir apparent.
+On 17 November 2016, Sophie gave birth to Heinrich Albert Johann Georg, their fourth child.
+Property claims
+
+In 2014, Georg Friedrich filed a claim on the property of the Huis Doorn, where Kaiser Wilhelm II spent his last years after abdication, but this was rejected by Minister of Education, Culture and Science Jet Bussemaker.
+In mid-2019 it was revealed that, since 2014, Georg Friedrich had filed claims for permanent right of residency for his family in Cecilienhof, or one of two other former Hohenzollern palaces in Potsdam, as well as return of the family library, 266 paintings, an imperial crown and sceptre, and the letters of Empress Augusta Victoria.
+This sparked a public debate about the legitimacy of these claims and the role of the Hohenzollern during and before the Nazi regime in Germany, specifically Crown Prince Wilhelm's involvement.
+On 9 March 2023, Georg Friedrich dropped the suit, hoping that doing so would "open the way for an unencumbered historical debate on the role of my family in the 20th Century following the end of the monarchy.
+"
 
 
-Their sons Waldemar and Heinrich were both hemophiliacs, a disease which they inherited through Irene from the maternal grandmother of both of their parents, Queen Victoria, who was a carrier.
-Personality and private life
-
-Henry received one of the first pilot's licenses in Germany, and was judged a spirited and excellent seaman.
-A yachting enthusiast, Prince Henry became one of the first members of the Yacht Club of Kiel, established by a group of naval officers in 1887, and quickly became the club's patron.
-Henry was interested in motor cars as well and supposedly invented a windshield wiper and, according to other sources, the car horn.
-In his honor, the Prinz-Heinrich-Fahrt (Prince Heinrich Tour) was established in 1908, like the earlier Kaiserpreis a precursor to the German Grand Prix.
-Henry and his brother William gave patronage to the Kaiserlicher Automobilclub (Imperial Automobile Club).
-From 1911 to 1914 the British car makers Vauxhall Motors produced a model, the C-10, which was called the "Vauxhall Prince Henry" in his honour after initially being built for participation in the 1911 race.
-After the German Revolution, Henry lived with his family in Hemmelmark near Eckernförde, in Schleswig-Holstein.
-He popularized the Prince Henry cap, which is still worn, especially by older sailors.
-In 1899, Henry received an honorary doctorate (Doctor of Engineering honoris causa) from the Technische Hochschule in Charlottenburg (now Technische Universität Berlin) .
-Prince Henry died of throat cancer on 20 April 1929 in Hemmelmark.
+In June 2019, a claim made by Georg Friedrich that Rheinfels Castle be returned to the Hohenzollern family was dismissed by a court.
+}} Media related to Georg Friedrich, Prince of Prussia at Wikimedia Commons
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -129,39 +129,9 @@ Prince Henry died of throat cancer on 20 April 1929 in Hemmelmark.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -176,6 +146,23 @@ Prince Henry died of throat cancer on 20 April 1929 in Hemmelmark.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -193,6 +180,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,29 +262,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -291,6 +285,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -303,6 +305,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -311,17 +315,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -349,6 +355,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -364,474 +454,268 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8e31a816-6035-410f-94d7-35ff891a2809)
- Call ID: 8e31a816-6035-410f-94d7-35ff891a2809
+  AssignClass (f4a233bd-c268-4c70-8723-6c7df716f545)
+ Call ID: f4a233bd-c268-4c70-8723-6c7df716f545
   Args:
     type: :Man
-    source: :PrinceHeinrichOfPrussia
-  AssignClass (27fafe19-c048-4ce2-acaf-0b294b2a08e1)
- Call ID: 27fafe19-c048-4ce2-acaf-0b294b2a08e1
+    source: Georg_Friedrich_Prinz_von_Preussen
+  AssignClass (aa427af7-f9ba-42b0-8fcc-444b387d6530)
+ Call ID: aa427af7-f9ba-42b0-8fcc-444b387d6530
   Args:
-    source: :PrinceHeinrichOfPrussia
+    source: Georg_Friedrich_Prinz_von_Preussen
     type: :Person
-  AssignClass (55459d37-5828-4f23-bdd7-1ed4164593ff)
- Call ID: 55459d37-5828-4f23-bdd7-1ed4164593ff
+  AddLiteral (be953b5a-54b7-49d6-acec-681a2947049c)
+ Call ID: be953b5a-54b7-49d6-acec-681a2947049c
   Args:
-    type: :Male
-    source: :Male
-  AddTriple (de07012a-ec74-48b9-8508-95fbf15c7e8d)
- Call ID: de07012a-ec74-48b9-8508-95fbf15c7e8d
-  Args:
-    relation: :hasSex
-    source: :PrinceHeinrichOfPrussia
-    target: :Male
-  AddLiteral (e92b1d2b-9165-4ddb-83b9-4781614d9d22)
- Call ID: e92b1d2b-9165-4ddb-83b9-4781614d9d22
-  Args:
-    literal_value: 1862
-    literal_type: xsd:integer
-    source: :PrinceHeinrichOfPrussia
+    literal_value: 1976
     relation: :hasBirthYear
-  AddLiteral (f42c4798-cee0-4d6e-90fa-2f7605b71f00)
- Call ID: f42c4798-cee0-4d6e-90fa-2f7605b71f00
+    literal_type: xsd:integer
+    source: Georg_Friedrich_Prinz_von_Preussen
+  AssignClass (5daa1a6b-4281-4aaa-9ce6-1da698fdbc21)
+ Call ID: 5daa1a6b-4281-4aaa-9ce6-1da698fdbc21
   Args:
-    literal_value: 1929
-    source: :PrinceHeinrichOfPrussia
+    source: Louis_Ferdinand_Prinz_von_Preussen
+    type: :Man
+  AssignClass (2fde62ae-fbe8-4040-92fc-29d794dca3df)
+ Call ID: 2fde62ae-fbe8-4040-92fc-29d794dca3df
+  Args:
+    type: :Person
+    source: Louis_Ferdinand_Prinz_von_Preussen
+  AddLiteral (3f7499e8-63d0-4bbe-a3eb-891109f58a43)
+ Call ID: 3f7499e8-63d0-4bbe-a3eb-891109f58a43
+  Args:
+    literal_value: 1944
+    source: Louis_Ferdinand_Prinz_von_Preussen
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (065fe5b1-c1b2-42fe-995f-ec60b566b8aa)
+ Call ID: 065fe5b1-c1b2-42fe-995f-ec60b566b8aa
+  Args:
+    literal_value: 1977
+    source: Louis_Ferdinand_Prinz_von_Preussen
     relation: :hasDeathYear
     literal_type: xsd:integer
-  AssignClass (ea13c0ff-674a-4ae6-8d31-76581c73a713)
- Call ID: ea13c0ff-674a-4ae6-8d31-76581c73a713
-  Args:
-    source: :WilhelmII
-    type: :Man
-  AssignClass (4fd4ca63-b5b4-4615-8325-1f6b3fdc2dae)
- Call ID: 4fd4ca63-b5b4-4615-8325-1f6b3fdc2dae
-  Args:
-    type: :Person
-    source: :WilhelmII
-  AddTriple (7728c2d6-115d-487c-8dd6-88b8b13bf5df)
- Call ID: 7728c2d6-115d-487c-8dd6-88b8b13bf5df
-  Args:
-    source: :WilhelmII
-    relation: :hasSex
-    target: :Male
-  AddTriple (5be3a9b0-8073-408e-8c1e-ceabe4b71f67)
- Call ID: 5be3a9b0-8073-408e-8c1e-ceabe4b71f67
-  Args:
-    relation: :isBrotherOf
-    source: :PrinceHeinrichOfPrussia
-    target: :WilhelmII
-  AssignClass (1af8a81d-800b-45dd-adce-671b1e65d718)
- Call ID: 1af8a81d-800b-45dd-adce-671b1e65d718
-  Args:
-    type: :Man
-    source: :FrederickIII
-  AssignClass (7966d99c-657d-4a0a-bc6e-85ff3752c039)
- Call ID: 7966d99c-657d-4a0a-bc6e-85ff3752c039
-  Args:
-    type: :Person
-    source: :FrederickIII
-  AssignClass (3edacd3c-c75f-4e81-a6b8-bcad44cb8051)
- Call ID: 3edacd3c-c75f-4e81-a6b8-bcad44cb8051
-  Args:
-    source: :FrederickIII
-    type: :Ancestor
-  AddTriple (bb46d5d0-14d5-40fc-b6b5-689e5b61c618)
- Call ID: bb46d5d0-14d5-40fc-b6b5-689e5b61c618
-  Args:
-    relation: :hasSex
-    source: :FrederickIII
-    target: :Male
-  AssignClass (bc07254b-4cdb-4520-9a38-0a1efd2e9ef6)
- Call ID: bc07254b-4cdb-4520-9a38-0a1efd2e9ef6
+  AssignClass (04b6c020-ef55-43ca-9f3d-f50d74178616)
+ Call ID: 04b6c020-ef55-43ca-9f3d-f50d74178616
   Args:
     type: :Woman
-    source: :EmpressVictoria
-  AssignClass (862435c6-26a6-4993-9df9-f132decc1de5)
- Call ID: 862435c6-26a6-4993-9df9-f132decc1de5
+    source: Donata_of_Castell_Rüdenhausen
+  AssignClass (ad792e5c-3184-4caf-8b17-d06bb455d030)
+ Call ID: ad792e5c-3184-4caf-8b17-d06bb455d030
   Args:
+    source: Donata_of_Castell_Rüdenhausen
     type: :Person
-    source: :EmpressVictoria
-  AssignClass (5f8d6cde-f8da-42f9-8e58-0d3912264aff)
- Call ID: 5f8d6cde-f8da-42f9-8e58-0d3912264aff
+  AddLiteral (d380d3ce-3c95-4e34-83fa-a33725273241)
+ Call ID: d380d3ce-3c95-4e34-83fa-a33725273241
   Args:
-    type: :Ancestor
-    source: :EmpressVictoria
-  AddTriple (9bd98f85-5590-4f27-9d47-4d384fb0a634)
- Call ID: 9bd98f85-5590-4f27-9d47-4d384fb0a634
-  Args:
-    relation: :hasSex
-    source: :EmpressVictoria
-    target: :Female
-  AddTriple (937fe05d-983e-4313-9e9a-32ef37edb669)
- Call ID: 937fe05d-983e-4313-9e9a-32ef37edb669
-  Args:
-    source: :PrinceHeinrichOfPrussia
-    relation: :hasFather
-    target: :FrederickIII
-  AddTriple (3b8582ed-f27a-43c3-9ba3-eb03edec633e)
- Call ID: 3b8582ed-f27a-43c3-9ba3-eb03edec633e
-  Args:
-    source: :PrinceHeinrichOfPrussia
-    relation: :hasMother
-    target: :EmpressVictoria
-  AssignClass (9c0eff57-98a3-4aad-b9af-145da568437d)
- Call ID: 9c0eff57-98a3-4aad-b9af-145da568437d
-  Args:
-    source: :QueenVictoria
-    type: :Woman
-  AssignClass (b1897d3f-9742-4190-be6b-14cd878d8209)
- Call ID: b1897d3f-9742-4190-be6b-14cd878d8209
-  Args:
-    type: :Person
-    source: :QueenVictoria
-  AssignClass (40216983-b8ba-4519-8ccb-87ad971d2876)
- Call ID: 40216983-b8ba-4519-8ccb-87ad971d2876
-  Args:
-    source: :QueenVictoria
-    type: :Ancestor
-  AddTriple (df9346b3-2e29-40ec-99ba-1b6ecf4cfb2b)
- Call ID: df9346b3-2e29-40ec-99ba-1b6ecf4cfb2b
-  Args:
-    source: :QueenVictoria
-    relation: :hasSex
-    target: :Female
-  AddTriple (10a7f2b3-1604-4135-a76d-548ba45e5bda)
- Call ID: 10a7f2b3-1604-4135-a76d-548ba45e5bda
-  Args:
-    relation: :isMotherOf
-    source: :QueenVictoria
-    target: :EmpressVictoria
-  AssignClass (da98e5bd-0441-4076-919c-2a92600bddae)
- Call ID: da98e5bd-0441-4076-919c-2a92600bddae
-  Args:
-    type: :Woman
-    source: :PrincessIrene
-  AssignClass (6cb8da3d-eafa-418d-8d30-36ccfcc61989)
- Call ID: 6cb8da3d-eafa-418d-8d30-36ccfcc61989
-  Args:
-    source: :PrincessIrene
-    type: :Person
-  AddTriple (eb6833b0-c2a3-42d9-bcb4-effff220b280)
- Call ID: eb6833b0-c2a3-42d9-bcb4-effff220b280
-  Args:
-    relation: :hasSex
-    source: :PrincessIrene
-    target: :Female
-  AddTriple (d0d1853f-f757-4a1a-a812-4189012a2983)
- Call ID: d0d1853f-f757-4a1a-a812-4189012a2983
-  Args:
-    source: :PrinceHeinrichOfPrussia
-    relation: :hasRelation
-    target: :PrincessIrene
-  AddLiteral (fbea2928-c312-4d4e-b0d0-2ecfc266929f)
- Call ID: fbea2928-c312-4d4e-b0d0-2ecfc266929f
-  Args:
-    literal_value: 1888
-    relation: :hasMarriageYear
-    source: :PrinceHeinrichOfPrussia
+    relation: :hasBirthYear
     literal_type: xsd:integer
-  AssignClass (30af9f51-5dcc-4ae0-8c9d-1bfe17ecdfe4)
- Call ID: 30af9f51-5dcc-4ae0-8c9d-1bfe17ecdfe4
+    source: Donata_of_Castell_Rüdenhausen
+    literal_value: 1950
+  AddLiteral (2dc9ff4a-0abe-4253-9f98-3763c62871ad)
+ Call ID: 2dc9ff4a-0abe-4253-9f98-3763c62871ad
   Args:
-    source: :Waldemar
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Donata_of_Castell_Rüdenhausen
+    literal_value: 2015
+  AddTriple (3ea01b62-39c5-40c8-8279-01b2dc0ce047)
+ Call ID: 3ea01b62-39c5-40c8-8279-01b2dc0ce047
+  Args:
+    source: Georg_Friedrich_Prinz_von_Preussen
+    relation: :hasFather
+    target: Louis_Ferdinand_Prinz_von_Preussen
+  AddTriple (5150666a-5937-4562-9798-c4d18b1245e4)
+ Call ID: 5150666a-5937-4562-9798-c4d18b1245e4
+  Args:
+    source: Georg_Friedrich_Prinz_von_Preussen
+    relation: :hasMother
+    target: Donata_of_Castell_Rüdenhausen
+  AssignClass (9b1f004d-6d27-40a3-9b32-d82d5f4fe1b5)
+ Call ID: 9b1f004d-6d27-40a3-9b32-d82d5f4fe1b5
+  Args:
+    source: Wilhelm_II
     type: :Man
-  AssignClass (a7441edb-4125-4b53-8501-f65a945e76a6)
- Call ID: a7441edb-4125-4b53-8501-f65a945e76a6
+  AssignClass (68602af0-e2b8-43ab-8a4d-962de4e6bb69)
+ Call ID: 68602af0-e2b8-43ab-8a4d-962de4e6bb69
   Args:
-    source: :Waldemar
+    source: Wilhelm_II
     type: :Person
-  AddTriple (ea0e672d-53d2-4576-a3b5-43f32c0598b0)
- Call ID: ea0e672d-53d2-4576-a3b5-43f32c0598b0
+  AddTriple (8b8c4c7f-4f59-467a-bffe-6f21f9d44ae7)
+ Call ID: 8b8c4c7f-4f59-467a-bffe-6f21f9d44ae7
   Args:
-    source: :Waldemar
-    relation: :hasSex
-    target: :Male
-  AddTriple (e951441f-891b-4d3b-b434-973f01564887)
- Call ID: e951441f-891b-4d3b-b434-973f01564887
-  Args:
-    target: :PrinceHeinrichOfPrussia
-    source: :Waldemar
-    relation: :isSonOf
-  AddTriple (1b87574a-f06f-472f-9405-c21737ccfc88)
- Call ID: 1b87574a-f06f-472f-9405-c21737ccfc88
-  Args:
-    relation: :isSonOf
-    source: :Waldemar
-    target: :PrincessIrene
-  AssignClass (56334652-cd00-440c-ae7b-dfab4dc2eef8)
- Call ID: 56334652-cd00-440c-ae7b-dfab4dc2eef8
+    source: Georg_Friedrich_Prinz_von_Preussen
+    relation: :hasAncestor
+    target: Wilhelm_II
+  AssignClass (636269f4-f459-4b03-801b-043efc1bdbb1)
+ Call ID: 636269f4-f459-4b03-801b-043efc1bdbb1
   Args:
     type: :Man
-    source: :HeinrichJr
-  AssignClass (e5ae360e-831e-4c2b-8aa8-bef0a3e2b07e)
- Call ID: e5ae360e-831e-4c2b-8aa8-bef0a3e2b07e
+    source: Friedrich_August_of_Oldenburg
+  AssignClass (52e8c631-1097-4c18-8d0f-c6d22ad422c5)
+ Call ID: 52e8c631-1097-4c18-8d0f-c6d22ad422c5
+  Args:
+    source: Friedrich_August_of_Oldenburg
+    type: :Person
+  AddTriple (c328bc82-f7d4-474b-a701-0456c1b61366)
+ Call ID: c328bc82-f7d4-474b-a701-0456c1b61366
+  Args:
+    target: Friedrich_August_of_Oldenburg
+    source: Donata_of_Castell_Rüdenhausen
+    relation: :hasRelation
+  AssignClass (5358882b-f8e6-416f-af18-bfdeea26845b)
+ Call ID: 5358882b-f8e6-416f-af18-bfdeea26845b
+  Args:
+    type: :Woman
+    source: Marie_Cécile_of_Prussia
+  AssignClass (8e3f8638-d5ba-4724-845d-57fe09fca8c7)
+ Call ID: 8e3f8638-d5ba-4724-845d-57fe09fca8c7
+  Args:
+    source: Marie_Cécile_of_Prussia
+    type: :Person
+  AddTriple (fc5dddd9-4e9e-41fd-8f61-8f63ec3513f0)
+ Call ID: fc5dddd9-4e9e-41fd-8f61-8f63ec3513f0
+  Args:
+    target: Marie_Cécile_of_Prussia
+    relation: :hasRelation
+    source: Friedrich_August_of_Oldenburg
+  AssignClass (4a2a76c2-0054-438e-80cd-c78a73d95edf)
+ Call ID: 4a2a76c2-0054-438e-80cd-c78a73d95edf
+  Args:
+    source: Kira_of_Russia
+    type: :Woman
+  AssignClass (da8ac4f8-6a10-445b-b267-4d529d212462)
+ Call ID: da8ac4f8-6a10-445b-b267-4d529d212462
   Args:
     type: :Person
-    source: :HeinrichJr
-  AddTriple (9dd5dede-5832-4ef1-b78f-00536e9223fc)
- Call ID: 9dd5dede-5832-4ef1-b78f-00536e9223fc
+    source: Kira_of_Russia
+  AddTriple (f8c9770f-095d-46d6-baf2-5561b69fda72)
+ Call ID: f8c9770f-095d-46d6-baf2-5561b69fda72
   Args:
-    source: :HeinrichJr
-    relation: :hasSex
-    target: :Male
-  AddTriple (7360e774-5df3-4dba-94da-bc763ccf8576)
- Call ID: 7360e774-5df3-4dba-94da-bc763ccf8576
+    relation: :hasMother
+    source: Louis_Ferdinand_Prinz_von_Preussen
+    target: Kira_of_Russia
+  AssignClass (9bb94f1e-d97b-4e56-b59a-f50ddcf3c2e1)
+ Call ID: 9bb94f1e-d97b-4e56-b59a-f50ddcf3c2e1
   Args:
-    relation: :isSonOf
-    source: :HeinrichJr
-    target: :PrinceHeinrichOfPrussia
-  AddTriple (0954e679-0516-4b29-834b-64091a47f90d)
- Call ID: 0954e679-0516-4b29-834b-64091a47f90d
+    source: Sophie_of_Isenburg
+    type: :Woman
+  AssignClass (be06be69-b399-4451-82bc-de1e2191fb41)
+ Call ID: be06be69-b399-4451-82bc-de1e2191fb41
   Args:
-    relation: :isSonOf
-    source: :HeinrichJr
-    target: :PrincessIrene
-  Finish (ee6bff71-018d-4917-a939-8906fbfa345a)
- Call ID: ee6bff71-018d-4917-a939-8906fbfa345a
+    type: :Person
+    source: Sophie_of_Isenburg
+  AddTriple (962fe2fe-5a99-4c2a-9057-60f517ba3aa7)
+ Call ID: 962fe2fe-5a99-4c2a-9057-60f517ba3aa7
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:HeinrichJr a :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :isSonOf data:PrinceHeinrichOfPrussia,
-          data:PrincessIrene .
-
-  data:QueenVictoria a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female ;
-      :isMotherOf data:EmpressVictoria .
-
-  data:Waldemar a :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :isSonOf data:PrinceHeinrichOfPrussia,
-          data:PrincessIrene .
-
-  data:FrederickIII a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:WilhelmII a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:EmpressVictoria a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:PrinceHeinrichOfPrussia a :Man,
-          :Person ;
-      :hasBirthYear 1862 ;
-      :hasDeathYear 1929 ;
-      :hasFather data:FrederickIII ;
-      :hasMarriageYear 1888 ;
-      :hasMother data:EmpressVictoria ;
-      :hasRelation data:PrincessIrene ;
-      :hasSex data:Male ;
-      :isBrotherOf data:WilhelmII .
-
-  data:PrincessIrene a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Male a :Male .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Female']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (96a535a8-b3b1-4d93-9d01-ba45629408b6)
- Call ID: 96a535a8-b3b1-4d93-9d01-ba45629408b6
+    target: Sophie_of_Isenburg
+    relation: :hasRelation
+    source: Georg_Friedrich_Prinz_von_Preussen
+  AddLiteral (6a96f5e3-50ec-4853-b4b3-da9d5e95ea06)
+ Call ID: 6a96f5e3-50ec-4853-b4b3-da9d5e95ea06
   Args:
-    type: :Sex
-    source: :Female
-  Finish (2a0f93a1-2b6a-433d-b780-9e418793b525)
- Call ID: 2a0f93a1-2b6a-433d-b780-9e418793b525
+    literal_value: 2011
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: Georg_Friedrich_Prinz_von_Preussen
+  AssignClass (0e19c44d-491c-4b87-b63e-0393d556e1cf)
+ Call ID: 0e19c44d-491c-4b87-b63e-0393d556e1cf
+  Args:
+    source: Carl_Friedrich_Franz_Alexander
+    type: :Man
+  AssignClass (ae3ad17c-fc90-45dc-a428-3894ba7791fe)
+ Call ID: ae3ad17c-fc90-45dc-a428-3894ba7791fe
+  Args:
+    type: :Person
+    source: Carl_Friedrich_Franz_Alexander
+  AssignClass (b2b2a9d8-fc18-4034-bc15-5a6fb5de9142)
+ Call ID: b2b2a9d8-fc18-4034-bc15-5a6fb5de9142
+  Args:
+    type: :Man
+    source: Louis_Ferdinand_Christian_Albrecht
+  AssignClass (044b2ab7-8d15-474d-b72e-9bd9709b2943)
+ Call ID: 044b2ab7-8d15-474d-b72e-9bd9709b2943
+  Args:
+    source: Louis_Ferdinand_Christian_Albrecht
+    type: :Person
+  AddTriple (2f0afb89-e331-4b06-be90-731b2eeb6cd2)
+ Call ID: 2f0afb89-e331-4b06-be90-731b2eeb6cd2
+  Args:
+    target: Georg_Friedrich_Prinz_von_Preussen
+    source: Carl_Friedrich_Franz_Alexander
+    relation: :hasFather
+  AddTriple (6e0e640c-fa81-468d-a71e-bfbc5a37454a)
+ Call ID: 6e0e640c-fa81-468d-a71e-bfbc5a37454a
+  Args:
+    source: Carl_Friedrich_Franz_Alexander
+    relation: :hasMother
+    target: Sophie_of_Isenburg
+  AddTriple (62f3c21f-d53d-4ba5-b1af-14c613069bd1)
+ Call ID: 62f3c21f-d53d-4ba5-b1af-14c613069bd1
+  Args:
+    relation: :hasFather
+    source: Louis_Ferdinand_Christian_Albrecht
+    target: Georg_Friedrich_Prinz_von_Preussen
+  AddTriple (7183cb9b-3de2-435e-baba-734d0759733f)
+ Call ID: 7183cb9b-3de2-435e-baba-734d0759733f
+  Args:
+    relation: :hasMother
+    source: Louis_Ferdinand_Christian_Albrecht
+    target: Sophie_of_Isenburg
+  AssignClass (3ff7eb76-7cd1-47a4-8c2c-13e0010c073d)
+ Call ID: 3ff7eb76-7cd1-47a4-8c2c-13e0010c073d
+  Args:
+    type: :Man
+    source: Heinrich_Albert_Johann_Georg
+  AssignClass (275925b3-9830-48a0-80df-afc535c8c75d)
+ Call ID: 275925b3-9830-48a0-80df-afc535c8c75d
+  Args:
+    source: Heinrich_Albert_Johann_Georg
+    type: :Person
+  AddTriple (727e65d7-c55f-49c2-830f-4837880ba24d)
+ Call ID: 727e65d7-c55f-49c2-830f-4837880ba24d
+  Args:
+    relation: :hasFather
+    source: Heinrich_Albert_Johann_Georg
+    target: Georg_Friedrich_Prinz_von_Preussen
+  AddTriple (eb822107-963c-4e23-90f0-863c1b96509a)
+ Call ID: eb822107-963c-4e23-90f0-863c1b96509a
+  Args:
+    relation: :hasMother
+    source: Heinrich_Albert_Johann_Georg
+    target: Sophie_of_Isenburg
+  AssignClass (4bac41f0-70b3-43e4-ab91-fe00acd1b105)
+ Call ID: 4bac41f0-70b3-43e4-ab91-fe00acd1b105
+  Args:
+    source: Friedrich_Wilhelm
+    type: :Man
+  AssignClass (8432bfaa-4463-4a9e-9a6e-02953bdd3f94)
+ Call ID: 8432bfaa-4463-4a9e-9a6e-02953bdd3f94
+  Args:
+    type: :Person
+    source: Friedrich_Wilhelm
+  AssignClass (c20f193a-e5e5-4c97-a6df-89e6457ebb24)
+ Call ID: c20f193a-e5e5-4c97-a6df-89e6457ebb24
+  Args:
+    source: Michael
+    type: :Man
+  AssignClass (c19a5190-78fd-4ede-9165-8c77af4f6112)
+ Call ID: c19a5190-78fd-4ede-9165-8c77af4f6112
+  Args:
+    source: Michael
+    type: :Person
+  AddTriple (9efc5cfa-5188-4e33-b180-c6320bdcac75)
+ Call ID: 9efc5cfa-5188-4e33-b180-c6320bdcac75
+  Args:
+    relation: :hasFather
+    source: Friedrich_Wilhelm
+    target: Louis_Ferdinand_Prinz_von_Preussen
+  AddTriple (a6af0d86-cd06-4e91-b129-0387cde6785d)
+ Call ID: a6af0d86-cd06-4e91-b129-0387cde6785d
+  Args:
+    relation: :hasFather
+    source: Michael
+    target: Louis_Ferdinand_Prinz_von_Preussen
+  Finish (256b0575-e727-4faa-853a-4cba81eaa30e)
+ Call ID: 256b0575-e727-4faa-853a-4cba81eaa30e
   Args:

@@ -2,74 +2,59 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Isabelle_dOrleans a :Person,
+data:Marie_Louise_of_Hanover_and_Cumberland a :Person,
         :Woman ;
-    :hasBirthYear 1900 ;
-    :hasDeathYear 1983 ;
-    :hasFather data:Prince_Jean_Duke_of_Guise ;
-    :hasMarriageYear 1923,
-        1934 ;
-    :hasMother data:Princess_Isabelle_of_Orleans_mother ;
-    :hasRelation data:Bruno_dHarcourt,
-        data:Pierre_Murat ;
-    :isSisterOf data:Francoise_of_Greece ;
-    :knownAs "Princess Isabelle Françoise Hélène Marie d'Orléans"^^xsd:string .
+    :hasAncestor data:Charlotte_of_Mecklenburg-Strelitz,
+        data:George_III_of_the_United_Kingdom ;
+    :hasBirthYear 1879 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMarriageYear 1900 ;
+    :hasMother data:Princess_Thyra_of_Denmark ;
+    :hasRelation data:Maximilian_of_Baden .
 
-data:Michel_dOrleans a :Man,
-        :Person ;
-    :hasFather data:Henri_Count_of_Paris ;
-    :knownAs "Prince Michel d'Orléans"^^xsd:string .
-
-data:Armande_de_Pierre_de_Bernis a :Ancestor,
+data:Charlotte_of_Mecklenburg-Strelitz a :Ancestor,
         :Person,
         :Woman .
 
-data:Bruno_dHarcourt a :Man,
-        :Person ;
-    :hasBirthYear 1899 ;
-    :hasDeathYear 1930 ;
-    :hasFather data:Eugene_dHarcourt ;
-    :hasMother data:Armande_de_Pierre_de_Bernis ;
-    :knownAs "Count Bruno d'Harcourt"^^xsd:string .
-
-data:Christopher_of_Greece a :Ancestor,
+data:Christian_IX_of_Denmark a :Ancestor,
         :Man,
         :Person .
 
-data:Eugene_dHarcourt a :Ancestor,
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
         :Man,
         :Person .
 
-data:Francoise_of_Greece a :Person,
-        :Woman ;
-    :hasRelation data:Christopher_of_Greece ;
-    :knownAs "Princess Françoise of Greece"^^xsd:string .
-
-data:Henri_Count_of_Paris a :Ancestor,
-        :Man,
-        :Person ;
-    :knownAs "Henri, Count of Paris"^^xsd:string .
-
-data:Lucien_Murat a :Ancestor,
+data:George_III_of_the_United_Kingdom a :Ancestor,
         :Man,
         :Person .
 
-data:Pierre_Murat a :Man,
-        :Person ;
-    :hasAncestor data:Lucien_Murat ;
-    :hasBirthYear 1900 ;
-    :hasDeathYear 1948 ;
-    :knownAs "Prince Pierre Murat"^^xsd:string .
+data:Louise_of_Hesse-Kassel a :Ancestor,
+        :Person,
+        :Woman .
 
-data:Prince_Jean_Duke_of_Guise a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1874 ;
-    :hasDeathYear 1940 ;
-    :knownAs "Prince Jean, Duke of Guise"^^xsd:string .
+data:Maria_Maximilianovna_of_Leuchtenberg a :Ancestor,
+        :Person,
+        :Woman .
 
-data:Princess_Isabelle_of_Orleans_mother a :Ancestor,
+data:Maximilian_of_Baden a :Man,
+        :Person ;
+    :hasBirthYear 1867 ;
+    :hasDeathYear 1929 ;
+    :hasFather data:Wilhelm_of_Baden ;
+    :hasMother data:Maria_Maximilianovna_of_Leuchtenberg ;
+    :hasRelation data:Napoleon_III_of_France .
+
+data:Napoleon_III_of_France a :Man,
+        :Person .
+
+data:Princess_Thyra_of_Denmark a :Ancestor,
         :Person,
         :Woman ;
-    :knownAs "Princess Isabelle of Orléans"^^xsd:string .
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasMother data:Louise_of_Hesse-Kassel .
+
+data:Wilhelm_of_Baden a :Ancestor,
+        :Man,
+        :Person .
 

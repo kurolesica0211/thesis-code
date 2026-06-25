@@ -2,34 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Mary_Princess_Royal a :Woman ;
-    :hasBirthYear 1897 ;
-    :hasDeathYear 1965 ;
-    :hasFather data:George_V ;
-    :hasMarriageYear 1922 ;
-    :hasMother data:Queen_Mary ;
-    :hasRelation data:Henry_Lascelles ;
-    :hasSon data:George_Lascelles,
-        data:Gerald_David_Lascelles ;
-    :isAuntOf data:Queen_Elizabeth_II ;
-    :isMotherOf data:George_Lascelles,
-        data:Gerald_David_Lascelles ;
-    :isSisterOf data:Edward_VIII,
-        data:George_VI .
+data:Constantijn_of_the_Netherlands a :Man,
+        :Person .
 
-data:Edward_VIII a :Man .
+data:Stephan_von_Watzdorf a :Man,
+        :Person ;
+    :isChildOf data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux .
 
-data:George_V a :Man .
+data:Thilo_von_Watzdorf a :Man,
+        :Person ;
+    :isChildOf data:Gottfried_Adam_Vollrat_von_Watzdorf,
+        data:Simone_Arnoux .
 
-data:George_VI a :Man .
+data:Armgard_of_Sierstorpff-Cramm a :Person,
+        :Woman .
 
-data:Henry_Lascelles a :Man .
+data:Aschwin_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 1988 ;
+    :hasMarriageYear 1951 ;
+    :hasRelation data:Simone_Arnoux ;
+    :isBrotherOf data:Bernhard_of_Lippe-Biesterfeld ;
+    :isChildOf data:Armgard_of_Sierstorpff-Cramm,
+        data:Bernhard_of_Lippe .
 
-data:Queen_Elizabeth_II a :Woman .
+data:Bernhard_of_Lippe a :Man,
+        :Person .
 
-data:Queen_Mary a :Woman .
+data:Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person ;
+    :isBrotherOf data:Aschwin_of_Lippe-Biesterfeld .
 
-data:George_Lascelles a :Man .
+data:Gottfried_Adam_Vollrat_von_Watzdorf a :Man,
+        :Person .
 
-data:Gerald_David_Lascelles a :Man .
+data:Simone_Arnoux a :Person,
+        :Woman .
 

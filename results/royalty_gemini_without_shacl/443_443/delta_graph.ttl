@@ -2,29 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Lady_Elizabeth_Georgiana_Shakerley a :Person,
+data:Francesca_Sofia a :Person,
         :Woman ;
-    :hasBirthYear 1941 ;
-    :hasBrother data:Patrick_Anson_5th_Earl_of_Lichfield ;
-    :hasDeathYear 2020 ;
-    :hasFather data:Thomas_Anson_Viscount_Anson ;
-    :hasMarriageYear 1972 ;
-    :hasMother data:Anne_Bowes-Lyon ;
-    :knownAs "Lady Elizabeth Anson"^^xsd:string .
+    :hasFather data:Prince_Jaime_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Lady_Charlotte_Lindesay-Bethune .
 
-data:Sir_Geoffrey_Shakerley_6th_Bt a :Man,
-        :Person .
+data:Ines a :Person,
+        :Woman ;
+    :hasFather data:Prince_Jaime_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Lady_Charlotte_Lindesay-Bethune .
 
-data:Anne_Bowes-Lyon a :Ancestor,
-        :Person,
+data:Diana_Mary_Chamberlayne-Macdonald a :Person,
         :Woman .
 
-data:Patrick_Anson_5th_Earl_of_Lichfield a :Man,
+data:Infante_Carlos_Duke_of_Calabria a :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2015 .
+
+data:James_Lindesay-Bethune_16th_Earl_of_Lindsay a :Man,
         :Person .
 
-data:Thomas_Anson_Viscount_Anson a :Ancestor,
-        :Man,
+data:Prince_Pedro_Duke_of_Calabria a :Man,
         :Person ;
-    :hasBirthYear 1913 ;
-    :hasDeathYear 1958 .
+    :hasBirthYear 1968 ;
+    :hasFather data:Infante_Carlos_Duke_of_Calabria ;
+    :hasMother data:Princess_Anne_of_Orleans .
+
+data:Princess_Anne_of_Orleans a :Person,
+        :Woman .
+
+data:Sofia_Landaluce_y_Melgarejo a :Person,
+        :Woman ;
+    :hasBirthYear 1973 .
+
+data:Prince_Jaime_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasBirthYear 1993 ;
+    :hasFather data:Prince_Pedro_Duke_of_Calabria ;
+    :hasMarriageYear data:Lady_Charlotte_Lindesay-Bethune,
+        2021 ;
+    :hasMother data:Sofia_Landaluce_y_Melgarejo .
+
+data:Lady_Charlotte_Lindesay-Bethune a :Person,
+        :Woman ;
+    :hasFather data:James_Lindesay-Bethune_16th_Earl_of_Lindsay ;
+    :hasMother data:Diana_Mary_Chamberlayne-Macdonald .
 

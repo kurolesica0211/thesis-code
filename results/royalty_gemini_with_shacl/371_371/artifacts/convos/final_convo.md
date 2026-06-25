@@ -85,37 +85,39 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-David Henry George Lascelles, 8th Earl of Harewood (born 21 October 1950), styled as Viscount Lascelles until July 2011, is a British hereditary peer and film and television producer.
-Early life and earldom
+Duke John Albert of Mecklenburg (German: Herzog Johann Albrecht zu Mecklenburg; given names John Albert Ernest Constantine Frederick Henry; 8 December 1857 – 16 February 1920) was a member of the House of Mecklenburg-Schwerin who served as the regent of two states of the German Empire.
+He was first regent of the Grand Duchy of Mecklenburg-Schwerin from 1897 to 1901 for his nephew Frederick Francis IV, Grand Duke of Mecklenburg, and thereafter regent of the Duchy of Brunswick from 1907 to 1913.
+Birth and interests
 
-David Henry George Lascelles was born at his parents' London house, 2 Orme Square, Bayswater, London, on 21 October 1950.
-He is the eldest son of the 7th Earl of Harewood and his first wife, Marion Stein.
-He was baptised at All Saints' Church, Harewood.
-His godparents were The Princess Elizabeth, Duchess of Edinburgh (later Queen Elizabeth II), his great-grandmother Queen Mary, his great-aunt Viscountess Boyne (Margaret Hamilton-Russell), his uncle Gerald Lascelles and Benjamin Britten.
-He is a second cousin of King Charles III and a great-grandson of King George V.
+Duke John Albert of Mecklenburg was born in Schwerin the fifth child of Frederick Francis II, Grand Duke of Mecklenburg and his first wife Princess Augusta Reuss of Köstritz (1822–1862).
+Duke John Albert was educated in Dresden, pursued a career in the Prussian Army and was well known for his love of sports.
+Regencies
 
+Following the death of his brother Frederick Francis III, Grand Duke of Mecklenburg on 10 April 1897, Duke John Albert was appointed regent for his young nephew the new Grand Duke, Frederick Francis IV after his older brother Duke Paul Frederick had renounced his claim to the regency.
+On 28 May 1907, Duke John Albert was elected regent of the Duchy of Brunswick following the death of Prince Albert of Prussia by the state's diet, accepting the offer he arrived in Brunswick on 5 June 1907.
+The reason for the regency in Brunswick was that in 1884 when William, Duke of Brunswick died his distant cousin and heir Ernest Augustus, Crown Prince of Hanover was prevented from taking over the duchy because he refused to renounce his claim to the throne of the Kingdom of Hanover which had been annexed by Prussia in 1866.
+Shortly after assuming the regency, Duke John Albert would walk Brunswick in civilian clothes visiting museums, libraries and other institutions in the duchy, asking questions of people to discover their living conditions.
+Duke John Albert also cut down on the expenses of the royal household by cutting the number of servants and retainers to the minimum needed to run the household.
+The regency came to an end on 1 November 1913 when Ernest Augustus, Crown Prince of Hanover's son Ernest Augustus was permitted to ascend to Duchy following his marriage to Princess Victoria Louise of Prussia, the only daughter of the German Emperor, William II, which helped heal the rift between the houses of Hanover and Hohenzollern.
+War years
 
-He succeeded to the Earldom of Harewood on the death of his father in July 2011.
-Career and other activities
+During the First World War, Duke John Albert was active with the German Colonial Society in defending Germany's colonial possessions from suggestions that they should be abandoned.
+Duke John Albert died in 1920 in Wiligrad castle near Lübstorf aged 62.
+Marriages
 
-Lascelles is a film and television producer.
-In 2007, as part of the commemoration of the bi-centenary of the Abolition of the Slave Trade Act, Lascelles was executive producer of the theatrical project by Geraldine Connor entitled Carnival Messiah that was staged in the grounds of Harewood House, which was built in the 18th century with funds from slave trading.
-Following Connor's death in 2011, Lascelles organised a concert in her memory at West Yorkshire Playhouse, and he is a founder and patron of the Geraldine Connor Foundation, established in 2012 to continue her work and vision by bringing people together through arts and culture.
-As Earl of Harewood, he continues the tradition begun by his father in 1961 by serving as the honorary lifetime president of Leeds United Football Club.
-It is on display in one of the bookcases at Harewood House.
-Personal life
+John Albert was married twice: firstly in Weimar on 6 November 1886 to Princess Elisabeth Sybille of Saxe-Weimar-Eisenach (28 February 1854–10 July 1908)
+the daughter of Charles Alexander, Grand Duke of Saxe-Weimar-Eisenach; secondly in Brunswick on 15 December 1909 to Princess Elisabeth of Stolberg-Rossla (1885–1969), who following his death was to marry his half brother Duke Adolf Friedrich in 1924.
+Ojimukoka
 
-On 12 February 1979, at St Mary's Church, Paddington, London, Lascelles married Margaret Rosalind Messenger, Viscountess Lascelles, daughter of Edgar Frank Messenger.
-Their children are:
-
-
-In 1990, Lascelles married artist Diane Howse, now the Countess of Harewood.
+Ojimukoka, a small settlement, postoffice and railway station in Namibia, was renamed Johann - Albrechtshöhe, and then simply Albrechts in his honour.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -131,39 +133,9 @@ In 1990, Lascelles married artist Diane Howse, now the Countess of Harewood.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -178,6 +150,23 @@ In 1990, Lascelles married artist Diane Howse, now the Countess of Harewood.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -195,6 +184,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,29 +266,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -293,6 +289,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -305,6 +309,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -313,17 +319,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -351,6 +359,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -366,127 +458,191 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (070516b4-52a2-4f14-a9d9-368f58129868)
- Call ID: 070516b4-52a2-4f14-a9d9-368f58129868
+  AssignClass (e1f6de85-6986-4a5f-b7a5-bd6d796e92ec)
+ Call ID: e1f6de85-6986-4a5f-b7a5-bd6d796e92ec
   Args:
+    source: John_Albert_of_Mecklenburg
     type: :Man
-    source: David_Henry_George_Lascelles
-  AssignClass (c466f51c-fcb4-4245-b5fc-af46247f7d03)
- Call ID: c466f51c-fcb4-4245-b5fc-af46247f7d03
+  AssignClass (765d5b15-9554-46ac-bf09-b5857c5959ac)
+ Call ID: 765d5b15-9554-46ac-bf09-b5857c5959ac
   Args:
+    source: John_Albert_of_Mecklenburg
     type: :Person
-    source: David_Henry_George_Lascelles
-  AddLiteral (0ca371ad-30d2-4d5d-bf0b-a29be9649eb1)
- Call ID: 0ca371ad-30d2-4d5d-bf0b-a29be9649eb1
+  AddLiteral (151a1971-63e8-498a-b0b4-a7d8b7519a7c)
+ Call ID: 151a1971-63e8-498a-b0b4-a7d8b7519a7c
   Args:
-    literal_type: xsd:nonNegativeInteger
-    literal_value: 1950
-    source: David_Henry_George_Lascelles
     relation: :hasBirthYear
-  AddLiteral (0e5b4c4b-44bc-486c-bd80-b7bc05cf9eb7)
- Call ID: 0e5b4c4b-44bc-486c-bd80-b7bc05cf9eb7
+    source: John_Albert_of_Mecklenburg
+    literal_type: xsd:integer
+    literal_value: 1857
+  AddLiteral (d9728bbb-aaa2-4890-97aa-5d2c6a616da9)
+ Call ID: d9728bbb-aaa2-4890-97aa-5d2c6a616da9
   Args:
-    relation: :hasSex
-    source: David_Henry_George_Lascelles
-    literal_value: Male
-    literal_type: xsd:string
-  AssignClass (3a72df1c-c0f3-4e19-907a-b3e3561d8c1d)
- Call ID: 3a72df1c-c0f3-4e19-907a-b3e3561d8c1d
+    literal_value: 1920
+    source: John_Albert_of_Mecklenburg
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AssignClass (ae2183c5-444a-4f22-8186-a518287a55ca)
+ Call ID: ae2183c5-444a-4f22-8186-a518287a55ca
   Args:
+    source: Frederick_Francis_II_of_Mecklenburg
     type: :Man
-    source: 7th_Earl_of_Harewood
-  AssignClass (557c4eee-43ff-4b94-ab6c-a66a9c68d472)
- Call ID: 557c4eee-43ff-4b94-ab6c-a66a9c68d472
+  AssignClass (77641218-9c22-4145-967c-17a2ab531aee)
+ Call ID: 77641218-9c22-4145-967c-17a2ab531aee
   Args:
-    source: 7th_Earl_of_Harewood
-    type: :Ancestor
-  AssignClass (2dc77dae-9b0f-4c08-9c2d-bf5397cbb25b)
- Call ID: 2dc77dae-9b0f-4c08-9c2d-bf5397cbb25b
+    source: Frederick_Francis_II_of_Mecklenburg
+    type: :Person
+  AssignClass (2c995a14-c0c4-44ef-a544-9b36646d02e7)
+ Call ID: 2c995a14-c0c4-44ef-a544-9b36646d02e7
   Args:
+    source: Augusta_Reuss_of_Köstritz
     type: :Woman
-    source: Marion_Stein
-  AssignClass (a57b4549-862a-435f-a4d5-b8f254ddd93e)
- Call ID: a57b4549-862a-435f-a4d5-b8f254ddd93e
+  AssignClass (5be41548-64b7-48ae-9823-353ea6344f38)
+ Call ID: 5be41548-64b7-48ae-9823-353ea6344f38
   Args:
-    source: Marion_Stein
-    type: :Ancestor
-  AddTriple (33d7d7be-6fdd-49c1-b85c-7228ea218a96)
- Call ID: 33d7d7be-6fdd-49c1-b85c-7228ea218a96
+    type: :Person
+    source: Augusta_Reuss_of_Köstritz
+  AddTriple (2333fc69-aa6c-4144-91e8-7fe0d09f9c57)
+ Call ID: 2333fc69-aa6c-4144-91e8-7fe0d09f9c57
   Args:
-    target: 7th_Earl_of_Harewood
+    target: Frederick_Francis_II_of_Mecklenburg
+    source: John_Albert_of_Mecklenburg
     relation: :hasFather
-    source: David_Henry_George_Lascelles
-  AddTriple (300eb077-0102-4370-84f4-51001854ef37)
- Call ID: 300eb077-0102-4370-84f4-51001854ef37
+  AddTriple (020f9e39-5f43-454e-bc44-acde10d4b217)
+ Call ID: 020f9e39-5f43-454e-bc44-acde10d4b217
   Args:
-    target: Marion_Stein
+    source: John_Albert_of_Mecklenburg
     relation: :hasMother
-    source: David_Henry_George_Lascelles
-  AssignClass (be18acf9-1e1f-42a6-8817-a42d5aea5604)
- Call ID: be18acf9-1e1f-42a6-8817-a42d5aea5604
-  Args:
-    source: Margaret_Rosalind_Messenger
-    type: :Woman
-  AssignClass (abae9d2a-a9af-4055-aaa6-fe064aed36a1)
- Call ID: abae9d2a-a9af-4055-aaa6-fe064aed36a1
-  Args:
-    source: Margaret_Rosalind_Messenger
-    type: :Person
-  AddTriple (a541d325-7b38-404e-826c-ad847747537c)
- Call ID: a541d325-7b38-404e-826c-ad847747537c
-  Args:
-    source: David_Henry_George_Lascelles
-    target: Margaret_Rosalind_Messenger
-    relation: :hasRelation
-  AddLiteral (74bf3c54-ca74-462c-bbb7-1f05ac1b1622)
- Call ID: 74bf3c54-ca74-462c-bbb7-1f05ac1b1622
-  Args:
-    literal_type: xsd:nonNegativeInteger
-    source: David_Henry_George_Lascelles
-    literal_value: 1979
-    relation: :hasMarriageYear
-  AssignClass (12b28938-47e9-4dee-b678-dda94cf7c54d)
- Call ID: 12b28938-47e9-4dee-b678-dda94cf7c54d
-  Args:
-    type: :Woman
-    source: Diane_Howse
-  AssignClass (d5dfbde5-6e25-46bf-902d-264ede527209)
- Call ID: d5dfbde5-6e25-46bf-902d-264ede527209
-  Args:
-    type: :Person
-    source: Diane_Howse
-  AddTriple (659d59ab-cd4f-49d6-a437-c170965d9afa)
- Call ID: 659d59ab-cd4f-49d6-a437-c170965d9afa
-  Args:
-    source: David_Henry_George_Lascelles
-    relation: :hasRelation
-    target: Diane_Howse
-  AddLiteral (b9ea5d96-7288-41e9-b677-11c67f7faf7d)
- Call ID: b9ea5d96-7288-41e9-b677-11c67f7faf7d
-  Args:
-    literal_value: 1990
-    source: David_Henry_George_Lascelles
-    literal_type: xsd:nonNegativeInteger
-    relation: :hasMarriageYear
-  AssignClass (0014097a-313e-4550-a06e-7c431970de20)
- Call ID: 0014097a-313e-4550-a06e-7c431970de20
+    target: Augusta_Reuss_of_Köstritz
+  AssignClass (711218b8-942d-4dc1-983c-19e0f4cde5a6)
+ Call ID: 711218b8-942d-4dc1-983c-19e0f4cde5a6
   Args:
     type: :Man
-    source: Edgar_Frank_Messenger
-  AssignClass (4284b9f9-89d2-4493-96f8-aa6f58ecf8b9)
- Call ID: 4284b9f9-89d2-4493-96f8-aa6f58ecf8b9
+    source: Frederick_Francis_III_of_Mecklenburg
+  AssignClass (abaa3661-355e-4769-966d-2d40bc6f3c51)
+ Call ID: abaa3661-355e-4769-966d-2d40bc6f3c51
   Args:
-    type: :Ancestor
-    source: Edgar_Frank_Messenger
-  AddTriple (2cb3c4ae-ea58-48de-ac3d-73450d81d449)
- Call ID: 2cb3c4ae-ea58-48de-ac3d-73450d81d449
+    source: Frederick_Francis_III_of_Mecklenburg
+    type: :Person
+  AddTriple (d15bbf14-4973-44e9-99ce-23ff60a4f5f0)
+ Call ID: d15bbf14-4973-44e9-99ce-23ff60a4f5f0
   Args:
-    target: Edgar_Frank_Messenger
-    relation: :hasFather
-    source: Margaret_Rosalind_Messenger
-  Finish (695bf31e-2847-43e1-8912-28a84324f0e2)
- Call ID: 695bf31e-2847-43e1-8912-28a84324f0e2
+    target: John_Albert_of_Mecklenburg
+    source: Frederick_Francis_III_of_Mecklenburg
+    relation: :isBrotherOf
+  AssignClass (f47edd46-cbb7-4418-a747-d294ae99b7e7)
+ Call ID: f47edd46-cbb7-4418-a747-d294ae99b7e7
   Args:
+    type: :Man
+    source: Paul_Frederick_of_Mecklenburg
+  AssignClass (84af254a-a19f-4005-afd9-f38bcd10e209)
+ Call ID: 84af254a-a19f-4005-afd9-f38bcd10e209
+  Args:
+    type: :Person
+    source: Paul_Frederick_of_Mecklenburg
+  AddTriple (9e5619f8-8cf9-46d7-bbbc-37661acc7c95)
+ Call ID: 9e5619f8-8cf9-46d7-bbbc-37661acc7c95
+  Args:
+    source: Paul_Frederick_of_Mecklenburg
+    relation: :isBrotherOf
+    target: John_Albert_of_Mecklenburg
+  AssignClass (ea8d3828-3d72-42f9-b598-3bcdb83bdf6f)
+ Call ID: ea8d3828-3d72-42f9-b598-3bcdb83bdf6f
+  Args:
+    type: :Man
+    source: Frederick_Francis_IV_of_Mecklenburg
+  AssignClass (c0622cd0-d184-485d-ac01-7c5d0ac34223)
+ Call ID: c0622cd0-d184-485d-ac01-7c5d0ac34223
+  Args:
+    source: Frederick_Francis_IV_of_Mecklenburg
+    type: :Person
+  AddTriple (7bee19ac-04d7-4ef4-8b54-65505091e754)
+ Call ID: 7bee19ac-04d7-4ef4-8b54-65505091e754
+  Args:
+    target: Frederick_Francis_IV_of_Mecklenburg
+    source: Frederick_Francis_III_of_Mecklenburg
+    relation: :isFatherOf
+  AssignClass (3d8bda58-0b9b-410c-8ddc-53bf48edb70a)
+ Call ID: 3d8bda58-0b9b-410c-8ddc-53bf48edb70a
+  Args:
+    source: Elisabeth_Sybille_of_Saxe-Weimar-Eisenach
+    type: :Woman
+  AssignClass (d7d5fec1-00ce-4909-ad48-acc2cfd1bf80)
+ Call ID: d7d5fec1-00ce-4909-ad48-acc2cfd1bf80
+  Args:
+    type: :Person
+    source: Elisabeth_Sybille_of_Saxe-Weimar-Eisenach
+  AddLiteral (f53d0769-c609-4479-bbcf-5569e9b76c42)
+ Call ID: f53d0769-c609-4479-bbcf-5569e9b76c42
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: John_Albert_of_Mecklenburg
+    literal_value: 1886
+  AssignClass (479cfec6-7f5b-401b-9a43-1218c0f14da3)
+ Call ID: 479cfec6-7f5b-401b-9a43-1218c0f14da3
+  Args:
+    type: :Woman
+    source: Elisabeth_of_Stolberg-Rossla
+  AssignClass (899b8fc1-d788-4fb4-a5d5-8b4261a0efe8)
+ Call ID: 899b8fc1-d788-4fb4-a5d5-8b4261a0efe8
+  Args:
+    type: :Person
+    source: Elisabeth_of_Stolberg-Rossla
+  AddLiteral (efe0e3de-9295-40f1-8e3c-c3e355e5a7bd)
+ Call ID: efe0e3de-9295-40f1-8e3c-c3e355e5a7bd
+  Args:
+    relation: :hasMarriageYear
+    source: John_Albert_of_Mecklenburg
+    literal_type: xsd:integer
+    literal_value: 1909
+  AssignClass (85ca3af8-0e37-4b37-a53a-6890b3e60f16)
+ Call ID: 85ca3af8-0e37-4b37-a53a-6890b3e60f16
+  Args:
+    type: :Man
+    source: Adolf_Friedrich_of_Mecklenburg
+  AssignClass (1be8abe1-f65c-45fc-9bd9-7d96ba24f1ee)
+ Call ID: 1be8abe1-f65c-45fc-9bd9-7d96ba24f1ee
+  Args:
+    type: :Person
+    source: Adolf_Friedrich_of_Mecklenburg
+  AddTriple (60ca8e5b-b981-47ff-9e63-11080e91bb3f)
+ Call ID: 60ca8e5b-b981-47ff-9e63-11080e91bb3f
+  Args:
+    target: John_Albert_of_Mecklenburg
+    relation: :isBrotherOf
+    source: Adolf_Friedrich_of_Mecklenburg
+  Finish (22094826-7505-4db6-bbb3-c97260c13379)
+ Call ID: 22094826-7505-4db6-bbb3-c97260c13379
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -575,32 +731,42 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:David_Henry_George_Lascelles a :Man,
+  data:Adolf_Friedrich_of_Mecklenburg a :Man,
           :Person ;
-      :hasBirthYear "1950"^^xsd:nonNegativeInteger ;
-      :hasFather data:7th_Earl_of_Harewood ;
-      :hasMarriageYear "1979"^^xsd:nonNegativeInteger,
-          "1990"^^xsd:nonNegativeInteger ;
-      :hasMother data:Marion_Stein ;
-      :hasRelation data:Diane_Howse,
-          data:Margaret_Rosalind_Messenger ;
-      :hasSex "Male"^^xsd:string .
+      :isBrotherOf data:John_Albert_of_Mecklenburg .
 
-  data:7th_Earl_of_Harewood a :Ancestor,
-          :Man .
-
-  data:Diane_Howse a :Person,
+  data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach a :Person,
           :Woman .
 
-  data:Edgar_Frank_Messenger a :Ancestor,
-          :Man .
-
-  data:Margaret_Rosalind_Messenger a :Person,
-          :Woman ;
-      :hasFather data:Edgar_Frank_Messenger .
-
-  data:Marion_Stein a :Ancestor,
+  data:Elisabeth_of_Stolberg-Rossla a :Person,
           :Woman .
+
+  data:Frederick_Francis_III_of_Mecklenburg a :Man,
+          :Person ;
+      :isBrotherOf data:John_Albert_of_Mecklenburg ;
+      :isFatherOf data:Frederick_Francis_IV_of_Mecklenburg .
+
+  data:Paul_Frederick_of_Mecklenburg a :Man,
+          :Person ;
+      :isBrotherOf data:John_Albert_of_Mecklenburg .
+
+  data:Augusta_Reuss_of_K%C3%B6stritz a :Person,
+          :Woman .
+
+  data:Frederick_Francis_II_of_Mecklenburg a :Man,
+          :Person .
+
+  data:Frederick_Francis_IV_of_Mecklenburg a :Man,
+          :Person .
+
+  data:John_Albert_of_Mecklenburg a :Man,
+          :Person ;
+      :hasBirthYear 1857 ;
+      :hasDeathYear 1920 ;
+      :hasFather data:Frederick_Francis_II_of_Mecklenburg ;
+      :hasMarriageYear 1886,
+          1909 ;
+      :hasMother data:Augusta_Reuss_of_K%C3%B6stritz .
 
 
 
@@ -612,78 +778,70 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (5bf5079a-6e38-49d0-be02-7a593391761e)
- Call ID: 5bf5079a-6e38-49d0-be02-7a593391761e
+  ValidateShacl (548a737c-78a5-4b08-8288-3292408bc562)
+ Call ID: 548a737c-78a5-4b08-8288-3292408bc562
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:8
+Total violations:7
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'David_Henry_George_Lascelles' has a 'hasSex' property pointing to 'Male', but 'Male' is not correctly typed as a member of the class ':Sex'.
+      The entity Frederick_Francis_II_of_Mecklenburg used as a father for John_Albert_of_Mecklenburg is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Frederick_Francis_II_of_Mecklenburg', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The 'hasSex' property of 'David_Henry_George_Lascelles' requires the target value to be a member of the class ':Sex', which is currently missing.
+      The entity Augusta_Reuss_of_K%C3%B6stritz used as a mother for John_Albert_of_Mecklenburg is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Augusta_Reuss_of_K%C3%B6stritz', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The 'hasSex' property constraint for a ':Man' requires the object to be an instance of ':Sex', but the current value 'Male' lacks this classification.
+      The entity Frederick_Francis_II_of_Mecklenburg is missing the required class :Ancestor for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Frederick_Francis_II_of_Mecklenburg', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The ':Person' class definition requires the 'hasSex' property to point to an instance of ':Sex', but 'Male' is not assigned that class.
+      The entity Augusta_Reuss_of_K%C3%B6stritz is missing the required class :Ancestor for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Augusta_Reuss_of_K%C3%B6stritz', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'David_Henry_George_Lascelles' is being validated against constraints for females, which expect the 'hasSex' property to point to an instance of ':Sex'.
+      Duplicate validation error: Frederick_Francis_II_of_Mecklenburg requires the :Ancestor class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Frederick_Francis_II_of_Mecklenburg', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'David_Henry_George_Lascelles' lacks the required class ':Sex' on its 'hasSex' value 'Male' to satisfy the ':Man' shape requirements.
+      Duplicate validation error: Augusta_Reuss_of_K%C3%B6stritz requires the :Ancestor class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Augusta_Reuss_of_K%C3%B6stritz', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The validation failed because the value 'Male' linked via 'hasSex' does not possess the mandatory ':Sex' class assignment.
+      The node Frederick_Francis_III_of_Mecklenburg acts as a subject for the isFatherOf property but is missing the :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The node 'David_Henry_George_Lascelles' has an incorrectly classified 'hasSex' value 'Male', which must be an instance of ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Frederick_Francis_III_of_Mecklenburg', class=':Ancestor')
 
 
 
@@ -692,36 +850,24 @@ Violations:
 
 []
 Tool Calls:
-  RemoveLiteral (0b07344b-127d-4341-a826-0ea43bd41b31)
- Call ID: 0b07344b-127d-4341-a826-0ea43bd41b31
+  AssignClass (d22d5505-35a4-4890-bc8f-0898cae281e8)
+ Call ID: d22d5505-35a4-4890-bc8f-0898cae281e8
   Args:
-    source: David_Henry_George_Lascelles
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Male
-  AssignClass (e7491519-446a-446a-9e21-c3663ca360cc)
- Call ID: e7491519-446a-446a-9e21-c3663ca360cc
+    source: Frederick_Francis_II_of_Mecklenburg
+    type: :Ancestor
+  AssignClass (76a37013-b7b5-4302-b333-8929458f3872)
+ Call ID: 76a37013-b7b5-4302-b333-8929458f3872
   Args:
-    source: Male_Sex_Node
-    type: :Male
-  AssignClass (777280ae-f9c0-4fbf-a521-fb63c6cf1920)
- Call ID: 777280ae-f9c0-4fbf-a521-fb63c6cf1920
+    source: Augusta_Reuss_of_Köstritz
+    type: :Ancestor
+  AssignClass (26bcc407-4e9f-48ca-9345-c4a0336b8733)
+ Call ID: 26bcc407-4e9f-48ca-9345-c4a0336b8733
   Args:
-    type: :Sex
-    source: Male_Sex_Node
-  AddTriple (858eced9-1782-4335-8c5d-f1ee7fbad70f)
- Call ID: 858eced9-1782-4335-8c5d-f1ee7fbad70f
+    source: Frederick_Francis_III_of_Mecklenburg
+    type: :Ancestor
+  ValidateShacl (e4f29e3a-e68b-4f7b-8f84-94bac817d08f)
+ Call ID: e4f29e3a-e68b-4f7b-8f84-94bac817d08f
   Args:
-    relation: :hasSex
-    target: Male_Sex_Node
-    source: David_Henry_George_Lascelles
-  ValidateShacl (0e8e419b-36a0-4b6c-86c9-7eb1a14bedd9)
- Call ID: 0e8e419b-36a0-4b6c-86c9-7eb1a14bedd9
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -738,35 +884,45 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:David_Henry_George_Lascelles a :Man,
+  data:Adolf_Friedrich_of_Mecklenburg a :Man,
           :Person ;
-      :hasBirthYear "1950"^^xsd:nonNegativeInteger ;
-      :hasFather data:7th_Earl_of_Harewood ;
-      :hasMarriageYear "1979"^^xsd:nonNegativeInteger,
-          "1990"^^xsd:nonNegativeInteger ;
-      :hasMother data:Marion_Stein ;
-      :hasRelation data:Diane_Howse,
-          data:Margaret_Rosalind_Messenger ;
-      :hasSex data:Male_Sex_Node .
+      :isBrotherOf data:John_Albert_of_Mecklenburg .
 
-  data:7th_Earl_of_Harewood a :Ancestor,
-          :Man .
-
-  data:Diane_Howse a :Person,
+  data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach a :Person,
           :Woman .
 
-  data:Edgar_Frank_Messenger a :Ancestor,
-          :Man .
-
-  data:Male_Sex_Node a :Male,
-          :Sex .
-
-  data:Margaret_Rosalind_Messenger a :Person,
-          :Woman ;
-      :hasFather data:Edgar_Frank_Messenger .
-
-  data:Marion_Stein a :Ancestor,
+  data:Elisabeth_of_Stolberg-Rossla a :Person,
           :Woman .
+
+  data:Frederick_Francis_III_of_Mecklenburg a :Ancestor,
+          :Man,
+          :Person ;
+      :isBrotherOf data:John_Albert_of_Mecklenburg ;
+      :isFatherOf data:Frederick_Francis_IV_of_Mecklenburg .
+
+  data:Paul_Frederick_of_Mecklenburg a :Man,
+          :Person ;
+      :isBrotherOf data:John_Albert_of_Mecklenburg .
+
+  data:Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Frederick_Francis_II_of_Mecklenburg a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Frederick_Francis_IV_of_Mecklenburg a :Man,
+          :Person .
+
+  data:John_Albert_of_Mecklenburg a :Man,
+          :Person ;
+      :hasBirthYear 1857 ;
+      :hasDeathYear 1920 ;
+      :hasFather data:Frederick_Francis_II_of_Mecklenburg ;
+      :hasMarriageYear 1886,
+          1909 ;
+      :hasMother data:Augusta_Reuss_of_K%C3%B6stritz .
 
 
 
@@ -778,6 +934,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (91cb531a-30dd-4364-9e48-17d0bfa0a724)
- Call ID: 91cb531a-30dd-4364-9e48-17d0bfa0a724
+  Finish (f7245354-b418-4945-96a6-07611c647396)
+ Call ID: f7245354-b418-4945-96a6-07611c647396
   Args:

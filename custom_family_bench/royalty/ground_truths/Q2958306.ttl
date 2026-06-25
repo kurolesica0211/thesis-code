@@ -7,29 +7,23 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Prince_Charles-Philippe_dOrléans a :Person ;
+    rdfs:label "Prince Charles-Philippe d'Orléans" ;
+    data:wdtLink wdt:Q2958306 ;
+    :alsoKnownAs "Charles-Philippe Marie Louis d'Orléans",
+        "Charles-Philippe d'Orléans, duc d'Anjou" ;
+    :hasParent data:Prince_Michel_dOrléans ;
+    :hasSex data:male .
+
+data:female a :Female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Prince_Charles-Philippe_dOrléans a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Charles-Philippe d'Orléans" ;
-    data:wdtLink wdt:Q2958306 ;
-    :alsoKnownAs "Charles-Philippe Marie Louis d'Orléans",
-        "Charles-Philippe d'Orléans, duc d'Anjou" ;
-    :hasFather data:Prince_Michel_dOrléans ;
-    :hasParent data:Prince_Michel_dOrléans ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Michel_dOrléans ;
-    :isSonOf data:Prince_Michel_dOrléans .
-
-data:Prince_Michel_dOrléans a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Michel_dOrléans a :Person ;
     rdfs:label "Prince Michel d'Orléans" ;
     data:posIndicesFull "537:560",
         "544:560" ;
@@ -45,9 +39,7 @@ data:Prince_Michel_dOrléans a :Ancestor,
     data:wdtLink wdt:Q3311149 ;
     :alsoKnownAs "Michel Joseph Benoît Marie d'Orléans",
         "Michel d'Orléans" ;
-    :hasChild data:Prince_Charles-Philippe_dOrléans ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Charles-Philippe_dOrléans ;
-    :isFatherOf data:Prince_Charles-Philippe_dOrléans ;
-    :isParentOf data:Prince_Charles-Philippe_dOrléans .
+    :hasSex data:male .
+
+data:male a :Male .
 

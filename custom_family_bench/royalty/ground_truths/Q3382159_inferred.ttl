@@ -1,0 +1,100 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Luís_de_Orléans_e_Bragança a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Luís de Orléans e Bragança"^^xsd:string ;
+    data:posIndicesFull "0:31"^^xsd:string,
+        "5898:5924"^^xsd:string,
+        "6405:6431"^^xsd:string,
+        "7:31"^^xsd:string ;
+    data:posIndicesPart "1137:1141"^^xsd:string,
+        "1230:1234"^^xsd:string,
+        "1525:1529"^^xsd:string,
+        "1804:1808"^^xsd:string,
+        "1927:1931"^^xsd:string,
+        "2058:2062"^^xsd:string,
+        "2156:2160"^^xsd:string,
+        "2224:2228"^^xsd:string,
+        "2358:2362"^^xsd:string,
+        "2476:2480"^^xsd:string,
+        "2577:2581"^^xsd:string,
+        "2651:2655"^^xsd:string,
+        "2709:2716"^^xsd:string,
+        "2970:2977"^^xsd:string,
+        "3258:3262"^^xsd:string,
+        "3264:3268"^^xsd:string,
+        "3433:3437"^^xsd:string,
+        "3553:3557"^^xsd:string,
+        "3711:3715"^^xsd:string,
+        "3850:3854"^^xsd:string,
+        "4028:4032"^^xsd:string,
+        "406:410"^^xsd:string,
+        "4229:4233"^^xsd:string,
+        "4311:4315"^^xsd:string,
+        "435:439"^^xsd:string,
+        "4529:4533"^^xsd:string,
+        "4783:4787"^^xsd:string,
+        "5076:5080"^^xsd:string,
+        "5183:5187"^^xsd:string,
+        "5299:5303"^^xsd:string,
+        "5472:5476"^^xsd:string,
+        "5848:5852"^^xsd:string,
+        "586:590"^^xsd:string,
+        "6084:6088"^^xsd:string,
+        "6206:6213"^^xsd:string,
+        "807:811"^^xsd:string,
+        "947:951"^^xsd:string ;
+    data:wdtLink wdt:Q2617325 ;
+    :alsoKnownAs "Luis of Orleans-Braganza"^^xsd:string,
+        "Prince Luís of Orléans-Braganza"^^xsd:string ;
+    :hasBrother data:Luís_de_Orléans_e_Bragança ;
+    :hasChild data:Pia_Maria_of_Orléans-Braganza ;
+    :hasDaughter data:Pia_Maria_of_Orléans-Braganza ;
+    :hasRelation data:Luís_de_Orléans_e_Bragança,
+        data:Pia_Maria_of_Orléans-Braganza ;
+    :hasSex data:male ;
+    :isAncestorOf data:Pia_Maria_of_Orléans-Braganza ;
+    :isBloodrelationOf data:Luís_de_Orléans_e_Bragança ;
+    :isBrotherOf data:Luís_de_Orléans_e_Bragança ;
+    :isFatherOf data:Pia_Maria_of_Orléans-Braganza ;
+    :isParentOf data:Pia_Maria_of_Orléans-Braganza ;
+    :isSiblingOf data:Luís_de_Orléans_e_Bragança ;
+    :isUncleOf data:Pia_Maria_of_Orléans-Braganza .
+
+data:Pia_Maria_of_Orléans-Braganza a :Person,
+        :Woman ;
+    rdfs:label "Pia Maria of Orléans-Braganza"^^xsd:string ;
+    data:wdtLink wdt:Q3382159 ;
+    :alsoKnownAs "Pia Maria Raniera de Orléans e Bragança"^^xsd:string,
+        "Pia Maria de Orléans-Bragança e Borbon"^^xsd:string ;
+    :hasAncestor data:Luís_de_Orléans_e_Bragança ;
+    :hasFather data:Luís_de_Orléans_e_Bragança ;
+    :hasParent data:Luís_de_Orléans_e_Bragança ;
+    :hasRelation data:Luís_de_Orléans_e_Bragança,
+        data:Pia_Maria_of_Orléans-Braganza ;
+    :hasSex data:female ;
+    :hasSister data:Pia_Maria_of_Orléans-Braganza ;
+    :isBloodrelationOf data:Pia_Maria_of_Orléans-Braganza ;
+    :isChildOf data:Luís_de_Orléans_e_Bragança ;
+    :isDaughterOf data:Luís_de_Orléans_e_Bragança ;
+    :isSiblingOf data:Pia_Maria_of_Orléans-Braganza ;
+    :isSisterOf data:Pia_Maria_of_Orléans-Braganza .
+

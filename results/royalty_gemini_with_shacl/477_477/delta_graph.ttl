@@ -2,31 +2,56 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Infanta_Sofia_of_Spain a :Person,
-        :Woman ;
-    :hasBirthYear 2007 ;
-    :hasFather data:King_Felipe_VI ;
-    :hasMother data:Queen_Letizia ;
-    :isSisterOf data:Leonor_Princess_of_Asturias .
-
-data:King_Felipe_VI a :Ancestor,
-        :Man,
+data:Alexander_son_of_Alexander a :Man,
         :Person ;
-    :hasFather data:King_Juan_Carlos_I ;
-    :hasMother data:Queen_Sofia .
+    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
 
-data:King_Juan_Carlos_I a :Ancestor,
-        :Man,
-        :Person .
-
-data:Leonor_Princess_of_Asturias a :Person,
+data:Aspasia_of_Greece_and_Denmark a :Person,
         :Woman .
 
-data:Queen_Letizia a :Ancestor,
+data:Ignacio_de_Medina a :Man,
+        :Person .
+
+data:Katherine_Clairy_Batis a :Person,
+        :Woman ;
+    :hasFather data:Robert_Batis ;
+    :hasMother data:Anna_Dosti .
+
+data:Peter_son_of_Alexander a :Man,
+        :Person ;
+    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+
+data:Philip_son_of_Alexander a :Man,
+        :Person ;
+    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+
+data:Alexandra_of_Greece_and_Denmark a :Ancestor,
         :Person,
         :Woman .
 
-data:Queen_Sofia a :Ancestor,
+data:Anna_Dosti a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Peter_II a :Ancestor,
+        :Man,
+        :Person .
+
+data:Robert_Batis a :Ancestor,
+        :Man,
+        :Person .
+
+data:Alexander_Kara%C4%91or%C4%91evi%C4%87 a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1945 ;
+    :hasFather data:Peter_II ;
+    :hasMother data:Alexandra_of_Greece_and_Denmark .
+
+data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza a :Ancestor,
         :Person,
         :Woman .
 

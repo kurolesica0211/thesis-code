@@ -85,38 +85,26 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón, Lord of Tejada GE (born 17 July 1998), widely known as Froilán, is the elder child and only son of Infanta Elena, Duchess of Lugo, and Jaime de Marichalar.
-He is the maternal-line grandson of King Juan Carlos I and Queen Sofía of Spain, and the nephew of King Felipe VI.
-He is the paternal-line grandson of Amalio de Marichalar y Bruguera, VIII Count of Ripalda and Concepción Sáenz de Tejada, Lady of Tejada.
-He is fourth in the line of succession to the Spanish throne, after his cousins (King Felipe's daughters) Leonor, Princess of Asturias, and Infanta Sofía of Spain and his mother, Elena.
-He has a sister two years younger, Victoria de Marichalar y Borbón.
-Early life
+Victoria Federica de Todos los Santos de Marichalar y Borbón, Lady of Tejada GE (born 9 September 2000) is the younger child and only daughter of Infanta Elena, Duchess of Lugo, and Jaime de Marichalar.
+She is a granddaughter of King Juan Carlos I and Queen Sofía of Spain and a niece of King Felipe VI.
+Victoria is fifth in the line of succession to the Spanish throne after her cousins, King Felipe's daughters Leonor, Princess of Asturias, and Infanta Sofía; her mother; and her brother, Felipe.
+Early life and education
 
-Birth and christening
+Victoria de Marichalar y Borbón was born 9 September 2000 at 13:00 in Ruber International Hospital in Madrid.
+She made her first Holy Communion on 27 May 2009 at the Dominicos Church in Alcobendas, Spain.
+Then she studied at a British boarding school for 3 years before returning to Spain at St. George's de La Moraleja.
+Victoria studied ballet and horse riding.
+Career
 
-Felipe de Marichalar y Borbón was born on 17 July 1998 at Ruber International Hospital in Madrid.
-He was baptized on Sunday 4 October 1998 day of the feast of San Francisco de Asis and on the eve of San Froilán, patron of Lugo, the mass was celebrated in the audience hall of the Zarzuela Palace.
-His godparents were his maternal grandfather, Juan Carlos of Spain, and his paternal grandmother, Concepción Sáez de Tejada y Fernández de Boadilla, Dowager Countess of Ripalda (1929–2014).
-Froilán took a course at Cottesmore, a boarding prep school in West Sussex, to return the following year, in 2011, to Colegio Santa María del Pilar in Madrid, where he remained for three years.
-On 9 April 2012, Felipe de Marichalar accidentally shot himself in his right foot while he was on a farm of his father's family in Garray (Soria).
-The judge dismissed the case against Jaime de Marichalar, considering it not gross negligence but a small misdemeanor.
-The tuition, which for each course amounted to $45,000, was paid for by his maternal grandfather King Juan Carlos I.
-
-
-He then began his higher education studies, majoring in Business Administration and Management at the College for International Studies in Madrid, a Spanish Higher Education institution associated with Endicott College.
-In January 2023 it was announced that Felipe would be going to live in the United Arab Emirates with his grandfather, Juan Carlos I. Froilán will work for the ADNOC oil company, owned by the Minister of Advanced Technology of the United Arab Emirates, Sultan Ahmed Al-Jaber.
-Titles, styles, honours and arms
-
-He is styled as The Most Excellent Don Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón, Grandee of Spain and Caballero Divisoro Hijodalgo of the Illustrious Solar de Tejada
-
-
-References
+Marichalar has been reported to be working in the fashion industry and is quoted as saying that fashion is her "true calling".
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -132,39 +120,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -179,6 +137,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -196,6 +171,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -263,29 +253,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -294,6 +276,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -306,6 +296,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -314,17 +306,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -352,6 +346,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -367,154 +445,174 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (015f93d6-9fda-4f32-84a1-bae94945b872)
- Call ID: 015f93d6-9fda-4f32-84a1-bae94945b872
+  AssignClass (1e4f790d-87a2-4880-9a8d-3abc06fb89b7)
+ Call ID: 1e4f790d-87a2-4880-9a8d-3abc06fb89b7
   Args:
-    source: Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón
-    type: :Man
-  AssignClass (04ee844a-cc62-42b7-8a06-06b4a81fb1ef)
- Call ID: 04ee844a-cc62-42b7-8a06-06b4a81fb1ef
-  Args:
+    source: Victoria Federica de Todos los Santos de Marichalar y Borbón
     type: :Person
-    source: Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón
-  AssignClass (4b8d7d51-c100-4d86-9956-422719c34900)
- Call ID: 4b8d7d51-c100-4d86-9956-422719c34900
+  AssignClass (0a44994f-186d-47be-880f-a77a6da9bb72)
+ Call ID: 0a44994f-186d-47be-880f-a77a6da9bb72
   Args:
     type: :Woman
-    source: Infanta Elena, Duchess of Lugo
-  AssignClass (a9d05820-fcce-4beb-9098-8812f7ef02d0)
- Call ID: a9d05820-fcce-4beb-9098-8812f7ef02d0
-  Args:
-    source: Infanta Elena, Duchess of Lugo
-    type: :Person
-  AssignClass (d6b1b2f7-56d2-49a2-80a6-afb4ddf27938)
- Call ID: d6b1b2f7-56d2-49a2-80a6-afb4ddf27938
-  Args:
-    type: :Man
-    source: Jaime de Marichalar
-  AssignClass (3c6379b3-ad90-460a-9a99-ff83bb9ea598)
- Call ID: 3c6379b3-ad90-460a-9a99-ff83bb9ea598
-  Args:
-    source: Jaime de Marichalar
-    type: :Person
-  AssignClass (26ab9954-f96a-4c8d-a153-5c01500b1908)
- Call ID: 26ab9954-f96a-4c8d-a153-5c01500b1908
-  Args:
-    type: :Man
-    source: King Juan Carlos I
-  AssignClass (f27d2ff5-0bbe-4f53-96ca-961bf99f7c05)
- Call ID: f27d2ff5-0bbe-4f53-96ca-961bf99f7c05
-  Args:
-    type: :Person
-    source: King Juan Carlos I
-  AssignClass (f488595e-d1c9-4031-8d84-5deb1b16772e)
- Call ID: f488595e-d1c9-4031-8d84-5deb1b16772e
-  Args:
-    source: Queen Sofía of Spain
-    type: :Woman
-  AssignClass (93729ffb-2f1f-4c60-967b-eb3f1e4cce83)
- Call ID: 93729ffb-2f1f-4c60-967b-eb3f1e4cce83
-  Args:
-    type: :Person
-    source: Queen Sofía of Spain
-  AssignClass (b134725c-509b-46fe-a75f-848b2dd53b76)
- Call ID: b134725c-509b-46fe-a75f-848b2dd53b76
-  Args:
-    type: :Man
-    source: Amalio de Marichalar y Bruguera
-  AssignClass (8ae640a6-21c9-494b-af1d-4648961f3d70)
- Call ID: 8ae640a6-21c9-494b-af1d-4648961f3d70
-  Args:
-    source: Amalio de Marichalar y Bruguera
-    type: :Person
-  AssignClass (03a93cd7-e532-4107-8b32-37fc1707e704)
- Call ID: 03a93cd7-e532-4107-8b32-37fc1707e704
-  Args:
-    source: Concepción Sáenz de Tejada
-    type: :Woman
-  AssignClass (66699d29-919e-4df9-b682-07cff9ec117b)
- Call ID: 66699d29-919e-4df9-b682-07cff9ec117b
-  Args:
-    source: Concepción Sáenz de Tejada
-    type: :Person
-  AssignClass (21301712-0488-4d9e-9498-03d953ba147b)
- Call ID: 21301712-0488-4d9e-9498-03d953ba147b
-  Args:
-    type: :Woman
-    source: Victoria de Marichalar y Borbón
-  AssignClass (eea80ad1-dfef-40d6-9174-30cb33ea10e3)
- Call ID: eea80ad1-dfef-40d6-9174-30cb33ea10e3
-  Args:
-    source: Victoria de Marichalar y Borbón
-    type: :Person
-  AddLiteral (d7fde4d8-8cb2-45ad-9f75-751a9a9db6f3)
- Call ID: d7fde4d8-8cb2-45ad-9f75-751a9a9db6f3
-  Args:
-    literal_type: xsd:string
-    relation: :knownAs
-    source: Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón
-    literal_value: Froilán
-  AddLiteral (37a15af9-4e76-44da-b906-8dc3932098bd)
- Call ID: 37a15af9-4e76-44da-b906-8dc3932098bd
+    source: Victoria Federica de Todos los Santos de Marichalar y Borbón
+  AddLiteral (d2a7256b-6d86-44fe-97b1-a6c7e5de2725)
+ Call ID: d2a7256b-6d86-44fe-97b1-a6c7e5de2725
   Args:
     literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón
-    literal_value: 1998
-  AddTriple (150c8116-c62b-4f08-ada7-9cc98ae95c61)
- Call ID: 150c8116-c62b-4f08-ada7-9cc98ae95c61
+    literal_value: 2000
+    source: Victoria Federica de Todos los Santos de Marichalar y Borbón
+  AssignClass (2515b256-dfbb-4527-a77f-3303bb581962)
+ Call ID: 2515b256-dfbb-4527-a77f-3303bb581962
   Args:
+    type: :Person
+    source: Infanta Elena, Duchess of Lugo
+  AssignClass (93ab3570-572e-4798-aa79-67ea20b53ded)
+ Call ID: 93ab3570-572e-4798-aa79-67ea20b53ded
+  Args:
+    source: Infanta Elena, Duchess of Lugo
+    type: :Woman
+  AssignClass (22f33b4b-eb41-418c-9649-90ee2d954fdb)
+ Call ID: 22f33b4b-eb41-418c-9649-90ee2d954fdb
+  Args:
+    type: :Person
+    source: Jaime de Marichalar
+  AssignClass (eafa4c1e-454d-4c75-92a8-4324c103b372)
+ Call ID: eafa4c1e-454d-4c75-92a8-4324c103b372
+  Args:
+    source: Jaime de Marichalar
+    type: :Man
+  AddTriple (8fd10c63-d515-4a12-9fe3-bc6a1b381f89)
+ Call ID: 8fd10c63-d515-4a12-9fe3-bc6a1b381f89
+  Args:
+    relation: :hasMother
     target: Infanta Elena, Duchess of Lugo
-    relation: :hasMother
-    source: Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón
-  AddTriple (5c5b6391-b99f-423e-8701-8a51aadc2c0d)
- Call ID: 5c5b6391-b99f-423e-8701-8a51aadc2c0d
+    source: Victoria Federica de Todos los Santos de Marichalar y Borbón
+  AddTriple (e729b6bb-745f-4fe4-b57d-27a5b3689064)
+ Call ID: e729b6bb-745f-4fe4-b57d-27a5b3689064
   Args:
-    relation: :hasFather
     target: Jaime de Marichalar
-    source: Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón
-  AddTriple (99441dea-72ee-4b01-a113-97f630e9abbf)
- Call ID: 99441dea-72ee-4b01-a113-97f630e9abbf
+    source: Victoria Federica de Todos los Santos de Marichalar y Borbón
+    relation: :hasFather
+  AssignClass (826deb4e-eb37-45bf-90d8-080105e55b82)
+ Call ID: 826deb4e-eb37-45bf-90d8-080105e55b82
   Args:
-    source: Infanta Elena, Duchess of Lugo
-    relation: :hasMother
-    target: Queen Sofía of Spain
-  AddTriple (f1f0a3da-de6e-4743-89a1-869a457d72d7)
- Call ID: f1f0a3da-de6e-4743-89a1-869a457d72d7
+    source: King Juan Carlos I
+    type: :Person
+  AssignClass (1741993c-633d-44a6-af4f-2fb2c36daf14)
+ Call ID: 1741993c-633d-44a6-af4f-2fb2c36daf14
   Args:
-    source: Infanta Elena, Duchess of Lugo
+    source: King Juan Carlos I
+    type: :Man
+  AssignClass (ad6eac5d-bf1d-4dd0-9fbe-95de4e195cfc)
+ Call ID: ad6eac5d-bf1d-4dd0-9fbe-95de4e195cfc
+  Args:
+    source: Queen Sofía of Spain
+    type: :Person
+  AssignClass (9dd6560e-1eea-44e9-b587-cb6b0a268e97)
+ Call ID: 9dd6560e-1eea-44e9-b587-cb6b0a268e97
+  Args:
+    type: :Woman
+    source: Queen Sofía of Spain
+  AddTriple (b9563002-878b-4a15-9fb3-b7cc0a67bdd7)
+ Call ID: b9563002-878b-4a15-9fb3-b7cc0a67bdd7
+  Args:
+    relation: :hasParent
     target: King Juan Carlos I
-    relation: :hasFather
-  AddTriple (9c407560-9d30-4617-b173-d4f136f185b6)
- Call ID: 9c407560-9d30-4617-b173-d4f136f185b6
+    source: Infanta Elena, Duchess of Lugo
+  AddTriple (70c48f3b-4051-4cee-b3ce-4c97f7bb30e3)
+ Call ID: 70c48f3b-4051-4cee-b3ce-4c97f7bb30e3
   Args:
-    source: Jaime de Marichalar
-    target: Amalio de Marichalar y Bruguera
-    relation: :hasFather
-  AddTriple (cac8e128-994c-45d4-8f8f-6fa35b804867)
- Call ID: cac8e128-994c-45d4-8f8f-6fa35b804867
+    relation: :hasParent
+    source: Infanta Elena, Duchess of Lugo
+    target: Queen Sofía of Spain
+  AssignClass (8323c9b5-ffd3-430d-bd1d-abe5630ba377)
+ Call ID: 8323c9b5-ffd3-430d-bd1d-abe5630ba377
   Args:
-    target: Concepción Sáenz de Tejada
+    type: :Person
+    source: King Felipe VI
+  AssignClass (a1b4dbb0-68a7-4858-b5af-cd4426457672)
+ Call ID: a1b4dbb0-68a7-4858-b5af-cd4426457672
+  Args:
+    source: King Felipe VI
+    type: :Man
+  AddTriple (55636d80-160b-4800-b63f-5feeecc7b2a0)
+ Call ID: 55636d80-160b-4800-b63f-5feeecc7b2a0
+  Args:
+    relation: :hasParent
+    target: King Juan Carlos I
+    source: King Felipe VI
+  AddTriple (2749bcb8-2155-4dcf-a43e-5c9064fced79)
+ Call ID: 2749bcb8-2155-4dcf-a43e-5c9064fced79
+  Args:
+    source: King Felipe VI
+    target: Queen Sofía of Spain
+    relation: :hasParent
+  AssignClass (23df1448-2db3-499b-abee-496218fc391e)
+ Call ID: 23df1448-2db3-499b-abee-496218fc391e
+  Args:
+    type: :Person
+    source: Felipe
+  AssignClass (56449d8b-9ab3-4e41-8894-8a50f44592c8)
+ Call ID: 56449d8b-9ab3-4e41-8894-8a50f44592c8
+  Args:
+    source: Felipe
+    type: :Man
+  AddTriple (309952f9-92a8-4859-aa40-21c64d891a13)
+ Call ID: 309952f9-92a8-4859-aa40-21c64d891a13
+  Args:
     relation: :hasMother
-    source: Jaime de Marichalar
-  AddTriple (81140379-6005-48b5-be67-9fd146738639)
- Call ID: 81140379-6005-48b5-be67-9fd146738639
-  Args:
-    source: Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón
-    target: Victoria de Marichalar y Borbón
-    relation: :hasSister
-  AddTriple (a7ad60f8-31d1-4042-8779-21fe30f0290c)
- Call ID: a7ad60f8-31d1-4042-8779-21fe30f0290c
-  Args:
-    source: Victoria de Marichalar y Borbón
-    relation: :hasMother
+    source: Felipe
     target: Infanta Elena, Duchess of Lugo
-  AddTriple (3e01f368-98ab-48c9-b70b-ac922dd11086)
- Call ID: 3e01f368-98ab-48c9-b70b-ac922dd11086
+  AddTriple (ce1df591-c442-4321-8b1c-0cc525c80986)
+ Call ID: ce1df591-c442-4321-8b1c-0cc525c80986
+  Args:
+    source: Felipe
+    target: Jaime de Marichalar
+    relation: :hasFather
+  AssignClass (acd2ec23-ef31-4e9d-8c2f-92329bbd8e84)
+ Call ID: acd2ec23-ef31-4e9d-8c2f-92329bbd8e84
+  Args:
+    source: Leonor, Princess of Asturias
+    type: :Person
+  AssignClass (aedfeb8b-92af-4d47-aef0-992db7f5df77)
+ Call ID: aedfeb8b-92af-4d47-aef0-992db7f5df77
+  Args:
+    source: Leonor, Princess of Asturias
+    type: :Woman
+  AssignClass (86a92449-2de5-482b-9c47-2eb329b1bb0d)
+ Call ID: 86a92449-2de5-482b-9c47-2eb329b1bb0d
+  Args:
+    type: :Person
+    source: Infanta Sofía
+  AssignClass (10d1881a-14db-49be-9497-3db514fdebc8)
+ Call ID: 10d1881a-14db-49be-9497-3db514fdebc8
+  Args:
+    source: Infanta Sofía
+    type: :Woman
+  AddTriple (eb330f40-80d9-4a6b-84ab-da026dbd8577)
+ Call ID: eb330f40-80d9-4a6b-84ab-da026dbd8577
+  Args:
+    source: Leonor, Princess of Asturias
+    target: King Felipe VI
+    relation: :hasFather
+  AddTriple (b2738b7e-f201-4e27-a58f-8b00eb10fda4)
+ Call ID: b2738b7e-f201-4e27-a58f-8b00eb10fda4
   Args:
     relation: :hasFather
-    target: Jaime de Marichalar
-    source: Victoria de Marichalar y Borbón
+    target: King Felipe VI
+    source: Infanta Sofía
+  Finish (288d0e9c-8f46-4815-8a23-cc9154b4c0bf)
+ Call ID: 288d0e9c-8f46-4815-8a23-cc9154b4c0bf
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -627,19 +725,37 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n a :Man,
+  data:Felipe a :Man,
           :Person ;
-      :hasBirthYear 1998 ;
       :hasFather data:Jaime_de_Marichalar ;
-      :hasMother data:Infanta_Elena%2C_Duchess_of_Lugo ;
-      :hasSister data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
-      :knownAs "Froilán"^^xsd:string .
+      :hasMother data:Infanta_Elena%2C_Duchess_of_Lugo .
 
-  data:Amalio_de_Marichalar_y_Bruguera a :Man,
+  data:Infanta_Sof%C3%ADa a :Person,
+          :Woman ;
+      :hasFather data:King_Felipe_VI .
+
+  data:Leonor%2C_Princess_of_Asturias a :Person,
+          :Woman ;
+      :hasFather data:King_Felipe_VI .
+
+  data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n a :Person,
+          :Woman ;
+      :hasBirthYear 2000 ;
+      :hasFather data:Jaime_de_Marichalar ;
+      :hasMother data:Infanta_Elena%2C_Duchess_of_Lugo .
+
+  data:Infanta_Elena%2C_Duchess_of_Lugo a :Person,
+          :Woman ;
+      :hasParent data:King_Juan_Carlos_I,
+          data:Queen_Sof%C3%ADa_of_Spain .
+
+  data:Jaime_de_Marichalar a :Man,
           :Person .
 
-  data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada a :Person,
-          :Woman .
+  data:King_Felipe_VI a :Man,
+          :Person ;
+      :hasParent data:King_Juan_Carlos_I,
+          data:Queen_Sof%C3%ADa_of_Spain .
 
   data:King_Juan_Carlos_I a :Man,
           :Person .
@@ -647,30 +763,7 @@ The final data graph after all the edits:
   data:Queen_Sof%C3%ADa_of_Spain a :Person,
           :Woman .
 
-  data:Victoria_de_Marichalar_y_Borb%C3%B3n a :Person,
-          :Woman ;
-      :hasFather data:Jaime_de_Marichalar ;
-      :hasMother data:Infanta_Elena%2C_Duchess_of_Lugo .
 
-  data:Infanta_Elena%2C_Duchess_of_Lugo a :Person,
-          :Woman ;
-      :hasFather data:King_Juan_Carlos_I ;
-      :hasMother data:Queen_Sof%C3%ADa_of_Spain .
-
-  data:Jaime_de_Marichalar a :Man,
-          :Person ;
-      :hasFather data:Amalio_de_Marichalar_y_Bruguera ;
-      :hasMother data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (e271edf2-b784-4055-b7ed-ce72c426aa47)
- Call ID: e271edf2-b784-4055-b7ed-ce72c426aa47
-  Args:
 
 ================================= Tool Message =================================
 
@@ -680,206 +773,254 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (6503cd67-c515-48ab-8754-44f3687a0699)
- Call ID: 6503cd67-c515-48ab-8754-44f3687a0699
+  ValidateShacl (b0d5e963-27b3-42f8-9be2-8677fa7e7d40)
+ Call ID: b0d5e963-27b3-42f8-9be2-8677fa7e7d40
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:24
+Total violations:30
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person node Amalio_de_Marichalar_y_Bruguera is missing the required class :Ancestor or :Man.
+      The value node 'Jaime_de_Marichalar' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Amalio_de_Marichalar_y_Bruguera', ':Ancestor')
+      AssignClass(node='Jaime_de_Marichalar', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person node Jaime_de_Marichalar is missing the required class :Ancestor or :Man.
+      The value node 'Infanta_Elena, Duchess of Lugo' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Jaime_de_Marichalar', ':Ancestor')
+      AssignClass(node='Infanta_Elena, Duchess of Lugo', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The person node Concepci%C3%B3n_S%C3%A1enz_de_Tejada is missing the required class :Ancestor or :Woman.
+      The value node 'King_Juan_Carlos_I' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Concepci%C3%B3n_S%C3%A1enz_de_Tejada', ':Ancestor')
+      AssignClass(node='King_Juan_Carlos_I', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The person node Infanta_Elena%2C_Duchess_of_Lugo is missing the required class :Ancestor or :Woman.
+      The value node 'Queen_Sofía_of_Spain' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Infanta_Elena%2C_Duchess_of_Lugo', ':Ancestor')
+      AssignClass(node='Queen_Sofía_of_Spain', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person node Jaime_de_Marichalar is missing the required class :Ancestor or :Man.
+      The value node 'King_Felipe_VI' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Jaime_de_Marichalar', ':Ancestor')
+      AssignClass(node='King_Felipe_VI', class=':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person node Jaime_de_Marichalar is missing the required class :Ancestor or :Man.
+      The value node 'Jaime_de_Marichalar' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Jaime_de_Marichalar', ':Ancestor')
+      AssignClass(node='Jaime_de_Marichalar', class=':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person node King_Juan_Carlos_I is missing the required class :Ancestor or :Man.
+      The value node 'King_Felipe_VI' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Juan_Carlos_I', ':Ancestor')
+      AssignClass(node='King_Felipe_VI', class=':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person node Amalio_de_Marichalar_y_Bruguera is missing the required class :Ancestor or :Man.
+      The value node 'Jaime_de_Marichalar' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Amalio_de_Marichalar_y_Bruguera', ':Ancestor')
+      AssignClass(node='Jaime_de_Marichalar', class=':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person node Infanta_Elena%2C_Duchess_of_Lugo is missing the required class :Ancestor or :Woman.
+      The value node 'Infanta_Elena, Duchess of Lugo' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Infanta_Elena%2C_Duchess_of_Lugo', ':Ancestor')
+      AssignClass(node='Infanta_Elena, Duchess of Lugo', class=':Ancestor')
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person node Infanta_Elena%2C_Duchess_of_Lugo is missing the required class :Ancestor or :Woman.
+      The value node 'Infanta_Elena, Duchess of Lugo' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Infanta_Elena%2C_Duchess_of_Lugo', ':Ancestor')
+      AssignClass(node='Infanta_Elena, Duchess of Lugo', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The person node Queen_Sof%C3%ADa_of_Spain is missing the required class :Ancestor or :Woman.
+      The value node 'King_Juan_Carlos_I' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Sof%C3%ADa_of_Spain', ':Ancestor')
+      AssignClass(node='King_Juan_Carlos_I', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The person node Concepci%C3%B3n_S%C3%A1enz_de_Tejada is missing the required class :Ancestor or :Woman.
+      The value node 'Queen_Sofía_of_Spain' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Concepci%C3%B3n_S%C3%A1enz_de_Tejada', ':Ancestor')
+      AssignClass(node='Queen_Sofía_of_Spain', class=':Ancestor')
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The person node Jaime_de_Marichalar is missing the required class :Ancestor or :Man.
+      The value node 'King_Juan_Carlos_I' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Jaime_de_Marichalar', ':Ancestor')
+      AssignClass(node='King_Juan_Carlos_I', class=':Ancestor')
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The person node Jaime_de_Marichalar is missing the required class :Ancestor or :Man.
+      The value node 'Queen_Sofía_of_Spain' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Jaime_de_Marichalar', ':Ancestor')
+      AssignClass(node='Queen_Sofía_of_Spain', class=':Ancestor')
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person node King_Juan_Carlos_I is missing the required class :Ancestor or :Man.
+      The value node 'King_Felipe_VI' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Juan_Carlos_I', ':Ancestor')
+      AssignClass(node='King_Felipe_VI', class=':Ancestor')
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person node Amalio_de_Marichalar_y_Bruguera is missing the required class :Ancestor or :Man.
+      The value node 'Jaime_de_Marichalar' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Amalio_de_Marichalar_y_Bruguera', ':Ancestor')
+      AssignClass(node='Jaime_de_Marichalar', class=':Ancestor')
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person node Infanta_Elena%2C_Duchess_of_Lugo is missing the required class :Ancestor or :Woman.
+      The value node 'King_Felipe_VI' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Infanta_Elena%2C_Duchess_of_Lugo', ':Ancestor')
+      AssignClass(node='King_Felipe_VI', class=':Ancestor')
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person node Infanta_Elena%2C_Duchess_of_Lugo is missing the required class :Ancestor or :Woman.
+      The value node 'Jaime_de_Marichalar' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Infanta_Elena%2C_Duchess_of_Lugo', ':Ancestor')
+      AssignClass(node='Jaime_de_Marichalar', class=':Ancestor')
 
 
   Violation [19]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person node Queen_Sof%C3%ADa_of_Spain is missing the required class :Ancestor or :Woman.
+      The value node 'Infanta_Elena, Duchess of Lugo' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Sof%C3%ADa_of_Spain', ':Ancestor')
+      AssignClass(node='Infanta_Elena, Duchess of Lugo', class=':Ancestor')
 
 
   Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person node Concepci%C3%B3n_S%C3%A1enz_de_Tejada is missing the required class :Ancestor or :Woman.
+      The value node 'Infanta_Elena, Duchess of Lugo' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Concepci%C3%B3n_S%C3%A1enz_de_Tejada', ':Ancestor')
+      AssignClass(node='Infanta_Elena, Duchess of Lugo', class=':Ancestor')
 
 
   Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The person node Jaime_de_Marichalar is missing the required class :Ancestor or :Man.
+      The value node 'King_Juan_Carlos_I' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Jaime_de_Marichalar', ':Ancestor')
+      AssignClass(node='King_Juan_Carlos_I', class=':Ancestor')
 
 
   Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The person node King_Juan_Carlos_I is missing the required class :Ancestor or :Man.
+      The value node 'Queen_Sofía_of_Spain' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Juan_Carlos_I', ':Ancestor')
+      AssignClass(node='Queen_Sofía_of_Spain', class=':Ancestor')
 
 
   Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The person node Infanta_Elena%2C_Duchess_of_Lugo is missing the required class :Ancestor or :Woman.
+      The value node 'King_Juan_Carlos_I' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Infanta_Elena%2C_Duchess_of_Lugo', ':Ancestor')
+      AssignClass(node='King_Juan_Carlos_I', class=':Ancestor')
 
 
   Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The value node 'Queen_Sofía_of_Spain' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Sofía_of_Spain', class=':Ancestor')
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Jaime_de_Marichalar' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Jaime_de_Marichalar', class=':Ancestor')
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'King_Felipe_VI' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Felipe_VI', class=':Ancestor')
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'King_Felipe_VI' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Felipe_VI', class=':Ancestor')
+
+
+  Violation [28]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person node Queen_Sof%C3%ADa_of_Spain is missing the required class :Ancestor or :Woman.
+      The value node 'Infanta_Elena, Duchess of Lugo' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Sof%C3%ADa_of_Spain', ':Ancestor')
+      AssignClass(node='Infanta_Elena, Duchess of Lugo', class=':Ancestor')
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The value node 'King_Juan_Carlos_I' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Juan_Carlos_I', class=':Ancestor')
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The value node 'Queen_Sofía_of_Spain' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Queen_Sofía_of_Spain', class=':Ancestor')
 
 
 
@@ -888,40 +1029,34 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (3ee0416a-fdcd-4b22-97bf-f7e9229282a1)
- Call ID: 3ee0416a-fdcd-4b22-97bf-f7e9229282a1
+  AssignClass (f5d0c240-b070-40ff-affd-35b6da6da9d0)
+ Call ID: f5d0c240-b070-40ff-affd-35b6da6da9d0
   Args:
-    source: Amalio de Marichalar y Bruguera
     type: :Ancestor
-  AssignClass (4b5a8bc5-8c3c-4c52-b52f-68c770e43771)
- Call ID: 4b5a8bc5-8c3c-4c52-b52f-68c770e43771
-  Args:
     source: Jaime de Marichalar
-    type: :Ancestor
-  AssignClass (3ebce2e1-c557-4364-8e36-f3e143739c4c)
- Call ID: 3ebce2e1-c557-4364-8e36-f3e143739c4c
-  Args:
-    type: :Ancestor
-    source: Concepción Sáenz de Tejada
-  AssignClass (db9b03e9-d728-450d-9042-04b9f926d2e2)
- Call ID: db9b03e9-d728-450d-9042-04b9f926d2e2
+  AssignClass (51f6b7cd-20bf-4b1b-bbcf-6e747fda96bd)
+ Call ID: 51f6b7cd-20bf-4b1b-bbcf-6e747fda96bd
   Args:
     type: :Ancestor
     source: Infanta Elena, Duchess of Lugo
-  AssignClass (a78cb11b-ebca-47ea-9061-9befa48b3f38)
- Call ID: a78cb11b-ebca-47ea-9061-9befa48b3f38
+  AssignClass (efca776c-9890-4577-bb8b-0f2b66b9b2c4)
+ Call ID: efca776c-9890-4577-bb8b-0f2b66b9b2c4
   Args:
-    type: :Ancestor
     source: King Juan Carlos I
-  AssignClass (6a8c4e60-66f0-4b0d-9c99-894db86ff101)
- Call ID: 6a8c4e60-66f0-4b0d-9c99-894db86ff101
+    type: :Ancestor
+  AssignClass (6d5ed769-65db-4c5e-9e19-0bc792ad9cae)
+ Call ID: 6d5ed769-65db-4c5e-9e19-0bc792ad9cae
   Args:
     type: :Ancestor
     source: Queen Sofía of Spain
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+  AssignClass (74afba37-fa73-4f95-92f0-7d5263ac818a)
+ Call ID: 74afba37-fa73-4f95-92f0-7d5263ac818a
+  Args:
+    type: :Ancestor
+    source: King Felipe VI
+  Finish (964b3c30-493a-4721-af08-e9ca4de64cde)
+ Call ID: 964b3c30-493a-4721-af08-e9ca4de64cde
+  Args:
 
 ================================= Tool Message =================================
 
@@ -946,21 +1081,40 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Felipe_Juan_Froil%C3%A1n_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n a :Man,
+  data:Felipe a :Man,
           :Person ;
-      :hasBirthYear 1998 ;
       :hasFather data:Jaime_de_Marichalar ;
-      :hasMother data:Infanta_Elena%2C_Duchess_of_Lugo ;
-      :hasSister data:Victoria_de_Marichalar_y_Borb%C3%B3n ;
-      :knownAs "Froilán"^^xsd:string .
+      :hasMother data:Infanta_Elena%2C_Duchess_of_Lugo .
 
-  data:Amalio_de_Marichalar_y_Bruguera a :Ancestor,
+  data:Infanta_Sof%C3%ADa a :Person,
+          :Woman ;
+      :hasFather data:King_Felipe_VI .
+
+  data:Leonor%2C_Princess_of_Asturias a :Person,
+          :Woman ;
+      :hasFather data:King_Felipe_VI .
+
+  data:Victoria_Federica_de_Todos_los_Santos_de_Marichalar_y_Borb%C3%B3n a :Person,
+          :Woman ;
+      :hasBirthYear 2000 ;
+      :hasFather data:Jaime_de_Marichalar ;
+      :hasMother data:Infanta_Elena%2C_Duchess_of_Lugo .
+
+  data:Infanta_Elena%2C_Duchess_of_Lugo a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasParent data:King_Juan_Carlos_I,
+          data:Queen_Sof%C3%ADa_of_Spain .
+
+  data:Jaime_de_Marichalar a :Ancestor,
           :Man,
           :Person .
 
-  data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada a :Ancestor,
-          :Person,
-          :Woman .
+  data:King_Felipe_VI a :Ancestor,
+          :Man,
+          :Person ;
+      :hasParent data:King_Juan_Carlos_I,
+          data:Queen_Sof%C3%ADa_of_Spain .
 
   data:King_Juan_Carlos_I a :Ancestor,
           :Man,
@@ -970,31 +1124,18 @@ The final data graph after all the edits:
           :Person,
           :Woman .
 
-  data:Victoria_de_Marichalar_y_Borb%C3%B3n a :Person,
-          :Woman ;
-      :hasFather data:Jaime_de_Marichalar ;
-      :hasMother data:Infanta_Elena%2C_Duchess_of_Lugo .
-
-  data:Infanta_Elena%2C_Duchess_of_Lugo a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:King_Juan_Carlos_I ;
-      :hasMother data:Queen_Sof%C3%ADa_of_Spain .
-
-  data:Jaime_de_Marichalar a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Amalio_de_Marichalar_y_Bruguera ;
-      :hasMother data:Concepci%C3%B3n_S%C3%A1enz_de_Tejada .
 
 
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (541ebc7a-b667-4151-a9db-88568e5d4748)
- Call ID: 541ebc7a-b667-4151-a9db-88568e5d4748
+  ValidateShacl (45731319-ca40-400f-856e-0cd6eb98f11a)
+ Call ID: 45731319-ca40-400f-856e-0cd6eb98f11a
   Args:
 
 ================================= Tool Message =================================
@@ -1005,6 +1146,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (17c9d479-0b4e-4d23-9efa-2b1a1c7746d5)
- Call ID: 17c9d479-0b4e-4d23-9efa-2b1a1c7746d5
+  Finish (8d9d33ae-0574-4f74-b772-cdc32c3a2690)
+ Call ID: 8d9d33ae-0574-4f74-b772-cdc32c3a2690
   Args:

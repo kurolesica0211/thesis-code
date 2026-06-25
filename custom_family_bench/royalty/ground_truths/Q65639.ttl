@@ -7,10 +7,40 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Anton-Günther-_Duke_of_Oldenburg a :Person ;
+    rdfs:label "Anton-Günther, Duke of Oldenburg" ;
+    data:posIndicesFull "0:32" ;
+    data:posIndicesPart "1080:1084",
+        "1085:1090",
+        "1091:1098",
+        "1236:1240",
+        "1244:1253",
+        "1271:1275",
+        "1327:1336",
+        "1424:1428",
+        "1429:1434",
+        "1435:1442",
+        "1585:1589",
+        "1669:1673",
+        "296:300",
+        "313:322",
+        "406:410",
+        "411:416",
+        "417:424",
+        "481:485",
+        "489:498",
+        "676:685",
+        "737:741",
+        "795:804",
+        "808:817",
+        "885:889",
+        "893:902",
+        "927:936" ;
+    data:wdtLink wdt:Q65639 ;
+    :hasParent data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasSex data:male .
+
+data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Person ;
     rdfs:label "Frederick Augustus II, Grand Duke of Oldenburg" ;
     data:posIndicesFull "443:464" ;
     data:posIndicesPart "1080:1084",
@@ -41,49 +71,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Anton-Günther-_Duke_of_Oldenburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Anton-Günther, Duke of Oldenburg" ;
-    data:posIndicesFull "0:32" ;
-    data:posIndicesPart "1080:1084",
-        "1085:1090",
-        "1091:1098",
-        "1236:1240",
-        "1244:1253",
-        "1271:1275",
-        "1327:1336",
-        "1424:1428",
-        "1429:1434",
-        "1435:1442",
-        "1585:1589",
-        "1669:1673",
-        "296:300",
-        "313:322",
-        "406:410",
-        "411:416",
-        "417:424",
-        "481:485",
-        "489:498",
-        "676:685",
-        "737:741",
-        "795:804",
-        "808:817",
-        "885:889",
-        "893:902",
-        "927:936" ;
-    data:wdtLink wdt:Q65639 ;
-    :hasMother data:Princess_Helene_of_Waldeck_and_Pyrmont ;
-    :hasParent data:Princess_Helene_of_Waldeck_and_Pyrmont ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Helene_of_Waldeck_and_Pyrmont ;
-    :isSonOf data:Princess_Helene_of_Waldeck_and_Pyrmont .
-
-data:Princess_Helene_of_Waldeck_and_Pyrmont a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Helene_of_Waldeck_and_Pyrmont a :Person ;
     rdfs:label "Princess Helene of Waldeck and Pyrmont" ;
     data:posIndicesFull "354:392" ;
     data:posIndicesPart "1458:1466",
@@ -91,9 +79,9 @@ data:Princess_Helene_of_Waldeck_and_Pyrmont a :Ancestor,
         "579:586" ;
     data:wdtLink wdt:Q2280905 ;
     :alsoKnownAs "Princess Helena of Waldeck and Pyrmont" ;
-    :hasChild data:Anton-Günther-_Duke_of_Oldenburg ;
-    :hasSex data:female ;
-    :hasSon data:Anton-Günther-_Duke_of_Oldenburg ;
-    :isMotherOf data:Anton-Günther-_Duke_of_Oldenburg ;
-    :isParentOf data:Anton-Günther-_Duke_of_Oldenburg .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

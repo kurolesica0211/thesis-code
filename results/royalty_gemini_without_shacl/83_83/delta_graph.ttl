@@ -2,34 +2,38 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charles_III a :Man .
-
-data:August_Brooksbank a :Man ;
+data:August_Brooksbank a :Man,
+        :Person ;
     :hasFather data:Jack_Brooksbank ;
-    :hasMother data:Eugenie_Victoria_Helena ;
-    :isBrotherOf data:Ernest_Brooksbank .
+    :hasMother data:Eugenie_Victoria_Helena .
 
-data:Beatrice a :Woman ;
+data:Beatrice a :Person,
+        :Woman ;
     :hasFather data:Andrew_Mountbatten-Windsor ;
-    :hasMother data:Sarah_Ferguson ;
-    :isSisterOf data:Eugenie_Victoria_Helena .
+    :hasMother data:Sarah_Ferguson .
 
-data:Ernest_Brooksbank a :Man ;
+data:Charles_III a :Man,
+        :Person .
+
+data:Ernest_Brooksbank a :Man,
+        :Person ;
     :hasFather data:Jack_Brooksbank ;
-    :hasMother data:Eugenie_Victoria_Helena ;
-    :isBrotherOf data:August_Brooksbank .
+    :hasMother data:Eugenie_Victoria_Helena .
 
-data:Andrew_Mountbatten-Windsor a :Man .
+data:Andrew_Mountbatten-Windsor a :Man,
+        :Person .
 
-data:Sarah_Ferguson a :Woman .
-
-data:Eugenie_Victoria_Helena a :Woman ;
+data:Eugenie_Victoria_Helena a :Person,
+        :Woman ;
     :hasBirthYear 1990 ;
     :hasFather data:Andrew_Mountbatten-Windsor ;
     :hasMarriageYear 2018 ;
     :hasMother data:Sarah_Ferguson ;
-    :hasRelation data:Jack_Brooksbank ;
-    :isSisterOf data:Beatrice .
+    :hasRelation data:Jack_Brooksbank .
 
-data:Jack_Brooksbank a :Man .
+data:Sarah_Ferguson a :Person,
+        :Woman .
+
+data:Jack_Brooksbank a :Man,
+        :Person .
 

@@ -2,13 +2,23 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexandra_of_Greece a :Person,
+data:Alexandra a :Person,
         :Woman ;
     :hasFather data:Alexander ;
     :hasMother data:Aspasia_Manos .
 
-data:Princess_Katherine a :Person,
+data:George_Crown_Prince a :Man,
+        :Person ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Helen a :Person,
         :Woman ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Sophia_of_Prussia .
+
+data:Paul a :Man,
+        :Person ;
     :hasFather data:Constantine_I ;
     :hasMother data:Sophia_of_Prussia .
 
@@ -16,28 +26,23 @@ data:Alexander a :Ancestor,
         :Man,
         :Person ;
     :hasBirthYear 1893 ;
-    :hasBrother data:George_of_Greece,
-        data:Paul_of_Greece ;
     :hasDeathYear 1920 ;
     :hasFather data:Constantine_I ;
-    :hasMarriageYear 1919 ;
-    :hasMother data:Sophia_of_Prussia ;
-    :hasRelation data:Aspasia_Manos ;
-    :hasSister data:Helen_of_Romania .
+    :hasMother data:Sophia_of_Prussia .
+
+data:Aspasia_Manos a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Petros_Manos ;
+    :hasMother data:Maria_Argyropoulos .
 
 data:Frederick_III a :Ancestor,
         :Man,
         :Person .
 
-data:George_I_of_Greece a :Ancestor,
+data:George_I a :Ancestor,
         :Man,
         :Person .
-
-data:George_of_Greece a :Man,
-        :Person .
-
-data:Helen_of_Romania a :Person,
-        :Woman .
 
 data:Maria_Argyropoulos a :Ancestor,
         :Person,
@@ -47,9 +52,6 @@ data:Olga_Constantinovna a :Ancestor,
         :Person,
         :Woman .
 
-data:Paul_of_Greece a :Man,
-        :Person .
-
 data:Petros_Manos a :Ancestor,
         :Man,
         :Person .
@@ -58,16 +60,10 @@ data:Victoria_Princess_Royal a :Ancestor,
         :Person,
         :Woman .
 
-data:Aspasia_Manos a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Petros_Manos ;
-    :hasMother data:Maria_Argyropoulos .
-
 data:Constantine_I a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:George_I_of_Greece ;
+    :hasFather data:George_I ;
     :hasMother data:Olga_Constantinovna .
 
 data:Sophia_of_Prussia a :Ancestor,

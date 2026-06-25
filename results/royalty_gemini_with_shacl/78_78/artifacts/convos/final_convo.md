@@ -88,7 +88,6 @@ Please update the Knowledge Graph based on the provided data.
 Ashley Louis David Hicks (born 18 July 1963) is a British interior designer, author, photographer and artist.
 He is the only son of Lady Pamela Hicks (née Mountbatten) and David Nightingale Hicks.
 Hicks has designed interiors in Europe, the United States, and the United Kingdom.
-He also has a fabric line for Lee Jofa and furniture lines.
 Hicks is the grandson of Louis Mountbatten, 1st
 Earl Mountbatten of Burma.
 Early life and family
@@ -116,7 +115,6 @@ Career
 Hicks says his first decorating experience took place when he was 15 or 16 years old, when he decorated his room in a checkered black-and-white motif.
 Influenced by his father, Hicks studied painting and fine art, graduating from the Bath School of Art and Design and trained with the Architectural Association School of Architecture, in London.
 In 1997, Hicks began designing furniture at the Gem Palace in Jaipur, India.
-He describes the chair as "far more like the ancient Greek ones in its construction, than the Neoclassical revivals".
 When Hicks initially designed in India, he designed under the moniker of "Jantar Mantar".
 Hicks explains, "It means abracadabra, also hocus pocus, and is local slang for the Jaipur Observatory.
 "
@@ -126,7 +124,6 @@ In addition to interior and furniture design, Hicks produces various lines of fa
 Hicks also produced a series of Allegra Hicks shops as well as a collection of home accessories that were sold in these shops.
 In 2017, Hicks published his first book on his own work, Details, which also serves as a source book for his inspiration; published by IDEA Publishing, it sold out within a month.
 Hicks began photographing historic interiors for Cabana Magazine in 2016, ranging from a derelict glass factory in Murano, Venice, to grand English country houses like Houghton and Althorp.
-In 2017 he photographed and wrote a history of Buckingham Palace: The Interiors, published by Rizzoli in conjunction with the Royal Collection.
 Hicks is currently a contributing editor for Cabana Magazine.
 Hicks exhibited furniture and sculptural objects made by his own hands at New York's R and Company gallery in 2019,
 
@@ -135,7 +132,6 @@ Hicks has also regularly worked with various brands on product collaborations, i
 Personal life
 
 On 18 October 1990, Hicks married Italian designer, Marina Allegra Federica Silvia Tondato (born Turin, Italy, 20 May 1960), a daughter of physicist and musician Dr. Carlo Tondato and his wife, the former Rosy Maza, in Wheatley, Oxfordshire.
-He proposed to her over "Twiglets and apple juice at the Groucho Club" in Soho, London.
 From his first marriage, Hicks has two daughters:
 
 
@@ -154,6 +150,8 @@ Hicks decorated his partner Martina Mondadori's home in Milan, Italy, in 2020.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -169,39 +167,9 @@ Hicks decorated his partner Martina Mondadori's home in Milan, Italy, in 2020.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -216,6 +184,23 @@ Hicks decorated his partner Martina Mondadori's home in Milan, Italy, in 2020.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -233,6 +218,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -300,29 +300,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -331,6 +323,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -343,6 +343,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -351,17 +353,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -389,6 +393,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -404,260 +492,130 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5379e649-0225-4b40-9829-f043feeb7477)
- Call ID: 5379e649-0225-4b40-9829-f043feeb7477
+  AssignClass (c9151969-f801-414c-9962-24a3d7c4198c)
+ Call ID: c9151969-f801-414c-9962-24a3d7c4198c
   Args:
     type: :Man
     source: Ashley_Louis_David_Hicks
-  AssignClass (c07fce99-be5a-4bcc-9f80-d963d0584b4e)
- Call ID: c07fce99-be5a-4bcc-9f80-d963d0584b4e
-  Args:
-    type: :Person
-    source: Ashley_Louis_David_Hicks
-  AddLiteral (47e00bf6-070e-4212-bb76-bc60b53d9b0c)
- Call ID: 47e00bf6-070e-4212-bb76-bc60b53d9b0c
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1963
-    source: Ashley_Louis_David_Hicks
-    relation: :hasBirthYear
-  AssignClass (4d866f59-90b6-4d14-887a-2c7a8da332ea)
- Call ID: 4d866f59-90b6-4d14-887a-2c7a8da332ea
+  AssignClass (cfd09e4f-a8bd-4cc4-a908-a8752cf61f58)
+ Call ID: cfd09e4f-a8bd-4cc4-a908-a8752cf61f58
   Args:
     type: :Woman
     source: Lady_Pamela_Hicks
-  AssignClass (4cd1ed02-2fc6-4ff0-b12e-2fa5e3d107c7)
- Call ID: 4cd1ed02-2fc6-4ff0-b12e-2fa5e3d107c7
-  Args:
-    type: :Person
-    source: Lady_Pamela_Hicks
-  AssignClass (2c26c6e6-cd1a-4ead-be13-4818682cba1c)
- Call ID: 2c26c6e6-cd1a-4ead-be13-4818682cba1c
+  AssignClass (8d2ced93-61b6-4c11-aafd-46bae44887bc)
+ Call ID: 8d2ced93-61b6-4c11-aafd-46bae44887bc
   Args:
     type: :Man
     source: David_Nightingale_Hicks
-  AssignClass (8cd539e4-20d1-4faa-87e7-3a83a1027b54)
- Call ID: 8cd539e4-20d1-4faa-87e7-3a83a1027b54
+  AssignClass (1152765d-cdb6-4e6a-be46-1e457c2ca5d3)
+ Call ID: 1152765d-cdb6-4e6a-be46-1e457c2ca5d3
   Args:
-    type: :Person
-    source: David_Nightingale_Hicks
-  AddTriple (19aecc5c-4606-4bb1-96d5-b0edc58caa02)
- Call ID: 19aecc5c-4606-4bb1-96d5-b0edc58caa02
+    source: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
+    type: :Man
+  AssignClass (3b1a60db-eebc-4a80-9825-e71eeed459a2)
+ Call ID: 3b1a60db-eebc-4a80-9825-e71eeed459a2
   Args:
+    type: :Woman
+    source: Edwina_Brudenell
+  AssignClass (d28ba4df-d03f-48f6-96e0-253f4b65e257)
+ Call ID: d28ba4df-d03f-48f6-96e0-253f4b65e257
+  Args:
+    source: India_Hicks
+    type: :Woman
+  AssignClass (1ebac84c-537d-4f1f-8241-6c6e9cbbe422)
+ Call ID: 1ebac84c-537d-4f1f-8241-6c6e9cbbe422
+  Args:
+    type: :Woman
+    source: Marina_Allegra_Federica_Silvia_Tondato
+  AssignClass (e5dfce61-f998-4800-9f48-cb2d24380634)
+ Call ID: e5dfce61-f998-4800-9f48-cb2d24380634
+  Args:
+    type: :Man
+    source: Dr_Carlo_Tondato
+  AssignClass (f25983d6-6133-420c-8ca5-8be48636b0cc)
+ Call ID: f25983d6-6133-420c-8ca5-8be48636b0cc
+  Args:
+    type: :Woman
+    source: Rosy_Maza
+  AssignClass (6ba8a593-1396-4e1a-8e01-93b335519050)
+ Call ID: 6ba8a593-1396-4e1a-8e01-93b335519050
+  Args:
+    source: Kathryn_Katalina_Sharkey
+    type: :Woman
+  AssignClass (00f84c48-129b-4015-a29a-d0b7e4a3d6b1)
+ Call ID: 00f84c48-129b-4015-a29a-d0b7e4a3d6b1
+  Args:
+    source: William_T_Sharkey
+    type: :Man
+  AssignClass (d0a5f353-ac53-4494-b032-b4560c4c62e6)
+ Call ID: d0a5f353-ac53-4494-b032-b4560c4c62e6
+  Args:
+    source: Rosalie_Solis
+    type: :Woman
+  AddLiteral (6049994e-0de6-4788-abea-550dc4685850)
+ Call ID: 6049994e-0de6-4788-abea-550dc4685850
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: Ashley_Louis_David_Hicks
+    literal_value: 1963
+  AddTriple (3304351b-7e76-4f27-b6a5-039ac4750ef3)
+ Call ID: 3304351b-7e76-4f27-b6a5-039ac4750ef3
+  Args:
+    source: Ashley_Louis_David_Hicks
     relation: :hasFather
     target: David_Nightingale_Hicks
-    source: Ashley_Louis_David_Hicks
-  AddTriple (caed8062-56ba-4310-8534-7d3ab169f7b3)
- Call ID: caed8062-56ba-4310-8534-7d3ab169f7b3
+  AddTriple (0afbe418-cb4c-4ae1-b272-c65983a64a9d)
+ Call ID: 0afbe418-cb4c-4ae1-b272-c65983a64a9d
   Args:
     target: Lady_Pamela_Hicks
+    source: Ashley_Louis_David_Hicks
     relation: :hasMother
-    source: Ashley_Louis_David_Hicks
-  AssignClass (859a277b-265d-47b3-9670-4e193fec2492)
- Call ID: 859a277b-265d-47b3-9670-4e193fec2492
+  AddTriple (dc4aa265-fe96-4764-a5b4-0f846dec653e)
+ Call ID: dc4aa265-fe96-4764-a5b4-0f846dec653e
   Args:
-    type: :Man
-    source: Louis_Mountbatten
-  AssignClass (e35de4da-85ad-4b8e-a24a-faee2ee74bfb)
- Call ID: e35de4da-85ad-4b8e-a24a-faee2ee74bfb
-  Args:
-    type: :Person
-    source: Louis_Mountbatten
-  AddTriple (fc712b94-c4bb-4d5a-8005-f3d4889a4431)
- Call ID: fc712b94-c4bb-4d5a-8005-f3d4889a4431
-  Args:
-    relation: :hasAncestor
-    target: Louis_Mountbatten
-    source: Ashley_Louis_David_Hicks
-  AssignClass (ba1f2108-bdab-4698-84fd-b8d0b2f97991)
- Call ID: ba1f2108-bdab-4698-84fd-b8d0b2f97991
-  Args:
-    type: :Woman
     source: Edwina_Brudenell
-  AssignClass (65db1cae-0386-49d5-99d9-f9d91c18f243)
- Call ID: 65db1cae-0386-49d5-99d9-f9d91c18f243
+    relation: :isSisterOf
+    target: Ashley_Louis_David_Hicks
+  AddTriple (312440b8-c6b4-47af-9220-b2abd23ef9ac)
+ Call ID: 312440b8-c6b4-47af-9220-b2abd23ef9ac
   Args:
-    type: :Person
-    source: Edwina_Brudenell
-  AddTriple (44b7fade-4d89-4659-b07e-ebe181983540)
- Call ID: 44b7fade-4d89-4659-b07e-ebe181983540
-  Args:
-    target: Edwina_Brudenell
-    relation: :hasSister
-    source: Ashley_Louis_David_Hicks
-  AssignClass (130c5656-852c-4b7f-b8fc-19097102a3ea)
- Call ID: 130c5656-852c-4b7f-b8fc-19097102a3ea
-  Args:
-    type: :Woman
     source: India_Hicks
-  AssignClass (bfb09323-859e-4e1d-8413-9c388250a751)
- Call ID: bfb09323-859e-4e1d-8413-9c388250a751
+    relation: :isSisterOf
+    target: Ashley_Louis_David_Hicks
+  AddTriple (8a6e50b8-ac10-4d7e-bb4a-682fb3e757f1)
+ Call ID: 8a6e50b8-ac10-4d7e-bb4a-682fb3e757f1
   Args:
-    type: :Person
-    source: India_Hicks
-  AddTriple (9272f3c0-809d-4e3f-8163-726bf0566b44)
- Call ID: 9272f3c0-809d-4e3f-8163-726bf0566b44
-  Args:
-    target: India_Hicks
-    relation: :hasSister
+    target: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
     source: Ashley_Louis_David_Hicks
-  AssignClass (184b1c37-30cc-4ef9-9e27-e82728ffbfc7)
- Call ID: 184b1c37-30cc-4ef9-9e27-e82728ffbfc7
+    relation: :hasFather
+  AddTriple (6525ac29-42e6-443d-a25f-214fd47bfb2b)
+ Call ID: 6525ac29-42e6-443d-a25f-214fd47bfb2b
   Args:
-    type: :Woman
-    source: Marina_Allegra_Federica_Silvia_Tondato
-  AssignClass (a7bc24ed-1157-4bc0-945c-96b41e4747a4)
- Call ID: a7bc24ed-1157-4bc0-945c-96b41e4747a4
-  Args:
-    type: :Person
-    source: Marina_Allegra_Federica_Silvia_Tondato
-  AddLiteral (e9db084f-e257-450c-8ae7-2444dd8d2481)
- Call ID: e9db084f-e257-450c-8ae7-2444dd8d2481
-  Args:
-    source: Ashley_Louis_David_Hicks
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 1990
-  AssignClass (32d1c826-fddf-4c0a-9f4b-1075fffc88e6)
- Call ID: 32d1c826-fddf-4c0a-9f4b-1075fffc88e6
-  Args:
-    type: :Man
-    source: Carlo_Tondato
-  AssignClass (846c397d-bb7b-42ef-838a-95cb581e6ca4)
- Call ID: 846c397d-bb7b-42ef-838a-95cb581e6ca4
-  Args:
-    type: :Person
-    source: Carlo_Tondato
-  AssignClass (b6d192de-f352-448f-8895-cedde857f2bc)
- Call ID: b6d192de-f352-448f-8895-cedde857f2bc
-  Args:
-    type: :Woman
-    source: Rosy_Maza
-  AssignClass (b99c141b-3752-49c2-b352-0744c296e369)
- Call ID: b99c141b-3752-49c2-b352-0744c296e369
-  Args:
-    type: :Person
-    source: Rosy_Maza
-  AddTriple (161c55fd-34f6-4e61-8e32-e5cccb0ca473)
- Call ID: 161c55fd-34f6-4e61-8e32-e5cccb0ca473
-  Args:
+    target: Dr_Carlo_Tondato
     source: Marina_Allegra_Federica_Silvia_Tondato
     relation: :hasFather
-    target: Carlo_Tondato
-  AddTriple (3c947792-1c02-4ba5-be81-31c97b7d0d93)
- Call ID: 3c947792-1c02-4ba5-be81-31c97b7d0d93
+  AddTriple (1ff5366d-2b65-4a00-a8ee-f79acff39b36)
+ Call ID: 1ff5366d-2b65-4a00-a8ee-f79acff39b36
   Args:
-    source: Marina_Allegra_Federica_Silvia_Tondato
     relation: :hasMother
+    source: Marina_Allegra_Federica_Silvia_Tondato
     target: Rosy_Maza
-  AssignClass (ffd73819-55d3-4e1f-91be-1488cec56b6e)
- Call ID: ffd73819-55d3-4e1f-91be-1488cec56b6e
-  Args:
-    type: :Woman
-    source: Kathryn_Sharkey
-  AssignClass (20a04897-c9c2-4940-a2e0-801f52e25cc9)
- Call ID: 20a04897-c9c2-4940-a2e0-801f52e25cc9
-  Args:
-    type: :Person
-    source: Kathryn_Sharkey
-  AddLiteral (69ed402c-daab-43ee-a16b-dcd8e8b2513d)
- Call ID: 69ed402c-daab-43ee-a16b-dcd8e8b2513d
-  Args:
-    source: Ashley_Louis_David_Hicks
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 2015
-  AssignClass (bda060a1-2852-480e-8d6b-9cf5d682f4c3)
- Call ID: bda060a1-2852-480e-8d6b-9cf5d682f4c3
-  Args:
-    type: :Man
-    source: William_T_Sharkey
-  AssignClass (2bc51d1a-4561-43b5-875f-d3ad93281ac9)
- Call ID: 2bc51d1a-4561-43b5-875f-d3ad93281ac9
-  Args:
-    type: :Person
-    source: William_T_Sharkey
-  AssignClass (e63fc110-1a31-49bc-b194-46f1746908ae)
- Call ID: e63fc110-1a31-49bc-b194-46f1746908ae
-  Args:
-    type: :Woman
-    source: Rosalie_Solis
-  AssignClass (642eb11e-2ed5-40c7-95dd-0503cc9ae2a9)
- Call ID: 642eb11e-2ed5-40c7-95dd-0503cc9ae2a9
-  Args:
-    type: :Person
-    source: Rosalie_Solis
-  AddTriple (0c2b96bc-c0dc-4441-b796-37bb36a270d6)
- Call ID: 0c2b96bc-c0dc-4441-b796-37bb36a270d6
+  AddTriple (7d2cf8d9-0c78-4f2f-8202-1d8bd8151464)
+ Call ID: 7d2cf8d9-0c78-4f2f-8202-1d8bd8151464
   Args:
     target: William_T_Sharkey
+    source: Kathryn_Katalina_Sharkey
     relation: :hasFather
-    source: Kathryn_Sharkey
-  AddTriple (ca37091a-4f2f-4f02-bf3f-56172f93925f)
- Call ID: ca37091a-4f2f-4f02-bf3f-56172f93925f
+  AddTriple (ea1b4ccd-6e50-4cdf-b847-a8b63c0136a8)
+ Call ID: ea1b4ccd-6e50-4cdf-b847-a8b63c0136a8
   Args:
-    source: Kathryn_Sharkey
     target: Rosalie_Solis
+    source: Kathryn_Katalina_Sharkey
     relation: :hasMother
-  Finish (f78aec3e-c4b1-448b-afed-7fa2f063ec51)
- Call ID: f78aec3e-c4b1-448b-afed-7fa2f063ec51
+  Finish (170efb44-1f39-4ecc-ac37-0f76d292f85e)
+ Call ID: 170efb44-1f39-4ecc-ac37-0f76d292f85e
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -750,53 +708,39 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ashley_Louis_David_Hicks a :Man,
-          :Person ;
-      :hasAncestor data:Louis_Mountbatten ;
-      :hasBirthYear 1963 ;
-      :hasFather data:David_Nightingale_Hicks ;
-      :hasMarriageYear 1990,
-          2015 ;
-      :hasMother data:Lady_Pamela_Hicks ;
-      :hasSister data:Edwina_Brudenell,
-          data:India_Hicks .
+  data:Edwina_Brudenell a :Woman ;
+      :isSisterOf data:Ashley_Louis_David_Hicks .
 
-  data:Kathryn_Sharkey a :Person,
-          :Woman ;
+  data:India_Hicks a :Woman ;
+      :isSisterOf data:Ashley_Louis_David_Hicks .
+
+  data:Kathryn_Katalina_Sharkey a :Woman ;
       :hasFather data:William_T_Sharkey ;
       :hasMother data:Rosalie_Solis .
 
-  data:Marina_Allegra_Federica_Silvia_Tondato a :Person,
-          :Woman ;
-      :hasFather data:Carlo_Tondato ;
+  data:Marina_Allegra_Federica_Silvia_Tondato a :Woman ;
+      :hasFather data:Dr_Carlo_Tondato ;
       :hasMother data:Rosy_Maza .
 
-  data:Carlo_Tondato a :Man,
-          :Person .
+  data:David_Nightingale_Hicks a :Man .
 
-  data:David_Nightingale_Hicks a :Man,
-          :Person .
+  data:Dr_Carlo_Tondato a :Man .
 
-  data:Edwina_Brudenell a :Person,
-          :Woman .
+  data:Lady_Pamela_Hicks a :Woman .
 
-  data:India_Hicks a :Person,
-          :Woman .
+  data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Man .
 
-  data:Lady_Pamela_Hicks a :Person,
-          :Woman .
+  data:Rosalie_Solis a :Woman .
 
-  data:Louis_Mountbatten a :Man,
-          :Person .
+  data:Rosy_Maza a :Woman .
 
-  data:Rosalie_Solis a :Person,
-          :Woman .
+  data:William_T_Sharkey a :Man .
 
-  data:Rosy_Maza a :Person,
-          :Woman .
-
-  data:William_T_Sharkey a :Man,
-          :Person .
+  data:Ashley_Louis_David_Hicks a :Man ;
+      :hasBirthYear 1963 ;
+      :hasFather data:David_Nightingale_Hicks,
+          data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+      :hasMother data:Lady_Pamela_Hicks .
 
 
 
@@ -808,182 +752,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (8e4e9d11-60f7-41bd-a9de-279d9989cbc2)
- Call ID: 8e4e9d11-60f7-41bd-a9de-279d9989cbc2
+  ValidateShacl (9e0568dc-dec6-4ffc-a4f4-9e0e23301404)
+ Call ID: 9e0568dc-dec6-4ffc-a4f4-9e0e23301404
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:21
+Total violations:24
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Louis_Mountbatten is missing the required class :Ancestor.
+      The node Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma is missing the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_Mountbatten, :Ancestor)
+      AssignClass(Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node David_Nightingale_Hicks is missing the required class :Ancestor.
+      The node David_Nightingale_Hicks is missing the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
       AssignClass(David_Nightingale_Hicks, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: More than 1 values on data:Ashley_Louis_David_Hicks->:hasFather
     LLM-provided explanation of the violation:
-      The node Lady_Pamela_Hicks is missing the required class :Ancestor.
+      Ashley_Louis_David_Hicks has more than one father, violating the cardinality constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Pamela_Hicks, :Ancestor)
+      RemoveTriple(Ashley_Louis_David_Hicks, :hasFather, Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Louis_Mountbatten is missing the required class :Ancestor.
+      The node Lady_Pamela_Hicks is missing the required class :Ancestor for the property :hasMother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_Mountbatten, :Ancestor)
+      AssignClass(Lady_Pamela_Hicks, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node William_T_Sharkey is missing the required class :Ancestor.
+      The node Dr_Carlo_Tondato is missing the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William_T_Sharkey, :Ancestor)
+      AssignClass(Dr_Carlo_Tondato, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node David_Nightingale_Hicks is missing the required class :Ancestor.
+      The node William_T_Sharkey is missing the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(David_Nightingale_Hicks, :Ancestor)
+      AssignClass(William_T_Sharkey, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Carlo_Tondato is missing the required class :Ancestor.
+      The node Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma is missing the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Carlo_Tondato, :Ancestor)
+      AssignClass(Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Rosalie_Solis is missing the required class :Ancestor.
+      The node David_Nightingale_Hicks is missing the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Rosalie_Solis, :Ancestor)
+      AssignClass(David_Nightingale_Hicks, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: More than 1 values on data:Ashley_Louis_David_Hicks->:hasFather
     LLM-provided explanation of the violation:
-      The node Lady_Pamela_Hicks is missing the required class :Ancestor.
+      Ashley_Louis_David_Hicks has more than one father, violating the cardinality constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Pamela_Hicks, :Ancestor)
+      RemoveTriple(Ashley_Louis_David_Hicks, :hasFather, David_Nightingale_Hicks)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Rosy_Maza is missing the required class :Ancestor.
+      The node Rosy_Maza is missing the required class :Ancestor for the property :hasMother.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Rosy_Maza, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Louis_Mountbatten is missing the required class :Ancestor.
+      The node Rosalie_Solis is missing the required class :Ancestor for the property :hasMother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_Mountbatten, :Ancestor)
+      AssignClass(Rosalie_Solis, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node William_T_Sharkey is missing the required class :Ancestor.
+      The node Lady_Pamela_Hicks is missing the required class :Ancestor for the property :hasMother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(William_T_Sharkey, :Ancestor)
+      AssignClass(Lady_Pamela_Hicks, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node David_Nightingale_Hicks is missing the required class :Ancestor.
+      The node Dr_Carlo_Tondato is missing the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(David_Nightingale_Hicks, :Ancestor)
+      AssignClass(Dr_Carlo_Tondato, :Ancestor)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Carlo_Tondato is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Carlo_Tondato, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Rosalie_Solis is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Rosalie_Solis, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Lady_Pamela_Hicks is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Lady_Pamela_Hicks, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Rosy_Maza is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Rosy_Maza, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node William_T_Sharkey is missing the required class :Ancestor.
+      The node William_T_Sharkey is missing the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
       AssignClass(William_T_Sharkey, :Ancestor)
 
 
-  Violation [19]:
+  Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Carlo_Tondato is missing the required class :Ancestor.
+      The node Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma is missing the required class :Ancestor for the property :hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Carlo_Tondato, :Ancestor)
+      AssignClass(Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node David_Nightingale_Hicks is missing the required class :Ancestor for the property :hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(David_Nightingale_Hicks, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: More than 1 values on data:Ashley_Louis_David_Hicks->:hasFather
+    LLM-provided explanation of the violation:
+      Ashley_Louis_David_Hicks has more than one father, violating the cardinality constraint.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Ashley_Louis_David_Hicks, :hasFather, Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Rosy_Maza is missing the required class :Ancestor for the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Rosy_Maza, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Rosalie_Solis is missing the required class :Ancestor for the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Rosalie_Solis, :Ancestor)
 
 
   Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Rosalie_Solis is missing the required class :Ancestor.
+      The node Lady_Pamela_Hicks is missing the required class :Ancestor for the property :hasMother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Rosalie_Solis, :Ancestor)
+      AssignClass(Lady_Pamela_Hicks, :Ancestor)
 
 
   Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Dr_Carlo_Tondato is missing the required class :Ancestor for the property :hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Dr_Carlo_Tondato, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node William_T_Sharkey is missing the required class :Ancestor for the property :hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_T_Sharkey, :Ancestor)
+
+
+  Violation [23]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Rosy_Maza is missing the required class :Ancestor.
+      The node Rosy_Maza is missing the required class :Ancestor for the property :hasMother.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Rosy_Maza, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Rosalie_Solis is missing the required class :Ancestor for the property :hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Rosalie_Solis, :Ancestor)
 
 
 
@@ -992,41 +960,64 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (7809fd50-c1c0-4aca-b4bc-a74e561293c4)
- Call ID: 7809fd50-c1c0-4aca-b4bc-a74e561293c4
+  AssignClass (2a852266-85dc-4b16-a0c5-ef87c6c24035)
+ Call ID: 2a852266-85dc-4b16-a0c5-ef87c6c24035
   Args:
+    source: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
     type: :Ancestor
-    source: Louis_Mountbatten
-  AssignClass (6bedd40a-24bf-4981-b32d-f9067b2d253f)
- Call ID: 6bedd40a-24bf-4981-b32d-f9067b2d253f
+  AssignClass (3dc2638b-2ab4-459b-ab44-b88872656e8a)
+ Call ID: 3dc2638b-2ab4-459b-ab44-b88872656e8a
   Args:
-    type: :Ancestor
     source: David_Nightingale_Hicks
-  AssignClass (4c576608-0132-4206-902f-9fc1ae4d7e49)
- Call ID: 4c576608-0132-4206-902f-9fc1ae4d7e49
+    type: :Ancestor
+  AssignClass (7e1f9b5c-d3cc-4596-864b-03d044d1fec9)
+ Call ID: 7e1f9b5c-d3cc-4596-864b-03d044d1fec9
   Args:
     source: Lady_Pamela_Hicks
     type: :Ancestor
-  AssignClass (376e9bb9-0a15-4674-b39c-940e8c135f1b)
- Call ID: 376e9bb9-0a15-4674-b39c-940e8c135f1b
+  AssignClass (c875e490-9083-442b-be33-b9bb988257f7)
+ Call ID: c875e490-9083-442b-be33-b9bb988257f7
+  Args:
+    type: :Ancestor
+    source: Dr_Carlo_Tondato
+  AssignClass (e32a098f-83ee-4871-97b9-331ca05ac2e6)
+ Call ID: e32a098f-83ee-4871-97b9-331ca05ac2e6
   Args:
     type: :Ancestor
     source: William_T_Sharkey
-  AssignClass (52bc0295-438e-4532-a744-e3e17a73126a)
- Call ID: 52bc0295-438e-4532-a744-e3e17a73126a
-  Args:
-    type: :Ancestor
-    source: Carlo_Tondato
-  AssignClass (d8270f2d-58ec-4aa3-9105-9fe63e22340a)
- Call ID: d8270f2d-58ec-4aa3-9105-9fe63e22340a
-  Args:
-    source: Rosalie_Solis
-    type: :Ancestor
-  AssignClass (f1dff0cb-d19a-467e-9403-233644f05279)
- Call ID: f1dff0cb-d19a-467e-9403-233644f05279
+  AssignClass (7c4f652b-c896-435d-b3b3-7362c63d28c7)
+ Call ID: 7c4f652b-c896-435d-b3b3-7362c63d28c7
   Args:
     type: :Ancestor
     source: Rosy_Maza
+  AssignClass (3879b7a4-d399-4d38-a500-e4fbafbdd8ab)
+ Call ID: 3879b7a4-d399-4d38-a500-e4fbafbdd8ab
+  Args:
+    source: Rosalie_Solis
+    type: :Ancestor
+  RemoveTriple (446bd899-9d84-408a-ad0b-ddbf5d9f5a54)
+ Call ID: 446bd899-9d84-408a-ad0b-ddbf5d9f5a54
+  Args:
+    relation: :hasFather
+    source: Ashley_Louis_David_Hicks
+    target: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
+  AddTriple (c8ae13a3-4960-4635-831f-f5018c8ee910)
+ Call ID: c8ae13a3-4960-4635-831f-f5018c8ee910
+  Args:
+    relation: :hasAncestor
+    source: Ashley_Louis_David_Hicks
+    target: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
+  ValidateShacl (1cbd18d6-6edc-4652-8cad-22aea49510af)
+ Call ID: 1cbd18d6-6edc-4652-8cad-22aea49510af
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1059,70 +1050,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ashley_Louis_David_Hicks a :Man,
-          :Person ;
-      :hasAncestor data:Louis_Mountbatten ;
-      :hasBirthYear 1963 ;
-      :hasFather data:David_Nightingale_Hicks ;
-      :hasMarriageYear 1990,
-          2015 ;
-      :hasMother data:Lady_Pamela_Hicks ;
-      :hasSister data:Edwina_Brudenell,
-          data:India_Hicks .
+  data:Edwina_Brudenell a :Woman ;
+      :isSisterOf data:Ashley_Louis_David_Hicks .
 
-  data:Kathryn_Sharkey a :Person,
-          :Woman ;
+  data:India_Hicks a :Woman ;
+      :isSisterOf data:Ashley_Louis_David_Hicks .
+
+  data:Kathryn_Katalina_Sharkey a :Woman ;
       :hasFather data:William_T_Sharkey ;
       :hasMother data:Rosalie_Solis .
 
-  data:Marina_Allegra_Federica_Silvia_Tondato a :Person,
-          :Woman ;
-      :hasFather data:Carlo_Tondato ;
+  data:Marina_Allegra_Federica_Silvia_Tondato a :Woman ;
+      :hasFather data:Dr_Carlo_Tondato ;
       :hasMother data:Rosy_Maza .
 
-  data:Carlo_Tondato a :Ancestor,
-          :Man,
-          :Person .
-
   data:David_Nightingale_Hicks a :Ancestor,
-          :Man,
-          :Person .
+          :Man .
 
-  data:Edwina_Brudenell a :Person,
-          :Woman .
-
-  data:India_Hicks a :Person,
-          :Woman .
+  data:Dr_Carlo_Tondato a :Ancestor,
+          :Man .
 
   data:Lady_Pamela_Hicks a :Ancestor,
-          :Person,
           :Woman .
 
-  data:Louis_Mountbatten a :Ancestor,
-          :Man,
-          :Person .
+  data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Ancestor,
+          :Man .
 
   data:Rosalie_Solis a :Ancestor,
-          :Person,
           :Woman .
 
   data:Rosy_Maza a :Ancestor,
-          :Person,
           :Woman .
 
   data:William_T_Sharkey a :Ancestor,
-          :Man,
-          :Person .
+          :Man .
+
+  data:Ashley_Louis_David_Hicks a :Man ;
+      :hasAncestor data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+      :hasBirthYear 1963 ;
+      :hasFather data:David_Nightingale_Hicks ;
+      :hasMother data:Lady_Pamela_Hicks .
 
 
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (9ebbfb75-9012-4e41-a512-3d307aeb9fbf)
- Call ID: 9ebbfb75-9012-4e41-a512-3d307aeb9fbf
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1132,6 +1101,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (920bb4e1-8ef8-4a0e-a2e2-ecd1ac147e2c)
- Call ID: 920bb4e1-8ef8-4a0e-a2e2-ecd1ac147e2c
+  Finish (64541123-a0d2-4db1-9bb5-72b1ca38c97f)
+ Call ID: 64541123-a0d2-4db1-9bb5-72b1ca38c97f
   Args:

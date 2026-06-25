@@ -7,239 +7,134 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Andrew_Mountbatten-Windsor a :Person ;
+    rdfs:label "Andrew Mountbatten-Windsor" ;
+    data:posIndicesFull "1277:1285",
+        "13747:13755",
+        "138:146",
+        "4231:4239" ;
+    data:posIndicesPart "12912:12919",
+        "1905:1911",
+        "2521:2527",
+        "8617:8623" ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward",
+        "Andrew Albert Christian Edward Mountbatten-Windsor",
+        "Baron Killyleagh",
+        "Earl of Inverness",
+        "Prince Andrew",
+        "Prince Andrew of the United Kingdom",
+        "Prince Andrew, Duke of York",
+        "Randy Andy" ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male .
+
+data:Peter_Phillips a :Person ;
+    rdfs:label "Peter Phillips" ;
+    data:posIndicesFull "917:931" ;
+    data:posIndicesPart "4120:4128",
+        "4290:4295",
+        "4348:4356",
+        "4410:4418",
+        "6172:6177" ;
+    data:wdtLink wdt:Q344908 ;
+    :hasParent data:Anne-_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasSex data:male .
+
+data:Prince_Harry-_Duke_of_Sussex a :Person ;
+    rdfs:label "Prince Harry, Duke of Sussex" ;
+    data:posIndicesFull "11287:11296",
+        "12509:12519",
+        "13680:13693" ;
+    data:posIndicesPart "12859:12865" ;
+    data:wdtLink wdt:Q152316 ;
+    :alsoKnownAs "Captain Wales",
+        "Harry Sussex",
+        "Harry Wales",
+        "Harry Windsor",
+        "Henry Charles Albert David",
+        "Henry Sussex",
+        "Henry Wales",
+        "Henry Windsor",
+        "Prince Harry",
+        "Prince Harry of Wales",
+        "Prince Henry",
+        "Prince Henry Charles Albert",
+        "Prince Henry Charles Albert David",
+        "Prince Henry of Wales",
+        "Prince Henry, Duke of Sussex",
+        "Prince Henry, Duke of Sussex, KCVO",
+        "The Prince Henry, Duke of Sussex" ;
+    :hasParent data:Charles_III ;
+    :hasSex data:male .
+
+data:William-_Prince_of_Wales a :Person ;
+    rdfs:label "William, Prince of Wales" ;
+    data:posIndicesFull "9296:9303",
+        "9296:9320" ;
+    data:posIndicesPart "12859:12865",
+        "12869:12874" ;
+    data:wdtLink wdt:Q36812 ;
+    :alsoKnownAs "Bulliam",
+        "Prince William",
+        "Prince William Arthur Philip Louis of Wales",
+        "Prince William Arthur Philip Louis, Duke of Cambridge",
+        "Prince William of Wales",
+        "Prince William, Duke of Cambridge",
+        "William Arthur Philip Louis",
+        "William Arthur Philip Louis Mountbatten-Windsor",
+        "William Arthur Philip Louis, Prince of Wales",
+        "William Cambridge",
+        "William Wales",
+        "William Windsor" ;
+    :hasParent data:Charles_III ;
+    :hasSex data:male .
+
+data:Zara_Tindall a :Person ;
+    rdfs:label "Zara Tindall" ;
+    data:posIndicesFull "13392:13405",
+        "3965:3978",
+        "3989:4002",
+        "4312:4325",
+        "5206:5219",
+        "827:840",
+        "936:948" ;
+    data:wdtLink wdt:Q147663 ;
+    :alsoKnownAs "Zara Anne Elizabeth Tindall",
+        "Zara Phillips" ;
+    :hasParent data:Anne-_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Princess_Alice_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Alice of Battenberg" ;
-    data:posIndicesFull "10771:10777",
-        "1097:1101",
-        "14266:14270",
-        "1448:1454",
-        "1564:1568",
-        "1787:1791",
-        "1973:1979",
-        "2115:2121",
-        "2233:2237",
-        "265:269",
-        "331:335",
-        "37:42",
-        "4589:4595",
-        "5249:5255",
-        "6115:6121",
-        "6820:6826",
-        "7529:7534",
-        "986:990" ;
-    data:posIndicesPart "1298:1306",
-        "13631:13639",
-        "374:382",
-        "7034:7042",
-        "8610:8618" ;
-    data:wdtLink wdt:Q116062 ;
-    :alsoKnownAs "Alice",
-        "Alice of Battenberg",
-        "Alice, Princess Andrew of Greece and Denmark",
-        "Mother Superior Alice-Elizabeth",
-        "Princess Alice of Greece and Denmark",
-        "Princess Andrew of Greece and Denmark",
-        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
-        "Victoria Alice Elizabeth Julia Marie",
-        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
-    :hasChild data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh .
+data:George_V a :Person ;
+    rdfs:label "George V" ;
+    data:posIndicesFull "13733:13746",
+        "13738:13746" ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert",
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
+        "George Frederick Ernest Albert Windsor",
+        "George Saxe-Coburg-Gotha",
+        "George V (King of Great Britain)",
+        "George V of the United Kingdom",
+        "George Windsor",
+        "King George V" ;
+    :hasSex data:male .
 
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Elizabeth, The Queen Mother" ;
-    data:posIndicesFull "1071:1086",
-        "11113:11128",
-        "13228:13243",
-        "1346:1361",
-        "159:174",
-        "8427:8442",
-        "8900:8916" ;
-    data:posIndicesPart "1617:1623",
-        "1742:1748",
-        "2029:2035",
-        "2242:2248",
-        "2624:2629",
-        "3275:3280",
-        "4028:4033",
-        "4926:4931",
-        "6465:6470",
-        "6631:6636",
-        "6734:6739",
-        "7279:7284",
-        "7486:7491",
-        "8048:8053",
-        "8225:8231",
-        "8303:8309",
-        "9074:9079" ;
-    data:wdtLink wdt:Q10633 ;
-    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
-        "Elizabeth Angela Marguerite, Duchess of York",
-        "Elizabeth Bowes-Lyon",
-        "Elizabeth, Duchess of York",
-        "Elizabeth, Queen Consort of the British Empire",
-        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
-        "Hon. Elizabeth Bowes-Lyon",
-        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
-        "Lady Elizabeth Bowes-Lyon",
-        "Queen Elizabeth",
-        "Queen Elizabeth Angela Marguerite",
-        "Queen-Empress Elizabeth",
-        "The Queen Mother",
-        "The Queen Mum" ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasSex data:female ;
-    :isMotherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II .
-
-data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Mary, Princess Royal and Countess of Harewood" ;
-    data:posIndicesFull "13740:13753",
-        "13740:13775" ;
-    data:posIndicesPart "13849:13854",
-        "14025:14030",
-        "14166:14171",
-        "14206:14211" ;
-    data:wdtLink wdt:Q233913 ;
-    :alsoKnownAs "Mary Harewood",
-        "Mary, Princess Royal",
-        "Princess Mary",
-        "Princess Mary of Wales",
-        "Princess Mary of York",
-        "Princess Mary of the United Kingdom",
-        "Princess Mary, Countess of Harewood",
-        "Princess Mary, Princess Royal of the United Kingdom",
-        "Princess Mary, Viscountess Lascelles",
-        "Princess Victoria Alexandra Alice Mary of Wales",
-        "Princess Victoria Alexandra Alice Mary of York",
-        "Princess Victoria Alexandra Alice Mary of the United Kingdom",
-        "Princess Victoria Alexandra Alice Mary, Countess of Harewood",
-        "Princess Victoria Alexandra Alice Mary, Viscountess Lascelles",
-        "Victoria Alexandra Alice Mary Windsor",
-        "Victoria Alexandra Alice Mary, Princess Royal and Countess of Harewood" ;
-    :hasBrother data:George_VI,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasSex data:female ;
-    :isAuntOf data:Elizabeth_II ;
-    :isSiblingOf data:George_VI,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isSisterOf data:George_VI,
-        data:Prince_Henry-_Duke_of_Gloucester .
-
-data:Prince_Henry-_Duke_of_Gloucester a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Henry, Duke of Gloucester" ;
-    data:posIndicesFull "11347:11356" ;
-    data:wdtLink wdt:Q117174 ;
-    :alsoKnownAs "Henry Gloucester",
-        "Henry William Frederick Albert",
-        "Henry Windsor",
-        "Prince Henry",
-        "Prince Henry William Frederick Albert, Duke of Gloucester",
-        "Prince Henry of Cornwall and York",
-        "Prince Henry of Wales",
-        "Prince Henry of York",
-        "The Prince Henry" ;
-    :hasBrother data:George_VI ;
-    :hasSex data:male ;
-    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isBrotherOf data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isSiblingOf data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isUncleOf data:Elizabeth_II .
-
-data:Diana-_Princess_of_Wales a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Diana, Princess of Wales" ;
-    data:posIndicesFull "12915:12934",
-        "5326:5329" ;
-    data:posIndicesPart "13631:13639",
-        "7034:7042",
-        "8610:8618" ;
-    data:wdtLink wdt:Q9685 ;
-    :alsoKnownAs "Diana",
-        "Diana Frances Spencer",
-        "Diana Princess of Wales",
-        "Diana Spencer",
-        "Lady Di",
-        "Lady Diana Frances Spencer",
-        "Lady Diana Spencer",
-        "Princess Di",
-        "Princess Diana",
-        "The People's Princess",
-        "The Princess of Wales" ;
-    :hasChild data:Prince_Harry-_Duke_of_Sussex,
-        data:William-_Prince_of_Wales ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Harry-_Duke_of_Sussex,
-        data:William-_Prince_of_Wales ;
-    :isMotherOf data:Prince_Harry-_Duke_of_Sussex,
-        data:William-_Prince_of_Wales ;
-    :isParentOf data:Prince_Harry-_Duke_of_Sussex,
-        data:William-_Prince_of_Wales .
-
-data:Mark_Phillips a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Mark Phillips" ;
-    data:posIndicesFull "13452:13465",
-        "3965:3978",
-        "3989:4002",
-        "4312:4325",
-        "5206:5219",
-        "819:840",
-        "827:840" ;
-    data:posIndicesPart "4120:4128",
-        "4348:4356",
-        "4410:4418",
-        "8039:8043" ;
-    data:wdtLink wdt:Q547893 ;
-    :alsoKnownAs "Captain Mark Anthony Peter Phillips",
-        "Captain Mark Phillips" ;
-    :hasChild data:Peter_Phillips,
-        data:Zara_Tindall ;
-    :hasDaughter data:Zara_Tindall ;
-    :hasSex data:male ;
-    :hasSon data:Peter_Phillips ;
-    :isFatherOf data:Peter_Phillips,
-        data:Zara_Tindall ;
-    :isParentOf data:Peter_Phillips,
-        data:Zara_Tindall .
-
-data:George_VI a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:George_VI a :Person ;
     rdfs:label "George VI" ;
     data:posIndicesFull "1236:1250",
         "1241:1250" ;
-    data:posIndicesPart "13798:13804",
-        "6445:6451",
-        "6562:6568" ;
+    data:posIndicesPart "6385:6391",
+        "6502:6508" ;
     data:wdtLink wdt:Q280856 ;
     :alsoKnownAs "Albert Frederick Arthur George",
         "Albert Frederick Arthur George Windsor",
@@ -261,279 +156,134 @@ data:George_VI a :Ancestor,
         "The Prince Albert Frederick Arthur George, Duke of York",
         "The Prince Albert of the United Kingdom",
         "The Prince Albert, Duke of York" ;
-    :hasBrother data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasSex data:male ;
-    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isBrotherOf data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isFatherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II ;
-    :isSiblingOf data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_Henry-_Duke_of_Gloucester .
+    :hasParent data:George_V ;
+    :hasSex data:male .
 
-data:Peter_Phillips a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Peter Phillips" ;
-    data:posIndicesFull "917:931" ;
-    data:posIndicesPart "4120:4128",
-        "4290:4295",
-        "4348:4356",
-        "4410:4418",
-        "6232:6237" ;
-    data:wdtLink wdt:Q344908 ;
-    :hasFather data:Mark_Phillips ;
-    :hasMother data:Anne-_Princess_Royal ;
-    :hasParent data:Anne-_Princess_Royal,
-        data:Mark_Phillips ;
-    :hasSex data:male ;
-    :hasSister data:Zara_Tindall ;
-    :isBrotherOf data:Zara_Tindall ;
-    :isChildOf data:Anne-_Princess_Royal,
-        data:Mark_Phillips ;
-    :isSiblingOf data:Zara_Tindall ;
-    :isSonOf data:Anne-_Princess_Royal,
-        data:Mark_Phillips .
+data:Princess_Alice_of_Battenberg a :Person ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "10711:10717",
+        "1097:1101",
+        "14206:14210",
+        "1448:1454",
+        "1564:1568",
+        "1787:1791",
+        "1973:1979",
+        "2115:2121",
+        "2233:2237",
+        "265:269",
+        "331:335",
+        "37:42",
+        "4589:4595",
+        "5249:5255",
+        "6055:6061",
+        "6760:6766",
+        "7469:7474",
+        "986:990" ;
+    data:posIndicesPart "1298:1306",
+        "13571:13579",
+        "374:382",
+        "6974:6982",
+        "8550:8558" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasSex data:female .
 
-data:Prince_Harry-_Duke_of_Sussex a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Harry, Duke of Sussex" ;
-    data:posIndicesFull "11347:11356",
-        "12569:12579",
-        "13740:13753" ;
-    data:wdtLink wdt:Q152316 ;
-    :alsoKnownAs "Captain Wales",
-        "Harry Sussex",
-        "Harry Wales",
-        "Harry Windsor",
-        "Henry Charles Albert David",
-        "Henry Sussex",
-        "Henry Wales",
-        "Henry Windsor",
-        "Prince Harry",
-        "Prince Harry of Wales",
-        "Prince Henry",
-        "Prince Henry Charles Albert",
-        "Prince Henry Charles Albert David",
-        "Prince Henry of Wales",
-        "Prince Henry, Duke of Sussex",
-        "Prince Henry, Duke of Sussex, KCVO",
-        "The Prince Henry, Duke of Sussex" ;
-    :hasBrother data:William-_Prince_of_Wales ;
-    :hasFather data:Charles_III ;
-    :hasMother data:Diana-_Princess_of_Wales ;
-    :hasParent data:Charles_III,
-        data:Diana-_Princess_of_Wales ;
-    :hasSex data:male ;
-    :isBrotherOf data:William-_Prince_of_Wales ;
-    :isChildOf data:Charles_III,
-        data:Diana-_Princess_of_Wales ;
-    :isSiblingOf data:William-_Prince_of_Wales ;
-    :isSonOf data:Charles_III,
-        data:Diana-_Princess_of_Wales .
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
+    rdfs:label "Queen Elizabeth, The Queen Mother" ;
+    data:posIndicesFull "1071:1086",
+        "11053:11068",
+        "13168:13183",
+        "1346:1361",
+        "159:174",
+        "8367:8382",
+        "8840:8856" ;
+    data:posIndicesPart "1617:1623",
+        "1742:1748",
+        "2029:2035",
+        "2242:2248",
+        "2624:2629",
+        "3275:3280",
+        "4028:4033",
+        "4926:4931",
+        "6405:6410",
+        "6571:6576",
+        "6674:6679",
+        "7219:7224",
+        "7426:7431",
+        "7988:7993",
+        "8165:8171",
+        "8243:8249",
+        "9014:9019" ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
+        "Elizabeth Angela Marguerite, Duchess of York",
+        "Elizabeth Bowes-Lyon",
+        "Elizabeth, Duchess of York",
+        "Elizabeth, Queen Consort of the British Empire",
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
+        "Hon. Elizabeth Bowes-Lyon",
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
+        "Lady Elizabeth Bowes-Lyon",
+        "Queen Elizabeth",
+        "Queen Elizabeth Angela Marguerite",
+        "Queen-Empress Elizabeth",
+        "The Queen Mother",
+        "The Queen Mum" ;
+    :hasSex data:female .
 
-data:William-_Prince_of_Wales a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "William, Prince of Wales" ;
-    data:posIndicesFull "9356:9363",
-        "9356:9380" ;
-    data:wdtLink wdt:Q36812 ;
-    :alsoKnownAs "Bulliam",
-        "Prince William",
-        "Prince William Arthur Philip Louis of Wales",
-        "Prince William Arthur Philip Louis, Duke of Cambridge",
-        "Prince William of Wales",
-        "Prince William, Duke of Cambridge",
-        "William Arthur Philip Louis",
-        "William Arthur Philip Louis Mountbatten-Windsor",
-        "William Arthur Philip Louis, Prince of Wales",
-        "William Cambridge",
-        "William Wales",
-        "William Windsor" ;
-    :hasBrother data:Prince_Harry-_Duke_of_Sussex ;
-    :hasFather data:Charles_III ;
-    :hasMother data:Diana-_Princess_of_Wales ;
-    :hasParent data:Charles_III,
-        data:Diana-_Princess_of_Wales ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Harry-_Duke_of_Sussex ;
-    :isChildOf data:Charles_III,
-        data:Diana-_Princess_of_Wales ;
-    :isSiblingOf data:Prince_Harry-_Duke_of_Sussex ;
-    :isSonOf data:Charles_III,
-        data:Diana-_Princess_of_Wales .
-
-data:Zara_Tindall a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Zara Tindall" ;
-    data:posIndicesFull "13452:13465",
-        "3965:3978",
-        "3989:4002",
-        "4312:4325",
-        "5206:5219",
-        "827:840",
-        "936:948" ;
-    data:wdtLink wdt:Q147663 ;
-    :alsoKnownAs "Zara Anne Elizabeth Tindall",
-        "Zara Phillips" ;
-    :hasBrother data:Peter_Phillips ;
-    :hasFather data:Mark_Phillips ;
-    :hasMother data:Anne-_Princess_Royal ;
-    :hasParent data:Anne-_Princess_Royal,
-        data:Mark_Phillips ;
-    :hasSex data:female ;
-    :isChildOf data:Anne-_Princess_Royal,
-        data:Mark_Phillips ;
-    :isDaughterOf data:Anne-_Princess_Royal,
-        data:Mark_Phillips ;
-    :isSiblingOf data:Peter_Phillips ;
-    :isSisterOf data:Peter_Phillips .
-
-data:Andrew_Mountbatten-Windsor a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Andrew Mountbatten-Windsor" ;
-    data:posIndicesFull "1277:1285",
-        "13807:13815",
-        "138:146",
-        "4231:4239" ;
-    data:posIndicesPart "12972:12979",
-        "1905:1911",
-        "2521:2527",
-        "8677:8683" ;
-    data:wdtLink wdt:Q153330 ;
-    :alsoKnownAs "Andrew Albert Christian Edward",
-        "Andrew Albert Christian Edward Mountbatten-Windsor",
-        "Baron Killyleagh",
-        "Earl of Inverness",
-        "Prince Andrew",
-        "Prince Andrew of the United Kingdom",
-        "Prince Andrew, Duke of York",
-        "Randy Andy" ;
-    :hasBrother data:Charles_III ;
-    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasMother data:Elizabeth_II ;
-    :hasParent data:Elizabeth_II,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasSex data:male ;
-    :hasSister data:Anne-_Princess_Royal ;
-    :isBrotherOf data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :isChildOf data:Elizabeth_II,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSiblingOf data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :isSonOf data:Elizabeth_II,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isUncleOf data:Peter_Phillips,
-        data:Prince_Harry-_Duke_of_Sussex,
-        data:William-_Prince_of_Wales,
-        data:Zara_Tindall .
-
-data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Philip, Duke of Edinburgh" ;
-    data:posIndicesFull "182:195",
-        "182:214" ;
-    data:posIndicesPart "10563:10572",
-        "10789:10798",
-        "1329:1338",
-        "1371:1377",
-        "1379:1383",
-        "1387:1396",
-        "8122:8131",
-        "9390:9394",
-        "9471:9480",
-        "9785:9789" ;
-    data:wdtLink wdt:Q80976 ;
-    :alsoKnownAs "H.R.H. Prince Philip",
-        "H.R.H. The Duke Of Edinburgh",
-        "Lieutenant Philip Mountbatten",
-        "Philip Edinburgh",
-        "Philip Mountbatten",
-        "Philip Mountbatten; Prince Philip of Greece and Denmark",
-        "Philip of Greece and Denmark",
-        "Prince Philip",
-        "Prince Philip of Greece and Denmark",
-        "The Prince Philip, Duke of Edinburgh" ;
-    :hasChild data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :hasDaughter data:Anne-_Princess_Royal ;
-    :hasMother data:Princess_Alice_of_Battenberg ;
-    :hasParent data:Princess_Alice_of_Battenberg ;
-    :hasSex data:male ;
-    :hasSon data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isChildOf data:Princess_Alice_of_Battenberg ;
-    :isFatherOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :isParentOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :isSonOf data:Princess_Alice_of_Battenberg .
-
-data:Anne-_Princess_Royal a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Anne-_Princess_Royal a :Person ;
     rdfs:label "Anne, Princess Royal" ;
     data:posIndicesFull "0:20",
-        "12695:12708",
+        "12635:12648",
         "22:49" ;
-    data:posIndicesPart "10084:10089",
-        "10211:10215",
-        "10410:10415",
-        "10477:10482",
-        "10504:10509",
-        "10586:10591",
-        "10629:10634",
-        "10783:10788",
-        "10850:10855",
-        "10909:10913",
+    data:posIndicesPart "10024:10029",
+        "10151:10155",
+        "10350:10355",
+        "10417:10422",
+        "10444:10449",
+        "10526:10531",
+        "10569:10574",
+        "10723:10728",
+        "10790:10795",
+        "10849:10853",
+        "11120:11124",
+        "11151:11156",
         "1117:1121",
-        "11180:11184",
-        "11211:11216",
-        "11424:11429",
-        "11560:11564",
-        "11618:11623",
-        "11658:11662",
-        "11806:11811",
-        "11906:11911",
-        "11920:11924",
-        "11990:11994",
-        "12087:12091",
-        "12312:12317",
-        "12989:12993",
+        "11364:11369",
+        "11500:11504",
+        "11558:11563",
+        "11598:11602",
+        "11746:11751",
+        "11846:11851",
+        "11860:11864",
+        "11930:11934",
+        "12027:12031",
+        "12252:12257",
+        "12929:12933",
         "1298:1306",
-        "13087:13092",
-        "13196:13201",
-        "13304:13308",
-        "13467:13471",
-        "13499:13504",
-        "13611:13615",
-        "13631:13639",
-        "13640:13645",
-        "13839:13843",
-        "13849:13854",
+        "13027:13032",
+        "13136:13141",
+        "13244:13248",
+        "13407:13411",
+        "13439:13444",
+        "13551:13555",
+        "13571:13579",
+        "13580:13585",
+        "13779:13783",
+        "13789:13794",
+        "13965:13970",
         "1398:1402",
-        "14025:14030",
-        "14166:14171",
-        "14206:14211",
-        "14313:14317",
+        "14106:14111",
+        "14146:14151",
+        "14253:14257",
         "1873:1877",
         "1944:1948",
         "2005:2009",
@@ -566,45 +316,45 @@ data:Anne-_Princess_Royal a :Ancestor,
         "4992:4996",
         "5049:5053",
         "5197:5201",
-        "5398:5402",
-        "5544:5548",
-        "5622:5626",
+        "5338:5342",
+        "5484:5488",
+        "5562:5566",
+        "5790:5794",
         "579:584",
-        "5850:5854",
-        "5912:5916",
-        "6089:6093",
+        "5852:5856",
+        "6029:6033",
+        "6250:6254",
         "625:629",
-        "6310:6314",
-        "6352:6357",
-        "6416:6420",
-        "6656:6660",
-        "7034:7042",
-        "7143:7147",
-        "7376:7380",
-        "7458:7463",
-        "7493:7497",
-        "7654:7659",
+        "6292:6297",
+        "6356:6360",
+        "6596:6600",
+        "6974:6982",
+        "7083:7087",
+        "7316:7320",
+        "7398:7403",
+        "7433:7437",
+        "7594:7599",
+        "7749:7753",
         "775:780",
-        "7809:7813",
-        "7977:7981",
+        "7917:7921",
         "806:810",
-        "8133:8137",
-        "8411:8415",
-        "8505:8509",
-        "8610:8618",
-        "8619:8624",
-        "8697:8701",
-        "8926:8930",
-        "9103:9108",
-        "9178:9183",
-        "9203:9208",
-        "9282:9287",
-        "9312:9317",
-        "9335:9340",
-        "9350:9354",
-        "9422:9426",
-        "9702:9707",
-        "9854:9858" ;
+        "8073:8077",
+        "8351:8355",
+        "8445:8449",
+        "8550:8558",
+        "8559:8564",
+        "8637:8641",
+        "8866:8870",
+        "9043:9048",
+        "9118:9123",
+        "9143:9148",
+        "9222:9227",
+        "9252:9257",
+        "9275:9280",
+        "9290:9294",
+        "9362:9366",
+        "9642:9647",
+        "9794:9798" ;
     data:wdtLink wdt:Q151754 ;
     :alsoKnownAs "Anne Elizabeth Alice Louise",
         "Anne Elizabeth Alice Louise Mountbatten-Windsor",
@@ -619,38 +369,13 @@ data:Anne-_Princess_Royal a :Ancestor,
         "The Princess Anne",
         "The Princess Anne Elizabeth Alice Louise, Princess Royal",
         "The Princess Anne, Princess Royal" ;
-    :hasBrother data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :hasChild data:Peter_Phillips,
-        data:Zara_Tindall ;
-    :hasDaughter data:Zara_Tindall ;
-    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasMother data:Elizabeth_II ;
     :hasParent data:Elizabeth_II,
         data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasSex data:female ;
-    :hasSon data:Peter_Phillips ;
-    :isAuntOf data:Prince_Harry-_Duke_of_Sussex,
-        data:William-_Prince_of_Wales ;
-    :isChildOf data:Elizabeth_II,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isDaughterOf data:Elizabeth_II,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isMotherOf data:Peter_Phillips,
-        data:Zara_Tindall ;
-    :isParentOf data:Peter_Phillips,
-        data:Zara_Tindall ;
-    :isSiblingOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isSisterOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III .
+    :hasSex data:female .
 
-data:Charles_III a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Charles_III a :Person ;
     rdfs:label "Charles III" ;
-    data:posIndicesFull "14228:14239",
+    data:posIndicesFull "14168:14179",
         "1658:1670",
         "1658:1674",
         "1663:1674",
@@ -658,7 +383,7 @@ data:Charles_III a :Ancestor,
         "234:250",
         "239:250",
         "2663:2674",
-        "9408:9420" ;
+        "9348:9360" ;
     data:posIndicesPart "1896:1903" ;
     data:wdtLink wdt:Q43274 ;
     :alsoKnownAs "C III",
@@ -688,73 +413,81 @@ data:Charles_III a :Ancestor,
         "Prince Charles, Prince of Wales",
         "The Prince Charles Philip Arthur George, Prince of Wales",
         "The Prince Charles, Prince of Wales" ;
-    :hasBrother data:Andrew_Mountbatten-Windsor ;
-    :hasChild data:Prince_Harry-_Duke_of_Sussex,
-        data:William-_Prince_of_Wales ;
-    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasMother data:Elizabeth_II ;
     :hasParent data:Elizabeth_II,
         data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasSex data:male ;
-    :hasSister data:Anne-_Princess_Royal ;
-    :hasSon data:Prince_Harry-_Duke_of_Sussex,
-        data:William-_Prince_of_Wales ;
-    :isBrotherOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal ;
-    :isChildOf data:Elizabeth_II,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isFatherOf data:Prince_Harry-_Duke_of_Sussex,
-        data:William-_Prince_of_Wales ;
-    :isParentOf data:Prince_Harry-_Duke_of_Sussex,
-        data:William-_Prince_of_Wales ;
-    :isSiblingOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal ;
-    :isSonOf data:Elizabeth_II,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isUncleOf data:Peter_Phillips,
-        data:Zara_Tindall .
+    :hasSex data:male .
 
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Mark_Phillips a :Person ;
+    rdfs:label "Mark Phillips" ;
+    data:posIndicesFull "13392:13405",
+        "3965:3978",
+        "3989:4002",
+        "4312:4325",
+        "5206:5219",
+        "819:840",
+        "827:840" ;
+    data:posIndicesPart "4120:4128",
+        "4348:4356",
+        "4410:4418",
+        "7979:7983" ;
+    data:wdtLink wdt:Q547893 ;
+    :alsoKnownAs "Captain Mark Anthony Peter Phillips",
+        "Captain Mark Phillips" ;
+    :hasSex data:male .
+
+data:Elizabeth_II a :Person ;
     rdfs:label "Elizabeth II" ;
     data:posIndicesFull "1071:1089",
         "1077:1089",
-        "11113:11131",
-        "11119:11131",
-        "13228:13246",
-        "13234:13246",
+        "11053:11071",
+        "11059:11071",
+        "13168:13186",
+        "13174:13186",
         "1346:1364",
         "1352:1364",
-        "14188:14200",
+        "14128:14140",
         "159:177",
         "165:177",
-        "8427:8445",
-        "8433:8445" ;
+        "8367:8385",
+        "8373:8385" ;
     data:wdtLink wdt:Q9682 ;
     :alsoKnownAs "Elizabeth Alexandra Mary",
         "Elizabeth Alexandra Mary Windsor",
         "Queen Elizabeth II" ;
-    :hasChild data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :hasDaughter data:Anne-_Princess_Royal ;
-    :hasFather data:George_VI ;
-    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
     :hasParent data:George_VI,
         data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :hasSon data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isChildOf data:George_VI,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isDaughterOf data:George_VI,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isMotherOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :isParentOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III .
+    :hasSex data:female .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "182:195",
+        "182:214" ;
+    data:posIndicesPart "10503:10512",
+        "10729:10738",
+        "12859:12865",
+        "1329:1338",
+        "1371:1377",
+        "1379:1383",
+        "1387:1396",
+        "8062:8071",
+        "9330:9334",
+        "9411:9420",
+        "9725:9729" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

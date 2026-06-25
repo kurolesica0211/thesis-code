@@ -1,0 +1,330 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Duchess_Marie_of_Mecklenburg_Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasRelation data:Andrei,
+        data:Duchess_Marie_of_Mecklenburg_Schwerin,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :hasSister data:Duchess_Marie_of_Mecklenburg_Schwerin ;
+    :isAncestorOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isAuntOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Duchess_Marie_of_Mecklenburg_Schwerin ;
+    :isMotherOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Duchess_Marie_of_Mecklenburg_Schwerin ;
+    :isSisterOf data:Duchess_Marie_of_Mecklenburg_Schwerin .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasChild data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasRelation data:Andrei,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isAncestorOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isBloodrelationOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isFatherOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isUncleOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Boris a :Man,
+        :Person ;
+    :hasBrother data:Andrei,
+        data:Boris,
+        data:Kirill ;
+    :hasRelation data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill,
+        data:Princess_Olga_of_Greece ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill ;
+    :isBrotherOf data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill ;
+    :isSiblingOf data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill ;
+    :isUncleOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece .
+
+data:Kirill a :Man,
+        :Person ;
+    :hasBrother data:Andrei,
+        data:Boris,
+        data:Kirill ;
+    :hasRelation data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill,
+        data:Princess_Olga_of_Greece ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill ;
+    :isBrotherOf data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill ;
+    :isSiblingOf data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill ;
+    :isUncleOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece .
+
+data:Andrei a :Man,
+        :Person ;
+    :hasBrother data:Andrei,
+        data:Boris,
+        data:Kirill ;
+    :hasRelation data:Andrei,
+        data:Boris,
+        data:Duchess_Marie_of_Mecklenburg_Schwerin,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Kirill,
+        data:Princess_Olga_of_Greece ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill ;
+    :isBrotherOf data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill ;
+    :isSiblingOf data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill ;
+    :isUncleOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :hasDaughter data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isAncestorOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isBloodrelationOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isParentOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isSiblingOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece .
+
+data:Princess_Elizabeth_of_Greece a :Person,
+        :Woman ;
+    :hasAncestor data:Duchess_Marie_of_Mecklenburg_Schwerin,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Duchess_Marie_of_Mecklenburg_Schwerin,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :hasSister data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isSisterOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece .
+
+data:Princess_Marina_of_Greece a :Person,
+        :Woman ;
+    :hasAncestor data:Duchess_Marie_of_Mecklenburg_Schwerin,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Duchess_Marie_of_Mecklenburg_Schwerin,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :hasSister data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isSisterOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece .
+
+data:Princess_Olga_of_Greece a :Person,
+        :Woman ;
+    :hasAncestor data:Duchess_Marie_of_Mecklenburg_Schwerin,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Andrei,
+        data:Boris,
+        data:Duchess_Marie_of_Mecklenburg_Schwerin,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Kirill,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :hasSister data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isSisterOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Duchess_Marie_of_Mecklenburg_Schwerin,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasBirthYear 1882 ;
+    :hasBrother data:Andrei,
+        data:Boris,
+        data:Kirill ;
+    :hasChild data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :hasDaughter data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :hasDeathYear 1957 ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasMarriageYear 1902 ;
+    :hasMother data:Duchess_Marie_of_Mecklenburg_Schwerin ;
+    :hasParent data:Duchess_Marie_of_Mecklenburg_Schwerin,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasRelation data:Andrei,
+        data:Boris,
+        data:Duchess_Marie_of_Mecklenburg_Schwerin,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Kirill,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isAuntOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isBloodrelationOf data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill ;
+    :isChildOf data:Duchess_Marie_of_Mecklenburg_Schwerin,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isDaughterOf data:Duchess_Marie_of_Mecklenburg_Schwerin,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isMotherOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isParentOf data:Princess_Elizabeth_of_Greece,
+        data:Princess_Marina_of_Greece,
+        data:Princess_Olga_of_Greece ;
+    :isSiblingOf data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill ;
+    :isSisterOf data:Andrei,
+        data:Boris,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Kirill .
+

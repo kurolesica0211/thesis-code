@@ -157,6 +157,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -172,39 +174,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -219,6 +191,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -236,6 +225,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -303,29 +307,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -334,6 +330,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -346,6 +350,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -354,17 +360,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -392,6 +400,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -407,113 +499,224 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ac4f4805-4b71-4b17-86c3-be1490ec3d85)
- Call ID: ac4f4805-4b71-4b17-86c3-be1490ec3d85
+  AssignClass (8a3c7c10-f8fd-4a23-8b8e-a7149da3f2df)
+ Call ID: 8a3c7c10-f8fd-4a23-8b8e-a7149da3f2df
+  Args:
+    source: Princess_Margarita_of_Bourbon-Parma
+    type: :Woman
+  AssignClass (0769ef87-e445-4f55-be36-2fd3c4fafd3d)
+ Call ID: 0769ef87-e445-4f55-be36-2fd3c4fafd3d
+  Args:
+    source: Princess_Margarita_of_Bourbon-Parma
+    type: :Person
+  AddLiteral (6d598c7e-494d-4c16-bb49-7b894987bd46)
+ Call ID: 6d598c7e-494d-4c16-bb49-7b894987bd46
+  Args:
+    literal_value: Margarita Maria Beatrix Prinses de Bourbon de Parme
+    source: Princess_Margarita_of_Bourbon-Parma
+    relation: :knownAs
+    literal_type: xsd:string
+  AddLiteral (019c35a8-5947-4059-a586-c50e8bf28e1c)
+ Call ID: 019c35a8-5947-4059-a586-c50e8bf28e1c
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:date
+    literal_value: 1972-10-13
+    source: Princess_Margarita_of_Bourbon-Parma
+  AssignClass (9111a0a4-aef8-47c1-9991-60e6bc0ad61f)
+ Call ID: 9111a0a4-aef8-47c1-9991-60e6bc0ad61f
   Args:
     type: :Woman
-    source: :PrincessMargaritaOfBourbonParma
-  AssignClass (8be3fb4b-6477-4b9c-bbd7-efde5eb9517c)
- Call ID: 8be3fb4b-6477-4b9c-bbd7-efde5eb9517c
+    source: Princess_Irene_of_the_Netherlands
+  AssignClass (e7f4c97a-c412-4d81-8b60-9f3b6d389eab)
+ Call ID: e7f4c97a-c412-4d81-8b60-9f3b6d389eab
   Args:
-    type: :Woman
-    source: :PrincessIreneOfTheNetherlands
-  AssignClass (d7248b1b-c462-475c-805f-eb70a2e958b8)
- Call ID: d7248b1b-c462-475c-805f-eb70a2e958b8
+    type: :Person
+    source: Princess_Irene_of_the_Netherlands
+  AssignClass (63083bae-faf8-4939-a8b6-5e7b86f2fa2c)
+ Call ID: 63083bae-faf8-4939-a8b6-5e7b86f2fa2c
   Args:
+    source: Carlos_Hugo_Duke_of_Parma
     type: :Man
-    source: :CarlosHugoDukeOfParma
-  AddTriple (1fa0d86d-6855-4bd3-abc9-f8ed95a35692)
- Call ID: 1fa0d86d-6855-4bd3-abc9-f8ed95a35692
+  AssignClass (2b50225a-1128-401f-b41b-0a15e834e08a)
+ Call ID: 2b50225a-1128-401f-b41b-0a15e834e08a
   Args:
-    source: :PrincessMargaritaOfBourbonParma
+    source: Carlos_Hugo_Duke_of_Parma
+    type: :Person
+  AddTriple (2698b99f-ae11-4ab4-9dfe-a1f663e30392)
+ Call ID: 2698b99f-ae11-4ab4-9dfe-a1f663e30392
+  Args:
+    target: Princess_Irene_of_the_Netherlands
+    source: Princess_Margarita_of_Bourbon-Parma
     relation: :hasMother
-    target: :PrincessIreneOfTheNetherlands
-  AddTriple (51e0477f-486c-4984-91e5-7bfa8c908d1f)
- Call ID: 51e0477f-486c-4984-91e5-7bfa8c908d1f
+  AddTriple (20ae6398-2366-4cd1-9773-373bf6c5a1c1)
+ Call ID: 20ae6398-2366-4cd1-9773-373bf6c5a1c1
   Args:
-    source: :PrincessMargaritaOfBourbonParma
     relation: :hasFather
-    target: :CarlosHugoDukeOfParma
-  AssignClass (ac0deb4f-0c4e-4f70-8df0-8e2ea3f5d1f1)
- Call ID: ac0deb4f-0c4e-4f70-8df0-8e2ea3f5d1f1
+    source: Princess_Margarita_of_Bourbon-Parma
+    target: Carlos_Hugo_Duke_of_Parma
+  AssignClass (959056f6-9263-4cf7-8ec1-287131252b58)
+ Call ID: 959056f6-9263-4cf7-8ec1-287131252b58
   Args:
     type: :Man
-    source: :PrinceJaime
-  AssignClass (8ed00efe-6796-4606-80e6-ab1bcd15607b)
- Call ID: 8ed00efe-6796-4606-80e6-ab1bcd15607b
+    source: Prince_Jaime
+  AssignClass (b5e312e0-2b4c-4b76-bf91-43d94610c11c)
+ Call ID: b5e312e0-2b4c-4b76-bf91-43d94610c11c
   Args:
-    type: :Man
-    source: :PrinceCarlos
-  AssignClass (10bd332d-a137-4dd9-9c38-55dcefa7ce7d)
- Call ID: 10bd332d-a137-4dd9-9c38-55dcefa7ce7d
-  Args:
-    type: :Woman
-    source: :PrincessCarolina
-  AddTriple (5a87159e-e3f2-48d1-a4a0-42363801c87b)
- Call ID: 5a87159e-e3f2-48d1-a4a0-42363801c87b
-  Args:
-    source: :PrincessMargaritaOfBourbonParma
-    target: :PrinceJaime
-    relation: :isSiblingOf
-  AddTriple (3a87fac0-2fd4-432f-a6be-8a637f2a8693)
- Call ID: 3a87fac0-2fd4-432f-a6be-8a637f2a8693
+    type: :Person
+    source: Prince_Jaime
+  AddTriple (1118e61e-27ee-476a-a17b-6619a198db15)
+ Call ID: 1118e61e-27ee-476a-a17b-6619a198db15
   Args:
     relation: :isSiblingOf
-    target: :PrinceCarlos
-    source: :PrincessMargaritaOfBourbonParma
-  AddTriple (5a2e4745-6523-49d8-b24f-5aab8cf66cfd)
- Call ID: 5a2e4745-6523-49d8-b24f-5aab8cf66cfd
+    target: Prince_Jaime
+    source: Princess_Margarita_of_Bourbon-Parma
+  AssignClass (8713d016-b51f-48e7-b4a6-a6f3c171467d)
+ Call ID: 8713d016-b51f-48e7-b4a6-a6f3c171467d
   Args:
-    target: :PrincessCarolina
+    source: Prince_Carlos
+    type: :Man
+  AssignClass (c5a9c24b-824c-4091-9952-89ec2e5fe0f1)
+ Call ID: c5a9c24b-824c-4091-9952-89ec2e5fe0f1
+  Args:
+    type: :Person
+    source: Prince_Carlos
+  AddTriple (756646a9-4582-40d5-bda7-9bda002bf9e5)
+ Call ID: 756646a9-4582-40d5-bda7-9bda002bf9e5
+  Args:
     relation: :isSiblingOf
-    source: :PrincessMargaritaOfBourbonParma
-  AssignClass (84ac1748-ad4b-4457-91a4-bcc423c2dd1f)
- Call ID: 84ac1748-ad4b-4457-91a4-bcc423c2dd1f
+    source: Princess_Margarita_of_Bourbon-Parma
+    target: Prince_Carlos
+  AssignClass (d079f99d-936b-42a9-bd57-8203cf195045)
+ Call ID: d079f99d-936b-42a9-bd57-8203cf195045
   Args:
+    source: Princess_Carolina
     type: :Woman
-    source: :QueenJuliana
-  AssignClass (8ea9e164-4ea1-4b2b-8434-66c4ac3abe5d)
- Call ID: 8ea9e164-4ea1-4b2b-8434-66c4ac3abe5d
+  AssignClass (890a628f-ce35-4827-85b2-ec6dbadaf4d5)
+ Call ID: 890a628f-ce35-4827-85b2-ec6dbadaf4d5
+  Args:
+    type: :Person
+    source: Princess_Carolina
+  AddTriple (d73741d1-333f-45d2-b146-ae1e6851fb52)
+ Call ID: d73741d1-333f-45d2-b146-ae1e6851fb52
+  Args:
+    source: Princess_Margarita_of_Bourbon-Parma
+    target: Princess_Carolina
+    relation: :isSiblingOf
+  AssignClass (dd8ce460-037f-4349-ba49-0b130513b512)
+ Call ID: dd8ce460-037f-4349-ba49-0b130513b512
+  Args:
+    source: Queen_Beatrix_of_the_Netherlands
+    type: :Woman
+  AssignClass (e17849e8-0ff0-4065-9fd4-6c01f0764ad3)
+ Call ID: e17849e8-0ff0-4065-9fd4-6c01f0764ad3
+  Args:
+    source: Queen_Beatrix_of_the_Netherlands
+    type: :Person
+  AssignClass (0f987900-43dd-4b9e-bd75-e842170a518e)
+ Call ID: 0f987900-43dd-4b9e-bd75-e842170a518e
+  Args:
+    source: Prince_Sixtus_Henry_of_Bourbon-Parma
+    type: :Man
+  AssignClass (1845fef6-2580-4dbe-afb3-e2ba621f2676)
+ Call ID: 1845fef6-2580-4dbe-afb3-e2ba621f2676
+  Args:
+    type: :Person
+    source: Prince_Sixtus_Henry_of_Bourbon-Parma
+  AssignClass (dc75bc9a-0e28-4a12-9321-d94eb94f7fe6)
+ Call ID: dc75bc9a-0e28-4a12-9321-d94eb94f7fe6
+  Args:
+    source: Queen_Juliana
+    type: :Woman
+  AssignClass (2540d306-44b0-42c4-9e30-616266da72bb)
+ Call ID: 2540d306-44b0-42c4-9e30-616266da72bb
+  Args:
+    type: :Person
+    source: Queen_Juliana
+  AssignClass (f70cd22f-6641-4d06-b2cb-97c3577c24f0)
+ Call ID: f70cd22f-6641-4d06-b2cb-97c3577c24f0
+  Args:
+    source: Prince_Bernhard
+    type: :Man
+  AssignClass (4b4b90f5-10b4-470f-a120-8d0d89f24f0d)
+ Call ID: 4b4b90f5-10b4-470f-a120-8d0d89f24f0d
+  Args:
+    type: :Person
+    source: Prince_Bernhard
+  AssignClass (ae9daf4a-5c06-473f-8e74-0b2c2df69a90)
+ Call ID: ae9daf4a-5c06-473f-8e74-0b2c2df69a90
   Args:
     type: :Man
-    source: :PrinceBernhard
-  AddTriple (71074abe-1be0-45ca-8226-0cd827cc9ec8)
- Call ID: 71074abe-1be0-45ca-8226-0cd827cc9ec8
+    source: Edwin_Karel_Willem_de_Roy_van_Zuydewijn
+  AssignClass (810c0ac8-076a-447a-ad19-f1a008db19fc)
+ Call ID: 810c0ac8-076a-447a-ad19-f1a008db19fc
   Args:
-    source: :QueenJuliana
-    relation: :isMotherOf
-    target: :PrincessIreneOfTheNetherlands
-  AddTriple (1a063af4-e628-4102-958f-36497f95b07c)
- Call ID: 1a063af4-e628-4102-958f-36497f95b07c
+    type: :Person
+    source: Edwin_Karel_Willem_de_Roy_van_Zuydewijn
+  AddTriple (fad34ce5-fa04-4a1c-87e6-6e84624dbde6)
+ Call ID: fad34ce5-fa04-4a1c-87e6-6e84624dbde6
   Args:
-    relation: :isFatherOf
-    target: :PrincessIreneOfTheNetherlands
-    source: :PrinceBernhard
-  AssignClass (2b03ff25-0f06-4248-87d7-22b996fb8ba8)
- Call ID: 2b03ff25-0f06-4248-87d7-22b996fb8ba8
+    source: Princess_Margarita_of_Bourbon-Parma
+    target: Edwin_Karel_Willem_de_Roy_van_Zuydewijn
+    relation: :hasMarriageYear
+  AddLiteral (38b1db62-1540-47e0-bc43-b7d5e028a912)
+ Call ID: 38b1db62-1540-47e0-bc43-b7d5e028a912
   Args:
-    type: :Woman
-    source: :QueenBeatrix
-  AssignClass (8a90020e-1772-417e-a861-e01acc252eda)
- Call ID: 8a90020e-1772-417e-a861-e01acc252eda
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Princess_Margarita_of_Bourbon-Parma
+    literal_value: 2001
+  Finish (6b33b653-6557-4dc1-b09b-2c2a66eddf07)
+ Call ID: 6b33b653-6557-4dc1-b09b-2c2a66eddf07
   Args:
-    type: :Man
-    source: :PrinceSixtusHenryOfBourbonParma
-  AddTriple (cdc29c58-103a-4770-a96e-31e10bbde06f)
- Call ID: cdc29c58-103a-4770-a96e-31e10bbde06f
-  Args:
-    target: :PrincessMargaritaOfBourbonParma
-    relation: :isAuntOf
-    source: :QueenBeatrix
-  AddTriple (a55da55f-03b3-4012-b86b-c9eadff9ed84)
- Call ID: a55da55f-03b3-4012-b86b-c9eadff9ed84
-  Args:
-    source: :PrinceSixtusHenryOfBourbonParma
-    target: :PrincessMargaritaOfBourbonParma
-    relation: :isUncleOf
-  Finish (944bc22a-e092-485d-8bb5-3cea41574c45)
- Call ID: 944bc22a-e092-485d-8bb5-3cea41574c45
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -592,35 +795,49 @@ Look at the messages below to see the final data graph after all the edits.
 The final data graph after all the edits:
   @prefix : <http://example.com/family_TBOX.ttl#> .
   @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:PrinceBernhard a :Man ;
-      :isFatherOf data:PrincessIreneOfTheNetherlands .
+  data:Prince_Bernhard a :Man,
+          :Person .
 
-  data:PrinceSixtusHenryOfBourbonParma a :Man ;
-      :isUncleOf data:PrincessMargaritaOfBourbonParma .
+  data:Prince_Sixtus_Henry_of_Bourbon-Parma a :Man,
+          :Person .
 
-  data:QueenBeatrix a :Woman ;
-      :isAuntOf data:PrincessMargaritaOfBourbonParma .
+  data:Princess_Margarita_of_Bourbon-Parma a :Person,
+          :Woman ;
+      :hasBirthYear "1972-10-13"^^xsd:date ;
+      :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+      :hasMarriageYear data:Edwin_Karel_Willem_de_Roy_van_Zuydewijn,
+          2001 ;
+      :hasMother data:Princess_Irene_of_the_Netherlands ;
+      :isSiblingOf data:Prince_Carlos,
+          data:Prince_Jaime,
+          data:Princess_Carolina ;
+      :knownAs "Margarita Maria Beatrix Prinses de Bourbon de Parme"^^xsd:string .
 
-  data:QueenJuliana a :Woman ;
-      :isMotherOf data:PrincessIreneOfTheNetherlands .
+  data:Queen_Beatrix_of_the_Netherlands a :Person,
+          :Woman .
 
-  data:CarlosHugoDukeOfParma a :Man .
+  data:Queen_Juliana a :Person,
+          :Woman .
 
-  data:PrinceCarlos a :Man .
+  data:Carlos_Hugo_Duke_of_Parma a :Man,
+          :Person .
 
-  data:PrinceJaime a :Man .
+  data:Edwin_Karel_Willem_de_Roy_van_Zuydewijn a :Man,
+          :Person .
 
-  data:PrincessCarolina a :Woman .
+  data:Prince_Carlos a :Man,
+          :Person .
 
-  data:PrincessMargaritaOfBourbonParma a :Woman ;
-      :hasFather data:CarlosHugoDukeOfParma ;
-      :hasMother data:PrincessIreneOfTheNetherlands ;
-      :isSiblingOf data:PrinceCarlos,
-          data:PrinceJaime,
-          data:PrincessCarolina .
+  data:Prince_Jaime a :Man,
+          :Person .
 
-  data:PrincessIreneOfTheNetherlands a :Woman .
+  data:Princess_Carolina a :Person,
+          :Woman .
+
+  data:Princess_Irene_of_the_Netherlands a :Person,
+          :Woman .
 
 
 
@@ -632,78 +849,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (9fc387fe-355d-4982-ae7d-a47d1869074b)
- Call ID: 9fc387fe-355d-4982-ae7d-a47d1869074b
+  ValidateShacl (29d75cec-83a0-4408-8917-0ace1848e908)
+ Call ID: 29d75cec-83a0-4408-8917-0ace1848e908
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:8
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node CarlosHugoDukeOfParma is missing the required class :Ancestor, which is mandatory for the object of the hasFather property.
+      The entity Carlos_Hugo_Duke_of_Parma is assigned as the father of Princess_Margarita_of_Bourbon-Parma, but he is missing the required :Ancestor class membership.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='CarlosHugoDukeOfParma', class=':Ancestor')
+      AssignClass(Carlos_Hugo_Duke_of_Parma, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node PrincessIreneOfTheNetherlands is missing the required class :Ancestor, which is mandatory for the object of the hasMother property.
+      The entity Princess_Irene_of_the_Netherlands is assigned as the mother of Princess_Margarita_of_Bourbon-Parma, but she is missing the required :Ancestor class membership.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='PrincessIreneOfTheNetherlands', class=':Ancestor')
+      AssignClass(Princess_Irene_of_the_Netherlands, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node QueenJuliana is missing the required class :Ancestor, which is mandatory for any subject of the isMotherOf property.
+      The father relationship for Princess_Margarita_of_Bourbon-Parma is flagged because the value Carlos_Hugo_Duke_of_Parma is not explicitly recognized as an :Ancestor in the context of this property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='QueenJuliana', class=':Ancestor')
+      AssignClass(Carlos_Hugo_Duke_of_Parma, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node CarlosHugoDukeOfParma is missing the required class :Ancestor, which is mandatory for the object of the hasFather property.
+      The mother relationship for Princess_Margarita_of_Bourbon-Parma is flagged because the value Princess_Irene_of_the_Netherlands is not explicitly recognized as an :Ancestor in the context of this property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='CarlosHugoDukeOfParma', class=':Ancestor')
+      AssignClass(Princess_Irene_of_the_Netherlands, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node PrincessIreneOfTheNetherlands is missing the required class :Ancestor, which is mandatory for the object of the hasMother property.
+      The father relationship for Princess_Margarita_of_Bourbon-Parma is redundant or invalid due to missing class classification for Carlos_Hugo_Duke_of_Parma as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='PrincessIreneOfTheNetherlands', class=':Ancestor')
+      AssignClass(Carlos_Hugo_Duke_of_Parma, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The node PrinceBernhard is missing the required class :Ancestor, which is mandatory for any subject of the isFatherOf property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='PrinceBernhard', class=':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node CarlosHugoDukeOfParma is missing the required class :Ancestor, which is mandatory for the object of the hasFather property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='CarlosHugoDukeOfParma', class=':Ancestor')
-
-
-  Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node PrincessIreneOfTheNetherlands is missing the required class :Ancestor, which is mandatory for the object of the hasMother property.
+      The mother relationship for Princess_Margarita_of_Bourbon-Parma is redundant or invalid due to missing class classification for Princess_Irene_of_the_Netherlands as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='PrincessIreneOfTheNetherlands', class=':Ancestor')
+      AssignClass(Princess_Irene_of_the_Netherlands, :Ancestor)
 
 
 
@@ -712,37 +913,16 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (a2ae9d6b-a4f6-4d3a-8c24-44b2e76b68b9)
- Call ID: a2ae9d6b-a4f6-4d3a-8c24-44b2e76b68b9
+  AssignClass (de46363b-7caf-435f-ac18-14c8e96755c5)
+ Call ID: de46363b-7caf-435f-ac18-14c8e96755c5
   Args:
-    source: :CarlosHugoDukeOfParma
+    source: Carlos_Hugo_Duke_of_Parma
     type: :Ancestor
-  AssignClass (a3347808-7c0e-4972-8e5d-d8a951e1b689)
- Call ID: a3347808-7c0e-4972-8e5d-d8a951e1b689
-  Args:
-    type: :Ancestor
-    source: :PrincessIreneOfTheNetherlands
-  AssignClass (1a4881b7-245a-4435-92f2-2ae4ec46ea83)
- Call ID: 1a4881b7-245a-4435-92f2-2ae4ec46ea83
+  AssignClass (a8324268-f635-45a4-a2bd-f853bb4da0dd)
+ Call ID: a8324268-f635-45a4-a2bd-f853bb4da0dd
   Args:
     type: :Ancestor
-    source: :QueenJuliana
-  AssignClass (0b52568a-3f0a-4473-ba7a-59eca1c0a4e2)
- Call ID: 0b52568a-3f0a-4473-ba7a-59eca1c0a4e2
-  Args:
-    source: :PrinceBernhard
-    type: :Ancestor
-  ValidateShacl (efcc52e3-0c52-4c1d-9ef3-aa90d082a71e)
- Call ID: efcc52e3-0c52-4c1d-9ef3-aa90d082a71e
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Princess_Irene_of_the_Netherlands
 
 ================================= Tool Message =================================
 
@@ -753,41 +933,61 @@ Look at the messages below to see the final data graph after all the edits.
 The final data graph after all the edits:
   @prefix : <http://example.com/family_TBOX.ttl#> .
   @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:PrinceBernhard a :Ancestor,
-          :Man ;
-      :isFatherOf data:PrincessIreneOfTheNetherlands .
+  data:Prince_Bernhard a :Man,
+          :Person .
 
-  data:PrinceSixtusHenryOfBourbonParma a :Man ;
-      :isUncleOf data:PrincessMargaritaOfBourbonParma .
+  data:Prince_Sixtus_Henry_of_Bourbon-Parma a :Man,
+          :Person .
 
-  data:QueenBeatrix a :Woman ;
-      :isAuntOf data:PrincessMargaritaOfBourbonParma .
-
-  data:QueenJuliana a :Ancestor,
+  data:Princess_Margarita_of_Bourbon-Parma a :Person,
           :Woman ;
-      :isMotherOf data:PrincessIreneOfTheNetherlands .
+      :hasBirthYear "1972-10-13"^^xsd:date ;
+      :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+      :hasMarriageYear data:Edwin_Karel_Willem_de_Roy_van_Zuydewijn,
+          2001 ;
+      :hasMother data:Princess_Irene_of_the_Netherlands ;
+      :isSiblingOf data:Prince_Carlos,
+          data:Prince_Jaime,
+          data:Princess_Carolina ;
+      :knownAs "Margarita Maria Beatrix Prinses de Bourbon de Parme"^^xsd:string .
 
-  data:CarlosHugoDukeOfParma a :Ancestor,
-          :Man .
+  data:Queen_Beatrix_of_the_Netherlands a :Person,
+          :Woman .
 
-  data:PrinceCarlos a :Man .
+  data:Queen_Juliana a :Person,
+          :Woman .
 
-  data:PrinceJaime a :Man .
+  data:Carlos_Hugo_Duke_of_Parma a :Ancestor,
+          :Man,
+          :Person .
 
-  data:PrincessCarolina a :Woman .
+  data:Edwin_Karel_Willem_de_Roy_van_Zuydewijn a :Man,
+          :Person .
 
-  data:PrincessMargaritaOfBourbonParma a :Woman ;
-      :hasFather data:CarlosHugoDukeOfParma ;
-      :hasMother data:PrincessIreneOfTheNetherlands ;
-      :isSiblingOf data:PrinceCarlos,
-          data:PrinceJaime,
-          data:PrincessCarolina .
+  data:Prince_Carlos a :Man,
+          :Person .
 
-  data:PrincessIreneOfTheNetherlands a :Ancestor,
+  data:Prince_Jaime a :Man,
+          :Person .
+
+  data:Princess_Carolina a :Person,
+          :Woman .
+
+  data:Princess_Irene_of_the_Netherlands a :Ancestor,
+          :Person,
           :Woman .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (b3edf1aa-e7f8-4b02-a34a-1a6dd3be0ca7)
+ Call ID: b3edf1aa-e7f8-4b02-a34a-1a6dd3be0ca7
+  Args:
 
 ================================= Tool Message =================================
 
@@ -797,6 +997,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (a06ca5dd-9e0d-440a-98b8-9389b50b1d95)
- Call ID: a06ca5dd-9e0d-440a-98b8-9389b50b1d95
+  Finish (0520ac7c-6297-41bd-8cbb-99ec37823be1)
+ Call ID: 0520ac7c-6297-41bd-8cbb-99ec37823be1
   Args:

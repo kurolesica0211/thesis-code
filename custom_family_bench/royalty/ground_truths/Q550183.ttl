@@ -7,173 +7,13 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Sophie-_Duchess_of_Edinburgh a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Sophie, Duchess of Edinburgh" ;
-    data:posIndicesFull "243:271",
-        "690:718" ;
-    data:posIndicesPart "2591:2600",
-        "3124:3133",
-        "3253:3262" ;
-    data:wdtLink wdt:Q155203 ;
-    :alsoKnownAs "Sophie Edinburgh",
-        "Sophie Helen, Countess of Wessex and Forfar",
-        "Sophie Helen, Duchess of Edinburgh",
-        "Sophie Rhys-Jones",
-        "Sophie Wessex" ;
-    :hasChild data:James-_Earl_of_Wessex ;
-    :hasSex data:female ;
-    :hasSon data:James-_Earl_of_Wessex ;
-    :isMotherOf data:James-_Earl_of_Wessex ;
-    :isParentOf data:James-_Earl_of_Wessex .
-
-data:James-_Earl_of_Wessex a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "James, Earl of Wessex" ;
-    data:posIndicesFull "0:47",
-        "409:456" ;
-    data:posIndicesPart "1194:1199",
-        "1395:1400",
-        "1643:1648",
-        "1864:1869",
-        "2022:2027",
-        "2062:2066",
-        "2070:2076",
-        "2279:2284",
-        "2388:2393",
-        "2488:2493",
-        "2554:2559",
-        "2563:2569",
-        "2582:2587",
-        "273:278",
-        "2877:2881",
-        "2926:2931",
-        "2957:2962",
-        "3149:3154",
-        "3184:3188",
-        "3192:3198",
-        "3352:3357",
-        "3419:3423",
-        "3427:3433",
-        "3435:3439",
-        "3635:3640",
-        "3642:3647",
-        "845:850",
-        "904:909" ;
-    data:wdtLink wdt:Q550183 ;
-    :alsoKnownAs "James Alexander Philip Theo Mountbatten-Windsor",
-        "James Alexander Philip Theo Windsor, Viscount Severn",
-        "James Mountbatten-Windsor, Viscount Severn",
-        "James Severn",
-        "James Windsor, Viscount Severn",
-        "James, Earl of Forfar",
-        "James, Earl of Wessex and Forfar",
-        "James, Viscount Severn",
-        "Lord Severn" ;
-    :hasFather data:Prince_Edward-_Duke_of_Edinburgh ;
-    :hasMother data:Sophie-_Duchess_of_Edinburgh ;
-    :hasParent data:Prince_Edward-_Duke_of_Edinburgh,
-        data:Sophie-_Duchess_of_Edinburgh ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Edward-_Duke_of_Edinburgh,
-        data:Sophie-_Duchess_of_Edinburgh ;
-    :isSonOf data:Prince_Edward-_Duke_of_Edinburgh,
-        data:Sophie-_Duchess_of_Edinburgh .
-
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "1151:1163",
-        "1844:1862",
-        "1850:1862",
-        "309:327",
-        "315:327",
-        "622:640",
-        "628:640" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasChild data:Andrew_Mountbatten-Windsor,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :hasSex data:female ;
-    :hasSon data:Andrew_Mountbatten-Windsor,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isMotherOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isParentOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh .
-
-data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Philip, Duke of Edinburgh" ;
-    data:posIndicesFull "1168:1181",
-        "1611:1624",
-        "332:345",
-        "332:364",
-        "645:658",
-        "645:677" ;
-    data:posIndicesPart "2517:2523",
-        "2547:2553",
-        "2575:2581",
-        "2591:2600",
-        "2897:2903",
-        "3116:3120",
-        "3124:3133",
-        "3253:3262",
-        "861:867" ;
-    data:wdtLink wdt:Q80976 ;
-    :alsoKnownAs "H.R.H. Prince Philip",
-        "H.R.H. The Duke Of Edinburgh",
-        "Lieutenant Philip Mountbatten",
-        "Philip Edinburgh",
-        "Philip Mountbatten",
-        "Philip Mountbatten; Prince Philip of Greece and Denmark",
-        "Philip of Greece and Denmark",
-        "Prince Philip",
-        "Prince Philip of Greece and Denmark",
-        "The Prince Philip, Duke of Edinburgh" ;
-    :hasChild data:Andrew_Mountbatten-Windsor,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :hasSex data:male ;
-    :hasSon data:Andrew_Mountbatten-Windsor,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isFatherOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isParentOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh .
-
-data:Andrew_Mountbatten-Windsor a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Andrew_Mountbatten-Windsor a :Person ;
     rdfs:label "Andrew Mountbatten-Windsor" ;
     data:posIndicesFull "189:197" ;
-    data:posIndicesPart "1005:1012",
-        "2245:2252",
-        "2344:2351",
-        "965:972" ;
+    data:posIndicesPart "1135:1142",
+        "1175:1182",
+        "2415:2422",
+        "2514:2521" ;
     data:wdtLink wdt:Q153330 ;
     :alsoKnownAs "Andrew Albert Christian Edward",
         "Andrew Albert Christian Edward Mountbatten-Windsor",
@@ -183,29 +23,13 @@ data:Andrew_Mountbatten-Windsor a :Ancestor,
         "Prince Andrew of the United Kingdom",
         "Prince Andrew, Duke of York",
         "Randy Andy" ;
-    :hasBrother data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasMother data:Elizabeth_II ;
     :hasParent data:Elizabeth_II,
         data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasSex data:male ;
-    :isBrotherOf data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isChildOf data:Elizabeth_II,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSiblingOf data:Charles_III,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isSonOf data:Elizabeth_II,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isUncleOf data:James-_Earl_of_Wessex .
+    :hasSex data:male .
 
-data:Charles_III a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Charles_III a :Person ;
     rdfs:label "Charles III" ;
-    data:posIndicesFull "2097:2108",
+    data:posIndicesFull "2267:2278",
         "382:394",
         "382:398",
         "387:398" ;
@@ -237,41 +61,77 @@ data:Charles_III a :Ancestor,
         "Prince Charles, Prince of Wales",
         "The Prince Charles Philip Arthur George, Prince of Wales",
         "The Prince Charles, Prince of Wales" ;
-    :hasBrother data:Andrew_Mountbatten-Windsor,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasMother data:Elizabeth_II ;
     :hasParent data:Elizabeth_II,
         data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasSex data:male ;
-    :isBrotherOf data:Andrew_Mountbatten-Windsor,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isChildOf data:Elizabeth_II,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSiblingOf data:Andrew_Mountbatten-Windsor,
-        data:Prince_Edward-_Duke_of_Edinburgh ;
-    :isSonOf data:Elizabeth_II,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isUncleOf data:James-_Earl_of_Wessex .
+    :hasSex data:male .
 
-data:Prince_Edward-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:James-_Earl_of_Wessex a :Person ;
+    rdfs:label "James, Earl of Wessex" ;
+    data:posIndicesFull "0:47",
+        "579:626" ;
+    data:posIndicesPart "1015:1020",
+        "1074:1079",
+        "1364:1369",
+        "1565:1570",
+        "1813:1818",
+        "2034:2039",
+        "2192:2197",
+        "2232:2236",
+        "2240:2246",
+        "2449:2454",
+        "2686:2691",
+        "273:278",
+        "2786:2791",
+        "2852:2857",
+        "2861:2867",
+        "2880:2885",
+        "3175:3179",
+        "3224:3229",
+        "3255:3260",
+        "3447:3452",
+        "3482:3486",
+        "3490:3496",
+        "3650:3655",
+        "3717:3721",
+        "3725:3731",
+        "3733:3737",
+        "3933:3938",
+        "3940:3945" ;
+    data:wdtLink wdt:Q550183 ;
+    :alsoKnownAs "James Alexander Philip Theo Mountbatten-Windsor",
+        "James Alexander Philip Theo Windsor, Viscount Severn",
+        "James Mountbatten-Windsor, Viscount Severn",
+        "James Severn",
+        "James Windsor, Viscount Severn",
+        "James, Earl of Forfar",
+        "James, Earl of Wessex and Forfar",
+        "James, Viscount Severn",
+        "Lord Severn" ;
+    :hasParent data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Sophie-_Duchess_of_Edinburgh ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Edward-_Duke_of_Edinburgh a :Person ;
     rdfs:label "Prince Edward, Duke of Edinburgh" ;
     data:posIndicesFull "205:218",
         "205:237",
-        "3524:3537",
-        "563:576",
-        "563:595" ;
-    data:posIndicesPart "2517:2523",
-        "2547:2553",
-        "2575:2581",
-        "2591:2600",
-        "2897:2903",
-        "3116:3120",
-        "3124:3133",
-        "3253:3262" ;
+        "3822:3835",
+        "733:746",
+        "733:765" ;
+    data:posIndicesPart "2815:2821",
+        "2845:2851",
+        "2873:2879",
+        "2889:2898",
+        "3195:3201",
+        "3414:3418",
+        "3422:3431",
+        "3551:3560" ;
     data:wdtLink wdt:Q154920 ;
     :alsoKnownAs "Edward Antony Richard Louis",
         "Edward Antony Richard Louis Mountbatten-Windsor, 1st Earl of Wessex",
@@ -283,23 +143,118 @@ data:Prince_Edward-_Duke_of_Edinburgh a :Ancestor,
         "The Prince Edward Antony Richard Louis, Earl of Wessex and Forfar",
         "The Prince Edward of the United Kingdom",
         "The Prince Edward, Earl of Wessex and Forfar" ;
-    :hasBrother data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :hasChild data:James-_Earl_of_Wessex ;
-    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasMother data:Elizabeth_II ;
     :hasParent data:Elizabeth_II,
         data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasSex data:male ;
-    :hasSon data:James-_Earl_of_Wessex ;
-    :isBrotherOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isChildOf data:Elizabeth_II,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isFatherOf data:James-_Earl_of_Wessex ;
-    :isParentOf data:James-_Earl_of_Wessex ;
-    :isSiblingOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isSonOf data:Elizabeth_II,
-        data:Prince_Philip-_Duke_of_Edinburgh .
+    :hasSex data:male .
+
+data:Princess_Alice_of_Battenberg a :Person ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "1912:1918",
+        "3019:3023",
+        "3100:3106",
+        "3587:3591",
+        "479:483" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasSex data:female .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
+    rdfs:label "Queen Elizabeth, The Queen Mother" ;
+    data:posIndicesFull "2014:2029",
+        "309:324",
+        "792:807" ;
+    data:posIndicesPart "2539:2545",
+        "2669:2675",
+        "3232:3238",
+        "853:859" ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
+        "Elizabeth Angela Marguerite, Duchess of York",
+        "Elizabeth Bowes-Lyon",
+        "Elizabeth, Duchess of York",
+        "Elizabeth, Queen Consort of the British Empire",
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
+        "Hon. Elizabeth Bowes-Lyon",
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
+        "Lady Elizabeth Bowes-Lyon",
+        "Queen Elizabeth",
+        "Queen Elizabeth Angela Marguerite",
+        "Queen-Empress Elizabeth",
+        "The Queen Mother",
+        "The Queen Mum" ;
+    :hasSex data:female .
+
+data:Sophie-_Duchess_of_Edinburgh a :Person ;
+    rdfs:label "Sophie, Duchess of Edinburgh" ;
+    data:posIndicesFull "243:271",
+        "860:888" ;
+    data:posIndicesPart "2889:2898",
+        "3422:3431",
+        "3551:3560" ;
+    data:wdtLink wdt:Q155203 ;
+    :alsoKnownAs "Sophie Edinburgh",
+        "Sophie Helen, Countess of Wessex and Forfar",
+        "Sophie Helen, Duchess of Edinburgh",
+        "Sophie Rhys-Jones",
+        "Sophie Wessex" ;
+    :hasSex data:female .
+
+data:Elizabeth_II a :Person ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "1321:1333",
+        "2014:2032",
+        "2020:2032",
+        "309:327",
+        "315:327",
+        "792:810",
+        "798:810" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "1338:1351",
+        "1781:1794",
+        "332:345",
+        "332:364",
+        "815:828",
+        "815:847" ;
+    data:posIndicesPart "1031:1037",
+        "2815:2821",
+        "2845:2851",
+        "2873:2879",
+        "2889:2898",
+        "3195:3201",
+        "3414:3418",
+        "3422:3431",
+        "3551:3560" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

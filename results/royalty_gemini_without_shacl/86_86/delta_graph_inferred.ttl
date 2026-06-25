@@ -1,0 +1,435 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Luigi_Amedeo_Duke_of_the_Abruzzi a :Man,
+        :Person ;
+    :hasBrother data:Prince_Luigi_Amedeo_Duke_of_the_Abruzzi ;
+    :hasRelation data:Prince_Luigi_Amedeo_Duke_of_the_Abruzzi ;
+    :isBloodrelationOf data:Prince_Luigi_Amedeo_Duke_of_the_Abruzzi ;
+    :isBrotherOf data:Prince_Luigi_Amedeo_Duke_of_the_Abruzzi ;
+    :isSiblingOf data:Prince_Luigi_Amedeo_Duke_of_the_Abruzzi ;
+    :isUncleOf data:Prince_Aimone .
+
+data:Victor_Emmanuel_III a :Man,
+        :Person ;
+    :hasBrother data:Victor_Emmanuel_III ;
+    :hasRelation data:Victor_Emmanuel_III ;
+    :isBloodrelationOf data:Victor_Emmanuel_III ;
+    :isBrotherOf data:Victor_Emmanuel_III ;
+    :isSiblingOf data:Victor_Emmanuel_III .
+
+data:King_Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Alfonso_XIII ;
+    :hasChild data:Infanta_Beatriz_of_Spain ;
+    :hasDaughter data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII ;
+    :isAncestorOf data:Infanta_Beatriz_of_Spain ;
+    :isBloodrelationOf data:King_Alfonso_XIII ;
+    :isBrotherOf data:King_Alfonso_XIII ;
+    :isFatherOf data:Infanta_Beatriz_of_Spain ;
+    :isParentOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:King_Alfonso_XIII ;
+    :isUncleOf data:Infanta_Beatriz_of_Spain .
+
+data:Infanta_Beatriz_of_Spain a :Person,
+        :Woman ;
+    :hasAncestor data:King_Alfonso_XIII ;
+    :hasFather data:King_Alfonso_XIII ;
+    :hasParent data:King_Alfonso_XIII ;
+    :hasRelation data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII ;
+    :hasSister data:Infanta_Beatriz_of_Spain ;
+    :isBloodrelationOf data:Infanta_Beatriz_of_Spain ;
+    :isChildOf data:King_Alfonso_XIII ;
+    :isDaughterOf data:King_Alfonso_XIII ;
+    :isSiblingOf data:Infanta_Beatriz_of_Spain ;
+    :isSisterOf data:Infanta_Beatriz_of_Spain .
+
+data:Prince_Amedeo_3rd_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasBrother data:Prince_Aimone,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :hasRelation data:King_Constantine_I,
+        data:Philippe_comte_de_Paris,
+        data:Prince_Aimone,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Princess_Sophie_of_Prussia,
+        data:Vittoria_dal_Pozzo ;
+    :isBloodrelationOf data:Prince_Aimone,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Aimone,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isUncleOf data:Prince_Amedeo_Duke_of_Aosta_son .
+
+data:King_Constantine_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Constantine_I ;
+    :hasChild data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasRelation data:King_Constantine_I,
+        data:Philippe_comte_de_Paris,
+        data:Prince_Aimone,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Princess_Sophie_of_Prussia,
+        data:Vittoria_dal_Pozzo ;
+    :isAncestorOf data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:King_Constantine_I ;
+    :isBrotherOf data:King_Constantine_I ;
+    :isFatherOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:King_Constantine_I ;
+    :isUncleOf data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Princess_Sophie_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasRelation data:King_Constantine_I,
+        data:Philippe_comte_de_Paris,
+        data:Prince_Aimone,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Princess_Sophie_of_Prussia,
+        data:Vittoria_dal_Pozzo ;
+    :hasSister data:Princess_Sophie_of_Prussia ;
+    :isAncestorOf data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Sophie_of_Prussia ;
+    :isMotherOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Sophie_of_Prussia ;
+    :isSisterOf data:Princess_Sophie_of_Prussia .
+
+data:Philippe_comte_de_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philippe_comte_de_Paris ;
+    :hasChild data:Princess_Helene_of_Orleans ;
+    :hasDaughter data:Princess_Helene_of_Orleans ;
+    :hasRelation data:King_Constantine_I,
+        data:Philippe_comte_de_Paris,
+        data:Prince_Aimone,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Princess_Sophie_of_Prussia,
+        data:Vittoria_dal_Pozzo ;
+    :isAncestorOf data:Prince_Aimone,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Princess_Helene_of_Orleans ;
+    :isBloodrelationOf data:Philippe_comte_de_Paris ;
+    :isBrotherOf data:Philippe_comte_de_Paris ;
+    :isFatherOf data:Princess_Helene_of_Orleans ;
+    :isParentOf data:Princess_Helene_of_Orleans ;
+    :isSiblingOf data:Philippe_comte_de_Paris ;
+    :isUncleOf data:Princess_Helene_of_Orleans .
+
+data:Prince_Amedeo_1st_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Amedeo_1st_Duke_of_Aosta ;
+    :hasChild data:Prince_Emanuele_Filiberto ;
+    :hasRelation data:King_Constantine_I,
+        data:Philippe_comte_de_Paris,
+        data:Prince_Aimone,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Princess_Sophie_of_Prussia,
+        data:Vittoria_dal_Pozzo ;
+    :hasSon data:Prince_Emanuele_Filiberto ;
+    :isAncestorOf data:Prince_Aimone,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto ;
+    :isBloodrelationOf data:Prince_Amedeo_1st_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Amedeo_1st_Duke_of_Aosta ;
+    :isFatherOf data:Prince_Emanuele_Filiberto ;
+    :isParentOf data:Prince_Emanuele_Filiberto ;
+    :isSiblingOf data:Prince_Amedeo_1st_Duke_of_Aosta ;
+    :isUncleOf data:Prince_Emanuele_Filiberto .
+
+data:Princess_Marie_Isabelle_of_Orleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Helene_of_Orleans ;
+    :hasDaughter data:Princess_Helene_of_Orleans ;
+    :hasRelation data:King_Constantine_I,
+        data:Philippe_comte_de_Paris,
+        data:Prince_Aimone,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Princess_Sophie_of_Prussia,
+        data:Vittoria_dal_Pozzo ;
+    :hasSister data:Princess_Marie_Isabelle_of_Orleans ;
+    :isAncestorOf data:Prince_Aimone,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Princess_Helene_of_Orleans ;
+    :isAuntOf data:Princess_Helene_of_Orleans ;
+    :isBloodrelationOf data:Princess_Marie_Isabelle_of_Orleans ;
+    :isMotherOf data:Princess_Helene_of_Orleans ;
+    :isParentOf data:Princess_Helene_of_Orleans ;
+    :isSiblingOf data:Princess_Marie_Isabelle_of_Orleans ;
+    :isSisterOf data:Princess_Marie_Isabelle_of_Orleans .
+
+data:Vittoria_dal_Pozzo a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Emanuele_Filiberto ;
+    :hasRelation data:King_Constantine_I,
+        data:Philippe_comte_de_Paris,
+        data:Prince_Aimone,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Princess_Sophie_of_Prussia,
+        data:Vittoria_dal_Pozzo ;
+    :hasSister data:Vittoria_dal_Pozzo ;
+    :hasSon data:Prince_Emanuele_Filiberto ;
+    :isAncestorOf data:Prince_Aimone,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto ;
+    :isAuntOf data:Prince_Emanuele_Filiberto ;
+    :isBloodrelationOf data:Vittoria_dal_Pozzo ;
+    :isMotherOf data:Prince_Emanuele_Filiberto ;
+    :isParentOf data:Prince_Emanuele_Filiberto ;
+    :isSiblingOf data:Vittoria_dal_Pozzo ;
+    :isSisterOf data:Vittoria_dal_Pozzo .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:King_Constantine_I,
+        data:Princess_Sophie_of_Prussia ;
+    :hasChild data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :hasFather data:King_Constantine_I ;
+    :hasMother data:Princess_Sophie_of_Prussia ;
+    :hasParent data:King_Constantine_I,
+        data:Princess_Sophie_of_Prussia ;
+    :hasRelation data:King_Constantine_I,
+        data:Philippe_comte_de_Paris,
+        data:Prince_Aimone,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Princess_Sophie_of_Prussia,
+        data:Vittoria_dal_Pozzo ;
+    :hasSister data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isAncestorOf data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isAuntOf data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isBloodrelationOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isChildOf data:King_Constantine_I,
+        data:Princess_Sophie_of_Prussia ;
+    :isDaughterOf data:King_Constantine_I,
+        data:Princess_Sophie_of_Prussia ;
+    :isMotherOf data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isParentOf data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isSiblingOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Prince_Emanuele_Filiberto a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Vittoria_dal_Pozzo ;
+    :hasBrother data:Prince_Emanuele_Filiberto ;
+    :hasChild data:Prince_Aimone ;
+    :hasFather data:Prince_Amedeo_1st_Duke_of_Aosta ;
+    :hasMother data:Vittoria_dal_Pozzo ;
+    :hasParent data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Vittoria_dal_Pozzo ;
+    :hasRelation data:King_Constantine_I,
+        data:Philippe_comte_de_Paris,
+        data:Prince_Aimone,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Princess_Sophie_of_Prussia,
+        data:Vittoria_dal_Pozzo ;
+    :hasSon data:Prince_Aimone ;
+    :isAncestorOf data:Prince_Aimone,
+        data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isBloodrelationOf data:Prince_Emanuele_Filiberto ;
+    :isBrotherOf data:Prince_Emanuele_Filiberto ;
+    :isChildOf data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Vittoria_dal_Pozzo ;
+    :isFatherOf data:Prince_Aimone ;
+    :isParentOf data:Prince_Aimone ;
+    :isSiblingOf data:Prince_Emanuele_Filiberto ;
+    :isSonOf data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Vittoria_dal_Pozzo ;
+    :isUncleOf data:Prince_Aimone .
+
+data:Princess_Helene_of_Orleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Philippe_comte_de_Paris,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasChild data:Prince_Aimone ;
+    :hasFather data:Philippe_comte_de_Paris ;
+    :hasMother data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasParent data:Philippe_comte_de_Paris,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :hasRelation data:King_Constantine_I,
+        data:Philippe_comte_de_Paris,
+        data:Prince_Aimone,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Princess_Sophie_of_Prussia,
+        data:Vittoria_dal_Pozzo ;
+    :hasSister data:Princess_Helene_of_Orleans ;
+    :hasSon data:Prince_Aimone ;
+    :isAncestorOf data:Prince_Aimone,
+        data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isAuntOf data:Prince_Aimone ;
+    :isBloodrelationOf data:Princess_Helene_of_Orleans ;
+    :isChildOf data:Philippe_comte_de_Paris,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :isDaughterOf data:Philippe_comte_de_Paris,
+        data:Princess_Marie_Isabelle_of_Orleans ;
+    :isMotherOf data:Prince_Aimone ;
+    :isParentOf data:Prince_Aimone ;
+    :isSiblingOf data:Princess_Helene_of_Orleans ;
+    :isSisterOf data:Princess_Helene_of_Orleans .
+
+data:Prince_Amedeo_Duke_of_Aosta_son a :Man,
+        :Person ;
+    :hasAncestor data:King_Constantine_I,
+        data:Philippe_comte_de_Paris,
+        data:Prince_Aimone,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Princess_Sophie_of_Prussia,
+        data:Vittoria_dal_Pozzo ;
+    :hasBrother data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :hasFather data:Prince_Aimone ;
+    :hasMother data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Aimone,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasRelation data:King_Constantine_I,
+        data:Philippe_comte_de_Paris,
+        data:Prince_Aimone,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Princess_Sophie_of_Prussia,
+        data:Vittoria_dal_Pozzo ;
+    :isBloodrelationOf data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isBrotherOf data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isChildOf data:Prince_Aimone,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isSonOf data:Prince_Aimone,
+        data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Prince_Aimone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Philippe_comte_de_Paris,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Vittoria_dal_Pozzo ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:Prince_Aimone,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :hasChild data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Prince_Emanuele_Filiberto ;
+    :hasMarriageYear 1939 ;
+    :hasMother data:Princess_Helene_of_Orleans ;
+    :hasParent data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans ;
+    :hasRelation data:King_Constantine_I,
+        data:Philippe_comte_de_Paris,
+        data:Prince_Aimone,
+        data:Prince_Amedeo_1st_Duke_of_Aosta,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta,
+        data:Prince_Amedeo_Duke_of_Aosta_son,
+        data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Marie_Isabelle_of_Orleans,
+        data:Princess_Sophie_of_Prussia,
+        data:Vittoria_dal_Pozzo ;
+    :hasSon data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isAncestorOf data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isBloodrelationOf data:Prince_Aimone,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isChildOf data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans ;
+    :isFatherOf data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isParentOf data:Prince_Amedeo_Duke_of_Aosta_son ;
+    :isSiblingOf data:Prince_Aimone,
+        data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isSonOf data:Prince_Emanuele_Filiberto,
+        data:Princess_Helene_of_Orleans ;
+    :isUncleOf data:Prince_Amedeo_Duke_of_Aosta_son .
+

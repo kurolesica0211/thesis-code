@@ -2,42 +2,27 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_Elizabeth_of_Yugoslavia a :Person,
-        :Woman ;
-    :alsoKnownAs "Jelisaveta Karađorđević"^^xsd:string ;
-    :hasBirthYear 1936 ;
-    :hasBrother data:Prince_Alexander_of_Yugoslavia,
-        data:Prince_Nicholas_of_Yugoslavia ;
-    :hasFather data:Prince_Paul_of_Yugoslavia ;
-    :hasMarriageYear 1960,
-        1969,
-        1987 ;
-    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
-    :hasRelation data:Howard_Oxenberg,
-        data:Manuel_Ulloa_El%C3%ADas,
-        data:Neil_Balfour_of_Dawyck .
+data:Maria_Teresa_of_Spain a :Woman ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1912 ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasRelation data:Ferdinand_of_Bavaria .
 
-data:Howard_Oxenberg a :Man,
-        :Person .
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man .
 
-data:Manuel_Ulloa_El%C3%ADas a :Man,
-        :Person ;
-    :hasDeathYear 1992 .
+data:Ferdinand_of_Bavaria a :Man ;
+    :hasFather data:Ludwig_Ferdinand_of_Bavaria ;
+    :hasMother data:Maria_de_la_Paz_of_Spain .
 
-data:Neil_Balfour_of_Dawyck a :Man,
-        :Person .
+data:Ludwig_Ferdinand_of_Bavaria a :Ancestor,
+        :Man .
 
-data:Prince_Alexander_of_Yugoslavia a :Man,
-        :Person .
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Woman .
 
-data:Prince_Nicholas_of_Yugoslavia a :Man,
-        :Person .
-
-data:Prince_Paul_of_Yugoslavia a :Ancestor,
-        :Man,
-        :Person .
-
-data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
-        :Person,
+data:Maria_de_la_Paz_of_Spain a :Ancestor,
         :Woman .
 

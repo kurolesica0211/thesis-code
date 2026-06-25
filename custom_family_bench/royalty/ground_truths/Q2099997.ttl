@@ -7,89 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Claus_Felix_von_Amsberg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Claus Felix von Amsberg" ;
-    data:posIndicesFull "1204:1227" ;
-    data:posIndicesPart "1346:1351",
-        "1352:1357",
-        "1423:1428",
-        "1429:1434",
-        "1659:1664",
-        "1665:1670",
-        "1703:1708",
-        "1732:1737",
-        "1738:1743",
-        "1806:1811",
-        "1938:1943",
-        "2716:2721",
-        "2811:2816" ;
-    data:wdtLink wdt:Q2439092 ;
-    :alsoKnownAs "Klaus Felix von Amsberg" ;
-    :hasSex data:male .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Gabriele_von_dem_Bussche-Ippenburg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Gabriele von dem Bussche-Ippenburg" ;
-    data:posIndicesFull "441:475" ;
-    data:posIndicesPart "1624:1631",
-        "2526:2529",
-        "2530:2537",
-        "2538:2547",
-        "516:523",
-        "551:558",
-        "598:605",
-        "606:615",
-        "679:682",
-        "683:690",
-        "980:983",
-        "984:991" ;
-    data:wdtLink wdt:Q13638711 ;
-    :hasChild data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
-    :hasDaughter data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
-    :hasSex data:female ;
-    :isMotherOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
-    :isParentOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen .
-
-data:Georg_von_dem_Bussche-Haddenhausen a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Georg von dem Bussche-Haddenhausen" ;
-    data:posIndicesFull "369:404" ;
-    data:posIndicesPart "1624:1631",
-        "2526:2529",
-        "2530:2537",
-        "516:523",
-        "524:536",
-        "551:558",
-        "598:605",
-        "679:682",
-        "683:690",
-        "980:983",
-        "984:991",
-        "992:1004" ;
-    data:wdtLink wdt:Q4329958 ;
-    :hasChild data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
-    :hasDaughter data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
-    :hasSex data:male ;
-    :isFatherOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen ;
-    :isParentOf data:Baroness_Gösta_von_dem_Bussche-Haddenhausen .
-
-data:Baroness_Gösta_von_dem_Bussche-Haddenhausen a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Baroness_Gösta_von_dem_Bussche-Haddenhausen a :Person ;
     rdfs:label "Baroness Gösta von dem Bussche-Haddenhausen" ;
     data:posIndicesFull "0:43",
         "60:122",
@@ -112,7 +30,7 @@ data:Baroness_Gösta_von_dem_Bussche-Haddenhausen a :Ancestor,
         "2704:2709",
         "2801:2806",
         "2989:2997",
-        "3079:3087",
+        "3237:3245",
         "432:440",
         "516:523",
         "524:536",
@@ -132,13 +50,110 @@ data:Baroness_Gösta_von_dem_Bussche-Haddenhausen a :Ancestor,
         "Gösta Julie Adelheid Marion Marie von dem Bussche-Haddenhausen",
         "Gösta von Amsberg",
         "Gösta von dem Bussche-Haddenhausen" ;
-    :hasFather data:Georg_von_dem_Bussche-Haddenhausen ;
-    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg ;
     :hasParent data:Gabriele_von_dem_Bussche-Ippenburg,
         data:Georg_von_dem_Bussche-Haddenhausen ;
-    :hasSex data:female ;
-    :isChildOf data:Gabriele_von_dem_Bussche-Ippenburg,
-        data:Georg_von_dem_Bussche-Haddenhausen ;
-    :isDaughterOf data:Gabriele_von_dem_Bussche-Ippenburg,
-        data:Georg_von_dem_Bussche-Haddenhausen .
+    :hasSex data:female .
+
+data:Beatrix_of_the_Netherlands a :Person ;
+    rdfs:label "Beatrix of the Netherlands" ;
+    data:posIndicesFull "2731:2766",
+        "2740:2766" ;
+    data:posIndicesPart "2787:2794",
+        "2861:2868",
+        "3168:3175" ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
+        "Beatrix Wilhelmina Armgard",
+        "Beatrix der Nederlanden",
+        "Beatrix of Orange",
+        "Beatrix van Oranje",
+        "Princess Beatrix of Orange-Nassau",
+        "Princess Beatrix of the Netherlands",
+        "Queen Beatrix" ;
+    :hasSex data:female .
+
+data:Claus_Felix_von_Amsberg a :Person ;
+    rdfs:label "Claus Felix von Amsberg" ;
+    data:posIndicesFull "1204:1227" ;
+    data:posIndicesPart "1346:1351",
+        "1352:1357",
+        "1423:1428",
+        "1429:1434",
+        "1659:1664",
+        "1665:1670",
+        "1703:1708",
+        "1732:1737",
+        "1738:1743",
+        "1806:1811",
+        "1938:1943",
+        "2716:2721",
+        "2811:2816" ;
+    data:wdtLink wdt:Q2439092 ;
+    :alsoKnownAs "Klaus Felix von Amsberg" ;
+    :hasParent data:Elise_von_Vieregge,
+        data:Wilhelm_von_Amsberg ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Elise_von_Vieregge a :Person ;
+    rdfs:label "Elise von Vieregge" ;
+    data:posIndicesFull "1272:1290" ;
+    data:wdtLink wdt:Q13576445 ;
+    :alsoKnownAs "Elise Hedwig Alexandrine von Vieregge" ;
+    :hasSex data:female .
+
+data:Gabriele_von_dem_Bussche-Ippenburg a :Person ;
+    rdfs:label "Gabriele von dem Bussche-Ippenburg" ;
+    data:posIndicesFull "441:475" ;
+    data:posIndicesPart "1624:1631",
+        "2526:2529",
+        "2530:2537",
+        "2538:2547",
+        "516:523",
+        "551:558",
+        "598:605",
+        "606:615",
+        "679:682",
+        "683:690",
+        "980:983",
+        "984:991" ;
+    data:wdtLink wdt:Q13638711 ;
+    :hasSex data:female .
+
+data:Georg_von_dem_Bussche-Haddenhausen a :Person ;
+    rdfs:label "Georg von dem Bussche-Haddenhausen" ;
+    data:posIndicesFull "369:404" ;
+    data:posIndicesPart "1624:1631",
+        "2526:2529",
+        "2530:2537",
+        "516:523",
+        "524:536",
+        "551:558",
+        "598:605",
+        "679:682",
+        "683:690",
+        "980:983",
+        "984:991",
+        "992:1004" ;
+    data:wdtLink wdt:Q4329958 ;
+    :hasSex data:male .
+
+data:Wilhelm_von_Amsberg a :Person ;
+    rdfs:label "Wilhelm von Amsberg" ;
+    data:posIndicesFull "1248:1267" ;
+    data:posIndicesPart "2142:2149",
+        "2191:2198",
+        "3385:3392" ;
+    data:wdtLink wdt:Q4285590 ;
+    :alsoKnownAs "Wilhelm Karl Friedrich August Louis von Amsberg" ;
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

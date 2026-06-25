@@ -69,33 +69,39 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Marie Alix of Schaumburg-Lippe (Marie Alix zu Schaumburg-Lippe; 2 April 1923 – 1 November 2021) was Duchess of Schleswig-Holstein as the wife of Peter, Duke of Schleswig-Holstein from 1965 to 1980.
-Biography
+Lady Amanda Patricia Victoria Ellingworth (née Knatchbull; born 26 June 1957), styled The Honourable Amanda Knatchbull between 1957 and 1979, is a British voluntary sector executive.
+The granddaughter of Admiral of the Fleet Louis Mountbatten, 1st Earl Mountbatten of Burma, she is a descendant of Queen Victoria through her daughter Princess Alice, Mountbatten's grandmother.
+Ancestry
 
-Family
+Early life and education
 
-Marie Alix was the only daughter of Prince Stefan of Schaumburg-Lippe  and Ingeborg Alix, Princess Stephan Alexander of Schaumburg-Lippe .
-She was the niece of Adolf II, the last ruler of the Principality of Schaumburg-Lippe, who abdicated following the German Revolution of 1918–1919.
-Marie Alix's younger brother, Prince Georg Moritz of Schaumburg-Lippe, was killed in a car accident in 1970 without marrying or having children.
-Marriage and issue
+Born as The Honourable Amanda Patricia Victoria Knatchbull, on 26 June 1957, in London, she was the fifth of eight children of the 7th Baron Brabourne and the 2nd Countess Mountbatten of Burma.
+Earl Mountbatten of Burma, who was an uncle of Prince Philip, Duke of Edinburgh and a second cousin once removed of Queen Elizabeth II.
+Ellingworth earned a BA Hons degree from the University of Kent, a CQSW qualification from Goldsmiths College, London, and a Certificate in Mandarin Language from the Beijing Language Institute.
+, Ellingworth worked at a senior level in health services, children's services, adult social care and affordable housing.
+Personal life
 
-Marie Alix married Peter, Duke of Schleswig-Holstein, third son of Wilhelm Friedrich, Duke of Schleswig-Holstein, and Princess Marie Melita of Hohenlohe-Langenburg, in Glücksburg on 9 October 1947.
-They had four children:
+Marriage and family
+
+Lady Amanda married novelist and property entrepreneur Charles Vincent Ellingworth on 31 October 1987.
+Relationship with Prince of Wales
+
+Ellingworth's grandfather Lord Mountbatten recommended her as a potential bride for his grandnephew, Charles, Prince of Wales.
+According to his biographer, Jonathan Dimbleby, "In 1974, following his correspondence with Mountbatten on the subject, the Prince had tentatively raised the question of marriage to Amanda with her mother (and his godmother)
+"
 
 
-Work
-
-She was a co-founder of the Stiftung Louisenlund, which runs an eponymous boarding school in Güby, Schleswig-Holstein, Germany.
-Death and funeral
-
-Princess Marie Alix of Schaumburg-Lippe died in Thumby on 1 November 2021 at the age of 98.
-Her funeral was held 11 November 2021 in Schleswig Cathedral and she was buried in a family crypt at the family home, Louisenlund.
+Mountbatten intended for himself and Lady Amanda to accompany Prince Charles on his planned 1980 tour of India.
+Before Prince Charles was to depart, Mountbatten was assassinated by the IRA in August 1979.
+When Prince Charles returned, he proposed to Lady Amanda.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -111,39 +117,9 @@ Her funeral was held 11 November 2021 in Schleswig Cathedral and she was buried 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -158,6 +134,23 @@ Her funeral was held 11 November 2021 in Schleswig Cathedral and she was buried 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -175,6 +168,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -242,29 +250,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -273,6 +273,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -285,6 +293,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -293,17 +303,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -331,6 +343,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -346,144 +442,380 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (7a3c377c-fdba-458d-9d00-fad0d1bafcd9)
- Call ID: 7a3c377c-fdba-458d-9d00-fad0d1bafcd9
+  AssignClass (c703b5ca-c7ab-4e65-9567-473cd9c34415)
+ Call ID: c703b5ca-c7ab-4e65-9567-473cd9c34415
   Args:
-    source: Marie_Alix_of_Schaumburg-Lippe
+    source: Lady_Amanda_Patricia_Victoria_Ellingworth
     type: :Woman
-  AssignClass (d42c2893-3946-436a-b048-c55054b1e00c)
- Call ID: d42c2893-3946-436a-b048-c55054b1e00c
+  AssignClass (ff47bc8d-de82-4556-9ba9-8afc864449db)
+ Call ID: ff47bc8d-de82-4556-9ba9-8afc864449db
   Args:
-    source: Marie_Alix_of_Schaumburg-Lippe
+    source: Lady_Amanda_Patricia_Victoria_Ellingworth
     type: :Person
-  AddLiteral (aea5a11f-5b64-4cbb-ba9f-ebea775794fb)
- Call ID: aea5a11f-5b64-4cbb-ba9f-ebea775794fb
+  AddLiteral (bd7d05ad-4e6c-4005-aaa3-2e82651684ca)
+ Call ID: bd7d05ad-4e6c-4005-aaa3-2e82651684ca
   Args:
-    literal_type: xsd:integer
-    source: Marie_Alix_of_Schaumburg-Lippe
-    literal_value: 1923
     relation: :hasBirthYear
-  AddLiteral (30d06de7-8a84-48a6-84f4-8fa9cfd2b3ac)
- Call ID: 30d06de7-8a84-48a6-84f4-8fa9cfd2b3ac
-  Args:
+    source: Lady_Amanda_Patricia_Victoria_Ellingworth
+    literal_value: 1957
     literal_type: xsd:integer
-    source: Marie_Alix_of_Schaumburg-Lippe
-    relation: :hasDeathYear
-    literal_value: 2021
-  AddLiteral (dc2f4fdb-95b7-4b76-b05a-e554b6321ae8)
- Call ID: dc2f4fdb-95b7-4b76-b05a-e554b6321ae8
+  AddTriple (10d948ef-ca81-4d85-99f0-bdf45e96e0ca)
+ Call ID: 10d948ef-ca81-4d85-99f0-bdf45e96e0ca
   Args:
-    literal_type: xsd:string
-    source: Marie_Alix_of_Schaumburg-Lippe
-    relation: :alsoKnownAs
-    literal_value: Marie Alix zu Schaumburg-Lippe
-  AssignClass (5c641cad-e503-4c59-9bb0-ee4cfc8ff1e2)
- Call ID: 5c641cad-e503-4c59-9bb0-ee4cfc8ff1e2
+    target: The_Honourable_Amanda_Knatchbull
+    relation: :knownAs
+    source: Lady_Amanda_Patricia_Victoria_Ellingworth
+  AssignClass (adb02adc-d1e2-4a4d-b5a5-8e95562c2071)
+ Call ID: adb02adc-d1e2-4a4d-b5a5-8e95562c2071
   Args:
+    source: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
     type: :Man
-    source: Peter_Duke_of_Schleswig-Holstein
-  AssignClass (ee448aba-e1f8-4f89-8de5-7ae7ebda1fc4)
- Call ID: ee448aba-e1f8-4f89-8de5-7ae7ebda1fc4
+  AssignClass (03e9ea6d-62af-4574-ba02-bae5342b9ac7)
+ Call ID: 03e9ea6d-62af-4574-ba02-bae5342b9ac7
   Args:
-    source: Peter_Duke_of_Schleswig-Holstein
+    source: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
     type: :Person
-  AddLiteral (0268ecd1-34e1-459a-81b4-882c84817f39)
- Call ID: 0268ecd1-34e1-459a-81b4-882c84817f39
+  AssignClass (414a0872-f71e-4987-8d70-5c12d4490e21)
+ Call ID: 414a0872-f71e-4987-8d70-5c12d4490e21
   Args:
-    source: Marie_Alix_of_Schaumburg-Lippe
-    literal_type: xsd:integer
-    literal_value: 1965
+    source: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
+    type: :Ancestor
+  AddTriple (f948da6b-02db-48f5-b36d-f3368e707266)
+ Call ID: f948da6b-02db-48f5-b36d-f3368e707266
+  Args:
+    target: Lady_Amanda_Patricia_Victoria_Ellingworth
+    source: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
+    relation: :isAncestorOf
+  AssignClass (dbc92d03-0521-4d96-9a96-1ea0ad2d0799)
+ Call ID: dbc92d03-0521-4d96-9a96-1ea0ad2d0799
+  Args:
+    source: Queen_Victoria
+    type: :Woman
+  AssignClass (f3af852e-c4be-442a-a37f-c9e12a35e4fa)
+ Call ID: f3af852e-c4be-442a-a37f-c9e12a35e4fa
+  Args:
+    source: Queen_Victoria
+    type: :Ancestor
+  AssignClass (8d45163d-60b8-4af8-9380-11c544acd165)
+ Call ID: 8d45163d-60b8-4af8-9380-11c544acd165
+  Args:
+    source: Princess_Alice
+    type: :Woman
+  AssignClass (ac5326c2-2e03-488a-9cb8-1cfb4c773cd8)
+ Call ID: ac5326c2-2e03-488a-9cb8-1cfb4c773cd8
+  Args:
+    source: Princess_Alice
+    type: :Ancestor
+  AddTriple (748f15b0-42cd-43b5-9aef-3ae83888adb4)
+ Call ID: 748f15b0-42cd-43b5-9aef-3ae83888adb4
+  Args:
+    source: Princess_Alice
+    relation: :hasMother
+    target: Queen_Victoria
+  AddTriple (e1d23fad-ccfc-4598-911a-4687db7decf2)
+ Call ID: e1d23fad-ccfc-4598-911a-4687db7decf2
+  Args:
+    relation: :hasMother
+    source: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
+    target: Princess_Alice
+  AssignClass (a4e0f758-eb99-46f3-a686-8d6795b8b257)
+ Call ID: a4e0f758-eb99-46f3-a686-8d6795b8b257
+  Args:
+    source: 7th_Baron_Brabourne
+    type: :Man
+  AssignClass (195ef1ba-d7fa-42b1-896a-1195cf16b663)
+ Call ID: 195ef1ba-d7fa-42b1-896a-1195cf16b663
+  Args:
+    source: 7th_Baron_Brabourne
+    type: :Person
+  AssignClass (9acdc6da-abd8-4fd2-9fba-0add17439dff)
+ Call ID: 9acdc6da-abd8-4fd2-9fba-0add17439dff
+  Args:
+    source: 2nd_Countess_Mountbatten_of_Burma
+    type: :Woman
+  AssignClass (60ec6dde-9c9e-476c-a87b-d8248306b557)
+ Call ID: 60ec6dde-9c9e-476c-a87b-d8248306b557
+  Args:
+    source: 2nd_Countess_Mountbatten_of_Burma
+    type: :Person
+  AddTriple (f7715bb2-18b3-4ed7-bd99-713cbbccbe3a)
+ Call ID: f7715bb2-18b3-4ed7-bd99-713cbbccbe3a
+  Args:
+    relation: :hasFather
+    source: Lady_Amanda_Patricia_Victoria_Ellingworth
+    target: 7th_Baron_Brabourne
+  AddTriple (96859001-42c3-4bcc-9385-40a88d16f5ec)
+ Call ID: 96859001-42c3-4bcc-9385-40a88d16f5ec
+  Args:
+    source: Lady_Amanda_Patricia_Victoria_Ellingworth
+    relation: :hasMother
+    target: 2nd_Countess_Mountbatten_of_Burma
+  AssignClass (6d922a9f-436b-4278-b9df-1da3f0945fde)
+ Call ID: 6d922a9f-436b-4278-b9df-1da3f0945fde
+  Args:
+    source: Prince_Philip_Duke_of_Edinburgh
+    type: :Man
+  AssignClass (5d5b6843-ab26-4738-9838-92678f1c44c9)
+ Call ID: 5d5b6843-ab26-4738-9838-92678f1c44c9
+  Args:
+    source: Prince_Philip_Duke_of_Edinburgh
+    type: :Person
+  AssignClass (170ad10e-2ed7-4a86-b12c-722aea2d2fc8)
+ Call ID: 170ad10e-2ed7-4a86-b12c-722aea2d2fc8
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (bf2adbad-0b55-461c-90f6-4803120185aa)
+ Call ID: bf2adbad-0b55-461c-90f6-4803120185aa
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Person
+  AssignClass (cede8e7e-bddc-4fff-8fbf-b85b0161539e)
+ Call ID: cede8e7e-bddc-4fff-8fbf-b85b0161539e
+  Args:
+    source: Charles_Vincent_Ellingworth
+    type: :Man
+  AssignClass (da9adb61-421c-4c36-b4a7-cab7746fcfe6)
+ Call ID: da9adb61-421c-4c36-b4a7-cab7746fcfe6
+  Args:
+    source: Charles_Vincent_Ellingworth
+    type: :Person
+  AddLiteral (c0c8fba7-03d9-46a0-9294-5457cce5c7b2)
+ Call ID: c0c8fba7-03d9-46a0-9294-5457cce5c7b2
+  Args:
+    source: Lady_Amanda_Patricia_Victoria_Ellingworth
+    literal_value: 1987
     relation: :hasMarriageYear
-  AssignClass (4b7df95d-e6b7-46ec-ae6c-c36913ce8fa9)
- Call ID: 4b7df95d-e6b7-46ec-ae6c-c36913ce8fa9
+    literal_type: xsd:integer
+  AddTriple (25ad641d-fe80-4a73-b09c-3e042d60b794)
+ Call ID: 25ad641d-fe80-4a73-b09c-3e042d60b794
   Args:
-    source: Stefan_of_Schaumburg-Lippe
+    target: Charles_Vincent_Ellingworth
+    source: Lady_Amanda_Patricia_Victoria_Ellingworth
+    relation: :hasRelation
+  AssignClass (f147c32a-51eb-45dc-9033-5ee0360f173d)
+ Call ID: f147c32a-51eb-45dc-9033-5ee0360f173d
+  Args:
+    source: Charles_Prince_of_Wales
     type: :Man
-  AssignClass (a2b8f836-464f-4194-a2dd-ad74468eb45e)
- Call ID: a2b8f836-464f-4194-a2dd-ad74468eb45e
+  AssignClass (1c4cd21d-1e40-4a69-93f9-ef29cd664d24)
+ Call ID: 1c4cd21d-1e40-4a69-93f9-ef29cd664d24
   Args:
-    source: Stefan_of_Schaumburg-Lippe
+    source: Charles_Prince_of_Wales
     type: :Person
-  AssignClass (6922bbb1-bc48-474f-ae67-57a1b1dbd98b)
- Call ID: 6922bbb1-bc48-474f-ae67-57a1b1dbd98b
+  AddLiteral (e5274416-66a1-47ad-9040-cca373e1d97c)
+ Call ID: e5274416-66a1-47ad-9040-cca373e1d97c
   Args:
-    source: Ingeborg_Alix_of_Schaumburg-Lippe
+    relation: :hasDeathYear
+    source: Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma
+    literal_value: 1979
+    literal_type: xsd:integer
+  Finish (8166bdae-7d2b-4c5d-865e-133abde6c85d)
+ Call ID: 8166bdae-7d2b-4c5d-865e-133abde6c85d
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Charles_Prince_of_Wales a :Man,
+          :Person .
+
+  data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Ancestor,
+          :Man,
+          :Person ;
+      :hasDeathYear 1979 ;
+      :hasMother data:Princess_Alice ;
+      :isAncestorOf data:Lady_Amanda_Patricia_Victoria_Ellingworth .
+
+  data:Prince_Philip_Duke_of_Edinburgh a :Man,
+          :Person .
+
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
+
+  data:2nd_Countess_Mountbatten_of_Burma a :Person,
+          :Woman .
+
+  data:7th_Baron_Brabourne a :Man,
+          :Person .
+
+  data:Charles_Vincent_Ellingworth a :Man,
+          :Person .
+
+  data:Lady_Amanda_Patricia_Victoria_Ellingworth a :Person,
+          :Woman ;
+      :hasBirthYear 1957 ;
+      :hasFather data:7th_Baron_Brabourne ;
+      :hasMarriageYear 1987 ;
+      :hasMother data:2nd_Countess_Mountbatten_of_Burma ;
+      :hasRelation data:Charles_Vincent_Ellingworth ;
+      :knownAs data:The_Honourable_Amanda_Knatchbull .
+
+  data:Princess_Alice a :Ancestor,
+          :Woman ;
+      :hasMother data:Queen_Victoria .
+
+  data:Queen_Victoria a :Ancestor,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['The_Honourable_Amanda_Knatchbull']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (72da568c-6870-48c1-9310-eb436c959338)
+ Call ID: 72da568c-6870-48c1-9310-eb436c959338
+  Args:
+    source: The_Honourable_Amanda_Knatchbull
     type: :Woman
-  AssignClass (9c5460b4-bb83-46ca-9d62-f7d525d1b119)
- Call ID: 9c5460b4-bb83-46ca-9d62-f7d525d1b119
+  AssignClass (2f109fa8-eaf0-4bc9-9cb5-47e7f7778bb5)
+ Call ID: 2f109fa8-eaf0-4bc9-9cb5-47e7f7778bb5
   Args:
+    source: The_Honourable_Amanda_Knatchbull
     type: :Person
-    source: Ingeborg_Alix_of_Schaumburg-Lippe
-  AddTriple (82fff719-4045-4557-b320-115e9c32e01a)
- Call ID: 82fff719-4045-4557-b320-115e9c32e01a
-  Args:
-    target: Stefan_of_Schaumburg-Lippe
-    source: Marie_Alix_of_Schaumburg-Lippe
-    relation: :hasFather
-  AddTriple (556e1da0-4428-4164-958a-5bad6da880f7)
- Call ID: 556e1da0-4428-4164-958a-5bad6da880f7
-  Args:
-    source: Marie_Alix_of_Schaumburg-Lippe
-    target: Ingeborg_Alix_of_Schaumburg-Lippe
-    relation: :hasMother
-  AssignClass (ac73e3b5-3b7f-4c34-999f-73d0401c28ff)
- Call ID: ac73e3b5-3b7f-4c34-999f-73d0401c28ff
-  Args:
-    source: Adolf_II_of_Schaumburg-Lippe
-    type: :Man
-  AssignClass (1e9b674b-5913-49fb-8f31-32a3227b6cb4)
- Call ID: 1e9b674b-5913-49fb-8f31-32a3227b6cb4
-  Args:
-    type: :Person
-    source: Adolf_II_of_Schaumburg-Lippe
-  AssignClass (11cf1537-99d9-4edc-9ac8-d6a0d00de6d6)
- Call ID: 11cf1537-99d9-4edc-9ac8-d6a0d00de6d6
-  Args:
-    source: Georg_Moritz_of_Schaumburg-Lippe
-    type: :Man
-  AssignClass (53a60bf8-451f-41cf-ad6d-10cdee6a5101)
- Call ID: 53a60bf8-451f-41cf-ad6d-10cdee6a5101
-  Args:
-    type: :Person
-    source: Georg_Moritz_of_Schaumburg-Lippe
-  AddTriple (924f37b9-b2d9-4b5b-943f-4dc8aa6cfa46)
- Call ID: 924f37b9-b2d9-4b5b-943f-4dc8aa6cfa46
-  Args:
-    relation: :hasBrother
-    source: Marie_Alix_of_Schaumburg-Lippe
-    target: Georg_Moritz_of_Schaumburg-Lippe
-  AssignClass (916baadf-929c-46cc-a2e2-da75c622d512)
- Call ID: 916baadf-929c-46cc-a2e2-da75c622d512
-  Args:
-    source: Wilhelm_Friedrich_of_Schleswig-Holstein
-    type: :Man
-  AssignClass (465ef5cb-3de8-4849-8138-5d1dbb68b107)
- Call ID: 465ef5cb-3de8-4849-8138-5d1dbb68b107
-  Args:
-    source: Wilhelm_Friedrich_of_Schleswig-Holstein
-    type: :Person
-  AssignClass (fb9d9ac8-f981-4151-abb7-2b71c2118dc6)
- Call ID: fb9d9ac8-f981-4151-abb7-2b71c2118dc6
-  Args:
-    type: :Woman
-    source: Marie_Melita_of_Hohenlohe-Langenburg
-  AssignClass (f756688c-e7c9-439b-b234-1329841b4481)
- Call ID: f756688c-e7c9-439b-b234-1329841b4481
-  Args:
-    source: Marie_Melita_of_Hohenlohe-Langenburg
-    type: :Person
-  AddTriple (5441fb6a-8574-4f60-a2fc-a699c8fd5c91)
- Call ID: 5441fb6a-8574-4f60-a2fc-a699c8fd5c91
-  Args:
-    relation: :hasFather
-    target: Wilhelm_Friedrich_of_Schleswig-Holstein
-    source: Peter_Duke_of_Schleswig-Holstein
-  AddTriple (e43743fb-e007-46aa-a77d-9ba83c927267)
- Call ID: e43743fb-e007-46aa-a77d-9ba83c927267
-  Args:
-    target: Marie_Melita_of_Hohenlohe-Langenburg
-    source: Peter_Duke_of_Schleswig-Holstein
-    relation: :hasMother
-  Finish (96d3e679-8920-4896-8d06-814f7952022c)
- Call ID: 96d3e679-8920-4896-8d06-814f7952022c
+  Finish (8536b45d-3172-42eb-950a-e8c6efbe79ef)
+ Call ID: 8536b45d-3172-42eb-950a-e8c6efbe79ef
   Args:

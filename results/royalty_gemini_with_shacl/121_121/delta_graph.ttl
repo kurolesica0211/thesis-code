@@ -2,53 +2,38 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Athena_of_Monpezat a :Person,
+data:Aimone_of_Savoy-Aosta a :Man,
+        :Person ;
+    :formerlyKnownAs "Duke of Apulia"^^xsd:string ;
+    :hasBirthYear 1967 ;
+    :hasFather data:Amedeo_of_Savoy ;
+    :hasMother data:Claude_of_Orleans .
+
+data:Emanuele_Filiberto_of_Savoy a :Man,
+        :Person ;
+    :hasFather data:Vittorio_Emanuele .
+
+data:Olga_of_Greece a :Person,
         :Woman ;
-    :alsoKnownAs "Countess Athena of Monpezat"^^xsd:string ;
-    :formerlyKnownAs "Her Highness Princess Athena of Denmark, Countess of Monpezat"^^xsd:string ;
-    :hasBirthYear 2012 ;
-    :hasFather data:Joachim_of_Denmark ;
-    :hasMother data:Marie_of_Denmark ;
-    :hasSex data:Female ;
-    :knownAs "Athena Marguerite Françoise Marie"^^xsd:string,
-        "Her Excellency Countess Athena of Monpezat"^^xsd:string .
+    :hasFather data:Michael_of_Greece_and_Denmark .
 
-data:Felix a :Man,
-        :Person ;
-    :hasFather data:Joachim_of_Denmark ;
-    :hasSex data:Male .
-
-data:Frederik_X a :Man,
+data:Prince_Jean_Duke_of_Guise a :Man,
         :Person .
 
-data:Henrik_Denmark a :Man,
-        :Person ;
-    :hasFather data:Joachim_of_Denmark ;
-    :hasMother data:Marie_of_Denmark ;
-    :hasSex data:Male .
-
-data:Henrik_Prince_Consort a :Man,
+data:Amedeo_of_Savoy a :Ancestor,
+        :Man,
         :Person .
 
-data:Margrethe_II a :Person,
+data:Claude_of_Orleans a :Ancestor,
+        :Person,
         :Woman .
 
-data:Nikolai a :Man,
-        :Person ;
-    :hasFather data:Joachim_of_Denmark ;
-    :hasSex data:Male .
+data:Michael_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person .
 
-data:Female a :Sex .
-
-data:Marie_of_Denmark a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Joachim_of_Denmark a :Ancestor,
+data:Vittorio_Emanuele a :Ancestor,
         :Man,
         :Person ;
-    :hasSex data:Male .
-
-data:Male a :Sex .
+    :hasDeathYear 2024 .
 

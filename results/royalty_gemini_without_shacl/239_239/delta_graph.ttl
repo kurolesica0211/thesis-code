@@ -2,36 +2,27 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:FelipeVI a :Man,
+data:Irene_de_Todos_los_Santos_Urdangarin_y_de_Borbon a :Person,
+        :Woman ;
+    :hasAncestor data:King_Juan_Carlos_I ;
+    :hasBirthYear 2005 ;
+    :hasFather data:Inaki_Urdangarin ;
+    :hasMother data:Infanta_Cristina ;
+    :hasRelation data:Juan_Urquijo .
+
+data:Inaki_Urdangarin a :Man,
         :Person .
 
-data:InfantaSofia a :Person,
+data:Infanta_Cristina a :Person,
         :Woman .
 
-data:LeonorPrincessOfAsturias a :Person,
-        :Woman .
+data:Juan_Urquijo a :Man,
+        :Person ;
+    :hasAncestor data:Princess_Teresa_Duchess_of_Salerno .
 
-data:VictoriaFedericaDeMarichalarYBorb%C3%B3n a :Person,
-        :Woman ;
-    :hasBirthYear "2000-09-09"^^xsd:string ;
-    :hasBrother data:FelipeDeMarichalar ;
-    :hasFather data:JaimeDeMarichalar ;
-    :hasMother data:InfantaElenaDuchessOfLugo .
-
-data:FelipeDeMarichalar a :Man,
+data:King_Juan_Carlos_I a :Man,
         :Person .
 
-data:InfantaElenaDuchessOfLugo a :Person,
-        :Woman ;
-    :hasFather data:JuanCarlosI ;
-    :hasMother data:SofiaOfSpain .
-
-data:JaimeDeMarichalar a :Man,
-        :Person .
-
-data:JuanCarlosI a :Man,
-        :Person .
-
-data:SofiaOfSpain a :Person,
+data:Princess_Teresa_Duchess_of_Salerno a :Person,
         :Woman .
 

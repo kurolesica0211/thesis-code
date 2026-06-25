@@ -7,15 +7,16 @@ data:Ernest_Augustus_Duke_of_Brunswick a :Ancestor,
         :Person ;
     :isFatherOf data:Frederica_of_Greece .
 
-data:Irene_of_Greece a :Person,
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Anne-Marie_of_Denmark .
+
+data:Princess_Irene a :Person,
         :Woman ;
     :isSisterOf data:Constantine_II .
 
-data:Katherine_of_Greece a :Person,
-        :Woman ;
-    :isSisterOf data:Paul_of_Greece .
-
-data:Sofia_of_Greece a :Person,
+data:Princess_Sofia a :Person,
         :Woman ;
     :isSisterOf data:Constantine_II .
 
@@ -24,11 +25,16 @@ data:Victoria_Louise_of_Prussia a :Ancestor,
         :Woman ;
     :isMotherOf data:Frederica_of_Greece .
 
-data:Anne_Marie_of_Denmark a :Person,
-        :Woman .
-
 data:George_II_of_Greece a :Man,
         :Person .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :isBrotherOf data:George_II_of_Greece .
+
+data:Anne-Marie_of_Denmark a :Person,
+        :Woman .
 
 data:Constantine_II a :Man,
         :Person ;
@@ -37,12 +43,7 @@ data:Constantine_II a :Man,
     :hasFather data:Paul_of_Greece ;
     :hasMarriageYear 1964 ;
     :hasMother data:Frederica_of_Greece ;
-    :hasRelation data:Anne_Marie_of_Denmark .
-
-data:Paul_of_Greece a :Ancestor,
-        :Man,
-        :Person ;
-    :isBrotherOf data:George_II_of_Greece .
+    :hasRelation data:Anne-Marie_of_Denmark .
 
 data:Frederica_of_Greece a :Ancestor,
         :Person,

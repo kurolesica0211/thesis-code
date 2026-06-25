@@ -87,7 +87,6 @@ Please update the Knowledge Graph based on the provided data.
 ### Input Text:
 India Amanda Caroline Hicks (born 5 September 1967) is a British designer, writer, businesswoman and former fashion model.
 After graduating from the New England School of Photography, Hicks became an interior designer and a model for Ralph Lauren, among others.
-She moved to the Bahamas in 1996, where she published books, promoted home and beauty products, and introduced a line of jewellery.
 Hicks travels frequently to disaster sites in her role with the non-profit organisation Global Empowerment Mission.
 A daughter of Lady Pamela Hicks, she is a maternal descendant of the House of Mountbatten and a relative of the British royal family.
 Early life
@@ -108,12 +107,10 @@ Career
 After graduating college, Hicks' father introduced her to Emilio Pucci in Florence, Italy, where she modelled swimsuits.
 Hicks moved to the Bahamas in 1996.
 In the Bahamas, Hicks restored homes, invested and remodelled a hotel, and published several books on design and lifestyle.
-Her first book called Island Life was a design book with photographs of Hibiscus Hill, a house she designed.
 Hicks also started a boutique shop in the Bahamas called the Sugar Mill Trading Company with business partner Linda Griffin.
 From 2005 to 2014, Hicks worked with Crabtree & Evelyn as a spokeswoman and creative consultant for home and skincare products.
 The company created the India Hicks Island Living and India Hicks Island Night lines of soaps, candles, and perfumes.
 In 2008, Hicks co-hosted the second season of the Bravo interior design show Top Design in Los Angeles, California.
-She introduced her own line of jewellery in 2011.
 Hicks also became a public commentator on events surrounding the royal family and the 2011 wedding of Prince William and Catherine Middleton.
 In 2015, Hicks created an e-commerce venture called India Hicks Inc. with partners Nicholas Keuper and HauteLook.
 Hicks also worked with the Home Shopping Network on a line of bedding products called India Hicks Island Living.
@@ -124,7 +121,6 @@ He was previously in a relationship with her cousin, Lady Helen Windsor and then
 India and David re-connected as adults during a holiday in the Bahamas.
 The couple have a house, "America Farm" in Ewelme, Oxfordshire, built on land that Hicks had inherited and replacing two redundant farm workers' cottages.
 Hicks' book about the project, India Hicks:
-The Story of Four Houses – A Slice of England, was published by  Rizzoli International Publications in 2018.
 Hicks has competed in several marathons.
 In 2020, Hicks pleaded guilty at Uxbridge Magistrates' Court to shoplifting a coat and was ordered to pay costs and a victim surcharge.
 Her spokesperson stated: "The court accepted that at the time of taking the coat, India had simply been absent-minded and hadn't intended to leave without paying for it".
@@ -134,6 +130,8 @@ Her spokesperson stated: "The court accepted that at the time of taking the coat
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -149,39 +147,9 @@ Her spokesperson stated: "The court accepted that at the time of taking the coat
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -196,6 +164,23 @@ Her spokesperson stated: "The court accepted that at the time of taking the coat
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -213,6 +198,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,29 +280,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -311,6 +303,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -323,6 +323,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -331,17 +333,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -369,6 +373,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -384,130 +472,74 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0d60f8a2-33e6-4ab1-96a2-40f1a1d10f01)
- Call ID: 0d60f8a2-33e6-4ab1-96a2-40f1a1d10f01
+  AssignClass (48183b1f-7e05-4b07-b498-37bb67c801fe)
+ Call ID: 48183b1f-7e05-4b07-b498-37bb67c801fe
   Args:
-    source: India Hicks
-    type: :Woman
-  AssignClass (c95ec510-9e6a-436a-8a81-5513b99d401b)
- Call ID: c95ec510-9e6a-436a-8a81-5513b99d401b
-  Args:
-    source: India Hicks
+    source: India_Hicks
     type: :Person
-  AddLiteral (05f39e95-fc2f-4b18-b12f-727c80045566)
- Call ID: 05f39e95-fc2f-4b18-b12f-727c80045566
+  AssignClass (c112662d-e40e-483e-8c0c-b42f4d2b244e)
+ Call ID: c112662d-e40e-483e-8c0c-b42f4d2b244e
   Args:
-    literal_value: 1967
+    source: India_Hicks
+    type: :Woman
+  AddLiteral (96590240-4236-4fe5-9b05-8dcea9de8ab1)
+ Call ID: 96590240-4236-4fe5-9b05-8dcea9de8ab1
+  Args:
     literal_type: xsd:integer
+    source: India_Hicks
+    literal_value: 1967
     relation: :hasBirthYear
-    source: India Hicks
-  AssignClass (44a7e4a6-cc67-4596-b290-90cdcd51aca1)
- Call ID: 44a7e4a6-cc67-4596-b290-90cdcd51aca1
+  AssignClass (225c7894-5e59-4180-b8c3-2ceea99e0227)
+ Call ID: 225c7894-5e59-4180-b8c3-2ceea99e0227
   Args:
-    source: Lady Pamela Mountbatten
-    type: :Woman
-  AssignClass (9b547ff2-c339-4e3e-9e50-655e89da9650)
- Call ID: 9b547ff2-c339-4e3e-9e50-655e89da9650
-  Args:
+    source: Lady_Pamela_Mountbatten
     type: :Person
-    source: Lady Pamela Mountbatten
-  AssignClass (3a8f22be-2ff4-4e80-8dcf-8d9a4ff94907)
- Call ID: 3a8f22be-2ff4-4e80-8dcf-8d9a4ff94907
+  AssignClass (1986280f-c770-47ae-9f1a-fc6ea3636e17)
+ Call ID: 1986280f-c770-47ae-9f1a-fc6ea3636e17
+  Args:
+    type: :Woman
+    source: Lady_Pamela_Mountbatten
+  AssignClass (cc20bbca-b998-455b-86dd-4dbcf1bba5a0)
+ Call ID: cc20bbca-b998-455b-86dd-4dbcf1bba5a0
+  Args:
+    source: David_Nightingale_Hicks
+    type: :Person
+  AssignClass (56c911e3-701f-4ce5-846c-b8e08623dabe)
+ Call ID: 56c911e3-701f-4ce5-846c-b8e08623dabe
   Args:
     type: :Man
-    source: David Nightingale Hicks
-  AssignClass (036824e8-46b7-497b-8804-a32cb53f0c62)
- Call ID: 036824e8-46b7-497b-8804-a32cb53f0c62
+    source: David_Nightingale_Hicks
+  AddTriple (211833ed-fab6-4522-b968-0a21878f9205)
+ Call ID: 211833ed-fab6-4522-b968-0a21878f9205
   Args:
-    source: David Nightingale Hicks
-    type: :Person
-  AddTriple (b121012c-a4e3-4cc2-a8b2-c75756a6db74)
- Call ID: b121012c-a4e3-4cc2-a8b2-c75756a6db74
-  Args:
-    source: India Hicks
-    target: Lady Pamela Mountbatten
+    source: India_Hicks
     relation: :hasMother
-  AddTriple (acb5f274-de98-4a20-b653-941bf212c636)
- Call ID: acb5f274-de98-4a20-b653-941bf212c636
+    target: Lady_Pamela_Mountbatten
+  AddTriple (6e9e118e-39a7-438e-8e00-7771740452f8)
+ Call ID: 6e9e118e-39a7-438e-8e00-7771740452f8
   Args:
-    source: India Hicks
-    target: David Nightingale Hicks
+    source: India_Hicks
+    target: David_Nightingale_Hicks
     relation: :hasFather
-  AssignClass (2e2194d7-9614-4854-ae54-1444819bd624)
- Call ID: 2e2194d7-9614-4854-ae54-1444819bd624
+  AssignClass (aab3f442-8f53-44d5-b5f8-b5c937a5f762)
+ Call ID: aab3f442-8f53-44d5-b5f8-b5c937a5f762
+  Args:
+    type: :Person
+    source: David_Flint_Wood
+  AssignClass (0a34c6d8-0c9c-40cb-ad31-c7a6cb9bca86)
+ Call ID: 0a34c6d8-0c9c-40cb-ad31-c7a6cb9bca86
   Args:
     type: :Man
-    source: David Flint Wood
-  AssignClass (e2b06b36-e2e9-4b1c-bdd3-448716a62640)
- Call ID: e2b06b36-e2e9-4b1c-bdd3-448716a62640
+    source: David_Flint_Wood
+  AddTriple (6ab26574-02f0-4db1-a848-0ce0194cb0f2)
+ Call ID: 6ab26574-02f0-4db1-a848-0ce0194cb0f2
   Args:
-    source: David Flint Wood
-    type: :Person
-  AddTriple (7af0dd31-452f-43e2-b733-de4058385350)
- Call ID: 7af0dd31-452f-43e2-b733-de4058385350
-  Args:
-    source: India Hicks
+    target: David_Flint_Wood
     relation: :hasRelation
-    target: David Flint Wood
-  AssignClass (de0bc890-5b56-4f76-b84b-9b9d3d28721e)
- Call ID: de0bc890-5b56-4f76-b84b-9b9d3d28721e
+    source: India_Hicks
+  Finish (dc428621-8e40-4109-b200-0fc24d6241ec)
+ Call ID: dc428621-8e40-4109-b200-0fc24d6241ec
   Args:
-    source: Earl Mountbatten of Burma
-    type: :Man
-  AssignClass (cfe2c07c-9811-4c80-b88b-684a9f159551)
- Call ID: cfe2c07c-9811-4c80-b88b-684a9f159551
-  Args:
-    type: :Person
-    source: Earl Mountbatten of Burma
-  AssignClass (9c0ead3c-79d0-47b0-8953-20e43bd7ba91)
- Call ID: 9c0ead3c-79d0-47b0-8953-20e43bd7ba91
-  Args:
-    source: Countess Mountbatten of Burma
-    type: :Woman
-  AssignClass (20ac6744-a2f2-4d54-a2eb-cda215132cb7)
- Call ID: 20ac6744-a2f2-4d54-a2eb-cda215132cb7
-  Args:
-    source: Countess Mountbatten of Burma
-    type: :Person
-  AddTriple (cb2aa4dd-4d1e-45a5-9395-9d007ac61bcb)
- Call ID: cb2aa4dd-4d1e-45a5-9395-9d007ac61bcb
-  Args:
-    relation: :isParentOf
-    target: Lady Pamela Mountbatten
-    source: Earl Mountbatten of Burma
-  AddTriple (a37f8ab0-64fc-4cf8-a7cb-161f76754fbe)
- Call ID: a37f8ab0-64fc-4cf8-a7cb-161f76754fbe
-  Args:
-    source: Countess Mountbatten of Burma
-    target: Lady Pamela Mountbatten
-    relation: :isParentOf
-  Finish (f227394c-8dc9-47bf-8be5-7191725611cc)
- Call ID: f227394c-8dc9-47bf-8be5-7191725611cc
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -559,14 +591,6 @@ The final data graph after all the edits:
   @prefix : <http://example.com/family_TBOX.ttl#> .
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Countess_Mountbatten_of_Burma a :Person,
-          :Woman ;
-      :isParentOf data:Lady_Pamela_Mountbatten .
-
-  data:Earl_Mountbatten_of_Burma a :Man,
-          :Person ;
-      :isParentOf data:Lady_Pamela_Mountbatten .
 
   data:India_Hicks a :Person,
           :Woman ;
@@ -594,8 +618,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (5f58d648-b6c8-42a9-856c-c86d9a5ba2c5)
- Call ID: 5f58d648-b6c8-42a9-856c-c86d9a5ba2c5
+  ValidateShacl (e534e32b-f241-4646-886a-4d0e4c46ea66)
+ Call ID: e534e32b-f241-4646-886a-4d0e4c46ea66
   Args:
 
 ================================= Tool Message =================================
@@ -607,7 +631,7 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'David_Nightingale_Hicks' connected via ':hasFather' to 'India_Hicks' is missing the required ':Ancestor' class membership.
+      The entity 'David_Nightingale_Hicks' is assigned as the father of 'India_Hicks', but it lacks the required ':Ancestor' class membership.
     LLM-provided instruction on how to handle the violation:
       AssignClass(David_Nightingale_Hicks, :Ancestor)
 
@@ -615,7 +639,7 @@ Violations:
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Lady_Pamela_Mountbatten' connected via ':hasMother' to 'India_Hicks' is missing the required ':Ancestor' class membership.
+      The entity 'Lady_Pamela_Mountbatten' is assigned as the mother of 'India_Hicks', but it lacks the required ':Ancestor' class membership.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Lady_Pamela_Mountbatten, :Ancestor)
 
@@ -623,7 +647,7 @@ Violations:
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'David_Nightingale_Hicks' connected via ':hasFather' to 'India_Hicks' is missing the required ':Ancestor' class membership.
+      The entity 'David_Nightingale_Hicks' is assigned as the father of 'India_Hicks', but it lacks the required ':Ancestor' class membership.
     LLM-provided instruction on how to handle the violation:
       AssignClass(David_Nightingale_Hicks, :Ancestor)
 
@@ -631,7 +655,7 @@ Violations:
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Lady_Pamela_Mountbatten' connected via ':hasMother' to 'India_Hicks' is missing the required ':Ancestor' class membership.
+      The entity 'Lady_Pamela_Mountbatten' is assigned as the mother of 'India_Hicks', but it lacks the required ':Ancestor' class membership.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Lady_Pamela_Mountbatten, :Ancestor)
 
@@ -639,7 +663,7 @@ Violations:
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'David_Nightingale_Hicks' connected via ':hasFather' to 'India_Hicks' is missing the required ':Ancestor' class membership.
+      The entity 'David_Nightingale_Hicks' is assigned as the father of 'India_Hicks', but it lacks the required ':Ancestor' class membership.
     LLM-provided instruction on how to handle the violation:
       AssignClass(David_Nightingale_Hicks, :Ancestor)
 
@@ -647,7 +671,7 @@ Violations:
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Lady_Pamela_Mountbatten' connected via ':hasMother' to 'India_Hicks' is missing the required ':Ancestor' class membership.
+      The entity 'Lady_Pamela_Mountbatten' is assigned as the mother of 'India_Hicks', but it lacks the required ':Ancestor' class membership.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Lady_Pamela_Mountbatten, :Ancestor)
 
@@ -658,649 +682,18 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (eae96ea8-9148-4fc7-a359-d920c455f92a)
- Call ID: eae96ea8-9148-4fc7-a359-d920c455f92a
+  AssignClass (cac3063a-28c0-4074-b7c2-85dc0fd1c4ff)
+ Call ID: cac3063a-28c0-4074-b7c2-85dc0fd1c4ff
   Args:
     type: :Ancestor
-    source: David Nightingale Hicks
-  AssignClass (5adfaa1c-8553-409d-bc52-8fb01b3c81ed)
- Call ID: 5adfaa1c-8553-409d-bc52-8fb01b3c81ed
+    source: David_Nightingale_Hicks
+  AssignClass (f246f68b-d840-4b93-897f-60a5a76ecbb4)
+ Call ID: f246f68b-d840-4b93-897f-60a5a76ecbb4
   Args:
-    source: Lady Pamela Mountbatten
+    source: Lady_Pamela_Mountbatten
     type: :Ancestor
-  AssignClass (20bda1fb-e571-4a2c-af9d-225b30a5c17a)
- Call ID: 20bda1fb-e571-4a2c-af9d-225b30a5c17a
-  Args:
-    type: :Ancestor
-    source: Earl Mountbatten of Burma
-  AssignClass (69c554b0-4610-49a9-bb74-154651a6d4c8)
- Call ID: 69c554b0-4610-49a9-bb74-154651a6d4c8
-  Args:
-    type: :Ancestor
-    source: Countess Mountbatten of Burma
-  AddTriple (323cef77-9131-4902-b58a-4a5e6f9780db)
- Call ID: 323cef77-9131-4902-b58a-4a5e6f9780db
-  Args:
-    relation: :hasSex
-    source: India Hicks
-    target: :Female
-  AddTriple (1b9c046d-8f2e-42d7-9497-f57b7a080347)
- Call ID: 1b9c046d-8f2e-42d7-9497-f57b7a080347
-  Args:
-    target: :Male
-    relation: :hasSex
-    source: David Nightingale Hicks
-  AddTriple (56eeaac3-af83-4542-9116-4644a0f2a0aa)
- Call ID: 56eeaac3-af83-4542-9116-4644a0f2a0aa
-  Args:
-    source: Lady Pamela Mountbatten
-    relation: :hasSex
-    target: :Female
-  AddTriple (24dd3e32-3fe7-43b8-8fd5-c40092e31358)
- Call ID: 24dd3e32-3fe7-43b8-8fd5-c40092e31358
-  Args:
-    relation: :hasSex
-    source: David Flint Wood
-    target: :Male
-  AddTriple (5786a1cf-2faf-43cf-b37e-9f14b38069b8)
- Call ID: 5786a1cf-2faf-43cf-b37e-9f14b38069b8
-  Args:
-    source: Earl Mountbatten of Burma
-    relation: :hasSex
-    target: :Male
-  AddTriple (dd3cf48c-bb6f-41b4-94dc-f1e1681331d8)
- Call ID: dd3cf48c-bb6f-41b4-94dc-f1e1681331d8
-  Args:
-    source: Countess Mountbatten of Burma
-    relation: :hasSex
-    target: :Female
-  ValidateShacl (cd9d873f-721e-49ab-b855-3325eed9033c)
- Call ID: cd9d873f-721e-49ab-b855-3325eed9033c
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Countess_Mountbatten_of_Burma a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female ;
-      :isParentOf data:Lady_Pamela_Mountbatten .
-
-  data:Earl_Mountbatten_of_Burma a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :isParentOf data:Lady_Pamela_Mountbatten .
-
-  data:India_Hicks a :Person,
-          :Woman ;
-      :hasBirthYear 1967 ;
-      :hasFather data:David_Nightingale_Hicks ;
-      :hasMother data:Lady_Pamela_Mountbatten ;
-      :hasRelation data:David_Flint_Wood ;
-      :hasSex data:Female .
-
-  data:David_Flint_Wood a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:David_Nightingale_Hicks a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Lady_Pamela_Mountbatten a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:60
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Lady_Pamela_Mountbatten is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Countess_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Nightingale_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :Earl_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Lady_Pamela_Mountbatten is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Countess_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Nightingale_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :Earl_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Lady_Pamela_Mountbatten is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Countess_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Nightingale_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :Earl_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Nightingale_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :Earl_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Flint_Wood is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Nightingale_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :Earl_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Flint_Wood is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Lady_Pamela_Mountbatten is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :India_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :Earl_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Countess_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Nightingale_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Flint_Wood is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Lady_Pamela_Mountbatten is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :India_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :Earl_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Countess_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Nightingale_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Flint_Wood is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Lady_Pamela_Mountbatten is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :India_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :Earl_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Countess_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Nightingale_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Flint_Wood is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Lady_Pamela_Mountbatten is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :India_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :Earl_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Countess_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Nightingale_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Nightingale_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Lady_Pamela_Mountbatten is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :India_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :Earl_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Countess_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Nightingale_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Flint_Wood is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Lady_Pamela_Mountbatten is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :India_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :Earl_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Countess_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Nightingale_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to property :hasSex for node :David_Flint_Wood is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Male', class: ':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Lady_Pamela_Mountbatten is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :India_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Countess_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Lady_Pamela_Mountbatten is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :India_Hicks is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to property :hasSex for node :Countess_Mountbatten_of_Burma is not classified as an instance of :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Female', class: ':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (c7a6f794-11de-48ea-bcb9-3dcf37d691fc)
- Call ID: c7a6f794-11de-48ea-bcb9-3dcf37d691fc
-  Args:
-    source: Female
-    type: :Sex
-  AssignClass (575b7689-f777-4dcd-989b-55b37418cf31)
- Call ID: 575b7689-f777-4dcd-989b-55b37418cf31
-  Args:
-    type: :Sex
-    source: Male
-  ValidateShacl (542a4789-2d53-4631-833c-7fc9fa2281ce)
- Call ID: 542a4789-2d53-4631-833c-7fc9fa2281ce
+  Finish (e6514988-9ecc-463d-bb11-8018f5e5635e)
+ Call ID: e6514988-9ecc-463d-bb11-8018f5e5635e
   Args:
 
 ================================= Tool Message =================================
@@ -1314,45 +707,37 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Countess_Mountbatten_of_Burma a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female ;
-      :isParentOf data:Lady_Pamela_Mountbatten .
-
-  data:Earl_Mountbatten_of_Burma a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :isParentOf data:Lady_Pamela_Mountbatten .
-
   data:India_Hicks a :Person,
           :Woman ;
       :hasBirthYear 1967 ;
       :hasFather data:David_Nightingale_Hicks ;
       :hasMother data:Lady_Pamela_Mountbatten ;
-      :hasRelation data:David_Flint_Wood ;
-      :hasSex data:Female .
+      :hasRelation data:David_Flint_Wood .
 
   data:David_Flint_Wood a :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
   data:David_Nightingale_Hicks a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Female a :Sex .
+          :Person .
 
   data:Lady_Pamela_Mountbatten a :Ancestor,
           :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Male a :Sex .
+          :Woman .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (e81193a7-e112-45ca-90c2-a18f8fe6d62d)
+ Call ID: e81193a7-e112-45ca-90c2-a18f8fe6d62d
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1362,6 +747,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5a66e685-42c2-4241-a24c-a728bbba8494)
- Call ID: 5a66e685-42c2-4241-a24c-a728bbba8494
+  Finish (4d162ba0-5621-466d-92ca-44ac434b6c89)
+ Call ID: 4d162ba0-5621-466d-92ca-44ac434b6c89
   Args:

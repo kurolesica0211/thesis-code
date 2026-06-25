@@ -2,57 +2,56 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Paul a :Man,
-        :Person ;
+data:Alexander a :Man ;
+    :hasFather data:Constantine .
+
+data:GeorgeII a :Man ;
+    :hasFather data:Constantine ;
+    :hasRelation data:Elisabeth .
+
+data:Helen a :Woman ;
+    :hasFather data:Constantine .
+
+data:Katherine a :Woman ;
+    :hasFather data:Constantine .
+
+data:NinaGeorgievna a :Woman ;
+    :hasMother data:Maria .
+
+data:Paul a :Man ;
     :hasBirthYear 1901 ;
-    :hasBrother data:Alexander,
-        data:GeorgeII ;
-    :hasDaughter data:Irene,
+    :hasChild data:ConstantineII,
+        data:Irene,
         data:Sofia ;
     :hasDeathYear 1964 ;
     :hasFather data:Constantine ;
     :hasMarriageYear 1938 ;
     :hasMother data:Sophia ;
-    :hasRelation data:Frederica ;
-    :hasSister data:Helen,
+    :hasRelation data:Frederica .
+
+data:PrinceAndrew a :Man .
+
+data:PrinceChristopher a :Man .
+
+data:Elisabeth a :Woman .
+
+data:Frederica a :Woman ;
+    :hasChild data:ConstantineII,
         data:Irene,
-        data:Katherine ;
-    :hasSon data:ConstantineII .
+        data:Sofia .
 
-data:Alexander a :Man,
-        :Person .
+data:GeorgeI a :Man .
 
-data:Constantine a :Man,
-        :Person ;
+data:Maria a :Woman .
+
+data:Sophia a :Woman .
+
+data:ConstantineII a :Man .
+
+data:Irene a :Woman .
+
+data:Sofia a :Woman .
+
+data:Constantine a :Man ;
     :hasFather data:GeorgeI .
-
-data:ConstantineII a :Man,
-        :Person ;
-    :hasMother data:Frederica .
-
-data:GeorgeI a :Man,
-        :Person .
-
-data:GeorgeII a :Man,
-        :Person .
-
-data:Helen a :Person,
-        :Woman .
-
-data:Katherine a :Person,
-        :Woman .
-
-data:Sofia a :Person,
-        :Woman ;
-    :hasMother data:Frederica .
-
-data:Sophia a :Person,
-        :Woman .
-
-data:Irene a :Person,
-        :Woman ;
-    :hasMother data:Frederica .
-
-data:Frederica a :Person,
-        :Woman .
 

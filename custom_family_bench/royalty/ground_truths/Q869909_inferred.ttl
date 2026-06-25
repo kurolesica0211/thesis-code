@@ -1,0 +1,74 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Mafalda_of_Savoy a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Mafalda of Savoy"^^xsd:string ;
+    data:posIndicesFull "184:209"^^xsd:string,
+        "382:407"^^xsd:string ;
+    data:wdtLink wdt:Q235832 ;
+    :alsoKnownAs "Princess Mafalda, Landgravine of Hesse-Kassel"^^xsd:string ;
+    :hasChild data:Prince_Heinrich_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Prince_Heinrich_of_Hesse_and_by_Rhine,
+        data:Princess_Mafalda_of_Savoy ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Mafalda_of_Savoy ;
+    :hasSon data:Prince_Heinrich_of_Hesse_and_by_Rhine ;
+    :isAncestorOf data:Prince_Heinrich_of_Hesse_and_by_Rhine ;
+    :isAuntOf data:Prince_Heinrich_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Princess_Mafalda_of_Savoy ;
+    :isMotherOf data:Prince_Heinrich_of_Hesse_and_by_Rhine ;
+    :isParentOf data:Prince_Heinrich_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Princess_Mafalda_of_Savoy ;
+    :isSisterOf data:Princess_Mafalda_of_Savoy .
+
+data:Prince_Heinrich_of_Hesse_and_by_Rhine a :Man,
+        :Person ;
+    rdfs:label "Prince Heinrich of Hesse and by Rhine"^^xsd:string ;
+    data:posIndicesFull "0:63"^^xsd:string,
+        "116:130"^^xsd:string,
+        "879:893"^^xsd:string ;
+    data:posIndicesPart "211:219"^^xsd:string,
+        "292:298"^^xsd:string,
+        "299:307"^^xsd:string,
+        "354:360"^^xsd:string,
+        "372:377"^^xsd:string,
+        "485:493"^^xsd:string,
+        "585:593"^^xsd:string,
+        "752:758"^^xsd:string,
+        "762:767"^^xsd:string,
+        "775:780"^^xsd:string ;
+    data:wdtLink wdt:Q869909 ;
+    :alsoKnownAs "Enrico d'Assia"^^xsd:string,
+        "Heinrich Wilhelm Konstantin Viktor Franz Prinz von Hessen-Kassel"^^xsd:string,
+        "Prince Heinrich Wilhelm Konstantin Viktor Franz of Hesse-Kassel"^^xsd:string ;
+    :hasAncestor data:Princess_Mafalda_of_Savoy ;
+    :hasBrother data:Prince_Heinrich_of_Hesse_and_by_Rhine ;
+    :hasMother data:Princess_Mafalda_of_Savoy ;
+    :hasParent data:Princess_Mafalda_of_Savoy ;
+    :hasRelation data:Prince_Heinrich_of_Hesse_and_by_Rhine,
+        data:Princess_Mafalda_of_Savoy ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Heinrich_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Prince_Heinrich_of_Hesse_and_by_Rhine ;
+    :isChildOf data:Princess_Mafalda_of_Savoy ;
+    :isSiblingOf data:Prince_Heinrich_of_Hesse_and_by_Rhine ;
+    :isSonOf data:Princess_Mafalda_of_Savoy .
+

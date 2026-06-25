@@ -1,0 +1,289 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Allison_Mack a :Woman ;
+    :hasRelation data:Allison_Mack ;
+    :hasSister data:Allison_Mack ;
+    :isBloodrelationOf data:Allison_Mack ;
+    :isSiblingOf data:Allison_Mack ;
+    :isSisterOf data:Allison_Mack .
+
+data:Casper_Van_Dien a :Man ;
+    :hasBrother data:Casper_Van_Dien ;
+    :hasRelation data:Casper_Van_Dien ;
+    :isBloodrelationOf data:Casper_Van_Dien ;
+    :isBrotherOf data:Casper_Van_Dien ;
+    :isSiblingOf data:Casper_Van_Dien .
+
+data:Keith_Raniere a :Man ;
+    :hasBrother data:Keith_Raniere ;
+    :hasRelation data:Keith_Raniere ;
+    :isBloodrelationOf data:Keith_Raniere ;
+    :isBrotherOf data:Keith_Raniere ;
+    :isSiblingOf data:Keith_Raniere .
+
+data:Patrick_DIgnazio a :Man ;
+    :hasBrother data:Patrick_DIgnazio ;
+    :hasRelation data:Patrick_DIgnazio ;
+    :isBloodrelationOf data:Patrick_DIgnazio ;
+    :isBrotherOf data:Patrick_DIgnazio ;
+    :isSiblingOf data:Patrick_DIgnazio .
+
+data:Princess_Katarina a :Ancestor,
+        :Woman ;
+    :hasChild data:Victoria_de_Silva ;
+    :hasDaughter data:Victoria_de_Silva ;
+    :hasRelation data:Princess_Katarina,
+        data:Sir_Desmond_de_Silva,
+        data:Victoria_de_Silva ;
+    :hasSister data:Princess_Katarina ;
+    :isAncestorOf data:Victoria_de_Silva ;
+    :isAuntOf data:Victoria_de_Silva ;
+    :isBloodrelationOf data:Princess_Katarina ;
+    :isMotherOf data:Victoria_de_Silva ;
+    :isParentOf data:Victoria_de_Silva ;
+    :isSiblingOf data:Princess_Katarina ;
+    :isSisterOf data:Princess_Katarina .
+
+data:Sir_Desmond_de_Silva a :Ancestor,
+        :Man ;
+    :hasBrother data:Sir_Desmond_de_Silva ;
+    :hasChild data:Victoria_de_Silva ;
+    :hasDaughter data:Victoria_de_Silva ;
+    :hasRelation data:Princess_Katarina,
+        data:Sir_Desmond_de_Silva,
+        data:Victoria_de_Silva ;
+    :isAncestorOf data:Victoria_de_Silva ;
+    :isBloodrelationOf data:Sir_Desmond_de_Silva ;
+    :isBrotherOf data:Sir_Desmond_de_Silva ;
+    :isFatherOf data:Victoria_de_Silva ;
+    :isParentOf data:Victoria_de_Silva ;
+    :isSiblingOf data:Sir_Desmond_de_Silva ;
+    :isUncleOf data:Victoria_de_Silva .
+
+data:Christina_Oxenberg a :Woman ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:William_Weitz_Shaffer ;
+    :hasSister data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isAuntOf data:India_Riven_Oxenberg ;
+    :isBloodrelationOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isSiblingOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isSisterOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg .
+
+data:William_Weitz_Shaffer a :Ancestor,
+        :Man ;
+    :hasBrother data:William_Weitz_Shaffer ;
+    :hasChild data:India_Riven_Oxenberg ;
+    :hasDaughter data:India_Riven_Oxenberg ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:William_Weitz_Shaffer ;
+    :isAncestorOf data:India_Riven_Oxenberg ;
+    :isBloodrelationOf data:William_Weitz_Shaffer ;
+    :isBrotherOf data:William_Weitz_Shaffer ;
+    :isFatherOf data:India_Riven_Oxenberg ;
+    :isParentOf data:India_Riven_Oxenberg ;
+    :isSiblingOf data:William_Weitz_Shaffer ;
+    :isUncleOf data:India_Riven_Oxenberg .
+
+data:Howard_Oxenberg a :Ancestor,
+        :Man ;
+    :hasBrother data:Howard_Oxenberg ;
+    :hasChild data:Catherine_Oxenberg ;
+    :hasDaughter data:Catherine_Oxenberg ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:William_Weitz_Shaffer ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:India_Riven_Oxenberg ;
+    :isBloodrelationOf data:Howard_Oxenberg ;
+    :isBrotherOf data:Howard_Oxenberg ;
+    :isFatherOf data:Catherine_Oxenberg ;
+    :isParentOf data:Catherine_Oxenberg ;
+    :isSiblingOf data:Howard_Oxenberg ;
+    :isUncleOf data:Catherine_Oxenberg .
+
+data:Prince_Regent_Paul_of_Yugoslavia a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Regent_Paul_of_Yugoslavia ;
+    :hasChild data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasDaughter data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:William_Weitz_Shaffer ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Regent_Paul_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Regent_Paul_of_Yugoslavia ;
+    :isFatherOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isParentOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSiblingOf data:Prince_Regent_Paul_of_Yugoslavia ;
+    :isUncleOf data:Princess_Elizabeth_of_Yugoslavia .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasDaughter data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:William_Weitz_Shaffer ;
+    :hasSister data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isAuntOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isBloodrelationOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isMotherOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isParentOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSiblingOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Victoria_de_Silva a :Woman ;
+    :hasAncestor data:Princess_Katarina,
+        data:Sir_Desmond_de_Silva ;
+    :hasFather data:Sir_Desmond_de_Silva ;
+    :hasMother data:Princess_Katarina ;
+    :hasParent data:Princess_Katarina,
+        data:Sir_Desmond_de_Silva ;
+    :hasRelation data:Princess_Katarina,
+        data:Sir_Desmond_de_Silva,
+        data:Victoria_de_Silva ;
+    :hasSister data:Victoria_de_Silva ;
+    :isBloodrelationOf data:Victoria_de_Silva ;
+    :isChildOf data:Princess_Katarina,
+        data:Sir_Desmond_de_Silva ;
+    :isDaughterOf data:Princess_Katarina,
+        data:Sir_Desmond_de_Silva ;
+    :isSiblingOf data:Victoria_de_Silva ;
+    :isSisterOf data:Victoria_de_Silva .
+
+data:India_Riven_Oxenberg a :Woman ;
+    :hasAncestor data:Catherine_Oxenberg,
+        data:Howard_Oxenberg,
+        data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:William_Weitz_Shaffer ;
+    :hasBirthYear 1991 ;
+    :hasFather data:William_Weitz_Shaffer ;
+    :hasMother data:Catherine_Oxenberg ;
+    :hasParent data:Catherine_Oxenberg,
+        data:William_Weitz_Shaffer ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:William_Weitz_Shaffer ;
+    :hasSister data:India_Riven_Oxenberg ;
+    :isBloodrelationOf data:India_Riven_Oxenberg ;
+    :isChildOf data:Catherine_Oxenberg,
+        data:William_Weitz_Shaffer ;
+    :isDaughterOf data:Catherine_Oxenberg,
+        data:William_Weitz_Shaffer ;
+    :isSiblingOf data:India_Riven_Oxenberg ;
+    :isSisterOf data:India_Riven_Oxenberg .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasChild data:Catherine_Oxenberg ;
+    :hasDaughter data:Catherine_Oxenberg ;
+    :hasFather data:Prince_Regent_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:William_Weitz_Shaffer ;
+    :hasSister data:Princess_Elizabeth_of_Yugoslavia ;
+    :isAncestorOf data:Catherine_Oxenberg,
+        data:India_Riven_Oxenberg ;
+    :isAuntOf data:Catherine_Oxenberg ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isChildOf data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isMotherOf data:Catherine_Oxenberg ;
+    :isParentOf data:Catherine_Oxenberg ;
+    :isSiblingOf data:Princess_Elizabeth_of_Yugoslavia ;
+    :isSisterOf data:Princess_Elizabeth_of_Yugoslavia .
+
+data:Catherine_Oxenberg a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Howard_Oxenberg,
+        data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasChild data:India_Riven_Oxenberg ;
+    :hasDaughter data:India_Riven_Oxenberg ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasParent data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasRelation data:Catherine_Oxenberg,
+        data:Christina_Oxenberg,
+        data:Howard_Oxenberg,
+        data:India_Riven_Oxenberg,
+        data:Prince_Regent_Paul_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark,
+        data:William_Weitz_Shaffer ;
+    :hasSister data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isAncestorOf data:India_Riven_Oxenberg ;
+    :isAuntOf data:India_Riven_Oxenberg ;
+    :isBloodrelationOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isChildOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isDaughterOf data:Howard_Oxenberg,
+        data:Princess_Elizabeth_of_Yugoslavia ;
+    :isMotherOf data:India_Riven_Oxenberg ;
+    :isParentOf data:India_Riven_Oxenberg ;
+    :isSiblingOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg ;
+    :isSisterOf data:Catherine_Oxenberg,
+        data:Christina_Oxenberg .
+

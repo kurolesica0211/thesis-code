@@ -2,57 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Thomas_Patrick_John_Anson a :Man,
-        :Person ;
-    :hasBirthYear 1939 ;
-    :hasDeathYear 2005 ;
-    :hasFather data:Thomas_William_Arnold_Anson ;
-    :hasMarriageYear 1975 ;
-    :hasMother data:Anne_Bowes-Lyon ;
-    :hasRelation data:Annunziata_Asquith,
-        data:Leonora_Grosvenor ;
-    :hasSister data:Elizabeth_Georgiana_Anson ;
-    :knownAs "Patrick Lichfield"^^xsd:string .
+data:Isabel_Alfonsa_of_Bourbon_Two_Sicilies a :Woman ;
+    :hasBirthYear 1904 ;
+    :hasDeathYear 1985 ;
+    :hasFather data:Prince_Carlos_of_Bourbon_Two_Sicilies ;
+    :hasMarriageYear 1929 ;
+    :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+    :hasRelation data:Jan_Kanty_Zamoyski .
 
-data:Annunziata_Asquith a :Person,
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man .
+
+data:Andrzej_Zamoyski a :Ancestor,
+        :Man .
+
+data:Jan_Kanty_Zamoyski a :Man ;
+    :hasFather data:Andrzej_Zamoyski ;
+    :hasMother data:Maria_Carolina_of_Bourbon_Two_Sicilies .
+
+data:Maria_Carolina_of_Bourbon_Two_Sicilies a :Ancestor,
+        :Woman .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Woman .
+
+data:Maria_de_las_Mercedes_Princess_of_Asturias a :Ancestor,
         :Woman ;
-    :hasFather data:Julian_Asquith .
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Maria_Christina_of_Austria .
 
-data:Elizabeth_Georgiana_Anson a :Person,
-        :Woman ;
-    :hasBirthYear 1941 ;
-    :hasDeathYear 2020 ;
-    :hasFather data:Thomas_William_Arnold_Anson ;
-    :hasMother data:Anne_Bowes-Lyon .
-
-data:Julian_Asquith a :Ancestor,
-        :Man,
-        :Person .
-
-data:Leonora_Grosvenor a :Person,
-        :Woman ;
-    :hasFather data:Robert_Grosvenor .
-
-data:Robert_Grosvenor a :Ancestor,
-        :Man,
-        :Person .
-
-data:Thomas_Edward_Anson a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1883 ;
-    :hasDeathYear 1960 .
-
-data:Anne_Bowes-Lyon a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1917 ;
-    :hasDeathYear 1980 .
-
-data:Thomas_William_Arnold_Anson a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1913 ;
-    :hasDeathYear 1958 ;
-    :hasFather data:Thomas_Edward_Anson .
+data:Prince_Carlos_of_Bourbon_Two_Sicilies a :Ancestor,
+        :Man .
 

@@ -1,0 +1,103 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Karoline_of_Wartensleben a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Karoline of Wartensleben"^^xsd:string ;
+    data:posIndicesFull "439:463"^^xsd:string ;
+    data:wdtLink wdt:Q2176785 ;
+    :alsoKnownAs "Karoline Friederike Cäcilie Klothilde Gräfin von Wartensleben"^^xsd:string ;
+    :hasChild data:Leopold_IV-_Prince_of_Lippe ;
+    :hasRelation data:Karoline_of_Wartensleben,
+        data:Leopold_IV-_Prince_of_Lippe ;
+    :hasSex data:female ;
+    :hasSister data:Karoline_of_Wartensleben ;
+    :hasSon data:Leopold_IV-_Prince_of_Lippe ;
+    :isAncestorOf data:Leopold_IV-_Prince_of_Lippe ;
+    :isAuntOf data:Leopold_IV-_Prince_of_Lippe ;
+    :isBloodrelationOf data:Karoline_of_Wartensleben ;
+    :isMotherOf data:Leopold_IV-_Prince_of_Lippe ;
+    :isParentOf data:Leopold_IV-_Prince_of_Lippe ;
+    :isSiblingOf data:Karoline_of_Wartensleben ;
+    :isSisterOf data:Karoline_of_Wartensleben .
+
+data:Leopold_IV-_Prince_of_Lippe a :Man,
+        :Person ;
+    rdfs:label "Leopold IV, Prince of Lippe"^^xsd:string ;
+    data:posIndicesFull "0:27"^^xsd:string ;
+    data:posIndicesPart "1028:1035"^^xsd:string,
+        "1144:1149"^^xsd:string,
+        "1243:1249"^^xsd:string,
+        "1285:1292"^^xsd:string,
+        "1310:1316"^^xsd:string,
+        "1320:1325"^^xsd:string,
+        "1434:1441"^^xsd:string,
+        "1458:1464"^^xsd:string,
+        "1571:1578"^^xsd:string,
+        "1650:1657"^^xsd:string,
+        "1715:1720"^^xsd:string,
+        "1784:1791"^^xsd:string,
+        "1839:1846"^^xsd:string,
+        "1898:1904"^^xsd:string,
+        "2023:2029"^^xsd:string,
+        "2033:2038"^^xsd:string,
+        "2097:2102"^^xsd:string,
+        "2158:2164"^^xsd:string,
+        "2168:2173"^^xsd:string,
+        "2417:2422"^^xsd:string,
+        "2528:2535"^^xsd:string,
+        "2642:2647"^^xsd:string,
+        "264:269"^^xsd:string,
+        "2740:2746"^^xsd:string,
+        "277:282"^^xsd:string,
+        "2795:2801"^^xsd:string,
+        "2898:2904"^^xsd:string,
+        "2915:2921"^^xsd:string,
+        "2981:2988"^^xsd:string,
+        "3108:3113"^^xsd:string,
+        "3215:3222"^^xsd:string,
+        "3369:3376"^^xsd:string,
+        "336:343"^^xsd:string,
+        "347:352"^^xsd:string,
+        "408:413"^^xsd:string,
+        "465:472"^^xsd:string,
+        "489:494"^^xsd:string,
+        "528:533"^^xsd:string,
+        "606:611"^^xsd:string,
+        "635:640"^^xsd:string,
+        "674:679"^^xsd:string,
+        "732:738"^^xsd:string,
+        "750:757"^^xsd:string,
+        "845:852"^^xsd:string,
+        "975:982"^^xsd:string ;
+    data:wdtLink wdt:Q61279 ;
+    :hasAncestor data:Karoline_of_Wartensleben ;
+    :hasBrother data:Leopold_IV-_Prince_of_Lippe ;
+    :hasMother data:Karoline_of_Wartensleben ;
+    :hasParent data:Karoline_of_Wartensleben ;
+    :hasRelation data:Karoline_of_Wartensleben,
+        data:Leopold_IV-_Prince_of_Lippe ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Leopold_IV-_Prince_of_Lippe ;
+    :isBrotherOf data:Leopold_IV-_Prince_of_Lippe ;
+    :isChildOf data:Karoline_of_Wartensleben ;
+    :isSiblingOf data:Leopold_IV-_Prince_of_Lippe ;
+    :isSonOf data:Karoline_of_Wartensleben .
+

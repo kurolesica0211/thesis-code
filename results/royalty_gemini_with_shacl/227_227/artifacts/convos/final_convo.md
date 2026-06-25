@@ -85,27 +85,29 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Waldemar of Prussia (Joachim Friedrich Ernst Waldemar; 10 February 1868 – 27 March 1879) was the sixth child and youngest son of the German Crown Prince and Crown Princess, later Emperor Frederick III and Empress Victoria.
-Prince Waldemar was a grandson of both William I, German Emperor, and Queen Victoria of the United Kingdom.
-Biography
+The Duke of Castro  The Duchess of Castro
 
-Early life
 
-Waldemar was the favourite of both the Princess Royal and her husband.
-Waldemar had a "fun loving" character and a great sense of humour and love for animals and sports.
-On one occasion, when visiting his grandmother, Queen Victoria, Waldemar let loose his pet crocodile in her study, much to the shock of the middle-aged queen.
-The Princess Royal wrote that she would be unhappy when Waldemar went off to school, "as he is my very own boy."
-She seemed to prefer Waldemar over his elder brothers Wilhelm and Heinrich.
-Death
+Princess Maria Chiara of Bourbon-Two Sicilies, Duchess of Noto and Capri (Italian: Maria Chiara di Borbone delle
+Early life, family, and education
 
-Less than four months after the deaths of his maternal aunt, Alice, Grand Duchess of Hesse and cousin, Marie, Waldemar became seriously ill with diphtheria and died in Berlin, Germany on 27 March 1879.
-He was buried in the royal mausoleum attached to the Friedenskirche at Potsdam, near the main altar and his elder brother Prince Sigismund of Prussia.
+Maria Chiara was born in Rome on 1 January, 2005 to Prince Carlo, Duke of Castro and Camilla Crociani.
+She is the younger sister of Princess Maria Carolina.
+She grew up between Paris, Monte Carlo, and Rome.
+Her godparents are Princess Michael of Kent, Princess Victoria zu Windisch-Graetz, Prince Augusto Ruffo di Calabria, and Sergio Mantegazza.
+Adult life and charity work
+
+Maria Chiara is a patroness of the Monaco-based charity Rokethon, which raises money for abandoned dogs, and an ambassador of the ocean conservation nonprofit organization Passion Sea Project.
+She co-launched the YouTube channel Carolina & Chiara with her sister, which they started during the COVID-19 pandemic.
+In 2023, she attended the Monaco Grand Prix with Christian, Crown Prince of Denmark.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -121,39 +123,9 @@ He was buried in the royal mausoleum attached to the Friedenskirche at Potsdam, 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -168,6 +140,23 @@ He was buried in the royal mausoleum attached to the Friedenskirche at Potsdam, 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -185,6 +174,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -252,29 +256,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -283,6 +279,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -295,6 +299,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -303,17 +309,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -341,6 +349,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -356,226 +448,108 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0f07a0b4-a933-4d2b-9d94-f8fa790318a5)
- Call ID: 0f07a0b4-a933-4d2b-9d94-f8fa790318a5
+  AssignClass (b3dc787e-b043-458c-aef5-4fa25a9041ac)
+ Call ID: b3dc787e-b043-458c-aef5-4fa25a9041ac
   Args:
+    source: :MariaChiara
+    type: :Woman
+  AssignClass (dff0c7f9-3110-44c6-b60a-067200d8a828)
+ Call ID: dff0c7f9-3110-44c6-b60a-067200d8a828
+  Args:
+    source: :MariaChiara
     type: :Person
-    source: Waldemar_of_Prussia
-  AssignClass (f2dd5d76-8fa1-4401-bc72-82fa062d7a63)
- Call ID: f2dd5d76-8fa1-4401-bc72-82fa062d7a63
+  AssignClass (8453c8b6-6a6a-4918-96c8-013dde4828db)
+ Call ID: 8453c8b6-6a6a-4918-96c8-013dde4828db
   Args:
+    source: :PrinceCarlo
     type: :Man
-    source: Waldemar_of_Prussia
-  AddLiteral (10edcc50-1dd2-4b45-a0b6-77f490887cb9)
- Call ID: 10edcc50-1dd2-4b45-a0b6-77f490887cb9
+  AssignClass (29c549f3-da2d-4f4f-b64e-c743b2d010ff)
+ Call ID: 29c549f3-da2d-4f4f-b64e-c743b2d010ff
   Args:
-    source: Waldemar_of_Prussia
-    literal_value: 1868
-    literal_type: xsd:integer
+    source: :PrinceCarlo
+    type: :Person
+  AssignClass (976854f8-6cd2-4be8-81ec-22908718a4e6)
+ Call ID: 976854f8-6cd2-4be8-81ec-22908718a4e6
+  Args:
+    source: :CamillaCrociani
+    type: :Woman
+  AssignClass (fe99ec90-9053-4810-85bb-d6ff4297fd8d)
+ Call ID: fe99ec90-9053-4810-85bb-d6ff4297fd8d
+  Args:
+    source: :CamillaCrociani
+    type: :Person
+  AssignClass (7d6d084f-2d79-4379-95c6-0df812932a0e)
+ Call ID: 7d6d084f-2d79-4379-95c6-0df812932a0e
+  Args:
+    source: :MariaCarolina
+    type: :Woman
+  AssignClass (5e66cb05-23b7-4f23-a627-4e05f3b638a9)
+ Call ID: 5e66cb05-23b7-4f23-a627-4e05f3b638a9
+  Args:
+    source: :MariaCarolina
+    type: :Person
+  AssignClass (7f517cbb-6d0f-4075-a626-cf7ceadcc151)
+ Call ID: 7f517cbb-6d0f-4075-a626-cf7ceadcc151
+  Args:
+    source: :Female
+    type: :Sex
+  AssignClass (c87d34e0-6374-4a01-b2ed-ed3dd5060248)
+ Call ID: c87d34e0-6374-4a01-b2ed-ed3dd5060248
+  Args:
+    source: :Male
+    type: :Sex
+  AddLiteral (f157f6a7-2391-4f76-a2b7-57ff208f9205)
+ Call ID: f157f6a7-2391-4f76-a2b7-57ff208f9205
+  Args:
     relation: :hasBirthYear
-  AddLiteral (92b494b0-b91b-41e2-877f-ab8165ae6621)
- Call ID: 92b494b0-b91b-41e2-877f-ab8165ae6621
-  Args:
-    relation: :hasDeathYear
+    literal_value: 2005
     literal_type: xsd:integer
-    literal_value: 1879
-    source: Waldemar_of_Prussia
-  AssignClass (06541712-37cb-493c-92c1-0df85773b480)
- Call ID: 06541712-37cb-493c-92c1-0df85773b480
+    source: :MariaChiara
+  AddTriple (e7dfe7a6-1c4d-4fc6-bcdd-5d278ecfaa91)
+ Call ID: e7dfe7a6-1c4d-4fc6-bcdd-5d278ecfaa91
   Args:
-    type: :Person
-    source: Frederick_III
-  AssignClass (a7ce66f3-4d75-46a2-84e9-cf67b918e96c)
- Call ID: a7ce66f3-4d75-46a2-84e9-cf67b918e96c
-  Args:
-    type: :Man
-    source: Frederick_III
-  AssignClass (237fd581-99a4-4338-afff-660cd95374cb)
- Call ID: 237fd581-99a4-4338-afff-660cd95374cb
-  Args:
-    source: Victoria_Empress
-    type: :Person
-  AssignClass (09fb73c8-e9dc-42be-9ff8-33e666493c4f)
- Call ID: 09fb73c8-e9dc-42be-9ff8-33e666493c4f
-  Args:
-    type: :Woman
-    source: Victoria_Empress
-  AddTriple (c009436d-659a-4500-bba1-682c5d3e25c0)
- Call ID: c009436d-659a-4500-bba1-682c5d3e25c0
-  Args:
-    target: Frederick_III
+    target: :PrinceCarlo
     relation: :hasFather
-    source: Waldemar_of_Prussia
-  AddTriple (eb13013d-87b0-4902-8ae7-00f83c85b1ca)
- Call ID: eb13013d-87b0-4902-8ae7-00f83c85b1ca
+    source: :MariaChiara
+  AddTriple (145225f4-f83f-4f31-bdb0-b0866f792734)
+ Call ID: 145225f4-f83f-4f31-bdb0-b0866f792734
   Args:
+    target: :CamillaCrociani
+    source: :MariaChiara
     relation: :hasMother
-    target: Victoria_Empress
-    source: Waldemar_of_Prussia
-  AssignClass (a408f44b-7b59-4719-bb92-490636c70019)
- Call ID: a408f44b-7b59-4719-bb92-490636c70019
+  AddTriple (5c95c6c8-09ba-466b-b2f2-4180c79b2837)
+ Call ID: 5c95c6c8-09ba-466b-b2f2-4180c79b2837
   Args:
-    type: :Person
-    source: William_I
-  AssignClass (9baed4e6-3623-4af9-9425-be584a838b36)
- Call ID: 9baed4e6-3623-4af9-9425-be584a838b36
+    relation: :hasSister
+    source: :MariaChiara
+    target: :MariaCarolina
+  AddTriple (963a1027-188e-4f91-bdcd-4179ae870356)
+ Call ID: 963a1027-188e-4f91-bdcd-4179ae870356
   Args:
-    type: :Man
-    source: William_I
-  AssignClass (d0b50bcc-16c4-4eb1-a673-6a645b734d50)
- Call ID: d0b50bcc-16c4-4eb1-a673-6a645b734d50
+    relation: :hasSex
+    source: :MariaChiara
+    target: :Female
+  AddTriple (ba8a85fd-f47d-4619-a714-92343307baf8)
+ Call ID: ba8a85fd-f47d-4619-a714-92343307baf8
   Args:
-    type: :Person
-    source: Queen_Victoria
-  AssignClass (bc04c505-de57-4d75-ae39-373795daca03)
- Call ID: bc04c505-de57-4d75-ae39-373795daca03
+    source: :PrinceCarlo
+    relation: :hasSex
+    target: :Male
+  AddTriple (4a126258-3741-4bc1-9861-53b2f7a437cd)
+ Call ID: 4a126258-3741-4bc1-9861-53b2f7a437cd
   Args:
-    type: :Woman
-    source: Queen_Victoria
-  AddTriple (1ab6646e-d59c-4a4b-8d36-92522dc5b9a1)
- Call ID: 1ab6646e-d59c-4a4b-8d36-92522dc5b9a1
+    source: :CamillaCrociani
+    relation: :hasSex
+    target: :Female
+  AddTriple (12d9919a-44c8-4f7a-96e0-da5365ac6f71)
+ Call ID: 12d9919a-44c8-4f7a-96e0-da5365ac6f71
   Args:
-    relation: :hasAncestor
-    target: William_I
-    source: Waldemar_of_Prussia
-  AddTriple (98b9431b-e554-4859-a2f2-28bb011b5e81)
- Call ID: 98b9431b-e554-4859-a2f2-28bb011b5e81
+    source: :MariaCarolina
+    relation: :hasSex
+    target: :Female
+  Finish (ebda3550-8037-40d7-961f-882b28e16544)
+ Call ID: ebda3550-8037-40d7-961f-882b28e16544
   Args:
-    target: Queen_Victoria
-    relation: :hasAncestor
-    source: Waldemar_of_Prussia
-  AssignClass (a865ea03-34ef-4e14-9aec-10cb5e91136e)
- Call ID: a865ea03-34ef-4e14-9aec-10cb5e91136e
-  Args:
-    source: Wilhelm
-    type: :Person
-  AssignClass (e9be00a2-448b-4853-9971-759860ca9173)
- Call ID: e9be00a2-448b-4853-9971-759860ca9173
-  Args:
-    type: :Man
-    source: Wilhelm
-  AssignClass (a7c3bd27-2ba9-4c9a-9d47-02d4ab761c0f)
- Call ID: a7c3bd27-2ba9-4c9a-9d47-02d4ab761c0f
-  Args:
-    source: Heinrich
-    type: :Person
-  AssignClass (798e623c-9eed-4ee2-b957-4f1478a8e4a2)
- Call ID: 798e623c-9eed-4ee2-b957-4f1478a8e4a2
-  Args:
-    source: Heinrich
-    type: :Man
-  AddTriple (cc06b129-01ac-435c-b146-05aa3b2c219b)
- Call ID: cc06b129-01ac-435c-b146-05aa3b2c219b
-  Args:
-    target: Waldemar_of_Prussia
-    relation: :isBrotherOf
-    source: Wilhelm
-  AddTriple (20b8ce62-f4ce-4df7-8aab-bdf25c339e23)
- Call ID: 20b8ce62-f4ce-4df7-8aab-bdf25c339e23
-  Args:
-    relation: :isBrotherOf
-    target: Waldemar_of_Prussia
-    source: Heinrich
-  AssignClass (45ea3dce-08b0-4fa5-9ee8-a32dafa8532d)
- Call ID: 45ea3dce-08b0-4fa5-9ee8-a32dafa8532d
-  Args:
-    source: Alice_of_Hesse
-    type: :Person
-  AssignClass (28dab346-3bf1-4fef-925b-a29a8b6c3cbc)
- Call ID: 28dab346-3bf1-4fef-925b-a29a8b6c3cbc
-  Args:
-    type: :Woman
-    source: Alice_of_Hesse
-  AssignClass (b8fb76f6-6e37-4edf-85ee-57a931c35da6)
- Call ID: b8fb76f6-6e37-4edf-85ee-57a931c35da6
-  Args:
-    source: Marie
-    type: :Person
-  AssignClass (a5298955-ab0c-4744-9a81-0cc0e1d0df74)
- Call ID: a5298955-ab0c-4744-9a81-0cc0e1d0df74
-  Args:
-    type: :Woman
-    source: Marie
-  AddTriple (caf35720-a766-44df-805c-ed26cdcddafe)
- Call ID: caf35720-a766-44df-805c-ed26cdcddafe
-  Args:
-    target: Waldemar_of_Prussia
-    relation: :isBloodrelationOf
-    source: Alice_of_Hesse
-  AddTriple (2c1f03f1-217d-46af-bcbc-c6ff7cb3fd86)
- Call ID: 2c1f03f1-217d-46af-bcbc-c6ff7cb3fd86
-  Args:
-    source: Marie
-    relation: :isBloodrelationOf
-    target: Waldemar_of_Prussia
-  AssignClass (d517237d-9ace-49e5-9132-3890aeb48012)
- Call ID: d517237d-9ace-49e5-9132-3890aeb48012
-  Args:
-    source: Sigismund_of_Prussia
-    type: :Person
-  AssignClass (758a1783-ea86-40a1-a79d-d4bfb49de632)
- Call ID: 758a1783-ea86-40a1-a79d-d4bfb49de632
-  Args:
-    type: :Man
-    source: Sigismund_of_Prussia
-  AddTriple (7819fb7c-4c7f-4d99-b037-e0234ac2fabc)
- Call ID: 7819fb7c-4c7f-4d99-b037-e0234ac2fabc
-  Args:
-    source: Sigismund_of_Prussia
-    relation: :isBrotherOf
-    target: Waldemar_of_Prussia
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -652,157 +626,96 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alice_of_Hesse a :Person,
+  data:MariaChiara a :Person,
           :Woman ;
-      :isBloodrelationOf data:Waldemar_of_Prussia .
+      :hasBirthYear 2005 ;
+      :hasFather data:PrinceCarlo ;
+      :hasMother data:CamillaCrociani ;
+      :hasSex data:Female ;
+      :hasSister data:MariaCarolina .
 
-  data:Heinrich a :Man,
-          :Person ;
-      :isBrotherOf data:Waldemar_of_Prussia .
-
-  data:Marie a :Person,
+  data:CamillaCrociani a :Person,
           :Woman ;
-      :isBloodrelationOf data:Waldemar_of_Prussia .
+      :hasSex data:Female .
 
-  data:Sigismund_of_Prussia a :Man,
+  data:Male a :Sex .
+
+  data:MariaCarolina a :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:PrinceCarlo a :Man,
           :Person ;
-      :isBrotherOf data:Waldemar_of_Prussia .
+      :hasSex data:Male .
 
-  data:Wilhelm a :Man,
-          :Person ;
-      :isBrotherOf data:Waldemar_of_Prussia .
-
-  data:Frederick_III a :Man,
-          :Person .
-
-  data:Queen_Victoria a :Person,
-          :Woman .
-
-  data:Victoria_Empress a :Person,
-          :Woman .
-
-  data:William_I a :Man,
-          :Person .
-
-  data:Waldemar_of_Prussia a :Man,
-          :Person ;
-      :hasAncestor data:Queen_Victoria,
-          data:William_I ;
-      :hasBirthYear 1868 ;
-      :hasDeathYear 1879 ;
-      :hasFather data:Frederick_III ;
-      :hasMother data:Victoria_Empress .
+  data:Female a :Sex .
 
 
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (eb553243-207d-4325-b5ce-955ed9c579d6)
- Call ID: eb553243-207d-4325-b5ce-955ed9c579d6
+  ValidateShacl (756e2758-7b9d-4a08-880d-e8afdc88669e)
+ Call ID: 756e2758-7b9d-4a08-880d-e8afdc88669e
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:6
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Victoria linked via hasAncestor from Waldemar_of_Prussia is missing the required class :Ancestor.
+      The node 'PrinceCarlo' assigned as the father of 'MariaChiara' does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
+      AssignClass(node='PrinceCarlo', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node William_I linked via hasAncestor from Waldemar_of_Prussia is missing the required class :Ancestor.
+      The node 'CamillaCrociani' assigned as the mother of 'MariaChiara' does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='William_I', class=':Ancestor')
+      AssignClass(node='CamillaCrociani', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Frederick_III linked via hasFather from Waldemar_of_Prussia is missing the required class :Ancestor.
+      The node 'PrinceCarlo' assigned as the father of 'MariaChiara' is missing the ':Ancestor' class designation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_III', class=':Ancestor')
+      AssignClass(node='PrinceCarlo', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Victoria_Empress linked via hasMother from Waldemar_of_Prussia is missing the required class :Ancestor.
+      The node 'CamillaCrociani' assigned as the mother of 'MariaChiara' is missing the ':Ancestor' class designation.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Victoria_Empress', class=':Ancestor')
+      AssignClass(node='CamillaCrociani', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Victoria linked via hasAncestor from Waldemar_of_Prussia is missing the required class :Ancestor.
+      The node 'PrinceCarlo' is missing the necessary ':Ancestor' class to satisfy the property ':hasFather'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
+      AssignClass(node='PrinceCarlo', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node William_I linked via hasAncestor from Waldemar_of_Prussia is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='William_I', class=':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Frederick_III linked via hasFather from Waldemar_of_Prussia is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_III', class=':Ancestor')
-
-
-  Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Victoria_Empress linked via hasMother from Waldemar_of_Prussia is missing the required class :Ancestor.
+      The node 'CamillaCrociani' is missing the necessary ':Ancestor' class to satisfy the property ':hasMother'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Victoria_Empress', class=':Ancestor')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Queen_Victoria linked via hasAncestor from Waldemar_of_Prussia is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node William_I linked via hasAncestor from Waldemar_of_Prussia is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='William_I', class=':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Frederick_III linked via hasFather from Waldemar_of_Prussia is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_III', class=':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Victoria_Empress linked via hasMother from Waldemar_of_Prussia is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Victoria_Empress', class=':Ancestor')
+      AssignClass(node='CamillaCrociani', class=':Ancestor')
 
 
 
@@ -811,34 +724,19 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (9c3b615f-2cf6-4c24-aa50-4a1e3695ce9b)
- Call ID: 9c3b615f-2cf6-4c24-aa50-4a1e3695ce9b
+  AssignClass (f3b447fd-679b-4c6f-a846-a9e9a3dd129c)
+ Call ID: f3b447fd-679b-4c6f-a846-a9e9a3dd129c
   Args:
-    source: Queen_Victoria
+    source: :PrinceCarlo
     type: :Ancestor
-  AssignClass (69ca490a-3706-48ea-97e2-eb7f7b380e53)
- Call ID: 69ca490a-3706-48ea-97e2-eb7f7b380e53
+  AssignClass (8d28364d-3846-47c6-9e88-4175caa301e0)
+ Call ID: 8d28364d-3846-47c6-9e88-4175caa301e0
   Args:
-    source: William_I
+    source: :CamillaCrociani
     type: :Ancestor
-  AssignClass (5d4ec567-8e57-4c4e-80c5-2d588d52792d)
- Call ID: 5d4ec567-8e57-4c4e-80c5-2d588d52792d
+  ValidateShacl (b5c735f9-fee1-4634-affe-ccd62155e2e1)
+ Call ID: b5c735f9-fee1-4634-affe-ccd62155e2e1
   Args:
-    source: Frederick_III
-    type: :Ancestor
-  AssignClass (d45721a8-81d1-4dca-98d0-32479908c94f)
- Call ID: d45721a8-81d1-4dca-98d0-32479908c94f
-  Args:
-    source: Victoria_Empress
-    type: :Ancestor
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -851,60 +749,33 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alice_of_Hesse a :Person,
+  data:MariaChiara a :Person,
           :Woman ;
-      :isBloodrelationOf data:Waldemar_of_Prussia .
+      :hasBirthYear 2005 ;
+      :hasFather data:PrinceCarlo ;
+      :hasMother data:CamillaCrociani ;
+      :hasSex data:Female ;
+      :hasSister data:MariaCarolina .
 
-  data:Heinrich a :Man,
-          :Person ;
-      :isBrotherOf data:Waldemar_of_Prussia .
-
-  data:Marie a :Person,
+  data:CamillaCrociani a :Ancestor,
+          :Person,
           :Woman ;
-      :isBloodrelationOf data:Waldemar_of_Prussia .
+      :hasSex data:Female .
 
-  data:Sigismund_of_Prussia a :Man,
-          :Person ;
-      :isBrotherOf data:Waldemar_of_Prussia .
+  data:Male a :Sex .
 
-  data:Wilhelm a :Man,
-          :Person ;
-      :isBrotherOf data:Waldemar_of_Prussia .
+  data:MariaCarolina a :Person,
+          :Woman ;
+      :hasSex data:Female .
 
-  data:Frederick_III a :Ancestor,
+  data:PrinceCarlo a :Ancestor,
           :Man,
-          :Person .
-
-  data:Queen_Victoria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Victoria_Empress a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:William_I a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Waldemar_of_Prussia a :Man,
           :Person ;
-      :hasAncestor data:Queen_Victoria,
-          data:William_I ;
-      :hasBirthYear 1868 ;
-      :hasDeathYear 1879 ;
-      :hasFather data:Frederick_III ;
-      :hasMother data:Victoria_Empress .
+      :hasSex data:Male .
+
+  data:Female a :Sex .
 
 
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (10e6e678-39e6-44c9-924e-b2a19e629dc4)
- Call ID: 10e6e678-39e6-44c9-924e-b2a19e629dc4
-  Args:
 
 ================================= Tool Message =================================
 
@@ -914,6 +785,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (c364a208-cac8-4318-8f72-4d8618a9441e)
- Call ID: c364a208-cac8-4318-8f72-4d8618a9441e
+  Finish (2c29ce64-ecdb-40ba-ac3e-6c38cb843fc6)
+ Call ID: 2c29ce64-ecdb-40ba-ac3e-6c38cb843fc6
   Args:

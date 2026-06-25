@@ -16,20 +16,38 @@
       "qid": "Q1590241",
       "label": "Charles Augustus, Hereditary Grand Duke of Saxe-Weimar-Eisenach",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Feodora_of_Saxe-Meiningen",
       "qid": "Q66639",
       "label": "Princess Feodora of Saxe-Meiningen",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/CharlesAugustus",
-      "extracted_local_name": "CharlesAugustus",
+      "extracted_uri": "http://example.org/data/Feodora_of_Saxe-Meiningen",
+      "extracted_local_name": "Feodora_of_Saxe-Meiningen",
+      "embedding_text": "Feodora of Saxe-Meiningen",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8043478260869565,
+      "ground_truth_uri": "http://example.com/data#Princess_Feodora_of_Saxe-Meiningen",
+      "ground_truth_qid": "Q66639",
+      "ground_truth_label": "Princess Feodora of Saxe-Meiningen",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Feodora of Saxe-Meiningen",
+      "best_candidate_label": "Princess Feodora of Saxe-Meiningen",
+      "best_candidate_qid": "Q66639",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8043478260869565
+    },
+    {
+      "extracted_uri": "http://example.org/data/Charles_Augustus",
+      "extracted_local_name": "Charles_Augustus",
       "embedding_text": "Charles Augustus",
       "extracted_gender": "male",
       "matched": false,
@@ -42,13 +60,13 @@
       "best_candidate_match_text": "Charles Augustus- Hereditary Grand Duke of Saxe-Weimar-Eisenach",
       "best_candidate_label": "Charles Augustus, Hereditary Grand Duke of Saxe-Weimar-Eisenach",
       "best_candidate_qid": "Q1590241",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.4050632911392405
     },
     {
-      "extracted_uri": "http://example.org/data/Elisabeth",
-      "extracted_local_name": "Elisabeth",
-      "embedding_text": "Elisabeth",
+      "extracted_uri": "http://example.org/data/Elisabeth_of_Wangenheim-Winterstein",
+      "extracted_local_name": "Elisabeth_of_Wangenheim-Winterstein",
+      "embedding_text": "Elisabeth of Wangenheim-Winterstein",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -60,13 +78,13 @@
       "best_candidate_match_text": "Princess Feodora",
       "best_candidate_label": "Princess Feodora of Saxe-Meiningen",
       "best_candidate_qid": "Q66639",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.24
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.1568627450980392
     },
     {
-      "extracted_uri": "http://example.org/data/Feodora",
-      "extracted_local_name": "Feodora",
-      "embedding_text": "Feodora",
+      "extracted_uri": "http://example.org/data/Maud_von_Tr%C3%BCtzschler",
+      "extracted_local_name": "Maud_von_Tr%C3%BCtzschler",
+      "embedding_text": "Maud von Trützschler",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -75,29 +93,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Princess Feodora",
-      "best_candidate_label": "Princess Feodora of Saxe-Meiningen",
-      "best_candidate_qid": "Q66639",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.6086956521739131
-    },
-    {
-      "extracted_uri": "http://example.org/data/Maud",
-      "extracted_local_name": "Maud",
-      "embedding_text": "Maud",
-      "extracted_gender": "female",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": "Princess Feodora",
-      "best_candidate_label": "Princess Feodora of Saxe-Meiningen",
-      "best_candidate_qid": "Q66639",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.1
+      "best_candidate_match_text": "Charles Augustus- Hereditary Grand Duke of Saxe-Weimar-Eisenach",
+      "best_candidate_label": "Charles Augustus, Hereditary Grand Duke of Saxe-Weimar-Eisenach",
+      "best_candidate_qid": "Q1590241",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.12048192771084337
     },
     {
       "extracted_uri": "http://example.org/data/Michael",
@@ -114,13 +114,13 @@
       "best_candidate_match_text": "Charles Augustus- Hereditary Grand Duke of Saxe-Weimar-Eisenach",
       "best_candidate_label": "Charles Augustus, Hereditary Grand Duke of Saxe-Weimar-Eisenach",
       "best_candidate_qid": "Q1590241",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.11428571428571428
     },
     {
-      "extracted_uri": "http://example.org/data/Othmar",
-      "extracted_local_name": "Othmar",
-      "embedding_text": "Othmar",
+      "extracted_uri": "http://example.org/data/Othmar_Baron_von_Wangenheim-Winterstein",
+      "extracted_local_name": "Othmar_Baron_von_Wangenheim-Winterstein",
+      "embedding_text": "Othmar Baron von Wangenheim-Winterstein",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -132,12 +132,12 @@
       "best_candidate_match_text": "Charles Augustus- Hereditary Grand Duke of Saxe-Weimar-Eisenach",
       "best_candidate_label": "Charles Augustus, Hereditary Grand Duke of Saxe-Weimar-Eisenach",
       "best_candidate_qid": "Q1590241",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.11594202898550725
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.13725490196078433
     },
     {
-      "extracted_uri": "http://example.org/data/WilhelmErnst",
-      "extracted_local_name": "WilhelmErnst",
+      "extracted_uri": "http://example.org/data/Wilhelm_Ernst",
+      "extracted_local_name": "Wilhelm_Ernst",
       "embedding_text": "Wilhelm Ernst",
       "extracted_gender": "male",
       "matched": false,
@@ -150,13 +150,13 @@
       "best_candidate_match_text": "Charles Augustus- Hereditary Grand Duke of Saxe-Weimar-Eisenach",
       "best_candidate_label": "Charles Augustus, Hereditary Grand Duke of Saxe-Weimar-Eisenach",
       "best_candidate_qid": "Q1590241",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.15789473684210525
     }
   ],
   "summary": {
     "entities_total": 7,
-    "entities_matched": 0,
-    "entities_unmatched": 7
+    "entities_matched": 1,
+    "entities_unmatched": 6
   }
 }

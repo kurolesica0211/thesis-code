@@ -85,40 +85,75 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Georg Donatus, Hereditary Grand Duke of Hesse (Georg Donatus Wilhelm Nikolaus Eduard Heinrich Karl, 8 November 1906 – 16 November 1937), was the first child of Ernest Louis, Grand Duke of Hesse, and his second wife, Princess Eleonore of Solms-Hohensolms-Lich.
-Marriage and children
+Catherine Oxenberg (born September 22, 1961) is an American actress.
+Oxenberg is the daughter of Princess Elizabeth of Yugoslavia and her first husband, Howard Oxenberg (1919–2010).
+She twice played Diana, Princess of Wales on screen, in The Royal Romance of Charles and Diana (1982) and Charles and Diana: Unhappily Ever After (1992), and has appeared in many other films.
+Early life and education
 
-On 2 February 1931, in Darmstadt, Georg Donatus, a great-grandson of Queen Victoria, married his first cousin once removed, Princess Cecilie of Greece and Denmark, daughter of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, sister of Prince Philip, Duke of Edinburgh, and great-great-granddaughter of Queen Victoria and Prince Albert.
-The couple had four children:
+Oxenberg was born in New York City, and grew up in London.
+She is the eldest daughter of Princess Elizabeth of Yugoslavia (born 1936), a member of the House of Karađorđević, and her first husband Howard Oxenberg (1919–2010), a Jewish self-made textile and clothing tycoon and close friend of the Kennedy family.
+Her sister is Christina Oxenberg.
+Princess Elizabeth is the only daughter of Prince Paul of Yugoslavia (who served as regent for his cousin's eldest son King Peter II of Yugoslavia) and Princess Olga of Greece and Denmark.
+Through her maternal grandmother, Catherine is a first cousin once removed of: Prince Edward, Duke of Kent, Princess Alexandra, The Honourable Lady Ogilvy and Prince Michael of Kent.
+Oxenberg is a second cousin once removed of Queen Sofía of Spain and Charles III of the United Kingdom, making Catherine a third cousin of Felipe VI of Spain and William, Prince of Wales.
+She is also a third cousin once removed of Margrethe II of Denmark and Harald V of Norway; and a fourth cousin to Grand Duke Henri of Luxembourg and King Philippe of Belgium.
+Oxenberg was educated at the Lycée Français Charles de Gaulle in Kensington, London, St. Paul's School, and Columbia University, though she did not finish college.
+Ancestry
+
+Through her maternal grandfather, Prince Paul of Yugoslavia of the House of Karađorđević, Catherine Oxenberg is a great-great-great-granddaughter of Karađorđe, who started the First Serbian Uprising against the Ottoman Empire in 1804.
+Her maternal grandmother, Princess Olga, was the daughter of Grand Duchess Elena Vladimirovna of Russia and Prince Nicholas of Greece and Denmark, himself the son of another Romanov grand duchess, Queen Olga Konstantinovna of the Hellenes and her Danish-born husband King George of Greece, brother of Queen Alexandra of the United Kingdom and the Empress Maria Fyodorovna.
+Career
+
+Oxenberg made her acting debut in the 1982 made-for-television film The Royal Romance of Charles and Diana, in which she played Diana, Princess of Wales.
+In 1984, Oxenberg joined the hit ABC prime time soap opera Dynasty—then at its height of popularity—in the role of Amanda Carrington.
+Oxenberg left Dynasty in 1986, following a salary dispute after the end of her second season, and the role was recast with Karen Cellini.
+Though Oxenberg's publicist insisted that the actress left Dynasty voluntarily, several media outlets reported that she was fired.
+Oxenberg was the guest host on the May 10, 1986, episode of Saturday Night Live, making her the only descendant of a royal family to host the show.
+Oxenberg starred as Princess Elysa in the 1987 television film Roman Holiday.
+She also appeared in The Lair of the White Worm in 1988, and reprised the role of Diana, Princess of Wales in the TV film Charles and Diana: Unhappily Ever After in 1992.
+From 1993 to 1994, she starred in the short-lived series Acapulco H.E.A.T.
 
 
-• Prince Ludwig Ernst Andreas of Hesse and by Rhine (25 October 1931 – 16 November 1937), killed in the air accident.
-• Prince Alexander Georg Karl Heinrich of Hesse and by Rhine (14 April 1933 – 16 November 1937), killed in the air accident.
-• Princess Johanna Marina Eleonore of Hesse and by Rhine (20 September 1936 – 14 June 1939), died from meningitis.
-On 1 May 1937, Georg Donatus and Cecilie both joined the Nazi Party.
-Death
+Oxenberg was portrayed by Rachael Taylor in the 2005 telemovie Dynasty: The Making of a Guilty Pleasure, a fictionalized retelling of the behind-the-scenes goings-on during the production of Dynasty.
+In 2006, Oxenberg appeared in the TV special, Dynasty Reunion: Catfights & Caviar, in which she was reunited with her former Dynasty castmates to reminisce about the series.
+In 2019, Catherine Oxenberg produced and narrated Escaping the NXIVM Cult: A Mother's Fight to Save Her Daughter in which Andrea Roth portrayed her.
+Personal life
 
-In October 1937, Georg Donatus's father, Grand Duke Ernest Louis of Hesse, died.
-A few weeks after the funeral, his younger brother, Prince Louis, was due to marry the Hon.
-On 16 November 1937, Georg Donatus, Cecilie, their two young sons, Georg Donatus's mother, Grand Duchess Eleonore, the children's nurse, a family friend, a pilot, and two crewmen took off in a Sabena Junkers Ju 52 aeroplane from Darmstadt, bound for the United Kingdom, where Louis's marriage ceremony was to take place.
-Cecilie was in an advanced state of pregnancy with their fourth child at the time of the crash.
-The remains of the newborn baby were found in the wreckage, indicating that Cecilie had gone into labour during the flight.
-The funeral and burial of Georg Donatus and his family took place at the Rosenhöhe, Darmstadt, Hesse, a few days later.
-Among those attending were Prince Philip, Prince Christoph of Hesse, Gottfried, Prince of Hohenlohe-Langenburg, Prince Philipp of Hesse, Berthold, Margrave of Baden, Prince August Wilhelm of Prussia, and Lord Louis Mountbatten.
-A photograph of the funeral procession, showing Prince Louis as chief mourner, depicts crowds saluting the mourners with the Hitler salute.
-Georg Donatus and Cecilie's 14‐month‐old daughter, Johanna, was the only member of the immediate family who was not on board the aircraft.
-She was adopted by her uncle Louis and aunt Margaret in early 1938.
-Johanna died of meningitis in 1939.
-With the death of the childless Louis in 1968, the male line of the Hesse and by Rhine became extinct.
-Titles
+In June 1991, Oxenberg had a daughter, India Riven Oxenberg, whose father was later revealed to be the convicted drug smuggler William Weitz Shaffer.
+In December 1992, Oxenberg was living with her daughter in Coldwater Canyon, Los Angeles, California.
+Oxenberg's first marriage was to the producer Robert Evans, in Beverly Hills, California, on July 12, 1998, but the marriage was annulled nine days later.
+Oxenberg met the actor Casper Van Dien during the filming of the 1999 TV movie The Collectors, and they worked together again the same year in the Evangelical Christian thriller The Omega Code.
+Van Dien and Oxenberg have two daughters.
+In 2005, the couple appeared in their own reality series, I Married a Princess, which aired on the Lifetime Television channel in the United States and on LIVINGtv in the United Kingdom.
+Van Dien filed for divorce from Oxenberg in 2015.
+While Oxenberg and Van Dien were married, and before India joined NXIVM, Oxenberg and Van Dien were celebrity ambassadors for the non-profit organization Childhelp.
+In June 2023, Oxenberg revealed her engagement to businessman Ellis Jones.
+They began dating shortly after Jones offered Oxenberg a place to stay following her losing her home in the 2018 California wildfires.
+NXIVM
 
-Georg Donatus never acceded to the grand‐ducal throne, as it had been abolished at the end of the First World War.
+Oxenberg acknowledged in November 2017 that she had had interactions with Keith Raniere and his NXIVM organization, bringing her daughter India into NXIVM in 2011 for what she thought would be "a self-help, business-oriented program."
+Oxenberg confirmed that her daughter became heavily involved in the cult and that she had initiated what proved to be a failed intervention for India.
+In August 2018, Oxenberg revealed that India had left NXIVM in June, after the arrest of Raniere, and they were working on their relationship.
+In August 2018, Oxenberg's book Captive: A Mother's Crusade to Save Her Daughter from a Terrifying Cult co-written by former People magazine writer Natasha Stoynoff was published.
+In 2020, Oxenberg was featured in The Vow, a documentary series for HBO, directed by Jehane Noujaim and Karim Amer, which follows Oxenberg's attempts to rescue her daughter India.
+Oxenberg also appears in Seduced: Inside the NXIVM Cult a documentary series for Starz, directed by Cecilia Peck and Inbal B. Lessner, which features India speaking out about her experiences for the first time.
+Filmography
+
+Film
+
+Television
+
+Accolades
+
+For playing Amanda Carrington, Oxenberg won two Soap Opera Digest Awards in 1985, for Outstanding Supporting Actress and Outstanding Female Newcomer.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -134,39 +169,9 @@ Georg Donatus never acceded to the grand‐ducal throne, as it had been abolishe
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -181,6 +186,23 @@ Georg Donatus never acceded to the grand‐ducal throne, as it had been abolishe
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -198,6 +220,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,29 +302,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -296,6 +325,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -308,6 +345,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -316,17 +355,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -354,6 +395,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -369,159 +494,255 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (864f9c00-3e4f-44da-8ab6-519e8029f503)
- Call ID: 864f9c00-3e4f-44da-8ab6-519e8029f503
+  AssignClass (6c083653-d452-45ee-b47e-361a5e28ea8f)
+ Call ID: 6c083653-d452-45ee-b47e-361a5e28ea8f
   Args:
-    type: :Man
-    source: GeorgDonatus
-  AssignClass (5987f854-72fe-4d98-be1e-548c2796475f)
- Call ID: 5987f854-72fe-4d98-be1e-548c2796475f
-  Args:
-    source: ErnestLouis
-    type: :Man
-  AssignClass (39bae679-6223-40a7-8fb9-e78fb1342105)
- Call ID: 39bae679-6223-40a7-8fb9-e78fb1342105
-  Args:
-    source: Eleonore
+    source: Catherine_Oxenberg
     type: :Woman
-  AssignClass (cd17a5af-180c-45c4-a767-f70c96c8287b)
- Call ID: cd17a5af-180c-45c4-a767-f70c96c8287b
+  AssignClass (6722838f-2087-4d38-a804-27f30d94ea55)
+ Call ID: 6722838f-2087-4d38-a804-27f30d94ea55
   Args:
-    source: Cecilie
-    type: :Woman
-  AssignClass (df3b8efe-8de9-45af-a024-7c7d7aa159ee)
- Call ID: df3b8efe-8de9-45af-a024-7c7d7aa159ee
+    source: Catherine_Oxenberg
+    type: :Person
+  AddLiteral (e293e178-105d-404a-b607-c4231ec1073e)
+ Call ID: e293e178-105d-404a-b607-c4231ec1073e
   Args:
-    source: Andrew
-    type: :Man
-  AssignClass (344d0d52-0bb8-40c9-87c0-27dd0c9180ce)
- Call ID: 344d0d52-0bb8-40c9-87c0-27dd0c9180ce
-  Args:
-    type: :Woman
-    source: AliceOfBattenberg
-  AssignClass (2cb70ea2-3eed-4ff4-ad4d-6bd4a6c9d219)
- Call ID: 2cb70ea2-3eed-4ff4-ad4d-6bd4a6c9d219
-  Args:
-    source: LudwigErnstAndreas
-    type: :Man
-  AssignClass (e91b7ba7-c547-47c4-ab75-d09ad7906836)
- Call ID: e91b7ba7-c547-47c4-ab75-d09ad7906836
-  Args:
-    type: :Man
-    source: AlexanderGeorgKarlHeinrich
-  AssignClass (6db6136c-5372-4ad4-982b-15d6cdb93da2)
- Call ID: 6db6136c-5372-4ad4-982b-15d6cdb93da2
-  Args:
-    type: :Woman
-    source: JohannaMarinaEleonore
-  AssignClass (ea00392a-a5b0-4e80-9e80-783e7d6dd47f)
- Call ID: ea00392a-a5b0-4e80-9e80-783e7d6dd47f
-  Args:
-    source: Louis
-    type: :Man
-  AddLiteral (7d9706b5-ad48-4ea7-a651-f49c0fef1e3e)
- Call ID: 7d9706b5-ad48-4ea7-a651-f49c0fef1e3e
-  Args:
-    relation: :knownAs
-    source: GeorgDonatus
-    literal_type: xsd:string
-    literal_value: Georg Donatus, Hereditary Grand Duke of Hesse
-  AddLiteral (6f48ee03-04d7-404b-8cbf-0d819a03e426)
- Call ID: 6f48ee03-04d7-404b-8cbf-0d819a03e426
-  Args:
-    literal_value: 1906
+    source: Catherine_Oxenberg
     literal_type: xsd:integer
-    source: GeorgDonatus
     relation: :hasBirthYear
-  AddLiteral (ff7196bc-5395-40bc-899c-24743c3c0599)
- Call ID: ff7196bc-5395-40bc-899c-24743c3c0599
+    literal_value: 1961
+  AssignClass (6db97bee-e30a-4adc-8ca1-cdc9233a75e7)
+ Call ID: 6db97bee-e30a-4adc-8ca1-cdc9233a75e7
   Args:
-    source: GeorgDonatus
-    relation: :hasDeathYear
+    source: Princess_Elizabeth_of_Yugoslavia
+    type: :Woman
+  AssignClass (6d6d8422-fd40-4fc7-8a6a-b9e5825fc01d)
+ Call ID: 6d6d8422-fd40-4fc7-8a6a-b9e5825fc01d
+  Args:
+    source: Princess_Elizabeth_of_Yugoslavia
+    type: :Person
+  AssignClass (62e3a3fc-a834-460d-a9a7-1181490544d4)
+ Call ID: 62e3a3fc-a834-460d-a9a7-1181490544d4
+  Args:
+    source: Princess_Elizabeth_of_Yugoslavia
+    type: :Ancestor
+  AssignClass (86601913-f72e-4edc-aed9-bbac21d788a5)
+ Call ID: 86601913-f72e-4edc-aed9-bbac21d788a5
+  Args:
+    source: Howard_Oxenberg
+    type: :Man
+  AssignClass (87909d75-eea7-403d-aad4-85e6b38e58f8)
+ Call ID: 87909d75-eea7-403d-aad4-85e6b38e58f8
+  Args:
+    source: Howard_Oxenberg
+    type: :Person
+  AssignClass (efbb1997-b74f-4738-9fe3-213a90205e5a)
+ Call ID: efbb1997-b74f-4738-9fe3-213a90205e5a
+  Args:
+    source: Howard_Oxenberg
+    type: :Ancestor
+  AddLiteral (bf44a14f-7321-41d2-8c17-8b9ba44041f3)
+ Call ID: bf44a14f-7321-41d2-8c17-8b9ba44041f3
+  Args:
     literal_type: xsd:integer
-    literal_value: 1937
-  AddTriple (7897e95d-604f-4e61-80e8-243aabd954a5)
- Call ID: 7897e95d-604f-4e61-80e8-243aabd954a5
+    source: Howard_Oxenberg
+    relation: :hasBirthYear
+    literal_value: 1919
+  AddLiteral (7707a6d1-d83a-409f-847a-554cb16d14cf)
+ Call ID: 7707a6d1-d83a-409f-847a-554cb16d14cf
   Args:
-    relation: :hasFather
-    source: GeorgDonatus
-    target: ErnestLouis
-  AddTriple (49d07d39-b11d-4872-aadb-fca6306e1643)
- Call ID: 49d07d39-b11d-4872-aadb-fca6306e1643
+    source: Howard_Oxenberg
+    literal_type: xsd:integer
+    literal_value: 2010
+    relation: :hasDeathYear
+  AddTriple (10b855ed-02c4-48c5-8c5e-f0d2fb6f28db)
+ Call ID: 10b855ed-02c4-48c5-8c5e-f0d2fb6f28db
   Args:
     relation: :hasMother
-    source: GeorgDonatus
-    target: Eleonore
-  AddLiteral (38c01354-89d5-4607-a8dd-33fa18343d32)
- Call ID: 38c01354-89d5-4607-a8dd-33fa18343d32
+    source: Catherine_Oxenberg
+    target: Princess_Elizabeth_of_Yugoslavia
+  AddTriple (ce4f3de8-931d-4dca-86f4-14d99f1cff8f)
+ Call ID: ce4f3de8-931d-4dca-86f4-14d99f1cff8f
   Args:
-    literal_type: xsd:integer
-    literal_value: 1931
-    source: GeorgDonatus
-    relation: :hasMarriageYear
-  AddTriple (56186f46-7ac4-4b5c-be2d-177cf079670a)
- Call ID: 56186f46-7ac4-4b5c-be2d-177cf079670a
+    target: Howard_Oxenberg
+    source: Catherine_Oxenberg
+    relation: :hasFather
+  AssignClass (9c71f628-11a0-4703-813b-74d73c8c6a13)
+ Call ID: 9c71f628-11a0-4703-813b-74d73c8c6a13
+  Args:
+    source: Christina_Oxenberg
+    type: :Woman
+  AssignClass (ebcc0ae2-8800-4095-b71f-5863fc0cd201)
+ Call ID: ebcc0ae2-8800-4095-b71f-5863fc0cd201
+  Args:
+    source: Christina_Oxenberg
+    type: :Person
+  AddTriple (6cd3047c-d178-4e21-8379-28798ea44b39)
+ Call ID: 6cd3047c-d178-4e21-8379-28798ea44b39
+  Args:
+    relation: :isSisterOf
+    source: Christina_Oxenberg
+    target: Catherine_Oxenberg
+  AssignClass (e3fea8d8-7bf7-42b1-9784-e204f72d3cf7)
+ Call ID: e3fea8d8-7bf7-42b1-9784-e204f72d3cf7
+  Args:
+    source: Prince_Paul_of_Yugoslavia
+    type: :Man
+  AssignClass (92917de8-7cc0-403a-9855-dfd2dc1e0552)
+ Call ID: 92917de8-7cc0-403a-9855-dfd2dc1e0552
+  Args:
+    source: Prince_Paul_of_Yugoslavia
+    type: :Person
+  AssignClass (cace4df1-ad6c-44ae-ad6f-a99ec3b8b41c)
+ Call ID: cace4df1-ad6c-44ae-ad6f-a99ec3b8b41c
+  Args:
+    source: Prince_Paul_of_Yugoslavia
+    type: :Ancestor
+  AssignClass (3ac97c19-6861-4ccd-a02a-29cee7b162d0)
+ Call ID: 3ac97c19-6861-4ccd-a02a-29cee7b162d0
+  Args:
+    source: Princess_Olga_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (2c4794e2-a100-47bb-8f75-479c89fb4e0d)
+ Call ID: 2c4794e2-a100-47bb-8f75-479c89fb4e0d
+  Args:
+    source: Princess_Olga_of_Greece_and_Denmark
+    type: :Person
+  AssignClass (0d344933-beee-46b2-8933-d3ca9821821d)
+ Call ID: 0d344933-beee-46b2-8933-d3ca9821821d
+  Args:
+    source: Princess_Olga_of_Greece_and_Denmark
+    type: :Ancestor
+  AddTriple (bb3abb47-5c5c-4b0f-a0e8-a30c7dac1699)
+ Call ID: bb3abb47-5c5c-4b0f-a0e8-a30c7dac1699
+  Args:
+    relation: :hasFather
+    source: Princess_Elizabeth_of_Yugoslavia
+    target: Prince_Paul_of_Yugoslavia
+  AddTriple (96460ab1-b203-49ee-af93-22b2a5b09a51)
+ Call ID: 96460ab1-b203-49ee-af93-22b2a5b09a51
+  Args:
+    target: Princess_Olga_of_Greece_and_Denmark
+    source: Princess_Elizabeth_of_Yugoslavia
+    relation: :hasMother
+  AssignClass (764bf52b-37ce-4aed-a5c6-c844b1977154)
+ Call ID: 764bf52b-37ce-4aed-a5c6-c844b1977154
+  Args:
+    source: India_Riven_Oxenberg
+    type: :Woman
+  AssignClass (4e855077-4201-4634-82a7-b30c70d4268a)
+ Call ID: 4e855077-4201-4634-82a7-b30c70d4268a
+  Args:
+    source: India_Riven_Oxenberg
+    type: :Person
+  AddTriple (1ecb7256-be1f-412a-acff-2a222eb44d3f)
+ Call ID: 1ecb7256-be1f-412a-acff-2a222eb44d3f
+  Args:
+    relation: :hasMother
+    source: India_Riven_Oxenberg
+    target: Catherine_Oxenberg
+  AssignClass (d45d63c3-a30a-4779-9a88-54db2c4730d0)
+ Call ID: d45d63c3-a30a-4779-9a88-54db2c4730d0
+  Args:
+    source: William_Weitz_Shaffer
+    type: :Man
+  AssignClass (dcfeb21d-cbd6-47db-8204-ae1bedb28945)
+ Call ID: dcfeb21d-cbd6-47db-8204-ae1bedb28945
+  Args:
+    source: William_Weitz_Shaffer
+    type: :Person
+  AddTriple (fe283561-e6a6-488f-ada9-c0d435d172a3)
+ Call ID: fe283561-e6a6-488f-ada9-c0d435d172a3
+  Args:
+    source: India_Riven_Oxenberg
+    target: William_Weitz_Shaffer
+    relation: :hasFather
+  AssignClass (65183fe1-9656-4799-b74b-675695006ff4)
+ Call ID: 65183fe1-9656-4799-b74b-675695006ff4
+  Args:
+    source: Robert_Evans
+    type: :Man
+  AssignClass (0729a756-ae59-4fa8-8ac7-8532f926a4e7)
+ Call ID: 0729a756-ae59-4fa8-8ac7-8532f926a4e7
+  Args:
+    source: Robert_Evans
+    type: :Person
+  AddTriple (b84db41a-6b92-4136-a014-5953a7ca78ab)
+ Call ID: b84db41a-6b92-4136-a014-5953a7ca78ab
   Args:
     relation: :hasRelation
-    source: GeorgDonatus
-    target: Cecilie
-  AddTriple (59c995fd-f082-4871-9139-228150dc359a)
- Call ID: 59c995fd-f082-4871-9139-228150dc359a
+    source: Catherine_Oxenberg
+    target: Robert_Evans
+  AddLiteral (09e56024-3c6a-4ac9-88e3-a23fbe3477c0)
+ Call ID: 09e56024-3c6a-4ac9-88e3-a23fbe3477c0
   Args:
-    target: Andrew
-    source: Cecilie
-    relation: :hasFather
-  AddTriple (8f2c3a4a-55eb-439a-b653-afe518c9d086)
- Call ID: 8f2c3a4a-55eb-439a-b653-afe518c9d086
+    literal_value: 1998
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Catherine_Oxenberg
+  AssignClass (725fe170-07ca-4586-bcdd-385957a52edf)
+ Call ID: 725fe170-07ca-4586-bcdd-385957a52edf
   Args:
-    target: AliceOfBattenberg
-    source: Cecilie
-    relation: :hasMother
-  AddTriple (6f7b43ca-2379-4e22-96b4-64b8bccd50ef)
- Call ID: 6f7b43ca-2379-4e22-96b4-64b8bccd50ef
+    source: Casper_Van_Dien
+    type: :Man
+  AssignClass (486ea494-563a-4176-bc01-49379c827d66)
+ Call ID: 486ea494-563a-4176-bc01-49379c827d66
   Args:
-    relation: :hasFather
-    source: LudwigErnstAndreas
-    target: GeorgDonatus
-  AddTriple (5498972e-8733-4455-9a5a-cfaa43ea7502)
- Call ID: 5498972e-8733-4455-9a5a-cfaa43ea7502
+    source: Casper_Van_Dien
+    type: :Person
+  AddTriple (dcac19d7-ec95-4735-a8fa-7e633a1872f4)
+ Call ID: dcac19d7-ec95-4735-a8fa-7e633a1872f4
   Args:
-    source: LudwigErnstAndreas
-    target: Cecilie
-    relation: :hasMother
-  AddTriple (5d103ece-1503-48b9-a908-8e6eac01ad92)
- Call ID: 5d103ece-1503-48b9-a908-8e6eac01ad92
+    relation: :hasRelation
+    target: Casper_Van_Dien
+    source: Catherine_Oxenberg
+  Finish (aec4fdee-664f-4547-97f6-d32009680c55)
+ Call ID: aec4fdee-664f-4547-97f6-d32009680c55
   Args:
-    target: GeorgDonatus
-    source: AlexanderGeorgKarlHeinrich
-    relation: :hasFather
-  AddTriple (da51faff-3dae-4221-ba31-35658eb3bec9)
- Call ID: da51faff-3dae-4221-ba31-35658eb3bec9
-  Args:
-    relation: :hasMother
-    source: AlexanderGeorgKarlHeinrich
-    target: Cecilie
-  AddTriple (d25f3470-be0b-46a8-a484-f7f61b321cc0)
- Call ID: d25f3470-be0b-46a8-a484-f7f61b321cc0
-  Args:
-    target: GeorgDonatus
-    source: JohannaMarinaEleonore
-    relation: :hasFather
-  AddTriple (eca194b8-b7af-47b5-8563-4d81d66c793d)
- Call ID: eca194b8-b7af-47b5-8563-4d81d66c793d
-  Args:
-    target: Cecilie
-    source: JohannaMarinaEleonore
-    relation: :hasMother
-  AddTriple (bc6eac11-0127-4405-bc6b-db397866a357)
- Call ID: bc6eac11-0127-4405-bc6b-db397866a357
-  Args:
-    relation: :hasBrother
-    target: Louis
-    source: GeorgDonatus
-  Finish (c18dd5bf-6286-4e81-a6de-beeca9b2f93b)
- Call ID: c18dd5bf-6286-4e81-a6de-beeca9b2f93b
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -630,41 +851,52 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:AlexanderGeorgKarlHeinrich a :Man ;
-      :hasFather data:GeorgDonatus ;
-      :hasMother data:Cecilie .
+  data:Christina_Oxenberg a :Person,
+          :Woman ;
+      :isSisterOf data:Catherine_Oxenberg .
 
-  data:JohannaMarinaEleonore a :Woman ;
-      :hasFather data:GeorgDonatus ;
-      :hasMother data:Cecilie .
+  data:India_Riven_Oxenberg a :Person,
+          :Woman ;
+      :hasFather data:William_Weitz_Shaffer ;
+      :hasMother data:Catherine_Oxenberg .
 
-  data:LudwigErnstAndreas a :Man ;
-      :hasFather data:GeorgDonatus ;
-      :hasMother data:Cecilie .
+  data:Casper_Van_Dien a :Man,
+          :Person .
 
-  data:AliceOfBattenberg a :Woman .
+  data:Howard_Oxenberg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1919 ;
+      :hasDeathYear 2010 .
 
-  data:Andrew a :Man .
+  data:Prince_Paul_of_Yugoslavia a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Eleonore a :Woman .
+  data:Princess_Elizabeth_of_Yugoslavia a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Prince_Paul_of_Yugoslavia ;
+      :hasMother data:Princess_Olga_of_Greece_and_Denmark .
 
-  data:ErnestLouis a :Man .
+  data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Louis a :Man .
+  data:Robert_Evans a :Man,
+          :Person .
 
-  data:GeorgDonatus a :Man ;
-      :hasBirthYear 1906 ;
-      :hasBrother data:Louis ;
-      :hasDeathYear 1937 ;
-      :hasFather data:ErnestLouis ;
-      :hasMarriageYear 1931 ;
-      :hasMother data:Eleonore ;
-      :hasRelation data:Cecilie ;
-      :knownAs "Georg Donatus, Hereditary Grand Duke of Hesse"^^xsd:string .
+  data:William_Weitz_Shaffer a :Man,
+          :Person .
 
-  data:Cecilie a :Woman ;
-      :hasFather data:Andrew ;
-      :hasMother data:AliceOfBattenberg .
+  data:Catherine_Oxenberg a :Person,
+          :Woman ;
+      :hasBirthYear 1961 ;
+      :hasFather data:Howard_Oxenberg ;
+      :hasMarriageYear 1998 ;
+      :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+      :hasRelation data:Casper_Van_Dien,
+          data:Robert_Evans .
 
 
 
@@ -676,254 +908,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (5d43fae1-28b9-4787-920d-854b88372492)
- Call ID: 5d43fae1-28b9-4787-920d-854b88372492
+  ValidateShacl (9eaacbbf-3d3d-49d4-b5e9-b494d059217f)
+ Call ID: 9eaacbbf-3d3d-49d4-b5e9-b494d059217f
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:30
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father (GeorgDonatus) of AlexanderGeorgKarlHeinrich is missing the required Ancestor class.
+      The node William_Weitz_Shaffer is linked as the father of India_Riven_Oxenberg, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(GeorgDonatus, Ancestor)
+      AssignClass(node='William_Weitz_Shaffer', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father (ErnestLouis) of GeorgDonatus is missing the required Ancestor class.
+      The node Catherine_Oxenberg is linked as the mother of India_Riven_Oxenberg, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(ErnestLouis, Ancestor)
+      AssignClass(node='Catherine_Oxenberg', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father (GeorgDonatus) of LudwigErnstAndreas is missing the required Ancestor class.
+      The node William_Weitz_Shaffer is linked as the father of India_Riven_Oxenberg, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(GeorgDonatus, Ancestor)
+      AssignClass(node='William_Weitz_Shaffer', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother (Cecilie) of AlexanderGeorgKarlHeinrich is missing the required Ancestor class.
+      The node Catherine_Oxenberg is linked as the mother of India_Riven_Oxenberg, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilie, Ancestor)
+      AssignClass(node='Catherine_Oxenberg', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother (Eleonore) of GeorgDonatus is missing the required Ancestor class.
+      The node William_Weitz_Shaffer is linked as the father of India_Riven_Oxenberg, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Eleonore, Ancestor)
+      AssignClass(node='William_Weitz_Shaffer', class=':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother (Cecilie) of LudwigErnstAndreas is missing the required Ancestor class.
+      The node Catherine_Oxenberg is linked as the mother of India_Riven_Oxenberg, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilie, Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father (Andrew) of Cecilie is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Andrew, Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father (GeorgDonatus) of AlexanderGeorgKarlHeinrich is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(GeorgDonatus, Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father (ErnestLouis) of GeorgDonatus is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(ErnestLouis, Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father (GeorgDonatus) of LudwigErnstAndreas is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(GeorgDonatus, Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father (GeorgDonatus) of JohannaMarinaEleonore is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(GeorgDonatus, Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother (AliceOfBattenberg) of Cecilie is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(AliceOfBattenberg, Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother (Cecilie) of AlexanderGeorgKarlHeinrich is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilie, Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother (Eleonore) of GeorgDonatus is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Eleonore, Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother (Cecilie) of LudwigErnstAndreas is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilie, Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother (Cecilie) of JohannaMarinaEleonore is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilie, Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father (Andrew) of Cecilie is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Andrew, Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father (GeorgDonatus) of AlexanderGeorgKarlHeinrich is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(GeorgDonatus, Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father (ErnestLouis) of GeorgDonatus is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(ErnestLouis, Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father (GeorgDonatus) of LudwigErnstAndreas is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(GeorgDonatus, Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father (GeorgDonatus) of JohannaMarinaEleonore is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(GeorgDonatus, Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother (AliceOfBattenberg) of Cecilie is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(AliceOfBattenberg, Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother (Cecilie) of AlexanderGeorgKarlHeinrich is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilie, Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother (Eleonore) of GeorgDonatus is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Eleonore, Ancestor)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother (Cecilie) of LudwigErnstAndreas is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilie, Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother (Cecilie) of JohannaMarinaEleonore is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilie, Ancestor)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father (GeorgDonatus) of JohannaMarinaEleonore is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(GeorgDonatus, Ancestor)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father (Andrew) of Cecilie is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Andrew, Ancestor)
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother (Cecilie) of JohannaMarinaEleonore is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cecilie, Ancestor)
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother (AliceOfBattenberg) of Cecilie is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(AliceOfBattenberg, Ancestor)
+      AssignClass(node='Catherine_Oxenberg', class=':Ancestor')
 
 
 
@@ -932,55 +972,19 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (c8f3dc3c-bdc4-4cee-b650-346f54ed476f)
- Call ID: c8f3dc3c-bdc4-4cee-b650-346f54ed476f
+  AssignClass (34c2ff6a-7bbb-4927-af3a-1fb80da89cca)
+ Call ID: 34c2ff6a-7bbb-4927-af3a-1fb80da89cca
   Args:
     type: :Ancestor
-    source: GeorgDonatus
-  AssignClass (1181505d-97b4-491a-b58f-6454ad03c6a0)
- Call ID: 1181505d-97b4-491a-b58f-6454ad03c6a0
+    source: William_Weitz_Shaffer
+  AssignClass (0eee5446-b9f9-4536-85d8-344d8a29ed19)
+ Call ID: 0eee5446-b9f9-4536-85d8-344d8a29ed19
   Args:
+    source: Catherine_Oxenberg
     type: :Ancestor
-    source: ErnestLouis
-  AssignClass (52fb8f8c-046a-444f-9e15-013711e2180a)
- Call ID: 52fb8f8c-046a-444f-9e15-013711e2180a
+  ValidateShacl (7e2e2180-c539-4924-9f77-d67bc19ce639)
+ Call ID: 7e2e2180-c539-4924-9f77-d67bc19ce639
   Args:
-    source: Cecilie
-    type: :Ancestor
-  AssignClass (4d31fc4a-a5f5-4932-9d3b-ce18cf8eb5c2)
- Call ID: 4d31fc4a-a5f5-4932-9d3b-ce18cf8eb5c2
-  Args:
-    source: Eleonore
-    type: :Ancestor
-  AssignClass (29b38048-00c5-4576-b168-5e23d1783f81)
- Call ID: 29b38048-00c5-4576-b168-5e23d1783f81
-  Args:
-    source: Andrew
-    type: :Ancestor
-  AssignClass (52ae5ea6-2997-4e97-a451-2ed2ba2718c9)
- Call ID: 52ae5ea6-2997-4e97-a451-2ed2ba2718c9
-  Args:
-    type: :Ancestor
-    source: AliceOfBattenberg
-  Finish (a622420e-59ba-46aa-a60e-cce70fdf5ec5)
- Call ID: a622420e-59ba-46aa-a60e-cce70fdf5ec5
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -993,61 +997,56 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:AlexanderGeorgKarlHeinrich a :Man ;
-      :hasFather data:GeorgDonatus ;
-      :hasMother data:Cecilie .
-
-  data:JohannaMarinaEleonore a :Woman ;
-      :hasFather data:GeorgDonatus ;
-      :hasMother data:Cecilie .
-
-  data:LudwigErnstAndreas a :Man ;
-      :hasFather data:GeorgDonatus ;
-      :hasMother data:Cecilie .
-
-  data:AliceOfBattenberg a :Ancestor,
-          :Woman .
-
-  data:Andrew a :Ancestor,
-          :Man .
-
-  data:Eleonore a :Ancestor,
-          :Woman .
-
-  data:ErnestLouis a :Ancestor,
-          :Man .
-
-  data:Louis a :Man .
-
-  data:GeorgDonatus a :Ancestor,
-          :Man ;
-      :hasBirthYear 1906 ;
-      :hasBrother data:Louis ;
-      :hasDeathYear 1937 ;
-      :hasFather data:ErnestLouis ;
-      :hasMarriageYear 1931 ;
-      :hasMother data:Eleonore ;
-      :hasRelation data:Cecilie ;
-      :knownAs "Georg Donatus, Hereditary Grand Duke of Hesse"^^xsd:string .
-
-  data:Cecilie a :Ancestor,
+  data:Christina_Oxenberg a :Person,
           :Woman ;
-      :hasFather data:Andrew ;
-      :hasMother data:AliceOfBattenberg .
+      :isSisterOf data:Catherine_Oxenberg .
+
+  data:India_Riven_Oxenberg a :Person,
+          :Woman ;
+      :hasFather data:William_Weitz_Shaffer ;
+      :hasMother data:Catherine_Oxenberg .
+
+  data:Casper_Van_Dien a :Man,
+          :Person .
+
+  data:Howard_Oxenberg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1919 ;
+      :hasDeathYear 2010 .
+
+  data:Prince_Paul_of_Yugoslavia a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Princess_Elizabeth_of_Yugoslavia a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Prince_Paul_of_Yugoslavia ;
+      :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+  data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Robert_Evans a :Man,
+          :Person .
+
+  data:William_Weitz_Shaffer a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Catherine_Oxenberg a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1961 ;
+      :hasFather data:Howard_Oxenberg ;
+      :hasMarriageYear 1998 ;
+      :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+      :hasRelation data:Casper_Van_Dien,
+          data:Robert_Evans .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (ab2bae8c-2e56-4c28-918c-828865417632)
- Call ID: ab2bae8c-2e56-4c28-918c-828865417632
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1057,6 +1056,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (93a9ea18-3a7f-4c12-b82c-c3fc1a70ea78)
- Call ID: 93a9ea18-3a7f-4c12-b82c-c3fc1a70ea78
+  Finish (d6ea2eec-8a19-4073-a3e9-5ffa665d9820)
+ Call ID: d6ea2eec-8a19-4073-a3e9-5ffa665d9820
   Args:

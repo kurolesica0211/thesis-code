@@ -25,17 +25,7 @@ data:Juan_de_Borbon a :Man,
 data:Alfonso_XII a :Man,
         :Person .
 
-data:Leopold_of_Battenberg a :Man,
-        :Person .
-
 data:Maria_Christina_of_Austria a :Person,
-        :Woman .
-
-data:Princess_Beatrice a :Person,
-        :Woman ;
-    :hasMother data:Queen_Victoria .
-
-data:Queen_Victoria a :Person,
         :Woman .
 
 data:Alfonso_XIII a :Man,
@@ -47,10 +37,8 @@ data:Alfonso_XIII a :Man,
     :hasFather data:Alfonso_XII ;
     :hasMarriageYear 1906 ;
     :hasMother data:Maria_Christina_of_Austria ;
-    :knownAs "King Buby"^^xsd:string .
+    :hasRelation data:Victoria_Eugenie_of_Battenberg .
 
 data:Victoria_Eugenie_of_Battenberg a :Person,
-        :Woman ;
-    :hasMother data:Princess_Beatrice ;
-    :hasSister data:Leopold_of_Battenberg .
+        :Woman .
 

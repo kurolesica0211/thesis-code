@@ -1,0 +1,855 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Marie-Chantal-_Crown_Princess_of_Greece a :Person,
+        :Woman ;
+    rdfs:label "Marie-Chantal, Crown Princess of Greece"^^xsd:string ;
+    data:posIndicesFull "13595:13615"^^xsd:string ;
+    data:posIndicesPart "13660:13665"^^xsd:string,
+        "13694:13702"^^xsd:string,
+        "13713:13721"^^xsd:string,
+        "13903:13909"^^xsd:string,
+        "14159:14165"^^xsd:string,
+        "14277:14282"^^xsd:string,
+        "14417:14422"^^xsd:string,
+        "14667:14672"^^xsd:string,
+        "14952:14957"^^xsd:string,
+        "15026:15031"^^xsd:string,
+        "15231:15237"^^xsd:string,
+        "15406:15411"^^xsd:string,
+        "15572:15577"^^xsd:string,
+        "15642:15647"^^xsd:string,
+        "15686:15692"^^xsd:string,
+        "15773:15779"^^xsd:string,
+        "15803:15808"^^xsd:string,
+        "15953:15958"^^xsd:string,
+        "16143:16148"^^xsd:string,
+        "16175:16180"^^xsd:string,
+        "16315:16320"^^xsd:string,
+        "16442:16448"^^xsd:string,
+        "16457:16462"^^xsd:string,
+        "16724:16730"^^xsd:string,
+        "16811:16816"^^xsd:string,
+        "16861:16867"^^xsd:string,
+        "16993:16998"^^xsd:string ;
+    data:wdtLink wdt:Q243049 ;
+    :alsoKnownAs "Mari Santal"^^xsd:string,
+        "Mari Santal Miler"^^xsd:string,
+        "Maria of Greece"^^xsd:string,
+        "Marie Chantal"^^xsd:string,
+        "Marie-Chantal Miller"^^xsd:string,
+        "Marie-Chantel Miller"^^xsd:string ;
+    :hasRelation data:Marie-Chantal-_Crown_Princess_of_Greece ;
+    :hasSex data:female ;
+    :hasSister data:Marie-Chantal-_Crown_Princess_of_Greece ;
+    :isBloodrelationOf data:Marie-Chantal-_Crown_Princess_of_Greece ;
+    :isSiblingOf data:Marie-Chantal-_Crown_Princess_of_Greece ;
+    :isSisterOf data:Marie-Chantal-_Crown_Princess_of_Greece .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Frederica of Hanover"^^xsd:string ;
+    data:posIndicesFull "10583:10591"^^xsd:string,
+        "11782:11791"^^xsd:string,
+        "11803:11812"^^xsd:string,
+        "1338:1346"^^xsd:string,
+        "1514:1529"^^xsd:string,
+        "1521:1529"^^xsd:string,
+        "2912:2920"^^xsd:string,
+        "3093:3101"^^xsd:string,
+        "3329:3337"^^xsd:string,
+        "3583:3591"^^xsd:string,
+        "4392:4401"^^xsd:string,
+        "444:452"^^xsd:string,
+        "4690:4698"^^xsd:string,
+        "5256:5265"^^xsd:string,
+        "5644:5653"^^xsd:string,
+        "6731:6740"^^xsd:string,
+        "722:731"^^xsd:string,
+        "8157:8166"^^xsd:string ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka"^^xsd:string,
+        "Friederike Luise von Griechenland"^^xsd:string,
+        "Princess Fredericka"^^xsd:string ;
+    :hasChild data:Constantine_II_of_Greece ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Prince_Nikolaos_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:female ;
+    :hasSister data:Frederica_of_Hanover ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isAuntOf data:Constantine_II_of_Greece ;
+    :isBloodrelationOf data:Frederica_of_Hanover ;
+    :isMotherOf data:Constantine_II_of_Greece ;
+    :isParentOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Frederica_of_Hanover ;
+    :isSisterOf data:Frederica_of_Hanover .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Alexandrine of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "1628:1663"^^xsd:string,
+        "2127:2155"^^xsd:string ;
+    data:wdtLink wdt:Q57264 ;
+    :alsoKnownAs "Alexandrine Auguste of Mecklenburg-Schwerin"^^xsd:string,
+        "Alexandrine, Queen of Denmark"^^xsd:string,
+        "Duchess Alexandrine Auguste of Mecklenburg-Schwerin"^^xsd:string,
+        "Duchess Alexandrine of Mecklenburg-Schwerin"^^xsd:string,
+        "Queen Alexandrine of Denmark"^^xsd:string ;
+    :hasChild data:Frederik_IX_of_Denmark ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederik_IX_of_Denmark,
+        data:Frederik_X_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Nikolaos_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:female ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasSon data:Frederik_IX_of_Denmark ;
+    :isAncestorOf data:Frederik_IX_of_Denmark,
+        data:Frederik_X_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Nikolaos_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isAuntOf data:Frederik_IX_of_Denmark ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Frederik_IX_of_Denmark ;
+    :isParentOf data:Frederik_IX_of_Denmark ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Christian X of Denmark"^^xsd:string ;
+    data:posIndicesFull "1601:1612"^^xsd:string,
+        "1601:1623"^^xsd:string,
+        "2111:2122"^^xsd:string,
+        "3267:3278"^^xsd:string ;
+    data:posIndicesPart "12567:12574"^^xsd:string,
+        "16902:16909"^^xsd:string,
+        "1900:1907"^^xsd:string,
+        "2641:2650"^^xsd:string,
+        "2657:2664"^^xsd:string,
+        "2842:2851"^^xsd:string,
+        "2858:2865"^^xsd:string,
+        "3433:3440"^^xsd:string,
+        "4423:4430"^^xsd:string,
+        "4500:4507"^^xsd:string,
+        "4876:4883"^^xsd:string,
+        "5526:5533"^^xsd:string,
+        "8270:8277"^^xsd:string,
+        "9916:9923"^^xsd:string ;
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm"^^xsd:string,
+        "Christian X"^^xsd:string ;
+    :hasBrother data:Christian_X_of_Denmark ;
+    :hasChild data:Frederik_IX_of_Denmark ;
+    :hasRelation data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark,
+        data:Frederik_X_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Nikolaos_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:male ;
+    :hasSon data:Frederik_IX_of_Denmark ;
+    :isAncestorOf data:Frederik_IX_of_Denmark,
+        data:Frederik_X_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Nikolaos_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isBloodrelationOf data:Christian_X_of_Denmark ;
+    :isBrotherOf data:Christian_X_of_Denmark ;
+    :isFatherOf data:Frederik_IX_of_Denmark ;
+    :isParentOf data:Frederik_IX_of_Denmark ;
+    :isSiblingOf data:Christian_X_of_Denmark ;
+    :isUncleOf data:Frederik_IX_of_Denmark .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Constantine II of Greece"^^xsd:string ;
+    data:posIndicesFull "14682:14698"^^xsd:string,
+        "14687:14701"^^xsd:string,
+        "2762:2776"^^xsd:string,
+        "286:302"^^xsd:string,
+        "291:305"^^xsd:string ;
+    data:posIndicesPart "10076:10087"^^xsd:string,
+        "10128:10134"^^xsd:string,
+        "10173:10179"^^xsd:string,
+        "10517:10528"^^xsd:string,
+        "10557:10563"^^xsd:string,
+        "10678:10684"^^xsd:string,
+        "10809:10815"^^xsd:string,
+        "10826:10837"^^xsd:string,
+        "10954:10960"^^xsd:string,
+        "10990:11001"^^xsd:string,
+        "11136:11147"^^xsd:string,
+        "11266:11272"^^xsd:string,
+        "11340:11346"^^xsd:string,
+        "1136:1142"^^xsd:string,
+        "1161:1172"^^xsd:string,
+        "1187:1193"^^xsd:string,
+        "11951:11962"^^xsd:string,
+        "12076:12087"^^xsd:string,
+        "12227:12238"^^xsd:string,
+        "1231:1242"^^xsd:string,
+        "12343:12354"^^xsd:string,
+        "12518:12529"^^xsd:string,
+        "12586:12592"^^xsd:string,
+        "12612:12618"^^xsd:string,
+        "12650:12661"^^xsd:string,
+        "12794:12800"^^xsd:string,
+        "12916:12922"^^xsd:string,
+        "12939:12950"^^xsd:string,
+        "13106:13112"^^xsd:string,
+        "13280:13286"^^xsd:string,
+        "13338:13349"^^xsd:string,
+        "13670:13681"^^xsd:string,
+        "13903:13909"^^xsd:string,
+        "14159:14165"^^xsd:string,
+        "14287:14298"^^xsd:string,
+        "14713:14724"^^xsd:string,
+        "15048:15059"^^xsd:string,
+        "15231:15237"^^xsd:string,
+        "15334:15345"^^xsd:string,
+        "15388:15399"^^xsd:string,
+        "15582:15593"^^xsd:string,
+        "15652:15663"^^xsd:string,
+        "15686:15692"^^xsd:string,
+        "15773:15779"^^xsd:string,
+        "16004:16015"^^xsd:string,
+        "16039:16050"^^xsd:string,
+        "16442:16448"^^xsd:string,
+        "16724:16730"^^xsd:string,
+        "16861:16867"^^xsd:string,
+        "16972:16983"^^xsd:string,
+        "2417:2423"^^xsd:string,
+        "4306:4317"^^xsd:string,
+        "4335:4341"^^xsd:string,
+        "4432:4443"^^xsd:string,
+        "4522:4533"^^xsd:string,
+        "4818:4829"^^xsd:string,
+        "4865:4871"^^xsd:string,
+        "4953:4964"^^xsd:string,
+        "5072:5078"^^xsd:string,
+        "510:521"^^xsd:string,
+        "5234:5245"^^xsd:string,
+        "5457:5468"^^xsd:string,
+        "550:556"^^xsd:string,
+        "5584:5595"^^xsd:string,
+        "5732:5743"^^xsd:string,
+        "6069:6075"^^xsd:string,
+        "6119:6125"^^xsd:string,
+        "6357:6363"^^xsd:string,
+        "6674:6680"^^xsd:string,
+        "7063:7069"^^xsd:string,
+        "7179:7185"^^xsd:string,
+        "7320:7326"^^xsd:string,
+        "735:741"^^xsd:string,
+        "7367:7378"^^xsd:string,
+        "7699:7705"^^xsd:string,
+        "7773:7784"^^xsd:string,
+        "8074:8080"^^xsd:string,
+        "8129:8140"^^xsd:string,
+        "8398:8409"^^xsd:string,
+        "8536:8547"^^xsd:string,
+        "8731:8737"^^xsd:string,
+        "8770:8781"^^xsd:string,
+        "8819:8830"^^xsd:string,
+        "8921:8932"^^xsd:string,
+        "9021:9032"^^xsd:string,
+        "9256:9267"^^xsd:string,
+        "9587:9598"^^xsd:string,
+        "9747:9758"^^xsd:string ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece"^^xsd:string,
+        "Constantine Glucksburg"^^xsd:string,
+        "Constantine II"^^xsd:string,
+        "Constantino de Grecia"^^xsd:string,
+        "King Constantine"^^xsd:string,
+        "Konstantinos 2"^^xsd:string,
+        "Konstantinos II"^^xsd:string,
+        "Konstantinos II of Greece"^^xsd:string,
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes"^^xsd:string,
+        "Konstantínos 2"^^xsd:string,
+        "Konstantínos II"^^xsd:string ;
+    :hasAncestor data:Frederica_of_Hanover ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasChild data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasParent data:Frederica_of_Hanover ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Prince_Nikolaos_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isChildOf data:Frederica_of_Hanover ;
+    :isFatherOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isSonOf data:Frederica_of_Hanover ;
+    :isUncleOf data:Prince_Nikolaos_of_Greece_and_Denmark .
+
+data:Frederik_X_of_Denmark a :Man,
+        :Person ;
+    rdfs:label "Frederik X of Denmark"^^xsd:string ;
+    data:posIndicesFull "2912:2922"^^xsd:string,
+        "2912:2933"^^xsd:string ;
+    data:posIndicesPart "12567:12574"^^xsd:string,
+        "16902:16909"^^xsd:string,
+        "3433:3440"^^xsd:string,
+        "4423:4430"^^xsd:string,
+        "4500:4507"^^xsd:string,
+        "4876:4883"^^xsd:string,
+        "5526:5533"^^xsd:string,
+        "8270:8277"^^xsd:string,
+        "9916:9923"^^xsd:string ;
+    data:wdtLink wdt:Q1004037 ;
+    :alsoKnownAs "Frederik André Henrik Christian"^^xsd:string,
+        "Frederik André Henrik Christian of Denmark"^^xsd:string,
+        "Frederik André Henrik Christian, Crown Prince of Denmark"^^xsd:string,
+        "Frederik Henriksen"^^xsd:string,
+        "Frederik X"^^xsd:string,
+        "Frederik of Denmark"^^xsd:string,
+        "Frederik of Denmark, Count of Monpezat"^^xsd:string ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark ;
+    :hasBrother data:Frederik_X_of_Denmark ;
+    :hasMother data:Margrethe_II_of_Denmark ;
+    :hasParent data:Margrethe_II_of_Denmark ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark,
+        data:Frederik_X_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Frederik_X_of_Denmark ;
+    :isBrotherOf data:Frederik_X_of_Denmark ;
+    :isChildOf data:Margrethe_II_of_Denmark ;
+    :isSiblingOf data:Frederik_X_of_Denmark ;
+    :isSonOf data:Margrethe_II_of_Denmark .
+
+data:Ingrid_of_Sweden a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Ingrid of Sweden"^^xsd:string ;
+    data:posIndicesFull "471:487"^^xsd:string ;
+    data:posIndicesPart "1549:1555"^^xsd:string,
+        "1696:1702"^^xsd:string,
+        "1749:1755"^^xsd:string,
+        "2212:2218"^^xsd:string,
+        "2974:2980"^^xsd:string ;
+    data:wdtLink wdt:Q163010 ;
+    :alsoKnownAs "Ingrid Victoria Sofia Louise Margareta"^^xsd:string,
+        "Ingrid of Sweden"^^xsd:string,
+        "Ingrid, Queen of Denmark"^^xsd:string,
+        "Princess Ingrid of Sweden"^^xsd:string,
+        "Queen Ingrid"^^xsd:string ;
+    :hasChild data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasDaughter data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasRelation data:Frederik_X_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Nikolaos_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:female ;
+    :hasSister data:Ingrid_of_Sweden ;
+    :isAncestorOf data:Frederik_X_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Nikolaos_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isAuntOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isBloodrelationOf data:Ingrid_of_Sweden ;
+    :isMotherOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isParentOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isSiblingOf data:Ingrid_of_Sweden ;
+    :isSisterOf data:Ingrid_of_Sweden .
+
+data:Prince_Nikolaos_of_Greece_and_Denmark a :Man,
+        :Person ;
+    rdfs:label "Prince Nikolaos of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "9533:9570"^^xsd:string ;
+    data:posIndicesPart "10128:10134"^^xsd:string,
+        "10173:10179"^^xsd:string,
+        "10292:10298"^^xsd:string,
+        "10557:10563"^^xsd:string,
+        "10678:10684"^^xsd:string,
+        "10809:10815"^^xsd:string,
+        "10954:10960"^^xsd:string,
+        "11266:11272"^^xsd:string,
+        "11340:11346"^^xsd:string,
+        "12295:12301"^^xsd:string,
+        "12426:12432"^^xsd:string,
+        "12567:12574"^^xsd:string,
+        "12586:12592"^^xsd:string,
+        "12612:12618"^^xsd:string,
+        "12794:12800"^^xsd:string,
+        "12916:12922"^^xsd:string,
+        "13106:13112"^^xsd:string,
+        "13280:13286"^^xsd:string,
+        "13903:13909"^^xsd:string,
+        "14159:14165"^^xsd:string,
+        "15231:15237"^^xsd:string,
+        "15686:15692"^^xsd:string,
+        "15773:15779"^^xsd:string,
+        "16442:16448"^^xsd:string,
+        "16724:16730"^^xsd:string,
+        "16861:16867"^^xsd:string,
+        "16902:16909"^^xsd:string,
+        "9916:9923"^^xsd:string ;
+    data:wdtLink wdt:Q583639 ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasBrother data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Queen_Anne-Marie_of_Greece ;
+    :hasParent data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Prince_Nikolaos_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isChildOf data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isSiblingOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isSonOf data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Margrethe II of Denmark"^^xsd:string ;
+    data:posIndicesFull "11083:11095"^^xsd:string,
+        "14461:14473"^^xsd:string,
+        "8225:8237"^^xsd:string,
+        "8225:8248"^^xsd:string,
+        "84:96"^^xsd:string ;
+    data:posIndicesPart "12567:12574"^^xsd:string,
+        "1559:1566"^^xsd:string,
+        "16902:16909"^^xsd:string,
+        "1874:1883"^^xsd:string,
+        "1900:1907"^^xsd:string,
+        "2366:2373"^^xsd:string,
+        "2428:2435"^^xsd:string,
+        "2657:2664"^^xsd:string,
+        "2858:2865"^^xsd:string,
+        "3433:3440"^^xsd:string,
+        "3904:3913"^^xsd:string,
+        "4423:4430"^^xsd:string,
+        "4500:4507"^^xsd:string,
+        "4876:4883"^^xsd:string,
+        "5526:5533"^^xsd:string,
+        "8383:8392"^^xsd:string,
+        "9916:9923"^^xsd:string ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer"^^xsd:string,
+        "Margrethe II"^^xsd:string ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasChild data:Frederik_X_of_Denmark ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark,
+        data:Frederik_X_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSon data:Frederik_X_of_Denmark ;
+    :isAncestorOf data:Frederik_X_of_Denmark ;
+    :isAuntOf data:Frederik_X_of_Denmark,
+        data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isChildOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isMotherOf data:Frederik_X_of_Denmark ;
+    :isParentOf data:Frederik_X_of_Denmark ;
+    :isSiblingOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isSisterOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederik IX of Denmark"^^xsd:string ;
+    data:posIndicesFull "10583:10594"^^xsd:string,
+        "3329:3340"^^xsd:string,
+        "3583:3594"^^xsd:string,
+        "444:455"^^xsd:string,
+        "444:466"^^xsd:string,
+        "4690:4701"^^xsd:string ;
+    data:posIndicesPart "12567:12574"^^xsd:string,
+        "1559:1566"^^xsd:string,
+        "16902:16909"^^xsd:string,
+        "1900:1907"^^xsd:string,
+        "2366:2373"^^xsd:string,
+        "2428:2435"^^xsd:string,
+        "2657:2664"^^xsd:string,
+        "2858:2865"^^xsd:string,
+        "3433:3440"^^xsd:string,
+        "4423:4430"^^xsd:string,
+        "4500:4507"^^xsd:string,
+        "4876:4883"^^xsd:string,
+        "5526:5533"^^xsd:string,
+        "8270:8277"^^xsd:string,
+        "9916:9923"^^xsd:string ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg"^^xsd:string,
+        "Frederick IX"^^xsd:string,
+        "Frederik IX"^^xsd:string,
+        "King Frederick IX of Denmark"^^xsd:string,
+        "King Frederik IX of Denmark"^^xsd:string ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :hasBrother data:Frederik_IX_of_Denmark ;
+    :hasChild data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasDaughter data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasFather data:Christian_X_of_Denmark ;
+    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasParent data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark,
+        data:Frederik_X_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Nikolaos_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:male ;
+    :isAncestorOf data:Frederik_X_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Nikolaos_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isBloodrelationOf data:Frederik_IX_of_Denmark ;
+    :isBrotherOf data:Frederik_IX_of_Denmark ;
+    :isChildOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :isFatherOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isParentOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isSiblingOf data:Frederik_IX_of_Denmark ;
+    :isSonOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :isUncleOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece .
+
+data:Queen_Anne-Marie_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Anne-Marie of Greece"^^xsd:string ;
+    data:posIndicesFull "170:194"^^xsd:string ;
+    data:posIndicesPart "10061:10065"^^xsd:string,
+        "10066:10071"^^xsd:string,
+        "10128:10134"^^xsd:string,
+        "10173:10179"^^xsd:string,
+        "1035:1039"^^xsd:string,
+        "1040:1045"^^xsd:string,
+        "10502:10506"^^xsd:string,
+        "10507:10512"^^xsd:string,
+        "10557:10563"^^xsd:string,
+        "1058:1062"^^xsd:string,
+        "10596:10600"^^xsd:string,
+        "10601:10606"^^xsd:string,
+        "1063:1068"^^xsd:string,
+        "10678:10684"^^xsd:string,
+        "10809:10815"^^xsd:string,
+        "10954:10960"^^xsd:string,
+        "10975:10979"^^xsd:string,
+        "10980:10985"^^xsd:string,
+        "11124:11128"^^xsd:string,
+        "11129:11134"^^xsd:string,
+        "11192:11196"^^xsd:string,
+        "11197:11202"^^xsd:string,
+        "11266:11272"^^xsd:string,
+        "11340:11346"^^xsd:string,
+        "1136:1142"^^xsd:string,
+        "11405:11410"^^xsd:string,
+        "11657:11661"^^xsd:string,
+        "11662:11667"^^xsd:string,
+        "1187:1193"^^xsd:string,
+        "11923:11927"^^xsd:string,
+        "11928:11933"^^xsd:string,
+        "12061:12065"^^xsd:string,
+        "12066:12071"^^xsd:string,
+        "12212:12216"^^xsd:string,
+        "12217:12222"^^xsd:string,
+        "12328:12332"^^xsd:string,
+        "12333:12338"^^xsd:string,
+        "12493:12497"^^xsd:string,
+        "12498:12503"^^xsd:string,
+        "12586:12592"^^xsd:string,
+        "12612:12618"^^xsd:string,
+        "12635:12639"^^xsd:string,
+        "12640:12645"^^xsd:string,
+        "12794:12800"^^xsd:string,
+        "12916:12922"^^xsd:string,
+        "12924:12928"^^xsd:string,
+        "12929:12934"^^xsd:string,
+        "1297:1301"^^xsd:string,
+        "1302:1307"^^xsd:string,
+        "13106:13112"^^xsd:string,
+        "13280:13286"^^xsd:string,
+        "13323:13327"^^xsd:string,
+        "13328:13333"^^xsd:string,
+        "13655:13659"^^xsd:string,
+        "13660:13665"^^xsd:string,
+        "13903:13909"^^xsd:string,
+        "14159:14165"^^xsd:string,
+        "14272:14276"^^xsd:string,
+        "14277:14282"^^xsd:string,
+        "14412:14416"^^xsd:string,
+        "14417:14422"^^xsd:string,
+        "14656:14661"^^xsd:string,
+        "14662:14666"^^xsd:string,
+        "14667:14672"^^xsd:string,
+        "14947:14951"^^xsd:string,
+        "14952:14957"^^xsd:string,
+        "15021:15025"^^xsd:string,
+        "15026:15031"^^xsd:string,
+        "15231:15237"^^xsd:string,
+        "15401:15405"^^xsd:string,
+        "15406:15411"^^xsd:string,
+        "15567:15571"^^xsd:string,
+        "15572:15577"^^xsd:string,
+        "15637:15641"^^xsd:string,
+        "15642:15647"^^xsd:string,
+        "15686:15692"^^xsd:string,
+        "15773:15779"^^xsd:string,
+        "15798:15802"^^xsd:string,
+        "15803:15808"^^xsd:string,
+        "15948:15952"^^xsd:string,
+        "15953:15958"^^xsd:string,
+        "16138:16142"^^xsd:string,
+        "16143:16148"^^xsd:string,
+        "16170:16174"^^xsd:string,
+        "16175:16180"^^xsd:string,
+        "16310:16314"^^xsd:string,
+        "16315:16320"^^xsd:string,
+        "16442:16448"^^xsd:string,
+        "16452:16456"^^xsd:string,
+        "16457:16462"^^xsd:string,
+        "16611:16616"^^xsd:string,
+        "16724:16730"^^xsd:string,
+        "16800:16805"^^xsd:string,
+        "16806:16810"^^xsd:string,
+        "16811:16816"^^xsd:string,
+        "16861:16867"^^xsd:string,
+        "16988:16992"^^xsd:string,
+        "16993:16998"^^xsd:string,
+        "1831:1835"^^xsd:string,
+        "1836:1841"^^xsd:string,
+        "1891:1896"^^xsd:string,
+        "1986:1990"^^xsd:string,
+        "1991:1996"^^xsd:string,
+        "2417:2423"^^xsd:string,
+        "2491:2496"^^xsd:string,
+        "2572:2576"^^xsd:string,
+        "2577:2582"^^xsd:string,
+        "2622:2627"^^xsd:string,
+        "2823:2828"^^xsd:string,
+        "2877:2881"^^xsd:string,
+        "2882:2887"^^xsd:string,
+        "3041:3045"^^xsd:string,
+        "3046:3051"^^xsd:string,
+        "3230:3234"^^xsd:string,
+        "3235:3240"^^xsd:string,
+        "3445:3449"^^xsd:string,
+        "3450:3455"^^xsd:string,
+        "3968:3972"^^xsd:string,
+        "3973:3978"^^xsd:string,
+        "4030:4034"^^xsd:string,
+        "4035:4040"^^xsd:string,
+        "405:409"^^xsd:string,
+        "410:415"^^xsd:string,
+        "4158:4162"^^xsd:string,
+        "4163:4168"^^xsd:string,
+        "4248:4252"^^xsd:string,
+        "4253:4258"^^xsd:string,
+        "4335:4341"^^xsd:string,
+        "4386:4391"^^xsd:string,
+        "4581:4585"^^xsd:string,
+        "4586:4591"^^xsd:string,
+        "4865:4871"^^xsd:string,
+        "4918:4922"^^xsd:string,
+        "4923:4928"^^xsd:string,
+        "5031:5035"^^xsd:string,
+        "5036:5041"^^xsd:string,
+        "5072:5078"^^xsd:string,
+        "533:538"^^xsd:string,
+        "5473:5477"^^xsd:string,
+        "5478:5483"^^xsd:string,
+        "550:556"^^xsd:string,
+        "561:566"^^xsd:string,
+        "568:572"^^xsd:string,
+        "5717:5721"^^xsd:string,
+        "5722:5727"^^xsd:string,
+        "573:578"^^xsd:string,
+        "5795:5799"^^xsd:string,
+        "5800:5805"^^xsd:string,
+        "5882:5886"^^xsd:string,
+        "5887:5892"^^xsd:string,
+        "6069:6075"^^xsd:string,
+        "6119:6125"^^xsd:string,
+        "6226:6230"^^xsd:string,
+        "6231:6236"^^xsd:string,
+        "6322:6327"^^xsd:string,
+        "6348:6353"^^xsd:string,
+        "6357:6363"^^xsd:string,
+        "6365:6369"^^xsd:string,
+        "6370:6375"^^xsd:string,
+        "6478:6482"^^xsd:string,
+        "6483:6488"^^xsd:string,
+        "6596:6600"^^xsd:string,
+        "6601:6606"^^xsd:string,
+        "6674:6680"^^xsd:string,
+        "6821:6825"^^xsd:string,
+        "6826:6831"^^xsd:string,
+        "6924:6929"^^xsd:string,
+        "6930:6934"^^xsd:string,
+        "6935:6940"^^xsd:string,
+        "7063:7069"^^xsd:string,
+        "716:721"^^xsd:string,
+        "7179:7185"^^xsd:string,
+        "7320:7326"^^xsd:string,
+        "735:741"^^xsd:string,
+        "752:756"^^xsd:string,
+        "757:762"^^xsd:string,
+        "7699:7705"^^xsd:string,
+        "7789:7793"^^xsd:string,
+        "7794:7799"^^xsd:string,
+        "7978:7982"^^xsd:string,
+        "7983:7988"^^xsd:string,
+        "8074:8080"^^xsd:string,
+        "8114:8118"^^xsd:string,
+        "8119:8124"^^xsd:string,
+        "8261:8266"^^xsd:string,
+        "8357:8361"^^xsd:string,
+        "8362:8367"^^xsd:string,
+        "843:847"^^xsd:string,
+        "848:853"^^xsd:string,
+        "8731:8737"^^xsd:string,
+        "8755:8759"^^xsd:string,
+        "8760:8765"^^xsd:string,
+        "8804:8808"^^xsd:string,
+        "8809:8814"^^xsd:string,
+        "8906:8910"^^xsd:string,
+        "8911:8916"^^xsd:string,
+        "9006:9010"^^xsd:string,
+        "9011:9016"^^xsd:string,
+        "9222:9226"^^xsd:string,
+        "9227:9232"^^xsd:string,
+        "9406:9410"^^xsd:string,
+        "9411:9416"^^xsd:string,
+        "9455:9459"^^xsd:string,
+        "9460:9465"^^xsd:string,
+        "9572:9576"^^xsd:string,
+        "9577:9582"^^xsd:string,
+        "9732:9736"^^xsd:string,
+        "9737:9742"^^xsd:string,
+        "9845:9849"^^xsd:string,
+        "9850:9855"^^xsd:string ;
+    data:wdtLink wdt:Q564889 ;
+    :alsoKnownAs "Anne Marie Dagmar Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark"^^xsd:string,
+        "Anne-Marie Dagmar Ingrid"^^xsd:string,
+        "Anne-Marie of the Hellenes (née Princess Anne-Marie of Denmark)"^^xsd:string,
+        "Princess Anne-Marie of Denmark"^^xsd:string ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasChild data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Nikolaos_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSon data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isAuntOf data:Frederik_X_of_Denmark,
+        data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isChildOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isMotherOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Nikolaos_of_Greece_and_Denmark ;
+    :isSiblingOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isSisterOf data:Margrethe_II_of_Denmark,
+        data:Queen_Anne-Marie_of_Greece .
+

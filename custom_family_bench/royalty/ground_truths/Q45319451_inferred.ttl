@@ -1,0 +1,100 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Alexandra_Blahova a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Alexandra Blahova"^^xsd:string ;
+    data:posIndicesFull "348:365"^^xsd:string ;
+    data:posIndicesPart "638:647"^^xsd:string ;
+    data:wdtLink wdt:Q75383387 ;
+    :hasChild data:Tatiana_von_Preussen ;
+    :hasDaughter data:Tatiana_von_Preussen ;
+    :hasRelation data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia,
+        data:Tatiana_von_Preussen ;
+    :hasSex data:female ;
+    :hasSister data:Alexandra_Blahova ;
+    :isAncestorOf data:Tatiana_von_Preussen ;
+    :isAuntOf data:Tatiana_von_Preussen ;
+    :isBloodrelationOf data:Alexandra_Blahova ;
+    :isMotherOf data:Tatiana_von_Preussen ;
+    :isParentOf data:Tatiana_von_Preussen ;
+    :isSiblingOf data:Alexandra_Blahova ;
+    :isSisterOf data:Alexandra_Blahova .
+
+data:Prince_Andreas_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Andreas of Prussia"^^xsd:string ;
+    data:posIndicesFull "318:343"^^xsd:string ;
+    data:wdtLink wdt:Q75381594 ;
+    :alsoKnownAs "Andreas Prinz von Preußen"^^xsd:string,
+        "Prince William Andreas of Prussia"^^xsd:string,
+        "Prince William Andrew of Prussia"^^xsd:string,
+        "William Andrew Prinz von Preußen"^^xsd:string ;
+    :hasBrother data:Prince_Andreas_of_Prussia ;
+    :hasChild data:Tatiana_von_Preussen ;
+    :hasDaughter data:Tatiana_von_Preussen ;
+    :hasRelation data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia,
+        data:Tatiana_von_Preussen ;
+    :hasSex data:male ;
+    :isAncestorOf data:Tatiana_von_Preussen ;
+    :isBloodrelationOf data:Prince_Andreas_of_Prussia ;
+    :isBrotherOf data:Prince_Andreas_of_Prussia ;
+    :isFatherOf data:Tatiana_von_Preussen ;
+    :isParentOf data:Tatiana_von_Preussen ;
+    :isSiblingOf data:Prince_Andreas_of_Prussia ;
+    :isUncleOf data:Tatiana_von_Preussen .
+
+data:Tatiana_von_Preussen a :Person,
+        :Woman ;
+    rdfs:label "Tatiana von Preussen"^^xsd:string ;
+    data:posIndicesFull "0:20"^^xsd:string,
+        "180:200"^^xsd:string,
+        "278:298"^^xsd:string ;
+    data:posIndicesPart "583:591"^^xsd:string,
+        "666:674"^^xsd:string,
+        "710:718"^^xsd:string ;
+    data:wdtLink wdt:Q45319451 ;
+    :alsoKnownAs "Tatiana Brigid Honor Womack"^^xsd:string,
+        "Tatiana Brigid Honor von Preussen"^^xsd:string,
+        "Tatiana Brigid Honor von Preußen"^^xsd:string,
+        "Tatiana Womack"^^xsd:string,
+        "Tatiana von Preußen"^^xsd:string ;
+    :hasAncestor data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia ;
+    :hasFather data:Prince_Andreas_of_Prussia ;
+    :hasMother data:Alexandra_Blahova ;
+    :hasParent data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia ;
+    :hasRelation data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia,
+        data:Tatiana_von_Preussen ;
+    :hasSex data:female ;
+    :hasSister data:Tatiana_von_Preussen ;
+    :isBloodrelationOf data:Tatiana_von_Preussen ;
+    :isChildOf data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia ;
+    :isDaughterOf data:Alexandra_Blahova,
+        data:Prince_Andreas_of_Prussia ;
+    :isSiblingOf data:Tatiana_von_Preussen ;
+    :isSisterOf data:Tatiana_von_Preussen .
+

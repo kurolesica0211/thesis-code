@@ -1,0 +1,135 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Adalbert_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Adalbert_of_Prussia,
+        data:Prince_Frederick_of_Saxe-Meiningen,
+        data:Princess_Adelheid_of_Saxe-Meiningen,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasSon data:Prince_Adalbert_of_Prussia ;
+    :isAncestorOf data:Prince_Adalbert_of_Prussia ;
+    :isAuntOf data:Prince_Adalbert_of_Prussia ;
+    :isBloodrelationOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isMotherOf data:Prince_Adalbert_of_Prussia ;
+    :isParentOf data:Prince_Adalbert_of_Prussia ;
+    :isSiblingOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isSisterOf data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :hasDaughter data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Adalbert_of_Prussia,
+        data:Prince_Frederick_of_Saxe-Meiningen,
+        data:Princess_Adelheid_of_Saxe-Meiningen,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :isAuntOf data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isMotherOf data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :isParentOf data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :isSiblingOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isSisterOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+
+data:Prince_Frederick_of_Saxe-Meiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Frederick_of_Saxe-Meiningen ;
+    :hasChild data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :hasDaughter data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Adalbert_of_Prussia,
+        data:Prince_Frederick_of_Saxe-Meiningen,
+        data:Princess_Adelheid_of_Saxe-Meiningen,
+        data:Wilhelm_II_German_Emperor ;
+    :isAncestorOf data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Prince_Frederick_of_Saxe-Meiningen ;
+    :isBrotherOf data:Prince_Frederick_of_Saxe-Meiningen ;
+    :isFatherOf data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :isParentOf data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :isSiblingOf data:Prince_Frederick_of_Saxe-Meiningen ;
+    :isUncleOf data:Princess_Adelheid_of_Saxe-Meiningen .
+
+data:Wilhelm_II_German_Emperor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II_German_Emperor ;
+    :hasChild data:Prince_Adalbert_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Adalbert_of_Prussia,
+        data:Prince_Frederick_of_Saxe-Meiningen,
+        data:Princess_Adelheid_of_Saxe-Meiningen,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSon data:Prince_Adalbert_of_Prussia ;
+    :isAncestorOf data:Prince_Adalbert_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_II_German_Emperor ;
+    :isBrotherOf data:Wilhelm_II_German_Emperor ;
+    :isFatherOf data:Prince_Adalbert_of_Prussia ;
+    :isParentOf data:Prince_Adalbert_of_Prussia ;
+    :isSiblingOf data:Wilhelm_II_German_Emperor ;
+    :isUncleOf data:Prince_Adalbert_of_Prussia .
+
+data:Prince_Adalbert_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II_German_Emperor ;
+    :hasBirthYear 1884 ;
+    :hasBrother data:Prince_Adalbert_of_Prussia ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Wilhelm_II_German_Emperor ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II_German_Emperor ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Adalbert_of_Prussia,
+        data:Prince_Frederick_of_Saxe-Meiningen,
+        data:Princess_Adelheid_of_Saxe-Meiningen,
+        data:Wilhelm_II_German_Emperor ;
+    :isBloodrelationOf data:Prince_Adalbert_of_Prussia ;
+    :isBrotherOf data:Prince_Adalbert_of_Prussia ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II_German_Emperor ;
+    :isSiblingOf data:Prince_Adalbert_of_Prussia ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II_German_Emperor .
+
+data:Princess_Adelheid_of_Saxe-Meiningen a :Person,
+        :Woman ;
+    :hasAncestor data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Frederick_of_Saxe-Meiningen ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1971 ;
+    :hasFather data:Prince_Frederick_of_Saxe-Meiningen ;
+    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Frederick_of_Saxe-Meiningen ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Adalbert_of_Prussia,
+        data:Prince_Frederick_of_Saxe-Meiningen,
+        data:Princess_Adelheid_of_Saxe-Meiningen,
+        data:Wilhelm_II_German_Emperor ;
+    :hasSister data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :isChildOf data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Frederick_of_Saxe-Meiningen ;
+    :isDaughterOf data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Prince_Frederick_of_Saxe-Meiningen ;
+    :isSiblingOf data:Princess_Adelheid_of_Saxe-Meiningen ;
+    :isSisterOf data:Princess_Adelheid_of_Saxe-Meiningen .
+

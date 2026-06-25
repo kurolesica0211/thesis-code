@@ -2,43 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Wolfgang_of_Hesse a :Man,
-        :Person ;
-    :hasBirthYear 1896 ;
-    :hasBrother data:Philipp_of_Hesse ;
-    :hasDeathYear 1989 ;
-    :hasFather data:Frederick_Charles_of_Hesse ;
-    :hasMarriageYear 1924 ;
-    :hasMother data:Margaret_of_Prussia ;
-    :hasRelation data:Marie_Alexandra_of_Baden .
+data:Feodora_of_Saxe-Meiningen a :Person,
+        :Woman ;
+    :alsoKnownAs "Grand Duchess of Saxe-Weimar-Eisenach"^^xsd:string ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :hasMarriageYear 1910 ;
+    :hasMother data:Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach .
 
-data:Frederick_Charles_of_Hesse a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1868 ;
-    :hasDeathYear 1940 .
-
-data:Margaret_of_Prussia a :Ancestor,
+data:Adelaide_of_Lippe-Biesterfeld a :Ancestor,
         :Person,
         :Woman ;
-    :hasBirthYear 1872 ;
-    :hasDeathYear 1954 .
+    :hasFather data:Ernst_Count_of_Lippe-Biesterfeld .
 
-data:Marie_Alexandra_of_Baden a :Person,
+data:Caroline_Reuss_Elder_Line a :Person,
         :Woman ;
-    :hasBirthYear 1902 ;
-    :hasDeathYear 1944 ;
-    :hasFather data:Maximilian_of_Baden ;
-    :hasMother data:Marie_Louise_of_Hanover .
+    :hasDeathYear 1905 .
 
-data:Marie_Louise_of_Hanover a :Ancestor,
-        :Person,
+data:Ellen_Franz a :Person,
         :Woman .
 
-data:Maximilian_of_Baden a :Ancestor,
+data:Ernst_Count_of_Lippe-Biesterfeld a :Ancestor,
         :Man,
         :Person .
 
-data:Philipp_of_Hesse a :Man,
-        :Person .
+data:Friedrich_Johann_of_Saxe-Meiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+
+data:Georg_II_Duke_of_Saxe-Meiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasRelation data:Ellen_Franz .
+
+data:Wilhelm_Ernst_Grand_Duke_of_Saxe-Weimar-Eisenach a :Man,
+        :Person ;
+    :hasRelation data:Caroline_Reuss_Elder_Line .
 

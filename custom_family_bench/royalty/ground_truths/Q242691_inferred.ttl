@@ -1,0 +1,132 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Christian X of Denmark"^^xsd:string ;
+    data:posIndicesFull "335:346"^^xsd:string ;
+    data:posIndicesPart "1323:1330"^^xsd:string,
+        "1725:1732"^^xsd:string,
+        "524:531"^^xsd:string,
+        "697:706"^^xsd:string,
+        "844:853"^^xsd:string ;
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm"^^xsd:string,
+        "Christian X"^^xsd:string ;
+    :hasBrother data:Christian_X_of_Denmark ;
+    :hasChild data:Frederik_IX_of_Denmark ;
+    :hasRelation data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Frederik_IX_of_Denmark ;
+    :isAncestorOf data:Frederik_IX_of_Denmark ;
+    :isBloodrelationOf data:Christian_X_of_Denmark ;
+    :isBrotherOf data:Christian_X_of_Denmark ;
+    :isFatherOf data:Frederik_IX_of_Denmark ;
+    :isParentOf data:Frederik_IX_of_Denmark ;
+    :isSiblingOf data:Christian_X_of_Denmark ;
+    :isUncleOf data:Frederik_IX_of_Denmark .
+
+data:Princess_Caroline-Mathilde_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Caroline-Mathilde of Denmark"^^xsd:string ;
+    data:posIndicesFull "269:306"^^xsd:string,
+        "625:662"^^xsd:string ;
+    data:posIndicesPart "1311:1319"^^xsd:string,
+        "1323:1330"^^xsd:string,
+        "1725:1732"^^xsd:string,
+        "524:531"^^xsd:string,
+        "936:944"^^xsd:string ;
+    data:wdtLink wdt:Q264675 ;
+    :hasChild data:Princess_Elisabeth_of_Denmark ;
+    :hasDaughter data:Princess_Elisabeth_of_Denmark ;
+    :hasRelation data:Princess_Caroline-Mathilde_of_Denmark,
+        data:Princess_Elisabeth_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isAncestorOf data:Princess_Elisabeth_of_Denmark ;
+    :isAuntOf data:Princess_Elisabeth_of_Denmark ;
+    :isBloodrelationOf data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isMotherOf data:Princess_Elisabeth_of_Denmark ;
+    :isParentOf data:Princess_Elisabeth_of_Denmark ;
+    :isSiblingOf data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isSisterOf data:Princess_Caroline-Mathilde_of_Denmark .
+
+data:Frederik_IX_of_Denmark a :Man,
+        :Person ;
+    rdfs:label "Frederik IX of Denmark"^^xsd:string ;
+    data:posIndicesFull "1590:1601"^^xsd:string,
+        "357:368"^^xsd:string ;
+    data:posIndicesPart "1323:1330"^^xsd:string,
+        "1725:1732"^^xsd:string,
+        "524:531"^^xsd:string ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg"^^xsd:string,
+        "Frederick IX"^^xsd:string,
+        "Frederik IX"^^xsd:string,
+        "King Frederick IX of Denmark"^^xsd:string,
+        "King Frederik IX of Denmark"^^xsd:string ;
+    :hasAncestor data:Christian_X_of_Denmark ;
+    :hasBrother data:Frederik_IX_of_Denmark ;
+    :hasFather data:Christian_X_of_Denmark ;
+    :hasParent data:Christian_X_of_Denmark ;
+    :hasRelation data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Frederik_IX_of_Denmark ;
+    :isBrotherOf data:Frederik_IX_of_Denmark ;
+    :isChildOf data:Christian_X_of_Denmark ;
+    :isSiblingOf data:Frederik_IX_of_Denmark ;
+    :isSonOf data:Christian_X_of_Denmark .
+
+data:Princess_Elisabeth_of_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Elisabeth of Denmark"^^xsd:string ;
+    data:posIndicesFull "0:29"^^xsd:string ;
+    data:posIndicesPart "1168:1177"^^xsd:string,
+        "1311:1319"^^xsd:string,
+        "1323:1330"^^xsd:string,
+        "1620:1629"^^xsd:string,
+        "1725:1732"^^xsd:string,
+        "1836:1845"^^xsd:string,
+        "1948:1957"^^xsd:string,
+        "2025:2034"^^xsd:string,
+        "256:263"^^xsd:string,
+        "524:531"^^xsd:string,
+        "559:568"^^xsd:string,
+        "936:944"^^xsd:string,
+        "945:954"^^xsd:string,
+        "997:1006"^^xsd:string ;
+    data:wdtLink wdt:Q242691 ;
+    :alsoKnownAs "Elisabeth zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark"^^xsd:string ;
+    :hasAncestor data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasMother data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasParent data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasRelation data:Princess_Caroline-Mathilde_of_Denmark,
+        data:Princess_Elisabeth_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Elisabeth_of_Denmark ;
+    :isBloodrelationOf data:Princess_Elisabeth_of_Denmark ;
+    :isChildOf data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isDaughterOf data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isSiblingOf data:Princess_Elisabeth_of_Denmark ;
+    :isSisterOf data:Princess_Elisabeth_of_Denmark .
+

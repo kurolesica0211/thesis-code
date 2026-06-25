@@ -69,44 +69,32 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Knud, Hereditary Prince of Denmark (Knud Christian Frederik Michael; 27 July 1900 – 14 June 1976) was a member of the Danish royal family, the younger son and child of King Christian X and Queen Alexandrine.
-From 1947 to 1953, he was heir presumptive to his older brother, King Frederik IX, and would have succeeded him as king following his death in January 1972 had it not been for a change in the Danish Act of Succession that replaced him with his niece, Queen Margrethe II.
-Later, Knud's two sons, Ingolf and Christian, were stripped of their titles of prince and removed from the line of succession by the new law because they had married commoners without asking consent from their uncle.
+King Albert IIQueen Paola
+
+
+Prince Lorenz of Belgium, Archduke of Austria-Este (born 16 December 1955) is a member of the Belgian royal family as the husband of Princess Astrid of Belgium.
+He is the head of the House of Austria-Este, a cadet branch of the House of Habsburg-Lorraine; he has held this position since 1996.
+He is a grandson of Emperor Charles I of Austria, the last Emperor of Austria and King of Hungary.
 Early life
 
-Prince Knud was born on 27 July 1900 at his parents' country residence, the Sorgenfri Palace, located on the shores of the small river Mølleåen in Kongens Lyngby north of Copenhagen on the island of Zealand in Denmark, during the reign of his great-grandfather King Christian IX.
-His parents were Prince Christian of Denmark, son of the heir apparent Crown Prince Frederik of Denmark, and Alexandrine of Mecklenburg-Schwerin.
-Knud's only sibling, Prince Frederik, had been born one year before him.
-Christian IX died on 29 January 1906, and Knud's grandfather succeeded him as Frederik VIII.
-Six years later, on 14 May 1912, Frederik VIII died, and Knud's father ascended the throne as Christian X.
+Prince Lorenz was born at Clinique du Belvédère in Boulogne-Billancourt, Hauts-de-Seine, France as the second child and eldest son of Robert, Archduke of Austria-Este, and his wife, Archduchess Margaret (née Princess Margherita of Savoy-Aosta).
+He is the grandson of Charles I of Austria, the last Emperor of Austria.
+Marriage and issue
+
+On 22 September 1984, at the Church of Our Lady of Victories at the Sablon in Brussels, Prince Lorenz married Princess Astrid of Belgium, the only daughter of the then-Prince and Princess of Liège, later King Albert II and Queen Paola.
+The couple has five children:
 
 
-As was customary for princes at that time, Knud started a military education and entered the naval college.
-Engagement and marriage
-
-On 27 January 1933, at the age of 32, Prince Knud was engaged to his first cousin, the 20-year-old Princess Caroline-Mathilde of Denmark.
-Princess Caroline-Mathilde was the second daughter of Prince Harald of Denmark and Princess Helena of Schleswig-Holstein-Sonderburg-Glücksburg, and their fathers were brothers.
-The wedding was celebrated on 8 September 1933 at the chapel of Fredensborg Palace in North Zealand, Denmark.
-Here they created a home for their three children: Princess Elisabeth (born in 1935), Prince Ingolf (born in 1940) and Prince Christian (born in 1944).
-In 1944, Prince Knud inherited Egelund House near Fredensborg in North Zealand from his uncle, Prince Gustav of Denmark, which the couple then used as their summer residence until the hereditary prince sold it to the Danish Employers' Association in 1954.
-In 1952, Prince Knud also inherited his parents' holiday residence Klitgaarden in Skagen in North Jutland from his mother, Queen Alexandrine, which the couple then used as their holiday home, and which remained in the family's possession until 1997.
-Heir presumptive
-
-On 20 April 1947, Christian X died, and Knud's brother Frederick succeeded to the throne as Frederik IX.
-Since Frederik IX had fathered no sons and the Danish Act of Succession at the time followed the principle of agnatic primogeniture, Prince Knud became heir presumptive and first in line to succeed his brother as king.
-Frederik IX had, however, fathered three daughters.
-The new law made Frederik IX's thirteen-year-old daughter Margrethe the new heir presumptive, placing her and her two sisters before Knud and his family in the line of succession.
-Later life and legacy
-
-King Frederik IX died in 1972 and was succeeded by his daughter Queen Margrethe II.
-The Princess Caroline-Mathilde Alps in Greenland were named by the 1938–39 Mørkefjord Expedition in his wife's honour for Prince Knud had been the patron of the expedition.
-Prince Knud and Princess Caroline Mathilde had sat in the former royal loge at the far left of the hall (i.e., stage right), but one especially memorable scene had not been fully visible from where they had sat.
+Prince Lorenz is the godfather to Prince Carl-Johan of Nassau, youngest child of Prince Jean of Luxembourg, and Count Costantino Secco di Aragona, the oldest son of his cousin, Archduchess Catharina-Maria of Austria.
+The Belgian monarchy refers to him as the Archduke of Austria-Este.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +110,9 @@ Prince Knud and Princess Caroline Mathilde had sat in the former royal loge at t
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +127,23 @@ Prince Knud and Princess Caroline Mathilde had sat in the former royal loge at t
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +161,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +243,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +266,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +286,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +296,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +336,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,192 +435,126 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (883155c3-0422-4316-8453-1fba3c33d25d)
- Call ID: 883155c3-0422-4316-8453-1fba3c33d25d
+  AssignClass (06fc624e-2051-482b-addf-068859e3b05e)
+ Call ID: 06fc624e-2051-482b-addf-068859e3b05e
   Args:
+    source: :Prince_Lorenz_of_Belgium
     type: :Man
-    source: Knud
-  AssignClass (be0ff150-5c7d-4960-9047-5d03e26495e0)
- Call ID: be0ff150-5c7d-4960-9047-5d03e26495e0
+  AssignClass (73a1f93a-26d7-48f2-84bd-3fb029e506cf)
+ Call ID: 73a1f93a-26d7-48f2-84bd-3fb029e506cf
   Args:
-    source: Christian_X
-    type: :Man
-  AssignClass (7184cb5c-688c-4a58-a62e-d8b6d6e66290)
- Call ID: 7184cb5c-688c-4a58-a62e-d8b6d6e66290
+    source: :Prince_Lorenz_of_Belgium
+    type: :Person
+  AddLiteral (f551ffde-2c3b-42de-a152-4075f3f13ac2)
+ Call ID: f551ffde-2c3b-42de-a152-4075f3f13ac2
   Args:
-    type: :Woman
-    source: Alexandrine
-  AssignClass (48ded9ab-65c6-499a-a9ba-a8736ddaf726)
- Call ID: 48ded9ab-65c6-499a-a9ba-a8736ddaf726
-  Args:
-    source: Frederik_IX
-    type: :Man
-  AssignClass (9e201889-f416-4543-9011-9096b6807a96)
- Call ID: 9e201889-f416-4543-9011-9096b6807a96
-  Args:
-    type: :Woman
-    source: Margrethe_II
-  AssignClass (36cba210-55ad-48a1-84ab-b8a47fe5eb0a)
- Call ID: 36cba210-55ad-48a1-84ab-b8a47fe5eb0a
-  Args:
-    source: Ingolf
-    type: :Man
-  AssignClass (44bff7a1-5c29-4fad-bf6c-7ab850042620)
- Call ID: 44bff7a1-5c29-4fad-bf6c-7ab850042620
-  Args:
-    type: :Man
-    source: Christian_son_of_Knud
-  AssignClass (d880a785-9363-49e1-9887-92eee7d43ed9)
- Call ID: d880a785-9363-49e1-9887-92eee7d43ed9
-  Args:
-    source: Caroline-Mathilde
-    type: :Woman
-  AssignClass (7b8f5f69-4dee-402b-8d4c-fbeeb820332f)
- Call ID: 7b8f5f69-4dee-402b-8d4c-fbeeb820332f
-  Args:
-    source: Harald
-    type: :Man
-  AssignClass (5cc847d2-6f5f-4fc8-a8fe-5de7f41d1cbf)
- Call ID: 5cc847d2-6f5f-4fc8-a8fe-5de7f41d1cbf
-  Args:
-    type: :Woman
-    source: Helena
-  AssignClass (5bc5cbd5-2f7c-4f20-a274-ccbbe8db82da)
- Call ID: 5bc5cbd5-2f7c-4f20-a274-ccbbe8db82da
-  Args:
-    type: :Woman
-    source: Elisabeth
-  AssignClass (e8e3fb70-fd40-4862-98c9-e16ff5ecf206)
- Call ID: e8e3fb70-fd40-4862-98c9-e16ff5ecf206
-  Args:
-    source: Gustav
-    type: :Man
-  AssignClass (c5dbe89d-0401-4ff2-820e-5e262af57e9f)
- Call ID: c5dbe89d-0401-4ff2-820e-5e262af57e9f
-  Args:
-    type: :Man
-    source: Christian_IX
-  AssignClass (076d4981-835b-4c82-b27e-12d4e9d79efb)
- Call ID: 076d4981-835b-4c82-b27e-12d4e9d79efb
-  Args:
-    type: :Man
-    source: Frederik_VIII
-  AssignClass (d740b373-11f5-47e1-a0ff-8ebc4dbaf3d8)
- Call ID: d740b373-11f5-47e1-a0ff-8ebc4dbaf3d8
-  Args:
-    source: Crown_Prince_Frederik
-    type: :Man
-  AddLiteral (8975b3a9-b71c-48cc-acfe-3ab340305267)
- Call ID: 8975b3a9-b71c-48cc-acfe-3ab340305267
-  Args:
-    literal_value: 1900
-    source: Knud
+    literal_value: 1955
+    literal_type: xsd:integer
     relation: :hasBirthYear
+    source: :Prince_Lorenz_of_Belgium
+  AssignClass (f70bce96-aefd-4ead-93e8-3700d84a9416)
+ Call ID: f70bce96-aefd-4ead-93e8-3700d84a9416
+  Args:
+    source: :Princess_Astrid_of_Belgium
+    type: :Woman
+  AssignClass (2918bbae-6608-48f8-8668-3ee2f4dcb255)
+ Call ID: 2918bbae-6608-48f8-8668-3ee2f4dcb255
+  Args:
+    source: :Princess_Astrid_of_Belgium
+    type: :Person
+  AddTriple (60ef8d1b-f4f9-40a8-8001-85fadf270a92)
+ Call ID: 60ef8d1b-f4f9-40a8-8001-85fadf270a92
+  Args:
+    relation: :hasRelation
+    source: :Prince_Lorenz_of_Belgium
+    target: :Princess_Astrid_of_Belgium
+  AddLiteral (c1dddff9-91b1-482c-8570-442f827cbb6f)
+ Call ID: c1dddff9-91b1-482c-8570-442f827cbb6f
+  Args:
     literal_type: xsd:integer
-  AddLiteral (afb89d52-94a5-4181-9446-e184c6a2767f)
- Call ID: afb89d52-94a5-4181-9446-e184c6a2767f
-  Args:
-    literal_value: 1976
-    source: Knud
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AddTriple (6af98ad4-e7ef-4927-a002-dadae430015b)
- Call ID: 6af98ad4-e7ef-4927-a002-dadae430015b
-  Args:
-    relation: :hasFather
-    target: Christian_X
-    source: Knud
-  AddTriple (50b81a36-ea8e-45f5-bc72-aec178752b23)
- Call ID: 50b81a36-ea8e-45f5-bc72-aec178752b23
-  Args:
-    source: Knud
-    target: Alexandrine
-    relation: :hasMother
-  AddTriple (6adba322-d413-4665-83aa-91c760fbd426)
- Call ID: 6adba322-d413-4665-83aa-91c760fbd426
-  Args:
-    source: Knud
-    relation: :hasBrother
-    target: Frederik_IX
-  AddTriple (d5818d98-d722-4044-8346-1ef447a6f9e4)
- Call ID: d5818d98-d722-4044-8346-1ef447a6f9e4
-  Args:
-    source: Knud
-    relation: :hasSon
-    target: Ingolf
-  AddTriple (663d7bd9-5674-4190-bb3c-bd7ff7b7f4bd)
- Call ID: 663d7bd9-5674-4190-bb3c-bd7ff7b7f4bd
-  Args:
-    source: Knud
-    target: Christian_son_of_Knud
-    relation: :hasSon
-  AddTriple (b72aa7a5-6547-421f-b3ff-c50d2e07740b)
- Call ID: b72aa7a5-6547-421f-b3ff-c50d2e07740b
-  Args:
-    relation: :hasDaughter
-    target: Elisabeth
-    source: Knud
-  AddTriple (8aa5cc78-f38e-4a67-af3b-1cb88026c9fe)
- Call ID: 8aa5cc78-f38e-4a67-af3b-1cb88026c9fe
-  Args:
-    target: Harald
-    relation: :hasFather
-    source: Caroline-Mathilde
-  AddTriple (2a4afbc2-67b8-4b0e-a714-914e0e74e3e9)
- Call ID: 2a4afbc2-67b8-4b0e-a714-914e0e74e3e9
-  Args:
-    source: Caroline-Mathilde
-    target: Helena
-    relation: :hasMother
-  AddTriple (64500c48-1486-4e5e-bf46-33e46f94f060)
- Call ID: 64500c48-1486-4e5e-bf46-33e46f94f060
-  Args:
-    source: Christian_X
-    relation: :hasFather
-    target: Frederik_VIII
-  AddTriple (c5f87fbf-88f9-4f4e-8d1d-79a66b06afbe)
- Call ID: c5f87fbf-88f9-4f4e-8d1d-79a66b06afbe
-  Args:
-    target: Frederik_VIII
-    relation: :hasFather
-    source: Harald
-  AddTriple (2ecde492-9909-4286-bf5d-606d9d35e33f)
- Call ID: 2ecde492-9909-4286-bf5d-606d9d35e33f
-  Args:
-    relation: :hasFather
-    target: Christian_IX
-    source: Frederik_VIII
-  AddTriple (55108a8e-a5ca-4453-b121-2ab47ee68bed)
- Call ID: 55108a8e-a5ca-4453-b121-2ab47ee68bed
-  Args:
-    source: Crown_Prince_Frederik
-    relation: :hasFather
-    target: Christian_IX
-  AddTriple (ab5e1717-b354-4223-83cd-6a80aa6d77a4)
- Call ID: ab5e1717-b354-4223-83cd-6a80aa6d77a4
-  Args:
-    source: Christian_X
-    target: Crown_Prince_Frederik
-    relation: :hasFather
-  AddTriple (3dec64f1-c6c2-45a8-8442-1830563e825d)
- Call ID: 3dec64f1-c6c2-45a8-8442-1830563e825d
-  Args:
-    relation: :isMotherOf
-    target: Knud
-    source: Alexandrine
-  AddTriple (4b75b748-b248-4f3f-a83d-d54f9f9ee73d)
- Call ID: 4b75b748-b248-4f3f-a83d-d54f9f9ee73d
-  Args:
-    target: Frederik_IX
-    relation: :isMotherOf
-    source: Alexandrine
-  AddLiteral (e8a12584-1173-4bf2-a115-1a9a465e91b7)
- Call ID: e8a12584-1173-4bf2-a115-1a9a465e91b7
-  Args:
+    literal_value: 1984
+    source: :Prince_Lorenz_of_Belgium
     relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 1933
-    source: Knud
-  Finish (7ef5ebbb-8090-4eff-a5ad-9d8afabb7fcc)
- Call ID: 7ef5ebbb-8090-4eff-a5ad-9d8afabb7fcc
+  AssignClass (a0d6b99a-8cf7-4cc2-a052-d86d4d1542f2)
+ Call ID: a0d6b99a-8cf7-4cc2-a052-d86d4d1542f2
+  Args:
+    source: :King_Albert_II
+    type: :Man
+  AssignClass (8324a519-74bd-4a31-89d4-d3e5ac9767f7)
+ Call ID: 8324a519-74bd-4a31-89d4-d3e5ac9767f7
+  Args:
+    source: :King_Albert_II
+    type: :Person
+  AssignClass (0cb43234-e0ee-47c4-b236-c4300165fa79)
+ Call ID: 0cb43234-e0ee-47c4-b236-c4300165fa79
+  Args:
+    source: :Queen_Paola
+    type: :Woman
+  AssignClass (eb6b4d25-913c-401e-89e5-cc697f5c9978)
+ Call ID: eb6b4d25-913c-401e-89e5-cc697f5c9978
+  Args:
+    source: :Queen_Paola
+    type: :Person
+  AddTriple (92469a71-9dc3-4cc7-83c6-c4390e7335b1)
+ Call ID: 92469a71-9dc3-4cc7-83c6-c4390e7335b1
+  Args:
+    target: :Princess_Astrid_of_Belgium
+    relation: :isFatherOf
+    source: :King_Albert_II
+  AddTriple (5ce4eb37-cb0d-433b-ae1b-89609a4f8513)
+ Call ID: 5ce4eb37-cb0d-433b-ae1b-89609a4f8513
+  Args:
+    target: :Princess_Astrid_of_Belgium
+    source: :Queen_Paola
+    relation: :isMotherOf
+  AssignClass (ca0a2121-03e1-405e-8552-c643677d88d0)
+ Call ID: ca0a2121-03e1-405e-8552-c643677d88d0
+  Args:
+    source: :Robert_Archduke_of_Austria_Este
+    type: :Man
+  AssignClass (18bf0217-7fbc-4256-8f5d-90f38bd691bc)
+ Call ID: 18bf0217-7fbc-4256-8f5d-90f38bd691bc
+  Args:
+    source: :Robert_Archduke_of_Austria_Este
+    type: :Person
+  AssignClass (5071f6f6-6d57-465b-ab15-9cd7d97642e3)
+ Call ID: 5071f6f6-6d57-465b-ab15-9cd7d97642e3
+  Args:
+    source: :Archduchess_Margaret
+    type: :Woman
+  AssignClass (9b48e966-2293-4485-a45a-5c16ec9915ca)
+ Call ID: 9b48e966-2293-4485-a45a-5c16ec9915ca
+  Args:
+    source: :Archduchess_Margaret
+    type: :Person
+  AddTriple (e44273a4-9ab8-43fc-b017-91214ca5333c)
+ Call ID: e44273a4-9ab8-43fc-b017-91214ca5333c
+  Args:
+    relation: :isFatherOf
+    source: :Robert_Archduke_of_Austria_Este
+    target: :Prince_Lorenz_of_Belgium
+  AddTriple (58590fa2-5fe8-4324-b640-d56c2210acf5)
+ Call ID: 58590fa2-5fe8-4324-b640-d56c2210acf5
+  Args:
+    relation: :isMotherOf
+    source: :Archduchess_Margaret
+    target: :Prince_Lorenz_of_Belgium
+  AssignClass (d2d0fa0f-9a13-4b91-9df8-c1b0fea14266)
+ Call ID: d2d0fa0f-9a13-4b91-9df8-c1b0fea14266
+  Args:
+    source: :Emperor_Charles_I_of_Austria
+    type: :Man
+  AssignClass (44b8c5ce-c243-4744-8870-2ca764d9896f)
+ Call ID: 44b8c5ce-c243-4744-8870-2ca764d9896f
+  Args:
+    source: :Emperor_Charles_I_of_Austria
+    type: :Person
+  AddTriple (24a2099d-26c9-4e40-81ae-a028ce8301fd)
+ Call ID: 24a2099d-26c9-4e40-81ae-a028ce8301fd
+  Args:
+    relation: :hasAncestor
+    source: :Prince_Lorenz_of_Belgium
+    target: :Emperor_Charles_I_of_Austria
+  Finish (304b2802-0598-4114-bc34-2463d51a8c28)
+ Call ID: 304b2802-0598-4114-bc34-2463d51a8c28
   Args:

@@ -1,0 +1,214 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Iris_Mountbatten a :Person,
+        :Woman ;
+    rdfs:label "Iris Mountbatten"^^xsd:string ;
+    data:posIndicesFull "518:558"^^xsd:string ;
+    data:posIndicesPart "1260:1264"^^xsd:string,
+        "1445:1449"^^xsd:string,
+        "1545:1549"^^xsd:string,
+        "1607:1611"^^xsd:string,
+        "1668:1672"^^xsd:string,
+        "1759:1763"^^xsd:string,
+        "1996:2000"^^xsd:string,
+        "2050:2054"^^xsd:string,
+        "2237:2241"^^xsd:string,
+        "2282:2293"^^xsd:string,
+        "2334:2338"^^xsd:string,
+        "2724:2728"^^xsd:string ;
+    data:wdtLink wdt:Q10315513 ;
+    :alsoKnownAs "Iris Victoria Beatrice Grace Mountbatten"^^xsd:string,
+        "Lady Iris Kemp"^^xsd:string,
+        "Lady Iris Victoria Beatrice Grace Mountbatten"^^xsd:string ;
+    :hasAncestor data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasFather data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
+    :hasParent data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
+    :hasRelation data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Iris_Mountbatten,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSex data:female ;
+    :hasSister data:Iris_Mountbatten ;
+    :isBloodrelationOf data:Iris_Mountbatten ;
+    :isChildOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
+    :isDaughterOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
+    :isSiblingOf data:Iris_Mountbatten ;
+    :isSisterOf data:Iris_Mountbatten .
+
+data:Prince_Henry_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Henry of Battenberg"^^xsd:string ;
+    data:posIndicesFull "750:776"^^xsd:string,
+        "757:776"^^xsd:string ;
+    data:posIndicesPart "1062:1067"^^xsd:string,
+        "1566:1572"^^xsd:string,
+        "2887:2897"^^xsd:string,
+        "929:934"^^xsd:string ;
+    data:wdtLink wdt:Q444347 ;
+    :alsoKnownAs "Heinrich Moritz von Battenberg"^^xsd:string,
+        "Henry Maurice Battenberg"^^xsd:string,
+        "Henry of Battenberg"^^xsd:string,
+        "Prince Henry Maurice of Battenberg"^^xsd:string ;
+    :hasBrother data:Prince_Henry_of_Battenberg ;
+    :hasChild data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasDaughter data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Iris_Mountbatten,
+        data:Prince_Henry_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSon data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
+    :isAncestorOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Iris_Mountbatten,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Prince_Henry_of_Battenberg ;
+    :isBrotherOf data:Prince_Henry_of_Battenberg ;
+    :isFatherOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isParentOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Prince_Henry_of_Battenberg ;
+    :isUncleOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Beatrice of the United Kingdom"^^xsd:string ;
+    data:posIndicesFull "728:745"^^xsd:string,
+        "750:776"^^xsd:string ;
+    data:posIndicesPart "1503:1511"^^xsd:string,
+        "1941:1947"^^xsd:string ;
+    data:wdtLink wdt:Q158140 ;
+    :alsoKnownAs "Beatrice Mary Victoria Feodore"^^xsd:string,
+        "Princess Beatrice"^^xsd:string,
+        "Princess Beatrice Mary Victoria Feodore of the United Kingdom"^^xsd:string,
+        "Princess Beatrice of Battenberg"^^xsd:string,
+        "Princess Henry of Battenberg"^^xsd:string,
+        "The Princess Beatrice"^^xsd:string ;
+    :hasChild data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasDaughter data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Iris_Mountbatten,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSon data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
+    :isAncestorOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Iris_Mountbatten,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isAuntOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isMotherOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isParentOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSisterOf data:Princess_Beatrice_of_the_United_Kingdom .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman ;
+    rdfs:label "Victoria Eugenie of Battenberg"^^xsd:string ;
+    data:posIndicesFull "234:265"^^xsd:string ;
+    data:posIndicesPart "1712:1720"^^xsd:string,
+        "2887:2897"^^xsd:string ;
+    data:wdtLink wdt:Q160001 ;
+    :alsoKnownAs "Ena"^^xsd:string,
+        "Princess Ena"^^xsd:string,
+        "Princess Victoria Eugenie of Battenberg"^^xsd:string,
+        "Queen Victoria Eugenie of Spain"^^xsd:string,
+        "Victoria Eugenie Julia Ena of Battenberg"^^xsd:string,
+        "Victoria Eugenie, Queen of Spain"^^xsd:string ;
+    :hasAncestor data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasBrother data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasParent data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :isAuntOf data:Iris_Mountbatten ;
+    :isBloodrelationOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isChildOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isDaughterOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alexander Mountbatten, 1st Marquess of Carisbrooke"^^xsd:string ;
+    data:posIndicesFull "635:685"^^xsd:string ;
+    data:posIndicesPart "1105:1116"^^xsd:string,
+        "2282:2293"^^xsd:string,
+        "2385:2394"^^xsd:string,
+        "2574:2583"^^xsd:string,
+        "809:820"^^xsd:string ;
+    data:wdtLink wdt:Q337477 ;
+    :alsoKnownAs "Alexander Albert Mountbatten"^^xsd:string,
+        "Prince Alexander of Battenberg"^^xsd:string ;
+    :hasAncestor data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasBrother data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
+    :hasChild data:Iris_Mountbatten ;
+    :hasDaughter data:Iris_Mountbatten ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasParent data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Iris_Mountbatten,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Iris_Mountbatten ;
+    :isBloodrelationOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBrotherOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isChildOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isFatherOf data:Iris_Mountbatten ;
+    :isParentOf data:Iris_Mountbatten ;
+    :isSiblingOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSonOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isUncleOf data:Iris_Mountbatten .
+

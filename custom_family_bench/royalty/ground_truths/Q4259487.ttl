@@ -7,29 +7,16 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Gaston_dOrléans a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Gaston_dOrléans a :Person ;
     rdfs:label "Prince Gaston d’Orléans" ;
     data:wdtLink wdt:Q4259487 ;
     :alsoKnownAs "Gaston Louis Antoine Marie d'Orléans",
         "Gaston d'Orléans",
         "Prince Gaston Louis Antoine Marie d'Orléans" ;
-    :hasFather data:Prince_Jean_dOrléans ;
     :hasParent data:Prince_Jean_dOrléans ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Jean_dOrléans ;
-    :isSonOf data:Prince_Jean_dOrléans .
+    :hasSex data:male .
 
-data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein a :Person ;
     rdfs:label "Princess Marie, Princess Gundakar of Liechtenstein" ;
     data:posIndicesFull "434:449" ;
     data:posIndicesPart "1142:1150",
@@ -41,42 +28,26 @@ data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein a :Person,
         "Princess Marie Isabelle Marguerite Anne Geneviève d'Orléans",
         "Princess Marie d'Orléans",
         "Princess Marie of Liechtenstein" ;
-    :hasBrother data:Prince_Jean_dOrléans ;
-    :hasFather data:Prince_Henri_dOrléans_1 ;
     :hasParent data:Prince_Henri_dOrléans_1 ;
-    :hasSex data:female ;
-    :isAuntOf data:Prince_Gaston_dOrléans ;
-    :isChildOf data:Prince_Henri_dOrléans_1 ;
-    :isDaughterOf data:Prince_Henri_dOrléans_1 ;
-    :isSiblingOf data:Prince_Jean_dOrléans ;
-    :isSisterOf data:Prince_Jean_dOrléans .
+    :hasSex data:female .
 
-data:Prince_Henri_dOrléans_1 a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Henri d’Orléans" ;
-    data:posIndicesFull "2166:2181",
-        "2326:2334" ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Henri_dOrléans a :Person ;
+    rdfs:label "Prince Henri d'Orléans" ;
+    data:posIndicesFull "2166:2181" ;
     data:posIndicesPart "3526:3532" ;
-    data:wdtLink wdt:Q534961 ;
-    :alsoKnownAs "Henri Philippe Pierre Marie d'Orléans",
-        "Henri VIII",
-        "Henri d’Orléans" ;
-    :hasChild data:Prince_Jean_dOrléans,
-        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
-    :hasDaughter data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Jean_dOrléans ;
-    :isFatherOf data:Prince_Jean_dOrléans,
-        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
-    :isParentOf data:Prince_Jean_dOrléans,
-        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein .
+    data:wdtLink wdt:Q538411 ;
+    :alsoKnownAs "Henri Robert Ferdinand Marie d'Orléans",
+        "Henri d'Orléans",
+        "Prince Henri Robert Ferdinand Marie d'Orléans" ;
+    :hasSex data:male .
 
-data:Prince_Jean_dOrléans a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Jean_dOrléans a :Person ;
     rdfs:label "Prince Jean d'Orléans" ;
     data:posIndicesFull "417:449",
         "736:743",
@@ -106,16 +77,22 @@ data:Prince_Jean_dOrléans a :Ancestor,
     :alsoKnownAs "Jean Carl Pierre Marie d'Orléans",
         "Jean IV",
         "Jean d'Orléans" ;
-    :hasChild data:Prince_Gaston_dOrléans ;
-    :hasFather data:Prince_Henri_dOrléans_1 ;
     :hasParent data:Prince_Henri_dOrléans_1 ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
-    :hasSon data:Prince_Gaston_dOrléans ;
-    :isBrotherOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
-    :isChildOf data:Prince_Henri_dOrléans_1 ;
-    :isFatherOf data:Prince_Gaston_dOrléans ;
-    :isParentOf data:Prince_Gaston_dOrléans ;
-    :isSiblingOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
-    :isSonOf data:Prince_Henri_dOrléans_1 .
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:Prince_Henri_dOrléans_1 a :Person ;
+    rdfs:label "Prince Henri d’Orléans" ;
+    data:posIndicesFull "2166:2181",
+        "2326:2334" ;
+    data:posIndicesPart "3526:3532" ;
+    data:wdtLink wdt:Q534961 ;
+    :alsoKnownAs "Henri Philippe Pierre Marie d'Orléans",
+        "Henri VIII",
+        "Henri d’Orléans" ;
+    :hasParent data:Prince_Henri_dOrléans ;
+    :hasSex data:male .
+
+data:male a :Male .
 

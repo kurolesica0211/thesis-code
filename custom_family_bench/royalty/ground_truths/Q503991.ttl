@@ -7,16 +7,52 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Pim_Lier a :Person ;
+    rdfs:label "Pim Lier" ;
+    data:posIndicesFull "2101:2109",
+        "736:744" ;
+    data:posIndicesPart "2331:2335",
+        "2415:2419",
+        "2721:2725",
+        "2828:2832",
+        "3095:3099",
+        "3251:3255",
+        "815:819" ;
+    data:wdtLink wdt:Q56641 ;
+    :alsoKnownAs "Albrecht-Willem Lier" ;
+    :hasParent data:Duke_Henry_of_Mecklenburg-Schwerin ;
+    :hasSex data:male .
+
+data:Princess_Christina_of_the_Netherlands a :Person ;
+    rdfs:label "Princess Christina of the Netherlands" ;
+    data:posIndicesFull "443:457" ;
+    data:posIndicesPart "1478:1489",
+        "1631:1642",
+        "1710:1721",
+        "1809:1820",
+        "2493:2502",
+        "3452:3463",
+        "3566:3574",
+        "539:550",
+        "647:655" ;
+    data:wdtLink wdt:Q435324 ;
+    :alsoKnownAs "Christina of the Netherlands",
+        "Christina van Lippe-Biesterfeld",
+        "Christina van Oranje",
+        "Maria Christina of the Netherlands",
+        "Maria Christina van Oranje-Nassau",
+        "Princess Maria Christina of the Netherlands",
+        "Princess Marijke" ;
+    :hasParent data:Juliana_of_the_Netherlands ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Frederick_Francis_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Frederick_Francis_II a :Person ;
     rdfs:label "Frederick Francis II" ;
     data:posIndicesFull "365:385",
         "365:421" ;
@@ -24,31 +60,40 @@ data:Frederick_Francis_II a :Ancestor,
     :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin",
         "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
         "Friedrich Franz II." ;
-    :hasChild data:Duke_Henry_of_Mecklenburg-Schwerin ;
-    :hasSex data:male ;
-    :hasSon data:Duke_Henry_of_Mecklenburg-Schwerin ;
-    :isFatherOf data:Duke_Henry_of_Mecklenburg-Schwerin ;
-    :isParentOf data:Duke_Henry_of_Mecklenburg-Schwerin .
+    :hasSex data:male .
 
-data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Juliana_of_the_Netherlands a :Person ;
+    rdfs:label "Juliana of the Netherlands" ;
+    data:posIndicesFull "656:663" ;
+    data:posIndicesPart "1478:1489",
+        "1631:1642",
+        "1710:1721",
+        "1809:1820",
+        "3452:3463" ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands",
+        "Juliana Louise Emma Marie Wilhelmina",
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Juliana der Nederlanden",
+        "Julijana",
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Princess Juliana of the Netherlands",
+        "Queen Juliana",
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Queen Juliana of the Netherlands" ;
+    :hasParent data:Duke_Henry_of_Mecklenburg-Schwerin,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Person ;
     rdfs:label "Princess Marie of Schwarzburg-Rudolstadt" ;
     data:posIndicesFull "443:483" ;
     data:posIndicesPart "3566:3574",
         "647:655" ;
     data:wdtLink wdt:Q154388 ;
-    :hasChild data:Duke_Henry_of_Mecklenburg-Schwerin ;
-    :hasSex data:female ;
-    :hasSon data:Duke_Henry_of_Mecklenburg-Schwerin ;
-    :isMotherOf data:Duke_Henry_of_Mecklenburg-Schwerin ;
-    :isParentOf data:Duke_Henry_of_Mecklenburg-Schwerin .
+    :hasSex data:female .
 
-data:Wilhelmina_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Wilhelmina_of_the_Netherlands a :Person ;
     rdfs:label "Wilhelmina of the Netherlands" ;
     data:posIndicesFull "1104:1114",
         "2163:2179",
@@ -74,108 +119,9 @@ data:Wilhelmina_of_the_Netherlands a :Ancestor,
         "Wilhelmina",
         "Wilhelmina I",
         "Wilhelmina Koningin der Nederlanden" ;
-    :hasChild data:Juliana_of_the_Netherlands ;
-    :hasDaughter data:Juliana_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isMotherOf data:Juliana_of_the_Netherlands ;
-    :isParentOf data:Juliana_of_the_Netherlands .
+    :hasSex data:female .
 
-data:Princess_Christina_of_the_Netherlands a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Christina of the Netherlands" ;
-    data:posIndicesFull "443:457" ;
-    data:posIndicesPart "1478:1489",
-        "1631:1642",
-        "1710:1721",
-        "1809:1820",
-        "2493:2502",
-        "3452:3463",
-        "3566:3574",
-        "539:550",
-        "647:655" ;
-    data:wdtLink wdt:Q435324 ;
-    :alsoKnownAs "Christina of the Netherlands",
-        "Christina van Lippe-Biesterfeld",
-        "Christina van Oranje",
-        "Maria Christina of the Netherlands",
-        "Maria Christina van Oranje-Nassau",
-        "Princess Maria Christina of the Netherlands",
-        "Princess Marijke" ;
-    :hasMother data:Juliana_of_the_Netherlands ;
-    :hasParent data:Juliana_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isChildOf data:Juliana_of_the_Netherlands ;
-    :isDaughterOf data:Juliana_of_the_Netherlands .
-
-data:Pim_Lier a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Pim Lier" ;
-    data:posIndicesFull "2101:2109",
-        "736:744" ;
-    data:posIndicesPart "2331:2335",
-        "2415:2419",
-        "2721:2725",
-        "2828:2832",
-        "3095:3099",
-        "3251:3255",
-        "815:819" ;
-    data:wdtLink wdt:Q56641 ;
-    :alsoKnownAs "Albrecht-Willem Lier" ;
-    :hasFather data:Duke_Henry_of_Mecklenburg-Schwerin ;
-    :hasParent data:Duke_Henry_of_Mecklenburg-Schwerin ;
-    :hasSex data:male ;
-    :hasSister data:Juliana_of_the_Netherlands ;
-    :isBrotherOf data:Juliana_of_the_Netherlands ;
-    :isChildOf data:Duke_Henry_of_Mecklenburg-Schwerin ;
-    :isSiblingOf data:Juliana_of_the_Netherlands ;
-    :isSonOf data:Duke_Henry_of_Mecklenburg-Schwerin ;
-    :isUncleOf data:Princess_Christina_of_the_Netherlands .
-
-data:Juliana_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Juliana of the Netherlands" ;
-    data:posIndicesFull "656:663" ;
-    data:posIndicesPart "1478:1489",
-        "1631:1642",
-        "1710:1721",
-        "1809:1820",
-        "3452:3463" ;
-    data:wdtLink wdt:Q154946 ;
-    :alsoKnownAs "Juliana I of the Netherlands",
-        "Juliana Louise Emma Marie Wilhelmina",
-        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Juliana der Nederlanden",
-        "Julijana",
-        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Princess Juliana of the Netherlands",
-        "Queen Juliana",
-        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Queen Juliana of the Netherlands" ;
-    :hasBrother data:Pim_Lier ;
-    :hasChild data:Princess_Christina_of_the_Netherlands ;
-    :hasDaughter data:Princess_Christina_of_the_Netherlands ;
-    :hasFather data:Duke_Henry_of_Mecklenburg-Schwerin ;
-    :hasMother data:Wilhelmina_of_the_Netherlands ;
-    :hasParent data:Duke_Henry_of_Mecklenburg-Schwerin,
-        data:Wilhelmina_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isChildOf data:Duke_Henry_of_Mecklenburg-Schwerin,
-        data:Wilhelmina_of_the_Netherlands ;
-    :isDaughterOf data:Duke_Henry_of_Mecklenburg-Schwerin,
-        data:Wilhelmina_of_the_Netherlands ;
-    :isMotherOf data:Princess_Christina_of_the_Netherlands ;
-    :isParentOf data:Princess_Christina_of_the_Netherlands ;
-    :isSiblingOf data:Pim_Lier ;
-    :isSisterOf data:Pim_Lier .
-
-data:Duke_Henry_of_Mecklenburg-Schwerin a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Duke_Henry_of_Mecklenburg-Schwerin a :Person ;
     rdfs:label "Duke Henry of Mecklenburg-Schwerin" ;
     data:posIndicesFull "0:34" ;
     data:posIndicesPart "1045:1050",
@@ -198,21 +144,11 @@ data:Duke_Henry_of_Mecklenburg-Schwerin a :Ancestor,
         "Hendrik van Mecklenburg-Schwerin",
         "Prince Hendrik, Prince Consort of the Netherlands",
         "Prince Henry of Mecklenburg-Schwerin" ;
-    :hasChild data:Juliana_of_the_Netherlands,
-        data:Pim_Lier ;
-    :hasDaughter data:Juliana_of_the_Netherlands ;
-    :hasFather data:Frederick_Francis_II ;
-    :hasMother data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
     :hasParent data:Frederick_Francis_II,
         data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
-    :hasSex data:male ;
-    :hasSon data:Pim_Lier ;
-    :isChildOf data:Frederick_Francis_II,
-        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
-    :isFatherOf data:Juliana_of_the_Netherlands,
-        data:Pim_Lier ;
-    :isParentOf data:Juliana_of_the_Netherlands,
-        data:Pim_Lier ;
-    :isSonOf data:Frederick_Francis_II,
-        data:Princess_Marie_of_Schwarzburg-Rudolstadt .
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

@@ -2,51 +2,52 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elizabeth_Feodorovna_of_Russia a :Person,
-        :Woman .
-
-data:Maria_Pavlovna_of_Russia a :Person,
+data:PrincessOlga a :Person,
         :Woman ;
-    :alsoKnownAs "Maria Pavlovna the Younger"^^xsd:string ;
-    :hasBirthYear 1890 ;
-    :hasBrother data:Dmitri_Pavlovich_of_Russia ;
-    :hasDeathYear 1958 ;
-    :hasFather data:Paul_Alexandrovich_of_Russia ;
-    :hasMarriageYear data:Sergei_Putyatin,
-        data:Wilhelm_Duke_of_Sodermanland,
-        1908,
-        1917 ;
-    :hasMother data:Alexandra_Georgievna_of_Russia ;
-    :hasSon data:Lennart_Duke_of_Smaland,
-        data:Roman_Sergeievich_Putyatin .
+    :hasAncestor data:KingGeorgeI ;
+    :hasBirthYear 1903 ;
+    :hasChild data:PrinceAlexander,
+        data:PrinceNikola,
+        data:PrincessElizabethYugoslavia ;
+    :hasDeathYear 1997 ;
+    :hasFather data:PrinceNicholas ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:GrandDuchessElenaVladimirovna ;
+    :hasRelation data:PrincePaul ;
+    :hasSister data:PrincessElizabeth,
+        data:PrincessMarina ;
+    :knownAs "Princess Paul of Yugoslavia"^^xsd:string .
 
-data:Sergei_Alexandrovich a :Man,
-        :Person .
-
-data:Dmitri_Pavlovich_of_Russia a :Man,
-        :Person ;
-    :hasFather data:Paul_Alexandrovich_of_Russia ;
-    :hasMother data:Alexandra_Georgievna_of_Russia .
-
-data:Lennart_Duke_of_Smaland a :Man,
-        :Person ;
-    :hasFather data:Wilhelm_Duke_of_Sodermanland .
-
-data:Roman_Sergeievich_Putyatin a :Man,
-        :Person ;
-    :hasFather data:Sergei_Putyatin .
-
-data:Alexandra_Georgievna_of_Russia a :Ancestor,
+data:GrandDuchessElenaVladimirovna a :Ancestor,
         :Person,
         :Woman .
 
-data:Paul_Alexandrovich_of_Russia a :Ancestor,
+data:KingGeorgeI a :Ancestor,
         :Man,
         :Person .
 
-data:Sergei_Putyatin a :Man,
+data:PrinceNicholas a :Ancestor,
+        :Man,
         :Person .
 
-data:Wilhelm_Duke_of_Sodermanland a :Man,
+data:PrincePaul a :Man,
+        :Person ;
+    :hasChild data:PrinceAlexander,
+        data:PrinceNikola,
+        data:PrincessElizabethYugoslavia .
+
+data:PrincessElizabeth a :Person,
+        :Woman .
+
+data:PrincessMarina a :Person,
+        :Woman .
+
+data:PrinceAlexander a :Man,
         :Person .
+
+data:PrinceNikola a :Man,
+        :Person .
+
+data:PrincessElizabethYugoslavia a :Person,
+        :Woman .
 

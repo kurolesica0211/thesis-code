@@ -2,30 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Victoria_Eugenie_of_Battenberg a :Woman ;
-    :hasFather data:Prince_Henry_of_Battenberg ;
-    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-    :isSisterOf data:Prince_Maurice_of_Battenberg .
+data:Alessandro_Torlonia a :Man,
+        :Person .
 
-data:Albert_Prince_Consort a :Man .
+data:Alfonso_XIII a :Man,
+        :Person ;
+    :isFatherOf data:Beatriz_of_Spain,
+        data:Juan_Count_of_Barcelona .
 
-data:Julie_Therese_Countess_of_Hauke a :Woman .
+data:Carlos_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :isFatherOf data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies .
 
-data:Prince_Alexander_of_Hesse_and_by_Rhine a :Man .
+data:Ferdinand_II_of_the_Two_Sicilies a :Man,
+        :Person .
 
-data:Prince_Maurice_of_Battenberg a :Man ;
-    :hasBirthYear 1891 ;
-    :hasDeathYear 1914 ;
-    :hasFather data:Prince_Henry_of_Battenberg ;
-    :hasMother data:Princess_Beatrice_of_the_United_Kingdom .
+data:Philippe_Count_of_Paris a :Man,
+        :Person ;
+    :isFatherOf data:Louise_of_Orleans .
 
-data:Queen_Victoria a :Woman .
+data:Victoria_Eugenie a :Person,
+        :Woman ;
+    :isMotherOf data:Juan_Count_of_Barcelona .
 
-data:Prince_Henry_of_Battenberg a :Man ;
-    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
-    :hasMother data:Julie_Therese_Countess_of_Hauke .
+data:Beatriz_of_Spain a :Person,
+        :Woman .
 
-data:Princess_Beatrice_of_the_United_Kingdom a :Woman ;
-    :hasFather data:Albert_Prince_Consort ;
-    :hasMother data:Queen_Victoria .
+data:Elena a :Person,
+        :Woman .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :isFatherOf data:Elena .
+
+data:Louise_of_Orleans a :Person,
+        :Woman ;
+    :isMotherOf data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies .
+
+data:Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear 1910 ;
+    :hasDeathYear 2000 ;
+    :hasRelation data:Juan_Count_of_Barcelona ;
+    :isMotherOf data:Juan_Carlos_I .
+
+data:Juan_Count_of_Barcelona a :Man,
+        :Person .
 

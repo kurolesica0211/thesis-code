@@ -7,167 +7,33 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Iris_Mountbatten a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Iris_Mountbatten a :Person ;
     rdfs:label "Iris Mountbatten" ;
-    data:posIndicesFull "615:655" ;
-    data:posIndicesPart "1357:1361",
-        "1542:1546",
-        "1642:1646",
-        "1704:1708",
-        "1765:1769",
-        "1856:1860",
-        "2093:2097",
-        "2147:2151",
+    data:posIndicesFull "518:558" ;
+    data:posIndicesPart "1260:1264",
+        "1445:1449",
+        "1545:1549",
+        "1607:1611",
+        "1668:1672",
+        "1759:1763",
+        "1996:2000",
+        "2050:2054",
+        "2237:2241",
+        "2282:2293",
         "2334:2338",
-        "2379:2390",
-        "2431:2435",
-        "2821:2825" ;
+        "2724:2728" ;
     data:wdtLink wdt:Q10315513 ;
     :alsoKnownAs "Iris Victoria Beatrice Grace Mountbatten",
         "Lady Iris Kemp",
         "Lady Iris Victoria Beatrice Grace Mountbatten" ;
-    :hasFather data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
     :hasParent data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
-    :hasSex data:female ;
-    :isChildOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
-    :isDaughterOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke .
+    :hasSex data:female .
 
-data:Infante_Jaime-_Duke_of_Segovia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Infante Jaime, Duke of Segovia" ;
-    data:posIndicesFull "417:447" ;
-    data:posIndicesPart "1678:1682",
-        "542:546" ;
-    data:wdtLink wdt:Q703780 ;
-    :hasBrother data:Infante_Juan-_Count_of_Barcelona ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg ;
-    :hasParent data:Victoria_Eugenie_of_Battenberg ;
-    :hasSex data:male ;
-    :isBrotherOf data:Infante_Juan-_Count_of_Barcelona ;
-    :isChildOf data:Victoria_Eugenie_of_Battenberg ;
-    :isSiblingOf data:Infante_Juan-_Count_of_Barcelona ;
-    :isSonOf data:Victoria_Eugenie_of_Battenberg .
-
-data:Infante_Juan-_Count_of_Barcelona a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Infante Juan, Count of Barcelona" ;
-    data:posIndicesFull "296:328" ;
-    data:wdtLink wdt:Q313857 ;
-    :alsoKnownAs "Infante Juan of Barcelona" ;
-    :hasBrother data:Infante_Jaime-_Duke_of_Segovia ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg ;
-    :hasParent data:Victoria_Eugenie_of_Battenberg ;
-    :hasSex data:male ;
-    :isBrotherOf data:Infante_Jaime-_Duke_of_Segovia ;
-    :isChildOf data:Victoria_Eugenie_of_Battenberg ;
-    :isSiblingOf data:Infante_Jaime-_Duke_of_Segovia ;
-    :isSonOf data:Victoria_Eugenie_of_Battenberg .
-
-data:Prince_Henry_of_Battenberg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Henry of Battenberg" ;
-    data:posIndicesFull "847:873",
-        "854:873" ;
-    data:posIndicesPart "1026:1031",
-        "1159:1164",
-        "1663:1669",
-        "2984:2994" ;
-    data:wdtLink wdt:Q444347 ;
-    :alsoKnownAs "Heinrich Moritz von Battenberg",
-        "Henry Maurice Battenberg",
-        "Henry of Battenberg",
-        "Prince Henry Maurice of Battenberg" ;
-    :hasChild data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :hasDaughter data:Victoria_Eugenie_of_Battenberg ;
-    :hasSex data:male ;
-    :hasSon data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
-    :isFatherOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :isParentOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
-        data:Victoria_Eugenie_of_Battenberg .
-
-data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Beatrice of the United Kingdom" ;
-    data:posIndicesFull "825:842",
-        "847:873" ;
-    data:posIndicesPart "1600:1608",
-        "2038:2044" ;
-    data:wdtLink wdt:Q158140 ;
-    :alsoKnownAs "Beatrice Mary Victoria Feodore",
-        "Princess Beatrice",
-        "Princess Beatrice Mary Victoria Feodore of the United Kingdom",
-        "Princess Beatrice of Battenberg",
-        "Princess Henry of Battenberg",
-        "The Princess Beatrice" ;
-    :hasChild data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :hasDaughter data:Victoria_Eugenie_of_Battenberg ;
-    :hasSex data:female ;
-    :hasSon data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
-    :isMotherOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :isParentOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
-        data:Victoria_Eugenie_of_Battenberg .
-
-data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alexander Mountbatten, 1st Marquess of Carisbrooke" ;
-    data:posIndicesFull "732:782" ;
-    data:posIndicesPart "1202:1213",
-        "2379:2390",
-        "2482:2491",
-        "2671:2680",
-        "906:917" ;
-    data:wdtLink wdt:Q337477 ;
-    :alsoKnownAs "Alexander Albert Mountbatten",
-        "Prince Alexander of Battenberg" ;
-    :hasChild data:Iris_Mountbatten ;
-    :hasDaughter data:Iris_Mountbatten ;
-    :hasFather data:Prince_Henry_of_Battenberg ;
-    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-    :hasParent data:Prince_Henry_of_Battenberg,
-        data:Princess_Beatrice_of_the_United_Kingdom ;
-    :hasSex data:male ;
-    :hasSister data:Victoria_Eugenie_of_Battenberg ;
-    :isBrotherOf data:Victoria_Eugenie_of_Battenberg ;
-    :isChildOf data:Prince_Henry_of_Battenberg,
-        data:Princess_Beatrice_of_the_United_Kingdom ;
-    :isFatherOf data:Iris_Mountbatten ;
-    :isParentOf data:Iris_Mountbatten ;
-    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
-    :isSonOf data:Prince_Henry_of_Battenberg,
-        data:Princess_Beatrice_of_the_United_Kingdom ;
-    :isUncleOf data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona .
-
-data:Victoria_Eugenie_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Victoria_Eugenie_of_Battenberg a :Person ;
     rdfs:label "Victoria Eugenie of Battenberg" ;
     data:posIndicesFull "234:265" ;
-    data:posIndicesPart "1809:1817",
-        "2984:2994" ;
+    data:posIndicesPart "1712:1720",
+        "2887:2897" ;
     data:wdtLink wdt:Q160001 ;
     :alsoKnownAs "Ena",
         "Princess Ena",
@@ -175,25 +41,62 @@ data:Victoria_Eugenie_of_Battenberg a :Ancestor,
         "Queen Victoria Eugenie of Spain",
         "Victoria Eugenie Julia Ena of Battenberg",
         "Victoria Eugenie, Queen of Spain" ;
-    :hasBrother data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
-    :hasChild data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :hasFather data:Prince_Henry_of_Battenberg ;
-    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
     :hasParent data:Prince_Henry_of_Battenberg,
         data:Princess_Beatrice_of_the_United_Kingdom ;
-    :hasSex data:female ;
-    :hasSon data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isAuntOf data:Iris_Mountbatten ;
-    :isChildOf data:Prince_Henry_of_Battenberg,
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke a :Person ;
+    rdfs:label "Alexander Mountbatten, 1st Marquess of Carisbrooke" ;
+    data:posIndicesFull "635:685" ;
+    data:posIndicesPart "1105:1116",
+        "2282:2293",
+        "2385:2394",
+        "2574:2583",
+        "809:820" ;
+    data:wdtLink wdt:Q337477 ;
+    :alsoKnownAs "Alexander Albert Mountbatten",
+        "Prince Alexander of Battenberg" ;
+    :hasParent data:Prince_Henry_of_Battenberg,
         data:Princess_Beatrice_of_the_United_Kingdom ;
-    :isDaughterOf data:Prince_Henry_of_Battenberg,
-        data:Princess_Beatrice_of_the_United_Kingdom ;
-    :isMotherOf data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isParentOf data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isSiblingOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
-    :isSisterOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke .
+    :hasSex data:male .
+
+data:Prince_Henry_of_Battenberg a :Person ;
+    rdfs:label "Prince Henry of Battenberg" ;
+    data:posIndicesFull "750:776",
+        "757:776" ;
+    data:posIndicesPart "1062:1067",
+        "1566:1572",
+        "2887:2897",
+        "929:934" ;
+    data:wdtLink wdt:Q444347 ;
+    :alsoKnownAs "Heinrich Moritz von Battenberg",
+        "Henry Maurice Battenberg",
+        "Henry of Battenberg",
+        "Prince Henry Maurice of Battenberg" ;
+    :hasSex data:male .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Person ;
+    rdfs:label "Princess Beatrice of the United Kingdom" ;
+    data:posIndicesFull "728:745",
+        "750:776" ;
+    data:posIndicesPart "1503:1511",
+        "1941:1947" ;
+    data:wdtLink wdt:Q158140 ;
+    :alsoKnownAs "Beatrice Mary Victoria Feodore",
+        "Princess Beatrice",
+        "Princess Beatrice Mary Victoria Feodore of the United Kingdom",
+        "Princess Beatrice of Battenberg",
+        "Princess Henry of Battenberg",
+        "The Princess Beatrice" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

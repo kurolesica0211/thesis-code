@@ -1,0 +1,114 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Antônio_de_Orleans_e_Bragança a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Antônio de Orleans e Bragança"^^xsd:string ;
+    data:posIndicesFull "535:564"^^xsd:string ;
+    data:posIndicesPart "893:901"^^xsd:string ;
+    data:wdtLink wdt:Q2414301 ;
+    :alsoKnownAs "Antônio João de Orléans e Bragança"^^xsd:string ;
+    :hasBrother data:Antônio_de_Orleans_e_Bragança ;
+    :hasChild data:Rafael_de_Orléans-Bragança ;
+    :hasRelation data:Antônio_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne,
+        data:Rafael_de_Orléans-Bragança ;
+    :hasSex data:male ;
+    :hasSon data:Rafael_de_Orléans-Bragança ;
+    :isAncestorOf data:Rafael_de_Orléans-Bragança ;
+    :isBloodrelationOf data:Antônio_de_Orleans_e_Bragança ;
+    :isBrotherOf data:Antônio_de_Orleans_e_Bragança ;
+    :isFatherOf data:Rafael_de_Orléans-Bragança ;
+    :isParentOf data:Rafael_de_Orléans-Bragança ;
+    :isSiblingOf data:Antônio_de_Orleans_e_Bragança ;
+    :isUncleOf data:Rafael_de_Orléans-Bragança .
+
+data:Princess_Christine_of_Ligne a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Christine of Ligne"^^xsd:string ;
+    data:posIndicesFull "569:596"^^xsd:string ;
+    data:posIndicesPart "1064:1069"^^xsd:string,
+        "1075:1083"^^xsd:string,
+        "1138:1143"^^xsd:string,
+        "1235:1244"^^xsd:string,
+        "1663:1671"^^xsd:string,
+        "656:664"^^xsd:string,
+        "694:702"^^xsd:string,
+        "972:980"^^xsd:string ;
+    data:wdtLink wdt:Q7244586 ;
+    :alsoKnownAs "Christine, Princess Imperial of Brazil"^^xsd:string,
+        "Princess Christine of Orleans-Braganza"^^xsd:string ;
+    :hasChild data:Rafael_de_Orléans-Bragança ;
+    :hasRelation data:Antônio_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne,
+        data:Rafael_de_Orléans-Bragança ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Christine_of_Ligne ;
+    :hasSon data:Rafael_de_Orléans-Bragança ;
+    :isAncestorOf data:Rafael_de_Orléans-Bragança ;
+    :isAuntOf data:Rafael_de_Orléans-Bragança ;
+    :isBloodrelationOf data:Princess_Christine_of_Ligne ;
+    :isMotherOf data:Rafael_de_Orléans-Bragança ;
+    :isParentOf data:Rafael_de_Orléans-Bragança ;
+    :isSiblingOf data:Princess_Christine_of_Ligne ;
+    :isSisterOf data:Princess_Christine_of_Ligne .
+
+data:Rafael_de_Orléans-Bragança a :Man,
+        :Person ;
+    rdfs:label "Rafael de Orléans-Bragança"^^xsd:string ;
+    data:posIndicesFull "0:26"^^xsd:string,
+        "739:827"^^xsd:string ;
+    data:posIndicesPart "1347:1353"^^xsd:string,
+        "1494:1500"^^xsd:string,
+        "1606:1612"^^xsd:string,
+        "1813:1819"^^xsd:string,
+        "1993:1999"^^xsd:string,
+        "2028:2035"^^xsd:string,
+        "2145:2151"^^xsd:string,
+        "2242:2249"^^xsd:string,
+        "260:267"^^xsd:string,
+        "335:341"^^xsd:string,
+        "885:892"^^xsd:string,
+        "893:901"^^xsd:string ;
+    data:wdtLink wdt:Q4215159 ;
+    :alsoKnownAs "Rafael Antonio Maria José Francisco Miguel Gabriel Gonzaga de Orléans e Bragança e Ligne"^^xsd:string,
+        "Rafael de Orléans-Bragança e Ligne, Principe de Orléans-Bragança"^^xsd:string,
+        "Rafael of Orleans-Braganza"^^xsd:string,
+        "Rafael of Orléans-Braganza"^^xsd:string ;
+    :hasAncestor data:Antônio_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne ;
+    :hasBrother data:Rafael_de_Orléans-Bragança ;
+    :hasFather data:Antônio_de_Orleans_e_Bragança ;
+    :hasMother data:Princess_Christine_of_Ligne ;
+    :hasParent data:Antônio_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne ;
+    :hasRelation data:Antônio_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne,
+        data:Rafael_de_Orléans-Bragança ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Rafael_de_Orléans-Bragança ;
+    :isBrotherOf data:Rafael_de_Orléans-Bragança ;
+    :isChildOf data:Antônio_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne ;
+    :isSiblingOf data:Rafael_de_Orléans-Bragança ;
+    :isSonOf data:Antônio_de_Orleans_e_Bragança,
+        data:Princess_Christine_of_Ligne .
+

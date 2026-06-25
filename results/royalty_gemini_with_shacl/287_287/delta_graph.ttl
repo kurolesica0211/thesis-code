@@ -2,41 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:George_Gilman a :Ancestor,
+data:Carl_of_Wurttemberg a :Man .
+
+data:Chantal_of_Orleans a :Woman .
+
+data:Henri_VI_Count_of_Paris a :Ancestor,
         :Man ;
-    :hasSex data:Male ;
-    :isFatherOf data:Lyla_Gilman,
-        data:Rufus_Gilman .
+    :isFatherOf data:Henri_Count_of_Paris .
 
-data:Rose_Windsor a :Ancestor,
+data:Marie_Therese_of_Wurttemberg a :Ancestor,
         :Woman ;
-    :formerlyKnownAs "Rose Victoria Birgitte Louise Windsor"^^xsd:string ;
-    :hasBirthYear 1980 ;
-    :hasFather data:Prince_Richard ;
-    :hasMarriageYear 2007 ;
-    :hasMother data:Birgitte_Gloucester ;
-    :hasSex data:Female ;
-    :isMotherOf data:Lyla_Gilman,
-        data:Rufus_Gilman ;
-    :knownAs "Lady Rose Victoria Birgitte Louise Gilman"^^xsd:string .
+    :hasBirthYear 1934 ;
+    :isMotherOf data:Jean_dOrleans .
 
-data:Birgitte_Gloucester a :Ancestor,
-        :Woman ;
-    :hasSex data:Female .
+data:Philomena_de_Tornos_y_Steinhart a :Woman ;
+    :hasBirthYear 1977 .
 
-data:Prince_Richard a :Ancestor,
+data:Henri_Count_of_Paris a :Ancestor,
         :Man ;
-    :hasSex data:Male .
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_VI_Count_of_Paris ;
+    :isFatherOf data:Jean_dOrleans .
 
-data:Lyla_Gilman a :Woman ;
-    :hasBirthYear 2010 ;
-    :hasSex data:Female .
-
-data:Rufus_Gilman a :Man ;
-    :hasBirthYear 2012 ;
-    :hasSex data:Male .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+data:Jean_dOrleans a :Man ;
+    :hasBirthYear 1965 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Philomena_de_Tornos_y_Steinhart .
 

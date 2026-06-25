@@ -2,60 +2,18 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Emich_Kyrill_Prince_of_Leiningen a :Man,
+data:Christian_Duke_of_Oldenburg a :Man,
         :Person ;
-    :hasBirthYear "1926"^^xsd:nonNegativeInteger ;
-    :hasDeathYear "1991"^^xsd:nonNegativeInteger ;
-    :hasFather data:Karl_Prince_of_Leiningen ;
-    :hasMarriageYear "1950"^^xsd:nonNegativeInteger ;
-    :hasMother data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
-    :hasRelation data:Duchess_Eilika_of_Oldenburg ;
-    :knownAs "Emich Kirill Ferdinand Hermann Fürst zu Leiningen"^^xsd:string .
+    :hasAncestor data:Frederick_Augustus_II,
+        data:Nikolaus_Hereditary_Grand_Duke ;
+    :hasFather data:Nikolaus_Hereditary_Grand_Duke .
 
-data:Duchess_Eilika_of_Oldenburg a :Person,
-        :Woman ;
-    :hasBirthYear "1928"^^xsd:nonNegativeInteger ;
-    :hasDeathYear "2016"^^xsd:nonNegativeInteger ;
-    :hasFather data:Nikolaus_Hereditary_Grand_Duke_of_Oldenburg ;
-    :hasMother data:Princess_Helena_of_Waldeck_and_Pyrmont .
-
-data:Emich_5th_Prince_of_Leiningen a :Ancestor,
+data:Frederick_Augustus_II a :Ancestor,
         :Man,
         :Person .
 
-data:Grand_Duchess_Maria_Kirillovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear "1907"^^xsd:nonNegativeInteger ;
-    :hasDeathYear "1951"^^xsd:nonNegativeInteger ;
-    :hasFather data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
-    :hasMother data:Princess_Victoria_Melita_of_Edinburgh .
-
-data:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Ancestor,
-        :Man,
-        :Person .
-
-data:Karl_Prince_of_Leiningen a :Ancestor,
+data:Nikolaus_Hereditary_Grand_Duke a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear "1898"^^xsd:nonNegativeInteger ;
-    :hasDeathYear "1946"^^xsd:nonNegativeInteger ;
-    :hasFather data:Emich_5th_Prince_of_Leiningen ;
-    :hasMother data:Princess_Feodore_of_Hohenlohe_Langenburg .
-
-data:Nikolaus_Hereditary_Grand_Duke_of_Oldenburg a :Ancestor,
-        :Man,
-        :Person .
-
-data:Princess_Feodore_of_Hohenlohe_Langenburg a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Princess_Helena_of_Waldeck_and_Pyrmont a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Princess_Victoria_Melita_of_Edinburgh a :Ancestor,
-        :Person,
-        :Woman .
+    :hasDeathYear 1970 .
 

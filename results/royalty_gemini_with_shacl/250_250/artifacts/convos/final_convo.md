@@ -85,37 +85,31 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Captain George Louis Victor Henry Serge Mountbatten, 2nd Marquess of Milford Haven (6 November 1892 – 8 April 1938), born Prince George of Battenberg, styled Earl of Medina between 1917 and 1921, was a Royal Navy officer and the elder son of Louis Mountbatten, 1st Marquess of Milford Haven (Prince Louis of Battenberg), and Princess Victoria of Hesse and by Rhine.
-Biography
+Prince Ludwig Rudolf of Hanover, of Great Britain and Ireland, Duke of Brunswick and Lüneburg (German: Ludwig Rudolf Georg Wilhelm Philipp Friedrich Wolrad Maximilian Prinz von Hannover) (21 November 1955 – 29 November 1988) was a member of the House of Hanover and a music producer.
+Early life and career
 
-George was born 6 November 1892 in Darmstadt in the Grand Duchy of Hesse, then ruled by his maternal uncle Ernest Louis, Grand Duke of Hesse.
-From birth, he was a prince of the Hessian royal family, albeit of a morganatic branch.
-His siblings were Princess Alice (mother of Prince Philip, Duke of Edinburgh, to whom he was a mentor in Philip's adolescence), Queen Louise of Sweden and Louis Mountbatten, 1st
-Earl Mountbatten of Burma (who assumed the role of Philip's mentor after George's death).
-George followed his father into the Royal Navy, and after passing out from the Royal Naval College at Dartmouth, was promoted to sub-lieutenant on 15 January 1913.
-In 1917, his father and several of his relations relinquished their German names, styles and titles in exchange for British peerages at the behest of George V. Accordingly, Prince George dropped the style of Serene Highness and his surname was anglicised to "Mountbatten."
-When his father was created Marquess of Milford Haven in late 1917, George received the courtesy title of Earl of Medina, succeeding to his father's peerage after his death in September 1921.
-Lord Milford Haven, as George was now known, remained in the Royal Navy after the war; he was promoted to lieutenant-commander on 15 February 1922 and to commander on 31 December 1926.
-An accomplished mathematician, the Marquess "could work out complicated gunnery problems in his head" and "read books on calculus casually on trains".
-Marriage and issue
+Ludwig Rudolf was born in Hanover, Lower Saxony, Germany, the third child and second son of Ernst August, Prince of Hanover, Hereditary Prince of Brunswick (1914–1987) and his wife, Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg (1925–1980).
+Ludwig Rudolf was a great-great-great-great-grandson of George III of the United Kingdom and a great-grandson of Wilhelm II, German Emperor.
+Ludwig Rudolf had trained to become a music producer in Los Angeles and London.
+Marriage and death
 
-Prince George of Battenberg, as he then was known, married Countess Nadejda Mikhailovna de Torby (daughter of Russian Grand Duke Michael Mikhailovich Romanov and his morganatic wife, Countess Sophie von Merenberg) on 15 November 1916 at the Russian Embassy, Welbeck Street, London.
-They lived at Lynden Manor at Holyport in Berkshire and had two children:
-
-
-Death
-
-Lord Milford Haven died in London on 8 April 1938 of bone marrow cancer, aged 45.
-His funeral took place at St Michael's Church, Bray, Berkshire, and he was buried in Bray Parish Cemetery.
-Legacy to the British Museum
-
-Lord Milford Haven left a collection of pornography, including artificial sex organs, to the British Museum.
+Having obtained the consent of Elizabeth II by Order in Council on 15 September 1987 pursuant to the Royal Marriages Act 1772, Ludwig Rudolf, a Lutheran, married the Roman Catholic Countess Isabella Maria von Thurn und Valsassina-Como-Vercelli (born September 8 1962 in Gmunden, Upper Austria), a former fashion model at her father's ancestral Austrian estate, Bleiburg Castle, Carinthia on 4 October 1987.
+She was the daughter of Count Ariprand von Thurn und Valsassina-Como-Vercelli (1925–1996), whose family, an Austrian branch of the Della Torre dynasty, ruled Milan in the 13th and 14th century, and his wife, Princess Maria Perpetua Euphemia von Auersperg (born 1929).
+In the early hours of 29 November 1988, after the couple had entertained guests at their home, Königinvilla (The Queen's Villa) in Gmunden, a house left to them by Ludwig Rudolf's elder brother Ernst August, the prince went to the bedroom where his wife had retired before midnight, and found Isabella sprawled fully dressed across their bed.
+Ludwig Rudolf, who had been investigated previously on suspicion of illegal drug purchases, placed a call to his brother, Ernst August, in London, imploring him to take care of the couple's 10-month-old son.
+As authorities removed Isabella's body and investigated the scene, discovering syringes, cocaine and heroin, Ludwig Rudolf slipped away.
+Hours later, the prince was found in his car near his family's hunting lodge several miles away, on Lake Traun.
+Ludwig Rudolf and Isabelle were interred on 2 December 1988 at Grünau
+Custody of their infant son Otto Heinrich was awarded, contrary to the expressed wishes of Ludwig Rudolf, to the child's maternal grandparents.
+He grew up at their castle, Schloss Bleiburg, in Austria, and then studied art at Braunschweig University of Art in Brunswick (Braunschweig).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -131,39 +125,9 @@ Lord Milford Haven left a collection of pornography, including artificial sex or
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -178,6 +142,23 @@ Lord Milford Haven left a collection of pornography, including artificial sex or
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -195,6 +176,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,29 +258,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -293,6 +281,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -305,6 +301,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -313,17 +311,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -351,6 +351,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -366,180 +450,161 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c00a8c41-c8e6-4358-8709-18b3e42b80b0)
- Call ID: c00a8c41-c8e6-4358-8709-18b3e42b80b0
+  AssignClass (d7b283e4-978a-414b-9594-e063fbf3e6b4)
+ Call ID: d7b283e4-978a-414b-9594-e063fbf3e6b4
   Args:
+    source: LudwigRudolfOfHanover
     type: :Man
-    source: George_Mountbatten
-  AssignClass (0a4709a7-e364-4469-85b0-33176342d17c)
- Call ID: 0a4709a7-e364-4469-85b0-33176342d17c
+  AssignClass (5427fa5b-42cb-4dc6-bc3b-d85a5b7d7cdb)
+ Call ID: 5427fa5b-42cb-4dc6-bc3b-d85a5b7d7cdb
   Args:
-    type: :Person
-    source: George_Mountbatten
-  AssignClass (56120692-9886-4a7f-9940-06c88150c7c1)
- Call ID: 56120692-9886-4a7f-9940-06c88150c7c1
+    source: ErnstAugustPrinceOfHanover
+    type: :Man
+  AssignClass (69ad1437-6de7-41d0-8f22-1f58cfc9df54)
+ Call ID: 69ad1437-6de7-41d0-8f22-1f58cfc9df54
   Args:
-    type: :Male
-    source: Male_Sex
-  AddTriple (55410f03-a0e5-41ff-a57c-a905e7310c41)
- Call ID: 55410f03-a0e5-41ff-a57c-a905e7310c41
+    source: OrtrudOfSchleswigHolsteinSonderburgGlucksburg
+    type: :Woman
+  AssignClass (363c34ca-1b2e-4d58-af9b-60c6398a8a9d)
+ Call ID: 363c34ca-1b2e-4d58-af9b-60c6398a8a9d
   Args:
-    relation: :hasSex
-    target: Male_Sex
-    source: George_Mountbatten
-  AddLiteral (8eaa03e5-e596-4e5c-a4f6-21d9f99a6c0a)
- Call ID: 8eaa03e5-e596-4e5c-a4f6-21d9f99a6c0a
+    source: IsabellaMariaVonThurnUndValsassinaComoVercelli
+    type: :Woman
+  AssignClass (7c3b718c-b8ff-493a-a0ad-d82d4cd3a202)
+ Call ID: 7c3b718c-b8ff-493a-a0ad-d82d4cd3a202
   Args:
-    literal_type: xsd:string
-    relation: :knownAs
-    literal_value: George Louis Victor Henry Serge Mountbatten
-    source: George_Mountbatten
-  AddLiteral (9d0e58f3-5bd8-4641-a032-fd32ff647c49)
- Call ID: 9d0e58f3-5bd8-4641-a032-fd32ff647c49
+    source: AriprandVonThurnUndValsassinaComoVercelli
+    type: :Man
+  AssignClass (28609088-48af-4200-8b0b-290bbb4c5c82)
+ Call ID: 28609088-48af-4200-8b0b-290bbb4c5c82
   Args:
-    relation: :formerlyKnownAs
-    literal_type: xsd:string
-    literal_value: Prince George of Battenberg
-    source: George_Mountbatten
-  AddLiteral (128d3569-50e4-44d3-bdaa-2ac7bfe66a2f)
- Call ID: 128d3569-50e4-44d3-bdaa-2ac7bfe66a2f
+    source: MariaPerpetuaEuphemiaVonAuersperg
+    type: :Woman
+  AssignClass (ad9187aa-4a13-4b53-be39-edc8d055fe51)
+ Call ID: ad9187aa-4a13-4b53-be39-edc8d055fe51
   Args:
-    source: George_Mountbatten
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    literal_value: Earl of Medina
-  AddLiteral (37379950-5163-4206-bda3-c3d709fc5c7c)
- Call ID: 37379950-5163-4206-bda3-c3d709fc5c7c
+    source: OttoHeinrich
+    type: :Man
+  AddLiteral (d7dfbcb4-4091-4e6b-9659-d1ceded53050)
+ Call ID: d7dfbcb4-4091-4e6b-9659-d1ceded53050
   Args:
-    literal_value: 1892
-    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: George_Mountbatten
-  AddLiteral (3a201cdf-1120-484d-aa2e-05e3b3277bf8)
- Call ID: 3a201cdf-1120-484d-aa2e-05e3b3277bf8
-  Args:
-    source: George_Mountbatten
-    relation: :hasDeathYear
+    literal_value: 1955
+    source: LudwigRudolfOfHanover
     literal_type: xsd:integer
-    literal_value: 1938
-  AssignClass (3605f808-fb05-417c-b045-92a81e87e812)
- Call ID: 3605f808-fb05-417c-b045-92a81e87e812
+  AddLiteral (671e725b-e0b2-4333-a29b-5f683a877d80)
+ Call ID: 671e725b-e0b2-4333-a29b-5f683a877d80
   Args:
-    type: :Man
-    source: Louis_Mountbatten_1st_Marquess
-  AssignClass (1b253e00-3cab-40cd-bd69-192d34bfa7f9)
- Call ID: 1b253e00-3cab-40cd-bd69-192d34bfa7f9
+    literal_type: xsd:integer
+    literal_value: 1988
+    relation: :hasDeathYear
+    source: LudwigRudolfOfHanover
+  AddTriple (d13e9501-14a8-4890-a04e-fbd9674c8b5b)
+ Call ID: d13e9501-14a8-4890-a04e-fbd9674c8b5b
   Args:
-    type: :Person
-    source: Louis_Mountbatten_1st_Marquess
-  AddTriple (f724a510-93b6-4ec3-9552-d5e0b8526e83)
- Call ID: f724a510-93b6-4ec3-9552-d5e0b8526e83
-  Args:
+    target: ErnstAugustPrinceOfHanover
+    source: LudwigRudolfOfHanover
     relation: :hasFather
-    source: George_Mountbatten
-    target: Louis_Mountbatten_1st_Marquess
-  AssignClass (d959990b-051d-4a22-99b4-cad3e7096b52)
- Call ID: d959990b-051d-4a22-99b4-cad3e7096b52
+  AddTriple (f1353cc0-5f6f-44b6-9edd-d61952a45f2b)
+ Call ID: f1353cc0-5f6f-44b6-9edd-d61952a45f2b
   Args:
-    type: :Woman
-    source: Victoria_of_Hesse
-  AssignClass (c33f7a6b-3aaf-4afa-80ba-a553865244f1)
- Call ID: c33f7a6b-3aaf-4afa-80ba-a553865244f1
-  Args:
-    type: :Person
-    source: Victoria_of_Hesse
-  AddTriple (44c71941-3714-4c21-a55b-df561808c717)
- Call ID: 44c71941-3714-4c21-a55b-df561808c717
-  Args:
-    source: George_Mountbatten
-    target: Victoria_of_Hesse
     relation: :hasMother
-  AssignClass (4c0cbd20-a0a5-46d0-a0a8-5256a2d79e4b)
- Call ID: 4c0cbd20-a0a5-46d0-a0a8-5256a2d79e4b
+    target: OrtrudOfSchleswigHolsteinSonderburgGlucksburg
+    source: LudwigRudolfOfHanover
+  AddLiteral (b5e164ac-df7b-4d61-aede-855cbc3c665f)
+ Call ID: b5e164ac-df7b-4d61-aede-855cbc3c665f
   Args:
-    type: :Woman
-    source: Princess_Alice
-  AssignClass (9ec119b1-f00b-4a69-a425-f7d54a2b53cd)
- Call ID: 9ec119b1-f00b-4a69-a425-f7d54a2b53cd
+    literal_type: xsd:integer
+    literal_value: 1914
+    relation: :hasBirthYear
+    source: ErnstAugustPrinceOfHanover
+  AddLiteral (44ff1abe-a791-4b17-80a7-bdc5c2839725)
+ Call ID: 44ff1abe-a791-4b17-80a7-bdc5c2839725
   Args:
-    type: :Person
-    source: Princess_Alice
-  AddTriple (ac0e86fb-95cf-4931-922b-6ada42278452)
- Call ID: ac0e86fb-95cf-4931-922b-6ada42278452
+    literal_type: xsd:integer
+    source: ErnstAugustPrinceOfHanover
+    relation: :hasDeathYear
+    literal_value: 1987
+  AddLiteral (69a44d7e-416b-4be1-a9c0-42f795a50d58)
+ Call ID: 69a44d7e-416b-4be1-a9c0-42f795a50d58
   Args:
-    source: George_Mountbatten
-    target: Princess_Alice
-    relation: :hasSister
-  AssignClass (6a564bed-387c-470e-9e60-91623f931dd0)
- Call ID: 6a564bed-387c-470e-9e60-91623f931dd0
+    relation: :hasBirthYear
+    literal_value: 1925
+    source: OrtrudOfSchleswigHolsteinSonderburgGlucksburg
+    literal_type: xsd:integer
+  AddLiteral (8e70e9c2-c72b-4521-9757-584f7ec1c919)
+ Call ID: 8e70e9c2-c72b-4521-9757-584f7ec1c919
   Args:
-    type: :Woman
-    source: Queen_Louise_of_Sweden
-  AssignClass (8688ec81-6ed4-49a7-b5fa-e6810739dbcf)
- Call ID: 8688ec81-6ed4-49a7-b5fa-e6810739dbcf
+    literal_value: 1980
+    relation: :hasDeathYear
+    source: OrtrudOfSchleswigHolsteinSonderburgGlucksburg
+    literal_type: xsd:integer
+  AddTriple (910a7f78-3d0b-434e-a0a3-f08f7f390bd7)
+ Call ID: 910a7f78-3d0b-434e-a0a3-f08f7f390bd7
   Args:
-    type: :Person
-    source: Queen_Louise_of_Sweden
-  AddTriple (c1adb8ff-15dd-4aaf-9aad-6a27f18dd6a7)
- Call ID: c1adb8ff-15dd-4aaf-9aad-6a27f18dd6a7
+    source: IsabellaMariaVonThurnUndValsassinaComoVercelli
+    target: AriprandVonThurnUndValsassinaComoVercelli
+    relation: :hasFather
+  AddTriple (7c2c59eb-f0f7-4983-aef7-241a74db2a57)
+ Call ID: 7c2c59eb-f0f7-4983-aef7-241a74db2a57
   Args:
-    target: Queen_Louise_of_Sweden
-    source: George_Mountbatten
-    relation: :hasSister
-  AssignClass (6ed32297-e1d5-42ed-87af-f9a772dc7b4e)
- Call ID: 6ed32297-e1d5-42ed-87af-f9a772dc7b4e
+    source: IsabellaMariaVonThurnUndValsassinaComoVercelli
+    target: MariaPerpetuaEuphemiaVonAuersperg
+    relation: :hasMother
+  AddLiteral (90a8e42c-1bb9-47b3-aaa4-3997e0dad8e7)
+ Call ID: 90a8e42c-1bb9-47b3-aaa4-3997e0dad8e7
   Args:
-    type: :Man
-    source: Louis_Mountbatten_1st_Earl
-  AssignClass (7a49e2d4-4f67-47aa-b40f-aa13bcaf0158)
- Call ID: 7a49e2d4-4f67-47aa-b40f-aa13bcaf0158
+    relation: :hasBirthYear
+    literal_value: 1962
+    source: IsabellaMariaVonThurnUndValsassinaComoVercelli
+    literal_type: xsd:integer
+  AddLiteral (a31f5269-73db-4ac5-a5e2-efc527d9bb96)
+ Call ID: a31f5269-73db-4ac5-a5e2-efc527d9bb96
   Args:
-    type: :Person
-    source: Louis_Mountbatten_1st_Earl
-  AddTriple (fd599d32-71c7-49b0-9bf3-8e0453bbc70a)
- Call ID: fd599d32-71c7-49b0-9bf3-8e0453bbc70a
+    source: AriprandVonThurnUndValsassinaComoVercelli
+    literal_value: 1925
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (94b7f741-126f-4d9a-bce8-80b20b2c8107)
+ Call ID: 94b7f741-126f-4d9a-bce8-80b20b2c8107
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1996
+    relation: :hasDeathYear
+    source: AriprandVonThurnUndValsassinaComoVercelli
+  AddLiteral (30e74708-9dd7-474a-93bf-edf7077c1bea)
+ Call ID: 30e74708-9dd7-474a-93bf-edf7077c1bea
+  Args:
+    source: MariaPerpetuaEuphemiaVonAuersperg
+    relation: :hasBirthYear
+    literal_value: 1929
+    literal_type: xsd:integer
+  AddTriple (b62c29a9-bed8-44e5-99eb-3779b6156ff3)
+ Call ID: b62c29a9-bed8-44e5-99eb-3779b6156ff3
+  Args:
+    source: OttoHeinrich
+    target: LudwigRudolfOfHanover
+    relation: :hasFather
+  AddTriple (f91ddc48-fb5d-4ed8-9d09-8fc21a723698)
+ Call ID: f91ddc48-fb5d-4ed8-9d09-8fc21a723698
+  Args:
+    relation: :hasMother
+    source: OttoHeinrich
+    target: IsabellaMariaVonThurnUndValsassinaComoVercelli
+  AddTriple (1a4cfad7-a966-4971-ab7b-0867d3cecde3)
+ Call ID: 1a4cfad7-a966-4971-ab7b-0867d3cecde3
   Args:
     relation: :hasBrother
-    target: Louis_Mountbatten_1st_Earl
-    source: George_Mountbatten
-  AssignClass (1f727b44-438b-419d-9865-e8d42938b4e5)
- Call ID: 1f727b44-438b-419d-9865-e8d42938b4e5
+    target: ErnstAugustJunior
+    source: LudwigRudolfOfHanover
+  AssignClass (599b09c0-12f3-4f6e-b63b-ce4137fea53f)
+ Call ID: 599b09c0-12f3-4f6e-b63b-ce4137fea53f
   Args:
-    type: :Woman
-    source: Nadejda_Mikhailovna_de_Torby
-  AssignClass (856edc0f-c10c-4ee8-a9e8-fcfb0e04ebc4)
- Call ID: 856edc0f-c10c-4ee8-a9e8-fcfb0e04ebc4
+    source: ErnstAugustJunior
+    type: :Man
+  Finish (9889e58f-38fe-4714-a645-cd175a640a33)
+ Call ID: 9889e58f-38fe-4714-a645-cd175a640a33
   Args:
-    type: :Person
-    source: Nadejda_Mikhailovna_de_Torby
-  AddLiteral (feae1c06-eade-4cf5-9a41-970af3cf0f37)
- Call ID: feae1c06-eade-4cf5-9a41-970af3cf0f37
-  Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 1916
-    source: George_Mountbatten
-  AddTriple (980f171c-037b-4952-9bd9-74eb57b0d1c3)
- Call ID: 980f171c-037b-4952-9bd9-74eb57b0d1c3
-  Args:
-    source: George_Mountbatten
-    target: Nadejda_Mikhailovna_de_Torby
-    relation: :hasRelation
-  Finish (3d1843b5-fa27-4ecf-aa8a-d1866e5ab834)
- Call ID: 3d1843b5-fa27-4ecf-aa8a-d1866e5ab834
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -644,41 +709,38 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:George_Mountbatten a :Man,
-          :Person ;
-      :alsoKnownAs "Earl of Medina"^^xsd:string ;
-      :formerlyKnownAs "Prince George of Battenberg"^^xsd:string ;
-      :hasBirthYear 1892 ;
-      :hasBrother data:Louis_Mountbatten_1st_Earl ;
-      :hasDeathYear 1938 ;
-      :hasFather data:Louis_Mountbatten_1st_Marquess ;
-      :hasMarriageYear 1916 ;
-      :hasMother data:Victoria_of_Hesse ;
-      :hasRelation data:Nadejda_Mikhailovna_de_Torby ;
-      :hasSex data:Male_Sex ;
-      :hasSister data:Princess_Alice,
-          data:Queen_Louise_of_Sweden ;
-      :knownAs "George Louis Victor Henry Serge Mountbatten"^^xsd:string .
+  data:OttoHeinrich a :Man ;
+      :hasFather data:LudwigRudolfOfHanover ;
+      :hasMother data:IsabellaMariaVonThurnUndValsassinaComoVercelli .
 
-  data:Louis_Mountbatten_1st_Earl a :Man,
-          :Person .
+  data:AriprandVonThurnUndValsassinaComoVercelli a :Man ;
+      :hasBirthYear 1925 ;
+      :hasDeathYear 1996 .
 
-  data:Louis_Mountbatten_1st_Marquess a :Man,
-          :Person .
+  data:ErnstAugustJunior a :Man .
 
-  data:Male_Sex a :Male .
+  data:ErnstAugustPrinceOfHanover a :Man ;
+      :hasBirthYear 1914 ;
+      :hasDeathYear 1987 .
 
-  data:Nadejda_Mikhailovna_de_Torby a :Person,
-          :Woman .
+  data:IsabellaMariaVonThurnUndValsassinaComoVercelli a :Woman ;
+      :hasBirthYear 1962 ;
+      :hasFather data:AriprandVonThurnUndValsassinaComoVercelli ;
+      :hasMother data:MariaPerpetuaEuphemiaVonAuersperg .
 
-  data:Princess_Alice a :Person,
-          :Woman .
+  data:LudwigRudolfOfHanover a :Man ;
+      :hasBirthYear 1955 ;
+      :hasBrother data:ErnstAugustJunior ;
+      :hasDeathYear 1988 ;
+      :hasFather data:ErnstAugustPrinceOfHanover ;
+      :hasMother data:OrtrudOfSchleswigHolsteinSonderburgGlucksburg .
 
-  data:Queen_Louise_of_Sweden a :Person,
-          :Woman .
+  data:MariaPerpetuaEuphemiaVonAuersperg a :Woman ;
+      :hasBirthYear 1929 .
 
-  data:Victoria_of_Hesse a :Person,
-          :Woman .
+  data:OrtrudOfSchleswigHolsteinSonderburgGlucksburg a :Woman ;
+      :hasBirthYear 1925 ;
+      :hasDeathYear 1980 .
 
 
 
@@ -690,62 +752,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (d2f4d2e3-df4d-4533-9ca3-a3f9e0a9f471)
- Call ID: d2f4d2e3-df4d-4533-9ca3-a3f9e0a9f471
+  ValidateShacl (36279db0-93bb-417b-9976-a5864fded32c)
+ Call ID: 36279db0-93bb-417b-9976-a5864fded32c
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:18
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Louis_Mountbatten_1st_Marquess' is missing the required classification of ':Ancestor' to satisfy the ':hasFather' property constraint for 'George_Mountbatten'.
+      The node LudwigRudolfOfHanover, identified as the father of OttoHeinrich, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Mountbatten_1st_Marquess', class=':Ancestor')
+      AssignClass(node='LudwigRudolfOfHanover', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Victoria_of_Hesse' is missing the required classification of ':Ancestor' to satisfy the ':hasMother' property constraint for 'George_Mountbatten'.
+      The node ErnstAugustPrinceOfHanover, identified as the father of LudwigRudolfOfHanover, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Victoria_of_Hesse', class=':Ancestor')
+      AssignClass(node='ErnstAugustPrinceOfHanover', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Louis_Mountbatten_1st_Marquess' is missing the required classification of ':Ancestor' to satisfy the ':hasFather' property constraint for 'George_Mountbatten'.
+      The node IsabellaMariaVonThurnUndValsassinaComoVercelli, identified as the mother of OttoHeinrich, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Mountbatten_1st_Marquess', class=':Ancestor')
+      AssignClass(node='IsabellaMariaVonThurnUndValsassinaComoVercelli', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Victoria_of_Hesse' is missing the required classification of ':Ancestor' to satisfy the ':hasMother' property constraint for 'George_Mountbatten'.
+      The node OrtrudOfSchleswigHolsteinSonderburgGlucksburg, identified as the mother of LudwigRudolfOfHanover, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Victoria_of_Hesse', class=':Ancestor')
+      AssignClass(node='OrtrudOfSchleswigHolsteinSonderburgGlucksburg', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Louis_Mountbatten_1st_Marquess' is missing the required classification of ':Ancestor' to satisfy the ':hasFather' property constraint for 'George_Mountbatten'.
+      The node ErnstAugustPrinceOfHanover, identified as the father of LudwigRudolfOfHanover, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Mountbatten_1st_Marquess', class=':Ancestor')
+      AssignClass(node='ErnstAugustPrinceOfHanover', class=':Ancestor')
 
 
   Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node LudwigRudolfOfHanover, identified as the father of OttoHeinrich, is missing the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='LudwigRudolfOfHanover', class=':Ancestor')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node AriprandVonThurnUndValsassinaComoVercelli, identified as the father of IsabellaMariaVonThurnUndValsassinaComoVercelli, is missing the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='AriprandVonThurnUndValsassinaComoVercelli', class=':Ancestor')
+
+
+  Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Victoria_of_Hesse' is missing the required classification of ':Ancestor' to satisfy the ':hasMother' property constraint for 'George_Mountbatten'.
+      The node OrtrudOfSchleswigHolsteinSonderburgGlucksburg, identified as the mother of LudwigRudolfOfHanover, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Victoria_of_Hesse', class=':Ancestor')
+      AssignClass(node='OrtrudOfSchleswigHolsteinSonderburgGlucksburg', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node IsabellaMariaVonThurnUndValsassinaComoVercelli, identified as the mother of OttoHeinrich, is missing the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='IsabellaMariaVonThurnUndValsassinaComoVercelli', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node MariaPerpetuaEuphemiaVonAuersperg, identified as the mother of IsabellaMariaVonThurnUndValsassinaComoVercelli, is missing the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='MariaPerpetuaEuphemiaVonAuersperg', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node ErnstAugustPrinceOfHanover, identified as the father of LudwigRudolfOfHanover, is missing the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='ErnstAugustPrinceOfHanover', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node LudwigRudolfOfHanover, identified as the father of OttoHeinrich, is missing the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='LudwigRudolfOfHanover', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node AriprandVonThurnUndValsassinaComoVercelli, identified as the father of IsabellaMariaVonThurnUndValsassinaComoVercelli, is missing the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='AriprandVonThurnUndValsassinaComoVercelli', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node OrtrudOfSchleswigHolsteinSonderburgGlucksburg, identified as the mother of LudwigRudolfOfHanover, is missing the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='OrtrudOfSchleswigHolsteinSonderburgGlucksburg', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node IsabellaMariaVonThurnUndValsassinaComoVercelli, identified as the mother of OttoHeinrich, is missing the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='IsabellaMariaVonThurnUndValsassinaComoVercelli', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node MariaPerpetuaEuphemiaVonAuersperg, identified as the mother of IsabellaMariaVonThurnUndValsassinaComoVercelli, is missing the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='MariaPerpetuaEuphemiaVonAuersperg', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node AriprandVonThurnUndValsassinaComoVercelli, identified as the father of IsabellaMariaVonThurnUndValsassinaComoVercelli, is missing the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='AriprandVonThurnUndValsassinaComoVercelli', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node MariaPerpetuaEuphemiaVonAuersperg, identified as the mother of IsabellaMariaVonThurnUndValsassinaComoVercelli, is missing the mandatory class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='MariaPerpetuaEuphemiaVonAuersperg', class=':Ancestor')
 
 
 
@@ -754,19 +912,55 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (bb76cd1c-02e7-411d-beed-079932075056)
- Call ID: bb76cd1c-02e7-411d-beed-079932075056
+  AssignClass (a519db9b-d8e2-4fe5-b955-8dd72d2ce2bd)
+ Call ID: a519db9b-d8e2-4fe5-b955-8dd72d2ce2bd
   Args:
-    source: Louis_Mountbatten_1st_Marquess
     type: :Ancestor
-  AssignClass (6cc6b01e-f0ef-4dd8-8bef-81e6c77ca34f)
- Call ID: 6cc6b01e-f0ef-4dd8-8bef-81e6c77ca34f
+    source: LudwigRudolfOfHanover
+  AssignClass (71fe08c1-4d07-4bd3-b3a3-242bf3652019)
+ Call ID: 71fe08c1-4d07-4bd3-b3a3-242bf3652019
   Args:
-    source: Victoria_of_Hesse
     type: :Ancestor
-  ValidateShacl (0b5eb98d-aa30-48ed-bf99-31af850f6ab9)
- Call ID: 0b5eb98d-aa30-48ed-bf99-31af850f6ab9
+    source: ErnstAugustPrinceOfHanover
+  AssignClass (0f8e2b39-a733-4f93-a96b-688c0f9c5f45)
+ Call ID: 0f8e2b39-a733-4f93-a96b-688c0f9c5f45
   Args:
+    type: :Ancestor
+    source: IsabellaMariaVonThurnUndValsassinaComoVercelli
+  AssignClass (25d3f609-96ba-47e8-81c8-3b5f2b983b2c)
+ Call ID: 25d3f609-96ba-47e8-81c8-3b5f2b983b2c
+  Args:
+    source: OrtrudOfSchleswigHolsteinSonderburgGlucksburg
+    type: :Ancestor
+  AssignClass (483dc583-e449-4728-b1a9-36e1542860bb)
+ Call ID: 483dc583-e449-4728-b1a9-36e1542860bb
+  Args:
+    type: :Ancestor
+    source: AriprandVonThurnUndValsassinaComoVercelli
+  AssignClass (78310ce2-7797-4732-bcd4-35bc040acab5)
+ Call ID: 78310ce2-7797-4732-bcd4-35bc040acab5
+  Args:
+    source: MariaPerpetuaEuphemiaVonAuersperg
+    type: :Ancestor
+  Finish (56bfdfd3-890a-4a2d-b9eb-309ae50313a1)
+ Call ID: 56bfdfd3-890a-4a2d-b9eb-309ae50313a1
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -779,45 +973,58 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:George_Mountbatten a :Man,
-          :Person ;
-      :alsoKnownAs "Earl of Medina"^^xsd:string ;
-      :formerlyKnownAs "Prince George of Battenberg"^^xsd:string ;
-      :hasBirthYear 1892 ;
-      :hasBrother data:Louis_Mountbatten_1st_Earl ;
-      :hasDeathYear 1938 ;
-      :hasFather data:Louis_Mountbatten_1st_Marquess ;
-      :hasMarriageYear 1916 ;
-      :hasMother data:Victoria_of_Hesse ;
-      :hasRelation data:Nadejda_Mikhailovna_de_Torby ;
-      :hasSex data:Male_Sex ;
-      :hasSister data:Princess_Alice,
-          data:Queen_Louise_of_Sweden ;
-      :knownAs "George Louis Victor Henry Serge Mountbatten"^^xsd:string .
+  data:OttoHeinrich a :Man ;
+      :hasFather data:LudwigRudolfOfHanover ;
+      :hasMother data:IsabellaMariaVonThurnUndValsassinaComoVercelli .
 
-  data:Louis_Mountbatten_1st_Earl a :Man,
-          :Person .
+  data:AriprandVonThurnUndValsassinaComoVercelli a :Ancestor,
+          :Man ;
+      :hasBirthYear 1925 ;
+      :hasDeathYear 1996 .
 
-  data:Louis_Mountbatten_1st_Marquess a :Ancestor,
-          :Man,
-          :Person .
+  data:ErnstAugustJunior a :Man .
 
-  data:Male_Sex a :Male .
+  data:ErnstAugustPrinceOfHanover a :Ancestor,
+          :Man ;
+      :hasBirthYear 1914 ;
+      :hasDeathYear 1987 .
 
-  data:Nadejda_Mikhailovna_de_Torby a :Person,
-          :Woman .
+  data:IsabellaMariaVonThurnUndValsassinaComoVercelli a :Ancestor,
+          :Woman ;
+      :hasBirthYear 1962 ;
+      :hasFather data:AriprandVonThurnUndValsassinaComoVercelli ;
+      :hasMother data:MariaPerpetuaEuphemiaVonAuersperg .
 
-  data:Princess_Alice a :Person,
-          :Woman .
+  data:LudwigRudolfOfHanover a :Ancestor,
+          :Man ;
+      :hasBirthYear 1955 ;
+      :hasBrother data:ErnstAugustJunior ;
+      :hasDeathYear 1988 ;
+      :hasFather data:ErnstAugustPrinceOfHanover ;
+      :hasMother data:OrtrudOfSchleswigHolsteinSonderburgGlucksburg .
 
-  data:Queen_Louise_of_Sweden a :Person,
-          :Woman .
+  data:MariaPerpetuaEuphemiaVonAuersperg a :Ancestor,
+          :Woman ;
+      :hasBirthYear 1929 .
 
-  data:Victoria_of_Hesse a :Ancestor,
-          :Person,
-          :Woman .
+  data:OrtrudOfSchleswigHolsteinSonderburgGlucksburg a :Ancestor,
+          :Woman ;
+      :hasBirthYear 1925 ;
+      :hasDeathYear 1980 .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (7d14afd2-3d80-45c3-8a3a-316bea065e74)
+ Call ID: 7d14afd2-3d80-45c3-8a3a-316bea065e74
+  Args:
 
 ================================= Tool Message =================================
 
@@ -827,6 +1034,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (0f8cc3f0-5f7d-467b-8040-8dfc4361661b)
- Call ID: 0f8cc3f0-5f7d-467b-8040-8dfc4361661b
+  Finish (942d4680-0ad2-4e86-9122-306f3c9ef3ee)
+ Call ID: 942d4680-0ad2-4e86-9122-306f3c9ef3ee
   Args:

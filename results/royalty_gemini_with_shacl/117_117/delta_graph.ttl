@@ -2,39 +2,70 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Juan_Carlos_I a :Man ;
-    :hasBirthYear 1938 ;
-    :hasBrother data:Alfonso_of_Spain ;
-    :hasFather data:Infante_Juan ;
-    :hasMarriageYear "1962"^^xsd:string ;
-    :hasMother data:Princess_Maria_de_las_Mercedes ;
-    :hasRelation data:Queen_Sofia ;
-    :hasSister data:Infanta_Margarita,
-        data:Infanta_Pilar .
+data:Infanta_Cristina_Duchess_of_Palma_de_Mallorca a :Person,
+        :Woman ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Queen_Sofia ;
+    :hasRelation data:I%C3%B1aki_Urdangarin .
+
+data:Leonor_Princess_of_Asturias a :Person,
+        :Woman ;
+    :hasFather data:Felipe_VI .
 
 data:Alfonso_XIII a :Ancestor,
-        :Man .
+        :Man,
+        :Person .
 
-data:Alfonso_of_Spain a :Man ;
+data:Alfonso_brother_of_Juan_Carlos_I a :Man,
+        :Person ;
     :hasBirthYear 1941 ;
     :hasDeathYear 1956 .
 
-data:Infanta_Margarita a :Woman ;
+data:Felipe_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Queen_Sofia .
+
+data:I%C3%B1aki_Urdangarin a :Man,
+        :Person .
+
+data:Infanta_Margarita_Duchess_of_Soria a :Person,
+        :Woman ;
     :hasBirthYear 1939 .
 
-data:Infanta_Pilar a :Woman ;
+data:Infanta_Pilar_Duchess_of_Badajoz a :Person,
+        :Woman ;
+    :hasBirthYear 1936 ;
     :hasDeathYear 2020 .
 
-data:Infante_Juan a :Ancestor,
-        :Man ;
+data:Infante_Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
     :hasFather data:Alfonso_XIII .
 
 data:King_Paul_of_Greece a :Ancestor,
-        :Man .
+        :Man,
+        :Person .
 
-data:Princess_Maria_de_las_Mercedes a :Ancestor,
+data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
         :Woman .
 
-data:Queen_Sofia a :Woman ;
+data:Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:Alfonso_brother_of_Juan_Carlos_I ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona ;
+    :hasMarriageYear 1962 ;
+    :hasMother data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Queen_Sofia ;
+    :hasSister data:Infanta_Margarita_Duchess_of_Soria,
+        data:Infanta_Pilar_Duchess_of_Badajoz .
+
+data:Queen_Sofia a :Ancestor,
+        :Person,
+        :Woman ;
     :hasFather data:King_Paul_of_Greece .
 

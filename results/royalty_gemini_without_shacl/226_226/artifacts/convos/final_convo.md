@@ -69,27 +69,33 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Duke of Castro  The Duchess of Castro
+Gerald David Lascelles (/ˈlæsəls/ LASS-əlss; 21 August 1924 – 27 February 1998) was the younger son of Henry Lascelles, 6th Earl of Harewood, and Mary, Princess Royal, the only daughter of King George V and Queen Mary.
+He was styled The Honourable Gerald Lascelles.
+Life
+
+Gerald David Lascelles was born at Goldsborough Hall, near Knaresborough, West Riding of Yorkshire, and was baptised in October 1924 with the Prince of Wales and the Duchess of York (later King Edward VIII and Queen Elizabeth) as his godparents represented there by proxies.
+The baptism was held in private at St. Mary's Church in the village of Goldsborough.
+In 1955, the family moved to Fort Belvedere, Surrey, the former country home of Gerald Lascelles's uncle, Edward VIII (the Duke of Windsor).
+On 17 November 1978, Lascelles married his second wife, actress Elizabeth Colvin (née Elizabeth Evelyn Collingwood, 23 April 1924 – 14 January 2006), in Vienna, Austria.
+They had a son: 
 
 
-Princess Maria Chiara of Bourbon-Two Sicilies, Duchess of Noto and Capri (Italian: Maria Chiara di Borbone delle
-Early life, family, and education
+Interests and positions
 
-Maria Chiara was born in Rome on 1 January, 2005 to Prince Carlo, Duke of Castro and Camilla Crociani.
-She is the younger sister of Princess Maria Carolina.
-She grew up between Paris, Monte Carlo, and Rome.
-Her godparents are Princess Michael of Kent, Princess Victoria zu Windisch-Graetz, Prince Augusto Ruffo di Calabria, and Sergio Mantegazza.
-Adult life and charity work
+Lascelles was the president of the British Racing Drivers' Club from 1964 to 1991, after the 5th Earl Howe died.
+Lord Howe had asked Lascelles to replace him, who was briefly a driver before this.
+In his role as BRDC president, Lascelles was invited by the Australian Racing Drivers Club, promoters of the Bathurst 1000 Touring car race, to be the Grand Marshal for the 1985 race.
+Death
 
-Maria Chiara is a patroness of the Monaco-based charity Rokethon, which raises money for abandoned dogs, and an ambassador of the ocean conservation nonprofit organization Passion Sea Project.
-She co-launched the YouTube channel Carolina & Chiara with her sister, which they started during the COVID-19 pandemic.
-In 2023, she attended the Monaco Grand Prix with Christian, Crown Prince of Denmark.
+Lascelles died in Bergerac, France, on 27 February 1998 at the age of 73.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -105,39 +111,9 @@ In 2023, she attended the Monaco Grand Prix with Christian, Crown Prince of Denm
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -152,6 +128,23 @@ In 2023, she attended the Monaco Grand Prix with Christian, Crown Prince of Denm
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -169,6 +162,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -236,29 +244,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -267,6 +267,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -279,6 +287,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -287,17 +297,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -325,6 +337,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -340,71 +436,287 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1a8e4e71-1f38-4210-a30c-cd5f1ad18877)
- Call ID: 1a8e4e71-1f38-4210-a30c-cd5f1ad18877
+  AssignClass (ca45ef8c-2075-474e-8b60-d83970f2c493)
+ Call ID: ca45ef8c-2075-474e-8b60-d83970f2c493
   Args:
-    type: :Person
-    source: :Maria_Chiara_of_Bourbon-Two_Sicilies
-  AssignClass (7610b751-be1f-49a1-85be-186098d62ed9)
- Call ID: 7610b751-be1f-49a1-85be-186098d62ed9
+    source: Gerald David Lascelles
+    type: :Man
+  AssignClass (beff21e0-3de5-4eba-b135-0df9b96b4ec7)
+ Call ID: beff21e0-3de5-4eba-b135-0df9b96b4ec7
+  Args:
+    source: Henry Lascelles, 6th Earl of Harewood
+    type: :Man
+  AssignClass (4843a11b-3109-480b-a412-e0527da67da4)
+ Call ID: 4843a11b-3109-480b-a412-e0527da67da4
   Args:
     type: :Woman
-    source: :Maria_Chiara_of_Bourbon-Two_Sicilies
-  AssignClass (d63fe708-d0da-4466-b3ea-ac744c5ebb5d)
- Call ID: d63fe708-d0da-4466-b3ea-ac744c5ebb5d
-  Args:
-    type: :Person
-    source: :Prince_Carlo_Duke_of_Castro
-  AssignClass (a01d8bfe-a972-4fc2-b7b6-de782071c52f)
- Call ID: a01d8bfe-a972-4fc2-b7b6-de782071c52f
+    source: Mary, Princess Royal
+  AssignClass (0d9be456-7ea3-4e84-8de5-f2523e16e042)
+ Call ID: 0d9be456-7ea3-4e84-8de5-f2523e16e042
   Args:
     type: :Man
-    source: :Prince_Carlo_Duke_of_Castro
-  AssignClass (e985d61f-f6be-4182-a0d0-16836ed5b077)
- Call ID: e985d61f-f6be-4182-a0d0-16836ed5b077
+    source: King George V
+  AssignClass (dba2c4a9-02cc-4f60-82a9-bdff1bb14bce)
+ Call ID: dba2c4a9-02cc-4f60-82a9-bdff1bb14bce
   Args:
-    type: :Person
-    source: :Camilla_Crociani
-  AssignClass (d61de3dd-4480-425d-8bad-b4e63413f0aa)
- Call ID: d61de3dd-4480-425d-8bad-b4e63413f0aa
+    source: Queen Mary
+    type: :Woman
+  AssignClass (1a09946a-bc07-4444-baf3-0c31844a1b75)
+ Call ID: 1a09946a-bc07-4444-baf3-0c31844a1b75
   Args:
     type: :Woman
-    source: :Camilla_Crociani
-  AssignClass (55c45e86-b3fe-408b-939a-04527645e43d)
- Call ID: 55c45e86-b3fe-408b-939a-04527645e43d
+    source: Elizabeth Colvin
+  AssignClass (7acca22d-b42f-4181-a25b-2a3d3f90092f)
+ Call ID: 7acca22d-b42f-4181-a25b-2a3d3f90092f
   Args:
-    type: :Person
-    source: :Maria_Carolina_of_Bourbon-Two_Sicilies
-  AssignClass (67a2d0e4-5b4f-4124-97d1-9a0f80e46bb3)
- Call ID: 67a2d0e4-5b4f-4124-97d1-9a0f80e46bb3
-  Args:
-    type: :Woman
-    source: :Maria_Carolina_of_Bourbon-Two_Sicilies
-  AddTriple (bad45609-dd23-4cd5-b4ac-128d4ac71e8a)
- Call ID: bad45609-dd23-4cd5-b4ac-128d4ac71e8a
-  Args:
-    source: :Maria_Chiara_of_Bourbon-Two_Sicilies
-    relation: :hasFather
-    target: :Prince_Carlo_Duke_of_Castro
-  AddTriple (48868e36-47f5-4883-be73-8c8ac0c46840)
- Call ID: 48868e36-47f5-4883-be73-8c8ac0c46840
-  Args:
-    source: :Maria_Chiara_of_Bourbon-Two_Sicilies
-    relation: :hasMother
-    target: :Camilla_Crociani
-  AddTriple (ab650781-a4fc-4f3d-ae11-db3c028b23e6)
- Call ID: ab650781-a4fc-4f3d-ae11-db3c028b23e6
-  Args:
-    source: :Maria_Chiara_of_Bourbon-Two_Sicilies
-    relation: :hasSister
-    target: :Maria_Carolina_of_Bourbon-Two_Sicilies
-  AddLiteral (0bf6f8a1-050c-4579-9da4-6a3cda7c1646)
- Call ID: 0bf6f8a1-050c-4579-9da4-6a3cda7c1646
+    source: Edward VIII
+    type: :Man
+  AddLiteral (ac24f21a-cb8b-4883-ad1d-050aff17345b)
+ Call ID: ac24f21a-cb8b-4883-ad1d-050aff17345b
   Args:
     relation: :hasBirthYear
-    source: :Maria_Chiara_of_Bourbon-Two_Sicilies
+    literal_value: 1924
+    source: Gerald David Lascelles
     literal_type: xsd:integer
-    literal_value: 2005
-  Finish (b69ea90d-8d3a-423c-8942-fd479e792289)
- Call ID: b69ea90d-8d3a-423c-8942-fd479e792289
+  AddLiteral (06edfd4d-e84a-4fff-9fb4-027aa577b368)
+ Call ID: 06edfd4d-e84a-4fff-9fb4-027aa577b368
+  Args:
+    literal_value: 1998
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Gerald David Lascelles
+  AddTriple (6d730921-bd96-48f7-b3f7-072fd35efcfa)
+ Call ID: 6d730921-bd96-48f7-b3f7-072fd35efcfa
+  Args:
+    relation: :hasFather
+    source: Gerald David Lascelles
+    target: Henry Lascelles, 6th Earl of Harewood
+  AddTriple (6dc7eb99-ae30-43d8-b0f5-b6886e118a6e)
+ Call ID: 6dc7eb99-ae30-43d8-b0f5-b6886e118a6e
+  Args:
+    source: Gerald David Lascelles
+    target: Mary, Princess Royal
+    relation: :hasMother
+  AddTriple (c3969577-06f0-48b5-97a9-26c6c54efa5b)
+ Call ID: c3969577-06f0-48b5-97a9-26c6c54efa5b
+  Args:
+    relation: :hasFather
+    source: Mary, Princess Royal
+    target: King George V
+  AddTriple (83738369-9efe-4ac6-bf8b-167c8e44b854)
+ Call ID: 83738369-9efe-4ac6-bf8b-167c8e44b854
+  Args:
+    relation: :hasMother
+    source: Mary, Princess Royal
+    target: Queen Mary
+  AddLiteral (3b1b72d9-3ae7-491d-a7c9-6952c058d16a)
+ Call ID: 3b1b72d9-3ae7-491d-a7c9-6952c058d16a
+  Args:
+    literal_value: 1978
+    relation: :hasMarriageYear
+    source: Gerald David Lascelles
+    literal_type: xsd:integer
+  AddTriple (04678f50-d170-445d-9c2a-a81872c30689)
+ Call ID: 04678f50-d170-445d-9c2a-a81872c30689
+  Args:
+    source: Gerald David Lascelles
+    target: Elizabeth Colvin
+    relation: :hasRelation
+  AddLiteral (e92568e0-a3d1-4a7b-ad89-1dde7b169b41)
+ Call ID: e92568e0-a3d1-4a7b-ad89-1dde7b169b41
+  Args:
+    literal_type: xsd:integer
+    source: Elizabeth Colvin
+    literal_value: 1924
+    relation: :hasBirthYear
+  AddLiteral (961d17e2-7423-4832-9d11-216e4659a06c)
+ Call ID: 961d17e2-7423-4832-9d11-216e4659a06c
+  Args:
+    literal_value: 2006
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Elizabeth Colvin
+  AddTriple (a52840c7-1154-49d2-a133-cde9773f9347)
+ Call ID: a52840c7-1154-49d2-a133-cde9773f9347
+  Args:
+    relation: :hasRelation
+    target: Edward VIII
+    source: Gerald Lascelles
+  Finish (fce7dc14-c9c1-463e-a627-e0b142645d13)
+ Call ID: fce7dc14-c9c1-463e-a627-e0b142645d13
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Gerald_David_Lascelles a :Man ;
+      :hasBirthYear 1924 ;
+      :hasDeathYear 1998 ;
+      :hasFather data:Henry_Lascelles%2C_6th_Earl_of_Harewood ;
+      :hasMarriageYear 1978 ;
+      :hasMother data:Mary%2C_Princess_Royal ;
+      :hasRelation data:Elizabeth_Colvin .
+
+  data:Gerald_Lascelles :hasRelation data:Edward_VIII .
+
+  data:Edward_VIII a :Man .
+
+  data:Elizabeth_Colvin a :Woman ;
+      :hasBirthYear 1924 ;
+      :hasDeathYear 2006 .
+
+  data:Henry_Lascelles%2C_6th_Earl_of_Harewood a :Man .
+
+  data:King_George_V a :Man .
+
+  data:Mary%2C_Princess_Royal a :Woman ;
+      :hasFather data:King_George_V ;
+      :hasMother data:Queen_Mary .
+
+  data:Queen_Mary a :Woman .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Gerald_Lascelles']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (9dbcab1a-bfeb-4eca-9896-7305c75be888)
+ Call ID: 9dbcab1a-bfeb-4eca-9896-7305c75be888
+  Args:
+    type: :Man
+    source: Gerald_Lascelles
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Gerald_David_Lascelles a :Man ;
+      :hasBirthYear 1924 ;
+      :hasDeathYear 1998 ;
+      :hasFather data:Henry_Lascelles%2C_6th_Earl_of_Harewood ;
+      :hasMarriageYear 1978 ;
+      :hasMother data:Mary%2C_Princess_Royal ;
+      :hasRelation data:Elizabeth_Colvin .
+
+  data:Gerald_Lascelles a :Man ;
+      :hasRelation data:Edward_VIII .
+
+  data:Edward_VIII a :Man .
+
+  data:Elizabeth_Colvin a :Woman ;
+      :hasBirthYear 1924 ;
+      :hasDeathYear 2006 .
+
+  data:Henry_Lascelles%2C_6th_Earl_of_Harewood a :Man .
+
+  data:King_George_V a :Man .
+
+  data:Mary%2C_Princess_Royal a :Woman ;
+      :hasFather data:King_George_V ;
+      :hasMother data:Queen_Mary .
+
+  data:Queen_Mary a :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (993a578f-a0c1-4a27-ad91-f20b9cb92e04)
+ Call ID: 993a578f-a0c1-4a27-ad91-f20b9cb92e04
   Args:

@@ -85,39 +85,24 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Queen Anne-Marie
+Lady Tatiana Helen Georgia Dru (née Mountbatten; born 16 April 1990) is an English equestrian.
+Biography
 
-
-Queen Sofía of Spain
-
-
-Marina, consort of Prince Michael
-
-
-Prince Nikolaos of Greece and Denmark (Greek: Νικόλαος Ντε Γκρες, romanized: Nikólaos de Grèce; born 1 October 1969) is the third child of Constantine II and Anne-Marie, who were the last King and Queen of Greece, from 1964 to 1973.
-Early life and education
-
-Nikolaos was born at Casa di Cura Privata Nuova Villa Claudia in Rome, Italy, on October 1, 1969.
-He is the first royal child to be born in hospital from Constantine II of Greece and Anne-Marie of Denmark.
-His godparents were Queen Sofía, Queen of Spain (his paternal aunt), Princess Irene of Greece and Denmark (another paternal aunt), Margareta of Romania (his paternal second cousin), and Crown Prince Alexander of Yugoslavia (another paternal second cousin).
-He is a member of board of the Anna-Maria Foundation, designed to help victims of natural disasters like floods and earthquakes in Greece.
-Nikolaos has an older sister Princess Alexia, an older brother Crown Prince Pavlos, a younger sister Princess Theodora, and a younger brother, Prince Philippos.
-Personal life
-
-Relationships
-
-The engagement of Nikolaos to Tatiana Ellinka Blatnik, with whom he had been in a long-term relationship, was announced on 28 December 2009 by the office of King Constantine in London.
-On 25 August 2010, the couple married at the Orthodox Church of St. Nicholas in Spetses, Greece.
-In January 2025, Nikolaos became engaged to Chrysí Vardinogiánni, daughter of Greek businessman Giórgos Vardinogiánnis and Agapi Politi.
-Citizenship
-
-Οn 20 December 2024, Nikolaos along with other members of the former royal family acquired Greek citizenship, under the surname de Grèce.
+Lady Tatiana Mountbatten was born on 16 April 1990 to George Mountbatten, 4th Marquess of Milford Haven and his first wife, Sarah Georgina (née Walker).
+She is an older sister of Henry Mountbatten, Earl of Medina.
+Her paternal great-grandparents, Prince George of Battenberg and Countess Nadejda Mikhailovna de Torby, were morganatic descendants of German and Russian royal houses.
+Her great-grandparents gave up their German titles in exchange for titles within the British peerage and Anglicised their family name from Battenberg to Mountbatten.
+Through her father, Lady Tatiana is a descendant of Alexander Pushkin, Abram Gannibal and multiple monarchs including Louis II, Grand Duke of Hesse, Louis IV, Grand Duke of Hesse, Nicholas I of Russia, and Queen Victoria.
+Lady Tatiana went to school at Millfield in Street, Somerset.
+In November 2019, Lady Tatiana published a personal website containing an equestrian and country style blog.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -133,39 +118,9 @@ Citizenship
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -180,6 +135,23 @@ Citizenship
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -197,6 +169,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,29 +251,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -295,6 +274,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -307,6 +294,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -315,17 +304,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -353,6 +344,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -368,139 +443,225 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ead2745b-2965-40fc-a73b-2859a8cf2513)
- Call ID: ead2745b-2965-40fc-a73b-2859a8cf2513
+  AssignClass (0ee2d744-2ba7-4264-a7d3-da71a6c164cc)
+ Call ID: 0ee2d744-2ba7-4264-a7d3-da71a6c164cc
   Args:
     type: :Woman
-    source: :Anne-Marie
-  AssignClass (5df48e39-ec70-45e4-afd6-e17aeeb19485)
- Call ID: 5df48e39-ec70-45e4-afd6-e17aeeb19485
+    source: :Tatiana_Mountbatten
+  AssignClass (743841dd-594a-4f9c-bc1f-8a9cc2409bdd)
+ Call ID: 743841dd-594a-4f9c-bc1f-8a9cc2409bdd
   Args:
-    type: :Man
-    source: :Constantine_II
-  AssignClass (ba7559cf-4bfb-4131-8d42-9cecaf21b0ee)
- Call ID: ba7559cf-4bfb-4131-8d42-9cecaf21b0ee
+    source: :Tatiana_Mountbatten
+    type: :Person
+  AddLiteral (e7a382f2-fa22-4f6a-8180-c001178246dd)
+ Call ID: e7a382f2-fa22-4f6a-8180-c001178246dd
   Args:
-    source: :Nikolaos
-    type: :Man
-  AssignClass (bbf0b659-3c52-4c40-96b4-d53bae76d823)
- Call ID: bbf0b659-3c52-4c40-96b4-d53bae76d823
-  Args:
-    source: :Sofia_of_Spain
-    type: :Woman
-  AssignClass (d5f871d2-885d-4baf-851b-f25e3b8969a3)
- Call ID: d5f871d2-885d-4baf-851b-f25e3b8969a3
-  Args:
-    source: :Irene_of_Greece_and_Denmark
-    type: :Woman
-  AssignClass (34f508a2-f017-40f1-8a32-88ab70fc4de5)
- Call ID: 34f508a2-f017-40f1-8a32-88ab70fc4de5
-  Args:
-    type: :Woman
-    source: :Margareta_of_Romania
-  AssignClass (4a380081-97e6-4068-8960-bf60991abafe)
- Call ID: 4a380081-97e6-4068-8960-bf60991abafe
-  Args:
-    type: :Man
-    source: :Alexander_of_Yugoslavia
-  AssignClass (9682daa7-4df5-4ea0-9ee7-ad2b8bf8aba6)
- Call ID: 9682daa7-4df5-4ea0-9ee7-ad2b8bf8aba6
-  Args:
-    type: :Woman
-    source: :Alexia
-  AssignClass (a2f01463-23a7-4520-9d9e-b964f6f849f0)
- Call ID: a2f01463-23a7-4520-9d9e-b964f6f849f0
-  Args:
-    source: :Pavlos
-    type: :Man
-  AssignClass (55fc48de-21bf-41e5-a2bf-14fb2903cbab)
- Call ID: 55fc48de-21bf-41e5-a2bf-14fb2903cbab
-  Args:
-    type: :Woman
-    source: :Theodora
-  AssignClass (2b63e7e9-6c86-4fe8-8741-f12b5df44600)
- Call ID: 2b63e7e9-6c86-4fe8-8741-f12b5df44600
-  Args:
-    source: :Philippos
-    type: :Man
-  AssignClass (6c26d753-e99e-404b-a3ff-79e2ac50306b)
- Call ID: 6c26d753-e99e-404b-a3ff-79e2ac50306b
-  Args:
-    type: :Woman
-    source: :Tatiana_Ellinka_Blatnik
-  AssignClass (e9ebea48-3019-4248-be40-50ba9472d781)
- Call ID: e9ebea48-3019-4248-be40-50ba9472d781
-  Args:
-    type: :Woman
-    source: :Chrysi_Vardinogianni
-  AssignClass (a20c1f93-f159-47b2-bdde-6ddc56408f25)
- Call ID: a20c1f93-f159-47b2-bdde-6ddc56408f25
-  Args:
-    source: :Giorgos_Vardinogiannis
-    type: :Man
-  AssignClass (8dc8ccb6-2796-4b70-87b6-0f7bc38bd01d)
- Call ID: 8dc8ccb6-2796-4b70-87b6-0f7bc38bd01d
-  Args:
-    source: :Agapi_Politi
-    type: :Woman
-  AddTriple (688c3ceb-0313-487b-b246-947496fa8ca4)
- Call ID: 688c3ceb-0313-487b-b246-947496fa8ca4
-  Args:
-    target: :Nikolaos
-    relation: :isFatherOf
-    source: :Constantine_II
-  AddTriple (ca1d6f7c-e319-4f61-a999-ce9915822ce4)
- Call ID: ca1d6f7c-e319-4f61-a999-ce9915822ce4
-  Args:
-    target: :Nikolaos
-    source: :Anne-Marie
-    relation: :isMotherOf
-  AddLiteral (ab0bae37-9008-4269-92be-ff7c0fd92fc0)
- Call ID: ab0bae37-9008-4269-92be-ff7c0fd92fc0
-  Args:
-    literal_type: xsd:integer
-    source: :Nikolaos
+    source: :Tatiana_Mountbatten
+    literal_value: 1990
     relation: :hasBirthYear
-    literal_value: 1969
-  AddTriple (e2f64ccf-8b9f-445c-a76b-7d8c2ab9fcdd)
- Call ID: e2f64ccf-8b9f-445c-a76b-7d8c2ab9fcdd
+    literal_type: xsd:integer
+  AssignClass (fb5ace0d-0e6e-493d-9b3f-e8c8ba88a521)
+ Call ID: fb5ace0d-0e6e-493d-9b3f-e8c8ba88a521
   Args:
-    target: :Nikolaos
-    source: :Alexia
-    relation: :isSisterOf
-  AddTriple (45f8777a-61cc-4a8a-a811-531ef334e20c)
- Call ID: 45f8777a-61cc-4a8a-a811-531ef334e20c
+    source: :George_Mountbatten
+    type: :Man
+  AssignClass (2fdbb778-74cb-4bf7-a106-68620fabf95f)
+ Call ID: 2fdbb778-74cb-4bf7-a106-68620fabf95f
   Args:
-    relation: :isBrotherOf
-    source: :Pavlos
-    target: :Nikolaos
-  AddTriple (56710253-ec3b-45c0-9f0a-8850770461dd)
- Call ID: 56710253-ec3b-45c0-9f0a-8850770461dd
+    type: :Person
+    source: :George_Mountbatten
+  AssignClass (b8d01c3c-c2a6-4f13-86db-167cacc6581e)
+ Call ID: b8d01c3c-c2a6-4f13-86db-167cacc6581e
   Args:
-    source: :Theodora
-    relation: :isSisterOf
-    target: :Nikolaos
-  AddTriple (57972e1e-21d6-4c79-a6f4-94780da5ad7e)
- Call ID: 57972e1e-21d6-4c79-a6f4-94780da5ad7e
+    source: :Sarah_Georgina_Walker
+    type: :Woman
+  AssignClass (1a58261f-a05b-4830-899a-157c507f5be3)
+ Call ID: 1a58261f-a05b-4830-899a-157c507f5be3
   Args:
-    target: :Nikolaos
-    relation: :isBrotherOf
-    source: :Philippos
-  AddTriple (5c1f950e-1654-4517-b060-33ca25fc9648)
- Call ID: 5c1f950e-1654-4517-b060-33ca25fc9648
+    type: :Person
+    source: :Sarah_Georgina_Walker
+  AddTriple (a72ec463-ae2d-4d4c-84fa-59e51b05bad3)
+ Call ID: a72ec463-ae2d-4d4c-84fa-59e51b05bad3
   Args:
-    source: :Giorgos_Vardinogiannis
-    relation: :isFatherOf
-    target: :Chrysi_Vardinogianni
-  AddTriple (f378df54-1c3e-4ee1-a988-579dbcd03f2f)
- Call ID: f378df54-1c3e-4ee1-a988-579dbcd03f2f
+    target: :George_Mountbatten
+    relation: :hasFather
+    source: :Tatiana_Mountbatten
+  AddTriple (066cfa9a-bbdc-40be-85c6-359463567763)
+ Call ID: 066cfa9a-bbdc-40be-85c6-359463567763
   Args:
-    source: :Agapi_Politi
-    relation: :isMotherOf
-    target: :Chrysi_Vardinogianni
-  Finish (7f4f9d72-b32e-47a8-a837-b4c0ab5f567a)
- Call ID: 7f4f9d72-b32e-47a8-a837-b4c0ab5f567a
+    source: :Tatiana_Mountbatten
+    relation: :hasMother
+    target: :Sarah_Georgina_Walker
+  AssignClass (2170f845-66b0-413f-a3e3-e5efe354c25a)
+ Call ID: 2170f845-66b0-413f-a3e3-e5efe354c25a
   Args:
+    source: :Henry_Mountbatten
+    type: :Man
+  AssignClass (9182c5de-b762-4bd5-b2c5-f170fb28f1cf)
+ Call ID: 9182c5de-b762-4bd5-b2c5-f170fb28f1cf
+  Args:
+    source: :Henry_Mountbatten
+    type: :Person
+  AddTriple (3a45b005-7dd6-4625-8970-585416f6959b)
+ Call ID: 3a45b005-7dd6-4625-8970-585416f6959b
+  Args:
+    relation: :hasBrother
+    target: :Henry_Mountbatten
+    source: :Tatiana_Mountbatten
+  AddTriple (5754fd20-463d-49cb-bbff-f44e32af6101)
+ Call ID: 5754fd20-463d-49cb-bbff-f44e32af6101
+  Args:
+    target: :George_Mountbatten
+    relation: :hasParent
+    source: :Henry_Mountbatten
+  AddTriple (89b205f0-eb77-44b7-b564-21562dcb47c4)
+ Call ID: 89b205f0-eb77-44b7-b564-21562dcb47c4
+  Args:
+    source: :Henry_Mountbatten
+    relation: :hasParent
+    target: :Sarah_Georgina_Walker
+  AssignClass (caf547ba-7756-476e-b77d-f0e9a8c79633)
+ Call ID: caf547ba-7756-476e-b77d-f0e9a8c79633
+  Args:
+    type: :Man
+    source: :Prince_George_of_Battenberg
+  AssignClass (ab9b9a77-d0bf-444f-9e1a-9a717b5e02e2)
+ Call ID: ab9b9a77-d0bf-444f-9e1a-9a717b5e02e2
+  Args:
+    source: :Prince_George_of_Battenberg
+    type: :Person
+  AssignClass (94c25eea-bf12-4734-a574-10ccc6a964cb)
+ Call ID: 94c25eea-bf12-4734-a574-10ccc6a964cb
+  Args:
+    type: :Woman
+    source: :Countess_Nadejda_Mikhailovna_de_Torby
+  AssignClass (0778e783-ee5d-4179-8600-3782ef1a9de9)
+ Call ID: 0778e783-ee5d-4179-8600-3782ef1a9de9
+  Args:
+    type: :Person
+    source: :Countess_Nadejda_Mikhailovna_de_Torby
+  AddTriple (51e178d5-2307-4c7e-a6d7-e73d7f6ec1ce)
+ Call ID: 51e178d5-2307-4c7e-a6d7-e73d7f6ec1ce
+  Args:
+    source: :Tatiana_Mountbatten
+    relation: :hasAncestor
+    target: :Prince_George_of_Battenberg
+  AddTriple (2dcecb00-0b81-461f-8e4e-ad7a6688153c)
+ Call ID: 2dcecb00-0b81-461f-8e4e-ad7a6688153c
+  Args:
+    source: :Tatiana_Mountbatten
+    relation: :hasAncestor
+    target: :Countess_Nadejda_Mikhailovna_de_Torby
+  AssignClass (10f53799-6d99-49ec-a407-6328f8387ad3)
+ Call ID: 10f53799-6d99-49ec-a407-6328f8387ad3
+  Args:
+    type: :Person
+    source: :Alexander_Pushkin
+  AssignClass (9d1887c2-6b7c-42fe-908c-cba262f00b09)
+ Call ID: 9d1887c2-6b7c-42fe-908c-cba262f00b09
+  Args:
+    source: :Abram_Gannibal
+    type: :Person
+  AssignClass (3478d7be-cf86-4cca-9906-7fa0cb7053e6)
+ Call ID: 3478d7be-cf86-4cca-9906-7fa0cb7053e6
+  Args:
+    type: :Person
+    source: :Louis_II_Grand_Duke_of_Hesse
+  AssignClass (4c039ad7-7763-4f4e-b6a2-c4f68067d9aa)
+ Call ID: 4c039ad7-7763-4f4e-b6a2-c4f68067d9aa
+  Args:
+    type: :Person
+    source: :Louis_IV_Grand_Duke_of_Hesse
+  AssignClass (81636b2c-27ee-40a2-8fb7-8d4d562ca166)
+ Call ID: 81636b2c-27ee-40a2-8fb7-8d4d562ca166
+  Args:
+    source: :Nicholas_I_of_Russia
+    type: :Person
+  AssignClass (edbcba6f-c7fa-4020-a63a-822be6d60d0f)
+ Call ID: edbcba6f-c7fa-4020-a63a-822be6d60d0f
+  Args:
+    type: :Woman
+    source: :Queen_Victoria
+  AssignClass (65a1cb2a-073d-43c3-afc2-cbbe696ab671)
+ Call ID: 65a1cb2a-073d-43c3-afc2-cbbe696ab671
+  Args:
+    type: :Person
+    source: :Queen_Victoria
+  AddTriple (d9a1a028-044b-4f49-a83a-8ffd5d8f2754)
+ Call ID: d9a1a028-044b-4f49-a83a-8ffd5d8f2754
+  Args:
+    source: :Tatiana_Mountbatten
+    relation: :hasAncestor
+    target: :Alexander_Pushkin
+  AddTriple (ff1d3043-cb9c-4491-905a-bf3908ee3ee1)
+ Call ID: ff1d3043-cb9c-4491-905a-bf3908ee3ee1
+  Args:
+    source: :Tatiana_Mountbatten
+    target: :Abram_Gannibal
+    relation: :hasAncestor
+  AddTriple (479975b2-3c2d-4d94-bb31-f8673aece07e)
+ Call ID: 479975b2-3c2d-4d94-bb31-f8673aece07e
+  Args:
+    source: :Tatiana_Mountbatten
+    target: :Louis_II_Grand_Duke_of_Hesse
+    relation: :hasAncestor
+  AddTriple (b1f26d21-94ef-4616-af13-fa78ca894215)
+ Call ID: b1f26d21-94ef-4616-af13-fa78ca894215
+  Args:
+    source: :Tatiana_Mountbatten
+    relation: :hasAncestor
+    target: :Louis_IV_Grand_Duke_of_Hesse
+  AddTriple (c9ed0a70-fdde-40fd-9854-f92ad570766b)
+ Call ID: c9ed0a70-fdde-40fd-9854-f92ad570766b
+  Args:
+    source: :Tatiana_Mountbatten
+    relation: :hasAncestor
+    target: :Nicholas_I_of_Russia
+  AddTriple (00b4d662-2f1b-4ded-a640-47612a902be7)
+ Call ID: 00b4d662-2f1b-4ded-a640-47612a902be7
+  Args:
+    relation: :hasAncestor
+    target: :Queen_Victoria
+    source: :Tatiana_Mountbatten
+  Finish (14550307-f22d-4d6c-b858-84ac8ae0b98c)
+ Call ID: 14550307-f22d-4d6c-b858-84ac8ae0b98c
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -601,44 +762,50 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Agapi_Politi a :Woman ;
-      :isMotherOf data:Chrysi_Vardinogianni .
+  data:Tatiana_Mountbatten a :Person,
+          :Woman ;
+      :hasAncestor data:Abram_Gannibal,
+          data:Alexander_Pushkin,
+          data:Countess_Nadejda_Mikhailovna_de_Torby,
+          data:Louis_II_Grand_Duke_of_Hesse,
+          data:Louis_IV_Grand_Duke_of_Hesse,
+          data:Nicholas_I_of_Russia,
+          data:Prince_George_of_Battenberg,
+          data:Queen_Victoria ;
+      :hasBirthYear 1990 ;
+      :hasBrother data:Henry_Mountbatten ;
+      :hasFather data:George_Mountbatten ;
+      :hasMother data:Sarah_Georgina_Walker .
 
-  data:Alexander_of_Yugoslavia a :Man .
+  data:Abram_Gannibal a :Person .
 
-  data:Alexia a :Woman ;
-      :isSisterOf data:Nikolaos .
+  data:Alexander_Pushkin a :Person .
 
-  data:Anne-Marie a :Woman ;
-      :isMotherOf data:Nikolaos .
+  data:Countess_Nadejda_Mikhailovna_de_Torby a :Person,
+          :Woman .
 
-  data:Constantine_II a :Man ;
-      :isFatherOf data:Nikolaos .
+  data:Henry_Mountbatten a :Man,
+          :Person ;
+      :hasParent data:George_Mountbatten,
+          data:Sarah_Georgina_Walker .
 
-  data:Giorgos_Vardinogiannis a :Man ;
-      :isFatherOf data:Chrysi_Vardinogianni .
+  data:Louis_II_Grand_Duke_of_Hesse a :Person .
 
-  data:Irene_of_Greece_and_Denmark a :Woman .
+  data:Louis_IV_Grand_Duke_of_Hesse a :Person .
 
-  data:Margareta_of_Romania a :Woman .
+  data:Nicholas_I_of_Russia a :Person .
 
-  data:Pavlos a :Man ;
-      :isBrotherOf data:Nikolaos .
+  data:Prince_George_of_Battenberg a :Man,
+          :Person .
 
-  data:Philippos a :Man ;
-      :isBrotherOf data:Nikolaos .
+  data:Queen_Victoria a :Person,
+          :Woman .
 
-  data:Sofia_of_Spain a :Woman .
+  data:George_Mountbatten a :Man,
+          :Person .
 
-  data:Tatiana_Ellinka_Blatnik a :Woman .
-
-  data:Theodora a :Woman ;
-      :isSisterOf data:Nikolaos .
-
-  data:Chrysi_Vardinogianni a :Woman .
-
-  data:Nikolaos a :Man ;
-      :hasBirthYear 1969 .
+  data:Sarah_Georgina_Walker a :Person,
+          :Woman .
 
 
 
@@ -650,46 +817,302 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (8d0b7f7e-772b-4134-a0c8-c372defbd6d5)
- Call ID: 8d0b7f7e-772b-4134-a0c8-c372defbd6d5
+  ValidateShacl (0727daa1-5476-428f-8534-dc4a32a098b1)
+ Call ID: 0727daa1-5476-428f-8534-dc4a32a098b1
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:4
+Total violations:36
 Violations:
 
   Violation [1]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The node Agapi_Politi is the subject of an isMotherOf relationship, but it is missing the mandatory class :Ancestor.
+      The person Sarah_Georgina_Walker is listed as a parent of Henry_Mountbatten, but she is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node :Agapi_Politi.
+      AssignClass(node: Sarah_Georgina_Walker, class: :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The node Anne-Marie is the subject of an isMotherOf relationship, but it is missing the mandatory class :Ancestor.
+      The person George_Mountbatten is listed as a parent of Henry_Mountbatten, but he is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node :Anne-Marie.
+      AssignClass(node: George_Mountbatten, class: :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Giorgos_Vardinogiannis is the subject of an isFatherOf relationship, but it is missing the mandatory class :Ancestor.
+      The person Alexander_Pushkin is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node :Giorgos_Vardinogiannis.
+      AssignClass(node: Alexander_Pushkin, class: :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Constantine_II is the subject of an isFatherOf relationship, but it is missing the mandatory class :Ancestor.
+      The person Countess_Nadejda_Mikhailovna_de_Torby is listed as an ancestor of Tatiana_Mountbatten, but she is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to the node :Constantine_II.
+      AssignClass(node: Countess_Nadejda_Mikhailovna_de_Torby, class: :Ancestor)
+
+
+  Violation [5]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Queen_Victoria is listed as an ancestor of Tatiana_Mountbatten, but she is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Queen_Victoria, class: :Ancestor)
+
+
+  Violation [6]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Nicholas_I_of_Russia is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Nicholas_I_of_Russia, class: :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Louis_II_Grand_Duke_of_Hesse is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Louis_II_Grand_Duke_of_Hesse, class: :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Prince_George_of_Battenberg is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Prince_George_of_Battenberg, class: :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Abram_Gannibal is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Abram_Gannibal, class: :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Louis_IV_Grand_Duke_of_Hesse is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Louis_IV_Grand_Duke_of_Hesse, class: :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person George_Mountbatten is listed as the father of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: George_Mountbatten, class: :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Sarah_Georgina_Walker is listed as the mother of Tatiana_Mountbatten, but she is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Sarah_Georgina_Walker, class: :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The person Sarah_Georgina_Walker is listed as a parent of Henry_Mountbatten, but she is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Sarah_Georgina_Walker, class: :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The person George_Mountbatten is listed as a parent of Henry_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: George_Mountbatten, class: :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Alexander_Pushkin is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Alexander_Pushkin, class: :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Countess_Nadejda_Mikhailovna_de_Torby is listed as an ancestor of Tatiana_Mountbatten, but she is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Countess_Nadejda_Mikhailovna_de_Torby, class: :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Queen_Victoria is listed as an ancestor of Tatiana_Mountbatten, but she is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Queen_Victoria, class: :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Nicholas_I_of_Russia is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Nicholas_I_of_Russia, class: :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Louis_II_Grand_Duke_of_Hesse is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Louis_II_Grand_Duke_of_Hesse, class: :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Prince_George_of_Battenberg is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Prince_George_of_Battenberg, class: :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Abram_Gannibal is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Abram_Gannibal, class: :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Louis_IV_Grand_Duke_of_Hesse is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Louis_IV_Grand_Duke_of_Hesse, class: :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person George_Mountbatten is listed as the father of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: George_Mountbatten, class: :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Sarah_Georgina_Walker is listed as the mother of Tatiana_Mountbatten, but she is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Sarah_Georgina_Walker, class: :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The person Sarah_Georgina_Walker is listed as a parent of Henry_Mountbatten, but she is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Sarah_Georgina_Walker, class: :Ancestor)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The person George_Mountbatten is listed as a parent of Henry_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: George_Mountbatten, class: :Ancestor)
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Alexander_Pushkin is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Alexander_Pushkin, class: :Ancestor)
+
+
+  Violation [28]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Countess_Nadejda_Mikhailovna_de_Torby is listed as an ancestor of Tatiana_Mountbatten, but she is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Countess_Nadejda_Mikhailovna_de_Torby, class: :Ancestor)
+
+
+  Violation [29]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Queen_Victoria is listed as an ancestor of Tatiana_Mountbatten, but she is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Queen_Victoria, class: :Ancestor)
+
+
+  Violation [30]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Nicholas_I_of_Russia is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Nicholas_I_of_Russia, class: :Ancestor)
+
+
+  Violation [31]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Louis_II_Grand_Duke_of_Hesse is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Louis_II_Grand_Duke_of_Hesse, class: :Ancestor)
+
+
+  Violation [32]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Prince_George_of_Battenberg is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Prince_George_of_Battenberg, class: :Ancestor)
+
+
+  Violation [33]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Abram_Gannibal is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Abram_Gannibal, class: :Ancestor)
+
+
+  Violation [34]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The person Louis_IV_Grand_Duke_of_Hesse is listed as an ancestor of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Louis_IV_Grand_Duke_of_Hesse, class: :Ancestor)
+
+
+  Violation [35]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person George_Mountbatten is listed as the father of Tatiana_Mountbatten, but he is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: George_Mountbatten, class: :Ancestor)
+
+
+  Violation [36]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Sarah_Georgina_Walker is listed as the mother of Tatiana_Mountbatten, but she is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Sarah_Georgina_Walker, class: :Ancestor)
 
 
 
@@ -698,26 +1121,83 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (5a55b9e3-dfc5-4567-bd99-471ce99a5d0d)
- Call ID: 5a55b9e3-dfc5-4567-bd99-471ce99a5d0d
+  AssignClass (ca78a9fa-391d-4949-9614-613560f8a6ac)
+ Call ID: ca78a9fa-391d-4949-9614-613560f8a6ac
   Args:
-    source: :Agapi_Politi
+    source: :Sarah_Georgina_Walker
     type: :Ancestor
-  AssignClass (8afe908c-9717-4347-bace-9be06df0f955)
- Call ID: 8afe908c-9717-4347-bace-9be06df0f955
-  Args:
-    source: :Anne-Marie
-    type: :Ancestor
-  AssignClass (d2a64811-576d-48cf-864e-b09f3cf6c4d6)
- Call ID: d2a64811-576d-48cf-864e-b09f3cf6c4d6
+  AssignClass (41df552f-e207-4e88-97c7-a1294eb2d528)
+ Call ID: 41df552f-e207-4e88-97c7-a1294eb2d528
   Args:
     type: :Ancestor
-    source: :Giorgos_Vardinogiannis
-  AssignClass (3761c88b-3937-48e1-81ce-13a1a564a0d7)
- Call ID: 3761c88b-3937-48e1-81ce-13a1a564a0d7
+    source: :George_Mountbatten
+  AssignClass (5363559e-9ab7-44a1-9fd7-27ff9bc75ee2)
+ Call ID: 5363559e-9ab7-44a1-9fd7-27ff9bc75ee2
   Args:
-    source: :Constantine_II
     type: :Ancestor
+    source: :Alexander_Pushkin
+  AssignClass (fd58dd13-08d1-4d0c-80f4-047e7c6577e3)
+ Call ID: fd58dd13-08d1-4d0c-80f4-047e7c6577e3
+  Args:
+    source: :Countess_Nadejda_Mikhailovna_de_Torby
+    type: :Ancestor
+  AssignClass (e722ca2e-157a-4650-8572-648552f5fc39)
+ Call ID: e722ca2e-157a-4650-8572-648552f5fc39
+  Args:
+    source: :Queen_Victoria
+    type: :Ancestor
+  AssignClass (f20737e8-7a67-44f1-adfa-cb13c2e44ae9)
+ Call ID: f20737e8-7a67-44f1-adfa-cb13c2e44ae9
+  Args:
+    source: :Nicholas_I_of_Russia
+    type: :Ancestor
+  AssignClass (26555bc5-c30d-4067-a1b3-b0f897a8ee0f)
+ Call ID: 26555bc5-c30d-4067-a1b3-b0f897a8ee0f
+  Args:
+    source: :Louis_II_Grand_Duke_of_Hesse
+    type: :Ancestor
+  AssignClass (9f5fda52-13e5-401d-be9e-17a04f11fa63)
+ Call ID: 9f5fda52-13e5-401d-be9e-17a04f11fa63
+  Args:
+    source: :Prince_George_of_Battenberg
+    type: :Ancestor
+  AssignClass (b6282806-fd60-423c-bad2-a6e023f3e3a7)
+ Call ID: b6282806-fd60-423c-bad2-a6e023f3e3a7
+  Args:
+    type: :Ancestor
+    source: :Abram_Gannibal
+  AssignClass (9c04270e-3462-4d7d-9ba8-cf64fb553fb7)
+ Call ID: 9c04270e-3462-4d7d-9ba8-cf64fb553fb7
+  Args:
+    type: :Ancestor
+    source: :Louis_IV_Grand_Duke_of_Hesse
+  ValidateShacl (9eb93041-73f6-4e95-8a1c-159816a59e42)
+ Call ID: 9eb93041-73f6-4e95-8a1c-159816a59e42
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -738,58 +1218,62 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Agapi_Politi a :Ancestor,
+  data:Tatiana_Mountbatten a :Person,
           :Woman ;
-      :isMotherOf data:Chrysi_Vardinogianni .
+      :hasAncestor data:Abram_Gannibal,
+          data:Alexander_Pushkin,
+          data:Countess_Nadejda_Mikhailovna_de_Torby,
+          data:Louis_II_Grand_Duke_of_Hesse,
+          data:Louis_IV_Grand_Duke_of_Hesse,
+          data:Nicholas_I_of_Russia,
+          data:Prince_George_of_Battenberg,
+          data:Queen_Victoria ;
+      :hasBirthYear 1990 ;
+      :hasBrother data:Henry_Mountbatten ;
+      :hasFather data:George_Mountbatten ;
+      :hasMother data:Sarah_Georgina_Walker .
 
-  data:Alexander_of_Yugoslavia a :Man .
+  data:Abram_Gannibal a :Ancestor,
+          :Person .
 
-  data:Alexia a :Woman ;
-      :isSisterOf data:Nikolaos .
+  data:Alexander_Pushkin a :Ancestor,
+          :Person .
 
-  data:Anne-Marie a :Ancestor,
-          :Woman ;
-      :isMotherOf data:Nikolaos .
+  data:Countess_Nadejda_Mikhailovna_de_Torby a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Constantine_II a :Ancestor,
-          :Man ;
-      :isFatherOf data:Nikolaos .
+  data:Henry_Mountbatten a :Man,
+          :Person ;
+      :hasParent data:George_Mountbatten,
+          data:Sarah_Georgina_Walker .
 
-  data:Giorgos_Vardinogiannis a :Ancestor,
-          :Man ;
-      :isFatherOf data:Chrysi_Vardinogianni .
+  data:Louis_II_Grand_Duke_of_Hesse a :Ancestor,
+          :Person .
 
-  data:Irene_of_Greece_and_Denmark a :Woman .
+  data:Louis_IV_Grand_Duke_of_Hesse a :Ancestor,
+          :Person .
 
-  data:Margareta_of_Romania a :Woman .
+  data:Nicholas_I_of_Russia a :Ancestor,
+          :Person .
 
-  data:Pavlos a :Man ;
-      :isBrotherOf data:Nikolaos .
+  data:Prince_George_of_Battenberg a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Philippos a :Man ;
-      :isBrotherOf data:Nikolaos .
+  data:Queen_Victoria a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Sofia_of_Spain a :Woman .
+  data:George_Mountbatten a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Tatiana_Ellinka_Blatnik a :Woman .
-
-  data:Theodora a :Woman ;
-      :isSisterOf data:Nikolaos .
-
-  data:Chrysi_Vardinogianni a :Woman .
-
-  data:Nikolaos a :Man ;
-      :hasBirthYear 1969 .
-
+  data:Sarah_Georgina_Walker a :Ancestor,
+          :Person,
+          :Woman .
 
 
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (45f4338d-e495-498f-9a58-dcd9ee22fe04)
- Call ID: 45f4338d-e495-498f-9a58-dcd9ee22fe04
-  Args:
 
 ================================= Tool Message =================================
 
@@ -799,6 +1283,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (559d84d3-17e6-4859-9ffa-aa651593ff80)
- Call ID: 559d84d3-17e6-4859-9ffa-aa651593ff80
+  Finish (3b5ffb13-dd1e-4f14-96ba-abc569e9e1d0)
+ Call ID: 3b5ffb13-dd1e-4f14-96ba-abc569e9e1d0
   Args:

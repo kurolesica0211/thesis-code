@@ -1,0 +1,115 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Woman ;
+    :hasBirthYear 1923 ;
+    :hasDeathYear 2016 ;
+    :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg,
+        data:Anton-G%C3%BCnther_Duke_of_Oldenburg,
+        data:Frederick_Augustus_II,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSister data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg ;
+    :isBloodrelationOf data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg ;
+    :isSiblingOf data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg ;
+    :isSisterOf data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg .
+
+data:Frederick_Augustus_II a :Ancestor,
+        :Man ;
+    :hasBrother data:Frederick_Augustus_II ;
+    :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg,
+        data:Anton-G%C3%BCnther_Duke_of_Oldenburg,
+        data:Frederick_Augustus_II,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :isAncestorOf data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isBloodrelationOf data:Frederick_Augustus_II ;
+    :isBrotherOf data:Frederick_Augustus_II ;
+    :isSiblingOf data:Frederick_Augustus_II .
+
+data:Friedrich_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Man ;
+    :hasBrother data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg,
+        data:Anton-G%C3%BCnther_Duke_of_Oldenburg,
+        data:Frederick_Augustus_II,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :isAncestorOf data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isBloodrelationOf data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :isBrotherOf data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :isSiblingOf data:Friedrich_of_Waldeck_and_Pyrmont .
+
+data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasChild data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :hasDeathYear 1948 ;
+    :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg,
+        data:Anton-G%C3%BCnther_Duke_of_Oldenburg,
+        data:Frederick_Augustus_II,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSister data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasSon data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isAncestorOf data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isAuntOf data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isBloodrelationOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isMotherOf data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isParentOf data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isSiblingOf data:Helena_of_Waldeck_and_Pyrmont ;
+    :isSisterOf data:Helena_of_Waldeck_and_Pyrmont .
+
+data:Nikolaus_of_Oldenburg a :Ancestor,
+        :Man ;
+    :hasBirthYear 1897 ;
+    :hasBrother data:Nikolaus_of_Oldenburg ;
+    :hasChild data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :hasDeathYear 1970 ;
+    :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg,
+        data:Anton-G%C3%BCnther_Duke_of_Oldenburg,
+        data:Frederick_Augustus_II,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :hasSon data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isAncestorOf data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isBloodrelationOf data:Nikolaus_of_Oldenburg ;
+    :isBrotherOf data:Nikolaus_of_Oldenburg ;
+    :isFatherOf data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isParentOf data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isSiblingOf data:Nikolaus_of_Oldenburg ;
+    :isUncleOf data:Anton-G%C3%BCnther_Duke_of_Oldenburg .
+
+data:Anton-G%C3%BCnther_Duke_of_Oldenburg a :Man ;
+    :hasAncestor data:Frederick_Augustus_II,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :hasBirthYear 1923 ;
+    :hasBrother data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :hasDeathYear 2014 ;
+    :hasFather data:Nikolaus_of_Oldenburg ;
+    :hasMarriageYear "1951"^^xsd:string ;
+    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasParent data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg,
+        data:Anton-G%C3%BCnther_Duke_of_Oldenburg,
+        data:Frederick_Augustus_II,
+        data:Friedrich_of_Waldeck_and_Pyrmont,
+        data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :isBloodrelationOf data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isBrotherOf data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isChildOf data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg ;
+    :isSiblingOf data:Anton-G%C3%BCnther_Duke_of_Oldenburg ;
+    :isSonOf data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg .
+

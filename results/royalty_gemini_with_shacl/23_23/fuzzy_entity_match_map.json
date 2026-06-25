@@ -16,14 +16,14 @@
       "qid": "Q113733",
       "label": "Archduchess Gabriela of Austria",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Otto_von_Habsburg",
       "qid": "Q76343",
       "label": "Otto von Habsburg",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     }
   ],
   "entities": [
@@ -38,11 +38,11 @@
       "ground_truth_qid": "Q113733",
       "ground_truth_label": "Archduchess Gabriela of Austria",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Gabriela von Habsburg",
       "best_candidate_label": "Archduchess Gabriela of Austria",
       "best_candidate_qid": "Q113733",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -56,11 +56,11 @@
       "ground_truth_qid": "Q76343",
       "ground_truth_label": "Otto von Habsburg",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Otto von Habsburg",
       "best_candidate_label": "Otto von Habsburg",
       "best_candidate_qid": "Q76343",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -75,11 +75,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Otto von Habsburg",
-      "best_candidate_label": "Otto von Habsburg",
-      "best_candidate_qid": "Q76343",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.23076923076923078
+      "best_candidate_match_text": "Archduchess Gabriela of Austria",
+      "best_candidate_label": "Archduchess Gabriela of Austria",
+      "best_candidate_qid": "Q113733",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3
     },
     {
       "extracted_uri": "http://example.org/data/Christian_Meister",
@@ -93,11 +93,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Crown Prince Otto of Austria",
-      "best_candidate_label": "Otto von Habsburg",
-      "best_candidate_qid": "Q76343",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.3111111111111111
+      "best_candidate_match_text": "Gabriela von Habsburg",
+      "best_candidate_label": "Archduchess Gabriela of Austria",
+      "best_candidate_qid": "Q113733",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3684210526315789
     },
     {
       "extracted_uri": "http://example.org/data/Regina_von_Habsburg",

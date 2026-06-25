@@ -77,7 +77,6 @@ After the dismissal of Mussolini on 25 July 1943, Aimone abdicated on 31 July as
 Early life
 
 Prince Aimone Roberto Margherita Maria Giuseppe Torino of Savoy-Aosta was born in Turin the second son of Prince Emanuele Filiberto, Duke of Aosta (eldest son of Prince Amedeo, 1st Duke of Aosta (and sometime "King Amadeo I of Spain") by his wife, née Vittoria dal Pozzo, Principessa della Cisterna) and Princess Hélène of Orléans (daughter of Philippe, comte de Paris, and Princess Marie Isabelle of Orléans).
-As his patrilinal great-grandfather was King Victor Emmanuel II of Italy, he was a member of the House of Savoy.
 With his brother Amedeo, he was educated at St  David's College, Reigate, Surrey, England, and Aimone later went to study at the naval academy in Livorno.
 On 1 April 1921, Prince Aimone became a member of the Italian Senate.
 In 1929, twenty years after his uncle Prince Luigi Amedeo, Duke of the Abruzzi had attempted to climb K2 in Karakoram, Prince Aimone led an expedition to Karakorum.
@@ -105,6 +104,8 @@ The claim to the Aosta ducal title passed to his son Prince Amedeo.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -120,39 +121,9 @@ The claim to the Aosta ducal title passed to his son Prince Amedeo.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -167,6 +138,23 @@ The claim to the Aosta ducal title passed to his son Prince Amedeo.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -184,6 +172,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -251,29 +254,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -282,6 +277,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -294,6 +297,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -302,17 +307,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -340,6 +347,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -355,170 +446,265 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (27bce1c5-92a2-4468-b4ba-64509dcd0140)
- Call ID: 27bce1c5-92a2-4468-b4ba-64509dcd0140
+  AssignClass (51c5008c-2f97-4e84-a872-ff41907de1d8)
+ Call ID: 51c5008c-2f97-4e84-a872-ff41907de1d8
   Args:
+    source: Prince_Aimone
     type: :Man
-    source: Prince_Aimone_4th_Duke_of_Aosta
-  AssignClass (ed56189d-ee40-4477-9753-3f8587100114)
- Call ID: ed56189d-ee40-4477-9753-3f8587100114
+  AssignClass (42d3c3ab-67e8-42a0-8691-ab11c12d9641)
+ Call ID: 42d3c3ab-67e8-42a0-8691-ab11c12d9641
   Args:
-    source: Prince_Emanuele_Filiberto_Duke_of_Aosta
-    type: :Man
-  AssignClass (1c4362fb-8e16-4cda-8eca-9a77538dd5ed)
- Call ID: 1c4362fb-8e16-4cda-8eca-9a77538dd5ed
-  Args:
-    type: :Man
-    source: Prince_Amedeo_1st_Duke_of_Aosta
-  AssignClass (9363641e-b72a-410d-951d-44df10e5d6ea)
- Call ID: 9363641e-b72a-410d-951d-44df10e5d6ea
-  Args:
-    source: Vittoria_dal_Pozzo
-    type: :Woman
-  AssignClass (f6de9fba-c51a-4637-ab82-22b26956360d)
- Call ID: f6de9fba-c51a-4637-ab82-22b26956360d
-  Args:
-    source: Princess_Helene_of_Orleans
-    type: :Woman
-  AssignClass (889f002a-6530-432c-bb63-f8adc1df097e)
- Call ID: 889f002a-6530-432c-bb63-f8adc1df097e
-  Args:
-    source: Philippe_comte_de_Paris
-    type: :Man
-  AssignClass (090bdea6-0f8c-41f5-9f90-128bd1f5c47b)
- Call ID: 090bdea6-0f8c-41f5-9f90-128bd1f5c47b
-  Args:
-    type: :Woman
-    source: Princess_Marie_Isabelle_of_Orleans
-  AssignClass (484952d8-0583-4c84-919e-58449f58dd61)
- Call ID: 484952d8-0583-4c84-919e-58449f58dd61
-  Args:
-    type: :Man
-    source: King_Victor_Emmanuel_II_of_Italy
-  AssignClass (a248f8dc-a9da-4dab-ac55-d7198c5ea309)
- Call ID: a248f8dc-a9da-4dab-ac55-d7198c5ea309
-  Args:
-    type: :Man
-    source: Prince_Amedeo_3rd_Duke_of_Aosta
-  AssignClass (0e1f3249-ab7e-484a-88da-c9baec1aa53e)
- Call ID: 0e1f3249-ab7e-484a-88da-c9baec1aa53e
-  Args:
-    type: :Woman
-    source: Princess_Irene_of_Greece_and_Denmark
-  AssignClass (32a4a4fb-3812-4878-bec3-d668d238011b)
- Call ID: 32a4a4fb-3812-4878-bec3-d668d238011b
-  Args:
-    source: King_Constantine_I
-    type: :Man
-  AssignClass (045fdad9-de5c-4476-9554-419d21247059)
- Call ID: 045fdad9-de5c-4476-9554-419d21247059
-  Args:
-    source: Princess_Sophie_of_Prussia
-    type: :Woman
-  AssignClass (19c0f2dd-dfac-43c0-89b1-6a2a8affc558)
- Call ID: 19c0f2dd-dfac-43c0-89b1-6a2a8affc558
-  Args:
-    type: :Man
-    source: Prince_Amedeo_son_of_Aimone
-  AddLiteral (7eea0ad1-ebb7-431c-96b7-151083926fec)
- Call ID: 7eea0ad1-ebb7-431c-96b7-151083926fec
+    source: Prince_Aimone
+    type: :Person
+  AddLiteral (d7649492-29fa-4ea6-a439-5df880386d3b)
+ Call ID: d7649492-29fa-4ea6-a439-5df880386d3b
   Args:
     literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Prince_Aimone_4th_Duke_of_Aosta
+    source: Prince_Aimone
     literal_value: 1900
-  AddLiteral (6499b19b-c31c-47a6-b0c6-6dee74f0df5b)
- Call ID: 6499b19b-c31c-47a6-b0c6-6dee74f0df5b
+  AddLiteral (e435a0e9-3838-46c3-b1a5-ecf90fcc77cc)
+ Call ID: e435a0e9-3838-46c3-b1a5-ecf90fcc77cc
   Args:
-    literal_value: 1948
-    source: Prince_Aimone_4th_Duke_of_Aosta
-    relation: :hasDeathYear
     literal_type: xsd:integer
-  AddTriple (676accb3-c60e-4c6f-b9de-7f59be70ddfb)
- Call ID: 676accb3-c60e-4c6f-b9de-7f59be70ddfb
+    source: Prince_Aimone
+    relation: :hasDeathYear
+    literal_value: 1948
+  AssignClass (800ce558-948f-4a91-9cd2-f19e5d089695)
+ Call ID: 800ce558-948f-4a91-9cd2-f19e5d089695
   Args:
-    target: Prince_Emanuele_Filiberto_Duke_of_Aosta
+    source: Prince_Emanuele_Filiberto
+    type: :Man
+  AssignClass (642f6089-43e0-48ee-b193-64ed308270ad)
+ Call ID: 642f6089-43e0-48ee-b193-64ed308270ad
+  Args:
+    source: Prince_Emanuele_Filiberto
+    type: :Person
+  AddTriple (9ccdcc64-23cd-473d-88de-463ffc6d0e94)
+ Call ID: 9ccdcc64-23cd-473d-88de-463ffc6d0e94
+  Args:
+    target: Prince_Emanuele_Filiberto
+    source: Prince_Aimone
     relation: :hasFather
-    source: Prince_Aimone_4th_Duke_of_Aosta
-  AddTriple (b645b53c-769e-4265-95b4-fe60b2198fd2)
- Call ID: b645b53c-769e-4265-95b4-fe60b2198fd2
+  AssignClass (f7b01b90-b470-4d18-90b1-346b78f65378)
+ Call ID: f7b01b90-b470-4d18-90b1-346b78f65378
   Args:
-    source: Prince_Aimone_4th_Duke_of_Aosta
-    relation: :hasMother
+    source: Princess_Helene_of_Orleans
+    type: :Woman
+  AssignClass (03d38a8a-4699-4837-b065-ad49cd448c95)
+ Call ID: 03d38a8a-4699-4837-b065-ad49cd448c95
+  Args:
+    source: Princess_Helene_of_Orleans
+    type: :Person
+  AddTriple (5ed0ea88-6ba1-4588-b3d9-def228eb9668)
+ Call ID: 5ed0ea88-6ba1-4588-b3d9-def228eb9668
+  Args:
     target: Princess_Helene_of_Orleans
-  AddTriple (6c2a2978-f1f1-4f94-9f55-e1f24fd5ece3)
- Call ID: 6c2a2978-f1f1-4f94-9f55-e1f24fd5ece3
+    source: Prince_Aimone
+    relation: :hasMother
+  AssignClass (41f1502b-f036-4747-b206-fb0e9f8f3b51)
+ Call ID: 41f1502b-f036-4747-b206-fb0e9f8f3b51
+  Args:
+    source: Prince_Amedeo_3rd_Duke_of_Aosta
+    type: :Man
+  AssignClass (eb47aed6-95fe-4b0a-b4ef-61ae386b5c1c)
+ Call ID: eb47aed6-95fe-4b0a-b4ef-61ae386b5c1c
+  Args:
+    source: Prince_Amedeo_3rd_Duke_of_Aosta
+    type: :Person
+  AddTriple (53315eea-c864-452f-b326-693637f76c7d)
+ Call ID: 53315eea-c864-452f-b326-693637f76c7d
+  Args:
+    target: Prince_Amedeo_3rd_Duke_of_Aosta
+    source: Prince_Aimone
+    relation: :hasBrother
+  AssignClass (70a3e17f-8b72-4831-b5fe-ffef42eaa7f3)
+ Call ID: 70a3e17f-8b72-4831-b5fe-ffef42eaa7f3
+  Args:
+    source: Prince_Amedeo_1st_Duke_of_Aosta
+    type: :Man
+  AssignClass (580d7094-55c0-4979-ac72-3331ecc961da)
+ Call ID: 580d7094-55c0-4979-ac72-3331ecc961da
+  Args:
+    source: Prince_Amedeo_1st_Duke_of_Aosta
+    type: :Person
+  AddTriple (32c986c1-90b8-41e7-9b6d-1755c0458cf5)
+ Call ID: 32c986c1-90b8-41e7-9b6d-1755c0458cf5
   Args:
     target: Prince_Amedeo_1st_Duke_of_Aosta
-    source: Prince_Emanuele_Filiberto_Duke_of_Aosta
+    source: Prince_Emanuele_Filiberto
     relation: :hasFather
-  AddTriple (cfa968c2-5a15-4b0e-b2b6-0e31737c63cf)
- Call ID: cfa968c2-5a15-4b0e-b2b6-0e31737c63cf
+  AssignClass (f97d5983-a909-4e69-af55-3d5bf6721d86)
+ Call ID: f97d5983-a909-4e69-af55-3d5bf6721d86
   Args:
-    source: Prince_Emanuele_Filiberto_Duke_of_Aosta
+    source: Vittoria_dal_Pozzo
+    type: :Woman
+  AssignClass (c435cb33-448d-40c2-b1f9-bf2d17110357)
+ Call ID: c435cb33-448d-40c2-b1f9-bf2d17110357
+  Args:
+    source: Vittoria_dal_Pozzo
+    type: :Person
+  AddTriple (49cf3c8e-de74-4a7f-a96a-cf04b430f212)
+ Call ID: 49cf3c8e-de74-4a7f-a96a-cf04b430f212
+  Args:
+    source: Prince_Emanuele_Filiberto
     relation: :hasMother
     target: Vittoria_dal_Pozzo
-  AddTriple (40582d6b-e0a1-4c31-b619-f0058c41a111)
- Call ID: 40582d6b-e0a1-4c31-b619-f0058c41a111
+  AssignClass (5e93dc59-4ba2-4bbc-89d9-f7c667296028)
+ Call ID: 5e93dc59-4ba2-4bbc-89d9-f7c667296028
   Args:
-    target: Philippe_comte_de_Paris
-    relation: :hasFather
+    source: Philippe_comte_de_Paris
+    type: :Man
+  AssignClass (f242a0a4-356c-4432-b787-12ad4111e9db)
+ Call ID: f242a0a4-356c-4432-b787-12ad4111e9db
+  Args:
+    source: Philippe_comte_de_Paris
+    type: :Person
+  AddTriple (31dc1270-8e10-4a27-87f7-c4c245311a67)
+ Call ID: 31dc1270-8e10-4a27-87f7-c4c245311a67
+  Args:
     source: Princess_Helene_of_Orleans
-  AddTriple (f568fe65-0bb2-4bda-b755-538539a9eaed)
- Call ID: f568fe65-0bb2-4bda-b755-538539a9eaed
+    relation: :hasFather
+    target: Philippe_comte_de_Paris
+  AssignClass (7b086b7b-e151-42c0-9c1b-e8ba098524fa)
+ Call ID: 7b086b7b-e151-42c0-9c1b-e8ba098524fa
+  Args:
+    source: Princess_Marie_Isabelle_of_Orleans
+    type: :Woman
+  AssignClass (1131e1c3-25d2-458f-b593-f6a118a5dae7)
+ Call ID: 1131e1c3-25d2-458f-b593-f6a118a5dae7
+  Args:
+    source: Princess_Marie_Isabelle_of_Orleans
+    type: :Person
+  AddTriple (861d4e22-3841-4619-9ce5-e810beb0a996)
+ Call ID: 861d4e22-3841-4619-9ce5-e810beb0a996
   Args:
     target: Princess_Marie_Isabelle_of_Orleans
     source: Princess_Helene_of_Orleans
     relation: :hasMother
-  AddTriple (732ad8b7-eadb-4db4-8901-c673b85399e9)
- Call ID: 732ad8b7-eadb-4db4-8901-c673b85399e9
+  AssignClass (f1872750-da66-41ad-ae36-ef2f82d691f3)
+ Call ID: f1872750-da66-41ad-ae36-ef2f82d691f3
   Args:
-    target: Prince_Amedeo_3rd_Duke_of_Aosta
-    source: Prince_Aimone_4th_Duke_of_Aosta
-    relation: :hasBrother
-  AddTriple (6205b1e9-912d-4565-8c9a-316120e3cc4a)
- Call ID: 6205b1e9-912d-4565-8c9a-316120e3cc4a
+    source: Prince_Luigi_Amedeo_Duke_of_the_Abruzzi
+    type: :Man
+  AssignClass (7ce01df0-ee36-463f-922e-7e56b129a32f)
+ Call ID: 7ce01df0-ee36-463f-922e-7e56b129a32f
   Args:
-    target: Prince_Emanuele_Filiberto_Duke_of_Aosta
-    source: Prince_Amedeo_3rd_Duke_of_Aosta
+    source: Prince_Luigi_Amedeo_Duke_of_the_Abruzzi
+    type: :Person
+  AddTriple (97b3b9fa-ba26-4a33-8411-e25f36756129)
+ Call ID: 97b3b9fa-ba26-4a33-8411-e25f36756129
+  Args:
+    source: Prince_Luigi_Amedeo_Duke_of_the_Abruzzi
+    relation: :isUncleOf
+    target: Prince_Aimone
+  AssignClass (8a9a37c2-75bd-41e6-b69e-c0c7fb221dc8)
+ Call ID: 8a9a37c2-75bd-41e6-b69e-c0c7fb221dc8
+  Args:
+    source: Infanta_Beatriz_of_Spain
+    type: :Woman
+  AssignClass (73a3917a-fe93-4bad-a120-358a56ccbd2f)
+ Call ID: 73a3917a-fe93-4bad-a120-358a56ccbd2f
+  Args:
+    source: Infanta_Beatriz_of_Spain
+    type: :Person
+  AssignClass (1b9008de-fdb7-4dcb-8d0f-31d769245415)
+ Call ID: 1b9008de-fdb7-4dcb-8d0f-31d769245415
+  Args:
+    source: King_Alfonso_XIII
+    type: :Man
+  AssignClass (313279fb-a260-4ff1-b671-8a79ae6de661)
+ Call ID: 313279fb-a260-4ff1-b671-8a79ae6de661
+  Args:
+    source: King_Alfonso_XIII
+    type: :Person
+  AddTriple (5ae68e00-9cc4-4290-8322-99e760b922f4)
+ Call ID: 5ae68e00-9cc4-4290-8322-99e760b922f4
+  Args:
+    source: Infanta_Beatriz_of_Spain
     relation: :hasFather
-  AddTriple (ec9721f0-5439-46f9-8345-d90bf2c9da8e)
- Call ID: ec9721f0-5439-46f9-8345-d90bf2c9da8e
+    target: King_Alfonso_XIII
+  AssignClass (3177883a-7cbe-4a47-b0f9-e1199722c859)
+ Call ID: 3177883a-7cbe-4a47-b0f9-e1199722c859
   Args:
-    target: Princess_Helene_of_Orleans
+    source: Princess_Irene_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (7092e905-0fbf-408f-bb0b-8e26bd5d1daf)
+ Call ID: 7092e905-0fbf-408f-bb0b-8e26bd5d1daf
+  Args:
+    source: Princess_Irene_of_Greece_and_Denmark
+    type: :Person
+  AddTriple (1425ba74-2d65-4654-af29-a5a064cfd46a)
+ Call ID: 1425ba74-2d65-4654-af29-a5a064cfd46a
+  Args:
+    source: Prince_Amedeo_Duke_of_Aosta_son
     relation: :hasMother
-    source: Prince_Amedeo_3rd_Duke_of_Aosta
-  AddTriple (28803137-7b62-423e-a0bf-f0c61d49dbbb)
- Call ID: 28803137-7b62-423e-a0bf-f0c61d49dbbb
-  Args:
-    relation: :hasFather
-    source: Prince_Aimone_4th_Duke_of_Aosta
-    target: Prince_Amedeo_son_of_Aimone
-  AddTriple (aff2063b-7330-429f-8a2b-bd2cd161ddc5)
- Call ID: aff2063b-7330-429f-8a2b-bd2cd161ddc5
-  Args:
     target: Princess_Irene_of_Greece_and_Denmark
-    source: Prince_Amedeo_son_of_Aimone
-    relation: :hasMother
-  AddTriple (0647fdee-0dcd-40b5-b5bb-faf86963ac81)
- Call ID: 0647fdee-0dcd-40b5-b5bb-faf86963ac81
+  AddLiteral (2a964986-0327-4f48-895b-35d5cb41bc1d)
+ Call ID: 2a964986-0327-4f48-895b-35d5cb41bc1d
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 1939
+    source: Prince_Aimone
+    literal_type: xsd:integer
+  AddTriple (6f9210fc-5e90-48ce-aa66-17a18dc50f2c)
+ Call ID: 6f9210fc-5e90-48ce-aa66-17a18dc50f2c
+  Args:
+    target: Prince_Aimone
+    source: Prince_Amedeo_Duke_of_Aosta_son
+    relation: :hasFather
+  AssignClass (fe970933-a47f-46de-9c60-5e669193610c)
+ Call ID: fe970933-a47f-46de-9c60-5e669193610c
+  Args:
+    source: Prince_Amedeo_Duke_of_Aosta_son
+    type: :Man
+  AssignClass (24be3644-54e3-4e26-9ba0-55d5d1f338d0)
+ Call ID: 24be3644-54e3-4e26-9ba0-55d5d1f338d0
+  Args:
+    source: Prince_Amedeo_Duke_of_Aosta_son
+    type: :Person
+  AssignClass (5da13f90-bb07-412f-9d33-37d8789758cc)
+ Call ID: 5da13f90-bb07-412f-9d33-37d8789758cc
+  Args:
+    source: King_Constantine_I
+    type: :Man
+  AssignClass (c20708ae-7aa8-492b-8a27-cf9e1cb1b9d0)
+ Call ID: c20708ae-7aa8-492b-8a27-cf9e1cb1b9d0
+  Args:
+    source: King_Constantine_I
+    type: :Person
+  AddTriple (2eb5504b-3c65-4a6d-9aad-2fe1e11d4aeb)
+ Call ID: 2eb5504b-3c65-4a6d-9aad-2fe1e11d4aeb
   Args:
     source: Princess_Irene_of_Greece_and_Denmark
     relation: :hasFather
     target: King_Constantine_I
-  AddTriple (1c9b7dce-c040-4b6e-b9e2-1fa4cc04e90f)
- Call ID: 1c9b7dce-c040-4b6e-b9e2-1fa4cc04e90f
+  AssignClass (7ca44247-0320-4e24-abfb-2f33857ba02a)
+ Call ID: 7ca44247-0320-4e24-abfb-2f33857ba02a
+  Args:
+    source: Princess_Sophie_of_Prussia
+    type: :Woman
+  AssignClass (7d12029b-383d-49d9-8c23-fc8e8c3f9cad)
+ Call ID: 7d12029b-383d-49d9-8c23-fc8e8c3f9cad
+  Args:
+    source: Princess_Sophie_of_Prussia
+    type: :Person
+  AddTriple (79be3547-6632-4634-9398-7564f1164af2)
+ Call ID: 79be3547-6632-4634-9398-7564f1164af2
   Args:
     source: Princess_Irene_of_Greece_and_Denmark
     relation: :hasMother
     target: Princess_Sophie_of_Prussia
-  AddLiteral (f8457047-a8b6-4e26-b2f9-78f22e5343a3)
- Call ID: f8457047-a8b6-4e26-b2f9-78f22e5343a3
+  AssignClass (db33fbe5-4e98-4a28-ac2d-5cabd545b171)
+ Call ID: db33fbe5-4e98-4a28-ac2d-5cabd545b171
   Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: Prince_Aimone_4th_Duke_of_Aosta
-    literal_value: 1939
-  Finish (2d166103-c14f-4c51-9ea2-5a42449ed2c8)
- Call ID: 2d166103-c14f-4c51-9ea2-5a42449ed2c8
+    source: Victor_Emmanuel_III
+    type: :Man
+  AssignClass (6b216c4e-30a8-4a12-8a05-ea4a0214118a)
+ Call ID: 6b216c4e-30a8-4a12-8a05-ea4a0214118a
+  Args:
+    source: Victor_Emmanuel_III
+    type: :Person
+  Finish (e8263dda-be98-49f9-b668-bc767d35eaec)
+ Call ID: e8263dda-be98-49f9-b668-bc767d35eaec
   Args:

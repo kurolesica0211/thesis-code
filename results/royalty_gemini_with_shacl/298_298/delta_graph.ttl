@@ -2,41 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Diane_of_Orleans a :Person,
+data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,
         :Woman ;
-    :hasBirthYear 1940 ;
-    :hasBrother data:Henri_son_of_Henri ;
-    :hasFather data:Henri_Count_of_Paris ;
-    :hasMarriageYear data:Carl_Duke_of_Wurttemberg,
-        1960 ;
-    :hasMother data:Isabelle_of_Orleans_Braganza .
+    :hasBirthYear 1877 ;
+    :hasDeathYear 1947 ;
+    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1900 ;
+    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Peter_Ferdinand_of_Austria .
 
-data:Carl_Duke_of_Wurttemberg a :Man,
-        :Person ;
-    :hasFather data:Philipp_Albrecht_Duke_of_Wurttemberg ;
-    :hasMother data:Rosa_of_Austria ;
-    :hasSister data:Marie_Therese .
-
-data:Henri_Count_of_Paris a :Ancestor,
+data:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
         :Man,
         :Person .
 
-data:Henri_son_of_Henri a :Man,
-        :Person ;
-    :hasMarriageYear data:Marie_Therese .
-
-data:Isabelle_of_Orleans_Braganza a :Ancestor,
+data:Alice_of_Bourbon-Parma a :Ancestor,
         :Person,
         :Woman .
 
-data:Philipp_Albrecht_Duke_of_Wurttemberg a :Ancestor,
+data:Ferdinand_IV_of_Tuscany a :Ancestor,
         :Man,
         :Person .
 
-data:Rosa_of_Austria a :Ancestor,
+data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
         :Person,
         :Woman .
 
-data:Marie_Therese a :Person,
-        :Woman .
+data:Peter_Ferdinand_of_Austria a :Man,
+        :Person ;
+    :hasFather data:Ferdinand_IV_of_Tuscany ;
+    :hasMother data:Alice_of_Bourbon-Parma .
 

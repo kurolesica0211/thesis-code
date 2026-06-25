@@ -1,0 +1,149 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "1537:1541"^^xsd:string,
+        "1708:1714"^^xsd:string,
+        "216:220"^^xsd:string ;
+    data:posIndicesPart "715:723"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasChild data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasDaughter data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasRelation data:Princess_Alice_of_Battenberg,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isAncestorOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isAuntOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isParentOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Princess_Valerie-_Margravine_of_Baden a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Valerie, Margravine of Baden"^^xsd:string ;
+    data:posIndicesFull "372:402"^^xsd:string ;
+    data:posIndicesPart "1061:1066"^^xsd:string,
+        "1893:1898"^^xsd:string,
+        "2074:2079"^^xsd:string,
+        "2199:2204"^^xsd:string,
+        "538:543"^^xsd:string,
+        "715:723"^^xsd:string ;
+    data:wdtLink wdt:Q6425396 ;
+    :alsoKnownAs "Archduchess Valerie of Austria"^^xsd:string,
+        "Valerie Isabella Erzherzogin von Österreich"^^xsd:string ;
+    :hasChild data:Prince_Bernhard-_Margrave_of_Baden ;
+    :hasRelation data:Prince_Bernhard-_Margrave_of_Baden,
+        data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasSon data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isAncestorOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isAuntOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isBloodrelationOf data:Princess_Valerie-_Margravine_of_Baden ;
+    :isMotherOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isParentOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isSiblingOf data:Princess_Valerie-_Margravine_of_Baden ;
+    :isSisterOf data:Princess_Valerie-_Margravine_of_Baden .
+
+data:Prince_Bernhard-_Margrave_of_Baden a :Man,
+        :Person ;
+    rdfs:label "Prince Bernhard, Margrave of Baden"^^xsd:string ;
+    data:posIndicesFull "0:37"^^xsd:string ;
+    data:posIndicesPart "1061:1066"^^xsd:string,
+        "1093:1101"^^xsd:string,
+        "1137:1143"^^xsd:string,
+        "1211:1219"^^xsd:string,
+        "1253:1259"^^xsd:string,
+        "1441:1449"^^xsd:string,
+        "1521:1527"^^xsd:string,
+        "1837:1845"^^xsd:string,
+        "1893:1898"^^xsd:string,
+        "2062:2070"^^xsd:string,
+        "2074:2079"^^xsd:string,
+        "2189:2195"^^xsd:string,
+        "2199:2204"^^xsd:string,
+        "2227:2235"^^xsd:string,
+        "2269:2275"^^xsd:string,
+        "233:241"^^xsd:string,
+        "2362:2370"^^xsd:string,
+        "278:283"^^xsd:string,
+        "349:357"^^xsd:string,
+        "361:366"^^xsd:string,
+        "468:474"^^xsd:string,
+        "478:483"^^xsd:string,
+        "526:534"^^xsd:string,
+        "538:543"^^xsd:string,
+        "610:616"^^xsd:string,
+        "747:753"^^xsd:string,
+        "754:762"^^xsd:string,
+        "907:915"^^xsd:string,
+        "987:993"^^xsd:string ;
+    data:wdtLink wdt:Q96731 ;
+    :alsoKnownAs "Bernhard Max Erbprinz von Baden"^^xsd:string,
+        "Bernhard Prinz und Markgraf von Baden"^^xsd:string ;
+    :hasAncestor data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasBrother data:Prince_Bernhard-_Margrave_of_Baden ;
+    :hasMother data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasParent data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasRelation data:Prince_Bernhard-_Margrave_of_Baden,
+        data:Princess_Valerie-_Margravine_of_Baden ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isBrotherOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isChildOf data:Princess_Valerie-_Margravine_of_Baden ;
+    :isSiblingOf data:Prince_Bernhard-_Margrave_of_Baden ;
+    :isSonOf data:Princess_Valerie-_Margravine_of_Baden .
+
+data:Princess_Theodora_of_Greece_and_Denmark_1 a :Person,
+        :Woman ;
+    rdfs:label "Princess Theodora of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "549:588"^^xsd:string ;
+    data:posIndicesPart "715:723"^^xsd:string ;
+    data:wdtLink wdt:Q255382 ;
+    :alsoKnownAs "Princess Theodora, Margravine of Baden"^^xsd:string,
+        "Theodora, Margravine of Baden"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Princess_Alice_of_Battenberg,
+        data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isBloodrelationOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
+    :isSisterOf data:Princess_Theodora_of_Greece_and_Denmark_1 .
+

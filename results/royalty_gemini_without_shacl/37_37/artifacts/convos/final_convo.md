@@ -131,6 +131,8 @@ The elder son was not given the title of Prince of Asturias, but replaced his mo
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -146,39 +148,9 @@ The elder son was not given the title of Prince of Asturias, but replaced his mo
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -193,6 +165,23 @@ The elder son was not given the title of Prince of Asturias, but replaced his mo
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -210,6 +199,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,29 +281,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -308,6 +304,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -320,6 +324,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -328,17 +334,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -366,6 +374,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -381,207 +473,162 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bc125a30-45d6-4961-9913-a6dc93a6e847)
- Call ID: bc125a30-45d6-4961-9913-a6dc93a6e847
+  AssignClass (5185f2d0-b632-4514-8fa1-55bfb72308ae)
+ Call ID: 5185f2d0-b632-4514-8fa1-55bfb72308ae
+  Args:
+    source: Maria_de_las_Mercedes
+    type: :Woman
+  AssignClass (e6f8b5d9-5c11-4fd0-814b-c1d6217ab69f)
+ Call ID: e6f8b5d9-5c11-4fd0-814b-c1d6217ab69f
+  Args:
+    type: :Man
+    source: Alfonso_XII
+  AssignClass (89f6f67e-8c31-4386-9848-bdb95faa8cee)
+ Call ID: 89f6f67e-8c31-4386-9848-bdb95faa8cee
+  Args:
+    source: Maria_Christina_of_Austria
+    type: :Woman
+  AssignClass (0eb48587-80e0-405d-a722-2e92a9e46a80)
+ Call ID: 0eb48587-80e0-405d-a722-2e92a9e46a80
+  Args:
+    type: :Man
+    source: Alfonso_XIII
+  AssignClass (151f7731-3139-4db3-98e1-a95727b69053)
+ Call ID: 151f7731-3139-4db3-98e1-a95727b69053
   Args:
     type: :Woman
-    source: Mercedes
-  AssignClass (f2d412a0-25bd-4ce1-a8de-9e1e657882cb)
- Call ID: f2d412a0-25bd-4ce1-a8de-9e1e657882cb
+    source: Maria_Teresa
+  AssignClass (b0bc9239-9a3d-4f35-9854-cb14990f3089)
+ Call ID: b0bc9239-9a3d-4f35-9854-cb14990f3089
   Args:
-    source: Mercedes
-    type: :Ancestor
-  AddLiteral (7613f1f3-9715-45e7-9bdc-78dd078d2118)
- Call ID: 7613f1f3-9715-45e7-9bdc-78dd078d2118
+    type: :Man
+    source: Carlos_of_Bourbon-Two_Sicilies
+  AssignClass (5ea3c422-75a8-4fa6-9403-6b6afbd5160a)
+ Call ID: 5ea3c422-75a8-4fa6-9403-6b6afbd5160a
   Args:
+    source: Alfonso_son_of_Mercedes
+    type: :Man
+  AssignClass (3a5aefd6-c59a-4413-bbf8-c75b3118fb71)
+ Call ID: 3a5aefd6-c59a-4413-bbf8-c75b3118fb71
+  Args:
+    type: :Man
+    source: Fernando_son_of_Mercedes
+  AssignClass (1446454e-1794-4048-b966-8a4d243deb0f)
+ Call ID: 1446454e-1794-4048-b966-8a4d243deb0f
+  Args:
+    source: Isabella_Alfonsa
+    type: :Woman
+  AddLiteral (2ad4c21b-55a3-4ad9-aeaa-1d0d74cf9a12)
+ Call ID: 2ad4c21b-55a3-4ad9-aeaa-1d0d74cf9a12
+  Args:
+    source: Maria_de_las_Mercedes
     literal_type: xsd:integer
     relation: :hasBirthYear
     literal_value: 1880
-    source: Mercedes
-  AddLiteral (9b1ed9c9-f39d-47a1-a664-90e3bdb25149)
- Call ID: 9b1ed9c9-f39d-47a1-a664-90e3bdb25149
+  AddLiteral (9bc2e204-4348-41ee-b98a-2cd6ec5f4a8a)
+ Call ID: 9bc2e204-4348-41ee-b98a-2cd6ec5f4a8a
   Args:
+    source: Maria_de_las_Mercedes
     relation: :hasDeathYear
     literal_type: xsd:integer
-    source: Mercedes
     literal_value: 1904
-  AssignClass (e4351b68-f2f7-411b-9b7b-d5af00138b05)
- Call ID: e4351b68-f2f7-411b-9b7b-d5af00138b05
+  AddTriple (7a34efc9-7d8e-49d2-a443-159eafb3ab37)
+ Call ID: 7a34efc9-7d8e-49d2-a443-159eafb3ab37
   Args:
-    source: Alfonso_XII
-    type: :Man
-  AssignClass (f4cfe117-f227-46e0-8742-5237eeb79a7b)
- Call ID: f4cfe117-f227-46e0-8742-5237eeb79a7b
-  Args:
-    type: :Ancestor
-    source: Alfonso_XII
-  AssignClass (ec867e9a-d12e-4abc-b3da-83bef7dd73c4)
- Call ID: ec867e9a-d12e-4abc-b3da-83bef7dd73c4
-  Args:
-    source: Maria_Christina
-    type: :Woman
-  AssignClass (d92d461f-40fb-4396-9292-f6dec1508efb)
- Call ID: d92d461f-40fb-4396-9292-f6dec1508efb
-  Args:
-    type: :Ancestor
-    source: Maria_Christina
-  AddTriple (d0a90dee-42a4-49e2-96bb-35084c8a50c1)
- Call ID: d0a90dee-42a4-49e2-96bb-35084c8a50c1
-  Args:
-    target: Alfonso_XII
-    source: Mercedes
     relation: :hasFather
-  AddTriple (ca592dba-8d6b-4746-9259-f522202c0fc9)
- Call ID: ca592dba-8d6b-4746-9259-f522202c0fc9
+    source: Maria_de_las_Mercedes
+    target: Alfonso_XII
+  AddTriple (329d6af9-9b16-4dd3-a168-0aa38092e199)
+ Call ID: 329d6af9-9b16-4dd3-a168-0aa38092e199
   Args:
     relation: :hasMother
-    source: Mercedes
-    target: Maria_Christina
-  AssignClass (9106b079-a60c-4e0d-8826-33c0e2e2392d)
- Call ID: 9106b079-a60c-4e0d-8826-33c0e2e2392d
+    target: Maria_Christina_of_Austria
+    source: Maria_de_las_Mercedes
+  AddTriple (47a609c3-3968-48ef-85f8-d4132b2bb956)
+ Call ID: 47a609c3-3968-48ef-85f8-d4132b2bb956
   Args:
-    source: Alfonso_XIII
-    type: :Man
-  AssignClass (cbdd8cf5-161a-4ffc-ba53-299cdd0f2afc)
- Call ID: cbdd8cf5-161a-4ffc-ba53-299cdd0f2afc
-  Args:
-    type: :Ancestor
-    source: Alfonso_XIII
-  AddTriple (73e9966a-8b6e-4253-bdcc-b5e6a517e40e)
- Call ID: 73e9966a-8b6e-4253-bdcc-b5e6a517e40e
-  Args:
-    source: Alfonso_XIII
-    target: Alfonso_XII
-    relation: :hasFather
-  AddTriple (2e54c6ac-a34b-40fc-8950-a8c13d332ac2)
- Call ID: 2e54c6ac-a34b-40fc-8950-a8c13d332ac2
-  Args:
-    source: Alfonso_XIII
-    target: Maria_Christina
-    relation: :hasMother
-  AddTriple (b3804842-c558-40bf-a43f-761099dd7412)
- Call ID: b3804842-c558-40bf-a43f-761099dd7412
-  Args:
-    relation: :isBrotherOf
-    source: Alfonso_XIII
-    target: Mercedes
-  AssignClass (72661d94-afff-4031-8bf0-9fa63dab6af6)
- Call ID: 72661d94-afff-4031-8bf0-9fa63dab6af6
-  Args:
-    source: Maria_Teresa
-    type: :Woman
-  AssignClass (5ee8f662-a6ea-4374-a5e5-1745c90c2608)
- Call ID: 5ee8f662-a6ea-4374-a5e5-1745c90c2608
-  Args:
-    source: Maria_Teresa
-    type: :Ancestor
-  AddTriple (f2fda7bb-82a8-4b47-a4ef-0ef12eefd29f)
- Call ID: f2fda7bb-82a8-4b47-a4ef-0ef12eefd29f
-  Args:
-    target: Alfonso_XII
-    source: Maria_Teresa
-    relation: :hasFather
-  AddTriple (35de1cc0-cb50-4797-8500-c9383ec3a167)
- Call ID: 35de1cc0-cb50-4797-8500-c9383ec3a167
-  Args:
-    relation: :hasMother
-    source: Maria_Teresa
-    target: Maria_Christina
-  AddTriple (828fd9e8-efe1-48d2-8b99-f9301b665db1)
- Call ID: 828fd9e8-efe1-48d2-8b99-f9301b665db1
-  Args:
+    source: Maria_de_las_Mercedes
+    target: Maria_Teresa
     relation: :isSisterOf
-    target: Mercedes
+  AddTriple (4bcdf6cd-ac38-421b-9fe7-a65c50370796)
+ Call ID: 4bcdf6cd-ac38-421b-9fe7-a65c50370796
+  Args:
+    source: Maria_de_las_Mercedes
+    target: Alfonso_XIII
+    relation: :isBrotherOf
+  AddTriple (f45d14b0-b05f-4d8d-a88e-1a8ed38a6844)
+ Call ID: f45d14b0-b05f-4d8d-a88e-1a8ed38a6844
+  Args:
+    relation: :hasFather
+    source: Alfonso_XIII
+    target: Alfonso_XII
+  AddTriple (8c41f5c4-f743-4db9-a17a-ab3c8c2f6645)
+ Call ID: 8c41f5c4-f743-4db9-a17a-ab3c8c2f6645
+  Args:
+    source: Alfonso_XIII
+    target: Maria_Christina_of_Austria
+    relation: :hasMother
+  AddTriple (8832d39d-81a9-4cbe-8ae3-3470e3fba79f)
+ Call ID: 8832d39d-81a9-4cbe-8ae3-3470e3fba79f
+  Args:
+    relation: :hasFather
     source: Maria_Teresa
-  AssignClass (7207df51-097c-46c4-b0a0-7862be94d4d6)
- Call ID: 7207df51-097c-46c4-b0a0-7862be94d4d6
+    target: Alfonso_XII
+  AddTriple (aaf8cf7e-0364-44c3-a26a-639211cffb20)
+ Call ID: aaf8cf7e-0364-44c3-a26a-639211cffb20
   Args:
-    source: Carlos_of_Bourbon_Two_Sicilies
-    type: :Man
-  AssignClass (f02c9083-e64b-4eb6-830d-25913ae81a67)
- Call ID: f02c9083-e64b-4eb6-830d-25913ae81a67
+    source: Maria_Teresa
+    target: Maria_Christina_of_Austria
+    relation: :hasMother
+  AddLiteral (ed79b2e2-4126-44db-ac32-acf1838bf52f)
+ Call ID: ed79b2e2-4126-44db-ac32-acf1838bf52f
   Args:
-    source: Carlos_of_Bourbon_Two_Sicilies
-    type: :Ancestor
-  AddLiteral (5cd2c346-bf6e-4a4c-88b8-79c368581a55)
- Call ID: 5cd2c346-bf6e-4a4c-88b8-79c368581a55
-  Args:
-    source: Mercedes
-    literal_value: 1901
-    relation: :hasMarriageYear
     literal_type: xsd:integer
-  AddTriple (18888377-32b6-4c87-a340-a8cc6581a5a5)
- Call ID: 18888377-32b6-4c87-a340-a8cc6581a5a5
+    relation: :hasMarriageYear
+    literal_value: 1901
+    source: Maria_de_las_Mercedes
+  AddTriple (85fb8d73-75b9-42b7-a5d6-3c8907d27e73)
+ Call ID: 85fb8d73-75b9-42b7-a5d6-3c8907d27e73
   Args:
-    source: Mercedes
-    target: Carlos_of_Bourbon_Two_Sicilies
     relation: :hasRelation
-  AssignClass (1af68337-1682-4769-b629-0cc336916078)
- Call ID: 1af68337-1682-4769-b629-0cc336916078
-  Args:
-    source: Alfonso_son_of_Mercedes
-    type: :Man
-  AssignClass (4f9c78e6-381e-4166-b32f-c078c33294b2)
- Call ID: 4f9c78e6-381e-4166-b32f-c078c33294b2
-  Args:
-    source: Alfonso_son_of_Mercedes
-    type: :Ancestor
-  AddTriple (83789604-632a-46ca-a115-626a3606aedb)
- Call ID: 83789604-632a-46ca-a115-626a3606aedb
-  Args:
-    target: Carlos_of_Bourbon_Two_Sicilies
-    source: Alfonso_son_of_Mercedes
-    relation: :hasFather
-  AddTriple (56c2a04e-30b1-472e-afaa-e827608ef4c8)
- Call ID: 56c2a04e-30b1-472e-afaa-e827608ef4c8
+    source: Maria_de_las_Mercedes
+    target: Carlos_of_Bourbon-Two_Sicilies
+  AddTriple (6611048a-0b90-4bba-8030-fd0a03d71646)
+ Call ID: 6611048a-0b90-4bba-8030-fd0a03d71646
   Args:
     relation: :hasMother
-    target: Mercedes
+    target: Maria_de_las_Mercedes
     source: Alfonso_son_of_Mercedes
-  AssignClass (f120aa99-5329-4854-8290-1acc754fd83a)
- Call ID: f120aa99-5329-4854-8290-1acc754fd83a
-  Args:
-    source: Fernando_son_of_Mercedes
-    type: :Man
-  AssignClass (c6ebcf66-7ed8-43c3-b8d5-514b7152c5ee)
- Call ID: c6ebcf66-7ed8-43c3-b8d5-514b7152c5ee
-  Args:
-    type: :Ancestor
-    source: Fernando_son_of_Mercedes
-  AddTriple (8ed30b4f-1bd4-4ab0-b719-2c08ec2d3c76)
- Call ID: 8ed30b4f-1bd4-4ab0-b719-2c08ec2d3c76
-  Args:
-    target: Carlos_of_Bourbon_Two_Sicilies
-    source: Fernando_son_of_Mercedes
-    relation: :hasFather
-  AddTriple (a9d81efc-6446-41c1-b174-1c0deb8b3ace)
- Call ID: a9d81efc-6446-41c1-b174-1c0deb8b3ace
-  Args:
-    relation: :hasMother
-    target: Mercedes
-    source: Fernando_son_of_Mercedes
-  AssignClass (94155d62-2a5b-468c-9e19-a20f8a463421)
- Call ID: 94155d62-2a5b-468c-9e19-a20f8a463421
-  Args:
-    source: Isabella_Alfonsa
-    type: :Woman
-  AssignClass (efb6e7a8-bed8-4b77-8814-5171cc712f86)
- Call ID: efb6e7a8-bed8-4b77-8814-5171cc712f86
-  Args:
-    type: :Ancestor
-    source: Isabella_Alfonsa
-  AddTriple (4a41d458-ffb9-4db1-88d9-a522e52021f1)
- Call ID: 4a41d458-ffb9-4db1-88d9-a522e52021f1
+  AddTriple (e2833427-f179-4513-8692-1a14165d931f)
+ Call ID: e2833427-f179-4513-8692-1a14165d931f
   Args:
     relation: :hasFather
-    target: Carlos_of_Bourbon_Two_Sicilies
-    source: Isabella_Alfonsa
-  AddTriple (43eb0876-279c-4dd3-8879-6312364d77c3)
- Call ID: 43eb0876-279c-4dd3-8879-6312364d77c3
+    target: Carlos_of_Bourbon-Two_Sicilies
+    source: Alfonso_son_of_Mercedes
+  AddTriple (c7920958-ee9f-41d7-85cd-d4067cc649d0)
+ Call ID: c7920958-ee9f-41d7-85cd-d4067cc649d0
   Args:
     relation: :hasMother
-    target: Mercedes
+    target: Maria_de_las_Mercedes
+    source: Fernando_son_of_Mercedes
+  AddTriple (5e208052-7098-4b87-8798-beea71c9db22)
+ Call ID: 5e208052-7098-4b87-8798-beea71c9db22
+  Args:
+    relation: :hasFather
+    source: Fernando_son_of_Mercedes
+    target: Carlos_of_Bourbon-Two_Sicilies
+  AddTriple (75cdeca9-642b-4e0c-b89a-32b90298200b)
+ Call ID: 75cdeca9-642b-4e0c-b89a-32b90298200b
+  Args:
     source: Isabella_Alfonsa
-  Finish (0d0df91a-4272-400d-963b-d4194beb2c4b)
- Call ID: 0d0df91a-4272-400d-963b-d4194beb2c4b
+    target: Maria_de_las_Mercedes
+    relation: :hasMother
+  AddTriple (7087f373-f63c-46ff-b684-29dc8990f508)
+ Call ID: 7087f373-f63c-46ff-b684-29dc8990f508
+  Args:
+    relation: :hasFather
+    target: Carlos_of_Bourbon-Two_Sicilies
+    source: Isabella_Alfonsa
+  Finish (6032b26a-634b-4438-a424-5ab33836fc38)
+ Call ID: 6032b26a-634b-4438-a424-5ab33836fc38
   Args:

@@ -1,0 +1,405 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_I_King_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_I_King_of_Greece ;
+    :hasChild data:Constantine_I_King_of_Greece ;
+    :hasRelation data:Constantine_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:George_I_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Queen_Olga_of_Greece,
+        data:Sophia_of_Prussia,
+        data:William_II_German_Emperor ;
+    :hasSon data:Constantine_I_King_of_Greece ;
+    :isAncestorOf data:Constantine_I_King_of_Greece ;
+    :isBloodrelationOf data:George_I_King_of_Greece ;
+    :isBrotherOf data:George_I_King_of_Greece ;
+    :isFatherOf data:Constantine_I_King_of_Greece ;
+    :isParentOf data:Constantine_I_King_of_Greece ;
+    :isSiblingOf data:George_I_King_of_Greece ;
+    :isUncleOf data:Constantine_I_King_of_Greece .
+
+data:Queen_Olga_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Constantine_I_King_of_Greece ;
+    :hasRelation data:Constantine_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:George_I_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Queen_Olga_of_Greece,
+        data:Sophia_of_Prussia,
+        data:William_II_German_Emperor ;
+    :hasSister data:Queen_Olga_of_Greece ;
+    :hasSon data:Constantine_I_King_of_Greece ;
+    :isAncestorOf data:Constantine_I_King_of_Greece ;
+    :isAuntOf data:Constantine_I_King_of_Greece ;
+    :isBloodrelationOf data:Queen_Olga_of_Greece ;
+    :isMotherOf data:Constantine_I_King_of_Greece ;
+    :isParentOf data:Constantine_I_King_of_Greece ;
+    :isSiblingOf data:Queen_Olga_of_Greece ;
+    :isSisterOf data:Queen_Olga_of_Greece .
+
+data:Prince_Albert a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Albert ;
+    :hasChild data:Victoria_Princess_Royal ;
+    :hasDaughter data:Victoria_Princess_Royal ;
+    :hasRelation data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Prince_Albert,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_II_German_Emperor ;
+    :isAncestorOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Prince_Albert ;
+    :isBrotherOf data:Prince_Albert ;
+    :isFatherOf data:Victoria_Princess_Royal ;
+    :isParentOf data:Victoria_Princess_Royal ;
+    :isSiblingOf data:Prince_Albert ;
+    :isUncleOf data:Victoria_Princess_Royal .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Victoria_Princess_Royal ;
+    :hasDaughter data:Victoria_Princess_Royal ;
+    :hasRelation data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_II_German_Emperor ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :isAuntOf data:Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isMotherOf data:Victoria_Princess_Royal ;
+    :isParentOf data:Victoria_Princess_Royal ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:William_II_German_Emperor a :Man,
+        :Person ;
+    :hasBrother data:William_II_German_Emperor ;
+    :hasRelation data:Constantine_I_King_of_Greece,
+        data:Frederick_III_German_Emperor,
+        data:George_II_King_of_Greece,
+        data:George_I_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Prince_Albert,
+        data:Queen_Olga_of_Greece,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_II_German_Emperor,
+        data:William_I_German_Emperor ;
+    :hasSister data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Sophia_of_Prussia,
+        data:William_II_German_Emperor ;
+    :isBrotherOf data:Sophia_of_Prussia,
+        data:William_II_German_Emperor ;
+    :isSiblingOf data:Sophia_of_Prussia,
+        data:William_II_German_Emperor ;
+    :isUncleOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece .
+
+data:William_I_German_Emperor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_I_German_Emperor ;
+    :hasChild data:Frederick_III_German_Emperor ;
+    :hasRelation data:Alexander_I_King_of_Greece,
+        data:Frederick_III_German_Emperor,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Sophia_of_Prussia,
+        data:William_II_German_Emperor,
+        data:William_I_German_Emperor ;
+    :hasSon data:Frederick_III_German_Emperor ;
+    :isAncestorOf data:Alexander_I_King_of_Greece,
+        data:Frederick_III_German_Emperor,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:William_I_German_Emperor ;
+    :isBrotherOf data:William_I_German_Emperor ;
+    :isFatherOf data:Frederick_III_German_Emperor ;
+    :isParentOf data:Frederick_III_German_Emperor ;
+    :isSiblingOf data:William_I_German_Emperor ;
+    :isUncleOf data:Frederick_III_German_Emperor .
+
+data:Constantine_I_King_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_I_King_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :hasBrother data:Constantine_I_King_of_Greece ;
+    :hasFather data:George_I_King_of_Greece ;
+    :hasMother data:Queen_Olga_of_Greece ;
+    :hasParent data:George_I_King_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :hasRelation data:Constantine_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:George_I_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Queen_Olga_of_Greece,
+        data:Sophia_of_Prussia,
+        data:William_II_German_Emperor ;
+    :isBloodrelationOf data:Constantine_I_King_of_Greece ;
+    :isBrotherOf data:Constantine_I_King_of_Greece ;
+    :isChildOf data:George_I_King_of_Greece,
+        data:Queen_Olga_of_Greece ;
+    :isSiblingOf data:Constantine_I_King_of_Greece ;
+    :isSonOf data:George_I_King_of_Greece,
+        data:Queen_Olga_of_Greece .
+
+data:Frederick_III_German_Emperor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:William_I_German_Emperor ;
+    :hasBrother data:Frederick_III_German_Emperor ;
+    :hasChild data:Sophia_of_Prussia ;
+    :hasDaughter data:Sophia_of_Prussia ;
+    :hasFather data:William_I_German_Emperor ;
+    :hasParent data:William_I_German_Emperor ;
+    :hasRelation data:Alexander_I_King_of_Greece,
+        data:Frederick_III_German_Emperor,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Sophia_of_Prussia,
+        data:William_II_German_Emperor,
+        data:William_I_German_Emperor ;
+    :isAncestorOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Frederick_III_German_Emperor ;
+    :isBrotherOf data:Frederick_III_German_Emperor ;
+    :isChildOf data:William_I_German_Emperor ;
+    :isFatherOf data:Sophia_of_Prussia ;
+    :isParentOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Frederick_III_German_Emperor ;
+    :isSonOf data:William_I_German_Emperor ;
+    :isUncleOf data:Sophia_of_Prussia .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasChild data:Sophia_of_Prussia ;
+    :hasDaughter data:Sophia_of_Prussia ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria ;
+    :hasParent data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasRelation data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_II_German_Emperor ;
+    :hasSister data:Victoria_Princess_Royal ;
+    :isAncestorOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isAuntOf data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Victoria_Princess_Royal ;
+    :isChildOf data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isDaughterOf data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isMotherOf data:Sophia_of_Prussia ;
+    :isParentOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Victoria_Princess_Royal ;
+    :isSisterOf data:Victoria_Princess_Royal .
+
+data:Alexander_I_King_of_Greece a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_III_German_Emperor,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I_German_Emperor ;
+    :hasBrother data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I_King_of_Greece,
+        data:Frederick_III_German_Emperor,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I_German_Emperor ;
+    :hasSister data:Katherine_Princess_of_Greece ;
+    :isBloodrelationOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece ;
+    :isBrotherOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece ;
+    :isSonOf data:Sophia_of_Prussia .
+
+data:George_II_King_of_Greece a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_III_German_Emperor,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I_German_Emperor ;
+    :hasBrother data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I_King_of_Greece,
+        data:Constantine_I_King_of_Greece,
+        data:Frederick_III_German_Emperor,
+        data:George_II_King_of_Greece,
+        data:George_I_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Prince_Albert,
+        data:Queen_Olga_of_Greece,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_II_German_Emperor,
+        data:William_I_German_Emperor ;
+    :hasSister data:Katherine_Princess_of_Greece ;
+    :isBloodrelationOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece ;
+    :isBrotherOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece ;
+    :isSonOf data:Sophia_of_Prussia .
+
+data:Katherine_Princess_of_Greece a :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_III_German_Emperor,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I_German_Emperor ;
+    :hasBrother data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I_King_of_Greece,
+        data:Constantine_I_King_of_Greece,
+        data:Frederick_III_German_Emperor,
+        data:George_II_King_of_Greece,
+        data:George_I_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Prince_Albert,
+        data:Queen_Olga_of_Greece,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_II_German_Emperor,
+        data:William_I_German_Emperor ;
+    :hasSister data:Katherine_Princess_of_Greece ;
+    :isBloodrelationOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isDaughterOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece ;
+    :isSisterOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_III_German_Emperor,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:William_I_German_Emperor ;
+    :hasBirthYear 1870 ;
+    :hasBrother data:William_II_German_Emperor ;
+    :hasChild data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece ;
+    :hasDaughter data:Katherine_Princess_of_Greece ;
+    :hasDeathYear 1932 ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasParent data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :hasRelation data:Alexander_I_King_of_Greece,
+        data:Constantine_I_King_of_Greece,
+        data:Frederick_III_German_Emperor,
+        data:George_II_King_of_Greece,
+        data:George_I_King_of_Greece,
+        data:Katherine_Princess_of_Greece,
+        data:Prince_Albert,
+        data:Queen_Olga_of_Greece,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_II_German_Emperor,
+        data:William_I_German_Emperor ;
+    :hasSister data:Sophia_of_Prussia ;
+    :hasSon data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece ;
+    :isAncestorOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece ;
+    :isAuntOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece ;
+    :isBloodrelationOf data:Sophia_of_Prussia,
+        data:William_II_German_Emperor ;
+    :isChildOf data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :isDaughterOf data:Frederick_III_German_Emperor,
+        data:Victoria_Princess_Royal ;
+    :isMotherOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece ;
+    :isParentOf data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece,
+        data:Katherine_Princess_of_Greece ;
+    :isSiblingOf data:Sophia_of_Prussia,
+        data:William_II_German_Emperor ;
+    :isSisterOf data:Sophia_of_Prussia,
+        data:William_II_German_Emperor .
+

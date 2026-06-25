@@ -2,55 +2,92 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Felicity_Wade a :Woman ;
-    :hasBirthYear "1985"^^xsd:string ;
-    :hasFather data:Mark_Phillips ;
-    :hasMother data:Heather_Tonkin .
+data:DianeSisterOfHenri a :Person,
+        :Woman ;
+    :isSisterOf data:HenriPhilippePierreMariedOrleans .
 
-data:Isla_Elizabeth a :Woman ;
-    :hasFather data:Peter_Mark_Andrew_Phillips ;
-    :hasMother data:Autumn_Kelly .
+data:FrancoisCountOfClermontSonOfHenri a :Man,
+        :Person ;
+    :hasFather data:HenriPhilippePierreMariedOrleans ;
+    :hasMother data:MarieThereseOfWurttemberg .
 
-data:King_Charles_III a :Man .
+data:MarieDaughterOfHenri a :Person,
+        :Woman ;
+    :hasFather data:HenriPhilippePierreMariedOrleans ;
+    :hasMother data:MarieThereseOfWurttemberg ;
+    :hasRelation data:PrinceGundakarOfLiechtenstein .
 
-data:Prince_Philip a :Man .
+data:MichelCountOfEvreux a :Man,
+        :Person ;
+    :isBrotherOf data:HenriPhilippePierreMariedOrleans .
 
-data:Queen_Elizabeth_II a :Woman .
+data:PrinceCharlesLouisDOrleans a :Man,
+        :Person ;
+    :hasBirthYear 1972 ;
+    :hasFather data:PrinceJacquesDukeOfOrleans .
 
-data:Savannah_Anne_Kathleen a :Woman ;
-    :hasFather data:Peter_Mark_Andrew_Phillips ;
-    :hasMother data:Autumn_Kelly .
+data:PrinceFoulquesDOrleans a :Man,
+        :Person ;
+    :hasBirthYear 1974 ;
+    :hasFather data:PrinceJacquesDukeOfOrleans .
 
-data:Stephanie_Phillips a :Woman ;
-    :hasBirthYear "1997"^^xsd:string ;
-    :hasFather data:Mark_Phillips ;
-    :hasMother data:Sandy_Pflueger .
+data:PrinceJeanDukeOfVendome a :Man,
+        :Person ;
+    :hasFather data:HenriPhilippePierreMariedOrleans ;
+    :hasMother data:MarieThereseOfWurttemberg .
 
-data:Zara_Tindall a :Woman ;
-    :hasBirthYear "1981"^^xsd:string ;
-    :hasFather data:Mark_Phillips ;
-    :hasMother data:Anne_Princess_Royal .
+data:ThibautCountOfLaMarche a :Man,
+        :Person ;
+    :isBrotherOf data:HenriPhilippePierreMariedOrleans .
 
-data:Harriet_Sperling a :Woman .
+data:AntoniaMariaQuinonesDeLeonYBanuelos a :Person,
+        :Woman .
 
-data:Heather_Tonkin a :Woman .
+data:FrancoisBrotherOfHenri a :Man,
+        :Person .
 
-data:Lindsay_Wallace a :Woman .
+data:HenriCountOfParis a :Man,
+        :Person ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1999 .
 
-data:Sandy_Pflueger a :Woman .
+data:JeanRobertBoeuf a :Man,
+        :Person .
 
-data:Anne_Princess_Royal a :Woman .
+data:LuisCousinoYSebire a :Man,
+        :Person .
 
-data:Peter_Mark_Andrew_Phillips a :Man ;
-    :hasBirthYear "1977"^^xsd:string ;
-    :hasFather data:Mark_Phillips ;
-    :hasMarriageYear "2008"^^xsd:string ;
-    :hasMother data:Anne_Princess_Royal ;
-    :hasRelation data:Autumn_Kelly,
-        data:Harriet_Sperling,
-        data:Lindsay_Wallace .
+data:MicaelaAnnaMariaCousinoYQuinonesDeLeon a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:LuisCousinoYSebire ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:AntoniaMariaQuinonesDeLeonYBanuelos ;
+    :hasRelation data:JeanRobertBoeuf .
 
-data:Autumn_Kelly a :Woman .
+data:PrinceGundakarOfLiechtenstein a :Man,
+        :Person .
 
-data:Mark_Phillips a :Man .
+data:PrincessIsabelleOfOrleansBraganza a :Person,
+        :Woman .
+
+data:PrinceJacquesDukeOfOrleans a :Man,
+        :Person ;
+    :isBrotherOf data:HenriPhilippePierreMariedOrleans .
+
+data:MarieThereseOfWurttemberg a :Person,
+        :Woman ;
+    :hasBirthYear 1934 .
+
+data:HenriPhilippePierreMariedOrleans a :Man,
+        :Person ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:HenriCountOfParis ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:PrincessIsabelleOfOrleansBraganza ;
+    :hasRelation data:MarieThereseOfWurttemberg,
+        data:MicaelaAnnaMariaCousinoYQuinonesDeLeon ;
+    :isSiblingOf data:FrancoisBrotherOfHenri .
 

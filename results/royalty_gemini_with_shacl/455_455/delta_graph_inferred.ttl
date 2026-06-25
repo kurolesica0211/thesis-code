@@ -1,0 +1,200 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sofia a :Person,
+        :Woman ;
+    :hasRelation data:Sofia ;
+    :hasSister data:Sofia ;
+    :isAuntOf data:Alexia ;
+    :isBloodrelationOf data:Sofia ;
+    :isSiblingOf data:Sofia ;
+    :isSisterOf data:Sofia .
+
+data:Carlos_Javier_Morales_Quintana a :Man,
+        :Person ;
+    :hasBrother data:Carlos_Javier_Morales_Quintana ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Felipe_VI,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :isBloodrelationOf data:Carlos_Javier_Morales_Quintana ;
+    :isBrotherOf data:Carlos_Javier_Morales_Quintana ;
+    :isSiblingOf data:Carlos_Javier_Morales_Quintana .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :hasBrother data:Felipe_VI ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Felipe_VI,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :isBloodrelationOf data:Alexia,
+        data:Felipe_VI,
+        data:Pavlos,
+        data:Theodora ;
+    :isBrotherOf data:Felipe_VI ;
+    :isSiblingOf data:Felipe_VI .
+
+data:Anne-Marie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexia ;
+    :hasDaughter data:Alexia ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Felipe_VI,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Anne-Marie ;
+    :isAncestorOf data:Alexia ;
+    :isAuntOf data:Alexia ;
+    :isBloodrelationOf data:Anne-Marie ;
+    :isMotherOf data:Alexia ;
+    :isParentOf data:Alexia ;
+    :isSiblingOf data:Anne-Marie ;
+    :isSisterOf data:Anne-Marie .
+
+data:Constantine_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine_II ;
+    :hasChild data:Alexia ;
+    :hasDaughter data:Alexia ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Felipe_VI,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :isAncestorOf data:Alexia ;
+    :isBloodrelationOf data:Constantine_II ;
+    :isBrotherOf data:Constantine_II ;
+    :isFatherOf data:Alexia ;
+    :isParentOf data:Alexia ;
+    :isSiblingOf data:Constantine_II ;
+    :isUncleOf data:Alexia .
+
+data:Maria-Olympia a :Person,
+        :Woman ;
+    :hasAncestor data:Pavlos ;
+    :hasFather data:Pavlos ;
+    :hasParent data:Pavlos ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Felipe_VI,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Maria-Olympia ;
+    :isBloodrelationOf data:Maria-Olympia ;
+    :isChildOf data:Pavlos ;
+    :isDaughterOf data:Pavlos ;
+    :isSiblingOf data:Maria-Olympia ;
+    :isSisterOf data:Maria-Olympia .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasBrother data:Pavlos ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Felipe_VI,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isAuntOf data:Maria-Olympia ;
+    :isBloodrelationOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isSiblingOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isSisterOf data:Alexia,
+        data:Pavlos,
+        data:Theodora .
+
+data:Pavlos a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Pavlos ;
+    :hasChild data:Maria-Olympia ;
+    :hasDaughter data:Maria-Olympia ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Felipe_VI,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isAncestorOf data:Maria-Olympia ;
+    :isBloodrelationOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isBrotherOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isFatherOf data:Maria-Olympia ;
+    :isParentOf data:Maria-Olympia ;
+    :isSiblingOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isUncleOf data:Maria-Olympia .
+
+data:Alexia a :Person,
+        :Woman ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II ;
+    :hasBirthYear 1965 ;
+    :hasBrother data:Pavlos ;
+    :hasFather data:Constantine_II ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II ;
+    :hasRelation data:Alexia,
+        data:Anne-Marie,
+        data:Carlos_Javier_Morales_Quintana,
+        data:Constantine_II,
+        data:Felipe_VI,
+        data:Maria-Olympia,
+        data:Pavlos,
+        data:Theodora ;
+    :hasSister data:Alexia,
+        data:Theodora ;
+    :isAuntOf data:Maria-Olympia ;
+    :isBloodrelationOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II ;
+    :isDaughterOf data:Anne-Marie,
+        data:Constantine_II ;
+    :isSiblingOf data:Alexia,
+        data:Pavlos,
+        data:Theodora ;
+    :isSisterOf data:Alexia,
+        data:Pavlos,
+        data:Theodora .
+

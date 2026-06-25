@@ -69,34 +69,78 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-George William, Hereditary Prince of Hanover, Duke of Brunswick-Lüneburg (German: Georg Wilhelm Christian Albert Edward Alexander Friedrich Ernst Waldemar Adolf; 28 October 1880 – 20 May 1912) was a German prince from the House of Hanover.
-He was the second child and eldest son of Ernest Augustus, Crown Prince of Hanover and Duke of Cumberland, and Princess Thyra of Denmark.
-His father was the only son of George V of Hanover and his mother was the youngest daughter of Christian IX of Denmark.
-His great-grandfather, Prince Ernest Augustus, Duke of Cumberland and Teviotdale, the fifth son of George III of the United Kingdom, became king of Hanover in 1837 because Salic Law barred Queen Victoria from inheriting the Hanoverian throne.
-His godparents included his maternal grandfather Christian IX of Denmark, his uncle George I of Greece, his uncle Frederick, Crown Prince of Denmark, his uncle Alexander Alexandrovich, Tsarevich of Russia, his uncle Albert Edward, Prince of Wales, his uncle Prince Valdemar of Denmark, Prince George, Duke of Cambridge, and William, Duke of Brunswick.
-The family had lived in exile in Austria since the Kingdom of Hanover was annexed by Prussia in the aftermath of the 1866 Austro-Prussian War.
-His father succeeded as pretender to the Hanoverian throne and as Duke of Cumberland and Teviotdale in the peerage of Great Britain in 1878.
-He represented his father at the funeral of Edward VII and the coronation of George V.
+Descendants of Prince Felix and also members of the Grand Ducal Family of Luxembourg:
 
 
-When his kinsman William, Duke of Brunswick, died unmarried in 1884, George William was his heir after his father.
-Otto von Bismarck blocked Crown Ernest Augustus's claim because he had never relinquished his claim to Hanover and instead appointed Prince Albert of Prussia regent.
-Prince Albert died in 1906 and Crown Ernest Augustus offered that he and George William would renounce their claims to Brunswick to allow his second son Prince Ernest Augustus to succeed.
-The Bundesrat rejected this and appointed Duke John Albert of Mecklenburg as regent.
-The younger Ernest Augustus finally succeeded in 1913 after he married the German Emperor's daughter after George William's death.
-Death
+Princess Joan
 
-On 20 May 1912, George William was killed, aged 31, in a car crash near Nackel, Brandenburg, while driving from Prague to Copenhagen to attend the funeral of his uncle, Frederick VIII of Denmark.
-In response to George William's death, Wilhelm II, German Emperor, sent his sons Prince Eitel Friedrich and Prince August Wilhelm of Prussia to Nackel and sent a message of condolence to the Duke of Cumberland.
-In response to this friendly gesture, the Duke sent his only surviving son, Ernest Augustus, to Berlin to thank the Emperor.
-In Berlin, Ernest Augustus met and fell in love with the emperor's only daughter, Princess Victoria Louise of Prussia.
-They married in 1913, thus reconciling the Houses of Hohenzollern and Hanover, and the Emperor approved Ernest Augustus's succession to the duchy of Brunswick shortly after.
+
+Descendants of Prince René:
+
+
+Princess Maria Pia
+
+
+Princess Marina
+
+
+Descendants of Prince Louis:
+
+
+Prince RémyPrincess Elisabeth
+
+
+Princess Chantal
+Prince JeanPrincess Virginia
+
+
+Princess Beatrix*
+
+
+Princess Margriet*Pieter van Vollenhoven*
+
+
+Princess Carolina of Bourbon-Parma, Marchioness of Sala (born 23 June 1974), is the fourth and youngest child of Princess Irene of the Netherlands and Carlos Hugo, Duke of Parma.
+She is a member of the House of Bourbon-Parma as well an extended member of the Dutch royal family.
+Per a 1996 royal decree issued by Queen Beatrix, she is entitled to the style and title Her Royal Highness Princess Maria Carolina de Bourbon de Parme in The Netherlands as a member of the extended royal family.
+Early life
+
+Princess Carolina was born at 23 June 1974 in Nijmegen.
+She has two older brothers, Prince Carlos, the head of the House of Bourbon-Parma, and Prince Jaime.
+She also has one older sister, Princess Margarita.
+She was baptised at the Castle of Lignières in France with Prince Claus of the Netherlands, Princess Christina of the Netherlands and Princess Marie des Neiges of Bourbon-Parma as her godparents.
+She moved together with her mother and her brothers and sister to Soest, Netherlands, nearby the then residence of her grandparents the former Queen of the Netherlands Queen Juliana of the Netherlands and Prince Bernhard of Lippe-Biesterfeld.
+Education and career
+
+Princess Carolina studied political science at University of Amsterdam and Harvard University, and also has an M.Sc.
+Marriage
+
+On 9 January 2012, it was announced that Princess Carolina would marry Albert Alphons Ludgerus Brenninkmeijer (born 16 May 1974), a member of the wealthy Brenninkmeijer family.
+The princess has been seen regularly at important events of the royal house of the Netherlands.
+In 2001 she was one of the maids of honor at the wedding of Prince Constantijn and Petra Laurentien Brinkhorst; and during the baptism of their daughter, Countess Eloise of Orange-Nassau, she was the godmother of the child.
+She was a witness at the church wedding of her cousin Prince Floris of Orange-Nassau, van Vollenhoven, and in 2010, was named as the godmother of Floris' second child, Eliane.
+
+
+Titles, styles and honours
+
+Already a ducal princess from birth, her father bestowed the substantive title Marchesa di Sala (Marchioness of Sala) upon her on 2 September 1996.
+In 1996 she was incorporated into the Dutch nobility by her aunt Queen Beatrix, with the highest title of nobility Prinses de Bourbon de Parme (Princess of Bourbon-Parma) and styled Hare Koninklijke Hoogheid (Her Royal Highness).
+She does not belong to the House of Orange-Nassau or the limited Dutch royal house, but as a granddaughter of Queen Juliana and first cousin of the present King Willem-Alexander, she is officially a member of the more extended Dutch royal family.
+Ancestry
+
+References
+
+External links
+
+2 also Princess of Lippe-Biesterfeld
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -112,39 +156,9 @@ They married in 1913, thus reconciling the Houses of Hohenzollern and Hanover, a
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -159,6 +173,23 @@ They married in 1913, thus reconciling the Houses of Hohenzollern and Hanover, a
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -176,6 +207,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -243,29 +289,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -274,6 +312,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -286,6 +332,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -294,17 +342,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -332,6 +382,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -347,136 +481,107 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f32b0c20-afe9-4b82-b772-e514e7bf613c)
- Call ID: f32b0c20-afe9-4b82-b772-e514e7bf613c
+  AssignClass (c859e415-a551-4416-9a62-4e736d55dd42)
+ Call ID: c859e415-a551-4416-9a62-4e736d55dd42
   Args:
-    source: George_William
-    type: :Man
-  AssignClass (3bbe1861-46b9-4d26-be48-9644569277c4)
- Call ID: 3bbe1861-46b9-4d26-be48-9644569277c4
-  Args:
-    type: :Man
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AssignClass (76ee2a7f-d61d-4bc9-b123-b85677514899)
- Call ID: 76ee2a7f-d61d-4bc9-b123-b85677514899
-  Args:
+    source: :Princess_Carolina_of_Bourbon-Parma
     type: :Woman
-    source: Princess_Thyra_of_Denmark
-  AssignClass (56c04723-f368-436d-97e2-bf9b4d93f29a)
- Call ID: 56c04723-f368-436d-97e2-bf9b4d93f29a
+  AssignClass (fb4b913a-db26-4ed5-85fa-c4d57a1fa140)
+ Call ID: fb4b913a-db26-4ed5-85fa-c4d57a1fa140
   Args:
-    type: :Man
-    source: George_V_of_Hanover
-  AssignClass (eab90927-58dd-4a75-bd05-23c31918e334)
- Call ID: eab90927-58dd-4a75-bd05-23c31918e334
-  Args:
-    source: Christian_IX_of_Denmark
-    type: :Man
-  AssignClass (f45e09bc-0f1b-4280-9b86-41784a6bfb58)
- Call ID: f45e09bc-0f1b-4280-9b86-41784a6bfb58
-  Args:
-    source: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
-    type: :Man
-  AssignClass (d7cec865-eaea-4181-8e2e-1d95bbe30736)
- Call ID: d7cec865-eaea-4181-8e2e-1d95bbe30736
-  Args:
-    type: :Man
-    source: George_III_of_the_United_Kingdom
-  AssignClass (5efea920-6aa1-4426-b089-536ae08ce7e9)
- Call ID: 5efea920-6aa1-4426-b089-536ae08ce7e9
-  Args:
+    source: :Princess_Irene_of_the_Netherlands
     type: :Woman
-    source: Queen_Victoria
-  AssignClass (d3bfa389-4401-4d6e-979b-da32f0581cc5)
- Call ID: d3bfa389-4401-4d6e-979b-da32f0581cc5
+  AssignClass (485fbe7f-89c7-4b7a-8c8d-c26cb19fc5dc)
+ Call ID: 485fbe7f-89c7-4b7a-8c8d-c26cb19fc5dc
   Args:
+    source: :Carlos_Hugo_Duke_of_Parma
     type: :Man
-    source: Prince_Ernest_Augustus_the_younger
-  AssignClass (0c901c52-8659-4f98-8881-6f9bb7bf94c9)
- Call ID: 0c901c52-8659-4f98-8881-6f9bb7bf94c9
+  AddTriple (cedf66ab-73b2-4c83-94a7-72df03957292)
+ Call ID: cedf66ab-73b2-4c83-94a7-72df03957292
   Args:
-    source: Princess_Victoria_Louise_of_Prussia
-    type: :Woman
-  AssignClass (6c4f1963-ce8c-4de1-90df-172a64206729)
- Call ID: 6c4f1963-ce8c-4de1-90df-172a64206729
+    target: :Princess_Irene_of_the_Netherlands
+    relation: :isDaughterOf
+    source: :Princess_Carolina_of_Bourbon-Parma
+  AddTriple (f9960ee8-f242-4c9a-b7be-cc20a212b642)
+ Call ID: f9960ee8-f242-4c9a-b7be-cc20a212b642
   Args:
-    source: Wilhelm_II_German_Emperor
-    type: :Man
-  AddLiteral (f389cbe6-dad0-4a0a-acb7-d85e13d8b0ef)
- Call ID: f389cbe6-dad0-4a0a-acb7-d85e13d8b0ef
+    relation: :isDaughterOf
+    source: :Princess_Carolina_of_Bourbon-Parma
+    target: :Carlos_Hugo_Duke_of_Parma
+  AddLiteral (bf3be2a8-b258-4e1d-bb69-0ea4a8340e0f)
+ Call ID: bf3be2a8-b258-4e1d-bb69-0ea4a8340e0f
   Args:
-    literal_value: 1880
-    source: George_William
+    literal_type: xsd:date
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (e4709a1c-093f-4d28-a049-3b9db27ba194)
- Call ID: e4709a1c-093f-4d28-a049-3b9db27ba194
+    literal_value: 1974-06-23
+    source: :Princess_Carolina_of_Bourbon-Parma
+  AssignClass (791bd284-0a29-4d1a-92e4-a4ffd686d87b)
+ Call ID: 791bd284-0a29-4d1a-92e4-a4ffd686d87b
   Args:
-    relation: :hasDeathYear
-    literal_value: 1912
-    source: George_William
-    literal_type: xsd:integer
-  AddTriple (3bddc693-66ac-4eea-b192-2422aab31c61)
- Call ID: 3bddc693-66ac-4eea-b192-2422aab31c61
+    source: :Prince_Carlos
+    type: :Man
+  AssignClass (fbd6000c-9565-4e2c-8e2f-d8ea0f7b43a1)
+ Call ID: fbd6000c-9565-4e2c-8e2f-d8ea0f7b43a1
   Args:
-    target: Ernest_Augustus_Crown_Prince_of_Hanover
-    source: George_William
-    relation: :hasFather
-  AddTriple (1f254484-a640-444a-9b42-15f62eb740a3)
- Call ID: 1f254484-a640-444a-9b42-15f62eb740a3
+    source: :Prince_Jaime
+    type: :Man
+  AssignClass (9e7b064f-7c36-4080-8266-4a04c24d3be7)
+ Call ID: 9e7b064f-7c36-4080-8266-4a04c24d3be7
   Args:
-    source: George_William
-    relation: :hasMother
-    target: Princess_Thyra_of_Denmark
-  AddTriple (5b15c59b-cb33-4808-89d4-f38194ebc9cd)
- Call ID: 5b15c59b-cb33-4808-89d4-f38194ebc9cd
+    source: :Princess_Margarita
+    type: :Woman
+  AddTriple (33682550-9674-4398-ab0f-e48f8a9a3eec)
+ Call ID: 33682550-9674-4398-ab0f-e48f8a9a3eec
   Args:
-    target: George_V_of_Hanover
-    relation: :hasFather
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AddTriple (e3e80a33-c932-4e22-8da2-d952777ebfbf)
- Call ID: e3e80a33-c932-4e22-8da2-d952777ebfbf
+    source: :Princess_Carolina_of_Bourbon-Parma
+    relation: :isSiblingOf
+    target: :Prince_Carlos
+  AddTriple (c0baa7ec-779b-40c5-826a-898e650724ba)
+ Call ID: c0baa7ec-779b-40c5-826a-898e650724ba
   Args:
-    target: Christian_IX_of_Denmark
-    relation: :hasFather
-    source: Princess_Thyra_of_Denmark
-  AddTriple (377eb262-202e-4c91-a2cf-850f3c2d2e25)
- Call ID: 377eb262-202e-4c91-a2cf-850f3c2d2e25
+    target: :Prince_Jaime
+    source: :Princess_Carolina_of_Bourbon-Parma
+    relation: :isSiblingOf
+  AddTriple (ce3a389d-3d8e-4e2c-bd90-900a8c5d4cf1)
+ Call ID: ce3a389d-3d8e-4e2c-bd90-900a8c5d4cf1
   Args:
-    source: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
-    relation: :hasFather
-    target: George_III_of_the_United_Kingdom
-  AddTriple (3fc69d3e-32ae-4de7-bef2-bdbb0c723ca9)
- Call ID: 3fc69d3e-32ae-4de7-bef2-bdbb0c723ca9
+    target: :Princess_Margarita
+    source: :Princess_Carolina_of_Bourbon-Parma
+    relation: :isSiblingOf
+  AssignClass (fce18cdc-e893-4305-a36b-d3b4969d1a3a)
+ Call ID: fce18cdc-e893-4305-a36b-d3b4969d1a3a
   Args:
-    relation: :hasFather
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-    target: Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale
-  AddTriple (f993d6cb-9137-448b-ae3a-3f26645f2d3c)
- Call ID: f993d6cb-9137-448b-ae3a-3f26645f2d3c
+    source: :Albert_Alphons_Ludgerus_Brenninkmeijer
+    type: :Man
+  AddLiteral (c66d7b34-522c-4e63-8c9b-079c1e6d1391)
+ Call ID: c66d7b34-522c-4e63-8c9b-079c1e6d1391
   Args:
-    target: Ernest_Augustus_Crown_Prince_of_Hanover
-    relation: :hasFather
-    source: Prince_Ernest_Augustus_the_younger
-  AddTriple (d9c8127b-5469-49df-aad5-ee5b180ca1cb)
- Call ID: d9c8127b-5469-49df-aad5-ee5b180ca1cb
+    literal_type: xsd:date
+    relation: :hasBirthYear
+    literal_value: 1974-05-16
+    source: :Albert_Alphons_Ludgerus_Brenninkmeijer
+  AssignClass (2ac6e6e4-7240-4b24-9e2d-1890cc59f620)
+ Call ID: 2ac6e6e4-7240-4b24-9e2d-1890cc59f620
   Args:
-    target: Wilhelm_II_German_Emperor
-    relation: :hasMother
-    source: Princess_Victoria_Louise_of_Prussia
-  AddLiteral (4eefada0-819e-4397-b6be-ca04abad9f55)
- Call ID: 4eefada0-819e-4397-b6be-ca04abad9f55
+    source: :Queen_Juliana_of_the_Netherlands
+    type: :Woman
+  AssignClass (fe66cce8-2fa2-4a05-9519-a7dd7e0eadbc)
+ Call ID: fe66cce8-2fa2-4a05-9519-a7dd7e0eadbc
   Args:
-    literal_value: 1913
-    source: Prince_Ernest_Augustus_the_younger
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-  AddTriple (81bc2a95-e944-49dd-9fd3-c1112dfea097)
- Call ID: 81bc2a95-e944-49dd-9fd3-c1112dfea097
+    source: :Prince_Bernhard_of_Lippe-Biesterfeld
+    type: :Man
+  AddTriple (36ae3c53-5b21-4a60-a45d-ca42cf4ba4f0)
+ Call ID: 36ae3c53-5b21-4a60-a45d-ca42cf4ba4f0
   Args:
-    target: Princess_Victoria_Louise_of_Prussia
-    source: Prince_Ernest_Augustus_the_younger
-    relation: :hasRelation
-  Finish (c1c79ddb-ed3a-4502-b6d0-b5ff92b7e60a)
- Call ID: c1c79ddb-ed3a-4502-b6d0-b5ff92b7e60a
+    source: :Queen_Juliana_of_the_Netherlands
+    relation: :isParentOf
+    target: :Princess_Irene_of_the_Netherlands
+  AddTriple (328a91fe-958f-485c-abb4-ad698e866806)
+ Call ID: 328a91fe-958f-485c-abb4-ad698e866806
+  Args:
+    source: :Prince_Bernhard_of_Lippe-Biesterfeld
+    relation: :isParentOf
+    target: :Princess_Irene_of_the_Netherlands
+  Finish (02c2abe8-994b-4204-b730-c980fd9ace74)
+ Call ID: 02c2abe8-994b-4204-b730-c980fd9ace74
   Args:

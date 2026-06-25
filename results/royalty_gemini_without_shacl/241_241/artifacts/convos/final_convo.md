@@ -69,25 +69,40 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Marie Alexandra of Baden (Marie Alexandra Thyra Victoria Louise Carola Hilda; 1 August 1902 – 29 January 1944) was a Hessian princess by marriage.
-Family
+Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón, Lord of Tejada GE (born 17 July 1998), widely known as Froilán, is the elder child and only son of Infanta Elena, Duchess of Lugo, and Jaime de Marichalar.
+He is the maternal-line grandson of King Juan Carlos I and Queen Sofía of Spain, and the nephew of King Felipe VI.
+He is the paternal-line grandson of Amalio de Marichalar y Bruguera, VIII Count of Ripalda and Concepción Sáenz de Tejada, Lady of Tejada.
+He is fourth in the line of succession to the Spanish throne, after his cousins (King Felipe's daughters) Leonor, Princess of Asturias, and Infanta Sofía of Spain and his mother, Elena.
+He has a sister two years younger, Victoria de Marichalar y Borbón.
+Early life
 
-She was the only daughter and elder child of Prince Maximilian of Baden (1867–1929) and Princess Marie Louise of Hanover and Cumberland.
-Her paternal grandparents were Prince Wilhelm of Baden (1829–97) and Princess Maria Maximilianovna of Leuchtenberg (1841–1914), a daughter of Maximilian, Duke of Leuchtenberg (1817–52) and Grand Duchess Maria Nikolaevna (1819–1876).
-Princess Marie-Louise of Hanover (1879–1948) was a daughter of Ernest Augustus, Crown Prince of Hanover, claimant of the annexed Kingdom of Hanover.
-Marriage
+Birth and christening
 
-On 17 September 1924, she married her fourth cousin Prince Wolfgang of Hesse (1896–1989).
-Death
+Felipe de Marichalar y Borbón was born on 17 July 1998 at Ruber International Hospital in Madrid.
+He was baptized on Sunday 4 October 1998 day of the feast of San Francisco de Asis and on the eve of San Froilán, patron of Lugo, the mass was celebrated in the audience hall of the Zarzuela Palace.
+His godparents were his maternal grandfather, Juan Carlos of Spain, and his paternal grandmother, Concepción Sáez de Tejada y Fernández de Boadilla, Dowager Countess of Ripalda (1929–2014).
+Froilán took a course at Cottesmore, a boarding prep school in West Sussex, to return the following year, in 2011, to Colegio Santa María del Pilar in Madrid, where he remained for three years.
+On 9 April 2012, Felipe de Marichalar accidentally shot himself in his right foot while he was on a farm of his father's family in Garray (Soria).
+The judge dismissed the case against Jaime de Marichalar, considering it not gross negligence but a small misdemeanor.
+The tuition, which for each course amounted to $45,000, was paid for by his maternal grandfather King Juan Carlos I.
 
-Princess Marie Alexandra was killed in an attack by the U.S. Army Air Forces during an air-raid on Frankfurt am Main on 29–30 January 1944 during World War II.
-She and seven other women, who were aid workers, were killed when the cellar, in which they had taken refuge, collapsed under the weight of the building, rendering Marie Alexandra's body barely recognisable.
+
+He then began his higher education studies, majoring in Business Administration and Management at the College for International Studies in Madrid, a Spanish Higher Education institution associated with Endicott College.
+In January 2023 it was announced that Felipe would be going to live in the United Arab Emirates with his grandfather, Juan Carlos I. Froilán will work for the ADNOC oil company, owned by the Minister of Advanced Technology of the United Arab Emirates, Sultan Ahmed Al-Jaber.
+Titles, styles, honours and arms
+
+He is styled as The Most Excellent Don Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón, Grandee of Spain and Caballero Divisoro Hijodalgo of the Illustrious Solar de Tejada
+
+
+References
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -103,39 +118,9 @@ She and seven other women, who were aid workers, were killed when the cellar, in
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -150,6 +135,23 @@ She and seven other women, who were aid workers, were killed when the cellar, in
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -167,6 +169,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -234,29 +251,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,6 +274,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -277,6 +294,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -285,17 +304,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -323,6 +344,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -338,284 +443,196 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (59853b74-22b5-47f1-ab66-59c0705f23ec)
- Call ID: 59853b74-22b5-47f1-ab66-59c0705f23ec
+  AssignClass (eba09ca4-d4c8-4e75-9598-6787d9d74205)
+ Call ID: eba09ca4-d4c8-4e75-9598-6787d9d74205
+  Args:
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
+    type: :Man
+  AssignClass (9b647171-453d-4ecd-b09c-1bd99b5363d7)
+ Call ID: 9b647171-453d-4ecd-b09c-1bd99b5363d7
+  Args:
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
+    type: :Person
+  AddLiteral (82f10a84-dc2d-4649-8d49-caf609957e9d)
+ Call ID: 82f10a84-dc2d-4649-8d49-caf609957e9d
+  Args:
+    literal_value: 1998
+    literal_type: xsd:integer
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
+    relation: :hasBirthYear
+  AddLiteral (b35597cb-fe39-461a-bf23-1aaada3f2f31)
+ Call ID: b35597cb-fe39-461a-bf23-1aaada3f2f31
+  Args:
+    literal_type: xsd:string
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
+    literal_value: Froilan
+    relation: :knownAs
+  AssignClass (89d9e017-d149-47e1-b737-5e4f80952042)
+ Call ID: 89d9e017-d149-47e1-b737-5e4f80952042
   Args:
     type: :Woman
-    source: Princess_Marie_Alexandra_of_Baden
-  AssignClass (fa9c7ae5-55b8-492a-a0a4-716210c0e7e3)
- Call ID: fa9c7ae5-55b8-492a-a0a4-716210c0e7e3
+    source: Infanta_Elena_Duchess_of_Lugo
+  AssignClass (05cad11e-4b71-46d5-b985-9d0e88912f84)
+ Call ID: 05cad11e-4b71-46d5-b985-9d0e88912f84
   Args:
     type: :Person
-    source: Princess_Marie_Alexandra_of_Baden
-  AddLiteral (7e94d324-aab5-42dd-a493-baf09d04d108)
- Call ID: 7e94d324-aab5-42dd-a493-baf09d04d108
-  Args:
-    literal_type: xsd:integer
-    source: Princess_Marie_Alexandra_of_Baden
-    relation: :hasBirthYear
-    literal_value: 1902
-  AddLiteral (c8aa423b-fbe3-43ad-a7fb-ff98647bc139)
- Call ID: c8aa423b-fbe3-43ad-a7fb-ff98647bc139
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1944
-    source: Princess_Marie_Alexandra_of_Baden
-    relation: :hasDeathYear
-  AssignClass (831b5f21-867a-4324-ba34-361c4b7e9fbe)
- Call ID: 831b5f21-867a-4324-ba34-361c4b7e9fbe
+    source: Infanta_Elena_Duchess_of_Lugo
+  AssignClass (66af0452-ca29-4de6-b5ef-1eeefd5921fe)
+ Call ID: 66af0452-ca29-4de6-b5ef-1eeefd5921fe
   Args:
     type: :Man
-    source: Prince_Maximilian_of_Baden
-  AssignClass (e9996267-d852-4b7c-8101-efe12dcd9889)
- Call ID: e9996267-d852-4b7c-8101-efe12dcd9889
+    source: Jaime_de_Marichalar
+  AssignClass (4753bce5-dc39-4e8e-b6e7-834f3603d9f8)
+ Call ID: 4753bce5-dc39-4e8e-b6e7-834f3603d9f8
   Args:
     type: :Person
-    source: Prince_Maximilian_of_Baden
-  AssignClass (68e058d4-e90b-47bc-86cf-42a1aef8f716)
- Call ID: 68e058d4-e90b-47bc-86cf-42a1aef8f716
+    source: Jaime_de_Marichalar
+  AddTriple (69a281b9-1352-4b30-a101-5ba126bb1276)
+ Call ID: 69a281b9-1352-4b30-a101-5ba126bb1276
   Args:
-    type: :Ancestor
-    source: Prince_Maximilian_of_Baden
-  AddLiteral (e1f086ea-65bf-461e-9cd4-2236358d7c2f)
- Call ID: e1f086ea-65bf-461e-9cd4-2236358d7c2f
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1867
-    relation: :hasBirthYear
-    source: Prince_Maximilian_of_Baden
-  AddLiteral (076e691c-1e8d-4b44-acbc-58d701b26692)
- Call ID: 076e691c-1e8d-4b44-acbc-58d701b26692
-  Args:
-    source: Prince_Maximilian_of_Baden
-    relation: :hasDeathYear
-    literal_value: 1929
-    literal_type: xsd:integer
-  AssignClass (1d2af75a-e7c4-494d-beb7-561c4d3dcf4a)
- Call ID: 1d2af75a-e7c4-494d-beb7-561c4d3dcf4a
-  Args:
-    type: :Woman
-    source: Princess_Marie_Louise_of_Hanover_and_Cumberland
-  AssignClass (c630824d-b693-44dc-82a0-0fb96a09538e)
- Call ID: c630824d-b693-44dc-82a0-0fb96a09538e
-  Args:
-    type: :Person
-    source: Princess_Marie_Louise_of_Hanover_and_Cumberland
-  AssignClass (12edb0e4-b055-4535-8e8a-a8847e30662e)
- Call ID: 12edb0e4-b055-4535-8e8a-a8847e30662e
-  Args:
-    type: :Ancestor
-    source: Princess_Marie_Louise_of_Hanover_and_Cumberland
-  AddTriple (ef50238b-6c8b-41b4-ba3a-352238b7b1ab)
- Call ID: ef50238b-6c8b-41b4-ba3a-352238b7b1ab
-  Args:
-    source: Princess_Marie_Alexandra_of_Baden
-    relation: :hasFather
-    target: Prince_Maximilian_of_Baden
-  AddTriple (50322f19-de02-4800-a398-d9d76ec3db96)
- Call ID: 50322f19-de02-4800-a398-d9d76ec3db96
-  Args:
-    target: Princess_Marie_Louise_of_Hanover_and_Cumberland
-    source: Princess_Marie_Alexandra_of_Baden
     relation: :hasMother
-  AssignClass (aae44665-dd9d-4591-8efc-81ca6b093fce)
- Call ID: aae44665-dd9d-4591-8efc-81ca6b093fce
+    target: Infanta_Elena_Duchess_of_Lugo
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
+  AddTriple (deadc446-a8e2-4035-a6e1-eafd07f028ee)
+ Call ID: deadc446-a8e2-4035-a6e1-eafd07f028ee
   Args:
+    relation: :hasFather
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
+    target: Jaime_de_Marichalar
+  AssignClass (b64e257d-b11e-40d0-a80a-e04a8d197508)
+ Call ID: b64e257d-b11e-40d0-a80a-e04a8d197508
+  Args:
+    source: Juan_Carlos_I
     type: :Man
-    source: Prince_Wilhelm_of_Baden
-  AssignClass (9f52b4e1-0a64-443e-90ed-0ac8ae30bf7e)
- Call ID: 9f52b4e1-0a64-443e-90ed-0ac8ae30bf7e
+  AssignClass (c9ee44d8-d468-4180-9618-bf7d61afe2b2)
+ Call ID: c9ee44d8-d468-4180-9618-bf7d61afe2b2
+  Args:
+    source: Juan_Carlos_I
+    type: :Person
+  AssignClass (f93727be-50b4-455e-b22b-3cc878581796)
+ Call ID: f93727be-50b4-455e-b22b-3cc878581796
+  Args:
+    source: Sofia_of_Spain
+    type: :Woman
+  AssignClass (2d7f8fbd-482a-491d-99b4-a634cd59b437)
+ Call ID: 2d7f8fbd-482a-491d-99b4-a634cd59b437
   Args:
     type: :Person
-    source: Prince_Wilhelm_of_Baden
-  AssignClass (975e2537-9332-4e3d-b3ac-9a7ba2db3ca4)
- Call ID: 975e2537-9332-4e3d-b3ac-9a7ba2db3ca4
+    source: Sofia_of_Spain
+  AddTriple (9eb9aa55-c8b4-4a08-8641-3120570ff048)
+ Call ID: 9eb9aa55-c8b4-4a08-8641-3120570ff048
   Args:
-    type: :Ancestor
-    source: Prince_Wilhelm_of_Baden
-  AddLiteral (126e1f78-155c-484c-b4d9-9283f70b80c1)
- Call ID: 126e1f78-155c-484c-b4d9-9283f70b80c1
+    relation: :hasParent
+    source: Infanta_Elena_Duchess_of_Lugo
+    target: Juan_Carlos_I
+  AddTriple (359916d1-416b-4db5-a178-63dd839bf12b)
+ Call ID: 359916d1-416b-4db5-a178-63dd839bf12b
   Args:
-    source: Prince_Wilhelm_of_Baden
-    relation: :hasBirthYear
-    literal_value: 1829
-    literal_type: xsd:integer
-  AddLiteral (f1ed103d-3bfe-4368-9c37-28e3cba0349c)
- Call ID: f1ed103d-3bfe-4368-9c37-28e3cba0349c
+    target: Sofia_of_Spain
+    source: Infanta_Elena_Duchess_of_Lugo
+    relation: :hasParent
+  AssignClass (0da57e5d-dab8-4e5a-b432-a5b9db7c2dab)
+ Call ID: 0da57e5d-dab8-4e5a-b432-a5b9db7c2dab
   Args:
-    literal_type: xsd:integer
-    literal_value: 1897
-    relation: :hasDeathYear
-    source: Prince_Wilhelm_of_Baden
-  AssignClass (25625fcf-3ff0-456a-9d49-d11b31e252a3)
- Call ID: 25625fcf-3ff0-456a-9d49-d11b31e252a3
+    type: :Man
+    source: Felipe_VI
+  AssignClass (d1154b45-67b9-45c6-bb18-5ce30b755c0d)
+ Call ID: d1154b45-67b9-45c6-bb18-5ce30b755c0d
+  Args:
+    source: Felipe_VI
+    type: :Person
+  AssignClass (9252f4ad-2e58-4574-9742-bb9f8887a315)
+ Call ID: 9252f4ad-2e58-4574-9742-bb9f8887a315
+  Args:
+    source: Amalio_de_Marichalar_y_Bruguera
+    type: :Man
+  AssignClass (f103f5a8-958d-46f6-a9ba-b61a77dbb11e)
+ Call ID: f103f5a8-958d-46f6-a9ba-b61a77dbb11e
+  Args:
+    type: :Person
+    source: Amalio_de_Marichalar_y_Bruguera
+  AssignClass (2ba0825f-5ffe-407e-8c21-19abadd05742)
+ Call ID: 2ba0825f-5ffe-407e-8c21-19abadd05742
+  Args:
+    source: Concepcion_Saenz_de_Tejada
+    type: :Woman
+  AssignClass (ae480ed9-6b01-4fee-9f48-d373cc6dbcf9)
+ Call ID: ae480ed9-6b01-4fee-9f48-d373cc6dbcf9
+  Args:
+    source: Concepcion_Saenz_de_Tejada
+    type: :Person
+  AddTriple (52cbc491-a708-455e-8d59-1faa52d8553f)
+ Call ID: 52cbc491-a708-455e-8d59-1faa52d8553f
+  Args:
+    relation: :hasParent
+    target: Amalio_de_Marichalar_y_Bruguera
+    source: Jaime_de_Marichalar
+  AddTriple (af509885-8bdd-4c79-8bc0-00c6de9ecfac)
+ Call ID: af509885-8bdd-4c79-8bc0-00c6de9ecfac
+  Args:
+    relation: :hasParent
+    target: Concepcion_Saenz_de_Tejada
+    source: Jaime_de_Marichalar
+  AssignClass (8bde81d2-e677-449e-82f9-31fe217c1520)
+ Call ID: 8bde81d2-e677-449e-82f9-31fe217c1520
+  Args:
+    source: Victoria_de_Marichalar_y_Borbon
+    type: :Woman
+  AssignClass (5fe5e897-b253-4a0e-9093-579be485eac4)
+ Call ID: 5fe5e897-b253-4a0e-9093-579be485eac4
+  Args:
+    source: Victoria_de_Marichalar_y_Borbon
+    type: :Person
+  AddTriple (8eefc8db-ba39-4fd6-a9f6-4d659e970540)
+ Call ID: 8eefc8db-ba39-4fd6-a9f6-4d659e970540
+  Args:
+    target: Victoria_de_Marichalar_y_Borbon
+    source: Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon
+    relation: :hasSister
+  AddTriple (11843d06-4363-4ac3-9d45-c877a5aa0082)
+ Call ID: 11843d06-4363-4ac3-9d45-c877a5aa0082
+  Args:
+    relation: :hasMother
+    target: Infanta_Elena_Duchess_of_Lugo
+    source: Victoria_de_Marichalar_y_Borbon
+  AddTriple (4db3cf34-a7ea-4d13-b83d-fe9dafd172a5)
+ Call ID: 4db3cf34-a7ea-4d13-b83d-fe9dafd172a5
+  Args:
+    target: Jaime_de_Marichalar
+    source: Victoria_de_Marichalar_y_Borbon
+    relation: :hasFather
+  AssignClass (0c64dd52-4c3c-4022-ac2b-123ffa72249b)
+ Call ID: 0c64dd52-4c3c-4022-ac2b-123ffa72249b
   Args:
     type: :Woman
-    source: Princess_Maria_Maximilianovna_of_Leuchtenberg
-  AssignClass (a31765be-baba-4c76-a98d-2af4b8413895)
- Call ID: a31765be-baba-4c76-a98d-2af4b8413895
+    source: Leonor_Princess_of_Asturias
+  AssignClass (2a5d953c-fa89-4d04-97d0-2a7ad4c4a59b)
+ Call ID: 2a5d953c-fa89-4d04-97d0-2a7ad4c4a59b
   Args:
     type: :Person
-    source: Princess_Maria_Maximilianovna_of_Leuchtenberg
-  AssignClass (5cbe9da5-939f-4c7f-bb8e-a2508ba1bdad)
- Call ID: 5cbe9da5-939f-4c7f-bb8e-a2508ba1bdad
+    source: Leonor_Princess_of_Asturias
+  AssignClass (ee3aaf53-7478-442b-9a57-780b3f881694)
+ Call ID: ee3aaf53-7478-442b-9a57-780b3f881694
   Args:
-    type: :Ancestor
-    source: Princess_Maria_Maximilianovna_of_Leuchtenberg
-  AddLiteral (c5d018f7-1569-4b5e-9455-38df23404b84)
- Call ID: c5d018f7-1569-4b5e-9455-38df23404b84
-  Args:
-    relation: :hasBirthYear
-    source: Princess_Maria_Maximilianovna_of_Leuchtenberg
-    literal_value: 1841
-    literal_type: xsd:integer
-  AddLiteral (5d5f4046-f529-4dd2-96bc-0fbddff3dd2f)
- Call ID: 5d5f4046-f529-4dd2-96bc-0fbddff3dd2f
-  Args:
-    literal_type: xsd:integer
-    source: Princess_Maria_Maximilianovna_of_Leuchtenberg
-    relation: :hasDeathYear
-    literal_value: 1914
-  AddTriple (de638d88-c119-4af3-b2c0-7a826bd34da9)
- Call ID: de638d88-c119-4af3-b2c0-7a826bd34da9
-  Args:
-    target: Prince_Wilhelm_of_Baden
-    source: Prince_Maximilian_of_Baden
-    relation: :hasFather
-  AddTriple (292ae8ee-68cd-4a42-b53b-b1214f068502)
- Call ID: 292ae8ee-68cd-4a42-b53b-b1214f068502
-  Args:
-    target: Princess_Maria_Maximilianovna_of_Leuchtenberg
-    source: Prince_Maximilian_of_Baden
-    relation: :hasMother
-  AssignClass (a0d64608-3df9-4881-b0e4-50d55e41f121)
- Call ID: a0d64608-3df9-4881-b0e4-50d55e41f121
-  Args:
-    type: :Man
-    source: Maximilian_Duke_of_Leuchtenberg
-  AssignClass (8998f200-26ee-4db4-b734-e0739dba6d23)
- Call ID: 8998f200-26ee-4db4-b734-e0739dba6d23
-  Args:
-    type: :Person
-    source: Maximilian_Duke_of_Leuchtenberg
-  AssignClass (be8d772d-b47b-4c96-9a88-71131762a66a)
- Call ID: be8d772d-b47b-4c96-9a88-71131762a66a
-  Args:
-    type: :Ancestor
-    source: Maximilian_Duke_of_Leuchtenberg
-  AddLiteral (6c5b0022-2aae-45e8-8a8c-d94d713fe262)
- Call ID: 6c5b0022-2aae-45e8-8a8c-d94d713fe262
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1817
-    source: Maximilian_Duke_of_Leuchtenberg
-    relation: :hasBirthYear
-  AddLiteral (fcbc0a8c-0cda-47de-b457-64ac03baef48)
- Call ID: fcbc0a8c-0cda-47de-b457-64ac03baef48
-  Args:
-    source: Maximilian_Duke_of_Leuchtenberg
-    relation: :hasDeathYear
-    literal_value: 1852
-    literal_type: xsd:integer
-  AssignClass (cee35ba1-ccfc-4b99-a73f-71262b242f7e)
- Call ID: cee35ba1-ccfc-4b99-a73f-71262b242f7e
-  Args:
+    source: Infanta_Sofia_of_Spain
     type: :Woman
-    source: Grand_Duchess_Maria_Nikolaevna
-  AssignClass (ed433c49-712c-4b0b-ad58-a541f438bcf4)
- Call ID: ed433c49-712c-4b0b-ad58-a541f438bcf4
+  AssignClass (d3fb8a0b-f917-4563-8bd3-80270a4a1766)
+ Call ID: d3fb8a0b-f917-4563-8bd3-80270a4a1766
   Args:
+    source: Infanta_Sofia_of_Spain
     type: :Person
-    source: Grand_Duchess_Maria_Nikolaevna
-  AssignClass (e1dc22bf-e0ab-48b7-8e45-cc2f633ec3c8)
- Call ID: e1dc22bf-e0ab-48b7-8e45-cc2f633ec3c8
+  AddTriple (75f3ada4-81ea-4323-ae6e-e8106491fff8)
+ Call ID: 75f3ada4-81ea-4323-ae6e-e8106491fff8
   Args:
-    type: :Ancestor
-    source: Grand_Duchess_Maria_Nikolaevna
-  AddLiteral (fc6515ef-bf9d-458d-bbc0-9d526e05e706)
- Call ID: fc6515ef-bf9d-458d-bbc0-9d526e05e706
-  Args:
-    literal_type: xsd:integer
-    source: Grand_Duchess_Maria_Nikolaevna
-    relation: :hasBirthYear
-    literal_value: 1819
-  AddLiteral (2e838aaf-6800-4708-8d37-311f4223a76f)
- Call ID: 2e838aaf-6800-4708-8d37-311f4223a76f
-  Args:
-    literal_value: 1876
-    relation: :hasDeathYear
-    source: Grand_Duchess_Maria_Nikolaevna
-    literal_type: xsd:integer
-  AddTriple (2fb8da8e-f13d-44ca-9148-eba7a0eb8e5c)
- Call ID: 2fb8da8e-f13d-44ca-9148-eba7a0eb8e5c
-  Args:
-    target: Maximilian_Duke_of_Leuchtenberg
     relation: :hasFather
-    source: Princess_Maria_Maximilianovna_of_Leuchtenberg
-  AddTriple (49634b50-daa1-4ced-b02b-66b02959f5ed)
- Call ID: 49634b50-daa1-4ced-b02b-66b02959f5ed
+    target: Felipe_VI
+    source: Leonor_Princess_of_Asturias
+  AddTriple (f1984416-7d73-4966-8961-7652a696369d)
+ Call ID: f1984416-7d73-4966-8961-7652a696369d
   Args:
-    target: Grand_Duchess_Maria_Nikolaevna
-    relation: :hasMother
-    source: Princess_Maria_Maximilianovna_of_Leuchtenberg
-  AssignClass (be9177c8-b45e-4798-ba67-dae06fe18cd3)
- Call ID: be9177c8-b45e-4798-ba67-dae06fe18cd3
-  Args:
-    type: :Man
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AssignClass (c940a1f1-1ef3-43a1-922f-eafa7e3af06b)
- Call ID: c940a1f1-1ef3-43a1-922f-eafa7e3af06b
-  Args:
-    type: :Person
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AssignClass (c4f73e9c-fce4-4e00-b78b-fcc49fb57551)
- Call ID: c4f73e9c-fce4-4e00-b78b-fcc49fb57551
-  Args:
-    type: :Ancestor
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AddTriple (ede15e75-938e-4617-b553-eb0b3b6bfccf)
- Call ID: ede15e75-938e-4617-b553-eb0b3b6bfccf
-  Args:
-    target: Ernest_Augustus_Crown_Prince_of_Hanover
-    source: Princess_Marie_Louise_of_Hanover_and_Cumberland
+    target: Felipe_VI
+    source: Infanta_Sofia_of_Spain
     relation: :hasFather
-  AssignClass (cb544f7d-cbe7-4c22-84bf-3b9f6499e19c)
- Call ID: cb544f7d-cbe7-4c22-84bf-3b9f6499e19c
-  Args:
-    type: :Man
-    source: Prince_Wolfgang_of_Hesse
-  AssignClass (1e54df71-b263-4d04-b843-794c472286db)
- Call ID: 1e54df71-b263-4d04-b843-794c472286db
-  Args:
-    type: :Person
-    source: Prince_Wolfgang_of_Hesse
-  AddLiteral (99bb84d5-d1f8-498f-a60b-e1e75c7f45d5)
- Call ID: 99bb84d5-d1f8-498f-a60b-e1e75c7f45d5
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1896
-    source: Prince_Wolfgang_of_Hesse
-    relation: :hasBirthYear
-  AddLiteral (259edf12-e535-43f5-9000-8fe1a6c49915)
- Call ID: 259edf12-e535-43f5-9000-8fe1a6c49915
-  Args:
-    relation: :hasDeathYear
-    source: Prince_Wolfgang_of_Hesse
-    literal_value: 1989
-    literal_type: xsd:integer
-  AddLiteral (a785f9a1-d51a-4f17-a96f-6ec2daa2c020)
- Call ID: a785f9a1-d51a-4f17-a96f-6ec2daa2c020
-  Args:
-    literal_value: 1924
-    relation: :hasMarriageYear
-    source: Princess_Marie_Alexandra_of_Baden
-    literal_type: xsd:integer
-  AddTriple (811742d7-6715-4635-9c22-e0b84c5fcc7e)
- Call ID: 811742d7-6715-4635-9c22-e0b84c5fcc7e
-  Args:
-    source: Princess_Marie_Alexandra_of_Baden
-    relation: :hasRelation
-    target: Prince_Wolfgang_of_Hesse
-  Finish (65f6c227-1c07-47e5-868a-2251870cdb7b)
- Call ID: 65f6c227-1c07-47e5-868a-2251870cdb7b
+  Finish (ddba833f-2944-47c6-b5a7-96e29d39c762)
+ Call ID: ddba833f-2944-47c6-b5a7-96e29d39c762
   Args:

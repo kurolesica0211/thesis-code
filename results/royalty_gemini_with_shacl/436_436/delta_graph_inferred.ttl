@@ -1,0 +1,88 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Michael_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Michael_Bowes-Lyon ;
+    :hasChild data:Simon_Patrick_Bowes-Lyon ;
+    :hasDeathYear 2016 ;
+    :hasRelation data:Anthony_Edward_Weatherall,
+        data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon,
+        data:Simon_Patrick_Bowes-Lyon ;
+    :hasSon data:Simon_Patrick_Bowes-Lyon ;
+    :isAncestorOf data:Simon_Patrick_Bowes-Lyon ;
+    :isBloodrelationOf data:Michael_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Bowes-Lyon ;
+    :isFatherOf data:Simon_Patrick_Bowes-Lyon ;
+    :isParentOf data:Simon_Patrick_Bowes-Lyon ;
+    :isSiblingOf data:Michael_Bowes-Lyon ;
+    :isUncleOf data:Simon_Patrick_Bowes-Lyon .
+
+data:Anthony_Edward_Weatherall a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Anthony_Edward_Weatherall ;
+    :hasChild data:Isobel_Weatherall ;
+    :hasDaughter data:Isobel_Weatherall ;
+    :hasRelation data:Anthony_Edward_Weatherall,
+        data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon,
+        data:Simon_Patrick_Bowes-Lyon ;
+    :isAncestorOf data:Isobel_Weatherall,
+        data:Simon_Patrick_Bowes-Lyon ;
+    :isBloodrelationOf data:Anthony_Edward_Weatherall ;
+    :isBrotherOf data:Anthony_Edward_Weatherall ;
+    :isFatherOf data:Isobel_Weatherall ;
+    :isParentOf data:Isobel_Weatherall ;
+    :isSiblingOf data:Anthony_Edward_Weatherall ;
+    :isUncleOf data:Isobel_Weatherall .
+
+data:Isobel_Weatherall a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Anthony_Edward_Weatherall ;
+    :hasChild data:Simon_Patrick_Bowes-Lyon ;
+    :hasFather data:Anthony_Edward_Weatherall ;
+    :hasParent data:Anthony_Edward_Weatherall ;
+    :hasRelation data:Anthony_Edward_Weatherall,
+        data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon,
+        data:Simon_Patrick_Bowes-Lyon ;
+    :hasSister data:Isobel_Weatherall ;
+    :hasSon data:Simon_Patrick_Bowes-Lyon ;
+    :isAncestorOf data:Simon_Patrick_Bowes-Lyon ;
+    :isAuntOf data:Simon_Patrick_Bowes-Lyon ;
+    :isBloodrelationOf data:Isobel_Weatherall ;
+    :isChildOf data:Anthony_Edward_Weatherall ;
+    :isDaughterOf data:Anthony_Edward_Weatherall ;
+    :isMotherOf data:Simon_Patrick_Bowes-Lyon ;
+    :isParentOf data:Simon_Patrick_Bowes-Lyon ;
+    :isSiblingOf data:Isobel_Weatherall ;
+    :isSisterOf data:Isobel_Weatherall .
+
+data:Simon_Patrick_Bowes-Lyon a :Man,
+        :Person ;
+    :hasAncestor data:Anthony_Edward_Weatherall,
+        data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon ;
+    :hasBirthYear 1986 ;
+    :hasBrother data:Simon_Patrick_Bowes-Lyon ;
+    :hasFather data:Michael_Bowes-Lyon ;
+    :hasMother data:Isobel_Weatherall ;
+    :hasParent data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon ;
+    :hasRelation data:Anthony_Edward_Weatherall,
+        data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon,
+        data:Simon_Patrick_Bowes-Lyon ;
+    :isBloodrelationOf data:Simon_Patrick_Bowes-Lyon ;
+    :isBrotherOf data:Simon_Patrick_Bowes-Lyon ;
+    :isChildOf data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon ;
+    :isSiblingOf data:Simon_Patrick_Bowes-Lyon ;
+    :isSonOf data:Isobel_Weatherall,
+        data:Michael_Bowes-Lyon .
+

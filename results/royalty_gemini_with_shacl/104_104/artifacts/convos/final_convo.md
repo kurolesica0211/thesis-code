@@ -114,6 +114,7 @@ Victoria's brother, Leopold, was a haemophiliac, so there was a 50 percent chanc
 Finally, Alfonso's mother Maria Christina wanted him to marry a member of her family, the House of Habsburg-Lorraine, or some other Catholic princess, as she considered the Battenbergs to be non-dynastic.
 Victoria was willing to change her religion, and her being a haemophilia carrier was only a possibility.
 Maria Christina was eventually persuaded to drop her opposition.
+In January 1906 she wrote an official letter to Princess Beatrice proposing the match.
 Victoria met Maria Christina and Alfonso in Biarritz, France, later that month, and converted to Catholicism in San Sebastián in March.
 Alfonso and Victoria were married at the Royal Monastery of San Jerónimo in Madrid on 31 May 1906, with British royalty in attendance, including Victoria's cousins the Prince and Princess of Wales (later King George V and Queen Mary).
 The wedding was marked by an assassination attempt on Alfonso and Victoria by Catalan anarchist Mateu Morral.
@@ -200,6 +201,8 @@ This has led some to speculate that Alfonso may have possessed a sexual addictio
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -215,39 +218,9 @@ This has led some to speculate that Alfonso may have possessed a sexual addictio
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -262,6 +235,23 @@ This has led some to speculate that Alfonso may have possessed a sexual addictio
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -279,6 +269,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -346,29 +351,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -377,6 +374,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -389,6 +394,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -397,17 +404,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -435,6 +444,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -450,226 +543,191 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4e5c5553-3c1a-4d33-8ae8-8889685e527e)
- Call ID: 4e5c5553-3c1a-4d33-8ae8-8889685e527e
+  AssignClass (c7161b30-3da5-4880-bb3f-4cdc1a05decb)
+ Call ID: c7161b30-3da5-4880-bb3f-4cdc1a05decb
   Args:
     source: Alfonso_XIII
     type: :Man
-  AssignClass (6ef040bd-2651-471e-8ba1-0c6a951aaf5f)
- Call ID: 6ef040bd-2651-471e-8ba1-0c6a951aaf5f
+  AssignClass (caf8f1cd-45e5-4959-abcc-98282eebc4d8)
+ Call ID: caf8f1cd-45e5-4959-abcc-98282eebc4d8
   Args:
+    source: Alfonso_XIII
     type: :Person
-    source: Alfonso_XIII
-  AssignClass (ad48b575-4f3b-46a3-8091-332cd41b4597)
- Call ID: ad48b575-4f3b-46a3-8091-332cd41b4597
-  Args:
-    source: Alfonso_XIII
-    type: :Ancestor
-  AddLiteral (41bbd5ff-99c1-45cc-b47b-3e727231b0b7)
- Call ID: 41bbd5ff-99c1-45cc-b47b-3e727231b0b7
-  Args:
-    literal_value: 1886
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Alfonso_XIII
-  AddLiteral (fc78d739-fcc4-4ede-a198-782968520fe1)
- Call ID: fc78d739-fcc4-4ede-a198-782968520fe1
-  Args:
-    source: Alfonso_XIII
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1941
-  AddLiteral (cb1518cb-a58f-49cd-9bd5-6a5bbbcb62bb)
- Call ID: cb1518cb-a58f-49cd-9bd5-6a5bbbcb62bb
-  Args:
-    source: Alfonso_XIII
-    relation: :alsoKnownAs
-    literal_type: xsd:string
-    literal_value: El Africano
-  AddLiteral (ad9af1d8-fe1e-4f5b-bad8-00df8b9b17ac)
- Call ID: ad9af1d8-fe1e-4f5b-bad8-00df8b9b17ac
-  Args:
-    literal_value: the African
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    source: Alfonso_XIII
-  AssignClass (6bec91cd-8617-4695-af66-26394eac1a74)
- Call ID: 6bec91cd-8617-4695-af66-26394eac1a74
+  AssignClass (13a3152c-d7f3-491a-996f-682f6fab0d66)
+ Call ID: 13a3152c-d7f3-491a-996f-682f6fab0d66
   Args:
     source: Alfonso_XII
     type: :Man
-  AssignClass (f9d7b7b8-1a34-45fe-af64-830a18fd4ffd)
- Call ID: f9d7b7b8-1a34-45fe-af64-830a18fd4ffd
+  AssignClass (648e3074-5979-4c4b-86e9-1f343521091b)
+ Call ID: 648e3074-5979-4c4b-86e9-1f343521091b
   Args:
+    source: Alfonso_XII
     type: :Person
-    source: Alfonso_XII
-  AssignClass (a25239a6-a6bc-416e-9d8c-8f6a0a1977e4)
- Call ID: a25239a6-a6bc-416e-9d8c-8f6a0a1977e4
+  AssignClass (176eee4c-ddab-4f60-bb80-0b02b9efe158)
+ Call ID: 176eee4c-ddab-4f60-bb80-0b02b9efe158
   Args:
-    source: Alfonso_XII
-    type: :Ancestor
-  AddTriple (a4c12229-00d1-4355-a066-72d3071f40fc)
- Call ID: a4c12229-00d1-4355-a066-72d3071f40fc
-  Args:
-    source: Alfonso_XIII
-    target: Alfonso_XII
-    relation: :hasFather
-  AssignClass (c8057aae-f7f8-40a4-8a28-b3cf68d17c3f)
- Call ID: c8057aae-f7f8-40a4-8a28-b3cf68d17c3f
-  Args:
+    source: Maria_Christina_of_Austria
     type: :Woman
-    source: Maria_Christina_of_Austria
-  AssignClass (e02e42a9-4668-4a10-a546-cf502f056868)
- Call ID: e02e42a9-4668-4a10-a546-cf502f056868
+  AssignClass (5a036735-2908-4dbb-b815-d57c2de6b2c5)
+ Call ID: 5a036735-2908-4dbb-b815-d57c2de6b2c5
   Args:
     source: Maria_Christina_of_Austria
     type: :Person
-  AssignClass (b194501b-3ebc-4721-9706-112619652ba6)
- Call ID: b194501b-3ebc-4721-9706-112619652ba6
+  AssignClass (ed072b1b-0fdc-48d1-8ddd-5cd9b64d2dca)
+ Call ID: ed072b1b-0fdc-48d1-8ddd-5cd9b64d2dca
   Args:
-    source: Maria_Christina_of_Austria
-    type: :Ancestor
-  AddTriple (32d605f5-2683-4a54-a3d2-2dfe24cea649)
- Call ID: 32d605f5-2683-4a54-a3d2-2dfe24cea649
+    source: Victoria_Eugenie_of_Battenberg
+    type: :Woman
+  AssignClass (e2208095-3bfc-48ee-ba41-4777d8257579)
+ Call ID: e2208095-3bfc-48ee-ba41-4777d8257579
+  Args:
+    source: Victoria_Eugenie_of_Battenberg
+    type: :Person
+  AssignClass (a89fee4b-4974-4aeb-ab16-68f1418e78b5)
+ Call ID: a89fee4b-4974-4aeb-ab16-68f1418e78b5
+  Args:
+    source: Alfonso_Prince_of_Asturias
+    type: :Man
+  AssignClass (a7bcd1bf-4423-47d6-87cf-51b4eddd7305)
+ Call ID: a7bcd1bf-4423-47d6-87cf-51b4eddd7305
+  Args:
+    source: Alfonso_Prince_of_Asturias
+    type: :Person
+  AssignClass (ad9cd02d-c893-48e6-a9b9-416ffc68cbcb)
+ Call ID: ad9cd02d-c893-48e6-a9b9-416ffc68cbcb
+  Args:
+    source: Jaime
+    type: :Man
+  AssignClass (a422a6bc-02cc-4a05-93f7-015b3f27b26e)
+ Call ID: a422a6bc-02cc-4a05-93f7-015b3f27b26e
+  Args:
+    source: Jaime
+    type: :Person
+  AssignClass (81a009aa-935a-48ff-aeff-6cb4e86af7e0)
+ Call ID: 81a009aa-935a-48ff-aeff-6cb4e86af7e0
+  Args:
+    source: Gonzalo
+    type: :Man
+  AssignClass (d21be449-6314-43ce-acc7-5c2b8cbec59d)
+ Call ID: d21be449-6314-43ce-acc7-5c2b8cbec59d
+  Args:
+    source: Gonzalo
+    type: :Person
+  AssignClass (b8492c7f-2e5b-4d96-9a10-36f7dff040e3)
+ Call ID: b8492c7f-2e5b-4d96-9a10-36f7dff040e3
+  Args:
+    source: Juan
+    type: :Man
+  AssignClass (8a57adf1-3321-47e3-9c3d-b0c3e0235006)
+ Call ID: 8a57adf1-3321-47e3-9c3d-b0c3e0235006
+  Args:
+    source: Juan
+    type: :Person
+  AddTriple (a468a10f-e301-4ce8-be9d-25a548364d65)
+ Call ID: a468a10f-e301-4ce8-be9d-25a548364d65
+  Args:
+    target: Alfonso_XII
+    source: Alfonso_XIII
+    relation: :hasFather
+  AddTriple (a391143e-05cd-48fc-bce1-6b6dbd1f9421)
+ Call ID: a391143e-05cd-48fc-bce1-6b6dbd1f9421
   Args:
     target: Maria_Christina_of_Austria
-    relation: :hasMother
     source: Alfonso_XIII
-  AssignClass (0d27e7ab-a18e-4a04-8164-0703aa8299ac)
- Call ID: 0d27e7ab-a18e-4a04-8164-0703aa8299ac
+    relation: :hasMother
+  AddTriple (12327d60-6d4a-4602-b1d5-0f2acfec50a6)
+ Call ID: 12327d60-6d4a-4602-b1d5-0f2acfec50a6
   Args:
-    type: :Woman
+    relation: :hasChild
+    source: Alfonso_XIII
+    target: Alfonso_Prince_of_Asturias
+  AddTriple (d642ec69-39ac-4494-be54-f05e8d025525)
+ Call ID: d642ec69-39ac-4494-be54-f05e8d025525
+  Args:
     source: Victoria_Eugenie_of_Battenberg
-  AssignClass (c38e0495-cd92-4b0a-b478-f0e81b91b4fc)
- Call ID: c38e0495-cd92-4b0a-b478-f0e81b91b4fc
+    relation: :hasChild
+    target: Alfonso_Prince_of_Asturias
+  AddTriple (c445aaef-6acd-40fe-9019-30152767fdbc)
+ Call ID: c445aaef-6acd-40fe-9019-30152767fdbc
   Args:
+    target: Jaime
+    source: Alfonso_XIII
+    relation: :hasChild
+  AddTriple (09b7628e-cff6-4054-98e7-35e837666a47)
+ Call ID: 09b7628e-cff6-4054-98e7-35e837666a47
+  Args:
+    target: Jaime
     source: Victoria_Eugenie_of_Battenberg
-    type: :Person
-  AssignClass (fa6571ae-cdaf-4a96-b4b0-56c32461a1c9)
- Call ID: fa6571ae-cdaf-4a96-b4b0-56c32461a1c9
+    relation: :hasChild
+  AddTriple (49aebaab-ed56-456d-931d-95352e616abc)
+ Call ID: 49aebaab-ed56-456d-931d-95352e616abc
   Args:
-    type: :Ancestor
+    target: Gonzalo
+    relation: :hasChild
+    source: Alfonso_XIII
+  AddTriple (bc0ce87f-77e6-4bac-b20a-06bd79eead95)
+ Call ID: bc0ce87f-77e6-4bac-b20a-06bd79eead95
+  Args:
+    target: Gonzalo
+    relation: :hasChild
     source: Victoria_Eugenie_of_Battenberg
-  AddLiteral (ed071ec7-0109-432c-87d9-5e0e798aadb6)
- Call ID: ed071ec7-0109-432c-87d9-5e0e798aadb6
+  AddTriple (70a0c49f-8fc7-4691-a8e5-376a638483ff)
+ Call ID: 70a0c49f-8fc7-4691-a8e5-376a638483ff
   Args:
-    relation: :hasMarriageYear
+    target: Juan
+    source: Alfonso_XIII
+    relation: :hasChild
+  AddTriple (8cdbc631-5263-414d-b48f-cd6710414dc5)
+ Call ID: 8cdbc631-5263-414d-b48f-cd6710414dc5
+  Args:
+    target: Juan
+    source: Victoria_Eugenie_of_Battenberg
+    relation: :hasChild
+  AddLiteral (265e1500-b83b-4865-bcb9-88b1088cab22)
+ Call ID: 265e1500-b83b-4865-bcb9-88b1088cab22
+  Args:
+    source: Alfonso_XIII
+    relation: :hasBirthYear
+    literal_value: 1886
+    literal_type: xsd:integer
+  AddLiteral (1a07b316-9e4c-43fe-a0da-bb1a0d674d70)
+ Call ID: 1a07b316-9e4c-43fe-a0da-bb1a0d674d70
+  Args:
+    literal_value: 1941
+    literal_type: xsd:integer
+    source: Alfonso_XIII
+    relation: :hasDeathYear
+  AddLiteral (5661aa8f-e9a6-44e4-b671-5a95abbe4a69)
+ Call ID: 5661aa8f-e9a6-44e4-b671-5a95abbe4a69
+  Args:
     literal_type: xsd:integer
     literal_value: 1906
+    relation: :hasMarriageYear
     source: Alfonso_XIII
-  AddTriple (a77b35a0-2373-48fd-ad1a-9d60995ac912)
- Call ID: a77b35a0-2373-48fd-ad1a-9d60995ac912
+  AddLiteral (7cebfa08-ab29-4b84-afb3-f080e195c702)
+ Call ID: 7cebfa08-ab29-4b84-afb3-f080e195c702
   Args:
+    relation: :alsoKnownAs
     source: Alfonso_XIII
-    target: Victoria_Eugenie_of_Battenberg
-    relation: :hasRelation
-  AssignClass (47680d2b-1744-4f21-aa1c-fbf9e0008178)
- Call ID: 47680d2b-1744-4f21-aa1c-fbf9e0008178
+    literal_type: xsd:string
+    literal_value: El Africano
+  AddLiteral (cfded179-0dd1-44ff-bbd0-0deee45a20bc)
+ Call ID: cfded179-0dd1-44ff-bbd0-0deee45a20bc
   Args:
-    source: Alfonso_Prince_of_Asturias
-    type: :Man
-  AssignClass (1b59398d-c06d-4319-a178-7f7bfac966d1)
- Call ID: 1b59398d-c06d-4319-a178-7f7bfac966d1
-  Args:
-    type: :Person
-    source: Alfonso_Prince_of_Asturias
-  AddTriple (e6cfd6f4-e545-4b51-8f94-9aefa74266b8)
- Call ID: e6cfd6f4-e545-4b51-8f94-9aefa74266b8
-  Args:
+    literal_type: xsd:string
+    literal_value: the African
+    relation: :alsoKnownAs
     source: Alfonso_XIII
-    target: Alfonso_Prince_of_Asturias
-    relation: :hasSon
-  AddTriple (85cf539b-5380-4945-823e-c38fecd219cb)
- Call ID: 85cf539b-5380-4945-823e-c38fecd219cb
+  AddLiteral (3f8b0fe9-b7e4-421b-90d1-d5dacc376f68)
+ Call ID: 3f8b0fe9-b7e4-421b-90d1-d5dacc376f68
   Args:
-    source: Victoria_Eugenie_of_Battenberg
-    target: Alfonso_Prince_of_Asturias
-    relation: :hasSon
-  AssignClass (c34d16b6-d516-4484-8998-f7ff36cdb8c8)
- Call ID: c34d16b6-d516-4484-8998-f7ff36cdb8c8
-  Args:
-    source: Jaime
-    type: :Man
-  AssignClass (e21efb0e-ec3e-413b-8c5e-afa72f94ab6d)
- Call ID: e21efb0e-ec3e-413b-8c5e-afa72f94ab6d
-  Args:
-    type: :Person
-    source: Jaime
-  AddTriple (d2494866-9c87-4eff-a412-3b5fd334656e)
- Call ID: d2494866-9c87-4eff-a412-3b5fd334656e
-  Args:
-    target: Jaime
-    relation: :hasSon
+    relation: :alsoKnownAs
     source: Alfonso_XIII
-  AddTriple (7f234baa-9856-41a7-8613-0bce2f33f932)
- Call ID: 7f234baa-9856-41a7-8613-0bce2f33f932
+    literal_type: xsd:string
+    literal_value: King Buby
+  Finish (900af672-d88c-4293-b852-c71a32c23e01)
+ Call ID: 900af672-d88c-4293-b852-c71a32c23e01
   Args:
-    source: Victoria_Eugenie_of_Battenberg
-    relation: :hasSon
-    target: Jaime
-  AssignClass (803b3c02-027a-47d3-9c8a-437cd88cf469)
- Call ID: 803b3c02-027a-47d3-9c8a-437cd88cf469
-  Args:
-    type: :Man
-    source: Gonzalo
-  AssignClass (c9a9f726-4875-4bec-b5d2-336b96a32ed7)
- Call ID: c9a9f726-4875-4bec-b5d2-336b96a32ed7
-  Args:
-    source: Gonzalo
-    type: :Person
-  AddTriple (631ad035-af4d-4aeb-b572-cf03f167bf96)
- Call ID: 631ad035-af4d-4aeb-b572-cf03f167bf96
-  Args:
-    target: Gonzalo
-    relation: :hasSon
-    source: Alfonso_XIII
-  AddTriple (67b7b0a6-97df-4665-a70f-937b857160c2)
- Call ID: 67b7b0a6-97df-4665-a70f-937b857160c2
-  Args:
-    relation: :hasSon
-    target: Gonzalo
-    source: Victoria_Eugenie_of_Battenberg
-  AssignClass (6b8bf760-35d0-4afc-aa0c-1fdd7626a2c6)
- Call ID: 6b8bf760-35d0-4afc-aa0c-1fdd7626a2c6
-  Args:
-    source: Juan
-    type: :Man
-  AssignClass (c908eed0-abba-4a11-982b-95688d6b169f)
- Call ID: c908eed0-abba-4a11-982b-95688d6b169f
-  Args:
-    type: :Person
-    source: Juan
-  AddTriple (123b6a11-6a8d-4e5a-a591-7753dba4a9f0)
- Call ID: 123b6a11-6a8d-4e5a-a591-7753dba4a9f0
-  Args:
-    source: Alfonso_XIII
-    relation: :hasSon
-    target: Juan
-  AddTriple (4059ac7e-21f3-4cf9-8e83-4229572e0804)
- Call ID: 4059ac7e-21f3-4cf9-8e83-4229572e0804
-  Args:
-    source: Victoria_Eugenie_of_Battenberg
-    target: Juan
-    relation: :hasSon
-  ValidateShacl (6f3f37cd-d56b-43ad-b391-a33a7e15b08e)
- Call ID: 6f3f37cd-d56b-43ad-b391-a33a7e15b08e
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -802,37 +860,33 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alfonso_XIII a :Ancestor,
-          :Man,
+  data:Alfonso_XIII a :Man,
           :Person ;
       :alsoKnownAs "El Africano"^^xsd:string,
+          "King Buby"^^xsd:string,
           "the African"^^xsd:string ;
       :hasBirthYear 1886 ;
+      :hasChild data:Alfonso_Prince_of_Asturias,
+          data:Gonzalo,
+          data:Jaime,
+          data:Juan ;
       :hasDeathYear 1941 ;
       :hasFather data:Alfonso_XII ;
       :hasMarriageYear 1906 ;
-      :hasMother data:Maria_Christina_of_Austria ;
-      :hasRelation data:Victoria_Eugenie_of_Battenberg ;
-      :hasSon data:Alfonso_Prince_of_Asturias,
+      :hasMother data:Maria_Christina_of_Austria .
+
+  data:Victoria_Eugenie_of_Battenberg a :Person,
+          :Woman ;
+      :hasChild data:Alfonso_Prince_of_Asturias,
           data:Gonzalo,
           data:Jaime,
           data:Juan .
 
-  data:Alfonso_XII a :Ancestor,
-          :Man,
+  data:Alfonso_XII a :Man,
           :Person .
 
-  data:Maria_Christina_of_Austria a :Ancestor,
-          :Person,
+  data:Maria_Christina_of_Austria a :Person,
           :Woman .
-
-  data:Victoria_Eugenie_of_Battenberg a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSon data:Alfonso_Prince_of_Asturias,
-          data:Gonzalo,
-          data:Jaime,
-          data:Juan .
 
   data:Alfonso_Prince_of_Asturias a :Man,
           :Person .
@@ -850,12 +904,165 @@ The final data graph after all the edits:
 
 ================================= Tool Message =================================
 
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (64386f66-0741-401c-8e49-07e47849faec)
+ Call ID: 64386f66-0741-401c-8e49-07e47849faec
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:6
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Alfonso_XII' is currently linked as the father of 'Alfonso_XIII', but it lacks the mandatory 'Ancestor' class required by the shape.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alfonso_XII', class=':Ancestor')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Maria_Christina_of_Austria' is currently linked as the mother of 'Alfonso_XIII', but it lacks the mandatory 'Ancestor' class required by the shape.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Christina_of_Austria', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Alfonso_XII' is currently linked as the father of 'Alfonso_XIII', but it lacks the mandatory 'Ancestor' class required by the shape.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alfonso_XII', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Maria_Christina_of_Austria' is currently linked as the mother of 'Alfonso_XIII', but it lacks the mandatory 'Ancestor' class required by the shape.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Christina_of_Austria', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Alfonso_XII' is currently linked as the father of 'Alfonso_XIII', but it lacks the mandatory 'Ancestor' class required by the shape.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alfonso_XII', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Maria_Christina_of_Austria' is currently linked as the mother of 'Alfonso_XIII', but it lacks the mandatory 'Ancestor' class required by the shape.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Christina_of_Austria', class=':Ancestor')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (86673de0-160b-4d41-8223-cdf5e1d79f13)
+ Call ID: 86673de0-160b-4d41-8223-cdf5e1d79f13
+  Args:
+    type: :Ancestor
+    source: Alfonso_XII
+  AssignClass (839df45c-d767-41e2-989a-4d43c76a8614)
+ Call ID: 839df45c-d767-41e2-989a-4d43c76a8614
+  Args:
+    type: :Ancestor
+    source: Maria_Christina_of_Austria
+  Finish (fe2968f9-c403-4ec3-973c-f04dbc645d76)
+ Call ID: fe2968f9-c403-4ec3-973c-f04dbc645d76
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Alfonso_XIII a :Man,
+          :Person ;
+      :alsoKnownAs "El Africano"^^xsd:string,
+          "King Buby"^^xsd:string,
+          "the African"^^xsd:string ;
+      :hasBirthYear 1886 ;
+      :hasChild data:Alfonso_Prince_of_Asturias,
+          data:Gonzalo,
+          data:Jaime,
+          data:Juan ;
+      :hasDeathYear 1941 ;
+      :hasFather data:Alfonso_XII ;
+      :hasMarriageYear 1906 ;
+      :hasMother data:Maria_Christina_of_Austria .
+
+  data:Victoria_Eugenie_of_Battenberg a :Person,
+          :Woman ;
+      :hasChild data:Alfonso_Prince_of_Asturias,
+          data:Gonzalo,
+          data:Jaime,
+          data:Juan .
+
+  data:Alfonso_XII a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Maria_Christina_of_Austria a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Alfonso_Prince_of_Asturias a :Man,
+          :Person .
+
+  data:Gonzalo a :Man,
+          :Person .
+
+  data:Jaime a :Man,
+          :Person .
+
+  data:Juan a :Man,
+          :Person .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (2a196991-4904-4ead-b304-bc79934d6168)
+ Call ID: 2a196991-4904-4ead-b304-bc79934d6168
+  Args:
+
+================================= Tool Message =================================
+
 SHACL validation has not produced any violations.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  Finish (bbbf4e9a-6c1c-4bcc-9a75-c116694cd928)
- Call ID: bbbf4e9a-6c1c-4bcc-9a75-c116694cd928
+  Finish (221bf4d1-d34e-46fa-b3d5-a860588e747c)
+ Call ID: 221bf4d1-d34e-46fa-b3d5-a860588e747c
   Args:

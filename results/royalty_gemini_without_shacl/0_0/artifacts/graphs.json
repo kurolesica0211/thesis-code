@@ -4,13 +4,20 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Oskar_Michael_Hans_Karl_Prinz_von_Preussen a :Man,\n        :Person ;\n    :hasBirthYear 1959 ;\n    :isSonOf data:Wilhelm-Karl_of_Prussia .\n\ndata:Oskar_of_Prussia a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Wilhelm-Karl_of_Prussia a :Ancestor,\n        :Man,\n        :Person ;\n    :isSonOf data:Oskar_of_Prussia .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Oskar_Michael_Hans_Karl_Prinz_von_Preussen a :Man,\n        :Person ;\n    :hasAncestor data:Wilhelm_II ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Wilhelm-Karl_Prince_of_Prussia ;\n    :hasMother data:Armgard_von_Veltheim ;\n    :hasSex data:Male .\n\ndata:Armgard_von_Veltheim a :Person,\n        :Woman .\n\ndata:Oskar_of_Prussia a :Man,\n        :Person .\n\ndata:Wilhelm-Karl_Prince_of_Prussia a :Man,\n        :Person ;\n    :hasFather data:Oskar_of_Prussia .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 1,
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Oskar_Michael_Hans_Karl_Prinz_von_Preussen a :Man,\n        :Person ;\n    :hasAncestor data:Wilhelm_II ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Wilhelm-Karl_Prince_of_Prussia ;\n    :hasMother data:Armgard_von_Veltheim ;\n    :hasSex data:Male .\n\ndata:Armgard_von_Veltheim a :Person,\n        :Woman .\n\ndata:Male a :Sex .\n\ndata:Oskar_of_Prussia a :Man,\n        :Person .\n\ndata:Wilhelm-Karl_Prince_of_Prussia a :Man,\n        :Person ;\n    :hasFather data:Oskar_of_Prussia .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Oskar_Michael_Hans_Karl_Prinz_von_Preussen a :Man,\n        :Person ;\n    :hasBirthYear 1959 ;\n    :isSonOf data:Wilhelm-Karl_of_Prussia .\n\ndata:Oskar_of_Prussia a :Ancestor,\n        :Man,\n        :Person .\n\ndata:Wilhelm-Karl_of_Prussia a :Ancestor,\n        :Man,\n        :Person ;\n    :isSonOf data:Oskar_of_Prussia .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Oskar_Michael_Hans_Karl_Prinz_von_Preussen a :Man,\n        :Person ;\n    :hasAncestor data:Wilhelm_II ;\n    :hasBirthYear 1959 ;\n    :hasFather data:Wilhelm-Karl_Prince_of_Prussia ;\n    :hasMother data:Armgard_von_Veltheim ;\n    :hasSex data:Male .\n\ndata:Armgard_von_Veltheim a :Person,\n        :Woman .\n\ndata:Male a :Sex .\n\ndata:Oskar_of_Prussia a :Man,\n        :Person .\n\ndata:Wilhelm-Karl_Prince_of_Prussia a :Man,\n        :Person ;\n    :hasFather data:Oskar_of_Prussia .\n\ndata:Wilhelm_II a :Man,\n        :Person .\n\n"
     }
 ]

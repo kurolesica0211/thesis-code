@@ -1,26 +1,19 @@
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Christian_Prince_of_Denmark a :Man,
-        :Person ;
-    :hasFather data:Frederik_X ;
-    :hasMother data:Mary_Queen_of_Denmark ;
-    :hasParent data:Margrethe_II ;
-    :hasSex data:Male_Sex_Node .
+data:Prince_Christian_of_Denmark a :Man ;
+    :hasBirthYear 2005 ;
+    :hasFather data:King_Frederik_X ;
+    :hasMother data:Queen_Mary .
 
-data:Frederik_X a :Ancestor,
-        :Man,
-        :Person ;
-    :hasMother data:Margrethe_II .
+data:King_Frederik_X a :Ancestor,
+        :Man ;
+    :hasMother data:Queen_Margrethe_II .
 
-data:Male_Sex_Node a :Male,
-        :Sex .
-
-data:Mary_Queen_of_Denmark a :Ancestor,
-        :Person,
+data:Queen_Margrethe_II a :Ancestor,
         :Woman .
 
-data:Margrethe_II a :Ancestor,
-        :Person,
+data:Queen_Mary a :Ancestor,
         :Woman .
 

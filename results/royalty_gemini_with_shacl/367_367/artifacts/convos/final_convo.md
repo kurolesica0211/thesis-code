@@ -85,69 +85,35 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Margaret of Prussia (German: Margarethe Beatrice Feodora; 22 April 1872 – 22 January 1954) was the youngest child of Frederick III, German Emperor, and Victoria, Princess Royal.
-She was also the younger sister of Emperor Wilhelm II and the granddaughter of Queen Victoria.
-She married Prince Frederick Charles of Hesse, the elected King of Finland, making her the would-be Queen of Finland had he not decided to renounce the throne on 14 December 1918.
-In 1926, they assumed the titles of Landgrave and Landgravine of Hesse.
-Early life
+Princess Alexandra of Hanover (Alexandra Louise Marie Olga Elisabeth Therese Vera; 29 September 1882 – 30 August 1963) was Grand Duchess of Mecklenburg-Schwerin as the wife of Grand Duke Frederick Francis IV from their marriage on 7 June 1904 until the Grand Duke abdicated on 14 November 1918, following the German Revolution of 1918.
+Alexandra was the daughter of Ernest Augustus, Crown Prince of Hanover, and Princess Thyra of Denmark.
+Family
 
-Princess Margaret of Prussia was the youngest of eight children born to Frederick III, then Crown Prince of the German Empire, and Victoria, Princess Royal, Britain's Queen Victoria's eldest daughter.
-Born on 22 April 1872 in the Hohenzollerns' New Palace in Potsdam, by the time the infant was christened, her head was covered with short hair like moss, from which she acquired her nickname "Mossy".
-Crown Princess Margherita of Italy was her godmother and Emperor Pedro II of Brazil was her godfather.
-Princess Margaret grew up amid great privilege and formality.
-Together with her sisters, Princess Viktoria and Princess Sophie, Margaret was deeply attached to her parents, forming an antagonist group to that of her eldest siblings, William II, Princess Charlotte and Prince Henry.
-Margaret was widely regarded as the most popular of Kaiser Wilhelm II's sisters, and she maintained good relations with a wide array of family members.
-She was the first cousin of both King George V of the United Kingdom and Empress Alexandra of Russia, all three being grandchildren of Victoria.
-As an adult, she was said to resemble her aunt, Princess Alice.
-Marriage
+Alexandra was the second eldest daughter and third child of Ernest Augustus, Crown Prince of Hanover (1845–1923) and Princess Thyra of Denmark (1853–1933), the youngest daughter of Christian IX of Denmark (1818–1906) and Louise of Hesse-Kassel (1817–1898).
+Alexandra was a great-great-granddaughter of George III of the United Kingdom (1738–1820) and Charlotte of Mecklenburg-Strelitz (1744–1818).
+Marriage and issue
 
-Princess Margaret was first attracted to Prince Maximilian of Baden.
-When he did not reciprocate her affection, she moved on to her second choice, Max's close friend, Prince Frederick Charles of Hesse, future head of the Hesse-Kassel dynasty and future elected King of Finland.
-At the time of the wedding, Prince Frederick Charles was not the Head of the House of Hesse-Kassel.
-Prince Frederick Charles, as was his title when he married, was addressed as His Highness, while Princess Margaret warranted Royal Highness.
-This disparity came to an end in 1925 when Frederick Charles became Landgrave of Hesse and Head of the house of Hesse-Kassel.
-They were second cousins, both great-grandchildren of King Friedrich Wilhelm III of Prussia, he through his mother Anna, she through her father Friedrich.
-Initially, her brother Wilhelm opposed the match as he felt that Frederick Charles's position was too "minor" for the Kaiser's sister.
-Later, however, he gave his blessing, since Margaret herself "was so unimportant".
-Princess Margaret had a strong personality; she always seemed more secure and grounded than her husband.
-Margaret's husband was her mother's favorite son-in-law.
-In 1901, Princess Margaret inherited Schloss Friedrichshof at the death of her mother.
-However, Margaret was committed to maintain the house of her mother which entailed a great expense and the family moved to Friedrichshof.
-In 1918, Margaret's husband accepted the offer of the throne of newly independent Finland, but due to German misfortunes in World War I, soon renounced it.
-Family tragedies
-
-Margaret's elder sons, Friedrich Wilhelm and Maximilian, were killed in action during World War I. Prince Maximilian, Princess Margaret's second and favorite son, was serving near Aisne when he was seriously wounded by machine gun fire in October 1914.
-Princess Margaret's oldest son, Friedrich Wilhelm, died on 12 September 1916 at Kara Orman in Romania.
-Her two other sons, Philipp and Christoph, embraced Nazism, and Margaret, who was the sister of the last Kaiser Wilhelm II, invited Adolf Hitler to tea and flew the swastika from her home at Schloss Kronberg.
-Philipp married Princess Mafalda, daughter of King Victor Emmanuel III of Italy.
-Margaret's fifth son, Christoph, was a staunch supporter of the German war effort, but after the Battle of Stalingrad, he became frustrated by the limitations placed on his own role in the conflict, and increasingly critical of the German leadership.
-Christoph's reaction to the assassination of Heydrich, whom he called a "dangerous and cruel man", in 1942 was that it was "the best news I had in a long time".
-He was married to Princess Sophie of Greece, sister of Philip, Prince of Greece and Denmark who, in 1947, married the heir to the throne of the United Kingdom and, in 1952, became Prince Philip, Duke of Edinburgh, consort of Queen Elizabeth II.
-Margaret also lost another one of her daughters-in-law during the war.
-Wolfgang's wife, Princess Marie Alexandra, when she and seven other women war aid workers, were killed in a bomb attack on Frankfurt on 29–30 January 1944.
-Margaret, very much the matriarch, was at the centre of her large and dynamic family.
-Last years
-
-Landgravine Margaret had difficult years after 1945; they were compounded by the theft from Schloss Friedrichshof in November 1945 of the family jewellery, valued at over £2,000,000.
-Princess Margaret's son Wolfgang, fearing for the jewels, had buried them in a sub-cellar of the castle.
-In early 1946, Princess Margaret discovered the theft when the family wanted to use the jewels for the wedding of Princess Sophia who was preparing to remarry.
-Princess Sophia and Landgravine Margaret reported it to the Frankfurt authorities, and the culprits were imprisoned in August 1951.
-The Hesse family received what had been recovered: only 10 percent of what had been stolen.
-Landgravine Margaret, the last surviving child of Emperor Frederick III and last grandchild of emperor Emperor Wilhelm I, died in Kronberg on 22 January 1954, 14 years after her husband and exactly 53 years to the day after her British grandmother Queen Victoria.
-Children
-
-Landgravine Margaret and her husband Frederick Charles of Hesse had six sons, including two sets of twins:
+Alexandra married on 7 June 1904 in Gmunden, Austria-Hungary to Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin (1882–1945), son of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin and his wife Grand Duchess Anastasia Mikhailovna of Russia.
+The bridegroom gave Alexandra a diamond and aquamarine tiara by Faberge.
+Alexandra and Frederick Francis had five children:
 
 
-Archives
+Grand Duchess of Mecklenburg-Schwerin
 
-Margaret's personal papers (including family correspondence) are preserved in the Archive of the House of Hesse, which is kept in Fasanerie Palace in Eichenzell, Germany.
+In 1913, a fire broke out at Schwerin Castle while the Grand Duke and Duchess were dining there with guests.
+Everyone was able to make it out safely, although the grand ducal couple had to apparently rush through flying sparks when making their escape.
+Later life
+
+After the Grand Duke's forced abdication in 1918, the family briefly went into exile in Denmark, the native country of Alexandra's mother, Princess Thyra.
+After his death in 1945, the widowed Alexandra retired to the Glucksburg family estates in Schleswig-Holstein.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -163,39 +129,9 @@ Margaret's personal papers (including family correspondence) are preserved in th
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -210,6 +146,23 @@ Margaret's personal papers (including family correspondence) are preserved in th
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -227,6 +180,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -294,29 +262,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -325,6 +285,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -337,6 +305,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -345,17 +315,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -383,6 +355,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -398,131 +454,449 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (927acc5e-137c-4214-af3f-d9278c0bab41)
- Call ID: 927acc5e-137c-4214-af3f-d9278c0bab41
+  AssignClass (4af46287-4a73-4add-8b11-7b918513e74b)
+ Call ID: 4af46287-4a73-4add-8b11-7b918513e74b
+  Args:
+    source: Alexandra_of_Hanover
+    type: :Person
+  AssignClass (7e6449f6-0880-427d-8f57-ee11b3557777)
+ Call ID: 7e6449f6-0880-427d-8f57-ee11b3557777
   Args:
     type: :Woman
-    source: Margaret_of_Prussia
-  AssignClass (b5886285-e39d-4a6d-bc69-281892bf4a0d)
- Call ID: b5886285-e39d-4a6d-bc69-281892bf4a0d
+    source: Alexandra_of_Hanover
+  AddLiteral (f8d6d9aa-029d-4fcb-b6b9-d00dd5f85f9c)
+ Call ID: f8d6d9aa-029d-4fcb-b6b9-d00dd5f85f9c
   Args:
-    type: :Person
-    source: Margaret_of_Prussia
-  AssignClass (63d4946b-980a-4608-9b80-9f77ebaf5fa7)
- Call ID: 63d4946b-980a-4608-9b80-9f77ebaf5fa7
-  Args:
-    type: :Man
-    source: Frederick_III_German_Emperor
-  AssignClass (47c5c26d-0ca2-4a3f-8f87-295d7d05ece8)
- Call ID: 47c5c26d-0ca2-4a3f-8f87-295d7d05ece8
-  Args:
-    type: :Person
-    source: Frederick_III_German_Emperor
-  AssignClass (bb1c71d9-f636-4a23-8533-0169ddc8bfcb)
- Call ID: bb1c71d9-f636-4a23-8533-0169ddc8bfcb
-  Args:
-    source: Victoria_Princess_Royal
-    type: :Woman
-  AssignClass (04d83c02-696e-4b33-bb50-5dd9a7a107ae)
- Call ID: 04d83c02-696e-4b33-bb50-5dd9a7a107ae
-  Args:
-    source: Victoria_Princess_Royal
-    type: :Person
-  AssignClass (7e575c78-e1f1-4388-95e7-9c4c54571f34)
- Call ID: 7e575c78-e1f1-4388-95e7-9c4c54571f34
-  Args:
-    source: Wilhelm_II
-    type: :Man
-  AssignClass (d0c32db9-4f43-4b18-a81d-f0b3d2ce7aa5)
- Call ID: d0c32db9-4f43-4b18-a81d-f0b3d2ce7aa5
-  Args:
-    type: :Person
-    source: Wilhelm_II
-  AssignClass (161dce7c-c658-4071-a669-28e89d3bbacd)
- Call ID: 161dce7c-c658-4071-a669-28e89d3bbacd
-  Args:
-    source: Queen_Victoria
-    type: :Woman
-  AssignClass (76a15be2-b7ed-4a79-93b7-f667097d9c2b)
- Call ID: 76a15be2-b7ed-4a79-93b7-f667097d9c2b
-  Args:
-    type: :Person
-    source: Queen_Victoria
-  AssignClass (3bb62631-33e5-482a-bdda-a2a1e3cdaf3d)
- Call ID: 3bb62631-33e5-482a-bdda-a2a1e3cdaf3d
-  Args:
-    source: Prince_Frederick_Charles_of_Hesse
-    type: :Man
-  AssignClass (a5324fe8-21a1-433a-9e90-b39cd6828b3f)
- Call ID: a5324fe8-21a1-433a-9e90-b39cd6828b3f
-  Args:
-    type: :Person
-    source: Prince_Frederick_Charles_of_Hesse
-  AddLiteral (0b56a2ef-f2c0-4ab5-b363-8b7feb225421)
- Call ID: 0b56a2ef-f2c0-4ab5-b363-8b7feb225421
-  Args:
-    literal_value: 1872
-    source: Margaret_of_Prussia
+    source: Alexandra_of_Hanover
+    literal_value: 1882
     literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (63775054-c406-4949-83b0-16ae95fda4d3)
- Call ID: 63775054-c406-4949-83b0-16ae95fda4d3
+  AddLiteral (4a450249-693b-4362-a1d9-097bcc551098)
+ Call ID: 4a450249-693b-4362-a1d9-097bcc551098
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Alexandra_of_Hanover
+    literal_value: 1963
+  AssignClass (c0835022-88d4-4bbd-8c0a-b90ed3bd010e)
+ Call ID: c0835022-88d4-4bbd-8c0a-b90ed3bd010e
+  Args:
+    source: Ernest_Augustus_Crown_Prince_of_Hanover
+    type: :Person
+  AssignClass (5145a949-913f-48ff-9a43-b0f1b7a056eb)
+ Call ID: 5145a949-913f-48ff-9a43-b0f1b7a056eb
+  Args:
+    type: :Man
+    source: Ernest_Augustus_Crown_Prince_of_Hanover
+  AssignClass (9882eb5b-69f7-43e8-bb39-81323f822b2f)
+ Call ID: 9882eb5b-69f7-43e8-bb39-81323f822b2f
+  Args:
+    source: Ernest_Augustus_Crown_Prince_of_Hanover
+    type: :Ancestor
+  AddLiteral (8fec30f5-15cb-4d60-b7c3-a6ab2e45cdff)
+ Call ID: 8fec30f5-15cb-4d60-b7c3-a6ab2e45cdff
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: Ernest_Augustus_Crown_Prince_of_Hanover
+    literal_value: 1845
+  AddLiteral (26fcf58e-bda9-460f-b982-b45379273481)
+ Call ID: 26fcf58e-bda9-460f-b982-b45379273481
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Ernest_Augustus_Crown_Prince_of_Hanover
+    literal_value: 1923
+  AssignClass (07802a74-4ad0-4165-b123-a636dc3473a2)
+ Call ID: 07802a74-4ad0-4165-b123-a636dc3473a2
+  Args:
+    type: :Person
+    source: Thyra_of_Denmark
+  AssignClass (95705260-a8b8-48b2-955d-a012e2714016)
+ Call ID: 95705260-a8b8-48b2-955d-a012e2714016
+  Args:
+    source: Thyra_of_Denmark
+    type: :Woman
+  AssignClass (96850574-5afb-4393-b12c-98d25dedf5a1)
+ Call ID: 96850574-5afb-4393-b12c-98d25dedf5a1
+  Args:
+    type: :Ancestor
+    source: Thyra_of_Denmark
+  AddLiteral (7e0014ed-e5a0-4c50-9bcc-cd0aa3b919d2)
+ Call ID: 7e0014ed-e5a0-4c50-9bcc-cd0aa3b919d2
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1853
+    source: Thyra_of_Denmark
+  AddLiteral (0bba3c6e-a799-4afe-bee1-04cd6b9e1894)
+ Call ID: 0bba3c6e-a799-4afe-bee1-04cd6b9e1894
+  Args:
+    source: Thyra_of_Denmark
+    literal_value: 1933
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddTriple (ce13b9f2-1d16-484d-8c2a-c9bf84235d78)
+ Call ID: ce13b9f2-1d16-484d-8c2a-c9bf84235d78
+  Args:
+    relation: :hasFather
+    target: Ernest_Augustus_Crown_Prince_of_Hanover
+    source: Alexandra_of_Hanover
+  AddTriple (b8ecfe48-f297-47ed-9603-0aa0decec228)
+ Call ID: b8ecfe48-f297-47ed-9603-0aa0decec228
+  Args:
+    source: Alexandra_of_Hanover
+    target: Thyra_of_Denmark
+    relation: :hasMother
+  AssignClass (4fc5b545-376b-40a5-8c35-bfea3abfb973)
+ Call ID: 4fc5b545-376b-40a5-8c35-bfea3abfb973
+  Args:
+    source: Christian_IX_of_Denmark
+    type: :Person
+  AssignClass (0cdfe049-3f12-4df1-ac90-d66a531975e7)
+ Call ID: 0cdfe049-3f12-4df1-ac90-d66a531975e7
+  Args:
+    source: Christian_IX_of_Denmark
+    type: :Man
+  AssignClass (59d4c525-5a01-4056-b082-6903978fd3c6)
+ Call ID: 59d4c525-5a01-4056-b082-6903978fd3c6
+  Args:
+    source: Christian_IX_of_Denmark
+    type: :Ancestor
+  AddLiteral (eddb3c7d-5577-4d15-bcdf-bc8a4a0692ac)
+ Call ID: eddb3c7d-5577-4d15-bcdf-bc8a4a0692ac
+  Args:
+    source: Christian_IX_of_Denmark
+    literal_value: 1818
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (4f00684b-cbfd-487e-b96f-1d01df3fda26)
+ Call ID: 4f00684b-cbfd-487e-b96f-1d01df3fda26
   Args:
     relation: :hasDeathYear
     literal_type: xsd:integer
-    source: Margaret_of_Prussia
-    literal_value: 1954
-  AddTriple (adec9b5e-f879-4197-8a5e-20220f630455)
- Call ID: adec9b5e-f879-4197-8a5e-20220f630455
+    literal_value: 1906
+    source: Christian_IX_of_Denmark
+  AssignClass (88f55004-a68e-49ad-98ff-aa62b2555594)
+ Call ID: 88f55004-a68e-49ad-98ff-aa62b2555594
+  Args:
+    source: Louise_of_Hesse-Kassel
+    type: :Person
+  AssignClass (282baaab-6200-4504-915e-febcc8d31335)
+ Call ID: 282baaab-6200-4504-915e-febcc8d31335
+  Args:
+    source: Louise_of_Hesse-Kassel
+    type: :Woman
+  AssignClass (f4858af1-dc64-4c4d-a987-f1c13f5fa8af)
+ Call ID: f4858af1-dc64-4c4d-a987-f1c13f5fa8af
+  Args:
+    type: :Ancestor
+    source: Louise_of_Hesse-Kassel
+  AddLiteral (337de120-eacd-4f2d-b6f9-33125d15e85c)
+ Call ID: 337de120-eacd-4f2d-b6f9-33125d15e85c
+  Args:
+    literal_value: 1817
+    source: Louise_of_Hesse-Kassel
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (2ed35ec4-ce6d-49a0-9af5-5ad887a77154)
+ Call ID: 2ed35ec4-ce6d-49a0-9af5-5ad887a77154
+  Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1898
+    source: Louise_of_Hesse-Kassel
+  AddTriple (0bfd06f5-c4ed-4087-af51-67cab9e43a94)
+ Call ID: 0bfd06f5-c4ed-4087-af51-67cab9e43a94
+  Args:
+    source: Thyra_of_Denmark
+    relation: :hasFather
+    target: Christian_IX_of_Denmark
+  AddTriple (46a0f080-d301-4fb1-ba07-bf0984fbd0ab)
+ Call ID: 46a0f080-d301-4fb1-ba07-bf0984fbd0ab
+  Args:
+    relation: :hasMother
+    target: Louise_of_Hesse-Kassel
+    source: Thyra_of_Denmark
+  AssignClass (98b305d0-23ab-473c-b5fa-d0ec620ec14d)
+ Call ID: 98b305d0-23ab-473c-b5fa-d0ec620ec14d
+  Args:
+    source: George_III_of_the_United_Kingdom
+    type: :Person
+  AssignClass (248fd50e-7abe-4502-8e21-abe547a137e4)
+ Call ID: 248fd50e-7abe-4502-8e21-abe547a137e4
+  Args:
+    source: George_III_of_the_United_Kingdom
+    type: :Man
+  AssignClass (4894046e-7630-4bad-a4d5-012e6d7c53f2)
+ Call ID: 4894046e-7630-4bad-a4d5-012e6d7c53f2
+  Args:
+    type: :Ancestor
+    source: George_III_of_the_United_Kingdom
+  AddLiteral (c46dedb8-cd8d-4218-a342-33b52e4d4d93)
+ Call ID: c46dedb8-cd8d-4218-a342-33b52e4d4d93
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: George_III_of_the_United_Kingdom
+    literal_value: 1738
+  AddLiteral (53bd6ccd-0900-4166-96e2-8696c4100f8f)
+ Call ID: 53bd6ccd-0900-4166-96e2-8696c4100f8f
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: George_III_of_the_United_Kingdom
+    literal_value: 1820
+  AssignClass (4087448d-8e0b-4d10-8f76-8e01728db792)
+ Call ID: 4087448d-8e0b-4d10-8f76-8e01728db792
+  Args:
+    source: Charlotte_of_Mecklenburg-Strelitz
+    type: :Person
+  AssignClass (27376431-d4a5-4343-ba25-6d1dbe57b357)
+ Call ID: 27376431-d4a5-4343-ba25-6d1dbe57b357
+  Args:
+    source: Charlotte_of_Mecklenburg-Strelitz
+    type: :Woman
+  AssignClass (0f22a453-3655-4a79-8757-4b0f55bc4442)
+ Call ID: 0f22a453-3655-4a79-8757-4b0f55bc4442
+  Args:
+    source: Charlotte_of_Mecklenburg-Strelitz
+    type: :Ancestor
+  AddLiteral (782fc3eb-fafa-458b-98be-2268e6ac405c)
+ Call ID: 782fc3eb-fafa-458b-98be-2268e6ac405c
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1744
+    source: Charlotte_of_Mecklenburg-Strelitz
+  AddLiteral (796a4bdb-895e-48d4-a89e-8c008030c089)
+ Call ID: 796a4bdb-895e-48d4-a89e-8c008030c089
+  Args:
+    literal_value: 1818
+    source: Charlotte_of_Mecklenburg-Strelitz
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddTriple (a6ce745f-a4d9-4586-815b-cf326de5a4de)
+ Call ID: a6ce745f-a4d9-4586-815b-cf326de5a4de
+  Args:
+    target: George_III_of_the_United_Kingdom
+    relation: :hasAncestor
+    source: Alexandra_of_Hanover
+  AddTriple (e7010c5a-84fc-4afa-a753-49af2a2cc773)
+ Call ID: e7010c5a-84fc-4afa-a753-49af2a2cc773
+  Args:
+    source: Alexandra_of_Hanover
+    relation: :hasAncestor
+    target: Charlotte_of_Mecklenburg-Strelitz
+  AssignClass (3641093a-d4e0-417a-976c-b43d70b4c1a5)
+ Call ID: 3641093a-d4e0-417a-976c-b43d70b4c1a5
+  Args:
+    source: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin
+    type: :Person
+  AssignClass (4c773541-465f-4e94-9b76-85aec19a9607)
+ Call ID: 4c773541-465f-4e94-9b76-85aec19a9607
+  Args:
+    source: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin
+    type: :Man
+  AssignClass (4949b386-7002-4fee-af05-4d263bca6b27)
+ Call ID: 4949b386-7002-4fee-af05-4d263bca6b27
+  Args:
+    source: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin
+    type: :Ancestor
+  AddLiteral (b374153d-279b-4eb6-a156-6618db8cf7f0)
+ Call ID: b374153d-279b-4eb6-a156-6618db8cf7f0
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1882
+    source: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin
+  AddLiteral (26226933-be97-4bdb-ad27-03e429f056f8)
+ Call ID: 26226933-be97-4bdb-ad27-03e429f056f8
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin
+    literal_value: 1945
+  AddLiteral (e24e3e72-6fe1-434f-926f-d567d6fcba44)
+ Call ID: e24e3e72-6fe1-434f-926f-d567d6fcba44
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 1904
+    source: Alexandra_of_Hanover
+  AssignClass (69d1d837-7e6e-4692-986d-9bc265869c35)
+ Call ID: 69d1d837-7e6e-4692-986d-9bc265869c35
+  Args:
+    type: :Person
+    source: Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin
+  AssignClass (02b23103-4ba1-43ed-9f2e-c5732e76ad9f)
+ Call ID: 02b23103-4ba1-43ed-9f2e-c5732e76ad9f
+  Args:
+    source: Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin
+    type: :Man
+  AssignClass (5fe74d98-e1e7-4422-9ae5-80015076b47f)
+ Call ID: 5fe74d98-e1e7-4422-9ae5-80015076b47f
+  Args:
+    type: :Ancestor
+    source: Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin
+  AssignClass (fe368be9-968c-4ab2-a724-cd95ffdfdc95)
+ Call ID: fe368be9-968c-4ab2-a724-cd95ffdfdc95
+  Args:
+    source: Anastasia_Mikhailovna_of_Russia
+    type: :Person
+  AssignClass (2102b1b9-da3e-4437-93a7-6aa98325c647)
+ Call ID: 2102b1b9-da3e-4437-93a7-6aa98325c647
+  Args:
+    source: Anastasia_Mikhailovna_of_Russia
+    type: :Woman
+  AssignClass (e908a388-07b7-4a3c-a37b-55c5b7dd4343)
+ Call ID: e908a388-07b7-4a3c-a37b-55c5b7dd4343
+  Args:
+    type: :Ancestor
+    source: Anastasia_Mikhailovna_of_Russia
+  AddTriple (e6eb0139-1fb0-4f86-a79c-b4016de55e67)
+ Call ID: e6eb0139-1fb0-4f86-a79c-b4016de55e67
   Args:
     relation: :hasFather
-    target: Frederick_III_German_Emperor
-    source: Margaret_of_Prussia
-  AddTriple (885dc4fa-d1e4-42e5-8d48-db7777c2a9e7)
- Call ID: 885dc4fa-d1e4-42e5-8d48-db7777c2a9e7
+    target: Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin
+    source: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin
+  AddTriple (96599654-0812-4ac6-b6d6-b06631c948df)
+ Call ID: 96599654-0812-4ac6-b6d6-b06631c948df
   Args:
-    target: Victoria_Princess_Royal
-    source: Margaret_of_Prussia
     relation: :hasMother
-  AddTriple (f3841bd3-0928-4bc1-8c4f-5d8007037d95)
- Call ID: f3841bd3-0928-4bc1-8c4f-5d8007037d95
+    target: Anastasia_Mikhailovna_of_Russia
+    source: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin
+  Finish (d4099093-1b91-482e-ab7e-dcb70746f2da)
+ Call ID: d4099093-1b91-482e-ab7e-dcb70746f2da
   Args:
-    source: Margaret_of_Prussia
-    target: Wilhelm_II
-    relation: :isSisterOf
-  AddTriple (273c872d-22f8-40ca-a207-7bcc59263470)
- Call ID: 273c872d-22f8-40ca-a207-7bcc59263470
-  Args:
-    target: Queen_Victoria
-    source: Victoria_Princess_Royal
-    relation: :hasMother
-  AddTriple (f18a872c-3d18-4417-adde-c9dfecc47730)
- Call ID: f18a872c-3d18-4417-adde-c9dfecc47730
-  Args:
-    target: Frederick_III_German_Emperor
-    source: Margaret_of_Prussia
-    relation: :hasFather
-  AddTriple (859e1a20-6880-49ee-ad34-b5726f5ada9e)
- Call ID: 859e1a20-6880-49ee-ad34-b5726f5ada9e
-  Args:
-    source: Victoria_Princess_Royal
-    target: Margaret_of_Prussia
-    relation: :isMotherOf
-  AddTriple (6240ad70-56e4-4b0d-9823-656a139fd9c3)
- Call ID: 6240ad70-56e4-4b0d-9823-656a139fd9c3
-  Args:
-    relation: :isFatherOf
-    target: Margaret_of_Prussia
-    source: Frederick_III_German_Emperor
-  AddTriple (3ee56d05-8ae7-4dbf-ba89-9d51295c287b)
- Call ID: 3ee56d05-8ae7-4dbf-ba89-9d51295c287b
-  Args:
-    relation: :hasRelation
-    source: Margaret_of_Prussia
-    target: Prince_Frederick_Charles_of_Hesse
-  Finish (5f0d80e3-9872-4699-9373-767bc359c46c)
- Call ID: 5f0d80e3-9872-4699-9373-767bc359c46c
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -615,32 +989,69 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederick_III_German_Emperor a :Man,
+  data:Alexandra_of_Hanover a :Person,
+          :Woman ;
+      :hasAncestor data:Charlotte_of_Mecklenburg-Strelitz,
+          data:George_III_of_the_United_Kingdom ;
+      :hasBirthYear 1882 ;
+      :hasDeathYear 1963 ;
+      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+      :hasMarriageYear 1904 ;
+      :hasMother data:Thyra_of_Denmark .
+
+  data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Ancestor,
+          :Man,
           :Person ;
-      :isFatherOf data:Margaret_of_Prussia .
+      :hasBirthYear 1882 ;
+      :hasDeathYear 1945 ;
+      :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+      :hasMother data:Anastasia_Mikhailovna_of_Russia .
 
-  data:Prince_Frederick_Charles_of_Hesse a :Man,
-          :Person .
-
-  data:Queen_Victoria a :Person,
+  data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Victoria_Princess_Royal a :Person,
+  data:Charlotte_of_Mecklenburg-Strelitz a :Ancestor,
+          :Person,
           :Woman ;
-      :hasMother data:Queen_Victoria ;
-      :isMotherOf data:Margaret_of_Prussia .
+      :hasBirthYear 1744 ;
+      :hasDeathYear 1818 .
 
-  data:Wilhelm_II a :Man,
+  data:Christian_IX_of_Denmark a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1818 ;
+      :hasDeathYear 1906 .
+
+  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1845 ;
+      :hasDeathYear 1923 .
+
+  data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Ancestor,
+          :Man,
           :Person .
 
-  data:Margaret_of_Prussia a :Person,
+  data:George_III_of_the_United_Kingdom a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1738 ;
+      :hasDeathYear 1820 .
+
+  data:Louise_of_Hesse-Kassel a :Ancestor,
+          :Person,
           :Woman ;
-      :hasBirthYear 1872 ;
-      :hasDeathYear 1954 ;
-      :hasFather data:Frederick_III_German_Emperor ;
-      :hasMother data:Victoria_Princess_Royal ;
-      :hasRelation data:Prince_Frederick_Charles_of_Hesse ;
-      :isSisterOf data:Wilhelm_II .
+      :hasBirthYear 1817 ;
+      :hasDeathYear 1898 .
+
+  data:Thyra_of_Denmark a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1853 ;
+      :hasDeathYear 1933 ;
+      :hasFather data:Christian_IX_of_Denmark ;
+      :hasMother data:Louise_of_Hesse-Kassel .
 
 
 
@@ -652,179 +1063,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (a16fbb65-dc7d-4940-a3c8-64e5554cffe3)
- Call ID: a16fbb65-dc7d-4940-a3c8-64e5554cffe3
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:11
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Frederick_III_German_Emperor' used as the value for 'hasFather' of 'Margaret_of_Prussia' is missing the required ':Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_III_German_Emperor, :Ancestor)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Queen_Victoria' used as the value for 'hasMother' of 'Victoria_Princess_Royal' is missing the required ':Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Victoria, :Ancestor)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Victoria_Princess_Royal' used as the value for 'hasMother' of 'Margaret_of_Prussia' is missing the required ':Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Princess_Royal, :Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
-    LLM-provided explanation of the violation:
-      The node 'Victoria_Princess_Royal' is a subject of ':isMotherOf' but lacks the required ':Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Princess_Royal, :Ancestor)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Frederick_III_German_Emperor' used as the value for 'hasFather' of 'Margaret_of_Prussia' is missing the required ':Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_III_German_Emperor, :Ancestor)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Queen_Victoria' used as the value for 'hasMother' of 'Victoria_Princess_Royal' is missing the required ':Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Victoria, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Victoria_Princess_Royal' used as the value for 'hasMother' of 'Margaret_of_Prussia' is missing the required ':Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Princess_Royal, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The node 'Frederick_III_German_Emperor' is a subject of ':isFatherOf' but lacks the required ':Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_III_German_Emperor, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Frederick_III_German_Emperor' used as the value for 'hasFather' of 'Margaret_of_Prussia' is missing the required ':Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_III_German_Emperor, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Queen_Victoria' used as the value for 'hasMother' of 'Victoria_Princess_Royal' is missing the required ':Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Victoria, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Victoria_Princess_Royal' used as the value for 'hasMother' of 'Margaret_of_Prussia' is missing the required ':Ancestor' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Princess_Royal, :Ancestor)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (503089c7-f382-479c-b187-4131b2669c0d)
- Call ID: 503089c7-f382-479c-b187-4131b2669c0d
-  Args:
-    type: :Ancestor
-    source: Frederick_III_German_Emperor
-  AssignClass (325c22e3-ca62-4c25-9fbb-cb7aaa928f8a)
- Call ID: 325c22e3-ca62-4c25-9fbb-cb7aaa928f8a
-  Args:
-    type: :Ancestor
-    source: Queen_Victoria
-  AssignClass (3374fbe8-37fc-43a3-88a1-a51a47215e28)
- Call ID: 3374fbe8-37fc-43a3-88a1-a51a47215e28
-  Args:
-    type: :Ancestor
-    source: Victoria_Princess_Royal
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Frederick_III_German_Emperor a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:Margaret_of_Prussia .
-
-  data:Prince_Frederick_Charles_of_Hesse a :Man,
-          :Person .
-
-  data:Queen_Victoria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Victoria_Princess_Royal a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasMother data:Queen_Victoria ;
-      :isMotherOf data:Margaret_of_Prussia .
-
-  data:Wilhelm_II a :Man,
-          :Person .
-
-  data:Margaret_of_Prussia a :Person,
-          :Woman ;
-      :hasBirthYear 1872 ;
-      :hasDeathYear 1954 ;
-      :hasFather data:Frederick_III_German_Emperor ;
-      :hasMother data:Victoria_Princess_Royal ;
-      :hasRelation data:Prince_Frederick_Charles_of_Hesse ;
-      :isSisterOf data:Wilhelm_II .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (0055bfe9-aaae-4f03-9f1b-6d0f344d461b)
- Call ID: 0055bfe9-aaae-4f03-9f1b-6d0f344d461b
+  ValidateShacl (744d7815-d979-4aef-8c3b-099d4a93d7ae)
+ Call ID: 744d7815-d979-4aef-8c3b-099d4a93d7ae
   Args:
 
 ================================= Tool Message =================================
@@ -835,6 +1075,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ce8a2f9b-8bb0-4541-8b35-6d6c388ba013)
- Call ID: ce8a2f9b-8bb0-4541-8b35-6d6c388ba013
+  Finish (68c03b87-e458-479f-b31e-a6f44634d74b)
+ Call ID: 68c03b87-e458-479f-b31e-a6f44634d74b
   Args:

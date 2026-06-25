@@ -112,6 +112,8 @@ She is a sister of Bagrat de Bagration and half-sister of Jorge de Bagration.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -127,39 +129,9 @@ She is a sister of Bagrat de Bagration and half-sister of Jorge de Bagration.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -174,6 +146,23 @@ She is a sister of Bagrat de Bagration and half-sister of Jorge de Bagration.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -191,6 +180,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,29 +262,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -289,6 +285,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -301,6 +305,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -309,17 +315,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -347,6 +355,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -362,165 +454,135 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (90db11d5-2dc4-4b66-9450-fd7a76e6e8ee)
- Call ID: 90db11d5-2dc4-4b66-9450-fd7a76e6e8ee
+  AssignClass (e5bc2c4b-d204-4f3d-90e6-1ea21cb366f5)
+ Call ID: e5bc2c4b-d204-4f3d-90e6-1ea21cb366f5
   Args:
-    type: :Woman
     source: :Princess_Mariam_de_Bagration
-  AssignClass (01a6e800-fe3f-440c-acbb-5e012660a968)
- Call ID: 01a6e800-fe3f-440c-acbb-5e012660a968
+    type: :Woman
+  AssignClass (94816369-9e14-4939-b589-73800fcfac23)
+ Call ID: 94816369-9e14-4939-b589-73800fcfac23
   Args:
     type: :Person
     source: :Princess_Mariam_de_Bagration
-  AssignClass (26927aed-c0d0-4c43-a38c-9735a5a7acdc)
- Call ID: 26927aed-c0d0-4c43-a38c-9735a5a7acdc
+  AddLiteral (7ba33262-c637-495b-9797-1d49f2be502d)
+ Call ID: 7ba33262-c637-495b-9797-1d49f2be502d
   Args:
+    literal_value: 1947
+    source: :Princess_Mariam_de_Bagration
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AssignClass (77119053-384c-4475-a7be-b4296a70bc34)
+ Call ID: 77119053-384c-4475-a7be-b4296a70bc34
+  Args:
+    source: :Prince_Irakli_Bagration_of_Mukhrani
     type: :Man
-    source: :Prince_Irakli_Bagration_of_Mukhrani
-  AssignClass (fec704f4-2375-41a7-8bb4-00d35b74f4fd)
- Call ID: fec704f4-2375-41a7-8bb4-00d35b74f4fd
+  AssignClass (934a21e8-5c8e-4346-82f5-82b5a6851d6a)
+ Call ID: 934a21e8-5c8e-4346-82f5-82b5a6851d6a
   Args:
+    source: :Prince_Irakli_Bagration_of_Mukhrani
     type: :Person
-    source: :Prince_Irakli_Bagration_of_Mukhrani
-  AssignClass (85d6c425-a508-4f76-80ea-c9de63fbfaab)
- Call ID: 85d6c425-a508-4f76-80ea-c9de63fbfaab
+  AssignClass (3737f0a5-bd32-444e-a8c8-bb7fccbce965)
+ Call ID: 3737f0a5-bd32-444e-a8c8-bb7fccbce965
   Args:
-    type: :Ancestor
-    source: :Prince_Irakli_Bagration_of_Mukhrani
-  AssignClass (e5a8b01c-f45e-4841-91e0-d01bd0e93f9c)
- Call ID: e5a8b01c-f45e-4841-91e0-d01bd0e93f9c
-  Args:
+    source: :Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon
     type: :Woman
-    source: :Infanta_María_de_las_Mercedes_de_Baviera_y_Borbón
-  AssignClass (fbf0958f-f7cd-4825-9e47-32ad667fd2b0)
- Call ID: fbf0958f-f7cd-4825-9e47-32ad667fd2b0
+  AssignClass (ec6b1289-57ea-4d2d-949f-2997c4537605)
+ Call ID: ec6b1289-57ea-4d2d-949f-2997c4537605
   Args:
+    source: :Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon
     type: :Person
-    source: :Infanta_María_de_las_Mercedes_de_Baviera_y_Borbón
-  AssignClass (92200b84-9acd-4f5e-a666-9c8fcd05cc39)
- Call ID: 92200b84-9acd-4f5e-a666-9c8fcd05cc39
-  Args:
-    type: :Ancestor
-    source: :Infanta_María_de_las_Mercedes_de_Baviera_y_Borbón
-  AssignClass (dfcdce74-d16a-43c1-9802-734b55d0ec22)
- Call ID: dfcdce74-d16a-43c1-9802-734b55d0ec22
-  Args:
-    type: :Man
-    source: :Dr_Tomás_Ortiz_y_Valero
-  AssignClass (e40c001c-2326-47c4-9a5c-eb0454ca9c79)
- Call ID: e40c001c-2326-47c4-9a5c-eb0454ca9c79
-  Args:
-    type: :Person
-    source: :Dr_Tomás_Ortiz_y_Valero
-  AssignClass (ea3036fd-9806-4055-b117-460669d549e7)
- Call ID: ea3036fd-9806-4055-b117-460669d549e7
-  Args:
-    type: :Man
-    source: :Bagrat_de_Bagration
-  AssignClass (cdb2725f-80d7-43a4-809a-479abed54fdf)
- Call ID: cdb2725f-80d7-43a4-809a-479abed54fdf
-  Args:
-    type: :Person
-    source: :Bagrat_de_Bagration
-  AssignClass (db068cc8-3318-48e9-875c-1113cfc1f818)
- Call ID: db068cc8-3318-48e9-875c-1113cfc1f818
-  Args:
-    type: :Man
-    source: :Jorge_de_Bagration
-  AssignClass (4b569cf4-cba8-443d-a041-c3952b4bce64)
- Call ID: 4b569cf4-cba8-443d-a041-c3952b4bce64
-  Args:
-    type: :Person
-    source: :Jorge_de_Bagration
-  AddTriple (d133f2cb-36b0-4d99-87e4-cc84cb0e5298)
- Call ID: d133f2cb-36b0-4d99-87e4-cc84cb0e5298
+  AddTriple (37aab375-99e5-493b-8980-135e8d85860d)
+ Call ID: 37aab375-99e5-493b-8980-135e8d85860d
   Args:
     relation: :hasFather
-    source: :Princess_Mariam_de_Bagration
     target: :Prince_Irakli_Bagration_of_Mukhrani
-  AddTriple (b8cb3dba-c3d6-4cd7-a408-6f7bc037fe8f)
- Call ID: b8cb3dba-c3d6-4cd7-a408-6f7bc037fe8f
-  Args:
-    target: :Infanta_María_de_las_Mercedes_de_Baviera_y_Borbón
     source: :Princess_Mariam_de_Bagration
+  AddTriple (4ce43b3f-2eb7-4fb7-875b-04d7b1c249ef)
+ Call ID: 4ce43b3f-2eb7-4fb7-875b-04d7b1c249ef
+  Args:
     relation: :hasMother
-  AddTriple (e13143fd-d4ce-4ff3-98fc-dfbc43aca44f)
- Call ID: e13143fd-d4ce-4ff3-98fc-dfbc43aca44f
-  Args:
-    source: :Bagrat_de_Bagration
-    target: :Princess_Mariam_de_Bagration
-    relation: :hasSister
-  AddTriple (0fcd3790-9c0c-4e8c-ad64-0f0033d18a4b)
- Call ID: 0fcd3790-9c0c-4e8c-ad64-0f0033d18a4b
-  Args:
-    relation: :hasSister
-    source: :Jorge_de_Bagration
-    target: :Princess_Mariam_de_Bagration
-  AddLiteral (57422665-3c62-4312-a8fe-9e0d2563a9b1)
- Call ID: 57422665-3c62-4312-a8fe-9e0d2563a9b1
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:string
+    target: :Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon
     source: :Princess_Mariam_de_Bagration
-    literal_value: 1947
-  AddLiteral (fcf60a3c-fb2e-4eea-beb6-7a5a0ff70a73)
- Call ID: fcf60a3c-fb2e-4eea-beb6-7a5a0ff70a73
+  AssignClass (f64f32b1-48f3-4a95-9026-f39024bd23d2)
+ Call ID: f64f32b1-48f3-4a95-9026-f39024bd23d2
   Args:
+    type: :Man
+    source: :Dr_Tomas_Ortiz_y_Valero
+  AssignClass (f6c59e9e-af16-4c59-a497-260edd04e4e3)
+ Call ID: f6c59e9e-af16-4c59-a497-260edd04e4e3
+  Args:
+    type: :Person
+    source: :Dr_Tomas_Ortiz_y_Valero
+  AddLiteral (f23e08f7-3f1b-401d-a8ff-6d9bd195b876)
+ Call ID: f23e08f7-3f1b-401d-a8ff-6d9bd195b876
+  Args:
+    source: :Princess_Mariam_de_Bagration
     relation: :hasMarriageYear
+    literal_type: xsd:integer
     literal_value: 1982
-    source: :Princess_Mariam_de_Bagration
-    literal_type: xsd:string
-  AddTriple (6966598c-7f13-4f0b-89f9-fcc497d33bf6)
- Call ID: 6966598c-7f13-4f0b-89f9-fcc497d33bf6
+  AddTriple (500fa571-3a90-4a7f-9994-f5bd1804a784)
+ Call ID: 500fa571-3a90-4a7f-9994-f5bd1804a784
   Args:
     source: :Princess_Mariam_de_Bagration
-    target: :Female
-    relation: :hasSex
-  AddTriple (466776b9-b79f-4e0b-bb74-5d5708a20a77)
- Call ID: 466776b9-b79f-4e0b-bb74-5d5708a20a77
+    target: :Dr_Tomas_Ortiz_y_Valero
+    relation: :hasRelation
+  AssignClass (1849f79b-2a92-4cd4-9a67-ddce87966431)
+ Call ID: 1849f79b-2a92-4cd4-9a67-ddce87966431
   Args:
-    target: :Male
-    source: :Prince_Irakli_Bagration_of_Mukhrani
-    relation: :hasSex
-  AddTriple (3fe7ed0c-9af1-4830-8245-150af87e6ab4)
- Call ID: 3fe7ed0c-9af1-4830-8245-150af87e6ab4
+    type: :Man
+    source: :Son_of_Mariam_and_Tomas
+  AssignClass (373fa123-8808-471f-85bd-e8cbbc61da7a)
+ Call ID: 373fa123-8808-471f-85bd-e8cbbc61da7a
   Args:
-    target: :Female
-    source: :Infanta_María_de_las_Mercedes_de_Baviera_y_Borbón
-    relation: :hasSex
-  AddTriple (15b4055c-14df-4c34-85a9-9e925451832f)
- Call ID: 15b4055c-14df-4c34-85a9-9e925451832f
+    type: :Person
+    source: :Son_of_Mariam_and_Tomas
+  AddTriple (587ebc15-0aca-4513-8373-5c82fc0b914e)
+ Call ID: 587ebc15-0aca-4513-8373-5c82fc0b914e
   Args:
-    source: :Dr_Tomás_Ortiz_y_Valero
-    target: :Male
-    relation: :hasSex
-  AddTriple (6fb39a2b-9872-462a-b3f3-93bcc4c0572d)
- Call ID: 6fb39a2b-9872-462a-b3f3-93bcc4c0572d
+    source: :Princess_Mariam_de_Bagration
+    target: :Son_of_Mariam_and_Tomas
+    relation: :hasSon
+  AddTriple (4c80c414-b20e-4e3d-bed7-9d13dc29f2e5)
+ Call ID: 4c80c414-b20e-4e3d-bed7-9d13dc29f2e5
   Args:
-    target: :Male
+    target: :Son_of_Mariam_and_Tomas
+    source: :Dr_Tomas_Ortiz_y_Valero
+    relation: :hasSon
+  AssignClass (2b4a3345-8418-4c78-8ad2-987ba7d60d8d)
+ Call ID: 2b4a3345-8418-4c78-8ad2-987ba7d60d8d
+  Args:
+    type: :Man
     source: :Bagrat_de_Bagration
-    relation: :hasSex
-  AddTriple (2b970c30-de51-4630-b887-112a4accc0da)
- Call ID: 2b970c30-de51-4630-b887-112a4accc0da
+  AssignClass (22f3c292-2347-40f8-b896-a80ae86412a1)
+ Call ID: 22f3c292-2347-40f8-b896-a80ae86412a1
   Args:
-    relation: :hasSex
+    source: :Bagrat_de_Bagration
+    type: :Person
+  AddTriple (c380442f-637a-4fa2-96fd-62191f4815ad)
+ Call ID: c380442f-637a-4fa2-96fd-62191f4815ad
+  Args:
+    relation: :hasBrother
+    target: :Bagrat_de_Bagration
+    source: :Princess_Mariam_de_Bagration
+  AssignClass (9d3bb166-439e-443e-9047-63db0d54a4a3)
+ Call ID: 9d3bb166-439e-443e-9047-63db0d54a4a3
+  Args:
+    type: :Man
     source: :Jorge_de_Bagration
-    target: :Male
-  Finish (0acae077-3f03-4b64-aad6-a6b5cbdc9b8c)
- Call ID: 0acae077-3f03-4b64-aad6-a6b5cbdc9b8c
+  AssignClass (f430a527-4d51-4c64-bfc1-3126bbd7c052)
+ Call ID: f430a527-4d51-4c64-bfc1-3126bbd7c052
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Jorge_de_Bagration
+    type: :Person
+  AddTriple (469755a7-122e-4c6f-ac03-ecc185a4ab51)
+ Call ID: 469755a7-122e-4c6f-ac03-ecc185a4ab51
+  Args:
+    relation: :isSiblingOf
+    target: :Jorge_de_Bagration
+    source: :Princess_Mariam_de_Bagration
+  Finish (66546c90-bc37-4767-bfc6-c50e3004cbbf)
+ Call ID: 66546c90-bc37-4767-bfc6-c50e3004cbbf
+  Args:
 
 ================================= Tool Message =================================
 
@@ -617,37 +679,35 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Bagrat_de_Bagration a :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :hasSister data:Princess_Mariam_de_Bagration .
-
-  data:Dr_Tom%C3%A1s_Ortiz_y_Valero a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Jorge_de_Bagration a :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :hasSister data:Princess_Mariam_de_Bagration .
-
-  data:Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Prince_Irakli_Bagration_of_Mukhrani a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
   data:Princess_Mariam_de_Bagration a :Person,
           :Woman ;
-      :hasBirthYear "1947"^^xsd:string ;
+      :hasBirthYear 1947 ;
+      :hasBrother data:Bagrat_de_Bagration ;
       :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
-      :hasMarriageYear "1982"^^xsd:string ;
-      :hasMother data:Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n ;
-      :hasSex data:Female .
+      :hasMarriageYear 1982 ;
+      :hasMother data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon ;
+      :hasRelation data:Dr_Tomas_Ortiz_y_Valero ;
+      :hasSon data:Son_of_Mariam_and_Tomas ;
+      :isSiblingOf data:Jorge_de_Bagration .
+
+  data:Bagrat_de_Bagration a :Man,
+          :Person .
+
+  data:Dr_Tomas_Ortiz_y_Valero a :Man,
+          :Person ;
+      :hasSon data:Son_of_Mariam_and_Tomas .
+
+  data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon a :Person,
+          :Woman .
+
+  data:Jorge_de_Bagration a :Man,
+          :Person .
+
+  data:Prince_Irakli_Bagration_of_Mukhrani a :Man,
+          :Person .
+
+  data:Son_of_Mariam_and_Tomas a :Man,
+          :Person .
 
 
 
@@ -659,446 +719,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (169ed29c-f9f4-43c3-bd9f-00c9386dd84d)
- Call ID: 169ed29c-f9f4-43c3-bd9f-00c9386dd84d
+  ValidateShacl (1dcce16e-08ed-4c6c-8de6-6f6f89a5df30)
+ Call ID: 1dcce16e-08ed-4c6c-8de6-6f6f89a5df30
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:54
+Total violations:6
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Prince_Irakli_Bagration_of_Mukhrani' is not correctly typed as a member of the class ':Sex'.
+      The node Prince_Irakli_Bagration_of_Mukhrani assigned to Princess_Mariam_de_Bagration via hasFather lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Irakli_Bagration_of_Mukhrani, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n' is not correctly typed as a member of the class ':Sex'.
+      The node Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon assigned to Princess_Mariam_de_Bagration via hasMother lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Prince_Irakli_Bagration_of_Mukhrani' is not correctly typed as a member of the class ':Sex'.
+      The node Prince_Irakli_Bagration_of_Mukhrani assigned to Princess_Mariam_de_Bagration via hasFather lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Irakli_Bagration_of_Mukhrani, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n' is not correctly typed as a member of the class ':Sex'.
+      The node Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon assigned to Princess_Mariam_de_Bagration via hasMother lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Prince_Irakli_Bagration_of_Mukhrani' is not correctly typed as a member of the class ':Sex'.
+      The node Prince_Irakli_Bagration_of_Mukhrani assigned to Princess_Mariam_de_Bagration via hasFather lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Irakli_Bagration_of_Mukhrani, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n' is not correctly typed as a member of the class ':Sex'.
+      The node Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon assigned to Princess_Mariam_de_Bagration via hasMother lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Jorge_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Prince_Irakli_Bagration_of_Mukhrani' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Bagrat_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Dr_Tom%C3%A1s_Ortiz_y_Valero' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Jorge_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Prince_Irakli_Bagration_of_Mukhrani' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Bagrat_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Dr_Tom%C3%A1s_Ortiz_y_Valero' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Prince_Irakli_Bagration_of_Mukhrani' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Princess_Mariam_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Jorge_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Bagrat_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Dr_Tom%C3%A1s_Ortiz_y_Valero' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Prince_Irakli_Bagration_of_Mukhrani' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Princess_Mariam_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Jorge_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Bagrat_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Dr_Tom%C3%A1s_Ortiz_y_Valero' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Prince_Irakli_Bagration_of_Mukhrani' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Princess_Mariam_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Jorge_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Bagrat_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Dr_Tom%C3%A1s_Ortiz_y_Valero' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Prince_Irakli_Bagration_of_Mukhrani' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Princess_Mariam_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Jorge_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Bagrat_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Dr_Tom%C3%A1s_Ortiz_y_Valero' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Prince_Irakli_Bagration_of_Mukhrani' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Princess_Mariam_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Jorge_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Bagrat_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Dr_Tom%C3%A1s_Ortiz_y_Valero' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Prince_Irakli_Bagration_of_Mukhrani' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Princess_Mariam_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Jorge_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Bagrat_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the entity 'Dr_Tom%C3%A1s_Ortiz_y_Valero' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Princess_Mariam_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Princess_Mariam_de_Bagration' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the entity 'Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon, :Ancestor)
 
 
 
@@ -1107,18 +783,18 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (ffdcaed1-a1bf-4a65-af58-f899fe523365)
- Call ID: ffdcaed1-a1bf-4a65-af58-f899fe523365
+  AssignClass (56ab3a94-ab01-4153-acbd-ada41c45a9e1)
+ Call ID: 56ab3a94-ab01-4153-acbd-ada41c45a9e1
   Args:
-    source: Male
-    type: :Sex
-  AssignClass (ef06c6ca-144a-42a1-ba69-2d5ffe1cb647)
- Call ID: ef06c6ca-144a-42a1-ba69-2d5ffe1cb647
+    source: :Prince_Irakli_Bagration_of_Mukhrani
+    type: :Ancestor
+  AssignClass (5705b8be-c9d7-4eaa-96d2-ceac67e6ec23)
+ Call ID: 5705b8be-c9d7-4eaa-96d2-ceac67e6ec23
   Args:
-    source: Female
-    type: :Sex
-  Finish (dcc45682-81ea-4160-a009-02add0059ba0)
- Call ID: dcc45682-81ea-4160-a009-02add0059ba0
+    source: :Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon
+    type: :Ancestor
+  ValidateShacl (ce3a19ba-34c9-4426-b8d8-0bb9d67c3064)
+ Call ID: ce3a19ba-34c9-4426-b8d8-0bb9d67c3064
   Args:
 
 ================================= Tool Message =================================
@@ -1132,55 +808,39 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Bagrat_de_Bagration a :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :hasSister data:Princess_Mariam_de_Bagration .
+  data:Princess_Mariam_de_Bagration a :Person,
+          :Woman ;
+      :hasBirthYear 1947 ;
+      :hasBrother data:Bagrat_de_Bagration ;
+      :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
+      :hasMarriageYear 1982 ;
+      :hasMother data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon ;
+      :hasRelation data:Dr_Tomas_Ortiz_y_Valero ;
+      :hasSon data:Son_of_Mariam_and_Tomas ;
+      :isSiblingOf data:Jorge_de_Bagration .
 
-  data:Dr_Tom%C3%A1s_Ortiz_y_Valero a :Man,
+  data:Bagrat_de_Bagration a :Man,
+          :Person .
+
+  data:Dr_Tomas_Ortiz_y_Valero a :Man,
           :Person ;
-      :hasSex data:Male .
+      :hasSon data:Son_of_Mariam_and_Tomas .
+
+  data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon a :Ancestor,
+          :Person,
+          :Woman .
 
   data:Jorge_de_Bagration a :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :hasSister data:Princess_Mariam_de_Bagration .
-
-  data:Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
+          :Person .
 
   data:Prince_Irakli_Bagration_of_Mukhrani a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
-  data:Female a :Sex .
-
-  data:Princess_Mariam_de_Bagration a :Person,
-          :Woman ;
-      :hasBirthYear "1947"^^xsd:string ;
-      :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
-      :hasMarriageYear "1982"^^xsd:string ;
-      :hasMother data:Infanta_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n ;
-      :hasSex data:Female .
-
-  data:Male a :Sex .
+  data:Son_of_Mariam_and_Tomas a :Man,
+          :Person .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (b41e830e-23c1-4a31-b0d0-a0a41e3c7b74)
- Call ID: b41e830e-23c1-4a31-b0d0-a0a41e3c7b74
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1190,6 +850,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (caf8082a-fb71-46f5-8bd8-ba72609efb27)
- Call ID: caf8082a-fb71-46f5-8bd8-ba72609efb27
+  Finish (827695a8-00fe-4b6e-b483-bdb528bdd4a7)
+ Call ID: 827695a8-00fe-4b6e-b483-bdb528bdd4a7
   Args:

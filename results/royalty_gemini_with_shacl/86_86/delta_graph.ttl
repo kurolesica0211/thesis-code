@@ -2,36 +2,67 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Aimone_4th_Duke_of_Aosta a :Ancestor,
+data:King_Constantine_I a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Philippe_comte_de_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Princess_Helene_of_Orleans .
+
+data:Prince_Amedeo_son_of_Aimone a :Man,
+        :Person ;
+    :isSonOf data:Prince_Aimone,
+        data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Prince_Luigi_Amedeo_Duke_of_the_Abruzzi a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Emanuele_Filiberto .
+
+data:Princess_Marie_Isabelle_of_Orleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Princess_Helene_of_Orleans .
+
+data:Princess_Sophie_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Vittoria_dal_Pozzo a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Prince_Emanuele_Filiberto .
+
+data:Prince_Amedeo_1st_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Amedeo_3rd_Duke_of_Aosta a :Man,
+        :Person ;
+    :isSonOf data:Prince_Emanuele_Filiberto .
+
+data:Prince_Aimone a :Ancestor,
         :Man,
         :Person ;
     :hasBirthYear 1900 ;
-    :hasBrother data:Prince_Amedeo_3rd_Duke_of_Aosta ;
     :hasDeathYear 1948 ;
-    :hasFather data:Emanuele_Filiberto_Duke_of_Aosta ;
     :hasMarriageYear 1939 ;
-    :hasMother data:Princess_Helene_of_Orleans ;
-    :hasSex data:Male_Sex_Node ;
-    :hasSon data:Prince_Amedeo_4th_Duke_of_Aosta_son .
-
-data:Emanuele_Filiberto_Duke_of_Aosta a :Ancestor,
-        :Man,
-        :Person .
-
-data:Male_Sex_Node a :Male,
-        :Sex .
-
-data:Prince_Amedeo_3rd_Duke_of_Aosta a :Man,
-        :Person .
-
-data:Prince_Amedeo_4th_Duke_of_Aosta_son a :Man,
-        :Person ;
-    :hasFather data:Aimone_4th_Duke_of_Aosta ;
-    :hasMother data:Princess_Irene_of_Greece_and_Denmark .
+    :hasRelation data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Amedeo_3rd_Duke_of_Aosta ;
+    :isSonOf data:Prince_Emanuele_Filiberto .
 
 data:Princess_Helene_of_Orleans a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :isMotherOf data:Prince_Aimone .
+
+data:Prince_Emanuele_Filiberto a :Ancestor,
+        :Man,
+        :Person ;
+    :isSonOf data:Prince_Amedeo_1st_Duke_of_Aosta .
 
 data:Princess_Irene_of_Greece_and_Denmark a :Ancestor,
         :Person,

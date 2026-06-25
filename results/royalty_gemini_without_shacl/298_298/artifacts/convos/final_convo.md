@@ -69,59 +69,27 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Duchess of Montpensier
+Princess Maria Cristina of Bourbon-Two Sicilies (Full Italian name: Maria Cristina Carolina Pia Carmela Giuseppa Antonia Anna Luitgarda Speranza Lucia Caterina Apollonia Cecilia Agata di Borbone; 10 April 1877 – 4 October 1947) was the titular Grand Duchess of Tuscany from 28 February 1942 to 4 October 1947 as wife of Archduke Peter Ferdinand of Austria, Prince of Tuscany, the titular Grand Duke.
+Family
 
-
-The Count of ÉvreuxThe Countess of Évreux
-
-
-Princess Béatrice
-
-
-The Duke of OrléansThe Duchess of Orléans
-
-
-The Dowager Countess of La Marche
-
-
-The Countess of Schönborn-Buchheim
-
-
-Princess Hélène, Countess of Limburg Stirum
-
-
-The Dowager Duchess of Calabria
-
-
-The Dowager Duchess of Württemberg
-
-
-Princess Claude, Mrs. Gandolfi
-
-
-Princess Chantal, Baroness of Sambucy de Sorgue
-
-
-Diane, Dowager Duchess of Württemberg (née Princess Diane of Orléans; born 24 March 1940) is a French-German painter, sculptor, writer and philanthropist.
-She is the widow of Carl, Duke of Württemberg, head of the House of Württemberg.
-She is the fourth daughter and sixth child of Henri, Count of Paris, Orléanist pretender to the throne of France, and his wife, Princess Isabelle of Orléans-Braganza.
-Early life
-
-Diane was born in Petrópolis, Brazil, the fourth daughter and sixth child of the Orléanist claimant to the French throne, Henri, Count of Paris, and his wife, Princess Isabelle of Orléans-Braganza.
-At the time of her birth, as a claimant to the throne, her father was banned from living in France.
-In 1979, the Duchess established an eponymous foundation, "Diane Herzogin von Württemberg, Prinzessin von Frankreich-Stiftung," to aid disadvantaged children.
+Born into the Sicilian line of an ancient House of Bourbon, Princess Maria Cristina was the fifth child and second eldest daughter of Prince Alfonso of Bourbon-Two Sicilies, Count of Caserta and his wife, Princess Maria Antonietta of Bourbon-Two Sicilies.
 Marriage and issue
 
-In 1956, on a cruise organized by Queen Frederica of Greece, Diane met Duke Carl of Württemberg, son and heir of Philipp Albrecht, Duke of Württemberg, and his wife, Archduchess Rosa of Austria.
-In 1957, her brother, Henri, married Carl's sister, Marie-Thérèse.
-On 21 July 1960, Diane married Carl at Altshausen.
-In 1975, Carl succeeded his father as head of the House of Württemberg.
+Maria Cristina married Archduke Peter Ferdinand of Austria, Prince of Tuscany, fourth child and third son of Ferdinand IV, Grand Duke of Tuscany and his wife Princess Alice of Bourbon-Parma, on 8 November 1900 in Cannes.
+Maria Cristina and Peter Ferdinand had four children:
+
+
+Death
+
+Archduchess Maria Christina died in Landkreis Starnberg, Bavaria, on 4 October 1947, at the age of 70.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -137,39 +105,9 @@ In 1975, Carl succeeded his father as head of the House of Württemberg.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -184,6 +122,23 @@ In 1975, Carl succeeded his father as head of the House of Württemberg.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -201,6 +156,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -268,29 +238,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -299,6 +261,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -311,6 +281,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -319,17 +291,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -357,6 +331,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -372,115 +430,117 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (505837b5-29e8-40a2-a8c3-7d57e8189378)
- Call ID: 505837b5-29e8-40a2-a8c3-7d57e8189378
+  AssignClass (97e464ce-8bb8-499d-85e9-4cf36d48beec)
+ Call ID: 97e464ce-8bb8-499d-85e9-4cf36d48beec
   Args:
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
     type: :Woman
-    source: Diane_of_Orléans
-  AssignClass (3b19b5e7-9032-4f36-98c6-873619b654d4)
- Call ID: 3b19b5e7-9032-4f36-98c6-873619b654d4
+  AssignClass (7d746d2a-ccc4-422e-ba2c-30e58c46ee1c)
+ Call ID: 7d746d2a-ccc4-422e-ba2c-30e58c46ee1c
   Args:
-    source: Henri_Count_of_Paris
-    type: :Man
-  AssignClass (00c8874c-3406-48a2-9496-298d44b00add)
- Call ID: 00c8874c-3406-48a2-9496-298d44b00add
+    type: :Person
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
+  AddLiteral (820df3b2-2ea8-4acd-9a27-ea8483b6da83)
+ Call ID: 820df3b2-2ea8-4acd-9a27-ea8483b6da83
   Args:
-    source: Isabelle_of_Orléans-Braganza
-    type: :Woman
-  AssignClass (a4679724-2d17-4704-ba1e-d1e796dbc5a1)
- Call ID: a4679724-2d17-4704-ba1e-d1e796dbc5a1
-  Args:
-    source: Carl_Duke_of_Württemberg
-    type: :Man
-  AssignClass (36ef4bea-5a4a-41a5-ae16-4531bb2786bb)
- Call ID: 36ef4bea-5a4a-41a5-ae16-4531bb2786bb
-  Args:
-    type: :Man
-    source: Philipp_Albrecht_Duke_of_Württemberg
-  AssignClass (9f375923-d747-464a-bc09-1c311540164f)
- Call ID: 9f375923-d747-464a-bc09-1c311540164f
-  Args:
-    source: Rosa_of_Austria
-    type: :Woman
-  AssignClass (14787cc6-b834-41ee-ab29-693070b7f8a2)
- Call ID: 14787cc6-b834-41ee-ab29-693070b7f8a2
-  Args:
-    source: Henri_brother_of_Diane
-    type: :Man
-  AssignClass (a34d794b-a725-4a7b-8acf-0069d029cc9f)
- Call ID: a34d794b-a725-4a7b-8acf-0069d029cc9f
-  Args:
-    source: Marie-Thérèse
-    type: :Woman
-  AddLiteral (643538df-ee76-4a4e-a8b5-aebaf0f29069)
- Call ID: 643538df-ee76-4a4e-a8b5-aebaf0f29069
-  Args:
-    literal_type: xsd:integer
-    source: Diane_of_Orléans
-    literal_value: 1940
+    literal_value: 1877
     relation: :hasBirthYear
-  AddTriple (e405cc65-891b-4add-8774-f700de6ae8c3)
- Call ID: e405cc65-891b-4add-8774-f700de6ae8c3
-  Args:
-    target: Henri_Count_of_Paris
-    relation: :hasFather
-    source: Diane_of_Orléans
-  AddTriple (f850a237-1063-4209-8190-f570b385c796)
- Call ID: f850a237-1063-4209-8190-f570b385c796
-  Args:
-    source: Diane_of_Orléans
-    relation: :hasMother
-    target: Isabelle_of_Orléans-Braganza
-  AddTriple (936cd502-0aa2-4185-a105-b0c2dc0b84c4)
- Call ID: 936cd502-0aa2-4185-a105-b0c2dc0b84c4
-  Args:
-    source: Carl_Duke_of_Württemberg
-    relation: :hasFather
-    target: Philipp_Albrecht_Duke_of_Württemberg
-  AddTriple (bd277ebd-1a78-4db3-a3b0-c971b3310e87)
- Call ID: bd277ebd-1a78-4db3-a3b0-c971b3310e87
-  Args:
-    target: Rosa_of_Austria
-    relation: :hasMother
-    source: Carl_Duke_of_Württemberg
-  AddTriple (b277efb2-6d6f-4fa2-9bf4-243662b76ed9)
- Call ID: b277efb2-6d6f-4fa2-9bf4-243662b76ed9
-  Args:
-    target: Henri_brother_of_Diane
-    source: Diane_of_Orléans
-    relation: :hasBrother
-  AddTriple (67e9966f-89ec-4384-8a90-9b231154ebe0)
- Call ID: 67e9966f-89ec-4384-8a90-9b231154ebe0
-  Args:
-    target: Marie-Thérèse
-    source: Carl_Duke_of_Württemberg
-    relation: :hasSister
-  AddTriple (18fe6d3d-5bab-44a1-8eae-c3ffbd358770)
- Call ID: 18fe6d3d-5bab-44a1-8eae-c3ffbd358770
-  Args:
-    target: Carl_Duke_of_Württemberg
-    source: Diane_of_Orléans
-    relation: :hasRelation
-  AddLiteral (aeadb19c-b16c-4bf7-bc65-23663f627d9a)
- Call ID: aeadb19c-b16c-4bf7-bc65-23663f627d9a
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1960
-    source: Diane_of_Orléans
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
     literal_type: xsd:integer
-  AddTriple (8a5bc48d-b3fc-401f-9ad2-431aa65a39dd)
- Call ID: 8a5bc48d-b3fc-401f-9ad2-431aa65a39dd
+  AddLiteral (79daaa9d-ce1d-484b-865d-be48afd364fc)
+ Call ID: 79daaa9d-ce1d-484b-865d-be48afd364fc
   Args:
-    target: Marie-Thérèse
-    source: Henri_brother_of_Diane
-    relation: :hasRelation
-  AddLiteral (3f0bda27-1c55-4af6-9c74-d90a3a420924)
- Call ID: 3f0bda27-1c55-4af6-9c74-d90a3a420924
-  Args:
+    literal_value: 1947
+    relation: :hasDeathYear
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
     literal_type: xsd:integer
-    source: Henri_brother_of_Diane
-    literal_value: 1957
+  AssignClass (3fbbb724-b1b2-4d94-a207-31bdc0235877)
+ Call ID: 3fbbb724-b1b2-4d94-a207-31bdc0235877
+  Args:
+    source: Peter_Ferdinand_of_Austria
+    type: :Man
+  AssignClass (2c985bf6-3602-4c9f-b4d6-ab2bbd87d55c)
+ Call ID: 2c985bf6-3602-4c9f-b4d6-ab2bbd87d55c
+  Args:
+    type: :Person
+    source: Peter_Ferdinand_of_Austria
+  AddTriple (5a9534f1-8fa9-4b8e-ac57-9605a24ae228)
+ Call ID: 5a9534f1-8fa9-4b8e-ac57-9605a24ae228
+  Args:
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
+    relation: :hasRelation
+    target: Peter_Ferdinand_of_Austria
+  AddLiteral (558c3b95-fbcd-4104-91dd-788d58c9ad2d)
+ Call ID: 558c3b95-fbcd-4104-91dd-788d58c9ad2d
+  Args:
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
     relation: :hasMarriageYear
-  Finish (e862d3bd-cb5a-4475-96f5-f391807a3547)
- Call ID: e862d3bd-cb5a-4475-96f5-f391807a3547
+    literal_type: xsd:integer
+    literal_value: 1900
+  AssignClass (7e7f029d-16c4-4f31-9d4d-bb64b76ae891)
+ Call ID: 7e7f029d-16c4-4f31-9d4d-bb64b76ae891
+  Args:
+    type: :Man
+    source: Alfonso_of_Bourbon-Two_Sicilies
+  AssignClass (a03d34fc-37c6-44a0-a782-22b614cb5cf3)
+ Call ID: a03d34fc-37c6-44a0-a782-22b614cb5cf3
+  Args:
+    source: Alfonso_of_Bourbon-Two_Sicilies
+    type: :Person
+  AssignClass (e1c4b153-0436-41c2-a550-ccf2b2dc7b89)
+ Call ID: e1c4b153-0436-41c2-a550-ccf2b2dc7b89
+  Args:
+    type: :Woman
+    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
+  AssignClass (04468e92-999f-4527-8f79-e3ab2e3650c8)
+ Call ID: 04468e92-999f-4527-8f79-e3ab2e3650c8
+  Args:
+    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
+    type: :Person
+  AddTriple (bbec6fc5-28f9-44ea-8232-fe70c85e9e2b)
+ Call ID: bbec6fc5-28f9-44ea-8232-fe70c85e9e2b
+  Args:
+    target: Alfonso_of_Bourbon-Two_Sicilies
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
+    relation: :hasFather
+  AddTriple (06d05f50-2c15-46c6-962e-2bcbb9af85b8)
+ Call ID: 06d05f50-2c15-46c6-962e-2bcbb9af85b8
+  Args:
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
+    relation: :hasMother
+    target: Maria_Antonietta_of_Bourbon-Two_Sicilies
+  AssignClass (8a584dcd-42ce-4c05-a1a0-d9a2ddb86fc9)
+ Call ID: 8a584dcd-42ce-4c05-a1a0-d9a2ddb86fc9
+  Args:
+    source: Ferdinand_IV_of_Tuscany
+    type: :Man
+  AssignClass (b0acdd37-663f-40eb-843f-4e8ad45fab39)
+ Call ID: b0acdd37-663f-40eb-843f-4e8ad45fab39
+  Args:
+    type: :Person
+    source: Ferdinand_IV_of_Tuscany
+  AssignClass (de38e236-300b-459b-95ab-7853f983488c)
+ Call ID: de38e236-300b-459b-95ab-7853f983488c
+  Args:
+    source: Alice_of_Bourbon-Parma
+    type: :Woman
+  AssignClass (371e2cfe-8a79-4569-883a-e79fc3a17d66)
+ Call ID: 371e2cfe-8a79-4569-883a-e79fc3a17d66
+  Args:
+    source: Alice_of_Bourbon-Parma
+    type: :Person
+  AddTriple (cf9390dc-49b8-42ed-ae8e-2552cdd88be9)
+ Call ID: cf9390dc-49b8-42ed-ae8e-2552cdd88be9
+  Args:
+    relation: :hasFather
+    source: Peter_Ferdinand_of_Austria
+    target: Ferdinand_IV_of_Tuscany
+  AddTriple (1551efec-339e-44f6-b125-33561675b718)
+ Call ID: 1551efec-339e-44f6-b125-33561675b718
+  Args:
+    source: Peter_Ferdinand_of_Austria
+    relation: :hasMother
+    target: Alice_of_Bourbon-Parma
+  Finish (b6243246-e46e-4510-9584-0d4589f56af8)
+ Call ID: b6243246-e46e-4510-9584-0d4589f56af8
   Args:

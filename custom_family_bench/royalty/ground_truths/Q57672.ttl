@@ -7,76 +7,11 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Ernst_August-_Crown_Prince_of_Hanover a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Ernst August, Crown Prince of Hanover" ;
-    data:posIndicesFull "288:327" ;
-    data:posIndicesPart "1589:1596",
-        "1686:1693",
-        "1735:1741",
-        "1800:1806",
-        "1877:1883",
-        "3112:3119",
-        "3136:3142",
-        "392:398",
-        "4360:4366",
-        "4609:4615",
-        "502:509",
-        "5184:5191",
-        "5355:5362",
-        "5543:5549",
-        "5870:5876",
-        "6014:6020",
-        "6421:6428" ;
-    data:wdtLink wdt:Q437001 ;
-    :alsoKnownAs "Crown Prince Ernest Augustus of Hanover" ;
-    :hasChild data:Ernst_August-_Duke_of_Brunswick ;
-    :hasSex data:male ;
-    :hasSon data:Ernst_August-_Duke_of_Brunswick ;
-    :isFatherOf data:Ernst_August-_Duke_of_Brunswick ;
-    :isParentOf data:Ernst_August-_Duke_of_Brunswick .
-
-data:Thyra-_Crown_Princess_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Thyra, Crown Princess of Hanover" ;
-    data:posIndicesFull "342:367" ;
-    data:posIndicesPart "1589:1596",
-        "1686:1693",
-        "3112:3119",
-        "3163:3171",
-        "3577:3585",
-        "502:509",
-        "5184:5191",
-        "5355:5362",
-        "6421:6428" ;
-    data:wdtLink wdt:Q217504 ;
-    :alsoKnownAs "Princess Thyra Amalie Caroline Charlotte Anna of Denmark",
-        "Princess Thyra of Denmark" ;
-    :hasChild data:Ernst_August-_Duke_of_Brunswick ;
-    :hasSex data:female ;
-    :hasSon data:Ernst_August-_Duke_of_Brunswick ;
-    :isMotherOf data:Ernst_August-_Duke_of_Brunswick ;
-    :isParentOf data:Ernst_August-_Duke_of_Brunswick .
-
-data:Constantine_II_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Constantine_II_of_Greece a :Person ;
     rdfs:label "Constantine II of Greece" ;
-    data:posIndicesFull "3298:3312",
-        "3298:3322" ;
-    data:posIndicesPart "6029:6035",
-        "6087:6093" ;
+    data:posIndicesFull "3406:3420",
+        "3406:3430" ;
+    data:posIndicesPart "6195:6201" ;
     data:wdtLink wdt:Q151773 ;
     :alsoKnownAs "Constantine 2 of Greece",
         "Constantine Glucksburg",
@@ -89,37 +24,128 @@ data:Constantine_II_of_Greece a :Ancestor,
         "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
         "Konstantínos 2",
         "Konstantínos II" ;
-    :hasMother data:Frederica_of_Hanover ;
-    :hasParent data:Frederica_of_Hanover ;
-    :hasSex data:male ;
-    :isChildOf data:Frederica_of_Hanover ;
-    :isSonOf data:Frederica_of_Hanover .
+    :hasParent data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasSex data:male .
 
-data:Ernst_August-_Prince_of_Hanover_1 a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Ernst_August_of_Hanover a :Person ;
+    rdfs:label "Prince Ernst August of Hanover" ;
+    data:posIndicesFull "402:435" ;
+    data:posIndicesPart "1697:1704",
+        "1794:1801",
+        "1843:1849",
+        "1908:1914",
+        "1985:1991",
+        "3220:3227",
+        "3244:3250",
+        "4468:4474",
+        "4717:4723",
+        "500:506",
+        "5292:5299",
+        "5463:5470",
+        "5651:5657",
+        "5978:5984",
+        "610:617",
+        "6122:6128",
+        "6529:6536" ;
+    data:wdtLink wdt:Q4383225 ;
+    :alsoKnownAs "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph Prince of Hanover",
+        "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph of Hanover",
+        "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph, Hereditary Prince of Hanover",
+        "Ernst August Prince of Hanover",
+        "Ernst August Prinz von Hannover",
+        "Ernst August von Hannover",
+        "Ernst August, Hereditary Prince of Hanover",
+        "Prince Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph of Hanover",
+        "Prince Ernst August Jr." ;
+    :hasParent data:Ernst_August-_Prince_of_Hanover_1 ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Ernst_August-_Crown_Prince_of_Hanover a :Person ;
+    rdfs:label "Ernst August, Crown Prince of Hanover" ;
+    data:posIndicesFull "396:435" ;
+    data:posIndicesPart "1697:1704",
+        "1794:1801",
+        "1843:1849",
+        "1908:1914",
+        "1985:1991",
+        "3220:3227",
+        "3244:3250",
+        "4468:4474",
+        "4717:4723",
+        "500:506",
+        "5292:5299",
+        "5463:5470",
+        "5651:5657",
+        "5978:5984",
+        "610:617",
+        "6122:6128",
+        "6529:6536" ;
+    data:wdtLink wdt:Q437001 ;
+    :alsoKnownAs "Crown Prince Ernest Augustus of Hanover" ;
+    :hasSex data:male .
+
+data:Ernst_August-_Prince_of_Hanover a :Person ;
     rdfs:label "Ernst August, Prince of Hanover" ;
-    data:posIndicesFull "294:327",
-        "2950:2976",
-        "301:327",
-        "6465:6491" ;
-    data:posIndicesPart "1589:1596",
-        "1686:1693",
-        "1735:1741",
-        "1800:1806",
-        "1877:1883",
-        "3112:3119",
-        "3136:3142",
-        "392:398",
-        "4360:4366",
-        "4609:4615",
-        "502:509",
-        "5184:5191",
-        "5355:5362",
-        "5543:5549",
-        "5870:5876",
-        "6014:6020" ;
+    data:posIndicesFull "3058:3084",
+        "402:435",
+        "409:435",
+        "6573:6599" ;
+    data:posIndicesPart "1697:1704",
+        "1794:1801",
+        "1843:1849",
+        "1908:1914",
+        "1985:1991",
+        "3220:3227",
+        "3244:3250",
+        "4468:4474",
+        "4717:4723",
+        "500:506",
+        "5292:5299",
+        "5463:5470",
+        "5651:5657",
+        "5978:5984",
+        "610:617",
+        "6122:6128" ;
+    data:wdtLink wdt:Q61079 ;
+    :alsoKnownAs "Ernest Augustus of Hanover",
+        "Ernest Augustus, Prince of Hanover",
+        "Ernst August IV",
+        "Ernst August of Hanover",
+        "Prince Ernest Augustus of Hanover",
+        "Prince Ernst August of Hanover" ;
+    :hasParent data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSex data:male .
+
+data:Ernst_August-_Prince_of_Hanover_1 a :Person ;
+    rdfs:label "Ernst August, Prince of Hanover" ;
+    data:posIndicesFull "3058:3084",
+        "402:435",
+        "409:435",
+        "6573:6599" ;
+    data:posIndicesPart "1697:1704",
+        "1794:1801",
+        "1843:1849",
+        "1908:1914",
+        "1985:1991",
+        "3220:3227",
+        "3244:3250",
+        "4468:4474",
+        "4717:4723",
+        "500:506",
+        "5292:5299",
+        "5463:5470",
+        "5651:5657",
+        "5978:5984",
+        "610:617",
+        "6122:6128" ;
     data:wdtLink wdt:Q58070 ;
     :alsoKnownAs "Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig of Hanover",
         "Ernst August Prinz von Hannover",
@@ -129,190 +155,147 @@ data:Ernst_August-_Prince_of_Hanover_1 a :Ancestor,
         "Prince Ernst August Sr.",
         "Prince Ernst August of Hanover",
         "Prince Ernst August of Hanover (born 1954)" ;
-    :hasFather data:Ernst_August-_Prince_of_Hanover ;
     :hasParent data:Ernst_August-_Prince_of_Hanover ;
-    :hasSex data:male ;
-    :isChildOf data:Ernst_August-_Prince_of_Hanover ;
-    :isSonOf data:Ernst_August-_Prince_of_Hanover .
+    :hasSex data:male .
 
-data:Princess_Viktoria_Luise_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Frederica_of_Hanover a :Person ;
+    rdfs:label "Frederica of Hanover" ;
+    data:posIndicesFull "5951:5969",
+        "5960:5969",
+        "6095:6113",
+        "6104:6113",
+        "6245:6254" ;
+    data:posIndicesPart "6529:6536" ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka",
+        "Friederike Luise von Griechenland",
+        "Princess Fredericka" ;
+    :hasParent data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSex data:female .
+
+data:Paul_of_Greece a :Person ;
+    rdfs:label "Paul of Greece" ;
+    data:posIndicesFull "6129:6143" ;
+    data:posIndicesPart "6303:6307" ;
+    data:wdtLink wdt:Q155394 ;
+    :alsoKnownAs "King Paul I of Greece",
+        "King Paul of Greece",
+        "King Pavlos I of Greece",
+        "Paul I of Greece",
+        "Pavlos I of Greece" ;
+    :hasSex data:male .
+
+data:Thyra-_Crown_Princess_of_Hanover a :Person ;
+    rdfs:label "Thyra, Crown Princess of Hanover" ;
+    data:posIndicesFull "450:475" ;
+    data:posIndicesPart "1697:1704",
+        "1794:1801",
+        "3220:3227",
+        "3271:3279",
+        "3685:3693",
+        "5292:5299",
+        "5463:5470",
+        "610:617",
+        "6529:6536" ;
+    data:wdtLink wdt:Q217504 ;
+    :alsoKnownAs "Princess Thyra Amalie Caroline Charlotte Anna of Denmark",
+        "Princess Thyra of Denmark" ;
+    :hasSex data:female .
+
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "2514:2524",
+        "269:294",
+        "2743:2753",
+        "284:294",
+        "284:295" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasSex data:male .
+
+data:Ernst_August-_Duke_of_Brunswick a :Person ;
+    rdfs:label "Ernst August, Duke of Brunswick" ;
+    data:posIndicesFull "0:15",
+        "17:32",
+        "2072:2087",
+        "2408:2423",
+        "2658:2673",
+        "2723:2738",
+        "2826:2841",
+        "2950:2965",
+        "3058:3073",
+        "308:323",
+        "3251:3266",
+        "3728:3743",
+        "3958:3973",
+        "409:424",
+        "4178:4193",
+        "4475:4490",
+        "4558:4573",
+        "4668:4683",
+        "4941:4956",
+        "507:522",
+        "5139:5154",
+        "5243:5258",
+        "5524:5539",
+        "5659:5674",
+        "59:71",
+        "6203:6218",
+        "6337:6352",
+        "6573:6588",
+        "882:897" ;
+    data:posIndicesPart "1093:1097",
+        "1101:1110",
+        "1313:1317",
+        "1507:1511",
+        "1593:1602",
+        "1634:1638",
+        "1891:1900",
+        "3529:3533",
+        "4018:4022",
+        "4083:4092",
+        "4244:4248",
+        "4252:4261",
+        "5999:6003",
+        "6019:6028",
+        "6625:6629",
+        "6645:6654",
+        "795:799" ;
+    data:wdtLink wdt:Q57672 ;
+    :alsoKnownAs "Ernest August I, Duke of Brunswick",
+        "Ernest Augustus",
+        "Ernst August I of Brunswick" ;
+    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:male .
+
+data:Princess_Viktoria_Luise_of_Prussia a :Person ;
     rdfs:label "Princess Viktoria Luise of Prussia" ;
-    data:posIndicesFull "2789:2824",
-        "2798:2824" ;
-    data:posIndicesPart "3163:3171",
-        "3577:3585" ;
+    data:posIndicesFull "2897:2932",
+        "2906:2932" ;
+    data:posIndicesPart "3271:3279",
+        "3685:3693" ;
     data:wdtLink wdt:Q57529 ;
     :alsoKnownAs "Princess Victoria Louise Adelaide Matilda Charlotte of Prussia",
         "Princess Victoria Louise of Prussia",
         "Victoria Louise Adelaide Matilda",
         "Viktoria Luise of Prussia",
         "Viktoria Luise, Duchess Consort of Brunswick" ;
-    :hasChild data:Ernst_August-_Prince_of_Hanover,
-        data:Frederica_of_Hanover ;
-    :hasDaughter data:Frederica_of_Hanover ;
-    :hasSex data:female ;
-    :hasSon data:Ernst_August-_Prince_of_Hanover ;
-    :isMotherOf data:Ernst_August-_Prince_of_Hanover,
-        data:Frederica_of_Hanover ;
-    :isParentOf data:Ernst_August-_Prince_of_Hanover,
-        data:Frederica_of_Hanover .
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:female .
 
-data:Ernst_August-_Prince_of_Hanover a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Ernst August, Prince of Hanover" ;
-    data:posIndicesFull "294:327",
-        "2950:2976",
-        "301:327",
-        "6465:6491" ;
-    data:posIndicesPart "1589:1596",
-        "1686:1693",
-        "1735:1741",
-        "1800:1806",
-        "1877:1883",
-        "3112:3119",
-        "3136:3142",
-        "392:398",
-        "4360:4366",
-        "4609:4615",
-        "502:509",
-        "5184:5191",
-        "5355:5362",
-        "5543:5549",
-        "5870:5876",
-        "6014:6020" ;
-    data:wdtLink wdt:Q61079 ;
-    :alsoKnownAs "Ernest Augustus of Hanover",
-        "Ernest Augustus, Prince of Hanover",
-        "Ernst August IV",
-        "Ernst August of Hanover",
-        "Prince Ernest Augustus of Hanover",
-        "Prince Ernst August of Hanover" ;
-    :hasChild data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasFather data:Ernst_August-_Duke_of_Brunswick ;
-    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasParent data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasSex data:male ;
-    :hasSister data:Frederica_of_Hanover ;
-    :hasSon data:Ernst_August-_Prince_of_Hanover_1 ;
-    :isBrotherOf data:Frederica_of_Hanover ;
-    :isChildOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isFatherOf data:Ernst_August-_Prince_of_Hanover_1 ;
-    :isParentOf data:Ernst_August-_Prince_of_Hanover_1 ;
-    :isSiblingOf data:Frederica_of_Hanover ;
-    :isSonOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isUncleOf data:Constantine_II_of_Greece .
+data:female a :Female .
 
-data:Frederica_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Frederica of Hanover" ;
-    data:posIndicesFull "5843:5861",
-        "5852:5861",
-        "5987:6005",
-        "5996:6005",
-        "6137:6146" ;
-    data:posIndicesPart "6421:6428" ;
-    data:wdtLink wdt:Q61351 ;
-    :alsoKnownAs "Fredericka",
-        "Friederike Luise von Griechenland",
-        "Princess Fredericka" ;
-    :hasBrother data:Ernst_August-_Prince_of_Hanover ;
-    :hasChild data:Constantine_II_of_Greece ;
-    :hasFather data:Ernst_August-_Duke_of_Brunswick ;
-    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasParent data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Constantine_II_of_Greece ;
-    :isAuntOf data:Ernst_August-_Prince_of_Hanover_1 ;
-    :isChildOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isDaughterOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isMotherOf data:Constantine_II_of_Greece ;
-    :isParentOf data:Constantine_II_of_Greece ;
-    :isSiblingOf data:Ernst_August-_Prince_of_Hanover ;
-    :isSisterOf data:Ernst_August-_Prince_of_Hanover .
-
-data:Ernst_August-_Duke_of_Brunswick a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Ernst August, Duke of Brunswick" ;
-    data:posIndicesFull "0:15",
-        "17:32",
-        "1964:1979",
-        "200:215",
-        "2300:2315",
-        "2550:2565",
-        "2615:2630",
-        "2718:2733",
-        "2842:2857",
-        "2950:2965",
-        "301:316",
-        "3143:3158",
-        "3620:3635",
-        "3850:3865",
-        "399:414",
-        "4070:4085",
-        "4367:4382",
-        "4450:4465",
-        "4560:4575",
-        "4833:4848",
-        "5031:5046",
-        "5135:5150",
-        "5416:5431",
-        "5551:5566",
-        "59:71",
-        "6095:6110",
-        "6229:6244",
-        "6465:6480",
-        "774:789" ;
-    data:posIndicesPart "1205:1209",
-        "1399:1403",
-        "1485:1494",
-        "1526:1530",
-        "1783:1792",
-        "3421:3425",
-        "3910:3914",
-        "3975:3984",
-        "4136:4140",
-        "4144:4153",
-        "5891:5895",
-        "5911:5920",
-        "6517:6521",
-        "6537:6546",
-        "687:691",
-        "985:989",
-        "993:1002" ;
-    data:wdtLink wdt:Q57672 ;
-    :alsoKnownAs "Ernest August I, Duke of Brunswick",
-        "Ernest Augustus",
-        "Ernst August I of Brunswick" ;
-    :hasChild data:Ernst_August-_Prince_of_Hanover,
-        data:Frederica_of_Hanover ;
-    :hasDaughter data:Frederica_of_Hanover ;
-    :hasFather data:Ernst_August-_Crown_Prince_of_Hanover ;
-    :hasMother data:Thyra-_Crown_Princess_of_Hanover ;
-    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
-        data:Thyra-_Crown_Princess_of_Hanover ;
-    :hasSex data:male ;
-    :hasSon data:Ernst_August-_Prince_of_Hanover ;
-    :isChildOf data:Ernst_August-_Crown_Prince_of_Hanover,
-        data:Thyra-_Crown_Princess_of_Hanover ;
-    :isFatherOf data:Ernst_August-_Prince_of_Hanover,
-        data:Frederica_of_Hanover ;
-    :isParentOf data:Ernst_August-_Prince_of_Hanover,
-        data:Frederica_of_Hanover ;
-    :isSonOf data:Ernst_August-_Crown_Prince_of_Hanover,
-        data:Thyra-_Crown_Princess_of_Hanover .
+data:male a :Male .
 

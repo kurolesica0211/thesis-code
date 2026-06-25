@@ -2,44 +2,91 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elisabeth_of_Romania a :Person,
-        :Woman .
+data:Christopher a :Man,
+        :Person ;
+    :isUncleOf data:GeorgeII .
 
-data:George_II_of_Greece a :Man,
+data:ConstantineII a :Man,
+        :Person ;
+    :hasFather data:Paul ;
+    :hasMother data:FredericaOfHanover .
+
+data:Philip a :Man,
+        :Person ;
+    :hasFather data:Andrew .
+
+data:Aimone a :Man,
+        :Person .
+
+data:Alexander a :Man,
+        :Person .
+
+data:Andrew a :Man,
+        :Person ;
+    :hasBrother data:ConstantineI .
+
+data:CarolOfRomania a :Man,
+        :Person .
+
+data:ElisabethOfRomania a :Person,
+        :Woman ;
+    :hasBrother data:CarolOfRomania ;
+    :hasFather data:FerdinandI ;
+    :hasMother data:MarieOfRomania .
+
+data:FerdinandI a :Man,
+        :Person .
+
+data:GeorgeI a :Man,
+        :Person .
+
+data:GeorgeII a :Man,
         :Person ;
     :hasBirthYear 1890 ;
-    :hasBrother data:Alexander_of_Greece,
-        data:Paul_of_Greece ;
+    :hasBrother data:Alexander,
+        data:Paul ;
     :hasDeathYear 1947 ;
-    :hasFather data:Constantine_I_of_Greece ;
+    :hasFather data:ConstantineI ;
     :hasMarriageYear 1921 ;
-    :hasMother data:Sophia_of_Prussia ;
-    :hasSister data:Helen_of_Greece,
-        data:Irene_of_Greece,
-        data:Katherine_of_Greece .
+    :hasMother data:SophiaOfPrussia ;
+    :hasRelation data:ElisabethOfRomania ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine .
 
-data:Alexander_of_Greece a :Man,
-        :Person .
+data:Helen a :Person,
+        :Woman .
 
-data:Constantine_I_of_Greece a :Man,
+data:Irene a :Person,
+        :Woman ;
+    :hasRelation data:Aimone .
+
+data:Katherine a :Person,
+        :Woman .
+
+data:MarieOfRomania a :Person,
+        :Woman .
+
+data:OlgaConstantinovna a :Person,
+        :Woman .
+
+data:SophiaOfPrussia a :Person,
+        :Woman .
+
+data:VictoriaLouise a :Person,
+        :Woman .
+
+data:ConstantineI a :Man,
         :Person ;
-    :hasFather data:George_I_of_Greece .
+    :hasFather data:GeorgeI ;
+    :hasMother data:OlgaConstantinovna .
 
-data:George_I_of_Greece a :Man,
-        :Person .
+data:FredericaOfHanover a :Person,
+        :Woman ;
+    :hasMother data:VictoriaLouise .
 
-data:Helen_of_Greece a :Person,
-        :Woman .
-
-data:Irene_of_Greece a :Person,
-        :Woman .
-
-data:Katherine_of_Greece a :Person,
-        :Woman .
-
-data:Paul_of_Greece a :Man,
-        :Person .
-
-data:Sophia_of_Prussia a :Person,
-        :Woman .
+data:Paul a :Man,
+        :Person ;
+    :hasMarriageYear 1938 ;
+    :hasRelation data:FredericaOfHanover .
 

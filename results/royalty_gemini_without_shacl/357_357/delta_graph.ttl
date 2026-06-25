@@ -2,37 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfonso_Duke_of_Anjou a :Man ;
-    :hasBirthYear 1936 ;
-    :hasBrother data:Gonzalo_de_Borbon ;
-    :hasDeathYear 1989 ;
-    :hasFather data:Jaime_Duke_of_Segovia ;
-    :hasMother data:Emanuela_de_Dampierre .
+data:Carl_of_Wurttemberg a :Man,
+        :Person ;
+    :isUncleOf data:Jean_d_Orleans .
 
-data:Maria_del_Carmen_Martinez_Bordiu_y_Franco a :Woman ;
-    :hasFather data:Cristobal_Martinez_Bordiu ;
-    :hasMother data:Carmen_Franco_y_Polo .
+data:Princess_Chantal_of_Orleans a :Person,
+        :Woman ;
+    :isAuntOf data:Jean_d_Orleans .
 
-data:Victoria_Eugenie a :Woman .
+data:Henri_Count_of_Paris a :Man,
+        :Person ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_VI_Count_of_Paris .
 
-data:Alfonso_XIII_of_Spain a :Man .
+data:Henri_VI_Count_of_Paris a :Man,
+        :Person .
 
-data:Carmen_Franco_y_Polo a :Woman .
+data:Marie_Therese_of_Wurttemberg a :Person,
+        :Woman ;
+    :hasBirthYear 1934 .
 
-data:Cristobal_Martinez_Bordiu a :Man .
+data:Philomena_de_Tornos_y_Steinhart a :Person,
+        :Woman ;
+    :hasBirthYear 1977 .
 
-data:Gonzalo_de_Borbon a :Man ;
-    :hasFather data:Jaime_Duke_of_Segovia ;
-    :hasMother data:Emanuela_de_Dampierre .
-
-data:Roger_Duke_of_San_Lorenzo a :Man .
-
-data:Vittoria_Ruspoli a :Woman .
-
-data:Emanuela_de_Dampierre a :Woman ;
-    :hasFather data:Roger_Duke_of_San_Lorenzo ;
-    :hasMother data:Vittoria_Ruspoli .
-
-data:Jaime_Duke_of_Segovia a :Man ;
-    :hasFather data:Alfonso_XIII_of_Spain .
+data:Jean_d_Orleans a :Man,
+        :Person ;
+    :hasBirthYear 1965 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMarriageYear 2008 ;
+    :hasMother data:Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Philomena_de_Tornos_y_Steinhart .
 

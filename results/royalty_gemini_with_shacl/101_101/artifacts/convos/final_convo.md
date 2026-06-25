@@ -116,6 +116,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -131,39 +133,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -178,6 +150,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -195,6 +184,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,29 +266,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -293,6 +289,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -305,6 +309,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -313,17 +319,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -351,6 +359,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -366,168 +458,153 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f9a52e4b-5c4f-49eb-8c1d-c6b22f8bcff1)
- Call ID: f9a52e4b-5c4f-49eb-8c1d-c6b22f8bcff1
+  AssignClass (65a154eb-662d-475c-b0bb-4a0c106e3e68)
+ Call ID: 65a154eb-662d-475c-b0bb-4a0c106e3e68
   Args:
-    source: Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg
     type: :Man
-  AssignClass (94fc0620-30ad-4cfc-a89b-e67efbfdd906)
- Call ID: 94fc0620-30ad-4cfc-a89b-e67efbfdd906
+    source: :Gustav
+  AddLiteral (c0611a0b-0aba-4bdf-b6ac-16efe00c7ac6)
+ Call ID: c0611a0b-0aba-4bdf-b6ac-16efe00c7ac6
   Args:
-    source: Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg
-    type: :Person
-  AssignClass (4b115878-e029-4fe9-9abe-9c742c2768bd)
- Call ID: 4b115878-e029-4fe9-9abe-9c742c2768bd
-  Args:
-    source: Princess_Benedikte_of_Denmark
-    type: :Woman
-  AssignClass (ae64a92f-649c-4861-8a83-9220c221c755)
- Call ID: ae64a92f-649c-4861-8a83-9220c221c755
-  Args:
-    source: Princess_Benedikte_of_Denmark
-    type: :Person
-  AssignClass (9ce9e689-65a3-49da-bb52-08cfd3fa51da)
- Call ID: 9ce9e689-65a3-49da-bb52-08cfd3fa51da
-  Args:
-    source: Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg
-    type: :Man
-  AssignClass (9d93127a-1be0-43ed-9aac-6edb6aa12497)
- Call ID: 9d93127a-1be0-43ed-9aac-6edb6aa12497
-  Args:
-    source: Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg
-    type: :Person
-  AddLiteral (04bd1c79-f09b-4053-96f5-5d9cbc9264f2)
- Call ID: 04bd1c79-f09b-4053-96f5-5d9cbc9264f2
-  Args:
-    literal_type: xsd:integer
+    source: :Gustav
     literal_value: 1969
     relation: :hasBirthYear
-    source: Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg
-  AddTriple (0b8b25db-6f1e-4515-b649-bbcf9a98c2b0)
- Call ID: 0b8b25db-6f1e-4515-b649-bbcf9a98c2b0
+    literal_type: xsd:integer
+  AssignClass (bdb27ce5-55f5-4bae-b636-251dc2c92176)
+ Call ID: bdb27ce5-55f5-4bae-b636-251dc2c92176
   Args:
-    target: Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg
-    source: Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg
+    source: :PrincessBenedikte
+    type: :Woman
+  AssignClass (5dd03d14-51c8-4e35-9782-3c5ed8e98840)
+ Call ID: 5dd03d14-51c8-4e35-9782-3c5ed8e98840
+  Args:
+    type: :Man
+    source: :PrinceRichard
+  AddTriple (2819c328-553f-4054-bce9-5b6054861410)
+ Call ID: 2819c328-553f-4054-bce9-5b6054861410
+  Args:
+    target: :PrincessBenedikte
+    source: :Gustav
+    relation: :hasMother
+  AddTriple (cf4ccb2d-b994-408e-abf7-2a0000902563)
+ Call ID: cf4ccb2d-b994-408e-abf7-2a0000902563
+  Args:
+    source: :Gustav
     relation: :hasFather
-  AddTriple (9fc2068e-2ff4-4cfa-8ef7-a55fc59d1ab9)
- Call ID: 9fc2068e-2ff4-4cfa-8ef7-a55fc59d1ab9
+    target: :PrinceRichard
+  AssignClass (2805d1d8-f39c-4e3c-a536-f55444e849fc)
+ Call ID: 2805d1d8-f39c-4e3c-a536-f55444e849fc
   Args:
-    relation: :hasMother
-    source: Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg
-    target: Princess_Benedikte_of_Denmark
-  AssignClass (05519d36-c09e-4426-a8f7-a793613c2ffa)
- Call ID: 05519d36-c09e-4426-a8f7-a793613c2ffa
-  Args:
-    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
     type: :Woman
-  AssignClass (8ff8ec34-7610-4281-a82d-eb0313581c26)
- Call ID: 8ff8ec34-7610-4281-a82d-eb0313581c26
+    source: :PrincessAlexandra
+  AssignClass (4bb5a2f4-9398-4747-917e-e3bee4dadc87)
+ Call ID: 4bb5a2f4-9398-4747-917e-e3bee4dadc87
   Args:
-    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
-    type: :Person
-  AssignClass (36f488d7-110a-42c9-ad53-e992ec18e2e0)
- Call ID: 36f488d7-110a-42c9-ad53-e992ec18e2e0
-  Args:
-    source: Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg
+    source: :PrincessNathalie
     type: :Woman
-  AssignClass (ea23ab15-4433-48ea-a30c-67296f33b7e7)
- Call ID: ea23ab15-4433-48ea-a30c-67296f33b7e7
-  Args:
-    source: Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg
-    type: :Person
-  AddTriple (b5261397-340d-4a3e-85ab-81d64e3cf642)
- Call ID: b5261397-340d-4a3e-85ab-81d64e3cf642
+  AddTriple (00a4936e-bad3-404b-a5f7-25459a796b09)
+ Call ID: 00a4936e-bad3-404b-a5f7-25459a796b09
   Args:
     relation: :hasSister
-    source: Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg
-    target: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
-  AddTriple (e12f79ed-eff6-41c1-8542-4cafab879e31)
- Call ID: e12f79ed-eff6-41c1-8542-4cafab879e31
+    source: :Gustav
+    target: :PrincessAlexandra
+  AddTriple (f7537c20-6bbf-4141-91ce-8f0c8a4be7eb)
+ Call ID: f7537c20-6bbf-4141-91ce-8f0c8a4be7eb
   Args:
-    source: Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg
-    target: Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg
+    target: :PrincessNathalie
+    source: :Gustav
     relation: :hasSister
-  AssignClass (932a4b8b-12c0-4e6e-9367-54ad37a21380)
- Call ID: 932a4b8b-12c0-4e6e-9367-54ad37a21380
+  AssignClass (8a8def1c-9260-4cc8-8d58-31170f3b7a74)
+ Call ID: 8a8def1c-9260-4cc8-8d58-31170f3b7a74
   Args:
+    source: :PrinceRobin
     type: :Man
-    source: Prince_Robin_zu_Sayn-Wittgenstein-Berleburg
-  AssignClass (fc803133-b097-4977-864d-fd8924c35e82)
- Call ID: fc803133-b097-4977-864d-fd8924c35e82
+  AddTriple (49ea72dc-bd06-429c-a502-1218062628bb)
+ Call ID: 49ea72dc-bd06-429c-a502-1218062628bb
   Args:
-    source: Prince_Robin_zu_Sayn-Wittgenstein-Berleburg
-    type: :Person
-  AddTriple (4461012b-7b97-4f3a-9f1e-ddb821664328)
- Call ID: 4461012b-7b97-4f3a-9f1e-ddb821664328
-  Args:
-    target: Prince_Robin_zu_Sayn-Wittgenstein-Berleburg
-    source: Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg
+    target: :PrinceRobin
     relation: :hasBrother
-  AssignClass (443fb6f4-a6f6-4638-9fa9-3bd54cfc845b)
- Call ID: 443fb6f4-a6f6-4638-9fa9-3bd54cfc845b
+    source: :PrinceRichard
+  AssignClass (2815fbaf-1d22-48e9-b49b-a9a23a5ae620)
+ Call ID: 2815fbaf-1d22-48e9-b49b-a9a23a5ae620
   Args:
-    source: Prince_Gustav_Albrecht
+    source: :CarinaAxelsson
+    type: :Woman
+  AssignClass (8aa9549e-964a-4804-a5b5-e15e910a213a)
+ Call ID: 8aa9549e-964a-4804-a5b5-e15e910a213a
+  Args:
     type: :Man
-  AssignClass (55622c23-05ae-4731-8a9f-5325fb3c4521)
- Call ID: 55622c23-05ae-4731-8a9f-5325fb3c4521
+    source: :PrinceGustavAlbrecht
+  AssignClass (a0f34428-11c4-4ef3-962a-30b740bbe40d)
+ Call ID: a0f34428-11c4-4ef3-962a-30b740bbe40d
   Args:
-    type: :Person
-    source: Prince_Gustav_Albrecht
-  AssignClass (23ec4bd3-01fa-4100-b381-41a1d1f2ebde)
- Call ID: 23ec4bd3-01fa-4100-b381-41a1d1f2ebde
-  Args:
-    source: Princess_Mafalda
+    source: :PrincessMafalda
     type: :Woman
-  AssignClass (da70ff6c-e5a8-41a3-9f57-02a8340698c8)
- Call ID: da70ff6c-e5a8-41a3-9f57-02a8340698c8
+  AddTriple (6f7356a2-9d58-4d5e-844e-4b1f8ea7f7cf)
+ Call ID: 6f7356a2-9d58-4d5e-844e-4b1f8ea7f7cf
   Args:
-    type: :Person
-    source: Princess_Mafalda
-  AddTriple (6b88695f-6aef-48d1-bd93-2daa0745fe68)
- Call ID: 6b88695f-6aef-48d1-bd93-2daa0745fe68
-  Args:
-    relation: :hasSon
-    target: Prince_Gustav_Albrecht
-    source: Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg
-  AddTriple (1293f14c-3a5e-4cfa-aa87-976cc9acb2fe)
- Call ID: 1293f14c-3a5e-4cfa-aa87-976cc9acb2fe
-  Args:
-    relation: :hasDaughter
-    target: Princess_Mafalda
-    source: Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg
-  AssignClass (deaa3182-9817-4619-a01d-bd724bd3e008)
- Call ID: deaa3182-9817-4619-a01d-bd724bd3e008
-  Args:
-    type: :Woman
-    source: Carina_Axelsson
-  AssignClass (04a31dc4-2077-4dbb-978b-368065d99e14)
- Call ID: 04a31dc4-2077-4dbb-978b-368065d99e14
-  Args:
-    type: :Person
-    source: Carina_Axelsson
-  AddTriple (94abef19-56bf-4ee3-8246-442db19728d3)
- Call ID: 94abef19-56bf-4ee3-8246-442db19728d3
-  Args:
-    source: Prince_Gustav_Albrecht
-    target: Carina_Axelsson
+    target: :CarinaAxelsson
+    source: :PrinceGustavAlbrecht
     relation: :hasMother
-  AddTriple (89fee560-1012-4ae9-bd48-903268a80aab)
- Call ID: 89fee560-1012-4ae9-bd48-903268a80aab
+  AddTriple (7bfa4b5a-2503-4b4f-b894-d56d2ea5d9b0)
+ Call ID: 7bfa4b5a-2503-4b4f-b894-d56d2ea5d9b0
   Args:
-    source: Princess_Mafalda
-    target: Carina_Axelsson
+    source: :PrinceGustavAlbrecht
+    relation: :hasFather
+    target: :Gustav
+  AddTriple (ec989ca7-7446-4d5a-b3a0-0d94ce0b35ac)
+ Call ID: ec989ca7-7446-4d5a-b3a0-0d94ce0b35ac
+  Args:
+    target: :CarinaAxelsson
+    source: :PrincessMafalda
     relation: :hasMother
-  Finish (66fe189e-2ee7-4a85-9f5c-23a3226fa787)
- Call ID: 66fe189e-2ee7-4a85-9f5c-23a3226fa787
+  AddTriple (4d91bec4-a742-47d7-9c7c-c967d94741df)
+ Call ID: 4d91bec4-a742-47d7-9c7c-c967d94741df
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    relation: :hasFather
+    source: :PrincessMafalda
+    target: :Gustav
+  AssignClass (b3e2ecc3-615f-44b8-97e9-d357dd7a65a7)
+ Call ID: b3e2ecc3-615f-44b8-97e9-d357dd7a65a7
+  Args:
+    type: :Man
+    source: :KingFrederikX
+  AssignClass (13b6438b-fab9-4f14-bc21-abf7b66f077d)
+ Call ID: 13b6438b-fab9-4f14-bc21-abf7b66f077d
+  Args:
+    type: :Man
+    source: :CountRichardVonPfeilUndKleinEllguth
+  AssignClass (24c576ee-7018-4f7c-8cf6-8f49eb2e4bd0)
+ Call ID: 24c576ee-7018-4f7c-8cf6-8f49eb2e4bd0
+  Args:
+    source: :KonstantinJohannsmann
+    type: :Man
+  AssignClass (239b3bd6-7f8c-4c75-abf3-2aaf42169132)
+ Call ID: 239b3bd6-7f8c-4c75-abf3-2aaf42169132
+  Args:
+    type: :Man
+    source: :PrinceVincentOfDenmark
+  AddTriple (d1066e34-c964-4d92-a242-71c63662f2f9)
+ Call ID: d1066e34-c964-4d92-a242-71c63662f2f9
+  Args:
+    target: :PrincessAlexandra
+    source: :CountRichardVonPfeilUndKleinEllguth
+    relation: :hasMother
+  AddTriple (55ea6bef-57d4-4812-9257-718d5ff8cb5e)
+ Call ID: 55ea6bef-57d4-4812-9257-718d5ff8cb5e
+  Args:
+    target: :PrincessNathalie
+    source: :KonstantinJohannsmann
+    relation: :hasMother
+  AddTriple (6454dc73-929f-4a28-ab8d-e6c60be355af)
+ Call ID: 6454dc73-929f-4a28-ab8d-e6c60be355af
+  Args:
+    target: :KingFrederikX
+    source: :PrinceVincentOfDenmark
+    relation: :hasFather
+  Finish (0de1dc8e-1926-46ef-b780-dbce9d8133ab)
+ Call ID: 0de1dc8e-1926-46ef-b780-dbce9d8133ab
+  Args:
 
 ================================= Tool Message =================================
 
@@ -636,42 +713,44 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man,
-          :Person ;
+  data:CountRichardVonPfeilUndKleinEllguth a :Man ;
+      :hasMother data:PrincessAlexandra .
+
+  data:KonstantinJohannsmann a :Man ;
+      :hasMother data:PrincessNathalie .
+
+  data:PrinceGustavAlbrecht a :Man ;
+      :hasFather data:Gustav ;
+      :hasMother data:CarinaAxelsson .
+
+  data:PrinceVincentOfDenmark a :Man ;
+      :hasFather data:KingFrederikX .
+
+  data:PrincessMafalda a :Woman ;
+      :hasFather data:Gustav ;
+      :hasMother data:CarinaAxelsson .
+
+  data:KingFrederikX a :Man .
+
+  data:PrinceRichard a :Man ;
+      :hasBrother data:PrinceRobin .
+
+  data:PrinceRobin a :Man .
+
+  data:PrincessBenedikte a :Woman .
+
+  data:CarinaAxelsson a :Woman .
+
+  data:Gustav a :Man ;
       :hasBirthYear 1969 ;
-      :hasDaughter data:Princess_Mafalda ;
-      :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-      :hasMother data:Princess_Benedikte_of_Denmark ;
-      :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-          data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-      :hasSon data:Prince_Gustav_Albrecht .
+      :hasFather data:PrinceRichard ;
+      :hasMother data:PrincessBenedikte ;
+      :hasSister data:PrincessAlexandra,
+          data:PrincessNathalie .
 
-  data:Prince_Gustav_Albrecht a :Man,
-          :Person ;
-      :hasMother data:Carina_Axelsson .
+  data:PrincessAlexandra a :Woman .
 
-  data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg a :Man,
-          :Person .
-
-  data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
-          :Woman .
-
-  data:Princess_Benedikte_of_Denmark a :Person,
-          :Woman .
-
-  data:Princess_Mafalda a :Person,
-          :Woman ;
-      :hasMother data:Carina_Axelsson .
-
-  data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,
-          :Woman .
-
-  data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man,
-          :Person ;
-      :hasBrother data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg .
-
-  data:Carina_Axelsson a :Person,
-          :Woman .
+  data:PrincessNathalie a :Woman .
 
 
 
@@ -683,110 +762,230 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (3f4e675f-5f39-416f-9c21-71e07e4a4da0)
- Call ID: 3f4e675f-5f39-416f-9c21-71e07e4a4da0
+  ValidateShacl (68d07795-bfa8-49f3-b76d-2ced337254c1)
+ Call ID: 68d07795-bfa8-49f3-b76d-2ced337254c1
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:27
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg is assigned as the father of Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg but lacks the required :Ancestor or :Man class.
+      The person PrinceRichard is set as the father of Gustav, but PrinceRichard is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg', class=':Man')
+      AssignClass(PrinceRichard, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Carina_Axelsson is assigned as the mother of Prince_Gustav_Albrecht but lacks the required :Ancestor or :Woman class.
+      The person Gustav is set as the father of PrinceGustavAlbrecht, but Gustav is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carina_Axelsson', class=':Woman')
+      AssignClass(Gustav, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Princess_Benedikte_of_Denmark is assigned as the mother of Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg but lacks the required :Ancestor or :Woman class.
+      The person KingFrederikX is set as the father of PrinceVincentOfDenmark, but KingFrederikX is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Benedikte_of_Denmark', class=':Woman')
+      AssignClass(KingFrederikX, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg is assigned as the father of Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg but lacks the required :Ancestor or :Man class.
+      The person PrincessNathalie is set as the mother of KonstantinJohannsmann, but PrincessNathalie is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg', class=':Ancestor')
+      AssignClass(PrincessNathalie, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Carina_Axelsson is assigned as the mother of Princess_Mafalda but lacks the required :Ancestor or :Woman class.
+      The person PrincessBenedikte is set as the mother of Gustav, but PrincessBenedikte is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carina_Axelsson', class=':Woman')
+      AssignClass(PrincessBenedikte, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Carina_Axelsson is assigned as the mother of Prince_Gustav_Albrecht but lacks the required :Ancestor or :Woman class.
+      The person CarinaAxelsson is set as the mother of PrinceGustavAlbrecht, but CarinaAxelsson is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carina_Axelsson', class=':Ancestor')
+      AssignClass(CarinaAxelsson, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Benedikte_of_Denmark is assigned as the mother of Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg but lacks the required :Ancestor or :Woman class.
+      The person PrincessAlexandra is set as the mother of CountRichardVonPfeilUndKleinEllguth, but PrincessAlexandra is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Benedikte_of_Denmark', class=':Ancestor')
+      AssignClass(PrincessAlexandra, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg is assigned as the father of Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg but lacks the required :Ancestor or :Man class.
+      The person PrinceRichard is set as the father of Gustav, but PrinceRichard is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg', class=':Man')
+      AssignClass(PrinceRichard, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Carina_Axelsson is assigned as the mother of Princess_Mafalda but lacks the required :Ancestor or :Woman class.
+      The person Gustav is set as the father of PrinceGustavAlbrecht, but Gustav is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carina_Axelsson', class=':Ancestor')
+      AssignClass(Gustav, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Carina_Axelsson is assigned as the mother of Prince_Gustav_Albrecht but lacks the required :Ancestor or :Woman class.
+      The person Gustav is set as the father of PrincessMafalda, but Gustav is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carina_Axelsson', class=':Woman')
+      AssignClass(Gustav, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Princess_Benedikte_of_Denmark is assigned as the mother of Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg but lacks the required :Ancestor or :Woman class.
+      The person KingFrederikX is set as the father of PrinceVincentOfDenmark, but KingFrederikX is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Benedikte_of_Denmark', class=':Woman')
+      AssignClass(KingFrederikX, :Ancestor)
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Carina_Axelsson is assigned as the mother of Princess_Mafalda but lacks the required :Ancestor or :Woman class.
+      The person PrincessNathalie is set as the mother of KonstantinJohannsmann, but PrincessNathalie is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carina_Axelsson', class=':Ancestor')
+      AssignClass(PrincessNathalie, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person PrincessBenedikte is set as the mother of Gustav, but PrincessBenedikte is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(PrincessBenedikte, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person CarinaAxelsson is set as the mother of PrinceGustavAlbrecht, but CarinaAxelsson is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(CarinaAxelsson, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person CarinaAxelsson is set as the mother of PrincessMafalda, but CarinaAxelsson is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(CarinaAxelsson, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person PrincessAlexandra is set as the mother of CountRichardVonPfeilUndKleinEllguth, but PrincessAlexandra is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(PrincessAlexandra, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person PrinceRichard is set as the father of Gustav, but PrinceRichard is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(PrinceRichard, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Gustav is set as the father of PrinceGustavAlbrecht, but Gustav is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Gustav, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Gustav is set as the father of PrincessMafalda, but Gustav is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Gustav, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person KingFrederikX is set as the father of PrinceVincentOfDenmark, but KingFrederikX is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(KingFrederikX, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person PrincessNathalie is set as the mother of KonstantinJohannsmann, but PrincessNathalie is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(PrincessNathalie, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person PrincessBenedikte is set as the mother of Gustav, but PrincessBenedikte is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(PrincessBenedikte, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person CarinaAxelsson is set as the mother of PrinceGustavAlbrecht, but CarinaAxelsson is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(CarinaAxelsson, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person CarinaAxelsson is set as the mother of PrincessMafalda, but CarinaAxelsson is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(CarinaAxelsson, :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person PrincessAlexandra is set as the mother of CountRichardVonPfeilUndKleinEllguth, but PrincessAlexandra is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(PrincessAlexandra, :Ancestor)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Gustav is set as the father of PrincessMafalda, but Gustav is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Gustav, :Ancestor)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person CarinaAxelsson is set as the mother of PrincessMafalda, but CarinaAxelsson is not classified as an :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(CarinaAxelsson, :Ancestor)
 
 
 
@@ -795,39 +994,48 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (7994c016-124f-494e-96f5-dc8cad86f317)
- Call ID: 7994c016-124f-494e-96f5-dc8cad86f317
+  AssignClass (0689fb1b-aab2-4a90-9661-1b0a3f5436a3)
+ Call ID: 0689fb1b-aab2-4a90-9661-1b0a3f5436a3
+  Args:
+    source: :PrinceRichard
+    type: :Ancestor
+  AssignClass (5660f2d2-9817-4f81-a92d-27242adffe22)
+ Call ID: 5660f2d2-9817-4f81-a92d-27242adffe22
   Args:
     type: :Ancestor
-    source: Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg
-  AssignClass (31dfc080-0fb3-4c58-9795-d93c94f1e22e)
- Call ID: 31dfc080-0fb3-4c58-9795-d93c94f1e22e
+    source: :Gustav
+  AssignClass (868b16ea-df8a-4099-8ca1-a1f47f60f54e)
+ Call ID: 868b16ea-df8a-4099-8ca1-a1f47f60f54e
+  Args:
+    source: :KingFrederikX
+    type: :Ancestor
+  AssignClass (082b8f84-12f3-4e57-84f0-ed3130f2ba31)
+ Call ID: 082b8f84-12f3-4e57-84f0-ed3130f2ba31
   Args:
     type: :Ancestor
-    source: Princess_Benedikte_of_Denmark
-  AssignClass (a3e64c19-26f1-4ab6-b169-ebe863de41ed)
- Call ID: a3e64c19-26f1-4ab6-b169-ebe863de41ed
+    source: :PrincessNathalie
+  AssignClass (647e287d-fa48-452b-95ea-588f69c4a26c)
+ Call ID: 647e287d-fa48-452b-95ea-588f69c4a26c
   Args:
-    source: Carina_Axelsson
+    source: :PrincessBenedikte
     type: :Ancestor
-  AssignClass (44df1bfc-5276-4199-abbb-4c9c94f590b3)
- Call ID: 44df1bfc-5276-4199-abbb-4c9c94f590b3
+  AssignClass (81d5bf47-dbdd-495a-ba02-f6a0f54a7b56)
+ Call ID: 81d5bf47-dbdd-495a-ba02-f6a0f54a7b56
   Args:
     type: :Ancestor
-    source: Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg
-  AssignClass (519cbb28-11c7-4321-9ddf-4cf61abda375)
- Call ID: 519cbb28-11c7-4321-9ddf-4cf61abda375
+    source: :CarinaAxelsson
+  AssignClass (8763e47b-f3bb-454c-a9ec-085d8641ff09)
+ Call ID: 8763e47b-f3bb-454c-a9ec-085d8641ff09
   Args:
-    source: Prince_Gustav_Albrecht
+    source: :PrincessAlexandra
     type: :Ancestor
-  AssignClass (19b64fab-436c-4d54-80a1-e0deb6cfcf73)
- Call ID: 19b64fab-436c-4d54-80a1-e0deb6cfcf73
+  Finish (0d549979-c4a6-417b-8848-bfd09ef9be4b)
+ Call ID: 0d549979-c4a6-417b-8848-bfd09ef9be4b
   Args:
-    source: Princess_Mafalda
-    type: :Ancestor
-  ValidateShacl (65e1fcea-f6be-447f-a822-fdca0b876bfa)
- Call ID: 65e1fcea-f6be-447f-a822-fdca0b876bfa
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -856,50 +1064,65 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
-          :Man,
-          :Person ;
+  data:CountRichardVonPfeilUndKleinEllguth a :Man ;
+      :hasMother data:PrincessAlexandra .
+
+  data:KonstantinJohannsmann a :Man ;
+      :hasMother data:PrincessNathalie .
+
+  data:PrinceGustavAlbrecht a :Man ;
+      :hasFather data:Gustav ;
+      :hasMother data:CarinaAxelsson .
+
+  data:PrinceVincentOfDenmark a :Man ;
+      :hasFather data:KingFrederikX .
+
+  data:PrincessMafalda a :Woman ;
+      :hasFather data:Gustav ;
+      :hasMother data:CarinaAxelsson .
+
+  data:KingFrederikX a :Ancestor,
+          :Man .
+
+  data:PrinceRichard a :Ancestor,
+          :Man ;
+      :hasBrother data:PrinceRobin .
+
+  data:PrinceRobin a :Man .
+
+  data:PrincessBenedikte a :Ancestor,
+          :Woman .
+
+  data:CarinaAxelsson a :Ancestor,
+          :Woman .
+
+  data:Gustav a :Ancestor,
+          :Man ;
       :hasBirthYear 1969 ;
-      :hasDaughter data:Princess_Mafalda ;
-      :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
-      :hasMother data:Princess_Benedikte_of_Denmark ;
-      :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
-          data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
-      :hasSon data:Prince_Gustav_Albrecht .
+      :hasFather data:PrinceRichard ;
+      :hasMother data:PrincessBenedikte ;
+      :hasSister data:PrincessAlexandra,
+          data:PrincessNathalie .
 
-  data:Prince_Gustav_Albrecht a :Ancestor,
-          :Man,
-          :Person ;
-      :hasMother data:Carina_Axelsson .
-
-  data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg a :Man,
-          :Person .
-
-  data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
+  data:PrincessAlexandra a :Ancestor,
           :Woman .
 
-  data:Princess_Benedikte_of_Denmark a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Mafalda a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasMother data:Carina_Axelsson .
-
-  data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Person,
-          :Woman .
-
-  data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBrother data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg .
-
-  data:Carina_Axelsson a :Ancestor,
-          :Person,
+  data:PrincessNathalie a :Ancestor,
           :Woman .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (af7915cd-3423-43f1-a269-95181e073128)
+ Call ID: af7915cd-3423-43f1-a269-95181e073128
+  Args:
 
 ================================= Tool Message =================================
 
@@ -909,6 +1132,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (50482ca0-e023-4f51-89dd-ec213543890b)
- Call ID: 50482ca0-e023-4f51-89dd-ec213543890b
+  Finish (d70d8cf0-d799-42fe-8b13-74a6b0837ad2)
+ Call ID: d70d8cf0-d799-42fe-8b13-74a6b0837ad2
   Args:

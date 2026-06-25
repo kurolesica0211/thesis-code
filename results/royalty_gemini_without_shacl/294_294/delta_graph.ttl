@@ -2,25 +2,39 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Christian_of_Hanover a :Man,
+data:CarolinePrincessOfHanover a :Person,
+        :Woman .
+
+data:EkaterinaIgorievnaMalysheva a :Person,
+        :Woman ;
+    :hasBirthYear 1986 ;
+    :hasFather data:IgorMalyshev ;
+    :hasMother data:SvetlanaMalysheva .
+
+data:ErnstAugust_HereditaryPrinceOfHanover a :Man,
         :Person ;
-    :hasBirthYear 1985 ;
-    :hasFather data:Ernst_August_Prinz_von_Hannover ;
+    :hasBirthYear 1983 ;
+    :hasFather data:ErnstAugust_PrinceOfHanover ;
     :hasMarriageYear 2017 ;
-    :hasMother data:Chantal_Hochuli ;
-    :hasRelation data:Alessandra_de_Osma .
+    :hasMother data:ChantalHochuli ;
+    :isSiblingOf data:AlexandraOfHanover,
+        data:ChristianOfHanover .
 
-data:Alessandra_de_Osma a :Person,
+data:AlexandraOfHanover a :Person,
         :Woman .
 
-data:Chantal_Hochuli a :Person,
+data:ChantalHochuli a :Person,
         :Woman .
 
-data:Ernst_August_Prinz_von_Hannover a :Man,
-        :Person ;
-    :hasMarriageYear 1999 ;
-    :hasRelation data:Princess_Caroline_of_Monaco .
+data:ChristianOfHanover a :Man,
+        :Person .
 
-data:Princess_Caroline_of_Monaco a :Person,
+data:ErnstAugust_PrinceOfHanover a :Man,
+        :Person .
+
+data:IgorMalyshev a :Man,
+        :Person .
+
+data:SvetlanaMalysheva a :Person,
         :Woman .
 

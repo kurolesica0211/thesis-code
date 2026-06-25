@@ -101,6 +101,8 @@ She was German Kaiser Wilhelm II's candidate for a bride for King Alfonso XIII o
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -116,39 +118,9 @@ She was German Kaiser Wilhelm II's candidate for a bride for King Alfonso XIII o
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -163,6 +135,23 @@ She was German Kaiser Wilhelm II's candidate for a bride for King Alfonso XIII o
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -180,6 +169,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -247,29 +251,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -278,6 +274,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -290,6 +294,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -298,17 +304,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -336,6 +344,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -351,146 +443,182 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (6474c3ca-9c61-40f1-a0d2-166e7346f094)
- Call ID: 6474c3ca-9c61-40f1-a0d2-166e7346f094
+  AssignClass (67dd592c-0943-46e7-b2e5-3cfc4f1e9b90)
+ Call ID: 67dd592c-0943-46e7-b2e5-3cfc4f1e9b90
   Args:
-    source: :MarieAntoinetteOfMecklenburgSchwerin
-    type: :Person
-  AssignClass (f49b133f-e999-4c42-bd40-eeb226a3739a)
- Call ID: f49b133f-e999-4c42-bd40-eeb226a3739a
-  Args:
+    source: :Marie_Antoinette_of_Mecklenburg-Schwerin
     type: :Woman
-    source: :MarieAntoinetteOfMecklenburgSchwerin
-  AddLiteral (aa72f3b0-ce01-44e6-8ca8-88c255c73643)
- Call ID: aa72f3b0-ce01-44e6-8ca8-88c255c73643
+  AssignClass (9b58b0b3-df29-445f-acc2-53ca4e291cf3)
+ Call ID: 9b58b0b3-df29-445f-acc2-53ca4e291cf3
   Args:
-    literal_type: xsd:string
-    source: :MarieAntoinetteOfMecklenburgSchwerin
+    type: :Person
+    source: :Marie_Antoinette_of_Mecklenburg-Schwerin
+  AddLiteral (95ff62ea-51a5-4d0c-a42f-2dc4980e6954)
+ Call ID: 95ff62ea-51a5-4d0c-a42f-2dc4980e6954
+  Args:
     literal_value: Manette
+    source: :Marie_Antoinette_of_Mecklenburg-Schwerin
+    literal_type: xsd:string
     relation: :alsoKnownAs
-  AddLiteral (073e5a54-7992-4a99-a283-61585bf2a44a)
- Call ID: 073e5a54-7992-4a99-a283-61585bf2a44a
+  AddLiteral (163e29fb-667e-47d4-96b6-66c285ad5e75)
+ Call ID: 163e29fb-667e-47d4-96b6-66c285ad5e75
   Args:
-    literal_type: xsd:integer
     relation: :hasBirthYear
     literal_value: 1884
-    source: :MarieAntoinetteOfMecklenburgSchwerin
-  AddLiteral (35edea93-2686-4cb9-ac5a-de9cf3529b1a)
- Call ID: 35edea93-2686-4cb9-ac5a-de9cf3529b1a
-  Args:
+    source: :Marie_Antoinette_of_Mecklenburg-Schwerin
     literal_type: xsd:integer
-    literal_value: 1944
-    source: :MarieAntoinetteOfMecklenburgSchwerin
+  AddLiteral (a26b90eb-2761-481a-b222-fc4120e9bdeb)
+ Call ID: a26b90eb-2761-481a-b222-fc4120e9bdeb
+  Args:
     relation: :hasDeathYear
-  AssignClass (9b6cae36-51ec-48a7-8f39-a0155151668a)
- Call ID: 9b6cae36-51ec-48a7-8f39-a0155151668a
+    literal_value: 1944
+    literal_type: xsd:integer
+    source: :Marie_Antoinette_of_Mecklenburg-Schwerin
+  AssignClass (6289012e-e35d-4ed5-bfd6-892c762968ad)
+ Call ID: 6289012e-e35d-4ed5-bfd6-892c762968ad
   Args:
-    source: :DukePaulFrederickOfMecklenburg
-    type: :Person
-  AssignClass (6cf1b6b0-1db7-4ae4-821c-ea5493d4ed85)
- Call ID: 6cf1b6b0-1db7-4ae4-821c-ea5493d4ed85
-  Args:
-    source: :DukePaulFrederickOfMecklenburg
+    source: :Paul_Frederick_of_Mecklenburg
     type: :Man
-  AssignClass (569945af-372c-41d5-8074-e005aa6eb6ef)
- Call ID: 569945af-372c-41d5-8074-e005aa6eb6ef
+  AssignClass (81142ded-7889-4f7e-8b37-86193a793472)
+ Call ID: 81142ded-7889-4f7e-8b37-86193a793472
   Args:
+    source: :Paul_Frederick_of_Mecklenburg
     type: :Person
-    source: :PrincessMarieOfWindischGraetz
-  AssignClass (c0906287-2648-4382-8d5c-da57897d8ce7)
- Call ID: c0906287-2648-4382-8d5c-da57897d8ce7
+  AssignClass (8002bdc0-77b1-45ee-9664-139b5fa5bb54)
+ Call ID: 8002bdc0-77b1-45ee-9664-139b5fa5bb54
   Args:
     type: :Woman
-    source: :PrincessMarieOfWindischGraetz
-  AddTriple (5073508a-230d-43e2-9696-cbfb6b778766)
- Call ID: 5073508a-230d-43e2-9696-cbfb6b778766
+    source: :Marie_of_Windisch-Graetz
+  AssignClass (7c5a2c14-4115-4543-9120-194e3e292646)
+ Call ID: 7c5a2c14-4115-4543-9120-194e3e292646
   Args:
-    source: :MarieAntoinetteOfMecklenburgSchwerin
+    source: :Marie_of_Windisch-Graetz
+    type: :Person
+  AddTriple (d4bbe354-5fb4-4437-92e0-c20421374c99)
+ Call ID: d4bbe354-5fb4-4437-92e0-c20421374c99
+  Args:
+    target: :Paul_Frederick_of_Mecklenburg
+    source: :Marie_Antoinette_of_Mecklenburg-Schwerin
     relation: :hasFather
-    target: :DukePaulFrederickOfMecklenburg
-  AddTriple (49b49e87-e58f-4bac-9340-ef72e344ad02)
- Call ID: 49b49e87-e58f-4bac-9340-ef72e344ad02
+  AddTriple (2b4eb412-c799-49b6-8d53-5c5754feb0ac)
+ Call ID: 2b4eb412-c799-49b6-8d53-5c5754feb0ac
   Args:
+    source: :Marie_Antoinette_of_Mecklenburg-Schwerin
+    target: :Marie_of_Windisch-Graetz
     relation: :hasMother
-    target: :PrincessMarieOfWindischGraetz
-    source: :MarieAntoinetteOfMecklenburgSchwerin
-  AssignClass (6bf80cd5-de8e-42d6-a68d-62bdb5c1bf4e)
- Call ID: 6bf80cd5-de8e-42d6-a68d-62bdb5c1bf4e
+  AssignClass (9e622c64-a884-4514-93cf-96a362a5ca8c)
+ Call ID: 9e622c64-a884-4514-93cf-96a362a5ca8c
   Args:
-    source: :DukePaulFriedrichOfMecklenburg
-    type: :Person
-  AssignClass (4656f2d1-9e71-4462-bbdb-8a00a24704cf)
- Call ID: 4656f2d1-9e71-4462-bbdb-8a00a24704cf
-  Args:
-    source: :DukePaulFriedrichOfMecklenburg
     type: :Man
-  AssignClass (839fd4da-e9d7-4a5b-a750-b497fdee86b0)
- Call ID: 839fd4da-e9d7-4a5b-a750-b497fdee86b0
+    source: :Paul_Friedrich_of_Mecklenburg
+  AssignClass (8f41b9db-2f6a-4637-96cb-b8c3cb3cb04a)
+ Call ID: 8f41b9db-2f6a-4637-96cb-b8c3cb3cb04a
   Args:
     type: :Person
-    source: :DuchessMariaLuiseOfMecklenburgSchwerin
-  AssignClass (45c6c5b7-e299-498c-bc99-ed82c737b56f)
- Call ID: 45c6c5b7-e299-498c-bc99-ed82c737b56f
+    source: :Paul_Friedrich_of_Mecklenburg
+  AssignClass (a5397f6e-d813-42df-882c-729e27c1cf5d)
+ Call ID: a5397f6e-d813-42df-882c-729e27c1cf5d
   Args:
-    source: :DuchessMariaLuiseOfMecklenburgSchwerin
+    source: :Maria_Luise_of_Mecklenburg-Schwerin
     type: :Woman
-  AssignClass (7540ed23-9f40-438a-863d-31c7f74b6cea)
- Call ID: 7540ed23-9f40-438a-863d-31c7f74b6cea
+  AssignClass (c1aaa688-0521-4362-836b-e0431a755ef5)
+ Call ID: c1aaa688-0521-4362-836b-e0431a755ef5
   Args:
+    source: :Maria_Luise_of_Mecklenburg-Schwerin
     type: :Person
-    source: :DukeHeinrichBorwinOfMecklenburgSchwerin
-  AssignClass (38151e5e-96b0-40ae-9827-092a165eb394)
- Call ID: 38151e5e-96b0-40ae-9827-092a165eb394
+  AddLiteral (fb09ff9d-ff77-423c-bd73-20ff8d214c91)
+ Call ID: fb09ff9d-ff77-423c-bd73-20ff8d214c91
   Args:
-    source: :DukeHeinrichBorwinOfMecklenburgSchwerin
-    type: :Man
-  AssignClass (c4e5abf5-b559-4bb2-89d5-a89fe7da03b0)
- Call ID: c4e5abf5-b559-4bb2-89d5-a89fe7da03b0
+    literal_value: 1883
+    literal_type: xsd:integer
+    source: :Maria_Luise_of_Mecklenburg-Schwerin
+    relation: :hasBirthYear
+  AddLiteral (1fa9ab3b-9f98-47e8-9812-c28d41b24547)
+ Call ID: 1fa9ab3b-9f98-47e8-9812-c28d41b24547
   Args:
-    type: :Person
-    source: :DukeJosephOfMecklenburgSchwerin
-  AssignClass (25ae3e64-a254-4d77-9885-a214571ecee7)
- Call ID: 25ae3e64-a254-4d77-9885-a214571ecee7
-  Args:
-    source: :DukeJosephOfMecklenburgSchwerin
-    type: :Man
-  AddTriple (c8ca7074-74f1-495d-94b1-cd18cd12f096)
- Call ID: c8ca7074-74f1-495d-94b1-cd18cd12f096
-  Args:
-    source: :MarieAntoinetteOfMecklenburgSchwerin
-    target: :DukePaulFriedrichOfMecklenburg
-    relation: :isSiblingOf
-  AddTriple (348d0968-e1b1-491f-8968-a67ccfddd63f)
- Call ID: 348d0968-e1b1-491f-8968-a67ccfddd63f
-  Args:
-    source: :MarieAntoinetteOfMecklenburgSchwerin
-    target: :DuchessMariaLuiseOfMecklenburgSchwerin
-    relation: :isSiblingOf
-  AddTriple (a0d4c7bd-5022-4fd8-bd51-0952f51df51c)
- Call ID: a0d4c7bd-5022-4fd8-bd51-0952f51df51c
-  Args:
-    relation: :isSiblingOf
-    target: :DukeHeinrichBorwinOfMecklenburgSchwerin
-    source: :MarieAntoinetteOfMecklenburgSchwerin
-  AddTriple (347e5234-458e-4cca-adb1-f4ca6fd45d96)
- Call ID: 347e5234-458e-4cca-adb1-f4ca6fd45d96
-  Args:
-    relation: :isSiblingOf
-    target: :DukeJosephOfMecklenburgSchwerin
-    source: :MarieAntoinetteOfMecklenburgSchwerin
-  AssignClass (1d459331-1197-4d9b-8ca2-86e00070b5f9)
- Call ID: 1d459331-1197-4d9b-8ca2-86e00070b5f9
-  Args:
-    source: :FrederickFrancisIV
-    type: :Person
-  AssignClass (4af2e4f6-735d-44cf-a2fd-6c9f4e77285a)
- Call ID: 4af2e4f6-735d-44cf-a2fd-6c9f4e77285a
+    relation: :hasDeathYear
+    source: :Maria_Luise_of_Mecklenburg-Schwerin
+    literal_type: xsd:integer
+    literal_value: 1883
+  AssignClass (9410d3aa-410b-43c9-b3fa-3b18a50a2b0f)
+ Call ID: 9410d3aa-410b-43c9-b3fa-3b18a50a2b0f
   Args:
     type: :Man
-    source: :FrederickFrancisIV
-  Finish (3228173a-a544-4b20-9fd5-7a3b9f795b73)
- Call ID: 3228173a-a544-4b20-9fd5-7a3b9f795b73
+    source: :Heinrich_Borwin_of_Mecklenburg-Schwerin
+  AssignClass (faf619a1-1836-4b90-9026-6cdf438786cf)
+ Call ID: faf619a1-1836-4b90-9026-6cdf438786cf
   Args:
+    type: :Person
+    source: :Heinrich_Borwin_of_Mecklenburg-Schwerin
+  AddLiteral (d22798fd-7a22-46c6-bbae-9a8104a5c13d)
+ Call ID: d22798fd-7a22-46c6-bbae-9a8104a5c13d
+  Args:
+    literal_value: 1885
+    source: :Heinrich_Borwin_of_Mecklenburg-Schwerin
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (2d1cc4e3-8db8-4b25-9544-75c927f5a2cc)
+ Call ID: 2d1cc4e3-8db8-4b25-9544-75c927f5a2cc
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1942
+    literal_type: xsd:integer
+    source: :Heinrich_Borwin_of_Mecklenburg-Schwerin
+  AssignClass (0e4e240b-52e7-431f-a1d3-168d62401466)
+ Call ID: 0e4e240b-52e7-431f-a1d3-168d62401466
+  Args:
+    source: :Joseph_of_Mecklenburg-Schwerin
+    type: :Man
+  AssignClass (22b80b4b-ae6d-4383-a41b-c5574f55990b)
+ Call ID: 22b80b4b-ae6d-4383-a41b-c5574f55990b
+  Args:
+    type: :Person
+    source: :Joseph_of_Mecklenburg-Schwerin
+  AddLiteral (d641106c-7fd7-441f-b8b6-bbbe7fb4cd1f)
+ Call ID: d641106c-7fd7-441f-b8b6-bbbe7fb4cd1f
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1889
+    literal_type: xsd:integer
+    source: :Joseph_of_Mecklenburg-Schwerin
+  AddLiteral (a96bf11f-0db4-443f-8d86-71baf913d236)
+ Call ID: a96bf11f-0db4-443f-8d86-71baf913d236
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1889
+    literal_type: xsd:integer
+    source: :Joseph_of_Mecklenburg-Schwerin
+  AssignClass (171c12c7-c14c-4f0a-a449-8d317a52bd01)
+ Call ID: 171c12c7-c14c-4f0a-a449-8d317a52bd01
+  Args:
+    type: :Man
+    source: :Frederick_Francis_IV_of_Mecklenburg-Schwerin
+  AssignClass (2de0d099-8c19-4f88-a5d9-6b8401ab7e52)
+ Call ID: 2de0d099-8c19-4f88-a5d9-6b8401ab7e52
+  Args:
+    source: :Frederick_Francis_IV_of_Mecklenburg-Schwerin
+    type: :Person
+  AddTriple (72e8f641-9f36-47f2-9476-9d4bc9606ce6)
+ Call ID: 72e8f641-9f36-47f2-9476-9d4bc9606ce6
+  Args:
+    target: :Frederick_Francis_IV_of_Mecklenburg-Schwerin
+    source: :Marie_Antoinette_of_Mecklenburg-Schwerin
+    relation: :isBloodrelationOf
+  Finish (92a00ac6-70cd-487d-9bfc-3469e41fbeb6)
+ Call ID: 92a00ac6-70cd-487d-9bfc-3469e41fbeb6
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -595,38 +723,41 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:FrederickFrancisIV a :Man,
-          :Person .
+  data:Heinrich_Borwin_of_Mecklenburg-Schwerin a :Man,
+          :Person ;
+      :hasBirthYear 1885 ;
+      :hasDeathYear 1942 .
 
-  data:MarieAntoinetteOfMecklenburgSchwerin a :Person,
+  data:Joseph_of_Mecklenburg-Schwerin a :Man,
+          :Person ;
+      :hasBirthYear 1889 ;
+      :hasDeathYear 1889 .
+
+  data:Maria_Luise_of_Mecklenburg-Schwerin a :Person,
+          :Woman ;
+      :hasBirthYear 1883 ;
+      :hasDeathYear 1883 .
+
+  data:Marie_Antoinette_of_Mecklenburg-Schwerin a :Person,
           :Woman ;
       :alsoKnownAs "Manette"^^xsd:string ;
       :hasBirthYear 1884 ;
       :hasDeathYear 1944 ;
-      :hasFather data:DukePaulFrederickOfMecklenburg ;
-      :hasMother data:PrincessMarieOfWindischGraetz ;
-      :isSiblingOf data:DuchessMariaLuiseOfMecklenburgSchwerin,
-          data:DukeHeinrichBorwinOfMecklenburgSchwerin,
-          data:DukeJosephOfMecklenburgSchwerin,
-          data:DukePaulFriedrichOfMecklenburg .
+      :hasFather data:Paul_Frederick_of_Mecklenburg ;
+      :hasMother data:Marie_of_Windisch-Graetz ;
+      :isBloodrelationOf data:Frederick_Francis_IV_of_Mecklenburg-Schwerin .
 
-  data:DuchessMariaLuiseOfMecklenburgSchwerin a :Person,
+  data:Paul_Friedrich_of_Mecklenburg a :Man,
+          :Person .
+
+  data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
+          :Person .
+
+  data:Marie_of_Windisch-Graetz a :Person,
           :Woman .
 
-  data:DukeHeinrichBorwinOfMecklenburgSchwerin a :Man,
+  data:Paul_Frederick_of_Mecklenburg a :Man,
           :Person .
-
-  data:DukeJosephOfMecklenburgSchwerin a :Man,
-          :Person .
-
-  data:DukePaulFrederickOfMecklenburg a :Man,
-          :Person .
-
-  data:DukePaulFriedrichOfMecklenburg a :Man,
-          :Person .
-
-  data:PrincessMarieOfWindischGraetz a :Person,
-          :Woman .
 
 
 
@@ -638,8 +769,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (df8a2709-31f0-4d91-8049-8cc8e8d9d732)
- Call ID: df8a2709-31f0-4d91-8049-8cc8e8d9d732
+  ValidateShacl (09f0e1f7-758a-43db-86be-ac7198621983)
+ Call ID: 09f0e1f7-758a-43db-86be-ac7198621983
   Args:
 
 ================================= Tool Message =================================
@@ -651,49 +782,49 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'DukePaulFrederickOfMecklenburg' assigned to the 'hasFather' property of 'MarieAntoinetteOfMecklenburgSchwerin' is missing the required :Ancestor class.
+      The node Paul_Frederick_of_Mecklenburg does not have the required class :Ancestor assigned, which is mandatory for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(DukePaulFrederickOfMecklenburg, :Ancestor)
+      AssignClass(Paul_Frederick_of_Mecklenburg, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'PrincessMarieOfWindischGraetz' assigned to the 'hasMother' property of 'MarieAntoinetteOfMecklenburgSchwerin' is missing the required :Ancestor class.
+      The node Marie_of_Windisch-Graetz does not have the required class :Ancestor assigned, which is mandatory for the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessMarieOfWindischGraetz, :Ancestor)
+      AssignClass(Marie_of_Windisch-Graetz, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'DukePaulFrederickOfMecklenburg' assigned to the 'hasFather' property of 'MarieAntoinetteOfMecklenburgSchwerin' is missing the required :Ancestor class.
+      The node Paul_Frederick_of_Mecklenburg is missing the :Ancestor classification required to satisfy the :hasFather constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(DukePaulFrederickOfMecklenburg, :Ancestor)
+      AssignClass(Paul_Frederick_of_Mecklenburg, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'PrincessMarieOfWindischGraetz' assigned to the 'hasMother' property of 'MarieAntoinetteOfMecklenburgSchwerin' is missing the required :Ancestor class.
+      The node Marie_of_Windisch-Graetz is missing the :Ancestor classification required to satisfy the :hasMother constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessMarieOfWindischGraetz, :Ancestor)
+      AssignClass(Marie_of_Windisch-Graetz, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'DukePaulFrederickOfMecklenburg' assigned to the 'hasFather' property of 'MarieAntoinetteOfMecklenburgSchwerin' is missing the required :Ancestor class.
+      The node Paul_Frederick_of_Mecklenburg requires the :Ancestor class to be a valid value for the :hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(DukePaulFrederickOfMecklenburg, :Ancestor)
+      AssignClass(Paul_Frederick_of_Mecklenburg, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'PrincessMarieOfWindischGraetz' assigned to the 'hasMother' property of 'MarieAntoinetteOfMecklenburgSchwerin' is missing the required :Ancestor class.
+      The node Marie_of_Windisch-Graetz requires the :Ancestor class to be a valid value for the :hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessMarieOfWindischGraetz, :Ancestor)
+      AssignClass(Marie_of_Windisch-Graetz, :Ancestor)
 
 
 
@@ -702,19 +833,16 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (1f4ed89f-0e74-448d-9c2c-7b1d5ada1510)
- Call ID: 1f4ed89f-0e74-448d-9c2c-7b1d5ada1510
+  AssignClass (1285d680-a690-4450-8cec-fd09f58f0cbc)
+ Call ID: 1285d680-a690-4450-8cec-fd09f58f0cbc
   Args:
-    source: :DukePaulFrederickOfMecklenburg
     type: :Ancestor
-  AssignClass (ecbb7b6f-4726-4c50-a122-70a5c2adbbed)
- Call ID: ecbb7b6f-4726-4c50-a122-70a5c2adbbed
+    source: :Paul_Frederick_of_Mecklenburg
+  AssignClass (a441975d-3ce9-453d-b60b-228f90dcce23)
+ Call ID: a441975d-3ce9-453d-b60b-228f90dcce23
   Args:
-    source: :PrincessMarieOfWindischGraetz
+    source: :Marie_of_Windisch-Graetz
     type: :Ancestor
-  Finish (cff7f96d-4644-47ee-8427-00a648908ede)
- Call ID: cff7f96d-4644-47ee-8427-00a648908ede
-  Args:
 
 ================================= Tool Message =================================
 
@@ -727,53 +855,52 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:FrederickFrancisIV a :Man,
-          :Person .
+  data:Heinrich_Borwin_of_Mecklenburg-Schwerin a :Man,
+          :Person ;
+      :hasBirthYear 1885 ;
+      :hasDeathYear 1942 .
 
-  data:MarieAntoinetteOfMecklenburgSchwerin a :Person,
+  data:Joseph_of_Mecklenburg-Schwerin a :Man,
+          :Person ;
+      :hasBirthYear 1889 ;
+      :hasDeathYear 1889 .
+
+  data:Maria_Luise_of_Mecklenburg-Schwerin a :Person,
+          :Woman ;
+      :hasBirthYear 1883 ;
+      :hasDeathYear 1883 .
+
+  data:Marie_Antoinette_of_Mecklenburg-Schwerin a :Person,
           :Woman ;
       :alsoKnownAs "Manette"^^xsd:string ;
       :hasBirthYear 1884 ;
       :hasDeathYear 1944 ;
-      :hasFather data:DukePaulFrederickOfMecklenburg ;
-      :hasMother data:PrincessMarieOfWindischGraetz ;
-      :isSiblingOf data:DuchessMariaLuiseOfMecklenburgSchwerin,
-          data:DukeHeinrichBorwinOfMecklenburgSchwerin,
-          data:DukeJosephOfMecklenburgSchwerin,
-          data:DukePaulFriedrichOfMecklenburg .
+      :hasFather data:Paul_Frederick_of_Mecklenburg ;
+      :hasMother data:Marie_of_Windisch-Graetz ;
+      :isBloodrelationOf data:Frederick_Francis_IV_of_Mecklenburg-Schwerin .
 
-  data:DuchessMariaLuiseOfMecklenburgSchwerin a :Person,
-          :Woman .
-
-  data:DukeHeinrichBorwinOfMecklenburgSchwerin a :Man,
+  data:Paul_Friedrich_of_Mecklenburg a :Man,
           :Person .
 
-  data:DukeJosephOfMecklenburgSchwerin a :Man,
+  data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
           :Person .
 
-  data:DukePaulFrederickOfMecklenburg a :Ancestor,
-          :Man,
-          :Person .
-
-  data:DukePaulFriedrichOfMecklenburg a :Man,
-          :Person .
-
-  data:PrincessMarieOfWindischGraetz a :Ancestor,
+  data:Marie_of_Windisch-Graetz a :Ancestor,
           :Person,
           :Woman .
 
+  data:Paul_Frederick_of_Mecklenburg a :Ancestor,
+          :Man,
+          :Person .
 
 
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (5e976221-323a-4cb3-b3f3-f0b870f8c278)
- Call ID: 5e976221-323a-4cb3-b3f3-f0b870f8c278
+  ValidateShacl (2c78d9b6-55c5-44e3-a271-2b6bb9afa79a)
+ Call ID: 2c78d9b6-55c5-44e3-a271-2b6bb9afa79a
   Args:
 
 ================================= Tool Message =================================
@@ -784,6 +911,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (e2bde82b-bc8f-43eb-91e8-52b0b2fe579c)
- Call ID: e2bde82b-bc8f-43eb-91e8-52b0b2fe579c
+  Finish (3e4c4a0a-093f-4fca-b326-beadffb35847)
+ Call ID: 3e4c4a0a-093f-4fca-b326-beadffb35847
   Args:

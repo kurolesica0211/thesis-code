@@ -85,55 +85,37 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Zara Anne Elizabeth Tindall (née Phillips; born 15 May 1981) is a British equestrian, Olympian, and member of the British royal family.
-She is the daughter of Anne, Princess Royal, and Captain Mark Phillips, and the eldest niece of King Charles III.
-Tindall won the individual eventing world title at Aachen in 2006 and was later named BBC Sports Personality of the Year.
-She married former rugby union player Mike Tindall in 2011, and the couple have three children.
-Early life and education
+Princess Sophie Louise of Saxe-Weimar-Eisenach (20 March 1911 – 21 November 1988) was a princess of the House of Saxe-Weimar-Eisenach.
+She was born in Weimar, the eldest child and only daughter of William Ernest, Grand Duke of Saxe-Weimar-Eisenach, by his second wife, Princess Feodora of Saxe-Meiningen.
+As a relative of Wilhelmina of the Netherlands, Sophie was invited to the 1937 wedding of her daughter, Princess Juliana, as a bridesmaid.
+She became entangled in a diplomatic scandal however after the passports of Sophie and two other German princesses were withheld by the Nazi government.
+Though they were later released, Sophie opted out of attending at the last moment.
+In 1938 Sophie married Friedrich Günther, Prince of Schwarzburg, but the couple were divorced by the end of the year.
+Juliana's wedding
 
-Zara Anne Elizabeth Phillips was born at 8:15 pm on 15 May 1981 at St Mary's Hospital, London.
-Her first name was suggested by her uncle, Charles, the then Prince of Wales.
-Her godparents are her maternal uncle, Andrew Mountbatten-Windsor; the Countess of Lichfield; Helen, Lady Stewart, the wife of Sir Jackie Stewart; Andrew Parker Bowles; and Hugh Thomas.
-She has an elder brother, Peter, and two younger half-sisters, Felicity Wade (née Tonkin), from her father's affair with Heather Tonkin; and Stephanie Phillips, from his second marriage to Sandy Pflueger.
-Phillips attended Beaudesert Park School in Stroud, Gloucestershire, and Port Regis School in Shaftesbury, Dorset, before following other members of the royal family in attending Gordonstoun School in Moray, Scotland.
-Equestrianism
+Invitation
 
-After leaving university, Phillips began to pursue an equestrian career, following in the footsteps of her parents.
-Phillips missed the 2004 Summer Olympics in Athens after her horse was injured during training.
-Riding Toytown, Phillips won individual and team gold medals at the 2005 European Eventing Championship at Blenheim.
-The British Olympic Association selected Phillips and Toytown for the 2008 Olympic Games in Hong Kong; however, Toytown sustained an injury during training and she withdrew from the team.
-On 25 October 2008, Phillips fell from her horse, Tsunami II, at the 15th fence of a cross‐country event in Pau, France, breaking her right collarbone.
-In July 2010, Musto launched a range of equestrian clothing designed by Phillips, named ZP176 after her team number when she first represented Great Britain.
-Phillips competed at the 2012 London Olympic Games on High Kingdom, winning a silver medal in the team event.
-She stopped using her maiden name in March 2016 and competed as Zara Tindall for the first time during her unsuccessful attempt to qualify for the 2016 Rio Olympic Games.
-In 2017, Tindall finished third at the Kentucky Three-Day Event on High Kingdom, who retired from competition in 2018.
-Charity work
+Preparations for the wedding of Queen Wilhelmina of the Netherlands's only child Crown Princess Juliana to the German Prince Bernhard of Lippe-Biesterfeld were under way in 1937 when a small diplomatic scandal occurred.
+These included Sophie herself (her and Bernhard's second cousin), Duchess Thyra of Mecklenburg-Schwerin (her second cousin), Grand Duchess Kira Kirillovna of Russia (her first cousin once removed), Duchess Woizlawa of Mecklenburg (her cousin), and two of Bernhard's first cousins, Princess Sieglinde of Lippe and Princess Elisabeth of Lippe.
+Diplomatic scandal
 
-Tindall frequently supports and attends events for a range of charitable causes, particularly those connected with spinal injuries, equestrianism, and children's welfare.
-Tindall has appeared at events for The Caudwell Charitable Trust, which supports children with special needs, disabilities, and serious illnesses.
-The following year, she became patron of the Mark Davies Injured Riders Fund.
-In 2013, she visited Stroud Maternity Ward to mark its 60th anniversary, and in 2014 she lent her support to the #bringbackourgirls campaign.
-In April 2020, Tindall participated in the Equestrian Relief initiative to help provide additional personal protective equipment for National Health Service workers.
-Other activities
+Sophie became entangled in the small diplomatic scandal as preparations for the Dutch wedding commenced.
+The German Nazi government, apparently outraged that their flag was not used in festivities related to the wedding, refused to release the passports of Sophie, along with those of Bernard's cousins Princesses Sieglinde and Elizabeth zur Lippe.
+Though the passports were released, Sophie for unknown reasons revoked her acceptance and stated she could no longer attend the wedding at the last moment.
+Princess Sophie was replaced as bridesmaid by Baroness von Heeckeren van Kell, one of Juliana's ladies-in-waiting.
+Marriage
 
-In June 2015, Tindall launched an equestrian-themed jewellery collection, named "Zara Phillips Collection", in collaboration with Australian designer John Calleija.
-On 17 September 2022, during the period of official mourning for Queen Elizabeth II, Tindall joined her brother and six cousins to mount a 15-minute vigil around the coffin of the Queen, as it lay in state at Westminster Hall.
-On 19 September, with her husband Mike and daughter Mia, she joined other family members at the state funeral.
-Personal life
-
-Phillips met rugby union player Mike Tindall, who was then playing for the England national team, during the squad's Rugby World Cup-winning campaign in Australia in 2003.
-As required at the time by the Royal Marriages Act 1772, the Queen gave her consent to the marriage at a meeting of the Privy Council on 10 May 2011.
-A celebration was held on the royal yacht Britannia prior to the wedding.
-The Tindalls lived in Cheltenham, Gloucestershire, before moving to Aston Farm, a seven-bedroom property adjoining the Princess Royal's Gatcombe Park estate.
-Their first child, Mia Grace, was born on 17 January 2014 at Gloucestershire Royal Hospital and was 16th, later 23rd in the line of succession.
-Tindall is a godmother to Prince George of Wales, the son of her cousin William, Prince of Wales.
-In December 2000, before her marriage, Phillips was involved in a serious car crash near Bourton-on-the-Water, escaping injury after overturning her Land Rover.
+On 7 March 1938 at Heinrichau, Schlesien, Sophie married Friedrich Günther, Prince of Schwarzburg.
+Consequently, his sister Marie Antoinette controversially succeeded him as Princess of Schwarzburg.
+Sophie died on 21 November 1988 in Hamburg.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -149,39 +131,9 @@ In December 2000, before her marriage, Phillips was involved in a serious car cr
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -196,6 +148,23 @@ In December 2000, before her marriage, Phillips was involved in a serious car cr
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -213,6 +182,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,29 +264,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -311,6 +287,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -323,6 +307,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -331,17 +317,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -369,6 +357,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -384,89 +456,134 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ec2f3a99-dde5-4e47-9ec4-423a51899179)
- Call ID: ec2f3a99-dde5-4e47-9ec4-423a51899179
+  AssignClass (56996268-b87a-4cbf-b6da-8c47117b164f)
+ Call ID: 56996268-b87a-4cbf-b6da-8c47117b164f
   Args:
-    source: Zara Tindall
+    source: :SophieLouiseOfSaxeWeimarEisenach
     type: :Woman
-  AssignClass (02e45843-df16-4986-802e-d40add2eddb1)
- Call ID: 02e45843-df16-4986-802e-d40add2eddb1
+  AssignClass (c8ae9d11-8a01-4efe-8707-ac52245336eb)
+ Call ID: c8ae9d11-8a01-4efe-8707-ac52245336eb
   Args:
-    source: Anne, Princess Royal
-    type: :Woman
-  AssignClass (02de73c3-7867-4434-ae79-3aa64ab786c5)
- Call ID: 02de73c3-7867-4434-ae79-3aa64ab786c5
+    source: :SophieLouiseOfSaxeWeimarEisenach
+    type: :Person
+  AddLiteral (fbe7ba23-e84c-44c9-9882-4450948f48ec)
+ Call ID: fbe7ba23-e84c-44c9-9882-4450948f48ec
   Args:
-    source: Mark Phillips
-    type: :Man
-  AssignClass (8eee695b-d1bd-4e70-be83-d943bbf6757c)
- Call ID: 8eee695b-d1bd-4e70-be83-d943bbf6757c
-  Args:
-    type: :Man
-    source: Mike Tindall
-  AssignClass (276ec9ac-0f3e-4495-8183-b0c21df491c1)
- Call ID: 276ec9ac-0f3e-4495-8183-b0c21df491c1
-  Args:
-    type: :Man
-    source: Peter Phillips
-  AssignClass (8710c9bc-93a8-4cbd-b36f-02264b3248bf)
- Call ID: 8710c9bc-93a8-4cbd-b36f-02264b3248bf
-  Args:
-    source: Mia Grace Tindall
-    type: :Woman
-  AddLiteral (7171e9d7-78f3-4cc9-b057-cc140c896300)
- Call ID: 7171e9d7-78f3-4cc9-b057-cc140c896300
-  Args:
-    source: Zara Tindall
-    literal_value: 1981
     relation: :hasBirthYear
+    literal_value: 1911
+    source: :SophieLouiseOfSaxeWeimarEisenach
     literal_type: xsd:integer
-  AddTriple (585400d5-fab6-494d-8ed9-5327ad8be3ba)
- Call ID: 585400d5-fab6-494d-8ed9-5327ad8be3ba
+  AddLiteral (ecb860bf-f778-4b09-be7e-ed871a97e9e6)
+ Call ID: ecb860bf-f778-4b09-be7e-ed871a97e9e6
   Args:
-    target: Anne, Princess Royal
-    relation: :hasMother
-    source: Zara Tindall
-  AddTriple (76f6f626-9c9f-4db1-b19f-1802decfb191)
- Call ID: 76f6f626-9c9f-4db1-b19f-1802decfb191
+    source: :SophieLouiseOfSaxeWeimarEisenach
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1988
+  AssignClass (4802d620-a57b-42f7-8854-ce8a7efc7130)
+ Call ID: 4802d620-a57b-42f7-8854-ce8a7efc7130
   Args:
+    source: :WilliamErnestGrandDukeOfSaxeWeimarEisenach
+    type: :Man
+  AssignClass (f13997b5-9a29-4063-8f7a-321fb3600eef)
+ Call ID: f13997b5-9a29-4063-8f7a-321fb3600eef
+  Args:
+    source: :WilliamErnestGrandDukeOfSaxeWeimarEisenach
+    type: :Person
+  AssignClass (722c4376-a9a1-4523-82ac-5c917642172b)
+ Call ID: 722c4376-a9a1-4523-82ac-5c917642172b
+  Args:
+    source: :WilliamErnestGrandDukeOfSaxeWeimarEisenach
+    type: :Ancestor
+  AssignClass (3dc28e51-a3c5-4a79-9fde-de54676fb4ab)
+ Call ID: 3dc28e51-a3c5-4a79-9fde-de54676fb4ab
+  Args:
+    source: :PrincessFeodoraOfSaxeMeiningen
+    type: :Woman
+  AssignClass (bf6698c6-5903-469c-86d8-0c7455eaad77)
+ Call ID: bf6698c6-5903-469c-86d8-0c7455eaad77
+  Args:
+    source: :PrincessFeodoraOfSaxeMeiningen
+    type: :Person
+  AssignClass (fb162a3d-f092-401c-9e41-36c55621a3cd)
+ Call ID: fb162a3d-f092-401c-9e41-36c55621a3cd
+  Args:
+    source: :PrincessFeodoraOfSaxeMeiningen
+    type: :Ancestor
+  AddTriple (3753a474-679e-491b-982f-fe6d96e8a016)
+ Call ID: 3753a474-679e-491b-982f-fe6d96e8a016
+  Args:
+    source: :SophieLouiseOfSaxeWeimarEisenach
     relation: :hasFather
-    source: Zara Tindall
-    target: Mark Phillips
-  AddTriple (3f6cf601-0a44-4a73-9a3a-43e63f4e2fd5)
- Call ID: 3f6cf601-0a44-4a73-9a3a-43e63f4e2fd5
+    target: :WilliamErnestGrandDukeOfSaxeWeimarEisenach
+  AddTriple (98dea6a1-e5f5-443c-bb04-25e580e6d19f)
+ Call ID: 98dea6a1-e5f5-443c-bb04-25e580e6d19f
   Args:
-    source: Zara Tindall
-    relation: :hasBrother
-    target: Peter Phillips
-  AddLiteral (a34e6d4a-8fea-4d09-a416-8a00ebea8c1c)
- Call ID: a34e6d4a-8fea-4d09-a416-8a00ebea8c1c
+    source: :SophieLouiseOfSaxeWeimarEisenach
+    target: :PrincessFeodoraOfSaxeMeiningen
+    relation: :hasMother
+  AssignClass (8d49aaed-6060-4c08-87af-871b63e86dbf)
+ Call ID: 8d49aaed-6060-4c08-87af-871b63e86dbf
   Args:
-    source: Zara Tindall
+    source: :FriedrichGuntherPrinceOfSchwarzburg
+    type: :Man
+  AssignClass (e5584397-1d4e-46c5-b5b7-e07ca066320e)
+ Call ID: e5584397-1d4e-46c5-b5b7-e07ca066320e
+  Args:
+    source: :FriedrichGuntherPrinceOfSchwarzburg
+    type: :Person
+  AddLiteral (30b64b92-68e1-49bb-a992-61411ffd359b)
+ Call ID: 30b64b92-68e1-49bb-a992-61411ffd359b
+  Args:
+    literal_value: 1938
     relation: :hasMarriageYear
     literal_type: xsd:integer
-    literal_value: 2011
-  AddTriple (8ac779f1-4674-4f3b-a852-e0888ede8af9)
- Call ID: 8ac779f1-4674-4f3b-a852-e0888ede8af9
+    source: :SophieLouiseOfSaxeWeimarEisenach
+  AddTriple (0d0b36b8-b71e-4e7f-adb9-c8e932c54cc0)
+ Call ID: 0d0b36b8-b71e-4e7f-adb9-c8e932c54cc0
   Args:
+    target: :FriedrichGuntherPrinceOfSchwarzburg
     relation: :hasRelation
-    source: Zara Tindall
-    target: Mike Tindall
-  AddTriple (2f6e84cc-ef6f-425c-a2fb-033bab6bbf33)
- Call ID: 2f6e84cc-ef6f-425c-a2fb-033bab6bbf33
+    source: :SophieLouiseOfSaxeWeimarEisenach
+  AssignClass (5c35e9e7-a575-4da5-ba39-1cac9492c312)
+ Call ID: 5c35e9e7-a575-4da5-ba39-1cac9492c312
   Args:
-    relation: :hasChild
-    source: Zara Tindall
-    target: Mia Grace Tindall
-  AddTriple (38b47984-4de9-4d95-9266-d2b1647be2bf)
- Call ID: 38b47984-4de9-4d95-9266-d2b1647be2bf
+    source: :MarieAntoinetteOfSchwarzburg
+    type: :Woman
+  AssignClass (f8dd0e22-6816-436a-ba38-11b530f5ecdb)
+ Call ID: f8dd0e22-6816-436a-ba38-11b530f5ecdb
   Args:
-    source: Mike Tindall
-    relation: :hasChild
-    target: Mia Grace Tindall
-  Finish (99c330d8-297a-4969-bccd-2022a8ca592f)
- Call ID: 99c330d8-297a-4969-bccd-2022a8ca592f
+    source: :MarieAntoinetteOfSchwarzburg
+    type: :Person
+  AddTriple (da04131c-f4bf-41c6-968f-3629b7b5a3be)
+ Call ID: da04131c-f4bf-41c6-968f-3629b7b5a3be
   Args:
+    source: :FriedrichGuntherPrinceOfSchwarzburg
+    relation: :hasSister
+    target: :MarieAntoinetteOfSchwarzburg
+  Finish (3a096561-f1e0-4511-90b7-208247311afb)
+ Call ID: 3a096561-f1e0-4511-90b7-208247311afb
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -527,25 +644,29 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Zara_Tindall a :Woman ;
-      :hasBirthYear 1981 ;
-      :hasBrother data:Peter_Phillips ;
-      :hasChild data:Mia_Grace_Tindall ;
-      :hasFather data:Mark_Phillips ;
-      :hasMarriageYear 2011 ;
-      :hasMother data:Anne%2C_Princess_Royal ;
-      :hasRelation data:Mike_Tindall .
+  data:SophieLouiseOfSaxeWeimarEisenach a :Person,
+          :Woman ;
+      :hasBirthYear 1911 ;
+      :hasDeathYear 1988 ;
+      :hasFather data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+      :hasMarriageYear 1938 ;
+      :hasMother data:PrincessFeodoraOfSaxeMeiningen ;
+      :hasRelation data:FriedrichGuntherPrinceOfSchwarzburg .
 
-  data:Anne%2C_Princess_Royal a :Woman .
+  data:FriedrichGuntherPrinceOfSchwarzburg a :Man,
+          :Person ;
+      :hasSister data:MarieAntoinetteOfSchwarzburg .
 
-  data:Mark_Phillips a :Man .
+  data:MarieAntoinetteOfSchwarzburg a :Person,
+          :Woman .
 
-  data:Mike_Tindall a :Man ;
-      :hasChild data:Mia_Grace_Tindall .
+  data:PrincessFeodoraOfSaxeMeiningen a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Peter_Phillips a :Man .
-
-  data:Mia_Grace_Tindall a :Woman .
+  data:WilliamErnestGrandDukeOfSaxeWeimarEisenach a :Ancestor,
+          :Man,
+          :Person .
 
 
 
@@ -557,129 +678,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (adea1c65-878b-43c7-9d02-9967efdb9149)
- Call ID: adea1c65-878b-43c7-9d02-9967efdb9149
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:6
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mark_Phillips is assigned as the hasFather of Zara_Tindall, but it lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Mark_Phillips, class: :Ancestor)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Anne, Princess Royal is assigned as the hasMother of Zara_Tindall, but it lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Anne%2C_Princess_Royal, class: :Ancestor)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mark_Phillips is assigned as the hasFather of Zara_Tindall, but it lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Mark_Phillips, class: :Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Anne, Princess Royal is assigned as the hasMother of Zara_Tindall, but it lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Anne%2C_Princess_Royal, class: :Ancestor)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Mark_Phillips is assigned as the hasFather of Zara_Tindall, but it lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Mark_Phillips, class: :Ancestor)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Anne, Princess Royal is assigned as the hasMother of Zara_Tindall, but it lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: Anne%2C_Princess_Royal, class: :Ancestor)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (0b251268-a553-42cd-8ff2-73118798a29c)
- Call ID: 0b251268-a553-42cd-8ff2-73118798a29c
-  Args:
-    source: Mark Phillips
-    type: :Ancestor
-  AssignClass (672809be-7bdf-4bb1-b20d-7e1d3638e6c2)
- Call ID: 672809be-7bdf-4bb1-b20d-7e1d3638e6c2
-  Args:
-    source: Anne, Princess Royal
-    type: :Ancestor
-  Finish (d1df4978-e6f3-40b9-ba14-798f7c884225)
- Call ID: d1df4978-e6f3-40b9-ba14-798f7c884225
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Zara_Tindall a :Woman ;
-      :hasBirthYear 1981 ;
-      :hasBrother data:Peter_Phillips ;
-      :hasChild data:Mia_Grace_Tindall ;
-      :hasFather data:Mark_Phillips ;
-      :hasMarriageYear 2011 ;
-      :hasMother data:Anne%2C_Princess_Royal ;
-      :hasRelation data:Mike_Tindall .
-
-  data:Anne%2C_Princess_Royal a :Ancestor,
-          :Woman .
-
-  data:Mark_Phillips a :Ancestor,
-          :Man .
-
-  data:Mike_Tindall a :Man ;
-      :hasChild data:Mia_Grace_Tindall .
-
-  data:Peter_Phillips a :Man .
-
-  data:Mia_Grace_Tindall a :Woman .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (41ef81cf-49cd-44ac-8eb4-ec13ebaf3f7b)
- Call ID: 41ef81cf-49cd-44ac-8eb4-ec13ebaf3f7b
+  ValidateShacl (8db0a1c4-98cf-4675-a6e0-25abd96a5450)
+ Call ID: 8db0a1c4-98cf-4675-a6e0-25abd96a5450
   Args:
 
 ================================= Tool Message =================================
@@ -690,6 +690,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (f34fa443-c71c-4de0-adb6-343be1452a5b)
- Call ID: f34fa443-c71c-4de0-adb6-343be1452a5b
+  Finish (1559cefe-ef20-4bbf-88a8-c0122baf9f92)
+ Call ID: 1559cefe-ef20-4bbf-88a8-c0122baf9f92
   Args:

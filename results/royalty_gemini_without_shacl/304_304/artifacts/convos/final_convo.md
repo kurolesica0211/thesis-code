@@ -69,27 +69,86 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Alexander Mountstuart Elphinstone, 19th Lord Elphinstone, 5th Baron Elphinstone (born 15 April 1980), is a Scottish peer in both the Peerage of Scotland and the Peerage of the United Kingdom.
-Early life and family
+Prince Friso of Orange-Nassau (Dutch: Johan Friso Bernhard Christiaan David van Oranje-Nassau van Amsberg; 25 September 1968 – 12 August 2013) was the second son of Queen Beatrix of the Netherlands and Claus von Amsberg, and younger brother of King Willem-Alexander.
+On 17 February 2012, Prince Friso was buried under an avalanche in Lech, Austria, while skiing off piste.
+On 12 August 2013, one and a half years after the accident, Prince Friso died from complications.
+Early life and education
 
-Lord Elphinstone is the son of James Elphinstone, 18th Lord Elphinstone, and Willa Mary Gabrielle Chetwode.
-His mother is the daughter of Major George Chetwode and Lady Willa Elliot-Murray-Kynynmound, daughter of Victor Elliot-Murray-Kynynmound, 5th Earl of Minto.
-Lord Elphinstone's paternal grandfather, Rev. Hon.
-Andrew Elphinstone, was a first cousin of Elizabeth II through his mother, the former Lady Mary Bowes-Lyon, who was an elder sister of Queen Elizabeth The Queen Mother.
-Notes
+Johan Friso Bernhard Christiaan David was born on 25 September 1968 at the Academic Hospital Utrecht (now the University Medical Center Utrecht) in Utrecht, Netherlands.
+He was the second son of Princess Beatrix and Prince Claus, and grandson of Queen Juliana of the Netherlands and Prince Bernhard.
+He had one older brother, current King Willem-Alexander of the Netherlands (b. 1967), and one younger brother, Prince Constantijn (b. 1969).
+His titles at birth were Prince of the Netherlands, Prince of Orange-Nassau, and Jonkheer van Amsberg.
+Prince Friso was baptized on 28 December 1968 in the Dom Church in Utrecht.
+His godparents were Prince Harald of Norway, Johan Christian Baron von Jenisch, Herman van Roijen, Queen Juliana of the Netherlands and Christina von Amsberg.
+Work
+
+Prince Friso worked from 1995 to 1996 at the Amsterdam branch of the international management consultancy McKinsey.
+After completing an MBA-programme at INSEAD, Prince Friso worked from 1998 to 2003 as a vice president at Goldman Sachs International in London.
+From October 2006, Prince Friso was managing director in the London office of a private investment and advisory firm, Wolfensohn & Company.
+Prince Friso was a co-founder of the MRI Centre in Amsterdam and was also a founding shareholder of Wizzair, the largest low-cost airline in Eastern Europe.
+He was honorary chairman of the Prince Claus Fund for Culture and Development (a position he held together with his younger brother, Prince Constantijn).
+Prior to his accident, Prince Friso was working as a chief financial officer for URENCO, a uranium enrichment company.
+Marriage and children
+
+On 30 June 2003, it was announced that Prince Friso was to marry Mabel Wisse Smit.
+The Dutch cabinet, however, did not seek permission from parliament for this marriage, a constitutional requirement if Prince Friso was to remain a member of the Dutch Royal House and in line of succession for the throne; at the time, he was second in line after his older brother, Willem-Alexander.
+The Prime Minister Jan Peter Balkenende explained that this was due to discussions with Mabel Wisse Smit in October 2003, when she had admitted that her previous statements about an alleged relationship with Klaas Bruinsma (1953–1991), a known Dutch drug baron, had not been complete and accurate.
+They nevertheless married at Oude Kerk (Delft) on 24 April 2004, and Mabel Wisse Smit became a member of the Dutch Royal Family but not a member of the Dutch Royal House.
+Considering that his elder brother King Willem-Alexander has three daughters, Prince Friso's exclusion from the succession was unlikely to have an effect on the monarchy in the Netherlands.
+After their marriage, Prince Friso and his wife Princess Mabel set up home in London, in the suburb of Kew.
+The couple's first daughter, Countess Emma Luana Ninette Sophie of Orange-Nassau, Jonkvrouwe van Amsberg, was born on 26 March 2005 in London.
+Their second daughter, Countess Joanna Zaria Nicoline Milou of Orange-Nassau, Jonkvrouwe van Amsberg, was born on 18 June 2006, also in London.
+Avalanche accident
+
+Accident
+
+On 17 February 2012, Prince Friso was buried under an avalanche in Lech, Austria, and he was taken to a hospital in Innsbruck.
+According to a formal statement of the Netherlands Government Information Service (RVD), a prognosis could be given only after some days.
+The prince's condition was described as "stable, but critical".
+Resulting complications
+
+The Dutch Royal Family issued a statement on 19 February saying "The Royal Family is very grateful and deeply touched by all expressions of support and sympathy after the ski accident of His Royal Highness Prince Friso.
+On 24 February, an Innsbruck medical team announced that the prince had been buried for 25 minutes, followed by a 50-minute CPR to treat his cardiac arrest.
+It remained unclear whether the prince would ever regain full consciousness.
+Koller said that the Prince's family might now look for a rehabilitation institution.
+On the same day the Dutch Royal Family issued a statement requesting that the privacy of the Prince's family be respected to enable them to come to terms with his condition.
+On 1 March 2012, Prince Friso was transferred to the Wellington Hospital, in London where he and his wife had lived for many years.
+On 19 November 2012, it was announced that the prince had started to show some signs of consciousness but it was still not certain whether he would ever wake up, and if he did, in what state.
+On 9 July 2013, Prince Friso was moved back to Huis ten Bosch in the Netherlands.
+Death and funeral
+
+On 12 August 2013, it was announced that Prince Friso had died in Huis ten Bosch of complications from the accident.
+He was buried on 16 August in the Dutch Reformed Cemetery in the hamlet of Lage Vuursche near Drakesteijn Castle, where he had spent his childhood and where Princess Beatrix returned to live in February 2014.
+Titles, styles and honours
+
+Titles and styles
+
+Under the Act on the Membership of the Royal House (2002), Prince Friso lost the title 'Prince of the Netherlands' by entering into a marriage without an Act of Consent.
+By a royal decree of 19 March 2004, Prince Friso was granted the surname 'Van Oranje-Nassau van Amsberg', the hereditary noble predicate 'Jonkheer (Jonkvrouw) van Amsberg and the hereditary title 'Count of Orange-Nassau', to take effect upon his marriage.
+By the same decree, he was allowed to retain his title 'Prince of Orange-Nassau' as a personal and non-hereditary title and the style of 'Royal Highness'.
+According to the notification of this Royal Decree, any children born to the couple were to receive the surname 'van Oranje-Nassau van Amsberg' and become a 'Count (Countess) of Orange-Nassau' and also have the noble predicate 'Jonkheer (Jonkvrouw) van Amsberg'.
+So his children had the same titles and names as those of Prince Constantijn, and showing that they belong to the royal family descending from Queen Beatrix and Prince Claus.
+Referred to from birth as Prince Johan-Friso, in 2004, the royal court announced that he had requested that he would henceforth be called "Prince Friso".
+Honours
+
+National
+
+Ancestry
 
 References
 
+External links
 
-
-
-This biography of a Lord of Parliament in the Peerage of Scotland is a stub.
+2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
+3 title granted by Royal Decree to descendants of Princess Irene
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -105,39 +164,9 @@ This biography of a Lord of Parliament in the Peerage of Scotland is a stub.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -152,6 +181,23 @@ This biography of a Lord of Parliament in the Peerage of Scotland is a stub.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -169,6 +215,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -236,29 +297,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -267,6 +320,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -279,6 +340,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -287,17 +350,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -325,6 +390,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -340,161 +489,130 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1401ed72-648e-4555-ac75-2e134125eb24)
- Call ID: 1401ed72-648e-4555-ac75-2e134125eb24
+  AssignClass (87513da1-e7b8-42b1-95f4-927843aa5de1)
+ Call ID: 87513da1-e7b8-42b1-95f4-927843aa5de1
   Args:
-    source: Alexander Mountstuart Elphinstone
+    source: :PrinceFriso
     type: :Man
-  AssignClass (b54d46c3-a51c-4ccc-9970-dcaea3151bf6)
- Call ID: b54d46c3-a51c-4ccc-9970-dcaea3151bf6
+  AssignClass (b7ea6fad-1e36-41c1-a949-57549918ef7b)
+ Call ID: b7ea6fad-1e36-41c1-a949-57549918ef7b
   Args:
-    source: Alexander Mountstuart Elphinstone
-    type: :Person
-  AddLiteral (6e90da3d-2490-4f96-bbba-51025c2ad5dd)
- Call ID: 6e90da3d-2490-4f96-bbba-51025c2ad5dd
+    source: :QueenBeatrix
+    type: :Woman
+  AssignClass (1974213b-a878-4763-b462-fffe7f721086)
+ Call ID: 1974213b-a878-4763-b462-fffe7f721086
   Args:
-    literal_value: 15 April 1980
-    literal_type: xsd:string
-    source: Alexander Mountstuart Elphinstone
+    source: :ClausVonAmsberg
+    type: :Man
+  AssignClass (0d8e3fbd-5ba5-4801-9a5e-1f851b0708db)
+ Call ID: 0d8e3fbd-5ba5-4801-9a5e-1f851b0708db
+  Args:
+    source: :KingWillemAlexander
+    type: :Man
+  AssignClass (01419aab-ffdd-4749-bd93-8a98d7a70439)
+ Call ID: 01419aab-ffdd-4749-bd93-8a98d7a70439
+  Args:
+    source: :PrinceConstantijn
+    type: :Man
+  AssignClass (06ca9449-d46d-4f4f-9f26-cb33265d4961)
+ Call ID: 06ca9449-d46d-4f4f-9f26-cb33265d4961
+  Args:
+    source: :QueenJuliana
+    type: :Woman
+  AssignClass (a7e85acf-98df-4193-8ea8-a97cec59a8bc)
+ Call ID: a7e85acf-98df-4193-8ea8-a97cec59a8bc
+  Args:
+    source: :PrinceBernhard
+    type: :Man
+  AssignClass (3bc7fa94-6037-43fe-944b-7a7ada212b59)
+ Call ID: 3bc7fa94-6037-43fe-944b-7a7ada212b59
+  Args:
+    source: :MabelWisseSmit
+    type: :Woman
+  AssignClass (514bc968-d7be-4490-9f76-cfdba286b5fa)
+ Call ID: 514bc968-d7be-4490-9f76-cfdba286b5fa
+  Args:
+    source: :CountessEmmaLuana
+    type: :Woman
+  AssignClass (3153b78f-6112-4290-a5cf-35e82a14475a)
+ Call ID: 3153b78f-6112-4290-a5cf-35e82a14475a
+  Args:
+    source: :CountessJoannaZaria
+    type: :Woman
+  AddLiteral (8b4904c9-f349-4438-b360-d4a0a2026ae1)
+ Call ID: 8b4904c9-f349-4438-b360-d4a0a2026ae1
+  Args:
+    literal_value: 1968
+    literal_type: xsd:integer
     relation: :hasBirthYear
-  AssignClass (cf25df31-d2f2-409e-b4e5-4e1521035f3c)
- Call ID: cf25df31-d2f2-409e-b4e5-4e1521035f3c
+    source: :PrinceFriso
+  AddLiteral (e028da1b-137d-49a2-8cbb-41eb12bf4851)
+ Call ID: e028da1b-137d-49a2-8cbb-41eb12bf4851
   Args:
-    source: James Elphinstone
-    type: :Man
-  AssignClass (d4b6a498-dce9-40b8-a0bf-9555bf082ba7)
- Call ID: d4b6a498-dce9-40b8-a0bf-9555bf082ba7
+    relation: :hasDeathYear
+    literal_value: 2013
+    literal_type: xsd:integer
+    source: :PrinceFriso
+  AddTriple (6eae5857-79e4-49e0-8203-76ac072171db)
+ Call ID: 6eae5857-79e4-49e0-8203-76ac072171db
   Args:
-    type: :Person
-    source: James Elphinstone
-  AddTriple (0bb34bbd-be5d-4994-a27f-a3c148a102ee)
- Call ID: 0bb34bbd-be5d-4994-a27f-a3c148a102ee
-  Args:
-    target: James Elphinstone
-    relation: :hasFather
-    source: Alexander Mountstuart Elphinstone
-  AssignClass (26ef17c1-e788-49ef-ac4a-0359869ddd4a)
- Call ID: 26ef17c1-e788-49ef-ac4a-0359869ddd4a
-  Args:
-    type: :Woman
-    source: Willa Mary Gabrielle Chetwode
-  AssignClass (7f5b26d1-de8c-4b49-8bf3-74148d8b04b7)
- Call ID: 7f5b26d1-de8c-4b49-8bf3-74148d8b04b7
-  Args:
-    type: :Person
-    source: Willa Mary Gabrielle Chetwode
-  AddTriple (cde2f2e6-26b2-4d5e-aad4-40b2f44357dd)
- Call ID: cde2f2e6-26b2-4d5e-aad4-40b2f44357dd
-  Args:
-    source: Alexander Mountstuart Elphinstone
-    target: Willa Mary Gabrielle Chetwode
     relation: :hasMother
-  AssignClass (ed1c72e0-56ed-4505-beca-7ca98451545d)
- Call ID: ed1c72e0-56ed-4505-beca-7ca98451545d
+    source: :PrinceFriso
+    target: :QueenBeatrix
+  AddTriple (447a62ca-d789-4577-9915-a89366fac750)
+ Call ID: 447a62ca-d789-4577-9915-a89366fac750
   Args:
-    source: Major George Chetwode
-    type: :Man
-  AssignClass (a88d6391-c2dd-496b-a6ae-f8553bfa706e)
- Call ID: a88d6391-c2dd-496b-a6ae-f8553bfa706e
-  Args:
-    type: :Person
-    source: Major George Chetwode
-  AddTriple (262948ad-6c3f-4e75-b424-d1769c7b7380)
- Call ID: 262948ad-6c3f-4e75-b424-d1769c7b7380
-  Args:
-    source: Willa Mary Gabrielle Chetwode
+    target: :ClausVonAmsberg
+    source: :PrinceFriso
     relation: :hasFather
-    target: Major George Chetwode
-  AssignClass (fa3cc495-e3c2-4bb2-ae1d-1be82f56c6bd)
- Call ID: fa3cc495-e3c2-4bb2-ae1d-1be82f56c6bd
+  AddTriple (4fcfa415-4032-4787-bcac-be63b7141e64)
+ Call ID: 4fcfa415-4032-4787-bcac-be63b7141e64
   Args:
-    type: :Woman
-    source: Lady Willa Elliot-Murray-Kynynmound
-  AssignClass (58b581b4-15f8-47fa-ab0e-13c199d197b8)
- Call ID: 58b581b4-15f8-47fa-ab0e-13c199d197b8
+    target: :KingWillemAlexander
+    source: :PrinceFriso
+    relation: :isBrotherOf
+  AddTriple (22a70f50-c37e-4728-8666-1f50d375a42a)
+ Call ID: 22a70f50-c37e-4728-8666-1f50d375a42a
   Args:
-    source: Lady Willa Elliot-Murray-Kynynmound
-    type: :Person
-  AddTriple (88423dd6-5efb-4073-abbb-8ade34c53a3f)
- Call ID: 88423dd6-5efb-4073-abbb-8ade34c53a3f
+    relation: :isBrotherOf
+    source: :PrinceFriso
+    target: :PrinceConstantijn
+  AddTriple (668bfdd8-d1a5-4514-b839-c5b3b87d38f6)
+ Call ID: 668bfdd8-d1a5-4514-b839-c5b3b87d38f6
   Args:
-    target: Lady Willa Elliot-Murray-Kynynmound
+    source: :QueenBeatrix
+    target: :QueenJuliana
     relation: :hasMother
-    source: Willa Mary Gabrielle Chetwode
-  AssignClass (6106c967-cb57-4cbf-8d5d-f395326bc9ab)
- Call ID: 6106c967-cb57-4cbf-8d5d-f395326bc9ab
+  AddTriple (fe160670-c490-4f4d-917e-018c42fa6cf7)
+ Call ID: fe160670-c490-4f4d-917e-018c42fa6cf7
   Args:
-    source: Victor Elliot-Murray-Kynynmound
-    type: :Man
-  AssignClass (e85bcd25-a5e5-45e0-978c-f6cd409f9558)
- Call ID: e85bcd25-a5e5-45e0-978c-f6cd409f9558
-  Args:
-    source: Victor Elliot-Murray-Kynynmound
-    type: :Person
-  AddTriple (99784a9f-1dca-4bb2-adec-a22a9e8b13ad)
- Call ID: 99784a9f-1dca-4bb2-adec-a22a9e8b13ad
-  Args:
-    source: Lady Willa Elliot-Murray-Kynynmound
-    target: Victor Elliot-Murray-Kynynmound
+    source: :QueenBeatrix
+    target: :PrinceBernhard
     relation: :hasFather
-  AssignClass (8b8c6fd7-ca88-49d4-8795-31dbcbd627f6)
- Call ID: 8b8c6fd7-ca88-49d4-8795-31dbcbd627f6
+  AddTriple (6655b870-4c7d-47c8-832b-2694568e3cd1)
+ Call ID: 6655b870-4c7d-47c8-832b-2694568e3cd1
   Args:
-    type: :Man
-    source: Rev. Hon. Andrew Elphinstone
-  AssignClass (5c7f5fdf-0d2b-4325-894c-19dc665561de)
- Call ID: 5c7f5fdf-0d2b-4325-894c-19dc665561de
+    target: :CountessEmmaLuana
+    source: :MabelWisseSmit
+    relation: :isMotherOf
+  AddTriple (b098019a-d905-4e6f-ab4a-5bd476d8b32d)
+ Call ID: b098019a-d905-4e6f-ab4a-5bd476d8b32d
   Args:
-    type: :Person
-    source: Rev. Hon. Andrew Elphinstone
-  AddTriple (7408d51c-facd-4ec8-ab03-d0aa210a6df5)
- Call ID: 7408d51c-facd-4ec8-ab03-d0aa210a6df5
+    relation: :isMotherOf
+    target: :CountessJoannaZaria
+    source: :MabelWisseSmit
+  AddTriple (12bd760f-545b-4c14-8cbf-1c3b78c70318)
+ Call ID: 12bd760f-545b-4c14-8cbf-1c3b78c70318
   Args:
-    source: Alexander Mountstuart Elphinstone
-    relation: :hasFather
-    target: Rev. Hon. Andrew Elphinstone
-  AssignClass (787c5382-3605-487b-a7b0-58459511bc91)
- Call ID: 787c5382-3605-487b-a7b0-58459511bc91
+    target: :CountessEmmaLuana
+    source: :PrinceFriso
+    relation: :isFatherOf
+  AddTriple (bd36cfd4-b3e1-487f-9934-95ab848734e0)
+ Call ID: bd36cfd4-b3e1-487f-9934-95ab848734e0
   Args:
-    source: Lady Mary Bowes-Lyon
-    type: :Woman
-  AssignClass (5e4cfd43-b031-4196-932d-a426a6b2dd80)
- Call ID: 5e4cfd43-b031-4196-932d-a426a6b2dd80
-  Args:
-    source: Lady Mary Bowes-Lyon
-    type: :Person
-  AddTriple (a82241dd-68a0-424c-b3fe-7892393cbe10)
- Call ID: a82241dd-68a0-424c-b3fe-7892393cbe10
-  Args:
-    source: Rev. Hon. Andrew Elphinstone
-    relation: :hasMother
-    target: Lady Mary Bowes-Lyon
-  AssignClass (fea5a32e-7091-4d92-bf19-abbe8d64f50f)
- Call ID: fea5a32e-7091-4d92-bf19-abbe8d64f50f
-  Args:
-    type: :Woman
-    source: Queen Elizabeth The Queen Mother
-  AssignClass (78ac3efe-cc5f-4cef-8697-e5eb50c90236)
- Call ID: 78ac3efe-cc5f-4cef-8697-e5eb50c90236
-  Args:
-    type: :Person
-    source: Queen Elizabeth The Queen Mother
-  AddTriple (748623bf-e2db-4363-9656-94b019f054c4)
- Call ID: 748623bf-e2db-4363-9656-94b019f054c4
-  Args:
-    source: Lady Mary Bowes-Lyon
-    relation: :isSisterOf
-    target: Queen Elizabeth The Queen Mother
-  AssignClass (4281c5b6-690f-4115-aa93-50d037ed67b7)
- Call ID: 4281c5b6-690f-4115-aa93-50d037ed67b7
-  Args:
-    source: Elizabeth II
-    type: :Woman
-  AssignClass (7fe50071-b75d-434d-86f2-2ad4861e2e1d)
- Call ID: 7fe50071-b75d-434d-86f2-2ad4861e2e1d
-  Args:
-    type: :Person
-    source: Elizabeth II
-  Finish (1f77b09f-0b0d-47c4-bafc-4f82635ea7a2)
- Call ID: 1f77b09f-0b0d-47c4-bafc-4f82635ea7a2
+    target: :CountessJoannaZaria
+    source: :PrinceFriso
+    relation: :isFatherOf
+  Finish (b0429c56-e08c-4d64-aa8b-11161abfa15b)
+ Call ID: b0429c56-e08c-4d64-aa8b-11161abfa15b
   Args:

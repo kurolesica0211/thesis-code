@@ -1,0 +1,349 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Margaret_of_Prussia a :Person,
+        :Woman ;
+    rdfs:label "Princess Margaret of Prussia"^^xsd:string ;
+    data:posIndicesFull "3007:3011"^^xsd:string,
+        "4073:4101"^^xsd:string,
+        "4082:4101"^^xsd:string ;
+    data:posIndicesPart "4451:4459"^^xsd:string ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Margaret of Prussia"^^xsd:string,
+        "Margaret of Prussia, Queen consort-elect of Finland"^^xsd:string,
+        "Margaret of Prussia, Queen-elect of Finland"^^xsd:string,
+        "Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Margarethe of Prussia"^^xsd:string,
+        "Mossy"^^xsd:string,
+        "Princess Frederick Charles of Hesse"^^xsd:string,
+        "Princess Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe of Prussia"^^xsd:string ;
+    :hasRelation data:Princess_Margaret_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret_of_Prussia ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia ;
+    :isSisterOf data:Princess_Margaret_of_Prussia .
+
+data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg"^^xsd:string ;
+    data:posIndicesFull "556:627"^^xsd:string ;
+    data:posIndicesPart "1346:1354"^^xsd:string,
+        "1355:1364"^^xsd:string,
+        "1365:1373"^^xsd:string,
+        "3947:3955"^^xsd:string,
+        "4451:4459"^^xsd:string,
+        "4460:4469"^^xsd:string,
+        "4473:4482"^^xsd:string,
+        "4483:4491"^^xsd:string,
+        "4492:4502"^^xsd:string,
+        "4503:4513"^^xsd:string ;
+    data:wdtLink wdt:Q2419996 ;
+    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :hasSon data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isAncestorOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isAuntOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isBloodrelationOf data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :isMotherOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isParentOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isSiblingOf data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :isSisterOf data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Augusta Victoria of Schleswig-Holstein"^^xsd:string ;
+    data:posIndicesFull "177:193"^^xsd:string,
+        "177:215"^^xsd:string ;
+    data:posIndicesPart "1365:1373"^^xsd:string,
+        "4473:4482"^^xsd:string,
+        "4483:4491"^^xsd:string,
+        "495:504"^^xsd:string,
+        "505:513"^^xsd:string ;
+    data:wdtLink wdt:Q161247 ;
+    :alsoKnownAs "Augusta Victoria"^^xsd:string,
+        "Augusta Victoria, Empress of Germany"^^xsd:string,
+        "Augusta Viktoria"^^xsd:string,
+        "Augusta Viktoria of Schleswig-Holstein"^^xsd:string,
+        "Auguste Viktoria of Schleswig-Holstein"^^xsd:string ;
+    :hasChild data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasSon data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isAncestorOf data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isAuntOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isBloodrelationOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isMotherOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isParentOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isSisterOf data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "132:157"^^xsd:string,
+        "1433:1450"^^xsd:string,
+        "1440:1450"^^xsd:string,
+        "147:157"^^xsd:string ;
+    data:posIndicesPart "1242:1249"^^xsd:string,
+        "1632:1639"^^xsd:string,
+        "1868:1875"^^xsd:string,
+        "2045:2052"^^xsd:string,
+        "2133:2140"^^xsd:string,
+        "2314:2321"^^xsd:string,
+        "2747:2754"^^xsd:string,
+        "3267:3274"^^xsd:string,
+        "3442:3449"^^xsd:string,
+        "3825:3832"^^xsd:string,
+        "3972:3979"^^xsd:string,
+        "4200:4207"^^xsd:string,
+        "4427:4434"^^xsd:string,
+        "4529:4536"^^xsd:string,
+        "529:536"^^xsd:string,
+        "801:808"^^xsd:string,
+        "983:990"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isAncestorOf data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isParentOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince .
+
+data:Prince_Alexander_Ferdinand_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Alexander Ferdinand of Prussia"^^xsd:string ;
+    data:posIndicesFull "903:940"^^xsd:string ;
+    data:posIndicesPart "2874:2881"^^xsd:string,
+        "3661:3667"^^xsd:string,
+        "3740:3749"^^xsd:string,
+        "4515:4521"^^xsd:string ;
+    data:wdtLink wdt:Q2189056 ;
+    :alsoKnownAs "Prince Alexander Ferdinand Albrecht Achilles Wilhelm Joseph Viktor Karl Feodor of Prussia"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :hasFather data:Prince_August_Wilhelm_of_Prussia ;
+    :hasMother data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :hasParent data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isBrotherOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isChildOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :isSiblingOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isSonOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg .
+
+data:Wilhelm-_German_Crown_Prince a :Man,
+        :Person ;
+    rdfs:label "Wilhelm, German Crown Prince"^^xsd:string ;
+    data:posIndicesFull "1679:1699"^^xsd:string ;
+    data:posIndicesPart "1868:1875"^^xsd:string,
+        "2045:2052"^^xsd:string,
+        "2133:2140"^^xsd:string,
+        "2314:2321"^^xsd:string,
+        "2747:2754"^^xsd:string,
+        "3192:3198"^^xsd:string,
+        "3214:3220"^^xsd:string,
+        "3267:3274"^^xsd:string,
+        "3311:3317"^^xsd:string,
+        "3442:3449"^^xsd:string,
+        "3661:3667"^^xsd:string,
+        "3825:3832"^^xsd:string,
+        "3941:3946"^^xsd:string,
+        "3972:3979"^^xsd:string,
+        "4200:4207"^^xsd:string,
+        "4277:4283"^^xsd:string,
+        "4427:4434"^^xsd:string,
+        "4515:4521"^^xsd:string,
+        "4529:4536"^^xsd:string ;
+    data:wdtLink wdt:Q57621 ;
+    :alsoKnownAs "Crown Prince Wilhelm"^^xsd:string,
+        "Friedrich Wilhelm Victor August Ernst"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isUncleOf data:Prince_Alexander_Ferdinand_of_Prussia .
+
+data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince August Wilhelm of Prussia"^^xsd:string ;
+    data:posIndicesFull "103:107"^^xsd:string,
+        "2415:2419"^^xsd:string,
+        "2425:2429"^^xsd:string,
+        "4068:4072"^^xsd:string ;
+    data:posIndicesPart "1235:1241"^^xsd:string,
+        "1242:1249"^^xsd:string,
+        "1408:1414"^^xsd:string,
+        "1415:1422"^^xsd:string,
+        "1625:1631"^^xsd:string,
+        "1632:1639"^^xsd:string,
+        "1861:1867"^^xsd:string,
+        "1868:1875"^^xsd:string,
+        "2038:2044"^^xsd:string,
+        "2045:2052"^^xsd:string,
+        "2126:2132"^^xsd:string,
+        "2133:2140"^^xsd:string,
+        "2740:2746"^^xsd:string,
+        "2747:2754"^^xsd:string,
+        "2874:2881"^^xsd:string,
+        "312:318"^^xsd:string,
+        "322:329"^^xsd:string,
+        "3260:3266"^^xsd:string,
+        "3267:3274"^^xsd:string,
+        "3435:3441"^^xsd:string,
+        "3442:3449"^^xsd:string,
+        "3661:3667"^^xsd:string,
+        "3818:3824"^^xsd:string,
+        "3825:3832"^^xsd:string,
+        "4193:4199"^^xsd:string,
+        "4200:4207"^^xsd:string,
+        "4420:4426"^^xsd:string,
+        "4427:4434"^^xsd:string,
+        "4515:4521"^^xsd:string,
+        "4522:4528"^^xsd:string,
+        "4529:4536"^^xsd:string,
+        "515:521"^^xsd:string,
+        "522:528"^^xsd:string,
+        "529:536"^^xsd:string,
+        "801:808"^^xsd:string,
+        "976:982"^^xsd:string,
+        "983:990"^^xsd:string ;
+    data:wdtLink wdt:Q58777 ;
+    :alsoKnownAs "Auwi"^^xsd:string ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Prince_Alexander_Ferdinand_of_Prussia,
+        data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isAncestorOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isBloodrelationOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isFatherOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isParentOf data:Prince_Alexander_Ferdinand_of_Prussia ;
+    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isUncleOf data:Prince_Alexander_Ferdinand_of_Prussia .
+

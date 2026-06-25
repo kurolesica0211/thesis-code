@@ -1,0 +1,204 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Felipe_de_Marichalar a :Man,
+        :Person ;
+    :hasBrother data:Felipe_de_Marichalar ;
+    :hasRelation data:Felipe_de_Marichalar,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sofia_of_Spain,
+        data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :hasSister data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isBloodrelationOf data:Felipe_de_Marichalar,
+        data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isBrotherOf data:Felipe_de_Marichalar,
+        data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isSiblingOf data:Felipe_de_Marichalar,
+        data:Victoria_Federica_de_Marichalar_y_Borbon .
+
+data:Jaime_de_Marichalar a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Jaime_de_Marichalar ;
+    :hasChild data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :hasDaughter data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :hasRelation data:Felipe_de_Marichalar,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sofia_of_Spain,
+        data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isAncestorOf data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isBloodrelationOf data:Jaime_de_Marichalar ;
+    :isBrotherOf data:Jaime_de_Marichalar ;
+    :isFatherOf data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isParentOf data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isSiblingOf data:Jaime_de_Marichalar ;
+    :isUncleOf data:Victoria_Federica_de_Marichalar_y_Borbon .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasChild data:Infanta_Elena ;
+    :hasDaughter data:Infanta_Elena ;
+    :hasRelation data:Felipe_de_Marichalar,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sofia_of_Spain,
+        data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isAncestorOf data:Infanta_Elena,
+        data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isFatherOf data:Infanta_Elena ;
+    :isParentOf data:Infanta_Elena ;
+    :isSiblingOf data:Juan_Carlos_I ;
+    :isUncleOf data:Infanta_Elena .
+
+data:Sofia_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infanta_Elena ;
+    :hasDaughter data:Infanta_Elena ;
+    :hasRelation data:Felipe_de_Marichalar,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sofia_of_Spain,
+        data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :hasSister data:Sofia_of_Spain ;
+    :isAncestorOf data:Infanta_Elena,
+        data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isAuntOf data:Infanta_Elena ;
+    :isBloodrelationOf data:Sofia_of_Spain ;
+    :isMotherOf data:Infanta_Elena ;
+    :isParentOf data:Infanta_Elena ;
+    :isSiblingOf data:Sofia_of_Spain ;
+    :isSisterOf data:Sofia_of_Spain .
+
+data:Felipe_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Felipe_VI ;
+    :hasChild data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :hasDaughter data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :hasRelation data:Felipe_VI,
+        data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isAncestorOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isBloodrelationOf data:Felipe_VI ;
+    :isBrotherOf data:Felipe_VI ;
+    :isFatherOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isParentOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isSiblingOf data:Felipe_VI ;
+    :isUncleOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias .
+
+data:Infanta_Sofia a :Person,
+        :Woman ;
+    :hasAncestor data:Felipe_VI ;
+    :hasFather data:Felipe_VI ;
+    :hasParent data:Felipe_VI ;
+    :hasRelation data:Felipe_VI,
+        data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :hasSister data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isBloodrelationOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isChildOf data:Felipe_VI ;
+    :isDaughterOf data:Felipe_VI ;
+    :isSiblingOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isSisterOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias .
+
+data:Leonor_Princess_of_Asturias a :Person,
+        :Woman ;
+    :hasAncestor data:Felipe_VI ;
+    :hasFather data:Felipe_VI ;
+    :hasParent data:Felipe_VI ;
+    :hasRelation data:Felipe_VI,
+        data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :hasSister data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isBloodrelationOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isChildOf data:Felipe_VI ;
+    :isDaughterOf data:Felipe_VI ;
+    :isSiblingOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
+    :isSisterOf data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias .
+
+data:Infanta_Elena a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Juan_Carlos_I,
+        data:Sofia_of_Spain ;
+    :hasChild data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :hasDaughter data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sofia_of_Spain ;
+    :hasParent data:Juan_Carlos_I,
+        data:Sofia_of_Spain ;
+    :hasRelation data:Felipe_de_Marichalar,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sofia_of_Spain,
+        data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :hasSister data:Infanta_Elena ;
+    :isAncestorOf data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isAuntOf data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isBloodrelationOf data:Infanta_Elena ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sofia_of_Spain ;
+    :isDaughterOf data:Juan_Carlos_I,
+        data:Sofia_of_Spain ;
+    :isMotherOf data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isParentOf data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isSiblingOf data:Infanta_Elena ;
+    :isSisterOf data:Infanta_Elena .
+
+data:Victoria_Federica_de_Marichalar_y_Borbon a :Person,
+        :Woman ;
+    :hasAncestor data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sofia_of_Spain ;
+    :hasBirthYear 2000 ;
+    :hasBrother data:Felipe_de_Marichalar ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Infanta_Elena ;
+    :hasParent data:Infanta_Elena,
+        data:Jaime_de_Marichalar ;
+    :hasRelation data:Felipe_de_Marichalar,
+        data:Infanta_Elena,
+        data:Jaime_de_Marichalar,
+        data:Juan_Carlos_I,
+        data:Sofia_of_Spain,
+        data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :hasSister data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isBloodrelationOf data:Felipe_de_Marichalar,
+        data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isChildOf data:Infanta_Elena,
+        data:Jaime_de_Marichalar ;
+    :isDaughterOf data:Infanta_Elena,
+        data:Jaime_de_Marichalar ;
+    :isSiblingOf data:Felipe_de_Marichalar,
+        data:Victoria_Federica_de_Marichalar_y_Borbon ;
+    :isSisterOf data:Felipe_de_Marichalar,
+        data:Victoria_Federica_de_Marichalar_y_Borbon .
+

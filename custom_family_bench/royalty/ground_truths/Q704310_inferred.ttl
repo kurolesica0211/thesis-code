@@ -1,0 +1,312 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Infanta_María_Cristina_of_Spain a :Person,
+        :Woman ;
+    rdfs:label "Infanta María Cristina of Spain"^^xsd:string ;
+    data:posIndicesFull "818:849"^^xsd:string ;
+    data:posIndicesPart "1116:1121"^^xsd:string,
+        "1251:1256"^^xsd:string ;
+    data:wdtLink wdt:Q2412713 ;
+    :alsoKnownAs "Infanta María Cristina, Countess Marone"^^xsd:string,
+        "María Cristina de Borbón y Battenberg"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Infante_Juan-_Count_of_Barcelona ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII,
+        data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_María_Cristina_of_Spain ;
+    :isAuntOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isChildOf data:Alfonso_XIII ;
+    :isDaughterOf data:Alfonso_XIII ;
+    :isSiblingOf data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isSisterOf data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona .
+
+data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Infanta María de las Mercedes, Countess of Barcelona"^^xsd:string ;
+    data:posIndicesFull "288:342"^^xsd:string ;
+    data:posIndicesPart "644:653"^^xsd:string,
+        "687:695"^^xsd:string ;
+    data:wdtLink wdt:Q235128 ;
+    :alsoKnownAs "Princess Maria de las Mercedes of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasChild data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasRelation data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasSon data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isAncestorOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isAuntOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :isMotherOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isParentOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :isSisterOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alfonso XIII"^^xsd:string ;
+    data:posIndicesFull "369:381"^^xsd:string ;
+    data:posIndicesPart "1100:1107"^^xsd:string,
+        "1265:1272"^^xsd:string,
+        "1402:1409"^^xsd:string,
+        "1521:1528"^^xsd:string,
+        "1618:1625"^^xsd:string,
+        "1927:1934"^^xsd:string,
+        "2153:2160"^^xsd:string,
+        "2274:2281"^^xsd:string,
+        "2528:2535"^^xsd:string,
+        "2638:2645"^^xsd:string,
+        "2890:2897"^^xsd:string,
+        "3211:3218"^^xsd:string,
+        "3252:3259"^^xsd:string,
+        "527:534"^^xsd:string,
+        "751:758"^^xsd:string,
+        "957:964"^^xsd:string,
+        "971:978"^^xsd:string ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena"^^xsd:string,
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena"^^xsd:string,
+        "Alfonso XIII of Spain"^^xsd:string,
+        "Don Alfonso de Borbon y Habsburgo"^^xsd:string,
+        "Don Alfonso de Borbón y Habsburgo"^^xsd:string,
+        "The African"^^xsd:string ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasDaughter data:Infanta_María_Cristina_of_Spain ;
+    :hasRelation data:Alfonso_XIII,
+        data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Alfonso_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:male ;
+    :hasSon data:Infante_Juan-_Count_of_Barcelona ;
+    :isAncestorOf data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Alfonso_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isParentOf data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona .
+
+data:Infante_Alfonso_of_Spain a :Man,
+        :Person ;
+    rdfs:label "Infante Alfonso of Spain"^^xsd:string ;
+    data:posIndicesFull "0:24"^^xsd:string ;
+    data:posIndicesPart "1100:1107"^^xsd:string,
+        "1116:1121"^^xsd:string,
+        "1251:1256"^^xsd:string,
+        "1265:1272"^^xsd:string,
+        "1402:1409"^^xsd:string,
+        "1521:1528"^^xsd:string,
+        "1618:1625"^^xsd:string,
+        "1927:1934"^^xsd:string,
+        "2153:2160"^^xsd:string,
+        "2274:2281"^^xsd:string,
+        "2528:2535"^^xsd:string,
+        "2638:2645"^^xsd:string,
+        "2890:2897"^^xsd:string,
+        "3211:3218"^^xsd:string,
+        "3252:3259"^^xsd:string,
+        "527:534"^^xsd:string,
+        "612:619"^^xsd:string,
+        "628:633"^^xsd:string,
+        "743:750"^^xsd:string,
+        "751:758"^^xsd:string,
+        "957:964"^^xsd:string,
+        "971:978"^^xsd:string ;
+    data:wdtLink wdt:Q704310 ;
+    :alsoKnownAs "Alfonso Cristino de Borbón y Borbón"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasBrother data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
+    :hasMother data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_XIII,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Alfonso_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isSiblingOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSonOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona .
+
+data:Juan_Carlos_I_of_Spain a :Man,
+        :Person ;
+    rdfs:label "Juan Carlos I of Spain"^^xsd:string ;
+    data:posIndicesFull "195:208"^^xsd:string,
+        "195:217"^^xsd:string,
+        "2816:2829"^^xsd:string ;
+    data:posIndicesPart "1116:1121"^^xsd:string,
+        "1217:1221"^^xsd:string,
+        "1222:1228"^^xsd:string,
+        "1251:1256"^^xsd:string,
+        "1277:1281"^^xsd:string,
+        "1282:1288"^^xsd:string,
+        "1414:1418"^^xsd:string,
+        "1419:1425"^^xsd:string,
+        "1744:1748"^^xsd:string,
+        "1749:1755"^^xsd:string,
+        "1839:1843"^^xsd:string,
+        "1844:1850"^^xsd:string,
+        "2050:2054"^^xsd:string,
+        "2055:2061"^^xsd:string,
+        "2218:2222"^^xsd:string,
+        "2223:2229"^^xsd:string,
+        "2240:2244"^^xsd:string,
+        "2245:2251"^^xsd:string,
+        "2382:2386"^^xsd:string,
+        "2387:2393"^^xsd:string,
+        "2410:2414"^^xsd:string,
+        "2415:2421"^^xsd:string,
+        "2600:2604"^^xsd:string,
+        "2605:2611"^^xsd:string,
+        "2735:2739"^^xsd:string,
+        "2740:2746"^^xsd:string,
+        "2857:2861"^^xsd:string,
+        "2862:2868"^^xsd:string,
+        "434:438"^^xsd:string,
+        "439:445"^^xsd:string,
+        "620:624"^^xsd:string,
+        "628:633"^^xsd:string ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias"^^xsd:string,
+        "Juan Carlos I"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasBrother data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
+    :hasMother data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
+    :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :hasRelation data:Alfonso_XIII,
+        data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Alfonso_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isChildOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isSiblingOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSonOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
+        data:Infante_Juan-_Count_of_Barcelona .
+
+data:Infante_Juan-_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Infante Juan, Count of Barcelona"^^xsd:string ;
+    data:posIndicesFull "251:283"^^xsd:string,
+        "3111:3143"^^xsd:string ;
+    data:posIndicesPart "1217:1221"^^xsd:string,
+        "1277:1281"^^xsd:string,
+        "1414:1418"^^xsd:string,
+        "1744:1748"^^xsd:string,
+        "1839:1843"^^xsd:string,
+        "2050:2054"^^xsd:string,
+        "2218:2222"^^xsd:string,
+        "2240:2244"^^xsd:string,
+        "2382:2386"^^xsd:string,
+        "2410:2414"^^xsd:string,
+        "2600:2604"^^xsd:string,
+        "2735:2739"^^xsd:string,
+        "2857:2861"^^xsd:string,
+        "434:438"^^xsd:string,
+        "612:619"^^xsd:string,
+        "620:624"^^xsd:string,
+        "635:640"^^xsd:string,
+        "644:653"^^xsd:string,
+        "743:750"^^xsd:string ;
+    data:wdtLink wdt:Q313857 ;
+    :alsoKnownAs "Infante Juan of Barcelona"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Infante_Juan-_Count_of_Barcelona ;
+    :hasChild data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII,
+        data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Alfonso_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona,
+        data:Juan_Carlos_I_of_Spain ;
+    :hasSex data:male ;
+    :hasSister data:Infanta_María_Cristina_of_Spain ;
+    :hasSon data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isAncestorOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isBloodrelationOf data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isBrotherOf data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isChildOf data:Alfonso_XIII ;
+    :isFatherOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isParentOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain ;
+    :isSiblingOf data:Infanta_María_Cristina_of_Spain,
+        data:Infante_Juan-_Count_of_Barcelona ;
+    :isSonOf data:Alfonso_XIII ;
+    :isUncleOf data:Infante_Alfonso_of_Spain,
+        data:Juan_Carlos_I_of_Spain .
+

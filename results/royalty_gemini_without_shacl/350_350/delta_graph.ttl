@@ -2,46 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Feodora_of_Saxe_Meiningen a :Person,
-        :Woman ;
-    :hasFather data:Bernhard_III_of_Saxe_Meiningen ;
-    :hasMother data:Charlotte_of_Prussia ;
-    :hasSex data:Female .
+data:Francoise_Cazaudehore a :Person,
+        :Woman .
 
-data:Charlotte_of_Prussia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1860 ;
-    :hasBrother data:Wilhelm_II ;
-    :hasDeathYear 1919 ;
-    :hasFather data:Prince_Frederick_of_Prussia ;
-    :hasMarriageYear 1878 ;
-    :hasMother data:Victoria_Princess_Royal ;
-    :hasRelation data:Bernhard_III_of_Saxe_Meiningen ;
-    :hasSex data:Female .
+data:Kristine_Dzidziguri a :Person,
+        :Woman .
 
-data:Wilhelm_II a :Man,
+data:Prince_Juan_Jorge_de_Bagration-Mukhrani a :Man,
         :Person ;
-    :hasFather data:Prince_Frederick_of_Prussia ;
-    :hasMother data:Victoria_Princess_Royal ;
-    :hasSex data:Male .
+    :hasBirthYear 1977 ;
+    :hasFather data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :hasMarriageYear 2014 ;
+    :hasMother data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves .
 
-data:Bernhard_III_of_Saxe_Meiningen a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Alfonso_XII_of_Spain a :Man,
+        :Person .
 
-data:Prince_Frederick_of_Prussia a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Victoria_Princess_Royal a :Ancestor,
-        :Person,
+data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves a :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasFather data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro .
 
-data:Female a :Sex .
+data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro a :Man,
+        :Person .
 
-data:Male a :Sex .
+data:Infanta_Maria_de_las_Mercedes_of_Spain a :Person,
+        :Woman ;
+    :hasFather data:Alfonso_XII_of_Spain,
+        data:Prince_Ferdinand_of_Bavaria .
+
+data:Prince_Bagrat_de_Bagration_y_de_Baviera a :Man,
+        :Person ;
+    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasMother data:Infanta_Maria_de_las_Mercedes_of_Spain .
+
+data:Prince_Ferdinand_of_Bavaria a :Man,
+        :Person .
+
+data:Prince_Irakli_Bagration_of_Mukhrani a :Man,
+        :Person .
 

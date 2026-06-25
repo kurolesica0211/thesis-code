@@ -7,23 +7,30 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Princess_Anne_of_Orléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Anne of Orléans" ;
-    data:posIndicesFull "263:287",
-        "378:402" ;
-    data:posIndicesPart "1551:1559",
-        "882:890" ;
-    data:wdtLink wdt:Q2278538 ;
-    :alsoKnownAs "Anne Hélène Marie d'Orléans",
-        "Anne d'Orléans",
-        "Princess Anne Hélène Marie d'Orléans",
-        "Princess Anne, Dowager Duchess of Aosta",
-        "Princess Anne, Duchess of Aosta",
-        "Princess Anne, The Dowager Duchess of Aosta",
-        "Princess Anne, The Duchess of Aosta" ;
+data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Person ;
+    rdfs:label "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo" ;
+    data:posIndicesFull "1193:1197",
+        "2901:2905",
+        "3759:3763" ;
+    data:posIndicesPart "1328:1334",
+        "4087:4096",
+        "4149:4158" ;
+    data:wdtLink wdt:Q75317760 ;
+    :alsoKnownAs "Jaime",
+        "Jaime de Borbón y Landaluce",
+        "Jaime di Borbone-Due Sicilie" ;
+    :hasParent data:Prince_Pedro-_Duke_of_Calabria,
+        data:Sofía_Landaluce_y_Melgarejo ;
+    :hasSex data:male .
+
+data:María_de_las_Mercedes-_Princess_of_Asturias a :Person ;
+    rdfs:label "María de las Mercedes, Princess of Asturias" ;
+    data:posIndicesFull "1528:1571",
+        "859:902" ;
+    data:posIndicesPart "4122:4127",
+        "4131:4134" ;
+    data:wdtLink wdt:Q129179 ;
+    :alsoKnownAs "María de las Mercedes of Spain" ;
     :hasSex data:female .
 
 data:posIndicesFull a owl:AnnotationProperty .
@@ -32,10 +39,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Infante_Carlos-_Duke_of_Calabria a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Infante_Carlos-_Duke_of_Calabria a :Person ;
     rdfs:label "Infante Carlos, Duke of Calabria" ;
     data:posIndicesFull "225:257",
         "318:350" ;
@@ -53,16 +57,16 @@ data:Infante_Carlos-_Duke_of_Calabria a :Ancestor,
         "Carlos of Bourbon-Two Sicilies",
         "Infante Carlos of Spain, Prince of Bourbon-Two Sicilies, Duke of Calabria",
         "Prince Carlos of Bourbon-Two Sicilies" ;
-    :hasChild data:Prince_Pedro-_Duke_of_Calabria ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Pedro-_Duke_of_Calabria ;
-    :isFatherOf data:Prince_Pedro-_Duke_of_Calabria ;
-    :isParentOf data:Prince_Pedro-_Duke_of_Calabria .
+    :hasSex data:male .
 
-data:Sofía_Landaluce_y_Melgarejo a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Prince_Pedro-_Duke_of_Calabria a :Person ;
+    rdfs:label "Prince Pedro, Duke of Calabria" ;
+    data:wdtLink wdt:Q3387469 ;
+    :alsoKnownAs "Pedro Juan Maria Alejo Saturnino y todos los Santos di Borbone, Duca di Noto" ;
+    :hasParent data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasSex data:male .
+
+data:Sofía_Landaluce_y_Melgarejo a :Person ;
     rdfs:label "Sofía Landaluce y Melgarejo" ;
     data:posIndicesFull "4000:4027" ;
     data:posIndicesPart "4087:4096",
@@ -71,50 +75,9 @@ data:Sofía_Landaluce_y_Melgarejo a :Ancestor,
     data:wdtLink wdt:Q65031050 ;
     :alsoKnownAs "Sofia Landaluce y Melgareja",
         "Sofia, Duchess of Calabria" ;
-    :hasChild data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
-    :hasSex data:female ;
-    :hasSon data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
-    :isMotherOf data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
-    :isParentOf data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo .
+    :hasSex data:female .
 
-data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo" ;
-    data:posIndicesFull "1193:1197",
-        "2901:2905",
-        "3759:3763" ;
-    data:posIndicesPart "1328:1334",
-        "4087:4096",
-        "4149:4158" ;
-    data:wdtLink wdt:Q75317760 ;
-    :alsoKnownAs "Jaime",
-        "Jaime de Borbón y Landaluce",
-        "Jaime di Borbone-Due Sicilie" ;
-    :hasFather data:Prince_Pedro-_Duke_of_Calabria ;
-    :hasMother data:Sofía_Landaluce_y_Melgarejo ;
-    :hasParent data:Prince_Pedro-_Duke_of_Calabria,
-        data:Sofía_Landaluce_y_Melgarejo ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Pedro-_Duke_of_Calabria,
-        data:Sofía_Landaluce_y_Melgarejo ;
-    :isSonOf data:Prince_Pedro-_Duke_of_Calabria,
-        data:Sofía_Landaluce_y_Melgarejo .
+data:female a :Female .
 
-data:Prince_Pedro-_Duke_of_Calabria a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Pedro, Duke of Calabria" ;
-    data:wdtLink wdt:Q3387469 ;
-    :alsoKnownAs "Pedro Juan Maria Alejo Saturnino y todos los Santos di Borbone, Duca di Noto" ;
-    :hasChild data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
-    :hasFather data:Infante_Carlos-_Duke_of_Calabria ;
-    :hasParent data:Infante_Carlos-_Duke_of_Calabria ;
-    :hasSex data:male ;
-    :hasSon data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
-    :isChildOf data:Infante_Carlos-_Duke_of_Calabria ;
-    :isFatherOf data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
-    :isParentOf data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
-    :isSonOf data:Infante_Carlos-_Duke_of_Calabria .
+data:male a :Male .
 

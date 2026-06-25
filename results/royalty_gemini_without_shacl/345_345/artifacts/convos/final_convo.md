@@ -69,75 +69,44 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Ernst August von Hannover (German: Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig Prinz von Hannover Herzog zu Braunschweig und Lüneburg Königlicher Prinz von Großbritannien und Irland, lit.
-'Ernest Augustus Albert Paul Otto Rupert Oscar Berthold Frederick-Ferdinand Christian-Louis, Prince of Hanover, Duke of Brunswick and Lüneburg, Royal Prince of Great Britain and Ireland'; born 26 February 1954) is the head of the House of Hanover, members of which reigned in Great Britain and Ireland from 1714 to 1901, the Kingdom of Hanover from 1814 to 1866 (electorate, from 1714 to 1814), and the Duchy of Brunswick from 1913 to 1918.
-As the husband of Princess Caroline of Monaco, he is the brother-in-law of Albert II, Prince of Monaco.
-Background and education
+Frederick Francis IV (Friedrich Franz Michael; 9 April 1882 – 17 November 1945) was the last Grand Duke of Mecklenburg-Schwerin and regent of Mecklenburg-Strelitz.
+Early life
 
-Ernst August was born in Hanover, the eldest son of Prince Ernest Augustus of Hanover (1914–1987), the former Hereditary Prince of Brunswick and his first wife, Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg (1925–1980).
-He was christened Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig.
-As the senior male-line descendant of George III of the United Kingdom, Ernst August is head of the House of Hanover.
-He is a first cousin of Queen Sofía of Spain and King Constantine II of Greece.
-Ancestry and heritage
+Born on 9 April 1882, Duke Frederick Francis IV was the son of Frederick Francis, then the hereditary grand duke of Mecklenburg-Schwerin, and Grand Duchess Anastasia Mikhailovna of Russia.
+He was born in Palermo, Sicily at Villa Belmonte where his parents were staying to alleviate the faltering health of the hereditary Grand duke.
+Frederick Francis's father suffered from a weak heart, chronic asthma, and acute eczema and had to live part of the year away from Mecklenburg in a warmer climate.
+Frederick Francis's mother, raised in the splendor of the Russian imperial court and the Orthodox church, never got used to the provincial austerity of the Lutheran court of Schwerin, preferring to live abroad.
+Frederick Francis was one year old when he became the hereditary grand duke of Mecklenburg-Schwerin at the death of his grandfather Grand Duke Frederick Francis II on 15 April 1883.
+Frederick Francis IV had an older sister, Alexandrine and a younger one, Cecilie.
+Friederich Franz III spent most his time hunting, while Anastasia and the children rode or drove out, visited local people or enjoyed the beach and the surrounding forest.
+Grand Duke of Mecklenburg-Schwerin
 
-The title of Prince of Great Britain and Ireland was recognised ad personam for Ernst August's father and his father's siblings by George V of the United Kingdom on 17 June 1914.
-However, the title Royal Prince of Great Britain and Ireland had been entered into the family's German passports, together with the German titles, in 1914.
-Ernst August continues to claim the style, "Royal Prince of Great Britain and Ireland".
-However, in addition to being a German, Ernst August also has British citizenship since his father had successfully claimed it under the Sophia Naturalization Act 1705 (in the case of Attorney-General v. Prince Ernest Augustus of Hanover).
-Since foreign royal titles can't be entered into a British passport, his father ended up being named Ernest Augustus Guelph, with the addition of His Royal Highness.
-His children, including Ernst August, inherited British nationality under this name.
-Marriage and family
+Frederick Francis IV succeeded his father as Grand Duke upon his death on 10 April 1897.
+As he was a teenager, due to his minority, the grand duchy was governed by his uncle Duke Johann Albrecht as regent.
+Frederick Francis's mother, Grand Duchess Anastasia preferred to remain in France while he continued the long preparation to eventually assume the throne.
+In 1903, the young Grand Duke moved to Bonn, where he attended university and studied administration and law.
+On 9 April 1901 Frederick Francis came of age, ending the regency and beginning his reign in Schwerin.
+Marriage and issue
 
-First marriage
+On 7 June 1904, Frederick Francis married Princess Alexandra of Hanover in Gmunden.
+She was the second eldest daughter of Ernest Augustus, Crown Prince of Hanover, and his wife, Princess Thyra of Denmark, a daughter of King Christian IX.
+They had five children:
 
-By a 24 August 1981 declaration issued by his father as the Head of House, pursuant to Chapter 3, §§ 3 and 5 of the House laws of 1836, Ernst August was authorised to marry dynastically, and did firstly marry, civilly in Pattensen on 28 August 1981 and religiously on 30 August 1981, Chantal Hochuli (born 2 June 1955 in Zürich), the daughter and heiress of a Swiss German architect and real estate developer, Johann Gustav "Hans" Hochuli (14 March 1912 in Switzerland – ?), and his German wife Rosmarie Lembeck (8 April 1921, in Essen, Rhine, Prussia, Germany – 12 December 2011).
-They have two sons, Prince Ernst August (born 19 July 1983) and Prince Christian (born 1 June 1985).
-Ernst August and Chantal Hochuli divorced in London on 23 October 1997.
-In 1988, Ernst August unsuccessfully claimed custody of his infant nephew Otto Heinrich, son of his younger brother, Prince Ludwig Rudolph of Hanover.
-Ludwig Rudolph placed a call to his brother in London, imploring him to take care of the couple's 10-month-old son, and shortly afterwards died by suicide.
-Custody of Otto Heinrich was eventually awarded, contrary to the expressed wishes of Ludwig Rudolph as the surviving parent and Ernst August's legal efforts, to the child's maternal grandparents, Count Ariprand (1925–1996) and Countess Maria von Thurn und Valsassina-Como-Vercelli (born 1929), to be raised at their family seat, Bleiburg Castle in southern Austria.
-Second marriage
 
-Ernst August married secondly, civilly in Monaco on 23 January 1999, Princess Caroline of Monaco, who was at the time expecting their daughter, Princess Alexandra (born 20 July 1999).
-As he was descended from George II of Great Britain in the male line, Ernst August sought and received permission to marry pursuant to the British Royal Marriages Act 1772, which would not be repealed until the Succession to the Crown Act 2013 took effect on 26 March 2015.
-Similarly the Monégasque court officially notified the government of France of Caroline's marriage to Ernst August, receiving assurance that there was no objection in compliance with the (since defunct)
-Moreover, in order for Caroline to retain her claim to the throne of Monaco and to transmit succession rights to future offspring, the couple were also obliged to obtain the approval of yet a third nation, in the form of official consent to the marriage of Caroline's father, Prince Rainier III, as the sovereign of Monaco.
-After their marriage, Ernst August and Caroline moved to Le Mée-sur-Seine, France, where they had purchased an 18th-century manor house from their friend Karl Lagerfeld.
-In 2009, it was reported that Caroline had separated from Ernst August and returned to live in Monaco.
-Controversies
+Abdication
 
-Assault on journalist
-
-In 1999, Ernst August was accused of assaulting a journalist with an umbrella.
-Turkish Pavilion
-
-Ernst August was photographed urinating on the Turkish Pavilion at the Expo 2000 event in Hanover, causing a diplomatic incident and a complaint from the Turkish embassy accusing him of insulting the Turkish people.
-Assault charge
-
-In 2000, Ernst August was involved in a dispute with a German man, Joseph Brunnlehner, on the island of Lamu in Kenya.
-Brunnlehner was the operator of a disco, and Ernst August allegedly assaulted him with a knuckleduster, upset about the noise coming from the disco.
-Family property dispute
-
-In 2004, Ernst August had signed over his German property to his elder son, including Marienburg Castle, the agricultural estate of Calenberg Castle, the "Princely House" at Herrenhausen Gardens in Hanover and some forests near Blankenburg Castle (Harz) which he had repurchased in former East Germany after the German reunification of 1990.
-At the time, Ernst August's wealth was estimated as high as $250 million.
-Since then, the younger Ernst August has taken over many representative tasks on behalf of his father.
-In 2013, however, Ernst August was removed from the chairmanship of a family foundation based in Liechtenstein, the Duke of Cumberland Foundation, which holds the properties near Gmunden in Austria, the Hanovers' main residence in exile after 1866 when their Kingdom of Hanover was annexed by Prussia.
-Instead, the younger Ernst August was put in charge, reportedly for negligence on part of his father, at the initiative of the foundation's trustee Prince Michael of Liechtenstein.
-The foundation manages vast forests, a game park, a hunting lodge, the Queen's Villa and other property.
-In 2017, Ernst August filed legal action to recover his chairmanship, and he intends to revoke the bestowal of his German property.
-Assault on police
-
-In 2020, under the influence of alcohol and medication, Ernst August injured a police officer at his hunting lodge in Austria.
-Health
-
-On Sunday, 3 April 2005, Ernst August was admitted to hospital with acute pancreatitis.
-The next day, he fell into a deep coma, two days before the death of his father-in-law, Rainier III, Prince of Monaco.
+Following the 1918 suicide of Grand Duke Adolphus Frederick VI of Mecklenburg-Strelitz, Frederick Francis took up the regency of Strelitz.
+Frederick Francis abdicated the grand ducal throne on 14 November 1918 following the German Empire's defeat in World War I; the regency over the Grand Duchy of Mecklenburg-Strelitz ended at the same time.
+Frederick Francis died on 17 November 1945 in Flensburg, at the age of 63, after being arrested by No6 RAF Security section on 9 November 1945.
+He was succeeded as head of the grand ducal house by his son Hereditary Grand Duke Friedrich Franz.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -153,39 +122,9 @@ The next day, he fell into a deep coma, two days before the death of his father-
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -200,6 +139,23 @@ The next day, he fell into a deep coma, two days before the death of his father-
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -217,6 +173,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,29 +255,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -315,6 +278,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -327,6 +298,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -335,17 +308,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -373,6 +348,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -388,239 +447,223 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1995fa25-31e7-45d7-9462-9007dc074163)
- Call ID: 1995fa25-31e7-45d7-9462-9007dc074163
+  AssignClass (8a893c58-c5b6-47e9-bea7-399908fec5ed)
+ Call ID: 8a893c58-c5b6-47e9-bea7-399908fec5ed
   Args:
-    source: Ernst_August_von_Hannover
     type: :Man
-  AssignClass (639aeb69-5978-46bf-8f5d-629f7e3aa6d2)
- Call ID: 639aeb69-5978-46bf-8f5d-629f7e3aa6d2
+    source: Frederick_Francis_IV
+  AssignClass (20d16cad-9304-4d8b-8d60-c50dd4b22622)
+ Call ID: 20d16cad-9304-4d8b-8d60-c50dd4b22622
   Args:
-    source: Prince_Ernest_Augustus_of_Hannover
+    source: Frederick_Francis_IV
+    type: :Person
+  AddLiteral (e9ea3502-6150-487e-b21e-8dd631876827)
+ Call ID: e9ea3502-6150-487e-b21e-8dd631876827
+  Args:
+    source: Frederick_Francis_IV
+    literal_value: 1882
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (33d73749-bf97-4b33-9259-0c1e89fc88cf)
+ Call ID: 33d73749-bf97-4b33-9259-0c1e89fc88cf
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1945
+    source: Frederick_Francis_IV
+  AssignClass (d7b4933a-ad2c-488e-8533-1875e6ca4bee)
+ Call ID: d7b4933a-ad2c-488e-8533-1875e6ca4bee
+  Args:
+    source: Frederick_Francis_III
     type: :Man
-  AssignClass (9e4e0731-e896-4103-b7f5-f20aee491eac)
- Call ID: 9e4e0731-e896-4103-b7f5-f20aee491eac
+  AssignClass (cef69d05-1da1-471f-a121-16afe79b7d44)
+ Call ID: cef69d05-1da1-471f-a121-16afe79b7d44
+  Args:
+    source: Frederick_Francis_III
+    type: :Person
+  AssignClass (7741cbed-2a48-4f99-b561-6c28d25369cd)
+ Call ID: 7741cbed-2a48-4f99-b561-6c28d25369cd
   Args:
     type: :Woman
-    source: Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg
-  AddLiteral (3b731a6c-a693-41e9-935e-21aa4b4a4f43)
- Call ID: 3b731a6c-a693-41e9-935e-21aa4b4a4f43
+    source: Anastasia_Mikhailovna
+  AssignClass (c35f2d98-4fe3-4aaf-b50f-17431edefa3c)
+ Call ID: c35f2d98-4fe3-4aaf-b50f-17431edefa3c
   Args:
-    source: Ernst_August_von_Hannover
-    relation: :hasBirthYear
-    literal_value: 1954
-    literal_type: xsd:integer
-  AddTriple (69f2dece-2e27-4025-a3a8-0ae88c2ad331)
- Call ID: 69f2dece-2e27-4025-a3a8-0ae88c2ad331
+    source: Anastasia_Mikhailovna
+    type: :Person
+  AddTriple (8c18346d-924b-432c-8316-d1946489bb73)
+ Call ID: 8c18346d-924b-432c-8316-d1946489bb73
   Args:
-    source: Ernst_August_von_Hannover
-    target: Prince_Ernest_Augustus_of_Hannover
     relation: :hasFather
-  AddTriple (be27cfc3-9c78-49fa-93c6-dcde40b812aa)
- Call ID: be27cfc3-9c78-49fa-93c6-dcde40b812aa
+    target: Frederick_Francis_III
+    source: Frederick_Francis_IV
+  AddTriple (f774332f-f412-42e5-9974-6e2387b5b536)
+ Call ID: f774332f-f412-42e5-9974-6e2387b5b536
   Args:
-    source: Ernst_August_von_Hannover
-    target: Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg
+    source: Frederick_Francis_IV
+    target: Anastasia_Mikhailovna
     relation: :hasMother
-  AddLiteral (8e38e15a-b056-44dc-bdd7-825a5bda88ae)
- Call ID: 8e38e15a-b056-44dc-bdd7-825a5bda88ae
+  AssignClass (8a0f7c8e-9e09-46a1-8bdb-1a676ab427d1)
+ Call ID: 8a0f7c8e-9e09-46a1-8bdb-1a676ab427d1
   Args:
-    source: Prince_Ernest_Augustus_of_Hannover
-    literal_type: xsd:integer
-    literal_value: 1914
-    relation: :hasBirthYear
-  AddLiteral (6c8f60e3-5727-4591-a747-8f5ee19314b6)
- Call ID: 6c8f60e3-5727-4591-a747-8f5ee19314b6
+    type: :Man
+    source: Frederick_Francis_II
+  AssignClass (4c9190c1-d317-4106-8742-7749b7841e9c)
+ Call ID: 4c9190c1-d317-4106-8742-7749b7841e9c
   Args:
-    source: Prince_Ernest_Augustus_of_Hannover
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1987
-  AddLiteral (7f63c062-1720-40e4-b445-cbf9985ba8bf)
- Call ID: 7f63c062-1720-40e4-b445-cbf9985ba8bf
+    type: :Person
+    source: Frederick_Francis_II
+  AddTriple (a7e317be-591a-4c86-b465-3f3f3625e221)
+ Call ID: a7e317be-591a-4c86-b465-3f3f3625e221
   Args:
-    relation: :hasBirthYear
-    literal_value: 1925
-    literal_type: xsd:integer
-    source: Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg
-  AddLiteral (5a1e76a0-8741-4c54-a9d4-1ecb335db031)
- Call ID: 5a1e76a0-8741-4c54-a9d4-1ecb335db031
+    relation: :isFatherOf
+    target: Frederick_Francis_III
+    source: Frederick_Francis_II
+  AssignClass (80d5dff7-bec2-46e9-9a8a-abb3a93e867f)
+ Call ID: 80d5dff7-bec2-46e9-9a8a-abb3a93e867f
   Args:
-    literal_value: 1980
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg
-  AssignClass (9143f0ec-d3d3-48ec-b496-943404737050)
- Call ID: 9143f0ec-d3d3-48ec-b496-943404737050
-  Args:
-    source: Chantal_Hochuli
+    source: Alexandrine
     type: :Woman
-  AddLiteral (9f78e52b-8288-479a-b8aa-781119eadc46)
- Call ID: 9f78e52b-8288-479a-b8aa-781119eadc46
+  AssignClass (aee0805a-5099-46b1-b832-e502833a5970)
+ Call ID: aee0805a-5099-46b1-b832-e502833a5970
   Args:
-    source: Chantal_Hochuli
-    relation: :hasBirthYear
-    literal_value: 1955
-    literal_type: xsd:integer
-  AddLiteral (6d4b472d-d723-4fa1-bd61-b76a6d24537a)
- Call ID: 6d4b472d-d723-4fa1-bd61-b76a6d24537a
+    source: Alexandrine
+    type: :Person
+  AssignClass (5c25f5f2-e2e8-407b-a7d8-9b331db743bf)
+ Call ID: 5c25f5f2-e2e8-407b-a7d8-9b331db743bf
   Args:
-    source: Ernst_August_von_Hannover
+    type: :Woman
+    source: Cecilie
+  AssignClass (dd416ec0-8186-4877-8395-12cd96a59156)
+ Call ID: dd416ec0-8186-4877-8395-12cd96a59156
+  Args:
+    source: Cecilie
+    type: :Person
+  AddTriple (b2de7aba-2847-4f84-82c6-a7f36e71f82a)
+ Call ID: b2de7aba-2847-4f84-82c6-a7f36e71f82a
+  Args:
+    source: Frederick_Francis_IV
+    relation: :isSiblingOf
+    target: Alexandrine
+  AddTriple (20549089-9f7b-4347-b35a-1fd6d8705e3a)
+ Call ID: 20549089-9f7b-4347-b35a-1fd6d8705e3a
+  Args:
+    relation: :isSiblingOf
+    target: Cecilie
+    source: Frederick_Francis_IV
+  AssignClass (4b5bf3e1-e667-46d4-8e97-86efca12b796)
+ Call ID: 4b5bf3e1-e667-46d4-8e97-86efca12b796
+  Args:
+    source: Johann_Albrecht
+    type: :Man
+  AssignClass (0fefbd90-b4ee-4855-84b9-7781d5e595bd)
+ Call ID: 0fefbd90-b4ee-4855-84b9-7781d5e595bd
+  Args:
+    type: :Person
+    source: Johann_Albrecht
+  AddTriple (fa424eb2-5995-449d-99c5-4ffcde93d72a)
+ Call ID: fa424eb2-5995-449d-99c5-4ffcde93d72a
+  Args:
+    source: Johann_Albrecht
+    relation: :isSiblingOf
+    target: Frederick_Francis_III
+  AssignClass (066d8bdc-0456-4340-8c42-864e9f626303)
+ Call ID: 066d8bdc-0456-4340-8c42-864e9f626303
+  Args:
+    type: :Woman
+    source: Alexandra_of_Hanover
+  AssignClass (a671b812-49d5-4716-8827-3f8d8b1abd8d)
+ Call ID: a671b812-49d5-4716-8827-3f8d8b1abd8d
+  Args:
+    type: :Person
+    source: Alexandra_of_Hanover
+  AddTriple (b3563e3f-1628-4fb1-9e83-047e54e90476)
+ Call ID: b3563e3f-1628-4fb1-9e83-047e54e90476
+  Args:
+    source: Frederick_Francis_IV
+    target: Alexandra_of_Hanover
+    relation: :hasRelation
+  AddLiteral (6eee95f3-84a1-4448-956a-8c44d5ce252e)
+ Call ID: 6eee95f3-84a1-4448-956a-8c44d5ce252e
+  Args:
+    literal_value: 1904
     relation: :hasMarriageYear
     literal_type: xsd:integer
-    literal_value: 1981
-  AddTriple (984c5062-3801-47c1-bf55-6e4340dfe7df)
- Call ID: 984c5062-3801-47c1-bf55-6e4340dfe7df
-  Args:
-    relation: :hasRelation
-    source: Ernst_August_von_Hannover
-    target: Chantal_Hochuli
-  AssignClass (c6755259-101d-4fe3-8aa5-c85a463beec7)
- Call ID: c6755259-101d-4fe3-8aa5-c85a463beec7
-  Args:
-    source: Prince_Ernst_August_1983
-    type: :Man
-  AssignClass (8cd910fb-e64e-4c8b-90db-0ec4789633ef)
- Call ID: 8cd910fb-e64e-4c8b-90db-0ec4789633ef
+    source: Frederick_Francis_IV
+  AssignClass (b787b166-1683-4d0e-be7f-bac8d623be4d)
+ Call ID: b787b166-1683-4d0e-be7f-bac8d623be4d
   Args:
     type: :Man
-    source: Prince_Christian_1985
-  AddTriple (62acd122-e8d3-4511-bf81-854b26d29d23)
- Call ID: 62acd122-e8d3-4511-bf81-854b26d29d23
+    source: Ernest_Augustus_of_Hanover
+  AssignClass (2f47b1ff-351c-4ffd-b5a1-a17fd9ff5066)
+ Call ID: 2f47b1ff-351c-4ffd-b5a1-a17fd9ff5066
   Args:
-    target: Ernst_August_von_Hannover
-    source: Prince_Ernst_August_1983
-    relation: :isSonOf
-  AddTriple (80590333-0b2e-44d8-a1e8-56bd6e7df6c2)
- Call ID: 80590333-0b2e-44d8-a1e8-56bd6e7df6c2
+    source: Ernest_Augustus_of_Hanover
+    type: :Person
+  AssignClass (37599843-02ad-4fd2-a171-3b1475fec9ad)
+ Call ID: 37599843-02ad-4fd2-a171-3b1475fec9ad
   Args:
-    source: Prince_Ernst_August_1983
-    target: Chantal_Hochuli
-    relation: :isSonOf
-  AddTriple (31bfcecd-1126-46f0-b2e8-f1800044ab8e)
- Call ID: 31bfcecd-1126-46f0-b2e8-f1800044ab8e
-  Args:
-    relation: :isSonOf
-    source: Prince_Christian_1985
-    target: Ernst_August_von_Hannover
-  AddTriple (a493ff21-58b4-4f37-9fb4-3afad045879d)
- Call ID: a493ff21-58b4-4f37-9fb4-3afad045879d
-  Args:
-    target: Chantal_Hochuli
-    source: Prince_Christian_1985
-    relation: :isSonOf
-  AssignClass (e131d2c3-c03f-49fe-b737-a455a3735951)
- Call ID: e131d2c3-c03f-49fe-b737-a455a3735951
-  Args:
-    source: Princess_Caroline_of_Monaco
+    source: Thyra_of_Denmark
     type: :Woman
-  AddLiteral (b92d2a65-c66d-49ec-8a01-408bbb1e8b8d)
- Call ID: b92d2a65-c66d-49ec-8a01-408bbb1e8b8d
+  AssignClass (d55483fb-baa2-40a3-9322-65b26467caf9)
+ Call ID: d55483fb-baa2-40a3-9322-65b26467caf9
   Args:
-    source: Ernst_August_von_Hannover
-    relation: :hasMarriageYear
-    literal_value: 1999
-    literal_type: xsd:integer
-  AddTriple (75aefdd6-2a37-4736-80b3-d716640455a3)
- Call ID: 75aefdd6-2a37-4736-80b3-d716640455a3
+    type: :Person
+    source: Thyra_of_Denmark
+  AddTriple (06f2f7a2-aef4-4fd7-ac1f-5ec9adf7c828)
+ Call ID: 06f2f7a2-aef4-4fd7-ac1f-5ec9adf7c828
   Args:
-    relation: :hasRelation
-    target: Princess_Caroline_of_Monaco
-    source: Ernst_August_von_Hannover
-  AssignClass (bde6f4c7-a264-4970-a1a1-deb3983c2b28)
- Call ID: bde6f4c7-a264-4970-a1a1-deb3983c2b28
+    source: Alexandra_of_Hanover
+    target: Ernest_Augustus_of_Hanover
+    relation: :hasFather
+  AddTriple (f2659fc2-ba79-4eaa-8139-ec446032660f)
+ Call ID: f2659fc2-ba79-4eaa-8139-ec446032660f
   Args:
-    source: Princess_Alexandra_1999
-    type: :Woman
-  AddTriple (a8da06dd-7289-464d-a5b7-30fbecb89bf3)
- Call ID: a8da06dd-7289-464d-a5b7-30fbecb89bf3
+    source: Alexandra_of_Hanover
+    target: Thyra_of_Denmark
+    relation: :hasMother
+  AssignClass (5c1a41b5-8cb1-477a-8195-d49832566a42)
+ Call ID: 5c1a41b5-8cb1-477a-8195-d49832566a42
   Args:
-    target: Ernst_August_von_Hannover
-    source: Princess_Alexandra_1999
-    relation: :isDaughterOf
-  AddTriple (05f587e0-81d7-47dd-8efc-0ac7439f0ec7)
- Call ID: 05f587e0-81d7-47dd-8efc-0ac7439f0ec7
-  Args:
-    relation: :isDaughterOf
-    target: Princess_Caroline_of_Monaco
-    source: Princess_Alexandra_1999
-  AssignClass (806b6d59-4f84-400e-a31d-3035d46746d0)
- Call ID: 806b6d59-4f84-400e-a31d-3035d46746d0
-  Args:
-    source: Prince_Ludwig_Rudolph_of_Hannover
+    source: Christian_IX
     type: :Man
-  AddTriple (c3487bb3-44ce-48ff-aa1c-2294e761d1e6)
- Call ID: c3487bb3-44ce-48ff-aa1c-2294e761d1e6
+  AssignClass (3b6060f1-d8e4-436b-8e4b-e27e584f13cc)
+ Call ID: 3b6060f1-d8e4-436b-8e4b-e27e584f13cc
   Args:
-    relation: :isBrotherOf
-    source: Prince_Ludwig_Rudolph_of_Hannover
-    target: Ernst_August_von_Hannover
-  AssignClass (5ec35223-945f-431e-9002-cf30d862c1c5)
- Call ID: 5ec35223-945f-431e-9002-cf30d862c1c5
+    type: :Person
+    source: Christian_IX
+  AddTriple (e5b2f4f3-694a-4cb7-a8c1-93c1ee1a75d0)
+ Call ID: e5b2f4f3-694a-4cb7-a8c1-93c1ee1a75d0
   Args:
-    type: :Man
-    source: Otto_Heinrich
-  AddTriple (18f57857-1091-4051-9dea-a60a217543fa)
- Call ID: 18f57857-1091-4051-9dea-a60a217543fa
-  Args:
-    source: Otto_Heinrich
-    target: Prince_Ludwig_Rudolph_of_Hannover
-    relation: :isSonOf
-  AssignClass (ee48f1ea-6eab-4bfc-88c1-80cfc6e48649)
- Call ID: ee48f1ea-6eab-4bfc-88c1-80cfc6e48649
-  Args:
-    source: Johann_Gustav_Hans_Hochuli
-    type: :Man
-  AssignClass (c3fcb250-5131-412c-a6b8-bf48bddd2005)
- Call ID: c3fcb250-5131-412c-a6b8-bf48bddd2005
-  Args:
-    source: Rosmarie_Lembeck
-    type: :Woman
-  AddTriple (393614d8-3fbc-4c47-8997-0eb2f1b4623b)
- Call ID: 393614d8-3fbc-4c47-8997-0eb2f1b4623b
-  Args:
-    source: Johann_Gustav_Hans_Hochuli
-    target: Chantal_Hochuli
     relation: :isFatherOf
-  AddTriple (59eb7a73-47a6-46d0-931a-88987b408929)
- Call ID: 59eb7a73-47a6-46d0-931a-88987b408929
+    target: Thyra_of_Denmark
+    source: Christian_IX
+  AssignClass (398ce1b9-6099-4eaa-a6da-c69f675da066)
+ Call ID: 398ce1b9-6099-4eaa-a6da-c69f675da066
   Args:
-    relation: :isMotherOf
-    source: Rosmarie_Lembeck
-    target: Chantal_Hochuli
-  AssignClass (ea69c3df-ace5-4ed8-b68c-ac3944f867f4)
- Call ID: ea69c3df-ace5-4ed8-b68c-ac3944f867f4
+    source: Adolphus_Frederick_VI
+    type: :Man
+  AssignClass (8b27a0e8-6ed1-43cd-9295-0db57868612b)
+ Call ID: 8b27a0e8-6ed1-43cd-9295-0db57868612b
+  Args:
+    source: Adolphus_Frederick_VI
+    type: :Person
+  AssignClass (e081dc22-0070-4f08-94bc-43834d3bcd44)
+ Call ID: e081dc22-0070-4f08-94bc-43834d3bcd44
   Args:
     type: :Man
-    source: Count_Ariprand
-  AssignClass (cd64deff-1a2f-4b0f-9fa4-38b71cf920fc)
- Call ID: cd64deff-1a2f-4b0f-9fa4-38b71cf920fc
+    source: Friedrich_Franz_son
+  AssignClass (5ca63a6b-23e4-4462-8fbf-c7291d1dab99)
+ Call ID: 5ca63a6b-23e4-4462-8fbf-c7291d1dab99
   Args:
-    source: Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli
-    type: :Woman
-  AddTriple (caf63260-a649-40e1-b058-1d0ed141ab60)
- Call ID: caf63260-a649-40e1-b058-1d0ed141ab60
+    source: Friedrich_Franz_son
+    type: :Person
+  AddTriple (6ee51933-2eab-4ce9-96f9-362f2192d5dd)
+ Call ID: 6ee51933-2eab-4ce9-96f9-362f2192d5dd
   Args:
-    source: Count_Ariprand
-    target: Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli
-    relation: :isFatherOf
-  AddTriple (526afc99-7d4b-490c-b4b6-37863ac106de)
- Call ID: 526afc99-7d4b-490c-b4b6-37863ac106de
-  Args:
-    source: Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli
-    target: Countess_Maria_von_Thurn_und_Valsassina-Como-Vercelli
-    relation: :isMotherOf
-  AssignClass (ed189368-371f-42aa-bc4b-9f0cffdff5e1)
- Call ID: ed189368-371f-42aa-bc4b-9f0cffdff5e1
-  Args:
-    type: :Man
-    source: Prince_Rainier_III
-  AddTriple (9b97a3e6-d3e0-4043-b330-60ae9b431fcd)
- Call ID: 9b97a3e6-d3e0-4043-b330-60ae9b431fcd
-  Args:
-    target: Princess_Caroline_of_Monaco
-    source: Prince_Rainier_III
-    relation: :isFatherOf
-  Finish (9c5f00d1-ee35-4646-9c16-9deaaeafc35a)
- Call ID: 9c5f00d1-ee35-4646-9c16-9deaaeafc35a
+    source: Frederick_Francis_IV
+    target: Friedrich_Franz_son
+    relation: :hasSon
+  Finish (7c78e161-9744-466c-ab94-5b9f33ee4b04)
+ Call ID: 7c78e161-9744-466c-ab94-5b9f33ee4b04
   Args:

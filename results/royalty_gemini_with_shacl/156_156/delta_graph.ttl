@@ -2,49 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Olga_of_Greece_and_Denmark a :Person,
+data:Alexander_Georg_Karl_Heinrich a :Man ;
+    :hasFather data:Georg_Donatus ;
+    :hasMother data:Cecilie_of_Greece_and_Denmark .
+
+data:Johanna_Marina_Eleonore a :Woman ;
+    :hasFather data:Georg_Donatus ;
+    :hasMother data:Cecilie_of_Greece_and_Denmark .
+
+data:Ludwig_Ernst_Andreas a :Man ;
+    :hasFather data:Georg_Donatus ;
+    :hasMother data:Cecilie_of_Greece_and_Denmark .
+
+data:Alice_of_Battenberg a :Ancestor,
+        :Woman .
+
+data:Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man .
+
+data:Louis_of_Hesse a :Man ;
+    :hasFather data:Ernest_Louis ;
+    :hasMother data:Eleonore_of_Solms-Hohensolms-Lich .
+
+data:Eleonore_of_Solms-Hohensolms-Lich a :Ancestor,
+        :Woman .
+
+data:Ernest_Louis a :Ancestor,
+        :Man .
+
+data:Cecilie_of_Greece_and_Denmark a :Ancestor,
         :Woman ;
-    :hasAncestor data:George_I_of_Greece ;
-    :hasBirthYear 1903 ;
-    :hasDaughter data:Elizabeth_of_Yugoslavia ;
-    :hasDeathYear 1997 ;
-    :hasFather data:Nicholas_of_Greece_and_Denmark ;
-    :hasMarriageYear 1923 ;
-    :hasMother data:Elena_Vladimirovna_of_Russia ;
-    :hasRelation data:Paul_of_Yugoslavia ;
-    :hasSister data:Elizabeth_of_Greece_and_Denmark,
-        data:Marina_of_Greece_and_Denmark ;
-    :hasSon data:Alexander_of_Yugoslavia,
-        data:Nikola_of_Yugoslavia ;
-    :knownAs "Princess Paul of Yugoslavia"^^xsd:string .
+    :hasFather data:Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Alice_of_Battenberg .
 
-data:Alexander_of_Yugoslavia a :Man,
-        :Person .
-
-data:Elena_Vladimirovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Elizabeth_of_Greece_and_Denmark a :Person,
-        :Woman .
-
-data:Elizabeth_of_Yugoslavia a :Person,
-        :Woman .
-
-data:George_I_of_Greece a :Ancestor,
-        :Man,
-        :Person .
-
-data:Marina_of_Greece_and_Denmark a :Person,
-        :Woman .
-
-data:Nicholas_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person .
-
-data:Nikola_of_Yugoslavia a :Man,
-        :Person .
-
-data:Paul_of_Yugoslavia a :Man,
-        :Person .
+data:Georg_Donatus a :Ancestor,
+        :Man ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Louis_of_Hesse ;
+    :hasDeathYear 1937 ;
+    :hasFather data:Ernest_Louis ;
+    :hasMother data:Eleonore_of_Solms-Hohensolms-Lich .
 

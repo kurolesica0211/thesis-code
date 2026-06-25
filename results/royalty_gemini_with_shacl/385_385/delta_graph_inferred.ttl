@@ -1,0 +1,99 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FriedrichGuntherPrinceOfSchwarzburg a :Man,
+        :Person ;
+    :hasBrother data:FriedrichGuntherPrinceOfSchwarzburg ;
+    :hasRelation data:FriedrichGuntherPrinceOfSchwarzburg,
+        data:MarieAntoinetteOfSchwarzburg,
+        data:PrincessFeodoraOfSaxeMeiningen,
+        data:SophieLouiseOfSaxeWeimarEisenach,
+        data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :hasSister data:MarieAntoinetteOfSchwarzburg ;
+    :isBloodrelationOf data:FriedrichGuntherPrinceOfSchwarzburg,
+        data:MarieAntoinetteOfSchwarzburg ;
+    :isBrotherOf data:FriedrichGuntherPrinceOfSchwarzburg,
+        data:MarieAntoinetteOfSchwarzburg ;
+    :isSiblingOf data:FriedrichGuntherPrinceOfSchwarzburg,
+        data:MarieAntoinetteOfSchwarzburg .
+
+data:MarieAntoinetteOfSchwarzburg a :Person,
+        :Woman ;
+    :hasBrother data:FriedrichGuntherPrinceOfSchwarzburg ;
+    :hasRelation data:FriedrichGuntherPrinceOfSchwarzburg,
+        data:MarieAntoinetteOfSchwarzburg,
+        data:PrincessFeodoraOfSaxeMeiningen,
+        data:SophieLouiseOfSaxeWeimarEisenach,
+        data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :hasSister data:MarieAntoinetteOfSchwarzburg ;
+    :isBloodrelationOf data:FriedrichGuntherPrinceOfSchwarzburg,
+        data:MarieAntoinetteOfSchwarzburg ;
+    :isSiblingOf data:FriedrichGuntherPrinceOfSchwarzburg,
+        data:MarieAntoinetteOfSchwarzburg ;
+    :isSisterOf data:FriedrichGuntherPrinceOfSchwarzburg,
+        data:MarieAntoinetteOfSchwarzburg .
+
+data:PrincessFeodoraOfSaxeMeiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:SophieLouiseOfSaxeWeimarEisenach ;
+    :hasDaughter data:SophieLouiseOfSaxeWeimarEisenach ;
+    :hasRelation data:FriedrichGuntherPrinceOfSchwarzburg,
+        data:MarieAntoinetteOfSchwarzburg,
+        data:PrincessFeodoraOfSaxeMeiningen,
+        data:SophieLouiseOfSaxeWeimarEisenach,
+        data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :hasSister data:PrincessFeodoraOfSaxeMeiningen ;
+    :isAncestorOf data:SophieLouiseOfSaxeWeimarEisenach ;
+    :isAuntOf data:SophieLouiseOfSaxeWeimarEisenach ;
+    :isBloodrelationOf data:PrincessFeodoraOfSaxeMeiningen ;
+    :isMotherOf data:SophieLouiseOfSaxeWeimarEisenach ;
+    :isParentOf data:SophieLouiseOfSaxeWeimarEisenach ;
+    :isSiblingOf data:PrincessFeodoraOfSaxeMeiningen ;
+    :isSisterOf data:PrincessFeodoraOfSaxeMeiningen .
+
+data:WilliamErnestGrandDukeOfSaxeWeimarEisenach a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :hasChild data:SophieLouiseOfSaxeWeimarEisenach ;
+    :hasDaughter data:SophieLouiseOfSaxeWeimarEisenach ;
+    :hasRelation data:FriedrichGuntherPrinceOfSchwarzburg,
+        data:MarieAntoinetteOfSchwarzburg,
+        data:PrincessFeodoraOfSaxeMeiningen,
+        data:SophieLouiseOfSaxeWeimarEisenach,
+        data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :isAncestorOf data:SophieLouiseOfSaxeWeimarEisenach ;
+    :isBloodrelationOf data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :isBrotherOf data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :isFatherOf data:SophieLouiseOfSaxeWeimarEisenach ;
+    :isParentOf data:SophieLouiseOfSaxeWeimarEisenach ;
+    :isSiblingOf data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :isUncleOf data:SophieLouiseOfSaxeWeimarEisenach .
+
+data:SophieLouiseOfSaxeWeimarEisenach a :Person,
+        :Woman ;
+    :hasAncestor data:PrincessFeodoraOfSaxeMeiningen,
+        data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1988 ;
+    :hasFather data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:PrincessFeodoraOfSaxeMeiningen ;
+    :hasParent data:PrincessFeodoraOfSaxeMeiningen,
+        data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :hasRelation data:FriedrichGuntherPrinceOfSchwarzburg,
+        data:MarieAntoinetteOfSchwarzburg,
+        data:PrincessFeodoraOfSaxeMeiningen,
+        data:SophieLouiseOfSaxeWeimarEisenach,
+        data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :hasSister data:SophieLouiseOfSaxeWeimarEisenach ;
+    :isBloodrelationOf data:SophieLouiseOfSaxeWeimarEisenach ;
+    :isChildOf data:PrincessFeodoraOfSaxeMeiningen,
+        data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :isDaughterOf data:PrincessFeodoraOfSaxeMeiningen,
+        data:WilliamErnestGrandDukeOfSaxeWeimarEisenach ;
+    :isSiblingOf data:SophieLouiseOfSaxeWeimarEisenach ;
+    :isSisterOf data:SophieLouiseOfSaxeWeimarEisenach .
+

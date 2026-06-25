@@ -1,0 +1,264 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Christian_X_of_Denmark a :Man,
+        :Person ;
+    rdfs:label "Christian X of Denmark"^^xsd:string ;
+    data:posIndicesFull "3813:3824"^^xsd:string ;
+    data:posIndicesPart "4157:4164"^^xsd:string,
+        "4343:4352"^^xsd:string,
+        "5038:5045"^^xsd:string,
+        "5375:5382"^^xsd:string ;
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm"^^xsd:string,
+        "Christian X"^^xsd:string ;
+    :hasBrother data:Christian_X_of_Denmark ;
+    :hasRelation data:Christian_X_of_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Christian_X_of_Denmark ;
+    :isBrotherOf data:Christian_X_of_Denmark ;
+    :isSiblingOf data:Christian_X_of_Denmark .
+
+data:Count_Christian_of_Rosenborg a :Man,
+        :Person ;
+    rdfs:label "Count Christian of Rosenborg"^^xsd:string ;
+    data:posIndicesFull "2834:2861"^^xsd:string,
+        "2841:2861"^^xsd:string,
+        "523:550"^^xsd:string,
+        "530:550"^^xsd:string ;
+    data:posIndicesPart "3179:3188"^^xsd:string,
+        "3361:3370"^^xsd:string,
+        "3603:3612"^^xsd:string,
+        "3626:3635"^^xsd:string,
+        "3688:3697"^^xsd:string,
+        "4343:4352"^^xsd:string ;
+    data:wdtLink wdt:Q573263 ;
+    :alsoKnownAs "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Denmark"^^xsd:string,
+        "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Rosenborg"^^xsd:string,
+        "Christian of Denmark"^^xsd:string,
+        "Christian of Rosenborg"^^xsd:string,
+        "Christian zu Schleswig-Holstein-Sonderburg-Glücksburg, Prince of Denmark"^^xsd:string,
+        "Count Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Rosenborg"^^xsd:string,
+        "Prince Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Denmark"^^xsd:string,
+        "Prince Christian of Denmark"^^xsd:string ;
+    :hasBrother data:Count_Christian_of_Rosenborg ;
+    :hasRelation data:Count_Christian_of_Rosenborg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Count_Christian_of_Rosenborg ;
+    :isBrotherOf data:Count_Christian_of_Rosenborg ;
+    :isSiblingOf data:Count_Christian_of_Rosenborg .
+
+data:Ingrid_of_Sweden a :Person,
+        :Woman ;
+    rdfs:label "Ingrid of Sweden"^^xsd:string ;
+    data:posIndicesFull "4717:4733"^^xsd:string ;
+    data:wdtLink wdt:Q163010 ;
+    :alsoKnownAs "Ingrid Victoria Sofia Louise Margareta"^^xsd:string,
+        "Ingrid of Sweden"^^xsd:string,
+        "Ingrid, Queen of Denmark"^^xsd:string,
+        "Princess Ingrid of Sweden"^^xsd:string,
+        "Queen Ingrid"^^xsd:string ;
+    :hasRelation data:Ingrid_of_Sweden ;
+    :hasSex data:female ;
+    :hasSister data:Ingrid_of_Sweden ;
+    :isBloodrelationOf data:Ingrid_of_Sweden ;
+    :isSiblingOf data:Ingrid_of_Sweden ;
+    :isSisterOf data:Ingrid_of_Sweden .
+
+data:Prince_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Wilhelm of Prussia"^^xsd:string ;
+    data:posIndicesFull "1617:1642"^^xsd:string ;
+    data:posIndicesPart "2887:2893"^^xsd:string,
+        "3172:3178"^^xsd:string,
+        "3719:3725"^^xsd:string,
+        "4926:4932"^^xsd:string ;
+    data:wdtLink wdt:Q77556 ;
+    :alsoKnownAs "Prince Wilhelm Friedrich Franz Joseph Christian Olaf of Prussia"^^xsd:string ;
+    :hasBrother data:Prince_Wilhelm_of_Prussia ;
+    :hasRelation data:Prince_Wilhelm_of_Prussia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Prince_Wilhelm_of_Prussia .
+
+data:male a :Male .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Anastasia Mikhailovna of Russia"^^xsd:string ;
+    data:posIndicesFull "1037:1082"^^xsd:string,
+        "1051:1082"^^xsd:string,
+        "311:356"^^xsd:string,
+        "325:356"^^xsd:string ;
+    data:posIndicesPart "1374:1381"^^xsd:string,
+        "1503:1508"^^xsd:string,
+        "1563:1570"^^xsd:string,
+        "1752:1758"^^xsd:string,
+        "1887:1892"^^xsd:string,
+        "2790:2797"^^xsd:string,
+        "3079:3084"^^xsd:string,
+        "3148:3155"^^xsd:string,
+        "3893:3899"^^xsd:string,
+        "693:700"^^xsd:string,
+        "800:805"^^xsd:string,
+        "902:907"^^xsd:string,
+        "989:994"^^xsd:string ;
+    data:wdtLink wdt:Q232159 ;
+    :alsoKnownAs "Anastasia Mikhailovna of Russia"^^xsd:string,
+        "Anastasia Mikhailovna, Grand Duchess of Mecklenburg-Schwerin"^^xsd:string,
+        "Anastasia, Grand Duchess of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isAuntOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isMotherOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Francis II"^^xsd:string ;
+    data:posIndicesFull "1000:1020"^^xsd:string ;
+    data:posIndicesPart "1446:1455"^^xsd:string,
+        "1456:1463"^^xsd:string ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II."^^xsd:string ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Frederick_Francis_III ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III ;
+    :hasSex data:male ;
+    :hasSon data:Frederick_Francis_III ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isFatherOf data:Frederick_Francis_III ;
+    :isParentOf data:Frederick_Francis_III ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isUncleOf data:Frederick_Francis_III .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Francis III"^^xsd:string ;
+    data:posIndicesFull "248:269"^^xsd:string,
+        "248:305"^^xsd:string ;
+    data:posIndicesPart "1446:1455"^^xsd:string,
+        "1456:1463"^^xsd:string,
+        "872:881"^^xsd:string,
+        "882:889"^^xsd:string ;
+    data:wdtLink wdt:Q57974 ;
+    :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz III"^^xsd:string,
+        "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_II ;
+    :hasBrother data:Frederick_Francis_III ;
+    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasParent data:Frederick_Francis_II ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III ;
+    :hasSex data:male ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Frederick_Francis_III ;
+    :isBrotherOf data:Frederick_Francis_III ;
+    :isChildOf data:Frederick_Francis_II ;
+    :isFatherOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_III ;
+    :isSonOf data:Frederick_Francis_II ;
+    :isUncleOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    rdfs:label "Alexandrine of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "0:35"^^xsd:string ;
+    data:posIndicesPart "1141:1152"^^xsd:string,
+        "1306:1314"^^xsd:string,
+        "1382:1393"^^xsd:string,
+        "1517:1528"^^xsd:string,
+        "1529:1537"^^xsd:string,
+        "1945:1956"^^xsd:string,
+        "2010:2018"^^xsd:string,
+        "2203:2214"^^xsd:string,
+        "2261:2272"^^xsd:string,
+        "2328:2339"^^xsd:string,
+        "2554:2565"^^xsd:string,
+        "2798:2809"^^xsd:string,
+        "2978:2986"^^xsd:string,
+        "3156:3167"^^xsd:string,
+        "3731:3742"^^xsd:string,
+        "3766:3777"^^xsd:string,
+        "3830:3841"^^xsd:string,
+        "3928:3939"^^xsd:string,
+        "4451:4462"^^xsd:string,
+        "4493:4504"^^xsd:string,
+        "450:461"^^xsd:string,
+        "4575:4586"^^xsd:string,
+        "5433:5444"^^xsd:string,
+        "5514:5525"^^xsd:string,
+        "560:571"^^xsd:string,
+        "670:681"^^xsd:string,
+        "704:715"^^xsd:string,
+        "716:724"^^xsd:string,
+        "766:774"^^xsd:string,
+        "815:826"^^xsd:string,
+        "827:835"^^xsd:string,
+        "916:927"^^xsd:string,
+        "928:936"^^xsd:string ;
+    data:wdtLink wdt:Q57264 ;
+    :alsoKnownAs "Alexandrine Auguste of Mecklenburg-Schwerin"^^xsd:string,
+        "Alexandrine, Queen of Denmark"^^xsd:string,
+        "Duchess Alexandrine Auguste of Mecklenburg-Schwerin"^^xsd:string,
+        "Duchess Alexandrine of Mecklenburg-Schwerin"^^xsd:string,
+        "Queen Alexandrine of Denmark"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:female ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isDaughterOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Alexandrine_of_Mecklenburg-Schwerin .
+

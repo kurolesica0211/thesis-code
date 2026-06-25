@@ -2,40 +2,61 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_William_of_Gloucester a :Man,
+data:Prince_Georg_of_Hanover a :Man ;
+    :hasParent data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Karl_of_Hesse a :Man ;
+    :hasParent data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Rainer_of_Hesse a :Man ;
+    :hasParent data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Welf_of_Hanover a :Man ;
+    :hasParent data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Princess_Christina_of_Hesse a :Woman ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2011 ;
+    :hasFather data:Prince_Christoph_of_Hesse ;
+    :hasMarriageYear 1956,
+        1962 ;
+    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Andrew_of_Yugoslavia,
+        data:Robert_van_Eyck .
+
+data:Princess_Clarissa_of_Hesse a :Woman ;
+    :hasParent data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Princess_Dorothea_of_Hesse a :Woman ;
+    :hasParent data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Princess_Friederike_of_Hanover a :Woman ;
+    :hasParent data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Andrew_of_Yugoslavia a :Man .
+
+data:Robert_van_Eyck a :Man .
+
+data:Prince_George_William_of_Hanover a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Christoph_of_Hesse a :Ancestor,
+        :Man,
         :Person ;
-    :hasBirthYear 1941 ;
-    :hasBrother data:Prince_Richard ;
-    :hasDeathYear 1972 ;
-    :hasFather data:Prince_Henry_Duke_of_Gloucester ;
-    :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
-    :hasSex data:Male .
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1943 .
 
-data:George_V a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
-
-data:Prince_Richard a :Man,
-        :Person ;
-    :hasFather data:Prince_Henry_Duke_of_Gloucester ;
-    :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
-    :hasSex data:Male .
-
-data:Queen_Mary a :Ancestor,
+data:Princess_Sophie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
         :Woman ;
-    :hasSex data:Female .
-
-data:Female a :Sex .
-
-data:Prince_Henry_Duke_of_Gloucester a :Ancestor,
-        :Man ;
-    :hasFather data:George_V ;
-    :hasMother data:Queen_Mary ;
-    :hasSex data:Male .
-
-data:Princess_Alice_Duchess_of_Gloucester a :Ancestor,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Male a :Sex .
+    :hasBirthYear 1914 ;
+    :hasDeathYear 2001 .
 

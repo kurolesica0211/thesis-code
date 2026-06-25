@@ -69,37 +69,32 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Paul Dmitrievich Romanovsky-Ilyinsky (January 27, 1928 – February 10, 2004) was a three-time mayor of Palm Beach, Florida, and the only child of Grand Duke Dmitri Pavlovich of Russia and his morganatic wife, Cincinnati heiress Audrey Emery.
-He was a great-grandson of Tsar Alexander II of Russia and, following the death of Grand Duke Vladimir Kirillovich in 1992, the heir-male of the Ilyinsky claim of the House of Romanov (a position now held by his elder son), a first cousin once removed of Nicholas II, first cousin of Prince Lennart of Sweden, Duke of Småland and the second cousin of Charles III.
-Early life
+Norton Louis Philip Knatchbull, 3rd Earl Mountbatten of Burma (born 8 October 1947), known until 2005 as Lord Romsey and until 2017 as the Lord Brabourne, is a British peer.
+Life and education
 
-Prince Paul Romanovsky-Ilyinsky was born on 27 January 1928 at his parents' home, 26 Manchester Square, London.
-His father, Grand Duke Dmitri, as a direct consequence of his involvement in the murder of Grigori Rasputin in 1916, had been sent to the Persian front, which ultimately saved his life, as many of his Imperial relatives were executed by the Bolsheviks during the October Revolution .
-Dmitri, who was working as a champagne salesman, married Cincinnati heiress Audrey Emery in 1926.
-Grand Duke Cyril Vladimirovich of Russia, Dmitri's cousin and the self-proclaimed emperor in exile, elevated Grand Duke Dmitri's wife and their descendants to Russian princely (Russian: knyaz) rank (rank of nobility, not royalty).
-Any children the couple would have would be known as Romanovsky-Ilyinsky, the latter half of the surname derived from Dmitri's former property in Russia, Ilinskoe.
-Ilynskiy's parents were divorced in 1937, and Ilyinsky was raised by his mother, who mostly lived in France.
-Dmitri Pavlovich's health had always been somewhat frail, and in the 1930s, his chronic tuberculosis became acute, leading to his death in 1942.
-Education and career
+Mountbatten was born at King's College Hospital in London as the eldest son of Patricia Knatchbull, née Mountbatten, later 2nd Countess Mountbatten of Burma, and film producer John Knatchbull, 7th Baron Brabourne.
+Mountbatten was educated at the Dragon School, in Oxford, and Gordonstoun School, Elgin, Moray, Scotland.
+He also succeeded to the Knatchbull Baronetcy, of Mersham Hatch in the County of Kent, in the baronetage of England.
+On the death of his mother on 13 June 2017, he became Earl Mountbatten of Burma, also a title in the peerage of the United Kingdom created for his grandfather, Admiral of the Fleet Lord Louis Mountbatten.
+Mountbatten is the godfather of Philip's grandson, the Prince of Wales.
+He is also related to author Jane Austen, as his father, John Knatchbull, 7th Baron Brabourne, was a direct descendant of her brother Edward Austen Knight.
+Marriage and children
 
-Ilyinsky, who was a U.S. citizen, attended Woodberry Forest School in Virginia and the Royal Military Academy Sandhurst, England, before joining the U.S. Marine Corps.
-Ilyinsky lived in Cincinnati for about 20 years, serving on the board of the company founded by his mother's family, Emery Industries, and working as an author and photographer.
-Ilyinsky died at his home in Palm Beach, Florida, on February 10, 2004.
-Personal life
-
-Ilyinsky was married twice; he married his first wife, Mary Evelyn Prince in 1948 (annulment in 1951), and married his second wife, Angelica Philippa Kauffmann in 1953.
-Ilyinsky had four children:
+Mountbatten is married to Penelope Meredith Eastwood (born 16 April 1953), a daughter of Reginald Wray Frank Eastwood (1912–1980), a self-made millionaire former butcher who founded the Angus Steakhouse chain, and Marian Elizabeth (1926–2020), née Hood.
+They were wed on 20 October 1979 at Romsey Abbey, less than two months after the IRA murdered his 79-year-old maternal grandfather, Louis Mountbatten, 1st
+Earl Mountbatten of Burma; his 14-year-old younger brother, Nicholas Knatchbull; and his 83-year-old paternal grandmother, Doreen Knatchbull, Dowager Lady Brabourne.
+The 3rd Earl Mountbatten of Burma and his wife have three children and three grandsons:
 
 
-Ancestry
-
-References
+From 2010 to 2014, Mountbatten was in an extramarital relationship with Eugenie, Lady Nuttall, widow of Sir Nicholas Nuttall, 3rd Baronet, who was heir to the Edmund Nuttall Limited construction company.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +110,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +127,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +161,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +243,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +266,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +286,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +296,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +336,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,152 +435,255 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4ba06e80-c69c-4bc5-9f9b-7a8c32a114fb)
- Call ID: 4ba06e80-c69c-4bc5-9f9b-7a8c32a114fb
+  AssignClass (667d1719-017d-40b8-be87-66ea881dabb0)
+ Call ID: 667d1719-017d-40b8-be87-66ea881dabb0
   Args:
-    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
+    source: Norton_Louis_Philip_Knatchbull
     type: :Man
-  AssignClass (709aa448-227d-413f-9d7d-d2c5766948bf)
- Call ID: 709aa448-227d-413f-9d7d-d2c5766948bf
+  AssignClass (6ccf7582-cc4b-48ea-8196-c8e572bfe961)
+ Call ID: 6ccf7582-cc4b-48ea-8196-c8e572bfe961
   Args:
+    source: Norton_Louis_Philip_Knatchbull
     type: :Person
-    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
-  AddLiteral (64fe02e9-d7ec-446b-a4ba-a62e575e2928)
- Call ID: 64fe02e9-d7ec-446b-a4ba-a62e575e2928
+  AddLiteral (5b786e62-0977-4d21-b6be-ddbcb30e9474)
+ Call ID: 5b786e62-0977-4d21-b6be-ddbcb30e9474
   Args:
+    literal_value: 1947
     relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
-    literal_value: 1928
-  AddLiteral (abc70f0e-c037-4d9a-b3df-d3cecae33fd8)
- Call ID: abc70f0e-c037-4d9a-b3df-d3cecae33fd8
+    source: Norton_Louis_Philip_Knatchbull
+  AddLiteral (d21e692d-ae3b-4b15-adaa-fea5d0e8c924)
+ Call ID: d21e692d-ae3b-4b15-adaa-fea5d0e8c924
   Args:
-    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 2004
-  AssignClass (b55eee43-c770-4222-a827-f0c2aaad77da)
- Call ID: b55eee43-c770-4222-a827-f0c2aaad77da
+    source: Norton_Louis_Philip_Knatchbull
+    literal_type: xsd:string
+    relation: :formerlyKnownAs
+    literal_value: Lord Romsey
+  AddLiteral (1e43c15a-cf2c-4e2e-b662-697a172dda84)
+ Call ID: 1e43c15a-cf2c-4e2e-b662-697a172dda84
   Args:
-    source: Dmitri_Pavlovich_of_Russia
-    type: :Man
-  AssignClass (9144232f-941f-4b53-804f-6c7d2d588f87)
- Call ID: 9144232f-941f-4b53-804f-6c7d2d588f87
+    literal_type: xsd:string
+    source: Norton_Louis_Philip_Knatchbull
+    literal_value: Lord Brabourne
+    relation: :formerlyKnownAs
+  AssignClass (7ccc05b2-31fb-47cd-a2fd-5fd50f734715)
+ Call ID: 7ccc05b2-31fb-47cd-a2fd-5fd50f734715
   Args:
-    type: :Person
-    source: Dmitri_Pavlovich_of_Russia
-  AssignClass (f7be1a15-4e9c-4735-bbdc-be6d8db3369f)
- Call ID: f7be1a15-4e9c-4735-bbdc-be6d8db3369f
-  Args:
-    source: Dmitri_Pavlovich_of_Russia
-    type: :Ancestor
-  AddTriple (d772093a-5898-4410-9e11-83aec401bca4)
- Call ID: d772093a-5898-4410-9e11-83aec401bca4
-  Args:
-    target: Dmitri_Pavlovich_of_Russia
-    relation: :hasFather
-    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
-  AssignClass (13858592-2966-453f-a0b1-c8a503b1ec05)
- Call ID: 13858592-2966-453f-a0b1-c8a503b1ec05
-  Args:
-    source: Audrey_Emery
     type: :Woman
-  AssignClass (53e21fe7-150d-4192-a899-0f2a9b5945f4)
- Call ID: 53e21fe7-150d-4192-a899-0f2a9b5945f4
+    source: Patricia_Knatchbull
+  AssignClass (ad94b56d-a9f8-4ec9-9deb-2f138f847e40)
+ Call ID: ad94b56d-a9f8-4ec9-9deb-2f138f847e40
   Args:
     type: :Person
-    source: Audrey_Emery
-  AssignClass (a6228c29-39d5-4e51-864c-fdfad4154d4b)
- Call ID: a6228c29-39d5-4e51-864c-fdfad4154d4b
+    source: Patricia_Knatchbull
+  AssignClass (94422ab9-540a-44c5-9d93-5ffd058d70f3)
+ Call ID: 94422ab9-540a-44c5-9d93-5ffd058d70f3
   Args:
-    type: :Ancestor
-    source: Audrey_Emery
-  AddTriple (329145b6-0a31-4a83-aa08-2527cb721438)
- Call ID: 329145b6-0a31-4a83-aa08-2527cb721438
+    source: John_Knatchbull
+    type: :Man
+  AssignClass (5f6d94a3-0c90-4897-8d0b-56e984c34381)
+ Call ID: 5f6d94a3-0c90-4897-8d0b-56e984c34381
   Args:
-    target: Audrey_Emery
+    type: :Person
+    source: John_Knatchbull
+  AddTriple (f8ee6e74-b97f-4f21-ba3f-163fd4be4429)
+ Call ID: f8ee6e74-b97f-4f21-ba3f-163fd4be4429
+  Args:
+    source: Norton_Louis_Philip_Knatchbull
     relation: :hasMother
-    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
-  AddLiteral (8332e6ad-745d-4f4d-b2ef-ef62459a255e)
- Call ID: 8332e6ad-745d-4f4d-b2ef-ef62459a255e
+    target: Patricia_Knatchbull
+  AddTriple (8659c30e-78ef-4637-b401-78017ef56557)
+ Call ID: 8659c30e-78ef-4637-b401-78017ef56557
   Args:
-    relation: :hasMarriageYear
-    source: Dmitri_Pavlovich_of_Russia
-    literal_type: xsd:integer
-    literal_value: 1926
-  AddTriple (ab1cfa8c-1924-4223-acb5-4492ad62d8c0)
- Call ID: ab1cfa8c-1924-4223-acb5-4492ad62d8c0
-  Args:
-    relation: :hasRelation
-    source: Dmitri_Pavlovich_of_Russia
-    target: Audrey_Emery
-  AssignClass (64de218f-c0ac-493a-8a46-c7873e89deee)
- Call ID: 64de218f-c0ac-493a-8a46-c7873e89deee
-  Args:
-    type: :Woman
-    source: Mary_Evelyn_Prince
-  AssignClass (4714dc9f-fe41-420d-974f-d0dc10539600)
- Call ID: 4714dc9f-fe41-420d-974f-d0dc10539600
-  Args:
-    source: Mary_Evelyn_Prince
-    type: :Person
-  AddTriple (8750f82b-573c-4dec-9e6e-892f261eb507)
- Call ID: 8750f82b-573c-4dec-9e6e-892f261eb507
-  Args:
-    target: Mary_Evelyn_Prince
-    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
-    relation: :hasRelation
-  AddLiteral (e52d1b54-997e-4108-a21b-e58c6eea64c3)
- Call ID: e52d1b54-997e-4108-a21b-e58c6eea64c3
-  Args:
-    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1948
-  AssignClass (fc7d0856-9e00-43d1-9a8e-d577ee35f349)
- Call ID: fc7d0856-9e00-43d1-9a8e-d577ee35f349
-  Args:
-    source: Angelica_Philippa_Kauffmann
-    type: :Woman
-  AssignClass (8bcf8ae8-4f1d-45a8-8098-3a4033b8b09b)
- Call ID: 8bcf8ae8-4f1d-45a8-8098-3a4033b8b09b
-  Args:
-    source: Angelica_Philippa_Kauffmann
-    type: :Person
-  AddTriple (5e28b2a1-f3e1-40a0-8de9-a66dc075452a)
- Call ID: 5e28b2a1-f3e1-40a0-8de9-a66dc075452a
-  Args:
-    relation: :hasRelation
-    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
-    target: Angelica_Philippa_Kauffmann
-  AddLiteral (9d64e8f7-139a-450e-a54c-a9479b95e262)
- Call ID: 9d64e8f7-139a-450e-a54c-a9479b95e262
-  Args:
-    literal_value: 1953
-    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AssignClass (19aad7d7-ebf1-42e2-a554-432449e32a07)
- Call ID: 19aad7d7-ebf1-42e2-a554-432449e32a07
+    target: John_Knatchbull
+    relation: :hasFather
+    source: Norton_Louis_Philip_Knatchbull
+  AssignClass (5ea88a42-a178-4429-bf54-aa5ae1dfe892)
+ Call ID: 5ea88a42-a178-4429-bf54-aa5ae1dfe892
   Args:
     type: :Man
-    source: Alexander_II_of_Russia
-  AssignClass (d2c30062-1e9f-4ca8-9844-911ddab3666d)
- Call ID: d2c30062-1e9f-4ca8-9844-911ddab3666d
+    source: Louis_Mountbatten
+  AssignClass (d4573539-f262-4f6c-a156-33f9294abf3a)
+ Call ID: d4573539-f262-4f6c-a156-33f9294abf3a
   Args:
-    source: Alexander_II_of_Russia
+    source: Louis_Mountbatten
     type: :Person
-  AssignClass (77e905a2-b51b-4acc-a19a-9149f5f95ac8)
- Call ID: 77e905a2-b51b-4acc-a19a-9149f5f95ac8
+  AddTriple (0e143de0-35c0-4c49-b1c0-1e2d467b8ad4)
+ Call ID: 0e143de0-35c0-4c49-b1c0-1e2d467b8ad4
   Args:
-    type: :Ancestor
-    source: Alexander_II_of_Russia
-  AddTriple (a5ad74ff-0562-481c-abd3-d52a880e637a)
- Call ID: a5ad74ff-0562-481c-abd3-d52a880e637a
+    relation: :hasFather
+    target: Louis_Mountbatten
+    source: Patricia_Knatchbull
+  AssignClass (cc35da8e-bf79-4446-9dcc-95891c2d8e8e)
+ Call ID: cc35da8e-bf79-4446-9dcc-95891c2d8e8e
   Args:
+    type: :Woman
+    source: Penelope_Meredith_Eastwood
+  AssignClass (ac4b634c-880c-41ff-bda9-c0a702df439c)
+ Call ID: ac4b634c-880c-41ff-bda9-c0a702df439c
+  Args:
+    type: :Person
+    source: Penelope_Meredith_Eastwood
+  AddLiteral (7d64b1a0-ffe0-48df-8c95-c13f6e0ea757)
+ Call ID: 7d64b1a0-ffe0-48df-8c95-c13f6e0ea757
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1953
+    source: Penelope_Meredith_Eastwood
+    literal_type: xsd:integer
+  AddTriple (24c4d0ec-0607-4c2a-8383-f31e07c1a91a)
+ Call ID: 24c4d0ec-0607-4c2a-8383-f31e07c1a91a
+  Args:
+    source: Norton_Louis_Philip_Knatchbull
+    target: Penelope_Meredith_Eastwood
+    relation: :hasRelation
+  AddLiteral (f432bf6c-3f8d-491b-a0d3-66bf93b5f906)
+ Call ID: f432bf6c-3f8d-491b-a0d3-66bf93b5f906
+  Args:
+    literal_value: 1979
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Norton_Louis_Philip_Knatchbull
+  AssignClass (4fa51204-c837-4e92-ba2c-181c2fe53200)
+ Call ID: 4fa51204-c837-4e92-ba2c-181c2fe53200
+  Args:
+    type: :Man
+    source: Reginald_Wray_Frank_Eastwood
+  AssignClass (bb60f507-16a0-4f54-9f06-1cd56578b8b7)
+ Call ID: bb60f507-16a0-4f54-9f06-1cd56578b8b7
+  Args:
+    source: Reginald_Wray_Frank_Eastwood
+    type: :Person
+  AddLiteral (8cbc6962-295b-4a55-af3d-c69a8a50b7c3)
+ Call ID: 8cbc6962-295b-4a55-af3d-c69a8a50b7c3
+  Args:
+    literal_value: 1912
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Reginald_Wray_Frank_Eastwood
+  AddLiteral (c800d527-3292-4efa-8ae3-a38956990b2d)
+ Call ID: c800d527-3292-4efa-8ae3-a38956990b2d
+  Args:
+    literal_type: xsd:integer
+    source: Reginald_Wray_Frank_Eastwood
+    literal_value: 1980
+    relation: :hasDeathYear
+  AddTriple (edb1ad30-8afe-488e-aff7-64c6e42dc1be)
+ Call ID: edb1ad30-8afe-488e-aff7-64c6e42dc1be
+  Args:
+    source: Penelope_Meredith_Eastwood
+    target: Reginald_Wray_Frank_Eastwood
+    relation: :hasFather
+  AssignClass (1e715af5-308c-4401-800c-3e22a53e973f)
+ Call ID: 1e715af5-308c-4401-800c-3e22a53e973f
+  Args:
+    source: Marian_Elizabeth_Hood
+    type: :Woman
+  AssignClass (bbee7f89-5681-4824-8ea7-85049a395ea2)
+ Call ID: bbee7f89-5681-4824-8ea7-85049a395ea2
+  Args:
+    source: Marian_Elizabeth_Hood
+    type: :Person
+  AddLiteral (4755b4cf-c5f2-4d3f-be82-d45ad7b92c25)
+ Call ID: 4755b4cf-c5f2-4d3f-be82-d45ad7b92c25
+  Args:
+    literal_value: 1926
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Marian_Elizabeth_Hood
+  AddLiteral (67109727-913b-4677-9b42-272fab07d27c)
+ Call ID: 67109727-913b-4677-9b42-272fab07d27c
+  Args:
+    relation: :hasDeathYear
+    literal_value: 2020
+    source: Marian_Elizabeth_Hood
+    literal_type: xsd:integer
+  AddTriple (3aff4429-8773-4112-9e67-01478c232fd2)
+ Call ID: 3aff4429-8773-4112-9e67-01478c232fd2
+  Args:
+    source: Penelope_Meredith_Eastwood
+    target: Marian_Elizabeth_Hood
+    relation: :hasMother
+  AssignClass (4e58051d-1fb8-436b-8783-d180631a6660)
+ Call ID: 4e58051d-1fb8-436b-8783-d180631a6660
+  Args:
+    source: Nicholas_Knatchbull
+    type: :Man
+  AssignClass (651ecc50-7ea6-4a5c-b581-919ff21510a7)
+ Call ID: 651ecc50-7ea6-4a5c-b581-919ff21510a7
+  Args:
+    source: Nicholas_Knatchbull
+    type: :Person
+  AddTriple (60605977-13af-454e-82be-cfe1a86f3b8e)
+ Call ID: 60605977-13af-454e-82be-cfe1a86f3b8e
+  Args:
+    source: Norton_Louis_Philip_Knatchbull
+    relation: :hasBrother
+    target: Nicholas_Knatchbull
+  AssignClass (e39a2ecf-9b27-418d-9105-f552e44da8c2)
+ Call ID: e39a2ecf-9b27-418d-9105-f552e44da8c2
+  Args:
+    type: :Woman
+    source: Doreen_Knatchbull
+  AssignClass (1201490b-2b2d-471f-a7c6-9a1d95f30408)
+ Call ID: 1201490b-2b2d-471f-a7c6-9a1d95f30408
+  Args:
+    source: Doreen_Knatchbull
+    type: :Person
+  AddTriple (9d31f192-1a1f-4f29-bb1a-8523a4ad56d5)
+ Call ID: 9d31f192-1a1f-4f29-bb1a-8523a4ad56d5
+  Args:
+    target: Doreen_Knatchbull
+    relation: :hasMother
+    source: John_Knatchbull
+  AssignClass (754513b7-268d-4149-89d1-8c26acf9b2de)
+ Call ID: 754513b7-268d-4149-89d1-8c26acf9b2de
+  Args:
+    type: :Woman
+    source: Eugenie_Lady_Nuttall
+  AssignClass (a390d11d-3fbc-4cec-860c-2aa825dc78e7)
+ Call ID: a390d11d-3fbc-4cec-860c-2aa825dc78e7
+  Args:
+    source: Eugenie_Lady_Nuttall
+    type: :Person
+  AddTriple (ca8098e3-a508-4bd3-9cc8-6724e0676e91)
+ Call ID: ca8098e3-a508-4bd3-9cc8-6724e0676e91
+  Args:
+    source: Norton_Louis_Philip_Knatchbull
+    target: Eugenie_Lady_Nuttall
+    relation: :hasRelation
+  AssignClass (c24ec943-15c0-4021-a1cd-851b76b52f4d)
+ Call ID: c24ec943-15c0-4021-a1cd-851b76b52f4d
+  Args:
+    type: :Man
+    source: Edward_Austen_Knight
+  AssignClass (18d94f0a-3349-4884-9e10-6019fc8ad370)
+ Call ID: 18d94f0a-3349-4884-9e10-6019fc8ad370
+  Args:
+    source: Edward_Austen_Knight
+    type: :Person
+  AssignClass (d1498a9c-e5b5-4a8f-9e81-c0f075cb8a7e)
+ Call ID: d1498a9c-e5b5-4a8f-9e81-c0f075cb8a7e
+  Args:
+    type: :Woman
+    source: Jane_Austen
+  AssignClass (963a2702-d7bc-429b-93d8-2240c6889644)
+ Call ID: 963a2702-d7bc-429b-93d8-2240c6889644
+  Args:
+    source: Jane_Austen
+    type: :Person
+  AddTriple (e308a3ef-c95d-48d6-b4fb-067d77a40309)
+ Call ID: e308a3ef-c95d-48d6-b4fb-067d77a40309
+  Args:
+    source: Edward_Austen_Knight
+    relation: :isBrotherOf
+    target: Jane_Austen
+  AddTriple (d573c57e-3b8d-4498-a8ac-f7842a9752c5)
+ Call ID: d573c57e-3b8d-4498-a8ac-f7842a9752c5
+  Args:
+    target: Edward_Austen_Knight
     relation: :hasAncestor
-    source: Paul_Dmitrievich_Romanovsky-Ilyinsky
-    target: Alexander_II_of_Russia
-  Finish (aaf3226a-fd03-4b15-bb49-3058fc4858a9)
- Call ID: aaf3226a-fd03-4b15-bb49-3058fc4858a9
+    source: John_Knatchbull
+  Finish (092ff443-5bce-4b33-9d17-054a3e9eab5b)
+ Call ID: 092ff443-5bce-4b33-9d17-054a3e9eab5b
   Args:

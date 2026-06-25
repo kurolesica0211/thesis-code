@@ -2,30 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Albert_Alphons_Ludgerus_Brenninkmeijer a :Man ;
-    :hasBirthYear 1974 .
+data:Clamor_von_dem_Bussche a :Man ;
+    :hasBirthYear 1532 ;
+    :hasDeathYear 1573 .
 
-data:Princess_Carolina_of_Bourbon-Parma a :Woman ;
-    :hasBirthYear 1974 ;
-    :hasBrother data:Prince_Carlos,
-        data:Prince_Jaime ;
-    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
-    :hasMother data:Princess_Irene_of_the_Netherlands ;
-    :hasSister data:Princess_Margarita .
+data:Claus_von_Amsberg a :Man ;
+    :hasBirthYear 1926 ;
+    :hasFather data:Claus_Felix_von_Amsberg ;
+    :hasMother data:G%C3%B6sta_von_dem_Bussche-Haddenhausen .
 
-data:Carlos_Hugo_Duke_of_Parma a :Man .
+data:Julius_von_dem_Bussche-Haddenhausen a :Man ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1977 ;
+    :hasFather data:George_von_dem_Bussche-Haddenhausen ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .
 
-data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man .
+data:Claus_Felix_von_Amsberg a :Man ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Wilhelm_von_Amsberg ;
+    :hasMother data:Elise_von_Vieregge .
 
-data:Prince_Carlos a :Man .
+data:Elise_von_Vieregge a :Woman .
 
-data:Prince_Jaime a :Man .
+data:G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:George_von_dem_Bussche-Haddenhausen ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .
 
-data:Princess_Irene_of_the_Netherlands a :Woman ;
-    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasMother data:Queen_Juliana_of_the_Netherlands .
+data:Wilhelm_von_Amsberg a :Man .
 
-data:Princess_Margarita a :Woman .
+data:Gabriele_von_dem_Bussche-Ippenburg a :Woman ;
+    :hasBirthYear 1877 ;
+    :hasDeathYear 1973 .
 
-data:Queen_Juliana_of_the_Netherlands a :Woman .
+data:George_von_dem_Bussche-Haddenhausen a :Man ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1923 .
 

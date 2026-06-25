@@ -1,0 +1,298 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Nicholas_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Nicholas_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Nicholas_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Nicholas_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Nicholas_of_Greece_and_Denmark .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs data:Princess_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:James_Robert_Bruce_Ogilvy,
+        data:King_George_V,
+        data:Marina_Ogilvy,
+        data:Prince_George%2C_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy,
+        data:Princess_Alexandra_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isMotherOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:King_George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_George_V ;
+    :hasChild data:Prince_George%2C_Duke_of_Kent ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:James_Robert_Bruce_Ogilvy,
+        data:King_George_V,
+        data:Marina_Ogilvy,
+        data:Prince_George%2C_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :hasSon data:Prince_George%2C_Duke_of_Kent ;
+    :isAncestorOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy,
+        data:Prince_George%2C_Duke_of_Kent,
+        data:Princess_Alexandra_of_Kent ;
+    :isBloodrelationOf data:King_George_V ;
+    :isBrotherOf data:King_George_V ;
+    :isFatherOf data:Prince_George%2C_Duke_of_Kent ;
+    :isParentOf data:Prince_George%2C_Duke_of_Kent ;
+    :isSiblingOf data:King_George_V ;
+    :isUncleOf data:Prince_George%2C_Duke_of_Kent .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:James_Robert_Bruce_Ogilvy,
+        data:King_George_V,
+        data:Marina_Ogilvy,
+        data:Prince_George%2C_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :isAncestorOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy,
+        data:Princess_Alexandra_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Sir_Angus_Ogilvy a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Sir_Angus_Ogilvy ;
+    :hasChild data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :hasDaughter data:Marina_Ogilvy ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:James_Robert_Bruce_Ogilvy,
+        data:King_George_V,
+        data:Marina_Ogilvy,
+        data:Prince_George%2C_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :hasSon data:James_Robert_Bruce_Ogilvy ;
+    :isAncestorOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isBloodrelationOf data:Sir_Angus_Ogilvy ;
+    :isBrotherOf data:Sir_Angus_Ogilvy ;
+    :isFatherOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isParentOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isSiblingOf data:Sir_Angus_Ogilvy ;
+    :isUncleOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy .
+
+data:Prince_George%2C_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:King_George_V ;
+    :hasBrother data:Prince_George%2C_Duke_of_Kent ;
+    :hasChild data:Princess_Alexandra_of_Kent ;
+    :hasDaughter data:Princess_Alexandra_of_Kent ;
+    :hasFather data:King_George_V ;
+    :hasParent data:King_George_V ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:James_Robert_Bruce_Ogilvy,
+        data:King_George_V,
+        data:Marina_Ogilvy,
+        data:Prince_George%2C_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :isAncestorOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy,
+        data:Princess_Alexandra_of_Kent ;
+    :isBloodrelationOf data:Prince_George%2C_Duke_of_Kent ;
+    :isBrotherOf data:Prince_George%2C_Duke_of_Kent ;
+    :isChildOf data:King_George_V ;
+    :isFatherOf data:Princess_Alexandra_of_Kent ;
+    :isParentOf data:Princess_Alexandra_of_Kent ;
+    :isSiblingOf data:Prince_George%2C_Duke_of_Kent ;
+    :isSonOf data:King_George_V ;
+    :isUncleOf data:Princess_Alexandra_of_Kent .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Alexandra_of_Kent ;
+    :hasDaughter data:Princess_Alexandra_of_Kent ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:James_Robert_Bruce_Ogilvy,
+        data:King_George_V,
+        data:Marina_Ogilvy,
+        data:Prince_George%2C_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Princess_Marina_of_Greece_and_Denmark ;
+    :isAncestorOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy,
+        data:Princess_Alexandra_of_Kent ;
+    :isAuntOf data:Princess_Alexandra_of_Kent ;
+    :isBloodrelationOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isMotherOf data:Princess_Alexandra_of_Kent ;
+    :isParentOf data:Princess_Alexandra_of_Kent ;
+    :isSiblingOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:James_Robert_Bruce_Ogilvy a :Man,
+        :Person ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_V,
+        data:Prince_George%2C_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :hasBirthYear 1964 ;
+    :hasBrother data:James_Robert_Bruce_Ogilvy ;
+    :hasFather data:Sir_Angus_Ogilvy ;
+    :hasMother data:Princess_Alexandra_of_Kent ;
+    :hasParent data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:James_Robert_Bruce_Ogilvy,
+        data:King_George_V,
+        data:Marina_Ogilvy,
+        data:Prince_George%2C_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Marina_Ogilvy ;
+    :isBloodrelationOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isBrotherOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isChildOf data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy ;
+    :isSiblingOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isSonOf data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy .
+
+data:Marina_Ogilvy a :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_V,
+        data:Prince_George%2C_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :hasBrother data:James_Robert_Bruce_Ogilvy ;
+    :hasFather data:Sir_Angus_Ogilvy ;
+    :hasMother data:Princess_Alexandra_of_Kent ;
+    :hasParent data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:James_Robert_Bruce_Ogilvy,
+        data:King_George_V,
+        data:Marina_Ogilvy,
+        data:Prince_George%2C_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Marina_Ogilvy ;
+    :isBloodrelationOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isChildOf data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy ;
+    :isDaughterOf data:Princess_Alexandra_of_Kent,
+        data:Sir_Angus_Ogilvy ;
+    :isSiblingOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isSisterOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy .
+
+data:Princess_Alexandra_of_Kent a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:King_George_V,
+        data:Prince_George%2C_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasChild data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :hasDaughter data:Marina_Ogilvy ;
+    :hasFather data:Prince_George%2C_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George%2C_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:James_Robert_Bruce_Ogilvy,
+        data:King_George_V,
+        data:Marina_Ogilvy,
+        data:Prince_George%2C_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Alexandra_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sir_Angus_Ogilvy ;
+    :hasSister data:Princess_Alexandra_of_Kent ;
+    :hasSon data:James_Robert_Bruce_Ogilvy ;
+    :isAncestorOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isAuntOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isBloodrelationOf data:Princess_Alexandra_of_Kent ;
+    :isChildOf data:Prince_George%2C_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_George%2C_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isMotherOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isParentOf data:James_Robert_Bruce_Ogilvy,
+        data:Marina_Ogilvy ;
+    :isSiblingOf data:Princess_Alexandra_of_Kent ;
+    :isSisterOf data:Princess_Alexandra_of_Kent .
+

@@ -1,0 +1,182 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Carl_Duke_of_Wurttemberg a :Man ;
+    :hasBrother data:Carl_Duke_of_Wurttemberg ;
+    :hasRelation data:Carl_Duke_of_Wurttemberg,
+        data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philipp_Albrecht_Duke_of_Wurttemberg,
+        data:Rosa_of_Austria ;
+    :hasSister data:Marie_Therese_of_Wurttemberg ;
+    :isBloodrelationOf data:Carl_Duke_of_Wurttemberg,
+        data:Marie_Therese_of_Wurttemberg ;
+    :isBrotherOf data:Carl_Duke_of_Wurttemberg,
+        data:Marie_Therese_of_Wurttemberg ;
+    :isSiblingOf data:Carl_Duke_of_Wurttemberg,
+        data:Marie_Therese_of_Wurttemberg .
+
+data:Diane_dOrleans a :Woman ;
+    :hasBrother data:Henri_Count_of_Clermont ;
+    :hasRelation data:Carl_Duke_of_Wurttemberg,
+        data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philipp_Albrecht_Duke_of_Wurttemberg,
+        data:Rosa_of_Austria ;
+    :hasSister data:Diane_dOrleans ;
+    :isBloodrelationOf data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont ;
+    :isSiblingOf data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont ;
+    :isSisterOf data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasChild data:Henri_Count_of_Clermont ;
+    :hasRelation data:Carl_Duke_of_Wurttemberg,
+        data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philipp_Albrecht_Duke_of_Wurttemberg,
+        data:Rosa_of_Austria ;
+    :hasSon data:Henri_Count_of_Clermont ;
+    :isAncestorOf data:Henri_Count_of_Clermont ;
+    :isBloodrelationOf data:Henri_Count_of_Paris ;
+    :isBrotherOf data:Henri_Count_of_Paris ;
+    :isFatherOf data:Henri_Count_of_Clermont ;
+    :isParentOf data:Henri_Count_of_Clermont ;
+    :isSiblingOf data:Henri_Count_of_Paris ;
+    :isUncleOf data:Henri_Count_of_Clermont .
+
+data:Isabelle_of_Orleans_Braganza a :Ancestor,
+        :Woman ;
+    :hasChild data:Henri_Count_of_Clermont ;
+    :hasRelation data:Carl_Duke_of_Wurttemberg,
+        data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philipp_Albrecht_Duke_of_Wurttemberg,
+        data:Rosa_of_Austria ;
+    :hasSister data:Isabelle_of_Orleans_Braganza ;
+    :hasSon data:Henri_Count_of_Clermont ;
+    :isAncestorOf data:Henri_Count_of_Clermont ;
+    :isAuntOf data:Henri_Count_of_Clermont ;
+    :isBloodrelationOf data:Isabelle_of_Orleans_Braganza ;
+    :isMotherOf data:Henri_Count_of_Clermont ;
+    :isParentOf data:Henri_Count_of_Clermont ;
+    :isSiblingOf data:Isabelle_of_Orleans_Braganza ;
+    :isSisterOf data:Isabelle_of_Orleans_Braganza .
+
+data:Philipp_Albrecht_Duke_of_Wurttemberg a :Ancestor,
+        :Man ;
+    :hasBrother data:Philipp_Albrecht_Duke_of_Wurttemberg ;
+    :hasChild data:Marie_Therese_of_Wurttemberg ;
+    :hasDaughter data:Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Carl_Duke_of_Wurttemberg,
+        data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philipp_Albrecht_Duke_of_Wurttemberg,
+        data:Rosa_of_Austria ;
+    :isAncestorOf data:Marie_Therese_of_Wurttemberg ;
+    :isBloodrelationOf data:Philipp_Albrecht_Duke_of_Wurttemberg ;
+    :isBrotherOf data:Philipp_Albrecht_Duke_of_Wurttemberg ;
+    :isFatherOf data:Marie_Therese_of_Wurttemberg ;
+    :isParentOf data:Marie_Therese_of_Wurttemberg ;
+    :isSiblingOf data:Philipp_Albrecht_Duke_of_Wurttemberg ;
+    :isUncleOf data:Marie_Therese_of_Wurttemberg .
+
+data:Rosa_of_Austria a :Ancestor,
+        :Woman ;
+    :hasChild data:Marie_Therese_of_Wurttemberg ;
+    :hasDaughter data:Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Carl_Duke_of_Wurttemberg,
+        data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philipp_Albrecht_Duke_of_Wurttemberg,
+        data:Rosa_of_Austria ;
+    :hasSister data:Rosa_of_Austria ;
+    :isAncestorOf data:Marie_Therese_of_Wurttemberg ;
+    :isAuntOf data:Marie_Therese_of_Wurttemberg ;
+    :isBloodrelationOf data:Rosa_of_Austria ;
+    :isMotherOf data:Marie_Therese_of_Wurttemberg ;
+    :isParentOf data:Marie_Therese_of_Wurttemberg ;
+    :isSiblingOf data:Rosa_of_Austria ;
+    :isSisterOf data:Rosa_of_Austria .
+
+data:Henri_Count_of_Clermont a :Man ;
+    :hasAncestor data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans_Braganza ;
+    :hasBrother data:Henri_Count_of_Clermont ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Isabelle_of_Orleans_Braganza ;
+    :hasParent data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans_Braganza ;
+    :hasRelation data:Carl_Duke_of_Wurttemberg,
+        data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philipp_Albrecht_Duke_of_Wurttemberg,
+        data:Rosa_of_Austria ;
+    :hasSister data:Diane_dOrleans ;
+    :isBloodrelationOf data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont ;
+    :isBrotherOf data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont ;
+    :isChildOf data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans_Braganza ;
+    :isSiblingOf data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont ;
+    :isSonOf data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans_Braganza .
+
+data:Marie_Therese_of_Wurttemberg a :Woman ;
+    :hasAncestor data:Philipp_Albrecht_Duke_of_Wurttemberg,
+        data:Rosa_of_Austria ;
+    :hasBirthYear 1934 ;
+    :hasBrother data:Carl_Duke_of_Wurttemberg ;
+    :hasFather data:Philipp_Albrecht_Duke_of_Wurttemberg ;
+    :hasMarriageYear 1957 ;
+    :hasMother data:Rosa_of_Austria ;
+    :hasParent data:Philipp_Albrecht_Duke_of_Wurttemberg,
+        data:Rosa_of_Austria ;
+    :hasRelation data:Carl_Duke_of_Wurttemberg,
+        data:Diane_dOrleans,
+        data:Henri_Count_of_Clermont,
+        data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans_Braganza,
+        data:Marie_Therese_of_Wurttemberg,
+        data:Philipp_Albrecht_Duke_of_Wurttemberg,
+        data:Rosa_of_Austria ;
+    :hasSister data:Marie_Therese_of_Wurttemberg ;
+    :isBloodrelationOf data:Carl_Duke_of_Wurttemberg,
+        data:Marie_Therese_of_Wurttemberg ;
+    :isChildOf data:Philipp_Albrecht_Duke_of_Wurttemberg,
+        data:Rosa_of_Austria ;
+    :isDaughterOf data:Philipp_Albrecht_Duke_of_Wurttemberg,
+        data:Rosa_of_Austria ;
+    :isSiblingOf data:Carl_Duke_of_Wurttemberg,
+        data:Marie_Therese_of_Wurttemberg ;
+    :isSisterOf data:Carl_Duke_of_Wurttemberg,
+        data:Marie_Therese_of_Wurttemberg .
+

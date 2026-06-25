@@ -2,23 +2,38 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:GeorgePhilipNicholasWindsor a :Man ;
+data:Lady_Lily_Serena_Lumley a :Person,
+        :Woman ;
+    :hasFather data:Earl_of_Scarbrough .
+
+data:Oliver_Worsley a :Man,
+        :Person ;
+    :isUncleOf data:George_Philip_Nicholas_Windsor .
+
+data:Princess_Alexandra_of_Kent a :Person,
+        :Woman ;
+    :isAuntOf data:George_Philip_Nicholas_Windsor .
+
+data:Earl_of_Scarbrough a :Man,
+        :Person .
+
+data:Katharine_Duchess_of_Kent a :Person,
+        :Woman ;
+    :hasFather data:Sir_William_Worsley .
+
+data:Prince_Edward_Duke_of_Kent a :Man,
+        :Person .
+
+data:Sir_William_Worsley a :Man,
+        :Person .
+
+data:Sylvana_Tomaselli a :Person,
+        :Woman .
+
+data:George_Philip_Nicholas_Windsor a :Man,
+        :Person ;
     :hasBirthYear 1962 ;
-    :hasFather data:PrinceEdwardDukeOfKent ;
-    :hasMother data:KatharineDuchessOfKent ;
-    :hasRelation data:SylvanaTomaselli ;
-    :hasSex data:Male .
-
-data:KatharineDuchessOfKent a :Woman ;
-    :hasSex data:Female .
-
-data:PrinceEdwardDukeOfKent a :Man ;
-    :hasSex data:Male .
-
-data:SylvanaTomaselli a :Woman ;
-    :hasSex data:Female .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasRelation data:Sylvana_Tomaselli .
 

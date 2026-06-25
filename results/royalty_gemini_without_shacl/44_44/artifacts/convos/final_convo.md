@@ -75,7 +75,6 @@ Queen Margrethe II
 Princess Isabella of Denmark, Countess of Monpezat, RE (Isabella Henrietta Ingrid Margrethe; born 21 April 2007) is a member of the Danish royal family.
 She is the second child and elder daughter of King Frederik X and Queen Mary.
 She is the fourth grandchild and oldest granddaughter of Queen Margrethe II and Prince Henrik.
-She was the first girl born into the Danish royal family since the birth of her great-aunt, Queen Anne-Marie of Greece, in 1946.
 Isabella is second in the line of succession to the Danish throne, after her older brother, Crown Prince Christian.
 Early life and education
 
@@ -115,6 +114,8 @@ Since 29 April 2008, she has been styled
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -130,39 +131,9 @@ Since 29 April 2008, she has been styled
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -177,6 +148,23 @@ Since 29 April 2008, she has been styled
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -194,6 +182,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,29 +264,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -292,6 +287,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -304,6 +307,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -312,17 +317,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -350,6 +357,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -365,156 +456,119 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d74746cd-42ac-4f5f-9041-df23d73c4519)
- Call ID: d74746cd-42ac-4f5f-9041-df23d73c4519
+  AssignClass (3b3b45a3-c521-4b30-9bbf-6b8440b59af8)
+ Call ID: 3b3b45a3-c521-4b30-9bbf-6b8440b59af8
   Args:
+    source: Isabella_of_Denmark
     type: :Person
-    source: :Isabella_of_Denmark
-  AssignClass (6b431519-226d-460f-ac35-a75450267387)
- Call ID: 6b431519-226d-460f-ac35-a75450267387
+  AssignClass (6c3e7295-e774-4141-9242-1c4e78be63b9)
+ Call ID: 6c3e7295-e774-4141-9242-1c4e78be63b9
   Args:
     type: :Woman
-    source: :Isabella_of_Denmark
-  AssignClass (ad1e11f3-63d9-46c2-b512-ef1a486acf45)
- Call ID: ad1e11f3-63d9-46c2-b512-ef1a486acf45
+    source: Isabella_of_Denmark
+  AssignClass (e061abc7-2d38-4fc9-94d9-5fa06496d150)
+ Call ID: e061abc7-2d38-4fc9-94d9-5fa06496d150
   Args:
     type: :Person
-    source: :Frederik_X
-  AssignClass (02eda3f6-8da2-4e6a-a917-20ccd8864711)
- Call ID: 02eda3f6-8da2-4e6a-a917-20ccd8864711
+    source: Frederik_X
+  AssignClass (bee9ac05-2d8e-4f44-9f84-1196ee399667)
+ Call ID: bee9ac05-2d8e-4f44-9f84-1196ee399667
   Args:
+    source: Frederik_X
     type: :Man
-    source: :Frederik_X
-  AssignClass (e1dd93a7-e78a-42f1-a87a-6edafe4e1ac1)
- Call ID: e1dd93a7-e78a-42f1-a87a-6edafe4e1ac1
-  Args:
-    type: :Ancestor
-    source: :Frederik_X
-  AssignClass (515565a3-27f0-472a-a855-71089d7aadd9)
- Call ID: 515565a3-27f0-472a-a855-71089d7aadd9
+  AssignClass (c2b9e92d-9a17-4870-b0be-9b124954993f)
+ Call ID: c2b9e92d-9a17-4870-b0be-9b124954993f
   Args:
     type: :Person
-    source: :Mary_of_Denmark
-  AssignClass (a89e379b-0388-4a27-a8af-005753c58596)
- Call ID: a89e379b-0388-4a27-a8af-005753c58596
+    source: Mary
+  AssignClass (2e715e4d-c976-43be-b53e-ec4659444fbc)
+ Call ID: 2e715e4d-c976-43be-b53e-ec4659444fbc
   Args:
+    source: Mary
     type: :Woman
-    source: :Mary_of_Denmark
-  AssignClass (be678191-4d1b-493d-8023-4a52e08f5ec1)
- Call ID: be678191-4d1b-493d-8023-4a52e08f5ec1
+  AssignClass (b278a88e-b12e-4db6-9b96-f4481135562b)
+ Call ID: b278a88e-b12e-4db6-9b96-f4481135562b
   Args:
-    type: :Ancestor
-    source: :Mary_of_Denmark
-  AssignClass (842f59d6-404a-4cbb-a2b1-dd46bb82f08b)
- Call ID: 842f59d6-404a-4cbb-a2b1-dd46bb82f08b
-  Args:
+    source: Margrethe_II
     type: :Person
-    source: :Margrethe_II
-  AssignClass (1cbfba08-0d0e-4357-b19a-f775bef69943)
- Call ID: 1cbfba08-0d0e-4357-b19a-f775bef69943
+  AssignClass (afeb92d9-f83d-420c-8f2e-67722b448bce)
+ Call ID: afeb92d9-f83d-420c-8f2e-67722b448bce
   Args:
+    source: Margrethe_II
     type: :Woman
-    source: :Margrethe_II
-  AssignClass (0a5c7daf-e080-4246-8e76-dd40bcb718df)
- Call ID: 0a5c7daf-e080-4246-8e76-dd40bcb718df
+  AssignClass (60956c5d-40ca-43ec-95e4-5430928d8548)
+ Call ID: 60956c5d-40ca-43ec-95e4-5430928d8548
   Args:
-    type: :Ancestor
-    source: :Margrethe_II
-  AssignClass (cf0e6dd2-2d68-493f-965b-db0f87fbc00a)
- Call ID: cf0e6dd2-2d68-493f-965b-db0f87fbc00a
-  Args:
+    source: Henrik
     type: :Person
-    source: :Henrik_of_Denmark
-  AssignClass (aa5e940a-4601-4cfa-bb26-891d401460ca)
- Call ID: aa5e940a-4601-4cfa-bb26-891d401460ca
+  AssignClass (6c6d7dfd-d776-494c-8cd9-80a46511f126)
+ Call ID: 6c6d7dfd-d776-494c-8cd9-80a46511f126
   Args:
     type: :Man
-    source: :Henrik_of_Denmark
-  AssignClass (02766173-5c9d-4e39-9f50-08250f7881b6)
- Call ID: 02766173-5c9d-4e39-9f50-08250f7881b6
+    source: Henrik_Prince
+  AssignClass (38e2bd25-0855-421e-88d5-cdd7c980e0f4)
+ Call ID: 38e2bd25-0855-421e-88d5-cdd7c980e0f4
   Args:
-    type: :Ancestor
-    source: :Henrik_of_Denmark
-  AssignClass (bedb5e3b-e7fd-4102-b33f-77df3573c6ef)
- Call ID: bedb5e3b-e7fd-4102-b33f-77df3573c6ef
+    source: Christian_Crown_Prince
+    type: :Person
+  AssignClass (076239d6-ea04-4585-ac7e-8a6929d2d683)
+ Call ID: 076239d6-ea04-4585-ac7e-8a6929d2d683
+  Args:
+    source: Christian_Crown_Prince
+    type: :Man
+  AssignClass (56383508-8a7c-4963-ad74-4d7721ad8010)
+ Call ID: 56383508-8a7c-4963-ad74-4d7721ad8010
   Args:
     type: :Person
-    source: :Christian_of_Denmark
-  AssignClass (38d6c0b3-492b-47c2-9f55-3901a34e57bd)
- Call ID: 38d6c0b3-492b-47c2-9f55-3901a34e57bd
+    source: Vincent
+  AssignClass (6183db63-a0c6-4d71-a73e-a13259fd40f7)
+ Call ID: 6183db63-a0c6-4d71-a73e-a13259fd40f7
   Args:
     type: :Man
-    source: :Christian_of_Denmark
-  AssignClass (9d25eb8b-2b94-4a9b-a715-d234b208ce71)
- Call ID: 9d25eb8b-2b94-4a9b-a715-d234b208ce71
+    source: Vincent
+  AddLiteral (cee384cb-3dff-42c2-834d-56432b5c9af0)
+ Call ID: cee384cb-3dff-42c2-834d-56432b5c9af0
   Args:
-    type: :Person
-    source: :Anne-Marie_of_Greece
-  AssignClass (e42fac48-c9ce-44b1-a7a4-a8098e9b01bb)
- Call ID: e42fac48-c9ce-44b1-a7a4-a8098e9b01bb
-  Args:
-    type: :Woman
-    source: :Anne-Marie_of_Greece
-  AssignClass (bdd6f3f4-0a00-4dc1-a37a-07cfeda8e087)
- Call ID: bdd6f3f4-0a00-4dc1-a37a-07cfeda8e087
-  Args:
-    type: :Person
-    source: :Vincent_of_Denmark
-  AssignClass (1790ced6-4caf-43cb-954e-73816bcd6fa5)
- Call ID: 1790ced6-4caf-43cb-954e-73816bcd6fa5
-  Args:
-    type: :Man
-    source: :Vincent_of_Denmark
-  AddTriple (3bc67aeb-4ccb-4563-a30a-fb6fe5b7d28d)
- Call ID: 3bc67aeb-4ccb-4563-a30a-fb6fe5b7d28d
-  Args:
-    relation: :hasFather
-    source: :Isabella_of_Denmark
-    target: :Frederik_X
-  AddTriple (761ac30c-5985-4de8-a80d-24d7b103215d)
- Call ID: 761ac30c-5985-4de8-a80d-24d7b103215d
-  Args:
-    relation: :hasMother
-    target: :Mary_of_Denmark
-    source: :Isabella_of_Denmark
-  AddTriple (71363246-0264-496e-abcd-f2147a7b5593)
- Call ID: 71363246-0264-496e-abcd-f2147a7b5593
-  Args:
-    relation: :hasFather
-    source: :Frederik_X
-    target: :Henrik_of_Denmark
-  AddTriple (10140c38-9420-4d02-9c15-85e4b0c36330)
- Call ID: 10140c38-9420-4d02-9c15-85e4b0c36330
-  Args:
-    relation: :hasMother
-    target: :Margrethe_II
-    source: :Frederik_X
-  AddTriple (46bf8813-60af-4809-814f-c648e90b7cf7)
- Call ID: 46bf8813-60af-4809-814f-c648e90b7cf7
-  Args:
-    relation: :isBrotherOf
-    target: :Isabella_of_Denmark
-    source: :Christian_of_Denmark
-  AddTriple (cbd0e8dd-034a-4c35-829a-6c5e7ed9881e)
- Call ID: cbd0e8dd-034a-4c35-829a-6c5e7ed9881e
-  Args:
-    target: :Isabella_of_Denmark
-    source: :Vincent_of_Denmark
-    relation: :isBrotherOf
-  AddLiteral (bba401cf-5605-4d54-a90c-d7558f9b6a9d)
- Call ID: bba401cf-5605-4d54-a90c-d7558f9b6a9d
-  Args:
-    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: :Isabella_of_Denmark
     literal_value: 2007
-  AddLiteral (30ad1b90-05b7-4cbd-bd02-c6acc00248f0)
- Call ID: 30ad1b90-05b7-4cbd-bd02-c6acc00248f0
+    literal_type: xsd:integer
+    source: Isabella_of_Denmark
+  AddTriple (c20e3a6d-d885-4559-91c6-53bcd4068044)
+ Call ID: c20e3a6d-d885-4559-91c6-53bcd4068044
   Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Female
-    source: :Isabella_of_Denmark
-  Finish (d5078816-ebb7-4d0b-960c-abc460a9aa0b)
- Call ID: d5078816-ebb7-4d0b-960c-abc460a9aa0b
+    relation: :hasFather
+    target: Frederik_X
+    source: Isabella_of_Denmark
+  AddTriple (9a14da52-5d17-4185-99a0-b08fb05a65ca)
+ Call ID: 9a14da52-5d17-4185-99a0-b08fb05a65ca
+  Args:
+    source: Isabella_of_Denmark
+    target: Mary
+    relation: :hasMother
+  AddTriple (d23fe5d7-d026-41d0-8a56-c12b579fb047)
+ Call ID: d23fe5d7-d026-41d0-8a56-c12b579fb047
+  Args:
+    relation: :hasFather
+    target: Henrik_Prince
+    source: Frederik_X
+  AddTriple (faf73a20-a341-46dd-a2f7-b6a0498821f3)
+ Call ID: faf73a20-a341-46dd-a2f7-b6a0498821f3
+  Args:
+    relation: :hasMother
+    target: Margrethe_II
+    source: Frederik_X
+  AddTriple (5b028fb1-dfa4-4cb0-b1eb-c892832f12e9)
+ Call ID: 5b028fb1-dfa4-4cb0-b1eb-c892832f12e9
+  Args:
+    target: Christian_Crown_Prince
+    source: Isabella_of_Denmark
+    relation: :hasBrother
+  AddTriple (e5003512-433a-42a9-a6ea-0579ef048662)
+ Call ID: e5003512-433a-42a9-a6ea-0579ef048662
+  Args:
+    source: Isabella_of_Denmark
+    target: Vincent
+    relation: :hasBrother
+  Finish (7818fe6f-6e84-4a17-a504-e6af51725dda)
+ Call ID: 7818fe6f-6e84-4a17-a504-e6af51725dda
   Args:

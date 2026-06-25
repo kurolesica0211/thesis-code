@@ -1,0 +1,226 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:LouisOfHesseAndByRhine a :Man,
+        :Person ;
+    :hasBrother data:LouisOfHesseAndByRhine ;
+    :hasRelation data:LouisOfHesseAndByRhine ;
+    :isBloodrelationOf data:LouisOfHesseAndByRhine ;
+    :isBrotherOf data:LouisOfHesseAndByRhine ;
+    :isSiblingOf data:LouisOfHesseAndByRhine .
+
+data:MargaretCampbellGeddes a :Person,
+        :Woman ;
+    :hasRelation data:MargaretCampbellGeddes ;
+    :hasSister data:MargaretCampbellGeddes ;
+    :isBloodrelationOf data:MargaretCampbellGeddes ;
+    :isSiblingOf data:MargaretCampbellGeddes ;
+    :isSisterOf data:MargaretCampbellGeddes .
+
+data:GustavAlbrecht a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GustavAlbrecht ;
+    :hasChild data:TatianaOfSaynWittgensteinBerleburg ;
+    :hasDaughter data:TatianaOfSaynWittgensteinBerleburg ;
+    :hasRelation data:Elisabeth,
+        data:GustavAlbrecht,
+        data:Heinrich,
+        data:MafaldaOfSavoy,
+        data:Moritz,
+        data:Otto,
+        data:Philip,
+        data:TatianaOfSaynWittgensteinBerleburg ;
+    :isAncestorOf data:TatianaOfSaynWittgensteinBerleburg ;
+    :isBloodrelationOf data:GustavAlbrecht ;
+    :isBrotherOf data:GustavAlbrecht ;
+    :isFatherOf data:TatianaOfSaynWittgensteinBerleburg ;
+    :isParentOf data:TatianaOfSaynWittgensteinBerleburg ;
+    :isSiblingOf data:GustavAlbrecht ;
+    :isUncleOf data:TatianaOfSaynWittgensteinBerleburg .
+
+data:MafaldaOfSavoy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Moritz ;
+    :hasRelation data:Elisabeth,
+        data:GustavAlbrecht,
+        data:Heinrich,
+        data:MafaldaOfSavoy,
+        data:Moritz,
+        data:Otto,
+        data:Philip,
+        data:TatianaOfSaynWittgensteinBerleburg ;
+    :hasSister data:MafaldaOfSavoy ;
+    :hasSon data:Moritz ;
+    :isAncestorOf data:Moritz ;
+    :isAuntOf data:Moritz ;
+    :isBloodrelationOf data:MafaldaOfSavoy ;
+    :isMotherOf data:Moritz ;
+    :isParentOf data:Moritz ;
+    :isSiblingOf data:MafaldaOfSavoy ;
+    :isSisterOf data:MafaldaOfSavoy .
+
+data:Philip a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philip ;
+    :hasChild data:Moritz ;
+    :hasRelation data:Elisabeth,
+        data:GustavAlbrecht,
+        data:Heinrich,
+        data:MafaldaOfSavoy,
+        data:Moritz,
+        data:Otto,
+        data:Philip,
+        data:TatianaOfSaynWittgensteinBerleburg ;
+    :hasSon data:Moritz ;
+    :isAncestorOf data:Moritz ;
+    :isBloodrelationOf data:Philip ;
+    :isBrotherOf data:Philip ;
+    :isFatherOf data:Moritz ;
+    :isParentOf data:Moritz ;
+    :isSiblingOf data:Philip ;
+    :isUncleOf data:Moritz .
+
+data:TatianaOfSaynWittgensteinBerleburg a :Person,
+        :Woman ;
+    :hasAncestor data:GustavAlbrecht ;
+    :hasFather data:GustavAlbrecht ;
+    :hasParent data:GustavAlbrecht ;
+    :hasRelation data:Elisabeth,
+        data:GustavAlbrecht,
+        data:Heinrich,
+        data:MafaldaOfSavoy,
+        data:Moritz,
+        data:Otto,
+        data:Philip,
+        data:TatianaOfSaynWittgensteinBerleburg ;
+    :hasSister data:TatianaOfSaynWittgensteinBerleburg ;
+    :isBloodrelationOf data:TatianaOfSaynWittgensteinBerleburg ;
+    :isChildOf data:GustavAlbrecht ;
+    :isDaughterOf data:GustavAlbrecht ;
+    :isSiblingOf data:TatianaOfSaynWittgensteinBerleburg ;
+    :isSisterOf data:TatianaOfSaynWittgensteinBerleburg .
+
+data:Elisabeth a :Person,
+        :Woman ;
+    :hasBrother data:Heinrich,
+        data:Moritz,
+        data:Otto ;
+    :hasRelation data:Elisabeth,
+        data:GustavAlbrecht,
+        data:Heinrich,
+        data:MafaldaOfSavoy,
+        data:Moritz,
+        data:Otto,
+        data:Philip,
+        data:TatianaOfSaynWittgensteinBerleburg ;
+    :hasSister data:Elisabeth ;
+    :isBloodrelationOf data:Elisabeth,
+        data:Heinrich,
+        data:Moritz,
+        data:Otto ;
+    :isSiblingOf data:Elisabeth,
+        data:Heinrich,
+        data:Moritz,
+        data:Otto ;
+    :isSisterOf data:Elisabeth,
+        data:Heinrich,
+        data:Moritz,
+        data:Otto .
+
+data:Heinrich a :Man,
+        :Person ;
+    :hasBrother data:Heinrich,
+        data:Moritz,
+        data:Otto ;
+    :hasRelation data:Elisabeth,
+        data:GustavAlbrecht,
+        data:Heinrich,
+        data:MafaldaOfSavoy,
+        data:Moritz,
+        data:Otto,
+        data:Philip,
+        data:TatianaOfSaynWittgensteinBerleburg ;
+    :hasSister data:Elisabeth ;
+    :isBloodrelationOf data:Elisabeth,
+        data:Heinrich,
+        data:Moritz,
+        data:Otto ;
+    :isBrotherOf data:Elisabeth,
+        data:Heinrich,
+        data:Moritz,
+        data:Otto ;
+    :isSiblingOf data:Elisabeth,
+        data:Heinrich,
+        data:Moritz,
+        data:Otto .
+
+data:Otto a :Man,
+        :Person ;
+    :hasBrother data:Heinrich,
+        data:Moritz,
+        data:Otto ;
+    :hasRelation data:Elisabeth,
+        data:GustavAlbrecht,
+        data:Heinrich,
+        data:MafaldaOfSavoy,
+        data:Moritz,
+        data:Otto,
+        data:Philip,
+        data:TatianaOfSaynWittgensteinBerleburg ;
+    :hasSister data:Elisabeth ;
+    :isBloodrelationOf data:Elisabeth,
+        data:Heinrich,
+        data:Moritz,
+        data:Otto ;
+    :isBrotherOf data:Elisabeth,
+        data:Heinrich,
+        data:Moritz,
+        data:Otto ;
+    :isSiblingOf data:Elisabeth,
+        data:Heinrich,
+        data:Moritz,
+        data:Otto .
+
+data:Moritz a :Man,
+        :Person ;
+    :hasAncestor data:MafaldaOfSavoy,
+        data:Philip ;
+    :hasBirthYear 1926 ;
+    :hasBrother data:Heinrich,
+        data:Moritz,
+        data:Otto ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Philip ;
+    :hasMother data:MafaldaOfSavoy ;
+    :hasParent data:MafaldaOfSavoy,
+        data:Philip ;
+    :hasRelation data:Elisabeth,
+        data:GustavAlbrecht,
+        data:Heinrich,
+        data:MafaldaOfSavoy,
+        data:Moritz,
+        data:Otto,
+        data:Philip,
+        data:TatianaOfSaynWittgensteinBerleburg ;
+    :hasSister data:Elisabeth ;
+    :isBloodrelationOf data:Elisabeth,
+        data:Heinrich,
+        data:Moritz,
+        data:Otto ;
+    :isBrotherOf data:Elisabeth,
+        data:Heinrich,
+        data:Moritz,
+        data:Otto ;
+    :isChildOf data:MafaldaOfSavoy,
+        data:Philip ;
+    :isSiblingOf data:Elisabeth,
+        data:Heinrich,
+        data:Moritz,
+        data:Otto ;
+    :isSonOf data:MafaldaOfSavoy,
+        data:Philip .
+

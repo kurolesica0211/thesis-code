@@ -2,26 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Victoria_Louise_of_Prussia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1892 ;
-    :hasDeathYear 1980 ;
-    :hasFather data:Wilhelm_II ;
-    :hasMarriageYear 1913 ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
-    :hasRelation data:Ernest_Augustus_of_Hanover ;
-    :knownAs "Sissy"^^xsd:string .
+data:Christian_of_Rosenborg a :Man,
+        :Person ;
+    :hasBirthYear 1942 ;
+    :hasBrother data:Ingolf_of_Denmark ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Knud_of_Denmark ;
+    :hasMarriageYear 1971 ;
+    :hasMother data:Caroline-Mathilde_of_Denmark ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg ;
+    :knownAs "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik"^^xsd:string .
 
-data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+data:Anne_Dorte_of_Rosenborg a :Person,
+        :Woman ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 2014 .
+
+data:Caroline-Mathilde_of_Denmark a :Ancestor,
         :Person,
         :Woman .
 
-data:Ernest_Augustus_of_Hanover a :Ancestor,
-        :Man,
+data:Ingolf_of_Denmark a :Man,
         :Person .
 
-data:Wilhelm_II a :Ancestor,
+data:Knud_of_Denmark a :Ancestor,
         :Man,
         :Person .
 

@@ -7,73 +7,18 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Princess_Caroline_of_Monaco a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Caroline of Monaco" ;
-    data:posIndicesFull "610:637" ;
-    data:wdtLink wdt:Q233966 ;
-    :alsoKnownAs "Caroline, Princess of Hanover",
-        "Princess Caroline Louise Marguerite of Monaco",
-        "Princess Caroline Louise Marguerite of Monaco and Hanover" ;
-    :hasSex data:female .
+data:Ernst_August-_Duke_of_Brunswick a :Person ;
+    rdfs:label "Ernst August, Duke of Brunswick" ;
+    data:posIndicesFull "178:190",
+        "427:439" ;
+    data:posIndicesPart "334:339" ;
+    data:wdtLink wdt:Q57672 ;
+    :alsoKnownAs "Ernest August I, Duke of Brunswick",
+        "Ernest Augustus",
+        "Ernst August I of Brunswick" ;
+    :hasSex data:male .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Chantal_Hochuli a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Chantal Hochuli" ;
-    data:posIndicesFull "231:246",
-        "457:472" ;
-    data:wdtLink wdt:Q3336838 ;
-    :hasChild data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover ;
-    :isMotherOf data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover ;
-    :isParentOf data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover .
-
-data:Ernst_August-_Prince_of_Hanover_1 a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Ernst August, Prince of Hanover" ;
-    data:posIndicesFull "178:209",
-        "427:452" ;
-    data:posIndicesPart "260:267",
-        "334:339" ;
-    data:wdtLink wdt:Q58070 ;
-    :alsoKnownAs "Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig of Hanover",
-        "Ernst August Prinz von Hannover",
-        "Ernst August of Hanover",
-        "Ernst August von Hanover",
-        "Prince Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig of Hanover",
-        "Prince Ernst August Sr.",
-        "Prince Ernst August of Hanover",
-        "Prince Ernst August of Hanover (born 1954)" ;
-    :hasChild data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover ;
-    :isFatherOf data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover ;
-    :isParentOf data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover .
-
-data:Prince_Christian_of_Hanover a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Christian_of_Hanover a :Person ;
     rdfs:label "Prince Christian of Hanover" ;
     data:posIndicesFull "0:27",
         "7:27" ;
@@ -91,22 +36,11 @@ data:Prince_Christian_of_Hanover a :Man,
         "Christian von Hannover",
         "Cristián de Hannover",
         "Prince Christian Heinrich Clemens Paul Frank Peter Welf Wilhelm-Ernst Friedrich Franz of Hanover" ;
-    :hasBrother data:Prince_Ernst_August_of_Hanover ;
-    :hasFather data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasMother data:Chantal_Hochuli ;
     :hasParent data:Chantal_Hochuli,
         data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Ernst_August_of_Hanover ;
-    :isChildOf data:Chantal_Hochuli,
-        data:Ernst_August-_Prince_of_Hanover_1 ;
-    :isSiblingOf data:Prince_Ernst_August_of_Hanover ;
-    :isSonOf data:Chantal_Hochuli,
-        data:Ernst_August-_Prince_of_Hanover_1 .
+    :hasSex data:male .
 
-data:Prince_Ernst_August_of_Hanover a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Ernst_August_of_Hanover a :Person ;
     rdfs:label "Prince Ernst August of Hanover" ;
     data:posIndicesFull "178:209",
         "427:452" ;
@@ -122,16 +56,50 @@ data:Prince_Ernst_August_of_Hanover a :Man,
         "Ernst August, Hereditary Prince of Hanover",
         "Prince Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph of Hanover",
         "Prince Ernst August Jr." ;
-    :hasBrother data:Prince_Christian_of_Hanover ;
-    :hasFather data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasMother data:Chantal_Hochuli ;
     :hasParent data:Chantal_Hochuli,
         data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Christian_of_Hanover ;
-    :isChildOf data:Chantal_Hochuli,
-        data:Ernst_August-_Prince_of_Hanover_1 ;
-    :isSiblingOf data:Prince_Christian_of_Hanover ;
-    :isSonOf data:Chantal_Hochuli,
-        data:Ernst_August-_Prince_of_Hanover_1 .
+    :hasSex data:male .
+
+data:Princess_Caroline_of_Monaco a :Person ;
+    rdfs:label "Princess Caroline of Monaco" ;
+    data:posIndicesFull "610:637" ;
+    data:wdtLink wdt:Q233966 ;
+    :alsoKnownAs "Caroline, Princess of Hanover",
+        "Princess Caroline Louise Marguerite of Monaco",
+        "Princess Caroline Louise Marguerite of Monaco and Hanover" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Chantal_Hochuli a :Person ;
+    rdfs:label "Chantal Hochuli" ;
+    data:posIndicesFull "231:246",
+        "457:472" ;
+    data:wdtLink wdt:Q3336838 ;
+    :hasSex data:female .
+
+data:Ernst_August-_Prince_of_Hanover_1 a :Person ;
+    rdfs:label "Ernst August, Prince of Hanover" ;
+    data:posIndicesFull "178:209",
+        "427:452" ;
+    data:posIndicesPart "260:267",
+        "334:339" ;
+    data:wdtLink wdt:Q58070 ;
+    :alsoKnownAs "Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig of Hanover",
+        "Ernst August Prinz von Hannover",
+        "Ernst August of Hanover",
+        "Ernst August von Hanover",
+        "Prince Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig of Hanover",
+        "Prince Ernst August Sr.",
+        "Prince Ernst August of Hanover",
+        "Prince Ernst August of Hanover (born 1954)" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

@@ -71,15 +71,10 @@ Please update the Knowledge Graph based on the provided data.
 ### Input Text:
 Paul (Greek: Παύλος, romanized: Pavlos; 14 December 1901 – 6 March 1964) was King of Greece from 1 April 1947 until his death on 6 March 1964.
 Paul was born in Athens as the third son of Crown Prince Constantine and Crown Princess Sophia of Greece.
-In London, Paul had an affair with his first cousin and his first love, Princess Nina Georgievna of Russia, who would eventually reject his marriage proposal.
 At the 1936 Berlin Olympic Games, Paul successfully proposed to Frederica of Hanover, whom he had been seeing regularly for the past year.
-However, Paul's engagement to a German princess received a mixed reaction in Greece, especially since Adolf Hitler attempted to include Nazi swastika flags at their wedding ceremony.
-Paul was forced out of Greece with his family during World War II when Greece fell to the Axis Powers.
-When George died in 1947, Paul succeeded his brother and became the King of Greece.
 Though Paul successfully secured money from the Marshall Plan to fund recovery and infrastructure projects, he was criticised for limiting democracy when the new 1952 Greek constitution gave extensive powers to the monarch.
 He was succeeded by his only son, who became Constantine II.
 Paul had three children: Queen Sofía of Spain, Constantine II of Greece, and Princess Irene.
-Paul was also a first cousin of Prince Philip, Duke of Edinburgh.
 Early life
 
 Paul was born on 14 December  1901 at the Tatoi Palace in Attica north of Athens, the third son of Crown Prince Constantine and his wife, Princess Sophia of Prussia.
@@ -147,20 +142,15 @@ Tatoi told the press that George and the royal family would be taking an officia
 George and Elisabeth left the country first, followed by Paul and other members of the royal family on 19 December 1923, residing in Bucharest.
 Two months after Venizelos' government was proclaimed, the Kingdom of Greece was replaced by the Second Hellenic Republic on 25 March 1924, Greece's national independence day.
 Two and a half weeks later, the democratically conducted 1924 Greek republic referendum occurred, confirming the abolition of the monarchy and officially removing George as Greece's head of state and Paul as the Crown Prince of Greece.
-The Greek royal family became stateless, however, Paul was granted a Danish passport from his cousin, Christian X of Denmark.
 In Bucharest, where the royal family remained, Paul was welcomed by his sister, Princess Helen, who was unhappily married to the future Carol II of Romania.
 Not too long after arriving in Romania, Paul departed to stay with his mother and sisters, Princess Irene and Princess Katherine, at the Viva Bobolina in Fiesole.
 According to historian Stelios Hourmouzios, Henry Drummond Wolff, and according to historian Ricardo Mateos Sáinz de Medrano, Alphonse d'Orléans, helped Paul become hired as an apprentice mechanic for Armstrong Siddeley.
 Paul's family discovered an affair between him and Princess Nina Georgievna of Russia, but he claimed that he had fallen in love.
 Nina was the elder daughter of Paul's aunt, Maria, and Grand Duke George Mikhailovich of Russia, making her Paul's first cousin.
 However, Nina rejected his later marriage proposal, choosing instead to marry Prince Paul Aleksandrovich Chavchavadze in 1922.
-This was because Paul's brother, Alexander, had married a commoner Aspasia Manos and the birth of their child took years to be legitimized.
 Paul became pressured as the responsibility of continuing the family's lineage increased due to George and Elisabeth's sterility.
 In Spring 1930 Paul met Captain Frederick Wessel, a wealthy annuitant of Danish origin.
-The yacht travelled along the French and Italian coastline for three weeks, before landing in Corfu on 2 August 1930.
-Paul and the rest of the group traveled around the Greek islands for the next month and a half, arriving through the Gulf of Patras on 5 August, Corinth on 7 August, the port of Phalerum in Athens in Vouliagmeni on 19 August, through Chalki, Euboea, Skiathos and Skyros by 25 August, Kymi on 26 August, through Andros, Syros, Santorini and Crete by 29 August, and then finally in Navarino and Argostoli by 12 September.
 While illegally travelling through Greece, Paul visited his former residences, Mon Repos, the former royal palace in Athens, and Tatoi.
-Paul soon became closer to his three sisters and established a home with Helen, who had bought the Bobolina villa after divorcing Carol II of Romania.
 Restoration of the monarchy
 
 The Second Hellenic Republic had tired most Greeks out, with, in only eleven years, 23 governments, 13 coup d'états and one dictatorship.
@@ -186,6 +176,7 @@ The next year, Frederica met Paul in Florence while studying at the American Col
 Frederica stayed with Paul's sisters during this time.
 Paul's sisters were highly supportive of the relationship and attempted to encourage it, before Paul wrote to Frederica's parents, Victoria Louise and Ernest Augustus, Duke of Brunswick, and asked for their consent to marry her.
 However, Ernest Augustus declined because of Frederica's young age.
+Mateos Sáinz de Medrano describes Paul as having been "highly disappointed" at Ernest Augustus's response, but he did not give up on finding a spouse.
 Although it is reported that Paul was looking for a Greek commoner to marry, he searched and found Frederica during his trip to Germany for the 1936 Berlin Olympic Games.
 He went to the Königinvilla in Gmunden and asked Frederica's parents again if he could marry her, to which they finally agreed.
 Paul and Frederica's engagement was soon announced to the public.
@@ -355,6 +346,8 @@ On 9 January 1938, Paul married Princess Frederica of Hanover, his first cousin 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -370,39 +363,9 @@ On 9 January 1938, Paul married Princess Frederica of Hanover, his first cousin 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -417,6 +380,23 @@ On 9 January 1938, Paul married Princess Frederica of Hanover, his first cousin 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -434,6 +414,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -501,29 +496,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -532,6 +519,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -544,6 +539,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -552,17 +549,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -590,6 +589,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -605,237 +688,208 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4ef13c16-6a44-4860-a647-86c68ca0410c)
- Call ID: 4ef13c16-6a44-4860-a647-86c68ca0410c
+  AssignClass (cb013a6e-ebf9-4104-9a95-5e4e16b4d69c)
+ Call ID: cb013a6e-ebf9-4104-9a95-5e4e16b4d69c
   Args:
     type: :Man
     source: Paul
-  AssignClass (fe5f9ccc-bbf7-4ee6-91ed-b8effe01f00f)
- Call ID: fe5f9ccc-bbf7-4ee6-91ed-b8effe01f00f
-  Args:
-    source: Paul
-    type: :Person
-  AddLiteral (e0c5860a-e568-4336-90bb-fc7d3edc9873)
- Call ID: e0c5860a-e568-4336-90bb-fc7d3edc9873
+  AddLiteral (7a7d8f99-2481-4302-a28a-1e08eb3fd95e)
+ Call ID: 7a7d8f99-2481-4302-a28a-1e08eb3fd95e
   Args:
     literal_type: xsd:integer
     source: Paul
-    relation: :hasBirthYear
     literal_value: 1901
-  AddLiteral (6d55c422-a7b2-4f4a-9df5-3079cdfe87fb)
- Call ID: 6d55c422-a7b2-4f4a-9df5-3079cdfe87fb
+    relation: :hasBirthYear
+  AddLiteral (5b59ab42-bf14-408b-9acb-dc22f3a77c81)
+ Call ID: 5b59ab42-bf14-408b-9acb-dc22f3a77c81
   Args:
-    source: Paul
     literal_type: xsd:integer
-    literal_value: 1964
     relation: :hasDeathYear
-  AssignClass (029a28c6-34c4-4716-b176-89d3c1365084)
- Call ID: 029a28c6-34c4-4716-b176-89d3c1365084
+    literal_value: 1964
+    source: Paul
+  AssignClass (e95e7509-3021-494e-a070-96c9c2d1139a)
+ Call ID: e95e7509-3021-494e-a070-96c9c2d1139a
   Args:
     type: :Man
     source: Constantine
-  AssignClass (5347dd9a-1897-4238-9b40-6e27d1a5652c)
- Call ID: 5347dd9a-1897-4238-9b40-6e27d1a5652c
+  AssignClass (f62d4c64-01f7-495e-ad3d-789d47326b14)
+ Call ID: f62d4c64-01f7-495e-ad3d-789d47326b14
   Args:
-    type: :Person
-    source: Constantine
-  AssignClass (a8e512b2-7944-4b09-835c-6a8fff39dbd5)
- Call ID: a8e512b2-7944-4b09-835c-6a8fff39dbd5
-  Args:
+    source: Sophia
     type: :Woman
-    source: Sophia
-  AssignClass (c4ac3427-ddc5-40c6-bc10-a7a1991d0ef6)
- Call ID: c4ac3427-ddc5-40c6-bc10-a7a1991d0ef6
+  AddTriple (c595cda1-3e77-4da4-83da-371ee682fb02)
+ Call ID: c595cda1-3e77-4da4-83da-371ee682fb02
   Args:
-    type: :Person
-    source: Sophia
-  AddTriple (b90120bf-d153-464a-bc2c-d29ec91ee44f)
- Call ID: b90120bf-d153-464a-bc2c-d29ec91ee44f
-  Args:
-    source: Paul
-    relation: :hasFather
     target: Constantine
-  AddTriple (7f976b2f-94f8-4f3e-a874-03d7b4305514)
- Call ID: 7f976b2f-94f8-4f3e-a874-03d7b4305514
+    relation: :hasFather
+    source: Paul
+  AddTriple (d4489ac5-d26b-45b2-ae47-be26ad205886)
+ Call ID: d4489ac5-d26b-45b2-ae47-be26ad205886
   Args:
-    target: Sophia
     relation: :hasMother
     source: Paul
-  AssignClass (7278df3f-bb3e-4cee-96d3-cfbe37cd9b7d)
- Call ID: 7278df3f-bb3e-4cee-96d3-cfbe37cd9b7d
+    target: Sophia
+  AssignClass (715a10c3-e4d6-4404-bb54-a345ff138f9c)
+ Call ID: 715a10c3-e4d6-4404-bb54-a345ff138f9c
   Args:
     source: Frederica
     type: :Woman
-  AssignClass (65ee91da-2d34-424e-b108-eeabf073c1f7)
- Call ID: 65ee91da-2d34-424e-b108-eeabf073c1f7
+  AddLiteral (4acb9491-b8aa-4b78-b4db-409722cae859)
+ Call ID: 4acb9491-b8aa-4b78-b4db-409722cae859
   Args:
-    type: :Person
-    source: Frederica
-  AddTriple (27164477-4cc7-4c37-88c5-18ec62757358)
- Call ID: 27164477-4cc7-4c37-88c5-18ec62757358
-  Args:
-    target: Frederica
+    literal_type: xsd:integer
     source: Paul
-    relation: :hasRelation
-  AddLiteral (d3e916e8-7b5d-4d60-9528-0645a4b1fc20)
- Call ID: d3e916e8-7b5d-4d60-9528-0645a4b1fc20
-  Args:
     literal_value: 1938
     relation: :hasMarriageYear
+  AddTriple (70a47ad9-04a3-4af8-bd42-91416a0ba81e)
+ Call ID: 70a47ad9-04a3-4af8-bd42-91416a0ba81e
+  Args:
     source: Paul
-    literal_type: xsd:integer
-  AssignClass (1cf1a43f-b18c-4eee-8b5b-2ede041f6247)
- Call ID: 1cf1a43f-b18c-4eee-8b5b-2ede041f6247
+    relation: :hasRelation
+    target: Frederica
+  AssignClass (83c53a74-eab2-43a9-aa61-c850c2413ff5)
+ Call ID: 83c53a74-eab2-43a9-aa61-c850c2413ff5
   Args:
-    source: Sofia
-    type: :Woman
-  AssignClass (680372ab-c874-4bb4-9c2f-1faa376b26f9)
- Call ID: 680372ab-c874-4bb4-9c2f-1faa376b26f9
-  Args:
-    type: :Person
-    source: Sofia
-  AssignClass (e8c6421a-9558-499c-9a8e-46f237b9eba8)
- Call ID: e8c6421a-9558-499c-9a8e-46f237b9eba8
-  Args:
+    source: ConstantineII
     type: :Man
-    source: ConstantineII
-  AssignClass (17162545-710e-46fb-969e-9abb7f9cee14)
- Call ID: 17162545-710e-46fb-969e-9abb7f9cee14
+  AssignClass (32f815ef-765d-4efa-b663-1ebf18c191be)
+ Call ID: 32f815ef-765d-4efa-b663-1ebf18c191be
   Args:
-    source: ConstantineII
-    type: :Person
-  AssignClass (ec2e415e-3ba8-48d9-8964-492d7f7946f5)
- Call ID: ec2e415e-3ba8-48d9-8964-492d7f7946f5
+    source: Sofia
+    type: :Woman
+  AssignClass (cacdc853-efb1-489b-8426-9ffe96f4fc43)
+ Call ID: cacdc853-efb1-489b-8426-9ffe96f4fc43
   Args:
     type: :Woman
     source: Irene
-  AssignClass (5569081d-4c9a-4cdd-a358-882bd42fb047)
- Call ID: 5569081d-4c9a-4cdd-a358-882bd42fb047
+  AddTriple (4c5f94d2-57cc-414a-b188-ba5715a33944)
+ Call ID: 4c5f94d2-57cc-414a-b188-ba5715a33944
   Args:
-    type: :Person
-    source: Irene
-  AddTriple (ed2f68fe-0796-4094-8c4f-8c0851f8323e)
- Call ID: ed2f68fe-0796-4094-8c4f-8c0851f8323e
-  Args:
-    relation: :hasDaughter
     source: Paul
+    relation: :hasChild
     target: Sofia
-  AddTriple (75ea5122-ff65-420a-bdbd-80a44ef87981)
- Call ID: 75ea5122-ff65-420a-bdbd-80a44ef87981
+  AddTriple (da544509-1b83-492c-a00d-c1e55da5aebb)
+ Call ID: da544509-1b83-492c-a00d-c1e55da5aebb
   Args:
     source: Paul
-    relation: :hasSon
+    relation: :hasChild
     target: ConstantineII
-  AddTriple (14ccd200-30c4-4c05-8726-9925914d35d7)
- Call ID: 14ccd200-30c4-4c05-8726-9925914d35d7
+  AddTriple (250c014c-c11c-4cbb-aafe-fb62c8f1f149)
+ Call ID: 250c014c-c11c-4cbb-aafe-fb62c8f1f149
+  Args:
+    relation: :hasChild
+    source: Paul
+    target: Irene
+  AddTriple (278bba2c-0d89-4104-8d6e-06687c8140b7)
+ Call ID: 278bba2c-0d89-4104-8d6e-06687c8140b7
+  Args:
+    relation: :hasChild
+    source: Frederica
+    target: Sofia
+  AddTriple (036e2852-8494-40dd-adc2-202773503abb)
+ Call ID: 036e2852-8494-40dd-adc2-202773503abb
+  Args:
+    relation: :hasChild
+    source: Frederica
+    target: ConstantineII
+  AddTriple (05323bc4-ff71-48a6-8f94-faf956e737a5)
+ Call ID: 05323bc4-ff71-48a6-8f94-faf956e737a5
   Args:
     target: Irene
-    relation: :hasDaughter
-    source: Paul
-  AddTriple (722bd65f-5100-4153-b572-2a96d5622b22)
- Call ID: 722bd65f-5100-4153-b572-2a96d5622b22
-  Args:
-    target: Frederica
-    source: Sofia
-    relation: :hasMother
-  AddTriple (bcfd742b-35d8-448c-959f-62813382bc15)
- Call ID: bcfd742b-35d8-448c-959f-62813382bc15
-  Args:
-    source: ConstantineII
-    relation: :hasMother
-    target: Frederica
-  AddTriple (1899a214-f9ae-48c5-8d20-c11bd6614b1f)
- Call ID: 1899a214-f9ae-48c5-8d20-c11bd6614b1f
-  Args:
-    relation: :hasMother
-    source: Irene
-    target: Frederica
-  AssignClass (4ab3a5a0-5c00-40ca-98d8-31f19635953f)
- Call ID: 4ab3a5a0-5c00-40ca-98d8-31f19635953f
-  Args:
-    source: GeorgeII
-    type: :Man
-  AssignClass (e247311f-c066-4224-86d0-29b7f8201580)
- Call ID: e247311f-c066-4224-86d0-29b7f8201580
-  Args:
-    source: GeorgeII
-    type: :Person
-  AddTriple (22666a7a-8b21-4bcf-ba76-9e50223a8ba2)
- Call ID: 22666a7a-8b21-4bcf-ba76-9e50223a8ba2
-  Args:
-    source: Paul
-    relation: :hasBrother
-    target: GeorgeII
-  AssignClass (fbb6658a-298b-46ad-978b-f1630589608d)
- Call ID: fbb6658a-298b-46ad-978b-f1630589608d
-  Args:
-    source: Alexander
-    type: :Man
-  AssignClass (c5d82f5c-21ec-4037-8817-a928ac68f39e)
- Call ID: c5d82f5c-21ec-4037-8817-a928ac68f39e
-  Args:
-    source: Alexander
-    type: :Person
-  AddTriple (9f6523f1-7fa4-4c2e-97e5-3f720da97ac3)
- Call ID: 9f6523f1-7fa4-4c2e-97e5-3f720da97ac3
-  Args:
-    target: Alexander
-    relation: :hasBrother
-    source: Paul
-  AssignClass (eb02d880-8b37-4e0f-b96c-2513ec0bbf51)
- Call ID: eb02d880-8b37-4e0f-b96c-2513ec0bbf51
+    relation: :hasChild
+    source: Frederica
+  AssignClass (c4f0ff67-b20d-4d09-9d54-cc2068e993f1)
+ Call ID: c4f0ff67-b20d-4d09-9d54-cc2068e993f1
   Args:
     type: :Man
     source: GeorgeI
-  AssignClass (e411042d-bec3-4f4b-806f-cf925802da3d)
- Call ID: e411042d-bec3-4f4b-806f-cf925802da3d
+  AddTriple (708b0187-bcee-480e-9461-efe0b8d3a701)
+ Call ID: 708b0187-bcee-480e-9461-efe0b8d3a701
   Args:
-    source: GeorgeI
-    type: :Person
-  AddTriple (30434fae-7e2f-460a-ac48-c953bd31a440)
- Call ID: 30434fae-7e2f-460a-ac48-c953bd31a440
-  Args:
-    target: GeorgeI
     source: Constantine
     relation: :hasFather
-  AssignClass (8d208a4e-8596-4e21-863e-433b7cebc151)
- Call ID: 8d208a4e-8596-4e21-863e-433b7cebc151
+    target: GeorgeI
+  AssignClass (86f3c838-0d6c-4c9a-93da-4bc0bc0ebc4b)
+ Call ID: 86f3c838-0d6c-4c9a-93da-4bc0bc0ebc4b
   Args:
-    source: Helen
+    type: :Man
+    source: Alexander
+  AssignClass (d56c5dbe-4285-459b-82b5-fa8168a657d9)
+ Call ID: d56c5dbe-4285-459b-82b5-fa8168a657d9
+  Args:
+    source: GeorgeII
+    type: :Man
+  AddTriple (46e52896-eb74-4112-974b-90db12abdc0e)
+ Call ID: 46e52896-eb74-4112-974b-90db12abdc0e
+  Args:
+    target: Constantine
+    source: Alexander
+    relation: :hasFather
+  AddTriple (fc7b9c45-4273-4cd2-849d-07e37b8e2de9)
+ Call ID: fc7b9c45-4273-4cd2-849d-07e37b8e2de9
+  Args:
+    source: GeorgeII
+    relation: :hasFather
+    target: Constantine
+  AssignClass (fc27944f-2b99-4be0-9a46-4ecd7db2e794)
+ Call ID: fc27944f-2b99-4be0-9a46-4ecd7db2e794
+  Args:
+    source: Elisabeth
     type: :Woman
-  AssignClass (d652059d-ca5a-4adf-9931-5b92f9e48936)
- Call ID: d652059d-ca5a-4adf-9931-5b92f9e48936
+  AddTriple (4aa994d7-261f-4186-a89b-6ec0202cbef4)
+ Call ID: 4aa994d7-261f-4186-a89b-6ec0202cbef4
   Args:
-    source: Helen
-    type: :Person
-  AddTriple (9912fd93-4fb1-4421-b3bf-02e4f2d4d10d)
- Call ID: 9912fd93-4fb1-4421-b3bf-02e4f2d4d10d
-  Args:
-    source: Paul
-    relation: :hasSister
-    target: Helen
-  AssignClass (da0364e5-7820-468b-9317-009e68d6bb71)
- Call ID: da0364e5-7820-468b-9317-009e68d6bb71
+    relation: :hasRelation
+    source: GeorgeII
+    target: Elisabeth
+  AssignClass (7aa75c0b-baea-4a32-90d7-be85ecca96fe)
+ Call ID: 7aa75c0b-baea-4a32-90d7-be85ecca96fe
   Args:
     type: :Woman
-    source: Katherine
-  AssignClass (472c01fd-a01d-4be4-92f9-e543775e7f06)
- Call ID: 472c01fd-a01d-4be4-92f9-e543775e7f06
+    source: Helen
+  AddTriple (ddd82859-c2a4-4208-9768-02ddc3a907b6)
+ Call ID: ddd82859-c2a4-4208-9768-02ddc3a907b6
+  Args:
+    target: Constantine
+    source: Helen
+    relation: :hasFather
+  AssignClass (b6fc73d4-a167-414f-8ada-0b5101b64ba7)
+ Call ID: b6fc73d4-a167-414f-8ada-0b5101b64ba7
   Args:
     source: Katherine
-    type: :Person
-  AddTriple (4ae59942-3a51-4646-9de8-548eaffddc17)
- Call ID: 4ae59942-3a51-4646-9de8-548eaffddc17
+    type: :Woman
+  AddTriple (113972d1-7121-4284-80c1-1735d735a43d)
+ Call ID: 113972d1-7121-4284-80c1-1735d735a43d
   Args:
-    source: Paul
-    relation: :hasSister
-    target: Katherine
-  AddTriple (3e1ddb7c-bb54-4ffa-a0df-8319108e10dd)
- Call ID: 3e1ddb7c-bb54-4ffa-a0df-8319108e10dd
+    relation: :hasFather
+    source: Katherine
+    target: Constantine
+  AssignClass (2fe2dcdc-6dd7-40a6-b4eb-90b409322c40)
+ Call ID: 2fe2dcdc-6dd7-40a6-b4eb-90b409322c40
   Args:
-    target: Irene
-    relation: :hasSister
-    source: Paul
-  Finish (0a13bc0f-7870-4221-91ab-2e72191edea0)
- Call ID: 0a13bc0f-7870-4221-91ab-2e72191edea0
+    type: :Woman
+    source: Maria
+  AssignClass (623b022f-7c0f-4e01-8edb-2e831bdbbb1b)
+ Call ID: 623b022f-7c0f-4e01-8edb-2e831bdbbb1b
+  Args:
+    source: NinaGeorgievna
+    type: :Woman
+  AddTriple (48accf6f-edea-4d03-8dd4-7bf14057223f)
+ Call ID: 48accf6f-edea-4d03-8dd4-7bf14057223f
+  Args:
+    target: Maria
+    relation: :hasMother
+    source: NinaGeorgievna
+  AssignClass (4821426a-a2ef-4421-9073-ae03269f984b)
+ Call ID: 4821426a-a2ef-4421-9073-ae03269f984b
+  Args:
+    type: :Man
+    source: PrinceAndrew
+  AssignClass (084f10ba-769b-48cc-a37c-98c78d72609a)
+ Call ID: 084f10ba-769b-48cc-a37c-98c78d72609a
+  Args:
+    type: :Man
+    source: PrinceChristopher
+  Finish (24b9f26c-1384-4bff-b2a9-8bf1819ed71b)
+ Call ID: 24b9f26c-1384-4bff-b2a9-8bf1819ed71b
   Args:

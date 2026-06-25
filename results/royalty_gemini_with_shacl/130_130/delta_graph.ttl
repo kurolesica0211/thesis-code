@@ -2,34 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Infanta_Sofia a :Person,
-        :Woman ;
-    :hasFather data:Felipe_VI ;
-    :hasMother data:Letizia ;
-    :isSisterOf data:Leonor .
+data:Ernest_Augustus_Junior a :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_Cumberland ;
+    :hasMarriageYear 1913 ;
+    :hasRelation data:Victoria_Louise_Prussia .
 
-data:Juan_Carlos_I a :Ancestor,
+data:George_V_Hanover a :Ancestor,
         :Man,
         :Person .
 
-data:Leonor a :Person,
-        :Woman ;
-    :hasBirthYear 2005 ;
-    :hasFather data:Felipe_VI ;
-    :hasMother data:Letizia ;
-    :isSisterOf data:Infanta_Sofia .
+data:George_William a :Man,
+        :Person ;
+    :hasBirthYear 1880 ;
+    :hasDeathYear 1912 ;
+    :hasFather data:Ernest_Augustus_Cumberland ;
+    :hasMother data:Thyra_Denmark .
 
-data:Sofia a :Ancestor,
-        :Person,
-        :Woman .
+data:Christian_IX_Denmark a :Ancestor,
+        :Man,
+        :Person .
 
-data:Felipe_VI a :Ancestor,
+data:Ernest_Augustus_Cumberland_GreatGrandfather a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Sofia .
+    :hasFather data:George_III_UK .
 
-data:Letizia a :Ancestor,
+data:George_III_UK a :Ancestor,
+        :Man,
+        :Person .
+
+data:Thyra_Denmark a :Ancestor,
         :Person,
+        :Woman ;
+    :hasFather data:Christian_IX_Denmark .
+
+data:Victoria_Louise_Prussia a :Person,
         :Woman .
+
+data:Ernest_Augustus_Cumberland a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_Cumberland_GreatGrandfather .
 

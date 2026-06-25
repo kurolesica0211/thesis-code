@@ -2,59 +2,55 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:India_Hicks a :Person,
-        :Woman ;
-    :isDaughterOf data:David_Nightingale_Hicks,
-        data:Lady_Pamela_Carmen_Louise_Hicks .
+data:Alexander_Karageorgevitch a :Man,
+        :Person ;
+    :hasBirthYear 1982 ;
+    :hasFather data:Alexander_Sr_of_Yugoslavia ;
+    :hasMother data:Princess_Maria_da_Gloria .
 
-data:Patricia a :Person,
+data:Ana_Luna_Medina_y_Orleans_Braganza a :Person,
         :Woman ;
-    :isSisterOf data:Lady_Pamela_Carmen_Louise_Hicks .
+    :hasMother data:Princess_Maria_da_Gloria .
 
-data:Prince_Louis_of_Battenberg a :Ancestor,
+data:Dunja_Kusturica a :Person,
+        :Woman ;
+    :hasFather data:Emir_Kusturica .
+
+data:Ignacio_Duke_of_Segorbe a :Man,
+        :Person .
+
+data:Katherine_Clairy_Batis a :Person,
+        :Woman .
+
+data:Prince_Andrew a :Man,
+        :Person .
+
+data:Queen_Maria a :Person,
+        :Woman .
+
+data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasMother data:Princess_Maria_da_Gloria .
+
+data:Alexander_Sr_of_Yugoslavia a :Ancestor,
         :Man,
         :Person ;
-    :isFatherOf data:Lord_Louis_Mountbatten .
+    :hasFather data:King_Peter_II ;
+    :hasMother data:Queen_Alexandra .
 
-data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
-        :Person,
-        :Woman ;
-    :isMotherOf data:Lord_Louis_Mountbatten .
-
-data:The_1st_Baron_Mount_Temple a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:Edwina_Ashley .
-
-data:David_Nightingale_Hicks a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1929 ;
-    :hasDeathYear 1998 ;
-    :hasFather data:Herbert_Hicks ;
-    :hasMother data:Iris_Elsie_Platten .
-
-data:Herbert_Hicks a :Ancestor,
+data:Emir_Kusturica a :Ancestor,
         :Man,
         :Person .
 
-data:Iris_Elsie_Platten a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Edwina_Ashley a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Lady_Pamela_Carmen_Louise_Hicks a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1929 ;
-    :hasFather data:Lord_Louis_Mountbatten ;
-    :hasMother data:Edwina_Ashley ;
-    :knownAs "Lady Pamela Carmen Louise Hicks"^^xsd:string .
-
-data:Lord_Louis_Mountbatten a :Ancestor,
+data:King_Peter_II a :Ancestor,
         :Man,
         :Person .
+
+data:Queen_Alexandra a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Maria_da_Gloria a :Ancestor,
+        :Person,
+        :Woman .
 

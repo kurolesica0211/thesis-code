@@ -1,0 +1,187 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Prince_Henry_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Henry of Battenberg"^^xsd:string ;
+    data:posIndicesFull "471:497"^^xsd:string,
+        "478:497"^^xsd:string,
+        "605:633"^^xsd:string,
+        "614:633"^^xsd:string,
+        "815:841"^^xsd:string,
+        "822:841"^^xsd:string ;
+    data:posIndicesPart "1436:1441"^^xsd:string,
+        "1453:1459"^^xsd:string,
+        "1478:1488"^^xsd:string ;
+    data:wdtLink wdt:Q444347 ;
+    :alsoKnownAs "Heinrich Moritz von Battenberg"^^xsd:string,
+        "Henry Maurice Battenberg"^^xsd:string,
+        "Henry of Battenberg"^^xsd:string,
+        "Prince Henry Maurice of Battenberg"^^xsd:string ;
+    :hasBrother data:Prince_Henry_of_Battenberg ;
+    :hasChild data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasDaughter data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Prince_Henry_of_Battenberg,
+        data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Maurice_of_Battenberg ;
+    :isAncestorOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Prince_Henry_of_Battenberg ;
+    :isBrotherOf data:Prince_Henry_of_Battenberg ;
+    :isFatherOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isParentOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Prince_Henry_of_Battenberg ;
+    :isUncleOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Beatrice of the United Kingdom"^^xsd:string ;
+    data:posIndicesFull "2603:2620"^^xsd:string,
+        "471:497"^^xsd:string,
+        "605:633"^^xsd:string,
+        "639:656"^^xsd:string,
+        "639:678"^^xsd:string,
+        "815:841"^^xsd:string ;
+    data:posIndicesPart "1076:1082"^^xsd:string,
+        "1083:1090"^^xsd:string,
+        "1301:1309"^^xsd:string,
+        "1339:1347"^^xsd:string ;
+    data:wdtLink wdt:Q158140 ;
+    :alsoKnownAs "Beatrice Mary Victoria Feodore"^^xsd:string,
+        "Princess Beatrice"^^xsd:string,
+        "Princess Beatrice Mary Victoria Feodore of the United Kingdom"^^xsd:string,
+        "Princess Beatrice of Battenberg"^^xsd:string,
+        "Princess Henry of Battenberg"^^xsd:string,
+        "The Princess Beatrice"^^xsd:string ;
+    :hasChild data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasDaughter data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Prince_Maurice_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSon data:Prince_Maurice_of_Battenberg ;
+    :isAncestorOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isAuntOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isMotherOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isParentOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSisterOf data:Princess_Beatrice_of_the_United_Kingdom .
+
+data:Prince_Maurice_of_Battenberg a :Man,
+        :Person ;
+    rdfs:label "Prince Maurice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "0:28"^^xsd:string,
+        "1028:1056"^^xsd:string,
+        "1119:1147"^^xsd:string,
+        "2510:2538"^^xsd:string ;
+    data:posIndicesPart "1453:1459"^^xsd:string,
+        "1478:1488"^^xsd:string,
+        "1603:1610"^^xsd:string,
+        "1868:1875"^^xsd:string,
+        "1938:1945"^^xsd:string,
+        "2209:2216"^^xsd:string,
+        "2312:2319"^^xsd:string,
+        "2382:2389"^^xsd:string,
+        "245:251"^^xsd:string,
+        "252:259"^^xsd:string,
+        "2869:2876"^^xsd:string,
+        "300:310"^^xsd:string,
+        "420:427"^^xsd:string,
+        "510:516"^^xsd:string,
+        "753:759"^^xsd:string,
+        "860:866"^^xsd:string,
+        "870:880"^^xsd:string,
+        "948:958"^^xsd:string ;
+    data:wdtLink wdt:Q2351869 ;
+    :alsoKnownAs "Maurice Victor Donald Battenberg"^^xsd:string,
+        "Prince Maurice Victor Donald of Battenberg"^^xsd:string ;
+    :hasAncestor data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasBrother data:Prince_Maurice_of_Battenberg ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasParent data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Prince_Henry_of_Battenberg,
+        data:Prince_Maurice_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isBrotherOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isChildOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSonOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman ;
+    rdfs:label "Victoria Eugenie of Battenberg"^^xsd:string ;
+    data:posIndicesFull "1741:1771"^^xsd:string ;
+    data:wdtLink wdt:Q160001 ;
+    :alsoKnownAs "Ena"^^xsd:string,
+        "Princess Ena"^^xsd:string,
+        "Princess Victoria Eugenie of Battenberg"^^xsd:string,
+        "Queen Victoria Eugenie of Spain"^^xsd:string,
+        "Victoria Eugenie Julia Ena of Battenberg"^^xsd:string,
+        "Victoria Eugenie, Queen of Spain"^^xsd:string ;
+    :hasAncestor data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasBrother data:Prince_Maurice_of_Battenberg ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasParent data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Prince_Henry_of_Battenberg,
+        data:Prince_Maurice_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isChildOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isDaughterOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Prince_Maurice_of_Battenberg,
+        data:Victoria_Eugenie_of_Battenberg .
+

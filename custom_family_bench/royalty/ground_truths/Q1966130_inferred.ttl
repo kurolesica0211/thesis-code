@@ -1,0 +1,226 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Benedikte_of_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Benedikte of Denmark"^^xsd:string ;
+    data:posIndicesFull "2011:2040"^^xsd:string,
+        "693:722"^^xsd:string ;
+    data:posIndicesPart "1224:1232"^^xsd:string,
+        "1938:1946"^^xsd:string,
+        "1958:1966"^^xsd:string,
+        "3220:3227"^^xsd:string ;
+    data:wdtLink wdt:Q817052 ;
+    :alsoKnownAs "Benedikte Astrid Ingeborg Ingrid"^^xsd:string,
+        "Benedikte Astrid Ingeborg Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark"^^xsd:string,
+        "Princess Benedikte of Denmark, Princess of Sayn-Wittgenstein-Berleburg"^^xsd:string ;
+    :hasRelation data:Princess_Benedikte_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Benedikte_of_Denmark ;
+    :isBloodrelationOf data:Princess_Benedikte_of_Denmark ;
+    :isSiblingOf data:Princess_Benedikte_of_Denmark ;
+    :isSisterOf data:Princess_Benedikte_of_Denmark .
+
+data:Queen_Sofía_of_Spain a :Person,
+        :Woman ;
+    rdfs:label "Queen Sofía of Spain"^^xsd:string ;
+    data:posIndicesFull "1900:1911"^^xsd:string,
+        "1900:1920"^^xsd:string,
+        "19:30"^^xsd:string,
+        "19:39"^^xsd:string ;
+    data:posIndicesPart "602:607"^^xsd:string,
+        "686:691"^^xsd:string ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark"^^xsd:string,
+        "Queen Sofia of Spain"^^xsd:string,
+        "Queen Sofía"^^xsd:string,
+        "Queen Sofía, Queen Consort of Spain"^^xsd:string ;
+    :hasRelation data:Queen_Sofía_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Sofía_of_Spain ;
+    :isBloodrelationOf data:Queen_Sofía_of_Spain ;
+    :isSiblingOf data:Queen_Sofía_of_Spain ;
+    :isSisterOf data:Queen_Sofía_of_Spain .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Constantine II of Greece"^^xsd:string ;
+    data:posIndicesFull "221:235"^^xsd:string,
+        "2838:2854"^^xsd:string,
+        "426:442"^^xsd:string,
+        "431:445"^^xsd:string ;
+    data:posIndicesPart "1545:1551"^^xsd:string,
+        "2447:2458"^^xsd:string,
+        "3052:3058"^^xsd:string ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece"^^xsd:string,
+        "Constantine Glucksburg"^^xsd:string,
+        "Constantine II"^^xsd:string,
+        "Constantino de Grecia"^^xsd:string,
+        "King Constantine"^^xsd:string,
+        "Konstantinos 2"^^xsd:string,
+        "Konstantinos II"^^xsd:string,
+        "Konstantinos II of Greece"^^xsd:string,
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes"^^xsd:string,
+        "Konstantínos 2"^^xsd:string,
+        "Konstantínos II"^^xsd:string ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasChild data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isFatherOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isUncleOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Queen_Anne-Marie_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Anne-Marie of Greece"^^xsd:string ;
+    data:posIndicesFull "450:476"^^xsd:string ;
+    data:posIndicesPart "1545:1551"^^xsd:string,
+        "1727:1732"^^xsd:string,
+        "3052:3058"^^xsd:string,
+        "851:855"^^xsd:string,
+        "856:861"^^xsd:string ;
+    data:wdtLink wdt:Q564889 ;
+    :alsoKnownAs "Anne Marie Dagmar Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark"^^xsd:string,
+        "Anne-Marie Dagmar Ingrid"^^xsd:string,
+        "Anne-Marie of the Hellenes (née Princess Anne-Marie of Denmark)"^^xsd:string,
+        "Princess Anne-Marie of Denmark"^^xsd:string ;
+    :hasChild data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Anne-Marie_of_Greece ;
+    :hasSon data:Prince_Philippos_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Queen_Anne-Marie_of_Greece ;
+    :isMotherOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Queen_Anne-Marie_of_Greece ;
+    :isSisterOf data:Queen_Anne-Marie_of_Greece .
+
+data:Prince_Philippos_of_Greece_and_Denmark a :Man,
+        :Person ;
+    rdfs:label "Prince Philippos of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "78:116"^^xsd:string,
+        "85:116"^^xsd:string ;
+    data:posIndicesPart "1436:1442"^^xsd:string,
+        "1545:1551"^^xsd:string,
+        "1563:1569"^^xsd:string,
+        "1570:1579"^^xsd:string,
+        "1777:1786"^^xsd:string,
+        "1922:1928"^^xsd:string,
+        "2057:2063"^^xsd:string,
+        "2100:2106"^^xsd:string,
+        "2146:2152"^^xsd:string,
+        "2483:2492"^^xsd:string,
+        "2653:2662"^^xsd:string,
+        "3042:3048"^^xsd:string,
+        "3052:3058"^^xsd:string,
+        "3220:3227"^^xsd:string,
+        "3249:3255"^^xsd:string,
+        "341:350"^^xsd:string,
+        "609:615"^^xsd:string,
+        "731:737"^^xsd:string,
+        "898:907"^^xsd:string ;
+    data:wdtLink wdt:Q1966130 ;
+    :alsoKnownAs "Philippos of Greece and Denmark"^^xsd:string,
+        "Philippos zu Schleswig-Holstein-Sonderburg-Glücksburg, Prince of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasBrother data:Prince_Philippos_of_Greece_and_Denmark ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Queen_Anne-Marie_of_Greece ;
+    :hasParent data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isChildOf data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isSiblingOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSonOf data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Theodora of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "2533:2572"^^xsd:string,
+        "2542:2572"^^xsd:string ;
+    data:posIndicesPart "3052:3058"^^xsd:string,
+        "3220:3227"^^xsd:string ;
+    data:wdtLink wdt:Q292274 ;
+    :alsoKnownAs "Theodora Greece"^^xsd:string,
+        "Theodora of Greece and Denmark"^^xsd:string,
+        "Theodora zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasBrother data:Prince_Philippos_of_Greece_and_Denmark ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Queen_Anne-Marie_of_Greece ;
+    :hasParent data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark,
+        data:Queen_Anne-Marie_of_Greece ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isChildOf data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isDaughterOf data:Constantine_II_of_Greece,
+        data:Queen_Anne-Marie_of_Greece ;
+    :isSiblingOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Prince_Philippos_of_Greece_and_Denmark,
+        data:Princess_Theodora_of_Greece_and_Denmark .
+

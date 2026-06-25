@@ -2,33 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans a :Person,
-        :Woman ;
-    :hasBirthYear 1871 ;
-    :hasBrother data:Philippe_Duke_of_Orl%C3%A9ans ;
-    :hasDeathYear 1951 ;
-    :hasFather data:Prince_Philippe_Count_of_Paris ;
-    :hasMarriageYear 1895,
-        1936 ;
-    :hasMother data:Infanta_Maria_Isabel_of_Spain ;
-    :hasRelation data:Otto_Campini,
-        data:Prince_Emanuele_Filiberto_of_Savoy ;
-    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans,
-        data:Isabelle_Duchess_of_Guise .
+data:Edward_Guinness a :Man .
 
-data:Am%C3%A9lie_of_Orl%C3%A9ans a :Woman .
+data:Granville_James_Leveson-Gower a :Man ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:William_Leveson-Gower ;
+    :hasMarriageYear 1958 ;
+    :hasMother data:Lady_Rose_Bowes-Lyon ;
+    :hasRelation data:Doon_Aileen_Plunket .
 
-data:Infanta_Maria_Isabel_of_Spain a :Ancestor,
-        :Woman .
+data:William_Plunket a :Man .
 
-data:Isabelle_Duchess_of_Guise a :Woman .
+data:Aileen_Sibell_Mary_Guinness a :Woman .
 
-data:Otto_Campini a :Man .
+data:Brindsley_Sheridan_Bushe_Plunket a :Man .
 
-data:Philippe_Duke_of_Orl%C3%A9ans a :Man .
+data:Claude_Bowes-Lyon a :Man .
 
-data:Prince_Emanuele_Filiberto_of_Savoy a :Man .
+data:Doon_Aileen_Plunket a :Woman ;
+    :hasFather data:Brindsley_Sheridan_Bushe_Plunket ;
+    :hasMother data:Aileen_Sibell_Mary_Guinness .
 
-data:Prince_Philippe_Count_of_Paris a :Ancestor,
-        :Man .
+data:Lady_Rose_Bowes-Lyon a :Woman ;
+    :hasFather data:Claude_Bowes-Lyon .
+
+data:William_Leveson-Gower a :Man .
 

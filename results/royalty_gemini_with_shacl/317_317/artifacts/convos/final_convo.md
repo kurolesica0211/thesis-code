@@ -85,37 +85,145 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Alfonso, Prince of Asturias (10 May 1907 – 6 September 1938), was heir apparent to the throne of Spain from birth until the abolition of the monarchy in 1931.
-Alfonso was the eldest son of King Alfonso XIII of Spain and Victoria Eugenie of Battenberg.
-Alfonso's renunciation of his rights as heir to the Spanish throne in order to marry Cuban commoner Edelmira Sampedro caused controversy at the time.
-Though appearing to have sustained minor injuries, his haemophilia, inherited through his great-grandmother Queen Victoria, led to fatal internal bleeding.
+Descendants of Prince Felix and also members of the Grand Ducal Family of Luxembourg:
+
+
+Princess Joan
+
+
+Descendants of Prince René:
+
+
+Princess Maria Pia
+
+
+Princess Marina
+
+
+Descendants of Prince Louis:
+
+
+Prince RémyPrincess Elisabeth
+
+
+Princess Chantal
+Prince JeanPrincess Virginia
+
+
+Princess Beatrix*
+
+
+Princess Margriet*Pieter van Vollenhoven*
+
+
+Prince Carlos, Duke of Parma and Piacenza (Carlos Xavier Bernardo Sixto Marie; born 27 January 1970) is the current Head of the House of Bourbon-Parma, which ruled the Duchy of Parma and Piacenza from 1748 to 1802 and from 1847 to 1859.
+The eldest son of Carlos Hugo, Duke of Parma and Princess Irene of the Netherlands, Carlos is also a member of the Dutch royal family and the Dutch nobility with the style of "His Royal Highness" and the title of Prince Carlos de Bourbon de Parme.
+Additionally, he is the Carlist pretender to the Spanish throne with the title Duke of Madrid.
+In the French nobility, he bears the title "Prince de Borbon", and is the grand master of the Parmesan Sacred Military Constantinian Order of Saint George, the Order of Saint Louis for Civil Merit, the Order of Prohibited Legitimacy and the Order of St. George for Military Merit.
 Early life
 
-Alfonso was the eldest child of the then-reigning King Alfonso XIII and Victoria Eugenie of Battenberg.
-As decreed by custom, he was registered by the Marquis of Figueroa, Minister of Justice, in the Civil Registry of the Royal Family as Alfonso Pío Cristino Eduardo Francisco Guillermo Carlos Enrique Eugenio Fernando Antonio Venancio.
-Eight days after his birth, Alfonso was christened in the royal chapel of the Royal Palace of Madrid by the Archbishop of Toledo.
-Prince Arthur, Duke of Connaught, Prince Friedrich Leopold of Prussia, Archduke Eugen of Austria and Afonso, Duke of Porto, were also present.
-Alfonso's father faced increasing political problems that led Spain to become a republic in 1931 when the monarch was deposed.
-Renunciation and marriages
+Prince Carlos Xavier Bernardo Sixto Marie of Bourbon-Parma was born in Nijmegen, The Netherlands on 27 January 1970 as the elder child and son of Carlos Hugo, Duke of Parma, and his wife Princess Irene of the Netherlands.
+He has two younger sisters, Princess Margarita and Princess Carolina, and a younger brother, Prince Jaime.
+At the time of his birth, his parents, Carlist Pretender to the Spanish throne, were expelled from Spain by the Franco regime since 20 December 1968, as Franco already did with his grandfather Prince Xavier of Bourbon-Parma and some members of his family on 25 November 1937.
+Carlos spent his youth in several countries including the Netherlands, Spain, France, England, and the United States.
+Together with his mother and his siblings, he then moved to Soestdijk Palace (Baarn) in the Netherlands.
+He lived at the palace for a number of years with his maternal grandparents, Queen Juliana of the Netherlands and Prince Bernhard.
+Education and career
 
-There had been plans for young Alfonso's deposition from succession, but ultimately he himself renounced his rights to the then-defunct throne to marry a commoner, Edelmira Sampedro y Robato, religiously in Ouchy on 21 June 1933, after which Alfonso took the courtesy title Count of Covadonga.
-In a civil ceremony on 3 July 1937, Alfonso married another commoner, Marta Esther Rocafort-Altuzarra, in Havana.
-However, Alfonso de Bourbon, a resident of California, later claimed to be an illegitimate son of Alfonso.
-In 1938, Alfonso, then resident in the United States, publicly stated his readiness to accept the Spanish crown if called on to do so.
-This action reversed Alfonso's renunciation of 1933 and led to his being disavowed by his father King Alfonso.
-Death
+Prince Carlos studied political science at Wesleyan University in Connecticut and demography and philosophy at Cambridge University in England; in 1995, he obtained a Postgraduate Degree (MPhil) in Demography at the Cambridge University.
+After completing his studies, Carlos worked for the company ABN AMRO in Amsterdam, where he was involved with preparations for the introduction of the euro.
+He has chaired the Foundation for Cooperation for the Economic Development of Latin America, was a member for eight years of the Council of CSR Netherlands, which ensures corporate social responsibility.
+Duties and appearances
 
-A car crash led to Alfonso's early death on September 6, 1938, at the age of 31.
-The car crashed into a telephone booth and Alfonso appeared to have only minor injuries, but his haemophilia led to fatal internal bleeding.
-Alfonso’s youngest brother, Gonzalo, had died just over four years before under very similar circumstances—having also inherited hemophilia, he was involved in a crash after the automobile he was in swerved to avoid a cyclist.
-Alfonso was entombed at Woodlawn Park Cemetery and Mausoleum (now Caballero Rivero Woodlawn Park North Cemetery and Mausoleum) in Miami, and was re-entombed in 1985 at the Pantheon of the Princes in El Escorial.
-Alfonso was the 1,120th Knight of the Order of the Golden Fleece in Spain and Knight with Collar of the Order of Charles III, inducted as both shortly after his birth in 1907.
+Dutch Royal House
+
+Carlos is sometimes present at representative occasions concerning the Royal House of the Netherlands.
+In 2003, he was involved, together with his aunt, Queen Beatrix, in the inauguration of the "Prince Claus Leerstoel", a professorship named after the Queen's husband, Prince Claus.
+For example, he was one of the organizers of the wedding celebration of Prince Constantijn and Princess Laurentien.
+In April 2013, Prince Carlos attended the inauguration of his cousin King Willem-Alexander and his wife Queen Maxima in Amsterdam.
+In August 2019 he and his wife attended the funeral of his aunt Princess Christina of the Netherlands, sister of former Queen Beatrix, near Noordeinde Palace, The Hague.
+His rights as the Carlist pretender
+
+After the death of his father Carlos Hugo in 2010, Prince Carlos Xavier succeeded him as Duke of Madrid and Carlist Pretender to the Spanish throne.
+He started to use the Carlist title of "Rey Don Carlos Javier I" (King Don Carlos Xavier I).
+However, Carlos Xavier, in an interview with the newspaper La Vanguardia, said:
+
+
+I don't set out dynastic lawsuits.
+— Barcelona, October 11th, 2010
+
+Duke of Parma
+
+Prince Carlos became Duke of Parma and Piacenza and Head of the House of Bourbon-Parma after the death of his father on 18 August 2010, aged 80.
+In 2016, at the baptism of Prince Carlos Enrique, Prince Carlos conferred on his son the title of "Principe di Piacenza" (Prince of Piacenza), which is the traditional title assigned to the Crown Prince of the House of Bourbon-Parma, the continuer of the dynasty, and future Duke of Parma and Piacenza.
+In September 2017, the Duke of Parma named his daughter Princess Luisa as "Marchesa di Castell'Arquato" (Marquise of Castell'Arquato), and her younger sister Princess Cecilia was named as "Contessa di Berceto" (Countess of Berceto).
+Prince Carlos has visited and regularly visits the lands of the former Duchy of Parma and Piacenza.
+In September 2015, he was in Parma to grant the "Prince's Medal to Meritorious Men in silver" to the firefighters who distinguished themselves during the 2015 flood that struck the area.
+At the end of September 2017, he presided over the General Chapter of the Knights of the House of Bourbon-Parma in Parma to confer the Ducal orders to those people who have achieved personal merits towards the Royal House; then he visited Palazzo della Pilotta.
+In September 2018, he visited Parma to confer some honors of the Royal House and to visit the Church of Santa Maria della Steccata, together with the Royal Family.
+Also, he was present at the inauguration of the opera season by attending a representation of the opera "Macbeth" at the Teatro Regio in Parma and made a visit to the Military Academy of Modena, received by the Commander.
+As Duke of Parma, Prince Carlos is committed to preserving the memory of the lands and members and relatives of the dynasty: in July 2011 he was in Vienna to attend the funeral of Archduke Otto, the last Crown Prince of Austria-Hungary (son of Princess Zita of Bourbon-Parma, sister to Carlos' grandfather Prince Xavier) at the St. Stephen's Cathedral.
+In August 2016, Prince Carlos was in Romania to attend the funeral of Queen Anne (née Princess of Bourbon-Parma as a daughter of Prince René, brother of Carlos' grandfather) in Curtea de Argeș.
+At the funeral, Carlos represented also the Dutch Royal Family who was unable to attend.
+In June 2018 he traveled to Prague to remember his ancestor Maria Amalia, Duchess of Parma, and to take part in the presentation of the book "Maria Amalia Duchess of Parma and Piacenza (1746–1804)" dedicated to the life of his ancestor, and later visited the Cathedral of San Vito in Prague to lay flowers on the tomb of Duchess Maria Amalia.
+Personal life
+
+Relationship with Brigitte Klynstra and son
+
+Prince Carlos had a relationship with Brigitte Klynstra (born 10 January 1959), the stepdaughter of Count Adolph Roderik of Rechteren-Limpurg.
+In December 2015, the then 18-year-old Carlos Klynstra started the legal procedure to attempt to change his surname to that of his biological father which would also allow him to use the title of "Prince".
+The Duke of Parma opposed this on the basis that it was in contravention of the traditions of the House of Bourbon-Parma.
+According to the judgement, Carlos Hugo will be entitled to be known as "Zijne Koninklijke Hoogheid Carlos Hugo Roderik Sybren prins de Bourbon de Parme" (His Royal Highness Prince Carlos Hugo Roderik Sybren of Bourbon-Parma); this will come only into effect once the Dutch king has signed the royal decree.
+According to the press release of the Council of State of 28 February 2018, the name change does not mean that Klynstra is now also a member of the Royal House of  Bourbon-Parma.
+Marriage to Annemarie Gualthérie van Weezel
+
+On 7 October 2009, it was announced through his mother's private secretary that Prince Carlos would marry Annemarie Cecilia
+Prince Carlos Hugo died shortly afterwards.
+Her father was a member of the House of Representatives of the Netherlands for the Christian Democratic party, the Dutch ambassador to the Council of Europe in Strasbourg, and the ambassador to Luxembourg.
+In Brussels, she met Prince Carlos for the first time.
+On 2 August 2010, it was revealed that the health of his father, the Duke of Parma, was quickly deteriorating due to cancer.
+As a consequence, the church wedding of the prince Carlos and his fiancée was delayed.
+In a final announcement about his condition, the Duke confirmed Carlos as the next Head of the House of Bourbon-Parma.
+Just before his death the old Duke of Parma named Annemarie as "Condesa de Molina" (Countess of Molina).
+Prince Carlos's father died on 18 August 2010 in Barcelona, Spain, at the age of 80; Carlos subsequently became the next head of the House of Bourbon-Parma.
+The new Duke of Parma and Annemarie were married on 20 November 2010 in La Cambre Abbey in Bruxelles.
+The wedding was attended by Máxima, Princess of Orange, Willem-Alexander, Prince of Orange, Queen Beatrix of the Netherlands, Prince Jean of Luxembourg, Princess Astrid of Belgium, Prince Lorenz of Belgium and Duarte Pio, Duke of Braganza.
+Together, they have two daughters and a son:
+
+
+Titles, styles and honours
+
+Titles and styles
+
+Honours
+
+Dynastic
+
+As Head of the House of Bourbon-Parma, Carlos is Grand Master of four dynastic orders:
+
+
+National
+
+International
+
+Ancestry
+
+Notes
+
+References
+
+External links
+
+2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
+3 title granted by Royal Decree to descendants of Princess Irene
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -131,39 +239,9 @@ Alfonso was the 1,120th Knight of the Order of the Golden Fleece in Spain and Kn
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -178,6 +256,23 @@ Alfonso was the 1,120th Knight of the Order of the Golden Fleece in Spain and Kn
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -195,6 +290,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,29 +372,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -293,6 +395,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -305,6 +415,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -313,17 +425,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -351,6 +465,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -366,195 +564,145 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (3709c877-8999-4b32-aa3c-45ba44c0edc9)
- Call ID: 3709c877-8999-4b32-aa3c-45ba44c0edc9
+  AssignClass (82b063bd-692e-4de6-b422-fab265dd86a0)
+ Call ID: 82b063bd-692e-4de6-b422-fab265dd86a0
   Args:
-    source: Alfonso_Prince_of_Asturias
+    source: :CarlosHugo
     type: :Man
-  AssignClass (a53895a9-f810-47b3-963c-047b4e82ec80)
- Call ID: a53895a9-f810-47b3-963c-047b4e82ec80
+  AssignClass (9981e853-1ee9-4bf6-aa98-9efb4279c9c8)
+ Call ID: 9981e853-1ee9-4bf6-aa98-9efb4279c9c8
   Args:
-    source: Alfonso_Prince_of_Asturias
-    type: :Person
-  AssignClass (751c411f-bbb4-49d8-8131-95b9a63f41bb)
- Call ID: 751c411f-bbb4-49d8-8131-95b9a63f41bb
+    source: :PrincessIrene
+    type: :Woman
+  AssignClass (2539b229-4ead-4a11-9c25-89f9359fd3ad)
+ Call ID: 2539b229-4ead-4a11-9c25-89f9359fd3ad
   Args:
+    source: :PrinceCarlos
     type: :Man
-    source: Alfonso_XIII_of_Spain
-  AssignClass (c9ff82b4-e72c-45e6-a0fa-971eb8c6a021)
- Call ID: c9ff82b4-e72c-45e6-a0fa-971eb8c6a021
+  AssignClass (6b478d47-6495-41b4-bd99-58b14cd0148e)
+ Call ID: 6b478d47-6495-41b4-bd99-58b14cd0148e
   Args:
-    source: Alfonso_XIII_of_Spain
-    type: :Person
-  AssignClass (6ea927a5-bc57-4271-8278-6fa12f10e8a3)
- Call ID: 6ea927a5-bc57-4271-8278-6fa12f10e8a3
-  Args:
+    source: :PrincessMargarita
     type: :Woman
-    source: Victoria_Eugenie_of_Battenberg
-  AssignClass (07a48382-83f6-4c5d-a809-126f52e06908)
- Call ID: 07a48382-83f6-4c5d-a809-126f52e06908
+  AssignClass (e5011a36-066c-4731-ab3b-3db197f7ea14)
+ Call ID: e5011a36-066c-4731-ab3b-3db197f7ea14
   Args:
-    type: :Person
-    source: Victoria_Eugenie_of_Battenberg
-  AssignClass (526d72ab-6c09-4f03-8f12-749d3e95e206)
- Call ID: 526d72ab-6c09-4f03-8f12-749d3e95e206
-  Args:
+    source: :PrincessCarolina
     type: :Woman
-    source: Edelmira_Sampedro_y_Robato
-  AssignClass (453c397e-273d-44cd-9f91-747fb787fcd3)
- Call ID: 453c397e-273d-44cd-9f91-747fb787fcd3
+  AssignClass (f2705967-116a-48f9-aafc-11f9fba5ce2d)
+ Call ID: f2705967-116a-48f9-aafc-11f9fba5ce2d
   Args:
-    source: Edelmira_Sampedro_y_Robato
-    type: :Person
-  AssignClass (44a02a08-53cc-4441-a2b8-1d19ebbf9110)
- Call ID: 44a02a08-53cc-4441-a2b8-1d19ebbf9110
-  Args:
-    type: :Woman
-    source: Marta_Esther_Rocafort-Altuzarra
-  AssignClass (132b8eef-2aca-4e76-9c51-8767a72a2ee1)
- Call ID: 132b8eef-2aca-4e76-9c51-8767a72a2ee1
-  Args:
-    type: :Person
-    source: Marta_Esther_Rocafort-Altuzarra
-  AssignClass (9baf70c1-8f9e-46ea-a2f5-09065b798c7a)
- Call ID: 9baf70c1-8f9e-46ea-a2f5-09065b798c7a
-  Args:
+    source: :PrinceJaime
     type: :Man
-    source: Gonzalo
-  AssignClass (55cd04b2-0377-42c1-99c6-8e999a2eecab)
- Call ID: 55cd04b2-0377-42c1-99c6-8e999a2eecab
+  AddTriple (f3135e15-cb20-442e-93b3-840e63d0415f)
+ Call ID: f3135e15-cb20-442e-93b3-840e63d0415f
   Args:
-    type: :Person
-    source: Gonzalo
-  AssignClass (d3474fac-869b-4c7d-8203-9b8f3b2d520a)
- Call ID: d3474fac-869b-4c7d-8203-9b8f3b2d520a
+    relation: :isFatherOf
+    target: :PrinceCarlos
+    source: :CarlosHugo
+  AddTriple (e0260ed1-6d06-42e1-aa21-0cb77f28c1a1)
+ Call ID: e0260ed1-6d06-42e1-aa21-0cb77f28c1a1
   Args:
-    type: :Male
-    source: Male_Sex
-  AssignClass (aeb4d48b-0c01-4d36-a80e-62fa3f56f36e)
- Call ID: aeb4d48b-0c01-4d36-a80e-62fa3f56f36e
+    source: :PrincessIrene
+    target: :PrinceCarlos
+    relation: :isMotherOf
+  AddTriple (cc0a9549-0b82-42a9-b475-fbd59904fa97)
+ Call ID: cc0a9549-0b82-42a9-b475-fbd59904fa97
   Args:
-    source: Female_Sex
-    type: :Female
-  AddTriple (0bc6563a-7e87-466f-ace5-88e67210442f)
- Call ID: 0bc6563a-7e87-466f-ace5-88e67210442f
+    target: :PrincessMargarita
+    relation: :isFatherOf
+    source: :CarlosHugo
+  AddTriple (e6076b10-dc4e-4c41-a99c-9fd74102bcf1)
+ Call ID: e6076b10-dc4e-4c41-a99c-9fd74102bcf1
   Args:
-    source: Alfonso_Prince_of_Asturias
-    target: Male_Sex
-    relation: :hasSex
-  AddTriple (0240b576-49e0-48fc-ba62-3f2ae93abb7d)
- Call ID: 0240b576-49e0-48fc-ba62-3f2ae93abb7d
+    target: :PrincessMargarita
+    relation: :isMotherOf
+    source: :PrincessIrene
+  AddTriple (d39c74b0-123a-4988-9409-9d970d6e54c6)
+ Call ID: d39c74b0-123a-4988-9409-9d970d6e54c6
   Args:
-    source: Alfonso_XIII_of_Spain
-    relation: :hasSex
-    target: Male_Sex
-  AddTriple (65f95718-1f14-4e51-9487-25ef1a529936)
- Call ID: 65f95718-1f14-4e51-9487-25ef1a529936
+    relation: :isFatherOf
+    target: :PrincessCarolina
+    source: :CarlosHugo
+  AddTriple (9f610e0b-dd91-4bcc-8b46-ec0e657e5fd7)
+ Call ID: 9f610e0b-dd91-4bcc-8b46-ec0e657e5fd7
   Args:
-    source: Victoria_Eugenie_of_Battenberg
-    target: Female_Sex
-    relation: :hasSex
-  AddTriple (bfb204a2-d924-4e4d-83b2-8f2b6624e41b)
- Call ID: bfb204a2-d924-4e4d-83b2-8f2b6624e41b
+    source: :PrincessIrene
+    relation: :isMotherOf
+    target: :PrincessCarolina
+  AddTriple (1844dae0-e041-4361-b9dc-e63853bca4b2)
+ Call ID: 1844dae0-e041-4361-b9dc-e63853bca4b2
   Args:
-    target: Female_Sex
-    relation: :hasSex
-    source: Edelmira_Sampedro_y_Robato
-  AddTriple (3494d44a-0ad8-484e-8fe9-592f768d1cf1)
- Call ID: 3494d44a-0ad8-484e-8fe9-592f768d1cf1
+    target: :PrinceJaime
+    relation: :isFatherOf
+    source: :CarlosHugo
+  AddTriple (075ea2f7-4391-416e-9076-e6ad7776980c)
+ Call ID: 075ea2f7-4391-416e-9076-e6ad7776980c
   Args:
-    source: Marta_Esther_Rocafort-Altuzarra
-    target: Female_Sex
-    relation: :hasSex
-  AddTriple (bb7ed397-c66f-4b64-81d1-51c3b55f129f)
- Call ID: bb7ed397-c66f-4b64-81d1-51c3b55f129f
+    source: :PrincessIrene
+    relation: :isMotherOf
+    target: :PrinceJaime
+  AddLiteral (990ed8ac-8744-4c5f-89b7-de4ab186db1e)
+ Call ID: 990ed8ac-8744-4c5f-89b7-de4ab186db1e
   Args:
-    source: Gonzalo
-    relation: :hasSex
-    target: Male_Sex
-  AddLiteral (6098c7c5-dc7a-44e4-9787-8867946f1018)
- Call ID: 6098c7c5-dc7a-44e4-9787-8867946f1018
-  Args:
+    literal_type: xsd:integer
+    literal_value: 1970
+    source: :PrinceCarlos
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Alfonso_Prince_of_Asturias
-    literal_value: 1907
-  AddLiteral (4a5940a7-78b8-413a-9cc0-57f4617181a3)
- Call ID: 4a5940a7-78b8-413a-9cc0-57f4617181a3
+  AssignClass (94f315ea-2e05-43fc-a552-0365ba60bb03)
+ Call ID: 94f315ea-2e05-43fc-a552-0365ba60bb03
   Args:
-    source: Alfonso_Prince_of_Asturias
-    literal_type: xsd:integer
-    literal_value: 1938
-    relation: :hasDeathYear
-  AddTriple (6b5b43c5-8d64-4198-b1b6-bbf70fdeae35)
- Call ID: 6b5b43c5-8d64-4198-b1b6-bbf70fdeae35
+    source: :AnnemarieGualtherieVanWeezel
+    type: :Woman
+  AddTriple (eff8014b-20a8-4a50-a90d-938df8a0489d)
+ Call ID: eff8014b-20a8-4a50-a90d-938df8a0489d
   Args:
-    source: Alfonso_Prince_of_Asturias
-    target: Alfonso_XIII_of_Spain
-    relation: :hasFather
-  AddTriple (47c4cc6c-c383-4d10-ba11-8a04ee4b40ed)
- Call ID: 47c4cc6c-c383-4d10-ba11-8a04ee4b40ed
-  Args:
-    source: Alfonso_Prince_of_Asturias
-    target: Victoria_Eugenie_of_Battenberg
-    relation: :hasMother
-  AddTriple (16b71f60-52df-4aa8-a68b-10cc27225fc9)
- Call ID: 16b71f60-52df-4aa8-a68b-10cc27225fc9
-  Args:
-    source: Alfonso_Prince_of_Asturias
-    relation: :hasBrother
-    target: Gonzalo
-  AddLiteral (7e9d901f-1a54-4b24-8421-b5c9b6c71d07)
- Call ID: 7e9d901f-1a54-4b24-8421-b5c9b6c71d07
+    target: :AnnemarieGualtherieVanWeezel
+    relation: :hasRelation
+    source: :PrinceCarlos
+  AddLiteral (6153d19a-1304-4251-8146-ff80ea978b59)
+ Call ID: 6153d19a-1304-4251-8146-ff80ea978b59
   Args:
     relation: :hasMarriageYear
+    source: :PrinceCarlos
+    literal_value: 2010
     literal_type: xsd:integer
-    source: Alfonso_Prince_of_Asturias
-    literal_value: 1933
-  AddLiteral (1b661aa3-c919-4403-800e-ba645103f5eb)
- Call ID: 1b661aa3-c919-4403-800e-ba645103f5eb
+  AssignClass (bf645617-44f2-43a8-8f29-b0e2957576bc)
+ Call ID: bf645617-44f2-43a8-8f29-b0e2957576bc
   Args:
-    source: Alfonso_Prince_of_Asturias
-    literal_type: xsd:integer
-    literal_value: 1937
-    relation: :hasMarriageYear
-  AddLiteral (3c72daef-02be-4ed6-aa16-ac4116441558)
- Call ID: 3c72daef-02be-4ed6-aa16-ac4116441558
+    source: :PrinceCarlosEnrique
+    type: :Man
+  AddTriple (a3a1a37d-fe5b-4e96-bbcf-a5bd7990191c)
+ Call ID: a3a1a37d-fe5b-4e96-bbcf-a5bd7990191c
   Args:
-    literal_value: Alfonso Pío Cristino Eduardo Francisco Guillermo Carlos Enrique Eugenio Fernando Antonio Venancio
-    literal_type: xsd:string
-    source: Alfonso_Prince_of_Asturias
-    relation: :knownAs
-  AddLiteral (37a39a77-9ae4-4c0c-b702-09bbdeace571)
- Call ID: 37a39a77-9ae4-4c0c-b702-09bbdeace571
+    source: :PrinceCarlos
+    target: :PrinceCarlosEnrique
+    relation: :isFatherOf
+  AssignClass (1e40ab84-e7f6-4621-8519-d54974d4832f)
+ Call ID: 1e40ab84-e7f6-4621-8519-d54974d4832f
   Args:
-    literal_value: Count of Covadonga
-    literal_type: xsd:string
-    source: Alfonso_Prince_of_Asturias
-    relation: :alsoKnownAs
-  Finish (25910bf5-c9b1-4764-b268-7a187a96c062)
- Call ID: 25910bf5-c9b1-4764-b268-7a187a96c062
+    source: :PrincessLuisa
+    type: :Woman
+  AssignClass (c68be181-1096-469a-a807-e8ac214691ff)
+ Call ID: c68be181-1096-469a-a807-e8ac214691ff
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :PrincessCecilia
+    type: :Woman
+  AddTriple (4ca0670c-5385-49bc-817d-ce57f78f7a43)
+ Call ID: 4ca0670c-5385-49bc-817d-ce57f78f7a43
+  Args:
+    source: :PrinceCarlos
+    relation: :isFatherOf
+    target: :PrincessLuisa
+  AddTriple (8cb9208d-dcfd-414e-8696-28fabbe73894)
+ Call ID: 8cb9208d-dcfd-414e-8696-28fabbe73894
+  Args:
+    source: :PrinceCarlos
+    target: :PrincessCecilia
+    relation: :isFatherOf
+  Finish (ae1d9018-6b50-4494-8828-c1e075fc8d85)
+ Call ID: ae1d9018-6b50-4494-8828-c1e075fc8d85
+  Args:
 
 ================================= Tool Message =================================
 
@@ -655,42 +803,39 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alfonso_Prince_of_Asturias a :Man,
-          :Person ;
-      :alsoKnownAs "Count of Covadonga"^^xsd:string ;
-      :hasBirthYear 1907 ;
-      :hasBrother data:Gonzalo ;
-      :hasDeathYear 1938 ;
-      :hasFather data:Alfonso_XIII_of_Spain ;
-      :hasMarriageYear 1933,
-          1937 ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg ;
-      :hasSex data:Male_Sex ;
-      :knownAs "Alfonso Pío Cristino Eduardo Francisco Guillermo Carlos Enrique Eugenio Fernando Antonio Venancio"^^xsd:string .
+  data:CarlosHugo a :Man ;
+      :isFatherOf data:PrinceCarlos,
+          data:PrinceJaime,
+          data:PrincessCarolina,
+          data:PrincessMargarita .
 
-  data:Edelmira_Sampedro_y_Robato a :Person,
-          :Woman ;
-      :hasSex data:Female_Sex .
+  data:PrincessIrene a :Woman ;
+      :isMotherOf data:PrinceCarlos,
+          data:PrinceJaime,
+          data:PrincessCarolina,
+          data:PrincessMargarita .
 
-  data:Marta_Esther_Rocafort-Altuzarra a :Person,
-          :Woman ;
-      :hasSex data:Female_Sex .
+  data:AnnemarieGualtherieVanWeezel a :Woman .
 
-  data:Alfonso_XIII_of_Spain a :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
+  data:PrinceCarlosEnrique a :Man .
 
-  data:Gonzalo a :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
+  data:PrincessCecilia a :Woman .
 
-  data:Victoria_Eugenie_of_Battenberg a :Person,
-          :Woman ;
-      :hasSex data:Female_Sex .
+  data:PrincessLuisa a :Woman .
 
-  data:Female_Sex a :Female .
+  data:PrinceCarlos a :Man ;
+      :hasBirthYear 1970 ;
+      :hasMarriageYear 2010 ;
+      :hasRelation data:AnnemarieGualtherieVanWeezel ;
+      :isFatherOf data:PrinceCarlosEnrique,
+          data:PrincessCecilia,
+          data:PrincessLuisa .
 
-  data:Male_Sex a :Male .
+  data:PrinceJaime a :Man .
+
+  data:PrincessCarolina a :Woman .
+
+  data:PrincessMargarita a :Woman .
 
 
 
@@ -702,62 +847,38 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (12412815-7521-456a-9065-ae77a2909800)
- Call ID: 12412815-7521-456a-9065-ae77a2909800
+  ValidateShacl (f8e14f47-7ea5-41f3-a035-284a36f03e4e)
+ Call ID: f8e14f47-7ea5-41f3-a035-284a36f03e4e
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:3
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The entity Alfonso_XIII_of_Spain, linked via hasFather to Alfonso_Prince_of_Asturias, lacks the required class :Ancestor.
+      The node 'CarlosHugo' is identified as a subject of the property 'isFatherOf', but it lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Alfonso_XIII_of_Spain.
+      Use tool 'AssignClass' with parameters node: 'CarlosHugo' and class: ':Ancestor'.
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The entity Victoria_Eugenie_of_Battenberg, linked via hasMother to Alfonso_Prince_of_Asturias, lacks the required class :Ancestor.
+      The node 'PrinceCarlos' is identified as a subject of the property 'isFatherOf', but it lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Victoria_Eugenie_of_Battenberg.
+      Use tool 'AssignClass' with parameters node: 'PrinceCarlos' and class: ':Ancestor'.
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The entity Alfonso_XIII_of_Spain is missing the :Ancestor class assignment, which is required for the hasFather property relation.
+      The node 'PrincessIrene' is identified as a subject of the property 'isMotherOf', but it lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Alfonso_XIII_of_Spain.
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Victoria_Eugenie_of_Battenberg is missing the :Ancestor class assignment, which is required for the hasMother property relation.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Victoria_Eugenie_of_Battenberg.
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The entity Alfonso_XIII_of_Spain is still failing the class validation for the hasFather property as it lacks the :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Alfonso_XIII_of_Spain.
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Victoria_Eugenie_of_Battenberg is still failing the class validation for the hasMother property as it lacks the :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Victoria_Eugenie_of_Battenberg.
+      Use tool 'AssignClass' with parameters node: 'PrincessIrene' and class: ':Ancestor'.
 
 
 
@@ -766,19 +887,25 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (1ea62ebe-0f73-40ef-9653-551a48973860)
- Call ID: 1ea62ebe-0f73-40ef-9653-551a48973860
+  AssignClass (d893fae9-be97-4cee-938d-59967f9d9f63)
+ Call ID: d893fae9-be97-4cee-938d-59967f9d9f63
   Args:
+    source: :CarlosHugo
     type: :Ancestor
-    source: Alfonso_XIII_of_Spain
-  AssignClass (bf972aec-ad97-41f7-ac15-833c9f6f3ff9)
- Call ID: bf972aec-ad97-41f7-ac15-833c9f6f3ff9
+  AssignClass (52134fb9-ce50-48c3-aa66-496db854278a)
+ Call ID: 52134fb9-ce50-48c3-aa66-496db854278a
   Args:
+    source: :PrinceCarlos
     type: :Ancestor
-    source: Victoria_Eugenie_of_Battenberg
-  ValidateShacl (2b369406-22b6-4713-80de-58149f2d48eb)
- Call ID: 2b369406-22b6-4713-80de-58149f2d48eb
+  AssignClass (2987cc68-5766-4caf-97e2-67d3de3cd071)
+ Call ID: 2987cc68-5766-4caf-97e2-67d3de3cd071
   Args:
+    source: :PrincessIrene
+    type: :Ancestor
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -791,46 +918,52 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alfonso_Prince_of_Asturias a :Man,
-          :Person ;
-      :alsoKnownAs "Count of Covadonga"^^xsd:string ;
-      :hasBirthYear 1907 ;
-      :hasBrother data:Gonzalo ;
-      :hasDeathYear 1938 ;
-      :hasFather data:Alfonso_XIII_of_Spain ;
-      :hasMarriageYear 1933,
-          1937 ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg ;
-      :hasSex data:Male_Sex ;
-      :knownAs "Alfonso Pío Cristino Eduardo Francisco Guillermo Carlos Enrique Eugenio Fernando Antonio Venancio"^^xsd:string .
+  data:CarlosHugo a :Ancestor,
+          :Man ;
+      :isFatherOf data:PrinceCarlos,
+          data:PrinceJaime,
+          data:PrincessCarolina,
+          data:PrincessMargarita .
 
-  data:Edelmira_Sampedro_y_Robato a :Person,
+  data:PrincessIrene a :Ancestor,
           :Woman ;
-      :hasSex data:Female_Sex .
+      :isMotherOf data:PrinceCarlos,
+          data:PrinceJaime,
+          data:PrincessCarolina,
+          data:PrincessMargarita .
 
-  data:Marta_Esther_Rocafort-Altuzarra a :Person,
-          :Woman ;
-      :hasSex data:Female_Sex .
+  data:AnnemarieGualtherieVanWeezel a :Woman .
 
-  data:Alfonso_XIII_of_Spain a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
+  data:PrinceCarlosEnrique a :Man .
 
-  data:Gonzalo a :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
+  data:PrincessCecilia a :Woman .
 
-  data:Victoria_Eugenie_of_Battenberg a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female_Sex .
+  data:PrincessLuisa a :Woman .
 
-  data:Female_Sex a :Female .
+  data:PrinceCarlos a :Ancestor,
+          :Man ;
+      :hasBirthYear 1970 ;
+      :hasMarriageYear 2010 ;
+      :hasRelation data:AnnemarieGualtherieVanWeezel ;
+      :isFatherOf data:PrinceCarlosEnrique,
+          data:PrincessCecilia,
+          data:PrincessLuisa .
 
-  data:Male_Sex a :Male .
+  data:PrinceJaime a :Man .
+
+  data:PrincessCarolina a :Woman .
+
+  data:PrincessMargarita a :Woman .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (e85b28d5-35de-4b23-83bc-db724e2f1f83)
+ Call ID: e85b28d5-35de-4b23-83bc-db724e2f1f83
+  Args:
 
 ================================= Tool Message =================================
 
@@ -840,6 +973,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (45f412c2-6fed-4193-9178-01338c68abee)
- Call ID: 45f412c2-6fed-4193-9178-01338c68abee
+  Finish (e2a7c3cd-af05-4c89-b2c4-8ff3558d5639)
+ Call ID: e2a7c3cd-af05-4c89-b2c4-8ff3558d5639
   Args:

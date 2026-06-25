@@ -1,0 +1,151 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jeremiah_Colman a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1777 ;
+    :hasBrother data:Jeremiah_Colman ;
+    :hasDeathYear 1851 ;
+    :hasRelation data:Charles_Troughton,
+        data:Claude_Bowes-Lyon_14th,
+        data:Jeremiah_Colman,
+        data:Mary_Cecilia_Bowes-Lyon,
+        data:Peter_Troughton,
+        data:Sarah_Rose_Troughton,
+        data:Timothy_Colman ;
+    :isAncestorOf data:Sarah_Rose_Troughton ;
+    :isBloodrelationOf data:Jeremiah_Colman ;
+    :isBrotherOf data:Jeremiah_Colman ;
+    :isSiblingOf data:Jeremiah_Colman .
+
+data:Claude_Bowes-Lyon_14th a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Claude_Bowes-Lyon_14th ;
+    :hasRelation data:Charles_Troughton,
+        data:Claude_Bowes-Lyon_14th,
+        data:Jeremiah_Colman,
+        data:Mary_Cecilia_Bowes-Lyon,
+        data:Peter_Troughton,
+        data:Sarah_Rose_Troughton,
+        data:Timothy_Colman ;
+    :isAncestorOf data:Mary_Cecilia_Bowes-Lyon,
+        data:Sarah_Rose_Troughton ;
+    :isBloodrelationOf data:Claude_Bowes-Lyon_14th ;
+    :isBrotherOf data:Claude_Bowes-Lyon_14th ;
+    :isSiblingOf data:Claude_Bowes-Lyon_14th .
+
+data:Charles_Troughton a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_Troughton ;
+    :hasChild data:Peter_Troughton ;
+    :hasRelation data:Charles_Troughton,
+        data:Claude_Bowes-Lyon_14th,
+        data:Jeremiah_Colman,
+        data:Mary_Cecilia_Bowes-Lyon,
+        data:Peter_Troughton,
+        data:Sarah_Rose_Troughton,
+        data:Timothy_Colman ;
+    :hasSon data:Peter_Troughton ;
+    :isAncestorOf data:Peter_Troughton ;
+    :isBloodrelationOf data:Charles_Troughton ;
+    :isBrotherOf data:Charles_Troughton ;
+    :isFatherOf data:Peter_Troughton ;
+    :isParentOf data:Peter_Troughton ;
+    :isSiblingOf data:Charles_Troughton ;
+    :isUncleOf data:Peter_Troughton .
+
+data:Timothy_Colman a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Timothy_Colman ;
+    :hasChild data:Sarah_Rose_Troughton ;
+    :hasDaughter data:Sarah_Rose_Troughton ;
+    :hasRelation data:Charles_Troughton,
+        data:Claude_Bowes-Lyon_14th,
+        data:Jeremiah_Colman,
+        data:Mary_Cecilia_Bowes-Lyon,
+        data:Peter_Troughton,
+        data:Sarah_Rose_Troughton,
+        data:Timothy_Colman ;
+    :isAncestorOf data:Sarah_Rose_Troughton ;
+    :isBloodrelationOf data:Timothy_Colman ;
+    :isBrotherOf data:Timothy_Colman ;
+    :isFatherOf data:Sarah_Rose_Troughton ;
+    :isParentOf data:Sarah_Rose_Troughton ;
+    :isSiblingOf data:Timothy_Colman ;
+    :isUncleOf data:Sarah_Rose_Troughton .
+
+data:Mary_Cecilia_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Claude_Bowes-Lyon_14th ;
+    :hasChild data:Sarah_Rose_Troughton ;
+    :hasDaughter data:Sarah_Rose_Troughton ;
+    :hasRelation data:Charles_Troughton,
+        data:Claude_Bowes-Lyon_14th,
+        data:Jeremiah_Colman,
+        data:Mary_Cecilia_Bowes-Lyon,
+        data:Peter_Troughton,
+        data:Sarah_Rose_Troughton,
+        data:Timothy_Colman ;
+    :hasSister data:Mary_Cecilia_Bowes-Lyon ;
+    :isAncestorOf data:Sarah_Rose_Troughton ;
+    :isAuntOf data:Sarah_Rose_Troughton ;
+    :isBloodrelationOf data:Mary_Cecilia_Bowes-Lyon ;
+    :isMotherOf data:Sarah_Rose_Troughton ;
+    :isParentOf data:Sarah_Rose_Troughton ;
+    :isSiblingOf data:Mary_Cecilia_Bowes-Lyon ;
+    :isSisterOf data:Mary_Cecilia_Bowes-Lyon .
+
+data:Peter_Troughton a :Man,
+        :Person ;
+    :hasAncestor data:Charles_Troughton ;
+    :hasBirthYear 1948 ;
+    :hasBrother data:Peter_Troughton ;
+    :hasFather data:Charles_Troughton ;
+    :hasParent data:Charles_Troughton ;
+    :hasRelation data:Charles_Troughton,
+        data:Claude_Bowes-Lyon_14th,
+        data:Jeremiah_Colman,
+        data:Mary_Cecilia_Bowes-Lyon,
+        data:Peter_Troughton,
+        data:Sarah_Rose_Troughton,
+        data:Timothy_Colman ;
+    :isBloodrelationOf data:Peter_Troughton ;
+    :isBrotherOf data:Peter_Troughton ;
+    :isChildOf data:Charles_Troughton ;
+    :isSiblingOf data:Peter_Troughton ;
+    :isSonOf data:Charles_Troughton .
+
+data:Sarah_Rose_Troughton a :Person,
+        :Woman ;
+    :hasAncestor data:Claude_Bowes-Lyon_14th,
+        data:Jeremiah_Colman,
+        data:Mary_Cecilia_Bowes-Lyon,
+        data:Timothy_Colman ;
+    :hasBirthYear 1953 ;
+    :hasFather data:Timothy_Colman ;
+    :hasMarriageYear 1977 ;
+    :hasMother data:Mary_Cecilia_Bowes-Lyon ;
+    :hasParent data:Mary_Cecilia_Bowes-Lyon,
+        data:Timothy_Colman ;
+    :hasRelation data:Charles_Troughton,
+        data:Claude_Bowes-Lyon_14th,
+        data:Jeremiah_Colman,
+        data:Mary_Cecilia_Bowes-Lyon,
+        data:Peter_Troughton,
+        data:Sarah_Rose_Troughton,
+        data:Timothy_Colman ;
+    :hasSister data:Sarah_Rose_Troughton ;
+    :isBloodrelationOf data:Sarah_Rose_Troughton ;
+    :isChildOf data:Mary_Cecilia_Bowes-Lyon,
+        data:Timothy_Colman ;
+    :isDaughterOf data:Mary_Cecilia_Bowes-Lyon,
+        data:Timothy_Colman ;
+    :isSiblingOf data:Sarah_Rose_Troughton ;
+    :isSisterOf data:Sarah_Rose_Troughton .
+

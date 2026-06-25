@@ -69,21 +69,30 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Hermann Friedrich Fernando Roland of Leiningen (German: Hermann Friedrich Fernando Roland Prinz zu Leiningen; born April 16, 1963) is a Canadian banker and the younger son of Prince Karl of Leiningen and Princess Marie Louise of Bulgaria.
-Life
+Archduhess Rosa Maria Antonie Roberta Josepha Anna Walburga Carmela Ignazia Rita de Cascia of Austria(German: Rosa Maria Antonie Roberta Josepha Anna Walburga Carmela Ignazia Rita de Cascia, Erzherzogin von Österreich; 22 September 1906 – 17 September 1983) was a member of the Tuscan branch of the House of Habsburg-Lorraine and an Archduchess of Austria and Princess of Bohemia, Hungary, and Tuscany by birth.
+Through her marriage to Philipp Albrecht, Duke of Württemberg, Rosa was also a member of the House of Württemberg and Duchess consort of Württemberg.
+Early life
 
-Leiningen was born in Toronto, Ontario.
-Through his mother, Leiningen is a grandson of King Boris III of Bulgaria, a great-grandson of King Victor Emmanuel III of Italy and great-great-grandson of King Nicholas of Montenegro.
-Leiningen is a financial analyst and banker, addressed as Mr. Hermann Leiningen professionally.
-As of 2015, Leiningen worked for a division of Royal Bank of Canada.
-On 16 May 1987, Leiningen married Deborah Cully (born December 2, 1961).
-Prince Herman is an honorary member of the Board of Trustees of the H.C.V. Princess Marie Louise and of the King Boris and Queen Giovanna Fund who manages Vrana Palace in Sofia.
+Rosa was the fourth and youngest child of Archduke Peter Ferdinand, Prince of Tuscany, and his wife, Princess Maria Cristina of Bourbon-Two Sicilies.
+Marriage and issue
+
+Rosa married Philipp Albrecht, Duke of Württemberg, eldest child and son of Albrecht, Duke of Württemberg, and his wife, Archduchess Margarete Sophie of Austria, on 1 August 1928 in Friedrichshafen.
+Rosa and Philipp Albrecht had two sons and four daughters:
+
+
+Ancestry
+
+References
+
+Bibliography
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -99,39 +108,9 @@ Prince Herman is an honorary member of the Board of Trustees of the H.C.V. Princ
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -146,6 +125,23 @@ Prince Herman is an honorary member of the Board of Trustees of the H.C.V. Princ
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -163,6 +159,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -230,29 +241,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,6 +264,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -273,6 +284,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -281,17 +294,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -319,6 +334,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -334,256 +433,117 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1e735962-06f5-4258-bcad-2fb6f2fb454c)
- Call ID: 1e735962-06f5-4258-bcad-2fb6f2fb454c
+  AssignClass (1b75cfbc-2043-4beb-9974-5d819e8d3d30)
+ Call ID: 1b75cfbc-2043-4beb-9974-5d819e8d3d30
   Args:
-    source: Hermann_Leiningen
-    type: :Man
-  AssignClass (525d2866-cba6-445e-85d9-278169e3c178)
- Call ID: 525d2866-cba6-445e-85d9-278169e3c178
-  Args:
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
     type: :Person
-    source: Hermann_Leiningen
-  AssignClass (46e92a99-e1a2-44ae-ae69-a2bed73a9a67)
- Call ID: 46e92a99-e1a2-44ae-ae69-a2bed73a9a67
+  AssignClass (ad65153a-78c6-4ec5-ae12-14dd7690ea34)
+ Call ID: ad65153a-78c6-4ec5-ae12-14dd7690ea34
   Args:
-    source: Karl_Leiningen
-    type: :Man
-  AssignClass (c2af51fa-4471-48dc-8fac-79c159085322)
- Call ID: c2af51fa-4471-48dc-8fac-79c159085322
-  Args:
-    type: :Ancestor
-    source: Karl_Leiningen
-  AssignClass (5496c809-6d90-4eb5-a67d-b0eb48c1120b)
- Call ID: 5496c809-6d90-4eb5-a67d-b0eb48c1120b
-  Args:
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
     type: :Woman
-    source: Marie_Louise_Bulgaria
-  AssignClass (90ea3b4c-f45a-4e7f-bd6a-3f436fb539bc)
- Call ID: 90ea3b4c-f45a-4e7f-bd6a-3f436fb539bc
+  AddLiteral (dbf20a45-e1a0-489b-a029-db427bd9aff2)
+ Call ID: dbf20a45-e1a0-489b-a029-db427bd9aff2
   Args:
-    source: Marie_Louise_Bulgaria
-    type: :Ancestor
-  AssignClass (51fb2223-a42c-4960-abf9-5b66a6c9d9cc)
- Call ID: 51fb2223-a42c-4960-abf9-5b66a6c9d9cc
-  Args:
-    type: :Woman
-    source: Deborah_Cully
-  AssignClass (e1189e15-8132-4ea0-985d-addc71b1c009)
- Call ID: e1189e15-8132-4ea0-985d-addc71b1c009
-  Args:
-    source: Deborah_Cully
-    type: :Person
-  AddLiteral (1b6ebe5c-5899-42d0-8b1a-c525f682875c)
- Call ID: 1b6ebe5c-5899-42d0-8b1a-c525f682875c
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+    literal_value: 1906
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (6636af60-4f03-4e2d-96bc-a0dd9d711709)
+ Call ID: 6636af60-4f03-4e2d-96bc-a0dd9d711709
   Args:
     literal_type: xsd:integer
-    literal_value: 1963
-    source: Hermann_Leiningen
-    relation: :hasBirthYear
-  AddLiteral (599169e0-0279-43d1-8946-9eed41102aa5)
- Call ID: 599169e0-0279-43d1-8946-9eed41102aa5
+    relation: :hasDeathYear
+    literal_value: 1983
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+  AssignClass (9c6dabe3-9605-4cb3-9d32-99925be9c138)
+ Call ID: 9c6dabe3-9605-4cb3-9d32-99925be9c138
   Args:
-    literal_value: Mr. Hermann Leiningen
-    literal_type: xsd:string
-    source: Hermann_Leiningen
-    relation: :knownAs
-  AddTriple (fb160718-f42e-4f18-8243-f63b6ff50bb8)
- Call ID: fb160718-f42e-4f18-8243-f63b6ff50bb8
+    type: :Person
+    source: Peter_Ferdinand_of_Tuscany
+  AssignClass (8e3314dd-4beb-43df-b7a7-ff14f1bc0b9a)
+ Call ID: 8e3314dd-4beb-43df-b7a7-ff14f1bc0b9a
+  Args:
+    type: :Man
+    source: Peter_Ferdinand_of_Tuscany
+  AssignClass (dc4bc15a-9bbd-438c-9601-abd81971095b)
+ Call ID: dc4bc15a-9bbd-438c-9601-abd81971095b
+  Args:
+    type: :Person
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
+  AssignClass (c2eec1b8-67ee-43d6-915a-007d55b5591e)
+ Call ID: c2eec1b8-67ee-43d6-915a-007d55b5591e
+  Args:
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
+    type: :Woman
+  AddTriple (992fd703-e229-4a9b-b94e-1d7f49214fa4)
+ Call ID: 992fd703-e229-4a9b-b94e-1d7f49214fa4
   Args:
     relation: :hasFather
-    source: Hermann_Leiningen
-    target: Karl_Leiningen
-  AddTriple (743965ac-a66a-4408-8776-af005d3d02e4)
- Call ID: 743965ac-a66a-4408-8776-af005d3d02e4
+    target: Peter_Ferdinand_of_Tuscany
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+  AddTriple (f266dc0f-9a58-4093-85c3-f5716fee20c7)
+ Call ID: f266dc0f-9a58-4093-85c3-f5716fee20c7
   Args:
-    source: Hermann_Leiningen
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+    target: Maria_Cristina_of_Bourbon-Two_Sicilies
     relation: :hasMother
-    target: Marie_Louise_Bulgaria
-  AddTriple (d46de57b-eaa4-49cc-b3db-a4d457c5978c)
- Call ID: d46de57b-eaa4-49cc-b3db-a4d457c5978c
+  AssignClass (b3f60f1c-f055-41e5-b311-2acdb4f67448)
+ Call ID: b3f60f1c-f055-41e5-b311-2acdb4f67448
   Args:
-    source: Hermann_Leiningen
-    relation: :hasSex
-    target: :Male
-  AddTriple (4d92d48c-0416-4b92-aaf4-cd0dbc59cdc6)
- Call ID: 4d92d48c-0416-4b92-aaf4-cd0dbc59cdc6
+    type: :Person
+    source: Philipp_Albrecht_of_Württemberg
+  AssignClass (20fb83cd-1c0d-46c6-8386-3f8ec1e88eec)
+ Call ID: 20fb83cd-1c0d-46c6-8386-3f8ec1e88eec
   Args:
-    target: :Male
-    source: Karl_Leiningen
-    relation: :hasSex
-  AddTriple (210b10e7-594a-4681-bf55-3624960422cd)
- Call ID: 210b10e7-594a-4681-bf55-3624960422cd
+    type: :Man
+    source: Philipp_Albrecht_of_Württemberg
+  AddTriple (daa06ccd-1fa1-4d87-b4fa-2c561fd8988b)
+ Call ID: daa06ccd-1fa1-4d87-b4fa-2c561fd8988b
   Args:
-    target: :Female
-    source: Marie_Louise_Bulgaria
-    relation: :hasSex
-  AddTriple (55cd2502-6d8d-4837-86bd-6494ef4d06d2)
- Call ID: 55cd2502-6d8d-4837-86bd-6494ef4d06d2
-  Args:
-    target: :Female
-    relation: :hasSex
-    source: Deborah_Cully
-  AddLiteral (e2a169b7-343e-40cc-9fb8-115724b21d4a)
- Call ID: e2a169b7-343e-40cc-9fb8-115724b21d4a
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1987
-    source: Hermann_Leiningen
-    relation: :hasMarriageYear
-  AddLiteral (07e9663a-bfd3-4432-933d-fbbdaa662649)
- Call ID: 07e9663a-bfd3-4432-933d-fbbdaa662649
-  Args:
-    literal_value: 1961
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Deborah_Cully
-  AddTriple (1be39cd3-c590-4f06-b52f-f7025555b56a)
- Call ID: 1be39cd3-c590-4f06-b52f-f7025555b56a
-  Args:
-    target: Deborah_Cully
-    source: Hermann_Leiningen
+    target: Philipp_Albrecht_of_Württemberg
     relation: :hasRelation
-  Finish (53a60e49-8954-4efe-a5eb-d2c621ed13cb)
- Call ID: 53a60e49-8954-4efe-a5eb-d2c621ed13cb
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+  AddLiteral (4633263a-153b-4a1e-a3c8-b443905bfdff)
+ Call ID: 4633263a-153b-4a1e-a3c8-b443905bfdff
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Hermann_Leiningen a :Man,
-          :Person ;
-      :hasBirthYear 1963 ;
-      :hasFather data:Karl_Leiningen ;
-      :hasMarriageYear 1987 ;
-      :hasMother data:Marie_Louise_Bulgaria ;
-      :hasRelation data:Deborah_Cully ;
-      :hasSex data:Male ;
-      :knownAs "Mr. Hermann Leiningen"^^xsd:string .
-
-  data:Deborah_Cully a :Person,
-          :Woman ;
-      :hasBirthYear 1961 ;
-      :hasSex data:Female .
-
-  data:Karl_Leiningen a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Marie_Louise_Bulgaria a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male', 'Female']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (2f50c41d-391c-42b3-8521-9f528e50b949)
- Call ID: 2f50c41d-391c-42b3-8521-9f528e50b949
+    literal_value: 1928
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+  AssignClass (e6b6bf44-55d1-49bf-be23-6589703a2fe5)
+ Call ID: e6b6bf44-55d1-49bf-be23-6589703a2fe5
   Args:
-    source: Male
-    type: :Sex
-  AssignClass (ad0d10e3-46e9-49a2-82a5-5856d34f35bf)
- Call ID: ad0d10e3-46e9-49a2-82a5-5856d34f35bf
+    type: :Person
+    source: Albrecht_of_Württemberg
+  AssignClass (88457d00-7409-4f38-9bd9-f32cbb6a8e4c)
+ Call ID: 88457d00-7409-4f38-9bd9-f32cbb6a8e4c
   Args:
-    source: Female
-    type: :Sex
-  Finish (cdff99ee-b8e7-412d-b6a7-99b75c3e007b)
- Call ID: cdff99ee-b8e7-412d-b6a7-99b75c3e007b
+    type: :Man
+    source: Albrecht_of_Württemberg
+  AssignClass (5e73b913-2ffd-473d-98de-46a3981be142)
+ Call ID: 5e73b913-2ffd-473d-98de-46a3981be142
+  Args:
+    source: Margarete_Sophie_of_Austria
+    type: :Person
+  AssignClass (483fceb5-7fe2-44d4-a4f6-57aaac47c54e)
+ Call ID: 483fceb5-7fe2-44d4-a4f6-57aaac47c54e
+  Args:
+    source: Margarete_Sophie_of_Austria
+    type: :Woman
+  AddTriple (df4da269-18ba-4be0-96dc-0029d9541eb0)
+ Call ID: df4da269-18ba-4be0-96dc-0029d9541eb0
+  Args:
+    source: Philipp_Albrecht_of_Württemberg
+    relation: :hasFather
+    target: Albrecht_of_Württemberg
+  AddTriple (29e77e57-79f7-4763-bd77-8ab6e815ebe2)
+ Call ID: 29e77e57-79f7-4763-bd77-8ab6e815ebe2
+  Args:
+    relation: :hasMother
+    target: Margarete_Sophie_of_Austria
+    source: Philipp_Albrecht_of_Württemberg
+  Finish (ad5c8412-a2a4-4d80-afed-32bfcd4a2e96)
+ Call ID: ad5c8412-a2a4-4d80-afed-32bfcd4a2e96
   Args:

@@ -1,0 +1,92 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Georg_Friedrich_Prinz_von_Preussen a :Man ;
+    :hasBrother data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasRelation data:Georg_Friedrich_Prinz_von_Preussen ;
+    :isBloodrelationOf data:Georg_Friedrich_Prinz_von_Preussen ;
+    :isBrotherOf data:Georg_Friedrich_Prinz_von_Preussen ;
+    :isSiblingOf data:Georg_Friedrich_Prinz_von_Preussen .
+
+data:Kira_Kirillovna_of_Russia a :Ancestor,
+        :Woman ;
+    :hasChild data:Michael_Prinz_von_Preussen ;
+    :hasRelation data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Michael_Prinz_von_Preussen,
+        data:Wilhelm_II ;
+    :hasSister data:Kira_Kirillovna_of_Russia ;
+    :hasSon data:Michael_Prinz_von_Preussen ;
+    :isAncestorOf data:Michael_Prinz_von_Preussen ;
+    :isAuntOf data:Michael_Prinz_von_Preussen ;
+    :isBloodrelationOf data:Kira_Kirillovna_of_Russia ;
+    :isMotherOf data:Michael_Prinz_von_Preussen ;
+    :isParentOf data:Michael_Prinz_von_Preussen ;
+    :isSiblingOf data:Kira_Kirillovna_of_Russia ;
+    :isSisterOf data:Kira_Kirillovna_of_Russia .
+
+data:Wilhelm_II a :Ancestor,
+        :Man ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasRelation data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Michael_Prinz_von_Preussen,
+        data:Wilhelm_II ;
+    :hasSon data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isAncestorOf data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Michael_Prinz_von_Preussen ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isParentOf data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+data:Louis_Ferdinand_Prince_of_Prussia a :Ancestor,
+        :Man ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBrother data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasChild data:Michael_Prinz_von_Preussen ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Michael_Prinz_von_Preussen,
+        data:Wilhelm_II ;
+    :hasSon data:Michael_Prinz_von_Preussen ;
+    :isAncestorOf data:Michael_Prinz_von_Preussen ;
+    :isBloodrelationOf data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isBrotherOf data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isFatherOf data:Michael_Prinz_von_Preussen ;
+    :isParentOf data:Michael_Prinz_von_Preussen ;
+    :isSiblingOf data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isSonOf data:Wilhelm_II ;
+    :isUncleOf data:Michael_Prinz_von_Preussen .
+
+data:Michael_Prinz_von_Preussen a :Man ;
+    :hasAncestor data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:Michael_Prinz_von_Preussen ;
+    :hasDeathYear 2014 ;
+    :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasMother data:Kira_Kirillovna_of_Russia ;
+    :hasParent data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasRelation data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia,
+        data:Michael_Prinz_von_Preussen,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Michael_Prinz_von_Preussen ;
+    :isBrotherOf data:Michael_Prinz_von_Preussen ;
+    :isChildOf data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isSiblingOf data:Michael_Prinz_von_Preussen ;
+    :isSonOf data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_Prince_of_Prussia ;
+    :isUncleOf data:Georg_Friedrich_Prinz_von_Preussen .
+

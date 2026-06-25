@@ -1,0 +1,147 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Victoria a :Woman ;
+    :hasRelation data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:William_I a :Man ;
+    :hasBrother data:William_I ;
+    :hasRelation data:William_I ;
+    :isBloodrelationOf data:William_I ;
+    :isBrotherOf data:William_I ;
+    :isSiblingOf data:William_I .
+
+data:Heinrich_XXX a :Man ;
+    :hasBirthYear 1864 ;
+    :hasBrother data:Heinrich_XXX ;
+    :hasDeathYear 1939 ;
+    :hasRelation data:Bernhard_III,
+        data:Charlotte,
+        data:Feodora,
+        data:Friedrich_III,
+        data:Heinrich_XXX,
+        data:Victoria_Empress ;
+    :isBloodrelationOf data:Heinrich_XXX ;
+    :isBrotherOf data:Heinrich_XXX ;
+    :isSiblingOf data:Heinrich_XXX .
+
+data:Bernhard_III a :Ancestor,
+        :Man ;
+    :hasBrother data:Bernhard_III ;
+    :hasChild data:Feodora ;
+    :hasDaughter data:Feodora ;
+    :hasRelation data:Bernhard_III,
+        data:Charlotte,
+        data:Feodora,
+        data:Friedrich_III,
+        data:Heinrich_XXX,
+        data:Victoria_Empress ;
+    :isAncestorOf data:Feodora ;
+    :isBloodrelationOf data:Bernhard_III ;
+    :isBrotherOf data:Bernhard_III ;
+    :isFatherOf data:Feodora ;
+    :isParentOf data:Feodora ;
+    :isSiblingOf data:Bernhard_III ;
+    :isUncleOf data:Feodora .
+
+data:Friedrich_III a :Ancestor,
+        :Man ;
+    :hasBrother data:Friedrich_III ;
+    :hasChild data:Charlotte ;
+    :hasDaughter data:Charlotte ;
+    :hasRelation data:Bernhard_III,
+        data:Charlotte,
+        data:Feodora,
+        data:Friedrich_III,
+        data:Heinrich_XXX,
+        data:Victoria_Empress ;
+    :isAncestorOf data:Charlotte,
+        data:Feodora ;
+    :isBloodrelationOf data:Friedrich_III ;
+    :isBrotherOf data:Friedrich_III ;
+    :isFatherOf data:Charlotte ;
+    :isParentOf data:Charlotte ;
+    :isSiblingOf data:Friedrich_III ;
+    :isUncleOf data:Charlotte .
+
+data:Victoria_Empress a :Ancestor,
+        :Woman ;
+    :hasChild data:Charlotte ;
+    :hasDaughter data:Charlotte ;
+    :hasRelation data:Bernhard_III,
+        data:Charlotte,
+        data:Feodora,
+        data:Friedrich_III,
+        data:Heinrich_XXX,
+        data:Victoria_Empress ;
+    :hasSister data:Victoria_Empress ;
+    :isAncestorOf data:Charlotte,
+        data:Feodora ;
+    :isAuntOf data:Charlotte ;
+    :isBloodrelationOf data:Victoria_Empress ;
+    :isMotherOf data:Charlotte ;
+    :isParentOf data:Charlotte ;
+    :isSiblingOf data:Victoria_Empress ;
+    :isSisterOf data:Victoria_Empress .
+
+data:Feodora a :Woman ;
+    :hasAncestor data:Bernhard_III,
+        data:Charlotte,
+        data:Friedrich_III,
+        data:Victoria_Empress ;
+    :hasBirthYear 1879 ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Bernhard_III ;
+    :hasMarriageYear 1898 ;
+    :hasMother data:Charlotte ;
+    :hasParent data:Bernhard_III,
+        data:Charlotte ;
+    :hasRelation data:Bernhard_III,
+        data:Charlotte,
+        data:Feodora,
+        data:Friedrich_III,
+        data:Heinrich_XXX,
+        data:Victoria_Empress ;
+    :hasSister data:Feodora ;
+    :isBloodrelationOf data:Feodora ;
+    :isChildOf data:Bernhard_III,
+        data:Charlotte ;
+    :isDaughterOf data:Bernhard_III,
+        data:Charlotte ;
+    :isSiblingOf data:Feodora ;
+    :isSisterOf data:Feodora .
+
+data:Charlotte a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Friedrich_III,
+        data:Victoria_Empress ;
+    :hasChild data:Feodora ;
+    :hasDaughter data:Feodora ;
+    :hasFather data:Friedrich_III ;
+    :hasMother data:Victoria_Empress ;
+    :hasParent data:Friedrich_III,
+        data:Victoria_Empress ;
+    :hasRelation data:Bernhard_III,
+        data:Charlotte,
+        data:Feodora,
+        data:Friedrich_III,
+        data:Heinrich_XXX,
+        data:Victoria_Empress ;
+    :hasSister data:Charlotte ;
+    :isAncestorOf data:Feodora ;
+    :isAuntOf data:Feodora ;
+    :isBloodrelationOf data:Charlotte ;
+    :isChildOf data:Friedrich_III,
+        data:Victoria_Empress ;
+    :isDaughterOf data:Friedrich_III,
+        data:Victoria_Empress ;
+    :isMotherOf data:Feodora ;
+    :isParentOf data:Feodora ;
+    :isSiblingOf data:Charlotte ;
+    :isSisterOf data:Charlotte .
+

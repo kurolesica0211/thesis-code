@@ -1,0 +1,155 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Michael_I_of_Romania a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Michael I of Romania"^^xsd:string ;
+    data:posIndicesFull "193:207"^^xsd:string,
+        "198:207"^^xsd:string,
+        "3708:3722"^^xsd:string,
+        "3713:3722"^^xsd:string,
+        "499:513"^^xsd:string,
+        "504:513"^^xsd:string ;
+    data:posIndicesPart "1585:1592"^^xsd:string,
+        "1735:1742"^^xsd:string,
+        "1766:1773"^^xsd:string,
+        "1789:1796"^^xsd:string,
+        "2006:2013"^^xsd:string,
+        "2319:2326"^^xsd:string,
+        "265:272"^^xsd:string,
+        "2714:2721"^^xsd:string,
+        "3271:3278"^^xsd:string,
+        "632:639"^^xsd:string ;
+    data:wdtLink wdt:Q930013 ;
+    :alsoKnownAs "King Michael I"^^xsd:string,
+        "King Michael I of Romania"^^xsd:string,
+        "King Michael I of the Romanians"^^xsd:string,
+        "Michael I"^^xsd:string,
+        "Michael I of the Romanians"^^xsd:string ;
+    :hasBrother data:Michael_I_of_Romania ;
+    :hasChild data:Princess_Maria_of_Romania ;
+    :hasDaughter data:Princess_Maria_of_Romania ;
+    :hasRelation data:Michael_I_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Maria_of_Romania ;
+    :isBloodrelationOf data:Michael_I_of_Romania ;
+    :isBrotherOf data:Michael_I_of_Romania ;
+    :isFatherOf data:Princess_Maria_of_Romania ;
+    :isParentOf data:Princess_Maria_of_Romania ;
+    :isSiblingOf data:Michael_I_of_Romania ;
+    :isUncleOf data:Princess_Maria_of_Romania .
+
+data:Queen_Anne_of_Romania a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Anne of Romania"^^xsd:string ;
+    data:posIndicesFull "212:222"^^xsd:string,
+        "212:233"^^xsd:string,
+        "518:528"^^xsd:string ;
+    data:posIndicesPart "1585:1592"^^xsd:string,
+        "1735:1742"^^xsd:string,
+        "1766:1773"^^xsd:string,
+        "1789:1796"^^xsd:string,
+        "2319:2326"^^xsd:string,
+        "265:272"^^xsd:string,
+        "2714:2721"^^xsd:string,
+        "813:818"^^xsd:string ;
+    data:wdtLink wdt:Q563765 ;
+    :alsoKnownAs "Princess Anne of Bourbon-Parma"^^xsd:string,
+        "Queen Anne"^^xsd:string,
+        "Queen Anne, Queen Consort of Romania"^^xsd:string ;
+    :hasChild data:Princess_Maria_of_Romania ;
+    :hasDaughter data:Princess_Maria_of_Romania ;
+    :hasRelation data:Michael_I_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Anne_of_Romania ;
+    :isAncestorOf data:Princess_Maria_of_Romania ;
+    :isAuntOf data:Princess_Maria_of_Romania ;
+    :isBloodrelationOf data:Queen_Anne_of_Romania ;
+    :isMotherOf data:Princess_Maria_of_Romania ;
+    :isParentOf data:Princess_Maria_of_Romania ;
+    :isSiblingOf data:Queen_Anne_of_Romania ;
+    :isSisterOf data:Queen_Anne_of_Romania .
+
+data:Princess_Maria_of_Romania a :Person,
+        :Woman ;
+    rdfs:label "Princess Maria of Romania"^^xsd:string ;
+    data:posIndicesFull "109:134"^^xsd:string,
+        "4068:4071"^^xsd:string,
+        "4295:4312"^^xsd:string,
+        "4415:4440"^^xsd:string ;
+    data:posIndicesPart "1246:1251"^^xsd:string,
+        "1397:1402"^^xsd:string,
+        "1448:1453"^^xsd:string,
+        "1585:1592"^^xsd:string,
+        "1735:1742"^^xsd:string,
+        "1766:1773"^^xsd:string,
+        "1775:1780"^^xsd:string,
+        "1789:1796"^^xsd:string,
+        "2059:2064"^^xsd:string,
+        "2158:2166"^^xsd:string,
+        "2209:2214"^^xsd:string,
+        "2319:2326"^^xsd:string,
+        "2439:2444"^^xsd:string,
+        "246:251"^^xsd:string,
+        "265:272"^^xsd:string,
+        "2694:2699"^^xsd:string,
+        "2714:2721"^^xsd:string,
+        "2916:2921"^^xsd:string,
+        "3153:3158"^^xsd:string,
+        "3329:3334"^^xsd:string,
+        "355:360"^^xsd:string,
+        "3688:3696"^^xsd:string,
+        "3972:3980"^^xsd:string,
+        "4121:4129"^^xsd:string,
+        "4526:4534"^^xsd:string,
+        "530:535"^^xsd:string,
+        "712:717"^^xsd:string,
+        "779:787"^^xsd:string,
+        "893:898"^^xsd:string,
+        "996:1001"^^xsd:string ;
+    data:wdtLink wdt:Q1212263 ;
+    :alsoKnownAs "Maria de Roumanie"^^xsd:string,
+        "Mia"^^xsd:string,
+        "The Princess Maria"^^xsd:string,
+        "The Princess Maria of Romania"^^xsd:string ;
+    :hasAncestor data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasFather data:Michael_I_of_Romania ;
+    :hasMother data:Queen_Anne_of_Romania ;
+    :hasParent data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasRelation data:Michael_I_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Maria_of_Romania ;
+    :isBloodrelationOf data:Princess_Maria_of_Romania ;
+    :isChildOf data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :isDaughterOf data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :isSiblingOf data:Princess_Maria_of_Romania ;
+    :isSisterOf data:Princess_Maria_of_Romania .
+

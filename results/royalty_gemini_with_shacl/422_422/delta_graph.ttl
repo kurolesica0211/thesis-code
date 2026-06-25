@@ -2,44 +2,52 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charlotte_Wellesley a :Person,
-        :Woman ;
-    :isDaughterOf data:Antonia_of_Prussia,
-        data:Charles_Wellesley .
+data:Andreas_8th_Prince_of_Leiningen a :Man,
+        :Person ;
+    :isBrotherOf data:Karl_Emich_of_Leiningen .
 
-data:Mary_Wellesley a :Person,
-        :Woman ;
-    :isDaughterOf data:Antonia_of_Prussia,
-        data:Charles_Wellesley .
+data:Prince_Emich_Albrecht_Karl_of_Leiningen a :Man,
+        :Person ;
+    :isSonOf data:Gabriele_Renate_Thyssen,
+        data:Karl_Emich_of_Leiningen .
 
-data:Brigid_Guinness a :Ancestor,
+data:Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen a :Person,
+        :Woman ;
+    :isDaughterOf data:Karl_Emich_of_Leiningen,
+        data:Princess_Margarita_of_Hohenlohe-Oehringen .
+
+data:Princess_Theresa_Anna_Elisabeth_of_Leiningen a :Person,
+        :Woman ;
+    :isDaughterOf data:Gabriele_Renate_Thyssen,
+        data:Karl_Emich_of_Leiningen .
+
+data:Duchess_Eilika_of_Oldenburg a :Ancestor,
         :Person,
         :Woman .
 
-data:Frederick_of_Prussia a :Ancestor,
+data:Emich_7th_Prince_of_Leiningen a :Ancestor,
         :Man,
         :Person .
 
-data:Rupert_Guinness a :Ancestor,
-        :Man,
-        :Person .
-
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person .
-
-data:Antonia_of_Prussia a :Ancestor,
+data:Grand_Duchess_Maria_Kirillovna a :Ancestor,
         :Person,
-        :Woman ;
-    :hasAncestor data:Rupert_Guinness,
-        data:Wilhelm_II ;
-    :hasBirthYear 1955 ;
-    :hasFather data:Frederick_of_Prussia ;
-    :hasMarriageYear 1977 ;
-    :hasMother data:Brigid_Guinness ;
-    :hasRelation data:Charles_Wellesley .
+        :Woman .
 
-data:Charles_Wellesley a :Ancestor,
+data:Princess_Margarita_of_Hohenlohe-Oehringen a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Gabriele_Renate_Thyssen a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Karl_Emich_of_Leiningen a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :alsoKnownAs "Nikolai Kirillovich Romanov"^^xsd:string ;
+    :hasAncestor data:Grand_Duchess_Maria_Kirillovna ;
+    :hasFather data:Emich_7th_Prince_of_Leiningen ;
+    :hasMother data:Duchess_Eilika_of_Oldenburg ;
+    :hasRelation data:Gabriele_Renate_Thyssen,
+        data:Princess_Margarita_of_Hohenlohe-Oehringen .
 

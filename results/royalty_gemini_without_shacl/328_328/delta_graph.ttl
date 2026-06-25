@@ -2,33 +2,31 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Fergus_Bowes-Lyon a :Man,
+data:Irakli_Bagration_Mukhrani a :Man,
         :Person ;
-    :hasBirthYear "1889"^^xsd:string ;
-    :hasDeathYear "1915"^^xsd:string ;
-    :hasFather data:Claude_Bowes-Lyon ;
-    :hasMarriageYear "1914"^^xsd:string ;
-    :hasMother data:Cecilia_Bowes-Lyon ;
-    :hasRelation data:Lady_Christian_Norah_Dawson-Damer ;
-    :isBrotherOf data:Elizabeth_Bowes-Lyon,
-        data:John_Bowes-Lyon ;
-    :isUncleOf data:Queen_Elizabeth_II .
+    :isFatherOf data:Bagrat_Bagration_Mukhraneli .
 
-data:Cecilia_Bowes-Lyon a :Person,
+data:Jorge_de_Bagration a :Man,
+        :Person ;
+    :isBrotherOf data:Bagrat_Bagration_Mukhraneli .
+
+data:Maria_de_las_Mercedes_de_Baviera_y_Borbon a :Person,
+        :Woman ;
+    :isMotherOf data:Bagrat_Bagration_Mukhraneli .
+
+data:Princess_Mariam a :Person,
+        :Woman ;
+    :isSisterOf data:Bagrat_Bagration_Mukhraneli .
+
+data:Maria_del_Carmen_de_Ulloa_y_Suelves a :Person,
         :Woman .
 
-data:Claude_Bowes-Lyon a :Man,
-        :Person .
-
-data:Elizabeth_Bowes-Lyon a :Person,
-        :Woman .
-
-data:John_Bowes-Lyon a :Man,
-        :Person .
-
-data:Lady_Christian_Norah_Dawson-Damer a :Person,
-        :Woman .
-
-data:Queen_Elizabeth_II a :Person,
-        :Woman .
+data:Bagrat_Bagration_Mukhraneli a :Man,
+        :Person ;
+    :alsoKnownAs "Prince Bagrat Bagration-Moukhransky"^^xsd:string,
+        "Prince Bagrat Bagrationi-Mukhraneli"^^xsd:string ;
+    :hasBirthYear 1949 ;
+    :hasDeathYear 2017 ;
+    :hasMarriageYear 1976 ;
+    :hasRelation data:Maria_del_Carmen_de_Ulloa_y_Suelves .
 

@@ -1,0 +1,363 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CarlosCh%C3%ADasOsorio a :Man ;
+    :hasBrother data:CarlosCh%C3%ADasOsorio ;
+    :hasRelation data:CarlosCh%C3%ADasOsorio,
+        data:JuanCarlosIOfSpain,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:CarlosCh%C3%ADasOsorio ;
+    :isBrotherOf data:CarlosCh%C3%ADasOsorio ;
+    :isSiblingOf data:CarlosCh%C3%ADasOsorio .
+
+data:CountessMariaLudwikaKrasi%C5%84ska a :Ancestor,
+        :Woman ;
+    :hasChild data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :hasRelation data:CountessMariaLudwikaKrasi%C5%84ska,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :hasSister data:CountessMariaLudwikaKrasi%C5%84ska ;
+    :hasSon data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :isAncestorOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isAuntOf data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :isBloodrelationOf data:CountessMariaLudwikaKrasi%C5%84ska ;
+    :isMotherOf data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :isParentOf data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :isSiblingOf data:CountessMariaLudwikaKrasi%C5%84ska ;
+    :isSisterOf data:CountessMariaLudwikaKrasi%C5%84ska .
+
+data:PrinceAdamLudwikCzartoryski a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceAdamLudwikCzartoryski ;
+    :hasChild data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :hasRelation data:PrinceAdamKarolCzartoryski,
+        data:PrinceAdamLudwikCzartoryski,
+        data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :hasSon data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :isAncestorOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isBloodrelationOf data:PrinceAdamLudwikCzartoryski ;
+    :isBrotherOf data:PrinceAdamLudwikCzartoryski ;
+    :isFatherOf data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :isParentOf data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :isSiblingOf data:PrinceAdamLudwikCzartoryski ;
+    :isUncleOf data:PrinceAugustynJ%C3%B3zefCzartoryski .
+
+data:PrinceCarlosOfBourbonTwoSicilies a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasChild data:PrincessDoloresOfBourbonTwoSicilies ;
+    :hasDaughter data:PrincessDoloresOfBourbonTwoSicilies ;
+    :hasRelation data:JuanCarlosIOfSpain,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :isAncestorOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:PrinceCarlosOfBourbonTwoSicilies ;
+    :isBrotherOf data:PrinceCarlosOfBourbonTwoSicilies ;
+    :isFatherOf data:PrincessDoloresOfBourbonTwoSicilies ;
+    :isParentOf data:PrincessDoloresOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrinceCarlosOfBourbonTwoSicilies ;
+    :isUncleOf data:PrincessDoloresOfBourbonTwoSicilies .
+
+data:PrincessEsperanzaOfBourbonTwoSicilies a :Woman ;
+    :hasRelation data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :hasSister data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :isAuntOf data:JuanCarlosIOfSpain,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isBloodrelationOf data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :isSisterOf data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies .
+
+data:IsabelleCountessOfParis a :Ancestor,
+        :Woman ;
+    :hasChild data:PrincessLouiseOfOrl%C3%A9ans ;
+    :hasDaughter data:PrincessLouiseOfOrl%C3%A9ans ;
+    :hasRelation data:IsabelleCountessOfParis,
+        data:JuanCarlosIOfSpain,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :hasSister data:IsabelleCountessOfParis ;
+    :isAncestorOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans ;
+    :isAuntOf data:PrincessLouiseOfOrl%C3%A9ans ;
+    :isBloodrelationOf data:IsabelleCountessOfParis ;
+    :isMotherOf data:PrincessLouiseOfOrl%C3%A9ans ;
+    :isParentOf data:PrincessLouiseOfOrl%C3%A9ans ;
+    :isSiblingOf data:IsabelleCountessOfParis ;
+    :isSisterOf data:IsabelleCountessOfParis .
+
+data:JuanCarlosIOfSpain a :Man ;
+    :hasAncestor data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :hasBrother data:JuanCarlosIOfSpain ;
+    :hasMother data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :hasParent data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :hasRelation data:CarlosCh%C3%ADasOsorio,
+        data:IsabelleCountessOfParis,
+        data:JuanCarlosIOfSpain,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:JuanCarlosIOfSpain ;
+    :isBrotherOf data:JuanCarlosIOfSpain ;
+    :isChildOf data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :isSiblingOf data:JuanCarlosIOfSpain ;
+    :isSonOf data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies .
+
+data:PrincessLouiseOfOrl%C3%A9ans a :Ancestor,
+        :Woman ;
+    :hasAncestor data:IsabelleCountessOfParis ;
+    :hasChild data:PrincessDoloresOfBourbonTwoSicilies ;
+    :hasDaughter data:PrincessDoloresOfBourbonTwoSicilies ;
+    :hasMother data:IsabelleCountessOfParis ;
+    :hasParent data:IsabelleCountessOfParis ;
+    :hasRelation data:IsabelleCountessOfParis,
+        data:JuanCarlosIOfSpain,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :hasSister data:PrincessLouiseOfOrl%C3%A9ans ;
+    :isAncestorOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies ;
+    :isAuntOf data:PrincessDoloresOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:PrincessLouiseOfOrl%C3%A9ans ;
+    :isChildOf data:IsabelleCountessOfParis ;
+    :isDaughterOf data:IsabelleCountessOfParis ;
+    :isMotherOf data:PrincessDoloresOfBourbonTwoSicilies ;
+    :isParentOf data:PrincessDoloresOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrincessLouiseOfOrl%C3%A9ans ;
+    :isSisterOf data:PrincessLouiseOfOrl%C3%A9ans .
+
+data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies a :Ancestor,
+        :Woman ;
+    :hasChild data:JuanCarlosIOfSpain ;
+    :hasRelation data:CarlosCh%C3%ADasOsorio,
+        data:IsabelleCountessOfParis,
+        data:JuanCarlosIOfSpain,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :hasSister data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :hasSon data:JuanCarlosIOfSpain ;
+    :isAncestorOf data:JuanCarlosIOfSpain ;
+    :isAuntOf data:JuanCarlosIOfSpain,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isBloodrelationOf data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :isMotherOf data:JuanCarlosIOfSpain ;
+    :isParentOf data:JuanCarlosIOfSpain ;
+    :isSiblingOf data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :isSisterOf data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies .
+
+data:PrinceAugustynJ%C3%B3zefCzartoryski a :Ancestor,
+        :Man ;
+    :hasAncestor data:CountessMariaLudwikaKrasi%C5%84ska,
+        data:PrinceAdamLudwikCzartoryski ;
+    :hasBrother data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :hasChild data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :hasFather data:PrinceAdamLudwikCzartoryski ;
+    :hasMother data:CountessMariaLudwikaKrasi%C5%84ska ;
+    :hasParent data:CountessMariaLudwikaKrasi%C5%84ska,
+        data:PrinceAdamLudwikCzartoryski ;
+    :hasRelation data:CountessMariaLudwikaKrasi%C5%84ska,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceAdamLudwikCzartoryski,
+        data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies ;
+    :hasSon data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isAncestorOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isBloodrelationOf data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :isBrotherOf data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :isChildOf data:CountessMariaLudwikaKrasi%C5%84ska,
+        data:PrinceAdamLudwikCzartoryski ;
+    :isFatherOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isParentOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isSiblingOf data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :isSonOf data:CountessMariaLudwikaKrasi%C5%84ska,
+        data:PrinceAdamLudwikCzartoryski ;
+    :isUncleOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski .
+
+data:PrinceAdamKarolCzartoryski a :Man ;
+    :hasAncestor data:CountessMariaLudwikaKrasi%C5%84ska,
+        data:IsabelleCountessOfParis,
+        data:PrinceAdamLudwikCzartoryski,
+        data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans ;
+    :hasBrother data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :hasFather data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :hasMother data:PrincessDoloresOfBourbonTwoSicilies ;
+    :hasParent data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies ;
+    :hasRelation data:CarlosCh%C3%ADasOsorio,
+        data:CountessMariaLudwikaKrasi%C5%84ska,
+        data:IsabelleCountessOfParis,
+        data:JuanCarlosIOfSpain,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceAdamLudwikCzartoryski,
+        data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isBrotherOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isChildOf data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isSonOf data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies .
+
+data:PrinceLudwikPiotrCzartoryski a :Man ;
+    :hasAncestor data:CountessMariaLudwikaKrasi%C5%84ska,
+        data:IsabelleCountessOfParis,
+        data:PrinceAdamLudwikCzartoryski,
+        data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans ;
+    :hasBrother data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :hasFather data:PrinceAugustynJ%C3%B3zefCzartoryski ;
+    :hasMother data:PrincessDoloresOfBourbonTwoSicilies ;
+    :hasParent data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies ;
+    :hasRelation data:CarlosCh%C3%ADasOsorio,
+        data:CountessMariaLudwikaKrasi%C5%84ska,
+        data:IsabelleCountessOfParis,
+        data:JuanCarlosIOfSpain,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceAdamLudwikCzartoryski,
+        data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :isBloodrelationOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isBrotherOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isChildOf data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies ;
+    :isSiblingOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isSonOf data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies .
+
+data:PrincessDoloresOfBourbonTwoSicilies a :Ancestor,
+        :Woman ;
+    :hasAncestor data:IsabelleCountessOfParis,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans ;
+    :hasBirthYear 1909 ;
+    :hasChild data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :hasDeathYear 1996 ;
+    :hasFather data:PrinceCarlosOfBourbonTwoSicilies ;
+    :hasMother data:PrincessLouiseOfOrl%C3%A9ans ;
+    :hasParent data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans ;
+    :hasRelation data:CarlosCh%C3%ADasOsorio,
+        data:IsabelleCountessOfParis,
+        data:JuanCarlosIOfSpain,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceAugustynJ%C3%B3zefCzartoryski,
+        data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrinceLudwikPiotrCzartoryski,
+        data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :hasSister data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :hasSon data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isAncestorOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isAuntOf data:JuanCarlosIOfSpain,
+        data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isBloodrelationOf data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :isChildOf data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans ;
+    :isDaughterOf data:PrinceCarlosOfBourbonTwoSicilies,
+        data:PrincessLouiseOfOrl%C3%A9ans ;
+    :isMotherOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isParentOf data:PrinceAdamKarolCzartoryski,
+        data:PrinceLudwikPiotrCzartoryski ;
+    :isSiblingOf data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies ;
+    :isSisterOf data:PrincessDoloresOfBourbonTwoSicilies,
+        data:PrincessEsperanzaOfBourbonTwoSicilies,
+        data:PrincessMar%C3%ADaDeLasMercedesOfBourbonTwoSicilies .
+

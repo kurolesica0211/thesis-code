@@ -2,41 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Andrew_Mountbatten_Windsor a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:Princess_Beatrice,
-        data:Princess_Eugenie .
+data:KingCharlesIII a :Man .
 
-data:Edoardo_Mapelli_Mozzi a :Man,
-        :Person ;
-    :hasDaughter data:Athena_Elizabeth_Rose,
-        data:Sienna_Elizabeth_Mapelli_Mozzi .
+data:PrincePhilip a :Man .
 
-data:Sarah_Ferguson a :Ancestor,
-        :Person,
-        :Woman ;
-    :isMotherOf data:Princess_Beatrice,
-        data:Princess_Eugenie .
-
-data:Athena_Elizabeth_Rose a :Person,
-        :Woman .
-
-data:Sienna_Elizabeth_Mapelli_Mozzi a :Person,
-        :Woman .
-
-data:Princess_Beatrice a :Person,
-        :Woman ;
+data:PrincessBeatrice a :Woman ;
     :hasBirthYear 1988 ;
-    :hasDaughter data:Athena_Elizabeth_Rose,
-        data:Sienna_Elizabeth_Mapelli_Mozzi ;
-    :hasFather data:Andrew_Mountbatten_Windsor ;
+    :hasFather data:AndrewMountbatten-Windsor ;
     :hasMarriageYear 2020 ;
-    :hasMother data:Sarah_Ferguson ;
-    :hasRelation data:Edoardo_Mapelli_Mozzi ;
-    :hasSister data:Princess_Eugenie .
+    :hasMother data:SarahFerguson ;
+    :hasRelation data:EdoardoMapelliMozzi ;
+    :isMotherOf data:AthenaElizabethRose,
+        data:SiennaElizabethMapelliMozzi ;
+    :isSisterOf data:PrincessEugenie .
 
-data:Princess_Eugenie a :Person,
-        :Woman ;
-    :isSisterOf data:Princess_Beatrice .
+data:QueenElizabethII a :Woman .
+
+data:AlexMapelliMozzi a :Man ;
+    :hasFather data:PaoloMapelliMozzi .
+
+data:AthenaElizabethRose a :Woman ;
+    :hasFather data:EdoardoMapelliMozzi .
+
+data:PaoloMapelliMozzi a :Man .
+
+data:PrincessEugenie a :Woman ;
+    :hasFather data:AndrewMountbatten-Windsor ;
+    :hasMother data:SarahFerguson .
+
+data:SiennaElizabethMapelliMozzi a :Woman ;
+    :hasFather data:EdoardoMapelliMozzi .
+
+data:AndrewMountbatten-Windsor a :Man .
+
+data:SarahFerguson a :Woman .
+
+data:EdoardoMapelliMozzi a :Man ;
+    :hasFather data:AlexMapelliMozzi .
 

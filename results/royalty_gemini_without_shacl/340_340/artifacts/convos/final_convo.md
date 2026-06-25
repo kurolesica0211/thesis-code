@@ -69,96 +69,94 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Wilhelm, German Crown Prince, Crown Prince of Prussia (Friedrich Wilhelm Victor August Ernst; 6 May 1882 – 20 July 1951), was the eldest child of the last German emperor, Wilhelm II, and his consort Augusta Victoria of Schleswig-Holstein.
-As Emperor Wilhelm's heir, he was the last German Crown Prince and Crown Prince of Prussia, until the abolition of the monarchy.
-Wilhelm became crown prince at the age of six in 1888, when his grandfather Frederick III died and his father became emperor.
-He was crown prince for 30 years until his father's abdication and the fall of the empire on 9 November 1918.
-During World War I, he commanded the 5th Army from 1914 to 1916 and was commander of the Army Group German Crown Prince for the remainder of the war.
-After his plans to become President had been blocked by his father, Wilhelm supported Adolf Hitler's rise to power, but when Wilhelm realised that Hitler had no intention of restoring the monarchy, their relationship cooled.
-Wilhelm became head of the House of Hohenzollern on 4 June 1941 following the death of his father and held the position until his own death on 20 July 1951.
-Early life
+Princess Victoria Louise of Prussia (German: Viktoria Luise Adelheid Mathilde Charlotte; 13 September 1892 – 11 December 1980) was the only daughter and youngest child of Wilhelm II, and Augusta Victoria of Schleswig-Holstein.
+Through her father, Victoria Louise was a great-granddaughter of Queen Victoria of the United Kingdom.
+Victoria Louise's 1913 wedding to Prince Ernest Augustus of Hanover was the largest gathering of reigning monarchs in Germany since German unification in 1871, and one of the last great social events of European royalty before the First World War began fourteen months later.
+Upon marriage, she became the Duchess of Brunswick.
+Early life and education
 
-Wilhelm was born on 6 May 1882 as the eldest son of the then Prince Wilhelm of Prussia, and his first wife, Princess Augusta Victoria of Schleswig-Holstein.
-When he was born, his great-grandfather Wilhelm I was the German Emperor and his grandfather Crown Prince Frederick was the heir apparent, making Wilhelm third in line to the throne.
-His birth sparked an argument between his parents and his grandmother Crown Princess Victoria.
-Before Wilhelm was born, his grandmother had expected to be asked to help find a nurse, but since her son did everything he could to snub her, the future Wilhelm II asked his aunt Princess Helena to help instead.
-His mother was hurt and his grandmother, Queen Victoria, who was the younger Wilhelm's great-grandmother, was furious.
-Prince Wilhelm would have five younger brothers – Prince Eitel Friedrich, Prince Adalbert, Prince August Wilhelm, Prince Oskar and Prince Joachim – and one younger sister: Princess Viktoria Luise.
-In 1888, the Year of the Three Emperors when his great-grandfather and grandfather both died, his father became German Emperor, and six-year-old Wilhelm became the heir apparent to the German and Prussian thrones with the title of crown prince.
-He spent his school days with his brothers at the Prinzenhaus in Plön in his mother's ancestral Schleswig-Holstein.
-Wilhelm was a supporter of association football, then a relatively new sport in the country, donating a cup to the German Football Association in 1908 and thereby initiating the Kronprinzenpokal (now Länderpokal), the oldest cup competition in German football.
-The German club BFC Preussen was also originally named BFC Friedrich Wilhelm in his honour.
-In 1914, the Kaiser ordered the construction of Schloss Cecilienhof in Potsdam for Prince Wilhelm and his family which angered him.
-Completed in 1917, it became the main residence for the Crown Prince for a time.
-World War I
-
-Wilhelm had been active in pushing German expansion, and sought a leading role on the outbreak of war.
-Despite being only thirty-two and having never commanded a unit larger than a regiment, the German crown prince was named commander of the 5th Army in August 1914, shortly after the outbreak of World War I.
-However, under the well-established Prussian/German General Staff model then in use, inexperienced nobles who were afforded commands of large army formations were always provided with (and expected to defer to the advice of) experienced chiefs of staff to assist them in their duties.
-As emperor, Wilhelm's father instructed the crown prince to defer to the advice of his experienced chief of staff Konstantin Schmidt von Knobelsdorf.
-In October 1914 Wilhelm gave his first interview to a foreign correspondent and the first statement to the press made by a German noble since the outbreak of war.
-He denied promoting military solutions to diplomatic problems, and said this in English:
+Victoria Louise was born on 13 September 1892 at the Marmorpalais in Potsdam, the seventh child and only daughter of German Emperor Wilhelm II and Empress Augusta Victoria.
+The princess was baptised in the Marble Gallery of the New Palace in Potsdam on 22 October, the birthday of the empress.
+She was named Victoria after her paternal great-grandmother, Queen Victoria, and Louise after her paternal great-great-grandmother, Louise of Mecklenburg-Strelitz.
+Known officially as Victoria Louise, she was nicknamed "Sissy" by her family.
+Historian Justin C. Vovk writes that Victoria Louise was intelligent like her paternal grandmother Empress Frederick, stately and dignified like her mother, but imperious and willful like her father.
+According to her eldest brother Crown Prince Wilhelm, Victoria Louise was "the only one of us who succeeded in her childhood in gaining a snug place" in their father's heart.
+In 1902, her English governess, Anne Topham, observed in their first meeting that the nine-year-old princess was friendly, energetic, and always quarreling with her next eldest brother, Prince Joachim.
+"
 
 
-Undoubtedly this is the most stupid, senseless and unnecessary war of modern times.
-It is a war not wanted by Germany, I can assure you, but it was forced on us, and the fact that we were so effectually prepared to defend ourselves is now being used as an argument to convince the world that we desired conflict.
+The family resided at Homburg Castle, and Victoria Louise and Joachim would often visit their cousins – the children of the Prussian princesses Margaret and Sophia – at nearby Kronberg Castle.
+In 1905, the princess studied music with concert pianist Sandra Droucker.
+For one week in May 1911, Victoria Louise traveled to England aboard the royal yacht Hohenzollern with her parents, where they visited their cousin George V, for the unveiling of a statue of Queen Victoria in front of Buckingham Palace.
+The princess's confirmation took place at Friedenskirche in Potsdam on 18 October 1909.
+Marriage
 
-— Crown Prince Wilhelm, Wiegand
-
-From August 1915 onwards, Wilhelm was given the additional role as commander of the Army Group German Crown Prince.
-However, even these sorts of duties were essentially ceremonial with the actual planning of operations involving units under the Crown Prince's formal command being carried out by staff officers.
-Wilhelm relinquished command of the 5th Army in November of that year, but remained commander of the Army Group German Crown Prince for the rest of the war.
-1918–34
-
-After the outbreak of the German Revolution in 1918, both Emperor Wilhelm II and the crown prince signed the document of abdication.
-On 13 November, the former crown prince fled Germany, crossed into the Netherlands at Oudvroenhoven and was later interned on the island of Wieringen (now part of the mainland), near Den Helder.
-In the autumn of 1921, Gustav Stresemann visited Wilhelm, and the former crown prince voiced an interest in returning to Germany, even as a private citizen.
-After Stresemann became chancellor in August 1923, Wilhelm was allowed to return after giving assurances that he would not engage in politics.
-A settlement between the state and the family made Cecilienhof property of the state but granted a right of residence to Wilhelm and his wife Cecilie.
-9–12 
-
-
-Wilhelm broke the promise he had made to Stresemann to stay out of politics.
-Adolf Hitler visited Wilhelm at Cecilienhof three times, in 1926, in 1933 (on the "Day of Potsdam") and in 1935.
-Wilhelm joined Der Stahlhelm, which merged in 1931 into the Harzburg Front, a right-wing organisation of those opposed to the democratic republic.
-: 13 
-
-
-The former crown prince was reportedly interested in the idea of running for President as the right-wing candidate against Paul von Hindenburg in 1932, until his father (who privately supported Hindenburg) forbade him from acting on the idea.
-After this, Wilhelm supported Hitler's rise to power.
-Schleicher, the former Chancellor, in the Night of the Long Knives, Wilhelm withdrew from all political activities.
-When Wilhelm realised that Hitler had no intention of restoring the monarchy, their relationship cooled.
-Upon his father's death in 1941, Wilhelm succeeded him as head of the House of Hohenzollern, the former German imperial dynasty.
-He was approached by those in the military and the diplomatic service who wanted to replace Hitler, but Wilhelm turned them down.
-After the ill-fated assassination attempt on 20 July 1944, Hitler nevertheless had Wilhelm placed under supervision by the Gestapo and had his home at Cecilienhof watched.:
-11–15 
+In 1912, Ernest Augustus, the wealthy heir-apparent to the title of Duke of Cumberland and Teviotdale, came to the Berlin court to thank Emperor Wilhelm for having Crown Prince Wilhelm and Prince Eitel Friedrich attend the funeral of his brother, Prince George William.
+At the time, the House of Hanover lived in exile at Gmunden, Austria.
+While in Berlin, Ernest Augustus met Victoria Louise and the two became smitten with each other.
+However, any discussions of marriage were prolonged for months due to political concerns; Ernest Augustus was also the heir to the Kingdom of Hanover, which the Kingdom of Prussia annexed following the 1866 Austro-Prussian War.
+The Prussian crown prince was displeased with the match and wished that Ernest Augustus would abdicate his rights to Hanover; in a compromise, it was decided that, in exchange, he would succeed to the smaller duchy of Brunswick, of which his father was the lawful heir.
+The family had been barred from the succession to Brunswick due to their claims towards the Hanoverian kingdom.
+Ernest and Victoria became engaged in Karlsruhe on 11 February 1913.
+It was hailed in the press as the end of the rift between the House of Hanover and House of Hohenzollern that had existed since the 1866 annexation.
+Despite press fixation on the union as a love match, whether the match was one of love or politics remains unclear; historian Eva Giloi believes that the marriage was more likely the result of Prussia's desire to end the rift, though Victoria Louise described it as a "love match” in one of her letters.
+In a diplomatic gesture, Emperor Wilhelm invited almost all of his extended family.
+He also pardoned and released two imprisoned British spies, Captain Bertrand Stewart and Captain Bernard Frederick Trench, as a present to the United Kingdom.
+The wedding became the largest gathering of reigning monarchs in Germany since German unification in 1871, and one of the last great social events of European royalty before World War I began fourteen months later.
+Attendees included Wilhelm's cousins George V and Tsar Nicholas II, who were also cousins of Ernest Augustus through their mothers.
+Empress Augusta Victoria took the separation from her only daughter badly and wept.
+In a 2003 documentary, Constantine II of Greece, a grandson of the couple, recounted that their wedding was "the last time all the heads of state of Europe met" before the start of World War I.
 
 
-In January 1945, Wilhelm left Potsdam for Oberstdorf for a treatment of his gall and liver problems.
-At the end of World War II in Europe, Wilhelm's home, Cecilienhof, was seized by the Soviets.:
-16 
+Husband and children
+
+The new duke and duchess of Brunswick moved into Brunswick Palace in the capital of Brunswick and began their family with the birth of their eldest son, Prince Ernest Augustus (1914–1987), less than a year after their wedding.
+They had four further children: Prince George William (1915–2006), Princess Frederica (1917–1981), Prince Christian Oscar (1919–1981), and Prince Welf Henry (1923–1997).
+Through Frederica, Victoria Louise was a great-grandmother of Felipe VI of Spain.
+On 8 November 1918, her husband was forced to abdicate his throne along with the other German kings, grand dukes, dukes, and princes, and the duchy of Brunswick was subsequently abolished.
+The next year, he was deprived of his British peerages under the Titles Deprivation Act 1917 as a result of his service in the German army during the war.
+Thus, when his father died in 1923, Ernest Augustus did not succeed to his father's British title of Duke of Cumberland.
+Interwar years
+
+For the next thirty years, Ernest Augustus remained the head of the House of Hanover, living in retirement on his various estates with his family, mainly Blankenburg Castle in Germany and Cumberland Castle in Gmunden, Austria.
+He also owned Marienburg Castle near Hanover; however, the couple rarely lived there until 1945.
+Several of Victoria Louise's brothers were early members of the Nazi party, including former Crown Prince Wilhelm and Prince August Wilhelm.
+While Ernest Augustus never officially joined the party, he donated funds and was close to several leaders.
+As a former British prince, Ernest Augustus as well as Victoria Louise desired a rapprochement between the United Kingdom and Germany.
+Ostensibly desiring to pursue an alliance with the UK, in the mid-1930s, Adolf Hitler took advantage of their sentiment by asking the couple to arrange a match between their daughter Princess Frederica and the Prince of Wales.
+The Duke and Duchess of Brunswick refused, believing that the age difference was too great; Princess Frederica would have been around 18 years of age while Edward was over 22 years older.
+Following his brief reign as King Edward VIII in 1936 Edward, now Duke of Windsor, and his wife Wallis visited "the Cumberlands" at Cumberland Castle in Gmunden, Austria.
+Instead, in 1938 Princess Frederica married her second cousin, the future King Paul of Greece.
+World War II
+
+In May 1941, her father fell ill from an intestinal blockage, and Victoria Louise traveled to Doorn to visit him, as did several of her brothers.
+Wilhelm recovered enough for them to feel able to depart, but soon relapsed.
+Victoria Louise returned in time to be at her father's bedside, along with nephew Louis Ferdinand and stepmother Hermine, when he died on 4 June 1941 of a pulmonary embolism.
+By the time of the war's ending in Europe in April 1945, Victoria Louise was living with her husband at Blankenburg Castle.
+Later life
+
+After the war, Victoria Louise spent much of her time attending public events in Lower Saxony, supporting palace restoration projects, high-society parties, hunting, and the showing of horses.
+Instead, she moved back to Brunswick, occupying a house which had been offered to her by a wealthy industrialist and a circle of fans called "Braunschweiger Freundeskreis" (circle of Brunswick friends).
+In 1965 she published her autobiography Life as Daughter of the Emperor, and thereafter several other books, including biographies of her mother and of her sister-in-law Cecilie, the last crown princess of Germany.
+She is buried next to her husband in front of the Royal Mausoleum in the Berggarten at Herrenhausen Gardens in Hanover, which is the burial chapel of Ernest Augustus, King of Hanover, and his wife and, since his reburial after World War II, also of George I of Great Britain.
+A number of vessels were named after the princess:
 
 
-At the end of the war, Wilhelm was captured by French Moroccan troops in Baad, Austria, and was interned as a (World War I) war criminal.
-Wilhelm and his wife are buried at Hohenzollern Castle.
-Family and children
+Honours
 
-Wilhelm married his third cousin, Duchess Cecilie of Mecklenburg-Schwerin (20 September 1886 – 6 May 1954) in Berlin on 6 June 1905.
-After their marriage, the couple lived at the Crown Prince's Palace in Berlin during the winter and at the Marmorpalais in Potsdam, later at Cecilienhof in Potsdam.
-Cecilie was the daughter of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin (1851–1897) and his wife, Grand Duchess Anastasia Mikhailovna of Russia (1860–1922).
-Their eldest son, Prince Wilhelm of Prussia, was killed fighting for the German Army in France in 1940.
-Their children were:
+Regimental commissions
 
+Issue
 
-In literature and popular culture
-
-Wilhelm's reputation as a military commander was satirised by Neil Munro in his Erchie MacPherson story, "Bad News", first published in the Glasgow Evening News on 8 January 1917.
+married second 1981, Countess Monika zu Solms-Laubach; no issue.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -174,39 +172,9 @@ Wilhelm's reputation as a military commander was satirised by Neil Munro in his 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -221,6 +189,23 @@ Wilhelm's reputation as a military commander was satirised by Neil Munro in his 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -238,6 +223,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -305,29 +305,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -336,6 +328,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -348,6 +348,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -356,17 +358,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -394,6 +398,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -409,164 +497,227 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (98a3d0ff-28d3-401e-b63d-8188ced4ce02)
- Call ID: 98a3d0ff-28d3-401e-b63d-8188ced4ce02
+  AssignClass (a93d3df9-5525-4007-9569-b85bd4d069ae)
+ Call ID: a93d3df9-5525-4007-9569-b85bd4d069ae
   Args:
-    type: :Man
-    source: Wilhelm_German_Crown_Prince
-  AssignClass (fa85f9df-dc4f-489a-96a5-889276f9f28d)
- Call ID: fa85f9df-dc4f-489a-96a5-889276f9f28d
+    source: Victoria_Louise
+    type: :Woman
+  AssignClass (8939d27a-9456-49da-a365-f7af804389eb)
+ Call ID: 8939d27a-9456-49da-a365-f7af804389eb
   Args:
     type: :Man
     source: Wilhelm_II
-  AssignClass (d8c18dbb-e895-479a-9204-24e9e3999379)
- Call ID: d8c18dbb-e895-479a-9204-24e9e3999379
+  AssignClass (39c75d96-c783-4b4c-9aab-4e68db25a84c)
+ Call ID: 39c75d96-c783-4b4c-9aab-4e68db25a84c
+  Args:
+    source: Augusta_Victoria
+    type: :Woman
+  AssignClass (ba5843bd-294c-43f7-a51e-a9c9156afa72)
+ Call ID: ba5843bd-294c-43f7-a51e-a9c9156afa72
+  Args:
+    type: :Man
+    source: Ernest_Augustus_of_Hanover
+  AssignClass (b75c8160-92f6-4771-b788-a4b6db857c4f)
+ Call ID: b75c8160-92f6-4771-b788-a4b6db857c4f
   Args:
     type: :Woman
-    source: Augusta_Victoria_of_Schleswig-Holstein
-  AddTriple (a6bf3c61-d02a-4ea9-a244-60ae186dc92d)
- Call ID: a6bf3c61-d02a-4ea9-a244-60ae186dc92d
+    source: Queen_Victoria
+  AssignClass (9912b3f6-5212-497d-8175-bc4336267e67)
+ Call ID: 9912b3f6-5212-497d-8175-bc4336267e67
   Args:
-    source: Wilhelm_German_Crown_Prince
-    relation: :hasFather
-    target: Wilhelm_II
-  AddTriple (ee290ac2-7046-41ce-9869-942003ed9ffd)
- Call ID: ee290ac2-7046-41ce-9869-942003ed9ffd
+    type: :Woman
+    source: Louise_of_Mecklenburg-Strelitz
+  AssignClass (4819219e-978e-4fe4-83b5-d88393ff6ee5)
+ Call ID: 4819219e-978e-4fe4-83b5-d88393ff6ee5
   Args:
-    source: Wilhelm_German_Crown_Prince
-    relation: :hasMother
-    target: Augusta_Victoria_of_Schleswig-Holstein
-  AddLiteral (b9fb776e-2134-4cf5-be3c-465b54feef48)
- Call ID: b9fb776e-2134-4cf5-be3c-465b54feef48
+    source: Joachim
+    type: :Man
+  AssignClass (5d5e1277-e9dd-4f00-8b17-f3ef661e6bf3)
+ Call ID: 5d5e1277-e9dd-4f00-8b17-f3ef661e6bf3
   Args:
-    source: Wilhelm_German_Crown_Prince
-    literal_value: 1882
+    type: :Man
+    source: George_V
+  AssignClass (d53313af-bd2c-439b-9a3c-22fd45e2444e)
+ Call ID: d53313af-bd2c-439b-9a3c-22fd45e2444e
+  Args:
+    source: Nicholas_II
+    type: :Man
+  AssignClass (49cfea5c-b6c6-44e1-a138-25ef58e4ef52)
+ Call ID: 49cfea5c-b6c6-44e1-a138-25ef58e4ef52
+  Args:
+    source: Ernest_Augustus_Junior
+    type: :Man
+  AssignClass (310aec5b-abb6-4b2e-bc5a-3a6517262291)
+ Call ID: 310aec5b-abb6-4b2e-bc5a-3a6517262291
+  Args:
+    type: :Man
+    source: George_William
+  AssignClass (a3efea6a-dfd3-4fa0-9546-425212effb13)
+ Call ID: a3efea6a-dfd3-4fa0-9546-425212effb13
+  Args:
+    source: Frederica
+    type: :Woman
+  AssignClass (2dcd2d95-e925-463d-bd1c-30f5b4d1ce4b)
+ Call ID: 2dcd2d95-e925-463d-bd1c-30f5b4d1ce4b
+  Args:
+    source: Christian_Oscar
+    type: :Man
+  AssignClass (71fe753c-2ee8-4e1d-b42f-36e499807611)
+ Call ID: 71fe753c-2ee8-4e1d-b42f-36e499807611
+  Args:
+    source: Welf_Henry
+    type: :Man
+  AssignClass (1058f470-5753-492f-8597-461ab9ac6f92)
+ Call ID: 1058f470-5753-492f-8597-461ab9ac6f92
+  Args:
+    type: :Man
+    source: Felipe_VI
+  AssignClass (1e8d6476-9e98-4f8f-9982-c45c0c758d60)
+ Call ID: 1e8d6476-9e98-4f8f-9982-c45c0c758d60
+  Args:
+    source: Paul_of_Greece
+    type: :Man
+  AddLiteral (4975fb32-9ecb-455e-bf9b-21da648b92b9)
+ Call ID: 4975fb32-9ecb-455e-bf9b-21da648b92b9
+  Args:
+    source: Victoria_Louise
+    literal_value: 1892
     relation: :hasBirthYear
     literal_type: xsd:integer
-  AddLiteral (a2d59bea-4e45-450f-ba24-f712257a7e45)
- Call ID: a2d59bea-4e45-450f-ba24-f712257a7e45
+  AddLiteral (dc2dd91c-051b-45fb-bd5e-e8d3cd8c8d89)
+ Call ID: dc2dd91c-051b-45fb-bd5e-e8d3cd8c8d89
   Args:
-    literal_type: xsd:integer
+    literal_value: 1980
+    source: Victoria_Louise
     relation: :hasDeathYear
-    source: Wilhelm_German_Crown_Prince
-    literal_value: 1951
-  AssignClass (2753a5d7-54d7-4db8-b775-186f22a50aa9)
- Call ID: 2753a5d7-54d7-4db8-b775-186f22a50aa9
-  Args:
-    type: :Woman
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddTriple (350148a2-c24e-4a53-b0ed-82e82297b5b6)
- Call ID: 350148a2-c24e-4a53-b0ed-82e82297b5b6
-  Args:
-    source: Wilhelm_German_Crown_Prince
-    relation: :hasRelation
-    target: Cecilie_of_Mecklenburg-Schwerin
-  AddLiteral (3167d819-b251-49d7-a8f6-c9230b05926c)
- Call ID: 3167d819-b251-49d7-a8f6-c9230b05926c
-  Args:
-    source: Wilhelm_German_Crown_Prince
-    literal_value: 1905
-    relation: :hasMarriageYear
     literal_type: xsd:integer
-  AssignClass (4bf746c9-7b69-4943-b308-f1c48b51f333)
- Call ID: 4bf746c9-7b69-4943-b308-f1c48b51f333
+  AddTriple (bd56a341-f1ef-4d42-ac26-fddd014d3e77)
+ Call ID: bd56a341-f1ef-4d42-ac26-fddd014d3e77
   Args:
-    type: :Man
-    source: Prince_Eitel_Friedrich
-  AssignClass (db1cf503-2976-426b-8207-053dbfc2b60b)
- Call ID: db1cf503-2976-426b-8207-053dbfc2b60b
-  Args:
-    type: :Man
-    source: Prince_Adalbert
-  AssignClass (a416bdcd-7e6a-466c-adae-fe00d19d45d1)
- Call ID: a416bdcd-7e6a-466c-adae-fe00d19d45d1
-  Args:
-    type: :Man
-    source: Prince_August_Wilhelm
-  AssignClass (16ae4673-de55-4b1e-95de-03b634a34138)
- Call ID: 16ae4673-de55-4b1e-95de-03b634a34138
-  Args:
-    type: :Man
-    source: Prince_Oskar
-  AssignClass (5562630f-d233-44f7-b8f5-6526c87d7cd1)
- Call ID: 5562630f-d233-44f7-b8f5-6526c87d7cd1
-  Args:
-    type: :Man
-    source: Prince_Joachim
-  AssignClass (1759d59c-d7f9-4e6b-a50a-bc7eebc3672f)
- Call ID: 1759d59c-d7f9-4e6b-a50a-bc7eebc3672f
-  Args:
-    type: :Woman
-    source: Princess_Viktoria_Luise
-  AddTriple (4ce78e55-3fcc-4d00-90df-9b1899516388)
- Call ID: 4ce78e55-3fcc-4d00-90df-9b1899516388
-  Args:
-    target: Prince_Eitel_Friedrich
-    relation: :hasBrother
-    source: Wilhelm_German_Crown_Prince
-  AddTriple (49d95f7d-a483-407b-be76-793beb81b4de)
- Call ID: 49d95f7d-a483-407b-be76-793beb81b4de
-  Args:
-    relation: :hasBrother
-    source: Wilhelm_German_Crown_Prince
-    target: Prince_Adalbert
-  AddTriple (63a29dec-fbfa-4f77-974d-cda38a586733)
- Call ID: 63a29dec-fbfa-4f77-974d-cda38a586733
-  Args:
-    target: Prince_August_Wilhelm
-    relation: :hasBrother
-    source: Wilhelm_German_Crown_Prince
-  AddTriple (6caaf36e-830d-40a1-b0f5-43780d739914)
- Call ID: 6caaf36e-830d-40a1-b0f5-43780d739914
-  Args:
-    source: Wilhelm_German_Crown_Prince
-    relation: :hasBrother
-    target: Prince_Oskar
-  AddTriple (8f6681fb-a932-4c22-bf2d-27c13498843e)
- Call ID: 8f6681fb-a932-4c22-bf2d-27c13498843e
-  Args:
-    target: Prince_Joachim
-    relation: :hasBrother
-    source: Wilhelm_German_Crown_Prince
-  AddTriple (d9b7e09a-fe1d-435d-8019-98548c56df6f)
- Call ID: d9b7e09a-fe1d-435d-8019-98548c56df6f
-  Args:
-    relation: :hasSister
-    source: Wilhelm_German_Crown_Prince
-    target: Princess_Viktoria_Luise
-  AssignClass (4e929d59-1fc3-4c60-983e-614fba4fe2f5)
- Call ID: 4e929d59-1fc3-4c60-983e-614fba4fe2f5
-  Args:
-    type: :Man
-    source: Prince_Wilhelm_of_Prussia
-  AddTriple (92b2aa11-f21f-4cf4-8e98-49f6cf2c7fc0)
- Call ID: 92b2aa11-f21f-4cf4-8e98-49f6cf2c7fc0
-  Args:
-    target: Prince_Wilhelm_of_Prussia
-    source: Wilhelm_German_Crown_Prince
-    relation: :hasSon
-  AssignClass (c8c6369c-13d1-4359-bea0-49505d4e9f34)
- Call ID: c8c6369c-13d1-4359-bea0-49505d4e9f34
-  Args:
-    type: :Man
-    source: Frederick_Francis_III
-  AssignClass (3507c6e5-c848-4ea4-984d-e99d8636edf1)
- Call ID: 3507c6e5-c848-4ea4-984d-e99d8636edf1
-  Args:
-    type: :Woman
-    source: Anastasia_Mikhailovna
-  AddTriple (7e1cec06-49d0-45c3-b11e-0c4ce8c284b6)
- Call ID: 7e1cec06-49d0-45c3-b11e-0c4ce8c284b6
-  Args:
-    target: Frederick_Francis_III
-    source: Cecilie_of_Mecklenburg-Schwerin
+    source: Victoria_Louise
     relation: :hasFather
-  AddTriple (d77bfce9-68af-46c0-9fd2-de0b461143e1)
- Call ID: d77bfce9-68af-46c0-9fd2-de0b461143e1
+    target: Wilhelm_II
+  AddTriple (c161a01b-0eec-4086-8ab0-176b0891540c)
+ Call ID: c161a01b-0eec-4086-8ab0-176b0891540c
   Args:
     relation: :hasMother
-    source: Cecilie_of_Mecklenburg-Schwerin
-    target: Anastasia_Mikhailovna
-  Finish (1b8ca0e9-d021-4747-8194-7a641c6de25b)
- Call ID: 1b8ca0e9-d021-4747-8194-7a641c6de25b
+    target: Augusta_Victoria
+    source: Victoria_Louise
+  AddTriple (29f62dfe-464a-4568-9072-dd0dbcb5174b)
+ Call ID: 29f62dfe-464a-4568-9072-dd0dbcb5174b
+  Args:
+    source: Victoria_Louise
+    relation: :hasFather
+    target: Wilhelm_II
+  AddTriple (59d23b3d-fb29-4359-9568-dd917ace5c93)
+ Call ID: 59d23b3d-fb29-4359-9568-dd917ace5c93
+  Args:
+    source: Victoria_Louise
+    relation: :hasMother
+    target: Augusta_Victoria
+  AddTriple (e63ee016-de11-4a65-befe-48073c94459f)
+ Call ID: e63ee016-de11-4a65-befe-48073c94459f
+  Args:
+    source: Wilhelm_II
+    relation: :isFatherOf
+    target: Victoria_Louise
+  AddTriple (49a6dd3c-c679-4bc3-994b-ad468bb24f19)
+ Call ID: 49a6dd3c-c679-4bc3-994b-ad468bb24f19
+  Args:
+    relation: :isMotherOf
+    target: Victoria_Louise
+    source: Augusta_Victoria
+  AddTriple (2a4deb43-a6a7-4351-be15-2d41609a68d8)
+ Call ID: 2a4deb43-a6a7-4351-be15-2d41609a68d8
+  Args:
+    source: Ernest_Augustus_Junior
+    target: Ernest_Augustus_of_Hanover
+    relation: :hasFather
+  AddTriple (b8988614-23b6-4439-9318-e89b3296dbd2)
+ Call ID: b8988614-23b6-4439-9318-e89b3296dbd2
+  Args:
+    target: Victoria_Louise
+    relation: :hasMother
+    source: Ernest_Augustus_Junior
+  AddTriple (cf7c3243-19fd-4b80-9b54-c7ec8a655b25)
+ Call ID: cf7c3243-19fd-4b80-9b54-c7ec8a655b25
+  Args:
+    source: George_William
+    target: Ernest_Augustus_of_Hanover
+    relation: :hasFather
+  AddTriple (9698c001-ee52-461f-ac14-2a7fd3b2dc42)
+ Call ID: 9698c001-ee52-461f-ac14-2a7fd3b2dc42
+  Args:
+    target: Victoria_Louise
+    relation: :hasMother
+    source: George_William
+  AddTriple (dc201506-6ae0-4316-a84f-d64d8951208e)
+ Call ID: dc201506-6ae0-4316-a84f-d64d8951208e
+  Args:
+    relation: :hasFather
+    target: Ernest_Augustus_of_Hanover
+    source: Frederica
+  AddTriple (025773d7-3170-4c0a-a6da-1f0d66a669ec)
+ Call ID: 025773d7-3170-4c0a-a6da-1f0d66a669ec
+  Args:
+    source: Frederica
+    relation: :hasMother
+    target: Victoria_Louise
+  AddTriple (43285e37-0b56-4dea-a246-cb09a2cb810f)
+ Call ID: 43285e37-0b56-4dea-a246-cb09a2cb810f
+  Args:
+    source: Christian_Oscar
+    relation: :hasFather
+    target: Ernest_Augustus_of_Hanover
+  AddTriple (5119abee-d309-4528-be2f-b5092ba0d736)
+ Call ID: 5119abee-d309-4528-be2f-b5092ba0d736
+  Args:
+    source: Christian_Oscar
+    target: Victoria_Louise
+    relation: :hasMother
+  AddTriple (8e4f7b0c-b62e-446c-98be-0e9a5024cb19)
+ Call ID: 8e4f7b0c-b62e-446c-98be-0e9a5024cb19
+  Args:
+    source: Welf_Henry
+    target: Ernest_Augustus_of_Hanover
+    relation: :hasFather
+  AddTriple (4445cb73-0e4b-44bf-9e73-82f2450d1183)
+ Call ID: 4445cb73-0e4b-44bf-9e73-82f2450d1183
+  Args:
+    source: Welf_Henry
+    target: Victoria_Louise
+    relation: :hasMother
+  AddTriple (8cddc5f7-799f-48cc-a11d-f0218dd84cb8)
+ Call ID: 8cddc5f7-799f-48cc-a11d-f0218dd84cb8
+  Args:
+    relation: :hasBrother
+    target: Joachim
+    source: Victoria_Louise
+  AddTriple (7ae44870-b45d-4d2a-9512-63a67e00e380)
+ Call ID: 7ae44870-b45d-4d2a-9512-63a67e00e380
+  Args:
+    source: Joachim
+    target: Victoria_Louise
+    relation: :isBrotherOf
+  AddTriple (44e42adf-b3f4-4705-8894-e402fdf22d60)
+ Call ID: 44e42adf-b3f4-4705-8894-e402fdf22d60
+  Args:
+    target: Felipe_VI
+    relation: :isFatherOf
+    source: Paul_of_Greece
+  AddTriple (26be237f-dbe5-4b57-aed8-6e7bfaeb1cf3)
+ Call ID: 26be237f-dbe5-4b57-aed8-6e7bfaeb1cf3
+  Args:
+    target: Felipe_VI
+    relation: :isMotherOf
+    source: Frederica
+  AddLiteral (2ea07373-83d1-4cdb-830d-14779c49c2b1)
+ Call ID: 2ea07373-83d1-4cdb-830d-14779c49c2b1
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: Victoria_Louise
+    literal_value: 1913
+  Finish (8eaad1a1-e124-4c26-8f9e-49a52917d58a)
+ Call ID: 8eaad1a1-e124-4c26-8f9e-49a52917d58a
   Args:

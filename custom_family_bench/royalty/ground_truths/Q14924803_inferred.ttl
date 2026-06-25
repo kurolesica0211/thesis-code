@@ -1,0 +1,48 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Beatrix_von_Storch a :Person,
+        :Woman ;
+    rdfs:label "Beatrix von Storch"^^xsd:string ;
+    data:posIndicesFull "0:42"^^xsd:string,
+        "1269:1287"^^xsd:string,
+        "1822:1840"^^xsd:string,
+        "1932:1950"^^xsd:string,
+        "2047:2065"^^xsd:string ;
+    data:posIndicesPart "1079:1085"^^xsd:string,
+        "1374:1380"^^xsd:string,
+        "1430:1436"^^xsd:string,
+        "2332:2338"^^xsd:string,
+        "2464:2470"^^xsd:string,
+        "2725:2731"^^xsd:string,
+        "399:406"^^xsd:string,
+        "527:533"^^xsd:string,
+        "644:650"^^xsd:string,
+        "736:742"^^xsd:string,
+        "811:817"^^xsd:string ;
+    data:wdtLink wdt:Q14924803 ;
+    :alsoKnownAs "Beatrice Amelie Ehrengard Eilika von Holstein-Gottorp, Herzogin von Oldenburg"^^xsd:string,
+        "Beatrix Amelie Ehrengard Eilika von Storch"^^xsd:string ;
+    :hasRelation data:Beatrix_von_Storch ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_von_Storch ;
+    :isBloodrelationOf data:Beatrix_von_Storch ;
+    :isSiblingOf data:Beatrix_von_Storch ;
+    :isSisterOf data:Beatrix_von_Storch .
+

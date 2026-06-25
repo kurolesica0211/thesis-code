@@ -16,35 +16,28 @@
       "qid": "Q16018831",
       "label": "Mary Malcolm",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Ian_Malcolm",
       "qid": "Q3147302",
       "label": "Ian Malcolm",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Jeanne_Marie_Langtry",
       "qid": "Q84795732",
       "label": "Jeanne Marie Langtry",
       "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Alice_of_Battenberg",
-      "qid": "Q116062",
-      "label": "Princess Alice of Battenberg",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Lillie_Langtry",
       "qid": "Q297743",
       "label": "Lillie Langtry",
       "distance": 2,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
@@ -59,11 +52,29 @@
       "ground_truth_qid": "Q84795732",
       "ground_truth_label": "Jeanne Marie Langtry",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Jeanne Langtry",
       "best_candidate_label": "Jeanne Marie Langtry",
       "best_candidate_qid": "Q84795732",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Lillie_Langtry",
+      "extracted_local_name": "Lillie_Langtry",
+      "embedding_text": "Lillie Langtry",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Lillie_Langtry",
+      "ground_truth_qid": "Q297743",
+      "ground_truth_label": "Lillie Langtry",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Lillie Langtry",
+      "best_candidate_label": "Lillie Langtry",
+      "best_candidate_qid": "Q297743",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -77,11 +88,11 @@
       "ground_truth_qid": "Q16018831",
       "ground_truth_label": "Mary Malcolm",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Mary Malcolm",
       "best_candidate_label": "Mary Malcolm",
       "best_candidate_qid": "Q16018831",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -95,11 +106,11 @@
       "ground_truth_qid": "Q3147302",
       "ground_truth_label": "Ian Malcolm",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Ian Malcolm",
       "best_candidate_label": "Ian Malcolm",
       "best_candidate_qid": "Q3147302",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.8461538461538461
     },
     {
@@ -117,13 +128,13 @@
       "best_candidate_match_text": "Ian Malcolm",
       "best_candidate_label": "Ian Malcolm",
       "best_candidate_qid": "Q3147302",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.3448275862068966
     }
   ],
   "summary": {
-    "entities_total": 4,
-    "entities_matched": 3,
+    "entities_total": 5,
+    "entities_matched": 4,
     "entities_unmatched": 1
   }
 }

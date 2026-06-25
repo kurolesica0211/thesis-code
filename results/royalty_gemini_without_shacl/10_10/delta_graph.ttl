@@ -2,38 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Cecilie_of_Mecklenburg-Schwerin a :Person,
+data:CecilieOfPrussia a :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasChild data:KiraAlexandrineBrigidCecilieIngridHarris ;
+    :hasDeathYear 1975 ;
+    :hasFather data:WilhelmGermanCrownPrince ;
+    :hasMarriageYear 1949 ;
+    :hasMother data:DuchessCecilieOfMecklenburgSchwerin ;
+    :hasRelation data:ClydeKennethHarris .
+
+data:ClydeKennethHarris a :Man,
+        :Person ;
+    :hasChild data:KiraAlexandrineBrigidCecilieIngridHarris .
+
+data:DuchessCecilieOfMecklenburgSchwerin a :Person,
         :Woman .
 
-data:Cecilie_of_Prussia a :Person,
-        :Woman ;
-    :alsoKnownAs "Cecilie Viktoria Anastasia Zita Thyra Adelheid"^^xsd:string ;
-    :hasBirthYear 1917 ;
-    :hasDaughter data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
-    :hasDeathYear 1975 ;
-    :hasFather data:Wilhelm_German_Crown_Prince ;
-    :hasMarriageYear 1949 ;
-    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-    :hasRelation data:Clyde_Kenneth_Harris .
-
-data:Philip_Louis_Johnson a :Man,
+data:JohnMitchellJohnson a :Man,
         :Person ;
-    :hasFather data:John_Mitchell_Johnson ;
-    :hasMother data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris .
+    :hasChild data:PhilipLouisJohnson .
 
-data:Wilhelm_German_Crown_Prince a :Man,
+data:WilhelmGermanCrownPrince a :Man,
         :Person .
 
-data:Clyde_Kenneth_Harris a :Man,
-        :Person .
-
-data:John_Mitchell_Johnson a :Man,
-        :Person .
-
-data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris a :Person,
+data:KiraAlexandrineBrigidCecilieIngridHarris a :Person,
         :Woman ;
-    :hasFather data:Clyde_Kenneth_Harris ;
-    :hasMarriageYear data:John_Mitchell_Johnson ;
-    :hasMother data:Cecilie_of_Prussia ;
-    :hasSon data:Philip_Louis_Johnson .
+    :hasChild data:PhilipLouisJohnson ;
+    :hasRelation data:JohnMitchellJohnson .
+
+data:PhilipLouisJohnson a :Man,
+        :Person .
 

@@ -7,134 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Grand Duke Andrei Vladimirovich of Russia" ;
-    data:posIndicesFull "3446:3487" ;
-    data:posIndicesPart "3781:3786",
-        "3804:3810" ;
-    data:wdtLink wdt:Q502763 ;
-    :hasBrother data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
-    :hasSex data:male ;
-    :isBrotherOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
-    :isSiblingOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
-    :isUncleOf data:Grand_Duchess_Kira_Kirillovna_of_Russia .
-
-data:Louis_Ferdinand-_Prince_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Louis Ferdinand, Prince of Prussia" ;
-    data:posIndicesFull "208:230",
-        "208:241",
-        "3009:3031",
-        "3009:3042" ;
-    data:posIndicesPart "2744:2750",
-        "2824:2830",
-        "2879:2885",
-        "2929:2935",
-        "645:650" ;
-    data:wdtLink wdt:Q311442 ;
-    :alsoKnownAs "Louis Ferdinand Victor Eduard Adalbert Michael Hubertus Prinz von Preußen",
-        "Prince Louis Ferdinand",
-        "Prince Louis Ferdinand of Prussia" ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Cecilie_Viktoria_of_Prussia ;
-    :isBrotherOf data:Princess_Cecilie_Viktoria_of_Prussia ;
-    :isSiblingOf data:Princess_Cecilie_Viktoria_of_Prussia .
-
-data:Princess_Cecilie_Viktoria_of_Prussia a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Cecilie Viktoria of Prussia" ;
-    data:posIndicesFull "3288:3315" ;
-    data:wdtLink wdt:Q105976 ;
-    :alsoKnownAs "Princess Cecilie of Prussia" ;
-    :hasBrother data:Louis_Ferdinand-_Prince_of_Prussia ;
-    :hasSex data:female ;
-    :isSiblingOf data:Louis_Ferdinand-_Prince_of_Prussia ;
-    :isSisterOf data:Louis_Ferdinand-_Prince_of_Prussia .
-
-data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Victoria Melita of Saxe-Coburg and Gotha" ;
-    data:posIndicesFull "105:109",
-        "145:194",
-        "154:169",
-        "2032:2036",
-        "3452:3456",
-        "3787:3791",
-        "479:483",
-        "530:579",
-        "539:554",
-        "658:662",
-        "756:760",
-        "965:969" ;
-    data:posIndicesPart "2150:2156",
-        "2204:2212",
-        "2635:2643" ;
-    data:wdtLink wdt:Q164500 ;
-    :alsoKnownAs "Ducky",
-        "Grand Duchess Victoria Feodorovna of Russia",
-        "Princess Victoria Melita of Edinburgh",
-        "Victoria Feodorovna of Russia",
-        "Victoria Melita",
-        "Victoria Melita of Edinburgh",
-        "Victoria Melita of Saxe-Coburg-Gotha",
-        "Victoria Melita, Grand Duchess of Hesse and the Rhine" ;
-    :hasChild data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
-    :hasDaughter data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
-    :hasSex data:female ;
-    :isMotherOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
-    :isParentOf data:Grand_Duchess_Kira_Kirillovna_of_Russia .
-
-data:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Grand Duke Kirill Vladimirovich of Russia" ;
-    data:posIndicesFull "473:514",
-        "99:140" ;
-    data:posIndicesPart "1042:1047",
-        "1890:1896",
-        "2026:2031",
-        "2037:2043",
-        "2232:2238",
-        "2291:2296",
-        "2410:2416",
-        "3162:3167",
-        "3200:3206",
-        "3781:3786",
-        "3804:3810",
-        "652:657",
-        "750:755",
-        "828:834",
-        "959:964",
-        "973:979" ;
-    data:wdtLink wdt:Q160948 ;
-    :alsoKnownAs "Cyril Vladimirovich, Grand Duke of Russia" ;
-    :hasBrother data:Grand_Duke_Andrei_Vladimirovich_of_Russia ;
-    :hasChild data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
-    :hasDaughter data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
-    :hasSex data:male ;
-    :isBrotherOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia ;
-    :isFatherOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
-    :isParentOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
-    :isSiblingOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia .
-
-data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person ;
     rdfs:label "Grand Duchess Kira Kirillovna of Russia" ;
     data:posIndicesFull "0:39",
         "208:241",
@@ -181,13 +54,96 @@ data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Ancestor,
         "Kira Kirillovna, Princess Louis Ferdinand of Prussia",
         "Kira Kirillovna, Princess of Prussia",
         "Princess Louis Ferdinand of Prussia" ;
-    :hasFather data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
-    :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
     :hasParent data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
         data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
-    :hasSex data:female ;
-    :isChildOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
-        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
-    :isDaughterOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
-        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
+    :hasSex data:female .
+
+data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Person ;
+    rdfs:label "Grand Duke Andrei Vladimirovich of Russia" ;
+    data:posIndicesFull "3446:3487" ;
+    data:posIndicesPart "3781:3786",
+        "3804:3810" ;
+    data:wdtLink wdt:Q502763 ;
+    :hasSex data:male .
+
+data:Louis_Ferdinand-_Prince_of_Prussia a :Person ;
+    rdfs:label "Louis Ferdinand, Prince of Prussia" ;
+    data:posIndicesFull "208:230",
+        "208:241",
+        "3009:3031",
+        "3009:3042" ;
+    data:posIndicesPart "2744:2750",
+        "2824:2830",
+        "2879:2885",
+        "2929:2935",
+        "3308:3315",
+        "645:650" ;
+    data:wdtLink wdt:Q311442 ;
+    :alsoKnownAs "Louis Ferdinand Victor Eduard Adalbert Michael Hubertus Prinz von Preußen",
+        "Prince Louis Ferdinand",
+        "Prince Louis Ferdinand of Prussia" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Person ;
+    rdfs:label "Grand Duke Kirill Vladimirovich of Russia" ;
+    data:posIndicesFull "473:514",
+        "99:140" ;
+    data:posIndicesPart "1042:1047",
+        "1890:1896",
+        "2026:2031",
+        "2037:2043",
+        "2232:2238",
+        "2291:2296",
+        "2410:2416",
+        "3162:3167",
+        "3200:3206",
+        "3781:3786",
+        "3804:3810",
+        "652:657",
+        "750:755",
+        "828:834",
+        "959:964",
+        "973:979" ;
+    data:wdtLink wdt:Q160948 ;
+    :alsoKnownAs "Cyril Vladimirovich, Grand Duke of Russia" ;
+    :hasSex data:male .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person ;
+    rdfs:label "Princess Victoria Melita of Saxe-Coburg and Gotha" ;
+    data:posIndicesFull "105:109",
+        "145:194",
+        "154:169",
+        "2032:2036",
+        "3452:3456",
+        "3787:3791",
+        "479:483",
+        "530:579",
+        "539:554",
+        "658:662",
+        "756:760",
+        "965:969" ;
+    data:posIndicesPart "2150:2156",
+        "2204:2212",
+        "2635:2643",
+        "3288:3296" ;
+    data:wdtLink wdt:Q164500 ;
+    :alsoKnownAs "Ducky",
+        "Grand Duchess Victoria Feodorovna of Russia",
+        "Princess Victoria Melita of Edinburgh",
+        "Victoria Feodorovna of Russia",
+        "Victoria Melita",
+        "Victoria Melita of Edinburgh",
+        "Victoria Melita of Saxe-Coburg-Gotha",
+        "Victoria Melita, Grand Duchess of Hesse and the Rhine" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

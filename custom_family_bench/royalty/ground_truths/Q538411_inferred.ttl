@@ -1,0 +1,364 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Amélie_of_Orléans a :Person,
+        :Woman ;
+    rdfs:label "Amélie of Orléans"^^xsd:string ;
+    data:posIndicesFull "9986:9998"^^xsd:string ;
+    data:posIndicesPart "10064:10071"^^xsd:string ;
+    data:wdtLink wdt:Q236965 ;
+    :alsoKnownAs "Amelie of Orleans"^^xsd:string,
+        "Maria Amélia"^^xsd:string,
+        "Marie Amelie d'Orleans"^^xsd:string,
+        "Marie Amelie of Orleans"^^xsd:string,
+        "Marie Amélie d'Orléans"^^xsd:string,
+        "Marie Amélie of Orléans"^^xsd:string ;
+    :hasRelation data:Amélie_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Amélie_of_Orléans ;
+    :isBloodrelationOf data:Amélie_of_Orléans ;
+    :isSiblingOf data:Amélie_of_Orléans ;
+    :isSisterOf data:Amélie_of_Orléans .
+
+data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Man,
+        :Person ;
+    rdfs:label "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo"^^xsd:string ;
+    data:posIndicesFull "10168:10172"^^xsd:string,
+        "11035:11039"^^xsd:string,
+        "2176:2181"^^xsd:string,
+        "2745:2749"^^xsd:string,
+        "5025:5029"^^xsd:string,
+        "5048:5053"^^xsd:string,
+        "5346:5350"^^xsd:string,
+        "7170:7174"^^xsd:string,
+        "7703:7707"^^xsd:string,
+        "9905:9909"^^xsd:string ;
+    data:wdtLink wdt:Q75317760 ;
+    :alsoKnownAs "Jaime"^^xsd:string,
+        "Jaime de Borbón y Landaluce"^^xsd:string,
+        "Jaime di Borbone-Due Sicilie"^^xsd:string ;
+    :hasBrother data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
+    :hasRelation data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
+    :isBrotherOf data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
+    :isSiblingOf data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo .
+
+data:Isabelle_of_Orléans-Braganza a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Isabelle of Orléans-Braganza"^^xsd:string ;
+    data:posIndicesFull "9812:9840"^^xsd:string ;
+    data:posIndicesPart "10064:10071"^^xsd:string,
+        "11088:11096"^^xsd:string ;
+    data:wdtLink wdt:Q261284 ;
+    :alsoKnownAs "Isabelle of Orleans-Braganza"^^xsd:string ;
+    :hasChild data:Prince_Henri_dOrléans_1 ;
+    :hasRelation data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Henri_dOrléans_1,
+        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :hasSex data:female ;
+    :hasSister data:Isabelle_of_Orléans-Braganza ;
+    :hasSon data:Prince_Henri_dOrléans_1 ;
+    :isAncestorOf data:Prince_Henri_dOrléans_1,
+        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isAuntOf data:Prince_Henri_dOrléans_1 ;
+    :isBloodrelationOf data:Isabelle_of_Orléans-Braganza ;
+    :isMotherOf data:Prince_Henri_dOrléans_1 ;
+    :isParentOf data:Prince_Henri_dOrléans_1 ;
+    :isSiblingOf data:Isabelle_of_Orléans-Braganza ;
+    :isSisterOf data:Isabelle_of_Orléans-Braganza .
+
+data:Princess_Isabelle_dOrléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Isabelle d’Orléans"^^xsd:string ;
+    data:posIndicesFull "9803:9831"^^xsd:string ;
+    data:posIndicesPart "11088:11096"^^xsd:string ;
+    data:wdtLink wdt:Q261322 ;
+    :alsoKnownAs "Princess Isabelle of Orleans"^^xsd:string ;
+    :hasChild data:Prince_Henri_dOrléans ;
+    :hasRelation data:Prince_Henri_dOrléans,
+        data:Prince_Henri_dOrléans_1,
+        data:Princess_Isabelle_dOrléans,
+        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Isabelle_dOrléans ;
+    :hasSon data:Prince_Henri_dOrléans ;
+    :isAncestorOf data:Prince_Henri_dOrléans,
+        data:Prince_Henri_dOrléans_1,
+        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isAuntOf data:Prince_Henri_dOrléans ;
+    :isBloodrelationOf data:Princess_Isabelle_dOrléans ;
+    :isMotherOf data:Prince_Henri_dOrléans ;
+    :isParentOf data:Prince_Henri_dOrléans ;
+    :isSiblingOf data:Princess_Isabelle_dOrléans ;
+    :isSisterOf data:Princess_Isabelle_dOrléans .
+
+data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein a :Person,
+        :Woman ;
+    rdfs:label "Princess Marie, Princess Gundakar of Liechtenstein"^^xsd:string ;
+    data:posIndicesFull "40:55"^^xsd:string ;
+    data:posIndicesPart "377:382"^^xsd:string ;
+    data:wdtLink wdt:Q7244738 ;
+    :alsoKnownAs "Marie Isabelle Marguerite Anne Geneviève d'Orléans"^^xsd:string,
+        "Marie d'Orléans"^^xsd:string,
+        "Princess Gundakar of Liechtenstein"^^xsd:string,
+        "Princess Marie Isabelle Marguerite Anne Geneviève d'Orléans"^^xsd:string,
+        "Princess Marie d'Orléans"^^xsd:string,
+        "Princess Marie of Liechtenstein"^^xsd:string ;
+    :hasAncestor data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Henri_dOrléans,
+        data:Prince_Henri_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :hasFather data:Prince_Henri_dOrléans_1 ;
+    :hasParent data:Prince_Henri_dOrléans_1 ;
+    :hasRelation data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Henri_dOrléans,
+        data:Prince_Henri_dOrléans_1,
+        data:Princess_Isabelle_dOrléans,
+        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isBloodrelationOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isChildOf data:Prince_Henri_dOrléans_1 ;
+    :isDaughterOf data:Prince_Henri_dOrléans_1 ;
+    :isSiblingOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isSisterOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein .
+
+data:Prince_Henri_dOrléans a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Henri d'Orléans"^^xsd:string ;
+    data:posIndicesFull "0:15"^^xsd:string,
+        "17:55"^^xsd:string ;
+    data:posIndicesPart "10026:10031"^^xsd:string,
+        "10055:10060"^^xsd:string,
+        "10212:10217"^^xsd:string,
+        "10373:10378"^^xsd:string,
+        "10563:10568"^^xsd:string,
+        "10838:10843"^^xsd:string,
+        "10852:10857"^^xsd:string,
+        "10983:10989"^^xsd:string,
+        "11052:11057"^^xsd:string,
+        "1121:1127"^^xsd:string,
+        "1195:1200"^^xsd:string,
+        "1317:1322"^^xsd:string,
+        "1474:1480"^^xsd:string,
+        "1564:1569"^^xsd:string,
+        "1725:1730"^^xsd:string,
+        "193:198"^^xsd:string,
+        "2363:2368"^^xsd:string,
+        "2458:2464"^^xsd:string,
+        "2558:2563"^^xsd:string,
+        "2791:2796"^^xsd:string,
+        "2899:2904"^^xsd:string,
+        "3086:3091"^^xsd:string,
+        "3354:3359"^^xsd:string,
+        "3442:3447"^^xsd:string,
+        "3534:3539"^^xsd:string,
+        "3733:3738"^^xsd:string,
+        "3889:3894"^^xsd:string,
+        "4275:4280"^^xsd:string,
+        "4349:4354"^^xsd:string,
+        "4509:4514"^^xsd:string,
+        "4589:4594"^^xsd:string,
+        "4875:4880"^^xsd:string,
+        "4932:4937"^^xsd:string,
+        "5091:5096"^^xsd:string,
+        "5174:5179"^^xsd:string,
+        "521:526"^^xsd:string,
+        "5281:5286"^^xsd:string,
+        "5386:5391"^^xsd:string,
+        "5444:5449"^^xsd:string,
+        "5567:5572"^^xsd:string,
+        "5623:5628"^^xsd:string,
+        "5765:5770"^^xsd:string,
+        "579:584"^^xsd:string,
+        "5952:5957"^^xsd:string,
+        "6106:6111"^^xsd:string,
+        "6150:6155"^^xsd:string,
+        "6208:6213"^^xsd:string,
+        "6302:6307"^^xsd:string,
+        "6455:6460"^^xsd:string,
+        "6536:6541"^^xsd:string,
+        "6695:6700"^^xsd:string,
+        "6783:6788"^^xsd:string,
+        "6983:6988"^^xsd:string,
+        "7176:7181"^^xsd:string,
+        "7263:7268"^^xsd:string,
+        "728:733"^^xsd:string,
+        "7482:7487"^^xsd:string,
+        "7551:7556"^^xsd:string,
+        "7697:7702"^^xsd:string,
+        "7817:7822"^^xsd:string,
+        "787:792"^^xsd:string,
+        "7978:7983"^^xsd:string,
+        "8088:8093"^^xsd:string,
+        "8183:8188"^^xsd:string,
+        "8272:8277"^^xsd:string,
+        "8491:8496"^^xsd:string,
+        "8774:8779"^^xsd:string,
+        "8943:8948"^^xsd:string,
+        "9053:9058"^^xsd:string,
+        "9153:9158"^^xsd:string,
+        "9287:9292"^^xsd:string,
+        "9381:9386"^^xsd:string,
+        "9552:9557"^^xsd:string,
+        "9585:9591"^^xsd:string,
+        "9666:9671"^^xsd:string ;
+    data:wdtLink wdt:Q538411 ;
+    :alsoKnownAs "Henri Robert Ferdinand Marie d'Orléans"^^xsd:string,
+        "Henri d'Orléans"^^xsd:string,
+        "Prince Henri Robert Ferdinand Marie d'Orléans"^^xsd:string ;
+    :hasAncestor data:Princess_Isabelle_dOrléans ;
+    :hasBrother data:Prince_Henri_dOrléans ;
+    :hasChild data:Prince_Henri_dOrléans_1 ;
+    :hasMother data:Princess_Isabelle_dOrléans ;
+    :hasParent data:Princess_Isabelle_dOrléans ;
+    :hasRelation data:Prince_Henri_dOrléans,
+        data:Prince_Henri_dOrléans_1,
+        data:Princess_Isabelle_dOrléans,
+        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Henri_dOrléans_1 ;
+    :isAncestorOf data:Prince_Henri_dOrléans_1,
+        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isBloodrelationOf data:Prince_Henri_dOrléans ;
+    :isBrotherOf data:Prince_Henri_dOrléans ;
+    :isChildOf data:Princess_Isabelle_dOrléans ;
+    :isFatherOf data:Prince_Henri_dOrléans_1 ;
+    :isParentOf data:Prince_Henri_dOrléans_1 ;
+    :isSiblingOf data:Prince_Henri_dOrléans ;
+    :isSonOf data:Princess_Isabelle_dOrléans ;
+    :isUncleOf data:Prince_Henri_dOrléans_1 .
+
+data:Prince_Henri_dOrléans_1 a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Henri d’Orléans"^^xsd:string ;
+    data:posIndicesFull "0:15"^^xsd:string,
+        "149:157"^^xsd:string ;
+    data:posIndicesPart "10026:10031"^^xsd:string,
+        "10055:10060"^^xsd:string,
+        "10212:10217"^^xsd:string,
+        "10373:10378"^^xsd:string,
+        "10563:10568"^^xsd:string,
+        "10838:10843"^^xsd:string,
+        "10852:10857"^^xsd:string,
+        "10983:10989"^^xsd:string,
+        "11052:11057"^^xsd:string,
+        "1121:1127"^^xsd:string,
+        "1195:1200"^^xsd:string,
+        "1317:1322"^^xsd:string,
+        "1474:1480"^^xsd:string,
+        "1564:1569"^^xsd:string,
+        "1725:1730"^^xsd:string,
+        "193:198"^^xsd:string,
+        "2363:2368"^^xsd:string,
+        "2458:2464"^^xsd:string,
+        "2558:2563"^^xsd:string,
+        "2791:2796"^^xsd:string,
+        "2899:2904"^^xsd:string,
+        "3086:3091"^^xsd:string,
+        "3354:3359"^^xsd:string,
+        "3442:3447"^^xsd:string,
+        "3534:3539"^^xsd:string,
+        "3733:3738"^^xsd:string,
+        "3889:3894"^^xsd:string,
+        "4275:4280"^^xsd:string,
+        "4349:4354"^^xsd:string,
+        "4509:4514"^^xsd:string,
+        "4589:4594"^^xsd:string,
+        "4875:4880"^^xsd:string,
+        "4932:4937"^^xsd:string,
+        "5091:5096"^^xsd:string,
+        "5174:5179"^^xsd:string,
+        "521:526"^^xsd:string,
+        "5281:5286"^^xsd:string,
+        "5386:5391"^^xsd:string,
+        "5444:5449"^^xsd:string,
+        "5567:5572"^^xsd:string,
+        "5623:5628"^^xsd:string,
+        "5765:5770"^^xsd:string,
+        "579:584"^^xsd:string,
+        "5952:5957"^^xsd:string,
+        "6106:6111"^^xsd:string,
+        "6150:6155"^^xsd:string,
+        "6208:6213"^^xsd:string,
+        "6302:6307"^^xsd:string,
+        "6455:6460"^^xsd:string,
+        "6536:6541"^^xsd:string,
+        "6695:6700"^^xsd:string,
+        "6783:6788"^^xsd:string,
+        "6983:6988"^^xsd:string,
+        "7176:7181"^^xsd:string,
+        "7263:7268"^^xsd:string,
+        "728:733"^^xsd:string,
+        "7482:7487"^^xsd:string,
+        "7551:7556"^^xsd:string,
+        "7697:7702"^^xsd:string,
+        "7817:7822"^^xsd:string,
+        "787:792"^^xsd:string,
+        "7978:7983"^^xsd:string,
+        "8088:8093"^^xsd:string,
+        "8183:8188"^^xsd:string,
+        "8272:8277"^^xsd:string,
+        "8491:8496"^^xsd:string,
+        "8774:8779"^^xsd:string,
+        "8943:8948"^^xsd:string,
+        "9053:9058"^^xsd:string,
+        "9153:9158"^^xsd:string,
+        "9287:9292"^^xsd:string,
+        "9381:9386"^^xsd:string,
+        "9552:9557"^^xsd:string,
+        "9585:9591"^^xsd:string,
+        "9666:9671"^^xsd:string ;
+    data:wdtLink wdt:Q534961 ;
+    :alsoKnownAs "Henri Philippe Pierre Marie d'Orléans"^^xsd:string,
+        "Henri VIII"^^xsd:string,
+        "Henri d’Orléans"^^xsd:string ;
+    :hasAncestor data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Henri_dOrléans,
+        data:Princess_Isabelle_dOrléans ;
+    :hasBrother data:Prince_Henri_dOrléans_1 ;
+    :hasChild data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :hasDaughter data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :hasFather data:Prince_Henri_dOrléans ;
+    :hasMother data:Isabelle_of_Orléans-Braganza ;
+    :hasParent data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Henri_dOrléans ;
+    :hasRelation data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Henri_dOrléans,
+        data:Prince_Henri_dOrléans_1,
+        data:Princess_Isabelle_dOrléans,
+        data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isBloodrelationOf data:Prince_Henri_dOrléans_1 ;
+    :isBrotherOf data:Prince_Henri_dOrléans_1 ;
+    :isChildOf data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Henri_dOrléans ;
+    :isFatherOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isParentOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
+    :isSiblingOf data:Prince_Henri_dOrléans_1 ;
+    :isSonOf data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Henri_dOrléans ;
+    :isUncleOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein .
+

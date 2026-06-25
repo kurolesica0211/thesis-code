@@ -2,68 +2,60 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Maria-Olympia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBrother data:Achileas-Andreas,
-        data:Aristidis-Stavros,
-        data:Constantine-Alexios,
-        data:Odysseas-Kimon ;
-    :hasFather data:Pavlos ;
-    :hasMother data:Marie-Chantal ;
-    :hasSex data:Female ;
-    :isDaughterOf data:Marie-Chantal,
-        data:Pavlos ;
-    :knownAs "Olympia"^^xsd:string .
-
-data:Achileas-Andreas a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
 data:Anne-Marie a :Ancestor,
         :Person,
-        :Woman .
-
-data:Aristidis-Stavros a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Constantine-Alexios a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Woman ;
+    :isMotherOf data:Pavlos .
 
 data:Constantine-II a :Ancestor,
         :Man,
         :Person ;
-    :hasSex data:Male .
+    :isFatherOf data:Pavlos .
 
-data:Odysseas-Kimon a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Maria-Olympia a :Person,
+        :Woman ;
+    :alsoKnownAs "Olympia"^^xsd:string ;
+    :hasBirthYear 1996 ;
+    :isDaughterOf data:Marie-Chantal,
+        data:Pavlos ;
+    :isSiblingOf data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon .
+
+data:Matthew-Kumar a :Man,
+        :Person .
+
+data:Princess-Alexia a :Person,
+        :Woman ;
+    :isSisterOf data:Pavlos .
+
+data:Princess-Theodora a :Person,
+        :Woman ;
+    :isSisterOf data:Pavlos .
 
 data:Robert-Warren-Miller a :Ancestor,
         :Man,
         :Person ;
-    :hasSex data:Male .
+    :isFatherOf data:Marie-Chantal .
 
-data:Female a :Sex .
+data:Prince-Achileas-Andreas a :Man,
+        :Person .
+
+data:Prince-Aristidis-Stavros a :Man,
+        :Person .
+
+data:Prince-Constantine-Alexios a :Man,
+        :Person .
+
+data:Prince-Odysseas-Kimon a :Man,
+        :Person .
 
 data:Marie-Chantal a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female ;
-    :isChildOf data:Robert-Warren-Miller .
+        :Woman .
 
 data:Pavlos a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male ;
-    :isChildOf data:Anne-Marie,
-        data:Constantine-II .
-
-data:Male a :Sex .
+        :Person .
 

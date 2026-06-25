@@ -2,35 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Ari a :Man,
+data:Gottfried a :Man,
         :Person ;
-    :isSonOf data:Gary_Lewis .
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1984 ;
+    :hasFather data:Peter_Ferdinand ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Maria_Cristina ;
+    :hasRelation data:Dorothea .
 
-data:Senna_Kowhai a :Person,
+data:Dorothea a :Person,
         :Woman ;
-    :isDaughterOf data:Davina_Windsor,
-        data:Gary_Lewis .
+    :hasFather data:Franz_of_Bavaria ;
+    :hasMother data:Isabella_Antonie .
 
-data:Tane_Mahuta a :Man,
-        :Person ;
-    :isSonOf data:Davina_Windsor,
-        data:Gary_Lewis .
+data:Ferdinando_IV a :Man,
+        :Person .
 
-data:Birgitte_Duchess_of_Gloucester a :Person,
+data:Franz_of_Bavaria a :Man,
+        :Person .
+
+data:Isabella_Antonie a :Person,
         :Woman .
 
-data:Prince_Richard_Duke_of_Gloucester a :Man,
-        :Person .
+data:Maria_Cristina a :Person,
+        :Woman .
 
-data:Davina_Windsor a :Person,
-        :Woman ;
-    :formerlyKnownAs "Lady Davina Lewis"^^xsd:string ;
-    :hasBirthYear "1977-11-19"^^xsd:string ;
-    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
-    :hasMarriageYear "2004"^^xsd:string ;
-    :hasMother data:Birgitte_Duchess_of_Gloucester ;
-    :hasRelation data:Gary_Lewis .
-
-data:Gary_Lewis a :Man,
-        :Person .
+data:Peter_Ferdinand a :Man,
+        :Person ;
+    :hasFather data:Ferdinando_IV .
 

@@ -69,63 +69,27 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lady Louise Alice Elizabeth Mary Mountbatten-Windsor (born 8 November 2003) is a member of the British royal family.
-She is the elder child and only daughter of Prince Edward, Duke of Edinburgh, and Sophie, Duchess of Edinburgh.
-Louise is the youngest niece of King Charles III.
-She was born during the reign of her paternal grandmother, Queen Elizabeth II, and at the time of her birth was eighth in the line of succession to the British throne; as of 2026, she is 17th.
+Margaret Rhodes (née Elphinstone; 9 June 1925 – 25 November 2016) was a British aristocrat, niece of Queen Elizabeth the Queen Mother and first cousin of Queen Elizabeth II and Princess Margaret, Countess of Snowdon.
 Early life and education
 
-Lady Louise Alice Elizabeth Mary Mountbatten-Windsor was born prematurely at 11:32 pm on 8 November 2003 at Frimley Park Hospital, Surrey.
-Her mother, Sophie, then Countess of Wessex, had been taken there by ambulance from the family home at Bagshot Park.
-Her father, Prince Edward, then Earl of Wessex, and the youngest child of Queen Elizabeth II and Prince Philip, was not present for the birth, which occurred suddenly while he was on an official visit to Mauritius.
-Louise was delivered by emergency Caesarean section due to a placental abruption that caused significant blood loss to both mother and child.
-Louise returned to Frimley Park on 13 November and was discharged on 23 November, four days after her mother.
-Her name, Louise Alice Elizabeth Mary, was announced on 26 November.
-She was baptised in the Private Chapel at Windsor Castle on 24 April 2004 by David Conner, the Dean of Windsor.
-Her godparents are Lady Sarah Chatto, Lord Ivar Mountbatten, Lady Alexandra Etherington, Francesca Schwarzenbach, and Rupert Elliott.
-Louise was the last child to wear the original royal christening gown.
-Born with esotropia, Louise underwent an operation in 2006 in an unsuccessful attempt to correct the condition.
-Louise attended St George's School, Windsor Castle, before moving to St Mary's School Ascot in 2017 from Year 9.
-While at school, she took part in The Duke of Edinburgh's Award.
-Louise began studying English at the University of St Andrews in September 2022.
-Military training
+Born The Honourable Margaret Elphinstone in Westminster, London, Rhodes was the youngest daughter of the 16th Lord Elphinstone and his wife, Lady Mary Bowes-Lyon, an elder sister of Queen Elizabeth the Queen Mother.
+She was a Woman of the Bedchamber – a mix of lady-in-waiting and companion – to her aunt Queen Elizabeth the Queen Mother, from 1991 until the latter's death in 2002.
+In the 2000 Birthday Honours Rhodes was appointed Lieutenant of the Royal Victorian Order (LVO).
+In the run-up to the Queen's 80th birthday in April 2006, Rhodes gave an interview to the BBC in which she stated her belief that the Queen would not abdicate.
+Rhodes appeared in seven documentaries about her first cousin Queen Elizabeth II.
+On 27 November 2016, Buckingham Palace confirmed that Rhodes had died, aged 91, on 25 November following a short illness.
+Lady Ogilvy.
+Personal life
 
-In 2024, Louise joined the British Army's University Officers' Training Corps (UOTC) unit, Tayforth UOTC, an Army Reserve formation made up of students from the University of St Andrews and other institutions in the surrounding region.
-Official appearances
-
-In 2011, aged 7, Louise was a bridesmaid at the wedding of Prince William and Catherine Middleton.
-Later that month, mother and daughter attended the final of the Hockey Women's World Cup in London; the Duchess is the patron of England Hockey.
-To celebrate Louise's 15th birthday in November 2018, they made a cameo appearance on Strictly Come Dancing, watching the BBC programme from the audience.
-In December, Louise joined her mother at the International Horse Show at Olympia, London.
-In September 2020, Louise participated in the Great British Beach Clean with her family at Southsea Beach, in support of the Marine Conservation Society.
-Following the death of her grandfather, Prince Philip, Louise accompanied her parents to a church service at the Royal Chapel of All Saints on 11 April 2021.
-Following the death of her grandmother, Queen Elizabeth II, on 8 September 2022, Louise stood vigil for 15 minutes at the Queen's coffin at Westminster Hall with her brother James and six cousins on 17 September.
-On 6 May 2023, Louise attended the coronation of King Charles III and Queen Camilla.
-On 7 May, she attended the Coronation Concert at Windsor Castle.
-Personal interests
-
-Louise is a member of Girlguiding, of which her grandmother was patron and her mother is president.
-Louise was taught to ride at an early age, and joined her father on horseback during the Queen's 90th birthday celebrations in Windsor in 2016.
-She has taken up carriage driving, a sport popularised in Britain by her grandfather, Prince Philip.
-In May 2017, she was responsible for leading the carriages of the Champagne Laurent-Perrier Meet of the British Driving Society at the Royal Windsor Horse Show.
-In May 2019, Louise took part in the Private Driving Singles carriage drive at the Royal Windsor Horse Show and achieved third place.
-In 2022, she drove one of his carriages in front of the Queen at the Royal Windsor Horse Show.
-Titles, styles, and honours
-
-Titles and styles
-
-Louise is styled as "Lady Louise Mountbatten-Windsor", although at the time of her birth the palace also used the style "Lady Louise Windsor" in some of its announcements.
-However, when her parents married, Elizabeth II announced via a Buckingham Palace press release that their children would be styled as the children of an earl rather than as prince or princess.
-In 2020, her mother stated that Louise retained her royal title and style and could choose whether to use it from the age of 18.
-Honours
-
-In June 2008, to recognise a visit by Louise's father to the Canadian province of Manitoba, a lake in the north of the province was named Lake Louise.
+On 31 July 1950, she married the writer Denys Gravenor Rhodes (1919–1981), with Princess Margaret as one of the bridesmaids.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -141,39 +105,9 @@ In June 2008, to recognise a visit by Louise's father to the Canadian province o
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -188,6 +122,23 @@ In June 2008, to recognise a visit by Louise's father to the Canadian province o
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -205,6 +156,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -272,29 +238,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -303,6 +261,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -315,6 +281,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -323,17 +291,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -361,6 +331,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -376,125 +430,309 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bafec888-89eb-444d-bff0-3c178ffd34fe)
- Call ID: bafec888-89eb-444d-bff0-3c178ffd34fe
+  AssignClass (758700e2-d45d-4be9-8c8c-f13ad3ef69a6)
+ Call ID: 758700e2-d45d-4be9-8c8c-f13ad3ef69a6
   Args:
-    source: Lady_Louise_Mountbatten-Windsor
-    type: :Person
-  AssignClass (67211db3-f5b2-418b-abb6-7f64c2de3d7f)
- Call ID: 67211db3-f5b2-418b-abb6-7f64c2de3d7f
-  Args:
+    source: Margaret_Rhodes
     type: :Woman
-    source: Lady_Louise_Mountbatten-Windsor
-  AssignClass (c856a1a8-c6d8-46ef-871c-3f4f35ac2367)
- Call ID: c856a1a8-c6d8-46ef-871c-3f4f35ac2367
+  AssignClass (82e50e32-9ff5-466f-b043-b76ee330280c)
+ Call ID: 82e50e32-9ff5-466f-b043-b76ee330280c
   Args:
+    source: Margaret_Rhodes
     type: :Person
-    source: Prince_Edward
-  AssignClass (d019e0aa-6fd9-49c6-925b-8fa843f5ed78)
- Call ID: d019e0aa-6fd9-49c6-925b-8fa843f5ed78
+  AddLiteral (48dbc449-a370-4196-95cc-7f17f452b25a)
+ Call ID: 48dbc449-a370-4196-95cc-7f17f452b25a
   Args:
-    source: Prince_Edward
-    type: :Man
-  AssignClass (95905c9d-34d0-45a4-bff9-d37d4fb08ba5)
- Call ID: 95905c9d-34d0-45a4-bff9-d37d4fb08ba5
-  Args:
-    source: Sophie_Duchess_of_Edinburgh
-    type: :Person
-  AssignClass (7696ca62-1758-4b59-9448-a6d7f234c946)
- Call ID: 7696ca62-1758-4b59-9448-a6d7f234c946
-  Args:
-    source: Sophie_Duchess_of_Edinburgh
-    type: :Woman
-  AssignClass (4d55b186-69c3-48dd-a46b-ee1bf9e51335)
- Call ID: 4d55b186-69c3-48dd-a46b-ee1bf9e51335
-  Args:
-    type: :Person
-    source: Queen_Elizabeth_II
-  AssignClass (13d86261-9c6f-4ac3-b049-18bf72342d65)
- Call ID: 13d86261-9c6f-4ac3-b049-18bf72342d65
-  Args:
-    source: Queen_Elizabeth_II
-    type: :Woman
-  AssignClass (b94ce83a-4931-4447-bb67-07182b3d05b4)
- Call ID: b94ce83a-4931-4447-bb67-07182b3d05b4
-  Args:
-    source: Prince_Philip
-    type: :Person
-  AssignClass (b22dfd83-6f14-4eaa-9d17-a3c0296737de)
- Call ID: b22dfd83-6f14-4eaa-9d17-a3c0296737de
-  Args:
-    type: :Man
-    source: Prince_Philip
-  AssignClass (c0a0e2fe-8057-4725-a60e-6a95a52bbc7d)
- Call ID: c0a0e2fe-8057-4725-a60e-6a95a52bbc7d
-  Args:
-    type: :Person
-    source: King_Charles_III
-  AssignClass (e89771d2-c012-4975-a292-50f8aec83e9d)
- Call ID: e89771d2-c012-4975-a292-50f8aec83e9d
-  Args:
-    source: King_Charles_III
-    type: :Man
-  AssignClass (592cfa0e-6242-405a-9d32-18924a75c896)
- Call ID: 592cfa0e-6242-405a-9d32-18924a75c896
-  Args:
-    type: :Person
-    source: James
-  AssignClass (c7e7ed43-e801-440d-ab91-7ec586b5b9b8)
- Call ID: c7e7ed43-e801-440d-ab91-7ec586b5b9b8
-  Args:
-    type: :Man
-    source: James
-  AddLiteral (cf5dc98c-f0f1-4760-8d86-c19f45a89021)
- Call ID: cf5dc98c-f0f1-4760-8d86-c19f45a89021
-  Args:
-    literal_value: 2003
     relation: :hasBirthYear
-    source: Lady_Louise_Mountbatten-Windsor
     literal_type: xsd:integer
-  AddTriple (e7a8da30-db5d-4a00-b9d7-3accea191d85)
- Call ID: e7a8da30-db5d-4a00-b9d7-3accea191d85
+    literal_value: 1925
+    source: Margaret_Rhodes
+  AddLiteral (53aa0f44-aba2-4e29-8c19-cf650902d221)
+ Call ID: 53aa0f44-aba2-4e29-8c19-cf650902d221
   Args:
-    target: Prince_Edward
-    relation: :hasFather
-    source: Lady_Louise_Mountbatten-Windsor
-  AddTriple (b822ce59-cde1-436b-8fe2-f0164b92281b)
- Call ID: b822ce59-cde1-436b-8fe2-f0164b92281b
+    relation: :hasDeathYear
+    literal_value: 2016
+    literal_type: xsd:integer
+    source: Margaret_Rhodes
+  AddTriple (1100876d-b287-4a47-a544-958da876887c)
+ Call ID: 1100876d-b287-4a47-a544-958da876887c
   Args:
-    relation: :hasMother
-    target: Sophie_Duchess_of_Edinburgh
-    source: Lady_Louise_Mountbatten-Windsor
-  AddTriple (3f19a984-3a0c-4617-9c5c-2ba754fe9c89)
- Call ID: 3f19a984-3a0c-4617-9c5c-2ba754fe9c89
+    source: Margaret_Rhodes
+    target: Margaret_Elphinstone
+    relation: :alsoKnownAs
+  AssignClass (8b4baa67-fc18-40bb-98d9-a926958cf0c5)
+ Call ID: 8b4baa67-fc18-40bb-98d9-a926958cf0c5
   Args:
-    target: Prince_Philip
-    relation: :hasFather
-    source: Prince_Edward
-  AddTriple (f18605a1-b98c-434b-99ec-c6e392334aef)
- Call ID: f18605a1-b98c-434b-99ec-c6e392334aef
+    source: Lord_Elphinstone_16th
+    type: :Man
+  AssignClass (7b87387d-d07c-4c73-8e27-69da841b3509)
+ Call ID: 7b87387d-d07c-4c73-8e27-69da841b3509
   Args:
-    source: Prince_Edward
-    relation: :hasMother
-    target: Queen_Elizabeth_II
-  AddTriple (751c988a-38c6-4c86-98c0-8ddb7cac6563)
- Call ID: 751c988a-38c6-4c86-98c0-8ddb7cac6563
+    type: :Person
+    source: Lord_Elphinstone_16th
+  AssignClass (957df093-8763-4c91-b48e-36d67ed75a47)
+ Call ID: 957df093-8763-4c91-b48e-36d67ed75a47
   Args:
-    relation: :hasBrother
-    target: James
-    source: Lady_Louise_Mountbatten-Windsor
-  AddTriple (929a0204-424c-4811-ae94-8393d7198dd6)
- Call ID: 929a0204-424c-4811-ae94-8393d7198dd6
+    source: Lady_Mary_Bowes-Lyon
+    type: :Woman
+  AssignClass (1c2f6bcc-d321-4ced-9e07-634f630348e3)
+ Call ID: 1c2f6bcc-d321-4ced-9e07-634f630348e3
   Args:
-    source: James
-    relation: :hasParent
-    target: Prince_Edward
-  AddTriple (7d4c8d7e-6415-46a5-a0fa-d2036d044a5d)
- Call ID: 7d4c8d7e-6415-46a5-a0fa-d2036d044a5d
+    type: :Person
+    source: Lady_Mary_Bowes-Lyon
+  AddTriple (b893318b-8968-4913-99fa-cf57be93cdc1)
+ Call ID: b893318b-8968-4913-99fa-cf57be93cdc1
   Args:
-    source: James
-    target: Sophie_Duchess_of_Edinburgh
-    relation: :hasParent
-  Finish (3e0acc9e-300f-458e-9174-c3a4ff43ae4d)
- Call ID: 3e0acc9e-300f-458e-9174-c3a4ff43ae4d
+    target: Lord_Elphinstone_16th
+    relation: :isDaughterOf
+    source: Margaret_Rhodes
+  AddTriple (881e4741-73d8-46ee-9bec-b03d789d7643)
+ Call ID: 881e4741-73d8-46ee-9bec-b03d789d7643
+  Args:
+    relation: :isDaughterOf
+    target: Lady_Mary_Bowes-Lyon
+    source: Margaret_Rhodes
+  AssignClass (ac67c9de-892e-49b2-900e-57e8f6465342)
+ Call ID: ac67c9de-892e-49b2-900e-57e8f6465342
+  Args:
+    type: :Woman
+    source: Queen_Elizabeth_The_Queen_Mother
+  AssignClass (339c8f1e-a9e6-4657-8dd3-93ef5b3cc0b0)
+ Call ID: 339c8f1e-a9e6-4657-8dd3-93ef5b3cc0b0
+  Args:
+    source: Queen_Elizabeth_The_Queen_Mother
+    type: :Person
+  AddTriple (708d7337-654e-4bed-83a7-0390556a4905)
+ Call ID: 708d7337-654e-4bed-83a7-0390556a4905
+  Args:
+    source: Lady_Mary_Bowes-Lyon
+    relation: :isSisterOf
+    target: Queen_Elizabeth_The_Queen_Mother
+  AssignClass (fa88b736-79c2-4ad4-8732-145686d929d2)
+ Call ID: fa88b736-79c2-4ad4-8732-145686d929d2
+  Args:
+    type: :Man
+    source: Denys_Gravenor_Rhodes
+  AssignClass (9e41745c-1b3c-4352-a99d-01242f67fbc5)
+ Call ID: 9e41745c-1b3c-4352-a99d-01242f67fbc5
+  Args:
+    source: Denys_Gravenor_Rhodes
+    type: :Person
+  AddLiteral (e13d5cbd-06b6-4274-824c-edfa086ad159)
+ Call ID: e13d5cbd-06b6-4274-824c-edfa086ad159
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1919
+    source: Denys_Gravenor_Rhodes
+  AddLiteral (0b7a5a6d-edea-46e1-b149-aa06f0d2c03a)
+ Call ID: 0b7a5a6d-edea-46e1-b149-aa06f0d2c03a
+  Args:
+    source: Denys_Gravenor_Rhodes
+    literal_value: 1981
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddTriple (8674e744-4a96-4c64-8473-4de7c7c791cc)
+ Call ID: 8674e744-4a96-4c64-8473-4de7c7c791cc
+  Args:
+    source: Margaret_Rhodes
+    target: Denys_Gravenor_Rhodes
+    relation: :hasRelation
+  AddLiteral (d6b743f6-4936-42cc-b718-18d181e10299)
+ Call ID: d6b743f6-4936-42cc-b718-18d181e10299
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 1950
+    source: Margaret_Rhodes
+  AssignClass (99c948f8-de3f-4e2e-8404-dd9919bb0223)
+ Call ID: 99c948f8-de3f-4e2e-8404-dd9919bb0223
+  Args:
+    type: :Woman
+    source: Queen_Elizabeth_II
+  AssignClass (009d6718-bbcb-4cfe-b81d-b4dfd48c4773)
+ Call ID: 009d6718-bbcb-4cfe-b81d-b4dfd48c4773
+  Args:
+    type: :Person
+    source: Queen_Elizabeth_II
+  AssignClass (f155cdc3-7ca2-44a5-bc61-ad9e98b54065)
+ Call ID: f155cdc3-7ca2-44a5-bc61-ad9e98b54065
+  Args:
+    type: :Woman
+    source: Princess_Margaret_Countess_of_Snowdon
+  AssignClass (3de41fb8-c63f-4dfd-9d69-a807dcddcb6f)
+ Call ID: 3de41fb8-c63f-4dfd-9d69-a807dcddcb6f
+  Args:
+    type: :Person
+    source: Princess_Margaret_Countess_of_Snowdon
+  Finish (837b193a-d0bd-4a0c-8869-793bc236e29e)
+ Call ID: 837b193a-d0bd-4a0c-8869-793bc236e29e
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Margaret_Rhodes a :Person,
+          :Woman ;
+      :alsoKnownAs data:Margaret_Elphinstone ;
+      :hasBirthYear 1925 ;
+      :hasDeathYear 2016 ;
+      :hasMarriageYear 1950 ;
+      :hasRelation data:Denys_Gravenor_Rhodes ;
+      :isDaughterOf data:Lady_Mary_Bowes-Lyon,
+          data:Lord_Elphinstone_16th .
+
+  data:Princess_Margaret_Countess_of_Snowdon a :Person,
+          :Woman .
+
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
+
+  data:Denys_Gravenor_Rhodes a :Man,
+          :Person ;
+      :hasBirthYear 1919 ;
+      :hasDeathYear 1981 .
+
+  data:Lady_Mary_Bowes-Lyon a :Person,
+          :Woman ;
+      :isSisterOf data:Queen_Elizabeth_The_Queen_Mother .
+
+  data:Lord_Elphinstone_16th a :Man,
+          :Person .
+
+  data:Queen_Elizabeth_The_Queen_Mother a :Person,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Margaret_Elphinstone']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (caa2f8ec-5b82-425b-937f-d31f34aa31db)
+ Call ID: caa2f8ec-5b82-425b-937f-d31f34aa31db
+  Args:
+    source: Margaret_Elphinstone
+    type: :Person
+  AssignClass (f093c99a-4613-4a88-9f37-3bd88e8ccca2)
+ Call ID: f093c99a-4613-4a88-9f37-3bd88e8ccca2
+  Args:
+    source: Margaret_Elphinstone
+    type: :Woman
+  Finish (73ba779b-58c0-4dfe-9504-8f36078552cc)
+ Call ID: 73ba779b-58c0-4dfe-9504-8f36078552cc
   Args:

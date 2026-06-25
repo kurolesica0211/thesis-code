@@ -2,24 +2,67 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Lady_Mary_Luise_Wellesley a :Person,
+data:Angelica_Margherita_Edwina_Hicks a :Person,
         :Woman ;
-    :hasBirthYear "1986"^^xsd:int ;
-    :hasFather data:Charles_Wellesley ;
-    :hasMother data:Princess_Antonia_of_Prussia ;
-    :hasSex data:Female .
+    :hasBirthYear 1992 ;
+    :hasFather data:Ashley_Louis_David_Hicks ;
+    :hasMother data:Marina_Allegra_Federica_Silvia_Tondato ;
+    :hasSex data:Female ;
+    :knownAs "British fashion illustrator and internet personality"^^xsd:string .
 
-data:Charles_Wellesley a :Ancestor,
+data:Ashley_Louis_David_Hicks a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:David_Nightingale_Hicks ;
+    :hasMother data:Lady_Pamela_Mountbatten ;
+    :hasSex data:Male .
+
+data:David_Nightingale_Hicks a :Ancestor,
         :Man,
         :Person ;
     :hasSex data:Male .
 
-data:Male a :Sex .
+data:Lady_Pamela_Mountbatten a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Louis_Mountbatten%2C_1st_Earl_Mountbatten_of_Burma ;
+    :hasMother data:The_Honourable_Edwina_Ashley ;
+    :hasSex data:Female .
 
-data:Princess_Antonia_of_Prussia a :Ancestor,
+data:Louis_Mountbatten%2C_1st_Earl_Mountbatten_of_Burma a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:Male .
+
+data:Marina_Allegra_Federica_Silvia_Tondato a :Ancestor,
         :Person,
         :Woman ;
     :hasSex data:Female .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasMother data:Queen_Victoria ;
+    :hasSex data:Female .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:The_Honourable_Edwina_Ashley a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
 
 data:Female a :Sex .
 

@@ -1,0 +1,125 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Frederik_IX_of_Denmark a :Man,
+        :Person ;
+    rdfs:label "Frederik IX of Denmark"^^xsd:string ;
+    data:posIndicesFull "3289:3300"^^xsd:string,
+        "969:980"^^xsd:string ;
+    data:posIndicesPart "1048:1055"^^xsd:string,
+        "2661:2668"^^xsd:string,
+        "3670:3677"^^xsd:string,
+        "3878:3886"^^xsd:string,
+        "4064:4071"^^xsd:string ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg"^^xsd:string,
+        "Frederick IX"^^xsd:string,
+        "Frederik IX"^^xsd:string,
+        "King Frederick IX of Denmark"^^xsd:string,
+        "King Frederik IX of Denmark"^^xsd:string ;
+    :hasBrother data:Frederik_IX_of_Denmark ;
+    :hasRelation data:Frederik_IX_of_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Frederik_IX_of_Denmark ;
+    :isBrotherOf data:Frederik_IX_of_Denmark ;
+    :isSiblingOf data:Frederik_IX_of_Denmark .
+
+data:Princess_Caroline-Mathilde_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Caroline-Mathilde of Denmark"^^xsd:string ;
+    data:posIndicesFull "568:605"^^xsd:string ;
+    data:posIndicesPart "1048:1055"^^xsd:string,
+        "1136:1144"^^xsd:string,
+        "1505:1513"^^xsd:string,
+        "1774:1782"^^xsd:string,
+        "2661:2668"^^xsd:string,
+        "3402:3410"^^xsd:string,
+        "3422:3430"^^xsd:string,
+        "3670:3677"^^xsd:string,
+        "4064:4071"^^xsd:string ;
+    data:wdtLink wdt:Q264675 ;
+    :hasChild data:Count_Christian_of_Rosenborg ;
+    :hasRelation data:Count_Christian_of_Rosenborg,
+        data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasSon data:Count_Christian_of_Rosenborg ;
+    :isAncestorOf data:Count_Christian_of_Rosenborg ;
+    :isAuntOf data:Count_Christian_of_Rosenborg ;
+    :isBloodrelationOf data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isMotherOf data:Count_Christian_of_Rosenborg ;
+    :isParentOf data:Count_Christian_of_Rosenborg ;
+    :isSiblingOf data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isSisterOf data:Princess_Caroline-Mathilde_of_Denmark .
+
+data:Count_Christian_of_Rosenborg a :Man,
+        :Person ;
+    rdfs:label "Count Christian of Rosenborg"^^xsd:string ;
+    data:posIndicesFull "0:28"^^xsd:string,
+        "174:201"^^xsd:string,
+        "181:201"^^xsd:string,
+        "6:28"^^xsd:string ;
+    data:posIndicesPart "1266:1275"^^xsd:string,
+        "1590:1599"^^xsd:string,
+        "1828:1837"^^xsd:string,
+        "1962:1971"^^xsd:string,
+        "2241:2250"^^xsd:string,
+        "2356:2365"^^xsd:string,
+        "2515:2524"^^xsd:string,
+        "2579:2584"^^xsd:string,
+        "2588:2597"^^xsd:string,
+        "2670:2679"^^xsd:string,
+        "2834:2843"^^xsd:string,
+        "3045:3054"^^xsd:string,
+        "3183:3188"^^xsd:string,
+        "3189:3198"^^xsd:string,
+        "3457:3462"^^xsd:string,
+        "3463:3472"^^xsd:string,
+        "3702:3707"^^xsd:string,
+        "3708:3717"^^xsd:string,
+        "3982:3987"^^xsd:string,
+        "3988:3997"^^xsd:string,
+        "4154:4159"^^xsd:string,
+        "4160:4169"^^xsd:string,
+        "4251:4260"^^xsd:string,
+        "679:688"^^xsd:string,
+        "946:955"^^xsd:string ;
+    data:wdtLink wdt:Q573263 ;
+    :alsoKnownAs "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Denmark"^^xsd:string,
+        "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Rosenborg"^^xsd:string,
+        "Christian of Denmark"^^xsd:string,
+        "Christian of Rosenborg"^^xsd:string,
+        "Christian zu Schleswig-Holstein-Sonderburg-Glücksburg, Prince of Denmark"^^xsd:string,
+        "Count Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Rosenborg"^^xsd:string,
+        "Prince Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Denmark"^^xsd:string,
+        "Prince Christian of Denmark"^^xsd:string ;
+    :hasAncestor data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasBrother data:Count_Christian_of_Rosenborg ;
+    :hasMother data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasParent data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasRelation data:Count_Christian_of_Rosenborg,
+        data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Count_Christian_of_Rosenborg ;
+    :isBrotherOf data:Count_Christian_of_Rosenborg ;
+    :isChildOf data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isSiblingOf data:Count_Christian_of_Rosenborg ;
+    :isSonOf data:Princess_Caroline-Mathilde_of_Denmark .
+

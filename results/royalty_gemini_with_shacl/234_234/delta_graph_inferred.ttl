@@ -1,0 +1,299 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:Frederica a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sofia ;
+    :hasDaughter data:Sofia ;
+    :hasRelation data:Frederica,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :hasSister data:Frederica ;
+    :isAncestorOf data:Sofia ;
+    :isAuntOf data:Sofia ;
+    :isBloodrelationOf data:Frederica ;
+    :isMotherOf data:Sofia ;
+    :isParentOf data:Sofia ;
+    :isSiblingOf data:Frederica ;
+    :isSisterOf data:Frederica .
+
+data:PaulOfGreece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PaulOfGreece ;
+    :hasChild data:Sofia ;
+    :hasDaughter data:Sofia ;
+    :hasRelation data:Frederica,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :isAncestorOf data:Sofia ;
+    :isBloodrelationOf data:PaulOfGreece ;
+    :isBrotherOf data:PaulOfGreece ;
+    :isFatherOf data:Sofia ;
+    :isParentOf data:Sofia ;
+    :isSiblingOf data:PaulOfGreece ;
+    :isUncleOf data:Sofia .
+
+data:AlfonsoXIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlfonsoXIII ;
+    :hasChild data:Juan ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:AlfonsoXIII,
+        data:JaimeDukeOfSegovia,
+        data:Juan,
+        data:JuanCarlosI,
+        data:MariaDeLasMercedes,
+        data:Pilar,
+        data:VictoriaEugenie ;
+    :hasSon data:Juan ;
+    :isAncestorOf data:Juan,
+        data:JuanCarlosI,
+        data:Pilar ;
+    :isBloodrelationOf data:AlfonsoXIII ;
+    :isBrotherOf data:AlfonsoXIII ;
+    :isFatherOf data:Juan ;
+    :isParentOf data:Juan ;
+    :isSiblingOf data:AlfonsoXIII ;
+    :isUncleOf data:Juan .
+
+data:Sofia a :Person,
+        :Woman ;
+    :hasAncestor data:Frederica,
+        data:PaulOfGreece ;
+    :hasFather data:PaulOfGreece ;
+    :hasMother data:Frederica ;
+    :hasParent data:Frederica,
+        data:PaulOfGreece ;
+    :hasRelation data:Frederica,
+        data:PaulOfGreece,
+        data:Sofia ;
+    :hasSister data:Sofia ;
+    :isBloodrelationOf data:Sofia ;
+    :isChildOf data:Frederica,
+        data:PaulOfGreece ;
+    :isDaughterOf data:Frederica,
+        data:PaulOfGreece ;
+    :isSiblingOf data:Sofia ;
+    :isSisterOf data:Sofia .
+
+data:VictoriaEugenie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Juan ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:AlfonsoXIII,
+        data:JaimeDukeOfSegovia,
+        data:Juan,
+        data:JuanCarlosI,
+        data:MariaDeLasMercedes,
+        data:Pilar,
+        data:VictoriaEugenie ;
+    :hasSister data:VictoriaEugenie ;
+    :hasSon data:Juan ;
+    :isAncestorOf data:Juan,
+        data:JuanCarlosI,
+        data:Pilar ;
+    :isAuntOf data:Juan ;
+    :isBloodrelationOf data:VictoriaEugenie ;
+    :isMotherOf data:Juan ;
+    :isParentOf data:Juan ;
+    :isSiblingOf data:VictoriaEugenie ;
+    :isSisterOf data:VictoriaEugenie .
+
+data:AlfonsoPrinceOfAsturias a :Man,
+        :Person ;
+    :hasBrother data:AlfonsoPrinceOfAsturias,
+        data:JaimeDukeOfSegovia,
+        data:Juan ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:AlfonsoXIII,
+        data:JaimeDukeOfSegovia,
+        data:Juan,
+        data:JuanCarlosI,
+        data:MariaDeLasMercedes,
+        data:Pilar,
+        data:VictoriaEugenie ;
+    :isBloodrelationOf data:AlfonsoPrinceOfAsturias,
+        data:JaimeDukeOfSegovia,
+        data:Juan ;
+    :isBrotherOf data:AlfonsoPrinceOfAsturias,
+        data:JaimeDukeOfSegovia,
+        data:Juan ;
+    :isSiblingOf data:AlfonsoPrinceOfAsturias,
+        data:JaimeDukeOfSegovia,
+        data:Juan ;
+    :isUncleOf data:JuanCarlosI,
+        data:Pilar .
+
+data:JaimeDukeOfSegovia a :Man,
+        :Person ;
+    :hasBrother data:AlfonsoPrinceOfAsturias,
+        data:JaimeDukeOfSegovia,
+        data:Juan ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:AlfonsoXIII,
+        data:JaimeDukeOfSegovia,
+        data:Juan,
+        data:JuanCarlosI,
+        data:MariaDeLasMercedes,
+        data:Pilar,
+        data:VictoriaEugenie ;
+    :isBloodrelationOf data:AlfonsoPrinceOfAsturias,
+        data:JaimeDukeOfSegovia,
+        data:Juan ;
+    :isBrotherOf data:AlfonsoPrinceOfAsturias,
+        data:JaimeDukeOfSegovia,
+        data:Juan ;
+    :isSiblingOf data:AlfonsoPrinceOfAsturias,
+        data:JaimeDukeOfSegovia,
+        data:Juan ;
+    :isUncleOf data:JuanCarlosI,
+        data:Pilar .
+
+data:MariaDeLasMercedes a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:JuanCarlosI,
+        data:Pilar ;
+    :hasDaughter data:Pilar ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:AlfonsoXIII,
+        data:JaimeDukeOfSegovia,
+        data:Juan,
+        data:JuanCarlosI,
+        data:MariaDeLasMercedes,
+        data:Pilar,
+        data:VictoriaEugenie ;
+    :hasSister data:MariaDeLasMercedes ;
+    :hasSon data:JuanCarlosI ;
+    :isAncestorOf data:JuanCarlosI,
+        data:Pilar ;
+    :isAuntOf data:JuanCarlosI,
+        data:Pilar ;
+    :isBloodrelationOf data:MariaDeLasMercedes ;
+    :isMotherOf data:JuanCarlosI,
+        data:Pilar ;
+    :isParentOf data:JuanCarlosI,
+        data:Pilar ;
+    :isSiblingOf data:MariaDeLasMercedes ;
+    :isSisterOf data:MariaDeLasMercedes .
+
+data:JuanCarlosI a :Man,
+        :Person ;
+    :hasAncestor data:AlfonsoXIII,
+        data:Juan,
+        data:MariaDeLasMercedes,
+        data:VictoriaEugenie ;
+    :hasBrother data:JuanCarlosI ;
+    :hasFather data:Juan ;
+    :hasMother data:MariaDeLasMercedes ;
+    :hasParent data:Juan,
+        data:MariaDeLasMercedes ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:AlfonsoXIII,
+        data:JaimeDukeOfSegovia,
+        data:Juan,
+        data:JuanCarlosI,
+        data:MariaDeLasMercedes,
+        data:Pilar,
+        data:VictoriaEugenie ;
+    :hasSister data:Pilar ;
+    :isBloodrelationOf data:JuanCarlosI,
+        data:Pilar ;
+    :isBrotherOf data:JuanCarlosI,
+        data:Pilar ;
+    :isChildOf data:Juan,
+        data:MariaDeLasMercedes ;
+    :isSiblingOf data:JuanCarlosI,
+        data:Pilar ;
+    :isSonOf data:Juan,
+        data:MariaDeLasMercedes .
+
+data:Pilar a :Person,
+        :Woman ;
+    :hasAncestor data:AlfonsoXIII,
+        data:Juan,
+        data:MariaDeLasMercedes,
+        data:VictoriaEugenie ;
+    :hasBrother data:JuanCarlosI ;
+    :hasFather data:Juan ;
+    :hasMother data:MariaDeLasMercedes ;
+    :hasParent data:Juan,
+        data:MariaDeLasMercedes ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:AlfonsoXIII,
+        data:JaimeDukeOfSegovia,
+        data:Juan,
+        data:JuanCarlosI,
+        data:MariaDeLasMercedes,
+        data:Pilar,
+        data:VictoriaEugenie ;
+    :hasSister data:Pilar ;
+    :isBloodrelationOf data:JuanCarlosI,
+        data:Pilar ;
+    :isChildOf data:Juan,
+        data:MariaDeLasMercedes ;
+    :isDaughterOf data:Juan,
+        data:MariaDeLasMercedes ;
+    :isSiblingOf data:JuanCarlosI,
+        data:Pilar ;
+    :isSisterOf data:JuanCarlosI,
+        data:Pilar .
+
+data:Juan a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:AlfonsoXIII,
+        data:VictoriaEugenie ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:AlfonsoPrinceOfAsturias,
+        data:JaimeDukeOfSegovia,
+        data:Juan ;
+    :hasChild data:JuanCarlosI,
+        data:Pilar ;
+    :hasDaughter data:Pilar ;
+    :hasDeathYear 1993 ;
+    :hasFather data:AlfonsoXIII ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:VictoriaEugenie ;
+    :hasParent data:AlfonsoXIII,
+        data:VictoriaEugenie ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:AlfonsoXIII,
+        data:JaimeDukeOfSegovia,
+        data:Juan,
+        data:JuanCarlosI,
+        data:MariaDeLasMercedes,
+        data:Pilar,
+        data:VictoriaEugenie ;
+    :hasSex data:Male ;
+    :hasSon data:JuanCarlosI ;
+    :isAncestorOf data:JuanCarlosI,
+        data:Pilar ;
+    :isBloodrelationOf data:AlfonsoPrinceOfAsturias,
+        data:JaimeDukeOfSegovia,
+        data:Juan ;
+    :isBrotherOf data:AlfonsoPrinceOfAsturias,
+        data:JaimeDukeOfSegovia,
+        data:Juan ;
+    :isChildOf data:AlfonsoXIII,
+        data:VictoriaEugenie ;
+    :isFatherOf data:JuanCarlosI,
+        data:Pilar ;
+    :isParentOf data:JuanCarlosI,
+        data:Pilar ;
+    :isSiblingOf data:AlfonsoPrinceOfAsturias,
+        data:JaimeDukeOfSegovia,
+        data:Juan ;
+    :isSonOf data:AlfonsoXIII,
+        data:VictoriaEugenie ;
+    :isUncleOf data:JuanCarlosI,
+        data:Pilar .
+

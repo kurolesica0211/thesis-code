@@ -1,0 +1,101 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Andreas_Felix_Paul_von_Bismarck a :Man,
+        :Person ;
+    :hasBirthYear "1979"^^xsd:string ;
+    :hasBrother data:Andreas_Felix_Paul_von_Bismarck ;
+    :hasDeathYear "2019"^^xsd:string ;
+    :hasRelation data:Andreas_Felix_Paul_von_Bismarck ;
+    :isBloodrelationOf data:Andreas_Felix_Paul_von_Bismarck ;
+    :isBrotherOf data:Andreas_Felix_Paul_von_Bismarck ;
+    :isSiblingOf data:Andreas_Felix_Paul_von_Bismarck .
+
+data:Kira_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Kira_of_Prussia ;
+    :hasDaughter data:Kira_of_Prussia ;
+    :hasRelation data:Kira_Kirillovna_of_Russia,
+        data:Kira_Marina_Liepsner,
+        data:Kira_of_Prussia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :hasSister data:Kira_Kirillovna_of_Russia ;
+    :isAncestorOf data:Kira_Marina_Liepsner,
+        data:Kira_of_Prussia ;
+    :isAuntOf data:Kira_of_Prussia ;
+    :isBloodrelationOf data:Kira_Kirillovna_of_Russia ;
+    :isMotherOf data:Kira_of_Prussia ;
+    :isParentOf data:Kira_of_Prussia ;
+    :isSiblingOf data:Kira_Kirillovna_of_Russia ;
+    :isSisterOf data:Kira_Kirillovna_of_Russia .
+
+data:Louis_Ferdinand_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Ferdinand_of_Prussia ;
+    :hasChild data:Kira_of_Prussia ;
+    :hasDaughter data:Kira_of_Prussia ;
+    :hasRelation data:Kira_Kirillovna_of_Russia,
+        data:Kira_Marina_Liepsner,
+        data:Kira_of_Prussia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :isAncestorOf data:Kira_Marina_Liepsner,
+        data:Kira_of_Prussia ;
+    :isBloodrelationOf data:Louis_Ferdinand_of_Prussia ;
+    :isBrotherOf data:Louis_Ferdinand_of_Prussia ;
+    :isFatherOf data:Kira_of_Prussia ;
+    :isParentOf data:Kira_of_Prussia ;
+    :isSiblingOf data:Louis_Ferdinand_of_Prussia ;
+    :isUncleOf data:Kira_of_Prussia .
+
+data:Kira_Marina_Liepsner a :Person,
+        :Woman ;
+    :hasAncestor data:Kira_Kirillovna_of_Russia,
+        data:Kira_of_Prussia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :hasBirthYear "1977"^^xsd:string ;
+    :hasMother data:Kira_of_Prussia ;
+    :hasParent data:Kira_of_Prussia ;
+    :hasRelation data:Kira_Kirillovna_of_Russia,
+        data:Kira_Marina_Liepsner,
+        data:Kira_of_Prussia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :hasSister data:Kira_Marina_Liepsner ;
+    :isBloodrelationOf data:Kira_Marina_Liepsner ;
+    :isChildOf data:Kira_of_Prussia ;
+    :isDaughterOf data:Kira_of_Prussia ;
+    :isSiblingOf data:Kira_Marina_Liepsner ;
+    :isSisterOf data:Kira_Marina_Liepsner .
+
+data:Kira_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :hasBirthYear "1943"^^xsd:string ;
+    :hasChild data:Kira_Marina_Liepsner ;
+    :hasDaughter data:Kira_Marina_Liepsner ;
+    :hasDeathYear "2004"^^xsd:string ;
+    :hasFather data:Louis_Ferdinand_of_Prussia ;
+    :hasMother data:Kira_Kirillovna_of_Russia ;
+    :hasParent data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :hasRelation data:Kira_Kirillovna_of_Russia,
+        data:Kira_Marina_Liepsner,
+        data:Kira_of_Prussia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :hasSister data:Kira_of_Prussia ;
+    :isAncestorOf data:Kira_Marina_Liepsner ;
+    :isAuntOf data:Kira_Marina_Liepsner ;
+    :isBloodrelationOf data:Kira_of_Prussia ;
+    :isChildOf data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :isDaughterOf data:Kira_Kirillovna_of_Russia,
+        data:Louis_Ferdinand_of_Prussia ;
+    :isMotherOf data:Kira_Marina_Liepsner ;
+    :isParentOf data:Kira_Marina_Liepsner ;
+    :isSiblingOf data:Kira_of_Prussia ;
+    :isSisterOf data:Kira_of_Prussia .
+

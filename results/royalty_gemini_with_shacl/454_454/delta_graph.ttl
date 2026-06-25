@@ -2,31 +2,28 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Nicholas_Windsor a :Man,
-        :Person ;
-    :hasBirthYear 1970 ;
-    :hasBrother data:Earl_of_St_Andrews ;
-    :hasFather data:Prince_Edward_Duke_of_Kent ;
-    :hasMother data:Katharine_Duchess_of_Kent ;
-    :hasRelation data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski ;
-    :hasSister data:Lady_Helen_Taylor ;
-    :knownAs "Lord Nicholas Charles Edward Jonathan Windsor"^^xsd:string .
+data:Gabriella_Windsor a :Person,
+        :Woman ;
+    :alsoKnownAs data:Gabriella_Kingston ;
+    :hasBirthYear 1981 ;
+    :hasFather data:Prince_Michael_of_Kent ;
+    :hasMarriageYear 2019 ;
+    :hasMother data:Princess_Michael_of_Kent ;
+    :hasRelation data:Thomas_Henry_Robin_Kingston .
 
-data:Earl_of_St_Andrews a :Man,
+data:Gabriella_Kingston a :Person,
+        :Woman .
+
+data:Prince_Michael_of_Kent a :Ancestor,
+        :Man,
         :Person .
 
-data:Katharine_Duchess_of_Kent a :Ancestor,
+data:Princess_Michael_of_Kent a :Ancestor,
         :Person,
         :Woman .
 
-data:Lady_Helen_Taylor a :Person,
-        :Woman .
-
-data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski a :Person,
-        :Woman ;
-    :knownAs "Lady Nicholas Windsor"^^xsd:string .
-
-data:Prince_Edward_Duke_of_Kent a :Ancestor,
-        :Man,
-        :Person .
+data:Thomas_Henry_Robin_Kingston a :Man,
+        :Person ;
+    :hasBirthYear 1978 ;
+    :hasDeathYear 2024 .
 

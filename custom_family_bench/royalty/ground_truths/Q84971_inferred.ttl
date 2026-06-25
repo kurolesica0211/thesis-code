@@ -1,0 +1,78 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Philipp_Albrecht-_Duke_of_Württemberg a :Man,
+        :Person ;
+    rdfs:label "Philipp Albrecht, Duke of Württemberg"^^xsd:string ;
+    data:posIndicesFull "436:473"^^xsd:string,
+        "757:794"^^xsd:string ;
+    data:posIndicesPart "952:959"^^xsd:string,
+        "960:968"^^xsd:string ;
+    data:wdtLink wdt:Q62965 ;
+    :alsoKnownAs "Duke Philipp Albrecht of Württemberg, Duke of Württemberg"^^xsd:string,
+        "Duke Philipp Albrecht, The Duke of Württemberg"^^xsd:string ;
+    :hasBrother data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasRelation data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :isBrotherOf data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :isSiblingOf data:Philipp_Albrecht-_Duke_of_Württemberg .
+
+data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Archduchess Maria Cristina, Hereditary Grand Duchess of Tuscany"^^xsd:string ;
+    data:posIndicesFull "675:722"^^xsd:string ;
+    data:posIndicesPart "865:876"^^xsd:string ;
+    data:wdtLink wdt:Q450684 ;
+    :alsoKnownAs "Princess Maria Cristina of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasChild data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :hasDaughter data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :hasRelation data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany,
+        data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :hasSex data:female ;
+    :hasSister data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isAncestorOf data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :isAuntOf data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :isBloodrelationOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isMotherOf data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :isParentOf data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :isSiblingOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isSisterOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany .
+
+data:Duchess_Rosa-_Duchess_of_Württemberg a :Person,
+        :Woman ;
+    rdfs:label "Duchess Rosa, Duchess of Württemberg"^^xsd:string ;
+    data:wdtLink wdt:Q84971 ;
+    :alsoKnownAs "Archduchess Rosa of Austria"^^xsd:string,
+        "Archduchess Rosa of Austria, Princess of Tuscany"^^xsd:string,
+        "Duchess Rosa, The Duchess of Württemberg"^^xsd:string ;
+    :hasAncestor data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasMother data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasParent data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasRelation data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany,
+        data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :isBloodrelationOf data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :isChildOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isDaughterOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isSiblingOf data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :isSisterOf data:Duchess_Rosa-_Duchess_of_Württemberg .
+

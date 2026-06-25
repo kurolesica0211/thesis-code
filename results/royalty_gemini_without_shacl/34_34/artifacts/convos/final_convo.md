@@ -88,6 +88,8 @@ They had two children: Zenouska May Mowatt (born 26 May 1990), and Christian Ale
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -103,39 +105,9 @@ They had two children: Zenouska May Mowatt (born 26 May 1990), and Christian Ale
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -150,6 +122,23 @@ They had two children: Zenouska May Mowatt (born 26 May 1990), and Christian Ale
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -167,6 +156,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -234,29 +238,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,6 +261,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -277,6 +281,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -285,17 +291,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -323,6 +331,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -338,148 +430,166 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8c337374-2e12-4671-a1f5-2de753db2984)
- Call ID: 8c337374-2e12-4671-a1f5-2de753db2984
-  Args:
-    type: :Person
-    source: Marina_Ogilvy
-  AssignClass (0160fcbd-495c-4d04-a091-a7812d1da71b)
- Call ID: 0160fcbd-495c-4d04-a091-a7812d1da71b
+  AssignClass (5a8ff08c-1d2a-4c0f-b082-1e549cc4feba)
+ Call ID: 5a8ff08c-1d2a-4c0f-b082-1e549cc4feba
   Args:
     type: :Woman
-    source: Marina_Ogilvy
-  AddLiteral (2d09587f-0045-4fb1-9f51-9ac296a4fa3d)
- Call ID: 2d09587f-0045-4fb1-9f51-9ac296a4fa3d
+    source: Marina_Victoria_Alexandra_Ogilvy
+  AssignClass (f78bc9ea-ebc8-4e0e-9bd1-ad9f1faf8f53)
+ Call ID: f78bc9ea-ebc8-4e0e-9bd1-ad9f1faf8f53
+  Args:
+    source: Marina_Victoria_Alexandra_Ogilvy
+    type: :Person
+  AddLiteral (4f7ec75f-ef29-498d-bbee-627cd2124b5a)
+ Call ID: 4f7ec75f-ef29-498d-bbee-627cd2124b5a
   Args:
     literal_value: 1966
+    source: Marina_Victoria_Alexandra_Ogilvy
     literal_type: xsd:integer
-    source: Marina_Ogilvy
     relation: :hasBirthYear
-  AssignClass (d402d9d3-33ca-4901-b7ee-9fedde5b5ac8)
- Call ID: d402d9d3-33ca-4901-b7ee-9fedde5b5ac8
-  Args:
-    type: :Person
-    source: Angus_Ogilvy
-  AssignClass (256d8d08-8362-4f9a-bc16-b4dea79d5c3b)
- Call ID: 256d8d08-8362-4f9a-bc16-b4dea79d5c3b
+  AssignClass (ed643c66-73d6-4f07-bd78-a9b727713310)
+ Call ID: ed643c66-73d6-4f07-bd78-a9b727713310
   Args:
     type: :Man
-    source: Angus_Ogilvy
-  AssignClass (26e1219b-fe81-469a-95ad-5a112bc801cc)
- Call ID: 26e1219b-fe81-469a-95ad-5a112bc801cc
+    source: Sir_Angus_Ogilvy
+  AssignClass (4c6c11c8-a875-4441-ab0e-dc4e6bbcc056)
+ Call ID: 4c6c11c8-a875-4441-ab0e-dc4e6bbcc056
   Args:
-    source: Alexandra_of_Kent
+    source: Sir_Angus_Ogilvy
     type: :Person
-  AssignClass (2f126760-097a-4fb4-9e02-f67463d356ff)
- Call ID: 2f126760-097a-4fb4-9e02-f67463d356ff
+  AssignClass (490e0ec9-7314-41d6-9b37-13a641578c9a)
+ Call ID: 490e0ec9-7314-41d6-9b37-13a641578c9a
   Args:
+    source: Princess_Alexandra_of_Kent
     type: :Woman
-    source: Alexandra_of_Kent
-  AddTriple (964ee711-31a4-4109-b4f6-4208c2f71fb5)
- Call ID: 964ee711-31a4-4109-b4f6-4208c2f71fb5
+  AssignClass (1ca7886c-87a4-4a79-ad6e-6ab9d4e4743b)
+ Call ID: 1ca7886c-87a4-4a79-ad6e-6ab9d4e4743b
   Args:
-    target: Angus_Ogilvy
+    source: Princess_Alexandra_of_Kent
+    type: :Person
+  AddTriple (37864987-d90b-4057-8af4-89dbe1a9c990)
+ Call ID: 37864987-d90b-4057-8af4-89dbe1a9c990
+  Args:
     relation: :hasFather
-    source: Marina_Ogilvy
-  AddTriple (d80134d8-a502-400f-930f-ac2edbebd910)
- Call ID: d80134d8-a502-400f-930f-ac2edbebd910
+    source: Marina_Victoria_Alexandra_Ogilvy
+    target: Sir_Angus_Ogilvy
+  AddTriple (16c4e12b-5190-4085-b2e1-678b69a92570)
+ Call ID: 16c4e12b-5190-4085-b2e1-678b69a92570
   Args:
+    target: Princess_Alexandra_of_Kent
     relation: :hasMother
-    target: Alexandra_of_Kent
-    source: Marina_Ogilvy
-  AssignClass (cd0f87fa-e82b-47d0-ad7d-d4955b827ecf)
- Call ID: cd0f87fa-e82b-47d0-ad7d-d4955b827ecf
+    source: Marina_Victoria_Alexandra_Ogilvy
+  AssignClass (252c28fa-babe-45a4-ac3f-8d7c2720924f)
+ Call ID: 252c28fa-babe-45a4-ac3f-8d7c2720924f
+  Args:
+    type: :Man
+    source: James_Ogilvy
+  AssignClass (8e739742-c95d-4f96-bdf5-ca095d850536)
+ Call ID: 8e739742-c95d-4f96-bdf5-ca095d850536
   Args:
     source: James_Ogilvy
     type: :Person
-  AssignClass (a0f3cccb-975e-40e4-9ae3-efa082009ce8)
- Call ID: a0f3cccb-975e-40e4-9ae3-efa082009ce8
+  AddLiteral (aa4c7a47-d48a-4948-98ce-fb7552d198ca)
+ Call ID: aa4c7a47-d48a-4948-98ce-fb7552d198ca
   Args:
+    literal_value: 1964
+    literal_type: xsd:integer
     source: James_Ogilvy
-    type: :Man
-  AddTriple (bdc9ed67-bb22-4bbe-a95a-a50cdadaaa62)
- Call ID: bdc9ed67-bb22-4bbe-a95a-a50cdadaaa62
+    relation: :hasBirthYear
+  AddTriple (07b33be7-dfd0-4548-972d-de2f89909790)
+ Call ID: 07b33be7-dfd0-4548-972d-de2f89909790
   Args:
+    source: Marina_Victoria_Alexandra_Ogilvy
     relation: :hasBrother
     target: James_Ogilvy
-    source: Marina_Ogilvy
-  AssignClass (f524fb3e-3e16-4238-b592-d8c71759f215)
- Call ID: f524fb3e-3e16-4238-b592-d8c71759f215
-  Args:
-    source: Marina_of_Greece_and_Denmark
-    type: :Person
-  AssignClass (722f4a7c-7c7a-45f2-b339-4d5726b4f957)
- Call ID: 722f4a7c-7c7a-45f2-b339-4d5726b4f957
-  Args:
-    source: Marina_of_Greece_and_Denmark
-    type: :Woman
-  AssignClass (1b429521-5f81-4312-8b8b-8d01de44dac8)
- Call ID: 1b429521-5f81-4312-8b8b-8d01de44dac8
+  AssignClass (abe5b3dc-da8f-4cc3-a08a-86b0457a3062)
+ Call ID: abe5b3dc-da8f-4cc3-a08a-86b0457a3062
   Args:
     source: Paul_Julian_Mowatt
-    type: :Person
-  AssignClass (de465303-e578-4312-b876-9c74fc64c5ce)
- Call ID: de465303-e578-4312-b876-9c74fc64c5ce
-  Args:
     type: :Man
+  AssignClass (b7b379a8-f7c3-4488-bf4a-379768a37af4)
+ Call ID: b7b379a8-f7c3-4488-bf4a-379768a37af4
+  Args:
+    type: :Person
     source: Paul_Julian_Mowatt
-  AddLiteral (25ffd35a-02a3-4027-9ec5-8c3e28c15190)
- Call ID: 25ffd35a-02a3-4027-9ec5-8c3e28c15190
+  AddLiteral (2973e4a9-96aa-4ad1-8258-c304787a25be)
+ Call ID: 2973e4a9-96aa-4ad1-8258-c304787a25be
   Args:
     relation: :hasBirthYear
-    source: Paul_Julian_Mowatt
     literal_type: xsd:integer
+    source: Paul_Julian_Mowatt
     literal_value: 1962
-  AddTriple (931f27c0-9e16-46cd-8ba9-646df3f6c4a1)
- Call ID: 931f27c0-9e16-46cd-8ba9-646df3f6c4a1
+  AddLiteral (4728061e-ca0d-444d-bc8c-372d45d43caf)
+ Call ID: 4728061e-ca0d-444d-bc8c-372d45d43caf
   Args:
-    source: Marina_Ogilvy
+    literal_type: xsd:integer
+    source: Marina_Victoria_Alexandra_Ogilvy
+    relation: :hasMarriageYear
+    literal_value: 1990
+  AddTriple (6cdf0fec-519d-402d-82ca-e012c0fc71a5)
+ Call ID: 6cdf0fec-519d-402d-82ca-e012c0fc71a5
+  Args:
     target: Paul_Julian_Mowatt
     relation: :hasRelation
-  AssignClass (03ad2126-1c67-42c1-8181-7db4bfbcdec4)
- Call ID: 03ad2126-1c67-42c1-8181-7db4bfbcdec4
+    source: Marina_Victoria_Alexandra_Ogilvy
+  AssignClass (b5e37392-54eb-4e23-b373-20b07e154716)
+ Call ID: b5e37392-54eb-4e23-b373-20b07e154716
   Args:
-    source: Zenouska_May_Mowatt
-    type: :Person
-  AssignClass (542f550f-4c2d-48d1-83d3-169d32544fa9)
- Call ID: 542f550f-4c2d-48d1-83d3-169d32544fa9
-  Args:
-    source: Zenouska_May_Mowatt
     type: :Woman
-  AddTriple (c9c39bfd-25da-4671-8d83-595bf3cf6888)
- Call ID: c9c39bfd-25da-4671-8d83-595bf3cf6888
+    source: Zenouska_May_Mowatt
+  AssignClass (38cfa2f1-e78c-4ca8-9116-4f9e653d3a2e)
+ Call ID: 38cfa2f1-e78c-4ca8-9116-4f9e653d3a2e
   Args:
+    type: :Person
+    source: Zenouska_May_Mowatt
+  AddLiteral (2eb45a2b-949a-4d0b-a2e4-eed00875d6b2)
+ Call ID: 2eb45a2b-949a-4d0b-a2e4-eed00875d6b2
+  Args:
+    literal_value: 1990
+    source: Zenouska_May_Mowatt
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddTriple (8f7cd302-3f4f-4176-9915-486ba2c6e8d5)
+ Call ID: 8f7cd302-3f4f-4176-9915-486ba2c6e8d5
+  Args:
+    target: Marina_Victoria_Alexandra_Ogilvy
     source: Zenouska_May_Mowatt
     relation: :hasMother
-    target: Marina_Ogilvy
-  AddTriple (9d20092c-03cf-4b48-988e-614135c249dd)
- Call ID: 9d20092c-03cf-4b48-988e-614135c249dd
+  AddTriple (65f13841-fdbd-471e-845f-a1b16824c066)
+ Call ID: 65f13841-fdbd-471e-845f-a1b16824c066
   Args:
-    target: Paul_Julian_Mowatt
     relation: :hasFather
     source: Zenouska_May_Mowatt
-  AssignClass (56ef0ad5-48ee-4f02-bce9-162eed51b9ef)
- Call ID: 56ef0ad5-48ee-4f02-bce9-162eed51b9ef
-  Args:
-    type: :Person
-    source: Christian_Alexander_Mowatt
-  AssignClass (ec1c3bd7-1628-4112-a83c-a5ee0901df5e)
- Call ID: ec1c3bd7-1628-4112-a83c-a5ee0901df5e
+    target: Paul_Julian_Mowatt
+  AssignClass (a8e1b7c9-d4d8-44b4-b54f-2999bd827eeb)
+ Call ID: a8e1b7c9-d4d8-44b4-b54f-2999bd827eeb
   Args:
     type: :Man
     source: Christian_Alexander_Mowatt
-  AddTriple (d123766d-b764-467e-9a0d-eb5b56cee626)
- Call ID: d123766d-b764-467e-9a0d-eb5b56cee626
+  AssignClass (c0b07b4c-a79e-49bf-af6c-778293f9a28e)
+ Call ID: c0b07b4c-a79e-49bf-af6c-778293f9a28e
   Args:
-    target: Marina_Ogilvy
+    type: :Person
+    source: Christian_Alexander_Mowatt
+  AddLiteral (f3c46c00-6232-43af-bc89-c005f4cd9d04)
+ Call ID: f3c46c00-6232-43af-bc89-c005f4cd9d04
+  Args:
+    relation: :hasBirthYear
+    source: Christian_Alexander_Mowatt
+    literal_type: xsd:integer
+    literal_value: 1993
+  AddTriple (e1e92a40-c2b7-461d-bc1b-0005b5e397f2)
+ Call ID: e1e92a40-c2b7-461d-bc1b-0005b5e397f2
+  Args:
     relation: :hasMother
     source: Christian_Alexander_Mowatt
-  AddTriple (1c1dc712-b872-46c5-a8e5-fc887a2cd515)
- Call ID: 1c1dc712-b872-46c5-a8e5-fc887a2cd515
+    target: Marina_Victoria_Alexandra_Ogilvy
+  AddTriple (870f3dcb-9aca-4142-b2b9-653ba78a8791)
+ Call ID: 870f3dcb-9aca-4142-b2b9-653ba78a8791
   Args:
     target: Paul_Julian_Mowatt
     relation: :hasFather
     source: Christian_Alexander_Mowatt
-  Finish (bc007a66-06d2-4375-a706-4010b428a14f)
- Call ID: bc007a66-06d2-4375-a706-4010b428a14f
+  Finish (bc1ed566-432d-44ad-ae5e-8709aee644db)
+ Call ID: bc1ed566-432d-44ad-ae5e-8709aee644db
   Args:

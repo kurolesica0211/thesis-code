@@ -1,0 +1,573 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Prince_Edward-_Duke_of_Kent a :Man,
+        :Person ;
+    rdfs:label "Prince Edward, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "8151:8163"^^xsd:string ;
+    data:posIndicesPart "10099:10105"^^xsd:string,
+        "10255:10261"^^xsd:string,
+        "10583:10589"^^xsd:string,
+        "11125:11131"^^xsd:string,
+        "9304:9308"^^xsd:string ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent"^^xsd:string,
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent"^^xsd:string,
+        "Edward Kent"^^xsd:string,
+        "His Royal Highness The Duke of Kent"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward of Kent"^^xsd:string,
+        "The Duke of Kent"^^xsd:string ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
+    :hasRelation data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Edward-_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent .
+
+data:Prince_Michael_of_Kent a :Man,
+        :Person ;
+    rdfs:label "Prince Michael of Kent"^^xsd:string ;
+    data:posIndicesFull "10063:10085"^^xsd:string ;
+    data:posIndicesPart "10255:10261"^^xsd:string,
+        "10583:10589"^^xsd:string,
+        "11000:11007"^^xsd:string,
+        "11125:11131"^^xsd:string ;
+    data:wdtLink wdt:Q313752 ;
+    :alsoKnownAs "Michael George Charles Franklin"^^xsd:string,
+        "Prince Michael George Charles Franklin of Kent"^^xsd:string ;
+    :hasBrother data:Prince_Michael_of_Kent ;
+    :hasRelation data:Prince_Michael_of_Kent ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Michael_of_Kent ;
+    :isBrotherOf data:Prince_Michael_of_Kent ;
+    :isSiblingOf data:Prince_Michael_of_Kent .
+
+data:male a :Male .
+
+data:Prince_Paul_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Paul of Yugoslavia"^^xsd:string ;
+    data:posIndicesFull "213:240"^^xsd:string,
+        "222:240"^^xsd:string,
+        "4481:4506"^^xsd:string,
+        "4488:4506"^^xsd:string,
+        "490:515"^^xsd:string,
+        "497:515"^^xsd:string ;
+    data:posIndicesPart "10099:10105"^^xsd:string,
+        "10255:10261"^^xsd:string,
+        "10583:10589"^^xsd:string,
+        "11125:11131"^^xsd:string,
+        "1151:1155"^^xsd:string,
+        "2855:2861"^^xsd:string,
+        "3838:3844"^^xsd:string,
+        "4316:4322"^^xsd:string,
+        "4657:4661"^^xsd:string,
+        "4812:4818"^^xsd:string,
+        "4819:4823"^^xsd:string,
+        "4867:4877"^^xsd:string,
+        "4906:4916"^^xsd:string,
+        "4932:4936"^^xsd:string,
+        "5084:5090"^^xsd:string,
+        "5173:5183"^^xsd:string,
+        "5678:5688"^^xsd:string,
+        "579:585"^^xsd:string,
+        "5855:5861"^^xsd:string,
+        "586:590"^^xsd:string,
+        "5885:5891"^^xsd:string,
+        "6057:6061"^^xsd:string,
+        "6101:6111"^^xsd:string,
+        "615:625"^^xsd:string,
+        "6327:6333"^^xsd:string,
+        "6334:6338"^^xsd:string,
+        "6551:6561"^^xsd:string,
+        "6699:6705"^^xsd:string,
+        "6706:6710"^^xsd:string,
+        "6948:6954"^^xsd:string,
+        "7018:7024"^^xsd:string,
+        "7025:7029"^^xsd:string,
+        "7050:7060"^^xsd:string,
+        "7180:7186"^^xsd:string,
+        "735:745"^^xsd:string,
+        "7362:7368"^^xsd:string,
+        "7378:7388"^^xsd:string,
+        "7480:7486"^^xsd:string,
+        "7487:7491"^^xsd:string,
+        "7581:7585"^^xsd:string,
+        "8136:8142"^^xsd:string,
+        "849:855"^^xsd:string,
+        "8545:8549"^^xsd:string,
+        "856:860"^^xsd:string,
+        "8781:8785"^^xsd:string,
+        "8876:8886"^^xsd:string,
+        "9030:9034"^^xsd:string,
+        "9370:9374"^^xsd:string,
+        "939:949"^^xsd:string,
+        "988:992"^^xsd:string ;
+    data:wdtLink wdt:Q313128 ;
+    :alsoKnownAs "Pablo Karagjorgjevich"^^xsd:string,
+        "Paul Karageorgevich"^^xsd:string,
+        "Paul of Yugoslavia"^^xsd:string,
+        "Pavle Karađorđević"^^xsd:string,
+        "Prince of Yugoslavia Paul"^^xsd:string,
+        "Prince of Yugoslavia Pavle"^^xsd:string,
+        "Prince of Yugoslavia Pavle Karađorđević"^^xsd:string ;
+    :hasBrother data:Prince_Paul_of_Yugoslavia ;
+    :hasChild data:Prince_Alexander_of_Serbia ;
+    :hasRelation data:Prince_Alexander_of_Serbia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Alexander_of_Serbia ;
+    :isAncestorOf data:Prince_Alexander_of_Serbia ;
+    :isBloodrelationOf data:Prince_Paul_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Paul_of_Yugoslavia ;
+    :isFatherOf data:Prince_Alexander_of_Serbia ;
+    :isParentOf data:Prince_Alexander_of_Serbia ;
+    :isSiblingOf data:Prince_Paul_of_Yugoslavia ;
+    :isUncleOf data:Prince_Alexander_of_Serbia .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Elena Vladimirovna of Russia"^^xsd:string ;
+    data:posIndicesFull "1606:1648"^^xsd:string,
+        "316:358"^^xsd:string ;
+    data:posIndicesPart "2119:2125"^^xsd:string,
+        "7232:7237"^^xsd:string,
+        "7238:7245"^^xsd:string,
+        "7246:7251"^^xsd:string,
+        "7252:7264"^^xsd:string,
+        "9293:9300"^^xsd:string,
+        "9461:9466"^^xsd:string,
+        "9467:9479"^^xsd:string ;
+    data:wdtLink wdt:Q232483 ;
+    :hasChild data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Alexander_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isMotherOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "1424:1447"^^xsd:string,
+        "1429:1437"^^xsd:string,
+        "1429:1447"^^xsd:string,
+        "383:406"^^xsd:string,
+        "388:396"^^xsd:string,
+        "388:406"^^xsd:string ;
+    data:posIndicesPart "2432:2438"^^xsd:string,
+        "2995:3001"^^xsd:string,
+        "7689:7695"^^xsd:string,
+        "7730:7736"^^xsd:string,
+        "8143:8149"^^xsd:string,
+        "9496:9502"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Alexander_of_Serbia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:Prince_Alexander_of_Serbia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Olga Constantinovna of Russia"^^xsd:string ;
+    data:posIndicesFull "11789:11803"^^xsd:string,
+        "9:23"^^xsd:string ;
+    data:posIndicesPart "10209:10213"^^xsd:string,
+        "10430:10434"^^xsd:string,
+        "10493:10497"^^xsd:string,
+        "10770:10774"^^xsd:string,
+        "10855:10859"^^xsd:string,
+        "1193:1197"^^xsd:string,
+        "1343:1347"^^xsd:string,
+        "1458:1462"^^xsd:string,
+        "1747:1751"^^xsd:string,
+        "1940:1944"^^xsd:string,
+        "2086:2090"^^xsd:string,
+        "2119:2125"^^xsd:string,
+        "251:255"^^xsd:string,
+        "2942:2946"^^xsd:string,
+        "3120:3124"^^xsd:string,
+        "3534:3538"^^xsd:string,
+        "3874:3878"^^xsd:string,
+        "4045:4049"^^xsd:string,
+        "4167:4171"^^xsd:string,
+        "4386:4390"^^xsd:string,
+        "4651:4655"^^xsd:string,
+        "4923:4927"^^xsd:string,
+        "5185:5189"^^xsd:string,
+        "5430:5434"^^xsd:string,
+        "5717:5721"^^xsd:string,
+        "6392:6396"^^xsd:string,
+        "6563:6567"^^xsd:string,
+        "667:671"^^xsd:string,
+        "6843:6847"^^xsd:string,
+        "7040:7044"^^xsd:string,
+        "7587:7591"^^xsd:string,
+        "7788:7792"^^xsd:string,
+        "7923:7927"^^xsd:string,
+        "8266:8270"^^xsd:string,
+        "8331:8335"^^xsd:string,
+        "8618:8622"^^xsd:string,
+        "8672:8676"^^xsd:string,
+        "8787:8791"^^xsd:string,
+        "8970:8974"^^xsd:string,
+        "9125:9129"^^xsd:string,
+        "9361:9365"^^xsd:string,
+        "9447:9451"^^xsd:string,
+        "9534:9538"^^xsd:string,
+        "9875:9879"^^xsd:string,
+        "994:998"^^xsd:string ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece"^^xsd:string,
+        "Queen Olga of Greece"^^xsd:string ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Alexander_of_Serbia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :hasSon data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:Prince_Alexander_of_Serbia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Constantine I of Greece"^^xsd:string ;
+    data:posIndicesFull "2355:2373"^^xsd:string,
+        "2360:2373"^^xsd:string,
+        "3090:3103"^^xsd:string ;
+    data:posIndicesPart "2599:2610"^^xsd:string,
+        "2995:3001"^^xsd:string,
+        "7689:7695"^^xsd:string,
+        "9496:9502"^^xsd:string ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I"^^xsd:string,
+        "Constantine Oldenburg I"^^xsd:string,
+        "King Constantine I"^^xsd:string,
+        "King Constantine I of Greece"^^xsd:string,
+        "Konstantinos I of Greece"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Alexander_of_Serbia a :Man,
+        :Person ;
+    rdfs:label "Prince Alexander of Serbia"^^xsd:string ;
+    data:posIndicesFull "10012:10042"^^xsd:string ;
+    data:posIndicesPart "10255:10261"^^xsd:string,
+        "10583:10589"^^xsd:string,
+        "10590:10599"^^xsd:string,
+        "10941:10947"^^xsd:string,
+        "11125:11131"^^xsd:string,
+        "11132:11141"^^xsd:string ;
+    data:wdtLink wdt:Q2242035 ;
+    :alsoKnownAs "Prince Alexander of Yugoslavia"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Alexander_of_Serbia ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:George_I_of_Greece,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Alexander_of_Serbia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Alexander_of_Serbia ;
+    :isBrotherOf data:Prince_Alexander_of_Serbia ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Alexander_of_Serbia ;
+    :isSonOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Olga of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "0:35"^^xsd:string,
+        "11780:11815"^^xsd:string,
+        "11789:11815"^^xsd:string,
+        "213:240"^^xsd:string,
+        "4481:4506"^^xsd:string,
+        "490:515"^^xsd:string,
+        "9:35"^^xsd:string ;
+    data:posIndicesPart "10200:10208"^^xsd:string,
+        "10209:10213"^^xsd:string,
+        "10421:10429"^^xsd:string,
+        "10430:10434"^^xsd:string,
+        "10493:10497"^^xsd:string,
+        "10761:10769"^^xsd:string,
+        "10770:10774"^^xsd:string,
+        "10846:10854"^^xsd:string,
+        "10855:10859"^^xsd:string,
+        "11155:11163"^^xsd:string,
+        "11334:11342"^^xsd:string,
+        "11354:11362"^^xsd:string,
+        "1193:1197"^^xsd:string,
+        "1343:1347"^^xsd:string,
+        "1449:1457"^^xsd:string,
+        "1458:1462"^^xsd:string,
+        "1747:1751"^^xsd:string,
+        "1940:1944"^^xsd:string,
+        "2086:2090"^^xsd:string,
+        "2192:2200"^^xsd:string,
+        "242:250"^^xsd:string,
+        "2432:2438"^^xsd:string,
+        "251:255"^^xsd:string,
+        "2942:2946"^^xsd:string,
+        "2995:3001"^^xsd:string,
+        "3120:3124"^^xsd:string,
+        "3234:3242"^^xsd:string,
+        "3296:3304"^^xsd:string,
+        "3525:3533"^^xsd:string,
+        "3534:3538"^^xsd:string,
+        "3728:3735"^^xsd:string,
+        "3874:3878"^^xsd:string,
+        "4045:4049"^^xsd:string,
+        "4167:4171"^^xsd:string,
+        "4386:4390"^^xsd:string,
+        "4651:4655"^^xsd:string,
+        "4693:4701"^^xsd:string,
+        "4923:4927"^^xsd:string,
+        "4991:4999"^^xsd:string,
+        "5161:5169"^^xsd:string,
+        "5185:5189"^^xsd:string,
+        "5430:5434"^^xsd:string,
+        "5578:5586"^^xsd:string,
+        "5717:5721"^^xsd:string,
+        "5916:5924"^^xsd:string,
+        "6392:6396"^^xsd:string,
+        "6563:6567"^^xsd:string,
+        "658:666"^^xsd:string,
+        "667:671"^^xsd:string,
+        "6843:6847"^^xsd:string,
+        "7040:7044"^^xsd:string,
+        "7290:7298"^^xsd:string,
+        "7587:7591"^^xsd:string,
+        "7689:7695"^^xsd:string,
+        "7788:7792"^^xsd:string,
+        "7923:7927"^^xsd:string,
+        "8196:8204"^^xsd:string,
+        "8266:8270"^^xsd:string,
+        "8331:8335"^^xsd:string,
+        "8482:8490"^^xsd:string,
+        "8618:8622"^^xsd:string,
+        "8672:8676"^^xsd:string,
+        "8787:8791"^^xsd:string,
+        "8970:8974"^^xsd:string,
+        "9125:9129"^^xsd:string,
+        "9361:9365"^^xsd:string,
+        "9447:9451"^^xsd:string,
+        "9496:9502"^^xsd:string,
+        "9534:9538"^^xsd:string,
+        "9671:9679"^^xsd:string,
+        "9796:9804"^^xsd:string,
+        "9875:9879"^^xsd:string,
+        "994:998"^^xsd:string ;
+    data:wdtLink wdt:Q235432 ;
+    :alsoKnownAs "Olga of Greece and Denmark"^^xsd:string,
+        "Princess Paul of Yugoslavia"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Prince_Alexander_of_Serbia ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:George_I_of_Greece,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Alexander_of_Serbia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Alexander_of_Serbia ;
+    :isAncestorOf data:Prince_Alexander_of_Serbia ;
+    :isAuntOf data:Prince_Alexander_of_Serbia ;
+    :isBloodrelationOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Alexander_of_Serbia ;
+    :isParentOf data:Prince_Alexander_of_Serbia ;
+    :isSiblingOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Nicholas of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "1543:1580"^^xsd:string,
+        "274:311"^^xsd:string ;
+    data:posIndicesPart "10099:10105"^^xsd:string,
+        "10255:10261"^^xsd:string,
+        "10583:10589"^^xsd:string,
+        "11125:11131"^^xsd:string,
+        "1872:1880"^^xsd:string,
+        "2277:2285"^^xsd:string,
+        "2432:2438"^^xsd:string,
+        "2855:2861"^^xsd:string,
+        "2995:3001"^^xsd:string,
+        "3728:3735"^^xsd:string,
+        "3838:3844"^^xsd:string,
+        "4316:4322"^^xsd:string,
+        "450:456"^^xsd:string,
+        "4546:4552"^^xsd:string,
+        "469:476"^^xsd:string,
+        "4812:4818"^^xsd:string,
+        "5084:5090"^^xsd:string,
+        "579:585"^^xsd:string,
+        "5855:5861"^^xsd:string,
+        "5885:5891"^^xsd:string,
+        "6327:6333"^^xsd:string,
+        "6699:6705"^^xsd:string,
+        "6948:6954"^^xsd:string,
+        "7018:7024"^^xsd:string,
+        "7180:7186"^^xsd:string,
+        "7362:7368"^^xsd:string,
+        "7480:7486"^^xsd:string,
+        "7689:7695"^^xsd:string,
+        "8136:8142"^^xsd:string,
+        "849:855"^^xsd:string,
+        "9496:9502"^^xsd:string ;
+    data:wdtLink wdt:Q170160 ;
+    :alsoKnownAs "Prince Nikolaos of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Alexander_of_Serbia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isAncestorOf data:Prince_Alexander_of_Serbia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isFatherOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:Princess_Olga_of_Greece_and_Denmark .
+

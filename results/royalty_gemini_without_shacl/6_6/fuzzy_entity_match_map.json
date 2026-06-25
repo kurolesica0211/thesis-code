@@ -16,35 +16,35 @@
       "qid": "Q1032270",
       "label": "Archduke Ferdinand Zvonimir of Austria",
       "distance": 0,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Archduchess_Eleonore_of_Austria",
-      "qid": "Q8951675",
-      "label": "Archduchess Eleonore of Austria",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Georg_von_Habsburg",
-      "qid": "Q112096",
-      "label": "Georg von Habsburg",
-      "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Karl_von_Habsburg",
       "qid": "Q78515",
       "label": "Karl von Habsburg",
       "distance": 1,
-      "gender": "male"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Archduchess_Eleonore_of_Austria",
+      "qid": "Q8951675",
+      "label": "Archduchess Eleonore of Austria",
+      "distance": 2,
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Otto_von_Habsburg",
       "qid": "Q76343",
       "label": "Otto von Habsburg",
       "distance": 2,
-      "gender": "male"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Georg_von_Habsburg",
+      "qid": "Q112096",
+      "label": "Georg von Habsburg",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
@@ -58,12 +58,30 @@
       "ground_truth_uri": "http://example.com/data#Archduchess_Eleonore_of_Austria",
       "ground_truth_qid": "Q8951675",
       "ground_truth_label": "Archduchess Eleonore of Austria",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Eleonore von Habsburg",
       "best_candidate_label": "Archduchess Eleonore of Austria",
       "best_candidate_qid": "Q8951675",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Georg_von_Habsburg",
+      "extracted_local_name": "Georg_von_Habsburg",
+      "embedding_text": "Georg von Habsburg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Georg_von_Habsburg",
+      "ground_truth_qid": "Q112096",
+      "ground_truth_label": "Georg von Habsburg",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Georg von Habsburg",
+      "best_candidate_label": "Georg von Habsburg",
+      "best_candidate_qid": "Q112096",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -77,11 +95,11 @@
       "ground_truth_qid": "Q78515",
       "ground_truth_label": "Karl von Habsburg",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Karl von Habsburg",
       "best_candidate_label": "Karl von Habsburg",
       "best_candidate_qid": "Q78515",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -95,11 +113,11 @@
       "ground_truth_qid": "Q76343",
       "ground_truth_label": "Otto von Habsburg",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Otto von Habsburg",
       "best_candidate_label": "Otto von Habsburg",
       "best_candidate_qid": "Q76343",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -113,11 +131,11 @@
       "ground_truth_qid": "Q1032270",
       "ground_truth_label": "Archduke Ferdinand Zvonimir of Austria",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Ferdinand Habsburg",
       "best_candidate_label": "Archduke Ferdinand Zvonimir of Austria",
       "best_candidate_qid": "Q1032270",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.7962962962962963
     },
     {
@@ -132,11 +150,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Karl von Habsburg",
+      "best_candidate_label": "Karl von Habsburg",
+      "best_candidate_qid": "Q78515",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.2631578947368421
     },
     {
       "extracted_uri": "http://example.org/data/Francesca_von_Thyssen-Bornemisza",
@@ -150,11 +168,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Archduke Georg of Austria",
+      "best_candidate_label": "Georg von Habsburg",
+      "best_candidate_qid": "Q112096",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.3157894736842105
     },
     {
       "extracted_uri": "http://example.org/data/Gloria_von_Habsburg",
@@ -168,11 +186,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Crown Prince Otto of Austria",
+      "best_candidate_label": "Otto von Habsburg",
+      "best_candidate_qid": "Q76343",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.1702127659574468
     },
     {
       "extracted_uri": "http://example.org/data/Hans_Heinrich_Thyssen-Bornemisza",
@@ -189,7 +207,7 @@
       "best_candidate_match_text": "Karl Thomas Erzherzog von Österreich",
       "best_candidate_label": "Karl von Habsburg",
       "best_candidate_qid": "Q78515",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.3235294117647059
     },
     {
@@ -212,8 +230,8 @@
     }
   ],
   "summary": {
-    "entities_total": 9,
-    "entities_matched": 4,
+    "entities_total": 10,
+    "entities_matched": 5,
     "entities_unmatched": 5
   }
 }

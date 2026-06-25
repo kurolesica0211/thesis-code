@@ -2,58 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Queen_Elizabeth_the_Queen_Mother a :Ancestor,
-        :Person,
+data:Kraft_zu_Hohenlohe-Langenburg a :Man,
+        :Person ;
+    :hasBirthYear 1935 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Gottfried_zu_Hohenlohe-Langenburg ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Margarita_of_Greece_and_Denmark ;
+    :hasRelation data:Charlotte_of_Croy ;
+    :hasSex data:Male ;
+    :isSiblingOf data:Beatrix_zu_Hohenlohe-Langenburg .
+
+data:Beatrix_zu_Hohenlohe-Langenburg a :Person,
         :Woman ;
-    :isSisterOf data:Rose_Leveson-Gower_Countess_Granville .
+    :hasSex data:Female .
 
-data:Rose_Cecilia_Stancer a :Ancestor,
-        :Person,
+data:Charlotte_of_Croy a :Person,
         :Woman ;
-    :formerlyKnownAs "Rosie Clayton"^^xsd:string ;
-    :hasBirthYear 1960 ;
-    :hasFather data:Sir_Samuel_Clayton ;
-    :hasMarriageYear 1993 ;
-    :hasMother data:Lady_Mary_Cecilia_Leveson-Gower ;
-    :hasRelation data:William_Wordie_Stancer ;
-    :hasSon data:Jock_Stancer ;
-    :knownAs "Rosie Stancer"^^xsd:string .
+    :hasSex data:Female .
 
-data:James_Wordie a :Ancestor,
-        :Man,
-        :Person .
-
-data:Jock_Stancer a :Ancestor,
-        :Man,
-        :Person .
-
-data:Lady_Mary_Cecilia_Leveson-Gower a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1917 ;
-    :hasDeathYear 2014 ;
-    :hasFather data:William_Leveson-Gower_4th_Earl_Granville ;
-    :hasMother data:Rose_Leveson-Gower_Countess_Granville .
-
-data:Sir_Gilbert_Falkingham_Clayton a :Ancestor,
-        :Man,
-        :Person .
-
-data:Sir_Samuel_Clayton a :Ancestor,
+data:Gottfried_zu_Hohenlohe-Langenburg a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Sir_Gilbert_Falkingham_Clayton .
+    :hasSex data:Male .
 
-data:William_Leveson-Gower_4th_Earl_Granville a :Ancestor,
-        :Man,
-        :Person .
-
-data:William_Wordie_Stancer a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:James_Wordie .
-
-data:Rose_Leveson-Gower_Countess_Granville a :Ancestor,
+data:Margarita_of_Greece_and_Denmark a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasSex data:Female ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

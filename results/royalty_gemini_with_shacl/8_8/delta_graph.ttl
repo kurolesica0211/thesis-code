@@ -2,35 +2,49 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:DanielChatto a :Man,
+data:Daniel_Chatto a :Man,
         :Person ;
-    :hasFather data:TomChatto ;
-    :hasMother data:RosChatto .
+    :hasFather data:Tom_Chatto ;
+    :hasMother data:Ros_Chatto .
 
-data:SarahChatto a :Person,
+data:Jasper_Cable-Alexander a :Man,
+        :Person ;
+    :hasFather data:Antony_Armstrong-Jones .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Lady_Frances_Armstrong-Jones a :Person,
+        :Woman ;
+    :hasFather data:Antony_Armstrong-Jones .
+
+data:Lady_Sarah_Frances_Elizabeth_Chatto a :Person,
         :Woman ;
     :hasBirthYear 1964 ;
-    :hasBrother data:DavidArmstrongJones ;
-    :hasFather data:AntonyArmstrongJones ;
-    :hasMother data:PrincessMargaret .
+    :hasBrother data:David_Armstrong-Jones ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret .
 
-data:DavidArmstrongJones a :Man,
-        :Person ;
-    :hasFather data:AntonyArmstrongJones ;
-    :hasMother data:PrincessMargaret .
-
-data:RosChatto a :Ancestor,
+data:Polly_Fry a :Person,
         :Woman ;
-    :hasDeathYear 2012 .
+    :hasFather data:Antony_Armstrong-Jones .
 
-data:TomChatto a :Ancestor,
-        :Man ;
-    :hasBirthYear 1920 ;
-    :hasDeathYear 1982 .
+data:David_Armstrong-Jones a :Man,
+        :Person .
 
-data:AntonyArmstrongJones a :Ancestor,
-        :Man .
-
-data:PrincessMargaret a :Ancestor,
+data:Princess_Margaret a :Ancestor,
+        :Person,
         :Woman .
+
+data:Ros_Chatto a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Tom_Chatto a :Ancestor,
+        :Man,
+        :Person .
+
+data:Antony_Armstrong-Jones a :Ancestor,
+        :Man,
+        :Person .
 

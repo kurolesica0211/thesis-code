@@ -2,11 +2,11 @@
     "translation": [
         {
             "iteration": 2,
-            "shacl_tool_call_id": "9fcee937-b40e-45ba-ae58-5d063a73ec4f",
+            "shacl_tool_call_id": "46df79e3-0c2c-4698-92de-229c7d39bb1d",
             "metadata": {
-                "input_tokens": 5193,
-                "output_tokens": 452,
-                "total_tokens": 5645,
+                "input_tokens": 7407,
+                "output_tokens": 525,
+                "total_tokens": 7932,
                 "input_token_details": {
                     "cache_read": 0
                 }
@@ -15,38 +15,46 @@
     ],
     "final": [
         {
-            "iteration": 4,
+            "iteration": 5,
             "metadata": [
                 {
-                    "input_tokens": 8701,
-                    "output_tokens": 600,
-                    "total_tokens": 9301,
+                    "input_tokens": 10879,
+                    "output_tokens": 693,
+                    "total_tokens": 11572,
                     "input_token_details": {
-                        "cache_read": 8696
+                        "cache_read": 10874
                     }
                 },
                 {
-                    "input_tokens": 9939,
+                    "input_tokens": 12393,
                     "output_tokens": 10,
-                    "total_tokens": 9949,
+                    "total_tokens": 12403,
                     "input_token_details": {
-                        "cache_read": 8696
+                        "cache_read": 10874
                     }
                 },
                 {
-                    "input_tokens": 10625,
-                    "output_tokens": 76,
-                    "total_tokens": 10701,
+                    "input_tokens": 13257,
+                    "output_tokens": 89,
+                    "total_tokens": 13346,
                     "input_token_details": {
-                        "cache_read": 8696
+                        "cache_read": 10874
                     }
                 },
                 {
-                    "input_tokens": 11025,
+                    "input_tokens": 13743,
+                    "output_tokens": 10,
+                    "total_tokens": 13753,
+                    "input_token_details": {
+                        "cache_read": 10874
+                    }
+                },
+                {
+                    "input_tokens": 13775,
                     "output_tokens": 8,
-                    "total_tokens": 11033,
+                    "total_tokens": 13783,
                     "input_token_details": {
-                        "cache_read": 8696
+                        "cache_read": 10874
                     }
                 }
             ]

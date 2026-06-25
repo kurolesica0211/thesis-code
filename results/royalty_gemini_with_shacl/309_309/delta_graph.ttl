@@ -2,44 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Marilene_van_den_Broek a :Person,
+data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,
         :Woman ;
-    :hasBirthYear 1970 ;
-    :hasFather data:Hans_van_den_Broek ;
-    :hasMother data:Josee_van_Schendel .
+    :hasBirthYear 1950 ;
+    :hasMarriageYear 1978 ;
+    :hasRelation data:Charles_Napol%C3%A9on_Bonaparte ;
+    :isDaughterOf data:Chantal_de_Chevron-Villette,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :isSiblingOf data:Prince_Carlo_Duke_of_Castro .
 
-data:Maurits_van_Vollenhoven a :Man,
+data:Alix_de_Foresta a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Chantal_de_Chevron-Villette a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Charles_Napol%C3%A9on_Bonaparte a :Man,
         :Person ;
-    :hasBirthYear 1968 ;
-    :hasBrother data:Bernhard_van_Vollenhoven,
-        data:Floris_van_Vollenhoven,
-        data:Pieter-Christiaan_van_Vollenhoven ;
-    :hasFather data:Pieter_van_Vollenhoven ;
-    :hasMarriageYear 1989 ;
-    :hasMother data:Margriet_of_the_Netherlands .
+    :isSonOf data:Alix_de_Foresta,
+        data:Louis_Prince_Napol%C3%A9on .
 
-data:Bernhard_van_Vollenhoven a :Man,
-        :Person .
-
-data:Floris_van_Vollenhoven a :Man,
-        :Person .
-
-data:Hans_van_den_Broek a :Ancestor,
+data:Louis_Prince_Napol%C3%A9on a :Ancestor,
         :Man,
         :Person .
 
-data:Josee_van_Schendel a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Margriet_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Pieter-Christiaan_van_Vollenhoven a :Man,
+data:Prince_Carlo_Duke_of_Castro a :Man,
         :Person .
 
-data:Pieter_van_Vollenhoven a :Ancestor,
+data:Prince_Ferdinand_Duke_of_Castro a :Ancestor,
         :Man,
         :Person .
 

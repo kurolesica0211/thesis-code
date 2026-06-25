@@ -2,43 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Donatus_von_Hessen a :Man ;
-    :hasBirthYear 1966 ;
-    :hasFather data:Moritz_von_Hessen ;
-    :hasMarriageYear 2003 ;
-    :hasMother data:Tatiana_von_Sayn-Wittgenstein-Berleburg ;
-    :hasRelation data:Floria_von_Faber-Castell ;
-    :hasSex data:Male .
-
-data:Louis_von_Hessen_und_bei_Rhein a :Man ;
-    :hasDeathYear 1968 ;
-    :hasSex data:Male .
-
-data:Floria_von_Faber-Castell a :Woman ;
-    :hasBirthYear 1974 ;
-    :hasFather data:Hubertus_von_Faber-Castell ;
-    :hasSex data:Female .
-
-data:Hubertus_von_Faber-Castell a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
-
-data:Moritz_von_Hessen a :Ancestor,
-        :Man ;
-    :hasFather data:Philipp_von_Hessen ;
-    :hasSex data:Male .
-
-data:Philipp_von_Hessen a :Ancestor,
-        :Man ;
-    :hasDeathYear 1980 ;
-    :hasSex data:Male .
-
-data:Tatiana_von_Sayn-Wittgenstein-Berleburg a :Ancestor,
+data:Maria-Olympia a :Person,
         :Woman ;
-    :hasBirthYear 1940 ;
-    :hasSex data:Female .
+    :hasParent data:Pavlos .
 
-data:Female a :Sex .
+data:Sofia a :Person,
+        :Woman ;
+    :isAuntOf data:Alexia .
 
-data:Male a :Sex .
+data:Alexia a :Person,
+        :Woman ;
+    :hasBirthYear 1965 ;
+    :hasFather data:Constantine_II ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Anne-Marie ;
+    :hasRelation data:Carlos_Javier_Morales_Quintana ;
+    :hasSister data:Theodora ;
+    :isBloodrelationOf data:Felipe_VI .
+
+data:Carlos_Javier_Morales_Quintana a :Man,
+        :Person .
+
+data:Felipe_VI a :Man,
+        :Person .
+
+data:Pavlos a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
+
+data:Theodora a :Person,
+        :Woman .
+
+data:Anne-Marie a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Constantine_II a :Ancestor,
+        :Man,
+        :Person .
 

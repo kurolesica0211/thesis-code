@@ -1,0 +1,334 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Cecilie_of_Greece_and_Denmark,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isAncestorOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Cecilie_of_Greece_and_Denmark,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Cecilie_of_Greece_and_Denmark .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Cecilie_of_Greece_and_Denmark,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :isAncestorOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Cecilie_of_Greece_and_Denmark,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isAuntOf data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Ernest_Louis_Grand_Duke_of_Hesse a :Ancestor,
+        :Man ;
+    :hasBrother data:Ernest_Louis_Grand_Duke_of_Hesse ;
+    :hasChild data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Louis_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasSon data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :isAncestorOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Louis_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Ernest_Louis_Grand_Duke_of_Hesse ;
+    :isBrotherOf data:Ernest_Louis_Grand_Duke_of_Hesse ;
+    :isFatherOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :isParentOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Ernest_Louis_Grand_Duke_of_Hesse ;
+    :isUncleOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine .
+
+data:Princess_Eleonore_of_Solms-Hohensolms-Lich a :Ancestor,
+        :Woman ;
+    :hasChild data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Louis_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :hasSon data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :isAncestorOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Louis_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isAuntOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :isMotherOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :isParentOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :isSisterOf data:Princess_Eleonore_of_Solms-Hohensolms-Lich .
+
+data:Prince_Louis_of_Hesse_and_by_Rhine a :Man ;
+    :hasAncestor data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :hasBrother data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :hasFather data:Ernest_Louis_Grand_Duke_of_Hesse ;
+    :hasMother data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :hasParent data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :hasRelation data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :isChildOf data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :isSiblingOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :isSonOf data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :isUncleOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine .
+
+data:Princess_Cecilie_of_Greece_and_Denmark a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasChild data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasDaughter data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Cecilie_of_Greece_and_Denmark,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine ;
+    :isAncestorOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isAuntOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isDaughterOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isParentOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Cecilie_of_Greece_and_Denmark .
+
+data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine a :Man ;
+    :hasAncestor data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Cecilie_of_Greece_and_Denmark,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :hasBrother data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine ;
+    :hasFather data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :hasMother data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :hasParent data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :hasRelation data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Cecilie_of_Greece_and_Denmark,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isChildOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isSonOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Princess_Cecilie_of_Greece_and_Denmark .
+
+data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine a :Man ;
+    :hasAncestor data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Cecilie_of_Greece_and_Denmark,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :hasBrother data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine ;
+    :hasFather data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :hasMother data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :hasParent data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :hasRelation data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Cecilie_of_Greece_and_Denmark,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isChildOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isSonOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Princess_Cecilie_of_Greece_and_Denmark .
+
+data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine a :Woman ;
+    :hasAncestor data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Cecilie_of_Greece_and_Denmark,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :hasBrother data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine ;
+    :hasFather data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse ;
+    :hasMother data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :hasParent data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :hasRelation data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Cecilie_of_Greece_and_Denmark,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasSister data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isChildOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :isDaughterOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine .
+
+data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse a :Ancestor,
+        :Man ;
+    :hasAncestor data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :hasBirthYear 1906 ;
+    :hasBrother data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :hasChild data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasDaughter data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasDeathYear 1937 ;
+    :hasFather data:Ernest_Louis_Grand_Duke_of_Hesse ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :hasParent data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :hasRelation data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Louis_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasSon data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine ;
+    :isAncestorOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :isChildOf data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :isFatherOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isParentOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse,
+        data:Prince_Louis_of_Hesse_and_by_Rhine ;
+    :isSonOf data:Ernest_Louis_Grand_Duke_of_Hesse,
+        data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :isUncleOf data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine .
+

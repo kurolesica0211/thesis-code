@@ -2,26 +2,21 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carl_Duke_of_W%C3%BCrttemberg a :Man,
+data:Alexander_Patrick_Gregers_Richard_Windsor a :Man,
         :Person ;
-    :isBrotherOf data:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg .
+    :alsoKnownAs "Alex Ulster"^^xsd:string ;
+    :hasBirthYear 1974 ;
+    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
+    :hasMarriageYear 2002 ;
+    :hasMother data:Birgitte_Duchess_of_Gloucester ;
+    :hasRelation data:Claire_Booth .
 
-data:Diane_dOrl%C3%A9ans a :Person,
-        :Woman ;
-    :isSisterOf data:Henri .
-
-data:Henri a :Man,
-        :Person .
-
-data:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg a :Person,
-        :Woman ;
-    :hasBirthYear 1934 ;
-    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
-    :hasMother data:Rosa_of_Austria .
-
-data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Man,
-        :Person .
-
-data:Rosa_of_Austria a :Person,
+data:Birgitte_Duchess_of_Gloucester a :Person,
         :Woman .
+
+data:Claire_Booth a :Person,
+        :Woman .
+
+data:Prince_Richard_Duke_of_Gloucester a :Man,
+        :Person .
 

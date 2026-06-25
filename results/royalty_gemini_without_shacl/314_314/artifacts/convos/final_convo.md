@@ -69,17 +69,53 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Carlo Alessandro della Torre e Tasso, 3rd Duke of Castel Duino (born 10 February 1952) is the current head of the Castel Duino branch of the House of Thurn and Taxis.
-Family
+Duke Henry of Mecklenburg-Schwerin (German: Heinrich Wladimir Albrecht Ernst; Dutch: Hendrik Vladimir Albrecht Ernst; 19 April 1876 – 3 July 1934) was Prince of the Netherlands from 7 February 1901 until his death in 1934 as the husband of Queen Wilhelmina.
+Biography
 
-Carlo Alessandro is the only child of Raimundo, 2nd Duke of Castel Duino and his wife Princess Eugénie of Greece and Denmark.
-He is a maternal second cousin of Charles III, King of the United Kingdom, through their shared great-grandparents, King George I and Queen Olga of Greece, born a Grand Duchess of Russia.
+Henry of Mecklenburg-Schwerin was born on 19 April 1876 in Schwerin.
+He was the youngest son of Frederick Francis II, Grand Duke of Mecklenburg-Schwerin, and his third wife, Princess Marie of Schwarzburg-Rudolstadt.
+On 6 February 1901, Henry was created a Prince of the Netherlands and the next day, 7 February, married Queen Wilhelmina in The Hague.
+Their only child together, Princess Juliana, was born in 1909.
+Henry also fathered at least one illegitimate child, Pim Lier by his mistress Willemina Martina Wenneker (1887–1973).
+Born in 1918, Lier eventually rose to prominence in post-war Dutch politics as chairman of the extreme-right Centre Party.
+The birth of a son out of wedlock was likely symptomatic of the duke's increasingly strained relationship with his wife.
+Henry attended and even presided over the festivities, but Wilhelmina stayed away and stated that she was prevented from attending by her personal religious conviction that the type of event should not take place on a Sunday.
+Henry became the 279th Knight Grand Cross of the Portuguese Order of the Tower and Sword, and in 1924, he was appointed as the 1,157th Knight of the Spanish Order of the Golden Fleece.
+He died in The Hague, Netherlands, on 3 July 1934, aged 58.
+Scouting
+
+Henry successfully merged the two Dutch Boy Scout organisations Nederlandse Padvinders Organisatie (NPO, Netherlands Pathfinder Organisation) and the Nederlandse Padvinders Bond (NPB, Netherlands Pathfinder Federation) on 11 December 1915 to form De Nederlandse Padvinders (NPV, The Netherlands Pathfinders).
+Extramarital relationships
+
+Prince Henry was known to have had numerous extra-marital affairs.
+It is rumored that he fathered between three and ten illegitimate children; however, firm proof remains elusive, except for Albrecht Willem Lier, known as the above-noted Pim Lier (22 July 1918 – 9 April 2015).
+During her widowhood, Queen Wilhelmina paid monthly allowances to three known ex-mistresses: Julia Cervey in Geneva (ƒ200 per month), Wilhelmine Steiner in Zurich (ƒ500 per month), and Mien Lier-Wenneker (1887–1973), in The Hague (ƒ500 per month).
+Mien Abbo-Wenneker (later Lier-Wenneker), gave birth to a total of six children; the older two, sisters Christina Margaretha Abbo and Edith Abbo (later Sheep-Abbo) were ostensibly the daughters of Mien's first husband, Dhr.
+Abbo, but strongly rumored to have been fathered by Prince Henry.
+In 1919, Mien married Lieutenant Jan Derk Lier, a former aide-de-camp to Prince Henry.
+A grant of one hundred thousand guilders was arranged for Lt. Lier from the State by police chief François van 't Sant, whom Queen Wilhelmina engaged to verify the facts of her husband's extramarital relationships and children.
+The male parent of the remaining three children was not verified as being either Prince Henry or Lt. Lier.
+Subsequent to their birth, no additional allowance was settled on the family; in fact, the monthly allowance of one thousand guilders to Lt. Jan Derk Lier was halved by van't Sant after a short period, although the allowance to his wife continued.
+Honours and awards
+
+Ancestry
+
+See also
+
+References
+
+External links
+
+2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
+3 title granted by Royal Decree to descendants of Princess Irene
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -95,39 +131,9 @@ He is a maternal second cousin of Charles III, King of the United Kingdom, throu
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -142,6 +148,23 @@ He is a maternal second cousin of Charles III, King of the United Kingdom, throu
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -159,6 +182,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -226,29 +264,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,6 +287,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -269,6 +307,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -277,17 +317,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -315,6 +357,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -330,109 +456,126 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (36bd3471-08b2-44c5-bbca-2567e94484f6)
- Call ID: 36bd3471-08b2-44c5-bbca-2567e94484f6
+  AssignClass (df6b6c6a-7b69-41ff-b4d4-db248638dfc2)
+ Call ID: df6b6c6a-7b69-41ff-b4d4-db248638dfc2
   Args:
     type: :Man
-    source: Carlo_Alessandro_della_Torre_e_Tasso
-  AssignClass (195e6423-ce66-4a5b-96a0-b1eec6c43305)
- Call ID: 195e6423-ce66-4a5b-96a0-b1eec6c43305
+    source: :Henry_of_Mecklenburg-Schwerin
+  AssignClass (43765a93-aa71-4aaa-8845-dd1ad2b62230)
+ Call ID: 43765a93-aa71-4aaa-8845-dd1ad2b62230
   Args:
+    source: :Henry_of_Mecklenburg-Schwerin
     type: :Person
-    source: Carlo_Alessandro_della_Torre_e_Tasso
-  AssignClass (52be47b9-91c3-4da5-92df-a86ae657cfa3)
- Call ID: 52be47b9-91c3-4da5-92df-a86ae657cfa3
+  AssignClass (954555c4-881c-4e06-96c0-ae9471b3f4b4)
+ Call ID: 954555c4-881c-4e06-96c0-ae9471b3f4b4
   Args:
     type: :Man
-    source: Raimundo_della_Torre_e_Tasso
-  AssignClass (20a36f3e-52b4-4d5c-ba51-551fbff40981)
- Call ID: 20a36f3e-52b4-4d5c-ba51-551fbff40981
+    source: :Frederick_Francis_II
+  AssignClass (4a095c58-8fe4-4e30-8e3e-ca636c1a0d7b)
+ Call ID: 4a095c58-8fe4-4e30-8e3e-ca636c1a0d7b
   Args:
+    source: :Frederick_Francis_II
     type: :Person
-    source: Raimundo_della_Torre_e_Tasso
-  AssignClass (b891ab80-1f55-4ae5-8f14-3bac0ca7c1dc)
- Call ID: b891ab80-1f55-4ae5-8f14-3bac0ca7c1dc
+  AssignClass (e8173dbc-6ad1-474d-8d44-441f0113388a)
+ Call ID: e8173dbc-6ad1-474d-8d44-441f0113388a
   Args:
     type: :Woman
-    source: Eugenie_of_Greece_and_Denmark
-  AssignClass (af615465-198d-49b2-9f4d-e044c76661cc)
- Call ID: af615465-198d-49b2-9f4d-e044c76661cc
+    source: :Marie_of_Schwarzburg-Rudolstadt
+  AssignClass (5125aef2-d587-4f3c-ab07-8fb5530c23b1)
+ Call ID: 5125aef2-d587-4f3c-ab07-8fb5530c23b1
+  Args:
+    source: :Marie_of_Schwarzburg-Rudolstadt
+    type: :Person
+  AssignClass (9be1f2b8-bde2-49cd-8f8f-d84fa1d1c9f9)
+ Call ID: 9be1f2b8-bde2-49cd-8f8f-d84fa1d1c9f9
+  Args:
+    type: :Woman
+    source: :Queen_Wilhelmina
+  AssignClass (3e2c3a6f-0743-468b-9e8f-d37771f1a0eb)
+ Call ID: 3e2c3a6f-0743-468b-9e8f-d37771f1a0eb
+  Args:
+    source: :Queen_Wilhelmina
+    type: :Person
+  AssignClass (15faf532-c1f2-4ae7-bf3b-0ab40042fc11)
+ Call ID: 15faf532-c1f2-4ae7-bf3b-0ab40042fc11
+  Args:
+    type: :Woman
+    source: :Princess_Juliana
+  AssignClass (178bb6b2-a348-4471-afbf-23122add1080)
+ Call ID: 178bb6b2-a348-4471-afbf-23122add1080
+  Args:
+    source: :Princess_Juliana
+    type: :Person
+  AssignClass (dea857fd-7df5-4b72-82f5-ee55e69c90a6)
+ Call ID: dea857fd-7df5-4b72-82f5-ee55e69c90a6
+  Args:
+    source: :Pim_Lier
+    type: :Man
+  AssignClass (ceecbf12-6a39-4ae9-8873-03bb32fd0be6)
+ Call ID: ceecbf12-6a39-4ae9-8873-03bb32fd0be6
+  Args:
+    source: :Pim_Lier
+    type: :Person
+  AssignClass (7a261188-1030-43d3-91d0-99088d4d4a2e)
+ Call ID: 7a261188-1030-43d3-91d0-99088d4d4a2e
+  Args:
+    type: :Woman
+    source: :Willemina_Martina_Wenneker
+  AssignClass (851ccb3f-2eaf-4998-bbc5-2524ef58e6d6)
+ Call ID: 851ccb3f-2eaf-4998-bbc5-2524ef58e6d6
   Args:
     type: :Person
-    source: Eugenie_of_Greece_and_Denmark
-  AddLiteral (54f9eb50-8640-4ee3-8a04-f7b3f03b5d87)
- Call ID: 54f9eb50-8640-4ee3-8a04-f7b3f03b5d87
+    source: :Willemina_Martina_Wenneker
+  AddLiteral (ad5f30c4-bd33-4a40-9452-04672784b555)
+ Call ID: ad5f30c4-bd33-4a40-9452-04672784b555
   Args:
-    literal_value: 1952
     relation: :hasBirthYear
-    source: Carlo_Alessandro_della_Torre_e_Tasso
+    source: :Henry_of_Mecklenburg-Schwerin
+    literal_value: 1876
     literal_type: xsd:integer
-  AddTriple (7fc594db-a330-47ad-90a7-b4a7ac944995)
- Call ID: 7fc594db-a330-47ad-90a7-b4a7ac944995
+  AddLiteral (12b5ab74-b6b7-43c0-a2e2-e0da0672f6c7)
+ Call ID: 12b5ab74-b6b7-43c0-a2e2-e0da0672f6c7
   Args:
-    source: Carlo_Alessandro_della_Torre_e_Tasso
-    target: Raimundo_della_Torre_e_Tasso
+    literal_type: xsd:integer
+    literal_value: 1934
+    source: :Henry_of_Mecklenburg-Schwerin
+    relation: :hasDeathYear
+  AddTriple (37395dbf-2b91-46c5-b336-026dc7a9463d)
+ Call ID: 37395dbf-2b91-46c5-b336-026dc7a9463d
+  Args:
+    target: :Frederick_Francis_II
     relation: :hasFather
-  AddTriple (770dae6b-7d38-4bf3-9da5-bb143c998c3a)
- Call ID: 770dae6b-7d38-4bf3-9da5-bb143c998c3a
+    source: :Henry_of_Mecklenburg-Schwerin
+  AddTriple (74d44b1e-721a-4ff0-bd92-53f54ed323a6)
+ Call ID: 74d44b1e-721a-4ff0-bd92-53f54ed323a6
   Args:
-    target: Eugenie_of_Greece_and_Denmark
     relation: :hasMother
-    source: Carlo_Alessandro_della_Torre_e_Tasso
-  AssignClass (d41decc0-20b3-4317-89b9-c8cf033053f1)
- Call ID: d41decc0-20b3-4317-89b9-c8cf033053f1
+    source: :Henry_of_Mecklenburg-Schwerin
+    target: :Marie_of_Schwarzburg-Rudolstadt
+  AddTriple (2aea2db0-9054-4219-82d6-ffa6751524d3)
+ Call ID: 2aea2db0-9054-4219-82d6-ffa6751524d3
   Args:
-    type: :Man
-    source: Charles_III
-  AssignClass (d9b75046-730f-4a1f-bc16-dad89e25046f)
- Call ID: d9b75046-730f-4a1f-bc16-dad89e25046f
+    relation: :hasChild
+    source: :Henry_of_Mecklenburg-Schwerin
+    target: :Princess_Juliana
+  AddTriple (2fb92711-e8ea-43a7-af01-4b7b3482f8ab)
+ Call ID: 2fb92711-e8ea-43a7-af01-4b7b3482f8ab
   Args:
-    type: :Person
-    source: Charles_III
-  AssignClass (d4132f2c-f904-4738-8147-e790b24da1f5)
- Call ID: d4132f2c-f904-4738-8147-e790b24da1f5
+    source: :Queen_Wilhelmina
+    relation: :hasChild
+    target: :Princess_Juliana
+  AddTriple (1269e466-01dd-4bff-a9a6-96ff16c5e2c8)
+ Call ID: 1269e466-01dd-4bff-a9a6-96ff16c5e2c8
   Args:
-    type: :Man
-    source: George_I_of_Greece
-  AssignClass (dcf6900c-491e-4156-afb0-133a0b8d3fb2)
- Call ID: dcf6900c-491e-4156-afb0-133a0b8d3fb2
+    target: :Henry_of_Mecklenburg-Schwerin
+    source: :Pim_Lier
+    relation: :hasFather
+  AddTriple (c50114fd-8748-4707-8936-e9fa4040def9)
+ Call ID: c50114fd-8748-4707-8936-e9fa4040def9
   Args:
-    type: :Person
-    source: George_I_of_Greece
-  AssignClass (a1b7a53f-cbd4-494e-a54b-d16132b923dc)
- Call ID: a1b7a53f-cbd4-494e-a54b-d16132b923dc
-  Args:
-    type: :Woman
-    source: Olga_of_Greece
-  AssignClass (40440497-b504-4bc7-887f-d296cc327db7)
- Call ID: 40440497-b504-4bc7-887f-d296cc327db7
-  Args:
-    type: :Person
-    source: Olga_of_Greece
-  AddTriple (a2a72007-2a11-46e0-bb17-a4d6df0cf7f3)
- Call ID: a2a72007-2a11-46e0-bb17-a4d6df0cf7f3
-  Args:
-    relation: :isAncestorOf
-    target: Carlo_Alessandro_della_Torre_e_Tasso
-    source: George_I_of_Greece
-  AddTriple (895bd297-6c1f-4362-8751-bbf1e9e1c5ac)
- Call ID: 895bd297-6c1f-4362-8751-bbf1e9e1c5ac
-  Args:
-    relation: :isAncestorOf
-    target: Carlo_Alessandro_della_Torre_e_Tasso
-    source: Olga_of_Greece
-  AddTriple (a13e87fa-6ed4-4097-ba6b-35f1bbf15901)
- Call ID: a13e87fa-6ed4-4097-ba6b-35f1bbf15901
-  Args:
-    relation: :isAncestorOf
-    target: Charles_III
-    source: George_I_of_Greece
-  AddTriple (6a7e5c89-bd6f-44d6-a686-5e12fd008ce0)
- Call ID: 6a7e5c89-bd6f-44d6-a686-5e12fd008ce0
-  Args:
-    source: Olga_of_Greece
-    relation: :isAncestorOf
-    target: Charles_III
-  Finish (2f14b39b-ac7d-4b12-af40-4bc16df0156e)
- Call ID: 2f14b39b-ac7d-4b12-af40-4bc16df0156e
+    source: :Pim_Lier
+    relation: :hasMother
+    target: :Willemina_Martina_Wenneker
+  Finish (6b20d6fa-24e1-4f40-8542-2bb466cacc4e)
+ Call ID: 6b20d6fa-24e1-4f40-8542-2bb466cacc4e
   Args:

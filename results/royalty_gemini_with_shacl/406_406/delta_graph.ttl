@@ -2,27 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:16th_Lord_Elphinstone a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:Margaret_Rhodes .
+data:Lady_Helen_Taylor a :Woman ;
+    :hasAncestor data:King_George_V ;
+    :hasBirthYear 1964 ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasSex data:Female ;
+    :knownAs data:Lady_Helen_Marina_Lucy_Windsor .
 
-data:Lady_Mary_Bowes-Lyon a :Ancestor,
-        :Person,
+data:Timothy_Verner_Taylor a :Man ;
+    :hasBirthYear 1963 ;
+    :hasSex data:Male .
+
+data:Katharine_Duchess_of_Kent a :Ancestor,
         :Woman ;
-    :isMotherOf data:Margaret_Rhodes ;
-    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother .
+    :hasSex data:Female .
 
-data:Denys_Gravenor_Rhodes a :Man,
-        :Person .
+data:King_George_V a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
 
-data:Queen_Elizabeth_the_Queen_Mother a :Person,
-        :Woman .
+data:Lady_Helen_Marina_Lucy_Windsor a :Person .
 
-data:Margaret_Rhodes a :Person,
-        :Woman ;
-    :hasBirthYear 1925 ;
-    :hasDeathYear 2016 ;
-    :hasMarriageYear 1950 ;
-    :hasRelation data:Denys_Gravenor_Rhodes .
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

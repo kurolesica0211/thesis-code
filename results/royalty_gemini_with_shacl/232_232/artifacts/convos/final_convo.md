@@ -85,145 +85,35 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Michael of Kent (Michael George Charles Franklin; born 4 July 1942) is a member of the British royal family who is 53rd in line to the British throne as of 2026.
-The younger son of Prince George, Duke of Kent, and Princess Marina of Greece and Denmark, he is a grandson of George V, nephew of Edward VIII and George VI, and first cousin of Queen Elizabeth II.
-Michael's mother was also a first cousin of Prince Philip, Duke of Edinburgh, consort of Queen Elizabeth II, making him both a second cousin and first cousin once removed to Charles III.
-Michael occasionally represented Elizabeth II at some functions in Commonwealth realms outside the United Kingdom during her reign.
-Early life
+Louis Ferdinand, Prince of Prussia (German: Louis Ferdinand Victor Eduard Adalbert Michael Hubertus Prinz von Preußen; 9 November 1907 –  26 September 1994) was a grandson of Kaiser Wilhelm II and member of the  House of Hohenzollern, which occupied the Prussian and German thrones until the abolition of those monarchies in 1918.
+Biography
 
-Michael was born at 7:35 pm on 4 July 1942 at Coppins, Iver, Buckinghamshire.
-He was the third child of Prince George, Duke of Kent, who was the fourth son of King George V and Queen Mary and a younger brother of kings Edward VIII and George VI.
-At birth, Michael was seventh in line to the British throne.
-His mother was Princess Marina, a daughter of Prince Nicholas of Greece and Denmark and Grand Duchess Elena Vladimirovna of Russia.
-At Michael's baptism on 4 August in the Private Chapel of Windsor Castle, his godparents were his paternal uncle the King; Queen Wilhelmina of the Netherlands (for whom her son-in-law Prince Bernhard stood proxy); King Haakon VII of Norway (his great-uncle); US President Franklin D. Roosevelt (for whom the Duke of Kent stood proxy); Frederica of Hanover, Hereditary Princess of Greece (his first cousin once removed, who was absent); Prince Henry, Duke of Gloucester (his paternal uncle, who was absent); the Dowager Marchioness of Milford Haven (his paternal first cousin twice removed); and Lady Patricia Ramsay (his paternal first cousin twice removed).
-Seven weeks after Michael's birth, his father was killed in a plane crash near Dunbeath, Caithness, Scotland, on 25 August 1942.
-At the age of five, Michael was a page boy at the wedding of his cousins Princess Elizabeth and Lieutenant Philip Mountbatten.
-Education and military service
-
-Michael was educated at Sunningdale School and Eton College and is fluent in French as well as  having a "working knowledge" of German and Italian.
-Michael was commissioned into the 11th Hussars (Prince Albert's Own) in 1963.
-He later served in The Royal Hussars (Prince of Wales's Own) after the amalgamation between the 11th Hussars and the 10th Royal Hussars (Prince of Wales's Own) in 1969.
-In 1994, Michael was made Honorary Commodore (later Honorary Rear Admiral and then Vice Admiral) of the Royal Naval Reserve, and in 2002, he was made Honorary Air Commodore of RAF Benson (promoted to Honorary Air Marshal in 2012).
-He is also Colonel-in-Chief of the Essex and Kent Scottish Regiment in Canada.
-Activities and patronages
-
-As the third child of George V's fourth son, it was not expected that Michael, as the only second son in the extended royal family, would undertake many engagements on behalf of the royal family.
-He has, however, never received a parliamentary annuity or an allowance from the British Privy Purse, unlike both his elder brother, Prince Edward, Duke of Kent, and his sister, Princess Alexandra, who both carry out official royal duties.
-Michael represented the Queen at state funerals in India, Cyprus and Swaziland and, with his wife, Princess Michael of Kent, represented the Queen at the independence celebrations in Belize, and at the coronation of King Mswati III of Swaziland.
-Michael supports a large number of charities and organisations.
-The Prince Michael Road Safety Award was created in 1987 to give public recognition to those improving road safety throughout Great Britain and later the world in general.
-Michael also set up the Prince Michael of Kent Foundation in 2004 to support projects in Russia, including heritage and cultural restoration.
-Marriage and personal life
-
-On 30 June 1978, Michael married Baroness Marie-Christine von Reibnitz in a civil ceremony at the City Hall (Wiener Rathaus) in Vienna, Austria.
-As a Roman Catholic divorcée, previously married to banker Thomas Troubridge, with a Church annulment granted in May 1978, Marie-Christine required papal dispensation for a Catholic ceremony.
-Marie-Christine has named Lord Mountbatten as their matchmaker.
-Under the terms of the Act of Settlement 1701, Michael forfeited his place in the line of succession to the throne through his marriage to a Catholic.
-Michael and Marie-Christine have two children, both brought up as members of the Church of England and therefore in the line of succession to the throne since birth:
-In 2014, Michael was successfully treated for prostate cancer.
-Personal interests
-
-Commercial
-
-Michael manages his own consultancy business, and undertakes business throughout the world.
-Masonic
-
-Michael is an active Freemason.
-He is the Grand Master of the Grand Lodge of Mark Master Masons, and Provincial Grand Master of the Provincial Grand Lodge of Middlesex.
-Russia
-
-Michael speaks fluent Russian and has a strong interest in Russia, where he is a well-known figure (he is a former recipient of the Order of Friendship).
-Tsar Nicholas II was a first cousin of three of his grandparents: George V, Prince Nicholas of Greece and Denmark, and Grand Duchess Elena Vladimirovna of Russia.
-When the bodies of the Tsar and some of his family were recovered in 1991, the remains were later identified by DNA using, among others, a sample from Michael for recognition.
-He is also the second cousin of Maria Vladimirovna, Grand Duchess of Russia, who is a claimant to the headship of the Imperial Family of Russia.
-They share the same great-grandfather, Grand Duke Vladimir Alexandrovich.
-Michael is the patron of organisations which have close ties with Russia, including the Russo-British Chamber of Commerce and the St Gregory's Foundation.
-In his capacity as patron of Children's Fire and Burns Trust, Michael has led fundraising rallies in 1999 and 2003 in Russia to raise money for the charity.
-He also led another rally in 2005 and raised money for the Royal Marsden Hospital and Britain's Charities Aid Foundation Russia.
-Michael served as the Patron of the Russo-British Chamber of Commerce (RBCC).
-On 4 March 2022, Michael returned the Order of Friendship due to the Russian invasion of Ukraine.
-Finland
-
-Michael of Kent made a visit to Finland in 2017, during which he visited Helsinki, Espoo, Porvoo, Pori, and Tampere.
-Sport
-
-Michael was a part of the Royal Military Academy Sandhurst rowing crew that won the Maiden Fours at Bedford in 1961.
-Media scrutiny
-
-In 2002, both Michael and his wife were the subject of criticism over the rent paid on their accommodation at Kensington Palace following scrutiny by the House of Commons Public Accounts committee on the cost of royal palaces and whether they were value for money.
-When it was claimed that the couple paid a rent of only £69 per week for the use of their apartments at Kensington Palace, Buckingham Palace announced that "The Queen is paying the rent for Prince and Princess Michael of Kent's apartment at a commercial rate of £120,000 annually, from her own private funds.
-This rent payment by The Queen is in recognition of the Royal engagements and work for various charities which Prince and Princess Michael of Kent have undertaken at their own expense, and without any public funding.
-"
-
-
-In 2003, Michael's judgment was questioned as he developed a close working relationship with businessman Michael Wynne-Parker, who had a history of financial misconduct, bans from serving as a director, and had been described by a judge as having "the modus operandi of a crook".
-Wynne-Parker had organised and accompanied the prince on official trips to Estonia, helping arrange meetings with politicians and business figures, which raised concerns about credibility and vetting.
-Prince Michael denied receiving "any fees or expenses or been paid in any way" by Wynne-Parker and added that he was not aware of his reputation.
-Michael has been scrutinized for financial assistance given to him by exiled Russian oligarch Boris Berezovsky through offshore companies, with a reported total of £320,000 in payments over the period 2002–2008.
-In an interview with The Sunday Times, Berezovsky stated, "There is nothing underhand or improper about the financial assistance I have given Prince Michael.
-"
-
-
-In May 2021, reports were published stating that Michael was "selling access" to Vladimir Putin's political representatives.
-Footage from a Zoom call was released of Michael, alongside Simon Isaacs, 4th Marquess of Reading, interacting with undercover reporters posing as business executives seeking to make contacts with the Kremlin.
-Michael was being offered £143,000 for a proposal and £36,000 a month by the faux businessmen, which he expressed satisfaction with.
-The Marquess claimed that Michael was the Queen's "unofficial ambassador to Russia" and had direct access to Putin.
-He later stated that he had "overpromised", while Michael said that he had not had contact with Putin since 2003.
-In a 2019 interview, Michael stated that he visited Russia twice a year as part of his work for the Russo-British Chamber of Commerce.
-Marina Litvinenko denounced Michael's actions, saying that it demonstrated that he did not "care about human rights, democracy, about the people who are dying in Russia or what he did to your own citizens on UK soil".
-I'd love to know what Prince Michael thinks he is doing by making the UK's values and standards look optional.
-"
-
-
-Titles, styles, honours and arms
-
-Titles
-
-Official
-
-As a child of a younger son of a British sovereign, he is styled as a British prince with the prefix His Royal Highness and a territorial designation deriving from his father's dukedom: "His Royal Highness Prince Michael of Kent".
-Other titles
-
-Honours
-
-Foreign
-
-Wear of orders, decorations, and medals
-
-The ribbons worn regularly by Michael in undress uniform are as follows:
-
-
-Honorary military appointments
-
-Fellowships
-
-Memberships
-
-Honorary academic degrees and awards
-
-Degrees and appointments
-
-Awards
-
-Arms
-
-Issue
-
-Ancestry
-
-See also
-
-Notes
-
-References
-
-External links
+Louis Ferdinand was born in Potsdam as the third in succession to the throne of the German Empire, after his father, German Crown Prince William and elder brother Prince Wilhelm of Prussia.
+When Louis Ferdinand's older brother Prince Wilhelm renounced his succession rights to marry a member of the untitled nobility in 1933 (he was later to be killed in action in France in 1940 while fighting in the German army), Louis Ferdinand replaced him as second in the line of succession to the defunct German and Prussian thrones after the former Crown Prince.
+Louis Ferdinand was educated in Berlin and deviated from his family's tradition by not pursuing a military career.
+Louis Ferdinand dissociated himself from the Nazis after this.
+He married his second cousin, Grand Duchess Kira Kirillovna of Russia, in 1938 in first a Russian Orthodox ceremony in Potsdam and then a Lutheran ceremony in Huis Doorn, Netherlands.
+Kira was the second daughter of Grand Duke Kyril Vladimirovich and Princess Victoria Melita of Saxe-Coburg and Gotha.
+His third son and heir apparent, Prince Louis Ferdinand, died in 1977 during military maneuvers, and thus his one-year-old grandson Georg Friedrich, Prince of Prussia (son of Prince Louis Ferdinand) became the new heir apparent to the defunct Prussian and German Imperial throne.
+Upon Louis Ferdinand's death in 1994, Georg Friedrich became the pretender to the defunct thrones and head of the Hohenzollern family.
+The prince was a popular figure.
+In 1968 Der Spiegel reported that in a survey of their readers by Quick magazine about who would be the most honorable person to become President of the Federal Republic of Germany, Louis Ferdinand, the only one of twelve candidates who was not a politician, won with 39.8% before Carlo Schmid and Ludwig Erhard.
+In a similar survey by the tabloid Bild, readers chose Louis Ferdinand by 55.6%.
+In an interview with Quick, the prince indicated that he might accept the presidency but would not relinquish his claim to the imperial or Prussian crowns.
+Instead of complying with his last wish after his death, the king had been laid to rest in the Garrison Church, Potsdam next to his unloved father Frederick William I of Prussia in 1786.
+Both coffins were relocated during World War II and ended up in the prince's castle in what became West Germany.
+The prince had Frederick William I's coffin taken to the crypt of the Church of Peace, Potsdam because the Garrison Church had been destroyed in 1945.
+In interviews with C.L. Sulzberger for the book The Fall of Eagles, Louis Ferdinand expressed a deep sense of admiration for the informal bicycle monarchy and crowned republic style favored and used by the Dutch, Belgian, and Scandinavian royal families.
+Praising how vehicles carrying the King or Queen would stop and wait at traffic lights, Louis Ferdinand stated that if the House of Hohenzollern were ever restored to the German throne during his lifetime, this same informality was a quality he fully intended to emulate.
+Prince Ferdinand of Hohenzollern, a member of the senior Swabian branch of the Hohenzollern dynasty, Hohenzollern-Sigmaringen, is his godson.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -239,39 +129,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -286,6 +146,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -303,6 +180,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -370,29 +262,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -401,6 +285,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -413,6 +305,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -421,17 +315,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -459,6 +355,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -474,230 +454,195 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (102835d2-d61a-49bb-9939-76e245e6dfd1)
- Call ID: 102835d2-d61a-49bb-9939-76e245e6dfd1
+  AssignClass (55f8906a-e501-4dbe-89dc-0bc23573abb9)
+ Call ID: 55f8906a-e501-4dbe-89dc-0bc23573abb9
   Args:
+    source: :Louis_Ferdinand_Prince_of_Prussia
     type: :Man
-    source: Prince_Michael_of_Kent
-  AssignClass (152e0992-efe2-42ce-aae6-2771f68da3cc)
- Call ID: 152e0992-efe2-42ce-aae6-2771f68da3cc
+  AssignClass (c84a56bc-f8a8-4834-9ab3-cb5fa9c5fe02)
+ Call ID: c84a56bc-f8a8-4834-9ab3-cb5fa9c5fe02
   Args:
-    source: Prince_Michael_of_Kent
+    source: :Louis_Ferdinand_Prince_of_Prussia
     type: :Person
-  AddLiteral (323fc475-73e3-41b4-b330-7d67fb48a9a7)
- Call ID: 323fc475-73e3-41b4-b330-7d67fb48a9a7
+  AddLiteral (2e3f45c3-b973-4cbb-942c-1fd455e37468)
+ Call ID: 2e3f45c3-b973-4cbb-942c-1fd455e37468
   Args:
-    relation: :alsoKnownAs
-    literal_value: Michael George Charles Franklin
-    source: Prince_Michael_of_Kent
-    literal_type: xsd:string
-  AddLiteral (5d3efe15-d631-4a7a-bf72-635583ad987b)
- Call ID: 5d3efe15-d631-4a7a-bf72-635583ad987b
-  Args:
-    literal_type: xsd:string
-    source: Prince_Michael_of_Kent
-    literal_value: 1942
+    literal_value: 1907
     relation: :hasBirthYear
-  AssignClass (23b43adf-0e6d-4c9d-87a3-61edd647319c)
- Call ID: 23b43adf-0e6d-4c9d-87a3-61edd647319c
+    literal_type: xsd:integer
+    source: :Louis_Ferdinand_Prince_of_Prussia
+  AddLiteral (b81d526f-3a2f-476b-9314-721f09e2cd77)
+ Call ID: b81d526f-3a2f-476b-9314-721f09e2cd77
+  Args:
+    source: :Louis_Ferdinand_Prince_of_Prussia
+    literal_value: 1994
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AssignClass (9371ae66-044c-4e8b-aaea-524153bb04c2)
+ Call ID: 9371ae66-044c-4e8b-aaea-524153bb04c2
   Args:
     type: :Man
-    source: Prince_George_Duke_of_Kent
-  AssignClass (f2f5ac52-8b38-492b-9338-252b5a4b4581)
- Call ID: f2f5ac52-8b38-492b-9338-252b5a4b4581
+    source: :Wilhelm_II
+  AssignClass (e51deabc-5fe1-4c46-a351-689f5bd7f96f)
+ Call ID: e51deabc-5fe1-4c46-a351-689f5bd7f96f
   Args:
-    type: :Ancestor
-    source: Prince_George_Duke_of_Kent
-  AssignClass (7297af4b-bafe-40a4-ad26-9712d96cca86)
- Call ID: 7297af4b-bafe-40a4-ad26-9712d96cca86
+    source: :Wilhelm_II
+    type: :Person
+  AddTriple (78bd2539-6057-4ba9-8d73-9025b6d700cb)
+ Call ID: 78bd2539-6057-4ba9-8d73-9025b6d700cb
+  Args:
+    source: :Wilhelm_II
+    target: :Louis_Ferdinand_Prince_of_Prussia
+    relation: :isAncestorOf
+  AssignClass (25aa5147-3035-434b-bfde-98ad7c86bbc7)
+ Call ID: 25aa5147-3035-434b-bfde-98ad7c86bbc7
+  Args:
+    type: :Man
+    source: :William_German_Crown_Prince
+  AssignClass (5c357cc7-5d38-432d-9cc4-7b310af23965)
+ Call ID: 5c357cc7-5d38-432d-9cc4-7b310af23965
   Args:
     type: :Person
-    source: Prince_George_Duke_of_Kent
-  AssignClass (1c08bd60-b577-42bd-b33b-305d438980e6)
- Call ID: 1c08bd60-b577-42bd-b33b-305d438980e6
-  Args:
-    type: :Woman
-    source: Princess_Marina_of_Greece_and_Denmark
-  AssignClass (760e26d4-948c-4694-9d85-4d9289c1f469)
- Call ID: 760e26d4-948c-4694-9d85-4d9289c1f469
-  Args:
-    source: Princess_Marina_of_Greece_and_Denmark
-    type: :Ancestor
-  AssignClass (66208510-ea3d-4431-8c61-25daa5615ceb)
- Call ID: 66208510-ea3d-4431-8c61-25daa5615ceb
-  Args:
-    type: :Person
-    source: Princess_Marina_of_Greece_and_Denmark
-  AddTriple (e96dc730-f12a-417d-9279-e07633d0a7a6)
- Call ID: e96dc730-f12a-417d-9279-e07633d0a7a6
+    source: :William_German_Crown_Prince
+  AddTriple (9cb11c49-a081-48b5-8d92-650c4817341a)
+ Call ID: 9cb11c49-a081-48b5-8d92-650c4817341a
   Args:
     relation: :hasFather
-    target: Prince_George_Duke_of_Kent
-    source: Prince_Michael_of_Kent
-  AddTriple (7f91254d-e83f-4bcf-a075-c4be4f342fc9)
- Call ID: 7f91254d-e83f-4bcf-a075-c4be4f342fc9
+    target: :William_German_Crown_Prince
+    source: :Louis_Ferdinand_Prince_of_Prussia
+  AssignClass (495abc87-edcc-48e6-b62c-117df97cf2bb)
+ Call ID: 495abc87-edcc-48e6-b62c-117df97cf2bb
   Args:
-    target: Princess_Marina_of_Greece_and_Denmark
-    relation: :hasMother
-    source: Prince_Michael_of_Kent
-  AssignClass (adc5c28a-4cb8-49d1-ae29-615fdf439e4d)
- Call ID: adc5c28a-4cb8-49d1-ae29-615fdf439e4d
+    source: :Prince_Wilhelm_of_Prussia
+    type: :Man
+  AssignClass (cece5b5b-9435-4098-b7db-88920821f967)
+ Call ID: cece5b5b-9435-4098-b7db-88920821f967
   Args:
-    source: Baroness_Marie-Christine_von_Reibnitz
+    source: :Prince_Wilhelm_of_Prussia
+    type: :Person
+  AddTriple (5d6029ea-09cd-4118-a256-7d9f49d660b0)
+ Call ID: 5d6029ea-09cd-4118-a256-7d9f49d660b0
+  Args:
+    source: :Prince_Wilhelm_of_Prussia
+    relation: :isBrotherOf
+    target: :Louis_Ferdinand_Prince_of_Prussia
+  AssignClass (2215b503-68a3-4df8-ad66-8fa8483486c4)
+ Call ID: 2215b503-68a3-4df8-ad66-8fa8483486c4
+  Args:
+    source: :Kira_Kirillovna
     type: :Woman
-  AssignClass (4ac2234d-e7ae-4dc9-aba9-54b504713886)
- Call ID: 4ac2234d-e7ae-4dc9-aba9-54b504713886
+  AssignClass (9baa1550-37f6-4600-841b-50cb95fee656)
+ Call ID: 9baa1550-37f6-4600-841b-50cb95fee656
   Args:
     type: :Person
-    source: Baroness_Marie-Christine_von_Reibnitz
-  AddLiteral (a3c29b0b-a39d-4353-ab0e-e72116986b3d)
- Call ID: a3c29b0b-a39d-4353-ab0e-e72116986b3d
+    source: :Kira_Kirillovna
+  AddTriple (6c8f0e08-692d-4d4f-8c12-6e95e1a53915)
+ Call ID: 6c8f0e08-692d-4d4f-8c12-6e95e1a53915
   Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:string
-    source: Prince_Michael_of_Kent
-    literal_value: 1978
-  AddTriple (377885a5-ca3a-4004-a9f4-4be572525f08)
- Call ID: 377885a5-ca3a-4004-a9f4-4be572525f08
-  Args:
-    source: Prince_Michael_of_Kent
+    source: :Louis_Ferdinand_Prince_of_Prussia
     relation: :hasRelation
-    target: Baroness_Marie-Christine_von_Reibnitz
-  AssignClass (bf7983ae-6252-4a2e-87b7-989dc16da6ee)
- Call ID: bf7983ae-6252-4a2e-87b7-989dc16da6ee
+    target: :Kira_Kirillovna
+  AddLiteral (f3b78679-33c7-44ec-86fb-75fbe8a286a4)
+ Call ID: f3b78679-33c7-44ec-86fb-75fbe8a286a4
   Args:
-    source: King_George_V
+    source: :Louis_Ferdinand_Prince_of_Prussia
+    literal_value: 1938
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AssignClass (1321e666-49fe-49ea-8ea5-802f205b94c4)
+ Call ID: 1321e666-49fe-49ea-8ea5-802f205b94c4
+  Args:
     type: :Man
-  AssignClass (4a5a50f6-738e-47d2-8e5d-f197a0194ad7)
- Call ID: 4a5a50f6-738e-47d2-8e5d-f197a0194ad7
+    source: :Kyril_Vladimirovich
+  AssignClass (f054f283-e041-4d16-98a2-628f4ae96956)
+ Call ID: f054f283-e041-4d16-98a2-628f4ae96956
   Args:
-    type: :Ancestor
-    source: King_George_V
-  AssignClass (ac373702-4b87-4c44-bef9-18500608bd35)
- Call ID: ac373702-4b87-4c44-bef9-18500608bd35
-  Args:
+    source: :Kyril_Vladimirovich
     type: :Person
-    source: King_George_V
-  AssignClass (c13e939c-4a63-415f-9c14-d69a3fc363aa)
- Call ID: c13e939c-4a63-415f-9c14-d69a3fc363aa
+  AssignClass (9af3546f-8b4f-4c10-927a-8d9c2eead71d)
+ Call ID: 9af3546f-8b4f-4c10-927a-8d9c2eead71d
   Args:
-    source: Queen_Mary
     type: :Woman
-  AssignClass (92ad5035-7e47-41ae-900c-04fcf66c6ce8)
- Call ID: 92ad5035-7e47-41ae-900c-04fcf66c6ce8
+    source: :Victoria_Melita
+  AssignClass (a8627b9c-b06f-4032-8b64-ab03aa1c3502)
+ Call ID: a8627b9c-b06f-4032-8b64-ab03aa1c3502
   Args:
-    source: Queen_Mary
-    type: :Ancestor
-  AssignClass (ee1c9bf7-1bc5-465b-bdc8-6cb0cf4f69dc)
- Call ID: ee1c9bf7-1bc5-465b-bdc8-6cb0cf4f69dc
-  Args:
+    source: :Victoria_Melita
     type: :Person
-    source: Queen_Mary
-  AddTriple (a9ab5bbe-9dd9-4415-9c3b-96c0dbcbbcfa)
- Call ID: a9ab5bbe-9dd9-4415-9c3b-96c0dbcbbcfa
+  AddTriple (55fc1331-d140-4334-a578-caca3b69f7c1)
+ Call ID: 55fc1331-d140-4334-a578-caca3b69f7c1
   Args:
-    source: Prince_George_Duke_of_Kent
+    source: :Kira_Kirillovna
+    target: :Kyril_Vladimirovich
     relation: :hasFather
-    target: King_George_V
-  AddTriple (5a9d5cb0-1806-407a-a510-8dc4fc43f3ce)
- Call ID: 5a9d5cb0-1806-407a-a510-8dc4fc43f3ce
+  AddTriple (ea689357-36b1-4565-9b82-6711766f0529)
+ Call ID: ea689357-36b1-4565-9b82-6711766f0529
   Args:
-    target: Queen_Mary
+    source: :Kira_Kirillovna
+    target: :Victoria_Melita
     relation: :hasMother
-    source: Prince_George_Duke_of_Kent
-  AssignClass (a2bb8349-c51f-4d6d-966a-ca3e16a43a5a)
- Call ID: a2bb8349-c51f-4d6d-966a-ca3e16a43a5a
+  AssignClass (7086543a-93a4-4b2d-bc61-abd283d85f22)
+ Call ID: 7086543a-93a4-4b2d-bc61-abd283d85f22
   Args:
     type: :Man
-    source: Prince_Nicholas_of_Greece_and_Denmark
-  AssignClass (ebd96836-5d5b-4ae4-9191-88b96ebfed65)
- Call ID: ebd96836-5d5b-4ae4-9191-88b96ebfed65
-  Args:
-    source: Prince_Nicholas_of_Greece_and_Denmark
-    type: :Ancestor
-  AssignClass (60242c5a-258f-43b7-aa9e-b85e4802227d)
- Call ID: 60242c5a-258f-43b7-aa9e-b85e4802227d
+    source: :Prince_Louis_Ferdinand_Jr
+  AssignClass (ec7a882a-d3fe-4efb-b742-04e5a05f7aa4)
+ Call ID: ec7a882a-d3fe-4efb-b742-04e5a05f7aa4
   Args:
     type: :Person
-    source: Prince_Nicholas_of_Greece_and_Denmark
-  AssignClass (58cfd1bd-c9e7-433e-aeb0-cdad9fe1092c)
- Call ID: 58cfd1bd-c9e7-433e-aeb0-cdad9fe1092c
+    source: :Prince_Louis_Ferdinand_Jr
+  AddTriple (6c88aac4-b062-4607-aea3-4639a88d353d)
+ Call ID: 6c88aac4-b062-4607-aea3-4639a88d353d
   Args:
-    type: :Woman
-    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AssignClass (6e253c27-6efd-438b-a51e-ed52740084f3)
- Call ID: 6e253c27-6efd-438b-a51e-ed52740084f3
+    target: :Prince_Louis_Ferdinand_Jr
+    relation: :hasSon
+    source: :Louis_Ferdinand_Prince_of_Prussia
+  AddLiteral (cd3b372e-a044-45ae-b13d-c8c93ae4e512)
+ Call ID: cd3b372e-a044-45ae-b13d-c8c93ae4e512
   Args:
-    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-    type: :Ancestor
-  AssignClass (0e21fbca-9063-449d-b2fc-cae544841945)
- Call ID: 0e21fbca-9063-449d-b2fc-cae544841945
-  Args:
-    type: :Person
-    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AddTriple (2553f6cc-6832-477f-bfcc-84cd33cdd2ae)
- Call ID: 2553f6cc-6832-477f-bfcc-84cd33cdd2ae
-  Args:
-    source: Princess_Marina_of_Greece_and_Denmark
-    relation: :hasFather
-    target: Prince_Nicholas_of_Greece_and_Denmark
-  AddTriple (8951aa55-a917-4332-8b7e-fe8f2a07182f)
- Call ID: 8951aa55-a917-4332-8b7e-fe8f2a07182f
-  Args:
-    relation: :hasMother
-    target: Grand_Duchess_Elena_Vladimirovna_of_Russia
-    source: Princess_Marina_of_Greece_and_Denmark
-  AssignClass (34a3831f-e6a4-47cf-a10a-38fa7f473837)
- Call ID: 34a3831f-e6a4-47cf-a10a-38fa7f473837
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1977
+    source: :Prince_Louis_Ferdinand_Jr
+  AssignClass (db47e06c-6d9c-420b-a01a-54a33c83b6f2)
+ Call ID: db47e06c-6d9c-420b-a01a-54a33c83b6f2
   Args:
     type: :Man
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (8fe17455-9ba9-4664-82b7-8cb8e357c0ed)
- Call ID: 8fe17455-9ba9-4664-82b7-8cb8e357c0ed
+    source: :Georg_Friedrich
+  AssignClass (b724a2bb-5d31-4551-a87a-5a5187a5e87c)
+ Call ID: b724a2bb-5d31-4551-a87a-5a5187a5e87c
+  Args:
+    source: :Georg_Friedrich
+    type: :Person
+  AddTriple (b7adfa5f-01a7-439a-b8f3-9bb81dd6a234)
+ Call ID: b7adfa5f-01a7-439a-b8f3-9bb81dd6a234
+  Args:
+    source: :Georg_Friedrich,target:
+    target: :Prince_Louis_Ferdinand_Jr
+    relation: :isSonOf
+  AssignClass (479daf29-8e1f-40b1-8828-71b2cc484832)
+ Call ID: 479daf29-8e1f-40b1-8828-71b2cc484832
+  Args:
+    type: :Man
+    source: :Frederick_William_I
+  AssignClass (ffe244a7-a243-499e-8e6f-5b49e49ca485)
+ Call ID: ffe244a7-a243-499e-8e6f-5b49e49ca485
   Args:
     type: :Person
-    source: Prince_Edward_Duke_of_Kent
-  AddTriple (387ab61d-6a37-4455-8b37-daf21a72626a)
- Call ID: 387ab61d-6a37-4455-8b37-daf21a72626a
+    source: :Frederick_William_I
+  AssignClass (c51f3e9f-6f60-4773-986f-5a6eaaad4761)
+ Call ID: c51f3e9f-6f60-4773-986f-5a6eaaad4761
   Args:
-    source: Prince_Michael_of_Kent
-    target: Prince_Edward_Duke_of_Kent
-    relation: :hasBrother
-  AssignClass (6214a8b7-2d84-489e-9902-34785ebb3cd2)
- Call ID: 6214a8b7-2d84-489e-9902-34785ebb3cd2
-  Args:
-    source: Princess_Alexandra
-    type: :Woman
-  AssignClass (b72df97d-e8ae-4d06-b529-b67d9908f03d)
- Call ID: b72df97d-e8ae-4d06-b529-b67d9908f03d
+    source: :Prince_Ferdinand_of_Hohenzollern
+    type: :Man
+  AssignClass (b5a7f6fb-f1cd-46dd-9f63-d340d4adddac)
+ Call ID: b5a7f6fb-f1cd-46dd-9f63-d340d4adddac
   Args:
     type: :Person
-    source: Princess_Alexandra
-  AddTriple (9b7a8407-2f49-4a2d-92bc-139407646c80)
- Call ID: 9b7a8407-2f49-4a2d-92bc-139407646c80
+    source: :Prince_Ferdinand_of_Hohenzollern
+  Finish (04296112-f434-4b97-ae92-937546c381e6)
+ Call ID: 04296112-f434-4b97-ae92-937546c381e6
   Args:
-    source: Prince_Michael_of_Kent
-    relation: :hasSister
-    target: Princess_Alexandra
-  Finish (1f16b2aa-233b-4424-b5f2-89613bd27dc4)
- Call ID: 1f16b2aa-233b-4424-b5f2-89613bd27dc4
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -838,53 +783,51 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Michael_of_Kent a :Man,
+  data:Frederick_William_I a :Man,
+          :Person .
+
+  data:Georg_Friedrich a :Man,
+          :Person .
+
+  data:Georg_Friedrich%2Ctarget :isSonOf data:Prince_Louis_Ferdinand_Jr .
+
+  data:Prince_Ferdinand_of_Hohenzollern a :Man,
+          :Person .
+
+  data:Prince_Wilhelm_of_Prussia a :Man,
           :Person ;
-      :alsoKnownAs "Michael George Charles Franklin"^^xsd:string ;
-      :hasBirthYear "1942"^^xsd:string ;
-      :hasBrother data:Prince_Edward_Duke_of_Kent ;
-      :hasFather data:Prince_George_Duke_of_Kent ;
-      :hasMarriageYear "1978"^^xsd:string ;
-      :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
-      :hasRelation data:Baroness_Marie-Christine_von_Reibnitz ;
-      :hasSister data:Princess_Alexandra .
+      :isBrotherOf data:Louis_Ferdinand_Prince_of_Prussia .
 
-  data:Baroness_Marie-Christine_von_Reibnitz a :Person,
-          :Woman .
-
-  data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:King_George_V a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Edward_Duke_of_Kent a :Man,
-          :Person .
-
-  data:Prince_George_Duke_of_Kent a :Ancestor,
-          :Man,
+  data:Wilhelm_II a :Man,
           :Person ;
-      :hasFather data:King_George_V ;
-      :hasMother data:Queen_Mary .
+      :isAncestorOf data:Louis_Ferdinand_Prince_of_Prussia .
 
-  data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Princess_Alexandra a :Person,
-          :Woman .
-
-  data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
-          :Person,
+  data:Kira_Kirillovna a :Person,
           :Woman ;
-      :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
-      :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+      :hasFather data:Kyril_Vladimirovich ;
+      :hasMother data:Victoria_Melita .
 
-  data:Queen_Mary a :Ancestor,
-          :Person,
+  data:Kyril_Vladimirovich a :Man,
+          :Person .
+
+  data:Victoria_Melita a :Person,
           :Woman .
+
+  data:William_German_Crown_Prince a :Man,
+          :Person .
+
+  data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+          :Person ;
+      :hasBirthYear 1907 ;
+      :hasDeathYear 1994 ;
+      :hasFather data:William_German_Crown_Prince ;
+      :hasMarriageYear 1938 ;
+      :hasRelation data:Kira_Kirillovna ;
+      :hasSon data:Prince_Louis_Ferdinand_Jr .
+
+  data:Prince_Louis_Ferdinand_Jr a :Man,
+          :Person ;
+      :hasDeathYear 1977 .
 
 
 
@@ -896,9 +839,178 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (f927eb39-5aec-4048-80c6-ef41a19cb15f)
- Call ID: f927eb39-5aec-4048-80c6-ef41a19cb15f
+  ValidateShacl (dfbc6cff-e696-4e4d-92c6-9ab24fa3dad1)
+ Call ID: dfbc6cff-e696-4e4d-92c6-9ab24fa3dad1
   Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:9
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node William_German_Crown_Prince is assigned as the father of Louis_Ferdinand_Prince_of_Prussia, but it is not classified as an Ancestor or a Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_German_Crown_Prince, :Man)
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node William_German_Crown_Prince is assigned as the father of Louis_Ferdinand_Prince_of_Prussia, but it is not classified as an Ancestor or a Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_German_Crown_Prince, :Ancestor)
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Kyril_Vladimirovich is assigned as the father of Kira_Kirillovna, but it is not classified as an Ancestor or a Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Kyril_Vladimirovich, :Man)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Victoria_Melita is assigned as the mother of Kira_Kirillovna, but it is not classified as an Ancestor or a Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Victoria_Melita, :Woman)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node William_German_Crown_Prince is assigned as the father of Louis_Ferdinand_Prince_of_Prussia, but it is not classified as an Ancestor or a Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_German_Crown_Prince, :Man)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Kyril_Vladimirovich is assigned as the father of Kira_Kirillovna, but it is not classified as an Ancestor or a Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Kyril_Vladimirovich, :Man)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Victoria_Melita is assigned as the mother of Kira_Kirillovna, but it is not classified as an Ancestor or a Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Victoria_Melita, :Woman)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Kyril_Vladimirovich is assigned as the father of Kira_Kirillovna, but it is not classified as an Ancestor or a Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Kyril_Vladimirovich, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Victoria_Melita is assigned as the mother of Kira_Kirillovna, but it is not classified as an Ancestor or a Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Victoria_Melita, :Ancestor)
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (c4d812c1-067f-4a8a-8dbe-a967ab15b4c9)
+ Call ID: c4d812c1-067f-4a8a-8dbe-a967ab15b4c9
+  Args:
+    source: :William_German_Crown_Prince
+    type: :Ancestor
+  AssignClass (469a9b32-635c-4585-90f9-9ec5e1d6e0bd)
+ Call ID: 469a9b32-635c-4585-90f9-9ec5e1d6e0bd
+  Args:
+    source: :Kyril_Vladimirovich
+    type: :Ancestor
+  AssignClass (7721068f-3c8f-4ba1-b522-c7a9ee7c4589)
+ Call ID: 7721068f-3c8f-4ba1-b522-c7a9ee7c4589
+  Args:
+    source: :Victoria_Melita
+    type: :Ancestor
+  ValidateShacl (530722b5-6382-44e9-8d92-80aac0a03918)
+ Call ID: 530722b5-6382-44e9-8d92-80aac0a03918
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Frederick_William_I a :Man,
+          :Person .
+
+  data:Georg_Friedrich a :Man,
+          :Person .
+
+  data:Georg_Friedrich%2Ctarget :isSonOf data:Prince_Louis_Ferdinand_Jr .
+
+  data:Prince_Ferdinand_of_Hohenzollern a :Man,
+          :Person .
+
+  data:Prince_Wilhelm_of_Prussia a :Man,
+          :Person ;
+      :isBrotherOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+  data:Wilhelm_II a :Man,
+          :Person ;
+      :isAncestorOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+  data:Kira_Kirillovna a :Person,
+          :Woman ;
+      :hasFather data:Kyril_Vladimirovich ;
+      :hasMother data:Victoria_Melita .
+
+  data:Kyril_Vladimirovich a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Victoria_Melita a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:William_German_Crown_Prince a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+          :Person ;
+      :hasBirthYear 1907 ;
+      :hasDeathYear 1994 ;
+      :hasFather data:William_German_Crown_Prince ;
+      :hasMarriageYear 1938 ;
+      :hasRelation data:Kira_Kirillovna ;
+      :hasSon data:Prince_Louis_Ferdinand_Jr .
+
+  data:Prince_Louis_Ferdinand_Jr a :Man,
+          :Person ;
+      :hasDeathYear 1977 .
+
+
 
 ================================= Tool Message =================================
 
@@ -908,6 +1020,224 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (357f9ee1-f579-49cb-9a67-b96407e0497e)
- Call ID: 357f9ee1-f579-49cb-9a67-b96407e0497e
+  Finish (d7bebf7d-c8b0-4a0d-8a0d-e9a71c4652d0)
+ Call ID: d7bebf7d-c8b0-4a0d-8a0d-e9a71c4652d0
+  Args:
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Georg_Friedrich%2Ctarget']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (b6b3322b-394c-4f61-9a3f-8918cd9c8cde)
+ Call ID: b6b3322b-394c-4f61-9a3f-8918cd9c8cde
+  Args:
+    source: Georg_Friedrich,target
+    type: :Person
+  AssignClass (c9ed6583-c1e1-47d6-852e-8c5be26adbbf)
+ Call ID: c9ed6583-c1e1-47d6-852e-8c5be26adbbf
+  Args:
+    type: :Man
+    source: Georg_Friedrich,target
+  ValidateShacl (46b52ff6-653e-4b46-aef2-8fb4ba54cc96)
+ Call ID: 46b52ff6-653e-4b46-aef2-8fb4ba54cc96
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Frederick_William_I a :Man,
+          :Person .
+
+  data:Georg_Friedrich a :Man,
+          :Person .
+
+  data:Georg_Friedrich%2Ctarget a :Man,
+          :Person ;
+      :isSonOf data:Prince_Louis_Ferdinand_Jr .
+
+  data:Prince_Ferdinand_of_Hohenzollern a :Man,
+          :Person .
+
+  data:Prince_Wilhelm_of_Prussia a :Man,
+          :Person ;
+      :isBrotherOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+  data:Wilhelm_II a :Man,
+          :Person ;
+      :isAncestorOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+  data:Kira_Kirillovna a :Person,
+          :Woman ;
+      :hasFather data:Kyril_Vladimirovich ;
+      :hasMother data:Victoria_Melita .
+
+  data:Kyril_Vladimirovich a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Victoria_Melita a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:William_German_Crown_Prince a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+          :Person ;
+      :hasBirthYear 1907 ;
+      :hasDeathYear 1994 ;
+      :hasFather data:William_German_Crown_Prince ;
+      :hasMarriageYear 1938 ;
+      :hasRelation data:Kira_Kirillovna ;
+      :hasSon data:Prince_Louis_Ferdinand_Jr .
+
+  data:Prince_Louis_Ferdinand_Jr a :Man,
+          :Person ;
+      :hasDeathYear 1977 .
+
+
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:3
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Georg_Friedrich,target' has an 'isSonOf' relationship with 'Prince_Louis_Ferdinand_Jr', but the value node does not belong to the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Prince_Louis_Ferdinand_Jr'.
+
+
+  Violation [2]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Georg_Friedrich,target' has an 'isSonOf' relationship with 'Prince_Louis_Ferdinand_Jr', but the value node does not belong to the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Prince_Louis_Ferdinand_Jr'.
+
+
+  Violation [3]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Georg_Friedrich,target' has an 'isSonOf' relationship with 'Prince_Louis_Ferdinand_Jr', but the value node does not belong to the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Ancestor' to the node 'Prince_Louis_Ferdinand_Jr'.
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (03b857d5-8f8a-430d-8f81-ad499de27a9e)
+ Call ID: 03b857d5-8f8a-430d-8f81-ad499de27a9e
+  Args:
+    type: :Ancestor
+    source: :Prince_Louis_Ferdinand_Jr
+  ValidateShacl (24c3bf51-bbe3-4d08-ab8e-1cca1a0b74d7)
+ Call ID: 24c3bf51-bbe3-4d08-ab8e-1cca1a0b74d7
+  Args:
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Frederick_William_I a :Man,
+          :Person .
+
+  data:Georg_Friedrich a :Man,
+          :Person .
+
+  data:Georg_Friedrich%2Ctarget a :Man,
+          :Person ;
+      :isSonOf data:Prince_Louis_Ferdinand_Jr .
+
+  data:Prince_Ferdinand_of_Hohenzollern a :Man,
+          :Person .
+
+  data:Prince_Wilhelm_of_Prussia a :Man,
+          :Person ;
+      :isBrotherOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+  data:Wilhelm_II a :Man,
+          :Person ;
+      :isAncestorOf data:Louis_Ferdinand_Prince_of_Prussia .
+
+  data:Kira_Kirillovna a :Person,
+          :Woman ;
+      :hasFather data:Kyril_Vladimirovich ;
+      :hasMother data:Victoria_Melita .
+
+  data:Kyril_Vladimirovich a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Victoria_Melita a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:William_German_Crown_Prince a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+          :Person ;
+      :hasBirthYear 1907 ;
+      :hasDeathYear 1994 ;
+      :hasFather data:William_German_Crown_Prince ;
+      :hasMarriageYear 1938 ;
+      :hasRelation data:Kira_Kirillovna ;
+      :hasSon data:Prince_Louis_Ferdinand_Jr .
+
+  data:Prince_Louis_Ferdinand_Jr a :Ancestor,
+          :Man,
+          :Person ;
+      :hasDeathYear 1977 .
+
+
+
+================================= Tool Message =================================
+
+SHACL validation has not produced any violations.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (8d8a8e13-ab3f-4891-be7d-55bc89613c24)
+ Call ID: 8d8a8e13-ab3f-4891-be7d-55bc89613c24
   Args:

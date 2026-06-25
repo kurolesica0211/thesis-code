@@ -85,110 +85,47 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Irene of the Netherlands (Irene Emma Elisabeth; born 5 August 1939) is the second child of Queen Juliana of the Netherlands and Prince Bernhard.
-In 1964, she converted to Catholicism and married the then-Prince Carlos Hugo of Bourbon-Parma in a Catholic ceremony in Rome, thus forfeiting her place in the royal succession.
-Childhood and family
+Princess Dolores of Bourbon-Two Sicilies (15 November 1909 – 11 May 1996) was a daughter of Prince Carlos of Bourbon-Two Sicilies and his wife Princess Louise of Orléans.
+Princess Dolores was born into the House of Bourbon-Two Sicilies and was a member of the Polish-Lithuanian noble Czartoryski family through her marriage to Prince Augustyn Józef Czartoryski.
+She was also an aunt of Juan Carlos I of Spain, son of her sister Princess María de las Mercedes of Bourbon-Two Sicilies.
+Early life
 
-The princess was born on 5 August 1939 at Soestdijk Palace.
-She has three sisters, the eldest of whom is the former queen of the Netherlands, Princess Beatrix of the Netherlands; the two younger ones are Princess Margriet and the late Princess Christina.
-Because of the invasion of the Netherlands by Nazi Germany during World War II the Dutch royal family first fled to the United Kingdom.
-Irene was not yet a year old when the family was forced to leave the Netherlands; she was christened in the Chapel-Royal of Buckingham Palace in London, with the wife of King George VI, Queen Elizabeth, being one of her godparents.
-When the family was leaving the Netherlands, the port where they boarded the British warship was attacked by a German air raid; one of the German bombs exploded within 200 yards of the family.
-Irene was placed in a gasproof carrier to protect her from chemical warfare.
-Princess Juliana and her daughters again took flight when the London Blitz began, this time to exile in Ottawa, Canada, where her younger sister, Margriet, was born and where Irene attended Rockcliffe Park Public School.
-As a teenager, she was dubbed by the Dutch press "the glamorous Princess of the Netherlands."
-During the war, the Royal Dutch Brigade (the formation of Free Dutch soldiers that fought alongside the Allies) was named for Princess Irene.
-This was continued after the war as the Regiment Prinses Irene.
-Always an independent person, Irene was thrilled to receive a sports car from her father, one of the gifts he had been presented with.
-Irene's happiness was short-lived; when she opened the hood of the automobile, she noticed that the vehicle only looked like a sports car but had an ordinary car's engine.
-She asked her father for permission to turn the vehicle into a true racing-type auto, which Prince Bernhard refused to allow.
-She was a bridesmaid at the 1962 wedding of Prince Juan Carlos of Spain and Princess Sophia of Greece and Denmark.
-Princess Irene studied at the University of Utrecht, then went to Madrid to learn the Spanish language and became proficient enough to become an official interpreter.
-Marriage controversy
+Born on 15 November 1909 at the Palace of Villamejor, Princess Dolores of Bourbon-Two Sicilies was the second child of Prince Carlos of Bourbon-Two Sicilies and his second wife Princess Louise of Orléans.
+She was christened Maria de los Dolores Victoria Felipa Luisa Mercedes.
+Princess Dolores, nicknamed Dola among his relatives, was closely related to the Spanish royal family.
+Her father, Prince Carlos of Bourbon-Two Sicilies, had renounced his right to the throne of Two Sicilies becoming a Spanish citizen when he married his first wife, Mercedes, Princess of Asturias, the eldest sister of King Alfonso XIII of Spain.
+Dolores’s mother, Princess Louise of Orléans was a first cousin once removed of the Spanish King.
+As a result, Dolores and her sibling grew up in close proximity to the Spanish royal family.
+Her cousins, the children of King Alfonso XIII and Queen Victoria Eugenie were the same age as Dolores and her younger siblings.
+The family lived at the Palace of Villamejor in Madrid, vacations were spent near Seville in the Palace of Villamanrique, property of her maternal grandmother, Isabelle, Countess of Paris.
+Princess Dolores studied with her sisters Mercedes  and Esperanza in a school of Irish nuns in Madrid.
+Dolores was twelve years old when she moved with her family to Seville when her father was appointed Military Captain General of Andalusia.
+The Princess and her sisters continued their studies as boarders at  the school of Irish nuns in Castilleja de la Cueva in Seville.
+Marriage and later life
 
-Conversion to Catholicism
-
-While studying Spanish in Madrid, Irene met then Prince Carlos Hugo of Bourbon-Parma, the eldest son of Carlist claimant to the Spanish throne, Xavier, Duke of Parma and Head of the House of Bourbon-Parma.
-In the summer of 1963, Princess Irene secretly converted from Protestantism to Roman Catholicism.
-The first time the public or the royal family knew about the conversion was when a photograph appeared on the front page of an Amsterdam newspaper showing the Princess kneeling to receive communion at a Mass in the Roman Catholic Church of the Hieronymites (Los Jerónimos) in Madrid.
-Irene's conversion took place a year before her engagement announcement, but the royal family did not officially announce the news until January 1964.
-When news leaked out that she was engaged to Prince Carlos Hugo (born 1930), it provoked a Protestant outcry and a constitutional crisis.
-Although Dutch law did not forbid a Catholic to reign over the Netherlands, Protestant succession was traditional, born out of the 16th-century Eighty Years' War with Spain and the assassination of William of Orange by a supporter of Philip II of Spain who believed William had betrayed both the Spanish monarch and the Catholic Church.
-For the second in line to the throne to not only convert to Roman Catholicism, but to marry the heir to the Carlist claim, caused shock and consternation in the Netherlands.
-When Princess Irene left the Netherlands to join Prince Carlos in Paris after the announcement of their engagement, a threat was telephoned to KLM Royal Dutch Airlines by an anonymous caller saying, "you should investigate the plane".
-Queen Juliana attempted to stop the marriage, first by sending a member of her staff to Madrid to persuade the Princess not to go ahead with a marriage that would be a political disaster for the monarchy in the Netherlands.
-It seemed to work and the Queen went on Dutch radio to tell the citizens that Princess Irene had agreed to cancel her engagement and was returning to the Netherlands.
-When the airplane arrived at Schiphol Airport, the Princess was not on it, and Queen Juliana and her husband, Prince Bernhard were supplied with a Dutch military plane to go to Spain to retrieve their daughter.
-It was suggested that Princess Irene was a pawn of General Francisco Franco who tried to maximize the event to his benefit.
-Prince Bernhard then traveled to Madrid to meet with his daughter and her fiancé, who both accompanied him back to the Netherlands, where an immediate meeting took place with the couple, the Queen, Prime Minister Marijnen, himself a Roman Catholic, and three top cabinet ministers.
-When the meeting ended in the early hours of the morning on Sunday, 9 February 1964, Dutch radio broke its traditional Sabbath day silence to announce that Princess Irene would give up any rights of succession to the throne so she could marry Carlos Hugo.
-The princess further stated that she did not want the government to create a bill which would grant official consent to her marriage.
-In an attempt to gain public favour for her proposed marriage, Princess Irene publicly stated that her marriage was intended to help end religious intolerance.
-Because the constitution prohibits members of the royal family from any involvement in foreign politics, Irene alienated herself from almost every Dutch citizen when a photo appeared in a Dutch paper showing her at a Carlist rally in Spain and she declared that she supported her fiancé's political goals.
-The Dutch government officially announced that it had no responsibility for either the words or actions of Princess Irene in the future on 10 April 1964.
-It was done in response to Irene's declaration of joining Carlos Hugo's political campaign to regain the throne of Spain on 8 April 1964.
-Marriage
-
-Princess Beatrix*
-
-
-Princess Margriet*Pieter van Vollenhoven*
-
-
-No one from the Dutch royal family or any Dutch diplomatic representative attended the marriage of Princess Irene and Prince Carlos Hugo in the Borghese Chapel at the Basilica di Santa Maria Maggiore in Rome, Italy, on 29 April 1964.
-Dutch television provided coverage of the marriage and Irene's family was among those who watched the ceremonies, although fate conspired in the form of a power failure which made them unable to see the last part of the rite.
-The Dutch royal family gathered at the home of Prince Bernhard's mother, Armgard of Sierstorpff-Cramm, for the television coverage.
-Princess Armgard had also converted to Roman Catholicism like her granddaughter, but decided against attending the wedding.
-Irene and her mother spoke on the telephone before she left for the Basilica.
-The Dutch government had also vetoed the possibility of the wedding being held in the Netherlands.
-Because she had failed to obtain the approval of the States-General to marry, Irene lost her right of succession to the Dutch throne.
-She agreed that she would live outside of the Netherlands.
-In 1968, Princess Irene was libeled by the West German "rainbow press".
-One of the publications printed a story that Irene had undergone an abortion with parental consent before she was married.
-Irene's father, Prince Bernhard, took the paper to court to clear his daughter's name.
-After the wedding, Irene was very active in her husband's right-wing political cause, but over time they drifted away from right-wing extremism to left-wing sympathies and became a part of the international jet-set crowd.
-On 9 May 1977 Irene was expelled from Spain on the day after the death in Switzerland of her father-in-law, the Carlist claimant Xavier, Duke of Parma.
-Her husband Carlos Hugo, now the new Duke of Parma, Head of the House and Carlist claimant to the throne and an opponent of King Juan Carlos I, was also barred from the country for the same reason.
-Prince Carlos Hugo was allowed to return in late 1977, but Princess Irene was not permitted back in the country until April 1978.
-The prince, head of the Royal House of Bourbon-Parma, became a naturalized Spanish citizen in 1979.
-Her youngest sister, Princess Christina, later waived her rights to the throne when she married Jorge Guillermo, a United States citizen born in Cuba and a Roman Catholic.
-Since divorce
-
-In 1980, Irene and her children returned to live in the Netherlands, initially moving back into Soestdijk Palace.
-By 1981, she and her children had moved to their own home across the street from the palace, where Irene did traditional household chores like grocery shopping.
-In 1999 Princess Irene purchased a farm near Nieu-Bethesda in South Africa, turning it into a sanctuary.
-In 2001, she helped establish the NatuurCollege in the Netherlands.
-She is also the founder of NatureWise, an organization that brings elementary school children in the Netherlands directly in touch with nature.
-The Princess is an honorary member of the Club of Budapest.
-Children
-
-Carlos Hugo and Princess Irene had four children:
-
-
-Titles, styles, and honours
-
-Titles
-
-Her official style is Her Royal Highness Princess Irene of the Netherlands, Princess of Orange-Nassau, Princess of Lippe-Biesterfeld.
-The Princess has used the following names since her divorce:
-
-
-Ancestry
-
-References
-
-External links
-
-@media screen{html.skin-theme-clientpref-night .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}} Media related to Princess Irene of the Netherlands at Wikimedia Commons
-
-
-2 also Princess of Lippe-Biesterfeld
+In Paris, Princess Dolores met a wealthy Polish aristocrat Prince Augustyn Józef Czartoryski, 13th Prince Czartoryski, Duke of Klewan and Zuków, son of Prince Adam Ludwik Czartoryski and his wife Countess Maria Ludwika Krasińska.
+The couple settled in Kraków, Poland where Dolores’s husband took over the running of the Family Museum.
+In September 1939 with the Invasion of Poland bombs fell on Kraków, Prince Augustyn and Princess Dolores, who was pregnant, decided to leave the country and move to Spain.
+After reaching Paris, Princess Dolores and her husband moved permanently to Spain.
+They settled in Seville where Princess Dolores gave birth to a son: Prince Adam Karol Czartoryski (born 2 January 1940).
+In 1943 the couple bought a rural property in Dos Hermanas which they called it Garden of the Princess, the farm was self-sufficient for the subsistence of the family.
+The couple had a second son also born in Seville, Prince Ludwik Piotr Czartoryski (13 March 1945 - 3 May 1946), but the child died at only fourteen months.
+At the end of the war, the properties of the Czartoryski family were nationalized by the Polish government and the family decided not to return to Kraków, for fear of the Soviet occupation.
+Prince Augustyn was in poor health, the troubles and tribulation of the war took a toll on his life and he died on 1 July 1946, aged thirty nine.
+The deaths of  both her youngest son and her husband only two months apart in 1946 deeply affected the Princess, who was left a widow with a six-year-old child.
+Princess Dolores continued living in Seville, Spain.
+Four years into her widowhood, she fell in love with Carlos Chías Osorio (born at Barcelona 26 Feb 1925), an ex seminarist, teacher  and preceptor of her son Adam.
+Carlos Chias Osorio quickly became well liked in Dos Hermanas and in spite of the age disparity the marriage was a happy one.
+After the death of Princess Dolores's mother in April that year, the couple moved to Madrid.
+In the following decades, the princess and her husband lived simply in Madrid.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -204,39 +141,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -251,6 +158,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -268,6 +192,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -335,29 +274,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -366,6 +297,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -378,6 +317,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -386,17 +327,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -424,6 +367,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -439,112 +466,398 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (73989188-9def-4298-953a-c9745520bf14)
- Call ID: 73989188-9def-4298-953a-c9745520bf14
+  AssignClass (d8246ab0-f28d-4271-985e-19ffc3a1a6d1)
+ Call ID: d8246ab0-f28d-4271-985e-19ffc3a1a6d1
   Args:
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
     type: :Woman
-    source: :Princess_Irene_of_the_Netherlands
-  AssignClass (1c857923-f75c-4781-8d61-d80986de67a5)
- Call ID: 1c857923-f75c-4781-8d61-d80986de67a5
+  AssignClass (cd5b0407-e4c3-428a-be24-ab18fd3db48c)
+ Call ID: cd5b0407-e4c3-428a-be24-ab18fd3db48c
   Args:
-    type: :Woman
-    source: :Queen_Juliana_of_the_Netherlands
-  AssignClass (22d82217-b6f0-4135-8679-16350cf25d26)
- Call ID: 22d82217-b6f0-4135-8679-16350cf25d26
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
+    type: :Person
+  AddLiteral (4aa9df18-1689-47b6-8c4d-a5647badb342)
+ Call ID: 4aa9df18-1689-47b6-8c4d-a5647badb342
   Args:
-    type: :Man
-    source: :Prince_Bernhard
-  AssignClass (1c170096-7753-4dc8-b7e2-1f85ab1d099c)
- Call ID: 1c170096-7753-4dc8-b7e2-1f85ab1d099c
-  Args:
-    type: :Man
-    source: :Prince_Carlos_Hugo_of_Bourbon-Parma
-  AssignClass (0c1fcece-b62d-4c12-9c9e-4f2fbc94dca5)
- Call ID: 0c1fcece-b62d-4c12-9c9e-4f2fbc94dca5
-  Args:
-    type: :Woman
-    source: :Princess_Beatrix_of_the_Netherlands
-  AssignClass (813b7c75-f151-496e-a445-6d573249fae4)
- Call ID: 813b7c75-f151-496e-a445-6d573249fae4
-  Args:
-    type: :Woman
-    source: :Princess_Margriet_of_the_Netherlands
-  AssignClass (42083d0e-deeb-4ad0-b273-68eca278021e)
- Call ID: 42083d0e-deeb-4ad0-b273-68eca278021e
-  Args:
-    type: :Woman
-    source: :Princess_Christina_of_the_Netherlands
-  AssignClass (88b5b24d-7e47-4071-8397-2ea238389e4c)
- Call ID: 88b5b24d-7e47-4071-8397-2ea238389e4c
-  Args:
-    type: :Woman
-    source: :Armgard_of_Sierstorpff-Cramm
-  AddLiteral (7b8b8ede-17ce-4856-8453-83c0fa0f6cb6)
- Call ID: 7b8b8ede-17ce-4856-8453-83c0fa0f6cb6
-  Args:
-    literal_value: 1939
     literal_type: xsd:integer
-    source: :Princess_Irene_of_the_Netherlands
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
+    literal_value: 1909
     relation: :hasBirthYear
-  AddLiteral (71692392-12e3-4331-8feb-f0fae6e82a16)
- Call ID: 71692392-12e3-4331-8feb-f0fae6e82a16
+  AddLiteral (a2f42a0b-b3c2-41a1-94b3-dda3f9ac4c7b)
+ Call ID: a2f42a0b-b3c2-41a1-94b3-dda3f9ac4c7b
   Args:
+    literal_value: 1996
+    relation: :hasDeathYear
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
+    literal_type: xsd:integer
+  AddLiteral (6f8efd8c-8cc1-46ae-8890-021f5d53b012)
+ Call ID: 6f8efd8c-8cc1-46ae-8890-021f5d53b012
+  Args:
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
     literal_type: xsd:string
-    literal_value: Female
-    relation: :hasSex
-    source: :Princess_Irene_of_the_Netherlands
-  AddTriple (1fa164df-588a-4c8b-a28e-aa32d372af7a)
- Call ID: 1fa164df-588a-4c8b-a28e-aa32d372af7a
+    literal_value: Dola
+    relation: :knownAs
+  AssignClass (30350167-c04e-4778-9bfe-dd01b68d16c0)
+ Call ID: 30350167-c04e-4778-9bfe-dd01b68d16c0
   Args:
-    target: :Queen_Juliana_of_the_Netherlands
-    source: :Princess_Irene_of_the_Netherlands
-    relation: :hasMother
-  AddTriple (f45a6ec1-1f5f-4319-9f3c-1298cf5acfbf)
- Call ID: f45a6ec1-1f5f-4319-9f3c-1298cf5acfbf
+    source: :Prince_Carlos_of_Bourbon-Two_Sicilies
+    type: :Man
+  AssignClass (313dfd1b-06ec-4da8-b993-7d604aa9be67)
+ Call ID: 313dfd1b-06ec-4da8-b993-7d604aa9be67
   Args:
-    target: :Prince_Bernhard
+    source: :Prince_Carlos_of_Bourbon-Two_Sicilies
+    type: :Person
+  AssignClass (e0dcd7d4-6c1e-42f8-84fc-cd2646715376)
+ Call ID: e0dcd7d4-6c1e-42f8-84fc-cd2646715376
+  Args:
+    source: :Princess_Louise_of_Orléans
+    type: :Woman
+  AssignClass (e0213edc-1d15-4243-8520-c51205750949)
+ Call ID: e0213edc-1d15-4243-8520-c51205750949
+  Args:
+    source: :Princess_Louise_of_Orléans
+    type: :Person
+  AddTriple (bfbe8cab-9074-42cc-81be-341dd01fdeba)
+ Call ID: bfbe8cab-9074-42cc-81be-341dd01fdeba
+  Args:
+    target: :Prince_Carlos_of_Bourbon-Two_Sicilies
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
     relation: :hasFather
-    source: :Princess_Irene_of_the_Netherlands
-  AddTriple (c4276c28-b36b-41fa-bcbf-3823997392f3)
- Call ID: c4276c28-b36b-41fa-bcbf-3823997392f3
+  AddTriple (ad432eec-ca24-4328-8e1f-5080109a85cc)
+ Call ID: ad432eec-ca24-4328-8e1f-5080109a85cc
   Args:
-    target: :Princess_Beatrix_of_the_Netherlands
-    relation: :hasSister
-    source: :Princess_Irene_of_the_Netherlands
-  AddTriple (d4443015-61b8-4597-8671-df1513299ec5)
- Call ID: d4443015-61b8-4597-8671-df1513299ec5
+    relation: :hasMother
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
+    target: :Princess_Louise_of_Orléans
+  AssignClass (adcdaede-eaa2-4544-a98e-dbb0f6ea1189)
+ Call ID: adcdaede-eaa2-4544-a98e-dbb0f6ea1189
   Args:
-    relation: :hasSister
-    source: :Princess_Irene_of_the_Netherlands
-    target: :Princess_Margriet_of_the_Netherlands
-  AddTriple (ad033bb3-5629-4225-b8c7-004ec0dc0a7e)
- Call ID: ad033bb3-5629-4225-b8c7-004ec0dc0a7e
+    source: :Prince_Augustyn_Józef_Czartoryski
+    type: :Man
+  AssignClass (3d298780-8d27-4dd9-ac77-6ef2bad1d6df)
+ Call ID: 3d298780-8d27-4dd9-ac77-6ef2bad1d6df
   Args:
-    target: :Princess_Christina_of_the_Netherlands
-    relation: :hasSister
-    source: :Princess_Irene_of_the_Netherlands
-  AddLiteral (2928bdf5-25c8-4843-b3ca-17db613647b5)
- Call ID: 2928bdf5-25c8-4843-b3ca-17db613647b5
+    source: :Prince_Augustyn_Józef_Czartoryski
+    type: :Person
+  AddTriple (18edd43e-6c52-4e29-8318-06a565c105a6)
+ Call ID: 18edd43e-6c52-4e29-8318-06a565c105a6
+  Args:
+    relation: :hasRelation
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
+    target: :Prince_Augustyn_Józef_Czartoryski
+  AssignClass (fdb3a028-5fbd-453d-a984-1fe162c333dd)
+ Call ID: fdb3a028-5fbd-453d-a984-1fe162c333dd
+  Args:
+    source: :Prince_Adam_Karol_Czartoryski
+    type: :Man
+  AssignClass (9af27590-5ff5-4be0-ab90-09bc71893999)
+ Call ID: 9af27590-5ff5-4be0-ab90-09bc71893999
+  Args:
+    source: :Prince_Adam_Karol_Czartoryski
+    type: :Person
+  AddTriple (2cdd7a27-16de-4dc7-98e8-d950b0fa3e45)
+ Call ID: 2cdd7a27-16de-4dc7-98e8-d950b0fa3e45
+  Args:
+    target: :Prince_Adam_Karol_Czartoryski
+    relation: :hasSon
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
+  AddTriple (5c4f776a-f894-4ef8-bf66-d9159610651d)
+ Call ID: 5c4f776a-f894-4ef8-bf66-d9159610651d
+  Args:
+    source: :Prince_Augustyn_Józef_Czartoryski
+    relation: :hasSon
+    target: :Prince_Adam_Karol_Czartoryski
+  AddLiteral (6b292999-124a-4d82-8272-24c89de822d9)
+ Call ID: 6b292999-124a-4d82-8272-24c89de822d9
   Args:
     literal_type: xsd:integer
-    literal_value: 1964
-    source: :Princess_Irene_of_the_Netherlands
-    relation: :hasMarriageYear
-  AddTriple (b4778f92-b00e-49f6-944d-d7f82481ff5f)
- Call ID: b4778f92-b00e-49f6-944d-d7f82481ff5f
+    source: :Prince_Adam_Karol_Czartoryski
+    literal_value: 1940
+    relation: :hasBirthYear
+  AssignClass (c5a0564a-d560-498f-9e68-d11c92b4e16c)
+ Call ID: c5a0564a-d560-498f-9e68-d11c92b4e16c
   Args:
-    source: :Princess_Irene_of_the_Netherlands
+    source: :Prince_Ludwik_Piotr_Czartoryski
+    type: :Man
+  AssignClass (51641c1e-6fa6-46ee-baf4-29d439ae53ae)
+ Call ID: 51641c1e-6fa6-46ee-baf4-29d439ae53ae
+  Args:
+    source: :Prince_Ludwik_Piotr_Czartoryski
+    type: :Person
+  AddTriple (c137f8b4-b4c6-4090-9302-edbceec41b2e)
+ Call ID: c137f8b4-b4c6-4090-9302-edbceec41b2e
+  Args:
+    target: :Prince_Ludwik_Piotr_Czartoryski
+    relation: :hasSon
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
+  AddTriple (35dc698c-1408-4af2-bf80-a47525759104)
+ Call ID: 35dc698c-1408-4af2-bf80-a47525759104
+  Args:
+    target: :Prince_Ludwik_Piotr_Czartoryski
+    source: :Prince_Augustyn_Józef_Czartoryski
+    relation: :hasSon
+  AddLiteral (cfb91ec7-da0e-488f-8a84-ea9fcb28b377)
+ Call ID: cfb91ec7-da0e-488f-8a84-ea9fcb28b377
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1945
+    literal_type: xsd:integer
+    source: :Prince_Ludwik_Piotr_Czartoryski
+  AddLiteral (852fa255-ada4-45b4-b936-1ab393a4aede)
+ Call ID: 852fa255-ada4-45b4-b936-1ab393a4aede
+  Args:
+    literal_value: 1946
+    relation: :hasDeathYear
+    source: :Prince_Ludwik_Piotr_Czartoryski
+    literal_type: xsd:integer
+  AssignClass (a35099be-0b76-4e75-9d18-b05d0f89ee25)
+ Call ID: a35099be-0b76-4e75-9d18-b05d0f89ee25
+  Args:
+    source: :Juan_Carlos_I_of_Spain
+    type: :Man
+  AssignClass (945b1689-3473-4ab3-a3ec-684027c81408)
+ Call ID: 945b1689-3473-4ab3-a3ec-684027c81408
+  Args:
+    source: :Juan_Carlos_I_of_Spain
+    type: :Person
+  AssignClass (915bfcd7-584f-4042-940e-aab2d5e05ddc)
+ Call ID: 915bfcd7-584f-4042-940e-aab2d5e05ddc
+  Args:
+    source: :Princess_María_de_las_Mercedes_of_Bourbon-Two_Sicilies
+    type: :Woman
+  AssignClass (0be7dcdd-3f83-4038-8902-621e3ab5ee0d)
+ Call ID: 0be7dcdd-3f83-4038-8902-621e3ab5ee0d
+  Args:
+    source: :Princess_María_de_las_Mercedes_of_Bourbon-Two_Sicilies
+    type: :Person
+  AddTriple (61c0df76-298f-4cfb-896b-0ef5ecac3b52)
+ Call ID: 61c0df76-298f-4cfb-896b-0ef5ecac3b52
+  Args:
+    relation: :isSisterOf
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
+    target: :Princess_María_de_las_Mercedes_of_Bourbon-Two_Sicilies
+  AddTriple (a0ecd5fb-099b-43b5-8f65-d687d61612b1)
+ Call ID: a0ecd5fb-099b-43b5-8f65-d687d61612b1
+  Args:
+    relation: :hasSon
+    source: :Princess_María_de_las_Mercedes_of_Bourbon-Two_Sicilies
+    target: :Juan_Carlos_I_of_Spain
+  AddTriple (fd3325f2-df16-46d4-b740-78c2fadc3fd6)
+ Call ID: fd3325f2-df16-46d4-b740-78c2fadc3fd6
+  Args:
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
+    relation: :isAuntOf
+    target: :Juan_Carlos_I_of_Spain
+  AssignClass (542c7d53-0c1d-4352-9066-845d8fb948e8)
+ Call ID: 542c7d53-0c1d-4352-9066-845d8fb948e8
+  Args:
+    source: :Carlos_Chías_Osorio
+    type: :Man
+  AssignClass (993dd351-c2d1-4620-af3d-67db9f10bad1)
+ Call ID: 993dd351-c2d1-4620-af3d-67db9f10bad1
+  Args:
+    source: :Carlos_Chías_Osorio
+    type: :Person
+  AddTriple (bad23c8b-f417-4281-b950-e54cab1fe1d2)
+ Call ID: bad23c8b-f417-4281-b950-e54cab1fe1d2
+  Args:
+    target: :Carlos_Chías_Osorio
     relation: :hasRelation
-    target: :Prince_Carlos_Hugo_of_Bourbon-Parma
-  AddTriple (bee010b6-5a9b-4cf1-a1cc-2f8ce7d48495)
- Call ID: bee010b6-5a9b-4cf1-a1cc-2f8ce7d48495
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
+  AddLiteral (48689910-1293-416a-9098-deca89c200be)
+ Call ID: 48689910-1293-416a-9098-deca89c200be
   Args:
-    target: :Armgard_of_Sierstorpff-Cramm
-    source: :Prince_Bernhard
+    source: :Carlos_Chías_Osorio
+    literal_type: xsd:integer
+    literal_value: 1925
+    relation: :hasBirthYear
+  AssignClass (760bac31-5290-46dd-bd50-f2fbd019af0b)
+ Call ID: 760bac31-5290-46dd-bd50-f2fbd019af0b
+  Args:
+    source: :Prince_Adam_Ludwik_Czartoryski
+    type: :Man
+  AssignClass (61a45e89-dc1c-439d-8813-f1599803107d)
+ Call ID: 61a45e89-dc1c-439d-8813-f1599803107d
+  Args:
+    source: :Prince_Adam_Ludwik_Czartoryski
+    type: :Person
+  AssignClass (30025247-59a0-4e64-aced-aacf46091fba)
+ Call ID: 30025247-59a0-4e64-aced-aacf46091fba
+  Args:
+    source: :Countess_Maria_Ludwika_Krasińska
+    type: :Woman
+  AssignClass (3f735864-6d1b-45d3-a8ae-a69ada1a3940)
+ Call ID: 3f735864-6d1b-45d3-a8ae-a69ada1a3940
+  Args:
+    source: :Countess_Maria_Ludwika_Krasińska
+    type: :Person
+  AddTriple (155b0d3f-e4c8-4370-8a25-6176255bd52f)
+ Call ID: 155b0d3f-e4c8-4370-8a25-6176255bd52f
+  Args:
+    target: :Prince_Adam_Ludwik_Czartoryski
+    source: :Prince_Augustyn_Józef_Czartoryski
+    relation: :hasFather
+  AddTriple (821aaab5-e96b-473f-9691-2fb06b183509)
+ Call ID: 821aaab5-e96b-473f-9691-2fb06b183509
+  Args:
+    target: :Countess_Maria_Ludwika_Krasińska
+    source: :Prince_Augustyn_Józef_Czartoryski
     relation: :hasMother
-  Finish (9134df12-5bba-4772-b61e-4c8bb024be5a)
- Call ID: 9134df12-5bba-4772-b61e-4c8bb024be5a
+  AssignClass (319c3ee6-15f2-481d-b962-6b585e9656f6)
+ Call ID: 319c3ee6-15f2-481d-b962-6b585e9656f6
   Args:
+    source: :Princess_Esperanza_of_Bourbon-Two_Sicilies
+    type: :Woman
+  AssignClass (e9a46e19-9527-429e-b425-24b87344a4ba)
+ Call ID: e9a46e19-9527-429e-b425-24b87344a4ba
+  Args:
+    source: :Princess_Esperanza_of_Bourbon-Two_Sicilies
+    type: :Person
+  AddTriple (8f7e373f-3632-4ccd-b259-d8ef92eab85f)
+ Call ID: 8f7e373f-3632-4ccd-b259-d8ef92eab85f
+  Args:
+    target: :Princess_Esperanza_of_Bourbon-Two_Sicilies
+    relation: :isSisterOf
+    source: :Princess_Dolores_of_Bourbon-Two_Sicilies
+  AssignClass (a699db56-6574-4a2b-9d91-408dc8d5e6a2)
+ Call ID: a699db56-6574-4a2b-9d91-408dc8d5e6a2
+  Args:
+    source: :Isabelle_Countess_of_Paris
+    type: :Woman
+  AssignClass (f2983a07-0a8a-4d72-bbc7-cb39dcfb3f41)
+ Call ID: f2983a07-0a8a-4d72-bbc7-cb39dcfb3f41
+  Args:
+    source: :Isabelle_Countess_of_Paris
+    type: :Person
+  AddTriple (da4168b0-bd78-43ba-a641-a107bf1271ff)
+ Call ID: da4168b0-bd78-43ba-a641-a107bf1271ff
+  Args:
+    relation: :hasMother
+    source: :Princess_Louise_of_Orléans
+    target: :Isabelle_Countess_of_Paris
+  Finish (8cd3738a-4625-4400-ab31-047e980ceb4d)
+ Call ID: 8cd3738a-4625-4400-ab31-047e980ceb4d
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -621,31 +934,66 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Princess_Irene_of_the_Netherlands a :Woman ;
-      :hasBirthYear 1939 ;
-      :hasFather data:Prince_Bernhard ;
-      :hasMarriageYear 1964 ;
-      :hasMother data:Queen_Juliana_of_the_Netherlands ;
-      :hasRelation data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
-      :hasSex "Female"^^xsd:string ;
-      :hasSister data:Princess_Beatrix_of_the_Netherlands,
-          data:Princess_Christina_of_the_Netherlands,
-          data:Princess_Margriet_of_the_Netherlands .
+  data:Princess_Dolores_of_Bourbon-Two_Sicilies a :Person,
+          :Woman ;
+      :hasBirthYear 1909 ;
+      :hasDeathYear 1996 ;
+      :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+      :hasMother data:Princess_Louise_of_Orl%C3%A9ans ;
+      :hasRelation data:Carlos_Ch%C3%ADas_Osorio,
+          data:Prince_Augustyn_J%C3%B3zef_Czartoryski ;
+      :hasSon data:Prince_Adam_Karol_Czartoryski,
+          data:Prince_Ludwik_Piotr_Czartoryski ;
+      :isAuntOf data:Juan_Carlos_I_of_Spain ;
+      :isSisterOf data:Princess_Esperanza_of_Bourbon-Two_Sicilies,
+          data:Princess_Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+      :knownAs "Dola"^^xsd:string .
 
-  data:Armgard_of_Sierstorpff-Cramm a :Woman .
+  data:Carlos_Ch%C3%ADas_Osorio a :Man,
+          :Person ;
+      :hasBirthYear 1925 .
 
-  data:Prince_Bernhard a :Man ;
-      :hasMother data:Armgard_of_Sierstorpff-Cramm .
+  data:Countess_Maria_Ludwika_Krasi%C5%84ska a :Person,
+          :Woman .
 
-  data:Prince_Carlos_Hugo_of_Bourbon-Parma a :Man .
+  data:Isabelle_Countess_of_Paris a :Person,
+          :Woman .
 
-  data:Princess_Beatrix_of_the_Netherlands a :Woman .
+  data:Prince_Adam_Ludwik_Czartoryski a :Man,
+          :Person .
 
-  data:Princess_Christina_of_the_Netherlands a :Woman .
+  data:Prince_Augustyn_J%C3%B3zef_Czartoryski a :Man,
+          :Person ;
+      :hasFather data:Prince_Adam_Ludwik_Czartoryski ;
+      :hasMother data:Countess_Maria_Ludwika_Krasi%C5%84ska ;
+      :hasSon data:Prince_Adam_Karol_Czartoryski,
+          data:Prince_Ludwik_Piotr_Czartoryski .
 
-  data:Princess_Margriet_of_the_Netherlands a :Woman .
+  data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man,
+          :Person .
 
-  data:Queen_Juliana_of_the_Netherlands a :Woman .
+  data:Princess_Esperanza_of_Bourbon-Two_Sicilies a :Person,
+          :Woman .
+
+  data:Princess_Louise_of_Orl%C3%A9ans a :Person,
+          :Woman ;
+      :hasMother data:Isabelle_Countess_of_Paris .
+
+  data:Princess_Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,
+          :Woman ;
+      :hasSon data:Juan_Carlos_I_of_Spain .
+
+  data:Juan_Carlos_I_of_Spain a :Man,
+          :Person .
+
+  data:Prince_Adam_Karol_Czartoryski a :Man,
+          :Person ;
+      :hasBirthYear 1940 .
+
+  data:Prince_Ludwik_Piotr_Czartoryski a :Man,
+          :Person ;
+      :hasBirthYear 1945 ;
+      :hasDeathYear 1946 .
 
 
 
@@ -657,150 +1005,134 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (c769a522-bc18-4540-ad31-0cafd96bdeaa)
- Call ID: c769a522-bc18-4540-ad31-0cafd96bdeaa
+  ValidateShacl (0e5c2a6e-b346-4b4f-9caf-ca82225890ba)
+ Call ID: 0e5c2a6e-b346-4b4f-9caf-ca82225890ba
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:17
+Total violations:15
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Armgard_of_Sierstorpff-Cramm is assigned as the mother of Prince_Bernhard, but it is missing the required class :Woman or :Ancestor.
+      The person Prince_Adam_Ludwik_Czartoryski is assigned as a father but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Armgard_of_Sierstorpff-Cramm :Woman
+      AssignClass(Prince_Adam_Ludwik_Czartoryski, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Female assigned to the hasSex property for Princess_Irene_of_the_Netherlands is missing the required class :Sex.
+      The person Countess_Maria_Ludwika_Krasińska is assigned as a mother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Female :Sex
+      AssignClass(Countess_Maria_Ludwika_Krasińska, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Bernhard is assigned as the father of Princess_Irene_of_the_Netherlands, but it is missing the required class :Man or :Ancestor.
+      The person Prince_Carlos_of_Bourbon-Two_Sicilies is assigned as a father but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Prince_Bernhard :Man
+      AssignClass(Prince_Carlos_of_Bourbon-Two_Sicilies, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Juliana_of_the_Netherlands is assigned as the mother of Princess_Irene_of_the_Netherlands, but it is missing the required class :Woman or :Ancestor.
+      The person Prince_Adam_Ludwik_Czartoryski is assigned as a father but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Queen_Juliana_of_the_Netherlands :Woman
+      AssignClass(Prince_Adam_Ludwik_Czartoryski, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Armgard_of_Sierstorpff-Cramm is missing the required class :Woman or :Ancestor while being linked to Prince_Bernhard.
+      The person Princess_Louise_of_Orléans is assigned as a mother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Armgard_of_Sierstorpff-Cramm :Woman
+      AssignClass(Princess_Louise_of_Orléans, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Female for the hasSex property of Princess_Irene_of_the_Netherlands is missing the class :Sex.
+      The person Isabelle_Countess_of_Paris is assigned as a mother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Female :Sex
+      AssignClass(Isabelle_Countess_of_Paris, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Female for the hasSex property of Princess_Irene_of_the_Netherlands is missing the class :Sex.
+      The person Countess_Maria_Ludwika_Krasińska is assigned as a mother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Female :Sex
+      AssignClass(Countess_Maria_Ludwika_Krasińska, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Female for the hasSex property of Princess_Irene_of_the_Netherlands is missing the class :Sex.
+      The person Prince_Carlos_of_Bourbon-Two_Sicilies is assigned as a father but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Female :Sex
+      AssignClass(Prince_Carlos_of_Bourbon-Two_Sicilies, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Bernhard is missing the required class :Man or :Ancestor as the father of Princess_Irene_of_the_Netherlands.
+      The person Prince_Adam_Ludwik_Czartoryski is assigned as a father but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Prince_Bernhard :Man
+      AssignClass(Prince_Adam_Ludwik_Czartoryski, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Juliana_of_the_Netherlands is missing the required class :Woman or :Ancestor as the mother of Princess_Irene_of_the_Netherlands.
+      The person Princess_Louise_of_Orléans is assigned as a mother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Queen_Juliana_of_the_Netherlands :Woman
+      AssignClass(Princess_Louise_of_Orléans, :Ancestor)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Armgard_of_Sierstorpff-Cramm is missing the required class :Woman or :Ancestor.
+      The person Countess_Maria_Ludwika_Krasińska is assigned as a mother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Armgard_of_Sierstorpff-Cramm :Woman
+      AssignClass(Countess_Maria_Ludwika_Krasińska, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Female for the hasSex property of Princess_Irene_of_the_Netherlands is missing the class :Sex.
+      The person Isabelle_Countess_of_Paris is assigned as a mother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Female :Sex
+      AssignClass(Isabelle_Countess_of_Paris, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Female for the hasSex property of Princess_Irene_of_the_Netherlands is missing the class :Sex.
+      The person Prince_Carlos_of_Bourbon-Two_Sicilies is assigned as a father but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Female :Sex
+      AssignClass(Prince_Carlos_of_Bourbon-Two_Sicilies, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Prince_Bernhard is missing the required class :Man or :Ancestor.
+      The person Isabelle_Countess_of_Paris is assigned as a mother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Prince_Bernhard :Man
+      AssignClass(Isabelle_Countess_of_Paris, :Ancestor)
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Juliana_of_the_Netherlands is missing the required class :Woman or :Ancestor.
+      The person Princess_Louise_of_Orléans is assigned as a mother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Queen_Juliana_of_the_Netherlands :Woman
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value Female for the hasSex property of Princess_Irene_of_the_Netherlands is missing the class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass Female :Sex
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value Female for the hasSex property of Princess_Irene_of_the_Netherlands is missing the class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass Female :Sex
+      AssignClass(Princess_Louise_of_Orléans, :Ancestor)
 
 
 
@@ -809,27 +1141,42 @@ Violations:
 
 []
 Tool Calls:
-  RemoveLiteral (211f53f2-7921-4482-9d7e-3fb5a995e015)
- Call ID: 211f53f2-7921-4482-9d7e-3fb5a995e015
+  AssignClass (9f36a46a-bb28-4ec9-a98c-e871d66180de)
+ Call ID: 9f36a46a-bb28-4ec9-a98c-e871d66180de
   Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    source: :Princess_Irene_of_the_Netherlands
-    literal_value: Female
-  AssignClass (83e42ffd-3d78-4c85-af57-6fd0ce9eb978)
- Call ID: 83e42ffd-3d78-4c85-af57-6fd0ce9eb978
+    source: :Prince_Adam_Ludwik_Czartoryski
+    type: :Ancestor
+  AssignClass (70392b67-fe8d-4224-bc74-a0c7d8a875b9)
+ Call ID: 70392b67-fe8d-4224-bc74-a0c7d8a875b9
   Args:
-    type: :Sex
-    source: :Female
-  AddTriple (4b2b72b9-4610-4bd3-a869-14912773dfc7)
- Call ID: 4b2b72b9-4610-4bd3-a869-14912773dfc7
+    type: :Ancestor
+    source: :Countess_Maria_Ludwika_Krasińska
+  AssignClass (752497d7-c432-4dad-a815-87619d7b955b)
+ Call ID: 752497d7-c432-4dad-a815-87619d7b955b
   Args:
-    relation: :hasSex
-    target: :Female
-    source: :Princess_Irene_of_the_Netherlands
-  Finish (d5d2f38b-c6a8-4d0b-9a0a-f9a7f75527ba)
- Call ID: d5d2f38b-c6a8-4d0b-9a0a-f9a7f75527ba
+    type: :Ancestor
+    source: :Prince_Carlos_of_Bourbon-Two_Sicilies
+  AssignClass (db3fe1c8-0bdd-4498-a228-4897f631aaf8)
+ Call ID: db3fe1c8-0bdd-4498-a228-4897f631aaf8
   Args:
+    type: :Ancestor
+    source: :Princess_Louise_of_Orléans
+  AssignClass (7134d187-f8da-41df-9d39-8f9de2e303f7)
+ Call ID: 7134d187-f8da-41df-9d39-8f9de2e303f7
+  Args:
+    type: :Ancestor
+    source: :Isabelle_Countess_of_Paris
+  Finish (42778406-863f-4291-9394-652d19fb6f09)
+ Call ID: 42778406-863f-4291-9394-652d19fb6f09
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -846,33 +1193,71 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Princess_Irene_of_the_Netherlands a :Woman ;
-      :hasBirthYear 1939 ;
-      :hasFather data:Prince_Bernhard ;
-      :hasMarriageYear 1964 ;
-      :hasMother data:Queen_Juliana_of_the_Netherlands ;
-      :hasRelation data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
-      :hasSex data:Female ;
-      :hasSister data:Princess_Beatrix_of_the_Netherlands,
-          data:Princess_Christina_of_the_Netherlands,
-          data:Princess_Margriet_of_the_Netherlands .
+  data:Princess_Dolores_of_Bourbon-Two_Sicilies a :Person,
+          :Woman ;
+      :hasBirthYear 1909 ;
+      :hasDeathYear 1996 ;
+      :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+      :hasMother data:Princess_Louise_of_Orl%C3%A9ans ;
+      :hasRelation data:Carlos_Ch%C3%ADas_Osorio,
+          data:Prince_Augustyn_J%C3%B3zef_Czartoryski ;
+      :hasSon data:Prince_Adam_Karol_Czartoryski,
+          data:Prince_Ludwik_Piotr_Czartoryski ;
+      :isAuntOf data:Juan_Carlos_I_of_Spain ;
+      :isSisterOf data:Princess_Esperanza_of_Bourbon-Two_Sicilies,
+          data:Princess_Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+      :knownAs "Dola"^^xsd:string .
 
-  data:Armgard_of_Sierstorpff-Cramm a :Woman .
+  data:Carlos_Ch%C3%ADas_Osorio a :Man,
+          :Person ;
+      :hasBirthYear 1925 .
 
-  data:Female a :Sex .
+  data:Countess_Maria_Ludwika_Krasi%C5%84ska a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Prince_Bernhard a :Man ;
-      :hasMother data:Armgard_of_Sierstorpff-Cramm .
+  data:Isabelle_Countess_of_Paris a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Prince_Carlos_Hugo_of_Bourbon-Parma a :Man .
+  data:Prince_Adam_Ludwik_Czartoryski a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Princess_Beatrix_of_the_Netherlands a :Woman .
+  data:Prince_Augustyn_J%C3%B3zef_Czartoryski a :Man,
+          :Person ;
+      :hasFather data:Prince_Adam_Ludwik_Czartoryski ;
+      :hasMother data:Countess_Maria_Ludwika_Krasi%C5%84ska ;
+      :hasSon data:Prince_Adam_Karol_Czartoryski,
+          data:Prince_Ludwik_Piotr_Czartoryski .
 
-  data:Princess_Christina_of_the_Netherlands a :Woman .
+  data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Princess_Margriet_of_the_Netherlands a :Woman .
+  data:Princess_Esperanza_of_Bourbon-Two_Sicilies a :Person,
+          :Woman .
 
-  data:Queen_Juliana_of_the_Netherlands a :Woman .
+  data:Princess_Louise_of_Orl%C3%A9ans a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasMother data:Isabelle_Countess_of_Paris .
+
+  data:Princess_Mar%C3%ADa_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Person,
+          :Woman ;
+      :hasSon data:Juan_Carlos_I_of_Spain .
+
+  data:Juan_Carlos_I_of_Spain a :Man,
+          :Person .
+
+  data:Prince_Adam_Karol_Czartoryski a :Man,
+          :Person ;
+      :hasBirthYear 1940 .
+
+  data:Prince_Ludwik_Piotr_Czartoryski a :Man,
+          :Person ;
+      :hasBirthYear 1945 ;
+      :hasDeathYear 1946 .
 
 
 
@@ -884,171 +1269,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (26a4ef9e-c3e0-4ad5-9868-bdd2cc595e29)
- Call ID: 26a4ef9e-c3e0-4ad5-9868-bdd2cc595e29
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:9
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Armgard_of_Sierstorpff-Cramm is missing the required class :Ancestor, which is expected for the hasMother property of Prince_Bernhard.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Armgard_of_Sierstorpff-Cramm, :Ancestor)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Bernhard is missing the required class :Ancestor, which is expected for the hasFather property of Princess_Irene_of_the_Netherlands.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Bernhard, :Ancestor)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Queen_Juliana_of_the_Netherlands is missing the required class :Ancestor, which is expected for the hasMother property of Princess_Irene_of_the_Netherlands.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Juliana_of_the_Netherlands, :Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Armgard_of_Sierstorpff-Cramm is missing the required class :Ancestor, which is expected for the hasMother property of Prince_Bernhard.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Armgard_of_Sierstorpff-Cramm, :Ancestor)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Bernhard is missing the required class :Ancestor, which is expected for the hasFather property of Princess_Irene_of_the_Netherlands.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Bernhard, :Ancestor)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Queen_Juliana_of_the_Netherlands is missing the required class :Ancestor, which is expected for the hasMother property of Princess_Irene_of_the_Netherlands.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Juliana_of_the_Netherlands, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Armgard_of_Sierstorpff-Cramm is missing the required class :Ancestor, which is expected for the hasMother property of Prince_Bernhard.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Armgard_of_Sierstorpff-Cramm, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Bernhard is missing the required class :Ancestor, which is expected for the hasFather property of Princess_Irene_of_the_Netherlands.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Bernhard, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Queen_Juliana_of_the_Netherlands is missing the required class :Ancestor, which is expected for the hasMother property of Princess_Irene_of_the_Netherlands.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Juliana_of_the_Netherlands, :Ancestor)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (efcd1299-2a4e-422e-968d-f450201c44c5)
- Call ID: efcd1299-2a4e-422e-968d-f450201c44c5
-  Args:
-    source: :Armgard_of_Sierstorpff-Cramm
-    type: :Ancestor
-  AssignClass (8b969ad5-7d57-4f71-863e-3757d643d764)
- Call ID: 8b969ad5-7d57-4f71-863e-3757d643d764
-  Args:
-    source: :Prince_Bernhard
-    type: :Ancestor
-  AssignClass (12a44241-07cf-48b0-91fc-6462b86d2747)
- Call ID: 12a44241-07cf-48b0-91fc-6462b86d2747
-  Args:
-    type: :Ancestor
-    source: :Queen_Juliana_of_the_Netherlands
-  Finish (5f89d09e-c9f3-4d82-8b45-11e744491d62)
- Call ID: 5f89d09e-c9f3-4d82-8b45-11e744491d62
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Princess_Irene_of_the_Netherlands a :Woman ;
-      :hasBirthYear 1939 ;
-      :hasFather data:Prince_Bernhard ;
-      :hasMarriageYear 1964 ;
-      :hasMother data:Queen_Juliana_of_the_Netherlands ;
-      :hasRelation data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
-      :hasSex data:Female ;
-      :hasSister data:Princess_Beatrix_of_the_Netherlands,
-          data:Princess_Christina_of_the_Netherlands,
-          data:Princess_Margriet_of_the_Netherlands .
-
-  data:Armgard_of_Sierstorpff-Cramm a :Ancestor,
-          :Woman .
-
-  data:Female a :Sex .
-
-  data:Prince_Bernhard a :Ancestor,
-          :Man ;
-      :hasMother data:Armgard_of_Sierstorpff-Cramm .
-
-  data:Prince_Carlos_Hugo_of_Bourbon-Parma a :Man .
-
-  data:Princess_Beatrix_of_the_Netherlands a :Woman .
-
-  data:Princess_Christina_of_the_Netherlands a :Woman .
-
-  data:Princess_Margriet_of_the_Netherlands a :Woman .
-
-  data:Queen_Juliana_of_the_Netherlands a :Ancestor,
-          :Woman .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (892783b2-7711-4281-b7d2-1a2c5348a67b)
- Call ID: 892783b2-7711-4281-b7d2-1a2c5348a67b
+  ValidateShacl (5dcc9e3b-3256-475a-9ea5-d7f55b1d5f2d)
+ Call ID: 5dcc9e3b-3256-475a-9ea5-d7f55b1d5f2d
   Args:
 
 ================================= Tool Message =================================
@@ -1059,6 +1281,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (9a566021-646a-4b11-aa0f-93ee4407fbd9)
- Call ID: 9a566021-646a-4b11-aa0f-93ee4407fbd9
+  Finish (b121ba7c-dfd4-40f0-a53a-7bdd02244042)
+ Call ID: b121ba7c-dfd4-40f0-a53a-7bdd02244042
   Args:

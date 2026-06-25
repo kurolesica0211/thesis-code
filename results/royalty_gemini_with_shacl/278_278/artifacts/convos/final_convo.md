@@ -85,124 +85,46 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Queen Anne-Marie
-
-
-Queen Sofía of Spain
-
-
-Marina, consort of Prince Michael
-
-
-Pavlos, Crown Prince of Greece, Prince of Denmark (Greek: Παύλος Ντε Γκρες, romanized: Pavlos de Grèce; born 20 May 1967), is a Greek financier who is the former heir apparent to the defunct throne of Greece, becoming the Head of the Royal House of Greece upon his father's death on 10 January 2023.
-Pavlos was Crown Prince of Greece and heir apparent to the Greek throne from birth until the monarchy's abolition.
-Pavlos was born in Athens as the second child and eldest son of the last King of Greece, Constantine II, and his wife Queen Anne-Marie.
-Pavlos was born into an unstable era for Greek politics, just shy of turning eight months old when he and his family were sent into exile, after Constantine II staged a failed counter-coup against the military junta.
-They first lived in Rome, before eventually settling in Copenhagen, where his family lived with Pavlos's maternal grandparents, King Frederik IX and Queen Ingrid of Denmark.
-Although they were in exile since December 1967, his parents continued to officially reign as King and Queen of the Hellenes from 1967 until 1973, when the military junta abolished the Greek monarchy and established the Third Hellenic Republic as its successor state.
-Following the abolition of the monarchy, Pavlos and his siblings grew up in London.
-On 1 July 1995, Pavlos married Marie-Chantal Miller.
-They have five children: Maria-Olympia, Constantine-Alexios, Achileas-Andreas, Odysseas-Kimon, and Aristides-Stavros.
-Pavlos is closely related to many European royals.
-Queens Margrethe II of Denmark and Sofía of Spain are his aunts, and Kings Felipe VI of Spain and Frederik X of Denmark are his first cousins.
+Knud, Hereditary Prince of Denmark (Knud Christian Frederik Michael; 27 July 1900 – 14 June 1976) was a member of the Danish royal family, the younger son and child of King Christian X and Queen Alexandrine.
+From 1947 to 1953, he was heir presumptive to his older brother, King Frederik IX, and would have succeeded him as king following his death in January 1972 had it not been for a change in the Danish Act of Succession that replaced him with his niece, Queen Margrethe II.
+Later, Knud's two sons, Ingolf and Christian, were stripped of their titles of prince and removed from the line of succession by the new law because they had married commoners without asking consent from their uncle.
 Early life
 
-Pavlos was born on 20 May 1967 at the Tatoi Palace north of Athens, used at the time as the secondary residence of the Greek royal family.
-He was the second child and first son of King Constantine II and Queen Anne-Marie of Greece.
-Constantine II had ascended the throne on 6 March 1964, aged 23, following the death of his father and predecessor, Paul, so Pavlos was crown prince from birth.
-His mother is the youngest sister of the Danish queen Margrethe II, and his father was the brother of Sofía, the former queen consort of Spain.
-His maternal grandparents were Frederik IX of Denmark and his queen consort, Ingrid of Sweden.
-Pavlos displaced his older sister, Alexia, as heir to the throne due to Greece's order of succession adhering to male-preference primogeniture.
-Crown Prince
-
-Pavlos was born into a turbulent era in Greek politics, barely a month after a coup d'état which ended democratic rule in Greece over the king's objections on 21 April 1967, ushering in a military junta, led by Georgios Papadopoulos.
-In December of that year, Constantine attempted a counter-coup that failed due to planning mistakes, leaks, and insufficient military support.
-Pursued by the junta, Constantine fled with his wife, children, mother and sister to Rome.
-They then went to Copenhagen and lived with Anne-Marie's mother, Queen Ingrid.
-From 1967 to 1973, Greece officially remained a monarchy, with a regency appointed while the king lived in exile.
-Following the discovery and suppression of a "wide-ranging" anti-junta movement, just before its outbreak, among the ranks of the mostly royalist Navy, Papadopoulos, on 1 June 1973, declared Greece a presidential republic with himself as president and proclaimed a referendum for 29 July 1973 on the issue of the monarchy.
-The referendum was held without opposition and its result confirmed the regime change, with Constantine becoming "officially" deposed.
-On 17 November 1974, after the fall of the dictatorship, the 1974 Greek legislative election was held, resulting in a victory for Constantine Karamanlis and his New Democracy party.
-Constantine announced that he "respects" the "decision of the Greek people."
-He and Anne-Marie had been living with their family in London for several years.
-Pavlos's youngest siblings were born in London: Theodora in 1983 and Philippos in 1986.
-Pavlos was educated at the Hellenic College of London, founded by his parents in 1980.
-On 11 May 1994, the Greek Government under prime-minister Andreas Papandreou renounced the Greek-citizenship status of Pavlos, alongside Constantine, and the rest of the former royal family through law 2215/1994.
-The law stated that Constantine's Greek-citizenship status, and accordingly his family's, could only be restored under specific conditions, including the selection of an explicit surname.
-The following year, while sharing a house in Washington, DC, he and his cousin, Felipe VI of Spain, then Prince of Asturias, attended Georgetown University, where both obtained a Master of Science in Foreign Service.
-After, Pavlos lived between New York City and London, working as an investment consultant.
-Head of the Greek royal family
-
-Following the death of his father on 10 January 2023, Pavlos delivered Constantine's eulogy during the funeral ceremony and carried his coffin with his brothers, sons and nephews at the burial.
-A rumour circulated that Pavlos intended to permanently relocate to Greece, but this was later denied by the spokesperson of the former Greek royal family, Ivi Macris, as "completely false".
-On 22 January, Pavlos spoke to French magazine Point de Vue regarding his new role.
-In the interview, Pavlos thanked the public for their respect towards the Greek royal family and said that those who crowded the funeral, whether they were "monarchists or not", "paid tribute to a historical personality, a part of Greek history."
-When asked about the role he sees himself upholding in Greek society, Pavlos explained that he would "not take on an official role", but will "uphold the family's exemplary."
-He added that his eldest son Constantine-Alexios would not take on any official role either, but would "follow his grandfather's example and be a good man."
-Pavlos issued a statement about the Tempi train collision in February 2023, which caused the death of almost 60 people, styling himself Head of the former Royal House of Greece following Constantine's death.
-The statement read: "Today all of Greece is mourning.
-Pavlos also thanked the rescue and medical teams involved for their "superhuman efforts", before giving his "heartbroken" condolences to the families who lost their children in the accident and asking God to bless them all.
-Soon after, as Pavlos was leaving Athens that month, it was revealed that he and his family had been searching for a home in Greece, with Pavlos telling journalists that he had not "found a house yet".
-In April 2023, Pavlos attended a Greek Orthodox Easter service in the Hamptons, where his sons Constantine-Alexios and Odysseas-Kimon were holding the Epitaphios.
-Pavlos attended the coronation of Charles III and Camilla in May with his mother and wife.
-On 3 July 2023 at 11:45pm, Pavlos and his brother, Nikolaos, appeared in a special edition of 365 Moments, a Greek television series hosted by Sofia Papaioannou.
-The episode marked the first interview with Pavlos and Nikolaos since their father's death, and it discussed the passing of their father, their stripped Greek citizenship and their surname.
-Pavlos described his father as "strict but very loving" and said that despite being forced into exile, he still wanted to help his family.
-Pavlos also announced that he was now living in Greece again, which is what he "always wanted to".
-He explained that the opportunity to live in Greece occurred as his job allowed for overseas work.
-When asked whether he accepted the last name "Glücksburg", Pavlos said that he would never see it as his name.
-Denmark's family name is not that.
-He explained that throughout his life, he never introduced himself with a last name, but rather called himself "Pavlos of Greece".
-Pavlos also added that he was "very interested in  politics", but would never become involved, has no political association and would always long for his Greek passport to be returned.
-Pavlos and Marie-Chantal attended the 2023 British Fashion Awards.
-There, Pavlos was spotted with a black eye patch covering his left eye.
-The day prior, Marie-Chantal posted to Instagram a close-up photo of his eye patch, saying, "Hopefully a temporary new look, but he’s kind of cute".
-Following worry online, Pavlos announced on Instagram that he had undergone a retinal detachment surgery.
-After thanking people for their support and wishes, Pavlos explained that the surgery was "successful", however he would be unable to travel and therefore have to spend Christmas in London.
-Between January and February 2024, Pavlos and his family attended three memorial services to mark the one year anniversary of Constantine's death — one in Athens and two in London, including a thanksgiving service.
-After a memorial service the following day, Pavlos and Nikolaos were interviewed by ANT1 reporter Isaac Karipidis.
-On 28 September 2024, Pavlos served as a groomsman at the wedding of Princess Theodora and Matthew Kumar at the Metropolitan Cathedral.
-On 19 December 2024, Pavlos, his five children and his four siblings submitted an application for Greek citizenship, which had been stripped from the family in 1994.
-Pavlos's mother, Anne-Marie, did not apply, as she was reportedly "not interested".
-Under law, Pavlos and his family, in order to receive citizenship, must pledge allegiance to the republican constitution and adopt a surname.
-Ultimately, the surname of "Ντε Γκρες" (transliteration of De Grèce, meaning "of Greece") was chosen.
-It was reported by the royal family that this surname was chosen as it was the one used by the late Prince Michael of Greece and Denmark, and so was the "only familiar one" to them.
-The following day, Pavlos's citizenship, alongside that of his children and siblings, was reinstated according to the provisions of the 1994 law by order of the Minister of the Interior, Theodoros Livanios.
-Deputy Minister Pavlos Marinakis said to Action 24 that the ex-royal family's "request was made in accordance with the law", while the left-wing SYRIZA party stated "the choice of family name is problematic".
-The Communist Party of Greece and PASOK also criticized the government's decision.
-Personal life
-
-Pavlos married American heiress Marie-Chantal Miller, whom he had met at a party three years earlier in New Orleans, on 1 July 1995.
-After their marriage, the couple took up residence in Greenwich, Connecticut, the job that Pavlos obtained with the Charles R. Weber ship-broking company being headquartered there.
-The couple has five children: Maria-Olympia (b. 1996), Constantine-Alexios (b. 1998), Achileas-Andreas (b. 2000), Odysseas-Kimon (b. 2004), and Aristidis-Stavros (b. 2008).
-Pavlos is a bluewater yachtsman and crews on the multi-record-breaking monohull Mari-Cha IV, owned by his father-in-law;
-businessman Robert W. Miller.
+Prince Knud was born on 27 July 1900 at his parents' country residence, the Sorgenfri Palace, located on the shores of the small river Mølleåen in Kongens Lyngby north of Copenhagen on the island of Zealand in Denmark, during the reign of his great-grandfather King Christian IX.
+His parents were Prince Christian of Denmark, son of the heir apparent Crown Prince Frederik of Denmark, and Alexandrine of Mecklenburg-Schwerin.
+Knud's only sibling, Prince Frederik, had been born one year before him.
+Christian IX died on 29 January 1906, and Knud's grandfather succeeded him as Frederik VIII.
+Six years later, on 14 May 1912, Frederik VIII died, and Knud's father ascended the throne as Christian X.
 
 
-Titles, styles, and honours
+As was customary for princes at that time, Knud started a military education and entered the naval college.
+Engagement and marriage
 
-From birth, Pavlos was the heir apparent to the throne of Greece and as such he was referred to as the Crown Prince of Greece with the style of Royal Highness.
-Through his male-line descent from Christian IX of Denmark, he is also a Prince of Denmark with the style of Highness.
-Dynastic orders
+On 27 January 1933, at the age of 32, Prince Knud was engaged to his first cousin, the 20-year-old Princess Caroline-Mathilde of Denmark.
+Princess Caroline-Mathilde was the second daughter of Prince Harald of Denmark and Princess Helena of Schleswig-Holstein-Sonderburg-Glücksburg, and their fathers were brothers.
+The wedding was celebrated on 8 September 1933 at the chapel of Fredensborg Palace in North Zealand, Denmark.
+Here they created a home for their three children: Princess Elisabeth (born in 1935), Prince Ingolf (born in 1940) and Prince Christian (born in 1944).
+In 1944, Prince Knud inherited Egelund House near Fredensborg in North Zealand from his uncle, Prince Gustav of Denmark, which the couple then used as their summer residence until the hereditary prince sold it to the Danish Employers' Association in 1954.
+In 1952, Prince Knud also inherited his parents' holiday residence Klitgaarden in Skagen in North Jutland from his mother, Queen Alexandrine, which the couple then used as their holiday home, and which remained in the family's possession until 1997.
+Heir presumptive
 
-Foreign honours
+On 20 April 1947, Christian X died, and Knud's brother Frederick succeeded to the throne as Frederik IX.
+Since Frederik IX had fathered no sons and the Danish Act of Succession at the time followed the principle of agnatic primogeniture, Prince Knud became heir presumptive and first in line to succeed his brother as king.
+Frederik IX had, however, fathered three daughters.
+The new law made Frederik IX's thirteen-year-old daughter Margrethe the new heir presumptive, placing her and her two sisters before Knud and his family in the line of succession.
+Later life and legacy
 
-Ancestry
-
-Pavlos is a direct descendant of three reigning sovereign monarchs at birth.
-He is the eldest son of the King of Greece, grandson of the King of Denmark and great-grandson of the King of Sweden, all living and enthroned when he was born.
-His paternal aunt, Sofía, was Queen consort of Spain and his paternal first cousin, Felipe VI, is the current King of Spain.
-His maternal aunt, Margrethe II, was the reigning Queen of Denmark and his maternal first cousin, Frederik X, is the current King of Denmark.
-Pavlos's parents, grandparents and great-grandparents were all reigning monarchs and consorts.
-Pavlos is a scion multiple times of Queen Victoria and King Christian IX, who were dubbed the "grandmother of Europe" and "father-in-law of Europe" respectively, due to royal intermarriage.
-As a result, he descends from Christian IX of Denmark through three of his children; in the male line through his second son, George I of Greece, in the female line through his eldest son, Frederik VIII of Denmark, and through King Christian's youngest daughter, Princess Thyra.
-He also descends thrice from Queen Victoria; once through her third son, Prince Arthur, and twice through her eldest daughter, Victoria, Princess Royal.
+King Frederik IX died in 1972 and was succeeded by his daughter Queen Margrethe II.
+The Princess Caroline-Mathilde Alps in Greenland were named by the 1938–39 Mørkefjord Expedition in his wife's honour for Prince Knud had been the patron of the expedition.
+Prince Knud and Princess Caroline Mathilde had sat in the former royal loge at the far left of the hall (i.e., stage right), but one especially memorable scene had not been fully visible from where they had sat.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -218,39 +140,9 @@ He also descends thrice from Queen Victoria; once through her third son, Prince 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -265,6 +157,23 @@ He also descends thrice from Queen Victoria; once through her third son, Prince 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -282,6 +191,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -349,29 +273,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -380,6 +296,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -392,6 +316,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -400,17 +326,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -438,6 +366,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -453,166 +465,332 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (96eb4d46-1c8c-4999-ae9c-9c9d9e55bebe)
- Call ID: 96eb4d46-1c8c-4999-ae9c-9c9d9e55bebe
-  Args:
-    source: Pavlos
-    type: :Man
-  AssignClass (34c125c8-6336-4732-8577-1bb8414c483e)
- Call ID: 34c125c8-6336-4732-8577-1bb8414c483e
+  AssignClass (4b99cbcb-951f-43fc-b3cd-7479612c0a32)
+ Call ID: 4b99cbcb-951f-43fc-b3cd-7479612c0a32
   Args:
     type: :Man
-    source: Constantine_II
-  AssignClass (46e6ad48-d4aa-4c60-808c-c53a2dc8904b)
- Call ID: 46e6ad48-d4aa-4c60-808c-c53a2dc8904b
+    source: :Knud
+  AssignClass (0e0e52b8-0d91-4c2d-8b99-6922dba8adcf)
+ Call ID: 0e0e52b8-0d91-4c2d-8b99-6922dba8adcf
   Args:
-    type: :Woman
-    source: Anne-Marie
-  AssignClass (f283b691-f0bf-4f73-bdc7-8becdbcc16f9)
- Call ID: f283b691-f0bf-4f73-bdc7-8becdbcc16f9
+    source: :Knud
+    type: :Person
+  AddLiteral (79d1883a-4c10-424f-a8ce-13ee59fbcd46)
+ Call ID: 79d1883a-4c10-424f-a8ce-13ee59fbcd46
   Args:
-    type: :Woman
-    source: Marie-Chantal_Miller
-  AssignClass (6cb044a7-e779-436c-95ff-83bcca25f3d6)
- Call ID: 6cb044a7-e779-436c-95ff-83bcca25f3d6
-  Args:
-    source: Maria-Olympia
-    type: :Woman
-  AssignClass (d7508ebc-7c4b-4586-93ce-c0824f1e6e77)
- Call ID: d7508ebc-7c4b-4586-93ce-c0824f1e6e77
-  Args:
-    type: :Man
-    source: Constantine-Alexios
-  AssignClass (534cb57e-9b49-4548-8527-892a70dbe877)
- Call ID: 534cb57e-9b49-4548-8527-892a70dbe877
-  Args:
-    source: Achileas-Andreas
-    type: :Man
-  AssignClass (91266ca6-f626-4b3a-acdf-2fe990f650ef)
- Call ID: 91266ca6-f626-4b3a-acdf-2fe990f650ef
-  Args:
-    type: :Man
-    source: Odysseas-Kimon
-  AssignClass (f80a1207-0bc4-4679-b9b3-006ed34db264)
- Call ID: f80a1207-0bc4-4679-b9b3-006ed34db264
-  Args:
-    source: Aristides-Stavros
-    type: :Man
-  AssignClass (47394643-788f-4c50-ba02-998d8cd7ed55)
- Call ID: 47394643-788f-4c50-ba02-998d8cd7ed55
-  Args:
-    type: :Woman
-    source: Alexia
-  AssignClass (aa4dabe3-970e-40df-8288-c073d7943274)
- Call ID: aa4dabe3-970e-40df-8288-c073d7943274
-  Args:
-    type: :Woman
-    source: Theodora
-  AssignClass (4d52fac4-adcb-462f-b0ab-5af4a9c72cd9)
- Call ID: 4d52fac4-adcb-462f-b0ab-5af4a9c72cd9
-  Args:
-    source: Philippos
-    type: :Man
-  AssignClass (6fc705e4-d6b8-4fa3-9fbe-61325ee82acf)
- Call ID: 6fc705e4-d6b8-4fa3-9fbe-61325ee82acf
-  Args:
-    type: :Man
-    source: Nikolaos
-  AddLiteral (421a013b-b7e0-4284-8684-4c6ce194118e)
- Call ID: 421a013b-b7e0-4284-8684-4c6ce194118e
-  Args:
-    source: Pavlos
+    literal_value: 1900
     relation: :hasBirthYear
-    literal_value: 1967
-    literal_type: xsd:positiveInteger
-  AddTriple (14ed634a-2074-4211-9e4b-caf9be169425)
- Call ID: 14ed634a-2074-4211-9e4b-caf9be169425
+    source: :Knud
+    literal_type: xsd:integer
+  AddLiteral (d64a250f-8224-4583-9ee8-534e95a42577)
+ Call ID: d64a250f-8224-4583-9ee8-534e95a42577
   Args:
-    target: Constantine_II
+    literal_type: xsd:integer
+    source: :Knud
+    literal_value: 1976
+    relation: :hasDeathYear
+  AssignClass (f087b714-72ec-4512-a112-a773a786b5c2)
+ Call ID: f087b714-72ec-4512-a112-a773a786b5c2
+  Args:
+    source: :ChristianX
+    type: :Man
+  AssignClass (a4029ae2-3c69-42a4-b35e-b3ce9d0a2cb0)
+ Call ID: a4029ae2-3c69-42a4-b35e-b3ce9d0a2cb0
+  Args:
+    type: :Person
+    source: :ChristianX
+  AssignClass (36626c60-eb1a-4ec0-8ffd-d63598dfa0a4)
+ Call ID: 36626c60-eb1a-4ec0-8ffd-d63598dfa0a4
+  Args:
+    source: :Alexandrine
+    type: :Woman
+  AssignClass (973fcdd2-2377-467f-a419-68ad8b594e03)
+ Call ID: 973fcdd2-2377-467f-a419-68ad8b594e03
+  Args:
+    source: :Alexandrine
+    type: :Person
+  AddTriple (67630347-bea7-4d0f-bf01-fc2dc5e5af8e)
+ Call ID: 67630347-bea7-4d0f-bf01-fc2dc5e5af8e
+  Args:
+    target: :ChristianX
     relation: :hasFather
-    source: Pavlos
-  AddTriple (d3971de6-9fd9-43cb-809f-e1589376465b)
- Call ID: d3971de6-9fd9-43cb-809f-e1589376465b
+    source: :Knud
+  AddTriple (10ec55a6-643a-4252-8b0c-22eee8d581ba)
+ Call ID: 10ec55a6-643a-4252-8b0c-22eee8d581ba
   Args:
-    source: Pavlos
-    target: Anne-Marie
+    source: :Knud
+    target: :Alexandrine
     relation: :hasMother
-  AddLiteral (ee6e20d2-56ae-4c3c-8f23-a8cf8c61f62c)
- Call ID: ee6e20d2-56ae-4c3c-8f23-a8cf8c61f62c
+  AssignClass (14f47109-63e4-4215-a820-b05e3ac5caec)
+ Call ID: 14f47109-63e4-4215-a820-b05e3ac5caec
   Args:
-    literal_type: xsd:positiveInteger
-    literal_value: 1995
-    source: Pavlos
-    relation: :hasMarriageYear
-  AddTriple (6fe65157-ca07-405c-94e2-6d91baab198b)
- Call ID: 6fe65157-ca07-405c-94e2-6d91baab198b
+    type: :Man
+    source: :FrederikIX
+  AssignClass (53265f18-c5e7-48f5-9036-64c3ccc4bf03)
+ Call ID: 53265f18-c5e7-48f5-9036-64c3ccc4bf03
   Args:
-    target: Marie-Chantal_Miller
+    source: :FrederikIX
+    type: :Person
+  AddTriple (a32d74bc-b850-417e-918a-15339337b9ac)
+ Call ID: a32d74bc-b850-417e-918a-15339337b9ac
+  Args:
+    source: :Knud
+    target: :FrederikIX
+    relation: :isBrotherOf
+  AssignClass (25b1ee5c-7980-4053-908a-aaeeb364a6db)
+ Call ID: 25b1ee5c-7980-4053-908a-aaeeb364a6db
+  Args:
+    source: :MargretheII
+    type: :Woman
+  AssignClass (0395b9cf-1869-47a0-b1b5-f9b977ffebe2)
+ Call ID: 0395b9cf-1869-47a0-b1b5-f9b977ffebe2
+  Args:
+    type: :Person
+    source: :MargretheII
+  AddTriple (a64bd301-5eef-482c-ada8-2bcd50f241ca)
+ Call ID: a64bd301-5eef-482c-ada8-2bcd50f241ca
+  Args:
+    source: :FrederikIX
+    relation: :isFatherOf
+    target: :MargretheII
+  AssignClass (2316e54e-00a1-4900-a8fa-b76b008e7f39)
+ Call ID: 2316e54e-00a1-4900-a8fa-b76b008e7f39
+  Args:
+    source: :Ingolf
+    type: :Man
+  AssignClass (daa52180-e1de-40ef-8df8-c371573be4b6)
+ Call ID: daa52180-e1de-40ef-8df8-c371573be4b6
+  Args:
+    type: :Person
+    source: :Ingolf
+  AssignClass (a7086924-24e3-481c-bda7-cf67f57253d9)
+ Call ID: a7086924-24e3-481c-bda7-cf67f57253d9
+  Args:
+    source: :Christian_son_of_Knud
+    type: :Man
+  AssignClass (edd8b99c-332c-4182-864c-3ee6e6fd3289)
+ Call ID: edd8b99c-332c-4182-864c-3ee6e6fd3289
+  Args:
+    type: :Person
+    source: :Christian_son_of_Knud
+  AddTriple (31b59215-3104-4fde-96c1-c27958711e1b)
+ Call ID: 31b59215-3104-4fde-96c1-c27958711e1b
+  Args:
+    source: :Knud
+    target: :Ingolf
+    relation: :hasSon
+  AddTriple (4c1f7e28-d4f5-4339-85a9-245655f898f1)
+ Call ID: 4c1f7e28-d4f5-4339-85a9-245655f898f1
+  Args:
+    relation: :hasSon
+    target: :Christian_son_of_Knud
+    source: :Knud
+  AssignClass (6a007062-18c0-4759-925d-87b63d5da56c)
+ Call ID: 6a007062-18c0-4759-925d-87b63d5da56c
+  Args:
+    type: :Woman
+    source: :CarolineMathilde
+  AssignClass (efc9dd60-523d-47b3-8043-98b427078cd3)
+ Call ID: efc9dd60-523d-47b3-8043-98b427078cd3
+  Args:
+    source: :CarolineMathilde
+    type: :Person
+  AddTriple (a4930e7b-9283-447b-be50-c599a6e82940)
+ Call ID: a4930e7b-9283-447b-be50-c599a6e82940
+  Args:
+    source: :Knud
+    target: :CarolineMathilde
     relation: :hasRelation
-    source: Pavlos
-  AddTriple (3ffd2a05-14f5-45ca-aec5-56ff1d970e47)
- Call ID: 3ffd2a05-14f5-45ca-aec5-56ff1d970e47
+  AddLiteral (c4f70f28-0413-4b9b-bc14-5b433aa7c493)
+ Call ID: c4f70f28-0413-4b9b-bc14-5b433aa7c493
   Args:
-    source: Pavlos
-    relation: :hasChild
-    target: Maria-Olympia
-  AddTriple (97a3c98c-ffd4-4055-9815-385de9223948)
- Call ID: 97a3c98c-ffd4-4055-9815-385de9223948
+    literal_type: xsd:integer
+    source: :Knud
+    relation: :hasMarriageYear
+    literal_value: 1933
+  AddTriple (78f1a7ad-7eee-493e-a4b4-c5e8fec2e8ab)
+ Call ID: 78f1a7ad-7eee-493e-a4b4-c5e8fec2e8ab
   Args:
-    relation: :hasChild
-    target: Constantine-Alexios
-    source: Pavlos
-  AddTriple (5616935f-f9ee-4f26-bd76-790ea624c231)
- Call ID: 5616935f-f9ee-4f26-bd76-790ea624c231
+    source: :Ingolf
+    target: :CarolineMathilde
+    relation: :hasMother
+  AddTriple (85af1f9b-a75d-43c5-bcfe-64978e5357ca)
+ Call ID: 85af1f9b-a75d-43c5-bcfe-64978e5357ca
   Args:
-    target: Achileas-Andreas
-    relation: :hasChild
-    source: Pavlos
-  AddTriple (b0d99d44-df62-4e90-a63f-a2310b52fdbe)
- Call ID: b0d99d44-df62-4e90-a63f-a2310b52fdbe
+    target: :CarolineMathilde
+    relation: :hasMother
+    source: :Christian_son_of_Knud
+  AssignClass (d18bd32f-df68-4d38-975d-60c8c73e483a)
+ Call ID: d18bd32f-df68-4d38-975d-60c8c73e483a
   Args:
-    source: Pavlos
-    relation: :hasChild
-    target: Odysseas-Kimon
-  AddTriple (f67f52de-90b7-49e4-8ee7-6631806b3538)
- Call ID: f67f52de-90b7-49e4-8ee7-6631806b3538
+    type: :Woman
+    source: :Elisabeth
+  AssignClass (5bf7fed9-5b7d-4ff2-ad0f-1caeeb291dd9)
+ Call ID: 5bf7fed9-5b7d-4ff2-ad0f-1caeeb291dd9
   Args:
-    target: Aristides-Stavros
-    relation: :hasChild
-    source: Pavlos
-  AddTriple (b04a73de-91d7-4b99-a642-31bf805452b1)
- Call ID: b04a73de-91d7-4b99-a642-31bf805452b1
+    source: :Elisabeth
+    type: :Person
+  AddTriple (5f908308-6c09-43ae-8936-1dbfb47cb0f6)
+ Call ID: 5f908308-6c09-43ae-8936-1dbfb47cb0f6
   Args:
-    source: Constantine_II
-    target: Alexia
-    relation: :hasChild
-  AddTriple (e199cf60-822e-45de-8e09-7d935586994f)
- Call ID: e199cf60-822e-45de-8e09-7d935586994f
+    target: :Elisabeth
+    relation: :hasDaughter
+    source: :Knud
+  AddTriple (6564f8c2-04f1-477f-b2c4-5a809b07594b)
+ Call ID: 6564f8c2-04f1-477f-b2c4-5a809b07594b
   Args:
-    relation: :hasChild
-    target: Theodora
-    source: Constantine_II
-  AddTriple (3b0cd80a-afe8-4351-b798-486611a35cbd)
- Call ID: 3b0cd80a-afe8-4351-b798-486611a35cbd
+    source: :Elisabeth
+    relation: :hasMother
+    target: :CarolineMathilde
+  AssignClass (551566da-40bd-4032-bfe3-a2a9ca1df90f)
+ Call ID: 551566da-40bd-4032-bfe3-a2a9ca1df90f
   Args:
-    source: Constantine_II
-    relation: :hasChild
-    target: Philippos
-  AddTriple (8cf13d7f-2a33-421d-9215-fff03521630a)
- Call ID: 8cf13d7f-2a33-421d-9215-fff03521630a
+    type: :Man
+    source: :Harald
+  AssignClass (02990d27-2f35-443f-91b4-e5ef0113dc37)
+ Call ID: 02990d27-2f35-443f-91b4-e5ef0113dc37
   Args:
-    target: Nikolaos
-    relation: :hasChild
-    source: Constantine_II
-  AddTriple (fccb9fef-6acf-40f8-ae31-f1e0a10d66a8)
- Call ID: fccb9fef-6acf-40f8-ae31-f1e0a10d66a8
+    type: :Person
+    source: :Harald
+  AssignClass (cfbd12a9-efde-4e7c-b1b8-87829f2dcc1b)
+ Call ID: cfbd12a9-efde-4e7c-b1b8-87829f2dcc1b
   Args:
-    source: Constantine_II
-    relation: :hasChild
-    target: Pavlos
-  Finish (bf281300-f65f-495d-99ab-7415c9a3bbfa)
- Call ID: bf281300-f65f-495d-99ab-7415c9a3bbfa
+    type: :Woman
+    source: :Helena
+  AssignClass (d75e6981-29eb-4e2a-b02b-e37b55ea7f0a)
+ Call ID: d75e6981-29eb-4e2a-b02b-e37b55ea7f0a
   Args:
+    source: :Helena
+    type: :Person
+  AddTriple (fede578c-19ef-4b6f-a1a5-34f956f3e50c)
+ Call ID: fede578c-19ef-4b6f-a1a5-34f956f3e50c
+  Args:
+    source: :Harald
+    relation: :isFatherOf
+    target: :CarolineMathilde
+  AddTriple (536ebea7-a18a-453b-9593-08dc2c480b08)
+ Call ID: 536ebea7-a18a-453b-9593-08dc2c480b08
+  Args:
+    target: :CarolineMathilde
+    relation: :isMotherOf
+    source: :Helena
+  AssignClass (8aba7389-1b98-47a7-84b4-67426ee47960)
+ Call ID: 8aba7389-1b98-47a7-84b4-67426ee47960
+  Args:
+    type: :Man
+    source: :ChristianIX
+  AssignClass (5d1fcab3-2546-4c01-bdb2-557d0c06ffe3)
+ Call ID: 5d1fcab3-2546-4c01-bdb2-557d0c06ffe3
+  Args:
+    type: :Person
+    source: :ChristianIX
+  AssignClass (088766cd-f901-436b-bc97-b001d953bc1e)
+ Call ID: 088766cd-f901-436b-bc97-b001d953bc1e
+  Args:
+    type: :Man
+    source: :FrederikVIII
+  AssignClass (8135952d-ba8c-4723-aac7-1a54b87635d7)
+ Call ID: 8135952d-ba8c-4723-aac7-1a54b87635d7
+  Args:
+    type: :Person
+    source: :FrederikVIII
+  AddTriple (85184569-cbf8-4cab-82ab-38b65cc96d1e)
+ Call ID: 85184569-cbf8-4cab-82ab-38b65cc96d1e
+  Args:
+    relation: :isFatherOf
+    target: :FrederikVIII
+    source: :ChristianIX
+  AddTriple (0b1f7be7-06cb-4270-a067-0d830216d09e)
+ Call ID: 0b1f7be7-06cb-4270-a067-0d830216d09e
+  Args:
+    source: :FrederikVIII
+    relation: :isFatherOf
+    target: :ChristianX
+  AssignClass (cbbe52c0-5a7c-4a98-a7e0-646dd0994ff7)
+ Call ID: cbbe52c0-5a7c-4a98-a7e0-646dd0994ff7
+  Args:
+    source: :Gustav
+    type: :Man
+  AssignClass (628beb50-6ea2-4b9b-beef-73fcc55afd4c)
+ Call ID: 628beb50-6ea2-4b9b-beef-73fcc55afd4c
+  Args:
+    type: :Person
+    source: :Gustav
+  Finish (d0779e11-0e14-4315-8783-48575b8c38c1)
+ Call ID: d0779e11-0e14-4315-8783-48575b8c38c1
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -729,46 +907,65 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Achileas-Andreas a :Man .
+  data:ChristianIX a :Man,
+          :Person ;
+      :isFatherOf data:FrederikVIII .
 
-  data:Alexia a :Woman .
+  data:Gustav a :Man,
+          :Person .
 
-  data:Anne-Marie a :Woman .
+  data:Harald a :Man,
+          :Person ;
+      :isFatherOf data:CarolineMathilde .
 
-  data:Aristides-Stavros a :Man .
+  data:Helena a :Person,
+          :Woman ;
+      :isMotherOf data:CarolineMathilde .
 
-  data:Constantine-Alexios a :Man .
+  data:Knud a :Man,
+          :Person ;
+      :hasBirthYear 1900 ;
+      :hasDaughter data:Elisabeth ;
+      :hasDeathYear 1976 ;
+      :hasFather data:ChristianX ;
+      :hasMarriageYear 1933 ;
+      :hasMother data:Alexandrine ;
+      :hasRelation data:CarolineMathilde ;
+      :hasSon data:Christian_son_of_Knud,
+          data:Ingolf ;
+      :isBrotherOf data:FrederikIX .
 
-  data:Constantine_II a :Man ;
-      :hasChild data:Alexia,
-          data:Nikolaos,
-          data:Pavlos,
-          data:Philippos,
-          data:Theodora .
+  data:Alexandrine a :Person,
+          :Woman .
 
-  data:Maria-Olympia a :Woman .
+  data:Christian_son_of_Knud a :Man,
+          :Person ;
+      :hasMother data:CarolineMathilde .
 
-  data:Marie-Chantal_Miller a :Woman .
+  data:Elisabeth a :Person,
+          :Woman ;
+      :hasMother data:CarolineMathilde .
 
-  data:Nikolaos a :Man .
+  data:FrederikIX a :Man,
+          :Person ;
+      :isFatherOf data:MargretheII .
 
-  data:Odysseas-Kimon a :Man .
+  data:FrederikVIII a :Man,
+          :Person ;
+      :isFatherOf data:ChristianX .
 
-  data:Pavlos a :Man ;
-      :hasBirthYear "1967"^^xsd:positiveInteger ;
-      :hasChild data:Achileas-Andreas,
-          data:Aristides-Stavros,
-          data:Constantine-Alexios,
-          data:Maria-Olympia,
-          data:Odysseas-Kimon ;
-      :hasFather data:Constantine_II ;
-      :hasMarriageYear "1995"^^xsd:positiveInteger ;
-      :hasMother data:Anne-Marie ;
-      :hasRelation data:Marie-Chantal_Miller .
+  data:Ingolf a :Man,
+          :Person ;
+      :hasMother data:CarolineMathilde .
 
-  data:Philippos a :Man .
+  data:MargretheII a :Person,
+          :Woman .
 
-  data:Theodora a :Woman .
+  data:ChristianX a :Man,
+          :Person .
+
+  data:CarolineMathilde a :Person,
+          :Woman .
 
 
 
@@ -780,62 +977,174 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (513fe6a7-f4cf-4ff1-87af-e9d1b9ec7fe7)
- Call ID: 513fe6a7-f4cf-4ff1-87af-e9d1b9ec7fe7
+  ValidateShacl (e75399cc-19ee-4c9a-a437-41350be31f57)
+ Call ID: e75399cc-19ee-4c9a-a437-41350be31f57
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:20
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Constantine_II', which is the father of 'Pavlos', is missing the mandatory class ':Ancestor'.
+      The node 'Knud' has a 'hasFather' relationship with 'ChristianX', but 'ChristianX' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Constantine_II', class=':Ancestor')
+      AssignClass(node='ChristianX', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Anne-Marie', which is the mother of 'Pavlos', is missing the mandatory class ':Ancestor'.
+      The node 'Christian_son_of_Knud' has a 'hasMother' relationship with 'CarolineMathilde', but 'CarolineMathilde' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne-Marie', class=':Ancestor')
+      AssignClass(node='CarolineMathilde', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Constantine_II' is missing the class ':Ancestor' to satisfy the range requirement for the 'hasFather' property.
+      The node 'Knud' has a 'hasMother' relationship with 'Alexandrine', but 'Alexandrine' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Constantine_II', class=':Ancestor')
+      AssignClass(node='Alexandrine', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Anne-Marie' is missing the class ':Ancestor' to satisfy the range requirement for the 'hasMother' property.
+      The node 'Ingolf' has a 'hasMother' relationship with 'CarolineMathilde', but 'CarolineMathilde' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne-Marie', class=':Ancestor')
+      AssignClass(node='CarolineMathilde', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Constantine_II' requires the ':Ancestor' class assignment for the 'hasFather' relationship to be valid.
+      The node 'Knud' has a 'hasFather' relationship with 'ChristianX', but 'ChristianX' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Constantine_II', class=':Ancestor')
+      AssignClass(node='ChristianX', class=':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Anne-Marie' requires the ':Ancestor' class assignment for the 'hasMother' relationship to be valid.
+      The node 'Christian_son_of_Knud' has a 'hasMother' relationship with 'CarolineMathilde', but 'CarolineMathilde' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne-Marie', class=':Ancestor')
+      AssignClass(node='CarolineMathilde', class=':Ancestor')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Knud' has a 'hasMother' relationship with 'Alexandrine', but 'Alexandrine' is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alexandrine', class=':Ancestor')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Ingolf' has a 'hasMother' relationship with 'CarolineMathilde', but 'CarolineMathilde' is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='CarolineMathilde', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Elisabeth' has a 'hasMother' relationship with 'CarolineMathilde', but 'CarolineMathilde' is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='CarolineMathilde', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Knud' has a 'hasFather' relationship with 'ChristianX', but 'ChristianX' is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='ChristianX', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Christian_son_of_Knud' has a 'hasMother' relationship with 'CarolineMathilde', but 'CarolineMathilde' is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='CarolineMathilde', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Knud' has a 'hasMother' relationship with 'Alexandrine', but 'Alexandrine' is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alexandrine', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Ingolf' has a 'hasMother' relationship with 'CarolineMathilde', but 'CarolineMathilde' is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='CarolineMathilde', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Elisabeth' has a 'hasMother' relationship with 'CarolineMathilde', but 'CarolineMathilde' is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='CarolineMathilde', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Elisabeth' has a 'hasMother' relationship with 'CarolineMathilde', but 'CarolineMathilde' is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='CarolineMathilde', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    LLM-provided explanation of the violation:
+      The node 'FrederikIX' is the subject of an 'isFatherOf' relationship, but is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='FrederikIX', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    LLM-provided explanation of the violation:
+      The node 'Harald' is the subject of an 'isFatherOf' relationship, but is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Harald', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    LLM-provided explanation of the violation:
+      The node 'FrederikVIII' is the subject of an 'isFatherOf' relationship, but is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='FrederikVIII', class=':Ancestor')
+
+
+  Violation [19]:
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    LLM-provided explanation of the violation:
+      The node 'ChristianIX' is the subject of an 'isFatherOf' relationship, but is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='ChristianIX', class=':Ancestor')
+
+
+  Violation [20]:
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    LLM-provided explanation of the violation:
+      The node 'Helena' is the subject of an 'isMotherOf' relationship, but is not classified as an ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Helena', class=':Ancestor')
 
 
 
@@ -844,16 +1153,73 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (399938fc-0acf-42c9-a145-dbdc8b7627d9)
- Call ID: 399938fc-0acf-42c9-a145-dbdc8b7627d9
+  AssignClass (2aafce67-ffaa-4bc8-b6c3-13f4d829823b)
+ Call ID: 2aafce67-ffaa-4bc8-b6c3-13f4d829823b
   Args:
+    source: :ChristianX
     type: :Ancestor
-    source: Constantine_II
-  AssignClass (fd3c6d23-0b67-4432-9e91-0b0118b6928a)
- Call ID: fd3c6d23-0b67-4432-9e91-0b0118b6928a
+  AssignClass (3ac9a5c4-7c08-4b7d-babb-c0acf8e8ee9d)
+ Call ID: 3ac9a5c4-7c08-4b7d-babb-c0acf8e8ee9d
   Args:
+    source: :CarolineMathilde
     type: :Ancestor
-    source: Anne-Marie
+  AssignClass (3e8a96bc-cbe4-4070-a20e-da388098df88)
+ Call ID: 3e8a96bc-cbe4-4070-a20e-da388098df88
+  Args:
+    source: :Alexandrine
+    type: :Ancestor
+  AssignClass (6c9b0e45-0955-4c65-9859-330d34d54a0b)
+ Call ID: 6c9b0e45-0955-4c65-9859-330d34d54a0b
+  Args:
+    source: :FrederikIX
+    type: :Ancestor
+  AssignClass (442074d7-fca7-498b-a4cb-08a5d9855f40)
+ Call ID: 442074d7-fca7-498b-a4cb-08a5d9855f40
+  Args:
+    source: :Harald
+    type: :Ancestor
+  AssignClass (2fedf8ad-fe92-4a16-a155-3b5e1d9dfda9)
+ Call ID: 2fedf8ad-fe92-4a16-a155-3b5e1d9dfda9
+  Args:
+    source: :FrederikVIII
+    type: :Ancestor
+  AssignClass (03cbe0cc-be41-41de-9f0d-bbddeb68b0ca)
+ Call ID: 03cbe0cc-be41-41de-9f0d-bbddeb68b0ca
+  Args:
+    source: :ChristianIX
+    type: :Ancestor
+  AssignClass (31ebcf95-a684-4eb2-bf3e-840156f6fa8c)
+ Call ID: 31ebcf95-a684-4eb2-bf3e-840156f6fa8c
+  Args:
+    source: :Helena
+    type: :Ancestor
+  Finish (e1d1b99b-e916-40dc-9138-3ebf7c2f83e1)
+ Call ID: e1d1b99b-e916-40dc-9138-3ebf7c2f83e1
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -866,57 +1232,86 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Achileas-Andreas a :Man .
+  data:ChristianIX a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:FrederikVIII .
 
-  data:Alexia a :Woman .
+  data:Gustav a :Man,
+          :Person .
 
-  data:Anne-Marie a :Ancestor,
+  data:Harald a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:CarolineMathilde .
+
+  data:Helena a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:CarolineMathilde .
+
+  data:Knud a :Man,
+          :Person ;
+      :hasBirthYear 1900 ;
+      :hasDaughter data:Elisabeth ;
+      :hasDeathYear 1976 ;
+      :hasFather data:ChristianX ;
+      :hasMarriageYear 1933 ;
+      :hasMother data:Alexandrine ;
+      :hasRelation data:CarolineMathilde ;
+      :hasSon data:Christian_son_of_Knud,
+          data:Ingolf ;
+      :isBrotherOf data:FrederikIX .
+
+  data:Alexandrine a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Aristides-Stavros a :Man .
+  data:Christian_son_of_Knud a :Man,
+          :Person ;
+      :hasMother data:CarolineMathilde .
 
-  data:Constantine-Alexios a :Man .
+  data:Elisabeth a :Person,
+          :Woman ;
+      :hasMother data:CarolineMathilde .
 
-  data:Constantine_II a :Ancestor,
-          :Man ;
-      :hasChild data:Alexia,
-          data:Nikolaos,
-          data:Pavlos,
-          data:Philippos,
-          data:Theodora .
+  data:FrederikIX a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:MargretheII .
 
-  data:Maria-Olympia a :Woman .
+  data:FrederikVIII a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:ChristianX .
 
-  data:Marie-Chantal_Miller a :Woman .
+  data:Ingolf a :Man,
+          :Person ;
+      :hasMother data:CarolineMathilde .
 
-  data:Nikolaos a :Man .
+  data:MargretheII a :Person,
+          :Woman .
 
-  data:Odysseas-Kimon a :Man .
+  data:ChristianX a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Pavlos a :Man ;
-      :hasBirthYear "1967"^^xsd:positiveInteger ;
-      :hasChild data:Achileas-Andreas,
-          data:Aristides-Stavros,
-          data:Constantine-Alexios,
-          data:Maria-Olympia,
-          data:Odysseas-Kimon ;
-      :hasFather data:Constantine_II ;
-      :hasMarriageYear "1995"^^xsd:positiveInteger ;
-      :hasMother data:Anne-Marie ;
-      :hasRelation data:Marie-Chantal_Miller .
-
-  data:Philippos a :Man .
-
-  data:Theodora a :Woman .
+  data:CarolineMathilde a :Ancestor,
+          :Person,
+          :Woman .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (92e76028-ca5b-4e3e-9dc2-bc56f9e347f8)
- Call ID: 92e76028-ca5b-4e3e-9dc2-bc56f9e347f8
+  ValidateShacl (617cf6ae-fcfd-4c57-a4ab-4cd497ef4b30)
+ Call ID: 617cf6ae-fcfd-4c57-a4ab-4cd497ef4b30
   Args:
 
 ================================= Tool Message =================================
@@ -927,6 +1322,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5f404290-7b71-426f-9261-83d71107173e)
- Call ID: 5f404290-7b71-426f-9261-83d71107173e
+  Finish (e827c1a6-0f45-47d7-b164-cb72d899baca)
+ Call ID: e827c1a6-0f45-47d7-b164-cb72d899baca
   Args:

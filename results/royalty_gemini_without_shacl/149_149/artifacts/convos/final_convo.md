@@ -69,181 +69,50 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Maria of Greece and Denmark (Greek: Μαρία; romanized: María)
-(Russian: Мария Георгиевна; 3 March  1876 – 14 December 1940) was a daughter of King George I of Greece and his wife  Grand Duchess  Olga Constantinovna of Russia.
-She was a sister of King Constantine I of Greece and a first cousin of Tsar Nicholas II of Russia and King George V of the United Kingdom.
-Born as a princess of Greece and Denmark, she was educated in Athens by private tutors.
-Her father instilled in her a great love for Greece and throughout her life, she remained a fervent patriot.
-She married Grand Duke George Mikhailovich of Russia, her first cousin once removed, who courted her for five years.
-The wedding took place in 1900 in Corfu.
-Grand Duke George Mikhailovich had a house built for her in Crimea and he was a devoted father and husband, but the marriage was unhappy.
-Princess Maria, known upon her marriage as Grand Duchess Maria Georgievna of Russia, neither got to love her husband nor her adopted country.
-Longing for her native Greece, she never adapted to life in Russia.
-At the outbreak of World War I, she was vacationing in England with her daughters and chose not to return to Russia.
-Her husband was trapped in Russia after the revolution and he was shot by the Bolsheviks with several other Romanov relatives in January 1919.
-In her widowhood, deprived of her Russian income, Princess Maria faced serious financial difficulties.
-She returned to live in Greece with her daughters in 1920.
-The princess returned to live in Britain for a couple of years and she settled in Rome in 1926 with her second husband.
-She lived in Italy for over a decade until the outbreak of the Greco-Italian War in 1940 forced her to return to her native Greece.
-She was in poor health and was cared for by her nephew King Paul of Greece and his wife Frederica.
+Princess Alexandra of Greece and Denmark (Greek: Αλεξάνδρα; romanized: Alexándra), later known as Grand Duchess Alexandra Georgievna of Russia (Russian: Алекса́ндра Гео́ргиевна); 30 August  1870 – 24 September  1891), was a member of the Greek royal family by birth and of the Russian imperial family by marriage.
+Alexandra was the daughter of George I of Greece and Olga Constantinovna of Russia, and grew up in Athens.
+In 1889, she married Grand Duke Paul Alexandrovich of Russia, her first cousin once removed.
+The couple settled in Saint Petersburg and they had two children: Grand Duchess Maria Pavlovna (1890–1958) and Grand Duke Dmitri Pavlovich (1891–1942).
 Early life
 
-Princess Maria of Greece and Denmark was born on 3 March  1876  at the Royal Palace in Athens.
-She was the fifth child and second daughter of King George I of Greece and Grand Duchess Olga Constantinovna of Russia.
-Maria's father was born a Danish prince.
-Princess Maria, nicknamed "Greek Minnie" to tell her apart from the elder "Minnie", her paternal aunt (Empress Maria Feodorovna of Russia), grew up as part of a large family of eight children.
-One sister, named Olga, died in childhood, but  she had five brothers:  (Constantine, George, Nicholas, Andrew, Christopher) and one surviving sister: Alexandra.
-King George and Queen Olga were devoted parents who provided a happy, homely environment for their children.
-They began the year at the Royal Palace in Athens.
-In the summer, the Greek royal family stayed in Tatoi, in the mountains north of Athens, until mid-October before returning to the Royal Palace for the winter.
-King George was a strict and demanding father, but contrary to the general approach of the time, he believed in happy rambunctious children.
-Maria and her siblings were mischievous, playing pranks, even taking "bike rides" through the long corridors of the Royal palace, sometimes led by the King himself.
-Education
+Princess Alexandra of Greece and Denmark was born on 30 August  1870 at Mon Repos, the summer residence of the Greek royal family on the island of Corfu.
+She was the third child and eldest daughter of King George I of Greece and his wife, Grand Duchess Olga Constantinovna of Russia.
+Alexandra's father was not a native Greek, but he had been born a Danish prince named Christian Wilhelm of Schleswig-Holstein-Sonderburg-Glücksburg, a son of Christian IX, King of Denmark, and he had been elected to the Greek throne at the age of seventeen.
+Five of his sons (Constantine, George, Nicholas, Andrew and Christopher), and two daughters (Alexandra and Maria), attained adulthood.
+King George was a taciturn man, but contrary to the general approach of the time, he believed in happy rambunctious children.
+The long corridors of the royal palace in Athens were used by Alexandra and her siblings for all types of play and sometimes a "bike ride" would be led by the King himself.
+Alexandra, nicknamed "Aline" within her family, or Greek Alix, to distinguish her from her aunt and godmother, Alexandra, Princess of Wales, had a sunny disposition and was much loved by her family.
+"
 
-Maria and her siblings were raised by British nannies and educated by governesses and private tutors.
-Maria's education followed the conventions for princesses of her time.
-As Maria's eldest brothers were already occupied by their studies, she grew up closer to her sister Alexandra and her brother Nicholas, who preceded her in age.
-In 1886, her mother took her to Russia for the first time.
-Every two years, Princess Maria spent holidays in Denmark, visiting her paternal grandparents.
-At Fredensborg Palace on the island of Zealand, Maria and her siblings met their Russian and British cousins in large family gatherings.
-She became lifelong friends with two of her cousins: Grand Duchess Xenia of Russia and Princess Victoria of the United Kingdom.
-A Princess of Greece
 
-King George I instilled in his offspring a great love for Greece.
-As a consequence, she would remain all her life intensely Greek.
-In her book of memoirs, she described herself as: " A true daughter of Greece".
-In February 1897, King George sent his son, Prince George, to take possession of the island.
-During the conflict, Queen Olga organized a military hospital and Princess Maria served as a nurse.
-Since her sister Alexandra's marriage in 1889, Princess Maria became her father's favorite child and constant companion.
-She helped her father acting as his unofficial secretary as her mother, Queen Olga, suffered from bad eyesight.
-A Russian marriage
+Alexandra's playmates were her brother Nicholas and her sister Maria, who followed her in age.
+Alexandra spent many holidays in Denmark visiting her paternal grandparents.
+In Denmark, Alexandra and her siblings met their Russian and British cousins in large family gatherings.
+Marriage and children
 
-Princess Maria wanted to spend her entire life in Greece instead of following the traditional path of Princesses of her time that had to marry a foreign prince and move abroad.
-Princess Maria found King Alexander too ugly and rejected him.
-Since her childhood, Princess Maria of Greece had visited Russia many times with her mother, who remained very attached to her native country.
-They usually stayed at Pavlovsk Palace with Princess Maria's maternal grandmother, Grand Duchess Alexandra Iosifovna.
-While in Russia, in summer 1894, for the wedding of her cousin Grand Duchess Xenia to Grand Duke Alexander Mikhailovich, Princess Maria became smitten with the groom's brother, Grand Duke George Mikhailovich of Russia, who was her mother's first cousin.
-In a subsequent visit to Russia in the autumn of 1895, they were reunited at a Court Ball.
-She turned him down, to the dismay of Maria's mother, Queen Olga, who was in favor of a Russian marriage for her daughter.
-In spring 1896, Grand Duke George Mikhailovich arrived in Athens and proposed while they were playing billiards.
-The wedding was to take place a few months later in the summer.
-However, she had a change of heart and after putting off the wedding date twice, she broke off the engagement in October.
-For five years, Grand Duke George Mikhailovich of Russia persisted in his intention.
-Twice a year, he proposed to Princess Maria who continued refusing him.
-Tsar Nicholas II finally intervened, telling the grand duke to make only one more attempt and give up.
-George Mikhailovich arrived in Greece in spring 1900.
-This time, under pressure from her family, the Greek princess finally accepted his proposal, yet reluctantly.
-Before she had a change of heart, Queen Olga hurried the wedding.
-The marriage took place in Greece at the church of the old Venetian fortress in Corfu on 12 May  1900.
-It was a relatively simple ceremony with the reception held at the Greek Royal family residence in Corfu: Mon Repos.
-Grand Duchess of Russia
+When she was 18 years old, she was married to Grand Duke Paul Alexandrovich of Russia, her maternal first cousin once removed and the youngest child and sixth son of Emperor Alexander II and his first wife, Princess Marie of Hesse and by Rhine.
+They had become close when Grand Duke Paul spent winters in Greece due to his frequent respiratory illnesses.
+The Greek royal family also frequently spent holidays with the Romanov family on visits to Russia or Denmark.
+They had two children:
 
-After the wedding, the couple boarded the Greek royal yacht and sailed to the Bay of Naples.
-From Vienna, they arrived in Russia by the way of Warsaw.
-Princess Maria of Greece, known in Russia as Grand Duchess Maria Georgievna of Russia, was welcomed by the Romanovs as one of their own.
-Her mother, Queen Olga of Greece,  was a Russian Grand Duchess by birth, a first cousin of Tsar Alexander III of Russia.
-Maria's father, King George of Greece, was Empress Maria Feodorovna's favorite brother.
-Maria was a first cousin of Tsar Nicholas II, who she had known all her life.
-Grand Duchess Maria and her husband settled in apartments located within the New Michael Palace on the Palace Quay in Saint Petersburg, the household of her father-in-law, Grand Duke Michael Nicholaievich.
-They shared the large palace with the Grand Duke's widowed father and two unmarried brothers: Grand Duke Nicholas Mikhailovich, and Grand Duke Sergei Mihailovich, to whom Maria Gerogievna became particularly close.
-Grand Duke George Mikhailovich had an injury in one leg in his youth, which curtailed the active military career he would have wanted; he occupied his time as director of the Alexander III museum where he moved his large numismatic collection.
-Two days after Empress Alexandra Feodorovna gave birth to her fourth daughter, Grand Duchess Anastasia Nikolaevna, Grand Duchess Maria Georgievna gave birth to her first child, Princess Nina Georgievna on 20 June  1901.
-Two years, two months and two days later on 22 August 1903, she had her second daughter and last child Princess Xenia Georgievna.
-Shortly after Xenia's birth, Grand Duchess Maria's father in law became paralyzed by a stroke and moved permanently to the south of France to recover.
-During the years living in Russia (1900–1914), Grand Duchess Maria traveled frequently to the South of France, Denmark, England, Germany, Italy and yearly to her native Greece.
-In the summer of 1900, Maria Georgievna visited Crimea with her husband.
-It was there, in a piece of land Grand Duke George had bought in the 1890s near Ai-Todor, on a  high cliff above the sea, that the couple decided to build their residence.
-They commissioned the construction to Nikolay Petrovich Krasnov, a Russian architect who had built  the palace of Dulber between 1895 and 1897 for Grand Duke Peter Nikolaevich, and  who would build the white Palace at Livadia for Tsar Nicholas II and his wife Alexandra between (1910–1911).
-Harax
 
-As Grand Duchess Maria Georgievna was very fond of everything English, the villa was constructed in the English style with local limestone, but they gave the property a Greek name, Harax, the fortress, in memory of an  ancient fortress that once stood on the tip of Ai-Todor.
-Grand Duchess Maria sketched the exterior elevations and draw floor plans while Grand Duke George painted renderings in watercolors and pen and ink sketches.
-Construction took place between 1905 and 1907.
-The two-story house, overlooking the Black Sea with a red-tiled roof and dotted with chimneys, was decorated by the Grand Duchess with English furniture, silverware, textiles, and wallpaper all imported from England.
-As Harax was on walking distance from Livadia Palace, the residence in Crimea of Tsar Nicholas II and his immediate family, the Tsar and his children were frequent visitors.
-For seven years the Grand Duke and his wife led a quiet life in Crimea, returning to St Petersburg in the winter for the social season at the Imperial capital.
-With a poor command of Russian, Grand Duchess Maria spoke in French with her husband and in English with her daughters.
-Princess Nina, the eldest was described by Baroness Agnes von Stoeckl  as "dark, calm and indolent" while Xenia, the youngest was "blond, vivacious and full of life".
-Grand Duchess Maria hired an English nanny to educate them.
-On 18 March 1913, King George I was assassinated in Thessalonica, a city that Greece had seized on during the First Balkan War.
-For Maria Georgieva, who had been so close to her father it was a  terrible blow.
-By 1914 the relationship between the Grand Duchess and her husband had deteriorated.
-Grand Duke George was a devoted father and husband, but the Grand Duchess never fell in love with him.
-She never liked Russia either and eventually became estranged from her husband.
-War and Revolution
+Death
 
-In the summer of 1914, the Grand Duchess left Russia with her two daughters and her lady in waiting, Baroness Agnes von Stoeckl for England to improve her daughter Xenia's frail health with the mineral waters of the Spa town of Harrogate, where they had been three times before.
-The Grand Duke accompanied them to Warsaw in July.
-After a stay at the Claridge's Hotel, the Princess moved to Harrogate, where Grand Duke George Mikhailovich was going to join them a few weeks later.
-Grand Duke George was forced to cancel his trip as he had to resume his duties in the Tsarist army.
-For her part, Grand Duchess Maria declined the chance to rush back to Russia with her aunt the Empress Maria Feodorovna, who was in London that summer.
-Instead, the Grand Duchess decided to extend her stay in the United Kingdom with her daughters and later used  the dangers involved in a trip back during wartime in not attempting a return to Russia.
-Determine to help with the war of the Triple Entente against the Central Powers, Grand Duchess Maria founded a small military hospital N 2 in Harrogate.
-She undertook a Red Cross nursing course and already had experience of army medical service as a young princess in Greece, nursing patients herself.
-This institution was so successful that by 1915 the Grand Duchess eventually created two other hospitals:  N 3 and a  home for convalescent patients in Harrogate.
-Impressed by her work, her cousin, King George V, conferred her the Royal Red Cross in July 1915.
-During the war years, Grand Duchess Maria lived with her daughters in Harrogate until July 1916 when they moved to a large mansion in Grosvenor Square in  London.
-Very close to the British Royal Family, she went to Marlborough House almost every evening to dine and play cards with Queen Alexandra.
-Grand Duchess Maria also regularly visited her cousin, Princess Victoria of the United Kingdom, her close friend since childhood.
-She continued to go to Harrogate frequently to be in charge of her hospitals.
-The outbreak of the Russian Revolution in 1917 disrupted the daily life of  Grand Duchess Maria and her daughters, who ceased to receive income from St. Petersburg.
-Unable to subsidize any longer the hospitals she patronized, the Grand Duchess entrusted them to the protection of her aunt Queen Alexandra.
-Her reduced financial circumstances forced Grand Duchess Maria to move to a smaller residence next to Regent's Park.
-It was though the financial support of her future sister-in-law, the wealthy American Nancy Leeds, that the Grand Duchess was able to maintain her finances afloat.
-In 1918, Grand Duke George Mikhailovich was arrested by the Bolsheviks as he sought to emigrate to Britain.
-Alarmed with the fate of her husband, Maria Georgievna made many efforts to obtain her husband's release, along with others of her Russian relatives.
-After several months of uncertainty, the Grand Duke was finally shot on 30 January 1919 at the Peter and Paul Fortress by the Bolsheviks.
-Along with her husband, Maria lost her brother-in-law Grand Duke Nicholas Mikhailovich, her former brother-in-law Grand Duke Paul Alexandrovich and her younger maternal uncle, Grand Duke Dimitri Constantinovich.
-A Greek marriage
-
-In her widowhood, Princess Maria of Greece reverted to her original name and title and her focus shifted to her own family.
-At the outbreak of World War I, as Greece had been weakened by the Balkan Wars, King Constantine I opted for his country's neutrality.
-His prime minister, Eleftherios Venizelos, who wanted Greece to enter the conflict on the side of the allies, clashed with the King.
-In order to force the Greeks to join the allied cause, the French bombarded Athens and demanded King Constantine's departure.
-Greece entered the war on the side of the allies while the Greek Royal Family left for exile in Switzerland with the sole exception of King Alexander.
-With the tumultuous political situation in Greece, Princess Maria could not count on the support of her relatives.
-While on a visit to Paris, Princess Maria met her nephew Alexander who Venizelos kept isolated from the Greek Royal Family.
-King Alexander died in October 1920, following an infection from a monkey bite, and a plebiscite restored King Constantine I on the throne.
-Princess Maria and her two daughters then joined King Constantine and the Greek Royal family in Italy, where the small group boarded a ship of the Hellenic Navy towards Corfu.
-Then, members of the royal family continue their journey aboard the destroyer Ierax, which took them to Athens.
-During this trip, Princess Maria met the commander of the ship, Admiral Perikles Ioannidis.
-Widowed and determined to end her days with "Greek blood", the princess was smitten with the Greek Admiral.
-Back in Greece, Maria settled in Athens.
-She was much loved by the royal family, even winning the affection of the wife of the Diadochos George, Princess Elizabeth of Romania, whose relationship with the rest of her in-laws was difficult.
-On the other hand, Princess Maria's relationship with her daughters was strained.
-That they never were able to see him again, as Grand Duke George Mikhailovich had been killed during the Russian Revolution, only increased their resentment and they disapproved of their mother's relationship with Ioannidis.
-In 1921, 17-year-old, Princess Xenia married William Bateman Leeds Jr., son of Nancy Leeds.
-Princess Nina was married in London in September 1922 to Prince Paul Chavchavadze (1899–1971), son of Prince Alexander Chavchavadze and Maria Rodzianko.
-The same month King Constantine had to abdicate after Greece lost the Greco-Turkish War of 1919–1922.
-Princess Maria's eldest nephew succeeded him as King George II of Greece on 27 September 1922.
-Three months later, despite her daughters' opposition, Princess Maria married Admiral Pericles Ioannides on 16 December 1922 in Wiesbaden, Germany.
-A wandering life
-
-After a honeymoon in Frankfurt and Munich Princess Maria of Greece and her second husband returned to Athens.
-They left Greece at the time of the proclamation of the Second Hellenic Republic in 1924.
-The couple moved to London to the house the Princess had in Regent's Park where they lived for a couple of years.
-The Greek Princess devoted herself to drawing and she made a series of whimsical illustrations in color of exotic people and animals that she called "Katoufs" "making a face" in Greek.
-She published her drawing as a children's book in 1925 with rhymes written by Princess Maria Trubetskoy, née Rodzianko (1877–1958).
-The two women dedicated the book to their common grandson, Prince David Chavchavadze.
-Princess Maria was Queen Alexandra's favorite niece and she was her constant companion during the Queen's last years at Sandringham.
-After her two daughters had moved to the United States and her aunt Queen Alexandra had died, Princess Maria and her husband moved to Rome in 1926.
-Many members of the Greek royal family were also living in Italy.
-The Princess acquired a residence, the Villa Attica, located on via Antonio-Bertoloni.
-The couple followed a relatively simple existence, and Princess Maria divided her time between gardening and the writing of her memoirs, published years later by her grandchildren.
-Maria was an inveterate backgammon player while her husband carefully monitored their expenses.
-Later life
-
-Grand Duchess Maria Georgievna died in her native Athens during the Greco-Italian War (28 October 1940 – 30 April 1941)
-Her daughter Xenia lived for years in Long Island and was for a time married to millionaire William Leeds, son of Nancy Stewart Worthington Leeds and the stepson of Maria's brother Prince Christopher.
-Anderson fraudulently claimed to be Grand Duchess Anastasia Nikolaevna of Russia, the youngest daughter of her cousin, Emperor Nicholas II, and was forced to leave Xenia's house at the demand of William Leeds.
-Grand Duchess Maria never recognized Anderson.
-}} Media related to Grand Duchess Maria Georgievna of Russia at Wikimedia Commons
+Seven months into her second pregnancy, Alexandra took a walk with her friends on the bank of the Moskva River and jumped directly into a boat that was permanently moored there, but fell as she got in.
+The Grand Duchess was buried in the Peter and Paul Cathedral, St. Petersburg.
+Her husband later morganatically remarried Olga Karnovich.
+Alexandra's son would be involved in the murder of Grigori Rasputin, a friend of Tsarina Alexandra Feodorovna, in 1916.
+In 1939 during the reign of her nephew George II of Greece, the Greek government obtained permission from the Soviet government under Joseph Stalin to rebury Princess Alexandra in Greece.
+Alexandra's marble tombstone over an empty tomb is still in its place in the Peter and Paul Cathedral.
+The "Alexandra Maternity Hospital" (now "Alexandra General Hospital") in Athens was later named in her memory by another nephew, King Paul; it was affiliated with the University of Athens with a special remit to research and combat postpartum maternal mortality.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -259,39 +128,9 @@ Grand Duchess Maria never recognized Anderson.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -306,6 +145,23 @@ Grand Duchess Maria never recognized Anderson.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -323,6 +179,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -390,29 +261,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -421,6 +284,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -433,6 +304,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -441,17 +314,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -479,6 +354,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -494,128 +453,310 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a896cf14-a681-4015-bdb5-c96bda754e1f)
- Call ID: a896cf14-a681-4015-bdb5-c96bda754e1f
+  AssignClass (4ed28f3a-71a0-4819-9492-34d9ae334557)
+ Call ID: 4ed28f3a-71a0-4819-9492-34d9ae334557
+  Args:
+    source: Alexandra_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (5f0cae98-4d8d-48cd-bbc3-42a6897da466)
+ Call ID: 5f0cae98-4d8d-48cd-bbc3-42a6897da466
+  Args:
+    source: Alexandra_of_Greece_and_Denmark
+    type: :Person
+  AddLiteral (dbfadffb-5fb2-4edd-aa00-4f91e2aa150c)
+ Call ID: dbfadffb-5fb2-4edd-aa00-4f91e2aa150c
+  Args:
+    relation: :alsoKnownAs
+    source: Alexandra_of_Greece_and_Denmark
+    literal_value: Grand Duchess Alexandra Georgievna of Russia
+    literal_type: xsd:string
+  AddLiteral (2c549956-99bf-4923-82f5-2a4b69b1a4f7)
+ Call ID: 2c549956-99bf-4923-82f5-2a4b69b1a4f7
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1870
+    source: Alexandra_of_Greece_and_Denmark
+  AddLiteral (97f704c3-94be-40dd-b84c-1b0a8ccadcad)
+ Call ID: 97f704c3-94be-40dd-b84c-1b0a8ccadcad
+  Args:
+    literal_value: 1891
+    source: Alexandra_of_Greece_and_Denmark
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AssignClass (ba8a8dc7-e9ed-41f1-a299-ed39393bede6)
+ Call ID: ba8a8dc7-e9ed-41f1-a299-ed39393bede6
+  Args:
+    type: :Man
+    source: George_I_of_Greece
+  AssignClass (59742528-3acd-48a9-a201-0dd47bd7d4b2)
+ Call ID: 59742528-3acd-48a9-a201-0dd47bd7d4b2
+  Args:
+    type: :Person
+    source: George_I_of_Greece
+  AssignClass (5e944ace-0c09-438e-8c08-74873f672470)
+ Call ID: 5e944ace-0c09-438e-8c08-74873f672470
+  Args:
+    type: :Ancestor
+    source: George_I_of_Greece
+  AssignClass (eb4f022f-e889-4c4f-a1cc-03a4baa9b292)
+ Call ID: eb4f022f-e889-4c4f-a1cc-03a4baa9b292
   Args:
     type: :Woman
-    source: Maria_of_Greece_and_Denmark
-  AssignClass (a8d4c444-9620-4feb-8645-582e6c7ee9d0)
- Call ID: a8d4c444-9620-4feb-8645-582e6c7ee9d0
+    source: Olga_Constantinovna_of_Russia
+  AssignClass (4e92f7db-afba-486f-b7a7-3c1d211933cc)
+ Call ID: 4e92f7db-afba-486f-b7a7-3c1d211933cc
   Args:
-    source: George_I_of_Greece
-    type: :Man
-  AssignClass (5e4d1ed3-a25a-4fea-8990-de7ac5a97559)
- Call ID: 5e4d1ed3-a25a-4fea-8990-de7ac5a97559
+    type: :Person
+    source: Olga_Constantinovna_of_Russia
+  AssignClass (1d9a7392-561b-4639-8e9e-d525a2e89fb6)
+ Call ID: 1d9a7392-561b-4639-8e9e-d525a2e89fb6
   Args:
     source: Olga_Constantinovna_of_Russia
-    type: :Woman
-  AssignClass (73c132f0-e644-4faf-83dd-85c72d316ee8)
- Call ID: 73c132f0-e644-4faf-83dd-85c72d316ee8
+    type: :Ancestor
+  AddTriple (72da154e-ed7e-42f2-9f61-4c3c20a8e16a)
+ Call ID: 72da154e-ed7e-42f2-9f61-4c3c20a8e16a
   Args:
-    source: Constantine_I_of_Greece
-    type: :Man
-  AssignClass (4fe27ab1-4685-4b6b-bcf5-dd4f24a5b5b1)
- Call ID: 4fe27ab1-4685-4b6b-bcf5-dd4f24a5b5b1
-  Args:
-    source: George_Mikhailovich_of_Russia
-    type: :Man
-  AssignClass (695cacaf-4ec8-49a8-8dbe-6f8f9bf6880d)
- Call ID: 695cacaf-4ec8-49a8-8dbe-6f8f9bf6880d
-  Args:
-    type: :Woman
-    source: Nina_Georgievna
-  AssignClass (0f3653e4-f7e9-4caa-b39f-2932bc841d57)
- Call ID: 0f3653e4-f7e9-4caa-b39f-2932bc841d57
-  Args:
-    source: Xenia_Georgievna
-    type: :Woman
-  AssignClass (20b80d1f-d6a2-417b-ac63-efb13a0c698d)
- Call ID: 20b80d1f-d6a2-417b-ac63-efb13a0c698d
-  Args:
-    type: :Man
-    source: Pericles_Ioannides
-  AddLiteral (014595ce-6592-4c79-9d83-06cef12ab64d)
- Call ID: 014595ce-6592-4c79-9d83-06cef12ab64d
-  Args:
-    literal_value: 1876
-    relation: :hasBirthYear
-    source: Maria_of_Greece_and_Denmark
-    literal_type: xsd:integer
-  AddLiteral (1f8923f3-0df3-4dff-b2e4-4198068e04e7)
- Call ID: 1f8923f3-0df3-4dff-b2e4-4198068e04e7
-  Args:
-    literal_value: 1940
-    relation: :hasDeathYear
-    source: Maria_of_Greece_and_Denmark
-    literal_type: xsd:integer
-  AddTriple (45a55eb7-cef2-4e1a-80ca-22af8bf76b82)
- Call ID: 45a55eb7-cef2-4e1a-80ca-22af8bf76b82
-  Args:
-    source: Maria_of_Greece_and_Denmark
     relation: :hasFather
     target: George_I_of_Greece
-  AddTriple (803b4179-8925-415a-9aeb-0b746a25dac4)
- Call ID: 803b4179-8925-415a-9aeb-0b746a25dac4
+    source: Alexandra_of_Greece_and_Denmark
+  AddTriple (fd7f4787-69a3-4385-8501-da1d3c1a3cf9)
+ Call ID: fd7f4787-69a3-4385-8501-da1d3c1a3cf9
   Args:
+    relation: :hasMother
+    source: Alexandra_of_Greece_and_Denmark
     target: Olga_Constantinovna_of_Russia
-    source: Maria_of_Greece_and_Denmark
-    relation: :hasMother
-  AddTriple (6e9acafd-6de4-4122-8a04-afd70f6cb023)
- Call ID: 6e9acafd-6de4-4122-8a04-afd70f6cb023
+  AssignClass (f0aedb5e-c719-4667-9633-9d153c8140b5)
+ Call ID: f0aedb5e-c719-4667-9633-9d153c8140b5
   Args:
-    source: Maria_of_Greece_and_Denmark
-    relation: :isSisterOf
-    target: Constantine_I_of_Greece
-  AddTriple (c03f4678-7175-46fe-9f95-25c1de5328a9)
- Call ID: c03f4678-7175-46fe-9f95-25c1de5328a9
+    type: :Man
+    source: Paul_Alexandrovich_of_Russia
+  AssignClass (093aee56-15a1-4af8-898c-4ba0f574a1ee)
+ Call ID: 093aee56-15a1-4af8-898c-4ba0f574a1ee
   Args:
-    target: George_I_of_Greece
-    source: Constantine_I_of_Greece
-    relation: :hasFather
-  AddTriple (f6739217-b4b7-44a6-bc89-a90cc24589ff)
- Call ID: f6739217-b4b7-44a6-bc89-a90cc24589ff
+    type: :Person
+    source: Paul_Alexandrovich_of_Russia
+  AssignClass (8e79ec2d-6103-40e3-81bc-967e6d6cb1d8)
+ Call ID: 8e79ec2d-6103-40e3-81bc-967e6d6cb1d8
   Args:
-    source: Constantine_I_of_Greece
-    relation: :hasMother
-    target: Olga_Constantinovna_of_Russia
-  AddTriple (9581c4fe-5da7-423e-bb88-3ecf8af5e963)
- Call ID: 9581c4fe-5da7-423e-bb88-3ecf8af5e963
+    type: :Ancestor
+    source: Paul_Alexandrovich_of_Russia
+  AddLiteral (8233a9d5-0aa5-4c5a-9215-dc286c728311)
+ Call ID: 8233a9d5-0aa5-4c5a-9215-dc286c728311
   Args:
-    source: Nina_Georgievna
-    relation: :hasFather
-    target: George_Mikhailovich_of_Russia
-  AddTriple (99d7bd94-5a0e-4db8-8dae-1ec96a214c71)
- Call ID: 99d7bd94-5a0e-4db8-8dae-1ec96a214c71
-  Args:
-    source: Nina_Georgievna
-    relation: :hasMother
-    target: Maria_of_Greece_and_Denmark
-  AddTriple (975eb05c-64ff-4088-bd37-62873f94e375)
- Call ID: 975eb05c-64ff-4088-bd37-62873f94e375
-  Args:
-    source: Xenia_Georgievna
-    relation: :hasFather
-    target: George_Mikhailovich_of_Russia
-  AddTriple (b13dd069-3e45-4335-86ce-b29696256cbb)
- Call ID: b13dd069-3e45-4335-86ce-b29696256cbb
-  Args:
-    target: Maria_of_Greece_and_Denmark
-    source: Xenia_Georgievna
-    relation: :hasMother
-  AddLiteral (ce3c000f-b0af-4eda-923f-4632a948936e)
- Call ID: ce3c000f-b0af-4eda-923f-4632a948936e
-  Args:
-    relation: :hasMarriageYear
-    source: Maria_of_Greece_and_Denmark
+    literal_value: 1889
+    source: Alexandra_of_Greece_and_Denmark
     literal_type: xsd:integer
-    literal_value: 1900
-  AddLiteral (daaf005d-d60e-421e-921f-4e36d53ffd59)
- Call ID: daaf005d-d60e-421e-921f-4e36d53ffd59
-  Args:
-    literal_value: 1922
     relation: :hasMarriageYear
-    source: Maria_of_Greece_and_Denmark
-    literal_type: xsd:integer
-  Finish (a15562e5-5b50-4802-8069-64f7f7cf8aeb)
- Call ID: a15562e5-5b50-4802-8069-64f7f7cf8aeb
+  AddTriple (736a24cf-b29f-4d03-977d-485d8ff759ee)
+ Call ID: 736a24cf-b29f-4d03-977d-485d8ff759ee
+  Args:
+    relation: :hasRelation
+    source: Alexandra_of_Greece_and_Denmark
+    target: Paul_Alexandrovich_of_Russia
+  AssignClass (d3df3f01-c379-45e0-904c-785c64aab5f9)
+ Call ID: d3df3f01-c379-45e0-904c-785c64aab5f9
+  Args:
+    type: :Woman
+    source: Maria_Pavlovna
+  AssignClass (0b1108a0-8481-4cf2-9ebe-494452ef0d72)
+ Call ID: 0b1108a0-8481-4cf2-9ebe-494452ef0d72
+  Args:
+    source: Maria_Pavlovna
+    type: :Person
+  AssignClass (fc647948-e07e-4e77-9015-b941d1073e82)
+ Call ID: fc647948-e07e-4e77-9015-b941d1073e82
+  Args:
+    type: :Man
+    source: Dmitri_Pavlovich
+  AssignClass (f456bd40-0c8e-46d4-a60b-8020268bd4a8)
+ Call ID: f456bd40-0c8e-46d4-a60b-8020268bd4a8
+  Args:
+    source: Dmitri_Pavlovich
+    type: :Person
+  AddTriple (7780b421-9bee-4a8f-9fea-8dba0f1c2517)
+ Call ID: 7780b421-9bee-4a8f-9fea-8dba0f1c2517
+  Args:
+    relation: :hasChild
+    target: Maria_Pavlovna
+    source: Alexandra_of_Greece_and_Denmark
+  AddTriple (520566a4-c9b4-4abf-884d-f0a0034ff1dd)
+ Call ID: 520566a4-c9b4-4abf-884d-f0a0034ff1dd
+  Args:
+    relation: :hasChild
+    source: Alexandra_of_Greece_and_Denmark
+    target: Dmitri_Pavlovich
+  AddTriple (6b14170f-7270-4823-b3c9-e64d1c5772ab)
+ Call ID: 6b14170f-7270-4823-b3c9-e64d1c5772ab
+  Args:
+    relation: :hasChild
+    source: Paul_Alexandrovich_of_Russia
+    target: Maria_Pavlovna
+  AddTriple (7680f71f-731d-4b00-96bc-8bc044c14714)
+ Call ID: 7680f71f-731d-4b00-96bc-8bc044c14714
+  Args:
+    relation: :hasChild
+    target: Dmitri_Pavlovich
+    source: Paul_Alexandrovich_of_Russia
+  AssignClass (79e77df9-a951-494a-be73-a687c79be755)
+ Call ID: 79e77df9-a951-494a-be73-a687c79be755
+  Args:
+    type: :Man
+    source: Christian_IX_of_Denmark
+  AssignClass (6a483957-dc7c-4d2b-9ff0-4605ebca0bd2)
+ Call ID: 6a483957-dc7c-4d2b-9ff0-4605ebca0bd2
+  Args:
+    source: Christian_IX_of_Denmark
+    type: :Person
+  AssignClass (1bd3c2b2-45d0-4793-9fdc-acbb08e1858a)
+ Call ID: 1bd3c2b2-45d0-4793-9fdc-acbb08e1858a
+  Args:
+    type: :Ancestor
+    source: Christian_IX_of_Denmark
+  AddTriple (a2e4fa90-bb34-45e7-9c4c-a2b750d1e733)
+ Call ID: a2e4fa90-bb34-45e7-9c4c-a2b750d1e733
+  Args:
+    relation: :hasFather
+    source: George_I_of_Greece
+    target: Christian_IX_of_Denmark
+  AssignClass (a9838030-54e5-47e8-b57f-30a84f215eef)
+ Call ID: a9838030-54e5-47e8-b57f-30a84f215eef
+  Args:
+    type: :Man
+    source: Constantine_of_Greece
+  AssignClass (c4d6f3b8-924b-4fff-a933-8147a0c69db8)
+ Call ID: c4d6f3b8-924b-4fff-a933-8147a0c69db8
+  Args:
+    source: Constantine_of_Greece
+    type: :Person
+  AssignClass (aefe308e-c59f-4a60-bfe3-161953d781b3)
+ Call ID: aefe308e-c59f-4a60-bfe3-161953d781b3
+  Args:
+    type: :Man
+    source: Nicholas_of_Greece
+  AssignClass (4ba951bc-a1ae-4ad1-b831-e943aa992515)
+ Call ID: 4ba951bc-a1ae-4ad1-b831-e943aa992515
+  Args:
+    type: :Person
+    source: Nicholas_of_Greece
+  AssignClass (89aa22ab-1f85-42bf-bb68-e8683d14fc7e)
+ Call ID: 89aa22ab-1f85-42bf-bb68-e8683d14fc7e
+  Args:
+    source: Andrew_of_Greece
+    type: :Man
+  AssignClass (7f4dda74-6139-42cb-a5d0-23e8b16b39cd)
+ Call ID: 7f4dda74-6139-42cb-a5d0-23e8b16b39cd
+  Args:
+    source: Andrew_of_Greece
+    type: :Person
+  AssignClass (a8cfc15f-b91e-4a09-adf1-d7a129ea408c)
+ Call ID: a8cfc15f-b91e-4a09-adf1-d7a129ea408c
+  Args:
+    type: :Man
+    source: Christopher_of_Greece
+  AssignClass (eafac417-510d-4a42-99a2-3642ed2b09ed)
+ Call ID: eafac417-510d-4a42-99a2-3642ed2b09ed
+  Args:
+    source: Christopher_of_Greece
+    type: :Person
+  AssignClass (e03eeb38-f701-47a1-a441-c503f49a5c2e)
+ Call ID: e03eeb38-f701-47a1-a441-c503f49a5c2e
+  Args:
+    type: :Woman
+    source: Maria_of_Greece
+  AssignClass (152529f9-2bb0-4141-a260-8aa1e002bef9)
+ Call ID: 152529f9-2bb0-4141-a260-8aa1e002bef9
+  Args:
+    source: Maria_of_Greece
+    type: :Person
+  AddTriple (1b320389-fe54-4488-98c1-1fb7483feb42)
+ Call ID: 1b320389-fe54-4488-98c1-1fb7483feb42
+  Args:
+    target: Constantine_of_Greece
+    source: George_I_of_Greece
+    relation: :hasChild
+  AddTriple (a03ea47c-5068-4f3f-9a66-f7c733449ea4)
+ Call ID: a03ea47c-5068-4f3f-9a66-f7c733449ea4
+  Args:
+    target: Nicholas_of_Greece
+    source: George_I_of_Greece
+    relation: :hasChild
+  AddTriple (9e8b24dd-0eae-40df-be37-5aad4bfa3c34)
+ Call ID: 9e8b24dd-0eae-40df-be37-5aad4bfa3c34
+  Args:
+    relation: :hasChild
+    target: Andrew_of_Greece
+    source: George_I_of_Greece
+  AddTriple (258e67aa-b85f-49a5-8e2f-9504fa799f40)
+ Call ID: 258e67aa-b85f-49a5-8e2f-9504fa799f40
+  Args:
+    source: George_I_of_Greece
+    target: Christopher_of_Greece
+    relation: :hasChild
+  AddTriple (2714d991-013e-434c-9eb5-144f0d1548ae)
+ Call ID: 2714d991-013e-434c-9eb5-144f0d1548ae
+  Args:
+    relation: :hasChild
+    target: Maria_of_Greece
+    source: George_I_of_Greece
+  AssignClass (5cbadcaf-1684-4441-a473-c863f794e7f9)
+ Call ID: 5cbadcaf-1684-4441-a473-c863f794e7f9
+  Args:
+    type: :Man
+    source: Alexander_II_of_Russia
+  AssignClass (299e4331-a872-440a-a982-8732dfec88d4)
+ Call ID: 299e4331-a872-440a-a982-8732dfec88d4
+  Args:
+    type: :Person
+    source: Alexander_II_of_Russia
+  AssignClass (973a2874-ff4c-4029-87df-0b7ebf0585d7)
+ Call ID: 973a2874-ff4c-4029-87df-0b7ebf0585d7
+  Args:
+    type: :Ancestor
+    source: Alexander_II_of_Russia
+  AssignClass (dd4dcbf6-fb41-414b-8d82-a7349873d089)
+ Call ID: dd4dcbf6-fb41-414b-8d82-a7349873d089
+  Args:
+    source: Marie_of_Hesse_and_by_Rhine
+    type: :Woman
+  AssignClass (6e122a51-29e4-4e07-9499-a4b9c6624983)
+ Call ID: 6e122a51-29e4-4e07-9499-a4b9c6624983
+  Args:
+    source: Marie_of_Hesse_and_by_Rhine
+    type: :Person
+  AssignClass (9fcf2750-6248-43e9-90e9-369548fb3fce)
+ Call ID: 9fcf2750-6248-43e9-90e9-369548fb3fce
+  Args:
+    source: Marie_of_Hesse_and_by_Rhine
+    type: :Ancestor
+  AddTriple (ffcf9333-9f87-49b4-b600-077cd11229f2)
+ Call ID: ffcf9333-9f87-49b4-b600-077cd11229f2
+  Args:
+    target: Alexander_II_of_Russia
+    source: Paul_Alexandrovich_of_Russia
+    relation: :hasFather
+  AddTriple (4ef791ea-015b-4c62-ac2b-4916728e1a2a)
+ Call ID: 4ef791ea-015b-4c62-ac2b-4916728e1a2a
+  Args:
+    target: Marie_of_Hesse_and_by_Rhine
+    source: Paul_Alexandrovich_of_Russia
+    relation: :hasMother
+  AssignClass (096c47fc-e4a9-42f9-83ea-4b466ea068f7)
+ Call ID: 096c47fc-e4a9-42f9-83ea-4b466ea068f7
+  Args:
+    source: Olga_Karnovich
+    type: :Woman
+  AssignClass (8139e279-91b9-4dcd-a2ee-b5308c6c733a)
+ Call ID: 8139e279-91b9-4dcd-a2ee-b5308c6c733a
+  Args:
+    source: Olga_Karnovich
+    type: :Person
+  AddTriple (51d8a619-61f4-4692-bf04-21a94ec8b4ba)
+ Call ID: 51d8a619-61f4-4692-bf04-21a94ec8b4ba
+  Args:
+    target: Olga_Karnovich
+    source: Paul_Alexandrovich_of_Russia
+    relation: :hasRelation
+  Finish (23c223fe-150e-40eb-83cb-9e3e63a28928)
+ Call ID: 23c223fe-150e-40eb-83cb-9e3e63a28928
   Args:

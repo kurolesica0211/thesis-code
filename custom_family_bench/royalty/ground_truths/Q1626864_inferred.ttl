@@ -1,0 +1,143 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Prince_Aimone-_4th_Duke_of_Aosta a :Man,
+        :Person ;
+    rdfs:label "Prince Aimone, 4th Duke of Aosta"^^xsd:string ;
+    data:posIndicesFull "1186:1214"^^xsd:string ;
+    data:posIndicesPart "1277:1283"^^xsd:string,
+        "1462:1467"^^xsd:string,
+        "1867:1873"^^xsd:string,
+        "2410:2416"^^xsd:string,
+        "2450:2454"^^xsd:string,
+        "2531:2537"^^xsd:string,
+        "2801:2807"^^xsd:string ;
+    data:wdtLink wdt:Q169902 ;
+    :alsoKnownAs "Aimoe di Savoia-Aoste, Principe di Savoia"^^xsd:string,
+        "Prince Aimone, Duke of Aosta"^^xsd:string ;
+    :hasBrother data:Prince_Aimone-_4th_Duke_of_Aosta ;
+    :hasRelation data:Prince_Aimone-_4th_Duke_of_Aosta ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Aimone-_4th_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone-_4th_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Aimone-_4th_Duke_of_Aosta .
+
+data:Princess_Isabelle_dOrléans a :Person,
+        :Woman ;
+    rdfs:label "Princess Isabelle d’Orléans"^^xsd:string ;
+    data:posIndicesFull "721:749"^^xsd:string ;
+    data:posIndicesPart "1081:1089"^^xsd:string,
+        "1424:1432"^^xsd:string,
+        "1560:1568"^^xsd:string,
+        "2050:2058"^^xsd:string,
+        "2421:2429"^^xsd:string ;
+    data:wdtLink wdt:Q261322 ;
+    :alsoKnownAs "Princess Isabelle of Orleans"^^xsd:string ;
+    :hasRelation data:Princess_Isabelle_dOrléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Isabelle_dOrléans ;
+    :isBloodrelationOf data:Princess_Isabelle_dOrléans ;
+    :isSiblingOf data:Princess_Isabelle_dOrléans ;
+    :isSisterOf data:Princess_Isabelle_dOrléans .
+
+data:Isabelle_of_Orléans-Braganza a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Isabelle of Orléans-Braganza"^^xsd:string ;
+    data:posIndicesFull "730:758"^^xsd:string ;
+    data:posIndicesPart "877:884"^^xsd:string ;
+    data:wdtLink wdt:Q261284 ;
+    :alsoKnownAs "Isabelle of Orleans-Braganza"^^xsd:string ;
+    :hasChild data:Princess_Claude_dOrléans ;
+    :hasDaughter data:Princess_Claude_dOrléans ;
+    :hasRelation data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Aimone-_6th_Duke_of_Aosta,
+        data:Princess_Claude_dOrléans ;
+    :hasSex data:female ;
+    :hasSister data:Isabelle_of_Orléans-Braganza ;
+    :isAncestorOf data:Prince_Aimone-_6th_Duke_of_Aosta,
+        data:Princess_Claude_dOrléans ;
+    :isAuntOf data:Princess_Claude_dOrléans ;
+    :isBloodrelationOf data:Isabelle_of_Orléans-Braganza ;
+    :isMotherOf data:Princess_Claude_dOrléans ;
+    :isParentOf data:Princess_Claude_dOrléans ;
+    :isSiblingOf data:Isabelle_of_Orléans-Braganza ;
+    :isSisterOf data:Isabelle_of_Orléans-Braganza .
+
+data:Prince_Aimone-_6th_Duke_of_Aosta a :Man,
+        :Person ;
+    rdfs:label "Prince Aimone, 6th Duke of Aosta"^^xsd:string ;
+    data:posIndicesFull "1186:1214"^^xsd:string ;
+    data:posIndicesPart "1277:1283"^^xsd:string,
+        "1462:1467"^^xsd:string,
+        "1867:1873"^^xsd:string,
+        "2410:2416"^^xsd:string,
+        "2450:2454"^^xsd:string,
+        "2531:2537"^^xsd:string,
+        "2801:2807"^^xsd:string ;
+    data:wdtLink wdt:Q2031618 ;
+    :alsoKnownAs "Aimone di Savoia-Aoste"^^xsd:string,
+        "Prince Aimone of Savoy-Aosta"^^xsd:string,
+        "Prince Aimone of Savoy-Aosta, The 6th Duke of Aosta"^^xsd:string,
+        "Prince Aimone of Savoy-Aosta, The Duke of Aosta"^^xsd:string,
+        "Prince Aimone, Duke of Aosta"^^xsd:string,
+        "Prince Aimone, The 6th Duke of Aosta"^^xsd:string,
+        "Prince Aimone, The Duke of Aosta"^^xsd:string ;
+    :hasAncestor data:Isabelle_of_Orléans-Braganza,
+        data:Princess_Claude_dOrléans ;
+    :hasBrother data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :hasMother data:Princess_Claude_dOrléans ;
+    :hasParent data:Princess_Claude_dOrléans ;
+    :hasRelation data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Aimone-_6th_Duke_of_Aosta,
+        data:Princess_Claude_dOrléans ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isChildOf data:Princess_Claude_dOrléans ;
+    :isSiblingOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isSonOf data:Princess_Claude_dOrléans .
+
+data:Princess_Claude_dOrléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Claude d’Orléans"^^xsd:string ;
+    data:wdtLink wdt:Q1626864 ;
+    :alsoKnownAs "Princess Claude Marie Agnès Catherine d'Orléans"^^xsd:string,
+        "Princess Claude, Duchess of Aosta"^^xsd:string ;
+    :hasAncestor data:Isabelle_of_Orléans-Braganza ;
+    :hasChild data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :hasMother data:Isabelle_of_Orléans-Braganza ;
+    :hasParent data:Isabelle_of_Orléans-Braganza ;
+    :hasRelation data:Isabelle_of_Orléans-Braganza,
+        data:Prince_Aimone-_6th_Duke_of_Aosta,
+        data:Princess_Claude_dOrléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Claude_dOrléans ;
+    :hasSon data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isAncestorOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isAuntOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isBloodrelationOf data:Princess_Claude_dOrléans ;
+    :isChildOf data:Isabelle_of_Orléans-Braganza ;
+    :isDaughterOf data:Isabelle_of_Orléans-Braganza ;
+    :isMotherOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isParentOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isSiblingOf data:Princess_Claude_dOrléans ;
+    :isSisterOf data:Princess_Claude_dOrléans .
+

@@ -1,0 +1,75 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta a :Person,
+        :Woman ;
+    :hasRelation data:Ferdinand_dOrleans,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :hasSister data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isBloodrelationOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isSiblingOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta ;
+    :isSisterOf data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta .
+
+data:Marie_Isabelle_dOrleans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ferdinand_dOrleans ;
+    :hasRelation data:Ferdinand_dOrleans,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :hasSister data:Marie_Isabelle_dOrleans ;
+    :hasSon data:Ferdinand_dOrleans ;
+    :isAncestorOf data:Ferdinand_dOrleans ;
+    :isAuntOf data:Ferdinand_dOrleans ;
+    :isBloodrelationOf data:Marie_Isabelle_dOrleans ;
+    :isMotherOf data:Ferdinand_dOrleans ;
+    :isParentOf data:Ferdinand_dOrleans ;
+    :isSiblingOf data:Marie_Isabelle_dOrleans ;
+    :isSisterOf data:Marie_Isabelle_dOrleans .
+
+data:Philippe_dOrleans_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philippe_dOrleans_Count_of_Paris ;
+    :hasChild data:Ferdinand_dOrleans ;
+    :hasRelation data:Ferdinand_dOrleans,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :hasSon data:Ferdinand_dOrleans ;
+    :isAncestorOf data:Ferdinand_dOrleans ;
+    :isBloodrelationOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isBrotherOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isFatherOf data:Ferdinand_dOrleans ;
+    :isParentOf data:Ferdinand_dOrleans ;
+    :isSiblingOf data:Philippe_dOrleans_Count_of_Paris ;
+    :isUncleOf data:Ferdinand_dOrleans .
+
+data:Ferdinand_dOrleans a :Man,
+        :Person ;
+    :hasAncestor data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :hasBirthYear 1884 ;
+    :hasBrother data:Ferdinand_dOrleans ;
+    :hasDeathYear 1924 ;
+    :hasFather data:Philippe_dOrleans_Count_of_Paris ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Marie_Isabelle_dOrleans ;
+    :hasParent data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :hasRelation data:Ferdinand_dOrleans,
+        data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta,
+        data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :isBloodrelationOf data:Ferdinand_dOrleans ;
+    :isBrotherOf data:Ferdinand_dOrleans ;
+    :isChildOf data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris ;
+    :isSiblingOf data:Ferdinand_dOrleans ;
+    :isSonOf data:Marie_Isabelle_dOrleans,
+        data:Philippe_dOrleans_Count_of_Paris .
+

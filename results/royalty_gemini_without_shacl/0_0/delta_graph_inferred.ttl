@@ -1,0 +1,110 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II ;
+    :hasRelation data:Armgard_von_Veltheim,
+        data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_Prince_of_Prussia,
+        data:Wilhelm_II ;
+    :isAncestorOf data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isSiblingOf data:Wilhelm_II .
+
+data:Armgard_von_Veltheim a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :hasRelation data:Armgard_von_Veltheim,
+        data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_Prince_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Armgard_von_Veltheim ;
+    :hasSon data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :isAncestorOf data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :isAuntOf data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :isBloodrelationOf data:Armgard_von_Veltheim ;
+    :isMotherOf data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :isParentOf data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :isSiblingOf data:Armgard_von_Veltheim ;
+    :isSisterOf data:Armgard_von_Veltheim .
+
+data:Oskar_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Oskar_of_Prussia ;
+    :hasChild data:Wilhelm-Karl_Prince_of_Prussia ;
+    :hasRelation data:Armgard_von_Veltheim,
+        data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_Prince_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSon data:Wilhelm-Karl_Prince_of_Prussia ;
+    :isAncestorOf data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen,
+        data:Wilhelm-Karl_Prince_of_Prussia ;
+    :isBloodrelationOf data:Oskar_of_Prussia ;
+    :isBrotherOf data:Oskar_of_Prussia ;
+    :isFatherOf data:Wilhelm-Karl_Prince_of_Prussia ;
+    :isParentOf data:Wilhelm-Karl_Prince_of_Prussia ;
+    :isSiblingOf data:Oskar_of_Prussia ;
+    :isUncleOf data:Wilhelm-Karl_Prince_of_Prussia .
+
+data:Wilhelm-Karl_Prince_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Oskar_of_Prussia ;
+    :hasBrother data:Wilhelm-Karl_Prince_of_Prussia ;
+    :hasChild data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :hasFather data:Oskar_of_Prussia ;
+    :hasParent data:Oskar_of_Prussia ;
+    :hasRelation data:Armgard_von_Veltheim,
+        data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_Prince_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSon data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :isAncestorOf data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :isBloodrelationOf data:Wilhelm-Karl_Prince_of_Prussia ;
+    :isBrotherOf data:Wilhelm-Karl_Prince_of_Prussia ;
+    :isChildOf data:Oskar_of_Prussia ;
+    :isFatherOf data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :isParentOf data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :isSiblingOf data:Wilhelm-Karl_Prince_of_Prussia ;
+    :isSonOf data:Oskar_of_Prussia ;
+    :isUncleOf data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen .
+
+data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen a :Man,
+        :Person ;
+    :hasAncestor data:Armgard_von_Veltheim,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_Prince_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBirthYear 1959 ;
+    :hasBrother data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :hasFather data:Wilhelm-Karl_Prince_of_Prussia ;
+    :hasMother data:Armgard_von_Veltheim ;
+    :hasParent data:Armgard_von_Veltheim,
+        data:Wilhelm-Karl_Prince_of_Prussia ;
+    :hasRelation data:Armgard_von_Veltheim,
+        data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen,
+        data:Oskar_of_Prussia,
+        data:Wilhelm-Karl_Prince_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :isBrotherOf data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :isChildOf data:Armgard_von_Veltheim,
+        data:Wilhelm-Karl_Prince_of_Prussia ;
+    :isSiblingOf data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen ;
+    :isSonOf data:Armgard_von_Veltheim,
+        data:Wilhelm-Karl_Prince_of_Prussia .
+

@@ -2,39 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charlotte_of_Wales a :Person,
-        :Woman ;
-    :formerlyKnownAs data:Charlotte_Cambridge ;
-    :hasBirthYear 2015 ;
-    :hasBrother data:George,
-        data:Louis ;
-    :hasFather data:William_Prince_of_Wales ;
-    :hasMother data:Catherine_Princess_of_Wales ;
-    :hasParent data:Charles_III,
-        data:Diana_Princess_of_Wales ;
-    :knownAs data:Charlotte_Elizabeth_Diana .
-
-data:Elizabeth_II a :Person,
-        :Woman .
-
-data:Catherine_Princess_of_Wales a :Person,
-        :Woman .
-
 data:Charles_III a :Man,
         :Person .
 
-data:Charlotte_Cambridge a :DomainEntity .
-
-data:Charlotte_Elizabeth_Diana a :DomainEntity .
+data:Charlotte_Elizabeth_Diana a :Person,
+        :Woman ;
+    :hasBirthYear 2015 ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Princess_of_Wales ;
+    :isSiblingOf data:George,
+        data:Louis ;
+    :knownAs "Charlotte Cambridge"^^xsd:string .
 
 data:Diana_Princess_of_Wales a :Person,
         :Woman .
 
 data:George a :Man,
-        :Person .
+        :Person ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Princess_of_Wales .
 
 data:Louis a :Man,
-        :Person .
+        :Person ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Princess_of_Wales .
+
+data:Catherine_Princess_of_Wales a :Person,
+        :Woman .
 
 data:William_Prince_of_Wales a :Man,
         :Person .

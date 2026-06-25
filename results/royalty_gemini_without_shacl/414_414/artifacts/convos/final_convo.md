@@ -69,27 +69,44 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Hubertus Karl Wilhelm of Prussia (30 September 1909 – 8 April 1950) was the third son of Crown Prince Wilhelm of Germany and Duchess Cecilie of Mecklenburg-Schwerin, and member of the princely House of Hohenzollern.
-One year later he was dismissed from the army by Hitler's Prinzenerlaß, following the death of his elder brother Prince Wilhelm of Prussia, who was wounded in France in May 1940 and later died in a field hospital in Belgium.
-They divorced a little over a year later in early 1943 (the same year she would later give birth to Hubertus' first cousin Ernest Augustus of Hanover's illegitimate son), and on 5 June of that year, he married again to Princess Magdalena Reuss of Köstritz (20 August 1920 – 10 October 2009).
-They had two daughters:
+Infante Alfonso of Spain (Don Alfonso Cristino Teresa Ángelo Francisco de Asís y Todos los Santos de Borbón y Borbón Dos-Sicilias; 3 October 1941 – 29 March 1956) was the younger brother of King Juan Carlos I of Spain.
+He was also the youngest son of Infante Juan, Count of Barcelona and Princess María de las Mercedes of Bourbon-Two Sicilies, and the grandson of King Alfonso XIII.
+He died young at 14 from a shot to the forehead by Juan Carlos' gun, but the circumstances of his death remain unclear to this day.
+Early life
+
+Alfonso was born at Hotel NH Firenze Anglo American in Rome, the youngest son of the Infante Juan of Spain, Count of Barcelona, and of his wife, Princess Maria Mercedes of Bourbon-Two Sicilies.
+His godfather was the Infante Alfonso de Orleans y Borbón; his godmother was his father's sister Infanta Maria Cristina of Spain.
+Within his own family, he was called Alfonsito to distinguish him from other family members with the name Alfonso.
+When Alfonso was still just a baby, his family moved to Lausanne in Switzerland where they lived in the Villa Les Rocailles.
+In 1947, Alfonso visited Spain for the first time at the invitation of caudillo Francisco Franco.
+In 1950, he and his brother Juan Carlos were sent to study in Spain.
+Later, Alfonso and Juan Carlos attended the military academy in Zaragoza.
 
 
-Prince Hubertus died of appendicitis on 8 April 1950 at Windhoek, South West Africa.
-Ancestry
+Death and burial
 
-References
-
-
+On the evening of Maundy Thursday, 29 March 1956, Alfonso and Juan Carlos were at their parents' home Villa Giralda in Estoril, Portugal, for the Easter vacation, where Alfonso died in a gun accident.
+The Spanish Embassy in Portugal issued an official communiqué:
 
 
-This article about a member of the German nobility is a stub.
+Alfonso had won a local junior golf tournament earlier on the day, then went to evening Mass and rushed up to the room to see Juan Carlos who had come home for the Easter holidays from military school.
+It is alleged that Juan Carlos began playing with a .22 caliber revolver that had apparently been given to Alfonso by General Francisco Franco.
+Rumors appeared in newspapers that the .22 caliber revolver had actually been held by Juan Carlos at the moment the shot was fired.
+As they were the only two in the room, it is unclear how Alfonso was shot but according to Josefina Carolo, dressmaker to Juan Carlos's mother, Juan Carlos pointed the pistol at Alfonso and pulled the trigger, unaware that the pistol was loaded.
+Bernardo Arnoso, a Portuguese friend of Juan Carlos, also said that Juan Carlos fired the pistol not knowing that it was loaded, and adding that the bullet ricocheted off a wall hitting Alfonso in the face.
+Helena Matheopoulos, a Greek author who spoke with Juan Carlos's sister Pilar, said that Alfonso had been out of the room and when he returned and pushed the door open, the door knocked Juan Carlos in the arm causing him to fire the pistol.
+In his 2025 autobiography Juan Carlos I d’Espagne:
+Réconciliation, Juan Carlos recounted how he and Alfonso had been playing with the gun, believing it to be safe as the magazine had been removed, without realising there was a bullet in the chamber, and that he had shot his brother into the forehead.
+It is alleged that Infante Juan, Count of Barcelona, the children's father, threw the gun into the sea some time after Alfonso's death.
+The funeral liturgy for Alfonso was held on Holy Saturday and was presided over by Monsignor Fernando Cento, Apostolic Nuncio to Portugal.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -105,39 +122,9 @@ This article about a member of the German nobility is a stub.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -152,6 +139,23 @@ This article about a member of the German nobility is a stub.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -169,6 +173,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -236,29 +255,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -267,6 +278,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -279,6 +298,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -287,17 +308,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -325,6 +348,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -340,208 +447,164 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d8d41bb1-dd37-4202-ba83-d9ed69cb01a8)
- Call ID: d8d41bb1-dd37-4202-ba83-d9ed69cb01a8
+  AssignClass (b4f380c1-7222-4142-b9f6-db900676d77c)
+ Call ID: b4f380c1-7222-4142-b9f6-db900676d77c
   Args:
-    source: Prince_Hubertus_of_Prussia
     type: :Man
-  AssignClass (985185b2-0376-4203-ac8a-913848ac62b0)
- Call ID: 985185b2-0376-4203-ac8a-913848ac62b0
+    source: :Alfonso_of_Spain
+  AssignClass (969dc7b3-6993-4719-b38a-4acef505e7c2)
+ Call ID: 969dc7b3-6993-4719-b38a-4acef505e7c2
   Args:
-    source: Crown_Prince_Wilhelm_of_Germany
-    type: :Man
-  AssignClass (b9216c1a-2a37-424c-9650-6ad8087ccbb6)
- Call ID: b9216c1a-2a37-424c-9650-6ad8087ccbb6
+    source: :Alfonso_of_Spain
+    type: :Person
+  AddLiteral (c52b0421-cf39-492e-8fab-46053ff98786)
+ Call ID: c52b0421-cf39-492e-8fab-46053ff98786
   Args:
-    source: Duchess_Cecilie_of_Mecklenburg-Schwerin
-    type: :Woman
-  AssignClass (fd0ea35a-830e-4708-8e44-d7d847fda1cf)
- Call ID: fd0ea35a-830e-4708-8e44-d7d847fda1cf
-  Args:
-    source: Prince_Wilhelm_of_Prussia
-    type: :Man
-  AssignClass (2671ac16-8687-446b-8daf-7665dd4a9e3c)
- Call ID: 2671ac16-8687-446b-8daf-7665dd4a9e3c
-  Args:
-    type: :Woman
-    source: Princess_Magdalena_Reuss_of_Köstritz
-  AddLiteral (6fef37ab-9c91-472d-b5f2-7c15e26e0ae9)
- Call ID: 6fef37ab-9c91-472d-b5f2-7c15e26e0ae9
-  Args:
+    literal_value: 1941
     relation: :hasBirthYear
-    literal_value: 1909
     literal_type: xsd:integer
-    source: Prince_Hubertus_of_Prussia
-  AddLiteral (909da837-1d64-401b-993c-df6da4f72d1a)
- Call ID: 909da837-1d64-401b-993c-df6da4f72d1a
+    source: :Alfonso_of_Spain
+  AddLiteral (c0cb4250-29ad-4624-94e2-f99f6d755c98)
+ Call ID: c0cb4250-29ad-4624-94e2-f99f6d755c98
   Args:
-    source: Prince_Hubertus_of_Prussia
+    source: :Alfonso_of_Spain
     literal_type: xsd:integer
-    literal_value: 1950
     relation: :hasDeathYear
-  AddTriple (0a1074e8-5ce9-4b71-b366-26c4a4bc6c53)
- Call ID: 0a1074e8-5ce9-4b71-b366-26c4a4bc6c53
+    literal_value: 1956
+  AddLiteral (8688911e-c13c-43e1-b3e8-6ee7089f02ab)
+ Call ID: 8688911e-c13c-43e1-b3e8-6ee7089f02ab
   Args:
-    target: Crown_Prince_Wilhelm_of_Germany
+    literal_type: xsd:string
+    source: :Alfonso_of_Spain
+    literal_value: Alfonsito
+    relation: :alsoKnownAs
+  AssignClass (46bebfb6-4451-4ec1-af5f-889ea5d40593)
+ Call ID: 46bebfb6-4451-4ec1-af5f-889ea5d40593
+  Args:
+    type: :Man
+    source: :Juan_Carlos_I
+  AssignClass (aee8f786-1946-4dbc-a33d-4b500a484114)
+ Call ID: aee8f786-1946-4dbc-a33d-4b500a484114
+  Args:
+    source: :Juan_Carlos_I
+    type: :Person
+  AddTriple (9a852f8f-1526-433a-a108-07f80744f225)
+ Call ID: 9a852f8f-1526-433a-a108-07f80744f225
+  Args:
+    relation: :isBrotherOf
+    target: :Juan_Carlos_I
+    source: :Alfonso_of_Spain
+  AssignClass (9d6a6ecb-eb4d-4040-809a-d73aa7c1385d)
+ Call ID: 9d6a6ecb-eb4d-4040-809a-d73aa7c1385d
+  Args:
+    type: :Man
+    source: :Juan_Count_of_Barcelona
+  AssignClass (3db4ba3e-f41f-47f7-b5bc-4b120c0f21bb)
+ Call ID: 3db4ba3e-f41f-47f7-b5bc-4b120c0f21bb
+  Args:
+    source: :Juan_Count_of_Barcelona
+    type: :Person
+  AssignClass (9d8e5500-44c1-49f7-846f-67d24ab2467b)
+ Call ID: 9d8e5500-44c1-49f7-846f-67d24ab2467b
+  Args:
+    source: :Juan_Count_of_Barcelona
+    type: :Ancestor
+  AssignClass (92d92327-6d12-4eef-ab96-7b9539047e9d)
+ Call ID: 92d92327-6d12-4eef-ab96-7b9539047e9d
+  Args:
+    source: :Maria_Mercedes_of_Bourbon-Two_Sicilies
+    type: :Woman
+  AssignClass (085c41f0-cef9-468c-89a6-8272b2cb7d71)
+ Call ID: 085c41f0-cef9-468c-89a6-8272b2cb7d71
+  Args:
+    source: :Maria_Mercedes_of_Bourbon-Two_Sicilies
+    type: :Person
+  AssignClass (2de15cba-6e16-46f3-8d70-d630256fb64a)
+ Call ID: 2de15cba-6e16-46f3-8d70-d630256fb64a
+  Args:
+    type: :Ancestor
+    source: :Maria_Mercedes_of_Bourbon-Two_Sicilies
+  AddTriple (05e46da0-fb5c-4f00-8249-5f1e887bdf2a)
+ Call ID: 05e46da0-fb5c-4f00-8249-5f1e887bdf2a
+  Args:
+    target: :Juan_Count_of_Barcelona
     relation: :hasFather
-    source: Prince_Hubertus_of_Prussia
-  AddTriple (e3fe15a1-ac97-46be-ab6d-8784490fbe47)
- Call ID: e3fe15a1-ac97-46be-ab6d-8784490fbe47
+    source: :Alfonso_of_Spain
+  AddTriple (4e7785ef-cecb-4d5a-92ac-92db2456e301)
+ Call ID: 4e7785ef-cecb-4d5a-92ac-92db2456e301
   Args:
-    target: Duchess_Cecilie_of_Mecklenburg-Schwerin
-    source: Prince_Hubertus_of_Prussia
+    target: :Maria_Mercedes_of_Bourbon-Two_Sicilies
     relation: :hasMother
-  AddTriple (14624f32-b9cd-454f-83f1-bec6a332a5b5)
- Call ID: 14624f32-b9cd-454f-83f1-bec6a332a5b5
+    source: :Alfonso_of_Spain
+  AssignClass (316f6e11-93a8-4d5c-9355-54d6c4fcf059)
+ Call ID: 316f6e11-93a8-4d5c-9355-54d6c4fcf059
   Args:
-    relation: :hasBrother
-    source: Prince_Hubertus_of_Prussia
-    target: Prince_Wilhelm_of_Prussia
-  AddTriple (319b6d68-3ce9-4a9f-8ca0-453f8be23fdb)
- Call ID: 319b6d68-3ce9-4a9f-8ca0-453f8be23fdb
+    source: :Alfonso_XIII
+    type: :Man
+  AssignClass (5c8c9c27-4351-4e07-88d4-ef355428be1c)
+ Call ID: 5c8c9c27-4351-4e07-88d4-ef355428be1c
   Args:
-    source: Prince_Hubertus_of_Prussia
-    relation: :hasMarriageYear
-    target: 1943
-  AddTriple (4100f165-ac6e-4e16-868c-1c706f7927b3)
- Call ID: 4100f165-ac6e-4e16-868c-1c706f7927b3
+    source: :Alfonso_XIII
+    type: :Person
+  AssignClass (59b6ca2e-962c-4230-a32a-d7abe2a505e6)
+ Call ID: 59b6ca2e-962c-4230-a32a-d7abe2a505e6
   Args:
-    relation: :hasRelation
-    source: Prince_Hubertus_of_Prussia
-    target: Princess_Magdalena_Reuss_of_Köstritz
-  AddLiteral (562f37c6-4438-48a6-bb44-eefa607039b6)
- Call ID: 562f37c6-4438-48a6-bb44-eefa607039b6
+    source: :Alfonso_XIII
+    type: :Ancestor
+  AddTriple (f4dc5f4f-5d91-4445-8ba1-79491ca48bc0)
+ Call ID: f4dc5f4f-5d91-4445-8ba1-79491ca48bc0
   Args:
-    literal_type: xsd:integer
-    source: Princess_Magdalena_Reuss_of_Köstritz
-    relation: :hasBirthYear
-    literal_value: 1920
-  AddLiteral (85afbbbd-ea5c-455d-b527-e103935ad66f)
- Call ID: 85afbbbd-ea5c-455d-b527-e103935ad66f
+    target: :Alfonso_XIII
+    relation: :hasAncestor
+    source: :Alfonso_of_Spain
+  AssignClass (f39ae5a7-7d41-4474-a795-fc5ee5ac3da6)
+ Call ID: f39ae5a7-7d41-4474-a795-fc5ee5ac3da6
   Args:
-    literal_value: 2009
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: Princess_Magdalena_Reuss_of_Köstritz
-  Finish (849a48fa-6a45-440e-a083-42c81241886e)
- Call ID: 849a48fa-6a45-440e-a083-42c81241886e
+    source: :Alfonso_de_Orleans_y_Borbon
+    type: :Man
+  AssignClass (36d94a23-9b33-4d4e-8edd-b8254a1ddaef)
+ Call ID: 36d94a23-9b33-4d4e-8edd-b8254a1ddaef
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Prince_Hubertus_of_Prussia a :Man ;
-      :hasBirthYear 1909 ;
-      :hasBrother data:Prince_Wilhelm_of_Prussia ;
-      :hasDeathYear 1950 ;
-      :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
-      :hasMarriageYear data:1943 ;
-      :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
-      :hasRelation data:Princess_Magdalena_Reuss_of_K%C3%B6stritz .
-
-  data:Crown_Prince_Wilhelm_of_Germany a :Man .
-
-  data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Woman .
-
-  data:Prince_Wilhelm_of_Prussia a :Man .
-
-  data:Princess_Magdalena_Reuss_of_K%C3%B6stritz a :Woman ;
-      :hasBirthYear 1920 ;
-      :hasDeathYear 2009 .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1943']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (4fa4eed2-1a38-438a-ac61-1ac16d176b65)
- Call ID: 4fa4eed2-1a38-438a-ac61-1ac16d176b65
+    type: :Person
+    source: :Alfonso_de_Orleans_y_Borbon
+  AssignClass (5173f93e-a1a4-4967-a705-41a8df137bf1)
+ Call ID: 5173f93e-a1a4-4967-a705-41a8df137bf1
   Args:
-    target: 1943
-    relation: :hasMarriageYear
-    source: Prince_Hubertus_of_Prussia
-  AddLiteral (16bdd988-eedf-40ad-a15a-25eaa809b0fd)
- Call ID: 16bdd988-eedf-40ad-a15a-25eaa809b0fd
+    source: :Maria_Cristina_of_Spain
+    type: :Woman
+  AssignClass (a523faaf-0523-4a1e-bcc5-3cee4575e6b3)
+ Call ID: a523faaf-0523-4a1e-bcc5-3cee4575e6b3
   Args:
-    literal_type: xsd:integer
-    literal_value: 1943
-    source: Prince_Hubertus_of_Prussia
-    relation: :hasMarriageYear
-  Finish (26db9692-2feb-49d0-983b-01327ecf9971)
- Call ID: 26db9692-2feb-49d0-983b-01327ecf9971
+    type: :Person
+    source: :Maria_Cristina_of_Spain
+  AddTriple (90a3e184-e84c-4e25-b553-400f95777071)
+ Call ID: 90a3e184-e84c-4e25-b553-400f95777071
+  Args:
+    target: :Juan_Count_of_Barcelona
+    relation: :hasFather
+    source: :Juan_Carlos_I
+  AddTriple (b1b11b6d-c7e8-4e45-96eb-e39116b618a8)
+ Call ID: b1b11b6d-c7e8-4e45-96eb-e39116b618a8
+  Args:
+    source: :Juan_Carlos_I
+    target: :Maria_Mercedes_of_Bourbon-Two_Sicilies
+    relation: :hasMother
+  AssignClass (49d0bfbe-602e-48a3-b042-2df2ef9f092c)
+ Call ID: 49d0bfbe-602e-48a3-b042-2df2ef9f092c
+  Args:
+    type: :Woman
+    source: :Pilar
+  AssignClass (dc883d7b-a271-4361-b9e6-058d67a98add)
+ Call ID: dc883d7b-a271-4361-b9e6-058d67a98add
+  Args:
+    source: :Pilar
+    type: :Person
+  AddTriple (3be55bc3-57e2-49e3-80e1-800e64379508)
+ Call ID: 3be55bc3-57e2-49e3-80e1-800e64379508
+  Args:
+    relation: :isSisterOf
+    target: :Juan_Carlos_I
+    source: :Pilar
+  Finish (28f6bb42-ca8b-4547-8311-12f6c66eb537)
+ Call ID: 28f6bb42-ca8b-4547-8311-12f6c66eb537
   Args:

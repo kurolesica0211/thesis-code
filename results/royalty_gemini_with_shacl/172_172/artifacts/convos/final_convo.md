@@ -85,53 +85,49 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Irene of Greece and Denmark (Greek: Ειρήνη, romanized: Iríni; 11 May 1942 – 15 January 2026) was the youngest child and second daughter of King Paul of Greece and his wife, Queen Frederica.
-She was the younger sister of Queen Sofía of Spain and King Constantine II of Greece.
-From 1981 until her death, Irene lived permanently in Spain, becoming a part of the wider Spanish royal family as Queen Sofía's sister, to whose family she remained very close.
-Early life
+Lady Margarita Elizabeth Rose Alleyne Armstrong-Jones (born 14 May 2002) is a member of the British royal family.
+She is the granddaughter of Princess Margaret and the grandniece of Queen Elizabeth II.
+Lady Margarita is a jewellery designer and the creator of the bespoke jewellery label Matita.
+Early life and family
 
-Irene was born on 11 May 1942 in Cape Town, Union of South Africa, where her parents were living in exile because of the German invasion of Greece during the Second World War.
-She was the younger daughter of Paul, Crown Prince of Greece (later King Paul), and his wife Frederica of Hanover.
-She was christened three weeks after her birth at her parents' Claremont rented home by the Metropolitan of the Holy Archdiocese of Johannesburg and Pretoria and was named after her paternal aunt Princess Irene, Duchess of Aosta.
-She had ten godparents, including General Jan Smuts, Lady Katherine Brandram (her paternal aunt), King George II of Greece (her paternal uncle), Queen Mary of the United Kingdom, and the Duchess of Kent (her paternal first cousin once removed).
-In 1944 the family moved to Egypt and returned to Greece in 1946 after the approval of the continuity of the Greek monarchy in the referendum with her uncle George II.
-Irene was educated at Arsakion school at Psykhikó Palace in Greece and at Schule Schloss Salem in Baden-Württemberg, Germany.
-Irene took up the piano in 1962.
-As a young woman, Irene was courted by Prince Michel, Count of Évreux, younger son of the Orléanist pretender Henri, Count of Paris, until he met and later married a French noblewoman without his father's consent in 1967.
-She was also rumoured to be a potential bride of Crown Prince Harald of Norway (later King Harald V) who later married Sonja Haraldsen in 1968.
-Irene was one of the bridesmaids at the wedding of Spanish Prince Juan Carlos and Princess Sofía in 1962.
-Her brother Constantine became King in 1964 after the death of their father.
-Between her father's death and the birth of her niece Princess Alexia, Irene was heiress presumptive to the Greek throne.
-Exile and later life
+Lady Margarita was born The Honourable Margarita Armstrong-Jones on 14 May 2002 at Portland Hospital in London.
+She is the daughter of David Armstrong-Jones, 2nd Earl of Snowdon, who was styled as Viscount Linley at the time of her birth, and The Honourable Serena Stanhope.
+On her father's side, she is the granddaughter of Princess Margaret, Countess of Snowdon and Antony Armstrong-Jones, 1st Earl of Snowdon and a great-granddaughter of King George VI.
+On her mother's side, she is the granddaughter of Charles Stanhope, 12th Earl of Harrington and a descendant of Charles II.
+She was baptised Margarita Elizabeth Rose Alleyne, and was named after her grandmother and great-grandmother, Queen Elizabeth The Queen Mother.
+Her father succeeded his father as the Earl of Snowdon in 2017, which entitled her to use the title Lady.
+Lady Margarita's parents separated in 2020.
+Education
 
-After her brother was dethroned in the Colonels' coup of 21 April 1967, Irene and the Royal Family moved to Italy after Constantine's unsuccessful countercoup against the junta.
-With her mother Irene resided in Rome.
-As Mahadevan grew frailer, he dictated his memoirs to Irene.
-After her mother's death in 1981, she lived in Spain in an apartment at the Palace of Zarzuela in Madrid, the residence of her sister and brother-in-law, Queen Sofía and King Juan Carlos.
-In the 1980s, during the BSE outbreak, Irene arranged for thousands of surplus cows from Europe and the United States to be shipped to India where they evaded slaughter.
-During the 1981 Spanish coup attempt, Irene was at the Palace of Zarzuela with King Juan Carlos and her sister Queen Sofia; years later, she recounted the fear they both experienced when remembering the coup in Greece years earlier.
-Irene accompanied Sofia in her official duties albeit discreetly.
-In 2002, the European Court of Human Rights awarded her £500,000 to compensate for the loss of her family's Greek property, and she donated the entire sum to charity.
-In 2007, her biography Irene of Greece, the Rebel Princess was published.
-On 16 March 2018, Irene obtained Spanish nationality and renounced her Greek nationality.
+Lady Margarita was first educated at Garden House School, a private school in the Royal Borough of Kensington and Chelsea before attending St Mary's School Ascot, a Catholic all-girls boarding school.
+Lady Margarita took life drawing, pottery, and watercolour painting courses at a small art school in Oxford.
+In September 2022, Lady Margarita enrolled as a student at La Haute École de Joaillerie in Paris to study jewellery design, stonesetting, and wax carving.
+Public role and royal appearances
+
+In 2008, she attended the wedding of Peter Phillips, son of the Princess Royal, to Autumn Kelly at St George's Chapel, Windsor and appeared with the royal family for photographs the following day.
+That same year, she accompanied her aunt, Lady Sarah Chatto, to the 60th birthday brunch for Charles, Prince of Wales at the Goring Hotel.
+In 2011, Lady Margarita served as a bridesmaid at the wedding of Prince William and Catherine Middleton alongside Lady Louise Windsor, Eliza Lopes, and Grace van Cutsem.
+Her elder brother, Viscount Linley, served as a page of honour to Elizabeth II.
+On 30 March 2012, she attended a Service of Thanksgiving for the Queen Mother and Princess Margaret at St George's Chapel.
+In 2018, Lady Margarita attended the wedding of Prince Harry and Meghan Markle and the wedding of Princess Eugenie and Jack Brooksbank.
+Along with other members of the extended royal family, she attended the funeral of Prince Philip, Duke of Edinburgh in 2021 and the state funeral of Elizabeth II in 2022.
+Lady Margarita was present at the Coronation of Charles III and Camilla on 6 May 2023.
+Lady Margarita also attends the annual Trooping of the Colour, having accompanied Elizabeth II in the past.
+She attends Christmas services with the royal family at St Mary Magdalene Church, Sandringham, and attended the annual Queen's Christmas Lunch at Buckingham Palace.
+Career
+
+Lady Margarita made her modelling debut in 2011 for Kids Company.
 Personal life
 
-Irene never married and had a passion for piano and archaeology.
-With Sofía, they excavated the sites of the ancient village of Decelea and both, together with archaeologist Theophanó A. Arvanitopoulou, wrote two essays.
-In 2000, Irene donated a selection of rare books and archaeological artefacts from the family collection to the Benaki Museum.
-After the death of her father Paul, Irene became vegetarian.
-In November 2023 it was made public that Irene was suffering from cognitive impairment.
-Irene's last public appearance was at the wedding of her nephew and godson Prince Nikolaos in February 2025 in Athens.
-In the summer of that year, her illness worsened, so she withdrew from public activities in which she accompanied her sister Queen Sofia, who adapted her schedule to Irene's condition.
-On 13 January 2026, the Spanish Royal Household announced her condition had worsened and Queen Sofía cancelled all her public engagements to be at her side.
-She died at the Palace of Zarzuela in Madrid, Spain, on 15 January, at the age of 83.
-After private services at the Palace of Zarzuela, Irene's body—escorted by the Royal Guard—was laid in repose at the Cathedral of St Andrew and St Demetrius in Madrid on 17 January.
+In September 2022, Lady Margarita moved to Paris, renting a flat near the Bastille where she lives with her two best friends.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -147,39 +143,9 @@ After private services at the Palace of Zarzuela, Irene's body—escorted by the
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -194,6 +160,23 @@ After private services at the Palace of Zarzuela, Irene's body—escorted by the
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -211,6 +194,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -278,29 +276,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -309,6 +299,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -321,6 +319,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -329,17 +329,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -367,6 +369,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -382,97 +468,201 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (442ae107-b627-4112-a718-d0e215da0015)
- Call ID: 442ae107-b627-4112-a718-d0e215da0015
-  Args:
-    type: :Person
-    source: :Irene_of_Greece_and_Denmark
-  AssignClass (81521bab-d9db-4be0-a5da-50e8bbdf477d)
- Call ID: 81521bab-d9db-4be0-a5da-50e8bbdf477d
+  AssignClass (440c0595-f740-4fef-8e8e-e9ee5c9cdb68)
+ Call ID: 440c0595-f740-4fef-8e8e-e9ee5c9cdb68
   Args:
     type: :Woman
-    source: :Irene_of_Greece_and_Denmark
-  AssignClass (601cb360-ecd0-45c1-8c16-c802c0a88f3f)
- Call ID: 601cb360-ecd0-45c1-8c16-c802c0a88f3f
+    source: :MargaritaArmstrongJones
+  AssignClass (8322cb32-c4bf-4dd1-b9d1-35a5c56dbeca)
+ Call ID: 8322cb32-c4bf-4dd1-b9d1-35a5c56dbeca
   Args:
+    source: :MargaritaArmstrongJones
     type: :Person
-    source: :Paul_of_Greece
-  AssignClass (2bbb7080-af01-48f9-af2a-fd4b8eb27856)
- Call ID: 2bbb7080-af01-48f9-af2a-fd4b8eb27856
+  AddLiteral (730e4061-3d05-4476-b4b1-7b67698d1a30)
+ Call ID: 730e4061-3d05-4476-b4b1-7b67698d1a30
   Args:
-    type: :Man
-    source: :Paul_of_Greece
-  AssignClass (5e6a335c-10b0-4243-8176-63976fe46448)
- Call ID: 5e6a335c-10b0-4243-8176-63976fe46448
+    literal_value: Margarita Elizabeth Rose Alleyne Armstrong-Jones
+    literal_type: xsd:string
+    source: :MargaritaArmstrongJones
+    relation: :knownAs
+  AddLiteral (4c11e6cd-b6f2-4138-bec6-f584a7de3cc2)
+ Call ID: 4c11e6cd-b6f2-4138-bec6-f584a7de3cc2
   Args:
-    type: :Person
-    source: :Frederica_of_Hanover
-  AssignClass (8f839b6b-0743-4e28-9c35-d1f76971a55e)
- Call ID: 8f839b6b-0743-4e28-9c35-d1f76971a55e
-  Args:
-    source: :Frederica_of_Hanover
-    type: :Woman
-  AssignClass (e23e4ae3-3728-471c-8649-38efa60117fc)
- Call ID: e23e4ae3-3728-471c-8649-38efa60117fc
-  Args:
-    type: :Person
-    source: :Sofia_of_Spain
-  AssignClass (3bd5ec0b-5310-4cb3-98fe-a6e5db32220d)
- Call ID: 3bd5ec0b-5310-4cb3-98fe-a6e5db32220d
-  Args:
-    source: :Sofia_of_Spain
-    type: :Woman
-  AssignClass (4bccca89-6dc5-4cd9-b5be-45deb03e17f5)
- Call ID: 4bccca89-6dc5-4cd9-b5be-45deb03e17f5
-  Args:
-    type: :Person
-    source: :Constantine_II_of_Greece
-  AssignClass (de119f3d-62f3-4e1b-864e-d25f6b36b5fa)
- Call ID: de119f3d-62f3-4e1b-864e-d25f6b36b5fa
-  Args:
-    type: :Man
-    source: :Constantine_II_of_Greece
-  AddLiteral (e01a6f39-9585-4013-9583-997990f37227)
- Call ID: e01a6f39-9585-4013-9583-997990f37227
-  Args:
-    source: :Irene_of_Greece_and_Denmark
-    literal_type: xsd:int
+    literal_type: xsd:positiveInteger
+    literal_value: 2002
     relation: :hasBirthYear
-    literal_value: 1942
-  AddLiteral (c63402b5-0f5e-487a-bc78-4291082d03b9)
- Call ID: c63402b5-0f5e-487a-bc78-4291082d03b9
+    source: :MargaritaArmstrongJones
+  AssignClass (9ee31bcf-ec76-42d8-af6f-47e9ee3f189c)
+ Call ID: 9ee31bcf-ec76-42d8-af6f-47e9ee3f189c
   Args:
-    relation: :hasDeathYear
-    literal_value: 2026
-    source: :Irene_of_Greece_and_Denmark
-    literal_type: xsd:int
-  AddTriple (d350021d-7507-40ce-8c84-eae6d31bd790)
- Call ID: d350021d-7507-40ce-8c84-eae6d31bd790
+    type: :Man
+    source: :DavidArmstrongJones
+  AssignClass (50d527f7-fa70-4b52-bf26-226ceff53f72)
+ Call ID: 50d527f7-fa70-4b52-bf26-226ceff53f72
   Args:
-    source: :Irene_of_Greece_and_Denmark
+    source: :DavidArmstrongJones
+    type: :Person
+  AssignClass (a7f39974-770f-4bd6-9a96-0fe72bad8228)
+ Call ID: a7f39974-770f-4bd6-9a96-0fe72bad8228
+  Args:
+    type: :Woman
+    source: :SerenaStanhope
+  AssignClass (f52ea2a2-0f1b-4e91-ba39-0fe33700621b)
+ Call ID: f52ea2a2-0f1b-4e91-ba39-0fe33700621b
+  Args:
+    type: :Person
+    source: :SerenaStanhope
+  AddTriple (f301fdb8-d510-413c-b077-e241c5b8fc59)
+ Call ID: f301fdb8-d510-413c-b077-e241c5b8fc59
+  Args:
+    source: :MargaritaArmstrongJones
+    target: :DavidArmstrongJones
     relation: :hasFather
-    target: :Paul_of_Greece
-  AddTriple (11191fa1-dca9-455d-8377-14f95b5361a7)
- Call ID: 11191fa1-dca9-455d-8377-14f95b5361a7
+  AddTriple (8cc547ea-bb19-449f-bc4b-e9f36a93e47d)
+ Call ID: 8cc547ea-bb19-449f-bc4b-e9f36a93e47d
   Args:
-    source: :Irene_of_Greece_and_Denmark
+    source: :MargaritaArmstrongJones
+    target: :SerenaStanhope
     relation: :hasMother
-    target: :Frederica_of_Hanover
-  AddTriple (f90a78f4-0359-4bae-97a0-7e3953713ca3)
- Call ID: f90a78f4-0359-4bae-97a0-7e3953713ca3
+  AssignClass (0f1ebebe-31ee-4d67-a4e8-6d3726ca581d)
+ Call ID: 0f1ebebe-31ee-4d67-a4e8-6d3726ca581d
   Args:
-    source: :Irene_of_Greece_and_Denmark
-    relation: :hasSister
-    target: :Sofia_of_Spain
-  AddTriple (2c309173-5fb7-4e52-86e0-e0f9490d4df7)
- Call ID: 2c309173-5fb7-4e52-86e0-e0f9490d4df7
+    source: :PrincessMargaret
+    type: :Woman
+  AssignClass (c18aff55-6ab3-4413-9297-48385356c938)
+ Call ID: c18aff55-6ab3-4413-9297-48385356c938
   Args:
-    target: :Constantine_II_of_Greece
-    relation: :hasBrother
-    source: :Irene_of_Greece_and_Denmark
-  Finish (be224e93-2f75-4343-bb61-56c0943c248c)
- Call ID: be224e93-2f75-4343-bb61-56c0943c248c
+    source: :PrincessMargaret
+    type: :Person
+  AssignClass (818627a2-7118-4a5f-bff1-44714ffc436f)
+ Call ID: 818627a2-7118-4a5f-bff1-44714ffc436f
   Args:
+    type: :Man
+    source: :AntonyArmstrongJones
+  AssignClass (498e65f2-6b10-4a51-9d51-02d7b482b858)
+ Call ID: 498e65f2-6b10-4a51-9d51-02d7b482b858
+  Args:
+    type: :Person
+    source: :AntonyArmstrongJones
+  AddTriple (a300cfca-6dbc-4867-b7d5-b2b52e8a71d8)
+ Call ID: a300cfca-6dbc-4867-b7d5-b2b52e8a71d8
+  Args:
+    source: :DavidArmstrongJones
+    target: :PrincessMargaret
+    relation: :hasMother
+  AddTriple (50850aea-abe9-4ad7-9814-827f59fef275)
+ Call ID: 50850aea-abe9-4ad7-9814-827f59fef275
+  Args:
+    relation: :hasFather
+    target: :AntonyArmstrongJones
+    source: :DavidArmstrongJones
+  AssignClass (f95935bc-2712-4a5d-832e-e6d099dece3d)
+ Call ID: f95935bc-2712-4a5d-832e-e6d099dece3d
+  Args:
+    type: :Man
+    source: :CharlesStanhope
+  AssignClass (b15a57be-5c94-4696-b9a7-8c8171714a3d)
+ Call ID: b15a57be-5c94-4696-b9a7-8c8171714a3d
+  Args:
+    source: :CharlesStanhope
+    type: :Person
+  AddTriple (cfccfb55-5515-4eb6-974f-f63626a56a94)
+ Call ID: cfccfb55-5515-4eb6-974f-f63626a56a94
+  Args:
+    relation: :hasFather
+    target: :CharlesStanhope
+    source: :SerenaStanhope
+  AssignClass (03e93f48-d454-4f5e-8cdd-87d933637206)
+ Call ID: 03e93f48-d454-4f5e-8cdd-87d933637206
+  Args:
+    type: :Man
+    source: :ViscountLinley
+  AssignClass (e9d4f9c4-4905-41ed-8a45-bcc7d4d038ce)
+ Call ID: e9d4f9c4-4905-41ed-8a45-bcc7d4d038ce
+  Args:
+    type: :Person
+    source: :ViscountLinley
+  AddTriple (86e0caab-57d3-4531-bda6-1b8e8431d1b8)
+ Call ID: 86e0caab-57d3-4531-bda6-1b8e8431d1b8
+  Args:
+    relation: :isBrotherOf
+    target: :MargaritaArmstrongJones
+    source: :ViscountLinley
+  AddTriple (c94ca29e-54e6-4a95-9e16-a2684d3c490f)
+ Call ID: c94ca29e-54e6-4a95-9e16-a2684d3c490f
+  Args:
+    source: :ViscountLinley
+    target: :DavidArmstrongJones
+    relation: :hasFather
+  AddTriple (85ffc6d1-4df3-4f6f-b4cb-54c1eaaf963f)
+ Call ID: 85ffc6d1-4df3-4f6f-b4cb-54c1eaaf963f
+  Args:
+    source: :ViscountLinley
+    target: :SerenaStanhope
+    relation: :hasMother
+  AssignClass (b468f13d-967d-4e10-b975-acb6d1eb09d7)
+ Call ID: b468f13d-967d-4e10-b975-acb6d1eb09d7
+  Args:
+    type: :Woman
+    source: :LadySarahChatto
+  AssignClass (957fdce0-9ef5-48b2-b502-60e9ee375254)
+ Call ID: 957fdce0-9ef5-48b2-b502-60e9ee375254
+  Args:
+    source: :LadySarahChatto
+    type: :Person
+  AddTriple (a1a16457-a48c-4580-997b-a6ea5df6b4f3)
+ Call ID: a1a16457-a48c-4580-997b-a6ea5df6b4f3
+  Args:
+    source: :MargaritaArmstrongJones
+    relation: :hasRelation
+    target: :LadySarahChatto
+  Finish (519b420c-aa65-40ca-8e1c-fb4db1aaaaed)
+ Call ID: 519b420c-aa65-40ca-8e1c-fb4db1aaaaed
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -541,26 +731,40 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Irene_of_Greece_and_Denmark a :Person,
+  data:ViscountLinley a :Man,
+          :Person ;
+      :hasFather data:DavidArmstrongJones ;
+      :hasMother data:SerenaStanhope ;
+      :isBrotherOf data:MargaritaArmstrongJones .
+
+  data:AntonyArmstrongJones a :Man,
+          :Person .
+
+  data:CharlesStanhope a :Man,
+          :Person .
+
+  data:LadySarahChatto a :Person,
+          :Woman .
+
+  data:MargaritaArmstrongJones a :Person,
           :Woman ;
-      :hasBirthYear "1942"^^xsd:int ;
-      :hasBrother data:Constantine_II_of_Greece ;
-      :hasDeathYear "2026"^^xsd:int ;
-      :hasFather data:Paul_of_Greece ;
-      :hasMother data:Frederica_of_Hanover ;
-      :hasSister data:Sofia_of_Spain .
+      :hasBirthYear "2002"^^xsd:positiveInteger ;
+      :hasFather data:DavidArmstrongJones ;
+      :hasMother data:SerenaStanhope ;
+      :hasRelation data:LadySarahChatto ;
+      :knownAs "Margarita Elizabeth Rose Alleyne Armstrong-Jones"^^xsd:string .
 
-  data:Constantine_II_of_Greece a :Man,
-          :Person .
-
-  data:Frederica_of_Hanover a :Person,
+  data:PrincessMargaret a :Person,
           :Woman .
 
-  data:Paul_of_Greece a :Man,
-          :Person .
+  data:DavidArmstrongJones a :Man,
+          :Person ;
+      :hasFather data:AntonyArmstrongJones ;
+      :hasMother data:PrincessMargaret .
 
-  data:Sofia_of_Spain a :Person,
-          :Woman .
+  data:SerenaStanhope a :Person,
+          :Woman ;
+      :hasFather data:CharlesStanhope .
 
 
 
@@ -572,62 +776,182 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (e33b8a05-0965-4eba-8901-0d5e2f714b19)
- Call ID: e33b8a05-0965-4eba-8901-0d5e2f714b19
+  ValidateShacl (9f58611c-0446-46c1-8545-aa9291015004)
+ Call ID: 9f58611c-0446-46c1-8545-aa9291015004
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:21
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Paul_of_Greece is assigned to the 'hasFather' property of Irene_of_Greece_and_Denmark, but it is not classified as an ':Ancestor'.
+      The value for the property :hasFather on node :DavidArmstrongJones, which is :AntonyArmstrongJones, does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Paul_of_Greece', class=':Ancestor')
+      AssignClass(:AntonyArmstrongJones, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Frederica_of_Hanover is assigned to the 'hasMother' property of Irene_of_Greece_and_Denmark, but it is not classified as an ':Ancestor'.
+      The value for the property :hasFather on node :ViscountLinley, which is :DavidArmstrongJones, does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederica_of_Hanover', class=':Ancestor')
+      AssignClass(:DavidArmstrongJones, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Paul_of_Greece is assigned to the 'hasFather' property of Irene_of_Greece_and_Denmark, but it is not classified as an ':Ancestor'.
+      The value for the property :hasMother on node :DavidArmstrongJones, which is :PrincessMargaret, does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Paul_of_Greece', class=':Ancestor')
+      AssignClass(:PrincessMargaret, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Frederica_of_Hanover is assigned to the 'hasMother' property of Irene_of_Greece_and_Denmark, but it is not classified as an ':Ancestor'.
+      The value for the property :hasMother on node :ViscountLinley, which is :SerenaStanhope, does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederica_of_Hanover', class=':Ancestor')
+      AssignClass(:SerenaStanhope, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Paul_of_Greece is assigned to the 'hasFather' property of Irene_of_Greece_and_Denmark, but it is not classified as an ':Ancestor'.
+      The value for the property :hasFather on node :MargaritaArmstrongJones, which is :DavidArmstrongJones, does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Paul_of_Greece', class=':Ancestor')
+      AssignClass(:DavidArmstrongJones, :Ancestor)
 
 
   Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value for the property :hasFather on node :DavidArmstrongJones, which is :AntonyArmstrongJones, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:AntonyArmstrongJones, :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value for the property :hasFather on node :SerenaStanhope, which is :CharlesStanhope, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:CharlesStanhope, :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value for the property :hasFather on node :ViscountLinley, which is :DavidArmstrongJones, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:DavidArmstrongJones, :Ancestor)
+
+
+  Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Frederica_of_Hanover is assigned to the 'hasMother' property of Irene_of_Greece_and_Denmark, but it is not classified as an ':Ancestor'.
+      The value for the property :hasMother on node :MargaritaArmstrongJones, which is :SerenaStanhope, does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederica_of_Hanover', class=':Ancestor')
+      AssignClass(:SerenaStanhope, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value for the property :hasMother on node :DavidArmstrongJones, which is :PrincessMargaret, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:PrincessMargaret, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value for the property :hasMother on node :ViscountLinley, which is :SerenaStanhope, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:SerenaStanhope, :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value for the property :hasFather on node :MargaritaArmstrongJones, which is :DavidArmstrongJones, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:DavidArmstrongJones, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value for the property :hasFather on node :DavidArmstrongJones, which is :AntonyArmstrongJones, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:AntonyArmstrongJones, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value for the property :hasFather on node :SerenaStanhope, which is :CharlesStanhope, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:CharlesStanhope, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value for the property :hasFather on node :ViscountLinley, which is :DavidArmstrongJones, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:DavidArmstrongJones, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value for the property :hasMother on node :MargaritaArmstrongJones, which is :SerenaStanhope, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:SerenaStanhope, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value for the property :hasMother on node :DavidArmstrongJones, which is :PrincessMargaret, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:PrincessMargaret, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value for the property :hasMother on node :ViscountLinley, which is :SerenaStanhope, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:SerenaStanhope, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value for the property :hasFather on node :SerenaStanhope, which is :CharlesStanhope, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:CharlesStanhope, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value for the property :hasFather on node :MargaritaArmstrongJones, which is :DavidArmstrongJones, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:DavidArmstrongJones, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value for the property :hasMother on node :MargaritaArmstrongJones, which is :SerenaStanhope, does not belong to the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(:SerenaStanhope, :Ancestor)
 
 
 
@@ -636,19 +960,43 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (2a6d73c5-f198-4146-8ccf-10c0a6792e0d)
- Call ID: 2a6d73c5-f198-4146-8ccf-10c0a6792e0d
+  AssignClass (958ff0a8-3eff-46e1-8eeb-8fbaeeda7cd8)
+ Call ID: 958ff0a8-3eff-46e1-8eeb-8fbaeeda7cd8
   Args:
-    source: :Paul_of_Greece
+    source: :AntonyArmstrongJones
     type: :Ancestor
-  AssignClass (7d6dca97-8978-4b0e-b2e0-2eab08d5a7d8)
- Call ID: 7d6dca97-8978-4b0e-b2e0-2eab08d5a7d8
+  AssignClass (ce59793d-e6d4-4463-ad1c-e18258632044)
+ Call ID: ce59793d-e6d4-4463-ad1c-e18258632044
   Args:
-    source: :Frederica_of_Hanover
     type: :Ancestor
-  ValidateShacl (88a67b40-84e3-426c-8f7d-f60cb3d8391d)
- Call ID: 88a67b40-84e3-426c-8f7d-f60cb3d8391d
+    source: :DavidArmstrongJones
+  AssignClass (33315cba-7358-435f-9991-33d3911079fc)
+ Call ID: 33315cba-7358-435f-9991-33d3911079fc
   Args:
+    type: :Ancestor
+    source: :PrincessMargaret
+  AssignClass (6fa2d520-42d7-4be3-9c82-d5fbd6ffda3f)
+ Call ID: 6fa2d520-42d7-4be3-9c82-d5fbd6ffda3f
+  Args:
+    source: :SerenaStanhope
+    type: :Ancestor
+  AssignClass (5a02fa71-36a8-4050-a48a-205482a3f08b)
+ Call ID: 5a02fa71-36a8-4050-a48a-205482a3f08b
+  Args:
+    source: :CharlesStanhope
+    type: :Ancestor
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -661,30 +1009,55 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Irene_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :hasBirthYear "1942"^^xsd:int ;
-      :hasBrother data:Constantine_II_of_Greece ;
-      :hasDeathYear "2026"^^xsd:int ;
-      :hasFather data:Paul_of_Greece ;
-      :hasMother data:Frederica_of_Hanover ;
-      :hasSister data:Sofia_of_Spain .
+  data:ViscountLinley a :Man,
+          :Person ;
+      :hasFather data:DavidArmstrongJones ;
+      :hasMother data:SerenaStanhope ;
+      :isBrotherOf data:MargaritaArmstrongJones .
 
-  data:Constantine_II_of_Greece a :Man,
-          :Person .
-
-  data:Frederica_of_Hanover a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Paul_of_Greece a :Ancestor,
+  data:AntonyArmstrongJones a :Ancestor,
           :Man,
           :Person .
 
-  data:Sofia_of_Spain a :Person,
+  data:CharlesStanhope a :Ancestor,
+          :Man,
+          :Person .
+
+  data:LadySarahChatto a :Person,
           :Woman .
 
+  data:MargaritaArmstrongJones a :Person,
+          :Woman ;
+      :hasBirthYear "2002"^^xsd:positiveInteger ;
+      :hasFather data:DavidArmstrongJones ;
+      :hasMother data:SerenaStanhope ;
+      :hasRelation data:LadySarahChatto ;
+      :knownAs "Margarita Elizabeth Rose Alleyne Armstrong-Jones"^^xsd:string .
 
+  data:PrincessMargaret a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:DavidArmstrongJones a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:AntonyArmstrongJones ;
+      :hasMother data:PrincessMargaret .
+
+  data:SerenaStanhope a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:CharlesStanhope .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (8acb6cbf-8eb9-48c5-aba1-241417030c38)
+ Call ID: 8acb6cbf-8eb9-48c5-aba1-241417030c38
+  Args:
 
 ================================= Tool Message =================================
 
@@ -694,6 +1067,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (b01e60fc-cb70-4930-b961-9585705a20c4)
- Call ID: b01e60fc-cb70-4930-b961-9585705a20c4
+  Finish (29774afb-4844-4e0c-a7f1-97b4bc7d4cfd)
+ Call ID: 29774afb-4844-4e0c-a7f1-97b4bc7d4cfd
   Args:

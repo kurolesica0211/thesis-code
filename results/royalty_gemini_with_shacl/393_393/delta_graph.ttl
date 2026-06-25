@@ -2,64 +2,51 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Anne-Marie_von_Schutzbar_genannt_Milchling a :Person,
-        :Woman ;
-    :hasFather data:Rudolf_von_Schutzbar_genannt_Milchling ;
-    :hasMother data:Rose_Marston .
+data:Adolf_II a :Man,
+        :Person .
 
-data:Helena_von_Waldeck_und_Pyrmont a :Person,
+data:Marie_Alix_of_Schaumburg-Lippe a :Person,
         :Woman ;
-    :hasFather data:Friedrich_von_Waldeck_und_Pyrmont ;
-    :hasMother data:Bathildis_von_Schaumburg-Lippe .
+    :hasBirthYear 1923 ;
+    :hasBrother data:Prince_Georg_Moritz_of_Schaumburg-Lippe ;
+    :hasDeathYear 2021 ;
+    :hasFather data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:Ingeborg_Alix ;
+    :hasRelation data:Peter_Duke_of_Schleswig-Holstein ;
+    :hasSex data:Female .
 
-data:Nikolaus_von_Holstein-Gottorp a :Man,
+data:Ingeborg_Alix a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Peter_Duke_of_Schleswig-Holstein a :Man,
         :Person ;
-    :hasBirthYear 1897 ;
-    :hasDeathYear 1970 ;
-    :hasFather data:Frederick_Augustus_II_von_Oldenburg ;
-    :hasMother data:Elisabeth_Alexandrine_von_Mecklenburg-Schwerin .
+    :hasFather data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein ;
+    :hasMother data:Princess_Marie_Melita_of_Hohenlohe-Langenburg ;
+    :hasSex data:Male .
 
-data:Bathildis_von_Schaumburg-Lippe a :Ancestor,
-        :Person,
-        :Woman .
+data:Prince_Georg_Moritz_of_Schaumburg-Lippe a :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Elisabeth_Alexandrine_von_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Frederick_Francis_II_von_Mecklenburg-Schwerin ;
-    :hasMother data:Marie_von_Schwarzburg-Rudolstadt .
-
-data:Elisabeth_von_Saxe-Altenburg a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Frederick_Augustus_II_von_Oldenburg a :Ancestor,
+data:Prince_Stefan_of_Schaumburg-Lippe a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Peter_II_von_Oldenburg ;
-    :hasMother data:Elisabeth_von_Saxe-Altenburg .
+    :hasSex data:Male .
 
-data:Frederick_Francis_II_von_Mecklenburg-Schwerin a :Ancestor,
-        :Man,
-        :Person .
-
-data:Friedrich_von_Waldeck_und_Pyrmont a :Ancestor,
-        :Man,
-        :Person .
-
-data:Marie_von_Schwarzburg-Rudolstadt a :Ancestor,
+data:Princess_Marie_Melita_of_Hohenlohe-Langenburg a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasSex data:Female .
 
-data:Peter_II_von_Oldenburg a :Ancestor,
+data:Wilhelm_Friedrich_Duke_of_Schleswig-Holstein a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :hasSex data:Male .
 
-data:Rose_Marston a :Ancestor,
-        :Person,
-        :Woman .
+data:Female a :Sex .
 
-data:Rudolf_von_Schutzbar_genannt_Milchling a :Ancestor,
-        :Man,
-        :Person .
+data:Male a :Sex .
 

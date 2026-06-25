@@ -69,22 +69,57 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Michael Claude Hamilton Bowes-Lyon (1 October 1893 – 1 May 1953), known as Mickie Bowes-Lyon, was an elder brother of Queen Elizabeth the Queen Mother and maternal uncle of Queen Elizabeth II.
-Biography
+Zara Anne Elizabeth Tindall (née Phillips; born 15 May 1981) is a British equestrian, Olympian, and member of the British royal family.
+She is the daughter of Anne, Princess Royal, and Captain Mark Phillips, and the eldest niece of King Charles III.
+At birth she was sixth in the line of succession to the British throne during the reign of her maternal grandmother, Queen Elizabeth II, and as of 2026 is 22nd.
+Tindall won the individual eventing world title at Aachen in 2006 and was later named BBC Sports Personality of the Year.
+She married former rugby union player Mike Tindall in 2011, and the couple have three children.
+Early life and education
 
-Bowes-Lyon was born on 1 October 1893, the fifth son and eighth child of Claude Bowes-Lyon, Lord Glamis, later 14th
-During World War I, Bowes-Lyon served in France in The Royal Scots (Lothian Regiment).
-After the war, Bowes-Lyon was a justice of the peace and deputy lieutenant of Bedfordshire.
-In 1928, Bowes-Lyon married Elizabeth Margaret Cator (1899–1959), daughter of John Cator, at St George's, Hanover Square.
-Cator had been a bridesmaid at his sister Elizabeth's wedding to Prince Albert, Duke of York, in 1923.
-Bowes-Lyon predeceased him and the earldom was inherited by his eldest son, Fergus, in 1972.
-Bowes-Lyon died on 1 May 1953 at his home in Biggleswade as the result of asthma.
+Zara Anne Elizabeth Phillips was born at 8:15 pm on 15 May 1981 at St Mary's Hospital, London.
+She has an elder brother, Peter, and two younger half-sisters, Felicity Wade (née Tonkin), from her father's affair with Heather Tonkin; and Stephanie Phillips, from his second marriage to Sandy Pflueger.
+Phillips attended Beaudesert Park School in Stroud, Gloucestershire, and Port Regis School in Shaftesbury, Dorset, before following other members of the royal family in attending Gordonstoun School in Moray, Scotland.
+Equestrianism
+
+After leaving university, Phillips began to pursue an equestrian career, following in the footsteps of her parents.
+Phillips missed the 2004 Summer Olympics in Athens after her horse was injured during training.
+Riding Toytown, Phillips won individual and team gold medals at the 2005 European Eventing Championship at Blenheim.
+The British Olympic Association selected Phillips and Toytown for the 2008 Olympic Games in Hong Kong; however, Toytown sustained an injury during training and she withdrew from the team.
+On 25 October 2008, Phillips fell from her horse, Tsunami II, at the 15th fence of a cross‐country event in Pau, France, breaking her right collarbone.
+In July 2010, Musto launched a range of equestrian clothing designed by Phillips, named ZP176 after her team number when she first represented Great Britain.
+Phillips competed at the 2012 London Olympic Games on High Kingdom, winning a silver medal in the team event.
+She stopped using her maiden name in March 2016 and competed as Zara Tindall for the first time during her unsuccessful attempt to qualify for the 2016 Rio Olympic Games.
+In 2017, Tindall finished third at the Kentucky Three-Day Event on High Kingdom, who retired from competition in 2018.
+Charity work
+
+Tindall frequently supports and attends events for a range of charitable causes, particularly those connected with spinal injuries, equestrianism, and children's welfare.
+Tindall has appeared at events for The Caudwell Charitable Trust, which supports children with special needs, disabilities, and serious illnesses.
+The following year, she became patron of the Mark Davies Injured Riders Fund.
+In 2013, she visited Stroud Maternity Ward to mark its 60th anniversary, and in 2014 she lent her support to the #bringbackourgirls campaign.
+In April 2020, Tindall participated in the Equestrian Relief initiative to help provide additional personal protective equipment for National Health Service workers.
+Other activities
+
+In June 2015, Tindall launched an equestrian-themed jewellery collection, named "Zara Phillips Collection", in collaboration with Australian designer John Calleija.
+On 17 September 2022, during the period of official mourning for Queen Elizabeth II, Tindall joined her brother and six cousins to mount a 15-minute vigil around the coffin of the Queen, as it lay in state at Westminster Hall.
+On 19 September, with her husband Mike and daughter Mia, she joined other family members at the state funeral.
+Personal life
+
+Phillips met rugby union player Mike Tindall, who was then playing for the England national team, during the squad's Rugby World Cup-winning campaign in Australia in 2003.
+As required at the time by the Royal Marriages Act 1772, the Queen gave her consent to the marriage at a meeting of the Privy Council on 10 May 2011.
+A celebration was held on the royal yacht Britannia prior to the wedding.
+The Tindalls lived in Cheltenham, Gloucestershire, before moving to Aston Farm, a seven-bedroom property adjoining the Princess Royal's Gatcombe Park estate.
+Their first child, Mia Grace, was born on 17 January 2014 at Gloucestershire Royal Hospital and was 16th, later 23rd in the line of succession.
+A second daughter, Lena Elizabeth, was born on 18 June 2018 at Stroud Maternity Hospital and was 19th, later 24th, in the line of succession.
+Tindall is a godmother to Prince George of Wales, the son of her cousin William, Prince of Wales.
+In December 2000, before her marriage, Phillips was involved in a serious car crash near Bourton-on-the-Water, escaping injury after overturning her Land Rover.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -100,39 +135,9 @@ Bowes-Lyon died on 1 May 1953 at his home in Biggleswade as the result of asthma
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -147,6 +152,23 @@ Bowes-Lyon died on 1 May 1953 at his home in Biggleswade as the result of asthma
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -164,6 +186,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -231,29 +268,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,6 +291,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -274,6 +311,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -282,17 +321,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -320,6 +361,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -335,140 +460,184 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (fea15a2d-85fa-4c7a-98a4-c0a393ebe7b8)
- Call ID: fea15a2d-85fa-4c7a-98a4-c0a393ebe7b8
+  AssignClass (1775144b-b8f7-48a6-9b7e-b73dcec7d010)
+ Call ID: 1775144b-b8f7-48a6-9b7e-b73dcec7d010
   Args:
-    source: :Michael_Claude_Hamilton_Bowes-Lyon
-    type: :Man
-  AssignClass (50a6ad99-87d9-4e5b-8bed-48a0461ff457)
- Call ID: 50a6ad99-87d9-4e5b-8bed-48a0461ff457
+    type: :Woman
+    source: :ZaraTindall
+  AssignClass (c9089f0d-2c96-413c-af17-b97eb56a8ade)
+ Call ID: c9089f0d-2c96-413c-af17-b97eb56a8ade
   Args:
+    source: :ZaraTindall
     type: :Person
-    source: :Michael_Claude_Hamilton_Bowes-Lyon
-  AddLiteral (e270c431-48ca-41bb-a3fc-9dac9eb8881f)
- Call ID: e270c431-48ca-41bb-a3fc-9dac9eb8881f
+  AddLiteral (fa8fd9ad-dbd3-45e6-b2b2-29ecacf67b33)
+ Call ID: fa8fd9ad-dbd3-45e6-b2b2-29ecacf67b33
   Args:
-    relation: :hasBirthYear
-    literal_value: 1893
-    source: :Michael_Claude_Hamilton_Bowes-Lyon
-    literal_type: xsd:integer
-  AddLiteral (392e6ce3-5378-4c67-abea-ae133d0526a1)
- Call ID: 392e6ce3-5378-4c67-abea-ae133d0526a1
-  Args:
-    literal_type: xsd:integer
-    source: :Michael_Claude_Hamilton_Bowes-Lyon
-    relation: :hasDeathYear
-    literal_value: 1953
-  AddLiteral (71501011-2590-4fe9-a113-70fddfafe98a)
- Call ID: 71501011-2590-4fe9-a113-70fddfafe98a
-  Args:
-    source: :Michael_Claude_Hamilton_Bowes-Lyon
-    literal_type: xsd:string
-    literal_value: Mickie Bowes-Lyon
+    source: :ZaraTindall
     relation: :knownAs
-  AssignClass (3a3e1c54-d360-4172-92df-1f8e3fe6efb1)
- Call ID: 3a3e1c54-d360-4172-92df-1f8e3fe6efb1
+    literal_type: xsd:string
+    literal_value: Zara Anne Elizabeth Tindall
+  AddLiteral (b4d38ecf-2c60-48e1-ada2-a175a2744410)
+ Call ID: b4d38ecf-2c60-48e1-ada2-a175a2744410
   Args:
-    source: :Claude_Bowes-Lyon
+    literal_value: Zara Anne Elizabeth Phillips
+    literal_type: xsd:string
+    relation: :formerlyKnownAs
+    source: :ZaraTindall
+  AddLiteral (380b4b52-6e42-4343-9207-da7011c47698)
+ Call ID: 380b4b52-6e42-4343-9207-da7011c47698
+  Args:
+    source: :ZaraTindall
+    literal_value: 1981
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AssignClass (919294a0-5f47-42be-8c74-b9ca0f7614da)
+ Call ID: 919294a0-5f47-42be-8c74-b9ca0f7614da
+  Args:
+    source: :AnnePrincessRoyal
+    type: :Woman
+  AssignClass (8c83bac4-ee24-4dd9-a1ef-8ac1e818343e)
+ Call ID: 8c83bac4-ee24-4dd9-a1ef-8ac1e818343e
+  Args:
+    source: :AnnePrincessRoyal
+    type: :Person
+  AssignClass (786a6977-33a1-4d06-8e17-7c6a5eff377e)
+ Call ID: 786a6977-33a1-4d06-8e17-7c6a5eff377e
+  Args:
+    source: :MarkPhillips
     type: :Man
-  AssignClass (44c7674b-56d3-4f90-9957-34b776be325a)
- Call ID: 44c7674b-56d3-4f90-9957-34b776be325a
+  AssignClass (2742bb33-63dd-4054-ac43-9e5f80094b4c)
+ Call ID: 2742bb33-63dd-4054-ac43-9e5f80094b4c
   Args:
     type: :Person
-    source: :Claude_Bowes-Lyon
-  AddTriple (fedc0242-20c4-488d-9c0d-458f224ce145)
- Call ID: fedc0242-20c4-488d-9c0d-458f224ce145
+    source: :MarkPhillips
+  AddTriple (5eb8907e-130e-45a2-a299-894f33b24065)
+ Call ID: 5eb8907e-130e-45a2-a299-894f33b24065
   Args:
-    source: :Michael_Claude_Hamilton_Bowes-Lyon
+    target: :AnnePrincessRoyal
+    relation: :hasMother
+    source: :ZaraTindall
+  AddTriple (96c8a4e9-6814-46a2-ae8f-63f1f3c2ee5f)
+ Call ID: 96c8a4e9-6814-46a2-ae8f-63f1f3c2ee5f
+  Args:
+    target: :MarkPhillips
     relation: :hasFather
-    target: :Claude_Bowes-Lyon
-  AssignClass (5a0db607-b970-4671-a2e2-374009c59885)
- Call ID: 5a0db607-b970-4671-a2e2-374009c59885
+    source: :ZaraTindall
+  AssignClass (15adada5-7c9c-4015-9036-05624e81f5d1)
+ Call ID: 15adada5-7c9c-4015-9036-05624e81f5d1
   Args:
+    source: :PeterPhillips
+    type: :Man
+  AssignClass (57b2ea42-380b-4b5d-891a-30e1847aff3a)
+ Call ID: 57b2ea42-380b-4b5d-891a-30e1847aff3a
+  Args:
+    source: :PeterPhillips
+    type: :Person
+  AddTriple (e56f6d38-257f-45d2-a796-d2af46416251)
+ Call ID: e56f6d38-257f-45d2-a796-d2af46416251
+  Args:
+    source: :ZaraTindall
+    relation: :hasBrother
+    target: :PeterPhillips
+  AssignClass (b63380f6-3107-409d-91e2-f54451c7ae04)
+ Call ID: b63380f6-3107-409d-91e2-f54451c7ae04
+  Args:
+    source: :FelicityWade
     type: :Woman
-    source: :Elizabeth_the_Queen_Mother
-  AssignClass (da39cbcb-bf38-41b0-a85b-bff2510cd3f9)
- Call ID: da39cbcb-bf38-41b0-a85b-bff2510cd3f9
+  AssignClass (be4c4c37-3da3-4a39-8b0c-cf6f762855fe)
+ Call ID: be4c4c37-3da3-4a39-8b0c-cf6f762855fe
+  Args:
+    source: :FelicityWade
+    type: :Person
+  AssignClass (786e0a8a-ea5a-4360-8500-5a40ade81680)
+ Call ID: 786e0a8a-ea5a-4360-8500-5a40ade81680
+  Args:
+    source: :StephaniePhillips
+    type: :Woman
+  AssignClass (2c191764-c37f-49d4-b3f1-a777b5e62687)
+ Call ID: 2c191764-c37f-49d4-b3f1-a777b5e62687
   Args:
     type: :Person
-    source: :Elizabeth_the_Queen_Mother
-  AddTriple (13d22421-b98c-4ccb-8ff3-9425f0b7bb08)
- Call ID: 13d22421-b98c-4ccb-8ff3-9425f0b7bb08
+    source: :StephaniePhillips
+  AddTriple (93710496-6048-4fb9-ac10-edc4d42577f2)
+ Call ID: 93710496-6048-4fb9-ac10-edc4d42577f2
   Args:
-    source: :Michael_Claude_Hamilton_Bowes-Lyon
-    relation: :isBrotherOf
-    target: :Elizabeth_the_Queen_Mother
-  AssignClass (6b6664e9-b50f-48af-8c6b-8af2ddccde45)
- Call ID: 6b6664e9-b50f-48af-8c6b-8af2ddccde45
+    source: :ZaraTindall
+    target: :FelicityWade
+    relation: :hasSister
+  AddTriple (b1e109f6-a3bc-4ad3-afc7-e6382ecfd8b9)
+ Call ID: b1e109f6-a3bc-4ad3-afc7-e6382ecfd8b9
   Args:
-    type: :Woman
-    source: :Queen_Elizabeth_II
-  AssignClass (bd114073-a658-4eba-bd96-8518f87d8fa3)
- Call ID: bd114073-a658-4eba-bd96-8518f87d8fa3
+    target: :StephaniePhillips
+    relation: :hasSister
+    source: :ZaraTindall
+  AssignClass (2088e599-9b94-4df5-bd0a-6b88d610a0f9)
+ Call ID: 2088e599-9b94-4df5-bd0a-6b88d610a0f9
   Args:
-    source: :Queen_Elizabeth_II
-    type: :Person
-  AddTriple (edcf04c4-d185-47b6-be78-a53e2d5fbe95)
- Call ID: edcf04c4-d185-47b6-be78-a53e2d5fbe95
-  Args:
-    relation: :isUncleOf
-    source: :Michael_Claude_Hamilton_Bowes-Lyon
-    target: :Queen_Elizabeth_II
-  AssignClass (a4787a81-c371-419a-a47e-ad29d7a710c1)
- Call ID: a4787a81-c371-419a-a47e-ad29d7a710c1
-  Args:
-    type: :Woman
-    source: :Elizabeth_Margaret_Cator
-  AssignClass (f18e992d-893c-43a2-836c-6da333638b1d)
- Call ID: f18e992d-893c-43a2-836c-6da333638b1d
+    source: :MikeTindall
+    type: :Man
+  AssignClass (0f7673b0-89e7-4e2c-b677-a9f19e15269a)
+ Call ID: 0f7673b0-89e7-4e2c-b677-a9f19e15269a
   Args:
     type: :Person
-    source: :Elizabeth_Margaret_Cator
-  AddLiteral (70be43ea-2bbe-4fc6-a3fb-145f4485cf67)
- Call ID: 70be43ea-2bbe-4fc6-a3fb-145f4485cf67
+    source: :MikeTindall
+  AddLiteral (dd8760ee-5b3e-427b-8e24-ab112b50056d)
+ Call ID: dd8760ee-5b3e-427b-8e24-ab112b50056d
   Args:
     relation: :hasMarriageYear
-    literal_value: 1928
-    source: :Michael_Claude_Hamilton_Bowes-Lyon
+    literal_value: 2011
     literal_type: xsd:integer
-  AddTriple (d7878b30-f61a-46b7-b46e-d9d330f0f364)
- Call ID: d7878b30-f61a-46b7-b46e-d9d330f0f364
+    source: :ZaraTindall
+  AddTriple (7a44d5bb-6817-47cf-8a03-bcbb15b96e48)
+ Call ID: 7a44d5bb-6817-47cf-8a03-bcbb15b96e48
   Args:
     relation: :hasRelation
-    source: :Michael_Claude_Hamilton_Bowes-Lyon
-    target: :Elizabeth_Margaret_Cator
-  AssignClass (1be27105-8ba5-4df2-aa93-4a00c76b1902)
- Call ID: 1be27105-8ba5-4df2-aa93-4a00c76b1902
+    target: :MikeTindall
+    source: :ZaraTindall
+  AssignClass (f443e031-629c-4d65-abc0-2d202040e056)
+ Call ID: f443e031-629c-4d65-abc0-2d202040e056
   Args:
-    source: :John_Cator
-    type: :Man
-  AssignClass (aca01327-fecf-4b06-89d8-75d2fe7b5c41)
- Call ID: aca01327-fecf-4b06-89d8-75d2fe7b5c41
+    type: :Woman
+    source: :MiaGraceTindall
+  AssignClass (548843ef-2f25-48d7-88a1-704b22a127f7)
+ Call ID: 548843ef-2f25-48d7-88a1-704b22a127f7
   Args:
     type: :Person
-    source: :John_Cator
-  AddTriple (547c9745-ede2-4dc4-853c-e13915f691a8)
- Call ID: 547c9745-ede2-4dc4-853c-e13915f691a8
+    source: :MiaGraceTindall
+  AssignClass (97bbb57d-220c-4dc9-a03e-1f8f9a368e81)
+ Call ID: 97bbb57d-220c-4dc9-a03e-1f8f9a368e81
+  Args:
+    source: :LenaElizabethTindall
+    type: :Woman
+  AssignClass (f4a88c20-01de-4f44-a569-b033420d68f7)
+ Call ID: f4a88c20-01de-4f44-a569-b033420d68f7
+  Args:
+    type: :Person
+    source: :LenaElizabethTindall
+  AddTriple (e94ea56a-fc55-444a-80ee-dbd454982e6b)
+ Call ID: e94ea56a-fc55-444a-80ee-dbd454982e6b
+  Args:
+    source: :MiaGraceTindall
+    relation: :hasMother
+    target: :ZaraTindall
+  AddTriple (56317bbf-fe27-4c69-bd7d-fd6d55a283de)
+ Call ID: 56317bbf-fe27-4c69-bd7d-fd6d55a283de
+  Args:
+    source: :LenaElizabethTindall
+    relation: :hasMother
+    target: :ZaraTindall
+  AddTriple (c7f6595c-f924-4a58-aec7-3628b621d7d3)
+ Call ID: c7f6595c-f924-4a58-aec7-3628b621d7d3
+  Args:
+    source: :MiaGraceTindall
+    relation: :hasFather
+    target: :MikeTindall
+  AddTriple (af03f87e-987f-437b-abdc-1bff88b3d968)
+ Call ID: af03f87e-987f-437b-abdc-1bff88b3d968
   Args:
     relation: :hasFather
-    source: :Elizabeth_Margaret_Cator
-    target: :John_Cator
-  AssignClass (f2a2e4aa-cd88-4c83-9628-96d2752ec593)
- Call ID: f2a2e4aa-cd88-4c83-9628-96d2752ec593
-  Args:
-    source: :Fergus_Bowes-Lyon
-    type: :Man
-  AssignClass (36d738d8-9d2a-447d-afb5-7887f546de16)
- Call ID: 36d738d8-9d2a-447d-afb5-7887f546de16
-  Args:
-    type: :Person
-    source: :Fergus_Bowes-Lyon
-  AddTriple (54353b9a-96a7-457e-9a32-9b4f8ba2b4ef)
- Call ID: 54353b9a-96a7-457e-9a32-9b4f8ba2b4ef
-  Args:
-    target: :Michael_Claude_Hamilton_Bowes-Lyon
-    source: :Fergus_Bowes-Lyon
-    relation: :isSonOf
-  Finish (358c1d23-7e49-4ef3-9b1d-e67742878c6f)
- Call ID: 358c1d23-7e49-4ef3-9b1d-e67742878c6f
+    target: :MikeTindall
+    source: :LenaElizabethTindall
+  Finish (99d23ca4-4b10-42ac-bd4a-cfac399cfe75)
+ Call ID: 99d23ca4-4b10-42ac-bd4a-cfac399cfe75
   Args:

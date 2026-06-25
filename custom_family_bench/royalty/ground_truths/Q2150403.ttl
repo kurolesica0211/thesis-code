@@ -7,91 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Princess_Sophie_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Sophie of Greece and Denmark" ;
-    data:posIndicesFull "1447:1472",
-        "1447:1484" ;
-    data:wdtLink wdt:Q630371 ;
-    :alsoKnownAs "Princess Sophie of Greece" ;
-    :hasSex data:female .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelm II" ;
-    data:posIndicesFull "423:433",
-        "423:434",
-        "931:948",
-        "938:948" ;
-    data:wdtLink wdt:Q2677 ;
-    :alsoKnownAs "Emperor Willlam",
-        "Frederick William Victor Albert of Prussia",
-        "Friedrich Wilhelm Emperor William II",
-        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
-        "Friedrich Wilhelm Viktor Albrecht von Preußen",
-        "German Emperor Wilhelm II",
-        "Kaiser Wilhelm II",
-        "Wilhelm II of Germany",
-        "Wilhelm II, German Emperor",
-        "Wilhelm II.",
-        "William II" ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Margaret_of_Prussia ;
-    :isBrotherOf data:Princess_Margaret_of_Prussia ;
-    :isSiblingOf data:Princess_Margaret_of_Prussia ;
-    :isUncleOf data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Richard_of_Hesse,
-        data:Prince_Wolfgang_of_Hesse .
-
-data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Frederick Charles of Hesse" ;
-    data:posIndicesFull "258:291",
-        "265:291" ;
-    data:posIndicesPart "1737:1743",
-        "2038:2044",
-        "2178:2184",
-        "2856:2862",
-        "2958:2964",
-        "3037:3042",
-        "3414:3419",
-        "3563:3569",
-        "990:995" ;
-    data:wdtLink wdt:Q63679 ;
-    :alsoKnownAs "Frederick Charles Louis Constantine",
-        "Frederick Charles Louis Constantine of Hesse",
-        "Frederick Charles of Hesse",
-        "Prince Frederick Charles Louis Constantine of Hesse" ;
-    :hasChild data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Richard_of_Hesse,
-        data:Prince_Wolfgang_of_Hesse ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Richard_of_Hesse,
-        data:Prince_Wolfgang_of_Hesse ;
-    :isFatherOf data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Richard_of_Hesse,
-        data:Prince_Wolfgang_of_Hesse ;
-    :isParentOf data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Richard_of_Hesse,
-        data:Prince_Wolfgang_of_Hesse .
-
-data:Prince_Christoph_of_Hesse-Kassel a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Christoph_of_Hesse-Kassel a :Person ;
     rdfs:label "Prince Christoph of Hesse-Kassel" ;
     data:posIndicesFull "1557:1582",
         "1557:1589",
@@ -114,25 +30,11 @@ data:Prince_Christoph_of_Hesse-Kassel a :Ancestor,
     data:wdtLink wdt:Q2314771 ;
     :alsoKnownAs "Prince Christoph Ernst August of Hesse",
         "Prince Christoph of Hesse" ;
-    :hasBrother data:Prince_Richard_of_Hesse,
-        data:Prince_Wolfgang_of_Hesse ;
-    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
-    :hasMother data:Princess_Margaret_of_Prussia ;
     :hasParent data:Prince_Frederick_Charles_of_Hesse,
         data:Princess_Margaret_of_Prussia ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Richard_of_Hesse,
-        data:Prince_Wolfgang_of_Hesse ;
-    :isChildOf data:Prince_Frederick_Charles_of_Hesse,
-        data:Princess_Margaret_of_Prussia ;
-    :isSiblingOf data:Prince_Richard_of_Hesse,
-        data:Prince_Wolfgang_of_Hesse ;
-    :isSonOf data:Prince_Frederick_Charles_of_Hesse,
-        data:Princess_Margaret_of_Prussia .
+    :hasSex data:male .
 
-data:Prince_Richard_of_Hesse a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Richard_of_Hesse a :Person ;
     rdfs:label "Prince Richard of Hesse" ;
     data:posIndicesFull "0:23",
         "3440:3456",
@@ -174,57 +76,77 @@ data:Prince_Richard_of_Hesse a :Man,
         "Richard of Hesse",
         "Richard of Hesse-Kassel",
         "Richard von Hessen-Kassel" ;
-    :hasBrother data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Wolfgang_of_Hesse ;
-    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
-    :hasMother data:Princess_Margaret_of_Prussia ;
     :hasParent data:Prince_Frederick_Charles_of_Hesse,
         data:Princess_Margaret_of_Prussia ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Wolfgang_of_Hesse ;
-    :isChildOf data:Prince_Frederick_Charles_of_Hesse,
-        data:Princess_Margaret_of_Prussia ;
-    :isSiblingOf data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Wolfgang_of_Hesse ;
-    :isSonOf data:Prince_Frederick_Charles_of_Hesse,
-        data:Princess_Margaret_of_Prussia .
+    :hasSex data:male .
 
-data:Prince_Wolfgang_of_Hesse a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Wolfgang_of_Hesse a :Person ;
     rdfs:label "Prince Wolfgang of Hesse" ;
     data:posIndicesFull "3253:3277" ;
     data:posIndicesPart "3414:3419",
         "3563:3569" ;
     data:wdtLink wdt:Q67038 ;
     :alsoKnownAs "Wolfgang Moritz von Hessen-Kassel" ;
-    :hasBrother data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Richard_of_Hesse ;
-    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
-    :hasMother data:Princess_Margaret_of_Prussia ;
     :hasParent data:Prince_Frederick_Charles_of_Hesse,
         data:Princess_Margaret_of_Prussia ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Richard_of_Hesse ;
-    :isChildOf data:Prince_Frederick_Charles_of_Hesse,
-        data:Princess_Margaret_of_Prussia ;
-    :isSiblingOf data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Richard_of_Hesse ;
-    :isSonOf data:Prince_Frederick_Charles_of_Hesse,
-        data:Princess_Margaret_of_Prussia .
+    :hasSex data:male .
 
-data:Princess_Margaret_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "423:433",
+        "423:434",
+        "931:948",
+        "938:948" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Prince_Frederick_Charles_of_Hesse a :Person ;
+    rdfs:label "Prince Frederick Charles of Hesse" ;
+    data:posIndicesFull "258:291",
+        "265:291" ;
+    data:posIndicesPart "1737:1743",
+        "2038:2044",
+        "2178:2184",
+        "2856:2862",
+        "2958:2964",
+        "3037:3042",
+        "3414:3419",
+        "3563:3569",
+        "990:995" ;
+    data:wdtLink wdt:Q63679 ;
+    :alsoKnownAs "Frederick Charles Louis Constantine",
+        "Frederick Charles Louis Constantine of Hesse",
+        "Frederick Charles of Hesse",
+        "Prince Frederick Charles Louis Constantine of Hesse" ;
+    :hasSex data:male .
+
+data:Princess_Margaret_of_Prussia a :Person ;
     rdfs:label "Princess Margaret of Prussia" ;
     data:posIndicesFull "258:291",
         "305:333",
         "314:333",
         "725:729" ;
-    data:posIndicesPart "967:975",
+    data:posIndicesPart "1447:1455",
+        "967:975",
         "976:984" ;
     data:wdtLink wdt:Q61338 ;
     :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
@@ -238,20 +160,7 @@ data:Princess_Margaret_of_Prussia a :Ancestor,
         "Princess Margaret Beatrice Feodora of Prussia",
         "Princess Margarethe Beatrice Feodora of Prussia",
         "Princess Margarethe of Prussia" ;
-    :hasBrother data:Wilhelm_II ;
-    :hasChild data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Richard_of_Hesse,
-        data:Prince_Wolfgang_of_Hesse ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Richard_of_Hesse,
-        data:Prince_Wolfgang_of_Hesse ;
-    :isMotherOf data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Richard_of_Hesse,
-        data:Prince_Wolfgang_of_Hesse ;
-    :isParentOf data:Prince_Christoph_of_Hesse-Kassel,
-        data:Prince_Richard_of_Hesse,
-        data:Prince_Wolfgang_of_Hesse ;
-    :isSiblingOf data:Wilhelm_II ;
-    :isSisterOf data:Wilhelm_II .
+    :hasSex data:female .
+
+data:male a :Male .
 

@@ -2,24 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_Alexia a :Person,
-        :Woman ;
+data:Alexandra_Jankovich_de_Jeszenice a :Woman .
+
+data:Frans_Ferdinand_de_Beaufort a :Man .
+
+data:Juan_Zorreguieta a :Man .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Prince_Friso a :Man .
+
+data:Princess_Alexia a :Woman ;
     :hasBirthYear 2005 ;
     :hasFather data:King_Willem-Alexander ;
-    :hasMother data:Queen_Maxima ;
-    :hasSex data:Female .
+    :hasMother data:Queen_Maxima .
+
+data:Princess_Beatrix a :Woman .
+
+data:Princess_Margriet a :Woman .
+
+data:Queen_Mathilde_of_Belgium a :Woman .
 
 data:King_Willem-Alexander a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Male a :Sex .
+        :Man .
 
 data:Queen_Maxima a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Female a :Sex .
+        :Woman .
 

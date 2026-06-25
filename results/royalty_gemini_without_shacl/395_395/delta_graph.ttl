@@ -2,24 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Anton-G%C3%BCnther a :Man ;
-    :hasAncestor data:Frederick_Augustus_II_of_Oldenburg,
-        data:Friedrich_of_Waldeck_and_Pyrmont ;
-    :hasBirthYear 1923 ;
-    :hasDeathYear 2014 ;
-    :hasFather data:Nikolaus_of_Oldenburg ;
-    :hasMarriageYear 1951 ;
-    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
-    :hasRelation data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg ;
-    :knownAs "Anton-Günther, Duke of Oldenburg"^^xsd:string .
+data:Anne-Marie_von_Schutzbar_genannt_Milchling a :Woman ;
+    :hasBirthYear 1903 ;
+    :hasDeathYear 1991 ;
+    :hasFather data:Rudolf_von_Schutzbar_genannt_Milchling ;
+    :hasMother data:Rose_Marston .
 
-data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Woman .
+data:Bechtold_von_Bernstorff a :Man .
 
-data:Frederick_Augustus_II_of_Oldenburg a :Man .
+data:Helena_of_Waldeck_and_Pyrmont a :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :hasMother data:Bathildis_of_Schaumburg-Lippe .
+
+data:Nikolaus_of_Oldenburg a :Man ;
+    :hasBirthYear 1897 ;
+    :hasDeathYear 1970 ;
+    :hasFather data:Frederick_Augustus_II_of_Oldenburg ;
+    :hasMarriageYear 1921,
+        1950 ;
+    :hasMother data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Bathildis_of_Schaumburg-Lippe a :Woman .
+
+data:Elisabeth_Alexandrine_of_Mecklenburg-Schwerin a :Woman ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1955 ;
+    :hasFather data:Frederick_Francis_II_of_Mecklenburg-Schwerin ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt .
+
+data:Elisabeth_of_Saxe-Altenburg a :Woman .
+
+data:Frederick_Augustus_II_of_Oldenburg a :Man ;
+    :hasBirthYear 1852 ;
+    :hasDeathYear 1931 ;
+    :hasFather data:Peter_II_of_Oldenburg ;
+    :hasMother data:Elisabeth_of_Saxe-Altenburg .
+
+data:Frederick_Francis_II_of_Mecklenburg-Schwerin a :Man .
 
 data:Friedrich_of_Waldeck_and_Pyrmont a :Man .
 
-data:Helena_of_Waldeck_and_Pyrmont a :Woman .
+data:Marie_of_Schwarzburg-Rudolstadt a :Woman .
 
-data:Nikolaus_of_Oldenburg a :Man .
+data:Peter_II_of_Oldenburg a :Man .
+
+data:Rose_Marston a :Woman ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1957 .
+
+data:Rudolf_von_Schutzbar_genannt_Milchling a :Man ;
+    :hasBirthYear 1853 ;
+    :hasDeathYear 1935 .
 

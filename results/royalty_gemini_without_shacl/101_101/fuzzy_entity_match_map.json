@@ -16,42 +16,35 @@
       "qid": "Q1797936",
       "label": "Gustav, 7th Prince of Sayn-Wittgenstein-Berleburg",
       "distance": 0,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg",
-      "qid": "Q1797989",
-      "label": "Princess Alexandra of Sayn-Wittgenstein-Berleburg",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Benedikte_of_Denmark",
       "qid": "Q817052",
       "label": "Princess Benedikte of Denmark",
       "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg",
-      "qid": "Q265691",
-      "label": "Princess Nathalie of Sayn-Wittgenstein-Berleburg",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg",
       "qid": "Q62492",
       "label": "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Frederik_X_of_Denmark",
-      "qid": "Q1004037",
-      "label": "Frederik X of Denmark",
+      "uri": "http://example.com/data#Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg",
+      "qid": "Q1797989",
+      "label": "Princess Alexandra of Sayn-Wittgenstein-Berleburg",
       "distance": 2,
-      "gender": "male"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg",
+      "qid": "Q265691",
+      "label": "Princess Nathalie of Sayn-Wittgenstein-Berleburg",
+      "distance": 2,
+      "gender": null
     }
   ],
   "entities": [
@@ -65,12 +58,12 @@
       "ground_truth_uri": "http://example.com/data#Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg",
       "ground_truth_qid": "Q1797989",
       "ground_truth_label": "Princess Alexandra of Sayn-Wittgenstein-Berleburg",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Alexandra of Sayn-Wittgenstein-Berleburg",
       "best_candidate_label": "Princess Alexandra of Sayn-Wittgenstein-Berleburg",
       "best_candidate_qid": "Q1797989",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -84,11 +77,11 @@
       "ground_truth_qid": "Q817052",
       "ground_truth_label": "Princess Benedikte of Denmark",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Benedikte of Denmark",
       "best_candidate_label": "Princess Benedikte of Denmark",
       "best_candidate_qid": "Q817052",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -101,31 +94,31 @@
       "ground_truth_uri": "http://example.com/data#Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg",
       "ground_truth_qid": "Q265691",
       "ground_truth_label": "Princess Nathalie of Sayn-Wittgenstein-Berleburg",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Nathalie of Sayn-Wittgenstein-Berleburg",
       "best_candidate_label": "Princess Nathalie of Sayn-Wittgenstein-Berleburg",
       "best_candidate_qid": "Q265691",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/Richard%2C_6th_Prince_of_Sayn-Wittgenstein-Berleburg",
-      "extracted_local_name": "Richard%2C_6th_Prince_of_Sayn-Wittgenstein-Berleburg",
-      "embedding_text": "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg",
+      "extracted_uri": "http://example.org/data/Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg",
+      "extracted_local_name": "Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg",
+      "embedding_text": "Gustav 7th Prince of Sayn-Wittgenstein-Berleburg",
       "extracted_gender": "male",
       "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg",
-      "ground_truth_qid": "Q62492",
-      "ground_truth_label": "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg",
-      "best_candidate_label": "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg",
-      "best_candidate_qid": "Q62492",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 1.0
+      "score": 0.9857142857142858,
+      "ground_truth_uri": "http://example.com/data#Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg",
+      "ground_truth_qid": "Q1797936",
+      "ground_truth_label": "Gustav, 7th Prince of Sayn-Wittgenstein-Berleburg",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Gustav- 7th Prince of Sayn-Wittgenstein-Berleburg",
+      "best_candidate_label": "Gustav, 7th Prince of Sayn-Wittgenstein-Berleburg",
+      "best_candidate_qid": "Q1797936",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9857142857142858
     },
     {
       "extracted_uri": "http://example.org/data/Prince_Robin_zu_Sayn-Wittgenstein-Berleburg",
@@ -133,17 +126,17 @@
       "embedding_text": "Prince Robin zu Sayn-Wittgenstein-Berleburg",
       "extracted_gender": "male",
       "matched": true,
-      "score": 0.8764705882352941,
-      "ground_truth_uri": "http://example.com/data#Gustav-_7th_Prince_of_Sayn-Wittgenstein-Berleburg",
-      "ground_truth_qid": "Q1797936",
-      "ground_truth_label": "Gustav, 7th Prince of Sayn-Wittgenstein-Berleburg",
-      "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Prince Gustav, 7th Prince of Sayn-Wittgenstein-Berleburg",
-      "best_candidate_label": "Gustav, 7th Prince of Sayn-Wittgenstein-Berleburg",
-      "best_candidate_qid": "Q1797936",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.8764705882352941
+      "score": 0.8409090909090909,
+      "ground_truth_uri": "http://example.com/data#Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg",
+      "ground_truth_qid": "Q62492",
+      "ground_truth_label": "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Richard Prince zu Sayn-Wittgenstein-Berleburg",
+      "best_candidate_label": "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg",
+      "best_candidate_qid": "Q62492",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8409090909090909
     },
     {
       "extracted_uri": "http://example.org/data/Carina_Axelsson",
@@ -160,13 +153,13 @@
       "best_candidate_match_text": "Princess Benedikte of Denmark",
       "best_candidate_label": "Princess Benedikte of Denmark",
       "best_candidate_qid": "Q817052",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.36363636363636365
     },
     {
-      "extracted_uri": "http://example.org/data/Gustav",
-      "extracted_local_name": "Gustav",
-      "embedding_text": "Gustav",
+      "extracted_uri": "http://example.org/data/Count_Richard_von_Pfeil_und_Klein-Ellguth",
+      "extracted_local_name": "Count_Richard_von_Pfeil_und_Klein-Ellguth",
+      "embedding_text": "Count Richard von Pfeil und Klein-Ellguth",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -175,11 +168,47 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Gustav of Sayn-Wittgenstein-Berleburg",
-      "best_candidate_label": "Gustav, 7th Prince of Sayn-Wittgenstein-Berleburg",
-      "best_candidate_qid": "Q1797936",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.27906976744186046
+      "best_candidate_match_text": "Richard Prince zu Sayn-Wittgenstein-Berleburg",
+      "best_candidate_label": "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg",
+      "best_candidate_qid": "Q62492",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4418604651162791
+    },
+    {
+      "extracted_uri": "http://example.org/data/King_Frederik_X_of_Denmark",
+      "extracted_local_name": "King_Frederik_X_of_Denmark",
+      "embedding_text": "King Frederik X of Denmark",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Benedikte Astrid Ingeborg Ingrid",
+      "best_candidate_label": "Princess Benedikte of Denmark",
+      "best_candidate_qid": "Q817052",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.27586206896551724
+    },
+    {
+      "extracted_uri": "http://example.org/data/Konstantin_Johannsmann",
+      "extracted_local_name": "Konstantin_Johannsmann",
+      "embedding_text": "Konstantin Johannsmann",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Nathalie, Mrs. Johannsmann",
+      "best_candidate_label": "Princess Nathalie of Sayn-Wittgenstein-Berleburg",
+      "best_candidate_qid": "Q265691",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.49122807017543857
     },
     {
       "extracted_uri": "http://example.org/data/Prince_Gustav_Albrecht",
@@ -196,8 +225,26 @@
       "best_candidate_match_text": "Richard Prince zu Sayn-Wittgenstein-Berleburg",
       "best_candidate_label": "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg",
       "best_candidate_qid": "Q62492",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.3880597014925373
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Vincent_of_Denmark",
+      "extracted_local_name": "Prince_Vincent_of_Denmark",
+      "embedding_text": "Prince Vincent of Denmark",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Benedikte Astrid Ingeborg Ingrid",
+      "best_candidate_label": "Princess Benedikte of Denmark",
+      "best_candidate_qid": "Q817052",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2807017543859649
     },
     {
       "extracted_uri": "http://example.org/data/Princess_Mafalda",
@@ -214,13 +261,31 @@
       "best_candidate_match_text": "Nathalie Xenia Margareta Benedikte Prinzessin zu Sayn-Wittgenstein-Berleburg",
       "best_candidate_label": "Princess Nathalie of Sayn-Wittgenstein-Berleburg",
       "best_candidate_qid": "Q265691",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.21739130434782608
+    },
+    {
+      "extracted_uri": "http://example.org/data/Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg",
+      "extracted_local_name": "Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg",
+      "embedding_text": "Richard 6th Prince of Sayn-Wittgenstein-Berleburg",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
     }
   ],
   "summary": {
-    "entities_total": 9,
+    "entities_total": 13,
     "entities_matched": 5,
-    "entities_unmatched": 4
+    "entities_unmatched": 8
   }
 }

@@ -1,0 +1,77 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:Female a :Female,
+        :Sex .
+
+data:DianaPrincessOfWales a :Person,
+        :Woman ;
+    :hasRelation data:DianaPrincessOfWales ;
+    :hasSex data:Female ;
+    :hasSister data:DianaPrincessOfWales ;
+    :isBloodrelationOf data:DianaPrincessOfWales ;
+    :isSiblingOf data:DianaPrincessOfWales ;
+    :isSisterOf data:DianaPrincessOfWales .
+
+data:AntoniaOfPrussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MaryWellesley ;
+    :hasDaughter data:MaryWellesley ;
+    :hasRelation data:AntoniaOfPrussia,
+        data:CharlesWellesley,
+        data:MaryWellesley ;
+    :hasSex data:Female ;
+    :hasSister data:AntoniaOfPrussia ;
+    :isAncestorOf data:MaryWellesley ;
+    :isAuntOf data:MaryWellesley ;
+    :isBloodrelationOf data:AntoniaOfPrussia ;
+    :isMotherOf data:MaryWellesley ;
+    :isParentOf data:MaryWellesley ;
+    :isSiblingOf data:AntoniaOfPrussia ;
+    :isSisterOf data:AntoniaOfPrussia .
+
+data:CharlesWellesley a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:CharlesWellesley ;
+    :hasChild data:MaryWellesley ;
+    :hasDaughter data:MaryWellesley ;
+    :hasRelation data:AntoniaOfPrussia,
+        data:CharlesWellesley,
+        data:MaryWellesley ;
+    :hasSex data:Male ;
+    :isAncestorOf data:MaryWellesley ;
+    :isBloodrelationOf data:CharlesWellesley ;
+    :isBrotherOf data:CharlesWellesley ;
+    :isFatherOf data:MaryWellesley ;
+    :isParentOf data:MaryWellesley ;
+    :isSiblingOf data:CharlesWellesley ;
+    :isUncleOf data:MaryWellesley .
+
+data:MaryWellesley a :Person,
+        :Woman ;
+    :hasAncestor data:AntoniaOfPrussia,
+        data:CharlesWellesley ;
+    :hasBirthYear 1986 ;
+    :hasFather data:CharlesWellesley ;
+    :hasMother data:AntoniaOfPrussia ;
+    :hasParent data:AntoniaOfPrussia,
+        data:CharlesWellesley ;
+    :hasRelation data:AntoniaOfPrussia,
+        data:CharlesWellesley,
+        data:MaryWellesley ;
+    :hasSex data:Female ;
+    :hasSister data:MaryWellesley ;
+    :isBloodrelationOf data:MaryWellesley ;
+    :isChildOf data:AntoniaOfPrussia,
+        data:CharlesWellesley ;
+    :isDaughterOf data:AntoniaOfPrussia,
+        data:CharlesWellesley ;
+    :isSiblingOf data:MaryWellesley ;
+    :isSisterOf data:MaryWellesley .
+

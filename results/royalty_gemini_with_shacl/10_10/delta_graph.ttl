@@ -2,46 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Philip_Louis_Johnson a :Man,
-        :Person ;
-    :isSonOf data:John_Mitchell_Johnson,
-        data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris .
+data:Philip_Louis_Johnson a :Man ;
+    :hasFather data:John_Mitchell_Johnson ;
+    :hasMother data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+    :hasSex data:Male .
 
 data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman .
+        :Woman ;
+    :hasSex data:Female .
 
 data:Cecilie_of_Prussia a :Ancestor,
-        :Person,
         :Woman ;
     :hasBirthYear 1917 ;
     :hasDeathYear 1975 ;
     :hasFather data:Wilhelm_German_Crown_Prince ;
     :hasMarriageYear 1949 ;
     :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-    :hasRelation data:Clyde_Kenneth_Harris .
-
-data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasRelation data:John_Mitchell_Johnson ;
-    :isDaughterOf data:Cecilie_of_Prussia,
-        data:Clyde_Kenneth_Harris .
-
-data:Wilhelm_German_Crown_Prince a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Wilhelm_II .
-
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person .
-
-data:Clyde_Kenneth_Harris a :Ancestor,
-        :Man,
-        :Person .
+    :hasRelation data:Clyde_Kenneth_Harris ;
+    :hasSex data:Female .
 
 data:John_Mitchell_Johnson a :Ancestor,
-        :Man,
-        :Person .
+        :Man ;
+    :hasSex data:Male .
+
+data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris a :Ancestor,
+        :Woman ;
+    :hasFather data:Clyde_Kenneth_Harris ;
+    :hasMother data:Cecilie_of_Prussia ;
+    :hasSex data:Female .
+
+data:Wilhelm_German_Crown_Prince a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Clyde_Kenneth_Harris a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

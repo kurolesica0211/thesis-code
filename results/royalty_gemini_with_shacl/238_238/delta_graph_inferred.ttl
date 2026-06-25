@@ -1,0 +1,238 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne_Rowell a :Ancestor,
+        :Woman ;
+    :hasChild data:Roberta_Cavanagh ;
+    :hasDaughter data:Roberta_Cavanagh ;
+    :hasRelation data:Anne_Rowell,
+        data:Franz_Ulrich,
+        data:Helena_Victoria_Hutten-Czapska,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Kinsky_son,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Roberta_Cavanagh,
+        data:Roberto_Cavanagh,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :hasSister data:Anne_Rowell ;
+    :isAncestorOf data:Roberta_Cavanagh ;
+    :isAuntOf data:Roberta_Cavanagh ;
+    :isBloodrelationOf data:Anne_Rowell ;
+    :isMotherOf data:Roberta_Cavanagh ;
+    :isParentOf data:Roberta_Cavanagh ;
+    :isSiblingOf data:Anne_Rowell ;
+    :isSisterOf data:Anne_Rowell .
+
+data:Helena_Victoria_Hutten-Czapska a :Ancestor,
+        :Woman ;
+    :hasChild data:Kinsky_son ;
+    :hasRelation data:Anne_Rowell,
+        data:Franz_Ulrich,
+        data:Helena_Victoria_Hutten-Czapska,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Kinsky_son,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Roberta_Cavanagh,
+        data:Roberto_Cavanagh,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :hasSister data:Helena_Victoria_Hutten-Czapska ;
+    :hasSon data:Kinsky_son ;
+    :isAncestorOf data:Kinsky_son ;
+    :isAuntOf data:Kinsky_son ;
+    :isBloodrelationOf data:Helena_Victoria_Hutten-Czapska ;
+    :isMotherOf data:Kinsky_son ;
+    :isParentOf data:Kinsky_son ;
+    :isSiblingOf data:Helena_Victoria_Hutten-Czapska ;
+    :isSisterOf data:Helena_Victoria_Hutten-Czapska .
+
+data:Roberto_Cavanagh a :Ancestor,
+        :Man ;
+    :hasBrother data:Roberto_Cavanagh ;
+    :hasChild data:Roberta_Cavanagh ;
+    :hasDaughter data:Roberta_Cavanagh ;
+    :hasRelation data:Anne_Rowell,
+        data:Franz_Ulrich,
+        data:Helena_Victoria_Hutten-Czapska,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Kinsky_son,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Roberta_Cavanagh,
+        data:Roberto_Cavanagh,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :isAncestorOf data:Roberta_Cavanagh ;
+    :isBloodrelationOf data:Roberto_Cavanagh ;
+    :isBrotherOf data:Roberto_Cavanagh ;
+    :isFatherOf data:Roberta_Cavanagh ;
+    :isParentOf data:Roberta_Cavanagh ;
+    :isSiblingOf data:Roberto_Cavanagh ;
+    :isUncleOf data:Roberta_Cavanagh .
+
+data:Ulrich_10th_Prince_Kinsky a :Ancestor,
+        :Man ;
+    :hasBrother data:Ulrich_10th_Prince_Kinsky ;
+    :hasChild data:Franz_Ulrich ;
+    :hasRelation data:Anne_Rowell,
+        data:Franz_Ulrich,
+        data:Helena_Victoria_Hutten-Czapska,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Kinsky_son,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Roberta_Cavanagh,
+        data:Roberto_Cavanagh,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :hasSon data:Franz_Ulrich ;
+    :isAncestorOf data:Franz_Ulrich,
+        data:Kinsky_son ;
+    :isBloodrelationOf data:Ulrich_10th_Prince_Kinsky ;
+    :isBrotherOf data:Ulrich_10th_Prince_Kinsky ;
+    :isFatherOf data:Franz_Ulrich ;
+    :isParentOf data:Franz_Ulrich ;
+    :isSiblingOf data:Ulrich_10th_Prince_Kinsky ;
+    :isUncleOf data:Franz_Ulrich .
+
+data:Hilmar_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Man ;
+    :hasBrother data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :hasChild data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :hasDaughter data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Anne_Rowell,
+        data:Franz_Ulrich,
+        data:Helena_Victoria_Hutten-Czapska,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Kinsky_son,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Roberta_Cavanagh,
+        data:Roberto_Cavanagh,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :isAncestorOf data:Franz_Ulrich,
+        data:Kinsky_son,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :isBloodrelationOf data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :isBrotherOf data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :isFatherOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :isParentOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :isSiblingOf data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :isUncleOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen .
+
+data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :hasBirthYear 1900 ;
+    :hasChild data:Franz_Ulrich ;
+    :hasDeathYear 1974 ;
+    :hasFather data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :hasParent data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :hasRelation data:Anne_Rowell,
+        data:Franz_Ulrich,
+        data:Helena_Victoria_Hutten-Czapska,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Kinsky_son,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Roberta_Cavanagh,
+        data:Roberto_Cavanagh,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :hasSister data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :hasSon data:Franz_Ulrich ;
+    :isAncestorOf data:Franz_Ulrich,
+        data:Kinsky_son ;
+    :isAuntOf data:Franz_Ulrich ;
+    :isBloodrelationOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :isChildOf data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :isDaughterOf data:Hilmar_von_dem_Bussche-Haddenhausen ;
+    :isMotherOf data:Franz_Ulrich ;
+    :isParentOf data:Franz_Ulrich ;
+    :isSiblingOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :isSisterOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen .
+
+data:Roberta_Cavanagh a :Woman ;
+    :hasAncestor data:Anne_Rowell,
+        data:Roberto_Cavanagh ;
+    :hasBirthYear 1942 ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Roberto_Cavanagh ;
+    :hasMother data:Anne_Rowell ;
+    :hasParent data:Anne_Rowell,
+        data:Roberto_Cavanagh ;
+    :hasRelation data:Anne_Rowell,
+        data:Franz_Ulrich,
+        data:Helena_Victoria_Hutten-Czapska,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Kinsky_son,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Roberta_Cavanagh,
+        data:Roberto_Cavanagh,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :hasSister data:Roberta_Cavanagh ;
+    :isBloodrelationOf data:Roberta_Cavanagh ;
+    :isChildOf data:Anne_Rowell,
+        data:Roberto_Cavanagh ;
+    :isDaughterOf data:Anne_Rowell,
+        data:Roberto_Cavanagh ;
+    :isSiblingOf data:Roberta_Cavanagh ;
+    :isSisterOf data:Roberta_Cavanagh .
+
+data:Kinsky_son a :Man ;
+    :hasAncestor data:Franz_Ulrich,
+        data:Helena_Victoria_Hutten-Czapska,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :hasBrother data:Kinsky_son ;
+    :hasFather data:Franz_Ulrich ;
+    :hasMother data:Helena_Victoria_Hutten-Czapska ;
+    :hasParent data:Franz_Ulrich,
+        data:Helena_Victoria_Hutten-Czapska ;
+    :hasRelation data:Anne_Rowell,
+        data:Franz_Ulrich,
+        data:Helena_Victoria_Hutten-Czapska,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Kinsky_son,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Roberta_Cavanagh,
+        data:Roberto_Cavanagh,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :isBloodrelationOf data:Kinsky_son ;
+    :isBrotherOf data:Kinsky_son ;
+    :isChildOf data:Franz_Ulrich,
+        data:Helena_Victoria_Hutten-Czapska ;
+    :isSiblingOf data:Kinsky_son ;
+    :isSonOf data:Franz_Ulrich,
+        data:Helena_Victoria_Hutten-Czapska .
+
+data:Franz_Ulrich a :Ancestor,
+        :Man ;
+    :hasAncestor data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Franz_Ulrich ;
+    :hasChild data:Kinsky_son ;
+    :hasDeathYear 2009 ;
+    :hasFather data:Ulrich_10th_Prince_Kinsky ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen ;
+    :hasParent data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :hasRelation data:Anne_Rowell,
+        data:Franz_Ulrich,
+        data:Helena_Victoria_Hutten-Czapska,
+        data:Hilmar_von_dem_Bussche-Haddenhausen,
+        data:Kinsky_son,
+        data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Roberta_Cavanagh,
+        data:Roberto_Cavanagh,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :hasSon data:Kinsky_son ;
+    :isAncestorOf data:Kinsky_son ;
+    :isBloodrelationOf data:Franz_Ulrich ;
+    :isBrotherOf data:Franz_Ulrich ;
+    :isChildOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :isFatherOf data:Kinsky_son ;
+    :isParentOf data:Kinsky_son ;
+    :isSiblingOf data:Franz_Ulrich ;
+    :isSonOf data:Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen,
+        data:Ulrich_10th_Prince_Kinsky ;
+    :isUncleOf data:Kinsky_son .
+

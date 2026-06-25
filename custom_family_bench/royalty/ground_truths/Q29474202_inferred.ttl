@@ -1,0 +1,82 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Eudes_de_Orléans_e_Bragança a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Eudes de Orléans e Bragança"^^xsd:string ;
+    data:posIndicesFull "407:432"^^xsd:string ;
+    data:posIndicesPart "516:523"^^xsd:string ;
+    data:wdtLink wdt:Q7243973 ;
+    :alsoKnownAs "Dom Eudes de Orléans-Bragança e Wittelsbach"^^xsd:string,
+        "Eudes of Orleans-Braganza"^^xsd:string ;
+    :hasBrother data:Eudes_de_Orléans_e_Bragança ;
+    :hasChild data:Luiz_Philippe_of_Orléans-Braganza ;
+    :hasRelation data:Eudes_de_Orléans_e_Bragança,
+        data:Luiz_Philippe_of_Orléans-Braganza ;
+    :hasSex data:male ;
+    :hasSon data:Luiz_Philippe_of_Orléans-Braganza ;
+    :isAncestorOf data:Luiz_Philippe_of_Orléans-Braganza ;
+    :isBloodrelationOf data:Eudes_de_Orléans_e_Bragança ;
+    :isBrotherOf data:Eudes_de_Orléans_e_Bragança ;
+    :isFatherOf data:Luiz_Philippe_of_Orléans-Braganza ;
+    :isParentOf data:Luiz_Philippe_of_Orléans-Braganza ;
+    :isSiblingOf data:Eudes_de_Orléans_e_Bragança ;
+    :isUncleOf data:Luiz_Philippe_of_Orléans-Braganza .
+
+data:Luiz_Philippe_of_Orléans-Braganza a :Man,
+        :Person ;
+    rdfs:label "Luiz Philippe of Orléans-Braganza"^^xsd:string ;
+    data:posIndicesFull "0:33"^^xsd:string ;
+    data:posIndicesPart "1069:1073"^^xsd:string,
+        "1074:1082"^^xsd:string,
+        "1154:1158"^^xsd:string,
+        "1159:1167"^^xsd:string,
+        "256:260"^^xsd:string,
+        "261:269"^^xsd:string,
+        "346:350"^^xsd:string,
+        "351:359"^^xsd:string,
+        "465:469"^^xsd:string,
+        "470:478"^^xsd:string,
+        "516:523"^^xsd:string,
+        "524:532"^^xsd:string,
+        "534:538"^^xsd:string,
+        "539:547"^^xsd:string,
+        "745:749"^^xsd:string,
+        "750:758"^^xsd:string,
+        "841:845"^^xsd:string,
+        "846:854"^^xsd:string,
+        "962:966"^^xsd:string,
+        "967:975"^^xsd:string ;
+    data:wdtLink wdt:Q29474202 ;
+    :alsoKnownAs "Dom Luíz Felipe de Orléans-Bragança e de Moraes Barros"^^xsd:string,
+        "Prince Luiz Philippe of Orléans-Braganza"^^xsd:string ;
+    :hasAncestor data:Eudes_de_Orléans_e_Bragança ;
+    :hasBrother data:Luiz_Philippe_of_Orléans-Braganza ;
+    :hasFather data:Eudes_de_Orléans_e_Bragança ;
+    :hasParent data:Eudes_de_Orléans_e_Bragança ;
+    :hasRelation data:Eudes_de_Orléans_e_Bragança,
+        data:Luiz_Philippe_of_Orléans-Braganza ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Luiz_Philippe_of_Orléans-Braganza ;
+    :isBrotherOf data:Luiz_Philippe_of_Orléans-Braganza ;
+    :isChildOf data:Eudes_de_Orléans_e_Bragança ;
+    :isSiblingOf data:Luiz_Philippe_of_Orléans-Braganza ;
+    :isSonOf data:Eudes_de_Orléans_e_Bragança .
+

@@ -7,15 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Bernhard-_Prince_of_Saxe-Meiningen a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Bernhard-_Prince_of_Saxe-Meiningen a :Person ;
     rdfs:label "Bernhard, Prince of Saxe-Meiningen" ;
     data:posIndicesFull "0:34" ;
     data:posIndicesPart "1073:1081",
@@ -44,24 +36,24 @@ data:Bernhard-_Prince_of_Saxe-Meiningen a :Man,
     data:wdtLink wdt:Q746752 ;
     :alsoKnownAs "Bernhard Friedrich Julius Heinrich",
         "Bernhard Prinz von Sachsen-Meiningen" ;
-    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
     :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-    :hasSex data:male ;
-    :isChildOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-    :isSonOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+    :hasSex data:male .
 
-data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Person ;
     rdfs:label "Countess Adelaide of Lippe-Biesterfeld" ;
     data:posIndicesFull "300:338" ;
     data:posIndicesPart "450:455",
         "456:467" ;
     data:wdtLink wdt:Q2085981 ;
-    :hasChild data:Bernhard-_Prince_of_Saxe-Meiningen ;
-    :hasSex data:female ;
-    :hasSon data:Bernhard-_Prince_of_Saxe-Meiningen ;
-    :isMotherOf data:Bernhard-_Prince_of_Saxe-Meiningen ;
-    :isParentOf data:Bernhard-_Prince_of_Saxe-Meiningen .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

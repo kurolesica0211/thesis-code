@@ -69,44 +69,22 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Nina Georgievna of Russia (Russian: Нина Георгиевна) (20 June 1901 – 27 February 1974), was the elder daughter of Grand Duke George Mikhailovich and Grand Duchess Maria Georgievna of Russia.
-A great-granddaughter of Tsar Nicholas I of Russia, she left her native country in 1914, before World War I, finished her education in England, and spent the rest of her life in exile.
-In London in 1922, she married Prince Paul Chavchavadze, a descendant of the last king of Georgia.
-They had one child, Prince David Chavchavadze, born there two years later.
-Princess Nina was an artist, her husband worked as an author; he wrote five books and translated several others.
-Their son, Prince David Chavchavadze, served with the U.S. Army during World War II and, thanks in part to his knowledge of Russian, eventually became a CIA officer.
-After his retirement, he wrote his memoirs and published those of his grandmother, Grand Duchess George, as well as a book about the grand dukes of Russia.
-Early life
+Prince Heinrich Wilhelm Konstantin Viktor Franz of Hesse-Kassel (30 October 1927 – 18 November 1999), also known as Enrico d'Assia, was the second child of Prince Philipp of Hesse and Princess Mafalda of Savoy.
+Heinrich became an artist, set designer, and memoirist after World War II.
+Life
 
-Princess Nina was born on June 20  1901 in the New Mikhailovsky Palace on the Palace Embankment in Saint Petersburg, the residence of her paternal grandfather, Grand Duke Michael Nicolaievich of Russia.
-She was the elder daughter of Grand Duke George Mikhailovich and Grand Duchess Maria Georgievna of Russia.
-Through her father, she was a member of the Romanov family, and princess of the Imperial blood as a great-granddaughter of Tsar Nicholas I of Russia.
-Nina's mother was a princess of Greece and Denmark, and on her maternal side, Nina was a granddaughter of King George I of Greece, great-granddaughter of King Christian IX of Denmark and related to members of many European royal families.
-Princess Nina spent the first years of her life in the family's apartments at the New Mikhailovsky Palace.
-A contemporary of Tsar Nicholas II two youngest daughters, Princess Nina and her only sibling Princess Xenia, played sometimes with them, while they were in the Imperial capital.
-The marriage of Nina's parents was unhappy.
-Grand Duke George was a devoted father, and the two sisters were close to him, but Grand Duchess Maria Georgievna never liked Russia and eventually became estranged from her husband.
-When the war broke out a month after her arrival, the Grand Duchess did not rush back to Russia and later it was too dangerous to attempt a return.
-Princess Nina and her sister never saw their father again.
-During the turbulent years of World War I and the Russian Revolution, Princess Nina remained living safely in London with her mother and her sister.
-Marriage
-
-Princess Nina married Prince Paul Alexandrovich Chavchavadze (1899–1971) on 3 September 1922 in London.
-Paul descended from the House of Chavchavadze of the Kakheti province in Georgia, and also, in a direct line, from the last King of Georgia, George XII.
-By the time they were married, the world they knew had changed radically, with the collapse of the feudal system in Russia, the rise of the Bolsheviks, and annexation of Georgia by the Soviet Union.
-Prince Paul, who also lost his father at the hands of the Bolsheviks, served in the military service on two continents.
-The couple had an only child, Prince David Chavchavadze, born in 1924 in London.
-In 1927, Princess Nina moved with her family to the United States, where they settled in New York.
-Princess Nina was an artist, her husband worked as an author; he wrote five books and translated several others.
-Their son, Prince David Chavchavadze, thanks in part to his knowledge of Russian, eventually became a CIA officer.
-After his retirement, he wrote a book about the Grand Dukes of Russia.
-Princess Nina's husband died in 1971, she outlived him for only a couple of years.
+Prince Heinrich was born in Rome, Italy, as the second son of Prince Philipp of Hesse and Princess Mafalda of Savoy, daughter of King Victor Emmanuel III of Italy.
+During the Second World War, Heinrich's father, an important former aristocratic Nazi party member, was arrested by the Gestapo.
+Heinrich and his siblings (Moritz, Otto and Elisabeth) were given sanctuary in the Vatican under the care of their aunt and uncle, Margaret Campbell Geddes and Louis, Prince of Hesse and by Rhine, who adopted them.
+Heinrich was an artist and set designer, active mainly in Italy under the name Enrico d'Assia.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +100,9 @@ Princess Nina's husband died in 1971, she outlived him for only a couple of year
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +117,23 @@ Princess Nina's husband died in 1971, she outlived him for only a couple of year
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +151,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +233,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +256,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +276,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +286,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +326,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,132 +425,153 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (68f7ca58-5186-4301-b85a-0d4e70902a01)
- Call ID: 68f7ca58-5186-4301-b85a-0d4e70902a01
-  Args:
-    type: :Woman
-    source: Nina_Georgievna
-  AssignClass (52c3a27f-bc8b-471b-803d-38f2ae5bcc09)
- Call ID: 52c3a27f-bc8b-471b-803d-38f2ae5bcc09
-  Args:
-    source: George_Mikhailovich
-    type: :Man
-  AssignClass (f75bad56-f13e-4c46-83d3-485c81acab7b)
- Call ID: f75bad56-f13e-4c46-83d3-485c81acab7b
-  Args:
-    source: Maria_Georgievna
-    type: :Woman
-  AssignClass (cc17fcf5-303b-42b9-a80b-2b69b71d0ef9)
- Call ID: cc17fcf5-303b-42b9-a80b-2b69b71d0ef9
+  AssignClass (c53a7383-0935-46fd-ad73-2cc984008c58)
+ Call ID: c53a7383-0935-46fd-ad73-2cc984008c58
   Args:
     type: :Man
-    source: Paul_Chavchavadze
-  AssignClass (6bd7b2cf-dd10-4c50-8086-0e73b92f7c6f)
- Call ID: 6bd7b2cf-dd10-4c50-8086-0e73b92f7c6f
+    source: Prince_Heinrich_of_Hesse-Kassel
+  AssignClass (0fb70732-0494-46bd-955d-5a0577e8f2b4)
+ Call ID: 0fb70732-0494-46bd-955d-5a0577e8f2b4
   Args:
-    source: David_Chavchavadze
+    type: :Person
+    source: Prince_Heinrich_of_Hesse-Kassel
+  AssignClass (78aa553c-d71e-4485-87c9-cbdac3e1f33e)
+ Call ID: 78aa553c-d71e-4485-87c9-cbdac3e1f33e
+  Args:
+    source: Prince_Philipp_of_Hesse
     type: :Man
-  AssignClass (3c580f0f-2d3b-4755-be82-610ca4841564)
- Call ID: 3c580f0f-2d3b-4755-be82-610ca4841564
+  AssignClass (ab11423d-11e7-41a8-bdae-625d76d69b8d)
+ Call ID: ab11423d-11e7-41a8-bdae-625d76d69b8d
+  Args:
+    type: :Person
+    source: Prince_Philipp_of_Hesse
+  AssignClass (a3a2e19f-750c-4a6b-b3dd-a10fb2f28c90)
+ Call ID: a3a2e19f-750c-4a6b-b3dd-a10fb2f28c90
+  Args:
+    source: Princess_Mafalda_of_Savoy
+    type: :Woman
+  AssignClass (095c7571-857d-47ad-ac60-c62466fa94aa)
+ Call ID: 095c7571-857d-47ad-ac60-c62466fa94aa
+  Args:
+    source: Princess_Mafalda_of_Savoy
+    type: :Person
+  AssignClass (1dfc4fca-2723-4c6a-9cea-b95b29f65544)
+ Call ID: 1dfc4fca-2723-4c6a-9cea-b95b29f65544
+  Args:
+    type: :Man
+    source: King_Victor_Emmanuel_III_of_Italy
+  AssignClass (9650d11e-4c66-4832-83e3-1700cb02911a)
+ Call ID: 9650d11e-4c66-4832-83e3-1700cb02911a
+  Args:
+    type: :Person
+    source: King_Victor_Emmanuel_III_of_Italy
+  AssignClass (7e535e92-a33f-4080-b781-7340d47f9ca9)
+ Call ID: 7e535e92-a33f-4080-b781-7340d47f9ca9
+  Args:
+    type: :Man
+    source: Moritz_of_Hesse-Kassel
+  AssignClass (cc46486a-2877-4647-b1e0-598244745b53)
+ Call ID: cc46486a-2877-4647-b1e0-598244745b53
+  Args:
+    source: Moritz_of_Hesse-Kassel
+    type: :Person
+  AssignClass (7ae027c2-80b9-40e0-93cb-389d101f4de3)
+ Call ID: 7ae027c2-80b9-40e0-93cb-389d101f4de3
+  Args:
+    source: Otto_of_Hesse-Kassel
+    type: :Man
+  AssignClass (3af61885-011f-462c-8276-38bb4a54a114)
+ Call ID: 3af61885-011f-462c-8276-38bb4a54a114
+  Args:
+    source: Otto_of_Hesse-Kassel
+    type: :Person
+  AssignClass (3ae7584b-149a-4e38-aa64-7631515bf258)
+ Call ID: 3ae7584b-149a-4e38-aa64-7631515bf258
   Args:
     type: :Woman
-    source: Xenia
-  AddLiteral (63600852-c8ac-41c8-b3f3-526672bda68b)
- Call ID: 63600852-c8ac-41c8-b3f3-526672bda68b
+    source: Elisabeth_of_Hesse-Kassel
+  AssignClass (47f4012a-9b2e-4c10-8a5c-0e0d701d025e)
+ Call ID: 47f4012a-9b2e-4c10-8a5c-0e0d701d025e
   Args:
-    literal_value: 1901
-    literal_type: xsd:integer
+    type: :Person
+    source: Elisabeth_of_Hesse-Kassel
+  AssignClass (35980543-aa3e-471e-9dfc-41e826f06fa4)
+ Call ID: 35980543-aa3e-471e-9dfc-41e826f06fa4
+  Args:
+    source: Margaret_Campbell_Geddes
+    type: :Woman
+  AssignClass (d6324a25-8352-4896-bbbf-e14f65473a52)
+ Call ID: d6324a25-8352-4896-bbbf-e14f65473a52
+  Args:
+    source: Margaret_Campbell_Geddes
+    type: :Person
+  AssignClass (98bb38ef-7dcc-4d88-a382-fb3fb7e6d4a3)
+ Call ID: 98bb38ef-7dcc-4d88-a382-fb3fb7e6d4a3
+  Args:
+    type: :Man
+    source: Louis_Prince_of_Hesse_and_by_Rhine
+  AssignClass (748654c8-837d-4589-9b73-8cdbe8370312)
+ Call ID: 748654c8-837d-4589-9b73-8cdbe8370312
+  Args:
+    source: Louis_Prince_of_Hesse_and_by_Rhine
+    type: :Person
+  AddLiteral (3d64a1d4-8bda-45bb-b342-e238fafcaf35)
+ Call ID: 3d64a1d4-8bda-45bb-b342-e238fafcaf35
+  Args:
+    source: Prince_Heinrich_of_Hesse-Kassel
+    literal_type: xsd:string
+    relation: :alsoKnownAs
+    literal_value: Enrico d'Assia
+  AddLiteral (f4e34b77-4188-422d-b960-c2486e5864e6)
+ Call ID: f4e34b77-4188-422d-b960-c2486e5864e6
+  Args:
+    literal_value: 1927
     relation: :hasBirthYear
-    source: Nina_Georgievna
-  AddLiteral (14678f39-2081-4d43-93bf-168e55461ee3)
- Call ID: 14678f39-2081-4d43-93bf-168e55461ee3
-  Args:
     literal_type: xsd:integer
+    source: Prince_Heinrich_of_Hesse-Kassel
+  AddLiteral (093cdb05-7a24-400d-ac96-4b52ec3cafd1)
+ Call ID: 093cdb05-7a24-400d-ac96-4b52ec3cafd1
+  Args:
+    literal_value: 1999
     relation: :hasDeathYear
-    source: Nina_Georgievna
-    literal_value: 1974
-  AddTriple (e87a7d65-60e8-449a-876c-2c49b1cd1617)
- Call ID: e87a7d65-60e8-449a-876c-2c49b1cd1617
+    literal_type: xsd:integer
+    source: Prince_Heinrich_of_Hesse-Kassel
+  AddTriple (abcbbb8d-1073-4dd3-af6b-aab8684e8241)
+ Call ID: abcbbb8d-1073-4dd3-af6b-aab8684e8241
   Args:
-    source: Nina_Georgievna
     relation: :hasFather
-    target: George_Mikhailovich
-  AddTriple (d4f4f554-f4a2-4ef2-b02e-bcbeddcd2f2f)
- Call ID: d4f4f554-f4a2-4ef2-b02e-bcbeddcd2f2f
+    target: Prince_Philipp_of_Hesse
+    source: Prince_Heinrich_of_Hesse-Kassel
+  AddTriple (b39a615e-4c0a-4444-89a0-aa87e25c3c03)
+ Call ID: b39a615e-4c0a-4444-89a0-aa87e25c3c03
   Args:
-    target: Maria_Georgievna
     relation: :hasMother
-    source: Nina_Georgievna
-  AddTriple (12ca1d94-0a2b-4405-bcca-03b0bf49ff4a)
- Call ID: 12ca1d94-0a2b-4405-bcca-03b0bf49ff4a
+    source: Prince_Heinrich_of_Hesse-Kassel
+    target: Princess_Mafalda_of_Savoy
+  AddTriple (0ee82662-a843-47ea-888c-bd0aff62ebec)
+ Call ID: 0ee82662-a843-47ea-888c-bd0aff62ebec
   Args:
-    target: Xenia
-    source: Nina_Georgievna
+    relation: :hasFather
+    source: Princess_Mafalda_of_Savoy
+    target: King_Victor_Emmanuel_III_of_Italy
+  AddTriple (fadc38dd-fa68-46af-93fe-84a71606ec61)
+ Call ID: fadc38dd-fa68-46af-93fe-84a71606ec61
+  Args:
+    relation: :hasBrother
+    source: Prince_Heinrich_of_Hesse-Kassel
+    target: Moritz_of_Hesse-Kassel
+  AddTriple (7d9e1a7b-8ef8-43a2-8b3c-eb7a2d11f5c0)
+ Call ID: 7d9e1a7b-8ef8-43a2-8b3c-eb7a2d11f5c0
+  Args:
+    source: Prince_Heinrich_of_Hesse-Kassel
+    target: Otto_of_Hesse-Kassel
+    relation: :hasBrother
+  AddTriple (1fd07c5e-b79e-4884-b40e-f52a0886679b)
+ Call ID: 1fd07c5e-b79e-4884-b40e-f52a0886679b
+  Args:
+    target: Elisabeth_of_Hesse-Kassel
+    source: Prince_Heinrich_of_Hesse-Kassel
     relation: :hasSister
-  AddTriple (ee851fd9-6de1-47d4-86f1-b58d04863719)
- Call ID: ee851fd9-6de1-47d4-86f1-b58d04863719
-  Args:
-    target: Nina_Georgievna
-    source: Xenia
-    relation: :hasSister
-  AddTriple (0a8c9484-49ea-466d-8417-a643adc1eeac)
- Call ID: 0a8c9484-49ea-466d-8417-a643adc1eeac
-  Args:
-    target: George_Mikhailovich
-    relation: :hasFather
-    source: Xenia
-  AddTriple (7283885d-719d-4f51-989c-75eba5c1fffd)
- Call ID: 7283885d-719d-4f51-989c-75eba5c1fffd
-  Args:
-    source: Xenia
-    relation: :hasMother
-    target: Maria_Georgievna
-  AddLiteral (c1be8315-7bb5-4bdf-8348-bebdf0036cca)
- Call ID: c1be8315-7bb5-4bdf-8348-bebdf0036cca
-  Args:
-    literal_value: 1922
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: Nina_Georgievna
-  AddTriple (1a997c37-65c6-439f-ac65-1d0880046c8b)
- Call ID: 1a997c37-65c6-439f-ac65-1d0880046c8b
-  Args:
-    relation: :hasRelation
-    source: Nina_Georgievna
-    target: Paul_Chavchavadze
-  AddLiteral (3ab57591-c474-4758-844b-074b971e6c7f)
- Call ID: 3ab57591-c474-4758-844b-074b971e6c7f
-  Args:
-    literal_value: 1899
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Paul_Chavchavadze
-  AddLiteral (84f23c2c-aafc-404c-9032-8d9b700dff2b)
- Call ID: 84f23c2c-aafc-404c-9032-8d9b700dff2b
-  Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: Paul_Chavchavadze
-    literal_value: 1971
-  AddTriple (f63ab184-1bd9-46c3-a3a7-12cd2c127ab5)
- Call ID: f63ab184-1bd9-46c3-a3a7-12cd2c127ab5
-  Args:
-    source: David_Chavchavadze
-    relation: :hasFather
-    target: Paul_Chavchavadze
-  AddTriple (dab1d682-4ee8-4643-9346-8c90843f3e8e)
- Call ID: dab1d682-4ee8-4643-9346-8c90843f3e8e
-  Args:
-    target: Nina_Georgievna
-    source: David_Chavchavadze
-    relation: :hasMother
-  AddLiteral (c0b6be1c-a782-4b27-9e63-37a2f3ca2a2c)
- Call ID: c0b6be1c-a782-4b27-9e63-37a2f3ca2a2c
-  Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: David_Chavchavadze
-    literal_value: 1924
-  Finish (45cadb82-cc7a-4c10-9aa8-eda6a2330128)
- Call ID: 45cadb82-cc7a-4c10-9aa8-eda6a2330128
+  Finish (5f2d2de7-8448-42f3-a7c9-4a92d5d1d160)
+ Call ID: 5f2d2de7-8448-42f3-a7c9-4a92d5d1d160
   Args:

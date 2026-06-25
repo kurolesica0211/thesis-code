@@ -7,19 +7,13 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Infante_Carlos-_Duke_of_Calabria a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Infante_Carlos-_Duke_of_Calabria a :Person ;
     rdfs:label "Infante Carlos, Duke of Calabria" ;
     data:posIndicesFull "757:789" ;
     data:posIndicesPart "1512:1518",
         "1626:1634",
         "1790:1796",
         "1798:1802",
-        "1828:1835",
-        "1845:1849",
-        "1853:1861",
         "1938:1944",
         "2125:2129",
         "2257:2263",
@@ -30,7 +24,6 @@ data:Infante_Carlos-_Duke_of_Calabria a :Ancestor,
         "2800:2808",
         "2880:2884",
         "2955:2963",
-        "3034:3042",
         "3132:3140",
         "3146:3150",
         "3166:3174" ;
@@ -40,11 +33,11 @@ data:Infante_Carlos-_Duke_of_Calabria a :Ancestor,
         "Carlos of Bourbon-Two Sicilies",
         "Infante Carlos of Spain, Prince of Bourbon-Two Sicilies, Duke of Calabria",
         "Prince Carlos of Bourbon-Two Sicilies" ;
+    :hasParent data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria ;
     :hasSex data:male .
 
-data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Person ;
     rdfs:label "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo" ;
     data:posIndicesFull "1164:1168" ;
     data:wdtLink wdt:Q75317760 ;
@@ -53,32 +46,17 @@ data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Man,
         "Jaime di Borbone-Due Sicilie" ;
     :hasSex data:male .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:Princess_Anne_dOrléans a :Person ;
+    rdfs:label "Princess Anne d'Orléans" ;
+    data:wdtLink wdt:Q2072516 ;
+    :alsoKnownAs "Anne Maruerite Brigitte Marie d'Orléans",
+        "Anne d’Orléans",
+        "Princess Anne Marguerite Brigitte Marie d'Orléans",
+        "Princess Anne d’Orléans" ;
+    :hasParent data:Isabelle_of_Orléans-Braganza ;
+    :hasSex data:female .
 
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Isabelle_of_Orléans-Braganza a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Isabelle of Orléans-Braganza" ;
-    data:posIndicesFull "1127:1155",
-        "930:958" ;
-    data:posIndicesPart "2767:2774" ;
-    data:wdtLink wdt:Q261284 ;
-    :alsoKnownAs "Isabelle of Orleans-Braganza" ;
-    :hasChild data:Princess_Anne_dOrléans ;
-    :hasDaughter data:Princess_Anne_dOrléans ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Anne_dOrléans ;
-    :isParentOf data:Princess_Anne_dOrléans .
-
-data:Princess_Anne_of_Orléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Anne_of_Orléans a :Person ;
     rdfs:label "Princess Anne of Orléans" ;
     data:posIndicesFull "971:995" ;
     data:posIndicesPart "1274:1282",
@@ -101,17 +79,51 @@ data:Princess_Anne_of_Orléans a :Ancestor,
         "Princess Anne, Duchess of Aosta",
         "Princess Anne, The Dowager Duchess of Aosta",
         "Princess Anne, The Duchess of Aosta" ;
-    :hasMother data:Princess_Isabelle_dOrléans ;
     :hasParent data:Princess_Isabelle_dOrléans ;
-    :hasSex data:female ;
-    :isAuntOf data:Princess_Anne_dOrléans ;
-    :isChildOf data:Princess_Isabelle_dOrléans ;
-    :isDaughterOf data:Princess_Isabelle_dOrléans .
+    :hasSex data:female .
 
-data:Princess_Isabelle_dOrléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Infanta_Alicia-_Duchess_of_Calabria a :Person ;
+    rdfs:label "Infanta Alicia, Duchess of Calabria" ;
+    data:posIndicesFull "3007:3042" ;
+    data:posIndicesPart "3155:3162",
+        "3166:3174" ;
+    data:wdtLink wdt:Q33218 ;
+    :alsoKnownAs "Princess Alicia Maria Teresa Francesca Luisa Pia Anna Valeria of Bourbon-Parma",
+        "Princess Alicia of Bourbon-Parma" ;
+    :hasSex data:female .
+
+data:Infante_Alfonso-_Duke_of_Calabria a :Person ;
+    rdfs:label "Infante Alfonso, Duke of Calabria" ;
+    data:posIndicesFull "1828:1861" ;
+    data:posIndicesPart "2125:2129",
+        "2596:2600",
+        "2604:2612",
+        "2780:2784",
+        "2800:2808",
+        "2880:2884",
+        "2955:2963",
+        "3132:3140",
+        "3146:3150",
+        "3166:3174" ;
+    data:wdtLink wdt:Q1333222 ;
+    :hasSex data:male .
+
+data:Isabelle_of_Orléans-Braganza a :Person ;
+    rdfs:label "Isabelle of Orléans-Braganza" ;
+    data:posIndicesFull "1127:1155",
+        "930:958" ;
+    data:posIndicesPart "2767:2774" ;
+    data:wdtLink wdt:Q261284 ;
+    :alsoKnownAs "Isabelle of Orleans-Braganza" ;
+    :hasSex data:female .
+
+data:Princess_Isabelle_dOrléans a :Person ;
     rdfs:label "Princess Isabelle d’Orléans" ;
     data:posIndicesFull "1118:1146",
         "921:949" ;
@@ -122,25 +134,9 @@ data:Princess_Isabelle_dOrléans a :Ancestor,
         "2563:2571" ;
     data:wdtLink wdt:Q261322 ;
     :alsoKnownAs "Princess Isabelle of Orleans" ;
-    :hasChild data:Princess_Anne_of_Orléans ;
-    :hasDaughter data:Princess_Anne_of_Orléans ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Anne_of_Orléans ;
-    :isParentOf data:Princess_Anne_of_Orléans .
+    :hasSex data:female .
 
-data:Princess_Anne_dOrléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Anne d'Orléans" ;
-    data:wdtLink wdt:Q2072516 ;
-    :alsoKnownAs "Anne Maruerite Brigitte Marie d'Orléans",
-        "Anne d’Orléans",
-        "Princess Anne Marguerite Brigitte Marie d'Orléans",
-        "Princess Anne d’Orléans" ;
-    :hasMother data:Isabelle_of_Orléans-Braganza ;
-    :hasParent data:Isabelle_of_Orléans-Braganza ;
-    :hasSex data:female ;
-    :isChildOf data:Isabelle_of_Orléans-Braganza ;
-    :isDaughterOf data:Isabelle_of_Orléans-Braganza .
+data:male a :Male .
+
+data:female a :Female .
 

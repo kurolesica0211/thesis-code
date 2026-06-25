@@ -2,43 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Aschwin_of_Lippe-Biesterfeld a :Man ;
-    :hasBirthYear 1914 ;
-    :hasBrother data:Bernhard_of_Lippe-Biesterfeld ;
-    :hasDeathYear 1988 ;
-    :hasFather data:Bernhard_of_Lippe ;
-    :hasMarriageYear 1951 ;
-    :hasMother data:Armgard_of_Sierstorpff-Cramm ;
-    :hasRelation data:Simone_Arnoux .
+data:Nina_Georgievna a :Person,
+        :Woman ;
+    :hasMother data:Maria_of_Greece_and_Denmark .
 
-data:Constantijn_of_the_Netherlands a :Man .
+data:Xenia_Georgievna a :Person,
+        :Woman ;
+    :hasMother data:Maria_of_Greece_and_Denmark .
 
-data:Stephan_von_Watzdorf a :Man ;
-    :hasBirthYear 1942 ;
-    :hasFather data:Gottfried_Adam_Vollrat_von_Watzdorf ;
-    :hasMother data:Simone_Arnoux .
+data:Constantine_I_of_Greece a :Man,
+        :Person .
 
-data:Thilo_von_Watzdorf a :Man ;
-    :hasBirthYear 1944 ;
-    :hasFather data:Gottfried_Adam_Vollrat_von_Watzdorf ;
-    :hasMother data:Simone_Arnoux .
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person .
 
-data:Bernhard_of_Lippe-Biesterfeld a :Man ;
-    :hasFather data:Bernhard_of_Lippe ;
-    :hasMother data:Armgard_of_Sierstorpff-Cramm .
+data:George_Mikhailovich_of_Russia a :Man,
+        :Person .
 
-data:Armgard_of_Sierstorpff-Cramm a :Ancestor,
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
         :Woman .
 
-data:Bernhard_of_Lippe a :Ancestor,
-        :Man .
+data:Pericles_Ioannides a :Man,
+        :Person .
 
-data:Gottfried_Adam_Vollrat_von_Watzdorf a :Ancestor,
-        :Man .
-
-data:Simone_Arnoux a :Ancestor,
+data:Maria_of_Greece_and_Denmark a :Ancestor,
+        :Person,
         :Woman ;
-    :hasBirthYear 1915 ;
-    :hasDeathYear 2001 ;
-    :hasRelation data:Gottfried_Adam_Vollrat_von_Watzdorf .
+    :hasBirthYear 1876 ;
+    :hasDeathYear 1940 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1900,
+        1922 ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:George_Mikhailovich_of_Russia,
+        data:Pericles_Ioannides ;
+    :isSiblingOf data:Constantine_I_of_Greece .
 

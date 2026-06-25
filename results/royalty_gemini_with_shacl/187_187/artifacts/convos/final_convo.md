@@ -85,21 +85,198 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Infanta María Teresa of Spain (Spanish: María Teresa Isabel Eugenia del Patrocinio Diega de Borbón y Habsburgo, Infanta de España; 12 November 1882 – 23 September 1912) was the second eldest child and daughter of Alfonso XII of Spain and his second wife Maria Christina of Austria.
-Maria Teresa was an Infanta of Spain and a member of the House of Bourbon by birth.
-Marriage and issue
+Princess Theodora of Greece and Denmark (Greek: Θεοδώρα; 30 May 1906 – 16 October 1969) was a Greek and Danish princess by birth and Margravine of Baden through her marriage to Berthold, pretender to the throne of the Grand Duchy of Baden.
+The second of five children of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, Theodora spent a happy childhood between Athens and Corfu.
+For the young princess and her relatives, these conflicts had dramatic consequences and led to their exile in Switzerland (between 1917 and 1920), then in France and the United Kingdom (from 1922 to 1936).
+During their exile, Theodora and her family depended on the generosity of their foreign relatives, in particular Marie Bonaparte (who offered them accommodation in Saint-Cloud) and Lady Louis Mountbatten (who supported them financially).
+At the end of the 1920s, Theodora's mother was struck by a mental health crisis which led to her confinement in a Swiss psychiatric hospital.
+Shortly after, in 1931, Theodora married Berthold, Margrave of Baden, son of Chancellor of the German Reich Prince Maximilian.
+The princess gave birth to three children there: Margarita, Maximilian and Ludwig.
+Opposed to Nazism, Theodora and her husband kept their distance from the Nazi regime; however, this did not prevent Berthold from enlisting in the Wehrmacht at the start of the Second World War.
+Affected by the conflict, which divided her family into two factions, Theodora became involved in the German Red Cross and other charitable organizations.
+The defeat of Germany and its occupation by the Allies brought new upheavals in the life of Theodora and Berthold.
+Though not held by the Soviets, responsible for the death of several of their cousins, the couple was ostracized by the British royal family at the time of the marriage of Prince Philip, Theodora's only brother, to Princess Elizabeth of the United Kingdom (later Queen Elizabeth II) in 1947.
+Over the years, the couple was nevertheless reintegrated into the life of the European elite, as illustrated by their invitation and presence at the coronation of Elizabeth II in 1953 and at the wedding of Juan Carlos, Prince of Asturias, and Princess Sophia of Greece and Denmark in 1962.
+Theodora died of heart problems six years after her husband, in 1969.
+She was the paternal aunt of the Prince of Wales, who later became King Charles III.
+Biography
 
-Maria Teresa married her first cousin, Prince Ferdinand of Bavaria, Infante of Spain, eldest son and child of Prince Ludwig Ferdinand of Bavaria and his wife Infanta María de la Paz of Spain, on 12 January 1906 in Madrid.
-Maria Teresa and Ferdinand had four children:
+Childhood
 
+In Greece and abroad
 
-She passed away after giving birth to her last child.
+The second daughter of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, Theodora was born at Tatoi Palace, near Athens, on 30 May 1906.
+At the time of her birth, her father was traveling to Spain, where he represented the Greek royal family on the occasion of the marriage of King Alfonso XIII of Spain to Princess Victoria Eugenie of Battenberg, a cousin of her mother Alice.
+Baptised "Theodora" in honor of the Byzantine empress, but nicknamed "Dolla" by her family, the princess was raised within a united household, together with her elder sister Margarita, and younger sisters Cecilie, and Sophie.
+With their mother, Theodora and her sisters communicated in English, but they also used French, German, and Greek in the presence of their relatives and governesses.
+Theodora's early childhood was affected by the instability that the Kingdom of Greece experienced at the start of the twentieth century.
+Tired of attacks from the press and the opposition, Andrew and Alice found refuge in travel and spent most of the period between 1907 and 1908 outside the borders of their country.
+With their daughters, they stayed in the United Kingdom, Germany, Malta and Russia, where they reunited with their many relatives including Edward VII of the United Kingdom, Ernest Louis, Grand Duke of Hesse, Alexandra Feodorovna, and Prince and Princess Louis of Battenberg (Alice's parents).
+At this time, Theodora was introduced to her young maternal uncle and aunt, Louis and Louise, to whom she and her sister Margarita later became very close.
+In 1909, the Goudi coup occurred, a military putsch organized against the government of King George I of Greece, Theodora's grandfather.
+Shortly after this event, Prince Andrew and his brothers were forced to resign from the army.
+Concerned about the political situation of their country, Andrew and Alice once again found refuge abroad and stayed in the United Kingdom, France and Hesse.
+After considering a life in exile for a while, the couple returned to live in Greece, where their third daughter was born.
+At that time, Theodora was described by her maternal grandmother as a funny and imaginative little girl, but also very scatterbrained.
+The Balkan Wars and the First World War
+
+Between 1912 and 1913, Greece engaged in the Balkan Wars, which put the country in opposition to the Ottoman Empire and to Bulgaria.
+Called to join the army again, Prince Andrew served under Crown Prince Constantine, while Princess Alice worked as a nurse for wounded soldiers.
+Too young to follow their parents, Theodora and her sisters spent the duration of the conflict in Athens, with the exception of a brief stay in Thessaloniki in December 1912.
+Greece came out of the Balkan Wars with an expanded territory, but the conflict also led to the assassination of George I in March 1913.
+The death of the King of the Hellenes caused significant changes in the life of Theodora and her relatives.
+In his will, the sovereign bequeathed the Corfiote palace of Mon Repos to Andrew.
+After years of living in close proximity to the monarch, in the palaces of Athens and Tatoi, Andrew and his family therefore finally had their own residence.
+When peace returned, Andrew, Alice and their daughters left Greece in August 1913.
+After a visit to Germany, they stayed in the United Kingdom, with Theodora's maternal grandparents.
+Returning to Greece on 17 November 1913, the family was then retained in the country by Alice's fourth pregnancy and, above all, by the outbreak of the First World War.
+With Greece having proclaimed its neutrality, this new conflict initially hardly affected Theodora and her relatives.
+Things changed as war entered into the life of the country's people.
+Stationed in Thessaloniki with his garrison, Andrew was thus confronted with the occupation of the city by the Allies in October 1915.
+Shortly after, in December, the routed Serbian army found refuge in Corfu, leading Alice and her daughters to abandon Mon Repos for the capital.
+Over the months, the amount of threats against members of the royal dynasty increased.
+In addition, on 1 December, the French navy bombarded the royal palace in Athens, forcing Theodora and her sisters to take refuge in the cellars with their mother.
+Exile in Switzerland
+
+In June 1917, King Constantine I was deposed and driven out of Greece by the Allies, who replaced him on the throne by his second son, the young Alexander.
+Fifteen days later, Theodora's family was in turn forced into exile in order to remove the possibility of the new monarch being influenced by those close to him.
+Following the Russian Revolution, several of Theodora's relatives (the Romanovs)  were executed in Russia.
+Shortly after these events, the Grand Ducal family of Hesse, to which Theodora was closely related through her mother, was overthrown along with all the other German dynasties during the winter of 1918–1919.
+At the beginning of 1919, Theodora nevertheless had the joy of reuniting with her paternal grandmother, the Dowager Queen Olga, spared by the Bolsheviks thanks to the diplomatic intervention of the Danes.
+In the months that followed, she also reconnected with her maternal grandparents, whom the war had forced to abandon the name of Battenberg for that of Mountbatten.
+For Theodora, who now formed a duo with her elder sister Margarita, exile was synonymous with sadness but also an opportunity for long family reunions and walks in the mountains.
+Young adulthood
+
+Brief return to Greece
+
+On 2 October 1920, King Alexander, cousin of Theodora, was bitten by a domestic monkey during a walk in Tatoi.
+The death of the sovereign caused a violent institutional crisis in Greece.
+Humiliated, he retired abroad while a referendum reinstalled Constantine I on the throne.
+Prince Andrew was received triumphantly in Athens on 23 November 1920, and his wife and four daughters joined him a few days later.
+Theodora then returned to live in Corfu with her family.
+At the same time, Princess Alice found out that she was pregnant again.
+On 10 June 1921, the family welcomed Prince Philip of Greece and Denmark (later Prince Philip, Duke of Edinburgh, 1921–2021).
+The joy that surrounded this birth, however, was obscured by the absence of Prince Andrew, who joined the Greek forces in Asia Minor during the Occupation of Smyrna.
+Despite concerns about the war, Theodora and her siblings enjoyed life at Mon Repos, where they received a visit from their maternal grandmother and their aunt Louise in the spring of 1922.
+In the park near the palace, built on an ancient cemetery, the princesses devoted themselves to archeology and discovered some pottery, bronze pieces and bones.
+During this period, Theodora and her sisters also participated, for the first time, in a number of great social events.
+In March 1921, the princesses attended in Athens the wedding of their cousin Helen to Crown Prince Carol of Romania.
+In July 1922, they went to the United Kingdom to be bridesmaids at the wedding of their uncle Louis Mountbatten to the wealthy heiress Edwina Ashley.
+However, the military defeat of Greece against Turkey and the political unrest that it caused disrupted the life of Theodora and her family.
+In September 1922, Constantine I abdicated in favor of his eldest son, George II.
+A month later, Prince Andrew was arrested before being tried by a military tribunal, which declared him responsible for the defeat of the Sakarya.
+Saved from execution by the intervention of foreign chancelleries, the prince was condemned to banishment and cashiering.
+After a brief stop in Corfu, the prince and his relatives hurriedly left Greece aboard HMS Calypso in early December 1922.
+In the UK and France
+
+After a journey of several weeks, which led them successively to Italy, France and the United Kingdom, Theodora, her parents and her siblings settled in Saint-Cloud in 1923.
+Settled in a house adjoining the home of Princess Marie Bonaparte, the family depended for seven years on her generosity, and two other aunts of Theodora: first Princess Anastasia and then Lady Louis Mountbatten.
+Marie Bonaparte financed the studies of her nieces and nephew, while Lady Mountbatten got into the habit of offering her nieces her "used" clothes.
+In fact, Theodora's parents had little income and the children were the regular witnesses to their money problems and their difficulty in maintaining a household.
+Deprived of their Greek nationality after the proclamation of the Second Hellenic Republic in March 1924, Theodora and her family received Danish passports from their cousin King Christian X.
+Now of marrying age, the princess and her sister Margarita regularly left France for the United Kingdom, where they lived with their maternal grandmother, the Dowager Marchioness of Milford Haven.
+With their aunt Louise, who increasingly replaced their mother as a chaperone and confidante, the two young girls attended most of the events by British aristocracy during the 1920s, including balls and dances, birthdays and garden parties at Buckingham Palace, horse races, etc.
+However, the young girls' lack of fortune and their life in exile meant that they hardly had any suitors.
+This did not prevent them from rejoicing for their aunt Louise when she was asked by Gustaf Adolf, Crown Prince of Sweden, to marry him in June 1923.
+Alice's confinement
+
+Theodora, Margarita and Philip spent the summer of 1928 in Romania.
+Invited by Princess Helen, whose son Michael I was the same age as Philip, the two young women and their brother stayed for several weeks in Sinaia.
+At the time, Prince Nicholas of Romania was still single and Helen wanted to see him marry one of her relatives, but her plans for her brother-in-law to marry one of her cousins came to nothing.
+A few months after this trip, Alice began to suffer from psychological problems.
+Struck by a mental health crisis, the princess convinced herself that she possessed healing powers and that she was receiving divine messages about potential husbands for her daughters.
+Distraught by the situation, Prince Andrew finally made the decision to place his wife in a sanatorium.
+He took advantage of his family's stay in Darmstadt, Germany, in April 1930, to send Alice to a psychiatric hospital located in Kreuzlingen, Switzerland.
+In the months which followed, Theodora's three sisters successively married German princes.
+Sophie married Prince Christoph of Hesse in December 1930, followed by Cecilie who married Georg Donatus, Hereditary Grand Duke of Hesse in February 1931, and Margarita who married Gottfried, Hereditary Prince of Hohenlohe-Langenburg in April 1931.
+Theodora thus became the last of the four sisters to get married.
+Son of the last chancellor of the German Empire and titular Grand Duke of Baden from November 1929, Berthold was in charge of a substantial fortune.
+On 17 August 1931, Theodora and Berthold married in a double religious ceremony, both Lutheran and Orthodox, at the Neues Schloss in Baden-Baden, which resulted in a large family reunion, at which the bride's mother, Princess Alice, was not present.
+Concerned about her mother's fate, Theodora visited her several times in Kreuzlingen, but Alice did not always receive her daughter warmly.
+Aware that her brother had been living a chaotic existence since their mother's placement in a sanatorium, Theodora got Philip to go to school in Salem and to come and live with her and her husband in 1933.
+Over the years, Theodora welcomed several members of her family to Salem.
+The Dowager Marchioness of Milford Haven stayed on several occasions with her granddaughter, as did Prince Andrew.
+The princess also received her mother, once she had recovered from her health problems, and her sisters.
+Political upheavals
+
+While several of their relatives such as Cecilie and Margarita, (Theodora's sisters) as well as Marie Alexandra (Berthold's sister), gradually joined the Nazi Party, the Margrave and Margravine of Baden tried to keep their distance from the Nazi regime.
+A month later, King George II, Theodora's cousin, was reinstalled on the throne after a referendum.
+At the beginning of 1936, the banishment sentence issued in 1922 against Theodora's father Prince Andrew was lifted, which allowed him to stay in his country again.
+A regular target for the Hellenic press, the prince however chose to stay abroad for most of the year.
+Estranged from her husband since her confinement, Princess Alice made the choice to return and live in Athens, where she settled in November 1938.
+In the meantime, Theodora also returned to Greece with Berthold on the occasion of the marriage of Crown Prince Paul to Princess Frederica of Hanover in January 1938.
+Second World War and its aftermath
+
+Enlisted in the Wehrmacht shortly after the outbreak of the Second World War, Theodora's husband was seriously injured in the leg during the Battle of France in 1940.
+While Theodora engaged with the German Red Cross and other charitable organizations, Berthold took part in riskier actions, by attempting to hide Jews in his castle.
+Affected by the occupation of Greece by the Nazis, Theodora was cut off from a large part of her family because of the conflict.
+Her father, Prince Andrew, found himself isolated on the French Riviera and contacting him became very difficult.
+As for her mother, she spent the war in Athens, but managed to pay a few visits to her daughters in 1940, 1942, and 1944 Added to this was the anguish of knowing her brothers-in-law Christoph and Gottfried and her brother Philip were fighting in opposite camps.
+The war brought its share of tragedies for Theodora and her relatives.
+In October 1943, her sister Sophie's husband died in a plane crash while flying over the Apennine Mountains.
+Finally, in December 1944, her father Prince Andrew died in Monaco without having been able to see his children again.
+These events greatly affected Theodora, who then went through a period of depression.
+Post-war years
+
+Occupation of Germany and Philip's marriage
+
+The defeat of Germany and its occupation by the Allies brought new upheavals in the life of the former German princely families, several of whom (such as Hermine Reuss of Greiz, Joachim Ernst, Duke of Anhalt, or Georg, Prince of Saxe-Meiningen) perished in hands of the Soviets.
+Baden was placed under the administration of France and the United States, however, Berthold and Theodora were not under threat, and it did not take long for the margrave to find a leading social role.
+Berthold was thus able to reopen the Salem School, which he entrusted to his cousin, Prince George William of Hanover, in 1948.
+Two years earlier, the latter had married Theodora's sister Sophie (widowed since 1943), and the couple's move to Salem allowed Theodora to maintain close ties with her sister.
+Theodora's relationship with her brother Philip was, on the other hand, more complicated.
+Since 1939, he had been linked to Princess Elizabeth of the United Kingdom, and the two's engagement was officially announced on 10 July 1947.
+However, the ties of Philip's family to Germany frightened the British court and government, who feared that the public could be reminded of the Germanic origins of the House of Windsor if the royal family were publicly associated with former Nazi Party members.
+Prince Philip found himself unable to invite his sisters to his wedding.
+Aware of the difficulties their brother had to face, Theodora, Margarita and Sophie considered their sidelining wrong and hurtful.
+Harassed by the press, who submitted requests for interviews with them, Theodora and her sisters spent the day of 20 November 1947 at Marienburg Castle with their families.
+Invited by the Duke and Duchess of Brunswick, they celebrated the union of their brother in the company of their cousin Princess Elizabeth of Greece and Denmark and Prince Louis and Princess Margaret of Hesse and by Rhine.
+A few days later, the Greek princesses received a visit from the Queen of the Hellenes (who came to bring them a letter from their mother Princess Alice describing the wedding in detail) and the Duchess of Kent.
+Reintegration into royal circles
+
+Once the monarchy was restored in Greece in 1946, Theodora and her husband were regularly invited to Athens.
+Theodora and her family were also invited to Athens on the occasion of the marriage of Princess Sophia of Greece and Denmark and Juan Carlos, Prince of Asturias in 1962, and the marriage of King Constantine II and Princess Anne-Marie of Denmark in 1964.
+In the early 1950s, relations between the British royal family and their German relatives in turn normalized.
+Theodora, her sisters, their husbands and some of their children were thus invited to the coronation of Elizabeth II in 1953.
+Over the years, Theodora forged a close relationship with the British sovereign Queen Elizabeth II, who came to consider her as her favorite sister-in-law, according to the Spanish biographer Ricardo Mateos Sainz de Medrano.
+The marriages of their daughter Margarita to Prince Tomislav of Yugoslavia in 1957 and their son Maximilian to Archduchess Valerie of Austria in 1966 were the occasions for great meetings of the European aristocracy.
+In 1965, Theodora organized a large reception in Salem on the occasion of the official trip of Queen Elizabeth II and Prince Philip to West Germany.
+Final years
+
+At the end of the 1940s, Theodora began to suffer from heart problems.
+Over time, her health deteriorated and she appeared very diminished at the wedding of Prince Juan Carlos and Princess Sophia in 1962.
+Upset by the death of her husband, Theodora then hurriedly returned from Italy, where she was on vacation.
+Theodora's last years were affected by the establishment of the Regime of the Colonels in Greece and by the departure into exile of King Constantine II and his family.
+Hospitalized at the clinic of Doctor Büdingen in Konstanz, Theodora died on 16 October 1969, 7 weeks before her mother Princess Alice of Battenberg.
+Her funeral was held at the mausoleum of the Baden family in Salem in the presence of many members of the aristocracy, including her nephew Prince Charles, but not her brother Prince Philip who was on an official trip to Canada.
+In popular culture
+
+A brief allusion to Theodora and Berthold is made in the episode "Dear Mrs Kennedy" (season 2, episode 8) of the historical drama series The Crown (2017).
+Ancestry
+
+Through her father, she was a grandchild of George I of Greece and Olga Konstantinovna of Russia and a great-great-granddaughter of Emperor Nicholas I of Russia.
+Her mother was a granddaughter of Princess Alice, second daughter of Queen Victoria.
+Notes and references
+
+Notes
+
+References
+
+Bibliography
+
+On Theodora and the Greek royal family
+
+On Theodora and her German relatives
+
+Biographies of Theodora's relatives
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +292,9 @@ She passed away after giving birth to her last child.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +309,23 @@ She passed away after giving birth to her last child.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +343,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +425,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +448,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +468,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +478,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +518,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,162 +617,292 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f3936b11-0e6e-4fe3-9c7c-e04f840304f2)
- Call ID: f3936b11-0e6e-4fe3-9c7c-e04f840304f2
-  Args:
-    source: :MariaTeresaOfSpain
-    type: :Person
-  AssignClass (e3955e6c-e671-4be8-9bb0-a0286794168d)
- Call ID: e3955e6c-e671-4be8-9bb0-a0286794168d
+  AssignClass (40ce29bb-daea-4c00-be34-37f80e2768e6)
+ Call ID: 40ce29bb-daea-4c00-be34-37f80e2768e6
   Args:
     type: :Woman
-    source: :MariaTeresaOfSpain
-  AssignClass (59f00a56-4617-443b-a7c8-c963b3036b2e)
- Call ID: 59f00a56-4617-443b-a7c8-c963b3036b2e
-  Args:
-    source: :AlfonsoXIIOfSpain
-    type: :Person
-  AssignClass (71d064e7-7ddc-496b-86d4-f3e89c3a991a)
- Call ID: 71d064e7-7ddc-496b-86d4-f3e89c3a991a
-  Args:
-    source: :AlfonsoXIIOfSpain
-    type: :Man
-  AssignClass (e943a690-311a-4f68-9541-f6058892969e)
- Call ID: e943a690-311a-4f68-9541-f6058892969e
+    source: :Theodora_of_Greece_and_Denmark
+  AssignClass (fc007edd-76e2-4b33-8214-ebd941e56333)
+ Call ID: fc007edd-76e2-4b33-8214-ebd941e56333
   Args:
     type: :Person
-    source: :MariaChristinaOfAustria
-  AssignClass (655c6154-2cd3-4f7f-acb7-61bd0b5f4891)
- Call ID: 655c6154-2cd3-4f7f-acb7-61bd0b5f4891
-  Args:
-    type: :Woman
-    source: :MariaChristinaOfAustria
-  AssignClass (3e17da35-e972-4bd9-849b-8058166313f8)
- Call ID: 3e17da35-e972-4bd9-849b-8058166313f8
-  Args:
-    type: :Person
-    source: :PrinceFerdinandOfBavaria
-  AssignClass (2a112be6-fbb4-4f14-89b7-ba8f653cc1f0)
- Call ID: 2a112be6-fbb4-4f14-89b7-ba8f653cc1f0
-  Args:
-    source: :PrinceFerdinandOfBavaria
-    type: :Man
-  AssignClass (21168d50-2000-4815-98f5-120565325ac0)
- Call ID: 21168d50-2000-4815-98f5-120565325ac0
-  Args:
-    type: :Person
-    source: :PrinceLudwigFerdinandOfBavaria
-  AssignClass (480bae21-5060-412f-ad4b-1e70165ccb5d)
- Call ID: 480bae21-5060-412f-ad4b-1e70165ccb5d
-  Args:
-    type: :Man
-    source: :PrinceLudwigFerdinandOfBavaria
-  AssignClass (72f96be8-83d7-4428-bd24-590916709237)
- Call ID: 72f96be8-83d7-4428-bd24-590916709237
-  Args:
-    type: :Person
-    source: :MariaDeLaPazOfSpain
-  AssignClass (9d939f9d-6f5c-4c31-9248-a3f23d0f12d8)
- Call ID: 9d939f9d-6f5c-4c31-9248-a3f23d0f12d8
-  Args:
-    type: :Woman
-    source: :MariaDeLaPazOfSpain
-  AddLiteral (df4a1db5-c53f-44b7-a64e-0653b4988917)
- Call ID: df4a1db5-c53f-44b7-a64e-0653b4988917
-  Args:
-    literal_type: xsd:string
-    literal_value: Female
-    source: :MariaTeresaOfSpain
-    relation: :hasSex
-  AddLiteral (1b9e7b00-f6e9-49ef-97d3-abae50ed386d)
- Call ID: 1b9e7b00-f6e9-49ef-97d3-abae50ed386d
-  Args:
-    relation: :hasSex
-    source: :AlfonsoXIIOfSpain
-    literal_value: Male
-    literal_type: xsd:string
-  AddLiteral (dc80b935-48c5-427c-933f-89e821627b05)
- Call ID: dc80b935-48c5-427c-933f-89e821627b05
-  Args:
-    source: :MariaChristinaOfAustria
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Female
-  AddLiteral (5b9e63ae-f0d4-4d48-ae91-adcda2a9ceee)
- Call ID: 5b9e63ae-f0d4-4d48-ae91-adcda2a9ceee
-  Args:
-    source: :PrinceFerdinandOfBavaria
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Male
-  AddLiteral (dfbc7062-0a9e-4c5b-8f48-a9f5c20903e6)
- Call ID: dfbc7062-0a9e-4c5b-8f48-a9f5c20903e6
-  Args:
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-    source: :PrinceLudwigFerdinandOfBavaria
-  AddLiteral (0e98f767-b3bb-4726-a930-a03bb44cec1e)
- Call ID: 0e98f767-b3bb-4726-a930-a03bb44cec1e
-  Args:
-    relation: :hasSex
-    source: :MariaDeLaPazOfSpain
-    literal_type: xsd:string
-    literal_value: Female
-  AddTriple (e11a4b8a-ae33-43d8-a4c0-85dca9955b43)
- Call ID: e11a4b8a-ae33-43d8-a4c0-85dca9955b43
-  Args:
-    relation: :isDaughterOf
-    source: :MariaTeresaOfSpain
-    target: :AlfonsoXIIOfSpain
-  AddTriple (40416690-abff-455a-9edf-5767d459f18e)
- Call ID: 40416690-abff-455a-9edf-5767d459f18e
-  Args:
-    target: :MariaChristinaOfAustria
-    source: :MariaTeresaOfSpain
-    relation: :isDaughterOf
-  AddTriple (826a6d29-4706-4309-90ee-400df88bea5b)
- Call ID: 826a6d29-4706-4309-90ee-400df88bea5b
-  Args:
-    target: :PrinceLudwigFerdinandOfBavaria
-    source: :PrinceFerdinandOfBavaria
-    relation: :isSonOf
-  AddTriple (e0e115bf-715d-4854-8422-20b092e7f096)
- Call ID: e0e115bf-715d-4854-8422-20b092e7f096
-  Args:
-    source: :PrinceFerdinandOfBavaria
-    relation: :isSonOf
-    target: :MariaDeLaPazOfSpain
-  AddLiteral (45e62847-f9bf-4ac3-b069-48f59a6054ce)
- Call ID: 45e62847-f9bf-4ac3-b069-48f59a6054ce
+    source: :Theodora_of_Greece_and_Denmark
+  AddLiteral (bcea93f8-91b2-4937-bdad-fc720a8c30f9)
+ Call ID: bcea93f8-91b2-4937-bdad-fc720a8c30f9
   Args:
     literal_type: xsd:integer
-    literal_value: 1882
-    relation: :hasBirthYear
-    source: :MariaTeresaOfSpain
-  AddLiteral (4d29d73c-6ef2-4222-b935-82daba461f68)
- Call ID: 4d29d73c-6ef2-4222-b935-82daba461f68
-  Args:
-    literal_value: 1912
-    literal_type: xsd:integer
-    source: :MariaTeresaOfSpain
-    relation: :hasDeathYear
-  AddLiteral (f6a0627c-6eee-47a1-b16c-5a8cf4cc9f66)
- Call ID: f6a0627c-6eee-47a1-b16c-5a8cf4cc9f66
-  Args:
     literal_value: 1906
+    relation: :hasBirthYear
+    source: :Theodora_of_Greece_and_Denmark
+  AddLiteral (8ed049cc-7626-40a3-8023-19aa0494f256)
+ Call ID: 8ed049cc-7626-40a3-8023-19aa0494f256
+  Args:
+    literal_value: 1969
     literal_type: xsd:integer
-    source: :MariaTeresaOfSpain
+    relation: :hasDeathYear
+    source: :Theodora_of_Greece_and_Denmark
+  AssignClass (426e693c-12d7-45f0-ad1a-b1e115b27f65)
+ Call ID: 426e693c-12d7-45f0-ad1a-b1e115b27f65
+  Args:
+    type: :Man
+    source: :Andrew_of_Greece_and_Denmark
+  AssignClass (abdcf30c-63eb-4d89-94b9-1df298f063c2)
+ Call ID: abdcf30c-63eb-4d89-94b9-1df298f063c2
+  Args:
+    type: :Person
+    source: :Andrew_of_Greece_and_Denmark
+  AssignClass (a25aacad-4dd9-4890-97d3-96aad188370f)
+ Call ID: a25aacad-4dd9-4890-97d3-96aad188370f
+  Args:
+    type: :Woman
+    source: :Alice_of_Battenberg
+  AssignClass (105bbd56-1ecb-4832-bc9f-97309b96ad50)
+ Call ID: 105bbd56-1ecb-4832-bc9f-97309b96ad50
+  Args:
+    source: :Alice_of_Battenberg
+    type: :Person
+  AddTriple (cd806fa2-0632-46f8-be6b-5f4ce4a6eb59)
+ Call ID: cd806fa2-0632-46f8-be6b-5f4ce4a6eb59
+  Args:
+    relation: :hasFather
+    target: :Andrew_of_Greece_and_Denmark
+    source: :Theodora_of_Greece_and_Denmark
+  AddTriple (586e59cb-d4d5-400d-8547-f00f195829d3)
+ Call ID: 586e59cb-d4d5-400d-8547-f00f195829d3
+  Args:
+    relation: :hasMother
+    source: :Theodora_of_Greece_and_Denmark
+    target: :Alice_of_Battenberg
+  AssignClass (6e50f171-9c1f-48e3-80a3-fbbb7d5e9588)
+ Call ID: 6e50f171-9c1f-48e3-80a3-fbbb7d5e9588
+  Args:
+    source: :Berthold_of_Baden
+    type: :Man
+  AssignClass (ffbc406a-6c0f-4deb-b780-07be9b51dec3)
+ Call ID: ffbc406a-6c0f-4deb-b780-07be9b51dec3
+  Args:
+    source: :Berthold_of_Baden
+    type: :Person
+  AddLiteral (c6fd51fc-d41a-4bd7-9b4b-58c98ad1a46e)
+ Call ID: c6fd51fc-d41a-4bd7-9b4b-58c98ad1a46e
+  Args:
     relation: :hasMarriageYear
-  AddTriple (259e8bb6-1a21-477d-adec-94f6a38476f4)
- Call ID: 259e8bb6-1a21-477d-adec-94f6a38476f4
+    source: :Theodora_of_Greece_and_Denmark
+    literal_type: xsd:integer
+    literal_value: 1931
+  AddTriple (76ee00a2-aafb-4d58-a9ae-1b4c2cd5631d)
+ Call ID: 76ee00a2-aafb-4d58-a9ae-1b4c2cd5631d
   Args:
-    target: :PrinceFerdinandOfBavaria
+    source: :Theodora_of_Greece_and_Denmark
+    target: :Berthold_of_Baden
     relation: :hasRelation
-    source: :MariaTeresaOfSpain
-  Finish (65895361-7972-49fe-8b41-614e092ebed6)
- Call ID: 65895361-7972-49fe-8b41-614e092ebed6
+  AssignClass (ce2cce6f-76c7-45b5-b5e0-191311f23250)
+ Call ID: ce2cce6f-76c7-45b5-b5e0-191311f23250
   Args:
+    type: :Woman
+    source: :Margarita_of_Baden
+  AssignClass (6388f3c0-e4dc-4dfe-819a-e9291e1da255)
+ Call ID: 6388f3c0-e4dc-4dfe-819a-e9291e1da255
+  Args:
+    source: :Margarita_of_Baden
+    type: :Person
+  AssignClass (8dcc98d6-cb9b-437d-9670-309d72a5e06e)
+ Call ID: 8dcc98d6-cb9b-437d-9670-309d72a5e06e
+  Args:
+    source: :Maximilian_of_Baden
+    type: :Man
+  AssignClass (c1a93223-0e89-4da4-a750-b490cbcfa10e)
+ Call ID: c1a93223-0e89-4da4-a750-b490cbcfa10e
+  Args:
+    source: :Maximilian_of_Baden
+    type: :Person
+  AssignClass (f10891d9-931b-4136-958a-93c98d1ac550)
+ Call ID: f10891d9-931b-4136-958a-93c98d1ac550
+  Args:
+    type: :Man
+    source: :Ludwig_of_Baden
+  AssignClass (249817c0-c6d8-4e02-918b-94d58e496294)
+ Call ID: 249817c0-c6d8-4e02-918b-94d58e496294
+  Args:
+    source: :Ludwig_of_Baden
+    type: :Person
+  AddTriple (9b3fb786-d127-4fa3-8c2b-a9032dcce6ef)
+ Call ID: 9b3fb786-d127-4fa3-8c2b-a9032dcce6ef
+  Args:
+    relation: :hasDaughter
+    target: :Margarita_of_Baden
+    source: :Theodora_of_Greece_and_Denmark
+  AddTriple (67ab41bb-dfd3-430e-b5bf-89aa8577f425)
+ Call ID: 67ab41bb-dfd3-430e-b5bf-89aa8577f425
+  Args:
+    relation: :hasSon
+    source: :Theodora_of_Greece_and_Denmark
+    target: :Maximilian_of_Baden
+  AddTriple (e2e0758a-260d-4fe0-95f0-1aff094ab320)
+ Call ID: e2e0758a-260d-4fe0-95f0-1aff094ab320
+  Args:
+    target: :Ludwig_of_Baden
+    source: :Theodora_of_Greece_and_Denmark
+    relation: :hasSon
+  AssignClass (7ea7b746-9782-441c-91c5-40011294a08d)
+ Call ID: 7ea7b746-9782-441c-91c5-40011294a08d
+  Args:
+    source: :Philip_of_Greece_and_Denmark
+    type: :Man
+  AssignClass (3fc0da07-140f-4516-ad22-09a900be49ca)
+ Call ID: 3fc0da07-140f-4516-ad22-09a900be49ca
+  Args:
+    source: :Philip_of_Greece_and_Denmark
+    type: :Person
+  AddTriple (03bf565d-c208-4a1f-8651-b3c3849189b6)
+ Call ID: 03bf565d-c208-4a1f-8651-b3c3849189b6
+  Args:
+    relation: :hasBrother
+    target: :Philip_of_Greece_and_Denmark
+    source: :Theodora_of_Greece_and_Denmark
+  AssignClass (551e5792-9845-49f2-9c03-4ca61eb11066)
+ Call ID: 551e5792-9845-49f2-9c03-4ca61eb11066
+  Args:
+    source: :Cecilie_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (841f4afb-2f76-459c-8562-5084dc1e88ac)
+ Call ID: 841f4afb-2f76-459c-8562-5084dc1e88ac
+  Args:
+    type: :Person
+    source: :Cecilie_of_Greece_and_Denmark
+  AssignClass (38a617ff-4482-4a77-aa42-a9c5f0661b68)
+ Call ID: 38a617ff-4482-4a77-aa42-a9c5f0661b68
+  Args:
+    source: :Sophie_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (c6c298eb-8750-4735-9eb1-3c405de49436)
+ Call ID: c6c298eb-8750-4735-9eb1-3c405de49436
+  Args:
+    source: :Sophie_of_Greece_and_Denmark
+    type: :Person
+  AssignClass (59be637f-f642-40e8-b99e-342c91a33790)
+ Call ID: 59be637f-f642-40e8-b99e-342c91a33790
+  Args:
+    source: :Margarita_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (a9a7316c-965c-4c7e-bedc-e2b013fe142b)
+ Call ID: a9a7316c-965c-4c7e-bedc-e2b013fe142b
+  Args:
+    type: :Person
+    source: :Margarita_of_Greece_and_Denmark
+  AddTriple (9691fb32-232a-46e7-9f2b-2f1b95dbd0ea)
+ Call ID: 9691fb32-232a-46e7-9f2b-2f1b95dbd0ea
+  Args:
+    source: :Theodora_of_Greece_and_Denmark
+    target: :Margarita_of_Greece_and_Denmark
+    relation: :hasSister
+  AddTriple (ce9517d5-3f58-4d4a-9ac5-2dda5c1e0ac3)
+ Call ID: ce9517d5-3f58-4d4a-9ac5-2dda5c1e0ac3
+  Args:
+    relation: :hasSister
+    source: :Theodora_of_Greece_and_Denmark
+    target: :Cecilie_of_Greece_and_Denmark
+  AddTriple (1a66878f-b249-4184-a068-2b4f67116add)
+ Call ID: 1a66878f-b249-4184-a068-2b4f67116add
+  Args:
+    source: :Theodora_of_Greece_and_Denmark
+    target: :Sophie_of_Greece_and_Denmark
+    relation: :hasSister
+  AssignClass (77e41119-e804-4460-9c81-1cbfc7ffcea7)
+ Call ID: 77e41119-e804-4460-9c81-1cbfc7ffcea7
+  Args:
+    type: :Man
+    source: :Maximilian_of_Baden_Chancellor
+  AssignClass (2a48fbae-a315-4aba-adf0-bdd075ce7c5d)
+ Call ID: 2a48fbae-a315-4aba-adf0-bdd075ce7c5d
+  Args:
+    type: :Person
+    source: :Maximilian_of_Baden_Chancellor
+  AddTriple (24a62229-e14a-4658-9967-265d866864f9)
+ Call ID: 24a62229-e14a-4658-9967-265d866864f9
+  Args:
+    source: :Berthold_of_Baden
+    target: :Maximilian_of_Baden_Chancellor
+    relation: :hasFather
+  AssignClass (a8a83315-5bcd-41d4-8df9-1fe7f61598e3)
+ Call ID: a8a83315-5bcd-41d4-8df9-1fe7f61598e3
+  Args:
+    type: :Man
+    source: :Charles_III_of_United_Kingdom
+  AssignClass (d7c49db6-3444-415b-98da-d615c445cb1e)
+ Call ID: d7c49db6-3444-415b-98da-d615c445cb1e
+  Args:
+    type: :Person
+    source: :Charles_III_of_United_Kingdom
+  AddTriple (3573891a-cce3-47fc-a844-2bd2a881df77)
+ Call ID: 3573891a-cce3-47fc-a844-2bd2a881df77
+  Args:
+    relation: :isAuntOf
+    target: :Charles_III_of_United_Kingdom
+    source: :Theodora_of_Greece_and_Denmark
+  Finish (ec12435d-b916-42df-896a-254f4c662261)
+ Call ID: ec12435d-b916-42df-896a-254f4c662261
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -614,37 +1011,59 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:MariaTeresaOfSpain a :Person,
+  data:Theodora_of_Greece_and_Denmark a :Person,
           :Woman ;
-      :hasBirthYear 1882 ;
-      :hasDeathYear 1912 ;
-      :hasMarriageYear 1906 ;
-      :hasRelation data:PrinceFerdinandOfBavaria ;
-      :hasSex "Female"^^xsd:string ;
-      :isDaughterOf data:AlfonsoXIIOfSpain,
-          data:MariaChristinaOfAustria .
+      :hasBirthYear 1906 ;
+      :hasBrother data:Philip_of_Greece_and_Denmark ;
+      :hasDaughter data:Margarita_of_Baden ;
+      :hasDeathYear 1969 ;
+      :hasFather data:Andrew_of_Greece_and_Denmark ;
+      :hasMarriageYear 1931 ;
+      :hasMother data:Alice_of_Battenberg ;
+      :hasRelation data:Berthold_of_Baden ;
+      :hasSister data:Cecilie_of_Greece_and_Denmark,
+          data:Margarita_of_Greece_and_Denmark,
+          data:Sophie_of_Greece_and_Denmark ;
+      :hasSon data:Ludwig_of_Baden,
+          data:Maximilian_of_Baden ;
+      :isAuntOf data:Charles_III_of_United_Kingdom .
 
-  data:AlfonsoXIIOfSpain a :Man,
+  data:Alice_of_Battenberg a :Person,
+          :Woman .
+
+  data:Andrew_of_Greece_and_Denmark a :Man,
+          :Person .
+
+  data:Berthold_of_Baden a :Man,
           :Person ;
-      :hasSex "Male"^^xsd:string .
+      :hasFather data:Maximilian_of_Baden_Chancellor .
 
-  data:MariaChristinaOfAustria a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+  data:Cecilie_of_Greece_and_Denmark a :Person,
+          :Woman .
 
-  data:MariaDeLaPazOfSpain a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+  data:Charles_III_of_United_Kingdom a :Man,
+          :Person .
 
-  data:PrinceFerdinandOfBavaria a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isSonOf data:MariaDeLaPazOfSpain,
-          data:PrinceLudwigFerdinandOfBavaria .
+  data:Ludwig_of_Baden a :Man,
+          :Person .
 
-  data:PrinceLudwigFerdinandOfBavaria a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
+  data:Margarita_of_Baden a :Person,
+          :Woman .
+
+  data:Margarita_of_Greece_and_Denmark a :Person,
+          :Woman .
+
+  data:Maximilian_of_Baden a :Man,
+          :Person .
+
+  data:Maximilian_of_Baden_Chancellor a :Man,
+          :Person .
+
+  data:Philip_of_Greece_and_Denmark a :Man,
+          :Person .
+
+  data:Sophie_of_Greece_and_Denmark a :Person,
+          :Woman .
 
 
 
@@ -656,494 +1075,86 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (76d26c02-d91a-4bc7-ad4a-968ae719b6a9)
- Call ID: 76d26c02-d91a-4bc7-ad4a-968ae719b6a9
+  ValidateShacl (51312a6d-f7b0-4ce7-929e-b8b7257094cf)
+ Call ID: 51312a6d-f7b0-4ce7-929e-b8b7257094cf
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:60
+Total violations:9
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceFerdinandOfBavaria' is missing the required class ':Sex'.
+      The node Maximilian_of_Baden_Chancellor, identified as the father of Berthold_of_Baden, does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Maximilian_of_Baden_Chancellor', class=':Man')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'AlfonsoXIIOfSpain' is missing the required class ':Sex'.
+      The node Maximilian_of_Baden_Chancellor, identified as the father of Berthold_of_Baden, does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Maximilian_of_Baden_Chancellor', class=':Man')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceLudwigFerdinandOfBavaria' is missing the required class ':Sex'.
+      The node Andrew_of_Greece_and_Denmark, identified as the father of Theodora_of_Greece_and_Denmark, does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Andrew_of_Greece_and_Denmark', class=':Man')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'MariaDeLaPazOfSpain' used as a value for 'isSonOf' is missing the required class ':Ancestor'.
+      The node Alice_of_Battenberg, identified as the mother of Theodora_of_Greece_and_Denmark, does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='MariaDeLaPazOfSpain', class=':Ancestor')
+      AssignClass(node='Alice_of_Battenberg', class=':Woman')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'PrinceLudwigFerdinandOfBavaria' used as a value for 'isSonOf' is missing the required class ':Ancestor'.
+      The node Maximilian_of_Baden_Chancellor, identified as the father of Berthold_of_Baden, does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='PrinceLudwigFerdinandOfBavaria', class=':Ancestor')
+      AssignClass(node='Maximilian_of_Baden_Chancellor', class=':Man')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceFerdinandOfBavaria' is missing the required class ':Sex'.
+      The node Andrew_of_Greece_and_Denmark, identified as the father of Theodora_of_Greece_and_Denmark, does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Andrew_of_Greece_and_Denmark', class=':Man')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'AlfonsoXIIOfSpain' is missing the required class ':Sex'.
+      The node Alice_of_Battenberg, identified as the mother of Theodora_of_Greece_and_Denmark, does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Alice_of_Battenberg', class=':Woman')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceLudwigFerdinandOfBavaria' is missing the required class ':Sex'.
+      The node Andrew_of_Greece_and_Denmark, identified as the father of Theodora_of_Greece_and_Denmark, does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Andrew_of_Greece_and_Denmark', class=':Man')
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaChristinaOfAustria' is missing the required class ':Sex'.
+      The node Alice_of_Battenberg, identified as the mother of Theodora_of_Greece_and_Denmark, does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaTeresaOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaDeLaPazOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceFerdinandOfBavaria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'AlfonsoXIIOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceLudwigFerdinandOfBavaria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'MariaDeLaPazOfSpain' used as a value for 'isSonOf' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='MariaDeLaPazOfSpain', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'PrinceLudwigFerdinandOfBavaria' used as a value for 'isSonOf' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='PrinceLudwigFerdinandOfBavaria', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaChristinaOfAustria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaTeresaOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaDeLaPazOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceFerdinandOfBavaria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'AlfonsoXIIOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceLudwigFerdinandOfBavaria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaChristinaOfAustria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaTeresaOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaDeLaPazOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceFerdinandOfBavaria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'AlfonsoXIIOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceLudwigFerdinandOfBavaria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'MariaChristinaOfAustria' used as a value for 'isDaughterOf' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='MariaChristinaOfAustria', class=':Ancestor')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'AlfonsoXIIOfSpain' used as a value for 'isDaughterOf' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='AlfonsoXIIOfSpain', class=':Ancestor')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaChristinaOfAustria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaTeresaOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaDeLaPazOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceFerdinandOfBavaria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'AlfonsoXIIOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceLudwigFerdinandOfBavaria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'MariaDeLaPazOfSpain' used as a value for 'isSonOf' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='MariaDeLaPazOfSpain', class=':Ancestor')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'PrinceLudwigFerdinandOfBavaria' used as a value for 'isSonOf' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='PrinceLudwigFerdinandOfBavaria', class=':Ancestor')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaChristinaOfAustria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaTeresaOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaDeLaPazOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceFerdinandOfBavaria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'AlfonsoXIIOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceLudwigFerdinandOfBavaria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaChristinaOfAustria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaTeresaOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaDeLaPazOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceFerdinandOfBavaria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'AlfonsoXIIOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of 'PrinceLudwigFerdinandOfBavaria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'MariaChristinaOfAustria' used as a value for 'isDaughterOf' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='MariaChristinaOfAustria', class=':Ancestor')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'AlfonsoXIIOfSpain' used as a value for 'isDaughterOf' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='AlfonsoXIIOfSpain', class=':Ancestor')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaChristinaOfAustria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaTeresaOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaDeLaPazOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaChristinaOfAustria' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaTeresaOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of 'MariaDeLaPazOfSpain' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'MariaChristinaOfAustria' used as a value for 'isDaughterOf' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='MariaChristinaOfAustria', class=':Ancestor')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'AlfonsoXIIOfSpain' used as a value for 'isDaughterOf' is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='AlfonsoXIIOfSpain', class=':Ancestor')
+      AssignClass(node='Alice_of_Battenberg', class=':Woman')
 
 
 
@@ -1152,51 +1163,24 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (423ed50b-e2ab-4fec-9273-335fe6bab196)
- Call ID: 423ed50b-e2ab-4fec-9273-335fe6bab196
+  AssignClass (282b3389-59e9-49e0-a752-40c1e30f088d)
+ Call ID: 282b3389-59e9-49e0-a752-40c1e30f088d
   Args:
-    type: :Sex
-    source: :Male
-  AssignClass (12eed3f8-94ed-4c4c-ad5c-ede5a3bf8b8e)
- Call ID: 12eed3f8-94ed-4c4c-ad5c-ede5a3bf8b8e
-  Args:
-    source: :Female
-    type: :Sex
-  AssignClass (b1047d42-31cd-4241-8075-b8b12c9bbb6f)
- Call ID: b1047d42-31cd-4241-8075-b8b12c9bbb6f
-  Args:
-    source: :AlfonsoXIIOfSpain
+    source: :Andrew_of_Greece_and_Denmark
     type: :Ancestor
-  AssignClass (8507e0d8-2e80-4c0c-8f44-4c28691a880b)
- Call ID: 8507e0d8-2e80-4c0c-8f44-4c28691a880b
+  AssignClass (744c1c53-a893-486c-b704-c78e3e9acacd)
+ Call ID: 744c1c53-a893-486c-b704-c78e3e9acacd
   Args:
+    source: :Alice_of_Battenberg
     type: :Ancestor
-    source: :MariaChristinaOfAustria
-  AssignClass (b5724daa-2747-4225-a229-4e72187792ae)
- Call ID: b5724daa-2747-4225-a229-4e72187792ae
+  AssignClass (12d30f52-c436-4b00-9354-7f327fd59505)
+ Call ID: 12d30f52-c436-4b00-9354-7f327fd59505
   Args:
+    source: :Maximilian_of_Baden_Chancellor
     type: :Ancestor
-    source: :PrinceLudwigFerdinandOfBavaria
-  AssignClass (fefbc7c8-c3dc-49df-8eb2-863c0b6637c3)
- Call ID: fefbc7c8-c3dc-49df-8eb2-863c0b6637c3
+  ValidateShacl (6e7f6c3a-6236-4dd7-a3a5-40de337713ed)
+ Call ID: 6e7f6c3a-6236-4dd7-a3a5-40de337713ed
   Args:
-    type: :Ancestor
-    source: :MariaDeLaPazOfSpain
-  Finish (9d50143e-7d55-4519-95a4-5546e0f1de87)
- Call ID: 9d50143e-7d55-4519-95a4-5546e0f1de87
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1213,738 +1197,64 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Female a :Sex .
-
-  data:Male a :Sex .
-
-  data:MariaTeresaOfSpain a :Person,
+  data:Theodora_of_Greece_and_Denmark a :Person,
           :Woman ;
-      :hasBirthYear 1882 ;
-      :hasDeathYear 1912 ;
-      :hasMarriageYear 1906 ;
-      :hasRelation data:PrinceFerdinandOfBavaria ;
-      :hasSex "Female"^^xsd:string ;
-      :isDaughterOf data:AlfonsoXIIOfSpain,
-          data:MariaChristinaOfAustria .
+      :hasBirthYear 1906 ;
+      :hasBrother data:Philip_of_Greece_and_Denmark ;
+      :hasDaughter data:Margarita_of_Baden ;
+      :hasDeathYear 1969 ;
+      :hasFather data:Andrew_of_Greece_and_Denmark ;
+      :hasMarriageYear 1931 ;
+      :hasMother data:Alice_of_Battenberg ;
+      :hasRelation data:Berthold_of_Baden ;
+      :hasSister data:Cecilie_of_Greece_and_Denmark,
+          data:Margarita_of_Greece_and_Denmark,
+          data:Sophie_of_Greece_and_Denmark ;
+      :hasSon data:Ludwig_of_Baden,
+          data:Maximilian_of_Baden ;
+      :isAuntOf data:Charles_III_of_United_Kingdom .
 
-  data:AlfonsoXIIOfSpain a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:MariaChristinaOfAustria a :Ancestor,
+  data:Alice_of_Battenberg a :Ancestor,
           :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+          :Woman .
 
-  data:MariaDeLaPazOfSpain a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:PrinceFerdinandOfBavaria a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :isSonOf data:MariaDeLaPazOfSpain,
-          data:PrinceLudwigFerdinandOfBavaria .
-
-  data:PrinceLudwigFerdinandOfBavaria a :Ancestor,
+  data:Andrew_of_Greece_and_Denmark a :Ancestor,
           :Man,
+          :Person .
+
+  data:Berthold_of_Baden a :Man,
           :Person ;
-      :hasSex "Male"^^xsd:string .
+      :hasFather data:Maximilian_of_Baden_Chancellor .
 
+  data:Cecilie_of_Greece_and_Denmark a :Person,
+          :Woman .
 
+  data:Charles_III_of_United_Kingdom a :Man,
+          :Person .
 
-================================= Tool Message =================================
+  data:Ludwig_of_Baden a :Man,
+          :Person .
 
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+  data:Margarita_of_Baden a :Person,
+          :Woman .
 
-================================== Ai Message ==================================
+  data:Margarita_of_Greece_and_Denmark a :Person,
+          :Woman .
 
-[]
-Tool Calls:
-  ValidateShacl (3cfc16f7-5e79-4950-8db2-298f218049af)
- Call ID: 3cfc16f7-5e79-4950-8db2-298f218049af
-  Args:
+  data:Maximilian_of_Baden a :Man,
+          :Person .
 
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:60
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaChristinaOfAustria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaDeLaPazOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :AlfonsoXIIOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceLudwigFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaChristinaOfAustria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaDeLaPazOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :AlfonsoXIIOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceLudwigFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaChristinaOfAustria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaDeLaPazOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :AlfonsoXIIOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceLudwigFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :AlfonsoXIIOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceLudwigFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :AlfonsoXIIOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceLudwigFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaChristinaOfAustria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaTeresaOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :AlfonsoXIIOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaDeLaPazOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceLudwigFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaChristinaOfAustria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaTeresaOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :AlfonsoXIIOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaDeLaPazOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceLudwigFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaChristinaOfAustria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaTeresaOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :AlfonsoXIIOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaDeLaPazOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceLudwigFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaChristinaOfAustria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaTeresaOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaDeLaPazOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :AlfonsoXIIOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceLudwigFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaChristinaOfAustria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaTeresaOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaDeLaPazOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :AlfonsoXIIOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceLudwigFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaChristinaOfAustria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaTeresaOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaDeLaPazOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :AlfonsoXIIOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property :hasSex on node :PrinceLudwigFerdinandOfBavaria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaChristinaOfAustria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaTeresaOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaDeLaPazOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaChristinaOfAustria is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaTeresaOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property :hasSex on node :MariaDeLaPazOfSpain is missing the required class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (0ba3b6bc-c4e5-4c55-9012-4f4c6a728054)
- Call ID: 0ba3b6bc-c4e5-4c55-9012-4f4c6a728054
-  Args:
-    relation: :hasSex
-    source: :MariaTeresaOfSpain
-    literal_value: Female
-    literal_type: xsd:string
-  RemoveLiteral (c2c02e22-7b16-4243-ba76-a97a23d49b29)
- Call ID: c2c02e22-7b16-4243-ba76-a97a23d49b29
-  Args:
-    relation: :hasSex
-    source: :MariaChristinaOfAustria
-    literal_type: xsd:string
-    literal_value: Female
-  RemoveLiteral (dfc0d876-97d0-4fbd-ba3d-9f8184185d83)
- Call ID: dfc0d876-97d0-4fbd-ba3d-9f8184185d83
-  Args:
-    literal_value: Female
-    literal_type: xsd:string
-    source: :MariaDeLaPazOfSpain
-    relation: :hasSex
-  RemoveLiteral (961dda46-2c76-4b59-b3b7-4848e626ed90)
- Call ID: 961dda46-2c76-4b59-b3b7-4848e626ed90
-  Args:
-    literal_value: Male
-    literal_type: xsd:string
-    source: :AlfonsoXIIOfSpain
-    relation: :hasSex
-  RemoveLiteral (daf23b7f-4fcb-4a3b-9499-d8f924eb89cd)
- Call ID: daf23b7f-4fcb-4a3b-9499-d8f924eb89cd
-  Args:
-    literal_type: xsd:string
-    literal_value: Male
-    source: :PrinceFerdinandOfBavaria
-    relation: :hasSex
-  RemoveLiteral (cfdd115b-81a5-4c1c-a78a-88050bed4731)
- Call ID: cfdd115b-81a5-4c1c-a78a-88050bed4731
-  Args:
-    literal_value: Male
-    literal_type: xsd:string
-    relation: :hasSex
-    source: :PrinceLudwigFerdinandOfBavaria
-  AddTriple (da04ba0b-422a-49c7-b191-af393fc30b44)
- Call ID: da04ba0b-422a-49c7-b191-af393fc30b44
-  Args:
-    target: :Female
-    source: :MariaTeresaOfSpain
-    relation: :hasSex
-  AddTriple (4231472c-84da-403c-a5fb-3d9698250621)
- Call ID: 4231472c-84da-403c-a5fb-3d9698250621
-  Args:
-    source: :MariaChristinaOfAustria
-    relation: :hasSex
-    target: :Female
-  AddTriple (e78c5ec1-243e-415a-9977-3932a11685d5)
- Call ID: e78c5ec1-243e-415a-9977-3932a11685d5
-  Args:
-    target: :Female
-    relation: :hasSex
-    source: :MariaDeLaPazOfSpain
-  AddTriple (8a485ee5-d51e-45c3-a31b-cb3dbb665c0d)
- Call ID: 8a485ee5-d51e-45c3-a31b-cb3dbb665c0d
-  Args:
-    target: :Male
-    source: :AlfonsoXIIOfSpain
-    relation: :hasSex
-  AddTriple (b467dae6-e357-44ac-803b-bcf029e0e78c)
- Call ID: b467dae6-e357-44ac-803b-bcf029e0e78c
-  Args:
-    target: :Male
-    relation: :hasSex
-    source: :PrinceFerdinandOfBavaria
-  AddTriple (796c8bc7-01de-4581-946c-75e8ab8e369d)
- Call ID: 796c8bc7-01de-4581-946c-75e8ab8e369d
-  Args:
-    target: :Male
-    relation: :hasSex
-    source: :PrinceLudwigFerdinandOfBavaria
-  Finish (dc6f6b61-3cec-49d1-85ca-8909f112d6d2)
- Call ID: dc6f6b61-3cec-49d1-85ca-8909f112d6d2
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:MariaTeresaOfSpain a :Person,
-          :Woman ;
-      :hasBirthYear 1882 ;
-      :hasDeathYear 1912 ;
-      :hasMarriageYear 1906 ;
-      :hasRelation data:PrinceFerdinandOfBavaria ;
-      :hasSex data:Female ;
-      :isDaughterOf data:AlfonsoXIIOfSpain,
-          data:MariaChristinaOfAustria .
-
-  data:AlfonsoXIIOfSpain a :Ancestor,
+  data:Maximilian_of_Baden_Chancellor a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
-  data:MariaChristinaOfAustria a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
+  data:Philip_of_Greece_and_Denmark a :Man,
+          :Person .
 
-  data:MariaDeLaPazOfSpain a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:PrinceFerdinandOfBavaria a :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :isSonOf data:MariaDeLaPazOfSpain,
-          data:PrinceLudwigFerdinandOfBavaria .
-
-  data:PrinceLudwigFerdinandOfBavaria a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
+  data:Sophie_of_Greece_and_Denmark a :Person,
+          :Woman .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (11f8e530-15f0-4c86-96fc-caad3d081933)
- Call ID: 11f8e530-15f0-4c86-96fc-caad3d081933
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1954,6 +1264,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (7f991881-56d2-4ec5-808d-276c0902eec5)
- Call ID: 7f991881-56d2-4ec5-808d-276c0902eec5
+  Finish (fc6798ad-4d78-4adf-91ca-a23e14d32ece)
+ Call ID: fc6798ad-4d78-4adf-91ca-a23e14d32ece
   Args:

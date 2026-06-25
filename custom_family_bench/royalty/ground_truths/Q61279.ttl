@@ -7,29 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Karoline_of_Wartensleben a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Karoline of Wartensleben" ;
-    data:posIndicesFull "439:463" ;
-    data:wdtLink wdt:Q2176785 ;
-    :alsoKnownAs "Karoline Friederike Cäcilie Klothilde Gräfin von Wartensleben" ;
-    :hasChild data:Leopold_IV-_Prince_of_Lippe ;
-    :hasSex data:female ;
-    :hasSon data:Leopold_IV-_Prince_of_Lippe ;
-    :isMotherOf data:Leopold_IV-_Prince_of_Lippe ;
-    :isParentOf data:Leopold_IV-_Prince_of_Lippe .
-
-data:Leopold_IV-_Prince_of_Lippe a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Leopold_IV-_Prince_of_Lippe a :Person ;
     rdfs:label "Leopold IV, Prince of Lippe" ;
     data:posIndicesFull "0:27" ;
     data:posIndicesPart "1028:1035",
@@ -78,9 +56,23 @@ data:Leopold_IV-_Prince_of_Lippe a :Man,
         "845:852",
         "975:982" ;
     data:wdtLink wdt:Q61279 ;
-    :hasMother data:Karoline_of_Wartensleben ;
     :hasParent data:Karoline_of_Wartensleben ;
-    :hasSex data:male ;
-    :isChildOf data:Karoline_of_Wartensleben ;
-    :isSonOf data:Karoline_of_Wartensleben .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Karoline_of_Wartensleben a :Person ;
+    rdfs:label "Karoline of Wartensleben" ;
+    data:posIndicesFull "439:463" ;
+    data:wdtLink wdt:Q2176785 ;
+    :alsoKnownAs "Karoline Friederike Cäcilie Klothilde Gräfin von Wartensleben" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

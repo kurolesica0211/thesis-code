@@ -1,0 +1,806 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon a :Man,
+        :Person ;
+    rdfs:label "David Armstrong-Jones, 2nd Earl of Snowdon"^^xsd:string ;
+    data:posIndicesFull "14636:14651"^^xsd:string ;
+    data:posIndicesPart "19061:19065"^^xsd:string,
+        "19412:19416"^^xsd:string ;
+    data:wdtLink wdt:Q1091237 ;
+    :alsoKnownAs "David Albert Charles Armstrong-Jones, 2nd Earl of Snowdon"^^xsd:string,
+        "David Armstrong-Jones, Viscount Linley"^^xsd:string,
+        "David Linley"^^xsd:string,
+        "David Snowdon"^^xsd:string,
+        "Viscount Linley"^^xsd:string ;
+    :hasBrother data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
+    :hasRelation data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
+    :isBrotherOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
+    :isSiblingOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon .
+
+data:Katherine_Bowes-Lyon a :Person,
+        :Woman ;
+    rdfs:label "Katherine Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "11774:11794"^^xsd:string ;
+    data:posIndicesPart "19587:19591"^^xsd:string,
+        "19661:19666"^^xsd:string ;
+    data:wdtLink wdt:Q75248488 ;
+    :alsoKnownAs "Katherine Juliet Bowes-Lyon"^^xsd:string ;
+    :hasRelation data:Katherine_Bowes-Lyon ;
+    :hasSex data:female ;
+    :hasSister data:Katherine_Bowes-Lyon ;
+    :isBloodrelationOf data:Katherine_Bowes-Lyon ;
+    :isSiblingOf data:Katherine_Bowes-Lyon ;
+    :isSisterOf data:Katherine_Bowes-Lyon .
+
+data:male a :Male .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "0:38"^^xsd:string,
+        "10303:10318"^^xsd:string,
+        "10425:10440"^^xsd:string,
+        "10441:10457"^^xsd:string,
+        "10509:10524"^^xsd:string,
+        "10591:10606"^^xsd:string,
+        "1108:1146"^^xsd:string,
+        "13354:13369"^^xsd:string,
+        "13439:13455"^^xsd:string,
+        "14230:14245"^^xsd:string,
+        "14267:14283"^^xsd:string,
+        "16536:16552"^^xsd:string,
+        "17531:17546"^^xsd:string,
+        "18019:18034"^^xsd:string,
+        "18535:18550"^^xsd:string,
+        "18668:18683"^^xsd:string,
+        "18864:18879"^^xsd:string,
+        "273:288"^^xsd:string,
+        "289:305"^^xsd:string,
+        "343:358"^^xsd:string,
+        "4855:4870"^^xsd:string ;
+    data:posIndicesPart "10009:10018"^^xsd:string,
+        "10080:10085"^^xsd:string,
+        "1009:1014"^^xsd:string,
+        "1029:1038"^^xsd:string,
+        "10638:10643"^^xsd:string,
+        "10644:10650"^^xsd:string,
+        "10660:10665"^^xsd:string,
+        "10711:10716"^^xsd:string,
+        "10717:10723"^^xsd:string,
+        "10743:10748"^^xsd:string,
+        "10797:10806"^^xsd:string,
+        "11000:11009"^^xsd:string,
+        "11095:11104"^^xsd:string,
+        "11314:11323"^^xsd:string,
+        "11473:11482"^^xsd:string,
+        "11575:11584"^^xsd:string,
+        "11697:11706"^^xsd:string,
+        "11998:12004"^^xsd:string,
+        "12015:12024"^^xsd:string,
+        "12175:12184"^^xsd:string,
+        "12294:12303"^^xsd:string,
+        "12336:12345"^^xsd:string,
+        "12754:12763"^^xsd:string,
+        "13006:13015"^^xsd:string,
+        "13069:13078"^^xsd:string,
+        "1384:1390"^^xsd:string,
+        "13873:13882"^^xsd:string,
+        "14138:14147"^^xsd:string,
+        "14343:14352"^^xsd:string,
+        "14794:14803"^^xsd:string,
+        "14924:14933"^^xsd:string,
+        "15219:15228"^^xsd:string,
+        "15401:15410"^^xsd:string,
+        "15535:15544"^^xsd:string,
+        "15691:15700"^^xsd:string,
+        "15804:15813"^^xsd:string,
+        "15913:15922"^^xsd:string,
+        "16133:16142"^^xsd:string,
+        "16375:16384"^^xsd:string,
+        "16620:16629"^^xsd:string,
+        "1667:1676"^^xsd:string,
+        "16874:16883"^^xsd:string,
+        "16944:16953"^^xsd:string,
+        "17086:17095"^^xsd:string,
+        "17116:17121"^^xsd:string,
+        "17629:17638"^^xsd:string,
+        "17800:17809"^^xsd:string,
+        "18060:18069"^^xsd:string,
+        "18226:18235"^^xsd:string,
+        "1868:1877"^^xsd:string,
+        "18983:18992"^^xsd:string,
+        "19204:19209"^^xsd:string,
+        "19210:19216"^^xsd:string,
+        "19241:19250"^^xsd:string,
+        "1990:1999"^^xsd:string,
+        "2121:2130"^^xsd:string,
+        "2164:2173"^^xsd:string,
+        "2306:2315"^^xsd:string,
+        "2643:2648"^^xsd:string,
+        "2680:2689"^^xsd:string,
+        "2864:2869"^^xsd:string,
+        "2979:2988"^^xsd:string,
+        "3081:3090"^^xsd:string,
+        "3243:3252"^^xsd:string,
+        "3371:3380"^^xsd:string,
+        "3475:3484"^^xsd:string,
+        "3707:3716"^^xsd:string,
+        "3914:3923"^^xsd:string,
+        "403:412"^^xsd:string,
+        "4178:4187"^^xsd:string,
+        "4342:4351"^^xsd:string,
+        "4385:4391"^^xsd:string,
+        "4588:4597"^^xsd:string,
+        "4886:4895"^^xsd:string,
+        "5065:5074"^^xsd:string,
+        "522:527"^^xsd:string,
+        "5354:5359"^^xsd:string,
+        "5473:5482"^^xsd:string,
+        "5657:5666"^^xsd:string,
+        "566:575"^^xsd:string,
+        "5674:5679"^^xsd:string,
+        "5693:5702"^^xsd:string,
+        "5950:5959"^^xsd:string,
+        "5971:5980"^^xsd:string,
+        "6061:6070"^^xsd:string,
+        "6153:6162"^^xsd:string,
+        "6468:6473"^^xsd:string,
+        "6528:6537"^^xsd:string,
+        "6540:6546"^^xsd:string,
+        "6613:6622"^^xsd:string,
+        "667:676"^^xsd:string,
+        "6883:6888"^^xsd:string,
+        "7311:7320"^^xsd:string,
+        "7473:7482"^^xsd:string,
+        "7501:7506"^^xsd:string,
+        "7741:7750"^^xsd:string,
+        "7788:7797"^^xsd:string,
+        "788:797"^^xsd:string,
+        "7995:8000"^^xsd:string,
+        "8139:8148"^^xsd:string,
+        "8187:8196"^^xsd:string,
+        "8336:8345"^^xsd:string,
+        "8579:8588"^^xsd:string,
+        "8648:8653"^^xsd:string,
+        "8872:8877"^^xsd:string,
+        "8998:9007"^^xsd:string,
+        "9137:9142"^^xsd:string,
+        "9290:9299"^^xsd:string,
+        "953:962"^^xsd:string,
+        "9594:9603"^^xsd:string,
+        "975:980"^^xsd:string,
+        "9800:9809"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isAuntOf data:Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George V"^^xsd:string ;
+    data:posIndicesFull "2625:2638"^^xsd:string,
+        "2630:2638"^^xsd:string,
+        "504:517"^^xsd:string,
+        "509:517"^^xsd:string,
+        "5389:5397"^^xsd:string ;
+    data:posIndicesPart "10256:10262"^^xsd:string,
+        "12641:12647"^^xsd:string,
+        "13266:13272"^^xsd:string,
+        "14768:14774"^^xsd:string,
+        "15335:15341"^^xsd:string ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert"^^xsd:string,
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha"^^xsd:string,
+        "George Frederick Ernest Albert Windsor"^^xsd:string,
+        "George Saxe-Coburg-Gotha"^^xsd:string,
+        "George V (King of Great Britain)"^^xsd:string,
+        "George V of the United Kingdom"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "King George V"^^xsd:string ;
+    :hasBrother data:George_V ;
+    :hasChild data:George_VI ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSon data:George_VI ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isFatherOf data:George_VI ;
+    :isParentOf data:George_VI ;
+    :isSiblingOf data:George_V ;
+    :isUncleOf data:George_VI .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George VI"^^xsd:string ;
+    data:posIndicesFull "10111:10120"^^xsd:string,
+        "10362:10371"^^xsd:string,
+        "15258:15272"^^xsd:string,
+        "15263:15272"^^xsd:string,
+        "17075:17081"^^xsd:string,
+        "17924:17933"^^xsd:string,
+        "18000:18014"^^xsd:string,
+        "18005:18014"^^xsd:string,
+        "205:219"^^xsd:string,
+        "210:219"^^xsd:string,
+        "2548:2575"^^xsd:string,
+        "2579:2585"^^xsd:string,
+        "3022:3028"^^xsd:string,
+        "457:484"^^xsd:string,
+        "5646:5655"^^xsd:string,
+        "5892:5901"^^xsd:string,
+        "7129:7138"^^xsd:string,
+        "844:853"^^xsd:string ;
+    data:posIndicesPart "12641:12647"^^xsd:string,
+        "13266:13272"^^xsd:string,
+        "14768:14774"^^xsd:string ;
+    data:wdtLink wdt:Q280856 ;
+    :alsoKnownAs "Albert Frederick Arthur George"^^xsd:string,
+        "Albert Frederick Arthur George Windsor"^^xsd:string,
+        "Albert Windsor"^^xsd:string,
+        "Bertie"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "H.M. King George VI"^^xsd:string,
+        "Industrial Prince"^^xsd:string,
+        "King George VI"^^xsd:string,
+        "Prince Albert Frederick Arthur George of Cornwall and York"^^xsd:string,
+        "Prince Albert Frederick Arthur George of Wales"^^xsd:string,
+        "Prince Albert Frederick Arthur George of York"^^xsd:string,
+        "Prince Albert Frederick Arthur George, Duke of York"^^xsd:string,
+        "Prince Albert of Cornwall and York"^^xsd:string,
+        "Prince Albert of Wales"^^xsd:string,
+        "Prince Albert of York"^^xsd:string,
+        "Prince Albert, Duke of York"^^xsd:string,
+        "The Prince Albert Frederick Arthur George of the United Kingdom"^^xsd:string,
+        "The Prince Albert Frederick Arthur George, Duke of York"^^xsd:string,
+        "The Prince Albert of the United Kingdom"^^xsd:string,
+        "The Prince Albert, Duke of York"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:George_VI ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:George_VI ;
+    :isBrotherOf data:George_VI ;
+    :isChildOf data:George_V ;
+    :isFatherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:George_VI ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Elizabeth_II .
+
+data:Prince_Harry-_Duke_of_Sussex a :Man,
+        :Person ;
+    rdfs:label "Prince Harry, Duke of Sussex"^^xsd:string ;
+    data:posIndicesFull "3305:3318"^^xsd:string,
+        "9224:9233"^^xsd:string ;
+    data:posIndicesPart "10040:10044"^^xsd:string,
+        "10191:10195"^^xsd:string,
+        "19103:19107"^^xsd:string,
+        "5339:5344"^^xsd:string,
+        "5431:5437"^^xsd:string,
+        "5824:5828"^^xsd:string,
+        "6236:6240"^^xsd:string ;
+    data:wdtLink wdt:Q152316 ;
+    :alsoKnownAs "Captain Wales"^^xsd:string,
+        "Harry Sussex"^^xsd:string,
+        "Harry Wales"^^xsd:string,
+        "Harry Windsor"^^xsd:string,
+        "Henry Charles Albert David"^^xsd:string,
+        "Henry Sussex"^^xsd:string,
+        "Henry Wales"^^xsd:string,
+        "Henry Windsor"^^xsd:string,
+        "Prince Harry"^^xsd:string,
+        "Prince Harry of Wales"^^xsd:string,
+        "Prince Henry"^^xsd:string,
+        "Prince Henry Charles Albert"^^xsd:string,
+        "Prince Henry Charles Albert David"^^xsd:string,
+        "Prince Henry of Wales"^^xsd:string,
+        "Prince Henry, Duke of Sussex"^^xsd:string,
+        "Prince Henry, Duke of Sussex, KCVO"^^xsd:string,
+        "The Prince Henry, Duke of Sussex"^^xsd:string ;
+    :hasAncestor data:Charles_III,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :hasFather data:Charles_III ;
+    :hasParent data:Charles_III ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBrotherOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isChildOf data:Charles_III ;
+    :isSiblingOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isSonOf data:Charles_III .
+
+data:William-_Prince_of_Wales a :Man,
+        :Person ;
+    rdfs:label "William, Prince of Wales"^^xsd:string ;
+    data:posIndicesFull "1433:1440"^^xsd:string,
+        "16106:16113"^^xsd:string,
+        "7827:7834"^^xsd:string ;
+    data:posIndicesPart "3156:3162"^^xsd:string,
+        "5431:5437"^^xsd:string,
+        "5441:5446"^^xsd:string ;
+    data:wdtLink wdt:Q36812 ;
+    :alsoKnownAs "Bulliam"^^xsd:string,
+        "Prince William"^^xsd:string,
+        "Prince William Arthur Philip Louis of Wales"^^xsd:string,
+        "Prince William Arthur Philip Louis, Duke of Cambridge"^^xsd:string,
+        "Prince William of Wales"^^xsd:string,
+        "Prince William, Duke of Cambridge"^^xsd:string,
+        "William Arthur Philip Louis"^^xsd:string,
+        "William Arthur Philip Louis Mountbatten-Windsor"^^xsd:string,
+        "William Arthur Philip Louis, Prince of Wales"^^xsd:string,
+        "William Cambridge"^^xsd:string,
+        "William Wales"^^xsd:string,
+        "William Windsor"^^xsd:string ;
+    :hasAncestor data:Charles_III,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :hasFather data:Charles_III ;
+    :hasParent data:Charles_III ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBrotherOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isChildOf data:Charles_III ;
+    :isSiblingOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isSonOf data:Charles_III .
+
+data:Andrew_Mountbatten-Windsor a :Man,
+        :Person ;
+    rdfs:label "Andrew Mountbatten-Windsor"^^xsd:string ;
+    data:posIndicesFull "11085:11093"^^xsd:string,
+        "14603:14616"^^xsd:string ;
+    data:posIndicesPart "13283:13290"^^xsd:string,
+        "13490:13497"^^xsd:string,
+        "13568:13575"^^xsd:string,
+        "14197:14204"^^xsd:string,
+        "14441:14448"^^xsd:string,
+        "15052:15058"^^xsd:string,
+        "16692:16703"^^xsd:string ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward"^^xsd:string,
+        "Andrew Albert Christian Edward Mountbatten-Windsor"^^xsd:string,
+        "Baron Killyleagh"^^xsd:string,
+        "Earl of Inverness"^^xsd:string,
+        "Prince Andrew"^^xsd:string,
+        "Prince Andrew of the United Kingdom"^^xsd:string,
+        "Prince Andrew, Duke of York"^^xsd:string,
+        "Randy Andy"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isChildOf data:Elizabeth_II ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isSonOf data:Elizabeth_II ;
+    :isUncleOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales .
+
+data:Prince_Edward-_Duke_of_Edinburgh a :Man,
+        :Person ;
+    rdfs:label "Prince Edward, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "14618:14631"^^xsd:string ;
+    data:posIndicesPart "19103:19107"^^xsd:string ;
+    data:wdtLink wdt:Q154920 ;
+    :alsoKnownAs "Edward Antony Richard Louis"^^xsd:string,
+        "Edward Antony Richard Louis Mountbatten-Windsor, 1st Earl of Wessex"^^xsd:string,
+        "Edward Mountbatten-Windsor"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward Antony Richard Louis of the United Kingdom"^^xsd:string,
+        "Prince Edward of the United Kingdom"^^xsd:string,
+        "The Prince Edward Antony Richard Louis of the United Kingdom"^^xsd:string,
+        "The Prince Edward Antony Richard Louis, Earl of Wessex and Forfar"^^xsd:string,
+        "The Prince Edward of the United Kingdom"^^xsd:string,
+        "The Prince Edward, Earl of Wessex and Forfar"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isChildOf data:Elizabeth_II ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isSonOf data:Elizabeth_II ;
+    :isUncleOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales .
+
+data:Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Charles III"^^xsd:string ;
+    data:posIndicesFull "14587:14601"^^xsd:string,
+        "15869:15883"^^xsd:string,
+        "2410:2421"^^xsd:string ;
+    data:posIndicesPart "11077:11084"^^xsd:string ;
+    data:wdtLink wdt:Q43274 ;
+    :alsoKnownAs "C III"^^xsd:string,
+        "Charles III of England"^^xsd:string,
+        "Charles III of the United Kingdom"^^xsd:string,
+        "Charles Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George"^^xsd:string,
+        "Charles Philip Arthur George Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George Windsor"^^xsd:string,
+        "Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Charles Wales"^^xsd:string,
+        "Charles Windsor"^^xsd:string,
+        "Charles the Third"^^xsd:string,
+        "HM King Charles III"^^xsd:string,
+        "His Majesty"^^xsd:string,
+        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith"^^xsd:string,
+        "His Majesty The King"^^xsd:string,
+        "His Royal Highness Charles III of Great Britain"^^xsd:string,
+        "King Charles"^^xsd:string,
+        "King Charles III"^^xsd:string,
+        "King of England"^^xsd:string,
+        "Prince Charles"^^xsd:string,
+        "Prince Charles Philip Arthur George of Edinburgh"^^xsd:string,
+        "Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Prince Charles of Edinburgh"^^xsd:string,
+        "Prince Charles, Duke of Rothesay"^^xsd:string,
+        "Prince Charles, Prince of Wales"^^xsd:string,
+        "The Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "The Prince Charles, Prince of Wales"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :hasChild data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isAncestorOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isChildOf data:Elizabeth_II ;
+    :isFatherOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isParentOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isSonOf data:Elizabeth_II ;
+    :isUncleOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "10303:10321"^^xsd:string,
+        "10309:10321"^^xsd:string,
+        "10591:10609"^^xsd:string,
+        "10597:10609"^^xsd:string,
+        "13354:13372"^^xsd:string,
+        "13360:13372"^^xsd:string,
+        "14230:14248"^^xsd:string,
+        "14236:14248"^^xsd:string,
+        "18535:18553"^^xsd:string,
+        "18541:18553"^^xsd:string,
+        "18632:18644"^^xsd:string,
+        "18668:18686"^^xsd:string,
+        "18674:18686"^^xsd:string,
+        "18864:18882"^^xsd:string,
+        "18870:18882"^^xsd:string,
+        "343:361"^^xsd:string,
+        "349:361"^^xsd:string,
+        "4855:4873"^^xsd:string,
+        "4861:4873"^^xsd:string ;
+    data:posIndicesPart "10009:10018"^^xsd:string,
+        "1029:1038"^^xsd:string,
+        "10797:10806"^^xsd:string,
+        "11000:11009"^^xsd:string,
+        "11095:11104"^^xsd:string,
+        "11314:11323"^^xsd:string,
+        "11473:11482"^^xsd:string,
+        "11575:11584"^^xsd:string,
+        "11697:11706"^^xsd:string,
+        "12015:12024"^^xsd:string,
+        "12175:12184"^^xsd:string,
+        "12294:12303"^^xsd:string,
+        "12336:12345"^^xsd:string,
+        "12754:12763"^^xsd:string,
+        "13006:13015"^^xsd:string,
+        "13069:13078"^^xsd:string,
+        "13873:13882"^^xsd:string,
+        "14138:14147"^^xsd:string,
+        "14343:14352"^^xsd:string,
+        "14794:14803"^^xsd:string,
+        "14924:14933"^^xsd:string,
+        "15219:15228"^^xsd:string,
+        "15401:15410"^^xsd:string,
+        "15535:15544"^^xsd:string,
+        "15691:15700"^^xsd:string,
+        "15804:15813"^^xsd:string,
+        "15913:15922"^^xsd:string,
+        "16133:16142"^^xsd:string,
+        "16375:16384"^^xsd:string,
+        "16620:16629"^^xsd:string,
+        "1667:1676"^^xsd:string,
+        "16874:16883"^^xsd:string,
+        "16944:16953"^^xsd:string,
+        "17086:17095"^^xsd:string,
+        "17629:17638"^^xsd:string,
+        "17800:17809"^^xsd:string,
+        "17858:17867"^^xsd:string,
+        "18060:18069"^^xsd:string,
+        "18226:18235"^^xsd:string,
+        "1868:1877"^^xsd:string,
+        "18983:18992"^^xsd:string,
+        "19241:19250"^^xsd:string,
+        "1990:1999"^^xsd:string,
+        "2121:2130"^^xsd:string,
+        "2164:2173"^^xsd:string,
+        "2306:2315"^^xsd:string,
+        "2680:2689"^^xsd:string,
+        "2979:2988"^^xsd:string,
+        "3081:3090"^^xsd:string,
+        "3243:3252"^^xsd:string,
+        "3371:3380"^^xsd:string,
+        "3475:3484"^^xsd:string,
+        "3707:3716"^^xsd:string,
+        "3914:3923"^^xsd:string,
+        "403:412"^^xsd:string,
+        "4178:4187"^^xsd:string,
+        "4342:4351"^^xsd:string,
+        "4588:4597"^^xsd:string,
+        "4886:4895"^^xsd:string,
+        "5065:5074"^^xsd:string,
+        "5473:5482"^^xsd:string,
+        "5657:5666"^^xsd:string,
+        "566:575"^^xsd:string,
+        "5693:5702"^^xsd:string,
+        "5950:5959"^^xsd:string,
+        "5971:5980"^^xsd:string,
+        "6061:6070"^^xsd:string,
+        "6153:6162"^^xsd:string,
+        "6528:6537"^^xsd:string,
+        "6613:6622"^^xsd:string,
+        "667:676"^^xsd:string,
+        "7311:7320"^^xsd:string,
+        "7473:7482"^^xsd:string,
+        "7741:7750"^^xsd:string,
+        "7788:7797"^^xsd:string,
+        "788:797"^^xsd:string,
+        "8139:8148"^^xsd:string,
+        "8187:8196"^^xsd:string,
+        "8336:8345"^^xsd:string,
+        "8579:8588"^^xsd:string,
+        "8998:9007"^^xsd:string,
+        "9290:9299"^^xsd:string,
+        "953:962"^^xsd:string,
+        "9594:9603"^^xsd:string,
+        "9800:9809"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasAncestor data:George_V,
+        data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasChild data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :hasFather data:George_VI ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_V,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :hasSon data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isAuntOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isChildOf data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isParentOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Prince_Edward-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+

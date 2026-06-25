@@ -2,43 +2,53 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Augusta_Victoria a :Person,
+data:Ann-KathrinJohannsmann a :Person,
         :Woman .
 
-data:Frederick_III a :Man,
+data:KingConstantineII a :Man,
         :Person .
 
-data:Hermine_Reuss_of_Greiz a :Person,
-        :Woman .
-
-data:Joachim a :Man,
+data:KingFrederikX a :Man,
         :Person .
 
-data:Queen_Victoria a :Person,
-        :Woman .
-
-data:Sophia a :Person,
-        :Woman ;
-    :hasSister data:Wilhelm_II .
-
-data:Victoria_Louise a :Person,
-        :Woman .
-
-data:Victoria_Princess_Royal a :Person,
-        :Woman ;
-    :hasMother data:Queen_Victoria .
-
-data:Wilhelm_II a :Man,
+data:KonstantinGustavHeinrichRichard a :Man,
         :Person ;
-    :hasBirthYear 1859 ;
-    :hasDaughter data:Victoria_Louise ;
-    :hasDeathYear 1941 ;
-    :hasFather data:Frederick_III ;
-    :hasMarriageYear 1881,
-        1922 ;
-    :hasMother data:Victoria_Princess_Royal ;
-    :hasRelation data:Augusta_Victoria,
-        data:Hermine_Reuss_of_Greiz ;
-    :hasSister data:Sophia ;
-    :hasSon data:Joachim .
+    :hasFather data:AlexanderJohannsmann ;
+    :hasMother data:PrincessNathalie .
+
+data:LouisaMargaretaBenedikteHanna a :Person,
+        :Woman ;
+    :hasFather data:AlexanderJohannsmann ;
+    :hasMother data:PrincessNathalie .
+
+data:PrinceGustav a :Man,
+        :Person .
+
+data:QueenMargretheII a :Person,
+        :Woman .
+
+data:Alexandra a :Person,
+        :Woman .
+
+data:Heinrich-WilhelmJohannsmann a :Man,
+        :Person .
+
+data:PrinceRichard a :Man,
+        :Person .
+
+data:PrincessBenedikte a :Person,
+        :Woman .
+
+data:AlexanderJohannsmann a :Man,
+        :Person ;
+    :hasBirthYear 1977 ;
+    :hasFather data:Heinrich-WilhelmJohannsmann .
+
+data:PrincessNathalie a :Person,
+        :Woman ;
+    :hasBirthYear 1975 ;
+    :hasFather data:PrinceRichard ;
+    :hasMarriageYear 2010 ;
+    :hasMother data:PrincessBenedikte ;
+    :hasSister data:Alexandra .
 

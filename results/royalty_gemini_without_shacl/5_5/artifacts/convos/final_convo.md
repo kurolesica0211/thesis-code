@@ -71,7 +71,6 @@ Please update the Knowledge Graph based on the provided data.
 ### Input Text:
 Lady Iris Victoria Beatrice Grace Kemp (née Mountbatten, formerly O'Malley, later Bryan; 13 January 1920 – 1 September 1982) was an English actress and model, and a member of the Battenberg/Mountbatten family.
 She was also a niece of Queen Victoria Eugenie of Spain, making her a first cousin of Infante Juan, Count of Barcelona, father of Juan Carlos I and grandfather of current King Felipe VI of Spain, as well as Infante Jaime, Duke of Segovia, the Legitimist claimant to the French throne.
-She was also a second cousin of Prince Philip, Duke of Edinburgh, consort of Queen Elizabeth II.
 Family and early life
 
 Iris Victoria Beatrice Grace Mountbatten was born at Kensington Palace, London on 13 January 1920, the only child of Alexander Mountbatten, 1st Marquess of Carisbrooke, eldest of three sons and one daughter of Princess Beatrice and Prince Henry of Battenberg.
@@ -100,6 +99,8 @@ Her ashes were brought to the Isle of Wight for interment in the Battenberg Chap
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +116,9 @@ Her ashes were brought to the Isle of Wight for interment in the Battenberg Chap
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +133,23 @@ Her ashes were brought to the Isle of Wight for interment in the Battenberg Chap
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +167,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +249,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +272,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +292,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +302,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +342,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,263 +441,654 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c6e3705e-25c3-40f7-a438-581c35401130)
- Call ID: c6e3705e-25c3-40f7-a438-581c35401130
+  AssignClass (3ed5a315-aef0-4f69-afed-f37dede5df79)
+ Call ID: 3ed5a315-aef0-4f69-afed-f37dede5df79
   Args:
     type: :Woman
-    source: Lady_Iris_Mountbatten
-  AssignClass (d047d03c-bd68-4a9e-8b60-fcdbf12a4876)
- Call ID: d047d03c-bd68-4a9e-8b60-fcdbf12a4876
+    source: :IrisMountbatten
+  AssignClass (cd92a6df-2be5-45e5-8d8c-3cd62c4260ba)
+ Call ID: cd92a6df-2be5-45e5-8d8c-3cd62c4260ba
   Args:
     type: :Person
-    source: Lady_Iris_Mountbatten
-  AddLiteral (78d81bd4-9c76-4fd1-8adc-51a33684fd9c)
- Call ID: 78d81bd4-9c76-4fd1-8adc-51a33684fd9c
+    source: :IrisMountbatten
+  AddLiteral (cffa9174-1dea-4380-9fd4-f48c423a822c)
+ Call ID: cffa9174-1dea-4380-9fd4-f48c423a822c
   Args:
-    source: Lady_Iris_Mountbatten
-    relation: :knownAs
-    literal_value: Lady Iris Victoria Beatrice Grace Kemp
-    literal_type: xsd:string
-  AddLiteral (cf8b9285-f936-4932-bcbf-2ded3e6de5ae)
- Call ID: cf8b9285-f936-4932-bcbf-2ded3e6de5ae
-  Args:
-    source: Lady_Iris_Mountbatten
-    literal_value: 1920
     relation: :hasBirthYear
+    literal_value: 1920
+    source: :IrisMountbatten
     literal_type: xsd:integer
-  AddLiteral (69d14910-434d-4f31-afb3-335cd037f15b)
- Call ID: 69d14910-434d-4f31-afb3-335cd037f15b
+  AddLiteral (12499adc-b978-4212-b02a-ecf2a9428ac2)
+ Call ID: 12499adc-b978-4212-b02a-ecf2a9428ac2
   Args:
     literal_type: xsd:integer
-    literal_value: 1982
     relation: :hasDeathYear
-    source: Lady_Iris_Mountbatten
-  AssignClass (a4550617-2f0a-4684-bd0d-b625970474e2)
- Call ID: a4550617-2f0a-4684-bd0d-b625970474e2
+    literal_value: 1982
+    source: :IrisMountbatten
+  AddTriple (6d120d69-dbe0-4381-a095-be15133054c9)
+ Call ID: 6d120d69-dbe0-4381-a095-be15133054c9
+  Args:
+    target: :Female
+    source: :IrisMountbatten
+    relation: :hasSex
+  AssignClass (b9ee73b9-a5f8-41ac-9fb5-5da3f74ed8a3)
+ Call ID: b9ee73b9-a5f8-41ac-9fb5-5da3f74ed8a3
   Args:
     type: :Man
-    source: Alexander_Mountbatten
-  AssignClass (21a371b8-761e-4e3f-bc18-5c96714ce3d9)
- Call ID: 21a371b8-761e-4e3f-bc18-5c96714ce3d9
-  Args:
-    type: :Ancestor
-    source: Alexander_Mountbatten
-  AddTriple (64aaef10-193d-4ffb-8a21-2e72450d33dc)
- Call ID: 64aaef10-193d-4ffb-8a21-2e72450d33dc
-  Args:
-    source: Lady_Iris_Mountbatten
-    target: Alexander_Mountbatten
-    relation: :hasFather
-  AssignClass (094a97a3-af15-4252-94ef-5778f4d40118)
- Call ID: 094a97a3-af15-4252-94ef-5778f4d40118
-  Args:
-    type: :Woman
-    source: Irene_Frances_Adza_Denison
-  AssignClass (a5f28151-b853-41ca-890e-9a82dce0d954)
- Call ID: a5f28151-b853-41ca-890e-9a82dce0d954
-  Args:
-    type: :Ancestor
-    source: Irene_Frances_Adza_Denison
-  AddTriple (9659d368-0f15-404b-a3a6-69ba74775d53)
- Call ID: 9659d368-0f15-404b-a3a6-69ba74775d53
-  Args:
-    source: Lady_Iris_Mountbatten
-    relation: :hasMother
-    target: Irene_Frances_Adza_Denison
-  AssignClass (76188bb0-22a0-4413-bf7f-a42ed45e7d47)
- Call ID: 76188bb0-22a0-4413-bf7f-a42ed45e7d47
-  Args:
-    type: :Man
-    source: William_Francis_Henry_Denison
-  AssignClass (083a3dff-43b8-4d35-b10b-a67838e9e823)
- Call ID: 083a3dff-43b8-4d35-b10b-a67838e9e823
-  Args:
-    type: :Ancestor
-    source: William_Francis_Henry_Denison
-  AssignClass (19be8c45-b3e1-49eb-bae5-0355cd10048d)
- Call ID: 19be8c45-b3e1-49eb-bae5-0355cd10048d
-  Args:
-    type: :Woman
-    source: Grace_Adelaide_Fane
-  AssignClass (19856a50-81df-4a2d-b001-dfe644e45f03)
- Call ID: 19856a50-81df-4a2d-b001-dfe644e45f03
-  Args:
-    type: :Ancestor
-    source: Grace_Adelaide_Fane
-  AddTriple (663243f7-1ee0-4b7d-ac90-9d2ef240c815)
- Call ID: 663243f7-1ee0-4b7d-ac90-9d2ef240c815
-  Args:
-    target: William_Francis_Henry_Denison
-    relation: :hasFather
-    source: Irene_Frances_Adza_Denison
-  AddTriple (7dbdb1fa-30ca-4ebe-8cdf-12dec308a82d)
- Call ID: 7dbdb1fa-30ca-4ebe-8cdf-12dec308a82d
-  Args:
-    target: Grace_Adelaide_Fane
-    relation: :hasMother
-    source: Irene_Frances_Adza_Denison
-  AssignClass (98ead8e3-6510-433b-9d73-97af00e844a4)
- Call ID: 98ead8e3-6510-433b-9d73-97af00e844a4
-  Args:
-    type: :Man
-    source: Francis_William_Henry_Fane
-  AssignClass (152a058d-e493-4e05-b2e2-d27fb78e4d18)
- Call ID: 152a058d-e493-4e05-b2e2-d27fb78e4d18
-  Args:
-    type: :Ancestor
-    source: Francis_William_Henry_Fane
-  AddTriple (0651cabf-e917-434c-b7c0-81ea336e80f6)
- Call ID: 0651cabf-e917-434c-b7c0-81ea336e80f6
-  Args:
-    source: Grace_Adelaide_Fane
-    target: Francis_William_Henry_Fane
-    relation: :hasFather
-  AssignClass (5b90eee5-98fc-40f1-a2c0-8fcc226ba29e)
- Call ID: 5b90eee5-98fc-40f1-a2c0-8fcc226ba29e
-  Args:
-    type: :Man
-    source: Hugo_William_Cecil_Denison
-  AssignClass (c0eafdb0-d0ea-48c4-a912-1e1ca0a7f9e1)
- Call ID: c0eafdb0-d0ea-48c4-a912-1e1ca0a7f9e1
-  Args:
-    type: :Ancestor
-    source: Hugo_William_Cecil_Denison
-  AddTriple (58b3d818-b2cf-4675-8d3a-7fa4ee4e27f5)
- Call ID: 58b3d818-b2cf-4675-8d3a-7fa4ee4e27f5
-  Args:
-    source: Hugo_William_Cecil_Denison
-    target: William_Francis_Henry_Denison
-    relation: :hasFather
-  AssignClass (4def1a96-7817-4503-b32a-51e643a639e5)
- Call ID: 4def1a96-7817-4503-b32a-51e643a639e5
-  Args:
-    type: :Woman
-    source: Zinnia_Rosemary_Denison
-  AssignClass (bc757616-bd0b-4274-84b4-8d239a84d3fb)
- Call ID: bc757616-bd0b-4274-84b4-8d239a84d3fb
+    source: :AlexanderMountbatten
+  AssignClass (5137d9e6-b4fc-4f22-babd-77c56c4a383f)
+ Call ID: 5137d9e6-b4fc-4f22-babd-77c56c4a383f
   Args:
     type: :Person
-    source: Zinnia_Rosemary_Denison
-  AddTriple (68e0bd16-07ab-4090-a810-e134107f0481)
- Call ID: 68e0bd16-07ab-4090-a810-e134107f0481
+    source: :AlexanderMountbatten
+  AddTriple (90cffb34-dec0-4e53-bdd1-6c3947a13971)
+ Call ID: 90cffb34-dec0-4e53-bdd1-6c3947a13971
   Args:
-    source: Zinnia_Rosemary_Denison
-    relation: :hasFather
-    target: Hugo_William_Cecil_Denison
-  AssignClass (25de7835-b9a7-4e56-9b30-89a441493d98)
- Call ID: 25de7835-b9a7-4e56-9b30-89a441493d98
+    source: :AlexanderMountbatten
+    target: :IrisMountbatten
+    relation: :isFatherOf
+  AssignClass (23e41833-7690-4943-b0d6-2e06a0e336ff)
+ Call ID: 23e41833-7690-4943-b0d6-2e06a0e336ff
   Args:
-    type: :Man
-    source: Hamilton_Joseph_Keyes_O_Malley
-  AssignClass (1947b9b3-4e65-4cfd-94e5-2a2393dacbc7)
- Call ID: 1947b9b3-4e65-4cfd-94e5-2a2393dacbc7
+    source: :IreneFrancesAdzaDenison
+    type: :Woman
+  AssignClass (787e62e5-dee7-48be-bab5-6852a722afa3)
+ Call ID: 787e62e5-dee7-48be-bab5-6852a722afa3
+  Args:
+    source: :IreneFrancesAdzaDenison
+    type: :Person
+  AddTriple (a32de057-1570-4a6f-8fad-c1d0f2a1a30c)
+ Call ID: a32de057-1570-4a6f-8fad-c1d0f2a1a30c
+  Args:
+    relation: :isMotherOf
+    source: :IreneFrancesAdzaDenison
+    target: :IrisMountbatten
+  AddLiteral (e9681874-3311-4a1f-b2c4-b12472b3636f)
+ Call ID: e9681874-3311-4a1f-b2c4-b12472b3636f
+  Args:
+    literal_type: xsd:integer
+    source: :IreneFrancesAdzaDenison
+    literal_value: 1890
+    relation: :hasBirthYear
+  AddLiteral (df3fa697-80e9-4066-9229-c34aa16bbdf8)
+ Call ID: df3fa697-80e9-4066-9229-c34aa16bbdf8
+  Args:
+    literal_type: xsd:integer
+    source: :IreneFrancesAdzaDenison
+    relation: :hasDeathYear
+    literal_value: 1956
+  AssignClass (9f961742-c0df-4f7f-a7be-d0479941fee0)
+ Call ID: 9f961742-c0df-4f7f-a7be-d0479941fee0
+  Args:
+    source: :PrincessBeatrice
+    type: :Woman
+  AssignClass (a1bfdafc-fc37-490b-bbf9-6db704c483b3)
+ Call ID: a1bfdafc-fc37-490b-bbf9-6db704c483b3
   Args:
     type: :Person
-    source: Hamilton_Joseph_Keyes_O_Malley
-  AddLiteral (85d717ee-425f-4817-9a45-1300facdaf8e)
- Call ID: 85d717ee-425f-4817-9a45-1300facdaf8e
+    source: :PrincessBeatrice
+  AssignClass (25f5380d-edc9-49a5-9793-b28d9bd14e4f)
+ Call ID: 25f5380d-edc9-49a5-9793-b28d9bd14e4f
   Args:
+    type: :Man
+    source: :PrinceHenryOfBattenberg
+  AssignClass (0e14e97f-c9ae-4c95-a074-9d90328b42b3)
+ Call ID: 0e14e97f-c9ae-4c95-a074-9d90328b42b3
+  Args:
+    type: :Person
+    source: :PrinceHenryOfBattenberg
+  AddTriple (b4bbc445-cfe9-4b4b-9f27-0899a3c74dcd)
+ Call ID: b4bbc445-cfe9-4b4b-9f27-0899a3c74dcd
+  Args:
+    relation: :isMotherOf
+    source: :PrincessBeatrice
+    target: :AlexanderMountbatten
+  AddTriple (7d8c057e-2c2e-4cbe-b865-f08eab1c11bc)
+ Call ID: 7d8c057e-2c2e-4cbe-b865-f08eab1c11bc
+  Args:
+    target: :AlexanderMountbatten
+    source: :PrinceHenryOfBattenberg
+    relation: :isFatherOf
+  AssignClass (82750b55-f446-4208-8597-1ea529fffc2e)
+ Call ID: 82750b55-f446-4208-8597-1ea529fffc2e
+  Args:
+    type: :Man
+    source: :WilliamFrancisHenryDenison
+  AssignClass (110e091a-cb27-4e0a-9fba-d590e390b77a)
+ Call ID: 110e091a-cb27-4e0a-9fba-d590e390b77a
+  Args:
+    type: :Person
+    source: :WilliamFrancisHenryDenison
+  AssignClass (82feef4d-6f89-418c-a582-f40effeaba05)
+ Call ID: 82feef4d-6f89-418c-a582-f40effeaba05
+  Args:
+    type: :Woman
+    source: :GraceAdelaideFane
+  AssignClass (99a3df8c-3024-4cdd-990a-052f226fcfcd)
+ Call ID: 99a3df8c-3024-4cdd-990a-052f226fcfcd
+  Args:
+    type: :Person
+    source: :GraceAdelaideFane
+  AddTriple (e0c4c9bf-92ab-4f8e-a803-937eef90221f)
+ Call ID: e0c4c9bf-92ab-4f8e-a803-937eef90221f
+  Args:
+    source: :WilliamFrancisHenryDenison
+    target: :IreneFrancesAdzaDenison
+    relation: :isFatherOf
+  AddTriple (8e671d44-a683-42ac-8d95-885f0d5930f9)
+ Call ID: 8e671d44-a683-42ac-8d95-885f0d5930f9
+  Args:
+    target: :IreneFrancesAdzaDenison
+    source: :GraceAdelaideFane
+    relation: :isMotherOf
+  AddLiteral (a6ddad33-a9ab-4d89-a795-53bfadceac81)
+ Call ID: a6ddad33-a9ab-4d89-a795-53bfadceac81
+  Args:
+    literal_type: xsd:integer
+    source: :GraceAdelaideFane
+    relation: :hasBirthYear
+    literal_value: 1860
+  AddLiteral (0f806c49-0f73-493e-a242-603bdb2aa023)
+ Call ID: 0f806c49-0f73-493e-a242-603bdb2aa023
+  Args:
+    literal_type: xsd:integer
+    source: :GraceAdelaideFane
+    literal_value: 1933
+    relation: :hasDeathYear
+  AssignClass (2ac656a6-9a91-48fd-a9f1-0866d5e868d3)
+ Call ID: 2ac656a6-9a91-48fd-a9f1-0866d5e868d3
+  Args:
+    type: :Man
+    source: :FrancisWilliamHenryFane
+  AssignClass (664c983d-773e-4f4b-a389-3eb42739a0fd)
+ Call ID: 664c983d-773e-4f4b-a389-3eb42739a0fd
+  Args:
+    source: :FrancisWilliamHenryFane
+    type: :Person
+  AddTriple (e8cc03a0-9348-4497-9063-8b7f0bfc5c91)
+ Call ID: e8cc03a0-9348-4497-9063-8b7f0bfc5c91
+  Args:
+    relation: :isFatherOf
+    target: :GraceAdelaideFane
+    source: :FrancisWilliamHenryFane
+  AssignClass (985c4388-1d7a-44aa-9015-db7f7bb562db)
+ Call ID: 985c4388-1d7a-44aa-9015-db7f7bb562db
+  Args:
+    source: :HugoWilliamCecilDenison
+    type: :Man
+  AssignClass (e35ee676-dc6d-4a53-86e2-45d44a113f7b)
+ Call ID: e35ee676-dc6d-4a53-86e2-45d44a113f7b
+  Args:
+    source: :HugoWilliamCecilDenison
+    type: :Person
+  AddTriple (ee5bd9bd-334a-46c8-bc8d-793f0958b8db)
+ Call ID: ee5bd9bd-334a-46c8-bc8d-793f0958b8db
+  Args:
+    target: :IreneFrancesAdzaDenison
+    source: :HugoWilliamCecilDenison
+    relation: :isBrotherOf
+  AssignClass (b93a3f9f-998d-4c17-bfcc-3b4afe4c821d)
+ Call ID: b93a3f9f-998d-4c17-bfcc-3b4afe4c821d
+  Args:
+    type: :Woman
+    source: :ZinniaRosemaryDenison
+  AssignClass (87c0bcc4-0e49-4a2c-874d-8a43a51c0685)
+ Call ID: 87c0bcc4-0e49-4a2c-874d-8a43a51c0685
+  Args:
+    type: :Person
+    source: :ZinniaRosemaryDenison
+  AddTriple (c2482cdc-5ccc-4552-8819-a01e44c60e3a)
+ Call ID: c2482cdc-5ccc-4552-8819-a01e44c60e3a
+  Args:
+    target: :ZinniaRosemaryDenison
+    source: :HugoWilliamCecilDenison
+    relation: :isFatherOf
+  AssignClass (f12bec78-9ee5-43ce-b618-77aa205be9ad)
+ Call ID: f12bec78-9ee5-43ce-b618-77aa205be9ad
+  Args:
+    source: :HamiltonJosephKeyesOMalley
+    type: :Man
+  AssignClass (f3c9fcb2-b222-4941-9afb-1cc8924d43a2)
+ Call ID: f3c9fcb2-b222-4941-9afb-1cc8924d43a2
+  Args:
+    source: :HamiltonJosephKeyesOMalley
+    type: :Person
+  AddTriple (e3e43a3d-4172-44ac-b902-2779e653f6b3)
+ Call ID: e3e43a3d-4172-44ac-b902-2779e653f6b3
+  Args:
+    source: :IrisMountbatten
+    target: :HamiltonJosephKeyesOMalley
+    relation: :hasRelation
+  AddLiteral (c07e82e0-52e7-40f0-87ff-83a94a75e486)
+ Call ID: c07e82e0-52e7-40f0-87ff-83a94a75e486
+  Args:
+    source: :HamiltonJosephKeyesOMalley
+    relation: :hasMarriageYear
     literal_value: 1941
+    literal_type: xsd:integer
+  AssignClass (d2b511aa-ed3c-4086-a368-e8f190bca1b9)
+ Call ID: d2b511aa-ed3c-4086-a368-e8f190bca1b9
+  Args:
+    source: :RobinAlexanderBryan
+    type: :Man
+  AssignClass (74ee851a-b5c4-42e1-9359-08f9ba984181)
+ Call ID: 74ee851a-b5c4-42e1-9359-08f9ba984181
+  Args:
+    source: :RobinAlexanderBryan
+    type: :Person
+  AddTriple (1e2f2eb9-f961-4a8e-9096-4bab739a7195)
+ Call ID: 1e2f2eb9-f961-4a8e-9096-4bab739a7195
+  Args:
+    source: :IrisMountbatten
+    target: :RobinAlexanderBryan
+    relation: :isMotherOf
+  AddLiteral (e737149e-1fdc-43bc-80cf-43679e2cd052)
+ Call ID: e737149e-1fdc-43bc-80cf-43679e2cd052
+  Args:
+    source: :RobinAlexanderBryan
+    relation: :hasBirthYear
+    literal_value: 1957
+    literal_type: xsd:integer
+  AssignClass (b5904c66-c915-4b5e-9a50-8f5e6a349a29)
+ Call ID: b5904c66-c915-4b5e-9a50-8f5e6a349a29
+  Args:
+    type: :Man
+    source: :WilliamAlexanderKemp
+  AssignClass (439aa45f-bb54-408e-988d-028da0d4dbe6)
+ Call ID: 439aa45f-bb54-408e-988d-028da0d4dbe6
+  Args:
+    type: :Person
+    source: :WilliamAlexanderKemp
+  AddTriple (996d53d5-ddc6-44c4-b0d4-55678b78f6a9)
+ Call ID: 996d53d5-ddc6-44c4-b0d4-55678b78f6a9
+  Args:
+    source: :IrisMountbatten
+    target: :WilliamAlexanderKemp
+    relation: :hasRelation
+  AddLiteral (8d803648-0969-4491-8ed8-1e0d795ed681)
+ Call ID: 8d803648-0969-4491-8ed8-1e0d795ed681
+  Args:
+    source: :WilliamAlexanderKemp
     relation: :hasMarriageYear
-    source: Lady_Iris_Mountbatten
-    literal_type: xsd:integer
-  AssignClass (2fd66689-7473-4c44-a9e0-06f6209447ce)
- Call ID: 2fd66689-7473-4c44-a9e0-06f6209447ce
-  Args:
-    type: :Man
-    source: Robin_Alexander_Bryan
-  AssignClass (42438d16-ac3f-4fb2-82e4-6fd9465d0345)
- Call ID: 42438d16-ac3f-4fb2-82e4-6fd9465d0345
-  Args:
-    type: :Person
-    source: Robin_Alexander_Bryan
-  AddTriple (14b35e91-92a7-4605-9cba-460d95e8775c)
- Call ID: 14b35e91-92a7-4605-9cba-460d95e8775c
-  Args:
-    target: Lady_Iris_Mountbatten
-    relation: :hasMother
-    source: Robin_Alexander_Bryan
-  AssignClass (cd917fee-2911-4233-813d-5cceef0dae0f)
- Call ID: cd917fee-2911-4233-813d-5cceef0dae0f
-  Args:
-    type: :Man
-    source: William_Alexander_Kemp
-  AssignClass (b9285ed2-58c7-4d53-a22f-099af4a8a50d)
- Call ID: b9285ed2-58c7-4d53-a22f-099af4a8a50d
-  Args:
-    type: :Person
-    source: William_Alexander_Kemp
-  AddLiteral (73a13e2f-3ce2-41bc-bfe0-bac6d3b57b6e)
- Call ID: 73a13e2f-3ce2-41bc-bfe0-bac6d3b57b6e
-  Args:
-    literal_type: xsd:integer
     literal_value: 1965
-    relation: :hasMarriageYear
-    source: Lady_Iris_Mountbatten
-  AssignClass (f19e521b-538f-4c16-ae6b-b4f6157574b5)
- Call ID: f19e521b-538f-4c16-ae6b-b4f6157574b5
+    literal_type: xsd:integer
+  AddLiteral (9c228f3f-636a-4da4-800c-3359a168c9e9)
+ Call ID: 9c228f3f-636a-4da4-800c-3359a168c9e9
   Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1921
+    source: :WilliamAlexanderKemp
+  AddLiteral (7fdd77a0-69d6-42bd-b381-5544a507e56d)
+ Call ID: 7fdd77a0-69d6-42bd-b381-5544a507e56d
+  Args:
+    source: :WilliamAlexanderKemp
+    literal_value: 1991
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AssignClass (b5e6f161-ca0b-470e-a698-5b33e235e4c6)
+ Call ID: b5e6f161-ca0b-470e-a698-5b33e235e4c6
+  Args:
+    source: :ClarenceArthurKemp
     type: :Man
-    source: Clarence_Arthur_Kemp
-  AssignClass (2869b0f3-6bc7-4434-82d6-ed87fe9d12c1)
- Call ID: 2869b0f3-6bc7-4434-82d6-ed87fe9d12c1
+  AssignClass (55d1733f-3835-4425-8129-6529c858e24f)
+ Call ID: 55d1733f-3835-4425-8129-6529c858e24f
   Args:
-    type: :Ancestor
-    source: Clarence_Arthur_Kemp
-  AssignClass (0f36ca7a-bc6b-4356-8794-0cbc0a930182)
- Call ID: 0f36ca7a-bc6b-4356-8794-0cbc0a930182
+    type: :Person
+    source: :ClarenceArthurKemp
+  AddTriple (9cfec259-3918-4b41-9c1e-151f9359e243)
+ Call ID: 9cfec259-3918-4b41-9c1e-151f9359e243
   Args:
+    target: :WilliamAlexanderKemp
+    source: :ClarenceArthurKemp
+    relation: :isFatherOf
+  AssignClass (a77efb66-f062-4d48-a6f2-551f7cd54187)
+ Call ID: a77efb66-f062-4d48-a6f2-551f7cd54187
+  Args:
+    source: :HelenJanetBallantyne
     type: :Woman
-    source: Helen_Janet_Ballantyne
-  AssignClass (e5a18d66-d042-42ad-b34f-a407c4bfb27a)
- Call ID: e5a18d66-d042-42ad-b34f-a407c4bfb27a
+  AssignClass (cc1933f1-81ce-464e-a9cd-d2b4bad65af8)
+ Call ID: cc1933f1-81ce-464e-a9cd-d2b4bad65af8
   Args:
-    type: :Ancestor
-    source: Helen_Janet_Ballantyne
-  AddTriple (4445f6f0-21de-4a76-824c-7f768bd67c92)
- Call ID: 4445f6f0-21de-4a76-824c-7f768bd67c92
+    source: :HelenJanetBallantyne
+    type: :Person
+  AddTriple (4212d51f-40b0-47a3-bf9d-70f3f68d78cb)
+ Call ID: 4212d51f-40b0-47a3-bf9d-70f3f68d78cb
   Args:
-    source: William_Alexander_Kemp
-    target: Clarence_Arthur_Kemp
-    relation: :hasFather
-  AddTriple (17021990-0ff0-4485-a275-4a4bd38499e2)
- Call ID: 17021990-0ff0-4485-a275-4a4bd38499e2
+    relation: :isMotherOf
+    source: :HelenJanetBallantyne
+    target: :WilliamAlexanderKemp
+  Finish (658e4f98-68bd-42d4-8fea-20e5724adc9e)
+ Call ID: 658e4f98-68bd-42d4-8fea-20e5724adc9e
   Args:
-    source: William_Alexander_Kemp
-    target: Helen_Janet_Ballantyne
-    relation: :hasMother
-  AssignClass (c490a162-fe17-472c-8b4e-fc066e60d7e4)
- Call ID: c490a162-fe17-472c-8b4e-fc066e60d7e4
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:ClarenceArthurKemp a :Man,
+          :Person ;
+      :isFatherOf data:WilliamAlexanderKemp .
+
+  data:FrancisWilliamHenryFane a :Man,
+          :Person ;
+      :isFatherOf data:GraceAdelaideFane .
+
+  data:HelenJanetBallantyne a :Person,
+          :Woman ;
+      :isMotherOf data:WilliamAlexanderKemp .
+
+  data:HugoWilliamCecilDenison a :Man,
+          :Person ;
+      :isBrotherOf data:IreneFrancesAdzaDenison ;
+      :isFatherOf data:ZinniaRosemaryDenison .
+
+  data:PrinceHenryOfBattenberg a :Man,
+          :Person ;
+      :isFatherOf data:AlexanderMountbatten .
+
+  data:PrincessBeatrice a :Person,
+          :Woman ;
+      :isMotherOf data:AlexanderMountbatten .
+
+  data:WilliamFrancisHenryDenison a :Man,
+          :Person ;
+      :isFatherOf data:IreneFrancesAdzaDenison .
+
+  data:GraceAdelaideFane a :Person,
+          :Woman ;
+      :hasBirthYear 1860 ;
+      :hasDeathYear 1933 ;
+      :isMotherOf data:IreneFrancesAdzaDenison .
+
+  data:HamiltonJosephKeyesOMalley a :Man,
+          :Person ;
+      :hasMarriageYear 1941 .
+
+  data:RobinAlexanderBryan a :Man,
+          :Person ;
+      :hasBirthYear 1957 .
+
+  data:ZinniaRosemaryDenison a :Person,
+          :Woman .
+
+  data:AlexanderMountbatten a :Man,
+          :Person ;
+      :isFatherOf data:IrisMountbatten .
+
+  data:IrisMountbatten a :Person,
+          :Woman ;
+      :hasBirthYear 1920 ;
+      :hasDeathYear 1982 ;
+      :hasRelation data:HamiltonJosephKeyesOMalley,
+          data:WilliamAlexanderKemp ;
+      :hasSex data:Female ;
+      :isMotherOf data:RobinAlexanderBryan .
+
+  data:IreneFrancesAdzaDenison a :Person,
+          :Woman ;
+      :hasBirthYear 1890 ;
+      :hasDeathYear 1956 ;
+      :isMotherOf data:IrisMountbatten .
+
+  data:WilliamAlexanderKemp a :Man,
+          :Person ;
+      :hasBirthYear 1921 ;
+      :hasDeathYear 1991 ;
+      :hasMarriageYear 1965 .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Female']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (66dba4a6-44f2-48c5-ba10-b21ce8e0a3ef)
+ Call ID: 66dba4a6-44f2-48c5-ba10-b21ce8e0a3ef
   Args:
-    type: :Woman
-    source: Princess_Beatrice
-  AssignClass (c5428169-e4b2-4fd5-966e-411cfabab194)
- Call ID: c5428169-e4b2-4fd5-966e-411cfabab194
-  Args:
-    type: :Ancestor
-    source: Princess_Beatrice
-  AssignClass (124988e2-c759-434f-a79d-9a27c92011b1)
- Call ID: 124988e2-c759-434f-a79d-9a27c92011b1
-  Args:
-    type: :Man
-    source: Prince_Henry_of_Battenberg
-  AssignClass (a0a3a6c1-18da-42d1-b816-25f381853076)
- Call ID: a0a3a6c1-18da-42d1-b816-25f381853076
-  Args:
-    type: :Ancestor
-    source: Prince_Henry_of_Battenberg
-  AddTriple (91282a85-db35-4e85-b85c-83b4361853ec)
- Call ID: 91282a85-db35-4e85-b85c-83b4361853ec
-  Args:
-    source: Alexander_Mountbatten
-    relation: :hasMother
-    target: Princess_Beatrice
-  AddTriple (e9c5d7a4-202c-451b-8e44-cfcfefba84c6)
- Call ID: e9c5d7a4-202c-451b-8e44-cfcfefba84c6
-  Args:
-    source: Alexander_Mountbatten
-    target: Prince_Henry_of_Battenberg
-    relation: :hasFather
-  Finish (8f740c50-bfc6-4ccb-ba28-4be4561d5653)
- Call ID: 8f740c50-bfc6-4ccb-ba28-4be4561d5653
+    source: :Female
+    type: :Sex
+  Finish (a211a1cb-3888-4fdd-9d2f-9c2c39c38e35)
+ Call ID: a211a1cb-3888-4fdd-9d2f-9c2c39c38e35
   Args:

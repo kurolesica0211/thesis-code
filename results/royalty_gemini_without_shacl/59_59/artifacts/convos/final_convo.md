@@ -126,10 +126,6 @@ Since 2023, Edward's children have been styled as the children of a duke rather 
 The family's country residence is Bagshot Park, while their office and official London home is at Buckingham Palace.
 Edward's initial lease of Bagshot Park in 1998 was for 50 years at £5,000 a year, with the Crown Estate as landlord.
 Approximately £3 million was spent on refurbishment, of which Edward paid £1.36 million, after which the rent rose to £90,000 a year.
-Activities
-
-The Earl and Countess of Wessex established their foundation, the Bagshot Park Charity, later renamed the Wessex Youth Trust, in 1999, with a focus on helping, supporting, and advancing registered charities that provide opportunities specifically for children and young people.
-Twenty years after its inception, the Wessex Youth Trust changed its name to the Earl and Countess of Wessex Charitable Trust, managed by the private office of the Earl and Countess of Wessex and Forfar.
 In July 2023, the trust's remaining funds were transferred to the Edinburgh Trust No. 2, which had originally been set up in 1964.
 Edward's patronages include the British Paralympic Association, the International Real Tennis Professionals Association, the Commonwealth Games Federation, BadmintonScotland, the Tennis and Rackets Association, the City of Birmingham Symphony Orchestra and Chorus, the London Mozart Players, Haddo House Choral and Operatic Society, Northern Ballet, the Edinburgh International Festival, the Royal Birmingham Conservatoire, the Production Guild, and National Youth Theatre.
 The Earl of Wessex assumed many duties from his father, Prince Philip, as Philip reduced his commitments before retiring from royal duties.
@@ -141,7 +137,6 @@ Edward later became chair of trustees of the Duke of Edinburgh's International A
 Edward is also a trustee of the International Award Association, which "encompasses the DofE UK and all its other 61 National Award Authorities across the globe".
 In 2018, Edward, as patron of the Tennis and Rackets Association, played on all 50 real tennis courts around the world and raised over £2 million for the Duke of Edinburgh's Award scheme.
 In June 2011, Edward visited Baltimore to meet students and staff of the Living Classrooms Foundation and encourage their participation in the Duke of Edinburgh's Award's programme.
-In December 2011, the Earl and Countess of Wessex visited troops in Afghanistan.
 During the same trip, the couple travelled to Bahrain, where they received two gifts of jewels from the Bahraini royal family and Prime Minister.
 In February and March 2012, the Earl and Countess visited the Caribbean as part of the Queen's Diamond Jubilee.
 The Queen appointed the Earl of Wessex as Lord High Commissioner to the General Assembly of the Church of Scotland for 2014.
@@ -151,11 +146,9 @@ In September 2016, Edward travelled to Chile as part of the Duke of Edinburgh's 
 The Earl and Countess of Wessex represented the Queen at the 50th anniversary celebrations of Sultan Hassanal Bolkiah's accession to the throne of Brunei in October 2017.
 In April 2018, the Earl visited Australia to attend the XXI Commonwealth Games and to support fundraising events for participants in the Duke of Edinburgh Award challenges.
 In July 2019, the Earl and Countess of Wessex visited Forfar on their first official visit to the royal burgh since the Queen granted Edward the additional title Earl of Forfar in March 2019.
-The Earl was presented with 'Earl of Forfar' tartan, designed by Forfar's Strathmore Woollen Company to mark their new titles.
 In February 2022, Edward was appointed president of the Royal Windsor Horse Show, a position previously held by his father Prince Philip.
 The following month, he visited Kenya to oversee the progress of the Duke of Edinburgh's International Award in the country.
 In April 2022, the Earl and Countess of Wessex and Forfar toured Saint Lucia, Saint Vincent and the Grenadines, and Antigua and Barbuda to mark the Queen's Platinum Jubilee.
-In 2022, and in recognition of his role as patron of the Production Guild, the Earl of Wessex Award was created as part of the Guild's inaugural Talent Showcase to recognise UK film and television organisations that had developed "a successful way of inspiring local talent or skills, widening access or being more inclusive.
 "
 
 
@@ -188,6 +181,8 @@ Edward is a Royal Knight Companion of the Most Noble Order of the Garter, an Ext
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -203,39 +198,9 @@ Edward is a Royal Knight Companion of the Most Noble Order of the Garter, an Ext
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -250,6 +215,23 @@ Edward is a Royal Knight Companion of the Most Noble Order of the Garter, an Ext
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -267,6 +249,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -334,29 +331,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -365,6 +354,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -377,6 +374,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -385,17 +384,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -423,6 +424,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -438,119 +523,209 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c1deba9c-2279-47dd-b196-cb9b4a5d2f59)
- Call ID: c1deba9c-2279-47dd-b196-cb9b4a5d2f59
+  AssignClass (cd09bda1-71b3-4e5a-83f6-7531efda8997)
+ Call ID: cd09bda1-71b3-4e5a-83f6-7531efda8997
   Args:
-    type: :Man
     source: Prince_Edward
-  AssignClass (9e5bb7ef-b558-490c-aa2a-4641586a1f0b)
- Call ID: 9e5bb7ef-b558-490c-aa2a-4641586a1f0b
+    type: :Man
+  AssignClass (1157207a-89e2-4857-b004-7e3395be763a)
+ Call ID: 1157207a-89e2-4857-b004-7e3395be763a
+  Args:
+    type: :Person
+    source: Prince_Edward
+  AddLiteral (f019b5fb-d411-4180-8936-dbeaa6e1c9f3)
+ Call ID: f019b5fb-d411-4180-8936-dbeaa6e1c9f3
+  Args:
+    source: Prince_Edward
+    literal_value: 1964
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AssignClass (fe3bc92f-d217-4d4d-bb2d-5f17262c9359)
+ Call ID: fe3bc92f-d217-4d4d-bb2d-5f17262c9359
   Args:
     type: :Woman
     source: Queen_Elizabeth_II
-  AssignClass (8b38bf53-e374-40d7-b121-6466eb4ecb09)
- Call ID: 8b38bf53-e374-40d7-b121-6466eb4ecb09
+  AssignClass (0c6db189-07a8-4f47-82d5-9ce01edfc0a4)
+ Call ID: 0c6db189-07a8-4f47-82d5-9ce01edfc0a4
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Person
+  AssignClass (840b1641-d310-4421-907a-852c13666123)
+ Call ID: 840b1641-d310-4421-907a-852c13666123
   Args:
     type: :Man
     source: Prince_Philip
-  AssignClass (821df317-3917-4ecb-8658-628147a6cebf)
- Call ID: 821df317-3917-4ecb-8658-628147a6cebf
+  AssignClass (f946d332-70fd-462d-aac4-3d765c51db7c)
+ Call ID: f946d332-70fd-462d-aac4-3d765c51db7c
+  Args:
+    source: Prince_Philip
+    type: :Person
+  AddTriple (0b66692c-0ca7-4049-a10a-adb385fce277)
+ Call ID: 0b66692c-0ca7-4049-a10a-adb385fce277
+  Args:
+    target: Queen_Elizabeth_II
+    relation: :hasMother
+    source: Prince_Edward
+  AddTriple (9ae589e2-2e17-42dd-95b0-b806c461ad59)
+ Call ID: 9ae589e2-2e17-42dd-95b0-b806c461ad59
+  Args:
+    relation: :hasFather
+    target: Prince_Philip
+    source: Prince_Edward
+  AssignClass (e3f428ea-8c00-407f-9ca2-1b03c664b206)
+ Call ID: e3f428ea-8c00-407f-9ca2-1b03c664b206
   Args:
     type: :Man
     source: King_Charles_III
-  AssignClass (7dd03a4a-955c-44fc-974f-60d188a088ae)
- Call ID: 7dd03a4a-955c-44fc-974f-60d188a088ae
+  AssignClass (3e7ee824-80e6-4c84-b539-09aa98da74f7)
+ Call ID: 3e7ee824-80e6-4c84-b539-09aa98da74f7
   Args:
-    type: :Woman
-    source: Anne
-  AssignClass (67109adb-97d5-46b2-89c6-b343d28f48f7)
- Call ID: 67109adb-97d5-46b2-89c6-b343d28f48f7
+    type: :Person
+    source: King_Charles_III,type:
+  AddTriple (17bfcad4-b6f8-430f-847a-821e6bb9a57a)
+ Call ID: 17bfcad4-b6f8-430f-847a-821e6bb9a57a
   Args:
-    type: :Man
-    source: Andrew
-  AssignClass (33b084f1-0c44-4db5-ba7c-d03ff577eda6)
- Call ID: 33b084f1-0c44-4db5-ba7c-d03ff577eda6
+    source: Prince_Edward
+    relation: :isBrotherOf
+    target: King_Charles_III
+  AssignClass (737b1ae2-524d-4d59-9205-d501231f1bb2)
+ Call ID: 737b1ae2-524d-4d59-9205-d501231f1bb2
   Args:
-    type: :Woman
     source: Sophie_Rhys-Jones
-  AssignClass (b3b92f27-0c2c-4506-b8fe-0b2ab8d50444)
- Call ID: b3b92f27-0c2c-4506-b8fe-0b2ab8d50444
+    type: :Woman
+  AssignClass (e114aa73-14fa-4684-b8c8-5f6c9088a45c)
+ Call ID: e114aa73-14fa-4684-b8c8-5f6c9088a45c
+  Args:
+    type: :Person
+    source: Sophie_Rhys-Jones
+  AddLiteral (69043297-d9c8-4118-8aa1-b1d38cc95e65)
+ Call ID: 69043297-d9c8-4118-8aa1-b1d38cc95e65
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Prince_Edward
+    literal_value: 1999
+  AddTriple (ca019117-8f20-41da-b28b-bb26845ba482)
+ Call ID: ca019117-8f20-41da-b28b-bb26845ba482
+  Args:
+    source: Prince_Edward
+    relation: :hasRelation
+    target: Sophie_Rhys-Jones
+  AssignClass (0317b20b-cfcc-4e03-947a-610572eddb80)
+ Call ID: 0317b20b-cfcc-4e03-947a-610572eddb80
   Args:
     type: :Woman
     source: Lady_Louise_Mountbatten-Windsor
-  AssignClass (cdc8ef58-8d73-4406-87d8-cd451f3b6bbc)
- Call ID: cdc8ef58-8d73-4406-87d8-cd451f3b6bbc
+  AssignClass (ca9d69ef-2853-4a11-8679-03fed1e84671)
+ Call ID: ca9d69ef-2853-4a11-8679-03fed1e84671
+  Args:
+    type: :Person
+    source: Lady_Louise_Mountbatten-Windsor
+  AddTriple (be01671b-2419-4c28-8246-b3e5ad6d2430)
+ Call ID: be01671b-2419-4c28-8246-b3e5ad6d2430
+  Args:
+    source: Lady_Louise_Mountbatten-Windsor
+    target: Prince_Edward
+    relation: :isChildOf
+  AddTriple (7f6fad77-6468-42cf-9e46-c9448bb114c5)
+ Call ID: 7f6fad77-6468-42cf-9e46-c9448bb114c5
+  Args:
+    relation: :isChildOf
+    target: Sophie_Rhys-Jones
+    source: Lady_Louise_Mountbatten-Windsor
+  AssignClass (c1499a0f-06e5-4cb9-9208-2aee83dac96e)
+ Call ID: c1499a0f-06e5-4cb9-9208-2aee83dac96e
   Args:
     type: :Man
     source: James_Mountbatten-Windsor
-  AddTriple (be4cdd3b-9fc3-41fa-ab8e-fa08a293fa99)
- Call ID: be4cdd3b-9fc3-41fa-ab8e-fa08a293fa99
+  AssignClass (eda3da8e-27a5-4ea1-ab80-c785c55d2b14)
+ Call ID: eda3da8e-27a5-4ea1-ab80-c785c55d2b14
   Args:
-    target: Prince_Philip
-    relation: :hasFather
-    source: Prince_Edward
-  AddTriple (2f165feb-36c3-48d1-be1e-366e356f9f69)
- Call ID: 2f165feb-36c3-48d1-be1e-366e356f9f69
+    type: :Person
+    source: James_Mountbatten-Windsor
+  AddTriple (3275a257-8bf9-4a4f-81a0-dad7e75bbcba)
+ Call ID: 3275a257-8bf9-4a4f-81a0-dad7e75bbcba
   Args:
-    source: Prince_Edward
-    relation: :hasMother
-    target: Queen_Elizabeth_II
-  AddTriple (0f946611-eaab-4ff0-8fa4-279958e2054a)
- Call ID: 0f946611-eaab-4ff0-8fa4-279958e2054a
+    target: Prince_Edward
+    relation: :isChildOf
+    source: James_Mountbatten-Windsor
+  AddTriple (88c2eb74-df3b-4ba3-8ae1-bfb86a3441c8)
+ Call ID: 88c2eb74-df3b-4ba3-8ae1-bfb86a3441c8
   Args:
-    relation: :isBrotherOf
-    source: Prince_Edward
-    target: King_Charles_III
-  AddTriple (294008a9-218f-4ed3-b38d-800c21b7b006)
- Call ID: 294008a9-218f-4ed3-b38d-800c21b7b006
+    source: James_Mountbatten-Windsor
+    target: Sophie_Rhys-Jones
+    relation: :isChildOf
+  AssignClass (53818be2-f12e-46de-94f7-466673475342)
+ Call ID: 53818be2-f12e-46de-94f7-466673475342
   Args:
-    source: Prince_Edward
-    relation: :isBrotherOf
-    target: Andrew
-  AddTriple (ab3a30f8-77f2-4ad0-b537-a070f65276a3)
- Call ID: ab3a30f8-77f2-4ad0-b537-a070f65276a3
+    type: :Woman
+    source: Anne
+  AssignClass (4b77a9f3-caca-4104-b925-9f3d03d0ad55)
+ Call ID: 4b77a9f3-caca-4104-b925-9f3d03d0ad55
   Args:
-    source: Prince_Edward
+    source: Anne
+    type: :Person
+  AddTriple (6cdf7615-fdd3-44c8-96db-5f1b140506c3)
+ Call ID: 6cdf7615-fdd3-44c8-96db-5f1b140506c3
+  Args:
+    source: Anne
+    target: Prince_Edward
     relation: :isSisterOf
-    target: Anne
-  AddLiteral (3a69aee0-5c7f-4577-8e2f-81f45b7a4d9a)
- Call ID: 3a69aee0-5c7f-4577-8e2f-81f45b7a4d9a
+  AssignClass (bba1bccd-81d6-4237-8cf9-e6d08f8e1f1d)
+ Call ID: bba1bccd-81d6-4237-8cf9-e6d08f8e1f1d
   Args:
-    literal_value: 1964
-    source: Prince_Edward
-    relation: :hasBirthYear
+    type: :Man
+    source: Andrew
+  AssignClass (b614d506-db06-4ca4-a6b9-f722aec318bd)
+ Call ID: b614d506-db06-4ca4-a6b9-f722aec318bd
+  Args:
+    type: :Person
+    source: Andrew
+  AddTriple (6327cc13-e7c0-4361-aa34-4c244e911b52)
+ Call ID: 6327cc13-e7c0-4361-aa34-4c244e911b52
+  Args:
+    relation: :isBrotherOf
+    target: Prince_Edward
+    source: Andrew
+  AssignClass (05da80c1-8369-4b58-8f02-76c81ce48788)
+ Call ID: 05da80c1-8369-4b58-8f02-76c81ce48788
+  Args:
+    source: Prince_William
+    type: :Man
+  AssignClass (5ff788a2-8615-49f8-a16e-ca18acdcc20e)
+ Call ID: 5ff788a2-8615-49f8-a16e-ca18acdcc20e
+  Args:
+    type: :Person
+    source: Prince_William
+  AddTriple (44f0738f-ce66-45ce-a0de-8c3163b159b5)
+ Call ID: 44f0738f-ce66-45ce-a0de-8c3163b159b5
+  Args:
+    source: Prince_William
+    target: King_Charles_III
+    relation: :isChildOf
+  AssignClass (180c223a-be7b-4389-abfe-7fcc1477055d)
+ Call ID: 180c223a-be7b-4389-abfe-7fcc1477055d
+  Args:
+    type: :Woman
+    source: Sarah
+  AssignClass (b5e3ed1a-4c20-4b15-a27f-0dd7ca0ad0d0)
+ Call ID: b5e3ed1a-4c20-4b15-a27f-0dd7ca0ad0d0
+  Args:
+    source: Sarah
+    type: :Person
+  AddTriple (60783e34-6854-4800-a799-b6c00b7acc2d)
+ Call ID: 60783e34-6854-4800-a799-b6c00b7acc2d
+  Args:
+    target: Andrew
+    relation: :hasRelation
+    source: Sarah
+  AddLiteral (a31384b7-72ac-472f-986f-0bbfe872496f)
+ Call ID: a31384b7-72ac-472f-986f-0bbfe872496f
+  Args:
     literal_type: xsd:integer
-  AddTriple (ea042bef-5678-425f-930f-1f253df08de5)
- Call ID: ea042bef-5678-425f-930f-1f253df08de5
-  Args:
-    target: Lady_Louise_Mountbatten-Windsor
-    relation: :hasChild
-    source: Prince_Edward
-  AddTriple (68938562-79b9-4f18-827a-edca92e17c9f)
- Call ID: 68938562-79b9-4f18-827a-edca92e17c9f
-  Args:
-    source: Prince_Edward
-    relation: :hasChild
-    target: James_Mountbatten-Windsor
-  AddTriple (8fc51544-403c-40b8-b2e6-2f456c2675a3)
- Call ID: 8fc51544-403c-40b8-b2e6-2f456c2675a3
-  Args:
-    source: Sophie_Rhys-Jones
-    relation: :hasChild
-    target: Lady_Louise_Mountbatten-Windsor
-  AddTriple (0590529a-a35b-4f6a-b8ea-213ec733b3de)
- Call ID: 0590529a-a35b-4f6a-b8ea-213ec733b3de
-  Args:
-    source: Sophie_Rhys-Jones
-    relation: :hasChild
-    target: James_Mountbatten-Windsor
-  AddLiteral (cb5d7e73-0efa-4608-9248-bc17354a93f7)
- Call ID: cb5d7e73-0efa-4608-9248-bc17354a93f7
-  Args:
-    literal_type: xsd:integer
-    source: Prince_Edward
-    relation: :hasMarriageYear
-    literal_value: 1999
-  Finish (b4bfbad2-12e2-4336-a563-6bbe3ff41701)
- Call ID: b4bfbad2-12e2-4336-a563-6bbe3ff41701
+    relation: :hasDeathYear
+    source: Prince_Philip
+    literal_value: 2021
+  Finish (55e5681d-b233-46f6-9961-a10ea2ea543c)
+ Call ID: 55e5681d-b233-46f6-9961-a10ea2ea543c
   Args:

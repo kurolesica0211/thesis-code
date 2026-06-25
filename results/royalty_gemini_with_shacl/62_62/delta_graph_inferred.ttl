@@ -1,0 +1,415 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Frederica_of_Hanover a :Person,
+        :Woman ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine,
+        data:Sofia_of_Spain ;
+    :hasSister data:Frederica_of_Hanover ;
+    :isBloodrelationOf data:Frederica_of_Hanover ;
+    :isSiblingOf data:Frederica_of_Hanover ;
+    :isSisterOf data:Frederica_of_Hanover .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Paul_of_Greece ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Spain,
+        data:Sophia_of_Prussia ;
+    :hasSister data:Sophia_of_Prussia ;
+    :hasSon data:Paul_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Spain ;
+    :isAuntOf data:Paul_of_Greece ;
+    :isBloodrelationOf data:Sophia_of_Prussia ;
+    :isMotherOf data:Paul_of_Greece ;
+    :isParentOf data:Paul_of_Greece ;
+    :isSiblingOf data:Sophia_of_Prussia ;
+    :isSisterOf data:Sophia_of_Prussia .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine,
+        data:Sofia_of_Spain ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Spain ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece ;
+    :isParentOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasChild data:Paul_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Spain ;
+    :hasSon data:Paul_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Sofia_of_Spain ;
+    :isBloodrelationOf data:Constantine_I_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isFatherOf data:Paul_of_Greece ;
+    :isParentOf data:Paul_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Paul_of_Greece .
+
+data:Alexander_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine,
+        data:Sofia_of_Spain ;
+    :hasSister data:Helen_of_Greece,
+        data:Princess_Katherine ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine ;
+    :isUncleOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine,
+        data:Sofia_of_Spain ;
+    :hasSister data:Helen_of_Greece,
+        data:Princess_Katherine ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine ;
+    :isUncleOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain .
+
+data:Helen_of_Greece a :Person,
+        :Woman ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine,
+        data:Sofia_of_Spain ;
+    :hasSister data:Helen_of_Greece,
+        data:Princess_Katherine ;
+    :isAuntOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine ;
+    :isSisterOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine .
+
+data:Princess_Katherine a :Person,
+        :Woman ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine,
+        data:Sofia_of_Spain ;
+    :hasSister data:Helen_of_Greece,
+        data:Princess_Katherine ;
+    :isAuntOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine ;
+    :isSisterOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    :hasAncestor data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasFather data:Paul_of_Greece ;
+    :hasParent data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine,
+        data:Sofia_of_Spain,
+        data:Sophia_of_Prussia ;
+    :hasSister data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isBloodrelationOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isBrotherOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isChildOf data:Paul_of_Greece ;
+    :isSiblingOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isSonOf data:Paul_of_Greece .
+
+data:Irene_of_Greece a :Person,
+        :Woman ;
+    :hasAncestor data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasFather data:Paul_of_Greece ;
+    :hasParent data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine,
+        data:Sofia_of_Spain,
+        data:Sophia_of_Prussia ;
+    :hasSister data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isBloodrelationOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isChildOf data:Paul_of_Greece ;
+    :isDaughterOf data:Paul_of_Greece ;
+    :isSiblingOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isSisterOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain .
+
+data:Sofia_of_Spain a :Person,
+        :Woman ;
+    :hasAncestor data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasFather data:Paul_of_Greece ;
+    :hasParent data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine,
+        data:Sofia_of_Spain,
+        data:Sophia_of_Prussia ;
+    :hasSister data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isBloodrelationOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isChildOf data:Paul_of_Greece ;
+    :isDaughterOf data:Paul_of_Greece ;
+    :isSiblingOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isSisterOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Paul_of_Greece ;
+    :hasChild data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :hasDaughter data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :hasDeathYear 1964 ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Constantine_II_of_Greece,
+        data:Constantine_I_of_Greece,
+        data:Frederica_of_Hanover,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece,
+        data:Irene_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine,
+        data:Sofia_of_Spain,
+        data:Sophia_of_Prussia ;
+    :hasSister data:Helen_of_Greece,
+        data:Princess_Katherine ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine ;
+    :isChildOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isFatherOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isParentOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_II_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Katherine ;
+    :isSonOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isUncleOf data:Constantine_II_of_Greece,
+        data:Irene_of_Greece,
+        data:Sofia_of_Spain .
+

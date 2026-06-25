@@ -1,0 +1,168 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Prince_Maximilian_of_Baden a :Man,
+        :Person ;
+    rdfs:label "Prince Maximilian of Baden"^^xsd:string ;
+    data:posIndicesFull "442:468"^^xsd:string ;
+    data:posIndicesPart "577:583"^^xsd:string,
+        "595:600"^^xsd:string,
+        "735:745"^^xsd:string ;
+    data:wdtLink wdt:Q76908 ;
+    :alsoKnownAs "Prinz Maximilian von Baden"^^xsd:string ;
+    :hasBrother data:Prince_Maximilian_of_Baden ;
+    :hasRelation data:Prince_Maximilian_of_Baden ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Maximilian_of_Baden ;
+    :isBrotherOf data:Prince_Maximilian_of_Baden ;
+    :isSiblingOf data:Prince_Maximilian_of_Baden .
+
+data:Ernst_August-_Crown_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Ernst August, Crown Prince of Hanover"^^xsd:string ;
+    data:posIndicesFull "108:148"^^xsd:string ;
+    data:posIndicesPart "577:583"^^xsd:string ;
+    data:wdtLink wdt:Q437001 ;
+    :alsoKnownAs "Crown Prince Ernest Augustus of Hanover"^^xsd:string ;
+    :hasBrother data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :hasChild data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :hasDaughter data:Princess_Marie_Louise_of_Hanover ;
+    :hasRelation data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :hasSex data:male ;
+    :hasSon data:Ernst_August-_Duke_of_Brunswick ;
+    :isAncestorOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :isBrotherOf data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :isFatherOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isParentOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isSiblingOf data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :isUncleOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover .
+
+data:Thyra-_Crown_Princess_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Thyra, Crown Princess of Hanover"^^xsd:string ;
+    data:posIndicesFull "154:179"^^xsd:string ;
+    data:posIndicesPart "605:613"^^xsd:string ;
+    data:wdtLink wdt:Q217504 ;
+    :alsoKnownAs "Princess Thyra Amalie Caroline Charlotte Anna of Denmark"^^xsd:string,
+        "Princess Thyra of Denmark"^^xsd:string ;
+    :hasChild data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :hasDaughter data:Princess_Marie_Louise_of_Hanover ;
+    :hasRelation data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:female ;
+    :hasSister data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSon data:Ernst_August-_Duke_of_Brunswick ;
+    :isAncestorOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isAuntOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isBloodrelationOf data:Thyra-_Crown_Princess_of_Hanover ;
+    :isMotherOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isParentOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isSiblingOf data:Thyra-_Crown_Princess_of_Hanover ;
+    :isSisterOf data:Thyra-_Crown_Princess_of_Hanover .
+
+data:Ernst_August-_Duke_of_Brunswick a :Man,
+        :Person ;
+    rdfs:label "Ernst August, Duke of Brunswick"^^xsd:string ;
+    data:posIndicesFull "108:123"^^xsd:string ;
+    data:wdtLink wdt:Q57672 ;
+    :alsoKnownAs "Ernest August I, Duke of Brunswick"^^xsd:string,
+        "Ernest Augustus"^^xsd:string,
+        "Ernst August I of Brunswick"^^xsd:string ;
+    :hasAncestor data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasBrother data:Ernst_August-_Duke_of_Brunswick ;
+    :hasFather data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :hasMother data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasRelation data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Marie_Louise_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isBrotherOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isChildOf data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :isSiblingOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isSonOf data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover .
+
+data:Princess_Marie_Louise_of_Hanover a :Person,
+        :Woman ;
+    rdfs:label "Princess Marie Louise of Hanover"^^xsd:string ;
+    data:posIndicesFull "0:32"^^xsd:string,
+        "0:47"^^xsd:string,
+        "9:47"^^xsd:string ;
+    data:posIndicesPart "278:283"^^xsd:string,
+        "284:290"^^xsd:string,
+        "421:426"^^xsd:string,
+        "427:433"^^xsd:string,
+        "605:613"^^xsd:string,
+        "718:723"^^xsd:string,
+        "724:730"^^xsd:string ;
+    data:wdtLink wdt:Q271998 ;
+    :alsoKnownAs "Marie Louise of Hanover and Cumberland"^^xsd:string,
+        "Princess Marie Louise of Hanover"^^xsd:string,
+        "Princess Marie Louise of Hanover and Cumberland"^^xsd:string,
+        "Princess Marie Louise, Margravine of Baden"^^xsd:string ;
+    :hasAncestor data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasBrother data:Ernst_August-_Duke_of_Brunswick ;
+    :hasFather data:Ernst_August-_Crown_Prince_of_Hanover ;
+    :hasMother data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasParent data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasRelation data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marie_Louise_of_Hanover ;
+    :isBloodrelationOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isChildOf data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :isDaughterOf data:Ernst_August-_Crown_Prince_of_Hanover,
+        data:Thyra-_Crown_Princess_of_Hanover ;
+    :isSiblingOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover ;
+    :isSisterOf data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Marie_Louise_of_Hanover .
+

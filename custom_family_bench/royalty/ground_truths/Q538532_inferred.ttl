@@ -1,0 +1,773 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Prince_Franz_Wilhelm_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Franz Wilhelm of Prussia"^^xsd:string ;
+    data:posIndicesFull "2487:2518"^^xsd:string ;
+    data:posIndicesPart "16179:16185"^^xsd:string,
+        "16215:16221"^^xsd:string,
+        "16241:16247"^^xsd:string,
+        "2613:2620"^^xsd:string,
+        "2818:2824"^^xsd:string,
+        "2828:2835"^^xsd:string,
+        "2895:2900"^^xsd:string,
+        "2901:2908"^^xsd:string,
+        "3300:3305"^^xsd:string,
+        "3306:3313"^^xsd:string,
+        "4463:4469"^^xsd:string,
+        "4870:4876"^^xsd:string ;
+    data:wdtLink wdt:Q64217 ;
+    :alsoKnownAs "Franz Wilhelm Victor Christoph Stephan"^^xsd:string,
+        "Franz Wilhelm Viktor Christoph Stephan Prinz von Preußen"^^xsd:string ;
+    :hasBrother data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasChild data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasRelation data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasSex data:male ;
+    :hasSon data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isAncestorOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isBloodrelationOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isFatherOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isParentOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isSiblingOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isUncleOf data:Grand_Duke_George_Mikhailovich_of_Russia .
+
+data:Princess_Leonida_Bagration_of_Mukhrani a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Leonida Bagration of Mukhrani"^^xsd:string ;
+    data:posIndicesFull "16035:16050"^^xsd:string ;
+    data:posIndicesPart "16069:16077"^^xsd:string,
+        "16725:16733"^^xsd:string,
+        "17263:17271"^^xsd:string ;
+    data:wdtLink wdt:Q788565 ;
+    :alsoKnownAs "Leonida Georgiievna Bagration-Moukhranskya, Princess Bagration-Moukhranskya"^^xsd:string,
+        "Leonida Georgiyevna Romanova"^^xsd:string,
+        "Leonida Kirby"^^xsd:string,
+        "Leonida Romanova"^^xsd:string ;
+    :hasChild data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasRelation data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :isAncestorOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isAuntOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :isMotherOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :isSisterOf data:Princess_Leonida_Bagration_of_Mukhrani .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Grand Duke Vladimir Alexandrovich of Russia"^^xsd:string ;
+    data:posIndicesFull "6307:6350"^^xsd:string ;
+    data:posIndicesPart "10137:10143"^^xsd:string,
+        "10490:10495"^^xsd:string,
+        "10717:10723"^^xsd:string,
+        "11026:11032"^^xsd:string,
+        "11146:11151"^^xsd:string,
+        "12177:12183"^^xsd:string,
+        "12401:12409"^^xsd:string,
+        "12514:12522"^^xsd:string,
+        "12860:12865"^^xsd:string,
+        "13089:13094"^^xsd:string,
+        "13375:13383"^^xsd:string,
+        "13901:13906"^^xsd:string,
+        "13950:13958"^^xsd:string,
+        "14366:14372"^^xsd:string,
+        "14708:14713"^^xsd:string,
+        "14973:14979"^^xsd:string,
+        "15171:15177"^^xsd:string,
+        "15318:15324"^^xsd:string,
+        "15385:15390"^^xsd:string,
+        "15580:15585"^^xsd:string,
+        "15809:15814"^^xsd:string,
+        "15829:15834"^^xsd:string,
+        "16490:16495"^^xsd:string,
+        "16571:16576"^^xsd:string,
+        "16846:16851"^^xsd:string,
+        "17464:17470"^^xsd:string,
+        "7083:7088"^^xsd:string,
+        "7829:7835"^^xsd:string,
+        "8199:8205"^^xsd:string,
+        "8434:8440"^^xsd:string,
+        "8639:8645"^^xsd:string,
+        "8792:8798"^^xsd:string,
+        "9050:9056"^^xsd:string,
+        "9456:9462"^^xsd:string,
+        "9627:9633"^^xsd:string,
+        "9745:9750"^^xsd:string,
+        "9825:9831"^^xsd:string,
+        "9864:9870"^^xsd:string ;
+    data:wdtLink wdt:Q312819 ;
+    :hasBrother data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasChild data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :hasSex data:male ;
+    :hasSon data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :isAncestorOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isBloodrelationOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isFatherOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :isParentOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isUncleOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Victoria Melita of Saxe-Coburg and Gotha"^^xsd:string ;
+    data:posIndicesFull "1128:1132"^^xsd:string,
+        "1207:1244"^^xsd:string,
+        "1216:1231"^^xsd:string,
+        "1216:1244"^^xsd:string,
+        "12933:12937"^^xsd:string,
+        "1359:1363"^^xsd:string,
+        "15835:15839"^^xsd:string,
+        "16852:16856"^^xsd:string,
+        "3040:3044"^^xsd:string,
+        "3208:3212"^^xsd:string,
+        "3589:3593"^^xsd:string,
+        "5852:5856"^^xsd:string,
+        "5944:5948"^^xsd:string,
+        "6015:6019"^^xsd:string,
+        "6196:6200"^^xsd:string,
+        "6313:6317"^^xsd:string,
+        "6541:6545"^^xsd:string,
+        "6597:6601"^^xsd:string,
+        "896:900"^^xsd:string ;
+    data:posIndicesPart "13069:13077"^^xsd:string,
+        "13200:13208"^^xsd:string,
+        "16069:16077"^^xsd:string,
+        "17263:17271"^^xsd:string,
+        "2662:2670"^^xsd:string ;
+    data:wdtLink wdt:Q164500 ;
+    :alsoKnownAs "Ducky"^^xsd:string,
+        "Grand Duchess Victoria Feodorovna of Russia"^^xsd:string,
+        "Princess Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Feodorovna of Russia"^^xsd:string,
+        "Victoria Melita"^^xsd:string,
+        "Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Melita of Saxe-Coburg-Gotha"^^xsd:string,
+        "Victoria Melita, Grand Duchess of Hesse and the Rhine"^^xsd:string ;
+    :hasChild data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSon data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isAncestorOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isAuntOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isBloodrelationOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isMotherOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isParentOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isSiblingOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSisterOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Kira Kirillovna of Russia"^^xsd:string ;
+    data:posIndicesFull "2714:2753"^^xsd:string ;
+    data:posIndicesPart "10137:10143"^^xsd:string,
+        "10490:10495"^^xsd:string,
+        "10496:10503"^^xsd:string,
+        "10717:10723"^^xsd:string,
+        "11026:11032"^^xsd:string,
+        "11146:11151"^^xsd:string,
+        "11152:11159"^^xsd:string,
+        "12177:12183"^^xsd:string,
+        "12860:12865"^^xsd:string,
+        "12866:12873"^^xsd:string,
+        "13089:13094"^^xsd:string,
+        "13095:13102"^^xsd:string,
+        "13901:13906"^^xsd:string,
+        "14366:14372"^^xsd:string,
+        "14708:14713"^^xsd:string,
+        "14714:14721"^^xsd:string,
+        "14973:14979"^^xsd:string,
+        "15171:15177"^^xsd:string,
+        "15318:15324"^^xsd:string,
+        "15385:15390"^^xsd:string,
+        "15391:15398"^^xsd:string,
+        "15580:15585"^^xsd:string,
+        "15586:15593"^^xsd:string,
+        "15809:15814"^^xsd:string,
+        "15815:15822"^^xsd:string,
+        "15829:15834"^^xsd:string,
+        "16030:16034"^^xsd:string,
+        "16490:16495"^^xsd:string,
+        "16496:16503"^^xsd:string,
+        "16571:16576"^^xsd:string,
+        "16577:16584"^^xsd:string,
+        "16846:16851"^^xsd:string,
+        "16963:16967"^^xsd:string,
+        "17001:17005"^^xsd:string,
+        "17272:17276"^^xsd:string,
+        "17464:17470"^^xsd:string,
+        "3034:3039"^^xsd:string,
+        "3048:3054"^^xsd:string,
+        "3202:3207"^^xsd:string,
+        "3216:3222"^^xsd:string,
+        "3440:3446"^^xsd:string,
+        "3517:3523"^^xsd:string,
+        "3566:3572"^^xsd:string,
+        "4190:4196"^^xsd:string,
+        "4473:4479"^^xsd:string,
+        "4741:4746"^^xsd:string,
+        "4756:4762"^^xsd:string,
+        "4836:4842"^^xsd:string,
+        "5783:5789"^^xsd:string,
+        "5846:5851"^^xsd:string,
+        "5884:5890"^^xsd:string,
+        "5938:5943"^^xsd:string,
+        "5973:5979"^^xsd:string,
+        "6009:6014"^^xsd:string,
+        "6045:6051"^^xsd:string,
+        "6178:6184"^^xsd:string,
+        "6190:6195"^^xsd:string,
+        "6225:6231"^^xsd:string,
+        "7083:7088"^^xsd:string,
+        "7089:7096"^^xsd:string,
+        "7829:7835"^^xsd:string,
+        "8199:8205"^^xsd:string,
+        "8434:8440"^^xsd:string,
+        "8639:8645"^^xsd:string,
+        "8792:8798"^^xsd:string,
+        "9050:9056"^^xsd:string,
+        "9456:9462"^^xsd:string,
+        "9627:9633"^^xsd:string,
+        "9745:9750"^^xsd:string,
+        "9751:9758"^^xsd:string,
+        "9825:9831"^^xsd:string,
+        "9864:9870"^^xsd:string ;
+    data:wdtLink wdt:Q237341 ;
+    :alsoKnownAs "Kira Kirillovna Romanova"^^xsd:string,
+        "Kira Kirillovna, Princess Louis Ferdinand of Prussia"^^xsd:string,
+        "Kira Kirillovna, Princess of Prussia"^^xsd:string,
+        "Princess Louis Ferdinand of Prussia"^^xsd:string ;
+    :hasAncestor data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasBrother data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :hasFather data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasParent data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isAuntOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isChildOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isDaughterOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSiblingOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia .
+
+data:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Grand Duke Kirill Vladimirovich of Russia"^^xsd:string ;
+    data:posIndicesFull "1122:1163"^^xsd:string,
+        "6535:6576"^^xsd:string ;
+    data:posIndicesPart "10137:10143"^^xsd:string,
+        "10490:10495"^^xsd:string,
+        "10717:10723"^^xsd:string,
+        "11026:11032"^^xsd:string,
+        "11146:11151"^^xsd:string,
+        "12015:12021"^^xsd:string,
+        "12177:12183"^^xsd:string,
+        "12860:12865"^^xsd:string,
+        "13089:13094"^^xsd:string,
+        "1353:1358"^^xsd:string,
+        "1371:1384"^^xsd:string,
+        "1388:1394"^^xsd:string,
+        "13901:13906"^^xsd:string,
+        "14366:14372"^^xsd:string,
+        "14708:14713"^^xsd:string,
+        "14973:14979"^^xsd:string,
+        "15171:15177"^^xsd:string,
+        "15318:15324"^^xsd:string,
+        "15385:15390"^^xsd:string,
+        "15410:15416"^^xsd:string,
+        "15580:15585"^^xsd:string,
+        "15809:15814"^^xsd:string,
+        "15829:15834"^^xsd:string,
+        "16490:16495"^^xsd:string,
+        "16571:16576"^^xsd:string,
+        "16846:16851"^^xsd:string,
+        "17464:17470"^^xsd:string,
+        "1808:1814"^^xsd:string,
+        "1854:1860"^^xsd:string,
+        "3034:3039"^^xsd:string,
+        "3048:3054"^^xsd:string,
+        "3202:3207"^^xsd:string,
+        "3216:3222"^^xsd:string,
+        "3440:3446"^^xsd:string,
+        "3517:3523"^^xsd:string,
+        "3566:3572"^^xsd:string,
+        "4190:4196"^^xsd:string,
+        "4473:4479"^^xsd:string,
+        "4741:4746"^^xsd:string,
+        "4756:4762"^^xsd:string,
+        "4836:4842"^^xsd:string,
+        "5783:5789"^^xsd:string,
+        "5846:5851"^^xsd:string,
+        "5884:5890"^^xsd:string,
+        "5938:5943"^^xsd:string,
+        "5973:5979"^^xsd:string,
+        "6009:6014"^^xsd:string,
+        "6045:6051"^^xsd:string,
+        "6178:6184"^^xsd:string,
+        "6190:6195"^^xsd:string,
+        "6225:6231"^^xsd:string,
+        "7083:7088"^^xsd:string,
+        "7829:7835"^^xsd:string,
+        "8199:8205"^^xsd:string,
+        "8434:8440"^^xsd:string,
+        "8639:8645"^^xsd:string,
+        "8792:8798"^^xsd:string,
+        "9050:9056"^^xsd:string,
+        "9456:9462"^^xsd:string,
+        "9590:9596"^^xsd:string,
+        "9627:9633"^^xsd:string,
+        "9745:9750"^^xsd:string,
+        "9825:9831"^^xsd:string,
+        "9864:9870"^^xsd:string ;
+    data:wdtLink wdt:Q160948 ;
+    :alsoKnownAs "Cyril Vladimirovich, Grand Duke of Russia"^^xsd:string ;
+    :hasAncestor data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasBrother data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :hasChild data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasParent data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :hasSex data:male ;
+    :hasSon data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isAncestorOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isBloodrelationOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :isChildOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isFatherOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isParentOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :isSonOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isUncleOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia .
+
+data:Grand_Duke_George_Mikhailovich_of_Russia a :Man,
+        :Person ;
+    rdfs:label "Grand Duke George Mikhailovich of Russia"^^xsd:string ;
+    data:posIndicesFull "12927:12967"^^xsd:string ;
+    data:posIndicesPart "13089:13094"^^xsd:string,
+        "13901:13906"^^xsd:string,
+        "13980:13986"^^xsd:string,
+        "14366:14372"^^xsd:string,
+        "14708:14713"^^xsd:string,
+        "14973:14979"^^xsd:string,
+        "15171:15177"^^xsd:string,
+        "15318:15324"^^xsd:string,
+        "15385:15390"^^xsd:string,
+        "15580:15585"^^xsd:string,
+        "15809:15814"^^xsd:string,
+        "15829:15834"^^xsd:string,
+        "15840:15846"^^xsd:string,
+        "16490:16495"^^xsd:string,
+        "16571:16576"^^xsd:string,
+        "16846:16851"^^xsd:string,
+        "16857:16863"^^xsd:string,
+        "16864:16876"^^xsd:string,
+        "17464:17470"^^xsd:string ;
+    data:wdtLink wdt:Q2468206 ;
+    :alsoKnownAs "George Mikhailovich Romanov"^^xsd:string,
+        "Grand Duke George Mikhailovich, The Grand Duke of Russia"^^xsd:string,
+        "Grand Duke George Mikhailovich, The Grand Duke of Russia, Prince of Prussia"^^xsd:string,
+        "The Grand Duke George Mikhailovich"^^xsd:string,
+        "The Grand Duke George Mikhailovich of Russia"^^xsd:string ;
+    :hasAncestor data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Princess_Leonida_Bagration_of_Mukhrani,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasBrother data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasFather data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasMother data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasRelation data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Princess_Leonida_Bagration_of_Mukhrani,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isChildOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isSonOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia .
+
+data:Grand_Duchess_Maria_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Maria Vladimirovna of Russia"^^xsd:string ;
+    data:posIndicesFull "0:42"^^xsd:string,
+        "45:87"^^xsd:string,
+        "6652:6694"^^xsd:string ;
+    data:posIndicesPart "10137:10143"^^xsd:string,
+        "10275:10280"^^xsd:string,
+        "10490:10495"^^xsd:string,
+        "10496:10503"^^xsd:string,
+        "10504:10509"^^xsd:string,
+        "10510:10522"^^xsd:string,
+        "10651:10656"^^xsd:string,
+        "10657:10669"^^xsd:string,
+        "10717:10723"^^xsd:string,
+        "10899:10904"^^xsd:string,
+        "11026:11032"^^xsd:string,
+        "11146:11151"^^xsd:string,
+        "11152:11159"^^xsd:string,
+        "11160:11165"^^xsd:string,
+        "11166:11178"^^xsd:string,
+        "11434:11439"^^xsd:string,
+        "1168:1173"^^xsd:string,
+        "1174:1181"^^xsd:string,
+        "12105:12110"^^xsd:string,
+        "12177:12183"^^xsd:string,
+        "12830:12835"^^xsd:string,
+        "12860:12865"^^xsd:string,
+        "12866:12873"^^xsd:string,
+        "12874:12879"^^xsd:string,
+        "13089:13094"^^xsd:string,
+        "13095:13102"^^xsd:string,
+        "13103:13108"^^xsd:string,
+        "13293:13298"^^xsd:string,
+        "1353:1358"^^xsd:string,
+        "1388:1394"^^xsd:string,
+        "13901:13906"^^xsd:string,
+        "14080:14085"^^xsd:string,
+        "14366:14372"^^xsd:string,
+        "14708:14713"^^xsd:string,
+        "14714:14721"^^xsd:string,
+        "14722:14727"^^xsd:string,
+        "14728:14740"^^xsd:string,
+        "14973:14979"^^xsd:string,
+        "15171:15177"^^xsd:string,
+        "1529:1534"^^xsd:string,
+        "15318:15324"^^xsd:string,
+        "15385:15390"^^xsd:string,
+        "15391:15398"^^xsd:string,
+        "15580:15585"^^xsd:string,
+        "15586:15593"^^xsd:string,
+        "15594:15599"^^xsd:string,
+        "15600:15612"^^xsd:string,
+        "15809:15814"^^xsd:string,
+        "15815:15822"^^xsd:string,
+        "15829:15834"^^xsd:string,
+        "16490:16495"^^xsd:string,
+        "16496:16503"^^xsd:string,
+        "16571:16576"^^xsd:string,
+        "16577:16584"^^xsd:string,
+        "16585:16590"^^xsd:string,
+        "16591:16603"^^xsd:string,
+        "1665:1670"^^xsd:string,
+        "1671:1683"^^xsd:string,
+        "16846:16851"^^xsd:string,
+        "17464:17470"^^xsd:string,
+        "17516:17521"^^xsd:string,
+        "1759:1764"^^xsd:string,
+        "1808:1814"^^xsd:string,
+        "1854:1860"^^xsd:string,
+        "2091:2096"^^xsd:string,
+        "2473:2478"^^xsd:string,
+        "2701:2706"^^xsd:string,
+        "3034:3039"^^xsd:string,
+        "3048:3054"^^xsd:string,
+        "3060:3065"^^xsd:string,
+        "3202:3207"^^xsd:string,
+        "3216:3222"^^xsd:string,
+        "3374:3379"^^xsd:string,
+        "3380:3392"^^xsd:string,
+        "3440:3446"^^xsd:string,
+        "3517:3523"^^xsd:string,
+        "3566:3572"^^xsd:string,
+        "3847:3852"^^xsd:string,
+        "4190:4196"^^xsd:string,
+        "4429:4434"^^xsd:string,
+        "4473:4479"^^xsd:string,
+        "473:479"^^xsd:string,
+        "4741:4746"^^xsd:string,
+        "4756:4762"^^xsd:string,
+        "4836:4842"^^xsd:string,
+        "4902:4907"^^xsd:string,
+        "503:508"^^xsd:string,
+        "5051:5056"^^xsd:string,
+        "5057:5069"^^xsd:string,
+        "509:516"^^xsd:string,
+        "5207:5212"^^xsd:string,
+        "520:526"^^xsd:string,
+        "5661:5666"^^xsd:string,
+        "5783:5789"^^xsd:string,
+        "5846:5851"^^xsd:string,
+        "5884:5890"^^xsd:string,
+        "5938:5943"^^xsd:string,
+        "5973:5979"^^xsd:string,
+        "6009:6014"^^xsd:string,
+        "6045:6051"^^xsd:string,
+        "6178:6184"^^xsd:string,
+        "6190:6195"^^xsd:string,
+        "6225:6231"^^xsd:string,
+        "6849:6854"^^xsd:string,
+        "6855:6867"^^xsd:string,
+        "7083:7088"^^xsd:string,
+        "7089:7096"^^xsd:string,
+        "7243:7248"^^xsd:string,
+        "740:745"^^xsd:string,
+        "7446:7451"^^xsd:string,
+        "769:775"^^xsd:string,
+        "7829:7835"^^xsd:string,
+        "7953:7958"^^xsd:string,
+        "8199:8205"^^xsd:string,
+        "8222:8227"^^xsd:string,
+        "833:838"^^xsd:string,
+        "839:851"^^xsd:string,
+        "8434:8440"^^xsd:string,
+        "8639:8645"^^xsd:string,
+        "8792:8798"^^xsd:string,
+        "9050:9056"^^xsd:string,
+        "9456:9462"^^xsd:string,
+        "9492:9497"^^xsd:string,
+        "9627:9633"^^xsd:string,
+        "964:970"^^xsd:string,
+        "9672:9677"^^xsd:string,
+        "9678:9690"^^xsd:string,
+        "9745:9750"^^xsd:string,
+        "9751:9758"^^xsd:string,
+        "9825:9831"^^xsd:string,
+        "9864:9870"^^xsd:string,
+        "994:1000"^^xsd:string ;
+    data:wdtLink wdt:Q538532 ;
+    :alsoKnownAs "Crown Princess Maria Vladimirovna"^^xsd:string,
+        "Crown Princess Maria Vladimirovna of Russia"^^xsd:string,
+        "Grand Duchess Maria Vladimirovna, Grand Duchess of Russia"^^xsd:string,
+        "Maria Vladimirovna, Crown Princess of Russia"^^xsd:string,
+        "Maria Vladimirovna, Grand Duchess of Russia"^^xsd:string,
+        "Mariya Vladimirovna Romanov, Grand Duchess of Russia"^^xsd:string ;
+    :hasAncestor data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia,
+        data:Princess_Leonida_Bagration_of_Mukhrani,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasChild data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasFather data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :hasMother data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasParent data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia,
+        data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :hasRelation data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Princess_Leonida_Bagration_of_Mukhrani,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasSon data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isAncestorOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isAuntOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isChildOf data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia,
+        data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :isDaughterOf data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia,
+        data:Princess_Leonida_Bagration_of_Mukhrani ;
+    :isMotherOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isParentOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isSiblingOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia .
+
+data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Grand Duke Vladimir Kirillovich, Grand Duke of Russia"^^xsd:string ;
+    data:posIndicesFull "6591:6632"^^xsd:string,
+        "890:931"^^xsd:string ;
+    data:posIndicesPart "10137:10143"^^xsd:string,
+        "10490:10495"^^xsd:string,
+        "10717:10723"^^xsd:string,
+        "11026:11032"^^xsd:string,
+        "11146:11151"^^xsd:string,
+        "1168:1173"^^xsd:string,
+        "12177:12183"^^xsd:string,
+        "12401:12409"^^xsd:string,
+        "12514:12522"^^xsd:string,
+        "12860:12865"^^xsd:string,
+        "13089:13094"^^xsd:string,
+        "13375:13383"^^xsd:string,
+        "1353:1358"^^xsd:string,
+        "1388:1394"^^xsd:string,
+        "13901:13906"^^xsd:string,
+        "13950:13958"^^xsd:string,
+        "14366:14372"^^xsd:string,
+        "14708:14713"^^xsd:string,
+        "14973:14979"^^xsd:string,
+        "15171:15177"^^xsd:string,
+        "15318:15324"^^xsd:string,
+        "15385:15390"^^xsd:string,
+        "15580:15585"^^xsd:string,
+        "15809:15814"^^xsd:string,
+        "15829:15834"^^xsd:string,
+        "16490:16495"^^xsd:string,
+        "16571:16576"^^xsd:string,
+        "16846:16851"^^xsd:string,
+        "17464:17470"^^xsd:string,
+        "1808:1814"^^xsd:string,
+        "1854:1860"^^xsd:string,
+        "2205:2213"^^xsd:string,
+        "2214:2225"^^xsd:string,
+        "3034:3039"^^xsd:string,
+        "3048:3054"^^xsd:string,
+        "3202:3207"^^xsd:string,
+        "3216:3222"^^xsd:string,
+        "3251:3259"^^xsd:string,
+        "3440:3446"^^xsd:string,
+        "3517:3523"^^xsd:string,
+        "3566:3572"^^xsd:string,
+        "3790:3798"^^xsd:string,
+        "3799:3810"^^xsd:string,
+        "4190:4196"^^xsd:string,
+        "4473:4479"^^xsd:string,
+        "4741:4746"^^xsd:string,
+        "4756:4762"^^xsd:string,
+        "4836:4842"^^xsd:string,
+        "5783:5789"^^xsd:string,
+        "5846:5851"^^xsd:string,
+        "5884:5890"^^xsd:string,
+        "5938:5943"^^xsd:string,
+        "5973:5979"^^xsd:string,
+        "6009:6014"^^xsd:string,
+        "6045:6051"^^xsd:string,
+        "6178:6184"^^xsd:string,
+        "6190:6195"^^xsd:string,
+        "6225:6231"^^xsd:string,
+        "7083:7088"^^xsd:string,
+        "7829:7835"^^xsd:string,
+        "8199:8205"^^xsd:string,
+        "8434:8440"^^xsd:string,
+        "8639:8645"^^xsd:string,
+        "8792:8798"^^xsd:string,
+        "9050:9056"^^xsd:string,
+        "9456:9462"^^xsd:string,
+        "9627:9633"^^xsd:string,
+        "9745:9750"^^xsd:string,
+        "9825:9831"^^xsd:string,
+        "9864:9870"^^xsd:string ;
+    data:wdtLink wdt:Q382226 ;
+    :alsoKnownAs "Grand Duke Vladimir Kirillovich of Russia"^^xsd:string,
+        "Prince Vladimir Kirillovich of Russia"^^xsd:string ;
+    :hasAncestor data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasBrother data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :hasChild data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasFather data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasParent data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Grand_Duke_Vladimir_Alexandrovich_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:male ;
+    :hasSister data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isAncestorOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isBloodrelationOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isBrotherOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isChildOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isFatherOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Vladimir_Kirillovich-_Grand_Duke_of_Russia ;
+    :isSonOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isUncleOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia .
+

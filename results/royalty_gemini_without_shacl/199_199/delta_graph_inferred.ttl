@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XII_of_Spain ;
+    :hasChild data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz,
+        data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :hasSon data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :isAncestorOf data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :isBloodrelationOf data:Alfonso_XII_of_Spain ;
+    :isBrotherOf data:Alfonso_XII_of_Spain ;
+    :isFatherOf data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :isParentOf data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :isSiblingOf data:Alfonso_XII_of_Spain ;
+    :isUncleOf data:Fernando_Sanz_y_Martinez_de_Arizala .
+
+data:Elena_Sanz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz,
+        data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :hasSister data:Elena_Sanz ;
+    :hasSon data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :isAncestorOf data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :isAuntOf data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :isBloodrelationOf data:Elena_Sanz ;
+    :isMotherOf data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :isParentOf data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :isSiblingOf data:Elena_Sanz ;
+    :isSisterOf data:Elena_Sanz .
+
+data:Fernando_Sanz_y_Martinez_de_Arizala a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz ;
+    :hasBirthYear 1881 ;
+    :hasBrother data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :hasDeathYear 1925 ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Elena_Sanz ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz,
+        data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :isBloodrelationOf data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :isBrotherOf data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :isChildOf data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz ;
+    :isSiblingOf data:Fernando_Sanz_y_Martinez_de_Arizala ;
+    :isSonOf data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz ;
+    :knownAs "Fernando \"Fernand\" Sanz y Martínez de Arizala"^^xsd:string .
+

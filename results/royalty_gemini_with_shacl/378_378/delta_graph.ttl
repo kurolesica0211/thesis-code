@@ -2,25 +2,22 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Archie_Harrison_Mountbatten-Windsor a :Person ;
-    :hasBirthYear 2019 ;
-    :hasFather data:Prince_Harry ;
-    :hasMother data:Meghan_Duchess_of_Sussex ;
-    :knownAs data:Prince_Archie_of_Sussex .
+data:Carl_Herzog_von_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Ludwig ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasMother data:Rosa_of_Austria .
 
-data:Prince_Philip a :Man .
+data:Ludwig a :Man,
+        :Person .
 
-data:Queen_Elizabeth_II a :Woman .
+data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Ancestor,
+        :Man,
+        :Person .
 
-data:King_Charles_III a :Ancestor,
-        :Man .
-
-data:Meghan_Duchess_of_Sussex a :Ancestor,
+data:Rosa_of_Austria a :Ancestor,
+        :Person,
         :Woman .
-
-data:Prince_Archie_of_Sussex a :Person .
-
-data:Prince_Harry a :Ancestor,
-        :Man ;
-    :hasFather data:King_Charles_III .
 

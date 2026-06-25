@@ -2,42 +2,85 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfonso_Prince_of_Asturias a :Man ;
-    :hasFather data:Alfonso_XIII_of_Spain ;
+data:Alfonso_Prince_of_Asturias a :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII ;
     :hasMother data:Victoria_Eugenie_of_Battenberg .
 
-data:Julia_Princess_of_Battenberg a :Woman .
+data:Infanta_Beatriz a :Person,
+        :Woman .
 
-data:Leopold_of_Battenberg a :Man .
+data:Infanta_Maria_Cristina a :Person,
+        :Woman .
 
-data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Man .
+data:Infante_Alfonso a :Man,
+        :Person .
 
-data:Prince_Alexander_of_Hesse_and_by_Rhine a :Man .
+data:Infante_Felipe a :Man,
+        :Person ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Infanta_Sofia .
 
-data:Prince_Henry_of_Battenberg a :Man,
+data:Infante_Gonzalo a :Man,
+        :Person .
+
+data:Infante_Jaime a :Man,
+        :Person .
+
+data:Infanta_Sofia a :Person,
+        :Woman .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasFather data:Juan_Count_of_Barcelona .
+
+data:Juan_Count_of_Barcelona a :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+data:Julia_Princess_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Leopold a :Man,
+        :Person .
+
+data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Henry_of_Battenberg a :Ancestor,
+        :Man,
         :Person ;
     :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
     :hasMother data:Julia_Princess_of_Battenberg .
 
-data:Princess_Beatrice a :Person,
+data:Princess_Beatrice a :Ancestor,
+        :Person,
         :Woman ;
     :hasFather data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
     :hasMother data:Queen_Victoria .
 
-data:Queen_Victoria a :Woman .
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman .
 
 data:Victoria_Eugenie_of_Battenberg a :Person,
         :Woman ;
     :hasBirthYear 1887 ;
-    :hasBrother data:Leopold_of_Battenberg ;
     :hasDeathYear 1969 ;
     :hasFather data:Prince_Henry_of_Battenberg ;
     :hasMarriageYear 1906 ;
     :hasMother data:Princess_Beatrice ;
-    :hasRelation data:Alfonso_XIII_of_Spain ;
-    :hasSon data:Alfonso_Prince_of_Asturias ;
+    :hasRelation data:Alfonso_XIII ;
+    :isSiblingOf data:Leopold ;
     :knownAs "Ena"^^xsd:string .
 
-data:Alfonso_XIII_of_Spain a :Man,
+data:Alfonso_XIII a :Man,
         :Person .
 

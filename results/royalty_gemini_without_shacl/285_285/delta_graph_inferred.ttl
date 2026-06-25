@@ -1,0 +1,434 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta ;
+    :hasChild data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta ;
+    :isBrotherOf data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta ;
+    :isFatherOf data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta ;
+    :isUncleOf data:Ferdinand_Pius_of_Bourbon-Two_Sicilies .
+
+data:Ludwig_III_of_Bavaria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ludwig_III_of_Bavaria ;
+    :hasChild data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasDaughter data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Ludwig_III_of_Bavaria ;
+    :isBrotherOf data:Ludwig_III_of_Bavaria ;
+    :isFatherOf data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isParentOf data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isSiblingOf data:Ludwig_III_of_Bavaria ;
+    :isUncleOf data:Maria_Ludwiga_Theresia_of_Bavaria .
+
+data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 ;
+    :hasSon data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 ;
+    :isMotherOf data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 ;
+    :isSisterOf data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 .
+
+data:Maria_Theresa_of_Austria-Este a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasDaughter data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Maria_Theresa_of_Austria-Este ;
+    :isAncestorOf data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isBloodrelationOf data:Maria_Theresa_of_Austria-Este ;
+    :isMotherOf data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isParentOf data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isSiblingOf data:Maria_Theresa_of_Austria-Este ;
+    :isSisterOf data:Maria_Theresa_of_Austria-Este .
+
+data:Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 ;
+    :hasBrother data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :hasChild data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta ;
+    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 ;
+    :hasParent data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 ;
+    :isFatherOf data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :isSonOf data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851 ;
+    :isUncleOf data:Urraca_of_Bourbon-Two_Sicilies .
+
+data:Maria_Ludwiga_Theresia_of_Bavaria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Ludwig_III_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este ;
+    :hasChild data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Ludwig_III_of_Bavaria ;
+    :hasMother data:Maria_Theresa_of_Austria-Este ;
+    :hasParent data:Ludwig_III_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isAncestorOf data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isChildOf data:Ludwig_III_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este ;
+    :isDaughterOf data:Ludwig_III_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este ;
+    :isMotherOf data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isSisterOf data:Maria_Ludwiga_Theresia_of_Bavaria .
+
+data:Barbara_Maria_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBrother data:Ruggiero_Maria_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies .
+
+data:Lucia_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBrother data:Ruggiero_Maria_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies .
+
+data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898 a :Person,
+        :Woman ;
+    :hasBrother data:Ruggiero_Maria_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies .
+
+data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBrother data:Ruggiero_Maria_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies .
+
+data:Ruggiero_Maria_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasBrother data:Ruggiero_Maria_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies .
+
+data:Urraca_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851,
+        data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este ;
+    :hasBirthYear 1913 ;
+    :hasBrother data:Ruggiero_Maria_of_Bourbon-Two_Sicilies ;
+    :hasDeathYear 1999 ;
+    :hasFather data:Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasParent data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :hasRelation data:Alfonso_of_Bourbon-Two_Sicilies_Count_of_Caserta,
+        data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Ludwig_III_of_Bavaria,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1851,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria,
+        data:Maria_Theresa_of_Austria-Este,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isDaughterOf data:Ferdinand_Pius_of_Bourbon-Two_Sicilies,
+        data:Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isSiblingOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Barbara_Maria_of_Bourbon-Two_Sicilies,
+        data:Lucia_of_Bourbon-Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies_1898,
+        data:Maria_Cristina_of_Bourbon-Two_Sicilies,
+        data:Ruggiero_Maria_of_Bourbon-Two_Sicilies,
+        data:Urraca_of_Bourbon-Two_Sicilies .
+

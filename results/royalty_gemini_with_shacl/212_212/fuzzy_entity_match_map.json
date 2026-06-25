@@ -1,121 +1,72 @@
 {
   "run_directory": "results/royalty_gemini_with_shacl",
   "task_directory": "results/royalty_gemini_with_shacl/212_212",
-  "text_file": "Q2783067.txt",
-  "text_key": "Q2783067",
-  "article": "https://en.wikipedia.org/wiki/Princess_Lucia_of_Bourbon-Two_Sicilies",
-  "article_key": "Princess Lucia of Bourbon-Two Sicilies",
+  "text_file": "Q2754379.txt",
+  "text_key": "Q2754379",
+  "article": "https://en.wikipedia.org/wiki/Duke_Paul_Frederick_of_Mecklenburg_(1882%E2%80%931904)",
+  "article_key": "Duke Paul Frederick of Mecklenburg",
   "main_entity": {
-    "uri": "http://example.com/data#Princess_Lucia_of_Bourbon-Two_Sicilies",
-    "qid": "Q2783067",
-    "label": "Princess Lucia of Bourbon-Two Sicilies"
+    "uri": "http://example.com/data#Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1",
+    "qid": "Q2754379",
+    "label": "Duke Paul Friedrich of Mecklenburg-Schwerin"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Princess_Lucia_of_Bourbon-Two_Sicilies",
-      "qid": "Q2783067",
-      "label": "Princess Lucia of Bourbon-Two Sicilies",
+      "uri": "http://example.com/data#Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1",
+      "qid": "Q2754379",
+      "label": "Duke Paul Friedrich of Mecklenburg-Schwerin",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Prince_Ferdinand_Pius-_Duke_of_Calabria",
-      "qid": "Q2290508",
-      "label": "Prince Ferdinand Pius, Duke of Calabria",
+      "uri": "http://example.com/data#Princess_Marie_of_Windisch-Graetz",
+      "qid": "Q2071733",
+      "label": "Princess Marie of Windisch-Graetz",
       "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Prince_Filippo_of_the_Two_Sicilies",
-      "qid": "Q3745365",
-      "label": "Prince Filippo of the Two Sicilies",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Prince_Gabriel_of_the_Two_Sicilies",
-      "qid": "Q3756709",
-      "label": "Prince Gabriel of the Two Sicilies",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Prince_Ranieri-_Duke_of_Castro",
-      "qid": "Q1943652",
-      "label": "Prince Ranieri, Duke of Castro",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Maria-_Duchess_of_Calabria",
-      "qid": "Q70768",
-      "label": "Princess Maria, Duchess of Calabria",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Infante_Alfonso-_Duke_of_Calabria",
-      "qid": "Q1333222",
-      "label": "Infante Alfonso, Duke of Calabria",
-      "distance": 2,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Prince_Alfonso-_Count_of_Caserta",
-      "qid": "Q439014",
-      "label": "Prince Alfonso, Count of Caserta",
-      "distance": 2,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies",
-      "qid": "Q255400",
-      "label": "Princess Maria Antonietta of Bourbon-Two Sicilies",
-      "distance": 2,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/AlfonsoCountOfCaserta",
-      "extracted_local_name": "AlfonsoCountOfCaserta",
-      "embedding_text": "Alfonso Count Of Caserta",
+      "extracted_uri": "http://example.org/data/Duke_Paul_Frederick_of_Mecklenburg",
+      "extracted_local_name": "Duke_Paul_Frederick_of_Mecklenburg",
+      "embedding_text": "Duke Paul Frederick of Mecklenburg",
       "extracted_gender": "male",
       "matched": true,
-      "score": 0.8823529411764706,
-      "ground_truth_uri": "http://example.com/data#Prince_Alfonso-_Count_of_Caserta",
-      "ground_truth_qid": "Q439014",
-      "ground_truth_label": "Prince Alfonso, Count of Caserta",
-      "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Prince Alfonso- Count of Caserta",
-      "best_candidate_label": "Prince Alfonso, Count of Caserta",
-      "best_candidate_qid": "Q439014",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.8823529411764706
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1",
+      "ground_truth_qid": "Q2754379",
+      "ground_truth_label": "Duke Paul Friedrich of Mecklenburg-Schwerin",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Duke Paul Frederick of Mecklenburg",
+      "best_candidate_label": "Duke Paul Friedrich of Mecklenburg-Schwerin",
+      "best_candidate_qid": "Q2754379",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/FerdinandII",
-      "extracted_local_name": "FerdinandII",
-      "embedding_text": "Ferdinand II",
-      "extracted_gender": "male",
+      "extracted_uri": "http://example.org/data/Princess_Marie_of_Windisch-Graetz",
+      "extracted_local_name": "Princess_Marie_of_Windisch-Graetz",
+      "embedding_text": "Princess Marie of Windisch-Graetz",
+      "extracted_gender": "female",
       "matched": true,
-      "score": 0.75,
-      "ground_truth_uri": "http://example.com/data#Prince_Ferdinand_Pius-_Duke_of_Calabria",
-      "ground_truth_qid": "Q2290508",
-      "ground_truth_label": "Prince Ferdinand Pius, Duke of Calabria",
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Marie_of_Windisch-Graetz",
+      "ground_truth_qid": "Q2071733",
+      "ground_truth_label": "Princess Marie of Windisch-Graetz",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Ferdinando Pio Maria",
-      "best_candidate_label": "Prince Ferdinand Pius, Duke of Calabria",
-      "best_candidate_qid": "Q2290508",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.75
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Marie of Windisch-Graetz",
+      "best_candidate_label": "Princess Marie of Windisch-Graetz",
+      "best_candidate_qid": "Q2071733",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/FerdinandPius",
-      "extracted_local_name": "FerdinandPius",
-      "embedding_text": "Ferdinand Pius",
+      "extracted_uri": "http://example.org/data/Duke_Paul_Frederick_of_Mecklenburg_Senior",
+      "extracted_local_name": "Duke_Paul_Frederick_of_Mecklenburg_Senior",
+      "embedding_text": "Duke Paul Frederick of Mecklenburg Senior",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -124,70 +75,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Filippo di Borbone-Due Sicilie",
-      "best_candidate_label": "Prince Filippo of the Two Sicilies",
-      "best_candidate_qid": "Q3745365",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.3181818181818182
-    },
-    {
-      "extracted_uri": "http://example.org/data/LudwigIII",
-      "extracted_local_name": "LudwigIII",
-      "embedding_text": "Ludwig III",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": "Prince Philip of Bourbon-Two Sicilies",
-      "best_candidate_label": "Prince Filippo of the Two Sicilies",
-      "best_candidate_qid": "Q3745365",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.2553191489361702
-    },
-    {
-      "extracted_uri": "http://example.org/data/MariaAntonietta",
-      "extracted_local_name": "MariaAntonietta",
-      "embedding_text": "Maria Antonietta",
-      "extracted_gender": "female",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": "Princess Maria Antonietta of Bourbon-Two Sicilies",
-      "best_candidate_label": "Princess Maria Antonietta of Bourbon-Two Sicilies",
-      "best_candidate_qid": "Q255400",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.49230769230769234
-    },
-    {
-      "extracted_uri": "http://example.org/data/MariaLudwigaTheresia",
-      "extracted_local_name": "MariaLudwigaTheresia",
-      "embedding_text": "Maria Ludwiga Theresia",
-      "extracted_gender": "female",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": "Princess Maria Ludwiga Theresia of Bavaria",
-      "best_candidate_label": "Princess Maria, Duchess of Calabria",
-      "best_candidate_qid": "Q70768",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.6875
+      "best_candidate_match_text": "Princess Marie of Windisch-Graetz",
+      "best_candidate_label": "Princess Marie of Windisch-Graetz",
+      "best_candidate_qid": "Q2071733",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.0
     }
   ],
   "summary": {
-    "entities_total": 6,
+    "entities_total": 3,
     "entities_matched": 2,
-    "entities_unmatched": 4
+    "entities_unmatched": 1
   }
 }

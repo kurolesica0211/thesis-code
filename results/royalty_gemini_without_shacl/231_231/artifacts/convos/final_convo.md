@@ -69,34 +69,95 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Louis Ferdinand, Prince of Prussia (German: Louis Ferdinand Victor Eduard Adalbert Michael Hubertus Prinz von Preußen; 9 November 1907 –  26 September 1994) was a grandson of Kaiser Wilhelm II and member of the  House of Hohenzollern, which occupied the Prussian and German thrones until the abolition of those monarchies in 1918.
-Biography
+Prince John of the United Kingdom (John Charles Francis; 12 July 1905 – 18 January 1919) was the fifth son and youngest of the six children of King George V and Queen Mary.
+At the time of his birth, his father was heir apparent to John's grandfather Edward VII.
+In 1910, John's father acceded to the throne upon Edward VII's death, and John became fifth in the line of succession to the British throne.
+In 1909, it was discovered that John had epilepsy.
+John's seclusion was subsequently brought forward as evidence of the royal family's inhumanity.
+However, contrary to the belief that he was hidden from an early age, John was a fully-fledged member of the family for most of his life, appearing frequently in public until after his 11th birthday, when his condition became severe.
+Birth
 
-Louis Ferdinand was born in Potsdam as the third in succession to the throne of the German Empire, after his father, German Crown Prince William and elder brother Prince Wilhelm of Prussia.
-When Louis Ferdinand's older brother Prince Wilhelm renounced his succession rights to marry a member of the untitled nobility in 1933 (he was later to be killed in action in France in 1940 while fighting in the German army), Louis Ferdinand replaced him as second in the line of succession to the defunct German and Prussian thrones after the former Crown Prince.
-Louis Ferdinand was educated in Berlin and deviated from his family's tradition by not pursuing a military career.
-Louis Ferdinand dissociated himself from the Nazis after this.
-He married his second cousin, Grand Duchess Kira Kirillovna of Russia, in 1938 in first a Russian Orthodox ceremony in Potsdam and then a Lutheran ceremony in Huis Doorn, Netherlands.
-Kira was the second daughter of Grand Duke Kyril Vladimirovich and Princess Victoria Melita of Saxe-Coburg and Gotha.
-His third son and heir apparent, Prince Louis Ferdinand, died in 1977 during military maneuvers, and thus his one-year-old grandson Georg Friedrich, Prince of Prussia (son of Prince Louis Ferdinand) became the new heir apparent to the defunct Prussian and German Imperial throne.
-Upon Louis Ferdinand's death in 1994, Georg Friedrich became the pretender to the defunct thrones and head of the Hohenzollern family.
-The prince was a popular figure.
-In 1968 Der Spiegel reported that in a survey of their readers by Quick magazine about who would be the most honorable person to become President of the Federal Republic of Germany, Louis Ferdinand, the only one of twelve candidates who was not a politician, won with 39.8% before Carlo Schmid and Ludwig Erhard.
-In a similar survey by the tabloid Bild, readers chose Louis Ferdinand by 55.6%.
-In an interview with Quick, the prince indicated that he might accept the presidency but would not relinquish his claim to the imperial or Prussian crowns.
-After German reunification, he arranged for Prussian King Frederick the Great to be reburied from the Christ Chapel at Hohenzollern Castle to the crypt chamber prepared by Frederick himself on the terrace of his Sanssouci Palace in Potsdam.
-Instead of complying with his last wish after his death, the king had been laid to rest in the Garrison Church, Potsdam next to his unloved father Frederick William I of Prussia in 1786.
-Both coffins were relocated during World War II and ended up in the prince's castle in what became West Germany.
-The prince had Frederick William I's coffin taken to the crypt of the Church of Peace, Potsdam because the Garrison Church had been destroyed in 1945.
-In interviews with C.L. Sulzberger for the book The Fall of Eagles, Louis Ferdinand expressed a deep sense of admiration for the informal bicycle monarchy and crowned republic style favored and used by the Dutch, Belgian, and Scandinavian royal families.
-Praising how vehicles carrying the King or Queen would stop and wait at traffic lights, Louis Ferdinand stated that if the House of Hohenzollern were ever restored to the German throne during his lifetime, this same informality was a quality he fully intended to emulate.
-Prince Ferdinand of Hohenzollern, a member of the senior Swabian branch of the Hohenzollern dynasty, Hohenzollern-Sigmaringen, is his godson.
+John was born at 3:05 am on 12 July 1905 at York Cottage on the Sandringham Estate, during the reign of his paternal grandfather, King Edward VII.
+He was the youngest child and fifth son of George, Prince of Wales (later King George V), and Mary, Princess of Wales (later Queen Mary).
+He was named John despite the name's traditionally unlucky associations within the royal family, and was informally known as Johnnie.
+As a grandchild in the male line of the reigning British monarch, and a son of the Prince of Wales, he was formally styled His Royal Highness Prince John of Wales from birth until his father's accession to the throne in 1910.
+John was christened on 3 August in the parish church of St Mary Magdalene at Sandringham, with the Reverend Canon John Neale Dalton officiating.
+His godparents were King Carlos I of Portugal; his uncles Prince Carl of Denmark and Alexander Duff, 1st Duke of Fife; his great-granduncle Prince Johann of Schleswig-Holstein-Sonderburg-Glücksburg; and three of his first cousins once removed, the Duke and Duchess of Sparta, and Princess Alice, Countess of Athlone.
+John's father stood proxy for King Carlos, Prince Carl, Prince Johann, and the Duke of Fife, while his aunt Princess Victoria stood proxy for the Duchess of Sparta and Princess Alice.
+Childhood and illness
+
+Much of John's early life was spent at Sandringham with his siblings – ​Prince Edward (known as David, later King Edward VIII), Prince Albert (known as Bertie, later King George VI), Princess Mary, Prince Henry, and Prince George – ​under the care of their nanny Charlotte "Lala" Bill.
+In 1909, John's grandaunt, the Dowager Empress of Russia, wrote to her son Tsar Nicholas II that "George's children are very nice ...
+The little ones, George and Johnny are both charming and very amusing".
+John's aunt Princess Alice, Countess of Athlone described him as "very quaint and one evening when Uncle George returned from stalking he bent over Aunt May and kissed her, and they heard Johnny soliloquize, 'She kissed Papa, ugly old man!'"
+George V once told U.S. President Theodore Roosevelt that "all  children  obedient, except John" – ​apparently because he alone, among the royal children, escaped punishment from their father.
+Though a "large and handsome" baby, John had become "winsome" and "painfully slow" by his fourth birthday.
+When his father became king, John did not attend his parents' coronation on 22 June 1911, as this was considered too risky for his health; cynics suggested that the family feared their reputation might be damaged by any incident involving him.
+Although John was deemed not "presentable to the outside world," the king continued to show interest in him, offering him "kindness and affection".
+During his years at Sandringham, John exhibited repetitive behaviours as well as regular misbehaviour and insubordination; as one account put it, "he simply didn't understand he needed to .
+"
+
+
+In 1912, Prince George, John's closest sibling, began St Peter's Court Preparatory School in Broadstairs.
+The following summer, The Times reported that John would not attend Broadstairs the next term, and that the King and Queen had not yet decided whether to send him to school at all.
+After the outbreak of World War I, John rarely saw his parents, who were often away on official duties, or his siblings, who were either at boarding school or serving in the military.
+Wood Farm
+
+In 1916, as his seizures became more frequent and severe, John was sent to live at Wood Farm, where Bill assumed responsibility for his care.
+At Wood Farm, John became, in the words of one biographer, "a satellite with his own little household on an outlying farm on the Sandringham estate ...
+"
+
+
+After the summer of 1916, John was rarely seen outside the Sandringham estate and passed entirely into Bill's care.
+When Queen Alexandra wrote that John "is very proud of his house but is longing for a companion", Queen Mary departed from usual royal practice by arranging for local children to be brought in as playmates.
+One of these was Winifred Thomas, a young girl from Halifax who had been sent to live with her aunt and uncle, who managed the royal stables at Sandringham, in the hope that her asthma would improve.
+John had known Winifred years earlier, before World War I.
+John also played with his elder siblings during their visits; on one occasion, when his two eldest brothers came to see him, the Prince of Wales "took him for a run in a kind of a push-cart, and they both disappeared from view.
+"
+
+
+Death
+
+John's seizures intensified, and Bill later wrote "we dared not let him be with his brothers and sister, because it upsets them so much, with the attacks getting so bad and coming so often."
+Biographer Denis Judd writes that John's "seclusion and "abnormality" must have been disturbing to his brothers and sister", noting that he had been "a friendly, outgoing little boy, much loved by his brothers and sister, a sort of mascot for the family".
+On 18 January 1919, after a severe seizure, John died in his sleep at Wood Farm at 5:30 pm, aged 13.
+Queen Mary wrote in her diary that the news was:
+
+a great shock, tho' for the poor little boy's restless soul, death came as a great relief.
+broke the news to George and  motored down to Wood Farm.
+Mary later wrote to Emily Alcock, an old friend, that:
+
+for  it is a great relief, as his malady was becoming worse as he grew older, & he has thus been spared much suffering.
+George described his son's death as "the greatest mercy possible".
+On 20 January, the Daily Mirror reported that "when the Prince passed away his face bore an angelic smile"; the article also made the first public mention of John's epilepsy.
+His funeral took place the next day at St Mary Magdalene parish church, with John Neale Dalton officiating.
+Queen Mary wrote:
+
+Canon Dalton & Dr Brownhill  conducted the service which was awfully sad and touching.
+Queen Alexandra wrote to Queen Mary that "now  two darling Johnnies lie side by side".
+Legacy
+
+
+Edward, who was 11 years older than John and had hardly known him, regarded his brother's death as "little more than a regrettable nuisance."
+He wrote an insensitive letter to Queen Mary, now lost, to which she did not reply.
+In her final diary reference to John, Mary wrote simply: "miss the dear child very much indeed."
+She gave Winifred Thomas several of John's books, inscribed "In memory of our dear little Prince."
+Bill kept a portrait of John above her mantelpiece, together with a letter from him that read "nanny, I love you."
+In the 21st century, John's seclusion has been cited as evidence of the Windsors' "heartlessness".
+One author has written that the royal family believed such afflictions might pass through their blood, which was then still regarded as purer than that of a commoner, and therefore wished to conceal as much as possible about John's illness.
+Others have suggested that John was sent to Wood Farm to provide him with the best environment available under the "austere" conditions of World War I.
+Another author has stated that the family were "frightened and ashamed of John's illness", while yet another has noted that John's life is "usually portrayed either as tragedy or conspiracy".
+At the time of Edward VIII's abdication, an attempt was made to discredit Albert, now George VI, by implying that he suffered from falling fits like John.
+In 1998, the discovery of two volumes of family photographs briefly returned John to public attention.
+The Lost Prince, a biographical drama about John's life written and directed by Stephen Poliakoff, was released in 2003.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -112,39 +173,9 @@ Prince Ferdinand of Hohenzollern, a member of the senior Swabian branch of the H
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -159,6 +190,23 @@ Prince Ferdinand of Hohenzollern, a member of the senior Swabian branch of the H
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -176,6 +224,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -243,29 +306,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -274,6 +329,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -286,6 +349,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -294,17 +359,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -332,6 +399,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -347,426 +498,165 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (92b75468-4dc7-4ef7-8536-33c29c0ec532)
- Call ID: 92b75468-4dc7-4ef7-8536-33c29c0ec532
+  AssignClass (45a1b4c0-0ccb-4865-a212-32ff13f87d4b)
+ Call ID: 45a1b4c0-0ccb-4865-a212-32ff13f87d4b
   Args:
-    source: Louis_Ferdinand_Prince_of_Prussia
+    type: :Person
+    source: Prince_John
+  AssignClass (7a39678a-198b-4330-9496-56823f38c25b)
+ Call ID: 7a39678a-198b-4330-9496-56823f38c25b
+  Args:
+    source: Prince_John
     type: :Man
-  AssignClass (ee75e85e-5e36-4cf1-8678-f31ffc3997b7)
- Call ID: ee75e85e-5e36-4cf1-8678-f31ffc3997b7
+  AddLiteral (fa170d7c-6b00-4682-92e2-99fefb7bdd11)
+ Call ID: fa170d7c-6b00-4682-92e2-99fefb7bdd11
   Args:
-    type: :Person
-    source: Louis_Ferdinand_Prince_of_Prussia
-  AssignClass (fb9ca499-ae30-4fc7-84bc-c72af4e573b2)
- Call ID: fb9ca499-ae30-4fc7-84bc-c72af4e573b2
-  Args:
-    type: :Man
-    source: Wilhelm_II
-  AssignClass (c6493b8d-c13f-47c1-8fc7-2ec1efe7df8e)
- Call ID: c6493b8d-c13f-47c1-8fc7-2ec1efe7df8e
-  Args:
-    source: Wilhelm_II
-    type: :Person
-  AssignClass (d7875a00-6fd3-4824-a7ee-639b2c494212)
- Call ID: d7875a00-6fd3-4824-a7ee-639b2c494212
-  Args:
-    source: German_Crown_Prince_William
-    type: :Man
-  AssignClass (c4bee3b6-7f1c-4828-b998-61c29e3aaec4)
- Call ID: c4bee3b6-7f1c-4828-b998-61c29e3aaec4
-  Args:
-    source: German_Crown_Prince_William
-    type: :Person
-  AssignClass (d4e69681-1ca0-4380-a041-e212a0759fa9)
- Call ID: d4e69681-1ca0-4380-a041-e212a0759fa9
-  Args:
-    type: :Man
-    source: Prince_Wilhelm_of_Prussia
-  AssignClass (3f39b1b2-5eff-4f96-a1f5-b35bb10c36a6)
- Call ID: 3f39b1b2-5eff-4f96-a1f5-b35bb10c36a6
-  Args:
-    type: :Person
-    source: Prince_Wilhelm_of_Prussia
-  AssignClass (e224016a-4810-443a-b8c1-845356fa567a)
- Call ID: e224016a-4810-443a-b8c1-845356fa567a
-  Args:
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
-    type: :Woman
-  AssignClass (e94d119f-bb7f-4a20-bb6e-4a197363a830)
- Call ID: e94d119f-bb7f-4a20-bb6e-4a197363a830
-  Args:
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
-    type: :Person
-  AssignClass (40a129ba-2bb5-468d-b87b-4ae74b15f291)
- Call ID: 40a129ba-2bb5-468d-b87b-4ae74b15f291
-  Args:
-    source: Grand_Duke_Kyril_Vladimirovich
-    type: :Man
-  AssignClass (43db1b32-7e99-4f93-a3db-ba3b9e9b2f4c)
- Call ID: 43db1b32-7e99-4f93-a3db-ba3b9e9b2f4c
-  Args:
-    source: Grand_Duke_Kyril_Vladimirovich
-    type: :Person
-  AssignClass (e57bb9e3-6629-48c0-ac52-988beb7907c2)
- Call ID: e57bb9e3-6629-48c0-ac52-988beb7907c2
-  Args:
-    type: :Woman
-    source: Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha
-  AssignClass (d378d0cf-0584-43bf-8b8a-b1678e4262e1)
- Call ID: d378d0cf-0584-43bf-8b8a-b1678e4262e1
-  Args:
-    source: Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha
-    type: :Person
-  AssignClass (1efa9b2e-560c-4159-9903-a40afe1ceade)
- Call ID: 1efa9b2e-560c-4159-9903-a40afe1ceade
-  Args:
-    type: :Man
-    source: Prince_Louis_Ferdinand_son
-  AssignClass (8e018993-1c61-4df7-9759-723912d5c9c4)
- Call ID: 8e018993-1c61-4df7-9759-723912d5c9c4
-  Args:
-    type: :Person
-    source: Prince_Louis_Ferdinand_son
-  AssignClass (47b614b0-081c-4a05-9671-9606e40b593e)
- Call ID: 47b614b0-081c-4a05-9671-9606e40b593e
-  Args:
-    source: Georg_Friedrich_Prince_of_Prussia
-    type: :Man
-  AssignClass (be1a0374-d8b0-455e-b2c0-dfde3b91b846)
- Call ID: be1a0374-d8b0-455e-b2c0-dfde3b91b846
-  Args:
-    type: :Person
-    source: Georg_Friedrich_Prince_of_Prussia
-  AddLiteral (2dfd49d5-931f-48c3-b640-82ce9cfb478b)
- Call ID: 2dfd49d5-931f-48c3-b640-82ce9cfb478b
-  Args:
+    source: Prince_John
     literal_type: xsd:integer
-    source: Louis_Ferdinand_Prince_of_Prussia
     relation: :hasBirthYear
-    literal_value: 1907
-  AddLiteral (1b5b4af0-5481-4990-ae77-2e83e1106577)
- Call ID: 1b5b4af0-5481-4990-ae77-2e83e1106577
+    literal_value: 1905
+  AddLiteral (50c707a7-3f1c-479a-b632-6f01c3039fb5)
+ Call ID: 50c707a7-3f1c-479a-b632-6f01c3039fb5
   Args:
-    source: Louis_Ferdinand_Prince_of_Prussia
-    literal_type: xsd:integer
+    literal_value: 1919
     relation: :hasDeathYear
-    literal_value: 1994
-  AddTriple (695e3897-f69e-4f25-b163-64fc657ed069)
- Call ID: 695e3897-f69e-4f25-b163-64fc657ed069
+    source: Prince_John
+    literal_type: xsd:integer
+  AddLiteral (03f0860e-d96c-4751-8c58-58f044441c83)
+ Call ID: 03f0860e-d96c-4751-8c58-58f044441c83
+  Args:
+    relation: :knownAs
+    literal_value: Johnnie
+    literal_type: xsd:string
+    source: Prince_John
+  AssignClass (391177e0-c17e-4211-b850-045ca295a2ec)
+ Call ID: 391177e0-c17e-4211-b850-045ca295a2ec
+  Args:
+    source: King_George_V
+    type: :Person
+  AssignClass (3c8ecc44-0c97-4fe8-8dbd-8eb01ef21117)
+ Call ID: 3c8ecc44-0c97-4fe8-8dbd-8eb01ef21117
+  Args:
+    type: :Man
+    source: King_George_V
+  AssignClass (67d890f1-2f6d-499f-8b67-023ed4310b8f)
+ Call ID: 67d890f1-2f6d-499f-8b67-023ed4310b8f
+  Args:
+    type: :Person
+    source: Queen_Mary
+  AssignClass (1c098780-efe3-4c23-b4c1-af76ae3aaceb)
+ Call ID: 1c098780-efe3-4c23-b4c1-af76ae3aaceb
+  Args:
+    source: Queen_Mary
+    type: :Woman
+  AddTriple (7456ec91-e01f-4b8b-bbb6-cd3fb260b19c)
+ Call ID: 7456ec91-e01f-4b8b-bbb6-cd3fb260b19c
   Args:
     relation: :hasFather
-    source: Louis_Ferdinand_Prince_of_Prussia
-    target: German_Crown_Prince_William
-  AddTriple (af4920ba-e272-42ea-aa6a-36f19a367ec0)
- Call ID: af4920ba-e272-42ea-aa6a-36f19a367ec0
+    target: King_George_V
+    source: Prince_John
+  AddTriple (b595d046-c61a-494a-81b1-d8368759d7a0)
+ Call ID: b595d046-c61a-494a-81b1-d8368759d7a0
   Args:
-    relation: :isSonOf
-    target: German_Crown_Prince_William
-    source: Louis_Ferdinand_Prince_of_Prussia
-  AddTriple (2b869550-8554-48cf-b2ea-f5f5323d87d3)
- Call ID: 2b869550-8554-48cf-b2ea-f5f5323d87d3
-  Args:
-    target: Prince_Wilhelm_of_Prussia
-    source: Louis_Ferdinand_Prince_of_Prussia
-    relation: :isBrotherOf
-  AddTriple (76a527ef-bef6-4592-9fc0-69b989736e11)
- Call ID: 76a527ef-bef6-4592-9fc0-69b989736e11
-  Args:
-    relation: :hasBrother
-    source: Louis_Ferdinand_Prince_of_Prussia
-    target: Prince_Wilhelm_of_Prussia
-  AddTriple (2253ae69-3778-40e4-bfd9-c1315f82b09c)
- Call ID: 2253ae69-3778-40e4-bfd9-c1315f82b09c
-  Args:
-    target: 1938
-    source: Louis_Ferdinand_Prince_of_Prussia
-    relation: :hasMarriageYear
-  AddTriple (5cb250aa-d46c-4184-bb43-fc38205dd0e0)
- Call ID: 5cb250aa-d46c-4184-bb43-fc38205dd0e0
-  Args:
-    target: 1938
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
-    relation: :hasMarriageYear
-  AddTriple (77ec1526-83f9-4f48-8ca1-17de681bab24)
- Call ID: 77ec1526-83f9-4f48-8ca1-17de681bab24
-  Args:
-    target: Grand_Duke_Kyril_Vladimirovich
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
-    relation: :hasFather
-  AddTriple (87a8fc9f-48fc-4040-89f4-52d669f01c9d)
- Call ID: 87a8fc9f-48fc-4040-89f4-52d669f01c9d
-  Args:
-    target: Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
     relation: :hasMother
-  AddTriple (1a38cd8c-20f4-4e18-a8d6-8e62090dc1f0)
- Call ID: 1a38cd8c-20f4-4e18-a8d6-8e62090dc1f0
+    source: Prince_John
+    target: Queen_Mary
+  AssignClass (30f74f20-56be-46c9-9a37-913869d50b62)
+ Call ID: 30f74f20-56be-46c9-9a37-913869d50b62
   Args:
-    target: Louis_Ferdinand_Prince_of_Prussia
-    source: Prince_Louis_Ferdinand_son
-    relation: :hasFather
-  AddTriple (c3f5f462-a74e-4226-a972-9e4866a20f45)
- Call ID: c3f5f462-a74e-4226-a972-9e4866a20f45
+    type: :Person
+    source: Edward_VII
+  AssignClass (4617d712-a597-43cb-b066-300897530253)
+ Call ID: 4617d712-a597-43cb-b066-300897530253
   Args:
-    target: Georg_Friedrich_Prince_of_Prussia
-    source: Prince_Louis_Ferdinand_son
+    type: :Man
+    source: Edward_VII
+  AddTriple (3bcb39d0-62b7-46de-9c1f-a01b4deae91f)
+ Call ID: 3bcb39d0-62b7-46de-9c1f-a01b4deae91f
+  Args:
     relation: :isFatherOf
-  Finish (82a03433-c9dd-40d6-a29a-52536a0cf983)
- Call ID: 82a03433-c9dd-40d6-a29a-52536a0cf983
+    source: Edward_VII
+    target: King_George_V
+  AssignClass (e1088379-479d-46b6-81bc-0a7946d7c795)
+ Call ID: e1088379-479d-46b6-81bc-0a7946d7c795
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,
-          :Woman ;
-      :hasFather data:Grand_Duke_Kyril_Vladimirovich ;
-      :hasMarriageYear data:1938 ;
-      :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
-
-  data:Prince_Louis_Ferdinand_son a :Man,
-          :Person ;
-      :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
-      :isFatherOf data:Georg_Friedrich_Prince_of_Prussia .
-
-  data:Wilhelm_II a :Man,
-          :Person .
-
-  data:Georg_Friedrich_Prince_of_Prussia a :Man,
-          :Person .
-
-  data:Grand_Duke_Kyril_Vladimirovich a :Man,
-          :Person .
-
-  data:Louis_Ferdinand_Prince_of_Prussia a :Man,
-          :Person ;
-      :hasBirthYear 1907 ;
-      :hasBrother data:Prince_Wilhelm_of_Prussia ;
-      :hasDeathYear 1994 ;
-      :hasFather data:German_Crown_Prince_William ;
-      :hasMarriageYear data:1938 ;
-      :isBrotherOf data:Prince_Wilhelm_of_Prussia ;
-      :isSonOf data:German_Crown_Prince_William .
-
-  data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person,
-          :Woman .
-
-  data:German_Crown_Prince_William a :Man,
-          :Person .
-
-  data:Prince_Wilhelm_of_Prussia a :Man,
-          :Person .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1938']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  UnassignClass (a4a4d918-119f-4886-8433-cc80c0fd1a9b)
- Call ID: a4a4d918-119f-4886-8433-cc80c0fd1a9b
-  Args:
-    source: Louis_Ferdinand_Prince_of_Prussia
-    type: :Man
-  UnassignClass (9ada5bb6-492b-473e-8e7f-ea87de4fbf31)
- Call ID: 9ada5bb6-492b-473e-8e7f-ea87de4fbf31
-  Args:
+    source: Prince_Edward
     type: :Person
-    source: Louis_Ferdinand_Prince_of_Prussia
-  UnassignClass (8c1c0c9f-6932-44ca-b453-45ede7e29dfc)
- Call ID: 8c1c0c9f-6932-44ca-b453-45ede7e29dfc
+  AssignClass (3d0b3a2c-5be9-45ef-a2b1-c8934fa28d03)
+ Call ID: 3d0b3a2c-5be9-45ef-a2b1-c8934fa28d03
+  Args:
+    type: :Man
+    source: Prince_Edward
+  AssignClass (f2fb4d9a-e686-4d88-9023-dd5b0f296278)
+ Call ID: f2fb4d9a-e686-4d88-9023-dd5b0f296278
+  Args:
+    source: Prince_Albert
+    type: :Person
+  AssignClass (ccacd79c-c69e-4608-b4fa-37c5bb4d9c92)
+ Call ID: ccacd79c-c69e-4608-b4fa-37c5bb4d9c92
+  Args:
+    type: :Man
+    source: Prince_Albert
+  AssignClass (14bc94ac-ee49-462f-8085-3b45937e0d05)
+ Call ID: 14bc94ac-ee49-462f-8085-3b45937e0d05
+  Args:
+    source: Princess_Mary
+    type: :Person
+  AssignClass (42adaea4-f7b3-4c1e-a133-a1b7a730d6d9)
+ Call ID: 42adaea4-f7b3-4c1e-a133-a1b7a730d6d9
   Args:
     type: :Woman
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
-  UnassignClass (b91d4ab5-6818-47ea-adf7-ab6a3b712a11)
- Call ID: b91d4ab5-6818-47ea-adf7-ab6a3b712a11
+    source: Princess_Mary
+  AssignClass (28b43024-a01f-4f6d-ae99-3b7541739115)
+ Call ID: 28b43024-a01f-4f6d-ae99-3b7541739115
   Args:
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
     type: :Person
-  RemoveTriple (fabd0d2c-51b7-415a-b51b-37cc3ee5db1a)
- Call ID: fabd0d2c-51b7-415a-b51b-37cc3ee5db1a
+    source: Prince_Henry
+  AssignClass (ae3ce661-d6ce-495d-afd3-9eaf8666d357)
+ Call ID: ae3ce661-d6ce-495d-afd3-9eaf8666d357
   Args:
-    source: Louis_Ferdinand_Prince_of_Prussia
-    target: 1938
-    relation: :hasMarriageYear
-  RemoveTriple (29896685-4bb7-440f-9790-a22df2b373b2)
- Call ID: 29896685-4bb7-440f-9790-a22df2b373b2
-  Args:
-    relation: :hasMarriageYear
-    target: 1938
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
-  AssignClass (1733dd67-0f17-40bb-a414-cd79f6c18cea)
- Call ID: 1733dd67-0f17-40bb-a414-cd79f6c18cea
-  Args:
-    source: Louis_Ferdinand_Prince_of_Prussia
     type: :Man
-  AssignClass (c16f0aaf-22ca-4fb1-b01d-da83eb4ac905)
- Call ID: c16f0aaf-22ca-4fb1-b01d-da83eb4ac905
+    source: Prince_Henry
+  AssignClass (25f3efa6-6b2e-4f7d-a2c4-777db511f160)
+ Call ID: 25f3efa6-6b2e-4f7d-a2c4-777db511f160
   Args:
+    source: Prince_George
     type: :Person
-    source: Louis_Ferdinand_Prince_of_Prussia
-  AssignClass (10a0154e-9087-4892-9f7f-4ce4ee6ef97b)
- Call ID: 10a0154e-9087-4892-9f7f-4ce4ee6ef97b
+  AssignClass (9eac2449-41bd-4692-acef-a4fd99de7cac)
+ Call ID: 9eac2449-41bd-4692-acef-a4fd99de7cac
   Args:
-    type: :Woman
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
-  AssignClass (784308d2-2402-4eb8-a5f1-b29f2207e003)
- Call ID: 784308d2-2402-4eb8-a5f1-b29f2207e003
+    type: :Man
+    source: Prince_George
+  AddTriple (b2738d3b-0676-422c-8986-348b2c7b2813)
+ Call ID: b2738d3b-0676-422c-8986-348b2c7b2813
   Args:
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
-    type: :Person
-  AddLiteral (adbaf571-21a0-4c03-af34-c374a5bb6a59)
- Call ID: adbaf571-21a0-4c03-af34-c374a5bb6a59
+    target: Prince_Edward
+    source: Prince_John
+    relation: :isSiblingOf
+  AddTriple (73ad23e4-af20-4b21-bc9b-63f1444be724)
+ Call ID: 73ad23e4-af20-4b21-bc9b-63f1444be724
   Args:
-    relation: :hasMarriageYear
-    source: Louis_Ferdinand_Prince_of_Prussia
-    literal_type: xsd:integer
-    literal_value: 1938
-  AddLiteral (3dfc10d2-bb2c-4b95-bdfa-3962208dd126)
- Call ID: 3dfc10d2-bb2c-4b95-bdfa-3962208dd126
+    source: Prince_John
+    target: Prince_Albert
+    relation: :isSiblingOf
+  AddTriple (c61099ec-7a0f-4fa5-a748-a426db19094b)
+ Call ID: c61099ec-7a0f-4fa5-a748-a426db19094b
   Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
-    literal_value: 1938
-  Finish (4acb3934-2846-449e-8884-f1009a0252d0)
- Call ID: 4acb3934-2846-449e-8884-f1009a0252d0
+    target: Princess_Mary
+    source: Prince_John
+    relation: :isSiblingOf
+  AddTriple (ecd4938c-9e7a-4cd8-bea9-df82ebd1d397)
+ Call ID: ecd4938c-9e7a-4cd8-bea9-df82ebd1d397
+  Args:
+    relation: :isSiblingOf
+    target: Prince_Henry
+    source: Prince_John
+  AddTriple (871400fb-bc96-4526-a551-e8813e5cbb4a)
+ Call ID: 871400fb-bc96-4526-a551-e8813e5cbb4a
+  Args:
+    target: Prince_George
+    source: Prince_John
+    relation: :isSiblingOf
+  Finish (d636feb1-8b89-4433-b38f-15bf301aa17d)
+ Call ID: d636feb1-8b89-4433-b38f-15bf301aa17d
   Args:

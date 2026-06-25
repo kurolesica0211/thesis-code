@@ -1,0 +1,167 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FranzOfBavaria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FranzOfBavaria ;
+    :hasChild data:Dorothea ;
+    :hasDaughter data:Dorothea ;
+    :hasRelation data:Dorothea,
+        data:FerdinandIV,
+        data:FranzOfBavaria,
+        data:Gottfried,
+        data:IsabellaAntonie,
+        data:MariaCristina,
+        data:PeterFerdinand ;
+    :isAncestorOf data:Dorothea ;
+    :isBloodrelationOf data:FranzOfBavaria ;
+    :isBrotherOf data:FranzOfBavaria ;
+    :isFatherOf data:Dorothea ;
+    :isParentOf data:Dorothea ;
+    :isSiblingOf data:FranzOfBavaria ;
+    :isUncleOf data:Dorothea .
+
+data:IsabellaAntonie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Dorothea ;
+    :hasDaughter data:Dorothea ;
+    :hasRelation data:Dorothea,
+        data:FerdinandIV,
+        data:FranzOfBavaria,
+        data:Gottfried,
+        data:IsabellaAntonie,
+        data:MariaCristina,
+        data:PeterFerdinand ;
+    :hasSister data:IsabellaAntonie ;
+    :isAncestorOf data:Dorothea ;
+    :isAuntOf data:Dorothea ;
+    :isBloodrelationOf data:IsabellaAntonie ;
+    :isMotherOf data:Dorothea ;
+    :isParentOf data:Dorothea ;
+    :isSiblingOf data:IsabellaAntonie ;
+    :isSisterOf data:IsabellaAntonie .
+
+data:MariaCristina a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Gottfried ;
+    :hasRelation data:Dorothea,
+        data:FerdinandIV,
+        data:FranzOfBavaria,
+        data:Gottfried,
+        data:IsabellaAntonie,
+        data:MariaCristina,
+        data:PeterFerdinand ;
+    :hasSister data:MariaCristina ;
+    :hasSon data:Gottfried ;
+    :isAncestorOf data:Gottfried ;
+    :isAuntOf data:Gottfried ;
+    :isBloodrelationOf data:MariaCristina ;
+    :isMotherOf data:Gottfried ;
+    :isParentOf data:Gottfried ;
+    :isSiblingOf data:MariaCristina ;
+    :isSisterOf data:MariaCristina .
+
+data:FerdinandIV a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FerdinandIV ;
+    :hasChild data:PeterFerdinand ;
+    :hasRelation data:Dorothea,
+        data:FerdinandIV,
+        data:FranzOfBavaria,
+        data:Gottfried,
+        data:IsabellaAntonie,
+        data:MariaCristina,
+        data:PeterFerdinand ;
+    :hasSon data:PeterFerdinand ;
+    :isAncestorOf data:Gottfried,
+        data:PeterFerdinand ;
+    :isBloodrelationOf data:FerdinandIV ;
+    :isBrotherOf data:FerdinandIV ;
+    :isFatherOf data:PeterFerdinand ;
+    :isParentOf data:PeterFerdinand ;
+    :isSiblingOf data:FerdinandIV ;
+    :isUncleOf data:PeterFerdinand .
+
+data:PeterFerdinand a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:FerdinandIV ;
+    :hasBrother data:PeterFerdinand ;
+    :hasChild data:Gottfried ;
+    :hasFather data:FerdinandIV ;
+    :hasParent data:FerdinandIV ;
+    :hasRelation data:Dorothea,
+        data:FerdinandIV,
+        data:FranzOfBavaria,
+        data:Gottfried,
+        data:IsabellaAntonie,
+        data:MariaCristina,
+        data:PeterFerdinand ;
+    :hasSon data:Gottfried ;
+    :isAncestorOf data:Gottfried ;
+    :isBloodrelationOf data:PeterFerdinand ;
+    :isBrotherOf data:PeterFerdinand ;
+    :isChildOf data:FerdinandIV ;
+    :isFatherOf data:Gottfried ;
+    :isParentOf data:Gottfried ;
+    :isSiblingOf data:PeterFerdinand ;
+    :isSonOf data:FerdinandIV ;
+    :isUncleOf data:Gottfried .
+
+data:Dorothea a :Person,
+        :Woman ;
+    :hasAncestor data:FranzOfBavaria,
+        data:IsabellaAntonie ;
+    :hasFather data:FranzOfBavaria ;
+    :hasMother data:IsabellaAntonie ;
+    :hasParent data:FranzOfBavaria,
+        data:IsabellaAntonie ;
+    :hasRelation data:Dorothea,
+        data:FerdinandIV,
+        data:FranzOfBavaria,
+        data:Gottfried,
+        data:IsabellaAntonie,
+        data:MariaCristina,
+        data:PeterFerdinand ;
+    :hasSister data:Dorothea ;
+    :isBloodrelationOf data:Dorothea ;
+    :isChildOf data:FranzOfBavaria,
+        data:IsabellaAntonie ;
+    :isDaughterOf data:FranzOfBavaria,
+        data:IsabellaAntonie ;
+    :isSiblingOf data:Dorothea ;
+    :isSisterOf data:Dorothea .
+
+data:Gottfried a :Man,
+        :Person ;
+    :hasAncestor data:FerdinandIV,
+        data:MariaCristina,
+        data:PeterFerdinand ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:Gottfried ;
+    :hasDeathYear 1984 ;
+    :hasFather data:PeterFerdinand ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:MariaCristina ;
+    :hasParent data:MariaCristina,
+        data:PeterFerdinand ;
+    :hasRelation data:Dorothea,
+        data:FerdinandIV,
+        data:FranzOfBavaria,
+        data:Gottfried,
+        data:IsabellaAntonie,
+        data:MariaCristina,
+        data:PeterFerdinand ;
+    :isBloodrelationOf data:Gottfried ;
+    :isBrotherOf data:Gottfried ;
+    :isChildOf data:MariaCristina,
+        data:PeterFerdinand ;
+    :isSiblingOf data:Gottfried ;
+    :isSonOf data:MariaCristina,
+        data:PeterFerdinand .
+

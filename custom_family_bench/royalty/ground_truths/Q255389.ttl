@@ -7,10 +7,36 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Prince_Ferdinand_of_Bavaria a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alfonso_XIII a :Person ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "213:224",
+        "213:233" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasSex data:male .
+
+data:Infanta_Maria_Teresa_Isabel_of_Spain a :Person ;
+    rdfs:label "Infanta Maria Teresa Isabel of Spain" ;
+    data:posIndicesFull "282:294",
+        "386:398",
+        "40:52",
+        "608:620",
+        "8:20" ;
+    data:wdtLink wdt:Q255389 ;
+    :alsoKnownAs "Maria Teresa",
+        "Maria Teresa de Borbón y Habsburgo, Infanta de España" ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasSex data:female .
+
+data:Prince_Ferdinand_of_Bavaria a :Person ;
     rdfs:label "Prince Ferdinand of Bavaria" ;
     data:posIndicesFull "425:452" ;
     data:posIndicesPart "625:634" ;
@@ -29,10 +55,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Alfonso_XII_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alfonso_XII_of_Spain a :Person ;
     rdfs:label "Alfonso XII of Spain" ;
     data:posIndicesFull "213:224",
         "213:233" ;
@@ -41,86 +64,18 @@ data:Alfonso_XII_of_Spain a :Ancestor,
         "571:576" ;
     data:wdtLink wdt:Q32347 ;
     :alsoKnownAs "Alfonso XII" ;
-    :hasChild data:Alfonso_XIII,
-        data:Infanta_Maria_Teresa_Isabel_of_Spain ;
-    :hasDaughter data:Infanta_Maria_Teresa_Isabel_of_Spain ;
-    :hasSex data:male ;
-    :hasSon data:Alfonso_XIII ;
-    :isFatherOf data:Alfonso_XIII,
-        data:Infanta_Maria_Teresa_Isabel_of_Spain ;
-    :isParentOf data:Alfonso_XIII,
-        data:Infanta_Maria_Teresa_Isabel_of_Spain .
+    :hasSex data:male .
 
-data:Maria_Christina_of_Austria a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Maria_Christina_of_Austria a :Person ;
     rdfs:label "Maria Christina of Austria" ;
     data:posIndicesFull "254:280" ;
     data:wdtLink wdt:Q538125 ;
     :alsoKnownAs "Archduchess Maria Christina Henriette Desideria Felicitas Raineria of Austria",
         "Maria Cristina de Habsburgo",
         "María Cristina de Borbón" ;
-    :hasChild data:Alfonso_XIII,
-        data:Infanta_Maria_Teresa_Isabel_of_Spain ;
-    :hasDaughter data:Infanta_Maria_Teresa_Isabel_of_Spain ;
-    :hasSex data:female ;
-    :hasSon data:Alfonso_XIII ;
-    :isMotherOf data:Alfonso_XIII,
-        data:Infanta_Maria_Teresa_Isabel_of_Spain ;
-    :isParentOf data:Alfonso_XIII,
-        data:Infanta_Maria_Teresa_Isabel_of_Spain .
+    :hasSex data:female .
 
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alfonso XIII" ;
-    data:posIndicesFull "213:224",
-        "213:233" ;
-    data:wdtLink wdt:Q18363 ;
-    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
-        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
-        "Alfonso XIII of Spain",
-        "Don Alfonso de Borbon y Habsburgo",
-        "Don Alfonso de Borbón y Habsburgo",
-        "The African" ;
-    :hasFather data:Alfonso_XII_of_Spain ;
-    :hasMother data:Maria_Christina_of_Austria ;
-    :hasParent data:Alfonso_XII_of_Spain,
-        data:Maria_Christina_of_Austria ;
-    :hasSex data:male ;
-    :hasSister data:Infanta_Maria_Teresa_Isabel_of_Spain ;
-    :isBrotherOf data:Infanta_Maria_Teresa_Isabel_of_Spain ;
-    :isChildOf data:Alfonso_XII_of_Spain,
-        data:Maria_Christina_of_Austria ;
-    :isSiblingOf data:Infanta_Maria_Teresa_Isabel_of_Spain ;
-    :isSonOf data:Alfonso_XII_of_Spain,
-        data:Maria_Christina_of_Austria .
+data:female a :Female .
 
-data:Infanta_Maria_Teresa_Isabel_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta Maria Teresa Isabel of Spain" ;
-    data:posIndicesFull "282:294",
-        "386:398",
-        "40:52",
-        "608:620",
-        "8:20" ;
-    data:wdtLink wdt:Q255389 ;
-    :alsoKnownAs "Maria Teresa",
-        "Maria Teresa de Borbón y Habsburgo, Infanta de España" ;
-    :hasBrother data:Alfonso_XIII ;
-    :hasFather data:Alfonso_XII_of_Spain ;
-    :hasMother data:Maria_Christina_of_Austria ;
-    :hasParent data:Alfonso_XII_of_Spain,
-        data:Maria_Christina_of_Austria ;
-    :hasSex data:female ;
-    :isChildOf data:Alfonso_XII_of_Spain,
-        data:Maria_Christina_of_Austria ;
-    :isDaughterOf data:Alfonso_XII_of_Spain,
-        data:Maria_Christina_of_Austria ;
-    :isSiblingOf data:Alfonso_XIII ;
-    :isSisterOf data:Alfonso_XIII .
+data:male a :Male .
 

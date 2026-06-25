@@ -2,29 +2,69 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Paul_Dmitrievich_Romanovsky-Ilyinsky a :Man,
+data:Doreen_Knatchbull a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Norton_Louis_Philip_Knatchbull a :Man,
         :Person ;
-    :hasBirthYear 1928 ;
-    :hasDeathYear 2004 ;
-    :hasFather data:Dmitri_Pavlovich_of_Russia ;
-    :hasMarriageYear 1948,
-        1953 ;
-    :hasMother data:Audrey_Emery ;
-    :hasRelation data:Angelica_Philippa_Kauffmann,
-        data:Mary_Evelyn_Prince .
+    :formerlyKnownAs "Lord Brabourne"^^xsd:string,
+        "Lord Romsey"^^xsd:string ;
+    :hasBirthYear 1947 ;
+    :hasFather data:John_Knatchbull ;
+    :hasMarriageYear 1979 ;
+    :hasMother data:Patricia_Knatchbull ;
+    :hasRelation data:Eugenie_Lady_Nuttall,
+        data:Penelope_Meredith_Eastwood ;
+    :hasSex data:Male ;
+    :isSiblingOf data:Nicholas_Knatchbull .
 
-data:Angelica_Philippa_Kauffmann a :Person,
-        :Woman .
+data:Eugenie_Lady_Nuttall a :Person,
+        :Woman ;
+    :hasSex data:Female .
 
-data:Audrey_Emery a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Dmitri_Pavlovich_of_Russia a :Ancestor,
+data:John_Knatchbull a :Ancestor,
         :Man,
         :Person ;
-    :hasDeathYear 1942 .
+    :hasSex data:Male .
 
-data:Mary_Evelyn_Prince a :Person,
-        :Woman .
+data:Louis_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Marian_Elizabeth_Hood a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2020 ;
+    :hasSex data:Female .
+
+data:Nicholas_Knatchbull a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Patricia_Knatchbull a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Louis_Mountbatten ;
+    :hasSex data:Female .
+
+data:Penelope_Meredith_Eastwood a :Person,
+        :Woman ;
+    :hasBirthYear 1953 ;
+    :hasFather data:Reginald_Wray_Frank_Eastwood ;
+    :hasMother data:Marian_Elizabeth_Hood ;
+    :hasSex data:Female .
+
+data:Reginald_Wray_Frank_Eastwood a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1980 ;
+    :hasSex data:Male .
+
+data:Female a :Female .
+
+data:Male a :Male .
 

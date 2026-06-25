@@ -1,0 +1,116 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Manfredo_de_Borbon a :Man,
+        :Person ;
+    :hasBrother data:Manfredo_de_Borbon ;
+    :hasRelation data:Manfredo_de_Borbon ;
+    :isBloodrelationOf data:Manfredo_de_Borbon ;
+    :isBrotherOf data:Manfredo_de_Borbon ;
+    :isSiblingOf data:Manfredo_de_Borbon .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :hasBrother data:Felipe_VI ;
+    :hasRelation data:Felipe_VI ;
+    :isBloodrelationOf data:Felipe_VI ;
+    :isBrotherOf data:Felipe_VI ;
+    :isSiblingOf data:Felipe_VI .
+
+data:Carlos_Zurita_y_Delgado a :Man,
+        :Person ;
+    :hasBrother data:Carlos_Zurita_y_Delgado ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Infanta_Margarita,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:Princess_Mercedes ;
+    :isBloodrelationOf data:Carlos_Zurita_y_Delgado ;
+    :isBrotherOf data:Carlos_Zurita_y_Delgado ;
+    :isSiblingOf data:Carlos_Zurita_y_Delgado .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Infanta_Margarita,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:Princess_Mercedes ;
+    :hasSister data:Infanta_Margarita ;
+    :isBloodrelationOf data:Infanta_Margarita,
+        data:Juan_Carlos_I ;
+    :isBrotherOf data:Infanta_Margarita,
+        data:Juan_Carlos_I ;
+    :isSiblingOf data:Infanta_Margarita,
+        data:Juan_Carlos_I .
+
+data:Infante_Juan a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Infante_Juan ;
+    :hasChild data:Infanta_Margarita ;
+    :hasDaughter data:Infanta_Margarita ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Infanta_Margarita,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:Princess_Mercedes ;
+    :isAncestorOf data:Infanta_Margarita ;
+    :isBloodrelationOf data:Infante_Juan ;
+    :isBrotherOf data:Infante_Juan ;
+    :isFatherOf data:Infanta_Margarita ;
+    :isParentOf data:Infanta_Margarita ;
+    :isSiblingOf data:Infante_Juan ;
+    :isUncleOf data:Infanta_Margarita .
+
+data:Princess_Mercedes a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infanta_Margarita ;
+    :hasDaughter data:Infanta_Margarita ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Infanta_Margarita,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:Princess_Mercedes ;
+    :hasSister data:Princess_Mercedes ;
+    :isAncestorOf data:Infanta_Margarita ;
+    :isAuntOf data:Infanta_Margarita ;
+    :isBloodrelationOf data:Princess_Mercedes ;
+    :isMotherOf data:Infanta_Margarita ;
+    :isParentOf data:Infanta_Margarita ;
+    :isSiblingOf data:Princess_Mercedes ;
+    :isSisterOf data:Princess_Mercedes .
+
+data:Infanta_Margarita a :Person,
+        :Woman ;
+    :hasAncestor data:Infante_Juan,
+        data:Princess_Mercedes ;
+    :hasBirthYear 1939 ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasFather data:Infante_Juan ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Princess_Mercedes ;
+    :hasParent data:Infante_Juan,
+        data:Princess_Mercedes ;
+    :hasRelation data:Carlos_Zurita_y_Delgado,
+        data:Infanta_Margarita,
+        data:Infante_Juan,
+        data:Juan_Carlos_I,
+        data:Princess_Mercedes ;
+    :hasSister data:Infanta_Margarita ;
+    :isAuntOf data:Felipe_VI ;
+    :isBloodrelationOf data:Infanta_Margarita,
+        data:Juan_Carlos_I ;
+    :isChildOf data:Infante_Juan,
+        data:Princess_Mercedes ;
+    :isDaughterOf data:Infante_Juan,
+        data:Princess_Mercedes ;
+    :isSiblingOf data:Infanta_Margarita,
+        data:Juan_Carlos_I ;
+    :isSisterOf data:Infanta_Margarita,
+        data:Juan_Carlos_I ;
+    :knownAs "Margarita María de la Victoria Esperanza Jacoba Felicidad Perpetua de Todos los Santos de Borbón y Borbón"^^xsd:string .
+

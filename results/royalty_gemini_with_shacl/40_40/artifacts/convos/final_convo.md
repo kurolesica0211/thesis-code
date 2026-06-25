@@ -111,6 +111,8 @@ Gonzalo was buried in the graveyard at Pörtschach.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -126,39 +128,9 @@ Gonzalo was buried in the graveyard at Pörtschach.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -173,6 +145,23 @@ Gonzalo was buried in the graveyard at Pörtschach.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -190,6 +179,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,29 +261,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,6 +284,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -300,6 +304,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -308,17 +314,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -346,6 +354,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -361,145 +453,123 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (7c1e2d42-c642-47dc-8b38-3ac4e6a89730)
- Call ID: 7c1e2d42-c642-47dc-8b38-3ac4e6a89730
+  AssignClass (760cf9db-78b4-4618-90a4-3385823cca11)
+ Call ID: 760cf9db-78b4-4618-90a4-3385823cca11
   Args:
-    source: Gonzalo_of_Spain
     type: :Person
-  AssignClass (490735c9-ee38-46fd-8626-1965ebeff832)
- Call ID: 490735c9-ee38-46fd-8626-1965ebeff832
+    source: :Gonzalo_of_Spain
+  AssignClass (153b6bed-4c30-4839-9c98-f56a2c4526ac)
+ Call ID: 153b6bed-4c30-4839-9c98-f56a2c4526ac
+  Args:
+    source: :Gonzalo_of_Spain
+    type: :Man
+  AssignClass (614d1cda-9f51-4f34-8049-ed9272e53489)
+ Call ID: 614d1cda-9f51-4f34-8049-ed9272e53489
+  Args:
+    source: :Alfonso_XIII_of_Spain
+    type: :Person
+  AssignClass (036b89ff-de85-421d-9b64-6b73ba50d123)
+ Call ID: 036b89ff-de85-421d-9b64-6b73ba50d123
   Args:
     type: :Man
-    source: Gonzalo_of_Spain
-  AddLiteral (d1679ceb-b7f9-4303-a930-3cec1d359c37)
- Call ID: d1679ceb-b7f9-4303-a930-3cec1d359c37
+    source: :Alfonso_XIII_of_Spain
+  AssignClass (b1e42889-fb8e-4dac-88d3-3026c0b773a5)
+ Call ID: b1e42889-fb8e-4dac-88d3-3026c0b773a5
   Args:
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-    source: Gonzalo_of_Spain
-  AddLiteral (9a6feec5-370a-490b-b7c2-a1dcfb11ac69)
- Call ID: 9a6feec5-370a-490b-b7c2-a1dcfb11ac69
+    type: :Person
+    source: :Victoria_Eugenie_of_Battenberg
+  AssignClass (699095dd-6e52-4227-a3e8-6d3d4c4441ff)
+ Call ID: 699095dd-6e52-4227-a3e8-6d3d4c4441ff
   Args:
-    relation: :knownAs
-    literal_value: Gonzalo Manuel Maria Bernardo Narciso Alfonso Mauricio de Borbón y Battenberg
-    literal_type: xsd:string
-    source: Gonzalo_of_Spain
-  AddLiteral (2f847e08-6bc1-4e8a-93c4-97ce841520e8)
- Call ID: 2f847e08-6bc1-4e8a-93c4-97ce841520e8
+    type: :Woman
+    source: :Victoria_Eugenie_of_Battenberg
+  AssignClass (30ff5653-1c86-4d88-acb2-739e7f557d88)
+ Call ID: 30ff5653-1c86-4d88-acb2-739e7f557d88
   Args:
-    source: Gonzalo_of_Spain
+    type: :Person
+    source: :Beatrice_of_the_United_Kingdom
+  AssignClass (54d5dd5b-834d-4b0c-b0a1-ba99dabb332f)
+ Call ID: 54d5dd5b-834d-4b0c-b0a1-ba99dabb332f
+  Args:
+    source: :Beatrice_of_the_United_Kingdom
+    type: :Woman
+  AssignClass (100c3e36-af2f-43ec-b756-7569a2f1ba3c)
+ Call ID: 100c3e36-af2f-43ec-b756-7569a2f1ba3c
+  Args:
+    source: :Maurice_of_Battenberg
+    type: :Person
+  AssignClass (f0cf8ef5-6206-4abf-91e5-015f237112b0)
+ Call ID: f0cf8ef5-6206-4abf-91e5-015f237112b0
+  Args:
+    type: :Man
+    source: :Maurice_of_Battenberg
+  AssignClass (9e29a01c-dba8-4794-9d85-ce842395e697)
+ Call ID: 9e29a01c-dba8-4794-9d85-ce842395e697
+  Args:
+    source: :Beatriz_of_Spain
+    type: :Person
+  AssignClass (a01aba05-e08a-4cc2-b1fc-e4c48cc5b714)
+ Call ID: a01aba05-e08a-4cc2-b1fc-e4c48cc5b714
+  Args:
+    source: :Beatriz_of_Spain
+    type: :Woman
+  AssignClass (a0e6a3f0-cf94-44fd-a39e-d5b3b0cb8f2d)
+ Call ID: a0e6a3f0-cf94-44fd-a39e-d5b3b0cb8f2d
+  Args:
+    source: :Alfonso_of_Spain
+    type: :Person
+  AssignClass (c096421e-eadb-4bbf-8823-d0927b27a411)
+ Call ID: c096421e-eadb-4bbf-8823-d0927b27a411
+  Args:
+    type: :Man
+    source: :Alfonso_of_Spain
+  AddLiteral (15de7646-1e4d-40c4-b421-0a3b935307c5)
+ Call ID: 15de7646-1e4d-40c4-b421-0a3b935307c5
+  Args:
     literal_type: xsd:integer
+    source: :Gonzalo_of_Spain
     literal_value: 1914
     relation: :hasBirthYear
-  AddLiteral (db7324a6-1717-44a0-b310-97c198b09cae)
- Call ID: db7324a6-1717-44a0-b310-97c198b09cae
+  AddLiteral (5a8e00a3-6110-4221-938f-abe131df0311)
+ Call ID: 5a8e00a3-6110-4221-938f-abe131df0311
   Args:
-    literal_value: 1934
-    relation: :hasDeathYear
     literal_type: xsd:integer
-    source: Gonzalo_of_Spain
-  AssignClass (9f2335b4-f5da-4dc7-8c2a-066f3c138659)
- Call ID: 9f2335b4-f5da-4dc7-8c2a-066f3c138659
+    relation: :hasDeathYear
+    source: :Gonzalo_of_Spain
+    literal_value: 1934
+  AddTriple (df195cff-58d3-4ecf-a9a7-72474ab051f0)
+ Call ID: df195cff-58d3-4ecf-a9a7-72474ab051f0
   Args:
-    source: Alfonso_XIII_of_Spain
-    type: :Person
-  AssignClass (262b8985-6815-4703-9143-f5ac0e5b0ff1)
- Call ID: 262b8985-6815-4703-9143-f5ac0e5b0ff1
-  Args:
-    source: Alfonso_XIII_of_Spain
-    type: :Man
-  AddTriple (edb32407-dd62-4ccd-ac60-f92d98507411)
- Call ID: edb32407-dd62-4ccd-ac60-f92d98507411
-  Args:
-    source: Gonzalo_of_Spain
-    target: Alfonso_XIII_of_Spain
     relation: :hasFather
-  AssignClass (f064dc62-f57e-4953-920e-0843d45fb7df)
- Call ID: f064dc62-f57e-4953-920e-0843d45fb7df
+    source: :Gonzalo_of_Spain
+    target: :Alfonso_XIII_of_Spain
+  AddTriple (7366a154-d001-4117-960c-7e1535b5f240)
+ Call ID: 7366a154-d001-4117-960c-7e1535b5f240
   Args:
-    source: Victoria_Eugenie_of_Battenberg
-    type: :Person
-  AssignClass (19d7e755-f0cb-4045-b42d-470eeb4da0ea)
- Call ID: 19d7e755-f0cb-4045-b42d-470eeb4da0ea
-  Args:
-    source: Victoria_Eugenie_of_Battenberg
-    type: :Woman
-  AddTriple (db036d00-2701-4070-9096-aadc0e5da83a)
- Call ID: db036d00-2701-4070-9096-aadc0e5da83a
-  Args:
-    source: Gonzalo_of_Spain
-    target: Victoria_Eugenie_of_Battenberg
     relation: :hasMother
-  AssignClass (b5e6b241-47b3-48db-afed-a87dfa15983c)
- Call ID: b5e6b241-47b3-48db-afed-a87dfa15983c
+    source: :Gonzalo_of_Spain
+    target: :Victoria_Eugenie_of_Battenberg
+  AddTriple (0219b3d1-1346-42cd-9c31-fcd9fdc6bff8)
+ Call ID: 0219b3d1-1346-42cd-9c31-fcd9fdc6bff8
   Args:
-    type: :Person
-    source: Beatrice_of_the_United_Kingdom
-  AssignClass (7720f158-1724-432f-86c4-94a8f6a8840f)
- Call ID: 7720f158-1724-432f-86c4-94a8f6a8840f
+    target: :Beatrice_of_the_United_Kingdom
+    relation: :hasParent
+    source: :Gonzalo_of_Spain
+  AddTriple (778f9973-0dc1-4e17-a046-4adafc7cba4c)
+ Call ID: 778f9973-0dc1-4e17-a046-4adafc7cba4c
   Args:
-    type: :Woman
-    source: Beatrice_of_the_United_Kingdom
-  AddTriple (f1146a5b-6639-4790-9a88-5f9af1aa3b69)
- Call ID: f1146a5b-6639-4790-9a88-5f9af1aa3b69
-  Args:
-    relation: :hasAncestor
-    source: Gonzalo_of_Spain
-    target: Beatrice_of_the_United_Kingdom
-  AssignClass (e3d3cd39-3432-4e7d-9044-863aeaced72c)
- Call ID: e3d3cd39-3432-4e7d-9044-863aeaced72c
-  Args:
-    type: :Person
-    source: Maurice_of_Battenberg
-  AssignClass (ba7378ca-073f-4499-a936-d458a06486ea)
- Call ID: ba7378ca-073f-4499-a936-d458a06486ea
-  Args:
-    source: Maurice_of_Battenberg
-    type: :Man
-  AssignClass (1dfc5614-7376-4f71-8019-4e38cc4f5139)
- Call ID: 1dfc5614-7376-4f71-8019-4e38cc4f5139
-  Args:
-    source: Beatriz_of_Spain
-    type: :Person
-  AssignClass (e8b505f2-e6b1-4b5f-84b6-072a2375604b)
- Call ID: e8b505f2-e6b1-4b5f-84b6-072a2375604b
-  Args:
-    type: :Woman
-    source: Beatriz_of_Spain
-  AddTriple (f46e60d5-4c4f-4108-b4ee-ef8acebb18d4)
- Call ID: f46e60d5-4c4f-4108-b4ee-ef8acebb18d4
-  Args:
-    source: Gonzalo_of_Spain
-    target: Beatriz_of_Spain
     relation: :hasSister
-  AssignClass (23c104b0-a6f1-4872-8941-8fd70f1a66db)
- Call ID: 23c104b0-a6f1-4872-8941-8fd70f1a66db
-  Args:
-    type: :Person
-    source: Alfonso_of_Spain
-  AssignClass (175c1adf-3d14-4a9b-88bc-f8878f2039db)
- Call ID: 175c1adf-3d14-4a9b-88bc-f8878f2039db
-  Args:
-    source: Alfonso_of_Spain
-    type: :Man
-  AddTriple (2fad4d78-6d03-44cd-b5e9-80fc965074ee)
- Call ID: 2fad4d78-6d03-44cd-b5e9-80fc965074ee
+    source: :Gonzalo_of_Spain
+    target: :Beatriz_of_Spain
+  AddTriple (c0ffbfe5-582f-4a37-9ae2-908b4d833f63)
+ Call ID: c0ffbfe5-582f-4a37-9ae2-908b4d833f63
   Args:
     relation: :hasBrother
-    source: Gonzalo_of_Spain
-    target: Alfonso_of_Spain
-  Finish (7942915e-63ce-4e4c-9d37-14e37098cbc5)
- Call ID: 7942915e-63ce-4e4c-9d37-14e37098cbc5
+    source: :Gonzalo_of_Spain
+    target: :Alfonso_of_Spain
+  Finish (da6f08bd-d13a-4fca-b84c-29bd28831510)
+ Call ID: da6f08bd-d13a-4fca-b84c-29bd28831510
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -590,15 +660,13 @@ The final data graph after all the edits:
 
   data:Gonzalo_of_Spain a :Man,
           :Person ;
-      :hasAncestor data:Beatrice_of_the_United_Kingdom ;
       :hasBirthYear 1914 ;
       :hasBrother data:Alfonso_of_Spain ;
       :hasDeathYear 1934 ;
       :hasFather data:Alfonso_XIII_of_Spain ;
       :hasMother data:Victoria_Eugenie_of_Battenberg ;
-      :hasSex "Male"^^xsd:string ;
-      :hasSister data:Beatriz_of_Spain ;
-      :knownAs "Gonzalo Manuel Maria Bernardo Narciso Alfonso Mauricio de Borbón y Battenberg"^^xsd:string .
+      :hasParent data:Beatrice_of_the_United_Kingdom ;
+      :hasSister data:Beatriz_of_Spain .
 
   data:Maurice_of_Battenberg a :Man,
           :Person .
@@ -628,150 +696,86 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (660cb60c-0d79-4295-8e87-3649b0f55d14)
- Call ID: 660cb60c-0d79-4295-8e87-3649b0f55d14
+  ValidateShacl (dbe8f6bb-a251-4f80-b241-3e542641a245)
+ Call ID: dbe8f6bb-a251-4f80-b241-3e542641a245
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:17
+Total violations:9
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Sex'.
+      The node Alfonso_XIII_of_Spain assigned as the father of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(Alfonso_XIII_of_Spain, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Beatrice_of_the_United_Kingdom' for the property 'hasAncestor' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Ancestor'.
+      The node Victoria_Eugenie_of_Battenberg assigned as the mother of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Beatrice_of_the_United_Kingdom, :Ancestor)
+      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value 'Alfonso_XIII_of_Spain' for the property 'hasFather' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Ancestor'.
+      The node Beatrice_of_the_United_Kingdom assigned as the parent of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII_of_Spain, :Ancestor)
+      AssignClass(Beatrice_of_the_United_Kingdom, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Victoria_Eugenie_of_Battenberg' for the property 'hasMother' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Ancestor'.
+      The node Alfonso_XIII_of_Spain assigned as the father of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
+      AssignClass(Alfonso_XIII_of_Spain, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Sex'.
+      The node Victoria_Eugenie_of_Battenberg assigned as the mother of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Sex'.
+      The node Beatrice_of_the_United_Kingdom assigned as the parent of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
+      AssignClass(Beatrice_of_the_United_Kingdom, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Beatrice_of_the_United_Kingdom' for the property 'hasAncestor' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Ancestor'.
+      The node Alfonso_XIII_of_Spain assigned as the father of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Beatrice_of_the_United_Kingdom, :Ancestor)
+      AssignClass(Alfonso_XIII_of_Spain, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Alfonso_XIII_of_Spain' for the property 'hasFather' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Ancestor'.
+      The node Victoria_Eugenie_of_Battenberg assigned as the mother of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII_of_Spain, :Ancestor)
+      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value 'Victoria_Eugenie_of_Battenberg' for the property 'hasMother' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The value 'Beatrice_of_the_United_Kingdom' for the property 'hasAncestor' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Ancestor'.
+      The node Beatrice_of_the_United_Kingdom assigned as the parent of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Beatrice_of_the_United_Kingdom, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Alfonso_XIII_of_Spain' for the property 'hasFather' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII_of_Spain, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Victoria_Eugenie_of_Battenberg' for the property 'hasMother' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_of_Spain' is missing the required class assignment ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
 
 
 
@@ -780,54 +784,21 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (6a402324-2cba-42c3-a28a-920a87c60aea)
- Call ID: 6a402324-2cba-42c3-a28a-920a87c60aea
+  AssignClass (d8621e87-34c1-4707-8793-76c06a79b1e8)
+ Call ID: d8621e87-34c1-4707-8793-76c06a79b1e8
   Args:
-    type: :Sex
-    source: Male
-  AssignClass (34eecdb9-2da2-4917-8908-9ee440dc9582)
- Call ID: 34eecdb9-2da2-4917-8908-9ee440dc9582
+    source: :Alfonso_XIII_of_Spain
+    type: :Ancestor
+  AssignClass (e323f336-6e80-4294-b5f6-79a0a51400a8)
+ Call ID: e323f336-6e80-4294-b5f6-79a0a51400a8
+  Args:
+    source: :Victoria_Eugenie_of_Battenberg
+    type: :Ancestor
+  AssignClass (3ba9e1d0-74f9-4611-a2b9-3958629f0d0a)
+ Call ID: 3ba9e1d0-74f9-4611-a2b9-3958629f0d0a
   Args:
     type: :Ancestor
-    source: Beatrice_of_the_United_Kingdom
-  AssignClass (d30ca18d-1897-48f8-b6d3-1d32cc3d2937)
- Call ID: d30ca18d-1897-48f8-b6d3-1d32cc3d2937
-  Args:
-    type: :Ancestor
-    source: Alfonso_XIII_of_Spain
-  AssignClass (13845478-e219-4125-a444-b2a74cc72425)
- Call ID: 13845478-e219-4125-a444-b2a74cc72425
-  Args:
-    type: :Ancestor
-    source: Victoria_Eugenie_of_Battenberg
-  RemoveLiteral (c4cd12bf-0301-435c-a572-3068cbc07fcb)
- Call ID: c4cd12bf-0301-435c-a572-3068cbc07fcb
-  Args:
-    literal_value: Male
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Gonzalo_of_Spain
-  AddTriple (b13e9094-cb30-4ee7-86a6-2e0e871ba363)
- Call ID: b13e9094-cb30-4ee7-86a6-2e0e871ba363
-  Args:
-    relation: :hasSex
-    target: Male
-    source: Gonzalo_of_Spain
-  ValidateShacl (076df2b8-9d16-484b-9d36-e1df99172f97)
- Call ID: 076df2b8-9d16-484b-9d36-e1df99172f97
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Beatrice_of_the_United_Kingdom
 
 ================================= Tool Message =================================
 
@@ -846,15 +817,13 @@ The final data graph after all the edits:
 
   data:Gonzalo_of_Spain a :Man,
           :Person ;
-      :hasAncestor data:Beatrice_of_the_United_Kingdom ;
       :hasBirthYear 1914 ;
       :hasBrother data:Alfonso_of_Spain ;
       :hasDeathYear 1934 ;
       :hasFather data:Alfonso_XIII_of_Spain ;
       :hasMother data:Victoria_Eugenie_of_Battenberg ;
-      :hasSex data:Male ;
-      :hasSister data:Beatriz_of_Spain ;
-      :knownAs "Gonzalo Manuel Maria Bernardo Narciso Alfonso Mauricio de Borbón y Battenberg"^^xsd:string .
+      :hasParent data:Beatrice_of_the_United_Kingdom ;
+      :hasSister data:Beatriz_of_Spain .
 
   data:Maurice_of_Battenberg a :Man,
           :Person .
@@ -873,13 +842,19 @@ The final data graph after all the edits:
   data:Beatriz_of_Spain a :Person,
           :Woman .
 
-  data:Male a :Sex .
-
   data:Victoria_Eugenie_of_Battenberg a :Ancestor,
           :Person,
           :Woman .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (6d481fa0-9c6e-49be-99db-22121251aaf8)
+ Call ID: 6d481fa0-9c6e-49be-99db-22121251aaf8
+  Args:
 
 ================================= Tool Message =================================
 
@@ -889,6 +864,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (9c93ffe6-bee6-4176-9d88-4e973a3d96f3)
- Call ID: 9c93ffe6-bee6-4176-9d88-4e973a3d96f3
+  Finish (3be91bd0-0137-42d6-bf75-9ca4a0c6ca7b)
+ Call ID: 3be91bd0-0137-42d6-bf75-9ca4a0c6ca7b
   Args:

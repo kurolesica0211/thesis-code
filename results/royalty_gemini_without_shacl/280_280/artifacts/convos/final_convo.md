@@ -69,29 +69,52 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess María de las Mercedes of Bavaria, Infanta of Spain (3 October 1911 – 11 September 1953) was a German-Spanish princess.
-She was the third wife of Georgian Prince Irakli Bagration of Mukhrani.
-Through her father, Prince Ferdinand of Bavaria, she was a member of the Bavarian House of Wittelsbach.
-Through her mother, Infanta María Teresa of Spain, she was a granddaughter of Alfonso XII and niece of Alfonso XIII.
+Grand Duke Vladimir Kirillovich of Russia (Russian: Владимир Кириллович Романов; 30 August  1917 – 21 April 1992) was the Head of the Imperial Family of Russia, a position which he claimed from 1938 to his death in 1992.
 Early life
 
-Princess María de las Mercedes of Bavaria, Infanta of Spain, was born on 3 October 1911 at the Palace of the Cuesta de la Vega, Madrid, to Prince Ferdinand of Bavaria and Infanta María Teresa of Spain.
-Her parents were first cousins, both grandchildren of Isabella II of Spain.
-Prior to her birth, her uncle, King Alfonso XIII, declared that any children born of her parents' marriage would be Infantes or Infantas of Spain.
-She was christened María de las Mercedes Teresa María de la
-Her godparents were Infanta María de la Paz of Spain (her paternal grandmother) and Prince Adalbert of Bavaria (her paternal uncle, for whom Prince Carlos of Bourbon-Two Sicilies stood proxy).
-She had two elder brothers, Luis Alfonso (1906–1983) and José Eugenio (1909–1966), and one younger sister, María del Pilar (1912–1918).
-Marriage and issue
+Vladimir was born Prince Vladimir Kirillovich of Russia at Porvoo in the Grand Duchy of Finland, the only son of Grand Duke Cyril Vladimirovich and Grand Duchess Viktoria Feodorovna (née Princess Victoria Melita of Saxe-Coburg and Gotha).
+Vladimir's paternal grandparents were Grand Duke Vladimir Alexandrovich of Russia and Grand Duchess Maria Pavlovna (née Duchess Marie of Mecklenburg-Schwerin).
+His maternal grandparents were Alfred, Duke of Saxe-Coburg and Gotha (the second son and fourth child of Queen Victoria) and Grand Duchess Marie Alexandrovna of Russia.
+Vladimir's family had fled to Finland after the Russian Revolution of 1917.
+His family left Finland in 1920, moving to Coburg, Germany.
+On 8 August 1922 Vladimir's father declared himself Curator of the Russian throne.
+With his father's assumption of the Imperial title Vladimir was granted the title of Tsesarevich (heir apparent) and Grand Duke with the style of Imperial Highness.
+In the 1930s Vladimir lived for a period in England studying at the University of London and working at the Blackstone agricultural equipment factory in Lincolnshire.
+Russian heir and World War II
 
-On 29 August 1946, Infanta María de las Mercedes married Prince Irakli Bagration of Mukhrani at the Miramar Palace in San Sebastián.
-On the advice of Grand Duke Vladimir Kirillovich of Russia, Infante Juan, Count of Barcelona, head of the Spanish royal family in exile, recognised the union as dynastic.
-In 1948, Irakli's sister Leonida married Grand Duke Vladimir.
+On the death of his father on 12 October 1938, Vladimir assumed the Headship of the Imperial Family of Russia.
+In 1938 there were suggestions that he would be made regent of Ukraine but he rebuffed the idea, saying he would not help dissolve Russia.
+During World War II, Vladimir was living in Saint-Briac-sur-Mer in Brittany.
+On June 26, 1941, he issued this statement: "In this grave hour, when Germany and almost all the nations of Europe have declared a crusade against Communism and Bolshevism, which has enslaved and oppressed the people of Russia for twenty-four years, I turn to all the faithful and loyal sons of our Homeland with this appeal: Do what you can, to the best of your ability, to bring down the Bolshevik regime and to liberate our Homeland from the terrible yoke of Communism."
+In 1942, Vladimir and his entourage were placed in an internment camp at Compiègne after he refused to issue a manifesto calling on Russian émigrés to support Nazi Germany's war against the Soviet Union.
+Vladimir lived in a castle belonging to the husband of his elder sister Maria Kirillovna in Amorbach, Bavaria until 1945.
+After Germany's defeat, Vladimir's fear of being captured by the Soviets prompted relocation to Austria and next to the border of Liechtenstein.
+Vladimir's maternal aunt, Infanta Beatrice of Orléans-Borbon, secured for him a Spanish visa.
+Vladimir married Princess Leonida Georgievna Bagration-Moukhransky on 13 August 1948 in Lausanne.
+The family to which Princess Leonida belonged, the Bagrationi dynasty, had been kings in Georgia from the medieval era until the early 19th century, but no male line ancestor of hers had reigned as a king in Georgia since 1505 and her branch of the Bagrationis, the House of Mukhrani, had been naturalised among the non-ruling nobility of Russia after Georgia was annexed to the Russian Empire in 1801.
+Yet the royal status of the House of Bagrationi had been recognized by Russia in the 1783 Treaty of Georgievsk and was confirmed by Vladimir Kirillovich on 5 December 1946 as claimed head of the Russian imperial house.
+However the last ruling emperor of Imperial Russia Nicholas II had deemed marriage in this family of Princess Tatiana Constantinova in 1911, as morganatic.
+Some controversy therefore arises as to whether Vladimir's marriage to Leonida was equal or morganatic, and whether his claim to the Imperial throne validly passed to his daughter Maria, to some other dynast, or to no one upon his death.
+Following Vladimir's public designation of his daughter as "curatrix of the throne", in anticipation that she would eventually succeed him as head of the dynasty in exile, the heads of three of the other branches of the imperial family — the Princes Vsevolod Ioannovich (Konstantinovichi), Roman Petrovich (Nikolaevichi) and Andrei Alexandrovich (Mihailovichi) — wrote to Vladimir in 1969, asserting that the dynastic status of his daughter was no different from that of their own children (Vsevolod Ioannovich was childless, but Roman Petrovich had two sons by Countess Prascovia Sheremetyev, while Andrei Alexandrovich had two sons by Donna Elisabeth Ruffo of a Russian branch of the Princes di San Sant' Antimo) and that his wife was of no higher status than the wives of the other Romanov princes.
+On 23 December 1969 Vladimir issued a controversial decree whereby in the event he predeceased the living male Romanovs that he recognised as dynasts then his daughter Maria would become the "Curatrix of the Imperial Throne".
+This has been viewed as an attempt by Vladimir to ensure the succession remained in his branch of the imperial family, while the heads of the other branches declared that Vladimir's actions were illegal.
+Vladimir was able to visit Russia in November 1991 when he was invited to visit St Petersburg by its Mayor Anatoly Sobchak.
+Death and succession dispute
+
+Grand Duke Vladimir died while addressing a gathering of Spanish-speaking bankers and investors in Northern Trust Bank Miami in the United States on 21 April 1992.
+His body was returned to Russia and he was buried in the Peter and Paul Fortress in St. Petersburg, the first Romanov to be honoured in this way since before the revolution.
+As he was only a great-grandson of a recognized Russian emperor, his claimed title of "Grand Duke of Russia" caused problems as to what to put on his tombstone.
+After his death, his daughter Maria Vladimirovna assumed the headship of the Imperial Family of Russia according to his branch's interpretation of the Russian house laws.
+This was disputed by Nicholas Romanov, Prince of Russia who had been chosen president of the self-styled "Romanov Family Association" prior to the death of Grand Duke Vladimir.
+}} Media related to Vladimir Kirillovich Romanov at Wikimedia Commons
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -107,39 +130,9 @@ In 1948, Irakli's sister Leonida married Grand Duke Vladimir.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -154,6 +147,23 @@ In 1948, Irakli's sister Leonida married Grand Duke Vladimir.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -171,6 +181,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -238,29 +263,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,6 +286,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -281,6 +306,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -289,17 +316,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -327,6 +356,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -342,256 +455,574 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (caaaa92e-0d33-4bdd-af24-12e5c40cc413)
- Call ID: caaaa92e-0d33-4bdd-af24-12e5c40cc413
+  AssignClass (1c28818a-c1b1-42a1-a67c-72193a8a96bc)
+ Call ID: 1c28818a-c1b1-42a1-a67c-72193a8a96bc
   Args:
+    source: Vladimir_Kirillovich_of_Russia
+    type: :Man
+  AssignClass (cce5a203-844f-4854-bf41-b99335d9b142)
+ Call ID: cce5a203-844f-4854-bf41-b99335d9b142
+  Args:
+    source: Vladimir_Kirillovich_of_Russia
     type: :Person
-    source: Princess_Maria_de_las_Mercedes_of_Bavaria
-  AssignClass (0ca5a427-fa44-4180-a017-d0d88921f5b4)
- Call ID: 0ca5a427-fa44-4180-a017-d0d88921f5b4
+  AddLiteral (1fb5140c-4894-46f9-9170-efff7f7ddc08)
+ Call ID: 1fb5140c-4894-46f9-9170-efff7f7ddc08
   Args:
-    source: Princess_Maria_de_las_Mercedes_of_Bavaria
-    type: :Woman
-  AddLiteral (cc3e88bc-93f4-4447-9751-c7a8047de796)
- Call ID: cc3e88bc-93f4-4447-9751-c7a8047de796
-  Args:
-    source: Princess_Maria_de_las_Mercedes_of_Bavaria
-    literal_value: 1911
     literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (2b1b46a6-2fe7-40d3-a64f-c5d6846989a3)
- Call ID: 2b1b46a6-2fe7-40d3-a64f-c5d6846989a3
+    literal_value: 1917
+    source: Vladimir_Kirillovich_of_Russia
+  AddLiteral (3e453eba-77c0-4db8-bd27-f7308474dda3)
+ Call ID: 3e453eba-77c0-4db8-bd27-f7308474dda3
   Args:
-    source: Princess_Maria_de_las_Mercedes_of_Bavaria
     literal_type: xsd:integer
-    literal_value: 1953
     relation: :hasDeathYear
-  AssignClass (46ca3e74-9728-44bd-8429-8ca2145ab6c5)
- Call ID: 46ca3e74-9728-44bd-8429-8ca2145ab6c5
+    literal_value: 1992
+    source: Vladimir_Kirillovich_of_Russia
+  AssignClass (17029345-4c62-46cb-be44-a9539af1d4f5)
+ Call ID: 17029345-4c62-46cb-be44-a9539af1d4f5
   Args:
-    type: :Person
-    source: Prince_Irakli_Bagration_of_Mukhrani
-  AssignClass (d1b6a250-1c1d-41d1-b3dd-1abfb60e3353)
- Call ID: d1b6a250-1c1d-41d1-b3dd-1abfb60e3353
-  Args:
-    source: Prince_Irakli_Bagration_of_Mukhrani
+    source: Cyril_Vladimirovich
     type: :Man
-  AddLiteral (3852d625-f54e-4ebf-a143-23ec7c3cae47)
- Call ID: 3852d625-f54e-4ebf-a143-23ec7c3cae47
+  AssignClass (936c9f35-07f5-4a6d-ae4e-942923a9faed)
+ Call ID: 936c9f35-07f5-4a6d-ae4e-942923a9faed
   Args:
-    source: Princess_Maria_de_las_Mercedes_of_Bavaria
-    literal_type: xsd:integer
-    literal_value: 1946
-    relation: :hasMarriageYear
-  AddTriple (78cee746-8009-4195-8609-68da572fc92b)
- Call ID: 78cee746-8009-4195-8609-68da572fc92b
-  Args:
-    target: Prince_Irakli_Bagration_of_Mukhrani
-    relation: :hasRelation
-    source: Princess_Maria_de_las_Mercedes_of_Bavaria
-  AssignClass (7873ccdb-afc6-46a7-8277-bf5efaefcf77)
- Call ID: 7873ccdb-afc6-46a7-8277-bf5efaefcf77
-  Args:
-    source: Prince_Ferdinand_of_Bavaria
+    source: Cyril_Vladimirovich
     type: :Person
-  AssignClass (98274011-5a6c-46fd-a32a-ebf8efa1b3cb)
- Call ID: 98274011-5a6c-46fd-a32a-ebf8efa1b3cb
+  AssignClass (34536353-6eea-43c6-bc35-558424e8bb3e)
+ Call ID: 34536353-6eea-43c6-bc35-558424e8bb3e
   Args:
-    type: :Man
-    source: Prince_Ferdinand_of_Bavaria
-  AssignClass (a087c52e-4e91-4cd0-bb7b-547ab85ac5c6)
- Call ID: a087c52e-4e91-4cd0-bb7b-547ab85ac5c6
-  Args:
-    type: :Person
-    source: Infanta_Maria_Teresa_of_Spain
-  AssignClass (27910231-ada6-4a2f-8117-81dfb5b2cbaa)
- Call ID: 27910231-ada6-4a2f-8117-81dfb5b2cbaa
-  Args:
-    source: Infanta_Maria_Teresa_of_Spain
+    source: Viktoria_Feodorovna
     type: :Woman
-  AddTriple (806b5e6a-a020-4392-9798-1896f2bb5eb7)
- Call ID: 806b5e6a-a020-4392-9798-1896f2bb5eb7
+  AssignClass (b059d7f4-06bf-4b42-84f8-62af8a35c085)
+ Call ID: b059d7f4-06bf-4b42-84f8-62af8a35c085
   Args:
-    source: Princess_Maria_de_las_Mercedes_of_Bavaria
+    source: Viktoria_Feodorovna
+    type: :Person
+  AddTriple (a452b530-addd-4f56-888e-a4ecccbe000d)
+ Call ID: a452b530-addd-4f56-888e-a4ecccbe000d
+  Args:
+    source: Vladimir_Kirillovich_of_Russia
     relation: :hasFather
-    target: Prince_Ferdinand_of_Bavaria
-  AddTriple (0fec400d-4a8a-4f99-96f5-4e517f7e7903)
- Call ID: 0fec400d-4a8a-4f99-96f5-4e517f7e7903
+    target: Cyril_Vladimirovich
+  AddTriple (7d55d7e7-ec3e-4d99-a7f6-316c59b60c70)
+ Call ID: 7d55d7e7-ec3e-4d99-a7f6-316c59b60c70
   Args:
-    source: Princess_Maria_de_las_Mercedes_of_Bavaria
+    target: Viktoria_Feodorovna
     relation: :hasMother
-    target: Infanta_Maria_Teresa_of_Spain
-  AssignClass (95f2fe61-db4b-46da-9104-1ccbd6c1a4a9)
- Call ID: 95f2fe61-db4b-46da-9104-1ccbd6c1a4a9
+    source: Vladimir_Kirillovich_of_Russia
+  AssignClass (4841c063-154f-4c43-8a07-95f47bacd58f)
+ Call ID: 4841c063-154f-4c43-8a07-95f47bacd58f
   Args:
-    type: :Person
-    source: Luis_Alfonso
-  AssignClass (0758cea7-9c4c-4d59-abc7-68d538df44a1)
- Call ID: 0758cea7-9c4c-4d59-abc7-68d538df44a1
-  Args:
+    source: Vladimir_Alexandrovich_of_Russia
     type: :Man
-    source: Luis_Alfonso
-  AssignClass (1ed9ccc2-66bc-434e-9d32-d19fc21924b8)
- Call ID: 1ed9ccc2-66bc-434e-9d32-d19fc21924b8
+  AssignClass (53a8d78b-9ce0-4fa0-960c-0ceeef831d12)
+ Call ID: 53a8d78b-9ce0-4fa0-960c-0ceeef831d12
   Args:
-    source: Jose_Eugenio
+    source: Vladimir_Alexandrovich_of_Russia
     type: :Person
-  AssignClass (5a17aa4b-0bfe-4a06-a28e-3115a9426faa)
- Call ID: 5a17aa4b-0bfe-4a06-a28e-3115a9426faa
+  AssignClass (5c325619-73cf-4894-bab8-95d1aa45f0f4)
+ Call ID: 5c325619-73cf-4894-bab8-95d1aa45f0f4
   Args:
-    type: :Man
-    source: Jose_Eugenio
-  AssignClass (5ce48f11-d409-4b80-826d-f9cdbc956284)
- Call ID: 5ce48f11-d409-4b80-826d-f9cdbc956284
-  Args:
-    type: :Person
-    source: Maria_del_Pilar
-  AssignClass (345f1869-b628-4b77-bab6-c416406d93e5)
- Call ID: 345f1869-b628-4b77-bab6-c416406d93e5
-  Args:
-    source: Maria_del_Pilar
+    source: Maria_Pavlovna
     type: :Woman
-  AddTriple (a1e2accd-3f27-41ac-9a94-19704f369c56)
- Call ID: a1e2accd-3f27-41ac-9a94-19704f369c56
+  AssignClass (1ae21e1f-717f-440e-ba85-d890fa9242ba)
+ Call ID: 1ae21e1f-717f-440e-ba85-d890fa9242ba
   Args:
-    source: Princess_Maria_de_las_Mercedes_of_Bavaria
-    relation: :hasBrother
-    target: Luis_Alfonso
-  AddTriple (969cec28-faa9-4870-98fb-25cc3efc36a2)
- Call ID: 969cec28-faa9-4870-98fb-25cc3efc36a2
+    source: Maria_Pavlovna
+    type: :Person
+  AddTriple (c1dae797-701b-4064-b014-daf3b23a4cb0)
+ Call ID: c1dae797-701b-4064-b014-daf3b23a4cb0
   Args:
-    relation: :hasBrother
-    target: Jose_Eugenio
-    source: Princess_Maria_de_las_Mercedes_of_Bavaria
-  AddTriple (5f01c2bf-b809-4f02-a77d-caf77041488f)
- Call ID: 5f01c2bf-b809-4f02-a77d-caf77041488f
+    target: Vladimir_Alexandrovich_of_Russia
+    relation: :hasFather
+    source: Cyril_Vladimirovich
+  AddTriple (66d8ab96-121b-4148-8edf-767d472f0782)
+ Call ID: 66d8ab96-121b-4148-8edf-767d472f0782
   Args:
+    relation: :hasMother
+    target: Maria_Pavlovna
+    source: Cyril_Vladimirovich
+  AssignClass (01ee3b74-f9af-40de-a2f5-49b9310a9d16)
+ Call ID: 01ee3b74-f9af-40de-a2f5-49b9310a9d16
+  Args:
+    source: Alfred_Duke_of_Saxe-Coburg_and_Gotha
+    type: :Man
+  AssignClass (9ba9fdf2-f0d2-43b5-8736-81edd50e4950)
+ Call ID: 9ba9fdf2-f0d2-43b5-8736-81edd50e4950
+  Args:
+    source: Alfred_Duke_of_Saxe-Coburg_and_Gotha
+    type: :Person
+  AssignClass (09356ac1-af90-440d-b3e5-eecaa1981035)
+ Call ID: 09356ac1-af90-440d-b3e5-eecaa1981035
+  Args:
+    source: Marie_Alexandrovna_of_Russia
+    type: :Woman
+  AssignClass (c9394418-a277-4831-b997-a30fd9b245c9)
+ Call ID: c9394418-a277-4831-b997-a30fd9b245c9
+  Args:
+    source: Marie_Alexandrovna_of_Russia
+    type: :Person
+  AddTriple (5ce09079-838e-4a13-8e37-a7e8f4ec05a8)
+ Call ID: 5ce09079-838e-4a13-8e37-a7e8f4ec05a8
+  Args:
+    source: Viktoria_Feodorovna
+    target: Alfred_Duke_of_Saxe-Coburg_and_Gotha
+    relation: :hasFather
+  AddTriple (a89b5987-b5b6-4803-806c-7d4041a07f29)
+ Call ID: a89b5987-b5b6-4803-806c-7d4041a07f29
+  Args:
+    source: Viktoria_Feodorovna
+    relation: :hasMother
+    target: Marie_Alexandrovna_of_Russia
+  AssignClass (a6975496-4d12-4104-9b78-29126211f5da)
+ Call ID: a6975496-4d12-4104-9b78-29126211f5da
+  Args:
+    source: Queen_Victoria
+    type: :Woman
+  AssignClass (446761db-34aa-4c8b-922e-be3a152d998f)
+ Call ID: 446761db-34aa-4c8b-922e-be3a152d998f
+  Args:
+    source: Queen_Victoria
+    type: :Person
+  AddTriple (65e8567b-692c-408d-a498-400bdbc065d1)
+ Call ID: 65e8567b-692c-408d-a498-400bdbc065d1
+  Args:
+    relation: :hasMother
+    target: Queen_Victoria
+    source: Alfred_Duke_of_Saxe-Coburg_and_Gotha
+  AssignClass (611aa2d3-1c1a-45fb-8874-5980acdc5e22)
+ Call ID: 611aa2d3-1c1a-45fb-8874-5980acdc5e22
+  Args:
+    source: Maria_Kirillovna
+    type: :Woman
+  AssignClass (ab0ca63b-6de1-4472-96ef-1a0af69820f1)
+ Call ID: ab0ca63b-6de1-4472-96ef-1a0af69820f1
+  Args:
+    source: Maria_Kirillovna
+    type: :Person
+  AddTriple (6eca7af4-770a-438a-925c-a73f1e6c1f09)
+ Call ID: 6eca7af4-770a-438a-925c-a73f1e6c1f09
+  Args:
+    target: Maria_Kirillovna
     relation: :hasSister
-    target: Maria_del_Pilar
-    source: Princess_Maria_de_las_Mercedes_of_Bavaria
-  AssignClass (e5508d73-a591-45b6-9287-1d344e675c69)
- Call ID: e5508d73-a591-45b6-9287-1d344e675c69
+    source: Vladimir_Kirillovich_of_Russia
+  AssignClass (3fdbed61-9c4e-4a3b-8738-1926f1b180a3)
+ Call ID: 3fdbed61-9c4e-4a3b-8738-1926f1b180a3
   Args:
-    source: Alfonso_XII
-    type: :Person
-  AssignClass (7ae7bc61-6738-4771-97ad-1f17d24fd70e)
- Call ID: 7ae7bc61-6738-4771-97ad-1f17d24fd70e
-  Args:
-    type: :Man
-    source: Alfonso_XII
-  AddTriple (e9ecafb6-23a9-4cc3-a8d9-f8dfcc22523b)
- Call ID: e9ecafb6-23a9-4cc3-a8d9-f8dfcc22523b
-  Args:
-    target: Alfonso_XII
-    relation: :hasAncestor
-    source: Infanta_Maria_Teresa_of_Spain
-  AssignClass (683359d8-008f-450e-988e-6c1b310e889e)
- Call ID: 683359d8-008f-450e-988e-6c1b310e889e
-  Args:
-    type: :Person
-    source: Alfonso_XIII
-  AssignClass (7748f309-cb2d-4539-812b-e6fe386f4f60)
- Call ID: 7748f309-cb2d-4539-812b-e6fe386f4f60
-  Args:
-    type: :Man
-    source: Alfonso_XIII
-  AssignClass (e43d50c0-131f-4c64-8bde-3e405a7be4d5)
- Call ID: e43d50c0-131f-4c64-8bde-3e405a7be4d5
-  Args:
-    type: :Person
-    source: Isabella_II_of_Spain
-  AssignClass (aa0eaa06-61b7-499b-81bc-67a8018b6d87)
- Call ID: aa0eaa06-61b7-499b-81bc-67a8018b6d87
-  Args:
-    source: Isabella_II_of_Spain
+    source: Leonida_Georgievna_Bagration-Moukhransky
     type: :Woman
-  AddTriple (9a649860-ac37-4fb1-af1e-f81c77fb9445)
- Call ID: 9a649860-ac37-4fb1-af1e-f81c77fb9445
+  AssignClass (c822c404-8396-473a-84ce-1c63da01705b)
+ Call ID: c822c404-8396-473a-84ce-1c63da01705b
   Args:
-    source: Prince_Ferdinand_of_Bavaria
-    relation: :hasAncestor
-    target: Isabella_II_of_Spain
-  AddTriple (19681c03-dce3-49fa-9660-f1916430bd57)
- Call ID: 19681c03-dce3-49fa-9660-f1916430bd57
-  Args:
-    source: Infanta_Maria_Teresa_of_Spain
-    target: Isabella_II_of_Spain
-    relation: :hasAncestor
-  AssignClass (cc4316a0-6ac1-404f-a101-e0d52fc869e6)
- Call ID: cc4316a0-6ac1-404f-a101-e0d52fc869e6
-  Args:
-    source: Infanta_Maria_de_la_Paz_of_Spain
+    source: Leonida_Georgievna_Bagration-Moukhransky
     type: :Person
-  AssignClass (e9629708-4980-4d7c-9c24-ce9961cc239a)
- Call ID: e9629708-4980-4d7c-9c24-ce9961cc239a
+  AddTriple (ebaa1d78-2c99-40ea-be33-1afe1d35c172)
+ Call ID: ebaa1d78-2c99-40ea-be33-1afe1d35c172
   Args:
-    type: :Woman
-    source: Infanta_Maria_de_la_Paz_of_Spain
-  AddTriple (802724ef-6a45-44a4-a819-cce62c950660)
- Call ID: 802724ef-6a45-44a4-a819-cce62c950660
-  Args:
-    source: Prince_Ferdinand_of_Bavaria
-    target: Infanta_Maria_de_la_Paz_of_Spain
-    relation: :hasMother
-  AssignClass (c7b0d4de-35dc-4eae-bd41-88c548640dd9)
- Call ID: c7b0d4de-35dc-4eae-bd41-88c548640dd9
-  Args:
-    source: Prince_Adalbert_of_Bavaria
-    type: :Person
-  AssignClass (748766f8-8b21-49ce-b2b5-b671633b1b24)
- Call ID: 748766f8-8b21-49ce-b2b5-b671633b1b24
-  Args:
-    source: Prince_Adalbert_of_Bavaria
-    type: :Man
-  AssignClass (a3595a9b-b9c2-41df-8f05-a2b8a906adca)
- Call ID: a3595a9b-b9c2-41df-8f05-a2b8a906adca
-  Args:
-    type: :Person
-    source: Prince_Carlos_of_Bourbon_Two_Sicilies
-  AssignClass (686f2e46-e409-4054-a723-ff2cdfae92af)
- Call ID: 686f2e46-e409-4054-a723-ff2cdfae92af
-  Args:
-    type: :Man
-    source: Prince_Carlos_of_Bourbon_Two_Sicilies
-  AssignClass (db855722-e018-4c2a-b3b4-ed05a057b768)
- Call ID: db855722-e018-4c2a-b3b4-ed05a057b768
-  Args:
-    source: Leonida
-    type: :Person
-  AssignClass (dc58b30d-0d9d-49f9-aec2-e1df98e3ced2)
- Call ID: dc58b30d-0d9d-49f9-aec2-e1df98e3ced2
-  Args:
-    source: Leonida_of_Mukhrani
-    type: :Woman
-  AssignClass (1b1428b1-ff98-425d-98e5-d320f11722c6)
- Call ID: 1b1428b1-ff98-425d-98e5-d320f11722c6
-  Args:
-    source: Grand_Duke_Vladimir_Kirillovich_of_Russia
-    type: :Person
-  AssignClass (0581d418-b5b0-4e30-867e-48742b2abe44)
- Call ID: 0581d418-b5b0-4e30-867e-48742b2abe44
-  Args:
-    type: :Man
-    source: Grand_Duke_Vladimir_Kirillovich_of_Russia
-  AddTriple (45320540-acf8-4894-963c-66d9324859e1)
- Call ID: 45320540-acf8-4894-963c-66d9324859e1
-  Args:
-    target: Prince_Irakli_Bagration_of_Mukhrani
-    relation: :hasBrother
-    source: Leonida_of_Mukhrani
-  AddLiteral (873ef26f-e9f7-422a-b50d-bd4301af9c7d)
- Call ID: 873ef26f-e9f7-422a-b50d-bd4301af9c7d
-  Args:
-    source: Leonida_of_Mukhrani
-    literal_value: 1948
-    literal_type: xsd:integer
+    target: 1948
     relation: :hasMarriageYear
-  AddTriple (571d26b1-87e0-4034-90db-a8cf2733bb53)
- Call ID: 571d26b1-87e0-4034-90db-a8cf2733bb53
+    source: Vladimir_Kirillovich_of_Russia
+  AddTriple (dc9121b1-a7aa-4888-ac06-4c7145c663bb)
+ Call ID: dc9121b1-a7aa-4888-ac06-4c7145c663bb
   Args:
+    source: Vladimir_Kirillovich_of_Russia
+    target: Leonida_Georgievna_Bagration-Moukhransky
     relation: :hasRelation
-    target: Grand_Duke_Vladimir_Kirillovich_of_Russia
-    source: Leonida_of_Mukhrani
-  Finish (4920936c-8683-416c-88a3-7a31dd4161ac)
- Call ID: 4920936c-8683-416c-88a3-7a31dd4161ac
+  AssignClass (36546522-51ad-4b88-93a3-27a833e29558)
+ Call ID: 36546522-51ad-4b88-93a3-27a833e29558
+  Args:
+    source: Maria_Vladimirovna
+    type: :Woman
+  AssignClass (61d6ff79-696d-4cdf-aaff-4a6aa79a9d01)
+ Call ID: 61d6ff79-696d-4cdf-aaff-4a6aa79a9d01
+  Args:
+    source: Maria_Vladimirovna
+    type: :Person
+  AddTriple (fc8c0bd5-5632-4095-be76-5567113d0ac1)
+ Call ID: fc8c0bd5-5632-4095-be76-5567113d0ac1
+  Args:
+    target: Vladimir_Kirillovich_of_Russia
+    relation: :hasFather
+    source: Maria_Vladimirovna
+  AddTriple (1398bb5c-290e-4c6b-a9f8-c907b6c393a8)
+ Call ID: 1398bb5c-290e-4c6b-a9f8-c907b6c393a8
+  Args:
+    source: Maria_Vladimirovna
+    target: Leonida_Georgievna_Bagration-Moukhransky
+    relation: :hasMother
+  AssignClass (8cd2b36a-c058-4309-aec2-bc5686e3d03d)
+ Call ID: 8cd2b36a-c058-4309-aec2-bc5686e3d03d
+  Args:
+    source: Beatrice_of_Orleans-Borbon
+    type: :Woman
+  AssignClass (0241a7e2-b3e9-4292-a088-595e001f1fde)
+ Call ID: 0241a7e2-b3e9-4292-a088-595e001f1fde
+  Args:
+    source: Beatrice_of_Orleans-Borbon
+    type: :Person
+  AddTriple (3ba63f85-4ae7-477a-b19a-2e1e5bc6c0ca)
+ Call ID: 3ba63f85-4ae7-477a-b19a-2e1e5bc6c0ca
+  Args:
+    source: Beatrice_of_Orleans-Borbon
+    target: Marie_Alexandrovna_of_Russia
+    relation: :hasMother
+  Finish (ba24545f-e39d-4690-b8bd-ba6775e3fda2)
+ Call ID: ba24545f-e39d-4690-b8bd-ba6775e3fda2
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Beatrice_of_Orleans-Borbon a :Person,
+          :Woman ;
+      :hasMother data:Marie_Alexandrovna_of_Russia .
+
+  data:Maria_Vladimirovna a :Person,
+          :Woman ;
+      :hasFather data:Vladimir_Kirillovich_of_Russia ;
+      :hasMother data:Leonida_Georgievna_Bagration-Moukhransky .
+
+  data:Alfred_Duke_of_Saxe-Coburg_and_Gotha a :Man,
+          :Person ;
+      :hasMother data:Queen_Victoria .
+
+  data:Cyril_Vladimirovich a :Man,
+          :Person ;
+      :hasFather data:Vladimir_Alexandrovich_of_Russia ;
+      :hasMother data:Maria_Pavlovna .
+
+  data:Maria_Kirillovna a :Person,
+          :Woman .
+
+  data:Maria_Pavlovna a :Person,
+          :Woman .
+
+  data:Queen_Victoria a :Person,
+          :Woman .
+
+  data:Viktoria_Feodorovna a :Person,
+          :Woman ;
+      :hasFather data:Alfred_Duke_of_Saxe-Coburg_and_Gotha ;
+      :hasMother data:Marie_Alexandrovna_of_Russia .
+
+  data:Vladimir_Alexandrovich_of_Russia a :Man,
+          :Person .
+
+  data:Vladimir_Kirillovich_of_Russia a :Man,
+          :Person ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1992 ;
+      :hasFather data:Cyril_Vladimirovich ;
+      :hasMarriageYear data:1948 ;
+      :hasMother data:Viktoria_Feodorovna ;
+      :hasRelation data:Leonida_Georgievna_Bagration-Moukhransky ;
+      :hasSister data:Maria_Kirillovna .
+
+  data:Leonida_Georgievna_Bagration-Moukhransky a :Person,
+          :Woman .
+
+  data:Marie_Alexandrovna_of_Russia a :Person,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['1948']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveLiteral (e7709f95-814c-4d16-b0ad-5e0b03fbe447)
+ Call ID: e7709f95-814c-4d16-b0ad-5e0b03fbe447
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Vladimir_Kirillovich_of_Russia
+    literal_value: 1948
+  AddLiteral (9575674e-bfd0-44a2-ae64-a96fa2202ba5)
+ Call ID: 9575674e-bfd0-44a2-ae64-a96fa2202ba5
+  Args:
+    literal_value: 1948
+    source: Vladimir_Kirillovich_of_Russia
+    literal_type: xsd:string
+    relation: :hasMarriageYear
+  Finish (ad34baec-3e48-4f6c-b505-cb4dd27b691b)
+ Call ID: ad34baec-3e48-4f6c-b505-cb4dd27b691b
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Beatrice_of_Orleans-Borbon a :Person,
+          :Woman ;
+      :hasMother data:Marie_Alexandrovna_of_Russia .
+
+  data:Maria_Vladimirovna a :Person,
+          :Woman ;
+      :hasFather data:Vladimir_Kirillovich_of_Russia ;
+      :hasMother data:Leonida_Georgievna_Bagration-Moukhransky .
+
+  data:Alfred_Duke_of_Saxe-Coburg_and_Gotha a :Man,
+          :Person ;
+      :hasMother data:Queen_Victoria .
+
+  data:Cyril_Vladimirovich a :Man,
+          :Person ;
+      :hasFather data:Vladimir_Alexandrovich_of_Russia ;
+      :hasMother data:Maria_Pavlovna .
+
+  data:Maria_Kirillovna a :Person,
+          :Woman .
+
+  data:Maria_Pavlovna a :Person,
+          :Woman .
+
+  data:Queen_Victoria a :Person,
+          :Woman .
+
+  data:Viktoria_Feodorovna a :Person,
+          :Woman ;
+      :hasFather data:Alfred_Duke_of_Saxe-Coburg_and_Gotha ;
+      :hasMother data:Marie_Alexandrovna_of_Russia .
+
+  data:Vladimir_Alexandrovich_of_Russia a :Man,
+          :Person .
+
+  data:Vladimir_Kirillovich_of_Russia a :Man,
+          :Person ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1992 ;
+      :hasFather data:Cyril_Vladimirovich ;
+      :hasMarriageYear data:1948,
+          "1948"^^xsd:string ;
+      :hasMother data:Viktoria_Feodorovna ;
+      :hasRelation data:Leonida_Georgievna_Bagration-Moukhransky ;
+      :hasSister data:Maria_Kirillovna .
+
+  data:Leonida_Georgievna_Bagration-Moukhransky a :Person,
+          :Woman .
+
+  data:Marie_Alexandrovna_of_Russia a :Person,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['1948']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (7036a006-9e5d-430f-af82-7cd13bf7d7dc)
+ Call ID: 7036a006-9e5d-430f-af82-7cd13bf7d7dc
+  Args:
+    relation: :hasMarriageYear
+    source: Vladimir_Kirillovich_of_Russia
+    target: 1948
+  AddLiteral (42eb1a86-90da-40c3-9361-e86d4fba3966)
+ Call ID: 42eb1a86-90da-40c3-9361-e86d4fba3966
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1948
+    source: Vladimir_Kirillovich_of_Russia
+    relation: :hasMarriageYear
+  Finish (4cb430f1-d058-4141-b373-c041103e01fa)
+ Call ID: 4cb430f1-d058-4141-b373-c041103e01fa
   Args:

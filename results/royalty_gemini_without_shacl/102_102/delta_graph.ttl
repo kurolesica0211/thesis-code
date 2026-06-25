@@ -2,11 +2,14 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth a :Man,
-        :Person .
+data:Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille a :Person,
+        :Woman ;
+    :hasRelation data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard .
 
-data:Count_Michael_of_Ahlefeldt-Laurvig-Bille a :Man,
-        :Person .
+data:Prince_Gustav a :Man,
+        :Person ;
+    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte_of_Denmark .
 
 data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
         :Woman ;
@@ -15,18 +18,26 @@ data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
     :hasMarriageYear 1998,
         2019 ;
     :hasMother data:Princess_Benedikte_of_Denmark ;
-    :isSiblingOf data:Prince_Gustav,
-        data:Princess_Nathalie .
+    :hasRelation data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth,
+        data:Count_Michael_of_Ahlefeldt-Laurvig-Bille .
 
-data:Prince_Gustav a :Man,
+data:Princess_Nathalie a :Person,
+        :Woman ;
+    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte_of_Denmark .
+
+data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth a :Man,
+        :Person .
+
+data:Count_Michael_of_Ahlefeldt-Laurvig-Bille a :Man,
+        :Person .
+
+data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard a :Man,
         :Person .
 
 data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Man,
         :Person .
 
 data:Princess_Benedikte_of_Denmark a :Person,
-        :Woman .
-
-data:Princess_Nathalie a :Person,
         :Woman .
 

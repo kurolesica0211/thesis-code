@@ -30,7 +30,7 @@ The SHACL validation process has identified the following violations in the curr
 ---
 ### Violations:
 VALIDATION RESULTS
-Total violations:15
+Total violations:16
 Violations:
 
   Violation [1]:
@@ -202,16 +202,16 @@ Violations:
   Violation [3]:
     Severity: Violation
     Focus node: King_Juan_Carlos_I_of_Spain
-    Path: hasMother
-    Value: Princess_Maria_de_las_Mercedes
+    Path: hasFather
+    Value: Infante_Juan_Count_of_Barcelona
     Constraint: ClassConstraintComponent
     Source shape:
-      :Person-hasMother a sh:PropertyShape ;
+      :Person-hasFather a sh:PropertyShape ;
           sh:class :Ancestor,
-              :Woman ;
+              :Man ;
           sh:maxCount 1 ;
-          sh:path :hasMother .
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -243,15 +243,14 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :hasMother a owl:FunctionalProperty,
+      :hasFather a owl:FunctionalProperty,
               owl:ObjectProperty ;
           rdfs:domain :Person ;
           rdfs:range :Ancestor,
-              :Woman ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf ;
-          owl:inverseOf :isMotherOf .
-    Classes assigned to the value node: [':Woman', ':Person']
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
+    Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
         :Man a owl:Class ;
@@ -364,9 +363,9 @@ Violations:
 
   Violation [5]:
     Severity: Violation
-    Focus node: King_Juan_Carlos_I_of_Spain
+    Focus node: Prince_Pedro_Gastao_of_Orleans-Braganza
     Path: hasFather
-    Value: Infante_Juan_Count_of_Barcelona
+    Value: Prince_Pedro_de_Alcantara_of_Orleans-Braganza
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -447,9 +446,9 @@ Violations:
 
   Violation [6]:
     Severity: Violation
-    Focus node: Prince_Pedro_Gastao_of_Orleans-Braganza
+    Focus node: Princess_Louise_of_Orleans
     Path: hasFather
-    Value: Prince_Pedro_de_Alcantara_of_Orleans-Braganza
+    Value: Philippe_Count_of_Paris
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -458,16 +457,14 @@ Violations:
           sh:maxCount 1 ;
           sh:path :hasFather .
     SHACL message: Value class is not in classes (:Ancestor, :Man)
-    Classes assigned to the focus node: [':Man', ':Person']
+    Classes assigned to the focus node: [':Woman', ':Person']
     Definitions of the classes assigned to the focus node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
+      Class :Woman:
+        :Woman a owl:Class ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
+                                owl:someValuesFrom :Female ] ) ] .
       Class :Person:
         :Person a owl:Class ;
             rdfs:subClassOf [ a owl:Restriction ;
@@ -498,14 +495,12 @@ Violations:
           owl:inverseOf :isFatherOf .
     Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
+      Class :Woman:
+        :Woman a owl:Class ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
+                                owl:someValuesFrom :Female ] ) ] .
       Class :Person:
         :Person a owl:Class ;
             rdfs:subClassOf [ a owl:Restriction ;
@@ -611,16 +606,16 @@ Violations:
   Violation [8]:
     Severity: Violation
     Focus node: King_Juan_Carlos_I_of_Spain
-    Path: hasMother
-    Value: Princess_Maria_de_las_Mercedes
+    Path: hasFather
+    Value: Infante_Juan_Count_of_Barcelona
     Constraint: ClassConstraintComponent
     Source shape:
-      :Person-hasMother a sh:PropertyShape ;
+      :Person-hasFather a sh:PropertyShape ;
           sh:class :Ancestor,
-              :Woman ;
+              :Man ;
           sh:maxCount 1 ;
-          sh:path :hasMother .
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -652,15 +647,14 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :hasMother a owl:FunctionalProperty,
+      :hasFather a owl:FunctionalProperty,
               owl:ObjectProperty ;
           rdfs:domain :Person ;
           rdfs:range :Ancestor,
-              :Woman ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf ;
-          owl:inverseOf :isMotherOf .
-    Classes assigned to the value node: [':Woman', ':Person']
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
+    Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
         :Man a owl:Class ;
@@ -773,9 +767,9 @@ Violations:
 
   Violation [10]:
     Severity: Violation
-    Focus node: King_Juan_Carlos_I_of_Spain
+    Focus node: Prince_Pedro_Gastao_of_Orleans-Braganza
     Path: hasFather
-    Value: Infante_Juan_Count_of_Barcelona
+    Value: Prince_Pedro_de_Alcantara_of_Orleans-Braganza
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -856,9 +850,9 @@ Violations:
 
   Violation [11]:
     Severity: Violation
-    Focus node: Prince_Pedro_Gastao_of_Orleans-Braganza
+    Focus node: Princess_Louise_of_Orleans
     Path: hasFather
-    Value: Prince_Pedro_de_Alcantara_of_Orleans-Braganza
+    Value: Philippe_Count_of_Paris
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -867,16 +861,14 @@ Violations:
           sh:maxCount 1 ;
           sh:path :hasFather .
     SHACL message: Value class is not in classes (:Ancestor, :Man)
-    Classes assigned to the focus node: [':Man', ':Person']
+    Classes assigned to the focus node: [':Woman', ':Person']
     Definitions of the classes assigned to the focus node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
+      Class :Woman:
+        :Woman a owl:Class ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
+                                owl:someValuesFrom :Female ] ) ] .
       Class :Person:
         :Person a owl:Class ;
             rdfs:subClassOf [ a owl:Restriction ;
@@ -907,14 +899,12 @@ Violations:
           owl:inverseOf :isFatherOf .
     Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
+      Class :Woman:
+        :Woman a owl:Class ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
+                                owl:someValuesFrom :Female ] ) ] .
       Class :Person:
         :Person a owl:Class ;
             rdfs:subClassOf [ a owl:Restriction ;
@@ -1019,27 +1009,25 @@ Violations:
 
   Violation [13]:
     Severity: Violation
-    Focus node: King_Juan_Carlos_I_of_Spain
-    Path: hasMother
-    Value: Princess_Maria_de_las_Mercedes
+    Focus node: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
+    Path: hasFather
+    Value: Prince_Carlos_of_Bourbon-Two_Sicilies
     Constraint: ClassConstraintComponent
     Source shape:
-      :Person-hasMother a sh:PropertyShape ;
+      :Person-hasFather a sh:PropertyShape ;
           sh:class :Ancestor,
-              :Woman ;
+              :Man ;
           sh:maxCount 1 ;
-          sh:path :hasMother .
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    Classes assigned to the focus node: [':Man', ':Person']
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    Classes assigned to the focus node: [':Woman', ':Person']
     Definitions of the classes assigned to the focus node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
+      Class :Woman:
+        :Woman a owl:Class ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
+                                owl:someValuesFrom :Female ] ) ] .
       Class :Person:
         :Person a owl:Class ;
             rdfs:subClassOf [ a owl:Restriction ;
@@ -1061,24 +1049,21 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :hasMother a owl:FunctionalProperty,
+      :hasFather a owl:FunctionalProperty,
               owl:ObjectProperty ;
           rdfs:domain :Person ;
           rdfs:range :Ancestor,
-              :Woman ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf ;
-          owl:inverseOf :isMotherOf .
-    Classes assigned to the value node: [':Woman', ':Person']
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
+    Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
+      Class :Woman:
+        :Woman a owl:Class ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
+                                owl:someValuesFrom :Female ] ) ] .
       Class :Person:
         :Person a owl:Class ;
             rdfs:subClassOf [ a owl:Restriction ;
@@ -1103,9 +1088,9 @@ Violations:
 
   Violation [14]:
     Severity: Violation
-    Focus node: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
+    Focus node: Princess_Louise_of_Orleans
     Path: hasFather
-    Value: Prince_Carlos_of_Bourbon-Two_Sicilies
+    Value: Philippe_Count_of_Paris
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -1260,6 +1245,77 @@ Violations:
 
 
 
+  Violation [16]:
+    Severity: Violation
+    Focus node: Princess_Maria_de_las_Mercedes
+    Path: None
+    Value: Princess_Maria_de_las_Mercedes
+    Constraint: ClassConstraintComponent
+    Source shape:
+      esh:DomainConjunctionShape_isMotherOf a sh:NodeShape ;
+          sh:class :Ancestor,
+              :Woman ;
+          sh:message "Any subject of isMotherOf must be all of: Ancestor, Woman." ;
+          sh:targetSubjectsOf :isMotherOf .
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    Classes assigned to the focus node: [':Woman', ':Person']
+    Definitions of the classes assigned to the focus node:
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+    Classes assigned to the value node: [':Woman', ':Person']
+    Definitions of the classes assigned to the value node:
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+
+
 
 ---
 
@@ -1267,4 +1323,4 @@ Please analyze each violation and provide the corresponding explanation and fix 
 
 ================================== Ai Message ==================================
 
-[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The person \'Prince_Pedro_de_Alcantara_of_Orleans-Braganza\' linked as the father of \'Prince_Pedro_Gastao_of_Orleans-Braganza\' is not explicitly classified as an \':Ancestor\' or \':Man\'.",\n      "instruction": "AssignClass(node=\'Prince_Pedro_de_Alcantara_of_Orleans-Braganza\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The person \'Infante_Juan_Count_of_Barcelona\' linked as the father of \'King_Juan_Carlos_I_of_Spain\' is not explicitly classified as an \':Ancestor\' or \':Man\'.",\n      "instruction": "AssignClass(node=\'Infante_Juan_Count_of_Barcelona\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The person \'Princess_Maria_de_las_Mercedes\' linked as the mother of \'King_Juan_Carlos_I_of_Spain\' is not explicitly classified as an \':Ancestor\' or \':Woman\'.",\n      "instruction": "AssignClass(node=\'Princess_Maria_de_las_Mercedes\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The person \'Prince_Carlos_of_Bourbon-Two_Sicilies\' linked as the father of \'Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies\' is not explicitly classified as an \':Ancestor\' or \':Man\'.",\n      "instruction": "AssignClass(node=\'Prince_Carlos_of_Bourbon-Two_Sicilies\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The person \'Infante_Juan_Count_of_Barcelona\' linked as the father of \'King_Juan_Carlos_I_of_Spain\' is not explicitly classified as an \':Ancestor\' or \':Man\'.",\n      "instruction": "AssignClass(node=\'Infante_Juan_Count_of_Barcelona\', class=\':Man\')"\n    },\n    {\n      "explanation": "The person \'Prince_Pedro_de_Alcantara_of_Orleans-Braganza\' linked as the father of \'Prince_Pedro_Gastao_of_Orleans-Braganza\' is not explicitly classified as an \':Ancestor\' or \':Man\'.",\n      "instruction": "AssignClass(node=\'Prince_Pedro_de_Alcantara_of_Orleans-Braganza\', class=\':Man\')"\n    },\n    {\n      "explanation": "The person \'Princess_Louise_of_Orleans\' linked as the mother of \'Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies\' is not explicitly classified as an \':Ancestor\' or \':Woman\'.",\n      "instruction": "AssignClass(node=\'Princess_Louise_of_Orleans\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The person \'Princess_Maria_de_las_Mercedes\' linked as the mother of \'King_Juan_Carlos_I_of_Spain\' is not explicitly classified as an \':Ancestor\' or \':Woman\'.",\n      "instruction": "AssignClass(node=\'Princess_Maria_de_las_Mercedes\', class=\':Woman\')"\n    },\n    {\n      "explanation": "The person \'Prince_Carlos_of_Bourbon-Two_Sicilies\' linked as the father of \'Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies\' is not explicitly classified as an \':Ancestor\' or \':Man\'.",\n      "instruction": "AssignClass(node=\'Prince_Carlos_of_Bourbon-Two_Sicilies\', class=\':Man\')"\n    },\n    {\n      "explanation": "The person \'Infante_Juan_Count_of_Barcelona\' linked as the father of \'King_Juan_Carlos_I_of_Spain\' is not explicitly classified as an \':Ancestor\' or \':Man\'.",\n      "instruction": "AssignClass(node=\'Infante_Juan_Count_of_Barcelona\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The person \'Prince_Pedro_de_Alcantara_of_Orleans-Braganza\' linked as the father of \'Prince_Pedro_Gastao_of_Orleans-Braganza\' is not explicitly classified as an \':Ancestor\' or \':Man\'.",\n      "instruction": "AssignClass(node=\'Prince_Pedro_de_Alcantara_of_Orleans-Braganza\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The person \'Princess_Louise_of_Orleans\' linked as the mother of \'Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies\' is not explicitly classified as an \':Ancestor\' or \':Woman\'.",\n      "instruction": "AssignClass(node=\'Princess_Louise_of_Orleans\', class=\':Woman\')"\n    },\n    {\n      "explanation": "The person \'Princess_Maria_de_las_Mercedes\' linked as the mother of \'King_Juan_Carlos_I_of_Spain\' is not explicitly classified as an \':Ancestor\' or \':Woman\'.",\n      "instruction": "AssignClass(node=\'Princess_Maria_de_las_Mercedes\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The person \'Prince_Carlos_of_Bourbon-Two_Sicilies\' linked as the father of \'Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies\' is not explicitly classified as an \':Ancestor\' or \':Man\'.",\n      "instruction": "AssignClass(node=\'Prince_Carlos_of_Bourbon-Two_Sicilies\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The person \'Princess_Louise_of_Orleans\' linked as the mother of \'Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies\' is not explicitly classified as an \':Ancestor\' or \':Woman\'.",\n      "instruction": "AssignClass(node=\'Princess_Louise_of_Orleans\', class=\':Ancestor\')"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHDiH1cznH6znUUDwawg18KkqWEmlwgw0hJPPDO5rQRV9PTOA49D/6LRcLAMgK'}}]
+[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The value node Prince_Pedro_de_Alcantara_of_Orleans-Braganza for the property hasFather is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Prince_Pedro_de_Alcantara_of_Orleans-Braganza, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Infante_Juan_Count_of_Barcelona for the property hasFather is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Infante_Juan_Count_of_Barcelona, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Infante_Juan_Count_of_Barcelona for the property hasFather is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Infante_Juan_Count_of_Barcelona, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Prince_Carlos_of_Bourbon-Two_Sicilies for the property hasFather is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Prince_Carlos_of_Bourbon-Two_Sicilies, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Prince_Pedro_de_Alcantara_of_Orleans-Braganza for the property hasFather is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Prince_Pedro_de_Alcantara_of_Orleans-Braganza, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Philippe_Count_of_Paris for the property hasFather is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Philippe_Count_of_Paris, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Princess_Louise_of_Orleans for the property hasMother is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Princess_Louise_of_Orleans, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Infante_Juan_Count_of_Barcelona for the property hasFather is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Infante_Juan_Count_of_Barcelona, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Prince_Carlos_of_Bourbon-Two_Sicilies for the property hasFather is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Prince_Carlos_of_Bourbon-Two_Sicilies, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Prince_Pedro_de_Alcantara_of_Orleans-Braganza for the property hasFather is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Prince_Pedro_de_Alcantara_of_Orleans-Braganza, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Philippe_Count_of_Paris for the property hasFather is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Philippe_Count_of_Paris, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Princess_Louise_of_Orleans for the property hasMother is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Princess_Louise_of_Orleans, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Prince_Carlos_of_Bourbon-Two_Sicilies for the property hasFather is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Prince_Carlos_of_Bourbon-Two_Sicilies, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Philippe_Count_of_Paris for the property hasFather is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Philippe_Count_of_Paris, :Ancestor)"\n    },\n    {\n      "explanation": "The value node Princess_Louise_of_Orleans for the property hasMother is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Princess_Louise_of_Orleans, :Ancestor)"\n    },\n    {\n      "explanation": "The node Princess_Maria_de_las_Mercedes is acting as a subject of isMotherOf but is missing the required class :Ancestor.",\n      "instruction": "AssignClass(Princess_Maria_de_las_Mercedes, :Ancestor)"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHGntP52e9RWd0R2Dk2ybD8nAWpr6FRpG9z8qDfww+NhFwDXT0pmv0Zta39idZ'}}]

@@ -2,31 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Crown_Prince_Christian a :Man ;
-    :isBrotherOf data:Princess_Isabella_of_Denmark .
+data:Christian_of_Denmark a :Man,
+        :Person ;
+    :hasFather data:Frederik_X ;
+    :hasMother data:Mary_of_Denmark ;
+    :hasSex data:Male .
 
-data:Prince_Vincent a :Man ;
-    :isBrotherOf data:Princess_Isabella_of_Denmark .
-
-data:Queen_Anne-Marie_of_Greece a :Woman .
-
-data:King_Frederik_X a :Ancestor,
-        :Man ;
-    :hasFather data:Prince_Henrik ;
-    :hasMother data:Queen_Margrethe_II .
-
-data:Prince_Henrik a :Ancestor,
-        :Man .
-
-data:Queen_Margrethe_II a :Ancestor,
-        :Woman .
-
-data:Queen_Mary a :Ancestor,
-        :Woman .
-
-data:Princess_Isabella_of_Denmark a :Woman ;
+data:Isabella_of_Denmark a :Person,
+        :Woman ;
     :hasBirthYear 2007 ;
-    :hasFather data:King_Frederik_X ;
-    :hasMother data:Queen_Mary ;
-    :knownAs "Princess Isabella of Denmark, Countess of Monpezat"^^xsd:string .
+    :hasFather data:Frederik_X ;
+    :hasMother data:Mary_of_Denmark ;
+    :hasSex data:Female .
+
+data:Vincent_of_Denmark a :Man,
+        :Person ;
+    :hasFather data:Frederik_X ;
+    :hasMother data:Mary_of_Denmark ;
+    :hasSex data:Male .
+
+data:Henrik_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Margrethe_II a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Frederik_X a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Henrik_of_Denmark ;
+    :hasMother data:Margrethe_II ;
+    :hasSex data:Male .
+
+data:Mary_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
 

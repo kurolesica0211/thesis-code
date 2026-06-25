@@ -2,40 +2,64 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Marija_Karadjordjevic a :Person,
-        :Woman ;
-    :hasFather data:Philip_Karadjordjevic ;
-    :hasMother data:Danica_Marinkovic .
-
-data:Peter_Karadjordjevic a :Man,
+data:Alfonso_son_of_Carlos a :Man,
         :Person ;
-    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
-    :hasMother data:Maria_da_Gloria ;
-    :isBrotherOf data:Philip_Karadjordjevic .
+    :isSonOf data:Don_Carlos .
 
-data:Stefan_Karadjordjevic a :Man,
-        :Person ;
-    :hasFather data:Philip_Karadjordjevic ;
-    :hasMother data:Danica_Marinkovic .
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person .
 
-data:Alexander_Kara%C4%91or%C4%91evi%C4%87 a :Ancestor,
+data:Alfonso_XII_of_Spain a :Ancestor,
         :Man,
         :Person .
 
-data:Maria_da_Gloria a :Ancestor,
-        :Person,
-        :Woman .
+data:Alfonso_of_the_Two_Sicilies a :Ancestor,
+        :Man,
+        :Person .
 
-data:Danica_Marinkovic a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Philip_Karadjordjevic a :Ancestor,
+data:Don_Carlos a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear 1982 ;
-    :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
-    :hasMarriageYear data:Danica_Marinkovic,
-        2017 ;
-    :hasMother data:Maria_da_Gloria .
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1949 ;
+    :hasFather data:Alfonso_of_the_Two_Sicilies ;
+    :hasMarriageYear 1901,
+        1907 ;
+    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Louise_of_Orl%C3%A9ans,
+        data:Mercedes_Princess_of_Asturias ;
+    :isBloodrelationOf data:Francis_II ;
+    :isBrotherOf data:Ferdinand,
+        data:Ranieri .
+
+data:Ferdinand a :Man,
+        :Person .
+
+data:Francis_II a :Man,
+        :Person .
+
+data:Louise_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasFather data:Philippe_Count_of_Paris .
+
+data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Mercedes_Princess_of_Asturias a :Person,
+        :Woman ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :isSisterOf data:Alfonso_XIII_of_Spain .
+
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person .
+
+data:Ranieri a :Man,
+        :Person .
 

@@ -85,30 +85,21 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Norton Louis Philip Knatchbull, 3rd Earl Mountbatten of Burma (born 8 October 1947), known until 2005 as Lord Romsey and until 2017 as the Lord Brabourne, is a British peer.
-Life and education
+Alexander Edgar Lascelles, Viscount Lascelles (born 13 May 1980) is an English chef, and the third child and second son of David Lascelles, 8th Earl of Harewood, and his first wife Margaret, Viscountess Lascelles.
+He is heir apparent to the earldom of Harewood, due to his elder brother having been born before their parents' marriage.
+A chef, Lascelles has also taught about food at the John of Gaunt School, Trowbridge.
+Personal life
 
-Mountbatten was born at King's College Hospital in London as the eldest son of Patricia Knatchbull, née Mountbatten, later 2nd Countess Mountbatten of Burma, and film producer John Knatchbull, 7th Baron Brabourne.
-Mountbatten was educated at the Dragon School, in Oxford, and Gordonstoun School, Elgin, Moray, Scotland.
-He also succeeded to the Knatchbull Baronetcy, of Mersham Hatch in the County of Kent, in the baronetage of England.
-On the death of his mother on 13 June 2017, he became Earl Mountbatten of Burma, also a title in the peerage of the United Kingdom created for his grandfather, Admiral of the Fleet Lord Louis Mountbatten.
-Mountbatten is the godfather of Philip's grandson, the Prince of Wales.
-He is also related to author Jane Austen, as his father, John Knatchbull, 7th Baron Brabourne, was a direct descendant of her brother Edward Austen Knight.
-Marriage and children
-
-Mountbatten is married to Penelope Meredith Eastwood (born 16 April 1953), a daughter of Reginald Wray Frank Eastwood (1912–1980), a self-made millionaire former butcher who founded the Angus Steakhouse chain, and Marian Elizabeth (1926–2020), née Hood.
-They were wed on 20 October 1979 at Romsey Abbey, less than two months after the IRA murdered his 79-year-old maternal grandfather, Louis Mountbatten, 1st
-Earl Mountbatten of Burma; his 14-year-old younger brother, Nicholas Knatchbull; and his 83-year-old paternal grandmother, Doreen Knatchbull, Dowager Lady Brabourne.
-The 3rd Earl Mountbatten of Burma and his wife have three children and three grandsons:
-
-
-From 2010 to 2014, Mountbatten was in an extramarital relationship with Eugenie, Lady Nuttall, widow of Sir Nicholas Nuttall, 3rd Baronet, who was heir to the Edmund Nuttall Limited construction company.
+Lascelles has a son, Leo (b. 2008), with his former girlfriend, Laleh Yeganegy.
+Lascelles has a daughter, Ivy, and a son, Kit, with his wife Annika Reed (m. 2017), born in 2018 and 2023, respectively.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -124,39 +115,9 @@ From 2010 to 2014, Mountbatten was in an extramarital relationship with Eugenie,
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -171,6 +132,23 @@ From 2010 to 2014, Mountbatten was in an extramarital relationship with Eugenie,
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -188,6 +166,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -255,29 +248,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -286,6 +271,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -298,6 +291,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -306,17 +301,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -344,6 +341,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -359,178 +440,183 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5c4d4793-a3a8-4365-b06c-9528434585c9)
- Call ID: 5c4d4793-a3a8-4365-b06c-9528434585c9
+  AssignClass (c8456fbe-9415-41ba-950b-ab695f2dedf2)
+ Call ID: c8456fbe-9415-41ba-950b-ab695f2dedf2
   Args:
     type: :Man
-    source: Norton_Louis_Philip_Knatchbull
-  AssignClass (57ce2000-f225-4057-be95-98f58b253294)
- Call ID: 57ce2000-f225-4057-be95-98f58b253294
+    source: Alexander_Edgar_Lascelles
+  AssignClass (06cca48c-748c-425b-8ace-41a8385632f5)
+ Call ID: 06cca48c-748c-425b-8ace-41a8385632f5
   Args:
-    type: :Woman
-    source: Patricia_Knatchbull
-  AssignClass (2473ed2e-ff0e-4ef7-aeea-d495bae4c399)
- Call ID: 2473ed2e-ff0e-4ef7-aeea-d495bae4c399
+    type: :Person
+    source: Alexander_Edgar_Lascelles
+  AddLiteral (fe5af8fc-33a7-4e87-a93a-54b7fa7cd01d)
+ Call ID: fe5af8fc-33a7-4e87-a93a-54b7fa7cd01d
   Args:
-    type: :Man
-    source: John_Knatchbull
-  AssignClass (a5cae764-a9a1-4e0a-9a37-dc4fa90ee31a)
- Call ID: a5cae764-a9a1-4e0a-9a37-dc4fa90ee31a
-  Args:
-    type: :Man
-    source: Louis_Mountbatten
-  AssignClass (4afe7bf5-9919-4bb9-87b2-859b71912553)
- Call ID: 4afe7bf5-9919-4bb9-87b2-859b71912553
-  Args:
-    type: :Woman
-    source: Penelope_Meredith_Eastwood
-  AssignClass (cabaebe8-674c-466b-aae0-af6bcd3be40d)
- Call ID: cabaebe8-674c-466b-aae0-af6bcd3be40d
-  Args:
-    type: :Man
-    source: Reginald_Wray_Frank_Eastwood
-  AssignClass (dc56364c-d40c-46e7-8880-c50357bc637c)
- Call ID: dc56364c-d40c-46e7-8880-c50357bc637c
-  Args:
-    type: :Woman
-    source: Marian_Elizabeth
-  AssignClass (09f76476-be62-4881-a8d4-ac0987daa44b)
- Call ID: 09f76476-be62-4881-a8d4-ac0987daa44b
-  Args:
-    type: :Man
-    source: Nicholas_Knatchbull
-  AssignClass (fb250152-86a0-4c29-8aea-e61b62cbf9d2)
- Call ID: fb250152-86a0-4c29-8aea-e61b62cbf9d2
-  Args:
-    type: :Woman
-    source: Doreen_Knatchbull
-  AddLiteral (8b357633-2936-45b8-a5bd-404ffeded9b0)
- Call ID: 8b357633-2936-45b8-a5bd-404ffeded9b0
-  Args:
-    literal_value: 1947
-    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Norton_Louis_Philip_Knatchbull
-  AddLiteral (368eb0a2-f27f-4322-9855-a842e60f870a)
- Call ID: 368eb0a2-f27f-4322-9855-a842e60f870a
-  Args:
-    literal_type: xsd:string
-    literal_value: Lord Romsey
-    source: Norton_Louis_Philip_Knatchbull
-    relation: :formerlyKnownAs
-  AddLiteral (1d873c89-ab69-4e96-8b5a-ca4058e424e5)
- Call ID: 1d873c89-ab69-4e96-8b5a-ca4058e424e5
-  Args:
-    literal_value: Lord Brabourne
-    literal_type: xsd:string
-    source: Norton_Louis_Philip_Knatchbull
-    relation: :formerlyKnownAs
-  AddTriple (e86c8720-21c0-4ccb-8779-9882692dfc17)
- Call ID: e86c8720-21c0-4ccb-8779-9882692dfc17
-  Args:
-    target: Patricia_Knatchbull
-    relation: :hasMother
-    source: Norton_Louis_Philip_Knatchbull
-  AddTriple (2a35356d-f83b-4614-a043-b3c69caeb608)
- Call ID: 2a35356d-f83b-4614-a043-b3c69caeb608
-  Args:
-    relation: :hasFather
-    source: Norton_Louis_Philip_Knatchbull
-    target: John_Knatchbull
-  AddTriple (f4dcfb17-5d55-49af-86c9-a5a786414777)
- Call ID: f4dcfb17-5d55-49af-86c9-a5a786414777
-  Args:
-    relation: :hasBrother
-    source: Norton_Louis_Philip_Knatchbull
-    target: Nicholas_Knatchbull
-  AddTriple (f60292cb-14e5-4876-b81b-11b3d320290a)
- Call ID: f60292cb-14e5-4876-b81b-11b3d320290a
-  Args:
-    source: Norton_Louis_Philip_Knatchbull
-    relation: :hasMother
-    target: Patricia_Knatchbull
-  AddTriple (4e93e6fd-4baf-4f9b-83c7-04263a05f0a1)
- Call ID: 4e93e6fd-4baf-4f9b-83c7-04263a05f0a1
-  Args:
-    relation: :hasFather
-    source: Patricia_Knatchbull
-    target: Louis_Mountbatten
-  AddTriple (ec1212cd-9692-4895-a858-d54e4bce3032)
- Call ID: ec1212cd-9692-4895-a858-d54e4bce3032
-  Args:
-    target: John_Knatchbull
-    relation: :hasFather
-    source: Norton_Louis_Philip_Knatchbull
-  AddTriple (75bc4140-091a-41b2-8037-53ec5502b964)
- Call ID: 75bc4140-091a-41b2-8037-53ec5502b964
-  Args:
-    target: Doreen_Knatchbull
-    source: John_Knatchbull
-    relation: :hasMother
-  AddLiteral (5b5c6418-984c-4159-9422-36cb25a075ce)
- Call ID: 5b5c6418-984c-4159-9422-36cb25a075ce
-  Args:
-    literal_value: 1953
-    literal_type: xsd:integer
-    source: Penelope_Meredith_Eastwood
-    relation: :hasBirthYear
-  AddLiteral (46d89b7b-b06d-409a-b39d-21c7f972fa3f)
- Call ID: 46d89b7b-b06d-409a-b39d-21c7f972fa3f
-  Args:
-    source: Norton_Louis_Philip_Knatchbull
-    relation: :hasMarriageYear
-    literal_value: 1979
-    literal_type: xsd:integer
-  AddTriple (18643c56-84a0-4e80-8696-31c25902ce9c)
- Call ID: 18643c56-84a0-4e80-8696-31c25902ce9c
-  Args:
-    relation: :hasFather
-    source: Penelope_Meredith_Eastwood
-    target: Reginald_Wray_Frank_Eastwood
-  AddTriple (ca136c6a-ae33-403b-9e4b-3cf8210a2e42)
- Call ID: ca136c6a-ae33-403b-9e4b-3cf8210a2e42
-  Args:
-    target: Marian_Elizabeth
-    relation: :hasMother
-    source: Penelope_Meredith_Eastwood
-  AddLiteral (2e38aca9-6c75-4c6b-ad6c-c7b9aca3695e)
- Call ID: 2e38aca9-6c75-4c6b-ad6c-c7b9aca3695e
-  Args:
-    source: Reginald_Wray_Frank_Eastwood
-    relation: :hasBirthYear
-    literal_value: 1912
-    literal_type: xsd:integer
-  AddLiteral (09f70912-b176-4951-93fb-6ff6b1b71e06)
- Call ID: 09f70912-b176-4951-93fb-6ff6b1b71e06
-  Args:
-    relation: :hasDeathYear
-    source: Reginald_Wray_Frank_Eastwood
     literal_type: xsd:integer
     literal_value: 1980
-  AddLiteral (c3e42ff9-098c-43b9-a201-6d5265a0e1e7)
- Call ID: c3e42ff9-098c-43b9-a201-6d5265a0e1e7
+    source: Alexander_Edgar_Lascelles
+  AddTriple (2bbdc16f-528c-4ac5-9653-318bf6a2d9e4)
+ Call ID: 2bbdc16f-528c-4ac5-9653-318bf6a2d9e4
   Args:
-    literal_value: 1926
+    relation: :hasSex
+    source: Alexander_Edgar_Lascelles
+    target: :Male
+  AssignClass (5dfe6271-f56d-474b-af90-6db9fcf9bd1f)
+ Call ID: 5dfe6271-f56d-474b-af90-6db9fcf9bd1f
+  Args:
+    source: David_Lascelles
+    type: :Man
+  AssignClass (0d95cca2-3164-426e-bb5d-8df68ddb9490)
+ Call ID: 0d95cca2-3164-426e-bb5d-8df68ddb9490
+  Args:
+    type: :Person
+    source: David_Lascelles
+  AssignClass (a9020542-3ee1-44cd-a31f-e6ecc6d52cbe)
+ Call ID: a9020542-3ee1-44cd-a31f-e6ecc6d52cbe
+  Args:
+    type: :Woman
+    source: Margaret_Lascelles
+  AssignClass (4ba44f0a-0eb7-4d9a-bb37-3283a674dd64)
+ Call ID: 4ba44f0a-0eb7-4d9a-bb37-3283a674dd64
+  Args:
+    source: Margaret_Lascelles
+    type: :Person
+  AddTriple (4560fdf5-2927-48e6-b91e-ea32a61e74fe)
+ Call ID: 4560fdf5-2927-48e6-b91e-ea32a61e74fe
+  Args:
+    target: :David_Lascelles
+    source: Alexander_Edgar_Lascelles
+    relation: :hasFather
+  AddTriple (5082edab-42ad-4b41-963e-29da66ab28d3)
+ Call ID: 5082edab-42ad-4b41-963e-29da66ab28d3
+  Args:
+    relation: :hasMother
+    target: :Margaret_Lascelles
+    source: Alexander_Edgar_Lascelles
+  AssignClass (d457b79f-4495-4e40-976f-2eda18a9667f)
+ Call ID: d457b79f-4495-4e40-976f-2eda18a9667f
+  Args:
+    type: :Man
+    source: Leo_Lascelles
+  AssignClass (afe35f8d-5f3d-4e0c-b109-ab7ae565e45f)
+ Call ID: afe35f8d-5f3d-4e0c-b109-ab7ae565e45f
+  Args:
+    source: Leo_Lascelles
+    type: :Person
+  AddTriple (880c2b82-f6fa-47bd-a3bd-760e9be39821)
+ Call ID: 880c2b82-f6fa-47bd-a3bd-760e9be39821
+  Args:
+    relation: :hasSon
+    target: :Leo_Lascelles
+    source: Alexander_Edgar_Lascelles
+  AssignClass (eb21b46f-30bf-478e-b77a-97d21f35f5f2)
+ Call ID: eb21b46f-30bf-478e-b77a-97d21f35f5f2
+  Args:
+    type: :Woman
+    source: Laleh_Yeganegy
+  AssignClass (11b2eb47-ccdb-4a0f-955c-38545a2beef6)
+ Call ID: 11b2eb47-ccdb-4a0f-955c-38545a2beef6
+  Args:
+    source: Laleh_Yeganegy
+    type: :Person
+  AddTriple (24c92d0c-c0ff-4ad3-b130-98683ca5d5fa)
+ Call ID: 24c92d0c-c0ff-4ad3-b130-98683ca5d5fa
+  Args:
+    target: :Laleh_Yeganegy
+    source: Leo_Lascelles
+    relation: :hasMother
+  AssignClass (d53998c8-1bc3-4bd3-b503-d0d80cb6afb0)
+ Call ID: d53998c8-1bc3-4bd3-b503-d0d80cb6afb0
+  Args:
+    type: :Woman
+    source: Ivy_Lascelles
+  AssignClass (1e341ca2-be78-4b1e-9526-7c163bf35a0d)
+ Call ID: 1e341ca2-be78-4b1e-9526-7c163bf35a0d
+  Args:
+    source: Ivy_Lascelles
+    type: :Person
+  AddTriple (f7bf9b8b-5558-4986-9b3f-ceb7cd7f9aca)
+ Call ID: f7bf9b8b-5558-4986-9b3f-ceb7cd7f9aca
+  Args:
+    source: Alexander_Edgar_Lascelles
+    target: :Ivy_Lascelles
+    relation: :hasDaughter
+  AssignClass (98fd4cc5-48b1-4b35-af3d-7a853e7aa084)
+ Call ID: 98fd4cc5-48b1-4b35-af3d-7a853e7aa084
+  Args:
+    source: Kit_Lascelles
+    type: :Man
+  AssignClass (c2805967-d990-4241-bf59-dcb21264ed4e)
+ Call ID: c2805967-d990-4241-bf59-dcb21264ed4e
+  Args:
+    source: Kit_Lascelles
+    type: :Person
+  AddTriple (42a466a3-abb9-49c8-a36d-971847faca4e)
+ Call ID: 42a466a3-abb9-49c8-a36d-971847faca4e
+  Args:
+    source: Alexander_Edgar_Lascelles
+    target: :Kit_Lascelles
+    relation: :hasSon
+  AssignClass (91226cc2-7fd4-4abf-b95a-6aecf8a78d09)
+ Call ID: 91226cc2-7fd4-4abf-b95a-6aecf8a78d09
+  Args:
+    source: Annika_Reed
+    type: :Woman
+  AssignClass (a3cda81b-a6bc-4e97-83a5-8348866ac218)
+ Call ID: a3cda81b-a6bc-4e97-83a5-8348866ac218
+  Args:
+    type: :Person
+    source: Annika_Reed
+  AddTriple (dd2e4a6e-c4ab-4420-b0f2-43217fdc82d7)
+ Call ID: dd2e4a6e-c4ab-4420-b0f2-43217fdc82d7
+  Args:
+    target: :Annika_Reed
+    source: Ivy_Lascelles
+    relation: :hasMother
+  AddTriple (8cf9eb6a-94a0-4c7b-9a8b-81e07ef1c317)
+ Call ID: 8cf9eb6a-94a0-4c7b-9a8b-81e07ef1c317
+  Args:
+    relation: :hasMother
+    source: Kit_Lascelles
+    target: :Annika_Reed
+  AddLiteral (2e580aed-0682-4732-9dc3-aec5083c9766)
+ Call ID: 2e580aed-0682-4732-9dc3-aec5083c9766
+  Args:
+    source: Annika_Reed
+    literal_value: 2017
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AddLiteral (e90172b2-c6fa-4b11-bc74-5a6488bdb867)
+ Call ID: e90172b2-c6fa-4b11-bc74-5a6488bdb867
+  Args:
     literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Marian_Elizabeth
-  AddLiteral (e3b12e49-4f55-4c54-a217-d9f5ba25da07)
- Call ID: e3b12e49-4f55-4c54-a217-d9f5ba25da07
+    source: Ivy_Lascelles
+    literal_value: 2018
+  AddLiteral (af73509b-ba55-4168-b512-15569961f073)
+ Call ID: af73509b-ba55-4168-b512-15569961f073
   Args:
-    relation: :hasDeathYear
-    source: Marian_Elizabeth
-    literal_value: 2020
     literal_type: xsd:integer
-  AddLiteral (ec0fc3de-5830-402a-aaf6-8445df37ff4e)
- Call ID: ec0fc3de-5830-402a-aaf6-8445df37ff4e
+    relation: :hasBirthYear
+    literal_value: 2023
+    source: Kit_Lascelles
+  AddLiteral (9876c34c-6817-4281-b0ee-655c4da37e7a)
+ Call ID: 9876c34c-6817-4281-b0ee-655c4da37e7a
   Args:
-    literal_value: 2017
+    source: Leo_Lascelles
+    literal_value: 2008
+    relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Patricia_Knatchbull
-    relation: :hasDeathYear
-  Finish (15d96a54-eb3e-433d-a192-4d76df6e4081)
- Call ID: 15d96a54-eb3e-433d-a192-4d76df6e4081
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -647,204 +733,43 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Norton_Louis_Philip_Knatchbull a :Man ;
-      :formerlyKnownAs "Lord Brabourne"^^xsd:string,
-          "Lord Romsey"^^xsd:string ;
-      :hasBirthYear 1947 ;
-      :hasBrother data:Nicholas_Knatchbull ;
-      :hasFather data:John_Knatchbull ;
-      :hasMarriageYear 1979 ;
-      :hasMother data:Patricia_Knatchbull .
+  data:Alexander_Edgar_Lascelles a :Man,
+          :Person ;
+      :hasBirthYear 1980 ;
+      :hasDaughter data:Ivy_Lascelles ;
+      :hasFather data:David_Lascelles ;
+      :hasMother data:Margaret_Lascelles ;
+      :hasSex data:Male ;
+      :hasSon data:Kit_Lascelles,
+          data:Leo_Lascelles .
 
-  data:Penelope_Meredith_Eastwood a :Woman ;
-      :hasBirthYear 1953 ;
-      :hasFather data:Reginald_Wray_Frank_Eastwood ;
-      :hasMother data:Marian_Elizabeth .
+  data:David_Lascelles a :Man,
+          :Person .
 
-  data:Doreen_Knatchbull a :Woman .
+  data:Ivy_Lascelles a :Person,
+          :Woman ;
+      :hasBirthYear 2018 ;
+      :hasMother data:Annika_Reed .
 
-  data:John_Knatchbull a :Man ;
-      :hasMother data:Doreen_Knatchbull .
+  data:Kit_Lascelles a :Man,
+          :Person ;
+      :hasBirthYear 2023 ;
+      :hasMother data:Annika_Reed .
 
-  data:Louis_Mountbatten a :Man .
+  data:Laleh_Yeganegy a :Person,
+          :Woman .
 
-  data:Marian_Elizabeth a :Woman ;
-      :hasBirthYear 1926 ;
-      :hasDeathYear 2020 .
+  data:Leo_Lascelles a :Man,
+          :Person ;
+      :hasBirthYear 2008 ;
+      :hasMother data:Laleh_Yeganegy .
 
-  data:Nicholas_Knatchbull a :Man .
+  data:Margaret_Lascelles a :Person,
+          :Woman .
 
-  data:Patricia_Knatchbull a :Woman ;
-      :hasDeathYear 2017 ;
-      :hasFather data:Louis_Mountbatten .
-
-  data:Reginald_Wray_Frank_Eastwood a :Man ;
-      :hasBirthYear 1912 ;
-      :hasDeathYear 1980 .
-
-
-
-================================= Tool Message =================================
-
-You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (e276cf59-6c8a-4b55-aade-5a06d044ff10)
- Call ID: e276cf59-6c8a-4b55-aade-5a06d044ff10
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:18
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node John_Knatchbull, assigned as the father of Norton_Louis_Philip_Knatchbull, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='John_Knatchbull', class=':Ancestor')
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Patricia_Knatchbull, assigned as the mother of Norton_Louis_Philip_Knatchbull, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Patricia_Knatchbull', class=':Ancestor')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Doreen_Knatchbull, assigned as the mother of John_Knatchbull, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Doreen_Knatchbull', class=':Ancestor')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Louis_Mountbatten, assigned as the father of Patricia_Knatchbull, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Mountbatten', class=':Ancestor')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node John_Knatchbull, assigned as the father of Norton_Louis_Philip_Knatchbull, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='John_Knatchbull', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Reginald_Wray_Frank_Eastwood, assigned as the father of Penelope_Meredith_Eastwood, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Reginald_Wray_Frank_Eastwood', class=':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Patricia_Knatchbull, assigned as the mother of Norton_Louis_Philip_Knatchbull, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Patricia_Knatchbull', class=':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Doreen_Knatchbull, assigned as the mother of John_Knatchbull, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Doreen_Knatchbull', class=':Ancestor')
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marian_Elizabeth, assigned as the mother of Penelope_Meredith_Eastwood, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Marian_Elizabeth', class=':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Louis_Mountbatten, assigned as the father of Patricia_Knatchbull, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Mountbatten', class=':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node John_Knatchbull, assigned as the father of Norton_Louis_Philip_Knatchbull, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='John_Knatchbull', class=':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Reginald_Wray_Frank_Eastwood, assigned as the father of Penelope_Meredith_Eastwood, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Reginald_Wray_Frank_Eastwood', class=':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Patricia_Knatchbull, assigned as the mother of Norton_Louis_Philip_Knatchbull, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Patricia_Knatchbull', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Doreen_Knatchbull, assigned as the mother of John_Knatchbull, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Doreen_Knatchbull', class=':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marian_Elizabeth, assigned as the mother of Penelope_Meredith_Eastwood, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Marian_Elizabeth', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Reginald_Wray_Frank_Eastwood, assigned as the father of Penelope_Meredith_Eastwood, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Reginald_Wray_Frank_Eastwood', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Louis_Mountbatten, assigned as the father of Patricia_Knatchbull, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Mountbatten', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Marian_Elizabeth, assigned as the mother of Penelope_Meredith_Eastwood, is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Marian_Elizabeth', class=':Ancestor')
-
+  data:Annika_Reed a :Person,
+          :Woman ;
+      :hasMarriageYear 2017 .
 
 
 
@@ -852,942 +777,198 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (c38c6a5b-9f4b-4769-9f83-77f96867e7aa)
- Call ID: c38c6a5b-9f4b-4769-9f83-77f96867e7aa
+  ValidateShacl (11f84687-657e-4c9a-ae5a-f93aa53f262b)
+ Call ID: 11f84687-657e-4c9a-ae5a-f93aa53f262b
   Args:
-    source: John_Knatchbull
-    type: :Ancestor
-  AssignClass (aaa54b67-7b8a-474b-8fac-747a2c6c774a)
- Call ID: aaa54b67-7b8a-474b-8fac-747a2c6c774a
-  Args:
-    type: :Ancestor
-    source: Patricia_Knatchbull
-  AssignClass (347123b1-2dc6-4acb-88f7-e4b7c07671c9)
- Call ID: 347123b1-2dc6-4acb-88f7-e4b7c07671c9
-  Args:
-    source: Doreen_Knatchbull
-    type: :Ancestor
-  AssignClass (66cd4cd6-4e9b-4b32-80de-b714da856134)
- Call ID: 66cd4cd6-4e9b-4b32-80de-b714da856134
-  Args:
-    type: :Ancestor
-    source: Louis_Mountbatten
-  AssignClass (31945c2a-0c23-4359-816c-1928505998e3)
- Call ID: 31945c2a-0c23-4359-816c-1928505998e3
-  Args:
-    source: Reginald_Wray_Frank_Eastwood
-    type: :Ancestor
-  AssignClass (e085e4b4-c66a-42e8-8a34-ccfa0dc0f4b3)
- Call ID: e085e4b4-c66a-42e8-8a34-ccfa0dc0f4b3
-  Args:
-    source: Marian_Elizabeth
-    type: :Ancestor
-  AddLiteral (fc0ae181-ebe2-4f9b-b5bc-d06f6b177c62)
- Call ID: fc0ae181-ebe2-4f9b-b5bc-d06f6b177c62
-  Args:
-    source: Norton_Louis_Philip_Knatchbull
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Male
-  AddLiteral (747c794f-dbf3-4af5-a017-9cec26fe276e)
- Call ID: 747c794f-dbf3-4af5-a017-9cec26fe276e
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Female
-    source: Patricia_Knatchbull
-  AddLiteral (37320728-ca2b-4217-8026-45530e912cda)
- Call ID: 37320728-ca2b-4217-8026-45530e912cda
-  Args:
-    source: John_Knatchbull
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Male
-  AddLiteral (b97d1867-f56f-465c-b8d7-1db332dbd02d)
- Call ID: b97d1867-f56f-465c-b8d7-1db332dbd02d
-  Args:
-    literal_value: Male
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Louis_Mountbatten
-  AddLiteral (1d82b6f5-d084-4adf-9bbc-ddb52c375a81)
- Call ID: 1d82b6f5-d084-4adf-9bbc-ddb52c375a81
-  Args:
-    source: Penelope_Meredith_Eastwood
-    literal_value: Female
-    relation: :hasSex
-    literal_type: xsd:string
-  AddLiteral (10086f58-07a2-4a36-8aad-1a5334a93f9d)
- Call ID: 10086f58-07a2-4a36-8aad-1a5334a93f9d
-  Args:
-    source: Reginald_Wray_Frank_Eastwood
-    literal_value: Male
-    relation: :hasSex
-    literal_type: xsd:string
-  AddLiteral (50021989-11ab-4c61-a1e1-36869e4dd1da)
- Call ID: 50021989-11ab-4c61-a1e1-36869e4dd1da
-  Args:
-    literal_value: Female
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Marian_Elizabeth
-  AddLiteral (99ad98c6-255f-4b84-be0c-7e3a63a18256)
- Call ID: 99ad98c6-255f-4b84-be0c-7e3a63a18256
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Male
-    source: Nicholas_Knatchbull
-  AddLiteral (2437b637-f43f-4e4a-840f-a83289320fcd)
- Call ID: 2437b637-f43f-4e4a-840f-a83289320fcd
-  Args:
-    source: Doreen_Knatchbull
-    literal_value: Female
-    literal_type: xsd:string
-    relation: :hasSex
-  ValidateShacl (ce7d2458-2db8-4184-8acf-c1b1d15ee0ec)
- Call ID: ce7d2458-2db8-4184-8acf-c1b1d15ee0ec
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Norton_Louis_Philip_Knatchbull a :Man ;
-      :formerlyKnownAs "Lord Brabourne"^^xsd:string,
-          "Lord Romsey"^^xsd:string ;
-      :hasBirthYear 1947 ;
-      :hasBrother data:Nicholas_Knatchbull ;
-      :hasFather data:John_Knatchbull ;
-      :hasMarriageYear 1979 ;
-      :hasMother data:Patricia_Knatchbull ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Penelope_Meredith_Eastwood a :Woman ;
-      :hasBirthYear 1953 ;
-      :hasFather data:Reginald_Wray_Frank_Eastwood ;
-      :hasMother data:Marian_Elizabeth ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Doreen_Knatchbull a :Ancestor,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:John_Knatchbull a :Ancestor,
-          :Man ;
-      :hasMother data:Doreen_Knatchbull ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Louis_Mountbatten a :Ancestor,
-          :Man ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Marian_Elizabeth a :Ancestor,
-          :Woman ;
-      :hasBirthYear 1926 ;
-      :hasDeathYear 2020 ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Nicholas_Knatchbull a :Man ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Patricia_Knatchbull a :Ancestor,
-          :Woman ;
-      :hasDeathYear 2017 ;
-      :hasFather data:Louis_Mountbatten ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Reginald_Wray_Frank_Eastwood a :Ancestor,
-          :Man ;
-      :hasBirthYear 1912 ;
-      :hasDeathYear 1980 ;
-      :hasSex "Male"^^xsd:string .
-
-
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:90
+Total violations:23
 Violations:
 
   Violation [1]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not typed as class ':Sex'.
+      The node 'Alexander_Edgar_Lascelles' has a 'hasSex' value 'Male' that is not correctly classified as an instance of ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      Use AssignClass to add :Sex to the node :Male.
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not typed as class ':Sex'.
+      The 'hasFather' value 'David_Lascelles' for 'Alexander_Edgar_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :David_Lascelles.
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not typed as class ':Sex'.
+      The 'hasMother' value 'Laleh_Yeganegy' for 'Leo_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :Laleh_Yeganegy.
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not typed as class ':Sex'.
+      The 'hasMother' value 'Annika_Reed' for 'Kit_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :Annika_Reed.
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not typed as class ':Sex'.
+      The 'hasMother' value 'Margaret_Lascelles' for 'Alexander_Edgar_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :Margaret_Lascelles.
 
 
   Violation [6]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not typed as class ':Sex'.
+      The node 'Alexander_Edgar_Lascelles' has a 'hasSex' value 'Male' that is not correctly classified as an instance of ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      Use AssignClass to add :Sex to the node :Male.
 
 
   Violation [7]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not typed as class ':Sex'.
+      The node 'Alexander_Edgar_Lascelles' has a 'hasSex' value 'Male' that is not correctly classified as an instance of ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      Use AssignClass to add :Sex to the node :Male.
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not typed as class ':Sex'.
+      The 'hasFather' value 'David_Lascelles' for 'Alexander_Edgar_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :David_Lascelles.
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not typed as class ':Sex'.
+      The 'hasMother' value 'Annika_Reed' for 'Ivy_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :Annika_Reed.
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not typed as class ':Sex'.
+      The 'hasMother' value 'Annika_Reed' for 'Kit_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :Annika_Reed.
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not typed as class ':Sex'.
+      The 'hasMother' value 'Laleh_Yeganegy' for 'Leo_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :Laleh_Yeganegy.
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not typed as class ':Sex'.
+      The 'hasMother' value 'Margaret_Lascelles' for 'Alexander_Edgar_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :Margaret_Lascelles.
 
 
   Violation [13]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not typed as class ':Sex'.
+      The node 'Alexander_Edgar_Lascelles' has a 'hasSex' value 'Male' that is not correctly classified as an instance of ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      Use AssignClass to add :Sex to the node :Male.
 
 
   Violation [14]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not typed as class ':Sex'.
+      The node 'Alexander_Edgar_Lascelles' has a 'hasSex' value 'Male' that is not correctly classified as an instance of ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      Use AssignClass to add :Sex to the node :Male.
 
 
   Violation [15]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not typed as class ':Sex'.
+      The node 'Alexander_Edgar_Lascelles' has a 'hasSex' value 'Male' that is not correctly classified as an instance of ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      Use AssignClass to add :Sex to the node :Male.
 
 
   Violation [16]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not typed as class ':Sex'.
+      The 'hasFather' value 'David_Lascelles' for 'Alexander_Edgar_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :David_Lascelles.
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not typed as class ':Sex'.
+      The 'hasMother' value 'Annika_Reed' for 'Ivy_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :Annika_Reed.
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not typed as class ':Sex'.
+      The 'hasMother' value 'Annika_Reed' for 'Kit_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :Annika_Reed.
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not typed as class ':Sex'.
+      The 'hasMother' value 'Laleh_Yeganegy' for 'Leo_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :Laleh_Yeganegy.
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not typed as class ':Sex'.
+      The 'hasMother' value 'Margaret_Lascelles' for 'Alexander_Edgar_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :Margaret_Lascelles.
 
 
   Violation [21]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not typed as class ':Sex'.
+      The node 'Alexander_Edgar_Lascelles' has a 'hasSex' value 'Male' that is not correctly classified as an instance of ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      Use AssignClass to add :Sex to the node :Male.
 
 
   Violation [22]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not typed as class ':Sex'.
+      The node 'Alexander_Edgar_Lascelles' has a 'hasSex' value 'Male' that is not correctly classified as an instance of ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      Use AssignClass to add :Sex to the node :Male.
 
 
   Violation [23]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not typed as class ':Sex'.
+      The 'hasMother' value 'Annika_Reed' for 'Ivy_Lascelles' is not classified as an ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [79]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [80]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [81]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [82]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [83]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [84]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [85]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [86]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [87]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [88]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [89]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [90]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not typed as class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      Use AssignClass to add :Ancestor to the node :Annika_Reed.
 
 
 
@@ -1796,991 +977,31 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (0d9cedb4-b237-4f25-83a0-b6eb0d93e141)
- Call ID: 0d9cedb4-b237-4f25-83a0-b6eb0d93e141
+  AssignClass (863d5532-9623-490e-bcc7-2bb3fb84f6e7)
+ Call ID: 863d5532-9623-490e-bcc7-2bb3fb84f6e7
   Args:
     type: :Sex
-    source: Male
-  AssignClass (b59b375a-c67a-4685-9b9b-4d74545882bd)
- Call ID: b59b375a-c67a-4685-9b9b-4d74545882bd
+    source: :Male
+  AssignClass (4da6f70d-17ba-423c-a3a2-933537d7856f)
+ Call ID: 4da6f70d-17ba-423c-a3a2-933537d7856f
   Args:
-    type: :Sex
-    source: Female
-  ValidateShacl (4960bffb-1e47-4292-ba77-7b2b60e93c83)
- Call ID: 4960bffb-1e47-4292-ba77-7b2b60e93c83
+    source: David_Lascelles
+    type: :Ancestor
+  AssignClass (dd6f982c-f09d-4059-bf9a-d4a3d82fb807)
+ Call ID: dd6f982c-f09d-4059-bf9a-d4a3d82fb807
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
-
-  data:Norton_Louis_Philip_Knatchbull a :Man ;
-      :formerlyKnownAs "Lord Brabourne"^^xsd:string,
-          "Lord Romsey"^^xsd:string ;
-      :hasBirthYear 1947 ;
-      :hasBrother data:Nicholas_Knatchbull ;
-      :hasFather data:John_Knatchbull ;
-      :hasMarriageYear 1979 ;
-      :hasMother data:Patricia_Knatchbull ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Penelope_Meredith_Eastwood a :Woman ;
-      :hasBirthYear 1953 ;
-      :hasFather data:Reginald_Wray_Frank_Eastwood ;
-      :hasMother data:Marian_Elizabeth ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Doreen_Knatchbull a :Ancestor,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:John_Knatchbull a :Ancestor,
-          :Man ;
-      :hasMother data:Doreen_Knatchbull ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Louis_Mountbatten a :Ancestor,
-          :Man ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Marian_Elizabeth a :Ancestor,
-          :Woman ;
-      :hasBirthYear 1926 ;
-      :hasDeathYear 2020 ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Nicholas_Knatchbull a :Man ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Patricia_Knatchbull a :Ancestor,
-          :Woman ;
-      :hasDeathYear 2017 ;
-      :hasFather data:Louis_Mountbatten ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Reginald_Wray_Frank_Eastwood a :Ancestor,
-          :Man ;
-      :hasBirthYear 1912 ;
-      :hasDeathYear 1980 ;
-      :hasSex "Male"^^xsd:string .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:90
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Louis_Mountbatten' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Reginald_Wray_Frank_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Norton_Louis_Philip_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [79]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'John_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [80]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [81]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [82]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'Nicholas_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [83]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [84]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [85]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [86]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [87]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Doreen_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [88]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Penelope_Meredith_Eastwood' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [89]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Marian_Elizabeth' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [90]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'Patricia_Knatchbull' is not an instance of the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (2acdab5b-e92c-42a9-a67f-1744c227e5bc)
- Call ID: 2acdab5b-e92c-42a9-a67f-1744c227e5bc
+    type: :Ancestor
+    source: Margaret_Lascelles
+  AssignClass (024d2ef9-6d68-4a86-acb4-746ef67e4201)
+ Call ID: 024d2ef9-6d68-4a86-acb4-746ef67e4201
   Args:
-    relation: :hasSex
-    source: Norton_Louis_Philip_Knatchbull
-    literal_type: xsd:string
-    literal_value: Male
-  RemoveLiteral (13aa9f9b-dc68-4b0e-ac3a-598c266b5070)
- Call ID: 13aa9f9b-dc68-4b0e-ac3a-598c266b5070
+    source: Laleh_Yeganegy
+    type: :Ancestor
+  AssignClass (2fce3c54-6814-407c-bc98-a24ca2789fe5)
+ Call ID: 2fce3c54-6814-407c-bc98-a24ca2789fe5
   Args:
-    source: Patricia_Knatchbull
-    literal_type: xsd:string
-    literal_value: Female
-    relation: :hasSex
-  RemoveLiteral (7afbb4e2-c5e2-48bc-9893-8af66548bebd)
- Call ID: 7afbb4e2-c5e2-48bc-9893-8af66548bebd
-  Args:
-    relation: :hasSex
-    source: John_Knatchbull
-    literal_type: xsd:string
-    literal_value: Male
-  RemoveLiteral (700266ed-aabb-4f76-8877-2e8f2f3c7134)
- Call ID: 700266ed-aabb-4f76-8877-2e8f2f3c7134
-  Args:
-    literal_value: Male
-    literal_type: xsd:string
-    source: Louis_Mountbatten
-    relation: :hasSex
-  RemoveLiteral (e691b29d-aa45-4cb1-bc90-dad00846d200)
- Call ID: e691b29d-aa45-4cb1-bc90-dad00846d200
-  Args:
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-    source: Penelope_Meredith_Eastwood
-  RemoveLiteral (bb83a28f-4621-47ff-a164-5dfb67d60879)
- Call ID: bb83a28f-4621-47ff-a164-5dfb67d60879
-  Args:
-    relation: :hasSex
-    literal_value: Male
-    source: Reginald_Wray_Frank_Eastwood
-    literal_type: xsd:string
-  RemoveLiteral (a6309655-326b-44d3-86b3-e53791dae8c1)
- Call ID: a6309655-326b-44d3-86b3-e53791dae8c1
-  Args:
-    relation: :hasSex
-    literal_value: Female
-    source: Marian_Elizabeth
-    literal_type: xsd:string
-  RemoveLiteral (1646832e-876f-43f4-aec3-055e76e49f38)
- Call ID: 1646832e-876f-43f4-aec3-055e76e49f38
-  Args:
-    relation: :hasSex
-    source: Nicholas_Knatchbull
-    literal_type: xsd:string
-    literal_value: Male
-  RemoveLiteral (eeea10a4-e487-4bdf-8da9-d8a86852b176)
- Call ID: eeea10a4-e487-4bdf-8da9-d8a86852b176
-  Args:
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-    source: Doreen_Knatchbull
-  AddTriple (988c26a3-31c1-48dc-8136-4c441915af51)
- Call ID: 988c26a3-31c1-48dc-8136-4c441915af51
-  Args:
-    source: Norton_Louis_Philip_Knatchbull
-    target: Male
-    relation: :hasSex
-  AddTriple (fb9f8ce8-def8-4614-99f9-117a011122be)
- Call ID: fb9f8ce8-def8-4614-99f9-117a011122be
-  Args:
-    relation: :hasSex
-    target: Female
-    source: Patricia_Knatchbull
-  AddTriple (807b019d-5c94-48fa-9e26-3732bfa0f261)
- Call ID: 807b019d-5c94-48fa-9e26-3732bfa0f261
-  Args:
-    target: Male
-    relation: :hasSex
-    source: John_Knatchbull
-  AddTriple (ffd891f2-f4c7-40aa-ad78-2a6782be6fdf)
- Call ID: ffd891f2-f4c7-40aa-ad78-2a6782be6fdf
-  Args:
-    source: Louis_Mountbatten
-    relation: :hasSex
-    target: Male
-  AddTriple (b8161147-6127-402d-9605-b7dfa48546db)
- Call ID: b8161147-6127-402d-9605-b7dfa48546db
-  Args:
-    source: Penelope_Meredith_Eastwood
-    target: Female
-    relation: :hasSex
-  AddTriple (b5944d0d-7579-489d-b834-ebaf3e6e1eb2)
- Call ID: b5944d0d-7579-489d-b834-ebaf3e6e1eb2
-  Args:
-    target: Male
-    relation: :hasSex
-    source: Reginald_Wray_Frank_Eastwood
-  AddTriple (d0a9e111-62e8-4a8d-9355-8ff9bb82aa34)
- Call ID: d0a9e111-62e8-4a8d-9355-8ff9bb82aa34
-  Args:
-    source: Marian_Elizabeth
-    target: Female
-    relation: :hasSex
-  AddTriple (afd16862-1516-46f1-b54c-99abbd69c5e7)
- Call ID: afd16862-1516-46f1-b54c-99abbd69c5e7
-  Args:
-    source: Nicholas_Knatchbull
-    relation: :hasSex
-    target: Male
-  AddTriple (1a273166-901a-47b2-8d82-2d73de3cdcee)
- Call ID: 1a273166-901a-47b2-8d82-2d73de3cdcee
-  Args:
-    source: Doreen_Knatchbull
-    target: Female
-    relation: :hasSex
-  ValidateShacl (62f7bd91-41b1-4c58-8f14-f6997e3fc492)
- Call ID: 62f7bd91-41b1-4c58-8f14-f6997e3fc492
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Annika_Reed
+    type: :Ancestor
 
 ================================= Tool Message =================================
 
@@ -2805,61 +1026,59 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Norton_Louis_Philip_Knatchbull a :Man ;
-      :formerlyKnownAs "Lord Brabourne"^^xsd:string,
-          "Lord Romsey"^^xsd:string ;
-      :hasBirthYear 1947 ;
-      :hasBrother data:Nicholas_Knatchbull ;
-      :hasFather data:John_Knatchbull ;
-      :hasMarriageYear 1979 ;
-      :hasMother data:Patricia_Knatchbull ;
-      :hasSex data:Male .
+  data:Alexander_Edgar_Lascelles a :Man,
+          :Person ;
+      :hasBirthYear 1980 ;
+      :hasDaughter data:Ivy_Lascelles ;
+      :hasFather data:David_Lascelles ;
+      :hasMother data:Margaret_Lascelles ;
+      :hasSex data:Male ;
+      :hasSon data:Kit_Lascelles,
+          data:Leo_Lascelles .
 
-  data:Penelope_Meredith_Eastwood a :Woman ;
-      :hasBirthYear 1953 ;
-      :hasFather data:Reginald_Wray_Frank_Eastwood ;
-      :hasMother data:Marian_Elizabeth ;
-      :hasSex data:Female .
+  data:David_Lascelles a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Doreen_Knatchbull a :Ancestor,
+  data:Ivy_Lascelles a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasBirthYear 2018 ;
+      :hasMother data:Annika_Reed .
 
-  data:John_Knatchbull a :Ancestor,
-          :Man ;
-      :hasMother data:Doreen_Knatchbull ;
-      :hasSex data:Male .
+  data:Kit_Lascelles a :Man,
+          :Person ;
+      :hasBirthYear 2023 ;
+      :hasMother data:Annika_Reed .
 
-  data:Louis_Mountbatten a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
+  data:Laleh_Yeganegy a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Marian_Elizabeth a :Ancestor,
-          :Woman ;
-      :hasBirthYear 1926 ;
-      :hasDeathYear 2020 ;
-      :hasSex data:Female .
-
-  data:Nicholas_Knatchbull a :Man ;
-      :hasSex data:Male .
-
-  data:Patricia_Knatchbull a :Ancestor,
-          :Woman ;
-      :hasDeathYear 2017 ;
-      :hasFather data:Louis_Mountbatten ;
-      :hasSex data:Female .
-
-  data:Reginald_Wray_Frank_Eastwood a :Ancestor,
-          :Man ;
-      :hasBirthYear 1912 ;
-      :hasDeathYear 1980 ;
-      :hasSex data:Male .
-
-  data:Female a :Sex .
+  data:Leo_Lascelles a :Man,
+          :Person ;
+      :hasBirthYear 2008 ;
+      :hasMother data:Laleh_Yeganegy .
 
   data:Male a :Sex .
 
+  data:Margaret_Lascelles a :Ancestor,
+          :Person,
+          :Woman .
 
+  data:Annika_Reed a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasMarriageYear 2017 .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (a98fbd01-0221-4405-9ac8-af512c52a00f)
+ Call ID: a98fbd01-0221-4405-9ac8-af512c52a00f
+  Args:
 
 ================================= Tool Message =================================
 
@@ -2869,6 +1088,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5bd0fb63-6853-496c-adb9-7d991a82abaf)
- Call ID: 5bd0fb63-6853-496c-adb9-7d991a82abaf
+  Finish (b57ff128-97db-4045-a890-d41608df3adb)
+ Call ID: b57ff128-97db-4045-a890-d41608df3adb
   Args:

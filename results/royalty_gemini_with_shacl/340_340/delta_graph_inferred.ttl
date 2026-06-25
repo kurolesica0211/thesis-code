@@ -1,0 +1,619 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ernest_Augustus_of_Hanover a :Man ;
+    :hasBrother data:Ernest_Augustus_of_Hanover ;
+    :hasRelation data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Ernest_Augustus_of_Hanover ;
+    :isBrotherOf data:Ernest_Augustus_of_Hanover ;
+    :isSiblingOf data:Ernest_Augustus_of_Hanover .
+
+data:King_Paul_of_Greece a :Man ;
+    :hasBrother data:King_Paul_of_Greece ;
+    :hasRelation data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:King_Paul_of_Greece,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isBloodrelationOf data:King_Paul_of_Greece ;
+    :isBrotherOf data:King_Paul_of_Greece ;
+    :isSiblingOf data:King_Paul_of_Greece .
+
+data:Felipe_VI_of_Spain a :Man ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Frederica_Princess_of_Hanover,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:King_Paul_of_Greece,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain ;
+    :isBrotherOf data:Felipe_VI_of_Spain ;
+    :isSiblingOf data:Felipe_VI_of_Spain .
+
+data:Louise_of_Mecklenburg-Strelitz a :Ancestor,
+        :Woman ;
+    :hasRelation data:Christian_Oscar_Prince_of_Hanover,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :hasSister data:Louise_of_Mecklenburg-Strelitz ;
+    :isAncestorOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isBloodrelationOf data:Louise_of_Mecklenburg-Strelitz ;
+    :isSiblingOf data:Louise_of_Mecklenburg-Strelitz ;
+    :isSisterOf data:Louise_of_Mecklenburg-Strelitz .
+
+data:Queen_Victoria a :Ancestor,
+        :Woman ;
+    :hasRelation data:Christian_Oscar_Prince_of_Hanover,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+        :Woman ;
+    :hasChild data:Victoria_Louise_of_Prussia ;
+    :hasDaughter data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Christian_Oscar_Prince_of_Hanover,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :hasSister data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isAncestorOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isAuntOf data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isMotherOf data:Victoria_Louise_of_Prussia ;
+    :isParentOf data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :isSisterOf data:Augusta_Victoria_of_Schleswig-Holstein .
+
+data:Wilhelm_II a :Ancestor,
+        :Man ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Victoria_Louise_of_Prussia ;
+    :hasDaughter data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Christian_Oscar_Prince_of_Hanover,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover,
+        data:Wilhelm_II ;
+    :isAncestorOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Victoria_Louise_of_Prussia ;
+    :isParentOf data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Victoria_Louise_of_Prussia .
+
+data:Crown_Prince_Wilhelm a :Man ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isUncleOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover .
+
+data:Prince_August_Wilhelm a :Man ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isUncleOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover .
+
+data:Prince_Eitel_Friedrich a :Man ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isUncleOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover .
+
+data:Prince_Joachim a :Man ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_of_Hanover,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isBrotherOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isUncleOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover .
+
+data:Christian_Oscar_Prince_of_Hanover a :Man ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:King_Paul_of_Greece,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover,
+        data:Wilhelm_II ;
+    :hasSister data:Frederica_Princess_of_Hanover ;
+    :isBloodrelationOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isBrotherOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isChildOf data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isSonOf data:Victoria_Louise_of_Prussia .
+
+data:Ernest_Augustus_Prince_of_Hanover a :Man ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:King_Paul_of_Greece,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover,
+        data:Wilhelm_II ;
+    :hasSister data:Frederica_Princess_of_Hanover ;
+    :isBloodrelationOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isBrotherOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isChildOf data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isSonOf data:Victoria_Louise_of_Prussia .
+
+data:George_William_Prince_of_Hanover a :Man ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:King_Paul_of_Greece,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover,
+        data:Wilhelm_II ;
+    :hasSister data:Frederica_Princess_of_Hanover ;
+    :isBloodrelationOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isBrotherOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isChildOf data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isSonOf data:Victoria_Louise_of_Prussia .
+
+data:Welf_Henry_Prince_of_Hanover a :Man ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:King_Paul_of_Greece,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover,
+        data:Wilhelm_II ;
+    :hasSister data:Frederica_Princess_of_Hanover ;
+    :isBloodrelationOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isBrotherOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isChildOf data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isSonOf data:Victoria_Louise_of_Prussia .
+
+data:Frederica_Princess_of_Hanover a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :hasMother data:Victoria_Louise_of_Prussia ;
+    :hasParent data:Victoria_Louise_of_Prussia ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:King_Paul_of_Greece,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover,
+        data:Wilhelm_II ;
+    :hasSister data:Frederica_Princess_of_Hanover ;
+    :isAncestorOf data:Felipe_VI_of_Spain ;
+    :isBloodrelationOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isChildOf data:Victoria_Louise_of_Prussia ;
+    :isDaughterOf data:Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isSisterOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover .
+
+data:Victoria_Louise_of_Prussia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Queen_Victoria,
+        data:Wilhelm_II ;
+    :hasBirthYear 1892 ;
+    :hasBrother data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim ;
+    :hasChild data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :hasDaughter data:Frederica_Princess_of_Hanover ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Christian_Oscar_Prince_of_Hanover,
+        data:Crown_Prince_Wilhelm,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Ernest_Augustus_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:King_Paul_of_Greece,
+        data:Louise_of_Mecklenburg-Strelitz,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Queen_Victoria,
+        data:Victoria_Louise_of_Prussia,
+        data:Welf_Henry_Prince_of_Hanover,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise_of_Prussia ;
+    :hasSon data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isAncestorOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Felipe_VI_of_Spain,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isAuntOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isBloodrelationOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isDaughterOf data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :isMotherOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isParentOf data:Christian_Oscar_Prince_of_Hanover,
+        data:Ernest_Augustus_Prince_of_Hanover,
+        data:Frederica_Princess_of_Hanover,
+        data:George_William_Prince_of_Hanover,
+        data:Welf_Henry_Prince_of_Hanover ;
+    :isSiblingOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia ;
+    :isSisterOf data:Crown_Prince_Wilhelm,
+        data:Prince_August_Wilhelm,
+        data:Prince_Eitel_Friedrich,
+        data:Prince_Joachim,
+        data:Victoria_Louise_of_Prussia .
+

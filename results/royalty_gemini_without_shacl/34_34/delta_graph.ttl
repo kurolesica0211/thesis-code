@@ -4,32 +4,33 @@
 
 data:Christian_Alexander_Mowatt a :Man,
         :Person ;
+    :hasBirthYear 1993 ;
     :hasFather data:Paul_Julian_Mowatt ;
-    :hasMother data:Marina_Ogilvy .
-
-data:Marina_of_Greece_and_Denmark a :Person,
-        :Woman .
+    :hasMother data:Marina_Victoria_Alexandra_Ogilvy .
 
 data:Zenouska_May_Mowatt a :Person,
         :Woman ;
+    :hasBirthYear 1990 ;
     :hasFather data:Paul_Julian_Mowatt ;
-    :hasMother data:Marina_Ogilvy .
-
-data:Alexandra_of_Kent a :Person,
-        :Woman .
-
-data:Angus_Ogilvy a :Man,
-        :Person .
+    :hasMother data:Marina_Victoria_Alexandra_Ogilvy .
 
 data:James_Ogilvy a :Man,
+        :Person ;
+    :hasBirthYear 1964 .
+
+data:Princess_Alexandra_of_Kent a :Person,
+        :Woman .
+
+data:Sir_Angus_Ogilvy a :Man,
         :Person .
 
-data:Marina_Ogilvy a :Person,
+data:Marina_Victoria_Alexandra_Ogilvy a :Person,
         :Woman ;
     :hasBirthYear 1966 ;
     :hasBrother data:James_Ogilvy ;
-    :hasFather data:Angus_Ogilvy ;
-    :hasMother data:Alexandra_of_Kent ;
+    :hasFather data:Sir_Angus_Ogilvy ;
+    :hasMarriageYear 1990 ;
+    :hasMother data:Princess_Alexandra_of_Kent ;
     :hasRelation data:Paul_Julian_Mowatt .
 
 data:Paul_Julian_Mowatt a :Man,

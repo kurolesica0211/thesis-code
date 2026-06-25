@@ -2,37 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Isabel_Alfonsa_of_Bourbon_Two_Sicilies a :Person,
-        :Woman ;
-    :hasBirthYear "1904"^^xsd:string ;
-    :hasDeathYear "1985"^^xsd:string ;
-    :hasFather data:Prince_Carlos_of_Bourbon_Two_Sicilies ;
-    :hasMarriageYear "1929"^^xsd:string ;
-    :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;
-    :hasRelation data:Count_Jan_Kanty_Zamoyski .
+data:Gosta_von_dem_Bussche-Haddenhausen a :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Georg_von_dem_Bussche-Haddenhausen ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .
 
-data:Alfonso_XII_of_Spain a :Man,
-        :Person .
+data:Klaus_Felix_von_Amsberg a :Man ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Wilhelm_von_Amsberg ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Elise_von_Vieregg .
 
-data:Count_Andrzej_Zamoyski a :Man,
-        :Person .
+data:Elise_von_Vieregg a :Woman ;
+    :hasBirthYear 1866 ;
+    :hasDeathYear 1951 .
 
-data:Count_Jan_Kanty_Zamoyski a :Man,
-        :Person ;
-    :hasFather data:Count_Andrzej_Zamoyski ;
-    :hasMother data:Princess_Maria_Carolina_of_Bourbon_Two_Sicilies .
+data:Gabriele_von_dem_Bussche-Ippenburg a :Woman ;
+    :hasBirthYear 1877 ;
+    :hasDeathYear 1973 .
 
-data:Maria_Christina_of_Austria a :Person,
-        :Woman .
+data:Georg_von_dem_Bussche-Haddenhausen a :Man ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1923 .
 
-data:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,
-        :Woman ;
-    :hasFather data:Alfonso_XII_of_Spain ;
-    :hasMother data:Maria_Christina_of_Austria .
-
-data:Prince_Carlos_of_Bourbon_Two_Sicilies a :Man,
-        :Person .
-
-data:Princess_Maria_Carolina_of_Bourbon_Two_Sicilies a :Person,
-        :Woman .
+data:Wilhelm_von_Amsberg a :Man ;
+    :hasBirthYear 1856 ;
+    :hasDeathYear 1929 .
 

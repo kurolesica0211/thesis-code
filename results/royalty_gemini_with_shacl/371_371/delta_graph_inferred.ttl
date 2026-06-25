@@ -1,0 +1,209 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach a :Person,
+        :Woman ;
+    :hasRelation data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach ;
+    :hasSister data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach ;
+    :isBloodrelationOf data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach ;
+    :isSiblingOf data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach ;
+    :isSisterOf data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach .
+
+data:Elisabeth_of_Stolberg-Rossla a :Person,
+        :Woman ;
+    :hasRelation data:Elisabeth_of_Stolberg-Rossla ;
+    :hasSister data:Elisabeth_of_Stolberg-Rossla ;
+    :isBloodrelationOf data:Elisabeth_of_Stolberg-Rossla ;
+    :isSiblingOf data:Elisabeth_of_Stolberg-Rossla ;
+    :isSisterOf data:Elisabeth_of_Stolberg-Rossla .
+
+data:Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:John_Albert_of_Mecklenburg ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:Frederick_Francis_II_of_Mecklenburg,
+        data:Frederick_Francis_IV_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasSister data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasSon data:John_Albert_of_Mecklenburg ;
+    :isAncestorOf data:John_Albert_of_Mecklenburg ;
+    :isAuntOf data:John_Albert_of_Mecklenburg ;
+    :isBloodrelationOf data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :isMotherOf data:John_Albert_of_Mecklenburg ;
+    :isParentOf data:John_Albert_of_Mecklenburg ;
+    :isSiblingOf data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :isSisterOf data:Augusta_Reuss_of_K%C3%B6stritz .
+
+data:Frederick_Francis_II_of_Mecklenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_II_of_Mecklenburg ;
+    :hasChild data:John_Albert_of_Mecklenburg ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:Frederick_Francis_II_of_Mecklenburg,
+        data:Frederick_Francis_IV_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasSon data:John_Albert_of_Mecklenburg ;
+    :isAncestorOf data:John_Albert_of_Mecklenburg ;
+    :isBloodrelationOf data:Frederick_Francis_II_of_Mecklenburg ;
+    :isBrotherOf data:Frederick_Francis_II_of_Mecklenburg ;
+    :isFatherOf data:John_Albert_of_Mecklenburg ;
+    :isParentOf data:John_Albert_of_Mecklenburg ;
+    :isSiblingOf data:Frederick_Francis_II_of_Mecklenburg ;
+    :isUncleOf data:John_Albert_of_Mecklenburg .
+
+data:Frederick_Francis_IV_of_Mecklenburg a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Francis_III_of_Mecklenburg ;
+    :hasBrother data:Frederick_Francis_IV_of_Mecklenburg ;
+    :hasFather data:Frederick_Francis_III_of_Mecklenburg ;
+    :hasParent data:Frederick_Francis_III_of_Mecklenburg ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:Frederick_Francis_II_of_Mecklenburg,
+        data:Frederick_Francis_IV_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isBloodrelationOf data:Frederick_Francis_IV_of_Mecklenburg ;
+    :isBrotherOf data:Frederick_Francis_IV_of_Mecklenburg ;
+    :isChildOf data:Frederick_Francis_III_of_Mecklenburg ;
+    :isSiblingOf data:Frederick_Francis_IV_of_Mecklenburg ;
+    :isSonOf data:Frederick_Francis_III_of_Mecklenburg .
+
+data:Adolf_Friedrich_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBrother data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:Frederick_Francis_II_of_Mecklenburg,
+        data:Frederick_Francis_IV_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isBloodrelationOf data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isBrotherOf data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isSiblingOf data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isUncleOf data:Frederick_Francis_IV_of_Mecklenburg .
+
+data:Paul_Frederick_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBrother data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:Frederick_Francis_II_of_Mecklenburg,
+        data:Frederick_Francis_IV_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isBloodrelationOf data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isBrotherOf data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isSiblingOf data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isUncleOf data:Frederick_Francis_IV_of_Mecklenburg .
+
+data:Frederick_Francis_III_of_Mecklenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasChild data:Frederick_Francis_IV_of_Mecklenburg ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:Frederick_Francis_II_of_Mecklenburg,
+        data:Frederick_Francis_IV_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasSon data:Frederick_Francis_IV_of_Mecklenburg ;
+    :isAncestorOf data:Frederick_Francis_IV_of_Mecklenburg ;
+    :isBloodrelationOf data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isBrotherOf data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isFatherOf data:Frederick_Francis_IV_of_Mecklenburg ;
+    :isParentOf data:Frederick_Francis_IV_of_Mecklenburg ;
+    :isSiblingOf data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isUncleOf data:Frederick_Francis_IV_of_Mecklenburg .
+
+data:John_Albert_of_Mecklenburg a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II_of_Mecklenburg ;
+    :hasBirthYear 1857 ;
+    :hasBrother data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Frederick_Francis_II_of_Mecklenburg ;
+    :hasMarriageYear 1886,
+        1909 ;
+    :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;
+    :hasParent data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II_of_Mecklenburg ;
+    :hasRelation data:Adolf_Friedrich_of_Mecklenburg,
+        data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:Frederick_Francis_II_of_Mecklenburg,
+        data:Frederick_Francis_IV_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isBloodrelationOf data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isBrotherOf data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isChildOf data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II_of_Mecklenburg ;
+    :isSiblingOf data:Adolf_Friedrich_of_Mecklenburg,
+        data:Frederick_Francis_III_of_Mecklenburg,
+        data:John_Albert_of_Mecklenburg,
+        data:Paul_Frederick_of_Mecklenburg ;
+    :isSonOf data:Augusta_Reuss_of_K%C3%B6stritz,
+        data:Frederick_Francis_II_of_Mecklenburg ;
+    :isUncleOf data:Frederick_Francis_IV_of_Mecklenburg .
+

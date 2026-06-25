@@ -85,24 +85,27 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Friedrich Franz, Hereditary Grand Duke of Mecklenburg-Schwerin (German: Friedrich Franz Erbgroßherzog von Mecklenburg-Schwerin; 22 April 1910 – 31 July 2001) was the heir apparent to the throne of Mecklenburg-Schwerin and a member of the Waffen-SS.
-Early life
+Granville George Fergus Leveson-Gower, 6th Earl Granville (born 10 September 1959) is a British peer, landowner, and artist.
+He was known as Lord Leveson until 1996 and was a member of the House of Lords from 1996 to 1999.
+Biography
 
-He was born in Schwerin, the eldest child of the reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV, and his wife Princess Alexandra of Hanover, a daughter of Crown Prince Ernest Augustus of Hanover (a first-cousin once removed of Queen Victoria) and Princess Thyra of Denmark, the youngest daughter of King Christian IX of Denmark.
-He did not succeed to the throne, as the Grand Duchy was replaced with the Free State of Mecklenburg-Schwerin.
-Upon the promulgation of the Weimar Constitution on 11 August 1919, titles of sovereigns such as emperor/empress, king/queen, grand duke/grand duchess, etc. were abolished.
-He therefore became known as Friedrich Franz Herzog von Mecklenburg-Schwerin (or Friedrich Franz, Duke of Mecklenburg-Schwerin) de facto since the establishment of the Free State of Mecklenburg-Schwerin.
-Post monarchy
+The elder son of Granville Leveson-Gower, 5th Earl Granville, whose mother Rose Leveson-Gower, Countess Granville, was a daughter of the Earl of Strathmore and Kinghorne and a sister of Queen Elizabeth the Queen Mother, he was educated at Eton College and from 1973 to 1976 was Page of Honour to Queen Elizabeth II, who was his godmother.
+On 31 October 1996, he succeeded as Earl Granville (1833), Viscount Granville (1814), and Baron Leveson of Stone (1814), all in the peerage of the United Kingdom, at the time giving him a seat in the House of Lords.
+Granville is the resident laird of North Uist, living on the island at Callernish House, Griminish, near Lochmaddy, a house shaped like a doughnut designed in the 1960s by Sir Martyn Beckett.
+In 1999, a local smokehouse business came up for sale and Granville took it over, aiming to produce high quality smoked salmon and sea trout.
+With a passion for beachcombing, Granville has also become an artist and sculptor, inspired by flotsam and jetsam and has exhibited his work in North Uist and Edinburgh.
+On 23 May 1997, Granville married Anne Topping, a daughter of Bernard Topping, and they had three children:
 
-In May 1931 against the will of his father, Friedrich Franz joined the SS and by 1936 he had been promoted to the rank of Hauptsturmführer (Captain).
-In May 1943, a family council was called by the Grand Ducal family and Friedrich Franz was passed over as heir (of the family estates) in favour of his younger brother Duke Christian Louis, who would instead inherit the family property.
-Friedrich Franz married Karin Elisabeth von Schaper (1920–2012), the daughter of Walter von Schaper and his wife Baroness Louise von Münchhausen, on 11 June 1941 at Schloß Wiligrad, near the Lake Schwerin.
+
+In 2021, Granville was reported to be living at Callernish with a new wife, Florence Pearson (married in 2016), an artist, their two young sons, a labrador trained to find ambergris, and a parrot.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -118,39 +121,9 @@ Friedrich Franz married Karin Elisabeth von Schaper (1920–2012), the daughter 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -165,6 +138,23 @@ Friedrich Franz married Karin Elisabeth von Schaper (1920–2012), the daughter 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -182,6 +172,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -249,29 +254,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,6 +277,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -292,6 +297,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -300,17 +307,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -338,6 +347,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -353,160 +446,127 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8613951b-5a15-4001-a58a-1a5976d2dc3d)
- Call ID: 8613951b-5a15-4001-a58a-1a5976d2dc3d
+  AssignClass (1fc5eaca-ddd2-4225-ab1d-06fc90075971)
+ Call ID: 1fc5eaca-ddd2-4225-ab1d-06fc90075971
   Args:
+    source: Granville_George_Fergus_Leveson-Gower
     type: :Man
-    source: Friedrich_Franz_Mecklenburg_Schwerin
-  AssignClass (67e7fe5c-daf4-43c4-9730-83dbb7c19c80)
- Call ID: 67e7fe5c-daf4-43c4-9730-83dbb7c19c80
+  AssignClass (99ec9ae1-ee11-4c65-93f2-3d52bdd51aed)
+ Call ID: 99ec9ae1-ee11-4c65-93f2-3d52bdd51aed
   Args:
-    type: :Man
-    source: Frederick_Francis_IV
-  AssignClass (23fcd790-4ce3-48a5-b5ae-c5f7eed94aab)
- Call ID: 23fcd790-4ce3-48a5-b5ae-c5f7eed94aab
+    source: Granville_George_Fergus_Leveson-Gower
+    type: :Person
+  AddLiteral (b584f13a-d1b2-4123-87d5-6a0c5155a20d)
+ Call ID: b584f13a-d1b2-4123-87d5-6a0c5155a20d
   Args:
-    type: :Woman
-    source: Alexandra_Hanover
-  AssignClass (fc111efe-957f-419c-a2b7-8df23b45fc15)
- Call ID: fc111efe-957f-419c-a2b7-8df23b45fc15
-  Args:
-    source: Christian_Louis
-    type: :Man
-  AssignClass (49be9074-8bfe-4085-bdc3-f5bb6d341eef)
- Call ID: 49be9074-8bfe-4085-bdc3-f5bb6d341eef
-  Args:
-    source: Karin_Elisabeth_von_Schaper
-    type: :Woman
-  AssignClass (4809b807-9710-412d-85f8-f84f3338d2ec)
- Call ID: 4809b807-9710-412d-85f8-f84f3338d2ec
-  Args:
-    type: :Man
-    source: Walter_von_Schaper
-  AssignClass (56ad455c-0fef-4d67-a105-aec004dcdd05)
- Call ID: 56ad455c-0fef-4d67-a105-aec004dcdd05
-  Args:
-    source: Louise_von_Munchhausen
-    type: :Woman
-  AssignClass (550c088d-abf9-4200-af1e-211134c709a3)
- Call ID: 550c088d-abf9-4200-af1e-211134c709a3
-  Args:
-    source: Ernest_Augustus_Hanover
-    type: :Man
-  AssignClass (9536a14b-ce0d-493f-9721-4aa8d9c9e008)
- Call ID: 9536a14b-ce0d-493f-9721-4aa8d9c9e008
-  Args:
-    type: :Woman
-    source: Thyra_Denmark
-  AssignClass (a070461a-b616-4cea-9e29-d45b6460af05)
- Call ID: a070461a-b616-4cea-9e29-d45b6460af05
-  Args:
-    source: Christian_IX_Denmark
-    type: :Man
-  AddLiteral (ecb6a01e-2e88-43be-ac68-c464897843d1)
- Call ID: ecb6a01e-2e88-43be-ac68-c464897843d1
-  Args:
-    source: Friedrich_Franz_Mecklenburg_Schwerin
-    literal_value: 1910
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (38607256-f656-47e1-98fb-2924c8499f5f)
- Call ID: 38607256-f656-47e1-98fb-2924c8499f5f
-  Args:
-    source: Friedrich_Franz_Mecklenburg_Schwerin
+    literal_value: 1959
+    source: Granville_George_Fergus_Leveson-Gower
     literal_type: xsd:integer
-    literal_value: 2001
-    relation: :hasDeathYear
-  AddTriple (05559291-a39c-49c9-af82-85b96cc8f3bf)
- Call ID: 05559291-a39c-49c9-af82-85b96cc8f3bf
+  AddLiteral (8333208f-2a38-4273-bcc4-a6ea70e48ab8)
+ Call ID: 8333208f-2a38-4273-bcc4-a6ea70e48ab8
   Args:
-    source: Friedrich_Franz_Mecklenburg_Schwerin
-    target: Frederick_Francis_IV
-    relation: :hasFather
-  AddTriple (88ecdedc-ff37-45e0-8ece-1c90afe5343e)
- Call ID: 88ecdedc-ff37-45e0-8ece-1c90afe5343e
+    literal_value: Lord Leveson
+    source: Granville_George_Fergus_Leveson-Gower
+    relation: :formerlyKnownAs
+    literal_type: xsd:string
+  AssignClass (d1133a6a-75c2-4831-85e3-8c34cba847a6)
+ Call ID: d1133a6a-75c2-4831-85e3-8c34cba847a6
   Args:
-    relation: :hasMother
-    target: Alexandra_Hanover
-    source: Friedrich_Franz_Mecklenburg_Schwerin
-  AddTriple (1043a5f3-6d9e-430f-8150-99864cbadca3)
- Call ID: 1043a5f3-6d9e-430f-8150-99864cbadca3
+    source: Granville_Leveson-Gower_5th_Earl_Granville
+    type: :Man
+  AssignClass (94283bcc-acc9-4b8f-988b-0b4c912941e6)
+ Call ID: 94283bcc-acc9-4b8f-988b-0b4c912941e6
   Args:
-    source: Alexandra_Hanover
-    relation: :hasFather
-    target: Ernest_Augustus_Hanover
-  AddTriple (86342497-041f-4a29-ac73-64bc74bf1087)
- Call ID: 86342497-041f-4a29-ac73-64bc74bf1087
+    source: Granville_Leveson-Gower_5th_Earl_Granville
+    type: :Person
+  AddTriple (8fde6864-ef7c-463e-975d-b80384bde411)
+ Call ID: 8fde6864-ef7c-463e-975d-b80384bde411
   Args:
-    source: Alexandra_Hanover
-    relation: :hasMother
-    target: Thyra_Denmark
-  AddTriple (256823ac-a0b6-431b-a443-57f312004330)
- Call ID: 256823ac-a0b6-431b-a443-57f312004330
+    target: Granville_George_Fergus_Leveson-Gower
+    source: Granville_Leveson-Gower_5th_Earl_Granville
+    relation: :isFatherOf
+  AssignClass (5461a44b-6576-4edb-a5a5-aba81e31d4fe)
+ Call ID: 5461a44b-6576-4edb-a5a5-aba81e31d4fe
   Args:
-    source: Thyra_Denmark
-    target: Christian_IX_Denmark
-    relation: :hasFather
-  AddTriple (7609047c-66ea-414b-a241-f570d516fb03)
- Call ID: 7609047c-66ea-414b-a241-f570d516fb03
+    source: Rose_Leveson-Gower
+    type: :Woman
+  AssignClass (6f0bef8b-5212-4b76-a1ef-7489786fb0fb)
+ Call ID: 6f0bef8b-5212-4b76-a1ef-7489786fb0fb
   Args:
-    source: Friedrich_Franz_Mecklenburg_Schwerin
-    relation: :hasBrother
-    target: Christian_Louis
-  AddTriple (12c92190-dcf0-4876-b960-05b9f4c4c260)
- Call ID: 12c92190-dcf0-4876-b960-05b9f4c4c260
+    source: Rose_Leveson-Gower
+    type: :Person
+  AddTriple (ee7097ea-8d82-4529-b0ed-37f368a13513)
+ Call ID: ee7097ea-8d82-4529-b0ed-37f368a13513
   Args:
-    relation: :hasFather
-    target: Walter_von_Schaper
-    source: Karin_Elisabeth_von_Schaper
-  AddTriple (f4d45b16-beeb-44aa-832e-d161bf5d85a5)
- Call ID: f4d45b16-beeb-44aa-832e-d161bf5d85a5
+    relation: :isMotherOf
+    source: Rose_Leveson-Gower
+    target: Granville_Leveson-Gower_5th_Earl_Granville
+  AssignClass (7e50a0a0-8130-4762-8335-2c3f7c3c768e)
+ Call ID: 7e50a0a0-8130-4762-8335-2c3f7c3c768e
   Args:
-    target: Louise_von_Munchhausen
-    relation: :hasMother
-    source: Karin_Elisabeth_von_Schaper
-  AddLiteral (59a973c2-4e2a-4f95-b102-b29e6fa217b5)
- Call ID: 59a973c2-4e2a-4f95-b102-b29e6fa217b5
+    source: Anne_Topping
+    type: :Woman
+  AssignClass (98a17c9d-6920-45e6-adec-a6f38d82c3e1)
+ Call ID: 98a17c9d-6920-45e6-adec-a6f38d82c3e1
   Args:
+    source: Anne_Topping
+    type: :Person
+  AddLiteral (cb53df7d-aedb-4413-865f-da40edae32e4)
+ Call ID: cb53df7d-aedb-4413-865f-da40edae32e4
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1997
+    source: Granville_George_Fergus_Leveson-Gower
+    relation: :hasMarriageYear
+  AddTriple (a5bcaa8d-3dc8-4a34-8af4-79d79b6bfc2e)
+ Call ID: a5bcaa8d-3dc8-4a34-8af4-79d79b6bfc2e
+  Args:
+    target: Anne_Topping
+    source: Granville_George_Fergus_Leveson-Gower
+    relation: :hasRelation
+  AssignClass (9f018ca5-72e5-41f5-bd62-19fa0f98b1cb)
+ Call ID: 9f018ca5-72e5-41f5-bd62-19fa0f98b1cb
+  Args:
+    source: Bernard_Topping
+    type: :Man
+  AssignClass (39b73755-453e-49b3-b013-7ef4583e3eda)
+ Call ID: 39b73755-453e-49b3-b013-7ef4583e3eda
+  Args:
+    source: Bernard_Topping
+    type: :Person
+  AddTriple (3fe3172a-f1c5-466b-90fb-adf4666db17d)
+ Call ID: 3fe3172a-f1c5-466b-90fb-adf4666db17d
+  Args:
+    relation: :isFatherOf
+    target: Anne_Topping
+    source: Bernard_Topping
+  AssignClass (d455e496-c6cf-4d0b-bddd-e0ecc238ad76)
+ Call ID: d455e496-c6cf-4d0b-bddd-e0ecc238ad76
+  Args:
+    source: Florence_Pearson
+    type: :Woman
+  AssignClass (07018970-a92d-4214-8527-cb605cc3731c)
+ Call ID: 07018970-a92d-4214-8527-cb605cc3731c
+  Args:
+    source: Florence_Pearson
+    type: :Person
+  AddLiteral (417ee504-0c9e-4724-bead-d6c252cacc18)
+ Call ID: 417ee504-0c9e-4724-bead-d6c252cacc18
+  Args:
+    source: Granville_George_Fergus_Leveson-Gower
+    literal_value: 2016
     relation: :hasMarriageYear
     literal_type: xsd:integer
-    literal_value: 1941
-    source: Friedrich_Franz_Mecklenburg_Schwerin
-  AddTriple (461f087a-bd96-43bd-93be-e462bfa10627)
- Call ID: 461f087a-bd96-43bd-93be-e462bfa10627
+  AddTriple (b38baae6-19d5-4572-8be2-b67fc01cc85f)
+ Call ID: b38baae6-19d5-4572-8be2-b67fc01cc85f
   Args:
-    source: Friedrich_Franz_Mecklenburg_Schwerin
     relation: :hasRelation
-    target: Karin_Elisabeth_von_Schaper
-  AddLiteral (98bf3a27-2910-4426-80b3-6507ecc5b274)
- Call ID: 98bf3a27-2910-4426-80b3-6507ecc5b274
+    source: Granville_George_Fergus_Leveson-Gower
+    target: Florence_Pearson
+  Finish (e9d03964-097d-4010-a90a-9b62dd010add)
+ Call ID: e9d03964-097d-4010-a90a-9b62dd010add
   Args:
-    relation: :hasBirthYear
-    source: Karin_Elisabeth_von_Schaper
-    literal_type: xsd:integer
-    literal_value: 1920
-  AddLiteral (03c66335-76ec-478e-a816-0ed5332fa732)
- Call ID: 03c66335-76ec-478e-a816-0ed5332fa732
-  Args:
-    relation: :hasDeathYear
-    literal_value: 2012
-    literal_type: xsd:integer
-    source: Karin_Elisabeth_von_Schaper
-  Finish (5a975b21-c854-4ec6-ac79-00705218d133)
- Call ID: 5a975b21-c854-4ec6-ac79-00705218d133
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -595,39 +655,32 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Friedrich_Franz_Mecklenburg_Schwerin a :Man ;
-      :hasBirthYear 1910 ;
-      :hasBrother data:Christian_Louis ;
-      :hasDeathYear 2001 ;
-      :hasFather data:Frederick_Francis_IV ;
-      :hasMarriageYear 1941 ;
-      :hasMother data:Alexandra_Hanover ;
-      :hasRelation data:Karin_Elisabeth_von_Schaper .
+  data:Bernard_Topping a :Man,
+          :Person ;
+      :isFatherOf data:Anne_Topping .
 
-  data:Alexandra_Hanover a :Woman ;
-      :hasFather data:Ernest_Augustus_Hanover ;
-      :hasMother data:Thyra_Denmark .
+  data:Rose_Leveson-Gower a :Person,
+          :Woman ;
+      :isMotherOf data:Granville_Leveson-Gower_5th_Earl_Granville .
 
-  data:Christian_IX_Denmark a :Man .
+  data:Florence_Pearson a :Person,
+          :Woman .
 
-  data:Christian_Louis a :Man .
+  data:Granville_George_Fergus_Leveson-Gower a :Man,
+          :Person ;
+      :formerlyKnownAs "Lord Leveson"^^xsd:string ;
+      :hasBirthYear 1959 ;
+      :hasMarriageYear 1997,
+          2016 ;
+      :hasRelation data:Anne_Topping,
+          data:Florence_Pearson .
 
-  data:Ernest_Augustus_Hanover a :Man .
+  data:Granville_Leveson-Gower_5th_Earl_Granville a :Man,
+          :Person ;
+      :isFatherOf data:Granville_George_Fergus_Leveson-Gower .
 
-  data:Frederick_Francis_IV a :Man .
-
-  data:Karin_Elisabeth_von_Schaper a :Woman ;
-      :hasBirthYear 1920 ;
-      :hasDeathYear 2012 ;
-      :hasFather data:Walter_von_Schaper ;
-      :hasMother data:Louise_von_Munchhausen .
-
-  data:Louise_von_Munchhausen a :Woman .
-
-  data:Thyra_Denmark a :Woman ;
-      :hasFather data:Christian_IX_Denmark .
-
-  data:Walter_von_Schaper a :Man .
+  data:Anne_Topping a :Person,
+          :Woman .
 
 
 
@@ -639,182 +692,38 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (7c6d2163-b507-496d-9399-dc6344db954c)
- Call ID: 7c6d2163-b507-496d-9399-dc6344db954c
+  ValidateShacl (1956498a-7cb2-4093-a6c3-e78c1371a522)
+ Call ID: 1956498a-7cb2-4093-a6c3-e78c1371a522
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:21
+Total violations:3
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node Frederick_Francis_IV lacks the required class :Ancestor.
+      The node Bernard_Topping is used as a subject of the property :isFatherOf, but it is missing the mandatory class assignment :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_IV, :Ancestor)
+      AssignClass(node='Bernard_Topping', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node Alexandra_Hanover lacks the required class :Ancestor.
+      The node Granville_Leveson-Gower_5th_Earl_Granville is used as a subject of the property :isFatherOf, but it is missing the mandatory class assignment :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_Hanover, :Ancestor)
+      AssignClass(node='Granville_Leveson-Gower_5th_Earl_Granville', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The node Christian_IX_Denmark lacks the required class :Ancestor.
+      The node Rose_Leveson-Gower is used as a subject of the property :isMotherOf, but it is missing the mandatory class assignment :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_IX_Denmark, :Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Frederick_Francis_IV lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_IV, :Ancestor)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Ernest_Augustus_Hanover lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Hanover, :Ancestor)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Walter_von_Schaper lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Walter_von_Schaper, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Alexandra_Hanover lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_Hanover, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Thyra_Denmark lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thyra_Denmark, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Louise_von_Munchhausen lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Louise_von_Munchhausen, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Christian_IX_Denmark lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_IX_Denmark, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Frederick_Francis_IV lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_IV, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Ernest_Augustus_Hanover lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Hanover, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Walter_von_Schaper lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Walter_von_Schaper, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Alexandra_Hanover lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_Hanover, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Thyra_Denmark lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thyra_Denmark, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Louise_von_Munchhausen lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Louise_von_Munchhausen, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Christian_IX_Denmark lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_IX_Denmark, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Walter_von_Schaper lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Walter_von_Schaper, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Ernest_Augustus_Hanover lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Hanover, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Louise_von_Munchhausen lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Louise_von_Munchhausen, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Thyra_Denmark lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thyra_Denmark, :Ancestor)
+      AssignClass(node='Rose_Leveson-Gower', class=':Ancestor')
 
 
 
@@ -823,60 +732,21 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (48376b9c-9934-40a6-acf0-70b2f3555f35)
- Call ID: 48376b9c-9934-40a6-acf0-70b2f3555f35
+  AssignClass (413a42b3-a7e6-4d0d-90ed-c97f749abcac)
+ Call ID: 413a42b3-a7e6-4d0d-90ed-c97f749abcac
   Args:
-    source: Frederick_Francis_IV
+    source: Bernard_Topping
     type: :Ancestor
-  AssignClass (6d5e218c-8649-4624-89eb-3611142394dd)
- Call ID: 6d5e218c-8649-4624-89eb-3611142394dd
-  Args:
-    source: Alexandra_Hanover
-    type: :Ancestor
-  AssignClass (568c39cd-be14-40b3-9b60-3b9a251c46ae)
- Call ID: 568c39cd-be14-40b3-9b60-3b9a251c46ae
-  Args:
-    source: Christian_IX_Denmark
-    type: :Ancestor
-  AssignClass (20aa869d-1228-42b6-937b-d8484b50e4dc)
- Call ID: 20aa869d-1228-42b6-937b-d8484b50e4dc
+  AssignClass (17567fa6-496b-499a-991d-c3e1b74b4c4d)
+ Call ID: 17567fa6-496b-499a-991d-c3e1b74b4c4d
   Args:
     type: :Ancestor
-    source: Ernest_Augustus_Hanover
-  AssignClass (e79aad9b-a32c-40ac-b7f6-b9de00e00760)
- Call ID: e79aad9b-a32c-40ac-b7f6-b9de00e00760
+    source: Granville_Leveson-Gower_5th_Earl_Granville
+  AssignClass (c5762a74-80bb-425b-b03e-dfd50f3189c3)
+ Call ID: c5762a74-80bb-425b-b03e-dfd50f3189c3
   Args:
     type: :Ancestor
-    source: Walter_von_Schaper
-  AssignClass (e8d4d8b2-4a50-4eda-969d-bd256bbb698b)
- Call ID: e8d4d8b2-4a50-4eda-969d-bd256bbb698b
-  Args:
-    source: Thyra_Denmark
-    type: :Ancestor
-  AssignClass (90028dac-6146-44f3-b056-f196fd76d327)
- Call ID: 90028dac-6146-44f3-b056-f196fd76d327
-  Args:
-    type: :Ancestor
-    source: Louise_von_Munchhausen
-  ValidateShacl (3a682aed-4b8f-4996-9d6f-9cee0c0b520c)
- Call ID: 3a682aed-4b8f-4996-9d6f-9cee0c0b520c
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Rose_Leveson-Gower
 
 ================================= Tool Message =================================
 
@@ -893,48 +763,45 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Friedrich_Franz_Mecklenburg_Schwerin a :Man ;
-      :hasBirthYear 1910 ;
-      :hasBrother data:Christian_Louis ;
-      :hasDeathYear 2001 ;
-      :hasFather data:Frederick_Francis_IV ;
-      :hasMarriageYear 1941 ;
-      :hasMother data:Alexandra_Hanover ;
-      :hasRelation data:Karin_Elisabeth_von_Schaper .
+  data:Bernard_Topping a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Anne_Topping .
 
-  data:Alexandra_Hanover a :Ancestor,
+  data:Rose_Leveson-Gower a :Ancestor,
+          :Person,
           :Woman ;
-      :hasFather data:Ernest_Augustus_Hanover ;
-      :hasMother data:Thyra_Denmark .
+      :isMotherOf data:Granville_Leveson-Gower_5th_Earl_Granville .
 
-  data:Christian_IX_Denmark a :Ancestor,
-          :Man .
-
-  data:Christian_Louis a :Man .
-
-  data:Ernest_Augustus_Hanover a :Ancestor,
-          :Man .
-
-  data:Frederick_Francis_IV a :Ancestor,
-          :Man .
-
-  data:Karin_Elisabeth_von_Schaper a :Woman ;
-      :hasBirthYear 1920 ;
-      :hasDeathYear 2012 ;
-      :hasFather data:Walter_von_Schaper ;
-      :hasMother data:Louise_von_Munchhausen .
-
-  data:Louise_von_Munchhausen a :Ancestor,
+  data:Florence_Pearson a :Person,
           :Woman .
 
-  data:Thyra_Denmark a :Ancestor,
-          :Woman ;
-      :hasFather data:Christian_IX_Denmark .
+  data:Granville_George_Fergus_Leveson-Gower a :Man,
+          :Person ;
+      :formerlyKnownAs "Lord Leveson"^^xsd:string ;
+      :hasBirthYear 1959 ;
+      :hasMarriageYear 1997,
+          2016 ;
+      :hasRelation data:Anne_Topping,
+          data:Florence_Pearson .
 
-  data:Walter_von_Schaper a :Ancestor,
-          :Man .
+  data:Granville_Leveson-Gower_5th_Earl_Granville a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Granville_George_Fergus_Leveson-Gower .
+
+  data:Anne_Topping a :Person,
+          :Woman .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (b84bfc7b-fdbe-41a9-a457-fd6a0c46f61c)
+ Call ID: b84bfc7b-fdbe-41a9-a457-fd6a0c46f61c
+  Args:
 
 ================================= Tool Message =================================
 
@@ -944,6 +811,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (655b4aa6-d1f7-4541-b615-b32e3306828a)
- Call ID: 655b4aa6-d1f7-4541-b615-b32e3306828a
+  Finish (65855de1-a253-432e-8497-e3ef56a09a97)
+ Call ID: 65855de1-a253-432e-8497-e3ef56a09a97
   Args:

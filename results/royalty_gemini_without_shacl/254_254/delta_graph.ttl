@@ -2,37 +2,47 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Amanda_Knatchbull a :Person,
-        :Woman ;
-    :isDaughterOf data:John_Knatchbull,
-        data:Patricia_Mountbatten .
-
-data:Earl_Mountbatten_of_Burma a :Ancestor,
-        :Man,
+data:Mark_Lascelles a :Man,
         :Person ;
-    :isFatherOf data:Patricia_Mountbatten .
+    :hasFather data:George_Henry_Hubert_Lascelles ;
+    :hasMother data:Patricia_Bambi_Tuckwell .
 
-data:Edwina_Ashley a :Ancestor,
-        :Person,
-        :Woman ;
-    :isMotherOf data:Patricia_Mountbatten .
-
-data:Lady_Pamela_Hicks a :Person,
-        :Woman ;
-    :isSisterOf data:Patricia_Mountbatten .
-
-data:Nicholas_Knatchbull a :Man,
-        :Person ;
-    :isSonOf data:John_Knatchbull,
-        data:Patricia_Mountbatten .
-
-data:John_Knatchbull a :Man,
+data:Barry_Tuckwell a :Man,
         :Person .
 
-data:Patricia_Mountbatten a :Person,
+data:Erwin_Stein a :Man,
+        :Person .
+
+data:George_Henry_Hubert_Lascelles a :Man,
+        :Person ;
+    :hasBirthYear 1923 ;
+    :hasDeathYear 2011 ;
+    :hasFather data:Henry_Viscount_Lascelles ;
+    :hasMarriageYear 1949,
+        1967 ;
+    :hasMother data:Princess_Mary ;
+    :hasRelation data:Marion_Stein,
+        data:Patricia_Bambi_Tuckwell .
+
+data:Henry_Viscount_Lascelles a :Man,
+        :Person .
+
+data:King_George_V a :Man,
+        :Person .
+
+data:Marion_Stein a :Person,
         :Woman ;
-    :hasBirthYear 1924 ;
-    :hasDeathYear 2017 ;
-    :hasMarriageYear 1946 ;
-    :hasRelation data:John_Knatchbull .
+    :hasFather data:Erwin_Stein .
+
+data:Princess_Mary a :Person,
+        :Woman ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary .
+
+data:Queen_Mary a :Person,
+        :Woman .
+
+data:Patricia_Bambi_Tuckwell a :Person,
+        :Woman ;
+    :isSiblingOf data:Barry_Tuckwell .
 

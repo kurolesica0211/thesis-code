@@ -120,7 +120,7 @@ Violations:
     Severity: Violation
     Focus node: Achileas-Andreas_of_Greece_and_Denmark
     Path: hasFather
-    Value: Crown_Prince_Pavlos_of_Greece
+    Value: Pavlos_Crown_Prince_of_Greece
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -256,7 +256,7 @@ Violations:
     Severity: Violation
     Focus node: Achileas-Andreas_of_Greece_and_Denmark
     Path: hasMother
-    Value: Marie-Chantal_Miller
+    Value: Anne-Marie_of_Denmark
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -340,7 +340,7 @@ Violations:
     Severity: Violation
     Focus node: Achileas-Andreas_of_Greece_and_Denmark
     Path: hasMother
-    Value: Anne-Marie_of_Denmark
+    Value: Marie-Chantal_Miller
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -561,7 +561,7 @@ Violations:
     Severity: Violation
     Focus node: Achileas-Andreas_of_Greece_and_Denmark
     Path: hasFather
-    Value: Crown_Prince_Pavlos_of_Greece
+    Value: Pavlos_Crown_Prince_of_Greece
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -695,9 +695,9 @@ Violations:
 
   Violation [10]:
     Severity: Violation
-    Focus node: Isabella_Massenet
+    Focus node: Achileas-Andreas_of_Greece_and_Denmark
     Path: hasMother
-    Value: Natalie_Massenet
+    Value: Anne-Marie_of_Denmark
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -706,7 +706,7 @@ Violations:
           sh:maxCount 1 ;
           sh:path :hasMother .
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    Classes assigned to the focus node: [':Person', ':Woman']
+    Classes assigned to the focus node: [':Person', ':Man']
     Definitions of the classes assigned to the focus node:
       Class :Person:
         :Person a owl:Class ;
@@ -727,12 +727,14 @@ Violations:
             owl:disjointWith :Sex ;
             owl:equivalentClass [ a owl:Class ;
                     owl:unionOf ( :Man :Woman ) ] .
-      Class :Woman:
-        :Woman a owl:Class ;
+      Class :Man:
+        :Man a owl:Class ;
+            owl:disjointWith :Sex,
+                :Woman ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
+                                owl:someValuesFrom :Male ] ) ] .
 
     Definition of the path:
       :hasMother a owl:FunctionalProperty,
@@ -764,12 +766,14 @@ Violations:
             owl:disjointWith :Sex ;
             owl:equivalentClass [ a owl:Class ;
                     owl:unionOf ( :Man :Woman ) ] .
-      Class :Woman:
-        :Woman a owl:Class ;
+      Class :Man:
+        :Man a owl:Class ;
+            owl:disjointWith :Sex,
+                :Woman ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
+                                owl:someValuesFrom :Male ] ) ] .
 
 
 
@@ -861,90 +865,6 @@ Violations:
     Severity: Violation
     Focus node: Achileas-Andreas_of_Greece_and_Denmark
     Path: hasMother
-    Value: Anne-Marie_of_Denmark
-    Constraint: ClassConstraintComponent
-    Source shape:
-      :Person-hasMother a sh:PropertyShape ;
-          sh:class :Ancestor,
-              :Woman ;
-          sh:maxCount 1 ;
-          sh:path :hasMother .
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    Classes assigned to the focus node: [':Person', ':Man']
-    Definitions of the classes assigned to the focus node:
-      Class :Person:
-        :Person a owl:Class ;
-            rdfs:subClassOf [ a owl:Restriction ;
-                    owl:onProperty :hasFather ;
-                    owl:someValuesFrom :Man ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasMother ;
-                    owl:someValuesFrom :Woman ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasSex ;
-                    owl:someValuesFrom :Sex ],
-                [ a owl:Restriction ;
-                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                    owl:onClass :Person ;
-                    owl:onProperty :hasParent ],
-                :DomainEntity ;
-            owl:disjointWith :Sex ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:unionOf ( :Man :Woman ) ] .
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
-
-    Definition of the path:
-      :hasMother a owl:FunctionalProperty,
-              owl:ObjectProperty ;
-          rdfs:domain :Person ;
-          rdfs:range :Ancestor,
-              :Woman ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf ;
-          owl:inverseOf :isMotherOf .
-    Classes assigned to the value node: [':Person', ':Woman']
-    Definitions of the classes assigned to the value node:
-      Class :Person:
-        :Person a owl:Class ;
-            rdfs:subClassOf [ a owl:Restriction ;
-                    owl:onProperty :hasFather ;
-                    owl:someValuesFrom :Man ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasMother ;
-                    owl:someValuesFrom :Woman ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasSex ;
-                    owl:someValuesFrom :Sex ],
-                [ a owl:Restriction ;
-                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                    owl:onClass :Person ;
-                    owl:onProperty :hasParent ],
-                :DomainEntity ;
-            owl:disjointWith :Sex ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:unionOf ( :Man :Woman ) ] .
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
-
-
-
-  Violation [13]:
-    Severity: Violation
-    Focus node: Achileas-Andreas_of_Greece_and_Denmark
-    Path: hasMother
     Value: None
     Constraint: MaxCountConstraintComponent
     Source shape:
@@ -993,6 +913,86 @@ Violations:
           rdfs:subPropertyOf :hasParent,
               :isChildOf ;
           owl:inverseOf :isMotherOf .
+
+
+  Violation [13]:
+    Severity: Violation
+    Focus node: Isabella_Massenet
+    Path: hasMother
+    Value: Natalie_Massenet
+    Constraint: ClassConstraintComponent
+    Source shape:
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
+          sh:maxCount 1 ;
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    Classes assigned to the focus node: [':Person', ':Woman']
+    Definitions of the classes assigned to the focus node:
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+
+    Definition of the path:
+      :hasMother a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Woman ;
+          rdfs:subPropertyOf :hasParent,
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
+    Classes assigned to the value node: [':Person', ':Woman']
+    Definitions of the classes assigned to the value node:
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+
 
 
   Violation [14]:
@@ -1082,7 +1082,7 @@ Violations:
     Severity: Violation
     Focus node: Achileas-Andreas_of_Greece_and_Denmark
     Path: hasFather
-    Value: Crown_Prince_Pavlos_of_Greece
+    Value: Pavlos_Crown_Prince_of_Greece
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -1216,9 +1216,9 @@ Violations:
 
   Violation [17]:
     Severity: Violation
-    Focus node: Isabella_Massenet
+    Focus node: Achileas-Andreas_of_Greece_and_Denmark
     Path: hasMother
-    Value: Natalie_Massenet
+    Value: Anne-Marie_of_Denmark
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -1227,7 +1227,7 @@ Violations:
           sh:maxCount 1 ;
           sh:path :hasMother .
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    Classes assigned to the focus node: [':Person', ':Woman']
+    Classes assigned to the focus node: [':Person', ':Man']
     Definitions of the classes assigned to the focus node:
       Class :Person:
         :Person a owl:Class ;
@@ -1248,12 +1248,14 @@ Violations:
             owl:disjointWith :Sex ;
             owl:equivalentClass [ a owl:Class ;
                     owl:unionOf ( :Man :Woman ) ] .
-      Class :Woman:
-        :Woman a owl:Class ;
+      Class :Man:
+        :Man a owl:Class ;
+            owl:disjointWith :Sex,
+                :Woman ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
+                                owl:someValuesFrom :Male ] ) ] .
 
     Definition of the path:
       :hasMother a owl:FunctionalProperty,
@@ -1285,12 +1287,14 @@ Violations:
             owl:disjointWith :Sex ;
             owl:equivalentClass [ a owl:Class ;
                     owl:unionOf ( :Man :Woman ) ] .
-      Class :Woman:
-        :Woman a owl:Class ;
+      Class :Man:
+        :Man a owl:Class ;
+            owl:disjointWith :Sex,
+                :Woman ;
             owl:equivalentClass [ a owl:Class ;
                     owl:intersectionOf ( :Person [ a owl:Restriction ;
                                 owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
+                                owl:someValuesFrom :Male ] ) ] .
 
 
 
@@ -1382,90 +1386,6 @@ Violations:
     Severity: Violation
     Focus node: Achileas-Andreas_of_Greece_and_Denmark
     Path: hasMother
-    Value: Anne-Marie_of_Denmark
-    Constraint: ClassConstraintComponent
-    Source shape:
-      :Person-hasMother a sh:PropertyShape ;
-          sh:class :Ancestor,
-              :Woman ;
-          sh:maxCount 1 ;
-          sh:path :hasMother .
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    Classes assigned to the focus node: [':Person', ':Man']
-    Definitions of the classes assigned to the focus node:
-      Class :Person:
-        :Person a owl:Class ;
-            rdfs:subClassOf [ a owl:Restriction ;
-                    owl:onProperty :hasFather ;
-                    owl:someValuesFrom :Man ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasMother ;
-                    owl:someValuesFrom :Woman ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasSex ;
-                    owl:someValuesFrom :Sex ],
-                [ a owl:Restriction ;
-                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                    owl:onClass :Person ;
-                    owl:onProperty :hasParent ],
-                :DomainEntity ;
-            owl:disjointWith :Sex ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:unionOf ( :Man :Woman ) ] .
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
-
-    Definition of the path:
-      :hasMother a owl:FunctionalProperty,
-              owl:ObjectProperty ;
-          rdfs:domain :Person ;
-          rdfs:range :Ancestor,
-              :Woman ;
-          rdfs:subPropertyOf :hasParent,
-              :isChildOf ;
-          owl:inverseOf :isMotherOf .
-    Classes assigned to the value node: [':Person', ':Woman']
-    Definitions of the classes assigned to the value node:
-      Class :Person:
-        :Person a owl:Class ;
-            rdfs:subClassOf [ a owl:Restriction ;
-                    owl:onProperty :hasFather ;
-                    owl:someValuesFrom :Man ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasMother ;
-                    owl:someValuesFrom :Woman ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasSex ;
-                    owl:someValuesFrom :Sex ],
-                [ a owl:Restriction ;
-                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                    owl:onClass :Person ;
-                    owl:onProperty :hasParent ],
-                :DomainEntity ;
-            owl:disjointWith :Sex ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:unionOf ( :Man :Woman ) ] .
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
-
-
-
-  Violation [20]:
-    Severity: Violation
-    Focus node: Achileas-Andreas_of_Greece_and_Denmark
-    Path: hasMother
     Value: None
     Constraint: MaxCountConstraintComponent
     Source shape:
@@ -1514,6 +1434,86 @@ Violations:
           rdfs:subPropertyOf :hasParent,
               :isChildOf ;
           owl:inverseOf :isMotherOf .
+
+
+  Violation [20]:
+    Severity: Violation
+    Focus node: Isabella_Massenet
+    Path: hasMother
+    Value: Natalie_Massenet
+    Constraint: ClassConstraintComponent
+    Source shape:
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
+          sh:maxCount 1 ;
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    Classes assigned to the focus node: [':Person', ':Woman']
+    Definitions of the classes assigned to the focus node:
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+
+    Definition of the path:
+      :hasMother a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Woman ;
+          rdfs:subPropertyOf :hasParent,
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
+    Classes assigned to the value node: [':Person', ':Woman']
+    Definitions of the classes assigned to the value node:
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+
 
 
   Violation [21]:
@@ -1603,4 +1603,4 @@ Please analyze each violation and provide the corresponding explanation and fix 
 
 ================================== Ai Message ==================================
 
-[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The node Constantine_II_of_Greece lacks the required class :Ancestor or :Man to be a valid value for the property :hasFather.",\n      "instruction": "AssignClass(node: \'Constantine_II_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Crown_Prince_Pavlos_of_Greece lacks the required class :Ancestor or :Man to be a valid value for the property :hasFather.",\n      "instruction": "AssignClass(node: \'Crown_Prince_Pavlos_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Achileas-Andreas_of_Greece_and_Denmark has more than one value for the functional property :hasFather.",\n      "instruction": "RemoveTriple(subject: \'Achileas-Andreas_of_Greece_and_Denmark\', predicate: \':hasFather\', object: \'Constantine_II_of_Greece\')"\n    },\n    {\n      "explanation": "The node Marie-Chantal_Miller lacks the required class :Ancestor or :Woman to be a valid value for the property :hasMother.",\n      "instruction": "AssignClass(node: \'Marie-Chantal_Miller\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Anne-Marie_of_Denmark lacks the required class :Ancestor or :Woman to be a valid value for the property :hasMother.",\n      "instruction": "AssignClass(node: \'Anne-Marie_of_Denmark\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Achileas-Andreas_of_Greece_and_Denmark has more than one value for the functional property :hasMother.",\n      "instruction": "RemoveTriple(subject: \'Achileas-Andreas_of_Greece_and_Denmark\', predicate: \':hasMother\', object: \'Marie-Chantal_Miller\')"\n    },\n    {\n      "explanation": "The node Constantine_II_of_Greece is missing the required class assignment to satisfy the :hasFather relationship requirements.",\n      "instruction": "AssignClass(node: \'Constantine_II_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Crown_Prince_Pavlos_of_Greece is missing the required class assignment to satisfy the :hasFather relationship requirements.",\n      "instruction": "AssignClass(node: \'Crown_Prince_Pavlos_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Achileas-Andreas_of_Greece_and_Denmark has multiple values assigned to the functional property :hasFather.",\n      "instruction": "RemoveTriple(subject: \'Achileas-Andreas_of_Greece_and_Denmark\', predicate: \':hasFather\', object: \'Crown_Prince_Pavlos_of_Greece\')"\n    },\n    {\n      "explanation": "The node Natalie_Massenet lacks the required class :Ancestor or :Woman to be a valid value for the property :hasMother.",\n      "instruction": "AssignClass(node: \'Natalie_Massenet\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Marie-Chantal_Miller is missing the required class assignment to satisfy the :hasMother relationship requirements.",\n      "instruction": "AssignClass(node: \'Marie-Chantal_Miller\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Anne-Marie_of_Denmark is missing the required class assignment to satisfy the :hasMother relationship requirements.",\n      "instruction": "AssignClass(node: \'Anne-Marie_of_Denmark\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Achileas-Andreas_of_Greece_and_Denmark has multiple values assigned to the functional property :hasMother.",\n      "instruction": "RemoveTriple(subject: \'Achileas-Andreas_of_Greece_and_Denmark\', predicate: \':hasMother\', object: \'Anne-Marie_of_Denmark\')"\n    },\n    {\n      "explanation": "The node Constantine_II_of_Greece is missing the required class assignment to satisfy the :hasFather relationship requirements.",\n      "instruction": "AssignClass(node: \'Constantine_II_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Crown_Prince_Pavlos_of_Greece is missing the required class assignment to satisfy the :hasFather relationship requirements.",\n      "instruction": "AssignClass(node: \'Crown_Prince_Pavlos_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Achileas-Andreas_of_Greece_and_Denmark has multiple values assigned to the functional property :hasFather.",\n      "instruction": "RemoveTriple(subject: \'Achileas-Andreas_of_Greece_and_Denmark\', predicate: \':hasFather\', object: \'Constantine_II_of_Greece\')"\n    },\n    {\n      "explanation": "The node Natalie_Massenet is missing the required class assignment to satisfy the :hasMother relationship requirements.",\n      "instruction": "AssignClass(node: \'Natalie_Massenet\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Marie-Chantal_Miller is missing the required class assignment to satisfy the :hasMother relationship requirements.",\n      "instruction": "AssignClass(node: \'Marie-Chantal_Miller\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Anne-Marie_of_Denmark is missing the required class assignment to satisfy the :hasMother relationship requirements.",\n      "instruction": "AssignClass(node: \'Anne-Marie_of_Denmark\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Achileas-Andreas_of_Greece_and_Denmark has multiple values assigned to the functional property :hasMother.",\n      "instruction": "RemoveTriple(subject: \'Achileas-Andreas_of_Greece_and_Denmark\', predicate: \':hasMother\', object: \'Marie-Chantal_Miller\')"\n    },\n    {\n      "explanation": "The node Natalie_Massenet is missing the required class assignment to satisfy the :hasMother relationship requirements.",\n      "instruction": "AssignClass(node: \'Natalie_Massenet\', class: \':Ancestor\')"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHBFlAqP2bTOsydpcrODkUOCRGI4i98n9fKdYFpGnwLy/nAvvHASRHCHnxHVGW'}}]
+[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The person Constantine_II_of_Greece is assigned to the :hasFather property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Constantine_II_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The person Pavlos_Crown_Prince_of_Greece is assigned to the :hasFather property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Pavlos_Crown_Prince_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Achileas-Andreas_of_Greece_and_Denmark has multiple :hasFather relationships, violating the maximum count constraint of 1.",\n      "instruction": "RemoveTriple(subject: \'Achileas-Andreas_of_Greece_and_Denmark\', predicate: \':hasFather\', object: \'Constantine_II_of_Greece\')"\n    },\n    {\n      "explanation": "The person Anne-Marie_of_Denmark is assigned to the :hasMother property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Anne-Marie_of_Denmark\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The person Marie-Chantal_Miller is assigned to the :hasMother property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Marie-Chantal_Miller\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Achileas-Andreas_of_Greece_and_Denmark has multiple :hasMother relationships, violating the maximum count constraint of 1.",\n      "instruction": "RemoveTriple(subject: \'Achileas-Andreas_of_Greece_and_Denmark\', predicate: \':hasMother\', object: \'Anne-Marie_of_Denmark\')"\n    },\n    {\n      "explanation": "The person Constantine_II_of_Greece is assigned to the :hasFather property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Constantine_II_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The person Pavlos_Crown_Prince_of_Greece is assigned to the :hasFather property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Pavlos_Crown_Prince_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Achileas-Andreas_of_Greece_and_Denmark has multiple :hasFather relationships, violating the maximum count constraint of 1.",\n      "instruction": "RemoveTriple(subject: \'Achileas-Andreas_of_Greece_and_Denmark\', predicate: \':hasFather\', object: \'Constantine_II_of_Greece\')"\n    },\n    {\n      "explanation": "The person Anne-Marie_of_Denmark is assigned to the :hasMother property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Anne-Marie_of_Denmark\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The person Marie-Chantal_Miller is assigned to the :hasMother property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Marie-Chantal_Miller\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Achileas-Andreas_of_Greece_and_Denmark has multiple :hasMother relationships, violating the maximum count constraint of 1.",\n      "instruction": "RemoveTriple(subject: \'Achileas-Andreas_of_Greece_and_Denmark\', predicate: \':hasMother\', object: \'Anne-Marie_of_Denmark\')"\n    },\n    {\n      "explanation": "The person Natalie_Massenet is assigned to the :hasMother property of Isabella_Massenet, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Natalie_Massenet\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The person Constantine_II_of_Greece is assigned to the :hasFather property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Constantine_II_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The person Pavlos_Crown_Prince_of_Greece is assigned to the :hasFather property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Pavlos_Crown_Prince_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Achileas-Andreas_of_Greece_and_Denmark has multiple :hasFather relationships, violating the maximum count constraint of 1.",\n      "instruction": "RemoveTriple(subject: \'Achileas-Andreas_of_Greece_and_Denmark\', predicate: \':hasFather\', object: \'Constantine_II_of_Greece\')"\n    },\n    {\n      "explanation": "The person Anne-Marie_of_Denmark is assigned to the :hasMother property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Anne-Marie_of_Denmark\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The person Marie-Chantal_Miller is assigned to the :hasMother property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Marie-Chantal_Miller\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Achileas-Andreas_of_Greece_and_Denmark has multiple :hasMother relationships, violating the maximum count constraint of 1.",\n      "instruction": "RemoveTriple(subject: \'Achileas-Andreas_of_Greece_and_Denmark\', predicate: \':hasMother\', object: \'Anne-Marie_of_Denmark\')"\n    },\n    {\n      "explanation": "The person Natalie_Massenet is assigned to the :hasMother property of Isabella_Massenet, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Natalie_Massenet\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The person Natalie_Massenet is assigned to the :hasMother property of Isabella_Massenet, but it lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node: \'Natalie_Massenet\', class: \':Ancestor\')"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHmbhjImtE+Dvy2J6YMqFY4pAGr0x5ST1XklN1/LW14MrqOLnNObtIjFwYlc/z'}}]

@@ -2,36 +2,18 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:SophieWinkleman a :Person,
-        :Woman ;
-    :isMotherOf data:IsabellaAlexandraMay .
+data:Princess_Maria a :Person,
+        :Woman .
 
-data:IsabellaAlexandraMay a :Person,
-        :Woman ;
-    :hasFather data:FrederickWindsor ;
-    :hasMother data:SophieWinkleman .
-
-data:PrinceMichaelOfKent a :Man,
+data:Stephan_Prince_of_Lippe a :Man,
         :Person ;
-    :isFatherOf data:FrederickWindsor,
-        data:LadyGabriella .
+    :hasBirthYear 1959 ;
+    :hasFather data:Armin_Prince_of_Lippe ;
+    :hasMother data:Traute_Becker .
 
-data:PrincessMichaelOfKent a :Person,
-        :Woman ;
-    :isMotherOf data:FrederickWindsor,
-        data:LadyGabriella .
+data:Armin_Prince_of_Lippe a :Man,
+        :Person .
 
-data:LadyGabriella a :Person,
-        :Woman ;
-    :hasFather data:PrinceMichaelOfKent ;
-    :hasMother data:PrincessMichaelOfKent ;
-    :isSisterOf data:FrederickWindsor .
-
-data:FrederickWindsor a :Man,
-        :Person ;
-    :hasBirthYear 1979 ;
-    :hasFather data:PrinceMichaelOfKent ;
-    :hasMother data:PrincessMichaelOfKent ;
-    :hasSister data:LadyGabriella ;
-    :isFatherOf data:IsabellaAlexandraMay .
+data:Traute_Becker a :Person,
+        :Woman .
 

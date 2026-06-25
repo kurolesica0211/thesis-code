@@ -2,46 +2,47 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Anne_Duchess_of_Calabria a :Person,
+data:Claude_of_Orleans a :Person,
         :Woman ;
-    :isSisterOf data:Claude_of_Orl%C3%A9ans .
+    :hasBirthYear 1943 ;
+    :hasMarriageYear 1964 ;
+    :hasRelation data:Amedeo_Duke_of_Aosta,
+        data:Enrico_Gandolfi,
+        data:Luigi_Arnaldo_La_Cagnina ;
+    :isChildOf data:Henri_Count_of_Paris,
+        data:Isabelle_of_Orleans_Braganza ;
+    :isSiblingOf data:Anne_Duchess_of_Calabria,
+        data:Diane_Duchess_of_Wurttemberg,
+        data:Henri_Count_of_Paris_Jr .
 
-data:Diane_Duchess_of_W%C3%BCrttemberg a :Person,
-        :Woman ;
-    :isSisterOf data:Claude_of_Orl%C3%A9ans .
-
-data:Henri_Count_of_Paris_II a :Man,
-        :Person ;
-    :isBrotherOf data:Claude_of_Orl%C3%A9ans .
-
-data:Aimone_Duke_of_Aosta a :Man,
+data:Aimone_Duke_of_Aosta a :Ancestor,
+        :Man,
         :Person .
 
 data:Amedeo_Duke_of_Aosta a :Man,
         :Person ;
-    :hasFather data:Aimone_Duke_of_Aosta .
+    :isChildOf data:Aimone_Duke_of_Aosta .
+
+data:Anne_Duchess_of_Calabria a :Person,
+        :Woman .
+
+data:Diane_Duchess_of_Wurttemberg a :Person,
+        :Woman .
 
 data:Enrico_Gandolfi a :Man,
         :Person .
 
-data:Henri_Count_of_Paris a :Man,
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man,
         :Person .
 
-data:Isabelle_of_Orl%C3%A9ans-Braganza a :Person,
+data:Henri_Count_of_Paris_Jr a :Man,
+        :Person .
+
+data:Isabelle_of_Orleans_Braganza a :Ancestor,
+        :Person,
         :Woman .
 
 data:Luigi_Arnaldo_La_Cagnina a :Man,
         :Person .
-
-data:Claude_of_Orl%C3%A9ans a :Person,
-        :Woman ;
-    :hasBirthYear 1943 ;
-    :hasFather data:Henri_Count_of_Paris ;
-    :hasMarriageYear 1964,
-        1982,
-        2006 ;
-    :hasMother data:Isabelle_of_Orl%C3%A9ans-Braganza ;
-    :hasRelation data:Amedeo_Duke_of_Aosta,
-        data:Enrico_Gandolfi,
-        data:Luigi_Arnaldo_La_Cagnina .
 

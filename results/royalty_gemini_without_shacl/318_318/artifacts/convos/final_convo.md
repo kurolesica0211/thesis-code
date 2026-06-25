@@ -69,35 +69,39 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Don Carlos, Prince of Bourbon-Two Sicilies, Infante of Spain (Full Italian name: Carlo Maria Francesco d'Assisi Pasquale Ferdinando Antonio di Padova Francesco de Paola Alfonso Andrea Avelino Tancredi, Principe di Borbone delle Due Sicilie, Infante di Spagna; 10 November 1870 – 11 November 1949) was the son of Prince Alfonso of the Two Sicilies, Count of Caserta and Princess Maria Antonietta of Bourbon-Two Sicilies, and nephew of the last King of the Two Sicilies, Francis II.
+Alfonso, Prince of Asturias (10 May 1907 – 6 September 1938), was heir apparent to the throne of Spain from birth until the abolition of the monarchy in 1931.
+Alfonso was the eldest son of King Alfonso XIII of Spain and Victoria Eugenie of Battenberg.
+Alfonso's renunciation of his rights as heir to the Spanish throne in order to marry Cuban commoner Edelmira Sampedro caused controversy at the time.
+Though appearing to have sustained minor injuries, his haemophilia, inherited through his great-grandmother Queen Victoria, led to fatal internal bleeding.
+Early life
 
+Alfonso was the eldest child of the then-reigning King Alfonso XIII and Victoria Eugenie of Battenberg.
+As decreed by custom, he was registered by the Marquis of Figueroa, Minister of Justice, in the Civil Registry of the Royal Family as Alfonso Pío Cristino Eduardo Francisco Guillermo Carlos Enrique Eugenio Fernando Antonio Venancio.
+Eight days after his birth, Alfonso was christened in the royal chapel of the Royal Palace of Madrid by the Archbishop of Toledo.
+Prince Arthur, Duke of Connaught, Prince Friedrich Leopold of Prussia, Archduke Eugen of Austria and Afonso, Duke of Porto, were also present.
+Alfonso's father faced increasing political problems that led Spain to become a republic in 1931 when the monarch was deposed.
+Renunciation and marriages
 
-Marriages and children
+There had been plans for young Alfonso's deposition from succession, but ultimately he himself renounced his rights to the then-defunct throne to marry a commoner, Edelmira Sampedro y Robato, religiously in Ouchy on 21 June 1933, after which Alfonso took the courtesy title Count of Covadonga.
+In a civil ceremony on 3 July 1937, Alfonso married another commoner, Marta Esther Rocafort-Altuzarra, in Havana.
+However, Alfonso de Bourbon, a resident of California, later claimed to be an illegitimate son of Alfonso.
+In 1938, Alfonso, then resident in the United States, publicly stated his readiness to accept the Spanish crown if called on to do so.
+This action reversed Alfonso's renunciation of 1933 and led to his being disavowed by his father King Alfonso.
+Death
 
-On 14 February 1901 in Madrid, Carlos married Mercedes, Princess of Asturias, elder daughter of the late King Alfonso XII of Spain and of his wife Archduchess Maria Christina of Austria.
-Mercedes was the elder sister and heir presumptive to King Alfonso XIII of Spain, an unmarried teenager.
-In 1907, Carlos married secondly to Princess Louise of Orléans, daughter of Prince Philippe, Count of Paris.
-The couple had four children:
-
-
-Prince Carlos's descendants include King Felipe VI of Spain, Prince Pedro, Duke of Calabria, Prince Pedro Carlos of Orléans-Braganza, and Philip, Hereditary Prince of Yugoslavia, among others.
-Military service
-
-Carlos served in the Spanish Army in the Spanish–American War and received the Military Order of Maria Cristina.
-Two Sicilies succession
-
-In 1894, Carlos's father Alfonso became the head of the House of Bourbon-Two Sicilies.
-On marrying his first wife, Carlos renounced on 14 December 1900 his future rights of succession to the non-existent Crown of Two Sicilies in an official document, known as the Act of Cannes, subject to a requirement in the Treaty of Naples of 1759 and the Pragmatic Decree of 6 October 1759 that the Crown of Spain should not be combined with the "Italian Sovereignty".
-In 1960, Carlos' elder brother Ferdinand died without male issue, and a dispute arose between Carlos' son Alfonso and Carlos' younger brother Ranieri on the headship of the house, this with competing claims: by the law of primogeniture, Carlos' son Alfonso was considered the heir, but Ranieri claimed that Carlos had renounced his rights and those of his descendants according to the Act of Cannes.
-Alfonso refuted that claim by stating that it was only a promise from his father to relinquish this right if the crown of the Kingdom of the Two Sicilies were to be united with the Spanish Crown.
-Since this did not happen, the act had no effect and Carlos' son Alfonso reclaimed his rights.
-Alfonso's claim was recognised by the heads of the different lines of the House of Bourbon, although not by the head of the Orleans family, and in 1983 the Spanish Council of State, following an investigation by the Ministries of Justice and Foreign Affairs, the Royal Academy of Jurisprudence and Legislation and the Institute Salazar y Castro concluded unanimously in favour of Infante Don Alfonso's only son, Prince and Infante Don Carlos, a position shared by the Spanish Royal House.
+A car crash led to Alfonso's early death on September 6, 1938, at the age of 31.
+The car crashed into a telephone booth and Alfonso appeared to have only minor injuries, but his haemophilia led to fatal internal bleeding.
+Alfonso’s youngest brother, Gonzalo, had died just over four years before under very similar circumstances—having also inherited hemophilia, he was involved in a crash after the automobile he was in swerved to avoid a cyclist.
+Alfonso was entombed at Woodlawn Park Cemetery and Mausoleum (now Caballero Rivero Woodlawn Park North Cemetery and Mausoleum) in Miami, and was re-entombed in 1985 at the Pantheon of the Princes in El Escorial.
+Alfonso was the 1,120th Knight of the Order of the Golden Fleece in Spain and Knight with Collar of the Order of Charles III, inducted as both shortly after his birth in 1907.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -113,39 +117,9 @@ Alfonso's claim was recognised by the heads of the different lines of the House 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -160,6 +134,23 @@ Alfonso's claim was recognised by the heads of the different lines of the House 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -177,6 +168,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -244,29 +250,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -275,6 +273,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -287,6 +293,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -295,17 +303,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -333,6 +343,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -348,229 +442,128 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4fd9879b-e12a-4501-9d06-e4c5d3132c49)
- Call ID: 4fd9879b-e12a-4501-9d06-e4c5d3132c49
+  AssignClass (18474fd9-5fda-4039-8e05-5fe454c0a14a)
+ Call ID: 18474fd9-5fda-4039-8e05-5fe454c0a14a
   Args:
-    source: Don_Carlos
+    source: Alfonso_Prince_of_Asturias
     type: :Man
-  AssignClass (25543fec-c87e-489e-b455-ebb96057864b)
- Call ID: 25543fec-c87e-489e-b455-ebb96057864b
+  AssignClass (787cbad7-4ba9-4425-ad37-2b255dbec821)
+ Call ID: 787cbad7-4ba9-4425-ad37-2b255dbec821
   Args:
-    source: Don_Carlos
+    source: Alfonso_Prince_of_Asturias
     type: :Person
-  AddLiteral (abd74a46-ec35-450b-94a1-03d6d267527a)
- Call ID: abd74a46-ec35-450b-94a1-03d6d267527a
+  AddLiteral (e1834d0a-bb12-433e-acf1-74e6fe9f0a69)
+ Call ID: e1834d0a-bb12-433e-acf1-74e6fe9f0a69
   Args:
+    literal_value: 1907
+    source: Alfonso_Prince_of_Asturias
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1870
-    source: Don_Carlos
-  AddLiteral (a2ff6011-8339-4c83-8342-497347336e79)
- Call ID: a2ff6011-8339-4c83-8342-497347336e79
+  AddLiteral (1ed40eec-ac34-4ff9-a9c6-dd2fcbbad20f)
+ Call ID: 1ed40eec-ac34-4ff9-a9c6-dd2fcbbad20f
   Args:
-    literal_value: 1949
-    literal_type: xsd:integer
+    source: Alfonso_Prince_of_Asturias
+    literal_value: 1938
     relation: :hasDeathYear
-    source: Don_Carlos
-  AssignClass (798fd844-e693-4cd8-a8e2-f09909225984)
- Call ID: 798fd844-e693-4cd8-a8e2-f09909225984
+    literal_type: xsd:integer
+  AssignClass (efb0f378-a5a8-475c-92a8-6887a38447a3)
+ Call ID: efb0f378-a5a8-475c-92a8-6887a38447a3
   Args:
-    source: Alfonso_Two_Sicilies
     type: :Man
-  AssignClass (ed3d812d-c806-4ad3-82b4-bdf7063c080b)
- Call ID: ed3d812d-c806-4ad3-82b4-bdf7063c080b
+    source: Alfonso_XIII_of_Spain
+  AssignClass (2e058dc0-0ed8-42c0-8dba-d5b880561289)
+ Call ID: 2e058dc0-0ed8-42c0-8dba-d5b880561289
   Args:
+    source: Alfonso_XIII_of_Spain
     type: :Person
-    source: Alfonso_Two_Sicilies
-  AssignClass (da959594-85c6-4688-8d89-0c4121d217c7)
- Call ID: da959594-85c6-4688-8d89-0c4121d217c7
+  AssignClass (feaceeb2-876f-446d-a4b5-5f9218bd72fd)
+ Call ID: feaceeb2-876f-446d-a4b5-5f9218bd72fd
   Args:
-    source: Maria_Antonietta
     type: :Woman
-  AssignClass (95aa3229-9d28-498f-a53e-f447f8e5660f)
- Call ID: 95aa3229-9d28-498f-a53e-f447f8e5660f
+    source: Victoria_Eugenie_of_Battenberg
+  AssignClass (c43a2698-fc92-4f9e-bd26-24d11856e7ef)
+ Call ID: c43a2698-fc92-4f9e-bd26-24d11856e7ef
   Args:
+    source: Victoria_Eugenie_of_Battenberg
     type: :Person
-    source: Maria_Antonietta
-  AddTriple (24467029-9b8a-44da-8756-ed1ae5aea754)
- Call ID: 24467029-9b8a-44da-8756-ed1ae5aea754
+  AddTriple (3231385a-b11b-4d1e-a55a-8fbb2e2c0e8b)
+ Call ID: 3231385a-b11b-4d1e-a55a-8fbb2e2c0e8b
   Args:
-    target: Alfonso_Two_Sicilies
     relation: :hasFather
-    source: Don_Carlos
-  AddTriple (be069e9b-37f6-48ad-a1da-89e3d10cda32)
- Call ID: be069e9b-37f6-48ad-a1da-89e3d10cda32
+    target: Alfonso_XIII_of_Spain
+    source: Alfonso_Prince_of_Asturias
+  AddTriple (1f3126a2-b113-404d-a9af-faa923e7061b)
+ Call ID: 1f3126a2-b113-404d-a9af-faa923e7061b
   Args:
+    source: Alfonso_Prince_of_Asturias
+    target: Victoria_Eugenie_of_Battenberg
     relation: :hasMother
-    target: Maria_Antonietta
-    source: Don_Carlos
-  AssignClass (59f42bee-f2ac-4f24-9b53-d579f8f42104)
- Call ID: 59f42bee-f2ac-4f24-9b53-d579f8f42104
+  AssignClass (8cc63b7b-fcf3-4e4e-8720-2f0a9c986d3b)
+ Call ID: 8cc63b7b-fcf3-4e4e-8720-2f0a9c986d3b
   Args:
-    source: Francis_II
-    type: :Man
-  AssignClass (e8a10743-49f6-440a-a4d1-faa5bbb29ea3)
- Call ID: e8a10743-49f6-440a-a4d1-faa5bbb29ea3
-  Args:
-    type: :Person
-    source: Francis_II
-  AddTriple (f72ecdc6-7c65-402a-8437-b11fd4f26c08)
- Call ID: f72ecdc6-7c65-402a-8437-b11fd4f26c08
-  Args:
-    relation: :isBrotherOf
-    target: Alfonso_Two_Sicilies
-    source: Francis_II
-  AssignClass (986fecf7-e17d-4f8a-90a5-8ed9a6e0e990)
- Call ID: 986fecf7-e17d-4f8a-90a5-8ed9a6e0e990
-  Args:
+    source: Edelmira_Sampedro_y_Robato
     type: :Woman
-    source: Mercedes_Princess_Asturias
-  AssignClass (15f596ff-5ec0-458e-bd11-ebc838a3084a)
- Call ID: 15f596ff-5ec0-458e-bd11-ebc838a3084a
+  AssignClass (99c0f72f-67e1-454c-9a1c-c3eace7f35ea)
+ Call ID: 99c0f72f-67e1-454c-9a1c-c3eace7f35ea
   Args:
     type: :Person
-    source: Mercedes_Princess_Asturias
-  AddTriple (7a3f896a-ec7b-42dd-96b6-2b6d3ce72103)
- Call ID: 7a3f896a-ec7b-42dd-96b6-2b6d3ce72103
+    source: Edelmira_Sampedro_y_Robato
+  AddLiteral (ce06389b-c812-4918-b8a9-627e137c2879)
+ Call ID: ce06389b-c812-4918-b8a9-627e137c2879
   Args:
-    relation: :hasRelation
-    target: Mercedes_Princess_Asturias
-    source: Don_Carlos
-  AddLiteral (5f94f379-7023-4bb2-bb51-55c03223ac98)
- Call ID: 5f94f379-7023-4bb2-bb51-55c03223ac98
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1933
+    source: Alfonso_Prince_of_Asturias
+  AssignClass (617b52d8-538b-4b72-aab8-002562509712)
+ Call ID: 617b52d8-538b-4b72-aab8-002562509712
+  Args:
+    source: Marta_Esther_Rocafort-Altuzarra
+    type: :Woman
+  AssignClass (a54dc469-e227-4d07-8a43-7292c2fa0e4e)
+ Call ID: a54dc469-e227-4d07-8a43-7292c2fa0e4e
+  Args:
+    source: Marta_Esther_Rocafort-Altuzarra
+    type: :Person
+  AddLiteral (cb21b395-3478-4232-8f8e-dd68f6b4b5c3)
+ Call ID: cb21b395-3478-4232-8f8e-dd68f6b4b5c3
   Args:
     relation: :hasMarriageYear
     literal_type: xsd:integer
-    literal_value: 1901
-    source: Don_Carlos
-  AssignClass (8e41d934-84df-4634-b38a-f3868ca00678)
- Call ID: 8e41d934-84df-4634-b38a-f3868ca00678
+    source: Alfonso_Prince_of_Asturias
+    literal_value: 1937
+  AssignClass (86f5277c-5f9c-40b0-8aac-7fe4f1033893)
+ Call ID: 86f5277c-5f9c-40b0-8aac-7fe4f1033893
   Args:
-    source: Alfonso_XII_Spain
+    source: Gonzalo
     type: :Man
-  AssignClass (feb74582-807c-4356-9b86-53d3541f36a4)
- Call ID: feb74582-807c-4356-9b86-53d3541f36a4
+  AssignClass (db0b34b5-9729-467a-ac6c-323d2b7da470)
+ Call ID: db0b34b5-9729-467a-ac6c-323d2b7da470
   Args:
-    source: Alfonso_XII_Spain
+    source: Gonzalo
     type: :Person
-  AssignClass (5c34c061-1664-4f23-83c5-9fada7e14d72)
- Call ID: 5c34c061-1664-4f23-83c5-9fada7e14d72
+  AddTriple (f6449bbe-bc3a-4077-8387-6b3a54955b90)
+ Call ID: f6449bbe-bc3a-4077-8387-6b3a54955b90
   Args:
-    type: :Woman
-    source: Maria_Christina_Austria
-  AssignClass (6de9631c-e373-4188-8245-94363a73c7b9)
- Call ID: 6de9631c-e373-4188-8245-94363a73c7b9
-  Args:
-    source: Maria_Christina_Austria
-    type: :Person
-  AddTriple (57f51414-0c72-4920-ba77-cb7e575b9a01)
- Call ID: 57f51414-0c72-4920-ba77-cb7e575b9a01
-  Args:
-    relation: :hasFather
-    target: Alfonso_XII_Spain
-    source: Mercedes_Princess_Asturias
-  AddTriple (e411df5b-cc6d-4095-b733-cb616c66970f)
- Call ID: e411df5b-cc6d-4095-b733-cb616c66970f
-  Args:
-    source: Mercedes_Princess_Asturias
-    target: Maria_Christina_Austria
-    relation: :hasMother
-  AssignClass (fedf19f4-e5cf-417b-b852-fec10c54f04d)
- Call ID: fedf19f4-e5cf-417b-b852-fec10c54f04d
-  Args:
-    type: :Man
-    source: Alfonso_XIII_Spain
-  AssignClass (2c5cd438-c83d-4f65-97fc-140e6051d114)
- Call ID: 2c5cd438-c83d-4f65-97fc-140e6051d114
-  Args:
-    source: Alfonso_XIII_Spain
-    type: :Person
-  AddTriple (6c448b45-7d4a-4873-86a5-48aa7547215d)
- Call ID: 6c448b45-7d4a-4873-86a5-48aa7547215d
-  Args:
-    source: Mercedes_Princess_Asturias
-    target: Alfonso_XIII_Spain
-    relation: :isSisterOf
-  AssignClass (4ca7d002-d4d0-4256-b774-f36794a69225)
- Call ID: 4ca7d002-d4d0-4256-b774-f36794a69225
-  Args:
-    source: Louise_Orleans
-    type: :Woman
-  AssignClass (ab687b2f-70d3-4bc4-bfb6-e2b68a4ee69d)
- Call ID: ab687b2f-70d3-4bc4-bfb6-e2b68a4ee69d
-  Args:
-    type: :Person
-    source: Louise_Orleans
-  AddTriple (0e68987d-1342-4b45-9251-c0e560caf307)
- Call ID: 0e68987d-1342-4b45-9251-c0e560caf307
-  Args:
-    source: Don_Carlos
-    relation: :hasRelation
-    target: Louise_Orleans
-  AssignClass (166bb6d3-6fc0-4db0-aa80-6212bf936d95)
- Call ID: 166bb6d3-6fc0-4db0-aa80-6212bf936d95
-  Args:
-    source: Philippe_Count_Paris
-    type: :Man
-  AssignClass (8bf2cb0f-d4b9-400d-8522-e6508dd845ad)
- Call ID: 8bf2cb0f-d4b9-400d-8522-e6508dd845ad
-  Args:
-    type: :Person
-    source: Philippe_Count_Paris
-  AddTriple (820e7ff2-e3eb-4d0e-9bed-1b063000deb3)
- Call ID: 820e7ff2-e3eb-4d0e-9bed-1b063000deb3
-  Args:
-    relation: :hasFather
-    target: Philippe_Count_Paris
-    source: Louise_Orleans
-  AssignClass (65262a8a-4ff5-4e9f-b19a-75322e7a0b84)
- Call ID: 65262a8a-4ff5-4e9f-b19a-75322e7a0b84
-  Args:
-    source: Ferdinand_Two_Sicilies
-    type: :Man
-  AssignClass (f602b427-3443-4c1f-b0ae-34a027419544)
- Call ID: f602b427-3443-4c1f-b0ae-34a027419544
-  Args:
-    source: Ferdinand_Two_Sicilies
-    type: :Person
-  AddTriple (2a3ef565-2a4d-4467-a81e-9cc0ed6aab2f)
- Call ID: 2a3ef565-2a4d-4467-a81e-9cc0ed6aab2f
-  Args:
-    source: Ferdinand_Two_Sicilies
-    target: Don_Carlos
+    source: Gonzalo
     relation: :isBrotherOf
-  AssignClass (c8c9b075-ccec-47c0-999c-5baf421f9c9b)
- Call ID: c8c9b075-ccec-47c0-999c-5baf421f9c9b
-  Args:
-    source: Ranieri_Two_Sicilies
-    type: :Man
-  AssignClass (bd79e9d6-99fe-432d-bafb-f483b3dd53e1)
- Call ID: bd79e9d6-99fe-432d-bafb-f483b3dd53e1
-  Args:
-    type: :Person
-    source: Ranieri_Two_Sicilies
-  AddTriple (50b2aa9a-b9b6-474a-a7b3-6e4b56adacc4)
- Call ID: 50b2aa9a-b9b6-474a-a7b3-6e4b56adacc4
-  Args:
-    relation: :isBrotherOf
-    target: Don_Carlos
-    source: Ranieri_Two_Sicilies
-  AssignClass (850d8ba4-2d9b-463c-a687-e5ddc5eae91d)
- Call ID: 850d8ba4-2d9b-463c-a687-e5ddc5eae91d
+    target: Alfonso_Prince_of_Asturias
+  AssignClass (79c4cdc8-a923-4717-ac48-2de78d463df7)
+ Call ID: 79c4cdc8-a923-4717-ac48-2de78d463df7
   Args:
     type: :Man
-    source: Alfonso_Son_of_Carlos
-  AssignClass (80ff2d1b-0bce-4862-8d4b-b3dc4cd38d36)
- Call ID: 80ff2d1b-0bce-4862-8d4b-b3dc4cd38d36
+    source: Alfonso_de_Bourbon
+  AssignClass (44d3c52b-19e1-4f93-a2ca-06d6c2eea74d)
+ Call ID: 44d3c52b-19e1-4f93-a2ca-06d6c2eea74d
   Args:
+    source: Alfonso_de_Bourbon
     type: :Person
-    source: Alfonso_Son_of_Carlos
-  AddTriple (2e338f66-6f96-4f41-91fc-c851fbe478dc)
- Call ID: 2e338f66-6f96-4f41-91fc-c851fbe478dc
+  AddTriple (4ffe0fd7-6e2e-4d78-9dde-29e2987f54a4)
+ Call ID: 4ffe0fd7-6e2e-4d78-9dde-29e2987f54a4
   Args:
-    source: Alfonso_Son_of_Carlos
+    source: Alfonso_de_Bourbon
     relation: :isSonOf
-    target: Don_Carlos
-  Finish (74f476dd-3f22-42cd-ba75-361c2c62a754)
- Call ID: 74f476dd-3f22-42cd-ba75-361c2c62a754
+    target: Alfonso_Prince_of_Asturias
+  Finish (c6a53c74-e609-4ce2-9be1-ac083aafad0e)
+ Call ID: c6a53c74-e609-4ce2-9be1-ac083aafad0e
   Args:

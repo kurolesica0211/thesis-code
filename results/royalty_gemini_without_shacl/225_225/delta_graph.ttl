@@ -2,31 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Edward_VIII a :Man .
+data:Elisabeth_Victoire_Jeanne_Marie_d_Orleans a :Person,
+        :Woman ;
+    :hasBirthYear "2026-04-15"^^xsd:date ;
+    :hasFather data:Charles_Philippe_d_Orleans ;
+    :hasMother data:Naomi_Valeska .
 
-data:Gerald_David_Lascelles a :Man ;
-    :hasBirthYear 1924 ;
-    :hasDeathYear 1998 ;
-    :hasFather data:Henry_Lascelles%2C_6th_Earl_of_Harewood ;
-    :hasMarriageYear data:1978,
-        "1978"^^xsd:string ;
-    :hasMother data:Mary%2C_Princess_Royal ;
-    :hasRelation data:Elizabeth_Colvin ;
-    :knownAs "The Honourable Gerald Lascelles"^^xsd:string .
+data:Isabelle_d_Orleans a :Person,
+        :Woman ;
+    :hasBirthYear "2012-02-22"^^xsd:date ;
+    :hasFather data:Charles_Philippe_d_Orleans .
 
-data:Queen_Elizabeth_II a :Woman .
+data:Beatrice_Pasquier_de_Franclieu a :Person,
+        :Woman .
 
-data:1978 a :DomainEntity .
+data:Henri_d_Orleans a :Man,
+        :Person .
 
-data:Elizabeth_Colvin a :Woman .
+data:Michel_d_Orleans a :Man,
+        :Person ;
+    :hasFather data:Henri_d_Orleans .
 
-data:Henry_Lascelles%2C_6th_Earl_of_Harewood a :Man .
+data:Naomi_Valeska a :Person,
+        :Woman .
 
-data:King_George_V a :Man .
-
-data:Mary%2C_Princess_Royal a :Woman ;
-    :hasFather data:King_George_V ;
-    :hasMother data:Queen_Mary .
-
-data:Queen_Mary a :Woman .
+data:Charles_Philippe_d_Orleans a :Man,
+        :Person ;
+    :hasBirthYear 1973 ;
+    :hasFather data:Michel_d_Orleans ;
+    :hasMother data:Beatrice_Pasquier_de_Franclieu .
 

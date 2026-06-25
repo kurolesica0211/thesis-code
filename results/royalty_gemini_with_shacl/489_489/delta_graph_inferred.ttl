@@ -1,0 +1,145 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Countess_Ina_Marie_von_Bassewitz a :Ancestor,
+        :Woman ;
+    :hasChild data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :hasRelation data:Armgard_Else_Helene_von_Veltheim,
+        data:Countess_Ina_Marie_von_Bassewitz,
+        data:Friedrich_von_Veltheim,
+        data:Ottonie_von_Alvensleben,
+        data:Prince_Oskar_of_Prussia,
+        data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :hasSex data:Female ;
+    :hasSister data:Countess_Ina_Marie_von_Bassewitz ;
+    :hasSon data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :isAncestorOf data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :isAuntOf data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :isBloodrelationOf data:Countess_Ina_Marie_von_Bassewitz ;
+    :isMotherOf data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :isParentOf data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :isSiblingOf data:Countess_Ina_Marie_von_Bassewitz ;
+    :isSisterOf data:Countess_Ina_Marie_von_Bassewitz .
+
+data:Friedrich_von_Veltheim a :Ancestor,
+        :Man ;
+    :hasBirthYear 1881 ;
+    :hasBrother data:Friedrich_von_Veltheim ;
+    :hasChild data:Armgard_Else_Helene_von_Veltheim ;
+    :hasDaughter data:Armgard_Else_Helene_von_Veltheim ;
+    :hasDeathYear 1955 ;
+    :hasRelation data:Armgard_Else_Helene_von_Veltheim,
+        data:Countess_Ina_Marie_von_Bassewitz,
+        data:Friedrich_von_Veltheim,
+        data:Ottonie_von_Alvensleben,
+        data:Prince_Oskar_of_Prussia,
+        data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Armgard_Else_Helene_von_Veltheim ;
+    :isBloodrelationOf data:Friedrich_von_Veltheim ;
+    :isBrotherOf data:Friedrich_von_Veltheim ;
+    :isFatherOf data:Armgard_Else_Helene_von_Veltheim ;
+    :isParentOf data:Armgard_Else_Helene_von_Veltheim ;
+    :isSiblingOf data:Friedrich_von_Veltheim ;
+    :isUncleOf data:Armgard_Else_Helene_von_Veltheim .
+
+data:Ottonie_von_Alvensleben a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1883 ;
+    :hasChild data:Armgard_Else_Helene_von_Veltheim ;
+    :hasDaughter data:Armgard_Else_Helene_von_Veltheim ;
+    :hasDeathYear 1960 ;
+    :hasRelation data:Armgard_Else_Helene_von_Veltheim,
+        data:Countess_Ina_Marie_von_Bassewitz,
+        data:Friedrich_von_Veltheim,
+        data:Ottonie_von_Alvensleben,
+        data:Prince_Oskar_of_Prussia,
+        data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :hasSex data:Female ;
+    :hasSister data:Ottonie_von_Alvensleben ;
+    :isAncestorOf data:Armgard_Else_Helene_von_Veltheim ;
+    :isAuntOf data:Armgard_Else_Helene_von_Veltheim ;
+    :isBloodrelationOf data:Ottonie_von_Alvensleben ;
+    :isMotherOf data:Armgard_Else_Helene_von_Veltheim ;
+    :isParentOf data:Armgard_Else_Helene_von_Veltheim ;
+    :isSiblingOf data:Ottonie_von_Alvensleben ;
+    :isSisterOf data:Ottonie_von_Alvensleben .
+
+data:Prince_Oskar_of_Prussia a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Oskar_of_Prussia ;
+    :hasChild data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :hasRelation data:Armgard_Else_Helene_von_Veltheim,
+        data:Countess_Ina_Marie_von_Bassewitz,
+        data:Friedrich_von_Veltheim,
+        data:Ottonie_von_Alvensleben,
+        data:Prince_Oskar_of_Prussia,
+        data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :hasSex data:Male ;
+    :hasSon data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :isAncestorOf data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :isBloodrelationOf data:Prince_Oskar_of_Prussia ;
+    :isBrotherOf data:Prince_Oskar_of_Prussia ;
+    :isFatherOf data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :isParentOf data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :isSiblingOf data:Prince_Oskar_of_Prussia ;
+    :isUncleOf data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen .
+
+data:Armgard_Else_Helene_von_Veltheim a :Woman ;
+    :hasAncestor data:Friedrich_von_Veltheim,
+        data:Ottonie_von_Alvensleben ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Friedrich_von_Veltheim ;
+    :hasMother data:Ottonie_von_Alvensleben ;
+    :hasParent data:Friedrich_von_Veltheim,
+        data:Ottonie_von_Alvensleben ;
+    :hasRelation data:Armgard_Else_Helene_von_Veltheim,
+        data:Countess_Ina_Marie_von_Bassewitz,
+        data:Friedrich_von_Veltheim,
+        data:Ottonie_von_Alvensleben,
+        data:Prince_Oskar_of_Prussia,
+        data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :hasSex data:Female ;
+    :hasSister data:Armgard_Else_Helene_von_Veltheim ;
+    :isBloodrelationOf data:Armgard_Else_Helene_von_Veltheim ;
+    :isChildOf data:Friedrich_von_Veltheim,
+        data:Ottonie_von_Alvensleben ;
+    :isDaughterOf data:Friedrich_von_Veltheim,
+        data:Ottonie_von_Alvensleben ;
+    :isSiblingOf data:Armgard_Else_Helene_von_Veltheim ;
+    :isSisterOf data:Armgard_Else_Helene_von_Veltheim .
+
+data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen a :Man ;
+    :hasAncestor data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia ;
+    :hasBirthYear 1922 ;
+    :hasBrother data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :hasDeathYear 2007 ;
+    :hasFather data:Prince_Oskar_of_Prussia ;
+    :hasMarriageYear 1952 ;
+    :hasMother data:Countess_Ina_Marie_von_Bassewitz ;
+    :hasParent data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia ;
+    :hasRelation data:Armgard_Else_Helene_von_Veltheim,
+        data:Countess_Ina_Marie_von_Bassewitz,
+        data:Friedrich_von_Veltheim,
+        data:Ottonie_von_Alvensleben,
+        data:Prince_Oskar_of_Prussia,
+        data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :isBrotherOf data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :isChildOf data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia ;
+    :isSiblingOf data:Wilhelm_Karl_Adalbert_Erich_Detloff_Prinz_von_Preussen ;
+    :isSonOf data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia .
+

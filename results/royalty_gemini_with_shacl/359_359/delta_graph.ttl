@@ -2,59 +2,77 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charlotte a :Woman ;
-    :hasFather data:Frederick_III ;
-    :hasMother data:Victoria_Princess_Royal .
+data:Alfonso a :Man,
+        :Person ;
+    :hasBirthYear "1936-04-20"^^xsd:date ;
+    :hasBrother data:Gonzalo ;
+    :hasDeathYear "1989-01-30"^^xsd:date ;
+    :hasFather data:Jaime ;
+    :hasMarriageYear "1972-03-08"^^xsd:date ;
+    :hasMother data:Emanuela_de_Dampierre ;
+    :hasRelation data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
 
-data:Henry a :Man ;
-    :hasFather data:Frederick_III ;
-    :hasMother data:Victoria_Princess_Royal .
+data:Francisco_de_Asis a :Man,
+        :Person .
 
-data:Margaret a :Woman ;
-    :hasFather data:Frederick_III ;
-    :hasMother data:Victoria_Princess_Royal .
+data:Henri_of_Orleans_Count_of_Clermont a :Man,
+        :Person ;
+    :hasFather data:Henri_Count_of_Paris .
 
-data:Sigismund a :Man ;
-    :hasFather data:Frederick_III ;
-    :hasMother data:Victoria_Princess_Royal .
+data:Juan_Carlos a :Man,
+        :Person ;
+    :hasFather data:Juan_Count_of_Barcelona .
 
-data:Sophie a :Woman ;
-    :hasFather data:Frederick_III ;
-    :hasMother data:Victoria_Princess_Royal .
-
-data:Viktoria_of_Prussia a :Woman ;
-    :hasBirthYear 1866 ;
-    :hasDeathYear 1929 ;
-    :hasFather data:Frederick_III ;
-    :hasMother data:Victoria_Princess_Royal .
-
-data:Waldemar a :Man ;
-    :hasFather data:Frederick_III ;
-    :hasMother data:Victoria_Princess_Royal .
-
-data:Wilhelm_II a :Man ;
-    :hasFather data:Frederick_III ;
-    :hasMother data:Victoria_Princess_Royal .
-
-data:Augusta_of_Saxe_Weimar a :Ancestor,
+data:Victoria_Eugenie a :Person,
         :Woman .
 
-data:Prince_Albert a :Ancestor,
-        :Man .
-
-data:Queen_Victoria a :Ancestor,
+data:Carmen_Franco_y_Polo a :Ancestor,
+        :Person,
         :Woman .
 
-data:Wilhelm_I a :Ancestor,
-        :Man .
+data:Cristobal_Martinez-Bordiu a :Ancestor,
+        :Man,
+        :Person .
 
-data:Frederick_III a :Ancestor,
-        :Man ;
-    :hasFather data:Wilhelm_I ;
-    :hasMother data:Augusta_of_Saxe_Weimar .
+data:Gonzalo a :Man,
+        :Person ;
+    :hasFather data:Jaime ;
+    :hasMother data:Emanuela_de_Dampierre .
 
-data:Victoria_Princess_Royal a :Ancestor,
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person .
+
+data:Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII .
+
+data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Person,
         :Woman ;
-    :hasFather data:Prince_Albert ;
-    :hasMother data:Queen_Victoria .
+    :hasFather data:Cristobal_Martinez-Bordiu ;
+    :hasMother data:Carmen_Franco_y_Polo .
+
+data:Roger_de_San_Lorenzo a :Ancestor,
+        :Man,
+        :Person .
+
+data:Vittoria_Ruspoli a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person .
+
+data:Emanuela_de_Dampierre a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Roger_de_San_Lorenzo ;
+    :hasMother data:Vittoria_Ruspoli .
+
+data:Jaime a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Alfonso_XIII .
 

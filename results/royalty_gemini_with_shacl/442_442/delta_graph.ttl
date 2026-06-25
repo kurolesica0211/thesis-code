@@ -2,40 +2,80 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Angelica_Margherita_Edwina_Hicks a :Person,
-        :Woman ;
-    :hasBirthYear 1992 ;
-    :hasFather data:Ashley_Louis_David_Hicks ;
-    :hasMother data:Marina_Allegra_Federica_Silvia_Tondato ;
-    :hasSex data:Female .
+data:Pieter_van_Vollenhoven a :Man,
+        :Person .
 
-data:Ashley_Louis_David_Hicks a :Ancestor,
-        :Man,
+data:Prince_Carlos_Hugo_Roderik_Sybren_de_Bourbon_de_Parme a :Man,
         :Person ;
-    :hasFather data:David_Nightingale_Hicks ;
-    :hasMother data:Lady_Pamela_Mountbatten .
+    :formerlyKnownAs "Hugo Klynstra"^^xsd:string ;
+    :hasBirthYear 1997 ;
+    :hasFather data:Prince_Carlos_de_Bourbon_de_Parme ;
+    :hasMother data:Brigitte_Klynstra ;
+    :knownAs "Carlos Hugo Roderik Sybren de Bourbon de Parme"^^xsd:string .
 
-data:David_Nightingale_Hicks a :Ancestor,
+data:Princess_Margriet a :Person,
+        :Woman .
+
+data:Queen_Beatrix a :Person,
+        :Woman .
+
+data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg a :Ancestor,
         :Man,
         :Person .
 
-data:Female a :Female .
-
-data:Lady_Pamela_Mountbatten a :Ancestor,
+data:Brigitte_Klynstra a :Ancestor,
         :Person,
         :Woman ;
-    :hasFather data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
-    :hasMother data:The_Honourable_Edwina_Ashley .
+    :hasFather data:Adolph_Roderik_Ernst_Leopold_Count_of_Rechteren-Limpurg ;
+    :hasMother data:Ingrid_Pieksma-Klynstra .
 
-data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Ancestor,
+data:Carlos_Hugo_Duke_of_Parma a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :hasFather data:Prince_Xavier_of_Bourbon-Parma ;
+    :hasMother data:Madeleine_de_Bourbon-Busset .
 
-data:Marina_Allegra_Federica_Silvia_Tondato a :Ancestor,
+data:Ingrid_Pieksma-Klynstra a :Ancestor,
         :Person,
         :Woman .
 
-data:The_Honourable_Edwina_Ashley a :Ancestor,
+data:Madeleine_de_Bourbon-Busset a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Carlos_de_Bourbon_de_Parme a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Carlos_Hugo_Duke_of_Parma ;
+    :hasMother data:Princess_Irene_of_the_Netherlands ;
+    :isFatherOf data:Prince_Carlos_of_Parma,
+        data:Princess_Cecilia_of_Parma,
+        data:Princess_Luisa_of_Parma .
+
+data:Prince_Carlos_of_Parma a :Man,
+        :Person .
+
+data:Prince_Xavier_of_Bourbon-Parma a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Cecilia_of_Parma a :Person,
+        :Woman .
+
+data:Princess_Irene_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Queen_Juliana_of_the_Netherlands .
+
+data:Princess_Luisa_of_Parma a :Person,
+        :Woman .
+
+data:Queen_Juliana_of_the_Netherlands a :Ancestor,
         :Person,
         :Woman .
 

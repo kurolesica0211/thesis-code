@@ -7,30 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Frederick_Francis_IV a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Frederick Francis IV" ;
-    data:posIndicesFull "717:737",
-        "717:773" ;
-    data:wdtLink wdt:Q57930 ;
-    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
-        "Friedrich Franz IV",
-        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin",
-        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
-        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin" ;
-    :hasSex data:male .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Duchess_Marie_Antoinette_of_Mecklenburg-Schwerin a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Duchess_Marie_Antoinette_of_Mecklenburg-Schwerin a :Person ;
     rdfs:label "Duchess Marie Antoinette of Mecklenburg-Schwerin" ;
     data:posIndicesFull "0:48" ;
     data:posIndicesPart "246:251",
@@ -44,21 +21,15 @@ data:Duchess_Marie_Antoinette_of_Mecklenburg-Schwerin a :Person,
         "593:601",
         "634:645",
         "646:654",
+        "753:764",
+        "765:773",
         "820:825",
         "826:836" ;
     data:wdtLink wdt:Q115132 ;
-    :hasBrother data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
-    :hasMother data:Princess_Marie_of_Windisch-Graetz ;
     :hasParent data:Princess_Marie_of_Windisch-Graetz ;
-    :hasSex data:female ;
-    :isChildOf data:Princess_Marie_of_Windisch-Graetz ;
-    :isDaughterOf data:Princess_Marie_of_Windisch-Graetz ;
-    :isSiblingOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
-    :isSisterOf data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 .
+    :hasSex data:female .
 
-data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 a :Person ;
     rdfs:label "Duke Paul Friedrich of Mecklenburg-Schwerin" ;
     data:posIndicesFull "360:394" ;
     data:posIndicesPart "464:468",
@@ -72,34 +43,30 @@ data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 a :Man,
         "593:601",
         "619:623",
         "634:645",
-        "646:654" ;
+        "646:654",
+        "745:749",
+        "753:764",
+        "765:773" ;
     data:wdtLink wdt:Q2754379 ;
     :alsoKnownAs "Duke Paul Frederick of Mecklenburg" ;
-    :hasMother data:Princess_Marie_of_Windisch-Graetz ;
     :hasParent data:Princess_Marie_of_Windisch-Graetz ;
-    :hasSex data:male ;
-    :hasSister data:Duchess_Marie_Antoinette_of_Mecklenburg-Schwerin ;
-    :isBrotherOf data:Duchess_Marie_Antoinette_of_Mecklenburg-Schwerin ;
-    :isChildOf data:Princess_Marie_of_Windisch-Graetz ;
-    :isSiblingOf data:Duchess_Marie_Antoinette_of_Mecklenburg-Schwerin ;
-    :isSonOf data:Princess_Marie_of_Windisch-Graetz .
+    :hasSex data:male .
 
-data:Princess_Marie_of_Windisch-Graetz a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Princess_Marie_of_Windisch-Graetz a :Person ;
     rdfs:label "Princess Marie of Windisch-Graetz" ;
     data:posIndicesFull "399:432" ;
     data:posIndicesPart "1180:1188",
         "820:825" ;
     data:wdtLink wdt:Q2071733 ;
-    :hasChild data:Duchess_Marie_Antoinette_of_Mecklenburg-Schwerin,
-        data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
-    :hasDaughter data:Duchess_Marie_Antoinette_of_Mecklenburg-Schwerin ;
-    :hasSex data:female ;
-    :hasSon data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
-    :isMotherOf data:Duchess_Marie_Antoinette_of_Mecklenburg-Schwerin,
-        data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 ;
-    :isParentOf data:Duchess_Marie_Antoinette_of_Mecklenburg-Schwerin,
-        data:Duke_Paul_Friedrich_of_Mecklenburg-Schwerin_1 .
+    :hasSex data:female .
+
+data:female a :Female .
 

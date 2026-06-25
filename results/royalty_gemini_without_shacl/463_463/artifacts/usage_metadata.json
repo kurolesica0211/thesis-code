@@ -5,19 +5,19 @@
             "iteration": 2,
             "metadata": [
                 {
-                    "input_tokens": 8867,
-                    "output_tokens": 595,
-                    "total_tokens": 9462,
+                    "input_tokens": 10949,
+                    "output_tokens": 620,
+                    "total_tokens": 11569,
                     "input_token_details": {
-                        "cache_read": 8862
+                        "cache_read": 10944
                     }
                 },
                 {
-                    "input_tokens": 10436,
-                    "output_tokens": 43,
-                    "total_tokens": 10479,
+                    "input_tokens": 12513,
+                    "output_tokens": 31,
+                    "total_tokens": 12544,
                     "input_token_details": {
-                        "cache_read": 8862
+                        "cache_read": 10944
                     }
                 }
             ]

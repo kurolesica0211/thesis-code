@@ -2,36 +2,25 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:King_Charles_III a :Man .
+data:Marie_Antoinette_of_Schwarzburg a :Person,
+        :Woman ;
+    :isSisterOf data:Friedrich_G%C3%BCnther_Prince_of_Schwarzburg .
 
-data:Mia_Grace_Tindall a :Woman ;
-    :hasFather data:Mike_Tindall ;
-    :hasMother data:Zara_Tindall .
+data:Princess_Sophie_Louise_of_Saxe-Weimar-Eisenach a :Person,
+        :Woman ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1988 ;
+    :hasFather data:William_Ernest_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasRelation data:Friedrich_G%C3%BCnther_Prince_of_Schwarzburg .
 
-data:Felicity_Wade a :Woman ;
-    :hasFather data:Mark_Phillips .
+data:Princess_Feodora_of_Saxe-Meiningen a :Person,
+        :Woman .
 
-data:Peter_Phillips a :Man ;
-    :hasFather data:Mark_Phillips ;
-    :hasMother data:Anne_Princess_Royal .
+data:William_Ernest_Grand_Duke_of_Saxe-Weimar-Eisenach a :Man,
+        :Person .
 
-data:Stephanie_Phillips a :Woman ;
-    :hasFather data:Mark_Phillips .
-
-data:Zara_Tindall a :Woman ;
-    :formerlyKnownAs "Zara Phillips"^^xsd:string ;
-    :hasBirthYear 1981 ;
-    :hasBrother data:Peter_Phillips ;
-    :hasFather data:Mark_Phillips ;
-    :hasMarriageYear 2011 ;
-    :hasMother data:Anne_Princess_Royal ;
-    :hasRelation data:Mike_Tindall ;
-    :hasSister data:Felicity_Wade,
-        data:Stephanie_Phillips .
-
-data:Anne_Princess_Royal a :Woman .
-
-data:Mike_Tindall a :Man .
-
-data:Mark_Phillips a :Man .
+data:Friedrich_G%C3%BCnther_Prince_of_Schwarzburg a :Man,
+        :Person .
 

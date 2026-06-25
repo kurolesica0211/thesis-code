@@ -7,22 +7,17 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Alexandra_of_Yugoslavia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Alexandra_of_Yugoslavia a :Person ;
     rdfs:label "Alexandra of Yugoslavia" ;
     data:posIndicesFull "8906:8925" ;
     data:wdtLink wdt:Q167423 ;
     :alsoKnownAs "Alexandra Oldenburg Karadjordjevic",
         "Alexandra of Greece",
         "Alexandra of Greece, Queen of Yugoslavia" ;
+    :hasParent data:Alexander_of_Greece ;
     :hasSex data:female .
 
-data:Danica-_Hereditary_Princess_of_Serbia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Danica-_Hereditary_Princess_of_Serbia a :Person ;
     rdfs:label "Danica, Hereditary Princess of Serbia" ;
     data:posIndicesFull "3173:3190",
         "3207:3224" ;
@@ -60,16 +55,7 @@ data:Danica-_Hereditary_Princess_of_Serbia a :Ancestor,
         "Danica Marinković" ;
     :hasSex data:female .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Philip-_Hereditary_Prince_of_Serbia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Philip-_Hereditary_Prince_of_Serbia a :Person ;
     rdfs:label "Philip, Hereditary Prince of Serbia" ;
     data:posIndicesFull "270:305",
         "99:117" ;
@@ -165,16 +151,25 @@ data:Philip-_Hereditary_Prince_of_Serbia a :Ancestor,
         "Philip Karageorgievich, Prince of Yugoslavia",
         "Philip Karađorđević",
         "Prince Philip, Hereditary Prince of Serbia" ;
-    :hasMother data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
     :hasParent data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
-    :isSonOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe .
+    :hasSex data:male .
 
-data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alexander_of_Greece a :Person ;
+    rdfs:label "Alexander of Greece" ;
+    data:posIndicesFull "8906:8925" ;
+    data:wdtLink wdt:Q151742 ;
+    :alsoKnownAs "Alexander I of Greece",
+        "King Alexander I of Greece",
+        "King Alexander of Greece" ;
+    :hasSex data:male .
+
+data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Person ;
     rdfs:label "Princess Maria da Glória, Duchess of Segorbe" ;
     data:posIndicesFull "1013:1028",
         "6977:6992" ;
@@ -197,9 +192,9 @@ data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Ancestor,
     data:wdtLink wdt:Q2312463 ;
     :alsoKnownAs "Dona Maria da Glória de Orléans-Bragança e Borbon",
         "Maria da Gloria" ;
-    :hasChild data:Philip-_Hereditary_Prince_of_Serbia ;
-    :hasSex data:female ;
-    :hasSon data:Philip-_Hereditary_Prince_of_Serbia ;
-    :isMotherOf data:Philip-_Hereditary_Prince_of_Serbia ;
-    :isParentOf data:Philip-_Hereditary_Prince_of_Serbia .
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

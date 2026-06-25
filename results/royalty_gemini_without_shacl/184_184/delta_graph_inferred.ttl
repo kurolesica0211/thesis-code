@@ -1,0 +1,326 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Leonida a :Ancestor,
+        :Woman ;
+    :hasChild data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasRelation data:Alexander_Georgievich_Romanov,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova,
+        data:Leonida,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath,
+        data:Victoria_Romanovna_Bettarini,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasSister data:Leonida ;
+    :isAncestorOf data:Alexander_Georgievich_Romanov,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isAuntOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Leonida ;
+    :isMotherOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Leonida ;
+    :isSisterOf data:Leonida .
+
+data:Prince_Karl_Franz_of_Prussia a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Karl_Franz_of_Prussia ;
+    :hasChild data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasRelation data:Alexander_Georgievich_Romanov,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova,
+        data:Leonida,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath,
+        data:Victoria_Romanovna_Bettarini,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasSon data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Alexander_Georgievich_Romanov,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Prince_Karl_Franz_of_Prussia ;
+    :isBrotherOf data:Prince_Karl_Franz_of_Prussia ;
+    :isFatherOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Prince_Karl_Franz_of_Prussia ;
+    :isUncleOf data:Prince_Franz_Wilhelm_of_Prussia .
+
+data:Princess_Henriette_of_Sch%C3%B6naich-Carolath a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasRelation data:Alexander_Georgievich_Romanov,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova,
+        data:Leonida,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath,
+        data:Victoria_Romanovna_Bettarini,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasSister data:Princess_Henriette_of_Sch%C3%B6naich-Carolath ;
+    :hasSon data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Alexander_Georgievich_Romanov,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isAuntOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Princess_Henriette_of_Sch%C3%B6naich-Carolath ;
+    :isMotherOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Princess_Henriette_of_Sch%C3%B6naich-Carolath ;
+    :isSisterOf data:Princess_Henriette_of_Sch%C3%B6naich-Carolath .
+
+data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia a :Ancestor,
+        :Man ;
+    :hasBrother data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasChild data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasRelation data:Alexander_Georgievich_Romanov,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova,
+        data:Leonida,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath,
+        data:Victoria_Romanovna_Bettarini,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :isAncestorOf data:Alexander_Georgievich_Romanov,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isBloodrelationOf data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :isBrotherOf data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :isFatherOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :isUncleOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia .
+
+data:Victoria_Romanovna_Bettarini a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1982 ;
+    :hasChild data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :hasDaughter data:Kira_Leonida_Georgievna_Romanova ;
+    :hasRelation data:Alexander_Georgievich_Romanov,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova,
+        data:Leonida,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath,
+        data:Victoria_Romanovna_Bettarini,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasSister data:Victoria_Romanovna_Bettarini ;
+    :hasSon data:Alexander_Georgievich_Romanov ;
+    :isAncestorOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isAuntOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isBloodrelationOf data:Victoria_Romanovna_Bettarini ;
+    :isMotherOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isParentOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isSiblingOf data:Victoria_Romanovna_Bettarini ;
+    :isSisterOf data:Victoria_Romanovna_Bettarini .
+
+data:Grand_Duchess_Maria_Vladimirovna_of_Russia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Leonida,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasChild data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasFather data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasMother data:Leonida ;
+    :hasParent data:Leonida,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasRelation data:Alexander_Georgievich_Romanov,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova,
+        data:Leonida,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath,
+        data:Victoria_Romanovna_Bettarini,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasSister data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasSon data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isAncestorOf data:Alexander_Georgievich_Romanov,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isAuntOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isChildOf data:Leonida,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :isDaughterOf data:Leonida,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :isMotherOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isParentOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isSiblingOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia .
+
+data:Prince_Franz_Wilhelm_of_Prussia a :Ancestor,
+        :Man ;
+    :hasAncestor data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath ;
+    :hasBrother data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasChild data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasFather data:Prince_Karl_Franz_of_Prussia ;
+    :hasMother data:Princess_Henriette_of_Sch%C3%B6naich-Carolath ;
+    :hasParent data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath ;
+    :hasRelation data:Alexander_Georgievich_Romanov,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova,
+        data:Leonida,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath,
+        data:Victoria_Romanovna_Bettarini,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasSon data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isAncestorOf data:Alexander_Georgievich_Romanov,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isBloodrelationOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isChildOf data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath ;
+    :isFatherOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isParentOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isSiblingOf data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isSonOf data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath ;
+    :isUncleOf data:Grand_Duke_George_Mikhailovich_of_Russia .
+
+data:Alexander_Georgievich_Romanov a :Man ;
+    :hasAncestor data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Leonida,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath,
+        data:Victoria_Romanovna_Bettarini,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasBirthYear 2022 ;
+    :hasBrother data:Alexander_Georgievich_Romanov ;
+    :hasFather data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasMother data:Victoria_Romanovna_Bettarini ;
+    :hasParent data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Victoria_Romanovna_Bettarini ;
+    :hasRelation data:Alexander_Georgievich_Romanov,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova,
+        data:Leonida,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath,
+        data:Victoria_Romanovna_Bettarini,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasSister data:Kira_Leonida_Georgievna_Romanova ;
+    :isBloodrelationOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isBrotherOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isChildOf data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Victoria_Romanovna_Bettarini ;
+    :isSiblingOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isSonOf data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Victoria_Romanovna_Bettarini .
+
+data:Kira_Leonida_Georgievna_Romanova a :Woman ;
+    :hasAncestor data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Leonida,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath,
+        data:Victoria_Romanovna_Bettarini,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasBirthYear 2025 ;
+    :hasBrother data:Alexander_Georgievich_Romanov ;
+    :hasFather data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasMother data:Victoria_Romanovna_Bettarini ;
+    :hasParent data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Victoria_Romanovna_Bettarini ;
+    :hasRelation data:Alexander_Georgievich_Romanov,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova,
+        data:Leonida,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath,
+        data:Victoria_Romanovna_Bettarini,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasSister data:Kira_Leonida_Georgievna_Romanova ;
+    :isBloodrelationOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isChildOf data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Victoria_Romanovna_Bettarini ;
+    :isDaughterOf data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Victoria_Romanovna_Bettarini ;
+    :isSiblingOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isSisterOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova .
+
+data:Grand_Duke_George_Mikhailovich_of_Russia a :Ancestor,
+        :Man ;
+    :hasAncestor data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Leonida,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasBirthYear 1981 ;
+    :hasBrother data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :hasChild data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :hasDaughter data:Kira_Leonida_Georgievna_Romanova ;
+    :hasFather data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasMother data:Grand_Duchess_Maria_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :hasRelation data:Alexander_Georgievich_Romanov,
+        data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Grand_Duke_George_Mikhailovich_of_Russia,
+        data:Kira_Leonida_Georgievna_Romanova,
+        data:Leonida,
+        data:Prince_Franz_Wilhelm_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Henriette_of_Sch%C3%B6naich-Carolath,
+        data:Victoria_Romanovna_Bettarini,
+        data:Vladimir_Cyrillovich%2C_Grand_Duke_of_Russia ;
+    :hasSon data:Alexander_Georgievich_Romanov ;
+    :isAncestorOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isBloodrelationOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isChildOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isFatherOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isParentOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova ;
+    :isSiblingOf data:Grand_Duke_George_Mikhailovich_of_Russia ;
+    :isSonOf data:Grand_Duchess_Maria_Vladimirovna_of_Russia,
+        data:Prince_Franz_Wilhelm_of_Prussia ;
+    :isUncleOf data:Alexander_Georgievich_Romanov,
+        data:Kira_Leonida_Georgievna_Romanova .
+

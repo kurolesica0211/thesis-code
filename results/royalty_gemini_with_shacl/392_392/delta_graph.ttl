@@ -2,49 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Countess_Karoline_von_Wartensleben a :Ancestor,
-        :Person,
-        :Woman ;
-    :isMotherOf data:Prince_Bernhard_of_Lippe .
+data:Alfred_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Prince_Sigismund_of_Prussia .
 
-data:Ernest_II_Count_of_Lippe_Biesterfeld a :Ancestor,
+data:Anna_Anderson a :Person,
+        :Woman ;
+    :knownAs data:Grand_Duchess_Anastasia .
+
+data:Kaiser_Wilhelm_II a :Man,
+        :Person .
+
+data:Tsarina_Alexandra_of_Russia a :Person,
+        :Woman .
+
+data:Ernst_II_Duke_of_Saxe-Altenburg a :Ancestor,
+        :Man,
+        :Person .
+
+data:Grand_Duchess_Anastasia a :Person,
+        :Woman .
+
+data:Prince_Henry_of_Prussia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Sigismund_of_Prussia a :Ancestor,
         :Man,
         :Person ;
-    :isFatherOf data:Prince_Bernhard_of_Lippe .
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1978 ;
+    :hasFather data:Prince_Henry_of_Prussia ;
+    :hasMarriageYear 1919 ;
+    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Princess_Charlotte_of_Saxe-Altenburg .
 
-data:Leopold_IV_Prince_of_Lippe a :Man,
-        :Person ;
-    :isBrotherOf data:Prince_Bernhard_of_Lippe .
-
-data:Male_Sex a :Male,
-        :Sex .
-
-data:Aschwin_of_Lippe_Biesterfeld a :Man,
-        :Person ;
-    :isSonOf data:Baroness_Armgard_von_Sierstorpff_Cramm,
-        data:Prince_Bernhard_of_Lippe .
-
-data:Baroness_Armgard_von_Sierstorpff_Cramm a :Ancestor,
-        :Person,
+data:Princess_Charlotte_of_Saxe-Altenburg a :Person,
         :Woman ;
-    :hasSon data:Aschwin_of_Lippe_Biesterfeld,
-        data:Prince_Bernhard_of_Lippe_Biesterfeld_Junior .
+    :hasFather data:Ernst_II_Duke_of_Saxe-Altenburg .
 
-data:Prince_Bernhard_of_Lippe_Biesterfeld_Junior a :Man,
-        :Person ;
-    :isSonOf data:Baroness_Armgard_von_Sierstorpff_Cramm,
-        data:Prince_Bernhard_of_Lippe .
-
-data:Prince_Bernhard_of_Lippe a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1872 ;
-    :hasBrother data:Leopold_IV_Prince_of_Lippe ;
-    :hasDeathYear 1934 ;
-    :hasFather data:Ernest_II_Count_of_Lippe_Biesterfeld ;
-    :hasMarriageYear 1909 ;
-    :hasMother data:Countess_Karoline_von_Wartensleben ;
-    :hasSex data:Male_Sex ;
-    :hasSon data:Aschwin_of_Lippe_Biesterfeld,
-        data:Prince_Bernhard_of_Lippe_Biesterfeld_Junior .
+data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman .
 

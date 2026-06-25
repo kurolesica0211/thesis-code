@@ -85,36 +85,38 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Josephine of Denmark, Countess of Monpezat RE (Josephine Sophia Ivalo Mathilda; born 8 January 2011) is a member of the Danish royal family.
-She is the fourth and youngest child of King Frederik X and Queen Mary, and the seventh grandchild of Queen Margrethe II and Prince Henrik.
-She is the twin sister of Prince Vincent.
-Josephine is fourth in line to the Danish throne, after her older siblings, Crown Prince Christian and Princess Isabella, and her elder twin brother, Prince Vincent.
-Birth and christening
-
-Queen Margrethe II
+Princess Beatrix*
 
 
-Josephine was born on 8 January 2011 at Rigshospitalet, the Copenhagen University Hospital, in Copenhagen, at 10:56 am local time, 26 minutes after her twin brother.
-Josephine and Vincent were baptised on 14 April at the Church of Holmen in central Copenhagen by the royal confessor, the Bishop of Copenhagen Erik Norman Svendsen.
-The twins were baptised at the royal baptismal font which has been used for the baptism of royal children in Denmark since 1671.
-Princess Josephine wore a christening gown found among her great-grandmother Queen Ingrid's belongings, making her the first child of a future Danish monarch not to wear the Danish royal family's traditional christening gown (which was worn by her twin brother) since it was taken into use in 1870.
-The Princess's name was announced as Josephine Sophia Ivalo Mathilda.
-Her godparents are her paternal aunt, Princess Marie of Denmark; her maternal aunt, Patricia Bailey; as well as her parents' friends Prince Carlo, Duke of Castro, Count Bendt Wedell, Birgitte Handwerk and Josephine Rechner.
-Public appearances and education
+Princess Margriet*Pieter van Vollenhoven*
 
-On 3 August 2014, during the family's official visit to Greenland, Josephine, her parents and siblings, took part in a tree planting in Qaqortoq's new poplar grove, Ivalos og Miniks Poppellund, named after Josephine and her brother who are known by their Greenlandic middle names in Greenland.
-On 15 August 2017, Josephine and her twin brother started school at Tranegårdsskolen in Gentofte – the same public school as her older siblings.
-In August 2023, the Royal House announced that Josephine would be starting at Kildegård Privatskole in Hellerup in September 2023.
-Both Josephine and her twin brother were confirmed on 18 April 2026.
-Titles, styles, and honours
 
-Josephine is styled as Her Royal Highness Princess Josephine of Denmark, Countess of Monpezat.
+Prince Floris Frederik Martijn of Orange-Nassau, van Vollenhoven (born 10 April 1975) is the fourth and youngest son of Princess Margriet of the Netherlands and Pieter van Vollenhoven.
+Prince Floris has three older brothers: Prince Maurits, Prince Bernhard, Prince Pieter-Christiaan
+
+
+Marriage and children
+
+Prince Floris announced his engagement to Aimée Söhngen, the daughter of Hans Söhngen and Eleonoor Stammeijer, on 25 February 2005.
+Prince Floris had been 10th in the line of succession to the Dutch throne but decided not to seek parliamentary approval for his marriage, as would be required in the Netherlands.
+Prince Floris and Princess Aimée's first child, Magali Margriet Eleonoor van Vollenhoven, was born at VU University Medical Center in Amsterdam on 9 October 2007.
+She is named for Aimée's sister, Magali Söhngen, and her mother Eleonoor, as well as Princess Margriet.
+Their second child, Eliane Sophia Carolina van Vollenhoven, was born at VU University Medical Center in Amsterdam on 5 July 2009.
+Their third child, a son named Willem Jan Johannes Pieter Floris, was born at HMC Bronovo  in The Hague on 1 July 2013.
+Ancestry
+
+References
+
+2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
+3 title granted by Royal Decree to descendants of Princess Irene
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -130,39 +132,9 @@ Josephine is styled as Her Royal Highness Princess Josephine of Denmark, Countes
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -177,6 +149,23 @@ Josephine is styled as Her Royal Highness Princess Josephine of Denmark, Countes
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -194,6 +183,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,29 +265,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -292,6 +288,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -304,6 +308,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -312,17 +318,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -350,6 +358,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -365,215 +457,213 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (59717ebf-bd20-4f76-bafc-ad1f124d1358)
- Call ID: 59717ebf-bd20-4f76-bafc-ad1f124d1358
+  AssignClass (2f06f31b-986e-468e-b205-b07677ea6b46)
+ Call ID: 2f06f31b-986e-468e-b205-b07677ea6b46
+  Args:
+    type: :Man
+    source: :Prince_Floris_van_Vollenhoven
+  AssignClass (dec031ba-2a0a-42db-be13-6a6555666c15)
+ Call ID: dec031ba-2a0a-42db-be13-6a6555666c15
   Args:
     type: :Person
-    source: :Josephine_of_Denmark
-  AssignClass (33fa941c-7c31-4c46-a1b5-27f5e364adb3)
- Call ID: 33fa941c-7c31-4c46-a1b5-27f5e364adb3
-  Args:
-    type: :Woman
-    source: :Josephine_of_Denmark
-  AssignClass (ca82922d-f01c-46f4-806a-86732f56380e)
- Call ID: ca82922d-f01c-46f4-806a-86732f56380e
-  Args:
-    type: :Sex
-    source: :Female
-  AddTriple (a8ef4084-e9ef-4906-93ae-7461f2f3e510)
- Call ID: a8ef4084-e9ef-4906-93ae-7461f2f3e510
-  Args:
-    relation: :hasSex
-    target: :Female
-    source: :Josephine_of_Denmark
-  AddLiteral (438279a4-8efb-46d3-9fd9-1a5714bbcee7)
- Call ID: 438279a4-8efb-46d3-9fd9-1a5714bbcee7
+    source: :Prince_Floris_van_Vollenhoven
+  AddLiteral (17b7491f-8537-4b02-a053-54064a421bd7)
+ Call ID: 17b7491f-8537-4b02-a053-54064a421bd7
   Args:
     literal_type: xsd:integer
+    source: :Prince_Floris_van_Vollenhoven
+    literal_value: 1975
     relation: :hasBirthYear
-    literal_value: 2011
-    source: :Josephine_of_Denmark
-  AssignClass (a64e02fc-d189-42ae-8050-520f629c8c72)
- Call ID: a64e02fc-d189-42ae-8050-520f629c8c72
-  Args:
-    type: :Person
-    source: :Frederik_X
-  AssignClass (a7bf9197-ec04-4be8-9f0d-66a8695195d9)
- Call ID: a7bf9197-ec04-4be8-9f0d-66a8695195d9
-  Args:
-    type: :Man
-    source: :Frederik_X
-  AssignClass (aaff7c91-fd8f-4c2f-8d80-81b70054e060)
- Call ID: aaff7c91-fd8f-4c2f-8d80-81b70054e060
-  Args:
-    type: :Sex
-    source: :Male
-  AddTriple (7e38ed40-4629-4c09-a9e4-36c2e470ebc2)
- Call ID: 7e38ed40-4629-4c09-a9e4-36c2e470ebc2
-  Args:
-    source: :Frederik_X
-    target: :Male
-    relation: :hasSex
-  AssignClass (e61e37a3-566d-46c2-84c3-77f0178c3e60)
- Call ID: e61e37a3-566d-46c2-84c3-77f0178c3e60
-  Args:
-    type: :Person
-    source: :Mary_of_Denmark
-  AssignClass (aca22275-fa6e-4da1-80bb-6b382cb9e143)
- Call ID: aca22275-fa6e-4da1-80bb-6b382cb9e143
+  AssignClass (17d58860-5fb7-4a2f-a963-e789151ddbda)
+ Call ID: 17d58860-5fb7-4a2f-a963-e789151ddbda
   Args:
     type: :Woman
-    source: :Mary_of_Denmark
-  AddTriple (a5b46d97-baaa-41bd-bacc-790885f4324b)
- Call ID: a5b46d97-baaa-41bd-bacc-790885f4324b
+    source: :Princess_Margriet
+  AssignClass (7da0e33b-0776-4f78-9df1-2b49604eb14a)
+ Call ID: 7da0e33b-0776-4f78-9df1-2b49604eb14a
   Args:
-    source: :Mary_of_Denmark
-    target: :Female
-    relation: :hasSex
-  AddTriple (9d220d8e-5956-4a17-b415-e767dc6414e8)
- Call ID: 9d220d8e-5956-4a17-b415-e767dc6414e8
+    type: :Person
+    source: :Princess_Margriet
+  AssignClass (c716ba21-c23b-48e1-9a31-17eceac69f01)
+ Call ID: c716ba21-c23b-48e1-9a31-17eceac69f01
   Args:
-    source: :Josephine_of_Denmark
-    target: :Frederik_X
+    source: :Pieter_van_Vollenhoven
+    type: :Man
+  AssignClass (a5967e8d-8b5e-42d7-8670-9cb6bee92ad7)
+ Call ID: a5967e8d-8b5e-42d7-8670-9cb6bee92ad7
+  Args:
+    type: :Person
+    source: :Pieter_van_Vollenhoven
+  AddTriple (98582c9f-7301-404a-b0ea-479a92290586)
+ Call ID: 98582c9f-7301-404a-b0ea-479a92290586
+  Args:
+    target: :Pieter_van_Vollenhoven
     relation: :hasFather
-  AddTriple (ec822ab3-7ba9-476f-a7c0-dc2460ba0dd0)
- Call ID: ec822ab3-7ba9-476f-a7c0-dc2460ba0dd0
+    source: :Prince_Floris_van_Vollenhoven
+  AddTriple (5d53d357-4766-42de-9336-0474d55ed75d)
+ Call ID: 5d53d357-4766-42de-9336-0474d55ed75d
   Args:
-    source: :Josephine_of_Denmark
+    target: :Princess_Margriet
     relation: :hasMother
-    target: :Mary_of_Denmark
-  AssignClass (573fd0a8-ae36-40fe-95c6-0e0bcf42a6dc)
- Call ID: 573fd0a8-ae36-40fe-95c6-0e0bcf42a6dc
+    source: :Prince_Floris_van_Vollenhoven
+  AssignClass (f45e264a-e0b5-4040-939e-315ab4ada29c)
+ Call ID: f45e264a-e0b5-4040-939e-315ab4ada29c
+  Args:
+    source: :Prince_Maurits
+    type: :Man
+  AssignClass (b9098e99-1d4c-4c6a-bc6d-48136e9e093a)
+ Call ID: b9098e99-1d4c-4c6a-bc6d-48136e9e093a
   Args:
     type: :Person
-    source: :Margrethe_II
-  AssignClass (c764a644-3f80-416c-917d-dcd0bb12cfd6)
- Call ID: c764a644-3f80-416c-917d-dcd0bb12cfd6
+    source: :Prince_Maurits
+  AssignClass (268e7863-21a7-4966-a77d-5fb009bab367)
+ Call ID: 268e7863-21a7-4966-a77d-5fb009bab367
   Args:
-    type: :Woman
-    source: :Margrethe_II
-  AddTriple (152f2c9c-6617-4de3-ac82-a195e3b4b8f2)
- Call ID: 152f2c9c-6617-4de3-ac82-a195e3b4b8f2
-  Args:
-    relation: :hasSex
-    target: :Female
-    source: :Margrethe_II
-  AssignClass (b657b8d0-a9f5-4537-86f8-adc162e7eb91)
- Call ID: b657b8d0-a9f5-4537-86f8-adc162e7eb91
+    source: :Prince_Bernhard
+    type: :Man
+  AssignClass (1aa81f55-01ad-4c33-aeef-2fdd1c1a1fb9)
+ Call ID: 1aa81f55-01ad-4c33-aeef-2fdd1c1a1fb9
   Args:
     type: :Person
-    source: :Henrik_of_Denmark
-  AssignClass (3461432f-c230-4619-ae90-c89d735b02e9)
- Call ID: 3461432f-c230-4619-ae90-c89d735b02e9
+    source: :Prince_Bernhard
+  AssignClass (72c7d148-fb95-48f9-b4cb-f8eb0a069452)
+ Call ID: 72c7d148-fb95-48f9-b4cb-f8eb0a069452
   Args:
     type: :Man
-    source: :Henrik_of_Denmark
-  AddTriple (596cf8d9-70f0-43b6-b922-3f5fdf5c971b)
- Call ID: 596cf8d9-70f0-43b6-b922-3f5fdf5c971b
+    source: :Prince_Pieter_Christiaan
+  AssignClass (620bef93-87b1-4fd2-8c8b-4f8c9a735e98)
+ Call ID: 620bef93-87b1-4fd2-8c8b-4f8c9a735e98
   Args:
-    relation: :hasSex
-    target: :Male
-    source: :Henrik_of_Denmark
-  AssignClass (f6246a59-73e3-45d2-894e-13e29f2e723c)
- Call ID: f6246a59-73e3-45d2-894e-13e29f2e723c
-  Args:
+    source: :Prince_Pieter_Christiaan
     type: :Person
-    source: :Vincent_of_Denmark
-  AssignClass (7f37b9b3-d37b-4534-8863-12e2c5bb1a76)
- Call ID: 7f37b9b3-d37b-4534-8863-12e2c5bb1a76
+  AddTriple (df017d8f-ccfa-43c3-a5ae-4eade470d79b)
+ Call ID: df017d8f-ccfa-43c3-a5ae-4eade470d79b
   Args:
-    type: :Man
-    source: :Vincent_of_Denmark
-  AddTriple (28efda39-3b8c-4e92-8068-9cf95e26ff2d)
- Call ID: 28efda39-3b8c-4e92-8068-9cf95e26ff2d
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: :Vincent_of_Denmark
-  AddTriple (bd3637c1-2c87-4f1f-b159-5130a6a147a0)
- Call ID: bd3637c1-2c87-4f1f-b159-5130a6a147a0
-  Args:
+    source: :Prince_Floris_van_Vollenhoven
     relation: :isSiblingOf
-    target: :Vincent_of_Denmark
-    source: :Josephine_of_Denmark
-  AddTriple (974f429c-cea4-44bd-99ff-c362ffab4be8)
- Call ID: 974f429c-cea4-44bd-99ff-c362ffab4be8
+    target: :Prince_Maurits
+  AddTriple (5632ae41-5530-4f2b-b61e-4be3e0f9b3ea)
+ Call ID: 5632ae41-5530-4f2b-b61e-4be3e0f9b3ea
   Args:
-    relation: :hasSister
-    target: :Josephine_of_Denmark
-    source: :Vincent_of_Denmark
-  AddTriple (ebf3a62c-c030-4e9a-a876-744bca2481a7)
- Call ID: ebf3a62c-c030-4e9a-a876-744bca2481a7
+    source: :Prince_Floris_van_Vollenhoven
+    relation: :isSiblingOf
+    target: :Prince_Bernhard
+  AddTriple (a0917706-8a81-41b2-bec5-0701074492a6)
+ Call ID: a0917706-8a81-41b2-bec5-0701074492a6
   Args:
-    relation: :hasBrother
-    target: :Vincent_of_Denmark
-    source: :Josephine_of_Denmark
-  AssignClass (7de785ed-7e88-4cc3-ab54-174e2e176d02)
- Call ID: 7de785ed-7e88-4cc3-ab54-174e2e176d02
+    target: :Prince_Pieter_Christiaan
+    source: :Prince_Floris_van_Vollenhoven
+    relation: :isSiblingOf
+  AssignClass (cfbc9a7e-56a8-4bd7-8f5e-1a424ef76ee0)
+ Call ID: cfbc9a7e-56a8-4bd7-8f5e-1a424ef76ee0
+  Args:
+    source: :Aimée_Söhngen
+    type: :Woman
+  AssignClass (986ebc67-afa9-4daf-a2ac-3a27bc4b226b)
+ Call ID: 986ebc67-afa9-4daf-a2ac-3a27bc4b226b
   Args:
     type: :Person
-    source: :Christian_of_Denmark
-  AssignClass (c10e178d-ca49-4680-89e2-05e622d663f0)
- Call ID: c10e178d-ca49-4680-89e2-05e622d663f0
+    source: :Aimée_Söhngen
+  AssignClass (677463d0-c302-43ae-9cb3-5e659801d71e)
+ Call ID: 677463d0-c302-43ae-9cb3-5e659801d71e
   Args:
+    source: :Hans_Söhngen
     type: :Man
-    source: :Christian_of_Denmark
-  AddTriple (2d229b58-7877-43cb-8211-f6c0d8aa5e96)
- Call ID: 2d229b58-7877-43cb-8211-f6c0d8aa5e96
+  AssignClass (d130ae5e-7e5f-4455-bb2b-9725ffcb834d)
+ Call ID: d130ae5e-7e5f-4455-bb2b-9725ffcb834d
   Args:
-    relation: :hasSex
-    target: :Male
-    source: :Christian_of_Denmark
-  AssignClass (044c96a5-fd5e-4995-a3f1-df9c4b8f9624)
- Call ID: 044c96a5-fd5e-4995-a3f1-df9c4b8f9624
-  Args:
+    source: :Hans_Söhngen
     type: :Person
-    source: :Isabella_of_Denmark
-  AssignClass (ed847115-745d-4599-bb09-e8e46804d484)
- Call ID: ed847115-745d-4599-bb09-e8e46804d484
+  AssignClass (0636977b-6f0f-43be-a5e3-ec4f73b34588)
+ Call ID: 0636977b-6f0f-43be-a5e3-ec4f73b34588
   Args:
     type: :Woman
-    source: :Isabella_of_Denmark
-  AddTriple (971eac7c-a3d0-42a0-9805-cf58ee5c3bad)
- Call ID: 971eac7c-a3d0-42a0-9805-cf58ee5c3bad
+    source: :Eleonoor_Stammeijer
+  AssignClass (14dba72d-52a0-46ec-b135-17e2437bdaa6)
+ Call ID: 14dba72d-52a0-46ec-b135-17e2437bdaa6
   Args:
-    target: :Female
-    relation: :hasSex
-    source: :Isabella_of_Denmark
-  AssignClass (9a43d2c6-9939-46fc-b697-7a05a8a5d635)
- Call ID: 9a43d2c6-9939-46fc-b697-7a05a8a5d635
-  Args:
+    source: :Eleonoor_Stammeijer
     type: :Person
-    source: :Marie_of_Denmark
-  AssignClass (8948980e-7532-4eec-8e74-ada242ad1823)
- Call ID: 8948980e-7532-4eec-8e74-ada242ad1823
+  AddTriple (55c53617-4298-416d-9045-e9e09778c87b)
+ Call ID: 55c53617-4298-416d-9045-e9e09778c87b
+  Args:
+    relation: :hasFather
+    source: :Aimée_Söhngen
+    target: :Hans_Söhngen
+  AddTriple (ab477ce0-adb7-45f2-9752-2fae54f4a520)
+ Call ID: ab477ce0-adb7-45f2-9752-2fae54f4a520
+  Args:
+    target: :Eleonoor_Stammeijer
+    source: :Aimée_Söhngen
+    relation: :hasMother
+  AssignClass (51340aa5-9688-43ca-b48e-96d4cd7c94b8)
+ Call ID: 51340aa5-9688-43ca-b48e-96d4cd7c94b8
   Args:
     type: :Woman
-    source: :Marie_of_Denmark
-  AddTriple (f57559a2-6d75-4c31-aa7e-57c09d62f80a)
- Call ID: f57559a2-6d75-4c31-aa7e-57c09d62f80a
+    source: :Magali_Margriet_Eleonoor_van_Vollenhoven
+  AssignClass (5fb53648-c0dd-46d3-b99c-5d90640088d0)
+ Call ID: 5fb53648-c0dd-46d3-b99c-5d90640088d0
   Args:
-    source: :Marie_of_Denmark
-    relation: :hasSex
-    target: :Female
-  AssignClass (0e55dace-15a0-43c1-9130-9c9cbace1b8c)
- Call ID: 0e55dace-15a0-43c1-9130-9c9cbace1b8c
-  Args:
+    source: :Magali_Margriet_Eleonoor_van_Vollenhoven
     type: :Person
-    source: :Patricia_Bailey
-  AssignClass (3b3e6720-5317-47a3-b02d-52a6cc5ef7c5)
- Call ID: 3b3e6720-5317-47a3-b02d-52a6cc5ef7c5
+  AddTriple (e5c70e28-6155-4573-b42e-e949c83d993e)
+ Call ID: e5c70e28-6155-4573-b42e-e949c83d993e
+  Args:
+    target: :Prince_Floris_van_Vollenhoven
+    relation: :hasFather
+    source: :Magali_Margriet_Eleonoor_van_Vollenhoven
+  AddTriple (f4aba6d4-99cd-4390-97ad-5fb7d0ca9dea)
+ Call ID: f4aba6d4-99cd-4390-97ad-5fb7d0ca9dea
+  Args:
+    source: :Magali_Margriet_Eleonoor_van_Vollenhoven
+    relation: :hasMother
+    target: :Aimée_Söhngen
+  AssignClass (0f2dff11-d8a4-45d5-bc8a-300f4242dd5f)
+ Call ID: 0f2dff11-d8a4-45d5-bc8a-300f4242dd5f
   Args:
     type: :Woman
-    source: :Patricia_Bailey
-  AddTriple (fb419408-a464-4b3d-b084-ffdd6f0fd34e)
- Call ID: fb419408-a464-4b3d-b084-ffdd6f0fd34e
+    source: :Eliane_Sophia_Carolina_van_Vollenhoven
+  AssignClass (30ca44b6-e4a5-429d-816b-9a2690f58ddc)
+ Call ID: 30ca44b6-e4a5-429d-816b-9a2690f58ddc
   Args:
-    source: :Patricia_Bailey
-    target: :Female
-    relation: :hasSex
-  Finish (236c0e64-6453-4e16-9225-807c4218973d)
- Call ID: 236c0e64-6453-4e16-9225-807c4218973d
+    type: :Person
+    source: :Eliane_Sophia_Carolina_van_Vollenhoven
+  AddTriple (2641be4d-1bce-493b-8f63-5285b375d6a7)
+ Call ID: 2641be4d-1bce-493b-8f63-5285b375d6a7
+  Args:
+    target: :Prince_Floris_van_Vollenhoven
+    relation: :hasFather
+    source: :Eliane_Sophia_Carolina_van_Vollenhoven
+  AddTriple (85760d30-395c-41bd-97c6-408666a9f23d)
+ Call ID: 85760d30-395c-41bd-97c6-408666a9f23d
+  Args:
+    source: :Eliane_Sophia_Carolina_van_Vollenhoven
+    relation: :hasMother
+    target: :Aimée_Söhngen
+  AssignClass (ea6b78f5-f55e-4b57-ac43-6d7333940cf9)
+ Call ID: ea6b78f5-f55e-4b57-ac43-6d7333940cf9
+  Args:
+    source: :Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven
+    type: :Man
+  AssignClass (2b45f231-5954-4df0-b553-69a24621438a)
+ Call ID: 2b45f231-5954-4df0-b553-69a24621438a
+  Args:
+    source: :Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven
+    type: :Person
+  AddTriple (65b9254a-e218-448c-8010-1645c31a04c9)
+ Call ID: 65b9254a-e218-448c-8010-1645c31a04c9
+  Args:
+    target: :Prince_Floris_van_Vollenhoven
+    relation: :hasFather
+    source: :Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven
+  AddTriple (c4837c4e-7b20-43c7-a617-acc054961d40)
+ Call ID: c4837c4e-7b20-43c7-a617-acc054961d40
+  Args:
+    target: :Aimée_Söhngen
+    relation: :hasMother
+    source: :Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven
+  Finish (b7d49f6f-a4b3-4ca8-b1ac-b75955c950e4)
+ Call ID: b7d49f6f-a4b3-4ca8-b1ac-b75955c950e4
   Args:
 
 ================================= Tool Message =================================
@@ -731,55 +821,55 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Christian_of_Denmark a :Man,
+  data:Eliane_Sophia_Carolina_van_Vollenhoven a :Person,
+          :Woman ;
+      :hasFather data:Prince_Floris_van_Vollenhoven ;
+      :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+
+  data:Magali_Margriet_Eleonoor_van_Vollenhoven a :Person,
+          :Woman ;
+      :hasFather data:Prince_Floris_van_Vollenhoven ;
+      :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+
+  data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven a :Man,
           :Person ;
-      :hasSex data:Male .
+      :hasFather data:Prince_Floris_van_Vollenhoven ;
+      :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
 
-  data:Henrik_of_Denmark a :Man,
+  data:Eleonoor_Stammeijer a :Person,
+          :Woman .
+
+  data:Hans_S%C3%B6hngen a :Man,
+          :Person .
+
+  data:Pieter_van_Vollenhoven a :Man,
+          :Person .
+
+  data:Prince_Bernhard a :Man,
+          :Person .
+
+  data:Prince_Maurits a :Man,
+          :Person .
+
+  data:Prince_Pieter_Christiaan a :Man,
+          :Person .
+
+  data:Princess_Margriet a :Person,
+          :Woman .
+
+  data:Aim%C3%A9e_S%C3%B6hngen a :Person,
+          :Woman ;
+      :hasFather data:Hans_S%C3%B6hngen ;
+      :hasMother data:Eleonoor_Stammeijer .
+
+  data:Prince_Floris_van_Vollenhoven a :Man,
           :Person ;
-      :hasSex data:Male .
-
-  data:Isabella_of_Denmark a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Margrethe_II a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Marie_of_Denmark a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Patricia_Bailey a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Frederik_X a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Josephine_of_Denmark a :Person,
-          :Woman ;
-      :hasBirthYear 2011 ;
-      :hasBrother data:Vincent_of_Denmark ;
-      :hasFather data:Frederik_X ;
-      :hasMother data:Mary_of_Denmark ;
-      :hasSex data:Female ;
-      :isSiblingOf data:Vincent_of_Denmark .
-
-  data:Mary_of_Denmark a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Vincent_of_Denmark a :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :hasSister data:Josephine_of_Denmark .
-
-  data:Male a :Sex .
-
-  data:Female a :Sex .
+      :hasBirthYear 1975 ;
+      :hasFather data:Pieter_van_Vollenhoven ;
+      :hasMother data:Princess_Margriet ;
+      :isSiblingOf data:Prince_Bernhard,
+          data:Prince_Maurits,
+          data:Prince_Pieter_Christiaan .
 
 
 
@@ -791,62 +881,254 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (36e22173-7752-47d4-af5d-ca7f974fc990)
- Call ID: 36e22173-7752-47d4-af5d-ca7f974fc990
+  ValidateShacl (ecaea630-6e4b-490a-bc7a-de4c86c4aeaa)
+ Call ID: ecaea630-6e4b-490a-bc7a-de4c86c4aeaa
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:30
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Frederik_X, acting as the father of Josephine_of_Denmark, is missing the required class :Ancestor.
+      The value Pieter_van_Vollenhoven for property hasFather on node Prince_Floris_van_Vollenhoven is not classified as :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederik_X', class=':Ancestor')
+      AssignClass(Pieter_van_Vollenhoven, :Man)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Mary_of_Denmark, acting as the mother of Josephine_of_Denmark, is missing the required class :Ancestor.
+      The value Prince_Floris_van_Vollenhoven for property hasFather on node Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven is not classified as :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mary_of_Denmark', class=':Ancestor')
+      AssignClass(Prince_Floris_van_Vollenhoven, :Man)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Frederik_X is already assigned the class :Man, but the SHACL constraint specifically requires the class :Ancestor to be explicitly present.
+      The value Princess_Margriet for property hasMother on node Prince_Floris_van_Vollenhoven is not classified as :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederik_X', class=':Ancestor')
+      AssignClass(Princess_Margriet, :Woman)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Mary_of_Denmark is already assigned the class :Woman, but the SHACL constraint specifically requires the class :Ancestor to be explicitly present.
+      The value Aimée_Söhngen for property hasMother on node Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven is not classified as :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mary_of_Denmark', class=':Ancestor')
+      AssignClass(Aimée_Söhngen, :Woman)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      This violation is a redundant report for Frederik_X; ensure the node is correctly identified as an :Ancestor.
+      The value Pieter_van_Vollenhoven for property hasFather on node Prince_Floris_van_Vollenhoven is not classified as :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederik_X', class=':Ancestor')
+      AssignClass(Pieter_van_Vollenhoven, :Man)
 
 
   Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Prince_Floris_van_Vollenhoven for property hasFather on node Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven is not classified as :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Floris_van_Vollenhoven, :Man)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Hans_Söhngen for property hasFather on node Aimée_Söhngen is not classified as :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Hans_Söhngen, :Man)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Prince_Floris_van_Vollenhoven for property hasFather on node Eliane_Sophia_Carolina_van_Vollenhoven is not classified as :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Floris_van_Vollenhoven, :Man)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Prince_Floris_van_Vollenhoven for property hasFather on node Magali_Margriet_Eleonoor_van_Vollenhoven is not classified as :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Floris_van_Vollenhoven, :Man)
+
+
+  Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      This violation is a redundant report for Mary_of_Denmark; ensure the node is correctly identified as an :Ancestor.
+      The value Princess_Margriet for property hasMother on node Prince_Floris_van_Vollenhoven is not classified as :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mary_of_Denmark', class=':Ancestor')
+      AssignClass(Princess_Margriet, :Woman)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Aimée_Söhngen for property hasMother on node Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven is not classified as :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Aimée_Söhngen, :Woman)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Eleonoor_Stammeijer for property hasMother on node Aimée_Söhngen is not classified as :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Eleonoor_Stammeijer, :Woman)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Aimée_Söhngen for property hasMother on node Eliane_Sophia_Carolina_van_Vollenhoven is not classified as :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Aimée_Söhngen, :Woman)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Aimée_Söhngen for property hasMother on node Magali_Margriet_Eleonoor_van_Vollenhoven is not classified as :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Aimée_Söhngen, :Woman)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Pieter_van_Vollenhoven for property hasFather on node Prince_Floris_van_Vollenhoven is not classified as :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pieter_van_Vollenhoven, :Man)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Prince_Floris_van_Vollenhoven for property hasFather on node Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven is not classified as :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Floris_van_Vollenhoven, :Man)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Hans_Söhngen for property hasFather on node Aimée_Söhngen is not classified as :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Hans_Söhngen, :Man)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Prince_Floris_van_Vollenhoven for property hasFather on node Eliane_Sophia_Carolina_van_Vollenhoven is not classified as :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Floris_van_Vollenhoven, :Man)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Prince_Floris_van_Vollenhoven for property hasFather on node Magali_Margriet_Eleonoor_van_Vollenhoven is not classified as :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Floris_van_Vollenhoven, :Man)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Princess_Margriet for property hasMother on node Prince_Floris_van_Vollenhoven is not classified as :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Margriet, :Woman)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Aimée_Söhngen for property hasMother on node Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven is not classified as :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Aimée_Söhngen, :Woman)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Eleonoor_Stammeijer for property hasMother on node Aimée_Söhngen is not classified as :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Eleonoor_Stammeijer, :Woman)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Aimée_Söhngen for property hasMother on node Eliane_Sophia_Carolina_van_Vollenhoven is not classified as :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Aimée_Söhngen, :Woman)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Aimée_Söhngen for property hasMother on node Magali_Margriet_Eleonoor_van_Vollenhoven is not classified as :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Aimée_Söhngen, :Woman)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Hans_Söhngen for property hasFather on node Aimée_Söhngen is not classified as :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Hans_Söhngen, :Man)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Prince_Floris_van_Vollenhoven for property hasFather on node Eliane_Sophia_Carolina_van_Vollenhoven is not classified as :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Floris_van_Vollenhoven, :Man)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Prince_Floris_van_Vollenhoven for property hasFather on node Magali_Margriet_Eleonoor_van_Vollenhoven is not classified as :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Floris_van_Vollenhoven, :Man)
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Eleonoor_Stammeijer for property hasMother on node Aimée_Söhngen is not classified as :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Eleonoor_Stammeijer, :Woman)
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Aimée_Söhngen for property hasMother on node Eliane_Sophia_Carolina_van_Vollenhoven is not classified as :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Aimée_Söhngen, :Woman)
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Aimée_Söhngen for property hasMother on node Magali_Margriet_Eleonoor_van_Vollenhoven is not classified as :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Aimée_Söhngen, :Woman)
 
 
 
@@ -855,16 +1137,55 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (0706302a-cf91-43ec-9641-9e12f56538ab)
- Call ID: 0706302a-cf91-43ec-9641-9e12f56538ab
+  AssignClass (176b4e64-600c-4549-abe9-7dc59d155841)
+ Call ID: 176b4e64-600c-4549-abe9-7dc59d155841
   Args:
     type: :Ancestor
-    source: :Frederik_X
-  AssignClass (fc49a752-bb30-496b-a833-a096680ca20e)
- Call ID: fc49a752-bb30-496b-a833-a096680ca20e
+    source: :Pieter_van_Vollenhoven
+  AssignClass (319daf86-2155-46e5-9919-16ea33f3ea70)
+ Call ID: 319daf86-2155-46e5-9919-16ea33f3ea70
+  Args:
+    source: :Prince_Floris_van_Vollenhoven
+    type: :Ancestor
+  AssignClass (162680d5-0b00-4833-9377-f0fe504001ad)
+ Call ID: 162680d5-0b00-4833-9377-f0fe504001ad
   Args:
     type: :Ancestor
-    source: :Mary_of_Denmark
+    source: :Princess_Margriet
+  AssignClass (d83b1679-0959-4574-9b17-f7a803c83710)
+ Call ID: d83b1679-0959-4574-9b17-f7a803c83710
+  Args:
+    type: :Ancestor
+    source: :Aimée_Söhngen
+  AssignClass (c481901b-0e51-4404-ae0c-4ecb7352fed6)
+ Call ID: c481901b-0e51-4404-ae0c-4ecb7352fed6
+  Args:
+    type: :Ancestor
+    source: :Hans_Söhngen
+  AssignClass (0b823a09-5a64-49fa-a9d2-60aacaa7a168)
+ Call ID: 0b823a09-5a64-49fa-a9d2-60aacaa7a168
+  Args:
+    type: :Ancestor
+    source: :Eleonoor_Stammeijer
+  Finish (722f3ebc-6b47-4c65-875d-904e5a4d0023)
+ Call ID: 722f3ebc-6b47-4c65-875d-904e5a4d0023
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -877,66 +1198,74 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Christian_of_Denmark a :Man,
+  data:Eliane_Sophia_Carolina_van_Vollenhoven a :Person,
+          :Woman ;
+      :hasFather data:Prince_Floris_van_Vollenhoven ;
+      :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+
+  data:Magali_Margriet_Eleonoor_van_Vollenhoven a :Person,
+          :Woman ;
+      :hasFather data:Prince_Floris_van_Vollenhoven ;
+      :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+
+  data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven a :Man,
           :Person ;
-      :hasSex data:Male .
+      :hasFather data:Prince_Floris_van_Vollenhoven ;
+      :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
 
-  data:Henrik_of_Denmark a :Man,
-          :Person ;
-      :hasSex data:Male .
+  data:Eleonoor_Stammeijer a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Isabella_of_Denmark a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Margrethe_II a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Marie_of_Denmark a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Patricia_Bailey a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Frederik_X a :Ancestor,
+  data:Hans_S%C3%B6hngen a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
-  data:Josephine_of_Denmark a :Person,
-          :Woman ;
-      :hasBirthYear 2011 ;
-      :hasBrother data:Vincent_of_Denmark ;
-      :hasFather data:Frederik_X ;
-      :hasMother data:Mary_of_Denmark ;
-      :hasSex data:Female ;
-      :isSiblingOf data:Vincent_of_Denmark .
+  data:Pieter_van_Vollenhoven a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Mary_of_Denmark a :Ancestor,
+  data:Prince_Bernhard a :Man,
+          :Person .
+
+  data:Prince_Maurits a :Man,
+          :Person .
+
+  data:Prince_Pieter_Christiaan a :Man,
+          :Person .
+
+  data:Princess_Margriet a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Aim%C3%A9e_S%C3%B6hngen a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasFather data:Hans_S%C3%B6hngen ;
+      :hasMother data:Eleonoor_Stammeijer .
 
-  data:Vincent_of_Denmark a :Man,
+  data:Prince_Floris_van_Vollenhoven a :Ancestor,
+          :Man,
           :Person ;
-      :hasSex data:Male ;
-      :hasSister data:Josephine_of_Denmark .
+      :hasBirthYear 1975 ;
+      :hasFather data:Pieter_van_Vollenhoven ;
+      :hasMother data:Princess_Margriet ;
+      :isSiblingOf data:Prince_Bernhard,
+          data:Prince_Maurits,
+          data:Prince_Pieter_Christiaan .
 
-  data:Male a :Sex .
-
-  data:Female a :Sex .
 
 
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (1fe3f970-6904-40b3-9347-254ba61555ca)
- Call ID: 1fe3f970-6904-40b3-9347-254ba61555ca
+  ValidateShacl (2e3695e3-74ca-42a5-aea1-f7aab7d7976c)
+ Call ID: 2e3695e3-74ca-42a5-aea1-f7aab7d7976c
   Args:
 
 ================================= Tool Message =================================
@@ -947,6 +1276,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (9219bf0d-cb98-4a4c-bd06-d932eefa4614)
- Call ID: 9219bf0d-cb98-4a4c-bd06-d932eefa4614
+  Finish (b215e182-1156-49f2-8ec4-a6c36151bed7)
+ Call ID: b215e182-1156-49f2-8ec4-a6c36151bed7
   Args:

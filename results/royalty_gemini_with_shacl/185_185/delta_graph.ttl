@@ -2,56 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elisabeth_of_Mecklenburg-Schwerin a :Person,
+data:Prince_Aimone_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasChild data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :hasFather data:Amedeo_5th_Duke_of_Aosta .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Person,
         :Woman ;
-    :hasBirthYear "1869-08-10"^^xsd:date ;
-    :hasDeathYear "1955-09-03"^^xsd:date ;
-    :hasFather data:Frederick_Francis_II_of_Mecklenburg ;
-    :hasMarriageYear "1896-10-24"^^xsd:date ;
-    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
-    :hasRelation data:Frederick_Augustus_II_of_Oldenburg ;
-    :isSiblingOf data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
-    :isSisterOf data:Hendrik_Prince_Consort_of_the_Netherlands .
+    :hasBirthYear 1971 ;
+    :hasChild data:Amedeo_Michele,
+        data:Isabella_Vita_Marina,
+        data:Umberto ;
+    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;
+    :hasMother data:Marina_Karella ;
+    :hasSister data:Princess_Alexandra .
 
-data:Sophia_Charlotte_of_Oldenburg a :Person,
-        :Woman ;
-    :isDaughterOf data:Elisabeth_Anna_of_Oldenburg,
-        data:Frederick_Augustus_II_of_Oldenburg .
-
-data:Adolph_of_Schwarzburg-Rudolstadt a :Ancestor,
-        :Man .
-
-data:Alexandrine_of_Prussia a :Ancestor,
-        :Woman .
-
-data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man,
+data:Amedeo_5th_Duke_of_Aosta a :Ancestor,
+        :Man,
         :Person .
 
-data:Frederick_Francis_II_of_Mecklenburg a :Ancestor,
-        :Man ;
-    :hasFather data:Paul_Frederick_of_Mecklenburg ;
-    :hasMother data:Alexandrine_of_Prussia .
-
-data:Hendrik_Prince_Consort_of_the_Netherlands a :Man,
-        :Person .
-
-data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
-        :Woman ;
-    :hasFather data:Adolph_of_Schwarzburg-Rudolstadt ;
-    :hasMother data:Mathilde_of_Sch%C3%B6nburg-Waldenburg .
-
-data:Mathilde_of_Sch%C3%B6nburg-Waldenburg a :Ancestor,
-        :Woman .
-
-data:Paul_Frederick_of_Mecklenburg a :Ancestor,
-        :Man .
-
-data:Elisabeth_Anna_of_Oldenburg a :Ancestor,
+data:Marina_Karella a :Ancestor,
         :Person,
         :Woman .
 
-data:Frederick_Augustus_II_of_Oldenburg a :Ancestor,
+data:Prince_Michael_of_Greece_and_Denmark a :Ancestor,
         :Man,
-        :Person ;
-    :hasRelation data:Elisabeth_Anna_of_Oldenburg .
+        :Person .
+
+data:Princess_Alexandra a :Person,
+        :Woman .
+
+data:Amedeo_Michele a :Man,
+        :Person .
+
+data:Isabella_Vita_Marina a :Person,
+        :Woman .
+
+data:Umberto a :Man,
+        :Person .
 

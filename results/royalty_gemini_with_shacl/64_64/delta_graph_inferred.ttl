@@ -1,0 +1,404 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:BertholdMargraveOfBaden a :Man ;
+    :hasBrother data:BertholdMargraveOfBaden ;
+    :hasRelation data:BertholdMargraveOfBaden ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:BertholdMargraveOfBaden ;
+    :isBrotherOf data:BertholdMargraveOfBaden ;
+    :isSiblingOf data:BertholdMargraveOfBaden .
+
+data:Female a :Female,
+        :Sex .
+
+data:PrinceChristophOfHesse a :Man ;
+    :hasBrother data:PrinceChristophOfHesse ;
+    :hasRelation data:PrinceChristophOfHesse ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:PrinceChristophOfHesse ;
+    :isBrotherOf data:PrinceChristophOfHesse ;
+    :isSiblingOf data:PrinceChristophOfHesse .
+
+data:PrinceGottfriedOfHohenloheLangenburg a :Man ;
+    :hasBrother data:PrinceGottfriedOfHohenloheLangenburg ;
+    :hasRelation data:PrinceGottfriedOfHohenloheLangenburg ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:PrinceGottfriedOfHohenloheLangenburg ;
+    :isBrotherOf data:PrinceGottfriedOfHohenloheLangenburg ;
+    :isSiblingOf data:PrinceGottfriedOfHohenloheLangenburg .
+
+data:VictoriaMountbattenMarchionessOfMilfordHaven a :Woman ;
+    :hasRelation data:VictoriaMountbattenMarchionessOfMilfordHaven ;
+    :hasSex data:Female ;
+    :hasSister data:VictoriaMountbattenMarchionessOfMilfordHaven ;
+    :isBloodrelationOf data:VictoriaMountbattenMarchionessOfMilfordHaven ;
+    :isSiblingOf data:VictoriaMountbattenMarchionessOfMilfordHaven ;
+    :isSisterOf data:VictoriaMountbattenMarchionessOfMilfordHaven .
+
+data:Male a :Male,
+        :Sex .
+
+data:AlexanderOfGreece a :Man ;
+    :hasAncestor data:ConstantineOfGreece ;
+    :hasBrother data:AlexanderOfGreece ;
+    :hasFather data:ConstantineOfGreece ;
+    :hasParent data:ConstantineOfGreece ;
+    :hasRelation data:AlexanderOfGreece,
+        data:CecilieOfGreece,
+        data:ConstantineOfGreece,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenOlgaOfGreece ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:AlexanderOfGreece ;
+    :isBrotherOf data:AlexanderOfGreece ;
+    :isChildOf data:ConstantineOfGreece ;
+    :isSiblingOf data:AlexanderOfGreece ;
+    :isSonOf data:ConstantineOfGreece .
+
+data:PrinceLouisOfBattenberg a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceLouisOfBattenberg ;
+    :hasChild data:PrincessAliceOfBattenberg ;
+    :hasDaughter data:PrincessAliceOfBattenberg ;
+    :hasRelation data:AlexanderOfGreece,
+        data:CecilieOfGreece,
+        data:ConstantineOfGreece,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenOlgaOfGreece ;
+    :hasSex data:Male ;
+    :isAncestorOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg ;
+    :isBloodrelationOf data:PrinceLouisOfBattenberg ;
+    :isBrotherOf data:PrinceLouisOfBattenberg ;
+    :isFatherOf data:PrincessAliceOfBattenberg ;
+    :isParentOf data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:PrinceLouisOfBattenberg ;
+    :isUncleOf data:PrincessAliceOfBattenberg .
+
+data:PrincessVictoriaOfHesseAndByRhine a :Ancestor,
+        :Woman ;
+    :hasChild data:PrincessAliceOfBattenberg ;
+    :hasDaughter data:PrincessAliceOfBattenberg ;
+    :hasRelation data:AlexanderOfGreece,
+        data:CecilieOfGreece,
+        data:ConstantineOfGreece,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenOlgaOfGreece ;
+    :hasSex data:Female ;
+    :hasSister data:PrincessVictoriaOfHesseAndByRhine ;
+    :isAncestorOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg ;
+    :isAuntOf data:PrincessAliceOfBattenberg ;
+    :isBloodrelationOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isMotherOf data:PrincessAliceOfBattenberg ;
+    :isParentOf data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isSisterOf data:PrincessVictoriaOfHesseAndByRhine .
+
+data:QueenOlgaOfGreece a :Ancestor,
+        :Woman ;
+    :hasChild data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasRelation data:AlexanderOfGreece,
+        data:CecilieOfGreece,
+        data:ConstantineOfGreece,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenOlgaOfGreece ;
+    :hasSex data:Female ;
+    :hasSister data:QueenOlgaOfGreece ;
+    :hasSon data:PrinceAndrewOfGreeceAndDenmark ;
+    :isAncestorOf data:CecilieOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isAuntOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isBloodrelationOf data:QueenOlgaOfGreece ;
+    :isMotherOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isParentOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isSiblingOf data:QueenOlgaOfGreece ;
+    :isSisterOf data:QueenOlgaOfGreece .
+
+data:KingChristianIXOfDenmark a :Ancestor,
+        :Man ;
+    :hasBrother data:KingChristianIXOfDenmark ;
+    :hasChild data:KingGeorgeIOfGreece ;
+    :hasRelation data:AlexanderOfGreece,
+        data:CecilieOfGreece,
+        data:ConstantineOfGreece,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenOlgaOfGreece ;
+    :hasSex data:Male ;
+    :hasSon data:KingGeorgeIOfGreece ;
+    :isAncestorOf data:CecilieOfGreece,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isBloodrelationOf data:KingChristianIXOfDenmark ;
+    :isBrotherOf data:KingChristianIXOfDenmark ;
+    :isFatherOf data:KingGeorgeIOfGreece ;
+    :isParentOf data:KingGeorgeIOfGreece ;
+    :isSiblingOf data:KingChristianIXOfDenmark ;
+    :isUncleOf data:KingGeorgeIOfGreece .
+
+data:ConstantineOfGreece a :Ancestor,
+        :Man ;
+    :hasBrother data:ConstantineOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasChild data:AlexanderOfGreece ;
+    :hasRelation data:AlexanderOfGreece,
+        data:CecilieOfGreece,
+        data:ConstantineOfGreece,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenOlgaOfGreece ;
+    :hasSex data:Male ;
+    :hasSon data:AlexanderOfGreece ;
+    :isAncestorOf data:AlexanderOfGreece ;
+    :isBloodrelationOf data:ConstantineOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark ;
+    :isBrotherOf data:ConstantineOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark ;
+    :isFatherOf data:AlexanderOfGreece ;
+    :isParentOf data:AlexanderOfGreece ;
+    :isSiblingOf data:ConstantineOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark ;
+    :isUncleOf data:AlexanderOfGreece,
+        data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh .
+
+data:KingGeorgeIOfGreece a :Ancestor,
+        :Man ;
+    :hasAncestor data:KingChristianIXOfDenmark ;
+    :hasBrother data:KingGeorgeIOfGreece ;
+    :hasChild data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasFather data:KingChristianIXOfDenmark ;
+    :hasParent data:KingChristianIXOfDenmark ;
+    :hasRelation data:AlexanderOfGreece,
+        data:CecilieOfGreece,
+        data:ConstantineOfGreece,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenOlgaOfGreece ;
+    :hasSex data:Male ;
+    :hasSon data:PrinceAndrewOfGreeceAndDenmark ;
+    :isAncestorOf data:CecilieOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isBloodrelationOf data:KingGeorgeIOfGreece ;
+    :isBrotherOf data:KingGeorgeIOfGreece ;
+    :isChildOf data:KingChristianIXOfDenmark ;
+    :isFatherOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isParentOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isSiblingOf data:KingGeorgeIOfGreece ;
+    :isSonOf data:KingChristianIXOfDenmark ;
+    :isUncleOf data:PrinceAndrewOfGreeceAndDenmark .
+
+data:CecilieOfGreece a :Woman ;
+    :hasAncestor data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenOlgaOfGreece ;
+    :hasBrother data:PrincePhilipDukeOfEdinburgh ;
+    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :hasParent data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :hasRelation data:AlexanderOfGreece,
+        data:CecilieOfGreece,
+        data:ConstantineOfGreece,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenOlgaOfGreece ;
+    :hasSex data:Female ;
+    :hasSister data:CecilieOfGreece ;
+    :isBloodrelationOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isChildOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isDaughterOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isSisterOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh .
+
+data:PrincePhilipDukeOfEdinburgh a :Man ;
+    :hasAncestor data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenOlgaOfGreece ;
+    :hasBrother data:PrincePhilipDukeOfEdinburgh ;
+    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :hasParent data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :hasRelation data:AlexanderOfGreece,
+        data:CecilieOfGreece,
+        data:ConstantineOfGreece,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenOlgaOfGreece ;
+    :hasSex data:Male ;
+    :hasSister data:CecilieOfGreece ;
+    :isBloodrelationOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isBrotherOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isChildOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isSonOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg .
+
+data:PrincessAliceOfBattenberg a :Ancestor,
+        :Woman ;
+    :hasAncestor data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasChild data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :hasDaughter data:CecilieOfGreece ;
+    :hasFather data:PrinceLouisOfBattenberg ;
+    :hasMother data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasParent data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasRelation data:AlexanderOfGreece,
+        data:CecilieOfGreece,
+        data:ConstantineOfGreece,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenOlgaOfGreece ;
+    :hasSex data:Female ;
+    :hasSister data:PrincessAliceOfBattenberg ;
+    :hasSon data:PrincePhilipDukeOfEdinburgh ;
+    :isAncestorOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isAuntOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isBloodrelationOf data:PrincessAliceOfBattenberg ;
+    :isChildOf data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :isDaughterOf data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :isMotherOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isParentOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isSiblingOf data:PrincessAliceOfBattenberg ;
+    :isSisterOf data:PrincessAliceOfBattenberg .
+
+data:PrinceAndrewOfGreeceAndDenmark a :Ancestor,
+        :Man ;
+    :alsoKnownAs "Andréas"^^xsd:string ;
+    :hasAncestor data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:QueenOlgaOfGreece ;
+    :hasBirthYear 1882 ;
+    :hasBrother data:ConstantineOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasChild data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :hasDaughter data:CecilieOfGreece ;
+    :hasDeathYear 1944 ;
+    :hasFather data:KingGeorgeIOfGreece ;
+    :hasMarriageYear 1903 ;
+    :hasMother data:QueenOlgaOfGreece ;
+    :hasParent data:KingGeorgeIOfGreece,
+        data:QueenOlgaOfGreece ;
+    :hasRelation data:AlexanderOfGreece,
+        data:CecilieOfGreece,
+        data:ConstantineOfGreece,
+        data:KingChristianIXOfDenmark,
+        data:KingGeorgeIOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenOlgaOfGreece ;
+    :hasSex data:Male ;
+    :hasSon data:PrincePhilipDukeOfEdinburgh ;
+    :isAncestorOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isBloodrelationOf data:ConstantineOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark ;
+    :isBrotherOf data:ConstantineOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark ;
+    :isChildOf data:KingGeorgeIOfGreece,
+        data:QueenOlgaOfGreece ;
+    :isFatherOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isParentOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isSiblingOf data:ConstantineOfGreece,
+        data:PrinceAndrewOfGreeceAndDenmark ;
+    :isSonOf data:KingGeorgeIOfGreece,
+        data:QueenOlgaOfGreece ;
+    :isUncleOf data:AlexanderOfGreece,
+        data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :knownAs "Prince Andrew of Greece and Denmark"^^xsd:string .
+

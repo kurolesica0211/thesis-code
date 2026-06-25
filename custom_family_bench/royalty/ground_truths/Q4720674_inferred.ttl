@@ -1,0 +1,185 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Norton Knatchbull, 3rd Earl Mountbatten of Burma"^^xsd:string ;
+    data:posIndicesFull "0:61"^^xsd:string ;
+    data:posIndicesPart "1087:1098"^^xsd:string,
+        "1479:1490"^^xsd:string,
+        "1496:1500"^^xsd:string,
+        "1501:1512"^^xsd:string,
+        "1516:1521"^^xsd:string,
+        "1626:1636"^^xsd:string,
+        "1670:1674"^^xsd:string,
+        "1675:1686"^^xsd:string,
+        "1690:1695"^^xsd:string,
+        "1771:1782"^^xsd:string,
+        "194:205"^^xsd:string,
+        "282:292"^^xsd:string,
+        "298:309"^^xsd:string,
+        "330:341"^^xsd:string,
+        "345:350"^^xsd:string,
+        "375:385"^^xsd:string,
+        "408:419"^^xsd:string,
+        "539:549"^^xsd:string,
+        "685:689"^^xsd:string,
+        "690:701"^^xsd:string,
+        "705:710"^^xsd:string,
+        "823:834"^^xsd:string,
+        "836:847"^^xsd:string,
+        "970:980"^^xsd:string ;
+    data:wdtLink wdt:Q1948021 ;
+    :alsoKnownAs "Norton Brabourne"^^xsd:string,
+        "Norton Knatchbull"^^xsd:string,
+        "Norton Knatchbull, 8th Baron Brabourne"^^xsd:string,
+        "Norton Knatchbull, Lord Romsey"^^xsd:string,
+        "Norton Louis Philip Knatchbull, 3rd Earl Mountbatten of Burma"^^xsd:string,
+        "Norton Louis Philip Knatchbull, 8th Baron Brabourne"^^xsd:string,
+        "Norton Louis Philip Knatchbull, Lord Romsey"^^xsd:string,
+        "Norton Mountbatten"^^xsd:string,
+        "Norton Romsey"^^xsd:string ;
+    :hasBrother data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :hasChild data:Nicholas_Knatchbull ;
+    :hasRelation data:Nicholas_Knatchbull,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :hasSex data:male ;
+    :hasSon data:Nicholas_Knatchbull ;
+    :isAncestorOf data:Nicholas_Knatchbull ;
+    :isBloodrelationOf data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :isBrotherOf data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :isFatherOf data:Nicholas_Knatchbull ;
+    :isParentOf data:Nicholas_Knatchbull ;
+    :isSiblingOf data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :isUncleOf data:Nicholas_Knatchbull .
+
+data:Alexandra_Hooper a :Person,
+        :Woman ;
+    rdfs:label "Alexandra Hooper"^^xsd:string ;
+    data:wdtLink wdt:Q4720674 ;
+    :alsoKnownAs "Alexandra Victoria Edwina Diana Hooper"^^xsd:string,
+        "Alexandra Victoria Edwina Diana Knatchbull"^^xsd:string,
+        "Hon. Alexandra Hooper"^^xsd:string,
+        "Hon. Alexandra Knatchbull"^^xsd:string,
+        "Hon. Alexandra Victoria Edwina Diana Hooper"^^xsd:string,
+        "Hon. Alexandra Victoria Edwina Diana Knatchbull"^^xsd:string,
+        "Lady Alexandra Knatchbull"^^xsd:string,
+        "Lady Alexandra Victoria Edwina Diana Hooper"^^xsd:string,
+        "Lady Alexandra Victoria Edwina Diana Knatchbull"^^xsd:string ;
+    :hasAncestor data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasBrother data:Nicholas_Knatchbull ;
+    :hasMother data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasParent data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasRelation data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull,
+        data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :hasSister data:Alexandra_Hooper ;
+    :isBloodrelationOf data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull ;
+    :isChildOf data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :isDaughterOf data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :isSiblingOf data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull ;
+    :isSisterOf data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull .
+
+data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Penelope Knatchbull, Countess Mountbatten of Burma"^^xsd:string ;
+    data:posIndicesFull "1113:1139"^^xsd:string ;
+    data:posIndicesPart "1479:1490"^^xsd:string,
+        "1501:1512"^^xsd:string,
+        "1516:1521"^^xsd:string,
+        "1626:1636"^^xsd:string,
+        "1675:1686"^^xsd:string,
+        "1690:1695"^^xsd:string,
+        "1771:1782"^^xsd:string ;
+    data:wdtLink wdt:Q30323763 ;
+    :alsoKnownAs "Penelope Brabourne"^^xsd:string,
+        "Penelope Eastwood"^^xsd:string,
+        "Penelope Knatchbull, Baroness Brabourne"^^xsd:string,
+        "Penelope Knatchbull, Lady Brabourne"^^xsd:string,
+        "Penelope Knatchbull, Lady Romsey"^^xsd:string,
+        "Penelope Meredith Eastwood"^^xsd:string,
+        "Penelope Meredith Knatchbull, Baroness Brabourne"^^xsd:string,
+        "Penelope Meredith Knatchbull, Countess Mountbatten of Burma"^^xsd:string,
+        "Penelope Meredith Knatchbull, Lady Brabourne"^^xsd:string,
+        "Penelope Meredith Knatchbull, Lady Romsey"^^xsd:string,
+        "Penelope Mountbatten"^^xsd:string,
+        "Penelope Romsey"^^xsd:string ;
+    :hasChild data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull ;
+    :hasDaughter data:Alexandra_Hooper ;
+    :hasRelation data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull,
+        data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasSex data:female ;
+    :hasSister data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasSon data:Nicholas_Knatchbull ;
+    :isAncestorOf data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull ;
+    :isAuntOf data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull ;
+    :isBloodrelationOf data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :isMotherOf data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull ;
+    :isParentOf data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull ;
+    :isSiblingOf data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :isSisterOf data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma .
+
+data:Nicholas_Knatchbull a :Man,
+        :Person ;
+    rdfs:label "Nicholas Knatchbull"^^xsd:string ;
+    data:posIndicesFull "1556:1575"^^xsd:string ;
+    data:posIndicesPart "1860:1868"^^xsd:string ;
+    data:wdtLink wdt:Q11324270 ;
+    :alsoKnownAs "5DN"^^xsd:string,
+        "AMA"^^xsd:string,
+        "Deep N Beeper"^^xsd:string,
+        "Hon. Nicholas Louis Charles Norton Knatchbull"^^xsd:string,
+        "Nicholas Louis Charles Norton Knatchbull"^^xsd:string,
+        "Safe As Milk"^^xsd:string ;
+    :hasAncestor data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma,
+        data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasBrother data:Nicholas_Knatchbull ;
+    :hasFather data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma ;
+    :hasMother data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasParent data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma,
+        data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasRelation data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull,
+        data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma,
+        data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :hasSex data:male ;
+    :hasSister data:Alexandra_Hooper ;
+    :isBloodrelationOf data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull ;
+    :isBrotherOf data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull ;
+    :isChildOf data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma,
+        data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma ;
+    :isSiblingOf data:Alexandra_Hooper,
+        data:Nicholas_Knatchbull ;
+    :isSonOf data:Norton_Knatchbull-_3rd_Earl_Mountbatten_of_Burma,
+        data:Penelope_Knatchbull-_Countess_Mountbatten_of_Burma .
+

@@ -1,0 +1,146 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Karl-_6th_Prince_of_Leiningen a :Man,
+        :Person ;
+    rdfs:label "Karl, 6th Prince of Leiningen"^^xsd:string ;
+    data:posIndicesFull "1419:1448"^^xsd:string ;
+    data:posIndicesPart "1551:1555"^^xsd:string,
+        "1974:1978"^^xsd:string ;
+    data:wdtLink wdt:Q16661984 ;
+    :hasBrother data:Karl-_6th_Prince_of_Leiningen ;
+    :hasRelation data:Karl-_6th_Prince_of_Leiningen ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Karl-_6th_Prince_of_Leiningen ;
+    :isBrotherOf data:Karl-_6th_Prince_of_Leiningen ;
+    :isSiblingOf data:Karl-_6th_Prince_of_Leiningen .
+
+data:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Grand Duke Kirill Vladimirovich of Russia"^^xsd:string ;
+    data:posIndicesFull "99:140"^^xsd:string ;
+    data:posIndicesPart "1734:1740"^^xsd:string,
+        "327:333"^^xsd:string,
+        "586:591"^^xsd:string,
+        "603:609"^^xsd:string,
+        "782:787"^^xsd:string,
+        "818:824"^^xsd:string ;
+    data:wdtLink wdt:Q160948 ;
+    :alsoKnownAs "Cyril Vladimirovich, Grand Duke of Russia"^^xsd:string ;
+    :hasBrother data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :hasChild data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Grand_Duchess_Maria_Kirillovna_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:male ;
+    :isAncestorOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :isFatherOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :isUncleOf data:Grand_Duchess_Maria_Kirillovna_of_Russia .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Victoria Melita of Saxe-Coburg and Gotha"^^xsd:string ;
+    data:posIndicesFull "105:109"^^xsd:string,
+        "145:182"^^xsd:string,
+        "154:169"^^xsd:string,
+        "154:182"^^xsd:string ;
+    data:posIndicesPart "1181:1189"^^xsd:string,
+        "1347:1355"^^xsd:string,
+        "1639:1647"^^xsd:string,
+        "1649:1657"^^xsd:string,
+        "200:206"^^xsd:string,
+        "464:470"^^xsd:string,
+        "512:520"^^xsd:string ;
+    data:wdtLink wdt:Q164500 ;
+    :alsoKnownAs "Ducky"^^xsd:string,
+        "Grand Duchess Victoria Feodorovna of Russia"^^xsd:string,
+        "Princess Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Feodorovna of Russia"^^xsd:string,
+        "Victoria Melita"^^xsd:string,
+        "Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Melita of Saxe-Coburg-Gotha"^^xsd:string,
+        "Victoria Melita, Grand Duchess of Hesse and the Rhine"^^xsd:string ;
+    :hasChild data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Grand_Duchess_Maria_Kirillovna_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isAncestorOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isAuntOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isMotherOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isSiblingOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSisterOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
+
+data:Grand_Duchess_Maria_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Maria Kirillovna of Russia"^^xsd:string ;
+    data:posIndicesFull "521:537"^^xsd:string,
+        "521:547"^^xsd:string,
+        "9:25"^^xsd:string,
+        "9:35"^^xsd:string ;
+    data:posIndicesPart "1011:1016"^^xsd:string,
+        "1249:1254"^^xsd:string,
+        "1331:1336"^^xsd:string,
+        "1398:1403"^^xsd:string,
+        "1606:1611"^^xsd:string,
+        "1794:1799"^^xsd:string,
+        "1812:1817"^^xsd:string,
+        "1894:1899"^^xsd:string,
+        "1983:1988"^^xsd:string,
+        "327:333"^^xsd:string,
+        "444:449"^^xsd:string,
+        "739:744"^^xsd:string,
+        "782:787"^^xsd:string,
+        "788:795"^^xsd:string,
+        "796:801"^^xsd:string,
+        "818:824"^^xsd:string ;
+    data:wdtLink wdt:Q778200 ;
+    :alsoKnownAs "Maria Kirillovna"^^xsd:string,
+        "Maria Kirillovna of Russia"^^xsd:string,
+        "Maria Kirillovna, Princess of Leiningen"^^xsd:string ;
+    :hasAncestor data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasFather data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasParent data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Grand_Duchess_Maria_Kirillovna_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isChildOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isDaughterOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSiblingOf data:Grand_Duchess_Maria_Kirillovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Maria_Kirillovna_of_Russia .
+

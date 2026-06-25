@@ -206,6 +206,8 @@ Queen Victoria Eugenia was released in Finland, Portugal and Spain.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -221,39 +223,9 @@ Queen Victoria Eugenia was released in Finland, Portugal and Spain.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -268,6 +240,23 @@ Queen Victoria Eugenia was released in Finland, Portugal and Spain.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -285,6 +274,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -352,29 +356,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -383,6 +379,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -395,6 +399,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -403,17 +409,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -441,6 +449,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -456,159 +548,439 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a1fdf385-4bbf-45e3-aeb1-8c2fc15863c7)
- Call ID: a1fdf385-4bbf-45e3-aeb1-8c2fc15863c7
+  AssignClass (43625193-8abe-4eaf-a632-8aa76d767f54)
+ Call ID: 43625193-8abe-4eaf-a632-8aa76d767f54
   Args:
     type: :Woman
-    source: Victoria_Eugenie_of_Battenberg
-  AssignClass (8dd9c10f-fc5f-4f7a-be47-74a898b5cc83)
- Call ID: 8dd9c10f-fc5f-4f7a-be47-74a898b5cc83
-  Args:
-    source: Victoria_Eugenie_of_Battenberg
-    type: :Person
-  AssignClass (d9967a67-ff75-435b-8c10-db5b6fb71d80)
- Call ID: d9967a67-ff75-435b-8c10-db5b6fb71d80
-  Args:
-    source: Prince_Henry_of_Battenberg
-    type: :Man
-  AssignClass (650ff81c-bdb8-4271-b91c-ba4f66f35c76)
- Call ID: 650ff81c-bdb8-4271-b91c-ba4f66f35c76
-  Args:
-    source: Prince_Henry_of_Battenberg
-    type: :Person
-  AssignClass (7f8167fe-b5ec-451a-b162-ebd568120b1a)
- Call ID: 7f8167fe-b5ec-451a-b162-ebd568120b1a
-  Args:
-    source: Princess_Beatrice
-    type: :Woman
-  AssignClass (f0f12082-126d-4dd0-aba7-0a8f82be057d)
- Call ID: f0f12082-126d-4dd0-aba7-0a8f82be057d
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+  AssignClass (46f8dbfc-e6d2-4251-905f-1db624e59a40)
+ Call ID: 46f8dbfc-e6d2-4251-905f-1db624e59a40
   Args:
     type: :Person
-    source: Princess_Beatrice
-  AssignClass (5b12c002-db5e-4aca-8e2f-907e6fb4bcd6)
- Call ID: 5b12c002-db5e-4aca-8e2f-907e6fb4bcd6
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+  AddLiteral (458cd83c-1d75-4b7e-bea7-fa180a5c8e97)
+ Call ID: 458cd83c-1d75-4b7e-bea7-fa180a5c8e97
   Args:
-    source: King_Alfonso_XIII
-    type: :Man
-  AssignClass (378922fc-9762-4267-9962-81843ee07a2b)
- Call ID: 378922fc-9762-4267-9962-81843ee07a2b
-  Args:
-    source: King_Alfonso_XIII
-    type: :Person
-  AssignClass (262e282d-d201-496f-a55e-08a6855cf697)
- Call ID: 262e282d-d201-496f-a55e-08a6855cf697
-  Args:
-    source: Queen_Victoria
-    type: :Woman
-  AssignClass (6aff7eb4-f616-4f09-8657-8dd9f77b8dab)
- Call ID: 6aff7eb4-f616-4f09-8657-8dd9f77b8dab
-  Args:
-    type: :Person
-    source: Queen_Victoria
-  AssignClass (42f6d65e-dd3c-452b-9bf7-e0ee0aa32f02)
- Call ID: 42f6d65e-dd3c-452b-9bf7-e0ee0aa32f02
-  Args:
-    type: :Man
-    source: Prince_Albert_of_Saxe-Coburg_and_Gotha
-  AssignClass (1da03c0f-d956-41eb-a2c2-34f394ff9c47)
- Call ID: 1da03c0f-d956-41eb-a2c2-34f394ff9c47
-  Args:
-    type: :Person
-    source: Prince_Albert_of_Saxe-Coburg_and_Gotha
-  AssignClass (1ccd86a3-a32d-49c3-8672-a72a99749a41)
- Call ID: 1ccd86a3-a32d-49c3-8672-a72a99749a41
-  Args:
-    type: :Man
-    source: Prince_Alexander_of_Hesse_and_by_Rhine
-  AssignClass (562513f1-cf1a-4e6b-beaa-bb24ec7c8da0)
- Call ID: 562513f1-cf1a-4e6b-beaa-bb24ec7c8da0
-  Args:
-    source: Prince_Alexander_of_Hesse_and_by_Rhine
-    type: :Person
-  AssignClass (7d184c39-e50b-4efa-98a9-183344268252)
- Call ID: 7d184c39-e50b-4efa-98a9-183344268252
-  Args:
-    source: Julia_Princess_of_Battenberg
-    type: :Woman
-  AssignClass (3ee60953-a860-41a6-9b96-8d45f57a79d7)
- Call ID: 3ee60953-a860-41a6-9b96-8d45f57a79d7
-  Args:
-    source: Julia_Princess_of_Battenberg
-    type: :Person
-  AddLiteral (ae456f5b-8823-414a-a85a-2991b6c417e4)
- Call ID: ae456f5b-8823-414a-a85a-2991b6c417e4
-  Args:
-    relation: :knownAs
-    source: Victoria_Eugenie_of_Battenberg
-    literal_type: xsd:string
-    literal_value: Ena
-  AddLiteral (a28fe519-356d-4a39-8e26-38f9ff5ef7f6)
- Call ID: a28fe519-356d-4a39-8e26-38f9ff5ef7f6
-  Args:
-    literal_value: 1887
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
     literal_type: xsd:integer
-    source: Victoria_Eugenie_of_Battenberg
     relation: :hasBirthYear
-  AddLiteral (67abcb37-7cca-45fc-97ef-4b7f2d5005c3)
- Call ID: 67abcb37-7cca-45fc-97ef-4b7f2d5005c3
+    literal_value: 1887
+  AddLiteral (280d8572-bc14-47b2-b3d5-9ba2c2c8c54e)
+ Call ID: 280d8572-bc14-47b2-b3d5-9ba2c2c8c54e
   Args:
     literal_value: 1969
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    source: Victoria_Eugenie_of_Battenberg
-    literal_type: xsd:integer
-  AddTriple (1fee9ba4-fe46-4d0a-874e-bbc107086974)
- Call ID: 1fee9ba4-fe46-4d0a-874e-bbc107086974
+  AddLiteral (7b79729a-39c7-4ab5-9600-eb05fe58300f)
+ Call ID: 7b79729a-39c7-4ab5-9600-eb05fe58300f
   Args:
-    relation: :hasFather
-    source: Victoria_Eugenie_of_Battenberg
-    target: Prince_Henry_of_Battenberg
-  AddTriple (1440205c-de79-4500-9499-0926ab55d4c5)
- Call ID: 1440205c-de79-4500-9499-0926ab55d4c5
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+    literal_type: xsd:string
+    relation: :knownAs
+    literal_value: Ena
+  AssignClass (87569498-63b2-496a-8d39-468d0d5364db)
+ Call ID: 87569498-63b2-496a-8d39-468d0d5364db
   Args:
-    target: Princess_Beatrice
-    source: Victoria_Eugenie_of_Battenberg
-    relation: :hasMother
-  AddTriple (8fb4c0f3-7b10-4e00-b9ad-45f77cf0f30a)
- Call ID: 8fb4c0f3-7b10-4e00-b9ad-45f77cf0f30a
+    source: :AlfonsoXIII
+    type: :Man
+  AssignClass (7f2386ea-62aa-43c3-bbbb-b32062668b88)
+ Call ID: 7f2386ea-62aa-43c3-bbbb-b32062668b88
   Args:
-    relation: :hasFather
-    source: Prince_Henry_of_Battenberg
-    target: Prince_Alexander_of_Hesse_and_by_Rhine
-  AddTriple (46ba090e-de99-455d-a321-d00bd01078d9)
- Call ID: 46ba090e-de99-455d-a321-d00bd01078d9
+    type: :Person
+    source: :AlfonsoXIII
+  AddLiteral (bcb79c36-9130-4acd-b072-f00ae6a40c32)
+ Call ID: bcb79c36-9130-4acd-b072-f00ae6a40c32
   Args:
-    target: Julia_Princess_of_Battenberg
-    source: Prince_Henry_of_Battenberg
-    relation: :hasMother
-  AddTriple (c0383294-ed45-41de-8249-d709b906bcfc)
- Call ID: c0383294-ed45-41de-8249-d709b906bcfc
-  Args:
-    relation: :hasFather
-    source: Princess_Beatrice
-    target: Prince_Albert_of_Saxe-Coburg_and_Gotha
-  AddTriple (42e191a3-e1a3-41c1-8401-dfccd1e85491)
- Call ID: 42e191a3-e1a3-41c1-8401-dfccd1e85491
-  Args:
-    relation: :hasMother
-    source: Princess_Beatrice
-    target: Queen_Victoria
-  AddLiteral (3dcce081-f2fb-43e0-8512-1e7116e8222f)
- Call ID: 3dcce081-f2fb-43e0-8512-1e7116e8222f
-  Args:
-    relation: :hasMarriageYear
-    source: Victoria_Eugenie_of_Battenberg
-    literal_type: xsd:integer
     literal_value: 1906
-  AddTriple (ac56c2ff-b7f3-4877-ac62-6f3788d1d3c1)
- Call ID: ac56c2ff-b7f3-4877-ac62-6f3788d1d3c1
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+  AddTriple (18f16438-0984-42c3-b809-e624accb38fa)
+ Call ID: 18f16438-0984-42c3-b809-e624accb38fa
   Args:
+    target: :AlfonsoXIII
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
     relation: :hasRelation
-    source: Victoria_Eugenie_of_Battenberg
-    target: King_Alfonso_XIII
-  Finish (44e6ffaa-8513-46df-acf2-68280c997891)
- Call ID: 44e6ffaa-8513-46df-acf2-68280c997891
+  AssignClass (670d2258-6ce2-437f-8eed-50dc44c9ceb1)
+ Call ID: 670d2258-6ce2-437f-8eed-50dc44c9ceb1
   Args:
+    source: :PrinceHenryOfBattenberg
+    type: :Man
+  AssignClass (2915f97d-5cb5-406e-be93-add798fa20e2)
+ Call ID: 2915f97d-5cb5-406e-be93-add798fa20e2
+  Args:
+    source: :PrinceHenryOfBattenberg
+    type: :Person
+  AssignClass (acc769de-13ee-4b1e-83b0-8ad3ef38d156)
+ Call ID: acc769de-13ee-4b1e-83b0-8ad3ef38d156
+  Args:
+    type: :Woman
+    source: :PrincessBeatrice
+  AssignClass (e40ed197-ed8c-4d40-984e-fa524dc528cf)
+ Call ID: e40ed197-ed8c-4d40-984e-fa524dc528cf
+  Args:
+    type: :Person
+    source: :PrincessBeatrice
+  AddTriple (4262d70a-1f99-45eb-b5e4-1e1d34eaaa60)
+ Call ID: 4262d70a-1f99-45eb-b5e4-1e1d34eaaa60
+  Args:
+    target: :PrinceHenryOfBattenberg
+    relation: :hasFather
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+  AddTriple (c04fcf8c-f71e-44d6-9001-eeda6e6829d2)
+ Call ID: c04fcf8c-f71e-44d6-9001-eeda6e6829d2
+  Args:
+    relation: :hasMother
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+    target: :PrincessBeatrice
+  AssignClass (ba8d120a-2cef-45f6-9a03-50fd5fd13882)
+ Call ID: ba8d120a-2cef-45f6-9a03-50fd5fd13882
+  Args:
+    type: :Man
+    source: :PrinceAlexanderOfHesseAndByRhine
+  AssignClass (bf85dc0a-718a-46a6-972d-b6d9e25a8a26)
+ Call ID: bf85dc0a-718a-46a6-972d-b6d9e25a8a26
+  Args:
+    source: :PrinceAlexanderOfHesseAndByRhine
+    type: :Person
+  AssignClass (5b1710b2-89f4-44af-b942-1a4c521866a7)
+ Call ID: 5b1710b2-89f4-44af-b942-1a4c521866a7
+  Args:
+    type: :Woman
+    source: :JuliaPrincessOfBattenberg
+  AssignClass (7588c505-34a4-4cfb-a618-d43e60443d65)
+ Call ID: 7588c505-34a4-4cfb-a618-d43e60443d65
+  Args:
+    type: :Person
+    source: :JuliaPrincessOfBattenberg
+  AddTriple (97067111-89f5-4c93-89b3-149692c0ea10)
+ Call ID: 97067111-89f5-4c93-89b3-149692c0ea10
+  Args:
+    source: :PrinceHenryOfBattenberg
+    relation: :hasFather
+    target: :PrinceAlexanderOfHesseAndByRhine
+  AddTriple (29da1425-89aa-4f38-9c1d-4ba41b2329f1)
+ Call ID: 29da1425-89aa-4f38-9c1d-4ba41b2329f1
+  Args:
+    relation: :hasMother
+    source: :PrinceHenryOfBattenberg
+    target: :JuliaPrincessOfBattenberg
+  AssignClass (b1b40693-dbee-48db-86eb-bb86581951fa)
+ Call ID: b1b40693-dbee-48db-86eb-bb86581951fa
+  Args:
+    type: :Woman
+    source: :QueenVictoria
+  AssignClass (1328f96c-f044-43f3-be16-d8101ab5a548)
+ Call ID: 1328f96c-f044-43f3-be16-d8101ab5a548
+  Args:
+    source: :QueenVictoria
+    type: :Person
+  AssignClass (b684dfe4-63d7-4d97-b9f5-ce39c6279b85)
+ Call ID: b684dfe4-63d7-4d97-b9f5-ce39c6279b85
+  Args:
+    type: :Man
+    source: :PrinceAlbertOfSaxeCoburgAndGotha
+  AssignClass (b163e4df-f912-4b25-93e2-f79eeb3d0c57)
+ Call ID: b163e4df-f912-4b25-93e2-f79eeb3d0c57
+  Args:
+    type: :Person
+    source: :PrinceAlbertOfSaxeCoburgAndGotha
+  AddTriple (0b22c99e-b999-4903-aae3-690a8237d35f)
+ Call ID: 0b22c99e-b999-4903-aae3-690a8237d35f
+  Args:
+    target: :QueenVictoria
+    relation: :hasMother
+    source: :PrincessBeatrice
+  AddTriple (3024cabe-011e-4cab-b13c-6b546fe7e618)
+ Call ID: 3024cabe-011e-4cab-b13c-6b546fe7e618
+  Args:
+    source: :PrincessBeatrice
+    relation: :hasFather
+    target: :PrinceAlbertOfSaxeCoburgAndGotha
+  AssignClass (85aff72f-6b85-4dd1-b3c7-2051aa0a5789)
+ Call ID: 85aff72f-6b85-4dd1-b3c7-2051aa0a5789
+  Args:
+    source: :Leopold
+    type: :Man
+  AssignClass (5c31286e-d1a9-48a3-8e26-4b74e352d395)
+ Call ID: 5c31286e-d1a9-48a3-8e26-4b74e352d395
+  Args:
+    type: :Person
+    source: :Leopold
+  AddTriple (5a29bdfd-29d6-4fa7-ba49-dc45fbccc6d9)
+ Call ID: 5a29bdfd-29d6-4fa7-ba49-dc45fbccc6d9
+  Args:
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+    relation: :hasBrother
+    target: :Leopold
+  AssignClass (062a7124-c062-4be0-8856-e3cbe47ef85b)
+ Call ID: 062a7124-c062-4be0-8856-e3cbe47ef85b
+  Args:
+    type: :Man
+    source: :AlfonsoPrinceOfAsturias
+  AssignClass (e73b06d9-c21c-401e-a819-97de4671855c)
+ Call ID: e73b06d9-c21c-401e-a819-97de4671855c
+  Args:
+    source: :AlfonsoPrinceOfAsturias
+    type: :Person
+  AddTriple (96c11380-e080-41ae-b630-bd867bbc49ee)
+ Call ID: 96c11380-e080-41ae-b630-bd867bbc49ee
+  Args:
+    target: :AlfonsoPrinceOfAsturias
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+    relation: :hasSon
+  AssignClass (893a2610-3c9d-480a-abdb-7a54a4da5b25)
+ Call ID: 893a2610-3c9d-480a-abdb-7a54a4da5b25
+  Args:
+    source: :JuanCountOfBarcelona
+    type: :Man
+  AssignClass (1c2e1d49-0a5d-4e84-9409-07ca417c9ef9)
+ Call ID: 1c2e1d49-0a5d-4e84-9409-07ca417c9ef9
+  Args:
+    type: :Person
+    source: :JuanCountOfBarcelona
+  AddTriple (4f278918-b6e6-4bbe-b935-56fbf28f46e5)
+ Call ID: 4f278918-b6e6-4bbe-b935-56fbf28f46e5
+  Args:
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+    relation: :hasSon
+    target: :JuanCountOfBarcelona
+  AssignClass (682db549-cdee-4942-9f1d-931baae67519)
+ Call ID: 682db549-cdee-4942-9f1d-931baae67519
+  Args:
+    type: :Man
+    source: :InfanteAlfonso
+  AssignClass (2b5cc074-1585-4d18-89a1-d3d7cbcb1d6a)
+ Call ID: 2b5cc074-1585-4d18-89a1-d3d7cbcb1d6a
+  Args:
+    source: :InfanteAlfonso
+    type: :Person
+  AssignClass (439ca34d-4c98-422b-82ca-0d18aebcfbdd)
+ Call ID: 439ca34d-4c98-422b-82ca-0d18aebcfbdd
+  Args:
+    type: :Man
+    source: :InfanteJaime
+  AssignClass (8f9cd09b-aecd-46a6-bcd2-09d1b53a1c6b)
+ Call ID: 8f9cd09b-aecd-46a6-bcd2-09d1b53a1c6b
+  Args:
+    source: :InfanteJaime
+    type: :Person
+  AssignClass (70c6c3d7-9dbc-4500-b50a-43a5bf384bec)
+ Call ID: 70c6c3d7-9dbc-4500-b50a-43a5bf384bec
+  Args:
+    type: :Man
+    source: :InfanteGonzalo
+  AssignClass (a8e8cdd2-35d6-40e8-ad25-f86ff73b08bf)
+ Call ID: a8e8cdd2-35d6-40e8-ad25-f86ff73b08bf
+  Args:
+    source: :InfanteGonzalo
+    type: :Person
+  AssignClass (d26ec000-ebcd-4f79-908d-05d8747e06ed)
+ Call ID: d26ec000-ebcd-4f79-908d-05d8747e06ed
+  Args:
+    type: :Woman
+    source: :InfantaBeatriz
+  AssignClass (553374bb-199c-4594-acee-8889a759a9af)
+ Call ID: 553374bb-199c-4594-acee-8889a759a9af
+  Args:
+    source: :InfantaBeatriz
+    type: :Person
+  AssignClass (1054e549-fab6-471f-9a38-ff861958f933)
+ Call ID: 1054e549-fab6-471f-9a38-ff861958f933
+  Args:
+    source: :InfantaMariaCristina
+    type: :Woman
+  AssignClass (dcb947bb-a9c8-4f11-8d77-7e09a954f9d7)
+ Call ID: dcb947bb-a9c8-4f11-8d77-7e09a954f9d7
+  Args:
+    type: :Person
+    source: :InfantaMariaCristina
+  AddTriple (52b202d5-f48c-4935-a835-5cd8376080f2)
+ Call ID: 52b202d5-f48c-4935-a835-5cd8376080f2
+  Args:
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+    relation: :hasSon
+    target: :InfanteAlfonso
+  AddTriple (a41a0ec0-1df4-429c-98c7-258e133b3751)
+ Call ID: a41a0ec0-1df4-429c-98c7-258e133b3751
+  Args:
+    target: :InfanteJaime
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+    relation: :hasSon
+  AddTriple (2ffe1977-f739-4be6-bfe3-89e743f959d0)
+ Call ID: 2ffe1977-f739-4be6-bfe3-89e743f959d0
+  Args:
+    target: :InfanteGonzalo
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+    relation: :hasSon
+  AddTriple (9ece8ed5-2df6-47e0-ab65-8ef230dbbf72)
+ Call ID: 9ece8ed5-2df6-47e0-ab65-8ef230dbbf72
+  Args:
+    target: :InfantaBeatriz
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+    relation: :hasDaughter
+  AddTriple (d66afa31-2d23-4fdd-af60-b58550b3335c)
+ Call ID: d66afa31-2d23-4fdd-af60-b58550b3335c
+  Args:
+    target: :InfantaMariaCristina
+    source: :VictoriaEugenieJuliaEnaOfBattenberg
+    relation: :hasDaughter
+  AssignClass (abd70072-4bcb-41f4-9c2c-082840f51f2f)
+ Call ID: abd70072-4bcb-41f4-9c2c-082840f51f2f
+  Args:
+    source: :JuanCarlosI
+    type: :Man
+  AssignClass (171b7a95-a283-4c93-8611-f64c091b689c)
+ Call ID: 171b7a95-a283-4c93-8611-f64c091b689c
+  Args:
+    type: :Person
+    source: :JuanCarlosI
+  AddTriple (5d03eb11-7cdf-454c-8990-316bdc451a49)
+ Call ID: 5d03eb11-7cdf-454c-8990-316bdc451a49
+  Args:
+    relation: :hasSon
+    source: :JuanCountOfBarcelona
+    target: :JuanCarlosI
+  AssignClass (61ccb4ce-b450-4f64-b220-ba9433a1f6f2)
+ Call ID: 61ccb4ce-b450-4f64-b220-ba9433a1f6f2
+  Args:
+    source: :FelipeVI
+    type: :Man
+  AssignClass (c3798d8b-4988-4da6-8ecc-bf1d465f2867)
+ Call ID: c3798d8b-4988-4da6-8ecc-bf1d465f2867
+  Args:
+    source: :FelipeVI
+    type: :Person
+  AddTriple (ef13e35a-7b72-445f-b3e2-348eba0e381a)
+ Call ID: ef13e35a-7b72-445f-b3e2-348eba0e381a
+  Args:
+    relation: :hasFather
+    source: :FelipeVI
+    target: :JuanCarlosI
+  Finish (0a0d7327-bc68-426f-b4cc-3de2482c62a5)
+ Call ID: 0a0d7327-bc68-426f-b4cc-3de2482c62a5
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -721,40 +1093,80 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Victoria_Eugenie_of_Battenberg a :Person,
+  data:FelipeVI a :Man,
+          :Person ;
+      :hasFather data:JuanCarlosI .
+
+  data:VictoriaEugenieJuliaEnaOfBattenberg a :Person,
           :Woman ;
       :hasBirthYear 1887 ;
+      :hasBrother data:Leopold ;
+      :hasDaughter data:InfantaBeatriz,
+          data:InfantaMariaCristina ;
       :hasDeathYear 1969 ;
-      :hasFather data:Prince_Henry_of_Battenberg ;
+      :hasFather data:PrinceHenryOfBattenberg ;
       :hasMarriageYear 1906 ;
-      :hasMother data:Princess_Beatrice ;
-      :hasRelation data:King_Alfonso_XIII ;
+      :hasMother data:PrincessBeatrice ;
+      :hasRelation data:AlfonsoXIII ;
+      :hasSon data:AlfonsoPrinceOfAsturias,
+          data:InfanteAlfonso,
+          data:InfanteGonzalo,
+          data:InfanteJaime,
+          data:JuanCountOfBarcelona ;
       :knownAs "Ena"^^xsd:string .
 
-  data:Julia_Princess_of_Battenberg a :Person,
+  data:AlfonsoPrinceOfAsturias a :Man,
+          :Person .
+
+  data:AlfonsoXIII a :Man,
+          :Person .
+
+  data:InfantaBeatriz a :Person,
           :Woman .
 
-  data:King_Alfonso_XIII a :Man,
+  data:InfantaMariaCristina a :Person,
+          :Woman .
+
+  data:InfanteAlfonso a :Man,
           :Person .
 
-  data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Man,
+  data:InfanteGonzalo a :Man,
           :Person .
 
-  data:Prince_Alexander_of_Hesse_and_by_Rhine a :Man,
+  data:InfanteJaime a :Man,
           :Person .
 
-  data:Prince_Henry_of_Battenberg a :Man,
+  data:JuanCountOfBarcelona a :Man,
           :Person ;
-      :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
-      :hasMother data:Julia_Princess_of_Battenberg .
+      :hasSon data:JuanCarlosI .
 
-  data:Princess_Beatrice a :Person,
-          :Woman ;
-      :hasFather data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
-      :hasMother data:Queen_Victoria .
-
-  data:Queen_Victoria a :Person,
+  data:JuliaPrincessOfBattenberg a :Person,
           :Woman .
+
+  data:Leopold a :Man,
+          :Person .
+
+  data:PrinceAlbertOfSaxeCoburgAndGotha a :Man,
+          :Person .
+
+  data:PrinceAlexanderOfHesseAndByRhine a :Man,
+          :Person .
+
+  data:PrinceHenryOfBattenberg a :Man,
+          :Person ;
+      :hasFather data:PrinceAlexanderOfHesseAndByRhine ;
+      :hasMother data:JuliaPrincessOfBattenberg .
+
+  data:PrincessBeatrice a :Person,
+          :Woman ;
+      :hasFather data:PrinceAlbertOfSaxeCoburgAndGotha ;
+      :hasMother data:QueenVictoria .
+
+  data:QueenVictoria a :Person,
+          :Woman .
+
+  data:JuanCarlosI a :Man,
+          :Person .
 
 
 
@@ -766,158 +1178,182 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (930fa716-cd02-49aa-8c3f-f37b126d3b3a)
- Call ID: 930fa716-cd02-49aa-8c3f-f37b126d3b3a
+  ValidateShacl (b24d603a-50e9-45b2-8b21-7032f590dff2)
+ Call ID: b24d603a-50e9-45b2-8b21-7032f590dff2
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:21
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Alexander_of_Hesse_and_by_Rhine lacks the required :Ancestor class for the :hasFather property of Prince_Henry_of_Battenberg.
+      The value node PrinceAlexanderOfHesseAndByRhine does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Prince_Alexander_of_Hesse_and_by_Rhine", class: ":Ancestor")
+      AssignClass(PrinceAlexanderOfHesseAndByRhine, :Man)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Julia_Princess_of_Battenberg lacks the required :Ancestor class for the :hasMother property of Prince_Henry_of_Battenberg.
+      The value node JuanCarlosI does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Julia_Princess_of_Battenberg", class: ":Ancestor")
+      AssignClass(JuanCarlosI, :Man)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Prince_Alexander_of_Hesse_and_by_Rhine lacks the required :Ancestor class for the :hasFather property of Prince_Henry_of_Battenberg.
+      The value node JuliaPrincessOfBattenberg does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Prince_Alexander_of_Hesse_and_by_Rhine", class: ":Ancestor")
+      AssignClass(JuliaPrincessOfBattenberg, :Woman)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Albert_of_Saxe-Coburg_and_Gotha lacks the required :Ancestor class for the :hasFather property of Princess_Beatrice.
+      The value node JuanCarlosI does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Prince_Albert_of_Saxe-Coburg_and_Gotha", class: ":Ancestor")
+      AssignClass(JuanCarlosI, :Man)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Henry_of_Battenberg lacks the required :Ancestor class for the :hasFather property of Victoria_Eugenie_of_Battenberg.
+      The value node PrinceAlbertOfSaxeCoburgAndGotha does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Prince_Henry_of_Battenberg", class: ":Ancestor")
+      AssignClass(PrinceAlbertOfSaxeCoburgAndGotha, :Man)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Julia_Princess_of_Battenberg lacks the required :Ancestor class for the :hasMother property of Prince_Henry_of_Battenberg.
+      The value node PrinceAlexanderOfHesseAndByRhine does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Julia_Princess_of_Battenberg", class: ":Ancestor")
+      AssignClass(PrinceAlexanderOfHesseAndByRhine, :Man)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Queen_Victoria lacks the required :Ancestor class for the :hasMother property of Princess_Beatrice.
+      The value node PrinceHenryOfBattenberg does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Queen_Victoria", class: ":Ancestor")
+      AssignClass(PrinceHenryOfBattenberg, :Man)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Princess_Beatrice lacks the required :Ancestor class for the :hasMother property of Victoria_Eugenie_of_Battenberg.
+      The value node QueenVictoria does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Princess_Beatrice", class: ":Ancestor")
+      AssignClass(QueenVictoria, :Woman)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Prince_Alexander_of_Hesse_and_by_Rhine lacks the required :Ancestor class for the :hasFather property of Prince_Henry_of_Battenberg.
+      The value node JuliaPrincessOfBattenberg does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Prince_Alexander_of_Hesse_and_by_Rhine", class: ":Ancestor")
+      AssignClass(JuliaPrincessOfBattenberg, :Woman)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Prince_Albert_of_Saxe-Coburg_and_Gotha lacks the required :Ancestor class for the :hasFather property of Princess_Beatrice.
+      The value node PrincessBeatrice does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Prince_Albert_of_Saxe-Coburg_and_Gotha", class: ":Ancestor")
+      AssignClass(PrincessBeatrice, :Woman)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Henry_of_Battenberg lacks the required :Ancestor class for the :hasFather property of Victoria_Eugenie_of_Battenberg.
+      The value node JuanCarlosI does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Prince_Henry_of_Battenberg", class: ":Ancestor")
+      AssignClass(JuanCarlosI, :Man)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Julia_Princess_of_Battenberg lacks the required :Ancestor class for the :hasMother property of Prince_Henry_of_Battenberg.
+      The value node PrinceAlexanderOfHesseAndByRhine does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Julia_Princess_of_Battenberg", class: ":Ancestor")
+      AssignClass(PrinceAlexanderOfHesseAndByRhine, :Man)
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Queen_Victoria lacks the required :Ancestor class for the :hasMother property of Princess_Beatrice.
+      The value node PrinceAlbertOfSaxeCoburgAndGotha does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Queen_Victoria", class: ":Ancestor")
+      AssignClass(PrinceAlbertOfSaxeCoburgAndGotha, :Man)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Princess_Beatrice lacks the required :Ancestor class for the :hasMother property of Victoria_Eugenie_of_Battenberg.
+      The value node PrinceHenryOfBattenberg does not have the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Princess_Beatrice", class: ":Ancestor")
+      AssignClass(PrinceHenryOfBattenberg, :Man)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Prince_Albert_of_Saxe-Coburg_and_Gotha lacks the required :Ancestor class for the :hasFather property of Princess_Beatrice.
+      The value node JuliaPrincessOfBattenberg does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Prince_Albert_of_Saxe-Coburg_and_Gotha", class: ":Ancestor")
+      AssignClass(JuliaPrincessOfBattenberg, :Woman)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Prince_Henry_of_Battenberg lacks the required :Ancestor class for the :hasFather property of Victoria_Eugenie_of_Battenberg.
+      The value node QueenVictoria does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Prince_Henry_of_Battenberg", class: ":Ancestor")
+      AssignClass(QueenVictoria, :Woman)
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Queen_Victoria lacks the required :Ancestor class for the :hasMother property of Princess_Beatrice.
+      The value node PrincessBeatrice does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Queen_Victoria", class: ":Ancestor")
+      AssignClass(PrincessBeatrice, :Woman)
 
 
   Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node PrinceHenryOfBattenberg does not have the required class :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(PrinceHenryOfBattenberg, :Man)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node PrinceAlbertOfSaxeCoburgAndGotha does not have the required class :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(PrinceAlbertOfSaxeCoburgAndGotha, :Man)
+
+
+  Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Princess_Beatrice lacks the required :Ancestor class for the :hasMother property of Victoria_Eugenie_of_Battenberg.
+      The value node PrincessBeatrice does not have the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Princess_Beatrice", class: ":Ancestor")
+      AssignClass(PrincessBeatrice, :Woman)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node QueenVictoria does not have the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(QueenVictoria, :Woman)
 
 
 
@@ -926,36 +1362,48 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (8cc15f74-148d-4852-8be6-c5523a2c6b42)
- Call ID: 8cc15f74-148d-4852-8be6-c5523a2c6b42
+  AssignClass (4b558a7d-0f45-4496-b91a-bf6464bc4502)
+ Call ID: 4b558a7d-0f45-4496-b91a-bf6464bc4502
+  Args:
+    source: :PrinceAlexanderOfHesseAndByRhine
+    type: :Ancestor
+  AssignClass (77344f07-2e02-4748-8338-66911e48e168)
+ Call ID: 77344f07-2e02-4748-8338-66911e48e168
   Args:
     type: :Ancestor
-    source: Prince_Alexander_of_Hesse_and_by_Rhine
-  AssignClass (9ea847ad-5fee-476f-a6b3-69f1c064e536)
- Call ID: 9ea847ad-5fee-476f-a6b3-69f1c064e536
+    source: :JuanCarlosI
+  AssignClass (1c25dbb3-9672-4edc-9b2c-3892029e27a7)
+ Call ID: 1c25dbb3-9672-4edc-9b2c-3892029e27a7
   Args:
     type: :Ancestor
-    source: Julia_Princess_of_Battenberg
-  AssignClass (4e700318-6be5-4552-bc8b-4f080d7310a7)
- Call ID: 4e700318-6be5-4552-bc8b-4f080d7310a7
+    source: :JuliaPrincessOfBattenberg
+  AssignClass (86c5a32c-c1d6-4d75-8335-c1e05bd03fe8)
+ Call ID: 86c5a32c-c1d6-4d75-8335-c1e05bd03fe8
+  Args:
+    source: :PrinceAlbertOfSaxeCoburgAndGotha
+    type: :Ancestor
+  AssignClass (026a890e-d261-4a11-9574-a29d630da2a6)
+ Call ID: 026a890e-d261-4a11-9574-a29d630da2a6
+  Args:
+    source: :PrinceHenryOfBattenberg
+    type: :Ancestor
+  AssignClass (dd2bb4b9-1702-4a0f-9b4e-5c3c85239965)
+ Call ID: dd2bb4b9-1702-4a0f-9b4e-5c3c85239965
   Args:
     type: :Ancestor
-    source: Prince_Albert_of_Saxe-Coburg_and_Gotha
-  AssignClass (e1336358-1511-4b9a-b4c3-51b81f9ecaeb)
- Call ID: e1336358-1511-4b9a-b4c3-51b81f9ecaeb
+    source: :QueenVictoria
+  AssignClass (7bbc4f0a-8386-462b-8e1d-6065b28db1cc)
+ Call ID: 7bbc4f0a-8386-462b-8e1d-6065b28db1cc
   Args:
     type: :Ancestor
-    source: Prince_Henry_of_Battenberg
-  AssignClass (633901e5-a097-4486-bb7f-330a34984fbd)
- Call ID: 633901e5-a097-4486-bb7f-330a34984fbd
+    source: :PrincessBeatrice
+  ValidateShacl (29f00035-843d-41c1-bd8e-2e77011f7d55)
+ Call ID: 29f00035-843d-41c1-bd8e-2e77011f7d55
   Args:
-    type: :Ancestor
-    source: Queen_Victoria
-  AssignClass (56e36c00-591e-4ec1-9c93-eb7016a1b7fd)
- Call ID: 56e36c00-591e-4ec1-9c93-eb7016a1b7fd
-  Args:
-    type: :Ancestor
-    source: Princess_Beatrice
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -984,56 +1432,89 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Victoria_Eugenie_of_Battenberg a :Person,
+  data:FelipeVI a :Man,
+          :Person ;
+      :hasFather data:JuanCarlosI .
+
+  data:VictoriaEugenieJuliaEnaOfBattenberg a :Person,
           :Woman ;
       :hasBirthYear 1887 ;
+      :hasBrother data:Leopold ;
+      :hasDaughter data:InfantaBeatriz,
+          data:InfantaMariaCristina ;
       :hasDeathYear 1969 ;
-      :hasFather data:Prince_Henry_of_Battenberg ;
+      :hasFather data:PrinceHenryOfBattenberg ;
       :hasMarriageYear 1906 ;
-      :hasMother data:Princess_Beatrice ;
-      :hasRelation data:King_Alfonso_XIII ;
+      :hasMother data:PrincessBeatrice ;
+      :hasRelation data:AlfonsoXIII ;
+      :hasSon data:AlfonsoPrinceOfAsturias,
+          data:InfanteAlfonso,
+          data:InfanteGonzalo,
+          data:InfanteJaime,
+          data:JuanCountOfBarcelona ;
       :knownAs "Ena"^^xsd:string .
 
-  data:Julia_Princess_of_Battenberg a :Ancestor,
+  data:AlfonsoPrinceOfAsturias a :Man,
+          :Person .
+
+  data:AlfonsoXIII a :Man,
+          :Person .
+
+  data:InfantaBeatriz a :Person,
+          :Woman .
+
+  data:InfantaMariaCristina a :Person,
+          :Woman .
+
+  data:InfanteAlfonso a :Man,
+          :Person .
+
+  data:InfanteGonzalo a :Man,
+          :Person .
+
+  data:InfanteJaime a :Man,
+          :Person .
+
+  data:JuanCountOfBarcelona a :Man,
+          :Person ;
+      :hasSon data:JuanCarlosI .
+
+  data:JuliaPrincessOfBattenberg a :Ancestor,
           :Person,
           :Woman .
 
-  data:King_Alfonso_XIII a :Man,
+  data:Leopold a :Man,
           :Person .
 
-  data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Ancestor,
+  data:PrinceAlbertOfSaxeCoburgAndGotha a :Ancestor,
           :Man,
           :Person .
 
-  data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
+  data:PrinceAlexanderOfHesseAndByRhine a :Ancestor,
           :Man,
           :Person .
 
-  data:Prince_Henry_of_Battenberg a :Ancestor,
+  data:PrinceHenryOfBattenberg a :Ancestor,
           :Man,
           :Person ;
-      :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
-      :hasMother data:Julia_Princess_of_Battenberg .
+      :hasFather data:PrinceAlexanderOfHesseAndByRhine ;
+      :hasMother data:JuliaPrincessOfBattenberg .
 
-  data:Princess_Beatrice a :Ancestor,
+  data:PrincessBeatrice a :Ancestor,
           :Person,
           :Woman ;
-      :hasFather data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
-      :hasMother data:Queen_Victoria .
+      :hasFather data:PrinceAlbertOfSaxeCoburgAndGotha ;
+      :hasMother data:QueenVictoria .
 
-  data:Queen_Victoria a :Ancestor,
+  data:QueenVictoria a :Ancestor,
           :Person,
           :Woman .
 
+  data:JuanCarlosI a :Ancestor,
+          :Man,
+          :Person .
 
 
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (5cd7a591-102b-4076-94be-a21049de0715)
- Call ID: 5cd7a591-102b-4076-94be-a21049de0715
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1043,6 +1524,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (a2192c90-9393-4501-8780-e7fd1eb6507e)
- Call ID: a2192c90-9393-4501-8780-e7fd1eb6507e
+  Finish (2d01c89c-f9d1-4421-9fbd-f24493726fc9)
+ Call ID: 2d01c89c-f9d1-4421-9fbd-f24493726fc9
   Args:

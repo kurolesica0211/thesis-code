@@ -7,32 +7,43 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Paul_Ilyinsky a :Person ;
+    rdfs:label "Paul Ilyinsky" ;
+    data:posIndicesFull "0:36" ;
+    data:posIndicesPart "1406:1414",
+        "1552:1560",
+        "1782:1790",
+        "1950:1958",
+        "2128:2136",
+        "2215:2223",
+        "2384:2392",
+        "386:394",
+        "624:628",
+        "640:648" ;
+    data:wdtLink wdt:Q487309 ;
+    :alsoKnownAs "Paul Dimitrievitch Romanovsky-Ilynsky",
+        "Paul Dmitrievich Romanovsky-Ilyinsky",
+        "Pavel Dimitriievich Romanov-Ilyinsky, Prince Romanov-Ilyinsky" ;
+    :hasParent data:Audrey_Emery,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :hasSex data:male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Audrey_Emery a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Audrey_Emery a :Person ;
     rdfs:label "Audrey Emery" ;
     data:posIndicesFull "1089:1101",
         "227:239" ;
     data:posIndicesPart "2067:2072" ;
     data:wdtLink wdt:Q450692 ;
     :alsoKnownAs "Anna Audrey Emery" ;
-    :hasChild data:Paul_Ilyinsky ;
-    :hasSex data:female ;
-    :hasSon data:Paul_Ilyinsky ;
-    :isMotherOf data:Paul_Ilyinsky ;
-    :isParentOf data:Paul_Ilyinsky .
+    :hasSex data:female .
 
-data:Grand_Duke_Dmitri_Pavlovich_of_Russia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Grand_Duke_Dmitri_Pavlovich_of_Russia a :Person ;
     rdfs:label "Grand Duke Dmitri Pavlovich of Russia" ;
     data:posIndicesFull "145:182" ;
     data:posIndicesPart "1013:1019",
@@ -56,38 +67,9 @@ data:Grand_Duke_Dmitri_Pavlovich_of_Russia a :Ancestor,
         "752:758" ;
     data:wdtLink wdt:Q372954 ;
     :alsoKnownAs "Dimitrii Pavlovich Romanov, Grand Duke of Russia" ;
-    :hasChild data:Paul_Ilyinsky ;
-    :hasSex data:male ;
-    :hasSon data:Paul_Ilyinsky ;
-    :isFatherOf data:Paul_Ilyinsky ;
-    :isParentOf data:Paul_Ilyinsky .
+    :hasSex data:male .
 
-data:Paul_Ilyinsky a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Paul Ilyinsky" ;
-    data:posIndicesFull "0:36" ;
-    data:posIndicesPart "1406:1414",
-        "1552:1560",
-        "1782:1790",
-        "1950:1958",
-        "2128:2136",
-        "2215:2223",
-        "2384:2392",
-        "386:394",
-        "624:628",
-        "640:648" ;
-    data:wdtLink wdt:Q487309 ;
-    :alsoKnownAs "Paul Dimitrievitch Romanovsky-Ilynsky",
-        "Paul Dmitrievich Romanovsky-Ilyinsky",
-        "Pavel Dimitriievich Romanov-Ilyinsky, Prince Romanov-Ilyinsky" ;
-    :hasFather data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
-    :hasMother data:Audrey_Emery ;
-    :hasParent data:Audrey_Emery,
-        data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
-    :hasSex data:male ;
-    :isChildOf data:Audrey_Emery,
-        data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
-    :isSonOf data:Audrey_Emery,
-        data:Grand_Duke_Dmitri_Pavlovich_of_Russia .
+data:female a :Female .
+
+data:male a :Male .
 

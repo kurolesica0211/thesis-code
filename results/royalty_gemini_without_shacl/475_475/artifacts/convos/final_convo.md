@@ -69,88 +69,35 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Crown PrinceThe Crown Princess
+Prince Henry Victor Louis Frederick of Prussia (German: Heinrich Viktor Ludwig Friedrich; 9 January 1900 – 26 February 1904), was the third son and youngest child of Prince Henry of Prussia and Princess Irene of Hesse and by Rhine.
+He was a grandson of Frederick III, German Emperor, through his father and a great-grandson of Queen Victoria.
+Life
 
+Prince Heinrich was born on 9 January 1900, in Kiel.
+His father was pleased by the birth of yet another son, especially such a handsome one, as the Prince had blonde hair.
+The newborn Prince immediately received the title Prince of Prussia with the style Royal Highness, and was baptised
+His older brothers were Prince Waldemar, a namesake of his uncle, and Prince Sigismund, a namesake of his other deceased uncle.
+The Prince was diagnosed with haemophilia as a young child, but, despite this, was a very cheerful and lively boy who liked to play a lot.
+As Henry grew older he became more aware of his condition.
+Death
 
-Princess Tomislav
+On 25 February, Princess Irene left Heinrich unsupervised for a few minutes while she went to fetch something.
+The playful Prince climbed a chair, and then he climbed onto the table.
+He started to scream, which immediately attracted the Princess' attention.
+However, experiencing this condition, it was certain the young Prince would die.
+Aftermath
 
-
-Princess Alexander
-
-
-Princess Elizabeth
-
-
-Alexander, Crown Prince of Yugoslavia (Serbian: Александар Карађорђевић, Престолонаследник Југославије, romanized: Aleksandar Karađorđević, Prestolonaslednik Jugoslavije; born 17 July 1945), is the head of the House of Karađorđević, the former royal house of the defunct Kingdom of Yugoslavia and its predecessor the Kingdom of Serbia.
-Alexander is the only child of King Peter II and Princess Alexandra of Greece and Denmark.
-He held the position of crown prince in the Democratic Federal Yugoslavia for the first four-and-a-half months of his life, until the declaration of the Federal People's Republic of Yugoslavia later in November 1945, when the monarchy was abolished.
-In public he claims the crowned royal title of "Alexander II Karadjordjevic" (Serbian: Александар II Карађорђевић, Aleksandar II Karađorđević) as a pretender to the throne.
-Through his father, Alexander is a direct descendant of Queen Victoria, through his great-great-grandfather Prince Alfred, Duke of Saxe-Coburg and Gotha, Victoria's second eldest son.
-Alexander is known for his support of constitutional monarchism and his humanitarian work.
-He left Yugoslavia in April 1941 and arrived in London in June 1941.
-Commenting on the event and what happened to his father, Crown Prince Alexander said, "He  was too straight.
-On 29 November 1943, AVNOJ (formed by the Partisans) declared themselves the sovereign communist government of Yugoslavia and announced that they would take away all legal rights from the Royal government.
-On 10 August 1945, less than a month after Alexander's birth, AVNOJ named the country Democratic Federal Yugoslavia.
-On 29 November 1945, the country was declared a communist republic and changed its name to People's Federal Republic of Yugoslavia.
-In 1947, all members of Alexander's family except for his granduncle Prince George were deprived of their Yugoslav citizenship and their property was confiscated.
-As of 8 July 2015, the High Court in Belgrade found that decree 392, issued by the Presidency of the Presidium of the National Assembly on 3 August 1947, which deprived King Peter II and other members of the House of Karađorđević of their citizenship, was null and void from the moment of its adoption, in the parts pertaining to Crown Prince Alexander, and that all of its legal consequences are thus null and void.
-Birth and childhood
-
-Alexander was born in Suite 212 of Claridge's Hotel in Brook Street, Mayfair, London, on 17 July 1945.
-The British Government is said to have temporarily ceded sovereignty over the suite in which the birth occurred to Yugoslavia so that the crown prince would be born on Yugoslav territory, though the story may be apocryphal, as there exists no documentary record of this.
-Another part of the story says that a box of soil from the homeland was placed under the bed, so the Prince could be born on Yugoslav soil.
-It is now Suite 214 and known as the 'Alexander Suite'.
-He was the only child of King Peter II and Queen Alexandra of Yugoslavia.
-His parents were relatively unable to take care of him due to their various health and financial problems, so Alexander was raised by his maternal grandmother, Princess Aspasia of Greece and Denmark.
-Military service
-
-Alexander graduated from the Royal Military Academy Sandhurst in 1966 and was commissioned as an officer into the British Army's 16th/5th The Queen's Royal Lancers regiment, rising to the rank of captain.
-After leaving the army in 1972, Alexander, who speaks several languages, pursued a career in international business.
-, he married Princess Maria da Gloria of Orléans-Braganza (b. 1946) from the Brazilian imperial family, at the parish church of St. Mary Magdalene.
-They are double 4th cousins once removed as both are descendants of Prince Ferdinand of Saxe-Coburg and Gotha (1785–1851) and Princess Maria Antonia von Koháry (1797–1862), as well as of Pedro I, Emperor of Brazil and Archduchess Maria Leopoldina of Austria.
-They have three sons: Peter (born 5 February 1980), and fraternal twins: Philip and Alexander (both born 15 January 1982).
-Alexander and Maria da Gloria divorced on 19 February 1985.
-Maria da Gloria married Ignacio de Medina, Duke of Segorbe (b. 1947), while Crown Prince Alexander married Katherine Clairy Batis, daughter of Robert Batis and Anna Dosti, civilly on 20 September 1985, and religiously the following day, at St. Sava Serbian Orthodox Church, Notting Hill, London.
-Since their marriage, she is known as Crown Princess Katherine, as per the royal family's website.
-On 16 December 2017, Alexander attended with his wife the state funeral of his first cousin once removed, King Michael of Romania in Bucharest, along with other heads of European royal families and invited guests.
-On 19 September 2022, Crown Prince Alexander and his wife Katherine attended the state funeral of his godmother Queen Elizabeth II.
-On 6 February 2024, following the news about King Charles' health, Alexander himself revealed that he had been treated for early stage prostate cancer in December 2023.
-Return to Yugoslavia
-
-Alexander first came to Yugoslavia in 1991.
-He actively worked with the opposition to Slobodan Milošević and moved to Yugoslavia after Milošević had been deposed in 2000.
-On 27 February 2001, the parliament of the Federal Republic of Yugoslavia (FRY) passed legislation conferring citizenship on members of the Karađorđević family.
-The legislation may also have effectively annulled a decree stripping the family of its citizenship of the Socialist Federal Republic of Yugoslavia (SFRY) in 1947.
-Belief in constitutional monarchy
-
-Alexander is a proponent of re-creating a constitutional monarchy in Serbia and sees himself as the rightful king.
-He believes that monarchy could give Serbia "stability, continuity and unity".
-A number of political parties and organizations support a constitutional parliamentary monarchy in Serbia.
-The assassinated former Serbian Prime Minister Zoran Đinđić was often seen in the company of the prince and his family, supporting their campaigns and projects, although his Democratic Party never publicly embraced monarchism.
-Crown Prince Alexander has vowed to stay out of politics.
-He and Princess Katherine spend considerable time engaging in humanitarian work.
-The Crown Prince has, however, increasingly participated in public functions alongside the leaders of Serbia, the former Yugoslav republics and members of the diplomatic corps.
-On 11 May 2006, he hosted a reception at the Royal Palace for delegates attending a summit on Serbia and Montenegro.
-The reception was attended by the Governor of the National Bank of Serbia, as well as ambassadors and diplomats from Slovenia, Poland, Brazil, Japan, the United States, and Austria.
-In addition, we in Serbia and Montenegro must take into account that whatever form we take within the European Union, we have only but one choice and that is to work for the common good of all member nations.
-It is also central to take into account that stability in our region will be enhanced when Serbia is fully at peace with itself.
-The Crown Prince raised the issue of a royal restoration in the immediate aftermath of the vote.
-I strongly believe in a Constitutional Parliamentary Kingdom of Serbia.
-Again, we need to be proud, a strong Serbia that is at peace with itself and with its neighbors.
-Only if we have a form of governance close to the Serbian soul: the Kingdom of Serbia.
-What is most important is the interest of Serbia.
-I am ready to meet all our politicians; we have to work together for the common good of Serbia, and to be friends in the name of the future of our country.
-I appeal for mature democratic debate in the interest of Serbia.
-Serbia must have clear and realistic objectives.
-The public also had reservations with Alexander's apparent lack of knowledge of the Serbian language.
-On 27 July 2015, newspaper Blic published a poll "Da li Srbija treba da bude monarhija?" ("Should Serbia be a monarchy?"); 49.8% respondents expressed support in a reconstitution of monarchy, 44.6% were opposed and 5.5% were indifferent.
-In 2017, an NGO, the Kingdom of Serbia Association, announced that in 2016, they had collected over 123,000 signatures of support for a referendum on Alexander being named king, short of the 150,000 needed to force a constitutional amendment.
+Prince Heinrich's premature death would later very much affect the Princess, who would withdraw into herself.
+One of his older brothers, Prince Waldemar, also had haemophilia.
+The middle sibling, Prince Sigismund, was unaffected by the disease.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -166,39 +113,9 @@ In 2017, an NGO, the Kingdom of Serbia Association, announced that in 2016, they
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -213,6 +130,23 @@ In 2017, an NGO, the Kingdom of Serbia Association, announced that in 2016, they
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -230,6 +164,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -297,29 +246,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -328,6 +269,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -340,6 +289,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -348,17 +299,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -386,6 +339,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -401,174 +438,132 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f605c437-233a-4c1c-bc09-d02262d5e660)
- Call ID: f605c437-233a-4c1c-bc09-d02262d5e660
+  AssignClass (f114dd8b-49bb-4a27-afad-5a4c28654e92)
+ Call ID: f114dd8b-49bb-4a27-afad-5a4c28654e92
   Args:
+    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
     type: :Man
-    source: Alexander_Karađorđević
-  AssignClass (242d3b8b-4df6-4097-8138-d8b7b0a8ec19)
- Call ID: 242d3b8b-4df6-4097-8138-d8b7b0a8ec19
+  AssignClass (96642bf6-c9d1-4ba6-8981-fd73626b941f)
+ Call ID: 96642bf6-c9d1-4ba6-8981-fd73626b941f
   Args:
+    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
+    type: :Person
+  AssignClass (cfed0704-d7ce-4eab-828f-4a943c2cb686)
+ Call ID: cfed0704-d7ce-4eab-828f-4a943c2cb686
+  Args:
+    source: Prince_Henry_of_Prussia
     type: :Man
-    source: Peter_II
-  AssignClass (f94416dc-8393-40c7-ba1c-a4d59dfb66d1)
- Call ID: f94416dc-8393-40c7-ba1c-a4d59dfb66d1
+  AssignClass (e9f789fe-cdd8-40a5-a747-459c2da59327)
+ Call ID: e9f789fe-cdd8-40a5-a747-459c2da59327
+  Args:
+    source: Prince_Henry_of_Prussia
+    type: :Person
+  AssignClass (e182ed5b-5a1a-4e0b-9c5d-a1077633a0ce)
+ Call ID: e182ed5b-5a1a-4e0b-9c5d-a1077633a0ce
   Args:
     type: :Woman
-    source: Alexandra_of_Greece_and_Denmark
-  AssignClass (fc8693d4-e370-40dc-9e5c-f5026583fca3)
- Call ID: fc8693d4-e370-40dc-9e5c-f5026583fca3
+    source: Princess_Irene_of_Hesse_and_by_Rhine
+  AssignClass (8179f2a6-3908-49a3-8f88-8e1234c781de)
+ Call ID: 8179f2a6-3908-49a3-8f88-8e1234c781de
   Args:
+    source: Princess_Irene_of_Hesse_and_by_Rhine
+    type: :Person
+  AssignClass (d5888049-a7da-4b84-8d29-4b0ae9b1cd37)
+ Call ID: d5888049-a7da-4b84-8d29-4b0ae9b1cd37
+  Args:
+    source: Frederick_III_German_Emperor
+    type: :Man
+  AssignClass (1cf6a4f9-d6c1-4d99-a75c-0e690c2e0aa5)
+ Call ID: 1cf6a4f9-d6c1-4d99-a75c-0e690c2e0aa5
+  Args:
+    source: Frederick_III_German_Emperor
+    type: :Person
+  AssignClass (a96ccf00-a7ba-4561-b133-f3d4d015b816)
+ Call ID: a96ccf00-a7ba-4561-b133-f3d4d015b816
+  Args:
+    source: Queen_Victoria
     type: :Woman
-    source: Aspasia_of_Greece_and_Denmark
-  AssignClass (b30b4f47-bcca-4867-b4cf-e29c20c7243e)
- Call ID: b30b4f47-bcca-4867-b4cf-e29c20c7243e
+  AssignClass (9778ce64-8892-4c4d-8ff1-9349b0d1a9b8)
+ Call ID: 9778ce64-8892-4c4d-8ff1-9349b0d1a9b8
   Args:
-    type: :Woman
-    source: Maria_da_Gloria_of_Orléans-Braganza
-  AssignClass (d6f38ad5-3af8-444a-ab8e-a0cec1135bfc)
- Call ID: d6f38ad5-3af8-444a-ab8e-a0cec1135bfc
+    type: :Person
+    source: Queen_Victoria
+  AssignClass (dded0bb7-1a8b-40bf-ab14-7fe5ecd81919)
+ Call ID: dded0bb7-1a8b-40bf-ab14-7fe5ecd81919
   Args:
+    source: Prince_Waldemar
     type: :Man
-    source: Peter_Karađorđević
-  AssignClass (83690ea6-adfb-464e-9cb5-68e17c0f820d)
- Call ID: 83690ea6-adfb-464e-9cb5-68e17c0f820d
+  AssignClass (c1815a91-ea04-49ae-9f49-7ad2aeba9ffa)
+ Call ID: c1815a91-ea04-49ae-9f49-7ad2aeba9ffa
   Args:
+    source: Prince_Waldemar
+    type: :Person
+  AssignClass (89aa6a03-6281-45a8-a461-53137d5f114b)
+ Call ID: 89aa6a03-6281-45a8-a461-53137d5f114b
+  Args:
+    source: Prince_Sigismund
     type: :Man
-    source: Philip_Karađorđević
-  AssignClass (34951a65-efb7-42d7-a8a9-64473017548b)
- Call ID: 34951a65-efb7-42d7-a8a9-64473017548b
+  AssignClass (2e0eacd8-0594-43cf-98b4-8f3b372585db)
+ Call ID: 2e0eacd8-0594-43cf-98b4-8f3b372585db
   Args:
-    type: :Man
-    source: Alexander_Karađorđević_Jr
-  AssignClass (d4fbc9c3-d3a4-4ea1-acb0-cafbc9916e76)
- Call ID: d4fbc9c3-d3a4-4ea1-acb0-cafbc9916e76
+    type: :Person
+    source: Prince_Sigismund
+  AddLiteral (075044c5-9477-450d-96ca-3ff9e088e251)
+ Call ID: 075044c5-9477-450d-96ca-3ff9e088e251
   Args:
-    type: :Man
-    source: Ignacio_de_Medina
-  AssignClass (a8e21287-084b-45d9-a92b-7df7a153b23c)
- Call ID: a8e21287-084b-45d9-a92b-7df7a153b23c
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
+    literal_value: 1900
+  AddLiteral (22f90194-dad1-4604-9475-35ce9f372330)
+ Call ID: 22f90194-dad1-4604-9475-35ce9f372330
   Args:
-    type: :Woman
-    source: Katherine_Clairy_Batis
-  AssignClass (894be456-f659-4f94-8e4e-e23ff3046943)
- Call ID: 894be456-f659-4f94-8e4e-e23ff3046943
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
+    literal_value: 1904
+  AddTriple (480b9d7b-daa1-4282-8723-80d061d5819e)
+ Call ID: 480b9d7b-daa1-4282-8723-80d061d5819e
   Args:
-    type: :Man
-    source: Robert_Batis
-  AssignClass (5d1bfd11-a749-450a-8e38-cc7577fd1c84)
- Call ID: 5d1bfd11-a749-450a-8e38-cc7577fd1c84
-  Args:
-    type: :Woman
-    source: Anna_Dosti
-  AddTriple (4284466f-8287-4c38-bd74-33317fd6cb35)
- Call ID: 4284466f-8287-4c38-bd74-33317fd6cb35
-  Args:
-    target: Peter_II
+    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
+    target: Prince_Henry_of_Prussia
     relation: :hasFather
-    source: Alexander_Karađorđević
-  AddTriple (d116da59-b1a8-482f-a0e4-e745e5389eb6)
- Call ID: d116da59-b1a8-482f-a0e4-e745e5389eb6
+  AddTriple (81c28664-1e8b-49a1-821f-ebe6b1304181)
+ Call ID: 81c28664-1e8b-49a1-821f-ebe6b1304181
   Args:
-    source: Alexander_Karađorđević
+    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
+    target: Princess_Irene_of_Hesse_and_by_Rhine
     relation: :hasMother
-    target: Alexandra_of_Greece_and_Denmark
-  AddTriple (96b46b0b-2e43-4b04-b41e-5f7ed8c6254c)
- Call ID: 96b46b0b-2e43-4b04-b41e-5f7ed8c6254c
+  AddTriple (a0ad8e8f-2063-4d27-a5ae-a4b7881d6fc2)
+ Call ID: a0ad8e8f-2063-4d27-a5ae-a4b7881d6fc2
   Args:
-    source: Alexandra_of_Greece_and_Denmark
-    relation: :hasMother
-    target: Aspasia_of_Greece_and_Denmark
-  AddTriple (cdb672b5-c0ae-4738-95d6-41f2cb610e00)
- Call ID: cdb672b5-c0ae-4738-95d6-41f2cb610e00
-  Args:
-    target: Alexander_Karađorđević
+    target: Frederick_III_German_Emperor
     relation: :hasFather
-    source: Peter_Karađorđević
-  AddTriple (d2681dce-d3e2-49b4-adfd-826b9c5081d3)
- Call ID: d2681dce-d3e2-49b4-adfd-826b9c5081d3
+    source: Prince_Henry_of_Prussia
+  AddTriple (02bda5b4-2f8d-41db-abef-b6c9aa7b39c7)
+ Call ID: 02bda5b4-2f8d-41db-abef-b6c9aa7b39c7
   Args:
-    target: Maria_da_Gloria_of_Orléans-Braganza
-    relation: :hasMother
-    source: Peter_Karađorđević
-  AddTriple (6499e145-da66-4c36-889f-bb37904e2007)
- Call ID: 6499e145-da66-4c36-889f-bb37904e2007
+    relation: :hasAncestor
+    target: Queen_Victoria
+    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
+  AddTriple (085811c0-f5e9-451b-9f0c-2b7af912eedd)
+ Call ID: 085811c0-f5e9-451b-9f0c-2b7af912eedd
   Args:
-    source: Philip_Karađorđević
-    target: Alexander_Karađorđević
-    relation: :hasFather
-  AddTriple (2d797ba9-e69c-46bc-96e6-c5e15c6ded1e)
- Call ID: 2d797ba9-e69c-46bc-96e6-c5e15c6ded1e
+    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
+    target: Prince_Waldemar
+    relation: :isSiblingOf
+  AddTriple (13aaa86e-5c0a-4b2d-a97a-92bad506bd60)
+ Call ID: 13aaa86e-5c0a-4b2d-a97a-92bad506bd60
   Args:
-    source: Philip_Karađorđević
-    target: Maria_da_Gloria_of_Orléans-Braganza
-    relation: :hasMother
-  AddTriple (9606d6a0-46c5-4d9b-9670-b867aaf35a12)
- Call ID: 9606d6a0-46c5-4d9b-9670-b867aaf35a12
+    source: Prince_Henry_Victor_Louis_Frederick_of_Prussia
+    target: Prince_Sigismund
+    relation: :isSiblingOf
+  AddTriple (32d54411-b246-490f-86d2-af60eba74748)
+ Call ID: 32d54411-b246-490f-86d2-af60eba74748
   Args:
-    source: Alexander_Karađorđević_Jr
-    relation: :hasFather
-    target: Alexander_Karađorđević
-  AddTriple (ba9588da-0ffb-4e71-a95c-01ffc573c433)
- Call ID: ba9588da-0ffb-4e71-a95c-01ffc573c433
-  Args:
-    relation: :hasMother
-    target: Maria_da_Gloria_of_Orléans-Braganza
-    source: Alexander_Karađorđević_Jr
-  AddTriple (9406450f-39a7-449f-a5e9-268ea16b219f)
- Call ID: 9406450f-39a7-449f-a5e9-268ea16b219f
-  Args:
-    source: Katherine_Clairy_Batis
-    target: Robert_Batis
-    relation: :hasFather
-  AddTriple (84eb0ea8-8432-4aa6-ba01-b96b98a0d94f)
- Call ID: 84eb0ea8-8432-4aa6-ba01-b96b98a0d94f
-  Args:
-    source: Katherine_Clairy_Batis
-    target: Anna_Dosti
-    relation: :hasMother
-  AddLiteral (c5ef4bf6-d6c9-434e-bb25-2c7dbc368709)
- Call ID: c5ef4bf6-d6c9-434e-bb25-2c7dbc368709
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1945
-    literal_type: xsd:integer
-    source: Alexander_Karađorđević
-  AddLiteral (d01bf976-c89b-4dd4-9b6d-fb7deecdc8a5)
- Call ID: d01bf976-c89b-4dd4-9b6d-fb7deecdc8a5
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1946
-    source: Maria_da_Gloria_of_Orléans-Braganza
-    literal_type: xsd:integer
-  AddLiteral (033c683f-b00e-463e-90d3-5328484b0024)
- Call ID: 033c683f-b00e-463e-90d3-5328484b0024
-  Args:
-    literal_value: 1980
-    relation: :hasBirthYear
-    source: Peter_Karađorđević
-    literal_type: xsd:integer
-  AddLiteral (554ef470-d51f-415b-b03e-b406d3bf5ff5)
- Call ID: 554ef470-d51f-415b-b03e-b406d3bf5ff5
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1982
-    literal_type: xsd:integer
-    source: Philip_Karađorđević
-  AddLiteral (822a40c5-ad01-4ebf-9706-2b888cc22514)
- Call ID: 822a40c5-ad01-4ebf-9706-2b888cc22514
-  Args:
-    literal_type: xsd:integer
-    source: Alexander_Karađorđević_Jr
-    literal_value: 1982
-    relation: :hasBirthYear
-  AddLiteral (41b3c6aa-fa42-41f4-9a7a-1544cd958b38)
- Call ID: 41b3c6aa-fa42-41f4-9a7a-1544cd958b38
-  Args:
-    literal_type: xsd:integer
-    source: Ignacio_de_Medina
-    relation: :hasBirthYear
-    literal_value: 1947
-  Finish (1a27e789-f1df-4d94-bb9d-6d339546e786)
- Call ID: 1a27e789-f1df-4d94-bb9d-6d339546e786
+    target: Prince_Sigismund
+    relation: :isSiblingOf
+    source: Prince_Waldemar
+  Finish (5e89b9f6-1292-4285-a08e-f49e64cc1454)
+ Call ID: 5e89b9f6-1292-4285-a08e-f49e64cc1454
   Args:

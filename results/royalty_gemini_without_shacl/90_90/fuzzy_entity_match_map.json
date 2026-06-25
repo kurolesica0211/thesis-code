@@ -16,105 +16,84 @@
       "qid": "Q170184",
       "label": "Princess Marina of Greece and Denmark",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Grand_Duchess_Elena_Vladimirovna_of_Russia",
       "qid": "Q232483",
       "label": "Grand Duchess Elena Vladimirovna of Russia",
       "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Prince_Andrew_of_Greece_and_Denmark",
-      "qid": "Q156531",
-      "label": "Prince Andrew of Greece and Denmark",
-      "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_Edward-_Duke_of_Kent",
       "qid": "Q158258",
       "label": "Prince Edward, Duke of Kent",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_Nicholas_of_Greece_and_Denmark",
       "qid": "Q170160",
       "label": "Prince Nicholas of Greece and Denmark",
       "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Maria_of_Greece_and_Denmark",
-      "qid": "Q232732",
-      "label": "Princess Maria of Greece and Denmark",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Olga_of_Greece_and_Denmark",
-      "qid": "Q235432",
-      "label": "Princess Olga of Greece and Denmark",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Duchess_Marie_of_Mecklenburg-Schwerin",
       "qid": "Q231463",
       "label": "Duchess Marie of Mecklenburg-Schwerin",
       "distance": 2,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Edward_VIII",
-      "qid": "Q590227",
-      "label": "Edward VIII",
-      "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#George_I_of_Greece",
       "qid": "Q17142",
       "label": "George I of Greece",
       "distance": 2,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#George_VI",
-      "qid": "Q280856",
-      "label": "George VI",
-      "distance": 2,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Grand_Duchess_Maria_Pavlovna_of_Russia",
-      "qid": "Q235438",
-      "label": "Grand Duchess Maria Pavlovna of Russia",
-      "distance": 2,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Olga_Constantinovna_of_Russia",
       "qid": "Q155178",
       "label": "Olga Constantinovna of Russia",
       "distance": 2,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_George-_Duke_of_Kent",
       "qid": "Q160770",
       "label": "Prince George, Duke of Kent",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
-      "qid": "Q80976",
-      "label": "Prince Philip, Duke of Edinburgh",
+      "uri": "http://example.com/data#Princess_Olga_of_Greece_and_Denmark",
+      "qid": "Q235432",
+      "label": "Princess Olga of Greece and Denmark",
       "distance": 2,
-      "gender": "male"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#George_V",
+      "qid": "Q269412",
+      "label": "George V",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Andrew_of_Greece_and_Denmark",
+      "qid": "Q156531",
+      "label": "Prince Andrew of Greece and Denmark",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Maria_of_Greece_and_Denmark",
+      "qid": "Q232732",
+      "label": "Princess Maria of Greece and Denmark",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
@@ -129,11 +108,11 @@
       "ground_truth_qid": "Q232483",
       "ground_truth_label": "Grand Duchess Elena Vladimirovna of Russia",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Grand Duchess Elena Vladimirovna of Russia",
       "best_candidate_label": "Grand Duchess Elena Vladimirovna of Russia",
       "best_candidate_qid": "Q232483",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -147,11 +126,29 @@
       "ground_truth_qid": "Q17142",
       "ground_truth_label": "George I of Greece",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "King George I of Greece",
       "best_candidate_label": "George I of Greece",
       "best_candidate_qid": "Q17142",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/King_George_V",
+      "extracted_local_name": "King_George_V",
+      "embedding_text": "King George V",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#George_V",
+      "ground_truth_qid": "Q269412",
+      "ground_truth_label": "George V",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "King George V",
+      "best_candidate_label": "George V",
+      "best_candidate_qid": "Q269412",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -165,11 +162,11 @@
       "ground_truth_qid": "Q170160",
       "ground_truth_label": "Prince Nicholas of Greece and Denmark",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Prince Nicholas of Greece and Denmark",
       "best_candidate_label": "Prince Nicholas of Greece and Denmark",
       "best_candidate_qid": "Q170160",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -183,11 +180,11 @@
       "ground_truth_qid": "Q170184",
       "ground_truth_label": "Princess Marina of Greece and Denmark",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Marina of Greece and Denmark",
       "best_candidate_label": "Princess Marina of Greece and Denmark",
       "best_candidate_qid": "Q170184",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -201,11 +198,11 @@
       "ground_truth_qid": "Q155178",
       "ground_truth_label": "Olga Constantinovna of Russia",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Queen Olga of Greece",
       "best_candidate_label": "Olga Constantinovna of Russia",
       "best_candidate_qid": "Q155178",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -219,30 +216,12 @@
       "ground_truth_qid": "Q160770",
       "ground_truth_label": "Prince George, Duke of Kent",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Prince George- Duke of Kent",
       "best_candidate_label": "Prince George, Duke of Kent",
       "best_candidate_qid": "Q160770",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9855072463768115
-    },
-    {
-      "extracted_uri": "http://example.org/data/King_George_V",
-      "extracted_local_name": "King_George_V",
-      "embedding_text": "King George V",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 0.9705882352941176,
-      "ground_truth_uri": "http://example.com/data#George_VI",
-      "ground_truth_qid": "Q280856",
-      "ground_truth_label": "George VI",
-      "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "King George VI",
-      "best_candidate_label": "George VI",
-      "best_candidate_qid": "Q280856",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.9705882352941176
     },
     {
       "extracted_uri": "http://example.org/data/Alexandra",
@@ -256,11 +235,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Olga of Greece and Denmark",
-      "best_candidate_label": "Princess Olga of Greece and Denmark",
-      "best_candidate_qid": "Q235432",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.34285714285714286
+      "best_candidate_match_text": "George Edward Alexander Edmund of Wales",
+      "best_candidate_label": "Prince George, Duke of Kent",
+      "best_candidate_qid": "Q160770",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.375
     },
     {
       "extracted_uri": "http://example.org/data/Edward",
@@ -277,7 +256,7 @@
       "best_candidate_match_text": "Edward Kent",
       "best_candidate_label": "Prince Edward, Duke of Kent",
       "best_candidate_qid": "Q158258",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.7058823529411765
     },
     {
@@ -292,11 +271,47 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Prince Philip",
-      "best_candidate_label": "Prince Philip, Duke of Edinburgh",
-      "best_candidate_qid": "Q80976",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.4
+      "best_candidate_match_text": "Laci Marie",
+      "best_candidate_label": "Princess Maria of Greece and Denmark",
+      "best_candidate_qid": "Q232732",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.35294117647058826
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Elizabeth",
+      "extracted_local_name": "Princess_Elizabeth",
+      "embedding_text": "Princess Elizabeth",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "The Princess Maria of Greece and Denmark",
+      "best_candidate_label": "Princess Maria of Greece and Denmark",
+      "best_candidate_qid": "Q232732",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.41379310344827586
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Olga",
+      "extracted_local_name": "Princess_Olga",
+      "embedding_text": "Princess Olga",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "The Princess Maria of Greece and Denmark",
+      "best_candidate_label": "Princess Maria of Greece and Denmark",
+      "best_candidate_qid": "Q232732",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4528301886792453
     },
     {
       "extracted_uri": "http://example.org/data/Queen_Mary",
@@ -313,13 +328,13 @@
       "best_candidate_match_text": "Olga of Greece and Denmark",
       "best_candidate_label": "Princess Olga of Greece and Denmark",
       "best_candidate_qid": "Q235432",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.3888888888888889
     }
   ],
   "summary": {
-    "entities_total": 11,
+    "entities_total": 13,
     "entities_matched": 7,
-    "entities_unmatched": 4
+    "entities_unmatched": 6
   }
 }

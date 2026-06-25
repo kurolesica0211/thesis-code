@@ -1,0 +1,609 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Andrew_of_Yugoslavia a :Man ;
+    :hasBrother data:Prince_Andrew_of_Yugoslavia ;
+    :hasRelation data:Prince_Andrew_of_Yugoslavia,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Dorothea_of_Hesse ;
+    :isBloodrelationOf data:Prince_Andrew_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Andrew_of_Yugoslavia ;
+    :isSiblingOf data:Prince_Andrew_of_Yugoslavia .
+
+data:Robert_van_Eyck a :Man ;
+    :hasBrother data:Robert_van_Eyck ;
+    :hasRelation data:Princess_Christina_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Robert_van_Eyck ;
+    :isBloodrelationOf data:Robert_van_Eyck ;
+    :isBrotherOf data:Robert_van_Eyck ;
+    :isSiblingOf data:Robert_van_Eyck .
+
+data:Prince_George_William_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_George_William_of_Hanover ;
+    :hasChild data:Prince_Georg_of_Hanover,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Friederike_of_Hanover ;
+    :hasDaughter data:Princess_Friederike_of_Hanover ;
+    :hasRelation data:Prince_Georg_of_Hanover,
+        data:Prince_George_William_of_Hanover,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :hasSon data:Prince_Georg_of_Hanover,
+        data:Prince_Welf_of_Hanover ;
+    :isAncestorOf data:Prince_Georg_of_Hanover,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Friederike_of_Hanover ;
+    :isBloodrelationOf data:Prince_George_William_of_Hanover ;
+    :isBrotherOf data:Prince_George_William_of_Hanover ;
+    :isFatherOf data:Prince_Georg_of_Hanover,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Friederike_of_Hanover ;
+    :isParentOf data:Prince_Georg_of_Hanover,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Friederike_of_Hanover ;
+    :isSiblingOf data:Prince_George_William_of_Hanover ;
+    :isUncleOf data:Prince_Georg_of_Hanover,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Friederike_of_Hanover .
+
+data:Prince_Christoph_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Prince_Christoph_of_Hesse ;
+    :hasChild data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse ;
+    :hasDaughter data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse ;
+    :hasDeathYear 1943 ;
+    :hasRelation data:Prince_Christoph_of_Hesse,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse ;
+    :hasSon data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse ;
+    :isAncestorOf data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse ;
+    :isBloodrelationOf data:Prince_Christoph_of_Hesse ;
+    :isBrotherOf data:Prince_Christoph_of_Hesse ;
+    :isFatherOf data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse ;
+    :isParentOf data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse ;
+    :isSiblingOf data:Prince_Christoph_of_Hesse ;
+    :isUncleOf data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse .
+
+data:Princess_Sophie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1914 ;
+    :hasChild data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :hasDaughter data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :hasDeathYear 2001 ;
+    :hasRelation data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover ;
+    :isAncestorOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isAuntOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isBloodrelationOf data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isParentOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isSiblingOf data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Georg_of_Hanover a :Man ;
+    :hasAncestor data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover ;
+    :hasFather data:Prince_George_William_of_Hanover ;
+    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Georg_of_Hanover,
+        data:Prince_George_William_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isBloodrelationOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isBrotherOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isChildOf data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isSonOf data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Karl_of_Hesse a :Man ;
+    :hasAncestor data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover ;
+    :hasFather data:Prince_Christoph_of_Hesse ;
+    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Christoph_of_Hesse,
+        data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isBloodrelationOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isBrotherOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isChildOf data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isSonOf data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Rainer_of_Hesse a :Man ;
+    :hasAncestor data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover ;
+    :hasFather data:Prince_Christoph_of_Hesse ;
+    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Christoph_of_Hesse,
+        data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isBloodrelationOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isBrotherOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isChildOf data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isSonOf data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Welf_of_Hanover a :Man ;
+    :hasAncestor data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover ;
+    :hasFather data:Prince_George_William_of_Hanover ;
+    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Georg_of_Hanover,
+        data:Prince_George_William_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isBloodrelationOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isBrotherOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isChildOf data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isSonOf data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Princess_Clarissa_of_Hesse a :Woman ;
+    :hasAncestor data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover ;
+    :hasFather data:Prince_Christoph_of_Hesse ;
+    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Christoph_of_Hesse,
+        data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isBloodrelationOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isChildOf data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isSisterOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover .
+
+data:Princess_Friederike_of_Hanover a :Woman ;
+    :hasAncestor data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover ;
+    :hasFather data:Prince_George_William_of_Hanover ;
+    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Georg_of_Hanover,
+        data:Prince_George_William_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isBloodrelationOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isChildOf data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_George_William_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isSisterOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover .
+
+data:Princess_Christina_of_Hesse a :Woman ;
+    :hasAncestor data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover ;
+    :hasDeathYear 2011 ;
+    :hasFather data:Prince_Christoph_of_Hesse ;
+    :hasMarriageYear 1956,
+        1962 ;
+    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Andrew_of_Yugoslavia,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Georg_of_Hanover,
+        data:Prince_George_William_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Robert_van_Eyck ;
+    :hasSister data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isBloodrelationOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isChildOf data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isSisterOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover .
+
+data:Princess_Dorothea_of_Hesse a :Woman ;
+    :hasAncestor data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover ;
+    :hasFather data:Prince_Christoph_of_Hesse ;
+    :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Andrew_of_Yugoslavia,
+        data:Prince_Christoph_of_Hesse,
+        data:Prince_Georg_of_Hanover,
+        data:Prince_George_William_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover,
+        data:Princess_Sophie_of_Greece_and_Denmark,
+        data:Robert_van_Eyck ;
+    :hasSister data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isBloodrelationOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isChildOf data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isDaughterOf data:Prince_Christoph_of_Hesse,
+        data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover ;
+    :isSisterOf data:Prince_Georg_of_Hanover,
+        data:Prince_Karl_of_Hesse,
+        data:Prince_Rainer_of_Hesse,
+        data:Prince_Welf_of_Hanover,
+        data:Princess_Christina_of_Hesse,
+        data:Princess_Clarissa_of_Hesse,
+        data:Princess_Dorothea_of_Hesse,
+        data:Princess_Friederike_of_Hanover .
+

@@ -7,93 +7,11 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Philip, Duke of Edinburgh" ;
-    data:posIndicesFull "757:770",
-        "757:789" ;
-    data:posIndicesPart "1793:1799",
-        "2216:2220" ;
-    data:wdtLink wdt:Q80976 ;
-    :alsoKnownAs "H.R.H. Prince Philip",
-        "H.R.H. The Duke Of Edinburgh",
-        "Lieutenant Philip Mountbatten",
-        "Philip Edinburgh",
-        "Philip Mountbatten",
-        "Philip Mountbatten; Prince Philip of Greece and Denmark",
-        "Philip of Greece and Denmark",
-        "Prince Philip",
-        "Prince Philip of Greece and Denmark",
-        "The Prince Philip, Duke of Edinburgh" ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :isBrotherOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :isSiblingOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :isUncleOf data:Princess_Margarita_of_Baden .
-
-data:Prince_Tomislav_of_Yugoslavia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Tomislav of Yugoslavia" ;
-    data:posIndicesFull "348:377",
-        "355:377" ;
-    data:posIndicesPart "1793:1799",
-        "438:448",
-        "532:538",
-        "549:559",
-        "584:590",
-        "602:608",
-        "660:666",
-        "670:680" ;
-    data:wdtLink wdt:Q594386 ;
-    :alsoKnownAs "Tomislav of Yugoslavia" ;
-    :hasChild data:Princess_Katarina_of_Serbia ;
-    :hasDaughter data:Princess_Katarina_of_Serbia ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Katarina_of_Serbia ;
-    :isParentOf data:Princess_Katarina_of_Serbia .
-
-data:Princess_Theodora_of_Greece_and_Denmark_1 a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Theodora of Greece and Denmark" ;
-    data:posIndicesFull "699:737",
-        "708:737" ;
-    data:posIndicesPart "1036:1044",
-        "2274:2281",
-        "2295:2301",
-        "827:835",
-        "996:1004" ;
-    data:wdtLink wdt:Q255382 ;
-    :alsoKnownAs "Princess Theodora, Margravine of Baden",
-        "Theodora, Margravine of Baden" ;
-    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasChild data:Princess_Margarita_of_Baden ;
-    :hasDaughter data:Princess_Margarita_of_Baden ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Margarita_of_Baden ;
-    :isParentOf data:Princess_Margarita_of_Baden ;
-    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSisterOf data:Prince_Philip-_Duke_of_Edinburgh .
-
-data:Princess_Katarina_of_Serbia a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Katarina_of_Serbia a :Person ;
     rdfs:label "Princess Katarina of Serbia" ;
     data:posIndicesFull "99:130",
         "99:145" ;
-    data:posIndicesPart "1036:1044",
-        "1083:1091",
+    data:posIndicesPart "1083:1091",
         "1215:1223",
         "1325:1333",
         "1496:1504",
@@ -114,37 +32,82 @@ data:Princess_Katarina_of_Serbia a :Person,
         "Princess Katarina of Yugoslavia",
         "Princess Katarina of Yugoslavia, Lady de Silva",
         "Princess Katarina, Lady de Silva" ;
-    :hasFather data:Prince_Tomislav_of_Yugoslavia ;
-    :hasMother data:Princess_Margarita_of_Baden ;
     :hasParent data:Prince_Tomislav_of_Yugoslavia,
         data:Princess_Margarita_of_Baden ;
-    :hasSex data:female ;
-    :isChildOf data:Prince_Tomislav_of_Yugoslavia,
-        data:Princess_Margarita_of_Baden ;
-    :isDaughterOf data:Prince_Tomislav_of_Yugoslavia,
-        data:Princess_Margarita_of_Baden .
+    :hasSex data:female .
 
-data:Princess_Margarita_of_Baden a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Tomislav_of_Yugoslavia a :Person ;
+    rdfs:label "Prince Tomislav of Yugoslavia" ;
+    data:posIndicesFull "348:377",
+        "355:377" ;
+    data:posIndicesPart "1793:1799",
+        "438:448",
+        "532:538",
+        "549:559",
+        "584:590",
+        "602:608",
+        "660:666",
+        "670:680",
+        "757:763" ;
+    data:wdtLink wdt:Q594386 ;
+    :alsoKnownAs "Tomislav of Yugoslavia" ;
+    :hasSex data:male .
+
+data:Princess_Alice_of_Battenberg a :Person ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "1036:1064",
+        "1045:1050",
+        "1045:1064",
+        "1319:1323",
+        "252:256",
+        "867:871",
+        "938:943" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasSex data:female .
+
+data:Princess_Margarita_of_Baden a :Person ;
     rdfs:label "Princess Margarita of Baden" ;
     data:posIndicesFull "316:343" ;
-    data:posIndicesPart "1036:1044",
-        "1436:1445",
+    data:posIndicesPart "1436:1445",
         "2224:2229",
         "827:835",
         "996:1004" ;
     data:wdtLink wdt:Q3424937 ;
     :alsoKnownAs "Margarita Prinzessin von Baden",
         "Margarita von Baden" ;
-    :hasChild data:Princess_Katarina_of_Serbia ;
-    :hasDaughter data:Princess_Katarina_of_Serbia ;
-    :hasMother data:Princess_Theodora_of_Greece_and_Denmark_1 ;
     :hasParent data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :hasSex data:female ;
-    :isChildOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :isDaughterOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :isMotherOf data:Princess_Katarina_of_Serbia ;
-    :isParentOf data:Princess_Katarina_of_Serbia .
+    :hasSex data:female .
+
+data:Princess_Theodora_of_Greece_and_Denmark_1 a :Person ;
+    rdfs:label "Princess Theodora of Greece and Denmark" ;
+    data:posIndicesFull "699:737",
+        "708:737" ;
+    data:posIndicesPart "2274:2281",
+        "2295:2301",
+        "827:835",
+        "996:1004" ;
+    data:wdtLink wdt:Q255382 ;
+    :alsoKnownAs "Princess Theodora, Margravine of Baden",
+        "Theodora, Margravine of Baden" ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

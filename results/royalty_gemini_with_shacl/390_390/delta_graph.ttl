@@ -2,38 +2,38 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfred_of_Prussia a :Man,
-        :Person ;
-    :hasBirthYear 1924 ;
-    :hasDeathYear 2013 ;
-    :isSonOf data:Sigismund_of_Prussia .
+data:Franz_Wilhelm_von_Preussen a :Man ;
+    :hasBirthYear 1943 ;
+    :hasFather data:Karl_Franz_of_Prussia ;
+    :hasMarriageYear 1976,
+        2019 ;
+    :hasMother data:Henriette_von_Schoenaich_Carolath ;
+    :isSiblingOf data:Friedrich_Christian_of_Prussia .
 
-data:Charlotte_of_Saxe-Altenburg a :Person,
-        :Woman ;
-    :isDaughterOf data:Ernst_II_Duke_of_Saxe-Altenburg .
+data:Maria_Vladimirovna_of_Russia a :Woman ;
+    :hasFather data:Vladimir_of_Russia .
 
-data:Ernst_II_Duke_of_Saxe-Altenburg a :Ancestor,
-        :Man,
-        :Person .
+data:Nadia_Nour_El_Etreby a :Woman ;
+    :hasBirthYear 1949 .
 
-data:Henry_of_Prussia a :Ancestor,
-        :Man,
-        :Person .
+data:Friedrich_Christian_of_Prussia a :Man ;
+    :hasFather data:Karl_Franz_of_Prussia ;
+    :hasMother data:Henriette_von_Schoenaich_Carolath .
 
-data:Irene_of_Hesse_and_by_Rhine a :Ancestor,
-        :Person,
+data:Joachim_of_Prussia a :Ancestor,
+        :Man ;
+    :hasFather data:Wilhelm_II .
+
+data:Vladimir_of_Russia a :Ancestor,
+        :Man .
+
+data:Wilhelm_II a :Ancestor,
+        :Man .
+
+data:Henriette_von_Schoenaich_Carolath a :Ancestor,
         :Woman .
 
-data:Male a :Sex .
-
-data:Sigismund_of_Prussia a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1896 ;
-    :hasDeathYear 1978 ;
-    :hasFather data:Henry_of_Prussia ;
-    :hasMarriageYear 1919 ;
-    :hasMother data:Irene_of_Hesse_and_by_Rhine ;
-    :hasRelation data:Charlotte_of_Saxe-Altenburg ;
-    :hasSex data:Male .
+data:Karl_Franz_of_Prussia a :Ancestor,
+        :Man ;
+    :hasFather data:Joachim_of_Prussia .
 

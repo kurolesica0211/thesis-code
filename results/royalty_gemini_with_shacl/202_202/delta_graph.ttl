@@ -2,38 +2,38 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Ari a :Man,
+data:Gottfried a :Man,
         :Person ;
-    :isSonOf data:GaryLewis .
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1984 ;
+    :hasFather data:PeterFerdinand ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:MariaCristina ;
+    :hasRelation data:Dorothea .
 
-data:SennaKowhai a :Person,
+data:Dorothea a :Person,
         :Woman ;
-    :isDaughterOf data:DavinaWindsor,
-        data:GaryLewis .
+    :hasFather data:FranzOfBavaria ;
+    :hasMother data:IsabellaAntonie .
 
-data:TaneMahuta a :Man,
-        :Person ;
-    :isSonOf data:DavinaWindsor,
-        data:GaryLewis .
-
-data:BirgitteGloucester a :Ancestor,
-        :Person,
-        :Woman .
-
-data:PrinceRichard a :Ancestor,
+data:FerdinandIV a :Ancestor,
         :Man,
         :Person .
 
-data:DavinaWindsor a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1977 ;
-    :hasFather data:PrinceRichard ;
-    :hasMarriageYear 2004 ;
-    :hasMother data:BirgitteGloucester .
+data:FranzOfBavaria a :Ancestor,
+        :Man,
+        :Person .
 
-data:GaryLewis a :Ancestor,
+data:IsabellaAntonie a :Ancestor,
+        :Person,
+        :Woman .
+
+data:MariaCristina a :Ancestor,
+        :Person,
+        :Woman .
+
+data:PeterFerdinand a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear 1970 .
+    :hasFather data:FerdinandIV .
 

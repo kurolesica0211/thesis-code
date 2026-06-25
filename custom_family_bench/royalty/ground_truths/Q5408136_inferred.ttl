@@ -1,0 +1,80 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Alfonso_XII_of_Spain a :Man,
+        :Person ;
+    rdfs:label "Alfonso XII of Spain"^^xsd:string ;
+    data:posIndicesFull "707:718"^^xsd:string ;
+    data:wdtLink wdt:Q32347 ;
+    :alsoKnownAs "Alfonso XII"^^xsd:string ;
+    :hasBrother data:Alfonso_XII_of_Spain ;
+    :hasRelation data:Alfonso_XII_of_Spain ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Alfonso_XII_of_Spain ;
+    :isBrotherOf data:Alfonso_XII_of_Spain ;
+    :isSiblingOf data:Alfonso_XII_of_Spain .
+
+data:Irakli_Bagration_of_Mukhrani a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Irakli Bagration of Mukhrani"^^xsd:string ;
+    data:posIndicesFull "503:528"^^xsd:string ;
+    data:posIndicesPart "736:745"^^xsd:string ;
+    data:wdtLink wdt:Q2576581 ;
+    :alsoKnownAs "Irakli Bagration-Mukhraneli"^^xsd:string,
+        "Prince Irakli Georgeievich Bagration-Moukhransky"^^xsd:string ;
+    :hasBrother data:Irakli_Bagration_of_Mukhrani ;
+    :hasChild data:Bagrat_de_Bagration_y_de_Baviera ;
+    :hasRelation data:Bagrat_de_Bagration_y_de_Baviera,
+        data:Irakli_Bagration_of_Mukhrani ;
+    :hasSex data:male ;
+    :hasSon data:Bagrat_de_Bagration_y_de_Baviera ;
+    :isAncestorOf data:Bagrat_de_Bagration_y_de_Baviera ;
+    :isBloodrelationOf data:Irakli_Bagration_of_Mukhrani ;
+    :isBrotherOf data:Irakli_Bagration_of_Mukhrani ;
+    :isFatherOf data:Bagrat_de_Bagration_y_de_Baviera ;
+    :isParentOf data:Bagrat_de_Bagration_y_de_Baviera ;
+    :isSiblingOf data:Irakli_Bagration_of_Mukhrani ;
+    :isUncleOf data:Bagrat_de_Bagration_y_de_Baviera .
+
+data:Bagrat_de_Bagration_y_de_Baviera a :Man,
+        :Person ;
+    rdfs:label "Bagrat de Bagration y de Baviera"^^xsd:string ;
+    data:posIndicesFull "86:118"^^xsd:string ;
+    data:posIndicesPart "1154:1160"^^xsd:string,
+        "1316:1322"^^xsd:string,
+        "428:434"^^xsd:string,
+        "598:605"^^xsd:string,
+        "736:745"^^xsd:string,
+        "961:967"^^xsd:string ;
+    data:wdtLink wdt:Q5408136 ;
+    :alsoKnownAs "Principe Bagrat de Bagration y de Baviera y Borbon"^^xsd:string ;
+    :hasAncestor data:Irakli_Bagration_of_Mukhrani ;
+    :hasBrother data:Bagrat_de_Bagration_y_de_Baviera ;
+    :hasFather data:Irakli_Bagration_of_Mukhrani ;
+    :hasParent data:Irakli_Bagration_of_Mukhrani ;
+    :hasRelation data:Bagrat_de_Bagration_y_de_Baviera,
+        data:Irakli_Bagration_of_Mukhrani ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Bagrat_de_Bagration_y_de_Baviera ;
+    :isBrotherOf data:Bagrat_de_Bagration_y_de_Baviera ;
+    :isChildOf data:Irakli_Bagration_of_Mukhrani ;
+    :isSiblingOf data:Bagrat_de_Bagration_y_de_Baviera ;
+    :isSonOf data:Irakli_Bagration_of_Mukhrani .
+

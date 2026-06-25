@@ -85,416 +85,60 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Charles III (Charles Philip Arthur George; born 14
-Charles was born during the reign of his maternal grandfather, King George VI, and became heir apparent when his mother, Queen Elizabeth II, acceded to the throne in 1952.
-Charles was educated at Cheam School and Gordonstoun, and later spent six months at the Timbertop campus of Geelong Grammar School in Victoria, Australia.
-He married Lady Diana Spencer in 1981 and they had two sons, William and Harry.
-Charles and Diana divorced in 1996 after years of estrangement and well-publicised extramarital affairs.
-Diana died the following year from injuries sustained in a car crash.
-In 2005, Charles married his long-time partner, Camilla Parker Bowles.
-As heir apparent, Charles undertook official duties and engagements on behalf of his mother and represented the United Kingdom on visits abroad.
-He founded the Prince's Trust in 1976, sponsored the Prince's Charities and became patron or president of more than 800 other charities and organisations.
-An environmentalist, Charles supported organic farming and action to address climate change during his time as manager of the Duchy of Cornwall estates, earning him awards and recognition.
-Charles became king upon his mother's death in 2022.
-At the age of 73 he was the oldest person to accede to the British throne, after having been the longest-serving heir apparent and Prince of Wales in British history.
-Early life, family, and education
+Prince Amedeo, 3rd Duke of Aosta (Amedeo Umberto Isabella Luigi Filippo Maria Giuseppe Giovanni di Savoia-Aosta; 21 October 1898 – 3 March 1942) was the third Duke of Aosta and a first cousin once removed of the King of Italy, Victor Emmanuel III.
+Biography
 
-Charles was born at 9:14 pm on 14 November 1948 by caesarean section at Buckingham Palace, during the reign of his maternal grandfather, King George VI.
-He was the first child of Princess Elizabeth, Duchess of Edinburgh (later Queen Elizabeth II), and Philip, Duke of Edinburgh.
-He was christened Charles Philip Arthur George on 15 December in the Music Room at Buckingham Palace by the archbishop of Canterbury, Geoffrey Fisher.
-George VI died on 6 February 1952, after which Charles's mother acceded to the throne as Elizabeth II and he became heir apparent.
-Under a charter issued by Edward III in 1337, and as the monarch's eldest son, he automatically assumed the titles of Duke of Cornwall and, in the Scottish peerage, Duke of Rothesay, Earl of Carrick, Baron of Renfrew, Lord of the Isles, and Prince and Great Steward of Scotland.
-He attended his mother's coronation at Westminster Abbey on 2 June 1953.
-When Charles was five, Catherine Peebles was appointed as his governess to oversee his education at Buckingham Palace.
-He did not receive preferential treatment from the school's founder and headmaster, Stuart Townend, who encouraged the Queen to have Charles train in football, noting that boys on the pitch were never deferential to anyone.
-Charles later attended two of his father's former schools: Cheam School in Hampshire from 1958, followed by Gordonstoun in Moray, where he began classes in April 1962.
-Jonathan Dimbleby's authorised 1994 biography described Elizabeth and Philip as physically and emotionally distant parents, and criticised Philip for disregarding Charles's sensitive nature, including insisting that Charles attend Gordonstoun, where he was bullied.
-Although Charles reportedly referred to the school as "Colditz in kilts", he later praised Gordonstoun for teaching him "a great deal about myself and my own abilities and disabilities".
-In a 1975 interview Charles said he was "glad" to have attended the school and that its "toughness" had been "much exaggerated".
-In 1966, Charles spent two terms at the Timbertop campus of Geelong Grammar School in Victoria, Australia, during which he visited Papua New Guinea on a school trip with his history tutor, Michael Collins Persse.
-Charles later described his time at Timbertop as the most enjoyable part of his education.
-Reflecting on his schooling, Charles later remarked that he "didn't enjoy school as much as I might have", adding that he was "happier at home than anywhere else".
-Breaking royal tradition, Charles proceeded directly to university after completing his A‐levels rather than joining the British Armed Forces.
-During his second year he spent one term at the University College of Wales in Aberystwyth, studying Welsh history and Welsh language.
-Charles became the first British heir apparent to earn a university degree, graduating from Cambridge in June 1970 with a Bachelor of Arts (BA) degree with lower second-class honours (2:2).
-Prince of Wales
+Amedeo was born in Turin, Piedmont, to Prince Emanuele Filiberto, 2nd Duke of Aosta (son of Amadeo I of Spain and Princess Maria Vittoria), and Princess Hélène (daughter of Prince Philippe of Orléans and Princess Marie Isabelle of Orléans).
+He was known from birth by the courtesy title of Duke of Apulia.
+Amedeo was a very tall man (in stark contrast to the King, who was known to be quite short).
+According to Amedeo Guillet, he was once referred to by a journalist as "Your Highness" (which in Italian could also be interpreted to mean "your height").
+The Duke replied in jest: "198 centimetres ".
+Education and early military career
 
-Charles was created Prince of Wales and Earl of Chester on 26 July 1958, although his investiture did not take place until 1 July 1969, when he was crowned by his mother in a televised ceremony at Caernarfon Castle.
-The event was controversial in Wales amid rising Welsh nationalist sentiment.
-He took his seat in the House of Lords the following year, delivering his maiden speech on 13 June 1974, the first royal to speak from the floor since the future Edward VII in 1884.
-Charles increasingly undertook public duties, founding the Prince's Trust in 1976 and travelling to the United States in 1981.
-Charles later remarked, "so, what are you supposed to think when you are prepared to do something to help and you are just told you're not wanted?"
+Amedeo was educated at St David's College, Reigate, Surrey, in England.
+Amedeo entered the Nunziatella, the military academy in Naples, joined the Italian Royal Army (Regio Esercito) and fought with distinction in the artillery during World War I.
+Amedeo subsequently rejoined the Italian armed forces and became a pilot.
+Amedeo served under Marshal Rodolfo Graziani and Libyan Governor Pietro Badoglio during the later stages of the so-called "pacification of Libya" (1911 to 1932).
+Amedeo and his fellow airmen harried the Senussi forces of Omar Mukhtar from the sky.
+When hostilities in Libya came to an end in early 1932, much was made of the participation of the "Duke of Apulia" as the commander of the airmen who forced the Senussi to flee Libya and seek relief in Egypt.
+Amedeo, portrayed by the tall actor Sky du Mont, appears in several non-flying scenes with Graziani in the movie The Lion of the Desert, about the Italian conquest of Libya.
+On 4 July 1931, upon the death of his father, Amedeo became the Duke of Aosta.
+Viceroy and governor-general
 
-Military training and career
+In 1937, after the Italian conquest of Ethiopia during the Second Italo-Abyssinian War, the Duke of Aosta replaced Marshal Graziani as Viceroy and as Governor-General of Italian East Africa.
+Amedeo was succeeded by his brother, Aimone, 4th Duke of Aosta.
+Aftermath
 
-Charles served in the Royal Air Force (RAF) and the Royal Navy during the 1970s.
-After the passing-out parade that September, Charles embarked on a naval career and undertook a six-week course at the Royal Naval College, Dartmouth.
-That same year he qualified as a helicopter pilot at RNAS Yeovilton, and during his helicopter training completed commando instruction at the Commando Training Centre Royal Marines at Lympstone.
-Charles then joined 845 Naval Air Squadron, a Royal Marines air support unit of the Fleet Air Arm, serving as a pilot aboard HMS Hermes and flying the Royal Marines commando variant of the Westland Wessex helicopter.
-Charles spent his final ten months of active naval service commanding the coastal minehunter HMS Bronington, beginning on 9 February 1976.
-Charles gave up flying after crash-landing a BAe 146 in Islay in 1994, when, as a passenger invited to fly the aircraft, he was at the controls; a board of inquiry found the crew negligent.
-Relationships and marriages
-
-Bachelorhood
-
-In his youth, Charles was romantically linked to several women.
-Charles's great-uncle Lord Mountbatten advised him to "sow his wild oats and have as many affairs as he can before settling down", but, for a wife, he "should choose a suitable, attractive, and sweet-charactered girl before she has met anyone else she might fall for ...
-Early in 1974, Mountbatten began corresponding with 25-year-old Charles about a potential marriage to his granddaughter, Amanda Knatchbull.
-Charles wrote to Amanda's mother, Lady Brabourne, who was also his godmother, expressing interest in her daughter.
-Four years later, Mountbatten arranged for Amanda and himself to accompany Charles on his 1980 visit to India.
-Both fathers, however, objected: Prince Philip feared that his famous uncle would eclipse Charles, while Lord Brabourne warned that a joint visit would concentrate media attention on the cousins before they could decide whether to become a couple.
-In August 1979, before Charles was due to depart alone for India, Mountbatten was assassinated by the Provisional Irish Republican Army.
-When Charles returned, he proposed to Amanda.
-But in addition to her grandfather, she had lost her paternal grandmother and younger brother in the bomb attack, and was now reluctant to join the royal family.
-Lady Diana Spencer
-
-Charles first met Lady Diana Spencer in 1977, while he was visiting her home, Althorp.
-He was then the companion of her elder sister Sarah and did not consider Diana romantically until mid-1980.
-While Charles and Diana were sitting together on a bale of hay at a friend's barbecue in July, she mentioned that he had looked forlorn and in need of care at the funeral of Lord Mountbatten.
-Charles's cousin Norton Knatchbull and his wife told Charles that Diana appeared awestruck by his position and that he did not seem to be in love with her.
-When Charles's father told him that the media speculation would injure Diana's reputation if Charles did not come to a decision about marrying her soon, and realising that she was a suitable royal bride (according to Mountbatten's criteria), Charles construed his father's advice as a warning to proceed without further delay.
-He proposed to Diana in February 1981, with their engagement becoming official on 24 February; the wedding took place at St Paul's Cathedral on 29 July.
-Upon his marriage, Charles reduced his voluntary tax contribution from the profits of the Duchy of Cornwall from 50 per cent to 25 per cent.
-The couple lived at Kensington Palace and Highgrove House, near Tetbury, and had two children: William, in 1982, and Harry, in 1984.
-As of 2025, Charles has an estranged relationship with his son Harry, who relinquished his royal family obligations and moved to the United States in 2020.
-In 1986 Charles had fully resumed his affair with former girlfriend, Camilla Parker Bowles.
-In a video tape recorded by Peter Settelen in 1992, Diana admitted that, from 1985 to 1986, she had been "deeply in love with someone who worked in this environment."
-It was assumed that she was referring to Barry Mannakee, who had been transferred to the Diplomatic Protection Squad in 1986, after his managers determined his relationship with Diana had been inappropriate.
-Diana later commenced a relationship with Major James Hewitt, the family's former riding instructor.
-Charles and Diana's evident discomfort in each other's company led to them being dubbed "The Glums" by the press.
-Diana exposed Charles's affair with Parker Bowles in a book by Andrew Morton, Diana: Her True Story.
-Audio tapes of her own extramarital flirtations also surfaced, as did persistent suggestions that Hewitt is Prince Harry's father, based on a physical similarity between Hewitt and Harry.
-However, Harry had already been born by the time Diana's affair with Hewitt began.
-Early the following year, the British press published transcripts of a passionate, bugged telephone conversation between Charles and Parker Bowles that had taken place in 1989, which was dubbed "Tampongate" and "Camillagate".
-Charles subsequently sought public understanding in a television film with Dimbleby, Charles: The Private Man, the Public Role, broadcast in June 1994.
-In an interview in the film, Charles confirmed his own extramarital affair with Parker Bowles, saying that he had rekindled their association in 1986, only after his marriage to Diana had "irretrievably broken down".
-This was followed by Diana's own admission of marital troubles in an interview on the BBC current affairs programme Panorama, broadcast in November 1995.
-Referring to Charles's relationship with Parker Bowles, she said, "well, there were three of us in this marriage.
-Charles and Diana divorced on 28 August 1996, after being advised by the Queen in December 1995 to end the marriage.
-Diana died following a car crash in Paris on 31 August 1997.
-Charles flew to Paris with Diana's sisters to accompany her body back to Britain.
-In 2003, Diana's butler Paul Burrell published a note that he claimed had been written by Diana in 1995, in which there were allegations that Charles was "planning 'an accident' in  car, brake failure and serious head injury", so that he could remarry.
-She had allegedly expressed similar concerns in October 1995 to Lord Mishcon, her solicitor, that "reliable sources" had told her "that she and Camilla would be put aside" for Charles to marry Tiggy Legge-Bourke.
-When questioned by the Metropolitan Police inquiry team as a part of Operation Paget, Charles told the authorities that he did not know about his former wife's note from 1995 and could not understand why she had those feelings.
-The allegations were later revealed to have been among the smears spread by journalist Martin Bashir to secure an interview with Diana for the BBC.
-Camilla Parker Bowles
-
-Because Charles and Parker Bowles were romantically involved periodically, both before and during their respective first marriages, their relationship received criticism from the public and the media.
-Following both of their divorces, Charles declared his relationship with Parker Bowles was "non-negotiable" and appointed Mark Bolland to enhance Parker Bowles's public profile.
-In 1999 Charles and Parker Bowles made their first public appearance as a couple at the Ritz London Hotel and the following year, she met Queen Elizabeth II at the 60th birthday party of former King Constantine II of Greece, which was seen as  an apparent seal of approval by the Queen on the relationship.
-In 2003, Parker Bowles moved into Charles's official residence, Clarence House  and she accompanied Charles on almost all of his official events, including the annual Highland Games in Scotland.
-Former Archbishop of Canterbury, George Carey, told The Times that Charles and Parker Bowles should marry, "He is heir to the throne and he loves her.
-The Queen's consent to the marriage – as required by the Royal Marriages Act 1772 – was recorded in a Privy Council meeting on 2 March.
-In Canada, the Department of Justice determined the consent of the Queen's Privy Council for Canada was not required, as the union would not produce any heirs to the Canadian throne.
-Charles was the only member of the royal family to have a civil, rather than a church, wedding in England.
-British government documents from the 1950s and 1960s, published by the BBC, stated that such a marriage was illegal; these claims were dismissed by Charles's spokesman and explained by the sitting government to have been repealed by the Registration Service Act 1953.
-The union was scheduled to take place in a civil ceremony at Windsor Castle, with a subsequent religious blessing at the castle's St George's Chapel.
-Four days before the event, it was postponed from the originally scheduled date of 8 April until the following day in order to allow Charles and some of the invited dignitaries to attend the funeral of Pope John Paul II.
-Charles's parents did not attend the marriage ceremony; the Queen's reluctance to attend possibly arose from her position as Supreme Governor of the Church of England.
-The blessing by Archbishop of Canterbury Rowan Williams was televised.
-Since their marriage in 2005, Charles has paid tribute to Camilla repeatedly in public letters, speeches and interviews, thanking her for "steadfast support" and referring to her as "my darling wife".
-Official duties
-
-In 1965, Charles undertook his first public engagement by attending a student garden party at the Palace of Holyroodhouse.
-During his time as Prince of Wales, he undertook official duties on behalf of the Queen, completing 10,934 engagements between 2002 and 2022.
-Charles made regular tours of Wales, fulfilling a week of engagements each summer, and attending important national occasions, such as opening the Senedd.
-The six trustees of the Royal Collection Trust met three times a year under his chairmanship.
-Charles also represented his mother at the independence celebrations in Fiji in 1970, The Bahamas in 1973, Papua New Guinea in 1975, Zimbabwe in 1980 and Brunei in 1984.
-In 1983, a man named Christopher John Lewis, who had fired a shot with a .22 rifle at the Queen in 1981, attempted to escape a psychiatric hospital in order to assassinate Charles, who was visiting New Zealand with Diana and William.
-While Charles was visiting Australia on Australia Day in January 1994, David Kang fired two shots at him from a starting pistol in protest against the treatment of several hundred Cambodian asylum-seekers held in detention camps.
-In 1995 Charles became the first member of the royal family to visit the Republic of Ireland in an official capacity.
-In 1997 he represented the Queen at the Hong Kong handover ceremony.
-At the funeral of Pope John Paul II in 2005, Charles caused controversy when he shook hands with Zimbabwean president Robert Mugabe, who had been seated next to him.
-Charles's office subsequently released a statement saying that he could not avoid shaking Mugabe's hand and that he "finds the current Zimbabwean regime abhorrent".
-Charles represented the Queen at the opening ceremony of the 2010 Commonwealth Games in Delhi, India.
-In November 2013 he represented the Queen for the first time at a Commonwealth Heads of Government Meeting, in Colombo, Sri Lanka.
-Charles and Camilla made their first joint trip to the Republic of Ireland in May 2015.
-During the trip, he shook hands in Galway with Gerry Adams, leader of Sinn Féin and widely believed to be the leader of the IRA, the militant group that had assassinated Lord Mountbatten in 1979.
-Commonwealth heads of government decided at their 2018 meeting that Charles would be the next Head of the Commonwealth after the Queen.
-In March 2019, at the request of the British government, Charles and Camilla went on an official tour of Cuba, making them the first British royals to visit the country.
-Charles contracted COVID-19 during the pandemic in March 2020.
-Several newspapers were critical that Charles and Camilla were tested promptly at a time when many National Health Service doctors, nurses and patients had been unable to be tested expeditiously.
-Charles attended the November 2021 ceremonies to mark Barbados's transition into a parliamentary republic, abolishing the position of monarch of Barbados.
-He was invited by Prime Minister Mia Mottley as the future Head of the Commonwealth; it was the first time that a member of the royal family attended the transition of a realm to a republic.
-In May of the following year, Charles attended the State Opening of the British Parliament, delivering the Queen's Speech on behalf of his mother, as a counsellor of state.
-Reign
-
-Charles acceded to the British throne on his mother's death on 8 September 2022.
-He was the longest-serving British heir apparent, having surpassed Edward VII's record of 59 years on 20 April 2011.
-Charles was the oldest person to succeed to the British throne, at the age of 73, surpassing the previous record holder, William IV, who was 64 when he became king in 1830.
-Charles gave his first speech to the nation at 6 pm on 9 September, in which he paid tribute to his mother and announced the appointment of his elder son, William, as Prince of Wales.
-The following day, the Accession Council publicly proclaimed Charles as king, the ceremony being televised for the first time.
-Attendees included Queen Camilla, Prince William and the British prime minister, Liz Truss, along with her six living predecessors.
-Other realms signed and read their own proclamations, as did Scotland, Wales, Northern Ireland, the British Overseas Territories, the Crown Dependencies, Canadian provinces and Australian states.
-In November 2022, the King and Queen hosted the South African president, Cyril Ramaphosa, during the first official state visit to Britain of Charles's reign.
-The following March, they undertook a state visit to Germany, where Charles became the first British monarch to address the Bundestag.
-On 6 May 2023, Charles and Camilla's coronation took place at Westminster Abbey, in a ceremony planned for many years under the code name Operation Golden Orb.
-Prior to Charles's accession, reports suggested that the coronation would be "shorter, smaller, less expensive, and more representative of different faiths and community groups than that of his mother in 1953, reflecting the King's wish to acknowledge the ethnic diversity of modern Britain".
-In July 2023, the royal couple attended a national service of thanksgiving at St Giles' Cathedral, where Charles was presented with the Honours of Scotland.
-In September, Charles became the first British monarch to give a speech from the French Senate chamber during a state visit to France.
-In May 2024, the British prime minister, Rishi Sunak, asked the King to call a general election; subsequently, royal engagements that could divert attention from the election campaign were postponed.
-In June 2024, Charles and Camilla travelled to Normandy to attend the 80th anniversary commemorations of D-Day.
-In July, the annual Holyrood Week, which is usually spent in Scotland, was shortened so that Charles could return to London and appoint a new prime minister following the general election.
-After Sunak's Conservative Party lost the election to the Labour Party led by Sir Keir Starmer, Charles appointed Starmer as prime minister.
-In October 2024, the King and Queen toured Australia and Samoa; Australia was the first Commonwealth realm Charles visited since his accession.
-Charles temporarily paused his cancer treatment during the tour.
-Zelenskyy later told The Guardian that Charles played a quiet but influential role in altering US president Donald Trump's attitude toward Ukraine.
-The King and Queen initially cancelled a planned visit to Vatican City during their state visit to Italy, but on 9 April 2025 – their 20th wedding anniversary – they visited Pope Francis at Domus Sanctae Marthae as he was recovering from pneumonia.
-The King, accompanied by the Queen, made his first visit to Canada as monarch in May 2025 at the invitation of Prime Minister Mark Carney, a trip that took place during a period of tension with the United States after President Trump made comments questioning Canada's sovereignty.
-In June 2025, the King approved the decommissioning of the British Royal Train ahead of its maintenance contract ending in 2027.
-Described by the Keeper of the Privy Purse as part of a commitment to "fiscal discipline", the decision marked the end of 180 years of the royal family's use of a dedicated royal train.
-In October 2025, during his state visit to the Holy See, Charles became the first British monarch to pray alongside a pope since the Reformation, joining Pope Leo XIV for a church service in the Sistine Chapel of the Apostolic Palace in Vatican City.
-Later that month, Charles undertook his first official engagement in support of the LGBT+ community, unveiling "An Opened Letter", the UK's first national memorial honouring LGBT armed forces veterans, at the National Memorial Arboretum in Staffordshire.
-On 30 October, amid continuing controversy surrounding his brother Andrew's association with the American financier and child sex offender Jeffrey Epstein, Charles initiated a formal process to remove his style, titles and honours.
-Following Andrew's arrest on 19 February 2026 on suspicion of misconduct in public office, the King expressed his "deepest concern" and stated that "the law must take its course".
-In April 2026, during a state visit to the United States, Charles became the second British monarch to address a joint meeting of Congress, after his mother Elizabeth II in 1991.
-Health
-
-In March 1998, Charles had laser keyhole surgery on his right knee and in March 2003, he underwent surgery at King Edward VII's Hospital to treat a hernia injury.
-In January 2024, Charles underwent a "corrective procedure" at the London Clinic to treat benign prostate enlargement, which resulted in the postponement of some of his public engagements.
-In February Buckingham Palace announced that cancer had been discovered during the treatment, but that it was not prostate cancer.
-Although his public duties were postponed, it was reported Charles would continue to fulfil his constitutional functions during his outpatient treatment.
-In March, Camilla deputised for him in his absence at the Commonwealth Day service at Westminster Abbey and at the Royal Maundy at Worcester Cathedral.
-He made his first major public appearance since his cancer diagnosis at the Easter service held at St George's Chapel, Windsor Castle, on 31 March.
-In March 2025, Charles was briefly admitted to hospital after experiencing temporary side effects from his cancer treatment.
-Diet
-
-As early as 1985, Charles was questioning meat consumption.
-In the 1985 Royal Special television programme, he told the host, Alastair Burnet, that "I actually now don't eat as much meat as I used to.
-In 2021, Charles spoke to the BBC about the environment and revealed that, two days per week, he eats no meat nor fish and, one day per week, he eats no dairy products.
-Ahead of Christmas dinner in 2022, Charles confirmed to the animal rights group People for the Ethical Treatment of Animals that foie gras would not be served at any royal residences; he had stopped the use of foie gras at his own properties for more than a decade before becoming king.
-During a September 2023 state banquet at the Palace of Versailles, it was reported that he did not want foie gras or out-of-season asparagus on the menu.
-Charity work
-
-Since founding the Prince's Trust in 1976, using his £7,500 of severance pay from the Royal Navy, Charles has established 16 more charitable organisations and now serves as president of each.
-Together they form a loose alliance, the Prince's Charities, which describes itself as "the largest multi-cause charitable enterprise in the United Kingdom, raising more than £100 million annually ...  active across a broad range of areas including education and young people, environmental sustainability, the built environment, responsible business and enterprise, and international".
-King Charles III Charitable Fund has donated over £73 million to various causes since 1979.
-By September 2020 the Prince's Trust had supported over 1,000,000 young people and created 125,000 entrepreneurs.
-As Prince of Wales, Charles became patron or president of more than 800 other charities and organisations.
-He received a Gold Blue Peter badge in 2023 for his environmental work and for his support of young people through the Prince's Trust.
-The Prince's Charities Canada was established in 2010, in a similar fashion to its namesake in Britain.
-Charles uses his tours of Canada as a way to help to draw attention to youth, the disabled, the environment, the arts, medicine, the elderly, heritage conservation and education.
-He has also set up the Prince's Charities Australia, based in Melbourne, to provide a co-ordinating presence for his Australian and international charitable endeavours.
-Charles has supported humanitarian projects; for example, he has been known to donate his blood to raise awareness for health causes..
-Charles and his sons took part in ceremonies that marked the 1998 International Day for the Elimination of Racial Discrimination.
-Charles expressed strong concerns about the human rights record of the Romanian dictator Nicolae Ceaușescu.
-Charles has also supported humanitarian causes in Israel, including a private donation to the Peres Center for Peace and Innovation in 2020.
-Investigations of donations
-
-Two of Charles's charities, the Prince's Foundation and the Prince of Wales's Charitable Fund (later renamed the King's Foundation and King Charles III Charitable Fund), came under scrutiny in 2021 and 2022 for accepting donations many in the media deemed inappropriate.
-In August 2021 it was announced that the Prince's Foundation was launching an investigation into the reports, with Charles's support.
-The Charity Commission also launched an investigation into allegations that the donations meant for the Prince's Foundation had been instead sent to the Mahfouz Foundation.
-In February 2022, the Metropolitan Police launched an investigation into the cash-for-honours allegations linked to the foundation, passing their evidence to the Crown Prosecution Service for deliberation in October.
-In August 2023 the Metropolitan Police announced that they had concluded their investigations and no further action would be taken.
-The Times reported in June 2022 that, between 2011 and 2015, Charles accepted €3 million in cash from the Prime Minister of Qatar, Hamad bin Jassim bin Jaber Al Thani.
-In the same month, The Times reported that the Prince of Wales's Charitable Fund received a donation of £1 million from Bakr bin Laden and Shafiq bin Laden – both half-brothers of Osama bin Laden – during a private meeting in 2013.
-Personal interests
-
-From young adulthood, Charles encouraged the understanding of Indigenous voices, saying they held crucial messages about preservation of the land, respecting community and shared values, resolving conflict, and recognising and making good on past iniquities.
-At the 2022 Commonwealth Heads of Government Meeting Charles, who was representing his mother, raised that reconciliation process as an example for dealing with the history of slavery in the British Empire, for which he expressed his sorrow.
-Letters sent by Charles to British government ministers in 2004 and 2005 expressing his concerns over various policy issues – known as the black spider memos – presented potential embarrassment following a challenge by The Guardian to release the letters under the Freedom of Information Act 2000.
-In March 2015 the Supreme Court of the United Kingdom decided that Charles's letters must be released.
-The reaction was largely supportive of Charles, with little criticism of him; the press variously described the memos as "underwhelming" and "harmless", and concluded that their release had "backfired on those who seek to belittle him".
-It was revealed in the same year that Charles had access to confidential Cabinet papers.
-In October 2020, a letter sent by Charles to the Governor-General of Australia, Sir John Kerr, after Kerr's dismissal of Prime Minister Gough Whitlam in 1975, was released as part of the collection of palace letters regarding the Australian constitutional crisis.
-In the letter, Charles was supportive of Kerr's decision, writing that what Kerr "did last year was right and the courageous thing to do".
-The Times reported in June 2022 that Charles had privately described the British government's Rwanda asylum plan as "appalling" and he feared that it would overshadow the Commonwealth Heads of Government Meeting in Rwanda that same month.
-It was later claimed that Cabinet ministers had warned Charles to avoid making political comments, as they feared a constitutional crisis could arise if he continued to make such statements once he became King.
-Built environment
-
-Charles has openly expressed his views on architecture and urban planning; he fostered the advancement of New Classical architecture and asserted that he "care deeply about issues such as the environment, architecture, inner-city renewal, and the quality of life."
-In a speech given for the 150th anniversary of the Royal Institute of British Architects in May 1984, he described a proposed extension to the National Gallery in London as a "monstrous carbuncle on the face of a much-loved friend" and deplored the "glass stumps and concrete towers" of modern architecture.
-Charles called for local community involvement in architectural choices and asked, "why has everything got to be vertical, straight, unbending, only at right angles – and functional?"
-Charles has "a deep understanding of Islamic art and architecture", according to the Oxford professor Mohammed Talib, and has been involved in the construction of a building and garden at the Oxford Centre for Islamic Studies that combine Islamic and Oxford architectural styles.
-In Charles's 1989 book A Vision of Britain, and in speeches and essays, he has been critical of modern architecture, arguing that traditional designs and methods should guide contemporary ones.
-Two of his charities – the Prince's Regeneration Trust and the Prince's Foundation for Building Community, which were later merged into one charity – promote his views.
-The village of Poundbury was built on land owned by the Duchy of Cornwall to a master plan by Léon Krier, under the guidance of Charles and in line with his philosophy.
-In 2013 developments for the suburb of Nansledan began on the estate of the Duchy of Cornwall with Charles's endorsement.
-Charles helped purchase Dumfries House and its complete collection of 18th century furnishings in 2007, taking a £20 million loan from his charitable trust to contribute towards the £45 million cost.
-The house and gardens remain property of the Prince's Foundation and serve as a museum and community and skills training centre.
-After lamenting in 1996 the unbridled destruction of many of Canada's historic urban cores, Charles offered his assistance to the Department of Canadian Heritage in creating a trust modelled on Britain's National Trust, a plan that was implemented with the passage of the federal budget in 2007.
-In 1999 Charles agreed to the use of his title for the Prince of Wales Prize for Municipal Heritage Leadership, awarded by the National Trust for Canada to municipal governments that have committed to the conservation of historic places.
-Whilst visiting the US and surveying the damage caused by Hurricane Katrina, Charles received the National Building Museum's Vincent Scully Prize in 2005 for his efforts in regard to architecture; he donated US$25,000 of the prize money towards restoring storm-damaged communities.
-For his work as patron of New Classical architecture, Charles was awarded the 2012 Driehaus Architecture Prize from the University of Notre Dame.
-The Worshipful Company of Carpenters installed Charles as an Honorary Liveryman "in recognition of his interest in London's architecture.
+Amedeo was well known and highly regarded for being a gentleman.
+Count Galeazzo Ciano, Italian Foreign Minister under his father-in-law, Italian dictator Benito Mussolini, paid Amedeo a high compliment in his famous diaries.
+Upon being given the news of the Duke's death, Ciano wrote, "So dies the image of a Prince and an Italian.
 "
 
 
-Charles has occasionally intervened in projects that employ architectural styles such as modernism and functionalism.
-In 2009 he wrote to the Qatari royal family – the financier of the redevelopment of the Chelsea Barracks site – labelling Lord Rogers's design for the site "unsuitable".
-Rogers claimed that Charles had also intervened to block his designs for the Royal Opera House and Paternoster Square.
-CPC Group, the project developer, took a case against Qatari Diar to the High Court.
-After the suit was settled, the CPC Group apologised to Charles "for any offence caused ... during the course of the proceedings".
-Natural environment
+Emperor Haile Selassie of Ethiopia was also impressed by the respect and care that the Duke of Aosta showed to the exiled Emperor's personal property left behind in Addis Ababa.
+In a gesture of thanks, the Emperor during his state visit to Italy in 1953 invited the widowed Duchess of Aosta to tea during his stay in Milan, but was then informed by the Italian government that receiving the Duchess would cause offence to the Italian Republic, and so the Emperor cancelled the visit.
+Instead he invited the 5th Duke of Aosta to Ethiopia in the mid-1960s, and accorded him all the protocol due to visiting royalty.
+Family
 
-Since the 1970s, Charles has promoted environmental awareness.
-Charles was named one of Time Magazine's 100 most influential climate leaders of 2025.
-An avid gardener, Charles has also emphasised the importance of talking to plants, stating that "I happily talk to the plants and trees, and listen to them.
-Upon moving into Highgrove House, Charles developed an interest in organic farming, which culminated in the 1990 launch of his own organic brand, Duchy Originals, which sells more than 200 different sustainably produced products; the profits (more than £6 million by 2010) are donated to the Prince's Charities.
-Charles became involved with farming and various industries within it, regularly meeting with farmers to discuss their trade.
-A prominent critic of the practice, Charles has also spoken against the use of genetically modified crops, and in a letter to Tony Blair in 1998 he criticised the development of genetically modified foods.
-The Sustainable Markets Initiative – a project that encourages putting sustainability at the centre of all activities – was launched by Charles at the World Economic Forum's annual meeting in Davos in January 2020.
-The holy chrism oil used at Charles's coronation was vegan, made from oils of olive, sesame, rose, jasmine, cinnamon, neroli and benzoin, along with amber and orange blossom.
-His mother's chrism oil contained animal-based oils.
-Charles delivered a speech at the 2021 G20 Rome summit, describing COP26 as "the last chance saloon" for preventing climate change and asking for actions that would lead to a green-led, sustainable economy.
-In 2022, the media alleged that Liz Truss had advised Charles against attending COP27, to which advice he agreed.
-Charles delivered the opening speech at COP28, saying among others he prayed "with all my heart that COP28 will be a critical turning point towards genuine transformational action."
-Charles, who is patron of the Cambridge Institute for Sustainability Leadership, introduced the Climate Action Scholarships for students from small island nations in partnership with the University of Cambridge, the University of Toronto, the University of Melbourne, McMaster University and the University of Montreal in March 2022.
-In 2010, he funded the Prince's Countryside Fund (renamed the Royal Countryside Fund in 2023), a charity that aims for a "confident, robust and sustainable agricultural and rural community".
-Alternative medicine
-
-Charles has controversially championed alternative medicine, including homeopathy.
-Similarly, the Prince's Foundation for Integrated Health (FIH) attracted opposition from the scientific and medical community over its campaign encouraging general practitioners to offer herbal and other alternative treatments to NHS patients.
-That year, Ernst published a book with Simon Singh called Trick or Treatment: Alternative Medicine on Trial and mockingly dedicated to "HRH the Prince of Wales".
-The last chapter is highly critical of Charles's advocacy of complementary and alternative treatments.
-Charles's Duchy Originals produced a variety of complementary medicinal products, including a "Detox Tincture" that Ernst denounced as "financially exploiting the vulnerable" and "outright quackery".
-Charles personally wrote at least seven letters to the Medicines and Healthcare products Regulatory Agency shortly before it relaxed the rules governing labelling of such herbal products, a move that was widely condemned by scientists and medical bodies.
-It was reported in October 2009 that Charles had lobbied the health secretary, Andy Burnham, regarding greater provision of alternative treatments in the NHS.
-The FIH was re-branded and re-launched later in 2010 as the College of Medicine, of which Charles became a patron in 2019.
-Sports
-
-From his youth until 2005, Charles was an avid player of competitive polo.
-Charles also frequently took part in fox hunting until the sport was banned in the United Kingdom, also in 2005.
-By the late 1990s opposition to the activity was growing when Charles's participation was viewed as a "political statement" by those who were opposed to it.
-Charles suffered several polo- and hunting-related injuries throughout the years, including a two-inch scar on his left cheek in 1980, a broken arm in 1990, a torn cartilage in his left knee in 1992, a broken rib in 1998, and a fractured shoulder in 2001.
-Charles has been a keen salmon angler since youth and supported Orri Vigfússon's efforts to protect the North Atlantic salmon.
-Charles is a supporter of Burnley F.C.
+Amedeo was married on 5 November 1927, in Naples, to his first cousin Princess Anne of Orléans (1906–1986), daughter of Prince Jean, Duke of Guise, and Princess Isabelle of Orléans.
+They had two daughters:
 
 
-Apart from hunting, Charles has also participated in target rifle competitions, representing the House of Lords in the Vizianagram Match (Lords vs. Commons) at Bisley.
-Visual, performing, and literary arts
+Cultural depictions
 
-Charles has been involved in performance since his youth, and appeared in sketches and revues while studying at Cambridge.
-Charles is president or patron of more than 20 performing arts organisations, including the Royal College of Music, Royal Opera, English Chamber Orchestra, Philharmonia Orchestra, Welsh National Opera, Royal Shakespeare Company (attending performances in Stratford-Upon-Avon, supporting fundraising events, and attending the company's annual general meeting), British Film Institute, and Purcell School.
-In 2000 he revived the tradition of appointing an official harpist to the Prince of Wales, in order to foster Welsh talent at playing the national instrument of Wales.
-Charles is a keen watercolourist, having published books on the subject and exhibited and sold a number of his works to raise money for charity; in 2016 it was estimated that he had sold lithographs of his watercolours for a total of £2 million from a shop at his Highgrove House residence.
-For his 50th birthday 50 of his watercolours were exhibited at Hampton Court Palace and, for his 70th birthday, his works were exhibited at the National Gallery of Australia.
-Charles founded the Royal Drawing School in 2000, which offers drawing classes to children and the public.
-To mark the 25th anniversary of his investiture as Prince of Wales in 1994, the Royal Mail issued a series of postage stamps that featured his paintings.
-Charles is Honorary President of the Royal Academy of Arts Development Trust and, in 2015, 2022 and 2023, commissioned paintings of 12 D-Day veterans, seven Holocaust survivors, and ten members of the Windrush generation, respectively, which went on display at the Queen's Gallery in Buckingham Palace.
-Charles is the author of several books and has contributed a foreword or preface to numerous books by others.
-Religion and philosophy
-
-Shortly after his accession to the throne, Charles publicly described himself as "a committed Anglican Christian"; at age 16, during Easter 1965, he had been confirmed into the Anglican Communion by Archbishop of Canterbury Michael Ramsey in St George's Chapel, Windsor Castle.
-He attends services at various Anglican churches close to Highgrove and attends the Church of Scotland's Crathie Kirk with the rest of the royal family when staying at Balmoral Castle.
-Laurens van der Post became a friend of Charles in 1977; he was dubbed Charles's "spiritual guru" and was godfather to Prince William.
-From van der Post, Charles developed a focus on philosophy and an interest in other religions.
-Charles expressed his philosophical views in his 2010 book, Harmony: A New Way of Looking at Our World, which won a Nautilus Book Award.
-Charles also attended the consecration of Britain's first Syriac Orthodox cathedral, St Thomas Cathedral, Acton.
-Charles is patron of the Oxford Centre for Islamic Studies at the University of Oxford and attended the inauguration of the Markfield Institute of Higher Education, which is dedicated to Islamic studies in a multicultural context.
-In his 1994 documentary with Dimbleby, Charles said that, when king, he wished to be seen as a "defender of faith", rather than the British monarch's traditional title of Defender of the Faith, "prefer to embrace all religious traditions and 'the pattern of the divine, which I think is in all of us.'"
-Charles reaffirmed this theme shortly after his accession and declared that his duties as sovereign included "the duty to protect the diversity of our country, including by protecting the space for faith itself and its practice through the religions, cultures, traditions, and beliefs to which our hearts and minds direct us as individuals."
-Although the text of the coronation oath was not altered, because the process of passing new legislation through Parliament would be lengthy and liable to raise divisive issues, a preamble spoken by the Archbishop of Canterbury was added to the text:
+Prince Amedeo's time in Italian Cyrenaica was depicted in the 1981 film Lion of the Desert; Amedeo was played by Sky du Mont.
 
 
-Your Majesty, the Church established by law, whose settlement you will swear to maintain, is committed to the true profession of the Gospel, and, in so doing, will seek to foster an environment in which people of all faiths and beliefs may live freely.
-In line with his multi-faith approach, Charles has served as a patron of the Council of Christians and Jews and of the Jewish Museum London.
-Media image and public opinion
-
-Since his birth, Charles has received close media attention, which increased as he matured.
-It has been an ambivalent relationship, largely impacted by his marriages to Diana and Camilla and their aftermath, but also centred on his future conduct as king.
-Described as the "world's most eligible bachelor" in the late 1970s, Charles was subsequently overshadowed by Diana.
-After her death the media regularly breached Charles's privacy and printed exposés.
-In September 2025, The Economist analysed all Charles's public speeches over the past 30 years and concluded that he has mellowed over the past three decades.
-In 2009, Charles was named the world's best-dressed man by Esquire magazine.
-Fashion magazine British GQ described Charles as "the true guardian of traditional British menswear" in 2012 and named him one of the most stylish people of 2025.
-Italian designer Donatella Versace once said Charles "is an archetype of style".
-In 2023 the New Statesman named Charles as the fourth-most-powerful right-wing figure of the year, describing him as a "romantic traditionalist" and "the very last reactionary in public life" for his support of various traditionalist think tanks and previous writings.
-Charles and Camilla topped Tatler's Social Power Index for 2022 and 2023.
-A 2018 BMG Research poll found that 46 per cent of Britons wanted Charles to abdicate immediately on his mother's death, in favour of William.
-On his accession to the throne, The Statesman reported an opinion poll that put Charles's popularity with the British people at 42 per cent.
-As of August 2025, Charles continues to hold majority support with an approval rating of 59 per cent, and 62 percent of the public say "he is doing a good job", according to YouGov.
-Reaction to press treatment
-
-In 1994, the German tabloid Bild published nude photos of Charles that were taken while he was vacationing in Le Barroux; they had reportedly been put up for sale for £30,000.
-Buckingham Palace reacted by stating that it was "unjustifiable for anybody to suffer this sort of intrusion".
-Charles, "so often a target of the press, got his chance to return fire" in 2002, when addressing "scores of editors, publishers, and other media executives" gathered at St Bride's Fleet Street to celebrate 300 years of journalism.
-"
-
-
-In 2006, Charles filed a court case against The Mail on Sunday, after excerpts of his personal journals were published, revealing his opinions on matters such as the transfer of sovereignty over Hong Kong to China in 1997, in which Charles described the Chinese government officials as "appalling old waxworks".
-Charles and Camilla were named in 2011 as individuals whose confidential information was reportedly targeted or actually acquired in conjunction with the news media phone hacking scandal.
-The Independent noted in 2015 that Charles would only speak to broadcasters "on the condition they have signed a 15-page contract, demanding that Clarence House attends both the 'rough cut' and 'fine cut' edits of films and, if it is unhappy with the final product, can 'remove the contribution in its entirety from the programme'."
-This contract stipulated that all questions directed at Charles must be pre-approved and vetted by his representatives.
-Residences and finance
-
-
-In 2023, The Guardian estimated Charles's personal wealth at £1.8 billion.
-This estimate includes the assets of the Duchy of Lancaster worth £653 million (and paying Charles an annual income of £20 million), jewels worth £533 million, real estate worth £330 million, shares and investments worth £142 million, a stamp collection worth at least £100 million, racehorses worth £27 million, artworks worth £24 million and cars worth £6.3 million.
-Most of this wealth, which he inherited from his mother, Elizabeth II, was exempt from inheritance tax.
-Clarence House, previously the residence of the Queen Mother, was Charles's official London residence from 2003, after being renovated at a cost of £6.1 million.
-He previously shared apartments eight and nine at Kensington Palace with Diana before moving to York House at St James's Palace, which remained his principal residence until 2003.
-Highgrove House in Gloucestershire is owned by the Duchy of Cornwall, having been purchased for Charles's use in 1980, and which he rented for £336,000 per annum.
-Since William became Duke of Cornwall, Charles is expected to pay £700,000 per annum for use of the property.
-Charles also owns a property near the village of Viscri in Romania.
-As Prince of Wales, Charles's primary source of income was generated from the Duchy of Cornwall, which owns 133,658 acres of land (around 54,090 hectares), including farming, residential, and commercial properties, as well as an investment portfolio.
-Since 1993, he has paid tax voluntarily under the Memorandum of Understanding on Royal Taxation, updated in 2013.
-Titles, styles, honours, and arms
-
-Titles and styles
-
-Charles has held many titles and honorary military positions throughout the Commonwealth, is sovereign of many orders in his own countries and has received honours and awards from around the world.
-Charles is also styled Defender of the Faith.
-There had been speculation throughout Elizabeth II's reign as to what regnal name Charles would choose upon his accession; instead of Charles III, he could have chosen to reign as George VII or used one of his other given names.
-It was reported that he might use George in honour of his grandfather George VI and to avoid associations with previous controversial kings named Charles.
-Charles's office asserted in 2005 that no decision had yet been made.
-Speculation continued for a few hours following his mother's death, until Prime Minister Liz Truss announced and Clarence House confirmed that Charles had chosen the regnal name Charles III.
-Charles, who left active military service in 1976, was awarded the highest rank in all three armed services in 2012 by his mother: Admiral of the Fleet, Field Marshal, and Marshal of the Royal Air Force.
-Arms
-
-As Prince of Wales, Charles's coat of arms was based on the arms of the United Kingdom, differenced with a white label and an inescutcheon of the Principality of Wales, surmounted by the heir apparent's crown, and with the motto Ich dien (.mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}German: , "I serve") instead of Dieu et mon droit.
-When Charles became king, he inherited the royal coats of arms of the United Kingdom and of Canada.
-The design of his royal cypher, featuring a depiction of the Tudor Crown instead of St Edward's Crown, was revealed on 27 September 2022.
-On 10 October 2024, designed by artist Timothy Noad, the new Royal Arms, alongside the new Lesser Arms, used by the UK government were officially unveiled, with both arms reflecting the stylistic changes made after Charles's accession.
-Banners, flags, and standards
-
-As heir apparent
-
-The banners used by Charles as Prince of Wales varied depending upon location.
-His personal standard for the United Kingdom was the Royal Standard of the United Kingdom differenced as in his arms, with a label of three points argent and the escutcheon of the arms of the Principality of Wales in the centre.
-It was used outside Wales, Scotland, Cornwall and Canada, and throughout the entire United Kingdom when Charles was acting in an official capacity associated with the British Armed Forces.
-The personal flag for use in Wales was based upon the Royal Badge of Wales.
-In Scotland the personal banner used between 1974 and 2022 was based upon three ancient Scottish titles: Duke of Rothesay (heir apparent to the King of Scots), High Steward of Scotland, and Lord of the Isles.
-In Cornwall, the banner was the arms of the Duke of Cornwall.
-In 2011, the Canadian Heraldic Authority introduced a personal heraldic banner for the Prince of Wales for Canada, consisting of the shield of the Royal Coat of Arms of Canada defaced with both a blue roundel of the Prince of Wales's feathers surrounded by a wreath of gold maple leaves and a white label of three points.
-As sovereign
-
-The royal standard of the United Kingdom is used to represent the King in the United Kingdom and on official visits overseas, except in Australia and Canada.
-It is the royal arms in banner form undifferentiated, having been used by successive British monarchs since 1702.
-The royal standard of Canada is used by the King in Canada and while acting on behalf of Canada overseas.
-It is the escutcheon of the Royal Coat of Arms of Canada in banner form undifferentiated.
-Ancestry
-
-Published works
-
-As Prince of Wales, Charles wrote four books and was a co-author of other works.
-See also
-
-Notes
-
-References
-
-Citations
-
-Bibliography
-
-Further reading
-
-External links
-
-  Royal Navy (1SL & CNS)
-
-
-  British Army (CGS)
-
-
-  Royal Air Force (CAS)
+Amedeo was also briefly mentioned in A Farewell to Arms by Ernest Hemingway.
+In the popular mod for the grand strategy game Hearts of Iron IV, Kaiserreich, Amedeo is depicted as King Amadeo I di Savoia-Aosta of Sardinia, an exiled monarchist government of Italy seeking to reclaim the land from the northern Socialist Republic of Italy and southern Kingdom of the Two Sicilies.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -510,39 +154,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -557,6 +171,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -574,6 +205,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -641,29 +287,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -672,6 +310,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -684,6 +330,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -692,17 +340,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -730,6 +380,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -745,219 +479,200 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (284ec600-e9b6-430a-b2e1-891140c9ad10)
- Call ID: 284ec600-e9b6-430a-b2e1-891140c9ad10
+  AssignClass (8a7f6d68-8855-49c0-8b5e-a6d7bf014262)
+ Call ID: 8a7f6d68-8855-49c0-8b5e-a6d7bf014262
   Args:
     type: :Man
-    source: Charles_III
-  AssignClass (6fa19c3d-113f-46f5-a5ad-17c7c812fe19)
- Call ID: 6fa19c3d-113f-46f5-a5ad-17c7c812fe19
+    source: Prince_Amedeo_3rd_Duke_of_Aosta
+  AssignClass (3e6e077a-4983-4823-884e-7efe91735e1f)
+ Call ID: 3e6e077a-4983-4823-884e-7efe91735e1f
   Args:
+    source: Prince_Amedeo_3rd_Duke_of_Aosta
     type: :Person
-    source: Charles_III
-  AssignClass (96edbaa6-fb36-4ce2-9704-f099067a756d)
- Call ID: 96edbaa6-fb36-4ce2-9704-f099067a756d
+  AddLiteral (47134ee4-1e84-4544-8a88-e32cdbea4fdb)
+ Call ID: 47134ee4-1e84-4544-8a88-e32cdbea4fdb
   Args:
-    type: :Man
-    source: George_VI
-  AssignClass (97a34692-b23e-4836-a327-2891bb1b746d)
- Call ID: 97a34692-b23e-4836-a327-2891bb1b746d
-  Args:
-    type: :Ancestor
-    source: George_VI
-  AssignClass (f64cf3c0-f1c5-421b-8bc6-056acaee313a)
- Call ID: f64cf3c0-f1c5-421b-8bc6-056acaee313a
-  Args:
-    type: :Woman
-    source: Elizabeth_II
-  AssignClass (c75a5e99-b4d8-4a8b-983c-e1bca920d71c)
- Call ID: c75a5e99-b4d8-4a8b-983c-e1bca920d71c
-  Args:
-    type: :Ancestor
-    source: Elizabeth_II
-  AssignClass (d7234100-4e78-46c4-814a-419f712ed1ec)
- Call ID: d7234100-4e78-46c4-814a-419f712ed1ec
-  Args:
-    type: :Man
-    source: Philip_Duke_of_Edinburgh
-  AssignClass (f3a015a0-1c4d-48bf-9d94-e6bd67dbf71b)
- Call ID: f3a015a0-1c4d-48bf-9d94-e6bd67dbf71b
-  Args:
-    type: :Ancestor
-    source: Philip_Duke_of_Edinburgh
-  AssignClass (50755839-e1d4-4c5e-9604-c9d9c2704938)
- Call ID: 50755839-e1d4-4c5e-9604-c9d9c2704938
-  Args:
-    type: :Woman
-    source: Diana_Spencer
-  AssignClass (98978f45-42c9-4aa0-9687-9d649ca81ca4)
- Call ID: 98978f45-42c9-4aa0-9687-9d649ca81ca4
-  Args:
-    type: :Ancestor
-    source: Diana_Spencer
-  AssignClass (b5851e88-b449-4733-b122-6bfcbc00d89a)
- Call ID: b5851e88-b449-4733-b122-6bfcbc00d89a
-  Args:
-    type: :Man
-    source: William_Prince_of_Wales
-  AssignClass (1601474d-84db-4fc9-8127-f90aae4b5591)
- Call ID: 1601474d-84db-4fc9-8127-f90aae4b5591
-  Args:
-    type: :Person
-    source: William_Prince_of_Wales
-  AssignClass (ec6ca6d3-0f6f-413c-a1a7-53b64ae075b4)
- Call ID: ec6ca6d3-0f6f-413c-a1a7-53b64ae075b4
-  Args:
-    type: :Man
-    source: Harry_Duke_of_Sussex
-  AssignClass (38d202e2-d878-4e4a-88fd-eac69cab0513)
- Call ID: 38d202e2-d878-4e4a-88fd-eac69cab0513
-  Args:
-    type: :Person
-    source: Harry_Duke_of_Sussex
-  AssignClass (eb561c0f-7237-4689-926b-84b286e5ed3b)
- Call ID: eb561c0f-7237-4689-926b-84b286e5ed3b
-  Args:
-    type: :Woman
-    source: Camilla_Parker_Bowles
-  AssignClass (2dfc3c8c-e57d-470a-9e73-963483c805af)
- Call ID: 2dfc3c8c-e57d-470a-9e73-963483c805af
-  Args:
-    type: :Person
-    source: Camilla_Parker_Bowles
-  AddLiteral (6adad9d2-c44a-4aa9-a833-154b72ad2932)
- Call ID: 6adad9d2-c44a-4aa9-a833-154b72ad2932
-  Args:
+    source: Prince_Amedeo_3rd_Duke_of_Aosta
     relation: :hasBirthYear
+    literal_value: 1898
     literal_type: xsd:integer
-    source: Charles_III
-    literal_value: 1948
-  AddTriple (acb29f1a-2c8a-4e24-9274-9fa67d93256f)
- Call ID: acb29f1a-2c8a-4e24-9274-9fa67d93256f
+  AddLiteral (3391846f-416f-4ddd-a602-2c674ab385bc)
+ Call ID: 3391846f-416f-4ddd-a602-2c674ab385bc
   Args:
-    target: Elizabeth_II
-    relation: :hasMother
-    source: Charles_III
-  AddTriple (465d8145-f316-4bd8-a797-4600e66529b9)
- Call ID: 465d8145-f316-4bd8-a797-4600e66529b9
+    literal_type: xsd:integer
+    literal_value: 1942
+    relation: :hasDeathYear
+    source: Prince_Amedeo_3rd_Duke_of_Aosta
+  AssignClass (45743a8a-5fa2-40ee-a795-b3d83e85558c)
+ Call ID: 45743a8a-5fa2-40ee-a795-b3d83e85558c
   Args:
-    target: Philip_Duke_of_Edinburgh
-    source: Charles_III
+    type: :Man
+    source: Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta
+  AssignClass (1b9eef89-b229-4bb5-acd4-70c47f6a1a08)
+ Call ID: 1b9eef89-b229-4bb5-acd4-70c47f6a1a08
+  Args:
+    source: Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta
+    type: :Person
+  AddTriple (5fc69e8d-3f4a-4677-8057-1079db59bb2e)
+ Call ID: 5fc69e8d-3f4a-4677-8057-1079db59bb2e
+  Args:
     relation: :hasFather
-  AddTriple (fce75a34-5a86-4343-862e-9bc22f50f78f)
- Call ID: fce75a34-5a86-4343-862e-9bc22f50f78f
+    target: Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta
+    source: Prince_Amedeo_3rd_Duke_of_Aosta
+  AssignClass (6664185e-5291-4f3e-88c2-aab12a031c9d)
+ Call ID: 6664185e-5291-4f3e-88c2-aab12a031c9d
   Args:
-    target: George_VI
+    source: Princess_Helene
+    type: :Woman
+  AssignClass (8d9d930b-102a-49af-960a-25be5a5a70e6)
+ Call ID: 8d9d930b-102a-49af-960a-25be5a5a70e6
+  Args:
+    source: Princess_Helene
+    type: :Person
+  AddTriple (14331433-dc04-4738-9b82-9b29274f47a3)
+ Call ID: 14331433-dc04-4738-9b82-9b29274f47a3
+  Args:
+    source: Prince_Amedeo_3rd_Duke_of_Aosta
+    target: Princess_Helene
     relation: :hasMother
-    source: Elizabeth_II
-  AddTriple (53e0ccc6-0642-4af2-8502-0a11745d42a2)
- Call ID: 53e0ccc6-0642-4af2-8502-0a11745d42a2
+  AssignClass (b5c58dd7-4aec-4f1f-89d9-bdde0dd5991a)
+ Call ID: b5c58dd7-4aec-4f1f-89d9-bdde0dd5991a
   Args:
-    source: Charles_III
-    relation: :hasSon
-    target: William_Prince_of_Wales
-  AddTriple (bfa1b509-32e5-4c51-b87c-6822e52fe80b)
- Call ID: bfa1b509-32e5-4c51-b87c-6822e52fe80b
+    type: :Man
+    source: Amadeo_I_of_Spain
+  AssignClass (646024be-f3af-4b21-b596-a2eec0b48651)
+ Call ID: 646024be-f3af-4b21-b596-a2eec0b48651
   Args:
-    relation: :hasSon
-    source: Charles_III
-    target: Harry_Duke_of_Sussex
-  AddTriple (7653fd03-74b0-491a-b855-97ede795d240)
- Call ID: 7653fd03-74b0-491a-b855-97ede795d240
+    source: Amadeo_I_of_Spain
+    type: :Person
+  AddTriple (8aa9fb93-dffc-4228-89f7-f68d23a71876)
+ Call ID: 8aa9fb93-dffc-4228-89f7-f68d23a71876
   Args:
-    source: William_Prince_of_Wales
-    relation: :hasMother
-    target: Diana_Spencer
-  AddTriple (7f93e789-0a86-41d5-a661-7c1525dff121)
- Call ID: 7f93e789-0a86-41d5-a661-7c1525dff121
-  Args:
-    source: Harry_Duke_of_Sussex
-    relation: :hasMother
-    target: Diana_Spencer
-  AddTriple (92221d95-6837-4a27-a33e-bfb24d1db8db)
- Call ID: 92221d95-6837-4a27-a33e-bfb24d1db8db
-  Args:
-    source: William_Prince_of_Wales
+    source: Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta
     relation: :hasFather
-    target: Charles_III
-  AddTriple (56ba1dd8-f9e8-4da4-8ff0-339d3e9fb206)
- Call ID: 56ba1dd8-f9e8-4da4-8ff0-339d3e9fb206
+    target: Amadeo_I_of_Spain
+  AssignClass (0e44221b-c497-4eb8-b94f-879030308a45)
+ Call ID: 0e44221b-c497-4eb8-b94f-879030308a45
   Args:
-    source: Harry_Duke_of_Sussex
+    source: Princess_Maria_Vittoria
+    type: :Woman
+  AssignClass (d79a11e7-3cc3-4565-8f06-c06ca26cd36f)
+ Call ID: d79a11e7-3cc3-4565-8f06-c06ca26cd36f
+  Args:
+    type: :Person
+    source: Princess_Maria_Vittoria
+  AddTriple (5192c4fa-708b-49be-b69b-152cb7b3cc9a)
+ Call ID: 5192c4fa-708b-49be-b69b-152cb7b3cc9a
+  Args:
+    source: Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta
+    target: Princess_Maria_Vittoria
+    relation: :hasMother
+  AssignClass (7aea7a72-076a-46e8-a14c-24ad9f75709d)
+ Call ID: 7aea7a72-076a-46e8-a14c-24ad9f75709d
+  Args:
+    source: Prince_Philippe_of_Orleans
+    type: :Man
+  AssignClass (8cff04ea-bd9f-4645-9e76-add5c615d211)
+ Call ID: 8cff04ea-bd9f-4645-9e76-add5c615d211
+  Args:
+    source: Prince_Philippe_of_Orleans
+    type: :Person
+  AddTriple (c0be2dd7-e025-4fae-a9e4-562b8e9c5cf5)
+ Call ID: c0be2dd7-e025-4fae-a9e4-562b8e9c5cf5
+  Args:
+    source: Princess_Helene
+    target: Prince_Philippe_of_Orleans
     relation: :hasFather
-    target: Charles_III
-  AddLiteral (9fec1bd0-c0c2-4762-ba44-ba2ec8539b4b)
- Call ID: 9fec1bd0-c0c2-4762-ba44-ba2ec8539b4b
+  AssignClass (6ef42502-781a-49f1-851b-a3c79a4d8105)
+ Call ID: 6ef42502-781a-49f1-851b-a3c79a4d8105
   Args:
+    type: :Woman
+    source: Princess_Marie_Isabelle_of_Orleans
+  AssignClass (348662e7-cc0b-40f0-b8c7-d3e67f68a621)
+ Call ID: 348662e7-cc0b-40f0-b8c7-d3e67f68a621
+  Args:
+    type: :Person
+    source: Princess_Marie_Isabelle_of_Orleans
+  AddTriple (0db94290-f13e-4362-b551-892989e3078b)
+ Call ID: 0db94290-f13e-4362-b551-892989e3078b
+  Args:
+    source: Princess_Helene
+    target: Princess_Marie_Isabelle_of_Orleans
+    relation: :hasMother
+  AssignClass (10c2833c-ecfd-4890-a466-7f6718216dba)
+ Call ID: 10c2833c-ecfd-4890-a466-7f6718216dba
+  Args:
+    type: :Man
+    source: Aimone_4th_Duke_of_Aosta
+  AssignClass (e924254f-8a56-421d-b858-a7e80f2666b0)
+ Call ID: e924254f-8a56-421d-b858-a7e80f2666b0
+  Args:
+    source: Aimone_4th_Duke_of_Aosta
+    type: :Person
+  AddTriple (61945f88-db30-4b67-a2e6-178003cf8263)
+ Call ID: 61945f88-db30-4b67-a2e6-178003cf8263
+  Args:
+    source: Aimone_4th_Duke_of_Aosta
+    relation: :isBrotherOf
+    target: Prince_Amedeo_3rd_Duke_of_Aosta
+  AssignClass (c142255d-c78b-43c0-ba20-5aa5278f1926)
+ Call ID: c142255d-c78b-43c0-ba20-5aa5278f1926
+  Args:
+    source: Princess_Anne_of_Orleans
+    type: :Woman
+  AssignClass (89326d0a-7b66-416a-b002-afe12afa61bf)
+ Call ID: 89326d0a-7b66-416a-b002-afe12afa61bf
+  Args:
+    source: Princess_Anne_of_Orleans
+    type: :Person
+  AddLiteral (084df94f-cb6e-475c-a92a-d51e9ebcf935)
+ Call ID: 084df94f-cb6e-475c-a92a-d51e9ebcf935
+  Args:
+    literal_value: 1927
     relation: :hasMarriageYear
-    source: Charles_III
     literal_type: xsd:integer
-    literal_value: 1981
-  AddLiteral (f99f2b6e-6df6-4952-852a-ff46d8c8fb86)
- Call ID: f99f2b6e-6df6-4952-852a-ff46d8c8fb86
+    source: Prince_Amedeo_3rd_Duke_of_Aosta
+  AddTriple (97f682d8-9eca-494d-9d5d-86c3ee32eaca)
+ Call ID: 97f682d8-9eca-494d-9d5d-86c3ee32eaca
   Args:
-    literal_value: 2005
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: Charles_III
-  AddTriple (5935004e-a495-4322-b613-b20c072533b1)
- Call ID: 5935004e-a495-4322-b613-b20c072533b1
+    target: Princess_Anne_of_Orleans
+    relation: :hasRelation
+    source: Prince_Amedeo_3rd_Duke_of_Aosta
+  AssignClass (7851f1e6-dd29-4329-872a-00f2dc7e0d2f)
+ Call ID: 7851f1e6-dd29-4329-872a-00f2dc7e0d2f
   Args:
-    source: Charles_III
-    relation: :hasSex
-    target: :Male
-  AddTriple (905f31b0-45c5-41f4-8b93-09075fec89b6)
- Call ID: 905f31b0-45c5-41f4-8b93-09075fec89b6
+    type: :Man
+    source: Prince_Jean_Duke_of_Guise
+  AssignClass (d1280cdb-d472-4939-8994-648bc47e2e7a)
+ Call ID: d1280cdb-d472-4939-8994-648bc47e2e7a
   Args:
-    source: George_VI
-    relation: :hasSex
-    target: :Male
-  AddTriple (3c3eae48-60e5-495e-ba45-4d971089f7eb)
- Call ID: 3c3eae48-60e5-495e-ba45-4d971089f7eb
+    type: :Person
+    source: Prince_Jean_Duke_of_Guise
+  AddTriple (e971ddbb-81d7-45fd-a6a0-0c4ec4df478a)
+ Call ID: e971ddbb-81d7-45fd-a6a0-0c4ec4df478a
   Args:
-    target: :Female
-    source: Elizabeth_II
-    relation: :hasSex
-  AddTriple (03230ec5-63e6-4d7d-83d4-453c049c0847)
- Call ID: 03230ec5-63e6-4d7d-83d4-453c049c0847
+    target: Prince_Jean_Duke_of_Guise
+    relation: :hasFather
+    source: Princess_Anne_of_Orleans
+  AssignClass (0abb923f-f5af-46f1-a09a-a85b38ee0aff)
+ Call ID: 0abb923f-f5af-46f1-a09a-a85b38ee0aff
   Args:
-    source: Philip_Duke_of_Edinburgh
-    relation: :hasSex
-    target: :Male
-  AddTriple (740fb56e-be28-4d64-aae0-f580d2e62a11)
- Call ID: 740fb56e-be28-4d64-aae0-f580d2e62a11
+    source: Princess_Isabelle_of_Orleans
+    type: :Woman
+  AssignClass (33afc54f-90cb-4054-94cf-583be1194ad2)
+ Call ID: 33afc54f-90cb-4054-94cf-583be1194ad2
   Args:
-    source: Diana_Spencer
-    relation: :hasSex
-    target: :Female
-  AddTriple (1fe09508-c0de-4b25-885d-4fb1e3da770b)
- Call ID: 1fe09508-c0de-4b25-885d-4fb1e3da770b
+    source: Princess_Isabelle_of_Orleans
+    type: :Person
+  AddTriple (96b56b3f-d47e-4589-850e-44afb5ff9922)
+ Call ID: 96b56b3f-d47e-4589-850e-44afb5ff9922
   Args:
-    target: :Male
-    relation: :hasSex
-    source: William_Prince_of_Wales
-  AddTriple (b5052a8c-08c4-4f84-b0d6-7f44effa8c4c)
- Call ID: b5052a8c-08c4-4f84-b0d6-7f44effa8c4c
+    relation: :hasMother
+    target: Princess_Isabelle_of_Orleans
+    source: Princess_Anne_of_Orleans
+  Finish (1d1c80ba-12ee-499e-95d7-996f26c24208)
+ Call ID: 1d1c80ba-12ee-499e-95d7-996f26c24208
   Args:
-    target: :Male
-    source: Harry_Duke_of_Sussex
-    relation: :hasSex
-  AddTriple (0f5f2849-b7b7-4cb0-afbe-1de6ac56e3c2)
- Call ID: 0f5f2849-b7b7-4cb0-afbe-1de6ac56e3c2
-  Args:
-    source: Camilla_Parker_Bowles
-    relation: :hasSex
-    target: :Female
-  ValidateShacl (37eba6b5-fdd0-4588-b9bf-07363b48c68c)
- Call ID: 37eba6b5-fdd0-4588-b9bf-07363b48c68c
-  Args:
-  Finish (64bbd83d-99c0-4cf2-9efc-fedbcf2d8d17)
- Call ID: 64bbd83d-99c0-4cf2-9efc-fedbcf2d8d17
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1102,745 +817,51 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Camilla_Parker_Bowles a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Elizabeth_II a :Ancestor,
-          :Woman ;
-      :hasMother data:George_VI ;
-      :hasSex data:Female .
-
-  data:George_VI a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Harry_Duke_of_Sussex a :Man,
+  data:Aimone_4th_Duke_of_Aosta a :Man,
           :Person ;
-      :hasFather data:Charles_III ;
-      :hasMother data:Diana_Spencer ;
-      :hasSex data:Male .
+      :isBrotherOf data:Prince_Amedeo_3rd_Duke_of_Aosta .
 
-  data:Philip_Duke_of_Edinburgh a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
+  data:Amadeo_I_of_Spain a :Man,
+          :Person .
 
-  data:William_Prince_of_Wales a :Man,
+  data:Prince_Amedeo_3rd_Duke_of_Aosta a :Man,
           :Person ;
-      :hasFather data:Charles_III ;
-      :hasMother data:Diana_Spencer ;
-      :hasSex data:Male .
+      :hasBirthYear 1898 ;
+      :hasDeathYear 1942 ;
+      :hasFather data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+      :hasMarriageYear 1927 ;
+      :hasMother data:Princess_Helene ;
+      :hasRelation data:Princess_Anne_of_Orleans .
 
-  data:Charles_III a :Man,
+  data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta a :Man,
           :Person ;
-      :hasBirthYear 1948 ;
-      :hasFather data:Philip_Duke_of_Edinburgh ;
-      :hasMarriageYear 1981,
-          2005 ;
-      :hasMother data:Elizabeth_II ;
-      :hasSex data:Male ;
-      :hasSon data:Harry_Duke_of_Sussex,
-          data:William_Prince_of_Wales .
+      :hasFather data:Amadeo_I_of_Spain ;
+      :hasMother data:Princess_Maria_Vittoria .
 
-  data:Diana_Spencer a :Ancestor,
+  data:Prince_Jean_Duke_of_Guise a :Man,
+          :Person .
+
+  data:Prince_Philippe_of_Orleans a :Man,
+          :Person .
+
+  data:Princess_Anne_of_Orleans a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasFather data:Prince_Jean_Duke_of_Guise ;
+      :hasMother data:Princess_Isabelle_of_Orleans .
 
+  data:Princess_Helene a :Person,
+          :Woman ;
+      :hasFather data:Prince_Philippe_of_Orleans ;
+      :hasMother data:Princess_Marie_Isabelle_of_Orleans .
 
+  data:Princess_Isabelle_of_Orleans a :Person,
+          :Woman .
 
-================================= Tool Message =================================
+  data:Princess_Maria_Vittoria a :Person,
+          :Woman .
 
-VALIDATION RESULTS
-Total violations:86
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'George_VI' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Diana_Spencer' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Philip_Duke_of_Edinburgh' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Elizabeth_II' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'George_VI' used as a value for 'hasMother' on 'Elizabeth_II' does not have the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_VI', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'George_VI' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Diana_Spencer' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Philip_Duke_of_Edinburgh' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Elizabeth_II' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'George_VI' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Diana_Spencer' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Philip_Duke_of_Edinburgh' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Elizabeth_II' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'George_VI' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'William_Prince_of_Wales' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_III' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Harry_Duke_of_Sussex' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Philip_Duke_of_Edinburgh' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Charles_III' used as a value for 'hasFather' on 'William_Prince_of_Wales' does not have the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_III', class=':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Charles_III' used as a value for 'hasFather' on 'Harry_Duke_of_Sussex' does not have the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_III', class=':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'George_VI' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'William_Prince_of_Wales' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_III' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Harry_Duke_of_Sussex' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Philip_Duke_of_Edinburgh' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'George_VI' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'William_Prince_of_Wales' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Harry_Duke_of_Sussex' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Diana_Spencer' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Elizabeth_II' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_III' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Philip_Duke_of_Edinburgh' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Camilla_Parker_Bowles' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Charles_III' used as a value for 'hasFather' on 'William_Prince_of_Wales' does not have the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_III', class=':Ancestor')
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Charles_III' used as a value for 'hasFather' on 'Harry_Duke_of_Sussex' does not have the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_III', class=':Ancestor')
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'George_VI' used as a value for 'hasMother' on 'Elizabeth_II' does not have the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_VI', class=':Ancestor')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'George_VI' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'William_Prince_of_Wales' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Harry_Duke_of_Sussex' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Diana_Spencer' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Elizabeth_II' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_III' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Philip_Duke_of_Edinburgh' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Camilla_Parker_Bowles' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'George_VI' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'William_Prince_of_Wales' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Harry_Duke_of_Sussex' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Diana_Spencer' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Elizabeth_II' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_III' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Philip_Duke_of_Edinburgh' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Camilla_Parker_Bowles' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'William_Prince_of_Wales' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'George_VI' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Harry_Duke_of_Sussex' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Diana_Spencer' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_III' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Elizabeth_II' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Philip_Duke_of_Edinburgh' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Camilla_Parker_Bowles' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Charles_III' used as a value for 'hasFather' on 'William_Prince_of_Wales' does not have the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_III', class=':Ancestor')
-
-
-  Violation [62]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Charles_III' used as a value for 'hasFather' on 'Harry_Duke_of_Sussex' does not have the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_III', class=':Ancestor')
-
-
-  Violation [63]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'George_VI' used as a value for 'hasMother' on 'Elizabeth_II' does not have the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_VI', class=':Ancestor')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'William_Prince_of_Wales' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'George_VI' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Harry_Duke_of_Sussex' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Diana_Spencer' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_III' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Elizabeth_II' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Philip_Duke_of_Edinburgh' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Camilla_Parker_Bowles' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'William_Prince_of_Wales' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'George_VI' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Harry_Duke_of_Sussex' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Diana_Spencer' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Charles_III' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Elizabeth_II' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Philip_Duke_of_Edinburgh' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [79]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Camilla_Parker_Bowles' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [80]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'George_VI' used as a value for 'hasMother' on 'Elizabeth_II' does not have the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_VI', class=':Ancestor')
-
-
-  Violation [81]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Diana_Spencer' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [82]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Camilla_Parker_Bowles' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [83]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Elizabeth_II' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [84]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Diana_Spencer' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [85]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Camilla_Parker_Bowles' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [86]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Elizabeth_II' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
+  data:Princess_Marie_Isabelle_of_Orleans a :Person,
+          :Woman .
 
 
 
@@ -1852,169 +873,281 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  AssignClass (5ff86f1b-d986-4e77-87c4-df077bf01a47)
- Call ID: 5ff86f1b-d986-4e77-87c4-df077bf01a47
+  ValidateShacl (037faa77-6f59-46ef-acec-021d09c59d45)
+ Call ID: 037faa77-6f59-46ef-acec-021d09c59d45
   Args:
-    source: :Male
-    type: :Sex
-  AssignClass (6dc90cb9-226d-4b41-b3f9-94cb6f89ccf4)
- Call ID: 6dc90cb9-226d-4b41-b3f9-94cb6f89ccf4
-  Args:
-    source: :Female
-    type: :Sex
-  AssignClass (4133841c-1a33-456b-b11e-f01f8801de7a)
- Call ID: 4133841c-1a33-456b-b11e-f01f8801de7a
-  Args:
-    type: :Ancestor
-    source: George_VI
-  AssignClass (8fcb229c-b906-4e59-ac51-074f90738fa8)
- Call ID: 8fcb229c-b906-4e59-ac51-074f90738fa8
-  Args:
-    source: Charles_III
-    type: :Ancestor
-  ValidateShacl (68ce8b5d-a5dd-49e9-bb62-5c1794f1b139)
- Call ID: 68ce8b5d-a5dd-49e9-bb62-5c1794f1b139
-  Args:
-  Finish (c84e9e27-2b96-4a82-b3ca-feef2f5c9193)
- Call ID: c84e9e27-2b96-4a82-b3ca-feef2f5c9193
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Camilla_Parker_Bowles a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Elizabeth_II a :Ancestor,
-          :Woman ;
-      :hasMother data:George_VI ;
-      :hasSex data:Female .
-
-  data:George_VI a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Harry_Duke_of_Sussex a :Man,
-          :Person ;
-      :hasFather data:Charles_III ;
-      :hasMother data:Diana_Spencer ;
-      :hasSex data:Male .
-
-  data:Philip_Duke_of_Edinburgh a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:William_Prince_of_Wales a :Man,
-          :Person ;
-      :hasFather data:Charles_III ;
-      :hasMother data:Diana_Spencer ;
-      :hasSex data:Male .
-
-  data:Charles_III a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1948 ;
-      :hasFather data:Philip_Duke_of_Edinburgh ;
-      :hasMarriageYear 1981,
-          2005 ;
-      :hasMother data:Elizabeth_II ;
-      :hasSex data:Male ;
-      :hasSon data:Harry_Duke_of_Sussex,
-          data:William_Prince_of_Wales .
-
-  data:Diana_Spencer a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
-
-
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:4
+Total violations:24
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Elizabeth_II has a 'hasMother' relationship with George_VI, but the class of George_VI is ':Man', which contradicts the requirement that the object of 'hasMother' must be an instance of ':Woman'.
+      The value node Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta is missing the required :Ancestor class assignment to be valid as a father.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Elizabeth_II, hasMother, George_VI)
+      AssignClass(node='Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Elizabeth_II has a 'hasMother' relationship with George_VI, but the class of George_VI is ':Man', which contradicts the requirement that the object of 'hasMother' must be an instance of ':Woman'.
+      The value node Amadeo_I_of_Spain is missing the required :Ancestor class assignment to be valid as a father.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Elizabeth_II, hasMother, George_VI)
+      AssignClass(node='Amadeo_I_of_Spain', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Elizabeth_II has a 'hasMother' relationship with George_VI, but the class of George_VI is ':Man', which contradicts the requirement that the object of 'hasMother' must be an instance of ':Woman'.
+      The value node Princess_Helene is missing the required :Ancestor class assignment to be valid as a mother.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Elizabeth_II, hasMother, George_VI)
+      AssignClass(node='Princess_Helene', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Elizabeth_II has a 'hasMother' relationship with George_VI, but the class of George_VI is ':Man', which contradicts the requirement that the object of 'hasMother' must be an instance of ':Woman'.
+      The value node Princess_Maria_Vittoria is missing the required :Ancestor class assignment to be valid as a mother.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Elizabeth_II, hasMother, George_VI)
+      AssignClass(node='Princess_Maria_Vittoria', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Jean_Duke_of_Guise is missing the required :Ancestor class assignment to be valid as a father.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Jean_Duke_of_Guise', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Amadeo_I_of_Spain is missing the required :Ancestor class assignment to be valid as a father.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Amadeo_I_of_Spain', class=':Ancestor')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Philippe_of_Orleans is missing the required :Ancestor class assignment to be valid as a father.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Philippe_of_Orleans', class=':Ancestor')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta is missing the required :Ancestor class assignment to be valid as a father.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Isabelle_of_Orleans is missing the required :Ancestor class assignment to be valid as a mother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Isabelle_of_Orleans', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Maria_Vittoria is missing the required :Ancestor class assignment to be valid as a mother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Maria_Vittoria', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Marie_Isabelle_of_Orleans is missing the required :Ancestor class assignment to be valid as a mother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Marie_Isabelle_of_Orleans', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Helene is missing the required :Ancestor class assignment to be valid as a mother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Helene', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Jean_Duke_of_Guise is missing the required :Ancestor class assignment to be valid as a father.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Jean_Duke_of_Guise', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Amadeo_I_of_Spain is missing the required :Ancestor class assignment to be valid as a father.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Amadeo_I_of_Spain', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Philippe_of_Orleans is missing the required :Ancestor class assignment to be valid as a father.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Philippe_of_Orleans', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta is missing the required :Ancestor class assignment to be valid as a father.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Isabelle_of_Orleans is missing the required :Ancestor class assignment to be valid as a mother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Isabelle_of_Orleans', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Maria_Vittoria is missing the required :Ancestor class assignment to be valid as a mother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Maria_Vittoria', class=':Ancestor')
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Marie_Isabelle_of_Orleans is missing the required :Ancestor class assignment to be valid as a mother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Marie_Isabelle_of_Orleans', class=':Ancestor')
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Helene is missing the required :Ancestor class assignment to be valid as a mother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Helene', class=':Ancestor')
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Jean_Duke_of_Guise is missing the required :Ancestor class assignment to be valid as a father.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Jean_Duke_of_Guise', class=':Ancestor')
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Philippe_of_Orleans is missing the required :Ancestor class assignment to be valid as a father.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Philippe_of_Orleans', class=':Ancestor')
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Isabelle_of_Orleans is missing the required :Ancestor class assignment to be valid as a mother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Isabelle_of_Orleans', class=':Ancestor')
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Marie_Isabelle_of_Orleans is missing the required :Ancestor class assignment to be valid as a mother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Marie_Isabelle_of_Orleans', class=':Ancestor')
 
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  RemoveTriple (9d70ff3f-4c26-43e5-bdc4-42127bad5a46)
- Call ID: 9d70ff3f-4c26-43e5-bdc4-42127bad5a46
+  AssignClass (90975b2f-2f6f-4de7-a7c0-ca89d25d819a)
+ Call ID: 90975b2f-2f6f-4de7-a7c0-ca89d25d819a
   Args:
-    relation: :hasMother
-    target: George_VI
-    source: Elizabeth_II
-  AddTriple (ea539040-4a93-4122-96a0-2f22c25ac09d)
- Call ID: ea539040-4a93-4122-96a0-2f22c25ac09d
+    source: Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta
+    type: :Ancestor
+  AssignClass (0b15a6a7-97cd-43ff-a780-1776894f1f92)
+ Call ID: 0b15a6a7-97cd-43ff-a780-1776894f1f92
   Args:
-    target: George_VI
-    source: Elizabeth_II
-    relation: :hasFather
-  ValidateShacl (be078c07-cacd-4f2c-b67e-56287c14530d)
- Call ID: be078c07-cacd-4f2c-b67e-56287c14530d
+    source: Amadeo_I_of_Spain
+    type: :Ancestor
+  AssignClass (97e3e951-f683-429a-8205-6e0039027829)
+ Call ID: 97e3e951-f683-429a-8205-6e0039027829
   Args:
-  Finish (dea44bd8-4ae1-47c8-809d-25f80c7c4dbc)
- Call ID: dea44bd8-4ae1-47c8-809d-25f80c7c4dbc
+    source: Princess_Helene
+    type: :Ancestor
+  AssignClass (1904f7cd-b0de-4f81-b9ab-33f3cd8b8d2f)
+ Call ID: 1904f7cd-b0de-4f81-b9ab-33f3cd8b8d2f
   Args:
+    type: :Ancestor
+    source: Princess_Maria_Vittoria
+  AssignClass (b0c7fbfc-f5fd-431c-9fde-848df3fd57dd)
+ Call ID: b0c7fbfc-f5fd-431c-9fde-848df3fd57dd
+  Args:
+    type: :Ancestor
+    source: Prince_Jean_Duke_of_Guise
+  AssignClass (b3de39fc-aeae-4833-ae22-dbcf790e74d1)
+ Call ID: b3de39fc-aeae-4833-ae22-dbcf790e74d1
+  Args:
+    source: Prince_Philippe_of_Orleans
+    type: :Ancestor
+  AssignClass (ede329e5-2714-4f14-b0b9-1448d4cc7d4f)
+ Call ID: ede329e5-2714-4f14-b0b9-1448d4cc7d4f
+  Args:
+    source: Princess_Isabelle_of_Orleans
+    type: :Ancestor
+  AssignClass (3637593e-def6-42ef-a8f9-134e62e79bbd)
+ Call ID: 3637593e-def6-42ef-a8f9-134e62e79bbd
+  Args:
+    type: :Ancestor
+    source: Princess_Marie_Isabelle_of_Orleans
+  Finish (a24e6dc8-e7a0-4b6b-924c-a3d143ed15a7)
+ Call ID: a24e6dc8-e7a0-4b6b-924c-a3d143ed15a7
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -2027,60 +1160,61 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Camilla_Parker_Bowles a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Elizabeth_II a :Ancestor,
-          :Woman ;
-      :hasFather data:George_VI ;
-      :hasSex data:Female .
-
-  data:George_VI a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Harry_Duke_of_Sussex a :Man,
+  data:Aimone_4th_Duke_of_Aosta a :Man,
           :Person ;
-      :hasFather data:Charles_III ;
-      :hasMother data:Diana_Spencer ;
-      :hasSex data:Male .
+      :isBrotherOf data:Prince_Amedeo_3rd_Duke_of_Aosta .
 
-  data:Philip_Duke_of_Edinburgh a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
+  data:Amadeo_I_of_Spain a :Ancestor,
+          :Man,
+          :Person .
 
-  data:William_Prince_of_Wales a :Man,
+  data:Prince_Amedeo_3rd_Duke_of_Aosta a :Man,
           :Person ;
-      :hasFather data:Charles_III ;
-      :hasMother data:Diana_Spencer ;
-      :hasSex data:Male .
+      :hasBirthYear 1898 ;
+      :hasDeathYear 1942 ;
+      :hasFather data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+      :hasMarriageYear 1927 ;
+      :hasMother data:Princess_Helene ;
+      :hasRelation data:Princess_Anne_of_Orleans .
 
-  data:Charles_III a :Ancestor,
+  data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta a :Ancestor,
           :Man,
           :Person ;
-      :hasBirthYear 1948 ;
-      :hasFather data:Philip_Duke_of_Edinburgh ;
-      :hasMarriageYear 1981,
-          2005 ;
-      :hasMother data:Elizabeth_II ;
-      :hasSex data:Male ;
-      :hasSon data:Harry_Duke_of_Sussex,
-          data:William_Prince_of_Wales .
+      :hasFather data:Amadeo_I_of_Spain ;
+      :hasMother data:Princess_Maria_Vittoria .
 
-  data:Diana_Spencer a :Ancestor,
+  data:Prince_Jean_Duke_of_Guise a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_Philippe_of_Orleans a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Princess_Anne_of_Orleans a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasFather data:Prince_Jean_Duke_of_Guise ;
+      :hasMother data:Princess_Isabelle_of_Orleans .
 
-  data:Female a :Sex .
+  data:Princess_Helene a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Prince_Philippe_of_Orleans ;
+      :hasMother data:Princess_Marie_Isabelle_of_Orleans .
 
-  data:Male a :Sex .
+  data:Princess_Isabelle_of_Orleans a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Princess_Maria_Vittoria a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Princess_Marie_Isabelle_of_Orleans a :Ancestor,
+          :Person,
+          :Woman .
 
 
-
-================================= Tool Message =================================
-
-SHACL validation has not produced any violations.
 
 ================================= Tool Message =================================
 
@@ -2090,6 +1224,18 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  Finish (14199f14-1bb0-4e6a-aae1-9685b0ffc4f4)
- Call ID: 14199f14-1bb0-4e6a-aae1-9685b0ffc4f4
+  ValidateShacl (eb3a9c85-aa57-4b5a-90cf-4777ec7d0249)
+ Call ID: eb3a9c85-aa57-4b5a-90cf-4777ec7d0249
+  Args:
+
+================================= Tool Message =================================
+
+SHACL validation has not produced any violations.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (287915d6-77c4-4445-86de-a6be9520ee97)
+ Call ID: 287915d6-77c4-4445-86de-a6be9520ee97
   Args:

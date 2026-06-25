@@ -69,36 +69,35 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Waldemar William Louis Frederick Victor of Prussia (German: Waldemar Wilhelm Ludwig Friedrich Viktor Heinrich; 20 March 1889 at Kiel – 2 May 1945 at Tutzing, Bavaria) was the eldest son of Prince Henry of Prussia and Princess Irene of Hesse and by Rhine.
-Biography
+Prince Archie of Sussex (Archie Harrison Mountbatten-Windsor; born 6 May 2019) is a member of the British royal family.
+He is the son of Prince Harry, Duke of Sussex, and Meghan, Duchess of Sussex.
+A grandson of King Charles III, he is sixth in the line of succession to the British throne.
+Birth, family and infancy
 
-Marriage
+Archie Harrison Mountbatten-Windsor was born at 05:26 (BST) (04:26 UTC) on 6 May 2019 at Portland Hospital in London.
+He is the first child of Prince Harry, Duke of Sussex and Meghan, Duchess of Sussex.
+Archie has mixed-race ancestry, with African-American and European-American maternal lineage, and holds dual citizenship of the United Kingdom and the United States.
+Archie's parents brought him to meet his great-grandparents Queen Elizabeth II and Prince Philip for the first time when he was two days old.
+Four of the godparents were later reported to be Charlie van Straubenzee, Tiggy Pettifer, Mark Dyer, and the 7th Duke of Westminster.
+In early 2020, Archie's parents stepped down from their roles as working members of the royal family.
+Public appearances
 
-Waldemar married Princess Calixta of Lippe (14 October 1895 – 15 December 1982) on 14 August 1919 at Hemmelmark.
-Haemophilia and death
+In September and October 2019, Archie accompanied his parents on a Southern African tour to Malawi, Angola, South Africa and Botswana.
+Title and styles
 
-Waldemar, like his maternal first cousin, Tsarevich Alexei Nikolaevich of Russia; maternal uncle Prince Friedrich of Hesse and by Rhine; and youngest brother Henry, had haemophilia.
-He and his wife fled their home in light of the Russian advance, arriving in Tutzing, where Waldemar was able to receive his last blood transfusion.
-The U.S. Army overran the area the next day, on 1 May 1945, and diverted all medical resources to treat nearby concentration camp victims, preventing Waldemar's doctor from treating him.
-Waldemar died the following day, on 2 May.
-Honours and awards
-
-Prince Waldemar received the following awards:
-
-
-Ancestry
-
-References
-
-External links
-
-@media screen{html.skin-theme-clientpref-night .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}} Media related to Prince Waldemar of Prussia (1889-1945) at Wikimedia Commons
+As heir apparent to his father's dukedom of Sussex, earldom of Dumbarton, and barony of Kilkeel, Archie was at birth and by custom entitled to use Prince Harry's senior subsidiary title, Earl of Dumbarton, as a courtesy.
+However, the media reported that the Duke and Duchess decided, instead, that Archie would be styled as Master Archie Harrison Mountbatten-Windsor, in accordance with their reported wish that he grow up as a private citizen.
+Upon the accession of Charles III, Archie became entitled to use the title prince and style Royal Highness, as the child of a son of the monarch, pursuant to letters patent issued by King George V in 1917.
+In the interview Oprah with Meghan and Harry, the Duchess of Sussex said that she had been told that changes would be made to remove that entitlement; Charles III's plans for a scaled-down royal family dated back to the 1990s.
+The official website of the royal family was updated to refer to him as "Prince Archie of Sussex" on 9 March 2023.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -114,39 +113,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -161,6 +130,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -178,6 +164,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -245,29 +246,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -276,6 +269,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -288,6 +289,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -296,17 +299,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -334,6 +339,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -349,101 +438,98 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a190dba8-4cce-41ab-a5ac-066fae42d270)
- Call ID: a190dba8-4cce-41ab-a5ac-066fae42d270
+  AssignClass (b4433781-bd42-4c33-81f0-26b872597678)
+ Call ID: b4433781-bd42-4c33-81f0-26b872597678
   Args:
+    source: :Archie_Harrison_Mountbatten-Windsor
     type: :Person
-    source: Waldemar_of_Prussia
-  AssignClass (bb3bab04-7e87-4c24-a25f-dc33e3128428)
- Call ID: bb3bab04-7e87-4c24-a25f-dc33e3128428
+  AssignClass (fa0776a5-4ed6-4140-a0bb-97739a622348)
+ Call ID: fa0776a5-4ed6-4140-a0bb-97739a622348
   Args:
+    source: :Archie_Harrison_Mountbatten-Windsor
     type: :Man
-    source: Waldemar_of_Prussia
-  AddLiteral (cd182906-9eaf-4c3e-8fd8-050b282b5d1f)
- Call ID: cd182906-9eaf-4c3e-8fd8-050b282b5d1f
+  AddLiteral (4f1f3a5d-c431-48c6-9b3b-fd39315aa047)
+ Call ID: 4f1f3a5d-c431-48c6-9b3b-fd39315aa047
   Args:
-    source: Waldemar_of_Prussia
-    literal_value: 1889
+    relation: :knownAs
+    literal_value: Prince Archie of Sussex
+    literal_type: xsd:string
+    source: :Archie_Harrison_Mountbatten-Windsor
+  AddLiteral (c0f51b4d-f21f-4f21-bcf1-b41c7d9f679d)
+ Call ID: c0f51b4d-f21f-4f21-bcf1-b41c7d9f679d
+  Args:
+    literal_value: 2019
+    literal_type: xsd:integer
+    source: :Archie_Harrison_Mountbatten-Windsor
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (fd8b194e-db7a-464b-976d-1b0b0fca23f8)
- Call ID: fd8b194e-db7a-464b-976d-1b0b0fca23f8
+  AssignClass (27addbcd-ad17-4888-aafe-f7d2c63905a3)
+ Call ID: 27addbcd-ad17-4888-aafe-f7d2c63905a3
   Args:
-    source: Waldemar_of_Prussia
-    literal_value: 1945
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AssignClass (6ef336bf-2e88-4abb-a9d7-5a25de001df4)
- Call ID: 6ef336bf-2e88-4abb-a9d7-5a25de001df4
-  Args:
+    source: :Prince_Harry_Duke_of_Sussex
     type: :Person
-    source: Henry_of_Prussia
-  AssignClass (b19ae327-9b2b-4aac-aa22-513c2335a616)
- Call ID: b19ae327-9b2b-4aac-aa22-513c2335a616
+  AssignClass (92585fb6-3571-4537-9a88-98aefc45b07f)
+ Call ID: 92585fb6-3571-4537-9a88-98aefc45b07f
   Args:
     type: :Man
-    source: Henry_of_Prussia
-  AssignClass (ef3f617b-c035-45bc-b28c-1af968971dbc)
- Call ID: ef3f617b-c035-45bc-b28c-1af968971dbc
+    source: :Prince_Harry_Duke_of_Sussex
+  AssignClass (4302f75d-7594-461b-a1af-c7bce2711487)
+ Call ID: 4302f75d-7594-461b-a1af-c7bce2711487
   Args:
     type: :Person
-    source: Irene_of_Hesse_and_by_Rhine
-  AssignClass (1f648f13-bdb7-4a76-9f4c-72d348e58ae4)
- Call ID: 1f648f13-bdb7-4a76-9f4c-72d348e58ae4
+    source: :Meghan_Duchess_of_Sussex
+  AssignClass (d0f41ad6-0f8d-44b1-8cf5-f3b449e4ee3e)
+ Call ID: d0f41ad6-0f8d-44b1-8cf5-f3b449e4ee3e
   Args:
+    source: :Meghan_Duchess_of_Sussex
     type: :Woman
-    source: Irene_of_Hesse_and_by_Rhine
-  AddTriple (19da75bd-316e-487a-8454-52a4dbee5b83)
- Call ID: 19da75bd-316e-487a-8454-52a4dbee5b83
+  AddTriple (c64dc63e-c98a-4509-aced-a1f5070e1680)
+ Call ID: c64dc63e-c98a-4509-aced-a1f5070e1680
   Args:
-    target: Henry_of_Prussia
-    source: Waldemar_of_Prussia
+    source: :Archie_Harrison_Mountbatten-Windsor
     relation: :hasFather
-  AddTriple (cc62afaf-2fed-4fa6-87ef-c06b23320251)
- Call ID: cc62afaf-2fed-4fa6-87ef-c06b23320251
+    target: :Prince_Harry_Duke_of_Sussex
+  AddTriple (16b61f96-39a6-4464-a2e5-6a9cdade009d)
+ Call ID: 16b61f96-39a6-4464-a2e5-6a9cdade009d
   Args:
-    source: Waldemar_of_Prussia
+    source: :Archie_Harrison_Mountbatten-Windsor
     relation: :hasMother
-    target: Irene_of_Hesse_and_by_Rhine
-  AssignClass (79171e52-174b-430f-a7fc-64b6461e7b8a)
- Call ID: 79171e52-174b-430f-a7fc-64b6461e7b8a
+    target: :Meghan_Duchess_of_Sussex
+  AssignClass (e1e31c30-cee7-4470-a863-9cdc5255f51a)
+ Call ID: e1e31c30-cee7-4470-a863-9cdc5255f51a
   Args:
     type: :Person
-    source: Calixta_of_Lippe
-  AssignClass (90ef0269-9475-43ec-b519-b78abf49a334)
- Call ID: 90ef0269-9475-43ec-b519-b78abf49a334
-  Args:
-    type: :Woman
-    source: Calixta_of_Lippe
-  AddLiteral (b5a37cb4-03b8-4228-b208-461525c1e6a7)
- Call ID: b5a37cb4-03b8-4228-b208-461525c1e6a7
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1919
-    source: Waldemar_of_Prussia
-    literal_type: xsd:integer
-  AddTriple (8b1f944b-1d6c-4691-83c5-055fa714559b)
- Call ID: 8b1f944b-1d6c-4691-83c5-055fa714559b
-  Args:
-    relation: :hasRelation
-    source: Waldemar_of_Prussia
-    target: Calixta_of_Lippe
-  AssignClass (b1aed73e-5617-4828-b49e-8d662d3e49db)
- Call ID: b1aed73e-5617-4828-b49e-8d662d3e49db
-  Args:
-    type: :Person
-    source: Henry_youngest_brother_of_Waldemar
-  AssignClass (ce0c9eef-e6f9-45b5-8ee9-2cc5b78df3e4)
- Call ID: ce0c9eef-e6f9-45b5-8ee9-2cc5b78df3e4
+    source: :King_Charles_III
+  AssignClass (a9a9c8e5-b72b-42b8-b360-b807a64405db)
+ Call ID: a9a9c8e5-b72b-42b8-b360-b807a64405db
   Args:
     type: :Man
-    source: Henry_youngest_brother_of_Waldemar
-  AddTriple (9a523523-257b-4de2-a3c8-d709abe99a58)
- Call ID: 9a523523-257b-4de2-a3c8-d709abe99a58
+    source: :King_Charles_III
+  AddTriple (c399b3ef-1e37-4bc3-81e4-07f77a5073c8)
+ Call ID: c399b3ef-1e37-4bc3-81e4-07f77a5073c8
   Args:
-    source: Waldemar_of_Prussia
-    relation: :hasBrother
-    target: Henry_youngest_brother_of_Waldemar
-  Finish (75716d85-f830-4f6f-89b2-3b1b33036f2b)
- Call ID: 75716d85-f830-4f6f-89b2-3b1b33036f2b
+    target: :Prince_Harry_Duke_of_Sussex
+    relation: :isFatherOf
+    source: :King_Charles_III
+  AssignClass (5c83e6bc-0ebf-4d3f-aed7-b384dd40fd6f)
+ Call ID: 5c83e6bc-0ebf-4d3f-aed7-b384dd40fd6f
+  Args:
+    type: :Person
+    source: :Queen_Elizabeth_II
+  AssignClass (d8779674-6c7e-4d73-9206-f832f4ab13ef)
+ Call ID: d8779674-6c7e-4d73-9206-f832f4ab13ef
+  Args:
+    source: :Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (b0a362f1-245a-435b-976e-f84948e2e24e)
+ Call ID: b0a362f1-245a-435b-976e-f84948e2e24e
+  Args:
+    type: :Person
+    source: :Prince_Philip
+  AssignClass (43a77f69-bf13-4628-9f98-dfbc1a034533)
+ Call ID: 43a77f69-bf13-4628-9f98-dfbc1a034533
+  Args:
+    source: :Prince_Philip
+    type: :Man
+  Finish (98732bb5-67fd-4824-9132-1008ddacd5db)
+ Call ID: 98732bb5-67fd-4824-9132-1008ddacd5db
   Args:

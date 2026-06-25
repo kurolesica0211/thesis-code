@@ -69,35 +69,74 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Elisabeth of Denmark (Elisabeth Caroline-Mathilde Alexandrine Helena Olga Thyra Feodora Estrid Margrethe Désirée; 8 May 1935 – 19 June 2018) was a member of the Danish royal family.
-The only daughter and eldest child of Knud, Hereditary Prince of Denmark, and Princess Caroline-Mathilde of Denmark, she was a granddaughter of Christian X, niece of Frederik IX, and first cousin of Margrethe II.
-In addition to undertaking occasionally royal duties, she was a career diplomat with the Ministry of Foreign Affairs of Denmark.
-Early life and education
+The Custodian of the Crown  Prince Radu
 
-Elisabeth was born on 8 May 1935 in Copenhagen to Prince Knud and Princess Caroline-Mathilde of Denmark.
-Her father was the second son of Christian X.
-The family resided at Sorgenfri Palace in Kongens Lyngby, where she was raised with her two younger brothers Prince Ingolf and Prince Christian.
-During the 1938-39 Mørkefjord expedition, paleontologist Eigil Nielsen named the Princess Elisabeth Alps in northeastern Greenland after her.
-Elisabeth began her education privately at Sorgenfri.
-Subsequently, she attended Suhr's School of Home Economics and then Margrethe-Skolen (now the Scandinavian Academy of International Fashion and Design) from 1954 to 1956.
-In 1953, when  succession to the Danish throne switched from agnatic primogeniture to male-preference primogeniture, Elisabeth gained succession rights and became seventh in line to the throne.
-She was titled of Prinsesse til Danmark (literally translated as "Princess to Denmark", reserved for members of the Royal Family in the line of succession) with the style of Highness.
-She was the only one of her siblings to retain her title and succession rights, as her younger brothers married commoners without the permission of their uncle, Frederik IX.
-Career
 
-In 1956, Elisabeth began her career with the Danish Ministry of Foreign Affairs.
-She was posted to the Embassy of Denmark, Washington, D.C. from 1973 to 1976 and again from 1981 to 1985.
-In addition to her diplomatic career, Elisabeth occasionally undertook royal duties on behalf of her uncle and later cousin.
-Personal life and death
+Princess Elena 
+Princess Irina 
+Princess Sophie 
+Princess Maria 
 
-Elisabeth never married nor had children.
-After a long period of ill health, Elisabeth died on 19 June 2018, at the age of 83.
+
+Princess Elena of Romania (born 15 November 1950) is the second daughter of King Michael I and Queen Anne of Romania.
+Elena is first in the line of succession to the former Romanian throne and headship of the House of Romania as her elder sister Margareta's heir presumptive.
+Early life
+
+Birth
+
+Elena was born on 15 November 1950 at Clinique de Montchoisi in Lausanne, Switzerland as the second daughter of King Michael I and Queen Anne.
+She was baptised in the Orthodox faith; her godmothers were her paternal grandmother Helen, Queen Mother of Romania (who was also her namesake) and also Queen Mary of the United Kingdom.
+Childhood
+
+Elena spent her childhood at her family homes in Lausanne, Switzerland, and in the United Kingdom at Ayot House, St Lawrence, Hertfordshire; during holidays she and her sisters spent time with their grandmother, Helen, Queen Mother in Florence, Italy at Villa Sparta and in Denmark with Princess Margaret and Prince René.
+Education
+
+Elena received her primary education in Switzerland and her secondary at Effingham House in Little Common, Bexhill-on-Sea, East Sussex; she was fond of sports during her school years, playing on goal defence in the netball team.
+Careers
+
+In the mid-1970s, Elena taught handicapped children for a short period of time in London and after her leaving, she began a two-year course in art restoration; following the end of her course she worked in an art restoration firm in London.
+Activities
+
+In the 1980s Elena along with her first husband Robin Medforth-Mills started a project to train 45 handicapped Ethiopian refugees in printing, bookbinding and leatherwork.
+In 1982 Elena founded an International school in Gezira, Sudan.
+In 1990 along with Elena’s first husband, the then-Lord Mayor of Newcastle, Terry Cooney, and Harry Charrington was a founder-member of the North-East Relief Fund for Romania, which helped victims of the Ceaușescu regime.
+On 26 June 2011, Elena and her second husband Alexander Nixon visited the Queen Elizabeth Sixth Form College in Darlington, County Durham, England to present awards to students who went to Romania for voluntary work and helping to build and repair housing in Brașov, a project based around the Roma community.
+On 3 October 2011, Elena attended the 100th commemorative anniversary of the historic Western travels of ʻAbdu'l-Bahá in London, as a great-granddaughter of Queen Marie who had converted to the Baháʼí Faith, Elena spoke of how her great grandmother's Baháʼí legacy has inspired her to help those of need.
+On 25 April 2012, for the Diamond Jubilee festivities of Queen Elizabeth II, Elena and her second husband inaugurated Royal teas: the UK's only Royal Tea room in Stanhope, County Durham.
+Following the inauguration, on 19 May Elena along with King Michael I, Crown Princess Margareta, her brother-in-law Prince Radu, her husband Alexander Nixon and her son Prince Nicholas attended a Military parade at Windsor Great Park and a Garden party at Windsor Castle hosted by Prince Andrew, Duke of York and Prince Edward, Earl of Wessex.
+Elena also annually attends the Guildhall banquet of the Guild of Freemen of the City of London and the delegation of the Two Sicilian Sacred Military Constantinian Order of Saint George in London.
+In Romania
+
+After 50 years of exile of the Romanian royal family from Romania, in 1990 Elena's sisters Crown Princess Margareta and Princess Sophie visited Romania for the first time following the Romanian Revolution and the overthrow of the Communist dictator Nicolae Ceaușescu in December 1989, she along with the royal family were involved in helping the Romanians.
+Elena's first official appearance in Romania was on 19 April 1992 on Easter Day along with former King Michael I, his wife Anne, her first husband Robin Medforth-Mills, and her son Nicholas, where they were met with hundreds of thousands of supporters; Elena and her son Nicholas famously waved the Royal Flag from a balcony in Revolution Square.
+She came again on Christmas Day of 1997 when the entire royal family entered Romania for the first time after 50 years of exile.
+Since her first visit Elena occasionally visited Romania for family gatherings and for occasions such as: the 60th-birthday celebration of Crown Princess Margareta and the 90th-birthday celebrations of King Michael I.
+However, since 2013 Elena has increased her activities in Romania by attending investiture ceremonies, presenting awards, book launches and Christmas gatherings.
+Elena was present at the lying in state of King Michael
+I in December 2017 and Queen Anne in August 2016 (held firstly at Peleș Castle, and then in the Throne Room of the Royal Palace in both cases), at their public funerals in Bucharest and at their burials in Curtea de Argeș.
+Elena currently spends her time between Britain with her second husband Alexander and her daughter Elisabeta-Karina at her estate in Easington, County Durham and in Romania at Elisabeta Palace.
+Marriages
+
+First marriage
+
+On 20 July 1983, Elena married Robin Medforth-Mills (1942–2002) in a civil ceremony at Durham, England.
+The wedding party included King Michael I, his cousin former King Constantine II of Greece and his wife Queen Anne-Marie, who all served as Koumbaros; bridesmaids included her youngest sister Princess Maria, her second cousins Princess Alexia of Greece and Denmark and Princess Mafalda of Savoy; and also Fabiola Fruchaud, daughter of Princess Tatiana Radziwiłł.
+Elena and Robin had two children:
+
+
+They were divorced on 28 November 1991 after 8 years of marriage.
+Second marriage
+
+Elena was remarried on 14 August 1998 in a civil ceremony at Peterlee to Alexander Philips Nixon McAteer (born 22 October 1964).
+Elena and Alexander married religiously at the Coronation Cathedral, Alba Iulia, on 11 September 2013, privately.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -113,39 +152,9 @@ After a long period of ill health, Elisabeth died on 19 June 2018, at the age of
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -160,6 +169,23 @@ After a long period of ill health, Elisabeth died on 19 June 2018, at the age of
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -177,6 +203,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -244,29 +285,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -275,6 +308,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -287,6 +328,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -295,17 +338,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -333,6 +378,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -348,154 +477,162 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d9869d9d-59c1-4481-91aa-3329458b31e3)
- Call ID: d9869d9d-59c1-4481-91aa-3329458b31e3
+  AssignClass (a46d1700-b822-41ae-af2d-0502947db488)
+ Call ID: a46d1700-b822-41ae-af2d-0502947db488
+  Args:
+    source: Princess Elena
+    type: :Woman
+  AssignClass (6dadc20b-e0b8-4a3b-839c-d31bf8bba19f)
+ Call ID: 6dadc20b-e0b8-4a3b-839c-d31bf8bba19f
+  Args:
+    source: King Michael I
+    type: :Man
+  AssignClass (0910df4a-fc9d-4b25-b335-7a3faf66dda5)
+ Call ID: 0910df4a-fc9d-4b25-b335-7a3faf66dda5
   Args:
     type: :Woman
-    source: Elisabeth_of_Denmark
-  AssignClass (874111ad-7bdc-4666-8e78-408e2c1c5364)
- Call ID: 874111ad-7bdc-4666-8e78-408e2c1c5364
+    source: Queen Anne
+  AddLiteral (0480441e-b769-4a51-aa60-5fc0f2465885)
+ Call ID: 0480441e-b769-4a51-aa60-5fc0f2465885
   Args:
-    type: :Person
-    source: Elisabeth_of_Denmark
-  AddLiteral (0f830fff-56eb-449d-b7f3-85c6189351b2)
- Call ID: 0f830fff-56eb-449d-b7f3-85c6189351b2
-  Args:
-    source: Elisabeth_of_Denmark
+    source: Princess Elena
+    literal_value: 1950
     relation: :hasBirthYear
     literal_type: xsd:integer
-    literal_value: 1935
-  AddLiteral (ff4e1ab2-7acc-4803-8b76-db0ca7899d1d)
- Call ID: ff4e1ab2-7acc-4803-8b76-db0ca7899d1d
+  AddTriple (9e992350-4b69-4407-a3f3-aed008986b71)
+ Call ID: 9e992350-4b69-4407-a3f3-aed008986b71
   Args:
-    literal_value: 2018
+    source: Princess Elena
+    target: King Michael I
+    relation: :hasFather
+  AddTriple (8d72d5c7-9121-419a-b90a-c286951fd419)
+ Call ID: 8d72d5c7-9121-419a-b90a-c286951fd419
+  Args:
+    relation: :hasMother
+    source: Princess Elena
+    target: Queen Anne
+  AssignClass (854187a9-66a1-48df-82d0-76499ec9cb10)
+ Call ID: 854187a9-66a1-48df-82d0-76499ec9cb10
+  Args:
+    source: Margareta
+    type: :Woman
+  AddTriple (ebf80bab-3bed-4f5f-9655-fa48055229e7)
+ Call ID: ebf80bab-3bed-4f5f-9655-fa48055229e7
+  Args:
+    relation: :isSisterOf
+    target: Margareta
+    source: Princess Elena
+  AssignClass (eb8197c8-eed6-44c9-a6fd-7c4f1cbb68f9)
+ Call ID: eb8197c8-eed6-44c9-a6fd-7c4f1cbb68f9
+  Args:
+    source: Robin Medforth-Mills
+    type: :Man
+  AddLiteral (d00be219-e68a-45b2-bc4c-331d8e540cc4)
+ Call ID: d00be219-e68a-45b2-bc4c-331d8e540cc4
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Robin Medforth-Mills
+    literal_value: 1942
+  AddLiteral (a92eeaa8-c6a2-4d44-bab9-526f03a6d766)
+ Call ID: a92eeaa8-c6a2-4d44-bab9-526f03a6d766
+  Args:
     literal_type: xsd:integer
     relation: :hasDeathYear
-    source: Elisabeth_of_Denmark
-  AssignClass (b1edaeba-dd12-45d4-8678-7b9e2d565483)
- Call ID: b1edaeba-dd12-45d4-8678-7b9e2d565483
+    literal_value: 2002
+    source: Robin Medforth-Mills
+  AddLiteral (89a1ccd4-ebb5-400b-a184-5a060389b42d)
+ Call ID: 89a1ccd4-ebb5-400b-a184-5a060389b42d
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1983
+    source: Princess Elena
+  AssignClass (2ce4e8bc-0638-4b1a-ae4b-0349eb26e584)
+ Call ID: 2ce4e8bc-0638-4b1a-ae4b-0349eb26e584
+  Args:
+    source: Prince Nicholas
+    type: :Man
+  AddTriple (5f738ef5-d6d0-4c72-9e99-d71401840f22)
+ Call ID: 5f738ef5-d6d0-4c72-9e99-d71401840f22
+  Args:
+    target: Princess Elena
+    source: Prince Nicholas
+    relation: :isSonOf
+  AddTriple (85652989-2029-45b8-bb48-628aeb0a1829)
+ Call ID: 85652989-2029-45b8-bb48-628aeb0a1829
+  Args:
+    relation: :isSonOf
+    source: Prince Nicholas
+    target: Robin Medforth-Mills
+  AssignClass (e615f9a3-d6e6-4831-9325-cb827b891ae0)
+ Call ID: e615f9a3-d6e6-4831-9325-cb827b891ae0
+  Args:
+    source: Elisabeta-Karina
+    type: :Woman
+  AddTriple (f3ea201e-a72a-46b3-a564-dcddd74cb324)
+ Call ID: f3ea201e-a72a-46b3-a564-dcddd74cb324
+  Args:
+    target: Princess Elena
+    source: Elisabeta-Karina
+    relation: :isDaughterOf
+  AssignClass (536d0038-41b3-4100-9023-c705e290c5d3)
+ Call ID: 536d0038-41b3-4100-9023-c705e290c5d3
   Args:
     type: :Man
-    source: Knud_Hereditary_Prince_of_Denmark
-  AssignClass (f7f69659-780f-4d38-9914-1be80355ecac)
- Call ID: f7f69659-780f-4d38-9914-1be80355ecac
+    source: Alexander Nixon
+  AddLiteral (24890c80-c9fc-4c75-ba89-9b7c7d1526d5)
+ Call ID: 24890c80-c9fc-4c75-ba89-9b7c7d1526d5
   Args:
-    source: Knud_Hereditary_Prince_of_Denmark
-    type: :Person
-  AssignClass (17fa5f22-2694-47ef-b5cb-de8e5d3687e0)
- Call ID: 17fa5f22-2694-47ef-b5cb-de8e5d3687e0
+    literal_value: 1964
+    source: Alexander Nixon
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (e632289c-354f-4832-8a06-9e5b17a29647)
+ Call ID: e632289c-354f-4832-8a06-9e5b17a29647
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1998
+    source: Princess Elena
+  AssignClass (5ebae3ca-c8c2-478d-bed3-998745824441)
+ Call ID: 5ebae3ca-c8c2-478d-bed3-998745824441
+  Args:
+    type: :Man
+    source: Prince Radu
+  AssignClass (419b57fb-fd94-441a-960b-6a95b3c7d97c)
+ Call ID: 419b57fb-fd94-441a-960b-6a95b3c7d97c
   Args:
     type: :Woman
-    source: Caroline-Mathilde_of_Denmark
-  AssignClass (66066e00-c6ce-45be-9af3-c2c9aa23fb4c)
- Call ID: 66066e00-c6ce-45be-9af3-c2c9aa23fb4c
+    source: Princess Irina
+  AssignClass (ebf3b3c9-4966-4c7f-8cd1-93c0ccf5f146)
+ Call ID: ebf3b3c9-4966-4c7f-8cd1-93c0ccf5f146
   Args:
-    type: :Person
-    source: Caroline-Mathilde_of_Denmark
-  AddTriple (c74eb686-8723-4d23-a706-542f87f4d9a3)
- Call ID: c74eb686-8723-4d23-a706-542f87f4d9a3
-  Args:
-    relation: :hasFather
-    source: Elisabeth_of_Denmark
-    target: Knud_Hereditary_Prince_of_Denmark
-  AddTriple (c90d7a7c-eab2-4a20-8875-0adf9e9c73c3)
- Call ID: c90d7a7c-eab2-4a20-8875-0adf9e9c73c3
-  Args:
-    relation: :hasMother
-    source: Elisabeth_of_Denmark
-    target: Caroline-Mathilde_of_Denmark
-  AssignClass (be2cd5f2-9a07-4a54-97be-cfed0561e4f4)
- Call ID: be2cd5f2-9a07-4a54-97be-cfed0561e4f4
-  Args:
-    source: Christian_X
-    type: :Man
-  AssignClass (751d0c46-8977-4c6b-b7c1-6dd9b1c8133a)
- Call ID: 751d0c46-8977-4c6b-b7c1-6dd9b1c8133a
-  Args:
-    type: :Person
-    source: Christian_X
-  AddTriple (a0d26f1c-3003-442e-bc60-c7910e5b5a9d)
- Call ID: a0d26f1c-3003-442e-bc60-c7910e5b5a9d
-  Args:
-    relation: :hasFather
-    target: Christian_X
-    source: Knud_Hereditary_Prince_of_Denmark
-  AssignClass (0fc2ef80-86d0-47b4-8026-883e20e27433)
- Call ID: 0fc2ef80-86d0-47b4-8026-883e20e27433
-  Args:
-    source: Ingolf_of_Denmark
-    type: :Man
-  AssignClass (5531d4bc-2c99-42d9-9da6-48dc306f1b93)
- Call ID: 5531d4bc-2c99-42d9-9da6-48dc306f1b93
-  Args:
-    source: Ingolf_of_Denmark
-    type: :Person
-  AssignClass (ec967ccb-99dd-4013-a17a-abd1f30b855c)
- Call ID: ec967ccb-99dd-4013-a17a-abd1f30b855c
-  Args:
-    source: Christian_of_Denmark
-    type: :Man
-  AssignClass (ad54f1ab-9b6d-4577-8e71-8f9833fd9909)
- Call ID: ad54f1ab-9b6d-4577-8e71-8f9833fd9909
-  Args:
-    type: :Person
-    source: Christian_of_Denmark
-  AddTriple (d45410b6-c1bf-47e7-9d05-56ac975c8854)
- Call ID: d45410b6-c1bf-47e7-9d05-56ac975c8854
-  Args:
-    relation: :hasBrother
-    target: Ingolf_of_Denmark
-    source: Elisabeth_of_Denmark
-  AddTriple (7956a33e-3186-43d4-9408-f36ae50ae7a5)
- Call ID: 7956a33e-3186-43d4-9408-f36ae50ae7a5
-  Args:
-    source: Elisabeth_of_Denmark
-    target: Christian_of_Denmark
-    relation: :hasBrother
-  AddTriple (c63a63e1-43ac-4316-a501-5ec7038b5620)
- Call ID: c63a63e1-43ac-4316-a501-5ec7038b5620
-  Args:
-    source: Ingolf_of_Denmark
-    target: Knud_Hereditary_Prince_of_Denmark
-    relation: :hasFather
-  AddTriple (c382d3d5-d52b-41ad-ab10-b895468f2fa6)
- Call ID: c382d3d5-d52b-41ad-ab10-b895468f2fa6
-  Args:
-    source: Christian_of_Denmark
-    target: Knud_Hereditary_Prince_of_Denmark
-    relation: :hasFather
-  AddTriple (16156d87-c1b2-4b6c-80a4-22cf7c07c314)
- Call ID: 16156d87-c1b2-4b6c-80a4-22cf7c07c314
-  Args:
-    source: Ingolf_of_Denmark
-    target: Caroline-Mathilde_of_Denmark
-    relation: :hasMother
-  AddTriple (de98625e-9e25-4875-bb34-64058df5d90c)
- Call ID: de98625e-9e25-4875-bb34-64058df5d90c
-  Args:
-    source: Christian_of_Denmark
-    target: Caroline-Mathilde_of_Denmark
-    relation: :hasMother
-  AssignClass (82beb66b-e3fb-42bf-80a7-844d99040611)
- Call ID: 82beb66b-e3fb-42bf-80a7-844d99040611
-  Args:
-    source: Frederik_IX
-    type: :Man
-  AssignClass (70184723-62d1-484c-b74b-74599d8f9430)
- Call ID: 70184723-62d1-484c-b74b-74599d8f9430
-  Args:
-    source: Frederik_IX
-    type: :Person
-  AssignClass (a9e33107-a9f8-402c-bd0e-b20afcb2e09f)
- Call ID: a9e33107-a9f8-402c-bd0e-b20afcb2e09f
-  Args:
-    source: Margrethe_II
+    source: Princess Sophie
     type: :Woman
-  AssignClass (8fafe77a-7370-4dd8-a404-4aab16c5e456)
- Call ID: 8fafe77a-7370-4dd8-a404-4aab16c5e456
+  AssignClass (1de705e4-b8ad-49b7-8529-a83f0a101eba)
+ Call ID: 1de705e4-b8ad-49b7-8529-a83f0a101eba
   Args:
-    type: :Person
-    source: Margrethe_II
-  Finish (e0778348-0452-4708-ae74-ae3d68963732)
- Call ID: e0778348-0452-4708-ae74-ae3d68963732
+    source: Princess Maria
+    type: :Woman
+  AddTriple (ba0cccc5-82a2-4f3a-b5e9-048ed019b8cb)
+ Call ID: ba0cccc5-82a2-4f3a-b5e9-048ed019b8cb
+  Args:
+    target: Princess Irina
+    source: Princess Elena
+    relation: :isSisterOf
+  AddTriple (8f3af129-88df-445e-978f-b911040233f1)
+ Call ID: 8f3af129-88df-445e-978f-b911040233f1
+  Args:
+    relation: :isSisterOf
+    target: Princess Sophie
+    source: Princess Elena
+  AddTriple (2e89d93b-a804-4743-96a4-fa2fd2a29783)
+ Call ID: 2e89d93b-a804-4743-96a4-fa2fd2a29783
+  Args:
+    source: Princess Elena
+    target: Princess Maria
+    relation: :isSisterOf
+  Finish (e00d3fb2-159b-40e4-9e89-96644c89e8b1)
+ Call ID: e00d3fb2-159b-40e4-9e89-96644c89e8b1
   Args:

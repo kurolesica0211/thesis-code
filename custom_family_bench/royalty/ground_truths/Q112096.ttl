@@ -7,15 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Georg_von_Habsburg a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Georg_von_Habsburg a :Person ;
     rdfs:label "Georg von Habsburg" ;
     data:posIndicesFull "0:18",
         "400:418" ;
@@ -30,16 +22,18 @@ data:Georg_von_Habsburg a :Man,
     :alsoKnownAs "Archduke Georg of Austria",
         "Archduke Georg von Habsburg",
         "Archduke Paul Georg Maria Joseph Dominikus of Austria" ;
-    :hasFather data:Otto_von_Habsburg ;
     :hasParent data:Otto_von_Habsburg ;
-    :hasSex data:male ;
-    :isChildOf data:Otto_von_Habsburg ;
-    :isSonOf data:Otto_von_Habsburg .
+    :hasSex data:male .
 
-data:Otto_von_Habsburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Otto_von_Habsburg a :Person ;
     rdfs:label "Otto von Habsburg" ;
     data:posIndicesFull "285:302" ;
     data:posIndicesPart "554:562",
@@ -47,9 +41,7 @@ data:Otto_von_Habsburg a :Ancestor,
     data:wdtLink wdt:Q76343 ;
     :alsoKnownAs "Crown Prince Otto of Austria",
         "Otto, Crown Prince of Austria" ;
-    :hasChild data:Georg_von_Habsburg ;
-    :hasSex data:male ;
-    :hasSon data:Georg_von_Habsburg ;
-    :isFatherOf data:Georg_von_Habsburg ;
-    :isParentOf data:Georg_von_Habsburg .
+    :hasSex data:male .
+
+data:male a :Male .
 

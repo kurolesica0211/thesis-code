@@ -69,42 +69,38 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Alexander of Yugoslavia (Serbian: Александар П. Карађорђевић / Aleksandar P. Karađorđević; 13 August 1924 – 12 May 2016) was the elder son of Prince Paul, who served as Regent of Yugoslavia in the 1930s, and his wife, Princess Olga of Greece and Denmark.
-Birth and education
+Lord Leopold Arthur Louis Mountbatten (21 May 1889 – 23 April 1922) was a British Army officer and a descendant of the Hessian princely Battenberg family and the British royal family.
+A grandson of Queen Victoria, he was known as Prince Leopold of Battenberg from his birth until 1917, when the British royal family relinquished their German titles during World War I, and the Battenberg family changed their name to Mountbatten.
+Early life
 
-Alexander was born at White Lodge, Richmond Park, United Kingdom.
-As a nephew of Princess Marina, Duchess of Kent (née of Greece and Denmark), he was a first cousin of Prince Edward, Duke of Kent, Prince Michael of Kent, and Princess Alexandra of Kent; he was also a first cousin once removed of Prince Philip, Duke of Edinburgh.
-Marriages and family
+Leopold was born on 21 May 1889.
+His father was Prince Henry of Battenberg, the son of Prince Alexander of Hesse and by Rhine and Julia, Princess of Battenberg.
+His mother was Princess Beatrice of the United Kingdom, the fifth daughter and the youngest child of Queen Victoria and Prince Albert.
+As he was the product of a morganatic marriage, Prince Henry of Battenberg took his style of Prince of Battenberg from his mother, Julia von Hauke, who was created Princess of Battenberg in her own right.
+As such, Leopold was styled as His Serene Highness Prince Leopold of Battenberg from birth.
+In the United Kingdom, he was styled His Highness Prince Leopold of Battenberg under a royal warrant passed by Queen Victoria in 1886.
+His godparents were Leopold II of Belgium (his first cousin twice removed, represented by the Prince of Wales, his maternal uncle), the Duke of Connaught and Strathearn (his maternal uncle, represented by Prince Albert of Schleswig-Holstein, his first cousin), Prince Louis of Battenberg (his paternal uncle, represented by the Marquess of Lorne, his maternal uncle), the Marchioness of Lorne (his maternal aunt), the Duchess of Albany (his maternal aunt) and Princess Marie of Erbach-Schönberg (his paternal aunt).
+Leopold was a haemophiliac, a condition he inherited through his mother.
+His namesake maternal uncle, Prince Leopold, Duke of Albany, had died from the same condition.
+Military career
 
-He took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
-On 12 February 1955, Alexander married Princess Maria Pia of Savoy, daughter of King Umberto II of Italy and of his wife, Princess Marie José of Belgium.
-The couple had met on 22 August 1954 during the royal cruise of the Agamemnon, hosted by King Paul and Queen Frederica of Greece.
-Alexander and Maria Pia have twin sons born in 1958:
-Alexander and Maria Pia divorced in 1967, and in 2003 she married Prince Michel of Bourbon-Parma, himself divorced from Princess Yolande de Broglie-Revel.
-On 2 November 1973, in a civil ceremony in Paris, Alexander married Princess Barbara Eleonore Marie of Liechtenstein(born 9 July 1942), daughter of Prince Johannes of Liechtenstein (first cousin once removed to Prince Hans-Adam II of Liechtenstein) and Countess Karoline of Ledebur-Wicheln (aunt of Hans Adam's late wife Marie, Princess of Liechtenstein).
-On 28 October 1995 Prince Alexander and Princess Barbara were married in the Orthodox faith in
-Oplenac, and had issue:
+Leopold was commissioned a lieutenant (supernumerary) on 16 October 1909 in the 8th Battalion of the Isle of Wight Rifles, a Territorial Force unit.
+Relinquishment of titles
 
-
-Flying career
-
-The Prince wished to serve in the British Royal Air Force during World War Two, but was initially prevented by his father's political affiliations.
-He was eventually commissioned in the RAF through the intervention of Prince George, Duke of Kent, his uncle.
-Associations
-
-Alexander was one of the four founding members of the Serbian Unity Congress.
-On 17 February 2008, Alexander issued a statement condemning the declaration of independence by Kosovo.
-On the occasion of Prince Alexander's 90th birthday on 13 August 2014, a celebration of his life in words and pictures appeared in that month's UK magazine Majesty.
+During the First World War, anti-German feeling in the United Kingdom led Leopold's first cousin, George V to change the name of the royal house from the Germanic House of Saxe-Coburg and Gotha to the more English-sounding House of Windsor.
+In response to this, Leopold renounced his title of Prince, the style His Highness and the designation 'of Battenberg' through a royal warrant from the King dated 14 July 1917, and became Sir Leopold Mountbatten by virtue of his being a Knight Grand Cross of the Royal Victorian Order.
+Under a further warrant of 11 September 1917 he was granted the style and precedence of the younger son of a marquess, and became Lord Leopold Mountbatten.
 Death
 
-Prince Alexander died on 12 May 2016 in Paris, where he and his wife had lived for many years.
-He was buried at Oplenac, Serbia, with his parents and brother, his coffin being carried by Serbian Air Force fighter pilots.
+Lord Leopold died on 23 April 1922(1922-04-23) (aged 32), during a hip operation.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -120,39 +116,9 @@ He was buried at Oplenac, Serbia, with his parents and brother, his coffin being
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -167,6 +133,23 @@ He was buried at Oplenac, Serbia, with his parents and brother, his coffin being
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -184,6 +167,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -251,29 +249,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -282,6 +272,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -294,6 +292,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -302,17 +302,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -340,6 +342,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -355,204 +441,126 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5397dc42-446e-43d9-be36-b0a02ac0731a)
- Call ID: 5397dc42-446e-43d9-be36-b0a02ac0731a
-  Args:
-    type: :Man
-    source: Prince_Alexander_of_Yugoslavia
-  AssignClass (c7d46a8e-2b62-4a83-967f-4810868e7b3f)
- Call ID: c7d46a8e-2b62-4a83-967f-4810868e7b3f
+  AssignClass (bebf2a42-77da-4308-859c-28c9b174d695)
+ Call ID: bebf2a42-77da-4308-859c-28c9b174d695
   Args:
     type: :Person
-    source: Prince_Alexander_of_Yugoslavia
-  AddLiteral (0e9de1b9-1442-4485-be18-7c1764165c3a)
- Call ID: 0e9de1b9-1442-4485-be18-7c1764165c3a
+    source: Leopold_Mountbatten
+  AssignClass (96c9e9de-dc8b-458a-b927-1fef8925fb99)
+ Call ID: 96c9e9de-dc8b-458a-b927-1fef8925fb99
   Args:
-    literal_value: 1924
-    source: Prince_Alexander_of_Yugoslavia
+    source: Leopold_Mountbatten
+    type: :Man
+  AddLiteral (cb2ca94d-3f36-4fcc-8b5e-6836ef896895)
+ Call ID: cb2ca94d-3f36-4fcc-8b5e-6836ef896895
+  Args:
+    literal_value: 1889
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (e0f3c736-d43e-444f-9c2e-3fb9356a6d66)
- Call ID: e0f3c736-d43e-444f-9c2e-3fb9356a6d66
+    source: Leopold_Mountbatten
+  AddLiteral (acaf44bb-15a5-479a-a765-b88ae24b5e66)
+ Call ID: acaf44bb-15a5-479a-a765-b88ae24b5e66
   Args:
-    literal_value: 2016
-    source: Prince_Alexander_of_Yugoslavia
+    literal_value: 1922
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_type: xsd:integer
-  AssignClass (84bb69c0-0aee-40d2-9ef2-352aeee1b013)
- Call ID: 84bb69c0-0aee-40d2-9ef2-352aeee1b013
+    source: Leopold_Mountbatten
+  AssignClass (e67a46ba-90cd-48b3-9a73-0772328d2bee)
+ Call ID: e67a46ba-90cd-48b3-9a73-0772328d2bee
   Args:
-    type: :Man
-    source: Prince_Paul_of_Yugoslavia
-  AssignClass (921453d4-4224-4533-8ff9-de96f750f871)
- Call ID: 921453d4-4224-4533-8ff9-de96f750f871
-  Args:
-    source: Prince_Paul_of_Yugoslavia
     type: :Person
-  AssignClass (b97e8e34-9bef-4061-a1b9-efc9ca888cac)
- Call ID: b97e8e34-9bef-4061-a1b9-efc9ca888cac
+    source: Henry_of_Battenberg
+  AssignClass (eca90329-58f4-4978-876a-969a2c9193b8)
+ Call ID: eca90329-58f4-4978-876a-969a2c9193b8
+  Args:
+    source: Henry_of_Battenberg
+    type: :Man
+  AssignClass (c1771311-12e3-48e1-a9b4-647a96d2f8e2)
+ Call ID: c1771311-12e3-48e1-a9b4-647a96d2f8e2
+  Args:
+    source: Alexander_of_Hesse_and_by_Rhine
+    type: :Person
+  AssignClass (f351c1ca-0b80-4540-9468-fae26a53da79)
+ Call ID: f351c1ca-0b80-4540-9468-fae26a53da79
+  Args:
+    source: Alexander_of_Hesse_and_by_Rhine
+    type: :Man
+  AssignClass (18dde873-95c9-480d-ac61-da4ca02499de)
+ Call ID: 18dde873-95c9-480d-ac61-da4ca02499de
+  Args:
+    source: Julia_Princess_of_Battenberg
+    type: :Person
+  AssignClass (cd5c66ea-8b9d-44ce-8eec-604d31deeb00)
+ Call ID: cd5c66ea-8b9d-44ce-8eec-604d31deeb00
+  Args:
+    source: Julia_Princess_of_Battenberg
+    type: :Woman
+  AssignClass (91943bd1-8720-43d8-9c5a-46de4efec68c)
+ Call ID: 91943bd1-8720-43d8-9c5a-46de4efec68c
+  Args:
+    source: Beatrice_of_the_United_Kingdom
+    type: :Person
+  AssignClass (927f8c19-ed0a-46a1-a885-5b3dea0edb3c)
+ Call ID: 927f8c19-ed0a-46a1-a885-5b3dea0edb3c
+  Args:
+    source: Beatrice_of_the_United_Kingdom
+    type: :Woman
+  AssignClass (34be8cf5-ce5a-4353-81f1-95f521572952)
+ Call ID: 34be8cf5-ce5a-4353-81f1-95f521572952
+  Args:
+    source: Queen_Victoria
+    type: :Person
+  AssignClass (db0609e0-9492-47ef-bbc9-f5754aad99ab)
+ Call ID: db0609e0-9492-47ef-bbc9-f5754aad99ab
   Args:
     type: :Woman
-    source: Princess_Olga_of_Greece_and_Denmark
-  AssignClass (face9a8e-4e1f-4bb4-954e-17d95c016e2f)
- Call ID: face9a8e-4e1f-4bb4-954e-17d95c016e2f
+    source: Queen_Victoria
+  AssignClass (6a61c74a-9da5-47d3-8bec-3c56c09207ab)
+ Call ID: 6a61c74a-9da5-47d3-8bec-3c56c09207ab
   Args:
+    source: Prince_Albert
     type: :Person
-    source: Princess_Olga_of_Greece_and_Denmark
-  AddTriple (c481b843-606e-4bb4-a33d-46da9187e9e6)
- Call ID: c481b843-606e-4bb4-a33d-46da9187e9e6
+  AssignClass (c64ae4fe-f51f-454f-94bc-1fb39b3089fe)
+ Call ID: c64ae4fe-f51f-454f-94bc-1fb39b3089fe
   Args:
-    source: Prince_Alexander_of_Yugoslavia
+    type: :Man
+    source: Prince_Albert
+  AddTriple (f6456f6d-6633-4157-a4d6-73f297497049)
+ Call ID: f6456f6d-6633-4157-a4d6-73f297497049
+  Args:
+    source: Leopold_Mountbatten
     relation: :hasFather
-    target: Prince_Paul_of_Yugoslavia
-  AddTriple (da111f89-7988-445f-bdf9-bade4f2f509f)
- Call ID: da111f89-7988-445f-bdf9-bade4f2f509f
+    target: Henry_of_Battenberg
+  AddTriple (f768deb3-2171-4f6b-83b4-43f6e0c1e790)
+ Call ID: f768deb3-2171-4f6b-83b4-43f6e0c1e790
   Args:
-    source: Prince_Alexander_of_Yugoslavia
-    target: Princess_Olga_of_Greece_and_Denmark
+    source: Leopold_Mountbatten
+    target: Beatrice_of_the_United_Kingdom
     relation: :hasMother
-  AssignClass (fb32b063-0138-4c11-9848-f867f5a73f83)
- Call ID: fb32b063-0138-4c11-9848-f867f5a73f83
+  AddTriple (f1a704cc-9c7d-4b57-8c4f-664d4a85db66)
+ Call ID: f1a704cc-9c7d-4b57-8c4f-664d4a85db66
   Args:
-    type: :Woman
-    source: Princess_Maria_Pia_of_Savoy
-  AssignClass (fa083c48-c85f-4278-85f7-6ca34518fab1)
- Call ID: fa083c48-c85f-4278-85f7-6ca34518fab1
-  Args:
-    type: :Person
-    source: Princess_Maria_Pia_of_Savoy
-  AddTriple (3f63a0dd-0134-450f-abbc-ed6304d5816d)
- Call ID: 3f63a0dd-0134-450f-abbc-ed6304d5816d
-  Args:
-    source: Prince_Alexander_of_Yugoslavia
-    target: Princess_Maria_Pia_of_Savoy
-    relation: :hasRelation
-  AddLiteral (0eef1556-1e31-4015-9986-e8b7b4c0feda)
- Call ID: 0eef1556-1e31-4015-9986-e8b7b4c0feda
-  Args:
-    literal_value: 1955
-    source: Prince_Alexander_of_Yugoslavia
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AssignClass (a87f48ec-1b75-4e66-8089-f2bad5611b9f)
- Call ID: a87f48ec-1b75-4e66-8089-f2bad5611b9f
-  Args:
-    source: King_Umberto_II_of_Italy
-    type: :Man
-  AssignClass (8f4037bd-e422-4e76-a4b6-af4d9f911594)
- Call ID: 8f4037bd-e422-4e76-a4b6-af4d9f911594
-  Args:
-    type: :Person
-    source: King_Umberto_II_of_Italy
-  AssignClass (8e28b6de-5971-4b40-8552-fbc03b9e36db)
- Call ID: 8e28b6de-5971-4b40-8552-fbc03b9e36db
-  Args:
-    type: :Woman
-    source: Princess_Marie_Jose_of_Belgium
-  AssignClass (b90db39d-d555-4493-9d2a-23c4c0c5f8c4)
- Call ID: b90db39d-d555-4493-9d2a-23c4c0c5f8c4
-  Args:
-    source: Princess_Marie_Jose_of_Belgium
-    type: :Person
-  AddTriple (79aa287d-75e7-427a-996a-d6b18e22bb3d)
- Call ID: 79aa287d-75e7-427a-996a-d6b18e22bb3d
-  Args:
-    source: Princess_Maria_Pia_of_Savoy
+    target: Alexander_of_Hesse_and_by_Rhine
     relation: :hasFather
-    target: King_Umberto_II_of_Italy
-  AddTriple (ac3c58d8-3b90-4ba0-a0bf-cd2176db3ea8)
- Call ID: ac3c58d8-3b90-4ba0-a0bf-cd2176db3ea8
+    source: Henry_of_Battenberg
+  AddTriple (e73ea72b-3604-4e58-a11e-98e86f76d5ed)
+ Call ID: e73ea72b-3604-4e58-a11e-98e86f76d5ed
   Args:
-    source: Princess_Maria_Pia_of_Savoy
+    target: Julia_Princess_of_Battenberg
     relation: :hasMother
-    target: Princess_Marie_Jose_of_Belgium
-  AssignClass (e86da9dc-4b1a-4757-9630-1fcac8334bf2)
- Call ID: e86da9dc-4b1a-4757-9630-1fcac8334bf2
+    source: Henry_of_Battenberg
+  AddTriple (fc34ebf3-0de8-428d-86a9-7c615e8ba43c)
+ Call ID: fc34ebf3-0de8-428d-86a9-7c615e8ba43c
   Args:
-    type: :Woman
-    source: Princess_Barbara_Eleonore_Marie_of_Liechtenstein
-  AssignClass (a93192b6-b414-4f01-a44a-ca4eb4b7261f)
- Call ID: a93192b6-b414-4f01-a44a-ca4eb4b7261f
-  Args:
-    source: Princess_Barbara_Eleonore_Marie_of_Liechtenstein
-    type: :Person
-  AddTriple (c9ec08ee-766d-44d6-8d00-772859f5031c)
- Call ID: c9ec08ee-766d-44d6-8d00-772859f5031c
-  Args:
-    target: Princess_Barbara_Eleonore_Marie_of_Liechtenstein
-    relation: :hasRelation
-    source: Prince_Alexander_of_Yugoslavia
-  AddLiteral (be0062c0-2e9f-4247-a90e-3095658d1f77)
- Call ID: be0062c0-2e9f-4247-a90e-3095658d1f77
-  Args:
-    literal_value: 1973
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: Prince_Alexander_of_Yugoslavia
-  AssignClass (35c3d670-66df-42dc-9ea0-2eb498ec4f67)
- Call ID: 35c3d670-66df-42dc-9ea0-2eb498ec4f67
-  Args:
-    type: :Man
-    source: Prince_Johannes_of_Liechtenstein
-  AssignClass (9361265a-cd05-44e3-b548-9268d03f1b9e)
- Call ID: 9361265a-cd05-44e3-b548-9268d03f1b9e
-  Args:
-    source: Prince_Johannes_of_Liechtenstein
-    type: :Person
-  AssignClass (42a29935-ffd8-4558-8dd7-fb66a150c0fa)
- Call ID: 42a29935-ffd8-4558-8dd7-fb66a150c0fa
-  Args:
-    type: :Woman
-    source: Countess_Karoline_of_Ledebur-Wicheln
-  AssignClass (9ff61eda-68e4-4489-bcff-44f3afffea3b)
- Call ID: 9ff61eda-68e4-4489-bcff-44f3afffea3b
-  Args:
-    type: :Person
-    source: Countess_Karoline_of_Ledebur-Wicheln
-  AddTriple (d8ddcb26-316f-4951-8820-7783d6fffcdc)
- Call ID: d8ddcb26-316f-4951-8820-7783d6fffcdc
-  Args:
-    source: Princess_Barbara_Eleonore_Marie_of_Liechtenstein
+    target: Prince_Albert
     relation: :hasFather
-    target: Prince_Johannes_of_Liechtenstein
-  AddTriple (acf84cd6-0302-48d2-aea1-d3e9c78f118a)
- Call ID: acf84cd6-0302-48d2-aea1-d3e9c78f118a
+    source: Beatrice_of_the_United_Kingdom
+  AddTriple (8604698d-f425-44ca-b2a8-aae5d9153100)
+ Call ID: 8604698d-f425-44ca-b2a8-aae5d9153100
   Args:
-    target: Countess_Karoline_of_Ledebur-Wicheln
+    target: Queen_Victoria
     relation: :hasMother
-    source: Princess_Barbara_Eleonore_Marie_of_Liechtenstein
-  AssignClass (fff24aeb-9ca3-4a06-b7c3-ae23d25f8aa5)
- Call ID: fff24aeb-9ca3-4a06-b7c3-ae23d25f8aa5
-  Args:
-    source: Prince_Michel_of_Bourbon-Parma
-    type: :Man
-  AssignClass (95debf23-9ef9-4894-a414-e15c67f02598)
- Call ID: 95debf23-9ef9-4894-a414-e15c67f02598
-  Args:
-    type: :Person
-    source: Prince_Michel_of_Bourbon-Parma
-  AddTriple (2b4d99cb-5a5b-4f04-af43-a3f3d9f7339d)
- Call ID: 2b4d99cb-5a5b-4f04-af43-a3f3d9f7339d
-  Args:
-    relation: :hasRelation
-    target: Prince_Michel_of_Bourbon-Parma
-    source: Princess_Maria_Pia_of_Savoy
-  AssignClass (9e56fd25-3cc0-4626-ac32-f3d4e62a910e)
- Call ID: 9e56fd25-3cc0-4626-ac32-f3d4e62a910e
-  Args:
-    type: :Woman
-    source: Princess_Yolande_de_Broglie-Revel
-  AssignClass (75b03712-7d30-4856-b8e8-a836a5a2ccd6)
- Call ID: 75b03712-7d30-4856-b8e8-a836a5a2ccd6
-  Args:
-    type: :Person
-    source: Princess_Yolande_de_Broglie-Revel
-  AddTriple (a9419fc8-bd22-489d-ac45-74d5626a5c6e)
- Call ID: a9419fc8-bd22-489d-ac45-74d5626a5c6e
-  Args:
-    relation: :hasRelation
-    target: Princess_Yolande_de_Broglie-Revel
-    source: Prince_Michel_of_Bourbon-Parma
-  Finish (7fd31a9d-a536-4d34-9e38-69ec6d5368e0)
- Call ID: 7fd31a9d-a536-4d34-9e38-69ec6d5368e0
+    source: Beatrice_of_the_United_Kingdom
+  Finish (73abd79f-ed12-4cad-9d0e-8276a37c4bc4)
+ Call ID: 73abd79f-ed12-4cad-9d0e-8276a37c4bc4
   Args:

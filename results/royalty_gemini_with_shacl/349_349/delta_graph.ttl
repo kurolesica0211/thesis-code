@@ -2,46 +2,58 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Agapi_Politi a :Ancestor,
+data:Tatiana_Mountbatten a :Person,
         :Woman ;
-    :isMotherOf data:Chrysi_Vardinogianni .
+    :hasAncestor data:Abram_Gannibal,
+        data:Alexander_Pushkin,
+        data:Countess_Nadejda_Mikhailovna_de_Torby,
+        data:Louis_II_Grand_Duke_of_Hesse,
+        data:Louis_IV_Grand_Duke_of_Hesse,
+        data:Nicholas_I_of_Russia,
+        data:Prince_George_of_Battenberg,
+        data:Queen_Victoria ;
+    :hasBirthYear 1990 ;
+    :hasBrother data:Henry_Mountbatten ;
+    :hasFather data:George_Mountbatten ;
+    :hasMother data:Sarah_Georgina_Walker .
 
-data:Alexander_of_Yugoslavia a :Man .
+data:Abram_Gannibal a :Ancestor,
+        :Person .
 
-data:Alexia a :Woman ;
-    :isSisterOf data:Nikolaos .
+data:Alexander_Pushkin a :Ancestor,
+        :Person .
 
-data:Anne-Marie a :Ancestor,
-        :Woman ;
-    :isMotherOf data:Nikolaos .
+data:Countess_Nadejda_Mikhailovna_de_Torby a :Ancestor,
+        :Person,
+        :Woman .
 
-data:Constantine_II a :Ancestor,
-        :Man ;
-    :isFatherOf data:Nikolaos .
+data:Henry_Mountbatten a :Man,
+        :Person ;
+    :hasParent data:George_Mountbatten,
+        data:Sarah_Georgina_Walker .
 
-data:Giorgos_Vardinogiannis a :Ancestor,
-        :Man ;
-    :isFatherOf data:Chrysi_Vardinogianni .
+data:Louis_II_Grand_Duke_of_Hesse a :Ancestor,
+        :Person .
 
-data:Irene_of_Greece_and_Denmark a :Woman .
+data:Louis_IV_Grand_Duke_of_Hesse a :Ancestor,
+        :Person .
 
-data:Margareta_of_Romania a :Woman .
+data:Nicholas_I_of_Russia a :Ancestor,
+        :Person .
 
-data:Pavlos a :Man ;
-    :isBrotherOf data:Nikolaos .
+data:Prince_George_of_Battenberg a :Ancestor,
+        :Man,
+        :Person .
 
-data:Philippos a :Man ;
-    :isBrotherOf data:Nikolaos .
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman .
 
-data:Sofia_of_Spain a :Woman .
+data:George_Mountbatten a :Ancestor,
+        :Man,
+        :Person .
 
-data:Tatiana_Ellinka_Blatnik a :Woman .
-
-data:Theodora a :Woman ;
-    :isSisterOf data:Nikolaos .
-
-data:Chrysi_Vardinogianni a :Woman .
-
-data:Nikolaos a :Man ;
-    :hasBirthYear 1969 .
+data:Sarah_Georgina_Walker a :Ancestor,
+        :Person,
+        :Woman .
 

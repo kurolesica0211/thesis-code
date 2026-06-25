@@ -85,55 +85,41 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Nikolai Kirillovich Romanov   Princess Yekaterina Fyodorovna
+Donatus, Prince and Landgrave of Hesse (legally Heinrich Donatus Philipp Umberto Prinz und Landgraf von Hessen; born 17 October 1966) is a German businessman and the head of the House of Brabant and the House of Hesse.
+He is the eldest son and successor of German aristocrat Moritz, Landgrave of Hesse, and his former wife, Princess Tatiana of Sayn-Wittgenstein-Berleburg (b. 1940).
+Donatus's father became the head of the Hesse-Cassel line on the death of his own father, Landgrave Philipp in 1980.
+Having also been the adopted son and heir of his distant cousin, Louis, Prince of Hesse and by Rhine, the latter's death in 1968 as the last male of the Hesse-Darmstadt branch left Moritz head of the entire House of Hesse, to which Donatus succeeded.
+Profession
 
+Donatus directs the Hessische Hausstiftung (Foundation of the House of Hesse), a foundation (see below) established to curate and showcase the cultural heritage and history of the House of Hesse, a dynasty which ruled the Electorate of Hesse-Cassel until 1866, the Grand Duchy of Hesse and by Rhine until 1918, and whose male-line antecedents and co-lateral ties include the Protestant leader Philip the Magnanimous, the Swedish king Frederick I, Russia's last tsarina Alexandra Feodorovna, the exiled Spanish queen Victoria Eugenie of Battenberg, and Britain's last viceroy of India, the assassinated Louis, Earl Mountbatten of Burma.
+Donatus also manages Prinz von Hessen, a winery specializing in production of varietal vintages on his 45 hectare vineyard.
+Marriage and issue
 
-Prince Karl Emich of Leiningen (German: Karl Emich Nikolaus Friedrich Hermann Prinz zu Leiningen; Russian: Карл Эмих Николаус Фридрих Герман цу Лейнинген; born 12 June 1952), also known by his Orthodox Russian name Nikolai Kirillovich Romanov (Николай Кириллович Романов), and recognized with the regnal name Emperor Nicholas III by Monarchist Party supporters of the Imperial Throne, is the eldest son of Emich, 7th Prince of Leiningen, and Duchess Eilika of the Grand Duchy of Oldenburg, and is an elder brother of Andreas, 8th Prince of Leiningen.
-He is a claimant to the defunct throne of the Russian Empire, held until 1917 by the Imperial House of Romanov, as a grandson of Grand Duchess Maria Kirillovna (1907–1951), eldest child of Grand Duke Kirill Vladimirovich, who claimed the Russian crown from exile in 1924.
-He is a great-great-great-grandson of Emperor Alexander II of Russia and grandnephew of Grand Duke Vladimir Kirillovich of Russia.
-In 2013, the Monarchist Party of Russia declared him the primary heir to the Russian throne upon his conversion from Lutheranism to Eastern Orthodox Christianity, and in 2014 announced the formation of the Imperial Throne, wherein Karl Emich had agreed to assume imperial dignity as Emperor Nicholas III.
-As such, however, he came into competition with the widely recognized pretender to the throne, Grand Duchess Maria Vladimirovna of Russia, who is recognized by the Patriarch of Moscow.
-He also claimed the headship of the House of Leiningen in the past.
-He had one daughter by this marriage, Princess Cécilia Marie Stephanie Margarita of Leiningen (born 10 June 1988).
-On 24 May 1991, Prince Karl Emich married morganatically Gabriele Renate Thyssen.
-After an inheritance dispute, he desisted claim to the family's legacy in favour of his younger brother Andreas, 8th Prince of Leiningen.
-The couple had one daughter, Princess Theresa Anna Elisabeth of Leiningen (born 16 April 1992)
-In 1998, Karl Emich and Gabriele were divorced and she became the second wife of the Aga Khan IV.
-On 12 April 2010, they had a son, Prince Emich Albrecht Karl of Leiningen.
-Because his marriage to Countess Isabelle would not have been deemed equal according to the Pauline Laws, their son, Prince Emich, though considered a dynast of the House of Leiningen, cannot inherit his claim to the headship of the House of Romanov, which shall pass to his brother, Prince Andreas (b. 1955 ), and the latter's descendants born of equal marriages upon the death of Karl Emich, and on the condition that they should convert to Orthodoxy.
-Lawsuit
+Donatus married the daughter of German industrial heir and Chinese honorary citizen Count Hubertus von Faber-Castell, Countess Floria Franziska Marie-Luisa Erika von Faber-Castell (born 14 October 1974, Düsseldorf), in a civil ceremony in Wiesbaden on 25 April 2003.
+Prince Donatus and Floria Franziska are 6th cousins, as both descended from Frederick II, Landgrave of Hesse-Kassel and his first wife Princess Mary of Great Britain.
+Held at the Johanneskirche and followed by a grand ball in the Green Salon, state room of the former Friedrichshof palace in Kronberg (now a luxury hotel and golf course owned by the House of Hesse's family foundation) where Donatus's ancestress, the German Empress Frederick, Princess Royal, lived in widowhood, more than 300 guests were present.
+Among them were Caroline, Princess of Hanover, Princess Benedikte of Denmark, and Gloria, Princess of Thurn and Taxis.
+Representative appearances
 
+In 2021, Donatus was one of only 30 mourners at Prince Philip, the Duke of Edinburgh's, funeral at St George's Chapel, Windsor Castle.
+King Charles III appointed Donatus his personal representative to the funeral of his first cousin Maximilian, Margrave of Baden, on 13 January 2023.
+Although, as a descendant of Queen Victoria, he is only a distant relative of today's British royals who are more closely related to some other princes of Hesse, descendants of Prince Philip's sister Sophie, there is a close connection to the British royal family through Donatus' adoptive grandparents, Louis, Prince of Hesse and by Rhine, and his wife Margaret Campbell Geddes, who were relatives and close friends of Queen Elizabeth II and Prince Philip, as Philip's sister Cecilie had been married to Louis' elder brother Georg Donatus, Hereditary Grand Duke of Hesse.
+The late Queen, Prince Philip and Charles (then Prince of Wales) have visited Wolfsgarten on several occasions.
+Ancestry
 
-In 2000, Karl Emich began the final round of a lawsuit to inherit £100 million worth of castles, property, and a Mediterranean island that had been denied him by his family because he chose to marry Gabriele Renate Thyssen.
-Karl Emich was disinherited shortly after his 1991 wedding, as his mother, father, and brother Andreas withheld approval, contending that the bride did not meet the mediatized family's traditional standard for aristocratic lineage.
-The marriage was therefore deemed to constitute a violation of an 1897 Leiningen family edict requiring that dynastically valid marriages be authorised by the head of the Leiningen family (or by successful appeal to a panel of mediatized nobles), such permission historically being granted for brides descended from royalty or the titled nobility.
-Karl remarked about the whole affair, 
+Foundation of the House of Hesse
 
-"From the very beginning of our marriage I was turned into an enemy.
-Karl Emich maintained that the stress this feud put upon his marriage is the reason why Thyssen left him, converted to Islam, and eloped with Aga Khan IV.
-Claim to the Russian throne
-
-Karl Emich and his supporters argue that the marriage of Maria Vladimirovna's parents was in contravention of the Pauline Laws.
-They maintain that the House of Bagration-Mukhrani did not possess sovereign status and was not recognized as equal by Nicholas II for the purpose of dynastic marriages at the time of the union of Princess Tatiana Constantinovna of Russia and Prince Constantine Bagration-Mukhransky in 1911, thirty seven years prior to that of Princess Leonida and Grand Duke Vladimir Kirillovich.
-Therefore, as the next of kin to Vladimir (in the exclusion of his daughter), the Russian Monarchist Party recognises Karl Emich as the heir to the Russian throne, since he and his wife converted on 1 June 2013, from Lutheranism to Eastern Orthodox Christianity, enabling his accession.
-The couple received Orthodox names of Nikolai Kirillovich and Yekaterina Fyodorovna.
-
-
-Nicholas III and the Imperial Throne
-
-In early 2014 Russian Monarchist Party leader Anton Bakov announced he views the "Imperial Throne" from the point of international law as a subject of state sovereignty regardless of any other attributes, referring to analogies with the Holy See.
-He outlined that Karl Emich, upon adhering to the Orthodox denomination, obtained a right to take this see according to pre-Revolution Fundamental Laws of the Russian Empire.
-Bakov proposed that the Prince accept the throne, thereby forming a new independent state and incorporate it into Bakov's promotional projects such as the Monarchist Party's Imperial Throne micronation and several others.
-In April 2014 Bakov and Karl Emich appeared in a newspaper textual and photo report declaring that the Prince accepted the proposals as well as the title of "Emperor Nicholas III" (as successor to Nicholas II).
-In the report Bakov emphasized that Karl Emich has long been an entrepreneur but henceforth he would refrain from all non-royalist related public activities.
-He also announced that Russian President Vladimir Putin declined to grant such a plot in Yekaterinburg (Bakov's residence and site of the 1918 Romanov assassination) in response to Karl Emich's request, transmitted to Putin by Bakov, a former MP.
-In June 2021 Karl Emich, or Nikolai Kirillovich (Nicholas III) gave his first-ever interview in Russian language where he clarified his civil and political attitude and told some details about history of his family.
+Founded in 1928, the Foundation of the House of Hesse is the successor institution of a family trust that had been established in 1830, confiscated by the Kingdom of Prussia in 1866, and re-established after partial restitution in 1878.
+The latter is mainly shown at Fasanerie Palace in Eichenzell, Hesse, a former summer palace of the Prince Abbots of Fulda that had been taken over by the Landgraves of Hesse after the secularization and mediatisation of the Prince-bishopric of Fulda in 1803.
+The Landgrave and his family live in Wolfsgarten and Panker.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -149,39 +135,9 @@ In June 2021 Karl Emich, or Nikolai Kirillovich (Nicholas III) gave his first-ev
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -196,6 +152,23 @@ In June 2021 Karl Emich, or Nikolai Kirillovich (Nicholas III) gave his first-ev
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -213,6 +186,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,29 +268,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -311,6 +291,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -323,6 +311,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -331,17 +321,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -369,6 +361,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -384,388 +460,243 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (afa43f65-75ac-4764-ac36-c905f89e71cc)
- Call ID: afa43f65-75ac-4764-ac36-c905f89e71cc
+  AssignClass (73c119a8-b2ed-4ecc-8879-6069efd536ee)
+ Call ID: 73c119a8-b2ed-4ecc-8879-6069efd536ee
   Args:
-    source: Karl_Emich_of_Leiningen
+    source: Donatus_of_Hesse
     type: :Man
-  AssignClass (40c142b7-8460-469e-a435-94c60bfd64d7)
- Call ID: 40c142b7-8460-469e-a435-94c60bfd64d7
+  AssignClass (324b28f1-ebc4-4936-bb39-e9500818ed3f)
+ Call ID: 324b28f1-ebc4-4936-bb39-e9500818ed3f
   Args:
-    type: :Man
-    source: Emich_7th_Prince_of_Leiningen
-  AssignClass (ab40d12c-8b07-4597-8f14-f0b08cc36c1f)
- Call ID: ab40d12c-8b07-4597-8f14-f0b08cc36c1f
-  Args:
-    source: Duchess_Eilika_of_Oldenburg
-    type: :Woman
-  AssignClass (ff14774c-926e-412b-ac8a-a694223ed0fc)
- Call ID: ff14774c-926e-412b-ac8a-a694223ed0fc
-  Args:
-    type: :Man
-    source: Andreas_8th_Prince_of_Leiningen
-  AssignClass (8d737716-d9be-489d-9c72-946c9430bfc7)
- Call ID: 8d737716-d9be-489d-9c72-946c9430bfc7
-  Args:
-    source: Maria_Kirillovna
-    type: :Woman
-  AssignClass (99776128-89cd-4b6f-8f85-a5febdb2405c)
- Call ID: 99776128-89cd-4b6f-8f85-a5febdb2405c
-  Args:
-    type: :Man
-    source: Kirill_Vladimirovich
-  AssignClass (1340130e-dbd7-45b2-b87a-baef825e4181)
- Call ID: 1340130e-dbd7-45b2-b87a-baef825e4181
-  Args:
-    source: Alexander_II_of_Russia
-    type: :Man
-  AssignClass (950c5f6e-e72e-49e8-9b74-67331b9c14ce)
- Call ID: 950c5f6e-e72e-49e8-9b74-67331b9c14ce
-  Args:
-    type: :Man
-    source: Vladimir_Kirillovich_of_Russia
-  AssignClass (145a19ae-66a4-4aa7-b029-a4f15c4fffe7)
- Call ID: 145a19ae-66a4-4aa7-b029-a4f15c4fffe7
-  Args:
-    type: :Woman
-    source: Cecilia_Marie_Stephanie_Margarita_of_Leiningen
-  AssignClass (44f791e3-5db6-4e69-9ca6-cbb378739f7b)
- Call ID: 44f791e3-5db6-4e69-9ca6-cbb378739f7b
-  Args:
-    type: :Woman
-    source: Gabriele_Renate_Thyssen
-  AssignClass (bc6da0fb-f208-4561-b0cd-0f67fa09ae2b)
- Call ID: bc6da0fb-f208-4561-b0cd-0f67fa09ae2b
-  Args:
-    source: Theresa_Anna_Elisabeth_of_Leiningen
-    type: :Woman
-  AssignClass (998c6e7d-681b-4636-9584-31e75b721f01)
- Call ID: 998c6e7d-681b-4636-9584-31e75b721f01
-  Args:
-    source: Aga_Khan_IV
-    type: :Man
-  AssignClass (ae4c092f-6ad8-47e5-85ba-af8799a470b3)
- Call ID: ae4c092f-6ad8-47e5-85ba-af8799a470b3
-  Args:
-    source: Emich_Albrecht_Karl_of_Leiningen
-    type: :Man
-  AssignClass (4853fa18-9cc6-4ac8-b622-bb837fbbde0d)
- Call ID: 4853fa18-9cc6-4ac8-b622-bb837fbbde0d
-  Args:
-    source: Maria_Vladimirovna_of_Russia
-    type: :Woman
-  AssignClass (4b8e7245-0f03-49a4-a97a-11904fc2257c)
- Call ID: 4b8e7245-0f03-49a4-a97a-11904fc2257c
-  Args:
-    type: :Woman
-    source: Tatiana_Constantinovna_of_Russia
-  AssignClass (861cbea9-f489-470d-a5b2-fc692b8741ed)
- Call ID: 861cbea9-f489-470d-a5b2-fc692b8741ed
-  Args:
-    source: Constantine_Bagration_Mukhransky
-    type: :Man
-  AssignClass (98121d47-6ff9-475b-9718-e513c5c1e172)
- Call ID: 98121d47-6ff9-475b-9718-e513c5c1e172
-  Args:
-    source: Leonida_Bagration_Mukhranskaya
-    type: :Woman
-  AssignClass (087f132d-b541-471c-a879-e0c88cd1e256)
- Call ID: 087f132d-b541-471c-a879-e0c88cd1e256
-  Args:
-    source: Male_Sex
-    type: :Male
-  AssignClass (d699f78b-792f-4e52-95b3-8f29b496b243)
- Call ID: d699f78b-792f-4e52-95b3-8f29b496b243
-  Args:
-    type: :Female
-    source: Female_Sex
-  AddLiteral (46cacb55-2a1c-400e-ba16-07e430ab1759)
- Call ID: 46cacb55-2a1c-400e-ba16-07e430ab1759
-  Args:
-    literal_type: xsd:string
-    source: Karl_Emich_of_Leiningen
-    literal_value: Nikolai Kirillovich Romanov
-    relation: :alsoKnownAs
-  AddLiteral (500f39bb-1646-4ae5-bfdd-20124a356e59)
- Call ID: 500f39bb-1646-4ae5-bfdd-20124a356e59
-  Args:
-    relation: :alsoKnownAs
-    source: Karl_Emich_of_Leiningen
-    literal_type: xsd:string
-    literal_value: Emperor Nicholas III
-  AddLiteral (26614ec1-ee69-4001-9f88-209024bcb073)
- Call ID: 26614ec1-ee69-4001-9f88-209024bcb073
+    source: Donatus_of_Hesse
+    type: :Person
+  AddLiteral (c4ea879e-2553-4ff9-bc3d-d06d96c008c7)
+ Call ID: c4ea879e-2553-4ff9-bc3d-d06d96c008c7
   Args:
     relation: :hasBirthYear
-    literal_value: 1952
+    literal_value: 1966
     literal_type: xsd:integer
-    source: Karl_Emich_of_Leiningen
-  AddTriple (6979305f-1f1c-48fa-96ec-aa31f4048ec5)
- Call ID: 6979305f-1f1c-48fa-96ec-aa31f4048ec5
+    source: Donatus_of_Hesse
+  AssignClass (6da892fd-93ce-46ec-bcdc-0d908328e253)
+ Call ID: 6da892fd-93ce-46ec-bcdc-0d908328e253
   Args:
+    source: Moritz_of_Hesse
+    type: :Man
+  AssignClass (55b43626-9d19-4c30-b2a2-23640954fc67)
+ Call ID: 55b43626-9d19-4c30-b2a2-23640954fc67
+  Args:
+    source: Moritz_of_Hesse
+    type: :Person
+  AssignClass (a112999a-c9f8-4705-8a3b-52eb2dcf17d3)
+ Call ID: a112999a-c9f8-4705-8a3b-52eb2dcf17d3
+  Args:
+    source: Tatiana_of_Sayn-Wittgenstein-Berleburg
+    type: :Woman
+  AssignClass (0870e0ca-2c6f-4543-9cf7-01f6a3bc5bf6)
+ Call ID: 0870e0ca-2c6f-4543-9cf7-01f6a3bc5bf6
+  Args:
+    source: Tatiana_of_Sayn-Wittgenstein-Berleburg
+    type: :Person
+  AddLiteral (0a801950-9fe5-4b64-87eb-5e1bae4e2ac2)
+ Call ID: 0a801950-9fe5-4b64-87eb-5e1bae4e2ac2
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1940
+    source: Tatiana_of_Sayn-Wittgenstein-Berleburg
+  AddTriple (a510b6f2-c0bd-4a6d-a673-b13cef5addaa)
+ Call ID: a510b6f2-c0bd-4a6d-a673-b13cef5addaa
+  Args:
+    source: Donatus_of_Hesse
+    target: Moritz_of_Hesse
     relation: :hasFather
-    source: Karl_Emich_of_Leiningen
-    target: Emich_7th_Prince_of_Leiningen
-  AddTriple (77ac3f8d-be65-4018-9704-8cb474de9830)
- Call ID: 77ac3f8d-be65-4018-9704-8cb474de9830
+  AddTriple (6765f442-2d35-4121-9e6d-dcf149f7c279)
+ Call ID: 6765f442-2d35-4121-9e6d-dcf149f7c279
   Args:
+    source: Donatus_of_Hesse
+    target: Tatiana_of_Sayn-Wittgenstein-Berleburg
     relation: :hasMother
-    source: Karl_Emich_of_Leiningen
-    target: Duchess_Eilika_of_Oldenburg
-  AddTriple (b2911831-db24-48b8-baa7-43f84464696d)
- Call ID: b2911831-db24-48b8-baa7-43f84464696d
+  AssignClass (6255695f-62ae-4e4c-ac8f-c66441822034)
+ Call ID: 6255695f-62ae-4e4c-ac8f-c66441822034
   Args:
-    source: Karl_Emich_of_Leiningen
-    target: Andreas_8th_Prince_of_Leiningen
+    source: Philipp_of_Hesse
+    type: :Man
+  AssignClass (688a0328-646f-4e34-b263-05045e4b6449)
+ Call ID: 688a0328-646f-4e34-b263-05045e4b6449
+  Args:
+    source: Philipp_of_Hesse
+    type: :Person
+  AddTriple (c8eed47e-16a4-48a3-975f-d22f0d04af8a)
+ Call ID: c8eed47e-16a4-48a3-975f-d22f0d04af8a
+  Args:
+    source: Moritz_of_Hesse
+    relation: :hasFather
+    target: Philipp_of_Hesse
+  AddLiteral (663f8646-64d8-447c-a073-e56826eeebd4)
+ Call ID: 663f8646-64d8-447c-a073-e56826eeebd4
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1980
+    relation: :hasDeathYear
+    source: Philipp_of_Hesse
+  AssignClass (710d6631-ad8e-4e3c-8abc-989eaec223a8)
+ Call ID: 710d6631-ad8e-4e3c-8abc-989eaec223a8
+  Args:
+    source: Louis_of_Hesse_and_by_Rhine
+    type: :Man
+  AssignClass (ef7a8310-a745-4e57-8a99-ace346a1182b)
+ Call ID: ef7a8310-a745-4e57-8a99-ace346a1182b
+  Args:
+    source: Louis_of_Hesse_and_by_Rhine
+    type: :Person
+  AddLiteral (0f2974b6-595d-44cc-b395-9cea049e18e4)
+ Call ID: 0f2974b6-595d-44cc-b395-9cea049e18e4
+  Args:
+    source: Louis_of_Hesse_and_by_Rhine
+    literal_type: xsd:integer
+    literal_value: 1968
+    relation: :hasDeathYear
+  AssignClass (16e2c7e6-7bde-4075-80b9-b513f1006516)
+ Call ID: 16e2c7e6-7bde-4075-80b9-b513f1006516
+  Args:
+    source: Floria_Franziska_von_Faber-Castell
+    type: :Woman
+  AssignClass (49c2a655-f6df-46b5-9e8c-2ee3cec44fad)
+ Call ID: 49c2a655-f6df-46b5-9e8c-2ee3cec44fad
+  Args:
+    source: Floria_Franziska_von_Faber-Castell
+    type: :Person
+  AddLiteral (322761d9-1527-4b22-9509-f2d758efeb01)
+ Call ID: 322761d9-1527-4b22-9509-f2d758efeb01
+  Args:
+    literal_value: 1974
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Floria_Franziska_von_Faber-Castell
+  AddTriple (ab746840-e99f-4473-b695-762d41f2987e)
+ Call ID: ab746840-e99f-4473-b695-762d41f2987e
+  Args:
+    target: Floria_Franziska_von_Faber-Castell
+    relation: :hasRelation
+    source: Donatus_of_Hesse
+  AddLiteral (79cae442-5a00-4938-9d2b-3572d6f706d6)
+ Call ID: 79cae442-5a00-4938-9d2b-3572d6f706d6
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 2003
+    source: Donatus_of_Hesse
+  AssignClass (8b9217ce-8e8f-4f2e-b081-5eb54928d838)
+ Call ID: 8b9217ce-8e8f-4f2e-b081-5eb54928d838
+  Args:
+    source: Hubertus_von_Faber-Castell
+    type: :Man
+  AssignClass (2dc140cb-227e-4b4f-a82d-6ad7adee4e09)
+ Call ID: 2dc140cb-227e-4b4f-a82d-6ad7adee4e09
+  Args:
+    source: Hubertus_von_Faber-Castell
+    type: :Person
+  AddTriple (5a741ac4-76aa-4024-a37a-a0fb84e14797)
+ Call ID: 5a741ac4-76aa-4024-a37a-a0fb84e14797
+  Args:
+    source: Floria_Franziska_von_Faber-Castell
+    target: Hubertus_von_Faber-Castell
+    relation: :hasFather
+  AssignClass (5cff2ca9-db14-4d27-b31f-d021bc8804d2)
+ Call ID: 5cff2ca9-db14-4d27-b31f-d021bc8804d2
+  Args:
+    source: Frederick_II_of_Hesse-Kassel
+    type: :Man
+  AssignClass (6f1e7c32-03d8-4803-997d-7ec17f118584)
+ Call ID: 6f1e7c32-03d8-4803-997d-7ec17f118584
+  Args:
+    source: Frederick_II_of_Hesse-Kassel
+    type: :Person
+  AssignClass (ba655f67-f93a-4bfb-beda-d75a0db63e38)
+ Call ID: ba655f67-f93a-4bfb-beda-d75a0db63e38
+  Args:
+    source: Mary_of_Great_Britain
+    type: :Woman
+  AssignClass (fb0f2eb2-d964-4e6c-aea1-04f49c722e5b)
+ Call ID: fb0f2eb2-d964-4e6c-aea1-04f49c722e5b
+  Args:
+    source: Mary_of_Great_Britain
+    type: :Person
+  AddTriple (72dcfbc7-4140-46dc-af25-89178f041f6b)
+ Call ID: 72dcfbc7-4140-46dc-af25-89178f041f6b
+  Args:
+    target: Donatus_of_Hesse
+    relation: :isAncestorOf
+    source: Frederick_II_of_Hesse-Kassel
+  AddTriple (9cec3938-7335-416c-9507-9bf8c6c220a1)
+ Call ID: 9cec3938-7335-416c-9507-9bf8c6c220a1
+  Args:
+    source: Mary_of_Great_Britain
+    target: Donatus_of_Hesse
+    relation: :isAncestorOf
+  AddTriple (d7ec7cb6-c41d-43f7-b7b2-626fe378c8c8)
+ Call ID: d7ec7cb6-c41d-43f7-b7b2-626fe378c8c8
+  Args:
+    source: Frederick_II_of_Hesse-Kassel
+    target: Floria_Franziska_von_Faber-Castell
+    relation: :isAncestorOf
+  AddTriple (06a24162-faf1-44e9-b369-b912a984f63a)
+ Call ID: 06a24162-faf1-44e9-b369-b912a984f63a
+  Args:
+    source: Mary_of_Great_Britain
+    relation: :isAncestorOf
+    target: Floria_Franziska_von_Faber-Castell
+  AssignClass (b53f65f4-f96e-47a5-9d80-d151d22a04f1)
+ Call ID: b53f65f4-f96e-47a5-9d80-d151d22a04f1
+  Args:
+    source: Margaret_Campbell_Geddes
+    type: :Woman
+  AssignClass (4c905e08-73f5-45a7-bbf4-3fb509b7602d)
+ Call ID: 4c905e08-73f5-45a7-bbf4-3fb509b7602d
+  Args:
+    source: Margaret_Campbell_Geddes
+    type: :Person
+  AddTriple (d00e9030-7468-4055-9742-cf82f58b2afa)
+ Call ID: d00e9030-7468-4055-9742-cf82f58b2afa
+  Args:
+    source: Louis_of_Hesse_and_by_Rhine
+    relation: :hasRelation
+    target: Margaret_Campbell_Geddes
+  AssignClass (4b30e0c4-c593-488c-b708-a5c685a145e0)
+ Call ID: 4b30e0c4-c593-488c-b708-a5c685a145e0
+  Args:
+    source: Cecilie_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (c8ecbfa0-0ae6-48c7-8335-bae5262431c1)
+ Call ID: c8ecbfa0-0ae6-48c7-8335-bae5262431c1
+  Args:
+    source: Cecilie_of_Greece_and_Denmark
+    type: :Person
+  AssignClass (f8af3234-b6d4-4690-ae71-5e5c70b10b23)
+ Call ID: f8af3234-b6d4-4690-ae71-5e5c70b10b23
+  Args:
+    source: Georg_Donatus_of_Hesse
+    type: :Man
+  AssignClass (9bac3556-209b-4075-8121-7d8592f9ea7b)
+ Call ID: 9bac3556-209b-4075-8121-7d8592f9ea7b
+  Args:
+    source: Georg_Donatus_of_Hesse
+    type: :Person
+  AddTriple (f5c38554-298a-4a3a-ac85-d22a2bdfd2dc)
+ Call ID: f5c38554-298a-4a3a-ac85-d22a2bdfd2dc
+  Args:
+    source: Cecilie_of_Greece_and_Denmark
+    target: Georg_Donatus_of_Hesse
+    relation: :hasRelation
+  AddTriple (e71582d6-7f5f-47d3-8a2c-8749c6ead582)
+ Call ID: e71582d6-7f5f-47d3-8a2c-8749c6ead582
+  Args:
+    source: Georg_Donatus_of_Hesse
+    target: Louis_of_Hesse_and_by_Rhine
     relation: :hasBrother
-  AddTriple (342bc15f-0170-42ec-9e1c-3a21cde8818f)
- Call ID: 342bc15f-0170-42ec-9e1c-3a21cde8818f
+  Finish (d615f2c0-1439-4c5c-b5c4-412b54595fb9)
+ Call ID: d615f2c0-1439-4c5c-b5c4-412b54595fb9
   Args:
-    source: Karl_Emich_of_Leiningen
-    target: Maria_Kirillovna
-    relation: :hasAncestor
-  AddTriple (9d5ea408-e6b5-461f-a1f6-f5ed3e016e6a)
- Call ID: 9d5ea408-e6b5-461f-a1f6-f5ed3e016e6a
-  Args:
-    source: Karl_Emich_of_Leiningen
-    target: Alexander_II_of_Russia
-    relation: :hasAncestor
-  AddTriple (001b85b5-c77d-4463-bb18-0c6054ca942c)
- Call ID: 001b85b5-c77d-4463-bb18-0c6054ca942c
-  Args:
-    source: Maria_Kirillovna
-    target: Kirill_Vladimirovich
-    relation: :isChildOf
-  AddLiteral (15874c10-9c76-49a4-a89d-6a8bcca52edb)
- Call ID: 15874c10-9c76-49a4-a89d-6a8bcca52edb
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Cecilia_Marie_Stephanie_Margarita_of_Leiningen
-    literal_value: 1988
-  AddTriple (41bbc0a1-7e3f-4d15-b716-f557bdacce6e)
- Call ID: 41bbc0a1-7e3f-4d15-b716-f557bdacce6e
-  Args:
-    relation: :hasDaughter
-    source: Karl_Emich_of_Leiningen
-    target: Cecilia_Marie_Stephanie_Margarita_of_Leiningen
-  AddLiteral (9a8de509-4e98-4a0a-832c-9fe2749da3c9)
- Call ID: 9a8de509-4e98-4a0a-832c-9fe2749da3c9
-  Args:
-    relation: :hasBirthYear
-    source: Theresa_Anna_Elisabeth_of_Leiningen
-    literal_type: xsd:integer
-    literal_value: 1992
-  AddTriple (1722bcca-767c-4204-a148-b3bc12ddadd0)
- Call ID: 1722bcca-767c-4204-a148-b3bc12ddadd0
-  Args:
-    relation: :hasDaughter
-    target: Theresa_Anna_Elisabeth_of_Leiningen
-    source: Karl_Emich_of_Leiningen
-  AddTriple (558657cb-c887-409b-a576-dfc92bb9e3e3)
- Call ID: 558657cb-c887-409b-a576-dfc92bb9e3e3
-  Args:
-    target: Gabriele_Renate_Thyssen
-    source: Theresa_Anna_Elisabeth_of_Leiningen
-    relation: :hasMother
-  AddLiteral (54dda9b3-567b-49ba-9042-b775a538d2ab)
- Call ID: 54dda9b3-567b-49ba-9042-b775a538d2ab
-  Args:
-    source: Emich_Albrecht_Karl_of_Leiningen
-    literal_type: xsd:integer
-    literal_value: 2010
-    relation: :hasBirthYear
-  AddTriple (fc16e178-90a4-4fa5-8ede-cdf29add4a71)
- Call ID: fc16e178-90a4-4fa5-8ede-cdf29add4a71
-  Args:
-    relation: :hasSon
-    source: Karl_Emich_of_Leiningen
-    target: Emich_Albrecht_Karl_of_Leiningen
-  AddTriple (4ada5c9c-994f-4cba-a246-01ce90902f52)
- Call ID: 4ada5c9c-994f-4cba-a246-01ce90902f52
-  Args:
-    target: Gabriele_Renate_Thyssen
-    source: Emich_Albrecht_Karl_of_Leiningen
-    relation: :hasMother
-  AddTriple (fec648e1-b6f1-49ad-895a-3258e24f736d)
- Call ID: fec648e1-b6f1-49ad-895a-3258e24f736d
-  Args:
-    target: Maria_Vladimirovna_of_Russia
-    source: Leonida_Bagration_Mukhranskaya
-    relation: :isMotherOf
-  AddTriple (4ec859d2-3ecd-461e-b8af-e27e0436f99e)
- Call ID: 4ec859d2-3ecd-461e-b8af-e27e0436f99e
-  Args:
-    relation: :isFatherOf
-    target: Maria_Vladimirovna_of_Russia
-    source: Vladimir_Kirillovich_of_Russia
-  AddTriple (b981ea08-47c4-48e3-8481-2aff6f7c7073)
- Call ID: b981ea08-47c4-48e3-8481-2aff6f7c7073
-  Args:
-    relation: :hasFather
-    source: Tatiana_Constantinovna_of_Russia
-    target: Constantine_Bagration_Mukhransky
-  AddTriple (f32d3b64-5f77-4f87-8c99-fc72b17c24a3)
- Call ID: f32d3b64-5f77-4f87-8c99-fc72b17c24a3
-  Args:
-    relation: :hasSex
-    source: Karl_Emich_of_Leiningen
-    target: Male_Sex
-  AddTriple (a1361ce2-11cc-4362-a6ee-5860e14585df)
- Call ID: a1361ce2-11cc-4362-a6ee-5860e14585df
-  Args:
-    target: Male_Sex
-    source: Emich_7th_Prince_of_Leiningen
-    relation: :hasSex
-  AddTriple (a92c6cc7-0fcf-4d0d-b32a-94e8b8e7ce9d)
- Call ID: a92c6cc7-0fcf-4d0d-b32a-94e8b8e7ce9d
-  Args:
-    source: Duchess_Eilika_of_Oldenburg
-    target: Female_Sex
-    relation: :hasSex
-  AddTriple (95e6abcf-6439-4c0e-9cad-073a6e98f779)
- Call ID: 95e6abcf-6439-4c0e-9cad-073a6e98f779
-  Args:
-    relation: :hasSex
-    source: Andreas_8th_Prince_of_Leiningen
-    target: Male_Sex
-  AddTriple (e57c9893-168f-4d86-9097-1975a24f5b93)
- Call ID: e57c9893-168f-4d86-9097-1975a24f5b93
-  Args:
-    target: Female_Sex
-    source: Maria_Kirillovna
-    relation: :hasSex
-  AddTriple (f682e8d9-8b58-4c96-84c1-c48dbedb0300)
- Call ID: f682e8d9-8b58-4c96-84c1-c48dbedb0300
-  Args:
-    target: Male_Sex
-    source: Kirill_Vladimirovich
-    relation: :hasSex
-  AddTriple (ae155e9a-6c79-4223-9563-23fa2d79f9f6)
- Call ID: ae155e9a-6c79-4223-9563-23fa2d79f9f6
-  Args:
-    relation: :hasSex
-    source: Alexander_II_of_Russia
-    target: Male_Sex
-  AddTriple (c2e26bbf-0699-4978-b3fd-f26a1e2e8b85)
- Call ID: c2e26bbf-0699-4978-b3fd-f26a1e2e8b85
-  Args:
-    relation: :hasSex
-    target: Male_Sex
-    source: Vladimir_Kirillovich_of_Russia
-  AddTriple (9a5350c0-5a2f-44f4-bcbe-8c8d3d98b86b)
- Call ID: 9a5350c0-5a2f-44f4-bcbe-8c8d3d98b86b
-  Args:
-    source: Cecilia_Marie_Stephanie_Margarita_of_Leiningen
-    target: Female_Sex
-    relation: :hasSex
-  AddTriple (29f37735-1af1-463c-ae6a-196a39afa200)
- Call ID: 29f37735-1af1-463c-ae6a-196a39afa200
-  Args:
-    source: Gabriele_Renate_Thyssen
-    target: Female_Sex
-    relation: :hasSex
-  AddTriple (44ba23c3-b114-4c67-b1cb-c16ffddd625e)
- Call ID: 44ba23c3-b114-4c67-b1cb-c16ffddd625e
-  Args:
-    relation: :hasSex
-    source: Theresa_Anna_Elisabeth_of_Leiningen
-    target: Female_Sex
-  AddTriple (011c8d05-f043-49a9-a301-e060e06a73d7)
- Call ID: 011c8d05-f043-49a9-a301-e060e06a73d7
-  Args:
-    relation: :hasSex
-    source: Aga_Khan_IV
-    target: Male_Sex
-  AddTriple (1f702982-f765-4410-9823-585a0986d74d)
- Call ID: 1f702982-f765-4410-9823-585a0986d74d
-  Args:
-    relation: :hasSex
-    source: Emich_Albrecht_Karl_of_Leiningen
-    target: Male_Sex
-  AddTriple (6b5a3a84-3104-42d6-847a-8c200256ae36)
- Call ID: 6b5a3a84-3104-42d6-847a-8c200256ae36
-  Args:
-    source: Maria_Vladimirovna_of_Russia
-    target: Female_Sex
-    relation: :hasSex
-  AddTriple (e1780af2-a778-4b30-a78a-0a81529a7be9)
- Call ID: e1780af2-a778-4b30-a78a-0a81529a7be9
-  Args:
-    target: Female_Sex
-    source: Tatiana_Constantinovna_of_Russia
-    relation: :hasSex
-  AddTriple (e0e93803-e5a0-48d8-bf0c-550709919ce1)
- Call ID: e0e93803-e5a0-48d8-bf0c-550709919ce1
-  Args:
-    relation: :hasSex
-    source: Constantine_Bagration_Mukhransky
-    target: Male_Sex
-  AddTriple (f990103e-d000-48fa-8f03-7620a817fc36)
- Call ID: f990103e-d000-48fa-8f03-7620a817fc36
-  Args:
-    relation: :hasSex
-    target: Female_Sex
-    source: Leonida_Bagration_Mukhranskaya
-  Finish (8dce4c98-ab5a-42fb-86da-1a006c5f91ff)
- Call ID: 8dce4c98-ab5a-42fb-86da-1a006c5f91ff
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -938,80 +869,59 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Aga_Khan_IV a :Man ;
-      :hasSex data:Male_Sex .
+  data:Cecilie_of_Greece_and_Denmark a :Person,
+          :Woman ;
+      :hasRelation data:Georg_Donatus_of_Hesse .
 
-  data:Karl_Emich_of_Leiningen a :Man ;
-      :alsoKnownAs "Emperor Nicholas III"^^xsd:string,
-          "Nikolai Kirillovich Romanov"^^xsd:string ;
-      :hasAncestor data:Alexander_II_of_Russia,
-          data:Maria_Kirillovna ;
-      :hasBirthYear 1952 ;
-      :hasBrother data:Andreas_8th_Prince_of_Leiningen ;
-      :hasDaughter data:Cecilia_Marie_Stephanie_Margarita_of_Leiningen,
-          data:Theresa_Anna_Elisabeth_of_Leiningen ;
-      :hasFather data:Emich_7th_Prince_of_Leiningen ;
-      :hasMother data:Duchess_Eilika_of_Oldenburg ;
-      :hasSex data:Male_Sex ;
-      :hasSon data:Emich_Albrecht_Karl_of_Leiningen .
+  data:Frederick_II_of_Hesse-Kassel a :Man,
+          :Person ;
+      :isAncestorOf data:Donatus_of_Hesse,
+          data:Floria_Franziska_von_Faber-Castell .
 
-  data:Leonida_Bagration_Mukhranskaya a :Woman ;
-      :hasSex data:Female_Sex ;
-      :isMotherOf data:Maria_Vladimirovna_of_Russia .
+  data:Mary_of_Great_Britain a :Person,
+          :Woman ;
+      :isAncestorOf data:Donatus_of_Hesse,
+          data:Floria_Franziska_von_Faber-Castell .
 
-  data:Tatiana_Constantinovna_of_Russia a :Woman ;
-      :hasFather data:Constantine_Bagration_Mukhransky ;
-      :hasSex data:Female_Sex .
+  data:Georg_Donatus_of_Hesse a :Man,
+          :Person ;
+      :hasBrother data:Louis_of_Hesse_and_by_Rhine .
 
-  data:Vladimir_Kirillovich_of_Russia a :Man ;
-      :hasSex data:Male_Sex ;
-      :isFatherOf data:Maria_Vladimirovna_of_Russia .
+  data:Hubertus_von_Faber-Castell a :Man,
+          :Person .
 
-  data:Alexander_II_of_Russia a :Man ;
-      :hasSex data:Male_Sex .
+  data:Louis_of_Hesse_and_by_Rhine a :Man,
+          :Person ;
+      :hasDeathYear 1968 ;
+      :hasRelation data:Margaret_Campbell_Geddes .
 
-  data:Andreas_8th_Prince_of_Leiningen a :Man ;
-      :hasSex data:Male_Sex .
+  data:Margaret_Campbell_Geddes a :Person,
+          :Woman .
 
-  data:Cecilia_Marie_Stephanie_Margarita_of_Leiningen a :Woman ;
-      :hasBirthYear 1988 ;
-      :hasSex data:Female_Sex .
+  data:Moritz_of_Hesse a :Man,
+          :Person ;
+      :hasFather data:Philipp_of_Hesse .
 
-  data:Constantine_Bagration_Mukhransky a :Man ;
-      :hasSex data:Male_Sex .
+  data:Philipp_of_Hesse a :Man,
+          :Person ;
+      :hasDeathYear 1980 .
 
-  data:Duchess_Eilika_of_Oldenburg a :Woman ;
-      :hasSex data:Female_Sex .
+  data:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Person,
+          :Woman ;
+      :hasBirthYear 1940 .
 
-  data:Emich_7th_Prince_of_Leiningen a :Man ;
-      :hasSex data:Male_Sex .
+  data:Donatus_of_Hesse a :Man,
+          :Person ;
+      :hasBirthYear 1966 ;
+      :hasFather data:Moritz_of_Hesse ;
+      :hasMarriageYear 2003 ;
+      :hasMother data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+      :hasRelation data:Floria_Franziska_von_Faber-Castell .
 
-  data:Emich_Albrecht_Karl_of_Leiningen a :Man ;
-      :hasBirthYear 2010 ;
-      :hasMother data:Gabriele_Renate_Thyssen ;
-      :hasSex data:Male_Sex .
-
-  data:Kirill_Vladimirovich a :Man ;
-      :hasSex data:Male_Sex .
-
-  data:Maria_Kirillovna a :Woman ;
-      :hasSex data:Female_Sex ;
-      :isChildOf data:Kirill_Vladimirovich .
-
-  data:Theresa_Anna_Elisabeth_of_Leiningen a :Woman ;
-      :hasBirthYear 1992 ;
-      :hasMother data:Gabriele_Renate_Thyssen ;
-      :hasSex data:Female_Sex .
-
-  data:Gabriele_Renate_Thyssen a :Woman ;
-      :hasSex data:Female_Sex .
-
-  data:Maria_Vladimirovna_of_Russia a :Woman ;
-      :hasSex data:Female_Sex .
-
-  data:Female_Sex a :Female .
-
-  data:Male_Sex a :Male .
+  data:Floria_Franziska_von_Faber-Castell a :Person,
+          :Woman ;
+      :hasBirthYear 1974 ;
+      :hasFather data:Hubertus_von_Faber-Castell .
 
 
 
@@ -1023,222 +933,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (ac04533b-778a-4331-b1b3-b60260bfca7f)
- Call ID: ac04533b-778a-4331-b1b3-b60260bfca7f
+  ValidateShacl (8c8d234b-364f-4073-b679-d1b333f45ca6)
+ Call ID: 8c8d234b-364f-4073-b679-d1b333f45ca6
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:26
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Maria_Kirillovna is listed as an ancestor of Karl_Emich_of_Leiningen but lacks the required :Ancestor class.
+      The node Philipp_of_Hesse is currently missing the :Man class required by the hasFather property of Moritz_of_Hesse.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Kirillovna, :Ancestor)
+      AssignClass(node='Philipp_of_Hesse', class=':Man')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Alexander_II_of_Russia is listed as an ancestor of Karl_Emich_of_Leiningen but lacks the required :Ancestor class.
+      The node Moritz_of_Hesse is currently missing the :Man class required by the hasFather property of Donatus_of_Hesse.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_II_of_Russia, :Ancestor)
+      AssignClass(node='Moritz_of_Hesse', class=':Man')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father Emich_7th_Prince_of_Leiningen lacks the mandatory :Ancestor class assignment for the hasFather relationship.
+      The node Tatiana_of_Sayn-Wittgenstein-Berleburg is currently missing the :Woman class required by the hasMother property of Donatus_of_Hesse.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Emich_7th_Prince_of_Leiningen, :Ancestor)
+      AssignClass(node='Tatiana_of_Sayn-Wittgenstein-Berleburg', class=':Woman')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother Gabriele_Renate_Thyssen lacks the mandatory :Ancestor class assignment for the hasMother relationship.
+      The node Hubertus_von_Faber-Castell is currently missing the :Man class required by the hasFather property of Floria_Franziska_von_Faber-Castell.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Gabriele_Renate_Thyssen, :Ancestor)
+      AssignClass(node='Hubertus_von_Faber-Castell', class=':Man')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother Duchess_Eilika_of_Oldenburg lacks the mandatory :Ancestor class assignment for the hasMother relationship.
+      The node Moritz_of_Hesse is currently missing the :Man class required by the hasFather property of Donatus_of_Hesse.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Duchess_Eilika_of_Oldenburg, :Ancestor)
+      AssignClass(node='Moritz_of_Hesse', class=':Man')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Maria_Kirillovna is listed as an ancestor of Karl_Emich_of_Leiningen but lacks the required :Ancestor class.
+      The node Philipp_of_Hesse is currently missing the :Man class required by the hasFather property of Moritz_of_Hesse.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Kirillovna, :Ancestor)
+      AssignClass(node='Philipp_of_Hesse', class=':Man')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Alexander_II_of_Russia is listed as an ancestor of Karl_Emich_of_Leiningen but lacks the required :Ancestor class.
+      The node Tatiana_of_Sayn-Wittgenstein-Berleburg is currently missing the :Woman class required by the hasMother property of Donatus_of_Hesse.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_II_of_Russia, :Ancestor)
+      AssignClass(node='Tatiana_of_Sayn-Wittgenstein-Berleburg', class=':Woman')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Constantine_Bagration_Mukhransky lacks the mandatory :Ancestor class assignment for the hasFather relationship.
+      The node Hubertus_von_Faber-Castell is currently missing the :Man class required by the hasFather property of Floria_Franziska_von_Faber-Castell.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Constantine_Bagration_Mukhransky, :Ancestor)
+      AssignClass(node='Hubertus_von_Faber-Castell', class=':Man')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Emich_7th_Prince_of_Leiningen lacks the mandatory :Ancestor class assignment for the hasFather relationship.
+      The node Moritz_of_Hesse is currently missing the :Man class required by the hasFather property of Donatus_of_Hesse.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Emich_7th_Prince_of_Leiningen, :Ancestor)
+      AssignClass(node='Moritz_of_Hesse', class=':Man')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother Gabriele_Renate_Thyssen lacks the mandatory :Ancestor class assignment for the hasMother relationship.
+      The node Philipp_of_Hesse is currently missing the :Man class required by the hasFather property of Moritz_of_Hesse.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Gabriele_Renate_Thyssen, :Ancestor)
+      AssignClass(node='Philipp_of_Hesse', class=':Man')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother Gabriele_Renate_Thyssen lacks the mandatory :Ancestor class assignment for the hasMother relationship.
+      The node Tatiana_of_Sayn-Wittgenstein-Berleburg is currently missing the :Woman class required by the hasMother property of Donatus_of_Hesse.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Gabriele_Renate_Thyssen, :Ancestor)
+      AssignClass(node='Tatiana_of_Sayn-Wittgenstein-Berleburg', class=':Woman')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Duchess_Eilika_of_Oldenburg lacks the mandatory :Ancestor class assignment for the hasMother relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Duchess_Eilika_of_Oldenburg, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The person Kirill_Vladimirovich is listed as a parent in isChildOf but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Kirill_Vladimirovich, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
-    LLM-provided explanation of the violation:
-      The person Leonida_Bagration_Mukhranskaya is a subject of isMotherOf but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Leonida_Bagration_Mukhranskaya, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The person Maria_Kirillovna is listed as an ancestor of Karl_Emich_of_Leiningen but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Kirillovna, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The person Alexander_II_of_Russia is listed as an ancestor of Karl_Emich_of_Leiningen but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexander_II_of_Russia, :Ancestor)
-
-
-  Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Constantine_Bagration_Mukhransky lacks the mandatory :Ancestor class assignment for the hasFather relationship.
+      The node Hubertus_von_Faber-Castell is currently missing the :Man class required by the hasFather property of Floria_Franziska_von_Faber-Castell.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Constantine_Bagration_Mukhransky, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father Emich_7th_Prince_of_Leiningen lacks the mandatory :Ancestor class assignment for the hasFather relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Emich_7th_Prince_of_Leiningen, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Gabriele_Renate_Thyssen lacks the mandatory :Ancestor class assignment for the hasMother relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Gabriele_Renate_Thyssen, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Gabriele_Renate_Thyssen lacks the mandatory :Ancestor class assignment for the hasMother relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Gabriele_Renate_Thyssen, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Duchess_Eilika_of_Oldenburg lacks the mandatory :Ancestor class assignment for the hasMother relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Duchess_Eilika_of_Oldenburg, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The person Kirill_Vladimirovich is listed as a parent in isChildOf but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Kirill_Vladimirovich, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The person Vladimir_Kirillovich_of_Russia is a subject of isFatherOf but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Vladimir_Kirillovich_of_Russia, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father Constantine_Bagration_Mukhransky lacks the mandatory :Ancestor class assignment for the hasFather relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Constantine_Bagration_Mukhransky, :Ancestor)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Gabriele_Renate_Thyssen lacks the mandatory :Ancestor class assignment for the hasMother relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Gabriele_Renate_Thyssen, :Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The person Kirill_Vladimirovich is listed as a parent in isChildOf but lacks the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Kirill_Vladimirovich, :Ancestor)
+      AssignClass(node='Hubertus_von_Faber-Castell', class=':Man')
 
 
 
@@ -1247,74 +1045,29 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (67546e57-5651-46ea-9d23-271a81875c0b)
- Call ID: 67546e57-5651-46ea-9d23-271a81875c0b
+  AssignClass (b1f15cf4-9681-403c-ad56-e61085d17734)
+ Call ID: b1f15cf4-9681-403c-ad56-e61085d17734
   Args:
+    source: Moritz_of_Hesse
     type: :Ancestor
-    source: Maria_Kirillovna
-  AssignClass (19b8107f-8f6d-4577-9b91-9652a995cc97)
- Call ID: 19b8107f-8f6d-4577-9b91-9652a995cc97
+  AssignClass (4dcd761c-e5cd-4ed9-9447-6583a9cf905d)
+ Call ID: 4dcd761c-e5cd-4ed9-9447-6583a9cf905d
   Args:
+    source: Philipp_of_Hesse
     type: :Ancestor
-    source: Alexander_II_of_Russia
-  AssignClass (7383eb8a-4fef-4324-b3ef-f1d1b63d58f2)
- Call ID: 7383eb8a-4fef-4324-b3ef-f1d1b63d58f2
+  AssignClass (983d31ae-047c-445b-8520-fdedda33dcf7)
+ Call ID: 983d31ae-047c-445b-8520-fdedda33dcf7
   Args:
+    source: Tatiana_of_Sayn-Wittgenstein-Berleburg
     type: :Ancestor
-    source: Emich_7th_Prince_of_Leiningen
-  AssignClass (d1255d92-b209-4c8a-9925-017694d78053)
- Call ID: d1255d92-b209-4c8a-9925-017694d78053
+  AssignClass (01f927f6-8e5b-44b7-9323-81ed1caf55a0)
+ Call ID: 01f927f6-8e5b-44b7-9323-81ed1caf55a0
   Args:
+    source: Hubertus_von_Faber-Castell
     type: :Ancestor
-    source: Gabriele_Renate_Thyssen
-  AssignClass (b22daddc-4ed9-470d-b011-621d1854a53a)
- Call ID: b22daddc-4ed9-470d-b011-621d1854a53a
+  Finish (416d1370-ad37-41ae-8b11-a2f0cef6d248)
+ Call ID: 416d1370-ad37-41ae-8b11-a2f0cef6d248
   Args:
-    type: :Ancestor
-    source: Duchess_Eilika_of_Oldenburg
-  AssignClass (9d8e6d0f-cb1c-4ec0-9249-652d47e9ac42)
- Call ID: 9d8e6d0f-cb1c-4ec0-9249-652d47e9ac42
-  Args:
-    type: :Ancestor
-    source: Constantine_Bagration_Mukhransky
-  AssignClass (fb3b6f29-8c7e-4f8e-aa21-10ac241c0f39)
- Call ID: fb3b6f29-8c7e-4f8e-aa21-10ac241c0f39
-  Args:
-    type: :Ancestor
-    source: Kirill_Vladimirovich
-  AssignClass (7ca43981-684f-4e6f-b92d-5ef55ab4a932)
- Call ID: 7ca43981-684f-4e6f-b92d-5ef55ab4a932
-  Args:
-    type: :Ancestor
-    source: Leonida_Bagration_Mukhranskaya
-  AssignClass (38ec0ad6-9e58-466e-81b0-3ab09891447e)
- Call ID: 38ec0ad6-9e58-466e-81b0-3ab09891447e
-  Args:
-    type: :Ancestor
-    source: Vladimir_Kirillovich_of_Russia
-  ValidateShacl (70094c09-4595-4f38-ab10-d13cb1c7fc34)
- Call ID: 70094c09-4595-4f38-ab10-d13cb1c7fc34
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1335,91 +1088,77 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Aga_Khan_IV a :Man ;
-      :hasSex data:Male_Sex .
-
-  data:Karl_Emich_of_Leiningen a :Man ;
-      :alsoKnownAs "Emperor Nicholas III"^^xsd:string,
-          "Nikolai Kirillovich Romanov"^^xsd:string ;
-      :hasAncestor data:Alexander_II_of_Russia,
-          data:Maria_Kirillovna ;
-      :hasBirthYear 1952 ;
-      :hasBrother data:Andreas_8th_Prince_of_Leiningen ;
-      :hasDaughter data:Cecilia_Marie_Stephanie_Margarita_of_Leiningen,
-          data:Theresa_Anna_Elisabeth_of_Leiningen ;
-      :hasFather data:Emich_7th_Prince_of_Leiningen ;
-      :hasMother data:Duchess_Eilika_of_Oldenburg ;
-      :hasSex data:Male_Sex ;
-      :hasSon data:Emich_Albrecht_Karl_of_Leiningen .
-
-  data:Leonida_Bagration_Mukhranskaya a :Ancestor,
+  data:Cecilie_of_Greece_and_Denmark a :Person,
           :Woman ;
-      :hasSex data:Female_Sex ;
-      :isMotherOf data:Maria_Vladimirovna_of_Russia .
+      :hasRelation data:Georg_Donatus_of_Hesse .
 
-  data:Tatiana_Constantinovna_of_Russia a :Woman ;
-      :hasFather data:Constantine_Bagration_Mukhransky ;
-      :hasSex data:Female_Sex .
+  data:Frederick_II_of_Hesse-Kassel a :Man,
+          :Person ;
+      :isAncestorOf data:Donatus_of_Hesse,
+          data:Floria_Franziska_von_Faber-Castell .
 
-  data:Vladimir_Kirillovich_of_Russia a :Ancestor,
-          :Man ;
-      :hasSex data:Male_Sex ;
-      :isFatherOf data:Maria_Vladimirovna_of_Russia .
-
-  data:Alexander_II_of_Russia a :Ancestor,
-          :Man ;
-      :hasSex data:Male_Sex .
-
-  data:Andreas_8th_Prince_of_Leiningen a :Man ;
-      :hasSex data:Male_Sex .
-
-  data:Cecilia_Marie_Stephanie_Margarita_of_Leiningen a :Woman ;
-      :hasBirthYear 1988 ;
-      :hasSex data:Female_Sex .
-
-  data:Constantine_Bagration_Mukhransky a :Ancestor,
-          :Man ;
-      :hasSex data:Male_Sex .
-
-  data:Duchess_Eilika_of_Oldenburg a :Ancestor,
+  data:Mary_of_Great_Britain a :Person,
           :Woman ;
-      :hasSex data:Female_Sex .
+      :isAncestorOf data:Donatus_of_Hesse,
+          data:Floria_Franziska_von_Faber-Castell .
 
-  data:Emich_7th_Prince_of_Leiningen a :Ancestor,
-          :Man ;
-      :hasSex data:Male_Sex .
+  data:Georg_Donatus_of_Hesse a :Man,
+          :Person ;
+      :hasBrother data:Louis_of_Hesse_and_by_Rhine .
 
-  data:Emich_Albrecht_Karl_of_Leiningen a :Man ;
-      :hasBirthYear 2010 ;
-      :hasMother data:Gabriele_Renate_Thyssen ;
-      :hasSex data:Male_Sex .
+  data:Hubertus_von_Faber-Castell a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Kirill_Vladimirovich a :Ancestor,
-          :Man ;
-      :hasSex data:Male_Sex .
+  data:Louis_of_Hesse_and_by_Rhine a :Man,
+          :Person ;
+      :hasDeathYear 1968 ;
+      :hasRelation data:Margaret_Campbell_Geddes .
 
-  data:Maria_Kirillovna a :Ancestor,
+  data:Margaret_Campbell_Geddes a :Person,
+          :Woman .
+
+  data:Moritz_of_Hesse a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Philipp_of_Hesse .
+
+  data:Philipp_of_Hesse a :Ancestor,
+          :Man,
+          :Person ;
+      :hasDeathYear 1980 .
+
+  data:Tatiana_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+          :Person,
           :Woman ;
-      :hasSex data:Female_Sex ;
-      :isChildOf data:Kirill_Vladimirovich .
+      :hasBirthYear 1940 .
 
-  data:Theresa_Anna_Elisabeth_of_Leiningen a :Woman ;
-      :hasBirthYear 1992 ;
-      :hasMother data:Gabriele_Renate_Thyssen ;
-      :hasSex data:Female_Sex .
+  data:Donatus_of_Hesse a :Man,
+          :Person ;
+      :hasBirthYear 1966 ;
+      :hasFather data:Moritz_of_Hesse ;
+      :hasMarriageYear 2003 ;
+      :hasMother data:Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+      :hasRelation data:Floria_Franziska_von_Faber-Castell .
 
-  data:Gabriele_Renate_Thyssen a :Ancestor,
+  data:Floria_Franziska_von_Faber-Castell a :Person,
           :Woman ;
-      :hasSex data:Female_Sex .
-
-  data:Maria_Vladimirovna_of_Russia a :Woman ;
-      :hasSex data:Female_Sex .
-
-  data:Female_Sex a :Female .
-
-  data:Male_Sex a :Male .
+      :hasBirthYear 1974 ;
+      :hasFather data:Hubertus_von_Faber-Castell .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (0a887b7f-ebde-4650-8bc1-e7d3e50e0ec2)
+ Call ID: 0a887b7f-ebde-4650-8bc1-e7d3e50e0ec2
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1429,6 +1168,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (2fb372a7-8574-4fc9-a9b8-920ebb04ac83)
- Call ID: 2fb372a7-8574-4fc9-a9b8-920ebb04ac83
+  Finish (4225b47b-aad2-4117-9ee5-169870136c21)
+ Call ID: 4225b47b-aad2-4117-9ee5-169870136c21
   Args:

@@ -2,19 +2,18 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Michael a :Man ;
-    :hasRelation data:Princess_Marina .
+data:Marina a :Woman .
 
-data:Prince_Philippos_of_Greece_and_Denmark a :Man ;
+data:Michael a :Man .
+
+data:Philippos_of_Greece_and_Denmark a :Man ;
     :hasBirthYear 1986 ;
-    :hasFather data:King_Constantine_II ;
-    :hasMother data:Queen_Anne-Marie .
+    :hasFather data:Constantine_II ;
+    :hasMother data:Anne-Marie .
 
-data:Queen_Sofia_of_Spain a :Woman .
+data:Sof%C3%ADa_of_Spain a :Woman .
 
-data:King_Constantine_II a :Man .
+data:Anne-Marie a :Woman .
 
-data:Princess_Marina a :Woman .
-
-data:Queen_Anne-Marie a :Woman .
+data:Constantine_II a :Man .
 

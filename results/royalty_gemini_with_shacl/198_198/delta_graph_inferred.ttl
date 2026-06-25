@@ -1,0 +1,274 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jorge_Guillermo a :Man,
+        :Person ;
+    :hasBrother data:Jorge_Guillermo ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Jorge_Guillermo,
+        data:Prince_Bernhard,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Xavier_Duke_of_Parma ;
+    :isBloodrelationOf data:Jorge_Guillermo ;
+    :isBrotherOf data:Jorge_Guillermo ;
+    :isSiblingOf data:Jorge_Guillermo .
+
+data:Queen_Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Irene_of_the_Netherlands ;
+    :hasDaughter data:Princess_Irene_of_the_Netherlands ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Jorge_Guillermo,
+        data:Prince_Bernhard,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Xavier_Duke_of_Parma ;
+    :hasSister data:Queen_Juliana_of_the_Netherlands ;
+    :isAncestorOf data:Princess_Irene_of_the_Netherlands ;
+    :isAuntOf data:Princess_Irene_of_the_Netherlands ;
+    :isBloodrelationOf data:Queen_Juliana_of_the_Netherlands ;
+    :isMotherOf data:Princess_Irene_of_the_Netherlands ;
+    :isParentOf data:Princess_Irene_of_the_Netherlands ;
+    :isSiblingOf data:Queen_Juliana_of_the_Netherlands ;
+    :isSisterOf data:Queen_Juliana_of_the_Netherlands .
+
+data:Xavier_Duke_of_Parma a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Xavier_Duke_of_Parma ;
+    :hasChild data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Jorge_Guillermo,
+        data:Prince_Bernhard,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Xavier_Duke_of_Parma ;
+    :hasSon data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
+    :isAncestorOf data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
+    :isBloodrelationOf data:Xavier_Duke_of_Parma ;
+    :isBrotherOf data:Xavier_Duke_of_Parma ;
+    :isFatherOf data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
+    :isParentOf data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
+    :isSiblingOf data:Xavier_Duke_of_Parma ;
+    :isUncleOf data:Prince_Carlos_Hugo_of_Bourbon-Parma .
+
+data:Armgard_of_Sierstorpff-Cramm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Bernhard ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Jorge_Guillermo,
+        data:Prince_Bernhard,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Xavier_Duke_of_Parma ;
+    :hasSister data:Armgard_of_Sierstorpff-Cramm ;
+    :hasSon data:Prince_Bernhard ;
+    :isAncestorOf data:Prince_Bernhard,
+        data:Princess_Irene_of_the_Netherlands ;
+    :isAuntOf data:Prince_Bernhard ;
+    :isBloodrelationOf data:Armgard_of_Sierstorpff-Cramm ;
+    :isMotherOf data:Prince_Bernhard ;
+    :isParentOf data:Prince_Bernhard ;
+    :isSiblingOf data:Armgard_of_Sierstorpff-Cramm ;
+    :isSisterOf data:Armgard_of_Sierstorpff-Cramm .
+
+data:Prince_Carlos_Hugo_of_Bourbon-Parma a :Man,
+        :Person ;
+    :hasAncestor data:Xavier_Duke_of_Parma ;
+    :hasBrother data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
+    :hasFather data:Xavier_Duke_of_Parma ;
+    :hasParent data:Xavier_Duke_of_Parma ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Jorge_Guillermo,
+        data:Prince_Bernhard,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Xavier_Duke_of_Parma ;
+    :isBloodrelationOf data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
+    :isBrotherOf data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
+    :isChildOf data:Xavier_Duke_of_Parma ;
+    :isSiblingOf data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
+    :isSonOf data:Xavier_Duke_of_Parma .
+
+data:Prince_Bernhard a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Armgard_of_Sierstorpff-Cramm ;
+    :hasBrother data:Prince_Bernhard ;
+    :hasChild data:Princess_Irene_of_the_Netherlands ;
+    :hasDaughter data:Princess_Irene_of_the_Netherlands ;
+    :hasMother data:Armgard_of_Sierstorpff-Cramm ;
+    :hasParent data:Armgard_of_Sierstorpff-Cramm ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Jorge_Guillermo,
+        data:Prince_Bernhard,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Xavier_Duke_of_Parma ;
+    :isAncestorOf data:Princess_Irene_of_the_Netherlands ;
+    :isBloodrelationOf data:Prince_Bernhard ;
+    :isBrotherOf data:Prince_Bernhard ;
+    :isChildOf data:Armgard_of_Sierstorpff-Cramm ;
+    :isFatherOf data:Princess_Irene_of_the_Netherlands ;
+    :isParentOf data:Princess_Irene_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Bernhard ;
+    :isSonOf data:Armgard_of_Sierstorpff-Cramm ;
+    :isUncleOf data:Princess_Irene_of_the_Netherlands .
+
+data:Princess_Beatrix_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Jorge_Guillermo,
+        data:Prince_Bernhard,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Xavier_Duke_of_Parma ;
+    :hasSister data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet ;
+    :isBloodrelationOf data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet ;
+    :isSiblingOf data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet ;
+    :isSisterOf data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet .
+
+data:Princess_Christina a :Person,
+        :Woman ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Jorge_Guillermo,
+        data:Prince_Bernhard,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Xavier_Duke_of_Parma ;
+    :hasSister data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet ;
+    :isBloodrelationOf data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet ;
+    :isSiblingOf data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet ;
+    :isSisterOf data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet .
+
+data:Princess_Margriet a :Person,
+        :Woman ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Jorge_Guillermo,
+        data:Prince_Bernhard,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Xavier_Duke_of_Parma ;
+    :hasSister data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet ;
+    :isBloodrelationOf data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet ;
+    :isSiblingOf data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet ;
+    :isSisterOf data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet .
+
+data:Princess_Irene_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasAncestor data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasBirthYear 1939 ;
+    :hasFather data:Prince_Bernhard ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Queen_Juliana_of_the_Netherlands ;
+    :hasParent data:Prince_Bernhard,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Jorge_Guillermo,
+        data:Prince_Bernhard,
+        data:Prince_Carlos_Hugo_of_Bourbon-Parma,
+        data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet,
+        data:Queen_Juliana_of_the_Netherlands,
+        data:Xavier_Duke_of_Parma ;
+    :hasSister data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet ;
+    :isBloodrelationOf data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet ;
+    :isChildOf data:Prince_Bernhard,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Prince_Bernhard,
+        data:Queen_Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet ;
+    :isSisterOf data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet .
+

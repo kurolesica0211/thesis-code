@@ -7,10 +7,18 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Princess_Chantal-_Duchess_of_Castro a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Prince_Ferdinando-_Duke_of_Castro a :Person ;
+    rdfs:label "Prince Ferdinando, Duke of Castro" ;
+    data:posIndicesFull "58:74",
+        "58:96" ;
+    data:wdtLink wdt:Q2324276 ;
+    :alsoKnownAs "Ferdinando Maria",
+        "Ferdinando Maria Andrea Alfonso Marcus" ;
+    :hasParent data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasSex data:male .
+
+data:Princess_Chantal-_Duchess_of_Castro a :Person ;
     rdfs:label "Princess Chantal, Duchess of Castro" ;
     data:posIndicesFull "411:438" ;
     data:wdtLink wdt:Q3666240 ;
@@ -24,49 +32,19 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Countess_Maria_Carolina_Zamoyska a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Countess_Maria_Carolina_Zamoyska a :Person ;
     rdfs:label "Countess Maria Carolina Zamoyska" ;
     data:posIndicesFull "305:337" ;
     data:wdtLink wdt:Q3847184 ;
-    :hasChild data:Prince_Ferdinando-_Duke_of_Castro ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Ferdinando-_Duke_of_Castro ;
-    :isMotherOf data:Prince_Ferdinando-_Duke_of_Castro ;
-    :isParentOf data:Prince_Ferdinando-_Duke_of_Castro .
+    :hasSex data:female .
 
-data:Prince_Ranieri-_Duke_of_Castro a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Ranieri-_Duke_of_Castro a :Person ;
     rdfs:label "Prince Ranieri, Duke of Castro" ;
     data:posIndicesFull "260:290" ;
     data:wdtLink wdt:Q1943652 ;
-    :hasChild data:Prince_Ferdinando-_Duke_of_Castro ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Ferdinando-_Duke_of_Castro ;
-    :isFatherOf data:Prince_Ferdinando-_Duke_of_Castro ;
-    :isParentOf data:Prince_Ferdinando-_Duke_of_Castro .
+    :hasSex data:male .
 
-data:Prince_Ferdinando-_Duke_of_Castro a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Ferdinando, Duke of Castro" ;
-    data:posIndicesFull "58:74",
-        "58:96" ;
-    data:wdtLink wdt:Q2324276 ;
-    :alsoKnownAs "Ferdinando Maria",
-        "Ferdinando Maria Andrea Alfonso Marcus" ;
-    :hasFather data:Prince_Ranieri-_Duke_of_Castro ;
-    :hasMother data:Countess_Maria_Carolina_Zamoyska ;
-    :hasParent data:Countess_Maria_Carolina_Zamoyska,
-        data:Prince_Ranieri-_Duke_of_Castro ;
-    :hasSex data:male ;
-    :isChildOf data:Countess_Maria_Carolina_Zamoyska,
-        data:Prince_Ranieri-_Duke_of_Castro ;
-    :isSonOf data:Countess_Maria_Carolina_Zamoyska,
-        data:Prince_Ranieri-_Duke_of_Castro .
+data:female a :Female .
+
+data:male a :Male .
 

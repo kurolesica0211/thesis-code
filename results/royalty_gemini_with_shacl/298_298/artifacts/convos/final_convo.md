@@ -85,59 +85,27 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Duchess of Montpensier
+Princess Maria Cristina of Bourbon-Two Sicilies (Full Italian name: Maria Cristina Carolina Pia Carmela Giuseppa Antonia Anna Luitgarda Speranza Lucia Caterina Apollonia Cecilia Agata di Borbone; 10 April 1877 – 4 October 1947) was the titular Grand Duchess of Tuscany from 28 February 1942 to 4 October 1947 as wife of Archduke Peter Ferdinand of Austria, Prince of Tuscany, the titular Grand Duke.
+Family
 
-
-The Count of ÉvreuxThe Countess of Évreux
-
-
-Princess Béatrice
-
-
-The Duke of OrléansThe Duchess of Orléans
-
-
-The Dowager Countess of La Marche
-
-
-The Countess of Schönborn-Buchheim
-
-
-Princess Hélène, Countess of Limburg Stirum
-
-
-The Dowager Duchess of Calabria
-
-
-The Dowager Duchess of Württemberg
-
-
-Princess Claude, Mrs. Gandolfi
-
-
-Princess Chantal, Baroness of Sambucy de Sorgue
-
-
-Diane, Dowager Duchess of Württemberg (née Princess Diane of Orléans; born 24 March 1940) is a French-German painter, sculptor, writer and philanthropist.
-She is the widow of Carl, Duke of Württemberg, head of the House of Württemberg.
-She is the fourth daughter and sixth child of Henri, Count of Paris, Orléanist pretender to the throne of France, and his wife, Princess Isabelle of Orléans-Braganza.
-Early life
-
-Diane was born in Petrópolis, Brazil, the fourth daughter and sixth child of the Orléanist claimant to the French throne, Henri, Count of Paris, and his wife, Princess Isabelle of Orléans-Braganza.
-At the time of her birth, as a claimant to the throne, her father was banned from living in France.
-In 1979, the Duchess established an eponymous foundation, "Diane Herzogin von Württemberg, Prinzessin von Frankreich-Stiftung," to aid disadvantaged children.
+Born into the Sicilian line of an ancient House of Bourbon, Princess Maria Cristina was the fifth child and second eldest daughter of Prince Alfonso of Bourbon-Two Sicilies, Count of Caserta and his wife, Princess Maria Antonietta of Bourbon-Two Sicilies.
 Marriage and issue
 
-In 1956, on a cruise organized by Queen Frederica of Greece, Diane met Duke Carl of Württemberg, son and heir of Philipp Albrecht, Duke of Württemberg, and his wife, Archduchess Rosa of Austria.
-In 1957, her brother, Henri, married Carl's sister, Marie-Thérèse.
-On 21 July 1960, Diane married Carl at Altshausen.
-In 1975, Carl succeeded his father as head of the House of Württemberg.
+Maria Cristina married Archduke Peter Ferdinand of Austria, Prince of Tuscany, fourth child and third son of Ferdinand IV, Grand Duke of Tuscany and his wife Princess Alice of Bourbon-Parma, on 8 November 1900 in Cannes.
+Maria Cristina and Peter Ferdinand had four children:
+
+
+Death
+
+Archduchess Maria Christina died in Landkreis Starnberg, Bavaria, on 4 October 1947, at the age of 70.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -153,39 +121,9 @@ In 1975, Carl succeeded his father as head of the House of Württemberg.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -200,6 +138,23 @@ In 1975, Carl succeeded his father as head of the House of Württemberg.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -217,6 +172,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,29 +254,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -315,6 +277,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -327,6 +297,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -335,17 +307,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -373,6 +347,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -388,175 +446,117 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9f1c3251-99e4-4926-b750-8de0fc226305)
- Call ID: 9f1c3251-99e4-4926-b750-8de0fc226305
-  Args:
-    source: Diane_of_Orleans
-    type: :Person
-  AssignClass (acac1f8f-c2b2-4bbd-b838-af93e0aa61a9)
- Call ID: acac1f8f-c2b2-4bbd-b838-af93e0aa61a9
-  Args:
-    source: Diane_of_Orleans
-    type: :Woman
-  AssignClass (e980ec53-a39e-41c7-a431-725c66b5191d)
- Call ID: e980ec53-a39e-41c7-a431-725c66b5191d
-  Args:
-    type: :Person
-    source: Carl_Duke_of_Wurttemberg
-  AssignClass (6a262474-2ba1-4d87-a987-d6bced99e0ec)
- Call ID: 6a262474-2ba1-4d87-a987-d6bced99e0ec
-  Args:
-    type: :Man
-    source: Carl_Duke_of_Wurttemberg
-  AssignClass (5c0280b9-53be-4a52-82ed-dcf91bb1c077)
- Call ID: 5c0280b9-53be-4a52-82ed-dcf91bb1c077
-  Args:
-    type: :Person
-    source: Henri_Count_of_Paris
-  AssignClass (0f8bf97c-1140-4062-a99a-4c8c14def0e6)
- Call ID: 0f8bf97c-1140-4062-a99a-4c8c14def0e6
-  Args:
-    source: Henri_Count_of_Paris
-    type: :Man
-  AssignClass (da4efe6e-77a0-4a00-916d-73a301df85e5)
- Call ID: da4efe6e-77a0-4a00-916d-73a301df85e5
-  Args:
-    source: Isabelle_of_Orleans_Braganza
-    type: :Person
-  AssignClass (da337dab-8e35-44eb-8f6a-3ddfb2373afa)
- Call ID: da337dab-8e35-44eb-8f6a-3ddfb2373afa
+  AssignClass (28184c03-11c8-4e69-840f-034a3367a8f3)
+ Call ID: 28184c03-11c8-4e69-840f-034a3367a8f3
   Args:
     type: :Woman
-    source: Isabelle_of_Orleans_Braganza
-  AssignClass (65e826b2-c4e0-4cb8-a65c-5f91ba17a1cc)
- Call ID: 65e826b2-c4e0-4cb8-a65c-5f91ba17a1cc
+    source: :Maria_Cristina_of_Bourbon-Two_Sicilies
+  AssignClass (244427cf-3987-4563-a495-a766e5448cd4)
+ Call ID: 244427cf-3987-4563-a495-a766e5448cd4
   Args:
+    source: :Maria_Cristina_of_Bourbon-Two_Sicilies
     type: :Person
-    source: Philipp_Albrecht_Duke_of_Wurttemberg
-  AssignClass (f5b8f362-60c5-4640-b69b-b423dd842cf6)
- Call ID: f5b8f362-60c5-4640-b69b-b423dd842cf6
+  AddLiteral (45367e4e-ba2a-4dfd-8938-4e9df3c3194c)
+ Call ID: 45367e4e-ba2a-4dfd-8938-4e9df3c3194c
   Args:
-    type: :Man
-    source: Philipp_Albrecht_Duke_of_Wurttemberg
-  AssignClass (b60589a5-06eb-4d3c-a8a4-d7107b7d8f3d)
- Call ID: b60589a5-06eb-4d3c-a8a4-d7107b7d8f3d
-  Args:
-    source: Rosa_of_Austria
-    type: :Person
-  AssignClass (c31d4beb-4f4e-45f6-99e4-a38c5d70f5de)
- Call ID: c31d4beb-4f4e-45f6-99e4-a38c5d70f5de
-  Args:
-    type: :Woman
-    source: Rosa_of_Austria
-  AssignClass (22414ae5-773c-415f-8a87-114954c12bf9)
- Call ID: 22414ae5-773c-415f-8a87-114954c12bf9
-  Args:
-    type: :Person
-    source: Henri_son_of_Henri
-  AssignClass (8a3e7ea2-efa1-421f-beb1-c125d79f622a)
- Call ID: 8a3e7ea2-efa1-421f-beb1-c125d79f622a
-  Args:
-    type: :Man
-    source: Henri_son_of_Henri
-  AssignClass (9d5387d3-8b6a-4704-85e8-999aff6c2e39)
- Call ID: 9d5387d3-8b6a-4704-85e8-999aff6c2e39
-  Args:
-    source: Marie_Therese
-    type: :Person
-  AssignClass (18e2cb19-d6cf-4482-9396-bab7c02af1bc)
- Call ID: 18e2cb19-d6cf-4482-9396-bab7c02af1bc
-  Args:
-    type: :Woman
-    source: Marie_Therese
-  AddLiteral (da960352-b4be-440c-b42c-bedb37ba8584)
- Call ID: da960352-b4be-440c-b42c-bedb37ba8584
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1940
-    source: Diane_of_Orleans
     relation: :hasBirthYear
-  AddLiteral (0be89f4c-1ef3-4549-9388-265269490f30)
- Call ID: 0be89f4c-1ef3-4549-9388-265269490f30
-  Args:
-    literal_value: 1960
-    source: Diane_of_Orleans
+    source: :Maria_Cristina_of_Bourbon-Two_Sicilies
+    literal_value: 1877
     literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AddTriple (464bc2df-546d-4f7a-a9fe-29be22c2efcf)
- Call ID: 464bc2df-546d-4f7a-a9fe-29be22c2efcf
+  AddLiteral (b7524c6d-8254-443b-8abd-b70bef2a1e08)
+ Call ID: b7524c6d-8254-443b-8abd-b70bef2a1e08
   Args:
+    literal_type: xsd:integer
+    literal_value: 1947
+    relation: :hasDeathYear
+    source: :Maria_Cristina_of_Bourbon-Two_Sicilies
+  AssignClass (0e99a143-fdc4-4bb2-9263-2f42279cae89)
+ Call ID: 0e99a143-fdc4-4bb2-9263-2f42279cae89
+  Args:
+    type: :Man
+    source: :Alfonso_of_Bourbon-Two_Sicilies
+  AssignClass (8c77c89b-4986-49de-bb36-5322fe007c75)
+ Call ID: 8c77c89b-4986-49de-bb36-5322fe007c75
+  Args:
+    type: :Person
+    source: :Alfonso_of_Bourbon-Two_Sicilies
+  AssignClass (c76b1d49-0306-4496-a1be-86c63d6815cd)
+ Call ID: c76b1d49-0306-4496-a1be-86c63d6815cd
+  Args:
+    source: :Maria_Antonietta_of_Bourbon-Two_Sicilies
+    type: :Woman
+  AssignClass (362e10ea-cdb4-4073-9a24-fd3bf0bb713f)
+ Call ID: 362e10ea-cdb4-4073-9a24-fd3bf0bb713f
+  Args:
+    type: :Person
+    source: :Maria_Antonietta_of_Bourbon-Two_Sicilies
+  AddTriple (ebdb4a7f-daa5-48ad-8fd0-6c79a678ac28)
+ Call ID: ebdb4a7f-daa5-48ad-8fd0-6c79a678ac28
+  Args:
+    source: :Maria_Cristina_of_Bourbon-Two_Sicilies
     relation: :hasFather
-    target: Henri_Count_of_Paris
-    source: Diane_of_Orleans
-  AddTriple (d74d1930-4290-4cb0-8968-9b9febabe82a)
- Call ID: d74d1930-4290-4cb0-8968-9b9febabe82a
+    target: :Alfonso_of_Bourbon-Two_Sicilies
+  AddTriple (d2559973-cc05-45e0-8cc0-7f26b1175d58)
+ Call ID: d2559973-cc05-45e0-8cc0-7f26b1175d58
   Args:
-    source: Diane_of_Orleans
-    target: Isabelle_of_Orleans_Braganza
+    source: :Maria_Cristina_of_Bourbon-Two_Sicilies
     relation: :hasMother
-  AddTriple (aef1fe89-142c-4a3d-b2d7-fce8e2e14059)
- Call ID: aef1fe89-142c-4a3d-b2d7-fce8e2e14059
+    target: :Maria_Antonietta_of_Bourbon-Two_Sicilies
+  AssignClass (565e5b80-712b-4d20-a9ca-9a6693a195f1)
+ Call ID: 565e5b80-712b-4d20-a9ca-9a6693a195f1
   Args:
-    source: Carl_Duke_of_Wurttemberg
+    source: :Peter_Ferdinand_of_Austria
+    type: :Man
+  AssignClass (5211406d-f82a-4fd7-9e2d-01e947049cfa)
+ Call ID: 5211406d-f82a-4fd7-9e2d-01e947049cfa
+  Args:
+    type: :Person
+    source: :Peter_Ferdinand_of_Austria
+  AddTriple (de4190b5-6bc3-45cb-b9d2-9f3951e45768)
+ Call ID: de4190b5-6bc3-45cb-b9d2-9f3951e45768
+  Args:
+    source: :Maria_Cristina_of_Bourbon-Two_Sicilies
+    relation: :hasRelation
+    target: :Peter_Ferdinand_of_Austria
+  AddLiteral (55b11a0d-23d8-4b04-be8c-ef703f690333)
+ Call ID: 55b11a0d-23d8-4b04-be8c-ef703f690333
+  Args:
+    source: :Maria_Cristina_of_Bourbon-Two_Sicilies
+    relation: :hasMarriageYear
+    literal_value: 1900
+    literal_type: xsd:integer
+  AssignClass (dd4ccf2e-a0c5-4d1c-b95e-c191d466895a)
+ Call ID: dd4ccf2e-a0c5-4d1c-b95e-c191d466895a
+  Args:
+    source: :Ferdinand_IV_of_Tuscany
+    type: :Man
+  AssignClass (9fd3f13b-6963-413c-a1f9-41209121cb60)
+ Call ID: 9fd3f13b-6963-413c-a1f9-41209121cb60
+  Args:
+    source: :Ferdinand_IV_of_Tuscany
+    type: :Person
+  AssignClass (f9bbd41b-4803-4b39-a836-1e3a12f01ab5)
+ Call ID: f9bbd41b-4803-4b39-a836-1e3a12f01ab5
+  Args:
+    source: :Alice_of_Bourbon-Parma
+    type: :Woman
+  AssignClass (98992cf8-057f-4d11-b091-2476642f8fed)
+ Call ID: 98992cf8-057f-4d11-b091-2476642f8fed
+  Args:
+    type: :Person
+    source: :Alice_of_Bourbon-Parma
+  AddTriple (6cdf54a7-03ba-4016-898c-ef95e6be5cb8)
+ Call ID: 6cdf54a7-03ba-4016-898c-ef95e6be5cb8
+  Args:
+    source: :Peter_Ferdinand_of_Austria
     relation: :hasFather
-    target: Philipp_Albrecht_Duke_of_Wurttemberg
-  AddTriple (91bca5c3-f360-48bf-be58-454119f5cfd4)
- Call ID: 91bca5c3-f360-48bf-be58-454119f5cfd4
+    target: :Ferdinand_IV_of_Tuscany
+  AddTriple (1e5113da-84dd-4022-9be5-1c6e8ac9cc5c)
+ Call ID: 1e5113da-84dd-4022-9be5-1c6e8ac9cc5c
   Args:
-    target: Rosa_of_Austria
+    source: :Peter_Ferdinand_of_Austria
     relation: :hasMother
-    source: Carl_Duke_of_Wurttemberg
-  AddTriple (774d56c8-e2c8-40c9-bb9c-52e5fcc3a8af)
- Call ID: 774d56c8-e2c8-40c9-bb9c-52e5fcc3a8af
-  Args:
-    source: Diane_of_Orleans
-    relation: :hasBrother
-    target: Henri_son_of_Henri
-  AddTriple (82a3f7bd-ee1a-4daa-a8c2-b000f6427247)
- Call ID: 82a3f7bd-ee1a-4daa-a8c2-b000f6427247
-  Args:
-    source: Carl_Duke_of_Wurttemberg
-    relation: :hasSister
-    target: Marie_Therese
-  AddTriple (2c207469-4ff6-4c73-abc8-4ce131943769)
- Call ID: 2c207469-4ff6-4c73-abc8-4ce131943769
-  Args:
-    source: Henri_son_of_Henri
-    target: Marie_Therese
-    relation: :hasMarriageYear
-  AddTriple (8ba89e60-1325-4086-98a4-b264477fb2e4)
- Call ID: 8ba89e60-1325-4086-98a4-b264477fb2e4
-  Args:
-    relation: :hasMarriageYear
-    target: Carl_Duke_of_Wurttemberg
-    source: Diane_of_Orleans
-  Finish (91b0fd9f-bddc-49af-ac89-aca6084bf37a)
- Call ID: 91b0fd9f-bddc-49af-ac89-aca6084bf37a
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    target: :Alice_of_Bourbon-Parma
 
 ================================= Tool Message =================================
 
@@ -641,41 +641,41 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Diane_of_Orleans a :Person,
+  data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,
           :Woman ;
-      :hasBirthYear 1940 ;
-      :hasBrother data:Henri_son_of_Henri ;
-      :hasFather data:Henri_Count_of_Paris ;
-      :hasMarriageYear data:Carl_Duke_of_Wurttemberg,
-          1960 ;
-      :hasMother data:Isabelle_of_Orleans_Braganza .
+      :hasBirthYear 1877 ;
+      :hasDeathYear 1947 ;
+      :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
+      :hasMarriageYear 1900 ;
+      :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+      :hasRelation data:Peter_Ferdinand_of_Austria .
 
-  data:Carl_Duke_of_Wurttemberg a :Man,
-          :Person ;
-      :hasFather data:Philipp_Albrecht_Duke_of_Wurttemberg ;
-      :hasMother data:Rosa_of_Austria ;
-      :hasSister data:Marie_Therese .
-
-  data:Henri_Count_of_Paris a :Man,
+  data:Alfonso_of_Bourbon-Two_Sicilies a :Man,
           :Person .
 
-  data:Henri_son_of_Henri a :Man,
-          :Person ;
-      :hasMarriageYear data:Marie_Therese .
-
-  data:Isabelle_of_Orleans_Braganza a :Person,
+  data:Alice_of_Bourbon-Parma a :Person,
           :Woman .
 
-  data:Philipp_Albrecht_Duke_of_Wurttemberg a :Man,
+  data:Ferdinand_IV_of_Tuscany a :Man,
           :Person .
 
-  data:Rosa_of_Austria a :Person,
+  data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,
           :Woman .
 
-  data:Marie_Therese a :Person,
-          :Woman .
+  data:Peter_Ferdinand_of_Austria a :Man,
+          :Person ;
+      :hasFather data:Ferdinand_IV_of_Tuscany ;
+      :hasMother data:Alice_of_Bourbon-Parma .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (1ec3ee79-7cd4-4089-84f7-3d741500073f)
+ Call ID: 1ec3ee79-7cd4-4089-84f7-3d741500073f
+  Args:
 
 ================================= Tool Message =================================
 
@@ -685,8 +685,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (b841ea5d-09e3-407b-8bf7-eca3d76c3ba6)
- Call ID: b841ea5d-09e3-407b-8bf7-eca3d76c3ba6
+  ValidateShacl (1007e83f-767a-4050-a8c6-654d73688faa)
+ Call ID: 1007e83f-767a-4050-a8c6-654d73688faa
   Args:
 
 ================================= Tool Message =================================
@@ -698,97 +698,97 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person 'Philipp_Albrecht_Duke_of_Wurttemberg', acting as the father of 'Carl_Duke_of_Wurttemberg', is missing the required class ':Ancestor'.
+      The value 'Ferdinand_IV_of_Tuscany' for 'hasFather' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Philipp_Albrecht_Duke_of_Wurttemberg', class=':Ancestor')
+      AssignClass(node='Ferdinand_IV_of_Tuscany', class=':Man')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person 'Rosa_of_Austria', acting as the mother of 'Carl_Duke_of_Wurttemberg', is missing the required class ':Ancestor'.
+      The value 'Alice_of_Bourbon-Parma' for 'hasMother' is not classified as an ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Rosa_of_Austria', class=':Ancestor')
+      AssignClass(node='Alice_of_Bourbon-Parma', class=':Woman')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person 'Philipp_Albrecht_Duke_of_Wurttemberg', acting as the father of 'Carl_Duke_of_Wurttemberg', is missing the required class ':Ancestor'.
+      The value 'Alfonso_of_Bourbon-Two_Sicilies' for 'hasFather' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Philipp_Albrecht_Duke_of_Wurttemberg', class=':Ancestor')
+      AssignClass(node='Alfonso_of_Bourbon-Two_Sicilies', class=':Man')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person 'Henri_Count_of_Paris', acting as the father of 'Diane_of_Orleans', is missing the required class ':Ancestor'.
+      The value 'Ferdinand_IV_of_Tuscany' for 'hasFather' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
+      AssignClass(node='Ferdinand_IV_of_Tuscany', class=':Man')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person 'Rosa_of_Austria', acting as the mother of 'Carl_Duke_of_Wurttemberg', is missing the required class ':Ancestor'.
+      The value 'Maria_Antonietta_of_Bourbon-Two_Sicilies' for 'hasMother' is not classified as an ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Rosa_of_Austria', class=':Ancestor')
+      AssignClass(node='Maria_Antonietta_of_Bourbon-Two_Sicilies', class=':Woman')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person 'Isabelle_of_Orleans_Braganza', acting as the mother of 'Diane_of_Orleans', is missing the required class ':Ancestor'.
+      The value 'Alice_of_Bourbon-Parma' for 'hasMother' is not classified as an ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Isabelle_of_Orleans_Braganza', class=':Ancestor')
+      AssignClass(node='Alice_of_Bourbon-Parma', class=':Woman')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person 'Philipp_Albrecht_Duke_of_Wurttemberg', acting as the father of 'Carl_Duke_of_Wurttemberg', is missing the required class ':Ancestor'.
+      The value 'Alfonso_of_Bourbon-Two_Sicilies' for 'hasFather' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Philipp_Albrecht_Duke_of_Wurttemberg', class=':Ancestor')
+      AssignClass(node='Alfonso_of_Bourbon-Two_Sicilies', class=':Man')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person 'Henri_Count_of_Paris', acting as the father of 'Diane_of_Orleans', is missing the required class ':Ancestor'.
+      The value 'Ferdinand_IV_of_Tuscany' for 'hasFather' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
+      AssignClass(node='Ferdinand_IV_of_Tuscany', class=':Man')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person 'Rosa_of_Austria', acting as the mother of 'Carl_Duke_of_Wurttemberg', is missing the required class ':Ancestor'.
+      The value 'Maria_Antonietta_of_Bourbon-Two_Sicilies' for 'hasMother' is not classified as an ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Rosa_of_Austria', class=':Ancestor')
+      AssignClass(node='Maria_Antonietta_of_Bourbon-Two_Sicilies', class=':Woman')
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person 'Isabelle_of_Orleans_Braganza', acting as the mother of 'Diane_of_Orleans', is missing the required class ':Ancestor'.
+      The value 'Alice_of_Bourbon-Parma' for 'hasMother' is not classified as an ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Isabelle_of_Orleans_Braganza', class=':Ancestor')
+      AssignClass(node='Alice_of_Bourbon-Parma', class=':Woman')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person 'Henri_Count_of_Paris', acting as the father of 'Diane_of_Orleans', is missing the required class ':Ancestor'.
+      The value 'Alfonso_of_Bourbon-Two_Sicilies' for 'hasFather' is not classified as an ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Henri_Count_of_Paris', class=':Ancestor')
+      AssignClass(node='Alfonso_of_Bourbon-Two_Sicilies', class=':Man')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person 'Isabelle_of_Orleans_Braganza', acting as the mother of 'Diane_of_Orleans', is missing the required class ':Ancestor'.
+      The value 'Maria_Antonietta_of_Bourbon-Two_Sicilies' for 'hasMother' is not classified as an ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Isabelle_of_Orleans_Braganza', class=':Ancestor')
+      AssignClass(node='Maria_Antonietta_of_Bourbon-Two_Sicilies', class=':Woman')
 
 
 
@@ -797,29 +797,26 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (abf24996-451a-4dfa-9db0-93d356a58fbb)
- Call ID: abf24996-451a-4dfa-9db0-93d356a58fbb
+  AssignClass (3d74c2d1-7a9c-4062-9595-e909f956b2de)
+ Call ID: 3d74c2d1-7a9c-4062-9595-e909f956b2de
   Args:
+    source: :Alfonso_of_Bourbon-Two_Sicilies
     type: :Ancestor
-    source: Philipp_Albrecht_Duke_of_Wurttemberg
-  AssignClass (ac1d137b-fce0-4546-8c6f-075b5341b401)
- Call ID: ac1d137b-fce0-4546-8c6f-075b5341b401
+  AssignClass (951d6c5c-caa8-40e5-be2f-f298e7a8c6e0)
+ Call ID: 951d6c5c-caa8-40e5-be2f-f298e7a8c6e0
   Args:
+    source: :Maria_Antonietta_of_Bourbon-Two_Sicilies
     type: :Ancestor
-    source: Rosa_of_Austria
-  AssignClass (eda79045-7a24-4232-afec-64cfea3208f6)
- Call ID: eda79045-7a24-4232-afec-64cfea3208f6
+  AssignClass (9b1c5b2c-e1cb-4e78-91df-9decb8c38bcb)
+ Call ID: 9b1c5b2c-e1cb-4e78-91df-9decb8c38bcb
   Args:
+    source: :Ferdinand_IV_of_Tuscany
     type: :Ancestor
-    source: Henri_Count_of_Paris
-  AssignClass (918d4101-bbe8-428d-874b-d1a4753cb519)
- Call ID: 918d4101-bbe8-428d-874b-d1a4753cb519
+  AssignClass (1dbac9d7-ba2b-4450-86a1-3d14f2d9605d)
+ Call ID: 1dbac9d7-ba2b-4450-86a1-3d14f2d9605d
   Args:
+    source: :Alice_of_Bourbon-Parma
     type: :Ancestor
-    source: Isabelle_of_Orleans_Braganza
-  ValidateShacl (75659831-2750-44b6-b786-30ee3ef60a55)
- Call ID: 75659831-2750-44b6-b786-30ee3ef60a55
-  Args:
 
 ================================= Tool Message =================================
 
@@ -840,45 +837,45 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Diane_of_Orleans a :Person,
+  data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,
           :Woman ;
-      :hasBirthYear 1940 ;
-      :hasBrother data:Henri_son_of_Henri ;
-      :hasFather data:Henri_Count_of_Paris ;
-      :hasMarriageYear data:Carl_Duke_of_Wurttemberg,
-          1960 ;
-      :hasMother data:Isabelle_of_Orleans_Braganza .
+      :hasBirthYear 1877 ;
+      :hasDeathYear 1947 ;
+      :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
+      :hasMarriageYear 1900 ;
+      :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+      :hasRelation data:Peter_Ferdinand_of_Austria .
 
-  data:Carl_Duke_of_Wurttemberg a :Man,
-          :Person ;
-      :hasFather data:Philipp_Albrecht_Duke_of_Wurttemberg ;
-      :hasMother data:Rosa_of_Austria ;
-      :hasSister data:Marie_Therese .
-
-  data:Henri_Count_of_Paris a :Ancestor,
+  data:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
           :Man,
           :Person .
 
-  data:Henri_son_of_Henri a :Man,
-          :Person ;
-      :hasMarriageYear data:Marie_Therese .
-
-  data:Isabelle_of_Orleans_Braganza a :Ancestor,
+  data:Alice_of_Bourbon-Parma a :Ancestor,
           :Person,
           :Woman .
 
-  data:Philipp_Albrecht_Duke_of_Wurttemberg a :Ancestor,
+  data:Ferdinand_IV_of_Tuscany a :Ancestor,
           :Man,
           :Person .
 
-  data:Rosa_of_Austria a :Ancestor,
+  data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
           :Person,
           :Woman .
 
-  data:Marie_Therese a :Person,
-          :Woman .
+  data:Peter_Ferdinand_of_Austria a :Man,
+          :Person ;
+      :hasFather data:Ferdinand_IV_of_Tuscany ;
+      :hasMother data:Alice_of_Bourbon-Parma .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (26ad748a-fffc-4274-9702-6721fc7e2d94)
+ Call ID: 26ad748a-fffc-4274-9702-6721fc7e2d94
+  Args:
 
 ================================= Tool Message =================================
 
@@ -888,6 +885,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ef3089a9-1fa3-4973-8b3f-01175d1dc8c2)
- Call ID: ef3089a9-1fa3-4973-8b3f-01175d1dc8c2
+  Finish (1430083e-9574-4896-8fd3-790b549abb82)
+ Call ID: 1430083e-9574-4896-8fd3-790b549abb82
   Args:

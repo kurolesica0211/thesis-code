@@ -1,0 +1,426 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Annette_Sekreve a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1972 ;
+    :hasChild data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasDaughter data:Isabella_Lily_Juliana_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSex data:Female ;
+    :hasSister data:Annette_Sekreve ;
+    :hasSon data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isAncestorOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isAuntOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isBloodrelationOf data:Annette_Sekreve ;
+    :isMotherOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isParentOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isSiblingOf data:Annette_Sekreve ;
+    :isSisterOf data:Annette_Sekreve .
+
+data:Pieter_van_Vollenhoven a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasChild data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :hasRelation data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSex data:Male ;
+    :hasSon data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isAncestorOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isFatherOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isParentOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isSiblingOf data:Pieter_van_Vollenhoven ;
+    :isUncleOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan .
+
+data:Princess_Margriet a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :hasRelation data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSex data:Female ;
+    :hasSister data:Princess_Margriet ;
+    :hasSon data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isAncestorOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isAuntOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isBloodrelationOf data:Princess_Margriet ;
+    :isMotherOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isParentOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isSiblingOf data:Princess_Margriet ;
+    :isSisterOf data:Princess_Margriet .
+
+data:Benjamin_Pieter_Floris_van_Vollenhoven a :Man,
+        :Person ;
+    :hasAncestor data:Annette_Sekreve,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasBirthYear 2008 ;
+    :hasBrother data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasFather data:Prince_Bernhard_van_Vollenhoven ;
+    :hasMother data:Annette_Sekreve ;
+    :hasParent data:Annette_Sekreve,
+        data:Prince_Bernhard_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Princess_Margriet,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSex data:Male ;
+    :hasSister data:Isabella_Lily_Juliana_van_Vollenhoven ;
+    :isBloodrelationOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isBrotherOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isChildOf data:Annette_Sekreve,
+        data:Prince_Bernhard_van_Vollenhoven ;
+    :isSiblingOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isSonOf data:Annette_Sekreve,
+        data:Prince_Bernhard_van_Vollenhoven .
+
+data:Prince_Floris a :Man,
+        :Person ;
+    :hasAncestor data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasBrother data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasRelation data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isBrotherOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isChildOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :isSiblingOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isSonOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :isUncleOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven .
+
+data:Prince_Maurits a :Man,
+        :Person ;
+    :hasAncestor data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasBrother data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasRelation data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isBrotherOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isChildOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :isSiblingOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isSonOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :isUncleOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven .
+
+data:Prince_Pieter-Christiaan a :Man,
+        :Person ;
+    :hasAncestor data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasBrother data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasRelation data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isBrotherOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isChildOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :isSiblingOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isSonOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :isUncleOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven .
+
+data:Isabella_Lily_Juliana_van_Vollenhoven a :Person,
+        :Woman ;
+    :hasAncestor data:Annette_Sekreve,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasBirthYear 2002 ;
+    :hasBrother data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasFather data:Prince_Bernhard_van_Vollenhoven ;
+    :hasMother data:Annette_Sekreve ;
+    :hasParent data:Annette_Sekreve,
+        data:Prince_Bernhard_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSex data:Female ;
+    :hasSister data:Isabella_Lily_Juliana_van_Vollenhoven ;
+    :isBloodrelationOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isChildOf data:Annette_Sekreve,
+        data:Prince_Bernhard_van_Vollenhoven ;
+    :isDaughterOf data:Annette_Sekreve,
+        data:Prince_Bernhard_van_Vollenhoven ;
+    :isSiblingOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isSisterOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven .
+
+data:Samuel_Bernhard_Louis_van_Vollenhoven a :Man,
+        :Person ;
+    :hasAncestor data:Annette_Sekreve,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasBirthYear 2004 ;
+    :hasBrother data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasFather data:Prince_Bernhard_van_Vollenhoven ;
+    :hasMother data:Annette_Sekreve ;
+    :hasParent data:Annette_Sekreve,
+        data:Prince_Bernhard_van_Vollenhoven ;
+    :hasRelation data:Annette_Sekreve,
+        data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSex data:Male ;
+    :hasSister data:Isabella_Lily_Juliana_van_Vollenhoven ;
+    :isBloodrelationOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isBrotherOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isChildOf data:Annette_Sekreve,
+        data:Prince_Bernhard_van_Vollenhoven ;
+    :isSiblingOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isSonOf data:Annette_Sekreve,
+        data:Prince_Bernhard_van_Vollenhoven .
+
+data:Prince_Bernhard_van_Vollenhoven a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :hasChild data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasDaughter data:Isabella_Lily_Juliana_van_Vollenhoven ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMother data:Princess_Margriet ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasRelation data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan,
+        data:Princess_Margriet,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :hasSex data:Male ;
+    :hasSon data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isAncestorOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isBloodrelationOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isBrotherOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isChildOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :isFatherOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isParentOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven ;
+    :isSiblingOf data:Prince_Bernhard_van_Vollenhoven,
+        data:Prince_Floris,
+        data:Prince_Maurits,
+        data:Prince_Pieter-Christiaan ;
+    :isSonOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :isUncleOf data:Benjamin_Pieter_Floris_van_Vollenhoven,
+        data:Isabella_Lily_Juliana_van_Vollenhoven,
+        data:Samuel_Bernhard_Louis_van_Vollenhoven .
+

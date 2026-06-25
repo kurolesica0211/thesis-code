@@ -7,32 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Irakli_Bagration_of_Mukhrani a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Irakli Bagration of Mukhrani" ;
-    data:posIndicesFull "284:312" ;
-    data:posIndicesPart "478:487",
-        "516:525" ;
-    data:wdtLink wdt:Q2576581 ;
-    :alsoKnownAs "Irakli Bagration-Mukhraneli",
-        "Prince Irakli Georgeievich Bagration-Moukhransky" ;
-    :hasChild data:Mariam_de_Bagration ;
-    :hasDaughter data:Mariam_de_Bagration ;
-    :hasSex data:male ;
-    :isFatherOf data:Mariam_de_Bagration ;
-    :isParentOf data:Mariam_de_Bagration .
-
-data:Mariam_de_Bagration a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Mariam_de_Bagration a :Person ;
     rdfs:label "Mariam de Bagration" ;
     data:posIndicesFull "75:103",
         "84:103" ;
@@ -42,9 +17,26 @@ data:Mariam_de_Bagration a :Person,
     data:wdtLink wdt:Q16115785 ;
     :alsoKnownAs "Princess Maria de la Paz Bagration-Moukhranskaya",
         "Princess Mariam de Bagration" ;
-    :hasFather data:Irakli_Bagration_of_Mukhrani ;
     :hasParent data:Irakli_Bagration_of_Mukhrani ;
-    :hasSex data:female ;
-    :isChildOf data:Irakli_Bagration_of_Mukhrani ;
-    :isDaughterOf data:Irakli_Bagration_of_Mukhrani .
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Irakli_Bagration_of_Mukhrani a :Person ;
+    rdfs:label "Irakli Bagration of Mukhrani" ;
+    data:posIndicesFull "284:312" ;
+    data:posIndicesPart "478:487",
+        "516:525" ;
+    data:wdtLink wdt:Q2576581 ;
+    :alsoKnownAs "Irakli Bagration-Mukhraneli",
+        "Prince Irakli Georgeievich Bagration-Moukhransky" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

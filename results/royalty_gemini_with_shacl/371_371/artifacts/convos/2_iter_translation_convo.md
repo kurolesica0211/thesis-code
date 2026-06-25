@@ -30,22 +30,22 @@ The SHACL validation process has identified the following violations in the curr
 ---
 ### Violations:
 VALIDATION RESULTS
-Total violations:8
+Total violations:7
 Violations:
 
   Violation [1]:
     Severity: Violation
-    Focus node: David_Henry_George_Lascelles
-    Path: hasSex
-    Value: Male
+    Focus node: John_Albert_of_Mecklenburg
+    Path: hasFather
+    Value: Frederick_Francis_II_of_Mecklenburg
     Constraint: ClassConstraintComponent
     Source shape:
-      :Man-hasSex a sh:PropertyShape ;
-          dash:hasValueWithClass :Male ;
-          sh:class :Sex ;
+      :Person-hasFather a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Man ;
           sh:maxCount 1 ;
-          sh:path :hasSex .
-    SHACL message: Value does not have class :Sex
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -77,11 +77,14 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :hasSex a owl:FunctionalProperty,
+      :hasFather a owl:FunctionalProperty,
               owl:ObjectProperty ;
           rdfs:domain :Person ;
-          rdfs:range :Sex .
-    Classes assigned to the value node: []
+          rdfs:range :Ancestor,
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
+    Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
         :Man a owl:Class ;
@@ -115,16 +118,17 @@ Violations:
 
   Violation [2]:
     Severity: Violation
-    Focus node: David_Henry_George_Lascelles
-    Path: hasSex
-    Value: Male
+    Focus node: John_Albert_of_Mecklenburg
+    Path: hasMother
+    Value: Augusta_Reuss_of_K%C3%B6stritz
     Constraint: ClassConstraintComponent
     Source shape:
-      :Person-hasSex a sh:PropertyShape ;
-          sh:class :Sex ;
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
           sh:maxCount 1 ;
-          sh:path :hasSex .
-    SHACL message: Value does not have class :Sex
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -156,11 +160,15 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :hasSex a owl:FunctionalProperty,
+      :hasMother a owl:FunctionalProperty,
               owl:ObjectProperty ;
           rdfs:domain :Person ;
-          rdfs:range :Sex .
-    Classes assigned to the value node: []
+          rdfs:range :Ancestor,
+              :Woman ;
+          rdfs:subPropertyOf :hasParent,
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
+    Classes assigned to the value node: [':Woman', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
         :Man a owl:Class ;
@@ -194,17 +202,17 @@ Violations:
 
   Violation [3]:
     Severity: Violation
-    Focus node: David_Henry_George_Lascelles
-    Path: hasSex
-    Value: Male
+    Focus node: John_Albert_of_Mecklenburg
+    Path: hasFather
+    Value: Frederick_Francis_II_of_Mecklenburg
     Constraint: ClassConstraintComponent
     Source shape:
-      :Man-hasSex a sh:PropertyShape ;
-          dash:hasValueWithClass :Male ;
-          sh:class :Sex ;
+      :Person-hasFather a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Man ;
           sh:maxCount 1 ;
-          sh:path :hasSex .
-    SHACL message: Value does not have class :Sex
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -236,11 +244,14 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :hasSex a owl:FunctionalProperty,
+      :hasFather a owl:FunctionalProperty,
               owl:ObjectProperty ;
           rdfs:domain :Person ;
-          rdfs:range :Sex .
-    Classes assigned to the value node: []
+          rdfs:range :Ancestor,
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
+    Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
         :Man a owl:Class ;
@@ -274,16 +285,17 @@ Violations:
 
   Violation [4]:
     Severity: Violation
-    Focus node: David_Henry_George_Lascelles
-    Path: hasSex
-    Value: Male
+    Focus node: John_Albert_of_Mecklenburg
+    Path: hasMother
+    Value: Augusta_Reuss_of_K%C3%B6stritz
     Constraint: ClassConstraintComponent
     Source shape:
-      :Person-hasSex a sh:PropertyShape ;
-          sh:class :Sex ;
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
           sh:maxCount 1 ;
-          sh:path :hasSex .
-    SHACL message: Value does not have class :Sex
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -315,11 +327,15 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :hasSex a owl:FunctionalProperty,
+      :hasMother a owl:FunctionalProperty,
               owl:ObjectProperty ;
           rdfs:domain :Person ;
-          rdfs:range :Sex .
-    Classes assigned to the value node: []
+          rdfs:range :Ancestor,
+              :Woman ;
+          rdfs:subPropertyOf :hasParent,
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
+    Classes assigned to the value node: [':Woman', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
         :Man a owl:Class ;
@@ -353,17 +369,17 @@ Violations:
 
   Violation [5]:
     Severity: Violation
-    Focus node: David_Henry_George_Lascelles
-    Path: hasSex
-    Value: Male
+    Focus node: John_Albert_of_Mecklenburg
+    Path: hasFather
+    Value: Frederick_Francis_II_of_Mecklenburg
     Constraint: ClassConstraintComponent
     Source shape:
-      :Woman-hasSex a sh:PropertyShape ;
-          dash:hasValueWithClass :Female ;
-          sh:class :Sex ;
+      :Person-hasFather a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Man ;
           sh:maxCount 1 ;
-          sh:path :hasSex .
-    SHACL message: Value does not have class :Sex
+          sh:path :hasFather .
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -395,11 +411,14 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :hasSex a owl:FunctionalProperty,
+      :hasFather a owl:FunctionalProperty,
               owl:ObjectProperty ;
           rdfs:domain :Person ;
-          rdfs:range :Sex .
-    Classes assigned to the value node: []
+          rdfs:range :Ancestor,
+              :Man ;
+          rdfs:subPropertyOf :hasParent ;
+          owl:inverseOf :isFatherOf .
+    Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
         :Man a owl:Class ;
@@ -433,17 +452,17 @@ Violations:
 
   Violation [6]:
     Severity: Violation
-    Focus node: David_Henry_George_Lascelles
-    Path: hasSex
-    Value: Male
+    Focus node: John_Albert_of_Mecklenburg
+    Path: hasMother
+    Value: Augusta_Reuss_of_K%C3%B6stritz
     Constraint: ClassConstraintComponent
     Source shape:
-      :Man-hasSex a sh:PropertyShape ;
-          dash:hasValueWithClass :Male ;
-          sh:class :Sex ;
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
           sh:maxCount 1 ;
-          sh:path :hasSex .
-    SHACL message: Value does not have class :Sex
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -475,11 +494,15 @@ Violations:
                     owl:unionOf ( :Man :Woman ) ] .
 
     Definition of the path:
-      :hasSex a owl:FunctionalProperty,
+      :hasMother a owl:FunctionalProperty,
               owl:ObjectProperty ;
           rdfs:domain :Person ;
-          rdfs:range :Sex .
-    Classes assigned to the value node: []
+          rdfs:range :Ancestor,
+              :Woman ;
+          rdfs:subPropertyOf :hasParent,
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
+    Classes assigned to the value node: [':Woman', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
         :Man a owl:Class ;
@@ -513,16 +536,17 @@ Violations:
 
   Violation [7]:
     Severity: Violation
-    Focus node: David_Henry_George_Lascelles
-    Path: hasSex
-    Value: Male
+    Focus node: Frederick_Francis_III_of_Mecklenburg
+    Path: None
+    Value: Frederick_Francis_III_of_Mecklenburg
     Constraint: ClassConstraintComponent
     Source shape:
-      :Person-hasSex a sh:PropertyShape ;
-          sh:class :Sex ;
-          sh:maxCount 1 ;
-          sh:path :hasSex .
-    SHACL message: Value does not have class :Sex
+      esh:DomainConjunctionShape_isFatherOf a sh:NodeShape ;
+          sh:class :Ancestor,
+              :Man ;
+          sh:message "Any subject of isFatherOf must be all of: Ancestor, Man." ;
+          sh:targetSubjectsOf :isFatherOf .
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     Classes assigned to the focus node: [':Man', ':Person']
     Definitions of the classes assigned to the focus node:
       Class :Man:
@@ -553,92 +577,7 @@ Violations:
             owl:equivalentClass [ a owl:Class ;
                     owl:unionOf ( :Man :Woman ) ] .
 
-    Definition of the path:
-      :hasSex a owl:FunctionalProperty,
-              owl:ObjectProperty ;
-          rdfs:domain :Person ;
-          rdfs:range :Sex .
-    Classes assigned to the value node: []
-    Definitions of the classes assigned to the value node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
-      Class :Person:
-        :Person a owl:Class ;
-            rdfs:subClassOf [ a owl:Restriction ;
-                    owl:onProperty :hasFather ;
-                    owl:someValuesFrom :Man ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasMother ;
-                    owl:someValuesFrom :Woman ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasSex ;
-                    owl:someValuesFrom :Sex ],
-                [ a owl:Restriction ;
-                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                    owl:onClass :Person ;
-                    owl:onProperty :hasParent ],
-                :DomainEntity ;
-            owl:disjointWith :Sex ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:unionOf ( :Man :Woman ) ] .
-
-
-
-  Violation [8]:
-    Severity: Violation
-    Focus node: David_Henry_George_Lascelles
-    Path: hasSex
-    Value: Male
-    Constraint: ClassConstraintComponent
-    Source shape:
-      :Woman-hasSex a sh:PropertyShape ;
-          dash:hasValueWithClass :Female ;
-          sh:class :Sex ;
-          sh:maxCount 1 ;
-          sh:path :hasSex .
-    SHACL message: Value does not have class :Sex
-    Classes assigned to the focus node: [':Man', ':Person']
-    Definitions of the classes assigned to the focus node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
-      Class :Person:
-        :Person a owl:Class ;
-            rdfs:subClassOf [ a owl:Restriction ;
-                    owl:onProperty :hasFather ;
-                    owl:someValuesFrom :Man ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasMother ;
-                    owl:someValuesFrom :Woman ],
-                [ a owl:Restriction ;
-                    owl:onProperty :hasSex ;
-                    owl:someValuesFrom :Sex ],
-                [ a owl:Restriction ;
-                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                    owl:onClass :Person ;
-                    owl:onProperty :hasParent ],
-                :DomainEntity ;
-            owl:disjointWith :Sex ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:unionOf ( :Man :Woman ) ] .
-
-    Definition of the path:
-      :hasSex a owl:FunctionalProperty,
-              owl:ObjectProperty ;
-          rdfs:domain :Person ;
-          rdfs:range :Sex .
-    Classes assigned to the value node: []
+    Classes assigned to the value node: [':Man', ':Person']
     Definitions of the classes assigned to the value node:
       Class :Man:
         :Man a owl:Class ;
@@ -677,4 +616,4 @@ Please analyze each violation and provide the corresponding explanation and fix 
 
 ================================== Ai Message ==================================
 
-[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The node \'David_Henry_George_Lascelles\' has a \'hasSex\' property pointing to \'Male\', but \'Male\' is not correctly typed as a member of the class \':Sex\'.",\n      "instruction": "AssignClass(node=\'Male\', class=\':Sex\')"\n    },\n    {\n      "explanation": "The \'hasSex\' property of \'David_Henry_George_Lascelles\' requires the target value to be a member of the class \':Sex\', which is currently missing.",\n      "instruction": "AssignClass(node=\'Male\', class=\':Sex\')"\n    },\n    {\n      "explanation": "The \'hasSex\' property constraint for a \':Man\' requires the object to be an instance of \':Sex\', but the current value \'Male\' lacks this classification.",\n      "instruction": "AssignClass(node=\'Male\', class=\':Sex\')"\n    },\n    {\n      "explanation": "The \':Person\' class definition requires the \'hasSex\' property to point to an instance of \':Sex\', but \'Male\' is not assigned that class.",\n      "instruction": "AssignClass(node=\'Male\', class=\':Sex\')"\n    },\n    {\n      "explanation": "The node \'David_Henry_George_Lascelles\' is being validated against constraints for females, which expect the \'hasSex\' property to point to an instance of \':Sex\'.",\n      "instruction": "AssignClass(node=\'Male\', class=\':Sex\')"\n    },\n    {\n      "explanation": "The node \'David_Henry_George_Lascelles\' lacks the required class \':Sex\' on its \'hasSex\' value \'Male\' to satisfy the \':Man\' shape requirements.",\n      "instruction": "AssignClass(node=\'Male\', class=\':Sex\')"\n    },\n    {\n      "explanation": "The validation failed because the value \'Male\' linked via \'hasSex\' does not possess the mandatory \':Sex\' class assignment.",\n      "instruction": "AssignClass(node=\'Male\', class=\':Sex\')"\n    },\n    {\n      "explanation": "The node \'David_Henry_George_Lascelles\' has an incorrectly classified \'hasSex\' value \'Male\', which must be an instance of \':Sex\'.",\n      "instruction": "AssignClass(node=\'Male\', class=\':Sex\')"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHSLsoarqo9w008nFtSBH1euQCE9GfdP7WSAKWjIkiHh0c5ECT0zHT28FFz8zE'}}]
+[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The entity Frederick_Francis_II_of_Mecklenburg used as a father for John_Albert_of_Mecklenburg is not classified as an Ancestor.",\n      "instruction": "AssignClass(node=\'Frederick_Francis_II_of_Mecklenburg\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The entity Augusta_Reuss_of_K%C3%B6stritz used as a mother for John_Albert_of_Mecklenburg is not classified as an Ancestor.",\n      "instruction": "AssignClass(node=\'Augusta_Reuss_of_K%C3%B6stritz\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The entity Frederick_Francis_II_of_Mecklenburg is missing the required class :Ancestor for the hasFather relationship.",\n      "instruction": "AssignClass(node=\'Frederick_Francis_II_of_Mecklenburg\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The entity Augusta_Reuss_of_K%C3%B6stritz is missing the required class :Ancestor for the hasMother relationship.",\n      "instruction": "AssignClass(node=\'Augusta_Reuss_of_K%C3%B6stritz\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "Duplicate validation error: Frederick_Francis_II_of_Mecklenburg requires the :Ancestor class assignment.",\n      "instruction": "AssignClass(node=\'Frederick_Francis_II_of_Mecklenburg\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "Duplicate validation error: Augusta_Reuss_of_K%C3%B6stritz requires the :Ancestor class assignment.",\n      "instruction": "AssignClass(node=\'Augusta_Reuss_of_K%C3%B6stritz\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Frederick_Francis_III_of_Mecklenburg acts as a subject for the isFatherOf property but is missing the :Ancestor class.",\n      "instruction": "AssignClass(node=\'Frederick_Francis_III_of_Mecklenburg\', class=\':Ancestor\')"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHFBwEm6OBgM4aQkSCdDcUDGTb54tykfFhH12pUFw9aQUS6xs8AAn0osn1Mk/a'}}]

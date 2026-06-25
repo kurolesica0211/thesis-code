@@ -1,0 +1,144 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Alfonso_XII_of_Spain a :Man,
+        :Person ;
+    rdfs:label "Alfonso XII of Spain"^^xsd:string ;
+    data:posIndicesFull "659:670"^^xsd:string,
+        "659:679"^^xsd:string ;
+    data:posIndicesPart "1032:1037"^^xsd:string,
+        "1208:1213"^^xsd:string,
+        "1371:1376"^^xsd:string,
+        "1514:1519"^^xsd:string,
+        "2771:2778"^^xsd:string,
+        "3439:3444"^^xsd:string,
+        "4325:4332"^^xsd:string,
+        "4544:4549"^^xsd:string,
+        "5217:5222"^^xsd:string,
+        "5492:5497"^^xsd:string,
+        "5554:5559"^^xsd:string,
+        "5673:5678"^^xsd:string,
+        "5704:5709"^^xsd:string,
+        "908:915"^^xsd:string,
+        "924:929"^^xsd:string,
+        "953:960"^^xsd:string ;
+    data:wdtLink wdt:Q32347 ;
+    :alsoKnownAs "Alfonso XII"^^xsd:string ;
+    :hasBrother data:Alfonso_XII_of_Spain ;
+    :hasRelation data:Alfonso_XII_of_Spain ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Alfonso_XII_of_Spain ;
+    :isBrotherOf data:Alfonso_XII_of_Spain ;
+    :isSiblingOf data:Alfonso_XII_of_Spain .
+
+data:Infanta_Alicia-_Duchess_of_Calabria a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Infanta Alicia, Duchess of Calabria"^^xsd:string ;
+    data:posIndicesFull "403:435"^^xsd:string ;
+    data:posIndicesPart "2700:2708"^^xsd:string,
+        "3881:3889"^^xsd:string,
+        "4360:4368"^^xsd:string,
+        "6336:6343"^^xsd:string,
+        "6344:6350"^^xsd:string ;
+    data:wdtLink wdt:Q33218 ;
+    :alsoKnownAs "Princess Alicia Maria Teresa Francesca Luisa Pia Anna Valeria of Bourbon-Parma"^^xsd:string,
+        "Princess Alicia of Bourbon-Parma"^^xsd:string ;
+    :hasChild data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasRelation data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :hasSon data:Infante_Carlos-_Duke_of_Calabria ;
+    :isAncestorOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isAuntOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isBloodrelationOf data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :isMotherOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isParentOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isSiblingOf data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :isSisterOf data:Infanta_Alicia-_Duchess_of_Calabria .
+
+data:Infante_Carlos-_Duke_of_Calabria a :Man,
+        :Person ;
+    rdfs:label "Infante Carlos, Duke of Calabria"^^xsd:string ;
+    data:posIndicesFull "2843:2872"^^xsd:string,
+        "4705:4741"^^xsd:string,
+        "4712:4741"^^xsd:string,
+        "555:591"^^xsd:string,
+        "562:591"^^xsd:string ;
+    data:posIndicesPart "1099:1105"^^xsd:string,
+        "1109:1115"^^xsd:string,
+        "1215:1221"^^xsd:string,
+        "1314:1320"^^xsd:string,
+        "1538:1544"^^xsd:string,
+        "1554:1560"^^xsd:string,
+        "1874:1880"^^xsd:string,
+        "1914:1920"^^xsd:string,
+        "2136:2143"^^xsd:string,
+        "2149:2155"^^xsd:string,
+        "2390:2396"^^xsd:string,
+        "2569:2575"^^xsd:string,
+        "2692:2696"^^xsd:string,
+        "2700:2708"^^xsd:string,
+        "3044:3048"^^xsd:string,
+        "3487:3493"^^xsd:string,
+        "3781:3787"^^xsd:string,
+        "3873:3877"^^xsd:string,
+        "3881:3889"^^xsd:string,
+        "4010:4016"^^xsd:string,
+        "4218:4224"^^xsd:string,
+        "4317:4324"^^xsd:string,
+        "4352:4356"^^xsd:string,
+        "4360:4368"^^xsd:string,
+        "4370:4376"^^xsd:string,
+        "4561:4568"^^xsd:string,
+        "4569:4575"^^xsd:string,
+        "4759:4766"^^xsd:string,
+        "4767:4773"^^xsd:string,
+        "4916:4920"^^xsd:string,
+        "4932:4939"^^xsd:string,
+        "4940:4946"^^xsd:string,
+        "5640:5646"^^xsd:string,
+        "5662:5669"^^xsd:string,
+        "5692:5698"^^xsd:string,
+        "5830:5837"^^xsd:string,
+        "5838:5844"^^xsd:string,
+        "6320:6326"^^xsd:string,
+        "945:952"^^xsd:string,
+        "962:969"^^xsd:string,
+        "970:976"^^xsd:string ;
+    data:wdtLink wdt:Q526743 ;
+    :alsoKnownAs "Carlos Maria Alfonso Marcelo de Borbón-Dos Sicilias y de Borbón-Parma, Infante of Spain, Duke of Calabria"^^xsd:string,
+        "Carlos de Borbón-Dos Sicilias y de Borbón-Parma"^^xsd:string,
+        "Carlos of Bourbon-Two Sicilies"^^xsd:string,
+        "Infante Carlos of Spain, Prince of Bourbon-Two Sicilies, Duke of Calabria"^^xsd:string,
+        "Prince Carlos of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasAncestor data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :hasBrother data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasMother data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :hasParent data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :hasRelation data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isChildOf data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :isSiblingOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isSonOf data:Infanta_Alicia-_Duchess_of_Calabria .
+

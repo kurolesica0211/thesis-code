@@ -85,143 +85,41 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Descendants of Prince Felix and also members of the Grand Ducal Family of Luxembourg:
-
-
-Princess Joan
-
-
-Descendants of Prince René:
-
-
-Princess Maria Pia
-
-
-Princess Marina
-
-
-Descendants of Prince Louis:
-
-
-Prince RémyPrincess Elisabeth
-
-
-Princess Chantal
-Prince JeanPrincess Virginia
-
-
-Princess Beatrix*
-
-
-Princess Margriet*Pieter van Vollenhoven*
-
-
-Prince Carlos, Duke of Parma and Piacenza (Carlos Xavier Bernardo Sixto Marie; born 27 January 1970) is the current Head of the House of Bourbon-Parma, which ruled the Duchy of Parma and Piacenza from 1748 to 1802 and from 1847 to 1859.
-The eldest son of Carlos Hugo, Duke of Parma and Princess Irene of the Netherlands, Carlos is also a member of the Dutch royal family and the Dutch nobility with the style of "His Royal Highness" and the title of Prince Carlos de Bourbon de Parme.
-Additionally, he is the Carlist pretender to the Spanish throne with the title Duke of Madrid.
-In the French nobility, he bears the title "Prince de Borbon", and is the grand master of the Parmesan Sacred Military Constantinian Order of Saint George, the Order of Saint Louis for Civil Merit, the Order of Prohibited Legitimacy and the Order of St. George for Military Merit.
+Prince Adalbert Ferdinand Berengar Viktor of Prussia (14 July 1884 – 22 September 1948) was the third son of Wilhelm II, German Emperor, and Augusta Victoria of Schleswig-Holstein.
 Early life
 
-Prince Carlos Xavier Bernardo Sixto Marie of Bourbon-Parma was born in Nijmegen, The Netherlands on 27 January 1970 as the elder child and son of Carlos Hugo, Duke of Parma, and his wife Princess Irene of the Netherlands.
-He has two younger sisters, Princess Margarita and Princess Carolina, and a younger brother, Prince Jaime.
-At the time of his birth, his parents, Carlist Pretender to the Spanish throne, were expelled from Spain by the Franco regime since 20 December 1968, as Franco already did with his grandfather Prince Xavier of Bourbon-Parma and some members of his family on 25 November 1937.
-Carlos spent his youth in several countries including the Netherlands, Spain, France, England, and the United States.
-Together with his mother and his siblings, he then moved to Soestdijk Palace (Baarn) in the Netherlands.
-He lived at the palace for a number of years with his maternal grandparents, Queen Juliana of the Netherlands and Prince Bernhard.
-Education and career
-
-Prince Carlos studied political science at Wesleyan University in Connecticut and demography and philosophy at Cambridge University in England; in 1995, he obtained a Postgraduate Degree (MPhil) in Demography at the Cambridge University.
-After completing his studies, Carlos worked for the company ABN AMRO in Amsterdam, where he was involved with preparations for the introduction of the euro.
-He has chaired the Foundation for Cooperation for the Economic Development of Latin America, was a member for eight years of the Council of CSR Netherlands, which ensures corporate social responsibility.
-Duties and appearances
-
-Dutch Royal House
-
-Carlos is sometimes present at representative occasions concerning the Royal House of the Netherlands.
-In 2003, he was involved, together with his aunt, Queen Beatrix, in the inauguration of the "Prince Claus Leerstoel", a professorship named after the Queen's husband, Prince Claus.
-For example, he was one of the organizers of the wedding celebration of Prince Constantijn and Princess Laurentien.
-In April 2013, Prince Carlos attended the inauguration of his cousin King Willem-Alexander and his wife Queen Maxima in Amsterdam.
-In August 2019 he and his wife attended the funeral of his aunt Princess Christina of the Netherlands, sister of former Queen Beatrix, near Noordeinde Palace, The Hague.
-His rights as the Carlist pretender
-
-After the death of his father Carlos Hugo in 2010, Prince Carlos Xavier succeeded him as Duke of Madrid and Carlist Pretender to the Spanish throne.
-He started to use the Carlist title of "Rey Don Carlos Javier I" (King Don Carlos Xavier I).
-However, Carlos Xavier, in an interview with the newspaper La Vanguardia, said:
+Prince Adalbert was born on 14 July 1884 as the third son of the then Prince Wilhelm of Prussia and his first wife, Princess Augusta Victoria of Schleswig-Holstein.
+He was born in the Marmorpalais of Potsdam in the Province of Brandenburg, where his parents resided until his father acceded to the throne as Emperor Wilhelm II in 1888.
+He spent his childhood with his siblings at the New Palace, also in Potsdam, and his school days with his brothers at the Prinzenhaus in Plön in his mother’s ancestral Schleswig-Holstein.
+His bride was Princess Adelheid "Adi" of Saxe-Meiningen (16 August 1891 – 25 April 1971), daughter of Prince Frederick and Countess Adelaide of Lippe-Biesterfeld.
+They married on 3 August 1914 in Wilhelmshaven, Germany, and had three children, five grandchildren, six great-grandchildren and two great-great-grandchildren:
 
 
-I don't set out dynastic lawsuits.
-— Barcelona, October 11th, 2010
+Kaiserliche Marine
 
-Duke of Parma
+Regimental Commissions
 
-Prince Carlos became Duke of Parma and Piacenza and Head of the House of Bourbon-Parma after the death of his father on 18 August 2010, aged 80.
-In 2016, at the baptism of Prince Carlos Enrique, Prince Carlos conferred on his son the title of "Principe di Piacenza" (Prince of Piacenza), which is the traditional title assigned to the Crown Prince of the House of Bourbon-Parma, the continuer of the dynasty, and future Duke of Parma and Piacenza.
-In September 2017, the Duke of Parma named his daughter Princess Luisa as "Marchesa di Castell'Arquato" (Marquise of Castell'Arquato), and her younger sister Princess Cecilia was named as "Contessa di Berceto" (Countess of Berceto).
-Prince Carlos has visited and regularly visits the lands of the former Duchy of Parma and Piacenza.
-In September 2015, he was in Parma to grant the "Prince's Medal to Meritorious Men in silver" to the firefighters who distinguished themselves during the 2015 flood that struck the area.
-At the end of September 2017, he presided over the General Chapter of the Knights of the House of Bourbon-Parma in Parma to confer the Ducal orders to those people who have achieved personal merits towards the Royal House; then he visited Palazzo della Pilotta.
-In September 2018, he visited Parma to confer some honors of the Royal House and to visit the Church of Santa Maria della Steccata, together with the Royal Family.
-Also, he was present at the inauguration of the opera season by attending a representation of the opera "Macbeth" at the Teatro Regio in Parma and made a visit to the Military Academy of Modena, received by the Commander.
-As Duke of Parma, Prince Carlos is committed to preserving the memory of the lands and members and relatives of the dynasty: in July 2011 he was in Vienna to attend the funeral of Archduke Otto, the last Crown Prince of Austria-Hungary (son of Princess Zita of Bourbon-Parma, sister to Carlos' grandfather Prince Xavier) at the St. Stephen's Cathedral.
-In August 2016, Prince Carlos was in Romania to attend the funeral of Queen Anne (née Princess of Bourbon-Parma as a daughter of Prince René, brother of Carlos' grandfather) in Curtea de Argeș.
-At the funeral, Carlos represented also the Dutch Royal Family who was unable to attend.
-In June 2018 he traveled to Prague to remember his ancestor Maria Amalia, Duchess of Parma, and to take part in the presentation of the book "Maria Amalia Duchess of Parma and Piacenza (1746–1804)" dedicated to the life of his ancestor, and later visited the Cathedral of San Vito in Prague to lay flowers on the tomb of Duchess Maria Amalia.
-Personal life
-
-Relationship with Brigitte Klynstra and son
-
-Prince Carlos had a relationship with Brigitte Klynstra (born 10 January 1959), the stepdaughter of Count Adolph Roderik of Rechteren-Limpurg.
-In December 2015, the then 18-year-old Carlos Klynstra started the legal procedure to attempt to change his surname to that of his biological father which would also allow him to use the title of "Prince".
-The Duke of Parma opposed this on the basis that it was in contravention of the traditions of the House of Bourbon-Parma.
-According to the judgement, Carlos Hugo will be entitled to be known as "Zijne Koninklijke Hoogheid Carlos Hugo Roderik Sybren prins de Bourbon de Parme" (His Royal Highness Prince Carlos Hugo Roderik Sybren of Bourbon-Parma); this will come only into effect once the Dutch king has signed the royal decree.
-According to the press release of the Council of State of 28 February 2018, the name change does not mean that Klynstra is now also a member of the Royal House of  Bourbon-Parma.
-Marriage to Annemarie Gualthérie van Weezel
-
-On 7 October 2009, it was announced through his mother's private secretary that Prince Carlos would marry Annemarie Cecilia
-Prince Carlos Hugo died shortly afterwards.
-Her father was a member of the House of Representatives of the Netherlands for the Christian Democratic party, the Dutch ambassador to the Council of Europe in Strasbourg, and the ambassador to Luxembourg.
-In Brussels, she met Prince Carlos for the first time.
-On 2 August 2010, it was revealed that the health of his father, the Duke of Parma, was quickly deteriorating due to cancer.
-As a consequence, the church wedding of the prince Carlos and his fiancée was delayed.
-In a final announcement about his condition, the Duke confirmed Carlos as the next Head of the House of Bourbon-Parma.
-Just before his death the old Duke of Parma named Annemarie as "Condesa de Molina" (Countess of Molina).
-Prince Carlos's father died on 18 August 2010 in Barcelona, Spain, at the age of 80; Carlos subsequently became the next head of the House of Bourbon-Parma.
-The new Duke of Parma and Annemarie were married on 20 November 2010 in La Cambre Abbey in Bruxelles.
-The wedding was attended by Máxima, Princess of Orange, Willem-Alexander, Prince of Orange, Queen Beatrix of the Netherlands, Prince Jean of Luxembourg, Princess Astrid of Belgium, Prince Lorenz of Belgium and Duarte Pio, Duke of Braganza.
-Together, they have two daughters and a son:
+Source:
 
 
-Titles, styles and honours
+Chivalric Orders
 
-Titles and styles
-
-Honours
-
-Dynastic
-
-As Head of the House of Bourbon-Parma, Carlos is Grand Master of four dynastic orders:
+Source:
 
 
-National
+Military Decorations
 
-International
+Death
 
-Ancestry
-
-Notes
-
-References
-
-External links
-
-2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
-3 title granted by Royal Decree to descendants of Princess Irene
+Adalbert died in La Tour de Peilz, Switzerland, aged 64.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -237,39 +135,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -284,6 +152,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -301,6 +186,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -368,29 +268,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -399,6 +291,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -411,6 +311,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -419,17 +321,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -457,6 +361,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -472,180 +460,134 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (33e1f84a-bb99-4503-a459-902745e9ae00)
- Call ID: 33e1f84a-bb99-4503-a459-902745e9ae00
+  AssignClass (bae3a815-b600-41a5-b01b-3511b3981243)
+ Call ID: bae3a815-b600-41a5-b01b-3511b3981243
   Args:
+    source: Prince_Adalbert_of_Prussia
     type: :Man
-    source: Carlos_Hugo_Duke_of_Parma
-  AssignClass (a6e3e7bd-df12-4ada-864f-06951bb9d121)
- Call ID: a6e3e7bd-df12-4ada-864f-06951bb9d121
+  AssignClass (d25d8daa-60c1-4e07-8a6f-1e3dbfe0f9ba)
+ Call ID: d25d8daa-60c1-4e07-8a6f-1e3dbfe0f9ba
   Args:
-    type: :Woman
-    source: Princess_Irene_of_the_Netherlands
-  AssignClass (fcf216f1-b09e-406a-b888-f460f569eb04)
- Call ID: fcf216f1-b09e-406a-b888-f460f569eb04
+    source: Prince_Adalbert_of_Prussia
+    type: :Person
+  AddLiteral (d038c289-fe81-4385-85a0-df5fbc2a66db)
+ Call ID: d038c289-fe81-4385-85a0-df5fbc2a66db
   Args:
-    type: :Man
-    source: Prince_Carlos_Duke_of_Parma_and_Piacenza
-  AddLiteral (f07a2431-1db4-4fcc-9b50-101282e6f089)
- Call ID: f07a2431-1db4-4fcc-9b50-101282e6f089
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1970
-    source: Prince_Carlos_Duke_of_Parma_and_Piacenza
     relation: :hasBirthYear
-  AddTriple (dfe1d71d-c3c8-435f-9827-6e4553e4e994)
- Call ID: dfe1d71d-c3c8-435f-9827-6e4553e4e994
+    literal_value: 1884
+    source: Prince_Adalbert_of_Prussia
+    literal_type: xsd:integer
+  AddLiteral (ce6b170d-a25e-4814-b752-4bfe5455ca68)
+ Call ID: ce6b170d-a25e-4814-b752-4bfe5455ca68
   Args:
-    target: Carlos_Hugo_Duke_of_Parma
+    relation: :hasDeathYear
+    source: Prince_Adalbert_of_Prussia
+    literal_value: 1948
+    literal_type: xsd:integer
+  AssignClass (874d18e0-d4eb-450c-92ae-16697c21d2ac)
+ Call ID: 874d18e0-d4eb-450c-92ae-16697c21d2ac
+  Args:
+    type: :Man
+    source: Wilhelm_II_German_Emperor
+  AssignClass (b98cabc9-72b5-4b52-91bd-2fb7333ebed2)
+ Call ID: b98cabc9-72b5-4b52-91bd-2fb7333ebed2
+  Args:
+    type: :Person
+    source: Wilhelm_II_German_Emperor
+  AssignClass (4800d6d5-f900-4cc9-aac7-6eca53936c46)
+ Call ID: 4800d6d5-f900-4cc9-aac7-6eca53936c46
+  Args:
+    type: :Woman
+    source: Augusta_Victoria_of_Schleswig-Holstein
+  AssignClass (f35763fe-3bbb-45c7-a729-799caa641513)
+ Call ID: f35763fe-3bbb-45c7-a729-799caa641513
+  Args:
+    type: :Person
+    source: Augusta_Victoria_of_Schleswig-Holstein
+  AddTriple (7cedc82e-ec6d-4ea0-a810-e638a9236e92)
+ Call ID: 7cedc82e-ec6d-4ea0-a810-e638a9236e92
+  Args:
     relation: :hasFather
-    source: Prince_Carlos_Duke_of_Parma_and_Piacenza
-  AddTriple (2cb7b8ff-963a-4a0d-b43e-07c019173cd1)
- Call ID: 2cb7b8ff-963a-4a0d-b43e-07c019173cd1
+    source: Prince_Adalbert_of_Prussia
+    target: Wilhelm_II_German_Emperor
+  AddTriple (ca1fa92b-aafa-4644-ab6a-7a6f9ec7e265)
+ Call ID: ca1fa92b-aafa-4644-ab6a-7a6f9ec7e265
   Args:
-    target: Princess_Irene_of_the_Netherlands
-    source: Prince_Carlos_Duke_of_Parma_and_Piacenza
     relation: :hasMother
-  AssignClass (27c9ab73-8b41-4a57-b6c8-51801a175516)
- Call ID: 27c9ab73-8b41-4a57-b6c8-51801a175516
+    source: Prince_Adalbert_of_Prussia
+    target: Augusta_Victoria_of_Schleswig-Holstein
+  AssignClass (d1e13a1d-5070-4eb5-9d11-dadc0a7809e1)
+ Call ID: d1e13a1d-5070-4eb5-9d11-dadc0a7809e1
   Args:
     type: :Woman
-    source: Princess_Margarita
-  AssignClass (fb671f34-21ab-4b60-8719-3428a3ed636c)
- Call ID: fb671f34-21ab-4b60-8719-3428a3ed636c
+    source: Princess_Adelheid_of_Saxe-Meiningen
+  AssignClass (56696cd0-2aaf-4a86-a8a8-de1503db951f)
+ Call ID: 56696cd0-2aaf-4a86-a8a8-de1503db951f
   Args:
-    type: :Woman
-    source: Princess_Carolina
-  AssignClass (77bfef58-71df-47f4-bf12-f2564b848058)
- Call ID: 77bfef58-71df-47f4-bf12-f2564b848058
+    source: Princess_Adelheid_of_Saxe-Meiningen
+    type: :Person
+  AddLiteral (0fa9604d-ad29-491d-937a-1d655bfdc5d8)
+ Call ID: 0fa9604d-ad29-491d-937a-1d655bfdc5d8
   Args:
-    type: :Man
-    source: Prince_Jaime
-  AddTriple (c88151e0-550c-465b-9935-7f272f36d500)
- Call ID: c88151e0-550c-465b-9935-7f272f36d500
+    relation: :hasBirthYear
+    source: Princess_Adelheid_of_Saxe-Meiningen
+    literal_value: 1891
+    literal_type: xsd:integer
+  AddLiteral (bd1bfa34-2627-4472-b131-74a0bcf50c66)
+ Call ID: bd1bfa34-2627-4472-b131-74a0bcf50c66
   Args:
-    source: Prince_Carlos_Duke_of_Parma_and_Piacenza
-    relation: :hasSister
-    target: Princess_Margarita
-  AddTriple (99e867ef-41ab-4dd4-a395-f7f7fd9613c3)
- Call ID: 99e867ef-41ab-4dd4-a395-f7f7fd9613c3
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1971
+    source: Princess_Adelheid_of_Saxe-Meiningen
+  AddLiteral (17429ce5-d511-485d-91e3-3086cd84f8bd)
+ Call ID: 17429ce5-d511-485d-91e3-3086cd84f8bd
   Args:
-    target: Princess_Carolina
-    source: Prince_Carlos_Duke_of_Parma_and_Piacenza
-    relation: :hasSister
-  AddTriple (f17d7867-6ce2-442a-ae13-8db5f3de27da)
- Call ID: f17d7867-6ce2-442a-ae13-8db5f3de27da
-  Args:
-    relation: :hasBrother
-    source: Prince_Carlos_Duke_of_Parma_and_Piacenza
-    target: Prince_Jaime
-  AssignClass (0f7cab17-c1c1-4b46-b8fa-1a342a582082)
- Call ID: 0f7cab17-c1c1-4b46-b8fa-1a342a582082
-  Args:
-    type: :Man
-    source: Prince_Xavier_of_Bourbon-Parma
-  AddTriple (93fc8e20-016b-42b3-9f0e-e19f04ac1dd7)
- Call ID: 93fc8e20-016b-42b3-9f0e-e19f04ac1dd7
-  Args:
-    target: Prince_Xavier_of_Bourbon-Parma
-    source: Carlos_Hugo_Duke_of_Parma
-    relation: :hasFather
-  AssignClass (5af7296f-9423-4788-a4ec-17014e673987)
- Call ID: 5af7296f-9423-4788-a4ec-17014e673987
-  Args:
-    type: :Woman
-    source: Annemarie_Gualthérie_van_Weezel
-  AddTriple (05180675-eb71-4257-80a2-d8545a132e15)
- Call ID: 05180675-eb71-4257-80a2-d8545a132e15
+    relation: :hasMarriageYear
+    source: Prince_Adalbert_of_Prussia
+    literal_value: 1914
+    literal_type: xsd:integer
+  AddTriple (0a7bfff0-9697-4fdf-b401-7a71af1ae4a9)
+ Call ID: 0a7bfff0-9697-4fdf-b401-7a71af1ae4a9
   Args:
     relation: :hasRelation
-    source: Prince_Carlos_Duke_of_Parma_and_Piacenza
-    target: Annemarie_Gualthérie_van_Weezel
-  AddLiteral (abf77f00-6421-40a6-98fe-1a2d24bd3bd8)
- Call ID: abf77f00-6421-40a6-98fe-1a2d24bd3bd8
+    target: Princess_Adelheid_of_Saxe-Meiningen
+    source: Prince_Adalbert_of_Prussia
+  AssignClass (eb35b4cf-4bc3-4610-af51-08f588f7360a)
+ Call ID: eb35b4cf-4bc3-4610-af51-08f588f7360a
   Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: Prince_Carlos_Duke_of_Parma_and_Piacenza
-    literal_value: 2010
-  AssignClass (a7946266-ff90-4150-9f7d-ad7b7bd9a791)
- Call ID: a7946266-ff90-4150-9f7d-ad7b7bd9a791
-  Args:
+    source: Prince_Frederick_of_Saxe-Meiningen
     type: :Man
-    source: Prince_Carlos_Enrique
-  AddTriple (315364de-c413-4002-b016-6492ba58470c)
- Call ID: 315364de-c413-4002-b016-6492ba58470c
+  AssignClass (8113c079-9043-42a7-ab61-a377bacd3ac5)
+ Call ID: 8113c079-9043-42a7-ab61-a377bacd3ac5
   Args:
-    relation: :hasFather
-    source: Prince_Carlos_Enrique
-    target: Prince_Carlos_Duke_of_Parma_and_Piacenza
-  AssignClass (2ec18e37-2b93-479f-b4a0-244874d19ab7)
- Call ID: 2ec18e37-2b93-479f-b4a0-244874d19ab7
+    source: Prince_Frederick_of_Saxe-Meiningen
+    type: :Person
+  AssignClass (793bb27d-3fad-4f4a-b5a9-fae534b823a8)
+ Call ID: 793bb27d-3fad-4f4a-b5a9-fae534b823a8
   Args:
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
     type: :Woman
-    source: Princess_Luisa
-  AssignClass (95a71f22-474e-4810-9a76-2bd63e02470b)
- Call ID: 95a71f22-474e-4810-9a76-2bd63e02470b
+  AssignClass (9d4bad4e-8538-463d-939c-42f1a1950430)
+ Call ID: 9d4bad4e-8538-463d-939c-42f1a1950430
   Args:
-    type: :Woman
-    source: Princess_Cecilia
-  AddTriple (997e2ba7-734d-4f36-98e8-6f542c62ff0f)
- Call ID: 997e2ba7-734d-4f36-98e8-6f542c62ff0f
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
+    type: :Person
+  AddTriple (e36220b0-546d-4c5b-8aec-5426d4297194)
+ Call ID: e36220b0-546d-4c5b-8aec-5426d4297194
   Args:
-    target: Prince_Carlos_Duke_of_Parma_and_Piacenza
+    target: Prince_Frederick_of_Saxe-Meiningen
+    source: Princess_Adelheid_of_Saxe-Meiningen
     relation: :hasFather
-    source: Princess_Luisa
-  AddTriple (2f4c2f70-5e25-4f28-8735-3285e846bc10)
- Call ID: 2f4c2f70-5e25-4f28-8735-3285e846bc10
+  AddTriple (6625e018-5f97-49f3-8899-987e853f2070)
+ Call ID: 6625e018-5f97-49f3-8899-987e853f2070
   Args:
-    target: Prince_Carlos_Duke_of_Parma_and_Piacenza
-    source: Princess_Cecilia
-    relation: :hasFather
-  AssignClass (a5c82bda-db4c-4ed8-9320-c30febdfdf91)
- Call ID: a5c82bda-db4c-4ed8-9320-c30febdfdf91
-  Args:
-    type: :Man
-    source: Carlos_Klynstra
-  AddTriple (c1a1dc77-f776-4b05-93c4-dd1bf4de8738)
- Call ID: c1a1dc77-f776-4b05-93c4-dd1bf4de8738
-  Args:
-    relation: :hasFather
-    source: Carlos_Klynstra
-    target: Prince_Carlos_Duke_of_Parma_and_Piacenza
-  AssignClass (fd487e0d-4bde-43a1-9e3c-4eabad8de538)
- Call ID: fd487e0d-4bde-43a1-9e3c-4eabad8de538
-  Args:
-    type: :Woman
-    source: Brigitte_Klynstra
-  AddTriple (66fb7a21-2b5e-4dfb-bf3b-e0608cc3c444)
- Call ID: 66fb7a21-2b5e-4dfb-bf3b-e0608cc3c444
-  Args:
-    target: Brigitte_Klynstra
     relation: :hasMother
-    source: Carlos_Klynstra
-  Finish (8f2ef9b7-f64e-41ac-a92d-4418cdf1b383)
- Call ID: 8f2ef9b7-f64e-41ac-a92d-4418cdf1b383
+    target: Countess_Adelaide_of_Lippe-Biesterfeld
+    source: Princess_Adelheid_of_Saxe-Meiningen
+  Finish (0dcb5577-0885-4082-bd65-f41fb5a00e42)
+ Call ID: 0dcb5577-0885-4082-bd65-f41fb5a00e42
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -738,45 +680,33 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Carlos_Klynstra a :Man ;
-      :hasFather data:Prince_Carlos_Duke_of_Parma_and_Piacenza ;
-      :hasMother data:Brigitte_Klynstra .
+  data:Prince_Adalbert_of_Prussia a :Man,
+          :Person ;
+      :hasBirthYear 1884 ;
+      :hasDeathYear 1948 ;
+      :hasFather data:Wilhelm_II_German_Emperor ;
+      :hasMarriageYear 1914 ;
+      :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+      :hasRelation data:Princess_Adelheid_of_Saxe-Meiningen .
 
-  data:Prince_Carlos_Enrique a :Man ;
-      :hasFather data:Prince_Carlos_Duke_of_Parma_and_Piacenza .
+  data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
+          :Woman .
 
-  data:Princess_Cecilia a :Woman ;
-      :hasFather data:Prince_Carlos_Duke_of_Parma_and_Piacenza .
+  data:Countess_Adelaide_of_Lippe-Biesterfeld a :Person,
+          :Woman .
 
-  data:Princess_Luisa a :Woman ;
-      :hasFather data:Prince_Carlos_Duke_of_Parma_and_Piacenza .
+  data:Prince_Frederick_of_Saxe-Meiningen a :Man,
+          :Person .
 
-  data:Annemarie_Gualth%C3%A9rie_van_Weezel a :Woman .
+  data:Princess_Adelheid_of_Saxe-Meiningen a :Person,
+          :Woman ;
+      :hasBirthYear 1891 ;
+      :hasDeathYear 1971 ;
+      :hasFather data:Prince_Frederick_of_Saxe-Meiningen ;
+      :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld .
 
-  data:Brigitte_Klynstra a :Woman .
-
-  data:Carlos_Hugo_Duke_of_Parma a :Man ;
-      :hasFather data:Prince_Xavier_of_Bourbon-Parma .
-
-  data:Prince_Jaime a :Man .
-
-  data:Prince_Xavier_of_Bourbon-Parma a :Man .
-
-  data:Princess_Carolina a :Woman .
-
-  data:Princess_Irene_of_the_Netherlands a :Woman .
-
-  data:Princess_Margarita a :Woman .
-
-  data:Prince_Carlos_Duke_of_Parma_and_Piacenza a :Man ;
-      :hasBirthYear 1970 ;
-      :hasBrother data:Prince_Jaime ;
-      :hasFather data:Carlos_Hugo_Duke_of_Parma ;
-      :hasMarriageYear 2010 ;
-      :hasMother data:Princess_Irene_of_the_Netherlands ;
-      :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel ;
-      :hasSister data:Princess_Carolina,
-          data:Princess_Margarita .
+  data:Wilhelm_II_German_Emperor a :Man,
+          :Person .
 
 
 
@@ -788,206 +718,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (9cb99353-fc73-495a-8e3c-57f3e13feff7)
- Call ID: 9cb99353-fc73-495a-8e3c-57f3e13feff7
+  ValidateShacl (e4c824ca-3dcb-4a01-8918-e0cdb7bf2d0f)
+ Call ID: e4c824ca-3dcb-4a01-8918-e0cdb7bf2d0f
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:24
+Total violations:12
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Xavier_of_Bourbon-Parma is missing the required class :Ancestor.
+      The value Wilhelm_II_German_Emperor assigned as the father of Prince_Adalbert_of_Prussia is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Xavier_of_Bourbon-Parma, :Ancestor)
+      AssignClass(Wilhelm_II_German_Emperor, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Carlos_Hugo_Duke_of_Parma is missing the required class :Ancestor.
+      The value Augusta_Victoria_of_Schleswig-Holstein assigned as the mother of Prince_Adalbert_of_Prussia is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Carlos_Hugo_Duke_of_Parma, :Ancestor)
+      AssignClass(Augusta_Victoria_of_Schleswig-Holstein, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Carlos_Duke_of_Parma_and_Piacenza is missing the required class :Ancestor.
+      The value Wilhelm_II_German_Emperor assigned as the father of Prince_Adalbert_of_Prussia is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Carlos_Duke_of_Parma_and_Piacenza, :Ancestor)
+      AssignClass(Wilhelm_II_German_Emperor, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Carlos_Duke_of_Parma_and_Piacenza is missing the required class :Ancestor.
+      The value Prince_Frederick_of_Saxe-Meiningen assigned as the father of Princess_Adelheid_of_Saxe-Meiningen is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Carlos_Duke_of_Parma_and_Piacenza, :Ancestor)
+      AssignClass(Prince_Frederick_of_Saxe-Meiningen, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Princess_Irene_of_the_Netherlands is missing the required class :Ancestor.
+      The value Augusta_Victoria_of_Schleswig-Holstein assigned as the mother of Prince_Adalbert_of_Prussia is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Irene_of_the_Netherlands, :Ancestor)
+      AssignClass(Augusta_Victoria_of_Schleswig-Holstein, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Brigitte_Klynstra is missing the required class :Ancestor.
+      The value Countess_Adelaide_of_Lippe-Biesterfeld assigned as the mother of Princess_Adelheid_of_Saxe-Meiningen is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Brigitte_Klynstra, :Ancestor)
+      AssignClass(Countess_Adelaide_of_Lippe-Biesterfeld, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Xavier_of_Bourbon-Parma is missing the required class :Ancestor.
+      The value Wilhelm_II_German_Emperor assigned as the father of Prince_Adalbert_of_Prussia is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Xavier_of_Bourbon-Parma, :Ancestor)
+      AssignClass(Wilhelm_II_German_Emperor, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Carlos_Duke_of_Parma_and_Piacenza is missing the required class :Ancestor.
+      The value Prince_Frederick_of_Saxe-Meiningen assigned as the father of Princess_Adelheid_of_Saxe-Meiningen is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Carlos_Duke_of_Parma_and_Piacenza, :Ancestor)
+      AssignClass(Prince_Frederick_of_Saxe-Meiningen, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Prince_Carlos_Duke_of_Parma_and_Piacenza is missing the required class :Ancestor.
+      The value Augusta_Victoria_of_Schleswig-Holstein assigned as the mother of Prince_Adalbert_of_Prussia is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Carlos_Duke_of_Parma_and_Piacenza, :Ancestor)
+      AssignClass(Augusta_Victoria_of_Schleswig-Holstein, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Carlos_Hugo_Duke_of_Parma is missing the required class :Ancestor.
+      The value Countess_Adelaide_of_Lippe-Biesterfeld assigned as the mother of Princess_Adelheid_of_Saxe-Meiningen is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Carlos_Hugo_Duke_of_Parma, :Ancestor)
+      AssignClass(Countess_Adelaide_of_Lippe-Biesterfeld, :Ancestor)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Carlos_Duke_of_Parma_and_Piacenza is missing the required class :Ancestor.
+      The value Prince_Frederick_of_Saxe-Meiningen assigned as the father of Princess_Adelheid_of_Saxe-Meiningen is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Carlos_Duke_of_Parma_and_Piacenza, :Ancestor)
+      AssignClass(Prince_Frederick_of_Saxe-Meiningen, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Carlos_Duke_of_Parma_and_Piacenza is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Carlos_Duke_of_Parma_and_Piacenza, :Ancestor)
-
-
-  Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Princess_Irene_of_the_Netherlands is missing the required class :Ancestor.
+      The value Countess_Adelaide_of_Lippe-Biesterfeld assigned as the mother of Princess_Adelheid_of_Saxe-Meiningen is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Irene_of_the_Netherlands, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Brigitte_Klynstra is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Brigitte_Klynstra, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Xavier_of_Bourbon-Parma is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Xavier_of_Bourbon-Parma, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Carlos_Duke_of_Parma_and_Piacenza is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Carlos_Duke_of_Parma_and_Piacenza, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Carlos_Duke_of_Parma_and_Piacenza is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Carlos_Duke_of_Parma_and_Piacenza, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Carlos_Hugo_Duke_of_Parma is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Carlos_Hugo_Duke_of_Parma, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Carlos_Duke_of_Parma_and_Piacenza is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Carlos_Duke_of_Parma_and_Piacenza, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Carlos_Duke_of_Parma_and_Piacenza is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Carlos_Duke_of_Parma_and_Piacenza, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Princess_Irene_of_the_Netherlands is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Irene_of_the_Netherlands, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Brigitte_Klynstra is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Brigitte_Klynstra, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Carlos_Duke_of_Parma_and_Piacenza is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Carlos_Duke_of_Parma_and_Piacenza, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Prince_Carlos_Duke_of_Parma_and_Piacenza is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Carlos_Duke_of_Parma_and_Piacenza, :Ancestor)
+      AssignClass(Countess_Adelaide_of_Lippe-Biesterfeld, :Ancestor)
 
 
 
@@ -996,38 +830,29 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (53f6a3d1-8a34-4e63-9687-b07d39a99fd5)
- Call ID: 53f6a3d1-8a34-4e63-9687-b07d39a99fd5
+  AssignClass (7916127e-ab4a-496c-acd3-bba1649171c7)
+ Call ID: 7916127e-ab4a-496c-acd3-bba1649171c7
+  Args:
+    source: Wilhelm_II_German_Emperor
+    type: :Ancestor
+  AssignClass (2c24e263-8111-487f-8842-2c33b1dca46a)
+ Call ID: 2c24e263-8111-487f-8842-2c33b1dca46a
   Args:
     type: :Ancestor
-    source: Prince_Xavier_of_Bourbon-Parma
-  AssignClass (b38fe348-3ba8-449b-9c4b-d93d7729c3c5)
- Call ID: b38fe348-3ba8-449b-9c4b-d93d7729c3c5
+    source: Augusta_Victoria_of_Schleswig-Holstein
+  AssignClass (e6351a65-b796-4a3f-b51e-535c502d7049)
+ Call ID: e6351a65-b796-4a3f-b51e-535c502d7049
   Args:
     type: :Ancestor
-    source: Carlos_Hugo_Duke_of_Parma
-  AssignClass (edc87f31-33c6-43e4-9339-15f1682037fe)
- Call ID: edc87f31-33c6-43e4-9339-15f1682037fe
+    source: Prince_Frederick_of_Saxe-Meiningen
+  AssignClass (7ae749c3-645b-45ea-bedf-6c64bf9078ce)
+ Call ID: 7ae749c3-645b-45ea-bedf-6c64bf9078ce
   Args:
     type: :Ancestor
-    source: Prince_Carlos_Duke_of_Parma_and_Piacenza
-  AssignClass (a176b15d-d03d-439f-8754-4dcbbddb0dd0)
- Call ID: a176b15d-d03d-439f-8754-4dcbbddb0dd0
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
+  Finish (bea79940-787d-45be-bc61-aa0fe269e705)
+ Call ID: bea79940-787d-45be-bc61-aa0fe269e705
   Args:
-    type: :Ancestor
-    source: Princess_Irene_of_the_Netherlands
-  AssignClass (112c45f9-0659-44c9-8a18-803e52c27c16)
- Call ID: 112c45f9-0659-44c9-8a18-803e52c27c16
-  Args:
-    type: :Ancestor
-    source: Brigitte_Klynstra
-  ValidateShacl (31a46516-a732-43e6-a73c-eab55865022d)
- Call ID: 31a46516-a732-43e6-a73c-eab55865022d
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1048,52 +873,51 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Carlos_Klynstra a :Man ;
-      :hasFather data:Prince_Carlos_Duke_of_Parma_and_Piacenza ;
-      :hasMother data:Brigitte_Klynstra .
+  data:Prince_Adalbert_of_Prussia a :Man,
+          :Person ;
+      :hasBirthYear 1884 ;
+      :hasDeathYear 1948 ;
+      :hasFather data:Wilhelm_II_German_Emperor ;
+      :hasMarriageYear 1914 ;
+      :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+      :hasRelation data:Princess_Adelheid_of_Saxe-Meiningen .
 
-  data:Prince_Carlos_Enrique a :Man ;
-      :hasFather data:Prince_Carlos_Duke_of_Parma_and_Piacenza .
-
-  data:Princess_Cecilia a :Woman ;
-      :hasFather data:Prince_Carlos_Duke_of_Parma_and_Piacenza .
-
-  data:Princess_Luisa a :Woman ;
-      :hasFather data:Prince_Carlos_Duke_of_Parma_and_Piacenza .
-
-  data:Annemarie_Gualth%C3%A9rie_van_Weezel a :Woman .
-
-  data:Brigitte_Klynstra a :Ancestor,
+  data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Carlos_Hugo_Duke_of_Parma a :Ancestor,
-          :Man ;
-      :hasFather data:Prince_Xavier_of_Bourbon-Parma .
-
-  data:Prince_Jaime a :Man .
-
-  data:Prince_Xavier_of_Bourbon-Parma a :Ancestor,
-          :Man .
-
-  data:Princess_Carolina a :Woman .
-
-  data:Princess_Irene_of_the_Netherlands a :Ancestor,
+  data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Princess_Margarita a :Woman .
+  data:Prince_Frederick_of_Saxe-Meiningen a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Prince_Carlos_Duke_of_Parma_and_Piacenza a :Ancestor,
-          :Man ;
-      :hasBirthYear 1970 ;
-      :hasBrother data:Prince_Jaime ;
-      :hasFather data:Carlos_Hugo_Duke_of_Parma ;
-      :hasMarriageYear 2010 ;
-      :hasMother data:Princess_Irene_of_the_Netherlands ;
-      :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel ;
-      :hasSister data:Princess_Carolina,
-          data:Princess_Margarita .
+  data:Princess_Adelheid_of_Saxe-Meiningen a :Person,
+          :Woman ;
+      :hasBirthYear 1891 ;
+      :hasDeathYear 1971 ;
+      :hasFather data:Prince_Frederick_of_Saxe-Meiningen ;
+      :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld .
+
+  data:Wilhelm_II_German_Emperor a :Ancestor,
+          :Man,
+          :Person .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (c28e9196-1191-459f-9222-eeac8f819a27)
+ Call ID: c28e9196-1191-459f-9222-eeac8f819a27
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1103,6 +927,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (506aa254-3cae-4416-ab4d-21aecfaaf1cf)
- Call ID: 506aa254-3cae-4416-ab4d-21aecfaaf1cf
+  Finish (87c9b719-bef0-4d9f-aa28-3be4ca4940e2)
+ Call ID: 87c9b719-bef0-4d9f-aa28-3be4ca4940e2
   Args:

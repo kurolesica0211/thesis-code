@@ -4,13 +4,69 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Denys_Rhodes a :Man,\n        :Person .\n\ndata:John_Alexander_Elphinstone a :Man,\n        :Person ;\n    :hasBirthYear 1914 ;\n    :hasBrother data:Andrew_Charles_Victor_Elphinstone ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Sidney_Elphinstone ;\n    :hasMother data:Lady_Mary_Bowes-Lyon ;\n    :hasRelation data:Princess_Margaret,\n        data:Queen_Elizabeth_II ;\n    :hasSister data:Margaret_Elphinstone .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Person,\n        :Woman .\n\ndata:Alexander_Murray a :Man,\n        :Person .\n\ndata:Andrew_Charles_Victor_Elphinstone a :Man,\n        :Person .\n\ndata:Lady_Constance_Euphemia_Woronzow_Murray a :Person,\n        :Woman ;\n    :hasFather data:Alexander_Murray .\n\ndata:Lady_Mary_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Margaret_Elphinstone a :Person,\n        :Woman .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Sidney_Elphinstone a :Man,\n        :Person ;\n    :hasFather data:William_Elphinstone ;\n    :hasMother data:Lady_Constance_Euphemia_Woronzow_Murray .\n\ndata:William_Elphinstone a :Man,\n        :Person .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 1,
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man ;\n    :hasBirthYear 1883 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Emperor_Wilhelm_II_of_Germany a :Man .\n\ndata:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Emperor_Wilhelm_II_of_Germany a :Man .\n\ndata:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 .\n\ndata:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Emperor_Wilhelm_II_of_Germany .\n\ndata:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg a :Woman .\n\ndata:Emperor_Wilhelm_II_of_Germany a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Emperor_Wilhelm_II_of_Germany ;\n    :hasMother data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg .\n\ndata:Emperor_Wilhelm_II_of_Germany a :Man .\n\ndata:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Duchess_Sophia_Charlotte_of_Oldenburg a :Woman .\n\ndata:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Emperor_Wilhelm_II_of_Germany ;\n    :hasMother data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg .\n\ndata:Emperor_Wilhelm_II_of_Germany a :Man .\n\ndata:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 9,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Duchess_Sophia_Charlotte_of_Oldenburg a :Woman .\n\ndata:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Emperor_Wilhelm_II_of_Germany ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg .\n\ndata:Emperor_Wilhelm_II_of_Germany a :Man .\n\ndata:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 10,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Denys_Rhodes a :Man,\n        :Person .\n\ndata:John_Alexander_Elphinstone a :Man,\n        :Person ;\n    :hasBirthYear 1914 ;\n    :hasBrother data:Andrew_Charles_Victor_Elphinstone ;\n    :hasDeathYear 1975 ;\n    :hasFather data:Sidney_Elphinstone ;\n    :hasMother data:Lady_Mary_Bowes-Lyon ;\n    :hasRelation data:Princess_Margaret,\n        data:Queen_Elizabeth_II ;\n    :hasSister data:Margaret_Elphinstone .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Person,\n        :Woman .\n\ndata:Alexander_Murray a :Man,\n        :Person .\n\ndata:Andrew_Charles_Victor_Elphinstone a :Man,\n        :Person .\n\ndata:Lady_Constance_Euphemia_Woronzow_Murray a :Person,\n        :Woman ;\n    :hasFather data:Alexander_Murray .\n\ndata:Lady_Mary_Bowes-Lyon a :Person,\n        :Woman .\n\ndata:Margaret_Elphinstone a :Person,\n        :Woman .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Sidney_Elphinstone a :Man,\n        :Person ;\n    :hasFather data:William_Elphinstone ;\n    :hasMother data:Lady_Constance_Euphemia_Woronzow_Murray .\n\ndata:William_Elphinstone a :Man,\n        :Person .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Duchess_Sophia_Charlotte_of_Oldenburg a :Woman .\n\ndata:Prince_Wilhelm_Eitel_Friedrich_Christian_Karl_of_Prussia a :Man ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1942 ;\n    :hasFather data:Emperor_Wilhelm_II_of_Germany ;\n    :hasMarriageYear 1906 ;\n    :hasMother data:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg .\n\ndata:Emperor_Wilhelm_II_of_Germany a :Man .\n\ndata:Princess_Augusta_Viktoria_of_Schleswig-Holstein-Sonderburg-Augustenburg a :Woman .\n\n"
     }
 ]

@@ -2,38 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Clare_Husted_Steel a :Person,
-        :Woman .
-
-data:George_Ivar_Louis_Mountbatten a :Man,
-        :Person ;
-    :hasBirthYear 1961 ;
-    :hasBrother data:Lord_Ivar_Mountbatten ;
-    :hasFather data:3rd_Marquess_of_Milford_Haven ;
-    :hasMarriageYear 1989,
-        1997 ;
-    :hasMother data:Janet_Mercedes_Bryce .
-
-data:Michael_Spencer a :Man,
-        :Person .
-
-data:Sarah_Georgina_Walker a :Person,
+data:Amanda_Knatchbull a :Person,
         :Woman ;
-    :hasFather data:George_Alfred_Walker ;
-    :hasMother data:Jean_Maureen_Hatton .
+    :isDaughterOf data:John_Knatchbull,
+        data:Patricia_Mountbatten .
 
-data:3rd_Marquess_of_Milford_Haven a :Man,
+data:Nicholas_Knatchbull a :Man,
+        :Person ;
+    :isSonOf data:John_Knatchbull,
+        data:Patricia_Mountbatten .
+
+data:Earl_Mountbatten_of_Burma a :Man,
         :Person .
 
-data:George_Alfred_Walker a :Man,
-        :Person .
-
-data:Janet_Mercedes_Bryce a :Person,
+data:Edwina_Ashley a :Person,
         :Woman .
 
-data:Jean_Maureen_Hatton a :Person,
+data:Lady_Pamela_Hicks a :Person,
         :Woman .
 
-data:Lord_Ivar_Mountbatten a :Man,
-        :Person .
+data:Patricia_Mountbatten a :Person,
+        :Woman ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Earl_Mountbatten_of_Burma ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:Edwina_Ashley ;
+    :hasRelation data:John_Knatchbull ;
+    :isSisterOf data:Lady_Pamela_Hicks .
+
+data:John_Knatchbull a :Man,
+        :Person ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2005 .
 

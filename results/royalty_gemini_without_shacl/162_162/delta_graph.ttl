@@ -2,30 +2,66 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Infanta_Margarita a :Person,
-        :Woman ;
-    :hasBirthYear 1939 ;
-    :hasFather data:Infante_Juan ;
-    :hasMarriageYear 1972 ;
-    :hasMother data:Princess_Mercedes ;
-    :hasRelation data:Carlos_Zurita_y_Delgado ;
-    :isAuntOf data:Felipe_VI ;
-    :isSisterOf data:Juan_Carlos_I .
-
-data:Carlos_Zurita_y_Delgado a :Man,
-        :Person .
-
-data:Felipe_VI a :Man,
-        :Person .
-
-data:Juan_Carlos_I a :Man,
+data:Louis_Philippe_I_of_France a :Man,
         :Person ;
-    :hasFather data:Infante_Juan ;
-    :hasMother data:Princess_Mercedes .
+    :isFatherOf data:Antoine_Duke_of_Montpensier,
+        data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans .
 
-data:Infante_Juan a :Man,
+data:Lu%C3%ADs_Filipe_Prince_Royal_of_Portugal a :Man,
+        :Person ;
+    :hasFather data:Carlos_I_of_Portugal ;
+    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
+
+data:Manuel_II_of_Portugal a :Man,
+        :Person ;
+    :hasFather data:Carlos_I_of_Portugal ;
+    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
+
+data:Maria_Amalia_of_the_Person a :Person .
+
+data:Maria_Amalia_of_the_Two_Sicilies a :Woman ;
+    :isMotherOf data:Antoine_Duke_of_Montpensier,
+        data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans .
+
+data:Helena_of_Mecklenburg_Schwerin a :Person,
+        :Woman .
+
+data:Lu%C3%ADs_I_of_Portugal a :Man,
         :Person .
 
-data:Princess_Mercedes a :Person,
+data:Luisa_Fernanda_of_Spain a :Person,
         :Woman .
+
+data:Maria_Pia_of_Savoy a :Person,
+        :Woman .
+
+data:Marie_Isabelle_dOrl%C3%A9ans a :Person,
+        :Woman ;
+    :hasFather data:Antoine_Duke_of_Montpensier ;
+    :hasMother data:Luisa_Fernanda_of_Spain .
+
+data:Philippe_Count_of_Paris a :Man,
+        :Person ;
+    :hasFather data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+    :hasMother data:Helena_of_Mecklenburg_Schwerin .
+
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasBirthYear 1865 ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasMarriageYear 1886 ;
+    :hasMother data:Marie_Isabelle_dOrl%C3%A9ans ;
+    :hasRelation data:Carlos_I_of_Portugal .
+
+data:Antoine_Duke_of_Montpensier a :Man,
+        :Person .
+
+data:Carlos_I_of_Portugal a :Man,
+        :Person ;
+    :hasFather data:Lu%C3%ADs_I_of_Portugal ;
+    :hasMother data:Maria_Pia_of_Savoy .
+
+data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans a :Man,
+        :Person .
 

@@ -2,40 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Ludwik_Piotr_Czartoryski a :Man,
-        :Person ;
-    :hasDeathYear 1946 ;
-    :hasFather data:Augustyn_Jozef_Czartoryski ;
-    :hasMother data:Maria_de_los_Dolores_of_Bourbon-Two_Sicilies ;
-    :hasSex data:Male .
-
-data:Tamara_Czartoryski a :Person,
+data:Elizabeth_II a :Person,
         :Woman ;
-    :hasFather data:Adam_Karol_Czartoryski ;
-    :hasSex data:Female .
+    :hasFather data:George_VI ;
+    :hasMother data:Elizabeth_Bowes-Lyon .
 
-data:Adam_Karol_Czartoryski a :Ancestor,
+data:Margaret a :Person,
+        :Woman ;
+    :hasFather data:George_VI ;
+    :hasMother data:Elizabeth_Bowes-Lyon .
+
+data:Duke_of_Kent a :Man,
+        :Person .
+
+data:Edward_VIII a :Man,
+        :Person .
+
+data:George_V a :Ancestor,
         :Man,
-        :Person ;
-    :hasBirthYear 1940 ;
-    :hasFather data:Augustyn_Jozef_Czartoryski ;
-    :hasMother data:Maria_de_los_Dolores_of_Bourbon-Two_Sicilies ;
-    :hasSex data:Male .
+        :Person .
 
-data:Augustyn_Jozef_Czartoryski a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1907 ;
-    :hasDeathYear 1946 ;
-    :hasSex data:Male .
+data:Prince_Henry a :Man,
+        :Person .
 
-data:Female a :Female .
-
-data:Maria_de_los_Dolores_of_Bourbon-Two_Sicilies a :Ancestor,
+data:Queen_Mary a :Ancestor,
         :Person,
-        :Woman ;
-    :hasDeathYear 1996 ;
-    :hasSex data:Female .
+        :Woman .
 
-data:Male a :Male .
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1895 ;
+    :hasBrother data:Duke_of_Kent,
+        data:Edward_VIII,
+        data:Prince_Henry ;
+    :hasDeathYear 1952 ;
+    :hasFather data:George_V ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Queen_Mary ;
+    :hasRelation data:Elizabeth_Bowes-Lyon ;
+    :knownAs "Bertie"^^xsd:string .
+
+data:Elizabeth_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman .
 

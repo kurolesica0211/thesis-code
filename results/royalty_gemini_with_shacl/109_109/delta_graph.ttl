@@ -2,46 +2,28 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Cristina_of_Spain a :Person,
-        :Woman ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Sofia_of_Spain .
-
-data:Elena_of_Spain a :Person,
-        :Woman ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Sofia_of_Spain .
-
-data:Infanta_Sofia a :Person,
-        :Woman ;
-    :hasBirthYear 2007 ;
-    :hasFather data:Felipe_VI ;
-    :hasMother data:Letizia_Ortiz_Rocasolano .
-
-data:Leonor_Princess_of_Asturias a :Person,
-        :Woman ;
-    :hasBirthYear 2005 ;
-    :hasFather data:Felipe_VI ;
-    :hasMother data:Letizia_Ortiz_Rocasolano .
-
-data:Felipe_VI a :Ancestor,
-        :Man,
-        :Person ;
+data:Felipe_VI a :Man ;
     :hasBirthYear 1968 ;
+    :hasChild data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias ;
     :hasFather data:Juan_Carlos_I ;
     :hasMarriageYear 2004 ;
-    :hasMother data:Sofia_of_Spain ;
+    :hasMother data:Sofia_of_Greece_and_Denmark ;
     :hasRelation data:Letizia_Ortiz_Rocasolano .
 
 data:Juan_Carlos_I a :Ancestor,
-        :Man,
-        :Person .
+        :Man .
 
-data:Letizia_Ortiz_Rocasolano a :Ancestor,
-        :Person,
+data:Letizia_Ortiz_Rocasolano a :Woman ;
+    :hasChild data:Infanta_Sofia,
+        data:Leonor_Princess_of_Asturias .
+
+data:Sofia_of_Greece_and_Denmark a :Ancestor,
         :Woman .
 
-data:Sofia_of_Spain a :Ancestor,
-        :Person,
-        :Woman .
+data:Infanta_Sofia a :Woman ;
+    :hasBirthYear 2007 .
+
+data:Leonor_Princess_of_Asturias a :Woman ;
+    :hasBirthYear 2005 .
 

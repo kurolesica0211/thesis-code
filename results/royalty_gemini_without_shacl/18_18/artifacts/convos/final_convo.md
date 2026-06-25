@@ -99,6 +99,8 @@ Her funeral was attended by the Spanish Royal Family, including King Juan Carlos
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -114,39 +116,9 @@ Her funeral was attended by the Spanish Royal Family, including King Juan Carlos
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -161,6 +133,23 @@ Her funeral was attended by the Spanish Royal Family, including King Juan Carlos
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -178,6 +167,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -245,29 +249,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -276,6 +272,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -288,6 +292,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -296,17 +302,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -334,6 +342,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -349,420 +441,181 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (cce13573-4edd-454f-9278-2f1e67c20365)
- Call ID: cce13573-4edd-454f-9278-2f1e67c20365
+  AssignClass (2ab76ef0-479c-4b90-bc5e-13723059df59)
+ Call ID: 2ab76ef0-479c-4b90-bc5e-13723059df59
   Args:
     source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
     type: :Woman
-  AssignClass (bde29af2-e015-4732-9aec-2adbe60527b1)
- Call ID: bde29af2-e015-4732-9aec-2adbe60527b1
+  AssignClass (f5372fb9-0065-4fa0-af71-12aa9cb0ecd5)
+ Call ID: f5372fb9-0065-4fa0-af71-12aa9cb0ecd5
   Args:
     type: :Person
     source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
-  AddLiteral (4ed1621d-56dc-484a-989e-06d6e1402bc0)
- Call ID: 4ed1621d-56dc-484a-989e-06d6e1402bc0
+  AddLiteral (3e68e5be-73d0-45f8-8420-3de1a25c1471)
+ Call ID: 3e68e5be-73d0-45f8-8420-3de1a25c1471
   Args:
-    literal_type: xsd:integer
     source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
+    literal_type: xsd:integer
     literal_value: 1914
     relation: :hasBirthYear
-  AddLiteral (febbd183-217b-4275-900b-db07babf4d17)
- Call ID: febbd183-217b-4275-900b-db07babf4d17
+  AddLiteral (d39a915b-f6cb-471c-8c1e-bd83c082ad34)
+ Call ID: d39a915b-f6cb-471c-8c1e-bd83c082ad34
   Args:
     relation: :hasDeathYear
-    source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
-    literal_value: 2005
     literal_type: xsd:integer
-  AssignClass (76305dae-ac3e-4123-873c-e4853c4b7c05)
- Call ID: 76305dae-ac3e-4123-873c-e4853c4b7c05
+    literal_value: 2005
+    source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
+  AssignClass (8eb7b8d6-5f23-4d36-810e-b50da152f828)
+ Call ID: 8eb7b8d6-5f23-4d36-810e-b50da152f828
+  Args:
+    type: :Man
+    source: Prince_Pedro_Gastao_of_Orleans-Braganza
+  AssignClass (e24d832f-a4a6-4ad1-8e09-75e33fb256fd)
+ Call ID: e24d832f-a4a6-4ad1-8e09-75e33fb256fd
+  Args:
+    source: Prince_Pedro_Gastao_of_Orleans-Braganza
+    type: :Person
+  AddTriple (3cde512b-f9f2-449f-895a-efb1f3263bfe)
+ Call ID: 3cde512b-f9f2-449f-895a-efb1f3263bfe
+  Args:
+    target: Prince_Pedro_Gastao_of_Orleans-Braganza
+    source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
+    relation: :hasRelation
+  AddLiteral (4838c514-acbe-464d-8321-d2008a59a705)
+ Call ID: 4838c514-acbe-464d-8321-d2008a59a705
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 1944
+    source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
+  AssignClass (67b3b50f-92ee-47a8-a018-38c9da275182)
+ Call ID: 67b3b50f-92ee-47a8-a018-38c9da275182
+  Args:
+    source: King_Juan_Carlos_I_of_Spain
+    type: :Man
+  AssignClass (55f49cb7-0186-4dcc-a340-c2c592edf422)
+ Call ID: 55f49cb7-0186-4dcc-a340-c2c592edf422
+  Args:
+    type: :Person
+    source: King_Juan_Carlos_I_of_Spain
+  AddTriple (631c8089-6654-4406-9b1e-2fb2bd38c6a4)
+ Call ID: 631c8089-6654-4406-9b1e-2fb2bd38c6a4
+  Args:
+    target: King_Juan_Carlos_I_of_Spain
+    source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
+    relation: :isAuntOf
+  AssignClass (9b4162e6-b367-4b5a-89ac-2ce9a07e9fb4)
+ Call ID: 9b4162e6-b367-4b5a-89ac-2ce9a07e9fb4
   Args:
     type: :Man
     source: Prince_Carlos_of_Bourbon-Two_Sicilies
-  AssignClass (cea182a8-7b6e-4196-905f-9be30e40942d)
- Call ID: cea182a8-7b6e-4196-905f-9be30e40942d
+  AssignClass (aad3ecc5-f049-43ed-a266-7e5ec6ce2d38)
+ Call ID: aad3ecc5-f049-43ed-a266-7e5ec6ce2d38
   Args:
     source: Prince_Carlos_of_Bourbon-Two_Sicilies
     type: :Person
-  AssignClass (ab48bd98-55a7-4ab0-8f30-07f6e33c7239)
- Call ID: ab48bd98-55a7-4ab0-8f30-07f6e33c7239
+  AddTriple (9981745a-3753-4fbc-b473-a6a6c57bf7bb)
+ Call ID: 9981745a-3753-4fbc-b473-a6a6c57bf7bb
   Args:
-    type: :Woman
+    relation: :hasFather
+    source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
+    target: Prince_Carlos_of_Bourbon-Two_Sicilies
+  AssignClass (4025dd47-1124-4376-bc5a-cdc73620ecbc)
+ Call ID: 4025dd47-1124-4376-bc5a-cdc73620ecbc
+  Args:
     source: Princess_Louise_of_Orleans
-  AssignClass (4045f159-dd1c-4729-a476-1cdba03c9d59)
- Call ID: 4045f159-dd1c-4729-a476-1cdba03c9d59
+    type: :Woman
+  AssignClass (7a3ae055-20b4-4d84-9a59-6df7e49c3c1b)
+ Call ID: 7a3ae055-20b4-4d84-9a59-6df7e49c3c1b
   Args:
     type: :Person
     source: Princess_Louise_of_Orleans
-  AddTriple (e6261527-7032-46b2-b62d-18c88c14ac32)
- Call ID: e6261527-7032-46b2-b62d-18c88c14ac32
-  Args:
-    source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
-    relation: :hasFather
-    target: Prince_Carlos_of_Bourbon-Two_Sicilies
-  AddTriple (831cfb1b-389b-4c49-9126-d153ed48f58f)
- Call ID: 831cfb1b-389b-4c49-9126-d153ed48f58f
+  AddTriple (35113783-d247-477a-8936-54d540837aa2)
+ Call ID: 35113783-d247-477a-8936-54d540837aa2
   Args:
     source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
     relation: :hasMother
     target: Princess_Louise_of_Orleans
-  AssignClass (4f1ba370-729c-4a09-8414-e6ddfc73b1aa)
- Call ID: 4f1ba370-729c-4a09-8414-e6ddfc73b1aa
+  AssignClass (45db567b-6e02-48b2-b020-a1d97c2f5f07)
+ Call ID: 45db567b-6e02-48b2-b020-a1d97c2f5f07
   Args:
     type: :Man
     source: Philippe_Count_of_Paris
-  AssignClass (11f0c811-8dd0-4578-90c7-23c6085f1a84)
- Call ID: 11f0c811-8dd0-4578-90c7-23c6085f1a84
+  AssignClass (5fadf472-11ca-416c-a0c1-85865cdb91bc)
+ Call ID: 5fadf472-11ca-416c-a0c1-85865cdb91bc
   Args:
-    source: Philippe_Count_of_Paris
     type: :Person
-  AddTriple (14b6c6c0-c1a6-41c5-90c5-45616c656538)
- Call ID: 14b6c6c0-c1a6-41c5-90c5-45616c656538
+    source: Philippe_Count_of_Paris
+  AddTriple (6c7448d8-a375-40c6-bca6-ef7b9309286f)
+ Call ID: 6c7448d8-a375-40c6-bca6-ef7b9309286f
   Args:
+    target: Philippe_Count_of_Paris
     source: Princess_Louise_of_Orleans
     relation: :hasFather
-    target: Philippe_Count_of_Paris
-  AssignClass (65b5a495-5aff-4fc6-a010-51b284b31344)
- Call ID: 65b5a495-5aff-4fc6-a010-51b284b31344
+  AssignClass (381ac310-9013-4d73-b924-ef147ae79863)
+ Call ID: 381ac310-9013-4d73-b924-ef147ae79863
   Args:
     source: Princess_Maria_de_las_Mercedes
     type: :Woman
-  AssignClass (58c5c33a-cd23-42c4-a013-d5a08c1a6976)
- Call ID: 58c5c33a-cd23-42c4-a013-d5a08c1a6976
+  AssignClass (8abbdb3e-6a07-4ffd-a376-d24c1fb553c5)
+ Call ID: 8abbdb3e-6a07-4ffd-a376-d24c1fb553c5
   Args:
     source: Princess_Maria_de_las_Mercedes
     type: :Person
-  AddTriple (c1311b07-b831-43a4-b64c-b60ed1d2b535)
- Call ID: c1311b07-b831-43a4-b64c-b60ed1d2b535
+  AddTriple (a47990e1-96ab-4d8e-a683-d5473b26a620)
+ Call ID: a47990e1-96ab-4d8e-a683-d5473b26a620
   Args:
-    relation: :isSisterOf
     target: Princess_Maria_de_las_Mercedes
+    relation: :hasSister
     source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
-  AssignClass (82daffd6-4f35-469d-aef7-5a2891c9a98e)
- Call ID: 82daffd6-4f35-469d-aef7-5a2891c9a98e
+  AssignClass (131b810d-0684-448d-be9d-dbbbedff3529)
+ Call ID: 131b810d-0684-448d-be9d-dbbbedff3529
   Args:
     type: :Man
     source: Infante_Juan_Count_of_Barcelona
-  AssignClass (9a248a3f-6a20-4d44-b1c9-98482bbb95d6)
- Call ID: 9a248a3f-6a20-4d44-b1c9-98482bbb95d6
+  AssignClass (dbc731b8-bcc8-4437-accc-66fb9d8752bc)
+ Call ID: dbc731b8-bcc8-4437-accc-66fb9d8752bc
   Args:
-    type: :Person
     source: Infante_Juan_Count_of_Barcelona
-  AddTriple (2c3d0bdc-7552-4fe0-9148-e2e30fb4fccf)
- Call ID: 2c3d0bdc-7552-4fe0-9148-e2e30fb4fccf
+    type: :Person
+  AddTriple (2a8e34d1-088e-423f-83cf-963f52b16bc1)
+ Call ID: 2a8e34d1-088e-423f-83cf-963f52b16bc1
   Args:
-    relation: :hasFather
-    target: Infante_Juan_Count_of_Barcelona
-    source: King_Juan_Carlos_I
-  AddTriple (7d1002a1-459d-4cb8-a84a-7efc84df650d)
- Call ID: 7d1002a1-459d-4cb8-a84a-7efc84df650d
-  Args:
-    source: King_Juan_Carlos_I
     target: Princess_Maria_de_las_Mercedes
     relation: :hasMother
-  AssignClass (61d5c7d4-7d87-438f-a6f7-9c6cfe538f6d)
- Call ID: 61d5c7d4-7d87-438f-a6f7-9c6cfe538f6d
+    source: King_Juan_Carlos_I_of_Spain
+  AddTriple (eafbeb90-eda5-4063-99a6-cdb2e4943f9e)
+ Call ID: eafbeb90-eda5-4063-99a6-cdb2e4943f9e
   Args:
-    type: :Man
-    source: Prince_Pedro_Gastao_of_Orleans-Braganza
-  AssignClass (41bffb3e-e5e1-4c15-8edd-1dd0b8846a18)
- Call ID: 41bffb3e-e5e1-4c15-8edd-1dd0b8846a18
-  Args:
-    source: Prince_Pedro_Gastao_of_Orleans-Braganza
-    type: :Person
-  AddLiteral (c836cf8e-7a04-414b-9002-878859ab84a0)
- Call ID: c836cf8e-7a04-414b-9002-878859ab84a0
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1944
-    source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
-    relation: :hasMarriageYear
-  AddTriple (9294c22b-008f-4eba-aa06-b04d4a58c691)
- Call ID: 9294c22b-008f-4eba-aa06-b04d4a58c691
-  Args:
-    source: Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies
-    relation: :hasRelation
-    target: Prince_Pedro_Gastao_of_Orleans-Braganza
-  AssignClass (0ad480e4-a46d-4e8e-829a-19ff9a202226)
- Call ID: 0ad480e4-a46d-4e8e-829a-19ff9a202226
-  Args:
-    source: Prince_Pedro_de_Alcantara_of_Orleans-Braganza
-    type: :Man
-  AssignClass (0d17cb8b-d749-4449-8ae3-4f7d7d055aed)
- Call ID: 0d17cb8b-d749-4449-8ae3-4f7d7d055aed
-  Args:
-    type: :Person
-    source: Prince_Pedro_de_Alcantara_of_Orleans-Braganza
-  AddTriple (4b22d6b8-b8ea-4730-a0a7-d9948d15cd13)
- Call ID: 4b22d6b8-b8ea-4730-a0a7-d9948d15cd13
-  Args:
-    source: Prince_Pedro_Gastao_of_Orleans-Braganza
+    target: Infante_Juan_Count_of_Barcelona
+    source: King_Juan_Carlos_I_of_Spain
     relation: :hasFather
-    target: Prince_Pedro_de_Alcantara_of_Orleans-Braganza
-  AssignClass (24e9e58a-979c-4e44-aeb4-e327e6e921ce)
- Call ID: 24e9e58a-979c-4e44-aeb4-e327e6e921ce
+  AssignClass (fc1b47c2-9f35-4a64-a75f-f8534fcf53e5)
+ Call ID: fc1b47c2-9f35-4a64-a75f-f8534fcf53e5
   Args:
-    type: :Woman
-    source: Queen_Sofia
-  AssignClass (41ac97d0-1dce-4a98-96ef-d95443e33f59)
- Call ID: 41ac97d0-1dce-4a98-96ef-d95443e33f59
-  Args:
-    source: Queen_Sofia
-    type: :Person
-  Finish (15219636-c1a5-4e39-8f9c-9704db31a54d)
- Call ID: 15219636-c1a5-4e39-8f9c-9704db31a54d
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:King_Juan_Carlos_I :hasFather data:Infante_Juan_Count_of_Barcelona ;
-      :hasMother data:Princess_Maria_de_las_Mercedes .
-
-  data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies a :Person,
-          :Woman ;
-      :hasBirthYear 1914 ;
-      :hasDeathYear 2005 ;
-      :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
-      :hasMarriageYear 1944 ;
-      :hasMother data:Princess_Louise_of_Orleans ;
-      :hasRelation data:Prince_Pedro_Gastao_of_Orleans-Braganza ;
-      :isSisterOf data:Princess_Maria_de_las_Mercedes .
-
-  data:Queen_Sofia a :Person,
-          :Woman .
-
-  data:Infante_Juan_Count_of_Barcelona a :Man,
-          :Person .
-
-  data:Philippe_Count_of_Paris a :Man,
-          :Person .
-
-  data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man,
-          :Person .
-
-  data:Prince_Pedro_Gastao_of_Orleans-Braganza a :Man,
-          :Person ;
-      :hasFather data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza .
-
-  data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza a :Man,
-          :Person .
-
-  data:Princess_Louise_of_Orleans a :Person,
-          :Woman ;
-      :hasFather data:Philippe_Count_of_Paris .
-
-  data:Princess_Maria_de_las_Mercedes a :Person,
-          :Woman .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['King_Juan_Carlos_I']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (49d343f9-a29f-4712-b6c3-49219b176f27)
- Call ID: 49d343f9-a29f-4712-b6c3-49219b176f27
-  Args:
-    source: King_Juan_Carlos_I
     type: :Man
-  AssignClass (f5ac2f92-8dd9-44af-9943-816f1a022862)
- Call ID: f5ac2f92-8dd9-44af-9943-816f1a022862
+    source: Prince_Pedro_de_Alcantara_of_Orleans-Braganza
+  AssignClass (7ee4425d-ea9c-42df-94f2-b5e70b810f39)
+ Call ID: 7ee4425d-ea9c-42df-94f2-b5e70b810f39
   Args:
     type: :Person
-    source: King_Juan_Carlos_I
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:King_Juan_Carlos_I a :Man,
-          :Person ;
-      :hasFather data:Infante_Juan_Count_of_Barcelona ;
-      :hasMother data:Princess_Maria_de_las_Mercedes .
-
-  data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies a :Person,
-          :Woman ;
-      :hasBirthYear 1914 ;
-      :hasDeathYear 2005 ;
-      :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
-      :hasMarriageYear 1944 ;
-      :hasMother data:Princess_Louise_of_Orleans ;
-      :hasRelation data:Prince_Pedro_Gastao_of_Orleans-Braganza ;
-      :isSisterOf data:Princess_Maria_de_las_Mercedes .
-
-  data:Queen_Sofia a :Person,
-          :Woman .
-
-  data:Infante_Juan_Count_of_Barcelona a :Man,
-          :Person .
-
-  data:Philippe_Count_of_Paris a :Man,
-          :Person .
-
-  data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man,
-          :Person .
-
-  data:Prince_Pedro_Gastao_of_Orleans-Braganza a :Man,
-          :Person ;
-      :hasFather data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza .
-
-  data:Prince_Pedro_de_Alcantara_of_Orleans-Braganza a :Man,
-          :Person .
-
-  data:Princess_Louise_of_Orleans a :Person,
-          :Woman ;
-      :hasFather data:Philippe_Count_of_Paris .
-
-  data:Princess_Maria_de_las_Mercedes a :Person,
-          :Woman .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (7925533f-1d50-4eeb-a9f0-4cb2dddef612)
- Call ID: 7925533f-1d50-4eeb-a9f0-4cb2dddef612
+    source: Prince_Pedro_de_Alcantara_of_Orleans-Braganza
+  AddTriple (9b3a20c2-3eb3-4fcc-8e1d-f646d22d784c)
+ Call ID: 9b3a20c2-3eb3-4fcc-8e1d-f646d22d784c
+  Args:
+    target: Prince_Pedro_de_Alcantara_of_Orleans-Braganza
+    relation: :hasFather
+    source: Prince_Pedro_Gastao_of_Orleans-Braganza
+  AssignClass (9c4c6394-e59d-40b2-a7f7-0bc429fa4062)
+ Call ID: 9c4c6394-e59d-40b2-a7f7-0bc429fa4062
+  Args:
+    source: Queen_Sofia_of_Spain
+    type: :Woman
+  AssignClass (a9650682-213c-42c7-9ad6-38371eeaa1ee)
+ Call ID: a9650682-213c-42c7-9ad6-38371eeaa1ee
+  Args:
+    type: :Person
+    source: Queen_Sofia_of_Spain
+  Finish (d2a78481-3ac6-4554-9dea-f7625d4409d1)
+ Call ID: d2a78481-3ac6-4554-9dea-f7625d4409d1
   Args:

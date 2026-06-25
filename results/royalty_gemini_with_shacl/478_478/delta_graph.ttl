@@ -2,54 +2,73 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Hugo_Gerald_de_Bathe a :Man,
+data:Nathalie a :Person,
+        :Woman ;
+    :isDaughterOf data:Princess_Benedikte_of_Denmark,
+        data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg .
+
+data:Prince_Knud a :Man,
         :Person .
 
-data:Mary_Malcolm a :Person,
-        :Woman ;
-    :isDaughterOf data:Jeanne_Marie_Langtry,
-        data:Sir_Ian_Malcolm .
+data:Constantine_II_of_Greece a :Man,
+        :Person .
 
-data:Prince_Louis_of_Battenberg a :Ancestor,
-        :Man ;
-    :isFatherOf data:Jeanne_Marie_Langtry .
-
-data:Victor_Neill_Malcolm a :Man,
-        :Person ;
-    :isSonOf data:Jeanne_Marie_Langtry,
-        data:Sir_Ian_Malcolm .
-
-data:Edward_Langtry a :Man,
-        :Person ;
-    :hasBirthYear 1847 ;
-    :hasDeathYear 1897 .
-
-data:Emilie_Charlotte_Le_Breton a :Ancestor,
-        :Person,
-        :Woman ;
-    :alsoKnownAs "The Jersey Lily"^^xsd:string ;
-    :hasBirthYear 1853 ;
-    :hasDeathYear 1929 ;
-    :hasFather data:William_Corbet_Le_Breton ;
-    :hasMarriageYear 1874,
-        1899 ;
-    :hasMother data:Emilie_Davis_Martin ;
-    :isBloodrelationOf data:Edward_Langtry ;
-    :knownAs "Lillie Langtry"^^xsd:string .
-
-data:Emilie_Davis_Martin a :Ancestor,
-        :Woman .
-
-data:William_Corbet_Le_Breton a :Ancestor,
-        :Man .
-
-data:Jeanne_Marie_Langtry a :Ancestor,
-        :Person,
-        :Woman ;
-    :isBloodrelationOf data:Sir_Ian_Malcolm ;
-    :isDaughterOf data:Emilie_Charlotte_Le_Breton .
-
-data:Sir_Ian_Malcolm a :Ancestor,
+data:Crown_Prince_Gustav_Adolf_of_Sweden a :Ancestor,
         :Man,
         :Person .
+
+data:King_Christian_X a :Ancestor,
+        :Man,
+        :Person .
+
+data:King_Frederik_IX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:King_Christian_X ;
+    :hasMother data:Queen_Alexandrine_of_Denmark .
+
+data:King_Frederik_X a :Man,
+        :Person ;
+    :isSonOf data:Queen_Margrethe_II .
+
+data:Princess_Benedikte_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1944 ;
+    :hasFather data:King_Frederik_IX ;
+    :hasMarriageYear 1968 ;
+    :hasMother data:Queen_Ingrid_of_Denmark ;
+    :isAuntOf data:King_Frederik_X ;
+    :isBloodrelationOf data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Queen_Anne-Marie_of_Greece,
+        data:Queen_Margrethe_II ;
+    :knownAs "Benedikte Astrid Ingeborg Ingrid"^^xsd:string .
+
+data:Princess_Margaret_of_Connaught a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Queen_Alexandrine_of_Denmark a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Queen_Anne-Marie_of_Greece a :Person,
+        :Woman ;
+    :isBloodrelationOf data:Constantine_II_of_Greece .
+
+data:Queen_Ingrid_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Crown_Prince_Gustav_Adolf_of_Sweden ;
+    :hasMother data:Princess_Margaret_of_Connaught .
+
+data:Queen_Margrethe_II a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1934 ;
+    :hasDeathYear 2017 .
 

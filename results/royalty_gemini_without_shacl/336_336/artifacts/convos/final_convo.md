@@ -69,52 +69,72 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Count Christian of Rosenborg  (Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik; 22 October 1942 – 21 May 2013) was a member of the Danish royal family.
-Born Prince Christian of Denmark, from 1947 he was third in the line of line of succession until the constitution was changed in 1953 to allow females to inherit the crown, placing his branch of the dynasty behind that of his cousin Margrethe and her two younger sisters.
-Family
-
-He was born at Sorgenfri Palace, Sorgenfri, as the younger son of Hereditary Prince Knud by his wife and first cousin, Princess Caroline-Mathilde of Denmark.
-Loss of place in succession
-
-From the death of his grandfather in 1947, Christian stood only behind his father and elder brother Prince Ingolf in the order of hereditary succession to the throne, with only future children of Ingolf possibly taking a place ahead of him.
-His father Prince Knud was then the heir presumptive, due to succeed Christian's uncle King Frederik IX, who had three daughters but no sons.
-In 1953, the Constitution of Denmark was amended to allow cognatic primogeniture.
-The new law made thirteen-year-old Princess Margrethe the new heir presumptive, placing her and her two sisters before Prince Knud and his family in the succession.
-Christian was thus relegated to sixth in the line of succession to the Danish throne, but more importantly, he then ranked behind Margrethe and others who were likely to have dynastic children of their own (as has, in fact, happened).
-The princess became Queen Margrethe II in 1972 and reigned until her abdication in 2024.
-Christian's place in the line of succession, if he had been still eligible, would have been no higher than thirteenth in 2013.
-Marriage, loss of dynastic rights and children
-
-By 1971, Princess Margrethe had produced two children, pushing Christian to 8th in the line of succession.
-The king's permission to marry was not sought because it was expected to be denied, since Christian's fiancée was an untitled commoner.
-Prior to his elder son's wedding in 1968, Prince Knud sought to convince his brother that Ingolf should be allowed to retain his royal title after his non-dynastic marriage, a privilege which might have been subsequently extended to Christian.
-But the king refused, on the grounds that other males of the dynasty, who had been demoted to counts of Rosenborg upon marriage, might try to re-claim their royal rank if Ingolf were allowed to do so despite his marrying a commoner as they had done.
-So, in 1971, Christian renounced his rights to the throne and took the title count of Rosenborg.
-On 27 February 1971, at Kongens Lyngby Kirke, Kongens Lyngby, Denmark, Christian married Anne Dorte Maltoft-Nielsen (3 October 1947 in Frederikssund – 2 January 2014 in Copenhagen) who thus became Her Excellency Countess Anne Dorte of Rosenborg.
-Although lacking the prior royal assent of the monarch given in the Council of State that the law required, the king expressed no personal opposition to his nephew's choice of bride and, according to Christian, the king's private consent later had to be formally registered by the King-in-Council.
-In a 1985 interview with Billed-Bladet, Count Christian had explained (translated from Danish):
-As protocol dictates, I had to ask my uncle, King Frederik IX, if he had any objections to my getting engaged...
-I was number four in the line of succession after Princess Margrethe, Princess Benedikte, and my father.
-Count Christian and Countess Anne Dorte had three daughters: 
+Alexandrine of Mecklenburg-Schwerin (Alexandrine Auguste; 24 December 1879 – 28 December 1952) was Queen of Denmark from 1912 to 1947, as well as Queen of Iceland from 1918 to 1944 as the wife of King Christian X.
 
 
-All three were born “Komtesser” a lower title than “Grevinde” which translates to “Countess” from birth.
-And a title that all daughters of Counts in Denmark are given.
-Public life
+Alexandrine was the daughter of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin, and Grand Duchess Anastasia Mikhailovna of Russia.
+She was brought up with simplicity, and her early life was peripatetic, spending summers in Mecklenburg and the rest of the year in the south of France.
+She married Prince Christian of Denmark in 1898.
+Alexandrine became crown princess in 1906 and queen consort of Denmark in 1912.
+Early life
 
-Count Christian took part in some major public events associated with the royal family, in 2004, he and Countess Anne Dorte attended the wedding on 14 May 2004 of Crown Prince Frederik at Copenhagen Cathedral, Copenhagen and the subsequent reception at Fredensborg Palace.
-They were included in the official guest-list as members of the Danish Royal Family when they attended the luncheon to celebrate the 75th birthday of Prince Henrik at Fredensborg Palace on 11 June 2009; and the ruby jubilee celebrations for Queen Margrethe.
-Death
+Birth and family
 
-Count Christian died on 21 May 2013 (aged 70) at Gentofte Hospital, Copenhagen in Denmark.
-A number of members of the Danish royal family, led by Queen Margrethe, attended Count Christian's funeral, held at Lyngby Church on 29 May 2013.
-His wife Countess Anne Dorte of Rosenborg died just 7 months later on 2 January 2014 in Copenhagen.
+Alexandrine was born a Duchess of Mecklenburg-Schwerin on Christmas Eve of 1879, in the city of Schwerin, the capital of the vast Grand Duchy of Mecklenburg-Schwerin in Northern Germany.
+Her father was Frederick Francis, Hereditary Grand Duke of Mecklenburg-Schwerin; who was the eldest son of and heir to the reigning Grand Duke Frederick Francis II.
+Her mother was Grand Duchess Anastasia Mikhailovna of Russia, who was a granddaughter of Emperor Nicholas I of Russia.
+Alexandrine was her parents' first child, and was born eleven months after their wedding in St. Petersburg.
+She was born in the Neustadt Palace (New Town Palace) in Schwerin, which was her parents' residence in the city at the time.
+Duchess Alexandrine had two younger siblings: her only brother was Duke Frederick Francis, who in 1897 succeeded their father as Grand Duke of Mecklenburg-Schwerin, and her only sister was Duchess Cecilie, who in 1906 married the German Crown Prince Wilhelm of Prussia, eldest son of German Emperor William II.
+Her mother was the paternal aunt of Princess Irina Alexandrovna of Russia, the wife of Felix Yusupov, one of the murderers of Rasputin.
+Childhood and early adulthood
+
+After their father's succession as Grand Duke upon the death of his father on 15 April 1883, Alexandrine grew up with her brother and sister at the Castle in Schwerin, at the royal residences of Ludwigslust Palace and the Gelbensande hunting lodge, only a few kilometres from the Baltic Sea coast.
+The wet, damp, and cold Northern European climate of Mecklenburg was not good for his health, and as a result, Alexandrine spent a large amount of time with her family away from Mecklenburg, by the Lake Geneva, and in Palermo, Baden-Baden and Cannes in the south of France, where the family owned a large estate, the Villa Wenden.
+Cannes was favoured at the time by European royalty, including some whom Alexandrine personally met, such as Empress Eugénie of France and her future husband's uncle, Edward VII of the United Kingdom.
+First years in Denmark
+
+Engagement and marriage
+
+It was also in Cannes during the winter visit of 1897 that Duchess Alexandrine met her future husband, Prince Christian of Denmark, the eldest son of Crown Prince Frederik and Crown Princess Louise of Denmark.
+The two young royals were engaged in Schwerin on 24 March 1897.
+In April 1897, shortly after the engagement was announced, her father the Grand Duke died suddenly at the age of just 46 years.
+The wedding of Duchess Alexandrine and Prince Christian was celebrated on 26 April 1898 in Cannes, when she was 18 years old.
+They had two children:
+
+
+Early years in Denmark
+
+Upon their arrival in Denmark, the couple were given Christian VIII's Palace at the Amalienborg palace complex in central Copenhagen as their principal residence and Sorgenfri Palace in Kongens Lyngby north of Copenhagen as a summer residence.
+On 29 January 1906, her husband's grandfather King Christian IX died, and Christian's father ascended the throne as King Frederik VIII.
+Christian himself became crown prince, and Alexandrine became crown princess.
+Alexandrine's husband acceded to the throne as Christian X, and Alexandrine became queen consort of Denmark.
+The revolution in Russia brought much heartbreak for Alexandrine as three of her uncles, Nicholas, George and Sergey, were killed by the Bolsheviks.
+Her rejection of Major General Kurt Himer, Chief of Staff to General Kaupisch on 9 April 1940 became a symbol for her loyalty toward Denmark before her birth country Germany and was diplomatically obliged to receive the German General commander at her castle.
+When General Himer asked for an audience with the monarch, Christian was persuaded to receive him by his daughter-in-law as he would any other, which was supported by Alexandrine.
+He asked to do so alone, but Alexandrine told him she would interrupt them.
+"
+
+
+It was reported, that although Alexandrine was seen as shy and disliked official ceremonies, she had a "sharp" intelligence, and she was, together with her daughter-in-law, Ingrid of Sweden, a true support of the monarch and a driving force for the resistance toward the occupation within the royal house.
+It was also reported, that in contrast to the monarch himself and the Crown Prince, the Queen and the Crown Princess never lost their calm when the nation was attacked.
+Her first years in Denmark were afflicted by the prevailing anti-German attitude of the Danes, but she won them over.
+Kaj Munk is quoted to describe the public appreciation of her during World War II with his comment: "Protect our Queen, the only German we would like to keep!"
+
+
+Later life
+
+In 1947, she was widowed; she became the first queen dowager of Denmark to opt not to use that title.
+In her later years, Alexandrine spent most of her widowhood at Marselisborg Castle in Jutland.
+Queen Alexandrine died on 28 December 1952 in her sleep, four days after her birthday.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -130,39 +150,9 @@ His wife Countess Anne Dorte of Rosenborg died just 7 months later on 2 January 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -177,6 +167,23 @@ His wife Countess Anne Dorte of Rosenborg died just 7 months later on 2 January 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -194,6 +201,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,29 +283,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -292,6 +306,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -304,6 +326,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -312,17 +336,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -350,6 +376,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -365,115 +475,248 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (eae7cdd2-0c82-4beb-a8d6-3d4ddfb9f515)
- Call ID: eae7cdd2-0c82-4beb-a8d6-3d4ddfb9f515
+  AssignClass (33ab8b4c-7af8-4e70-8838-abd78bccb60b)
+ Call ID: 33ab8b4c-7af8-4e70-8838-abd78bccb60b
   Args:
-    type: :Man
-    source: Christian_of_Rosenborg
-  AssignClass (9d61f58e-e3e2-469c-b426-d7385d54805f)
- Call ID: 9d61f58e-e3e2-469c-b426-d7385d54805f
-  Args:
-    source: Christian_of_Rosenborg
-    type: :Person
-  AddLiteral (f79cd5fd-2a8c-44d6-aaee-9661a63b457f)
- Call ID: f79cd5fd-2a8c-44d6-aaee-9661a63b457f
+    type: :Woman
+    source: Alexandrine_of_Mecklenburg-Schwerin
+  AddLiteral (0be63360-ede4-4e25-bf18-64999162d67a)
+ Call ID: 0be63360-ede4-4e25-bf18-64999162d67a
   Args:
     relation: :hasBirthYear
+    literal_value: 1879
+    source: Alexandrine_of_Mecklenburg-Schwerin
     literal_type: xsd:integer
-    literal_value: 1942
-    source: Christian_of_Rosenborg
-  AddLiteral (541bd33d-acfa-429b-b527-2596f8182355)
- Call ID: 541bd33d-acfa-429b-b527-2596f8182355
+  AddLiteral (857bee6e-ba8c-4db9-8283-a23c6c483d01)
+ Call ID: 857bee6e-ba8c-4db9-8283-a23c6c483d01
   Args:
-    source: Christian_of_Rosenborg
-    literal_value: 2013
     literal_type: xsd:integer
+    source: Alexandrine_of_Mecklenburg-Schwerin
     relation: :hasDeathYear
-  AssignClass (02e6ce63-fa1a-4785-a610-5701955ea87e)
- Call ID: 02e6ce63-fa1a-4785-a610-5701955ea87e
+    literal_value: 1952
+  AssignClass (5374a798-83f7-45d8-baf2-98982d05c8c5)
+ Call ID: 5374a798-83f7-45d8-baf2-98982d05c8c5
   Args:
+    source: Christian_X_of_Denmark
     type: :Man
-    source: Knud_of_Denmark
-  AssignClass (3c79d658-a2a6-40a5-9c65-ed8e82942f61)
- Call ID: 3c79d658-a2a6-40a5-9c65-ed8e82942f61
+  AddTriple (c4228e09-7d13-4675-9ba3-f735d18b955e)
+ Call ID: c4228e09-7d13-4675-9ba3-f735d18b955e
   Args:
-    source: Knud_of_Denmark
-    type: :Person
-  AssignClass (33154da0-7105-4011-af16-6bc2926b1f95)
- Call ID: 33154da0-7105-4011-af16-6bc2926b1f95
+    relation: :hasSex
+    target: :Female
+    source: Alexandrine_of_Mecklenburg-Schwerin
+  AddTriple (083890aa-d9e1-4c41-95ae-b1f9f91ff0ca)
+ Call ID: 083890aa-d9e1-4c41-95ae-b1f9f91ff0ca
   Args:
-    type: :Woman
-    source: Caroline-Mathilde_of_Denmark
-  AssignClass (87c8fe26-fb4d-40dd-9ef4-2b62daa34365)
- Call ID: 87c8fe26-fb4d-40dd-9ef4-2b62daa34365
+    target: :Male
+    relation: :hasSex
+    source: Christian_X_of_Denmark
+  AddLiteral (9b526d3d-69e9-447d-b7ac-4622d23b0b0f)
+ Call ID: 9b526d3d-69e9-447d-b7ac-4622d23b0b0f
   Args:
-    type: :Person
-    source: Caroline-Mathilde_of_Denmark
-  AddTriple (a7273a2b-57dc-4cbb-a7a8-6fd2fe7fa98a)
- Call ID: a7273a2b-57dc-4cbb-a7a8-6fd2fe7fa98a
-  Args:
-    source: Christian_of_Rosenborg
-    relation: :hasFather
-    target: Knud_of_Denmark
-  AddTriple (1060c8a9-343b-4aa6-bdca-50d5c4964d29)
- Call ID: 1060c8a9-343b-4aa6-bdca-50d5c4964d29
-  Args:
-    relation: :hasMother
-    target: Caroline-Mathilde_of_Denmark
-    source: Christian_of_Rosenborg
-  AssignClass (6ea6819c-2190-487a-b0bb-0bd1c52b36b3)
- Call ID: 6ea6819c-2190-487a-b0bb-0bd1c52b36b3
-  Args:
-    type: :Man
-    source: Ingolf_of_Rosenborg
-  AssignClass (dd3998b5-9e0e-46df-b7d7-aade9633dcdb)
- Call ID: dd3998b5-9e0e-46df-b7d7-aade9633dcdb
-  Args:
-    source: Ingolf_of_Rosenborg
-    type: :Person
-  AddTriple (3bd4614d-dee2-49a5-90e4-2f247aa3cdbe)
- Call ID: 3bd4614d-dee2-49a5-90e4-2f247aa3cdbe
-  Args:
-    source: Christian_of_Rosenborg
-    target: Ingolf_of_Rosenborg
-    relation: :hasBrother
-  AssignClass (4f7580d5-502e-4d2b-bda7-e427ba4caf07)
- Call ID: 4f7580d5-502e-4d2b-bda7-e427ba4caf07
-  Args:
-    type: :Woman
-    source: Anne_Dorte_of_Rosenborg
-  AssignClass (34776288-76fa-4f27-bc22-77115ef5f08e)
- Call ID: 34776288-76fa-4f27-bc22-77115ef5f08e
-  Args:
-    type: :Person
-    source: Anne_Dorte_of_Rosenborg
-  AddLiteral (4ca90560-bf7f-4427-a75f-4045176caed1)
- Call ID: 4ca90560-bf7f-4427-a75f-4045176caed1
-  Args:
-    source: Christian_of_Rosenborg
-    literal_value: 1971
+    literal_type: xsd:integer
+    source: Alexandrine_of_Mecklenburg-Schwerin
     relation: :hasMarriageYear
-    literal_type: xsd:integer
-  AddTriple (d390957c-c1de-44e5-99f2-ca939f64edf2)
- Call ID: d390957c-c1de-44e5-99f2-ca939f64edf2
+    literal_value: 1898
+  AddTriple (86e0af9c-8583-48a1-9552-b10c3763c317)
+ Call ID: 86e0af9c-8583-48a1-9552-b10c3763c317
   Args:
-    source: Christian_of_Rosenborg
     relation: :hasRelation
-    target: Anne_Dorte_of_Rosenborg
-  AddLiteral (4329998e-a9e1-49ad-97c0-f005d458dfe2)
- Call ID: 4329998e-a9e1-49ad-97c0-f005d458dfe2
+    target: :Christian_X_of_Denmark
+    source: Alexandrine_of_Mecklenburg-Schwerin
+  AssignClass (993314ec-c315-4f41-b8e1-93f0ecae4869)
+ Call ID: 993314ec-c315-4f41-b8e1-93f0ecae4869
   Args:
-    literal_value: 1947
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Anne_Dorte_of_Rosenborg
-  AddLiteral (bdc550fc-f3b8-4a09-888e-0c9cb1aa1c69)
- Call ID: bdc550fc-f3b8-4a09-888e-0c9cb1aa1c69
+    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
+    type: :Man
+  AssignClass (2c4f84f9-3026-4aed-9b4e-6781e5b1b2ae)
+ Call ID: 2c4f84f9-3026-4aed-9b4e-6781e5b1b2ae
   Args:
-    literal_value: 2014
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: Anne_Dorte_of_Rosenborg
-  Finish (3d405f51-1769-4197-b8b4-c9307ec9fb1a)
- Call ID: 3d405f51-1769-4197-b8b4-c9307ec9fb1a
+    type: :Woman
+    source: Anastasia_Mikhailovna_of_Russia
+  AddTriple (0f46c8a4-4ee2-4bd1-9937-26beaa996279)
+ Call ID: 0f46c8a4-4ee2-4bd1-9937-26beaa996279
+  Args:
+    relation: :hasFather
+    target: :Frederick_Francis_III_of_Mecklenburg-Schwerin
+    source: Alexandrine_of_Mecklenburg-Schwerin
+  AddTriple (45a03756-a0a6-4d13-8372-c322ce401d58)
+ Call ID: 45a03756-a0a6-4d13-8372-c322ce401d58
+  Args:
+    target: :Anastasia_Mikhailovna_of_Russia
+    relation: :hasMother
+    source: Alexandrine_of_Mecklenburg-Schwerin
+  AssignClass (47a1a5f7-7e31-4caf-8fe6-f4aba089640d)
+ Call ID: 47a1a5f7-7e31-4caf-8fe6-f4aba089640d
+  Args:
+    type: :Man
+    source: Frederick_Francis_IV_of_Mecklenburg-Schwerin
+  AssignClass (e9e11658-faa3-4f19-b448-1496d04ef49a)
+ Call ID: e9e11658-faa3-4f19-b448-1496d04ef49a
+  Args:
+    source: Cecilie_of_Mecklenburg-Schwerin
+    type: :Woman
+  AddTriple (d670b3cc-95cc-48d1-877c-e44b124d18d9)
+ Call ID: d670b3cc-95cc-48d1-877c-e44b124d18d9
+  Args:
+    source: Alexandrine_of_Mecklenburg-Schwerin
+    relation: :hasBrother
+    target: :Frederick_Francis_IV_of_Mecklenburg-Schwerin
+  AddTriple (a743e4c5-efad-448f-bbb7-aa564ff2c737)
+ Call ID: a743e4c5-efad-448f-bbb7-aa564ff2c737
+  Args:
+    relation: :hasSister
+    target: :Cecilie_of_Mecklenburg-Schwerin
+    source: Alexandrine_of_Mecklenburg-Schwerin
+  AssignClass (a361012a-f4ed-4629-a980-6e9edb0504e9)
+ Call ID: a361012a-f4ed-4629-a980-6e9edb0504e9
+  Args:
+    type: :Man
+    source: Frederick_Francis_II_of_Mecklenburg-Schwerin
+  AddTriple (ab243507-e95f-44b5-add8-9c1640598da7)
+ Call ID: ab243507-e95f-44b5-add8-9c1640598da7
+  Args:
+    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
+    target: :Frederick_Francis_II_of_Mecklenburg-Schwerin
+    relation: :hasFather
+  Finish (5b6f151d-1df9-4675-b08d-7ae721bae69b)
+ Call ID: 5b6f151d-1df9-4675-b08d-7ae721bae69b
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Alexandrine_of_Mecklenburg-Schwerin a :Woman ;
+      :hasBirthYear 1879 ;
+      :hasBrother data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+      :hasDeathYear 1952 ;
+      :hasFather data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+      :hasMarriageYear 1898 ;
+      :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+      :hasRelation data:Christian_X_of_Denmark ;
+      :hasSex data:Female ;
+      :hasSister data:Cecilie_of_Mecklenburg-Schwerin .
+
+  data:Anastasia_Mikhailovna_of_Russia a :Woman .
+
+  data:Cecilie_of_Mecklenburg-Schwerin a :Woman .
+
+  data:Christian_X_of_Denmark a :Man ;
+      :hasSex data:Male .
+
+  data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man ;
+      :hasFather data:Frederick_Francis_II_of_Mecklenburg-Schwerin .
+
+  data:Frederick_Francis_II_of_Mecklenburg-Schwerin a :Man .
+
+  data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Female', 'Male']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (f5432329-a067-48c0-947b-952071014037)
+ Call ID: f5432329-a067-48c0-947b-952071014037
+  Args:
+    type: :Sex
+    source: :Female
+  AssignClass (90f52d6f-eeb4-4be0-b4cd-5ec80a6d5a35)
+ Call ID: 90f52d6f-eeb4-4be0-b4cd-5ec80a6d5a35
+  Args:
+    type: :Sex
+    source: :Male
+  Finish (6da3521a-9266-4053-ada1-469ff3057d6f)
+ Call ID: 6da3521a-9266-4053-ada1-469ff3057d6f
   Args:

@@ -4,20 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Pieter_van_Vollenhoven a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Princess_Margriet_of_the_Netherlands a :Person,\n        :Woman ;\n    :hasBirthYear 1943 ;\n    :hasFather data:Prince_Bernhard ;\n    :hasSex data:Female ;\n    :isDaughterOf data:Queen_Juliana .\n\ndata:Prince_Bernhard a :Ancestor,\n        :Man ;\n    :hasSex data:Male .\n\ndata:Queen_Juliana a :Ancestor,\n        :Woman ;\n    :hasSex data:Female .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ari a :Man,\n        :Person ;\n    :hasBirthYear 1992 ;\n    :isSonOf data:Gary_Christie_Lewis .\n\ndata:Senna_Kowhai a :Person,\n        :Woman ;\n    :isDaughterOf data:Gary_Christie_Lewis,\n        data:Lady_Davina_Windsor .\n\ndata:Tane_Mahuta a :Man,\n        :Person ;\n    :isSonOf data:Gary_Christie_Lewis,\n        data:Lady_Davina_Windsor .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person .\n\ndata:Lady_Davina_Windsor a :Person,\n        :Woman ;\n    :alsoKnownAs \"Lady Davina Lewis\"^^xsd:string ;\n    :hasBirthYear 1977 ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMarriageYear 2004 ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasRelation data:Gary_Christie_Lewis .\n\ndata:Gary_Christie_Lewis a :Man,\n        :Person ;\n    :hasBirthYear 1970 .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 2,
-        "source": "post_edits",
-        "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Pieter_van_Vollenhoven a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Princess_Margriet_of_the_Netherlands a :Person,\n        :Woman ;\n    :hasBirthYear 1943 ;\n    :hasFather data:Prince_Bernhard ;\n    :hasSex data:Female ;\n    :isDaughterOf data:Queen_Juliana .\n\ndata:Prince_Bernhard a :Ancestor,\n        :Man ;\n    :hasSex data:Male .\n\ndata:Queen_Juliana a :Ancestor,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
-    },
-    {
-        "graph_type": "data_graph",
-        "iteration": 2,
+        "iteration": 1,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Pieter_van_Vollenhoven a :Man,\n        :Person ;\n    :hasSex data:Male .\n\ndata:Princess_Margriet_of_the_Netherlands a :Person,\n        :Woman ;\n    :hasBirthYear 1943 ;\n    :hasFather data:Prince_Bernhard ;\n    :hasSex data:Female ;\n    :isDaughterOf data:Queen_Juliana .\n\ndata:Prince_Bernhard a :Ancestor,\n        :Man ;\n    :hasSex data:Male .\n\ndata:Queen_Juliana a :Ancestor,\n        :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ari a :Man,\n        :Person ;\n    :hasBirthYear 1992 ;\n    :isSonOf data:Gary_Christie_Lewis .\n\ndata:Senna_Kowhai a :Person,\n        :Woman ;\n    :isDaughterOf data:Gary_Christie_Lewis,\n        data:Lady_Davina_Windsor .\n\ndata:Tane_Mahuta a :Man,\n        :Person ;\n    :isSonOf data:Gary_Christie_Lewis,\n        data:Lady_Davina_Windsor .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person .\n\ndata:Lady_Davina_Windsor a :Person,\n        :Woman ;\n    :alsoKnownAs \"Lady Davina Lewis\"^^xsd:string ;\n    :hasBirthYear 1977 ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMarriageYear 2004 ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasRelation data:Gary_Christie_Lewis .\n\ndata:Gary_Christie_Lewis a :Man,\n        :Person ;\n    :hasBirthYear 1970 .\n\n"
     }
 ]

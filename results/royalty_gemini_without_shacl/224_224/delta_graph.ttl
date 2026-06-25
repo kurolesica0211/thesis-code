@@ -2,27 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elisabeth_Victoire_Jeanne_Marie_d_Orleans a :Woman ;
-    :hasBirthYear 2026 ;
-    :hasFather data:Charles_Philippe_d_Orleans ;
-    :hasMother data:Naomi-Valeska .
+data:Willem-Alexander a :Man,
+        :Person ;
+    :hasMother data:Beatrix .
 
-data:Isabelle_d_Orleans a :Woman ;
-    :hasBirthYear 2012 ;
-    :hasFather data:Charles_Philippe_d_Orleans ;
-    :hasMother data:Beatrice_Pasquier_de_Franclieu .
+data:Beatrix a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasFather data:Bernhard ;
+    :hasMarriageYear 1966 ;
+    :hasMother data:Juliana ;
+    :hasRelation data:Claus_von_Amsberg ;
+    :hasSister data:Irene,
+        data:Margriet .
 
-data:Henri_d_Orleans a :Man .
+data:Bernhard a :Man,
+        :Person .
 
-data:Michel_d_Orleans a :Man .
+data:Claus_von_Amsberg a :Man,
+        :Person .
 
-data:Naomi-Valeska a :Woman .
+data:Irene a :Person,
+        :Woman .
 
-data:Beatrice_Pasquier_de_Franclieu a :Woman .
+data:Juliana a :Person,
+        :Woman .
 
-data:Charles_Philippe_d_Orleans a :Man ;
-    :hasBirthYear 1973 ;
-    :hasFather data:Henri_d_Orleans,
-        data:Michel_d_Orleans ;
-    :hasMother data:Beatrice_Pasquier_de_Franclieu .
+data:Margriet a :Person,
+        :Woman .
 

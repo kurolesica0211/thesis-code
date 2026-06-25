@@ -1,0 +1,400 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Serena_Armstrong-Jones-_Countess_of_Snowdon a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Serena Armstrong-Jones, Countess of Snowdon"^^xsd:string ;
+    data:posIndicesFull "577:592"^^xsd:string ;
+    data:posIndicesPart "1091:1098"^^xsd:string ;
+    data:wdtLink wdt:Q4493736 ;
+    :alsoKnownAs "Hon. Serena Alleyne Stanhope"^^xsd:string,
+        "Hon. Serena Stanhope"^^xsd:string,
+        "Serena Alleyne Armstrong-Jones, Countess of Snowdon"^^xsd:string,
+        "Serena Alleyne Stanhope"^^xsd:string,
+        "Serena Linley"^^xsd:string,
+        "Serena Snowdon"^^xsd:string,
+        "Serena Stanhope"^^xsd:string ;
+    :hasChild data:Lady_Margarita_Armstrong-Jones ;
+    :hasDaughter data:Lady_Margarita_Armstrong-Jones ;
+    :hasRelation data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Serena_Armstrong-Jones-_Countess_of_Snowdon ;
+    :hasSex data:female ;
+    :hasSister data:Serena_Armstrong-Jones-_Countess_of_Snowdon ;
+    :isAncestorOf data:Lady_Margarita_Armstrong-Jones ;
+    :isAuntOf data:Lady_Margarita_Armstrong-Jones ;
+    :isBloodrelationOf data:Serena_Armstrong-Jones-_Countess_of_Snowdon ;
+    :isMotherOf data:Lady_Margarita_Armstrong-Jones ;
+    :isParentOf data:Lady_Margarita_Armstrong-Jones ;
+    :isSiblingOf data:Serena_Armstrong-Jones-_Countess_of_Snowdon ;
+    :isSisterOf data:Serena_Armstrong-Jones-_Countess_of_Snowdon .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George VI"^^xsd:string ;
+    data:posIndicesFull "760:774"^^xsd:string,
+        "765:774"^^xsd:string ;
+    data:posIndicesPart "1807:1813"^^xsd:string,
+        "2397:2403"^^xsd:string ;
+    data:wdtLink wdt:Q280856 ;
+    :alsoKnownAs "Albert Frederick Arthur George"^^xsd:string,
+        "Albert Frederick Arthur George Windsor"^^xsd:string,
+        "Albert Windsor"^^xsd:string,
+        "Bertie"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "H.M. King George VI"^^xsd:string,
+        "Industrial Prince"^^xsd:string,
+        "King George VI"^^xsd:string,
+        "Prince Albert Frederick Arthur George of Cornwall and York"^^xsd:string,
+        "Prince Albert Frederick Arthur George of Wales"^^xsd:string,
+        "Prince Albert Frederick Arthur George of York"^^xsd:string,
+        "Prince Albert Frederick Arthur George, Duke of York"^^xsd:string,
+        "Prince Albert of Cornwall and York"^^xsd:string,
+        "Prince Albert of Wales"^^xsd:string,
+        "Prince Albert of York"^^xsd:string,
+        "Prince Albert, Duke of York"^^xsd:string,
+        "The Prince Albert Frederick Arthur George of the United Kingdom"^^xsd:string,
+        "The Prince Albert Frederick Arthur George, Duke of York"^^xsd:string,
+        "The Prince Albert of the United Kingdom"^^xsd:string,
+        "The Prince Albert, Duke of York"^^xsd:string ;
+    :hasBrother data:George_VI ;
+    :hasChild data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasDaughter data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasRelation data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:George_VI,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasSex data:male ;
+    :isAncestorOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isBloodrelationOf data:George_VI ;
+    :isBrotherOf data:George_VI ;
+    :isFatherOf data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isParentOf data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isSiblingOf data:George_VI ;
+    :isUncleOf data:Princess_Margaret-_Countess_of_Snowdon .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "1010:1025"^^xsd:string,
+        "1026:1042"^^xsd:string,
+        "182:197"^^xsd:string,
+        "2352:2368"^^xsd:string ;
+    data:posIndicesPart "2277:2286"^^xsd:string,
+        "2699:2708"^^xsd:string,
+        "2890:2899"^^xsd:string,
+        "3035:3040"^^xsd:string,
+        "783:789"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasChild data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasDaughter data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasRelation data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAncestorOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isAuntOf data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isBloodrelationOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isParentOf data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Antony Armstrong-Jones, 1st Earl of Snowdon"^^xsd:string ;
+    data:posIndicesFull "687:709"^^xsd:string,
+        "687:730"^^xsd:string ;
+    data:posIndicesPart "1083:1087"^^xsd:string,
+        "1091:1098"^^xsd:string,
+        "849:853"^^xsd:string ;
+    data:wdtLink wdt:Q335260 ;
+    :alsoKnownAs "Anthony Charles Robert Armstrong Jones"^^xsd:string,
+        "Anthony Charles Robert Armstrong-Jones"^^xsd:string,
+        "Antony Charles Robert Armstrong-Jones, 1st Earl of Snowdon"^^xsd:string,
+        "Antony Snowdon"^^xsd:string,
+        "Antony, Earl of Snowdon"^^xsd:string,
+        "Lord Snowden"^^xsd:string,
+        "Tony Armstrong-Jones"^^xsd:string,
+        "Tony Snowdon"^^xsd:string ;
+    :hasBrother data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon ;
+    :hasChild data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto ;
+    :hasDaughter data:Lady_Sarah_Chatto ;
+    :hasRelation data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Lady_Sarah_Chatto ;
+    :hasSex data:male ;
+    :hasSon data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
+    :isAncestorOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Lady_Sarah_Chatto ;
+    :isBloodrelationOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon ;
+    :isBrotherOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon ;
+    :isFatherOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto ;
+    :isParentOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto ;
+    :isSiblingOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon ;
+    :isUncleOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto .
+
+data:Lady_Margarita_Armstrong-Jones a :Person,
+        :Woman ;
+    rdfs:label "Lady Margarita Armstrong-Jones"^^xsd:string ;
+    data:posIndicesFull "0:53"^^xsd:string,
+        "5:53"^^xsd:string ;
+    data:posIndicesPart "1144:1148"^^xsd:string,
+        "1150:1154"^^xsd:string,
+        "1155:1164"^^xsd:string,
+        "1205:1209"^^xsd:string,
+        "1210:1219"^^xsd:string,
+        "1406:1410"^^xsd:string,
+        "1534:1538"^^xsd:string,
+        "1539:1548"^^xsd:string,
+        "202:206"^^xsd:string,
+        "2050:2054"^^xsd:string,
+        "2055:2064"^^xsd:string,
+        "207:216"^^xsd:string,
+        "2155:2159"^^xsd:string,
+        "2423:2427"^^xsd:string,
+        "2428:2437"^^xsd:string,
+        "2721:2725"^^xsd:string,
+        "2726:2735"^^xsd:string,
+        "2808:2812"^^xsd:string,
+        "2813:2822"^^xsd:string,
+        "3089:3093"^^xsd:string,
+        "3094:3103"^^xsd:string,
+        "3189:3193"^^xsd:string,
+        "3194:3203"^^xsd:string,
+        "319:323"^^xsd:string,
+        "324:333"^^xsd:string,
+        "358:367"^^xsd:string,
+        "368:377"^^xsd:string,
+        "378:383"^^xsd:string,
+        "917:926"^^xsd:string ;
+    data:wdtLink wdt:Q2414886 ;
+    :alsoKnownAs "Hon. Margarita Armstrong-Jones"^^xsd:string,
+        "Hon. Margarita Elizabeth Rose Alleyne Armstrong-Jones"^^xsd:string,
+        "Lady Margarita Elizabeth Rose Alleyne Armstrong-Jones"^^xsd:string,
+        "Margarita Elizabeth Rose Alleyne Armstrong-Jones"^^xsd:string ;
+    :hasAncestor data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:George_VI,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:Serena_Armstrong-Jones-_Countess_of_Snowdon ;
+    :hasFather data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
+    :hasMother data:Serena_Armstrong-Jones-_Countess_of_Snowdon ;
+    :hasParent data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Serena_Armstrong-Jones-_Countess_of_Snowdon ;
+    :hasRelation data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:George_VI,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:Serena_Armstrong-Jones-_Countess_of_Snowdon ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Margarita_Armstrong-Jones ;
+    :isBloodrelationOf data:Lady_Margarita_Armstrong-Jones ;
+    :isChildOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Serena_Armstrong-Jones-_Countess_of_Snowdon ;
+    :isDaughterOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Serena_Armstrong-Jones-_Countess_of_Snowdon ;
+    :isSiblingOf data:Lady_Margarita_Armstrong-Jones ;
+    :isSisterOf data:Lady_Margarita_Armstrong-Jones .
+
+data:Lady_Sarah_Chatto a :Person,
+        :Woman ;
+    rdfs:label "Lady Sarah Chatto"^^xsd:string ;
+    data:posIndicesFull "1944:1961"^^xsd:string ;
+    data:posIndicesPart "2050:2054"^^xsd:string,
+        "2155:2159"^^xsd:string,
+        "2423:2427"^^xsd:string,
+        "2721:2725"^^xsd:string,
+        "2808:2812"^^xsd:string,
+        "3089:3093"^^xsd:string,
+        "3189:3193"^^xsd:string ;
+    data:wdtLink wdt:Q1040807 ;
+    :alsoKnownAs "Lady Sarah Frances Elizabeth Armstrong-Jones"^^xsd:string,
+        "Lady Sarah Frances Elizabeth Chatto"^^xsd:string,
+        "Sarah Armstrong-Jones"^^xsd:string,
+        "Sarah Frances Elizabeth Armstrong-Jones"^^xsd:string,
+        "Sarah Frances Elizabeth Chatto"^^xsd:string ;
+    :hasAncestor data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:George_VI,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
+    :hasFather data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon ;
+    :hasMother data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasParent data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasRelation data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:George_VI,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Sarah_Chatto ;
+    :isAuntOf data:Lady_Margarita_Armstrong-Jones ;
+    :isBloodrelationOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto ;
+    :isChildOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isDaughterOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isSiblingOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto ;
+    :isSisterOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto .
+
+data:Princess_Margaret-_Countess_of_Snowdon a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Margaret, Countess of Snowdon"^^xsd:string ;
+    data:posIndicesFull "1411:1425"^^xsd:string,
+        "644:682"^^xsd:string ;
+    data:posIndicesPart "1091:1098"^^xsd:string,
+        "1769:1777"^^xsd:string,
+        "2373:2381"^^xsd:string,
+        "2382:2390"^^xsd:string,
+        "2512:2520"^^xsd:string ;
+    data:wdtLink wdt:Q153815 ;
+    :alsoKnownAs "Margaret Rose"^^xsd:string,
+        "Margaret Windsor"^^xsd:string,
+        "Margaret York"^^xsd:string ;
+    :hasAncestor data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasChild data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto ;
+    :hasDaughter data:Lady_Sarah_Chatto ;
+    :hasFather data:George_VI ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:George_VI,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasSon data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
+    :isAncestorOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Lady_Sarah_Chatto ;
+    :isAuntOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto ;
+    :isBloodrelationOf data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isChildOf data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:George_VI,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto ;
+    :isParentOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto ;
+    :isSiblingOf data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isSisterOf data:Princess_Margaret-_Countess_of_Snowdon .
+
+data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "David Armstrong-Jones, 2nd Earl of Snowdon"^^xsd:string ;
+    data:posIndicesFull "2230:2245"^^xsd:string,
+        "454:496"^^xsd:string,
+        "516:531"^^xsd:string ;
+    data:posIndicesPart "1083:1087"^^xsd:string,
+        "1091:1098"^^xsd:string,
+        "849:853"^^xsd:string ;
+    data:wdtLink wdt:Q1091237 ;
+    :alsoKnownAs "David Albert Charles Armstrong-Jones, 2nd Earl of Snowdon"^^xsd:string,
+        "David Armstrong-Jones, Viscount Linley"^^xsd:string,
+        "David Linley"^^xsd:string,
+        "David Snowdon"^^xsd:string,
+        "Viscount Linley"^^xsd:string ;
+    :hasAncestor data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:George_VI,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
+    :hasChild data:Lady_Margarita_Armstrong-Jones ;
+    :hasDaughter data:Lady_Margarita_Armstrong-Jones ;
+    :hasFather data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon ;
+    :hasMother data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasParent data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasRelation data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:George_VI,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Lady_Sarah_Chatto,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:Serena_Armstrong-Jones-_Countess_of_Snowdon ;
+    :hasSex data:male ;
+    :hasSister data:Lady_Sarah_Chatto ;
+    :isAncestorOf data:Lady_Margarita_Armstrong-Jones ;
+    :isBloodrelationOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto ;
+    :isBrotherOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto ;
+    :isChildOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isFatherOf data:Lady_Margarita_Armstrong-Jones ;
+    :isParentOf data:Lady_Margarita_Armstrong-Jones ;
+    :isSiblingOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
+        data:Lady_Sarah_Chatto ;
+    :isSonOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isUncleOf data:Lady_Margarita_Armstrong-Jones .
+

@@ -69,28 +69,60 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Alexander Patrick Gregers Richard Windsor, Earl of Ulster (born 24 October 1974), is a member of the British royal family and the only son of Prince Richard, Duke of Gloucester, and Birgitte, Duchess of Gloucester.
-He is the heir apparent to the dukedom of Gloucester and is the second cousin of Charles III.
-He is also sometimes referred to as Alex Ulster.
-Early life and education
+Lady Pamela Carmen Louise Hicks (née Mountbatten; born 19 April 1929) is a British aristocrat and relative of the British royal family.
+Earl Mountbatten of Burma (formerly Prince Louis of Battenberg) and of heiress Edwina Ashley.
+Through her father, Lady Pamela is a first cousin of the late Prince Philip, Duke of Edinburgh, and a grandniece of the last Empress of Russia, Alexandra Feodorovna.
+She served as a bridesmaid and later as a lady-in-waiting to Queen Elizabeth II, her third cousin.
+Early life and family
 
-Alexander Patrick Gregers Richard Windsor was born prematurely on 24 October 1974 at St Mary's Hospital, London.
-He is the only son of Prince Richard, Duke of Gloucester, and Birgitte, Duchess of Gloucester.
-Alexander attended Eton College and later graduated with a degree in war studies from King's College London in 1996.
-Military career
+Lady Pamela was born on 19 April 1929 in Barcelona, Spain, to Edwina Ashley and the then Lord Louis Mountbatten (who later became The 1st Earl Mountbatten of Burma).
+Countess Mountbatten of Burma.
+A member of the Mountbatten family by birth, she descended from the Battenberg family, a morganatic cadet branch of the House of Hesse-Darmstadt.
+At the request of King George V, her grandparents, Prince Louis of Battenberg and Princess Victoria of Hesse and by Rhine, relinquished their German princely titles in 1917 in exchange for titles in the British peerage due to anti-German sentiment in Britain.
+Her father, who was also born a prince of Battenberg, was later created Earl Mountbatten of Burma.
+Through her father, she is a great-great-granddaughter of Queen Victoria and Prince Albert of Saxe-Coburg and Gotha, and as of 2026, their oldest surviving descendant.
+Her mother, Edwina, was the daughter of The 1st Baron Mount Temple.
+Through her mother, Lady Pamela is also a great-granddaughter of Sir Ernest Cassel and a great-great-granddaughter of The 7th Earl of Shaftesbury.
+Through her father, she is a first cousin of Prince Philip, Duke of Edinburgh.
+Her baptism was celebrated on 12 July 1929 in the Chapel Royal, St. James's Palace.
+Her godparents were: King Alfonso XIII and The Duke of Kent; Nadejda Mountbatten and Marjorie, Countess of Brecknock (Lady Louis' first cousin); and the Duchess of Peñaranda (María del Carmen Saavedra y Collado, Marqués de Villaviciosa)..
+She attended Hewitt School in New York City, like her sister Patricia.
+In 1947, Lady Pamela accompanied her parents to British India, remaining with them throughout her father's term as the last Viceroy of India and then as Governor-General of post-Partition India through 1948, living with them in the palatial Viceroy's House in New Delhi and at the summer Viceregal Lodge in Simla.
+Official duties
 
-Alexander was commissioned in the King's Royal Hussars on 10 April 1998 as a subaltern (second lieutenant) with seniority from 14 April 1995; he was given the service number 548299.
-Marriage and family
+In November 1947, Lady Pamela acted as a bridesmaid to then-Princess Elizabeth at her 1947 wedding to Prince Philip, Duke of Edinburgh.
+As lady-in-waiting to Princess Elizabeth she was with her and the Duke of Edinburgh in Kenya when George VI died on 6 February 1952.
+In late 1953 and early 1954, she accompanied the Queen as lady-in-waiting on the royal tour to Jamaica, Panama, Fiji, Tonga, New Zealand, Australia, Ceylon, Aden, Libya, Malta and Gibraltar.
+Lady Pamela was the Corps Commandant of the Girls' Nautical Training Corps from around 1952 to around 1959.
+She attended the wedding of Prince Edward, Duke of Kent and Katharine Worsley in 1961.
+Marriage and children
 
-On 22 June 2002, Alexander married Claire Booth, a physician, at the Queen's Chapel, St James's Palace.
-Lady Ulster is a professor of Gene Therapy and Paediatric Immunology at University College London's Great Ormond Street Institute of Child Health.
-Alexander continues to make public appearances at state events alongside other members of the extended royal family, including the 2022 state funeral of Queen Elizabeth II and the 2023 coronation of King Charles III and Queen Camilla.
+Lady Pamela is the widow of interior decorator and designer David Nightingale Hicks (25 March 1929 – 29 March 1998), son of stockbroker Herbert Hicks and Iris Elsie Platten.
+The bridesmaids were Princess Anne, Princess Clarissa of Hesse (daughter of her cousin Sophie), Victoria Marten (god-daughter of the bride), the Hon.
+Amanda Knatchbull (daughters of the bride's sister Patricia).
+Upon returning from honeymoon in the West Indies and New York, Lady Pamela learnt of the death of her mother in Jesselton in February 1960.
+Together, the couple had three children:
+
+
+David died on 29 March 1998, aged 69, from lung cancer.
+According to their daughter India, two ladies who knew David had been invited to the Grove by him shortly before his death.
+They were told by Lady Pamela that he had died a few hours ago (Hicks was lying ‘in state’ in his garden according to his instructions) but as they had driven from London, she invited them to have ‘a cup of tea’.
+Later life
+
+Lady Pamela has been a Director of H Securities Unlimited, a fund management and brokerage firm, since 1991.
+In 2007, Lady Pamela published her memoirs of her days in New Delhi and Simla, when India was partitioned into India and Pakistan and the Union Jack came down.
+She wrote in India Remembered: A Personal Account of the Mountbattens During the Transfer of Power that, while her mother, Countess Mountbatten of Burma, and Jawaharlal Nehru, the future Prime Minister of India, were deeply in love, "the relationship remained platonic", In 2012, she published the second volume of her memoirs titled Daughter of Empire:
+Life as a Mountbatten, chronicling her childhood, her time in India, and her time as lady-in-waiting to the Queen.
+After the death of her cousin, Prince Philip, Duke of Edinburgh in 2021, she is the last surviving great-grandchild of Princess Alice of the United Kingdom, and following the death of Queen Elizabeth II in September 2022, she became the oldest living descendant of Queen Victoria.
+With her daughter, India Hicks, she attended the Queen's state funeral on 19 September 2022.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -106,39 +138,9 @@ Alexander continues to make public appearances at state events alongside other m
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -153,6 +155,23 @@ Alexander continues to make public appearances at state events alongside other m
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -170,6 +189,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -237,29 +271,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -268,6 +294,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -280,6 +314,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -288,17 +324,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -326,6 +364,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -341,101 +463,197 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2bb96e8e-ef05-4b39-8b30-318f7c762a99)
- Call ID: 2bb96e8e-ef05-4b39-8b30-318f7c762a99
-  Args:
-    type: :Man
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-  AssignClass (d883821f-12a7-42c0-8b56-06d945f053fd)
- Call ID: d883821f-12a7-42c0-8b56-06d945f053fd
+  AssignClass (91967bd1-8f58-4e7b-99d0-6475a05f6058)
+ Call ID: 91967bd1-8f58-4e7b-99d0-6475a05f6058
   Args:
     type: :Person
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-  AddLiteral (ab608a2a-378b-4ba0-9458-5414a7dc6aaa)
- Call ID: ab608a2a-378b-4ba0-9458-5414a7dc6aaa
+    source: Pamela_Hicks
+  AssignClass (db5ff49d-0732-447c-9f29-7fe4a1fd2f4c)
+ Call ID: db5ff49d-0732-447c-9f29-7fe4a1fd2f4c
   Args:
+    source: Pamela_Hicks
+    type: :Woman
+  AddLiteral (5408ab70-ef9b-427e-a3d7-71c3287b7e3c)
+ Call ID: 5408ab70-ef9b-427e-a3d7-71c3287b7e3c
+  Args:
+    source: Pamela_Hicks
+    literal_value: 1929
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1974
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-  AddLiteral (da667e02-811b-467e-be29-760c8b7de7a8)
- Call ID: da667e02-811b-467e-be29-760c8b7de7a8
-  Args:
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    literal_value: Alex Ulster
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-  AssignClass (46917f5a-10dc-4e8d-9625-e880f412e1bf)
- Call ID: 46917f5a-10dc-4e8d-9625-e880f412e1bf
-  Args:
-    type: :Man
-    source: Prince_Richard_Duke_of_Gloucester
-  AssignClass (5f3b0135-1f00-40df-9748-4572c4bdad9f)
- Call ID: 5f3b0135-1f00-40df-9748-4572c4bdad9f
+  AssignClass (7b5925c3-cb84-42b8-bea6-af05d28312a7)
+ Call ID: 7b5925c3-cb84-42b8-bea6-af05d28312a7
   Args:
     type: :Person
-    source: Prince_Richard_Duke_of_Gloucester
-  AssignClass (9aaac8cd-b217-441e-a268-14126eae2004)
- Call ID: 9aaac8cd-b217-441e-a268-14126eae2004
+    source: Louis_Mountbatten
+  AssignClass (11d03346-8c17-4efe-99c5-a4af8cc5635b)
+ Call ID: 11d03346-8c17-4efe-99c5-a4af8cc5635b
+  Args:
+    source: Louis_Mountbatten
+    type: :Man
+  AssignClass (e426f5e5-1dd8-4f33-af65-9c9356429b96)
+ Call ID: e426f5e5-1dd8-4f33-af65-9c9356429b96
+  Args:
+    type: :Person
+    source: Edwina_Ashley
+  AssignClass (f95fd06a-aaf7-40dc-a60f-ec8fdfced3a0)
+ Call ID: f95fd06a-aaf7-40dc-a60f-ec8fdfced3a0
   Args:
     type: :Woman
-    source: Birgitte_Duchess_of_Gloucester
-  AssignClass (0d9229dd-113a-4cf9-bc7a-1c9aef28e17d)
- Call ID: 0d9229dd-113a-4cf9-bc7a-1c9aef28e17d
+    source: Edwina_Ashley
+  AddTriple (bb828153-4a40-4760-8dd0-08cdc9ec52d2)
+ Call ID: bb828153-4a40-4760-8dd0-08cdc9ec52d2
+  Args:
+    relation: :hasFather
+    target: Louis_Mountbatten
+    source: Pamela_Hicks
+  AddTriple (9c2cd896-ff35-41ea-a25c-65308775fb11)
+ Call ID: 9c2cd896-ff35-41ea-a25c-65308775fb11
+  Args:
+    target: Edwina_Ashley
+    source: Pamela_Hicks
+    relation: :hasMother
+  AssignClass (10ceaf25-a10d-4df4-aad6-94d7ee73f9df)
+ Call ID: 10ceaf25-a10d-4df4-aad6-94d7ee73f9df
   Args:
     type: :Person
-    source: Birgitte_Duchess_of_Gloucester
-  AddTriple (b4394eea-8623-4f6f-a551-df5f8cf55ff3)
- Call ID: b4394eea-8623-4f6f-a551-df5f8cf55ff3
+    source: Patricia_Mountbatten
+  AssignClass (d9dc90e9-07d0-4464-8e80-b9e663055a16)
+ Call ID: d9dc90e9-07d0-4464-8e80-b9e663055a16
   Args:
-    target: Prince_Richard_Duke_of_Gloucester
-    source: Alexander_Patrick_Gregers_Richard_Windsor
+    type: :Woman
+    source: Patricia_Mountbatten
+  AddTriple (89467cd9-680b-4176-949b-9b7ec817eb83)
+ Call ID: 89467cd9-680b-4176-949b-9b7ec817eb83
+  Args:
+    target: Patricia_Mountbatten
+    source: Pamela_Hicks
+    relation: :hasSister
+  AssignClass (533184fd-ac7c-4472-a752-7861e2269a46)
+ Call ID: 533184fd-ac7c-4472-a752-7861e2269a46
+  Args:
+    type: :Person
+    source: David_Nightingale_Hicks
+  AssignClass (a50cef2c-954c-43fa-bb61-abcfb576474e)
+ Call ID: a50cef2c-954c-43fa-bb61-abcfb576474e
+  Args:
+    source: David_Nightingale_Hicks
+    type: :Man
+  AddLiteral (0a861e1d-2f31-4cc0-8c60-83455102479a)
+ Call ID: 0a861e1d-2f31-4cc0-8c60-83455102479a
+  Args:
+    source: David_Nightingale_Hicks
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1929
+  AddLiteral (a2f5b7c2-eb3b-4bed-87e5-e45b86eaeedd)
+ Call ID: a2f5b7c2-eb3b-4bed-87e5-e45b86eaeedd
+  Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1998
+    source: David_Nightingale_Hicks
+  AssignClass (0d0382b3-aefb-4ba2-a4cb-12df6fca9de3)
+ Call ID: 0d0382b3-aefb-4ba2-a4cb-12df6fca9de3
+  Args:
+    type: :Person
+    source: Herbert_Hicks
+  AssignClass (3166cfb5-b40e-46d6-a6ae-e7ab1bcf6f73)
+ Call ID: 3166cfb5-b40e-46d6-a6ae-e7ab1bcf6f73
+  Args:
+    type: :Man
+    source: Herbert_Hicks
+  AssignClass (175ef0dd-cbea-41f5-a9c7-daf4f48a79e9)
+ Call ID: 175ef0dd-cbea-41f5-a9c7-daf4f48a79e9
+  Args:
+    source: Iris_Elsie_Platten
+    type: :Person
+  AssignClass (d6a8fead-7fe4-4a60-8882-491f6a6d8a83)
+ Call ID: d6a8fead-7fe4-4a60-8882-491f6a6d8a83
+  Args:
+    source: Iris_Elsie_Platten
+    type: :Woman
+  AddTriple (645d9946-2d67-44bd-a941-d1d2ad632964)
+ Call ID: 645d9946-2d67-44bd-a941-d1d2ad632964
+  Args:
+    source: David_Nightingale_Hicks
+    target: Herbert_Hicks
     relation: :hasFather
-  AddTriple (6ece70f7-a511-4e8f-9fc1-dd7447a5fe7f)
- Call ID: 6ece70f7-a511-4e8f-9fc1-dd7447a5fe7f
+  AddTriple (1eb133b0-e6a7-4f45-93b1-6feb1b295afd)
+ Call ID: 1eb133b0-e6a7-4f45-93b1-6feb1b295afd
   Args:
     relation: :hasMother
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-    target: Birgitte_Duchess_of_Gloucester
-  AssignClass (f54d395d-9a71-446f-9b18-76c54f7b1c07)
- Call ID: f54d395d-9a71-446f-9b18-76c54f7b1c07
+    target: Iris_Elsie_Platten
+    source: David_Nightingale_Hicks
+  AssignClass (791b1909-c236-4b8b-a10c-f6b3a76ec906)
+ Call ID: 791b1909-c236-4b8b-a10c-f6b3a76ec906
+  Args:
+    source: India_Hicks
+    type: :Person
+  AssignClass (d1f4a643-81ae-4ae0-b86c-8b8db38e5f95)
+ Call ID: d1f4a643-81ae-4ae0-b86c-8b8db38e5f95
   Args:
     type: :Woman
-    source: Claire_Booth
-  AssignClass (28e99238-0c20-4164-b70d-300001b3f0cb)
- Call ID: 28e99238-0c20-4164-b70d-300001b3f0cb
+    source: India_Hicks
+  AddTriple (6b4642d2-3d78-4206-9e4f-4a62e1ec405c)
+ Call ID: 6b4642d2-3d78-4206-9e4f-4a62e1ec405c
+  Args:
+    source: India_Hicks
+    target: Pamela_Hicks
+    relation: :hasMother
+  AddTriple (f80a41d0-92db-4b63-b073-fe724dc5e6ae)
+ Call ID: f80a41d0-92db-4b63-b073-fe724dc5e6ae
+  Args:
+    source: India_Hicks
+    target: David_Nightingale_Hicks
+    relation: :hasFather
+  AssignClass (da7b97c9-3065-4ca0-a33a-5b32d551b05b)
+ Call ID: da7b97c9-3065-4ca0-a33a-5b32d551b05b
   Args:
     type: :Person
-    source: Claire_Booth
-  AddLiteral (cf63289e-9d66-4a71-a2c0-03e198950b21)
- Call ID: cf63289e-9d66-4a71-a2c0-03e198950b21
-  Args:
-    literal_value: 2002
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AddTriple (23aaafd0-5d8e-4da5-9070-89726396c697)
- Call ID: 23aaafd0-5d8e-4da5-9070-89726396c697
-  Args:
-    relation: :hasRelation
-    target: Claire_Booth
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-  AssignClass (77efc389-13c3-4dd7-b1d9-09628ed1b2e9)
- Call ID: 77efc389-13c3-4dd7-b1d9-09628ed1b2e9
+    source: Prince_Louis_of_Battenberg
+  AssignClass (79e5fa25-95bd-4bed-a200-6ac8379e8e54)
+ Call ID: 79e5fa25-95bd-4bed-a200-6ac8379e8e54
   Args:
     type: :Man
-    source: Charles_III
-  AssignClass (0e43556a-26d3-4fbd-ab14-4e11b2e6d331)
- Call ID: 0e43556a-26d3-4fbd-ab14-4e11b2e6d331
+    source: Prince_Louis_of_Battenberg
+  AssignClass (7993d2c6-77f1-4a8a-83e7-28f77ab5314c)
+ Call ID: 7993d2c6-77f1-4a8a-83e7-28f77ab5314c
   Args:
     type: :Person
-    source: Charles_III
-  AddTriple (6ed7c455-0aef-4f38-b7ac-b6d2deaea696)
- Call ID: 6ed7c455-0aef-4f38-b7ac-b6d2deaea696
+    source: Princess_Victoria_of_Hesse
+  AssignClass (daee0256-05a5-453a-b070-6b4173afce32)
+ Call ID: daee0256-05a5-453a-b070-6b4173afce32
   Args:
-    relation: :hasRelation
-    target: Charles_III
-    source: Alexander_Patrick_Gregers_Richard_Windsor
-  Finish (76d7fafc-adc7-42a7-b29a-7150d74c7b18)
- Call ID: 76d7fafc-adc7-42a7-b29a-7150d74c7b18
+    type: :Woman
+    source: Princess_Victoria_of_Hesse
+  AddTriple (52c6ab7b-c61a-4608-8125-39968c79b6e5)
+ Call ID: 52c6ab7b-c61a-4608-8125-39968c79b6e5
+  Args:
+    target: Prince_Louis_of_Battenberg
+    source: Louis_Mountbatten
+    relation: :hasFather
+  AddTriple (a894cc54-770d-4004-b11f-5ada7004dcb3)
+ Call ID: a894cc54-770d-4004-b11f-5ada7004dcb3
+  Args:
+    relation: :hasMother
+    target: Princess_Victoria_of_Hesse
+    source: Louis_Mountbatten
+  AssignClass (af0d981b-cdb5-4614-94a6-a3c87dbd55d5)
+ Call ID: af0d981b-cdb5-4614-94a6-a3c87dbd55d5
+  Args:
+    source: 1st_Baron_Mount_Temple
+    type: :Person
+  AssignClass (21c39775-3d66-4075-b617-92152e257dc2)
+ Call ID: 21c39775-3d66-4075-b617-92152e257dc2
+  Args:
+    type: :Man
+    source: 1st_Baron_Mount_Temple
+  AddTriple (c663d46f-cef5-4d0a-bc48-c7b80ac91f51)
+ Call ID: c663d46f-cef5-4d0a-bc48-c7b80ac91f51
+  Args:
+    target: 1st_Baron_Mount_Temple
+    source: Edwina_Ashley
+    relation: :hasFather
+  Finish (9c2ac2c5-a1bc-46cb-b409-4b7de49ed8a5)
+ Call ID: 9c2ac2c5-a1bc-46cb-b409-4b7de49ed8a5
   Args:

@@ -1,0 +1,493 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Margriet a :Woman ;
+    :hasRelation data:Margriet ;
+    :hasSister data:Margriet ;
+    :isBloodrelationOf data:Margriet ;
+    :isSiblingOf data:Margriet ;
+    :isSisterOf data:Margriet .
+
+data:Pieter_van_Vollenhoven a :Man ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasRelation data:Pieter_van_Vollenhoven ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isSiblingOf data:Pieter_van_Vollenhoven .
+
+data:Constantijn a :Man ;
+    :hasBrother data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Bernhard,
+        data:Catharina-Amalia,
+        data:Claus,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasSister data:Beatrix ;
+    :isBloodrelationOf data:Beatrix,
+        data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :isBrotherOf data:Beatrix,
+        data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Beatrix,
+        data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :isUncleOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+
+data:Friso a :Man ;
+    :hasBrother data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Bernhard,
+        data:Catharina-Amalia,
+        data:Claus,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasSister data:Beatrix ;
+    :isBloodrelationOf data:Beatrix,
+        data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :isBrotherOf data:Beatrix,
+        data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Beatrix,
+        data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :isUncleOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+
+data:M%C3%A1xima_Zorreguieta_Cerruti a :Ancestor,
+        :Woman ;
+    :hasChild data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :hasDaughter data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Bernhard,
+        data:Catharina-Amalia,
+        data:Claus,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasSister data:M%C3%A1xima_Zorreguieta_Cerruti ;
+    :isAncestorOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isAuntOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isBloodrelationOf data:M%C3%A1xima_Zorreguieta_Cerruti ;
+    :isMotherOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isParentOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isSiblingOf data:M%C3%A1xima_Zorreguieta_Cerruti ;
+    :isSisterOf data:M%C3%A1xima_Zorreguieta_Cerruti .
+
+data:Claus a :Ancestor,
+        :Man ;
+    :hasBrother data:Bernhard,
+        data:Claus ;
+    :hasChild data:Beatrix,
+        data:Willem-Alexander ;
+    :hasDaughter data:Beatrix ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Bernhard,
+        data:Catharina-Amalia,
+        data:Claus,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasSon data:Willem-Alexander ;
+    :isAncestorOf data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Catharina-Amalia,
+        data:Willem-Alexander ;
+    :isBloodrelationOf data:Bernhard,
+        data:Claus ;
+    :isBrotherOf data:Bernhard,
+        data:Claus ;
+    :isFatherOf data:Beatrix,
+        data:Willem-Alexander ;
+    :isParentOf data:Beatrix,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Bernhard,
+        data:Claus ;
+    :isUncleOf data:Beatrix,
+        data:Willem-Alexander .
+
+data:Bernhard a :Ancestor,
+        :Man ;
+    :hasBrother data:Bernhard,
+        data:Claus ;
+    :hasChild data:Beatrix,
+        data:Juliana,
+        data:Willem-Alexander ;
+    :hasDaughter data:Beatrix,
+        data:Juliana ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Bernhard,
+        data:Catharina-Amalia,
+        data:Claus,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasSon data:Willem-Alexander ;
+    :isAncestorOf data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Catharina-Amalia,
+        data:Juliana,
+        data:Willem-Alexander ;
+    :isBloodrelationOf data:Bernhard,
+        data:Claus ;
+    :isBrotherOf data:Bernhard,
+        data:Claus ;
+    :isFatherOf data:Beatrix,
+        data:Juliana,
+        data:Willem-Alexander ;
+    :isParentOf data:Beatrix,
+        data:Juliana,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Bernhard,
+        data:Claus ;
+    :isUncleOf data:Beatrix,
+        data:Juliana,
+        data:Willem-Alexander .
+
+data:Juliana a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Bernhard ;
+    :hasChild data:Beatrix,
+        data:Willem-Alexander ;
+    :hasDaughter data:Beatrix ;
+    :hasFather data:Bernhard ;
+    :hasParent data:Bernhard ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Bernhard,
+        data:Catharina-Amalia,
+        data:Claus,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasSister data:Beatrix,
+        data:Juliana ;
+    :hasSon data:Willem-Alexander ;
+    :isAncestorOf data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Catharina-Amalia,
+        data:Willem-Alexander ;
+    :isAuntOf data:Beatrix,
+        data:Willem-Alexander ;
+    :isBloodrelationOf data:Beatrix,
+        data:Juliana ;
+    :isChildOf data:Bernhard ;
+    :isDaughterOf data:Bernhard ;
+    :isMotherOf data:Beatrix,
+        data:Willem-Alexander ;
+    :isParentOf data:Beatrix,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Beatrix,
+        data:Juliana ;
+    :isSisterOf data:Beatrix,
+        data:Juliana .
+
+data:Catharina-Amalia a :Woman ;
+    :hasAncestor data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti ;
+    :hasParent data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Bernhard,
+        data:Catharina-Amalia,
+        data:Claus,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasSister data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isBloodrelationOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isChildOf data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :isDaughterOf data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isSisterOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+
+data:Alexia a :Woman ;
+    :hasAncestor data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasParent data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Bernhard,
+        data:Catharina-Amalia,
+        data:Claus,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasSister data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isBloodrelationOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isChildOf data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :isDaughterOf data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isSisterOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+
+data:Ariane a :Woman ;
+    :hasAncestor data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasFather data:Willem-Alexander ;
+    :hasMother data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasParent data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Bernhard,
+        data:Catharina-Amalia,
+        data:Claus,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasSister data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isBloodrelationOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isChildOf data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :isDaughterOf data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :isSiblingOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isSisterOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+
+data:Beatrix a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Bernhard,
+        data:Claus,
+        data:Juliana ;
+    :hasBrother data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :hasChild data:Willem-Alexander ;
+    :hasFather data:Bernhard,
+        data:Claus ;
+    :hasMother data:Juliana ;
+    :hasParent data:Bernhard,
+        data:Claus,
+        data:Juliana ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Bernhard,
+        data:Catharina-Amalia,
+        data:Claus,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasSister data:Beatrix,
+        data:Juliana ;
+    :hasSon data:Willem-Alexander ;
+    :isAncestorOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia,
+        data:Willem-Alexander ;
+    :isAuntOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia,
+        data:Willem-Alexander ;
+    :isBloodrelationOf data:Beatrix,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:Willem-Alexander ;
+    :isChildOf data:Bernhard,
+        data:Claus,
+        data:Juliana ;
+    :isDaughterOf data:Bernhard,
+        data:Claus,
+        data:Juliana ;
+    :isMotherOf data:Willem-Alexander ;
+    :isParentOf data:Willem-Alexander ;
+    :isSiblingOf data:Beatrix,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:Willem-Alexander ;
+    :isSisterOf data:Beatrix,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:Willem-Alexander .
+
+data:Willem-Alexander a :Ancestor,
+        :Man ;
+    :hasAncestor data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Juliana ;
+    :hasBirthYear 1967 ;
+    :hasBrother data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :hasChild data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :hasDaughter data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :hasFather data:Bernhard,
+        data:Claus ;
+    :hasMarriageYear 2002 ;
+    :hasMother data:Beatrix,
+        data:Juliana ;
+    :hasParent data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Juliana ;
+    :hasRelation data:Alexia,
+        data:Ariane,
+        data:Beatrix,
+        data:Bernhard,
+        data:Catharina-Amalia,
+        data:Claus,
+        data:Constantijn,
+        data:Friso,
+        data:Juliana,
+        data:M%C3%A1xima_Zorreguieta_Cerruti,
+        data:Willem-Alexander ;
+    :hasSister data:Beatrix ;
+    :isAncestorOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isBloodrelationOf data:Beatrix,
+        data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :isBrotherOf data:Beatrix,
+        data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :isChildOf data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Juliana ;
+    :isFatherOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isMotherOf data:Alexia,
+        data:Ariane ;
+    :isParentOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia ;
+    :isSiblingOf data:Beatrix,
+        data:Constantijn,
+        data:Friso,
+        data:Willem-Alexander ;
+    :isSonOf data:Beatrix,
+        data:Bernhard,
+        data:Claus,
+        data:Juliana ;
+    :isUncleOf data:Alexia,
+        data:Ariane,
+        data:Catharina-Amalia .
+

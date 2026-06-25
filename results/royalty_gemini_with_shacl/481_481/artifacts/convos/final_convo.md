@@ -85,21 +85,30 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Hermann Friedrich Fernando Roland of Leiningen (German: Hermann Friedrich Fernando Roland Prinz zu Leiningen; born April 16, 1963) is a Canadian banker and the younger son of Prince Karl of Leiningen and Princess Marie Louise of Bulgaria.
-Life
+Archduhess Rosa Maria Antonie Roberta Josepha Anna Walburga Carmela Ignazia Rita de Cascia of Austria(German: Rosa Maria Antonie Roberta Josepha Anna Walburga Carmela Ignazia Rita de Cascia, Erzherzogin von Österreich; 22 September 1906 – 17 September 1983) was a member of the Tuscan branch of the House of Habsburg-Lorraine and an Archduchess of Austria and Princess of Bohemia, Hungary, and Tuscany by birth.
+Through her marriage to Philipp Albrecht, Duke of Württemberg, Rosa was also a member of the House of Württemberg and Duchess consort of Württemberg.
+Early life
 
-Leiningen was born in Toronto, Ontario.
-Through his mother, Leiningen is a grandson of King Boris III of Bulgaria, a great-grandson of King Victor Emmanuel III of Italy and great-great-grandson of King Nicholas of Montenegro.
-Leiningen is a financial analyst and banker, addressed as Mr. Hermann Leiningen professionally.
-As of 2015, Leiningen worked for a division of Royal Bank of Canada.
-On 16 May 1987, Leiningen married Deborah Cully (born December 2, 1961).
-Prince Herman is an honorary member of the Board of Trustees of the H.C.V. Princess Marie Louise and of the King Boris and Queen Giovanna Fund who manages Vrana Palace in Sofia.
+Rosa was the fourth and youngest child of Archduke Peter Ferdinand, Prince of Tuscany, and his wife, Princess Maria Cristina of Bourbon-Two Sicilies.
+Marriage and issue
+
+Rosa married Philipp Albrecht, Duke of Württemberg, eldest child and son of Albrecht, Duke of Württemberg, and his wife, Archduchess Margarete Sophie of Austria, on 1 August 1928 in Friedrichshafen.
+Rosa and Philipp Albrecht had two sons and four daughters:
+
+
+Ancestry
+
+References
+
+Bibliography
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +124,9 @@ Prince Herman is an honorary member of the Board of Trustees of the H.C.V. Princ
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +141,23 @@ Prince Herman is an honorary member of the Board of Trustees of the H.C.V. Princ
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,125 +449,120 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f67209d0-765d-4066-a2a4-1889a0e0d2e4)
- Call ID: f67209d0-765d-4066-a2a4-1889a0e0d2e4
+  AssignClass (297023cb-6d6f-4059-b2c2-90a033a73bb6)
+ Call ID: 297023cb-6d6f-4059-b2c2-90a033a73bb6
   Args:
-    type: :Man
-    source: :Hermann_Friedrich_Fernando_Roland_of_Leiningen
-  AssignClass (3c991aba-e40d-4582-a939-45267985f536)
- Call ID: 3c991aba-e40d-4582-a939-45267985f536
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+    type: :Woman
+  AssignClass (e0641324-5844-4e88-b491-5403844d50a5)
+ Call ID: e0641324-5844-4e88-b491-5403844d50a5
   Args:
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
     type: :Person
-    source: :Hermann_Friedrich_Fernando_Roland_of_Leiningen
-  AddLiteral (6bea7ec7-cef6-4c0d-b37d-82c91449efdf)
- Call ID: 6bea7ec7-cef6-4c0d-b37d-82c91449efdf
+  AddLiteral (7aa3dc8f-47be-4184-a6e6-ffefcfda5f8c)
+ Call ID: 7aa3dc8f-47be-4184-a6e6-ffefcfda5f8c
   Args:
+    literal_type: xsd:integer
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+    literal_value: 1906
     relation: :hasBirthYear
-    source: :Hermann_Friedrich_Fernando_Roland_of_Leiningen
-    literal_type: xsd:integer
-    literal_value: 1963
-  AddLiteral (894cd2d6-4eeb-40ff-83af-b42e4cb8cc0f)
- Call ID: 894cd2d6-4eeb-40ff-83af-b42e4cb8cc0f
+  AddLiteral (3bbf233d-d2f2-4e09-9fbb-59c50d3042ca)
+ Call ID: 3bbf233d-d2f2-4e09-9fbb-59c50d3042ca
   Args:
-    literal_value: Hermann Leiningen
-    literal_type: xsd:string
-    relation: :knownAs
-    source: :Hermann_Friedrich_Fernando_Roland_of_Leiningen
-  AssignClass (487ea81e-8efb-48c1-8d1b-026d711b404a)
- Call ID: 487ea81e-8efb-48c1-8d1b-026d711b404a
+    literal_type: xsd:integer
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+    literal_value: 1983
+    relation: :hasDeathYear
+  AssignClass (6d05bd13-03da-465a-9ba5-70e094dd5ecb)
+ Call ID: 6d05bd13-03da-465a-9ba5-70e094dd5ecb
   Args:
     type: :Man
-    source: :Prince_Karl_of_Leiningen
-  AssignClass (5c8d3364-f224-43ce-b14d-770d29a074f3)
- Call ID: 5c8d3364-f224-43ce-b14d-770d29a074f3
+    source: Peter_Ferdinand_of_Tuscany
+  AssignClass (d0785041-d49b-4673-957d-a7331c901973)
+ Call ID: d0785041-d49b-4673-957d-a7331c901973
   Args:
     type: :Person
-    source: :Prince_Karl_of_Leiningen
-  AssignClass (39d5cae3-de35-4563-9b8a-64bf7fd91fa4)
- Call ID: 39d5cae3-de35-4563-9b8a-64bf7fd91fa4
+    source: Peter_Ferdinand_of_Tuscany
+  AssignClass (ee62bb81-187a-47d3-b408-52778ef0ec54)
+ Call ID: ee62bb81-187a-47d3-b408-52778ef0ec54
   Args:
     type: :Woman
-    source: :Princess_Marie_Louise_of_Bulgaria
-  AssignClass (b96037bd-ba6f-4d19-ab59-42b0a9838250)
- Call ID: b96037bd-ba6f-4d19-ab59-42b0a9838250
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
+  AssignClass (66f75c88-bb66-4487-8a4f-5722cbad5c53)
+ Call ID: 66f75c88-bb66-4487-8a4f-5722cbad5c53
   Args:
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
     type: :Person
-    source: :Princess_Marie_Louise_of_Bulgaria
-  AddTriple (c7d87905-1756-4ce7-bbea-7c75ef94526f)
- Call ID: c7d87905-1756-4ce7-bbea-7c75ef94526f
+  AddTriple (514fbada-bb70-4aa7-b743-a4e70bfb8ca8)
+ Call ID: 514fbada-bb70-4aa7-b743-a4e70bfb8ca8
   Args:
-    target: :Prince_Karl_of_Leiningen
-    source: :Hermann_Friedrich_Fernando_Roland_of_Leiningen
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+    target: Peter_Ferdinand_of_Tuscany
     relation: :hasFather
-  AddTriple (07c9af64-a810-4b62-8dc8-e8ee2cf90973)
- Call ID: 07c9af64-a810-4b62-8dc8-e8ee2cf90973
+  AddTriple (d9b05180-99fd-4b64-9092-688b6e1470ed)
+ Call ID: d9b05180-99fd-4b64-9092-688b6e1470ed
   Args:
-    target: :Princess_Marie_Louise_of_Bulgaria
-    source: :Hermann_Friedrich_Fernando_Roland_of_Leiningen
+    target: Maria_Cristina_of_Bourbon-Two_Sicilies
     relation: :hasMother
-  AssignClass (5b3465d6-7900-4a94-8ff0-0db0a13ebded)
- Call ID: 5b3465d6-7900-4a94-8ff0-0db0a13ebded
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+  AssignClass (5ca67690-f5b8-4bd2-aba6-ad4a7d5bd189)
+ Call ID: 5ca67690-f5b8-4bd2-aba6-ad4a7d5bd189
   Args:
     type: :Man
-    source: :King_Boris_III_of_Bulgaria
-  AssignClass (299b1ff2-f68d-41d0-baa0-6dfc42da531f)
- Call ID: 299b1ff2-f68d-41d0-baa0-6dfc42da531f
+    source: Philipp_Albrecht_of_Württemberg
+  AssignClass (ce4752bb-cfe3-4e54-938c-f04b2fb21c24)
+ Call ID: ce4752bb-cfe3-4e54-938c-f04b2fb21c24
   Args:
+    source: Philipp_Albrecht_of_Württemberg
     type: :Person
-    source: :King_Boris_III_of_Bulgaria
-  AddTriple (40af241c-1976-48a3-a71e-144fc78e1b58)
- Call ID: 40af241c-1976-48a3-a71e-144fc78e1b58
+  AddTriple (f41070f3-1754-4c6e-9e4d-9cd2277a5fc4)
+ Call ID: f41070f3-1754-4c6e-9e4d-9cd2277a5fc4
   Args:
-    source: :Princess_Marie_Louise_of_Bulgaria
-    relation: :hasFather
-    target: :King_Boris_III_of_Bulgaria
-  AssignClass (9d3daec4-b18c-4329-b177-acc616b7c2dc)
- Call ID: 9d3daec4-b18c-4329-b177-acc616b7c2dc
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+    relation: :hasRelation
+    target: Philipp_Albrecht_of_Württemberg
+  AddLiteral (69156d93-7388-4faf-88c0-4004f7bafd92)
+ Call ID: 69156d93-7388-4faf-88c0-4004f7bafd92
   Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1928
+    source: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+  AssignClass (7ef8808f-47e9-4a22-b579-e45bfafad32a)
+ Call ID: 7ef8808f-47e9-4a22-b579-e45bfafad32a
+  Args:
+    source: Albrecht_of_Württemberg
     type: :Man
-    source: :King_Victor_Emmanuel_III_of_Italy
-  AssignClass (b0024e82-18c2-4eb8-bde3-dc33f25094ec)
- Call ID: b0024e82-18c2-4eb8-bde3-dc33f25094ec
+  AssignClass (df38ec88-ca9b-4635-bd2a-51edcacbed87)
+ Call ID: df38ec88-ca9b-4635-bd2a-51edcacbed87
   Args:
+    source: Albrecht_of_Württemberg
     type: :Person
-    source: :King_Victor_Emmanuel_III_of_Italy
-  AssignClass (66d544f0-c246-45b4-ad38-e1a17e404613)
- Call ID: 66d544f0-c246-45b4-ad38-e1a17e404613
-  Args:
-    type: :Man
-    source: :King_Nicholas_of_Montenegro
-  AssignClass (f4dca46e-0c43-4d49-9872-084e33bf7627)
- Call ID: f4dca46e-0c43-4d49-9872-084e33bf7627
-  Args:
-    type: :Person
-    source: :King_Nicholas_of_Montenegro
-  AssignClass (0cdb612f-5f3f-4f7e-99a0-2e0ea92e5ca5)
- Call ID: 0cdb612f-5f3f-4f7e-99a0-2e0ea92e5ca5
+  AssignClass (9060e0d6-c71e-4031-8774-cce8bd3ee102)
+ Call ID: 9060e0d6-c71e-4031-8774-cce8bd3ee102
   Args:
     type: :Woman
-    source: :Deborah_Cully
-  AssignClass (6239231d-13c5-42aa-a69e-dce7a12e2004)
- Call ID: 6239231d-13c5-42aa-a69e-dce7a12e2004
+    source: Margarete_Sophie_of_Austria
+  AssignClass (5622a718-b865-4afc-8553-6e0755d0aa8e)
+ Call ID: 5622a718-b865-4afc-8553-6e0755d0aa8e
   Args:
     type: :Person
-    source: :Deborah_Cully
-  AddLiteral (1617c5e7-ef33-41e0-a82a-8fc9ddbdcb2c)
- Call ID: 1617c5e7-ef33-41e0-a82a-8fc9ddbdcb2c
+    source: Margarete_Sophie_of_Austria
+  AddTriple (a6651d2c-1e25-4a39-bdc3-38f9a6a339c2)
+ Call ID: a6651d2c-1e25-4a39-bdc3-38f9a6a339c2
   Args:
-    relation: :hasMarriageYear
-    source: :Hermann_Friedrich_Fernando_Roland_of_Leiningen
-    literal_value: 1987
-    literal_type: xsd:integer
-  AddTriple (abc1f128-edea-4eb2-be9e-0fe5ba1e9274)
- Call ID: abc1f128-edea-4eb2-be9e-0fe5ba1e9274
+    source: Philipp_Albrecht_of_Württemberg
+    target: Albrecht_of_Württemberg
+    relation: :hasFather
+  AddTriple (8ba3ab2d-5233-4406-903b-a9ad9789a4a8)
+ Call ID: 8ba3ab2d-5233-4406-903b-a9ad9789a4a8
   Args:
-    relation: :hasRelation
-    source: :Hermann_Friedrich_Fernando_Roland_of_Leiningen
-    target: :Deborah_Cully
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Philipp_Albrecht_of_Württemberg
+    target: Margarete_Sophie_of_Austria
+    relation: :hasMother
+  Finish (56d950b8-bbbd-4d22-98d8-4dd580706e98)
+ Call ID: 56d950b8-bbbd-4d22-98d8-4dd580706e98
+  Args:
 
 ================================= Tool Message =================================
 
@@ -553,120 +647,146 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Hermann_Friedrich_Fernando_Roland_of_Leiningen a :Man,
-          :Person ;
-      :hasBirthYear 1963 ;
-      :hasFather data:Prince_Karl_of_Leiningen ;
-      :hasMarriageYear 1987 ;
-      :hasMother data:Princess_Marie_Louise_of_Bulgaria ;
-      :hasRelation data:Deborah_Cully ;
-      :knownAs "Hermann Leiningen"^^xsd:string .
+  data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria a :Person,
+          :Woman ;
+      :hasBirthYear 1906 ;
+      :hasDeathYear 1983 ;
+      :hasFather data:Peter_Ferdinand_of_Tuscany ;
+      :hasMarriageYear 1928 ;
+      :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+      :hasRelation data:Philipp_Albrecht_of_W%C3%BCrttemberg .
 
-  data:King_Nicholas_of_Montenegro a :Man,
+  data:Albrecht_of_W%C3%BCrttemberg a :Man,
           :Person .
 
-  data:King_Victor_Emmanuel_III_of_Italy a :Man,
-          :Person .
-
-  data:Deborah_Cully a :Person,
+  data:Margarete_Sophie_of_Austria a :Person,
           :Woman .
 
-  data:King_Boris_III_of_Bulgaria a :Man,
+  data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,
+          :Woman .
+
+  data:Peter_Ferdinand_of_Tuscany a :Man,
           :Person .
 
-  data:Prince_Karl_of_Leiningen a :Man,
-          :Person .
-
-  data:Princess_Marie_Louise_of_Bulgaria a :Person,
-          :Woman ;
-      :hasFather data:King_Boris_III_of_Bulgaria .
+  data:Philipp_Albrecht_of_W%C3%BCrttemberg a :Man,
+          :Person ;
+      :hasFather data:Albrecht_of_W%C3%BCrttemberg ;
+      :hasMother data:Margarete_Sophie_of_Austria .
 
 
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (ade2cef9-f90c-466a-aa54-978972a4f737)
- Call ID: ade2cef9-f90c-466a-aa54-978972a4f737
+  ValidateShacl (0ef6dff4-00bb-43d2-b129-8bf2e6e9c423)
+ Call ID: 0ef6dff4-00bb-43d2-b129-8bf2e6e9c423
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:9
+Total violations:12
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Prince_Karl_of_Leiningen' assigned to 'hasFather' for 'Hermann_Friedrich_Fernando_Roland_of_Leiningen' is not recognized as an 'Ancestor' or 'Man'.
+      The value node Albrecht_of_Württemberg is missing the required class :Ancestor, which is expected for the hasFather property of Philipp_Albrecht_of_Württemberg.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Karl_of_Leiningen, :Ancestor)
+      AssignClass(node='Albrecht_of_Württemberg', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Princess_Marie_Louise_of_Bulgaria' assigned to 'hasMother' for 'Hermann_Friedrich_Fernando_Roland_of_Leiningen' is not recognized as an 'Ancestor' or 'Woman'.
+      The value node Margarete_Sophie_of_Austria is missing the required class :Ancestor, which is expected for the hasMother property of Philipp_Albrecht_of_Württemberg.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Marie_Louise_of_Bulgaria, :Ancestor)
+      AssignClass(node='Margarete_Sophie_of_Austria', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Prince_Karl_of_Leiningen' assigned to 'hasFather' for 'Hermann_Friedrich_Fernando_Roland_of_Leiningen' is not recognized as an 'Ancestor' or 'Man'.
+      The value node Albrecht_of_Württemberg is missing the required class :Ancestor, which is expected for the hasFather property of Philipp_Albrecht_of_Württemberg.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Karl_of_Leiningen, :Ancestor)
+      AssignClass(node='Albrecht_of_Württemberg', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'King_Boris_III_of_Bulgaria' assigned to 'hasFather' for 'Princess_Marie_Louise_of_Bulgaria' is not recognized as an 'Ancestor' or 'Man'.
+      The value node Peter_Ferdinand_of_Tuscany is missing the required class :Ancestor, which is expected for the hasFather property of Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Boris_III_of_Bulgaria, :Ancestor)
+      AssignClass(node='Peter_Ferdinand_of_Tuscany', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Princess_Marie_Louise_of_Bulgaria' assigned to 'hasMother' for 'Hermann_Friedrich_Fernando_Roland_of_Leiningen' is not recognized as an 'Ancestor' or 'Woman'.
+      The value node Margarete_Sophie_of_Austria is missing the required class :Ancestor, which is expected for the hasMother property of Philipp_Albrecht_of_Württemberg.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Marie_Louise_of_Bulgaria, :Ancestor)
+      AssignClass(node='Margarete_Sophie_of_Austria', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Prince_Karl_of_Leiningen' assigned to 'hasFather' for 'Hermann_Friedrich_Fernando_Roland_of_Leiningen' is not recognized as an 'Ancestor' or 'Man'.
+      The value node Maria_Cristina_of_Bourbon-Two_Sicilies is missing the required class :Ancestor, which is expected for the hasMother property of Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Karl_of_Leiningen, :Ancestor)
+      AssignClass(node='Maria_Cristina_of_Bourbon-Two_Sicilies', class=':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'King_Boris_III_of_Bulgaria' assigned to 'hasFather' for 'Princess_Marie_Louise_of_Bulgaria' is not recognized as an 'Ancestor' or 'Man'.
+      The value node Albrecht_of_Württemberg is missing the required class :Ancestor, which is expected for the hasFather property of Philipp_Albrecht_of_Württemberg.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Boris_III_of_Bulgaria, :Ancestor)
+      AssignClass(node='Albrecht_of_Württemberg', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Princess_Marie_Louise_of_Bulgaria' assigned to 'hasMother' for 'Hermann_Friedrich_Fernando_Roland_of_Leiningen' is not recognized as an 'Ancestor' or 'Woman'.
+      The value node Peter_Ferdinand_of_Tuscany is missing the required class :Ancestor, which is expected for the hasFather property of Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Marie_Louise_of_Bulgaria, :Ancestor)
+      AssignClass(node='Peter_Ferdinand_of_Tuscany', class=':Ancestor')
 
 
   Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Margarete_Sophie_of_Austria is missing the required class :Ancestor, which is expected for the hasMother property of Philipp_Albrecht_of_Württemberg.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Margarete_Sophie_of_Austria', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Maria_Cristina_of_Bourbon-Two_Sicilies is missing the required class :Ancestor, which is expected for the hasMother property of Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Cristina_of_Bourbon-Two_Sicilies', class=':Ancestor')
+
+
+  Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'King_Boris_III_of_Bulgaria' assigned to 'hasFather' for 'Princess_Marie_Louise_of_Bulgaria' is not recognized as an 'Ancestor' or 'Man'.
+      The value node Peter_Ferdinand_of_Tuscany is missing the required class :Ancestor, which is expected for the hasFather property of Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Boris_III_of_Bulgaria, :Ancestor)
+      AssignClass(node='Peter_Ferdinand_of_Tuscany', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Maria_Cristina_of_Bourbon-Two_Sicilies is missing the required class :Ancestor, which is expected for the hasMother property of Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Cristina_of_Bourbon-Two_Sicilies', class=':Ancestor')
 
 
 
@@ -675,21 +795,30 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (d7e15a1b-2962-432e-b9a4-207aefe9b3ff)
- Call ID: d7e15a1b-2962-432e-b9a4-207aefe9b3ff
+  AssignClass (575a17d6-4178-472a-962d-5f96fe7a60c6)
+ Call ID: 575a17d6-4178-472a-962d-5f96fe7a60c6
   Args:
     type: :Ancestor
-    source: :Prince_Karl_of_Leiningen
-  AssignClass (1a16d33c-8d1d-42bd-8735-cc9afac45cd5)
- Call ID: 1a16d33c-8d1d-42bd-8735-cc9afac45cd5
+    source: Albrecht_of_Württemberg
+  AssignClass (d6dbdf4c-1c13-4d9c-9cc8-f1496351cc31)
+ Call ID: d6dbdf4c-1c13-4d9c-9cc8-f1496351cc31
+  Args:
+    source: Margarete_Sophie_of_Austria
+    type: :Ancestor
+  AssignClass (aed3ca7b-b08e-45e5-9ec0-07792d34664e)
+ Call ID: aed3ca7b-b08e-45e5-9ec0-07792d34664e
+  Args:
+    source: Peter_Ferdinand_of_Tuscany
+    type: :Ancestor
+  AssignClass (b87a5777-64d6-4600-b94f-35515440fb7b)
+ Call ID: b87a5777-64d6-4600-b94f-35515440fb7b
   Args:
     type: :Ancestor
-    source: :Princess_Marie_Louise_of_Bulgaria
-  AssignClass (fbda0f75-8c85-4dc2-bc35-0fa029e3dbe7)
- Call ID: fbda0f75-8c85-4dc2-bc35-0fa029e3dbe7
-  Args:
-    type: :Ancestor
-    source: :King_Boris_III_of_Bulgaria
+    source: Maria_Cristina_of_Bourbon-Two_Sicilies
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -706,36 +835,35 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Hermann_Friedrich_Fernando_Roland_of_Leiningen a :Man,
-          :Person ;
-      :hasBirthYear 1963 ;
-      :hasFather data:Prince_Karl_of_Leiningen ;
-      :hasMarriageYear 1987 ;
-      :hasMother data:Princess_Marie_Louise_of_Bulgaria ;
-      :hasRelation data:Deborah_Cully ;
-      :knownAs "Hermann Leiningen"^^xsd:string .
+  data:Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria a :Person,
+          :Woman ;
+      :hasBirthYear 1906 ;
+      :hasDeathYear 1983 ;
+      :hasFather data:Peter_Ferdinand_of_Tuscany ;
+      :hasMarriageYear 1928 ;
+      :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
+      :hasRelation data:Philipp_Albrecht_of_W%C3%BCrttemberg .
 
-  data:King_Nicholas_of_Montenegro a :Man,
+  data:Albrecht_of_W%C3%BCrttemberg a :Ancestor,
+          :Man,
           :Person .
 
-  data:King_Victor_Emmanuel_III_of_Italy a :Man,
-          :Person .
-
-  data:Deborah_Cully a :Person,
+  data:Margarete_Sophie_of_Austria a :Ancestor,
+          :Person,
           :Woman .
 
-  data:King_Boris_III_of_Bulgaria a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Karl_of_Leiningen a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Princess_Marie_Louise_of_Bulgaria a :Ancestor,
+  data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Ancestor,
           :Person,
-          :Woman ;
-      :hasFather data:King_Boris_III_of_Bulgaria .
+          :Woman .
+
+  data:Peter_Ferdinand_of_Tuscany a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Philipp_Albrecht_of_W%C3%BCrttemberg a :Man,
+          :Person ;
+      :hasFather data:Albrecht_of_W%C3%BCrttemberg ;
+      :hasMother data:Margarete_Sophie_of_Austria .
 
 
 
@@ -743,8 +871,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (49eb6050-398e-4b1b-abf2-e1478c25201b)
- Call ID: 49eb6050-398e-4b1b-abf2-e1478c25201b
+  ValidateShacl (40439c86-501c-4669-bc8b-b6aec43cf2dd)
+ Call ID: 40439c86-501c-4669-bc8b-b6aec43cf2dd
   Args:
 
 ================================= Tool Message =================================
@@ -755,6 +883,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (3bbd4f7e-fd32-4bce-b3db-a69a53e6c55d)
- Call ID: 3bbd4f7e-fd32-4bce-b3db-a69a53e6c55d
+  Finish (cad274b4-f4f3-4e57-a466-cc44f0c19f60)
+ Call ID: cad274b4-f4f3-4e57-a466-cc44f0c19f60
   Args:

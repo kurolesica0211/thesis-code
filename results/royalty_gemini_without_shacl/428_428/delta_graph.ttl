@@ -2,37 +2,29 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Rose_Constance_Leveson-Gower a :Person,
-        :Woman ;
-    :hasBirthYear "1890"^^xsd:string ;
-    :hasDeathYear "1967"^^xsd:string ;
-    :hasFather data:14th_Earl_of_Strathmore_and_Kinghorne ;
-    :hasMarriageYear "1916"^^xsd:string ;
-    :hasMother data:Cecilia_Cavendish-Bentinck ;
-    :hasRelation data:William_Leveson-Gower ;
-    :isAuntOf data:Princess_Margaret_Rose_of_York,
-        data:Queen_Elizabeth_II ;
-    :isSisterOf data:Queen_Elizabeth_The_Queen_Mother ;
-    :knownAs "Rose Constance Leveson-Gower, Countess Granville"^^xsd:string .
+data:Prince_Michael_of_Greece_and_Denmark a :Man ;
+    :hasBirthYear 1939 ;
+    :hasDeathYear 2024 ;
+    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:Princess_Francoise_dOrleans ;
+    :hasRelation data:Marina_Karella .
 
-data:14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
-        :Man,
-        :Person .
+data:Elli_Chalikiopoulos a :Woman .
 
-data:Cecilia_Cavendish-Bentinck a :Ancestor,
-        :Person,
-        :Woman .
+data:Jean_dOrleans_Duke_of_Guise a :Man .
 
-data:Princess_Margaret_Rose_of_York a :Person,
-        :Woman .
+data:King_George_I_of_Greece a :Man .
 
-data:Queen_Elizabeth_II a :Person,
-        :Woman .
+data:Marina_Karella a :Woman ;
+    :hasFather data:Theodoros_Karellas ;
+    :hasMother data:Elli_Chalikiopoulos .
 
-data:Queen_Elizabeth_The_Queen_Mother a :Person,
-        :Woman .
+data:Prince_Christopher_of_Greece_and_Denmark a :Man ;
+    :hasFather data:King_George_I_of_Greece .
 
-data:William_Leveson-Gower a :Man,
-        :Person ;
-    :hasDeathYear "1953"^^xsd:string .
+data:Princess_Francoise_dOrleans a :Woman ;
+    :hasFather data:Jean_dOrleans_Duke_of_Guise .
+
+data:Theodoros_Karellas a :Man .
 

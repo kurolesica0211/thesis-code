@@ -1,0 +1,102 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Fergus_Bowes-Lyon a :Man,
+        :Person ;
+    rdfs:label "Fergus Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "589:606"^^xsd:string ;
+    data:wdtLink wdt:Q5444165 ;
+    :hasBrother data:Fergus_Bowes-Lyon ;
+    :hasRelation data:Fergus_Bowes-Lyon ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Fergus_Bowes-Lyon ;
+    :isBrotherOf data:Fergus_Bowes-Lyon ;
+    :isSiblingOf data:Fergus_Bowes-Lyon .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "164:179"^^xsd:string,
+        "180:196"^^xsd:string,
+        "245:260"^^xsd:string,
+        "493:508"^^xsd:string,
+        "509:525"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasRelation data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isBloodrelationOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:Dorothy_Osborne a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Dorothy Osborne"^^xsd:string ;
+    data:posIndicesFull "420:435"^^xsd:string ;
+    data:wdtLink wdt:Q75240055 ;
+    :alsoKnownAs "Dorothy Beatrix Godolphin Bowes-Lyon, Countess of Strathearn and Kinghorne"^^xsd:string,
+        "Dorothy Bowes-Lyon, Countess of Strathearn and Kinghorne"^^xsd:string,
+        "Lady Dorothy Beatrix Godolphin Osborne"^^xsd:string ;
+    :hasChild data:Timothy_Bowes-Lyon ;
+    :hasRelation data:Dorothy_Osborne,
+        data:Timothy_Bowes-Lyon ;
+    :hasSex data:female ;
+    :hasSister data:Dorothy_Osborne ;
+    :hasSon data:Timothy_Bowes-Lyon ;
+    :isAncestorOf data:Timothy_Bowes-Lyon ;
+    :isAuntOf data:Timothy_Bowes-Lyon ;
+    :isBloodrelationOf data:Dorothy_Osborne ;
+    :isMotherOf data:Timothy_Bowes-Lyon ;
+    :isParentOf data:Timothy_Bowes-Lyon ;
+    :isSiblingOf data:Dorothy_Osborne ;
+    :isSisterOf data:Dorothy_Osborne .
+
+data:Timothy_Bowes-Lyon a :Man,
+        :Person ;
+    rdfs:label "Timothy Bowes-Lyon"^^xsd:string ;
+    data:wdtLink wdt:Q3991503 ;
+    :alsoKnownAs "Timothy Bowes-Lyon, 16th Earl of Strathmore and Kinghorne"^^xsd:string ;
+    :hasAncestor data:Dorothy_Osborne ;
+    :hasBrother data:Timothy_Bowes-Lyon ;
+    :hasMother data:Dorothy_Osborne ;
+    :hasParent data:Dorothy_Osborne ;
+    :hasRelation data:Dorothy_Osborne,
+        data:Timothy_Bowes-Lyon ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Timothy_Bowes-Lyon ;
+    :isBrotherOf data:Timothy_Bowes-Lyon ;
+    :isChildOf data:Dorothy_Osborne ;
+    :isSiblingOf data:Timothy_Bowes-Lyon ;
+    :isSonOf data:Dorothy_Osborne .
+

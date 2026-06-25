@@ -2,42 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Anne_Topping a :Person,
-        :Woman ;
-    :hasFather data:Bernard_Topping ;
-    :hasMarriageYear 1997 ;
-    :hasSex data:Female .
-
-data:Florence_Pearson a :Person,
-        :Woman ;
-    :hasMarriageYear 2016 ;
-    :hasSex data:Female .
-
-data:Granville_George_Fergus_Leveson-Gower a :Man,
+data:Emperor_Wilhelm_II a :Man,
         :Person ;
-    :formerlyKnownAs "Lord Leveson"^^xsd:string ;
-    :hasBirthYear 1959 ;
-    :hasFather data:Granville_Leveson-Gower_5th_Earl_Granville ;
-    :hasMother data:Rose_Leveson-Gower_Countess_Granville ;
-    :hasSex data:Male .
+    :isBrotherOf data:Princess_Margaret_of_Prussia .
 
-data:Bernard_Topping a :Ancestor,
+data:Mafalda_of_Italy a :Person,
+        :Woman .
+
+data:Philippe_of_Hesse a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Richard_of_Hesse .
+
+data:Prince_Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Richard_of_Hesse .
+
+data:Prince_Christoph_of_Hesse-Kassel a :Man,
+        :Person ;
+    :hasMarriageYear 1930 ;
+    :hasRelation data:Princess_Sophie_of_Greece_and_Denmark .
+
+data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
-data:Granville_Leveson-Gower_5th_Earl_Granville a :Ancestor,
-        :Man,
-        :Person ;
-    :hasMother data:Rose_Leveson-Gower_Countess_Granville ;
-    :hasSex data:Male .
+data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+        :Woman .
 
-data:Rose_Leveson-Gower_Countess_Granville a :Ancestor,
+data:Queen_Victoria a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female .
+        :Woman .
 
-data:Female a :Sex .
+data:Prince_Richard_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Queen_Victoria ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMother data:Princess_Margaret_of_Prussia ;
+    :isBrotherOf data:Prince_Christoph_of_Hesse-Kassel ;
+    :knownAs "Ri"^^xsd:string .
 
-data:Male a :Sex .
+data:Princess_Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman .
 

@@ -1,0 +1,604 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Sarah_Ferguson a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Sarah Ferguson"^^xsd:string ;
+    data:posIndicesFull "212:226"^^xsd:string ;
+    data:wdtLink wdt:Q55720 ;
+    :alsoKnownAs "Fergie"^^xsd:string,
+        "Sarah Margaret Ferguson"^^xsd:string,
+        "Sarah Margaret Mountbatten-Windsor"^^xsd:string,
+        "Sarah Mountbatten-Windsor"^^xsd:string ;
+    :hasChild data:Princess_Eugenie_of_York ;
+    :hasDaughter data:Princess_Eugenie_of_York ;
+    :hasRelation data:August_Brooksbank,
+        data:Ernest_Brooksbank,
+        data:Princess_Eugenie_of_York,
+        data:Sarah_Ferguson ;
+    :hasSex data:female ;
+    :hasSister data:Sarah_Ferguson ;
+    :isAncestorOf data:August_Brooksbank,
+        data:Ernest_Brooksbank,
+        data:Princess_Eugenie_of_York ;
+    :isAuntOf data:Princess_Eugenie_of_York ;
+    :isBloodrelationOf data:Sarah_Ferguson ;
+    :isMotherOf data:Princess_Eugenie_of_York ;
+    :isParentOf data:Princess_Eugenie_of_York ;
+    :isSiblingOf data:Sarah_Ferguson ;
+    :isSisterOf data:Sarah_Ferguson .
+
+data:Jack_Brooksbank a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Jack Brooksbank"^^xsd:string ;
+    data:posIndicesFull "22:37"^^xsd:string,
+        "3278:3293"^^xsd:string,
+        "572:587"^^xsd:string,
+        "7556:7571"^^xsd:string ;
+    data:posIndicesPart "3442:3452"^^xsd:string,
+        "4788:4798"^^xsd:string ;
+    data:wdtLink wdt:Q57401350 ;
+    :alsoKnownAs "Jack Christopher Stamp Brooksbank"^^xsd:string ;
+    :hasBrother data:Jack_Brooksbank ;
+    :hasChild data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :hasRelation data:August_Brooksbank,
+        data:Ernest_Brooksbank,
+        data:Jack_Brooksbank ;
+    :hasSex data:male ;
+    :hasSon data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isAncestorOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isBloodrelationOf data:Jack_Brooksbank ;
+    :isBrotherOf data:Jack_Brooksbank ;
+    :isFatherOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isParentOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isSiblingOf data:Jack_Brooksbank ;
+    :isUncleOf data:August_Brooksbank,
+        data:Ernest_Brooksbank .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "2593:2599"^^xsd:string,
+        "296:300"^^xsd:string,
+        "3231:3237"^^xsd:string,
+        "3508:3514"^^xsd:string,
+        "3566:3572"^^xsd:string,
+        "3591:3596"^^xsd:string,
+        "4100:4104"^^xsd:string,
+        "4546:4550"^^xsd:string,
+        "676:680"^^xsd:string,
+        "7287:7291"^^xsd:string ;
+    data:posIndicesPart "5200:5208"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Charles_III,
+        data:Ernest_Brooksbank,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Eugenie_of_York ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Charles_III,
+        data:Ernest_Brooksbank,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Eugenie_of_York ;
+    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Princess_Alice_of_Battenberg ;
+    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Princess_Alice_of_Battenberg .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "1360:1375"^^xsd:string,
+        "7070:7085"^^xsd:string,
+        "878:893"^^xsd:string ;
+    data:posIndicesPart "1151:1156"^^xsd:string,
+        "2969:2974"^^xsd:string,
+        "4035:4041"^^xsd:string,
+        "5536:5542"^^xsd:string,
+        "5854:5860"^^xsd:string,
+        "5933:5938"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Ernest_Brooksbank,
+        data:Princess_Eugenie_of_York,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Ernest_Brooksbank,
+        data:Princess_Eugenie_of_York ;
+    :isAuntOf data:Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:Charles_III a :Man,
+        :Person ;
+    rdfs:label "Charles III"^^xsd:string ;
+    data:posIndicesFull "243:255"^^xsd:string,
+        "243:259"^^xsd:string,
+        "248:259"^^xsd:string,
+        "2669:2680"^^xsd:string,
+        "5912:5924"^^xsd:string,
+        "5912:5928"^^xsd:string,
+        "5917:5928"^^xsd:string ;
+    data:posIndicesPart "2797:2804"^^xsd:string ;
+    data:wdtLink wdt:Q43274 ;
+    :alsoKnownAs "C III"^^xsd:string,
+        "Charles III of England"^^xsd:string,
+        "Charles III of the United Kingdom"^^xsd:string,
+        "Charles Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George"^^xsd:string,
+        "Charles Philip Arthur George Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George Windsor"^^xsd:string,
+        "Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Charles Wales"^^xsd:string,
+        "Charles Windsor"^^xsd:string,
+        "Charles the Third"^^xsd:string,
+        "HM King Charles III"^^xsd:string,
+        "His Majesty"^^xsd:string,
+        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith"^^xsd:string,
+        "His Majesty The King"^^xsd:string,
+        "His Royal Highness Charles III of Great Britain"^^xsd:string,
+        "King Charles"^^xsd:string,
+        "King Charles III"^^xsd:string,
+        "King of England"^^xsd:string,
+        "Prince Charles"^^xsd:string,
+        "Prince Charles Philip Arthur George of Edinburgh"^^xsd:string,
+        "Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Prince Charles of Edinburgh"^^xsd:string,
+        "Prince Charles, Duke of Rothesay"^^xsd:string,
+        "Prince Charles, Prince of Wales"^^xsd:string,
+        "The Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "The Prince Charles, Prince of Wales"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isSonOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isUncleOf data:Princess_Eugenie_of_York .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "1360:1378"^^xsd:string,
+        "1366:1378"^^xsd:string,
+        "7070:7088"^^xsd:string,
+        "7076:7088"^^xsd:string,
+        "878:896"^^xsd:string,
+        "884:896"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasAncestor data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasChild data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Ernest_Brooksbank,
+        data:Princess_Eugenie_of_York,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :hasSon data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Charles_III,
+        data:Ernest_Brooksbank,
+        data:Princess_Eugenie_of_York ;
+    :isAuntOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isParentOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "4184:4197"^^xsd:string,
+        "4184:4216"^^xsd:string,
+        "901:914"^^xsd:string,
+        "901:933"^^xsd:string ;
+    data:posIndicesPart "1269:1273"^^xsd:string,
+        "2687:2693"^^xsd:string,
+        "2945:2949"^^xsd:string,
+        "4706:4712"^^xsd:string,
+        "7460:7464"^^xsd:string ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip"^^xsd:string,
+        "H.R.H. The Duke Of Edinburgh"^^xsd:string,
+        "Lieutenant Philip Mountbatten"^^xsd:string,
+        "Philip Edinburgh"^^xsd:string,
+        "Philip Mountbatten"^^xsd:string,
+        "Philip Mountbatten; Prince Philip of Greece and Denmark"^^xsd:string,
+        "Philip of Greece and Denmark"^^xsd:string,
+        "Prince Philip"^^xsd:string,
+        "Prince Philip of Greece and Denmark"^^xsd:string,
+        "The Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    :hasAncestor data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasChild data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Charles_III,
+        data:Ernest_Brooksbank,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Eugenie_of_York ;
+    :hasSex data:male ;
+    :hasSon data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Charles_III,
+        data:Ernest_Brooksbank,
+        data:Princess_Eugenie_of_York ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isFatherOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isParentOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSonOf data:Princess_Alice_of_Battenberg ;
+    :isUncleOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III .
+
+data:August_Brooksbank a :Man,
+        :Person ;
+    rdfs:label "August Brooksbank"^^xsd:string ;
+    data:posIndicesFull "3889:3919"^^xsd:string ;
+    data:posIndicesPart "4218:4224"^^xsd:string,
+        "4788:4798"^^xsd:string,
+        "6459:6465"^^xsd:string ;
+    data:wdtLink wdt:Q105597990 ;
+    :alsoKnownAs "August Philip Hawke Brooksbank"^^xsd:string ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Elizabeth_II,
+        data:Jack_Brooksbank,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Eugenie_of_York,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:Sarah_Ferguson ;
+    :hasBrother data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :hasFather data:Jack_Brooksbank ;
+    :hasMother data:Princess_Eugenie_of_York ;
+    :hasParent data:Jack_Brooksbank,
+        data:Princess_Eugenie_of_York ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Elizabeth_II,
+        data:Ernest_Brooksbank,
+        data:Jack_Brooksbank,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Eugenie_of_York,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:Sarah_Ferguson ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isBrotherOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isChildOf data:Jack_Brooksbank,
+        data:Princess_Eugenie_of_York ;
+    :isSiblingOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isSonOf data:Jack_Brooksbank,
+        data:Princess_Eugenie_of_York .
+
+data:Ernest_Brooksbank a :Man,
+        :Person ;
+    rdfs:label "Ernest Brooksbank"^^xsd:string ;
+    data:posIndicesFull "4411:4442"^^xsd:string,
+        "651:668"^^xsd:string ;
+    data:posIndicesPart "3442:3452"^^xsd:string,
+        "4522:4528"^^xsd:string,
+        "4788:4798"^^xsd:string ;
+    data:wdtLink wdt:Q119133052 ;
+    :alsoKnownAs "Ernest George Ronnie Brooksbank"^^xsd:string ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Elizabeth_II,
+        data:Jack_Brooksbank,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Eugenie_of_York,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:Sarah_Ferguson ;
+    :hasBrother data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :hasFather data:Jack_Brooksbank ;
+    :hasMother data:Princess_Eugenie_of_York ;
+    :hasParent data:Jack_Brooksbank,
+        data:Princess_Eugenie_of_York ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Elizabeth_II,
+        data:Ernest_Brooksbank,
+        data:Jack_Brooksbank,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Eugenie_of_York,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:Sarah_Ferguson ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isBrotherOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isChildOf data:Jack_Brooksbank,
+        data:Princess_Eugenie_of_York ;
+    :isSiblingOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isSonOf data:Jack_Brooksbank,
+        data:Princess_Eugenie_of_York .
+
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Andrew Mountbatten-Windsor"^^xsd:string ;
+    data:posIndicesFull "181:207"^^xsd:string ;
+    data:posIndicesPart "1851:1858"^^xsd:string,
+        "2010:2017"^^xsd:string,
+        "3620:3627"^^xsd:string,
+        "4275:4282"^^xsd:string,
+        "6841:6848"^^xsd:string ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward"^^xsd:string,
+        "Andrew Albert Christian Edward Mountbatten-Windsor"^^xsd:string,
+        "Baron Killyleagh"^^xsd:string,
+        "Earl of Inverness"^^xsd:string,
+        "Prince Andrew"^^xsd:string,
+        "Prince Andrew of the United Kingdom"^^xsd:string,
+        "Prince Andrew, Duke of York"^^xsd:string,
+        "Randy Andy"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasChild data:Princess_Eugenie_of_York ;
+    :hasDaughter data:Princess_Eugenie_of_York ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:Ernest_Brooksbank,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Eugenie_of_York,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:male ;
+    :isAncestorOf data:August_Brooksbank,
+        data:Ernest_Brooksbank,
+        data:Princess_Eugenie_of_York ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isFatherOf data:Princess_Eugenie_of_York ;
+    :isParentOf data:Princess_Eugenie_of_York ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isSonOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isUncleOf data:Princess_Eugenie_of_York .
+
+data:Princess_Eugenie_of_York a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Eugenie of York"^^xsd:string ;
+    data:posIndicesFull "0:16"^^xsd:string,
+        "0:37"^^xsd:string,
+        "63:86"^^xsd:string,
+        "7343:7386"^^xsd:string,
+        "7362:7378"^^xsd:string,
+        "7362:7386"^^xsd:string,
+        "7534:7550"^^xsd:string,
+        "7534:7571"^^xsd:string,
+        "952:975"^^xsd:string ;
+    data:posIndicesPart "1210:1217"^^xsd:string,
+        "1289:1293"^^xsd:string,
+        "1431:1438"^^xsd:string,
+        "1498:1505"^^xsd:string,
+        "1701:1708"^^xsd:string,
+        "2069:2076"^^xsd:string,
+        "2191:2198"^^xsd:string,
+        "2216:2220"^^xsd:string,
+        "2354:2361"^^xsd:string,
+        "2426:2433"^^xsd:string,
+        "2560:2567"^^xsd:string,
+        "271:278"^^xsd:string,
+        "2726:2733"^^xsd:string,
+        "2842:2849"^^xsd:string,
+        "3063:3070"^^xsd:string,
+        "3266:3273"^^xsd:string,
+        "361:368"^^xsd:string,
+        "3656:3663"^^xsd:string,
+        "414:421"^^xsd:string,
+        "4375:4382"^^xsd:string,
+        "4689:4696"^^xsd:string,
+        "4901:4908"^^xsd:string,
+        "5063:5070"^^xsd:string,
+        "5100:5107"^^xsd:string,
+        "5200:5208"^^xsd:string,
+        "5244:5251"^^xsd:string,
+        "5365:5372"^^xsd:string,
+        "5439:5446"^^xsd:string,
+        "5509:5516"^^xsd:string,
+        "556:563"^^xsd:string,
+        "5653:5660"^^xsd:string,
+        "5979:5986"^^xsd:string,
+        "6100:6107"^^xsd:string,
+        "6338:6345"^^xsd:string,
+        "6409:6413"^^xsd:string,
+        "6658:6665"^^xsd:string,
+        "682:689"^^xsd:string,
+        "6891:6898"^^xsd:string,
+        "7090:7097"^^xsd:string,
+        "841:845"^^xsd:string ;
+    data:wdtLink wdt:Q165709 ;
+    :alsoKnownAs "Eugenie Victoria Helena"^^xsd:string,
+        "Eugenie Victoria Helena Mountbatten-Windsor"^^xsd:string,
+        "Her Royal Highness Princess Eugenie of York"^^xsd:string,
+        "Princess Eugenie"^^xsd:string,
+        "Princess Eugenie Victoria Helena of York"^^xsd:string,
+        "Princess Eugenie, Mrs Brooksbank"^^xsd:string,
+        "Princess Eugenie, Mrs Jack Brooksbank"^^xsd:string ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:Sarah_Ferguson ;
+    :hasChild data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMother data:Sarah_Ferguson ;
+    :hasParent data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:August_Brooksbank,
+        data:Elizabeth_II,
+        data:Ernest_Brooksbank,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Eugenie_of_York,
+        data:Queen_Elizabeth-_The_Queen_Mother,
+        data:Sarah_Ferguson ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Eugenie_of_York ;
+    :hasSon data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isAncestorOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isAuntOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isBloodrelationOf data:Princess_Eugenie_of_York ;
+    :isChildOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isDaughterOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isMotherOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isParentOf data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
+    :isSiblingOf data:Princess_Eugenie_of_York ;
+    :isSisterOf data:Princess_Eugenie_of_York .
+

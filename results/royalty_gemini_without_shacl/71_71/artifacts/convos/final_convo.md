@@ -190,6 +190,8 @@ Queen Victoria Eugenia was released in Finland, Portugal and Spain.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -205,39 +207,9 @@ Queen Victoria Eugenia was released in Finland, Portugal and Spain.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -252,6 +224,23 @@ Queen Victoria Eugenia was released in Finland, Portugal and Spain.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -269,6 +258,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -336,29 +340,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -367,6 +363,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -379,6 +383,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -387,17 +393,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -425,6 +433,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -440,170 +532,344 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (32d767a5-6c10-43dd-a55e-8decf93bf18f)
- Call ID: 32d767a5-6c10-43dd-a55e-8decf93bf18f
+  AssignClass (cb80f707-69c7-4983-b19c-a796602b1bb6)
+ Call ID: cb80f707-69c7-4983-b19c-a796602b1bb6
   Args:
     type: :Woman
     source: Victoria_Eugenie_of_Battenberg
-  AssignClass (7cb19f2b-3b6b-4d6f-8393-1f366be1895b)
- Call ID: 7cb19f2b-3b6b-4d6f-8393-1f366be1895b
+  AssignClass (62c21af3-f4f6-465e-b23a-d762a34f82eb)
+ Call ID: 62c21af3-f4f6-465e-b23a-d762a34f82eb
   Args:
     type: :Person
     source: Victoria_Eugenie_of_Battenberg
-  AddLiteral (1e6a39a1-92e9-46da-b168-7ce19e6b8a5c)
- Call ID: 1e6a39a1-92e9-46da-b168-7ce19e6b8a5c
+  AddLiteral (7bb41d23-3ab3-4824-94e7-14ddb898cea5)
+ Call ID: 7bb41d23-3ab3-4824-94e7-14ddb898cea5
   Args:
     literal_value: Ena
+    source: Victoria_Eugenie_of_Battenberg
     relation: :knownAs
     literal_type: xsd:string
-    source: Victoria_Eugenie_of_Battenberg
-  AddLiteral (410118b4-ac89-48d3-9416-98cf9d49a797)
- Call ID: 410118b4-ac89-48d3-9416-98cf9d49a797
+  AddLiteral (1a53d47e-055b-44a6-ae44-fb48976256f5)
+ Call ID: 1a53d47e-055b-44a6-ae44-fb48976256f5
   Args:
-    relation: :hasBirthYear
     source: Victoria_Eugenie_of_Battenberg
-    literal_type: xsd:integer
     literal_value: 1887
-  AddLiteral (b290e5c6-11ef-4e36-9784-f51da95ad7b9)
- Call ID: b290e5c6-11ef-4e36-9784-f51da95ad7b9
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (33d4dc9c-f737-4e42-b141-3f291d1af46e)
+ Call ID: 33d4dc9c-f737-4e42-b141-3f291d1af46e
   Args:
-    literal_value: 1969
-    source: Victoria_Eugenie_of_Battenberg
     literal_type: xsd:integer
     relation: :hasDeathYear
-  AddLiteral (c24273f3-91e3-45b5-b991-488c315109a2)
- Call ID: c24273f3-91e3-45b5-b991-488c315109a2
-  Args:
     source: Victoria_Eugenie_of_Battenberg
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1906
-  AssignClass (c194e813-17ee-434d-a545-80c27786a63f)
- Call ID: c194e813-17ee-434d-a545-80c27786a63f
+    literal_value: 1969
+  AssignClass (8bdb8105-52de-404d-b6fc-1bcf5f7798f6)
+ Call ID: 8bdb8105-52de-404d-b6fc-1bcf5f7798f6
   Args:
-    source: Alfonso_XIII_of_Spain
+    source: Alfonso_XIII
     type: :Man
-  AssignClass (fa0e691a-574e-4d9b-8203-d184c444fe0f)
- Call ID: fa0e691a-574e-4d9b-8203-d184c444fe0f
+  AssignClass (591d4a93-b972-4c4e-a5e8-bf2533ebb1f5)
+ Call ID: 591d4a93-b972-4c4e-a5e8-bf2533ebb1f5
   Args:
-    source: Alfonso_XIII_of_Spain
+    source: Alfonso_XIII
     type: :Person
-  AddTriple (81648278-10dc-412b-bc2d-b1667a442325)
- Call ID: 81648278-10dc-412b-bc2d-b1667a442325
+  AddLiteral (5fdd24f0-fbb5-4de3-a056-252feeee5a39)
+ Call ID: 5fdd24f0-fbb5-4de3-a056-252feeee5a39
   Args:
-    target: Alfonso_XIII_of_Spain
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Victoria_Eugenie_of_Battenberg
+    literal_value: 1906
+  AddTriple (908a2761-c553-48cd-a9f9-f2886ced93f1)
+ Call ID: 908a2761-c553-48cd-a9f9-f2886ced93f1
+  Args:
+    target: Alfonso_XIII
     source: Victoria_Eugenie_of_Battenberg
     relation: :hasRelation
-  AssignClass (c4d976aa-b9db-4f20-9b2b-75df1a506b0a)
- Call ID: c4d976aa-b9db-4f20-9b2b-75df1a506b0a
+  AssignClass (836bd5a8-b8b0-44aa-bf04-f02d251a8f86)
+ Call ID: 836bd5a8-b8b0-44aa-bf04-f02d251a8f86
   Args:
     source: Prince_Henry_of_Battenberg
     type: :Man
-  AssignClass (93e6b598-b338-41ab-83e3-b9873c67ff28)
- Call ID: 93e6b598-b338-41ab-83e3-b9873c67ff28
+  AssignClass (d0ab1b4b-f022-4a48-967f-5ef4c08569d9)
+ Call ID: d0ab1b4b-f022-4a48-967f-5ef4c08569d9
+  Args:
+    type: :Ancestor
+    source: Prince_Henry_of_Battenberg
+  AssignClass (75d77a58-d374-4562-a2c0-3fa9c4392818)
+ Call ID: 75d77a58-d374-4562-a2c0-3fa9c4392818
   Args:
     type: :Person
     source: Prince_Henry_of_Battenberg
-  AssignClass (d108e50f-31e6-4c9e-9141-104d7623b5b9)
- Call ID: d108e50f-31e6-4c9e-9141-104d7623b5b9
+  AssignClass (d806c28b-ba4c-4efb-a04b-8169f1e4d1ea)
+ Call ID: d806c28b-ba4c-4efb-a04b-8169f1e4d1ea
   Args:
     source: Princess_Beatrice
     type: :Woman
-  AssignClass (e6147a59-60c8-4620-96ba-8e7b3b80ea0e)
- Call ID: e6147a59-60c8-4620-96ba-8e7b3b80ea0e
+  AssignClass (6bfe505c-cb6a-4d22-9eda-e210e8118765)
+ Call ID: 6bfe505c-cb6a-4d22-9eda-e210e8118765
   Args:
     source: Princess_Beatrice
-    type: :Person
-  AddTriple (1bcb662f-a2fb-44e9-9ad7-dd08ba3d5459)
- Call ID: 1bcb662f-a2fb-44e9-9ad7-dd08ba3d5459
+    type: :Ancestor
+  AssignClass (2a5a06c0-d4fe-41ee-b066-c558e8457784)
+ Call ID: 2a5a06c0-d4fe-41ee-b066-c558e8457784
   Args:
-    source: Victoria_Eugenie_of_Battenberg
+    type: :Person
+    source: Princess_Beatrice
+  AddTriple (6f48a621-7326-41fe-a009-56fd921e6d75)
+ Call ID: 6f48a621-7326-41fe-a009-56fd921e6d75
+  Args:
     relation: :hasFather
     target: Prince_Henry_of_Battenberg
-  AddTriple (1c134182-e72f-4b87-ba36-985d75b0e610)
- Call ID: 1c134182-e72f-4b87-ba36-985d75b0e610
+    source: Victoria_Eugenie_of_Battenberg
+  AddTriple (5ed839cc-dba5-4762-9803-cc70998a2bdc)
+ Call ID: 5ed839cc-dba5-4762-9803-cc70998a2bdc
   Args:
+    source: Victoria_Eugenie_of_Battenberg
     target: Princess_Beatrice
     relation: :hasMother
-    source: Victoria_Eugenie_of_Battenberg
-  AssignClass (b3f883f4-fa92-4613-a6ea-cbda5b49c22e)
- Call ID: b3f883f4-fa92-4613-a6ea-cbda5b49c22e
+  AssignClass (d06d4dee-46f6-49e1-8d74-c95bfbaa24c0)
+ Call ID: d06d4dee-46f6-49e1-8d74-c95bfbaa24c0
+  Args:
+    type: :Man
+    source: Prince_Alexander_of_Hesse_and_by_Rhine
+  AssignClass (9864d0e5-83f1-4a41-9b15-5cd4baadab87)
+ Call ID: 9864d0e5-83f1-4a41-9b15-5cd4baadab87
   Args:
     source: Prince_Alexander_of_Hesse_and_by_Rhine
-    type: :Man
-  AssignClass (91146734-ebbb-451c-be87-fd1004def175)
- Call ID: 91146734-ebbb-451c-be87-fd1004def175
+    type: :Ancestor
+  AssignClass (e10a5507-deea-465a-84f1-d1365094fe1a)
+ Call ID: e10a5507-deea-465a-84f1-d1365094fe1a
+  Args:
+    source: Prince_Alexander_of_Hesse_and_by_Rhine
+    type: :Person
+  AssignClass (88dd0529-00fe-4cee-a364-d53ab8cdcc1f)
+ Call ID: 88dd0529-00fe-4cee-a364-d53ab8cdcc1f
   Args:
     source: Julia_Princess_of_Battenberg
     type: :Woman
-  AddTriple (07ecd92d-140d-43f1-8182-b40e655a1b1a)
- Call ID: 07ecd92d-140d-43f1-8182-b40e655a1b1a
+  AssignClass (261f8ab9-468f-4eef-909e-2a47d4b2350f)
+ Call ID: 261f8ab9-468f-4eef-909e-2a47d4b2350f
   Args:
-    source: Prince_Henry_of_Battenberg
+    source: Julia_Princess_of_Battenberg
+    type: :Ancestor
+  AssignClass (24d40787-fe8d-4831-8f82-31b17aaf9794)
+ Call ID: 24d40787-fe8d-4831-8f82-31b17aaf9794
+  Args:
+    type: :Person
+    source: Julia_Princess_of_Battenberg
+  AddTriple (6e949de3-6687-4f15-bc53-f39a04558c71)
+ Call ID: 6e949de3-6687-4f15-bc53-f39a04558c71
+  Args:
     relation: :hasFather
     target: Prince_Alexander_of_Hesse_and_by_Rhine
-  AddTriple (52ef0a46-2789-45bc-b103-07e09142d96e)
- Call ID: 52ef0a46-2789-45bc-b103-07e09142d96e
+    source: Prince_Henry_of_Battenberg
+  AddTriple (aeda1b81-482e-436f-a49f-f5a406fe4004)
+ Call ID: aeda1b81-482e-436f-a49f-f5a406fe4004
   Args:
     target: Julia_Princess_of_Battenberg
-    relation: :hasMother
     source: Prince_Henry_of_Battenberg
-  AssignClass (2d024278-ef4d-4074-a344-bbb0667eff40)
- Call ID: 2d024278-ef4d-4074-a344-bbb0667eff40
+    relation: :hasMother
+  AssignClass (127fa729-b455-4b79-9646-4af025aa564a)
+ Call ID: 127fa729-b455-4b79-9646-4af025aa564a
   Args:
-    source: Queen_Victoria
     type: :Woman
-  AssignClass (dfd9dc2f-6fd9-4656-a73d-a13625018cb2)
- Call ID: dfd9dc2f-6fd9-4656-a73d-a13625018cb2
+    source: Queen_Victoria
+  AssignClass (a17d9d7c-407a-4492-b96a-e8380cd4a03f)
+ Call ID: a17d9d7c-407a-4492-b96a-e8380cd4a03f
+  Args:
+    type: :Ancestor
+    source: Queen_Victoria
+  AssignClass (ed9bfa5f-8f86-4e60-9544-1d7ac1de95c9)
+ Call ID: ed9bfa5f-8f86-4e60-9544-1d7ac1de95c9
+  Args:
+    type: :Person
+    source: Queen_Victoria
+  AssignClass (08c95540-4e0a-437f-a8a1-708007774216)
+ Call ID: 08c95540-4e0a-437f-a8a1-708007774216
   Args:
     source: Prince_Albert_of_Saxe-Coburg_and_Gotha
     type: :Man
-  AddTriple (1692fa30-8c49-4716-8d38-5de1324e6a63)
- Call ID: 1692fa30-8c49-4716-8d38-5de1324e6a63
+  AssignClass (278b9653-a9e7-4e9c-a5c7-bd98d3f49685)
+ Call ID: 278b9653-a9e7-4e9c-a5c7-bd98d3f49685
   Args:
-    source: Princess_Beatrice
-    relation: :hasMother
-    target: Queen_Victoria
-  AddTriple (08c876ad-19ab-4687-947c-3b68a826a0b8)
- Call ID: 08c876ad-19ab-4687-947c-3b68a826a0b8
+    source: Prince_Albert_of_Saxe-Coburg_and_Gotha
+    type: :Ancestor
+  AssignClass (25958523-9a3d-4e61-9f7f-7279d1e630c3)
+ Call ID: 25958523-9a3d-4e61-9f7f-7279d1e630c3
   Args:
+    type: :Person
+    source: Prince_Albert_of_Saxe-Coburg_and_Gotha
+  AddTriple (23aed7c7-453a-449d-b0fd-8793e6d2faaa)
+ Call ID: 23aed7c7-453a-449d-b0fd-8793e6d2faaa
+  Args:
+    relation: :hasFather
     target: Prince_Albert_of_Saxe-Coburg_and_Gotha
     source: Princess_Beatrice
-    relation: :hasFather
-  AssignClass (b4111027-5987-4bb7-ab91-f605fe9fe428)
- Call ID: b4111027-5987-4bb7-ab91-f605fe9fe428
+  AddTriple (938a3852-8e38-4eed-aeca-34204782ccc1)
+ Call ID: 938a3852-8e38-4eed-aeca-34204782ccc1
+  Args:
+    relation: :hasMother
+    source: Princess_Beatrice
+    target: Queen_Victoria
+  AssignClass (64eb1c91-7d43-47a9-bf3f-cace795846c9)
+ Call ID: 64eb1c91-7d43-47a9-bf3f-cace795846c9
   Args:
     type: :Man
-    source: Leopold_of_Battenberg
-  AddTriple (ab70b178-996b-41fa-b5c5-b29ca672ff46)
- Call ID: ab70b178-996b-41fa-b5c5-b29ca672ff46
+    source: Leopold
+  AssignClass (88d7ff70-5d8f-4f81-8ab6-8e8b7ac0bd67)
+ Call ID: 88d7ff70-5d8f-4f81-8ab6-8e8b7ac0bd67
   Args:
-    relation: :hasBrother
+    source: Leopold
+    type: :Person
+  AddTriple (30818851-25ae-49fb-9a1e-d6c15fc2fcbd)
+ Call ID: 30818851-25ae-49fb-9a1e-d6c15fc2fcbd
+  Args:
     source: Victoria_Eugenie_of_Battenberg
-    target: Leopold_of_Battenberg
-  AssignClass (7049442f-5bf7-468f-8fb9-50a88acb13f4)
- Call ID: 7049442f-5bf7-468f-8fb9-50a88acb13f4
+    target: Leopold
+    relation: :isSiblingOf
+  AssignClass (9f83a3ae-9a50-493f-b64a-760c0b4fc7ea)
+ Call ID: 9f83a3ae-9a50-493f-b64a-760c0b4fc7ea
   Args:
     source: Alfonso_Prince_of_Asturias
     type: :Man
-  AddTriple (cf292639-31ae-459c-96cf-e239a56df352)
- Call ID: cf292639-31ae-459c-96cf-e239a56df352
+  AssignClass (a9bad651-71b3-413b-b94d-f6cb55fb5b37)
+ Call ID: a9bad651-71b3-413b-b94d-f6cb55fb5b37
   Args:
-    target: Alfonso_Prince_of_Asturias
-    source: Victoria_Eugenie_of_Battenberg
-    relation: :hasSon
-  AddTriple (4921f6a3-f618-41d6-b081-66618b06c387)
- Call ID: 4921f6a3-f618-41d6-b081-66618b06c387
-  Args:
-    relation: :hasFather
     source: Alfonso_Prince_of_Asturias
-    target: Alfonso_XIII_of_Spain
-  AddTriple (af6ebd9b-74dc-4100-a7c3-18f62f3ecb51)
- Call ID: af6ebd9b-74dc-4100-a7c3-18f62f3ecb51
+    type: :Person
+  AddTriple (435d4136-e916-4b9b-ba96-530f01edcc0e)
+ Call ID: 435d4136-e916-4b9b-ba96-530f01edcc0e
   Args:
     target: Victoria_Eugenie_of_Battenberg
     source: Alfonso_Prince_of_Asturias
     relation: :hasMother
-  Finish (b3125e3c-1fdb-4782-b371-7ad8be8d4764)
- Call ID: b3125e3c-1fdb-4782-b371-7ad8be8d4764
+  AddTriple (df164d15-9281-49f2-a01b-160cbb20e203)
+ Call ID: df164d15-9281-49f2-a01b-160cbb20e203
+  Args:
+    relation: :hasFather
+    target: Alfonso_XIII
+    source: Alfonso_Prince_of_Asturias
+  AssignClass (01737ff7-9006-42d5-bf01-487ad7307335)
+ Call ID: 01737ff7-9006-42d5-bf01-487ad7307335
+  Args:
+    type: :Man
+    source: Juan_Count_of_Barcelona
+  AssignClass (5b1d951c-7051-4ce8-8d37-8aaa059bab56)
+ Call ID: 5b1d951c-7051-4ce8-8d37-8aaa059bab56
+  Args:
+    source: Juan_Count_of_Barcelona
+    type: :Person
+  AddTriple (51dc4c56-aa52-4540-85aa-72440bb5b51e)
+ Call ID: 51dc4c56-aa52-4540-85aa-72440bb5b51e
+  Args:
+    source: Juan_Count_of_Barcelona
+    target: Victoria_Eugenie_of_Battenberg
+    relation: :hasMother
+  AddTriple (382ba2f3-f2a0-48c6-8da5-363b4f595844)
+ Call ID: 382ba2f3-f2a0-48c6-8da5-363b4f595844
+  Args:
+    relation: :hasFather
+    target: Alfonso_XIII
+    source: Juan_Count_of_Barcelona
+  AssignClass (e4479894-0789-4e25-8701-6cd6e3ca00e2)
+ Call ID: e4479894-0789-4e25-8701-6cd6e3ca00e2
+  Args:
+    source: Juan_Carlos_I
+    type: :Man
+  AssignClass (d618fa5f-e85f-4e45-bd9e-289e97ce4e37)
+ Call ID: d618fa5f-e85f-4e45-bd9e-289e97ce4e37
+  Args:
+    type: :Person
+    source: Juan_Carlos_I
+  AddTriple (86d782d3-e215-4fe0-879c-0fe26dcda6e3)
+ Call ID: 86d782d3-e215-4fe0-879c-0fe26dcda6e3
+  Args:
+    relation: :hasFather
+    source: Juan_Carlos_I
+    target: Juan_Count_of_Barcelona
+  AssignClass (43ba8fee-b7b2-454f-a2b0-3c0041a9c9e8)
+ Call ID: 43ba8fee-b7b2-454f-a2b0-3c0041a9c9e8
+  Args:
+    source: Infante_Felipe
+    type: :Man
+  AssignClass (1972c19e-8c9a-4f45-ae07-0e653345bd75)
+ Call ID: 1972c19e-8c9a-4f45-ae07-0e653345bd75
+  Args:
+    source: Infante_Felipe
+    type: :Person
+  AddTriple (923fba91-f4a1-4fb7-b1ee-6b6a541ff961)
+ Call ID: 923fba91-f4a1-4fb7-b1ee-6b6a541ff961
+  Args:
+    source: Infante_Felipe
+    target: Juan_Carlos_I
+    relation: :hasFather
+  AssignClass (c1b4bf55-b76e-4430-880a-4337102b2229)
+ Call ID: c1b4bf55-b76e-4430-880a-4337102b2229
+  Args:
+    source: Infanta_Sofia
+    type: :Woman
+  AssignClass (ad991f5c-b82a-4235-b795-654338146822)
+ Call ID: ad991f5c-b82a-4235-b795-654338146822
+  Args:
+    source: Infanta_Sofia
+    type: :Person
+  AddTriple (1d84f907-f8a8-44ee-a683-74568d727c46)
+ Call ID: 1d84f907-f8a8-44ee-a683-74568d727c46
+  Args:
+    source: Infante_Felipe
+    target: Infanta_Sofia
+    relation: :hasMother
+  AssignClass (2f8821bd-f5df-4fd5-b262-7e9ab9999625)
+ Call ID: 2f8821bd-f5df-4fd5-b262-7e9ab9999625
+  Args:
+    source: Infante_Alfonso
+    type: :Man
+  AssignClass (34eb94db-cc32-4a51-9cd6-a1a38a471c5b)
+ Call ID: 34eb94db-cc32-4a51-9cd6-a1a38a471c5b
+  Args:
+    source: Infante_Alfonso
+    type: :Person
+  AssignClass (ced3f843-5ec6-4fe1-a251-ff924be91cd8)
+ Call ID: ced3f843-5ec6-4fe1-a251-ff924be91cd8
+  Args:
+    source: Infante_Jaime
+    type: :Man
+  AssignClass (5dd13f9c-d342-4a4b-8258-dd619a2ecb18)
+ Call ID: 5dd13f9c-d342-4a4b-8258-dd619a2ecb18
+  Args:
+    source: Infante_Jaime
+    type: :Person
+  AssignClass (2a5cf7b5-ed54-405a-9b57-e87b91866172)
+ Call ID: 2a5cf7b5-ed54-405a-9b57-e87b91866172
+  Args:
+    type: :Man
+    source: Infante_Gonzalo
+  AssignClass (8279ac11-235f-4d7e-96e7-e8744d4bc93e)
+ Call ID: 8279ac11-235f-4d7e-96e7-e8744d4bc93e
+  Args:
+    type: :Person
+    source: Infante_Gonzalo
+  AssignClass (919d588c-e1d5-4b27-aba3-ee7b0b3029af)
+ Call ID: 919d588c-e1d5-4b27-aba3-ee7b0b3029af
+  Args:
+    type: :Woman
+    source: Infanta_Beatriz
+  AssignClass (5112f536-4210-4a7b-8094-420b9ff8a06b)
+ Call ID: 5112f536-4210-4a7b-8094-420b9ff8a06b
+  Args:
+    source: Infanta_Beatriz
+    type: :Person
+  AssignClass (68714af1-e08a-415d-8c2b-35e6d7446685)
+ Call ID: 68714af1-e08a-415d-8c2b-35e6d7446685
+  Args:
+    type: :Woman
+    source: Infanta_Maria_Cristina
+  AssignClass (44b85876-e2a6-4abc-980d-ec3b4416860f)
+ Call ID: 44b85876-e2a6-4abc-980d-ec3b4416860f
+  Args:
+    type: :Person
+    source: Infanta_Maria_Cristina
+  Finish (f88a7e16-b948-4b5d-8827-b35bb955d59b)
+ Call ID: f88a7e16-b948-4b5d-8827-b35bb955d59b
   Args:

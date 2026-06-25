@@ -1,0 +1,260 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Berthold_of_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Berthold_of_Baden ;
+    :hasChild data:Maximilian_of_Baden ;
+    :hasRelation data:Bernhard_of_Baden,
+        data:Berthold_of_Baden,
+        data:Hubert_Salvator_of_Austria,
+        data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSon data:Maximilian_of_Baden ;
+    :isAncestorOf data:Bernhard_of_Baden,
+        data:Maximilian_of_Baden ;
+    :isBloodrelationOf data:Berthold_of_Baden ;
+    :isBrotherOf data:Berthold_of_Baden ;
+    :isFatherOf data:Maximilian_of_Baden ;
+    :isParentOf data:Maximilian_of_Baden ;
+    :isSiblingOf data:Berthold_of_Baden ;
+    :isUncleOf data:Maximilian_of_Baden .
+
+data:Hubert_Salvator_of_Austria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Hubert_Salvator_of_Austria ;
+    :hasChild data:Valerie_of_Austria ;
+    :hasDaughter data:Valerie_of_Austria ;
+    :hasRelation data:Bernhard_of_Baden,
+        data:Berthold_of_Baden,
+        data:Hubert_Salvator_of_Austria,
+        data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :isAncestorOf data:Bernhard_of_Baden,
+        data:Valerie_of_Austria ;
+    :isBloodrelationOf data:Hubert_Salvator_of_Austria ;
+    :isBrotherOf data:Hubert_Salvator_of_Austria ;
+    :isFatherOf data:Valerie_of_Austria ;
+    :isParentOf data:Valerie_of_Austria ;
+    :isSiblingOf data:Hubert_Salvator_of_Austria ;
+    :isUncleOf data:Valerie_of_Austria .
+
+data:Rosemary_of_Salm-Salm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Valerie_of_Austria ;
+    :hasDaughter data:Valerie_of_Austria ;
+    :hasRelation data:Bernhard_of_Baden,
+        data:Berthold_of_Baden,
+        data:Hubert_Salvator_of_Austria,
+        data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Rosemary_of_Salm-Salm ;
+    :isAncestorOf data:Bernhard_of_Baden,
+        data:Valerie_of_Austria ;
+    :isAuntOf data:Valerie_of_Austria ;
+    :isBloodrelationOf data:Rosemary_of_Salm-Salm ;
+    :isMotherOf data:Valerie_of_Austria ;
+    :isParentOf data:Valerie_of_Austria ;
+    :isSiblingOf data:Rosemary_of_Salm-Salm ;
+    :isSisterOf data:Rosemary_of_Salm-Salm .
+
+data:Theodora_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maximilian_of_Baden ;
+    :hasRelation data:Bernhard_of_Baden,
+        data:Berthold_of_Baden,
+        data:Hubert_Salvator_of_Austria,
+        data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Theodora_of_Greece_and_Denmark ;
+    :hasSon data:Maximilian_of_Baden ;
+    :isAncestorOf data:Bernhard_of_Baden,
+        data:Maximilian_of_Baden ;
+    :isAuntOf data:Maximilian_of_Baden ;
+    :isBloodrelationOf data:Theodora_of_Greece_and_Denmark ;
+    :isMotherOf data:Maximilian_of_Baden ;
+    :isParentOf data:Maximilian_of_Baden ;
+    :isSiblingOf data:Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Theodora_of_Greece_and_Denmark .
+
+data:Ludwig_of_Baden a :Man,
+        :Person ;
+    :hasBirthYear 1937 ;
+    :hasBrother data:Ludwig_of_Baden,
+        data:Maximilian_of_Baden ;
+    :hasRelation data:Bernhard_of_Baden,
+        data:Berthold_of_Baden,
+        data:Hubert_Salvator_of_Austria,
+        data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Margarita_of_Baden ;
+    :isBloodrelationOf data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden ;
+    :isBrotherOf data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden ;
+    :isSiblingOf data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden ;
+    :isUncleOf data:Bernhard_of_Baden .
+
+data:Margarita_of_Baden a :Person,
+        :Woman ;
+    :hasBrother data:Ludwig_of_Baden,
+        data:Maximilian_of_Baden ;
+    :hasRelation data:Bernhard_of_Baden,
+        data:Berthold_of_Baden,
+        data:Hubert_Salvator_of_Austria,
+        data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Margarita_of_Baden ;
+    :isAuntOf data:Bernhard_of_Baden ;
+    :isBloodrelationOf data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden ;
+    :isSiblingOf data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden ;
+    :isSisterOf data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden .
+
+data:Valerie_of_Austria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Hubert_Salvator_of_Austria,
+        data:Rosemary_of_Salm-Salm ;
+    :hasBirthYear 1941 ;
+    :hasChild data:Bernhard_of_Baden ;
+    :hasFather data:Hubert_Salvator_of_Austria ;
+    :hasMother data:Rosemary_of_Salm-Salm ;
+    :hasParent data:Hubert_Salvator_of_Austria,
+        data:Rosemary_of_Salm-Salm ;
+    :hasRelation data:Bernhard_of_Baden,
+        data:Berthold_of_Baden,
+        data:Hubert_Salvator_of_Austria,
+        data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Valerie_of_Austria ;
+    :hasSon data:Bernhard_of_Baden ;
+    :isAncestorOf data:Bernhard_of_Baden ;
+    :isAuntOf data:Bernhard_of_Baden ;
+    :isBloodrelationOf data:Valerie_of_Austria ;
+    :isChildOf data:Hubert_Salvator_of_Austria,
+        data:Rosemary_of_Salm-Salm ;
+    :isDaughterOf data:Hubert_Salvator_of_Austria,
+        data:Rosemary_of_Salm-Salm ;
+    :isMotherOf data:Bernhard_of_Baden ;
+    :isParentOf data:Bernhard_of_Baden ;
+    :isSiblingOf data:Valerie_of_Austria ;
+    :isSisterOf data:Valerie_of_Austria .
+
+data:Bernhard_of_Baden a :Man,
+        :Person ;
+    :hasAncestor data:Berthold_of_Baden,
+        data:Hubert_Salvator_of_Austria,
+        data:Maximilian_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasBrother data:Bernhard_of_Baden ;
+    :hasFather data:Maximilian_of_Baden ;
+    :hasMother data:Valerie_of_Austria ;
+    :hasParent data:Maximilian_of_Baden,
+        data:Valerie_of_Austria ;
+    :hasRelation data:Bernhard_of_Baden,
+        data:Berthold_of_Baden,
+        data:Hubert_Salvator_of_Austria,
+        data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :isBloodrelationOf data:Bernhard_of_Baden ;
+    :isBrotherOf data:Bernhard_of_Baden ;
+    :isChildOf data:Maximilian_of_Baden,
+        data:Valerie_of_Austria ;
+    :isSiblingOf data:Bernhard_of_Baden ;
+    :isSonOf data:Maximilian_of_Baden,
+        data:Valerie_of_Austria .
+
+data:Maximilian_of_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Berthold_of_Baden,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:Ludwig_of_Baden,
+        data:Maximilian_of_Baden ;
+    :hasChild data:Bernhard_of_Baden ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Berthold_of_Baden ;
+    :hasMarriageYear 1966 ;
+    :hasMother data:Theodora_of_Greece_and_Denmark ;
+    :hasParent data:Berthold_of_Baden,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Bernhard_of_Baden,
+        data:Berthold_of_Baden,
+        data:Hubert_Salvator_of_Austria,
+        data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden,
+        data:Rosemary_of_Salm-Salm,
+        data:Theodora_of_Greece_and_Denmark,
+        data:Valerie_of_Austria ;
+    :hasSister data:Margarita_of_Baden ;
+    :hasSon data:Bernhard_of_Baden ;
+    :isAncestorOf data:Bernhard_of_Baden ;
+    :isBloodrelationOf data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden ;
+    :isBrotherOf data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden ;
+    :isChildOf data:Berthold_of_Baden,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isFatherOf data:Bernhard_of_Baden ;
+    :isParentOf data:Bernhard_of_Baden ;
+    :isSiblingOf data:Ludwig_of_Baden,
+        data:Margarita_of_Baden,
+        data:Maximilian_of_Baden ;
+    :isSonOf data:Berthold_of_Baden,
+        data:Theodora_of_Greece_and_Denmark ;
+    :isUncleOf data:Bernhard_of_Baden ;
+    :knownAs "Max von Baden"^^xsd:string .
+

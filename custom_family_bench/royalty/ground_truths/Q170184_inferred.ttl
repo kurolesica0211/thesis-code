@@ -1,0 +1,662 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George V"^^xsd:string ;
+    data:posIndicesFull "428:441"^^xsd:string,
+        "433:441"^^xsd:string ;
+    data:posIndicesPart "2383:2389"^^xsd:string,
+        "2528:2534"^^xsd:string,
+        "2660:2666"^^xsd:string,
+        "2874:2880"^^xsd:string,
+        "3294:3300"^^xsd:string,
+        "3364:3370"^^xsd:string,
+        "6112:6118"^^xsd:string ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert"^^xsd:string,
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha"^^xsd:string,
+        "George Frederick Ernest Albert Windsor"^^xsd:string,
+        "George Saxe-Coburg-Gotha"^^xsd:string,
+        "George V (King of Great Britain)"^^xsd:string,
+        "George V of the United Kingdom"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "King George V"^^xsd:string ;
+    :hasBrother data:George_V ;
+    :hasChild data:Prince_George-_Duke_of_Kent ;
+    :hasRelation data:George_V,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :hasSon data:Prince_George-_Duke_of_Kent ;
+    :isAncestorOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isFatherOf data:Prince_George-_Duke_of_Kent ;
+    :isParentOf data:Prince_George-_Duke_of_Kent ;
+    :isSiblingOf data:George_V ;
+    :isUncleOf data:Prince_George-_Duke_of_Kent .
+
+data:Duchess_Marie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Duchess Marie of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "909:947"^^xsd:string,
+        "923:947"^^xsd:string ;
+    data:posIndicesPart "4553:4560"^^xsd:string,
+        "6591:6598"^^xsd:string,
+        "6671:6678"^^xsd:string ;
+    data:wdtLink wdt:Q231463 ;
+    :alsoKnownAs "Grand Duchess Maria Pavlovna of Russia"^^xsd:string,
+        "Maria Pavlovna of Russia"^^xsd:string,
+        "Maria Pavlovna the Elder"^^xsd:string,
+        "Marie of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasChild data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasRelation data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isBloodrelationOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSiblingOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Marie_of_Mecklenburg-Schwerin .
+
+data:Prince_George-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince George, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "381:408"^^xsd:string,
+        "388:408"^^xsd:string ;
+    data:posIndicesPart "1301:1307"^^xsd:string,
+        "1428:1434"^^xsd:string,
+        "1443:1447"^^xsd:string,
+        "2376:2382"^^xsd:string,
+        "2383:2389"^^xsd:string,
+        "2528:2534"^^xsd:string,
+        "2625:2631"^^xsd:string,
+        "2640:2644"^^xsd:string,
+        "2660:2666"^^xsd:string,
+        "2874:2880"^^xsd:string,
+        "3294:3300"^^xsd:string,
+        "3364:3370"^^xsd:string,
+        "5937:5941"^^xsd:string,
+        "6112:6118"^^xsd:string,
+        "6602:6606"^^xsd:string,
+        "6682:6686"^^xsd:string,
+        "877:881"^^xsd:string ;
+    data:wdtLink wdt:Q160770 ;
+    :alsoKnownAs "George Edward Alexander Edmund of Wales"^^xsd:string,
+        "George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "George Kent"^^xsd:string,
+        "George of Wales"^^xsd:string,
+        "George, Duke of Kent"^^xsd:string,
+        "Prince George Edward Alexander Edmund of Wales"^^xsd:string,
+        "Prince George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "Prince George of Wales"^^xsd:string,
+        "The Prince George Edward Alexander Edmund of the United Kingdom"^^xsd:string,
+        "The Prince George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "The Prince George of the United Kingdom"^^xsd:string,
+        "The Prince George, Duke of Kent"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Prince_George-_Duke_of_Kent ;
+    :hasChild data:Prince_Edward-_Duke_of_Kent ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:George_V,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Edward-_Duke_of_Kent ;
+    :isAncestorOf data:Prince_Edward-_Duke_of_Kent ;
+    :isBloodrelationOf data:Prince_George-_Duke_of_Kent ;
+    :isBrotherOf data:Prince_George-_Duke_of_Kent ;
+    :isChildOf data:George_V ;
+    :isFatherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isParentOf data:Prince_Edward-_Duke_of_Kent ;
+    :isSiblingOf data:Prince_George-_Duke_of_Kent ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Elena Vladimirovna of Russia"^^xsd:string ;
+    data:posIndicesFull "316:358"^^xsd:string,
+        "718:760"^^xsd:string ;
+    data:posIndicesPart "1092:1098"^^xsd:string,
+        "4553:4560"^^xsd:string,
+        "6591:6598"^^xsd:string,
+        "6671:6678"^^xsd:string,
+        "871:876"^^xsd:string ;
+    data:wdtLink wdt:Q232483 ;
+    :hasAncestor data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :hasChild data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasMother data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isChildOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isDaughterOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "210:233"^^xsd:string,
+        "215:223"^^xsd:string,
+        "215:233"^^xsd:string,
+        "603:611"^^xsd:string,
+        "603:621"^^xsd:string,
+        "794:802"^^xsd:string,
+        "794:812"^^xsd:string ;
+    data:posIndicesPart "1548:1554"^^xsd:string,
+        "1779:1785"^^xsd:string,
+        "2383:2389"^^xsd:string,
+        "2528:2534"^^xsd:string,
+        "2660:2666"^^xsd:string,
+        "2874:2880"^^xsd:string,
+        "3294:3300"^^xsd:string,
+        "3364:3370"^^xsd:string,
+        "3997:4003"^^xsd:string,
+        "6112:6118"^^xsd:string,
+        "6526:6532"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasRelation data:George_I_of_Greece,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Olga Constantinovna of Russia"^^xsd:string ;
+    data:posIndicesFull "1728:1748"^^xsd:string,
+        "1734:1748"^^xsd:string ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece"^^xsd:string,
+        "Queen Olga of Greece"^^xsd:string ;
+    :hasChild data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasRelation data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :hasSon data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Man,
+        :Person ;
+    rdfs:label "Prince Andrew of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "1381:1416"^^xsd:string,
+        "1388:1416"^^xsd:string ;
+    data:posIndicesPart "1548:1554"^^xsd:string,
+        "1779:1785"^^xsd:string,
+        "2376:2382"^^xsd:string,
+        "2458:2465"^^xsd:string,
+        "2625:2631"^^xsd:string,
+        "3997:4003"^^xsd:string,
+        "6526:6532"^^xsd:string ;
+    data:wdtLink wdt:Q156531 ;
+    :alsoKnownAs "Andrew of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Maria_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Maria_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Maria of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "0:37"^^xsd:string ;
+    data:posIndicesPart "1017:1024"^^xsd:string,
+        "1130:1138"^^xsd:string,
+        "1148:1156"^^xsd:string,
+        "1548:1554"^^xsd:string,
+        "1779:1785"^^xsd:string,
+        "2458:2465"^^xsd:string,
+        "2800:2808"^^xsd:string,
+        "3997:4003"^^xsd:string,
+        "4536:4544"^^xsd:string,
+        "5475:5483"^^xsd:string,
+        "549:555"^^xsd:string,
+        "5865:5873"^^xsd:string,
+        "6507:6515"^^xsd:string,
+        "6526:6532"^^xsd:string,
+        "6654:6662"^^xsd:string ;
+    data:wdtLink wdt:Q232732 ;
+    :alsoKnownAs "Grand Duchess Maria Georgievna, Grand Duchess Georgievna of Russia"^^xsd:string,
+        "Grand Duchess Maria Georgievna, Grand Duchess Georgievna of Russia, Princess of Greece and Denmark"^^xsd:string,
+        "Grand Duchess Maria Georgievna, The Grand Duchess Georgievna of Russia"^^xsd:string,
+        "Grand Duchess Maria Georgievna, The Grand Duchess Georgievna of Russia, Princess of Greece and Denmark"^^xsd:string,
+        "Laci Marie"^^xsd:string,
+        "The Princess Maria of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Maria_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isDaughterOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isSisterOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark .
+
+data:Prince_Edward-_Duke_of_Kent a :Man,
+        :Person ;
+    rdfs:label "Prince Edward, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "2397:2413"^^xsd:string,
+        "2401:2413"^^xsd:string,
+        "2547:2559"^^xsd:string,
+        "396:408"^^xsd:string ;
+    data:posIndicesPart "1301:1307"^^xsd:string,
+        "1428:1434"^^xsd:string,
+        "1443:1447"^^xsd:string,
+        "1947:1953"^^xsd:string,
+        "2625:2631"^^xsd:string,
+        "2640:2644"^^xsd:string,
+        "458:464"^^xsd:string,
+        "5321:5327"^^xsd:string,
+        "5937:5941"^^xsd:string,
+        "6247:6253"^^xsd:string,
+        "6602:6606"^^xsd:string,
+        "6682:6686"^^xsd:string,
+        "877:881"^^xsd:string ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent"^^xsd:string,
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent"^^xsd:string,
+        "Edward Kent"^^xsd:string,
+        "His Royal Highness The Duke of Kent"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward of Kent"^^xsd:string,
+        "The Duke of Kent"^^xsd:string ;
+    :hasAncestor data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:George_I_of_Greece,
+        data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
+    :hasFather data:Prince_George-_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:George_I_of_Greece,
+        data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Edward-_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isChildOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent ;
+    :isSonOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Olga of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "1181:1206"^^xsd:string ;
+    data:posIndicesPart "1548:1554"^^xsd:string,
+        "1779:1785"^^xsd:string,
+        "2458:2465"^^xsd:string,
+        "2800:2808"^^xsd:string,
+        "3997:4003"^^xsd:string,
+        "4536:4544"^^xsd:string,
+        "5475:5483"^^xsd:string,
+        "5865:5873"^^xsd:string,
+        "6507:6515"^^xsd:string,
+        "6526:6532"^^xsd:string,
+        "6654:6662"^^xsd:string ;
+    data:wdtLink wdt:Q235432 ;
+    :alsoKnownAs "Olga of Greece and Denmark"^^xsd:string,
+        "Princess Paul of Yugoslavia"^^xsd:string ;
+    :hasAncestor data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:George_I_of_Greece,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:George_I_of_Greece,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Edward-_Duke_of_Kent ;
+    :isBloodrelationOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Marina of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "0:37"^^xsd:string ;
+    data:posIndicesPart "1017:1024"^^xsd:string,
+        "1100:1106"^^xsd:string,
+        "1130:1138"^^xsd:string,
+        "1148:1156"^^xsd:string,
+        "1469:1475"^^xsd:string,
+        "1516:1522"^^xsd:string,
+        "1548:1554"^^xsd:string,
+        "1779:1785"^^xsd:string,
+        "1835:1841"^^xsd:string,
+        "2049:2055"^^xsd:string,
+        "2156:2162"^^xsd:string,
+        "2247:2253"^^xsd:string,
+        "2365:2371"^^xsd:string,
+        "2458:2465"^^xsd:string,
+        "2761:2767"^^xsd:string,
+        "2800:2808"^^xsd:string,
+        "2863:2869"^^xsd:string,
+        "2960:2966"^^xsd:string,
+        "3563:3569"^^xsd:string,
+        "3680:3686"^^xsd:string,
+        "3843:3849"^^xsd:string,
+        "3982:3988"^^xsd:string,
+        "3997:4003"^^xsd:string,
+        "4030:4036"^^xsd:string,
+        "4171:4177"^^xsd:string,
+        "4408:4414"^^xsd:string,
+        "4536:4544"^^xsd:string,
+        "4646:4652"^^xsd:string,
+        "4739:4745"^^xsd:string,
+        "4978:4984"^^xsd:string,
+        "502:508"^^xsd:string,
+        "5182:5188"^^xsd:string,
+        "5374:5380"^^xsd:string,
+        "5475:5483"^^xsd:string,
+        "549:555"^^xsd:string,
+        "5704:5710"^^xsd:string,
+        "5865:5873"^^xsd:string,
+        "5874:5880"^^xsd:string,
+        "5983:5989"^^xsd:string,
+        "6260:6266"^^xsd:string,
+        "6320:6326"^^xsd:string,
+        "6483:6489"^^xsd:string,
+        "6507:6515"^^xsd:string,
+        "6516:6522"^^xsd:string,
+        "6526:6532"^^xsd:string,
+        "6654:6662"^^xsd:string,
+        "6663:6669"^^xsd:string ;
+    data:wdtLink wdt:Q170184 ;
+    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent"^^xsd:string,
+        "Princess Marina of Greece and Denmark, The Duchess of Kent"^^xsd:string,
+        "Princess Marina, The Duchess Of Kent"^^xsd:string ;
+    :hasAncestor data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:George_I_of_Greece,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Prince_Edward-_Duke_of_Kent ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:George_I_of_Greece,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Edward-_Duke_of_Kent ;
+    :isAncestorOf data:Prince_Edward-_Duke_of_Kent ;
+    :isAuntOf data:Prince_Edward-_Duke_of_Kent ;
+    :isBloodrelationOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isParentOf data:Prince_Edward-_Duke_of_Kent ;
+    :isSiblingOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Nicholas of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "274:311"^^xsd:string,
+        "666:703"^^xsd:string ;
+    data:posIndicesPart "1017:1024"^^xsd:string,
+        "1301:1307"^^xsd:string,
+        "1428:1434"^^xsd:string,
+        "1548:1554"^^xsd:string,
+        "1779:1785"^^xsd:string,
+        "2376:2382"^^xsd:string,
+        "2458:2465"^^xsd:string,
+        "2625:2631"^^xsd:string,
+        "3997:4003"^^xsd:string,
+        "549:555"^^xsd:string,
+        "6526:6532"^^xsd:string ;
+    data:wdtLink wdt:Q170160 ;
+    :alsoKnownAs "Prince Nikolaos of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Maria_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isFatherOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Maria_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:Princess_Marina_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark .
+

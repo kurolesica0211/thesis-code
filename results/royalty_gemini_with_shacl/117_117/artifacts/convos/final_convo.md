@@ -307,6 +307,8 @@ The coat of arms used as Prince of Spain which was virtually identical to the on
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -322,39 +324,9 @@ The coat of arms used as Prince of Spain which was virtually identical to the on
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -369,6 +341,23 @@ The coat of arms used as Prince of Spain which was virtually identical to the on
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -386,6 +375,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -453,29 +457,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -484,6 +480,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -496,6 +500,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -504,17 +510,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -542,6 +550,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -557,143 +649,251 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bf8d0a0d-595d-458c-b0eb-714b94652afd)
- Call ID: bf8d0a0d-595d-458c-b0eb-714b94652afd
+  AssignClass (f3f83ce6-2fc6-4966-b60d-74dfa57fd862)
+ Call ID: f3f83ce6-2fc6-4966-b60d-74dfa57fd862
   Args:
     type: :Man
     source: Juan_Carlos_I
-  AssignClass (81761383-ed1a-4c00-9224-cc2751deda28)
- Call ID: 81761383-ed1a-4c00-9224-cc2751deda28
+  AddLiteral (d3b623bf-28b7-437b-b0b3-19629094a507)
+ Call ID: d3b623bf-28b7-437b-b0b3-19629094a507
   Args:
-    source: Queen_Sofia
-    type: :Woman
-  AssignClass (c5d4b2c2-9bc0-467b-9923-1ff0980fe40e)
- Call ID: c5d4b2c2-9bc0-467b-9923-1ff0980fe40e
-  Args:
-    source: Infante_Juan
-    type: :Man
-  AssignClass (39eb7794-1c80-409d-b71c-d637f840a31e)
- Call ID: 39eb7794-1c80-409d-b71c-d637f840a31e
-  Args:
-    type: :Woman
-    source: Princess_Maria_de_las_Mercedes
-  AssignClass (78eaefeb-fad5-41f6-b15e-1e3cdc8d1480)
- Call ID: 78eaefeb-fad5-41f6-b15e-1e3cdc8d1480
+    literal_value: 1938
+    literal_type: xsd:integer
+    source: Juan_Carlos_I
+    relation: :hasBirthYear
+  AssignClass (2025995a-2838-49dd-8408-55934cf2ea36)
+ Call ID: 2025995a-2838-49dd-8408-55934cf2ea36
   Args:
     type: :Man
+    source: Infante_Juan_Count_of_Barcelona
+  AssignClass (3499ce65-a4b7-423d-b6a4-cbc9b7a41926)
+ Call ID: 3499ce65-a4b7-423d-b6a4-cbc9b7a41926
+  Args:
     source: Alfonso_XIII
-  AssignClass (4f5a7be0-f5a5-471f-8bcb-0572687a7c29)
- Call ID: 4f5a7be0-f5a5-471f-8bcb-0572687a7c29
-  Args:
-    source: Infanta_Pilar
-    type: :Woman
-  AssignClass (336cdec5-225f-4916-b468-ab33edd134f2)
- Call ID: 336cdec5-225f-4916-b468-ab33edd134f2
-  Args:
-    source: Infanta_Margarita
-    type: :Woman
-  AssignClass (632d70e9-0465-49dd-92a5-907226d136d3)
- Call ID: 632d70e9-0465-49dd-92a5-907226d136d3
-  Args:
-    source: Alfonso_of_Spain
     type: :Man
-  AssignClass (a7b32058-50d2-4c2c-a49f-ffd0edfd321e)
- Call ID: a7b32058-50d2-4c2c-a49f-ffd0edfd321e
+  AddTriple (967f0041-6b28-40ae-9703-ea4681c99d02)
+ Call ID: 967f0041-6b28-40ae-9703-ea4681c99d02
+  Args:
+    target: Infante_Juan_Count_of_Barcelona
+    source: Juan_Carlos_I
+    relation: :hasFather
+  AddTriple (26713008-b743-47d0-9aa9-5c70528412de)
+ Call ID: 26713008-b743-47d0-9aa9-5c70528412de
+  Args:
+    relation: :hasFather
+    source: Infante_Juan_Count_of_Barcelona
+    target: Alfonso_XIII
+  AssignClass (b059fede-161e-4f8c-bf17-25f35e891ce5)
+ Call ID: b059fede-161e-4f8c-bf17-25f35e891ce5
+  Args:
+    source: Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+    type: :Woman
+  AddTriple (b97837a5-7f81-4399-98cc-e2213720af46)
+ Call ID: b97837a5-7f81-4399-98cc-e2213720af46
+  Args:
+    relation: :hasMother
+    target: Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+    source: Juan_Carlos_I
+  AssignClass (1b39d799-e1e0-46db-ae38-50a244804918)
+ Call ID: 1b39d799-e1e0-46db-ae38-50a244804918
+  Args:
+    type: :Woman
+    source: Queen_Sofia
+  AddTriple (66b42de8-b250-4eb1-9ef5-be498f58f243)
+ Call ID: 66b42de8-b250-4eb1-9ef5-be498f58f243
+  Args:
+    source: Juan_Carlos_I
+    target: Queen_Sofia
+    relation: :hasRelation
+  AddLiteral (abf02c90-c0a3-43cf-8a94-6448885bc273)
+ Call ID: abf02c90-c0a3-43cf-8a94-6448885bc273
+  Args:
+    source: Juan_Carlos_I
+    literal_type: xsd:integer
+    literal_value: 1962
+    relation: :hasMarriageYear
+  AssignClass (e946a1a2-b982-4815-8f4a-3bd4f07157c7)
+ Call ID: e946a1a2-b982-4815-8f4a-3bd4f07157c7
+  Args:
+    source: Infanta_Pilar_Duchess_of_Badajoz
+    type: :Woman
+  AssignClass (eff43b5f-f195-47fd-b0e1-48cb6712893b)
+ Call ID: eff43b5f-f195-47fd-b0e1-48cb6712893b
+  Args:
+    source: Infanta_Margarita_Duchess_of_Soria
+    type: :Woman
+  AssignClass (e28afaf7-e3da-42fd-8db6-bfb9c8eababa)
+ Call ID: e28afaf7-e3da-42fd-8db6-bfb9c8eababa
+  Args:
+    type: :Man
+    source: Alfonso_brother_of_Juan_Carlos_I
+  AddTriple (b5dc689d-3d41-4756-9413-416e3a81e009)
+ Call ID: b5dc689d-3d41-4756-9413-416e3a81e009
+  Args:
+    relation: :hasSister
+    source: Juan_Carlos_I
+    target: Infanta_Pilar_Duchess_of_Badajoz
+  AddTriple (df9cb78e-3dcf-43b8-becd-c41dd077e146)
+ Call ID: df9cb78e-3dcf-43b8-becd-c41dd077e146
+  Args:
+    relation: :hasSister
+    target: Infanta_Margarita_Duchess_of_Soria
+    source: Juan_Carlos_I
+  AddTriple (ceb18eb1-afc3-4b46-bf78-206076c756a7)
+ Call ID: ceb18eb1-afc3-4b46-bf78-206076c756a7
+  Args:
+    relation: :hasBrother
+    target: Alfonso_brother_of_Juan_Carlos_I
+    source: Juan_Carlos_I
+  AddLiteral (c627ff70-5dd7-487c-b18b-99c8edd60875)
+ Call ID: c627ff70-5dd7-487c-b18b-99c8edd60875
+  Args:
+    relation: :hasBirthYear
+    source: Infanta_Pilar_Duchess_of_Badajoz
+    literal_type: xsd:integer
+    literal_value: 1936
+  AddLiteral (608604e1-ab2c-456c-a7c7-cddf6c161737)
+ Call ID: 608604e1-ab2c-456c-a7c7-cddf6c161737
+  Args:
+    literal_value: 2020
+    literal_type: xsd:integer
+    source: Infanta_Pilar_Duchess_of_Badajoz
+    relation: :hasDeathYear
+  AddLiteral (135fe896-94f1-4260-b903-173a6cca5331)
+ Call ID: 135fe896-94f1-4260-b903-173a6cca5331
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1939
+    literal_type: xsd:integer
+    source: Infanta_Margarita_Duchess_of_Soria
+  AddLiteral (c0fe2d67-ac88-4674-8367-41f824a183c8)
+ Call ID: c0fe2d67-ac88-4674-8367-41f824a183c8
+  Args:
+    relation: :hasBirthYear
+    source: Alfonso_brother_of_Juan_Carlos_I
+    literal_type: xsd:integer
+    literal_value: 1941
+  AddLiteral (06938789-aaac-4183-995b-71aeb4d38dec)
+ Call ID: 06938789-aaac-4183-995b-71aeb4d38dec
+  Args:
+    literal_value: 1956
+    source: Alfonso_brother_of_Juan_Carlos_I
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AssignClass (b8668815-d115-4bda-b5b5-99dfc8390b56)
+ Call ID: b8668815-d115-4bda-b5b5-99dfc8390b56
+  Args:
+    type: :Man
+    source: Felipe_VI
+  AddTriple (b37eed0e-aba8-40fe-8912-d1cb1022d544)
+ Call ID: b37eed0e-aba8-40fe-8912-d1cb1022d544
+  Args:
+    source: Felipe_VI
+    target: Juan_Carlos_I
+    relation: :hasFather
+  AddTriple (a5d117be-9df1-4a22-9b93-0ac9828e30bd)
+ Call ID: a5d117be-9df1-4a22-9b93-0ac9828e30bd
+  Args:
+    target: Queen_Sofia
+    source: Felipe_VI
+    relation: :hasMother
+  AssignClass (dd083e0b-02be-4e00-80b4-c92f4ee3c3f2)
+ Call ID: dd083e0b-02be-4e00-80b4-c92f4ee3c3f2
+  Args:
+    source: Leonor_Princess_of_Asturias
+    type: :Woman
+  AddTriple (fcb5c82b-821f-4d4e-87d1-edf7ca4e3ef4)
+ Call ID: fcb5c82b-821f-4d4e-87d1-edf7ca4e3ef4
+  Args:
+    relation: :hasFather
+    source: Leonor_Princess_of_Asturias
+    target: Felipe_VI
+  AssignClass (c42114b8-e42e-4fa1-af3a-e6b53f49c922)
+ Call ID: c42114b8-e42e-4fa1-af3a-e6b53f49c922
+  Args:
+    type: :Woman
+    source: Infanta_Cristina_Duchess_of_Palma_de_Mallorca
+  AddTriple (2d771889-ebb6-43a4-a89c-86f34c6b49ce)
+ Call ID: 2d771889-ebb6-43a4-a89c-86f34c6b49ce
+  Args:
+    relation: :hasFather
+    source: Infanta_Cristina_Duchess_of_Palma_de_Mallorca
+    target: Juan_Carlos_I
+  AddTriple (042b0fd2-8097-4a81-a8e8-aa844eb64c8c)
+ Call ID: 042b0fd2-8097-4a81-a8e8-aa844eb64c8c
+  Args:
+    relation: :hasMother
+    source: Infanta_Cristina_Duchess_of_Palma_de_Mallorca
+    target: Queen_Sofia
+  AssignClass (92b0eef2-0c39-4ab0-8942-e380fc4b3fdd)
+ Call ID: 92b0eef2-0c39-4ab0-8942-e380fc4b3fdd
+  Args:
+    source: Iñaki_Urdangarin
+    type: :Man
+  AddTriple (ea7e3c9e-e615-4f1f-bd22-34a7c7f0c284)
+ Call ID: ea7e3c9e-e615-4f1f-bd22-34a7c7f0c284
+  Args:
+    source: Infanta_Cristina_Duchess_of_Palma_de_Mallorca
+    target: Iñaki_Urdangarin
+    relation: :hasRelation
+  AssignClass (50466f11-660e-4f89-81ba-13e01e0c1d9f)
+ Call ID: 50466f11-660e-4f89-81ba-13e01e0c1d9f
   Args:
     source: King_Paul_of_Greece
     type: :Man
-  AddLiteral (272e2c8d-f1ea-4cc3-b48e-91c497dad89f)
- Call ID: 272e2c8d-f1ea-4cc3-b48e-91c497dad89f
+  AddTriple (517f1fe5-52ff-4a68-a375-3c10bcf522fa)
+ Call ID: 517f1fe5-52ff-4a68-a375-3c10bcf522fa
   Args:
-    literal_value: 1938
-    relation: :hasBirthYear
-    source: Juan_Carlos_I
-    literal_type: xsd:integer
-  AddTriple (1d356663-f3fe-4d72-ba2a-b749a4f80459)
- Call ID: 1d356663-f3fe-4d72-ba2a-b749a4f80459
-  Args:
-    source: Juan_Carlos_I
-    relation: :hasFather
-    target: Infante_Juan
-  AddTriple (339a715b-d3bd-4258-a663-3674a3bffbdb)
- Call ID: 339a715b-d3bd-4258-a663-3674a3bffbdb
-  Args:
-    source: Juan_Carlos_I
-    relation: :hasMother
-    target: Princess_Maria_de_las_Mercedes
-  AddTriple (382cbc85-c3cd-477d-8f30-542ae613c999)
- Call ID: 382cbc85-c3cd-477d-8f30-542ae613c999
-  Args:
-    source: Infante_Juan
-    relation: :hasFather
-    target: Alfonso_XIII
-  AddTriple (7d324761-4478-4779-b290-a1abefcf0048)
- Call ID: 7d324761-4478-4779-b290-a1abefcf0048
-  Args:
-    target: Infanta_Pilar
-    source: Juan_Carlos_I
-    relation: :hasSister
-  AddTriple (81517320-fb02-46bf-bbb5-33054cb5f8c9)
- Call ID: 81517320-fb02-46bf-bbb5-33054cb5f8c9
-  Args:
-    source: Juan_Carlos_I
-    relation: :hasSister
-    target: Infanta_Margarita
-  AddTriple (ce8dc943-3f76-4840-b0a6-6c5c898c4a7c)
- Call ID: ce8dc943-3f76-4840-b0a6-6c5c898c4a7c
-  Args:
-    source: Juan_Carlos_I
-    relation: :hasBrother
-    target: Alfonso_of_Spain
-  AddTriple (eaad630f-ff10-4584-9700-0b4f7921e542)
- Call ID: eaad630f-ff10-4584-9700-0b4f7921e542
-  Args:
-    relation: :hasMarriageYear
-    source: Juan_Carlos_I
-    target: 1962
-  AddTriple (2c50aeac-4a72-4958-8a4f-78a61d527032)
- Call ID: 2c50aeac-4a72-4958-8a4f-78a61d527032
-  Args:
-    target: King_Paul_of_Greece
     relation: :hasFather
     source: Queen_Sofia
-  AddTriple (d2280b8a-4eb5-4263-8d84-ecdd7382113c)
- Call ID: d2280b8a-4eb5-4263-8d84-ecdd7382113c
+    target: King_Paul_of_Greece
+  Finish (26a7d2af-408f-4abd-8d27-5bf77043764e)
+ Call ID: 26a7d2af-408f-4abd-8d27-5bf77043764e
   Args:
-    source: Juan_Carlos_I
-    relation: :hasRelation
-    target: Queen_Sofia
-  AddLiteral (881d28c8-673c-4969-a151-2b50ad7554b9)
- Call ID: 881d28c8-673c-4969-a151-2b50ad7554b9
-  Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: Alfonso_of_Spain
-    literal_value: 1956
-  AddLiteral (848efe21-c310-463a-9bec-b9fba75093ff)
- Call ID: 848efe21-c310-463a-9bec-b9fba75093ff
-  Args:
-    literal_type: xsd:integer
-    literal_value: 2020
-    source: Infanta_Pilar
-    relation: :hasDeathYear
-  AddLiteral (0b41873f-f864-4f99-8741-52705ec091ef)
- Call ID: 0b41873f-f864-4f99-8741-52705ec091ef
-  Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Infanta_Margarita
-    literal_value: 1939
-  AddLiteral (8b8161f9-33a7-41c8-bb75-a2c4745c144c)
- Call ID: 8b8161f9-33a7-41c8-bb75-a2c4745c144c
-  Args:
-    literal_value: 1941
-    source: Alfonso_of_Spain
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  Finish (2fdacd8d-2907-46d9-a484-2490377bf643)
- Call ID: 2fdacd8d-2907-46d9-a484-2490377bf643
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -790,34 +990,49 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Juan_Carlos_I a :Man ;
-      :hasBirthYear 1938 ;
-      :hasBrother data:Alfonso_of_Spain ;
-      :hasFather data:Infante_Juan ;
-      :hasMarriageYear data:1962 ;
-      :hasMother data:Princess_Maria_de_las_Mercedes ;
-      :hasRelation data:Queen_Sofia ;
-      :hasSister data:Infanta_Margarita,
-          data:Infanta_Pilar .
+  data:Infanta_Cristina_Duchess_of_Palma_de_Mallorca a :Woman ;
+      :hasFather data:Juan_Carlos_I ;
+      :hasMother data:Queen_Sofia ;
+      :hasRelation data:I%C3%B1aki_Urdangarin .
+
+  data:Leonor_Princess_of_Asturias a :Woman ;
+      :hasFather data:Felipe_VI .
 
   data:Alfonso_XIII a :Man .
 
-  data:Alfonso_of_Spain a :Man ;
+  data:Alfonso_brother_of_Juan_Carlos_I a :Man ;
       :hasBirthYear 1941 ;
       :hasDeathYear 1956 .
 
-  data:Infanta_Margarita a :Woman ;
+  data:Felipe_VI a :Man ;
+      :hasFather data:Juan_Carlos_I ;
+      :hasMother data:Queen_Sofia .
+
+  data:I%C3%B1aki_Urdangarin a :Man .
+
+  data:Infanta_Margarita_Duchess_of_Soria a :Woman ;
       :hasBirthYear 1939 .
 
-  data:Infanta_Pilar a :Woman ;
+  data:Infanta_Pilar_Duchess_of_Badajoz a :Woman ;
+      :hasBirthYear 1936 ;
       :hasDeathYear 2020 .
 
-  data:Infante_Juan a :Man ;
+  data:Infante_Juan_Count_of_Barcelona a :Man ;
       :hasFather data:Alfonso_XIII .
 
   data:King_Paul_of_Greece a :Man .
 
-  data:Princess_Maria_de_las_Mercedes a :Woman .
+  data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Woman .
+
+  data:Juan_Carlos_I a :Man ;
+      :hasBirthYear 1938 ;
+      :hasBrother data:Alfonso_brother_of_Juan_Carlos_I ;
+      :hasFather data:Infante_Juan_Count_of_Barcelona ;
+      :hasMarriageYear 1962 ;
+      :hasMother data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+      :hasRelation data:Queen_Sofia ;
+      :hasSister data:Infanta_Margarita_Duchess_of_Soria,
+          data:Infanta_Pilar_Duchess_of_Badajoz .
 
   data:Queen_Sofia a :Woman ;
       :hasFather data:King_Paul_of_Greece .
@@ -832,110 +1047,230 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (c9bccb1f-1d69-4b6e-afd4-54644bf00514)
- Call ID: c9bccb1f-1d69-4b6e-afd4-54644bf00514
+  ValidateShacl (8a470ef0-3c6f-48b2-846d-0f0d32392751)
+ Call ID: 8a470ef0-3c6f-48b2-846d-0f0d32392751
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:27
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Alfonso_XIII is assigned the class :Man but lacks the required :Ancestor class to satisfy the hasFather property constraints for Infante_Juan.
+      The person Infante_Juan_Count_of_Barcelona is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Alfonso_XIII', class: ':Ancestor')
+      AssignClass(Infante_Juan_Count_of_Barcelona, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Infante_Juan is assigned the class :Man but lacks the required :Ancestor class to satisfy the hasFather property constraints for Juan_Carlos_I.
+      The person Juan_Carlos_I is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Infante_Juan', class: ':Ancestor')
+      AssignClass(Juan_Carlos_I, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Princess_Maria_de_las_Mercedes is assigned the class :Woman but lacks the required :Ancestor class to satisfy the hasMother property constraints for Juan_Carlos_I.
+      The person Alfonso_XIII is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Princess_Maria_de_las_Mercedes', class: ':Ancestor')
+      AssignClass(Alfonso_XIII, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Alfonso_XIII lacks the :Ancestor class required by the hasFather property of Infante_Juan.
+      The person Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies is assigned the class :Woman, but is expected to be an :Ancestor for the property hasMother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Alfonso_XIII', class: ':Ancestor')
+      AssignClass(Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Infante_Juan lacks the :Ancestor class required by the hasFather property of Juan_Carlos_I.
+      The person Queen_Sofia is assigned the class :Woman, but is expected to be an :Ancestor for the property hasMother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Infante_Juan', class: ':Ancestor')
+      AssignClass(Queen_Sofia, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Paul_of_Greece is assigned the class :Man but lacks the :Ancestor class required by the hasFather property of Queen_Sofia.
+      The person Infante_Juan_Count_of_Barcelona is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'King_Paul_of_Greece', class: ':Ancestor')
+      AssignClass(Infante_Juan_Count_of_Barcelona, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Princess_Maria_de_las_Mercedes lacks the :Ancestor class required by the hasMother property of Juan_Carlos_I.
+      The person Felipe_VI is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Princess_Maria_de_las_Mercedes', class: ':Ancestor')
+      AssignClass(Felipe_VI, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Alfonso_XIII lacks the :Ancestor class required by the hasFather property of Infante_Juan.
+      The person Juan_Carlos_I is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Alfonso_XIII', class: ':Ancestor')
+      AssignClass(Juan_Carlos_I, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Infante_Juan lacks the :Ancestor class required by the hasFather property of Juan_Carlos_I.
+      The person King_Paul_of_Greece is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Infante_Juan', class: ':Ancestor')
+      AssignClass(King_Paul_of_Greece, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Paul_of_Greece lacks the :Ancestor class required by the hasFather property of Queen_Sofia.
+      The person Juan_Carlos_I is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'King_Paul_of_Greece', class: ':Ancestor')
+      AssignClass(Juan_Carlos_I, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Princess_Maria_de_las_Mercedes lacks the :Ancestor class required by the hasMother property of Juan_Carlos_I.
+      The person Alfonso_XIII is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Princess_Maria_de_las_Mercedes', class: ':Ancestor')
+      AssignClass(Alfonso_XIII, :Ancestor)
 
 
   Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies is assigned the class :Woman, but is expected to be an :Ancestor for the property hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Queen_Sofia is assigned the class :Woman, but is expected to be an :Ancestor for the property hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Sofia, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Queen_Sofia is assigned the class :Woman, but is expected to be an :Ancestor for the property hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Sofia, :Ancestor)
+
+
+  Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Paul_of_Greece lacks the :Ancestor class required by the hasFather property of Queen_Sofia.
+      The person Infante_Juan_Count_of_Barcelona is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'King_Paul_of_Greece', class: ':Ancestor')
+      AssignClass(Infante_Juan_Count_of_Barcelona, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Felipe_VI is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Felipe_VI, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Juan_Carlos_I is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juan_Carlos_I, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person King_Paul_of_Greece is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(King_Paul_of_Greece, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Juan_Carlos_I is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juan_Carlos_I, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Alfonso_XIII is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alfonso_XIII, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies is assigned the class :Woman, but is expected to be an :Ancestor for the property hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Queen_Sofia is assigned the class :Woman, but is expected to be an :Ancestor for the property hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Sofia, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Queen_Sofia is assigned the class :Woman, but is expected to be an :Ancestor for the property hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Sofia, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Juan_Carlos_I is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juan_Carlos_I, :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person King_Paul_of_Greece is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(King_Paul_of_Greece, :Ancestor)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Felipe_VI is assigned the class :Man, but is expected to be an :Ancestor for the property hasFather.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Felipe_VI, :Ancestor)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Queen_Sofia is assigned the class :Woman, but is expected to be an :Ancestor for the property hasMother.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Sofia, :Ancestor)
 
 
 
@@ -944,29 +1279,173 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (df7a4b98-80e7-44ff-8bbd-42187ee2e568)
- Call ID: df7a4b98-80e7-44ff-8bbd-42187ee2e568
+  AssignClass (be6b78ef-0017-4097-9b30-3672aabd995a)
+ Call ID: be6b78ef-0017-4097-9b30-3672aabd995a
   Args:
+    type: :Ancestor
+    source: Infante_Juan_Count_of_Barcelona
+  AssignClass (35a1ebd0-edcb-4c6c-8b92-fec1bbbe7b7a)
+ Call ID: 35a1ebd0-edcb-4c6c-8b92-fec1bbbe7b7a
+  Args:
+    source: Juan_Carlos_I
+    type: :Ancestor
+  AssignClass (5f15d2c1-230f-4c86-a323-3d46101a02a7)
+ Call ID: 5f15d2c1-230f-4c86-a323-3d46101a02a7
+  Args:
+    type: :Ancestor
     source: Alfonso_XIII
-    type: :Ancestor
-  AssignClass (2f1439dd-7c08-43ba-bbc7-0eed3fb34d9d)
- Call ID: 2f1439dd-7c08-43ba-bbc7-0eed3fb34d9d
+  AssignClass (4925d1f2-62a6-40ab-9e2f-ac6fa3fbcd37)
+ Call ID: 4925d1f2-62a6-40ab-9e2f-ac6fa3fbcd37
   Args:
     type: :Ancestor
-    source: Infante_Juan
-  AssignClass (c0b38bc3-0cb8-4dbc-8367-09ba3defac50)
- Call ID: c0b38bc3-0cb8-4dbc-8367-09ba3defac50
+    source: Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+  AssignClass (bd5f5b7e-db29-4f89-943d-bb52b992700f)
+ Call ID: bd5f5b7e-db29-4f89-943d-bb52b992700f
   Args:
-    source: Princess_Maria_de_las_Mercedes
     type: :Ancestor
-  AssignClass (07c1af8f-4a4d-4d20-83af-24c4aeada8e9)
- Call ID: 07c1af8f-4a4d-4d20-83af-24c4aeada8e9
+    source: Queen_Sofia
+  AssignClass (7c7972b7-f5ac-4e60-8ea6-97e88d3926d6)
+ Call ID: 7c7972b7-f5ac-4e60-8ea6-97e88d3926d6
+  Args:
+    source: Felipe_VI
+    type: :Ancestor
+  AssignClass (0ba75fda-4e48-4c99-9d60-c60033404e88)
+ Call ID: 0ba75fda-4e48-4c99-9d60-c60033404e88
   Args:
     source: King_Paul_of_Greece
     type: :Ancestor
-  ValidateShacl (82854f40-a9d1-47f4-a05f-eb1f78b7a70c)
- Call ID: 82854f40-a9d1-47f4-a05f-eb1f78b7a70c
+  AssignClass (ce8d5552-0dd8-417a-be14-38df1e767647)
+ Call ID: ce8d5552-0dd8-417a-be14-38df1e767647
   Args:
+    source: Juan_Carlos_I
+    type: :Person
+  AssignClass (bcac872e-071d-42d6-be0f-04f939640ad0)
+ Call ID: bcac872e-071d-42d6-be0f-04f939640ad0
+  Args:
+    source: Felipe_VI
+    type: :Person
+  AssignClass (c94eaf23-e18c-4bac-a549-154cf9096295)
+ Call ID: c94eaf23-e18c-4bac-a549-154cf9096295
+  Args:
+    type: :Person
+    source: Infanta_Cristina_Duchess_of_Palma_de_Mallorca
+  AssignClass (80e5e916-a169-4726-8789-4670359eed4f)
+ Call ID: 80e5e916-a169-4726-8789-4670359eed4f
+  Args:
+    source: Infanta_Pilar_Duchess_of_Badajoz
+    type: :Person
+  AssignClass (a7510597-21cd-4479-8669-a939097494a4)
+ Call ID: a7510597-21cd-4479-8669-a939097494a4
+  Args:
+    source: Infanta_Margarita_Duchess_of_Soria
+    type: :Person
+  AssignClass (fce5e506-0fad-4318-a76c-78a2a65ecccf)
+ Call ID: fce5e506-0fad-4318-a76c-78a2a65ecccf
+  Args:
+    source: Alfonso_brother_of_Juan_Carlos_I
+    type: :Person
+  AssignClass (33decbff-0798-42a0-a6a6-4f94ba1d805d)
+ Call ID: 33decbff-0798-42a0-a6a6-4f94ba1d805d
+  Args:
+    source: Leonor_Princess_of_Asturias
+    type: :Person
+  AssignClass (bf95fce7-3df4-4c8e-99f0-acf33ae27750)
+ Call ID: bf95fce7-3df4-4c8e-99f0-acf33ae27750
+  Args:
+    source: Iñaki_Urdangarin
+    type: :Person
+  AssignClass (3423e396-e1a1-44ee-bfa4-47908c1d1a02)
+ Call ID: 3423e396-e1a1-44ee-bfa4-47908c1d1a02
+  Args:
+    source: Infante_Juan_Count_of_Barcelona
+    type: :Person
+  AssignClass (e6e98789-2755-4abc-b148-52f4e48140a0)
+ Call ID: e6e98789-2755-4abc-b148-52f4e48140a0
+  Args:
+    type: :Person
+    source: Alfonso_XIII
+  AssignClass (1ac59e04-84f8-46eb-9b08-3227e6936e29)
+ Call ID: 1ac59e04-84f8-46eb-9b08-3227e6936e29
+  Args:
+    type: :Person
+    source: Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+  AssignClass (0e16287a-2808-4191-a71b-d56ea9c02abc)
+ Call ID: 0e16287a-2808-4191-a71b-d56ea9c02abc
+  Args:
+    type: :Person
+    source: Queen_Sofia
+  AssignClass (cd4ceaa2-3ac7-4cdb-bff4-16a54238e591)
+ Call ID: cd4ceaa2-3ac7-4cdb-bff4-16a54238e591
+  Args:
+    source: King_Paul_of_Greece
+    type: :Person
+  Finish (5d352067-3efe-41e9-bd9f-3286cd202345)
+ Call ID: 5d352067-3efe-41e9-bd9f-3286cd202345
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -987,43 +1466,86 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Juan_Carlos_I a :Man ;
-      :hasBirthYear 1938 ;
-      :hasBrother data:Alfonso_of_Spain ;
-      :hasFather data:Infante_Juan ;
-      :hasMarriageYear data:1962 ;
-      :hasMother data:Princess_Maria_de_las_Mercedes ;
-      :hasRelation data:Queen_Sofia ;
-      :hasSister data:Infanta_Margarita,
-          data:Infanta_Pilar .
+  data:Infanta_Cristina_Duchess_of_Palma_de_Mallorca a :Person,
+          :Woman ;
+      :hasFather data:Juan_Carlos_I ;
+      :hasMother data:Queen_Sofia ;
+      :hasRelation data:I%C3%B1aki_Urdangarin .
+
+  data:Leonor_Princess_of_Asturias a :Person,
+          :Woman ;
+      :hasFather data:Felipe_VI .
 
   data:Alfonso_XIII a :Ancestor,
-          :Man .
+          :Man,
+          :Person .
 
-  data:Alfonso_of_Spain a :Man ;
+  data:Alfonso_brother_of_Juan_Carlos_I a :Man,
+          :Person ;
       :hasBirthYear 1941 ;
       :hasDeathYear 1956 .
 
-  data:Infanta_Margarita a :Woman ;
+  data:Felipe_VI a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Juan_Carlos_I ;
+      :hasMother data:Queen_Sofia .
+
+  data:I%C3%B1aki_Urdangarin a :Man,
+          :Person .
+
+  data:Infanta_Margarita_Duchess_of_Soria a :Person,
+          :Woman ;
       :hasBirthYear 1939 .
 
-  data:Infanta_Pilar a :Woman ;
+  data:Infanta_Pilar_Duchess_of_Badajoz a :Person,
+          :Woman ;
+      :hasBirthYear 1936 ;
       :hasDeathYear 2020 .
 
-  data:Infante_Juan a :Ancestor,
-          :Man ;
+  data:Infante_Juan_Count_of_Barcelona a :Ancestor,
+          :Man,
+          :Person ;
       :hasFather data:Alfonso_XIII .
 
   data:King_Paul_of_Greece a :Ancestor,
-          :Man .
+          :Man,
+          :Person .
 
-  data:Princess_Maria_de_las_Mercedes a :Ancestor,
+  data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Queen_Sofia a :Woman ;
+  data:Juan_Carlos_I a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1938 ;
+      :hasBrother data:Alfonso_brother_of_Juan_Carlos_I ;
+      :hasFather data:Infante_Juan_Count_of_Barcelona ;
+      :hasMarriageYear 1962 ;
+      :hasMother data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
+      :hasRelation data:Queen_Sofia ;
+      :hasSister data:Infanta_Margarita_Duchess_of_Soria,
+          data:Infanta_Pilar_Duchess_of_Badajoz .
+
+  data:Queen_Sofia a :Ancestor,
+          :Person,
+          :Woman ;
       :hasFather data:King_Paul_of_Greece .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (4fe401b2-6999-4216-9837-67092077de33)
+ Call ID: 4fe401b2-6999-4216-9837-67092077de33
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1033,128 +1555,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (05700d16-7981-43fc-b3cb-f5090c4f91ce)
- Call ID: 05700d16-7981-43fc-b3cb-f5090c4f91ce
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1962']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (086ca575-e23b-4d5d-98ba-618289880034)
- Call ID: 086ca575-e23b-4d5d-98ba-618289880034
-  Args:
-    literal_value: 1962
-    literal_type: xsd:integer
-    source: Juan_Carlos_I
-    relation: :hasMarriageYear
-  AddLiteral (07c023db-f38d-49b9-83a6-f1031a2af0c6)
- Call ID: 07c023db-f38d-49b9-83a6-f1031a2af0c6
-  Args:
-    literal_type: xsd:string
-    source: Juan_Carlos_I
-    relation: :hasMarriageYear
-    literal_value: 1962
-  Finish (3fd51ce3-a59d-400c-8a68-d71ecd82b137)
- Call ID: 3fd51ce3-a59d-400c-8a68-d71ecd82b137
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Juan_Carlos_I a :Man ;
-      :hasBirthYear 1938 ;
-      :hasBrother data:Alfonso_of_Spain ;
-      :hasFather data:Infante_Juan ;
-      :hasMarriageYear data:1962,
-          "1962"^^xsd:string ;
-      :hasMother data:Princess_Maria_de_las_Mercedes ;
-      :hasRelation data:Queen_Sofia ;
-      :hasSister data:Infanta_Margarita,
-          data:Infanta_Pilar .
-
-  data:Alfonso_XIII a :Ancestor,
-          :Man .
-
-  data:Alfonso_of_Spain a :Man ;
-      :hasBirthYear 1941 ;
-      :hasDeathYear 1956 .
-
-  data:Infanta_Margarita a :Woman ;
-      :hasBirthYear 1939 .
-
-  data:Infanta_Pilar a :Woman ;
-      :hasDeathYear 2020 .
-
-  data:Infante_Juan a :Ancestor,
-          :Man ;
-      :hasFather data:Alfonso_XIII .
-
-  data:King_Paul_of_Greece a :Ancestor,
-          :Man .
-
-  data:Princess_Maria_de_las_Mercedes a :Ancestor,
-          :Woman .
-
-  data:Queen_Sofia a :Woman ;
-      :hasFather data:King_Paul_of_Greece .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1962']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (7caf97dc-0cc8-4e00-bf68-3b5c209b1bef)
- Call ID: 7caf97dc-0cc8-4e00-bf68-3b5c209b1bef
-  Args:
-    source: Juan_Carlos_I
-    relation: :hasMarriageYear
-    target: 1962
-  Finish (cf2735fe-a925-4065-b009-95c0a2d3c2f3)
- Call ID: cf2735fe-a925-4065-b009-95c0a2d3c2f3
+  Finish (02cd3b3b-750e-4fd5-837c-8242b335466d)
+ Call ID: 02cd3b3b-750e-4fd5-837c-8242b335466d
   Args:

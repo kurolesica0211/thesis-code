@@ -69,82 +69,125 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Joachim Franz Humbert of Prussia (17 December 1890 – 18 July 1920) was the youngest son and sixth child of Wilhelm II, German Emperor, by his first wife, Augusta Victoria of Schleswig-Holstein.
-Prince Joachim was educated as an officer and participated in the First World War.
+Prince Peter of Greece and Denmark (Greek: Πέτρος; 3 December 1908 –  15 October 1980) was a Greek prince, soldier and anthropologist specialising in Tibetan culture and polyandry.
+Born in Paris and high in the line of succession to the Greek throne, Prince Peter was deemed to have forfeited his succession rights by marrying a twice-divorced Russian commoner, Irina Aleksandrovna Ovtchinnikova.
+Following his first scientific voyage to Asia, Peter served as an officer of the Greek army during the Second World War.
+The Prince returned to Asia several more times for his research of Tibetan culture.
+Peter eventually separated from his wife and died childless in London.
 Early life
 
-Birth and family
+A member of the House of Schleswig-Holstein-Sonderburg-Glücksburg, Prince Peter was the elder child and only son of Prince George of Greece and Denmark and the wealthy author and psychoanalyst Princess Marie Bonaparte.
+His father was the second son of King George I of Greece and his mother the only daughter of the French botanist Prince Roland Bonaparte and Marie-Félix Blanc.
+Peter was born in Paris and spent his childhood in France, and did not set foot in Greece between 1912 and 1935 due to the First World War and the later proclamation of the Second Hellenic Republic.
+During that time, he came to know Denmark, the kingdom from which the Greek royal family originated.
+He joined the Royal Guards of Denmark in 1932 for basic military service, and was commissioned as a second lieutenant in 1934.
+He spent summers at Bernstorff Palace, then owned by his paternal granduncle, Prince Valdemar of Denmark.
+Due to their father's long-lasting sexual and emotional relationship with his uncle Valdemar, Peter and his sister Eugénie referred to Valdemar as "Papa Two".
+As customary, Princess George took no part in her son's upbringing, and when he reached adolescence, only the counsels of the psychoanalyst Sigmund Freud helped them suppress their incestuous feelings for each other.
+Greek restoration
 
-Prince Joachim was born on 17 December 1890, two years after his father had become the German Emperor, at the Berlin Palace in central Berlin.
-He was the sixth and youngest son of Emperor Wilhelm II, and his first wife, Princess Augusta Victoria of Schleswig-Holstein.
+Following the restoration of his cousin, King George II, Prince Peter travelled to the Kingdom to take part in the ceremonial reinterment of the remains of his uncle, King Constantine I, and those of the queens Olga and Sophia, his grandmother and aunt respectively.
+In the 1930s, a possible marriage between Prince Peter and Princess Frederica of Hanover may have been discussed, but she eventually married Prince Paul.
 Education
 
-Prince Joachim spent his childhood with his siblings at the New Palace in Potsdam, and his school days at the Prinzenhaus in Plön, in his mother's ancestral Schleswig-Holstein, as his brothers had been before him.
-Marriage
+Peter attended Lycée Janson de Sailly and received the degree of Doctor of Law from the University of Paris.
+Peter joined the 3/40 Evzone Regiment in 1936, becoming an officer.
+He proceeded to travel through Greece with his parents and visited Crete in April 1937.
+Voyage to Asia and marriage
 
-On 11 March 1916 in Berlin, Joachim married Princess Marie-Auguste of Anhalt (10 June 1898 – 22 May 1983), the daughter of Eduard, Duke of Anhalt and his wife Princess Luise of Saxe-Altenburg (daughter of Prince Moritz of Saxe-Altenburg).
-He and Marie-Auguste had been engaged since 14 October of the previous year.
-The wedding was celebrated at Bellevue Palace, and was attended by Joachim's father and mother, the Duke and Duchess of Anhalt, as well as other relatives.
-The couple had one son, Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul (15 December 1916 in Potsdam – 22 January 1975 in Arica, Chile).
-Their grandson, Prince Franz Wilhelm, married Maria Vladimirovna of Russia, a claimant to the Imperial Russian throne.
-Candidate for thrones
+In 1935, Prince Peter met and started a relationship with Irina Aleksandrovna Ovtchinnikova, a four years older married Russian émigré with an ex-husband, Jehan de Monléon, Marquis de Monléon.
+The next year, she obtained divorce from her second husband Lewis (Slodon) Sloden, and her influence over Peter steadily increased.
+Peter himself did not want to gain a reputation as bad as that of King Edward VIII of the United Kingdom, who abdicated the same year to marry his own twice divorced foreign lover, the American Wallis Simpson.
+Accompanied by Ovtchinnikova and a student of Malinowski, Prince Peter embarked on a voyage to Asia in September 1937.
+The party passed through Syria and Persia before reaching British India, in search of a tribe that Peter could study.
+They arrived in what is now Pakistan in early 1938, and Peter conducted research in the regions of Lahore, Kulu, Leh, and Srinagar.
+Throughout the entire journey, Peter focused his attention on the study of polyandry – an interest that may have resulted from the Oedipus complex.
+While in Madras, Peter decided to officialise his relationship with Ovtchinnikova.
+Aware of his family's disapproval of the relationship, but also possibly wishing to take advantage of the turmoil created by the recently declared Second World War, the Prince did not bother to inform either the Greek royal court or his parents about the marriage.
+Prince George, affronted by his son's decision not to ask him or the King for permission to marry, disowned Peter and henceforward refused contact with him.
+Despite her own disappointment, however, Princess George remained in touch with her son and continued to regularly send him money.
+However, not all members of the royal family were dissatisfied with Peter's mesalliance and subsequent loss of dynastic rights.
+Second World War
 
-Ireland
+Prince Peter and Ovtchinnikova returned to Europe in November 1939.
+Prince George refused to see him.
+Peter also met with his sister and her newborn daughter, Princess Tatiana Radziwill.
+The German invasion of France in 1940 led Peter and his wife to leave Paris and move to Assisi, Italy.
+Malinowski, now working at Yale University in the United States of America, was impressed by Peter's research in Asia and offered him a position as research associate in the Anthropology Department of the university.
+Peter declined this offer to move to Greece and join his country's infantry in the wake of Greco-Italian War.
+King George II believed her to be a plotter, and was also wary of his cousin.
+The King suspected that some (particularly leftists) would like to replace him with Peter.
+Germany invaded Greece on 6 April 1941.
+Peter was not evacuated until 27 April, when the Germans entered Athens.
+On Crete, Peter rejoined the King, who was satisfied with his conduct and named him his personal aide de camp.
+King George and Prince Paul therefore moved to London, while the majority of the family found refuge in South Africa.
+Peter was the only one to remain in Cairo, having been named "Representative of the King of the Hellenes in the Middle East".
+The royal family's exile allowed Peter to rejoin Ovtchinnikova in Palestine.
+The couple settled in Cairo, where Peter introduced his wife as a princess.
+"The Russian", it was rumoured, wished Greece to be Orthodox but Communist and with Peter as king.
+Prince Peter's chief task in the Middle East was to reorganise the remnants of the Greek royal army and prepare them to participate in the war alongside the Allies of World War II.
+Aftermath of the war
 
-During the Easter Rising in Dublin in 1916, some republican leaders, including Patrick Pearse and Joseph Plunkett, contemplated giving the throne of an independent Ireland to Prince Joachim.
-Pearse and Plunkett thought that if the rising were successful and Germany won the First World War, an independent Ireland would be a monarchy with a German prince as king, like Romania and Bulgaria before it.
-The fact that Joachim did not speak English was also considered an advantage, as he might be more disposed to learning and promoting the use of the Irish language.
-He would naturally turn to those who were more Irish and Gaelic, as to his friends, for the non-nationalist element in our country had shown themselves to be so bitterly anti-German.
-For the first generation or so it would be an advantage, in view of our natural weakness, to have a ruler who linked us with a dominant European power, and thereafter, when we were better prepared to stand alone, or when it might be undesirable that our ruler should turn by personal choice to one power rather than be guided by what was most natural and beneficial for our country, the ruler of that time would have become completely Irish."
+The royal family could not return to Greece immediately after the war ended due to a civil war between the Communists and the Conservatives.
+Prince Peter was aware that King George, if allowed to return, would never allow him to move to Greece along with his wife.
+On 1 September 1946, a referendum confirmed George II's position.
+The King, however, died unexpectedly on 1 April the next year and the Prince was demobilised.
+Peter hoped that Paul, George II's successor, would recognise his marriage to Ovtchinnikova.
+King Paul agreed but only if Prince Peter officially recognised that the marriage deprived him of his dynastic rights, something the Prince had always refused to do.
+Peter turned down the offer and Paul prohibited him from returning to Greece.
+Prince Peter and Irene Ovtchinnikova thus decided to move from Egypt to Denmark.
+Peter accepted.
+The Prince wished to avoid any possible dispute with the Greek government and thus prudently avoided expressing his opinion about the Greek politics.
+A few days later, he was relieved when he received a letter from Prince Axel of Denmark, son of Prince Valdemar and first cousin of Peter's father, who informed him that the expedition should still take place.
+Tibetan studies
 
-Ernest Blythe recalled that in January 1915 he heard Plunkett and Thomas MacDonagh express support for the idea at an Irish Volunteers meeting.
-Georgia
+First sojourn
 
-After Georgia's declaration of independence following the Russian Revolution of 1917, Joachim was briefly considered by the German representative Count Friedrich Werner von der Schulenburg and Georgian royalists as a candidate for the Georgian throne.
-The Germans presented various proposals to incorporate Lithuania into the German Empire, particularly Prussia.
-One such proposal offered the crown of Lithuania to Joachim.
-On 4 June 1918, they voted to offer the Lithuanian throne to the German noble Wilhelm Karl, Duke of Urach.
-Divorce and death
-
-Following the German Revolution in November 1918, the Emperor was forced to abdicate, thus depriving Joachim of his titles, position and prospects for heading any newly established monarchies in Europe.
-On 31 May 1918, Joachim was examined by the psychiatrist Robert Gaupp, who submitted a report concluding that he "was incurably ill, both mentally and physically ... was extremely easily emotionally and sexually aroused", and "was inclined to 'violent, uncontrollably exploding outbursts of anger in which all self-control  lost'".
-The relationship between Joachim and his wife had already started to deteriorate.
-According to one report, Marie-Auguste had previously abandoned her husband and child to run away with another man, had been forcibly brought back home on the orders of the Kaiser, but had filed for divorce as soon as the war ended, when she saw that her husband's family were at their lowest ebb.
-According to Hans von Gontard, who served as the Kaiser's Hofmarschall in exile, Joachim was "quite out of control and had beaten his wife".
-Following the divorce, Joachim shot himself in Potsdam on 18 July 1920.
-His own brother Prince Eitel Friedrich of Prussia commented that he suffered from "a fit of excessive dementia".
-Kaiser Wilhelm's reaction to the news of his son's suicide was one of fury, commenting that he was outraged "that the oaf should have done this, too, to us and especially to his mother!"
-She desperately wanted to believe that his death had been accidental but she knew better.
-
-
-Children and grandchildren
-
-The only issue of the marriage of Prince Joachim and Princess Marie-Auguste was their son, Prince Karl Franz Josef Wilhelm Friedrich Eduard of Prussia (15 December 1916 – 22 January 1975).
-On 5 October 1940, Prince Karl married Princess Henriette Hermine Wanda Ida Luise von Schönaich-Carolath (25 November 1918 –
-They were the parents of three children:
-
-
-After the divorce, Prince Karl married, morganatically, Luise Dora Hartmann (5 September 1909 – 23 April 1961) on 9 November 1946.
-Prince Karl's last marriage was to Eva Maria Herrera y Valdeavellano (10 June 1922 – 6 March 1987) on 20 July 1959 in Lima, Peru.
-They were married until Prince Karl's death and had two daughters;
+Prince Peter and Ovtchinnikova left the United States in January 1949, travelling from California to Colombo, the capital of Ceylon.
+Peter was dismayed to find out that the people lived in poor sanitary conditions and that their culture was on the verge of disappearance.
+A large number of Tibetans fled to India, and many found refuge in Kalimpong, enabling Peter to study the people and Tibetan culture.
+Peter gathered anthropometric data on 3,284 persons, analysed 198 blood samples, bought clothes, jewellery, books (such as the Tengyur and Kangyur), and various other objects now found at the National Museum of Denmark and the Royal Library.
+Having registered their songs, sagas, everyday conversations, oracle prophecies and religious ceremonies, Peter took more than 3,000 photographs of Tibetans.
+One man did not understand why the Prince bothered to wear a shirt, given that he already had hair.
+The expedition ended in 1952, and the pair went to Copenhagen, where Peter presented his findings.
+Despite everything, Peter continued learning Tibetan and by 1954, he learned enough to be able to work without an interpreter.
+In mid-1953, the Prince once again left the Himalayas to head a commemorative expedition to Afghanistan in honour of Haslund-Christensen, but returned to the Himalayas within six weeks.
+In 1956, Peter was pleased to welcome his mother to his Kalimpong residence.
+The more Peter studied the Tibetans, the less he hesitated to criticise the Chinese government and occupying army, who, in turn, suspected him to be a Western spy.
+The government of India, on the other hand, feared the wrath of its powerful neighbour and thus proceeded to harass the Prince and Ovtchinnikova to push them out of the country.
+The situation was complicated by Ovtchinnikova's progressing tuberculosis, and Peter pleaded with the authorities to allow them to stay until she could travel.
+Princess George also tried to intercede on behalf of her son and daughter-in-law, but failed to meet Nehru during his visit to London in June 1956.
+During the seven years that Prince Peter spent with his wife in the Himalayas, he was able to collect "...a rich collection of artefacts and books, still and moving photography, sound recordings, ethnographic information as well as an astoundingly large set of physical anthropology data.
+"
 
 
-Regimental Commissions
+Final decades
 
-Honours
-
-Prince Joachim received the following orders and decorations:
-Ancestry
-
-Portrayal in fiction
-
-Prince Joachim was played by American actor Jesse Plemons and portrayed as the main antagonist in the 2021 Disney fantasy adventure film Jungle Cruise.
+Upon their return to Europe, Prince Peter and Ovtchinnikova settled in the United Kingdom, where the Prince resumed his studies at the London School of Economics.
+After King Paul's death, Peter found himself at odds with Paul's son and successor, King Constantine II.
+Had he not been deemed excluded from the line of succession due to his unsuitable marriage, Peter would have been heir presumptive to Constantine II according to the original laws of succession.
+However, the Parliament of Greece modified the Constitution to replace the original agnatic primogeniture with male-preference cognatic primogeniture, thereby introducing a number of female dynasts and their descendants into the line of succession.
+King Constantine II, still unmarried and childless, thus officially recognised his only unmarried sister, Princess Irene, as heir presumptive (excluding the older sister, Princess Sophia, who was due to become Queen of Spain).
+Peter remained convinced that the change was illegal and that he would be the rightful heir if the King died without fathering a son.
+Shortly after the King's marriage to their cousin, Princess Anne-Marie of Denmark, the uninvited Prince Peter called a press conference in Athens and openly questioned the legality of the constitutional amendment.
+King Constantine II and Queen Anne-Marie's first child, Princess Alexia, was born in 1965 and designated as the new heir presumptive, but Peter refused to recognise that either.
+Following the rupture between King Constantine and Prime Minister Georgios Papandreou the same year, the Prince openly criticised the King's conduct and suggested himself as an alternative to Constantine II.
+However, the abolition of the monarchy and the proclamation of the Third Hellenic Republic in 1974 did not allow Peter to fulfill his dream of ascending the Greek throne.
+After the monarchy was abolished, Prince Peter decided to liquidate his possessions in Greece, most notably his residence in Glyfada.
+Ovtchinnikova moved to Hong Kong, while Peter took up a relationship with a young Englishwoman who lived with him in Copenhagen.
+Prince Peter continued to support the Tibetan cause.
+In 1967 he, "...was instrumental in procuring vocational training for young Tibetans in Denmark.
+A memorial mass for Prince Peter was held at St Sophia's Cathedral, London, on 22 October.
+He compromised by agreeing that the tomb inscription would describe her as "Irina, spouse of Prince Peter, née Alexandrovna Ovtchinnikova" rather than as a Greek princess.
+The Greek government, however, refused to allow his burial in Greece.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -160,39 +203,9 @@ Prince Joachim was played by American actor Jesse Plemons and portrayed as the m
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -207,6 +220,23 @@ Prince Joachim was played by American actor Jesse Plemons and portrayed as the m
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -224,6 +254,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -291,29 +336,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -322,6 +359,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -334,6 +379,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -342,17 +389,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -380,6 +429,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -395,219 +528,344 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f330354c-7293-4a4f-9c85-a6dbed0ec121)
- Call ID: f330354c-7293-4a4f-9c85-a6dbed0ec121
+  AssignClass (4462bbd1-1f40-403d-8074-c71bef07b4b6)
+ Call ID: 4462bbd1-1f40-403d-8074-c71bef07b4b6
   Args:
-    source: Prince_Joachim_of_Prussia
+    source: Prince Peter of Greece and Denmark
     type: :Man
-  AssignClass (6b1e0986-97b4-4ffb-8722-369fadfb0c2a)
- Call ID: 6b1e0986-97b4-4ffb-8722-369fadfb0c2a
+  AssignClass (60ade10a-d671-4c2e-a5e4-354a5239b2b9)
+ Call ID: 60ade10a-d671-4c2e-a5e4-354a5239b2b9
   Args:
-    source: Prince_Joachim_of_Prussia
+    source: Prince Peter of Greece and Denmark
     type: :Person
-  AssignClass (7fcc6cad-0553-4ce1-b1db-c3e513ceb606)
- Call ID: 7fcc6cad-0553-4ce1-b1db-c3e513ceb606
+  AddLiteral (2cc1c62f-caf1-44fb-aed1-bebcfd6480a0)
+ Call ID: 2cc1c62f-caf1-44fb-aed1-bebcfd6480a0
   Args:
-    source: Wilhelm_II_German_Emperor
-    type: :Man
-  AssignClass (3759857f-bcd0-4edc-a495-d1aac844f60e)
- Call ID: 3759857f-bcd0-4edc-a495-d1aac844f60e
-  Args:
-    type: :Person
-    source: Wilhelm_II_German_Emperor
-  AssignClass (1e05306d-9ef6-45c5-98a9-396889fdf974)
- Call ID: 1e05306d-9ef6-45c5-98a9-396889fdf974
-  Args:
-    source: Augusta_Victoria_of_Schleswig-Holstein
-    type: :Woman
-  AssignClass (34940c84-821a-45ea-842d-d5cbc7e1bc5b)
- Call ID: 34940c84-821a-45ea-842d-d5cbc7e1bc5b
-  Args:
-    type: :Person
-    source: Augusta_Victoria_of_Schleswig-Holstein
-  AddLiteral (5f897a52-db18-40cf-88e5-040b8b7105cf)
- Call ID: 5f897a52-db18-40cf-88e5-040b8b7105cf
-  Args:
+    literal_value: 1908
     literal_type: xsd:integer
-    source: Prince_Joachim_of_Prussia
-    literal_value: 1890
+    source: Prince Peter of Greece and Denmark
     relation: :hasBirthYear
-  AddLiteral (fcb21110-656d-4d18-838c-38bac3fa7c0d)
- Call ID: fcb21110-656d-4d18-838c-38bac3fa7c0d
+  AddLiteral (ad91bba6-171d-4517-ad09-eaf823684097)
+ Call ID: ad91bba6-171d-4517-ad09-eaf823684097
   Args:
+    source: Prince Peter of Greece and Denmark
     relation: :hasDeathYear
-    literal_value: 1920
-    source: Prince_Joachim_of_Prussia
+    literal_value: 1980
     literal_type: xsd:integer
-  AddTriple (931a1c68-7573-4d6a-b5ec-bbbd59a8cdd1)
- Call ID: 931a1c68-7573-4d6a-b5ec-bbbd59a8cdd1
+  AssignClass (27c8cfbe-9c18-4129-85d8-db02ab8cb953)
+ Call ID: 27c8cfbe-9c18-4129-85d8-db02ab8cb953
   Args:
-    target: Wilhelm_II_German_Emperor
-    source: Prince_Joachim_of_Prussia
+    source: Prince George of Greece and Denmark
+    type: :Man
+  AssignClass (3870e014-6521-4787-8833-0e02e16ae690)
+ Call ID: 3870e014-6521-4787-8833-0e02e16ae690
+  Args:
+    source: Prince George of Greece and Denmark
+    type: :Person
+  AssignClass (80ceb70b-32c9-4bc9-8ed0-dae085fb7281)
+ Call ID: 80ceb70b-32c9-4bc9-8ed0-dae085fb7281
+  Args:
+    source: Princess Marie Bonaparte
+    type: :Woman
+  AssignClass (1dab3a27-3206-4f29-9809-206ccdb8652f)
+ Call ID: 1dab3a27-3206-4f29-9809-206ccdb8652f
+  Args:
+    source: Princess Marie Bonaparte
+    type: :Person
+  AddTriple (0a4eceb0-e933-40a8-b321-32ff8483a135)
+ Call ID: 0a4eceb0-e933-40a8-b321-32ff8483a135
+  Args:
     relation: :hasFather
-  AddTriple (a83cd02f-97ba-462a-931d-ab60c4313de9)
- Call ID: a83cd02f-97ba-462a-931d-ab60c4313de9
+    source: Prince Peter of Greece and Denmark
+    target: Prince George of Greece and Denmark
+  AddTriple (a6ec7d87-4fe9-4504-ab5e-b1c7d055af08)
+ Call ID: a6ec7d87-4fe9-4504-ab5e-b1c7d055af08
   Args:
+    target: Princess Marie Bonaparte
     relation: :hasMother
-    source: Prince_Joachim_of_Prussia
-    target: Augusta_Victoria_of_Schleswig-Holstein
-  AssignClass (9ffe3da8-6e9c-4ea1-b733-e598fb57a119)
- Call ID: 9ffe3da8-6e9c-4ea1-b733-e598fb57a119
+    source: Prince Peter of Greece and Denmark
+  AssignClass (10e4f54c-4260-4154-bcba-b1ffd751cb4f)
+ Call ID: 10e4f54c-4260-4154-bcba-b1ffd751cb4f
   Args:
-    source: Marie-Auguste_of_Anhalt
-    type: :Woman
-  AssignClass (7b031648-e185-4d6c-8323-ba455e1e53f8)
- Call ID: 7b031648-e185-4d6c-8323-ba455e1e53f8
-  Args:
-    type: :Person
-    source: Marie-Auguste_of_Anhalt
-  AddLiteral (5872b973-a6af-4522-84f5-6b364b667e31)
- Call ID: 5872b973-a6af-4522-84f5-6b364b667e31
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1916
-    source: Prince_Joachim_of_Prussia
-    literal_type: xsd:integer
-  AddTriple (67ca5520-3b29-4d84-942a-a6e38ecf63ce)
- Call ID: 67ca5520-3b29-4d84-942a-a6e38ecf63ce
-  Args:
-    source: Prince_Joachim_of_Prussia
-    target: Marie-Auguste_of_Anhalt
-    relation: :hasRelation
-  AssignClass (86af52b6-c694-4cd4-8ac2-b7ffc5dcc28c)
- Call ID: 86af52b6-c694-4cd4-8ac2-b7ffc5dcc28c
-  Args:
-    source: Eduard_Duke_of_Anhalt
+    source: King George I of Greece
     type: :Man
-  AssignClass (766d0a34-b901-4b28-bfe2-90ed8d3a4db8)
- Call ID: 766d0a34-b901-4b28-bfe2-90ed8d3a4db8
+  AssignClass (98a7c6e6-58de-440e-b365-1b8d9ce8ce34)
+ Call ID: 98a7c6e6-58de-440e-b365-1b8d9ce8ce34
   Args:
+    source: King George I of Greece
     type: :Person
-    source: Eduard_Duke_of_Anhalt
-  AssignClass (e4ce61a3-60d5-4a1b-910f-2b4eeb6f25b2)
- Call ID: e4ce61a3-60d5-4a1b-910f-2b4eeb6f25b2
+  AddTriple (b2b754d3-30f1-4dbe-bb70-9de84b1a7257)
+ Call ID: b2b754d3-30f1-4dbe-bb70-9de84b1a7257
   Args:
-    source: Luise_of_Saxe-Altenburg
-    type: :Woman
-  AssignClass (3f7e38ba-9c93-4f07-8adf-5ba14ea30eb6)
- Call ID: 3f7e38ba-9c93-4f07-8adf-5ba14ea30eb6
-  Args:
-    type: :Person
-    source: Luise_of_Saxe-Altenburg
-  AddTriple (6a532850-81ca-420e-a199-96f273716930)
- Call ID: 6a532850-81ca-420e-a199-96f273716930
-  Args:
-    source: Marie-Auguste_of_Anhalt
-    target: Eduard_Duke_of_Anhalt
+    target: King George I of Greece
     relation: :hasFather
-  AddTriple (e2c1b668-9e4f-45a5-9eb6-6ed044b878ba)
- Call ID: e2c1b668-9e4f-45a5-9eb6-6ed044b878ba
+    source: Prince George of Greece and Denmark
+  AssignClass (c29f60aa-01e2-4d02-a9c4-72eacd2e55a9)
+ Call ID: c29f60aa-01e2-4d02-a9c4-72eacd2e55a9
   Args:
+    source: Prince Roland Bonaparte
+    type: :Man
+  AssignClass (3c3fc30f-7b1b-475f-899d-1504453b3b30)
+ Call ID: 3c3fc30f-7b1b-475f-899d-1504453b3b30
+  Args:
+    source: Prince Roland Bonaparte
+    type: :Person
+  AssignClass (87055801-cfd3-4848-9af1-bad285cb281b)
+ Call ID: 87055801-cfd3-4848-9af1-bad285cb281b
+  Args:
+    source: Marie-Félix Blanc
+    type: :Woman
+  AssignClass (16fd79b5-3220-41b6-8f53-193a796b061d)
+ Call ID: 16fd79b5-3220-41b6-8f53-193a796b061d
+  Args:
+    source: Marie-Félix Blanc
+    type: :Person
+  AddTriple (56e93a24-547c-45c3-9cbe-b3ba1b5a980c)
+ Call ID: 56e93a24-547c-45c3-9cbe-b3ba1b5a980c
+  Args:
+    target: Prince Roland Bonaparte
+    source: Princess Marie Bonaparte
+    relation: :hasFather
+  AddTriple (a5d9a388-b0af-4a67-91e8-23adfbef08fe)
+ Call ID: a5d9a388-b0af-4a67-91e8-23adfbef08fe
+  Args:
+    target: Marie-Félix Blanc
     relation: :hasMother
-    source: Marie-Auguste_of_Anhalt
-    target: Luise_of_Saxe-Altenburg
-  AssignClass (bdd31e98-2850-4cd8-ac55-361565a262fe)
- Call ID: bdd31e98-2850-4cd8-ac55-361565a262fe
+    source: Princess Marie Bonaparte
+  AssignClass (a8f94810-722c-44bf-ad31-a652c43399dc)
+ Call ID: a8f94810-722c-44bf-ad31-a652c43399dc
   Args:
-    source: Moritz_of_Saxe-Altenburg
-    type: :Man
-  AssignClass (f199c4c2-0537-4d1a-b4e6-9b26c9e5031e)
- Call ID: f199c4c2-0537-4d1a-b4e6-9b26c9e5031e
+    source: Eugénie
+    type: :Woman
+  AssignClass (e3403ca2-9aba-4a2f-811d-975f963a4a8f)
+ Call ID: e3403ca2-9aba-4a2f-811d-975f963a4a8f
   Args:
+    source: Eugénie
     type: :Person
-    source: Moritz_of_Saxe-Altenburg
-  AddTriple (080e8508-bd9f-4608-8b08-2f9c322b75d1)
- Call ID: 080e8508-bd9f-4608-8b08-2f9c322b75d1
+  AddTriple (b3fe2451-f211-48ee-b452-aa75069ccacd)
+ Call ID: b3fe2451-f211-48ee-b452-aa75069ccacd
   Args:
+    target: Prince Peter of Greece and Denmark
+    source: Eugénie
+    relation: :isSisterOf
+  AddTriple (ec35c2e3-62ac-4c61-9a23-2586f3ae464b)
+ Call ID: ec35c2e3-62ac-4c61-9a23-2586f3ae464b
+  Args:
+    source: Eugénie
     relation: :hasFather
-    target: Moritz_of_Saxe-Altenburg
-    source: Luise_of_Saxe-Altenburg
-  AssignClass (ed8ebfa3-a19e-41cb-a1fd-229b2473a6fe)
- Call ID: ed8ebfa3-a19e-41cb-a1fd-229b2473a6fe
+    target: Prince George of Greece and Denmark
+  AddTriple (02daa502-dec9-412f-8471-46329abe11bc)
+ Call ID: 02daa502-dec9-412f-8471-46329abe11bc
   Args:
-    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
-    type: :Man
-  AssignClass (86bec0b6-f493-41a3-a8af-c2b2ac595239)
- Call ID: 86bec0b6-f493-41a3-a8af-c2b2ac595239
-  Args:
-    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
-    type: :Person
-  AddTriple (38811e06-e468-4dc8-bc84-3bee9c2e04e7)
- Call ID: 38811e06-e468-4dc8-bc84-3bee9c2e04e7
-  Args:
-    relation: :hasFather
-    target: Prince_Joachim_of_Prussia
-    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
-  AddTriple (a3017a75-3189-4929-aa13-414b35058d26)
- Call ID: a3017a75-3189-4929-aa13-414b35058d26
-  Args:
-    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
-    target: Marie-Auguste_of_Anhalt
+    target: Princess Marie Bonaparte
+    source: Eugénie
     relation: :hasMother
-  AssignClass (95d29c02-ca90-44a1-8781-b05c427040cb)
- Call ID: 95d29c02-ca90-44a1-8781-b05c427040cb
+  AssignClass (4626ee83-aca8-4ac2-8e0d-8860b6328d3f)
+ Call ID: 4626ee83-aca8-4ac2-8e0d-8860b6328d3f
   Args:
+    source: Irina Aleksandrovna Ovtchinnikova
     type: :Woman
-    source: Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath
-  AssignClass (52810fc7-d0ab-49fe-b9d6-a095ea1dcf4e)
- Call ID: 52810fc7-d0ab-49fe-b9d6-a095ea1dcf4e
+  AssignClass (15bc2519-0d24-4d4c-b0c4-c24605222a16)
+ Call ID: 15bc2519-0d24-4d4c-b0c4-c24605222a16
   Args:
+    source: Irina Aleksandrovna Ovtchinnikova
     type: :Person
-    source: Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath
-  AddTriple (8a53c12a-ed6c-40de-9d63-d7f95c0ad415)
- Call ID: 8a53c12a-ed6c-40de-9d63-d7f95c0ad415
+  AssignClass (e009d8ba-27b2-45d6-9f7f-0c458b3d8131)
+ Call ID: e009d8ba-27b2-45d6-9f7f-0c458b3d8131
   Args:
-    relation: :hasRelation
-    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
-    target: Henriette_Hermine_Wanda_Ida_Luise_von_Schönaich-Carolath
-  AssignClass (933000e3-cc76-44ac-abb2-7954f9c93481)
- Call ID: 933000e3-cc76-44ac-abb2-7954f9c93481
-  Args:
-    source: Luise_Dora_Hartmann
-    type: :Woman
-  AssignClass (3ccedb3a-b04a-4fbf-8073-e94e2d0b6d8b)
- Call ID: 3ccedb3a-b04a-4fbf-8073-e94e2d0b6d8b
-  Args:
-    type: :Person
-    source: Luise_Dora_Hartmann
-  AddTriple (e79b234e-ceee-4a77-b69b-3bae4f6ca0cb)
- Call ID: e79b234e-ceee-4a77-b69b-3bae4f6ca0cb
-  Args:
-    relation: :hasRelation
-    target: Luise_Dora_Hartmann
-    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
-  AssignClass (4e89463f-7a96-4da4-9adb-7958d76764d0)
- Call ID: 4e89463f-7a96-4da4-9adb-7958d76764d0
-  Args:
-    source: Eva_Maria_Herrera_y_Valdeavellano
-    type: :Woman
-  AssignClass (40999a8c-589a-4fe8-b976-3f82bd4fa88f)
- Call ID: 40999a8c-589a-4fe8-b976-3f82bd4fa88f
-  Args:
-    source: Eva_Maria_Herrera_y_Valdeavellano
-    type: :Person
-  AddTriple (86dbb902-4848-4069-8637-ded5dd9f659f)
- Call ID: 86dbb902-4848-4069-8637-ded5dd9f659f
-  Args:
-    relation: :hasRelation
-    target: Eva_Maria_Herrera_y_Valdeavellano
-    source: Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia
-  AssignClass (1f913cbe-dc03-4f88-8cc5-02ae1e1a7c16)
- Call ID: 1f913cbe-dc03-4f88-8cc5-02ae1e1a7c16
-  Args:
+    source: Jehan de Monléon
     type: :Man
-    source: Eitel_Friedrich_of_Prussia
-  AssignClass (f60042ea-ebfb-42c0-92dd-2c8c7345d7e2)
- Call ID: f60042ea-ebfb-42c0-92dd-2c8c7345d7e2
+  AssignClass (650519b1-f578-477a-afe8-24a2792b767e)
+ Call ID: 650519b1-f578-477a-afe8-24a2792b767e
   Args:
-    source: Eitel_Friedrich_of_Prussia
+    source: Jehan de Monléon
     type: :Person
-  AddTriple (abfe119b-48d2-4e0b-a997-9f9500f70b97)
- Call ID: abfe119b-48d2-4e0b-a997-9f9500f70b97
+  AssignClass (a119dadc-69f6-4313-98e7-2b96a69f0452)
+ Call ID: a119dadc-69f6-4313-98e7-2b96a69f0452
   Args:
-    source: Prince_Joachim_of_Prussia
-    target: Eitel_Friedrich_of_Prussia
-    relation: :isBrotherOf
-  Finish (8376b4a7-31a1-41bb-9968-5aaaca66e47a)
- Call ID: 8376b4a7-31a1-41bb-9968-5aaaca66e47a
+    source: Lewis (Slodon) Sloden
+    type: :Man
+  AssignClass (9f1c0a46-52fe-403e-be7a-ba07f1dbda85)
+ Call ID: 9f1c0a46-52fe-403e-be7a-ba07f1dbda85
+  Args:
+    source: Lewis (Slodon) Sloden
+    type: :Person
+  AssignClass (1338d9d3-1392-4ee4-ad58-a407fa28abe4)
+ Call ID: 1338d9d3-1392-4ee4-ad58-a407fa28abe4
+  Args:
+    source: Princess Tatiana Radziwill
+    type: :Woman
+  AssignClass (261859a2-a0e0-44c3-a8f4-598b8db32f55)
+ Call ID: 261859a2-a0e0-44c3-a8f4-598b8db32f55
+  Args:
+    source: Princess Tatiana Radziwill
+    type: :Person
+  AssignClass (cc1b1863-e157-409c-b0c9-6b894264fe39)
+ Call ID: cc1b1863-e157-409c-b0c9-6b894264fe39
+  Args:
+    source: King George II
+    type: :Man
+  AssignClass (902af1be-357a-4b57-b411-011c8524951e)
+ Call ID: 902af1be-357a-4b57-b411-011c8524951e
+  Args:
+    source: King George II
+    type: :Person
+  AssignClass (c7d5e6aa-0c48-49b4-b3a0-2d0a435708cd)
+ Call ID: c7d5e6aa-0c48-49b4-b3a0-2d0a435708cd
+  Args:
+    source: King Constantine I
+    type: :Man
+  AssignClass (c818948d-22ca-4f99-8d78-6fc2b8b7f216)
+ Call ID: c818948d-22ca-4f99-8d78-6fc2b8b7f216
+  Args:
+    source: King Constantine I
+    type: :Person
+  AssignClass (3bfb54fa-4d99-43b0-927f-ca957a6cb1ee)
+ Call ID: 3bfb54fa-4d99-43b0-927f-ca957a6cb1ee
+  Args:
+    source: Olga
+    type: :Woman
+  AssignClass (ef5c4b74-43ce-4760-bf69-bf2bfe919ac5)
+ Call ID: ef5c4b74-43ce-4760-bf69-bf2bfe919ac5
+  Args:
+    source: Olga
+    type: :Person
+  AssignClass (464b7ca4-c716-45b3-8102-d98d25c74f1d)
+ Call ID: 464b7ca4-c716-45b3-8102-d98d25c74f1d
+  Args:
+    source: Sophia
+    type: :Woman
+  AssignClass (e3f4c416-69f4-43f3-bbbd-ced6fa3955df)
+ Call ID: e3f4c416-69f4-43f3-bbbd-ced6fa3955df
+  Args:
+    source: Sophia
+    type: :Person
+  AssignClass (a00149f7-7d14-4921-a11b-87cf764a73ec)
+ Call ID: a00149f7-7d14-4921-a11b-87cf764a73ec
+  Args:
+    source: Princess Frederica of Hanover
+    type: :Woman
+  AssignClass (ec31e5ad-4db2-41e3-8e38-f744692b959b)
+ Call ID: ec31e5ad-4db2-41e3-8e38-f744692b959b
+  Args:
+    source: Princess Frederica of Hanover
+    type: :Person
+  AssignClass (af64f2c5-c803-4d5d-994b-d2ee85e774c2)
+ Call ID: af64f2c5-c803-4d5d-994b-d2ee85e774c2
+  Args:
+    source: Prince Paul
+    type: :Man
+  AssignClass (05709649-e36e-4537-bfe4-d476a5a9da2c)
+ Call ID: 05709649-e36e-4537-bfe4-d476a5a9da2c
+  Args:
+    source: Prince Paul
+    type: :Person
+  AssignClass (08420958-809b-4049-8890-160fb1e544c9)
+ Call ID: 08420958-809b-4049-8890-160fb1e544c9
+  Args:
+    source: Prince Valdemar of Denmark
+    type: :Man
+  AssignClass (2c71c627-9c0c-4db2-a995-9a85044bedda)
+ Call ID: 2c71c627-9c0c-4db2-a995-9a85044bedda
+  Args:
+    source: Prince Valdemar of Denmark
+    type: :Person
+  AssignClass (9de5892f-854a-4ebd-b1b1-729563133b1a)
+ Call ID: 9de5892f-854a-4ebd-b1b1-729563133b1a
+  Args:
+    source: Prince Axel of Denmark
+    type: :Man
+  AssignClass (36464f1c-0409-4109-8cab-236071370b27)
+ Call ID: 36464f1c-0409-4109-8cab-236071370b27
+  Args:
+    source: Prince Axel of Denmark
+    type: :Person
+  AddTriple (6453d9af-bed5-4d13-bc52-821f13eb8e89)
+ Call ID: 6453d9af-bed5-4d13-bc52-821f13eb8e89
+  Args:
+    target: Prince Valdemar of Denmark
+    source: Prince Axel of Denmark
+    relation: :hasFather
+  AssignClass (50b9d0cb-541b-45d9-bdc8-c84da98b4221)
+ Call ID: 50b9d0cb-541b-45d9-bdc8-c84da98b4221
+  Args:
+    source: King Constantine II
+    type: :Man
+  AssignClass (57a8bee3-c16e-4172-8913-9a2f6ffa09b4)
+ Call ID: 57a8bee3-c16e-4172-8913-9a2f6ffa09b4
+  Args:
+    source: King Constantine II
+    type: :Person
+  AddTriple (fdef1659-e60f-4354-b9fa-ad7a8b4f0525)
+ Call ID: fdef1659-e60f-4354-b9fa-ad7a8b4f0525
+  Args:
+    target: Prince Paul
+    relation: :hasFather
+    source: King Constantine II
+  AssignClass (22a2634b-2b6a-4c8d-8f0e-efe3dfc4e959)
+ Call ID: 22a2634b-2b6a-4c8d-8f0e-efe3dfc4e959
+  Args:
+    source: Princess Irene
+    type: :Woman
+  AssignClass (7e6c3d10-ff0a-457f-9f2c-54d3f773510e)
+ Call ID: 7e6c3d10-ff0a-457f-9f2c-54d3f773510e
+  Args:
+    source: Princess Irene
+    type: :Person
+  AddTriple (421b4850-3662-4613-a7c8-0b130fd88bb6)
+ Call ID: 421b4850-3662-4613-a7c8-0b130fd88bb6
+  Args:
+    source: Princess Irene
+    relation: :hasFather
+    target: Prince Paul
+  AssignClass (1c961675-1b63-4014-abc2-99d11d5329ea)
+ Call ID: 1c961675-1b63-4014-abc2-99d11d5329ea
+  Args:
+    source: Princess Sophia
+    type: :Woman
+  AssignClass (3d73d884-acb3-4c5f-83bc-4e8dd91fda23)
+ Call ID: 3d73d884-acb3-4c5f-83bc-4e8dd91fda23
+  Args:
+    source: Princess Sophia
+    type: :Person
+  AddTriple (32c6b0ed-d85d-4724-a5c0-2a9999c2f631)
+ Call ID: 32c6b0ed-d85d-4724-a5c0-2a9999c2f631
+  Args:
+    target: Prince Paul
+    relation: :hasFather
+    source: Princess Sophia
+  AssignClass (aaa618aa-3f8f-4510-a841-3cb3b52bd9ee)
+ Call ID: aaa618aa-3f8f-4510-a841-3cb3b52bd9ee
+  Args:
+    source: Princess Anne-Marie of Denmark
+    type: :Woman
+  AssignClass (537a572b-e222-49ba-85c2-188a77341323)
+ Call ID: 537a572b-e222-49ba-85c2-188a77341323
+  Args:
+    source: Princess Anne-Marie of Denmark
+    type: :Person
+  AssignClass (52895c27-718d-4f31-bc71-92cbb96c5aae)
+ Call ID: 52895c27-718d-4f31-bc71-92cbb96c5aae
+  Args:
+    source: Princess Alexia
+    type: :Woman
+  AssignClass (c17e773d-09e9-48db-aec0-caf7279a7960)
+ Call ID: c17e773d-09e9-48db-aec0-caf7279a7960
+  Args:
+    source: Princess Alexia
+    type: :Person
+  AddTriple (2ae78636-6e9a-4a22-a102-96dcf1fccd0d)
+ Call ID: 2ae78636-6e9a-4a22-a102-96dcf1fccd0d
+  Args:
+    target: King Constantine II
+    relation: :hasFather
+    source: Princess Alexia
+  AddTriple (c3e6fbe3-18e8-49a0-a606-32bce3d1c6cf)
+ Call ID: c3e6fbe3-18e8-49a0-a606-32bce3d1c6cf
+  Args:
+    target: Princess Anne-Marie of Denmark
+    relation: :hasMother
+    source: Princess Alexia
+  Finish (6bf5e014-825e-491c-9054-17677bdbe628)
+ Call ID: 6bf5e014-825e-491c-9054-17677bdbe628
   Args:

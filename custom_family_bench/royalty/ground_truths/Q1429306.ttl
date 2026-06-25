@@ -7,187 +7,60 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Princess_Isabella_of_Denmark a :Person ;
+    rdfs:label "Princess Isabella of Denmark" ;
+    data:posIndicesFull "1514:1549",
+        "21:49",
+        "21:71",
+        "4762:4790",
+        "4855:4883",
+        "4855:4905",
+        "77:112" ;
+    data:posIndicesPart "1306:1313",
+        "1769:1777",
+        "1799:1806",
+        "1936:1944",
+        "2178:2186",
+        "2204:2212",
+        "2329:2337",
+        "2448:2456",
+        "2707:2714",
+        "2753:2761",
+        "2906:2914",
+        "3166:3174",
+        "3345:3353",
+        "347:355",
+        "3740:3748",
+        "3833:3841",
+        "3939:3947",
+        "4157:4165",
+        "489:497",
+        "649:657",
+        "678:686",
+        "701:709" ;
+    data:wdtLink wdt:Q1429306 ;
+    :alsoKnownAs "Isabella Henrietta Ingrid Margrethe",
+        "Isabella Henrietta Ingrid Margrethe, Princess of Denmark",
+        "Princess Isabella Henrietta Ingrid Margrethe of Denmark, Countess of Monpezat",
+        "Princess Isabella of Denmark, Countess of Monpezat" ;
+    :hasParent data:Frederik_X_of_Denmark ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Count_Felix_of_Monpezat a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Count Felix of Monpezat" ;
-    data:posIndicesFull "4638:4661" ;
-    data:wdtLink wdt:Q1004751 ;
-    :alsoKnownAs "Count Felix Henrik Valdemar Christian of Monpezat",
-        "Felix Henrik Valdemar Christian",
-        "Felix Henrik Valdemar Christian of Monpezat",
-        "Felix Henrik Valdemar Christian, Prince of Denmark",
-        "Prince Felix Henrik Valdemar Christian of Denmark",
-        "Prince Felix Henrik Valdemar Christian of Denmark, Count of Monpezat",
-        "Prince Felix of Denmark",
-        "Prince Felix of Denmark, Count of Monpezat" ;
-    :hasSex data:male .
-
-data:Henrik-_Prince_Consort_of_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Henrik, Prince Consort of Denmark" ;
-    data:posIndicesFull "1311:1315",
-        "2181:2187",
-        "339:345" ;
-    data:posIndicesPart "1057:1063",
-        "1435:1442",
-        "1703:1710",
-        "1928:1935",
-        "2406:2412",
-        "2836:2843",
-        "4757:4763",
-        "574:580",
-        "752:758" ;
-    data:wdtLink wdt:Q1389258 ;
-    :alsoKnownAs "Enric de Monpezat",
-        "Henri Marie Jean Andre de Laborde de Monpezat",
-        "Henri Marie Jean André de Laborde de Monpezat",
-        "Henri Marie Jean André de Laborde de Monpezat, Comte de Laborde de Monpezat",
-        "Henri de Monpezat",
-        "Henrik",
-        "Prince Henrik of Denmark" ;
-    :hasChild data:Frederik_X_of_Denmark ;
-    :hasSex data:male ;
-    :hasSon data:Frederik_X_of_Denmark ;
-    :isFatherOf data:Frederik_X_of_Denmark ;
-    :isParentOf data:Frederik_X_of_Denmark .
-
-data:Princess_Isabella_of_Denmark a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Isabella of Denmark" ;
-    data:posIndicesFull "1643:1678",
-        "21:49",
-        "21:71",
-        "4891:4919",
-        "4984:5012",
-        "4984:5034",
-        "77:112" ;
-    data:posIndicesPart "1435:1442",
-        "1898:1906",
-        "1928:1935",
-        "2065:2073",
-        "2307:2315",
-        "2333:2341",
-        "2458:2466",
-        "2577:2585",
-        "2836:2843",
-        "2882:2890",
-        "3035:3043",
-        "3295:3303",
-        "3474:3482",
-        "3869:3877",
-        "3962:3970",
-        "4068:4076",
-        "4286:4294",
-        "476:484",
-        "618:626",
-        "778:786",
-        "807:815",
-        "830:838" ;
-    data:wdtLink wdt:Q1429306 ;
-    :alsoKnownAs "Isabella Henrietta Ingrid Margrethe",
-        "Isabella Henrietta Ingrid Margrethe, Princess of Denmark",
-        "Princess Isabella Henrietta Ingrid Margrethe of Denmark, Countess of Monpezat",
-        "Princess Isabella of Denmark, Countess of Monpezat" ;
-    :hasFather data:Frederik_X_of_Denmark ;
-    :hasParent data:Frederik_X_of_Denmark ;
-    :hasSex data:female ;
-    :isChildOf data:Frederik_X_of_Denmark ;
-    :isDaughterOf data:Frederik_X_of_Denmark .
-
-data:Princess_Benedikte_of_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Benedikte of Denmark" ;
-    data:posIndicesFull "4680:4709" ;
-    data:wdtLink wdt:Q817052 ;
-    :alsoKnownAs "Benedikte Astrid Ingeborg Ingrid",
-        "Benedikte Astrid Ingeborg Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
-        "Princess Benedikte of Denmark, Princess of Sayn-Wittgenstein-Berleburg" ;
-    :hasSex data:female ;
-    :hasSister data:Margrethe_II_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isAuntOf data:Frederik_X_of_Denmark ;
-    :isSiblingOf data:Margrethe_II_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isSisterOf data:Margrethe_II_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece .
-
-data:Queen_Anne-Marie_of_Greece a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Anne-Marie of Greece" ;
-    data:posIndicesFull "439:465",
-        "4714:4740" ;
-    data:posIndicesPart "1697:1702",
-        "1917:1923",
-        "1937:1942",
-        "2045:2050",
-        "3601:3606",
-        "3741:3746" ;
-    data:wdtLink wdt:Q564889 ;
-    :alsoKnownAs "Anne Marie Dagmar Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
-        "Anne-Marie Dagmar Ingrid",
-        "Anne-Marie of the Hellenes (née Princess Anne-Marie of Denmark)",
-        "Princess Anne-Marie of Denmark" ;
-    :hasSex data:female ;
-    :hasSister data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark ;
-    :isAuntOf data:Frederik_X_of_Denmark ;
-    :isSiblingOf data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark ;
-    :isSisterOf data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark .
-
-data:Margrethe_II_of_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Margrethe II of Denmark" ;
-    data:posIndicesFull "315:327",
-        "3607:3619",
-        "4593:4605",
-        "6:18" ;
-    data:posIndicesPart "1435:1442",
-        "1928:1935",
-        "2836:2843" ;
-    data:wdtLink wdt:Q102139 ;
-    :alsoKnownAs "Ingahild Grathmer",
-        "Margrethe II" ;
-    :hasChild data:Frederik_X_of_Denmark ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :hasSon data:Frederik_X_of_Denmark ;
-    :isMotherOf data:Frederik_X_of_Denmark ;
-    :isParentOf data:Frederik_X_of_Denmark ;
-    :isSiblingOf data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isSisterOf data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece .
-
-data:Frederik_X_of_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Frederik_X_of_Denmark a :Person ;
     rdfs:label "Frederik X of Denmark" ;
     data:posIndicesFull "225:235" ;
-    data:posIndicesPart "1435:1442",
-        "1928:1935",
-        "2836:2843",
-        "3386:3394",
-        "759:767" ;
+    data:posIndicesPart "1306:1313",
+        "1799:1806",
+        "2707:2714",
+        "3257:3265",
+        "4573:4580",
+        "630:638" ;
     data:wdtLink wdt:Q1004037 ;
     :alsoKnownAs "Frederik André Henrik Christian",
         "Frederik André Henrik Christian of Denmark",
@@ -196,18 +69,50 @@ data:Frederik_X_of_Denmark a :Ancestor,
         "Frederik X",
         "Frederik of Denmark",
         "Frederik of Denmark, Count of Monpezat" ;
-    :hasChild data:Princess_Isabella_of_Denmark ;
-    :hasDaughter data:Princess_Isabella_of_Denmark ;
-    :hasFather data:Henrik-_Prince_Consort_of_Denmark ;
-    :hasMother data:Margrethe_II_of_Denmark ;
     :hasParent data:Henrik-_Prince_Consort_of_Denmark,
         data:Margrethe_II_of_Denmark ;
-    :hasSex data:male ;
-    :isChildOf data:Henrik-_Prince_Consort_of_Denmark,
-        data:Margrethe_II_of_Denmark ;
-    :isFatherOf data:Princess_Isabella_of_Denmark ;
-    :isParentOf data:Princess_Isabella_of_Denmark ;
-    :isSonOf data:Henrik-_Prince_Consort_of_Denmark,
-        data:Margrethe_II_of_Denmark ;
-    :isUncleOf data:Count_Felix_of_Monpezat .
+    :hasSex data:male .
+
+data:Henrik-_Prince_Consort_of_Denmark a :Person ;
+    rdfs:label "Henrik, Prince Consort of Denmark" ;
+    data:posIndicesFull "1182:1186",
+        "2052:2058",
+        "339:345" ;
+    data:posIndicesPart "1306:1313",
+        "1574:1581",
+        "1799:1806",
+        "2277:2283",
+        "2707:2714",
+        "445:451",
+        "4573:4580",
+        "4628:4634",
+        "623:629",
+        "928:934" ;
+    data:wdtLink wdt:Q1389258 ;
+    :alsoKnownAs "Enric de Monpezat",
+        "Henri Marie Jean Andre de Laborde de Monpezat",
+        "Henri Marie Jean André de Laborde de Monpezat",
+        "Henri Marie Jean André de Laborde de Monpezat, Comte de Laborde de Monpezat",
+        "Henri de Monpezat",
+        "Henrik",
+        "Prince Henrik of Denmark" ;
+    :hasSex data:male .
+
+data:Margrethe_II_of_Denmark a :Person ;
+    rdfs:label "Margrethe II of Denmark" ;
+    data:posIndicesFull "315:327",
+        "3478:3490",
+        "4464:4476",
+        "6:18" ;
+    data:posIndicesPart "1306:1313",
+        "1799:1806",
+        "2707:2714" ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer",
+        "Margrethe II" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

@@ -2,39 +2,62 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Louis_Prince_Napoleon a :Ancestor,
-        :Man,
+data:GeorgeWilliam a :Man,
         :Person ;
-    :hasDeathYear 1997 ;
-    :isFatherOf data:Charles_Napoleon .
+    :hasBirthYear 1915 ;
+    :hasChild data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :hasDeathYear 2006 ;
+    :hasFather data:ErnestAugustus ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:VictoriaLouise ;
+    :hasRelation data:Sophie ;
+    :hasSister data:Frederica .
 
-data:Olympia a :Ancestor,
+data:AliceOfBattenberg a :Ancestor,
         :Person,
-        :Woman ;
-    :isMotherOf data:Louis_Charles_Riprand_Victor_Jerome_Marie_Napoleon .
+        :Woman .
 
-data:Beatrice_of_Bourbon-Two_Sicilies a :Ancestor,
+data:AugustaVictoria a :Ancestor,
         :Person,
-        :Woman ;
-    :hasFather data:Ferdinand_of_Bourbon_Duke_of_Castro .
+        :Woman .
 
-data:Ferdinand_of_Bourbon_Duke_of_Castro a :Ancestor,
+data:ErnestAugustus a :Ancestor,
         :Man,
         :Person .
 
-data:Jean-Christophe_Napoleon_Bonaparte a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1986 ;
-    :hasFather data:Charles_Napoleon ;
-    :hasMother data:Beatrice_of_Bourbon-Two_Sicilies .
+data:Frederica a :Person,
+        :Woman .
 
-data:Louis_Charles_Riprand_Victor_Jerome_Marie_Napoleon a :Man,
-        :Person ;
-    :hasBirthYear 2022 ;
-    :isSonOf data:Jean-Christophe_Napoleon_Bonaparte .
-
-data:Charles_Napoleon a :Ancestor,
+data:PrinceAndrew a :Ancestor,
         :Man,
+        :Person .
+
+data:Sophie a :Person,
+        :Woman ;
+    :hasChild data:Friederike,
+        data:GeorgChild,
+        data:Welf ;
+    :hasFather data:PrinceAndrew ;
+    :hasMother data:AliceOfBattenberg .
+
+data:VictoriaLouise a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:WilhelmII ;
+    :hasMother data:AugustaVictoria .
+
+data:WilhelmII a :Ancestor,
+        :Man,
+        :Person .
+
+data:Friederike a :Person,
+        :Woman .
+
+data:GeorgChild a :Man,
+        :Person .
+
+data:Welf a :Man,
         :Person .
 

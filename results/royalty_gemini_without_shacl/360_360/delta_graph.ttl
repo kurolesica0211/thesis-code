@@ -2,35 +2,59 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alessandro_Torlonia a :Man ;
-    :hasBirthYear 1911 ;
-    :hasDeathYear 1986 ;
-    :hasFather data:Marino_Torlonia ;
-    :hasMarriageYear 1935 ;
-    :hasMother data:Mary_Elsie_Moore ;
-    :hasRelation data:Beatriz_of_Spain ;
-    :hasSister data:Marina_Torlonia .
+data:Prince_Franz_Wilhelm a :Man,
+        :Person ;
+    :hasRelation data:Maria_Vladimirovna_of_Russia .
 
-data:Alessandro_Torlonia_Cousin a :Man ;
-    :hasBirthYear 1925 ;
-    :hasDeathYear 2017 .
+data:Prince_Karl_Franz_Josef_Wilhelm_Friedrich_Eduard_Paul_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1916 ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Prince_Joachim_of_Prussia ;
+    :hasMother data:Princess_Marie-Auguste_of_Anhalt ;
+    :hasRelation data:Eva_Maria_Herrera_y_Valdeavellano,
+        data:Luise_Dora_Hartmann,
+        data:Princess_Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich-Carolath .
 
-data:Alfonso_XIII_of_Spain a :Man .
+data:Augusta_Victoria_of_Schleswig-Holstein a :Person,
+        :Woman .
 
-data:Beatriz_of_Spain a :Woman ;
-    :hasBirthYear 1909 ;
-    :hasDeathYear 2002 ;
-    :hasFather data:Alfonso_XIII_of_Spain ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg .
+data:Eduard_Duke_of_Anhalt a :Man,
+        :Person .
 
-data:Brooke_Shields a :Woman .
+data:Eva_Maria_Herrera_y_Valdeavellano a :Person,
+        :Woman .
 
-data:Marina_Torlonia a :Woman ;
-    :isMotherOf data:Brooke_Shields .
+data:Luise_Dora_Hartmann a :Person,
+        :Woman .
 
-data:Marino_Torlonia a :Man .
+data:Maria_Vladimirovna_of_Russia a :Person,
+        :Woman .
 
-data:Mary_Elsie_Moore a :Woman .
+data:Prince_Joachim_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Wilhelm_II_German_Emperor ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasRelation data:Princess_Marie-Auguste_of_Anhalt .
 
-data:Victoria_Eugenie_of_Battenberg a :Woman .
+data:Prince_Moritz_of_Saxe-Altenburg a :Man,
+        :Person .
+
+data:Princess_Henriette_Hermine_Wanda_Ida_Luise_von_Sch%C3%B6naich-Carolath a :Person,
+        :Woman .
+
+data:Princess_Luise_of_Saxe-Altenburg a :Person,
+        :Woman ;
+    :hasFather data:Prince_Moritz_of_Saxe-Altenburg .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person .
+
+data:Princess_Marie-Auguste_of_Anhalt a :Person,
+        :Woman ;
+    :hasFather data:Eduard_Duke_of_Anhalt ;
+    :hasMother data:Princess_Luise_of_Saxe-Altenburg .
 

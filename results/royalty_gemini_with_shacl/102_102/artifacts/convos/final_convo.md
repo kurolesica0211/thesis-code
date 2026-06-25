@@ -110,6 +110,8 @@ Princess Alexandra worked for UNESCO
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -125,39 +127,9 @@ Princess Alexandra worked for UNESCO
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -172,6 +144,23 @@ Princess Alexandra worked for UNESCO
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -189,6 +178,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -256,29 +260,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -287,6 +283,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -299,6 +303,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -307,17 +313,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -345,6 +353,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -360,148 +452,196 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5ff66a3f-003b-4d7c-b514-f26581f8e3db)
- Call ID: 5ff66a3f-003b-4d7c-b514-f26581f8e3db
+  AssignClass (92edbb82-70ea-4320-b14d-7308bf169cec)
+ Call ID: 92edbb82-70ea-4320-b14d-7308bf169cec
   Args:
-    source: PrincessAlexandra
     type: :Woman
-  AssignClass (4657e11a-e3fb-4b6c-b2ba-32e5e86367fd)
- Call ID: 4657e11a-e3fb-4b6c-b2ba-32e5e86367fd
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
+  AssignClass (4d1b2f75-b8d1-42d6-9cd2-cf4acc44ad31)
+ Call ID: 4d1b2f75-b8d1-42d6-9cd2-cf4acc44ad31
   Args:
-    type: :Person
-    source: PrincessAlexandra
-  AssignClass (dd6d579c-b34f-4777-9364-175899f69108)
- Call ID: dd6d579c-b34f-4777-9364-175899f69108
-  Args:
-    source: PrinceRichard
+    source: Prince_Richard_of_Sayn-Wittgenstein-Berleburg
     type: :Man
-  AssignClass (7f500f4e-a7aa-4689-a6b3-324dc121ca12)
- Call ID: 7f500f4e-a7aa-4689-a6b3-324dc121ca12
+  AssignClass (5a461d37-d5bc-4a62-b651-05f34d999587)
+ Call ID: 5a461d37-d5bc-4a62-b651-05f34d999587
   Args:
-    type: :Person
-    source: PrinceRichard
-  AssignClass (6b837ffd-0290-458c-a5a8-ddeb862801e8)
- Call ID: 6b837ffd-0290-458c-a5a8-ddeb862801e8
-  Args:
-    source: PrincessBenedikte
+    source: Princess_Benedikte_of_Denmark
     type: :Woman
-  AssignClass (e43358ff-6869-4f85-8ae6-6ca24da7b0d4)
- Call ID: e43358ff-6869-4f85-8ae6-6ca24da7b0d4
+  AssignClass (38c18e49-9954-433e-85f4-2f7c9dd41d42)
+ Call ID: 38c18e49-9954-433e-85f4-2f7c9dd41d42
   Args:
-    type: :Person
-    source: PrincessBenedikte
-  AddTriple (2097e50d-0772-4041-8dd9-c2a4e023b6a1)
- Call ID: 2097e50d-0772-4041-8dd9-c2a4e023b6a1
+    type: :Woman
+    source: Margrethe_II
+  AssignClass (95a91c32-e1ef-4d88-851f-5e0169d9cc02)
+ Call ID: 95a91c32-e1ef-4d88-851f-5e0169d9cc02
   Args:
-    target: PrinceRichard
-    relation: :hasFather
-    source: PrincessAlexandra
-  AddTriple (9e7f7401-574a-4c55-87e1-6a5303d4384d)
- Call ID: 9e7f7401-574a-4c55-87e1-6a5303d4384d
+    type: :Woman
+    source: Anne-Marie_of_Greece
+  AssignClass (e0ef6619-5e9e-4c5d-a5ee-4fedee85ab51)
+ Call ID: e0ef6619-5e9e-4c5d-a5ee-4fedee85ab51
   Args:
-    target: PrincessBenedikte
-    source: PrincessAlexandra
-    relation: :hasMother
-  AddLiteral (0acafaf3-9da9-4002-98ea-da14c81c839c)
- Call ID: 0acafaf3-9da9-4002-98ea-da14c81c839c
+    type: :Man
+    source: King_Frederik_X_of_Denmark
+  AssignClass (23c64d6a-5096-47a6-bb20-872d9be4e158)
+ Call ID: 23c64d6a-5096-47a6-bb20-872d9be4e158
+  Args:
+    source: Prince_Gustav
+    type: :Man
+  AssignClass (12263edf-e1ad-459f-aca1-07c73ac684e5)
+ Call ID: 12263edf-e1ad-459f-aca1-07c73ac684e5
+  Args:
+    type: :Woman
+    source: Princess_Nathalie
+  AssignClass (61c4205e-5ea0-426c-be3e-dc2965fdc53a)
+ Call ID: 61c4205e-5ea0-426c-be3e-dc2965fdc53a
+  Args:
+    type: :Man
+    source: Count_Jefferson_von_Pfeil_und_Klein-Ellguth
+  AssignClass (1ede9e31-0537-43a7-8f23-65104008d304)
+ Call ID: 1ede9e31-0537-43a7-8f23-65104008d304
+  Args:
+    source: Count_Michael_of_Ahlefeldt-Laurvig-Bille
+    type: :Man
+  AssignClass (49053afa-caba-4903-a01d-44f4d7bc7099)
+ Call ID: 49053afa-caba-4903-a01d-44f4d7bc7099
+  Args:
+    type: :Woman
+    source: Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille
+  AssignClass (96ecd043-f975-4ea2-b830-d98895e9612e)
+ Call ID: 96ecd043-f975-4ea2-b830-d98895e9612e
+  Args:
+    source: Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard
+    type: :Man
+  AssignClass (0e32bfd9-b7ff-40ce-9954-79dd9e81c2e8)
+ Call ID: 0e32bfd9-b7ff-40ce-9954-79dd9e81c2e8
+  Args:
+    source: Leopold_III_Duke_of_Anhalt-Dessau
+    type: :Man
+  AssignClass (077fd1c7-839c-4130-908e-65e3a1c2a88c)
+ Call ID: 077fd1c7-839c-4130-908e-65e3a1c2a88c
+  Args:
+    type: :Man
+    source: King_Frederik_IX
+  AssignClass (cebda6d4-1499-4327-95d8-0853648b9c2a)
+ Call ID: cebda6d4-1499-4327-95d8-0853648b9c2a
+  Args:
+    source: Prince_Erik_of_Denmark
+    type: :Man
+  AssignClass (eff644d8-56c1-46d2-a063-dca3c270e838)
+ Call ID: eff644d8-56c1-46d2-a063-dca3c270e838
+  Args:
+    type: :Man
+    source: Count_Michael_Preben
+  AddLiteral (a8e082f5-3b77-4e93-91b6-af4a1f692b34)
+ Call ID: a8e082f5-3b77-4e93-91b6-af4a1f692b34
   Args:
     literal_value: 1970
     relation: :hasBirthYear
-    source: PrincessAlexandra
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
     literal_type: xsd:integer
-  AssignClass (8025754c-ff8b-4104-b5bb-9dd66515ece1)
- Call ID: 8025754c-ff8b-4104-b5bb-9dd66515ece1
+  AddTriple (dd31c630-eb69-4291-8ec5-0326eca5481c)
+ Call ID: dd31c630-eb69-4291-8ec5-0326eca5481c
   Args:
-    source: PrinceGustav
-    type: :Man
-  AssignClass (3ab50248-b8ad-4040-9a5a-a01db40454c4)
- Call ID: 3ab50248-b8ad-4040-9a5a-a01db40454c4
-  Args:
-    source: PrinceGustav
-    type: :Person
-  AssignClass (7b680d37-df1e-4426-aad5-3ce285280e82)
- Call ID: 7b680d37-df1e-4426-aad5-3ce285280e82
-  Args:
-    type: :Woman
-    source: PrincessNathalie
-  AssignClass (538153f0-08ed-42cd-b170-a40cbf70522b)
- Call ID: 538153f0-08ed-42cd-b170-a40cbf70522b
-  Args:
-    source: PrincessNathalie
-    type: :Person
-  AddTriple (3d0d30cf-9af8-415a-959b-8fcdd06ad7e9)
- Call ID: 3d0d30cf-9af8-415a-959b-8fcdd06ad7e9
-  Args:
-    target: PrinceRichard
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
+    target: Prince_Richard_of_Sayn-Wittgenstein-Berleburg
     relation: :hasFather
-    source: PrinceGustav
-  AddTriple (25f49586-7141-4ac7-8abe-2f7f0f2ce743)
- Call ID: 25f49586-7141-4ac7-8abe-2f7f0f2ce743
+  AddTriple (70e20d18-fef2-4eff-a5cd-af3e12f23381)
+ Call ID: 70e20d18-fef2-4eff-a5cd-af3e12f23381
   Args:
-    source: PrinceGustav
+    target: Princess_Benedikte_of_Denmark
     relation: :hasMother
-    target: PrincessBenedikte
-  AddTriple (8961df82-14f2-4deb-849c-76dd8ab76a32)
- Call ID: 8961df82-14f2-4deb-849c-76dd8ab76a32
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
+  AddTriple (65355e3c-cd36-4a66-9905-190d5fa09076)
+ Call ID: 65355e3c-cd36-4a66-9905-190d5fa09076
   Args:
-    relation: :hasFather
-    source: PrincessNathalie
-    target: PrinceRichard
-  AddTriple (1365986b-9387-4d6a-9a0f-b4ac1a670526)
- Call ID: 1365986b-9387-4d6a-9a0f-b4ac1a670526
+    relation: :isSisterOf
+    target: Margrethe_II
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
+  AddTriple (cfc60c03-8b12-465e-a5a6-fbaa97351928)
+ Call ID: cfc60c03-8b12-465e-a5a6-fbaa97351928
   Args:
-    target: PrincessBenedikte
-    source: PrincessNathalie
-    relation: :hasMother
-  AssignClass (04331261-4078-41c6-810c-86b39fcc3bce)
- Call ID: 04331261-4078-41c6-810c-86b39fcc3bce
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
+    target: Anne-Marie_of_Greece
+    relation: :isSisterOf
+  AddTriple (1d02b873-ba0b-4c4d-b406-a0d32d2d217d)
+ Call ID: 1d02b873-ba0b-4c4d-b406-a0d32d2d217d
   Args:
-    type: :Man
-    source: CountJefferson
-  AssignClass (eb0752cb-bd87-4bdd-a688-4355b9a65446)
- Call ID: eb0752cb-bd87-4bdd-a688-4355b9a65446
+    relation: :hasChild
+    target: Prince_Gustav
+    source: Princess_Benedikte_of_Denmark
+  AddTriple (880a43ae-3b07-46dc-935f-bbfc64e6518c)
+ Call ID: 880a43ae-3b07-46dc-935f-bbfc64e6518c
   Args:
-    source: CountJefferson
-    type: :Person
-  AddLiteral (07c31fe7-61e6-4a2b-ba24-c287c4a7a303)
- Call ID: 07c31fe7-61e6-4a2b-ba24-c287c4a7a303
+    target: Princess_Nathalie
+    relation: :hasChild
+    source: Princess_Benedikte_of_Denmark
+  AddTriple (a8d39d11-488b-474a-8637-d9c728ddb49e)
+ Call ID: a8d39d11-488b-474a-8637-d9c728ddb49e
   Args:
-    literal_type: xsd:integer
-    source: PrincessAlexandra
-    relation: :hasMarriageYear
+    relation: :hasChild
+    target: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
+    source: Princess_Benedikte_of_Denmark
+  AddLiteral (061ef7a6-8364-4cf8-a60f-827927300679)
+ Call ID: 061ef7a6-8364-4cf8-a60f-827927300679
+  Args:
     literal_value: 1998
-  AddTriple (665d64e6-04c4-4455-9c78-36d8b54eb226)
- Call ID: 665d64e6-04c4-4455-9c78-36d8b54eb226
-  Args:
-    source: PrincessAlexandra
-    relation: :hasRelation
-    target: CountJefferson
-  AssignClass (c810f10d-26a5-46c1-b984-8321b71ea257)
- Call ID: c810f10d-26a5-46c1-b984-8321b71ea257
-  Args:
-    source: CountMichael
-    type: :Man
-  AssignClass (492a1197-d98a-4025-a4cc-c3c39c9533e0)
- Call ID: 492a1197-d98a-4025-a4cc-c3c39c9533e0
-  Args:
-    source: CountMichael
-    type: :Person
-  AddLiteral (d8c41740-9c96-47a5-8597-2f001be904b9)
- Call ID: d8c41740-9c96-47a5-8597-2f001be904b9
-  Args:
-    literal_value: 2019
     relation: :hasMarriageYear
-    source: PrincessAlexandra
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
     literal_type: xsd:integer
-  AddTriple (05cd4b6f-0ef7-4bd8-9641-f0c5d7ebf2be)
- Call ID: 05cd4b6f-0ef7-4bd8-9641-f0c5d7ebf2be
+  AddTriple (15702b38-feca-4e77-8346-2b14db134ce9)
+ Call ID: 15702b38-feca-4e77-8346-2b14db134ce9
   Args:
     relation: :hasRelation
-    source: PrincessAlexandra
-    target: CountMichael
-  Finish (92d36a6c-cab3-4e9e-b920-ec127d5da653)
- Call ID: 92d36a6c-cab3-4e9e-b920-ec127d5da653
+    target: Count_Jefferson_von_Pfeil_und_Klein-Ellguth
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
+  AddLiteral (bbe2b6a8-c91e-4116-bbf7-b90a2e6cc052)
+ Call ID: bbe2b6a8-c91e-4116-bbf7-b90a2e6cc052
   Args:
+    literal_type: xsd:integer
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
+    relation: :hasMarriageYear
+    literal_value: 2019
+  AddTriple (f609adc2-6691-4f6c-a821-c9bb64d286ff)
+ Call ID: f609adc2-6691-4f6c-a821-c9bb64d286ff
+  Args:
+    source: Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg
+    target: Count_Michael_of_Ahlefeldt-Laurvig-Bille
+    relation: :hasRelation
+  AddTriple (df55ebdb-8177-4d17-8a42-5555edd8e319)
+ Call ID: df55ebdb-8177-4d17-8a42-5555edd8e319
+  Args:
+    relation: :hasRelation
+    target: Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard
+    source: Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille
+  AddTriple (30096e5a-60ed-4232-b672-c31bdd7fbdd3)
+ Call ID: 30096e5a-60ed-4232-b672-c31bdd7fbdd3
+  Args:
+    source: Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard
+    target: Prince_Erik_of_Denmark
+    relation: :hasFather
+  Finish (2d2b2f3c-4f1a-40a7-b76c-c15602c8a0ce)
+ Call ID: 2d2b2f3c-4f1a-40a7-b76c-c15602c8a0ce
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -606,37 +746,51 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:PrinceGustav a :Man,
-          :Person ;
-      :hasFather data:PrinceRichard ;
-      :hasMother data:PrincessBenedikte .
+  data:Count_Michael_Preben a :Man .
 
-  data:PrincessAlexandra a :Person,
-          :Woman ;
+  data:Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille a :Woman ;
+      :hasRelation data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard .
+
+  data:King_Frederik_IX a :Man .
+
+  data:King_Frederik_X_of_Denmark a :Man .
+
+  data:Leopold_III_Duke_of_Anhalt-Dessau a :Man .
+
+  data:Anne-Marie_of_Greece a :Woman .
+
+  data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth a :Man .
+
+  data:Count_Michael_of_Ahlefeldt-Laurvig-Bille a :Man .
+
+  data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard a :Man ;
+      :hasFather data:Prince_Erik_of_Denmark .
+
+  data:Margrethe_II a :Woman .
+
+  data:Prince_Erik_of_Denmark a :Man .
+
+  data:Prince_Gustav a :Man .
+
+  data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Man .
+
+  data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;
       :hasBirthYear 1970 ;
-      :hasFather data:PrinceRichard ;
+      :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
       :hasMarriageYear 1998,
           2019 ;
-      :hasMother data:PrincessBenedikte ;
-      :hasRelation data:CountJefferson,
-          data:CountMichael .
+      :hasMother data:Princess_Benedikte_of_Denmark ;
+      :hasRelation data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth,
+          data:Count_Michael_of_Ahlefeldt-Laurvig-Bille ;
+      :isSisterOf data:Anne-Marie_of_Greece,
+          data:Margrethe_II .
 
-  data:PrincessNathalie a :Person,
-          :Woman ;
-      :hasFather data:PrinceRichard ;
-      :hasMother data:PrincessBenedikte .
+  data:Princess_Benedikte_of_Denmark a :Woman ;
+      :hasChild data:Prince_Gustav,
+          data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+          data:Princess_Nathalie .
 
-  data:CountJefferson a :Man,
-          :Person .
-
-  data:CountMichael a :Man,
-          :Person .
-
-  data:PrinceRichard a :Man,
-          :Person .
-
-  data:PrincessBenedikte a :Person,
-          :Woman .
+  data:Princess_Nathalie a :Woman .
 
 
 
@@ -648,158 +802,86 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (12455024-bcc9-42af-9376-f3c76678ef2a)
- Call ID: 12455024-bcc9-42af-9376-f3c76678ef2a
+  ValidateShacl (0e20bf0e-d40b-4894-9dcf-a0bff7dc6d61)
+ Call ID: 0e20bf0e-d40b-4894-9dcf-a0bff7dc6d61
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:9
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node PrinceRichard is assigned the class :Man but does not have the required class :Ancestor for the property :hasFather on node PrinceGustav.
+      The node Prince_Erik_of_Denmark, identified as the father of Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceRichard, :Ancestor)
+      AssignClass(Prince_Erik_of_Denmark, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node PrincessBenedikte is assigned the class :Woman but does not have the required class :Ancestor for the property :hasMother on node PrinceGustav.
+      The node Prince_Erik_of_Denmark, identified as the father of Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessBenedikte, :Ancestor)
+      AssignClass(Prince_Erik_of_Denmark, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node PrinceRichard is assigned the class :Man but does not have the required class :Ancestor for the property :hasFather on node PrinceGustav.
+      The node Prince_Richard_of_Sayn-Wittgenstein-Berleburg, identified as the father of Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceRichard, :Ancestor)
+      AssignClass(Prince_Richard_of_Sayn-Wittgenstein-Berleburg, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node PrinceRichard is assigned the class :Man but does not have the required class :Ancestor for the property :hasFather on node PrincessAlexandra.
+      The node Princess_Benedikte_of_Denmark, identified as the mother of Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceRichard, :Ancestor)
+      AssignClass(Princess_Benedikte_of_Denmark, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node PrinceRichard is assigned the class :Man but does not have the required class :Ancestor for the property :hasFather on node PrincessNathalie.
+      The node Prince_Erik_of_Denmark, identified as the father of Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceRichard, :Ancestor)
+      AssignClass(Prince_Erik_of_Denmark, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node PrincessBenedikte is assigned the class :Woman but does not have the required class :Ancestor for the property :hasMother on node PrinceGustav.
+      The node Prince_Richard_of_Sayn-Wittgenstein-Berleburg, identified as the father of Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessBenedikte, :Ancestor)
+      AssignClass(Prince_Richard_of_Sayn-Wittgenstein-Berleburg, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node PrincessBenedikte is assigned the class :Woman but does not have the required class :Ancestor for the property :hasMother on node PrincessAlexandra.
+      The node Princess_Benedikte_of_Denmark, identified as the mother of Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessBenedikte, :Ancestor)
+      AssignClass(Princess_Benedikte_of_Denmark, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node PrincessBenedikte is assigned the class :Woman but does not have the required class :Ancestor for the property :hasMother on node PrincessNathalie.
+      The node Prince_Richard_of_Sayn-Wittgenstein-Berleburg, identified as the father of Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessBenedikte, :Ancestor)
+      AssignClass(Prince_Richard_of_Sayn-Wittgenstein-Berleburg, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node PrinceRichard is assigned the class :Man but does not have the required class :Ancestor for the property :hasFather on node PrinceGustav.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceRichard, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node PrinceRichard is assigned the class :Man but does not have the required class :Ancestor for the property :hasFather on node PrincessAlexandra.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceRichard, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node PrinceRichard is assigned the class :Man but does not have the required class :Ancestor for the property :hasFather on node PrincessNathalie.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceRichard, :Ancestor)
-
-
-  Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node PrincessBenedikte is assigned the class :Woman but does not have the required class :Ancestor for the property :hasMother on node PrinceGustav.
+      The node Princess_Benedikte_of_Denmark, identified as the mother of Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg, is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessBenedikte, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node PrincessBenedikte is assigned the class :Woman but does not have the required class :Ancestor for the property :hasMother on node PrincessAlexandra.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessBenedikte, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node PrincessBenedikte is assigned the class :Woman but does not have the required class :Ancestor for the property :hasMother on node PrincessNathalie.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessBenedikte, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node PrinceRichard is assigned the class :Man but does not have the required class :Ancestor for the property :hasFather on node PrincessAlexandra.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceRichard, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node PrinceRichard is assigned the class :Man but does not have the required class :Ancestor for the property :hasFather on node PrincessNathalie.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(PrinceRichard, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node PrincessBenedikte is assigned the class :Woman but does not have the required class :Ancestor for the property :hasMother on node PrincessAlexandra.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessBenedikte, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node PrincessBenedikte is assigned the class :Woman but does not have the required class :Ancestor for the property :hasMother on node PrincessNathalie.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessBenedikte, :Ancestor)
+      AssignClass(Princess_Benedikte_of_Denmark, :Ancestor)
 
 
 
@@ -808,19 +890,25 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (7039a95e-c689-4abd-b583-7c3896f3738d)
- Call ID: 7039a95e-c689-4abd-b583-7c3896f3738d
+  AssignClass (0b8dbdc7-1cce-4523-bfb1-95317913dfaa)
+ Call ID: 0b8dbdc7-1cce-4523-bfb1-95317913dfaa
   Args:
     type: :Ancestor
-    source: PrinceRichard
-  AssignClass (97e806d3-ba98-40e5-91a5-97e5e2610358)
- Call ID: 97e806d3-ba98-40e5-91a5-97e5e2610358
+    source: Prince_Erik_of_Denmark
+  AssignClass (12e9f047-d652-442f-97bd-60809054fc71)
+ Call ID: 12e9f047-d652-442f-97bd-60809054fc71
   Args:
+    source: Prince_Richard_of_Sayn-Wittgenstein-Berleburg
     type: :Ancestor
-    source: PrincessBenedikte
-  ValidateShacl (50f13d28-7401-4bc7-b8d1-e52a9de10e3b)
- Call ID: 50f13d28-7401-4bc7-b8d1-e52a9de10e3b
+  AssignClass (636fb0c7-29e8-4c3a-8fa7-6e827620cca1)
+ Call ID: 636fb0c7-29e8-4c3a-8fa7-6e827620cca1
   Args:
+    source: Princess_Benedikte_of_Denmark
+    type: :Ancestor
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -833,41 +921,64 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:PrinceGustav a :Man,
-          :Person ;
-      :hasFather data:PrinceRichard ;
-      :hasMother data:PrincessBenedikte .
+  data:Count_Michael_Preben a :Man .
 
-  data:PrincessAlexandra a :Person,
-          :Woman ;
+  data:Countess_Suzanne_Ingrid_Jessie_Dorthe_Ahlefeldt-Laurvig-Bille a :Woman ;
+      :hasRelation data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard .
+
+  data:King_Frederik_IX a :Man .
+
+  data:King_Frederik_X_of_Denmark a :Man .
+
+  data:Leopold_III_Duke_of_Anhalt-Dessau a :Man .
+
+  data:Anne-Marie_of_Greece a :Woman .
+
+  data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth a :Man .
+
+  data:Count_Michael_of_Ahlefeldt-Laurvig-Bille a :Man .
+
+  data:Erik_Ove_Carl_John_Emil_Vind_til_Sanderumgaard a :Man ;
+      :hasFather data:Prince_Erik_of_Denmark .
+
+  data:Margrethe_II a :Woman .
+
+  data:Prince_Erik_of_Denmark a :Ancestor,
+          :Man .
+
+  data:Prince_Gustav a :Man .
+
+  data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+          :Man .
+
+  data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman ;
       :hasBirthYear 1970 ;
-      :hasFather data:PrinceRichard ;
+      :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
       :hasMarriageYear 1998,
           2019 ;
-      :hasMother data:PrincessBenedikte ;
-      :hasRelation data:CountJefferson,
-          data:CountMichael .
+      :hasMother data:Princess_Benedikte_of_Denmark ;
+      :hasRelation data:Count_Jefferson_von_Pfeil_und_Klein-Ellguth,
+          data:Count_Michael_of_Ahlefeldt-Laurvig-Bille ;
+      :isSisterOf data:Anne-Marie_of_Greece,
+          data:Margrethe_II .
 
-  data:PrincessNathalie a :Person,
+  data:Princess_Benedikte_of_Denmark a :Ancestor,
           :Woman ;
-      :hasFather data:PrinceRichard ;
-      :hasMother data:PrincessBenedikte .
+      :hasChild data:Prince_Gustav,
+          data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+          data:Princess_Nathalie .
 
-  data:CountJefferson a :Man,
-          :Person .
-
-  data:CountMichael a :Man,
-          :Person .
-
-  data:PrinceRichard a :Ancestor,
-          :Man,
-          :Person .
-
-  data:PrincessBenedikte a :Ancestor,
-          :Person,
-          :Woman .
+  data:Princess_Nathalie a :Woman .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (b7b08569-91b9-49c2-88fe-67c0ad9754d4)
+ Call ID: b7b08569-91b9-49c2-88fe-67c0ad9754d4
+  Args:
 
 ================================= Tool Message =================================
 
@@ -877,6 +988,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (940be2fb-430f-4feb-993a-03e454c2feb6)
- Call ID: 940be2fb-430f-4feb-993a-03e454c2feb6
+  Finish (dd4786dc-c856-4ad0-a5fb-9cc302f3fc9c)
+ Call ID: dd4786dc-c856-4ad0-a5fb-9cc302f3fc9c
   Args:

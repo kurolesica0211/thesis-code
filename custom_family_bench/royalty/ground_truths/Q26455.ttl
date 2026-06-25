@@ -7,30 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Elena_Sanz a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elena Sanz" ;
-    data:posIndicesFull "216:226" ;
-    data:wdtLink wdt:Q5384669 ;
-    :alsoKnownAs "Elena Sanz y Martinez de Arrizala" ;
-    :hasChild data:Fernand_Sanz ;
-    :hasSex data:female ;
-    :hasSon data:Fernand_Sanz ;
-    :isMotherOf data:Fernand_Sanz ;
-    :isParentOf data:Fernand_Sanz .
-
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alfonso_XIII a :Person ;
     rdfs:label "Alfonso XIII" ;
     data:posIndicesFull "177:188",
         "177:197" ;
@@ -41,50 +18,39 @@ data:Alfonso_XIII a :Ancestor,
         "Don Alfonso de Borbon y Habsburgo",
         "Don Alfonso de Borbón y Habsburgo",
         "The African" ;
-    :hasBrother data:Fernand_Sanz ;
-    :hasFather data:Alfonso_XII_of_Spain ;
     :hasParent data:Alfonso_XII_of_Spain ;
-    :hasSex data:male ;
-    :isBrotherOf data:Fernand_Sanz ;
-    :isChildOf data:Alfonso_XII_of_Spain ;
-    :isSiblingOf data:Fernand_Sanz ;
-    :isSonOf data:Alfonso_XII_of_Spain .
+    :hasSex data:male .
 
-data:Alfonso_XII_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Fernand_Sanz a :Person ;
+    rdfs:label "Fernand Sanz" ;
+    data:wdtLink wdt:Q26455 ;
+    :alsoKnownAs "Fernando Sanz y Martinez de Arrizala" ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Elena_Sanz ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Elena_Sanz a :Person ;
+    rdfs:label "Elena Sanz" ;
+    data:posIndicesFull "216:226" ;
+    data:wdtLink wdt:Q5384669 ;
+    :alsoKnownAs "Elena Sanz y Martinez de Arrizala" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:Alfonso_XII_of_Spain a :Person ;
     rdfs:label "Alfonso XII of Spain" ;
     data:posIndicesFull "177:188",
         "177:197" ;
     data:wdtLink wdt:Q32347 ;
     :alsoKnownAs "Alfonso XII" ;
-    :hasChild data:Alfonso_XIII,
-        data:Fernand_Sanz ;
-    :hasSex data:male ;
-    :hasSon data:Alfonso_XIII,
-        data:Fernand_Sanz ;
-    :isFatherOf data:Alfonso_XIII,
-        data:Fernand_Sanz ;
-    :isParentOf data:Alfonso_XIII,
-        data:Fernand_Sanz .
+    :hasSex data:male .
 
-data:Fernand_Sanz a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Fernand Sanz" ;
-    data:wdtLink wdt:Q26455 ;
-    :alsoKnownAs "Fernando Sanz y Martinez de Arrizala" ;
-    :hasBrother data:Alfonso_XIII ;
-    :hasFather data:Alfonso_XII_of_Spain ;
-    :hasMother data:Elena_Sanz ;
-    :hasParent data:Alfonso_XII_of_Spain,
-        data:Elena_Sanz ;
-    :hasSex data:male ;
-    :isBrotherOf data:Alfonso_XIII ;
-    :isChildOf data:Alfonso_XII_of_Spain,
-        data:Elena_Sanz ;
-    :isSiblingOf data:Alfonso_XIII ;
-    :isSonOf data:Alfonso_XII_of_Spain,
-        data:Elena_Sanz .
+data:male a :Male .
 

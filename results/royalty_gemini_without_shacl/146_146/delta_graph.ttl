@@ -2,45 +2,22 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elena_Vladimirovna_of_Russia a :Person,
+data:Chantal_de_Chevron-Villette a :Person,
         :Woman ;
-    :hasBirthYear 1882 ;
-    :hasBrother data:Andrei_of_Russia,
-        data:Boris_of_Russia,
-        data:Kirill_of_Russia ;
-    :hasDaughter data:Elizabeth_of_Greece,
-        data:Marina_of_Greece,
-        data:Olga_of_Greece ;
-    :hasDeathYear 1957 ;
-    :hasFather data:Vladimir_Alexandrovich_of_Russia ;
-    :hasMarriageYear 1902 ;
-    :hasMother data:Marie_of_Mecklenburg-Schwerin ;
-    :hasRelation data:Nicholas_of_Greece_and_Denmark .
+    :hasBirthYear 1925 ;
+    :hasDeathYear 2005 .
 
-data:Andrei_of_Russia a :Man,
-        :Person .
+data:Ferdinand_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2008 ;
+    :hasFather data:Ranieri_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1949 ;
+    :hasMother data:Maria_Carolina_Zamoyska .
 
-data:Boris_of_Russia a :Man,
-        :Person .
-
-data:Elizabeth_of_Greece a :Person,
+data:Maria_Carolina_Zamoyska a :Person,
         :Woman .
 
-data:Kirill_of_Russia a :Man,
+data:Ranieri_of_Bourbon-Two_Sicilies a :Man,
         :Person .
-
-data:Marie_of_Mecklenburg-Schwerin a :Ancestor,
-        :Woman .
-
-data:Marina_of_Greece a :Person,
-        :Woman .
-
-data:Nicholas_of_Greece_and_Denmark a :Man,
-        :Person .
-
-data:Olga_of_Greece a :Person,
-        :Woman .
-
-data:Vladimir_Alexandrovich_of_Russia a :Ancestor,
-        :Man .
 

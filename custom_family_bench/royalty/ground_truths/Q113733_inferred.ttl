@@ -1,0 +1,79 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Otto von Habsburg"^^xsd:string ;
+    data:posIndicesFull "310:327"^^xsd:string ;
+    data:posIndicesPart "981:989"^^xsd:string ;
+    data:wdtLink wdt:Q76343 ;
+    :alsoKnownAs "Crown Prince Otto of Austria"^^xsd:string,
+        "Otto, Crown Prince of Austria"^^xsd:string ;
+    :hasBrother data:Otto_von_Habsburg ;
+    :hasChild data:Archduchess_Gabriela_of_Austria ;
+    :hasDaughter data:Archduchess_Gabriela_of_Austria ;
+    :hasRelation data:Archduchess_Gabriela_of_Austria,
+        data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :isAncestorOf data:Archduchess_Gabriela_of_Austria ;
+    :isBloodrelationOf data:Otto_von_Habsburg ;
+    :isBrotherOf data:Otto_von_Habsburg ;
+    :isFatherOf data:Archduchess_Gabriela_of_Austria ;
+    :isParentOf data:Archduchess_Gabriela_of_Austria ;
+    :isSiblingOf data:Otto_von_Habsburg ;
+    :isUncleOf data:Archduchess_Gabriela_of_Austria .
+
+data:Archduchess_Gabriela_of_Austria a :Person,
+        :Woman ;
+    rdfs:label "Archduchess Gabriela of Austria"^^xsd:string ;
+    data:posIndicesFull "0:21"^^xsd:string,
+        "1168:1189"^^xsd:string,
+        "1274:1295"^^xsd:string,
+        "1403:1424"^^xsd:string,
+        "1911:1932"^^xsd:string,
+        "2143:2164"^^xsd:string,
+        "222:243"^^xsd:string,
+        "4305:4326"^^xsd:string,
+        "636:657"^^xsd:string ;
+    data:posIndicesPart "1030:1041"^^xsd:string,
+        "1045:1052"^^xsd:string,
+        "1595:1603"^^xsd:string,
+        "1759:1767"^^xsd:string,
+        "201:208"^^xsd:string,
+        "513:521"^^xsd:string,
+        "604:612"^^xsd:string,
+        "782:789"^^xsd:string ;
+    data:wdtLink wdt:Q113733 ;
+    :alsoKnownAs "Archduchess Gabriela Maria of Austria"^^xsd:string,
+        "Gabriela von Habsburg"^^xsd:string,
+        "The Archduchess Gabriela of Austria"^^xsd:string ;
+    :hasAncestor data:Otto_von_Habsburg ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasParent data:Otto_von_Habsburg ;
+    :hasRelation data:Archduchess_Gabriela_of_Austria,
+        data:Otto_von_Habsburg ;
+    :hasSex data:female ;
+    :hasSister data:Archduchess_Gabriela_of_Austria ;
+    :isBloodrelationOf data:Archduchess_Gabriela_of_Austria ;
+    :isChildOf data:Otto_von_Habsburg ;
+    :isDaughterOf data:Otto_von_Habsburg ;
+    :isSiblingOf data:Archduchess_Gabriela_of_Austria ;
+    :isSisterOf data:Archduchess_Gabriela_of_Austria .
+

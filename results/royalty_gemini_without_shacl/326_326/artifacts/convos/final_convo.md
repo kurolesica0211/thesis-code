@@ -69,35 +69,131 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Nuria
+Henri d'Orléans (Henri Robert Ferdinand Marie d'Orléans; 5 July 1908 – 19 June 1999), was the Orléanist pretender to the defunct throne of France as Henry VI from 1940 until his death in 1999.
+Henri was the direct descendant of Philippe I, Duke of Orléans, son of Louis XIII.
+He was also a descendant of Louis XIV through a female line, from his legitimized daughter Françoise Marie de Bourbon, as well as the great-great-grandson, by four different lines of descent, of Louis Philippe I.
+The son of Jean, Duke of Guise, Henri was forbidden to enter France for much of his life.
+Henri worked to restore the French monarchy in a parliamentary form, and discussed the topic with Charles de Gaulle.
+Upon his death in 1999, his son Henri succeeded him as Head of the House of Orléans.
+Here, Henri rose at 4 am daily, accompanying his father to oversee livestock management and crop production on their scattered lands, later in the day being tutored by European governesses and his mother: He acquired fluency in French, Arabic, English, German, Italian and Spanish.
+Being rebuffed by France, Belgium and the United Kingdom, Prince Jean finally took his family back to Morocco and farming.
+In 1921, Henri's governesses were replaced with a series of preceptors, all coming from France.
+In 1923, the abbé Thomas took over Henri's instruction and, being less traditional in his approach, awakened in his charge a hitherto undetected thirst for knowledge.
+Using the wedding of the prince's sister that year in France as an opportunity, Thomas obtained permission to take Henri to the Parisian banlieues of Meudon and Issy-les-Moulineaux, then working class slums in which the abbé would volunteer to serve the needy daily, bringing Henri into close contact with day laborers.
+He would later write that this wretched urban experience profoundly affected his future political outlook and sense of justice, contrasting unfavourably with the deprivation to which he was accustomed in Morocco where, he observed, the poor were at least able to enjoy fresh air, space and sunlight while surrounded by relatives and neighbors who shared a near universal poverty, compared to the depressing grime, crowded conditions and anonymity in which Parisian workers toiled amidst extremes of wealth and deprivation.
+After a year Thomas, whose health suffered in Morocco, was replaced as Henri's preceptor by abbé Dartein, who accompanied the family to France in 1924, preparing the prince for his collegiate matriculation while they occupied an apartment near his parents in Paris.
+Henri began a two-year study of mathematics and the sciences at the Catholic University of Louvain in 1924, studying the law for the two years following.
+From across the border in France came scholars and veterans of renown to coach Henri for his future role as a royalist leader, including jurist Ernest Perrot, military strategist Général Henri de Gondrecourt and the diplomat Charles Benoist, a member of the Académie des Sciences Morales et Politiques who would serve as his advisor from 1930.
+Dauphin in pretence
+
+In 1926, Henri became the Dauphin of France in pretence when his father became the Orléanist claimant to the defunct throne upon the death of his maternal uncle, Philippe, Duke of Orleans.
+In 1939, after being refused admission to both the French and the British armed forces, Henri was allowed to join the French Foreign Legion.
+Orléanist pretender
+
+World War II
+
+Henri became pretender to the defunct French throne on 25 August 1940 when his father died.
+Henri was a "gentlemen farmer" in Morocco in the course of 1942.
+In mid-November 1942, after Admiral François Darlan's armistice with the Allied invaders of North Africa, Vichy intelligence official Henri d'Astier de la Vigerie attempted to promote a royalist coup (d'Astier had previously conspired with the Allies to aid the invasion).
+He proposed that Henri would appear to head a French government composed of all political tendencies, and maintain "neutrality until the day comes when the French nation can freely decide for itself."
+Ridgeway was taken aback by the proposal, but was unaware that d'Astier's colleagues, Abbé Cordier and Master-Sergeant Sabatier (a French instructor at an OSS-SOE camp in Algiers), had secretly brought Henri from Morocco to d'Astier's apartment in Algiers.
+Post war
+
+In 1947, Henri and his family took up residence at the Quinta do Anjinho, an estate in Sintra, on the Portuguese Riviera.
+In 1950, after the law of exile was rescinded, Henri returned to France.
+During his tenure as pretender to the defunct throne, Henri used the majority of his family's great wealth, selling off family jewels, paintings, furniture and properties to support his political cause and large family, as well as establishments in Belgium, North Africa, Brazil, Portugal and France.
+Political activity
+
+Unlike his father, Henri devoted his life to politics.
+During World War II, Henri was initially sympathetic to Vichy France.
+His opinions on the government changed over time, and he contacted Prime Minister Pierre Laval.
+Laval offered Henri the unglamorous position of Minister of Food, which he declined.
+In Algeria, Henri attempted to convince the French military governor not to oppose an Anglo-American military landing.
+Henri had correctly predicted such a thing occurring, but at the time he was laughed at by the officers.
+Henri also tried to mediate between Charles de Gaulle and Henri Giraud, when the two men were competing for control of Free France.
+Between 1940 and 1941, the Gaullist camp offered Henri an invitation to go to London, which he declined.
+Henri feared that if he accepted the offer, he would have become an émigré, like the Bourbons who returned to France after Napoleon's defeat.
+Henri was staunchly opposed to the idea of siding with one political party, wishing instead to pursue a path of unity and not contribute to France's "infernal divisiveness."
+"
 
 
-Princess Françoise
+In 1948, Henri began publishing a monthly bulletin, which soon possessed 30,000 subscribers.
+In 1950, the French Parliament abrogated the Law of Exile, permitting Henri to return.
+So we have to make do with Henri, who strikes a royal enough pose, I guess.
+In 1954, Henri met Charles de Gaulle and continued their relationship through correspondence.
+In 1958, Henri gave his support to de Gaulle, who was called back from his self-imposed exile to save the French Republic from insurrection in Paris.
+Thereafter, Henri became a frequent visitor to the Élysée Palace, where de Gaulle waited for Henri "by the staircase or outside, reserved a special armchair for him and lit his cigarette."
+There, they frequently discussed French history together, with Henri noting that de Gaulle loved to pronounce the word 'king'.
+In 1960, de Gaulle told Henri that "Monseigneur, I believe deeply in the value of the monarchy, and I am certain as well that this regime is the one best suited to our poor country."
+The following year, de Gaulle dispatched Henri on a tour to Libya, Ethiopia, Iran, and Lebanon, with the purpose of explaining France's Algeria policy, serving as de Gaulle's special representative, or "pro-consul."
+During this time, Henri befriended Hassan II of Morocco and Habib Bourguiba.
+In 1962, de Gaulle informed Henri in strict confidence that he had arranged the French presidential election so that the head of the royal house could succeed him as president of the Republic.
+However, by 1964, de Gaulle changed his mind and told Henri of his decision to run for re-election, which he won.
+By 1968, Henri ceased publication of his paper over his increasing disagreements with the Gaullists.
+The Countess of Paris remarked that "Under de Gaulle, Henri came two fingers close to becoming king.
+"
 
 
-Princess Mariam
+Following de Gaulle's death in 1970, his son Philippe de Gaulle told Henri, "Monseigneur, my father often told me that if circumstances had been different, he would have been happy to be your faithful and loyal servant."
+In 1979, Henri published his book Mémoires d'exil et de combats, which revealed to the public that de Gaulle had asked Henri to prepare himself for the 1965 presidential elections in France.
+In a latter interview, Henri stated "At all times de Gaulle desired restoration, I am convinced of it.
+However, Henri also noted that "It was difficult to get anywhere without de Gaulle, He agreed to favor my ascension to the highest point, but he didn't understand that it was necessary to give me the means of getting there.
+"
 
 
-Princess Monique
+Henri stated that he believes de Gaulle never forgave him for refusing to join the Free French in London, and also noted that "De Gaulle was not my friend...De Gaulle and I shared some common ideals and I agreed with him on the essentials of his approach to politics...
+"
 
 
-Prince Don Bagrat de Bagration y de Baviera, also Prince Bagrat Bagrationi-Mukhraneli and Prince Bagrat Bagration-Moukhransky (12 January 1949 – 20 March 2017) was a member of the Bagration dynasty which once ruled the Kingdom of Georgia and a relative of the royal family of Spain.
-Background
+In 1988, Henri produced a scandal among his monarchist supporters when he supported the re-election of François Mitterrand, a socialist.
+Political beliefs
 
-He was born in Madrid, Spain on 12 January 1949 and named Bagrat Juan María de Fátima de Todos los Santos, the third child of Prince Irakli Bagration-Mukhrani (1909-1977) by his third wife, Infanta Doña María de las Mercedes de Baviera y Borbón (1911-1953), a niece of King Alfonso XIII of Spain.
-His maternal great-grandfather was King Alfonso XII.
-Prince Jorge de Bagration, a Spanish race car driver and pretender to the throne of Georgia, was his elder half brother.
-His mother had been born in Madrid, and although part of her youth was spent in exile in the Basses Pyrénées of France, Bagrat was raised, along with Jorge and his elder sister Princess Mariam (born 1947), by his widowed father in Madrid and at the Palacio de Santillana del Mar in Santander.
-Marriage and issue
+In his college years, Henri spent many nights listening to the French monarchist writer Charles Maurras.
+But during his adult life, Henri considered himself a centrist and never allied with any political party.
+On Action Française, Henri stated that it had many talented leaders, but he ultimately regarded it as "a Rightist party with extreme Right sympathies."
+In Henri's view, "no one should be in a position to claim a monopoly on the monarchist idea.
+"
 
-Bagrat married Doña María del Carmen de Ulloa y Suelves (b. 6 May 1953) on 12 November 1976 at San Jerónimo el
-The couple were divorced on 16 September 2005, and Bagrat remarried in a civil ceremony to Mme.
+
+Henri befriended politicians on both the left and right, and declined to run for Parliament, despite de Gaulle's suggestion that he should do so.
+Some rightist critics of Henri regarded him as "the Crown Prince of the Republic" or "a dyed-in-the-wool socialist, if not a Jacobin."
+"
+
+
+Henri was a critic of primogeniture and favored elective monarchy over hereditary.
+Marriage and family life
+
+On 8 April 1931, he married Princess Isabelle of Orléans-Braganza.
+The wedding was celebrated in Palermo Cathedral in Sicily, the same church where their common ancestors, Louis Philippe of France and his Queen Maria Amalia, married in 1809.
+In 1984, Henri declared that his son, Henri of Orléans, had lost his rights of inheritance because he had divorced his first wife and married a second time, outside of the Roman Catholic Church.
+Henri gave his son the lesser-valued title comte de Mortain in place of comte de Clermont, and removed him from the line of succession.
+After a couple of years, Henri reinstated his son with his previous titles, including reestablishing him as heir apparent and gave his new wife, Micaela Cousiño Quinones de Leon, the title "princesse de Joinville".
+Henri deprived his sons Thibaut and Michel of their rights of succession to the defunct throne, because one married a commoner and the other wed a noblewoman whose father had been compromised during the Vichy regime.
+His decision was later annulled by his son and successor, Henri.
+Death
+
+Henri, Count of Paris, died of prostate cancer at Cherisy, near Dreux, France, aged 90 on 19 June 1999.
+Incidentally, his grandson Prince Eudes, Duke of Angoulême married on the very same day.
+Issue
+
+Henri, Count of Paris, and his wife Isabelle had eleven children:
+
+
+Ancestry
+
+References
+
+Further reading
+
+External links
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -113,39 +209,9 @@ The couple were divorced on 16 September 2005, and Bagrat remarried in a civil c
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -160,6 +226,23 @@ The couple were divorced on 16 September 2005, and Bagrat remarried in a civil c
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -177,6 +260,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -244,29 +342,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -275,6 +365,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -287,6 +385,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -295,17 +395,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -333,6 +435,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -348,324 +534,207 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0329bb05-2f53-438a-a1ab-fd6e0027a0bf)
- Call ID: 0329bb05-2f53-438a-a1ab-fd6e0027a0bf
+  AssignClass (77671a09-f01d-4db5-89c7-5880d544b535)
+ Call ID: 77671a09-f01d-4db5-89c7-5880d544b535
   Args:
-    source: Prince_Don_Bagrat_de_Bagration_y_de_Baviera
     type: :Man
-  AssignClass (0ee17cb6-40db-45e9-b476-44c33d1df1bd)
- Call ID: 0ee17cb6-40db-45e9-b476-44c33d1df1bd
+    source: Henri_dOrleans
+  AssignClass (53416e69-0508-4f09-a4dc-583a5a6b8edc)
+ Call ID: 53416e69-0508-4f09-a4dc-583a5a6b8edc
   Args:
-    source: Prince_Irakli_Bagration-Mukhrani
+    source: Henri_dOrleans
+    type: :Person
+  AddLiteral (cc2b4128-14f2-4b32-b95c-27e6150a763e)
+ Call ID: cc2b4128-14f2-4b32-b95c-27e6150a763e
+  Args:
+    relation: :hasBirthYear
+    source: Henri_dOrleans
+    literal_value: 1908
+    literal_type: xsd:integer
+  AddLiteral (5d2a209e-c2c2-4c01-ae2a-69469497d06e)
+ Call ID: 5d2a209e-c2c2-4c01-ae2a-69469497d06e
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1999
+    source: Henri_dOrleans
+    literal_type: xsd:integer
+  AssignClass (7d0a942c-5475-4a13-8c8a-d5591360e787)
+ Call ID: 7d0a942c-5475-4a13-8c8a-d5591360e787
+  Args:
     type: :Man
-  AssignClass (1c573067-e8d9-4cd3-a3c4-82de0ca53216)
- Call ID: 1c573067-e8d9-4cd3-a3c4-82de0ca53216
+    source: Jean_Duke_of_Guise
+  AssignClass (b8f36c84-42b7-4829-9497-dd00f52c18bd)
+ Call ID: b8f36c84-42b7-4829-9497-dd00f52c18bd
+  Args:
+    type: :Person
+    source: Jean_Duke_of_Guise
+  AddTriple (80759917-0bbf-4dff-bf75-cd008bdbfc89)
+ Call ID: 80759917-0bbf-4dff-bf75-cd008bdbfc89
+  Args:
+    relation: :isSonOf
+    target: Jean_Duke_of_Guise
+    source: Henri_dOrleans
+  AssignClass (aece21d9-46dc-40fc-b3ef-a0c83d2eab77)
+ Call ID: aece21d9-46dc-40fc-b3ef-a0c83d2eab77
+  Args:
+    source: Henri_son_of_Henri
+    type: :Man
+  AssignClass (e255c1c0-4de3-4ac9-a978-d2314d80aa23)
+ Call ID: e255c1c0-4de3-4ac9-a978-d2314d80aa23
+  Args:
+    source: Henri_son_of_Henri
+    type: :Person
+  AddTriple (806e46ab-a043-404a-9db0-a84c6f9a738e)
+ Call ID: 806e46ab-a043-404a-9db0-a84c6f9a738e
+  Args:
+    source: Henri_son_of_Henri
+    target: Henri_dOrleans
+    relation: :isSonOf
+  AssignClass (6860d57b-9639-4658-a633-aec6715afb2a)
+ Call ID: 6860d57b-9639-4658-a633-aec6715afb2a
   Args:
     type: :Woman
-    source: Infanta_Doña_María_de_las_Mercedes_de_Baviera_y_Borbón
-  AssignClass (cb16292d-530f-4dfd-9c74-39ffda60a7dc)
- Call ID: cb16292d-530f-4dfd-9c74-39ffda60a7dc
+    source: Isabelle_of_Orleans_Braganza
+  AssignClass (282df4a6-7860-43d1-802f-bafbfdd1e646)
+ Call ID: 282df4a6-7860-43d1-802f-bafbfdd1e646
   Args:
-    type: :Man
-    source: Prince_Jorge_de_Bagration
-  AssignClass (2d41f1a3-33c9-42d4-bcc5-3fe36c23f526)
- Call ID: 2d41f1a3-33c9-42d4-bcc5-3fe36c23f526
+    type: :Person
+    source: Isabelle_of_Orleans_Braganza
+  AddTriple (65501c73-47e5-4b18-b118-6e4af7614727)
+ Call ID: 65501c73-47e5-4b18-b118-6e4af7614727
   Args:
-    source: Princess_Mariam
-    type: :Woman
-  AssignClass (6ccf6449-a56b-4123-bce1-0279602a2858)
- Call ID: 6ccf6449-a56b-4123-bce1-0279602a2858
-  Args:
-    type: :Woman
-    source: Doña_María_del_Carmen_de_Ulloa_y_Suelves
-  AssignClass (bb9a5362-f412-4e2f-a972-921235508eef)
- Call ID: bb9a5362-f412-4e2f-a972-921235508eef
-  Args:
-    source: King_Alfonso_XIII
-    type: :Man
-  AssignClass (991ebde0-0dc3-4033-b79b-8ce04575e453)
- Call ID: 991ebde0-0dc3-4033-b79b-8ce04575e453
-  Args:
-    source: King_Alfonso_XII
-    type: :Man
-  AddLiteral (f30c510c-8ea2-4f03-ae11-3ac608abb317)
- Call ID: f30c510c-8ea2-4f03-ae11-3ac608abb317
-  Args:
-    literal_value: 1949
-    literal_type: xsd:integer
-    source: Prince_Don_Bagrat_de_Bagration_y_de_Baviera
-    relation: :hasBirthYear
-  AddLiteral (60d3918c-f59a-44ac-aced-2df6a59d77e9)
- Call ID: 60d3918c-f59a-44ac-aced-2df6a59d77e9
+    source: Henri_dOrleans
+    target: Isabelle_of_Orleans_Braganza
+    relation: :hasRelation
+  AddLiteral (f02dae2e-df67-406a-b44a-014145f9fc4f)
+ Call ID: f02dae2e-df67-406a-b44a-014145f9fc4f
   Args:
     literal_type: xsd:integer
-    source: Prince_Don_Bagrat_de_Bagration_y_de_Baviera
-    relation: :hasDeathYear
-    literal_value: 2017
-  AddLiteral (a9562101-7ab6-4acd-9a29-093370b73ff3)
- Call ID: a9562101-7ab6-4acd-9a29-093370b73ff3
-  Args:
-    relation: :hasBirthYear
-    source: Prince_Irakli_Bagration-Mukhrani
-    literal_type: xsd:integer
-    literal_value: 1909
-  AddLiteral (d74bfc10-1a9b-494e-9975-fa4c418f3d14)
- Call ID: d74bfc10-1a9b-494e-9975-fa4c418f3d14
-  Args:
-    literal_value: 1977
-    source: Prince_Irakli_Bagration-Mukhrani
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AddLiteral (d86dd5e8-c767-496e-bb30-f427ba338014)
- Call ID: d86dd5e8-c767-496e-bb30-f427ba338014
-  Args:
-    literal_value: 1911
-    relation: :hasBirthYear
-    source: Infanta_Doña_María_de_las_Mercedes_de_Baviera_y_Borbón
-    literal_type: xsd:integer
-  AddLiteral (8d2f4f81-8d69-423a-bf6d-6785a770db10)
- Call ID: 8d2f4f81-8d69-423a-bf6d-6785a770db10
-  Args:
-    literal_value: 1953
-    source: Infanta_Doña_María_de_las_Mercedes_de_Baviera_y_Borbón
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AddLiteral (6787c5e8-0382-4d52-8a26-c134d2ed450f)
- Call ID: 6787c5e8-0382-4d52-8a26-c134d2ed450f
-  Args:
-    literal_value: 1947
-    relation: :hasBirthYear
-    source: Princess_Mariam
-    literal_type: xsd:integer
-  AddLiteral (a33ed84e-3089-4402-99a8-1e7a0c5d2b99)
- Call ID: a33ed84e-3089-4402-99a8-1e7a0c5d2b99
-  Args:
-    literal_value: 1953
-    relation: :hasBirthYear
-    source: Doña_María_del_Carmen_de_Ulloa_y_Suelves
-    literal_type: xsd:integer
-  AddTriple (fd423d49-3555-42db-9655-a1b72f48f732)
- Call ID: fd423d49-3555-42db-9655-a1b72f48f732
-  Args:
-    target: Prince_Irakli_Bagration-Mukhrani
-    source: Prince_Don_Bagrat_de_Bagration_y_de_Baviera
-    relation: :hasFather
-  AddTriple (b3f65a55-ea9c-4270-96fd-95bf8204f2a3)
- Call ID: b3f65a55-ea9c-4270-96fd-95bf8204f2a3
-  Args:
-    source: Prince_Don_Bagrat_de_Bagration_y_de_Baviera
-    relation: :hasMother
-    target: Infanta_Doña_María_de_las_Mercedes_de_Baviera_y_Borbón
-  AddTriple (0a8a94b9-f28a-4dda-802e-133cae017832)
- Call ID: 0a8a94b9-f28a-4dda-802e-133cae017832
-  Args:
-    target: Prince_Don_Bagrat_de_Bagration_y_de_Baviera
-    relation: :isBrotherOf
-    source: Prince_Jorge_de_Bagration
-  AddTriple (4f1bae31-15f6-44af-93d1-bfc5e32339d5)
- Call ID: 4f1bae31-15f6-44af-93d1-bfc5e32339d5
-  Args:
-    target: Prince_Don_Bagrat_de_Bagration_y_de_Baviera
-    source: Princess_Mariam
-    relation: :isSisterOf
-  AddTriple (71581f8f-6ebe-42f7-b8c4-c15069a25908)
- Call ID: 71581f8f-6ebe-42f7-b8c4-c15069a25908
-  Args:
-    relation: :hasFather
-    source: Princess_Mariam
-    target: Prince_Irakli_Bagration-Mukhrani
-  AddTriple (a005bd86-6fbd-40eb-b5a8-3e18d6bd352a)
- Call ID: a005bd86-6fbd-40eb-b5a8-3e18d6bd352a
-  Args:
-    source: Prince_Don_Bagrat_de_Bagration_y_de_Baviera
+    literal_value: 1931
+    source: Henri_dOrleans
     relation: :hasMarriageYear
-    target: 1976
-  AddTriple (85b523a6-c88a-4990-8eff-8d5a8b886cc8)
- Call ID: 85b523a6-c88a-4990-8eff-8d5a8b886cc8
+  AssignClass (b1a5cdaa-78c4-4f9f-a29f-8e2a86ab474c)
+ Call ID: b1a5cdaa-78c4-4f9f-a29f-8e2a86ab474c
   Args:
-    target: Prince_Bagrat_Bagrationi-Mukhraneli
-    relation: :alsoKnownAs
-    source: Prince_Don_Bagrat_de_Bagration_y_de_Baviera
-  AddTriple (438a1cf5-8330-440e-9c61-940aceaa24f0)
- Call ID: 438a1cf5-8330-440e-9c61-940aceaa24f0
+    type: :Man
+    source: Thibaut
+  AssignClass (aec07e55-71f3-44e0-8bd3-2b6564e3bb1e)
+ Call ID: aec07e55-71f3-44e0-8bd3-2b6564e3bb1e
   Args:
-    relation: :alsoKnownAs
-    source: Prince_Don_Bagrat_de_Bagration_y_de_Baviera
-    target: Prince_Bagrat_Bagration-Moukhransky
-  Finish (51fbf27c-3ab9-41e9-8826-5c5fa1389275)
- Call ID: 51fbf27c-3ab9-41e9-8826-5c5fa1389275
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_de_Ulloa_y_Suelves a :Woman ;
-      :hasBirthYear 1953 .
-
-  data:King_Alfonso_XII a :Man .
-
-  data:King_Alfonso_XIII a :Man .
-
-  data:Prince_Jorge_de_Bagration a :Man ;
-      :isBrotherOf data:Prince_Don_Bagrat_de_Bagration_y_de_Baviera .
-
-  data:Princess_Mariam a :Woman ;
-      :hasBirthYear 1947 ;
-      :hasFather data:Prince_Irakli_Bagration-Mukhrani ;
-      :isSisterOf data:Prince_Don_Bagrat_de_Bagration_y_de_Baviera .
-
-  data:Infanta_Do%C3%B1a_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n a :Woman ;
-      :hasBirthYear 1911 ;
-      :hasDeathYear 1953 .
-
-  data:Prince_Don_Bagrat_de_Bagration_y_de_Baviera a :Man ;
-      :alsoKnownAs data:Prince_Bagrat_Bagration-Moukhransky,
-          data:Prince_Bagrat_Bagrationi-Mukhraneli ;
-      :hasBirthYear 1949 ;
-      :hasDeathYear 2017 ;
-      :hasFather data:Prince_Irakli_Bagration-Mukhrani ;
-      :hasMarriageYear data:1976 ;
-      :hasMother data:Infanta_Do%C3%B1a_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n .
-
-  data:Prince_Irakli_Bagration-Mukhrani a :Man ;
-      :hasBirthYear 1909 ;
-      :hasDeathYear 1977 .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Prince_Bagrat_Bagrationi-Mukhraneli', 'Prince_Bagrat_Bagration-Moukhransky', '1976']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (f74b6741-5e93-4eae-be88-9ea5e4f7aa0c)
- Call ID: f74b6741-5e93-4eae-be88-9ea5e4f7aa0c
-  Args:
-    source: Prince_Bagrat_Bagrationi-Mukhraneli
+    source: Thibaut
     type: :Person
-  AssignClass (677cb863-b4af-40ad-b2a8-0176a2f5d293)
- Call ID: 677cb863-b4af-40ad-b2a8-0176a2f5d293
+  AddTriple (b4d9b4e9-28d9-4561-97e2-63be6180cbc6)
+ Call ID: b4d9b4e9-28d9-4561-97e2-63be6180cbc6
+  Args:
+    relation: :isSonOf
+    source: Thibaut
+    target: Henri_dOrleans
+  AssignClass (3f4cd4e3-de63-43a7-9f6a-9ada284bef7a)
+ Call ID: 3f4cd4e3-de63-43a7-9f6a-9ada284bef7a
+  Args:
+    type: :Man
+    source: Michel
+  AssignClass (c4da0c07-3a7c-46c3-bb6d-4ceb0432087f)
+ Call ID: c4da0c07-3a7c-46c3-bb6d-4ceb0432087f
   Args:
     type: :Person
-    source: Prince_Bagrat_Bagration-Moukhransky
-  AssignClass (9dc46954-d87d-44db-b469-e40641e11670)
- Call ID: 9dc46954-d87d-44db-b469-e40641e11670
+    source: Michel
+  AddTriple (e1503ec8-710e-449c-839b-4fb1018a5657)
+ Call ID: e1503ec8-710e-449c-839b-4fb1018a5657
   Args:
-    type: :DomainEntity
-    source: 1976
-  Finish (a0bddc25-6f2f-4e0e-9b86-55ca937a497c)
- Call ID: a0bddc25-6f2f-4e0e-9b86-55ca937a497c
+    relation: :isSonOf
+    source: Michel
+    target: Henri_dOrleans
+  AssignClass (11e0ef4f-8e6a-4cc2-a899-3b34d1a9936f)
+ Call ID: 11e0ef4f-8e6a-4cc2-a899-3b34d1a9936f
+  Args:
+    source: Philippe_I_Duke_of_Orleans
+    type: :Man
+  AssignClass (645f80b6-35e7-47c2-b378-9ee805ae0d4a)
+ Call ID: 645f80b6-35e7-47c2-b378-9ee805ae0d4a
+  Args:
+    type: :Person
+    source: Philippe_I_Duke_of_Orleans
+  AssignClass (2e71a007-1e47-4d7d-b357-c588c3be232b)
+ Call ID: 2e71a007-1e47-4d7d-b357-c588c3be232b
+  Args:
+    type: :Man
+    source: Louis_XIII
+  AssignClass (b0df4bf3-5ca0-4a2a-8428-996fd9b1208b)
+ Call ID: b0df4bf3-5ca0-4a2a-8428-996fd9b1208b
+  Args:
+    source: Louis_XIII
+    type: :Person
+  AddTriple (329e3035-cd26-44f0-853b-383dca7c6eb4)
+ Call ID: 329e3035-cd26-44f0-853b-383dca7c6eb4
+  Args:
+    target: Louis_XIII
+    source: Philippe_I_Duke_of_Orleans
+    relation: :isSonOf
+  AddTriple (7b55e4ff-da3f-4fa6-b427-bf6f8f9794c2)
+ Call ID: 7b55e4ff-da3f-4fa6-b427-bf6f8f9794c2
+  Args:
+    relation: :hasAncestor
+    target: Philippe_I_Duke_of_Orleans
+    source: Henri_dOrleans
+  AssignClass (1d650390-e8b3-450f-b7c2-13ec88378a8b)
+ Call ID: 1d650390-e8b3-450f-b7c2-13ec88378a8b
+  Args:
+    source: Louis_XIV
+    type: :Man
+  AssignClass (0ee814ef-502e-4d19-b046-34c438dcf2e5)
+ Call ID: 0ee814ef-502e-4d19-b046-34c438dcf2e5
+  Args:
+    source: Louis_XIV
+    type: :Person
+  AssignClass (ea302241-d977-45be-be1f-95c3e082130f)
+ Call ID: ea302241-d977-45be-be1f-95c3e082130f
+  Args:
+    type: :Woman
+    source: Francoise_Marie_de_Bourbon
+  AssignClass (54db26ae-1c6a-470c-8231-e841b5e6ecda)
+ Call ID: 54db26ae-1c6a-470c-8231-e841b5e6ecda
+  Args:
+    type: :Person
+    source: Francoise_Marie_de_Bourbon
+  AddTriple (dfb14d1b-9a0d-44f9-acf9-368c50b8fe27)
+ Call ID: dfb14d1b-9a0d-44f9-acf9-368c50b8fe27
+  Args:
+    relation: :isDaughterOf
+    target: Louis_XIV
+    source: Francoise_Marie_de_Bourbon
+  AddTriple (b0dd5b8f-9b97-42d4-854e-c4418cbbcded)
+ Call ID: b0dd5b8f-9b97-42d4-854e-c4418cbbcded
+  Args:
+    relation: :hasAncestor
+    source: Henri_dOrleans
+    target: Louis_XIV
+  AssignClass (93748239-ad3f-4c50-9486-09c44ca1c0c4)
+ Call ID: 93748239-ad3f-4c50-9486-09c44ca1c0c4
+  Args:
+    type: :Man
+    source: Louis_Philippe_I
+  AssignClass (f025f80f-d405-4dea-8484-c8d204a3f624)
+ Call ID: f025f80f-d405-4dea-8484-c8d204a3f624
+  Args:
+    source: Louis_Philippe_I
+    type: :Person
+  AddTriple (7c0757f2-a1f5-4b1a-9e7c-3d411cf6dcf8)
+ Call ID: 7c0757f2-a1f5-4b1a-9e7c-3d411cf6dcf8
+  Args:
+    source: Henri_dOrleans
+    target: Louis_Philippe_I
+    relation: :hasAncestor
+  AssignClass (ad38eaab-6315-45cc-8f45-886251894b09)
+ Call ID: ad38eaab-6315-45cc-8f45-886251894b09
+  Args:
+    type: :Man
+    source: Philippe_Duke_of_Orleans_maternal_uncle
+  AssignClass (3a2cf3b4-fd13-448d-916f-c9a65a1818e9)
+ Call ID: 3a2cf3b4-fd13-448d-916f-c9a65a1818e9
+  Args:
+    type: :Person
+    source: Philippe_Duke_of_Orleans_maternal_uncle
+  Finish (608a2b0a-35b9-4293-84b8-7691669ca22f)
+ Call ID: 608a2b0a-35b9-4293-84b8-7691669ca22f
   Args:

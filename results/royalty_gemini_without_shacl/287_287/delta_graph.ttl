@@ -2,30 +2,51 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Lady_Rose_Victoria_Birgitte_Louise_Gilman a :Person,
-        :Woman ;
-    :hasBirthYear 1980 ;
-    :hasDaughter data:Lyla_Gilman ;
-    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
-    :hasMarriageYear 2007 ;
-    :hasMother data:Birgitte_Duchess_of_Gloucester ;
-    :hasRelation data:George_Gilman ;
-    :hasSon data:Rufus_Gilman .
-
-data:Birgitte_Duchess_of_Gloucester a :Person,
-        :Woman .
-
-data:George_Gilman a :Man,
+data:Carl_of_Wurttemberg a :Man,
         :Person ;
-    :hasDaughter data:Lyla_Gilman ;
-    :hasSon data:Rufus_Gilman .
+    :isUncleOf data:Jean_dOrleans .
 
-data:Prince_Richard_Duke_of_Gloucester a :Man,
+data:Princess_Chantal_of_Orleans a :Person,
+        :Woman ;
+    :isAuntOf data:Jean_dOrleans .
+
+data:Charles_X a :Man,
         :Person .
 
-data:Lyla_Gilman a :Person,
-        :Woman .
+data:Henri_Count_of_Paris a :Man,
+        :Person ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2019 .
 
-data:Rufus_Gilman a :Man,
+data:Henri_VI_Count_of_Paris a :Man,
         :Person .
+
+data:Henri_dOrleans_Ancestor a :Man,
+        :Person .
+
+data:Louis_Philippe_I a :Man,
+        :Person ;
+    :hasAncestor data:Philippe_I_Duke_of_Orleans .
+
+data:Marie_Therese_of_Wurttemberg a :Person,
+        :Woman ;
+    :hasBirthYear 1934 .
+
+data:Philippe_I_Duke_of_Orleans a :Man,
+        :Person .
+
+data:Philomena_de_Tornos_y_Steinhart a :Person,
+        :Woman ;
+    :hasBirthYear 1977 .
+
+data:Jean_dOrleans a :Man,
+        :Person ;
+    :hasAncestor data:Charles_X,
+        data:Henri_VI_Count_of_Paris,
+        data:Henri_dOrleans_Ancestor,
+        data:Louis_Philippe_I ;
+    :hasBirthYear 1965 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Philomena_de_Tornos_y_Steinhart .
 

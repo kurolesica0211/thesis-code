@@ -74,7 +74,6 @@ Alexandra (Greek: Αλεξάνδρα, Serbo-Croatian: Александра/Aleks
 
 Posthumous daughter of King Alexander of Greece and his morganatic wife, Aspasia Manos, Alexandra was not part of the Greek royal family until July 1922 when, at the behest of Queen Sophia, Alexander's mother, a law was passed which retroactively recognized marriages of members of the royal family, although on a non-dynastic basis; in consequence, she obtained the style and name of Her Royal Highness Princess Alexandra of Greece and Denmark.
 At the same time, a serious political and military crisis, linked to the defeat of Greece by Turkey in Anatolia, led to the deposition and exile of the royal family, beginning in 1924.
-Being the only members of the dynasty allowed to remain in the country by the Second Hellenic Republic, the princess and her mother later found refuge in Italy with Dowager Queen Sophia.
 After three years with her paternal grandmother, Alexandra left Florence to continue her studies in the United Kingdom, while her mother settled in Venice.
 Separated from her mother, the princess fell ill, forcing Aspasia to make her leave the boarding school where she was studying.
 After the restoration of her uncle, King George II, on the Hellenic throne in 1935, Alexandra stayed in her native country several times but the outbreak of the Greco-Italian War, in 1940, forced her and her mother to settle in Athens.
@@ -124,7 +123,6 @@ From London to Venice
 
 In 1927, Alexandra and her mother moved to Ascot, Berkshire, in the United Kingdom.
 Now seven years old, Alexandra was enrolled in boarding schools in Westfield and Heathfield, as was the custom for the upper class.
-However, the Princess took very badly to this experience: separated from her mother, she stopped eating and eventually contracted tuberculosis.
 Alarmed, Aspasia thus moved her daughter to Switzerland for treatment.
 Later, Alexandra was educated in a Parisian finishing school, during which time she and her mother stayed at the Hotel Crillon.
 Eventually, the two princesses settled on the island of Giudecca in Venice, where Aspasia acquired a small property with her savings and Horlick's financial support.
@@ -134,17 +132,11 @@ Between Greece and Venice
 
 In 1935, the Second Hellenic Republic was abolished and King George II (Alexandra's uncle) was restored to the throne after a referendum organized by General Georgios Kondylis.
 Alexandra was then allowed to return to Greece, a country she had not seen since 1924.
-Although she continued to reside in Venice with her mother (who still suffered the ostracism of the royal family), the princess was invited to all the great ceremonies that punctuate the life of the dynasty.
 In 1936, she participated in the official ceremonies which marked the reburial in Tatoi of the remains of King Constantine I, Queen Sophia, and Dowager Queen Olga; all three died in exile in Italy.
-Two years later, in 1938, she was invited to the wedding of her uncle, Crown Prince Paul, with Princess Frederica of Hanover.
 Despite her participation in the ceremonies of the Greek royal family, at that time Alexandra understood that she was not a full member of the European royalty.
 Her mother had to claim in her name the share of the inheritance of Alexandra's paternal grandparents.
-Also, the princess' mother had no site in the royal necropolis of Tatoi.
 During the 1936 ceremonies, a chapel was arranged in the park of the palace for the remains of King Constantine I and Queen Sophia.
 The remains of King Alexander − previously based in the gardens next to his grandfather King George I – were then transferred to this chapel, with no space reserved for Aspasia.
-First marriage proposal
-
-In 1936, the fifteen-years-old Princess received her first marriage proposal: King Zog I of Albania, who wished to marry a member of the European royalty in order to consolidate his position, asked her hand.
 Alexandra attended numerous dances, which aimed to introduce her to the European elite.
 World War II
 
@@ -188,7 +180,6 @@ Now without income and any prospect of returning to Yugoslavia, Peter II and Ale
 Still penniless, the couple was forced to sell Alexandra's necklace of emeralds and other pieces of her jewelry to pay their accumulated debts.
 As Alexandra wrote in her autobiography, she had no idea of the value of things, and she quickly proved incapable of maintaining a home.
 In the United States, Peter II soon drifted away.
-Having made poor financial investments, he lost the little money he had left.
 Thanks to the intervention of his maternal grandmother, the 4-year-old former Crown Prince Alexander was sent to Italy with the Count and Countess of Robilant, friends of the royal couple.
 Divorce attempt and reconciliation
 
@@ -224,6 +215,8 @@ With her, the remains of her husband King Peter II, her mother-in-law Queen Moth
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -239,39 +232,9 @@ With her, the remains of her husband King Peter II, her mother-in-law Queen Moth
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -286,6 +249,23 @@ With her, the remains of her husband King Peter II, her mother-in-law Queen Moth
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -303,6 +283,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -370,29 +365,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -401,6 +388,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -413,6 +408,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -421,17 +418,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -459,6 +458,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -474,187 +557,139 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (69ad2dc6-8d71-46e4-bdde-0871d150217a)
- Call ID: 69ad2dc6-8d71-46e4-bdde-0871d150217a
+  AssignClass (c58533e3-fa9c-456f-9e57-3ab88a55c190)
+ Call ID: c58533e3-fa9c-456f-9e57-3ab88a55c190
   Args:
-    source: Alexandra of Greece and Denmark
     type: :Woman
-  AssignClass (e45dd300-d2e0-43df-a52a-bb05d3953768)
- Call ID: e45dd300-d2e0-43df-a52a-bb05d3953768
+    source: :Alexandra
+  AssignClass (b2d2ad2b-a9fd-4767-a068-36da9f91d2e6)
+ Call ID: b2d2ad2b-a9fd-4767-a068-36da9f91d2e6
   Args:
-    source: Alexandra of Greece and Denmark
     type: :Person
-  AddLiteral (3f0aa83a-d6eb-4f6c-be5c-5812de94dc20)
- Call ID: 3f0aa83a-d6eb-4f6c-be5c-5812de94dc20
+    source: :Alexandra
+  AddLiteral (0975aaee-84db-48a9-b99f-9091c0215f0d)
+ Call ID: 0975aaee-84db-48a9-b99f-9091c0215f0d
   Args:
-    literal_type: xsd:integer
     literal_value: 1921
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Alexandra of Greece and Denmark
-  AddLiteral (2b303151-8cd3-4d56-bfc4-9a1f24d8c9ea)
- Call ID: 2b303151-8cd3-4d56-bfc4-9a1f24d8c9ea
+    source: :Alexandra
+  AddLiteral (54a95f17-5e7f-4dd6-b5a2-f2545a90d076)
+ Call ID: 54a95f17-5e7f-4dd6-b5a2-f2545a90d076
   Args:
+    source: :Alexandra
+    relation: :hasDeathYear
     literal_value: 1993
     literal_type: xsd:integer
-    source: Alexandra of Greece and Denmark
-    relation: :hasDeathYear
-  AssignClass (c2b17eae-02b4-40a8-ac6b-238a3c9c3dc3)
- Call ID: c2b17eae-02b4-40a8-ac6b-238a3c9c3dc3
+  AssignClass (51148102-0f61-448d-8d28-27d7a0bede77)
+ Call ID: 51148102-0f61-448d-8d28-27d7a0bede77
   Args:
-    source: King Alexander of Greece
     type: :Man
-  AssignClass (466bda5d-c1bc-4c3a-951a-70edcd1167e4)
- Call ID: 466bda5d-c1bc-4c3a-951a-70edcd1167e4
+    source: :AlexanderOfGreece
+  AssignClass (78acc5bd-d3ab-471d-900e-1e8321d9b3ea)
+ Call ID: 78acc5bd-d3ab-471d-900e-1e8321d9b3ea
   Args:
-    source: King Alexander of Greece
     type: :Ancestor
-  AssignClass (32c87c34-be00-4e38-853f-cf5ff1f8fa8a)
- Call ID: 32c87c34-be00-4e38-853f-cf5ff1f8fa8a
+    source: :AlexanderOfGreece
+  AssignClass (50dd9197-1a17-405e-8eb2-7ddbc531440f)
+ Call ID: 50dd9197-1a17-405e-8eb2-7ddbc531440f
   Args:
+    source: :AspasiaManos
     type: :Woman
-    source: Aspasia Manos
-  AssignClass (d1083975-822c-44ff-89b6-e0ad41ae6d5f)
- Call ID: d1083975-822c-44ff-89b6-e0ad41ae6d5f
+  AssignClass (93d7ee9a-fc3b-46ea-b7c8-4fbbf859d9f6)
+ Call ID: 93d7ee9a-fc3b-46ea-b7c8-4fbbf859d9f6
   Args:
-    source: Aspasia Manos
     type: :Ancestor
-  AddTriple (ea2ae5df-d29c-46a4-918c-ad7f443154cb)
- Call ID: ea2ae5df-d29c-46a4-918c-ad7f443154cb
+    source: :AspasiaManos
+  AddTriple (d49ca919-1329-407a-99a7-52a96bf39b09)
+ Call ID: d49ca919-1329-407a-99a7-52a96bf39b09
   Args:
+    target: :AlexanderOfGreece
+    source: :Alexandra
     relation: :hasFather
-    target: King Alexander of Greece
-    source: Alexandra of Greece and Denmark
-  AddTriple (523cd040-3c41-4871-897a-3e3bf531ce8d)
- Call ID: 523cd040-3c41-4871-897a-3e3bf531ce8d
+  AddTriple (91e32b7d-c3a8-47b2-a9f1-84b5237e8f8e)
+ Call ID: 91e32b7d-c3a8-47b2-a9f1-84b5237e8f8e
   Args:
-    target: Aspasia Manos
+    target: :AspasiaManos
     relation: :hasMother
-    source: Alexandra of Greece and Denmark
-  AssignClass (ed2387b9-bc9a-4666-a1aa-85e053c9ca5f)
- Call ID: ed2387b9-bc9a-4666-a1aa-85e053c9ca5f
+    source: :Alexandra
+  AssignClass (5efd9490-c9dd-42be-8053-ced26bc58294)
+ Call ID: 5efd9490-c9dd-42be-8053-ced26bc58294
   Args:
+    source: :PeterIIOfYugoslavia
     type: :Man
-    source: King Peter II of Yugoslavia
-  AssignClass (4491c6b6-ad79-4eba-8f25-3c79e57cf053)
- Call ID: 4491c6b6-ad79-4eba-8f25-3c79e57cf053
+  AssignClass (23c00b4b-5d53-42aa-8209-2c0c5e084e37)
+ Call ID: 23c00b4b-5d53-42aa-8209-2c0c5e084e37
   Args:
-    source: King Peter II of Yugoslavia
-    type: :Ancestor
-  AddTriple (29fe2f33-89d8-44dc-9add-233f8459f0f7)
- Call ID: 29fe2f33-89d8-44dc-9add-233f8459f0f7
+    source: :PeterIIOfYugoslavia
+    type: :Person
+  AddTriple (b5b92eb0-b525-463a-9303-2c9fe15f44fa)
+ Call ID: b5b92eb0-b525-463a-9303-2c9fe15f44fa
   Args:
-    source: Alexandra of Greece and Denmark
-    target: King Peter II of Yugoslavia
+    target: :PeterIIOfYugoslavia
     relation: :hasRelation
-  AddLiteral (fa20ebb8-d7fc-4533-8550-d1d6a9faded3)
- Call ID: fa20ebb8-d7fc-4533-8550-d1d6a9faded3
+    source: :Alexandra
+  AddLiteral (b45fa506-6c30-4fe3-b819-b16fcb46d5e5)
+ Call ID: b45fa506-6c30-4fe3-b819-b16fcb46d5e5
   Args:
-    source: Alexandra of Greece and Denmark
-    relation: :hasMarriageYear
-    literal_value: 1944
     literal_type: xsd:integer
-  AssignClass (7a5095ab-b3c1-466e-a747-ced937c94de5)
- Call ID: 7a5095ab-b3c1-466e-a747-ced937c94de5
+    literal_value: 1944
+    source: :Alexandra
+    relation: :hasMarriageYear
+  AssignClass (4664e02e-608f-4e5e-b9f1-17e6acf71ccc)
+ Call ID: 4664e02e-608f-4e5e-b9f1-17e6acf71ccc
   Args:
-    source: Alexander Crown Prince of Yugoslavia
     type: :Man
-  AssignClass (f10bfb32-f729-432c-984b-f5cf4e3763b6)
- Call ID: f10bfb32-f729-432c-984b-f5cf4e3763b6
+    source: :AlexanderCrownPrinceOfYugoslavia
+  AssignClass (7f614719-78e6-48d9-bcbd-8d0073021847)
+ Call ID: 7f614719-78e6-48d9-bcbd-8d0073021847
   Args:
-    source: Alexander Crown Prince of Yugoslavia
+    source: :AlexanderCrownPrinceOfYugoslavia
     type: :Person
-  AddTriple (b7fa92f5-5bd8-431a-9f47-f96b62ffec7e)
- Call ID: b7fa92f5-5bd8-431a-9f47-f96b62ffec7e
+  AddTriple (cea07a44-02a8-481b-94b1-8ec41508ae3f)
+ Call ID: cea07a44-02a8-481b-94b1-8ec41508ae3f
   Args:
     relation: :isSonOf
-    target: Alexandra of Greece and Denmark
-    source: Alexander Crown Prince of Yugoslavia
-  AddTriple (d0cb6314-4af2-41ce-9c86-952fd4b36c2c)
- Call ID: d0cb6314-4af2-41ce-9c86-952fd4b36c2c
+    source: :AlexanderCrownPrinceOfYugoslavia
+    target: :Alexandra
+  AddTriple (9e5c3dbd-eebb-45e2-8f52-2cabda5dd3f4)
+ Call ID: 9e5c3dbd-eebb-45e2-8f52-2cabda5dd3f4
   Args:
     relation: :isSonOf
-    target: King Peter II of Yugoslavia
-    source: Alexander Crown Prince of Yugoslavia
-  AssignClass (8f4ee8d7-1916-4657-af61-0f5690a1d0dc)
- Call ID: 8f4ee8d7-1916-4657-af61-0f5690a1d0dc
+    source: :AlexanderCrownPrinceOfYugoslavia
+    target: :PeterIIOfYugoslavia
+  AssignClass (fd8bca80-a817-48df-bd33-baa92aca48d0)
+ Call ID: fd8bca80-a817-48df-bd33-baa92aca48d0
   Args:
     type: :Woman
-    source: Queen Sophia of Greece
-  AssignClass (2483482e-6ad6-404e-940f-0668c4b3592f)
- Call ID: 2483482e-6ad6-404e-940f-0668c4b3592f
+    source: :MariaOfYugoslavia
+  AssignClass (213339bc-3a51-4a0d-9bb1-8af6b09b1ead)
+ Call ID: 213339bc-3a51-4a0d-9bb1-8af6b09b1ead
   Args:
     type: :Ancestor
-    source: Queen Sophia of Greece
-  AddTriple (eaffc5b9-0b81-451c-9db6-2b762ecb9808)
- Call ID: eaffc5b9-0b81-451c-9db6-2b762ecb9808
+    source: :MariaOfYugoslavia
+  AddTriple (ed186561-1776-43ee-9e91-96415f6c25c3)
+ Call ID: ed186561-1776-43ee-9e91-96415f6c25c3
   Args:
-    source: King Alexander of Greece
-    target: Queen Sophia of Greece
-    relation: :hasMother
-  AssignClass (0dbcd3f2-3120-465b-9036-288f727aa8d9)
- Call ID: 0dbcd3f2-3120-465b-9036-288f727aa8d9
+    target: :PeterIIOfYugoslavia
+    relation: :isMotherOf
+    source: :MariaOfYugoslavia
+  AssignClass (c8ed8e7b-5d44-4539-87d5-ffb107803534)
+ Call ID: c8ed8e7b-5d44-4539-87d5-ffb107803534
   Args:
-    type: :Woman
-    source: Queen Maria of Yugoslavia
-  AssignClass (fb704781-73fc-4d55-973c-327a50e15b9c)
- Call ID: fb704781-73fc-4d55-973c-327a50e15b9c
-  Args:
-    type: :Ancestor
-    source: Queen Maria of Yugoslavia
-  AddTriple (2fe764ed-7c53-41bd-bd4a-cacf87f40a4a)
- Call ID: 2fe764ed-7c53-41bd-bd4a-cacf87f40a4a
-  Args:
-    source: King Peter II of Yugoslavia
-    target: Queen Maria of Yugoslavia
-    relation: :hasMother
-  AssignClass (4d619a01-9ccf-4923-a6e9-6c27c692d4d7)
- Call ID: 4d619a01-9ccf-4923-a6e9-6c27c692d4d7
-  Args:
+    source: :GeorgeIIOfGreece
     type: :Man
-    source: King Constantine I of Greece
-  AssignClass (edfada86-44a5-4f2e-85aa-f21fbc85c2ce)
- Call ID: edfada86-44a5-4f2e-85aa-f21fbc85c2ce
+  AssignClass (cd72d423-9717-4d7b-b4e0-e4bf96325281)
+ Call ID: cd72d423-9717-4d7b-b4e0-e4bf96325281
   Args:
-    source: King Constantine I of Greece
-    type: :Ancestor
-  AssignClass (eb94fec8-1471-4e1f-a514-4a7bc9b7c17f)
- Call ID: eb94fec8-1471-4e1f-a514-4a7bc9b7c17f
-  Args:
-    source: Queen Dowager Olga of Greece
-    type: :Woman
-  AssignClass (ebeeecb4-bc46-489f-9c06-ecd14ed365d4)
- Call ID: ebeeecb4-bc46-489f-9c06-ecd14ed365d4
-  Args:
-    type: :Ancestor
-    source: Queen Dowager Olga of Greece
-  AssignClass (d92b901d-5c1e-4e1d-b388-a3a1ecc7bdba)
- Call ID: d92b901d-5c1e-4e1d-b388-a3a1ecc7bdba
-  Args:
-    type: :Man
-    source: King George II of Greece
-  AssignClass (6229d289-135b-4b51-933e-3ebb921314c6)
- Call ID: 6229d289-135b-4b51-933e-3ebb921314c6
-  Args:
-    source: King George II of Greece
     type: :Person
-  AddTriple (be6bdb8e-103f-42bb-8e7b-456220745df7)
- Call ID: be6bdb8e-103f-42bb-8e7b-456220745df7
+    source: :GeorgeIIOfGreece
+  AddTriple (9904162f-3671-4a15-8d70-d223a461416c)
+ Call ID: 9904162f-3671-4a15-8d70-d223a461416c
   Args:
-    relation: :isSisterOf
-    target: King George II of Greece
-    source: Alexandra of Greece and Denmark
-  AddTriple (8d43ad49-cd81-4f81-88db-340b33a96d88)
- Call ID: 8d43ad49-cd81-4f81-88db-340b33a96d88
-  Args:
-    target: King Constantine I of Greece
-    relation: :hasFather
-    source: King George II of Greece
-  AddTriple (b9b48d69-edc2-4f6d-a79e-7094cc2f4e9d)
- Call ID: b9b48d69-edc2-4f6d-a79e-7094cc2f4e9d
-  Args:
-    target: Queen Sophia of Greece
-    relation: :hasMother
-    source: King George II of Greece
-  Finish (d1b1742f-80f3-4cc8-aad6-09f7019b8271)
- Call ID: d1b1742f-80f3-4cc8-aad6-09f7019b8271
+    target: :GeorgeIIOfGreece
+    relation: :hasRelation
+    source: :Alexandra
+  Finish (f58d2abc-e10c-4e1e-9c56-9bb535f41c3b)
+ Call ID: f58d2abc-e10c-4e1e-9c56-9bb535f41c3b
   Args:

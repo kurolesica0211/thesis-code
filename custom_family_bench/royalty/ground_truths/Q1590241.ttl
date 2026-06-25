@@ -7,26 +7,14 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Baroness_Elisabeth_of_Wangenheim-Winterstein a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Baroness_Elisabeth_of_Wangenheim-Winterstein a :Person ;
     rdfs:label "Baroness Elisabeth of Wangenheim-Winterstein" ;
     data:posIndicesFull "731:775" ;
     data:wdtLink wdt:Q100832 ;
     :alsoKnownAs "Elisabeth Baronin von Wangenheim-Winterstein" ;
     :hasSex data:female .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach a :Person ;
     rdfs:label "Charles Augustus, Hereditary Grand Duke of Saxe-Weimar-Eisenach" ;
     data:posIndicesFull "0:63" ;
     data:posIndicesPart "323:328",
@@ -45,25 +33,25 @@ data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach a :Ancestor
         "658:665",
         "666:674" ;
     data:wdtLink wdt:Q1590241 ;
-    :hasMother data:Princess_Feodora_of_Saxe-Meiningen ;
     :hasParent data:Princess_Feodora_of_Saxe-Meiningen ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Feodora_of_Saxe-Meiningen ;
-    :isSonOf data:Princess_Feodora_of_Saxe-Meiningen .
+    :hasSex data:male .
 
-data:Princess_Feodora_of_Saxe-Meiningen a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Feodora_of_Saxe-Meiningen a :Person ;
     rdfs:label "Princess Feodora of Saxe-Meiningen" ;
     data:posIndicesFull "380:396",
         "380:414" ;
     data:posIndicesPart "510:514" ;
     data:wdtLink wdt:Q66639 ;
     :alsoKnownAs "Princess Feodora" ;
-    :hasChild data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
-    :hasSex data:female ;
-    :hasSon data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
-    :isMotherOf data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
-    :isParentOf data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach .
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

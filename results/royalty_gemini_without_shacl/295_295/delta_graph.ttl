@@ -2,48 +2,25 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Andrew a :Man,
+data:Christian_of_Hanover a :Man,
         :Person ;
-    :isBrotherOf data:Prince_Christopher_of_Greece_and_Denmark .
+    :hasBirthYear 1985 ;
+    :hasFather data:Ernst_August_von_Hannover ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:Chantal_Hochuli ;
+    :hasRelation data:Alessandra_de_Osma .
 
-data:Constantine_I a :Man,
-        :Person ;
-    :isBrotherOf data:Prince_Christopher_of_Greece_and_Denmark .
-
-data:George_brother a :Man,
-        :Person ;
-    :isBrotherOf data:Prince_Christopher_of_Greece_and_Denmark .
-
-data:Nicholas a :Man,
-        :Person ;
-    :isBrotherOf data:Prince_Christopher_of_Greece_and_Denmark .
-
-data:Prince_Michael_of_Greece_and_Denmark a :Man,
-        :Person ;
-    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
-    :hasMother data:Princess_Francoise_of_Orleans .
-
-data:Princess_Anastasia a :Person,
+data:Alessandra_de_Osma a :Person,
         :Woman .
 
-data:William_Bateman_Leeds_Jr a :Man,
-        :Person .
-
-data:King_George_I_of_Greece a :Man,
-        :Person .
-
-data:Princess_Francoise_of_Orleans a :Person,
+data:Caroline_of_Monaco a :Person,
         :Woman .
 
-data:Queen_Olga a :Person,
+data:Chantal_Hochuli a :Person,
         :Woman .
 
-data:Prince_Christopher_of_Greece_and_Denmark a :Man,
+data:Ernst_August_von_Hannover a :Man,
         :Person ;
-    :hasBirthYear 1888 ;
-    :hasDeathYear 1940 ;
-    :hasFather data:King_George_I_of_Greece ;
-    :hasMarriageYear 1920 ;
-    :hasMother data:Queen_Olga ;
-    :knownAs "Christo"^^xsd:string .
+    :hasMarriageYear 1999 ;
+    :hasRelation data:Caroline_of_Monaco .
 

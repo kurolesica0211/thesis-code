@@ -7,100 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Marion_Stein a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Marion Stein" ;
-    data:posIndicesFull "3530:3542",
-        "4046:4058" ;
-    data:posIndicesPart "3906:3911",
-        "4231:4236" ;
-    data:wdtLink wdt:Q2010206 ;
-    :alsoKnownAs "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Lascelles, Countess of Harewood",
-        "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Stein",
-        "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Thorpe",
-        "Maria Stein",
-        "Marion Harewood",
-        "Marion Lascelles, Countess of Harewood",
-        "Marion Thorpe" ;
-    :hasSex data:female .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Henry_Lascelles-_6th_Earl_of_Harewood a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Henry Lascelles, 6th Earl of Harewood" ;
-    data:posIndicesFull "1906:1919",
-        "2168:2181",
-        "2333:2346",
-        "2704:2717",
-        "3508:3521",
-        "4280:4293",
-        "4610:4623",
-        "4734:4747",
-        "534:547" ;
-    data:posIndicesPart "1011:1020",
-        "1394:1403",
-        "1550:1558",
-        "1597:1606",
-        "1803:1812",
-        "2144:2153",
-        "2258:2267",
-        "2865:2874",
-        "3046:3054",
-        "3318:3326",
-        "3635:3643",
-        "4027:4031",
-        "4095:4099",
-        "4592:4601",
-        "874:879",
-        "887:896",
-        "995:1000" ;
-    data:wdtLink wdt:Q2653986 ;
-    :alsoKnownAs "Henry George Charles Lascelles",
-        "Henry George Charles Lascelles, 6th Earl of Harewood",
-        "Henry George Charles Lascelles, Viscount Lascelles",
-        "Henry Harewood",
-        "Henry Lascelles",
-        "Henry Lascelles, Viscount Lascelles",
-        "Lord Harewood" ;
-    :hasChild data:George_Lascelles-_7th_Earl_of_Harewood ;
-    :hasSex data:male ;
-    :hasSon data:George_Lascelles-_7th_Earl_of_Harewood ;
-    :isFatherOf data:George_Lascelles-_7th_Earl_of_Harewood ;
-    :isParentOf data:George_Lascelles-_7th_Earl_of_Harewood .
-
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "3164:3182",
-        "3170:3182",
-        "373:391",
-        "379:391",
-        "678:696",
-        "684:696" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasFather data:George_VI ;
-    :hasParent data:George_VI ;
-    :hasSex data:female ;
-    :isChildOf data:George_VI ;
-    :isDaughterOf data:George_VI .
-
-data:Edward_VIII a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Edward_VIII a :Person ;
     rdfs:label "Edward VIII" ;
     data:posIndicesFull "622:638",
         "627:638" ;
@@ -118,28 +25,14 @@ data:Edward_VIII a :Man,
         "King Edward VIII",
         "Prince Edward",
         "Prince Edward, Duke of Windsor" ;
-    :hasBrother data:George_VI ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:male ;
-    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isBrotherOf data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isChildOf data:George_V ;
-    :isSiblingOf data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isSonOf data:George_V ;
-    :isUncleOf data:Elizabeth_II,
-        data:George_Lascelles-_7th_Earl_of_Harewood .
+    :hasSex data:male .
 
-data:George_Lascelles-_7th_Earl_of_Harewood a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:George_Lascelles-_7th_Earl_of_Harewood a :Person ;
     rdfs:label "George Lascelles, 7th Earl of Harewood" ;
     data:posIndicesFull "0:51",
         "108:124",
-        "6921:6937" ;
+        "6767:6783" ;
     data:posIndicesPart "1011:1020",
         "1394:1403",
         "1550:1558",
@@ -149,14 +42,14 @@ data:George_Lascelles-_7th_Earl_of_Harewood a :Ancestor,
         "2258:2267",
         "2865:2874",
         "3046:3054",
-        "3318:3326",
-        "3635:3643",
+        "3164:3172",
+        "3481:3489",
+        "3873:3877",
         "393:401",
-        "4027:4031",
-        "4095:4099",
+        "3941:3945",
         "431:435",
         "439:447",
-        "4592:4601",
+        "4438:4447",
         "867:873",
         "887:896" ;
     data:wdtLink wdt:Q336609 ;
@@ -168,66 +61,20 @@ data:George_Lascelles-_7th_Earl_of_Harewood a :Ancestor,
         "Hon. George Henry Hubert Lascelles",
         "Hon. George Lascelles",
         "Lascelles, George" ;
-    :hasFather data:Henry_Lascelles-_6th_Earl_of_Harewood ;
-    :hasMother data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
     :hasParent data:Henry_Lascelles-_6th_Earl_of_Harewood,
         data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :hasSex data:male ;
-    :isChildOf data:Henry_Lascelles-_6th_Earl_of_Harewood,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isSonOf data:Henry_Lascelles-_6th_Earl_of_Harewood,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood .
+    :hasSex data:male .
 
-data:George_V a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George V" ;
-    data:posIndicesFull "1088:1101",
-        "1093:1101",
-        "316:329",
-        "321:329",
-        "504:517",
-        "509:517",
-        "577:590",
-        "582:590" ;
-    data:posIndicesPart "4762:4768" ;
-    data:wdtLink wdt:Q269412 ;
-    :alsoKnownAs "George Frederick Ernest Albert",
-        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
-        "George Frederick Ernest Albert Windsor",
-        "George Saxe-Coburg-Gotha",
-        "George V (King of Great Britain)",
-        "George V of the United Kingdom",
-        "George Windsor",
-        "King George V" ;
-    :hasChild data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :hasDaughter data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :hasSex data:male ;
-    :hasSon data:Edward_VIII,
-        data:George_VI ;
-    :isFatherOf data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isParentOf data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood .
-
-data:George_VI a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:George_VI a :Person ;
     rdfs:label "George VI" ;
     data:posIndicesFull "1505:1519",
         "1510:1519",
         "1787:1801",
         "1792:1801",
-        "3797:3806",
+        "3643:3652",
         "643:657",
         "648:657" ;
-    data:posIndicesPart "4762:4768",
+    data:posIndicesPart "4608:4614",
         "867:873" ;
     data:wdtLink wdt:Q280856 ;
     :alsoKnownAs "Albert Frederick Arthur George",
@@ -250,42 +97,85 @@ data:George_VI a :Ancestor,
         "The Prince Albert Frederick Arthur George, Duke of York",
         "The Prince Albert of the United Kingdom",
         "The Prince Albert, Duke of York" ;
-    :hasBrother data:Edward_VIII ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:male ;
-    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isBrotherOf data:Edward_VIII,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isChildOf data:George_V ;
-    :isFatherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II ;
-    :isSiblingOf data:Edward_VIII,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isSonOf data:George_V ;
-    :isUncleOf data:George_Lascelles-_7th_Earl_of_Harewood .
+    :hasSex data:male .
 
-data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Marion_Stein a :Person ;
+    rdfs:label "Marion Stein" ;
+    data:posIndicesFull "3376:3388",
+        "3892:3904" ;
+    data:posIndicesPart "3752:3757",
+        "4077:4082" ;
+    data:wdtLink wdt:Q2010206 ;
+    :alsoKnownAs "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Lascelles, Countess of Harewood",
+        "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Stein",
+        "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Thorpe",
+        "Maria Stein",
+        "Marion Harewood",
+        "Marion Lascelles, Countess of Harewood",
+        "Marion Thorpe" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Henry_Lascelles-_6th_Earl_of_Harewood a :Person ;
+    rdfs:label "Henry Lascelles, 6th Earl of Harewood" ;
+    data:posIndicesFull "1906:1919",
+        "2168:2181",
+        "2333:2346",
+        "2704:2717",
+        "3354:3367",
+        "4126:4139",
+        "4456:4469",
+        "4580:4593",
+        "534:547" ;
+    data:posIndicesPart "1011:1020",
+        "1394:1403",
+        "1550:1558",
+        "1597:1606",
+        "1803:1812",
+        "2144:2153",
+        "2258:2267",
+        "2865:2874",
+        "3046:3054",
+        "3164:3172",
+        "3481:3489",
+        "3873:3877",
+        "3941:3945",
+        "4438:4447",
+        "874:879",
+        "887:896",
+        "995:1000" ;
+    data:wdtLink wdt:Q2653986 ;
+    :alsoKnownAs "Henry George Charles Lascelles",
+        "Henry George Charles Lascelles, 6th Earl of Harewood",
+        "Henry George Charles Lascelles, Viscount Lascelles",
+        "Henry Harewood",
+        "Henry Lascelles",
+        "Henry Lascelles, Viscount Lascelles",
+        "Lord Harewood" ;
+    :hasSex data:male .
+
+data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Person ;
     rdfs:label "Mary, Princess Royal and Countess of Harewood" ;
     data:posIndicesFull "1026:1039",
         "1026:1062",
-        "3991:4004",
+        "3837:3850",
         "452:465",
         "461:481" ;
     data:posIndicesPart "1210:1214",
         "1550:1558",
         "2624:2629",
         "3046:3054",
-        "3318:3326",
-        "3635:3643",
-        "3749:3754",
-        "3781:3785",
-        "4492:4497",
+        "3164:3172",
+        "3481:3489",
+        "3595:3600",
+        "3627:3631",
+        "4338:4343",
         "601:605",
         "729:734" ;
     data:wdtLink wdt:Q233913 ;
@@ -305,20 +195,32 @@ data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Ancestor,
         "Princess Victoria Alexandra Alice Mary, Viscountess Lascelles",
         "Victoria Alexandra Alice Mary Windsor",
         "Victoria Alexandra Alice Mary, Princess Royal and Countess of Harewood" ;
-    :hasBrother data:Edward_VIII,
-        data:George_VI ;
-    :hasChild data:George_Lascelles-_7th_Earl_of_Harewood ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:female ;
-    :hasSon data:George_Lascelles-_7th_Earl_of_Harewood ;
-    :isAuntOf data:Elizabeth_II ;
-    :isChildOf data:George_V ;
-    :isDaughterOf data:George_V ;
-    :isMotherOf data:George_Lascelles-_7th_Earl_of_Harewood ;
-    :isParentOf data:George_Lascelles-_7th_Earl_of_Harewood ;
-    :isSiblingOf data:Edward_VIII,
-        data:George_VI ;
-    :isSisterOf data:Edward_VIII,
-        data:George_VI .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:George_V a :Person ;
+    rdfs:label "George V" ;
+    data:posIndicesFull "1088:1101",
+        "1093:1101",
+        "316:329",
+        "321:329",
+        "504:517",
+        "509:517",
+        "577:590",
+        "582:590" ;
+    data:posIndicesPart "4608:4614" ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert",
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
+        "George Frederick Ernest Albert Windsor",
+        "George Saxe-Coburg-Gotha",
+        "George V (King of Great Britain)",
+        "George V of the United Kingdom",
+        "George Windsor",
+        "King George V" ;
+    :hasSex data:male .
+
+data:male a :Male .
 

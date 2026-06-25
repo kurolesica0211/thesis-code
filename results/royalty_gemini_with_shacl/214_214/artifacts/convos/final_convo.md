@@ -85,183 +85,40 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Queen Victoria, the British monarch from 1837 to 1901, and Prince Albert (her husband from 1840 until his death in 1861) had 9 children, 42 grandchildren, and 87 great-grandchildren.
-Their first grandchild was the future German Emperor Wilhelm II, who was born to their eldest child, Princess Victoria, on 27 January 1859; the youngest was Prince Maurice of Battenberg, born on 3 October 1891 to Princess Beatrice (1857–1944), who was herself the last child born to Victoria and Albert and the last child to die.
-The last of Victoria and Albert's grandchildren to die (almost exactly 80 years after Queen Victoria herself) was Princess Alice, Countess of Athlone (25 February 1883 – 3 January 1981).
-Just as Victoria and Albert shared one grandfather (Duke Francis of Saxe-Coburg-Saalfeld) and one grandmother (Countess Augusta Reuss), two pairs of their grandchildren married each other:
+Queen Anne-Marie
 
 
-Prince Albert, the Prince Consort (26 August 1819 – 14 December 1861), lived long enough to see only one of his children married (Victoria, the Princess Royal) and two of his grandchildren born (Wilhelm II, 1859–1941, and his sister Princess Charlotte of Prussia, 1860–1919), while Queen Victoria (24 May 1819 – 22 January 1901) lived long enough to see not only all her grandchildren, but many of her 87 great-grandchildren as well.
-(Three of Victoria's 56 great-grandsons were stillborn, another died shortly after birth, and one of her 31 great-granddaughters was born out of wedlock).
-Victoria, the Princess Royal and first child of Victoria and Albert (21 November 1840 – 5 August 1901), known as "Vicky", was not only the mother to their first grandchild, Wilhelm II; she was also the first of Victoria and Albert's children to become a grandparent, with the birth in 1879 of Princess Feodora of Saxe-Meiningen, who was the daughter of Princess Charlotte (Queen Victoria's first granddaughter).
-The Princess Royal was also the grandmother of the last of Victoria and Albert's great-granddaughters to die, Princess Katherine of Greece and Denmark (4 May 1913 – 2 October 2007), daughter of Vicky's fourth daughter, Queen Sophia of Greece.
-After Katherine's death in 2007, the only surviving great-grandchild of Queen Victoria was Count Carl Johan Bernadotte of Wisborg (31 October 1916 – 5 May 2012), born to Crown Princess Margaret of Sweden, daughter of Victoria and Albert's third son, Prince Arthur, Duke of Connaught and Strathearn.
-The death of Count Carl Johan Bernadotte marked the end of a generation of royalty that began in 1879 with the birth of Princess Feodora and included the British Kings Edward VIII and George VI, the Norwegian King Olav V, the Romanian King Carol II and the Greek Kings George II, Alexander and Paul—as well as six uncrowned victims of political assassination: Earl Mountbatten of Burma (last Viceroy of India), Tsarevich Alexei of Russia, and Alexei’s sisters, the Grand Duchesses Olga, Tatiana, Maria and Anastasia.
-Queen Victoria's death in January 1901 was preceded by the deaths of three of her children (Princess Alice in December 1878, Prince Leopold in March 1884, and Prince Alfred in July 1900) and soon followed by the Princess Royal's death in August 1901.
-Aside from the four boys who died as infants, Queen Victoria had survived seven of her grandchildren:
+Queen Sofía of Spain
 
 
-Victoria, Albert and their children
-
-Ancestors of Victoria and Albert
-
-Victoria and Albert had one pair of grandparents in common, Francis, Duke of Saxe-Coburg-Saalfeld, and Countess Augusta Reuss of Ebersdorf, who were parents both of Albert's father Ernest I, Duke of Saxe-Coburg and Gotha, and of Victoria's mother (and Ernest I's sister), Princess Victoria of Saxe-Coburg-Saalfeld.
-Duke Francis & Countess Augusta → Duke Ernest I → Prince Albert
-Duke Francis & Countess Augusta → Princess Victoria → Queen Victoria
+Marina, consort of Prince Michael
 
 
-Another of Victoria's (but not Albert's) grandfathers was King George III, father of Victoria's father, the Duke of Kent, and his brothers, King George IV and King William IV.
-Marriage of Victoria and Albert
+Prince Constantine-Alexios of Greece and Denmark (Greek: Κωνσταντίνος Αλέξιος Ντε Γκρες, romanized: Konstantínos-Aléxios de Grèce; born 29 October 1998) is a Greek painter, sculptor, and member of the former Greek royal family.
+He is the eldest son and second child of Crown Prince Pavlos and Crown Princess Marie-Chantal of Greece.
+Early life and education
 
-Queen Victoria (who had ascended to the throne on 20 June 1837 and been crowned on 28 June 1838) was married to Prince Albert on 10 February 1840 by William Howley, the Archbishop of Canterbury, in the Chapel Royal of St James's Palace in Westminster (London).
-(Albert died nearly fifteen years before Victoria was proclaimed Empress of India on 1 May 1876.)
+Constantine-Alexios was born on 29 October 1998 at Weill Cornell Medical Center in New York City and is the eldest son and second child of Crown Prince Pavlos and Crown Princess Marie-Chantal of Greece.
+He is a grandson of Constantine II and Anne-Marie of Denmark, who were the last King and Queen of the Hellenes.
+Constantine-Alexios was christened in a Greek Orthodox ceremony at St. Sophia's Cathedral, London, on 15 April 1999.
+His godparents are Prince Nikolaos of Greece and Denmark; Prince Dimitri of Yugoslavia; King Frederik X of Denmark, King Felipe VI of Spain; William, Prince of Wales; Victoria, Crown Princess of Sweden; Princess Alexandra zu Fürstenberg; and Doris Robbs.
+Constantine-Alexios grew up in London from the age of four, and began his education at Wetherby School in London but later he attended Wellington College where he graduated in 2017.
+Career
 
+Constantine-Alexios has modeled for Dior, including for fashion photographer Nikolai von Bismarck for the book The Dior Sessions, which was the first book from Dior entirely with focus on men's fashion from Dior Homme.
+Constantine-Alexios paints and sculpts, often inspired by Greek mythology.
+Personal life
 
-20 grandsons (of whom 2 were stillborn), 22 granddaughters including
-
-
-Children of Victoria and Albert
-
-Queen Victoria, at times, had contentious relations with her children.
-According to one modern author, both Victoria and Albert weren't above playing favourites with their children, and unfortunately did little to hide their favouritism.
-According to one modern author, Victoria was initially jealous of the time that Albert had spent with Vicky, but in her widowhood, Victoria made Vicky something of her confidante, and for her part, Vicky had accrued hundreds of letters from her mother, to the point that shortly before her death, she had them smuggled out of Germany by her brother's secretary, Sir Frederick Ponsonby.
-Of her sons, Victoria had the most trouble with her eldest, Albert Edward, and her youngest, Leopold.
-Among her daughters, Victoria clashed often with Louise.
-In her widowhood, Victoria expected Beatrice, who was only 4 when her father died, to remain at home with her, and only permitted her to marry on the condition that she and her husband would remain in England.
-Children and grandchildren of Victoria and Albert
-
-Victoria, Princess Royal
-
-The eldest child of Victoria and Albert was Princess Victoria, the Princess Royal, called "Vicky" (1840–1901).
-On 25 January 1858, she married Prince Frederick Wilhelm of Prussia (1831–1888; Crown Prince from 1861, German Emperor March–June 1888).
-Not only was the Princess Royal the first child of Queen Victoria and Prince Albert, she also gave them their first grandchild (the future Emperor Wilhelm II, 27 January 1859 – 4 June 1941) and was the grandmother to both the first of their 87 great-grandchildren to be born, Princess Feodora of Saxe-Meiningen (12 May 1879 – 26 August 1945), daughter of Princess Charlotte, and to the last of their 29 great-granddaughters to die, Princess Katherine of Greece and Denmark (4 May 1913 – 2 October 2007), daughter of Princess Sophie.
-Queen Victoria → Princess Victoria → German Emperor Wilhelm II → Princess Victoria Louise of Prussia → Princess Frederica of Hanover (Queen of the Hellenes) → King Constantine II
-
-
-Queen Victoria → Princess Victoria → Princess Sophie of Prussia → King Paul → King Constantine II
-
-
-Queen Victoria → Princess Victoria → Princess Sophie of Prussia → Helen, Queen of Romania → King Michael I
-
-
-Children of the Princess Royal and Crown Prince Frederick William of Prussia
-
-The portrait below shows the Princess Royal with her husband Frederick William and with Victoria and Albert's first two grandchildren, the future Kaiser Wilhelm II (1859–1941) and Princess Charlotte (1860–1919), who were the only grandchildren born during Albert's lifetime.
-Edward VII
-
-Prince Albert Edward (1841–1910), then the Prince of Wales, married Princess Alexandra of Denmark (1844–1925), later Queen Alexandra of the United Kingdom, on 10 March 1863.
-The Prince of Wales became King Edward VII and Emperor of India at the death of his mother Queen Victoria on 22 January 1901.
-Edward and Alexandra's son, King George V, (reigned 1910–1936) was the father of Kings Edward VIII (reigned 1936) and George VI (1936–1952), and thereby the paternal grandfather of Queen Elizabeth II (reigned 1952–2022) and her sister Princess Margaret (1930–2002).
-Elizabeth and Margaret were therefore great-granddaughters of Edward VII and great-great-granddaughters of Queen Victoria.
-Queen Victoria → King Edward VII → King George V → King George VI → Queen Elizabeth II → King Charles III
-
-
-Edward and Alexandra's daughter Princess Maud of Wales became Queen of Norway when her husband, Prince Carl of Denmark, became King Haakon VII (1905–1957) upon the dissolution of Norway's union with Sweden in 1905.
-Their son, and Edward's grandson, became King Olav V (1957–1991); and Olav's children, King Harald V (since 1991), Princess Ragnhild and Princess Astrid, are thus great-grandchildren of Edward VII and great-great-grandchildren of Victoria and Albert.
-Queen Victoria → King Edward VII → Princess Maud of Wales (Queen of Norway) → King Olav V → King Harald V
-
-
-Children of King Edward VII and Queen Alexandra
-
-Princess Alice
-
-Princess Alice (1843–1878) married Prince Louis of Hesse (1837–1892), later Grand Duke Louis IV of Hesse, on 1 July 1862.
-Prince Ludwig succeeded to the Grand Duchy of Hesse as Grand Duke Louis IV of Hesse, and Princess Alice as the Grand Duchess of Hesse, on 13 July 1877.
-Alice and Louis's daughter, Princess Victoria of Hesse and by Rhine, married Prince Louis of Battenberg, and was the mother of Princess Alice of Battenberg (1885–1969), who became Alice, Princess Andrew of Greece and Denmark, when she married Prince Andrew of Greece and Denmark on 6 October 1903.
-Princess Alice was the mother of Prince Philip, Duke of Edinburgh, the husband of Queen Elizabeth II.
-Princess Victoria was also the mother of Queen Louise of Sweden.
-Queen Victoria → Princess Alice → Princess Victoria of Hesse → Princess Alice of Battenberg → Prince Philip, Duke of Edinburgh
-
-
-Alice and Louis's second daughter, Princess Elisabeth of Hesse and by Rhine, married, in 1884, the Russian Grand Duke Sergei Alexandrovich, the fifth son of Tsar Alexander II and Empress Maria Alexandrovna, and younger brother of the then reigning Tsar Alexander III.
-Prince Ernest Louis became Ernest Louis, Grand Duke of Hesse, upon his father's death in March 1892.
-He married his first cousin, Princess Victoria Melita of Saxe-Coburg and Gotha (1876-1936), in April 1894, and had one daughter, Princess Elisabeth of Hesse who died of typhoid fever, aged 8.
-The Grand Duke married for a second time to Princess Eleonore of Solms-Hohensolms-Lich (1871–1937), and had two sons: Georg Donatus, Hereditary Grand Duke of Hesse who married Princess Cecilie of Greece and Denmark, sister of Prince Philip, Duke of Edinburgh, and had issue, and Prince Louis of Hesse and by Rhine.
-Princess Alix of Hesse, the youngest surviving child of the Grand Ducal pair, became the last Empress of All the Russias through her marriage to Nicholas II of Russia in 1894.
-Queen Victoria → Princess Alice → Princess Alix of Hesse (Tsarina Alexandra Feodorovna of Russia)
-
-
-Children of Princess Alice and Louis IV of Hesse
-
-¶
-The entire family was killed in July 1918 in the aftermath of the Bolshevik Revolution, as was Alexandra's sister, the Grand Duchess Elisabeth (Princess Elisabeth of Hesse) the following day.
-Alfred, Duke of Saxe-Coburg and Gotha
-
-Prince Alfred (1844–1900) married the Grand Duchess Maria Alexandrovna of Russia (1853–1920), the only surviving daughter of Tsar Alexander II and Empress Marie Alexandrovna, on 23 January 1874 at the Winter Palace in St Petersburg, Russia.
-In June 1893, Prince Alfred achieved the Royal Navy rank of Admiral of the Fleet, shortly before succeeding his paternal uncle, Ernest II, as Duke of Saxe-Coburg and Gotha in August 1893.
-Prince Alfred's daughter (and Queen Victoria's granddaughter) Princess Marie of Edinburgh became Queen of Romania in 1914 after marrying the future King Ferdinand in 1893.
-Queen Victoria → Prince Alfred → Princess Marie of Edinburgh (Queen of Romania) → King Carol II → King Michael I
-Queen Victoria → Prince Alfred → Princess Marie of Edinburgh (Queen of Romania) → Princess Elisabeth of Romania (Queen of the Hellenes)
-Queen Victoria → Prince Alfred → Princess Marie of Edinburgh (Queen of Romania) → Princess Marie of Romania (Queen of Yugoslavia) → King Peter II
-
-
-Children of Alfred, Duke of Edinburgh, and Grand Duchess Marie
-
-Princess Helena
-
-Princess Helena (1846–1923) married Prince Christian of Schleswig-Holstein (1831–1917) in Windsor Castle's private chapel on 5 July 1866.
-Princess Helena and Prince Christian had no legitimate grandchildren and one natural granddaughter who died without having issue of her own.
-Like other British royal holders of German titles (such as Admiral Louis Battenberg), Princess Helena, Prince Christian, and their two daughters gave up their titles to Schleswig-Holstein in 1917 when the British and German Empires were at war.
-Children of Princess Helena and Prince Christian of Schleswig-Holstein
-
-Princess Louise
-
-Princess Louise (1848–1939), who married John Campbell, 9th Duke of Argyll (1845–1914) in 1871, was the only one of Victoria's nine children who was childless.
-She was the first British monarch's child since 1515 to marry a subject rather than someone of royal blood.
-Prince Arthur, Duke of Connaught and Strathearn
-
-Prince Arthur (1850–1942) married Princess Louise Margaret of Prussia (1860–1917) on 13 March 1879 at St George's Chapel in Windsor Castle.
-He thus became the first, and so far only, Governor General of Canada to be of the Blood Royal, although he had been preceded in this office from 1878 to 1883 by the Marquess of Lorne, the non-royal husband of his sister Princess Louise (see above).
-Prince Arthur's elder daughter (and Queen Victoria's granddaughter) Princess Margaret of Connaught became Crown Princess of Sweden in 1907 after marrying the future Gustaf VI Adolf of Sweden in 1905 (however, Margaret died before Gustav became king).
-Queen Victoria → Prince Arthur → Princess Margaret of Connaught → Prince Gustaf Adolf, Duke of Västerbotten → King Carl XVI Gustaf
-Queen Victoria → Prince Arthur → Princess Margaret of Connaught → Princess Ingrid of Sweden → Queen Margrethe II of Denmark → King Frederik X of Denmark
-Queen Victoria → Prince Arthur → Princess Margaret of Connaught → Princess Ingrid of Sweden → Queen Anne Marie of Greece
-Queen Victoria → Prince Arthur → Princess Margaret of Connaught → Count Carl Johan Bernadotte
-
-
-Children of Arthur, Duke of Connaught, and Princess Louise Margaret of Prussia
-
-Prince Leopold, Duke of Albany
-
-Prince Leopold (1853–1884) married Princess Helen of Waldeck and Pyrmont (1861–1922) on 27 April 1882 at St George's Chapel, Windsor Castle.
-He inherited the disease of haemophilia from his mother, Queen Victoria, and spent most of his life as a semi-invalid.
-His daughter, Princess Alice of Albany, married Prince Alexander of Teck, the younger brother of Queen Mary, in February 1904 and became Countess of Athlone when her husband was created Earl of Athlone in June 1917.
-She has, so far, been the longest-lived Princess of the Blood Royal of Britain and was the last surviving grandchild of Queen Victoria.
-Prince Charles Edward, Prince Leopold's posthumous son, succeeded him at birth as the 2nd Duke of Albany.
-In 1900, Charles Edward succeeded his paternal uncle, Alfred, as Duke of Saxe-Coburg and Gotha, but was forced to abdicate his ducal throne during the German Revolution of 1918, later gaining high positions in and through the Nazi movement.
-Because of his support for Germany in World War I, he lost his English knighthood in the Order of the Garter in 1915 and his British royal titles, peerages and honours in 1919.
-He is the grandfather of Carl XVI Gustaf of Sweden through his elder daughter, Princess Sibylla.
-Queen Victoria → Prince Leopold → Prince Charles Edward → Princess Sibylla of Saxe-Coburg and Gotha → King Carl XVI Gustaf
-
-
-Children of Leopold, Duke of Albany, and Princess Helena
-
-Princess Beatrice
-
-Princess Beatrice (1857–1944) married Prince Henry of Battenberg (1858–1896) on 23 July 1885 in St. Mildred's Church, Whippingham on the Isle of Wight.
-They had 3 sons, 1 daughter (the future Queen Victoria Eugenia of Spain), 5 grandsons (1 stillborn) and 3 granddaughters.
-The present King Felipe VI of Spain, as the great-grandson of Victoria Eugenie, is the great-great-grandson of Princess Beatrice and thus the great-great-great-grandson of Queen Victoria.
-Queen Victoria → Princess Beatrice → Princess Victoria Eugenie of Battenberg (Queen of Spain) → Infante Juan, Count of Barcelona → King Juan Carlos I → King Felipe VI
-
-
-Due to anti-German feeling during the First World War, the members of the Battenberg family who were British citizens relinquished their titles of Prince and Princess of Battenberg and the styles of Highness and Serene Highness.
-Under Royal Warrant, they instead took the surname Mountbatten, an Anglicised form of Battenberg.
-Both Prince Henry and his youngest son Prince Maurice (the lastborn of Victoria's grandchildren) died on active military service, the father from malaria contracted during the Ashanti War and the son in battle on the Western Front of World War I.
-
-
-Children of Princess Beatrice and Prince Henry of Battenberg
-
-See also
-
-References
-
-Sources and external links
+In March 2023, press speculated that Constantine-Alexios was in a relationship with British model and socialite Poppy Delevingne, indicating that Delevingne and her husband had separated permanently.
+Οn 20 December 2024, Constantine-Alexios along with other members of the former royal family acquired Greek citizenship, under the surname de Grèce.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -277,39 +134,9 @@ Sources and external links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -324,6 +151,23 @@ Sources and external links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -341,6 +185,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -408,29 +267,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -439,6 +290,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -451,6 +310,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -459,17 +320,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -497,6 +360,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -512,140 +459,75 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (aa5ff2a1-b900-4f3b-a9a7-5cbaf161ec64)
- Call ID: aa5ff2a1-b900-4f3b-a9a7-5cbaf161ec64
+  AssignClass (387ed9ad-6fc3-4fe6-b7be-93a245a4ba7b)
+ Call ID: 387ed9ad-6fc3-4fe6-b7be-93a245a4ba7b
   Args:
-    source: Queen_Victoria
     type: :Woman
-  AddLiteral (8e42563c-d5e9-49fb-9b45-dd1e7089b0ae)
- Call ID: 8e42563c-d5e9-49fb-9b45-dd1e7089b0ae
+    source: :Anne-Marie
+  AssignClass (3d2442a0-5271-4b4a-b36a-bf80f8a46b3c)
+ Call ID: 3d2442a0-5271-4b4a-b36a-bf80f8a46b3c
   Args:
-    literal_value: 1819
-    source: Queen_Victoria
+    source: :Sofia
+    type: :Woman
+  AssignClass (e2aa8fd6-ebd5-40d1-aa44-7305a5a45177)
+ Call ID: e2aa8fd6-ebd5-40d1-aa44-7305a5a45177
+  Args:
+    source: :Marina
+    type: :Woman
+  AssignClass (dd26ca6c-b4f5-40a6-8ed4-77377e8a9020)
+ Call ID: dd26ca6c-b4f5-40a6-8ed4-77377e8a9020
+  Args:
+    type: :Man
+    source: :Constantine-Alexios
+  AssignClass (d266d19f-9a28-4a6e-a63e-3e25941a97f7)
+ Call ID: d266d19f-9a28-4a6e-a63e-3e25941a97f7
+  Args:
+    type: :Man
+    source: :Pavlos
+  AssignClass (3938631e-d536-40a0-a358-fa8aac587f61)
+ Call ID: 3938631e-d536-40a0-a358-fa8aac587f61
+  Args:
+    source: :Marie-Chantal
+    type: :Woman
+  AssignClass (063f82d4-0967-40be-b68f-5418de3334ed)
+ Call ID: 063f82d4-0967-40be-b68f-5418de3334ed
+  Args:
+    type: :Man
+    source: :ConstantineII
+  AddLiteral (07ebdb2f-59f2-4438-9061-a63e13e6fab5)
+ Call ID: 07ebdb2f-59f2-4438-9061-a63e13e6fab5
+  Args:
     literal_type: xsd:integer
+    source: :Constantine-Alexios
+    literal_value: 1998
     relation: :hasBirthYear
-  AddLiteral (b1546cd2-c2f9-4ce3-81ea-d595a8af222b)
- Call ID: b1546cd2-c2f9-4ce3-81ea-d595a8af222b
+  AddTriple (1e6f31fc-77e3-435d-971e-ee3e36c15d64)
+ Call ID: 1e6f31fc-77e3-435d-971e-ee3e36c15d64
   Args:
-    relation: :hasDeathYear
-    source: Queen_Victoria
-    literal_value: 1901
-    literal_type: xsd:integer
-  AssignClass (2467b423-8002-409f-9640-40978dd8f67e)
- Call ID: 2467b423-8002-409f-9640-40978dd8f67e
+    relation: :isSonOf
+    source: :Constantine-Alexios
+    target: :Pavlos
+  AddTriple (eb3899f3-2367-4d63-af20-7ffc002a8dfd)
+ Call ID: eb3899f3-2367-4d63-af20-7ffc002a8dfd
   Args:
-    source: Prince_Albert
-    type: :Man
-  AddLiteral (e772e197-2094-405f-8256-b98ff7c09f64)
- Call ID: e772e197-2094-405f-8256-b98ff7c09f64
+    source: :Constantine-Alexios
+    target: :Marie-Chantal
+    relation: :isSonOf
+  AddTriple (7df93f05-f40d-473f-b088-db1ea5236a8e)
+ Call ID: 7df93f05-f40d-473f-b088-db1ea5236a8e
   Args:
-    source: Prince_Albert
-    literal_value: 1819
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (93509663-b1ff-441c-bcf8-b5c97b781f7c)
- Call ID: 93509663-b1ff-441c-bcf8-b5c97b781f7c
+    target: :ConstantineII
+    source: :Constantine-Alexios
+    relation: :isSonOf
+  AddTriple (70ebb6e4-70e3-454b-a231-2320f9264adc)
+ Call ID: 70ebb6e4-70e3-454b-a231-2320f9264adc
   Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1861
-    source: Prince_Albert
-  AddLiteral (a427a760-c1d1-4005-b6ea-a53cb4c2eb48)
- Call ID: a427a760-c1d1-4005-b6ea-a53cb4c2eb48
+    target: :Anne-Marie
+    source: :Constantine-Alexios
+    relation: :isSonOf
+  Finish (1505931a-57b0-4fbc-9b56-747d5ae6c321)
+ Call ID: 1505931a-57b0-4fbc-9b56-747d5ae6c321
   Args:
-    literal_type: xsd:integer
-    source: Queen_Victoria
-    literal_value: 1840
-    relation: :hasMarriageYear
-  AddTriple (ca15d37d-41a3-4ade-8b44-3518805619fb)
- Call ID: ca15d37d-41a3-4ade-8b44-3518805619fb
-  Args:
-    target: Prince_Albert
-    source: Queen_Victoria
-    relation: :hasRelation
-  AssignClass (59e61719-d2a4-4cb0-93c2-0edabb98df6e)
- Call ID: 59e61719-d2a4-4cb0-93c2-0edabb98df6e
-  Args:
-    source: Duke_Francis_of_Saxe-Coburg-Saalfeld
-    type: :Man
-  AssignClass (12f2776d-0ae2-41b7-838a-77dadc067939)
- Call ID: 12f2776d-0ae2-41b7-838a-77dadc067939
-  Args:
-    type: :Woman
-    source: Countess_Augusta_Reuss
-  AssignClass (6bc4df66-7e74-43c6-afb4-41159668eab4)
- Call ID: 6bc4df66-7e74-43c6-afb4-41159668eab4
-  Args:
-    type: :Man
-    source: Duke_Ernest_I
-  AssignClass (51b5f93b-8578-460c-9e84-9d6f142f1dfc)
- Call ID: 51b5f93b-8578-460c-9e84-9d6f142f1dfc
-  Args:
-    type: :Woman
-    source: Princess_Victoria_of_Saxe-Coburg-Saalfeld
-  AddTriple (0db140e2-f637-4b2a-b3f9-5a4cc7772316)
- Call ID: 0db140e2-f637-4b2a-b3f9-5a4cc7772316
-  Args:
-    source: Duke_Francis_of_Saxe-Coburg-Saalfeld
-    target: Duke_Ernest_I
-    relation: :isFatherOf
-  AddTriple (402f7472-31f0-4150-93eb-c8ab7aee3bd4)
- Call ID: 402f7472-31f0-4150-93eb-c8ab7aee3bd4
-  Args:
-    relation: :isMotherOf
-    target: Duke_Ernest_I
-    source: Countess_Augusta_Reuss
-  AddTriple (24629ddc-657b-4bbd-a36f-d77ffc8682f5)
- Call ID: 24629ddc-657b-4bbd-a36f-d77ffc8682f5
-  Args:
-    relation: :isFatherOf
-    source: Duke_Francis_of_Saxe-Coburg-Saalfeld
-    target: Princess_Victoria_of_Saxe-Coburg-Saalfeld
-  AddTriple (09a6bcab-a246-44d7-91fd-7e61ea8baf79)
- Call ID: 09a6bcab-a246-44d7-91fd-7e61ea8baf79
-  Args:
-    source: Countess_Augusta_Reuss
-    target: Princess_Victoria_of_Saxe-Coburg-Saalfeld
-    relation: :isMotherOf
-  AddTriple (5bd01253-8f4d-4f8c-b84b-7cee6ab8edea)
- Call ID: 5bd01253-8f4d-4f8c-b84b-7cee6ab8edea
-  Args:
-    relation: :isFatherOf
-    source: Duke_Ernest_I
-    target: Prince_Albert
-  AddTriple (720e2c9a-a39d-4ceb-a6ee-6e1a4c19a4ee)
- Call ID: 720e2c9a-a39d-4ceb-a6ee-6e1a4c19a4ee
-  Args:
-    source: Princess_Victoria_of_Saxe-Coburg-Saalfeld
-    target: Queen_Victoria
-    relation: :isMotherOf
-  Finish (079f36be-c2fb-4247-a9a0-344efdfee6f7)
- Call ID: 079f36be-c2fb-4247-a9a0-344efdfee6f7
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -698,29 +580,24 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Countess_Augusta_Reuss a :Woman ;
-      :isMotherOf data:Duke_Ernest_I,
-          data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .
+  data:Constantine-Alexios a :Man ;
+      :hasBirthYear 1998 ;
+      :isSonOf data:Anne-Marie,
+          data:ConstantineII,
+          data:Marie-Chantal,
+          data:Pavlos .
 
-  data:Duke_Francis_of_Saxe-Coburg-Saalfeld a :Man ;
-      :isFatherOf data:Duke_Ernest_I,
-          data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .
+  data:Marina a :Woman .
 
-  data:Queen_Victoria a :Woman ;
-      :hasBirthYear 1819 ;
-      :hasDeathYear 1901 ;
-      :hasMarriageYear 1840 ;
-      :hasRelation data:Prince_Albert .
+  data:Sofia a :Woman .
 
-  data:Duke_Ernest_I a :Man ;
-      :isFatherOf data:Prince_Albert .
+  data:Anne-Marie a :Woman .
 
-  data:Prince_Albert a :Man ;
-      :hasBirthYear 1819 ;
-      :hasDeathYear 1861 .
+  data:ConstantineII a :Man .
 
-  data:Princess_Victoria_of_Saxe-Coburg-Saalfeld a :Woman ;
-      :isMotherOf data:Queen_Victoria .
+  data:Marie-Chantal a :Woman .
+
+  data:Pavlos a :Man .
 
 
 
@@ -732,46 +609,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (b5c7cefa-bdf9-4490-b9df-4e8116d3e1b4)
- Call ID: b5c7cefa-bdf9-4490-b9df-4e8116d3e1b4
+  ValidateShacl (cd2e7af0-de0a-4fa7-8c6d-e6e6c93a64b6)
+ Call ID: cd2e7af0-de0a-4fa7-8c6d-e6e6c93a64b6
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:4
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Princess_Victoria_of_Saxe-Coburg-Saalfeld is used as a subject of the property :isMotherOf, but it lacks the mandatory class :Ancestor.
+      The node Constantine-Alexios has a relationship isSonOf pointing to ConstantineII, but ConstantineII lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add the class :Ancestor to the node :Princess_Victoria_of_Saxe-Coburg-Saalfeld.
+      AssignClass(node: ConstantineII, class: :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Countess_Augusta_Reuss is used as a subject of the property :isMotherOf, but it lacks the mandatory class :Ancestor.
+      The node Constantine-Alexios has a relationship isSonOf pointing to Marie-Chantal, but Marie-Chantal lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add the class :Ancestor to the node :Countess_Augusta_Reuss.
+      AssignClass(node: Marie-Chantal, class: :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Duke_Ernest_I is used as a subject of the property :isFatherOf, but it lacks the mandatory class :Ancestor.
+      The node Constantine-Alexios has a relationship isSonOf pointing to Pavlos, but Pavlos lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add the class :Ancestor to the node :Duke_Ernest_I.
+      AssignClass(node: Pavlos, class: :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Duke_Francis_of_Saxe-Coburg-Saalfeld is used as a subject of the property :isFatherOf, but it lacks the mandatory class :Ancestor.
+      The node Constantine-Alexios has a relationship isSonOf pointing to Anne-Marie, but Anne-Marie lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add the class :Ancestor to the node :Duke_Francis_of_Saxe-Coburg-Saalfeld.
+      AssignClass(node: Anne-Marie, class: :Ancestor)
+
+
+  Violation [5]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Constantine-Alexios has a relationship isSonOf pointing to ConstantineII, but ConstantineII lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: ConstantineII, class: :Ancestor)
+
+
+  Violation [6]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Constantine-Alexios has a relationship isSonOf pointing to Marie-Chantal, but Marie-Chantal lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Marie-Chantal, class: :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Constantine-Alexios has a relationship isSonOf pointing to Pavlos, but Pavlos lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Pavlos, class: :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Constantine-Alexios has a relationship isSonOf pointing to Anne-Marie, but Anne-Marie lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Anne-Marie, class: :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Constantine-Alexios has a relationship isSonOf pointing to ConstantineII, but ConstantineII lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: ConstantineII, class: :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Constantine-Alexios has a relationship isSonOf pointing to Marie-Chantal, but Marie-Chantal lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Marie-Chantal, class: :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Constantine-Alexios has a relationship isSonOf pointing to Pavlos, but Pavlos lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Pavlos, class: :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Constantine-Alexios has a relationship isSonOf pointing to Anne-Marie, but Anne-Marie lacks the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: Anne-Marie, class: :Ancestor)
 
 
 
@@ -780,28 +721,28 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (db7387a8-4400-4241-8321-5d5bf737e7cf)
- Call ID: db7387a8-4400-4241-8321-5d5bf737e7cf
-  Args:
-    source: Princess_Victoria_of_Saxe-Coburg-Saalfeld
-    type: :Ancestor
-  AssignClass (8f1680eb-3e88-4fc7-87dd-5e5bdb31bd2e)
- Call ID: 8f1680eb-3e88-4fc7-87dd-5e5bdb31bd2e
+  AssignClass (1928ccd7-6f4f-4ad8-9422-d2e4565b6ae4)
+ Call ID: 1928ccd7-6f4f-4ad8-9422-d2e4565b6ae4
   Args:
     type: :Ancestor
-    source: Countess_Augusta_Reuss
-  AssignClass (24963f2f-1ba2-4960-abb7-29598c49b829)
- Call ID: 24963f2f-1ba2-4960-abb7-29598c49b829
+    source: :ConstantineII
+  AssignClass (ab45b185-27da-4467-9c03-bc0e8303472a)
+ Call ID: ab45b185-27da-4467-9c03-bc0e8303472a
   Args:
-    source: Duke_Ernest_I
+    source: :Marie-Chantal
     type: :Ancestor
-  AssignClass (6593747c-697b-46a9-9167-b723374a62e1)
- Call ID: 6593747c-697b-46a9-9167-b723374a62e1
+  AssignClass (f26c091d-4c64-4888-871b-66b516fc8fe6)
+ Call ID: f26c091d-4c64-4888-871b-66b516fc8fe6
   Args:
-    source: Duke_Francis_of_Saxe-Coburg-Saalfeld
+    source: :Pavlos
     type: :Ancestor
-  ValidateShacl (762020f7-d15d-4740-bea8-cb93787c86f0)
- Call ID: 762020f7-d15d-4740-bea8-cb93787c86f0
+  AssignClass (18b92f92-66a6-485b-a43d-718a64078dc5)
+ Call ID: 18b92f92-66a6-485b-a43d-718a64078dc5
+  Args:
+    type: :Ancestor
+    source: :Anne-Marie
+  Finish (1f8f8016-8083-4c90-9319-056697ed19d3)
+ Call ID: 1f8f8016-8083-4c90-9319-056697ed19d3
   Args:
 
 ================================= Tool Message =================================
@@ -823,35 +764,42 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Countess_Augusta_Reuss a :Ancestor,
-          :Woman ;
-      :isMotherOf data:Duke_Ernest_I,
-          data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .
+  data:Constantine-Alexios a :Man ;
+      :hasBirthYear 1998 ;
+      :isSonOf data:Anne-Marie,
+          data:ConstantineII,
+          data:Marie-Chantal,
+          data:Pavlos .
 
-  data:Duke_Francis_of_Saxe-Coburg-Saalfeld a :Ancestor,
-          :Man ;
-      :isFatherOf data:Duke_Ernest_I,
-          data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .
+  data:Marina a :Woman .
 
-  data:Queen_Victoria a :Woman ;
-      :hasBirthYear 1819 ;
-      :hasDeathYear 1901 ;
-      :hasMarriageYear 1840 ;
-      :hasRelation data:Prince_Albert .
+  data:Sofia a :Woman .
 
-  data:Duke_Ernest_I a :Ancestor,
-          :Man ;
-      :isFatherOf data:Prince_Albert .
+  data:Anne-Marie a :Ancestor,
+          :Woman .
 
-  data:Prince_Albert a :Man ;
-      :hasBirthYear 1819 ;
-      :hasDeathYear 1861 .
+  data:ConstantineII a :Ancestor,
+          :Man .
 
-  data:Princess_Victoria_of_Saxe-Coburg-Saalfeld a :Ancestor,
-          :Woman ;
-      :isMotherOf data:Queen_Victoria .
+  data:Marie-Chantal a :Ancestor,
+          :Woman .
+
+  data:Pavlos a :Ancestor,
+          :Man .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (ad3ccc7d-854c-40a6-b47d-5550443b1056)
+ Call ID: ad3ccc7d-854c-40a6-b47d-5550443b1056
+  Args:
 
 ================================= Tool Message =================================
 
@@ -861,6 +809,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (54ae2bd6-bd51-4951-8de0-a13fff9bfd9a)
- Call ID: 54ae2bd6-bd51-4951-8de0-a13fff9bfd9a
+  Finish (b28c1615-a098-4d4f-9147-aa8f42863e8e)
+ Call ID: b28c1615-a098-4d4f-9147-aa8f42863e8e
   Args:

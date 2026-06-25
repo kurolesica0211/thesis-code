@@ -2,47 +2,54 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Isabella_Vita_Marina a :Person,
+data:AlexanderGeorgievichRomanov a :Man ;
+    :hasBirthYear 2022 ;
+    :hasFather data:GeorgeMikhailovich ;
+    :hasMother data:VictoriaRomanovnaBettarini ;
+    :hasSex data:Male .
+
+data:KiraLeonidaGeorgievnaRomanova a :Woman ;
+    :hasBirthYear 2025 ;
+    :hasFather data:GeorgeMikhailovich ;
+    :hasMother data:VictoriaRomanovnaBettarini ;
+    :hasSex data:Female .
+
+data:FranzWilhelmOfPrussia a :Ancestor,
+        :Man ;
+    :hasFather data:KarlFranzOfPrussia ;
+    :hasMother data:HenrietteOfSchoenaichCarolath ;
+    :hasSex data:Male .
+
+data:HenrietteOfSchoenaichCarolath a :Ancestor,
         :Woman ;
-    :isDaughterOf data:Prince_Aimone_Duke_of_Aosta,
-        data:Princess_Olga_Isabelle_of_Savoy-Aosta .
+    :hasSex data:Female .
 
-data:Princess_Alexandra a :Person,
+data:KarlFranzOfPrussia a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:MariaVladimirovna a :Ancestor,
         :Woman ;
-    :isSisterOf data:Princess_Olga_Isabelle_of_Savoy-Aosta .
+    :hasFather data:VladimirCyrillovich ;
+    :hasSex data:Female .
 
-data:Princess_Irene_Duchess_of_Aosta a :Ancestor,
-        :Person,
+data:VladimirCyrillovich a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:GeorgeMikhailovich a :Ancestor,
+        :Man ;
+    :hasBirthYear 1981 ;
+    :hasFather data:FranzWilhelmOfPrussia ;
+    :hasMother data:MariaVladimirovna ;
+    :hasSex data:Male .
+
+data:VictoriaRomanovnaBettarini a :Ancestor,
         :Woman ;
-    :isMotherOf data:Amedeo_5th_Duke_of_Aosta .
+    :hasBirthYear 1982 ;
+    :hasSex data:Female .
 
-data:Theodoros_Karellas a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:Marina_Karella .
+data:Female a :Sex .
 
-data:Amedeo_5th_Duke_of_Aosta a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:Prince_Aimone_Duke_of_Aosta .
-
-data:Prince_Michael_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person .
-
-data:Marina_Karella a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Princess_Olga_Isabelle_of_Savoy-Aosta a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear "1971"^^xsd:positiveInteger ;
-    :hasRelation data:Prince_Aimone_Duke_of_Aosta ;
-    :isDaughterOf data:Marina_Karella,
-        data:Prince_Michael_of_Greece_and_Denmark .
-
-data:Prince_Aimone_Duke_of_Aosta a :Ancestor,
-        :Man,
-        :Person .
+data:Male a :Sex .
 

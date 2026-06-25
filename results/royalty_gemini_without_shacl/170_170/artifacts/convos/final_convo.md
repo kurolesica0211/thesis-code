@@ -69,32 +69,43 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Infanta Maria Cristina of Spain, Countess Marone-Cinzano (María Cristina Teresa Alejandra María de Guadalupe María de la Concepción Ildefonsa Victoria Eugenia de Borbón y Battenberg; 12 December 1911 – 23 December 1996) was the fourth surviving child and youngest daughter of Alfonso XIII of Spain and Victoria Eugenie of Battenberg and paternal aunt of King Juan Carlos I.
+Queen Margrethe II
 
 
+Count Nikolai of Monpezat SK (born Prince Nikolai of Denmark; 28 August 1999) is a member of the Danish royal family.
+He is the eldest son of Prince Joachim and his first wife, Alexandra, Countess of Frederiksborg, the eldest grandchild of Queen Margrethe II and Prince Henrik, and the eldest nephew of King Frederik X.
 Biography
 
-Early life
+Nikolai was born a prince of Denmark at Rigshospitalet in Copenhagen on 28 August 1999.
+He is the oldest grandchild of Queen Margrethe II and her late husband, Prince Henrik.
+Nikolai was baptised in the chapel of the Fredensborg Palace on 6 November 1999 by the Danish Chaplain-in-Ordinary, Christian Thodberg.
+At the christening, the musical work Lys på din vej, composed by Frederik Magle and dedicated to the prince, was performed for the first time.
+His godparents are his paternal uncle King Frederik X, his maternal aunt Nicola Baird, Prince Edward, Duke of Edinburgh, Peter Steenstrup and Camilla Flint.
+After their divorce in 2005, Prince Joachim and Alexandra had joint custody of the prince and his brother Prince Felix.
+Nikolai and Felix have two half-siblings, Henrik and Athena, from their father's second marriage to Marie Cavallier.
+Nikolai was confirmed on 18 May 2013 in Fredensborg Palace Church in the presence of his immediate family and all his godparents.
+Like his father and uncle, Nikolai attended Krebs School in Copenhagen.
+As part of that course, in 2023, Nikolai moved to Australia to take a semester at University of Technology Sydney.
+In early 2018, Nikolai signed as a fashion model with the agency Scoop Models.
+In February 2023, Nikolai signed as a model for Elite Model World - Paris under the name of 'Nikolai'.
+Subsequently, in May he also signed with Barcelona-based modeling agency Sight Management Studio as 'Count Nikolai of Monpezat'.
+In June 2024, Nikolai graduated from Copenhagen Business School with a Master of Science in Merchandising degree (cand.merc.).
+In December 2025, it was announced that Nikolai would make his acting debut in the film adaptation of Hjalmar Söderberg's novel Doktor Glas (1905).
+Titles, styles and honours
 
-Infanta Maria Cristina was born at the Palacio Real in Madrid, Spain.
-By 1933 King Alfonso and his daughters, the Infantas Beatriz and Maria Cristina, had moved to Rome.
-Their father warned would-be suitors of the inherent dangers of hemophilia, from which two of the king's sons, Alfonso and Gonzalo, suffered.
-Maria Cristina had one step-son, from Enrico's previous marriage to Noemí Rosa de Alcorta y García-Mansilla (1907-1929):
+Titles and styles
 
-
-The marriage of Maria Cristina and Enrico Eugenio produced four daughters:
-
-
-Death
-
-Infanta Maria Cristina returned to Spain and spent periods of time there, but never lived there permanently.
-A funeral service for the Infanta was held in the chapel of the Royal Palace of Madrid on 24 December and a burial service was held on 26 December in the Marone-Cinzano Pantheon in Turin.
+Originally styled "His Highness Prince Nikolai of Denmark", Nikolai's style was expanded on 29 April 2008 to "His Highness Prince Nikolai of Denmark, Count of Monpezat".
+In September 2022, Queen Margrethe II decided to restrict the titles Prince and Princess to the direct line of succession to the throne.
+Since 1 January 2023, Count Nikolai is known as "His Excellency Count Nikolai of Monpezat".
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -110,39 +121,9 @@ A funeral service for the Infanta was held in the chapel of the Royal Palace of 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -157,6 +138,23 @@ A funeral service for the Infanta was held in the chapel of the Royal Palace of 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -174,6 +172,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -241,29 +254,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -272,6 +277,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -284,6 +297,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -292,17 +307,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -330,6 +347,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -345,149 +446,173 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5a1e654e-b6b5-4408-b1b5-d001f3f8d4c1)
- Call ID: 5a1e654e-b6b5-4408-b1b5-d001f3f8d4c1
+  AssignClass (aeb02e01-60de-42d2-be56-6adc93bb70d1)
+ Call ID: aeb02e01-60de-42d2-be56-6adc93bb70d1
   Args:
-    source: Maria_Cristina_of_Spain
+    type: :Person
+    source: Queen_Margrethe_II
+  AssignClass (1895c283-11cf-406a-81a0-490fabd036c9)
+ Call ID: 1895c283-11cf-406a-81a0-490fabd036c9
+  Args:
+    source: Queen_Margrethe_II
     type: :Woman
-  AssignClass (be08ad90-8b4c-4900-afdc-2b5bde872076)
- Call ID: be08ad90-8b4c-4900-afdc-2b5bde872076
+  AssignClass (f6a28b90-eedf-4c8c-b7dd-715f3bc7b6f2)
+ Call ID: f6a28b90-eedf-4c8c-b7dd-715f3bc7b6f2
   Args:
-    source: Alfonso_XIII_of_Spain
+    source: Prince_Nikolai_of_Denmark
+    type: :Person
+  AssignClass (93d133ec-921e-4e7e-88de-45ba11dd649f)
+ Call ID: 93d133ec-921e-4e7e-88de-45ba11dd649f
+  Args:
+    source: Prince_Nikolai_of_Denmark
     type: :Man
-  AssignClass (d2390e92-12f4-469d-946a-d3881fe049b0)
- Call ID: d2390e92-12f4-469d-946a-d3881fe049b0
+  AssignClass (e09ec21b-4073-4bdc-bda8-c57419cdaebb)
+ Call ID: e09ec21b-4073-4bdc-bda8-c57419cdaebb
+  Args:
+    source: Prince_Joachim
+    type: :Person
+  AssignClass (89b13846-668b-4cdf-a2dd-b5da4872fa8b)
+ Call ID: 89b13846-668b-4cdf-a2dd-b5da4872fa8b
+  Args:
+    type: :Man
+    source: Prince_Joachim
+  AssignClass (abd8cb65-b535-457e-bb80-3f5d5d34d707)
+ Call ID: abd8cb65-b535-457e-bb80-3f5d5d34d707
+  Args:
+    source: Alexandra_Countess_of_Frederiksborg
+    type: :Person
+  AssignClass (b975e631-2642-49c9-b646-3bc607521214)
+ Call ID: b975e631-2642-49c9-b646-3bc607521214
+  Args:
+    source: Alexandra_Countess_of_Frederiksborg
+    type: :Woman
+  AssignClass (835bdf35-0803-46d3-be4b-ed55f457c20f)
+ Call ID: 835bdf35-0803-46d3-be4b-ed55f457c20f
+  Args:
+    source: Prince_Henrik
+    type: :Person
+  AssignClass (4550641d-3ba5-48d6-a85a-4bad36d8204d)
+ Call ID: 4550641d-3ba5-48d6-a85a-4bad36d8204d
+  Args:
+    type: :Man
+    source: Prince_Henrik
+  AssignClass (137a8839-027a-48f9-b635-fc617ed9ce73)
+ Call ID: 137a8839-027a-48f9-b635-fc617ed9ce73
+  Args:
+    source: King_Frederik_X
+    type: :Person
+  AssignClass (44d5381c-36fc-4f83-a243-20e3deb470ae)
+ Call ID: 44d5381c-36fc-4f83-a243-20e3deb470ae
+  Args:
+    type: :Man
+    source: King_Frederik_X
+  AssignClass (867f31cd-218e-4ce4-9efd-fefbbac9e6d4)
+ Call ID: 867f31cd-218e-4ce4-9efd-fefbbac9e6d4
+  Args:
+    type: :Person
+    source: Prince_Felix
+  AssignClass (6537836c-6604-4153-b1dd-1b6d32c18dfc)
+ Call ID: 6537836c-6604-4153-b1dd-1b6d32c18dfc
+  Args:
+    source: Prince_Felix
+    type: :Man
+  AssignClass (c3f3e590-110d-4b38-afbe-0afd1ff2a186)
+ Call ID: c3f3e590-110d-4b38-afbe-0afd1ff2a186
+  Args:
+    source: Henrik_half_sibling
+    type: :Person
+  AssignClass (a0a42a74-4a9e-473d-bba6-ec328a5d3cb4)
+ Call ID: a0a42a74-4a9e-473d-bba6-ec328a5d3cb4
+  Args:
+    type: :Man
+    source: Henrik_half_sibling
+  AssignClass (c7e4f11a-2e41-4144-8b6e-dd3dc8b70e2a)
+ Call ID: c7e4f11a-2e41-4144-8b6e-dd3dc8b70e2a
+  Args:
+    source: Athena_half_sibling
+    type: :Person
+  AssignClass (d3f36e97-9e5c-4e25-8ef6-60c860bbcc46)
+ Call ID: d3f36e97-9e5c-4e25-8ef6-60c860bbcc46
   Args:
     type: :Woman
-    source: Victoria_Eugenie_of_Battenberg
-  AssignClass (27c6e060-de52-4429-bb69-02f24cf203e1)
- Call ID: 27c6e060-de52-4429-bb69-02f24cf203e1
+    source: Athena_half_sibling
+  AssignClass (49bf7dc2-af1e-4be9-a156-37031657d806)
+ Call ID: 49bf7dc2-af1e-4be9-a156-37031657d806
   Args:
-    type: :Man
-    source: Juan_Carlos_I
-  AssignClass (062d3213-acb5-4280-990a-b6024d68016d)
- Call ID: 062d3213-acb5-4280-990a-b6024d68016d
+    source: Marie_Cavallier
+    type: :Person
+  AssignClass (4f1c0efb-86d3-403a-b2f2-9ab944d1f746)
+ Call ID: 4f1c0efb-86d3-403a-b2f2-9ab944d1f746
   Args:
-    source: Alfonso_son_of_Alfonso_XIII
-    type: :Man
-  AssignClass (0cad3a3f-d843-4c07-8c27-da924fb6ddf9)
- Call ID: 0cad3a3f-d843-4c07-8c27-da924fb6ddf9
-  Args:
-    source: Gonzalo_son_of_Alfonso_XIII
-    type: :Man
-  AssignClass (9fa5a08e-143a-4e4e-84a0-25bbdc0a02e3)
- Call ID: 9fa5a08e-143a-4e4e-84a0-25bbdc0a02e3
-  Args:
-    source: Beatriz_of_Spain
     type: :Woman
-  AssignClass (fb4f08cf-0cff-42b6-8789-a3a8d3475ef4)
- Call ID: fb4f08cf-0cff-42b6-8789-a3a8d3475ef4
+    source: Marie_Cavallier
+  AddTriple (7079d271-23f6-4beb-a8f3-b7684f7fdee8)
+ Call ID: 7079d271-23f6-4beb-a8f3-b7684f7fdee8
   Args:
-    source: Enrico_Eugenio
-    type: :Man
-  AssignClass (f2ab381b-7cb7-4047-a1bd-0d216747a378)
- Call ID: f2ab381b-7cb7-4047-a1bd-0d216747a378
+    relation: :hasFather
+    target: Prince_Joachim
+    source: Prince_Nikolai_of_Denmark
+  AddTriple (dcf37042-0b4c-4d38-8b3c-5b3a287bde6e)
+ Call ID: dcf37042-0b4c-4d38-8b3c-5b3a287bde6e
   Args:
-    source: Noemi_Rosa_de_Alcorta_y_Garcia-Mansilla
-    type: :Woman
-  AddLiteral (edcf67a3-aeaf-416f-8843-4d650fab5958)
- Call ID: edcf67a3-aeaf-416f-8843-4d650fab5958
+    target: Alexandra_Countess_of_Frederiksborg
+    source: Prince_Nikolai_of_Denmark
+    relation: :hasMother
+  AddTriple (ad122bd0-50f0-4fb7-bca8-f90ffb2eeb67)
+ Call ID: ad122bd0-50f0-4fb7-bca8-f90ffb2eeb67
   Args:
-    literal_type: xsd:integer
-    literal_value: 1911
-    source: Maria_Cristina_of_Spain
+    relation: :hasFather
+    source: Prince_Felix
+    target: Prince_Joachim
+  AddTriple (6c76284b-9d5f-4ad7-85a0-c47c63cdb1d4)
+ Call ID: 6c76284b-9d5f-4ad7-85a0-c47c63cdb1d4
+  Args:
+    source: Prince_Felix
+    target: Alexandra_Countess_of_Frederiksborg
+    relation: :hasMother
+  AddTriple (eb74566d-bcdb-4fce-94cc-95ffbca0baff)
+ Call ID: eb74566d-bcdb-4fce-94cc-95ffbca0baff
+  Args:
+    target: Prince_Joachim
+    source: Henrik_half_sibling
+    relation: :hasFather
+  AddTriple (987a55ed-a65e-4e1c-906f-ae933e7d9cbd)
+ Call ID: 987a55ed-a65e-4e1c-906f-ae933e7d9cbd
+  Args:
+    relation: :hasMother
+    source: Henrik_half_sibling
+    target: Marie_Cavallier
+  AddTriple (f0d7e793-eeb9-4b3f-8af0-43e5d23e0e79)
+ Call ID: f0d7e793-eeb9-4b3f-8af0-43e5d23e0e79
+  Args:
+    source: Athena_half_sibling
+    target: Prince_Joachim
+    relation: :hasFather
+  AddTriple (9cbc6052-6cb6-4fd7-9ec8-1e71d224af57)
+ Call ID: 9cbc6052-6cb6-4fd7-9ec8-1e71d224af57
+  Args:
+    relation: :hasMother
+    target: Marie_Cavallier
+    source: Athena_half_sibling
+  AddTriple (6501d013-fa29-4269-b8a3-62cc2eda4be0)
+ Call ID: 6501d013-fa29-4269-b8a3-62cc2eda4be0
+  Args:
+    target: Prince_Henrik
+    source: Prince_Joachim
+    relation: :hasFather
+  AddTriple (1c567e6e-5544-4310-bfd9-73ce4e82a618)
+ Call ID: 1c567e6e-5544-4310-bfd9-73ce4e82a618
+  Args:
+    relation: :hasMother
+    source: Prince_Joachim
+    target: Queen_Margrethe_II
+  AddLiteral (03bcfc40-ad6b-4322-aa74-4b320fba3efc)
+ Call ID: 03bcfc40-ad6b-4322-aa74-4b320fba3efc
+  Args:
     relation: :hasBirthYear
-  AddLiteral (e898a652-2939-4b40-9b86-a76892ffa21a)
- Call ID: e898a652-2939-4b40-9b86-a76892ffa21a
-  Args:
-    source: Maria_Cristina_of_Spain
     literal_type: xsd:integer
-    literal_value: 1996
-    relation: :hasDeathYear
-  AddTriple (747e4b73-c512-4953-85f1-58fd777c27dc)
- Call ID: 747e4b73-c512-4953-85f1-58fd777c27dc
-  Args:
-    target: Alfonso_XIII_of_Spain
-    source: Maria_Cristina_of_Spain
-    relation: :hasFather
-  AddTriple (b42aad66-82d9-4a56-ba5b-0423df86f796)
- Call ID: b42aad66-82d9-4a56-ba5b-0423df86f796
-  Args:
-    relation: :hasMother
-    source: Maria_Cristina_of_Spain
-    target: Victoria_Eugenie_of_Battenberg
-  AddTriple (f6a2f6c5-2fd6-46e7-a695-96a11e69ba47)
- Call ID: f6a2f6c5-2fd6-46e7-a695-96a11e69ba47
-  Args:
-    source: Maria_Cristina_of_Spain
-    target: Juan_Carlos_I
-    relation: :isAuntOf
-  AddTriple (6a580abf-9693-4d3d-af87-3fc80208496c)
- Call ID: 6a580abf-9693-4d3d-af87-3fc80208496c
-  Args:
-    source: Alfonso_son_of_Alfonso_XIII
-    target: Maria_Cristina_of_Spain
-    relation: :isBrotherOf
-  AddTriple (39246538-7489-4c6d-8df4-215025c66667)
- Call ID: 39246538-7489-4c6d-8df4-215025c66667
-  Args:
-    relation: :isBrotherOf
-    target: Maria_Cristina_of_Spain
-    source: Gonzalo_son_of_Alfonso_XIII
-  AddTriple (74fe160f-d864-4cc5-8985-45bf65b546cf)
- Call ID: 74fe160f-d864-4cc5-8985-45bf65b546cf
-  Args:
-    relation: :isSisterOf
-    source: Beatriz_of_Spain
-    target: Maria_Cristina_of_Spain
-  AddTriple (a7df1ed6-0e87-43e1-9b69-5669d4ad33d4)
- Call ID: a7df1ed6-0e87-43e1-9b69-5669d4ad33d4
-  Args:
-    relation: :hasFather
-    target: Alfonso_XIII_of_Spain
-    source: Alfonso_son_of_Alfonso_XIII
-  AddTriple (468506b4-dbfc-4700-bbbd-abffd75b35e4)
- Call ID: 468506b4-dbfc-4700-bbbd-abffd75b35e4
-  Args:
-    relation: :hasFather
-    target: Alfonso_XIII_of_Spain
-    source: Gonzalo_son_of_Alfonso_XIII
-  AddTriple (95272726-baef-475b-9131-110a9ac79c4b)
- Call ID: 95272726-baef-475b-9131-110a9ac79c4b
-  Args:
-    relation: :hasFather
-    target: Alfonso_XIII_of_Spain
-    source: Beatriz_of_Spain
-  AddTriple (edc78b17-d60c-4d2a-b8dc-c6cd02aaf985)
- Call ID: edc78b17-d60c-4d2a-b8dc-c6cd02aaf985
-  Args:
-    target: Victoria_Eugenie_of_Battenberg
-    source: Beatriz_of_Spain
-    relation: :hasMother
-  AddTriple (ae461bf6-67cd-4dca-ba97-3e9c6099d248)
- Call ID: ae461bf6-67cd-4dca-ba97-3e9c6099d248
-  Args:
-    relation: :hasMother
-    target: Victoria_Eugenie_of_Battenberg
-    source: Alfonso_son_of_Alfonso_XIII
-  AddTriple (e50fc457-a07c-4250-ae0d-8785c0363ce8)
- Call ID: e50fc457-a07c-4250-ae0d-8785c0363ce8
-  Args:
-    target: Victoria_Eugenie_of_Battenberg
-    source: Gonzalo_son_of_Alfonso_XIII
-    relation: :hasMother
-  AddTriple (e0e68684-5931-4133-b525-7b5f98a7d1f5)
- Call ID: e0e68684-5931-4133-b525-7b5f98a7d1f5
-  Args:
-    relation: :hasRelation
-    source: Maria_Cristina_of_Spain
-    target: Enrico_Eugenio
-  AddTriple (5d5ce02d-a16e-40ab-bbcf-906c8cf2858b)
- Call ID: 5d5ce02d-a16e-40ab-bbcf-906c8cf2858b
-  Args:
-    source: Enrico_Eugenio
-    target: Noemi_Rosa_de_Alcorta_y_Garcia-Mansilla
-    relation: :hasRelation
-  Finish (7eaee9f1-0618-41d1-9628-f883aff2bb64)
- Call ID: 7eaee9f1-0618-41d1-9628-f883aff2bb64
+    source: Prince_Nikolai_of_Denmark
+    literal_value: 1999
+  Finish (50d0cf51-6962-4449-b6ed-33d0e7762881)
+ Call ID: 50d0cf51-6962-4449-b6ed-33d0e7762881
   Args:

@@ -2,26 +2,51 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:LuisFilipe a :Man ;
-    :hasBirthYear 1887 ;
-    :hasBrother data:ManuelII ;
-    :hasDeathYear 1908 ;
-    :hasFather data:CarlosI ;
-    :hasMother data:AmelieOrleans ;
-    :hasSex data:Male .
+data:Charles_Spencer_9th_Earl_Spencer a :Man .
 
-data:AmelieOrleans a :Ancestor,
-        :Woman ;
-    :hasSex data:Female .
+data:Prince_Philip a :Man .
 
-data:CarlosI a :Ancestor,
+data:Queen_Elizabeth_the_Queen_Mother a :Woman .
+
+data:Prince_Harry a :Man ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Diana_Princess_of_Wales .
+
+data:Queen_Elizabeth_II a :Ancestor,
+        :Woman .
+
+data:Charles_III a :Ancestor,
         :Man ;
-    :hasSex data:Male .
+    :hasMother data:Queen_Elizabeth_II .
 
-data:Female a :Sex .
+data:Diana_Princess_of_Wales a :Ancestor,
+        :Woman .
 
-data:ManuelII a :Man ;
-    :hasSex data:Male .
+data:Prince_George a :Man ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Middleton .
 
-data:Male a :Sex .
+data:Prince_Louis a :Man ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Middleton .
+
+data:Princess_Charlotte a :Woman ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Middleton .
+
+data:Catherine_Middleton a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_George,
+        data:Prince_Louis,
+        data:Princess_Charlotte .
+
+data:William_Prince_of_Wales a :Ancestor,
+        :Man ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Prince_Harry ;
+    :hasChild data:Prince_George,
+        data:Prince_Louis,
+        data:Princess_Charlotte ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Diana_Princess_of_Wales .
 

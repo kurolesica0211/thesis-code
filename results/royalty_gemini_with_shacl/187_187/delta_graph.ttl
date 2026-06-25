@@ -2,43 +2,60 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:MariaTeresaOfSpain a :Person,
+data:Theodora_of_Greece_and_Denmark a :Person,
         :Woman ;
-    :hasBirthYear 1882 ;
-    :hasDeathYear 1912 ;
-    :hasMarriageYear 1906 ;
-    :hasRelation data:PrinceFerdinandOfBavaria ;
-    :hasSex data:Female ;
-    :isDaughterOf data:AlfonsoXIIOfSpain,
-        data:MariaChristinaOfAustria .
+    :hasBirthYear 1906 ;
+    :hasBrother data:Philip_of_Greece_and_Denmark ;
+    :hasDaughter data:Margarita_of_Baden ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasRelation data:Berthold_of_Baden ;
+    :hasSister data:Cecilie_of_Greece_and_Denmark,
+        data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark ;
+    :hasSon data:Ludwig_of_Baden,
+        data:Maximilian_of_Baden ;
+    :isAuntOf data:Charles_III_of_United_Kingdom .
 
-data:AlfonsoXIIOfSpain a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:MariaChristinaOfAustria a :Ancestor,
+data:Alice_of_Battenberg a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female .
+        :Woman .
 
-data:MariaDeLaPazOfSpain a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:PrinceFerdinandOfBavaria a :Man,
-        :Person ;
-    :hasSex data:Male ;
-    :isSonOf data:MariaDeLaPazOfSpain,
-        data:PrinceLudwigFerdinandOfBavaria .
-
-data:PrinceLudwigFerdinandOfBavaria a :Ancestor,
+data:Andrew_of_Greece_and_Denmark a :Ancestor,
         :Man,
+        :Person .
+
+data:Berthold_of_Baden a :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasFather data:Maximilian_of_Baden_Chancellor .
 
-data:Female a :Sex .
+data:Cecilie_of_Greece_and_Denmark a :Person,
+        :Woman .
 
-data:Male a :Sex .
+data:Charles_III_of_United_Kingdom a :Man,
+        :Person .
+
+data:Ludwig_of_Baden a :Man,
+        :Person .
+
+data:Margarita_of_Baden a :Person,
+        :Woman .
+
+data:Margarita_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Maximilian_of_Baden a :Man,
+        :Person .
+
+data:Maximilian_of_Baden_Chancellor a :Ancestor,
+        :Man,
+        :Person .
+
+data:Philip_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Sophie_of_Greece_and_Denmark a :Person,
+        :Woman .
 

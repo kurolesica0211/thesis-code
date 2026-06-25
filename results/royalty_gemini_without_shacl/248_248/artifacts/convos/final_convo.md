@@ -69,25 +69,57 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Marina Victoria Alexandra Ogilvy (born 31 July 1966) is the younger child and only daughter of Sir Angus Ogilvy and Princess Alexandra of Kent.
-Early life
+The Duchess of Montpensier
 
-Marina was born at Thatched House Lodge in Richmond Park, London, the home of her parents, on 31 July 1966.
-She was named after her maternal grandmother, Princess Marina of Greece and Denmark, who was also a first cousin of Prince Philip, Duke of Edinburgh.
-She has an elder brother, James Ogilvy, who was born in 1964.
-Marina was educated at St Mary's School, Wantage.
-Marriage and children
 
-In November 1989, Marina announced that she was pregnant by her boyfriend Paul Julian Mowatt (born in Hendon, 28 November 1962), a freelance photographer.
-Marina's parents denied her allegations and said that they loved her, had not cut her off and that she was welcome at home any time.
-Marina married Mowatt in Richmond Park, Surrey, on 2 February 1990, wearing a red velvet bolero with gold trim, with a black dress underneath, and a black hat.
-They had two children: Zenouska May Mowatt (born 26 May 1990), and Christian Alexander Mowatt (born 4 June 1993) and divorced in October 1997.
+The Count of ÉvreuxThe Countess of Évreux
+
+
+Princess Béatrice
+
+
+The Duke of OrléansThe Duchess of Orléans
+
+
+The Dowager Countess of La Marche
+
+
+The Countess of Schönborn-Buchheim
+
+
+Princess Hélène, Countess of Limburg Stirum
+
+
+The Dowager Duchess of Calabria
+
+
+The Dowager Duchess of Württemberg
+
+
+Princess Claude, Mrs. Gandolfi
+
+
+Princess Chantal, Baroness of Sambucy de Sorgue
+
+
+Duchess Marie-Thérèse of Württemberg (German: Marie Therese Nadejda Albertine Rosa Philippine Margarethe Christine Helene Josepha Martina Leopoldine Herzogin von Württemberg; born 12 November 1934) is a German-born aristocrat.
+Family
+
+Marie Thérèse was the fifth child and fourth daughter of Philipp Albrecht, Duke of Württemberg, and his second wife, Archduchess Rosa of Austria, Princess of Tuscany.
+She was born at Altshausen Castle, Baden-Württemberg, Germany.
+Marriage and issue
+
+Marie Thérèse married Prince Henri, Count of Clermont, eldest son of Henri, Count of Paris, and Princess Isabelle of Orléans-Braganza, on 5 July 1957 in Dreux, France.
+Three years later, her younger brother Carl, Duke of Württemberg, would marry Henri's younger sister, Princess Diane d'Orléans.
+She received the title Duchess of Montpensier from her former father-in-law after divorce.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -103,39 +135,9 @@ They had two children: Zenouska May Mowatt (born 26 May 1990), and Christian Ale
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -150,6 +152,23 @@ They had two children: Zenouska May Mowatt (born 26 May 1990), and Christian Ale
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -167,6 +186,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -234,29 +268,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,6 +291,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -277,6 +311,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -285,17 +321,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -323,6 +361,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -338,177 +460,160 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1a4b8144-e181-4156-b489-0a96d67ea8c5)
- Call ID: 1a4b8144-e181-4156-b489-0a96d67ea8c5
+  AssignClass (7d04354c-558f-494b-81cc-4c27e0be4afc)
+ Call ID: 7d04354c-558f-494b-81cc-4c27e0be4afc
   Args:
-    source: Marina_Ogilvy
+    source: Marie_Therese_of_Wurttemberg
     type: :Woman
-  AssignClass (be3824e1-f2ff-4b59-a7bf-04650b817b76)
- Call ID: be3824e1-f2ff-4b59-a7bf-04650b817b76
+  AssignClass (2ea52272-4238-4110-86c2-deb69386832a)
+ Call ID: 2ea52272-4238-4110-86c2-deb69386832a
   Args:
+    source: Marie_Therese_of_Wurttemberg
+    type: :Person
+  AddLiteral (fb68785e-6a8a-4d5c-b9f9-106bb965d58a)
+ Call ID: fb68785e-6a8a-4d5c-b9f9-106bb965d58a
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1934
+    relation: :hasBirthYear
+    source: Marie_Therese_of_Wurttemberg
+  AssignClass (fecad875-e8b4-4b34-bf06-4f60e551ba58)
+ Call ID: fecad875-e8b4-4b34-bf06-4f60e551ba58
+  Args:
+    source: Philipp_Albrecht_Duke_of_Wurttemberg
     type: :Man
-    source: Angus_Ogilvy
-  AssignClass (ac58d729-44fc-4c2b-9128-c28bc610e156)
- Call ID: ac58d729-44fc-4c2b-9128-c28bc610e156
+  AssignClass (1ccdf2b4-1c84-43a8-81ec-122b04df456d)
+ Call ID: 1ccdf2b4-1c84-43a8-81ec-122b04df456d
   Args:
-    source: Alexandra_of_Kent
+    type: :Ancestor
+    source: Philipp_Albrecht_Duke_of_Wurttemberg
+  AssignClass (69fbb2b6-2f0a-4bad-a07d-7b1d22588312)
+ Call ID: 69fbb2b6-2f0a-4bad-a07d-7b1d22588312
+  Args:
     type: :Woman
-  AssignClass (58eb4df9-bd20-4b0b-a85e-a64e406780ea)
- Call ID: 58eb4df9-bd20-4b0b-a85e-a64e406780ea
+    source: Rosa_of_Austria
+  AssignClass (cee3bbad-32bb-49b9-8df0-9014ba9382ea)
+ Call ID: cee3bbad-32bb-49b9-8df0-9014ba9382ea
   Args:
-    type: :Man
-    source: James_Ogilvy
-  AssignClass (d8afb64d-f29f-4897-88e8-55a9e0bf6eef)
- Call ID: d8afb64d-f29f-4897-88e8-55a9e0bf6eef
+    source: Rosa_of_Austria
+    type: :Ancestor
+  AddTriple (6fd1b0d3-b9de-4b14-b117-704720dc5444)
+ Call ID: 6fd1b0d3-b9de-4b14-b117-704720dc5444
   Args:
-    type: :Man
-    source: Paul_Julian_Mowatt
-  AssignClass (ab9efea7-3f60-4180-a8f1-8c60a1e590cd)
- Call ID: ab9efea7-3f60-4180-a8f1-8c60a1e590cd
-  Args:
-    source: Zenouska_May_Mowatt
-    type: :Woman
-  AssignClass (069fa77e-b08e-4367-8e91-1c266ea14efe)
- Call ID: 069fa77e-b08e-4367-8e91-1c266ea14efe
-  Args:
-    source: Christian_Alexander_Mowatt
-    type: :Man
-  AssignClass (4ac33294-c9c6-47de-b306-6bedc17a1514)
- Call ID: 4ac33294-c9c6-47de-b306-6bedc17a1514
-  Args:
-    source: Marina_of_Greece_and_Denmark
-    type: :Woman
-  AddLiteral (88051712-1ee8-4c2c-b6b9-315a35ed9a9d)
- Call ID: 88051712-1ee8-4c2c-b6b9-315a35ed9a9d
-  Args:
-    source: Marina_Ogilvy
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1966
-  AddLiteral (808a33d4-9cfe-41b3-b02a-cebfd2ded0e3)
- Call ID: 808a33d4-9cfe-41b3-b02a-cebfd2ded0e3
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1964
-    source: James_Ogilvy
-    relation: :hasBirthYear
-  AddLiteral (5ab5b461-e780-4376-bd1c-6efec2eecaa3)
- Call ID: 5ab5b461-e780-4376-bd1c-6efec2eecaa3
-  Args:
-    relation: :hasBirthYear
-    source: Paul_Julian_Mowatt
-    literal_value: 1962
-    literal_type: xsd:integer
-  AddLiteral (b11e678c-a1b3-47ae-9e37-1924af94096e)
- Call ID: b11e678c-a1b3-47ae-9e37-1924af94096e
-  Args:
-    literal_value: 1990
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Zenouska_May_Mowatt
-  AddLiteral (054828d5-310e-4229-aebc-e2d692f32ae6)
- Call ID: 054828d5-310e-4229-aebc-e2d692f32ae6
-  Args:
-    literal_value: 1993
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Christian_Alexander_Mowatt
-  AddTriple (89fb7b1c-6ec9-4f20-8519-831142b7615b)
- Call ID: 89fb7b1c-6ec9-4f20-8519-831142b7615b
-  Args:
-    relation: :hasFather
-    source: Marina_Ogilvy
-    target: Angus_Ogilvy
-  AddTriple (23a67997-c43d-40d0-8f08-24be0950a349)
- Call ID: 23a67997-c43d-40d0-8f08-24be0950a349
-  Args:
-    relation: :hasMother
-    source: Marina_Ogilvy
-    target: Alexandra_of_Kent
-  AddTriple (ad3c36ec-9c6b-421d-8d27-5abdbb707ef0)
- Call ID: ad3c36ec-9c6b-421d-8d27-5abdbb707ef0
-  Args:
-    target: Angus_Ogilvy
-    relation: :hasFather
-    source: James_Ogilvy
-  AddTriple (bc7acf50-ac6a-4680-9397-f1353662bc5b)
- Call ID: bc7acf50-ac6a-4680-9397-f1353662bc5b
-  Args:
-    target: Alexandra_of_Kent
-    source: James_Ogilvy
-    relation: :hasMother
-  AddTriple (8439c9f0-0dbc-4ab6-8dfe-ae6be794c52b)
- Call ID: 8439c9f0-0dbc-4ab6-8dfe-ae6be794c52b
-  Args:
-    source: Alexandra_of_Kent
-    relation: :isMotherOf
-    target: Marina_Ogilvy
-  AddTriple (daf65688-d98c-41a7-a6f5-3e5223f4d3a1)
- Call ID: daf65688-d98c-41a7-a6f5-3e5223f4d3a1
-  Args:
-    source: Alexandra_of_Kent
-    relation: :isMotherOf
-    target: James_Ogilvy
-  AddTriple (385bbc91-7e45-440d-b7ff-e32d6b80e2f9)
- Call ID: 385bbc91-7e45-440d-b7ff-e32d6b80e2f9
-  Args:
-    target: Marina_Ogilvy
-    source: Angus_Ogilvy
+    target: Marie_Therese_of_Wurttemberg
     relation: :isFatherOf
-  AddTriple (8e4fb215-761c-4424-9b9b-f208546d40a1)
- Call ID: 8e4fb215-761c-4424-9b9b-f208546d40a1
+    source: Philipp_Albrecht_Duke_of_Wurttemberg
+  AddTriple (d66ff9b8-c977-487d-bc03-c5e44d7a085a)
+ Call ID: d66ff9b8-c977-487d-bc03-c5e44d7a085a
   Args:
-    target: James_Ogilvy
+    relation: :isMotherOf
+    target: Marie_Therese_of_Wurttemberg
+    source: Rosa_of_Austria
+  AssignClass (840f6ee3-b1c0-4012-809e-3b719dee16e6)
+ Call ID: 840f6ee3-b1c0-4012-809e-3b719dee16e6
+  Args:
+    type: :Man
+    source: Henri_Count_of_Clermont
+  AssignClass (9047b63c-ee49-4f58-b9e1-f5eb9f32d2c6)
+ Call ID: 9047b63c-ee49-4f58-b9e1-f5eb9f32d2c6
+  Args:
+    source: Henri_Count_of_Clermont
+    type: :Person
+  AddTriple (abf3b378-0cdb-40e3-8cec-72e640a23b0c)
+ Call ID: abf3b378-0cdb-40e3-8cec-72e640a23b0c
+  Args:
+    source: Marie_Therese_of_Wurttemberg
+    relation: :hasRelation
+    target: Henri_Count_of_Clermont
+  AddLiteral (edfb10b6-1e91-489c-8766-e5b1c9c83b26)
+ Call ID: edfb10b6-1e91-489c-8766-e5b1c9c83b26
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 1957
+    literal_type: xsd:integer
+    source: Marie_Therese_of_Wurttemberg
+  AssignClass (65d4c280-a0ff-4d1d-93da-282b29c80311)
+ Call ID: 65d4c280-a0ff-4d1d-93da-282b29c80311
+  Args:
+    type: :Man
+    source: Henri_Count_of_Paris
+  AssignClass (b58e9ecf-f4a4-4d3a-8d19-1c14671c7af7)
+ Call ID: b58e9ecf-f4a4-4d3a-8d19-1c14671c7af7
+  Args:
+    source: Henri_Count_of_Paris
+    type: :Ancestor
+  AssignClass (95a8db89-68e9-49df-a477-40a6b46c67c4)
+ Call ID: 95a8db89-68e9-49df-a477-40a6b46c67c4
+  Args:
+    source: Isabelle_of_Orleans_Braganza
+    type: :Woman
+  AssignClass (ce766484-6e31-44f5-932a-c68673648dea)
+ Call ID: ce766484-6e31-44f5-932a-c68673648dea
+  Args:
+    type: :Ancestor
+    source: Isabelle_of_Orleans_Braganza
+  AddTriple (4dc82b2a-7425-4939-b877-7542c159c16c)
+ Call ID: 4dc82b2a-7425-4939-b877-7542c159c16c
+  Args:
+    target: Henri_Count_of_Clermont
     relation: :isFatherOf
-    source: Angus_Ogilvy
-  AddTriple (13f40cf8-4b25-4cea-8c88-3966a7de59c5)
- Call ID: 13f40cf8-4b25-4cea-8c88-3966a7de59c5
+    source: Henri_Count_of_Paris
+  AddTriple (6abbd017-528f-41d9-97f2-c33b5863d6d4)
+ Call ID: 6abbd017-528f-41d9-97f2-c33b5863d6d4
   Args:
-    relation: :hasBrother
-    source: Marina_Ogilvy
-    target: James_Ogilvy
-  AddTriple (cc9692dc-9179-4548-82d1-8c8c102a9cce)
- Call ID: cc9692dc-9179-4548-82d1-8c8c102a9cce
+    target: Henri_Count_of_Clermont
+    relation: :isMotherOf
+    source: Isabelle_of_Orleans_Braganza
+  AssignClass (8611f1eb-9bc8-4b13-b506-f5a6fe114eba)
+ Call ID: 8611f1eb-9bc8-4b13-b506-f5a6fe114eba
   Args:
-    source: Marina_Ogilvy
+    type: :Man
+    source: Carl_Duke_of_Wurttemberg
+  AssignClass (5f87e315-02d3-48bb-9a9d-b5b5e934d33e)
+ Call ID: 5f87e315-02d3-48bb-9a9d-b5b5e934d33e
+  Args:
+    source: Carl_Duke_of_Wurttemberg
+    type: :Person
+  AddTriple (c1da14ac-04eb-494b-a749-a7e4c2c77776)
+ Call ID: c1da14ac-04eb-494b-a749-a7e4c2c77776
+  Args:
+    source: Carl_Duke_of_Wurttemberg
+    relation: :isBrotherOf
+    target: Marie_Therese_of_Wurttemberg
+  AssignClass (9d4fd1c3-e802-41a3-8d91-a17e176b08d4)
+ Call ID: 9d4fd1c3-e802-41a3-8d91-a17e176b08d4
+  Args:
+    source: Diane_dOrleans
+    type: :Woman
+  AssignClass (b4473c80-dd1a-437d-ae8b-5c4ca1ff1d46)
+ Call ID: b4473c80-dd1a-437d-ae8b-5c4ca1ff1d46
+  Args:
+    type: :Person
+    source: Diane_dOrleans
+  AddTriple (25a123b2-cd30-43c0-8ece-2d63d3fc93db)
+ Call ID: 25a123b2-cd30-43c0-8ece-2d63d3fc93db
+  Args:
+    source: Diane_dOrleans
+    target: Henri_Count_of_Clermont
     relation: :isSisterOf
-    target: James_Ogilvy
-  AddTriple (74c4ee5c-1080-439e-bf4c-bd991e2ec5c0)
- Call ID: 74c4ee5c-1080-439e-bf4c-bd991e2ec5c0
+  AddTriple (3b9e812b-acef-41f4-94f1-5989a451991c)
+ Call ID: 3b9e812b-acef-41f4-94f1-5989a451991c
   Args:
-    relation: :hasChild
-    source: Marina_Ogilvy
-    target: Zenouska_May_Mowatt
-  AddTriple (9804664f-0c94-4c6b-b95f-37adb8d2dfee)
- Call ID: 9804664f-0c94-4c6b-b95f-37adb8d2dfee
+    source: Henri_Count_of_Paris
+    relation: :isFatherOf
+    target: Diane_dOrleans
+  AddTriple (982166ce-e27e-48a8-80bf-ec6f6964b450)
+ Call ID: 982166ce-e27e-48a8-80bf-ec6f6964b450
   Args:
-    target: Christian_Alexander_Mowatt
-    relation: :hasChild
-    source: Marina_Ogilvy
-  AddTriple (6fc68b45-7d0f-400d-ae13-33872b2debbc)
- Call ID: 6fc68b45-7d0f-400d-ae13-33872b2debbc
+    source: Isabelle_of_Orleans_Braganza
+    relation: :isMotherOf
+    target: Diane_dOrleans
+  AddTriple (2c4808bc-b6dc-4021-a534-6aceed076b12)
+ Call ID: 2c4808bc-b6dc-4021-a534-6aceed076b12
   Args:
-    relation: :hasFather
-    source: Zenouska_May_Mowatt
-    target: Paul_Julian_Mowatt
-  AddTriple (4acac5bc-4cd4-4638-ad8e-495b4c4e8aa2)
- Call ID: 4acac5bc-4cd4-4638-ad8e-495b4c4e8aa2
-  Args:
-    relation: :hasFather
-    source: Christian_Alexander_Mowatt
-    target: Paul_Julian_Mowatt
-  AddTriple (b7899361-736d-4d6a-aade-0fc1c0cfc390)
- Call ID: b7899361-736d-4d6a-aade-0fc1c0cfc390
-  Args:
-    target: Marina_Ogilvy
-    source: Zenouska_May_Mowatt
-    relation: :hasMother
-  AddTriple (6144efca-d19b-4f95-a89a-18a73828c9d0)
- Call ID: 6144efca-d19b-4f95-a89a-18a73828c9d0
-  Args:
-    relation: :hasMother
-    source: Christian_Alexander_Mowatt
-    target: Marina_Ogilvy
-  Finish (88a7663f-5a3d-4317-b852-7a67dbdc985a)
- Call ID: 88a7663f-5a3d-4317-b852-7a67dbdc985a
+    source: Carl_Duke_of_Wurttemberg
+    relation: :hasRelation
+    target: Diane_dOrleans
+  Finish (87294d30-fe55-4575-bbfb-544a3668f083)
+ Call ID: 87294d30-fe55-4575-bbfb-544a3668f083
   Args:

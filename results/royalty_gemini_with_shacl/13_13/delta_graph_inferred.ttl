@@ -1,0 +1,284 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:Fergus_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBrother data:Fergus_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:Princess_Elizabeth ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon ;
+    :isBrotherOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon ;
+    :isUncleOf data:Princess_Elizabeth,
+        data:Princess_Margaret .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Princess_Elizabeth,
+        data:Princess_Margaret,
+        data:Queen_Mary ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI ;
+    :isUncleOf data:Princess_Elizabeth,
+        data:Princess_Margaret .
+
+data:Cecilia_Cavendish-Bentinck a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Elizabeth_Bowes-Lyon ;
+    :hasDaughter data:Elizabeth_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Cavendish-Bentinck,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :hasSister data:Cecilia_Cavendish-Bentinck ;
+    :isAncestorOf data:Elizabeth_Bowes-Lyon,
+        data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isAuntOf data:Elizabeth_Bowes-Lyon ;
+    :isBloodrelationOf data:Cecilia_Cavendish-Bentinck ;
+    :isMotherOf data:Elizabeth_Bowes-Lyon ;
+    :isParentOf data:Elizabeth_Bowes-Lyon ;
+    :isSiblingOf data:Cecilia_Cavendish-Bentinck ;
+    :isSisterOf data:Cecilia_Cavendish-Bentinck .
+
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Claude_Bowes-Lyon ;
+    :hasChild data:Elizabeth_Bowes-Lyon ;
+    :hasDaughter data:Elizabeth_Bowes-Lyon ;
+    :hasRelation data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isAncestorOf data:Elizabeth_Bowes-Lyon,
+        data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isBloodrelationOf data:Claude_Bowes-Lyon ;
+    :isBrotherOf data:Claude_Bowes-Lyon ;
+    :isFatherOf data:Elizabeth_Bowes-Lyon ;
+    :isParentOf data:Elizabeth_Bowes-Lyon ;
+    :isSiblingOf data:Claude_Bowes-Lyon ;
+    :isUncleOf data:Elizabeth_Bowes-Lyon .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_V ;
+    :hasChild data:George_VI ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :hasSon data:George_VI ;
+    :isAncestorOf data:George_VI,
+        data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isFatherOf data:George_VI ;
+    :isParentOf data:George_VI ;
+    :isSiblingOf data:George_V ;
+    :isUncleOf data:George_VI .
+
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:George_VI ;
+    :hasRelation data:Edward_VIII,
+        data:George_VI,
+        data:Princess_Elizabeth,
+        data:Princess_Margaret,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Mary ;
+    :hasSon data:George_VI ;
+    :isAncestorOf data:George_VI,
+        data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isAuntOf data:George_VI ;
+    :isBloodrelationOf data:Queen_Mary ;
+    :isMotherOf data:George_VI ;
+    :isParentOf data:George_VI ;
+    :isSiblingOf data:Queen_Mary ;
+    :isSisterOf data:Queen_Mary .
+
+data:Princess_Margaret a :Person,
+        :Woman ;
+    :hasAncestor data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:George_V,
+        data:George_VI,
+        data:Queen_Mary ;
+    :hasFather data:George_VI ;
+    :hasMother data:Elizabeth_Bowes-Lyon ;
+    :hasParent data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :hasRelation data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Bowes-Lyon,
+        data:Edward_VIII,
+        data:Elizabeth_Bowes-Lyon,
+        data:George_V,
+        data:George_VI,
+        data:Princess_Elizabeth,
+        data:Princess_Margaret,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isBloodrelationOf data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isChildOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :isDaughterOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :isSiblingOf data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isSisterOf data:Princess_Elizabeth,
+        data:Princess_Margaret .
+
+data:Elizabeth_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Bowes-Lyon ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:Fergus_Bowes-Lyon ;
+    :hasChild data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :hasDaughter data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :hasDeathYear 2002 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMother data:Cecilia_Cavendish-Bentinck ;
+    :hasParent data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Bowes-Lyon ;
+    :hasRelation data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :hasSex data:Female ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isAncestorOf data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isAuntOf data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon ;
+    :isChildOf data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Bowes-Lyon ;
+    :isDaughterOf data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Bowes-Lyon ;
+    :isMotherOf data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isParentOf data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon .
+
+data:George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_V,
+        data:Queen_Mary ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI ;
+    :hasChild data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :hasDaughter data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary ;
+    :hasParent data:George_V,
+        data:Queen_Mary ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Princess_Elizabeth,
+        data:Princess_Margaret,
+        data:Queen_Mary ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI ;
+    :isChildOf data:George_V,
+        data:Queen_Mary ;
+    :isFatherOf data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isParentOf data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI ;
+    :isSonOf data:George_V,
+        data:Queen_Mary ;
+    :isUncleOf data:Princess_Elizabeth,
+        data:Princess_Margaret .
+
+data:Princess_Elizabeth a :Person,
+        :Woman ;
+    :hasAncestor data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Bowes-Lyon,
+        data:Elizabeth_Bowes-Lyon,
+        data:George_V,
+        data:George_VI,
+        data:Queen_Mary ;
+    :hasFather data:George_VI ;
+    :hasMother data:Elizabeth_Bowes-Lyon ;
+    :hasParent data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :hasRelation data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Bowes-Lyon,
+        data:Edward_VIII,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon,
+        data:George_V,
+        data:George_VI,
+        data:Princess_Elizabeth,
+        data:Princess_Margaret,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isBloodrelationOf data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isChildOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :isDaughterOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI ;
+    :isSiblingOf data:Princess_Elizabeth,
+        data:Princess_Margaret ;
+    :isSisterOf data:Princess_Elizabeth,
+        data:Princess_Margaret .
+

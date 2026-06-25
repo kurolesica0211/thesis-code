@@ -16,35 +16,17 @@
       "qid": "Q1699743",
       "label": "John Dalrymple, 14th Earl of Stair",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Davina_Bowes-Lyon",
       "qid": "Q75253177",
       "label": "Davina Bowes-Lyon",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
-    {
-      "extracted_uri": "http://example.org/data/Davina_Katherine_Bowes-Lyon",
-      "extracted_local_name": "Davina_Katherine_Bowes-Lyon",
-      "embedding_text": "Davina Katherine Bowes-Lyon",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Davina_Bowes-Lyon",
-      "ground_truth_qid": "Q75253177",
-      "ground_truth_label": "Davina Bowes-Lyon",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Davina Katherine Bowes-Lyon",
-      "best_candidate_label": "Davina Bowes-Lyon",
-      "best_candidate_qid": "Q75253177",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 1.0
-    },
     {
       "extracted_uri": "http://example.org/data/John_Dalrymple_13th_Earl_of_Stair",
       "extracted_local_name": "John_Dalrymple_13th_Earl_of_Stair",
@@ -56,11 +38,11 @@
       "ground_truth_qid": "Q1699743",
       "ground_truth_label": "John Dalrymple, 14th Earl of Stair",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "John Dalrymple- 14th Earl of Stair",
       "best_candidate_label": "John Dalrymple, 14th Earl of Stair",
       "best_candidate_qid": "Q1699743",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9693877551020409
     },
     {
@@ -68,6 +50,24 @@
       "extracted_local_name": "David_Bowes-Lyon",
       "embedding_text": "David Bowes-Lyon",
       "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8636363636363636,
+      "ground_truth_uri": "http://example.com/data#Davina_Bowes-Lyon",
+      "ground_truth_qid": "Q75253177",
+      "ground_truth_label": "Davina Bowes-Lyon",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Davina Bowes-Lyon",
+      "best_candidate_label": "Davina Bowes-Lyon",
+      "best_candidate_qid": "Q75253177",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8636363636363636
+    },
+    {
+      "extracted_uri": "http://example.org/data/Davina_Katherine_Bowes-Lyon",
+      "extracted_local_name": "Davina_Katherine_Bowes-Lyon",
+      "embedding_text": "Davina Katherine Bowes-Lyon",
+      "extracted_gender": "female",
       "matched": false,
       "score": null,
       "ground_truth_uri": null,
@@ -78,8 +78,8 @@
       "best_candidate_match_text": "John David James Dalrymple, 14th Earl of Stair",
       "best_candidate_label": "John Dalrymple, 14th Earl of Stair",
       "best_candidate_qid": "Q1699743",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.3548387096774194
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3287671232876712
     },
     {
       "extracted_uri": "http://example.org/data/Elizabeth_Mary_Hyde_Parker",
@@ -93,11 +93,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "John Dalrymple- 14th Earl of Stair",
+      "best_candidate_label": "John Dalrymple, 14th Earl of Stair",
+      "best_candidate_qid": "Q1699743",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.3333333333333333
     },
     {
       "extracted_uri": "http://example.org/data/Emily_Mary_Julia_Stonor",
@@ -111,29 +111,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
-      "best_candidate_gender": null,
-      "best_candidate_score": null
-    },
-    {
-      "extracted_uri": "http://example.org/data/Frederick_Calvert_6th_Baron_Baltimore",
-      "extracted_local_name": "Frederick_Calvert_6th_Baron_Baltimore",
-      "embedding_text": "Frederick Calvert 6th Baron Baltimore",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": "John Dalrymple- 14th Earl of Stair",
+      "best_candidate_match_text": "John David James Dalrymple, 14th Earl of Stair",
       "best_candidate_label": "John Dalrymple, 14th Earl of Stair",
       "best_candidate_qid": "Q1699743",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.4225352112676056
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3188405797101449
     },
     {
       "extracted_uri": "http://example.org/data/John_David_James_Dalrymple",
@@ -191,8 +173,8 @@
     }
   ],
   "summary": {
-    "entities_total": 9,
+    "entities_total": 8,
     "entities_matched": 2,
-    "entities_unmatched": 7
+    "entities_unmatched": 6
   }
 }

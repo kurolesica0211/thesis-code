@@ -2,23 +2,58 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Samuel_Chatto a :Man,
-        :Person ;
-    :hasAncestor data:Elizabeth_II,
-        data:Princess_Margaret ;
-    :hasBirthYear 1996 ;
-    :hasFather data:Daniel_Chatto ;
-    :hasMother data:Lady_Sarah_Chatto .
-
-data:Daniel_Chatto a :Man,
+data:Prince_Bernhard_Jr a :Man,
         :Person .
 
-data:Elizabeth_II a :Person,
+data:Prince_Felix_of_Luxembourg a :Man,
+        :Person .
+
+data:Princess_Anne_of_Bourbon-Parma a :Person,
         :Woman .
 
-data:Lady_Sarah_Chatto a :Person,
+data:Princess_Armgard_of_Lippe-Biesterfeld a :Person,
         :Woman .
 
-data:Princess_Margaret a :Person,
+data:Princess_Christina_of_the_Netherlands a :Person,
+        :Woman ;
+    :alsoKnownAs "Maria Christina"^^xsd:string,
+        "Princess Marijke"^^xsd:string ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMarriageYear 1975 ;
+    :hasMother data:Queen_Juliana_of_the_Netherlands ;
+    :hasRelation data:Jorge_Guillermo ;
+    :isSisterOf data:Princess_Beatrix,
+        data:Princess_Irene,
+        data:Princess_Margriet .
+
+data:William_II_of_the_Netherlands a :Man,
+        :Person .
+
+data:Jorge_Guillermo a :Man,
+        :Person .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
+        :Person .
+
+data:Prince_Carlos_Hugo_of_Bourbon-Parma a :Man,
+        :Person .
+
+data:Princess_Beatrix a :Person,
+        :Woman .
+
+data:Princess_Irene a :Person,
+        :Woman ;
+    :hasRelation data:Prince_Carlos_Hugo_of_Bourbon-Parma .
+
+data:Princess_Margriet a :Person,
+        :Woman .
+
+data:Queen_Juliana_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasMother data:Queen_Wilhelmina_of_the_Netherlands .
+
+data:Queen_Wilhelmina_of_the_Netherlands a :Person,
         :Woman .
 

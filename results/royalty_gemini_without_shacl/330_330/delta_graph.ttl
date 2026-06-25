@@ -2,30 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:KarinEmmaLouiseNissvandt a :Person,
+data:Rosemary a :Person,
         :Woman ;
-    :hasDeathYear 1991 ;
-    :hasSex "Female"^^xsd:string .
+    :isDaughterOf data:Fergus_Bowes-Lyon,
+        data:Lady_Christian_Norah_Dawson-Damer .
 
-data:LennartBernadotte a :Man,
-        :Person ;
-    :hasBirthYear 1909 ;
-    :hasDeathYear 2004 ;
-    :hasFather data:WilhelmDukeOfS%C3%B6dermanland ;
-    :hasMarriageYear 1932,
-        1972 ;
-    :hasMother data:MariaPavlovnaOfRussia ;
-    :hasSex "Male"^^xsd:string .
-
-data:SonjaAnitaMariaHaunz a :Person,
-        :Woman ;
-    :hasDeathYear 2008 ;
-    :hasSex "Female"^^xsd:string .
-
-data:MariaPavlovnaOfRussia a :Person,
-        :Woman ;
-    :hasSex "Female"^^xsd:string .
-
-data:WilhelmDukeOfS%C3%B6dermanland a :Man,
+data:Captain_William_Frederick_Martin a :Man,
         :Person .
+
+data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne a :Person,
+        :Woman .
+
+data:Claude_Bowes-Lyon%2C_14th a :Man,
+        :Person .
+
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman .
+
+data:Fergus_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1915 ;
+    :hasFather data:Claude_Bowes-Lyon%2C_14th ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Cecilia_Bowes-Lyon%2C_Countess_of_Strathmore_and_Kinghorne ;
+    :hasRelation data:Lady_Christian_Norah_Dawson-Damer ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:John ;
+    :isUncleOf data:Queen_Elizabeth_II .
+
+data:John a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Lady_Christian_Norah_Dawson-Damer a :Person,
+        :Woman ;
+    :hasRelation data:Captain_William_Frederick_Martin .
 

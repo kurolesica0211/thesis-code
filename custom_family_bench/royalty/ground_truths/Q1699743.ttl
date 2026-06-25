@@ -7,39 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Davina_Bowes-Lyon a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Davina Bowes-Lyon" ;
-    data:posIndicesFull "229:256",
-        "301:317" ;
-    data:posIndicesPart "1001:1007",
-        "367:373",
-        "586:591",
-        "592:596" ;
-    data:wdtLink wdt:Q75253177 ;
-    :alsoKnownAs "Davina Dalrymple, Countess of Stair",
-        "Davina Dalrymple, Viscountess Dalrymple",
-        "Davina Katherine Bowes-Lyon",
-        "Davina Katherine Dalrymple, Countess of Stair",
-        "Davina Katherine Dalrymple, Viscountess Dalrymple",
-        "Davina Stair" ;
-    :hasChild data:John_Dalrymple-_14th_Earl_of_Stair ;
-    :hasSex data:female ;
-    :hasSon data:John_Dalrymple-_14th_Earl_of_Stair ;
-    :isMotherOf data:John_Dalrymple-_14th_Earl_of_Stair ;
-    :isParentOf data:John_Dalrymple-_14th_Earl_of_Stair .
-
-data:John_Dalrymple-_14th_Earl_of_Stair a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:John_Dalrymple-_14th_Earl_of_Stair a :Person ;
     rdfs:label "John Dalrymple, 14th Earl of Stair" ;
     data:posIndicesFull "0:46" ;
     data:posIndicesPart "1061:1066",
@@ -55,9 +23,33 @@ data:John_Dalrymple-_14th_Earl_of_Stair a :Man,
     data:wdtLink wdt:Q1699743 ;
     :alsoKnownAs "John David James Dalrymple, 14th Earl of Stair",
         "John Stair" ;
-    :hasMother data:Davina_Bowes-Lyon ;
     :hasParent data:Davina_Bowes-Lyon ;
-    :hasSex data:male ;
-    :isChildOf data:Davina_Bowes-Lyon ;
-    :isSonOf data:Davina_Bowes-Lyon .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Davina_Bowes-Lyon a :Person ;
+    rdfs:label "Davina Bowes-Lyon" ;
+    data:posIndicesFull "229:256",
+        "301:317" ;
+    data:posIndicesPart "1001:1007",
+        "367:373",
+        "586:591",
+        "592:596" ;
+    data:wdtLink wdt:Q75253177 ;
+    :alsoKnownAs "Davina Dalrymple, Countess of Stair",
+        "Davina Dalrymple, Viscountess Dalrymple",
+        "Davina Katherine Bowes-Lyon",
+        "Davina Katherine Dalrymple, Countess of Stair",
+        "Davina Katherine Dalrymple, Viscountess Dalrymple",
+        "Davina Stair" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

@@ -1,0 +1,759 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Audrey_Emery a :Person,
+        :Woman ;
+    rdfs:label "Audrey Emery"^^xsd:string ;
+    data:posIndicesFull "1301:1313"^^xsd:string,
+        "16668:16680"^^xsd:string ;
+    data:posIndicesPart "16908:16914"^^xsd:string ;
+    data:wdtLink wdt:Q450692 ;
+    :alsoKnownAs "Anna Audrey Emery"^^xsd:string ;
+    :hasRelation data:Audrey_Emery ;
+    :hasSex data:female ;
+    :hasSister data:Audrey_Emery ;
+    :isBloodrelationOf data:Audrey_Emery ;
+    :isSiblingOf data:Audrey_Emery ;
+    :isSisterOf data:Audrey_Emery .
+
+data:Lennart_Bernadotte a :Man,
+        :Person ;
+    rdfs:label "Lennart Bernadotte"^^xsd:string ;
+    data:posIndicesFull "20854:20872"^^xsd:string ;
+    data:wdtLink wdt:Q564226 ;
+    :hasBrother data:Lennart_Bernadotte ;
+    :hasRelation data:Lennart_Bernadotte ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Lennart_Bernadotte ;
+    :isBrotherOf data:Lennart_Bernadotte ;
+    :isSiblingOf data:Lennart_Bernadotte .
+
+data:male a :Male .
+
+data:Grand_Duke_Paul_Alexandrovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Grand Duke Paul Alexandrovich of Russia"^^xsd:string ;
+    data:posIndicesFull "127:166"^^xsd:string ;
+    data:posIndicesPart "10110:10115"^^xsd:string,
+        "10116:10120"^^xsd:string,
+        "10316:10321"^^xsd:string,
+        "10322:10326"^^xsd:string,
+        "10499:10504"^^xsd:string,
+        "10505:10509"^^xsd:string,
+        "10698:10703"^^xsd:string,
+        "10704:10708"^^xsd:string,
+        "10850:10855"^^xsd:string,
+        "10856:10860"^^xsd:string,
+        "11153:11159"^^xsd:string,
+        "11490:11495"^^xsd:string,
+        "11496:11500"^^xsd:string,
+        "11734:11740"^^xsd:string,
+        "1188:1193"^^xsd:string,
+        "1194:1198"^^xsd:string,
+        "12239:12244"^^xsd:string,
+        "12444:12449"^^xsd:string,
+        "12450:12454"^^xsd:string,
+        "12663:12668"^^xsd:string,
+        "12722:12728"^^xsd:string,
+        "12924:12930"^^xsd:string,
+        "1352:1357"^^xsd:string,
+        "1358:1362"^^xsd:string,
+        "13766:13771"^^xsd:string,
+        "13772:13776"^^xsd:string,
+        "13967:13972"^^xsd:string,
+        "13973:13977"^^xsd:string,
+        "14018:14023"^^xsd:string,
+        "14024:14028"^^xsd:string,
+        "14780:14785"^^xsd:string,
+        "14970:14975"^^xsd:string,
+        "14976:14980"^^xsd:string,
+        "15180:15185"^^xsd:string,
+        "15186:15190"^^xsd:string,
+        "15225:15230"^^xsd:string,
+        "15231:15235"^^xsd:string,
+        "15443:15448"^^xsd:string,
+        "15449:15453"^^xsd:string,
+        "15502:15507"^^xsd:string,
+        "15508:15512"^^xsd:string,
+        "1554:1559"^^xsd:string,
+        "1560:1564"^^xsd:string,
+        "15661:15666"^^xsd:string,
+        "15667:15671"^^xsd:string,
+        "15775:15781"^^xsd:string,
+        "15805:15810"^^xsd:string,
+        "15811:15815"^^xsd:string,
+        "15882:15887"^^xsd:string,
+        "15888:15892"^^xsd:string,
+        "1589:1595"^^xsd:string,
+        "15940:15945"^^xsd:string,
+        "15946:15950"^^xsd:string,
+        "16062:16067"^^xsd:string,
+        "16068:16072"^^xsd:string,
+        "16095:16100"^^xsd:string,
+        "1609:1614"^^xsd:string,
+        "16101:16105"^^xsd:string,
+        "1615:1619"^^xsd:string,
+        "16182:16195"^^xsd:string,
+        "16357:16363"^^xsd:string,
+        "16459:16464"^^xsd:string,
+        "16731:16736"^^xsd:string,
+        "16737:16741"^^xsd:string,
+        "1694:1699"^^xsd:string,
+        "1700:1704"^^xsd:string,
+        "1705:1709"^^xsd:string,
+        "17087:17092"^^xsd:string,
+        "17093:17097"^^xsd:string,
+        "1710:1723"^^xsd:string,
+        "17130:17134"^^xsd:string,
+        "17184:17188"^^xsd:string,
+        "17316:17322"^^xsd:string,
+        "1744:1749"^^xsd:string,
+        "17482:17487"^^xsd:string,
+        "17488:17492"^^xsd:string,
+        "17681:17686"^^xsd:string,
+        "17687:17691"^^xsd:string,
+        "17762:17767"^^xsd:string,
+        "17815:17820"^^xsd:string,
+        "17821:17825"^^xsd:string,
+        "18003:18008"^^xsd:string,
+        "18009:18013"^^xsd:string,
+        "18033:18038"^^xsd:string,
+        "18153:18158"^^xsd:string,
+        "18159:18163"^^xsd:string,
+        "18188:18194"^^xsd:string,
+        "18283:18288"^^xsd:string,
+        "18289:18293"^^xsd:string,
+        "1854:1859"^^xsd:string,
+        "1860:1864"^^xsd:string,
+        "18617:18622"^^xsd:string,
+        "18623:18627"^^xsd:string,
+        "1865:1869"^^xsd:string,
+        "18682:18695"^^xsd:string,
+        "1870:1883"^^xsd:string,
+        "18927:18933"^^xsd:string,
+        "18974:18979"^^xsd:string,
+        "18980:18984"^^xsd:string,
+        "19128:19133"^^xsd:string,
+        "19134:19138"^^xsd:string,
+        "19181:19187"^^xsd:string,
+        "19216:19221"^^xsd:string,
+        "19222:19226"^^xsd:string,
+        "1932:1938"^^xsd:string,
+        "19455:19460"^^xsd:string,
+        "19461:19465"^^xsd:string,
+        "19851:19857"^^xsd:string,
+        "20015:20019"^^xsd:string,
+        "20117:20121"^^xsd:string,
+        "20177:20182"^^xsd:string,
+        "20183:20187"^^xsd:string,
+        "20574:20579"^^xsd:string,
+        "20580:20584"^^xsd:string,
+        "2171:2175"^^xsd:string,
+        "2274:2279"^^xsd:string,
+        "2311:2317"^^xsd:string,
+        "2363:2368"^^xsd:string,
+        "2399:2405"^^xsd:string,
+        "2426:2430"^^xsd:string,
+        "2561:2566"^^xsd:string,
+        "2589:2594"^^xsd:string,
+        "2595:2599"^^xsd:string,
+        "2600:2604"^^xsd:string,
+        "2613:2617"^^xsd:string,
+        "2628:2633"^^xsd:string,
+        "2634:2638"^^xsd:string,
+        "2645:2658"^^xsd:string,
+        "3251:3256"^^xsd:string,
+        "3257:3261"^^xsd:string,
+        "3269:3282"^^xsd:string,
+        "3286:3292"^^xsd:string,
+        "3584:3589"^^xsd:string,
+        "3673:3678"^^xsd:string,
+        "3679:3683"^^xsd:string,
+        "3684:3688"^^xsd:string,
+        "3829:3834"^^xsd:string,
+        "3908:3912"^^xsd:string,
+        "3930:3935"^^xsd:string,
+        "3936:3940"^^xsd:string,
+        "3948:3961"^^xsd:string,
+        "3976:3981"^^xsd:string,
+        "4105:4110"^^xsd:string,
+        "4111:4115"^^xsd:string,
+        "4127:4132"^^xsd:string,
+        "4259:4264"^^xsd:string,
+        "4265:4269"^^xsd:string,
+        "4270:4274"^^xsd:string,
+        "4375:4380"^^xsd:string,
+        "4381:4385"^^xsd:string,
+        "4386:4390"^^xsd:string,
+        "4694:4699"^^xsd:string,
+        "4700:4704"^^xsd:string,
+        "4785:4790"^^xsd:string,
+        "4791:4795"^^xsd:string,
+        "5081:5086"^^xsd:string,
+        "5087:5091"^^xsd:string,
+        "5092:5096"^^xsd:string,
+        "5437:5443"^^xsd:string,
+        "5448:5453"^^xsd:string,
+        "5454:5458"^^xsd:string,
+        "5459:5463"^^xsd:string,
+        "5629:5634"^^xsd:string,
+        "5635:5639"^^xsd:string,
+        "5661:5666"^^xsd:string,
+        "5747:5752"^^xsd:string,
+        "5800:5805"^^xsd:string,
+        "5806:5810"^^xsd:string,
+        "5859:5864"^^xsd:string,
+        "602:608"^^xsd:string,
+        "6064:6069"^^xsd:string,
+        "6070:6074"^^xsd:string,
+        "6314:6319"^^xsd:string,
+        "6320:6324"^^xsd:string,
+        "6413:6418"^^xsd:string,
+        "6419:6423"^^xsd:string,
+        "644:649"^^xsd:string,
+        "650:654"^^xsd:string,
+        "6675:6680"^^xsd:string,
+        "6681:6685"^^xsd:string,
+        "6686:6690"^^xsd:string,
+        "6716:6722"^^xsd:string,
+        "683:688"^^xsd:string,
+        "6849:6854"^^xsd:string,
+        "7592:7597"^^xsd:string,
+        "7598:7602"^^xsd:string,
+        "7666:7672"^^xsd:string,
+        "7730:7736"^^xsd:string,
+        "8016:8022"^^xsd:string,
+        "811:816"^^xsd:string,
+        "8127:8132"^^xsd:string,
+        "817:821"^^xsd:string,
+        "8204:8210"^^xsd:string,
+        "829:842"^^xsd:string,
+        "856:861"^^xsd:string,
+        "894:900"^^xsd:string,
+        "9295:9300"^^xsd:string,
+        "9301:9305"^^xsd:string,
+        "9820:9825"^^xsd:string,
+        "9826:9830"^^xsd:string ;
+    data:wdtLink wdt:Q372964 ;
+    :hasBrother data:Grand_Duke_Paul_Alexandrovich_of_Russia ;
+    :hasChild data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :hasRelation data:Grand_Duke_Dmitri_Pavlovich_of_Russia,
+        data:Grand_Duke_Paul_Alexandrovich_of_Russia ;
+    :hasSex data:male ;
+    :hasSon data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isAncestorOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isBloodrelationOf data:Grand_Duke_Paul_Alexandrovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Paul_Alexandrovich_of_Russia ;
+    :isFatherOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isParentOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Paul_Alexandrovich_of_Russia ;
+    :isUncleOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "2033:2041"^^xsd:string,
+        "2033:2051"^^xsd:string,
+        "7063:7070"^^xsd:string ;
+    data:posIndicesPart "12471:12477"^^xsd:string,
+        "4944:4950"^^xsd:string,
+        "8513:8519"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Olga Constantinovna of Russia"^^xsd:string ;
+    data:posIndicesFull "2056:2085"^^xsd:string ;
+    data:posIndicesPart "11153:11159"^^xsd:string,
+        "11734:11740"^^xsd:string,
+        "12722:12728"^^xsd:string,
+        "12924:12930"^^xsd:string,
+        "13265:13269"^^xsd:string,
+        "15775:15781"^^xsd:string,
+        "16357:16363"^^xsd:string,
+        "17316:17322"^^xsd:string,
+        "18188:18194"^^xsd:string,
+        "18927:18933"^^xsd:string,
+        "19181:19187"^^xsd:string,
+        "19851:19857"^^xsd:string,
+        "2311:2317"^^xsd:string,
+        "2399:2405"^^xsd:string,
+        "3286:3292"^^xsd:string,
+        "5135:5139"^^xsd:string,
+        "5230:5234"^^xsd:string,
+        "5437:5443"^^xsd:string,
+        "6716:6722"^^xsd:string,
+        "7666:7672"^^xsd:string,
+        "7730:7736"^^xsd:string,
+        "8016:8022"^^xsd:string,
+        "8204:8210"^^xsd:string ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece"^^xsd:string,
+        "Queen Olga of Greece"^^xsd:string ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isAuntOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Constantine I of Greece"^^xsd:string ;
+    data:posIndicesFull "17911:17929"^^xsd:string,
+        "17911:17939"^^xsd:string,
+        "17916:17929"^^xsd:string,
+        "17916:17939"^^xsd:string,
+        "2103:2121"^^xsd:string,
+        "2108:2121"^^xsd:string ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I"^^xsd:string,
+        "Constantine Oldenburg I"^^xsd:string,
+        "King Constantine I"^^xsd:string,
+        "King Constantine I of Greece"^^xsd:string,
+        "Konstantinos I of Greece"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia .
+
+data:Grand_Duke_Dmitri_Pavlovich_of_Russia a :Man,
+        :Person ;
+    rdfs:label "Grand Duke Dmitri Pavlovich of Russia"^^xsd:string ;
+    data:posIndicesFull "0:37"^^xsd:string ;
+    data:posIndicesPart "10110:10115"^^xsd:string,
+        "10116:10120"^^xsd:string,
+        "10121:10127"^^xsd:string,
+        "10185:10191"^^xsd:string,
+        "1020:1026"^^xsd:string,
+        "10316:10321"^^xsd:string,
+        "10322:10326"^^xsd:string,
+        "10362:10368"^^xsd:string,
+        "10499:10504"^^xsd:string,
+        "10505:10509"^^xsd:string,
+        "10510:10516"^^xsd:string,
+        "10698:10703"^^xsd:string,
+        "10704:10708"^^xsd:string,
+        "10709:10715"^^xsd:string,
+        "10716:10725"^^xsd:string,
+        "10850:10855"^^xsd:string,
+        "10856:10860"^^xsd:string,
+        "10861:10867"^^xsd:string,
+        "10929:10935"^^xsd:string,
+        "11061:11070"^^xsd:string,
+        "11153:11159"^^xsd:string,
+        "11201:11207"^^xsd:string,
+        "11259:11265"^^xsd:string,
+        "11490:11495"^^xsd:string,
+        "11496:11500"^^xsd:string,
+        "11501:11507"^^xsd:string,
+        "11577:11586"^^xsd:string,
+        "11734:11740"^^xsd:string,
+        "11821:11830"^^xsd:string,
+        "1188:1193"^^xsd:string,
+        "1194:1198"^^xsd:string,
+        "11972:11978"^^xsd:string,
+        "1199:1205"^^xsd:string,
+        "12097:12106"^^xsd:string,
+        "12239:12244"^^xsd:string,
+        "12271:12280"^^xsd:string,
+        "12444:12449"^^xsd:string,
+        "12450:12454"^^xsd:string,
+        "12619:12625"^^xsd:string,
+        "12663:12668"^^xsd:string,
+        "12722:12728"^^xsd:string,
+        "12806:12812"^^xsd:string,
+        "12924:12930"^^xsd:string,
+        "13007:13016"^^xsd:string,
+        "13138:13144"^^xsd:string,
+        "13325:13331"^^xsd:string,
+        "13410:13416"^^xsd:string,
+        "13506:13512"^^xsd:string,
+        "1352:1357"^^xsd:string,
+        "1358:1362"^^xsd:string,
+        "13607:13613"^^xsd:string,
+        "13766:13771"^^xsd:string,
+        "13772:13776"^^xsd:string,
+        "13777:13783"^^xsd:string,
+        "13967:13972"^^xsd:string,
+        "13973:13977"^^xsd:string,
+        "14018:14023"^^xsd:string,
+        "14024:14028"^^xsd:string,
+        "14124:14130"^^xsd:string,
+        "14215:14221"^^xsd:string,
+        "14274:14280"^^xsd:string,
+        "14351:14357"^^xsd:string,
+        "14570:14576"^^xsd:string,
+        "14691:14697"^^xsd:string,
+        "14780:14785"^^xsd:string,
+        "14970:14975"^^xsd:string,
+        "14976:14980"^^xsd:string,
+        "15022:15031"^^xsd:string,
+        "15180:15185"^^xsd:string,
+        "15186:15190"^^xsd:string,
+        "15225:15230"^^xsd:string,
+        "15231:15235"^^xsd:string,
+        "15326:15332"^^xsd:string,
+        "15443:15448"^^xsd:string,
+        "15449:15453"^^xsd:string,
+        "15502:15507"^^xsd:string,
+        "15508:15512"^^xsd:string,
+        "1554:1559"^^xsd:string,
+        "1560:1564"^^xsd:string,
+        "15661:15666"^^xsd:string,
+        "15667:15671"^^xsd:string,
+        "15775:15781"^^xsd:string,
+        "15805:15810"^^xsd:string,
+        "15811:15815"^^xsd:string,
+        "15882:15887"^^xsd:string,
+        "15888:15892"^^xsd:string,
+        "1589:1595"^^xsd:string,
+        "15940:15945"^^xsd:string,
+        "15946:15950"^^xsd:string,
+        "15951:15957"^^xsd:string,
+        "15958:15967"^^xsd:string,
+        "16062:16067"^^xsd:string,
+        "16068:16072"^^xsd:string,
+        "16095:16100"^^xsd:string,
+        "1609:1614"^^xsd:string,
+        "16101:16105"^^xsd:string,
+        "16106:16112"^^xsd:string,
+        "1615:1619"^^xsd:string,
+        "16175:16181"^^xsd:string,
+        "1620:1626"^^xsd:string,
+        "16357:16363"^^xsd:string,
+        "16459:16464"^^xsd:string,
+        "16567:16573"^^xsd:string,
+        "16731:16736"^^xsd:string,
+        "16737:16741"^^xsd:string,
+        "16742:16748"^^xsd:string,
+        "1694:1699"^^xsd:string,
+        "1700:1704"^^xsd:string,
+        "17087:17092"^^xsd:string,
+        "17093:17097"^^xsd:string,
+        "17316:17322"^^xsd:string,
+        "1744:1749"^^xsd:string,
+        "17482:17487"^^xsd:string,
+        "17488:17492"^^xsd:string,
+        "17681:17686"^^xsd:string,
+        "17687:17691"^^xsd:string,
+        "17692:17698"^^xsd:string,
+        "17762:17767"^^xsd:string,
+        "17775:17781"^^xsd:string,
+        "17782:17791"^^xsd:string,
+        "17815:17820"^^xsd:string,
+        "17821:17825"^^xsd:string,
+        "18003:18008"^^xsd:string,
+        "18009:18013"^^xsd:string,
+        "18033:18038"^^xsd:string,
+        "18153:18158"^^xsd:string,
+        "18159:18163"^^xsd:string,
+        "18188:18194"^^xsd:string,
+        "18283:18288"^^xsd:string,
+        "18289:18293"^^xsd:string,
+        "18294:18300"^^xsd:string,
+        "1837:1843"^^xsd:string,
+        "18462:18468"^^xsd:string,
+        "1854:1859"^^xsd:string,
+        "1860:1864"^^xsd:string,
+        "18617:18622"^^xsd:string,
+        "18623:18627"^^xsd:string,
+        "18628:18634"^^xsd:string,
+        "18675:18681"^^xsd:string,
+        "18927:18933"^^xsd:string,
+        "18974:18979"^^xsd:string,
+        "18980:18984"^^xsd:string,
+        "19128:19133"^^xsd:string,
+        "19134:19138"^^xsd:string,
+        "19139:19145"^^xsd:string,
+        "19181:19187"^^xsd:string,
+        "19216:19221"^^xsd:string,
+        "19222:19226"^^xsd:string,
+        "19227:19233"^^xsd:string,
+        "1932:1938"^^xsd:string,
+        "19455:19460"^^xsd:string,
+        "19461:19465"^^xsd:string,
+        "19466:19472"^^xsd:string,
+        "19473:19482"^^xsd:string,
+        "19645:19651"^^xsd:string,
+        "19766:19772"^^xsd:string,
+        "19851:19857"^^xsd:string,
+        "1987:1993"^^xsd:string,
+        "19927:19933"^^xsd:string,
+        "20177:20182"^^xsd:string,
+        "20183:20187"^^xsd:string,
+        "20188:20194"^^xsd:string,
+        "20349:20355"^^xsd:string,
+        "20574:20579"^^xsd:string,
+        "20580:20584"^^xsd:string,
+        "20585:20591"^^xsd:string,
+        "20695:20701"^^xsd:string,
+        "20786:20792"^^xsd:string,
+        "2171:2175"^^xsd:string,
+        "2274:2279"^^xsd:string,
+        "2311:2317"^^xsd:string,
+        "2363:2368"^^xsd:string,
+        "2399:2405"^^xsd:string,
+        "2426:2430"^^xsd:string,
+        "2561:2566"^^xsd:string,
+        "2589:2594"^^xsd:string,
+        "2595:2599"^^xsd:string,
+        "2628:2633"^^xsd:string,
+        "2634:2638"^^xsd:string,
+        "2747:2753"^^xsd:string,
+        "2990:2996"^^xsd:string,
+        "3140:3146"^^xsd:string,
+        "3189:3195"^^xsd:string,
+        "3251:3256"^^xsd:string,
+        "3257:3261"^^xsd:string,
+        "3286:3292"^^xsd:string,
+        "3317:3323"^^xsd:string,
+        "3556:3562"^^xsd:string,
+        "3584:3589"^^xsd:string,
+        "3673:3678"^^xsd:string,
+        "3679:3683"^^xsd:string,
+        "3801:3807"^^xsd:string,
+        "3829:3834"^^xsd:string,
+        "3930:3935"^^xsd:string,
+        "3936:3940"^^xsd:string,
+        "3976:3981"^^xsd:string,
+        "4105:4110"^^xsd:string,
+        "4111:4115"^^xsd:string,
+        "4127:4132"^^xsd:string,
+        "4259:4264"^^xsd:string,
+        "4265:4269"^^xsd:string,
+        "4375:4380"^^xsd:string,
+        "4381:4385"^^xsd:string,
+        "4499:4505"^^xsd:string,
+        "4694:4699"^^xsd:string,
+        "4700:4704"^^xsd:string,
+        "4705:4711"^^xsd:string,
+        "4785:4790"^^xsd:string,
+        "4791:4795"^^xsd:string,
+        "4838:4844"^^xsd:string,
+        "4994:5000"^^xsd:string,
+        "5081:5086"^^xsd:string,
+        "5087:5091"^^xsd:string,
+        "5437:5443"^^xsd:string,
+        "5448:5453"^^xsd:string,
+        "5454:5458"^^xsd:string,
+        "5555:5561"^^xsd:string,
+        "5629:5634"^^xsd:string,
+        "5635:5639"^^xsd:string,
+        "5661:5666"^^xsd:string,
+        "5747:5752"^^xsd:string,
+        "5800:5805"^^xsd:string,
+        "5806:5810"^^xsd:string,
+        "5859:5864"^^xsd:string,
+        "5950:5956"^^xsd:string,
+        "602:608"^^xsd:string,
+        "6064:6069"^^xsd:string,
+        "6070:6074"^^xsd:string,
+        "6314:6319"^^xsd:string,
+        "6320:6324"^^xsd:string,
+        "6341:6347"^^xsd:string,
+        "6413:6418"^^xsd:string,
+        "6419:6423"^^xsd:string,
+        "644:649"^^xsd:string,
+        "650:654"^^xsd:string,
+        "655:661"^^xsd:string,
+        "6604:6610"^^xsd:string,
+        "6658:6664"^^xsd:string,
+        "6675:6680"^^xsd:string,
+        "6681:6685"^^xsd:string,
+        "6716:6722"^^xsd:string,
+        "683:688"^^xsd:string,
+        "6849:6854"^^xsd:string,
+        "7094:7100"^^xsd:string,
+        "7216:7222"^^xsd:string,
+        "7335:7341"^^xsd:string,
+        "7364:7370"^^xsd:string,
+        "7592:7597"^^xsd:string,
+        "7598:7602"^^xsd:string,
+        "7666:7672"^^xsd:string,
+        "7730:7736"^^xsd:string,
+        "7830:7836"^^xsd:string,
+        "7980:7986"^^xsd:string,
+        "8016:8022"^^xsd:string,
+        "8110:8116"^^xsd:string,
+        "811:816"^^xsd:string,
+        "8127:8132"^^xsd:string,
+        "817:821"^^xsd:string,
+        "8204:8210"^^xsd:string,
+        "8223:8229"^^xsd:string,
+        "8277:8283"^^xsd:string,
+        "8350:8356"^^xsd:string,
+        "856:861"^^xsd:string,
+        "8691:8697"^^xsd:string,
+        "894:900"^^xsd:string,
+        "9295:9300"^^xsd:string,
+        "9301:9305"^^xsd:string,
+        "9306:9312"^^xsd:string,
+        "9313:9322"^^xsd:string,
+        "9759:9765"^^xsd:string,
+        "9820:9825"^^xsd:string,
+        "9826:9830"^^xsd:string,
+        "9831:9837"^^xsd:string,
+        "9974:9980"^^xsd:string ;
+    data:wdtLink wdt:Q372954 ;
+    :alsoKnownAs "Dimitrii Pavlovich Romanov, Grand Duke of Russia"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Grand_Duke_Paul_Alexandrovich_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasBrother data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :hasFather data:Grand_Duke_Paul_Alexandrovich_of_Russia ;
+    :hasMother data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasParent data:Grand_Duke_Paul_Alexandrovich_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasRelation data:George_I_of_Greece,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia,
+        data:Grand_Duke_Paul_Alexandrovich_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isChildOf data:Grand_Duke_Paul_Alexandrovich_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isSonOf data:Grand_Duke_Paul_Alexandrovich_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark .
+
+data:Princess_Alexandra_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alexandra of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "1758:1788"^^xsd:string,
+        "1795:1835"^^xsd:string,
+        "1804:1835"^^xsd:string ;
+    data:posIndicesPart "13256:13264"^^xsd:string,
+        "13539:13546"^^xsd:string,
+        "13598:13605"^^xsd:string,
+        "17039:17047"^^xsd:string,
+        "17584:17591"^^xsd:string,
+        "2004:2013"^^xsd:string,
+        "2575:2584"^^xsd:string,
+        "2706:2715"^^xsd:string,
+        "3043:3052"^^xsd:string,
+        "8642:8650"^^xsd:string,
+        "8926:8935"^^xsd:string,
+        "9024:9033"^^xsd:string,
+        "9242:9251"^^xsd:string ;
+    data:wdtLink wdt:Q232728 ;
+    :alsoKnownAs "Alexandra Georgievna of Russia"^^xsd:string,
+        "Alexandra of Greece and Denmark"^^xsd:string,
+        "Grand Duchess Alexandra Georgievna, Grand Duchess Pavlovna of Russia"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasChild data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSon data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isAncestorOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isAuntOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isDaughterOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isParentOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isSisterOf data:Constantine_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark .
+

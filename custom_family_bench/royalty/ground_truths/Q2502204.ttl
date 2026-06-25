@@ -7,63 +7,92 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:George_I_of_Greece a :Person ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "1460:1468",
+        "1460:1478" ;
+    data:posIndicesPart "1685:1691",
+        "1766:1772" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasSex data:male .
 
-data:posIndicesPart a owl:AnnotationProperty .
+data:Olga_Constantinovna_of_Russia a :Person ;
+    rdfs:label "Olga Constantinovna of Russia" ;
+    data:posIndicesFull "219:233" ;
+    data:posIndicesPart "1188:1192",
+        "1305:1309",
+        "1519:1523",
+        "1545:1549",
+        "1983:1987",
+        "2065:2069",
+        "2140:2144",
+        "460:464",
+        "548:552",
+        "760:764",
+        "873:877" ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece",
+        "Queen Olga of Greece" ;
+    :hasSex data:female .
 
-data:wdtLink a owl:AnnotationProperty .
+data:Prince_Jean_dOrléans_1 a :Person ;
+    rdfs:label "Prince Jean d’Orléans" ;
+    data:posIndicesFull "1385:1399" ;
+    data:posIndicesPart "1710:1716",
+        "1749:1755",
+        "1942:1948" ;
+    data:wdtLink wdt:Q578791 ;
+    :alsoKnownAs "Jean Pierre Clément Marie d’Orléans",
+        "Jean d’Orléans",
+        "Prince Jean Pierre Clément Marie d’Orléans",
+        "Prince Jean, Duke of Guise" ;
+    :hasSex data:male .
 
-data:Marina_Karella a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Marina Karella" ;
-    data:posIndicesFull "371:385" ;
-    data:posIndicesPart "1505:1511" ;
-    data:wdtLink wdt:Q2623984 ;
-    :hasChild data:Princess_Olga-_Duchess_of_Aosta ;
-    :hasDaughter data:Princess_Olga-_Duchess_of_Aosta ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Olga-_Duchess_of_Aosta ;
-    :isParentOf data:Princess_Olga-_Duchess_of_Aosta .
-
-data:Prince_Michael_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Michael of Greece and Denmark" ;
-    data:posIndicesFull "1037:1073",
-        "330:366" ;
-    data:posIndicesPart "1419:1425",
-        "497:503",
-        "593:599",
-        "743:749",
-        "807:813",
-        "949:955" ;
-    data:wdtLink wdt:Q724825 ;
-    :alsoKnownAs "Michel de Grece" ;
-    :hasChild data:Princess_Olga-_Duchess_of_Aosta ;
-    :hasDaughter data:Princess_Olga-_Duchess_of_Aosta ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Olga-_Duchess_of_Aosta ;
-    :isParentOf data:Princess_Olga-_Duchess_of_Aosta .
-
-data:Princess_Olga-_Duchess_of_Aosta a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Olga-_Duchess_of_Aosta a :Person ;
     rdfs:label "Princess Olga, Duchess of Aosta" ;
     data:wdtLink wdt:Q2502204 ;
     :alsoKnownAs "Olga da Grécia, Duquesa de Apulia",
         "Princess Olga Isabelle of Greece",
         "Princess Olga of Greece, The Duchess of Aosta",
         "Princess Olga of Savoy-Aosta" ;
-    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;
-    :hasMother data:Marina_Karella ;
     :hasParent data:Marina_Karella,
         data:Prince_Michael_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :isChildOf data:Marina_Karella,
-        data:Prince_Michael_of_Greece_and_Denmark ;
-    :isDaughterOf data:Marina_Karella,
-        data:Prince_Michael_of_Greece_and_Denmark .
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Marina_Karella a :Person ;
+    rdfs:label "Marina Karella" ;
+    data:posIndicesFull "371:385" ;
+    data:posIndicesPart "2190:2196" ;
+    data:wdtLink wdt:Q2623984 ;
+    :hasSex data:female .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Michael of Greece and Denmark" ;
+    data:posIndicesFull "1560:1596",
+        "330:366" ;
+    data:posIndicesPart "1209:1215",
+        "1942:1948",
+        "497:503",
+        "593:599",
+        "743:749" ;
+    data:wdtLink wdt:Q724825 ;
+    :alsoKnownAs "Michel de Grece" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

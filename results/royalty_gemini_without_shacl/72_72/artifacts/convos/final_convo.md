@@ -87,6 +87,8 @@ Malcolm had the onset of dementia late on in her life and died on 13 October 201
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -102,39 +104,9 @@ Malcolm had the onset of dementia late on in her life and died on 13 October 201
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -149,6 +121,23 @@ Malcolm had the onset of dementia late on in her life and died on 13 October 201
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -166,6 +155,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -233,29 +237,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,6 +260,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -276,6 +280,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -284,17 +290,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -322,6 +330,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -337,137 +429,115 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1ef8e685-3ad2-4ce3-aa41-4d99ab3b72b3)
- Call ID: 1ef8e685-3ad2-4ce3-aa41-4d99ab3b72b3
+  AssignClass (2947e56b-6e97-4495-9bab-93ec4b89c399)
+ Call ID: 2947e56b-6e97-4495-9bab-93ec4b89c399
   Args:
-    type: :Woman
-    source: Mary_Malcolm
-  AssignClass (601786f6-8cf8-461d-964b-7792d054e8b9)
- Call ID: 601786f6-8cf8-461d-964b-7792d054e8b9
-  Args:
+    source: :Mary_Malcolm
     type: :Person
-    source: Mary_Malcolm
-  AddLiteral (f82fa391-01f9-46ac-bd0c-4a61526741c3)
- Call ID: f82fa391-01f9-46ac-bd0c-4a61526741c3
+  AssignClass (97bce80f-82fb-4c6b-8da3-9062788d7e39)
+ Call ID: 97bce80f-82fb-4c6b-8da3-9062788d7e39
   Args:
-    relation: :knownAs
-    literal_type: xsd:string
-    source: Mary_Malcolm
-    literal_value: Helen Mary Malcolm
-  AddLiteral (826d9e09-a9dc-46e8-b999-5dcc5a9c7220)
- Call ID: 826d9e09-a9dc-46e8-b999-5dcc5a9c7220
+    source: :Mary_Malcolm
+    type: :Woman
+  AddLiteral (ad53ea40-b8c5-4573-8b41-616f5a867647)
+ Call ID: ad53ea40-b8c5-4573-8b41-616f5a867647
   Args:
-    literal_type: xsd:integer
-    source: Mary_Malcolm
     literal_value: 1918
     relation: :hasBirthYear
-  AddLiteral (44eee6c9-cfc5-48f7-97c0-1a86c7955643)
- Call ID: 44eee6c9-cfc5-48f7-97c0-1a86c7955643
-  Args:
-    relation: :hasDeathYear
-    source: Mary_Malcolm
-    literal_value: 2010
+    source: :Mary_Malcolm
     literal_type: xsd:integer
-  AssignClass (1021aad2-32a5-402d-a338-094775dfe49d)
- Call ID: 1021aad2-32a5-402d-a338-094775dfe49d
+  AddLiteral (ef1e4628-774a-49b9-af08-7258a3e2ced8)
+ Call ID: ef1e4628-774a-49b9-af08-7258a3e2ced8
   Args:
+    literal_value: 2010
+    relation: :hasDeathYear
+    source: :Mary_Malcolm
+    literal_type: xsd:integer
+  AssignClass (23f5f44d-3b0b-459d-800c-70ef40e31853)
+ Call ID: 23f5f44d-3b0b-459d-800c-70ef40e31853
+  Args:
+    source: :Sir_Ian_Malcolm
+    type: :Person
+  AssignClass (4b83db2c-6a11-430b-98f5-95df1d79c840)
+ Call ID: 4b83db2c-6a11-430b-98f5-95df1d79c840
+  Args:
+    source: :Sir_Ian_Malcolm
     type: :Man
-    source: Ian_Malcolm
-  AssignClass (fe31885d-3206-4479-86b9-eb7725b567d5)
- Call ID: fe31885d-3206-4479-86b9-eb7725b567d5
+  AssignClass (e766250a-c1b4-4666-98f9-d8c14be85bb4)
+ Call ID: e766250a-c1b4-4666-98f9-d8c14be85bb4
   Args:
-    type: :Ancestor
-    source: Ian_Malcolm
-  AssignClass (41ccfca5-95f0-4263-9323-e44b128250b2)
- Call ID: 41ccfca5-95f0-4263-9323-e44b128250b2
-  Args:
+    source: :Jeanne_Langtry
     type: :Person
-    source: Ian_Malcolm
-  AddTriple (9215f7da-b801-4b85-bc68-1ad192064d61)
- Call ID: 9215f7da-b801-4b85-bc68-1ad192064d61
+  AssignClass (b594dae9-7b93-4f62-8651-5482dfbf2550)
+ Call ID: b594dae9-7b93-4f62-8651-5482dfbf2550
   Args:
-    relation: :hasFather
-    source: Mary_Malcolm
-    target: Ian_Malcolm
-  AssignClass (3dc85353-c721-482d-8e5f-617202cc66c0)
- Call ID: 3dc85353-c721-482d-8e5f-617202cc66c0
-  Args:
+    source: :Jeanne_Langtry
     type: :Woman
-    source: Jeanne_Langtry
-  AssignClass (7343ddad-52d5-4943-b1f8-d4e23ed323f8)
- Call ID: 7343ddad-52d5-4943-b1f8-d4e23ed323f8
-  Args:
-    type: :Ancestor
-    source: Jeanne_Langtry
-  AssignClass (f3c3ac08-3709-44e6-9722-cd73fb6a7076)
- Call ID: f3c3ac08-3709-44e6-9722-cd73fb6a7076
-  Args:
-    type: :Person
-    source: Jeanne_Langtry
-  AddTriple (60af8bf8-53c0-41a9-afdb-d475a6cd70e3)
- Call ID: 60af8bf8-53c0-41a9-afdb-d475a6cd70e3
-  Args:
-    target: Jeanne_Langtry
-    source: Mary_Malcolm
-    relation: :hasMother
-  AddLiteral (07774e60-40bc-4873-8310-8b020922ce86)
- Call ID: 07774e60-40bc-4873-8310-8b020922ce86
+  AddLiteral (ee274d6d-9522-45e6-a799-5281143986b2)
+ Call ID: ee274d6d-9522-45e6-a799-5281143986b2
   Args:
     literal_value: 1881
-    source: Jeanne_Langtry
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (51d52049-cd22-49a3-8a4d-f709b5bf3c78)
- Call ID: 51d52049-cd22-49a3-8a4d-f709b5bf3c78
+    source: :Jeanne_Langtry
+    literal_type: xsd:integer
+  AddLiteral (cb4a404a-c1d4-4919-ad6c-d896c53412db)
+ Call ID: cb4a404a-c1d4-4919-ad6c-d896c53412db
   Args:
-    relation: :hasDeathYear
-    source: Jeanne_Langtry
     literal_value: 1964
+    relation: :hasDeathYear
+    source: :Jeanne_Langtry
     literal_type: xsd:integer
-  AssignClass (7232676b-2520-4b64-a3bf-a7a58efb1a34)
- Call ID: 7232676b-2520-4b64-a3bf-a7a58efb1a34
+  AddTriple (bf42d6d4-e2d4-4732-98fb-4e400318b57b)
+ Call ID: bf42d6d4-e2d4-4732-98fb-4e400318b57b
   Args:
+    relation: :hasFather
+    target: :Sir_Ian_Malcolm
+    source: :Mary_Malcolm
+  AddTriple (4790f5ff-b74a-4859-b754-8ce11a2e5eb3)
+ Call ID: 4790f5ff-b74a-4859-b754-8ce11a2e5eb3
+  Args:
+    relation: :hasMother
+    target: :Jeanne_Langtry
+    source: :Mary_Malcolm
+  AssignClass (059cb985-51e1-4686-8e26-4ad14f0b719e)
+ Call ID: 059cb985-51e1-4686-8e26-4ad14f0b719e
+  Args:
+    source: :Lillie_Langtry
+    type: :Person
+  AssignClass (4005baf0-a9bc-4d14-97e9-2e7cfd66ef08)
+ Call ID: 4005baf0-a9bc-4d14-97e9-2e7cfd66ef08
+  Args:
+    source: :Lillie_Langtry
     type: :Woman
-    source: Lillie_Langtry
-  AssignClass (8e15f993-375e-44ec-9dbf-b7d5ccbaa416)
- Call ID: 8e15f993-375e-44ec-9dbf-b7d5ccbaa416
+  AddTriple (999de885-6c83-430f-ab35-2468cc3b7a22)
+ Call ID: 999de885-6c83-430f-ab35-2468cc3b7a22
   Args:
-    type: :Ancestor
-    source: Lillie_Langtry
-  AssignClass (418edac4-5c2f-4db6-b249-d0bbb3ad3390)
- Call ID: 418edac4-5c2f-4db6-b249-d0bbb3ad3390
+    source: :Jeanne_Langtry
+    relation: :hasMother
+    target: :Lillie_Langtry
+  AssignClass (313cfe28-b583-48c7-87c8-1aaa54f286c6)
+ Call ID: 313cfe28-b583-48c7-87c8-1aaa54f286c6
   Args:
+    source: :Sir_Basil_Bartlett
     type: :Person
-    source: Lillie_Langtry
-  AddTriple (2f5564ca-071f-4cf4-96a9-882173621986)
- Call ID: 2f5564ca-071f-4cf4-96a9-882173621986
+  AssignClass (eca37f27-759d-4141-a94d-546b44f024e8)
+ Call ID: eca37f27-759d-4141-a94d-546b44f024e8
   Args:
-    source: Lillie_Langtry
-    relation: :isAncestorOf
-    target: Mary_Malcolm
-  AssignClass (ca7b2eaf-d0e8-4cf2-b6fd-5c758c9726aa)
- Call ID: ca7b2eaf-d0e8-4cf2-b6fd-5c758c9726aa
-  Args:
+    source: :Sir_Basil_Bartlett
     type: :Man
-    source: Basil_Bartlett
-  AssignClass (9ba154b6-8cf9-4d37-a9fe-541413790a13)
- Call ID: 9ba154b6-8cf9-4d37-a9fe-541413790a13
-  Args:
-    type: :Person
-    source: Basil_Bartlett
-  AddLiteral (6bb7ef59-08a9-4d5d-bf72-d33388417242)
- Call ID: 6bb7ef59-08a9-4d5d-bf72-d33388417242
-  Args:
-    source: Mary_Malcolm
-    literal_value: 1937
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AddTriple (76126672-80af-4a24-8a0e-c206ef0a740f)
- Call ID: 76126672-80af-4a24-8a0e-c206ef0a740f
+  AddTriple (9a350c97-e605-4787-b32d-627166cb9073)
+ Call ID: 9a350c97-e605-4787-b32d-627166cb9073
   Args:
     relation: :hasRelation
-    source: Mary_Malcolm
-    target: Basil_Bartlett
-  Finish (9ba87a5e-b372-4b04-b779-3a40e355999c)
- Call ID: 9ba87a5e-b372-4b04-b779-3a40e355999c
+    target: :Sir_Basil_Bartlett
+    source: :Mary_Malcolm
+  AddLiteral (77c1611e-aa22-4f86-9a83-2570005ac4f1)
+ Call ID: 77c1611e-aa22-4f86-9a83-2570005ac4f1
+  Args:
+    literal_value: 1937
+    relation: :hasMarriageYear
+    source: :Mary_Malcolm
+    literal_type: xsd:integer
+  Finish (446c559d-7ac4-4ea5-a1db-32dc7ffdf195)
+ Call ID: 446c559d-7ac4-4ea5-a1db-32dc7ffdf195
   Args:

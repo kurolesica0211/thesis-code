@@ -2,45 +2,51 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Valdemar_of_Denmark a :Man,
+data:Evgenia a :Person,
+        :Woman ;
+    :isDaughterOf data:Prince_George_of_Greece_and_Denmark,
+        data:Princess_Marie_Bonaparte .
+
+data:Petros a :Man,
         :Person ;
-    :isUncleOf data:George_of_Greece_and_Denmark .
+    :isSonOf data:Prince_George_of_Greece_and_Denmark,
+        data:Princess_Marie_Bonaparte .
 
-data:Christian_IX_of_Denmark a :Man,
-        :Person .
+data:Prince_Roland_Bonaparte a :Man,
+        :Person ;
+    :isFatherOf data:Princess_Marie_Bonaparte .
 
-data:Constantine_I_of_Greece a :Man,
-        :Person .
-
-data:Evgenia_of_Greece_and_Denmark a :Person,
-        :Woman .
+data:Prince_Valdemar a :Man,
+        :Person ;
+    :isChildOf data:King_Christian_IX .
 
 data:George_I_of_Greece a :Man,
-        :Person .
-
-data:George_of_Greece_and_Denmark a :Man,
-        :Person ;
-    :hasBirthYear 1869 ;
-    :hasBrother data:Constantine_I_of_Greece,
-        data:Nicholas_of_Greece_and_Denmark ;
-    :hasDaughter data:Evgenia_of_Greece_and_Denmark ;
-    :hasDeathYear 1957 ;
-    :hasFather data:Christian_IX_of_Denmark,
-        data:George_I_of_Greece ;
-    :hasMarriageYear 1907 ;
-    :hasMother data:Olga_Konstantinovna_of_Russia ;
-    :hasRelation data:Marie_Bonaparte ;
-    :hasSon data:Petros_of_Greece_and_Denmark .
-
-data:Marie_Bonaparte a :Person,
-        :Woman .
-
-data:Nicholas_of_Greece_and_Denmark a :Man,
         :Person .
 
 data:Olga_Konstantinovna_of_Russia a :Person,
         :Woman .
 
-data:Petros_of_Greece_and_Denmark a :Man,
+data:Prince_Constantine a :Man,
         :Person .
+
+data:Prince_Nicholas a :Man,
+        :Person .
+
+data:King_Christian_IX a :Man,
+        :Person .
+
+data:Prince_George_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1957 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1907 ;
+    :hasMother data:Olga_Konstantinovna_of_Russia ;
+    :hasRelation data:Princess_Marie_Bonaparte ;
+    :isBrotherOf data:Prince_Constantine,
+        data:Prince_Nicholas ;
+    :isChildOf data:King_Christian_IX .
+
+data:Princess_Marie_Bonaparte a :Person,
+        :Woman .
 

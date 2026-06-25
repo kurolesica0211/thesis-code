@@ -2,44 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Edgar_Lascelles a :Man,
+data:Alexander_Mountstuart_Elphinstone a :Man,
         :Person ;
     :hasBirthYear 1980 ;
-    :hasDaughter data:Ivy_Lascelles ;
-    :hasFather data:David_Lascelles ;
-    :hasMarriageYear 2017 ;
-    :hasMother data:Margaret_Lascelles ;
-    :hasSon data:Kit_Lascelles,
-        data:Leo_Lascelles .
+    :hasFather data:James_Elphinstone ;
+    :hasMother data:Willa_Mary_Gabrielle_Chetwode .
 
-data:David_Lascelles a :Ancestor,
+data:Andrew_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasMother data:Mary_Bowes-Lyon .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    :hasMother data:Elizabeth_The_Queen_Mother .
+
+data:George_Chetwode a :Ancestor,
         :Man,
         :Person .
 
-data:Ivy_Lascelles a :Person,
+data:James_Elphinstone a :Ancestor,
+        :Man,
+        :Person .
+
+data:Mary_Bowes-Lyon a :Ancestor,
+        :Person,
         :Woman ;
-    :hasBirthYear 2018 ;
-    :hasMother data:Annika_Reed .
+    :hasSister data:Elizabeth_The_Queen_Mother .
 
-data:Kit_Lascelles a :Man,
-        :Person ;
-    :hasBirthYear 2023 ;
-    :hasMother data:Annika_Reed .
+data:Victor_Elliot-Murray-Kynynmound a :Ancestor,
+        :Man,
+        :Person .
 
-data:Laleh_Yeganegy a :Ancestor,
+data:Willa_Elliot-Murray-Kynynmound a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasFather data:Victor_Elliot-Murray-Kynynmound .
 
-data:Leo_Lascelles a :Man,
-        :Person ;
-    :hasBirthYear 2008 ;
-    :hasMother data:Laleh_Yeganegy .
-
-data:Margaret_Lascelles a :Ancestor,
+data:Willa_Mary_Gabrielle_Chetwode a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasFather data:George_Chetwode ;
+    :hasMother data:Willa_Elliot-Murray-Kynynmound .
 
-data:Annika_Reed a :Ancestor,
+data:Elizabeth_The_Queen_Mother a :Ancestor,
         :Person,
         :Woman .
 

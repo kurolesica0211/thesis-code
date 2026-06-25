@@ -2,25 +2,21 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Diane_dOrl%C3%A9ans a :Woman ;
-    :hasFather data:Henri_Count_of_Paris ;
-    :hasMother data:Isabelle_of_Orl%C3%A9ans-Braganza .
+data:Alexander_Patrick_Gregers_Richard_Windsor a :Man,
+        :Person ;
+    :alsoKnownAs "Alex Ulster"^^xsd:string ;
+    :hasBirthYear 1974 ;
+    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
+    :hasMarriageYear 2002 ;
+    :hasMother data:Birgitte_Duchess_of_Gloucester ;
+    :hasRelation data:Claire_Booth .
 
-data:Ludwig_W%C3%BCrttemberg a :Man ;
-    :isBrotherOf data:Carl_Herzog_von_W%C3%BCrttemberg .
+data:Birgitte_Duchess_of_Gloucester a :Person,
+        :Woman .
 
-data:Carl_Herzog_von_W%C3%BCrttemberg a :Man ;
-    :hasBirthYear 1936 ;
-    :hasDeathYear 2022 ;
-    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
-    :hasMarriageYear 1960 ;
-    :hasMother data:Rosa_of_Austria .
+data:Claire_Booth a :Person,
+        :Woman .
 
-data:Henri_Count_of_Paris a :Man .
-
-data:Isabelle_of_Orl%C3%A9ans-Braganza a :Woman .
-
-data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Man .
-
-data:Rosa_of_Austria a :Woman .
+data:Prince_Richard_Duke_of_Gloucester a :Man,
+        :Person .
 

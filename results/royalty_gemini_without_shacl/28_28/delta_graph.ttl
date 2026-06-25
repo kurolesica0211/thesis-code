@@ -2,27 +2,25 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:SimonAlexanderBowesLyon a :Man,
-        :Person ;
-    :hasBirthYear 1932 ;
-    :hasFather data:DavidBowesLyon ;
-    :hasMother data:RachelPaulineSpenderClay .
+data:Queen_Elizabeth_The_Queen_Mother a :Woman ;
+    :isAuntOf data:Simon_Alexander_Bowes-Lyon .
 
-data:DavidBowesLyon a :Man,
-        :Person ;
+data:David_Bowes-Lyon a :Man ;
     :hasBirthYear 1902 ;
     :hasDeathYear 1961 .
 
-data:HerbertSpenderClay a :Man,
-        :Person .
+data:Herbert_Spender-Clay a :Man .
 
-data:PaulineAstor a :Person,
-        :Woman .
+data:Pauline_Astor a :Woman .
 
-data:RachelPaulineSpenderClay a :Person,
-        :Woman ;
+data:Rachel_Pauline_Spender-Clay a :Woman ;
     :hasBirthYear 1907 ;
     :hasDeathYear 1996 ;
-    :hasFather data:HerbertSpenderClay ;
-    :hasMother data:PaulineAstor .
+    :hasFather data:Herbert_Spender-Clay ;
+    :hasMother data:Pauline_Astor .
+
+data:Simon_Alexander_Bowes-Lyon a :Man ;
+    :hasBirthYear 1932 ;
+    :hasFather data:David_Bowes-Lyon ;
+    :hasMother data:Rachel_Pauline_Spender-Clay .
 

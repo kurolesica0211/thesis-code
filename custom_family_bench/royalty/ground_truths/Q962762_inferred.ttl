@@ -1,0 +1,99 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Felipe_VI_of_Spain a :Man,
+        :Person ;
+    rdfs:label "Felipe VI of Spain"^^xsd:string ;
+    data:posIndicesFull "158:167"^^xsd:string,
+        "158:176"^^xsd:string ;
+    data:posIndicesPart "300:305"^^xsd:string,
+        "645:650"^^xsd:string,
+        "774:779"^^xsd:string ;
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia"^^xsd:string,
+        "Felipe VI"^^xsd:string,
+        "Philip John Paul Alphonse of All Saints of Bourbon"^^xsd:string,
+        "Philip VI of Spain"^^xsd:string ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasRelation data:Felipe_VI_of_Spain ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain ;
+    :isBrotherOf data:Felipe_VI_of_Spain ;
+    :isSiblingOf data:Felipe_VI_of_Spain .
+
+data:Princess_Isabelle_dOrléans_1 a :Person,
+        :Woman ;
+    rdfs:label "Princess Isabelle d’Orléans"^^xsd:string ;
+    data:posIndicesFull "208:226"^^xsd:string ;
+    data:posIndicesPart "485:493"^^xsd:string ;
+    data:wdtLink wdt:Q273237 ;
+    :alsoKnownAs "Isabelle Françoise Hélène Marie d'Orléans"^^xsd:string,
+        "Isabelle d’Orléans"^^xsd:string,
+        "Princess Isabelle Françoise Hélène Marie d'Orléans"^^xsd:string ;
+    :hasRelation data:Princess_Isabelle_dOrléans_1 ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Isabelle_dOrléans_1 ;
+    :isBloodrelationOf data:Princess_Isabelle_dOrléans_1 ;
+    :isSiblingOf data:Princess_Isabelle_dOrléans_1 ;
+    :isSisterOf data:Princess_Isabelle_dOrléans_1 .
+
+data:Princess_María_Isabel_of_Orléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess María Isabel of Orléans"^^xsd:string ;
+    data:posIndicesFull "202:216"^^xsd:string ;
+    data:posIndicesPart "462:467"^^xsd:string,
+        "485:493"^^xsd:string ;
+    data:wdtLink wdt:Q242879 ;
+    :alsoKnownAs "Infanta Maria Isabel of Orléans"^^xsd:string,
+        "Maria Isabella"^^xsd:string,
+        "Princess Maria Isabel of Orléans, Infanta of Spain"^^xsd:string,
+        "Princess Marie Isabelle of Orleans"^^xsd:string ;
+    :hasChild data:Princess_Louise_of_Orléans ;
+    :hasDaughter data:Princess_Louise_of_Orléans ;
+    :hasRelation data:Princess_Louise_of_Orléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_María_Isabel_of_Orléans ;
+    :isAncestorOf data:Princess_Louise_of_Orléans ;
+    :isAuntOf data:Princess_Louise_of_Orléans ;
+    :isBloodrelationOf data:Princess_María_Isabel_of_Orléans ;
+    :isMotherOf data:Princess_Louise_of_Orléans ;
+    :isParentOf data:Princess_Louise_of_Orléans ;
+    :isSiblingOf data:Princess_María_Isabel_of_Orléans ;
+    :isSisterOf data:Princess_María_Isabel_of_Orléans .
+
+data:Princess_Louise_of_Orléans a :Person,
+        :Woman ;
+    rdfs:label "Princess Louise of Orléans"^^xsd:string ;
+    data:wdtLink wdt:Q962762 ;
+    :alsoKnownAs "Princess Louise of Orleans"^^xsd:string ;
+    :hasAncestor data:Princess_María_Isabel_of_Orléans ;
+    :hasMother data:Princess_María_Isabel_of_Orléans ;
+    :hasParent data:Princess_María_Isabel_of_Orléans ;
+    :hasRelation data:Princess_Louise_of_Orléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Louise_of_Orléans ;
+    :isBloodrelationOf data:Princess_Louise_of_Orléans ;
+    :isChildOf data:Princess_María_Isabel_of_Orléans ;
+    :isDaughterOf data:Princess_María_Isabel_of_Orléans ;
+    :isSiblingOf data:Princess_Louise_of_Orléans ;
+    :isSisterOf data:Princess_Louise_of_Orléans .
+

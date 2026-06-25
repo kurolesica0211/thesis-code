@@ -1,0 +1,186 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Sylvana_Windsor-_Countess_of_St_Andrews a :Person,
+        :Woman ;
+    rdfs:label "Sylvana Windsor, Countess of St Andrews"^^xsd:string ;
+    data:posIndicesFull "1024:1041"^^xsd:string ;
+    data:wdtLink wdt:Q763241 ;
+    :alsoKnownAs "Dr Sylvana Tomaselli"^^xsd:string,
+        "Sylvana Palma Tomaselli"^^xsd:string,
+        "Sylvana Tomaselli"^^xsd:string,
+        "Sylvana Windsor"^^xsd:string ;
+    :hasRelation data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasSex data:female ;
+    :hasSister data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isBloodrelationOf data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isSiblingOf data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isSisterOf data:Sylvana_Windsor-_Countess_of_St_Andrews .
+
+data:Katharine-_Duchess_of_Kent a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Katharine, Duchess of Kent"^^xsd:string ;
+    data:posIndicesFull "290:316"^^xsd:string,
+        "527:553"^^xsd:string ;
+    data:posIndicesPart "834:838"^^xsd:string ;
+    data:wdtLink wdt:Q236678 ;
+    :alsoKnownAs "Katharine Kent"^^xsd:string,
+        "Katharine Lucy Mary Worsley"^^xsd:string,
+        "Katharine Lucy Mary, Duchess of Kent"^^xsd:string,
+        "Katharine Worsley"^^xsd:string ;
+    :hasChild data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasRelation data:George_Windsor-_Earl_of_St_Andrews,
+        data:Katharine-_Duchess_of_Kent,
+        data:Lord_Nicholas_Windsor ;
+    :hasSex data:female ;
+    :hasSister data:Katharine-_Duchess_of_Kent ;
+    :hasSon data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isAncestorOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isAuntOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isBloodrelationOf data:Katharine-_Duchess_of_Kent ;
+    :isMotherOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isParentOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isSiblingOf data:Katharine-_Duchess_of_Kent ;
+    :isSisterOf data:Katharine-_Duchess_of_Kent .
+
+data:Prince_Edward-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Edward, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "257:270"^^xsd:string,
+        "257:284"^^xsd:string,
+        "272:284"^^xsd:string,
+        "494:507"^^xsd:string,
+        "494:521"^^xsd:string,
+        "509:521"^^xsd:string ;
+    data:posIndicesPart "769:775"^^xsd:string,
+        "784:788"^^xsd:string,
+        "834:838"^^xsd:string ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent"^^xsd:string,
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent"^^xsd:string,
+        "Edward Kent"^^xsd:string,
+        "His Royal Highness The Duke of Kent"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward of Kent"^^xsd:string,
+        "The Duke of Kent"^^xsd:string ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
+    :hasChild data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasRelation data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :hasSon data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isAncestorOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isBloodrelationOf data:Prince_Edward-_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isFatherOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isParentOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent ;
+    :isUncleOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor .
+
+data:George_Windsor-_Earl_of_St_Andrews a :Man,
+        :Person ;
+    rdfs:label "George Windsor, Earl of St Andrews"^^xsd:string ;
+    data:posIndicesFull "0:30"^^xsd:string,
+        "0:50"^^xsd:string,
+        "383:413"^^xsd:string ;
+    data:posIndicesPart "1009:1015"^^xsd:string,
+        "171:178"^^xsd:string,
+        "695:702"^^xsd:string,
+        "916:920"^^xsd:string,
+        "940:947"^^xsd:string ;
+    data:wdtLink wdt:Q1009513 ;
+    :alsoKnownAs "George Philip Nicholas Windsor"^^xsd:string,
+        "George Philip Nicholas Windsor, Earl of St Andrews"^^xsd:string,
+        "George Philip Nicholas Windsor, Earl of St. Andrews"^^xsd:string,
+        "George St Andrews"^^xsd:string,
+        "George St. Andrews"^^xsd:string,
+        "George Windsor"^^xsd:string ;
+    :hasAncestor data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasBrother data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasFather data:Prince_Edward-_Duke_of_Kent ;
+    :hasMother data:Katharine-_Duchess_of_Kent ;
+    :hasParent data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasRelation data:George_Windsor-_Earl_of_St_Andrews,
+        data:Katharine-_Duchess_of_Kent,
+        data:Lord_Nicholas_Windsor,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isBrotherOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isChildOf data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :isSiblingOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isSonOf data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent .
+
+data:Lord_Nicholas_Windsor a :Man,
+        :Person ;
+    rdfs:label "Lord Nicholas Windsor"^^xsd:string ;
+    data:posIndicesFull "14:30"^^xsd:string,
+        "397:413"^^xsd:string ;
+    data:posIndicesPart "687:691"^^xsd:string ;
+    data:wdtLink wdt:Q1217757 ;
+    :alsoKnownAs "Lord Nicholas Charles Edward Jonathan Windsor"^^xsd:string,
+        "Nicholas Charles Edward Jonathan Windsor"^^xsd:string,
+        "Nicholas Windsor"^^xsd:string ;
+    :hasAncestor data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasBrother data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasFather data:Prince_Edward-_Duke_of_Kent ;
+    :hasMother data:Katharine-_Duchess_of_Kent ;
+    :hasParent data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasRelation data:George_Windsor-_Earl_of_St_Andrews,
+        data:Katharine-_Duchess_of_Kent,
+        data:Lord_Nicholas_Windsor,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isBrotherOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isChildOf data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :isSiblingOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isSonOf data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent .
+

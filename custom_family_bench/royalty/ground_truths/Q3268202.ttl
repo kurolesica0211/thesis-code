@@ -7,15 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Amanda_Ellingworth a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Amanda_Ellingworth a :Person ;
     rdfs:label "Amanda Ellingworth" ;
     data:posIndicesFull "3409:3426" ;
     data:wdtLink wdt:Q6469925 ;
@@ -28,10 +20,77 @@ data:Amanda_Ellingworth a :Person,
         "Lady Amanda Patricia Victoria Knatchbull" ;
     :hasSex data:female .
 
-data:David_Nightingale_Hicks a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:India_Hicks a :Person ;
+    rdfs:label "India Hicks" ;
+    data:posIndicesFull "5097:5108" ;
+    data:wdtLink wdt:Q1936171 ;
+    :alsoKnownAs "India Amanda Caroline Hicks" ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:female .
+
+data:Louise_Mountbatten a :Person ;
+    rdfs:label "Louise Mountbatten" ;
+    data:posIndicesFull "172:198",
+        "179:198",
+        "612:629",
+        "912:938",
+        "919:938" ;
+    data:posIndicesPart "1198:1209",
+        "1835:1846",
+        "4692:4703",
+        "731:742" ;
+    data:wdtLink wdt:Q115477 ;
+    :alsoKnownAs "Countess of Gripsholm",
+        "Lady Louise Alexandra Marie Irene Mountbatten",
+        "Lady Louise Mountbatten",
+        "Louise Alexandra Marie Irene Mountbatten",
+        "Louise Alexandra Marie Irene of Battenberg",
+        "Louise of Battenberg",
+        "Louise of Sweden",
+        "Mrs Olsson",
+        "Princess Louise Alexandra Marie Irene of Battenberg",
+        "Princess Louise of Battenberg",
+        "Queen Louise of Sweden" ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:female .
+
+data:Princess_Alice_of_Battenberg a :Person ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "1758:1764",
+        "2050:2054",
+        "4053:4057",
+        "4682:4686",
+        "4925:4930",
+        "501:505" ;
+    data:posIndicesPart "1163:1173",
+        "2467:2475",
+        "2565:2573",
+        "3280:3288",
+        "3295:3303",
+        "783:793" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:David_Nightingale_Hicks a :Person ;
     rdfs:label "David Nightingale Hicks" ;
     data:posIndicesFull "3145:3168" ;
     data:posIndicesPart "3654:3659",
@@ -39,16 +98,9 @@ data:David_Nightingale_Hicks a :Ancestor,
         "3898:3903" ;
     data:wdtLink wdt:Q5238032 ;
     :alsoKnownAs "David Hicks" ;
-    :hasChild data:India_Hicks ;
-    :hasDaughter data:India_Hicks ;
-    :hasSex data:male ;
-    :isFatherOf data:India_Hicks ;
-    :isParentOf data:India_Hicks .
+    :hasSex data:male .
 
-data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma a :Person ;
     rdfs:label "Edwina Mountbatten, Countess Mountbatten of Burma" ;
     data:posIndicesFull "4451:4471",
         "684:704" ;
@@ -66,148 +118,9 @@ data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma a :Ancestor,
         "Edwina Cynthia Annette Mountbatten",
         "Lady Edwina (Cynthia Annette) Mountbatten Countess Mountbatten of Burma",
         "Lady Mountbatten of Burma" ;
-    :hasChild data:Lady_Pamela_Hicks ;
-    :hasDaughter data:Lady_Pamela_Hicks ;
-    :hasSex data:female ;
-    :isMotherOf data:Lady_Pamela_Hicks ;
-    :isParentOf data:Lady_Pamela_Hicks .
+    :hasSex data:female .
 
-data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Philip, Duke of Edinburgh" ;
-    data:posIndicesFull "1648:1661",
-        "1648:1680",
-        "2509:2522",
-        "2509:2541",
-        "292:305",
-        "292:324",
-        "4828:4841",
-        "4828:4860" ;
-    data:posIndicesPart "1153:1159",
-        "1297:1303",
-        "1813:1817",
-        "2609:2613",
-        "2617:2626",
-        "3003:3009",
-        "3018:3022" ;
-    data:wdtLink wdt:Q80976 ;
-    :alsoKnownAs "H.R.H. Prince Philip",
-        "H.R.H. The Duke Of Edinburgh",
-        "Lieutenant Philip Mountbatten",
-        "Philip Edinburgh",
-        "Philip Mountbatten",
-        "Philip Mountbatten; Prince Philip of Greece and Denmark",
-        "Philip of Greece and Denmark",
-        "Prince Philip",
-        "Prince Philip of Greece and Denmark",
-        "The Prince Philip, Duke of Edinburgh" ;
-    :hasMother data:Princess_Alice_of_Battenberg ;
-    :hasParent data:Princess_Alice_of_Battenberg ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Alice_of_Battenberg ;
-    :isSonOf data:Princess_Alice_of_Battenberg .
-
-data:India_Hicks a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "India Hicks" ;
-    data:posIndicesFull "5097:5108" ;
-    data:wdtLink wdt:Q1936171 ;
-    :alsoKnownAs "India Amanda Caroline Hicks" ;
-    :hasFather data:David_Nightingale_Hicks ;
-    :hasMother data:Lady_Pamela_Hicks ;
-    :hasParent data:David_Nightingale_Hicks,
-        data:Lady_Pamela_Hicks ;
-    :hasSex data:female ;
-    :isChildOf data:David_Nightingale_Hicks,
-        data:Lady_Pamela_Hicks ;
-    :isDaughterOf data:David_Nightingale_Hicks,
-        data:Lady_Pamela_Hicks .
-
-data:Prince_Louis_of_Battenberg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Louis of Battenberg" ;
-    data:posIndicesFull "172:198",
-        "179:198",
-        "912:938",
-        "919:938" ;
-    data:posIndicesPart "1153:1159",
-        "1163:1173",
-        "1297:1303",
-        "1889:1894",
-        "3003:3009",
-        "783:793" ;
-    data:wdtLink wdt:Q57468 ;
-    :alsoKnownAs "Count Alexander of Battenberg",
-        "Count Louis of Battenberg",
-        "Louis Alexander Mountbatten, 1st Marquess of Milford Haven",
-        "Louis Alexander of Battenberg",
-        "Louis Milford Haven",
-        "Louis Mountbatten, 1st Marquess of Milford Haven",
-        "Louis of Battenberg",
-        "Prince Louis Alexander of Battenberg",
-        "Sir Louis Alexander Mountbatten",
-        "Sir Louis Mountbatten" ;
-    :hasChild data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :hasDaughter data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :hasSex data:male ;
-    :hasSon data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :isFatherOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isParentOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg .
-
-data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Victoria of Hesse and by Rhine" ;
-    data:posIndicesFull "943:982",
-        "952:982" ;
-    data:posIndicesPart "1284:1292",
-        "2467:2475",
-        "2565:2573",
-        "3280:3288",
-        "3295:3303",
-        "3316:3321",
-        "3355:3363",
-        "4916:4924",
-        "5068:5076" ;
-    data:wdtLink wdt:Q57658 ;
-    :alsoKnownAs "Princess Victoria Alberta Elizabeth Mathilde Marie of Hesse and by Rhine",
-        "Princess Victoria, Marchioness of Milford Have",
-        "Victoria Alberta Elizabeth Mathilde Marie Mountbatten, Marchioness of Milford Haven",
-        "Victoria Alberta Elizabeth Mathilde Marie of Hesse and by Rhine",
-        "Victoria Milford Haven",
-        "Victoria of Hesse and by Rhine",
-        "Victoria, Marchioness of Milford Haven" ;
-    :hasChild data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :hasDaughter data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :hasSex data:female ;
-    :hasSon data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :isMotherOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isParentOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg .
-
-data:Lady_Pamela_Hicks a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Lady_Pamela_Hicks a :Person ;
     rdfs:label "Lady Pamela Hicks" ;
     data:posIndicesFull "0:31",
         "5:31" ;
@@ -247,68 +160,11 @@ data:Lady_Pamela_Hicks a :Ancestor,
         "Pamela Carmen Louise Hicks",
         "Pamela Carmen Louise Mountbatten",
         "Pamela Mountbatten" ;
-    :hasChild data:India_Hicks ;
-    :hasDaughter data:India_Hicks ;
-    :hasFather data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :hasMother data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma ;
     :hasParent data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
         data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :hasSex data:female ;
-    :isAuntOf data:Amanda_Ellingworth ;
-    :isChildOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :isDaughterOf data:Edwina_Mountbatten-_Countess_Mountbatten_of_Burma,
-        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :isMotherOf data:India_Hicks ;
-    :isParentOf data:India_Hicks .
+    :hasSex data:female .
 
-data:Louise_Mountbatten a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Louise Mountbatten" ;
-    data:posIndicesFull "172:198",
-        "179:198",
-        "612:629",
-        "912:938",
-        "919:938" ;
-    data:posIndicesPart "1198:1209",
-        "1835:1846",
-        "4692:4703",
-        "731:742" ;
-    data:wdtLink wdt:Q115477 ;
-    :alsoKnownAs "Countess of Gripsholm",
-        "Lady Louise Alexandra Marie Irene Mountbatten",
-        "Lady Louise Mountbatten",
-        "Louise Alexandra Marie Irene Mountbatten",
-        "Louise Alexandra Marie Irene of Battenberg",
-        "Louise of Battenberg",
-        "Louise of Sweden",
-        "Mrs Olsson",
-        "Princess Louise Alexandra Marie Irene of Battenberg",
-        "Princess Louise of Battenberg",
-        "Queen Louise of Sweden" ;
-    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :hasFather data:Prince_Louis_of_Battenberg ;
-    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :hasParent data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Alice_of_Battenberg ;
-    :isAuntOf data:Lady_Pamela_Hicks,
-        data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isChildOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isDaughterOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Princess_Alice_of_Battenberg ;
-    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Princess_Alice_of_Battenberg .
-
-data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Person ;
     rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma" ;
     data:posIndicesFull "172:198",
         "607:629",
@@ -332,72 +188,63 @@ data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Ancestor,
         "Louis Mountbatten",
         "Prince Louis of Battenberg",
         "The Earl Mountbatten of Burma" ;
-    :hasChild data:Lady_Pamela_Hicks ;
-    :hasDaughter data:Lady_Pamela_Hicks ;
-    :hasFather data:Prince_Louis_of_Battenberg ;
-    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
     :hasParent data:Prince_Louis_of_Battenberg,
         data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :hasSex data:male ;
-    :hasSister data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isBrotherOf data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isChildOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isFatherOf data:Lady_Pamela_Hicks ;
-    :isParentOf data:Lady_Pamela_Hicks ;
-    :isSiblingOf data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isSonOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh .
+    :hasSex data:male .
 
-data:Princess_Alice_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Alice of Battenberg" ;
-    data:posIndicesFull "1758:1764",
-        "2050:2054",
-        "4053:4057",
-        "4682:4686",
-        "4925:4930",
-        "501:505" ;
-    data:posIndicesPart "1163:1173",
+data:Prince_Louis_of_Battenberg a :Person ;
+    rdfs:label "Prince Louis of Battenberg" ;
+    data:posIndicesFull "172:198",
+        "179:198",
+        "912:938",
+        "919:938" ;
+    data:posIndicesPart "1153:1159",
+        "1163:1173",
+        "1297:1303",
+        "1648:1654",
+        "1889:1894",
+        "2509:2515",
+        "292:298",
+        "3003:3009",
+        "4828:4834",
+        "783:793" ;
+    data:wdtLink wdt:Q57468 ;
+    :alsoKnownAs "Count Alexander of Battenberg",
+        "Count Louis of Battenberg",
+        "Louis Alexander Mountbatten, 1st Marquess of Milford Haven",
+        "Louis Alexander of Battenberg",
+        "Louis Milford Haven",
+        "Louis Mountbatten, 1st Marquess of Milford Haven",
+        "Louis of Battenberg",
+        "Prince Louis Alexander of Battenberg",
+        "Sir Louis Alexander Mountbatten",
+        "Sir Louis Mountbatten" ;
+    :hasSex data:male .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Person ;
+    rdfs:label "Princess Victoria of Hesse and by Rhine" ;
+    data:posIndicesFull "943:982",
+        "952:982" ;
+    data:posIndicesPart "1284:1292",
         "2467:2475",
         "2565:2573",
         "3280:3288",
         "3295:3303",
-        "783:793" ;
-    data:wdtLink wdt:Q116062 ;
-    :alsoKnownAs "Alice",
-        "Alice of Battenberg",
-        "Alice, Princess Andrew of Greece and Denmark",
-        "Mother Superior Alice-Elizabeth",
-        "Princess Alice of Greece and Denmark",
-        "Princess Andrew of Greece and Denmark",
-        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
-        "Victoria Alice Elizabeth Julia Marie",
-        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
-    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :hasChild data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasFather data:Prince_Louis_of_Battenberg ;
-    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :hasParent data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :hasSex data:female ;
-    :hasSister data:Louise_Mountbatten ;
-    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isAuntOf data:Lady_Pamela_Hicks ;
-    :isChildOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isDaughterOf data:Prince_Louis_of_Battenberg,
-        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
-    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten ;
-    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten .
+        "3316:3321",
+        "3355:3363",
+        "4916:4924",
+        "5068:5076" ;
+    data:wdtLink wdt:Q57658 ;
+    :alsoKnownAs "Princess Victoria Alberta Elizabeth Mathilde Marie of Hesse and by Rhine",
+        "Princess Victoria, Marchioness of Milford Have",
+        "Victoria Alberta Elizabeth Mathilde Marie Mountbatten, Marchioness of Milford Haven",
+        "Victoria Alberta Elizabeth Mathilde Marie of Hesse and by Rhine",
+        "Victoria Milford Haven",
+        "Victoria of Hesse and by Rhine",
+        "Victoria, Marchioness of Milford Haven" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

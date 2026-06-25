@@ -69,130 +69,26 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Custodian of the Crown  Prince Radu
+Georg, Prince of Saxe-Meiningen (11 October 1892 – 6 January 1946) was the head of the house of Saxe-Meiningen from 1941 until his death.
+He was born in Kassel as the eldest son of Prince Frederick Johann of Saxe-Meiningen (1861-1914) and Countess Adelaide of Lippe-Biesterfeld (1870–1948).
+His father was a son of Georg II, Duke of Saxe-Meiningen and his mother a daughter of Count Ernst of Lippe-Biesterfeld.
+Georg studied law at the Universities of Munich and Jena.
+Georg suspended his studies to serve in World War I and saw action as a captain in a cavalry regiment.
+After the death of his uncle Ernst on 29 December 1941, Georg succeeded to the headship of the house of Saxe-Meiningen and assumed the title of Duke of Saxe-Meiningen and style Georg III.
+Georg and his family were expropriated without compensation in 1945.
+Georg, who served as a major in the Wehrmacht died in the Russian prisoner of war camp near Cherepovets (Tscherepowetz in German) in Northern Russia.
+His heir was his second and only surviving son Prince Frederick Alfred who renounced the succession, being a monk in 1953, allowing it to pass to his uncle Bernhard.
+Marriage and children
 
-
-Princess Elena 
-Princess Irina 
-Princess Sophie 
-Princess Maria 
-
-
-Margareta of Romania, self-styled as Custodian of the Romanian Crown, (Romanian: Custode al Coroanei române; born 26 March 1949) is the eldest daughter of King Michael I and Queen Anne of Romania.
-She assumed her father's duties in March 2016, upon his retirement, and has claimed the headship of the House of Romania since his death on 5 December 2017.
-She also heads the Margareta of Romania Royal Foundation.
-Until 2011, Margareta also used the style of a princess of Hohenzollern.
-Margareta has four sisters and no brothers or children.
-Her heir presumptive is her next sister, Princess Elena of Romania.
-Under the defunct royal constitutions of 1923 and 1938 which followed agnatic primogeniture, Margareta and her sisters would not have been in the line of succession to the throne.
-On 30 December 2007, King Michael designated Margareta as heir presumptive to the defunct throne by an act that is not recognized by the Romanian government and lacks legal validity without approval by Romania's Parliament.
-On the same occasion, Michael also requested that, should the Romanian Parliament consider restoring the monarchy, the Salic law of succession not be reinstated, allowing female succession.
-According to the new statute of the Romanian Royal House as declared by Michael, no illegitimate descendants or collateral lines may claim dynastic privileges, titles or rank and any such are excluded from the Royal House of Romania and from the line of succession to the throne.
-Early life
-
-Birth
-
-Margareta was born on 26 March 1949 at Clinique de Montchoisi in Lausanne, Switzerland, as the first of King Michael I and Queen Anne's five daughters.
-Her godmother was her maternal grandmother Princess Margaret of Denmark who was also her namesake.
-She was followed by four sisters: Princess Elena (born 1950), Princess Irina (born 1953), Princess Sophie (born 1957) and Princess Maria (born 1964).
-Childhood
-
-Margareta spent her childhood at family homes in Lausanne and at Ayot House, St Lawrence, in Hertfordshire, England.
-During holidays she and her sisters spent time with their grandparents; paternally with Helen, Queen Mother, at Villa Sparta in Italy and maternally, with Princess Margaret and her husband Prince René of Bourbon-Parma in Copenhagen.
-Margareta met Queen Elizabeth II of the United Kingdom for the first time in the summer of 1952 at Balmoral Castle, when she was three years old.
-In her childhood, she spent holidays with Prince Charles and his sister, Princess Anne, who were close to Margareta, as well as Prince Amedeo, Duke of Aosta (her cousin), and the Greek, Danish and Luxembourg royal families.
-Queen Helen's interest in horses influenced Margareta to become an equestrian.
-In 1964, along with five other princesses, Margareta was a bridesmaid at the wedding of Princess Anne-Marie of Denmark to King Constantine II of Greece.
-Education
-
-Early education
-
-In 1956, Margareta lived with Queen Helen for six months at her villa in Florence, attending kindergarten until returning to Switzerland, where she attended a primary school, with Princess Sophie, from age six to nine.
-Margareta said in an interview in 2007.
-Further education
-
-Margareta studied sociology, political science and public international law at the University of Edinburgh in Scotland, graduating in 1974.
-Known there as "Margareta de Roumanie", for the first few weeks she felt a depressing "sense of foreignness" but later became active in campus politics, becoming a member of the students' representative council.
-"
-
-
-While at the university during her twenties, Margareta was involved in a five-year romantic relationship with Gordon Brown, who would serve as Prime Minister of the United Kingdom from 2007 to 2010; in 2007, she was interviewed by an editor of The Daily Telegraph: "It was a very solid and romantic story; I never stopped loving him, but one day it didn't seem right any more, it was politics, politics, politics, and I needed nurturing," she said.
-In the summer of 1989 Margareta resigned from her job as civil unrest started in Romania.
-Romania
-
-Romanian revolution
-
-In mid 1989, civil and governmental unrest started arising in the Eastern Bloc as the loosening of control of Eastern Europe by the Soviet Union had triggered most of the impact for the former states which started a Revolutionary wave leading to the Revolutions of 1989.
-On 25 December, Ceaușescu and his wife Deputy Prime Minister Elena Ceaușescu were deposed, captured and executed by orders from a Drumhead military tribunal; 42 years of the Socialist Republic of Romania had ended.
-The revolution was the first overthrow of the ruling governmental system since King Michael's coup which he successfully staged in 1944 by arresting members of the military government which supported Nazi Germany.
-During the Revolution, all members of the Royal Family took a part to console the situation outside of Romania.
-Arrival in Romania
-
-While she was visiting one orphanage, a child in a filthy cot died in front of her.
-It spurred her to establish the Princess Margareta of Romania Foundation in 1990.
-A 25th anniversary celebration of Margareta's return to Romania was held at the Romanian Athenaeum, followed by a dinner at the CEC Palace with Romania's Prime Minister Victor Ponta and Senate President Călin Popescu-Tăriceanu; around 200 other prominent guests participated in the festivities.
-Margareta also hosted a March 2015 gala at the dynasty's historical family seat, Peleș Castle, in honour of the Romanian Rugby Union, attended by Klaus Johannis, the first incumbent Romanian president to pay an official visit to the former royal family.
-Romanian Red Cross
-
-On 15 May 2015, the General Assembly of the Romanian Red Cross elected Margareta as President of the Romanian Red Cross.
-The Red Cross was instituted as a Romanian branch of the International Red Cross in 1876, under the reign of her great-great-granduncle King Carol I of Romania.
-Although at Margareta's birth she was not expected to inherit the defunct Romanian throne and the headship of the Romanian royal family, the birth of four younger sisters and no brother meant that without a change in the royal family's succession laws, male members of the House of Hohenzollern-Sigmaringen would succeed her father as pretenders to the Romanian throne, in accordance with the Salic law enshrined in both the defunct royal Romanian Constitution of 1923 and the defunct Statute of the Romanian royal house, dated 1884.
-In 1997 King Michael designated Margareta as successor to "all prerogatives and rights" of his, indicating his desire for a gender-blind succession to the throne; although there was much consideration of altering the line of succession, no actions were taken until 30 December 2007, when King Michael I issued the statutes for the Royal House, called The Fundamental Rules of the Royal House of Romania.
-Following the announcement of The Fundamental Rules, King Michael asked the Romanian Government that, should it consider restoring the monarchy, it should also abolish the Salic law of succession.
-Margareta does not use the title of queen; instead she claims the title "Custodian of the Romanian Crown", with the style "Her Majesty", a title that Michael offered her.
-Paul-Philippe Hohenzollern (son of King Michael's illegitimate half-brother, Carol Lambrino) denounced King Michael's actions of creating The Fundamental Rules and severing ties with the House of Hohenzollern-Sigmaringen.
-Although Margareta has no official role within the politics of Romania to maintain ties with other countries, she has fostered diplomatic relationships with numerous foreign dignitaries in her capacity as a head of the House of Romania.
-Marriage
-
-In 1994, Margareta met Radu Duda, a Romanian citizen and part-time actor, through the work of the Princess Margareta Foundation.
-Radu Duda was accorded the style "Radu, Prince of Hohenzollern-Veringen" on 1 January 1999, and was subsequently styled "His Royal Highness Radu, Prince of Romania", being referred to by King Michael on 30 December 2007, as future "Prince Consort of Romania".
-In Margareta's company and, more often alone, he has represented the former royal family publicly on various occasions.
-Controversies
-
-BAE Systems, one of the donors to the Princess Margareta of Romania Foundation, and its representatives have been involved in a corruption scandal involving purchase by the Romanian government of two decommissioned UK Royal Navy frigates (Coventry and London) refurbished by BAE, for which an alleged £7 million bribe was paid, some of which, it has also been alleged, ended up in the pockets of the Hohenzollern royal family to which Margareta belongs.
-The "Gardianul" newspaper, noting that both Margareta and her husband, as Special Representative of the Government, had met a number of times with the BAE Systems representatives before and after the signing of the governmental contract, inquired whether the royal family was involved in any lobbying on behalf of the company.
-Political support
-
-The main pro-monarchist party PNŢCD, currently extra-parliamentary, is ambiguous in its support for Margareta.
-Prior to his death, King Michael had not given up the hope for the restoration of the throne: "We are trying to make people understand what Romanian monarchy was and what it can still do.
-"
-
-
-In a July 2013 survey about a potential restoration of monarchy in Romania, 19% of respondents gave Margareta as their favorite, while 29.9% supported her father.
-In December 2017, on the backdrop of the increased capital of trust in the Royal House of Romania, re-emerging with the death of King Michael, the executive chairman of the ruling Social Democratic Party Nicolae Bădălau said that one could organize a referendum on the transition to the monarchical ruling form, arguing that "it is not a bad thing, considering that the countries that have the monarchs are developed countries", being a project of the future.
-At the same time, the leader of the coalition party and the president of the Senate of Romania, Călin Popescu-Tăriceanu, reinforced this idea, claiming that he is a convinced monarchist and "constitutional monarchy has the advantage of placing the monarch over political games, case: the president, instead of being an arbitrator, prefers to be a player.
-"
-
-
-Honours and awards
-
-Honours
-
-Dynastic
-
-Ecclesiastical
-
-Foreign
-
-Honorary titles and medals
-
-In Romania
-
-Outside Romania
-
-Publications
-
-See also
-
-References
-
-External links
+He was married in Freiburg im Breisgau on 22 February 1919 to Countess Klara Marie von Korff genannt Schmising-Kerssenbrock (Darmstadt, 31 May 1895
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -208,39 +104,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -255,6 +121,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -272,6 +155,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -339,29 +237,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -370,6 +260,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -382,6 +280,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -390,17 +290,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -428,6 +330,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -443,194 +429,178 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (dff55272-b3af-4702-a238-33c138e60647)
- Call ID: dff55272-b3af-4702-a238-33c138e60647
-  Args:
-    type: :Woman
-    source: :Margareta_of_Romania
-  AssignClass (0127c6e9-4c9c-41e1-b715-17b34e4075c5)
- Call ID: 0127c6e9-4c9c-41e1-b715-17b34e4075c5
-  Args:
-    type: :Person
-    source: :Margareta_of_Romania
-  AssignClass (6424938a-24ef-4f29-9691-412efad63e16)
- Call ID: 6424938a-24ef-4f29-9691-412efad63e16
+  AssignClass (f7c48bf7-3666-4a02-91a9-4d641d8600a1)
+ Call ID: f7c48bf7-3666-4a02-91a9-4d641d8600a1
   Args:
     type: :Man
-    source: :King_Michael_I
-  AssignClass (95a0264f-c2d1-4273-a864-c1afcc570016)
- Call ID: 95a0264f-c2d1-4273-a864-c1afcc570016
+    source: Georg_Prince_of_Saxe-Meiningen
+  AssignClass (9a141517-4e78-4a52-8ab7-228b9e79e402)
+ Call ID: 9a141517-4e78-4a52-8ab7-228b9e79e402
   Args:
     type: :Person
-    source: :King_Michael_I
-  AssignClass (cfc0e818-5289-4f6d-b730-9819472dd1a0)
- Call ID: cfc0e818-5289-4f6d-b730-9819472dd1a0
+    source: Georg_Prince_of_Saxe-Meiningen
+  AddLiteral (ffb319d8-a0a8-4a9c-9b38-a11ef1681102)
+ Call ID: ffb319d8-a0a8-4a9c-9b38-a11ef1681102
   Args:
-    type: :Ancestor
-    source: :King_Michael_I
-  AssignClass (c84be14f-4a64-4ea8-a5cb-eb6076e59109)
- Call ID: c84be14f-4a64-4ea8-a5cb-eb6076e59109
-  Args:
-    type: :Woman
-    source: :Queen_Anne_of_Romania
-  AssignClass (3353a113-fcd8-4963-8784-8fcc5b37e125)
- Call ID: 3353a113-fcd8-4963-8784-8fcc5b37e125
-  Args:
-    type: :Person
-    source: :Queen_Anne_of_Romania
-  AssignClass (cf47a498-04a5-463f-afa8-700e205a28bc)
- Call ID: cf47a498-04a5-463f-afa8-700e205a28bc
-  Args:
-    type: :Ancestor
-    source: :Queen_Anne_of_Romania
-  AssignClass (5f8fee0d-a042-4248-9592-d4db9c887f0f)
- Call ID: 5f8fee0d-a042-4248-9592-d4db9c887f0f
-  Args:
-    type: :Woman
-    source: :Princess_Elena_of_Romania
-  AssignClass (3ee88314-fbee-4042-a1f0-0ff675a68f4b)
- Call ID: 3ee88314-fbee-4042-a1f0-0ff675a68f4b
-  Args:
-    type: :Person
-    source: :Princess_Elena_of_Romania
-  AssignClass (daf20f36-37d8-4490-a347-9671f3a9f397)
- Call ID: daf20f36-37d8-4490-a347-9671f3a9f397
-  Args:
-    type: :Woman
-    source: :Princess_Irina_of_Romania
-  AssignClass (4fb9a2c2-04d5-4b1a-833c-c92d44bad8a1)
- Call ID: 4fb9a2c2-04d5-4b1a-833c-c92d44bad8a1
-  Args:
-    type: :Person
-    source: :Princess_Irina_of_Romania
-  AssignClass (11ebfd56-bac4-4347-8199-b59ded641a88)
- Call ID: 11ebfd56-bac4-4347-8199-b59ded641a88
-  Args:
-    type: :Woman
-    source: :Princess_Sophie_of_Romania
-  AssignClass (a1c54623-ada9-4324-9a9c-180713634d1d)
- Call ID: a1c54623-ada9-4324-9a9c-180713634d1d
-  Args:
-    type: :Person
-    source: :Princess_Sophie_of_Romania
-  AssignClass (d6a0dc68-ce01-443c-81a8-e8ee6713ce2d)
- Call ID: d6a0dc68-ce01-443c-81a8-e8ee6713ce2d
-  Args:
-    type: :Woman
-    source: :Princess_Maria_of_Romania
-  AssignClass (2241f380-2f81-4d85-b9d1-f5fb98e48786)
- Call ID: 2241f380-2f81-4d85-b9d1-f5fb98e48786
-  Args:
-    type: :Person
-    source: :Princess_Maria_of_Romania
-  AssignClass (1982fec4-7b67-41d1-bcc3-b1c5a6a013c0)
- Call ID: 1982fec4-7b67-41d1-bcc3-b1c5a6a013c0
-  Args:
-    type: :Man
-    source: :Radu_Duda
-  AssignClass (c7b1c820-90f6-441f-a35b-f23f1a0d3be9)
- Call ID: c7b1c820-90f6-441f-a35b-f23f1a0d3be9
-  Args:
-    type: :Person
-    source: :Radu_Duda
-  AddTriple (1a479dcc-d17f-4680-994d-15c9d8aa2608)
- Call ID: 1a479dcc-d17f-4680-994d-15c9d8aa2608
-  Args:
-    target: :King_Michael_I
-    source: :Margareta_of_Romania
-    relation: :hasFather
-  AddTriple (27a1ff3d-91b5-404c-8d20-bd69ba0c9c8c)
- Call ID: 27a1ff3d-91b5-404c-8d20-bd69ba0c9c8c
-  Args:
-    relation: :hasMother
-    source: :Margareta_of_Romania
-    target: :Queen_Anne_of_Romania
-  AddTriple (0504955c-b31c-4c51-b06f-1cac46af7f8b)
- Call ID: 0504955c-b31c-4c51-b06f-1cac46af7f8b
-  Args:
-    source: :Princess_Elena_of_Romania
-    target: :King_Michael_I
-    relation: :hasFather
-  AddTriple (33cf5418-52dd-4c1b-95a5-9788e8bf12e0)
- Call ID: 33cf5418-52dd-4c1b-95a5-9788e8bf12e0
-  Args:
-    target: :Queen_Anne_of_Romania
-    source: :Princess_Elena_of_Romania
-    relation: :hasMother
-  AddTriple (358ffd85-cbf0-49b8-b494-54f8cc3fad39)
- Call ID: 358ffd85-cbf0-49b8-b494-54f8cc3fad39
-  Args:
-    target: :King_Michael_I
-    source: :Princess_Irina_of_Romania
-    relation: :hasFather
-  AddTriple (721aefd6-70b6-424e-bcfa-c16c0f42c938)
- Call ID: 721aefd6-70b6-424e-bcfa-c16c0f42c938
-  Args:
-    source: :Princess_Irina_of_Romania
-    target: :Queen_Anne_of_Romania
-    relation: :hasMother
-  AddTriple (d18bedea-7d24-434b-80ba-bbebcc3aac14)
- Call ID: d18bedea-7d24-434b-80ba-bbebcc3aac14
-  Args:
-    relation: :hasFather
-    target: :King_Michael_I
-    source: :Princess_Sophie_of_Romania
-  AddTriple (3889ea90-08e5-4bde-ae81-240387198a90)
- Call ID: 3889ea90-08e5-4bde-ae81-240387198a90
-  Args:
-    relation: :hasMother
-    target: :Queen_Anne_of_Romania
-    source: :Princess_Sophie_of_Romania
-  AddTriple (3ff319b9-4676-4cef-a370-7b9789919dbf)
- Call ID: 3ff319b9-4676-4cef-a370-7b9789919dbf
-  Args:
-    relation: :hasFather
-    source: :Princess_Maria_of_Romania
-    target: :King_Michael_I
-  AddTriple (c162d6b3-fc1d-4b95-ba2a-264b3df5c225)
- Call ID: c162d6b3-fc1d-4b95-ba2a-264b3df5c225
-  Args:
-    relation: :hasMother
-    target: :Queen_Anne_of_Romania
-    source: :Princess_Maria_of_Romania
-  AddTriple (ee667019-03ff-484d-84c7-9b427fb2c2f6)
- Call ID: ee667019-03ff-484d-84c7-9b427fb2c2f6
-  Args:
-    relation: :hasSister
-    source: :Margareta_of_Romania
-    target: :Princess_Elena_of_Romania
-  AddTriple (3e98c073-5af3-4e4d-949b-48e212be99fd)
- Call ID: 3e98c073-5af3-4e4d-949b-48e212be99fd
-  Args:
-    relation: :hasSister
-    source: :Margareta_of_Romania
-    target: :Princess_Irina_of_Romania
-  AddTriple (5740d10d-3fdf-4da3-baa3-ca516a077a8e)
- Call ID: 5740d10d-3fdf-4da3-baa3-ca516a077a8e
-  Args:
-    relation: :hasSister
-    target: :Princess_Sophie_of_Romania
-    source: :Margareta_of_Romania
-  AddTriple (4d4074ac-b3e7-49a4-9c4e-c83bd1f663ae)
- Call ID: 4d4074ac-b3e7-49a4-9c4e-c83bd1f663ae
-  Args:
-    relation: :hasSister
-    target: :Princess_Maria_of_Romania
-    source: :Margareta_of_Romania
-  AddLiteral (2ce4fbe4-52ca-46f5-8afe-2b03ef9d9bb1)
- Call ID: 2ce4fbe4-52ca-46f5-8afe-2b03ef9d9bb1
-  Args:
-    relation: :hasBirthYear
     literal_type: xsd:integer
-    literal_value: 1949
-    source: :Margareta_of_Romania
-  AddLiteral (063ef61f-4240-4315-9be0-9b12c4b38f70)
- Call ID: 063ef61f-4240-4315-9be0-9b12c4b38f70
+    source: Georg_Prince_of_Saxe-Meiningen
+    relation: :hasBirthYear
+    literal_value: 1892
+  AddLiteral (5933fc2f-f464-42e1-aaa5-20bd6c6d4c00)
+ Call ID: 5933fc2f-f464-42e1-aaa5-20bd6c6d4c00
+  Args:
+    literal_value: 1946
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Georg_Prince_of_Saxe-Meiningen
+  AssignClass (3a3f36b9-12aa-4d36-ab66-79d9a7087645)
+ Call ID: 3a3f36b9-12aa-4d36-ab66-79d9a7087645
+  Args:
+    type: :Man
+    source: Prince_Frederick_Johann_of_Saxe-Meiningen
+  AssignClass (3c5b3228-b106-4560-bad6-010c3e12690e)
+ Call ID: 3c5b3228-b106-4560-bad6-010c3e12690e
+  Args:
+    source: Prince_Frederick_Johann_of_Saxe-Meiningen
+    type: :Person
+  AddLiteral (155bde4b-32bd-49ff-b462-848deb401801)
+ Call ID: 155bde4b-32bd-49ff-b462-848deb401801
+  Args:
+    literal_value: 1861
+    relation: :hasBirthYear
+    source: Prince_Frederick_Johann_of_Saxe-Meiningen
+    literal_type: xsd:integer
+  AddLiteral (60ff1d45-7d9c-4271-9ddb-23c22ef8fc1c)
+ Call ID: 60ff1d45-7d9c-4271-9ddb-23c22ef8fc1c
   Args:
     relation: :hasDeathYear
-    source: :King_Michael_I
-    literal_value: 2017
+    literal_value: 1914
+    source: Prince_Frederick_Johann_of_Saxe-Meiningen
     literal_type: xsd:integer
-  Finish (a94a3bbe-2fef-4bea-8935-b78ac7b5dcfc)
- Call ID: a94a3bbe-2fef-4bea-8935-b78ac7b5dcfc
+  AssignClass (ef306e93-8bd3-4b8b-8556-e91a88d890fb)
+ Call ID: ef306e93-8bd3-4b8b-8556-e91a88d890fb
+  Args:
+    type: :Woman
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
+  AssignClass (af1ba258-5708-4af3-a859-d37b396b67a9)
+ Call ID: af1ba258-5708-4af3-a859-d37b396b67a9
+  Args:
+    type: :Person
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
+  AddLiteral (69851cfc-28be-454e-9916-6b0881e52a4b)
+ Call ID: 69851cfc-28be-454e-9916-6b0881e52a4b
+  Args:
+    literal_type: xsd:integer
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
+    relation: :hasBirthYear
+    literal_value: 1870
+  AddLiteral (bd63fdc6-4e42-4ed2-984f-04d5d3ab0525)
+ Call ID: bd63fdc6-4e42-4ed2-984f-04d5d3ab0525
+  Args:
+    literal_value: 1948
+    relation: :hasDeathYear
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
+    literal_type: xsd:integer
+  AddTriple (7f37848b-c78e-41d3-a288-54ef34be5af4)
+ Call ID: 7f37848b-c78e-41d3-a288-54ef34be5af4
+  Args:
+    source: Georg_Prince_of_Saxe-Meiningen
+    relation: :hasFather
+    target: Prince_Frederick_Johann_of_Saxe-Meiningen
+  AddTriple (682e9aea-551a-41c5-ada2-1d0452d65ce1)
+ Call ID: 682e9aea-551a-41c5-ada2-1d0452d65ce1
+  Args:
+    target: Countess_Adelaide_of_Lippe-Biesterfeld
+    relation: :hasMother
+    source: Georg_Prince_of_Saxe-Meiningen
+  AssignClass (b0127fc3-977c-4ae5-adf3-5b50b5cdfb39)
+ Call ID: b0127fc3-977c-4ae5-adf3-5b50b5cdfb39
+  Args:
+    source: Georg_II_Duke_of_Saxe-Meiningen
+    type: :Man
+  AssignClass (ece0cca1-adf3-47d9-85ec-4b71d984801a)
+ Call ID: ece0cca1-adf3-47d9-85ec-4b71d984801a
+  Args:
+    source: Georg_II_Duke_of_Saxe-Meiningen
+    type: :Person
+  AddTriple (32a9dd9a-3963-4f21-bb87-b82664d6f30e)
+ Call ID: 32a9dd9a-3963-4f21-bb87-b82664d6f30e
+  Args:
+    target: Georg_II_Duke_of_Saxe-Meiningen
+    relation: :hasFather
+    source: Prince_Frederick_Johann_of_Saxe-Meiningen
+  AssignClass (a812a025-12f2-48f7-b50e-3c53f03147b0)
+ Call ID: a812a025-12f2-48f7-b50e-3c53f03147b0
+  Args:
+    source: Count_Ernst_of_Lippe-Biesterfeld
+    type: :Man
+  AssignClass (44743299-fb56-48ab-9499-019537248762)
+ Call ID: 44743299-fb56-48ab-9499-019537248762
+  Args:
+    source: Count_Ernst_of_Lippe-Biesterfeld
+    type: :Person
+  AddTriple (18bcf386-069c-4d53-a84b-5282fdb4b552)
+ Call ID: 18bcf386-069c-4d53-a84b-5282fdb4b552
+  Args:
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
+    target: Count_Ernst_of_Lippe-Biesterfeld
+    relation: :hasFather
+  AssignClass (2f7bb5ef-133d-4044-ba46-e779355e941c)
+ Call ID: 2f7bb5ef-133d-4044-ba46-e779355e941c
+  Args:
+    type: :Man
+    source: Prince_Frederick_Alfred
+  AssignClass (26d7fec8-eaac-48d6-b768-52fb4f470803)
+ Call ID: 26d7fec8-eaac-48d6-b768-52fb4f470803
+  Args:
+    source: Prince_Frederick_Alfred
+    type: :Person
+  AddTriple (2dcb337d-dd0e-4cfd-93d7-cc9b3a162dc2)
+ Call ID: 2dcb337d-dd0e-4cfd-93d7-cc9b3a162dc2
+  Args:
+    source: Prince_Frederick_Alfred
+    relation: :hasFather
+    target: Georg_Prince_of_Saxe-Meiningen
+  AssignClass (2d0f4122-4799-4f0b-9225-45745819dddc)
+ Call ID: 2d0f4122-4799-4f0b-9225-45745819dddc
+  Args:
+    type: :Man
+    source: Bernhard
+  AssignClass (221b5c11-1806-46dc-9c04-32856ccdaa96)
+ Call ID: 221b5c11-1806-46dc-9c04-32856ccdaa96
+  Args:
+    source: Bernhard
+    type: :Person
+  AssignClass (eb119752-114e-4ba2-a86d-5bf316b9fe6c)
+ Call ID: eb119752-114e-4ba2-a86d-5bf316b9fe6c
+  Args:
+    type: :Woman
+    source: Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock
+  AssignClass (87c05ea3-aa54-4df0-a5e1-364bf9bf591b)
+ Call ID: 87c05ea3-aa54-4df0-a5e1-364bf9bf591b
+  Args:
+    type: :Person
+    source: Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock
+  AddLiteral (ce74371f-13cb-4e83-bfcd-1213680f4f58)
+ Call ID: ce74371f-13cb-4e83-bfcd-1213680f4f58
+  Args:
+    literal_type: xsd:integer
+    source: Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock
+    literal_value: 1895
+    relation: :hasBirthYear
+  AddTriple (47eb91f2-3a5d-4c75-a8f7-630754cac533)
+ Call ID: 47eb91f2-3a5d-4c75-a8f7-630754cac533
+  Args:
+    relation: :hasRelation
+    target: Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock
+    source: Georg_Prince_of_Saxe-Meiningen
+  AddLiteral (60d10a46-07b4-48a9-af6f-c3519c8f4632)
+ Call ID: 60d10a46-07b4-48a9-af6f-c3519c8f4632
+  Args:
+    literal_type: xsd:integer
+    source: Georg_Prince_of_Saxe-Meiningen
+    literal_value: 1919
+    relation: :hasMarriageYear
+  Finish (f48f464b-5c5d-4b73-a5ba-14bd20def26e)
+ Call ID: f48f464b-5c5d-4b73-a5ba-14bd20def26e
   Args:

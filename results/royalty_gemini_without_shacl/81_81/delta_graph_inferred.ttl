@@ -1,0 +1,260 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:QueenIngrid a :Person,
+        :Woman ;
+    :hasRelation data:QueenIngrid ;
+    :hasSister data:QueenIngrid ;
+    :isBloodrelationOf data:QueenIngrid ;
+    :isSiblingOf data:QueenIngrid ;
+    :isSisterOf data:QueenIngrid .
+
+data:KingChristianX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KingChristianX ;
+    :hasRelation data:CrownPrinceChristian,
+        data:KingChristianX,
+        data:KingFrederikX,
+        data:PrinceHenrik,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine,
+        data:QueenMargretheII,
+        data:QueenMary ;
+    :isAncestorOf data:PrinceVincentOfDenmark ;
+    :isBloodrelationOf data:KingChristianX ;
+    :isBrotherOf data:KingChristianX ;
+    :isSiblingOf data:KingChristianX .
+
+data:QueenMary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceVincentOfDenmark ;
+    :hasRelation data:CrownPrinceChristian,
+        data:KingChristianX,
+        data:KingFrederikX,
+        data:PrinceHenrik,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine,
+        data:QueenMargretheII,
+        data:QueenMary ;
+    :hasSister data:QueenMary ;
+    :hasSon data:PrinceVincentOfDenmark ;
+    :isAncestorOf data:PrinceVincentOfDenmark ;
+    :isAuntOf data:PrinceVincentOfDenmark ;
+    :isBloodrelationOf data:QueenMary ;
+    :isMotherOf data:PrinceVincentOfDenmark ;
+    :isParentOf data:PrinceVincentOfDenmark ;
+    :isSiblingOf data:QueenMary ;
+    :isSisterOf data:QueenMary .
+
+data:PrinceHenrik a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceHenrik ;
+    :hasChild data:KingFrederikX ;
+    :hasRelation data:CrownPrinceChristian,
+        data:KingChristianX,
+        data:KingFrederikX,
+        data:PrinceHenrik,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine,
+        data:QueenMargretheII,
+        data:QueenMary ;
+    :hasSon data:KingFrederikX ;
+    :isAncestorOf data:KingFrederikX,
+        data:PrinceVincentOfDenmark ;
+    :isBloodrelationOf data:PrinceHenrik ;
+    :isBrotherOf data:PrinceHenrik ;
+    :isFatherOf data:KingFrederikX ;
+    :isParentOf data:KingFrederikX ;
+    :isSiblingOf data:PrinceHenrik ;
+    :isUncleOf data:KingFrederikX .
+
+data:QueenMargretheII a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:KingFrederikX ;
+    :hasRelation data:CrownPrinceChristian,
+        data:KingChristianX,
+        data:KingFrederikX,
+        data:PrinceHenrik,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine,
+        data:QueenMargretheII,
+        data:QueenMary ;
+    :hasSister data:QueenMargretheII ;
+    :hasSon data:KingFrederikX ;
+    :isAncestorOf data:KingFrederikX,
+        data:PrinceVincentOfDenmark ;
+    :isAuntOf data:KingFrederikX ;
+    :isBloodrelationOf data:QueenMargretheII ;
+    :isMotherOf data:KingFrederikX ;
+    :isParentOf data:KingFrederikX ;
+    :isSiblingOf data:QueenMargretheII ;
+    :isSisterOf data:QueenMargretheII .
+
+data:CrownPrinceChristian a :Man,
+        :Person ;
+    :hasBrother data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark ;
+    :hasRelation data:CrownPrinceChristian,
+        data:KingChristianX,
+        data:KingFrederikX,
+        data:PrinceHenrik,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine,
+        data:QueenMargretheII,
+        data:QueenMary ;
+    :hasSister data:PrincessIsabella,
+        data:PrincessJosephine ;
+    :isBloodrelationOf data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine ;
+    :isBrotherOf data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine ;
+    :isSiblingOf data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine .
+
+data:PrincessIsabella a :Person,
+        :Woman ;
+    :hasBrother data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark ;
+    :hasRelation data:CrownPrinceChristian,
+        data:KingChristianX,
+        data:KingFrederikX,
+        data:PrinceHenrik,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine,
+        data:QueenMargretheII,
+        data:QueenMary ;
+    :hasSister data:PrincessIsabella,
+        data:PrincessJosephine ;
+    :isBloodrelationOf data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine ;
+    :isSiblingOf data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine ;
+    :isSisterOf data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine .
+
+data:PrincessJosephine a :Person,
+        :Woman ;
+    :hasBrother data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark ;
+    :hasRelation data:CrownPrinceChristian,
+        data:KingChristianX,
+        data:KingFrederikX,
+        data:PrinceHenrik,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine,
+        data:QueenMargretheII,
+        data:QueenMary ;
+    :hasSister data:PrincessIsabella,
+        data:PrincessJosephine ;
+    :isBloodrelationOf data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine ;
+    :isSiblingOf data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine ;
+    :isSisterOf data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine .
+
+data:KingFrederikX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:PrinceHenrik,
+        data:QueenMargretheII ;
+    :hasBrother data:KingFrederikX ;
+    :hasChild data:PrinceVincentOfDenmark ;
+    :hasFather data:PrinceHenrik ;
+    :hasMother data:QueenMargretheII ;
+    :hasParent data:PrinceHenrik,
+        data:QueenMargretheII ;
+    :hasRelation data:CrownPrinceChristian,
+        data:KingChristianX,
+        data:KingFrederikX,
+        data:PrinceHenrik,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine,
+        data:QueenMargretheII,
+        data:QueenMary ;
+    :hasSon data:PrinceVincentOfDenmark ;
+    :isAncestorOf data:PrinceVincentOfDenmark ;
+    :isBloodrelationOf data:KingFrederikX ;
+    :isBrotherOf data:KingFrederikX ;
+    :isChildOf data:PrinceHenrik,
+        data:QueenMargretheII ;
+    :isFatherOf data:PrinceVincentOfDenmark ;
+    :isParentOf data:PrinceVincentOfDenmark ;
+    :isSiblingOf data:KingFrederikX ;
+    :isSonOf data:PrinceHenrik,
+        data:QueenMargretheII ;
+    :isUncleOf data:PrinceVincentOfDenmark .
+
+data:PrinceVincentOfDenmark a :Man,
+        :Person ;
+    :hasAncestor data:KingChristianX,
+        data:KingFrederikX,
+        data:PrinceHenrik,
+        data:QueenMargretheII,
+        data:QueenMary ;
+    :hasBirthYear 2011 ;
+    :hasBrother data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark ;
+    :hasFather data:KingFrederikX ;
+    :hasMother data:QueenMary ;
+    :hasParent data:KingFrederikX,
+        data:QueenMary ;
+    :hasRelation data:CrownPrinceChristian,
+        data:KingChristianX,
+        data:KingFrederikX,
+        data:PrinceHenrik,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine,
+        data:QueenMargretheII,
+        data:QueenMary ;
+    :hasSister data:PrincessIsabella,
+        data:PrincessJosephine ;
+    :isBloodrelationOf data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine ;
+    :isBrotherOf data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine ;
+    :isChildOf data:KingFrederikX,
+        data:QueenMary ;
+    :isSiblingOf data:CrownPrinceChristian,
+        data:PrinceVincentOfDenmark,
+        data:PrincessIsabella,
+        data:PrincessJosephine ;
+    :isSonOf data:KingFrederikX,
+        data:QueenMary .
+

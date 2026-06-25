@@ -78,7 +78,6 @@ Beatrice was born at 8:18 pm on 8 August 1988 at the Portland Hospital in London
 Beatrice was baptised in the Chapel Royal at St James's Palace on 20 December.
 Her younger sister, Princess Eugenie, was born in 1990.
 Beatrice's parents divorced amicably when she was seven years old and agreed to joint custody of their two children.
-After the divorce, the Queen provided her parents with £1.4 million to establish a trust fund for her and Eugenie.
 Beatrice and her sister frequently travelled abroad, always with one or both of their parents.
 Beatrice began her early education at the independent Upton House School in Windsor in 1991.
 Beatrice continued her education at the independent St George's School in Ascot, where she was a pupil from 2000 to 2007.
@@ -127,7 +126,6 @@ In an interview to mark her 18th birthday, Beatrice said she wished to use her p
 In April 2010, Beatrice became the first member of the British royal family to complete the London Marathon, running to raise money for Children in Crisis.
 At the April 2011 wedding of her cousin Prince William, Beatrice's unusual fascinator, designed by Philip Treacy, attracted significant public and media attention.
 In November 2012, Beatrice became a patron of the York Musical Society.
-In 2016, she, her mother, and her sister Eugenie collaborated with the British contemporary artist Teddy McDonald to create the first royal contemporary art painting.
 In 2018, Children in Crisis merged with Street Child, a children's charity active in multiple countries, with Beatrice serving as its ambassador.
 Beatrice took part in a South Asia Tour in 2016 that lasted nine days.
 A few weeks later, she attended the 2016 Asia Game Changer Awards Dinner at the United Nations in New York City, which honoured Ruit and others.
@@ -149,6 +147,8 @@ Since her marriage, she has been styled in the Court Circular as "Her Royal High
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -164,39 +164,9 @@ Since her marriage, she has been styled in the Court Circular as "Her Royal High
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -211,6 +181,23 @@ Since her marriage, she has been styled in the Court Circular as "Her Royal High
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -228,6 +215,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -295,29 +297,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -326,6 +320,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -338,6 +340,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -346,17 +350,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -384,6 +390,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -399,209 +489,160 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (94b039fb-2fa7-4ced-a07a-bb3335b3e196)
- Call ID: 94b039fb-2fa7-4ced-a07a-bb3335b3e196
+  AssignClass (0b4f9a84-3e54-4690-8ee2-acb3b90bd126)
+ Call ID: 0b4f9a84-3e54-4690-8ee2-acb3b90bd126
+  Args:
+    source: Princess Beatrice
+    type: :Woman
+  AssignClass (e729bc93-daff-4388-a633-bcabfe0602eb)
+ Call ID: e729bc93-daff-4388-a633-bcabfe0602eb
   Args:
     source: Princess Beatrice
     type: :Person
-  AssignClass (f594fbfd-7d63-43a6-8e85-bd34abd4d52a)
- Call ID: f594fbfd-7d63-43a6-8e85-bd34abd4d52a
+  AddLiteral (d7e57e5f-f7f5-42c9-a238-e14e92e04859)
+ Call ID: d7e57e5f-f7f5-42c9-a238-e14e92e04859
   Args:
-    type: :Woman
-    source: Princess Beatrice
-  AddLiteral (c41e0f2d-3933-45be-83b2-135222699eef)
- Call ID: c41e0f2d-3933-45be-83b2-135222699eef
-  Args:
-    relation: :hasBirthYear
     literal_type: xsd:integer
+    relation: :hasBirthYear
     literal_value: 1988
     source: Princess Beatrice
-  AssignClass (d893b219-7336-4647-9b28-92abf8db8642)
- Call ID: d893b219-7336-4647-9b28-92abf8db8642
-  Args:
-    source: Princess Eugenie
-    type: :Person
-  AssignClass (c4bb581d-0cba-488c-b7aa-ea30f37e631c)
- Call ID: c4bb581d-0cba-488c-b7aa-ea30f37e631c
-  Args:
-    source: Princess Eugenie
-    type: :Woman
-  AddTriple (1a423abd-073e-4530-9533-b5eb591ccc0f)
- Call ID: 1a423abd-073e-4530-9533-b5eb591ccc0f
-  Args:
-    target: Princess Beatrice
-    relation: :isSisterOf
-    source: Princess Eugenie
-  AssignClass (53c7db5e-8c0f-4b42-97d6-08431159f5b0)
- Call ID: 53c7db5e-8c0f-4b42-97d6-08431159f5b0
-  Args:
-    type: :Person
-    source: Edoardo Mapelli Mozzi
-  AssignClass (d659698d-eed1-476e-9c6e-e521a5d84813)
- Call ID: d659698d-eed1-476e-9c6e-e521a5d84813
+  AssignClass (fcae4bca-ae53-4a2e-9fca-f7bdbeb5917d)
+ Call ID: fcae4bca-ae53-4a2e-9fca-f7bdbeb5917d
   Args:
     source: Edoardo Mapelli Mozzi
     type: :Man
-  AddTriple (aae7d596-b2a0-49a4-a09b-013878cd76ca)
- Call ID: aae7d596-b2a0-49a4-a09b-013878cd76ca
+  AssignClass (9e817ff0-06f7-4464-806f-c5fb10288b01)
+ Call ID: 9e817ff0-06f7-4464-806f-c5fb10288b01
   Args:
-    source: Princess Beatrice
+    source: Edoardo Mapelli Mozzi
+    type: :Person
+  AddTriple (4c7a75f3-f248-4be6-9b32-cc72218fd68b)
+ Call ID: 4c7a75f3-f248-4be6-9b32-cc72218fd68b
+  Args:
     relation: :hasRelation
     target: Edoardo Mapelli Mozzi
-  AddLiteral (c8bbf315-074a-4b50-b185-c080fb66a472)
- Call ID: c8bbf315-074a-4b50-b185-c080fb66a472
+    source: Princess Beatrice
+  AddLiteral (6b72e856-9762-4046-9f9f-0fa87f2b00d5)
+ Call ID: 6b72e856-9762-4046-9f9f-0fa87f2b00d5
   Args:
-    literal_value: 2020
     literal_type: xsd:integer
     relation: :hasMarriageYear
+    literal_value: 2020
     source: Princess Beatrice
-  AssignClass (72e52df4-2844-43eb-9b09-b6c84ba920c9)
- Call ID: 72e52df4-2844-43eb-9b09-b6c84ba920c9
+  AssignClass (aa79596a-e77b-480b-a11e-df31ee50f27f)
+ Call ID: aa79596a-e77b-480b-a11e-df31ee50f27f
   Args:
-    source: Sienna Elizabeth Mapelli Mozzi
-    type: :Person
-  AssignClass (251de19e-b932-4fdf-84a8-d8a6a049982e)
- Call ID: 251de19e-b932-4fdf-84a8-d8a6a049982e
-  Args:
-    source: Sienna Elizabeth Mapelli Mozzi
+    source: Princess Eugenie
     type: :Woman
-  AddTriple (464b2eee-1c63-49d3-8cf1-92b20a2c6bfe)
- Call ID: 464b2eee-1c63-49d3-8cf1-92b20a2c6bfe
+  AssignClass (06cbc317-0a3e-452e-aa03-f06e14121cec)
+ Call ID: 06cbc317-0a3e-452e-aa03-f06e14121cec
   Args:
-    source: Sienna Elizabeth Mapelli Mozzi
-    relation: :isDaughterOf
-    target: Princess Beatrice
-  AddTriple (a45a7637-04c2-4991-a7b8-27d6e55178b8)
- Call ID: a45a7637-04c2-4991-a7b8-27d6e55178b8
-  Args:
-    relation: :isDaughterOf
-    target: Edoardo Mapelli Mozzi
-    source: Sienna Elizabeth Mapelli Mozzi
-  AssignClass (a1af3fa8-d2b7-4461-841d-b19c37c59ce3)
- Call ID: a1af3fa8-d2b7-4461-841d-b19c37c59ce3
-  Args:
-    source: Athena Elizabeth Rose
+    source: Princess Eugenie
     type: :Person
-  AssignClass (4ff62661-754f-4a61-8889-3ae427bd15c7)
- Call ID: 4ff62661-754f-4a61-8889-3ae427bd15c7
+  AddTriple (7a311cfa-a1ae-4ae0-8ed3-8afb5dc71de1)
+ Call ID: 7a311cfa-a1ae-4ae0-8ed3-8afb5dc71de1
   Args:
-    type: :Woman
-    source: Athena Elizabeth Rose
-  AddTriple (a94d6a10-ed58-4aa6-b2e1-3570b7163aa7)
- Call ID: a94d6a10-ed58-4aa6-b2e1-3570b7163aa7
-  Args:
-    source: Athena Elizabeth Rose
-    relation: :isDaughterOf
+    relation: :isSisterOf
     target: Princess Beatrice
-  AddTriple (8b906900-eea3-4c07-95f8-43a644f1796f)
- Call ID: 8b906900-eea3-4c07-95f8-43a644f1796f
+    source: Princess Eugenie
+  AddTriple (40d36904-9676-434d-9449-8b22f9d9f210)
+ Call ID: 40d36904-9676-434d-9449-8b22f9d9f210
   Args:
-    target: Edoardo Mapelli Mozzi
-    relation: :isDaughterOf
-    source: Athena Elizabeth Rose
-  AssignClass (ad6504a0-19e0-49ed-bd8e-9a6b8d103384)
- Call ID: ad6504a0-19e0-49ed-bd8e-9a6b8d103384
+    source: Princess Beatrice
+    target: Princess Eugenie
+    relation: :isSisterOf
+  AssignClass (d6016da6-4c1d-42b1-a0f3-0ef4b7641a40)
+ Call ID: d6016da6-4c1d-42b1-a0f3-0ef4b7641a40
   Args:
     source: Alex Mapelli-Mozzi
-    type: :Person
-  AssignClass (bd07ec42-8962-45b6-8a4a-ea09fb80b6f1)
- Call ID: bd07ec42-8962-45b6-8a4a-ea09fb80b6f1
-  Args:
     type: :Man
-    source: Alex Mapelli-Mozzi
-  AddTriple (baa17c9c-8d12-4458-a2f1-01d19f8f8e08)
- Call ID: baa17c9c-8d12-4458-a2f1-01d19f8f8e08
+  AssignClass (624b0f45-04d3-4c95-8b07-6249cdbcff44)
+ Call ID: 624b0f45-04d3-4c95-8b07-6249cdbcff44
   Args:
+    source: Alex Mapelli-Mozzi
+    type: :Person
+  AddTriple (6bd3271b-855a-4cce-89c7-f25292e4dfeb)
+ Call ID: 6bd3271b-855a-4cce-89c7-f25292e4dfeb
+  Args:
+    source: Alex Mapelli-Mozzi
     relation: :isFatherOf
     target: Edoardo Mapelli Mozzi
-    source: Alex Mapelli-Mozzi
-  AssignClass (4d42a6b8-989e-461f-8da6-ee2ff30ca097)
- Call ID: 4d42a6b8-989e-461f-8da6-ee2ff30ca097
+  AssignClass (f8c77e83-a5ec-4fff-b296-920abe8f0bb4)
+ Call ID: f8c77e83-a5ec-4fff-b296-920abe8f0bb4
   Args:
-    source: Paolo Mapelli Mozzi
-    type: :Person
-  AssignClass (b4c5ae40-ac3c-4c32-8c0d-e74e7b69ffde)
- Call ID: b4c5ae40-ac3c-4c32-8c0d-e74e7b69ffde
-  Args:
+    source: Christopher Woolf
     type: :Man
-    source: Paolo Mapelli Mozzi
-  AddTriple (5481fb0d-6d58-4abe-bf1c-b16eded2ac5a)
- Call ID: 5481fb0d-6d58-4abe-bf1c-b16eded2ac5a
-  Args:
-    source: Paolo Mapelli Mozzi
-    target: Edoardo Mapelli Mozzi
-    relation: :isAncestorOf
-  AssignClass (585bc626-b553-4104-8a92-32f61a7a658c)
- Call ID: 585bc626-b553-4104-8a92-32f61a7a658c
+  AssignClass (47e7727f-8a38-4fa4-8fc1-44a3ad8a6c64)
+ Call ID: 47e7727f-8a38-4fa4-8fc1-44a3ad8a6c64
   Args:
     source: Christopher Woolf
     type: :Person
-  AssignClass (d557093d-7057-4733-9aa4-5e8fa9bd21b2)
- Call ID: d557093d-7057-4733-9aa4-5e8fa9bd21b2
+  AddTriple (650cdbde-255d-4843-b4b6-44e90f464455)
+ Call ID: 650cdbde-255d-4843-b4b6-44e90f464455
   Args:
-    type: :Man
-    source: Christopher Woolf
-  AddTriple (6cdb5b2b-49ad-4b40-bb11-16743b7e8ca0)
- Call ID: 6cdb5b2b-49ad-4b40-bb11-16743b7e8ca0
-  Args:
-    source: Christopher Woolf
+    relation: :isChildOf
     target: Edoardo Mapelli Mozzi
-    relation: :isSonOf
-  AssignClass (a2953ff4-7deb-4499-9516-b8c97c59d77a)
- Call ID: a2953ff4-7deb-4499-9516-b8c97c59d77a
-  Args:
-    type: :Person
-    source: Dara Huang
-  AssignClass (8e46e66e-bad8-4ea8-9595-0267ab4277f8)
- Call ID: 8e46e66e-bad8-4ea8-9595-0267ab4277f8
+    source: Christopher Woolf
+  AssignClass (5e8a4391-002c-4db0-a795-46e8cc8ef927)
+ Call ID: 5e8a4391-002c-4db0-a795-46e8cc8ef927
   Args:
     source: Dara Huang
     type: :Woman
-  AddTriple (ac53b261-77a6-4290-a7bf-36b71d389109)
- Call ID: ac53b261-77a6-4290-a7bf-36b71d389109
+  AssignClass (a8ea7d77-de4d-4528-9f02-b1271a6417f2)
+ Call ID: a8ea7d77-de4d-4528-9f02-b1271a6417f2
   Args:
-    target: Christopher Woolf
-    relation: :isMotherOf
     source: Dara Huang
-  AssignClass (316c3c10-0297-4d5f-afda-84b26e8c9597)
- Call ID: 316c3c10-0297-4d5f-afda-84b26e8c9597
-  Args:
     type: :Person
-    source: Queen Victoria
-  AssignClass (a2942958-42a5-4f0c-9d8b-d54984fc7899)
- Call ID: a2942958-42a5-4f0c-9d8b-d54984fc7899
+  AddTriple (fb78f03b-b42e-4af3-844b-05f7241ca54a)
+ Call ID: fb78f03b-b42e-4af3-844b-05f7241ca54a
   Args:
+    relation: :isChildOf
+    target: Dara Huang
+    source: Christopher Woolf
+  AssignClass (09145b4a-db0a-4b74-969e-6e9b36b0cced)
+ Call ID: 09145b4a-db0a-4b74-969e-6e9b36b0cced
+  Args:
+    source: Sienna Elizabeth Mapelli Mozzi
     type: :Woman
-    source: Queen Victoria
-  AddTriple (71e70a5f-d2f0-4a27-a0e2-f34c50b385d6)
- Call ID: 71e70a5f-d2f0-4a27-a0e2-f34c50b385d6
+  AssignClass (a88186a5-fccf-4ded-90aa-87d7ab94d252)
+ Call ID: a88186a5-fccf-4ded-90aa-87d7ab94d252
   Args:
-    target: Princess Beatrice
-    relation: :isAncestorOf
-    source: Queen Victoria
-  AssignClass (00ec0243-7592-407b-a167-14ce0d1841f7)
- Call ID: 00ec0243-7592-407b-a167-14ce0d1841f7
-  Args:
-    source: Charles III
+    source: Sienna Elizabeth Mapelli Mozzi
     type: :Person
-  AssignClass (98939aae-62b4-46d0-b6fd-2f07407f2158)
- Call ID: 98939aae-62b4-46d0-b6fd-2f07407f2158
+  AddTriple (6ad5e5c2-bda7-46fd-bd72-5b6832e73148)
+ Call ID: 6ad5e5c2-bda7-46fd-bd72-5b6832e73148
   Args:
-    type: :Man
-    source: Charles III
-  AddTriple (3fdc4986-e623-489a-a05d-ec520e9dc226)
- Call ID: 3fdc4986-e623-489a-a05d-ec520e9dc226
-  Args:
-    source: Charles III
+    source: Sienna Elizabeth Mapelli Mozzi
+    relation: :isChildOf
     target: Princess Beatrice
-    relation: :hasRelation
-  AddLiteral (fbc2c01d-77ad-4681-a736-725e8aafa552)
- Call ID: fbc2c01d-77ad-4681-a736-725e8aafa552
+  AddTriple (5e088a5e-2ed8-421f-ac9d-bb6ec79470d8)
+ Call ID: 5e088a5e-2ed8-421f-ac9d-bb6ec79470d8
   Args:
-    relation: :knownAs
-    literal_type: xsd:string
-    literal_value: Beatrice York
-    source: Princess Beatrice
-  Finish (bf53ff15-b677-4200-b439-bcc318f6ba78)
- Call ID: bf53ff15-b677-4200-b439-bcc318f6ba78
+    source: Sienna Elizabeth Mapelli Mozzi
+    target: Edoardo Mapelli Mozzi
+    relation: :isChildOf
+  AssignClass (8fc7b8c8-bead-4792-b17a-e79cc454fbb6)
+ Call ID: 8fc7b8c8-bead-4792-b17a-e79cc454fbb6
+  Args:
+    source: Athena Elizabeth Rose
+    type: :Woman
+  AssignClass (69c3bbd3-447b-4013-b0a8-64233de9938c)
+ Call ID: 69c3bbd3-447b-4013-b0a8-64233de9938c
+  Args:
+    source: Athena Elizabeth Rose
+    type: :Person
+  AddTriple (379ce9ad-d097-4f31-9280-cb68188061f9)
+ Call ID: 379ce9ad-d097-4f31-9280-cb68188061f9
+  Args:
+    source: Athena Elizabeth Rose
+    relation: :isChildOf
+    target: Princess Beatrice
+  AddTriple (e9b65eb4-91d2-47bb-846a-99fb275c1303)
+ Call ID: e9b65eb4-91d2-47bb-846a-99fb275c1303
+  Args:
+    target: Edoardo Mapelli Mozzi
+    relation: :isChildOf
+    source: Athena Elizabeth Rose
+  Finish (ba912ebe-af5a-41ea-a591-55c3df3f1bb8)
+ Call ID: ba912ebe-af5a-41ea-a591-55c3df3f1bb8
   Args:

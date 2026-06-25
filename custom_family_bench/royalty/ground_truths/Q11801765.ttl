@@ -7,79 +7,11 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Rachel_Spender-Clay a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Rachel Spender-Clay" ;
-    data:posIndicesFull "299:326" ;
-    data:posIndicesPart "379:386",
-        "387:391" ;
-    data:wdtLink wdt:Q75240077 ;
-    :alsoKnownAs "Rachel Pauline Spender Clay",
-        "Rachel Pauline Spender-Clay" ;
-    :hasChild data:Simon_Bowes-Lyon ;
-    :hasSex data:female ;
-    :hasSon data:Simon_Bowes-Lyon ;
-    :isMotherOf data:Simon_Bowes-Lyon ;
-    :isParentOf data:Simon_Bowes-Lyon .
-
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "176:188" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother .
-
-data:David_Bowes-Lyon a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "David Bowes-Lyon" ;
-    data:posIndicesFull "262:282",
-        "266:282" ;
-    data:posIndicesPart "526:531",
-        "532:536",
-        "654:659",
-        "660:664",
-        "809:814",
-        "815:819" ;
-    data:wdtLink wdt:Q5231604 ;
-    :alsoKnownAs "Hon. Sir David Bowes-Lyon",
-        "Sir David Bowes-Lyon" ;
-    :hasChild data:Simon_Bowes-Lyon ;
-    :hasSex data:male ;
-    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSon data:Simon_Bowes-Lyon ;
-    :isBrotherOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isFatherOf data:Simon_Bowes-Lyon ;
-    :isParentOf data:Simon_Bowes-Lyon ;
-    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isUncleOf data:Elizabeth_II .
-
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
     rdfs:label "Queen Elizabeth, The Queen Mother" ;
-    data:posIndicesFull "484:499",
-        "500:516" ;
-    data:posIndicesPart "714:719" ;
+    data:posIndicesFull "436:451",
+        "452:468" ;
+    data:posIndicesPart "666:671" ;
     data:wdtLink wdt:Q10633 ;
     :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
         "Elizabeth Angela Marguerite, Duchess of York",
@@ -95,41 +27,60 @@ data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
         "Queen-Empress Elizabeth",
         "The Queen Mother",
         "The Queen Mum" ;
-    :hasBrother data:David_Bowes-Lyon ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasSex data:female ;
-    :isAuntOf data:Simon_Bowes-Lyon ;
-    :isMotherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II ;
-    :isSiblingOf data:David_Bowes-Lyon ;
-    :isSisterOf data:David_Bowes-Lyon .
+    :hasSex data:female .
 
-data:Simon_Bowes-Lyon a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Simon_Bowes-Lyon a :Person ;
     rdfs:label "Simon Bowes-Lyon" ;
     data:posIndicesFull "0:30",
         "4:30" ;
-    data:posIndicesPart "213:218",
-        "219:223",
-        "526:531",
-        "532:536",
-        "654:659",
-        "660:664",
-        "809:814",
-        "815:819" ;
+    data:posIndicesPart "165:170",
+        "171:175",
+        "478:483",
+        "484:488",
+        "606:611",
+        "612:616",
+        "761:766",
+        "767:771" ;
     data:wdtLink wdt:Q11801765 ;
     :alsoKnownAs "Simon Alexander Bowes-Lyon",
         "Sir Simon Alexander Bowes-Lyon",
         "Sir Simon Bowes-Lyon" ;
-    :hasFather data:David_Bowes-Lyon ;
-    :hasMother data:Rachel_Spender-Clay ;
     :hasParent data:David_Bowes-Lyon,
         data:Rachel_Spender-Clay ;
-    :hasSex data:male ;
-    :isChildOf data:David_Bowes-Lyon,
-        data:Rachel_Spender-Clay ;
-    :isSonOf data:David_Bowes-Lyon,
-        data:Rachel_Spender-Clay .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:David_Bowes-Lyon a :Person ;
+    rdfs:label "David Bowes-Lyon" ;
+    data:posIndicesFull "214:234",
+        "218:234" ;
+    data:posIndicesPart "478:483",
+        "484:488",
+        "606:611",
+        "612:616",
+        "761:766",
+        "767:771" ;
+    data:wdtLink wdt:Q5231604 ;
+    :alsoKnownAs "Hon. Sir David Bowes-Lyon",
+        "Sir David Bowes-Lyon" ;
+    :hasSex data:male .
+
+data:Rachel_Spender-Clay a :Person ;
+    rdfs:label "Rachel Spender-Clay" ;
+    data:posIndicesFull "251:278" ;
+    data:posIndicesPart "331:338",
+        "339:343" ;
+    data:wdtLink wdt:Q75240077 ;
+    :alsoKnownAs "Rachel Pauline Spender Clay",
+        "Rachel Pauline Spender-Clay" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

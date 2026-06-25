@@ -83,7 +83,6 @@ Upbringing
 The family lived at Anmer Hall in Norfolk during Charlotte's infancy, before relocating to Kensington Palace in 2017.
 Charlotte started at Willcocks Nursery School in January 2018.
 She joined George at Thomas's School in Battersea in September 2019, where she was known as Charlotte Cambridge.
-In 2022, the family relocated to Adelaide Cottage in Windsor Home Park, after which she and her brothers began attending Lambrook, an independent preparatory school in Berkshire.
 Following the death of Elizabeth II on 8 September 2022, Charlotte's grandfather acceded to the throne as Charles III, and Charlotte became third in line to the throne.
 Public image
 
@@ -103,6 +102,8 @@ Because of the implementation of the Perth Agreement, which replaced male-prefer
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -118,39 +119,9 @@ Because of the implementation of the Perth Agreement, which replaced male-prefer
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -165,6 +136,23 @@ Because of the implementation of the Perth Agreement, which replaced male-prefer
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -182,6 +170,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -249,29 +252,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,6 +275,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -292,6 +295,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -300,17 +305,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -338,6 +345,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -353,315 +444,138 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2abf9dc6-706b-4825-9ed4-eff8c970a01f)
- Call ID: 2abf9dc6-706b-4825-9ed4-eff8c970a01f
+  AssignClass (9fc75d6a-fc1b-4ccb-a3f2-045df852ec4f)
+ Call ID: 9fc75d6a-fc1b-4ccb-a3f2-045df852ec4f
   Args:
-    type: :Person
-    source: Charlotte_of_Wales
-  AssignClass (202666f3-0e58-4269-88f4-54b89d019fbe)
- Call ID: 202666f3-0e58-4269-88f4-54b89d019fbe
-  Args:
+    source: Charlotte_Elizabeth_Diana
     type: :Woman
-    source: Charlotte_of_Wales
-  AssignClass (cc9aa674-9dc3-4500-9a69-ff2c2d0953e9)
- Call ID: cc9aa674-9dc3-4500-9a69-ff2c2d0953e9
+  AssignClass (b2cfec08-35b1-4583-9aab-0dcec5b0c471)
+ Call ID: b2cfec08-35b1-4583-9aab-0dcec5b0c471
   Args:
-    source: William_Prince_of_Wales
+    source: Charlotte_Elizabeth_Diana
     type: :Person
-  AssignClass (ecb847ca-3644-430d-a158-66d09cc32b9e)
- Call ID: ecb847ca-3644-430d-a158-66d09cc32b9e
+  AddLiteral (6f5a4d01-6f5d-4b76-96ae-3124ae6d0442)
+ Call ID: 6f5a4d01-6f5d-4b76-96ae-3124ae6d0442
   Args:
-    source: William_Prince_of_Wales
-    type: :Man
-  AssignClass (b68ba882-5742-4bae-9cfb-b6eb6aad665e)
- Call ID: b68ba882-5742-4bae-9cfb-b6eb6aad665e
-  Args:
-    type: :Person
-    source: Catherine_Princess_of_Wales
-  AssignClass (ddb39d4e-b3f5-4c59-aa8b-e87b0780f117)
- Call ID: ddb39d4e-b3f5-4c59-aa8b-e87b0780f117
-  Args:
-    type: :Woman
-    source: Catherine_Princess_of_Wales
-  AssignClass (2fe09a9b-3f1e-4dd0-bd2d-b24a8ecd91f1)
- Call ID: 2fe09a9b-3f1e-4dd0-bd2d-b24a8ecd91f1
-  Args:
-    type: :Person
-    source: Charles_III
-  AssignClass (ccf165d0-faec-4417-bdd0-3ed9e9de8ac6)
- Call ID: ccf165d0-faec-4417-bdd0-3ed9e9de8ac6
-  Args:
-    type: :Man
-    source: Charles_III
-  AssignClass (7d5b4a93-f166-4750-86a1-c4facf963e29)
- Call ID: 7d5b4a93-f166-4750-86a1-c4facf963e29
-  Args:
-    source: Diana_Princess_of_Wales
-    type: :Person
-  AssignClass (5adc6126-c1e2-4c90-86d1-f3771d650514)
- Call ID: 5adc6126-c1e2-4c90-86d1-f3771d650514
-  Args:
-    type: :Woman
-    source: Diana_Princess_of_Wales
-  AssignClass (74aaaa1d-45a9-4fab-905c-1a4e200bf089)
- Call ID: 74aaaa1d-45a9-4fab-905c-1a4e200bf089
-  Args:
-    source: George
-    type: :Person
-  AssignClass (7008bad7-12ce-4715-86cf-0436899335eb)
- Call ID: 7008bad7-12ce-4715-86cf-0436899335eb
-  Args:
-    type: :Man
-    source: George
-  AssignClass (c67fed03-609b-4dbe-9d94-bf4c0ff2bcc2)
- Call ID: c67fed03-609b-4dbe-9d94-bf4c0ff2bcc2
-  Args:
-    type: :Person
-    source: Louis
-  AssignClass (58a372f7-b479-4ad1-9c4a-140faa8ad537)
- Call ID: 58a372f7-b479-4ad1-9c4a-140faa8ad537
-  Args:
-    source: Louis
-    type: :Man
-  AssignClass (5501c176-f984-46d7-9489-b51e74727073)
- Call ID: 5501c176-f984-46d7-9489-b51e74727073
-  Args:
-    type: :Person
-    source: Elizabeth_II
-  AssignClass (477faf2e-bf0b-4e78-a0e9-bac049cf0f96)
- Call ID: 477faf2e-bf0b-4e78-a0e9-bac049cf0f96
-  Args:
-    type: :Woman
-    source: Elizabeth_II
-  AddTriple (1ed76323-a0c1-45bf-9076-243606922776)
- Call ID: 1ed76323-a0c1-45bf-9076-243606922776
-  Args:
-    source: Charlotte_of_Wales
-    target: William_Prince_of_Wales
-    relation: :hasFather
-  AddTriple (4a086c93-04ae-4eb9-9b46-db21a10aca24)
- Call ID: 4a086c93-04ae-4eb9-9b46-db21a10aca24
-  Args:
-    target: Catherine_Princess_of_Wales
-    relation: :hasMother
-    source: Charlotte_of_Wales
-  AddTriple (bbaa2982-783c-4b12-ba74-88052671289b)
- Call ID: bbaa2982-783c-4b12-ba74-88052671289b
-  Args:
-    target: Charles_III
-    relation: :hasParent
-    source: Charlotte_of_Wales
-  AddTriple (bde7bc06-12ef-426a-a0f9-9e0cfe9fddd8)
- Call ID: bde7bc06-12ef-426a-a0f9-9e0cfe9fddd8
-  Args:
-    relation: :hasParent
-    target: Diana_Princess_of_Wales
-    source: Charlotte_of_Wales
-  AddTriple (4b29b60f-7b28-47b8-b45a-cfdf38c70c7b)
- Call ID: 4b29b60f-7b28-47b8-b45a-cfdf38c70c7b
-  Args:
-    relation: :hasBrother
-    target: George
-    source: Charlotte_of_Wales
-  AddTriple (50469a32-673f-4c6d-be2a-ce18bf05024c)
- Call ID: 50469a32-673f-4c6d-be2a-ce18bf05024c
-  Args:
-    source: Charlotte_of_Wales
-    relation: :hasBrother
-    target: Louis
-  AddLiteral (3ea4c364-62ec-4ca6-8e5d-9888ccf97408)
- Call ID: 3ea4c364-62ec-4ca6-8e5d-9888ccf97408
-  Args:
+    source: Charlotte_Elizabeth_Diana
+    relation: :hasBirthYear
     literal_value: 2015
     literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Charlotte_of_Wales
-  AddTriple (5a0ae8b4-9658-4c0b-b06b-dd95d28e77df)
- Call ID: 5a0ae8b4-9658-4c0b-b06b-dd95d28e77df
+  AssignClass (a41c2410-b478-4bba-90d5-bcfb42f910ac)
+ Call ID: a41c2410-b478-4bba-90d5-bcfb42f910ac
   Args:
-    target: Charlotte_Elizabeth_Diana
-    relation: :knownAs
-    source: Charlotte_of_Wales
-  AddTriple (aac64a31-4204-4752-9996-b45daa2532c8)
- Call ID: aac64a31-4204-4752-9996-b45daa2532c8
+    source: William_Prince_of_Wales
+    type: :Man
+  AssignClass (304527ad-cab0-4c8c-be80-14b410dc6d1c)
+ Call ID: 304527ad-cab0-4c8c-be80-14b410dc6d1c
   Args:
-    relation: :formerlyKnownAs
-    target: Charlotte_Cambridge
-    source: Charlotte_of_Wales
-  Finish (98d34bfd-3258-48cc-8b17-85f99458f420)
- Call ID: 98d34bfd-3258-48cc-8b17-85f99458f420
+    source: William_Prince_of_Wales
+    type: :Person
+  AssignClass (4ebcd082-67aa-4927-b855-012871de0c50)
+ Call ID: 4ebcd082-67aa-4927-b855-012871de0c50
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Charlotte_of_Wales a :Person,
-          :Woman ;
-      :formerlyKnownAs data:Charlotte_Cambridge ;
-      :hasBirthYear 2015 ;
-      :hasBrother data:George,
-          data:Louis ;
-      :hasFather data:William_Prince_of_Wales ;
-      :hasMother data:Catherine_Princess_of_Wales ;
-      :hasParent data:Charles_III,
-          data:Diana_Princess_of_Wales ;
-      :knownAs data:Charlotte_Elizabeth_Diana .
-
-  data:Elizabeth_II a :Person,
-          :Woman .
-
-  data:Catherine_Princess_of_Wales a :Person,
-          :Woman .
-
-  data:Charles_III a :Man,
-          :Person .
-
-  data:Diana_Princess_of_Wales a :Person,
-          :Woman .
-
-  data:George a :Man,
-          :Person .
-
-  data:Louis a :Man,
-          :Person .
-
-  data:William_Prince_of_Wales a :Man,
-          :Person .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Charlotte_Cambridge', 'Charlotte_Elizabeth_Diana']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (634d2f76-4fb3-4800-a53e-1d359b81ebd4)
- Call ID: 634d2f76-4fb3-4800-a53e-1d359b81ebd4
+    source: Catherine_Princess_of_Wales
+    type: :Woman
+  AssignClass (54ee3b4e-12a3-44ce-bb1d-6f912095a82f)
+ Call ID: 54ee3b4e-12a3-44ce-bb1d-6f912095a82f
   Args:
-    type: :DomainEntity
+    source: Catherine_Princess_of_Wales
+    type: :Person
+  AddTriple (3a473c10-af66-4cf8-8968-569df1ab1d13)
+ Call ID: 3a473c10-af66-4cf8-8968-569df1ab1d13
+  Args:
+    relation: :hasFather
     source: Charlotte_Elizabeth_Diana
-  AssignClass (9d2f957d-1280-4d6e-8103-82842c5215d1)
- Call ID: 9d2f957d-1280-4d6e-8103-82842c5215d1
+    target: William_Prince_of_Wales
+  AddTriple (78c56031-204b-425c-8040-5a679f918cbe)
+ Call ID: 78c56031-204b-425c-8040-5a679f918cbe
   Args:
-    type: :DomainEntity
-    source: Charlotte_Cambridge
-  Finish (e46dce04-c2dd-487f-b3f7-c27931355fd2)
- Call ID: e46dce04-c2dd-487f-b3f7-c27931355fd2
+    relation: :hasMother
+    source: Charlotte_Elizabeth_Diana
+    target: Catherine_Princess_of_Wales
+  AssignClass (d22b8822-f014-4ebd-8059-3a9bfa7d9b65)
+ Call ID: d22b8822-f014-4ebd-8059-3a9bfa7d9b65
+  Args:
+    source: Charles_III
+    type: :Man
+  AssignClass (e2a17fb5-9d8d-440e-96f4-e30b70cdf6c0)
+ Call ID: e2a17fb5-9d8d-440e-96f4-e30b70cdf6c0
+  Args:
+    source: Charles_III
+    type: :Person
+  AssignClass (51f2b03b-f7e5-4dce-a5bc-5f7ce9d31985)
+ Call ID: 51f2b03b-f7e5-4dce-a5bc-5f7ce9d31985
+  Args:
+    source: Diana_Princess_of_Wales
+    type: :Woman
+  AssignClass (b453036f-1346-4758-b8f0-27bd77685441)
+ Call ID: b453036f-1346-4758-b8f0-27bd77685441
+  Args:
+    source: Diana_Princess_of_Wales
+    type: :Person
+  AssignClass (a594f68c-7546-4d4f-b1eb-e79f95a8ca3e)
+ Call ID: a594f68c-7546-4d4f-b1eb-e79f95a8ca3e
+  Args:
+    source: George
+    type: :Man
+  AssignClass (5ebf6649-34b5-4884-9a9e-0e9328704834)
+ Call ID: 5ebf6649-34b5-4884-9a9e-0e9328704834
+  Args:
+    source: George
+    type: :Person
+  AssignClass (2a17291d-a5cd-4312-843d-eb0fd701351f)
+ Call ID: 2a17291d-a5cd-4312-843d-eb0fd701351f
+  Args:
+    source: Louis
+    type: :Man
+  AssignClass (b2b09e79-0594-47ab-87cd-75fe61435650)
+ Call ID: b2b09e79-0594-47ab-87cd-75fe61435650
+  Args:
+    source: Louis
+    type: :Person
+  AddTriple (96201851-9274-4703-8a38-2dabb8d5a40b)
+ Call ID: 96201851-9274-4703-8a38-2dabb8d5a40b
+  Args:
+    target: George
+    relation: :isSiblingOf
+    source: Charlotte_Elizabeth_Diana
+  AddTriple (63885f00-8856-462c-88ec-57cafa31edf8)
+ Call ID: 63885f00-8856-462c-88ec-57cafa31edf8
+  Args:
+    target: Louis
+    relation: :isSiblingOf
+    source: Charlotte_Elizabeth_Diana
+  AddTriple (472ee13d-c8d3-4c2a-8370-e144af8f28f2)
+ Call ID: 472ee13d-c8d3-4c2a-8370-e144af8f28f2
+  Args:
+    source: George
+    relation: :hasFather
+    target: William_Prince_of_Wales
+  AddTriple (47244952-3a41-4731-a14b-ecd9ee29ff28)
+ Call ID: 47244952-3a41-4731-a14b-ecd9ee29ff28
+  Args:
+    source: George
+    relation: :hasMother
+    target: Catherine_Princess_of_Wales
+  AddTriple (42bbd274-b9c2-4bf1-b1de-7de5f23fc3cc)
+ Call ID: 42bbd274-b9c2-4bf1-b1de-7de5f23fc3cc
+  Args:
+    target: William_Prince_of_Wales
+    source: Louis
+    relation: :hasFather
+  AddTriple (64ff1ce2-a7b6-4584-a878-4f2fc1193f25)
+ Call ID: 64ff1ce2-a7b6-4584-a878-4f2fc1193f25
+  Args:
+    source: Louis
+    relation: :hasMother
+    target: Catherine_Princess_of_Wales
+  AddLiteral (498d06ea-58c0-4aa0-9e79-5f2bb3bae094)
+ Call ID: 498d06ea-58c0-4aa0-9e79-5f2bb3bae094
+  Args:
+    relation: :knownAs
+    source: Charlotte_Elizabeth_Diana
+    literal_value: Charlotte Cambridge
+    literal_type: xsd:string
+  Finish (50bf5f26-ada6-47ac-9787-1d4ce9ee4fc6)
+ Call ID: 50bf5f26-ada6-47ac-9787-1d4ce9ee4fc6
   Args:

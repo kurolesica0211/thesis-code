@@ -1,0 +1,94 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Paul_Chavchavadze a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1899 ;
+    :hasBrother data:Prince_Paul_Chavchavadze ;
+    :hasChild data:David_Chavchavadze ;
+    :hasDeathYear 1971 ;
+    :hasRelation data:David_Chavchavadze,
+        data:Paul_George_Olkhovsky,
+        data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia ;
+    :hasSon data:David_Chavchavadze ;
+    :isAncestorOf data:David_Chavchavadze,
+        data:Paul_George_Olkhovsky ;
+    :isBloodrelationOf data:Prince_Paul_Chavchavadze ;
+    :isBrotherOf data:Prince_Paul_Chavchavadze ;
+    :isFatherOf data:David_Chavchavadze ;
+    :isParentOf data:David_Chavchavadze ;
+    :isSiblingOf data:Prince_Paul_Chavchavadze ;
+    :isUncleOf data:David_Chavchavadze .
+
+data:Princess_Nina_Georgievna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1901 ;
+    :hasChild data:David_Chavchavadze ;
+    :hasDeathYear 1974 ;
+    :hasRelation data:David_Chavchavadze,
+        data:Paul_George_Olkhovsky,
+        data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia ;
+    :hasSister data:Princess_Nina_Georgievna_of_Russia ;
+    :hasSon data:David_Chavchavadze ;
+    :isAncestorOf data:David_Chavchavadze,
+        data:Paul_George_Olkhovsky ;
+    :isAuntOf data:David_Chavchavadze ;
+    :isBloodrelationOf data:Princess_Nina_Georgievna_of_Russia ;
+    :isMotherOf data:David_Chavchavadze ;
+    :isParentOf data:David_Chavchavadze ;
+    :isSiblingOf data:Princess_Nina_Georgievna_of_Russia ;
+    :isSisterOf data:Princess_Nina_Georgievna_of_Russia .
+
+data:Paul_George_Olkhovsky a :Man,
+        :Person ;
+    :hasAncestor data:David_Chavchavadze,
+        data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia ;
+    :hasBrother data:Paul_George_Olkhovsky ;
+    :hasFather data:David_Chavchavadze ;
+    :hasParent data:David_Chavchavadze ;
+    :hasRelation data:David_Chavchavadze,
+        data:Paul_George_Olkhovsky,
+        data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia ;
+    :isBloodrelationOf data:Paul_George_Olkhovsky ;
+    :isBrotherOf data:Paul_George_Olkhovsky ;
+    :isChildOf data:David_Chavchavadze ;
+    :isSiblingOf data:Paul_George_Olkhovsky ;
+    :isSonOf data:David_Chavchavadze .
+
+data:David_Chavchavadze a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia ;
+    :hasBirthYear 1924 ;
+    :hasBrother data:David_Chavchavadze ;
+    :hasChild data:Paul_George_Olkhovsky ;
+    :hasDeathYear 2014 ;
+    :hasFather data:Prince_Paul_Chavchavadze ;
+    :hasMother data:Princess_Nina_Georgievna_of_Russia ;
+    :hasParent data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia ;
+    :hasRelation data:David_Chavchavadze,
+        data:Paul_George_Olkhovsky,
+        data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia ;
+    :hasSon data:Paul_George_Olkhovsky ;
+    :isAncestorOf data:Paul_George_Olkhovsky ;
+    :isBloodrelationOf data:David_Chavchavadze ;
+    :isBrotherOf data:David_Chavchavadze ;
+    :isChildOf data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia ;
+    :isFatherOf data:Paul_George_Olkhovsky ;
+    :isParentOf data:Paul_George_Olkhovsky ;
+    :isSiblingOf data:David_Chavchavadze ;
+    :isSonOf data:Prince_Paul_Chavchavadze,
+        data:Princess_Nina_Georgievna_of_Russia ;
+    :isUncleOf data:Paul_George_Olkhovsky .
+

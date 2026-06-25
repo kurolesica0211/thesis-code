@@ -85,78 +85,43 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Frederica of Hanover (German: Friederike Luise;
-Greek: Φρειδερίκη Λουΐζα, romanized: Phreideríkē Louḯza; 18 April 1917 – 6 February 1981) was Queen of Greece from 1 April 1947 until 6 March 1964 as the wife of King Paul and Queen Mother of Greece from 6 March 1964, when her son Constantine II became King, until 8 December 1974, when the monarchy was officially abolished after a referendum.
-Granddaughter of Kaiser Wilhelm II and daughter of Duke Ernest Augustus of Brunswick, Frederica was born a few months before the fall of the German Empire.
-In Florence, she was received by Princess Helen of Greece and Denmark, at whose house she met the Crown Prince of Greece, Paul.
-The two fell in love and married two years after the restoration of the monarchy in Greece.
-In the years that followed, she gave birth to three children, Sophia in 1938, Constantine in 1940 and Irene in 1942.
-During the Second World War, Greece was occupied by the Axis powers.
-The Greek royal family left the country and Frederica and her children settled first in South Africa and from 1943 in Egypt.
-The changing political situation in Greece, with the rise of the EAM and the KKE, challenged the institution of the monarchy.
-In the period of civil war that followed, Frederica developed a strong social activity to support the efforts of the government and the Crown.
-However, according to the prevailing historiographical view, she continued to influence the fate of the country through her son, now King Constantine II.
-Frederica was widely regarded as Constantine's éminence grise and continued to be attacked by the opposition, who blamed her for the tensions between the palace and the government of Georgios Papandreou (1964–1965).
+Leopold IV, Prince of Lippe (Leopold Julius Bernhard Adalbert Otto Karl Gustav; 30 May 1871 – 30 December 1949) was the final sovereign of the Principality of Lippe in northwestern Germany from 1905 until his abdication in 1918.
+He was the first and only ruler of Lippe of the Lippe-Biesterfeld branch.
 Early life
 
-Born Her Royal Highness Friederike Luise, Princess of Hanover, Princess of Great Britain and Ireland, and Princess of Brunswick-Lüneburg on 18 April 1917 in Blankenburg am Harz, in the German Duchy of Brunswick, she was the only daughter and third child of Ernest Augustus, then reigning Duke of Brunswick, and his wife Princess Viktoria Luise of Prussia, herself the only daughter of the German Emperor Wilhelm II.
-In 1933 Frederica joined the Jungmädelbund, the Nazi organisation for girls aged 10–14.
-In 1934, Adolf Hitler, in his ambition to link the British and German royal houses, asked for Frederica's parents to arrange for the marriage of their seventeen-year-old daughter to the Prince of Wales.
-In her memoirs, Frederica's mother described that she and her husband were "shattered" and such a possibility "had never entered our minds".
-Moreover, the age difference was too great (the Prince of Wales was twenty-three years Frederica's senior), and her parents were unwilling to "put any such pressure" on their daughter.
-Marriage
+He was born as Count Leopold of Lippe-Biesterfeld in Oberkassel, the son of Ernest, Count of Lippe-Biesterfeld and Countess Karoline of Wartensleben.
+Leopold belonged to the Lippe-Biesterfeld line of the House of Lippe which was the most senior line of the princely house after the reigning Lippe-Detmold line.
+Ruler of Lippe
 
-Prince Paul of Greece proposed to her during the summer of 1936, while he was in Berlin attending the 1936 Summer Olympics.
-Paul was a son of King Constantine I and Frederica's great aunt Sophia.
-They were also paternal second cousins as great-grandchildren of Christian IX of Denmark.
-Frederica became Hereditary Princess of Greece, her husband being heir presumptive to his childless elder brother, King George II.
-Ten months after their marriage, their first child, the future Queen Sofía of Spain (and future mother of Felipe VI), was born on 2 November 1938.
-On 2 June 1940, Frederica gave birth to the future King Constantine II.
-Frederica and her family were evacuated again, setting up a government-in-exile office in London.
-Here Frederica's last child, Princess Irene, was born on 11 May 1942.
-The Hereditary Prince and Princess returned to their villa in Psychiko.
-Queen consort
+Since 1895, the Principality of Lippe had been ruled by a regent due to the incapacity of Prince Alexander.
+Leopold's father had acted as regent since 1897, and following his death on 26 September 1904, Leopold assumed the regency.
+This was not recognized by the German Emperor Wilhelm II, who initially refused to legally recognize Leopold as regent as there was an issue over whether Leopold and his siblings were of legitimate rank, and as such eligible for the succession.
+As a result, the Diet of Lippe appointed a high commission to consider the matter.
+The regency issue was still ongoing when Prince Alexander died on 13 January 1905.
+Leopold was confirmed as Prince of Lippe and Alexander's successor on 25 October 1905, following a court ruling.
+On 3 June 1911, while out motoring, Leopold and his brother Prince Julius were attacked by a gang of Italian laborers who hurled a shower of missiles at the princes.
+Though Leopold escaped unhurt, his brother received a head wound.
+During World War I, Leopold upgraded the titles of the various lines of the House of Lippe.
+One of the members to benefit from the granting of titles was Leopold's nephew Count Bernhard of Biesterfeld (son of Leopold's brother Bernhard), who would go on to become the Prince Consort of Queen Juliana of the Netherlands.
+On 24 February 1916, Bernhard and his brother were upgraded to the title Prince of Lippe-Biesterfeld with the style Serene Highness.
+The Counts of Lippe-Weissenfeld also benefited with creations of the title Prince of Lippe-Weissenfeld, with the style Serene Highness, taking place on 24 February 1916 for Count Clemens and his descendants, and again on 9 November 1918 for the other members of this line.
+Just three days after upgrading the titles of members of the Lippe-Weissenfeld line, and following the German Empire's defeat in World War I and the subsequent revolution, Leopold was forced to renounce the throne on 12 November 1918.
+Following the end of his rule, the Principality of Lippe was transformed into a Free state in the new Weimar Republic.
+His eldest son the Hereditary Prince Ernst is reported to have been the first German prince to join the party when he signed up in May 1928.
+In addition to being pro Nazi, both Hereditary Prince Ernst and Prince Chlodwig had contracted unequal marriages.
+So in 1947 when Leopold wrote his will, Armin, his youngest son and only child with his second wife, would succeed him as head of the House of Lippe and also become administrator of the princely family's properties such as Schloss Detmold.
+Thus when Leopold died in Detmold his three eldest sons were all disinherited and his youngest son Armin became head of the princely house.
+Marriages and children
 
-On 1 April 1947, George II died and Frederica's husband ascended the throne as Paul I, with Frederica as queen consort.
-A Communist insurgency in Northern Greece led to the Greek Civil War.
-The King and Queen toured Northern Greece under tight security to appeal for loyalty in the summer of 1947.
-Queen Frederica was constantly attacked for her German ancestry.
-Left-wing politicians in Greece repeatedly used the fact that the Kaiser was her grandfather, and that she had brothers who were members of the SS, as propaganda against her.
-When she was in London representing her sick husband at the wedding of his first cousin Prince Philip of Greece and Denmark to King George VI's elder daughter Princess Elizabeth in November 1947, Winston Churchill remarked on the Kaiser being her grandfather.
-Queen Frederica had replied acknowledging the fact, but reminding him that she was also descended from Queen Victoria, and that her father would be the British king if the country had operated under Salic Law (allowing only males to inherit the crown).
-In fact, Frederica held the title Princess of the United Kingdom of Great Britain and Ireland, granted ad personam to the children of the then-Duke of Brunswick by George V's letters patent of 1914, which remained unrevoked.
-During the civil war, Queen Frederica set up the Queen's Camps or Child Cities (translation of: Παιδο(υ)πόλεις / Paidopoleis or Paidupoleis), a network of 53 camps around Greece where she would rescue children of members of the Democratic Army and former partisans.
-The Greek Civil War ended in August 1949.
-The King and Queen took this opportunity to strengthen the monarchy, and paid official visits to Marshal Josip Broz Tito in Belgrade, Presidents Luigi Einaudi of Italy in Rome, Theodor Heuss of West Germany, and Bechara El Khoury of Lebanon, Emperor Haile Selassie I of Ethiopia, Governor-General Chakravarthi Rajagopalachari of India, King George VI of the United Kingdom, and the United States as guest of President Dwight D. Eisenhower.
-However, at home in Greece and abroad in the United Kingdom, Queen Frederica was targeted by the opposition, because as a girl she had belonged to the Bund Deutscher Mädel (League of German Girls), a branch of the Hitler Youth group for young women; her supporters argued that evading membership in the group would be difficult under the existing political climate in Nazi Germany at the time.
-Unlike her meek husband, in post-War Greece Frederica was one of the most hated public figures.
-Frederica has been described as "inherently undemocratic".
-At home in Greece and abroad in the United Kingdom, she was targeted by the opposition.
-Frederica's 16 November 1953 appearance in Life as America's guest was taken on one of the many state visits she paid around the world.
-On 14 May 1962, her eldest daughter Sofía married Prince Juan Carlos of Spain (later King Juan Carlos I of Spain) in Athens.
-Queen dowager
-
-On 6 March 1964, King Paul died of cancer.
-When her son, King Constantine II, married Princess Anne-Marie of Denmark later that year on 18 September, Queen Frederica stepped back from the majority of her public duties in favor of her daughter-in-law.
-However, she continued to attend royal events that were family-oriented, such as the baptisms of her grandchildren in both Spain and Greece.
-Exile
-
- King Constantine II's clashes with the democratically elected Prime Minister George Papandreou Sr. were blamed by critics for causing the destabilisation that led to a military coup on 21 April 1967 and the rise of the regime of the colonels.
-Faced with a difficult situation, King Constantine initially collaborated with the military dictatorship,  swearing in their government under a royalist prime minister.
-In 1971, Frederica published an autobiography, A Measure of Understanding.
-The head of the junta became the new head-of-state as President of Greece George Papadopoulos.
-A plebiscite was held on 8 December 1974 in which Constantine (who was able to campaign only from outside the country) freely admitted past errors, and promised to support democracy.
-However, 69% of Greeks freely voted to make Greece a democratic republic.
-Death
-
-Frederica died on 6 February 1981 in exile in Madrid of heart failure, reportedly following eyelid surgery (blepharoplasty), although a biographer has claimed the surgery was cataract removal.
-She was interred at Tatoi (the royal family's palace and burial ground in Greece).
+Leopold was married to Princess Bertha of Hesse-Philippsthal-Barchfeld (1874–1919) on 16 August 1901 in Rotenburg.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -172,39 +137,9 @@ She was interred at Tatoi (the royal family's palace and burial ground in Greece
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -219,6 +154,23 @@ She was interred at Tatoi (the royal family's palace and burial ground in Greece
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -236,6 +188,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -303,29 +270,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -334,6 +293,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -346,6 +313,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -354,17 +323,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -392,6 +363,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -407,248 +462,195 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9d6fda13-5afa-445a-9dea-bbe05dc026aa)
- Call ID: 9d6fda13-5afa-445a-9dea-bbe05dc026aa
+  AssignClass (b4bc04a9-2665-4a80-8ef7-b3179341e604)
+ Call ID: b4bc04a9-2665-4a80-8ef7-b3179341e604
   Args:
-    type: :Woman
-    source: Frederica_of_Hanover
-  AssignClass (fa1dc246-1a9a-4aaf-8338-ae79606d1976)
- Call ID: fa1dc246-1a9a-4aaf-8338-ae79606d1976
+    type: :Man
+    source: Leopold_IV
+  AssignClass (00b99c45-9816-46b1-840c-fb8c39063954)
+ Call ID: 00b99c45-9816-46b1-840c-fb8c39063954
   Args:
-    source: Frederica_of_Hanover
+    source: Leopold_IV
     type: :Person
-  AssignClass (a4cf27ff-d514-4a9c-a8e1-7977fa620773)
- Call ID: a4cf27ff-d514-4a9c-a8e1-7977fa620773
+  AddLiteral (00ad6aa4-5970-4ded-b64e-86e3a8ffd3e3)
+ Call ID: 00ad6aa4-5970-4ded-b64e-86e3a8ffd3e3
   Args:
-    type: :Ancestor
-    source: Frederica_of_Hanover
-  AddLiteral (f8168785-bc66-4832-9ec9-c923d469d25b)
- Call ID: f8168785-bc66-4832-9ec9-c923d469d25b
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1917
-    source: Frederica_of_Hanover
     relation: :hasBirthYear
-  AddLiteral (b1910b87-5b69-432a-bedf-422e7b33d4b9)
- Call ID: b1910b87-5b69-432a-bedf-422e7b33d4b9
+    source: Leopold_IV
+    literal_value: 1871
+    literal_type: xsd:positiveInteger
+  AddLiteral (5f0f572d-6576-43bf-b5dd-97fa59b537a2)
+ Call ID: 5f0f572d-6576-43bf-b5dd-97fa59b537a2
   Args:
-    literal_type: xsd:integer
-    source: Frederica_of_Hanover
-    literal_value: 1981
     relation: :hasDeathYear
-  AssignClass (27776db7-b39f-4d1c-9fd9-b18eee0187c5)
- Call ID: 27776db7-b39f-4d1c-9fd9-b18eee0187c5
+    literal_type: xsd:positiveInteger
+    literal_value: 1949
+    source: Leopold_IV
+  AssignClass (4dbbe93a-6b6a-41a3-b50c-fb0b019e541f)
+ Call ID: 4dbbe93a-6b6a-41a3-b50c-fb0b019e541f
   Args:
     type: :Man
-    source: Paul_I_of_Greece
-  AssignClass (aa7d73df-f40f-42f6-8bc2-81ca2e93d84d)
- Call ID: aa7d73df-f40f-42f6-8bc2-81ca2e93d84d
+    source: Ernest_Count_of_Lippe-Biesterfeld
+  AssignClass (1c0a2720-dcad-4ace-bb59-90776650eac7)
+ Call ID: 1c0a2720-dcad-4ace-bb59-90776650eac7
   Args:
+    source: Ernest_Count_of_Lippe-Biesterfeld
     type: :Person
-    source: Paul_I_of_Greece
-  AssignClass (4db41f53-4695-4a4b-8fec-6e1308a7bfca)
- Call ID: 4db41f53-4695-4a4b-8fec-6e1308a7bfca
+  AssignClass (e28da090-154f-438b-92b1-dc6851757c30)
+ Call ID: e28da090-154f-438b-92b1-dc6851757c30
   Args:
-    source: Paul_I_of_Greece
-    type: :Ancestor
-  AssignClass (5fdaeb90-314f-4a9b-b9a4-cbbe345df084)
- Call ID: 5fdaeb90-314f-4a9b-b9a4-cbbe345df084
-  Args:
-    type: :Man
-    source: Ernest_Augustus_of_Brunswick
-  AssignClass (fce2a19a-6cbd-49e2-96e0-15093bf9a6b4)
- Call ID: fce2a19a-6cbd-49e2-96e0-15093bf9a6b4
-  Args:
-    type: :Person
-    source: Ernest_Augustus_of_Brunswick
-  AssignClass (8ec54fe2-1d5d-4f63-96c6-ceb6e07e3638)
- Call ID: 8ec54fe2-1d5d-4f63-96c6-ceb6e07e3638
-  Args:
-    source: Ernest_Augustus_of_Brunswick
-    type: :Ancestor
-  AssignClass (befc83c1-3ab8-4d5d-a7d1-18ab6b44f8f1)
- Call ID: befc83c1-3ab8-4d5d-a7d1-18ab6b44f8f1
-  Args:
-    source: Viktoria_Luise_of_Prussia
+    source: Karoline_of_Wartensleben
     type: :Woman
-  AssignClass (5f3b836c-0905-4601-80d8-ae839778e7f8)
- Call ID: 5f3b836c-0905-4601-80d8-ae839778e7f8
+  AssignClass (10193fd5-ecf8-4489-a05c-b1f754c7107a)
+ Call ID: 10193fd5-ecf8-4489-a05c-b1f754c7107a
   Args:
     type: :Person
-    source: Viktoria_Luise_of_Prussia
-  AssignClass (2a9b9179-b231-449e-973f-dbdd73bca79d)
- Call ID: 2a9b9179-b231-449e-973f-dbdd73bca79d
+    source: Karoline_of_Wartensleben
+  AddTriple (82bdb25e-0c98-4d8d-9df3-247767945939)
+ Call ID: 82bdb25e-0c98-4d8d-9df3-247767945939
   Args:
-    type: :Ancestor
-    source: Viktoria_Luise_of_Prussia
-  AddTriple (ea2d1993-84ec-47d4-9050-ff18ac34e7fb)
- Call ID: ea2d1993-84ec-47d4-9050-ff18ac34e7fb
-  Args:
-    source: Frederica_of_Hanover
-    target: Ernest_Augustus_of_Brunswick
+    source: Leopold_IV
+    target: Ernest_Count_of_Lippe-Biesterfeld
     relation: :hasFather
-  AddTriple (e4ce7105-b88b-48b4-a590-b527bb3401b1)
- Call ID: e4ce7105-b88b-48b4-a590-b527bb3401b1
+  AddTriple (a9705323-95c2-47d4-8ff0-57cc812d7121)
+ Call ID: a9705323-95c2-47d4-8ff0-57cc812d7121
   Args:
-    source: Frederica_of_Hanover
+    source: Leopold_IV
+    target: Karoline_of_Wartensleben
     relation: :hasMother
-    target: Viktoria_Luise_of_Prussia
-  AssignClass (5c6a0bac-82f0-427c-9ba7-7ab222edd7b3)
- Call ID: 5c6a0bac-82f0-427c-9ba7-7ab222edd7b3
+  AssignClass (74660654-cc0f-49b8-9904-22d1091378c5)
+ Call ID: 74660654-cc0f-49b8-9904-22d1091378c5
   Args:
-    source: Sophia_of_Greece_and_Denmark
-    type: :Woman
-  AssignClass (c8f80c48-c0a1-4457-8658-00fed21a813e)
- Call ID: c8f80c48-c0a1-4457-8658-00fed21a813e
+    source: Prince_Julius
+    type: :Man
+  AssignClass (e011747d-35ce-4ee0-a045-d64e2b575881)
+ Call ID: e011747d-35ce-4ee0-a045-d64e2b575881
   Args:
-    source: Sophia_of_Greece_and_Denmark
+    source: Prince_Julius
     type: :Person
-  AssignClass (7ef83794-eff6-4230-ba75-8cd225f00291)
- Call ID: 7ef83794-eff6-4230-ba75-8cd225f00291
+  AddTriple (a3026796-0850-4198-98f7-3b11a0263a49)
+ Call ID: a3026796-0850-4198-98f7-3b11a0263a49
+  Args:
+    relation: :hasBrother
+    target: Prince_Julius
+    source: Leopold_IV
+  AssignClass (6cec67c5-ebef-4595-b100-42621e6d5dc3)
+ Call ID: 6cec67c5-ebef-4595-b100-42621e6d5dc3
   Args:
     type: :Man
-    source: Constantine_II_of_Greece
-  AssignClass (9925ffd7-cf04-4f54-a1a4-818466f0fbbb)
- Call ID: 9925ffd7-cf04-4f54-a1a4-818466f0fbbb
-  Args:
-    source: Constantine_II_of_Greece
-    type: :Person
-  AssignClass (9d6b0472-7e8d-4c0b-9413-be315f8866e2)
- Call ID: 9d6b0472-7e8d-4c0b-9413-be315f8866e2
-  Args:
-    type: :Woman
-    source: Irene_of_Greece_and_Denmark
-  AssignClass (bd45044b-09dc-4bf1-bd9a-afc2d0506bb1)
- Call ID: bd45044b-09dc-4bf1-bd9a-afc2d0506bb1
+    source: Bernhard_of_Biesterfeld_brother_of_Leopold
+  AssignClass (af248c2a-40e9-4e8b-873a-538679672a2d)
+ Call ID: af248c2a-40e9-4e8b-873a-538679672a2d
   Args:
     type: :Person
-    source: Irene_of_Greece_and_Denmark
-  AddTriple (65ab5d4e-303b-41e7-b477-c9784ecb4996)
- Call ID: 65ab5d4e-303b-41e7-b477-c9784ecb4996
+    source: Bernhard_of_Biesterfeld_brother_of_Leopold
+  AddTriple (d1bf49e6-10e9-4f1b-b2f6-0d5bde2263cb)
+ Call ID: d1bf49e6-10e9-4f1b-b2f6-0d5bde2263cb
   Args:
-    relation: :isDaughterOf
-    target: Frederica_of_Hanover
-    source: Sophia_of_Greece_and_Denmark
-  AddTriple (37a6395c-017e-45f8-8c8a-a21ce2abbcee)
- Call ID: 37a6395c-017e-45f8-8c8a-a21ce2abbcee
+    relation: :hasBrother
+    target: Bernhard_of_Biesterfeld_brother_of_Leopold
+    source: Leopold_IV
+  AssignClass (b92b30aa-54ba-4ad4-8cfd-64dfb98551bb)
+ Call ID: b92b30aa-54ba-4ad4-8cfd-64dfb98551bb
   Args:
-    target: Frederica_of_Hanover
-    relation: :isSonOf
-    source: Constantine_II_of_Greece
-  AddTriple (c96910b3-0e4e-44c7-9d75-80f873a250c3)
- Call ID: c96910b3-0e4e-44c7-9d75-80f873a250c3
-  Args:
-    source: Irene_of_Greece_and_Denmark
-    target: Frederica_of_Hanover
-    relation: :isDaughterOf
-  AddTriple (4b34799d-ba19-463e-a998-69b2de4d22ae)
- Call ID: 4b34799d-ba19-463e-a998-69b2de4d22ae
-  Args:
-    source: Sophia_of_Greece_and_Denmark
-    relation: :isDaughterOf
-    target: Paul_I_of_Greece
-  AddTriple (8ead2c32-0315-4587-a54e-92a383b061c5)
- Call ID: 8ead2c32-0315-4587-a54e-92a383b061c5
-  Args:
-    source: Constantine_II_of_Greece
-    relation: :isSonOf
-    target: Paul_I_of_Greece
-  AddTriple (fc8fefea-7e52-4508-9805-4ce12db299e4)
- Call ID: fc8fefea-7e52-4508-9805-4ce12db299e4
-  Args:
-    source: Irene_of_Greece_and_Denmark
-    target: Paul_I_of_Greece
-    relation: :isDaughterOf
-  AssignClass (29b71e8b-9f1c-4b65-b130-85a745990e9c)
- Call ID: 29b71e8b-9f1c-4b65-b130-85a745990e9c
-  Args:
+    source: Count_Bernhard_of_Biesterfeld_nephew
     type: :Man
-    source: Wilhelm_II_German_Emperor
-  AssignClass (d7a403d8-29af-4b83-8f7d-179add340f72)
- Call ID: d7a403d8-29af-4b83-8f7d-179add340f72
+  AssignClass (9a69c523-ebb8-4c35-96a5-604a4a7d77f8)
+ Call ID: 9a69c523-ebb8-4c35-96a5-604a4a7d77f8
   Args:
+    source: Count_Bernhard_of_Biesterfeld_nephew
     type: :Person
-    source: Wilhelm_II_German_Emperor
-  AssignClass (93141d79-5038-4514-87f8-e02e43f82ad2)
- Call ID: 93141d79-5038-4514-87f8-e02e43f82ad2
+  AddTriple (578e34fb-1930-4cba-9964-667c8934e2aa)
+ Call ID: 578e34fb-1930-4cba-9964-667c8934e2aa
   Args:
-    type: :Ancestor
-    source: Wilhelm_II_German_Emperor
-  AddTriple (341a4a06-993d-48b1-a151-84f8a84fbb01)
- Call ID: 341a4a06-993d-48b1-a151-84f8a84fbb01
-  Args:
-    source: Viktoria_Luise_of_Prussia
     relation: :hasFather
-    target: Wilhelm_II_German_Emperor
-  AssignClass (94fe7258-ddd1-4b50-87d1-3226753d1996)
- Call ID: 94fe7258-ddd1-4b50-87d1-3226753d1996
+    target: Bernhard_of_Biesterfeld_brother_of_Leopold
+    source: Count_Bernhard_of_Biesterfeld_nephew
+  AssignClass (c755b627-0352-4f08-909c-10e63bd21bd9)
+ Call ID: c755b627-0352-4f08-909c-10e63bd21bd9
   Args:
-    source: Constantine_I_of_Greece
     type: :Man
-  AssignClass (9592a18a-84c9-44a1-a0ac-7410a3173859)
- Call ID: 9592a18a-84c9-44a1-a0ac-7410a3173859
+    source: Ernst_Hereditary_Prince
+  AssignClass (07c4ce80-0e8d-4c11-b1d1-b8d499ff47eb)
+ Call ID: 07c4ce80-0e8d-4c11-b1d1-b8d499ff47eb
+  Args:
+    source: Ernst_Hereditary_Prince
+    type: :Person
+  AddTriple (12c7600f-f6e7-473f-89c7-25a9a28ff48a)
+ Call ID: 12c7600f-f6e7-473f-89c7-25a9a28ff48a
+  Args:
+    relation: :hasSon
+    target: Ernst_Hereditary_Prince
+    source: Leopold_IV
+  AssignClass (e132ae90-7a8f-4b84-870a-8ee808732d42)
+ Call ID: e132ae90-7a8f-4b84-870a-8ee808732d42
+  Args:
+    source: Prince_Chlodwig
+    type: :Man
+  AssignClass (93ededd0-c725-4bfc-ac6e-cdf032b71643)
+ Call ID: 93ededd0-c725-4bfc-ac6e-cdf032b71643
   Args:
     type: :Person
-    source: Constantine_I_of_Greece
-  AssignClass (5ceb738b-e304-478b-be89-8c40e7629e35)
- Call ID: 5ceb738b-e304-478b-be89-8c40e7629e35
+    source: Prince_Chlodwig
+  AddTriple (ca879378-c06c-48ee-8b4f-6ba6adadb63d)
+ Call ID: ca879378-c06c-48ee-8b4f-6ba6adadb63d
   Args:
-    source: Constantine_I_of_Greece
-    type: :Ancestor
-  AssignClass (d428f33c-c434-4018-b9c9-d5e034522bfd)
- Call ID: d428f33c-c434-4018-b9c9-d5e034522bfd
+    source: Leopold_IV
+    target: Prince_Chlodwig
+    relation: :hasSon
+  AssignClass (a72024f0-be1f-42b2-8c7d-212b893498bd)
+ Call ID: a72024f0-be1f-42b2-8c7d-212b893498bd
   Args:
+    type: :Man
+    source: Armin
+  AssignClass (d00aa834-56e6-40f6-acfe-6dc3fcc9a2d2)
+ Call ID: d00aa834-56e6-40f6-acfe-6dc3fcc9a2d2
+  Args:
+    type: :Person
+    source: Armin
+  AddTriple (a45a51db-25bc-4bf6-8bdf-ba958c4edeb2)
+ Call ID: a45a51db-25bc-4bf6-8bdf-ba958c4edeb2
+  Args:
+    source: Leopold_IV
+    relation: :hasSon
+    target: Armin
+  AssignClass (502fb927-f60f-4a15-8f51-f8df1beb7711)
+ Call ID: 502fb927-f60f-4a15-8f51-f8df1beb7711
+  Args:
+    source: Princess_Bertha_of_Hesse-Philippsthal-Barchfeld
     type: :Woman
-    source: Sophia_of_Prussia_Queen_of_Greece
-  AssignClass (5d8107b0-408f-4674-af92-bf1c9a047801)
- Call ID: 5d8107b0-408f-4674-af92-bf1c9a047801
+  AssignClass (970530b1-bdec-4c88-acbf-f00a0036f6ec)
+ Call ID: 970530b1-bdec-4c88-acbf-f00a0036f6ec
   Args:
     type: :Person
-    source: Sophia_of_Prussia_Queen_of_Greece
-  AssignClass (381581a1-729f-4e4f-b08f-b9d878d7d1eb)
- Call ID: 381581a1-729f-4e4f-b08f-b9d878d7d1eb
+    source: Princess_Bertha_of_Hesse-Philippsthal-Barchfeld
+  AddTriple (a45c787b-6f97-4618-9660-be2e7298f5cd)
+ Call ID: a45c787b-6f97-4618-9660-be2e7298f5cd
   Args:
-    source: Sophia_of_Prussia_Queen_of_Greece
-    type: :Ancestor
-  AddTriple (1986bc5e-7a31-40c2-a8a0-761b64098627)
- Call ID: 1986bc5e-7a31-40c2-a8a0-761b64098627
+    source: Leopold_IV
+    target: Princess_Bertha_of_Hesse-Philippsthal-Barchfeld
+    relation: :hasRelation
+  AddLiteral (2afebae9-f64e-4e7f-8415-3cae218a1290)
+ Call ID: 2afebae9-f64e-4e7f-8415-3cae218a1290
   Args:
-    source: Paul_I_of_Greece
-    target: Constantine_I_of_Greece
-    relation: :hasFather
-  AddTriple (c0aff1fc-0c97-4c4d-8bd0-fcb0597adf40)
- Call ID: c0aff1fc-0c97-4c4d-8bd0-fcb0597adf40
+    relation: :hasMarriageYear
+    literal_type: xsd:positiveInteger
+    source: Leopold_IV
+    literal_value: 1901
+  AddLiteral (9c75cf1d-4455-4423-8128-2277996e32e6)
+ Call ID: 9c75cf1d-4455-4423-8128-2277996e32e6
   Args:
-    target: Sophia_of_Prussia_Queen_of_Greece
-    relation: :hasMother
-    source: Paul_I_of_Greece
-  Finish (dc445db8-27ef-4670-8897-75a2b3b13f29)
- Call ID: dc445db8-27ef-4670-8897-75a2b3b13f29
+    relation: :hasBirthYear
+    literal_type: xsd:positiveInteger
+    literal_value: 1874
+    source: Princess_Bertha_of_Hesse-Philippsthal-Barchfeld
+  AddLiteral (049e27e6-0665-4165-a0ef-c19d85cfc662)
+ Call ID: 049e27e6-0665-4165-a0ef-c19d85cfc662
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Princess_Bertha_of_Hesse-Philippsthal-Barchfeld
+    literal_value: 1919
+    literal_type: xsd:positiveInteger
+    relation: :hasDeathYear
 
 ================================= Tool Message =================================
 
@@ -789,68 +791,230 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Constantine_II_of_Greece a :Man,
+  data:Count_Bernhard_of_Biesterfeld_nephew a :Man,
           :Person ;
-      :isSonOf data:Frederica_of_Hanover,
-          data:Paul_I_of_Greece .
+      :hasFather data:Bernhard_of_Biesterfeld_brother_of_Leopold .
 
-  data:Irene_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :isDaughterOf data:Frederica_of_Hanover,
-          data:Paul_I_of_Greece .
+  data:Leopold_IV a :Man,
+          :Person ;
+      :hasBirthYear "1871"^^xsd:positiveInteger ;
+      :hasBrother data:Bernhard_of_Biesterfeld_brother_of_Leopold,
+          data:Prince_Julius ;
+      :hasDeathYear "1949"^^xsd:positiveInteger ;
+      :hasFather data:Ernest_Count_of_Lippe-Biesterfeld ;
+      :hasMarriageYear "1901"^^xsd:positiveInteger ;
+      :hasMother data:Karoline_of_Wartensleben ;
+      :hasRelation data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;
+      :hasSon data:Armin,
+          data:Ernst_Hereditary_Prince,
+          data:Prince_Chlodwig .
 
-  data:Sophia_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :isDaughterOf data:Frederica_of_Hanover,
-          data:Paul_I_of_Greece .
-
-  data:Constantine_I_of_Greece a :Ancestor,
-          :Man,
+  data:Armin a :Man,
           :Person .
 
-  data:Ernest_Augustus_of_Brunswick a :Ancestor,
-          :Man,
+  data:Ernest_Count_of_Lippe-Biesterfeld a :Man,
           :Person .
 
-  data:Sophia_of_Prussia_Queen_of_Greece a :Ancestor,
-          :Person,
+  data:Ernst_Hereditary_Prince a :Man,
+          :Person .
+
+  data:Karoline_of_Wartensleben a :Person,
           :Woman .
 
-  data:Viktoria_Luise_of_Prussia a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Wilhelm_II_German_Emperor .
-
-  data:Wilhelm_II_German_Emperor a :Ancestor,
-          :Man,
+  data:Prince_Chlodwig a :Man,
           :Person .
 
-  data:Frederica_of_Hanover a :Ancestor,
-          :Person,
+  data:Prince_Julius a :Man,
+          :Person .
+
+  data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld a :Person,
           :Woman ;
-      :hasBirthYear 1917 ;
-      :hasDeathYear 1981 ;
-      :hasFather data:Ernest_Augustus_of_Brunswick ;
-      :hasMother data:Viktoria_Luise_of_Prussia .
+      :hasBirthYear "1874"^^xsd:positiveInteger ;
+      :hasDeathYear "1919"^^xsd:positiveInteger .
 
-  data:Paul_I_of_Greece a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Constantine_I_of_Greece ;
-      :hasMother data:Sophia_of_Prussia_Queen_of_Greece .
+  data:Bernhard_of_Biesterfeld_brother_of_Leopold a :Man,
+          :Person .
 
 
-
-================================= Tool Message =================================
-
-You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (0ce64642-0799-45de-bcbf-f8d3efd6a559)
- Call ID: 0ce64642-0799-45de-bcbf-f8d3efd6a559
+  ValidateShacl (bb859c2e-4289-41e2-a41d-1d8c6411b2e7)
+ Call ID: bb859c2e-4289-41e2-a41d-1d8c6411b2e7
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:9
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Bernhard_of_Biesterfeld_brother_of_Leopold' assigned as the father of 'Count_Bernhard_of_Biesterfeld_nephew' does not have the required class ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Bernhard_of_Biesterfeld_brother_of_Leopold', class=':Ancestor')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Ernest_Count_of_Lippe-Biesterfeld' assigned as the father of 'Leopold_IV' does not have the required class ':Ancestor' or ':Man'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Ernest_Count_of_Lippe-Biesterfeld', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Karoline_of_Wartensleben' assigned as the mother of 'Leopold_IV' does not have the required class ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Karoline_of_Wartensleben', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Bernhard_of_Biesterfeld_brother_of_Leopold' assigned as the father of 'Count_Bernhard_of_Biesterfeld_nephew' is missing the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Bernhard_of_Biesterfeld_brother_of_Leopold', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Ernest_Count_of_Lippe-Biesterfeld' assigned as the father of 'Leopold_IV' is missing the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Ernest_Count_of_Lippe-Biesterfeld', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Karoline_of_Wartensleben' assigned as the mother of 'Leopold_IV' is missing the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Karoline_of_Wartensleben', class=':Ancestor')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Bernhard_of_Biesterfeld_brother_of_Leopold' assigned as the father of 'Count_Bernhard_of_Biesterfeld_nephew' is missing the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Bernhard_of_Biesterfeld_brother_of_Leopold', class=':Ancestor')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Ernest_Count_of_Lippe-Biesterfeld' assigned as the father of 'Leopold_IV' is missing the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Ernest_Count_of_Lippe-Biesterfeld', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Karoline_of_Wartensleben' assigned as the mother of 'Leopold_IV' is missing the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Karoline_of_Wartensleben', class=':Ancestor')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (29e60ba5-6a13-43df-8141-57dfe7ecca5c)
+ Call ID: 29e60ba5-6a13-43df-8141-57dfe7ecca5c
+  Args:
+    source: Bernhard_of_Biesterfeld_brother_of_Leopold
+    type: :Ancestor
+  AssignClass (663356a6-2f5b-4ca8-b2b7-71d31a6e945a)
+ Call ID: 663356a6-2f5b-4ca8-b2b7-71d31a6e945a
+  Args:
+    source: Ernest_Count_of_Lippe-Biesterfeld
+    type: :Ancestor
+  AssignClass (333a3380-430d-4cae-beff-5f183ce82faf)
+ Call ID: 333a3380-430d-4cae-beff-5f183ce82faf
+  Args:
+    source: Karoline_of_Wartensleben
+    type: :Ancestor
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Count_Bernhard_of_Biesterfeld_nephew a :Man,
+          :Person ;
+      :hasFather data:Bernhard_of_Biesterfeld_brother_of_Leopold .
+
+  data:Leopold_IV a :Man,
+          :Person ;
+      :hasBirthYear "1871"^^xsd:positiveInteger ;
+      :hasBrother data:Bernhard_of_Biesterfeld_brother_of_Leopold,
+          data:Prince_Julius ;
+      :hasDeathYear "1949"^^xsd:positiveInteger ;
+      :hasFather data:Ernest_Count_of_Lippe-Biesterfeld ;
+      :hasMarriageYear "1901"^^xsd:positiveInteger ;
+      :hasMother data:Karoline_of_Wartensleben ;
+      :hasRelation data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld ;
+      :hasSon data:Armin,
+          data:Ernst_Hereditary_Prince,
+          data:Prince_Chlodwig .
+
+  data:Armin a :Man,
+          :Person .
+
+  data:Ernest_Count_of_Lippe-Biesterfeld a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Ernst_Hereditary_Prince a :Man,
+          :Person .
+
+  data:Karoline_of_Wartensleben a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Prince_Chlodwig a :Man,
+          :Person .
+
+  data:Prince_Julius a :Man,
+          :Person .
+
+  data:Princess_Bertha_of_Hesse-Philippsthal-Barchfeld a :Person,
+          :Woman ;
+      :hasBirthYear "1874"^^xsd:positiveInteger ;
+      :hasDeathYear "1919"^^xsd:positiveInteger .
+
+  data:Bernhard_of_Biesterfeld_brother_of_Leopold a :Ancestor,
+          :Man,
+          :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (cfecaa9e-4a00-4774-af2d-4296340497e9)
+ Call ID: cfecaa9e-4a00-4774-af2d-4296340497e9
   Args:
 
 ================================= Tool Message =================================
@@ -861,6 +1025,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (36a7c34c-baa5-45db-ba06-381d4c03405f)
- Call ID: 36a7c34c-baa5-45db-ba06-381d4c03405f
+  Finish (ce6fde2e-531d-4bc9-803c-f023fa6d199d)
+ Call ID: ce6fde2e-531d-4bc9-803c-f023fa6d199d
   Args:

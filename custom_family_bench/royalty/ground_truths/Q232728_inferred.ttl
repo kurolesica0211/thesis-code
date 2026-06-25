@@ -1,0 +1,193 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Alexander_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Alexander of Greece"^^xsd:string ;
+    data:posIndicesFull "687:706"^^xsd:string,
+        "9:28"^^xsd:string ;
+    data:posIndicesPart "2331:2340"^^xsd:string,
+        "2462:2468"^^xsd:string,
+        "3293:3299"^^xsd:string ;
+    data:wdtLink wdt:Q151742 ;
+    :alsoKnownAs "Alexander I of Greece"^^xsd:string,
+        "King Alexander I of Greece"^^xsd:string,
+        "King Alexander of Greece"^^xsd:string ;
+    :hasBrother data:Alexander_of_Greece ;
+    :hasRelation data:Alexander_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Alexander_of_Greece ;
+    :isBrotherOf data:Alexander_of_Greece ;
+    :isSiblingOf data:Alexander_of_Greece .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    rdfs:label "George II of Greece"^^xsd:string ;
+    data:posIndicesFull "3152:3171"^^xsd:string ;
+    data:wdtLink wdt:Q152935 ;
+    :alsoKnownAs "King George II of Greece"^^xsd:string ;
+    :hasBrother data:George_II_of_Greece ;
+    :hasRelation data:George_II_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_II_of_Greece ;
+    :isBrotherOf data:George_II_of_Greece ;
+    :isSiblingOf data:George_II_of_Greece .
+
+data:Grand_Duke_Paul_Alexandrovich_of_Russia a :Man,
+        :Person ;
+    rdfs:label "Grand Duke Paul Alexandrovich of Russia"^^xsd:string ;
+    data:posIndicesFull "2203:2242"^^xsd:string,
+        "442:481"^^xsd:string ;
+    data:posIndicesPart "2429:2434"^^xsd:string,
+        "2435:2439"^^xsd:string,
+        "2440:2444"^^xsd:string,
+        "2603:2609"^^xsd:string,
+        "2860:2865"^^xsd:string,
+        "2902:2906"^^xsd:string,
+        "3388:3392"^^xsd:string,
+        "3538:3542"^^xsd:string,
+        "580:585"^^xsd:string,
+        "625:630"^^xsd:string,
+        "631:635"^^xsd:string,
+        "917:922"^^xsd:string ;
+    data:wdtLink wdt:Q372964 ;
+    :hasBrother data:Grand_Duke_Paul_Alexandrovich_of_Russia ;
+    :hasRelation data:Grand_Duke_Paul_Alexandrovich_of_Russia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Grand_Duke_Paul_Alexandrovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Paul_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Paul_Alexandrovich_of_Russia .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "1058:1065"^^xsd:string,
+        "344:352"^^xsd:string,
+        "344:362"^^xsd:string,
+        "879:902"^^xsd:string,
+        "884:892"^^xsd:string,
+        "884:902"^^xsd:string ;
+    data:posIndicesPart "1251:1257"^^xsd:string,
+        "1360:1366"^^xsd:string,
+        "2462:2468"^^xsd:string,
+        "3293:3299"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasRelation data:George_I_of_Greece,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Princess_Alexandra_of_Greece_and_Denmark .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Olga Constantinovna of Russia"^^xsd:string ;
+    data:posIndicesFull "367:396"^^xsd:string,
+        "931:960"^^xsd:string ;
+    data:posIndicesPart "2603:2609"^^xsd:string,
+        "2977:2981"^^xsd:string ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece"^^xsd:string,
+        "Queen Olga of Greece"^^xsd:string ;
+    :hasChild data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasRelation data:Olga_Constantinovna_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :isAncestorOf data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Princess_Alexandra_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Alexandra of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "0:40"^^xsd:string,
+        "112:142"^^xsd:string,
+        "678:718"^^xsd:string,
+        "687:718"^^xsd:string,
+        "9:40"^^xsd:string ;
+    data:posIndicesPart "1142:1149"^^xsd:string,
+        "1313:1322"^^xsd:string,
+        "1543:1552"^^xsd:string,
+        "1654:1663"^^xsd:string,
+        "1765:1774"^^xsd:string,
+        "1776:1784"^^xsd:string,
+        "1857:1866"^^xsd:string,
+        "1952:1961"^^xsd:string,
+        "1985:1992"^^xsd:string,
+        "2032:2039"^^xsd:string,
+        "2041:2050"^^xsd:string,
+        "2364:2372"^^xsd:string,
+        "2462:2468"^^xsd:string,
+        "2613:2620"^^xsd:string,
+        "2694:2703"^^xsd:string,
+        "2993:3002"^^xsd:string,
+        "3082:3091"^^xsd:string,
+        "314:323"^^xsd:string,
+        "3271:3279"^^xsd:string,
+        "3280:3289"^^xsd:string,
+        "3293:3299"^^xsd:string,
+        "3301:3310"^^xsd:string,
+        "3409:3418"^^xsd:string,
+        "3445:3454"^^xsd:string,
+        "962:971"^^xsd:string ;
+    data:wdtLink wdt:Q232728 ;
+    :alsoKnownAs "Alexandra Georgievna of Russia"^^xsd:string,
+        "Alexandra of Greece and Denmark"^^xsd:string,
+        "Grand Duchess Alexandra Georgievna, Grand Duchess Pavlovna of Russia"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isDaughterOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Princess_Alexandra_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Alexandra_of_Greece_and_Denmark .
+

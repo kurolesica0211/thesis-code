@@ -69,36 +69,40 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lord Leopold Arthur Louis Mountbatten (21 May 1889 – 23 April 1922) was a British Army officer and a descendant of the Hessian princely Battenberg family and the British royal family.
-A grandson of Queen Victoria, he was known as Prince Leopold of Battenberg from his birth until 1917, when the British royal family relinquished their German titles during World War I, and the Battenberg family changed their name to Mountbatten.
-Early life
+Prince Alexander Ferdinand Albrecht Achilles Wilhelm Joseph Viktor Karl Feodor of Prussia (26 December 1912 – 12 June 1985) was the only son of Prince August Wilhelm of Prussia and Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg.
+Family and early life
 
-Leopold was born on 21 May 1889.
-His father was Prince Henry of Battenberg, the son of Prince Alexander of Hesse and by Rhine and Julia, Princess of Battenberg.
-His mother was Princess Beatrice of the United Kingdom, the fifth daughter and the youngest child of Queen Victoria and Prince Albert.
-As he was the product of a morganatic marriage, Prince Henry of Battenberg took his style of Prince of Battenberg from his mother, Julia von Hauke, who was created Princess of Battenberg in her own right.
-As such, Leopold was styled as His Serene Highness Prince Leopold of Battenberg from birth.
-In the United Kingdom, he was styled His Highness Prince Leopold of Battenberg under a royal warrant passed by Queen Victoria in 1886.
-His godparents were Leopold II of Belgium (his first cousin twice removed, represented by the Prince of Wales, his maternal uncle), the Duke of Connaught and Strathearn (his maternal uncle, represented by Prince Albert of Schleswig-Holstein, his first cousin), Prince Louis of Battenberg (his paternal uncle, represented by the Marquess of Lorne, his maternal uncle), the Marchioness of Lorne (his maternal aunt), the Duchess of Albany (his maternal aunt) and Princess Marie of Erbach-Schönberg (his paternal aunt).
-Leopold was a haemophiliac, a condition he inherited through his mother.
-His namesake maternal uncle, Prince Leopold, Duke of Albany, had died from the same condition.
-Military career
+Prince Alexander of Prussia was born on 26 December 1912 to Prince August Wilhelm of Prussia and his wife Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg.
+August Wilhelm was a younger son of Kaiser Wilhelm II.
+His parents divorced in 1920 and his mother remarried less than two years later; custody of the young prince was awarded to Alexander's father.
+Alexander attended the 1932 wedding of the Swedish prince Gustaf Adolf, Duke of Västerbotten with Princess Sibylla of Saxe-Coburg-Gotha in the former duchy of Coburg; it was the first time that a member of the German imperial family had entered the duchy since it became a republic, or specifically a part of Bavaria in November 1919 after the ruling duke, Carl Eduard, had ended his reign on 14 November 1918.
+Nazi Party and military career
 
-Leopold was commissioned a lieutenant (supernumerary) on 16 October 1909 in the 8th Battalion of the Isle of Wight Rifles, a Territorial Force unit.
-Relinquishment of titles
+As of November 1939, Prince Alexander was a first lieutenant in the Air Force Signal Corps, stationed in Wiesbaden.
+Like his father, who became a prominent supporter of the Nazi Party, Alexander became an early supporter.
+Prince August had secret hopes that Chancellor Adolf Hitler "would one day hoist him or his son Alexander up to the vacant throne of the Kaiser".
+The support that father and son gave to the emerging party caused strong disagreements among the Hohenzollerns, with Wilhelm II urging them both to leave the party.
+In 1933, Alexander quit the SA and became a private in the German regular army.
+Unlike many other German princes, who became the targets of Hitler's mistrust and were removed from their commands in the military, Alexander was the only Hohenzollern allowed to remain at his post.
+Marriage
 
-During the First World War, anti-German feeling in the United Kingdom led Leopold's first cousin, George V to change the name of the royal house from the Germanic House of Saxe-Coburg and Gotha to the more English-sounding House of Windsor.
-In response to this, Leopold renounced his title of Prince, the style His Highness and the designation 'of Battenberg' through a royal warrant from the King dated 14 July 1917, and became Sir Leopold Mountbatten by virtue of his being a Knight Grand Cross of the Royal Victorian Order.
-Under a further warrant of 11 September 1917 he was granted the style and precedence of the younger son of a marquess, and became Lord Leopold Mountbatten.
+On 19 December 1938 in the Dresden garrison church, Alexander non-dynastically married Armgard Weygand (22 August 1912 – 3 December 2001), daughter of Major Friedrich Weygand and Karla Franziska Oheim.
+She was married from 1928 to 1933 to Werner Rosendorff, airman in the German Air Force, and was originally from Wiesbaden, where Alexander Ferdinand was stationed.
+They had one son:
+
+
 Death
 
-Lord Leopold died on 23 April 1922(1922-04-23) (aged 32), during a hip operation.
+Prince Alexander Ferdinand died on 12 June 1985 at Wiesbaden.
+}} Media related to Prince Alexander Ferdinand of Prussia at Wikimedia Commons
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -114,39 +118,9 @@ Lord Leopold died on 23 April 1922(1922-04-23) (aged 32), during a hip operation
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -161,6 +135,23 @@ Lord Leopold died on 23 April 1922(1922-04-23) (aged 32), during a hip operation
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -178,6 +169,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -245,29 +251,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -276,6 +274,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -288,6 +294,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -296,17 +304,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -334,6 +344,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -349,147 +443,149 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (78c23047-8416-43eb-bad0-48826078f101)
- Call ID: 78c23047-8416-43eb-bad0-48826078f101
+  AssignClass (6a470fce-4e40-40de-8826-49db3195b444)
+ Call ID: 6a470fce-4e40-40de-8826-49db3195b444
   Args:
+    source: Prince Alexander Ferdinand of Prussia
     type: :Man
-    source: :LeopoldMountbatten
-  AssignClass (1d825155-619f-48d6-ae96-92a099488845)
- Call ID: 1d825155-619f-48d6-ae96-92a099488845
+  AssignClass (e8f0c1c9-757e-4068-9120-e46c7066bd7f)
+ Call ID: e8f0c1c9-757e-4068-9120-e46c7066bd7f
   Args:
+    source: Prince Alexander Ferdinand of Prussia
     type: :Person
-    source: :LeopoldMountbatten
-  AddLiteral (ecf0e940-1cff-4094-bfa9-062cec12111c)
- Call ID: ecf0e940-1cff-4094-bfa9-062cec12111c
+  AddLiteral (69131035-3d37-49bd-b9ae-a4bd1b357399)
+ Call ID: 69131035-3d37-49bd-b9ae-a4bd1b357399
   Args:
-    literal_value: 1889
-    source: :LeopoldMountbatten
-    literal_type: xsd:integer
+    literal_value: 1912
+    source: Prince Alexander Ferdinand of Prussia
     relation: :hasBirthYear
-  AddLiteral (0b1126f3-2b11-44e9-940f-65e2fbf5efed)
- Call ID: 0b1126f3-2b11-44e9-940f-65e2fbf5efed
-  Args:
-    source: :LeopoldMountbatten
-    literal_value: 1922
-    relation: :hasDeathYear
     literal_type: xsd:integer
-  AddLiteral (e4d7f0ee-d36b-41b6-b909-ce44ec052fbb)
- Call ID: e4d7f0ee-d36b-41b6-b909-ce44ec052fbb
+  AddLiteral (5f6d4f0c-1101-421f-b201-469850c441bc)
+ Call ID: 5f6d4f0c-1101-421f-b201-469850c441bc
   Args:
-    source: :LeopoldMountbatten
-    literal_value: Prince Leopold of Battenberg
-    relation: :formerlyKnownAs
-    literal_type: xsd:string
-  AddLiteral (572c3794-45be-4981-a09c-53c6dd29e840)
- Call ID: 572c3794-45be-4981-a09c-53c6dd29e840
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Prince Alexander Ferdinand of Prussia
+    literal_value: 1985
+  AssignClass (172b68b4-7966-4fb6-bc03-a75c8ad7ef6a)
+ Call ID: 172b68b4-7966-4fb6-bc03-a75c8ad7ef6a
   Args:
-    source: :LeopoldMountbatten
-    literal_value: Sir Leopold Mountbatten
-    relation: :alsoKnownAs
-    literal_type: xsd:string
-  AddLiteral (5a7f2de1-8395-4418-96b0-4d396bc51b1d)
- Call ID: 5a7f2de1-8395-4418-96b0-4d396bc51b1d
-  Args:
-    literal_type: xsd:string
-    relation: :knownAs
-    literal_value: Lord Leopold Mountbatten
-    source: :LeopoldMountbatten
-  AssignClass (9c6c46d0-6a56-4d28-9f66-6ef66fd96fd0)
- Call ID: 9c6c46d0-6a56-4d28-9f66-6ef66fd96fd0
-  Args:
+    source: Prince August Wilhelm of Prussia
     type: :Man
-    source: :PrinceHenryOfBattenberg
-  AssignClass (533b4ff8-dfb4-453c-82fc-f128c5070bb5)
- Call ID: 533b4ff8-dfb4-453c-82fc-f128c5070bb5
+  AssignClass (f04ce3a1-cdb3-425c-8dbc-c6d8806d19dc)
+ Call ID: f04ce3a1-cdb3-425c-8dbc-c6d8806d19dc
   Args:
     type: :Person
-    source: :PrinceHenryOfBattenberg
-  AddTriple (15790479-832a-4d08-9b68-7deba24e3f47)
- Call ID: 15790479-832a-4d08-9b68-7deba24e3f47
-  Args:
-    source: :LeopoldMountbatten
-    relation: :hasFather
-    target: :PrinceHenryOfBattenberg
-  AssignClass (cfe6afad-8e77-4f42-b19e-9b7636ce87f5)
- Call ID: cfe6afad-8e77-4f42-b19e-9b7636ce87f5
+    source: Prince August Wilhelm of Prussia
+  AssignClass (f99f3841-c486-4681-993d-2d3917b61d90)
+ Call ID: f99f3841-c486-4681-993d-2d3917b61d90
   Args:
     type: :Woman
-    source: :PrincessBeatrice
-  AssignClass (5b492a85-bcb0-4093-960a-155dd390219f)
- Call ID: 5b492a85-bcb0-4093-960a-155dd390219f
+    source: Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg
+  AssignClass (a9962621-1be3-4b35-b1f7-cf087e6fdca8)
+ Call ID: a9962621-1be3-4b35-b1f7-cf087e6fdca8
   Args:
+    source: Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg
     type: :Person
-    source: :PrincessBeatrice
-  AddTriple (2aae8083-1a33-4033-a737-dd511a8afe96)
- Call ID: 2aae8083-1a33-4033-a737-dd511a8afe96
-  Args:
-    source: :LeopoldMountbatten
-    target: :PrincessBeatrice
-    relation: :hasMother
-  AssignClass (22676240-a953-4117-a8da-d4950ca46d78)
- Call ID: 22676240-a953-4117-a8da-d4950ca46d78
-  Args:
-    type: :Man
-    source: :PrinceAlexanderOfHesseAndByRhine
-  AssignClass (75f9c201-fd70-4b0d-99b4-f6cc051c1522)
- Call ID: 75f9c201-fd70-4b0d-99b4-f6cc051c1522
-  Args:
-    type: :Person
-    source: :PrinceAlexanderOfHesseAndByRhine
-  AssignClass (26d3a77f-78d5-4040-ac6c-390580d86765)
- Call ID: 26d3a77f-78d5-4040-ac6c-390580d86765
-  Args:
-    type: :Woman
-    source: :JuliaPrincessOfBattenberg
-  AssignClass (c5cb134c-9adb-4f41-bce8-741c1be5470b)
- Call ID: c5cb134c-9adb-4f41-bce8-741c1be5470b
-  Args:
-    type: :Person
-    source: :JuliaPrincessOfBattenberg
-  AddTriple (164fee64-4dcc-4b61-9fd6-0700b05b5b38)
- Call ID: 164fee64-4dcc-4b61-9fd6-0700b05b5b38
-  Args:
-    source: :PrinceHenryOfBattenberg
-    target: :PrinceAlexanderOfHesseAndByRhine
-    relation: :hasFather
-  AddTriple (4871181b-56c0-49b6-be34-e1eb3f16f989)
- Call ID: 4871181b-56c0-49b6-be34-e1eb3f16f989
-  Args:
-    relation: :hasMother
-    target: :JuliaPrincessOfBattenberg
-    source: :PrinceHenryOfBattenberg
-  AssignClass (67af2b2f-fcfa-449a-aaef-f4b54822f29a)
- Call ID: 67af2b2f-fcfa-449a-aaef-f4b54822f29a
-  Args:
-    type: :Woman
-    source: :QueenVictoria
-  AssignClass (8d43d58a-f369-43ba-9e60-b44e20ced9b8)
- Call ID: 8d43d58a-f369-43ba-9e60-b44e20ced9b8
-  Args:
-    type: :Person
-    source: :QueenVictoria
-  AssignClass (3ab0f9df-1fdc-4aed-82c1-9327da3638ae)
- Call ID: 3ab0f9df-1fdc-4aed-82c1-9327da3638ae
-  Args:
-    type: :Man
-    source: :PrinceAlbert
-  AssignClass (95ced589-dd8e-4224-aa69-88219ca535bf)
- Call ID: 95ced589-dd8e-4224-aa69-88219ca535bf
-  Args:
-    type: :Person
-    source: :PrinceAlbert
-  AddTriple (95bd07dc-3afd-4c94-b509-6e7e1eddea72)
- Call ID: 95bd07dc-3afd-4c94-b509-6e7e1eddea72
-  Args:
-    target: :QueenVictoria
-    relation: :hasMother
-    source: :PrincessBeatrice
-  AddTriple (c16a246f-8dd6-4e11-8e29-046bade8a88e)
- Call ID: c16a246f-8dd6-4e11-8e29-046bade8a88e
+  AddTriple (192c6a17-acc2-4bcf-b1ad-857121e99e66)
+ Call ID: 192c6a17-acc2-4bcf-b1ad-857121e99e66
   Args:
     relation: :hasFather
-    target: :PrinceAlbert
-    source: :PrincessBeatrice
-  Finish (86f5a423-66cd-4750-b20e-c19851447fdc)
- Call ID: 86f5a423-66cd-4750-b20e-c19851447fdc
+    target: Prince August Wilhelm of Prussia
+    source: Prince Alexander Ferdinand of Prussia
+  AddTriple (b3cd6db3-959e-4e02-acc8-3f9191b50a54)
+ Call ID: b3cd6db3-959e-4e02-acc8-3f9191b50a54
+  Args:
+    relation: :hasMother
+    source: Prince Alexander Ferdinand of Prussia
+    target: Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg
+  AssignClass (692a307b-c072-4c57-b776-155021f0320e)
+ Call ID: 692a307b-c072-4c57-b776-155021f0320e
+  Args:
+    source: Kaiser Wilhelm II
+    type: :Man
+  AssignClass (ab79a262-e56c-4036-b639-177bf92d71ee)
+ Call ID: ab79a262-e56c-4036-b639-177bf92d71ee
+  Args:
+    source: Kaiser Wilhelm II
+    type: :Person
+  AddTriple (5934e78a-a994-4eac-931b-d9e68d046251)
+ Call ID: 5934e78a-a994-4eac-931b-d9e68d046251
+  Args:
+    source: Prince August Wilhelm of Prussia
+    target: Kaiser Wilhelm II
+    relation: :hasFather
+  AssignClass (1826434d-10fc-4051-a7ae-1b2f2525dfac)
+ Call ID: 1826434d-10fc-4051-a7ae-1b2f2525dfac
+  Args:
+    type: :Woman
+    source: Armgard Weygand
+  AssignClass (595d6492-803a-4576-bb13-b45bb02ef60f)
+ Call ID: 595d6492-803a-4576-bb13-b45bb02ef60f
+  Args:
+    source: Armgard Weygand
+    type: :Person
+  AddLiteral (df482d4d-720e-4e1a-8e2a-f66b16d6a2c3)
+ Call ID: df482d4d-720e-4e1a-8e2a-f66b16d6a2c3
+  Args:
+    literal_value: 1938
+    source: Prince Alexander Ferdinand of Prussia
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AddTriple (d6bc76d5-645f-476e-838a-79f95ae1849d)
+ Call ID: d6bc76d5-645f-476e-838a-79f95ae1849d
+  Args:
+    source: Prince Alexander Ferdinand of Prussia
+    target: Armgard Weygand
+    relation: :hasRelation
+  AssignClass (34ce3fcd-ed44-48c0-9b34-ff47760af1e0)
+ Call ID: 34ce3fcd-ed44-48c0-9b34-ff47760af1e0
+  Args:
+    source: Major Friedrich Weygand
+    type: :Man
+  AssignClass (efad83f5-ac33-4ef0-9b10-ea33a62949b6)
+ Call ID: efad83f5-ac33-4ef0-9b10-ea33a62949b6
+  Args:
+    type: :Person
+    source: Major Friedrich Weygand
+  AssignClass (c0053d1e-19d6-422a-b415-185a370f502e)
+ Call ID: c0053d1e-19d6-422a-b415-185a370f502e
+  Args:
+    type: :Woman
+    source: Karla Franziska Oheim
+  AssignClass (72e094f6-b393-4cfd-80c8-83acff14bcef)
+ Call ID: 72e094f6-b393-4cfd-80c8-83acff14bcef
+  Args:
+    source: Karla Franziska Oheim
+    type: :Person
+  AddTriple (55b68729-92e2-44c1-8b04-304565cd1ccf)
+ Call ID: 55b68729-92e2-44c1-8b04-304565cd1ccf
+  Args:
+    relation: :hasFather
+    target: Major Friedrich Weygand
+    source: Armgard Weygand
+  AddTriple (24b72f37-abd1-4191-a3e0-8ed874a03ab2)
+ Call ID: 24b72f37-abd1-4191-a3e0-8ed874a03ab2
+  Args:
+    relation: :hasMother
+    target: Karla Franziska Oheim
+    source: Armgard Weygand
+  AssignClass (0f03400d-7e83-4e4d-ab7b-27466301adbe)
+ Call ID: 0f03400d-7e83-4e4d-ab7b-27466301adbe
+  Args:
+    type: :Man
+    source: Werner Rosendorff
+  AssignClass (22ada993-9341-4af9-81be-b44fadc5af4a)
+ Call ID: 22ada993-9341-4af9-81be-b44fadc5af4a
+  Args:
+    source: Werner Rosendorff
+    type: :Person
+  AddTriple (3ad7e5d7-caca-4c08-828c-18ccd1142014)
+ Call ID: 3ad7e5d7-caca-4c08-828c-18ccd1142014
+  Args:
+    source: Armgard Weygand
+    target: Werner Rosendorff
+    relation: :hasRelation
+  Finish (81eb1dcf-7d93-4aae-904c-ae5bd2ef0f4d)
+ Call ID: 81eb1dcf-7d93-4aae-904c-ae5bd2ef0f4d
   Args:

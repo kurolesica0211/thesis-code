@@ -85,45 +85,42 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Amélie of Orléans (French: Marie Amélie Louise Hélène; 28 September 1865 – 25 October 1951) was the last Queen of Portugal as the wife of Carlos I of Portugal.
-She was regent of Portugal during the absence of her husband in 1895.
-She was the eldest daughter of Prince Philippe, Count of Paris, and Princess Marie Isabelle d'Orléans, and a "Princess of Orléans" by birth.
-Amélie's paternal grandparents were Prince Ferdinand Philippe, Duke of Orléans, and Duchess Helena of Mecklenburg-Schwerin.
-Her maternal grandparents were Prince Antoine, Duke of Montpensier, and the Infanta Luisa Fernanda of Spain.
-The Dukes of Orléans and Montpensier were siblings, both sons of King Louis-Philippe I of France, and Maria Amalia of the Two Sicilies.
-Marriage and issue
+Princess Irene of Greece and Denmark, Duchess of Aosta (Greek: Πριγκίπισσα Ειρήνη της Ελλάδας και Δανίας; 13 February 1904 – 15 April 1974) was the fifth child and second daughter of King Constantine I of Greece and the former Princess Sophie of Prussia (sister of Kaiser Wilhelm II of Germany).
+She was a member of the Royal Families of Greece and Italy.
+Family and early life
 
-On 22 May 1886, Amélie married Carlos, Prince Royal of Portugal.
-He was the eldest son of King Luís I of Portugal and Maria Pia of Savoy.
-At first, the marriage was not popular and Queen Maria Pia was expecting to marry Carlos to Archduchess Marie Valerie of Austria, Princess Mathilde of Saxony, Princess Viktoria of Prussia or Princess Victoria of Wales.
-However, Amélie and Carlos came to live quite harmoniously with each other.
-They had three children:
+Her Royal Highness Princess Irene of Greece and Denmark was born on 13 February 1904 in Athens.
+She had three elder brothers, George (1890), Alexander (1893) and Paul (1901), and one elder sister, Helen (1896).
+In 1927, her brother, George, announced her engagement to Prince Christian of Schaumburg-Lippe, a nephew of Christian X of Denmark, but no marriage occurred.
+Princess Irene’s paternal grandparents were King George I of Greece and his Queen, Grand Duchess Olga Konstantinovna of Russia.
+Her maternal grandparents were German Emperor Frederick III, and his Empress Consort, Victoria, Princess Royal.
+Empress Victoria was a daughter of Prince Albert of Saxe-Coburg and Gotha and Queen Victoria of the United Kingdom.
+Marriage
 
+Shortly afterwards, the Greek princess had to officially renounce the Orthodox faith and convert to the Catholic religion, as required by the laws of the House of Savoy.
+On 1 July 1939, Princess Irene married Prince Aimone, 4th Duke of Aosta (9 March 1900 – 29 January 1948).
+She was also a bridesmaid at the wedding of her cousin, Princess Marina of Greece and Denmark
+In March 1942, Irene, who was a trained nurse, headed a Red Cross hospital train going to Russia to repatriate wounded Italian soldiers.
+Prince Aimone became the 4th Duke of Aosta on 3 March 1942, following the death of his elder brother, Amedeo.
+After the Allied armistice with the Kingdom of Italy, Irene was interned by the Germans at the Hotel Ifen in Hirschegg, Austria, July 1944, along with her infant son, her sister-in-law and two nieces.
+Prince Aimone died on 29 January 1948 in Buenos Aires.
+Upon his death, his son Amedeo succeeded him as the 5th Duke of Aosta.
+In June 1948, the family was allowed to return to Italy, and Irene spent the rest of her life living outside of Florence where she became a member of the Dominican Third Order and continued her social work.
+Irene died on 15 April 1974 in Fiesole, Italy, after fighting a long illness.
+Finally, in 1996, the ashes of the Duke and Duchess of Aosta were transferred to one of the necropolises of the House of Savoy, at the Basilica of Superga in Turin.
+Ancestry
 
-Queen consort
+References
 
-On 19 October 1889, King Luís died and Carlos succeeded him on the throne.
-Amélie became the new Queen consort of Portugal.
-Amélie played an active role as a queen, and somewhat softened the growing criticism towards the monarchy with her personal popularity, though she did receive some criticism for her expenses.
-In 1892, Pope Leo XIII gave a Golden Rose to Amélie.
-On their way to the Palace of Necessidades, the carriage carrying Carlos and his family passed through the Rua do Arsenal.
-The King died immediately, his heir Prince Dom Luís Filipe was mortally wounded and Infante Dom Manuel was hit in the arm.
-Queen Amélie remained unharmed as she tried to defend her youngest son, the new king Manuel II, with the flower bouquet she kept in her hand.
-About twenty minutes later, Prince Luís Filipe died and the next day Manuel was acclaimed King of Portugal, the last of the Braganza dynasty.
-Manuel II was deposed in a military coup, later known as the 5 October 1910 revolution, which resulted in the establishment of the Portuguese First Republic.
-Queen Amélie left Portugal with the rest of the royal family and went into exile.
-During the Second World War, the Portuguese government invited her to return to Portugal, but she declined the offer.
-She visited Portugal for the last time in 1945.
-Later years and death
-
-In 1949, Amélie left her Portuguese possessions to her godson, Duarte Pio, Duke of Braganza, at the request of Prime Minister António de Oliveira Salazar.
-She was given a state funeral and buried at the Pantheon of the Braganzas located in the Monastery of São Vicente de Fora, in Lisbon, Portugal.
+Edward Hanson, The Wandering Princess: Princess Helene of France, Duchess of Aosta (1871-1951) .
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -139,39 +136,9 @@ She was given a state funeral and buried at the Pantheon of the Braganzas locate
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -186,6 +153,23 @@ She was given a state funeral and buried at the Pantheon of the Braganzas locate
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -203,6 +187,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -270,29 +269,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -301,6 +292,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -313,6 +312,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -321,17 +322,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -359,6 +362,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -374,332 +461,194 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (84a71bbc-13eb-41e9-ae9b-c883d2d9b0c3)
- Call ID: 84a71bbc-13eb-41e9-ae9b-c883d2d9b0c3
+  AssignClass (e6072063-c5f8-4047-8cef-b5046c0395ec)
+ Call ID: e6072063-c5f8-4047-8cef-b5046c0395ec
   Args:
+    source: Princess_Irene_of_Greece_and_Denmark
     type: :Woman
-    source: Amélie_of_Orléans
-  AssignClass (5b4917ae-02af-4c13-9fa6-e425c791a997)
- Call ID: 5b4917ae-02af-4c13-9fa6-e425c791a997
+  AssignClass (57e1eab9-d449-42ef-ad07-ccedd3a47235)
+ Call ID: 57e1eab9-d449-42ef-ad07-ccedd3a47235
   Args:
-    source: Amélie_of_Orléans
+    source: Princess_Irene_of_Greece_and_Denmark
     type: :Person
-  AddLiteral (98ebdb42-4622-4d7c-ad99-1001826eb007)
- Call ID: 98ebdb42-4622-4d7c-ad99-1001826eb007
+  AddLiteral (40b0f7d8-f74d-43c1-bbdf-212e74929baa)
+ Call ID: 40b0f7d8-f74d-43c1-bbdf-212e74929baa
   Args:
-    literal_value: 1865
+    source: Princess_Irene_of_Greece_and_Denmark
     literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Amélie_of_Orléans
-  AddLiteral (a9be521f-6ed4-4cf8-94e8-5d9bca1e00f1)
- Call ID: a9be521f-6ed4-4cf8-94e8-5d9bca1e00f1
+    literal_value: 1904
+  AddLiteral (f87814b5-d324-4f6b-b864-2f37a23b6edf)
+ Call ID: f87814b5-d324-4f6b-b864-2f37a23b6edf
   Args:
-    source: Amélie_of_Orléans
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_value: 1951
-    literal_type: xsd:integer
-  AssignClass (db5c0bdf-7029-40e7-9a82-20d406c8d746)
- Call ID: db5c0bdf-7029-40e7-9a82-20d406c8d746
+    literal_value: 1974
+    source: Princess_Irene_of_Greece_and_Denmark
+  AssignClass (f5d8e24a-d38a-4ece-80ca-27727c6e2181)
+ Call ID: f5d8e24a-d38a-4ece-80ca-27727c6e2181
   Args:
     type: :Man
-    source: Carlos_I_of_Portugal
-  AssignClass (ebf77caf-17b8-40d0-b8a8-e5637865a3f2)
- Call ID: ebf77caf-17b8-40d0-b8a8-e5637865a3f2
+    source: King_Constantine_I_of_Greece
+  AssignClass (74f5dd7b-da72-4784-9793-c05a778a12f4)
+ Call ID: 74f5dd7b-da72-4784-9793-c05a778a12f4
   Args:
-    source: Carlos_I_of_Portugal
-    type: :Person
-  AddLiteral (8c940b48-db93-4950-8580-9bd0fe25a552)
- Call ID: 8c940b48-db93-4950-8580-9bd0fe25a552
+    type: :Woman
+    source: Princess_Sophie_of_Prussia
+  AddTriple (c5b21b07-7331-4a13-8752-5830c3824be4)
+ Call ID: c5b21b07-7331-4a13-8752-5830c3824be4
   Args:
-    source: Amélie_of_Orléans
+    source: Princess_Irene_of_Greece_and_Denmark
+    target: King_Constantine_I_of_Greece
+    relation: :hasFather
+  AddTriple (5bc746f6-94f9-4a94-81e9-efb339669aeb)
+ Call ID: 5bc746f6-94f9-4a94-81e9-efb339669aeb
+  Args:
+    target: Princess_Sophie_of_Prussia
+    relation: :hasMother
+    source: Princess_Irene_of_Greece_and_Denmark
+  AssignClass (b53628da-efdc-4a46-9ead-00a92282768e)
+ Call ID: b53628da-efdc-4a46-9ead-00a92282768e
+  Args:
+    source: George_of_Greece
+    type: :Man
+  AssignClass (36c97381-71be-4bc6-869b-498910b27a01)
+ Call ID: 36c97381-71be-4bc6-869b-498910b27a01
+  Args:
+    source: Alexander_of_Greece
+    type: :Man
+  AssignClass (485cbd66-70fe-4962-8e51-b5af8d2eeb37)
+ Call ID: 485cbd66-70fe-4962-8e51-b5af8d2eeb37
+  Args:
+    type: :Man
+    source: Paul_of_Greece
+  AssignClass (0466a644-cf8b-4540-8cf5-b586a8766745)
+ Call ID: 0466a644-cf8b-4540-8cf5-b586a8766745
+  Args:
+    source: Helen_of_Greece
+    type: :Woman
+  AddTriple (1526256d-c38b-4234-80bd-3ee2d4dda191)
+ Call ID: 1526256d-c38b-4234-80bd-3ee2d4dda191
+  Args:
+    source: Princess_Irene_of_Greece_and_Denmark
+    target: George_of_Greece
+    relation: :hasBrother
+  AddTriple (0d943094-9e7e-4fe1-9976-deef07b62d38)
+ Call ID: 0d943094-9e7e-4fe1-9976-deef07b62d38
+  Args:
+    source: Princess_Irene_of_Greece_and_Denmark
+    relation: :hasBrother
+    target: Alexander_of_Greece
+  AddTriple (bdf4c280-3a77-491e-ac7f-07dc1587da92)
+ Call ID: bdf4c280-3a77-491e-ac7f-07dc1587da92
+  Args:
+    source: Princess_Irene_of_Greece_and_Denmark
+    target: Paul_of_Greece
+    relation: :hasBrother
+  AddTriple (452a8549-c4b8-4cb0-bde3-c9a873364001)
+ Call ID: 452a8549-c4b8-4cb0-bde3-c9a873364001
+  Args:
+    target: Helen_of_Greece
+    relation: :hasSister
+    source: Princess_Irene_of_Greece_and_Denmark
+  AssignClass (f2dac241-987f-4fb4-b704-2360f2cede0a)
+ Call ID: f2dac241-987f-4fb4-b704-2360f2cede0a
+  Args:
+    type: :Man
+    source: Prince_Aimone_4th_Duke_of_Aosta
+  AddLiteral (4134a1c9-fee8-4f87-ba61-ad56f5b9c189)
+ Call ID: 4134a1c9-fee8-4f87-ba61-ad56f5b9c189
+  Args:
+    source: Princess_Irene_of_Greece_and_Denmark
+    literal_type: xsd:integer
     relation: :hasMarriageYear
-    literal_value: 1886
-    literal_type: xsd:integer
-  AddTriple (1fbd3d4b-4192-4a85-ae14-5447b63d7f3c)
- Call ID: 1fbd3d4b-4192-4a85-ae14-5447b63d7f3c
+    literal_value: 1939
+  AddTriple (feaa1ea0-72ee-4a63-8823-a06e7d98bfa4)
+ Call ID: feaa1ea0-72ee-4a63-8823-a06e7d98bfa4
   Args:
+    source: Princess_Irene_of_Greece_and_Denmark
     relation: :hasRelation
-    source: Amélie_of_Orléans
-    target: Carlos_I_of_Portugal
-  AssignClass (35a07f06-274f-4355-ab19-539f9f21c250)
- Call ID: 35a07f06-274f-4355-ab19-539f9f21c250
+    target: Prince_Aimone_4th_Duke_of_Aosta
+  AssignClass (c89f1231-b6f9-4de2-8671-37f7efebdeba)
+ Call ID: c89f1231-b6f9-4de2-8671-37f7efebdeba
   Args:
-    source: Prince_Philippe_Count_of_Paris
+    source: Amedeo_5th_Duke_of_Aosta
     type: :Man
-  AssignClass (a860c3c1-c738-4838-a5ca-948c681b5291)
- Call ID: a860c3c1-c738-4838-a5ca-948c681b5291
+  AddTriple (90fa36ec-2e43-4b57-afcb-5ef1c0b941db)
+ Call ID: 90fa36ec-2e43-4b57-afcb-5ef1c0b941db
   Args:
-    source: Prince_Philippe_Count_of_Paris
-    type: :Person
-  AssignClass (3e4902d7-66cf-4b16-bb2c-d93c1450fd92)
- Call ID: 3e4902d7-66cf-4b16-bb2c-d93c1450fd92
+    relation: :hasSon
+    target: Amedeo_5th_Duke_of_Aosta
+    source: Princess_Irene_of_Greece_and_Denmark
+  AssignClass (3124dff1-9c36-48b5-925b-decb67594133)
+ Call ID: 3124dff1-9c36-48b5-925b-decb67594133
+  Args:
+    source: King_George_I_of_Greece
+    type: :Man
+  AssignClass (5634e125-618f-4744-98c9-f2fb74e4c049)
+ Call ID: 5634e125-618f-4744-98c9-f2fb74e4c049
+  Args:
+    source: Grand_Duchess_Olga_Konstantinovna_of_Russia
+    type: :Woman
+  AddTriple (234a9856-57ce-47e3-9f7e-523f7c141a75)
+ Call ID: 234a9856-57ce-47e3-9f7e-523f7c141a75
+  Args:
+    target: King_George_I_of_Greece
+    relation: :hasFather
+    source: King_Constantine_I_of_Greece
+  AddTriple (652ea681-98a5-4172-bee4-b9dee9a26505)
+ Call ID: 652ea681-98a5-4172-bee4-b9dee9a26505
+  Args:
+    relation: :hasMother
+    target: Grand_Duchess_Olga_Konstantinovna_of_Russia
+    source: King_Constantine_I_of_Greece
+  AssignClass (f5caa8dc-4b8a-420b-bf05-3a20df9df6b3)
+ Call ID: f5caa8dc-4b8a-420b-bf05-3a20df9df6b3
+  Args:
+    source: German_Emperor_Frederick_III
+    type: :Man
+  AssignClass (0c6f5609-b9fb-4465-a71c-bc3bf44f1ab3)
+ Call ID: 0c6f5609-b9fb-4465-a71c-bc3bf44f1ab3
   Args:
     type: :Woman
-    source: Princess_Marie_Isabelle_dOrléans
-  AssignClass (e25cc552-0aad-4ad8-88ad-baf549604bc3)
- Call ID: e25cc552-0aad-4ad8-88ad-baf549604bc3
+    source: Empress_Victoria_Princess_Royal
+  AddTriple (938a548c-de28-4d1c-bf52-ae58b99748a7)
+ Call ID: 938a548c-de28-4d1c-bf52-ae58b99748a7
   Args:
-    type: :Person
-    source: Princess_Marie_Isabelle_dOrléans
-  AddTriple (3c7b7c61-87bb-40da-87c3-0e40641e639a)
- Call ID: 3c7b7c61-87bb-40da-87c3-0e40641e639a
-  Args:
-    target: Prince_Philippe_Count_of_Paris
-    source: Amélie_of_Orléans
+    source: Princess_Sophie_of_Prussia
+    target: German_Emperor_Frederick_III
     relation: :hasFather
-  AddTriple (1da73d85-8ff3-4492-b7d2-f69ea2373c10)
- Call ID: 1da73d85-8ff3-4492-b7d2-f69ea2373c10
+  AddTriple (af6a0057-2dea-415e-a0c9-4d5f9c31d835)
+ Call ID: af6a0057-2dea-415e-a0c9-4d5f9c31d835
   Args:
-    target: Princess_Marie_Isabelle_dOrléans
-    source: Amélie_of_Orléans
+    target: Empress_Victoria_Princess_Royal
     relation: :hasMother
-  AssignClass (771ff2a1-4574-48fb-82c1-5d8eaad4b9f6)
- Call ID: 771ff2a1-4574-48fb-82c1-5d8eaad4b9f6
+    source: Princess_Sophie_of_Prussia
+  AssignClass (2ecc1970-f7ae-4096-a74b-2e957318fa0f)
+ Call ID: 2ecc1970-f7ae-4096-a74b-2e957318fa0f
   Args:
     type: :Man
-    source: Prince_Ferdinand_Philippe_Duke_of_Orléans
-  AssignClass (34ecc04d-4b12-41ec-90cc-9f49a61861d5)
- Call ID: 34ecc04d-4b12-41ec-90cc-9f49a61861d5
-  Args:
-    source: Prince_Ferdinand_Philippe_Duke_of_Orléans
-    type: :Person
-  AssignClass (f671e67a-82b6-41ae-b019-cfdc1af334e3)
- Call ID: f671e67a-82b6-41ae-b019-cfdc1af334e3
+    source: Prince_Albert_of_Saxe-Coburg_and_Gotha
+  AssignClass (04e9ac37-cb3b-4ab6-9ad1-d495b6e83fa4)
+ Call ID: 04e9ac37-cb3b-4ab6-9ad1-d495b6e83fa4
   Args:
     type: :Woman
-    source: Duchess_Helena_of_Mecklenburg-Schwerin
-  AssignClass (36596af1-3d3e-4123-8c33-743b56aca576)
- Call ID: 36596af1-3d3e-4123-8c33-743b56aca576
-  Args:
-    source: Duchess_Helena_of_Mecklenburg-Schwerin
-    type: :Person
-  AddTriple (94ffaa2a-2daa-43e2-aa79-0f3dea933e7d)
- Call ID: 94ffaa2a-2daa-43e2-aa79-0f3dea933e7d
+    source: Queen_Victoria_of_the_United_Kingdom
+  AddTriple (f0d753c6-e9f8-413e-8994-16e5aebf1291)
+ Call ID: f0d753c6-e9f8-413e-8994-16e5aebf1291
   Args:
     relation: :hasFather
-    source: Prince_Philippe_Count_of_Paris
-    target: Prince_Ferdinand_Philippe_Duke_of_Orléans
-  AddTriple (39235ff6-de87-439c-893f-b8a8de673a74)
- Call ID: 39235ff6-de87-439c-893f-b8a8de673a74
+    target: Prince_Albert_of_Saxe-Coburg_and_Gotha
+    source: Empress_Victoria_Princess_Royal
+  AddTriple (772acf0c-146b-4732-81f9-6c3f9137fcdd)
+ Call ID: 772acf0c-146b-4732-81f9-6c3f9137fcdd
   Args:
-    target: Duchess_Helena_of_Mecklenburg-Schwerin
+    source: Empress_Victoria_Princess_Royal
+    target: Queen_Victoria_of_the_United_Kingdom
     relation: :hasMother
-    source: Prince_Philippe_Count_of_Paris
-  AssignClass (e53e1399-3802-4cbb-a1bd-2d223e7dc47e)
- Call ID: e53e1399-3802-4cbb-a1bd-2d223e7dc47e
+  Finish (18582ad5-9efd-448a-ba65-54d28b727202)
+ Call ID: 18582ad5-9efd-448a-ba65-54d28b727202
   Args:
-    source: Prince_Antoine_Duke_of_Montpensier
-    type: :Man
-  AssignClass (8b8a13ab-f334-4734-80f9-4e4d36d3ad95)
- Call ID: 8b8a13ab-f334-4734-80f9-4e4d36d3ad95
-  Args:
-    type: :Person
-    source: Prince_Antoine_Duke_of_Montpensier
-  AssignClass (3b00bc66-cac7-49c7-97c7-cc84beb4cd69)
- Call ID: 3b00bc66-cac7-49c7-97c7-cc84beb4cd69
-  Args:
-    source: Infanta_Luisa_Fernanda_of_Spain
-    type: :Woman
-  AssignClass (06a3c2af-9200-4346-909d-6eac8c6b87ea)
- Call ID: 06a3c2af-9200-4346-909d-6eac8c6b87ea
-  Args:
-    type: :Person
-    source: Infanta_Luisa_Fernanda_of_Spain
-  AddTriple (ecee674f-45c0-42be-b8d0-4f1e8cbe4a36)
- Call ID: ecee674f-45c0-42be-b8d0-4f1e8cbe4a36
-  Args:
-    target: Prince_Antoine_Duke_of_Montpensier
-    relation: :hasFather
-    source: Princess_Marie_Isabelle_dOrléans
-  AddTriple (93ff8910-7d45-45fa-8806-e517a0df57d8)
- Call ID: 93ff8910-7d45-45fa-8806-e517a0df57d8
-  Args:
-    target: Infanta_Luisa_Fernanda_of_Spain
-    source: Princess_Marie_Isabelle_dOrléans
-    relation: :hasMother
-  AssignClass (715348c5-e2b4-403a-b7a5-c42621913ac3)
- Call ID: 715348c5-e2b4-403a-b7a5-c42621913ac3
-  Args:
-    type: :Man
-    source: King_Louis-Philippe_I_of_France
-  AssignClass (a01b814f-7b43-431d-a1a1-80dd9a00e8b8)
- Call ID: a01b814f-7b43-431d-a1a1-80dd9a00e8b8
-  Args:
-    type: :Person
-    source: King_Louis-Philippe_I_of_France
-  AssignClass (1d7f6b1d-81b3-449b-9f23-eb14b3ed100a)
- Call ID: 1d7f6b1d-81b3-449b-9f23-eb14b3ed100a
-  Args:
-    source: Maria_Amalia_of_the_Two_Sicilies
-    type: :Woman
-  AssignClass (0093e487-dc6a-47b4-91e0-92e2ffd73f59)
- Call ID: 0093e487-dc6a-47b4-91e0-92e2ffd73f59
-  Args:
-    type: :Person
-    source: Maria_Amalia_of_the_Two_Sicilies
-  AddTriple (eff0d8a0-84b8-4132-a07b-20e453487a0b)
- Call ID: eff0d8a0-84b8-4132-a07b-20e453487a0b
-  Args:
-    relation: :hasFather
-    source: Prince_Ferdinand_Philippe_Duke_of_Orléans
-    target: King_Louis-Philippe_I_of_France
-  AddTriple (7c0ca476-4411-4a64-a1f3-6c06567128ee)
- Call ID: 7c0ca476-4411-4a64-a1f3-6c06567128ee
-  Args:
-    target: Maria_Amalia_of_the_Two_Sicilies
-    source: Prince_Ferdinand_Philippe_Duke_of_Orléans
-    relation: :hasMother
-  AddTriple (ca64bdc7-528d-4d75-868e-7a2bdb1372cf)
- Call ID: ca64bdc7-528d-4d75-868e-7a2bdb1372cf
-  Args:
-    target: King_Louis-Philippe_I_of_France
-    relation: :hasFather
-    source: Prince_Antoine_Duke_of_Montpensier
-  AddTriple (d4dd8c3d-3f0c-4988-bc06-45a2f5045a8d)
- Call ID: d4dd8c3d-3f0c-4988-bc06-45a2f5045a8d
-  Args:
-    source: Prince_Antoine_Duke_of_Montpensier
-    relation: :hasMother
-    target: Maria_Amalia_of_the_Two_Sicilies
-  AssignClass (eca4330e-e3cc-4321-becc-339a56a0985f)
- Call ID: eca4330e-e3cc-4321-becc-339a56a0985f
-  Args:
-    type: :Man
-    source: King_Luís_I_of_Portugal
-  AssignClass (2fdf1dc8-a4d4-4f2c-be11-4aab18686845)
- Call ID: 2fdf1dc8-a4d4-4f2c-be11-4aab18686845
-  Args:
-    source: King_Luís_I_of_Portugal
-    type: :Person
-  AssignClass (ddc1abb5-cb21-4eff-8baa-2b0f8bbc873a)
- Call ID: ddc1abb5-cb21-4eff-8baa-2b0f8bbc873a
-  Args:
-    type: :Woman
-    source: Maria_Pia_of_Savoy
-  AssignClass (2a30f647-74f4-48a5-915c-be902ece593d)
- Call ID: 2a30f647-74f4-48a5-915c-be902ece593d
-  Args:
-    source: Maria_Pia_of_Savoy
-    type: :Person
-  AddTriple (549e32f3-461b-47e3-952c-50c1a36dc8d3)
- Call ID: 549e32f3-461b-47e3-952c-50c1a36dc8d3
-  Args:
-    target: King_Luís_I_of_Portugal
-    relation: :hasFather
-    source: Carlos_I_of_Portugal
-  AddTriple (28e46164-5243-4522-a71e-a9ad5fd7875e)
- Call ID: 28e46164-5243-4522-a71e-a9ad5fd7875e
-  Args:
-    target: Maria_Pia_of_Savoy
-    source: Carlos_I_of_Portugal
-    relation: :hasMother
-  AssignClass (4bb0fbba-4bad-4ddb-aa23-0e5a23465fef)
- Call ID: 4bb0fbba-4bad-4ddb-aa23-0e5a23465fef
-  Args:
-    source: Prince_Dom_Luís_Filipe
-    type: :Man
-  AssignClass (2f767c07-4bc8-4ce3-a3ba-27e24d67ccd0)
- Call ID: 2f767c07-4bc8-4ce3-a3ba-27e24d67ccd0
-  Args:
-    source: Prince_Dom_Luís_Filipe
-    type: :Person
-  AssignClass (bbce19d1-c577-49d0-ac98-a861fb3c5d4f)
- Call ID: bbce19d1-c577-49d0-ac98-a861fb3c5d4f
-  Args:
-    type: :Man
-    source: Infante_Dom_Manuel_II
-  AssignClass (1c7fb38a-fdc4-47b8-a61e-f31d2ad77e23)
- Call ID: 1c7fb38a-fdc4-47b8-a61e-f31d2ad77e23
-  Args:
-    source: Infante_Dom_Manuel_II
-    type: :Person
-  AddTriple (f27b65c7-2639-4b0b-95ca-eff5ac0c6221)
- Call ID: f27b65c7-2639-4b0b-95ca-eff5ac0c6221
-  Args:
-    target: Carlos_I_of_Portugal
-    source: Prince_Dom_Luís_Filipe
-    relation: :hasFather
-  AddTriple (c55cbe7c-094c-4beb-9029-86e9d6d9a582)
- Call ID: c55cbe7c-094c-4beb-9029-86e9d6d9a582
-  Args:
-    target: Amélie_of_Orléans
-    source: Prince_Dom_Luís_Filipe
-    relation: :hasMother
-  AddTriple (b6e041a4-eada-4bb9-8e23-4742d2533985)
- Call ID: b6e041a4-eada-4bb9-8e23-4742d2533985
-  Args:
-    target: Carlos_I_of_Portugal
-    relation: :hasFather
-    source: Infante_Dom_Manuel_II
-  AddTriple (2c7d5c14-b60e-4532-91e3-8311f4461edf)
- Call ID: 2c7d5c14-b60e-4532-91e3-8311f4461edf
-  Args:
-    source: Infante_Dom_Manuel_II
-    relation: :hasMother
-    target: Amélie_of_Orléans
-  Finish (d0547889-67d9-4a36-8302-b40c380017a7)
- Call ID: d0547889-67d9-4a36-8302-b40c380017a7
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -836,67 +785,53 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Infante_Dom_Manuel_II a :Man,
-          :Person ;
-      :hasFather data:Carlos_I_of_Portugal ;
-      :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
-
-  data:Prince_Dom_Lu%C3%ADs_Filipe a :Man,
-          :Person ;
-      :hasFather data:Carlos_I_of_Portugal ;
-      :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
-
-  data:Duchess_Helena_of_Mecklenburg-Schwerin a :Person,
-          :Woman .
-
-  data:Infanta_Luisa_Fernanda_of_Spain a :Person,
-          :Woman .
-
-  data:King_Lu%C3%ADs_I_of_Portugal a :Man,
-          :Person .
-
-  data:Maria_Pia_of_Savoy a :Person,
-          :Woman .
-
-  data:Prince_Antoine_Duke_of_Montpensier a :Man,
-          :Person ;
-      :hasFather data:King_Louis-Philippe_I_of_France ;
-      :hasMother data:Maria_Amalia_of_the_Two_Sicilies .
-
-  data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans a :Man,
-          :Person ;
-      :hasFather data:King_Louis-Philippe_I_of_France ;
-      :hasMother data:Maria_Amalia_of_the_Two_Sicilies .
-
-  data:Prince_Philippe_Count_of_Paris a :Man,
-          :Person ;
-      :hasFather data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
-      :hasMother data:Duchess_Helena_of_Mecklenburg-Schwerin .
-
-  data:Princess_Marie_Isabelle_dOrl%C3%A9ans a :Person,
+  data:Princess_Irene_of_Greece_and_Denmark a :Person,
           :Woman ;
-      :hasFather data:Prince_Antoine_Duke_of_Montpensier ;
-      :hasMother data:Infanta_Luisa_Fernanda_of_Spain .
+      :hasBirthYear 1904 ;
+      :hasBrother data:Alexander_of_Greece,
+          data:George_of_Greece,
+          data:Paul_of_Greece ;
+      :hasDeathYear 1974 ;
+      :hasFather data:King_Constantine_I_of_Greece ;
+      :hasMarriageYear 1939 ;
+      :hasMother data:Princess_Sophie_of_Prussia ;
+      :hasRelation data:Prince_Aimone_4th_Duke_of_Aosta ;
+      :hasSister data:Helen_of_Greece ;
+      :hasSon data:Amedeo_5th_Duke_of_Aosta .
 
-  data:Am%C3%A9lie_of_Orl%C3%A9ans a :Person,
-          :Woman ;
-      :hasBirthYear 1865 ;
-      :hasDeathYear 1951 ;
-      :hasFather data:Prince_Philippe_Count_of_Paris ;
-      :hasMarriageYear 1886 ;
-      :hasMother data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
-      :hasRelation data:Carlos_I_of_Portugal .
+  data:Alexander_of_Greece a :Man .
 
-  data:King_Louis-Philippe_I_of_France a :Man,
-          :Person .
+  data:Amedeo_5th_Duke_of_Aosta a :Man .
 
-  data:Maria_Amalia_of_the_Two_Sicilies a :Person,
-          :Woman .
+  data:Empress_Victoria_Princess_Royal a :Woman ;
+      :hasFather data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+      :hasMother data:Queen_Victoria_of_the_United_Kingdom .
 
-  data:Carlos_I_of_Portugal a :Man,
-          :Person ;
-      :hasFather data:King_Lu%C3%ADs_I_of_Portugal ;
-      :hasMother data:Maria_Pia_of_Savoy .
+  data:George_of_Greece a :Man .
+
+  data:German_Emperor_Frederick_III a :Man .
+
+  data:Grand_Duchess_Olga_Konstantinovna_of_Russia a :Woman .
+
+  data:Helen_of_Greece a :Woman .
+
+  data:King_Constantine_I_of_Greece a :Man ;
+      :hasFather data:King_George_I_of_Greece ;
+      :hasMother data:Grand_Duchess_Olga_Konstantinovna_of_Russia .
+
+  data:King_George_I_of_Greece a :Man .
+
+  data:Paul_of_Greece a :Man .
+
+  data:Prince_Aimone_4th_Duke_of_Aosta a :Man .
+
+  data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Man .
+
+  data:Princess_Sophie_of_Prussia a :Woman ;
+      :hasFather data:German_Emperor_Frederick_III ;
+      :hasMother data:Empress_Victoria_Princess_Royal .
+
+  data:Queen_Victoria_of_the_United_Kingdom a :Woman .
 
 
 
@@ -908,398 +843,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (722012cf-f0cb-4802-a75c-023009fbdb7c)
- Call ID: 722012cf-f0cb-4802-a75c-023009fbdb7c
+  ValidateShacl (dce5ccc2-8d66-4e6e-a249-323d95669a79)
+ Call ID: dce5ccc2-8d66-4e6e-a249-323d95669a79
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:48
+Total violations:24
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity King_Luís_I_of_Portugal is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Carlos_I_of_Portugal.
+      The entity King_George_I_of_Greece lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Luís_I_of_Portugal', class=':Ancestor')
+      AssignClass(node: King_George_I_of_Greece, class: :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Prince_Ferdinand_Philippe_Duke_of_Orléans is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Prince_Philippe_Count_of_Paris.
+      The entity Grand_Duchess_Olga_Konstantinovna_of_Russia lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Ferdinand_Philippe_Duke_of_Orléans', class=':Ancestor')
+      AssignClass(node: Grand_Duchess_Olga_Konstantinovna_of_Russia, class: :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity King_Louis-Philippe_I_of_France is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Prince_Ferdinand_Philippe_Duke_of_Orléans.
+      The entity German_Emperor_Frederick_III lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Louis-Philippe_I_of_France', class=':Ancestor')
+      AssignClass(node: German_Emperor_Frederick_III, class: :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Carlos_I_of_Portugal is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Infante_Dom_Manuel_II.
+      The entity King_George_I_of_Greece lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_I_of_Portugal', class=':Ancestor')
+      AssignClass(node: King_George_I_of_Greece, class: :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Carlos_I_of_Portugal is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Prince_Dom_Luís_Filipe.
+      The entity King_Constantine_I_of_Greece lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_I_of_Portugal', class=':Ancestor')
+      AssignClass(node: King_Constantine_I_of_Greece, class: :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity King_Louis-Philippe_I_of_France is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Prince_Antoine_Duke_of_Montpensier.
+      The entity Prince_Albert_of_Saxe-Coburg_and_Gotha lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Louis-Philippe_I_of_France', class=':Ancestor')
+      AssignClass(node: Prince_Albert_of_Saxe-Coburg_and_Gotha, class: :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Maria_Pia_of_Savoy is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Carlos_I_of_Portugal.
+      The entity Empress_Victoria_Princess_Royal lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Pia_of_Savoy', class=':Ancestor')
+      AssignClass(node: Empress_Victoria_Princess_Royal, class: :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Duchess_Helena_of_Mecklenburg-Schwerin is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Prince_Philippe_Count_of_Paris.
+      The entity Grand_Duchess_Olga_Konstantinovna_of_Russia lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Duchess_Helena_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node: Grand_Duchess_Olga_Konstantinovna_of_Russia, class: :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Maria_Amalia_of_the_Two_Sicilies is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Prince_Ferdinand_Philippe_Duke_of_Orléans.
+      The entity Princess_Sophie_of_Prussia lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Amalia_of_the_Two_Sicilies', class=':Ancestor')
+      AssignClass(node: Princess_Sophie_of_Prussia, class: :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Amélie_of_Orléans is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Infante_Dom_Manuel_II.
+      The entity Queen_Victoria_of_the_United_Kingdom lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Amélie_of_Orléans', class=':Ancestor')
+      AssignClass(node: Queen_Victoria_of_the_United_Kingdom, class: :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Amélie_of_Orléans is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Prince_Dom_Luís_Filipe.
+      The entity German_Emperor_Frederick_III lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Amélie_of_Orléans', class=':Ancestor')
+      AssignClass(node: German_Emperor_Frederick_III, class: :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Maria_Amalia_of_the_Two_Sicilies is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Prince_Antoine_Duke_of_Montpensier.
+      The entity King_George_I_of_Greece lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Amalia_of_the_Two_Sicilies', class=':Ancestor')
+      AssignClass(node: King_George_I_of_Greece, class: :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity King_Luís_I_of_Portugal is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Carlos_I_of_Portugal.
+      The entity King_Constantine_I_of_Greece lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Luís_I_of_Portugal', class=':Ancestor')
+      AssignClass(node: King_Constantine_I_of_Greece, class: :Ancestor)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Prince_Philippe_Count_of_Paris is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Amélie_of_Orléans.
+      The entity Prince_Albert_of_Saxe-Coburg_and_Gotha lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Philippe_Count_of_Paris', class=':Ancestor')
+      AssignClass(node: Prince_Albert_of_Saxe-Coburg_and_Gotha, class: :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Prince_Ferdinand_Philippe_Duke_of_Orléans is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Prince_Philippe_Count_of_Paris.
+      The entity Empress_Victoria_Princess_Royal lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Ferdinand_Philippe_Duke_of_Orléans', class=':Ancestor')
+      AssignClass(node: Empress_Victoria_Princess_Royal, class: :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Carlos_I_of_Portugal is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Infante_Dom_Manuel_II.
+      The entity Grand_Duchess_Olga_Konstantinovna_of_Russia lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_I_of_Portugal', class=':Ancestor')
+      AssignClass(node: Grand_Duchess_Olga_Konstantinovna_of_Russia, class: :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity King_Louis-Philippe_I_of_France is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Prince_Antoine_Duke_of_Montpensier.
+      The entity Princess_Sophie_of_Prussia lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Louis-Philippe_I_of_France', class=':Ancestor')
+      AssignClass(node: Princess_Sophie_of_Prussia, class: :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Carlos_I_of_Portugal is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Prince_Dom_Luís_Filipe.
+      The entity Queen_Victoria_of_the_United_Kingdom lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_I_of_Portugal', class=':Ancestor')
+      AssignClass(node: Queen_Victoria_of_the_United_Kingdom, class: :Ancestor)
 
 
   Violation [19]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity King_Louis-Philippe_I_of_France is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Prince_Ferdinand_Philippe_Duke_of_Orléans.
+      The entity German_Emperor_Frederick_III lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Louis-Philippe_I_of_France', class=':Ancestor')
+      AssignClass(node: German_Emperor_Frederick_III, class: :Ancestor)
 
 
   Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Prince_Antoine_Duke_of_Montpensier is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Princess_Marie_Isabelle_dOrléans.
+      The entity Prince_Albert_of_Saxe-Coburg_and_Gotha lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Antoine_Duke_of_Montpensier', class=':Ancestor')
+      AssignClass(node: Prince_Albert_of_Saxe-Coburg_and_Gotha, class: :Ancestor)
 
 
   Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Maria_Pia_of_Savoy is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Carlos_I_of_Portugal.
+      The entity King_Constantine_I_of_Greece lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Pia_of_Savoy', class=':Ancestor')
+      AssignClass(node: King_Constantine_I_of_Greece, class: :Ancestor)
 
 
   Violation [22]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Princess_Marie_Isabelle_dOrléans is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Amélie_of_Orléans.
+      The entity Empress_Victoria_Princess_Royal lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Marie_Isabelle_dOrléans', class=':Ancestor')
+      AssignClass(node: Empress_Victoria_Princess_Royal, class: :Ancestor)
 
 
   Violation [23]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Duchess_Helena_of_Mecklenburg-Schwerin is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Prince_Philippe_Count_of_Paris.
+      The entity Queen_Victoria_of_the_United_Kingdom lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Duchess_Helena_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node: Queen_Victoria_of_the_United_Kingdom, class: :Ancestor)
 
 
   Violation [24]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Amélie_of_Orléans is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Infante_Dom_Manuel_II.
+      The entity Princess_Sophie_of_Prussia lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Amélie_of_Orléans', class=':Ancestor')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Maria_Amalia_of_the_Two_Sicilies is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Prince_Antoine_Duke_of_Montpensier.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Amalia_of_the_Two_Sicilies', class=':Ancestor')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Amélie_of_Orléans is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Prince_Dom_Luís_Filipe.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Amélie_of_Orléans', class=':Ancestor')
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Maria_Amalia_of_the_Two_Sicilies is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Prince_Ferdinand_Philippe_Duke_of_Orléans.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Amalia_of_the_Two_Sicilies', class=':Ancestor')
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Infanta_Luisa_Fernanda_of_Spain is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Princess_Marie_Isabelle_dOrléans.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Infanta_Luisa_Fernanda_of_Spain', class=':Ancestor')
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The entity Prince_Philippe_Count_of_Paris is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Amélie_of_Orléans.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Philippe_Count_of_Paris', class=':Ancestor')
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The entity King_Luís_I_of_Portugal is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Carlos_I_of_Portugal.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Luís_I_of_Portugal', class=':Ancestor')
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The entity Prince_Ferdinand_Philippe_Duke_of_Orléans is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Prince_Philippe_Count_of_Paris.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Ferdinand_Philippe_Duke_of_Orléans', class=':Ancestor')
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The entity King_Louis-Philippe_I_of_France is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Prince_Antoine_Duke_of_Montpensier.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Louis-Philippe_I_of_France', class=':Ancestor')
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The entity Carlos_I_of_Portugal is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Infante_Dom_Manuel_II.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_I_of_Portugal', class=':Ancestor')
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The entity Carlos_I_of_Portugal is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Prince_Dom_Luís_Filipe.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_I_of_Portugal', class=':Ancestor')
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The entity King_Louis-Philippe_I_of_France is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Prince_Ferdinand_Philippe_Duke_of_Orléans.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Louis-Philippe_I_of_France', class=':Ancestor')
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The entity Prince_Antoine_Duke_of_Montpensier is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Princess_Marie_Isabelle_dOrléans.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Antoine_Duke_of_Montpensier', class=':Ancestor')
-
-
-  Violation [37]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Princess_Marie_Isabelle_dOrléans is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Amélie_of_Orléans.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Marie_Isabelle_dOrléans', class=':Ancestor')
-
-
-  Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Maria_Pia_of_Savoy is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Carlos_I_of_Portugal.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Pia_of_Savoy', class=':Ancestor')
-
-
-  Violation [39]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Duchess_Helena_of_Mecklenburg-Schwerin is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Prince_Philippe_Count_of_Paris.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Duchess_Helena_of_Mecklenburg-Schwerin', class=':Ancestor')
-
-
-  Violation [40]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Maria_Amalia_of_the_Two_Sicilies is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Prince_Antoine_Duke_of_Montpensier.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Amalia_of_the_Two_Sicilies', class=':Ancestor')
-
-
-  Violation [41]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Amélie_of_Orléans is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Infante_Dom_Manuel_II.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Amélie_of_Orléans', class=':Ancestor')
-
-
-  Violation [42]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Amélie_of_Orléans is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Prince_Dom_Luís_Filipe.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Amélie_of_Orléans', class=':Ancestor')
-
-
-  Violation [43]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Maria_Amalia_of_the_Two_Sicilies is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Prince_Ferdinand_Philippe_Duke_of_Orléans.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Amalia_of_the_Two_Sicilies', class=':Ancestor')
-
-
-  Violation [44]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Infanta_Luisa_Fernanda_of_Spain is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Princess_Marie_Isabelle_dOrléans.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Infanta_Luisa_Fernanda_of_Spain', class=':Ancestor')
-
-
-  Violation [45]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The entity Prince_Philippe_Count_of_Paris is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Amélie_of_Orléans.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Philippe_Count_of_Paris', class=':Ancestor')
-
-
-  Violation [46]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The entity Prince_Antoine_Duke_of_Montpensier is missing the required :Ancestor class, which is necessary to be a valid value for the hasFather property of Princess_Marie_Isabelle_dOrléans.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Antoine_Duke_of_Montpensier', class=':Ancestor')
-
-
-  Violation [47]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Princess_Marie_Isabelle_dOrléans is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Amélie_of_Orléans.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Marie_Isabelle_dOrléans', class=':Ancestor')
-
-
-  Violation [48]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The entity Infanta_Luisa_Fernanda_of_Spain is missing the required :Ancestor class, which is necessary to be a valid value for the hasMother property of Princess_Marie_Isabelle_dOrléans.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Infanta_Luisa_Fernanda_of_Spain', class=':Ancestor')
+      AssignClass(node: Princess_Sophie_of_Prussia, class: :Ancestor)
 
 
 
@@ -1308,85 +1051,46 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (5236107f-4471-43ba-a2b5-86781628576a)
- Call ID: 5236107f-4471-43ba-a2b5-86781628576a
+  AssignClass (62049e2e-11ef-407b-80cb-5644ad9a644a)
+ Call ID: 62049e2e-11ef-407b-80cb-5644ad9a644a
+  Args:
+    source: King_George_I_of_Greece
+    type: :Ancestor
+  AssignClass (1d182d14-2589-4ec0-8937-3257938c9907)
+ Call ID: 1d182d14-2589-4ec0-8937-3257938c9907
+  Args:
+    source: Grand_Duchess_Olga_Konstantinovna_of_Russia
+    type: :Ancestor
+  AssignClass (cae53630-3a83-4f2c-9c2c-a0dbe6809ad1)
+ Call ID: cae53630-3a83-4f2c-9c2c-a0dbe6809ad1
   Args:
     type: :Ancestor
-    source: King_Luís_I_of_Portugal
-  AssignClass (043062e0-c322-4bf8-ade0-deeb709242ed)
- Call ID: 043062e0-c322-4bf8-ade0-deeb709242ed
+    source: German_Emperor_Frederick_III
+  AssignClass (df012e98-f6cb-4239-bfc1-8a515d03f64c)
+ Call ID: df012e98-f6cb-4239-bfc1-8a515d03f64c
   Args:
     type: :Ancestor
-    source: Prince_Ferdinand_Philippe_Duke_of_Orléans
-  AssignClass (0c5f7ef6-1e75-4fcd-9104-380191fda0eb)
- Call ID: 0c5f7ef6-1e75-4fcd-9104-380191fda0eb
+    source: King_Constantine_I_of_Greece
+  AssignClass (71d868e1-bb03-4a56-8e9d-284a03f27d87)
+ Call ID: 71d868e1-bb03-4a56-8e9d-284a03f27d87
+  Args:
+    source: Prince_Albert_of_Saxe-Coburg_and_Gotha
+    type: :Ancestor
+  AssignClass (fd3c91ca-8817-4e6f-9700-73c597c3cdcd)
+ Call ID: fd3c91ca-8817-4e6f-9700-73c597c3cdcd
   Args:
     type: :Ancestor
-    source: King_Louis-Philippe_I_of_France
-  AssignClass (5156da5c-48e3-45ce-976f-3b2ff3e5c39c)
- Call ID: 5156da5c-48e3-45ce-976f-3b2ff3e5c39c
+    source: Empress_Victoria_Princess_Royal
+  AssignClass (18df9a2b-52b9-4a7d-be80-bfc6fe0053c0)
+ Call ID: 18df9a2b-52b9-4a7d-be80-bfc6fe0053c0
   Args:
     type: :Ancestor
-    source: Carlos_I_of_Portugal
-  AssignClass (4249c10d-6580-47a4-8365-04f571f6bfef)
- Call ID: 4249c10d-6580-47a4-8365-04f571f6bfef
+    source: Princess_Sophie_of_Prussia
+  AssignClass (92f7d3b0-27a0-4bfc-b6c2-302fc12042bd)
+ Call ID: 92f7d3b0-27a0-4bfc-b6c2-302fc12042bd
   Args:
+    source: Queen_Victoria_of_the_United_Kingdom
     type: :Ancestor
-    source: Maria_Pia_of_Savoy
-  AssignClass (412042ee-7058-490c-a02f-8c8a7de2bf29)
- Call ID: 412042ee-7058-490c-a02f-8c8a7de2bf29
-  Args:
-    type: :Ancestor
-    source: Duchess_Helena_of_Mecklenburg-Schwerin
-  AssignClass (bb355127-ba3a-4604-9f96-2218e9497779)
- Call ID: bb355127-ba3a-4604-9f96-2218e9497779
-  Args:
-    type: :Ancestor
-    source: Maria_Amalia_of_the_Two_Sicilies
-  AssignClass (768c10b1-d49f-4c4c-b2ad-d77e8bae5653)
- Call ID: 768c10b1-d49f-4c4c-b2ad-d77e8bae5653
-  Args:
-    type: :Ancestor
-    source: Amélie_of_Orléans
-  AssignClass (fbd837f7-334e-4d92-8355-d8e05c5370cf)
- Call ID: fbd837f7-334e-4d92-8355-d8e05c5370cf
-  Args:
-    type: :Ancestor
-    source: Prince_Philippe_Count_of_Paris
-  AssignClass (1b48cff5-53ae-42e5-ac42-bdfdfdcaea9b)
- Call ID: 1b48cff5-53ae-42e5-ac42-bdfdfdcaea9b
-  Args:
-    type: :Ancestor
-    source: Prince_Antoine_Duke_of_Montpensier
-  AssignClass (cccd4f26-993e-4f59-890e-b5ef2e9a1b93)
- Call ID: cccd4f26-993e-4f59-890e-b5ef2e9a1b93
-  Args:
-    type: :Ancestor
-    source: Princess_Marie_Isabelle_dOrléans
-  AssignClass (aef30d25-a795-4638-8dc5-0a3bc8ed1a14)
- Call ID: aef30d25-a795-4638-8dc5-0a3bc8ed1a14
-  Args:
-    type: :Ancestor
-    source: Infanta_Luisa_Fernanda_of_Spain
-  Finish (247a367b-625e-45fe-9092-88714f69e8de)
- Call ID: 247a367b-625e-45fe-9092-88714f69e8de
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1423,92 +1127,70 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Infante_Dom_Manuel_II a :Man,
-          :Person ;
-      :hasFather data:Carlos_I_of_Portugal ;
-      :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
-
-  data:Prince_Dom_Lu%C3%ADs_Filipe a :Man,
-          :Person ;
-      :hasFather data:Carlos_I_of_Portugal ;
-      :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
-
-  data:Duchess_Helena_of_Mecklenburg-Schwerin a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:King_Lu%C3%ADs_I_of_Portugal a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Maria_Pia_of_Savoy a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_Antoine_Duke_of_Montpensier a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:King_Louis-Philippe_I_of_France ;
-      :hasMother data:Maria_Amalia_of_the_Two_Sicilies .
-
-  data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:King_Louis-Philippe_I_of_France ;
-      :hasMother data:Maria_Amalia_of_the_Two_Sicilies .
-
-  data:Prince_Philippe_Count_of_Paris a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
-      :hasMother data:Duchess_Helena_of_Mecklenburg-Schwerin .
-
-  data:Princess_Marie_Isabelle_dOrl%C3%A9ans a :Ancestor,
-          :Person,
+  data:Princess_Irene_of_Greece_and_Denmark a :Person,
           :Woman ;
-      :hasFather data:Prince_Antoine_Duke_of_Montpensier ;
-      :hasMother data:Infanta_Luisa_Fernanda_of_Spain .
+      :hasBirthYear 1904 ;
+      :hasBrother data:Alexander_of_Greece,
+          data:George_of_Greece,
+          data:Paul_of_Greece ;
+      :hasDeathYear 1974 ;
+      :hasFather data:King_Constantine_I_of_Greece ;
+      :hasMarriageYear 1939 ;
+      :hasMother data:Princess_Sophie_of_Prussia ;
+      :hasRelation data:Prince_Aimone_4th_Duke_of_Aosta ;
+      :hasSister data:Helen_of_Greece ;
+      :hasSon data:Amedeo_5th_Duke_of_Aosta .
 
-  data:Am%C3%A9lie_of_Orl%C3%A9ans a :Ancestor,
-          :Person,
+  data:Alexander_of_Greece a :Man .
+
+  data:Amedeo_5th_Duke_of_Aosta a :Man .
+
+  data:Empress_Victoria_Princess_Royal a :Ancestor,
           :Woman ;
-      :hasBirthYear 1865 ;
-      :hasDeathYear 1951 ;
-      :hasFather data:Prince_Philippe_Count_of_Paris ;
-      :hasMarriageYear 1886 ;
-      :hasMother data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
-      :hasRelation data:Carlos_I_of_Portugal .
+      :hasFather data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+      :hasMother data:Queen_Victoria_of_the_United_Kingdom .
 
-  data:King_Louis-Philippe_I_of_France a :Ancestor,
-          :Man,
-          :Person .
+  data:George_of_Greece a :Man .
 
-  data:Maria_Amalia_of_the_Two_Sicilies a :Ancestor,
-          :Person,
+  data:German_Emperor_Frederick_III a :Ancestor,
+          :Man .
+
+  data:Grand_Duchess_Olga_Konstantinovna_of_Russia a :Ancestor,
           :Woman .
 
-  data:Carlos_I_of_Portugal a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:King_Lu%C3%ADs_I_of_Portugal ;
-      :hasMother data:Maria_Pia_of_Savoy .
+  data:Helen_of_Greece a :Woman .
+
+  data:King_Constantine_I_of_Greece a :Ancestor,
+          :Man ;
+      :hasFather data:King_George_I_of_Greece ;
+      :hasMother data:Grand_Duchess_Olga_Konstantinovna_of_Russia .
+
+  data:King_George_I_of_Greece a :Ancestor,
+          :Man .
+
+  data:Paul_of_Greece a :Man .
+
+  data:Prince_Aimone_4th_Duke_of_Aosta a :Man .
+
+  data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Ancestor,
+          :Man .
+
+  data:Princess_Sophie_of_Prussia a :Ancestor,
+          :Woman ;
+      :hasFather data:German_Emperor_Frederick_III ;
+      :hasMother data:Empress_Victoria_Princess_Royal .
+
+  data:Queen_Victoria_of_the_United_Kingdom a :Ancestor,
+          :Woman .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (ba10fc33-341a-452d-b20b-bb205773345f)
- Call ID: ba10fc33-341a-452d-b20b-bb205773345f
+  ValidateShacl (d20b81a4-fcaf-4422-8209-7f86966de6e8)
+ Call ID: d20b81a4-fcaf-4422-8209-7f86966de6e8
   Args:
 
 ================================= Tool Message =================================
@@ -1519,6 +1201,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (4cd721d1-1d67-432d-a9cf-9bac2e91c9b8)
- Call ID: 4cd721d1-1d67-432d-a9cf-9bac2e91c9b8
+  Finish (bc65587e-28e6-47d4-a4ef-9e707fb2d115)
+ Call ID: bc65587e-28e6-47d4-a4ef-9e707fb2d115
   Args:

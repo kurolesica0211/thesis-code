@@ -2,28 +2,51 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Infanta_Mar%C3%ADa_Teresa_of_Spain a :Person,
+data:Theodora_of_Greece_and_Denmark a :Person,
         :Woman ;
-    :hasBirthYear 1882 ;
-    :hasDeathYear 1912 ;
-    :hasFather data:Alfonso_XII_of_Spain ;
-    :hasMarriageYear 1906 ;
-    :hasMother data:Maria_Christina_of_Austria .
+    :hasBirthYear 1906 ;
+    :hasBrother data:Philip_of_Greece_and_Denmark ;
+    :hasDaughter data:Margarita_of_Baden ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasRelation data:Berthold_of_Baden ;
+    :hasSister data:Cecilie_of_Greece,
+        data:Margarita_sister_of_Theodora,
+        data:Sophie_of_Greece ;
+    :hasSon data:Ludwig_of_Baden,
+        data:Maximilian_of_Baden .
 
-data:Prince_Ferdinand_of_Bavaria a :Man,
-        :Person ;
-    :hasFather data:Prince_Ludwig_Ferdinand_of_Bavaria ;
-    :hasMother data:Infanta_Mar%C3%ADa_de_la_Paz_of_Spain .
-
-data:Alfonso_XII_of_Spain a :Man,
-        :Person .
-
-data:Infanta_Mar%C3%ADa_de_la_Paz_of_Spain a :Person,
+data:Alice_of_Battenberg a :Ancestor,
+        :Person,
         :Woman .
 
-data:Maria_Christina_of_Austria a :Person,
+data:Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person .
+
+data:Berthold_of_Baden a :Man,
+        :Person .
+
+data:Cecilie_of_Greece a :Person,
         :Woman .
 
-data:Prince_Ludwig_Ferdinand_of_Bavaria a :Man,
+data:Ludwig_of_Baden a :Man,
         :Person .
+
+data:Margarita_of_Baden a :Person,
+        :Woman .
+
+data:Margarita_sister_of_Theodora a :Person,
+        :Woman .
+
+data:Maximilian_of_Baden a :Man,
+        :Person .
+
+data:Philip_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Sophie_of_Greece a :Person,
+        :Woman .
 

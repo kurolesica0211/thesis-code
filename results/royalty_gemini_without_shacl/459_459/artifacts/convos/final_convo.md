@@ -69,19 +69,29 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Stephan, Prince of Lippe (Stephan Leopold Justus Richard Prinz zur Lippe, .mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}pronounced ; born 24 May 1959), is the current head of the House of Lippe since 2015.
-Biography
+Daisy Isadora Louise Knatchbull (born 5 October 1992) is a British fashion designer, businesswoman and founder of Knatchbull (formerly The Deck), the first female-only tailor on Savile Row.
+Early life and family
 
-Born into the main branch of the House of Lippe, he was an only child and son of Armin, Prince of Lippe by his wife, Traute Becker.
-The prince is the owner of Detmold Castle which is open to the public.
-He is a lawyer and became  known for his opposition to a nature reserve in the district of Lippe which would have included large parts of his forests.
-Prince Stephan and his wife, Princess Maria currently live at Detmold Castle and have five children, three sons and two daughters.
+Knatchbull was born on 5 October 1992 to the Hon.
+Philip Knatchbull (born 1961) and Atalanta Cowan (born 1962).
+She has two younger half-brothers from her father's second marriage to Wendy Leach (born 1966), including Frederick "Freddy" Knatchbull (born 2003), known for his appearance on Made in Chelsea.
+Knatchbull was educated at Benenden School and graduated with a Bachelor of Arts in philosophy from the University of Leeds in 2015.
+In April 2026, Knatchbull and music executive Giovanni Damiani announced their engagement.
+Career
+
+Knatchbull worked as assistant to the fashion director of The Sunday Times Style magazine and as communications director at H. Huntsman & Sons.
+In 2017, Knatchbull gained press attention for wearing a morning suit in the Royal Enclosure at Royal Ascot.
+In 2019, Knatchbull launched Knatchbull, the first female-only tailor to have a shopfront on Savile Row.
+In October 2024, The Deck rebranded as Knatchbull.
+Knatchbull has dressed Catherine, Princess of Wales, India Hicks, Sarah, Duchess of York, Adjoa Andoh, Elizabeth Hurley, Jodie Whittaker, Melanie C and Olivia Arben.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -97,39 +107,9 @@ Prince Stephan and his wife, Princess Maria currently live at Detmold Castle and
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -144,6 +124,23 @@ Prince Stephan and his wife, Princess Maria currently live at Detmold Castle and
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -161,6 +158,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -228,29 +240,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -259,6 +263,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -271,6 +283,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -279,17 +293,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -317,6 +333,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -332,76 +432,288 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (384da6cb-49b9-4ab6-b82a-ac18ed81a1a1)
- Call ID: 384da6cb-49b9-4ab6-b82a-ac18ed81a1a1
+  AssignClass (0ac2e14c-c857-4366-81fa-90a94004247b)
+ Call ID: 0ac2e14c-c857-4366-81fa-90a94004247b
+  Args:
+    source: Daisy_Isadora_Louise_Knatchbull
+    type: :Woman
+  AssignClass (b50d134e-86bc-4ed3-b325-340e35e65536)
+ Call ID: b50d134e-86bc-4ed3-b325-340e35e65536
+  Args:
+    source: Daisy_Isadora_Louise_Knatchbull
+    type: :Person
+  AddLiteral (afe19efb-5658-4272-af21-fe55a17e9490)
+ Call ID: afe19efb-5658-4272-af21-fe55a17e9490
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1992
+    source: Daisy_Isadora_Louise_Knatchbull
+    literal_type: xsd:integer
+  AssignClass (271767e5-6346-4d9b-9e4f-63760d89ee2d)
+ Call ID: 271767e5-6346-4d9b-9e4f-63760d89ee2d
+  Args:
+    source: Philip_Knatchbull
+    type: :Man
+  AssignClass (cce43e69-5f4d-40fb-b223-a5c4a1e18d5c)
+ Call ID: cce43e69-5f4d-40fb-b223-a5c4a1e18d5c
   Args:
     type: :Person
-    source: Stephan_Prince_of_Lippe
-  AssignClass (0bddcc56-f82c-43cf-87c1-998b60e89fe1)
- Call ID: 0bddcc56-f82c-43cf-87c1-998b60e89fe1
-  Args:
-    type: :Man
-    source: Stephan_Prince_of_Lippe
-  AssignClass (dd8f1ba6-a604-4bdf-b440-88678aff41a0)
- Call ID: dd8f1ba6-a604-4bdf-b440-88678aff41a0
-  Args:
-    type: :Sex
-    source: Male
-  AddTriple (29ffd10e-cd88-4e18-a0c5-d1883e25890f)
- Call ID: 29ffd10e-cd88-4e18-a0c5-d1883e25890f
-  Args:
-    target: Male
-    relation: :hasSex
-    source: Stephan_Prince_of_Lippe
-  AddLiteral (a00b2d6b-037c-49d5-9cf5-974418980288)
- Call ID: a00b2d6b-037c-49d5-9cf5-974418980288
+    source: Philip_Knatchbull
+  AddLiteral (ceecaad5-d6e8-41f5-99de-c43a9cf1d11b)
+ Call ID: ceecaad5-d6e8-41f5-99de-c43a9cf1d11b
   Args:
     literal_type: xsd:integer
+    source: Philip_Knatchbull
     relation: :hasBirthYear
-    literal_value: 1959
-    source: Stephan_Prince_of_Lippe
-  AssignClass (decaee7c-f5e2-4a37-9eb9-0dd243ba01a9)
- Call ID: decaee7c-f5e2-4a37-9eb9-0dd243ba01a9
-  Args:
-    type: :Person
-    source: Armin_Prince_of_Lippe
-  AssignClass (ed125d9a-e212-4e92-a989-7a06f6dee9e8)
- Call ID: ed125d9a-e212-4e92-a989-7a06f6dee9e8
-  Args:
-    type: :Man
-    source: Armin_Prince_of_Lippe
-  AssignClass (ccedcf34-7dd2-4c43-8c70-939185bcb721)
- Call ID: ccedcf34-7dd2-4c43-8c70-939185bcb721
-  Args:
-    type: :Person
-    source: Traute_Becker
-  AssignClass (d65aa41b-858f-4a74-b68e-fec531c4b0bb)
- Call ID: d65aa41b-858f-4a74-b68e-fec531c4b0bb
+    literal_value: 1961
+  AssignClass (e30fdb9d-c67d-4ba7-962f-11030141fed2)
+ Call ID: e30fdb9d-c67d-4ba7-962f-11030141fed2
   Args:
     type: :Woman
-    source: Traute_Becker
-  AddTriple (61930364-bdbd-4858-a58a-6842715026b5)
- Call ID: 61930364-bdbd-4858-a58a-6842715026b5
+    source: Atalanta_Cowan
+  AssignClass (c6530ee2-e940-4140-b4c4-bb4d2e48ab0d)
+ Call ID: c6530ee2-e940-4140-b4c4-bb4d2e48ab0d
   Args:
-    target: Armin_Prince_of_Lippe
-    source: Stephan_Prince_of_Lippe
+    source: Atalanta_Cowan
+    type: :Person
+  AddLiteral (33de307a-7b79-4c19-baea-055f315b46a4)
+ Call ID: 33de307a-7b79-4c19-baea-055f315b46a4
+  Args:
+    literal_value: 1962
+    relation: :hasBirthYear
+    source: Atalanta_Cowan
+    literal_type: xsd:integer
+  AddTriple (cc2212be-2681-4434-8543-06f871f17683)
+ Call ID: cc2212be-2681-4434-8543-06f871f17683
+  Args:
+    target: Philip_Knatchbull
+    source: Daisy_Isadora_Louise_Knatchbull
     relation: :hasFather
-  AddTriple (49587cd7-f68d-4780-be10-eac9d51537cb)
- Call ID: 49587cd7-f68d-4780-be10-eac9d51537cb
+  AddTriple (bdd2e813-7a03-4245-b98a-0454a2ad19fd)
+ Call ID: bdd2e813-7a03-4245-b98a-0454a2ad19fd
   Args:
     relation: :hasMother
-    source: Stephan_Prince_of_Lippe
-    target: Traute_Becker
-  AssignClass (d52cfef8-bbbe-4479-9ccb-9c02c7ddc6a0)
- Call ID: d52cfef8-bbbe-4479-9ccb-9c02c7ddc6a0
+    target: Atalanta_Cowan
+    source: Daisy_Isadora_Louise_Knatchbull
+  AssignClass (326c34b4-0fb3-4b1e-90e3-2e233e8f7165)
+ Call ID: 326c34b4-0fb3-4b1e-90e3-2e233e8f7165
+  Args:
+    source: Wendy_Leach
+    type: :Woman
+  AssignClass (318ea443-2140-46c1-8f82-4195a1cc2db3)
+ Call ID: 318ea443-2140-46c1-8f82-4195a1cc2db3
   Args:
     type: :Person
-    source: Princess_Maria
-  AssignClass (96c3b162-ca24-44f7-ad7a-8f548595a043)
- Call ID: 96c3b162-ca24-44f7-ad7a-8f548595a043
+    source: Wendy_Leach
+  AddLiteral (22a5cd9e-2f00-401b-bc6b-6bf1f7906633)
+ Call ID: 22a5cd9e-2f00-401b-bc6b-6bf1f7906633
   Args:
-    type: :Woman
-    source: Princess_Maria
-  Finish (9f3c7e99-bedc-43b5-9b86-e8cf6fe5c48c)
- Call ID: 9f3c7e99-bedc-43b5-9b86-e8cf6fe5c48c
+    source: Wendy_Leach
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1966
+  AssignClass (0c0e0130-f455-4389-a060-f3a738c44985)
+ Call ID: 0c0e0130-f455-4389-a060-f3a738c44985
+  Args:
+    type: :Man
+    source: Frederick_Freddy_Knatchbull
+  AssignClass (24f9c3fc-fbf9-4131-a1dd-40403732a126)
+ Call ID: 24f9c3fc-fbf9-4131-a1dd-40403732a126
+  Args:
+    source: Frederick_Freddy_Knatchbull
+    type: :Person
+  AddLiteral (f98c863a-9c68-465d-9fd5-5ca8685b2f22)
+ Call ID: f98c863a-9c68-465d-9fd5-5ca8685b2f22
+  Args:
+    source: Frederick_Freddy_Knatchbull
+    literal_type: xsd:integer
+    literal_value: 2003
+    relation: :hasBirthYear
+  AddTriple (c4f7cf51-8496-46f1-9036-410122ecb6b5)
+ Call ID: c4f7cf51-8496-46f1-9036-410122ecb6b5
+  Args:
+    relation: :hasFather
+    source: Frederick_Freddy_Knatchbull
+    target: Philip_Knatchbull
+  AddTriple (1b5190e5-26eb-4b90-b218-24a191cee5a7)
+ Call ID: 1b5190e5-26eb-4b90-b218-24a191cee5a7
+  Args:
+    relation: :hasMother
+    source: Frederick_Freddy_Knatchbull
+    target: Wendy_Leach
+  AddTriple (361b5420-788e-49e7-957f-e17dd5a0498f)
+ Call ID: 361b5420-788e-49e7-957f-e17dd5a0498f
+  Args:
+    source: Frederick_Freddy_Knatchbull
+    target: Freddy_Knatchbull
+    relation: :knownAs
+  AssignClass (ee113c66-b740-4ef5-831f-1dbd88e2abb3)
+ Call ID: ee113c66-b740-4ef5-831f-1dbd88e2abb3
+  Args:
+    type: :Man
+    source: Giovanni_Damiani
+  AssignClass (59010951-8595-4614-864e-12d87225d185)
+ Call ID: 59010951-8595-4614-864e-12d87225d185
+  Args:
+    type: :Person
+    source: Giovanni_Damiani
+  Finish (8368b932-ac69-4965-83bf-eb5fe43bd521)
+ Call ID: 8368b932-ac69-4965-83bf-eb5fe43bd521
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Daisy_Isadora_Louise_Knatchbull a :Person,
+          :Woman ;
+      :hasBirthYear 1992 ;
+      :hasFather data:Philip_Knatchbull ;
+      :hasMother data:Atalanta_Cowan .
+
+  data:Frederick_Freddy_Knatchbull a :Man,
+          :Person ;
+      :hasBirthYear 2003 ;
+      :hasFather data:Philip_Knatchbull ;
+      :hasMother data:Wendy_Leach ;
+      :knownAs data:Freddy_Knatchbull .
+
+  data:Giovanni_Damiani a :Man,
+          :Person .
+
+  data:Atalanta_Cowan a :Person,
+          :Woman ;
+      :hasBirthYear 1962 .
+
+  data:Wendy_Leach a :Person,
+          :Woman ;
+      :hasBirthYear 1966 .
+
+  data:Philip_Knatchbull a :Man,
+          :Person ;
+      :hasBirthYear 1961 .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Freddy_Knatchbull']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (25740e35-ed43-4a62-9ba3-21b255c9b60b)
+ Call ID: 25740e35-ed43-4a62-9ba3-21b255c9b60b
+  Args:
+    source: Freddy_Knatchbull
+    type: :Man
+  AssignClass (538f51b2-bf99-45bb-8c5e-d89c4b1f185f)
+ Call ID: 538f51b2-bf99-45bb-8c5e-d89c4b1f185f
+  Args:
+    source: Freddy_Knatchbull
+    type: :Person
+  Finish (077377f7-1ed2-4fb9-8d8a-9fba8c5361ba)
+ Call ID: 077377f7-1ed2-4fb9-8d8a-9fba8c5361ba
   Args:

@@ -99,6 +99,8 @@ On 11 September 1999 in London, Sigismund married Elyssa Edmonstone (born 11 Sep
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -114,39 +116,9 @@ On 11 September 1999 in London, Sigismund married Elyssa Edmonstone (born 11 Sep
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -161,6 +133,23 @@ On 11 September 1999 in London, Sigismund married Elyssa Edmonstone (born 11 Sep
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -178,6 +167,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -245,29 +249,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -276,6 +272,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -288,6 +292,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -296,17 +302,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -334,6 +342,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -349,169 +441,159 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (132916c4-7410-4374-845d-19e42e39812b)
- Call ID: 132916c4-7410-4374-845d-19e42e39812b
+  AssignClass (1a5dc2c7-69f0-420c-b435-54ed1ffaae1b)
+ Call ID: 1a5dc2c7-69f0-420c-b435-54ed1ffaae1b
   Args:
+    source: :Archduke_Sigismund
     type: :Man
-    source: Sigismund
-  AssignClass (4af78867-591a-4959-a107-987615974ba9)
- Call ID: 4af78867-591a-4959-a107-987615974ba9
+  AssignClass (9915930b-cc5b-4704-94fb-7081d6e918b1)
+ Call ID: 9915930b-cc5b-4704-94fb-7081d6e918b1
   Args:
     type: :Person
-    source: Sigismund
-  AddLiteral (4d97e4a7-7cc2-4baf-bc8f-3d120c8730a2)
- Call ID: 4d97e4a7-7cc2-4baf-bc8f-3d120c8730a2
+    source: :Archduke_Sigismund
+  AddLiteral (e8fa2b34-f470-4ae5-8b42-57c73a218395)
+ Call ID: e8fa2b34-f470-4ae5-8b42-57c73a218395
   Args:
+    relation: :hasBirthYear
+    source: :Archduke_Sigismund
     literal_value: 1966
-    relation: :hasBirthYear
-    source: Sigismund
     literal_type: xsd:integer
-  AssignClass (583d28de-959e-41b5-8117-fc14070d98fc)
- Call ID: 583d28de-959e-41b5-8117-fc14070d98fc
+  AssignClass (c4f749cb-1d5f-4547-9dcf-2d65a9dd9c78)
+ Call ID: c4f749cb-1d5f-4547-9dcf-2d65a9dd9c78
+  Args:
+    source: :Archduke_Leopold_Franz
+    type: :Man
+  AssignClass (a02ffe70-0568-41ee-aeaf-e9d40d39a642)
+ Call ID: a02ffe70-0568-41ee-aeaf-e9d40d39a642
+  Args:
+    source: :Archduke_Leopold_Franz
+    type: :Person
+  AddTriple (81c4e4ba-3302-4299-9d7f-3e7fc8b9a748)
+ Call ID: 81c4e4ba-3302-4299-9d7f-3e7fc8b9a748
+  Args:
+    target: :Archduke_Leopold_Franz
+    source: :Archduke_Sigismund
+    relation: :hasFather
+  AssignClass (51f82632-3c16-403c-bc90-5a9366570143)
+ Call ID: 51f82632-3c16-403c-bc90-5a9366570143
   Args:
     type: :Man
-    source: LeopoldoFranz
-  AssignClass (348f0cdc-a612-44ac-996c-b18602f30cb3)
- Call ID: 348f0cdc-a612-44ac-996c-b18602f30cb3
+    source: :Archduke_Gottfried
+  AssignClass (8b43cb4e-bb62-4650-8b5f-2fa1d9e99f7f)
+ Call ID: 8b43cb4e-bb62-4650-8b5f-2fa1d9e99f7f
   Args:
+    source: :Archduke_Gottfried
     type: :Person
-    source: LeopoldoFranz
-  AddTriple (c8bb6ea8-c5dc-472c-b45e-c58c471a142e)
- Call ID: c8bb6ea8-c5dc-472c-b45e-c58c471a142e
+  AddTriple (c24d55cd-4de9-4a7b-807c-088dd420a8c0)
+ Call ID: c24d55cd-4de9-4a7b-807c-088dd420a8c0
   Args:
     relation: :hasFather
-    source: Sigismund
-    target: LeopoldoFranz
-  AssignClass (b69dca53-0ce9-4565-af1b-6e9444fb28bd)
- Call ID: b69dca53-0ce9-4565-af1b-6e9444fb28bd
+    source: :Archduke_Leopold_Franz
+    target: :Archduke_Gottfried
+  AssignClass (9b496a4a-6a99-449d-804d-01f5262469a6)
+ Call ID: 9b496a4a-6a99-449d-804d-01f5262469a6
   Args:
+    source: :Ferdinand_IV
     type: :Man
-    source: GottfriedOfAustria
-  AssignClass (e6d34692-4b1b-44c1-9bfd-9fb8d35878bc)
- Call ID: e6d34692-4b1b-44c1-9bfd-9fb8d35878bc
+  AssignClass (5cc7b7c8-7779-4109-93fd-40421807c53d)
+ Call ID: 5cc7b7c8-7779-4109-93fd-40421807c53d
   Args:
     type: :Person
-    source: GottfriedOfAustria
-  AddTriple (d1c5dc02-e351-42f4-8a69-211589f9cace)
- Call ID: d1c5dc02-e351-42f4-8a69-211589f9cace
+    source: :Ferdinand_IV
+  AssignClass (07c42812-f534-47d2-a5b3-b0ea4c250421)
+ Call ID: 07c42812-f534-47d2-a5b3-b0ea4c250421
   Args:
-    target: GottfriedOfAustria
-    source: LeopoldoFranz
-    relation: :hasFather
-  AssignClass (50909a70-7ff8-420a-8443-0e2796e0db90)
- Call ID: 50909a70-7ff8-420a-8443-0e2796e0db90
-  Args:
-    type: :Man
-    source: FerdinandIV
-  AssignClass (5824f216-787e-4678-97f3-1c913661c1a5)
- Call ID: 5824f216-787e-4678-97f3-1c913661c1a5
-  Args:
-    type: :Person
-    source: FerdinandIV
-  AddTriple (efaca95e-5a33-4439-8da7-c17be86c5872)
- Call ID: efaca95e-5a33-4439-8da7-c17be86c5872
-  Args:
-    source: LeopoldoFranz
-    relation: :hasAncestor
-    target: FerdinandIV
-  AssignClass (4dde9b14-eb6e-4f40-95d6-421728f6756c)
- Call ID: 4dde9b14-eb6e-4f40-95d6-421728f6756c
-  Args:
+    source: :Laetitia_d_Arenberg
     type: :Woman
-    source: LaetitiaDArenberg
-  AssignClass (63fcf1c0-1678-4bd1-85de-2a7c357e11d2)
- Call ID: 63fcf1c0-1678-4bd1-85de-2a7c357e11d2
+  AssignClass (910c3085-06bc-4dcd-b965-eddbf5dc8e15)
+ Call ID: 910c3085-06bc-4dcd-b965-eddbf5dc8e15
   Args:
+    source: :Laetitia_d_Arenberg
     type: :Person
-    source: LaetitiaDArenberg
-  AddTriple (64592e1f-7030-4a7f-80d5-38df47ded05d)
- Call ID: 64592e1f-7030-4a7f-80d5-38df47ded05d
+  AddTriple (9e230e7e-b2f5-44ee-9868-7f517f00cacb)
+ Call ID: 9e230e7e-b2f5-44ee-9868-7f517f00cacb
   Args:
-    target: LaetitiaDArenberg
-    source: Sigismund
+    target: :Laetitia_d_Arenberg
     relation: :hasMother
-  AssignClass (8e73da09-c49c-4754-bdbb-fbcb3a403777)
- Call ID: 8e73da09-c49c-4754-bdbb-fbcb3a403777
+    source: :Archduke_Sigismund
+  AssignClass (ded80705-d166-49f9-be30-9f43fb1a3265)
+ Call ID: ded80705-d166-49f9-be30-9f43fb1a3265
   Args:
+    source: :Elyssa_Edmonstone
     type: :Woman
-    source: ElyssaEdmonstone
-  AssignClass (69577492-c0d2-49e4-a108-a61ef1300c13)
- Call ID: 69577492-c0d2-49e4-a108-a61ef1300c13
+  AssignClass (8b5793db-d6b2-44c3-a6ab-e4083807e4c6)
+ Call ID: 8b5793db-d6b2-44c3-a6ab-e4083807e4c6
   Args:
     type: :Person
-    source: ElyssaEdmonstone
-  AddLiteral (2c4f95c8-e0c6-42ff-9a90-db40a52c235a)
- Call ID: 2c4f95c8-e0c6-42ff-9a90-db40a52c235a
+    source: :Elyssa_Edmonstone
+  AddLiteral (b686ee30-5ae1-46e7-a59d-dc76017366ac)
+ Call ID: b686ee30-5ae1-46e7-a59d-dc76017366ac
   Args:
-    literal_value: 1973
-    relation: :hasBirthYear
     literal_type: xsd:integer
-    source: ElyssaEdmonstone
-  AddTriple (028e001d-0158-4363-bdb1-8ae86705982b)
- Call ID: 028e001d-0158-4363-bdb1-8ae86705982b
+    literal_value: 1973
+    source: :Elyssa_Edmonstone
+    relation: :hasBirthYear
+  AddTriple (f8da1e2d-decf-4dec-b32a-75461476a146)
+ Call ID: f8da1e2d-decf-4dec-b32a-75461476a146
   Args:
-    source: Sigismund
     relation: :hasRelation
-    target: ElyssaEdmonstone
-  AddLiteral (eb1e93cb-59d4-46a1-91bd-08df0e32dbfe)
- Call ID: eb1e93cb-59d4-46a1-91bd-08df0e32dbfe
+    source: :Archduke_Sigismund
+    target: :Elyssa_Edmonstone
+  AddLiteral (96fbb20a-0b88-46c5-98be-b139ab941b74)
+ Call ID: 96fbb20a-0b88-46c5-98be-b139ab941b74
   Args:
-    relation: :hasMarriageYear
-    source: Sigismund
     literal_type: xsd:integer
     literal_value: 1999
-  AssignClass (83100853-f012-4a0b-a24f-42db97beb0ff)
- Call ID: 83100853-f012-4a0b-a24f-42db97beb0ff
+    relation: :hasMarriageYear
+    source: :Archduke_Sigismund
+  AssignClass (057a3256-660b-458d-a63b-ee407978ddda)
+ Call ID: 057a3256-660b-458d-a63b-ee407978ddda
   Args:
+    source: :Sir_Archibald_Bruce_Edmonstone
     type: :Man
-    source: ArchibaldBruceEdmonstone
-  AssignClass (a63d384f-edb4-4cb0-914e-b89b870ba8b8)
- Call ID: a63d384f-edb4-4cb0-914e-b89b870ba8b8
+  AssignClass (899ad20f-e1f7-42a8-9cf8-7f822d167709)
+ Call ID: 899ad20f-e1f7-42a8-9cf8-7f822d167709
   Args:
     type: :Person
-    source: ArchibaldBruceEdmonstone
-  AddTriple (8e1a8d7d-9895-41a3-ac73-8323f9af092f)
- Call ID: 8e1a8d7d-9895-41a3-ac73-8323f9af092f
+    source: :Sir_Archibald_Bruce_Edmonstone
+  AddTriple (a018ded1-2024-4357-8e0b-3ce4c21eb3b1)
+ Call ID: a018ded1-2024-4357-8e0b-3ce4c21eb3b1
   Args:
-    target: ArchibaldBruceEdmonstone
-    source: ElyssaEdmonstone
+    target: :Sir_Archibald_Bruce_Edmonstone
     relation: :hasFather
-  AssignClass (bcb5f449-e7ce-4895-ab70-3bf98ef5146c)
- Call ID: bcb5f449-e7ce-4895-ab70-3bf98ef5146c
+    source: :Elyssa_Edmonstone
+  AssignClass (9119d363-2ded-449a-aa30-0ad7f88dad2d)
+ Call ID: 9119d363-2ded-449a-aa30-0ad7f88dad2d
   Args:
     type: :Woman
-    source: JulietaIsabelDeakin
-  AssignClass (99664b38-9a86-4389-ad57-c7e8d2f5ec96)
- Call ID: 99664b38-9a86-4389-ad57-c7e8d2f5ec96
+    source: :Julieta_Isabel_Deakin
+  AssignClass (92557b9d-422b-48de-ac50-fe0126f472a3)
+ Call ID: 92557b9d-422b-48de-ac50-fe0126f472a3
   Args:
+    source: :Julieta_Isabel_Deakin
     type: :Person
-    source: JulietaIsabelDeakin
-  AddTriple (f5974054-96b0-4ae9-b1a6-2542699b1054)
- Call ID: f5974054-96b0-4ae9-b1a6-2542699b1054
+  AddTriple (45aa2e6f-9dd8-4de2-941b-936b8b408f2d)
+ Call ID: 45aa2e6f-9dd8-4de2-941b-936b8b408f2d
   Args:
-    source: ElyssaEdmonstone
     relation: :hasMother
-    target: JulietaIsabelDeakin
-  AssignClass (e7ce5f3c-ad85-420b-a907-03faf67cdd8a)
- Call ID: e7ce5f3c-ad85-420b-a907-03faf67cdd8a
+    source: :Elyssa_Edmonstone
+    target: :Julieta_Isabel_Deakin
+  AssignClass (e230cfc0-08b3-4074-9374-4ad7d6cd8730)
+ Call ID: e230cfc0-08b3-4074-9374-4ad7d6cd8730
   Args:
     type: :Man
-    source: PeterDeakin
-  AssignClass (193b37e9-3bfd-43cc-82d1-73668b168b52)
- Call ID: 193b37e9-3bfd-43cc-82d1-73668b168b52
+    source: :Major_General_Peter_Deakin
+  AssignClass (78056ee4-642b-46c5-9bb5-23bb7f2b831c)
+ Call ID: 78056ee4-642b-46c5-9bb5-23bb7f2b831c
   Args:
     type: :Person
-    source: PeterDeakin
-  AddTriple (a3433dac-61d7-46cf-8336-eebbd2767794)
- Call ID: a3433dac-61d7-46cf-8336-eebbd2767794
+    source: :Major_General_Peter_Deakin
+  AddTriple (0ed7b8b9-fbe4-476e-aeca-cb6311a35f62)
+ Call ID: 0ed7b8b9-fbe4-476e-aeca-cb6311a35f62
   Args:
+    target: :Major_General_Peter_Deakin
     relation: :hasFather
-    source: JulietaIsabelDeakin
-    target: PeterDeakin
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Julieta_Isabel_Deakin
 
 ================================= Tool Message =================================
 
@@ -628,42 +710,41 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Sigismund a :Man,
+  data:Archduke_Sigismund a :Man,
           :Person ;
       :hasBirthYear 1966 ;
-      :hasFather data:LeopoldoFranz ;
+      :hasFather data:Archduke_Leopold_Franz ;
       :hasMarriageYear 1999 ;
-      :hasMother data:LaetitiaDArenberg ;
-      :hasRelation data:ElyssaEdmonstone .
+      :hasMother data:Laetitia_d_Arenberg ;
+      :hasRelation data:Elyssa_Edmonstone .
 
-  data:ArchibaldBruceEdmonstone a :Man,
+  data:Ferdinand_IV a :Man,
           :Person .
 
-  data:ElyssaEdmonstone a :Person,
+  data:Archduke_Gottfried a :Man,
+          :Person .
+
+  data:Archduke_Leopold_Franz a :Man,
+          :Person ;
+      :hasFather data:Archduke_Gottfried .
+
+  data:Elyssa_Edmonstone a :Person,
           :Woman ;
       :hasBirthYear 1973 ;
-      :hasFather data:ArchibaldBruceEdmonstone ;
-      :hasMother data:JulietaIsabelDeakin .
+      :hasFather data:Sir_Archibald_Bruce_Edmonstone ;
+      :hasMother data:Julieta_Isabel_Deakin .
 
-  data:FerdinandIV a :Man,
-          :Person .
-
-  data:GottfriedOfAustria a :Man,
-          :Person .
-
-  data:JulietaIsabelDeakin a :Person,
+  data:Julieta_Isabel_Deakin a :Person,
           :Woman ;
-      :hasFather data:PeterDeakin .
+      :hasFather data:Major_General_Peter_Deakin .
 
-  data:LaetitiaDArenberg a :Person,
+  data:Laetitia_d_Arenberg a :Person,
           :Woman .
 
-  data:LeopoldoFranz a :Man,
-          :Person ;
-      :hasAncestor data:FerdinandIV ;
-      :hasFather data:GottfriedOfAustria .
+  data:Major_General_Peter_Deakin a :Man,
+          :Person .
 
-  data:PeterDeakin a :Man,
+  data:Sir_Archibald_Bruce_Edmonstone a :Man,
           :Person .
 
 
@@ -672,182 +753,158 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (06a1246d-3967-4a16-b45f-ecaf39b68c5f)
- Call ID: 06a1246d-3967-4a16-b45f-ecaf39b68c5f
+  ValidateShacl (f791fadb-4165-420d-96a9-ab20e99bf173)
+ Call ID: f791fadb-4165-420d-96a9-ab20e99bf173
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:21
+Total violations:18
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'FerdinandIV' linked to 'LeopoldoFranz' via 'hasAncestor' is not classified as an ':Ancestor'.
+      The node Archduke_Leopold_Franz, defined as the father of Archduke_Sigismund, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(FerdinandIV, :Ancestor)
+      AssignClass(Archduke_Leopold_Franz, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'LeopoldoFranz' linked to 'Sigismund' via 'hasFather' is not classified as an ':Ancestor'.
+      The node Archduke_Gottfried, defined as the father of Archduke_Leopold_Franz, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(LeopoldoFranz, :Ancestor)
+      AssignClass(Archduke_Gottfried, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'GottfriedOfAustria' linked to 'LeopoldoFranz' via 'hasFather' is not classified as an ':Ancestor'.
+      The node Laetitia_d_Arenberg, defined as the mother of Archduke_Sigismund, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(GottfriedOfAustria, :Ancestor)
+      AssignClass(Laetitia_d_Arenberg, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'LaetitiaDArenberg' linked to 'Sigismund' via 'hasMother' is not classified as an ':Ancestor'.
+      The node Archduke_Leopold_Franz, defined as the father of Archduke_Sigismund, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(LaetitiaDArenberg, :Ancestor)
+      AssignClass(Archduke_Leopold_Franz, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'FerdinandIV' linked to 'LeopoldoFranz' via 'hasAncestor' is not classified as an ':Ancestor'.
+      The node Sir_Archibald_Bruce_Edmonstone, defined as the father of Elyssa_Edmonstone, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(FerdinandIV, :Ancestor)
+      AssignClass(Sir_Archibald_Bruce_Edmonstone, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'ArchibaldBruceEdmonstone' linked to 'ElyssaEdmonstone' via 'hasFather' is not classified as an ':Ancestor'.
+      The node Archduke_Gottfried, defined as the father of Archduke_Leopold_Franz, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(ArchibaldBruceEdmonstone, :Ancestor)
+      AssignClass(Archduke_Gottfried, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'GottfriedOfAustria' linked to 'LeopoldoFranz' via 'hasFather' is not classified as an ':Ancestor'.
+      The node Major_General_Peter_Deakin, defined as the father of Julieta_Isabel_Deakin, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(GottfriedOfAustria, :Ancestor)
+      AssignClass(Major_General_Peter_Deakin, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'PeterDeakin' linked to 'JulietaIsabelDeakin' via 'hasFather' is not classified as an ':Ancestor'.
+      The node Laetitia_d_Arenberg, defined as the mother of Archduke_Sigismund, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PeterDeakin, :Ancestor)
+      AssignClass(Laetitia_d_Arenberg, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'LeopoldoFranz' linked to 'Sigismund' via 'hasFather' is not classified as an ':Ancestor'.
+      The node Julieta_Isabel_Deakin, defined as the mother of Elyssa_Edmonstone, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(LeopoldoFranz, :Ancestor)
+      AssignClass(Julieta_Isabel_Deakin, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'JulietaIsabelDeakin' linked to 'ElyssaEdmonstone' via 'hasMother' is not classified as an ':Ancestor'.
+      The node Archduke_Leopold_Franz, defined as the father of Archduke_Sigismund, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(JulietaIsabelDeakin, :Ancestor)
+      AssignClass(Archduke_Leopold_Franz, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'LaetitiaDArenberg' linked to 'Sigismund' via 'hasMother' is not classified as an ':Ancestor'.
+      The node Major_General_Peter_Deakin, defined as the father of Julieta_Isabel_Deakin, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(LaetitiaDArenberg, :Ancestor)
+      AssignClass(Major_General_Peter_Deakin, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'FerdinandIV' linked to 'LeopoldoFranz' via 'hasAncestor' is not classified as an ':Ancestor'.
+      The node Archduke_Gottfried, defined as the father of Archduke_Leopold_Franz, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(FerdinandIV, :Ancestor)
+      AssignClass(Archduke_Gottfried, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'ArchibaldBruceEdmonstone' linked to 'ElyssaEdmonstone' via 'hasFather' is not classified as an ':Ancestor'.
+      The node Sir_Archibald_Bruce_Edmonstone, defined as the father of Elyssa_Edmonstone, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(ArchibaldBruceEdmonstone, :Ancestor)
+      AssignClass(Sir_Archibald_Bruce_Edmonstone, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'GottfriedOfAustria' linked to 'LeopoldoFranz' via 'hasFather' is not classified as an ':Ancestor'.
+      The node Laetitia_d_Arenberg, defined as the mother of Archduke_Sigismund, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(GottfriedOfAustria, :Ancestor)
+      AssignClass(Laetitia_d_Arenberg, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'PeterDeakin' linked to 'JulietaIsabelDeakin' via 'hasFather' is not classified as an ':Ancestor'.
+      The node Julieta_Isabel_Deakin, defined as the mother of Elyssa_Edmonstone, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PeterDeakin, :Ancestor)
+      AssignClass(Julieta_Isabel_Deakin, :Ancestor)
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'LeopoldoFranz' linked to 'Sigismund' via 'hasFather' is not classified as an ':Ancestor'.
+      The node Sir_Archibald_Bruce_Edmonstone, defined as the father of Elyssa_Edmonstone, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(LeopoldoFranz, :Ancestor)
+      AssignClass(Sir_Archibald_Bruce_Edmonstone, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'JulietaIsabelDeakin' linked to 'ElyssaEdmonstone' via 'hasMother' is not classified as an ':Ancestor'.
+      The node Major_General_Peter_Deakin, defined as the father of Julieta_Isabel_Deakin, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(JulietaIsabelDeakin, :Ancestor)
+      AssignClass(Major_General_Peter_Deakin, :Ancestor)
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'LaetitiaDArenberg' linked to 'Sigismund' via 'hasMother' is not classified as an ':Ancestor'.
+      The node Julieta_Isabel_Deakin, defined as the mother of Elyssa_Edmonstone, is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(LaetitiaDArenberg, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'ArchibaldBruceEdmonstone' linked to 'ElyssaEdmonstone' via 'hasFather' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(ArchibaldBruceEdmonstone, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'PeterDeakin' linked to 'JulietaIsabelDeakin' via 'hasFather' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(PeterDeakin, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'JulietaIsabelDeakin' linked to 'ElyssaEdmonstone' via 'hasMother' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(JulietaIsabelDeakin, :Ancestor)
+      AssignClass(Julieta_Isabel_Deakin, :Ancestor)
 
 
 
@@ -856,45 +913,36 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (470455f4-7a3c-4d31-9e07-6403f6e378ba)
- Call ID: 470455f4-7a3c-4d31-9e07-6403f6e378ba
+  AssignClass (3d7f4293-fb46-4ffb-b85a-a3691287fe0e)
+ Call ID: 3d7f4293-fb46-4ffb-b85a-a3691287fe0e
   Args:
-    source: FerdinandIV
+    source: :Archduke_Leopold_Franz
     type: :Ancestor
-  AssignClass (2da37f48-89cb-4068-997e-5c55d0702663)
- Call ID: 2da37f48-89cb-4068-997e-5c55d0702663
+  AssignClass (47387004-825a-42ee-a788-33a95706e77d)
+ Call ID: 47387004-825a-42ee-a788-33a95706e77d
   Args:
+    source: :Archduke_Gottfried
     type: :Ancestor
-    source: LeopoldoFranz
-  AssignClass (d8d35ce3-c819-4fa8-b121-f8c712250993)
- Call ID: d8d35ce3-c819-4fa8-b121-f8c712250993
+  AssignClass (6eba0072-777c-4883-bd96-0a0792888286)
+ Call ID: 6eba0072-777c-4883-bd96-0a0792888286
   Args:
-    source: GottfriedOfAustria
+    source: :Laetitia_d_Arenberg
     type: :Ancestor
-  AssignClass (0f653c99-fb68-487c-893e-03cb932f53cd)
- Call ID: 0f653c99-fb68-487c-893e-03cb932f53cd
+  AssignClass (2b40d9b9-0446-4be4-8ac7-506c2bb2e00a)
+ Call ID: 2b40d9b9-0446-4be4-8ac7-506c2bb2e00a
   Args:
+    source: :Sir_Archibald_Bruce_Edmonstone
     type: :Ancestor
-    source: LaetitiaDArenberg
-  AssignClass (63e075b6-19e2-4a0a-bd2e-f5377a07f774)
- Call ID: 63e075b6-19e2-4a0a-bd2e-f5377a07f774
+  AssignClass (748bd1a2-d27a-48b4-9af0-fbc96ea45e39)
+ Call ID: 748bd1a2-d27a-48b4-9af0-fbc96ea45e39
   Args:
-    source: ArchibaldBruceEdmonstone
+    source: :Major_General_Peter_Deakin
     type: :Ancestor
-  AssignClass (1905de31-b643-49e4-9619-029e9e1a0afb)
- Call ID: 1905de31-b643-49e4-9619-029e9e1a0afb
+  AssignClass (71b5e473-dece-4527-9c3d-031807471ac0)
+ Call ID: 71b5e473-dece-4527-9c3d-031807471ac0
   Args:
+    source: :Julieta_Isabel_Deakin
     type: :Ancestor
-    source: PeterDeakin
-  AssignClass (c5c7a56d-d2ac-44e3-93d0-0a260d1646d8)
- Call ID: c5c7a56d-d2ac-44e3-93d0-0a260d1646d8
-  Args:
-    type: :Ancestor
-    source: JulietaIsabelDeakin
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -923,48 +971,46 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Sigismund a :Man,
+  data:Archduke_Sigismund a :Man,
           :Person ;
       :hasBirthYear 1966 ;
-      :hasFather data:LeopoldoFranz ;
+      :hasFather data:Archduke_Leopold_Franz ;
       :hasMarriageYear 1999 ;
-      :hasMother data:LaetitiaDArenberg ;
-      :hasRelation data:ElyssaEdmonstone .
+      :hasMother data:Laetitia_d_Arenberg ;
+      :hasRelation data:Elyssa_Edmonstone .
 
-  data:ArchibaldBruceEdmonstone a :Ancestor,
+  data:Ferdinand_IV a :Man,
+          :Person .
+
+  data:Archduke_Gottfried a :Ancestor,
           :Man,
           :Person .
 
-  data:ElyssaEdmonstone a :Person,
+  data:Archduke_Leopold_Franz a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Archduke_Gottfried .
+
+  data:Elyssa_Edmonstone a :Person,
           :Woman ;
       :hasBirthYear 1973 ;
-      :hasFather data:ArchibaldBruceEdmonstone ;
-      :hasMother data:JulietaIsabelDeakin .
+      :hasFather data:Sir_Archibald_Bruce_Edmonstone ;
+      :hasMother data:Julieta_Isabel_Deakin .
 
-  data:FerdinandIV a :Ancestor,
-          :Man,
-          :Person .
-
-  data:GottfriedOfAustria a :Ancestor,
-          :Man,
-          :Person .
-
-  data:JulietaIsabelDeakin a :Ancestor,
+  data:Julieta_Isabel_Deakin a :Ancestor,
           :Person,
           :Woman ;
-      :hasFather data:PeterDeakin .
+      :hasFather data:Major_General_Peter_Deakin .
 
-  data:LaetitiaDArenberg a :Ancestor,
+  data:Laetitia_d_Arenberg a :Ancestor,
           :Person,
           :Woman .
 
-  data:LeopoldoFranz a :Ancestor,
+  data:Major_General_Peter_Deakin a :Ancestor,
           :Man,
-          :Person ;
-      :hasAncestor data:FerdinandIV ;
-      :hasFather data:GottfriedOfAustria .
+          :Person .
 
-  data:PeterDeakin a :Ancestor,
+  data:Sir_Archibald_Bruce_Edmonstone a :Ancestor,
           :Man,
           :Person .
 
@@ -974,8 +1020,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (0387356c-5232-4796-aafd-103ebbb156b2)
- Call ID: 0387356c-5232-4796-aafd-103ebbb156b2
+  ValidateShacl (0a82398c-7818-4fc6-8ea1-77bd67a4cd33)
+ Call ID: 0a82398c-7818-4fc6-8ea1-77bd67a4cd33
   Args:
 
 ================================= Tool Message =================================
@@ -986,6 +1032,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (22f7cac7-cac0-42b6-9343-081a7e73c8ee)
- Call ID: 22f7cac7-cac0-42b6-9343-081a7e73c8ee
+  Finish (8fede543-e3e1-43a6-8084-166b6af18770)
+ Call ID: 8fede543-e3e1-43a6-8084-166b6af18770
   Args:

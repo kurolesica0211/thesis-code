@@ -22,21 +22,23 @@ data:Prince_Michael_of_Yugoslavia a :Man,
 
 data:Prince_Serge_of_Yugoslavia a :Man,
         :Person ;
+    :hasFather data:Prince_Alexander_of_Yugoslavia ;
     :hasMother data:Princess_Maria_Pia_of_Savoy .
 
 data:Princess_Helene_of_Yugoslavia a :Person,
         :Woman ;
+    :hasFather data:Prince_Alexander_of_Yugoslavia ;
     :hasMother data:Princess_Maria_Pia_of_Savoy .
 
 data:Princess_Barbara_of_Liechtenstein a :Ancestor,
         :Person,
         :Woman .
 
-data:Prince_Alexander_of_Yugoslavia a :Ancestor,
-        :Man,
-        :Person .
-
 data:Princess_Maria_Pia_of_Savoy a :Ancestor,
         :Person,
         :Woman .
+
+data:Prince_Alexander_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person .
 

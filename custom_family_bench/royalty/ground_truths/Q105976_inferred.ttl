@@ -1,0 +1,168 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Kira_of_Prussia a :Person,
+        :Woman ;
+    rdfs:label "Princess Kira of Prussia"^^xsd:string ;
+    data:posIndicesFull "508:523"^^xsd:string ;
+    data:posIndicesPart "1359:1363"^^xsd:string ;
+    data:wdtLink wdt:Q77937 ;
+    :alsoKnownAs "Kira Auguste Viktoria Friederike Prinzessin von Preußen"^^xsd:string,
+        "Kira Prussia"^^xsd:string,
+        "Kira of Prussia"^^xsd:string,
+        "Princess Kira Auguste Viktoria Friederike of Prussia"^^xsd:string ;
+    :hasRelation data:Princess_Kira_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Kira_of_Prussia ;
+    :isBloodrelationOf data:Princess_Kira_of_Prussia ;
+    :isSiblingOf data:Princess_Kira_of_Prussia ;
+    :isSisterOf data:Princess_Kira_of_Prussia .
+
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Duchess Cecilie of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "236:275"^^xsd:string ;
+    data:posIndicesPart "1264:1271"^^xsd:string,
+        "1383:1390"^^xsd:string,
+        "1597:1604"^^xsd:string,
+        "289:296"^^xsd:string,
+        "688:695"^^xsd:string,
+        "735:742"^^xsd:string,
+        "885:892"^^xsd:string ;
+    data:wdtLink wdt:Q235812 ;
+    :alsoKnownAs "Cecilie, Crown Princess of Germany"^^xsd:string,
+        "Duchess Cecilie Auguste Marie of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasChild data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :hasDaughter data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :hasRelation data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Princess_Cecilie_Viktoria_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :isAuntOf data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :isParentOf data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :isSiblingOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "474:484"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Wilhelm-_German_Crown_Prince ;
+    :hasRelation data:Princess_Cecilie_Viktoria_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Wilhelm-_German_Crown_Prince ;
+    :isAncestorOf data:Princess_Cecilie_Viktoria_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Wilhelm-_German_Crown_Prince ;
+    :isParentOf data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Wilhelm-_German_Crown_Prince .
+
+data:Wilhelm-_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm, German Crown Prince"^^xsd:string ;
+    data:posIndicesFull "202:230"^^xsd:string ;
+    data:posIndicesPart "1135:1141"^^xsd:string,
+        "1165:1171"^^xsd:string,
+        "489:495"^^xsd:string,
+        "597:603"^^xsd:string,
+        "631:637"^^xsd:string,
+        "807:813"^^xsd:string ;
+    data:wdtLink wdt:Q57621 ;
+    :alsoKnownAs "Crown Prince Wilhelm"^^xsd:string,
+        "Friedrich Wilhelm Victor August Ernst"^^xsd:string ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBrother data:Wilhelm-_German_Crown_Prince ;
+    :hasChild data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :hasDaughter data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Princess_Cecilie_Viktoria_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm-_German_Crown_Prince ;
+    :isBrotherOf data:Wilhelm-_German_Crown_Prince ;
+    :isChildOf data:Wilhelm_II ;
+    :isFatherOf data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :isParentOf data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :isSiblingOf data:Wilhelm-_German_Crown_Prince ;
+    :isSonOf data:Wilhelm_II ;
+    :isUncleOf data:Princess_Cecilie_Viktoria_of_Prussia .
+
+data:Princess_Cecilie_Viktoria_of_Prussia a :Person,
+        :Woman ;
+    rdfs:label "Princess Cecilie Viktoria of Prussia"^^xsd:string ;
+    data:posIndicesFull "0:27"^^xsd:string ;
+    data:posIndicesPart "1264:1271"^^xsd:string,
+        "1383:1390"^^xsd:string,
+        "1597:1604"^^xsd:string,
+        "289:296"^^xsd:string,
+        "688:695"^^xsd:string,
+        "735:742"^^xsd:string,
+        "885:892"^^xsd:string ;
+    data:wdtLink wdt:Q105976 ;
+    :alsoKnownAs "Princess Cecilie of Prussia"^^xsd:string ;
+    :hasAncestor data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasFather data:Wilhelm-_German_Crown_Prince ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasParent data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :hasRelation data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Princess_Cecilie_Viktoria_of_Prussia,
+        data:Wilhelm-_German_Crown_Prince,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :isBloodrelationOf data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :isChildOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isDaughterOf data:Duchess_Cecilie_of_Mecklenburg-Schwerin,
+        data:Wilhelm-_German_Crown_Prince ;
+    :isSiblingOf data:Princess_Cecilie_Viktoria_of_Prussia ;
+    :isSisterOf data:Princess_Cecilie_Viktoria_of_Prussia .
+

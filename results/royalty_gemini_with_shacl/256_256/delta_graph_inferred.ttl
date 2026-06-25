@@ -1,0 +1,208 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Clare_Husted_Steel a :Person,
+        :Woman ;
+    :hasRelation data:3rd_Marquess_of_Milford_Haven,
+        data:Clare_Husted_Steel,
+        data:George_Alfred_Walker,
+        data:George_Ivar_Louis_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Jean_Maureen_Hatton,
+        data:Lord_Ivar_Mountbatten,
+        data:Michael_Spencer,
+        data:Sarah_Georgina_Walker ;
+    :hasSister data:Clare_Husted_Steel ;
+    :isBloodrelationOf data:Clare_Husted_Steel ;
+    :isSiblingOf data:Clare_Husted_Steel ;
+    :isSisterOf data:Clare_Husted_Steel .
+
+data:Michael_Spencer a :Man,
+        :Person ;
+    :hasBrother data:Michael_Spencer ;
+    :hasRelation data:3rd_Marquess_of_Milford_Haven,
+        data:Clare_Husted_Steel,
+        data:George_Alfred_Walker,
+        data:George_Ivar_Louis_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Jean_Maureen_Hatton,
+        data:Lord_Ivar_Mountbatten,
+        data:Michael_Spencer,
+        data:Sarah_Georgina_Walker ;
+    :isBloodrelationOf data:Michael_Spencer ;
+    :isBrotherOf data:Michael_Spencer ;
+    :isSiblingOf data:Michael_Spencer .
+
+data:Lord_Ivar_Mountbatten a :Man,
+        :Person ;
+    :hasBrother data:George_Ivar_Louis_Mountbatten,
+        data:Lord_Ivar_Mountbatten ;
+    :hasRelation data:3rd_Marquess_of_Milford_Haven,
+        data:Clare_Husted_Steel,
+        data:George_Alfred_Walker,
+        data:George_Ivar_Louis_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Jean_Maureen_Hatton,
+        data:Lord_Ivar_Mountbatten,
+        data:Michael_Spencer,
+        data:Sarah_Georgina_Walker ;
+    :isBloodrelationOf data:George_Ivar_Louis_Mountbatten,
+        data:Lord_Ivar_Mountbatten ;
+    :isBrotherOf data:George_Ivar_Louis_Mountbatten,
+        data:Lord_Ivar_Mountbatten ;
+    :isSiblingOf data:George_Ivar_Louis_Mountbatten,
+        data:Lord_Ivar_Mountbatten .
+
+data:3rd_Marquess_of_Milford_Haven a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:3rd_Marquess_of_Milford_Haven ;
+    :hasChild data:George_Ivar_Louis_Mountbatten ;
+    :hasRelation data:3rd_Marquess_of_Milford_Haven,
+        data:Clare_Husted_Steel,
+        data:George_Alfred_Walker,
+        data:George_Ivar_Louis_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Jean_Maureen_Hatton,
+        data:Lord_Ivar_Mountbatten,
+        data:Michael_Spencer,
+        data:Sarah_Georgina_Walker ;
+    :hasSon data:George_Ivar_Louis_Mountbatten ;
+    :isAncestorOf data:George_Ivar_Louis_Mountbatten ;
+    :isBloodrelationOf data:3rd_Marquess_of_Milford_Haven ;
+    :isBrotherOf data:3rd_Marquess_of_Milford_Haven ;
+    :isFatherOf data:George_Ivar_Louis_Mountbatten ;
+    :isParentOf data:George_Ivar_Louis_Mountbatten ;
+    :isSiblingOf data:3rd_Marquess_of_Milford_Haven ;
+    :isUncleOf data:George_Ivar_Louis_Mountbatten .
+
+data:George_Alfred_Walker a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_Alfred_Walker ;
+    :hasChild data:Sarah_Georgina_Walker ;
+    :hasDaughter data:Sarah_Georgina_Walker ;
+    :hasRelation data:3rd_Marquess_of_Milford_Haven,
+        data:Clare_Husted_Steel,
+        data:George_Alfred_Walker,
+        data:George_Ivar_Louis_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Jean_Maureen_Hatton,
+        data:Lord_Ivar_Mountbatten,
+        data:Michael_Spencer,
+        data:Sarah_Georgina_Walker ;
+    :isAncestorOf data:Sarah_Georgina_Walker ;
+    :isBloodrelationOf data:George_Alfred_Walker ;
+    :isBrotherOf data:George_Alfred_Walker ;
+    :isFatherOf data:Sarah_Georgina_Walker ;
+    :isParentOf data:Sarah_Georgina_Walker ;
+    :isSiblingOf data:George_Alfred_Walker ;
+    :isUncleOf data:Sarah_Georgina_Walker .
+
+data:Janet_Mercedes_Bryce a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:George_Ivar_Louis_Mountbatten ;
+    :hasRelation data:3rd_Marquess_of_Milford_Haven,
+        data:Clare_Husted_Steel,
+        data:George_Alfred_Walker,
+        data:George_Ivar_Louis_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Jean_Maureen_Hatton,
+        data:Lord_Ivar_Mountbatten,
+        data:Michael_Spencer,
+        data:Sarah_Georgina_Walker ;
+    :hasSister data:Janet_Mercedes_Bryce ;
+    :hasSon data:George_Ivar_Louis_Mountbatten ;
+    :isAncestorOf data:George_Ivar_Louis_Mountbatten ;
+    :isAuntOf data:George_Ivar_Louis_Mountbatten ;
+    :isBloodrelationOf data:Janet_Mercedes_Bryce ;
+    :isMotherOf data:George_Ivar_Louis_Mountbatten ;
+    :isParentOf data:George_Ivar_Louis_Mountbatten ;
+    :isSiblingOf data:Janet_Mercedes_Bryce ;
+    :isSisterOf data:Janet_Mercedes_Bryce .
+
+data:Jean_Maureen_Hatton a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sarah_Georgina_Walker ;
+    :hasDaughter data:Sarah_Georgina_Walker ;
+    :hasRelation data:3rd_Marquess_of_Milford_Haven,
+        data:Clare_Husted_Steel,
+        data:George_Alfred_Walker,
+        data:George_Ivar_Louis_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Jean_Maureen_Hatton,
+        data:Lord_Ivar_Mountbatten,
+        data:Michael_Spencer,
+        data:Sarah_Georgina_Walker ;
+    :hasSister data:Jean_Maureen_Hatton ;
+    :isAncestorOf data:Sarah_Georgina_Walker ;
+    :isAuntOf data:Sarah_Georgina_Walker ;
+    :isBloodrelationOf data:Jean_Maureen_Hatton ;
+    :isMotherOf data:Sarah_Georgina_Walker ;
+    :isParentOf data:Sarah_Georgina_Walker ;
+    :isSiblingOf data:Jean_Maureen_Hatton ;
+    :isSisterOf data:Jean_Maureen_Hatton .
+
+data:Sarah_Georgina_Walker a :Person,
+        :Woman ;
+    :hasAncestor data:George_Alfred_Walker,
+        data:Jean_Maureen_Hatton ;
+    :hasBirthYear 1961 ;
+    :hasFather data:George_Alfred_Walker ;
+    :hasMother data:Jean_Maureen_Hatton ;
+    :hasParent data:George_Alfred_Walker,
+        data:Jean_Maureen_Hatton ;
+    :hasRelation data:3rd_Marquess_of_Milford_Haven,
+        data:Clare_Husted_Steel,
+        data:George_Alfred_Walker,
+        data:George_Ivar_Louis_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Jean_Maureen_Hatton,
+        data:Lord_Ivar_Mountbatten,
+        data:Michael_Spencer,
+        data:Sarah_Georgina_Walker ;
+    :hasSister data:Sarah_Georgina_Walker ;
+    :isBloodrelationOf data:Sarah_Georgina_Walker ;
+    :isChildOf data:George_Alfred_Walker,
+        data:Jean_Maureen_Hatton ;
+    :isDaughterOf data:George_Alfred_Walker,
+        data:Jean_Maureen_Hatton ;
+    :isSiblingOf data:Sarah_Georgina_Walker ;
+    :isSisterOf data:Sarah_Georgina_Walker .
+
+data:George_Ivar_Louis_Mountbatten a :Man,
+        :Person ;
+    :hasAncestor data:3rd_Marquess_of_Milford_Haven,
+        data:Janet_Mercedes_Bryce ;
+    :hasBirthYear 1961 ;
+    :hasBrother data:George_Ivar_Louis_Mountbatten,
+        data:Lord_Ivar_Mountbatten ;
+    :hasFather data:3rd_Marquess_of_Milford_Haven ;
+    :hasMarriageYear 1989,
+        1997 ;
+    :hasMother data:Janet_Mercedes_Bryce ;
+    :hasParent data:3rd_Marquess_of_Milford_Haven,
+        data:Janet_Mercedes_Bryce ;
+    :hasRelation data:3rd_Marquess_of_Milford_Haven,
+        data:Clare_Husted_Steel,
+        data:George_Alfred_Walker,
+        data:George_Ivar_Louis_Mountbatten,
+        data:Janet_Mercedes_Bryce,
+        data:Jean_Maureen_Hatton,
+        data:Lord_Ivar_Mountbatten,
+        data:Michael_Spencer,
+        data:Sarah_Georgina_Walker ;
+    :isBloodrelationOf data:George_Ivar_Louis_Mountbatten,
+        data:Lord_Ivar_Mountbatten ;
+    :isBrotherOf data:George_Ivar_Louis_Mountbatten,
+        data:Lord_Ivar_Mountbatten ;
+    :isChildOf data:3rd_Marquess_of_Milford_Haven,
+        data:Janet_Mercedes_Bryce ;
+    :isSiblingOf data:George_Ivar_Louis_Mountbatten,
+        data:Lord_Ivar_Mountbatten ;
+    :isSonOf data:3rd_Marquess_of_Milford_Haven,
+        data:Janet_Mercedes_Bryce .
+

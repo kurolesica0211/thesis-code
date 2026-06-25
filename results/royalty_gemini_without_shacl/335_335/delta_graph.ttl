@@ -2,39 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alicia a :Woman ;
-    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld .
+data:Christian_of_Rosenborg a :Man,
+        :Person ;
+    :isBrotherOf data:Ingolf_of_Rosenborg .
 
-data:Christina a :Woman ;
-    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
-        data:Queen_Juliana .
+data:Elisabeth_of_Denmark a :Person,
+        :Woman ;
+    :isSisterOf data:Ingolf_of_Rosenborg .
 
-data:Irene a :Woman ;
-    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
-        data:Queen_Juliana .
+data:Frederick_Walter_Pedersen a :Man,
+        :Person ;
+    :isFatherOf data:Sussie_Hjorh%C3%B8y-Pedersen .
 
-data:Jonathan_Aitken a :Man ;
-    :isSonOf data:Prince_Bernhard_of_Lippe-Biesterfeld .
+data:Georg_Terney a :Man,
+        :Person ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1977 ;
+    :isFatherOf data:Inge_Terney .
 
-data:Margriet a :Woman ;
-    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
-        data:Queen_Juliana .
+data:Jenny_Kamilla_Hansen a :Person,
+        :Woman ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1990 ;
+    :isMotherOf data:Inge_Terney .
 
-data:Queen_Beatrix a :Woman ;
-    :isDaughterOf data:Prince_Bernhard_of_Lippe-Biesterfeld,
-        data:Queen_Juliana .
+data:Leopold_Rosanes_af_Rosenborg a :Man,
+        :Person .
 
-data:Baroness_Armgard_von_Sierstorpff-Cramm a :Woman .
+data:Ruth_Hjorh%C3%B8y a :Person,
+        :Woman ;
+    :isMotherOf data:Sussie_Hjorh%C3%B8y-Pedersen .
 
-data:Prince_Bernhard_of_Lippe a :Man .
+data:Christian_X_of_Denmark a :Man,
+        :Person .
 
-data:Queen_Juliana a :Woman .
+data:Knud_of_Denmark a :Man,
+        :Person ;
+    :hasFather data:Christian_X_of_Denmark .
 
-data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man ;
-    :hasBirthYear 1911 ;
-    :hasDeathYear 2004 ;
-    :hasFather data:Prince_Bernhard_of_Lippe ;
-    :hasMarriageYear 1937 ;
-    :hasMother data:Baroness_Armgard_von_Sierstorpff-Cramm ;
-    :hasRelation data:Queen_Juliana .
+data:Inge_Terney a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 1996 .
+
+data:Ingolf_of_Rosenborg a :Man,
+        :Person ;
+    :hasBirthYear 1940 ;
+    :hasFather data:Knud_of_Denmark ;
+    :hasMarriageYear 1968 ;
+    :knownAs "Count Ingolf of Rosenborg"^^xsd:string .
+
+data:Sussie_Hjorh%C3%B8y-Pedersen a :Person,
+        :Woman ;
+    :hasBirthYear 1950 .
 

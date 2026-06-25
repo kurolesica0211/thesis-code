@@ -1,0 +1,136 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Emmanuelle_de_Dampierre a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Emmanuelle de Dampierre"^^xsd:string ;
+    data:posIndicesFull "436:459"^^xsd:string ;
+    data:wdtLink wdt:Q3052995 ;
+    :alsoKnownAs "Emanuela de Dampierre"^^xsd:string,
+        "Emmanuela de Dampierre"^^xsd:string,
+        "Manuela Dampierre"^^xsd:string ;
+    :hasChild data:Prince_Gonzalo_de_Bourbon ;
+    :hasRelation data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia,
+        data:Prince_Gonzalo_de_Bourbon ;
+    :hasSex data:female ;
+    :hasSister data:Emmanuelle_de_Dampierre ;
+    :hasSon data:Prince_Gonzalo_de_Bourbon ;
+    :isAncestorOf data:Prince_Gonzalo_de_Bourbon ;
+    :isAuntOf data:Prince_Gonzalo_de_Bourbon ;
+    :isBloodrelationOf data:Emmanuelle_de_Dampierre ;
+    :isMotherOf data:Prince_Gonzalo_de_Bourbon ;
+    :isParentOf data:Prince_Gonzalo_de_Bourbon ;
+    :isSiblingOf data:Emmanuelle_de_Dampierre ;
+    :isSisterOf data:Emmanuelle_de_Dampierre .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alfonso XIII"^^xsd:string ;
+    data:posIndicesFull "266:278"^^xsd:string,
+        "514:526"^^xsd:string ;
+    data:posIndicesPart "1019:1026"^^xsd:string,
+        "657:664"^^xsd:string,
+        "779:786"^^xsd:string,
+        "856:863"^^xsd:string ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena"^^xsd:string,
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena"^^xsd:string,
+        "Alfonso XIII of Spain"^^xsd:string,
+        "Don Alfonso de Borbon y Habsburgo"^^xsd:string,
+        "Don Alfonso de Borbón y Habsburgo"^^xsd:string,
+        "The African"^^xsd:string ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasRelation data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia,
+        data:Prince_Gonzalo_de_Bourbon ;
+    :hasSex data:male ;
+    :hasSon data:Infante_Jaime-_Duke_of_Segovia ;
+    :isAncestorOf data:Infante_Jaime-_Duke_of_Segovia,
+        data:Prince_Gonzalo_de_Bourbon ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Infante_Jaime-_Duke_of_Segovia ;
+    :isParentOf data:Infante_Jaime-_Duke_of_Segovia ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Infante_Jaime-_Duke_of_Segovia .
+
+data:Infante_Jaime-_Duke_of_Segovia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Infante Jaime, Duke of Segovia"^^xsd:string ;
+    data:posIndicesFull "385:415"^^xsd:string ;
+    data:posIndicesPart "1442:1447"^^xsd:string,
+        "1557:1562"^^xsd:string,
+        "1741:1746"^^xsd:string,
+        "1787:1791"^^xsd:string ;
+    data:wdtLink wdt:Q703780 ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasChild data:Prince_Gonzalo_de_Bourbon ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia,
+        data:Prince_Gonzalo_de_Bourbon ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Gonzalo_de_Bourbon ;
+    :isAncestorOf data:Prince_Gonzalo_de_Bourbon ;
+    :isBloodrelationOf data:Infante_Jaime-_Duke_of_Segovia ;
+    :isBrotherOf data:Infante_Jaime-_Duke_of_Segovia ;
+    :isChildOf data:Alfonso_XIII ;
+    :isFatherOf data:Prince_Gonzalo_de_Bourbon ;
+    :isParentOf data:Prince_Gonzalo_de_Bourbon ;
+    :isSiblingOf data:Infante_Jaime-_Duke_of_Segovia ;
+    :isSonOf data:Alfonso_XIII ;
+    :isUncleOf data:Prince_Gonzalo_de_Bourbon .
+
+data:Prince_Gonzalo_de_Bourbon a :Man,
+        :Person ;
+    rdfs:label "Prince Gonzalo de Bourbon"^^xsd:string ;
+    data:wdtLink wdt:Q946985 ;
+    :alsoKnownAs "Gonzalo de Borbón y de Dampierre"^^xsd:string,
+        "Prince Gonzalo, Duke of Aquitaine"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasBrother data:Prince_Gonzalo_de_Bourbon ;
+    :hasFather data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasMother data:Emmanuelle_de_Dampierre ;
+    :hasParent data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasRelation data:Alfonso_XIII,
+        data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia,
+        data:Prince_Gonzalo_de_Bourbon ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Gonzalo_de_Bourbon ;
+    :isBrotherOf data:Prince_Gonzalo_de_Bourbon ;
+    :isChildOf data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia ;
+    :isSiblingOf data:Prince_Gonzalo_de_Bourbon ;
+    :isSonOf data:Emmanuelle_de_Dampierre,
+        data:Infante_Jaime-_Duke_of_Segovia .
+

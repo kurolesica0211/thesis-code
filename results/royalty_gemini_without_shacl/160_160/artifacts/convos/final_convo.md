@@ -69,40 +69,188 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Irene of Greece and Denmark, Duchess of Aosta (Greek: Πριγκίπισσα Ειρήνη της Ελλάδας και Δανίας; 13 February 1904 – 15 April 1974) was the fifth child and second daughter of King Constantine I of Greece and the former Princess Sophie of Prussia (sister of Kaiser Wilhelm II of Germany).
-She was a member of the Royal Families of Greece and Italy.
-Family and early life
+Princess Cecilie of Greece and Denmark (Greek: Καικιλία, romanized: Kaikilía; 22 June 1911 – 16 November 1937) was by birth a Greek and Danish princess who became titular Hereditary Grand Duchess of Hesse and by Rhine through her marriage to Prince Georg Donatus, pretender to the throne of the Grand Duchy of Hesse.
+She was also the third-eldest sister to Prince Philip of Greece and Denmark (later Duke of Edinburgh).
+The third of five children of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, Cecilie had a happy childhood.
+For the young princess and her relatives, these conflicts had dramatic consequences and led to their exile in Switzerland (between 1917 and 1920), and then in France (from 1922 to 1936).
+During their exile, Cecilie and her family depended on the generosity of their foreign relatives, in particular Marie Bonaparte (who offered them accommodation in Saint-Cloud) and Lady Louis Mountbatten (who supported them financially).
+The year 1929 was a turning point in Cecilie's life.
+She formed a relationship with her maternal cousin, Georg Donatus, Hereditary Grand Duke of Hesse.
+After marrying Georg Donatus in 1931, Cecilie moved to Darmstadt.
+Soon after, the princess and her family (except for Johanna who stayed behind),  embarked on a trip to the United Kingdom, where they were to attend the wedding of her brother-in-law Louis, Prince of Hesse and by Rhine, to Margaret Campbell Geddes.
+Repatriated to Darmstadt, their remains were buried in the Grand Ducal new mausoleum of Rosenhöhe Park on 23 November 1937.
+Biography
 
-Her Royal Highness Princess Irene of Greece and Denmark was born on 13 February 1904 in Athens.
-She had three elder brothers, George (1890), Alexander (1893) and Paul (1901), and one elder sister, Helen (1896).
-In 1927, her brother, George, announced her engagement to Prince Christian of Schaumburg-Lippe, a nephew of Christian X of Denmark, but no marriage occurred.
-Princess Irene’s paternal grandparents were King George I of Greece and his Queen, Grand Duchess Olga Konstantinovna of Russia.
-Her maternal grandparents were German Emperor Frederick III, and his Empress Consort, Victoria, Princess Royal.
-Empress Victoria was a daughter of Prince Albert of Saxe-Coburg and Gotha and Queen Victoria of the United Kingdom.
-Marriage
+Childhood
 
-Shortly afterwards, the Greek princess had to officially renounce the Orthodox faith and convert to the Catholic religion, as required by the laws of the House of Savoy.
-On 1 July 1939, Princess Irene married Prince Aimone, 4th Duke of Aosta (9 March 1900 – 29 January 1948).
-She was also a bridesmaid at the wedding of her cousin, Princess Marina of Greece and Denmark
-In March 1942, Irene, who was a trained nurse, headed a Red Cross hospital train going to Russia to repatriate wounded Italian soldiers.
-Prince Aimone became the 4th Duke of Aosta on 3 March 1942, following the death of his elder brother, Amedeo.
-After the Allied armistice with the Kingdom of Italy, Irene was interned by the Germans at the Hotel Ifen in Hirschegg, Austria, July 1944, along with her infant son, her sister-in-law and two nieces.
-Prince Aimone died on 29 January 1948 in Buenos Aires.
-Upon his death, his son Amedeo succeeded him as the 5th Duke of Aosta.
-In June 1948, the family was allowed to return to Italy, and Irene spent the rest of her life living outside of Florence where she became a member of the Dominican Third Order and continued her social work.
-Irene died on 15 April 1974 in Fiesole, Italy, after fighting a long illness.
-Finally, in 1996, the ashes of the Duke and Duchess of Aosta were transferred to one of the necropolises of the House of Savoy, at the Basilica of Superga in Turin.
+The Balkan Wars and the First World War
+
+The third daughter of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, Cecilie was born at Tatoi Palace, near Athens, on 22 June 1911.
+Baptised on 10 July, her godparents were King George V of the United Kingdom, Ernest Louis, Grand Duke of Hesse, Prince Nicholas of Greece and Denmark and Grand Duchess Vera Konstantinovna of Russia.
+Cecilie spent a happy childhood within a united household that was already made up of two daughters, Margarita (1905–1981) and Theodora (1906–1969), and was further expanded with the arrival of Sophie (1914–2001).
+Coming from a cosmopolitan dynasty, Cecilie and her sisters communicated in English with their mother, but they also used French, German, and Greek with their relatives and their governesses.
+In 1911 and 1913, Cecilie thus went to the United Kingdom and Germany, where she was introduced to her mother's relatives.
+Cecilie's early years were marked by the instability that the Kingdom of Greece experienced at the start of the twentieth century.
+Between 1912 and 1913, Greece engaged in the Balkan Wars, during which Prince Andrew served under Crown Prince Constantine while Princess Alice worked as a nurse for wounded soldiers.
+They were, however, especially affected by the First World War, which created division between different branches of their family as Greece set aside its neutrality due to the Triple Entente.
+Cecilie and her sisters were in the royal palace of Athens when it was bombarded by the French Navy during the battle in the capital on 1 December 1916.
+Exile in Switzerland
+
+In June 1917, King Constantine I was finally deposed and driven out of Greece by the Allies, who replaced him on the throne by his second son, the young Alexander.
+Fifteen days later, Cecilie's family was in turn forced into exile in order to remove the possibility of the new monarch being influenced by those close to him.
+Following the Russian Revolution in 1917, some of Cecilie's Romanov relatives were murdered in Russia.
+Shortly after these events, the Grand Ducal family of Hesse, to which Cecilie was closely related through her mother, was overthrown along with all the other German dynasties during the winter of 1918–1919.
+Finally, the family went through some health problems, with Cecilie contracting the flu and scarlet fever in 1920.
+At the beginning of 1919, Cecilie reunited with her paternal grandmother, the Dowager Queen Olga, spared by the Bolsheviks thanks to the diplomatic intervention of the Danes.
+In the months that followed, Cecilie attended a family reunion with her maternal grandparents, and met her aunt Louise and uncle Louis Mountbatten.
+For Cecilie, who now formed a duo with her younger sister Sophie, exile was not only synonymous with sadness; it was also an opportunity for long family reunions and walks in the mountains.
+Brief return to Greece
+
+On 2 October 1920, King Alexander, cousin of Cecilie, was bitten by a domestic monkey during a walk in Tatoi.
+The death of the sovereign caused a violent institutional crisis in Greece.
+Humiliated, he retired abroad while a referendum reinstalled Constantine I on the throne.
+Prince Andrew was received triumphantly in Athens on 23 November 1920, and his wife and four daughters joined him a few days later.
+Cecilie then returned to live in Corfu with her family.
+At the same time, Princess Alice found out that she was pregnant again.
+On 10 June 1921, the family welcomed Philip (1921–2021), later the Duke of Edinburgh.
+The joy that surrounded this birth, however, was obscured by the absence of Prince Andrew, who joined the Greek forces in Asia Minor during the Occupation of Smyrna.
+Despite worries about the war, Cecilie and her siblings enjoyed life at Mon Repos, where they received a visit from their maternal grandmother and their aunt Louise in the spring of 1922.
+In the park near the palace, built on an ancient cemetery, the princesses devoted themselves to archeology and discovered some pottery, bronze pieces and bones.
+During this period, Cecilie and her sisters also participated, for the first time, in a number of great social events.
+In March 1921, the princesses attended in Athens the wedding of their cousin Helen to Crown Prince Carol of Romania.
+In July 1922, they went to the United Kingdom to be bridesmaids at the wedding of their uncle Louis Mountbatten to the wealthy heiress Edwina Ashley, whose beauty fascinated Cecilie.
+However, the military defeat of Greece against Turkey and the political unrest that it caused disrupted the life of Cecilie and her family.
+In September 1922, Constantine I abdicated in favor of his eldest son, George II.
+A month later, Prince Andrew was arrested before being tried by a military tribunal, which declared him responsible for the defeat of the Sakarya.
+Saved from execution by the intervention of foreign chancelleries, the prince was condemned to banishment and cashiering.
+The prince and his relatives hurriedly left Greece aboard HMS Calypso in early December 1922.
+Teenage years and young adulthood
+
+In the UK and France
+
+After a journey of several weeks, which led them successively to Italy, France and the United Kingdom, Cecilie, her parents and her siblings settled in Saint-Cloud in 1923.
+Settled in a house adjoining that of Princess Marie Bonaparte, the family depended for seven years on her generosity, and two other aunts of Cecilie: first Princess Anastasia and then Lady Louis Mountbatten.
+Marie Bonaparte financed the studies of her nieces and nephew, while Lady Mountbatten got into the habit of offering her nieces her "used" clothes.
+In fact, Cecilie's parents had little income and the children were the regular witnesses to their money problems and their difficulty in maintaining a household.
+Deprived of their Greek nationality after the proclamation of the Second Hellenic Republic in March 1924, Cecilie and her family received Danish passports from their cousin King Christian X. In Saint-Cloud, the small group spent a relatively simple life.
+Cecilie and her siblings continued their studies in private institutions, and, during their free time, their father took them regularly to Paris or to the Bois de Boulogne.
+Every Sunday, the family was received for lunch by Princess Marie Bonaparte and Prince George of Greece and Denmark.
+Cecilie and her family also regularly met Prince Nicholas of Greece and Denmark and his wife Elena Vladimirovna of Russia, who had also chosen France to spend their time in exile with their daughters.
+Finally, they often saw their cousin Princess Margaret of Denmark, who settled in the Paris region after her marriage to Prince René of Bourbon-Parma.
+Cecilie and her relatives made frequent stays abroad, and in particular in the United Kingdom.
+In 1923, the princess was invited to London to be a bridesmaid at the wedding of her aunt Louise Mountbatten to the future Gustav VI Adolf of Sweden.
+Engagement and family difficulties
+
+Considered by her maternal grandmother, the Dowager Marchioness of Milford Haven, as the prettiest of the four daughters of Andrew and Alice, Cecilie made her debut in the United Kingdom, during the summer of 1928.
+Aged 17, she took part in her first ball at the Earl and Countess of Ellesmere's Bridgewater House, before attending the Cowes Week and then being invited by King George V to stay a few days in Balmoral, Scotland.
+Although her two elder sisters were still single, and the relative poverty of her parents was not unrelated to this situation, Cecilie's family did not give up on finding a good match for her.
+Now Crown Princess of Sweden, her aunt Louise was planning to betroth her to Crown Prince Frederik of Denmark, but the plan did not succeed.
+Since her childhood, Cecilie had in fact been in contact with her cousins, Princes Georg Donatus and Louis of Hesse, whom she first met in 1919, while she was living in exile in Switzerland.
+The relationship between the princess and Georg Donatus turned into a romance during the year 1929 and the two were unofficially engaged in early 1930.
+At that time, Cecilie was just 18 years old and Georg Donatus, the pretender to the throne of Hesse, was 23.
+The happiness of the princess was however clouded by the situation of her mother, whose mental health deteriorated sharply after the celebration of her silver wedding anniversary with Prince Andrew, in 1928.
+Struck by a mental health crisis, the princess convinced herself that she possessed healing powers and that she was receiving divine messages about potential husbands for her daughters.
+Distraught by the situation, Prince Andrew finally made the decision to place his wife in a sanatorium.
+He took advantage of his family's stay in Darmstadt, on the occasion of the celebration for Cecilie's official engagement in April 1930, to send Alice to a psychiatric hospital located in Kreuzlingen, Switzerland.
+Marriage and settling in Germany
+
+Wedding
+
+With her sister Sophie having become engaged almost at the same time as her to another member of the House of Hesse, Prince Christoph of Hesse, Cecilie made the preparations for her wedding in the company of her younger sister, aged 16.
+The nuptials of Sophie and Christoph were celebrated at Schlosshotel Kronberg in Kronberg im
+The wedding of Cecilie and Georg Donatus took place at the Neue Palais in Darmstadt on 2 February 1931.
+To the surprise of the foreign guests, who expected a much colder welcome from a population that had dethroned Grand Duke Ernest Louis in 1918, the wedding aroused the enthusiasm of the people, who gathered in droves to attend the event and cheer their former princely family.
+The ceremony brought together some fifty guests from all over Europe, but took place in the absence of the bride's mother Princess Alice, who was still hospitalized in Switzerland.
+Motherhood and reconnecting with Alice
+
+After their marriage, Cecilie and Georg Donatus moved to Schloß Wolfsgarten, the main residence of Grand Duke Ernest Louis and his wife Grand Duchess Eleonore, since their deposition.
+In Hesse, the young couple led a relatively simple life, punctuated by frequent stays abroad.
+Cecilie was involved in several charitable organizations and became the head of Alice Frauen Verein, an association dedicated to women.
+She also quickly gave birth to three children: Prince Ludwig (born 25 October 1931), Prince Alexander (born 14 April 1933) and Princess Johanna of Hesse (born 20 September 1936).
+Very close to her family, Cecilie was concerned about the situation of her mother, who remained institutionalized until the beginning of 1933.
+During this period, the relationship between Alice and her children became complicated.
+Cecilie maintained correspondence with her mother, and visited her once in Kreuzlingen.
+However, Alice was angry with those close to her for having her institutionalized and her anger manifested itself in fits of rage, which pushed her, for example, to tear up the photograph that Cecilie sent her after the birth of her first child.
+Once released from the hospital, Alice made known her desire to stay away from her family and four years passed before she put an end to her voluntary exile.
+During this period, Cecilie continued, despite everything, to write to her and to send her photos of the family.
+In December 1936, Alice finally made the decision to reconnect with her family, and it was Cecilie that she got closer to first.
+Association with the Nazi Party and restoration of the monarchy in Greece
+
+Prince Christoph of Hesse, Cecilie's brother-in-law, joined the Nazi Party in 1931 and the SS in 1932.
+For their part, the princes of Hesse kept their distance from the far-right party for a long time because the Grand Duke Ernest Louis had no sympathy for the Führer's ideas.
+On that date, Georg Donatus and Louis, the two sons of the former sovereign, joined the Nazi Party.
+Following the example of her husband and her brother-in-law, Cecilie joined the party at the same time.
+While in Germany the establishment of the Nazi regime prevented any plans to restore the monarchy, in Greece the republic collapsed after the putsch of General Georgios Kondylis in November 1935.
+Reinstalled on the throne by a referendum, George II then lifted the banishment sentence issued against Cecilie's father in 1922.
+In November 1936, the King of the Hellenes also organized the return of the remains and ashes of members of the Greek royal family who died in exile.
+This event was the opportunity for Cecilie and her family to return, for the first time, to Greece after fourteen years of banishment.
+Titular Grand Duchess of Hesse and by Rhine
+
+In 1937, Cecilie became pregnant again.
+At the same time, the health of her father-in-law, Grand Duke Ernest Louis, deteriorated sharply.
+Suffering from lung cancer, the former ruler hoped to live long enough to attend the wedding of his second son, Louis, to Hon.
+Margaret Campbell Geddes, scheduled to take place in London on 23 October 1937.
+However, the Grand Duke died a fortnight before the ceremony, on 9 October, making Georg Donatus the new head of House of Hesse-Darmstadt.
+Under these circumstances, the marriage of Prince Louis was postponed to 20 November, in order to give his family time to organize the funeral of Ernest Louis, which took place on 12 October.
+Death
+
+With Prince Louis' wedding approaching, Cecilie and her family went to Frankfurt on 16 November 1937 to board a plane of the Belgian company Sabena which was to take them to London, via a stopover in Ostend where it was planned to pick up two other passengers.
+The small group, which consisted of Cecilie (eight months pregnant), Georg Donatus, their two sons Ludwig (aged 6) and Alexander (aged 4) and the Dowager Grand Duchess Eleonore, was accompanied by Baron Joachim von Riedesel, chosen by Louis to be his witness, and Alice Hahn.
+According to biographer Philip Eade, Cecilie hated taking the plane and she always dressed in black when she made a trip like this.
+However, during the maneuver, the aircraft struck the chimney of a factory, causing the destruction of a wing and an engine of the aircraft.
+The accident caused the immediate death of all passengers, including a newborn baby whom Cecilie seemed to have given birth to during the flight.
+Funeral
+
+Despite the death of his family, Prince Louis married Margaret Campbell Geddes, in London, the day after the plane crash.
+After the wedding, which took place in a climate of extreme gloom, the couple went to Belgium to collect the remains of Cecilie and her family, kept until then at the civil hospital in Ostend.
+Once back in Darmstadt, Louis and his wife adopted their niece, Johanna, the only child of Cecilie and Georg Donatus not to have taken part in the plane trip due to her very young age.
+The funeral of Cecilie and her relatives took place in Darmstadt on 23 November 1937.
+It was also an opportunity for Cecilie's parents to meet for the first time since 1931.
+Reconciled by tragedy, Andrew and Alice nevertheless continued separate lives after the funeral.
+The trauma of her daughter's death healed Alice, whose mental state returned to a completely normal level once the funeral was over.
+After the ceremony, the remains of Cecilie and her family were buried in a family vault at the Grand Ducal mausoleum of Rosenhöhe, not far from the graves of her godfather and father-in-law Grand Duke Ernest Louis and his daughter Elisabeth.
+In popular culture
+
+Commemoration
+
+On 16 November 2017 in Darmstadt, the Hessian State Archives, in collaboration with the Foundation of the House of Hesse (Hessische Hausstiftung), held a commemorative ceremony in honor of the victims of the accident in Ostend.
+On this occasion, wreaths were placed on the vault of Cecilie and her family, in Rosenhöhe.
+Documentaries
+
+The plane crash that caused the death of Princess Cecilie and her family was recounted in the sixth episode of the documentary series Mémoires d'exil (1999) by Frédéric Mitterrand.
+TV series
+
+The death of Cecilie and her family is also mentioned by the character of Prince Philip, in the third episode ("Windsor") of the first season of the series The Crown (2016), and by a journalist, in the second episode ("A Company of Men") of the second season (2017).
+It is also depicted in the ninth episode of season 2 ("Paterfamilias"), during a flashback to Philip's early years.
+In this episode, Princess Cecilie is portrayed by German actress Leonie Benesch.
+However, this fictionalised version wrongly implied that Philip was to blame for Cecilie taking the flight, whereas in reality "her decision to travel to London had nothing to do with Philip".
+Novels
+
+The death of Cecilie and her family is also recounted in the novel A Matter of Honor by Jeffrey Archer (1986).
+In this fictionalized version, the accident in Ostend is caused by the KGB, which wants to recover the jewels of Tsarina Alexandra Fedorovna, bequeathed to the House of Hesse-Darmstadt after the Russian Revolution.
 Ancestry
+
+Notes and references
+
+Notes
 
 References
 
-Edward Hanson, The Wandering Princess: Princess Helene of France, Duchess of Aosta (1871-1951) .
+Bibliography
+
+On Cecilie and her family
+
+Biographies of Cecilie's relatives
+
+Other works on royal families
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -118,39 +266,9 @@ Edward Hanson, The Wandering Princess: Princess Helene of France, Duchess of Aos
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -165,6 +283,23 @@ Edward Hanson, The Wandering Princess: Princess Helene of France, Duchess of Aos
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -182,6 +317,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -249,29 +399,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,6 +422,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -292,6 +442,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -300,17 +452,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -338,6 +492,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -353,268 +591,209 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e45965fd-e213-4be4-a397-ff6b1339c720)
- Call ID: e45965fd-e213-4be4-a397-ff6b1339c720
+  AssignClass (da2b3b70-f30f-42c8-bfb1-17dc51f81d6b)
+ Call ID: da2b3b70-f30f-42c8-bfb1-17dc51f81d6b
   Args:
-    source: Princess_Irene_of_Greece_and_Denmark
+    source: Cecilie_of_Greece_and_Denmark
     type: :Woman
-  AssignClass (daac7825-f496-42ef-b318-91f8155f8d89)
- Call ID: daac7825-f496-42ef-b318-91f8155f8d89
-  Args:
-    source: Princess_Irene_of_Greece_and_Denmark
-    type: :Person
-  AssignClass (c71a06a9-86e1-41be-9830-c637bf157cc9)
- Call ID: c71a06a9-86e1-41be-9830-c637bf157cc9
-  Args:
-    type: :Man
-    source: King_Constantine_I_of_Greece
-  AssignClass (05ecc5ff-8723-4225-a0c2-d880437f672b)
- Call ID: 05ecc5ff-8723-4225-a0c2-d880437f672b
+  AssignClass (255e94cc-5278-4c1f-8ef7-c31de91d7cf0)
+ Call ID: 255e94cc-5278-4c1f-8ef7-c31de91d7cf0
   Args:
     type: :Person
-    source: King_Constantine_I_of_Greece
-  AssignClass (e8bda522-5bb1-436e-9ce6-3ea2be63eeb7)
- Call ID: e8bda522-5bb1-436e-9ce6-3ea2be63eeb7
+    source: Cecilie_of_Greece_and_Denmark
+  AddLiteral (b3e268dd-89d8-48e1-a93b-cba808748753)
+ Call ID: b3e268dd-89d8-48e1-a93b-cba808748753
   Args:
-    source: Princess_Sophie_of_Prussia
-    type: :Woman
-  AssignClass (9756dab9-0dde-4326-a816-8864e8ab0bd0)
- Call ID: 9756dab9-0dde-4326-a816-8864e8ab0bd0
-  Args:
-    source: Princess_Sophie_of_Prussia
-    type: :Person
-  AddLiteral (cd95fca7-4da5-4625-b59d-f33d6fe81ca1)
- Call ID: cd95fca7-4da5-4625-b59d-f33d6fe81ca1
-  Args:
+    literal_value: 1911
     relation: :hasBirthYear
-    source: Princess_Irene_of_Greece_and_Denmark
-    literal_value: 1904
     literal_type: xsd:integer
-  AddLiteral (fe753bda-39d9-4f50-be65-ed31c056cc82)
- Call ID: fe753bda-39d9-4f50-be65-ed31c056cc82
+    source: Cecilie_of_Greece_and_Denmark
+  AddLiteral (fc64a79a-c211-492e-9ef3-8dc93dcfb27f)
+ Call ID: fc64a79a-c211-492e-9ef3-8dc93dcfb27f
   Args:
-    source: Princess_Irene_of_Greece_and_Denmark
-    literal_value: 1974
-    literal_type: xsd:integer
+    literal_value: 1937
     relation: :hasDeathYear
-  AddTriple (e99a1a89-c4eb-46d6-b611-825bf0a05ea1)
- Call ID: e99a1a89-c4eb-46d6-b611-825bf0a05ea1
+    literal_type: xsd:integer
+    source: Cecilie_of_Greece_and_Denmark
+  AssignClass (2d5dc099-2ce3-4b39-bd9a-e81de640a8b8)
+ Call ID: 2d5dc099-2ce3-4b39-bd9a-e81de640a8b8
   Args:
-    target: King_Constantine_I_of_Greece
-    source: Princess_Irene_of_Greece_and_Denmark
+    source: Andrew_of_Greece_and_Denmark
+    type: :Man
+  AssignClass (f986eaea-b2d0-4273-b2f2-d70863811137)
+ Call ID: f986eaea-b2d0-4273-b2f2-d70863811137
+  Args:
+    source: Andrew_of_Greece_and_Denmark
+    type: :Person
+  AssignClass (dba61103-8eca-48ef-8f66-be1ca4cba224)
+ Call ID: dba61103-8eca-48ef-8f66-be1ca4cba224
+  Args:
+    type: :Woman
+    source: Alice_of_Battenberg
+  AssignClass (2d0fcc14-c43e-4fb3-9277-8457c550bc9b)
+ Call ID: 2d0fcc14-c43e-4fb3-9277-8457c550bc9b
+  Args:
+    type: :Person
+    source: Alice_of_Battenberg
+  AddTriple (a5c635f0-d30b-407b-86f2-0b42fc0046e0)
+ Call ID: a5c635f0-d30b-407b-86f2-0b42fc0046e0
+  Args:
     relation: :hasFather
-  AddTriple (5021f779-6104-4427-b8bd-2ebc94984ed7)
- Call ID: 5021f779-6104-4427-b8bd-2ebc94984ed7
+    target: Andrew_of_Greece_and_Denmark
+    source: Cecilie_of_Greece_and_Denmark
+  AddTriple (0bdc3f50-c159-43ff-a231-a9ccde91e0c5)
+ Call ID: 0bdc3f50-c159-43ff-a231-a9ccde91e0c5
   Args:
-    source: Princess_Irene_of_Greece_and_Denmark
-    target: Princess_Sophie_of_Prussia
+    source: Cecilie_of_Greece_and_Denmark
+    target: Alice_of_Battenberg
     relation: :hasMother
-  AddTriple (04e57fd1-a4cf-4fa8-b1af-30a89ca1de74)
- Call ID: 04e57fd1-a4cf-4fa8-b1af-30a89ca1de74
+  AssignClass (81158e8e-fcf2-40da-8feb-56ec70550598)
+ Call ID: 81158e8e-fcf2-40da-8feb-56ec70550598
   Args:
-    relation: :hasSex
-    target: :Female
-    source: Princess_Irene_of_Greece_and_Denmark
-  AddTriple (9254312b-0b47-417a-959a-080284175b08)
- Call ID: 9254312b-0b47-417a-959a-080284175b08
-  Args:
-    relation: :hasSex
-    source: King_Constantine_I_of_Greece
-    target: :Male
-  AddTriple (e5067bf3-ec58-459d-ba44-2825e9c30688)
- Call ID: e5067bf3-ec58-459d-ba44-2825e9c30688
-  Args:
-    relation: :hasSex
-    source: Princess_Sophie_of_Prussia
-    target: :Female
-  AssignClass (e530b114-82ef-4aad-ac9b-95d6b4c9d1ad)
- Call ID: e530b114-82ef-4aad-ac9b-95d6b4c9d1ad
-  Args:
-    source: Prince_Aimone
+    source: Philip_of_Greece_and_Denmark
     type: :Man
-  AssignClass (bf526e92-4c39-40c3-a7d7-acb0b85405a1)
- Call ID: bf526e92-4c39-40c3-a7d7-acb0b85405a1
+  AssignClass (7be819bc-d10d-429f-9cac-d20ed1ffd55c)
+ Call ID: 7be819bc-d10d-429f-9cac-d20ed1ffd55c
   Args:
     type: :Person
-    source: Prince_Aimone
-  AddTriple (40c45694-2c88-4b70-8855-b8b41a25d3d6)
- Call ID: 40c45694-2c88-4b70-8855-b8b41a25d3d6
+    source: Philip_of_Greece_and_Denmark
+  AddTriple (14f8baaf-ed8e-46d1-bba9-ee2c8ebe474e)
+ Call ID: 14f8baaf-ed8e-46d1-bba9-ee2c8ebe474e
   Args:
-    target: :Male
-    source: Prince_Aimone
-    relation: :hasSex
-  AddLiteral (e6e6ab31-ee80-4d6c-ac67-8f5c69dec33b)
- Call ID: e6e6ab31-ee80-4d6c-ac67-8f5c69dec33b
+    relation: :hasBrother
+    target: Philip_of_Greece_and_Denmark
+    source: Cecilie_of_Greece_and_Denmark
+  AssignClass (2f3078eb-7b67-480f-96aa-7f52d4b7380f)
+ Call ID: 2f3078eb-7b67-480f-96aa-7f52d4b7380f
   Args:
-    source: Princess_Irene_of_Greece_and_Denmark
-    literal_value: 1939
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AddTriple (024f28dd-5eef-4f0f-addf-27b92d4ee37b)
- Call ID: 024f28dd-5eef-4f0f-addf-27b92d4ee37b
+    source: Georg_Donatus
+    type: :Man
+  AssignClass (9d9b7d8e-3607-42b7-8429-80de68c3cb4a)
+ Call ID: 9d9b7d8e-3607-42b7-8429-80de68c3cb4a
   Args:
+    type: :Person
+    source: Georg_Donatus
+  AddTriple (ddc90072-8a20-4f4b-ab25-5c0ef618b778)
+ Call ID: ddc90072-8a20-4f4b-ab25-5c0ef618b778
+  Args:
+    source: Cecilie_of_Greece_and_Denmark
     relation: :hasRelation
-    target: Prince_Aimone
-    source: Princess_Irene_of_Greece_and_Denmark
-  AddLiteral (a32f722d-ecbf-4b64-9958-3ca80f1c32b2)
- Call ID: a32f722d-ecbf-4b64-9958-3ca80f1c32b2
+    target: Georg_Donatus
+  AddLiteral (dc2d413f-4c81-46c6-aca1-7aaf750e9cfc)
+ Call ID: dc2d413f-4c81-46c6-aca1-7aaf750e9cfc
   Args:
     literal_type: xsd:integer
-    source: Prince_Aimone
-    literal_value: 1900
-    relation: :hasBirthYear
-  AddLiteral (82ce419b-1784-4941-ac18-e8461ee5661b)
- Call ID: 82ce419b-1784-4941-ac18-e8461ee5661b
+    source: Cecilie_of_Greece_and_Denmark
+    literal_value: 1931
+    relation: :hasMarriageYear
+  AddTriple (7fad1e8b-7f8c-4f80-bd9c-ab7bd91d6e7c)
+ Call ID: 7fad1e8b-7f8c-4f80-bd9c-ab7bd91d6e7c
   Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1948
-    source: Prince_Aimone
-  Finish (49097116-7241-4041-9fa2-6a238985059c)
- Call ID: 49097116-7241-4041-9fa2-6a238985059c
+    relation: :hasFather
+    target: Cecilie_of_Greece_and_Denmark
+    source: Georg_Donatus
+  AddTriple (d69b0298-e659-4e13-a4a8-bd0c7d1c6c54)
+ Call ID: d69b0298-e659-4e13-a4a8-bd0c7d1c6c54
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Princess_Irene_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :hasBirthYear 1904 ;
-      :hasDeathYear 1974 ;
-      :hasFather data:King_Constantine_I_of_Greece ;
-      :hasMarriageYear 1939 ;
-      :hasMother data:Princess_Sophie_of_Prussia ;
-      :hasRelation data:Prince_Aimone ;
-      :hasSex data:Female .
-
-  data:King_Constantine_I_of_Greece a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Prince_Aimone a :Man,
-          :Person ;
-      :hasBirthYear 1900 ;
-      :hasDeathYear 1948 ;
-      :hasSex data:Male .
-
-  data:Princess_Sophie_of_Prussia a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male', 'Female']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (e19c084c-3211-44b2-ab9d-91372447e587)
- Call ID: e19c084c-3211-44b2-ab9d-91372447e587
+    relation: :hasMother
+    target: Cecilie_of_Greece_and_Denmark
+    source: Georg_Donatus
+  AssignClass (f6a2a1bb-601d-4d3b-a961-99745bc465c6)
+ Call ID: f6a2a1bb-601d-4d3b-a961-99745bc465c6
   Args:
-    source: :Male
-    type: :Sex
-  AssignClass (f69498b8-882f-4361-90ff-ed065d720c80)
- Call ID: f69498b8-882f-4361-90ff-ed065d720c80
+    type: :Man
+    source: Ludwig_of_Hesse
+  AssignClass (2017e90e-433a-491e-b6c8-08a460a6c694)
+ Call ID: 2017e90e-433a-491e-b6c8-08a460a6c694
   Args:
-    type: :Sex
-    source: :Female
-  Finish (69d0e9a3-be33-45da-8a0a-8d36696fb42a)
- Call ID: 69d0e9a3-be33-45da-8a0a-8d36696fb42a
+    source: Ludwig_of_Hesse
+    type: :Person
+  AddTriple (fab9a0b6-f421-40ff-9792-15c6edb44078)
+ Call ID: fab9a0b6-f421-40ff-9792-15c6edb44078
+  Args:
+    source: Cecilie_of_Greece_and_Denmark
+    relation: :hasSon
+    target: Ludwig_of_Hesse
+  AssignClass (3bcf5303-a0a3-4de3-950e-48756e30e438)
+ Call ID: 3bcf5303-a0a3-4de3-950e-48756e30e438
+  Args:
+    source: Alexander_of_Hesse
+    type: :Man
+  AssignClass (4bd7bed7-9d35-452e-a043-94d84d6661f6)
+ Call ID: 4bd7bed7-9d35-452e-a043-94d84d6661f6
+  Args:
+    source: Alexander_of_Hesse
+    type: :Person
+  AddTriple (ff0d321b-de14-4ce7-a742-ce10beed766d)
+ Call ID: ff0d321b-de14-4ce7-a742-ce10beed766d
+  Args:
+    relation: :hasSon
+    target: Alexander_of_Hesse
+    source: Cecilie_of_Greece_and_Denmark
+  AssignClass (4c333591-7215-46f2-a5df-a6ba515d634b)
+ Call ID: 4c333591-7215-46f2-a5df-a6ba515d634b
+  Args:
+    source: Johanna_of_Hesse
+    type: :Woman
+  AssignClass (5cf1ce5e-0e2a-4c4f-91e6-358110c6f987)
+ Call ID: 5cf1ce5e-0e2a-4c4f-91e6-358110c6f987
+  Args:
+    type: :Person
+    source: Johanna_of_Hesse
+  AddTriple (5833a250-cc12-444a-85e6-6501ed166905)
+ Call ID: 5833a250-cc12-444a-85e6-6501ed166905
+  Args:
+    relation: :hasDaughter
+    target: Johanna_of_Hesse
+    source: Cecilie_of_Greece_and_Denmark
+  AssignClass (51281079-22e8-44e1-a204-5878071d9f4f)
+ Call ID: 51281079-22e8-44e1-a204-5878071d9f4f
+  Args:
+    type: :Woman
+    source: Margarita_of_Greece_and_Denmark
+  AssignClass (66480940-b074-42df-9bde-48258d280f24)
+ Call ID: 66480940-b074-42df-9bde-48258d280f24
+  Args:
+    type: :Person
+    source: Margarita_of_Greece_and_Denmark
+  AddTriple (06b7cbce-8e5e-40e1-a870-8974ad376d35)
+ Call ID: 06b7cbce-8e5e-40e1-a870-8974ad376d35
+  Args:
+    relation: :hasSister
+    target: Margarita_of_Greece_and_Denmark
+    source: Cecilie_of_Greece_and_Denmark
+  AssignClass (cafd8ae2-e66c-417b-9417-f2dafae1c97a)
+ Call ID: cafd8ae2-e66c-417b-9417-f2dafae1c97a
+  Args:
+    source: Theodora_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (9bf64815-3b66-44d5-bc4b-476de47f0394)
+ Call ID: 9bf64815-3b66-44d5-bc4b-476de47f0394
+  Args:
+    source: Theodora_of_Greece_and_Denmark
+    type: :Person
+  AddTriple (8335b560-5a61-462d-b643-579e2f3c5dc8)
+ Call ID: 8335b560-5a61-462d-b643-579e2f3c5dc8
+  Args:
+    target: Theodora_of_Greece_and_Denmark
+    relation: :hasSister
+    source: Cecilie_of_Greece_and_Denmark
+  AssignClass (57bb1327-6b8a-4716-aab2-2f8d4b9dd611)
+ Call ID: 57bb1327-6b8a-4716-aab2-2f8d4b9dd611
+  Args:
+    source: Sophie_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (89332e9e-c6b8-447e-9b2b-cabd5013abc1)
+ Call ID: 89332e9e-c6b8-447e-9b2b-cabd5013abc1
+  Args:
+    type: :Person
+    source: Sophie_of_Greece_and_Denmark
+  AddTriple (1726b1dc-1427-4886-980d-25df747f19c8)
+ Call ID: 1726b1dc-1427-4886-980d-25df747f19c8
+  Args:
+    source: Cecilie_of_Greece_and_Denmark
+    relation: :hasSister
+    target: Sophie_of_Greece_and_Denmark
+  Finish (20749cbd-3e03-4ca6-ae28-7bfbeadea931)
+ Call ID: 20749cbd-3e03-4ca6-ae28-7bfbeadea931
   Args:

@@ -107,6 +107,8 @@ While visiting family in Germany, Cecilie died in Königstein im Taunus on 21 Ap
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +124,9 @@ While visiting family in Germany, Cecilie died in Königstein im Taunus on 21 Ap
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +141,23 @@ While visiting family in Germany, Cecilie died in Königstein im Taunus on 21 Ap
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,208 +449,107 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (83f23084-21df-40c4-a71f-f5e15477e476)
- Call ID: 83f23084-21df-40c4-a71f-f5e15477e476
+  AssignClass (c18b9987-d01e-4794-8514-a1c7cf23f934)
+ Call ID: c18b9987-d01e-4794-8514-a1c7cf23f934
   Args:
+    source: Cecilie_of_Prussia
     type: :Woman
-    source: Cecilie_of_Prussia
-  AssignClass (2f3c9027-da16-4adf-bb79-a34bef032483)
- Call ID: 2f3c9027-da16-4adf-bb79-a34bef032483
-  Args:
-    type: :Person
-    source: Cecilie_of_Prussia
-  AddLiteral (f32f0169-1a3b-4077-a1e9-0bb5fe8a751d)
- Call ID: f32f0169-1a3b-4077-a1e9-0bb5fe8a751d
-  Args:
-    source: Cecilie_of_Prussia
-    literal_type: xsd:integer
-    literal_value: 1917
-    relation: :hasBirthYear
-  AddLiteral (481d15b4-5df4-41fe-be8a-a29e8efe8d74)
- Call ID: 481d15b4-5df4-41fe-be8a-a29e8efe8d74
-  Args:
-    literal_value: 1975
-    source: Cecilie_of_Prussia
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AssignClass (331c101e-3d10-4b16-a650-7dbda59b1009)
- Call ID: 331c101e-3d10-4b16-a650-7dbda59b1009
+  AssignClass (51d8dcaa-35fd-4997-a13f-4e69c891391a)
+ Call ID: 51d8dcaa-35fd-4997-a13f-4e69c891391a
   Args:
     type: :Man
     source: Wilhelm_German_Crown_Prince
-  AssignClass (1b4ba109-07a9-434c-9be8-4f0711c5f0bf)
- Call ID: 1b4ba109-07a9-434c-9be8-4f0711c5f0bf
-  Args:
-    type: :Person
-    source: Wilhelm_German_Crown_Prince
-  AssignClass (a04d919b-13c9-417f-afa5-fd89f5c79e78)
- Call ID: a04d919b-13c9-417f-afa5-fd89f5c79e78
+  AssignClass (d2c6d920-9d2f-4b1e-9b3c-d9355b3cc891)
+ Call ID: d2c6d920-9d2f-4b1e-9b3c-d9355b3cc891
   Args:
     type: :Woman
     source: Cecilie_of_Mecklenburg-Schwerin
-  AssignClass (941a48dc-af46-452f-9e32-cacad5a48e5b)
- Call ID: 941a48dc-af46-452f-9e32-cacad5a48e5b
+  AssignClass (f2583425-3f55-455a-bcd8-5c9ce1d79610)
+ Call ID: f2583425-3f55-455a-bcd8-5c9ce1d79610
   Args:
-    source: Cecilie_of_Mecklenburg-Schwerin
-    type: :Person
-  AddTriple (746ddea7-a786-4128-bca5-b1ec936f5a46)
- Call ID: 746ddea7-a786-4128-bca5-b1ec936f5a46
+    type: :Man
+    source: Clyde_Kenneth_Harris
+  AssignClass (74af3e67-3539-4e07-a119-d1d666b421b7)
+ Call ID: 74af3e67-3539-4e07-a119-d1d666b421b7
   Args:
-    target: Wilhelm_German_Crown_Prince
+    type: :Woman
+    source: Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris
+  AssignClass (ba79e1d9-e21a-4b91-ac25-37e61ecc21a5)
+ Call ID: ba79e1d9-e21a-4b91-ac25-37e61ecc21a5
+  Args:
+    type: :Man
+    source: John_Mitchell_Johnson
+  AssignClass (285f9a28-e2de-4faa-a9f1-ec0db51810b6)
+ Call ID: 285f9a28-e2de-4faa-a9f1-ec0db51810b6
+  Args:
+    source: Philip_Louis_Johnson
+    type: :Man
+  AddLiteral (908b3d4a-9945-4740-8535-bc0c081b73c5)
+ Call ID: 908b3d4a-9945-4740-8535-bc0c081b73c5
+  Args:
+    source: Cecilie_of_Prussia
+    relation: :hasBirthYear
+    literal_value: 1917
+    literal_type: xsd:integer
+  AddLiteral (b56edc25-f15f-4721-8b5b-d8b57423e426)
+ Call ID: b56edc25-f15f-4721-8b5b-d8b57423e426
+  Args:
+    source: Cecilie_of_Prussia
+    relation: :hasDeathYear
+    literal_value: 1975
+    literal_type: xsd:integer
+  AddTriple (9c4d06c0-bb84-4c12-87c9-3f5d120c3309)
+ Call ID: 9c4d06c0-bb84-4c12-87c9-3f5d120c3309
+  Args:
     relation: :hasFather
     source: Cecilie_of_Prussia
-  AddTriple (022b8421-1925-4722-ba85-f0e0317a9dc9)
- Call ID: 022b8421-1925-4722-ba85-f0e0317a9dc9
+    target: Wilhelm_German_Crown_Prince
+  AddTriple (af2a5edb-1e00-4c67-8654-9bdcfa98ef23)
+ Call ID: af2a5edb-1e00-4c67-8654-9bdcfa98ef23
   Args:
-    target: Cecilie_of_Mecklenburg-Schwerin
     relation: :hasMother
     source: Cecilie_of_Prussia
-  AssignClass (d153f170-ed1e-4f54-a699-061f262a9194)
- Call ID: d153f170-ed1e-4f54-a699-061f262a9194
-  Args:
-    source: Clyde_Kenneth_Harris
-    type: :Man
-  AssignClass (b49374b7-325b-4741-953e-aae2fea7fe43)
- Call ID: b49374b7-325b-4741-953e-aae2fea7fe43
-  Args:
-    source: Clyde_Kenneth_Harris
-    type: :Person
-  AddTriple (5f0e4adf-2236-42e7-939b-04953d6d516e)
- Call ID: 5f0e4adf-2236-42e7-939b-04953d6d516e
+    target: Cecilie_of_Mecklenburg-Schwerin
+  AddTriple (58112d97-044d-474b-ab66-bd9dad6bdef0)
+ Call ID: 58112d97-044d-474b-ab66-bd9dad6bdef0
   Args:
     source: Cecilie_of_Prussia
-    target: Clyde_Kenneth_Harris
     relation: :hasRelation
-  AddLiteral (5c8aa613-d822-4411-aa3e-45331f867ec4)
- Call ID: 5c8aa613-d822-4411-aa3e-45331f867ec4
+    target: Clyde_Kenneth_Harris
+  AddLiteral (bf37d6e1-c894-4ca6-ada1-1baaf1e41cdd)
+ Call ID: bf37d6e1-c894-4ca6-ada1-1baaf1e41cdd
   Args:
     relation: :hasMarriageYear
-    literal_value: 1949
     source: Cecilie_of_Prussia
+    literal_value: 1949
     literal_type: xsd:integer
-  AssignClass (bf8da543-cf7f-46df-a131-fa7cd30f0f4b)
- Call ID: bf8da543-cf7f-46df-a131-fa7cd30f0f4b
+  AddTriple (1eab6be8-8eb6-42b5-a582-7530e894c57b)
+ Call ID: 1eab6be8-8eb6-42b5-a582-7530e894c57b
   Args:
     source: Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris
-    type: :Woman
-  AssignClass (144a12bf-63c0-4708-a272-6c96f0a7208d)
- Call ID: 144a12bf-63c0-4708-a272-6c96f0a7208d
-  Args:
-    type: :Person
-    source: Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris
-  AddTriple (08f2eec4-e213-4f64-8f7c-3fbf434c6acb)
- Call ID: 08f2eec4-e213-4f64-8f7c-3fbf434c6acb
-  Args:
-    source: Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris
+    relation: :hasMother
     target: Cecilie_of_Prussia
-    relation: :isDaughterOf
-  AddTriple (090a234b-333d-44cb-8ffa-43310d550b7d)
- Call ID: 090a234b-333d-44cb-8ffa-43310d550b7d
+  AddTriple (4403d6c9-7b6d-4d25-981c-9f6c7594ba68)
+ Call ID: 4403d6c9-7b6d-4d25-981c-9f6c7594ba68
   Args:
-    relation: :isDaughterOf
     target: Clyde_Kenneth_Harris
     source: Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris
-  AssignClass (be64b68e-6a66-4841-a409-9f11c829f868)
- Call ID: be64b68e-6a66-4841-a409-9f11c829f868
+    relation: :hasFather
+  AddTriple (bb883839-2080-45b9-9184-cffe222074d2)
+ Call ID: bb883839-2080-45b9-9184-cffe222074d2
   Args:
-    type: :Man
-    source: John_Mitchell_Johnson
-  AssignClass (dda5dc07-e36d-4d8e-9c76-0ee97b4da3fd)
- Call ID: dda5dc07-e36d-4d8e-9c76-0ee97b4da3fd
-  Args:
-    source: John_Mitchell_Johnson
-    type: :Person
-  AddTriple (7c4cac1e-cf79-4b99-87b2-718c84e1004c)
- Call ID: 7c4cac1e-cf79-4b99-87b2-718c84e1004c
-  Args:
-    source: Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris
-    relation: :hasRelation
     target: John_Mitchell_Johnson
-  AssignClass (9a2e2ee2-1ad9-4ea4-8e22-f9b90e1819b6)
- Call ID: 9a2e2ee2-1ad9-4ea4-8e22-f9b90e1819b6
-  Args:
-    type: :Man
+    relation: :hasFather
     source: Philip_Louis_Johnson
-  AssignClass (ac4a9609-8cb1-4334-8b54-cfb830f434ec)
- Call ID: ac4a9609-8cb1-4334-8b54-cfb830f434ec
+  AddTriple (e60a335c-cb8c-4f52-9270-dfe032ea4258)
+ Call ID: e60a335c-cb8c-4f52-9270-dfe032ea4258
   Args:
-    source: Philip_Louis_Johnson
-    type: :Person
-  AddTriple (ad6f7b37-96c8-4f04-ad06-ebf3752e1ae0)
- Call ID: ad6f7b37-96c8-4f04-ad06-ebf3752e1ae0
-  Args:
+    relation: :hasMother
     source: Philip_Louis_Johnson
     target: Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris
-    relation: :isSonOf
-  AddTriple (fda0798a-4cca-4374-b4d4-435f103d8f86)
- Call ID: fda0798a-4cca-4374-b4d4-435f103d8f86
+  Finish (e9f14385-f744-4dc2-b67b-e88dc2f3af25)
+ Call ID: e9f14385-f744-4dc2-b67b-e88dc2f3af25
   Args:
-    source: Philip_Louis_Johnson
-    relation: :isSonOf
-    target: John_Mitchell_Johnson
-  AssignClass (23c708a7-167c-4bea-82dc-4d39b0ecb035)
- Call ID: 23c708a7-167c-4bea-82dc-4d39b0ecb035
-  Args:
-    type: :Man
-    source: Wilhelm_II
-  AssignClass (3cb5abc8-0434-4ade-95c6-2d4d070d1d19)
- Call ID: 3cb5abc8-0434-4ade-95c6-2d4d070d1d19
-  Args:
-    source: Wilhelm_II
-    type: :Person
-  AddTriple (96cde659-e56b-4355-b2da-f9d1811bbf37)
- Call ID: 96cde659-e56b-4355-b2da-f9d1811bbf37
-  Args:
-    source: Wilhelm_German_Crown_Prince
-    target: Wilhelm_II
-    relation: :hasFather
-  Finish (6e3ce1f1-b55e-40fe-a3fd-a97ff2e1ff36)
- Call ID: 6e3ce1f1-b55e-40fe-a3fd-a97ff2e1ff36
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -631,16 +622,13 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Philip_Louis_Johnson a :Man,
-          :Person ;
-      :isSonOf data:John_Mitchell_Johnson,
-          data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris .
+  data:Philip_Louis_Johnson a :Man ;
+      :hasFather data:John_Mitchell_Johnson ;
+      :hasMother data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris .
 
-  data:Cecilie_of_Mecklenburg-Schwerin a :Person,
-          :Woman .
+  data:Cecilie_of_Mecklenburg-Schwerin a :Woman .
 
-  data:Cecilie_of_Prussia a :Person,
-          :Woman ;
+  data:Cecilie_of_Prussia a :Woman ;
       :hasBirthYear 1917 ;
       :hasDeathYear 1975 ;
       :hasFather data:Wilhelm_German_Crown_Prince ;
@@ -648,24 +636,15 @@ The final data graph after all the edits:
       :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
       :hasRelation data:Clyde_Kenneth_Harris .
 
-  data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris a :Person,
-          :Woman ;
-      :hasRelation data:John_Mitchell_Johnson ;
-      :isDaughterOf data:Cecilie_of_Prussia,
-          data:Clyde_Kenneth_Harris .
+  data:John_Mitchell_Johnson a :Man .
 
-  data:Wilhelm_German_Crown_Prince a :Man,
-          :Person ;
-      :hasFather data:Wilhelm_II .
+  data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris a :Woman ;
+      :hasFather data:Clyde_Kenneth_Harris ;
+      :hasMother data:Cecilie_of_Prussia .
 
-  data:Wilhelm_II a :Man,
-          :Person .
+  data:Wilhelm_German_Crown_Prince a :Man .
 
-  data:Clyde_Kenneth_Harris a :Man,
-          :Person .
-
-  data:John_Mitchell_Johnson a :Man,
-          :Person .
+  data:Clyde_Kenneth_Harris a :Man .
 
 
 
@@ -677,28 +656,28 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (ae4b1c16-6e70-4e93-beb6-f0822ae0ceaa)
- Call ID: ae4b1c16-6e70-4e93-beb6-f0822ae0ceaa
+  ValidateShacl (9c18aa83-3ad0-4330-94ca-2419dc9c0b3c)
+ Call ID: 9c18aa83-3ad0-4330-94ca-2419dc9c0b3c
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:21
+Total violations:18
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'John_Mitchell_Johnson' is listed as an ancestor for 'Philip_Louis_Johnson' via 'isSonOf', but it lacks the mandatory ':Ancestor' class.
+      The node 'John_Mitchell_Johnson' is listed as the father of 'Philip_Louis_Johnson' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='John_Mitchell_Johnson', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is listed as an ancestor for 'Philip_Louis_Johnson' via 'isSonOf', but it lacks the mandatory ':Ancestor' class.
+      The node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is listed as the mother of 'Philip_Louis_Johnson' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris', class=':Ancestor')
 
@@ -706,153 +685,129 @@ Violations:
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father 'Wilhelm_II' of 'Wilhelm_German_Crown_Prince' is missing the required ':Ancestor' class.
+      The node 'Wilhelm_German_Crown_Prince' is listed as the father of 'Cecilie_of_Prussia' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II', class=':Ancestor')
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'John_Mitchell_Johnson' is missing the required ':Ancestor' class for the 'isSonOf' relationship.
+      The node 'Clyde_Kenneth_Harris' is listed as the father of 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' but lacks the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Clyde_Kenneth_Harris', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'John_Mitchell_Johnson' is listed as the father of 'Philip_Louis_Johnson' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='John_Mitchell_Johnson', class=':Ancestor')
 
 
-  Violation [5]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is missing the required ':Ancestor' class for the 'isSonOf' relationship.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris', class=':Ancestor')
-
-
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father 'Wilhelm_II' is missing the required ':Ancestor' class for the 'hasFather' relationship.
+      The node 'Cecilie_of_Mecklenburg-Schwerin' is listed as the mother of 'Cecilie_of_Prussia' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II', class=':Ancestor')
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father 'Wilhelm_German_Crown_Prince' is missing the required ':Ancestor' class for the 'hasFather' relationship.
+      The node 'Cecilie_of_Prussia' is listed as the mother of 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
+      AssignClass(node='Cecilie_of_Prussia', class=':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother 'Cecilie_of_Mecklenburg-Schwerin' is missing the required ':Ancestor' class for the 'hasMother' relationship.
+      The node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is listed as the mother of 'Philip_Louis_Johnson' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node='Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The parent 'Cecilie_of_Prussia' is missing the required ':Ancestor' class for the 'isDaughterOf' relationship.
+      The node 'Wilhelm_German_Crown_Prince' is listed as the father of 'Cecilie_of_Prussia' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Prussia', class=':Ancestor')
+      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The parent 'Clyde_Kenneth_Harris' is missing the required ':Ancestor' class for the 'isDaughterOf' relationship.
+      The node 'Clyde_Kenneth_Harris' is listed as the father of 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Clyde_Kenneth_Harris', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'John_Mitchell_Johnson' lacks the mandatory ':Ancestor' class for 'isSonOf'.
+      The node 'John_Mitchell_Johnson' is listed as the father of 'Philip_Louis_Johnson' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='John_Mitchell_Johnson', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' lacks the mandatory ':Ancestor' class for 'isSonOf'.
+      The node 'Cecilie_of_Mecklenburg-Schwerin' is listed as the mother of 'Cecilie_of_Prussia' but lacks the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Cecilie_of_Prussia' is listed as the mother of 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' but lacks the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Cecilie_of_Prussia', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is listed as the mother of 'Philip_Louis_Johnson' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris', class=':Ancestor')
 
 
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Wilhelm_II' lacks the mandatory ':Ancestor' class for 'hasFather'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father 'Wilhelm_German_Crown_Prince' lacks the mandatory ':Ancestor' class for 'hasFather'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
-
-
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother 'Cecilie_of_Mecklenburg-Schwerin' lacks the mandatory ':Ancestor' class for 'hasMother'.
+      The node 'Clyde_Kenneth_Harris' is listed as the father of 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      AssignClass(node='Clyde_Kenneth_Harris', class=':Ancestor')
 
 
   Violation [16]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The parent 'Cecilie_of_Prussia' lacks the mandatory ':Ancestor' class for 'isDaughterOf'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Prussia', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The parent 'Clyde_Kenneth_Harris' lacks the mandatory ':Ancestor' class for 'isDaughterOf'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Clyde_Kenneth_Harris', class=':Ancestor')
-
-
-  Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father 'Wilhelm_German_Crown_Prince' lacks the mandatory ':Ancestor' class.
+      The node 'Wilhelm_German_Crown_Prince' is listed as the father of 'Cecilie_of_Prussia' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Wilhelm_German_Crown_Prince', class=':Ancestor')
 
 
-  Violation [19]:
+  Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother 'Cecilie_of_Mecklenburg-Schwerin' lacks the mandatory ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The parent 'Cecilie_of_Prussia' lacks the mandatory ':Ancestor' class.
+      The node 'Cecilie_of_Prussia' is listed as the mother of 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Cecilie_of_Prussia', class=':Ancestor')
 
 
-  Violation [21]:
-    SHACL message: Value does not have class :Ancestor
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The parent 'Clyde_Kenneth_Harris' lacks the mandatory ':Ancestor' class.
+      The node 'Cecilie_of_Mecklenburg-Schwerin' is listed as the mother of 'Cecilie_of_Prussia' but lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Clyde_Kenneth_Harris', class=':Ancestor')
+      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
 
 
 
@@ -861,41 +816,105 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (552273b8-c2c5-47c9-a80a-8451db9ad5e7)
- Call ID: 552273b8-c2c5-47c9-a80a-8451db9ad5e7
+  AssignClass (80ebe031-c133-4ec5-9f8a-1f36c7759a2b)
+ Call ID: 80ebe031-c133-4ec5-9f8a-1f36c7759a2b
   Args:
     source: John_Mitchell_Johnson
     type: :Ancestor
-  AssignClass (4cec0ee6-dfc2-4cd3-9089-6060335a6af9)
- Call ID: 4cec0ee6-dfc2-4cd3-9089-6060335a6af9
+  AssignClass (13c53803-06d3-4c9f-a0af-984b35d3f8f4)
+ Call ID: 13c53803-06d3-4c9f-a0af-984b35d3f8f4
   Args:
+    type: :Ancestor
     source: Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris
-    type: :Ancestor
-  AssignClass (e4d8d4d1-de5f-424a-bdb2-de276a2522ab)
- Call ID: e4d8d4d1-de5f-424a-bdb2-de276a2522ab
+  AssignClass (09689575-7cbd-4321-bb24-c463a581484e)
+ Call ID: 09689575-7cbd-4321-bb24-c463a581484e
   Args:
-    type: :Ancestor
-    source: Wilhelm_II
-  AssignClass (cb132e8f-c5c2-40f7-9571-ff044c4961d4)
- Call ID: cb132e8f-c5c2-40f7-9571-ff044c4961d4
-  Args:
-    type: :Ancestor
     source: Wilhelm_German_Crown_Prince
-  AssignClass (9801c517-6df1-4ddc-8d38-8dfab680eef7)
- Call ID: 9801c517-6df1-4ddc-8d38-8dfab680eef7
-  Args:
     type: :Ancestor
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AssignClass (4776b315-07f7-4759-8a8e-ed24b0aa6d6f)
- Call ID: 4776b315-07f7-4759-8a8e-ed24b0aa6d6f
-  Args:
-    source: Cecilie_of_Prussia
-    type: :Ancestor
-  AssignClass (d49972e7-a730-4e76-897c-b808b3cd9716)
- Call ID: d49972e7-a730-4e76-897c-b808b3cd9716
+  AssignClass (80af2113-4e57-45b0-8cbc-87323231a3e9)
+ Call ID: 80af2113-4e57-45b0-8cbc-87323231a3e9
   Args:
     type: :Ancestor
     source: Clyde_Kenneth_Harris
+  AssignClass (4ce0a68d-1639-4b3c-9723-db02f69d77e5)
+ Call ID: 4ce0a68d-1639-4b3c-9723-db02f69d77e5
+  Args:
+    source: Cecilie_of_Mecklenburg-Schwerin
+    type: :Ancestor
+  AssignClass (1bbaa357-1edd-4c80-9d0a-c917385d33b8)
+ Call ID: 1bbaa357-1edd-4c80-9d0a-c917385d33b8
+  Args:
+    type: :Ancestor
+    source: Cecilie_of_Prussia
+  AddTriple (062cae31-a6f7-4969-bccb-f5f86e748a0b)
+ Call ID: 062cae31-a6f7-4969-bccb-f5f86e748a0b
+  Args:
+    source: Cecilie_of_Prussia
+    target: :Female
+    relation: :hasSex
+  AddTriple (237f0b83-604c-4176-bf10-cca236f8a9bb)
+ Call ID: 237f0b83-604c-4176-bf10-cca236f8a9bb
+  Args:
+    source: Wilhelm_German_Crown_Prince
+    target: :Male
+    relation: :hasSex
+  AddTriple (23eaf751-c69c-4e8a-a6d6-0af03a673086)
+ Call ID: 23eaf751-c69c-4e8a-a6d6-0af03a673086
+  Args:
+    relation: :hasSex
+    target: :Female
+    source: Cecilie_of_Mecklenburg-Schwerin
+  AddTriple (71501497-9e0b-4dc7-b05b-33f7d07252d5)
+ Call ID: 71501497-9e0b-4dc7-b05b-33f7d07252d5
+  Args:
+    source: Clyde_Kenneth_Harris
+    target: :Male
+    relation: :hasSex
+  AddTriple (f7a7c9a7-bd50-45ef-8c50-8a5b00c6045d)
+ Call ID: f7a7c9a7-bd50-45ef-8c50-8a5b00c6045d
+  Args:
+    source: Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris
+    target: :Female
+    relation: :hasSex
+  AddTriple (b888ec2b-9fd1-457c-8777-722addac42be)
+ Call ID: b888ec2b-9fd1-457c-8777-722addac42be
+  Args:
+    relation: :hasSex
+    target: :Male
+    source: John_Mitchell_Johnson
+  AddTriple (1d6b0870-eca8-44c8-8120-5c9561a830df)
+ Call ID: 1d6b0870-eca8-44c8-8120-5c9561a830df
+  Args:
+    relation: :hasSex
+    target: :Male
+    source: Philip_Louis_Johnson
+  Finish (2bc411af-f2cc-43c2-96e9-5b14887d0f5d)
+ Call ID: 2bc411af-f2cc-43c2-96e9-5b14887d0f5d
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -928,48 +947,654 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Philip_Louis_Johnson a :Man,
-          :Person ;
-      :isSonOf data:John_Mitchell_Johnson,
-          data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris .
+  data:Philip_Louis_Johnson a :Man ;
+      :hasFather data:John_Mitchell_Johnson ;
+      :hasMother data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+      :hasSex data:Male .
 
   data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
-          :Person,
-          :Woman .
+          :Woman ;
+      :hasSex data:Female .
 
   data:Cecilie_of_Prussia a :Ancestor,
-          :Person,
           :Woman ;
       :hasBirthYear 1917 ;
       :hasDeathYear 1975 ;
       :hasFather data:Wilhelm_German_Crown_Prince ;
       :hasMarriageYear 1949 ;
       :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-      :hasRelation data:Clyde_Kenneth_Harris .
-
-  data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasRelation data:John_Mitchell_Johnson ;
-      :isDaughterOf data:Cecilie_of_Prussia,
-          data:Clyde_Kenneth_Harris .
-
-  data:Wilhelm_German_Crown_Prince a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Wilhelm_II .
-
-  data:Wilhelm_II a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Clyde_Kenneth_Harris a :Ancestor,
-          :Man,
-          :Person .
+      :hasRelation data:Clyde_Kenneth_Harris ;
+      :hasSex data:Female .
 
   data:John_Mitchell_Johnson a :Ancestor,
-          :Man,
-          :Person .
+          :Man ;
+      :hasSex data:Male .
+
+  data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris a :Ancestor,
+          :Woman ;
+      :hasFather data:Clyde_Kenneth_Harris ;
+      :hasMother data:Cecilie_of_Prussia ;
+      :hasSex data:Female .
+
+  data:Wilhelm_German_Crown_Prince a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
+
+  data:Clyde_Kenneth_Harris a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (31fa3c46-3e57-442c-8947-c221358d8ac8)
+ Call ID: 31fa3c46-3e57-442c-8947-c221358d8ac8
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:74
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Clyde_Kenneth_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [2]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [3]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Philip_Louis_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [4]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'John_Mitchell_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [5]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Clyde_Kenneth_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [6]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [7]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Philip_Louis_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [8]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'John_Mitchell_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [9]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Clyde_Kenneth_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [10]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Prussia' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'John_Mitchell_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [13]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [14]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Philip_Louis_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Clyde_Kenneth_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Prussia' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'John_Mitchell_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [21]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [22]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Philip_Louis_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [23]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Clyde_Kenneth_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [24]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [25]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Prussia' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [26]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'John_Mitchell_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [28]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [29]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Philip_Louis_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [30]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Clyde_Kenneth_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [31]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [32]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Prussia' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [33]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'John_Mitchell_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [34]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [35]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [36]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Clyde_Kenneth_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [37]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [38]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Prussia' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [39]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'John_Mitchell_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [40]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [41]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [42]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Clyde_Kenneth_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [43]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [44]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Prussia' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [45]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'John_Mitchell_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [46]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [47]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [48]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Clyde_Kenneth_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [49]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [50]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Prussia' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [51]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'John_Mitchell_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [52]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [53]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [54]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Philip_Louis_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [55]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Clyde_Kenneth_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [56]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [57]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Prussia' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [58]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'John_Mitchell_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [59]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [60]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [61]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Philip_Louis_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [62]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Clyde_Kenneth_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [63]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Wilhelm_German_Crown_Prince' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [64]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Prussia' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [65]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'John_Mitchell_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [66]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [67]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [68]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property ':hasSex' on node 'Philip_Louis_Johnson' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [69]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [70]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Prussia' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [71]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [72]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Mecklenburg-Schwerin' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [73]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Cecilie_of_Prussia' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [74]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property ':hasSex' on node 'Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
 
 
 
@@ -977,8 +1602,84 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (7a962ddc-fc2d-4976-add7-36fb25ca2ddc)
- Call ID: 7a962ddc-fc2d-4976-add7-36fb25ca2ddc
+  AssignClass (0dd3e1ec-baf5-4499-bdc9-4c0b483b2b6f)
+ Call ID: 0dd3e1ec-baf5-4499-bdc9-4c0b483b2b6f
+  Args:
+    type: :Sex
+    source: :Female
+  AssignClass (c76c07ff-d1e9-46f1-836f-e1cd13f27b86)
+ Call ID: c76c07ff-d1e9-46f1-836f-e1cd13f27b86
+  Args:
+    type: :Sex
+    source: :Male
+  Finish (a0de5d4d-13cb-4309-a402-e4704677078f)
+ Call ID: a0de5d4d-13cb-4309-a402-e4704677078f
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Philip_Louis_Johnson a :Man ;
+      :hasFather data:John_Mitchell_Johnson ;
+      :hasMother data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris ;
+      :hasSex data:Male .
+
+  data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Cecilie_of_Prussia a :Ancestor,
+          :Woman ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1975 ;
+      :hasFather data:Wilhelm_German_Crown_Prince ;
+      :hasMarriageYear 1949 ;
+      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+      :hasRelation data:Clyde_Kenneth_Harris ;
+      :hasSex data:Female .
+
+  data:John_Mitchell_Johnson a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
+
+  data:Kira_Alexandrine_Brigid_Cecilie_Ingrid_Harris a :Ancestor,
+          :Woman ;
+      :hasFather data:Clyde_Kenneth_Harris ;
+      :hasMother data:Cecilie_of_Prussia ;
+      :hasSex data:Female .
+
+  data:Wilhelm_German_Crown_Prince a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
+
+  data:Clyde_Kenneth_Harris a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
+
+  data:Female a :Sex .
+
+  data:Male a :Sex .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (0d2d2558-df4c-41f4-93fc-ef2b66174ea9)
+ Call ID: 0d2d2558-df4c-41f4-93fc-ef2b66174ea9
   Args:
 
 ================================= Tool Message =================================
@@ -989,6 +1690,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (608388b2-cf58-456d-9955-f56ca08f2be7)
- Call ID: 608388b2-cf58-456d-9955-f56ca08f2be7
+  Finish (72c93447-28b3-44df-ba61-b34c70353d49)
+ Call ID: 72c93447-28b3-44df-ba61-b34c70353d49
   Args:

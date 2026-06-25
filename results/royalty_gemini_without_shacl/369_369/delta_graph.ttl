@@ -2,46 +2,71 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:John_Albert_of_Mecklenburg a :Man,
+data:Christoph a :Man,
         :Person ;
-    :hasBirthYear 1857 ;
-    :hasBrother data:Adolf_Friedrich_of_Mecklenburg,
-        data:Frederick_Francis_III_of_Mecklenburg,
-        data:Paul_Frederick_of_Mecklenburg ;
-    :hasDeathYear 1920 ;
-    :hasFather data:Frederick_Francis_II_of_Mecklenburg ;
-    :hasMarriageYear 1886,
-        1909 ;
-    :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;
-    :hasRelation data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach,
-        data:Elisabeth_of_Stolberg-Rossla .
+    :isSonOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia .
 
-data:Adolf_Friedrich_of_Mecklenburg a :Man,
-        :Person .
+data:FriedrichWilhelm a :Man,
+        :Person ;
+    :isSonOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia .
 
-data:Augusta_Reuss_of_K%C3%B6stritz a :Person,
-        :Woman .
+data:Maximilian a :Man,
+        :Person ;
+    :isSonOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia .
 
-data:Charles_Alexander_of_Saxe-Weimar-Eisenach a :Man,
-        :Person .
+data:Philipp a :Man,
+        :Person ;
+    :isSonOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia .
 
-data:Elisabeth_Sybille_of_Saxe-Weimar-Eisenach a :Person,
+data:PrinceHenry a :Man,
+        :Person ;
+    :isBrotherOf data:MargaretOfPrussia .
+
+data:PrincessCharlotte a :Person,
         :Woman ;
-    :hasFather data:Charles_Alexander_of_Saxe-Weimar-Eisenach .
+    :isSisterOf data:MargaretOfPrussia .
 
-data:Elisabeth_of_Stolberg-Rossla a :Person,
+data:Wolfgang a :Man,
+        :Person ;
+    :isSonOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia .
+
+data:FrederickIII a :Man,
+        :Person .
+
+data:PrincessSophie a :Person,
         :Woman .
 
-data:Frederick_Francis_III_of_Mecklenburg a :Man,
-        :Person ;
-    :isFatherOf data:Frederick_Francis_IV_of_Mecklenburg .
+data:PrincessViktoria a :Person,
+        :Woman .
 
-data:Frederick_Francis_II_of_Mecklenburg a :Man,
+data:QueenVictoria a :Person,
+        :Woman .
+
+data:VictoriaPrincessRoyal a :Person,
+        :Woman .
+
+data:WilhelmII a :Man,
         :Person .
 
-data:Frederick_Francis_IV_of_Mecklenburg a :Man,
+data:FrederickCharlesOfHesse a :Man,
         :Person .
 
-data:Paul_Frederick_of_Mecklenburg a :Man,
-        :Person .
+data:MargaretOfPrussia a :Person,
+        :Woman ;
+    :alsoKnownAs "Margarethe Beatrice Feodora"^^xsd:string,
+        "Mossy"^^xsd:string ;
+    :hasAncestor data:QueenVictoria ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1954 ;
+    :hasFather data:FrederickIII ;
+    :hasMother data:VictoriaPrincessRoyal ;
+    :hasRelation data:FrederickCharlesOfHesse ;
+    :isSisterOf data:PrincessSophie,
+        data:PrincessViktoria,
+        data:WilhelmII .
 

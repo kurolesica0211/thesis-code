@@ -196,6 +196,8 @@ In 2022, Ferdinand with his family observed the 100th anniversary of the death o
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -211,39 +213,9 @@ In 2022, Ferdinand with his family observed the 100th anniversary of the death o
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -258,6 +230,23 @@ In 2022, Ferdinand with his family observed the 100th anniversary of the death o
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -275,6 +264,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -342,29 +346,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -373,6 +369,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -385,6 +389,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -393,17 +399,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -431,6 +439,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -446,226 +538,176 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d107b7f6-a071-4be7-9d48-f15ab3c4c9aa)
- Call ID: d107b7f6-a071-4be7-9d48-f15ab3c4c9aa
+  AssignClass (158d3e12-b655-4c6a-9305-eaed8330ec3e)
+ Call ID: 158d3e12-b655-4c6a-9305-eaed8330ec3e
   Args:
     type: :Man
-    source: FerdinandHabsburg
-  AssignClass (c9eba72e-4009-4866-9291-170dbb4e7174)
- Call ID: c9eba72e-4009-4866-9291-170dbb4e7174
+    source: Ferdinand_Habsburg-Lothringen
+  AssignClass (602ad32a-97b0-4ae3-9c40-c4680a5caa5e)
+ Call ID: 602ad32a-97b0-4ae3-9c40-c4680a5caa5e
   Args:
     type: :Person
-    source: FerdinandHabsburg
-  AssignClass (11ba49a8-39df-4c91-bde4-916c84321a16)
- Call ID: 11ba49a8-39df-4c91-bde4-916c84321a16
+    source: Ferdinand_Habsburg-Lothringen
+  AddLiteral (0ef883b8-4910-43dd-99f0-b95dc99348d7)
+ Call ID: 0ef883b8-4910-43dd-99f0-b95dc99348d7
+  Args:
+    source: Ferdinand_Habsburg-Lothringen
+    literal_value: 1997
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddTriple (55e443b7-7595-4f14-a359-bb164bbe1b52)
+ Call ID: 55e443b7-7595-4f14-a359-bb164bbe1b52
+  Args:
+    target: :Male
+    relation: :hasSex
+    source: Ferdinand_Habsburg-Lothringen
+  AssignClass (a508d2a6-110f-4a47-9c70-d1ea71818ea3)
+ Call ID: a508d2a6-110f-4a47-9c70-d1ea71818ea3
   Args:
     type: :Man
-    source: KarlVonHabsburg
-  AssignClass (90fc2d46-9baa-49cf-8a86-2c53680911aa)
- Call ID: 90fc2d46-9baa-49cf-8a86-2c53680911aa
+    source: Karl_von_Habsburg
+  AssignClass (cd394f2a-eb1c-4c44-93b7-6e6592600f41)
+ Call ID: cd394f2a-eb1c-4c44-93b7-6e6592600f41
   Args:
-    type: :Ancestor
-    source: KarlVonHabsburg
-  AssignClass (9d48045d-7a4a-47f7-bffa-a039269c9db2)
- Call ID: 9d48045d-7a4a-47f7-bffa-a039269c9db2
+    source: Karl_von_Habsburg
+    type: :Person
+  AssignClass (26033a24-d1c8-48de-8766-2db5ce22e080)
+ Call ID: 26033a24-d1c8-48de-8766-2db5ce22e080
   Args:
+    source: Francesca_von_Thyssen-Bornemisza
     type: :Woman
-    source: FrancescaVonThyssenBornemisza
-  AssignClass (fc833de9-270d-45bc-950b-210a5eed9419)
- Call ID: fc833de9-270d-45bc-950b-210a5eed9419
+  AssignClass (3dfa996f-b9e6-4652-94e2-3e722fee1194)
+ Call ID: 3dfa996f-b9e6-4652-94e2-3e722fee1194
   Args:
-    type: :Ancestor
-    source: FrancescaVonThyssenBornemisza
-  AssignClass (4bc1b2c7-b903-4fb0-bd69-8c1f94f02d72)
- Call ID: 4bc1b2c7-b903-4fb0-bd69-8c1f94f02d72
+    source: Francesca_von_Thyssen-Bornemisza
+    type: :Person
+  AddTriple (43dfe3a3-20cf-4ed7-a3ff-f1e10b837f88)
+ Call ID: 43dfe3a3-20cf-4ed7-a3ff-f1e10b837f88
+  Args:
+    source: Ferdinand_Habsburg-Lothringen
+    target: :Karl_von_Habsburg
+    relation: :hasFather
+  AddTriple (5037e23d-3f69-44bb-9d49-556151c3f75b)
+ Call ID: 5037e23d-3f69-44bb-9d49-556151c3f75b
+  Args:
+    source: Ferdinand_Habsburg-Lothringen
+    relation: :hasMother
+    target: :Francesca_von_Thyssen-Bornemisza
+  AssignClass (d253d56c-4d76-4181-b85f-e9472b0495b8)
+ Call ID: d253d56c-4d76-4181-b85f-e9472b0495b8
   Args:
     type: :Man
-    source: OttoVonHabsburg
-  AssignClass (8d51cc30-52f2-4fbc-a501-3b75ae9f2ca2)
- Call ID: 8d51cc30-52f2-4fbc-a501-3b75ae9f2ca2
-  Args:
-    type: :Ancestor
-    source: OttoVonHabsburg
-  AssignClass (3926d9e0-2dfe-44f0-a200-71eb5aeb2cdf)
- Call ID: 3926d9e0-2dfe-44f0-a200-71eb5aeb2cdf
-  Args:
-    type: :Woman
-    source: PrincessReginaOfSaxeMeiningen
-  AssignClass (4e424a9a-cf5e-4466-8741-a58c7a388561)
- Call ID: 4e424a9a-cf5e-4466-8741-a58c7a388561
-  Args:
-    type: :Ancestor
-    source: PrincessReginaOfSaxeMeiningen
-  AssignClass (21bfc23b-be98-4484-a8d0-25a0207e2e13)
- Call ID: 21bfc23b-be98-4484-a8d0-25a0207e2e13
-  Args:
-    type: :Man
-    source: BaronHansHeinrichThyssenBornemisza
-  AssignClass (2da04ce3-54f2-4721-a0ed-5af371df436a)
- Call ID: 2da04ce3-54f2-4721-a0ed-5af371df436a
-  Args:
-    type: :Ancestor
-    source: BaronHansHeinrichThyssenBornemisza
-  AssignClass (d2e3bf52-e115-4df5-9044-2b5ff1a31f8c)
- Call ID: d2e3bf52-e115-4df5-9044-2b5ff1a31f8c
-  Args:
-    type: :Woman
-    source: FionaCampbellWalter
-  AssignClass (2459c164-1c1a-4a7c-8b65-663993a288ec)
- Call ID: 2459c164-1c1a-4a7c-8b65-663993a288ec
-  Args:
-    type: :Ancestor
-    source: FionaCampbellWalter
-  AssignClass (65772a04-bbd7-4889-8307-024f0aeee861)
- Call ID: 65772a04-bbd7-4889-8307-024f0aeee861
-  Args:
-    type: :Woman
-    source: EleonoreVonHabsburg
-  AssignClass (d2ec4681-6808-4e7a-9a87-104980f9c386)
- Call ID: d2ec4681-6808-4e7a-9a87-104980f9c386
+    source: Otto_von_Habsburg
+  AssignClass (349d8fc9-d2f1-4006-82d9-ebde090f4457)
+ Call ID: 349d8fc9-d2f1-4006-82d9-ebde090f4457
   Args:
     type: :Person
-    source: EleonoreVonHabsburg
-  AssignClass (a01c9ad7-7430-442b-b94d-27c4b9130ecf)
- Call ID: a01c9ad7-7430-442b-b94d-27c4b9130ecf
+    source: Otto_von_Habsburg
+  AssignClass (07b182aa-a5df-4a64-a98b-ae63530013e4)
+ Call ID: 07b182aa-a5df-4a64-a98b-ae63530013e4
   Args:
     type: :Woman
-    source: GloriaVonHabsburg
-  AssignClass (3aeac118-a455-42db-a107-9470aed73d03)
- Call ID: 3aeac118-a455-42db-a107-9470aed73d03
+    source: Regina_of_Saxe-Meiningen
+  AssignClass (9bf75a76-646d-438b-bae7-bc97ba56572f)
+ Call ID: 9bf75a76-646d-438b-bae7-bc97ba56572f
+  Args:
+    source: Regina_of_Saxe-Meiningen
+    type: :Person
+  AddTriple (dcd129bf-aa2e-4d96-bb2d-9d67c74736be)
+ Call ID: dcd129bf-aa2e-4d96-bb2d-9d67c74736be
+  Args:
+    source: Karl_von_Habsburg
+    target: :Otto_von_Habsburg
+    relation: :hasFather
+  AddTriple (803f19c7-c82c-4779-866b-c467f8aab53c)
+ Call ID: 803f19c7-c82c-4779-866b-c467f8aab53c
+  Args:
+    source: Karl_von_Habsburg
+    relation: :hasMother
+    target: :Regina_of_Saxe-Meiningen
+  AssignClass (8d74cdd5-b000-49d3-9b60-0c6f5dadd579)
+ Call ID: 8d74cdd5-b000-49d3-9b60-0c6f5dadd579
+  Args:
+    type: :Man
+    source: Hans_Heinrich_Thyssen-Bornemisza
+  AssignClass (8a0c0d3b-62b7-44aa-a7b0-4f6dbd8b1b77)
+ Call ID: 8a0c0d3b-62b7-44aa-a7b0-4f6dbd8b1b77
+  Args:
+    source: Hans_Heinrich_Thyssen-Bornemisza
+    type: :Person
+  AssignClass (683445aa-a65d-4c6c-a6e1-8f577bf1fa75)
+ Call ID: 683445aa-a65d-4c6c-a6e1-8f577bf1fa75
+  Args:
+    type: :Woman
+    source: Fiona_Campbell-Walter
+  AssignClass (dae24789-c531-4471-85c1-1529bc36a56c)
+ Call ID: dae24789-c531-4471-85c1-1529bc36a56c
   Args:
     type: :Person
-    source: GloriaVonHabsburg
-  AddLiteral (1868da4b-fcd4-457d-b203-0013eeb7be0d)
- Call ID: 1868da4b-fcd4-457d-b203-0013eeb7be0d
+    source: Fiona_Campbell-Walter
+  AddTriple (23e73e3d-77e5-45a1-8bb2-c0f766f167cc)
+ Call ID: 23e73e3d-77e5-45a1-8bb2-c0f766f167cc
   Args:
-    relation: :hasSex
-    source: FerdinandHabsburg
-    literal_type: xsd:string
-    literal_value: Male
-  AddLiteral (0e8817b1-f6d0-431b-9bfa-265efce37518)
- Call ID: 0e8817b1-f6d0-431b-9bfa-265efce37518
-  Args:
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-    source: KarlVonHabsburg
-  AddLiteral (61798334-eabd-4893-94ad-529b4ab33333)
- Call ID: 61798334-eabd-4893-94ad-529b4ab33333
-  Args:
-    source: FrancescaVonThyssenBornemisza
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-  AddLiteral (1f54a828-787f-4d12-9788-e6e15e1b8d35)
- Call ID: 1f54a828-787f-4d12-9788-e6e15e1b8d35
-  Args:
-    relation: :hasSex
-    source: OttoVonHabsburg
-    literal_type: xsd:string
-    literal_value: Male
-  AddLiteral (c92f1074-14e4-4813-a4de-1361dcb77f7f)
- Call ID: c92f1074-14e4-4813-a4de-1361dcb77f7f
-  Args:
-    literal_value: Female
-    literal_type: xsd:string
-    source: PrincessReginaOfSaxeMeiningen
-    relation: :hasSex
-  AddLiteral (84af8526-1380-4610-9874-bdc22354d3d4)
- Call ID: 84af8526-1380-4610-9874-bdc22354d3d4
-  Args:
-    source: BaronHansHeinrichThyssenBornemisza
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-  AddLiteral (2f93a1a2-a2b2-46ab-9a6d-ec07fc0dd3fa)
- Call ID: 2f93a1a2-a2b2-46ab-9a6d-ec07fc0dd3fa
-  Args:
-    literal_type: xsd:string
-    literal_value: Female
-    relation: :hasSex
-    source: FionaCampbellWalter
-  AddLiteral (746ee569-9f32-4976-9bae-585f38f51816)
- Call ID: 746ee569-9f32-4976-9bae-585f38f51816
-  Args:
-    source: EleonoreVonHabsburg
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-  AddLiteral (7593068d-a5e9-4457-a4a0-c80ec255e2c5)
- Call ID: 7593068d-a5e9-4457-a4a0-c80ec255e2c5
-  Args:
-    source: GloriaVonHabsburg
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-  AddTriple (b5206f8c-d070-4266-a3e4-88101974fae4)
- Call ID: b5206f8c-d070-4266-a3e4-88101974fae4
-  Args:
-    source: FerdinandHabsburg
-    target: KarlVonHabsburg
+    target: :Hans_Heinrich_Thyssen-Bornemisza
     relation: :hasFather
-  AddTriple (6e6e1199-153f-45fe-bb88-876bef3750b8)
- Call ID: 6e6e1199-153f-45fe-bb88-876bef3750b8
+    source: Francesca_von_Thyssen-Bornemisza
+  AddTriple (39c9031d-698e-4323-9fbd-63cfb696307a)
+ Call ID: 39c9031d-698e-4323-9fbd-63cfb696307a
   Args:
-    target: FrancescaVonThyssenBornemisza
-    source: FerdinandHabsburg
+    source: Francesca_von_Thyssen-Bornemisza
+    target: :Fiona_Campbell-Walter
     relation: :hasMother
-  AddTriple (70149f16-8e9b-4408-8416-1b598ff08af2)
- Call ID: 70149f16-8e9b-4408-8416-1b598ff08af2
+  AssignClass (8ede83ff-c4e9-43dd-af32-8da3d59ced33)
+ Call ID: 8ede83ff-c4e9-43dd-af32-8da3d59ced33
   Args:
-    source: KarlVonHabsburg
-    target: OttoVonHabsburg
-    relation: :hasFather
-  AddTriple (75c4d36f-de1c-4255-9d19-09a1a64f71b7)
- Call ID: 75c4d36f-de1c-4255-9d19-09a1a64f71b7
+    type: :Woman
+    source: Eleonore_von_Habsburg
+  AssignClass (7c2d1199-5bc6-4ccb-ba00-184c30b5e617)
+ Call ID: 7c2d1199-5bc6-4ccb-ba00-184c30b5e617
   Args:
-    target: PrincessReginaOfSaxeMeiningen
-    source: KarlVonHabsburg
-    relation: :hasMother
-  AddTriple (eccd47c3-aecc-4b1a-9b68-0d34d92ed97d)
- Call ID: eccd47c3-aecc-4b1a-9b68-0d34d92ed97d
+    source: Eleonore_von_Habsburg
+    type: :Person
+  AssignClass (0907ee18-54b4-4756-a023-a3da49592b1f)
+ Call ID: 0907ee18-54b4-4756-a023-a3da49592b1f
   Args:
-    relation: :hasFather
-    target: BaronHansHeinrichThyssenBornemisza
-    source: FrancescaVonThyssenBornemisza
-  AddTriple (87b43eb6-4f11-40e2-af9e-6e443cad6411)
- Call ID: 87b43eb6-4f11-40e2-af9e-6e443cad6411
+    source: Gloria_von_Habsburg
+    type: :Woman
+  AssignClass (c77c82fa-9074-44c6-bf56-1d54e5e8262d)
+ Call ID: c77c82fa-9074-44c6-bf56-1d54e5e8262d
   Args:
-    source: FrancescaVonThyssenBornemisza
-    target: FionaCampbellWalter
-    relation: :hasMother
-  AddTriple (09f35895-e742-4f16-a631-85075009f3d5)
- Call ID: 09f35895-e742-4f16-a631-85075009f3d5
+    type: :Person
+    source: Gloria_von_Habsburg
+  AddTriple (7fda3121-6d18-4899-8832-feb5074b3b47)
+ Call ID: 7fda3121-6d18-4899-8832-feb5074b3b47
   Args:
     relation: :hasSister
-    source: FerdinandHabsburg
-    target: EleonoreVonHabsburg
-  AddTriple (e5f4decd-a3bf-47ee-9660-d013a6dc93c9)
- Call ID: e5f4decd-a3bf-47ee-9660-d013a6dc93c9
+    target: :Eleonore_von_Habsburg
+    source: Ferdinand_Habsburg-Lothringen
+  AddTriple (d928c257-176e-4f13-b590-3ff931b2b541)
+ Call ID: d928c257-176e-4f13-b590-3ff931b2b541
   Args:
+    target: :Gloria_von_Habsburg
     relation: :hasSister
-    target: GloriaVonHabsburg
-    source: FerdinandHabsburg
-  Finish (8f917feb-1a29-42b4-8ab5-81c6902ecb30)
- Call ID: 8f917feb-1a29-42b4-8ab5-81c6902ecb30
+    source: Ferdinand_Habsburg-Lothringen
+  AssignClass (7dbb21cc-f270-4048-bfe4-71e8736450a2)
+ Call ID: 7dbb21cc-f270-4048-bfe4-71e8736450a2
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    type: :Man
+    source: Georg_von_Habsburg
+  AssignClass (8ed854ea-88ea-4c5d-88bf-40c85c9ca1f3)
+ Call ID: 8ed854ea-88ea-4c5d-88bf-40c85c9ca1f3
+  Args:
+    source: Georg_von_Habsburg
+    type: :Person
+  AddTriple (b27e8975-20be-4f72-a7c9-ec0102eedbb4)
+ Call ID: b27e8975-20be-4f72-a7c9-ec0102eedbb4
+  Args:
+    source: Ferdinand_Habsburg-Lothringen
+    target: :Georg_von_Habsburg
+    relation: :hasRelation
+  Finish (347786ae-ce53-4aef-ada8-cf6eaec3399f)
+ Call ID: 347786ae-ce53-4aef-ada8-cf6eaec3399f
+  Args:
 
 ================================= Tool Message =================================
 
@@ -794,49 +836,46 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:FerdinandHabsburg a :Man,
+  data:Ferdinand_Habsburg-Lothringen a :Man,
           :Person ;
-      :hasFather data:KarlVonHabsburg ;
-      :hasMother data:FrancescaVonThyssenBornemisza ;
-      :hasSex "Male"^^xsd:string ;
-      :hasSister data:EleonoreVonHabsburg,
-          data:GloriaVonHabsburg .
+      :hasBirthYear 1997 ;
+      :hasFather data:Karl_von_Habsburg ;
+      :hasMother data:Francesca_von_Thyssen-Bornemisza ;
+      :hasRelation data:Georg_von_Habsburg ;
+      :hasSex data:Male ;
+      :hasSister data:Eleonore_von_Habsburg,
+          data:Gloria_von_Habsburg .
 
-  data:BaronHansHeinrichThyssenBornemisza a :Ancestor,
-          :Man ;
-      :hasSex "Male"^^xsd:string .
+  data:Eleonore_von_Habsburg a :Person,
+          :Woman .
 
-  data:EleonoreVonHabsburg a :Person,
+  data:Fiona_Campbell-Walter a :Person,
+          :Woman .
+
+  data:Francesca_von_Thyssen-Bornemisza a :Person,
           :Woman ;
-      :hasSex "Female"^^xsd:string .
+      :hasFather data:Hans_Heinrich_Thyssen-Bornemisza ;
+      :hasMother data:Fiona_Campbell-Walter .
 
-  data:FionaCampbellWalter a :Ancestor,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+  data:Georg_von_Habsburg a :Man,
+          :Person .
 
-  data:FrancescaVonThyssenBornemisza a :Ancestor,
-          :Woman ;
-      :hasFather data:BaronHansHeinrichThyssenBornemisza ;
-      :hasMother data:FionaCampbellWalter ;
-      :hasSex "Female"^^xsd:string .
+  data:Gloria_von_Habsburg a :Person,
+          :Woman .
 
-  data:GloriaVonHabsburg a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+  data:Hans_Heinrich_Thyssen-Bornemisza a :Man,
+          :Person .
 
-  data:KarlVonHabsburg a :Ancestor,
-          :Man ;
-      :hasFather data:OttoVonHabsburg ;
-      :hasMother data:PrincessReginaOfSaxeMeiningen ;
-      :hasSex "Male"^^xsd:string .
+  data:Karl_von_Habsburg a :Man,
+          :Person ;
+      :hasFather data:Otto_von_Habsburg ;
+      :hasMother data:Regina_of_Saxe-Meiningen .
 
-  data:OttoVonHabsburg a :Ancestor,
-          :Man ;
-      :hasSex "Male"^^xsd:string .
+  data:Otto_von_Habsburg a :Man,
+          :Person .
 
-  data:PrincessReginaOfSaxeMeiningen a :Ancestor,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+  data:Regina_of_Saxe-Meiningen a :Person,
+          :Woman .
 
 
 
@@ -848,124 +887,124 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (ed898efe-3eb9-4b93-8bb5-a768ca784d52)
- Call ID: ed898efe-3eb9-4b93-8bb5-a768ca784d52
+  ValidateShacl (7fe959b6-cac9-4eba-8535-71b3c58ba41f)
+ Call ID: 7fe959b6-cac9-4eba-8535-71b3c58ba41f
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:90
+Total violations:26
 Violations:
 
   Violation [1]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FionaCampbellWalter' is missing the required class ':Sex'.
+      The value 'Male' for the property 'hasSex' on node 'Ferdinand_Habsburg-Lothringen' is not categorized as a member of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'OttoVonHabsburg' is missing the required class ':Sex'.
+      The value 'Karl_von_Habsburg' for 'hasFather' on 'Ferdinand_Habsburg-Lothringen' is missing the ':Ancestor' class assignment required by the schema.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Karl_von_Habsburg', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'BaronHansHeinrichThyssenBornemisza' is missing the required class ':Sex'.
+      The value 'Otto_von_Habsburg' for 'hasFather' on 'Karl_von_Habsburg' is missing the ':Ancestor' class assignment required by the schema.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Otto_von_Habsburg', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'KarlVonHabsburg' is missing the required class ':Sex'.
+      The value 'Francesca_von_Thyssen-Bornemisza' for 'hasMother' on 'Ferdinand_Habsburg-Lothringen' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Francesca_von_Thyssen-Bornemisza', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'PrincessReginaOfSaxeMeiningen' is missing the required class ':Sex'.
+      The value 'Regina_of_Saxe-Meiningen' for 'hasMother' on 'Karl_von_Habsburg' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Regina_of_Saxe-Meiningen', class=':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FrancescaVonThyssenBornemisza' is missing the required class ':Sex'.
+      The value 'Male' for 'hasSex' on 'Ferdinand_Habsburg-Lothringen' is missing the ':Sex' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [7]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FionaCampbellWalter' is missing the required class ':Sex'.
+      The value 'Male' for 'hasSex' on 'Ferdinand_Habsburg-Lothringen' is missing the ':Sex' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'OttoVonHabsburg' is missing the required class ':Sex'.
+      The value 'Otto_von_Habsburg' for 'hasFather' on 'Karl_von_Habsburg' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Otto_von_Habsburg', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'BaronHansHeinrichThyssenBornemisza' is missing the required class ':Sex'.
+      The value 'Hans_Heinrich_Thyssen-Bornemisza' for 'hasFather' on 'Francesca_von_Thyssen-Bornemisza' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Hans_Heinrich_Thyssen-Bornemisza', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'KarlVonHabsburg' is missing the required class ':Sex'.
+      The value 'Karl_von_Habsburg' for 'hasFather' on 'Ferdinand_Habsburg-Lothringen' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Karl_von_Habsburg', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'PrincessReginaOfSaxeMeiningen' is missing the required class ':Sex'.
+      The value 'Regina_of_Saxe-Meiningen' for 'hasMother' on 'Karl_von_Habsburg' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Regina_of_Saxe-Meiningen', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FrancescaVonThyssenBornemisza' is missing the required class ':Sex'.
+      The value 'Fiona_Campbell-Walter' for 'hasMother' on 'Francesca_von_Thyssen-Bornemisza' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Fiona_Campbell-Walter', class=':Ancestor')
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FionaCampbellWalter' is missing the required class ':Sex'.
+      The value 'Francesca_von_Thyssen-Bornemisza' for 'hasMother' on 'Ferdinand_Habsburg-Lothringen' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Francesca_von_Thyssen-Bornemisza', class=':Ancestor')
 
 
   Violation [14]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'OttoVonHabsburg' is missing the required class ':Sex'.
+      The value 'Male' for 'hasSex' on 'Ferdinand_Habsburg-Lothringen' is missing the ':Sex' class assignment.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -973,7 +1012,7 @@ Violations:
   Violation [15]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'BaronHansHeinrichThyssenBornemisza' is missing the required class ':Sex'.
+      The value 'Male' for 'hasSex' on 'Ferdinand_Habsburg-Lothringen' is missing the ':Sex' class assignment.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -981,63 +1020,63 @@ Violations:
   Violation [16]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'KarlVonHabsburg' is missing the required class ':Sex'.
+      The value 'Male' for 'hasSex' on 'Ferdinand_Habsburg-Lothringen' is missing the ':Sex' class assignment.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'PrincessReginaOfSaxeMeiningen' is missing the required class ':Sex'.
+      The value 'Otto_von_Habsburg' for 'hasFather' on 'Karl_von_Habsburg' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Otto_von_Habsburg', class=':Ancestor')
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FrancescaVonThyssenBornemisza' is missing the required class ':Sex'.
+      The value 'Hans_Heinrich_Thyssen-Bornemisza' for 'hasFather' on 'Francesca_von_Thyssen-Bornemisza' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Hans_Heinrich_Thyssen-Bornemisza', class=':Ancestor')
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'KarlVonHabsburg' is missing the required class ':Sex'.
+      The value 'Karl_von_Habsburg' for 'hasFather' on 'Ferdinand_Habsburg-Lothringen' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Karl_von_Habsburg', class=':Ancestor')
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'FerdinandHabsburg' is missing the required class ':Sex'.
+      The value 'Regina_of_Saxe-Meiningen' for 'hasMother' on 'Karl_von_Habsburg' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Regina_of_Saxe-Meiningen', class=':Ancestor')
 
 
   Violation [21]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'OttoVonHabsburg' is missing the required class ':Sex'.
+      The value 'Fiona_Campbell-Walter' for 'hasMother' on 'Francesca_von_Thyssen-Bornemisza' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Fiona_Campbell-Walter', class=':Ancestor')
 
 
   Violation [22]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'BaronHansHeinrichThyssenBornemisza' is missing the required class ':Sex'.
+      The value 'Francesca_von_Thyssen-Bornemisza' for 'hasMother' on 'Ferdinand_Habsburg-Lothringen' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Francesca_von_Thyssen-Bornemisza', class=':Ancestor')
 
 
   Violation [23]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'KarlVonHabsburg' is missing the required class ':Sex'.
+      The value 'Male' for 'hasSex' on 'Ferdinand_Habsburg-Lothringen' is missing the ':Sex' class assignment.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -1045,537 +1084,25 @@ Violations:
   Violation [24]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'FerdinandHabsburg' is missing the required class ':Sex'.
+      The value 'Male' for 'hasSex' on 'Ferdinand_Habsburg-Lothringen' is missing the ':Sex' class assignment.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
 
   Violation [25]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'OttoVonHabsburg' is missing the required class ':Sex'.
+      The value 'Hans_Heinrich_Thyssen-Bornemisza' for 'hasFather' on 'Francesca_von_Thyssen-Bornemisza' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Hans_Heinrich_Thyssen-Bornemisza', class=':Ancestor')
 
 
   Violation [26]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'BaronHansHeinrichThyssenBornemisza' is missing the required class ':Sex'.
+      The value 'Fiona_Campbell-Walter' for 'hasMother' on 'Francesca_von_Thyssen-Bornemisza' is missing the ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'PrincessReginaOfSaxeMeiningen' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FionaCampbellWalter' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'FerdinandHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'OttoVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'BaronHansHeinrichThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'KarlVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FrancescaVonThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'EleonoreVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'GloriaVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'PrincessReginaOfSaxeMeiningen' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FionaCampbellWalter' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'FerdinandHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'OttoVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'BaronHansHeinrichThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'KarlVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FrancescaVonThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'EleonoreVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'GloriaVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'PrincessReginaOfSaxeMeiningen' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FionaCampbellWalter' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'FerdinandHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'OttoVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'BaronHansHeinrichThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'KarlVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FrancescaVonThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'EleonoreVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'GloriaVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FionaCampbellWalter' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'PrincessReginaOfSaxeMeiningen' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'FerdinandHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'OttoVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'BaronHansHeinrichThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'KarlVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FrancescaVonThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'EleonoreVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'GloriaVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FionaCampbellWalter' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'PrincessReginaOfSaxeMeiningen' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'FerdinandHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'OttoVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'BaronHansHeinrichThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'KarlVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FrancescaVonThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'EleonoreVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'GloriaVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FionaCampbellWalter' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'PrincessReginaOfSaxeMeiningen' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'FerdinandHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'OttoVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'BaronHansHeinrichThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' assigned to the property 'hasSex' for the node 'KarlVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FrancescaVonThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [79]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'EleonoreVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [80]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'GloriaVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [81]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FionaCampbellWalter' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [82]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'PrincessReginaOfSaxeMeiningen' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [83]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FrancescaVonThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [84]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'EleonoreVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [85]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'GloriaVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [86]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FionaCampbellWalter' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [87]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'PrincessReginaOfSaxeMeiningen' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [88]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'FrancescaVonThyssenBornemisza' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [89]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'EleonoreVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [90]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the property 'hasSex' for the node 'GloriaVonHabsburg' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Fiona_Campbell-Walter', class=':Ancestor')
 
 
 
@@ -1584,23 +1111,209 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (141b7c7e-81ab-4792-8034-9ab19ca99b04)
- Call ID: 141b7c7e-81ab-4792-8034-9ab19ca99b04
+  AssignClass (7a8cec23-29d5-4ada-9f92-f0bc28260b69)
+ Call ID: 7a8cec23-29d5-4ada-9f92-f0bc28260b69
   Args:
-    source: Male
-    type: :Sex
-  AssignClass (13847f2f-84f5-4867-bcb0-4753c7bebf99)
- Call ID: 13847f2f-84f5-4867-bcb0-4753c7bebf99
+    type: :Ancestor
+    source: Karl_von_Habsburg
+  AssignClass (9eee0aad-16a7-4849-9e05-519ba95959ae)
+ Call ID: 9eee0aad-16a7-4849-9e05-519ba95959ae
   Args:
-    type: :Sex
-    source: Female
-  Finish (b4e074a8-8f22-4cdd-af05-d847b31c5ad0)
- Call ID: b4e074a8-8f22-4cdd-af05-d847b31c5ad0
+    type: :Ancestor
+    source: Otto_von_Habsburg
+  AssignClass (fe84d0c6-60f9-4e28-a3e2-0555998b2d35)
+ Call ID: fe84d0c6-60f9-4e28-a3e2-0555998b2d35
+  Args:
+    source: Francesca_von_Thyssen-Bornemisza
+    type: :Ancestor
+  AssignClass (67a760b2-bb14-4e05-809a-af7ca09de35e)
+ Call ID: 67a760b2-bb14-4e05-809a-af7ca09de35e
+  Args:
+    source: Regina_of_Saxe-Meiningen
+    type: :Ancestor
+  AssignClass (049f5919-3bd2-47b9-b554-5e42bffaea93)
+ Call ID: 049f5919-3bd2-47b9-b554-5e42bffaea93
+  Args:
+    source: Hans_Heinrich_Thyssen-Bornemisza
+    type: :Ancestor
+  AssignClass (ced32b18-29e5-4a15-a6c9-eddf43998dae)
+ Call ID: ced32b18-29e5-4a15-a6c9-eddf43998dae
+  Args:
+    source: Fiona_Campbell-Walter
+    type: :Ancestor
+  Finish (2f4abf01-097a-4ee2-94cd-65adeec08b7c)
+ Call ID: 2f4abf01-097a-4ee2-94cd-65adeec08b7c
   Args:
 
 ================================= Tool Message =================================
 
 Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Ferdinand_Habsburg-Lothringen a :Man,
+          :Person ;
+      :hasBirthYear 1997 ;
+      :hasFather data:Karl_von_Habsburg ;
+      :hasMother data:Francesca_von_Thyssen-Bornemisza ;
+      :hasRelation data:Georg_von_Habsburg ;
+      :hasSex data:Male ;
+      :hasSister data:Eleonore_von_Habsburg,
+          data:Gloria_von_Habsburg .
+
+  data:Eleonore_von_Habsburg a :Person,
+          :Woman .
+
+  data:Fiona_Campbell-Walter a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Francesca_von_Thyssen-Bornemisza a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Hans_Heinrich_Thyssen-Bornemisza ;
+      :hasMother data:Fiona_Campbell-Walter .
+
+  data:Georg_von_Habsburg a :Man,
+          :Person .
+
+  data:Gloria_von_Habsburg a :Person,
+          :Woman .
+
+  data:Hans_Heinrich_Thyssen-Bornemisza a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Karl_von_Habsburg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Otto_von_Habsburg ;
+      :hasMother data:Regina_of_Saxe-Meiningen .
+
+  data:Otto_von_Habsburg a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Regina_of_Saxe-Meiningen a :Ancestor,
+          :Person,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (3a5dee4e-63f1-48b0-972b-04f50ce8f082)
+ Call ID: 3a5dee4e-63f1-48b0-972b-04f50ce8f082
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:8
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on the node 'Ferdinand_Habsburg-Lothringen' is missing the required class assignment ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [2]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on the node 'Ferdinand_Habsburg-Lothringen' is missing the required class assignment ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [3]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on the node 'Ferdinand_Habsburg-Lothringen' is missing the required class assignment ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [4]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on the node 'Ferdinand_Habsburg-Lothringen' is missing the required class assignment ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [5]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on the node 'Ferdinand_Habsburg-Lothringen' is missing the required class assignment ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [6]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on the node 'Ferdinand_Habsburg-Lothringen' is missing the required class assignment ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [7]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on the node 'Ferdinand_Habsburg-Lothringen' is missing the required class assignment ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+  Violation [8]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on the node 'Ferdinand_Habsburg-Lothringen' is missing the required class assignment ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (4662eac0-f632-4838-ba5e-2d4e86afb0e0)
+ Call ID: 4662eac0-f632-4838-ba5e-2d4e86afb0e0
+  Args:
+    source: Male
+    type: :Sex
 
 ================================= Tool Message =================================
 
@@ -1609,1055 +1322,63 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Female a :Sex .
-
-  data:FerdinandHabsburg a :Man,
+  data:Ferdinand_Habsburg-Lothringen a :Man,
           :Person ;
-      :hasFather data:KarlVonHabsburg ;
-      :hasMother data:FrancescaVonThyssenBornemisza ;
-      :hasSex "Male"^^xsd:string ;
-      :hasSister data:EleonoreVonHabsburg,
-          data:GloriaVonHabsburg .
-
-  data:Male a :Sex .
-
-  data:BaronHansHeinrichThyssenBornemisza a :Ancestor,
-          :Man ;
-      :hasSex "Male"^^xsd:string .
-
-  data:EleonoreVonHabsburg a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:FionaCampbellWalter a :Ancestor,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:FrancescaVonThyssenBornemisza a :Ancestor,
-          :Woman ;
-      :hasFather data:BaronHansHeinrichThyssenBornemisza ;
-      :hasMother data:FionaCampbellWalter ;
-      :hasSex "Female"^^xsd:string .
-
-  data:GloriaVonHabsburg a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:KarlVonHabsburg a :Ancestor,
-          :Man ;
-      :hasFather data:OttoVonHabsburg ;
-      :hasMother data:PrincessReginaOfSaxeMeiningen ;
-      :hasSex "Male"^^xsd:string .
-
-  data:OttoVonHabsburg a :Ancestor,
-          :Man ;
-      :hasSex "Male"^^xsd:string .
-
-  data:PrincessReginaOfSaxeMeiningen a :Ancestor,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (2ad4136f-0a10-4d3a-b2ba-5fc7dc4a95b4)
- Call ID: 2ad4136f-0a10-4d3a-b2ba-5fc7dc4a95b4
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:90
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FionaCampbellWalter does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of OttoVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of BaronHansHeinrichThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of KarlVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of PrincessReginaOfSaxeMeiningen does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FrancescaVonThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FionaCampbellWalter does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of OttoVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of BaronHansHeinrichThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of KarlVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of PrincessReginaOfSaxeMeiningen does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FrancescaVonThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FionaCampbellWalter does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of OttoVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of BaronHansHeinrichThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of KarlVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of PrincessReginaOfSaxeMeiningen does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FrancescaVonThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of KarlVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of FerdinandHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of OttoVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of BaronHansHeinrichThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of KarlVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of FerdinandHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of OttoVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of BaronHansHeinrichThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of PrincessReginaOfSaxeMeiningen does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FionaCampbellWalter does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of FerdinandHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of OttoVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of BaronHansHeinrichThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of KarlVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FrancescaVonThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of EleonoreVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of GloriaVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of PrincessReginaOfSaxeMeiningen does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FionaCampbellWalter does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of FerdinandHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of OttoVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of BaronHansHeinrichThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of KarlVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FrancescaVonThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of EleonoreVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of GloriaVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of PrincessReginaOfSaxeMeiningen does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FionaCampbellWalter does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of FerdinandHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of OttoVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of BaronHansHeinrichThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of KarlVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FrancescaVonThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of EleonoreVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of GloriaVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FionaCampbellWalter does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of PrincessReginaOfSaxeMeiningen does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of FerdinandHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of OttoVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of BaronHansHeinrichThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of KarlVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FrancescaVonThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of EleonoreVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of GloriaVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FionaCampbellWalter does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of PrincessReginaOfSaxeMeiningen does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of FerdinandHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of OttoVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of BaronHansHeinrichThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of KarlVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FrancescaVonThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of EleonoreVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of GloriaVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FionaCampbellWalter does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of PrincessReginaOfSaxeMeiningen does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of FerdinandHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of OttoVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of BaronHansHeinrichThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' used for 'hasSex' of KarlVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FrancescaVonThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [79]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of EleonoreVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [80]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of GloriaVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [81]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FionaCampbellWalter does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [82]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of PrincessReginaOfSaxeMeiningen does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [83]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FrancescaVonThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [84]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of EleonoreVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [85]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of GloriaVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [86]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FionaCampbellWalter does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [87]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of PrincessReginaOfSaxeMeiningen does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [88]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of FrancescaVonThyssenBornemisza does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [89]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of EleonoreVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [90]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' used for 'hasSex' of GloriaVonHabsburg does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (34927e19-80e1-479f-a80e-afcdb5163dd0)
- Call ID: 34927e19-80e1-479f-a80e-afcdb5163dd0
-  Args:
-    source: FerdinandHabsburg
-    literal_value: Male
-    literal_type: xsd:string
-    relation: :hasSex
-  RemoveLiteral (aa926466-44e9-4741-855e-34f26590c395)
- Call ID: aa926466-44e9-4741-855e-34f26590c395
-  Args:
-    literal_value: Male
-    literal_type: xsd:string
-    source: KarlVonHabsburg
-    relation: :hasSex
-  RemoveLiteral (3d306b48-28ab-426e-b899-32a9eb18811b)
- Call ID: 3d306b48-28ab-426e-b899-32a9eb18811b
-  Args:
-    relation: :hasSex
-    source: FrancescaVonThyssenBornemisza
-    literal_value: Female
-    literal_type: xsd:string
-  RemoveLiteral (06d4aa07-bbee-4413-ba8a-8716c1922dfd)
- Call ID: 06d4aa07-bbee-4413-ba8a-8716c1922dfd
-  Args:
-    source: OttoVonHabsburg
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-  RemoveLiteral (86423c8c-21b2-4391-bb30-8a82a6d1f777)
- Call ID: 86423c8c-21b2-4391-bb30-8a82a6d1f777
-  Args:
-    relation: :hasSex
-    source: PrincessReginaOfSaxeMeiningen
-    literal_value: Female
-    literal_type: xsd:string
-  RemoveLiteral (c5d9d8c1-86be-480d-94f0-3a020bc4d7ff)
- Call ID: c5d9d8c1-86be-480d-94f0-3a020bc4d7ff
-  Args:
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-    source: BaronHansHeinrichThyssenBornemisza
-  RemoveLiteral (8cbe0a77-719a-44a3-9a86-62b75ee61c8c)
- Call ID: 8cbe0a77-719a-44a3-9a86-62b75ee61c8c
-  Args:
-    literal_value: Female
-    literal_type: xsd:string
-    source: FionaCampbellWalter
-    relation: :hasSex
-  RemoveLiteral (4abb41be-25ff-4c3b-aa05-f48768f9f440)
- Call ID: 4abb41be-25ff-4c3b-aa05-f48768f9f440
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Female
-    source: EleonoreVonHabsburg
-  RemoveLiteral (5948a790-ae6b-4ce7-a7b1-a8251e29d26e)
- Call ID: 5948a790-ae6b-4ce7-a7b1-a8251e29d26e
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Female
-    source: GloriaVonHabsburg
-  AddTriple (a6e1cba1-c60e-43e3-96e1-bc9f0636543d)
- Call ID: a6e1cba1-c60e-43e3-96e1-bc9f0636543d
-  Args:
-    target: Male
-    relation: :hasSex
-    source: FerdinandHabsburg
-  AddTriple (cca00518-b123-4be4-a7de-d7539b833e17)
- Call ID: cca00518-b123-4be4-a7de-d7539b833e17
-  Args:
-    source: KarlVonHabsburg
-    target: Male
-    relation: :hasSex
-  AddTriple (f6d59a8f-5c05-473e-a568-d9c48dd8856e)
- Call ID: f6d59a8f-5c05-473e-a568-d9c48dd8856e
-  Args:
-    source: FrancescaVonThyssenBornemisza
-    target: Female
-    relation: :hasSex
-  AddTriple (8ab27257-df49-4f87-870c-96a8bac49e9f)
- Call ID: 8ab27257-df49-4f87-870c-96a8bac49e9f
-  Args:
-    relation: :hasSex
-    target: Male
-    source: OttoVonHabsburg
-  AddTriple (4e56063b-8239-4516-947f-a71e76bb7a05)
- Call ID: 4e56063b-8239-4516-947f-a71e76bb7a05
-  Args:
-    source: PrincessReginaOfSaxeMeiningen
-    target: Female
-    relation: :hasSex
-  AddTriple (4b20a1f5-4c91-4c80-9e46-589e4bc180de)
- Call ID: 4b20a1f5-4c91-4c80-9e46-589e4bc180de
-  Args:
-    relation: :hasSex
-    target: Male
-    source: BaronHansHeinrichThyssenBornemisza
-  AddTriple (b2929049-9606-455a-a239-d65c491fc6e8)
- Call ID: b2929049-9606-455a-a239-d65c491fc6e8
-  Args:
-    source: FionaCampbellWalter
-    target: Female
-    relation: :hasSex
-  AddTriple (249f0abe-66af-45ed-8d38-d50a08856964)
- Call ID: 249f0abe-66af-45ed-8d38-d50a08856964
-  Args:
-    source: EleonoreVonHabsburg
-    relation: :hasSex
-    target: Female
-  AddTriple (c5bbbc72-13e0-4003-89b3-bc23c0802b5f)
- Call ID: c5bbbc72-13e0-4003-89b3-bc23c0802b5f
-  Args:
-    relation: :hasSex
-    target: Female
-    source: GloriaVonHabsburg
-  Finish (878de122-7c90-468b-9182-8caf836a9c2f)
- Call ID: 878de122-7c90-468b-9182-8caf836a9c2f
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-
-  data:FerdinandHabsburg a :Man,
-          :Person ;
-      :hasFather data:KarlVonHabsburg ;
-      :hasMother data:FrancescaVonThyssenBornemisza ;
+      :hasBirthYear 1997 ;
+      :hasFather data:Karl_von_Habsburg ;
+      :hasMother data:Francesca_von_Thyssen-Bornemisza ;
+      :hasRelation data:Georg_von_Habsburg ;
       :hasSex data:Male ;
-      :hasSister data:EleonoreVonHabsburg,
-          data:GloriaVonHabsburg .
+      :hasSister data:Eleonore_von_Habsburg,
+          data:Gloria_von_Habsburg .
 
-  data:BaronHansHeinrichThyssenBornemisza a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
+  data:Eleonore_von_Habsburg a :Person,
+          :Woman .
 
-  data:EleonoreVonHabsburg a :Person,
+  data:Fiona_Campbell-Walter a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Francesca_von_Thyssen-Bornemisza a :Ancestor,
+          :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasFather data:Hans_Heinrich_Thyssen-Bornemisza ;
+      :hasMother data:Fiona_Campbell-Walter .
 
-  data:FionaCampbellWalter a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
+  data:Georg_von_Habsburg a :Man,
+          :Person .
 
-  data:FrancescaVonThyssenBornemisza a :Ancestor,
-          :Woman ;
-      :hasFather data:BaronHansHeinrichThyssenBornemisza ;
-      :hasMother data:FionaCampbellWalter ;
-      :hasSex data:Female .
+  data:Gloria_von_Habsburg a :Person,
+          :Woman .
 
-  data:GloriaVonHabsburg a :Person,
-          :Woman ;
-      :hasSex data:Female .
+  data:Hans_Heinrich_Thyssen-Bornemisza a :Ancestor,
+          :Man,
+          :Person .
 
-  data:KarlVonHabsburg a :Ancestor,
-          :Man ;
-      :hasFather data:OttoVonHabsburg ;
-      :hasMother data:PrincessReginaOfSaxeMeiningen ;
-      :hasSex data:Male .
-
-  data:OttoVonHabsburg a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:PrincessReginaOfSaxeMeiningen a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
+  data:Karl_von_Habsburg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Otto_von_Habsburg ;
+      :hasMother data:Regina_of_Saxe-Meiningen .
 
   data:Male a :Sex .
 
-  data:Female a :Sex .
+  data:Otto_von_Habsburg a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Regina_of_Saxe-Meiningen a :Ancestor,
+          :Person,
+          :Woman .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (ae94d75b-0474-45f6-99e9-b5f21d666e8d)
- Call ID: ae94d75b-0474-45f6-99e9-b5f21d666e8d
+  ValidateShacl (593a63b2-2c73-4f89-a5e6-fda92d4f5ab9)
+ Call ID: 593a63b2-2c73-4f89-a5e6-fda92d4f5ab9
   Args:
 
 ================================= Tool Message =================================
@@ -2668,6 +1389,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (cb7ef888-2317-4029-8e40-af8d98893899)
- Call ID: cb7ef888-2317-4029-8e40-af8d98893899
+  Finish (216dc890-3538-46f2-b2c3-df19d72724d1)
+ Call ID: 216dc890-3538-46f2-b2c3-df19d72724d1
   Args:

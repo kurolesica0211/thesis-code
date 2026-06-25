@@ -1,0 +1,277 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne a :Man,
+        :Person ;
+    rdfs:label "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne"^^xsd:string ;
+    data:posIndicesFull "211:229"^^xsd:string,
+        "561:579"^^xsd:string ;
+    data:posIndicesPart "1069:1076"^^xsd:string,
+        "1725:1729"^^xsd:string,
+        "1733:1743"^^xsd:string,
+        "1748:1757"^^xsd:string,
+        "1817:1821"^^xsd:string,
+        "496:501"^^xsd:string,
+        "502:506"^^xsd:string,
+        "638:642"^^xsd:string,
+        "646:656"^^xsd:string,
+        "661:670"^^xsd:string,
+        "683:688"^^xsd:string,
+        "689:693"^^xsd:string,
+        "707:717"^^xsd:string,
+        "722:731"^^xsd:string,
+        "856:860"^^xsd:string,
+        "966:973"^^xsd:string ;
+    data:wdtLink wdt:Q335615 ;
+    :alsoKnownAs "Michael Bowes-Lyon"^^xsd:string,
+        "Michael Bowes-Lyon, The Earl of Strathmore and Kinghorne"^^xsd:string ;
+    :hasAncestor data:Elizabeth_Cator,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Michael_Bowes-Lyon ;
+    :hasBrother data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasFather data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasParent data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasRelation data:Elizabeth_Cator,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Michael_Bowes-Lyon,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBrotherOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isChildOf data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
+    :isSiblingOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isSonOf data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne .
+
+data:Michael_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Michael Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "211:229"^^xsd:string,
+        "561:579"^^xsd:string ;
+    data:posIndicesPart "1069:1076"^^xsd:string,
+        "496:501"^^xsd:string,
+        "502:506"^^xsd:string,
+        "683:688"^^xsd:string,
+        "689:693"^^xsd:string,
+        "966:973"^^xsd:string ;
+    data:wdtLink wdt:Q63806478 ;
+    :alsoKnownAs "Hon. Michael Bowes-Lyon"^^xsd:string,
+        "Hon. Michael Claude Hamilton Bowes-Lyon"^^xsd:string,
+        "Michael Claude Hamilton Bowes-Lyon"^^xsd:string ;
+    :hasBrother data:Michael_Bowes-Lyon ;
+    :hasChild data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasRelation data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Michael_Bowes-Lyon,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male ;
+    :hasSon data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
+    :isAncestorOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBloodrelationOf data:Michael_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Bowes-Lyon ;
+    :isFatherOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
+    :isParentOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
+    :isSiblingOf data:Michael_Bowes-Lyon ;
+    :isUncleOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne .
+
+data:Mary_Colman a :Person,
+        :Woman ;
+    rdfs:label "Mary Colman"^^xsd:string ;
+    data:posIndicesFull "0:24"^^xsd:string,
+        "426:449"^^xsd:string,
+        "5:24"^^xsd:string ;
+    data:posIndicesPart "1093:1097"^^xsd:string,
+        "1439:1443"^^xsd:string,
+        "1480:1486"^^xsd:string,
+        "1518:1524"^^xsd:string,
+        "1556:1560"^^xsd:string,
+        "1867:1871"^^xsd:string ;
+    data:wdtLink wdt:Q75248480 ;
+    :alsoKnownAs "Lady Mary Bowes-Lyon"^^xsd:string,
+        "Lady Mary Cecilia Bowes-Lyon"^^xsd:string,
+        "Lady Mary Cecilia Colman"^^xsd:string,
+        "Mary Bowes-Lyon"^^xsd:string,
+        "Mary Cecilia Bowes-Lyon"^^xsd:string,
+        "Mary Cecilia Colman"^^xsd:string ;
+    :hasAncestor data:Elizabeth_Cator ;
+    :hasBrother data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasMother data:Elizabeth_Cator ;
+    :hasParent data:Elizabeth_Cator ;
+    :hasRelation data:Albemarle_Bowes-Lyon,
+        data:Elizabeth_Cator,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman ;
+    :hasSex data:female ;
+    :hasSister data:Mary_Colman ;
+    :isAuntOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBloodrelationOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman ;
+    :isChildOf data:Elizabeth_Cator ;
+    :isDaughterOf data:Elizabeth_Cator ;
+    :isSiblingOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman ;
+    :isSisterOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman .
+
+data:Elizabeth_Cator a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elizabeth Cator"^^xsd:string ;
+    data:posIndicesFull "234:258"^^xsd:string,
+        "770:794"^^xsd:string ;
+    data:posIndicesPart "1320:1329"^^xsd:string,
+        "357:366"^^xsd:string ;
+    data:wdtLink wdt:Q75240065 ;
+    :alsoKnownAs "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth Margaret Bowes-Lyon"^^xsd:string,
+        "Elizabeth Margaret Cator"^^xsd:string ;
+    :hasChild data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman ;
+    :hasDaughter data:Mary_Colman ;
+    :hasRelation data:Albemarle_Bowes-Lyon,
+        data:Elizabeth_Cator,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_Cator ;
+    :hasSon data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
+    :isAncestorOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isAuntOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman ;
+    :isBloodrelationOf data:Elizabeth_Cator ;
+    :isMotherOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman ;
+    :isParentOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman ;
+    :isSiblingOf data:Elizabeth_Cator ;
+    :isSisterOf data:Elizabeth_Cator .
+
+data:Albemarle_Bowes-Lyon a :Man,
+        :Person ;
+    rdfs:label "Albemarle Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "211:229"^^xsd:string,
+        "561:579"^^xsd:string ;
+    data:posIndicesPart "1077:1086"^^xsd:string,
+        "496:501"^^xsd:string,
+        "502:506"^^xsd:string,
+        "683:688"^^xsd:string,
+        "689:693"^^xsd:string ;
+    data:wdtLink wdt:Q75248478 ;
+    :alsoKnownAs "Hon. Albemarle Bowes-Lyon"^^xsd:string,
+        "Hon. Michael Albemarle Bowes-Lyon"^^xsd:string,
+        "Hon. Michael Bowes-Lyon"^^xsd:string,
+        "Michael Albemarle Bowes-Lyon"^^xsd:string,
+        "Michael Bowes-Lyon"^^xsd:string ;
+    :hasAncestor data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :hasBrother data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasFather data:Michael_Bowes-Lyon ;
+    :hasMother data:Elizabeth_Cator ;
+    :hasParent data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :hasRelation data:Albemarle_Bowes-Lyon,
+        data:Elizabeth_Cator,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman,
+        data:Michael_Bowes-Lyon ;
+    :hasSex data:male ;
+    :hasSister data:Mary_Colman ;
+    :isBloodrelationOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman ;
+    :isBrotherOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman ;
+    :isChildOf data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :isSiblingOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman ;
+    :isSonOf data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :isUncleOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne .
+
+data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne"^^xsd:string ;
+    data:posIndicesFull "988:1044"^^xsd:string ;
+    data:posIndicesPart "1725:1729"^^xsd:string,
+        "1733:1743"^^xsd:string,
+        "1748:1757"^^xsd:string,
+        "1817:1821"^^xsd:string ;
+    data:wdtLink wdt:Q3856119 ;
+    :alsoKnownAs "Fergus Michael Claude Bowes-Lyon, 17th Earl of Strathmore and Kinghorne"^^xsd:string ;
+    :hasAncestor data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :hasBrother data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasChild data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasFather data:Michael_Bowes-Lyon ;
+    :hasMother data:Elizabeth_Cator ;
+    :hasParent data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :hasRelation data:Albemarle_Bowes-Lyon,
+        data:Elizabeth_Cator,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman,
+        data:Michael_Bowes-Lyon,
+        data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male ;
+    :hasSister data:Mary_Colman ;
+    :hasSon data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isAncestorOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBloodrelationOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman ;
+    :isBrotherOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman ;
+    :isChildOf data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :isFatherOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isParentOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne ;
+    :isSiblingOf data:Albemarle_Bowes-Lyon,
+        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne,
+        data:Mary_Colman ;
+    :isSonOf data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :isUncleOf data:Michael_Bowes-Lyon-_18th_Earl_of_Strathmore_and_Kinghorne .
+

@@ -1,0 +1,131 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:JeanCharlesUllens a :Person ;
+    :hasRelation data:JeanCharlesUllens ;
+    :isBloodrelationOf data:JeanCharlesUllens ;
+    :isSiblingOf data:JeanCharlesUllens .
+
+data:JulianaGuillermo a :Person ;
+    :hasRelation data:JulianaGuillermo ;
+    :isBloodrelationOf data:JulianaGuillermo ;
+    :isSiblingOf data:JulianaGuillermo .
+
+data:Alexia a :Person,
+        :Woman ;
+    :hasRelation data:Alexia ;
+    :hasSister data:Alexia ;
+    :isBloodrelationOf data:Alexia ;
+    :isSiblingOf data:Alexia ;
+    :isSisterOf data:Alexia .
+
+data:Beatrix a :Person,
+        :Woman ;
+    :hasRelation data:Beatrix ;
+    :hasSister data:Beatrix ;
+    :isBloodrelationOf data:Beatrix ;
+    :isSiblingOf data:Beatrix ;
+    :isSisterOf data:Beatrix .
+
+data:JeanCharlesUllens%2Ctype a :Man ;
+    :hasBrother data:JeanCharlesUllens%2Ctype ;
+    :hasRelation data:JeanCharlesUllens%2Ctype ;
+    :isBloodrelationOf data:JeanCharlesUllens%2Ctype ;
+    :isBrotherOf data:JeanCharlesUllens%2Ctype ;
+    :isSiblingOf data:JeanCharlesUllens%2Ctype .
+
+data:JulianaGuillermo%2Ctype a :Woman ;
+    :hasRelation data:JulianaGuillermo%2Ctype ;
+    :hasSister data:JulianaGuillermo%2Ctype ;
+    :isBloodrelationOf data:JulianaGuillermo%2Ctype ;
+    :isSiblingOf data:JulianaGuillermo%2Ctype ;
+    :isSisterOf data:JulianaGuillermo%2Ctype .
+
+data:Margriet a :Person,
+        :Woman ;
+    :hasRelation data:Margriet ;
+    :hasSister data:Margriet ;
+    :isBloodrelationOf data:Margriet ;
+    :isSiblingOf data:Margriet ;
+    :isSisterOf data:Margriet .
+
+data:MariusBrinkhorst a :Man,
+        :Person ;
+    :hasBrother data:MariusBrinkhorst ;
+    :hasRelation data:MariusBrinkhorst ;
+    :isBloodrelationOf data:MariusBrinkhorst ;
+    :isBrotherOf data:MariusBrinkhorst ;
+    :isSiblingOf data:MariusBrinkhorst .
+
+data:Maxima a :Person,
+        :Woman ;
+    :hasRelation data:Maxima ;
+    :hasSister data:Maxima ;
+    :isBloodrelationOf data:Maxima ;
+    :isSiblingOf data:Maxima ;
+    :isSisterOf data:Maxima .
+
+data:PieterVanVollenhoven a :Man,
+        :Person ;
+    :hasBrother data:PieterVanVollenhoven ;
+    :hasRelation data:PieterVanVollenhoven ;
+    :isBloodrelationOf data:PieterVanVollenhoven ;
+    :isBrotherOf data:PieterVanVollenhoven ;
+    :isSiblingOf data:PieterVanVollenhoven .
+
+data:Constantijn a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantijn ;
+    :hasChild data:Leonore ;
+    :hasDaughter data:Leonore ;
+    :hasRelation data:Constantijn,
+        data:Laurentien,
+        data:Leonore ;
+    :isAncestorOf data:Leonore ;
+    :isBloodrelationOf data:Constantijn ;
+    :isBrotherOf data:Constantijn ;
+    :isFatherOf data:Leonore ;
+    :isParentOf data:Leonore ;
+    :isSiblingOf data:Constantijn ;
+    :isUncleOf data:Leonore .
+
+data:Laurentien a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Leonore ;
+    :hasDaughter data:Leonore ;
+    :hasRelation data:Constantijn,
+        data:Laurentien,
+        data:Leonore ;
+    :hasSister data:Laurentien ;
+    :isAncestorOf data:Leonore ;
+    :isAuntOf data:Leonore ;
+    :isBloodrelationOf data:Laurentien ;
+    :isMotherOf data:Leonore ;
+    :isParentOf data:Leonore ;
+    :isSiblingOf data:Laurentien ;
+    :isSisterOf data:Laurentien .
+
+data:Leonore a :Person,
+        :Woman ;
+    :hasAncestor data:Constantijn,
+        data:Laurentien ;
+    :hasBirthYear 2006 ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien ;
+    :hasParent data:Constantijn,
+        data:Laurentien ;
+    :hasRelation data:Constantijn,
+        data:Laurentien,
+        data:Leonore ;
+    :hasSister data:Leonore ;
+    :isBloodrelationOf data:Leonore ;
+    :isChildOf data:Constantijn,
+        data:Laurentien ;
+    :isDaughterOf data:Constantijn,
+        data:Laurentien ;
+    :isSiblingOf data:Leonore ;
+    :isSisterOf data:Leonore .
+

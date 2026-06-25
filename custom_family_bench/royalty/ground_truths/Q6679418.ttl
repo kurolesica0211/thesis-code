@@ -7,40 +7,100 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:George_Mountbatten-_4th_Marquess_of_Milford_Haven a :Person ;
+    rdfs:label "George Mountbatten, 4th Marquess of Milford Haven" ;
+    data:posIndicesFull "2503:2552",
+        "346:395" ;
+    data:posIndicesPart "1040:1051",
+        "1179:1190",
+        "1360:1371",
+        "1486:1497",
+        "1552:1563",
+        "1687:1698",
+        "1851:1862",
+        "2073:2084",
+        "2223:2234",
+        "2333:2344",
+        "531:542",
+        "612:623",
+        "813:820",
+        "821:826",
+        "828:839",
+        "855:866" ;
+    data:wdtLink wdt:Q336783 ;
+    :alsoKnownAs "George Ivar Louis Mountbatten, 4th Marquess of Milford Haven",
+        "George Ivar Louis Mountbatten, Earl of Medina",
+        "George Mountbatten, Earl of Medina" ;
+    :hasParent data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:Janet_Bryce ;
+    :hasSex data:male .
+
+data:Lord_Ivar_Mountbatten a :Person ;
+    rdfs:label "Lord Ivar Mountbatten" ;
+    data:posIndicesFull "0:39",
+        "5:39" ;
+    data:posIndicesPart "1040:1051",
+        "1179:1190",
+        "1360:1371",
+        "1486:1497",
+        "1552:1563",
+        "1687:1698",
+        "180:184",
+        "1851:1862",
+        "203:214",
+        "2073:2084",
+        "2223:2234",
+        "2333:2344",
+        "2438:2449",
+        "531:542",
+        "612:623",
+        "828:839",
+        "855:866" ;
+    data:wdtLink wdt:Q6679418 ;
+    :alsoKnownAs "Ivar Alexander Michael Mountbatten",
+        "Ivar Mountbatten",
+        "Lord Ivar Alexander Michael Mountbatten" ;
+    :hasParent data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
+        data:Janet_Bryce ;
+    :hasSex data:male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Princess_Alice_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Alice of Battenberg" ;
-    data:posIndicesFull "163:167",
-        "1845:1849",
-        "2072:2077" ;
-    data:wdtLink wdt:Q116062 ;
-    :alsoKnownAs "Alice",
-        "Alice of Battenberg",
-        "Alice, Princess Andrew of Greece and Denmark",
-        "Mother Superior Alice-Elizabeth",
-        "Princess Alice of Greece and Denmark",
-        "Princess Andrew of Greece and Denmark",
-        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
-        "Victoria Alice Elizabeth Julia Marie",
-        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
-    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
-    :hasSex data:female ;
-    :isAuntOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
-    :isSisterOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven .
+data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven a :Person ;
+    rdfs:label "George Mountbatten, 2nd Marquess of Milford Haven" ;
+    data:posIndicesFull "426:453" ;
+    data:posIndicesPart "1040:1051",
+        "1179:1190",
+        "1360:1371",
+        "1486:1497",
+        "1552:1563",
+        "1687:1698",
+        "1851:1862",
+        "2073:2084",
+        "2223:2234",
+        "2333:2344",
+        "2438:2449",
+        "531:542",
+        "612:623",
+        "813:820",
+        "821:826",
+        "828:839",
+        "855:866" ;
+    data:wdtLink wdt:Q335129 ;
+    :alsoKnownAs "George Louis Victor Henry Serge Mountbatten, 2nd Marquess of Milford Haven",
+        "George Louis Victor Henry Serge Mountbatten, Earl of Medina",
+        "George Medina",
+        "George Milford Haven",
+        "George Mountbatten, Earl of Medina",
+        "Prince George Louis Victor Henry Serge of Battenberg",
+        "Prince George of Battenberg" ;
+    :hasSex data:male .
 
-data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven a :Person ;
     rdfs:label "Nadejda Mountbatten, Marchioness of Milford Haven" ;
     data:posIndicesFull "426:453" ;
     data:posIndicesPart "1040:1051",
@@ -50,10 +110,10 @@ data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven a :Ancestor,
         "1552:1563",
         "1687:1698",
         "1851:1862",
-        "2177:2188",
-        "2327:2338",
-        "2437:2448",
-        "2542:2553",
+        "2073:2084",
+        "2223:2234",
+        "2333:2344",
+        "2438:2449",
         "531:542",
         "612:623",
         "798:809",
@@ -74,156 +134,9 @@ data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven a :Ancestor,
         "Nadejda Mountbatten, Countess of Medina",
         "Nadejda de Torby",
         "Princess George of Battenberg" ;
-    :hasChild data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :hasSex data:female ;
-    :hasSon data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :isMotherOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :isParentOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven .
+    :hasSex data:female .
 
-data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George Mountbatten, 2nd Marquess of Milford Haven" ;
-    data:posIndicesFull "426:453" ;
-    data:posIndicesPart "1040:1051",
-        "1179:1190",
-        "1360:1371",
-        "1486:1497",
-        "1552:1563",
-        "1687:1698",
-        "1851:1862",
-        "2177:2188",
-        "2327:2338",
-        "2437:2448",
-        "2542:2553",
-        "531:542",
-        "612:623",
-        "813:820",
-        "821:826",
-        "828:839",
-        "855:866" ;
-    data:wdtLink wdt:Q335129 ;
-    :alsoKnownAs "George Louis Victor Henry Serge Mountbatten, 2nd Marquess of Milford Haven",
-        "George Louis Victor Henry Serge Mountbatten, Earl of Medina",
-        "George Medina",
-        "George Milford Haven",
-        "George Mountbatten, Earl of Medina",
-        "Prince George Louis Victor Henry Serge of Battenberg",
-        "Prince George of Battenberg" ;
-    :hasChild data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Alice_of_Battenberg ;
-    :hasSon data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :isBrotherOf data:Princess_Alice_of_Battenberg ;
-    :isFatherOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :isParentOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :isSiblingOf data:Princess_Alice_of_Battenberg .
-
-data:Janet_Bryce a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Janet Bryce" ;
-    data:posIndicesFull "303:323" ;
-    data:wdtLink wdt:Q75383906 ;
-    :alsoKnownAs "Janet Mercedes Bryce",
-        "Janet Mercedes Mountbatten, Marchioness of Milford Haven",
-        "Janet Mountbatten, Marchioness of Milford Haven" ;
-    :hasChild data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
-        data:Lord_Ivar_Mountbatten ;
-    :hasSex data:female ;
-    :hasSon data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
-        data:Lord_Ivar_Mountbatten ;
-    :isMotherOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
-        data:Lord_Ivar_Mountbatten ;
-    :isParentOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
-        data:Lord_Ivar_Mountbatten .
-
-data:George_Mountbatten-_4th_Marquess_of_Milford_Haven a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George Mountbatten, 4th Marquess of Milford Haven" ;
-    data:posIndicesFull "2607:2656",
-        "346:395" ;
-    data:posIndicesPart "1040:1051",
-        "1179:1190",
-        "1360:1371",
-        "1486:1497",
-        "1552:1563",
-        "1687:1698",
-        "1851:1862",
-        "2177:2188",
-        "2327:2338",
-        "2437:2448",
-        "531:542",
-        "612:623",
-        "813:820",
-        "821:826",
-        "828:839",
-        "855:866" ;
-    data:wdtLink wdt:Q336783 ;
-    :alsoKnownAs "George Ivar Louis Mountbatten, 4th Marquess of Milford Haven",
-        "George Ivar Louis Mountbatten, Earl of Medina",
-        "George Mountbatten, Earl of Medina" ;
-    :hasBrother data:Lord_Ivar_Mountbatten ;
-    :hasFather data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :hasMother data:Janet_Bryce ;
-    :hasParent data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
-        data:Janet_Bryce ;
-    :hasSex data:male ;
-    :isBrotherOf data:Lord_Ivar_Mountbatten ;
-    :isChildOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
-        data:Janet_Bryce ;
-    :isSiblingOf data:Lord_Ivar_Mountbatten ;
-    :isSonOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
-        data:Janet_Bryce .
-
-data:Lord_Ivar_Mountbatten a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Lord Ivar Mountbatten" ;
-    data:posIndicesFull "0:39",
-        "5:39" ;
-    data:posIndicesPart "1040:1051",
-        "1179:1190",
-        "1360:1371",
-        "1486:1497",
-        "1552:1563",
-        "1687:1698",
-        "180:184",
-        "1851:1862",
-        "203:214",
-        "2177:2188",
-        "2327:2338",
-        "2437:2448",
-        "2542:2553",
-        "531:542",
-        "612:623",
-        "828:839",
-        "855:866" ;
-    data:wdtLink wdt:Q6679418 ;
-    :alsoKnownAs "Ivar Alexander Michael Mountbatten",
-        "Ivar Mountbatten",
-        "Lord Ivar Alexander Michael Mountbatten" ;
-    :hasBrother data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
-    :hasFather data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven ;
-    :hasMother data:Janet_Bryce ;
-    :hasParent data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
-        data:Janet_Bryce ;
-    :hasSex data:male ;
-    :isBrotherOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
-    :isChildOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
-        data:Janet_Bryce ;
-    :isSiblingOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven ;
-    :isSonOf data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven,
-        data:Janet_Bryce .
-
-data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven a :Person ;
     rdfs:label "David Mountbatten, 3rd Marquess of Milford Haven" ;
     data:posIndicesFull "238:286" ;
     data:posIndicesPart "1040:1051",
@@ -233,10 +146,10 @@ data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven a :Ancestor,
         "1552:1563",
         "1687:1698",
         "1851:1862",
-        "2177:2188",
-        "2327:2338",
-        "2437:2448",
-        "2542:2553",
+        "2073:2084",
+        "2223:2234",
+        "2333:2344",
+        "2438:2449",
         "531:542",
         "612:623",
         "813:820",
@@ -245,21 +158,20 @@ data:David_Mountbatten-_3rd_Marquess_of_Milford_Haven a :Ancestor,
         "855:866" ;
     data:wdtLink wdt:Q2752971 ;
     :alsoKnownAs "David Michael Mountbatten, 3rd Marquess of Milford Haven" ;
-    :hasChild data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
-        data:Lord_Ivar_Mountbatten ;
-    :hasFather data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven ;
-    :hasMother data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
     :hasParent data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
         data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
-    :hasSex data:male ;
-    :hasSon data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
-        data:Lord_Ivar_Mountbatten ;
-    :isChildOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven ;
-    :isFatherOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
-        data:Lord_Ivar_Mountbatten ;
-    :isParentOf data:George_Mountbatten-_4th_Marquess_of_Milford_Haven,
-        data:Lord_Ivar_Mountbatten ;
-    :isSonOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
-        data:Nadejda_Mountbatten-_Marchioness_of_Milford_Haven .
+    :hasSex data:male .
+
+data:Janet_Bryce a :Person ;
+    rdfs:label "Janet Bryce" ;
+    data:posIndicesFull "303:323" ;
+    data:wdtLink wdt:Q75383906 ;
+    :alsoKnownAs "Janet Mercedes Bryce",
+        "Janet Mercedes Mountbatten, Marchioness of Milford Haven",
+        "Janet Mountbatten, Marchioness of Milford Haven" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

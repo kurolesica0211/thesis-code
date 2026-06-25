@@ -69,63 +69,28 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Hélène of Orléans (French: Princesse Hélène Louise Henriette d'Orléans; 13 June 1871 – 21 January 1951) was a member of the deposed Orléans royal family of France and, by marriage to the head of a cadet branch of the Italian royal family, the Duchess of Aosta.
-Family
+Granville James Leveson-Gower, 5th Earl Granville MC (6 December 1918 – 31 October 1996) was a British soldier, banker, peer, and landowner, a member of the House of Lords from 1953 until his death.
+Early life
 
-Hélène was the third of eight children born to Prince Philippe, Count of Paris, and Infanta Maria Isabel of Spain.
-Her father was a grandson of Louis Philippe I, King of the French, and had been heir-apparent to the throne from 1842 until the exile of the dynasty in 1848.
-Repatriating to France at the end of June 1871, the family took up residence in Paris at the Hotel Fould on the Rue du Faubourg Saint-Honoré, as guests of their uncle, Henri, Duke of Aumale, whose wealth and properties in France had not been confiscated in 1852, unlike those of the other Orléans princes.
-On 21 December 1872 the National Assembly enacted a law of restitution, authorising restoration of approximately 40 million of the eighty million francs worth of property which had formerly belonged to the House of Orléans, although the actual re-acquisition of that wealth would take several years.
-Meanwhile, a close friend of the Count and Countess of Paris, Maria Brignole Sale De Ferrari, placed at their disposal the ground floor and gardens of the Hôtel Matignon on the rue de Varenne in Paris.
-Along the adjacent rue de Babylone the Duchess had a two-story town house built to accommodate the Orléans children, their governesses and tutors, which served as Hélène's home from 1876 until her father was again exiled.
-In 1883 the last legitimate prince in the male-line of Louis XV, Henri, Count of Chambord, died childless leaving, in the eyes of French royalists excepting recalcitrant legitimists, the Count of Paris as heir to the Bourbon crown of France.
-However, celebrations in Paris in the spring of 1886 prior to the marriage in Lisbon of Hélène's eldest sister Amélie to Carlos of Braganza-Coburg, Prince Royal of Portugal, evoked such clear expressions of monarchist support for the House of Orléans that on 22 July the French Republic took the precaution of banishing the heads of France's former ruling dynasties, the Orléans and Bonapartes, from the country.
-Nearly all of the Orléans promptly left France, with Hélène and her parents going on to visit Tunbridge Wells in England and then travelling to Scotland before taking up residence in October at Sheen House in East Sheen, England.
-Potential matches
+The son of Vice-Admiral William Leveson-Gower, 4th Earl Granville, and his wife Lady Rose Bowes-Lyon, a daughter of Claude Bowes-Lyon, 14th
+Earl of Strathmore and Kinghorne, he was educated at Eton College.
+Known formally as Lord Leveson until 1953, he was commissioned into the Coldstream Guards and saw active service during the Second World War, in which he was twice wounded and mentioned in despatches.
+Later career
 
-Most of Hélène's siblings had married well, including Amélie, Queen of Portugal, Philippe, Duke of Orléans (who married Archduchess Maria Dorothea of Austria) and Isabelle, Duchess of Guise, and Hélène's parents had hopes that she would marry an heir to a throne.
-Those hopes were fanned by the fact that Hélène was considered a great beauty for the day, and one contemporary source stated that she was "the personification of womanly health and beauty, distinguished as a graceful athlete and charming linguist".
-Relationship with the Duke of Clarence
-
-Prince Albert Victor, Duke of Clarence and Avondale ("Eddy") was the eldest son of the future Edward VII and grandson of then reigning Queen Victoria.
-During the spring and summer of 1890, Eddy and Hélène were allowed to become acquainted at the homes of Clarence's sister Princess Louise, Duchess of Fife in Sheen and in Scotland, and, with the encouragement of their mothers, Hélène and Eddy fell in love.
-On 29 August, Clarence obtained permission to meet alone with his grandmother at Balmoral Castle in Scotland, and brought Hélène with him.
-Marriage to a Catholic would have entailed constitutional forfeiture of Eddy's claim to the British throne, pursuant to the Act of Settlement, but Hélène offered to become an Anglican.
-When Queen Victoria expressed surprise at Hélène's offer, Hélène wept and insisted that her willingness to do so was for the sake of love.
-This included her expectation that Hélène's father would not consent to his daughter's change of faith.
-Hélène's father refused to countenance the marriage, was adamant she could not convert and informed the Queen of his decision.
-He granted permission, nonetheless, for Hélène to personally beseech Pope Leo XIII for a dispensation to marry Clarence, but the Pope confirmed her father's verdict and the courtship ended.
-Clarence never got over his feelings for Hélène and their relationship is commemorated at his tomb at Windsor Castle by a bead wreath with the single word "HELENE" written upon it.
-Queen Victoria wrote to her grandson recommending another of her grandchildren, Princess Margaret of Prussia, as an alternative, but nothing came of that suggestion, and Clarence told his grandmother that his love for another cousin, Alix of Hesse (a match for which the Queen had long hoped) had gone unrequited.
-An engagement to Princess Mary of Teck was later arranged, but Clarence died before their wedding could take place.
-Although acknowledging his parents' desires for a French alliance in his diary, the future Tsar Nicholas II of Russia (a first cousin of Clarence) never pursued their choice, Hélène, as he was already in love with the aforementioned Alix of Hesse and secured their permission to marry her in 1894.
-In 1892, while travelling in Egypt with her brother Philippe, Hélène met Ernst Gunther, Duke of Schleswig-Holstein, who decided that he would marry her, to the fury of his sister, the German Empress Augusta Victoria.
-German diplomatic pressure put an end to Ernst Gunther's hopes, which were probably fruitless in any event as Hélène showed no interest in his advances.
-In the meantime, he met his future wife, Countess Sophie Chotek, and never considered Hélène again.
-Marriage and children
-
-On 25 June 1895, at the Church of St. Raphael in Kingston upon Thames, Hélène married Prince Emanuele Filiberto of Savoy, 2nd Duke of Aosta (1869–1931).
-The wedding was attended by Crown Prince Victor Emmanuel of Italy, the Prince and Princess of Wales and others of the British royal family.
-The couple had two sons:
-
-
-Widowed in 1931, Princess Hélène was married for a second time in 1936 to Colonel Otto Campini.
-Avocations
-
-In 1892 Hélène travelled with her brother Philippe to Egypt and Palestine, the first of many trips outside of Europe.
-After the breakdown of both her health and her marriage, Hélène began frequent trips to Africa which lasted up to ten months at a time.
-In 1913-1914 Hélène undertook a round-the-world trip which she recorded in another travel book.
-War-time nurse
-
-When the Italo-Turkish War broke out, Hélène trained as a nurse and went aboard the hospital ship Memfi, where she cared for wounded soldiers and those suffering from disease.
-During World War I, Hélène became the head of the Italian Red Cross nurses and spent much of her time on or near the front lines.
-For her service, Hélène was awarded the Italian Silver Medal for bravery, the Romanian Regina Maria Cross, the French Croix de Guerre, and the Insignia of a Dame Grand Cross of the Order of the British Empire.
+After the war, Lord Leveson joined Coutts & Co., a private bank.
+On 25 June 1953, he succeeded his father as Earl Granville (created 1833), Viscount Granville (1814), and Baron Leveson of Stone (1814), giving him a seat in the House of Lords.
+In 1958, Granville married Doon Aileen Plunket, daughter of Brindsley Sheridan Bushe Plunket and granddaughter of William Plunket, 5th Baron Plunket.
+Her mother was Aileen Sibell Mary Guinness, a granddaughter of Edward Guinness, 1st Earl of Iveagh.
+In 1960, shortly after the birth of his first child, Granville bought the island of North Uist in the Outer Hebrides from the Duke of Hamilton, becoming its laird.
+In 1974 Granville was appointed as a Deputy Lieutenant of Inverness-shire and was Vice-Lord-Lieutenant of the Western Isles between January 1976 and 1983, then Lord-Lieutenant from 1983 to December 1993, when he was succeeded by Viscount Dunrossil.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -141,39 +106,9 @@ For her service, Hélène was awarded the Italian Silver Medal for bravery, the 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -188,6 +123,23 @@ For her service, Hélène was awarded the Italian Silver Medal for bravery, the 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -205,6 +157,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -272,29 +239,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -303,6 +262,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -315,6 +282,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -323,17 +292,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -361,6 +332,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -376,131 +431,108 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a179a609-a840-4d54-bd9b-49952ab8e26e)
- Call ID: a179a609-a840-4d54-bd9b-49952ab8e26e
+  AssignClass (afe47fa0-1c81-4c57-8d71-1fa9c2d8a18f)
+ Call ID: afe47fa0-1c81-4c57-8d71-1fa9c2d8a18f
   Args:
-    type: :Woman
-    source: Hélène_of_Orléans
-  AssignClass (95b0fc9d-92d4-44ff-af27-33ae2e7cab30)
- Call ID: 95b0fc9d-92d4-44ff-af27-33ae2e7cab30
+    source: Granville_James_Leveson-Gower
+    type: :Man
+  AddLiteral (a05a53b9-9419-4ebc-8d90-656c386af1c0)
+ Call ID: a05a53b9-9419-4ebc-8d90-656c386af1c0
   Args:
-    source: Hélène_of_Orléans
-    type: :Person
-  AddLiteral (0ab56d47-d326-4f5c-b8b2-4cb26da078ef)
- Call ID: 0ab56d47-d326-4f5c-b8b2-4cb26da078ef
-  Args:
+    source: Granville_James_Leveson-Gower
     literal_type: xsd:integer
-    literal_value: 1871
-    source: Hélène_of_Orléans
     relation: :hasBirthYear
-  AddLiteral (256f4d80-d19f-4410-b238-ebfe8793df84)
- Call ID: 256f4d80-d19f-4410-b238-ebfe8793df84
+    literal_value: 1918
+  AddLiteral (ac65ce9d-acc5-44d7-bd08-05f34ad802a3)
+ Call ID: ac65ce9d-acc5-44d7-bd08-05f34ad802a3
   Args:
-    source: Hélène_of_Orléans
     relation: :hasDeathYear
+    source: Granville_James_Leveson-Gower
     literal_type: xsd:integer
-    literal_value: 1951
-  AssignClass (679861d7-04e0-4c36-9681-d12ff24e8c27)
- Call ID: 679861d7-04e0-4c36-9681-d12ff24e8c27
+    literal_value: 1996
+  AssignClass (6f424975-497a-4a0d-bec3-248ab2fc5bdd)
+ Call ID: 6f424975-497a-4a0d-bec3-248ab2fc5bdd
   Args:
-    source: Prince_Philippe_Count_of_Paris
     type: :Man
-  AssignClass (820e2cda-99be-497a-a622-c49bc8bcf8b2)
- Call ID: 820e2cda-99be-497a-a622-c49bc8bcf8b2
+    source: William_Leveson-Gower
+  AssignClass (1ff2afa3-c033-495f-80c2-34979f4e36b9)
+ Call ID: 1ff2afa3-c033-495f-80c2-34979f4e36b9
   Args:
-    source: Prince_Philippe_Count_of_Paris
-    type: :Ancestor
-  AssignClass (811a3030-ea13-44f9-8ec6-170fe1f30496)
- Call ID: 811a3030-ea13-44f9-8ec6-170fe1f30496
-  Args:
-    source: Infanta_Maria_Isabel_of_Spain
+    source: Lady_Rose_Bowes-Lyon
     type: :Woman
-  AssignClass (354badda-8f76-4a17-a9a1-60bee928eed6)
- Call ID: 354badda-8f76-4a17-a9a1-60bee928eed6
+  AddTriple (01065f1c-9040-41e6-9b88-6158712a9987)
+ Call ID: 01065f1c-9040-41e6-9b88-6158712a9987
   Args:
-    type: :Ancestor
-    source: Infanta_Maria_Isabel_of_Spain
-  AddTriple (a1c2c5d3-4f42-48e5-afe7-7e1cda5885e2)
- Call ID: a1c2c5d3-4f42-48e5-afe7-7e1cda5885e2
-  Args:
-    target: Prince_Philippe_Count_of_Paris
-    source: Hélène_of_Orléans
+    target: William_Leveson-Gower
+    source: Granville_James_Leveson-Gower
     relation: :hasFather
-  AddTriple (7c9cd432-0a67-4ab0-8efe-d2fb86e13a31)
- Call ID: 7c9cd432-0a67-4ab0-8efe-d2fb86e13a31
+  AddTriple (8d292501-8e25-451c-9de2-bd20a7004432)
+ Call ID: 8d292501-8e25-451c-9de2-bd20a7004432
   Args:
-    target: Infanta_Maria_Isabel_of_Spain
-    source: Hélène_of_Orléans
+    target: Lady_Rose_Bowes-Lyon
+    source: Granville_James_Leveson-Gower
     relation: :hasMother
-  AssignClass (8a313cc6-45f2-4820-a487-25af6d69af6a)
- Call ID: 8a313cc6-45f2-4820-a487-25af6d69af6a
+  AssignClass (bbd342b7-60e2-40ed-8283-bbcf2a424ed7)
+ Call ID: bbd342b7-60e2-40ed-8283-bbcf2a424ed7
   Args:
+    type: :Man
+    source: Claude_Bowes-Lyon
+  AddTriple (cc0265ed-47c3-402d-b5c4-73889d296155)
+ Call ID: cc0265ed-47c3-402d-b5c4-73889d296155
+  Args:
+    target: Claude_Bowes-Lyon
+    source: Lady_Rose_Bowes-Lyon
+    relation: :hasFather
+  AssignClass (88280d77-0a04-4e33-833c-5a28ac88ee76)
+ Call ID: 88280d77-0a04-4e33-833c-5a28ac88ee76
+  Args:
+    source: Doon_Aileen_Plunket
     type: :Woman
-    source: Amélie_of_Orléans
-  AddTriple (4a6d10a9-a482-4493-8cda-1bd2d354973f)
- Call ID: 4a6d10a9-a482-4493-8cda-1bd2d354973f
+  AddTriple (2e1bdadf-435f-4d96-9731-0c979eb786f3)
+ Call ID: 2e1bdadf-435f-4d96-9731-0c979eb786f3
   Args:
-    relation: :hasSister
-    source: Hélène_of_Orléans
-    target: Amélie_of_Orléans
-  AssignClass (74117a43-e0d7-4b0a-afd4-71ee4d4a5488)
- Call ID: 74117a43-e0d7-4b0a-afd4-71ee4d4a5488
+    target: Doon_Aileen_Plunket
+    source: Granville_James_Leveson-Gower
+    relation: :hasRelation
+  AddLiteral (9a3edf17-6408-4495-a4c2-fd44d29bad1c)
+ Call ID: 9a3edf17-6408-4495-a4c2-fd44d29bad1c
+  Args:
+    literal_value: 1958
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Granville_James_Leveson-Gower
+  AssignClass (f3c37902-3b01-42f3-81a0-a88249eac36b)
+ Call ID: f3c37902-3b01-42f3-81a0-a88249eac36b
   Args:
     type: :Man
-    source: Philippe_Duke_of_Orléans
-  AddTriple (8710a7ab-f19e-4dc2-929b-e25a6a7d3255)
- Call ID: 8710a7ab-f19e-4dc2-929b-e25a6a7d3255
+    source: Brindsley_Sheridan_Bushe_Plunket
+  AddTriple (45ce603c-c022-4e3c-9f1a-78a668279afb)
+ Call ID: 45ce603c-c022-4e3c-9f1a-78a668279afb
   Args:
-    relation: :hasBrother
-    source: Hélène_of_Orléans
-    target: Philippe_Duke_of_Orléans
-  AssignClass (f4fc243e-4926-4c21-a9aa-f7ae5d7f78a6)
- Call ID: f4fc243e-4926-4c21-a9aa-f7ae5d7f78a6
+    relation: :hasFather
+    source: Doon_Aileen_Plunket
+    target: Brindsley_Sheridan_Bushe_Plunket
+  AssignClass (b66e9e45-28fa-4f27-9a9b-24abbdfc53a6)
+ Call ID: b66e9e45-28fa-4f27-9a9b-24abbdfc53a6
   Args:
+    source: William_Plunket
+    type: :Man
+  AssignClass (0823f187-0a77-4d4c-b9d5-24076ceefe1f)
+ Call ID: 0823f187-0a77-4d4c-b9d5-24076ceefe1f
+  Args:
+    source: Aileen_Sibell_Mary_Guinness
     type: :Woman
-    source: Isabelle_Duchess_of_Guise
-  AddTriple (47399f93-83d2-47f8-a83a-640a8738260e)
- Call ID: 47399f93-83d2-47f8-a83a-640a8738260e
+  AddTriple (ac274fd0-00f9-4df5-b1a4-435c7e36c4d8)
+ Call ID: ac274fd0-00f9-4df5-b1a4-435c7e36c4d8
   Args:
-    source: Hélène_of_Orléans
-    relation: :hasSister
-    target: Isabelle_Duchess_of_Guise
-  AssignClass (674e05f6-15ae-4db6-ba9a-f4cc77f19b2c)
- Call ID: 674e05f6-15ae-4db6-ba9a-f4cc77f19b2c
+    target: Aileen_Sibell_Mary_Guinness
+    source: Doon_Aileen_Plunket
+    relation: :hasMother
+  AssignClass (2524d921-837c-48e5-b5a0-238d49e245e2)
+ Call ID: 2524d921-837c-48e5-b5a0-238d49e245e2
   Args:
-    source: Prince_Emanuele_Filiberto_of_Savoy
+    source: Edward_Guinness
     type: :Man
-  AddLiteral (f3960a1c-92ff-4bb1-92be-9122e8be7521)
- Call ID: f3960a1c-92ff-4bb1-92be-9122e8be7521
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1895
-    source: Hélène_of_Orléans
-    relation: :hasMarriageYear
-  AddTriple (5c8c5cec-b9de-417f-a5e4-0023b42bf678)
- Call ID: 5c8c5cec-b9de-417f-a5e4-0023b42bf678
-  Args:
-    relation: :hasRelation
-    source: Hélène_of_Orléans
-    target: Prince_Emanuele_Filiberto_of_Savoy
-  AssignClass (511b0434-af75-416c-ad76-cd582b0031aa)
- Call ID: 511b0434-af75-416c-ad76-cd582b0031aa
-  Args:
-    source: Otto_Campini
-    type: :Man
-  AddLiteral (8f46b458-ff1c-4756-b642-67a2576f50f9)
- Call ID: 8f46b458-ff1c-4756-b642-67a2576f50f9
-  Args:
-    relation: :hasMarriageYear
-    source: Hélène_of_Orléans
-    literal_type: xsd:integer
-    literal_value: 1936
-  AddTriple (b0f3067b-9bbe-4e8e-af2f-209f3b1e7c7e)
- Call ID: b0f3067b-9bbe-4e8e-af2f-209f3b1e7c7e
-  Args:
-    target: Otto_Campini
-    source: Hélène_of_Orléans
-    relation: :hasRelation
-  Finish (c88a08bc-486a-4348-8d62-1b97aa060b74)
- Call ID: c88a08bc-486a-4348-8d62-1b97aa060b74
+  Finish (2d661d8d-5d12-494a-8e5c-f898b254aa3c)
+ Call ID: 2d661d8d-5d12-494a-8e5c-f898b254aa3c
   Args:

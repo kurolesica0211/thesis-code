@@ -7,29 +7,47 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Angelica_Hicks a :Person ;
+    rdfs:label "Angelica Hicks" ;
+    data:posIndicesFull "0:32" ;
+    data:posIndicesPart "1218:1223",
+        "1298:1303",
+        "1354:1359",
+        "1495:1500",
+        "2004:2009",
+        "2117:2122",
+        "2189:2194",
+        "2247:2252",
+        "331:336",
+        "501:506",
+        "726:731",
+        "875:880" ;
+    data:wdtLink wdt:Q75328030 ;
+    :alsoKnownAs "Angelica Margherita Edwina Hicks" ;
+    :hasParent data:Allegra_Hicks,
+        data:Ashley_Hicks ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Allegra_Hicks a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Allegra_Hicks a :Person ;
     rdfs:label "Allegra Hicks" ;
-    data:posIndicesFull "179:217" ;
-    data:posIndicesPart "1117:1122",
-        "1345:1350",
-        "1458:1463",
-        "1530:1535",
-        "1588:1593",
-        "310:315",
-        "535:540",
-        "684:689",
-        "840:845",
-        "920:925",
-        "976:981" ;
+    data:posIndicesFull "370:408" ;
+    data:posIndicesPart "1218:1223",
+        "1298:1303",
+        "1354:1359",
+        "1495:1500",
+        "2004:2009",
+        "2117:2122",
+        "2189:2194",
+        "2247:2252",
+        "501:506",
+        "726:731",
+        "875:880" ;
     data:wdtLink wdt:Q75328043 ;
     :alsoKnownAs "Allegra Marina Tondato",
         "Allegra Mottola di Amato",
@@ -37,54 +55,61 @@ data:Allegra_Hicks a :Ancestor,
         "Marina Allegra Federica Silvia Hicks",
         "Marina Allegra Federica Silvia Mottola di Amato",
         "Marina Allegra Federica Silvia Tondato" ;
-    :hasChild data:Angelica_Hicks ;
-    :hasDaughter data:Angelica_Hicks ;
-    :hasSex data:female ;
-    :isMotherOf data:Angelica_Hicks ;
-    :isParentOf data:Angelica_Hicks .
+    :hasSex data:female .
 
-data:David_Nightingale_Hicks a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Ashley_Hicks a :Person ;
+    rdfs:label "Ashley Hicks" ;
+    data:posIndicesFull "435:459" ;
+    data:posIndicesPart "1218:1223",
+        "1298:1303",
+        "1354:1359",
+        "1495:1500",
+        "2004:2009",
+        "2117:2122",
+        "2189:2194",
+        "2247:2252",
+        "501:506",
+        "726:731",
+        "875:880",
+        "977:983" ;
+    data:wdtLink wdt:Q16195113 ;
+    :alsoKnownAs "Ashley Louis David Hicks" ;
+    :hasParent data:David_Nightingale_Hicks,
+        data:Lady_Pamela_Hicks ;
+    :hasSex data:male .
+
+data:David_Nightingale_Hicks a :Person ;
     rdfs:label "David Nightingale Hicks" ;
-    data:posIndicesFull "257:268",
-        "388:411" ;
-    data:posIndicesPart "1117:1122",
-        "1345:1350",
-        "1458:1463",
-        "1530:1535",
-        "1588:1593",
-        "535:540",
-        "684:689",
-        "840:845",
-        "920:925",
-        "976:981" ;
+    data:posIndicesFull "448:459",
+        "579:602" ;
+    data:posIndicesPart "1218:1223",
+        "1298:1303",
+        "1354:1359",
+        "1495:1500",
+        "2004:2009",
+        "2117:2122",
+        "2189:2194",
+        "2247:2252",
+        "726:731",
+        "875:880" ;
     data:wdtLink wdt:Q5238032 ;
     :alsoKnownAs "David Hicks" ;
-    :hasChild data:Ashley_Hicks ;
-    :hasSex data:male ;
-    :hasSon data:Ashley_Hicks ;
-    :isFatherOf data:Ashley_Hicks ;
-    :isParentOf data:Ashley_Hicks .
+    :hasSex data:male .
 
-data:Lady_Pamela_Hicks a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Lady_Pamela_Hicks a :Person ;
     rdfs:label "Lady Pamela Hicks" ;
-    data:posIndicesFull "416:439",
-        "421:439" ;
-    data:posIndicesPart "1117:1122",
-        "1345:1350",
-        "1458:1463",
-        "1530:1535",
-        "1588:1593",
-        "535:540",
-        "684:689",
-        "840:845",
-        "920:925",
-        "976:981" ;
+    data:posIndicesFull "607:630",
+        "612:630" ;
+    data:posIndicesPart "1218:1223",
+        "1298:1303",
+        "1354:1359",
+        "1495:1500",
+        "2004:2009",
+        "2117:2122",
+        "2189:2194",
+        "2247:2252",
+        "726:731",
+        "875:880" ;
     data:wdtLink wdt:Q3268202 ;
     :alsoKnownAs "Lady Pamela Carmen Louise Hicks",
         "Lady Pamela Carmen Louise Mountbatten",
@@ -92,72 +117,29 @@ data:Lady_Pamela_Hicks a :Ancestor,
         "Pamela Carmen Louise Hicks",
         "Pamela Carmen Louise Mountbatten",
         "Pamela Mountbatten" ;
-    :hasChild data:Ashley_Hicks ;
-    :hasSex data:female ;
-    :hasSon data:Ashley_Hicks ;
-    :isMotherOf data:Ashley_Hicks ;
-    :isParentOf data:Ashley_Hicks .
+    :hasParent data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasSex data:female .
 
-data:Angelica_Hicks a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Angelica Hicks" ;
-    data:posIndicesFull "0:32" ;
-    data:posIndicesPart "1117:1122",
-        "1345:1350",
-        "140:145",
-        "1458:1463",
-        "1530:1535",
-        "1588:1593",
-        "310:315",
-        "535:540",
-        "684:689",
-        "840:845",
-        "920:925",
-        "976:981" ;
-    data:wdtLink wdt:Q75328030 ;
-    :alsoKnownAs "Angelica Margherita Edwina Hicks" ;
-    :hasFather data:Ashley_Hicks ;
-    :hasMother data:Allegra_Hicks ;
-    :hasParent data:Allegra_Hicks,
-        data:Ashley_Hicks ;
-    :hasSex data:female ;
-    :isChildOf data:Allegra_Hicks,
-        data:Ashley_Hicks ;
-    :isDaughterOf data:Allegra_Hicks,
-        data:Ashley_Hicks .
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Person ;
+    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma" ;
+    data:posIndicesFull "1069:1095",
+        "147:164",
+        "147:195",
+        "902:919",
+        "902:950" ;
+    data:posIndicesPart "1736:1741",
+        "753:764" ;
+    data:wdtLink wdt:Q157068 ;
+    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten",
+        "Lord Louis Mountbatten",
+        "Lord Mountbatten",
+        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma",
+        "Louis Mountbatten",
+        "Prince Louis of Battenberg",
+        "The Earl Mountbatten of Burma" ;
+    :hasSex data:male .
 
-data:Ashley_Hicks a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Ashley Hicks" ;
-    data:posIndicesFull "244:268" ;
-    data:posIndicesPart "1117:1122",
-        "1345:1350",
-        "1458:1463",
-        "1530:1535",
-        "1588:1593",
-        "310:315",
-        "535:540",
-        "684:689",
-        "786:792",
-        "840:845",
-        "920:925",
-        "976:981" ;
-    data:wdtLink wdt:Q16195113 ;
-    :alsoKnownAs "Ashley Louis David Hicks" ;
-    :hasChild data:Angelica_Hicks ;
-    :hasDaughter data:Angelica_Hicks ;
-    :hasFather data:David_Nightingale_Hicks ;
-    :hasMother data:Lady_Pamela_Hicks ;
-    :hasParent data:David_Nightingale_Hicks,
-        data:Lady_Pamela_Hicks ;
-    :hasSex data:male ;
-    :isChildOf data:David_Nightingale_Hicks,
-        data:Lady_Pamela_Hicks ;
-    :isFatherOf data:Angelica_Hicks ;
-    :isParentOf data:Angelica_Hicks ;
-    :isSonOf data:David_Nightingale_Hicks,
-        data:Lady_Pamela_Hicks .
+data:female a :Female .
+
+data:male a :Male .
 

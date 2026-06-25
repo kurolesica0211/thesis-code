@@ -2,39 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:King_George_VI a :Man,
-        :Person .
-
-data:Princess_Margaret a :Person,
-        :Woman .
-
-data:Queen_Elizabeth_II a :Person,
-        :Woman .
-
-data:Queen_Elizabeth_the_Queen_Mother a :Person,
-        :Woman ;
-    :isSisterOf data:Patrick_Lord_Glamis .
-
-data:Timothy_Patrick_Bowes-Lyon a :Man,
+data:Prince_Louis_of_Wales a :Man,
         :Person ;
-    :hasBirthYear 1918 ;
-    :hasDeathYear 1972 ;
-    :hasFather data:Patrick_Lord_Glamis ;
-    :hasMother data:Lady_Dorothy_Osborne ;
-    :hasSex data:Male ;
-    :isBloodrelationOf data:Captain_Fergus_Bowes-Lyon .
+    :hasBirthYear 2018 ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Princess_of_Wales ;
+    :isSiblingOf data:Prince_George,
+        data:Princess_Charlotte .
 
-data:Captain_Fergus_Bowes-Lyon a :Man,
-        :Person .
-
-data:Lady_Dorothy_Osborne a :Ancestor,
+data:Catherine_Princess_of_Wales a :Ancestor,
         :Person,
-        :Woman ;
-    :hasDeathYear 1946 .
+        :Woman .
 
-data:Male a :Male .
+data:Diana_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman .
 
-data:Patrick_Lord_Glamis a :Ancestor,
+data:King_Charles_III a :Ancestor,
         :Man,
         :Person .
+
+data:Prince_George a :Man,
+        :Person .
+
+data:Princess_Charlotte a :Person,
+        :Woman .
+
+data:William_Prince_of_Wales a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:King_Charles_III ;
+    :hasMother data:Diana_Princess_of_Wales .
 

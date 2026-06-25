@@ -2,20 +2,23 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+data:Georg_Friedrich_Prinz_von_Preussen a :Man,
+        :Person ;
+    :isChildOf data:Michael_Prinz_von_Preussen .
+
+data:Kira_Kirillovna_of_Russia a :Person,
+        :Woman .
+
+data:Louis_Ferdinand_Prinz_von_Preussen a :Man,
+        :Person .
+
 data:Michael_Prinz_von_Preussen a :Man,
         :Person ;
     :hasAncestor data:Wilhelm_II ;
     :hasBirthYear 1940 ;
     :hasDeathYear 2014 ;
-    :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
-    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
-    :knownAs "Wilhelm Heinrich Michael Louis Ferdinand Friedrich Franz Wladimir Prinz von Preussen"^^xsd:string .
-
-data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,
-        :Woman .
-
-data:Louis_Ferdinand_Prince_of_Prussia a :Man,
-        :Person .
+    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;
+    :hasMother data:Kira_Kirillovna_of_Russia .
 
 data:Wilhelm_II a :Man,
         :Person .

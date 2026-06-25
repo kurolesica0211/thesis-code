@@ -7,178 +7,19 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Charles_III a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Charles III" ;
-    data:posIndicesFull "224:236",
-        "224:240",
-        "229:240",
-        "3381:3392" ;
-    data:posIndicesPart "2365:2372",
-        "7154:7161" ;
-    data:wdtLink wdt:Q43274 ;
-    :alsoKnownAs "C III",
-        "Charles III of England",
-        "Charles III of the United Kingdom",
-        "Charles Mountbatten-Windsor",
-        "Charles Philip Arthur George",
-        "Charles Philip Arthur George Mountbatten-Windsor",
-        "Charles Philip Arthur George Windsor",
-        "Charles Philip Arthur George, Prince of Wales",
-        "Charles Wales",
-        "Charles Windsor",
-        "Charles the Third",
-        "HM King Charles III",
-        "His Majesty",
-        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith",
-        "His Majesty The King",
-        "His Royal Highness Charles III of Great Britain",
-        "King Charles",
-        "King Charles III",
-        "King of England",
-        "Prince Charles",
-        "Prince Charles Philip Arthur George of Edinburgh",
-        "Prince Charles Philip Arthur George, Prince of Wales",
-        "Prince Charles of Edinburgh",
-        "Prince Charles, Duke of Rothesay",
-        "Prince Charles, Prince of Wales",
-        "The Prince Charles Philip Arthur George, Prince of Wales",
-        "The Prince Charles, Prince of Wales" ;
-    :hasBrother data:Andrew_Mountbatten-Windsor ;
-    :hasSex data:male ;
-    :isBrotherOf data:Andrew_Mountbatten-Windsor ;
-    :isSiblingOf data:Andrew_Mountbatten-Windsor ;
-    :isUncleOf data:Princess_Beatrice_of_York,
-        data:Princess_Eugenie_of_York .
-
-data:Edoardo_Mapelli_Mozzi a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Edoardo Mapelli Mozzi" ;
-    data:posIndicesFull "23:44",
-        "3841:3862",
-        "418:439",
-        "8279:8300" ;
-    data:posIndicesPart "3885:3892",
-        "3893:3898",
-        "4005:4012",
-        "4013:4018",
-        "4176:4183",
-        "4210:4217",
-        "4218:4223",
-        "4351:4358",
-        "4359:4364",
-        "4501:4508",
-        "4509:4514" ;
-    data:wdtLink wdt:Q68688016 ;
-    :alsoKnownAs "Count Edoardo Alessandro Mapelli Mozzi",
-        "Count Edoardo Mapelli Mozzi",
-        "Edoardo Alessandro Mapelli Mozzi" ;
-    :hasChild data:Sienna_Mapelli_Mozzi ;
-    :hasDaughter data:Sienna_Mapelli_Mozzi ;
-    :hasSex data:male ;
-    :isFatherOf data:Sienna_Mapelli_Mozzi ;
-    :isParentOf data:Sienna_Mapelli_Mozzi .
-
-data:Sarah_Ferguson a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Sarah Ferguson" ;
-    data:posIndicesFull "193:207" ;
-    data:wdtLink wdt:Q55720 ;
-    :alsoKnownAs "Fergie",
-        "Sarah Margaret Ferguson",
-        "Sarah Margaret Mountbatten-Windsor",
-        "Sarah Mountbatten-Windsor" ;
-    :hasChild data:Princess_Beatrice_of_York,
-        data:Princess_Eugenie_of_York ;
-    :hasDaughter data:Princess_Beatrice_of_York,
-        data:Princess_Eugenie_of_York ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Beatrice_of_York,
-        data:Princess_Eugenie_of_York ;
-    :isParentOf data:Princess_Beatrice_of_York,
-        data:Princess_Eugenie_of_York .
-
-data:Sienna_Mapelli_Mozzi a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Sienna Mapelli Mozzi" ;
-    data:posIndicesFull "5325:5355" ;
-    data:posIndicesPart "5439:5445" ;
-    data:wdtLink wdt:Q108703114 ;
-    :alsoKnownAs "Sienna Elizabeth Mapelli Mozzi" ;
-    :hasFather data:Edoardo_Mapelli_Mozzi ;
-    :hasMother data:Princess_Beatrice_of_York ;
-    :hasParent data:Edoardo_Mapelli_Mozzi,
-        data:Princess_Beatrice_of_York ;
-    :hasSex data:female ;
-    :isChildOf data:Edoardo_Mapelli_Mozzi,
-        data:Princess_Beatrice_of_York ;
-    :isDaughterOf data:Edoardo_Mapelli_Mozzi,
-        data:Princess_Beatrice_of_York .
-
-data:Andrew_Mountbatten-Windsor a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Andrew Mountbatten-Windsor" ;
-    data:posIndicesFull "162:188" ;
-    data:posIndicesPart "1196:1203",
-        "1395:1402",
-        "4290:4297",
-        "4451:4457",
-        "4601:4608",
-        "4757:4763",
-        "4898:4904" ;
-    data:wdtLink wdt:Q153330 ;
-    :alsoKnownAs "Andrew Albert Christian Edward",
-        "Andrew Albert Christian Edward Mountbatten-Windsor",
-        "Baron Killyleagh",
-        "Earl of Inverness",
-        "Prince Andrew",
-        "Prince Andrew of the United Kingdom",
-        "Prince Andrew, Duke of York",
-        "Randy Andy" ;
-    :hasBrother data:Charles_III ;
-    :hasChild data:Princess_Beatrice_of_York,
-        data:Princess_Eugenie_of_York ;
-    :hasDaughter data:Princess_Beatrice_of_York,
-        data:Princess_Eugenie_of_York ;
-    :hasSex data:male ;
-    :isBrotherOf data:Charles_III ;
-    :isFatherOf data:Princess_Beatrice_of_York,
-        data:Princess_Eugenie_of_York ;
-    :isParentOf data:Princess_Beatrice_of_York,
-        data:Princess_Eugenie_of_York ;
-    :isSiblingOf data:Charles_III .
-
-data:Princess_Eugenie_of_York a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Eugenie_of_York a :Person ;
     rdfs:label "Princess Eugenie of York" ;
-    data:posIndicesFull "757:773" ;
-    data:posIndicesPart "1016:1023",
-        "2009:2013",
-        "2104:2108",
-        "2781:2785",
-        "6595:6599",
-        "6658:6665",
-        "7103:7107",
-        "7453:7457",
-        "7698:7702",
-        "8165:8169" ;
+    data:posIndicesFull "845:861" ;
+    data:posIndicesPart "1104:1111",
+        "2097:2101",
+        "2192:2196",
+        "2869:2873",
+        "6683:6687",
+        "6746:6753",
+        "7191:7195",
+        "7451:7455",
+        "7696:7700",
+        "8487:8491" ;
     data:wdtLink wdt:Q165709 ;
     :alsoKnownAs "Eugenie Victoria Helena",
         "Eugenie Victoria Helena Mountbatten-Windsor",
@@ -187,82 +28,153 @@ data:Princess_Eugenie_of_York a :Ancestor,
         "Princess Eugenie Victoria Helena of York",
         "Princess Eugenie, Mrs Brooksbank",
         "Princess Eugenie, Mrs Jack Brooksbank" ;
-    :hasFather data:Andrew_Mountbatten-Windsor ;
-    :hasMother data:Sarah_Ferguson ;
     :hasParent data:Andrew_Mountbatten-Windsor,
         data:Sarah_Ferguson ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Beatrice_of_York ;
-    :isAuntOf data:Sienna_Mapelli_Mozzi ;
-    :isChildOf data:Andrew_Mountbatten-Windsor,
-        data:Sarah_Ferguson ;
-    :isDaughterOf data:Andrew_Mountbatten-Windsor,
-        data:Sarah_Ferguson ;
-    :isSiblingOf data:Princess_Beatrice_of_York ;
-    :isSisterOf data:Princess_Beatrice_of_York .
+    :hasSex data:female .
 
-data:Princess_Beatrice_of_York a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Sienna_Mapelli_Mozzi a :Person ;
+    rdfs:label "Sienna Mapelli Mozzi" ;
+    data:posIndicesFull "5413:5443" ;
+    data:posIndicesPart "5527:5533" ;
+    data:wdtLink wdt:Q108703114 ;
+    :alsoKnownAs "Sienna Elizabeth Mapelli Mozzi" ;
+    :hasParent data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Edoardo_Mapelli_Mozzi a :Person ;
+    rdfs:label "Edoardo Mapelli Mozzi" ;
+    data:posIndicesFull "23:44",
+        "3929:3950",
+        "418:439",
+        "8601:8622" ;
+    data:posIndicesPart "3973:3980",
+        "3981:3986",
+        "4093:4100",
+        "4101:4106",
+        "4264:4271",
+        "4298:4305",
+        "4306:4311",
+        "4439:4446",
+        "4447:4452",
+        "4589:4596",
+        "4597:4602" ;
+    data:wdtLink wdt:Q68688016 ;
+    :alsoKnownAs "Count Edoardo Alessandro Mapelli Mozzi",
+        "Count Edoardo Mapelli Mozzi",
+        "Edoardo Alessandro Mapelli Mozzi" ;
+    :hasSex data:male .
+
+data:Elizabeth_II a :Person ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "2790:2808",
+        "2796:2808",
+        "3286:3304",
+        "3292:3304",
+        "5601:5619",
+        "5607:5619",
+        "689:707",
+        "695:707" ;
+    data:posIndicesPart "5871:5880" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasSex data:female .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh" ;
+    data:posIndicesFull "2745:2758",
+        "2745:2777",
+        "712:725",
+        "712:744",
+        "8140:8153" ;
+    data:posIndicesPart "2467:2473",
+        "6509:6515",
+        "6568:6574",
+        "7638:7642",
+        "7646:7655",
+        "7915:7921",
+        "7927:7933",
+        "8479:8483" ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip",
+        "H.R.H. The Duke Of Edinburgh",
+        "Lieutenant Philip Mountbatten",
+        "Philip Edinburgh",
+        "Philip Mountbatten",
+        "Philip Mountbatten; Prince Philip of Greece and Denmark",
+        "Philip of Greece and Denmark",
+        "Prince Philip",
+        "Prince Philip of Greece and Denmark",
+        "The Prince Philip, Duke of Edinburgh" ;
+    :hasSex data:male .
+
+data:Princess_Beatrice_of_York a :Person ;
     rdfs:label "Princess Beatrice of York" ;
     data:posIndicesFull "0:17",
         "0:44",
-        "2134:2147",
-        "3086:3103",
-        "5020:5033",
-        "6930:6943",
-        "8060:8077",
-        "8060:8085",
-        "8256:8273",
-        "8256:8300" ;
-    data:posIndicesPart "1025:1033",
-        "1120:1128",
-        "1213:1221",
-        "1335:1343",
-        "1443:1451",
-        "1631:1639",
-        "1701:1709",
-        "1973:1981",
-        "2009:2013",
-        "2104:2108",
-        "2275:2283",
+        "2222:2235",
+        "3174:3191",
+        "5108:5121",
+        "7018:7031",
+        "8382:8399",
+        "8382:8407",
+        "8578:8595",
+        "8578:8622" ;
+    data:posIndicesPart "1113:1121",
+        "1208:1216",
+        "1301:1309",
+        "1423:1431",
+        "1531:1539",
+        "1719:1727",
+        "1789:1797",
+        "2061:2069",
+        "2097:2101",
+        "2192:2196",
+        "2363:2371",
         "242:250",
-        "2454:2462",
-        "2644:2652",
-        "2781:2785",
-        "2794:2802",
-        "2941:2949",
-        "3218:3226",
-        "3438:3446",
-        "3531:3539",
-        "3708:3716",
+        "2542:2550",
+        "2732:2740",
+        "2869:2873",
+        "2882:2890",
+        "3029:3037",
+        "3306:3314",
+        "3526:3534",
+        "3619:3627",
+        "3796:3804",
         "401:409",
-        "4299:4307",
-        "4338:4346",
-        "4484:4492",
-        "4912:4920",
-        "5169:5177",
+        "4387:4395",
+        "4426:4434",
+        "4572:4580",
+        "5000:5008",
+        "5257:5265",
         "538:546",
-        "5570:5578",
-        "5730:5738",
-        "5919:5927",
-        "6015:6023",
-        "6240:6248",
-        "6437:6445",
+        "5658:5666",
+        "5818:5826",
+        "6007:6015",
+        "6103:6111",
+        "6328:6336",
+        "6525:6533",
         "652:656",
-        "6563:6571",
-        "658:666",
-        "6595:6599",
-        "6894:6902",
-        "7103:7107",
-        "7236:7244",
-        "7453:7457",
-        "7479:7487",
-        "7698:7702",
-        "7775:7783",
-        "7851:7859",
-        "793:801" ;
+        "6651:6659",
+        "6683:6687",
+        "6982:6990",
+        "7191:7195",
+        "7234:7242",
+        "7451:7455",
+        "746:754",
+        "7477:7485",
+        "7696:7700",
+        "7963:7971",
+        "8173:8181",
+        "881:889" ;
     data:wdtLink wdt:Q165657 ;
     :alsoKnownAs "Bea York",
         "Beatrice Elizabeth Mary Mountbatten-Windsor, Princess of York",
@@ -276,20 +188,44 @@ data:Princess_Beatrice_of_York a :Ancestor,
         "Princess Beatrice, Mrs Mapelli Mozzi",
         "Princess Beatrice, Mrs. Edoardo Mapelli Mozzi",
         "Princess Beatrice, Mrs. Mapelli Mozzi" ;
-    :hasChild data:Sienna_Mapelli_Mozzi ;
-    :hasDaughter data:Sienna_Mapelli_Mozzi ;
-    :hasFather data:Andrew_Mountbatten-Windsor ;
-    :hasMother data:Sarah_Ferguson ;
     :hasParent data:Andrew_Mountbatten-Windsor,
         data:Sarah_Ferguson ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Eugenie_of_York ;
-    :isChildOf data:Andrew_Mountbatten-Windsor,
-        data:Sarah_Ferguson ;
-    :isDaughterOf data:Andrew_Mountbatten-Windsor,
-        data:Sarah_Ferguson ;
-    :isMotherOf data:Sienna_Mapelli_Mozzi ;
-    :isParentOf data:Sienna_Mapelli_Mozzi ;
-    :isSiblingOf data:Princess_Eugenie_of_York ;
-    :isSisterOf data:Princess_Eugenie_of_York .
+    :hasSex data:female .
+
+data:Andrew_Mountbatten-Windsor a :Person ;
+    rdfs:label "Andrew Mountbatten-Windsor" ;
+    data:posIndicesFull "162:188" ;
+    data:posIndicesPart "1284:1291",
+        "1483:1490",
+        "4378:4385",
+        "4539:4545",
+        "4689:4696",
+        "4845:4851",
+        "4986:4992" ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward",
+        "Andrew Albert Christian Edward Mountbatten-Windsor",
+        "Baron Killyleagh",
+        "Earl of Inverness",
+        "Prince Andrew",
+        "Prince Andrew of the United Kingdom",
+        "Prince Andrew, Duke of York",
+        "Randy Andy" ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:male .
+
+data:Sarah_Ferguson a :Person ;
+    rdfs:label "Sarah Ferguson" ;
+    data:posIndicesFull "193:207" ;
+    data:wdtLink wdt:Q55720 ;
+    :alsoKnownAs "Fergie",
+        "Sarah Margaret Ferguson",
+        "Sarah Margaret Mountbatten-Windsor",
+        "Sarah Mountbatten-Windsor" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

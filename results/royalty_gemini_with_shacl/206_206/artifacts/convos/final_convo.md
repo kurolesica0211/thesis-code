@@ -85,26 +85,56 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Marie Louise of Hanover and Cumberland (11 October 1879 – 31 January 1948) was the eldest child of Ernest Augustus, Crown Prince of Hanover, and Princess Thyra of Denmark, the youngest daughter of Christian IX of Denmark and Louise of Hesse-Kassel.
-Through her father, Marie Louise was a great-great-granddaughter of George III of the United Kingdom and Charlotte of Mecklenburg-Strelitz.
-Marriage and children
+Christina Oxenberg (born December 27, 1962) is an American writer, humorist, and fashion designer.
+Her two knitwear clothing lines, Christina Oxenberg and Ox, have appeared in Barneys, Bloomingdale's, and luxury boutiques throughout the world.
+Oxenberg is the daughter of Princess Elizabeth of Yugoslavia and is a descendant of the Serbian House of Karađorđević.
+Early life
 
-Marie Louise married Prince Maximilian of Baden (1867–1929), her third cousin twice removed, on 10 July 1900 in Gmunden, Austria-Hungary.
-He was the son of Prince Wilhelm of Baden and Princess Maria Maximilianovna of Leuchtenberg and became a first cousin twice removed of Napoleon III of France.
-Marie Louise and Maximilian had one daughter and one son:
+Christina Oxenberg was born in New York City.
+She is a daughter of Princess Elizabeth of Yugoslavia (born 1936) and her first husband Howard Oxenberg (1919–2010), a Jewish self-made textile and clothing tycoon and close friend of the Kennedy family.
+Princess Elizabeth is the only daughter of Prince Paul of Yugoslavia (who served as regent for his cousin's eldest son King Peter II of Yugoslavia) and Princess Olga of Greece and Denmark.
+She has a full sister, Catherine Oxenberg, and a half-brother on her mother's side, Neil Balfour (born 1970).
+On her father's side she has a half-brother, Robert Oxenberg, and two half-sisters Starr Oxenberg and Ashley Harcourt.
+She is a first cousin of Prince Edward, Duke of Kent, and also a maternal second cousin of Queen Sofía of Spain, making her a second cousin once removed of King Charles III.
+Career
+
+After high school, Oxenberg worked various jobs in New York ranging from a secretary to a roller-rink attendant.
+Upon her return, Oxenberg secured a job at Studio 54.
+In 1994, Simon & Schuster commissioned Oxenberg to write a semi-autobiographical novel that would eventually be published as Royal Blue.
+As a result of the book, Oxenberg appeared on the cover of New York Magazine and was profiled in People.
+In 2000, Oxenberg went on hiatus from writing and took a job at Robert F. Kennedy Jr.'s Waterkeeper Alliance.
+The two discussed the possibility of a clothing line using Oxenberg's name.
+From 2002 to 2010, Oxenberg produced two clothing lines (Christina Oxenberg and Ox).
+Christina Oxenberg would go on to self-publish several collections of short stories between 2010 and 2014, including Do These Gloves Make My Ass Look Fat?, Life is Short: Read Short Stories, and When in Doubt...Double the Dosage.
+Since 2012 Oxenberg has contributed articles to Key West weekly magazine Konk Life.
+In 2014, Oxenberg helped organize a visit by John Hemingway (Ernest Hemingway's grandson) to David Wolkowsky's Tennessee Williams Collection.
+In 2015, Christina Oxenberg moved to Serbia for a year to write and research her book, Royal Dynasty – An Insider's History of the Serbian Royal Family, which was published in Serbian in 2015 by the publisher, Laguna.
+For her work, Oxenberg received an award from the Serbian Academy of Sciences and Arts in 2016.
+Subsequently, Oxenberg was interviewed by the Sunday Times, Radio Gorgeous and Tatler, and she presented the book at the Oxford Literary Festival on 22 March 2018.
+Bibliography
+
+Novels
+
+
+Short story collections
+
+
+Autobiographies
 
 
 Ancestry
 
-References
-
-External links
+Christina Oxenberg is a direct descendant of Karađorđe, a peasant from Šumadija region in today's Serbia, leader of First Serbian Uprising against the Ottomans, and founder of the Karađorđević Dynasty; of King George I of Greece; of Tsar Alexander II of Russia; of King George II of Great Britain, Empress Catherine II of Russia, and  William the Conqueror, through Frederick of Mecklenburg-Schwerin.
+Oxenberg's maternal grandmother, Princess Olga, was the daughter of Grand Duchess Elena Vladimirovna of Russia and Prince Nicholas of Greece and Denmark, himself the son of another Romanov grand duchess, Queen Olga Konstantinovna of the Hellenes and her Danish-born husband King George of Greece, brother of Queen Alexandra of the United Kingdom and the Empress Maria Fyodorovna.
+Princess Olga was the sister of Princess Marina, who married Prince George, Duke of Kent (an uncle of Queen Elizabeth II); and Olga/Marina were also paternal first cousins of the Duke of Edinburgh (husband of Queen Elizabeth II) through their respective fathers Prince Nicholas of Greece and Denmark and Prince Andrew of Greece and Denmark, who were brothers.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -120,39 +150,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -167,6 +167,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -184,6 +201,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -251,29 +283,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -282,6 +306,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -294,6 +326,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -302,17 +336,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -340,6 +376,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -355,256 +475,148 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9f1002ad-0628-4650-9aa4-ef5351e1d0ce)
- Call ID: 9f1002ad-0628-4650-9aa4-ef5351e1d0ce
+  AssignClass (0a43e258-9968-4c58-892c-573823ce74f2)
+ Call ID: 0a43e258-9968-4c58-892c-573823ce74f2
   Args:
-    source: :MarieLouiseOfHanoverAndCumberland
+    source: Christina_Oxenberg
     type: :Woman
-  AssignClass (4686d12c-d2a7-4196-9e6d-7588a7f4fc32)
- Call ID: 4686d12c-d2a7-4196-9e6d-7588a7f4fc32
+  AddLiteral (a2fc3b7f-eca4-47dd-b827-e4d57972ff03)
+ Call ID: a2fc3b7f-eca4-47dd-b827-e4d57972ff03
   Args:
-    source: :MarieLouiseOfHanoverAndCumberland
-    type: :Person
-  AddLiteral (4b7406f2-fce6-40a7-ba85-8a47c3b0c127)
- Call ID: 4b7406f2-fce6-40a7-ba85-8a47c3b0c127
-  Args:
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1879
-    literal_type: xsd:integer
-    source: :MarieLouiseOfHanoverAndCumberland
-  AddLiteral (44c3e50d-9f6a-410f-ad97-944576d6b26f)
- Call ID: 44c3e50d-9f6a-410f-ad97-944576d6b26f
+    source: Christina_Oxenberg
+    literal_value: 1962
+  AssignClass (8ef7487d-0cb8-4c05-898a-8b4782e34ad2)
+ Call ID: 8ef7487d-0cb8-4c05-898a-8b4782e34ad2
   Args:
-    literal_value: 1948
-    literal_type: xsd:integer
-    source: :MarieLouiseOfHanoverAndCumberland
-    relation: :hasDeathYear
-  AssignClass (57c1c673-5198-4031-93bf-7466559f8358)
- Call ID: 57c1c673-5198-4031-93bf-7466559f8358
-  Args:
-    type: :Man
-    source: :ErnestAugustusCrownPrinceOfHanover
-  AssignClass (9bce738b-7f04-4707-8bd3-443a6310d82b)
- Call ID: 9bce738b-7f04-4707-8bd3-443a6310d82b
-  Args:
-    type: :Person
-    source: :ErnestAugustusCrownPrinceOfHanover
-  AssignClass (448db430-9600-4d50-a563-106a7c1d78d9)
- Call ID: 448db430-9600-4d50-a563-106a7c1d78d9
-  Args:
+    source: Princess_Elizabeth_of_Yugoslavia
     type: :Woman
-    source: :PrincessThyraOfDenmark
-  AssignClass (a14a0961-c559-4757-a0b6-223e5123260c)
- Call ID: a14a0961-c559-4757-a0b6-223e5123260c
+  AddLiteral (12e0bdf1-aa06-4119-98fa-b84950dde6eb)
+ Call ID: 12e0bdf1-aa06-4119-98fa-b84950dde6eb
   Args:
-    type: :Person
-    source: :PrincessThyraOfDenmark
-  AddTriple (1288c96b-afe9-480c-8cf0-f33c23755cf9)
- Call ID: 1288c96b-afe9-480c-8cf0-f33c23755cf9
-  Args:
-    target: :ErnestAugustusCrownPrinceOfHanover
-    relation: :hasFather
-    source: :MarieLouiseOfHanoverAndCumberland
-  AddTriple (444da469-2a7b-4147-8d4e-cf9561ba0a5e)
- Call ID: 444da469-2a7b-4147-8d4e-cf9561ba0a5e
-  Args:
-    target: :PrincessThyraOfDenmark
-    relation: :hasMother
-    source: :MarieLouiseOfHanoverAndCumberland
-  AssignClass (6e45b17b-a461-49e2-80ef-41d141fc4d64)
- Call ID: 6e45b17b-a461-49e2-80ef-41d141fc4d64
-  Args:
-    source: :ChristianIXOfDenmark
-    type: :Man
-  AssignClass (943466ee-5879-479b-8a3c-eb532f7c3964)
- Call ID: 943466ee-5879-479b-8a3c-eb532f7c3964
-  Args:
-    source: :ChristianIXOfDenmark
-    type: :Person
-  AssignClass (9239e185-dcd3-400c-a24d-9b5481b3ac85)
- Call ID: 9239e185-dcd3-400c-a24d-9b5481b3ac85
-  Args:
-    source: :LouiseOfHesseKassel
-    type: :Woman
-  AssignClass (77eb283d-f00f-43b7-b473-b1fd8231d960)
- Call ID: 77eb283d-f00f-43b7-b473-b1fd8231d960
-  Args:
-    type: :Person
-    source: :LouiseOfHesseKassel
-  AddTriple (6e232e54-3413-4781-a3e6-54455f86a70d)
- Call ID: 6e232e54-3413-4781-a3e6-54455f86a70d
-  Args:
-    source: :PrincessThyraOfDenmark
-    target: :ChristianIXOfDenmark
-    relation: :hasFather
-  AddTriple (abffe32a-d8af-4b30-a903-8299adfbb708)
- Call ID: abffe32a-d8af-4b30-a903-8299adfbb708
-  Args:
-    source: :PrincessThyraOfDenmark
-    target: :LouiseOfHesseKassel
-    relation: :hasMother
-  AssignClass (423f3f11-5bf4-43c5-980f-e28b885b58fc)
- Call ID: 423f3f11-5bf4-43c5-980f-e28b885b58fc
-  Args:
-    source: :GeorgeIIIOfTheUnitedKingdom
-    type: :Man
-  AssignClass (dee19cac-c035-4ef5-84ae-d4fb90609f67)
- Call ID: dee19cac-c035-4ef5-84ae-d4fb90609f67
-  Args:
-    type: :Person
-    source: :GeorgeIIIOfTheUnitedKingdom
-  AssignClass (62491df3-9277-4a5d-a4f6-e437ecfe8938)
- Call ID: 62491df3-9277-4a5d-a4f6-e437ecfe8938
-  Args:
-    type: :Woman
-    source: :CharlotteOfMecklenburgStrelitz
-  AssignClass (2e6a4636-499b-4f8b-9e7b-a70c7579b5e1)
- Call ID: 2e6a4636-499b-4f8b-9e7b-a70c7579b5e1
-  Args:
-    source: :CharlotteOfMecklenburgStrelitz
-    type: :Person
-  AddTriple (4d78e79a-5998-44f9-9ae9-c111254e03dc)
- Call ID: 4d78e79a-5998-44f9-9ae9-c111254e03dc
-  Args:
-    target: :GeorgeIIIOfTheUnitedKingdom
-    relation: :hasAncestor
-    source: :MarieLouiseOfHanoverAndCumberland
-  AddTriple (3da991d0-8e35-427b-8d59-9e9e6f749e16)
- Call ID: 3da991d0-8e35-427b-8d59-9e9e6f749e16
-  Args:
-    relation: :hasAncestor
-    target: :CharlotteOfMecklenburgStrelitz
-    source: :MarieLouiseOfHanoverAndCumberland
-  AssignClass (84c21573-c637-43c7-adf4-487aff54aac3)
- Call ID: 84c21573-c637-43c7-adf4-487aff54aac3
-  Args:
-    type: :Man
-    source: :MaximilianOfBaden
-  AssignClass (e826bcd8-4854-4d0e-9ee8-08d4ebf0d8dc)
- Call ID: e826bcd8-4854-4d0e-9ee8-08d4ebf0d8dc
-  Args:
-    type: :Person
-    source: :MaximilianOfBaden
-  AddLiteral (5a5cb60f-412a-4e12-b3eb-6a5dcd0627ea)
- Call ID: 5a5cb60f-412a-4e12-b3eb-6a5dcd0627ea
-  Args:
+    source: Princess_Elizabeth_of_Yugoslavia
+    literal_value: 1936
     relation: :hasBirthYear
     literal_type: xsd:integer
-    literal_value: 1867
-    source: :MaximilianOfBaden
-  AddLiteral (cb68cd67-4670-4714-938e-e2346ce36d2f)
- Call ID: cb68cd67-4670-4714-938e-e2346ce36d2f
+  AssignClass (1584b344-5b4e-4207-a65a-ef402673d665)
+ Call ID: 1584b344-5b4e-4207-a65a-ef402673d665
   Args:
+    source: Howard_Oxenberg
+    type: :Man
+  AddLiteral (50591102-412d-48f5-b6e8-548bbb6a9c81)
+ Call ID: 50591102-412d-48f5-b6e8-548bbb6a9c81
+  Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1919
+    source: Howard_Oxenberg
+  AddLiteral (9c1833e5-7e0f-4dda-a921-fdf243115964)
+ Call ID: 9c1833e5-7e0f-4dda-a921-fdf243115964
+  Args:
+    literal_type: xsd:integer
+    source: Howard_Oxenberg
+    literal_value: 2010
     relation: :hasDeathYear
-    source: :MaximilianOfBaden
-    literal_value: 1929
-    literal_type: xsd:integer
-  AddLiteral (16d8d108-638a-4990-a8e0-4ef4969c5b4a)
- Call ID: 16d8d108-638a-4990-a8e0-4ef4969c5b4a
+  AddTriple (cf7515b5-fffa-461e-8538-55f98e973a9e)
+ Call ID: cf7515b5-fffa-461e-8538-55f98e973a9e
   Args:
-    relation: :hasMarriageYear
-    source: :MarieLouiseOfHanoverAndCumberland
-    literal_value: 1900
-    literal_type: xsd:integer
-  AddTriple (2f8b435d-c2e3-4db6-bc0c-b514a63bea12)
- Call ID: 2f8b435d-c2e3-4db6-bc0c-b514a63bea12
-  Args:
-    source: :MarieLouiseOfHanoverAndCumberland
-    target: :MaximilianOfBaden
-    relation: :hasRelation
-  AssignClass (142471ed-108d-42f8-816f-79c80ba0d8b2)
- Call ID: 142471ed-108d-42f8-816f-79c80ba0d8b2
-  Args:
-    type: :Man
-    source: :WilhelmOfBaden
-  AssignClass (7e2ffe9e-5d1f-4f2a-8b6f-5e269c8684d5)
- Call ID: 7e2ffe9e-5d1f-4f2a-8b6f-5e269c8684d5
-  Args:
-    type: :Person
-    source: :WilhelmOfBaden
-  AssignClass (6e044efb-701f-4d29-9f1c-50b8151a3a15)
- Call ID: 6e044efb-701f-4d29-9f1c-50b8151a3a15
-  Args:
-    source: :MariaMaximilianovnaOfLeuchtenberg
-    type: :Woman
-  AssignClass (7b489331-1076-45cc-876a-5c0f514a1ab6)
- Call ID: 7b489331-1076-45cc-876a-5c0f514a1ab6
-  Args:
-    source: :MariaMaximilianovnaOfLeuchtenberg
-    type: :Person
-  AddTriple (e1b5413f-87e8-44c7-9f16-6d9b8afe397d)
- Call ID: e1b5413f-87e8-44c7-9f16-6d9b8afe397d
-  Args:
-    source: :MaximilianOfBaden
-    relation: :hasFather
-    target: :WilhelmOfBaden
-  AddTriple (cbff07e8-db72-4e1b-971f-b6a66a4c0f95)
- Call ID: cbff07e8-db72-4e1b-971f-b6a66a4c0f95
-  Args:
-    source: :MaximilianOfBaden
+    target: Princess_Elizabeth_of_Yugoslavia
+    source: Christina_Oxenberg
     relation: :hasMother
-    target: :MariaMaximilianovnaOfLeuchtenberg
-  AssignClass (09d0c747-25dd-4e63-be04-e7998f29d2d7)
- Call ID: 09d0c747-25dd-4e63-be04-e7998f29d2d7
+  AddTriple (b6278229-7977-4676-b4f7-32ebeeb3ce05)
+ Call ID: b6278229-7977-4676-b4f7-32ebeeb3ce05
   Args:
+    relation: :hasFather
+    source: Christina_Oxenberg
+    target: Howard_Oxenberg
+  AssignClass (b4099e58-0b13-480a-b1b8-25d2be06f639)
+ Call ID: b4099e58-0b13-480a-b1b8-25d2be06f639
+  Args:
+    source: Catherine_Oxenberg
+    type: :Woman
+  AddTriple (b61bf841-cc9c-4887-87dc-b2349ac9607c)
+ Call ID: b61bf841-cc9c-4887-87dc-b2349ac9607c
+  Args:
+    target: Catherine_Oxenberg
+    source: Christina_Oxenberg
+    relation: :hasSister
+  AssignClass (d12c49d9-75eb-46ac-9136-11c2dd586a8d)
+ Call ID: d12c49d9-75eb-46ac-9136-11c2dd586a8d
+  Args:
+    source: Neil_Balfour
     type: :Man
-    source: :NapoleonIIIOfFrance
-  AssignClass (fa486ac9-f0b2-472f-b93f-9e8375561673)
- Call ID: fa486ac9-f0b2-472f-b93f-9e8375561673
+  AddLiteral (c15c7a6b-ffc7-431b-b5be-ea162f6067a6)
+ Call ID: c15c7a6b-ffc7-431b-b5be-ea162f6067a6
   Args:
-    source: :NapoleonIIIOfFrance
-    type: :Person
-  Finish (f023dfeb-d1bd-4ff2-9753-2ebb596c43cc)
- Call ID: f023dfeb-d1bd-4ff2-9753-2ebb596c43cc
+    literal_type: xsd:integer
+    source: Neil_Balfour
+    literal_value: 1970
+    relation: :hasBirthYear
+  AddTriple (a92749ab-051c-4d3f-ae79-c50b98db9bb4)
+ Call ID: a92749ab-051c-4d3f-ae79-c50b98db9bb4
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    relation: :hasMother
+    target: Princess_Elizabeth_of_Yugoslavia
+    source: Neil_Balfour
+  AssignClass (c5d14ab1-ec67-4125-8c31-5fde41533d30)
+ Call ID: c5d14ab1-ec67-4125-8c31-5fde41533d30
+  Args:
+    source: Robert_Oxenberg
+    type: :Man
+  AddTriple (624a5736-c611-4f05-9c52-8319a260c7c1)
+ Call ID: 624a5736-c611-4f05-9c52-8319a260c7c1
+  Args:
+    target: Howard_Oxenberg
+    source: Robert_Oxenberg
+    relation: :hasFather
+  AssignClass (136ed9a0-4fc0-48b3-ade8-755bc597738a)
+ Call ID: 136ed9a0-4fc0-48b3-ade8-755bc597738a
+  Args:
+    source: Starr_Oxenberg
+    type: :Woman
+  AddTriple (cc36903a-8749-42b6-8161-baa345614fff)
+ Call ID: cc36903a-8749-42b6-8161-baa345614fff
+  Args:
+    source: Starr_Oxenberg
+    target: Howard_Oxenberg
+    relation: :hasFather
+  AssignClass (648f28de-875d-4231-85c6-e42052d8751a)
+ Call ID: 648f28de-875d-4231-85c6-e42052d8751a
+  Args:
+    source: Ashley_Harcourt
+    type: :Woman
+  AddTriple (321fa5b4-8edf-4a2e-86f8-86529802d0c6)
+ Call ID: 321fa5b4-8edf-4a2e-86f8-86529802d0c6
+  Args:
+    source: Ashley_Harcourt
+    target: Howard_Oxenberg
+    relation: :hasFather
+  AssignClass (57ad2639-e398-4b4b-9a92-caa850307ce6)
+ Call ID: 57ad2639-e398-4b4b-9a92-caa850307ce6
+  Args:
+    source: Prince_Paul_of_Yugoslavia
+    type: :Man
+  AssignClass (c6428bfc-585a-41bf-a50c-a881490bd6c9)
+ Call ID: c6428bfc-585a-41bf-a50c-a881490bd6c9
+  Args:
+    source: Princess_Olga_of_Greece_and_Denmark
+    type: :Woman
+  AddTriple (a0a7845e-53ae-4ea0-9c5d-03dc65bfdb73)
+ Call ID: a0a7845e-53ae-4ea0-9c5d-03dc65bfdb73
+  Args:
+    relation: :hasFather
+    source: Princess_Elizabeth_of_Yugoslavia
+    target: Prince_Paul_of_Yugoslavia
+  AddTriple (aeb18e41-fd33-413c-b7af-def88f5fbc9f)
+ Call ID: aeb18e41-fd33-413c-b7af-def88f5fbc9f
+  Args:
+    target: Princess_Olga_of_Greece_and_Denmark
+    source: Princess_Elizabeth_of_Yugoslavia
+    relation: :hasMother
+  Finish (3f532094-7d37-4b25-9f46-555e1eaf4256)
+ Call ID: 3f532094-7d37-4b25-9f46-555e1eaf4256
+  Args:
 
 ================================= Tool Message =================================
 
@@ -705,52 +717,39 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:MarieLouiseOfHanoverAndCumberland a :Person,
-          :Woman ;
-      :hasAncestor data:CharlotteOfMecklenburgStrelitz,
-          data:GeorgeIIIOfTheUnitedKingdom ;
-      :hasBirthYear 1879 ;
-      :hasDeathYear 1948 ;
-      :hasFather data:ErnestAugustusCrownPrinceOfHanover ;
-      :hasMarriageYear 1900 ;
-      :hasMother data:PrincessThyraOfDenmark ;
-      :hasRelation data:MaximilianOfBaden .
+  data:Ashley_Harcourt a :Woman ;
+      :hasFather data:Howard_Oxenberg .
 
-  data:NapoleonIIIOfFrance a :Man,
-          :Person .
+  data:Christina_Oxenberg a :Woman ;
+      :hasBirthYear 1962 ;
+      :hasFather data:Howard_Oxenberg ;
+      :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+      :hasSister data:Catherine_Oxenberg .
 
-  data:CharlotteOfMecklenburgStrelitz a :Person,
-          :Woman .
+  data:Neil_Balfour a :Man ;
+      :hasBirthYear 1970 ;
+      :hasMother data:Princess_Elizabeth_of_Yugoslavia .
 
-  data:ChristianIXOfDenmark a :Man,
-          :Person .
+  data:Robert_Oxenberg a :Man ;
+      :hasFather data:Howard_Oxenberg .
 
-  data:ErnestAugustusCrownPrinceOfHanover a :Man,
-          :Person .
+  data:Starr_Oxenberg a :Woman ;
+      :hasFather data:Howard_Oxenberg .
 
-  data:GeorgeIIIOfTheUnitedKingdom a :Man,
-          :Person .
+  data:Catherine_Oxenberg a :Woman .
 
-  data:LouiseOfHesseKassel a :Person,
-          :Woman .
+  data:Prince_Paul_of_Yugoslavia a :Man .
 
-  data:MariaMaximilianovnaOfLeuchtenberg a :Person,
-          :Woman .
+  data:Princess_Olga_of_Greece_and_Denmark a :Woman .
 
-  data:MaximilianOfBaden a :Man,
-          :Person ;
-      :hasBirthYear 1867 ;
-      :hasDeathYear 1929 ;
-      :hasFather data:WilhelmOfBaden ;
-      :hasMother data:MariaMaximilianovnaOfLeuchtenberg .
+  data:Princess_Elizabeth_of_Yugoslavia a :Woman ;
+      :hasBirthYear 1936 ;
+      :hasFather data:Prince_Paul_of_Yugoslavia ;
+      :hasMother data:Princess_Olga_of_Greece_and_Denmark .
 
-  data:PrincessThyraOfDenmark a :Person,
-          :Woman ;
-      :hasFather data:ChristianIXOfDenmark ;
-      :hasMother data:LouiseOfHesseKassel .
-
-  data:WilhelmOfBaden a :Man,
-          :Person .
+  data:Howard_Oxenberg a :Man ;
+      :hasBirthYear 1919 ;
+      :hasDeathYear 2010 .
 
 
 
@@ -762,8 +761,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (f690ba95-37ae-494e-a66f-ebf9122ccfe2)
- Call ID: f690ba95-37ae-494e-a66f-ebf9122ccfe2
+  ValidateShacl (5a3533c6-c1db-4988-aa98-1aac41653cc7)
+ Call ID: 5a3533c6-c1db-4988-aa98-1aac41653cc7
   Args:
 
 ================================= Tool Message =================================
@@ -775,193 +774,193 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node WilhelmOfBaden, acting as the father of MaximilianOfBaden, is missing the required classification of :Ancestor.
+      The value Howard_Oxenberg for the property hasFather on node Robert_Oxenberg does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(WilhelmOfBaden, :Ancestor)
+      AssignClass(Howard_Oxenberg, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node MariaMaximilianovnaOfLeuchtenberg, acting as the mother of MaximilianOfBaden, is missing the required classification of :Ancestor.
+      The value Princess_Elizabeth_of_Yugoslavia for the property hasMother on node Neil_Balfour does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(MariaMaximilianovnaOfLeuchtenberg, :Ancestor)
+      AssignClass(Princess_Elizabeth_of_Yugoslavia, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node CharlotteOfMecklenburgStrelitz, acting as an ancestor of MarieLouiseOfHanoverAndCumberland, is missing the required classification of :Ancestor.
+      The value Howard_Oxenberg for the property hasFather on node Christina_Oxenberg does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(CharlotteOfMecklenburgStrelitz, :Ancestor)
+      AssignClass(Howard_Oxenberg, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node GeorgeIIIOfTheUnitedKingdom, acting as an ancestor of MarieLouiseOfHanoverAndCumberland, is missing the required classification of :Ancestor.
+      The value Prince_Paul_of_Yugoslavia for the property hasFather on node Princess_Elizabeth_of_Yugoslavia does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(GeorgeIIIOfTheUnitedKingdom, :Ancestor)
+      AssignClass(Prince_Paul_of_Yugoslavia, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node ChristianIXOfDenmark, acting as the father of PrincessThyraOfDenmark, is missing the required classification of :Ancestor.
+      The value Howard_Oxenberg for the property hasFather on node Robert_Oxenberg does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(ChristianIXOfDenmark, :Ancestor)
+      AssignClass(Howard_Oxenberg, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node WilhelmOfBaden, acting as the father of MaximilianOfBaden, is missing the required classification of :Ancestor.
+      The value Howard_Oxenberg for the property hasFather on node Starr_Oxenberg does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(WilhelmOfBaden, :Ancestor)
+      AssignClass(Howard_Oxenberg, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node ErnestAugustusCrownPrinceOfHanover, acting as the father of MarieLouiseOfHanoverAndCumberland, is missing the required classification of :Ancestor.
+      The value Howard_Oxenberg for the property hasFather on node Ashley_Harcourt does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(ErnestAugustusCrownPrinceOfHanover, :Ancestor)
+      AssignClass(Howard_Oxenberg, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node LouiseOfHesseKassel, acting as the mother of PrincessThyraOfDenmark, is missing the required classification of :Ancestor.
+      The value Princess_Elizabeth_of_Yugoslavia for the property hasMother on node Christina_Oxenberg does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(LouiseOfHesseKassel, :Ancestor)
+      AssignClass(Princess_Elizabeth_of_Yugoslavia, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node MariaMaximilianovnaOfLeuchtenberg, acting as the mother of MaximilianOfBaden, is missing the required classification of :Ancestor.
+      The value Princess_Olga_of_Greece_and_Denmark for the property hasMother on node Princess_Elizabeth_of_Yugoslavia does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(MariaMaximilianovnaOfLeuchtenberg, :Ancestor)
+      AssignClass(Princess_Olga_of_Greece_and_Denmark, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node PrincessThyraOfDenmark, acting as the mother of MarieLouiseOfHanoverAndCumberland, is missing the required classification of :Ancestor.
+      The value Princess_Elizabeth_of_Yugoslavia for the property hasMother on node Neil_Balfour does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessThyraOfDenmark, :Ancestor)
+      AssignClass(Princess_Elizabeth_of_Yugoslavia, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node CharlotteOfMecklenburgStrelitz, acting as an ancestor of MarieLouiseOfHanoverAndCumberland, is missing the required classification of :Ancestor.
+      The value Howard_Oxenberg for the property hasFather on node Christina_Oxenberg does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(CharlotteOfMecklenburgStrelitz, :Ancestor)
+      AssignClass(Howard_Oxenberg, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node GeorgeIIIOfTheUnitedKingdom, acting as an ancestor of MarieLouiseOfHanoverAndCumberland, is missing the required classification of :Ancestor.
+      The value Prince_Paul_of_Yugoslavia for the property hasFather on node Princess_Elizabeth_of_Yugoslavia does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(GeorgeIIIOfTheUnitedKingdom, :Ancestor)
+      AssignClass(Prince_Paul_of_Yugoslavia, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node ChristianIXOfDenmark, acting as the father of PrincessThyraOfDenmark, is missing the required classification of :Ancestor.
+      The value Howard_Oxenberg for the property hasFather on node Robert_Oxenberg does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(ChristianIXOfDenmark, :Ancestor)
+      AssignClass(Howard_Oxenberg, :Ancestor)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node WilhelmOfBaden, acting as the father of MaximilianOfBaden, is missing the required classification of :Ancestor.
+      The value Howard_Oxenberg for the property hasFather on node Starr_Oxenberg does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(WilhelmOfBaden, :Ancestor)
+      AssignClass(Howard_Oxenberg, :Ancestor)
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node ErnestAugustusCrownPrinceOfHanover, acting as the father of MarieLouiseOfHanoverAndCumberland, is missing the required classification of :Ancestor.
+      The value Howard_Oxenberg for the property hasFather on node Ashley_Harcourt does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(ErnestAugustusCrownPrinceOfHanover, :Ancestor)
+      AssignClass(Howard_Oxenberg, :Ancestor)
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node LouiseOfHesseKassel, acting as the mother of PrincessThyraOfDenmark, is missing the required classification of :Ancestor.
+      The value Princess_Elizabeth_of_Yugoslavia for the property hasMother on node Christina_Oxenberg does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(LouiseOfHesseKassel, :Ancestor)
+      AssignClass(Princess_Elizabeth_of_Yugoslavia, :Ancestor)
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node MariaMaximilianovnaOfLeuchtenberg, acting as the mother of MaximilianOfBaden, is missing the required classification of :Ancestor.
+      The value Princess_Olga_of_Greece_and_Denmark for the property hasMother on node Princess_Elizabeth_of_Yugoslavia does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(MariaMaximilianovnaOfLeuchtenberg, :Ancestor)
+      AssignClass(Princess_Olga_of_Greece_and_Denmark, :Ancestor)
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node PrincessThyraOfDenmark, acting as the mother of MarieLouiseOfHanoverAndCumberland, is missing the required classification of :Ancestor.
+      The value Princess_Elizabeth_of_Yugoslavia for the property hasMother on node Neil_Balfour does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessThyraOfDenmark, :Ancestor)
+      AssignClass(Princess_Elizabeth_of_Yugoslavia, :Ancestor)
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node CharlotteOfMecklenburgStrelitz, acting as an ancestor of MarieLouiseOfHanoverAndCumberland, is missing the required classification of :Ancestor.
+      The value Howard_Oxenberg for the property hasFather on node Starr_Oxenberg does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(CharlotteOfMecklenburgStrelitz, :Ancestor)
+      AssignClass(Howard_Oxenberg, :Ancestor)
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node GeorgeIIIOfTheUnitedKingdom, acting as an ancestor of MarieLouiseOfHanoverAndCumberland, is missing the required classification of :Ancestor.
+      The value Howard_Oxenberg for the property hasFather on node Christina_Oxenberg does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(GeorgeIIIOfTheUnitedKingdom, :Ancestor)
+      AssignClass(Howard_Oxenberg, :Ancestor)
 
 
   Violation [21]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node ErnestAugustusCrownPrinceOfHanover, acting as the father of MarieLouiseOfHanoverAndCumberland, is missing the required classification of :Ancestor.
+      The value Prince_Paul_of_Yugoslavia for the property hasFather on node Princess_Elizabeth_of_Yugoslavia does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(ErnestAugustusCrownPrinceOfHanover, :Ancestor)
+      AssignClass(Prince_Paul_of_Yugoslavia, :Ancestor)
 
 
   Violation [22]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node ChristianIXOfDenmark, acting as the father of PrincessThyraOfDenmark, is missing the required classification of :Ancestor.
+      The value Howard_Oxenberg for the property hasFather on node Ashley_Harcourt does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(ChristianIXOfDenmark, :Ancestor)
+      AssignClass(Howard_Oxenberg, :Ancestor)
 
 
   Violation [23]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node PrincessThyraOfDenmark, acting as the mother of MarieLouiseOfHanoverAndCumberland, is missing the required classification of :Ancestor.
+      The value Princess_Elizabeth_of_Yugoslavia for the property hasMother on node Christina_Oxenberg does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(PrincessThyraOfDenmark, :Ancestor)
+      AssignClass(Princess_Elizabeth_of_Yugoslavia, :Ancestor)
 
 
   Violation [24]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node LouiseOfHesseKassel, acting as the mother of PrincessThyraOfDenmark, is missing the required classification of :Ancestor.
+      The value Princess_Olga_of_Greece_and_Denmark for the property hasMother on node Princess_Elizabeth_of_Yugoslavia does not belong to the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(LouiseOfHesseKassel, :Ancestor)
+      AssignClass(Princess_Olga_of_Greece_and_Denmark, :Ancestor)
 
 
 
@@ -970,46 +969,67 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (f91e411a-3af6-4e74-8b7d-b94a392a9164)
- Call ID: f91e411a-3af6-4e74-8b7d-b94a392a9164
+  AssignClass (1a68ac2c-9e4f-49f7-9f6a-2a658b5a0732)
+ Call ID: 1a68ac2c-9e4f-49f7-9f6a-2a658b5a0732
   Args:
     type: :Ancestor
-    source: :WilhelmOfBaden
-  AssignClass (0cc43f90-692b-470b-8567-f84980ab1ebc)
- Call ID: 0cc43f90-692b-470b-8567-f84980ab1ebc
-  Args:
-    source: :MariaMaximilianovnaOfLeuchtenberg
-    type: :Ancestor
-  AssignClass (b680f71f-d04d-4dc0-aec6-d6fba5ca6785)
- Call ID: b680f71f-d04d-4dc0-aec6-d6fba5ca6785
-  Args:
-    source: :CharlotteOfMecklenburgStrelitz
-    type: :Ancestor
-  AssignClass (65a7df1f-b779-464c-9567-ea427150eec1)
- Call ID: 65a7df1f-b779-464c-9567-ea427150eec1
-  Args:
-    source: :GeorgeIIIOfTheUnitedKingdom
-    type: :Ancestor
-  AssignClass (34431ec3-04e6-420d-9ab2-15c0d829df5a)
- Call ID: 34431ec3-04e6-420d-9ab2-15c0d829df5a
+    source: Howard_Oxenberg
+  AssignClass (235467cc-6d20-4ad3-ad26-8b44b37c3f8f)
+ Call ID: 235467cc-6d20-4ad3-ad26-8b44b37c3f8f
   Args:
     type: :Ancestor
-    source: :ChristianIXOfDenmark
-  AssignClass (dc791d22-c597-47fa-8eef-c98efbfaf832)
- Call ID: dc791d22-c597-47fa-8eef-c98efbfaf832
+    source: Princess_Elizabeth_of_Yugoslavia
+  AssignClass (600b87d4-524a-4749-9952-5f8035e28b46)
+ Call ID: 600b87d4-524a-4749-9952-5f8035e28b46
   Args:
+    source: Prince_Paul_of_Yugoslavia
     type: :Ancestor
-    source: :ErnestAugustusCrownPrinceOfHanover
-  AssignClass (770f6dd3-ea5c-4267-8753-50126eeb50d8)
- Call ID: 770f6dd3-ea5c-4267-8753-50126eeb50d8
+  AssignClass (d1050a41-680d-41b5-9d7e-5f00dd9fe098)
+ Call ID: d1050a41-680d-41b5-9d7e-5f00dd9fe098
   Args:
-    source: :LouiseOfHesseKassel
+    source: Princess_Olga_of_Greece_and_Denmark
     type: :Ancestor
-  AssignClass (a1db4d85-48c7-4326-8b13-2ab2d0fdc4b7)
- Call ID: a1db4d85-48c7-4326-8b13-2ab2d0fdc4b7
+  AssignClass (9a1881b5-8be5-4349-b765-72a679e1c98f)
+ Call ID: 9a1881b5-8be5-4349-b765-72a679e1c98f
   Args:
-    type: :Ancestor
-    source: :PrincessThyraOfDenmark
+    source: Christina_Oxenberg
+    type: :Person
+  AssignClass (220ab7dd-abb6-4e7a-971e-a67be3ace518)
+ Call ID: 220ab7dd-abb6-4e7a-971e-a67be3ace518
+  Args:
+    source: Catherine_Oxenberg
+    type: :Person
+  AssignClass (361293ae-d419-4f41-ae01-1bc27e676fe5)
+ Call ID: 361293ae-d419-4f41-ae01-1bc27e676fe5
+  Args:
+    source: Neil_Balfour
+    type: :Person
+  AssignClass (1b96815e-ba8e-481b-87cb-f8b152b3d087)
+ Call ID: 1b96815e-ba8e-481b-87cb-f8b152b3d087
+  Args:
+    type: :Person
+    source: Robert_Oxenberg
+  AssignClass (fa43e80e-25a6-4171-b7b1-8de8b3f72365)
+ Call ID: fa43e80e-25a6-4171-b7b1-8de8b3f72365
+  Args:
+    source: Starr_Oxenberg
+    type: :Person
+  AssignClass (82a550c1-64da-4b32-a3d7-5f2007c5f5fb)
+ Call ID: 82a550c1-64da-4b32-a3d7-5f2007c5f5fb
+  Args:
+    source: Ashley_Harcourt
+    type: :Person
+  ValidateShacl (6319a764-44b3-432e-9a50-ef496b465b09)
+ Call ID: 6319a764-44b3-432e-9a50-ef496b465b09
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1046,70 +1066,51 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:MarieLouiseOfHanoverAndCumberland a :Person,
+  data:Ashley_Harcourt a :Person,
           :Woman ;
-      :hasAncestor data:CharlotteOfMecklenburgStrelitz,
-          data:GeorgeIIIOfTheUnitedKingdom ;
-      :hasBirthYear 1879 ;
-      :hasDeathYear 1948 ;
-      :hasFather data:ErnestAugustusCrownPrinceOfHanover ;
-      :hasMarriageYear 1900 ;
-      :hasMother data:PrincessThyraOfDenmark ;
-      :hasRelation data:MaximilianOfBaden .
+      :hasFather data:Howard_Oxenberg .
 
-  data:NapoleonIIIOfFrance a :Man,
-          :Person .
+  data:Christina_Oxenberg a :Person,
+          :Woman ;
+      :hasBirthYear 1962 ;
+      :hasFather data:Howard_Oxenberg ;
+      :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
+      :hasSister data:Catherine_Oxenberg .
 
-  data:CharlotteOfMecklenburgStrelitz a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:ChristianIXOfDenmark a :Ancestor,
-          :Man,
-          :Person .
-
-  data:ErnestAugustusCrownPrinceOfHanover a :Ancestor,
-          :Man,
-          :Person .
-
-  data:GeorgeIIIOfTheUnitedKingdom a :Ancestor,
-          :Man,
-          :Person .
-
-  data:LouiseOfHesseKassel a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:MariaMaximilianovnaOfLeuchtenberg a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:MaximilianOfBaden a :Man,
+  data:Neil_Balfour a :Man,
           :Person ;
-      :hasBirthYear 1867 ;
-      :hasDeathYear 1929 ;
-      :hasFather data:WilhelmOfBaden ;
-      :hasMother data:MariaMaximilianovnaOfLeuchtenberg .
+      :hasBirthYear 1970 ;
+      :hasMother data:Princess_Elizabeth_of_Yugoslavia .
 
-  data:PrincessThyraOfDenmark a :Ancestor,
-          :Person,
+  data:Robert_Oxenberg a :Man,
+          :Person ;
+      :hasFather data:Howard_Oxenberg .
+
+  data:Starr_Oxenberg a :Person,
           :Woman ;
-      :hasFather data:ChristianIXOfDenmark ;
-      :hasMother data:LouiseOfHesseKassel .
+      :hasFather data:Howard_Oxenberg .
 
-  data:WilhelmOfBaden a :Ancestor,
-          :Man,
-          :Person .
+  data:Catherine_Oxenberg a :Person,
+          :Woman .
+
+  data:Prince_Paul_of_Yugoslavia a :Ancestor,
+          :Man .
+
+  data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+          :Woman .
+
+  data:Princess_Elizabeth_of_Yugoslavia a :Ancestor,
+          :Woman ;
+      :hasBirthYear 1936 ;
+      :hasFather data:Prince_Paul_of_Yugoslavia ;
+      :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+  data:Howard_Oxenberg a :Ancestor,
+          :Man ;
+      :hasBirthYear 1919 ;
+      :hasDeathYear 2010 .
 
 
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (b1357737-41dd-4684-a028-f575eb32aed7)
- Call ID: b1357737-41dd-4684-a028-f575eb32aed7
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1119,6 +1120,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (e0ea8f57-4fc5-4cb6-811b-e5b1928bd13a)
- Call ID: e0ea8f57-4fc5-4cb6-811b-e5b1928bd13a
+  Finish (47b80a27-7d2d-49c3-8f7c-b087fe489014)
+ Call ID: 47b80a27-7d2d-49c3-8f7c-b087fe489014
   Args:

@@ -1,0 +1,335 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Infante_Carlos-_Duke_of_Calabria a :Man,
+        :Person ;
+    rdfs:label "Infante Carlos, Duke of Calabria"^^xsd:string ;
+    data:posIndicesFull "4100:4137"^^xsd:string,
+        "4107:4137"^^xsd:string,
+        "873:910"^^xsd:string,
+        "880:910"^^xsd:string ;
+    data:posIndicesPart "4199:4205"^^xsd:string,
+        "4451:4457"^^xsd:string,
+        "4764:4770"^^xsd:string,
+        "4965:4971"^^xsd:string,
+        "5187:5193"^^xsd:string,
+        "5803:5809"^^xsd:string ;
+    data:wdtLink wdt:Q526743 ;
+    :alsoKnownAs "Carlos Maria Alfonso Marcelo de Borbón-Dos Sicilias y de Borbón-Parma, Infante of Spain, Duke of Calabria"^^xsd:string,
+        "Carlos de Borbón-Dos Sicilias y de Borbón-Parma"^^xsd:string,
+        "Carlos of Bourbon-Two Sicilies"^^xsd:string,
+        "Infante Carlos of Spain, Prince of Bourbon-Two Sicilies, Duke of Calabria"^^xsd:string,
+        "Prince Carlos of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasBrother data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasRelation data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isSiblingOf data:Infante_Carlos-_Duke_of_Calabria .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alfonso XII of Spain"^^xsd:string ;
+    data:posIndicesFull "1138:1149"^^xsd:string,
+        "163:174"^^xsd:string,
+        "163:183"^^xsd:string,
+        "1974:1985"^^xsd:string,
+        "2348:2359"^^xsd:string,
+        "388:399"^^xsd:string ;
+    data:posIndicesPart "1025:1030"^^xsd:string,
+        "2119:2126"^^xsd:string,
+        "303:308"^^xsd:string,
+        "3930:3935"^^xsd:string,
+        "4334:4339"^^xsd:string,
+        "4914:4919"^^xsd:string,
+        "5383:5388"^^xsd:string,
+        "6016:6023"^^xsd:string,
+        "6547:6554"^^xsd:string,
+        "728:735"^^xsd:string ;
+    data:wdtLink wdt:Q32347 ;
+    :alsoKnownAs "Alfonso XII"^^xsd:string ;
+    :hasBrother data:Alfonso_XII_of_Spain ;
+    :hasChild data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasDaughter data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:Maria_Christina_of_Austria,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasSex data:male ;
+    :hasSon data:Alfonso_XIII ;
+    :isAncestorOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isBloodrelationOf data:Alfonso_XII_of_Spain ;
+    :isBrotherOf data:Alfonso_XII_of_Spain ;
+    :isFatherOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isParentOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isSiblingOf data:Alfonso_XII_of_Spain ;
+    :isUncleOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Maria Christina of Austria"^^xsd:string ;
+    data:posIndicesFull "1171:1197"^^xsd:string,
+        "205:231"^^xsd:string ;
+    data:posIndicesPart "1300:1305"^^xsd:string,
+        "1306:1315"^^xsd:string,
+        "1641:1646"^^xsd:string,
+        "1647:1656"^^xsd:string,
+        "2139:2144"^^xsd:string,
+        "2145:2154"^^xsd:string,
+        "2218:2223"^^xsd:string,
+        "2224:2233"^^xsd:string,
+        "2316:2323"^^xsd:string,
+        "3214:3219"^^xsd:string,
+        "3220:3229"^^xsd:string,
+        "4213:4218"^^xsd:string,
+        "4219:4228"^^xsd:string,
+        "4536:4541"^^xsd:string,
+        "4542:4551"^^xsd:string,
+        "5893:5898"^^xsd:string,
+        "5899:5908"^^xsd:string,
+        "6719:6724"^^xsd:string,
+        "6725:6734"^^xsd:string ;
+    data:wdtLink wdt:Q538125 ;
+    :alsoKnownAs "Archduchess Maria Christina Henriette Desideria Felicitas Raineria of Austria"^^xsd:string,
+        "Maria Cristina de Habsburgo"^^xsd:string,
+        "María Cristina de Borbón"^^xsd:string ;
+    :hasChild data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasDaughter data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:Maria_Christina_of_Austria,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasSex data:female ;
+    :hasSister data:Maria_Christina_of_Austria ;
+    :hasSon data:Alfonso_XIII ;
+    :isAncestorOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isAuntOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isBloodrelationOf data:Maria_Christina_of_Austria ;
+    :isMotherOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isParentOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isSiblingOf data:Maria_Christina_of_Austria ;
+    :isSisterOf data:Maria_Christina_of_Austria .
+
+data:Alfonso_XIII a :Man,
+        :Person ;
+    rdfs:label "Alfonso XIII"^^xsd:string ;
+    data:posIndicesFull "1138:1149"^^xsd:string,
+        "163:174"^^xsd:string,
+        "163:183"^^xsd:string,
+        "1974:1985"^^xsd:string,
+        "2348:2359"^^xsd:string,
+        "2594:2606"^^xsd:string,
+        "388:399"^^xsd:string,
+        "491:503"^^xsd:string,
+        "6767:6779"^^xsd:string,
+        "737:749"^^xsd:string ;
+    data:posIndicesPart "2119:2126"^^xsd:string,
+        "6016:6023"^^xsd:string,
+        "6547:6554"^^xsd:string ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena"^^xsd:string,
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena"^^xsd:string,
+        "Alfonso XIII of Spain"^^xsd:string,
+        "Don Alfonso de Borbon y Habsburgo"^^xsd:string,
+        "Don Alfonso de Borbón y Habsburgo"^^xsd:string,
+        "The African"^^xsd:string ;
+    :hasAncestor data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:Maria_Christina_of_Austria,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasSex data:male ;
+    :hasSister data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isBloodrelationOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isBrotherOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isChildOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isSiblingOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isSonOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria .
+
+data:Infanta_Maria_Teresa_Isabel_of_Spain a :Person,
+        :Woman ;
+    rdfs:label "Infanta Maria Teresa Isabel of Spain"^^xsd:string ;
+    data:posIndicesFull "2105:2117"^^xsd:string,
+        "3324:3336"^^xsd:string ;
+    data:posIndicesPart "2139:2144"^^xsd:string,
+        "2218:2223"^^xsd:string,
+        "3214:3219"^^xsd:string,
+        "3930:3935"^^xsd:string,
+        "4213:4218"^^xsd:string,
+        "4334:4339"^^xsd:string,
+        "4536:4541"^^xsd:string,
+        "4556:4563"^^xsd:string,
+        "4914:4919"^^xsd:string,
+        "5383:5388"^^xsd:string,
+        "5893:5898"^^xsd:string,
+        "6719:6724"^^xsd:string ;
+    data:wdtLink wdt:Q255389 ;
+    :alsoKnownAs "Maria Teresa"^^xsd:string,
+        "Maria Teresa de Borbón y Habsburgo, Infanta de España"^^xsd:string ;
+    :hasAncestor data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:Maria_Christina_of_Austria,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isBloodrelationOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isChildOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isDaughterOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isSiblingOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isSisterOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias .
+
+data:María_de_las_Mercedes-_Princess_of_Asturias a :Person,
+        :Woman ;
+    rdfs:label "María de las Mercedes, Princess of Asturias"^^xsd:string ;
+    data:posIndicesFull "0:43"^^xsd:string ;
+    data:posIndicesPart "1101:1109"^^xsd:string,
+        "1218:1223"^^xsd:string,
+        "1227:1230"^^xsd:string,
+        "1231:1239"^^xsd:string,
+        "1361:1369"^^xsd:string,
+        "1418:1426"^^xsd:string,
+        "1439:1447"^^xsd:string,
+        "1797:1805"^^xsd:string,
+        "1853:1861"^^xsd:string,
+        "1865:1873"^^xsd:string,
+        "2009:2017"^^xsd:string,
+        "2071:2079"^^xsd:string,
+        "241:249"^^xsd:string,
+        "2437:2445"^^xsd:string,
+        "253:261"^^xsd:string,
+        "2739:2747"^^xsd:string,
+        "2984:2992"^^xsd:string,
+        "3116:3124"^^xsd:string,
+        "3272:3280"^^xsd:string,
+        "3284:3292"^^xsd:string,
+        "3492:3500"^^xsd:string,
+        "3504:3512"^^xsd:string,
+        "3550:3558"^^xsd:string,
+        "3637:3645"^^xsd:string,
+        "3728:3736"^^xsd:string,
+        "3999:4007"^^xsd:string,
+        "4062:4070"^^xsd:string,
+        "418:426"^^xsd:string,
+        "4431:4439"^^xsd:string,
+        "4637:4645"^^xsd:string,
+        "4812:4820"^^xsd:string,
+        "4824:4832"^^xsd:string,
+        "5017:5025"^^xsd:string,
+        "5090:5098"^^xsd:string,
+        "5249:5257"^^xsd:string,
+        "550:558"^^xsd:string,
+        "5520:5528"^^xsd:string,
+        "6098:6106"^^xsd:string,
+        "6205:6213"^^xsd:string,
+        "6295:6303"^^xsd:string,
+        "6347:6355"^^xsd:string,
+        "6584:6592"^^xsd:string,
+        "6663:6671"^^xsd:string,
+        "6832:6840"^^xsd:string,
+        "806:814"^^xsd:string ;
+    data:wdtLink wdt:Q129179 ;
+    :alsoKnownAs "María de las Mercedes of Spain"^^xsd:string ;
+    :hasAncestor data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasRelation data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:Maria_Christina_of_Austria,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isBloodrelationOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isChildOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isDaughterOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isSiblingOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias ;
+    :isSisterOf data:Alfonso_XIII,
+        data:Infanta_Maria_Teresa_Isabel_of_Spain,
+        data:María_de_las_Mercedes-_Princess_of_Asturias .
+

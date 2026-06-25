@@ -2,58 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Donata_of_Castell_Rudenhausen a :Person,
+data:Patricia_Bailey a :Person,
         :Woman .
 
-data:Friedrich_August_of_Oldenburg a :Man,
-        :Person ;
-    :hasBirthYear 1936 ;
-    :hasDeathYear 2017 ;
-    :hasFather data:Nikolaus_of_Oldenburg ;
-    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
-    :isUncleOf data:Christian_of_Oldenburg .
+data:Prince_Henrik a :Man,
+        :Person .
 
-data:Marie_Cecile_of_Prussia a :Person,
+data:Princess_Josephine_of_Denmark a :Person,
         :Woman ;
-    :hasFather data:Louis_Ferdinand_of_Prussia ;
-    :hasMother data:Kira_Kirillovna_of_Russia .
+    :hasBirthYear 2011 ;
+    :hasFather data:King_Frederik_X ;
+    :hasMother data:Queen_Mary ;
+    :isSiblingOf data:Crown_Prince_Christian,
+        data:Prince_Vincent,
+        data:Princess_Isabella .
 
-data:Bathildis_of_Schaumburg_Lippe a :Ancestor,
-        :Person,
+data:Princess_Marie_of_Denmark a :Person,
         :Woman .
 
-data:Christian_of_Oldenburg a :Man,
-        :Person .
-
-data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin a :Ancestor,
-        :Person,
+data:Queen_Margrethe_II a :Person,
         :Woman .
 
-data:Frederick_Augustus_II_of_Oldenburg a :Ancestor,
+data:Crown_Prince_Christian a :Man,
+        :Person .
+
+data:King_Frederik_X a :Ancestor,
         :Man,
         :Person .
 
-data:Friedrich_of_Waldeck_and_Pyrmont a :Ancestor,
-        :Man,
+data:Prince_Vincent a :Man,
         :Person .
 
-data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Friedrich_of_Waldeck_and_Pyrmont ;
-    :hasMother data:Bathildis_of_Schaumburg_Lippe .
-
-data:Kira_Kirillovna_of_Russia a :Ancestor,
-        :Person,
+data:Princess_Isabella a :Person,
         :Woman .
 
-data:Louis_Ferdinand_of_Prussia a :Ancestor,
-        :Man,
-        :Person .
-
-data:Nikolaus_of_Oldenburg a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Frederick_Augustus_II_of_Oldenburg ;
-    :hasMother data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin .
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman .
 

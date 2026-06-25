@@ -2,36 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Bernhard a :Man ;
+data:Anna_Elspeth_Campbell a :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1986 .
+
+data:Philipp_Prince_of_Hohenlohe-Langenburg a :Man ;
     :hasBirthYear 1970 ;
-    :hasFather data:Maximilian ;
-    :hasMarriageYear 2001 ;
-    :hasMother data:Valerie .
+    :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;
+    :hasMother data:Princess_Charlotte_of_Croy ;
+    :hasRelation data:Saskia_Binder .
 
-data:StephanieAnneKaul a :Woman ;
-    :hasBirthYear 1966 ;
-    :hasFather data:ChristianKaul ;
-    :hasMother data:HanneloreScheel .
+data:Prince_Alexander_of_Croy a :Man ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 2002 .
 
-data:Berthold a :Man .
+data:Princess_Margarita_of_Greece_and_Denmark a :Woman .
 
-data:ChristianKaul a :Man .
+data:Hans_Peter_Binder a :Man .
 
-data:HanneloreScheel a :Woman .
+data:Kraft_Prince_of_Hohenlohe-Langenburg a :Man ;
+    :hasBirthYear 1935 ;
+    :hasDeathYear 2004 .
 
-data:HubertSalvator a :Man .
+data:Princess_Charlotte_of_Croy a :Woman ;
+    :hasBirthYear 1938 .
 
-data:Maximilian a :Man ;
-    :hasDeathYear 2022 ;
-    :hasFather data:Berthold ;
-    :hasMother data:Theodora .
-
-data:Rosemary a :Woman .
-
-data:Theodora a :Woman .
-
-data:Valerie a :Woman ;
-    :hasBirthYear 1941 ;
-    :hasFather data:HubertSalvator ;
-    :hasMother data:Rosemary .
+data:Saskia_Binder a :Woman ;
+    :hasBirthYear 1973 ;
+    :hasFather data:Hans_Peter_Binder .
 

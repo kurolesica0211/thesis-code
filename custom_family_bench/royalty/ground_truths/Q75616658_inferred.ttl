@@ -1,0 +1,232 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Lady_Paola_Windsor a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Lady Paola Windsor"^^xsd:string ;
+    data:posIndicesFull "1740:1784"^^xsd:string ;
+    data:posIndicesPart "1880:1884"^^xsd:string ;
+    data:wdtLink wdt:Q6350285 ;
+    :alsoKnownAs "Paola Doimi de Lupis Frankopan Šubić Zrinski"^^xsd:string,
+        "Paola Frankopan"^^xsd:string,
+        "Paola Louise Marica Doimi de Lupis"^^xsd:string,
+        "Paola Luisa Marica Frankopan Subic Zrinski, Countess Doimi de Lupis"^^xsd:string,
+        "Princess Paola Doimi de Lupis de Frankopan Šubić Zrinski"^^xsd:string ;
+    :hasChild data:Albert_Windsor ;
+    :hasRelation data:Albert_Windsor,
+        data:Lady_Paola_Windsor,
+        data:Lord_Nicholas_Windsor ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Paola_Windsor ;
+    :hasSon data:Albert_Windsor ;
+    :isAncestorOf data:Albert_Windsor ;
+    :isAuntOf data:Albert_Windsor ;
+    :isBloodrelationOf data:Lady_Paola_Windsor ;
+    :isMotherOf data:Albert_Windsor ;
+    :isParentOf data:Albert_Windsor ;
+    :isSiblingOf data:Lady_Paola_Windsor ;
+    :isSisterOf data:Lady_Paola_Windsor .
+
+data:Prince_Edward-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Edward, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "131:144"^^xsd:string,
+        "131:158"^^xsd:string,
+        "146:158"^^xsd:string,
+        "347:360"^^xsd:string,
+        "347:374"^^xsd:string,
+        "362:374"^^xsd:string ;
+    data:posIndicesPart "596:602"^^xsd:string,
+        "768:772"^^xsd:string ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent"^^xsd:string,
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent"^^xsd:string,
+        "Edward Kent"^^xsd:string,
+        "His Royal Highness The Duke of Kent"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward of Kent"^^xsd:string,
+        "The Duke of Kent"^^xsd:string ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
+    :hasChild data:Lord_Nicholas_Windsor ;
+    :hasRelation data:Albert_Windsor,
+        data:Lord_Nicholas_Windsor,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :hasSon data:Lord_Nicholas_Windsor ;
+    :isAncestorOf data:Albert_Windsor,
+        data:Lord_Nicholas_Windsor ;
+    :isBloodrelationOf data:Prince_Edward-_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isFatherOf data:Lord_Nicholas_Windsor ;
+    :isParentOf data:Lord_Nicholas_Windsor ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent ;
+    :isUncleOf data:Lord_Nicholas_Windsor .
+
+data:Lady_Helen_Taylor a :Person,
+        :Woman ;
+    rdfs:label "Lady Helen Taylor"^^xsd:string ;
+    data:posIndicesFull "466:483"^^xsd:string,
+        "471:483"^^xsd:string ;
+    data:posIndicesPart "1880:1884"^^xsd:string,
+        "936:940"^^xsd:string ;
+    data:wdtLink wdt:Q674343 ;
+    :alsoKnownAs "Helen Marina Lucy Taylor"^^xsd:string,
+        "Helen Marina Lucy Windsor"^^xsd:string,
+        "Helen Taylor"^^xsd:string,
+        "Helen Windsor"^^xsd:string,
+        "Lady Helen Marina Lucy Taylor"^^xsd:string,
+        "Lady Helen Marina Lucy Windsor"^^xsd:string,
+        "The Lady Helen Marina Lucy Taylor"^^xsd:string ;
+    :hasAncestor data:Katharine-_Duchess_of_Kent ;
+    :hasBrother data:Lord_Nicholas_Windsor ;
+    :hasMother data:Katharine-_Duchess_of_Kent ;
+    :hasParent data:Katharine-_Duchess_of_Kent ;
+    :hasRelation data:Katharine-_Duchess_of_Kent,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Helen_Taylor ;
+    :isAuntOf data:Albert_Windsor ;
+    :isBloodrelationOf data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isChildOf data:Katharine-_Duchess_of_Kent ;
+    :isDaughterOf data:Katharine-_Duchess_of_Kent ;
+    :isSiblingOf data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isSisterOf data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor .
+
+data:Katharine-_Duchess_of_Kent a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Katharine, Duchess of Kent"^^xsd:string ;
+    data:posIndicesFull "379:405"^^xsd:string ;
+    data:posIndicesPart "757:764"^^xsd:string,
+        "768:772"^^xsd:string ;
+    data:wdtLink wdt:Q236678 ;
+    :alsoKnownAs "Katharine Kent"^^xsd:string,
+        "Katharine Lucy Mary Worsley"^^xsd:string,
+        "Katharine Lucy Mary, Duchess of Kent"^^xsd:string,
+        "Katharine Worsley"^^xsd:string ;
+    :hasChild data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :hasDaughter data:Lady_Helen_Taylor ;
+    :hasRelation data:Albert_Windsor,
+        data:Katharine-_Duchess_of_Kent,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :hasSex data:female ;
+    :hasSister data:Katharine-_Duchess_of_Kent ;
+    :hasSon data:Lord_Nicholas_Windsor ;
+    :isAncestorOf data:Albert_Windsor,
+        data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isAuntOf data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isBloodrelationOf data:Katharine-_Duchess_of_Kent ;
+    :isMotherOf data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isParentOf data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isSiblingOf data:Katharine-_Duchess_of_Kent ;
+    :isSisterOf data:Katharine-_Duchess_of_Kent .
+
+data:Albert_Windsor a :Man,
+        :Person ;
+    rdfs:label "Albert Windsor"^^xsd:string ;
+    data:wdtLink wdt:Q75616658 ;
+    :alsoKnownAs "Albert Louis Philip Edward Windsor"^^xsd:string ;
+    :hasAncestor data:Katharine-_Duchess_of_Kent,
+        data:Lady_Paola_Windsor,
+        data:Lord_Nicholas_Windsor,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasBrother data:Albert_Windsor ;
+    :hasFather data:Lord_Nicholas_Windsor ;
+    :hasMother data:Lady_Paola_Windsor ;
+    :hasParent data:Lady_Paola_Windsor,
+        data:Lord_Nicholas_Windsor ;
+    :hasRelation data:Albert_Windsor,
+        data:Katharine-_Duchess_of_Kent,
+        data:Lady_Paola_Windsor,
+        data:Lord_Nicholas_Windsor,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Albert_Windsor ;
+    :isBrotherOf data:Albert_Windsor ;
+    :isChildOf data:Lady_Paola_Windsor,
+        data:Lord_Nicholas_Windsor ;
+    :isSiblingOf data:Albert_Windsor ;
+    :isSonOf data:Lady_Paola_Windsor,
+        data:Lord_Nicholas_Windsor .
+
+data:Lord_Nicholas_Windsor a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Lord Nicholas Windsor"^^xsd:string ;
+    data:posIndicesFull "0:45"^^xsd:string,
+        "1885:1901"^^xsd:string,
+        "226:266"^^xsd:string,
+        "5:45"^^xsd:string ;
+    data:posIndicesPart "1008:1016"^^xsd:string,
+        "1188:1195"^^xsd:string,
+        "1561:1569"^^xsd:string,
+        "160:164"^^xsd:string,
+        "165:173"^^xsd:string,
+        "1710:1718"^^xsd:string,
+        "520:527"^^xsd:string,
+        "734:742"^^xsd:string,
+        "843:851"^^xsd:string ;
+    data:wdtLink wdt:Q1217757 ;
+    :alsoKnownAs "Lord Nicholas Charles Edward Jonathan Windsor"^^xsd:string,
+        "Nicholas Charles Edward Jonathan Windsor"^^xsd:string,
+        "Nicholas Windsor"^^xsd:string ;
+    :hasAncestor data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasBrother data:Lord_Nicholas_Windsor ;
+    :hasChild data:Albert_Windsor ;
+    :hasFather data:Prince_Edward-_Duke_of_Kent ;
+    :hasMother data:Katharine-_Duchess_of_Kent ;
+    :hasParent data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasRelation data:Albert_Windsor,
+        data:Katharine-_Duchess_of_Kent,
+        data:Lady_Helen_Taylor,
+        data:Lady_Paola_Windsor,
+        data:Lord_Nicholas_Windsor,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :hasSister data:Lady_Helen_Taylor ;
+    :hasSon data:Albert_Windsor ;
+    :isAncestorOf data:Albert_Windsor ;
+    :isBloodrelationOf data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isBrotherOf data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isChildOf data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :isFatherOf data:Albert_Windsor ;
+    :isParentOf data:Albert_Windsor ;
+    :isSiblingOf data:Lady_Helen_Taylor,
+        data:Lord_Nicholas_Windsor ;
+    :isSonOf data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :isUncleOf data:Albert_Windsor .
+

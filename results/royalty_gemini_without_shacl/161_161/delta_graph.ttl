@@ -2,66 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Infante_Dom_Manuel_Manuel_II a :Man,
+data:Amedeo_5th_Duke_of_Aosta a :Man,
         :Person ;
-    :hasFather data:Carlos_I_of_Portugal ;
-    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
+    :hasFather data:Aimone_4th_Duke_of_Aosta ;
+    :hasMother data:Irene_of_Greece_and_Denmark .
 
-data:King_Louis_Philippe_I_of_France a :Ancestor,
-        :Man ;
-    :isFatherOf data:Prince_Antoine_Duke_of_Montpensier,
-        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans .
+data:Alexander_of_Greece a :Man,
+        :Person .
 
-data:Maria_Amalia_of_the_Two_Sicilies a :Ancestor,
-        :Woman ;
-    :isMotherOf data:Prince_Antoine_Duke_of_Montpensier,
-        data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans .
+data:Constantine_I_of_Greece a :Man,
+        :Person .
 
-data:Prince_Dom_Lu%C3%ADs_Filipe a :Man,
-        :Person ;
-    :hasFather data:Carlos_I_of_Portugal ;
-    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
+data:George_of_Greece a :Man,
+        :Person .
 
-data:Duchess_Helena_of_Mecklenburg_Schwerin a :Ancestor,
+data:Helen_of_Greece a :Person,
         :Woman .
 
-data:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,
+data:Irene_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasBirthYear 1904 ;
+    :hasDeathYear 1974 ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMarriageYear 1939 ;
+    :hasMother data:Sophie_of_Prussia ;
+    :hasRelation data:Aimone_4th_Duke_of_Aosta ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece .
+
+data:Paul_of_Greece a :Man,
+        :Person .
+
+data:Sophie_of_Prussia a :Person,
         :Woman .
 
-data:King_Lu%C3%ADs_I_of_Portugal a :Ancestor,
-        :Man .
-
-data:Maria_Pia_of_Savoy a :Ancestor,
-        :Woman .
-
-data:Prince_Philippe_Count_of_Paris a :Ancestor,
-        :Man ;
-    :hasFather data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
-    :hasMother data:Duchess_Helena_of_Mecklenburg_Schwerin .
-
-data:Princess_Marie_Isabelle_dOrl%C3%A9ans a :Ancestor,
-        :Woman ;
-    :hasFather data:Prince_Antoine_Duke_of_Montpensier ;
-    :hasMother data:Infanta_Luisa_Fernanda_of_Spain .
-
-data:Am%C3%A9lie_of_Orl%C3%A9ans a :Person,
-        :Woman ;
-    :alsoKnownAs "Marie Amélie Louise Hélène"^^xsd:string ;
-    :hasBirthYear 1865 ;
-    :hasDeathYear 1951 ;
-    :hasFather data:Prince_Philippe_Count_of_Paris ;
-    :hasMarriageYear 1886 ;
-    :hasMother data:Princess_Marie_Isabelle_dOrl%C3%A9ans ;
-    :hasRelation data:Carlos_I_of_Portugal .
-
-data:Carlos_I_of_Portugal a :Man,
-        :Person ;
-    :hasFather data:King_Lu%C3%ADs_I_of_Portugal ;
-    :hasMother data:Maria_Pia_of_Savoy .
-
-data:Prince_Antoine_Duke_of_Montpensier a :Ancestor,
-        :Man .
-
-data:Prince_Ferdinand_Philippe_Duke_of_Orl%C3%A9ans a :Ancestor,
-        :Man .
+data:Aimone_4th_Duke_of_Aosta a :Man,
+        :Person .
 

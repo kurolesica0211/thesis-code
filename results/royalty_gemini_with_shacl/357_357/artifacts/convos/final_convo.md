@@ -85,72 +85,100 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Alfonso, Duke of Anjou, Duke of Cádiz, Grandee of Spain (Spanish: Don Alfonso Jaime Marcelino Manuel Víctor María de Borbón y Dampierre; French: Alphonse Jacques Marcellin Emmanuel Victor Marie de Bourbon; 20 April 1936 – 30 January 1989) was a grandson of King Alfonso XIII of Spain, a potential heir to the throne in the event of the restoration of the Spanish monarchy, and the Legitimist claimant to the throne of France.
-Upbringing
+The Duchess of Montpensier
 
-Alfonso was born at Sant'Anna Clinic in Rome, the elder son of Infante Jaime, Duke of Segovia, King Alfonso's second of four sons.
-His mother was Donna Emanuela de Dampierre, daughter of Roger, Duke of San Lorenzo and Donna Vittoria Ruspoli
-The Segovias lived in Rome where Jaime's father had maintained a royal court-in-exile since the royal family fled Spain following the 1931 election of republicans and socialists in Spain's major cities.
-Alfonso was baptised by Eugenio Cardinal Pacelli (later Pope Pius XII) at the Palazzo Ruspoli on the Via del Corso in Rome, home of his maternal grandmother, Donna Vittoria Ruspoli dei principi di Poggio Suasa.
-In 1941, Alfonso and his parents followed his English-born grandmother, Queen Victoria Eugenie to Lausanne in Switzerland.
-They lived first at the Hotel Royal, before Alfonso and his younger brother Gonzalo were sent to the Collège Saint-Jean (later Villa St. Jean International School) in Fribourg.
-On 8 December 1946 Alfonso made his first communion with his brother, Gonzalo; on the same day he was confirmed by Pedro Cardinal Segura y Sáenz, Archbishop of Seville.
-Spanish succession rights
 
-The king's eldest son, Alfonso, Prince of Asturias, had inherited hemophilia from his maternal great-grandmother Queen Victoria, yet had been considered Spain's heir apparent until the republic was established in 1931.
-Next in the line of succession, Infante Don Jaime, deaf and largely mute, was that same day persuaded to renounce his claim (and that of future descendants) alongside his elder brother, thereby assuming the Duke of Segovia title and clearing the way for King Alfonso's third son, Don Juan, Count of Barcelona to take up the monarchist cause on behalf of the banished dynasty.
-There being no need for Segovia to contract a dynastic alliance, Emanuela de Dampierre's noble rather than royal background was looked upon approvingly by the former king and former queen when the couple wed in Rome in 1935, and neither style nor title is attributed to Alfonso de Borbón-Segovia y Dampierre in the 1944 edition of the Almanach de Gotha.
-Following Alfonso XIII's death in Rome in February 1941, Franco wrote Don Juan, acknowledging him as rightful heir to the throne (though without inviting him to occupy it), implicitly confirming that he considered Segovia and his sons excluded from the royal succession.
-The new law allowed Franco or his successor to choose any man "of royal lineage" as king, and Alfonso was mentioned that year as a possible alternative to Don Juan and his son, Juan Carlos, should Franco consider the former too liberal to reign over a Falangist Spain.
-In December 1949, Segovia retracted his renunciation as coerced and claimed that he was the rightful claimant to Spain's crown.
-Relations between Don Juan and Franco continued to deteriorate and in 1952 the latter prevailed upon Segovia to send his elder son to Spain to be educated under his guidance.
-Reluctantly, Alfonso moved from Switzerland to Spain, initially to study law at Deusto University and, in 1955 to attend the elite Centro de Estudios Universitarios (CEU).
-By 1956 Franco was diverting sponsors of some civic events from Juan Carlos, who was also being educated in Spain under the Caudillo's supervision, to Alfonso.
-By 1964, Franco considered Juan Carlos his preferred candidate for the throne over his father, but also considered that if the latter deviated from obedience to Franco or loyalty to his Movimiento Nacional, Alfonso was a suitable alternative.
-Alfonso's strongest supporter in Franco's government was José Solís Ruiz, minister and secretary-general of the Movimiento.
-Anticipating that Franco would soon offer to declare him Spain's next king rather than Don Juan, in June 1969, Juan Carlos warned his father that if he declined Franco's offer, Alfonso would be invited to accept the crown, nevertheless Don Juan refused to consent to being bypassed.
-Asked by Juan Carlos to be chief witness at the ceremony declaring him successor and Prince of Spain, Alfonso immediately agreed to do so and sent some of his supporters to visit his father in Paris to persuade him to express no opposition publicly.
-In return for his full support, Franco later appointed Alfonso Spain's ambassador to Sweden.
-But in June 1972, after he had taken up that post, Alfonso advised Franco's foreign minister Laureano López Rodó that he deemed his support conditional upon his cousin's continued loyalty to Francoist Spain.
-He further hinted that Spain's law of succession should be amended to facilitate Alfonso's replacing or succeeding Juan Carlos as Franco's heir or on the throne, if circumstances called for such a change.
-On 8 March 1972, in the Palace of El Pardo in Madrid, Alfonso married Doña María del Carmen Martínez-Bordiú y Franco, daughter of Don Cristóbal Martínez-Bordiú, 10th Marquis de Villaverde, and of his wife, Doña Carmen Franco y Polo (Franco's only daughter.
-Doña Carmen was granted a title in 1975 becoming the 1st Duchess de Franco after Franco's death).
-The witnesses of the marriage were Franco and Alfonso's mother.
-Alfonso and Carmen separated in 1979, received a civil divorce in 1982 and an ecclesiastical annulment in 1986.
-On 22 November 1972, General Franco awarded Alfonso the Spanish title Duque de Cádiz with the dignity Grandee of Spain, and he received the style of Royal Highness.
-The Cádiz title had been held by Alfonso's great-great-grandfather, the Infante Francisco de Asís.
-French succession rights
+The Count of ÉvreuxThe Countess of Évreux
 
-Since Alfonso's mother was not born a princess of royal descent, his grandfather Alfonso XIII did not consider young Alfonso in line to the Spanish throne in accordance with the Pragmatic Sanction of 1830.
-Alfonso's father Jaime, however, came to assert that his sons were French dynasts entitled to the style of Royal Highness.
-In Spain up until 1972, Alfonso was generally addressed as Don Alfonso de Borbón y Dampierre.
-Elsewhere he was often addressed as a prince.
-On 25 November 1950, Alfonso received the title Duc de Bourbon (Duke of Bourbon) from his father.
-In 1963, Alfonso engaged the French historian and ardent royalist Hervé Pinoteau as his private secretary.
-Pinoteau remained with him until the duke's death.
-On 20 March 1975, Alfonso's father Jaime died.
-On 3 August 1975, he took the courtesy title Duc d'Anjou (Duke of Anjou).
-On 21 January 1985 (the 192nd anniversary of the death of King Louis XVI) Alfonso was present for the requiem mass at the Chapelle expiatoire in Paris.
-Marriage and children
 
-Lawsuit of the Count of Clermont against the Duke of Anjou
+Princess Béatrice
 
-In 1987, his paternal 10th cousin Prince Henri of Orléans, Count of Clermont, eldest son of Henri, Count of Paris, the then Orléanist claimant to the defunct throne of France, initiated a court action against Alfonso for his use of the title Duke of Anjou and the coat-of-arms France Moderne (three fleur-de-lis or); Henri asked the court to fine Alfonso 50,000 French francs for each future violation.
-In 1988, Prince Ferdinand, Duke of Castro and Prince Sixtus Henry of Bourbon-Parma joined Henri's lawsuit in reference to the use of the title Duke of Anjou, but not in respect to the coat-of-arms.
-On 21 December 1988, the Tribunal de grande instance of Paris ruled that the lawsuit was inadmissible because the title's legal existence could not be proven; that neither the plaintiff (Henri) nor the intervenors (Fernando and Sixtus) had established their claims to the title; and that Henri was not injured from the use of the plain arms of France by the Spanish branch of the Bourbon family.
-In 1989, Prince Henri d'Orléans and Prince Sixtus Henry of Bourbon-Parma appealed the judgment in the lawsuit about the use of a title and arms by Alfonso; the original judgment in favour of Alfonso was upheld.
-Career
 
-From 1977 to 1984, Alfonso was President of the Spanish Skiing Federation, and from 1984 to 1987 President of the Spanish Olympic Committee.
-Death
+The Duke of OrléansThe Duchess of Orléans
 
-Alfonso died in a skiing accident in Beaver Creek Resort, Eagle County, Colorado, on 30 January 1989, from broken neck by a cable which he collided with as it was being raised to support a banner at the finish line of a course at the FIS Alpine World Ski Championships.
+
+The Dowager Countess of La Marche
+
+
+The Countess of Schönborn-Buchheim
+
+
+Princess Hélène, Countess of Limburg Stirum
+
+
+The Dowager Duchess of Calabria
+
+
+The Dowager Duchess of Württemberg
+
+
+Princess Claude, Mrs. Gandolfi
+
+
+Princess Chantal, Baroness of Sambucy de Sorgue
+
+
+Prince Jean Carl Pierre Marie d'Orléans, Count of Paris (born 19 May 1965) is the current head of the House of Orléans.
+Jean is the senior male descendant by primogeniture in the male-line of Louis Philippe I, King of the French, and thus according to the Orléanists the legitimate claimant to the defunct throne of France as Jean IV.
+Jean is the second son of Henri, Count of Paris (1933–2019) and his former wife Duchess Marie-Thérèse of Württemberg (born 1934).
+Biography
+
+Early life and education
+
+Jean d'Orléans was born on 19 May 1965 in Boulogne-Billancourt, the son of Henri of Orleans and Maria Theresa of Württemberg.
+He received as godfather, his maternal uncle, Carl of Württemberg, and as godmother, his paternal aunt, Princess Chantal of Orleans.
+Jean completed his national service as an officer, first taking four months of classes at the Saumur Cavalry School.
+Jean is multilingual, speaking French, English, and German.
+First engagement
+
+Prince Jean was due to marry Duchess Tatjana of Oldenburg (b. 1974) in 2001.
+However, the wedding was cancelled at the last moment because of a dispute over religious denomination: Jean's father, Henri, feared the Orléans claim to the throne would be compromised if there were to be a Protestant heir.
+Second engagement and marriage
+
+On 29 November 2008, Henri, then Count of Paris, announced the engagement of Jean, the then Duke of Vendôme, to Maria Magdalena Philomena Juliana Johanna de Tornos y Steinhart, born in Vienna on 19 June 1977.
+Lawsuit
+
+In 2021, Jean filed a lawsuit against the Saint-Louis foundation, demanding €1 million in damages and the return of five properties, including the Château d'Amboise.
+In 1886, the château was bequeathed to the Institute of France by Jean's ancestor Henri d’Orléans, with the caveat that the property would never be altered by the institute.
+The Saint-Louis foundation was later founded by Jean's grandfather, Henri VI, Count of Paris, in 1974.
+Jean's lawsuit alleges that the Institute violated their contract to never alter the property, after they announced plans to transform the Pavillon d’Enghien into a €760-a-night luxury hotel, containing a spa and gastronomic restaurant.
+Jean had previously lived in the château from 2001 to September 2021 rent-free, but was forcefully evicted by the institute after they began to demand he pay rent, which Jean viewed as a violation of their contract.
+Family
+
+Jean and his wife Philomena have six children: 
+
+
+Politics
+
+Jean believes that the people of France are "monarchist at heart" and argues that they long for a non-partisan figurehead.
+Jean has also expressed his opposition to same-sex marriage, having participated in the La Manif pour tous protests, as well as abortion.
+In May 2019, Jean met with French President Emmanuel Macron, Brigitte Macron, and Italian President Sergio Mattarella in his then-home in the Château d'Amboise.
+
+
+Titles, styles and honours
+
+Titles in pretense
+
+He was created Duke of Vendôme (French: Duc de Vendôme) by his paternal grandfather, on 27 September 1987.
+Following the death of his father, it was initially thought that Prince Jean would not assume the title of Count of Paris for several months after his father's death, and possibly not for as much as one year.
+Honours
+
+National
+
+Dynastic
+
+Ancestry
+
+Jean is a direct male-line descendant of Louis Philippe I, the last French king, who in turn was a descendant of Philippe I, Duke of Orléans, the younger brother of Louis XIV.
+Jean is also descended from Charles X, brother of Louis XVI; and the Bourbons of Spain, the Two Sicilies and Parma.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -166,39 +194,9 @@ Alfonso died in a skiing accident in Beaver Creek Resort, Eagle County, Colorado
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -213,6 +211,23 @@ Alfonso died in a skiing accident in Beaver Creek Resort, Eagle County, Colorado
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -230,6 +245,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -297,29 +327,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -328,6 +350,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -340,6 +370,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -348,17 +380,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -386,6 +420,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -401,178 +519,144 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (84ad623a-1097-4eca-980b-3aafb6ded7b6)
- Call ID: 84ad623a-1097-4eca-980b-3aafb6ded7b6
+  AssignClass (7963a201-a950-4510-8f85-89f864727969)
+ Call ID: 7963a201-a950-4510-8f85-89f864727969
+  Args:
+    source: :Jean_dOrleans
+    type: :Man
+  AssignClass (0bc3e36c-b241-421a-b10f-936c5eb081d5)
+ Call ID: 0bc3e36c-b241-421a-b10f-936c5eb081d5
+  Args:
+    type: :Person
+    source: :Jean_dOrleans
+  AssignClass (208e9a83-4166-4feb-88ff-b9f294d8f769)
+ Call ID: 208e9a83-4166-4feb-88ff-b9f294d8f769
   Args:
     type: :Man
-    source: Alfonso_Duke_of_Anjou
-  AddLiteral (02f543e5-45c0-494c-a6f4-21dbca7f6f66)
- Call ID: 02f543e5-45c0-494c-a6f4-21dbca7f6f66
+    source: :Henri_Count_of_Paris
+  AssignClass (7ce8985a-910f-458c-9c81-34ab0db89247)
+ Call ID: 7ce8985a-910f-458c-9c81-34ab0db89247
   Args:
-    source: Alfonso_Duke_of_Anjou
-    relation: :knownAs
-    literal_type: xsd:string
-    literal_value: Alfonso Jaime Marcelino Manuel Víctor María de Borbón y Dampierre
-  AddLiteral (7e2ede03-b189-40bd-a461-4726114cf0fd)
- Call ID: 7e2ede03-b189-40bd-a461-4726114cf0fd
+    type: :Person
+    source: :Henri_Count_of_Paris
+  AssignClass (f9b1691b-34e9-49a0-9e8e-4bb9023878d5)
+ Call ID: f9b1691b-34e9-49a0-9e8e-4bb9023878d5
   Args:
-    source: Alfonso_Duke_of_Anjou
-    relation: :alsoKnownAs
-    literal_type: xsd:string
-    literal_value: Alphonse Jacques Marcellin Emmanuel Victor Marie de Bourbon
-  AddLiteral (bdd08158-9ded-403a-b420-6548823774b9)
- Call ID: bdd08158-9ded-403a-b420-6548823774b9
+    source: :Marie_Therese_of_Wurttemberg
+    type: :Woman
+  AssignClass (50c8bf8d-57e0-4df2-9809-8d0196f4f563)
+ Call ID: 50c8bf8d-57e0-4df2-9809-8d0196f4f563
+  Args:
+    source: :Marie_Therese_of_Wurttemberg
+    type: :Person
+  AssignClass (ddf05b92-5d3b-4661-90c8-cb98b1f4bbed)
+ Call ID: ddf05b92-5d3b-4661-90c8-cb98b1f4bbed
+  Args:
+    type: :Woman
+    source: :Philomena_de_Tornos_y_Steinhart
+  AssignClass (71e56bdd-8777-4807-adb1-8dce7ca1f064)
+ Call ID: 71e56bdd-8777-4807-adb1-8dce7ca1f064
+  Args:
+    type: :Person
+    source: :Philomena_de_Tornos_y_Steinhart
+  AssignClass (13431de4-a09a-434c-84c1-62643a989081)
+ Call ID: 13431de4-a09a-434c-84c1-62643a989081
+  Args:
+    source: :Henri_VI_Count_of_Paris
+    type: :Man
+  AssignClass (87307802-f69d-40aa-8b1f-2e9bae78d3fa)
+ Call ID: 87307802-f69d-40aa-8b1f-2e9bae78d3fa
+  Args:
+    source: :Henri_VI_Count_of_Paris
+    type: :Person
+  AssignClass (faa55d0d-0771-4f7d-b91f-41168ba3f5f8)
+ Call ID: faa55d0d-0771-4f7d-b91f-41168ba3f5f8
+  Args:
+    source: :Chantal_of_Orleans
+    type: :Woman
+  AssignClass (7b1247d3-10ad-456e-8f97-2d2437083b95)
+ Call ID: 7b1247d3-10ad-456e-8f97-2d2437083b95
+  Args:
+    type: :Person
+    source: :Chantal_of_Orleans
+  AssignClass (9e2cfffd-3ef2-400a-b1a3-4695fdfb03c1)
+ Call ID: 9e2cfffd-3ef2-400a-b1a3-4695fdfb03c1
+  Args:
+    source: :Carl_of_Wurttemberg
+    type: :Man
+  AssignClass (15bd23d4-9dae-4622-95a1-45bc49d608b1)
+ Call ID: 15bd23d4-9dae-4622-95a1-45bc49d608b1
+  Args:
+    source: :Carl_of_Wurttemberg
+    type: :Person
+  AddLiteral (4e2cc078-09c9-4f08-a6d7-2178ca74b7e3)
+ Call ID: 4e2cc078-09c9-4f08-a6d7-2178ca74b7e3
   Args:
     relation: :hasBirthYear
-    source: Alfonso_Duke_of_Anjou
+    source: :Jean_dOrleans
     literal_type: xsd:integer
-    literal_value: 1936
-  AddLiteral (0898c160-6f28-4ae2-a4fe-8c2572862433)
- Call ID: 0898c160-6f28-4ae2-a4fe-8c2572862433
+    literal_value: 1965
+  AddLiteral (e37df69a-9eaa-4175-8618-51a9b02057ed)
+ Call ID: e37df69a-9eaa-4175-8618-51a9b02057ed
   Args:
-    literal_value: 1989
+    relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Alfonso_Duke_of_Anjou
+    source: :Henri_Count_of_Paris
+    literal_value: 1933
+  AddLiteral (71356776-60d9-4f69-a60d-e323c0f8961a)
+ Call ID: 71356776-60d9-4f69-a60d-e323c0f8961a
+  Args:
+    source: :Henri_Count_of_Paris
+    literal_type: xsd:integer
     relation: :hasDeathYear
-  AssignClass (edbd0ba5-ef20-4b78-99f6-9a2cc526d46f)
- Call ID: edbd0ba5-ef20-4b78-99f6-9a2cc526d46f
+    literal_value: 2019
+  AddLiteral (d77b87c5-2c33-4a81-83f1-50663e892746)
+ Call ID: d77b87c5-2c33-4a81-83f1-50663e892746
   Args:
-    type: :Man
-    source: Alfonso_XIII_of_Spain
-  AssignClass (197932e5-006a-4cb1-88ce-4a31ea237acc)
- Call ID: 197932e5-006a-4cb1-88ce-4a31ea237acc
-  Args:
-    source: Jaime_Duke_of_Segovia
-    type: :Man
-  AssignClass (8e5dab51-b4c1-45bb-9dbb-7342d8d356a8)
- Call ID: 8e5dab51-b4c1-45bb-9dbb-7342d8d356a8
-  Args:
-    source: Emanuela_de_Dampierre
-    type: :Woman
-  AddTriple (3bc8b474-effc-4b16-bffd-84b6545a9063)
- Call ID: 3bc8b474-effc-4b16-bffd-84b6545a9063
-  Args:
-    source: Alfonso_Duke_of_Anjou
-    relation: :hasFather
-    target: Jaime_Duke_of_Segovia
-  AddTriple (1f60a049-2d23-49ed-ab58-cbc97471f5bc)
- Call ID: 1f60a049-2d23-49ed-ab58-cbc97471f5bc
-  Args:
-    relation: :hasMother
-    target: Emanuela_de_Dampierre
-    source: Alfonso_Duke_of_Anjou
-  AddTriple (e30486ec-445a-4dd4-b421-f319917772ee)
- Call ID: e30486ec-445a-4dd4-b421-f319917772ee
-  Args:
-    source: Jaime_Duke_of_Segovia
-    target: Alfonso_XIII_of_Spain
-    relation: :hasFather
-  AssignClass (754016bb-81a9-49e3-8d77-3f303ca8874a)
- Call ID: 754016bb-81a9-49e3-8d77-3f303ca8874a
-  Args:
-    type: :Man
-    source: Roger_Duke_of_San_Lorenzo
-  AssignClass (e95797f8-7fbc-4812-a81c-a66293c7a07c)
- Call ID: e95797f8-7fbc-4812-a81c-a66293c7a07c
-  Args:
-    source: Vittoria_Ruspoli
-    type: :Woman
-  AddTriple (b8a03499-a740-40ec-a8a9-603a1d2fbcb8)
- Call ID: b8a03499-a740-40ec-a8a9-603a1d2fbcb8
-  Args:
-    source: Emanuela_de_Dampierre
-    target: Roger_Duke_of_San_Lorenzo
-    relation: :hasFather
-  AddTriple (6fc14c43-ffc3-45e4-b170-b943fd3deb3c)
- Call ID: 6fc14c43-ffc3-45e4-b170-b943fd3deb3c
-  Args:
-    target: Vittoria_Ruspoli
-    relation: :hasMother
-    source: Emanuela_de_Dampierre
-  AssignClass (3c2a03d6-010a-455e-9b47-c2d8beb3c5b0)
- Call ID: 3c2a03d6-010a-455e-9b47-c2d8beb3c5b0
-  Args:
-    source: Gonzalo_de_Borbon
-    type: :Man
-  AddTriple (5d53bd9b-c63a-430e-a7bf-fa58e5b9a28e)
- Call ID: 5d53bd9b-c63a-430e-a7bf-fa58e5b9a28e
-  Args:
-    relation: :hasBrother
-    target: Gonzalo_de_Borbon
-    source: Alfonso_Duke_of_Anjou
-  AddTriple (b0a82729-7d2b-4caa-bcf4-871de766f5d9)
- Call ID: b0a82729-7d2b-4caa-bcf4-871de766f5d9
-  Args:
-    source: Gonzalo_de_Borbon
-    relation: :hasFather
-    target: Jaime_Duke_of_Segovia
-  AddTriple (6bae6d24-7852-42f8-b7a1-27d3262aa917)
- Call ID: 6bae6d24-7852-42f8-b7a1-27d3262aa917
-  Args:
-    relation: :hasMother
-    target: Emanuela_de_Dampierre
-    source: Gonzalo_de_Borbon
-  AssignClass (38ccb701-6e03-447d-b69f-05aa3968e52f)
- Call ID: 38ccb701-6e03-447d-b69f-05aa3968e52f
-  Args:
-    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-    type: :Woman
-  AddTriple (ce73a82f-efa3-4c37-9aa4-e6210fe58e63)
- Call ID: ce73a82f-efa3-4c37-9aa4-e6210fe58e63
-  Args:
-    source: Alfonso_Duke_of_Anjou
-    relation: :hasMarriageYear
-    target: 1972
-  AddLiteral (f5e42d8c-bb0c-4d2e-a87a-b1dab2e913ab)
- Call ID: f5e42d8c-bb0c-4d2e-a87a-b1dab2e913ab
-  Args:
-    source: Alfonso_Duke_of_Anjou
-    relation: :hasMarriageYear
-    literal_value: 1972
+    literal_value: 1934
+    relation: :hasBirthYear
     literal_type: xsd:integer
-  AssignClass (b338b4c9-619c-45c0-89e9-6dc6f75582d0)
- Call ID: b338b4c9-619c-45c0-89e9-6dc6f75582d0
+    source: :Marie_Therese_of_Wurttemberg
+  AddLiteral (5f360b8e-a528-4363-8dcf-d2a7eeb7435c)
+ Call ID: 5f360b8e-a528-4363-8dcf-d2a7eeb7435c
   Args:
-    source: Cristobal_Martinez-Bordiu
-    type: :Man
-  AssignClass (4c5e0746-e2c2-4bbe-b523-21caa575b074)
- Call ID: 4c5e0746-e2c2-4bbe-b523-21caa575b074
+    literal_value: 1977
+    literal_type: xsd:integer
+    source: :Philomena_de_Tornos_y_Steinhart
+    relation: :hasBirthYear
+  AddTriple (7d50f1a9-2566-44e9-a35a-9db770d05ccd)
+ Call ID: 7d50f1a9-2566-44e9-a35a-9db770d05ccd
   Args:
-    type: :Woman
-    source: Carmen_Franco_y_Polo
-  AddTriple (a3c1ef02-a9d1-4242-a6a0-6837eb8f30dd)
- Call ID: a3c1ef02-a9d1-4242-a6a0-6837eb8f30dd
-  Args:
-    target: Cristobal_Martinez-Bordiu
+    source: :Jean_dOrleans
     relation: :hasFather
-    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-  AddTriple (b1737acd-6776-418f-8515-4ee3e327760a)
- Call ID: b1737acd-6776-418f-8515-4ee3e327760a
+    target: :Henri_Count_of_Paris
+  AddTriple (03e5d7dc-8886-4ab1-b84e-229194b36f6a)
+ Call ID: 03e5d7dc-8886-4ab1-b84e-229194b36f6a
   Args:
-    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-    target: Carmen_Franco_y_Polo
     relation: :hasMother
-  AddTriple (85e4f556-673f-4849-b201-ad962d3c6ffe)
- Call ID: 85e4f556-673f-4849-b201-ad962d3c6ffe
+    target: :Marie_Therese_of_Wurttemberg
+    source: :Jean_dOrleans
+  AddTriple (f495b646-0a40-4905-9717-44e95f6e0908)
+ Call ID: f495b646-0a40-4905-9717-44e95f6e0908
   Args:
-    target: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-    relation: :hasRelation
-    source: Alfonso_Duke_of_Anjou
-  Finish (3dbe3106-7d5f-41ab-b096-f6bdd9cb0662)
- Call ID: 3dbe3106-7d5f-41ab-b096-f6bdd9cb0662
+    relation: :hasFather
+    target: :Henri_VI_Count_of_Paris
+    source: :Henri_Count_of_Paris
+  AddTriple (4410efed-83f7-4a9b-982b-1ac86489c49e)
+ Call ID: 4410efed-83f7-4a9b-982b-1ac86489c49e
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    target: :Henri_Count_of_Paris
+    relation: :isSisterOf
+    source: :Chantal_of_Orleans
+  AddTriple (dbe459d7-f0fd-4187-9629-17675c1386fb)
+ Call ID: dbe459d7-f0fd-4187-9629-17675c1386fb
+  Args:
+    target: :Marie_Therese_of_Wurttemberg
+    relation: :isBrotherOf
+    source: :Carl_of_Wurttemberg
+  Finish (234453f4-56d2-40ac-b98a-af2e27ca9d27)
+ Call ID: 234453f4-56d2-40ac-b98a-af2e27ca9d27
+  Args:
 
 ================================= Tool Message =================================
 
@@ -673,42 +757,36 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alfonso_Duke_of_Anjou a :Man ;
-      :alsoKnownAs "Alphonse Jacques Marcellin Emmanuel Victor Marie de Bourbon"^^xsd:string ;
-      :hasBirthYear 1936 ;
-      :hasBrother data:Gonzalo_de_Borbon ;
-      :hasDeathYear 1989 ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMarriageYear data:1972,
-          1972 ;
-      :hasMother data:Emanuela_de_Dampierre ;
-      :hasRelation data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
-      :knownAs "Alfonso Jaime Marcelino Manuel Víctor María de Borbón y Dampierre"^^xsd:string .
+  data:Carl_of_Wurttemberg a :Man,
+          :Person ;
+      :isBrotherOf data:Marie_Therese_of_Wurttemberg .
 
-  data:Alfonso_XIII_of_Spain a :Man .
+  data:Chantal_of_Orleans a :Person,
+          :Woman ;
+      :isSisterOf data:Henri_Count_of_Paris .
 
-  data:Carmen_Franco_y_Polo a :Woman .
+  data:Jean_dOrleans a :Man,
+          :Person ;
+      :hasBirthYear 1965 ;
+      :hasFather data:Henri_Count_of_Paris ;
+      :hasMother data:Marie_Therese_of_Wurttemberg .
 
-  data:Cristobal_Martinez-Bordiu a :Man .
+  data:Philomena_de_Tornos_y_Steinhart a :Person,
+          :Woman ;
+      :hasBirthYear 1977 .
 
-  data:Gonzalo_de_Borbon a :Man ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMother data:Emanuela_de_Dampierre .
+  data:Henri_VI_Count_of_Paris a :Man,
+          :Person .
 
-  data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Woman ;
-      :hasFather data:Cristobal_Martinez-Bordiu ;
-      :hasMother data:Carmen_Franco_y_Polo .
+  data:Henri_Count_of_Paris a :Man,
+          :Person ;
+      :hasBirthYear 1933 ;
+      :hasDeathYear 2019 ;
+      :hasFather data:Henri_VI_Count_of_Paris .
 
-  data:Roger_Duke_of_San_Lorenzo a :Man .
-
-  data:Vittoria_Ruspoli a :Woman .
-
-  data:Emanuela_de_Dampierre a :Woman ;
-      :hasFather data:Roger_Duke_of_San_Lorenzo ;
-      :hasMother data:Vittoria_Ruspoli .
-
-  data:Jaime_Duke_of_Segovia a :Man ;
-      :hasFather data:Alfonso_XIII_of_Spain .
+  data:Marie_Therese_of_Wurttemberg a :Person,
+          :Woman ;
+      :hasBirthYear 1934 .
 
 
 
@@ -720,230 +798,86 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (0873690e-066f-426b-aca8-7e78d8a4f878)
- Call ID: 0873690e-066f-426b-aca8-7e78d8a4f878
+  ValidateShacl (47ca65ed-fa72-4263-bda9-756b2d29b35b)
+ Call ID: 47ca65ed-fa72-4263-bda9-756b2d29b35b
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:27
+Total violations:9
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Alfonso_XIII_of_Spain is not classified as an :Ancestor, which is required for the hasFather relationship of Jaime_Duke_of_Segovia.
+      The node Henri_Count_of_Paris, identified as the father of Jean_dOrleans, lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII_of_Spain, :Ancestor)
+      AssignClass('Henri_Count_of_Paris', ':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Jaime_Duke_of_Segovia is not classified as an :Ancestor, which is required for the hasFather relationship of Gonzalo_de_Borbon.
+      The node Henri_VI_Count_of_Paris, identified as the father of Henri_Count_of_Paris, lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jaime_Duke_of_Segovia, :Ancestor)
+      AssignClass('Henri_VI_Count_of_Paris', ':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Jaime_Duke_of_Segovia is not classified as an :Ancestor, which is required for the hasFather relationship of Alfonso_Duke_of_Anjou.
+      The node Marie_Therese_of_Wurttemberg, identified as the mother of Jean_dOrleans, lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jaime_Duke_of_Segovia, :Ancestor)
+      AssignClass('Marie_Therese_of_Wurttemberg', ':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Emanuela_de_Dampierre is not classified as an :Ancestor, which is required for the hasMother relationship of Gonzalo_de_Borbon.
+      The node Henri_Count_of_Paris, identified as the father of Jean_dOrleans, lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Emanuela_de_Dampierre, :Ancestor)
+      AssignClass('Henri_Count_of_Paris', ':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Emanuela_de_Dampierre is not classified as an :Ancestor, which is required for the hasMother relationship of Alfonso_Duke_of_Anjou.
+      The node Henri_VI_Count_of_Paris, identified as the father of Henri_Count_of_Paris, lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Emanuela_de_Dampierre, :Ancestor)
+      AssignClass('Henri_VI_Count_of_Paris', ':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Alfonso_XIII_of_Spain is not classified as an :Ancestor, which is required for the hasFather relationship of Jaime_Duke_of_Segovia.
+      The node Marie_Therese_of_Wurttemberg, identified as the mother of Jean_dOrleans, lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII_of_Spain, :Ancestor)
+      AssignClass('Marie_Therese_of_Wurttemberg', ':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Jaime_Duke_of_Segovia is not classified as an :Ancestor, which is required for the hasFather relationship of Gonzalo_de_Borbon.
+      The node Henri_Count_of_Paris, identified as the father of Jean_dOrleans, lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jaime_Duke_of_Segovia, :Ancestor)
+      AssignClass('Henri_Count_of_Paris', ':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Cristobal_Martinez-Bordiu is not classified as an :Ancestor, which is required for the hasFather relationship of Maria_del_Carmen_Martinez-Bordiu_y_Franco.
+      The node Henri_VI_Count_of_Paris, identified as the father of Henri_Count_of_Paris, lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Cristobal_Martinez-Bordiu, :Ancestor)
+      AssignClass('Henri_VI_Count_of_Paris', ':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Jaime_Duke_of_Segovia is not classified as an :Ancestor, which is required for the hasFather relationship of Alfonso_Duke_of_Anjou.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Jaime_Duke_of_Segovia, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Roger_Duke_of_San_Lorenzo is not classified as an :Ancestor, which is required for the hasFather relationship of Emanuela_de_Dampierre.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Roger_Duke_of_San_Lorenzo, :Ancestor)
-
-
-  Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Emanuela_de_Dampierre is not classified as an :Ancestor, which is required for the hasMother relationship of Gonzalo_de_Borbon.
+      The node Marie_Therese_of_Wurttemberg, identified as the mother of Jean_dOrleans, lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Emanuela_de_Dampierre, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Carmen_Franco_y_Polo is not classified as an :Ancestor, which is required for the hasMother relationship of Maria_del_Carmen_Martinez-Bordiu_y_Franco.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Carmen_Franco_y_Polo, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Emanuela_de_Dampierre is not classified as an :Ancestor, which is required for the hasMother relationship of Alfonso_Duke_of_Anjou.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Emanuela_de_Dampierre, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Vittoria_Ruspoli is not classified as an :Ancestor, which is required for the hasMother relationship of Emanuela_de_Dampierre.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Vittoria_Ruspoli, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Alfonso_XIII_of_Spain is not classified as an :Ancestor, which is required for the hasFather relationship of Jaime_Duke_of_Segovia.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII_of_Spain, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Jaime_Duke_of_Segovia is not classified as an :Ancestor, which is required for the hasFather relationship of Gonzalo_de_Borbon.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Jaime_Duke_of_Segovia, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Cristobal_Martinez-Bordiu is not classified as an :Ancestor, which is required for the hasFather relationship of Maria_del_Carmen_Martinez-Bordiu_y_Franco.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cristobal_Martinez-Bordiu, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Jaime_Duke_of_Segovia is not classified as an :Ancestor, which is required for the hasFather relationship of Alfonso_Duke_of_Anjou.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Jaime_Duke_of_Segovia, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Roger_Duke_of_San_Lorenzo is not classified as an :Ancestor, which is required for the hasFather relationship of Emanuela_de_Dampierre.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Roger_Duke_of_San_Lorenzo, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Emanuela_de_Dampierre is not classified as an :Ancestor, which is required for the hasMother relationship of Gonzalo_de_Borbon.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Emanuela_de_Dampierre, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Carmen_Franco_y_Polo is not classified as an :Ancestor, which is required for the hasMother relationship of Maria_del_Carmen_Martinez-Bordiu_y_Franco.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Carmen_Franco_y_Polo, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Emanuela_de_Dampierre is not classified as an :Ancestor, which is required for the hasMother relationship of Alfonso_Duke_of_Anjou.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Emanuela_de_Dampierre, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Vittoria_Ruspoli is not classified as an :Ancestor, which is required for the hasMother relationship of Emanuela_de_Dampierre.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Vittoria_Ruspoli, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Roger_Duke_of_San_Lorenzo is not classified as an :Ancestor, which is required for the hasFather relationship of Emanuela_de_Dampierre.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Roger_Duke_of_San_Lorenzo, :Ancestor)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person Cristobal_Martinez-Bordiu is not classified as an :Ancestor, which is required for the hasFather relationship of Maria_del_Carmen_Martinez-Bordiu_y_Franco.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Cristobal_Martinez-Bordiu, :Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Vittoria_Ruspoli is not classified as an :Ancestor, which is required for the hasMother relationship of Emanuela_de_Dampierre.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Vittoria_Ruspoli, :Ancestor)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Carmen_Franco_y_Polo is not classified as an :Ancestor, which is required for the hasMother relationship of Maria_del_Carmen_Martinez-Bordiu_y_Franco.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Carmen_Franco_y_Polo, :Ancestor)
+      AssignClass('Marie_Therese_of_Wurttemberg', ':Ancestor')
 
 
 
@@ -952,147 +886,24 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (f8bf0470-5215-4fde-95f3-51ee4d8deac0)
- Call ID: f8bf0470-5215-4fde-95f3-51ee4d8deac0
+  AssignClass (4fb9eb04-de03-44f9-8f65-1296fb64aa93)
+ Call ID: 4fb9eb04-de03-44f9-8f65-1296fb64aa93
   Args:
     type: :Ancestor
-    source: Alfonso_XIII_of_Spain
-  AssignClass (481840b2-bca1-4fa9-bbcf-52b2db486c43)
- Call ID: 481840b2-bca1-4fa9-bbcf-52b2db486c43
-  Args:
-    source: Jaime_Duke_of_Segovia
-    type: :Ancestor
-  AssignClass (fb60977b-75d9-4d40-968f-2ec910a3b196)
- Call ID: fb60977b-75d9-4d40-968f-2ec910a3b196
+    source: :Henri_Count_of_Paris
+  AssignClass (bba7e50d-8f60-435f-8b8e-e4f3b3ae7755)
+ Call ID: bba7e50d-8f60-435f-8b8e-e4f3b3ae7755
   Args:
     type: :Ancestor
-    source: Emanuela_de_Dampierre
-  AssignClass (11335f37-8e20-4215-bb40-dfbd7a25654b)
- Call ID: 11335f37-8e20-4215-bb40-dfbd7a25654b
-  Args:
-    source: Roger_Duke_of_San_Lorenzo
-    type: :Ancestor
-  AssignClass (c1d99e8c-9dd8-4a40-9008-61f886f54406)
- Call ID: c1d99e8c-9dd8-4a40-9008-61f886f54406
+    source: :Henri_VI_Count_of_Paris
+  AssignClass (8cc8bc38-6749-4b4a-96bb-6d4953f237ab)
+ Call ID: 8cc8bc38-6749-4b4a-96bb-6d4953f237ab
   Args:
     type: :Ancestor
-    source: Vittoria_Ruspoli
-  AssignClass (1b296fa8-7f17-4706-bf15-db5496384274)
- Call ID: 1b296fa8-7f17-4706-bf15-db5496384274
+    source: :Marie_Therese_of_Wurttemberg
+  ValidateShacl (4a5bc05b-24a5-4e56-b945-1c657e2e7588)
+ Call ID: 4a5bc05b-24a5-4e56-b945-1c657e2e7588
   Args:
-    type: :Ancestor
-    source: Cristobal_Martinez-Bordiu
-  AssignClass (a961a744-489a-4c34-94ef-7df4caa178e6)
- Call ID: a961a744-489a-4c34-94ef-7df4caa178e6
-  Args:
-    source: Carmen_Franco_y_Polo
-    type: :Ancestor
-  AssignClass (ae6096c6-9126-4220-999e-78dcadcf51be)
- Call ID: ae6096c6-9126-4220-999e-78dcadcf51be
-  Args:
-    type: :Person
-    source: Alfonso_Duke_of_Anjou
-  AssignClass (58e59391-24da-46cd-88a1-ada3205919ef)
- Call ID: 58e59391-24da-46cd-88a1-ada3205919ef
-  Args:
-    type: :Person
-    source: Gonzalo_de_Borbon
-  AssignClass (a7e4db66-577d-4e07-adeb-b7afa12b8d06)
- Call ID: a7e4db66-577d-4e07-adeb-b7afa12b8d06
-  Args:
-    type: :Person
-    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-  AssignClass (b55141e7-5cda-4b80-8708-c3f12a3cfe18)
- Call ID: b55141e7-5cda-4b80-8708-c3f12a3cfe18
-  Args:
-    source: Alfonso_Duke_of_Anjou
-    type: :Man
-  AssignClass (108f13a2-3ff0-4f02-8476-73336afe3a2d)
- Call ID: 108f13a2-3ff0-4f02-8476-73336afe3a2d
-  Args:
-    type: :Man
-    source: Gonzalo_de_Borbon
-  AssignClass (f04f6b7f-b97d-4c00-bf4c-475ee5a853b6)
- Call ID: f04f6b7f-b97d-4c00-bf4c-475ee5a853b6
-  Args:
-    type: :Woman
-    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-  AddLiteral (2eb3284c-fdad-4bfa-940c-aad281195f85)
- Call ID: 2eb3284c-fdad-4bfa-940c-aad281195f85
-  Args:
-    source: Alfonso_Duke_of_Anjou
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-  AddLiteral (fb9544a3-e93b-4f0e-b73c-f003e3b28c95)
- Call ID: fb9544a3-e93b-4f0e-b73c-f003e3b28c95
-  Args:
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-    source: Gonzalo_de_Borbon
-  AddLiteral (1a9b474c-e6fb-4ee9-b430-1ba8f8e9fb53)
- Call ID: 1a9b474c-e6fb-4ee9-b430-1ba8f8e9fb53
-  Args:
-    literal_type: xsd:string
-    literal_value: Female
-    relation: :hasSex
-    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-  ValidateShacl (e4f3d35e-8cc3-4416-a817-d19104ed8c26)
- Call ID: e4f3d35e-8cc3-4416-a817-d19104ed8c26
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1109,890 +920,39 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alfonso_Duke_of_Anjou a :Man,
+  data:Carl_of_Wurttemberg a :Man,
           :Person ;
-      :alsoKnownAs "Alphonse Jacques Marcellin Emmanuel Victor Marie de Bourbon"^^xsd:string ;
-      :hasBirthYear 1936 ;
-      :hasBrother data:Gonzalo_de_Borbon ;
-      :hasDeathYear 1989 ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMarriageYear data:1972,
-          1972 ;
-      :hasMother data:Emanuela_de_Dampierre ;
-      :hasRelation data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
-      :hasSex "Male"^^xsd:string ;
-      :knownAs "Alfonso Jaime Marcelino Manuel Víctor María de Borbón y Dampierre"^^xsd:string .
+      :isBrotherOf data:Marie_Therese_of_Wurttemberg .
 
-  data:Alfonso_XIII_of_Spain a :Ancestor,
-          :Man .
+  data:Chantal_of_Orleans a :Person,
+          :Woman ;
+      :isSisterOf data:Henri_Count_of_Paris .
 
-  data:Carmen_Franco_y_Polo a :Ancestor,
-          :Woman .
-
-  data:Cristobal_Martinez-Bordiu a :Ancestor,
-          :Man .
-
-  data:Gonzalo_de_Borbon a :Man,
+  data:Jean_dOrleans a :Man,
           :Person ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMother data:Emanuela_de_Dampierre ;
-      :hasSex "Male"^^xsd:string .
+      :hasBirthYear 1965 ;
+      :hasFather data:Henri_Count_of_Paris ;
+      :hasMother data:Marie_Therese_of_Wurttemberg .
 
-  data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Person,
+  data:Philomena_de_Tornos_y_Steinhart a :Person,
           :Woman ;
-      :hasFather data:Cristobal_Martinez-Bordiu ;
-      :hasMother data:Carmen_Franco_y_Polo ;
-      :hasSex "Female"^^xsd:string .
+      :hasBirthYear 1977 .
 
-  data:Roger_Duke_of_San_Lorenzo a :Ancestor,
-          :Man .
+  data:Henri_VI_Count_of_Paris a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Vittoria_Ruspoli a :Ancestor,
-          :Woman .
-
-  data:Emanuela_de_Dampierre a :Ancestor,
-          :Woman ;
-      :hasFather data:Roger_Duke_of_San_Lorenzo ;
-      :hasMother data:Vittoria_Ruspoli .
-
-  data:Jaime_Duke_of_Segovia a :Ancestor,
-          :Man ;
-      :hasFather data:Alfonso_XIII_of_Spain .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:24
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (f9d29635-efae-45b4-bf00-121f3a9d1786)
- Call ID: f9d29635-efae-45b4-bf00-121f3a9d1786
-  Args:
-    source: Male
-    type: :Sex
-  AssignClass (dd152032-3393-49c9-a881-23344d89f09b)
- Call ID: dd152032-3393-49c9-a881-23344d89f09b
-  Args:
-    source: Female
-    type: :Sex
-  ValidateShacl (811394c2-9774-4e7a-a711-abc1ac576424)
- Call ID: 811394c2-9774-4e7a-a711-abc1ac576424
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Alfonso_Duke_of_Anjou a :Man,
+  data:Henri_Count_of_Paris a :Ancestor,
+          :Man,
           :Person ;
-      :alsoKnownAs "Alphonse Jacques Marcellin Emmanuel Victor Marie de Bourbon"^^xsd:string ;
-      :hasBirthYear 1936 ;
-      :hasBrother data:Gonzalo_de_Borbon ;
-      :hasDeathYear 1989 ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMarriageYear data:1972,
-          1972 ;
-      :hasMother data:Emanuela_de_Dampierre ;
-      :hasRelation data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
-      :hasSex "Male"^^xsd:string ;
-      :knownAs "Alfonso Jaime Marcelino Manuel Víctor María de Borbón y Dampierre"^^xsd:string .
+      :hasBirthYear 1933 ;
+      :hasDeathYear 2019 ;
+      :hasFather data:Henri_VI_Count_of_Paris .
 
-  data:Female a :Sex .
-
-  data:Male a :Sex .
-
-  data:Alfonso_XIII_of_Spain a :Ancestor,
-          :Man .
-
-  data:Carmen_Franco_y_Polo a :Ancestor,
-          :Woman .
-
-  data:Cristobal_Martinez-Bordiu a :Ancestor,
-          :Man .
-
-  data:Gonzalo_de_Borbon a :Man,
-          :Person ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMother data:Emanuela_de_Dampierre ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Person,
+  data:Marie_Therese_of_Wurttemberg a :Ancestor,
+          :Person,
           :Woman ;
-      :hasFather data:Cristobal_Martinez-Bordiu ;
-      :hasMother data:Carmen_Franco_y_Polo ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Roger_Duke_of_San_Lorenzo a :Ancestor,
-          :Man .
-
-  data:Vittoria_Ruspoli a :Ancestor,
-          :Woman .
-
-  data:Emanuela_de_Dampierre a :Ancestor,
-          :Woman ;
-      :hasFather data:Roger_Duke_of_San_Lorenzo ;
-      :hasMother data:Vittoria_Ruspoli .
-
-  data:Jaime_Duke_of_Segovia a :Ancestor,
-          :Man ;
-      :hasFather data:Alfonso_XIII_of_Spain .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:24
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gonzalo_de_Borbon' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alfonso_Duke_of_Anjou' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gonzalo_de_Borbon' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alfonso_Duke_of_Anjou' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gonzalo_de_Borbon' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alfonso_Duke_of_Anjou' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gonzalo_de_Borbon' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alfonso_Duke_of_Anjou' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gonzalo_de_Borbon' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alfonso_Duke_of_Anjou' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gonzalo_de_Borbon' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alfonso_Duke_of_Anjou' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gonzalo_de_Borbon' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alfonso_Duke_of_Anjou' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Gonzalo_de_Borbon' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Alfonso_Duke_of_Anjou' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (787cc3f0-9a30-47f3-a216-4ed23150a17d)
- Call ID: 787cc3f0-9a30-47f3-a216-4ed23150a17d
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (098f6a46-eec5-4ce1-bc87-f20780ede580)
- Call ID: 098f6a46-eec5-4ce1-bc87-f20780ede580
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:24
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Gonzalo_de_Borbon' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Alfonso_Duke_of_Anjou' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' is not correctly typed as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (8b6752af-f547-4142-af7d-683705d438b3)
- Call ID: 8b6752af-f547-4142-af7d-683705d438b3
-  Args:
-    relation: :hasSex
-    literal_value: Male
-    source: Alfonso_Duke_of_Anjou
-    literal_type: xsd:string
-  RemoveLiteral (12671fc5-47f2-4e7c-84a4-f8795cc3b831)
- Call ID: 12671fc5-47f2-4e7c-84a4-f8795cc3b831
-  Args:
-    source: Gonzalo_de_Borbon
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-  RemoveLiteral (69bce05e-6e3a-419f-837f-0f6c486b626e)
- Call ID: 69bce05e-6e3a-419f-837f-0f6c486b626e
-  Args:
-    literal_type: xsd:string
-    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-    relation: :hasSex
-    literal_value: Female
-  AddTriple (48519861-a89c-46b3-b770-2227730a119f)
- Call ID: 48519861-a89c-46b3-b770-2227730a119f
-  Args:
-    target: Male
-    source: Alfonso_Duke_of_Anjou
-    relation: :hasSex
-  AddTriple (0bc07dd2-10ab-4d84-839c-3be728444743)
- Call ID: 0bc07dd2-10ab-4d84-839c-3be728444743
-  Args:
-    target: Male
-    relation: :hasSex
-    source: Gonzalo_de_Borbon
-  AddTriple (efa77213-3794-433f-bd20-cacddb19415e)
- Call ID: efa77213-3794-433f-bd20-cacddb19415e
-  Args:
-    relation: :hasSex
-    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-    target: Female
-  ValidateShacl (b4d9cb19-8427-48a7-b7f1-2174fa4f2adf)
- Call ID: b4d9cb19-8427-48a7-b7f1-2174fa4f2adf
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Alfonso_Duke_of_Anjou a :Man,
-          :Person ;
-      :alsoKnownAs "Alphonse Jacques Marcellin Emmanuel Victor Marie de Bourbon"^^xsd:string ;
-      :hasBirthYear 1936 ;
-      :hasBrother data:Gonzalo_de_Borbon ;
-      :hasDeathYear 1989 ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMarriageYear data:1972,
-          1972 ;
-      :hasMother data:Emanuela_de_Dampierre ;
-      :hasRelation data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
-      :hasSex data:Male ;
-      :knownAs "Alfonso Jaime Marcelino Manuel Víctor María de Borbón y Dampierre"^^xsd:string .
-
-  data:Alfonso_XIII_of_Spain a :Ancestor,
-          :Man .
-
-  data:Carmen_Franco_y_Polo a :Ancestor,
-          :Woman .
-
-  data:Cristobal_Martinez-Bordiu a :Ancestor,
-          :Man .
-
-  data:Female a :Sex .
-
-  data:Gonzalo_de_Borbon a :Man,
-          :Person ;
-      :hasFather data:Jaime_Duke_of_Segovia ;
-      :hasMother data:Emanuela_de_Dampierre ;
-      :hasSex data:Male .
-
-  data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Person,
-          :Woman ;
-      :hasFather data:Cristobal_Martinez-Bordiu ;
-      :hasMother data:Carmen_Franco_y_Polo ;
-      :hasSex data:Female .
-
-  data:Roger_Duke_of_San_Lorenzo a :Ancestor,
-          :Man .
-
-  data:Vittoria_Ruspoli a :Ancestor,
-          :Woman .
-
-  data:Emanuela_de_Dampierre a :Ancestor,
-          :Woman ;
-      :hasFather data:Roger_Duke_of_San_Lorenzo ;
-      :hasMother data:Vittoria_Ruspoli .
-
-  data:Jaime_Duke_of_Segovia a :Ancestor,
-          :Man ;
-      :hasFather data:Alfonso_XIII_of_Spain .
-
-  data:Male a :Sex .
+      :hasBirthYear 1934 .
 
 
 
@@ -2004,45 +964,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (a7941c67-7480-4f9d-9209-670e39878aef)
- Call ID: a7941c67-7480-4f9d-9209-670e39878aef
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1972']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (481cf202-bf90-4f31-9571-0c9b9a8c71e5)
- Call ID: 481cf202-bf90-4f31-9571-0c9b9a8c71e5
-  Args:
-    relation: :hasMarriageYear
-    source: Alfonso_Duke_of_Anjou
-    target: 1972
-  AddLiteral (adfaba02-4d05-4d83-ace2-c9d8bd2f6295)
- Call ID: adfaba02-4d05-4d83-ace2-c9d8bd2f6295
-  Args:
-    relation: :hasMarriageYear
-    source: Alfonso_Duke_of_Anjou
-    literal_value: 1972
-    literal_type: xsd:integer
-  Finish (87afd65d-24eb-4ecf-aa61-2ad923b241cd)
- Call ID: 87afd65d-24eb-4ecf-aa61-2ad923b241cd
+  Finish (e7b74dbb-6270-4f30-bd8b-53c4edec64cc)
+ Call ID: e7b74dbb-6270-4f30-bd8b-53c4edec64cc
   Args:

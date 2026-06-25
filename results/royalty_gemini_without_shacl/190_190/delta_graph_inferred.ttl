@@ -1,0 +1,174 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Edward_Guinness a :Man ;
+    :hasBrother data:Edward_Guinness ;
+    :hasRelation data:Edward_Guinness ;
+    :isBloodrelationOf data:Edward_Guinness ;
+    :isBrotherOf data:Edward_Guinness ;
+    :isSiblingOf data:Edward_Guinness .
+
+data:William_Plunket a :Man ;
+    :hasBrother data:William_Plunket ;
+    :hasRelation data:William_Plunket ;
+    :isBloodrelationOf data:William_Plunket ;
+    :isBrotherOf data:William_Plunket ;
+    :isSiblingOf data:William_Plunket .
+
+data:Aileen_Sibell_Mary_Guinness a :Ancestor,
+        :Woman ;
+    :hasChild data:Doon_Aileen_Plunket ;
+    :hasDaughter data:Doon_Aileen_Plunket ;
+    :hasRelation data:Aileen_Sibell_Mary_Guinness,
+        data:Brindsley_Sheridan_Bushe_Plunket,
+        data:Claude_Bowes-Lyon,
+        data:Doon_Aileen_Plunket,
+        data:Granville_James_Leveson-Gower,
+        data:Lady_Rose_Bowes-Lyon,
+        data:William_Leveson-Gower ;
+    :hasSister data:Aileen_Sibell_Mary_Guinness ;
+    :isAncestorOf data:Doon_Aileen_Plunket ;
+    :isAuntOf data:Doon_Aileen_Plunket ;
+    :isBloodrelationOf data:Aileen_Sibell_Mary_Guinness ;
+    :isMotherOf data:Doon_Aileen_Plunket ;
+    :isParentOf data:Doon_Aileen_Plunket ;
+    :isSiblingOf data:Aileen_Sibell_Mary_Guinness ;
+    :isSisterOf data:Aileen_Sibell_Mary_Guinness .
+
+data:Brindsley_Sheridan_Bushe_Plunket a :Ancestor,
+        :Man ;
+    :hasBrother data:Brindsley_Sheridan_Bushe_Plunket ;
+    :hasChild data:Doon_Aileen_Plunket ;
+    :hasDaughter data:Doon_Aileen_Plunket ;
+    :hasRelation data:Aileen_Sibell_Mary_Guinness,
+        data:Brindsley_Sheridan_Bushe_Plunket,
+        data:Claude_Bowes-Lyon,
+        data:Doon_Aileen_Plunket,
+        data:Granville_James_Leveson-Gower,
+        data:Lady_Rose_Bowes-Lyon,
+        data:William_Leveson-Gower ;
+    :isAncestorOf data:Doon_Aileen_Plunket ;
+    :isBloodrelationOf data:Brindsley_Sheridan_Bushe_Plunket ;
+    :isBrotherOf data:Brindsley_Sheridan_Bushe_Plunket ;
+    :isFatherOf data:Doon_Aileen_Plunket ;
+    :isParentOf data:Doon_Aileen_Plunket ;
+    :isSiblingOf data:Brindsley_Sheridan_Bushe_Plunket ;
+    :isUncleOf data:Doon_Aileen_Plunket .
+
+data:William_Leveson-Gower a :Ancestor,
+        :Man ;
+    :hasBrother data:William_Leveson-Gower ;
+    :hasChild data:Granville_James_Leveson-Gower ;
+    :hasRelation data:Aileen_Sibell_Mary_Guinness,
+        data:Brindsley_Sheridan_Bushe_Plunket,
+        data:Claude_Bowes-Lyon,
+        data:Doon_Aileen_Plunket,
+        data:Granville_James_Leveson-Gower,
+        data:Lady_Rose_Bowes-Lyon,
+        data:William_Leveson-Gower ;
+    :hasSon data:Granville_James_Leveson-Gower ;
+    :isAncestorOf data:Granville_James_Leveson-Gower ;
+    :isBloodrelationOf data:William_Leveson-Gower ;
+    :isBrotherOf data:William_Leveson-Gower ;
+    :isFatherOf data:Granville_James_Leveson-Gower ;
+    :isParentOf data:Granville_James_Leveson-Gower ;
+    :isSiblingOf data:William_Leveson-Gower ;
+    :isUncleOf data:Granville_James_Leveson-Gower .
+
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man ;
+    :hasBrother data:Claude_Bowes-Lyon ;
+    :hasChild data:Lady_Rose_Bowes-Lyon ;
+    :hasDaughter data:Lady_Rose_Bowes-Lyon ;
+    :hasRelation data:Aileen_Sibell_Mary_Guinness,
+        data:Brindsley_Sheridan_Bushe_Plunket,
+        data:Claude_Bowes-Lyon,
+        data:Doon_Aileen_Plunket,
+        data:Granville_James_Leveson-Gower,
+        data:Lady_Rose_Bowes-Lyon,
+        data:William_Leveson-Gower ;
+    :isAncestorOf data:Granville_James_Leveson-Gower,
+        data:Lady_Rose_Bowes-Lyon ;
+    :isBloodrelationOf data:Claude_Bowes-Lyon ;
+    :isBrotherOf data:Claude_Bowes-Lyon ;
+    :isFatherOf data:Lady_Rose_Bowes-Lyon ;
+    :isParentOf data:Lady_Rose_Bowes-Lyon ;
+    :isSiblingOf data:Claude_Bowes-Lyon ;
+    :isUncleOf data:Lady_Rose_Bowes-Lyon .
+
+data:Lady_Rose_Bowes-Lyon a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Claude_Bowes-Lyon ;
+    :hasChild data:Granville_James_Leveson-Gower ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasParent data:Claude_Bowes-Lyon ;
+    :hasRelation data:Aileen_Sibell_Mary_Guinness,
+        data:Brindsley_Sheridan_Bushe_Plunket,
+        data:Claude_Bowes-Lyon,
+        data:Doon_Aileen_Plunket,
+        data:Granville_James_Leveson-Gower,
+        data:Lady_Rose_Bowes-Lyon,
+        data:William_Leveson-Gower ;
+    :hasSister data:Lady_Rose_Bowes-Lyon ;
+    :hasSon data:Granville_James_Leveson-Gower ;
+    :isAncestorOf data:Granville_James_Leveson-Gower ;
+    :isAuntOf data:Granville_James_Leveson-Gower ;
+    :isBloodrelationOf data:Lady_Rose_Bowes-Lyon ;
+    :isChildOf data:Claude_Bowes-Lyon ;
+    :isDaughterOf data:Claude_Bowes-Lyon ;
+    :isMotherOf data:Granville_James_Leveson-Gower ;
+    :isParentOf data:Granville_James_Leveson-Gower ;
+    :isSiblingOf data:Lady_Rose_Bowes-Lyon ;
+    :isSisterOf data:Lady_Rose_Bowes-Lyon .
+
+data:Doon_Aileen_Plunket a :Woman ;
+    :hasAncestor data:Aileen_Sibell_Mary_Guinness,
+        data:Brindsley_Sheridan_Bushe_Plunket ;
+    :hasFather data:Brindsley_Sheridan_Bushe_Plunket ;
+    :hasMother data:Aileen_Sibell_Mary_Guinness ;
+    :hasParent data:Aileen_Sibell_Mary_Guinness,
+        data:Brindsley_Sheridan_Bushe_Plunket ;
+    :hasRelation data:Aileen_Sibell_Mary_Guinness,
+        data:Brindsley_Sheridan_Bushe_Plunket,
+        data:Claude_Bowes-Lyon,
+        data:Doon_Aileen_Plunket,
+        data:Granville_James_Leveson-Gower,
+        data:Lady_Rose_Bowes-Lyon,
+        data:William_Leveson-Gower ;
+    :hasSister data:Doon_Aileen_Plunket ;
+    :isBloodrelationOf data:Doon_Aileen_Plunket ;
+    :isChildOf data:Aileen_Sibell_Mary_Guinness,
+        data:Brindsley_Sheridan_Bushe_Plunket ;
+    :isDaughterOf data:Aileen_Sibell_Mary_Guinness,
+        data:Brindsley_Sheridan_Bushe_Plunket ;
+    :isSiblingOf data:Doon_Aileen_Plunket ;
+    :isSisterOf data:Doon_Aileen_Plunket .
+
+data:Granville_James_Leveson-Gower a :Man ;
+    :hasAncestor data:Claude_Bowes-Lyon,
+        data:Lady_Rose_Bowes-Lyon,
+        data:William_Leveson-Gower ;
+    :hasBirthYear 1918 ;
+    :hasBrother data:Granville_James_Leveson-Gower ;
+    :hasDeathYear 1996 ;
+    :hasFather data:William_Leveson-Gower ;
+    :hasMarriageYear 1958 ;
+    :hasMother data:Lady_Rose_Bowes-Lyon ;
+    :hasParent data:Lady_Rose_Bowes-Lyon,
+        data:William_Leveson-Gower ;
+    :hasRelation data:Aileen_Sibell_Mary_Guinness,
+        data:Brindsley_Sheridan_Bushe_Plunket,
+        data:Claude_Bowes-Lyon,
+        data:Doon_Aileen_Plunket,
+        data:Granville_James_Leveson-Gower,
+        data:Lady_Rose_Bowes-Lyon,
+        data:William_Leveson-Gower ;
+    :isBloodrelationOf data:Granville_James_Leveson-Gower ;
+    :isBrotherOf data:Granville_James_Leveson-Gower ;
+    :isChildOf data:Lady_Rose_Bowes-Lyon,
+        data:William_Leveson-Gower ;
+    :isSiblingOf data:Granville_James_Leveson-Gower ;
+    :isSonOf data:Lady_Rose_Bowes-Lyon,
+        data:William_Leveson-Gower .
+

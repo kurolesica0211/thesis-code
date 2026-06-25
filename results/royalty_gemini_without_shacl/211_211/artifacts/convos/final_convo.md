@@ -69,25 +69,37 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Duke Paul Frederick of Mecklenburg (German: Herzog Paul Friedrich zu Mecklenburg; given names: Paul Frederick Charles Alexander Michael Hugh; 12 May 1882 – 21 May 1904) was a member of the House of Mecklenburg-Schwerin and a German soldier and sailor.
-He was styled His Highness Duke Paul Frederick of Mecklenburg.
-German soldier and sailor
+Lieutenant David Michael Mountbatten, 3rd Marquess of Milford Haven, OBE, DSC (12 May 1919 – 14 April 1970), styled Viscount Alderney before 1921 and Earl of Medina between 1921 and 1938, was the son of George Mountbatten, 2nd Marquess of Milford Haven and Countess Nadejda Mikhailovna of Torby.
+Early years and education
 
-Duke Paul Frederick Charles Alexander Michael Hugh of Mecklenburg was born in Schwerin, the eldest child of Duke Paul Frederick of Mecklenburg and his Austrian wife, Princess Marie of Windisch-Graetz.
-Duke Paul Frederick was a grandson of Frederick Francis II, Grand Duke of Mecklenburg.
-Shortly after his birth he became the youngest soldier in the world when he was admitted as a soldier into the German Imperial Army and assigned to the 15th Mecklenburg Dragoons by Emperor William I. Duke Paul Frederick and his siblings were raised as Roman Catholics and were brought up in Venice, where his family became friends with Cardinal Sarto (later Pope Pius X), who was a regular visitor to the family.
-On 21 April 1884 Duke Paul Frederick's place in the line of succession to the throne of Mecklenburg-Schwerin was superseded by his uncles after his father renounced his own and his descendants' rights of succession.
-However, in the event of his uncles' families becoming extinct, Duke Paul Frederick's line could succeed, as long as the successor converted from Roman Catholicism to Protestantism.
-Despite being put into the Army shortly after his birth, Duke Paul Frederick eventually pursued a career in the German Imperial Navy.
+David Michael Mountbatten was born on 12 May 1919.
+He was the only son of George Mountbatten, 2nd Marquess of Milford Haven (who had been born as Prince George of Battenberg), and Russian Countess Nadejda (Nada) Torby, who were married in 1916.
+His paternal grandparents were Prince Louis of Battenberg and Princess Victoria of Hesse and by Rhine.
+Therefore, he was a great-great-grandson of Queen Victoria.
+He grew up at the family home in Holyport, Berkshire, and enjoyed a close friendship with his first cousin Prince Philip of Greece and Denmark, later the Duke of Edinburgh.
+He served as best man to the prince at his marriage in November 1947 to the Princess Elizabeth, later Queen Elizabeth II.
+Upon the death of his father on 8 April 1938, he became the 3rd Marquess of Milford Haven and head of the House of Mountbatten.
+Navy and postwar social life
+
+During the Second World War Milford Haven served in the Royal Navy.
+He then played a prominent part in the London demi-monde of the 1950s, which brought together a colourful mix of aristocrats and shadowy social climbers like osteopath Stephen Ward.
+Marriages
+
+Milford Haven was married twice:
+
+
 Death
 
-Duke Paul Frederick of Mecklenburg died unmarried in Kiel at the age of 22.
+Milford Haven died of a heart attack, aged 50, on 14 April 1970 in London.
+His ashes were buried in the Battenberg Chapel at St. Mildred's Church, Whippingham, on the Isle of Wight (photo).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -103,39 +115,9 @@ Duke Paul Frederick of Mecklenburg died unmarried in Kiel at the age of 22.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -150,6 +132,23 @@ Duke Paul Frederick of Mecklenburg died unmarried in Kiel at the age of 22.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -167,6 +166,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -234,29 +248,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,6 +271,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -277,6 +291,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -285,17 +301,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -323,6 +341,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -338,86 +440,69 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (38e2f9e6-7e55-4d20-8c2b-49c3200fb991)
- Call ID: 38e2f9e6-7e55-4d20-8c2b-49c3200fb991
+  AssignClass (05f680e5-35f3-4949-b1ba-65c3004d5997)
+ Call ID: 05f680e5-35f3-4949-b1ba-65c3004d5997
   Args:
     type: :Man
-    source: Duke_Paul_Frederick_of_Mecklenburg
-  AssignClass (ff997404-d855-45c3-aea0-2b1802e4493d)
- Call ID: ff997404-d855-45c3-aea0-2b1802e4493d
+    source: David_Michael_Mountbatten
+  AssignClass (ef99d517-4398-4275-b555-96f3c3dff75a)
+ Call ID: ef99d517-4398-4275-b555-96f3c3dff75a
   Args:
     type: :Man
-    source: Duke_Paul_Frederick_of_Mecklenburg_Senior
-  AssignClass (d1bab460-83c8-447e-8da8-a5ac220ba1b6)
- Call ID: d1bab460-83c8-447e-8da8-a5ac220ba1b6
+    source: George_Mountbatten
+  AssignClass (d3b4a721-fcd9-4720-8792-bf8695649adc)
+ Call ID: d3b4a721-fcd9-4720-8792-bf8695649adc
   Args:
     type: :Woman
-    source: Princess_Marie_of_Windisch-Graetz
-  AssignClass (08215060-5478-4744-8627-d068fc88a736)
- Call ID: 08215060-5478-4744-8627-d068fc88a736
+    source: Nadejda_Mikhailovna_of_Torby
+  AssignClass (e48ba1ea-445e-4ed8-a61a-150c5e032384)
+ Call ID: e48ba1ea-445e-4ed8-a61a-150c5e032384
   Args:
+    source: Louis_of_Battenberg
     type: :Man
-    source: Frederick_Francis_II_Grand_Duke_of_Mecklenburg
-  AddLiteral (1affe096-e420-45c6-b2b2-3a0abf0bef98)
- Call ID: 1affe096-e420-45c6-b2b2-3a0abf0bef98
+  AssignClass (73d78e7f-15c2-43ae-8e23-5359be6d6031)
+ Call ID: 73d78e7f-15c2-43ae-8e23-5359be6d6031
   Args:
-    source: Duke_Paul_Frederick_of_Mecklenburg
+    source: Victoria_of_Hesse_and_by_Rhine
+    type: :Woman
+  AddLiteral (ff485f97-34ef-4317-adb7-4fd3053c85b9)
+ Call ID: ff485f97-34ef-4317-adb7-4fd3053c85b9
+  Args:
     literal_type: xsd:integer
-    literal_value: 1882
+    literal_value: 1919
+    source: David_Michael_Mountbatten
     relation: :hasBirthYear
-  AddLiteral (ad78ce09-5e42-49f9-85e8-95b1277236b7)
- Call ID: ad78ce09-5e42-49f9-85e8-95b1277236b7
+  AddLiteral (873923fa-160c-410f-b943-bae10632e6fe)
+ Call ID: 873923fa-160c-410f-b943-bae10632e6fe
   Args:
     literal_type: xsd:integer
-    literal_value: 1904
-    source: Duke_Paul_Frederick_of_Mecklenburg
+    literal_value: 1970
     relation: :hasDeathYear
-  AddTriple (6a016559-43f1-4859-84eb-c6264b4a6ffe)
- Call ID: 6a016559-43f1-4859-84eb-c6264b4a6ffe
+    source: David_Michael_Mountbatten
+  AddTriple (1aca238d-1022-4631-86bc-ca7527181a23)
+ Call ID: 1aca238d-1022-4631-86bc-ca7527181a23
   Args:
+    source: David_Michael_Mountbatten
     relation: :hasFather
-    target: Duke_Paul_Frederick_of_Mecklenburg_Senior
-    source: Duke_Paul_Frederick_of_Mecklenburg
-  AddTriple (81922988-94f0-40cc-bcfa-8ba546530806)
- Call ID: 81922988-94f0-40cc-bcfa-8ba546530806
+    target: George_Mountbatten
+  AddTriple (773ddc2b-da4d-452f-a29c-714fcef97529)
+ Call ID: 773ddc2b-da4d-452f-a29c-714fcef97529
   Args:
-    source: Duke_Paul_Frederick_of_Mecklenburg
-    target: Princess_Marie_of_Windisch-Graetz
+    source: David_Michael_Mountbatten
     relation: :hasMother
-  AddTriple (17640fed-73b4-4df6-a9a8-0e1eb5adfebf)
- Call ID: 17640fed-73b4-4df6-a9a8-0e1eb5adfebf
+    target: Nadejda_Mikhailovna_of_Torby
+  AddTriple (019a4bb4-8b67-421d-87e8-4128f24f5cdd)
+ Call ID: 019a4bb4-8b67-421d-87e8-4128f24f5cdd
   Args:
-    relation: :hasAncestor
-    source: Duke_Paul_Frederick_of_Mecklenburg
-    target: Frederick_Francis_II_Grand_Duke_of_Mecklenburg
-  AddLiteral (e2cf1c34-c381-4c15-9c9f-a988fa0a22ed)
- Call ID: e2cf1c34-c381-4c15-9c9f-a988fa0a22ed
+    source: George_Mountbatten
+    relation: :hasFather
+    target: Louis_of_Battenberg
+  AddTriple (41c3c099-5703-4c85-886c-b7c6eb6cc78b)
+ Call ID: 41c3c099-5703-4c85-886c-b7c6eb6cc78b
   Args:
-    literal_value: Male
-    literal_type: xsd:string
-    source: Duke_Paul_Frederick_of_Mecklenburg
-    relation: :hasSex
-  AddLiteral (e263534e-83dc-491f-af1f-fc679acec03a)
- Call ID: e263534e-83dc-491f-af1f-fc679acec03a
-  Args:
-    relation: :hasSex
-    source: Duke_Paul_Frederick_of_Mecklenburg_Senior
-    literal_value: Male
-    literal_type: xsd:string
-  AddLiteral (5fb4d013-b55e-4d30-afa5-3f41e5a35a01)
- Call ID: 5fb4d013-b55e-4d30-afa5-3f41e5a35a01
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Female
-    source: Princess_Marie_of_Windisch-Graetz
-  AddLiteral (7667f709-f80c-47fa-99f9-f1cadc9398fd)
- Call ID: 7667f709-f80c-47fa-99f9-f1cadc9398fd
-  Args:
-    source: Frederick_Francis_II_Grand_Duke_of_Mecklenburg
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-  Finish (9738c471-ef64-4da9-9c2b-3a50476e987b)
- Call ID: 9738c471-ef64-4da9-9c2b-3a50476e987b
+    relation: :hasMother
+    source: George_Mountbatten
+    target: Victoria_of_Hesse_and_by_Rhine
+  Finish (f9efacf5-5fc9-41b7-a296-8e93041542c3)
+ Call ID: f9efacf5-5fc9-41b7-a296-8e93041542c3
   Args:

@@ -1,0 +1,260 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Irene of Hesse and by Rhine"^^xsd:string ;
+    data:posIndicesFull "1584:1620"^^xsd:string ;
+    data:posIndicesPart "1875:1880"^^xsd:string ;
+    data:wdtLink wdt:Q233990 ;
+    :alsoKnownAs "Princess Irene Luise Marie Anne of Hesse and by Rhine"^^xsd:string ;
+    :hasChild data:Prince_Henry_of_Prussia_1 ;
+    :hasRelation data:Prince_Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia_1,
+        data:Princess_Irene_of_Hesse_and_by_Rhine,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasSon data:Prince_Henry_of_Prussia_1 ;
+    :isAncestorOf data:Prince_Henry_of_Prussia_1 ;
+    :isAuntOf data:Prince_Henry_of_Prussia_1 ;
+    :isBloodrelationOf data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Prince_Henry_of_Prussia_1 ;
+    :isParentOf data:Prince_Henry_of_Prussia_1 ;
+    :isSiblingOf data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Princess_Irene_of_Hesse_and_by_Rhine .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "153:163"^^xsd:string,
+        "551:566"^^xsd:string,
+        "559:569"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasAncestor data:Victoria-_Princess_Royal ;
+    :hasBrother data:Prince_Henry_of_Prussia,
+        data:Wilhelm_II ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasRelation data:Prince_Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia_1,
+        data:Princess_Irene_of_Hesse_and_by_Rhine,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Henry_of_Prussia,
+        data:Wilhelm_II ;
+    :isBrotherOf data:Prince_Henry_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Prince_Henry_of_Prussia,
+        data:Wilhelm_II ;
+    :isSonOf data:Victoria-_Princess_Royal ;
+    :isUncleOf data:Prince_Henry_of_Prussia_1 .
+
+data:Victoria-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Victoria, Princess Royal"^^xsd:string ;
+    data:posIndicesFull "359:383"^^xsd:string,
+        "425:442"^^xsd:string ;
+    data:posIndicesPart "1710:1718"^^xsd:string,
+        "1943:1951"^^xsd:string ;
+    data:wdtLink wdt:Q116728 ;
+    :alsoKnownAs "Empress Frederick"^^xsd:string,
+        "Empress Frederick of Germany"^^xsd:string,
+        "Empress Friedrich"^^xsd:string,
+        "Empress Victoria of Germany"^^xsd:string,
+        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise of the United Kingdom"^^xsd:string,
+        "Princess Victoria of the United Kingdom"^^xsd:string,
+        "Victoria Adelaide Mary Louisa"^^xsd:string,
+        "Victoria Adelaide Mary Louise"^^xsd:string,
+        "Victoria, Crown Princess of Prussia"^^xsd:string,
+        "Victoria, Empress Frederick of Germany"^^xsd:string,
+        "Victoria, Empress consort of Germany"^^xsd:string,
+        "Victoria, Empress of Germany"^^xsd:string,
+        "Victoria, German Empress"^^xsd:string,
+        "Victoria, Queen of Prussia and Empress of Germany"^^xsd:string ;
+    :hasChild data:Prince_Henry_of_Prussia,
+        data:Wilhelm_II ;
+    :hasRelation data:Prince_Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia_1,
+        data:Princess_Irene_of_Hesse_and_by_Rhine,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Victoria-_Princess_Royal ;
+    :hasSon data:Prince_Henry_of_Prussia,
+        data:Wilhelm_II ;
+    :isAncestorOf data:Prince_Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia_1,
+        data:Wilhelm_II ;
+    :isAuntOf data:Prince_Henry_of_Prussia,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Victoria-_Princess_Royal ;
+    :isMotherOf data:Prince_Henry_of_Prussia,
+        data:Wilhelm_II ;
+    :isParentOf data:Prince_Henry_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Victoria-_Princess_Royal ;
+    :isSisterOf data:Victoria-_Princess_Royal .
+
+data:Prince_Henry_of_Prussia_1 a :Man,
+        :Person ;
+    rdfs:label "Prince Henry of Prussia"^^xsd:string ;
+    data:posIndicesFull "0:26"^^xsd:string ;
+    data:posIndicesPart "1018:1024"^^xsd:string,
+        "1198:1203"^^xsd:string,
+        "1278:1284"^^xsd:string,
+        "1285:1290"^^xsd:string,
+        "1413:1419"^^xsd:string,
+        "1420:1425"^^xsd:string,
+        "1518:1524"^^xsd:string,
+        "1525:1530"^^xsd:string,
+        "1570:1575"^^xsd:string,
+        "2002:2007"^^xsd:string,
+        "2134:2140"^^xsd:string,
+        "2141:2146"^^xsd:string,
+        "216:222"^^xsd:string,
+        "2294:2299"^^xsd:string,
+        "2467:2473"^^xsd:string,
+        "2581:2586"^^xsd:string,
+        "2804:2810"^^xsd:string,
+        "2811:2816"^^xsd:string,
+        "2925:2930"^^xsd:string,
+        "299:305"^^xsd:string,
+        "3027:3033"^^xsd:string,
+        "3034:3039"^^xsd:string,
+        "3104:3109"^^xsd:string,
+        "3266:3272"^^xsd:string,
+        "3273:3278"^^xsd:string,
+        "492:497"^^xsd:string,
+        "668:675"^^xsd:string,
+        "707:713"^^xsd:string,
+        "715:720"^^xsd:string,
+        "777:783"^^xsd:string,
+        "784:789"^^xsd:string ;
+    data:wdtLink wdt:Q7902792 ;
+    :alsoKnownAs "Heinrich Viktor Ludwig Friedrich Prinz von Preußen"^^xsd:string,
+        "Prince Heinrich of Prussia"^^xsd:string,
+        "Prince Henry Victor Louis Frederick of Prussia"^^xsd:string ;
+    :hasAncestor data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine,
+        data:Victoria-_Princess_Royal ;
+    :hasBrother data:Prince_Henry_of_Prussia_1 ;
+    :hasFather data:Prince_Henry_of_Prussia ;
+    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Prince_Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia_1,
+        data:Princess_Irene_of_Hesse_and_by_Rhine,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Henry_of_Prussia_1 ;
+    :isBrotherOf data:Prince_Henry_of_Prussia_1 ;
+    :isChildOf data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Prince_Henry_of_Prussia_1 ;
+    :isSonOf data:Prince_Henry_of_Prussia,
+        data:Princess_Irene_of_Hesse_and_by_Rhine .
+
+data:Prince_Henry_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Henry of Prussia"^^xsd:string ;
+    data:posIndicesFull "36:59"^^xsd:string ;
+    data:posIndicesPart "1018:1024"^^xsd:string,
+        "1198:1203"^^xsd:string,
+        "1278:1284"^^xsd:string,
+        "1285:1290"^^xsd:string,
+        "1413:1419"^^xsd:string,
+        "1420:1425"^^xsd:string,
+        "1518:1524"^^xsd:string,
+        "1525:1530"^^xsd:string,
+        "1570:1575"^^xsd:string,
+        "2002:2007"^^xsd:string,
+        "2134:2140"^^xsd:string,
+        "2141:2146"^^xsd:string,
+        "216:222"^^xsd:string,
+        "2294:2299"^^xsd:string,
+        "2467:2473"^^xsd:string,
+        "2581:2586"^^xsd:string,
+        "2804:2810"^^xsd:string,
+        "2811:2816"^^xsd:string,
+        "2925:2930"^^xsd:string,
+        "299:305"^^xsd:string,
+        "3027:3033"^^xsd:string,
+        "3034:3039"^^xsd:string,
+        "3104:3109"^^xsd:string,
+        "3266:3272"^^xsd:string,
+        "3273:3278"^^xsd:string,
+        "492:497"^^xsd:string,
+        "668:675"^^xsd:string,
+        "707:713"^^xsd:string,
+        "715:720"^^xsd:string,
+        "777:783"^^xsd:string,
+        "784:789"^^xsd:string ;
+    data:wdtLink wdt:Q57569 ;
+    :alsoKnownAs "Albert Wilhelm Heinrich"^^xsd:string,
+        "Heinrich Prinz von Preußen"^^xsd:string,
+        "Prince Albert William Henry of Prussia"^^xsd:string ;
+    :hasAncestor data:Victoria-_Princess_Royal ;
+    :hasBrother data:Prince_Henry_of_Prussia,
+        data:Wilhelm_II ;
+    :hasChild data:Prince_Henry_of_Prussia_1 ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasRelation data:Prince_Henry_of_Prussia,
+        data:Prince_Henry_of_Prussia_1,
+        data:Princess_Irene_of_Hesse_and_by_Rhine,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Henry_of_Prussia_1 ;
+    :isAncestorOf data:Prince_Henry_of_Prussia_1 ;
+    :isBloodrelationOf data:Prince_Henry_of_Prussia,
+        data:Wilhelm_II ;
+    :isBrotherOf data:Prince_Henry_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isFatherOf data:Prince_Henry_of_Prussia_1 ;
+    :isParentOf data:Prince_Henry_of_Prussia_1 ;
+    :isSiblingOf data:Prince_Henry_of_Prussia,
+        data:Wilhelm_II ;
+    :isSonOf data:Victoria-_Princess_Royal ;
+    :isUncleOf data:Prince_Henry_of_Prussia_1 .
+

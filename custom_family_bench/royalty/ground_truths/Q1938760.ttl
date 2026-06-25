@@ -7,15 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Alexander-_Prince_of_Orange a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Alexander-_Prince_of_Orange a :Person ;
     rdfs:label "Prince Alexander, Prince of Orange" ;
     data:posIndicesFull "0:27",
         "385:420" ;
@@ -38,19 +30,10 @@ data:Prince_Alexander-_Prince_of_Orange a :Man,
         "Prince Alexander of the Netherlands, The Prince of Orange",
         "Prince Alexander of the Netherlands, The Prince of Orange, Prince of Orange-Nassau",
         "Prince Alexander, The Prince of Orange, Prince of Orange-Nassau" ;
-    :hasFather data:William_III_of_the_Netherlands ;
     :hasParent data:William_III_of_the_Netherlands ;
-    :hasSex data:male ;
-    :hasSister data:Wilhelmina_of_the_Netherlands ;
-    :isBrotherOf data:Wilhelmina_of_the_Netherlands ;
-    :isChildOf data:William_III_of_the_Netherlands ;
-    :isSiblingOf data:Wilhelmina_of_the_Netherlands ;
-    :isSonOf data:William_III_of_the_Netherlands .
+    :hasSex data:male .
 
-data:Wilhelmina_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Wilhelmina_of_the_Netherlands a :Person ;
     rdfs:label "Wilhelmina of the Netherlands" ;
     data:posIndicesFull "985:1001",
         "991:1001" ;
@@ -64,19 +47,18 @@ data:Wilhelmina_of_the_Netherlands a :Ancestor,
         "Wilhelmina",
         "Wilhelmina I",
         "Wilhelmina Koningin der Nederlanden" ;
-    :hasBrother data:Prince_Alexander-_Prince_of_Orange ;
-    :hasFather data:William_III_of_the_Netherlands ;
     :hasParent data:William_III_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isChildOf data:William_III_of_the_Netherlands ;
-    :isDaughterOf data:William_III_of_the_Netherlands ;
-    :isSiblingOf data:Prince_Alexander-_Prince_of_Orange ;
-    :isSisterOf data:Prince_Alexander-_Prince_of_Orange .
+    :hasSex data:female .
 
-data:William_III_of_the_Netherlands a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:William_III_of_the_Netherlands a :Person ;
     rdfs:label "William III of the Netherlands" ;
     data:posIndicesFull "1093:1104",
         "135:170",
@@ -95,13 +77,7 @@ data:William_III_of_the_Netherlands a :Ancestor,
         "Willem III of the Netherlands",
         "William III",
         "Z.M. den Koning" ;
-    :hasChild data:Prince_Alexander-_Prince_of_Orange,
-        data:Wilhelmina_of_the_Netherlands ;
-    :hasDaughter data:Wilhelmina_of_the_Netherlands ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Alexander-_Prince_of_Orange ;
-    :isFatherOf data:Prince_Alexander-_Prince_of_Orange,
-        data:Wilhelmina_of_the_Netherlands ;
-    :isParentOf data:Prince_Alexander-_Prince_of_Orange,
-        data:Wilhelmina_of_the_Netherlands .
+    :hasSex data:male .
+
+data:male a :Male .
 

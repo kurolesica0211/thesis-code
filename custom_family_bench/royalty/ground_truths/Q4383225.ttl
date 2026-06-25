@@ -7,129 +7,14 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Ernst_August-_Prince_of_Hanover a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Ernst August, Prince of Hanover" ;
-    data:posIndicesFull "235:266" ;
-    data:posIndicesPart "1011:1016",
-        "1017:1023",
-        "1238:1245",
-        "1334:1341",
-        "1498:1505",
-        "1657:1663",
-        "2048:2055",
-        "2101:2106",
-        "2107:2113",
-        "2228:2234",
-        "2269:2274",
-        "2275:2281",
-        "2345:2350",
-        "2351:2357",
-        "2460:2467",
-        "2484:2491",
-        "2596:2602",
-        "2723:2728",
-        "2729:2735",
-        "2982:2989",
-        "3033:3038",
-        "3039:3045",
-        "3310:3315",
-        "3316:3322",
-        "3412:3417",
-        "3418:3424",
-        "3528:3535",
-        "3642:3647",
-        "3648:3654",
-        "3940:3947",
-        "3998:4005",
-        "4077:4084",
-        "4171:4178",
-        "4603:4609",
-        "4657:4663",
-        "4735:4741",
-        "4788:4794",
-        "4884:4890",
-        "4891:4896",
-        "4897:4903",
-        "5267:5274",
-        "5324:5330",
-        "5400:5407",
-        "593:598",
-        "599:605",
-        "772:777",
-        "778:784",
-        "934:939",
-        "940:946" ;
-    data:wdtLink wdt:Q61079 ;
-    :alsoKnownAs "Ernest Augustus of Hanover",
-        "Ernest Augustus, Prince of Hanover",
-        "Ernst August IV",
-        "Ernst August of Hanover",
-        "Prince Ernest Augustus of Hanover",
-        "Prince Ernst August of Hanover" ;
-    :hasChild data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasSex data:male ;
-    :hasSon data:Ernst_August-_Prince_of_Hanover_1 ;
-    :isFatherOf data:Ernst_August-_Prince_of_Hanover_1 ;
-    :isParentOf data:Ernst_August-_Prince_of_Hanover_1 .
-
-data:Princess_Caroline_of_Monaco a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Caroline of Monaco" ;
-    data:posIndicesFull "489:518" ;
-    data:posIndicesPart "4359:4367",
-        "4634:4642",
-        "4700:4708",
-        "4819:4827",
-        "764:770" ;
-    data:wdtLink wdt:Q233966 ;
-    :alsoKnownAs "Caroline, Princess of Hanover",
-        "Princess Caroline Louise Marguerite of Monaco",
-        "Princess Caroline Louise Marguerite of Monaco and Hanover" ;
-    :hasChild data:Princess_Alexandra_of_Hanover_1 ;
-    :hasDaughter data:Princess_Alexandra_of_Hanover_1 ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Alexandra_of_Hanover_1 ;
-    :isParentOf data:Princess_Alexandra_of_Hanover_1 .
-
-data:Chantal_Hochuli a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Chantal Hochuli" ;
-    data:posIndicesFull "409:424" ;
-    data:posIndicesPart "4715:4722" ;
-    data:wdtLink wdt:Q3336838 ;
-    :hasChild data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover ;
-    :isMotherOf data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover ;
-    :isParentOf data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover .
-
-data:Prince_Christian_of_Hanover a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Christian_of_Hanover a :Person ;
     rdfs:label "Prince Christian of Hanover" ;
-    data:posIndicesFull "4427:4454",
-        "4434:4454" ;
-    data:posIndicesPart "4884:4890",
-        "5267:5274",
-        "5324:5330",
-        "5400:5407" ;
+    data:posIndicesFull "4663:4690",
+        "4670:4690" ;
+    data:posIndicesPart "5120:5126",
+        "5503:5510",
+        "5560:5566",
+        "5636:5643" ;
     data:wdtLink wdt:Q4383359 ;
     :alsoKnownAs "Christian Heinrich Clemens Paul Frank Peter Welf Wilhelm-Ernst Friedrich Franz Prince of Hanover",
         "Christian Heinrich Clemens Paul Frank Peter Welf Wilhelm-Ernst Friedrich Franz Prinz von Hannover",
@@ -141,77 +26,37 @@ data:Prince_Christian_of_Hanover a :Man,
         "Christian von Hannover",
         "Cristián de Hannover",
         "Prince Christian Heinrich Clemens Paul Frank Peter Welf Wilhelm-Ernst Friedrich Franz of Hanover" ;
-    :hasBrother data:Prince_Ernst_August_of_Hanover ;
-    :hasFather data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasMother data:Chantal_Hochuli ;
     :hasParent data:Chantal_Hochuli,
         data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Alexandra_of_Hanover_1 ;
-    :isBrotherOf data:Prince_Ernst_August_of_Hanover,
-        data:Princess_Alexandra_of_Hanover_1 ;
-    :isChildOf data:Chantal_Hochuli,
-        data:Ernst_August-_Prince_of_Hanover_1 ;
-    :isSiblingOf data:Prince_Ernst_August_of_Hanover,
-        data:Princess_Alexandra_of_Hanover_1 ;
-    :isSonOf data:Chantal_Hochuli,
-        data:Ernst_August-_Prince_of_Hanover_1 .
+    :hasSex data:male .
 
-data:Prince_Ernst_August_of_Hanover a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Ernst_August_of_Hanover a :Person ;
     rdfs:label "Prince Ernst August of Hanover" ;
     data:posIndicesFull "0:42",
         "52:83" ;
-    data:posIndicesPart "1011:1016",
-        "1017:1023",
-        "1238:1245",
-        "1334:1341",
-        "1498:1505",
-        "1657:1663",
-        "2048:2055",
-        "2101:2106",
-        "2107:2113",
-        "2228:2234",
-        "2269:2274",
-        "2275:2281",
-        "2345:2350",
-        "2351:2357",
-        "2460:2467",
-        "2484:2491",
-        "2596:2602",
-        "2723:2728",
-        "2729:2735",
-        "2982:2989",
-        "3033:3038",
-        "3039:3045",
-        "3310:3315",
-        "3316:3322",
-        "3412:3417",
-        "3418:3424",
-        "3528:3535",
-        "3642:3647",
-        "3648:3654",
-        "3940:3947",
-        "3998:4005",
-        "4077:4084",
-        "4171:4178",
-        "4603:4609",
-        "4657:4663",
-        "4735:4741",
-        "4788:4794",
-        "4884:4890",
-        "4891:4896",
-        "4897:4903",
-        "5267:5274",
-        "5324:5330",
-        "5400:5407",
-        "593:598",
-        "599:605",
-        "772:777",
-        "778:784",
-        "934:939",
-        "940:946" ;
+    data:posIndicesPart "1474:1481",
+        "1570:1577",
+        "1734:1741",
+        "1893:1899",
+        "2284:2291",
+        "2464:2470",
+        "2696:2703",
+        "2720:2727",
+        "2832:2838",
+        "3218:3225",
+        "3764:3771",
+        "4176:4183",
+        "4234:4241",
+        "4313:4320",
+        "4407:4414",
+        "4839:4845",
+        "4893:4899",
+        "4971:4977",
+        "5024:5030",
+        "5120:5126",
+        "5503:5510",
+        "5560:5566",
+        "5636:5643" ;
     data:wdtLink wdt:Q4383225 ;
     :alsoKnownAs "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph Prince of Hanover",
         "Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph of Hanover",
@@ -222,30 +67,16 @@ data:Prince_Ernst_August_of_Hanover a :Man,
         "Ernst August, Hereditary Prince of Hanover",
         "Prince Ernst August Andreas Philipp Constantin Maximilian Rolf Stephan Ludwig Rudolph of Hanover",
         "Prince Ernst August Jr." ;
-    :hasBrother data:Prince_Christian_of_Hanover ;
-    :hasFather data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasMother data:Chantal_Hochuli ;
     :hasParent data:Chantal_Hochuli,
         data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Alexandra_of_Hanover_1 ;
-    :isBrotherOf data:Prince_Christian_of_Hanover,
-        data:Princess_Alexandra_of_Hanover_1 ;
-    :isChildOf data:Chantal_Hochuli,
-        data:Ernst_August-_Prince_of_Hanover_1 ;
-    :isSiblingOf data:Prince_Christian_of_Hanover,
-        data:Princess_Alexandra_of_Hanover_1 ;
-    :isSonOf data:Chantal_Hochuli,
-        data:Ernst_August-_Prince_of_Hanover_1 .
+    :hasSex data:male .
 
-data:Princess_Alexandra_of_Hanover_1 a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Alexandra_of_Hanover_1 a :Person ;
     rdfs:label "Princess Alexandra of Hanover" ;
-    data:posIndicesFull "4456:4485",
-        "4465:4485" ;
-    data:posIndicesPart "5267:5274",
-        "5400:5407" ;
+    data:posIndicesFull "4692:4721",
+        "4701:4721" ;
+    data:posIndicesPart "5503:5510",
+        "5636:5643" ;
     data:wdtLink wdt:Q1208034 ;
     :alsoKnownAs "Alexandra Charlotte Ulrike Maryam Virginia Princess of Hanover",
         "Alexandra Charlotte Ulrike Maryam Virginia Prinzessin von Hannover",
@@ -255,78 +86,142 @@ data:Princess_Alexandra_of_Hanover_1 a :Person,
         "Alexandra of Hanover",
         "Princess Alexandra Charlotte Ulrike Maryam Virginia of Hannover",
         "Princess Alexandra Charlotte Ulrike Maryam Virginia of Hanover" ;
-    :hasBrother data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover ;
-    :hasFather data:Ernst_August-_Prince_of_Hanover_1 ;
-    :hasMother data:Princess_Caroline_of_Monaco ;
     :hasParent data:Ernst_August-_Prince_of_Hanover_1,
         data:Princess_Caroline_of_Monaco ;
-    :hasSex data:female ;
-    :isChildOf data:Ernst_August-_Prince_of_Hanover_1,
-        data:Princess_Caroline_of_Monaco ;
-    :isDaughterOf data:Ernst_August-_Prince_of_Hanover_1,
-        data:Princess_Caroline_of_Monaco ;
-    :isSiblingOf data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover ;
-    :isSisterOf data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover .
+    :hasSex data:female .
 
-data:Ernst_August-_Prince_of_Hanover_1 a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Ernst_August-_Duke_of_Brunswick a :Person ;
+    rdfs:label "Ernst August, Duke of Brunswick" ;
+    data:posIndicesFull "0:12",
+        "1247:1259",
+        "2337:2349",
+        "235:247",
+        "2505:2517",
+        "2581:2593",
+        "2959:2971",
+        "3269:3281",
+        "3546:3558",
+        "3648:3660",
+        "3878:3890",
+        "5127:5139",
+        "52:64",
+        "593:605",
+        "772:784",
+        "934:946" ;
+    data:posIndicesPart "1164:1173",
+        "2130:2134" ;
+    data:wdtLink wdt:Q57672 ;
+    :alsoKnownAs "Ernest August I, Duke of Brunswick",
+        "Ernest Augustus",
+        "Ernst August I of Brunswick" ;
+    :hasSex data:male .
+
+data:Ernst_August-_Prince_of_Hanover a :Person ;
+    rdfs:label "Ernst August, Prince of Hanover" ;
+    data:posIndicesFull "235:266" ;
+    data:posIndicesPart "1474:1481",
+        "1570:1577",
+        "1734:1741",
+        "1893:1899",
+        "2284:2291",
+        "2464:2470",
+        "2696:2703",
+        "2720:2727",
+        "2832:2838",
+        "3218:3225",
+        "3764:3771",
+        "4176:4183",
+        "4234:4241",
+        "4313:4320",
+        "4407:4414",
+        "4839:4845",
+        "4893:4899",
+        "4971:4977",
+        "5024:5030",
+        "5120:5126",
+        "5503:5510",
+        "5560:5566",
+        "5636:5643" ;
+    data:wdtLink wdt:Q61079 ;
+    :alsoKnownAs "Ernest Augustus of Hanover",
+        "Ernest Augustus, Prince of Hanover",
+        "Ernst August IV",
+        "Ernst August of Hanover",
+        "Prince Ernest Augustus of Hanover",
+        "Prince Ernst August of Hanover" ;
+    :hasParent data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSex data:male .
+
+data:Princess_Caroline_of_Monaco a :Person ;
+    rdfs:label "Princess Caroline of Monaco" ;
+    data:posIndicesFull "489:518" ;
+    data:posIndicesPart "4870:4878",
+        "4936:4944",
+        "5055:5063",
+        "764:770" ;
+    data:wdtLink wdt:Q233966 ;
+    :alsoKnownAs "Caroline, Princess of Hanover",
+        "Princess Caroline Louise Marguerite of Monaco",
+        "Princess Caroline Louise Marguerite of Monaco and Hanover" ;
+    :hasSex data:female .
+
+data:Princess_Viktoria_Luise_of_Prussia a :Person ;
+    rdfs:label "Princess Viktoria Luise of Prussia" ;
+    data:posIndicesFull "4595:4630",
+        "4604:4630" ;
+    data:posIndicesPart "4849:4856",
+        "4870:4878",
+        "4936:4944",
+        "5055:5063" ;
+    data:wdtLink wdt:Q57529 ;
+    :alsoKnownAs "Princess Victoria Louise Adelaide Matilda Charlotte of Prussia",
+        "Princess Victoria Louise of Prussia",
+        "Victoria Louise Adelaide Matilda",
+        "Viktoria Luise of Prussia",
+        "Viktoria Luise, Duchess Consort of Brunswick" ;
+    :hasSex data:female .
+
+data:Chantal_Hochuli a :Person ;
+    rdfs:label "Chantal Hochuli" ;
+    data:posIndicesFull "409:424" ;
+    data:posIndicesPart "4951:4958" ;
+    data:wdtLink wdt:Q3336838 ;
+    :hasSex data:female .
+
+data:Ernst_August-_Prince_of_Hanover_1 a :Person ;
     rdfs:label "Ernst August, Prince of Hanover" ;
     data:posIndicesFull "235:266",
         "52:83" ;
-    data:posIndicesPart "1011:1016",
-        "1017:1023",
-        "1238:1245",
-        "1334:1341",
-        "1498:1505",
-        "1657:1663",
-        "2048:2055",
-        "2101:2106",
-        "2107:2113",
-        "2228:2234",
-        "2269:2274",
-        "2275:2281",
-        "2345:2350",
-        "2351:2357",
-        "2460:2467",
-        "2484:2491",
-        "2596:2602",
-        "2723:2728",
-        "2729:2735",
-        "2982:2989",
-        "3033:3038",
-        "3039:3045",
-        "3310:3315",
-        "3316:3322",
-        "3412:3417",
-        "3418:3424",
-        "3528:3535",
-        "3642:3647",
-        "3648:3654",
-        "3940:3947",
-        "3998:4005",
-        "4077:4084",
-        "4171:4178",
-        "4603:4609",
-        "4657:4663",
-        "4735:4741",
-        "4788:4794",
-        "4884:4890",
-        "4891:4896",
-        "4897:4903",
-        "5267:5274",
-        "5324:5330",
-        "5400:5407",
-        "593:598",
-        "599:605",
-        "772:777",
-        "778:784",
-        "934:939",
-        "940:946" ;
+    data:posIndicesPart "1474:1481",
+        "1570:1577",
+        "1734:1741",
+        "1893:1899",
+        "2284:2291",
+        "2464:2470",
+        "2696:2703",
+        "2720:2727",
+        "2832:2838",
+        "3218:3225",
+        "3764:3771",
+        "4176:4183",
+        "4234:4241",
+        "4313:4320",
+        "4407:4414",
+        "4839:4845",
+        "4893:4899",
+        "4971:4977",
+        "5024:5030",
+        "5120:5126",
+        "5503:5510",
+        "5560:5566",
+        "5636:5643" ;
     data:wdtLink wdt:Q58070 ;
     :alsoKnownAs "Ernst August Albert Paul Otto Rupprecht Oskar Berthold Friedrich-Ferdinand Christian-Ludwig of Hanover",
         "Ernst August Prinz von Hannover",
@@ -336,21 +231,10 @@ data:Ernst_August-_Prince_of_Hanover_1 a :Ancestor,
         "Prince Ernst August Sr.",
         "Prince Ernst August of Hanover",
         "Prince Ernst August of Hanover (born 1954)" ;
-    :hasChild data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover,
-        data:Princess_Alexandra_of_Hanover_1 ;
-    :hasDaughter data:Princess_Alexandra_of_Hanover_1 ;
-    :hasFather data:Ernst_August-_Prince_of_Hanover ;
     :hasParent data:Ernst_August-_Prince_of_Hanover ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover ;
-    :isChildOf data:Ernst_August-_Prince_of_Hanover ;
-    :isFatherOf data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover,
-        data:Princess_Alexandra_of_Hanover_1 ;
-    :isParentOf data:Prince_Christian_of_Hanover,
-        data:Prince_Ernst_August_of_Hanover,
-        data:Princess_Alexandra_of_Hanover_1 ;
-    :isSonOf data:Ernst_August-_Prince_of_Hanover .
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

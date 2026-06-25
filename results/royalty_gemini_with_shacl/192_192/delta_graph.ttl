@@ -2,66 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Adelaide_of_Saxe-Meiningen a :Person,
+data:Isabelle_of_Orl%C3%A9ans a :Person,
         :Woman ;
-    :hasBirthYear 1891 ;
-    :hasBrother data:Prince_Bernard,
-        data:Prince_George ;
-    :hasDeathYear 1971 ;
-    :hasFather data:Prince_Frederick_John_of_Saxe-Meiningen ;
-    :hasMarriageYear 1914 ;
-    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-    :hasRelation data:Prince_Adalbert_of_Prussia ;
-    :hasSex data:Female .
+    :hasBirthYear 1878 ;
+    :hasDeathYear 1962 ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasMarriageYear 1899 ;
+    :hasMother data:Maria_Isabel_of_Spain ;
+    :hasRelation data:Jean_Duke_of_Guise ;
+    :isSiblingOf data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans .
 
-data:Prince_Henry_of_Bavaria a :Man,
-        :Person ;
-    :hasFather data:Ludwig_III_of_Bavaria ;
-    :hasSex data:Male .
-
-data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+data:Fran%C3%A7oise_d_Orl%C3%A9ans a :Ancestor,
         :Person,
-        :Woman ;
-    :hasFather data:Ernst_Count_of_Lippe-Biesterfeld ;
-    :hasSex data:Female .
+        :Woman .
 
-data:Ernst_Count_of_Lippe-Biesterfeld a :Ancestor,
-        :Man,
+data:Jean_Duke_of_Guise a :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasFather data:Robert_Duke_of_Chartres ;
+    :hasMother data:Fran%C3%A7oise_d_Orl%C3%A9ans .
 
-data:Feodora_of_Hohenlohe-Langenburg a :Ancestor,
+data:Maria_Isabel_of_Spain a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female .
+        :Woman .
 
-data:George_II_of_Saxe-Meiningen a :Ancestor,
+data:Philippe_Count_of_Paris a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Ludwig_III_of_Bavaria a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Prince_Adalbert_of_Prussia a :Man,
         :Person .
 
-data:Prince_Bernard a :Man,
+data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans a :Man,
         :Person .
 
-data:Prince_Frederick_John_of_Saxe-Meiningen a :Ancestor,
+data:Robert_Duke_of_Chartres a :Ancestor,
         :Man,
-        :Person ;
-    :hasFather data:George_II_of_Saxe-Meiningen ;
-    :hasMother data:Feodora_of_Hohenlohe-Langenburg ;
-    :hasSex data:Male .
-
-data:Prince_George a :Man,
         :Person .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
 

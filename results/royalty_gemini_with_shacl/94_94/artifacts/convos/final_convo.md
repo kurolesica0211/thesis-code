@@ -103,6 +103,8 @@ With the headship of the house passing through the male line, the heir presumpti
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -118,39 +120,9 @@ With the headship of the house passing through the male line, the heir presumpti
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -165,6 +137,23 @@ With the headship of the house passing through the male line, the heir presumpti
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -182,6 +171,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -249,29 +253,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,6 +276,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -292,6 +296,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -300,17 +306,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -338,6 +346,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -353,170 +445,186 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8f9d86b4-462d-4b2e-9054-10053c753f9f)
- Call ID: 8f9d86b4-462d-4b2e-9054-10053c753f9f
+  AssignClass (a7702871-33b6-49cc-ad74-d9abcf712a4d)
+ Call ID: a7702871-33b6-49cc-ad74-d9abcf712a4d
   Args:
     type: :Man
     source: Wilhelm_Herzog_von_Württemberg
-  AssignClass (708c3a72-1776-4aa6-813c-e6baf3956a93)
- Call ID: 708c3a72-1776-4aa6-813c-e6baf3956a93
+  AssignClass (cd412c37-71ba-421f-b1f9-35251eda21ba)
+ Call ID: cd412c37-71ba-421f-b1f9-35251eda21ba
   Args:
     type: :Person
     source: Wilhelm_Herzog_von_Württemberg
-  AddLiteral (c2ecd0a6-8116-4d08-aa29-0938004846df)
- Call ID: c2ecd0a6-8116-4d08-aa29-0938004846df
+  AddLiteral (7688ceac-7f07-4e6e-b85f-c45a8800e1d2)
+ Call ID: 7688ceac-7f07-4e6e-b85f-c45a8800e1d2
   Args:
     literal_value: 1994
-    literal_type: xsd:int
+    source: Wilhelm_Herzog_von_Württemberg
     relation: :hasBirthYear
-    source: Wilhelm_Herzog_von_Württemberg
-  AddTriple (14e946d8-5a8e-4b59-ae23-991c33d1c14a)
- Call ID: 14e946d8-5a8e-4b59-ae23-991c33d1c14a
+    literal_type: xsd:integer
+  AddTriple (00ee8815-6583-491e-9646-5f35d2fe64fc)
+ Call ID: 00ee8815-6583-491e-9646-5f35d2fe64fc
   Args:
-    relation: :hasSex
     target: :Male
+    relation: :hasSex
     source: Wilhelm_Herzog_von_Württemberg
-  AssignClass (6042dc60-5d43-4655-9440-79253b3b31c4)
- Call ID: 6042dc60-5d43-4655-9440-79253b3b31c4
+  AssignClass (415f2bc1-4631-4a9f-8635-164b422179c4)
+ Call ID: 415f2bc1-4631-4a9f-8635-164b422179c4
   Args:
     type: :Man
     source: Friedrich_Hereditary_Duke_of_Württemberg
-  AssignClass (d8d514c5-a68a-460a-93b9-c733d9e3af3d)
- Call ID: d8d514c5-a68a-460a-93b9-c733d9e3af3d
+  AssignClass (3db20ac8-ee19-4783-a5d1-b8d9b975031f)
+ Call ID: 3db20ac8-ee19-4783-a5d1-b8d9b975031f
   Args:
     source: Friedrich_Hereditary_Duke_of_Württemberg
     type: :Person
-  AddLiteral (a772537d-05d4-43bc-9bc6-f113553a9692)
- Call ID: a772537d-05d4-43bc-9bc6-f113553a9692
+  AddLiteral (e568a5c0-e519-437e-a8c5-d5c661956052)
+ Call ID: e568a5c0-e519-437e-a8c5-d5c661956052
   Args:
+    relation: :hasBirthYear
     source: Friedrich_Hereditary_Duke_of_Württemberg
     literal_value: 1961
-    literal_type: xsd:int
-    relation: :hasBirthYear
-  AddLiteral (a2e09b77-7f46-40f8-ae1e-aa447f9b051f)
- Call ID: a2e09b77-7f46-40f8-ae1e-aa447f9b051f
+    literal_type: xsd:integer
+  AddLiteral (be70c1f3-e30b-418a-8d70-33da9daf1476)
+ Call ID: be70c1f3-e30b-418a-8d70-33da9daf1476
   Args:
-    literal_type: xsd:int
+    literal_type: xsd:integer
     literal_value: 2018
+    source: Friedrich_Hereditary_Duke_of_Württemberg
     relation: :hasDeathYear
-    source: Friedrich_Hereditary_Duke_of_Württemberg
-  AddTriple (f84ed87b-e451-44db-872b-9d080d44703a)
- Call ID: f84ed87b-e451-44db-872b-9d080d44703a
+  AddTriple (ad2109f1-042b-48e2-ab97-bb69d9f4f0c1)
+ Call ID: ad2109f1-042b-48e2-ab97-bb69d9f4f0c1
   Args:
     relation: :hasSex
+    source: Friedrich_Hereditary_Duke_of_Württemberg
     target: :Male
-    source: Friedrich_Hereditary_Duke_of_Württemberg
-  AssignClass (194a6e90-164e-4e8f-85ae-39e70b021122)
- Call ID: 194a6e90-164e-4e8f-85ae-39e70b021122
+  AssignClass (4a1bce5f-4006-4a90-bd24-298f5bd32686)
+ Call ID: 4a1bce5f-4006-4a90-bd24-298f5bd32686
   Args:
+    source: Princess_Marie_Wilhelmine_of_Wied
     type: :Woman
-    source: Princess_Marie_Wilhelmine_of_Wied
-  AssignClass (ee4ce413-2dd5-48b1-b09d-e674b23d40f5)
- Call ID: ee4ce413-2dd5-48b1-b09d-e674b23d40f5
+  AssignClass (1692bf14-2abc-469e-bafe-e7f899fe1866)
+ Call ID: 1692bf14-2abc-469e-bafe-e7f899fe1866
   Args:
-    source: Princess_Marie_Wilhelmine_of_Wied
     type: :Person
-  AddLiteral (a3dd8667-b229-41ac-8898-abd39616f727)
- Call ID: a3dd8667-b229-41ac-8898-abd39616f727
-  Args:
     source: Princess_Marie_Wilhelmine_of_Wied
-    literal_type: xsd:int
-    literal_value: 1973
-    relation: :hasBirthYear
-  AddTriple (43094952-085a-461c-aa30-47f6b18bb4f3)
- Call ID: 43094952-085a-461c-aa30-47f6b18bb4f3
+  AddLiteral (caa1c19d-eb55-4e28-9ee3-c4be6042abea)
+ Call ID: caa1c19d-eb55-4e28-9ee3-c4be6042abea
   Args:
-    relation: :hasSex
+    relation: :hasBirthYear
+    source: Princess_Marie_Wilhelmine_of_Wied
+    literal_value: 1973
+    literal_type: xsd:integer
+  AddTriple (68376716-1abf-4ae1-a08e-0d62313c3aae)
+ Call ID: 68376716-1abf-4ae1-a08e-0d62313c3aae
+  Args:
     target: :Female
     source: Princess_Marie_Wilhelmine_of_Wied
-  AddTriple (a7c00baa-e3f4-42ca-bed1-80e3d6fa4fac)
- Call ID: a7c00baa-e3f4-42ca-bed1-80e3d6fa4fac
+    relation: :hasSex
+  AddTriple (fa04b2ee-a677-4bb4-bb27-d093c8006979)
+ Call ID: fa04b2ee-a677-4bb4-bb27-d093c8006979
   Args:
-    target: :Friedrich_Hereditary_Duke_of_Württemberg
     relation: :hasFather
     source: Wilhelm_Herzog_von_Württemberg
-  AddTriple (859ac831-ae56-4891-8d2e-e51af7e7f9e2)
- Call ID: 859ac831-ae56-4891-8d2e-e51af7e7f9e2
+    target: :Friedrich_Hereditary_Duke_of_Württemberg
+  AddTriple (39802338-8c3b-4376-8632-a267d867a434)
+ Call ID: 39802338-8c3b-4376-8632-a267d867a434
   Args:
     target: :Princess_Marie_Wilhelmine_of_Wied
-    relation: :hasMother
     source: Wilhelm_Herzog_von_Württemberg
-  AssignClass (dff65234-bfc6-4885-a48f-4313f4c7d0d1)
- Call ID: dff65234-bfc6-4885-a48f-4313f4c7d0d1
+    relation: :hasMother
+  AssignClass (c07ce184-e502-42c4-a894-71aa21e51e23)
+ Call ID: c07ce184-e502-42c4-a894-71aa21e51e23
   Args:
-    type: :Man
     source: Carl_Duke_of_Württemberg
-  AssignClass (1965a0f8-4b18-4279-a55d-ac2e41f8121d)
- Call ID: 1965a0f8-4b18-4279-a55d-ac2e41f8121d
+    type: :Man
+  AssignClass (ea25cb3c-e112-4e23-af61-8dec12d86d60)
+ Call ID: ea25cb3c-e112-4e23-af61-8dec12d86d60
   Args:
     source: Carl_Duke_of_Württemberg
     type: :Person
-  AddTriple (8201d210-e908-4575-9c0a-608d133e856e)
- Call ID: 8201d210-e908-4575-9c0a-608d133e856e
+  AddTriple (2be2af19-e7d4-457d-bf0c-21ec45f706bb)
+ Call ID: 2be2af19-e7d4-457d-bf0c-21ec45f706bb
   Args:
-    relation: :hasSex
     target: :Male
     source: Carl_Duke_of_Württemberg
-  AddTriple (0b982afa-1193-4462-b3c0-18830a9c6d5f)
- Call ID: 0b982afa-1193-4462-b3c0-18830a9c6d5f
+    relation: :hasSex
+  AssignClass (96323eca-6186-4bde-944f-5856ea266775)
+ Call ID: 96323eca-6186-4bde-944f-5856ea266775
   Args:
-    target: :Friedrich_Hereditary_Duke_of_Württemberg
-    relation: :isFatherOf
-    source: Carl_Duke_of_Württemberg
-  AssignClass (72fe0089-4b05-4745-ae2d-1b454ea4b473)
- Call ID: 72fe0089-4b05-4745-ae2d-1b454ea4b473
-  Args:
-    type: :Man
     source: Duke_Eberhard_of_Württemberg
-  AssignClass (2eeec650-be95-4503-a1c1-7e65e7fa583b)
- Call ID: 2eeec650-be95-4503-a1c1-7e65e7fa583b
+    type: :Man
+  AssignClass (5d933d24-b410-4360-b0c6-8f4605257238)
+ Call ID: 5d933d24-b410-4360-b0c6-8f4605257238
   Args:
     source: Duke_Eberhard_of_Württemberg
     type: :Person
-  AddTriple (48bef699-d094-4bab-9c35-5c7241da185c)
- Call ID: 48bef699-d094-4bab-9c35-5c7241da185c
+  AddTriple (c718157e-4acd-406b-b637-7332c7b2d5b1)
+ Call ID: c718157e-4acd-406b-b637-7332c7b2d5b1
   Args:
+    source: Duke_Eberhard_of_Württemberg
     relation: :hasSex
     target: :Male
-    source: Duke_Eberhard_of_Württemberg
-  AssignClass (02b3e618-c537-455b-861f-b8812f95fb44)
- Call ID: 02b3e618-c537-455b-861f-b8812f95fb44
+  AssignClass (a032f096-e0bd-482e-945b-439303cf734f)
+ Call ID: a032f096-e0bd-482e-945b-439303cf734f
   Args:
     source: Gaby_Maier
     type: :Woman
-  AssignClass (a14d3628-2d2f-4d9e-8ca0-a9405442fe68)
- Call ID: a14d3628-2d2f-4d9e-8ca0-a9405442fe68
+  AssignClass (950879bb-1353-42ab-9575-a0595d17b23e)
+ Call ID: 950879bb-1353-42ab-9575-a0595d17b23e
   Args:
+    source: Gaby_Maier
     type: :Person
-    source: Gaby_Maier
-  AddTriple (6b910dff-bcdf-4fac-83f6-97c6faf0e406)
- Call ID: 6b910dff-bcdf-4fac-83f6-97c6faf0e406
+  AddTriple (0ed2212c-e286-49a8-a4aa-565e288f3a55)
+ Call ID: 0ed2212c-e286-49a8-a4aa-565e288f3a55
   Args:
-    source: Gaby_Maier
     relation: :hasSex
+    source: Gaby_Maier
     target: :Female
-  AddTriple (85186eda-3ad4-455a-843a-cbe95602c45a)
- Call ID: 85186eda-3ad4-455a-843a-cbe95602c45a
+  AddLiteral (b231547e-b203-4b36-b5c6-9977ae35d3d1)
+ Call ID: b231547e-b203-4b36-b5c6-9977ae35d3d1
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 2023
+    source: Duke_Eberhard_of_Württemberg
+    literal_type: xsd:integer
+  AddTriple (fa2e702b-a6b0-4472-85fb-52f06a64c0f1)
+ Call ID: fa2e702b-a6b0-4472-85fb-52f06a64c0f1
   Args:
     source: Duke_Eberhard_of_Württemberg
     relation: :hasRelation
     target: :Gaby_Maier
-  AddLiteral (9653b8e5-0080-4114-92ec-62fec1b92360)
- Call ID: 9653b8e5-0080-4114-92ec-62fec1b92360
+  AssignClass (99f424f8-ba95-47cb-81e4-bb30f416256a)
+ Call ID: 99f424f8-ba95-47cb-81e4-bb30f416256a
   Args:
-    source: Duke_Eberhard_of_Württemberg
-    relation: :hasMarriageYear
-    literal_value: 2023
-    literal_type: xsd:int
-  AddTriple (409de5cb-8083-4c6a-bfd9-9e5dd5ecfeac)
- Call ID: 409de5cb-8083-4c6a-bfd9-9e5dd5ecfeac
+    type: :Man
+    source: Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg
+  AssignClass (d9e44f70-ba89-4950-9b0f-a3cbdad9efc5)
+ Call ID: d9e44f70-ba89-4950-9b0f-a3cbdad9efc5
   Args:
-    target: :Duke_Eberhard_of_Württemberg
-    relation: :hasBrother
-    source: Friedrich_Hereditary_Duke_of_Württemberg
-  Finish (d25b1fc4-d639-4865-9411-98f7476d72c8)
- Call ID: d25b1fc4-d639-4865-9411-98f7476d72c8
+    source: Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg
+    type: :Person
+  AssignClass (fb3691ed-585f-434a-bba0-2e0577ae99b2)
+ Call ID: fb3691ed-585f-434a-bba0-2e0577ae99b2
   Args:
+    source: Prince_Wilhelm_of_Wied
+    type: :Man
+  AssignClass (a308538f-69ea-45f2-a1d5-160206822ec4)
+ Call ID: a308538f-69ea-45f2-a1d5-160206822ec4
+  Args:
+    source: Prince_Wilhelm_of_Wied
+    type: :Person
+  Finish (223bba60-d605-4b1d-afc7-2f63cf7a8f81)
+ Call ID: 223bba60-d605-4b1d-afc7-2f63cf7a8f81
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -635,20 +743,31 @@ The final data graph after all the edits:
 
   data:Carl_Duke_of_W%C3%BCrttemberg a :Man,
           :Person ;
-      :hasSex data:Male ;
-      :isFatherOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg .
-
-  data:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,
-          :Person ;
-      :hasBirthYear "1994"^^xsd:int ;
-      :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
-      :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;
       :hasSex data:Male .
 
   data:Duke_Eberhard_of_W%C3%BCrttemberg a :Man,
           :Person ;
-      :hasMarriageYear "2023"^^xsd:int ;
+      :hasMarriageYear 2023 ;
       :hasRelation data:Gaby_Maier ;
+      :hasSex data:Male .
+
+  data:Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg a :Man,
+          :Person .
+
+  data:Prince_Wilhelm_of_Wied a :Man,
+          :Person .
+
+  data:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,
+          :Person ;
+      :hasBirthYear 1994 ;
+      :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+      :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;
+      :hasSex data:Male .
+
+  data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Man,
+          :Person ;
+      :hasBirthYear 1961 ;
+      :hasDeathYear 2018 ;
       :hasSex data:Male .
 
   data:Gaby_Maier a :Person,
@@ -657,15 +776,8 @@ The final data graph after all the edits:
 
   data:Princess_Marie_Wilhelmine_of_Wied a :Person,
           :Woman ;
-      :hasBirthYear "1973"^^xsd:int ;
+      :hasBirthYear 1973 ;
       :hasSex data:Female .
-
-  data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Man,
-          :Person ;
-      :hasBirthYear "1961"^^xsd:int ;
-      :hasBrother data:Duke_Eberhard_of_W%C3%BCrttemberg ;
-      :hasDeathYear "2018"^^xsd:int ;
-      :hasSex data:Male .
 
 
 
@@ -677,20 +789,20 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (9f2e91ef-0463-4f7f-8bc4-c852f8fe58cd)
- Call ID: 9f2e91ef-0463-4f7f-8bc4-c852f8fe58cd
+  ValidateShacl (786b1f76-bf26-4be5-be55-cb9f9d8b14ff)
+ Call ID: 786b1f76-bf26-4be5-be55-cb9f9d8b14ff
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:55
+Total violations:54
 Violations:
 
   Violation [1]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -698,7 +810,7 @@ Violations:
   Violation [2]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Carl_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Carl_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -706,7 +818,7 @@ Violations:
   Violation [3]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Wilhelm_Herzog_von_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Duke_Eberhard_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -714,7 +826,7 @@ Violations:
   Violation [4]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Duke_Eberhard_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -722,23 +834,23 @@ Violations:
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father of Wilhelm_Herzog_von_W%C3%BCrttemberg, Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg, is missing the required class assignment to :Ancestor.
+      The value 'Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg' for the property 'hasFather' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is not assigned the required class ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg', class=':Ancestor')
+      AssignClass(node='Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg', class=':Man')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother of Wilhelm_Herzog_von_W%C3%BCrttemberg, Princess_Marie_Wilhelmine_of_Wied, is missing the required class assignment to :Ancestor.
+      The value 'Princess_Marie_Wilhelmine_of_Wied' for the property 'hasMother' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is not assigned the required class ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Marie_Wilhelmine_of_Wied', class=':Ancestor')
+      AssignClass(node='Princess_Marie_Wilhelmine_of_Wied', class=':Woman')
 
 
   Violation [7]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -746,7 +858,7 @@ Violations:
   Violation [8]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Carl_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Carl_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -754,7 +866,7 @@ Violations:
   Violation [9]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Wilhelm_Herzog_von_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Duke_Eberhard_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -762,7 +874,7 @@ Violations:
   Violation [10]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Duke_Eberhard_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -770,15 +882,15 @@ Violations:
   Violation [11]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Gaby_Maier' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [12]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Wilhelm_Herzog_von_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -786,31 +898,31 @@ Violations:
   Violation [13]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Duke_Eberhard_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Princess_Marie_Wilhelmine_of_Wied' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [14]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Princess_Marie_Wilhelmine_of_Wied is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Carl_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [15]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Gaby_Maier is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [16]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Carl_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Duke_Eberhard_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -818,31 +930,31 @@ Violations:
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father of Wilhelm_Herzog_von_W%C3%BCrttemberg, Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg, is missing the required class assignment to :Ancestor.
+      The value 'Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg' for the property 'hasFather' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is not assigned the required class ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg', class=':Ancestor')
+      AssignClass(node='Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg', class=':Man')
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother of Wilhelm_Herzog_von_W%C3%BCrttemberg, Princess_Marie_Wilhelmine_of_Wied, is missing the required class assignment to :Ancestor.
+      The value 'Princess_Marie_Wilhelmine_of_Wied' for the property 'hasMother' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is not assigned the required class ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Marie_Wilhelmine_of_Wied', class=':Ancestor')
+      AssignClass(node='Princess_Marie_Wilhelmine_of_Wied', class=':Woman')
 
 
   Violation [19]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Gaby_Maier' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [20]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Wilhelm_Herzog_von_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -850,31 +962,31 @@ Violations:
   Violation [21]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Duke_Eberhard_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Princess_Marie_Wilhelmine_of_Wied' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [22]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Princess_Marie_Wilhelmine_of_Wied is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Carl_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [23]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Gaby_Maier is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [24]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Carl_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Duke_Eberhard_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -882,15 +994,15 @@ Violations:
   Violation [25]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Gaby_Maier' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [26]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Wilhelm_Herzog_von_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -898,31 +1010,31 @@ Violations:
   Violation [27]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Duke_Eberhard_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Princess_Marie_Wilhelmine_of_Wied' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [28]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Princess_Marie_Wilhelmine_of_Wied is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Carl_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [29]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Gaby_Maier is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [30]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Carl_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Duke_Eberhard_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -930,15 +1042,15 @@ Violations:
   Violation [31]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Gaby_Maier' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [32]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Wilhelm_Herzog_von_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -946,31 +1058,31 @@ Violations:
   Violation [33]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Duke_Eberhard_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Princess_Marie_Wilhelmine_of_Wied' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [34]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Princess_Marie_Wilhelmine_of_Wied is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Carl_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [35]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Gaby_Maier is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [36]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Carl_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Duke_Eberhard_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -978,31 +1090,31 @@ Violations:
   Violation [37]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father of Wilhelm_Herzog_von_W%C3%BCrttemberg, Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg, is missing the required class assignment to :Ancestor.
+      The value 'Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg' for the property 'hasFather' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is not assigned the required class ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg', class=':Ancestor')
+      AssignClass(node='Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg', class=':Man')
 
 
   Violation [38]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother of Wilhelm_Herzog_von_W%C3%BCrttemberg, Princess_Marie_Wilhelmine_of_Wied, is missing the required class assignment to :Ancestor.
+      The value 'Princess_Marie_Wilhelmine_of_Wied' for the property 'hasMother' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is not assigned the required class ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Marie_Wilhelmine_of_Wied', class=':Ancestor')
+      AssignClass(node='Princess_Marie_Wilhelmine_of_Wied', class=':Woman')
 
 
   Violation [39]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Gaby_Maier' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [40]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Wilhelm_Herzog_von_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -1010,31 +1122,31 @@ Violations:
   Violation [41]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Duke_Eberhard_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Princess_Marie_Wilhelmine_of_Wied' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [42]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Princess_Marie_Wilhelmine_of_Wied is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Carl_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [43]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Gaby_Maier is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [44]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Carl_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Duke_Eberhard_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -1042,15 +1154,15 @@ Violations:
   Violation [45]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Gaby_Maier' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [46]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Wilhelm_Herzog_von_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Wilhelm_Herzog_von_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
@@ -1058,47 +1170,47 @@ Violations:
   Violation [47]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Duke_Eberhard_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Princess_Marie_Wilhelmine_of_Wied' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [48]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Princess_Marie_Wilhelmine_of_Wied is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Carl_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [49]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Gaby_Maier is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [50]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Male' for Carl_Duke_of_W%C3%BCrttemberg is not correctly categorized as a member of the class :Sex.
+      The value 'Male' for the property 'hasSex' of 'Duke_Eberhard_of_W%C3%BCrttemberg' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Male', class=':Sex')
 
 
   Violation [51]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      Carl_Duke_of_W%C3%BCrttemberg is missing the required class assignment to :Ancestor.
+      The value 'Female' for the property 'hasSex' of 'Gaby_Maier' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carl_Duke_of_W%C3%BCrttemberg', class=':Ancestor')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [52]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Princess_Marie_Wilhelmine_of_Wied is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Princess_Marie_Wilhelmine_of_Wied' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Female', class=':Sex')
 
@@ -1106,7 +1218,7 @@ Violations:
   Violation [53]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Gaby_Maier is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Gaby_Maier' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Female', class=':Sex')
 
@@ -1114,15 +1226,7 @@ Violations:
   Violation [54]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The sex value 'Female' for Princess_Marie_Wilhelmine_of_Wied is not correctly categorized as a member of the class :Sex.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' for Gaby_Maier is not correctly categorized as a member of the class :Sex.
+      The value 'Female' for the property 'hasSex' of 'Princess_Marie_Wilhelmine_of_Wied' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Female', class=':Sex')
 
@@ -1133,38 +1237,29 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (a0b620ab-0c03-4256-b39d-669b00b02f0a)
- Call ID: a0b620ab-0c03-4256-b39d-669b00b02f0a
+  AssignClass (c0aefe24-3a26-4edc-b1c4-6e546bc345b6)
+ Call ID: c0aefe24-3a26-4edc-b1c4-6e546bc345b6
   Args:
-    source: Male
     type: :Sex
-  AssignClass (7cbbcc96-7cbf-4399-a5db-d3bbff2baa0a)
- Call ID: 7cbbcc96-7cbf-4399-a5db-d3bbff2baa0a
+    source: :Male
+  AssignClass (5f77f1b8-4ac4-4c56-962a-5a95717eadca)
+ Call ID: 5f77f1b8-4ac4-4c56-962a-5a95717eadca
   Args:
-    source: Female
+    source: :Female
     type: :Sex
-  AssignClass (616070f6-4e2b-4e9a-9bd5-38c21538a0a6)
- Call ID: 616070f6-4e2b-4e9a-9bd5-38c21538a0a6
+  AssignClass (5dc16236-d2ca-4c4a-8f75-5948df73664e)
+ Call ID: 5dc16236-d2ca-4c4a-8f75-5948df73664e
   Args:
     source: Friedrich_Hereditary_Duke_of_Württemberg
-    type: :Ancestor
-  AssignClass (5b89087a-f22b-4180-86d1-7abc84f1db80)
- Call ID: 5b89087a-f22b-4180-86d1-7abc84f1db80
+    type: :Man
+  AssignClass (4a8c62e2-769c-48ca-b5e0-19a5d110dee7)
+ Call ID: 4a8c62e2-769c-48ca-b5e0-19a5d110dee7
   Args:
     source: Princess_Marie_Wilhelmine_of_Wied
-    type: :Ancestor
-  AssignClass (38b160bf-23a6-4689-a9ac-7f3bff64e94b)
- Call ID: 38b160bf-23a6-4689-a9ac-7f3bff64e94b
+    type: :Woman
+  Finish (451dc88b-e6c9-44fe-9fc9-03fdf3e622ff)
+ Call ID: 451dc88b-e6c9-44fe-9fc9-03fdf3e622ff
   Args:
-    source: Carl_Duke_of_Württemberg
-    type: :Ancestor
-  ValidateShacl (c7b36abb-b37d-4ef6-82da-4eca055ca610)
- Call ID: c7b36abb-b37d-4ef6-82da-4eca055ca610
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1185,23 +1280,175 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Carl_Duke_of_W%C3%BCrttemberg a :Ancestor,
-          :Man,
+  data:Carl_Duke_of_W%C3%BCrttemberg a :Man,
           :Person ;
-      :hasSex data:Male ;
-      :isFatherOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg .
-
-  data:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,
-          :Person ;
-      :hasBirthYear "1994"^^xsd:int ;
-      :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
-      :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;
       :hasSex data:Male .
 
   data:Duke_Eberhard_of_W%C3%BCrttemberg a :Man,
           :Person ;
-      :hasMarriageYear "2023"^^xsd:int ;
+      :hasMarriageYear 2023 ;
       :hasRelation data:Gaby_Maier ;
+      :hasSex data:Male .
+
+  data:Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg a :Man,
+          :Person .
+
+  data:Prince_Wilhelm_of_Wied a :Man,
+          :Person .
+
+  data:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,
+          :Person ;
+      :hasBirthYear 1994 ;
+      :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+      :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;
+      :hasSex data:Male .
+
+  data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Man,
+          :Person ;
+      :hasBirthYear 1961 ;
+      :hasDeathYear 2018 ;
+      :hasSex data:Male .
+
+  data:Gaby_Maier a :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Princess_Marie_Wilhelmine_of_Wied a :Person,
+          :Woman ;
+      :hasBirthYear 1973 ;
+      :hasSex data:Female .
+
+  data:Female a :Sex .
+
+  data:Male a :Sex .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (7fa80afc-eeed-464b-942e-2517baf5605d)
+ Call ID: 7fa80afc-eeed-464b-942e-2517baf5605d
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:6
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg, identified as the father of Wilhelm_Herzog_von_W%C3%BCrttemberg, lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg', class=':Ancestor')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Marie_Wilhelmine_of_Wied, identified as the mother of Wilhelm_Herzog_von_W%C3%BCrttemberg, lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Marie_Wilhelmine_of_Wied', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg is still missing the :Ancestor class, which is required for the :hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Marie_Wilhelmine_of_Wied is still missing the :Ancestor class, which is required for the :hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Marie_Wilhelmine_of_Wied', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg is still missing the :Ancestor class, which is required for the :hasFather relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Marie_Wilhelmine_of_Wied is still missing the :Ancestor class, which is required for the :hasMother relation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Marie_Wilhelmine_of_Wied', class=':Ancestor')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (a0273916-c51c-4dde-9726-e3d994b831c1)
+ Call ID: a0273916-c51c-4dde-9726-e3d994b831c1
+  Args:
+    source: Friedrich_Hereditary_Duke_of_Württemberg
+    type: :Ancestor
+  AssignClass (12bd4a18-6b6d-46c3-a9fc-c6a0daf54050)
+ Call ID: 12bd4a18-6b6d-46c3-a9fc-c6a0daf54050
+  Args:
+    source: Princess_Marie_Wilhelmine_of_Wied
+    type: :Ancestor
+  Finish (ade1dba1-b0c4-43e9-9132-ca2036f73c1a)
+ Call ID: ade1dba1-b0c4-43e9-9132-ca2036f73c1a
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Carl_Duke_of_W%C3%BCrttemberg a :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Duke_Eberhard_of_W%C3%BCrttemberg a :Man,
+          :Person ;
+      :hasMarriageYear 2023 ;
+      :hasRelation data:Gaby_Maier ;
+      :hasSex data:Male .
+
+  data:Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg a :Man,
+          :Person .
+
+  data:Prince_Wilhelm_of_Wied a :Man,
+          :Person .
+
+  data:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,
+          :Person ;
+      :hasBirthYear 1994 ;
+      :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+      :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;
+      :hasSex data:Male .
+
+  data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1961 ;
+      :hasDeathYear 2018 ;
       :hasSex data:Male .
 
   data:Gaby_Maier a :Person,
@@ -1211,22 +1458,26 @@ The final data graph after all the edits:
   data:Princess_Marie_Wilhelmine_of_Wied a :Ancestor,
           :Person,
           :Woman ;
-      :hasBirthYear "1973"^^xsd:int ;
+      :hasBirthYear 1973 ;
       :hasSex data:Female .
 
   data:Female a :Sex .
 
-  data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear "1961"^^xsd:int ;
-      :hasBrother data:Duke_Eberhard_of_W%C3%BCrttemberg ;
-      :hasDeathYear "2018"^^xsd:int ;
-      :hasSex data:Male .
-
   data:Male a :Sex .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (ca9da39b-ce42-44dc-b877-b4eed199601e)
+ Call ID: ca9da39b-ce42-44dc-b877-b4eed199601e
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1236,6 +1487,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (d2d3f9bc-1ae7-4b27-81d6-09facd08ccec)
- Call ID: d2d3f9bc-1ae7-4b27-81d6-09facd08ccec
+  Finish (f591f648-e370-437c-a41b-93031cafb79c)
+ Call ID: f591f648-e370-437c-a41b-93031cafb79c
   Args:

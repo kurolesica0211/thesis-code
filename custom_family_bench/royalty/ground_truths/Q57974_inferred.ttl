@@ -1,0 +1,175 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Anastasia Mikhailovna of Russia"^^xsd:string ;
+    data:posIndicesFull "753:798"^^xsd:string,
+        "767:798"^^xsd:string ;
+    data:wdtLink wdt:Q232159 ;
+    :alsoKnownAs "Anastasia Mikhailovna of Russia"^^xsd:string,
+        "Anastasia Mikhailovna, Grand Duchess of Mecklenburg-Schwerin"^^xsd:string,
+        "Anastasia, Grand Duchess of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasChild data:Frederick_Francis_IV ;
+    :hasRelation data:Frederick_Francis_IV,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isAncestorOf data:Frederick_Francis_IV ;
+    :isAuntOf data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isMotherOf data:Frederick_Francis_IV ;
+    :isParentOf data:Frederick_Francis_IV ;
+    :isSiblingOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Francis II"^^xsd:string ;
+    data:posIndicesFull "213:233"^^xsd:string,
+        "213:269"^^xsd:string ;
+    data:posIndicesPart "343:352"^^xsd:string,
+        "353:360"^^xsd:string,
+        "417:426"^^xsd:string,
+        "427:434"^^xsd:string,
+        "727:736"^^xsd:string,
+        "737:744"^^xsd:string ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II."^^xsd:string ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Frederick_Francis_III ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV ;
+    :hasSex data:male ;
+    :hasSon data:Frederick_Francis_III ;
+    :isAncestorOf data:Frederick_Francis_III,
+        data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isFatherOf data:Frederick_Francis_III ;
+    :isParentOf data:Frederick_Francis_III ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isUncleOf data:Frederick_Francis_III .
+
+data:Princess_Augusta_Reuss_of_Köstritz a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Augusta Reuss of Köstritz"^^xsd:string ;
+    data:posIndicesFull "289:323"^^xsd:string ;
+    data:wdtLink wdt:Q63095 ;
+    :hasChild data:Frederick_Francis_III ;
+    :hasRelation data:Frederick_Francis_III,
+        data:Frederick_Francis_IV,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSon data:Frederick_Francis_III ;
+    :isAncestorOf data:Frederick_Francis_III,
+        data:Frederick_Francis_IV ;
+    :isAuntOf data:Frederick_Francis_III ;
+    :isBloodrelationOf data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isMotherOf data:Frederick_Francis_III ;
+    :isParentOf data:Frederick_Francis_III ;
+    :isSiblingOf data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isSisterOf data:Princess_Augusta_Reuss_of_Köstritz .
+
+data:Frederick_Francis_IV a :Man,
+        :Person ;
+    rdfs:label "Frederick Francis IV"^^xsd:string ;
+    data:posIndicesFull "624:644"^^xsd:string ;
+    data:posIndicesPart "727:736"^^xsd:string,
+        "737:744"^^xsd:string ;
+    data:wdtLink wdt:Q57930 ;
+    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz IV"^^xsd:string,
+        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasBrother data:Frederick_Francis_IV ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasParent data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Frederick_Francis_IV ;
+    :isBrotherOf data:Frederick_Francis_IV ;
+    :isChildOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :isSiblingOf data:Frederick_Francis_IV ;
+    :isSonOf data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Francis III"^^xsd:string ;
+    data:posIndicesFull "0:21"^^xsd:string,
+        "1386:1407"^^xsd:string,
+        "1386:1443"^^xsd:string ;
+    data:posIndicesPart "343:352"^^xsd:string,
+        "353:360"^^xsd:string,
+        "417:426"^^xsd:string,
+        "427:434"^^xsd:string,
+        "727:736"^^xsd:string,
+        "737:744"^^xsd:string ;
+    data:wdtLink wdt:Q57974 ;
+    :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz III"^^xsd:string,
+        "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasBrother data:Frederick_Francis_III ;
+    :hasChild data:Frederick_Francis_IV ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasRelation data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Frederick_Francis_IV,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:male ;
+    :hasSon data:Frederick_Francis_IV ;
+    :isAncestorOf data:Frederick_Francis_IV ;
+    :isBloodrelationOf data:Frederick_Francis_III ;
+    :isBrotherOf data:Frederick_Francis_III ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isFatherOf data:Frederick_Francis_IV ;
+    :isParentOf data:Frederick_Francis_IV ;
+    :isSiblingOf data:Frederick_Francis_III ;
+    :isSonOf data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isUncleOf data:Frederick_Francis_IV .
+

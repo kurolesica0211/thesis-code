@@ -2,29 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Ferdinand_dOrleans_Duke_of_Montpensier a :Man,
-        :Person ;
+data:Frederick_Francis_II a :Man ;
+    :hasBirthYear 1823 ;
+    :hasDeathYear 1883 ;
+    :isFatherOf data:Woizlawa_Father .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Woman ;
+    :hasBirthYear 1850 ;
+    :hasDeathYear 1922 ;
+    :isMotherOf data:Woizlawa_Father .
+
+data:Woizlawa_Feodora_Princess_Reuss a :Woman ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Woizlawa_Father ;
+    :hasMarriageYear data:Heinrich_I_Prinz_Reuss,
+        1939 ;
+    :hasMother data:Viktoria_Feodora_Reuss_zu_Schleiz .
+
+data:Heinrich_I_Prinz_Reuss a :Man ;
+    :hasBirthYear 1910 ;
+    :hasDeathYear 1982 ;
+    :hasFather data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz ;
+    :hasMother data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz .
+
+data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz a :Man .
+
+data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz a :Man ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1956 .
+
+data:Princess_Elise_of_Hohenlohe-Langenburg a :Woman ;
+    :hasMother data:Princess_Feodora_of_Leiningen .
+
+data:Princess_Feodora_of_Leiningen a :Woman .
+
+data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz a :Woman ;
     :hasBirthYear 1884 ;
-    :hasDeathYear 1924 ;
-    :hasFather data:Philippe_dOrleans_Count_of_Paris ;
-    :hasMarriageYear 1921 ;
-    :hasMother data:Marie_Isabelle_dOrleans ;
-    :hasRelation data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta .
+    :hasDeathYear 1968 .
 
-data:Isabel_de_Ibarreta_y_Uhagon a :Person,
-        :Woman .
+data:Viktoria_Feodora_Reuss_zu_Schleiz a :Woman ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1918 ;
+    :hasFather data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz ;
+    :hasMother data:Princess_Elise_of_Hohenlohe-Langenburg .
 
-data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta a :Person,
-        :Woman ;
-    :hasFather data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo ;
-    :hasMother data:Isabel_de_Ibarreta_y_Uhagon .
-
-data:Marie_Isabelle_dOrleans a :Person,
-        :Woman .
-
-data:Philippe_dOrleans_Count_of_Paris a :Man,
-        :Person .
-
-data:Ulpiano_Gonzalez_de_Olaneta_y_Gonzalez_de_Ocampo a :Man,
-        :Person .
+data:Woizlawa_Father a :Man .
 

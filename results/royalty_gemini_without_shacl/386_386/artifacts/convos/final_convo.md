@@ -69,22 +69,48 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Duke Paul Frederick of Mecklenburg (German: Herzog Paul Friedrich zu Mecklenburg; 19 September 1852 – 17 May 1923) was a member of the House of Mecklenburg-Schwerin and general of the Mecklenburg cavalry.
-Life
+Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul of Prussia (15 December 1916 – 23 January 1975) was the only child of Prince Joachim of Prussia and Princess Marie-Auguste of Anhalt.
+He was also a grandson of Wilhelm II, German Emperor.
+Early life
 
-Duke Paul Frederick was born in Ludwigslust Castle as the second eldest son of Frederick Francis II, Grand Duke of Mecklenburg-Schwerin and his first wife Princess Augusta Reuss of Köstritz, the daughter of Prince Henry LXIII Reuss of Köstritz.
-Duke Paul Frederick married in Schwerin on 5 May 1881 his cousin, the Austrian born Princess Marie of Windisch-Graetz, the daughter of Prince Hugo of Windisch-Graetz and his wife Duchess Louise of Mecklenburg-Schwerin.
-The couple who had five children who were all raised Roman Catholic, the religion of Princess Marie, lived a quiet life in Venice.
-On 21 April 1884 Duke Paul Frederick renounced his and his sons rights of succession to Mecklenburg-Schwerin in favour of his younger brothers and their sons, so they would take precedence over him and his.
-In 1887, Duke Paul Fredrick raised a Lutheran decided to convert to Roman Catholicism the religion of his wife and children.
-In 1906 after upsetting his nephew Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin, over the amount of money that he was spending Duke Paul Frederick and his wife were ordered to submit to the controller of the royal household.
-Duke Paul Frederick died in Ludwigslust, where he and his wife are both buried in the Louisenkapelle.
+Prince Karl Franz was born on 15 December 1916 in Potsdam.
+He was the only child born to Prince Joachim of Prussia and Princess Marie-Auguste of Anhalt and was the Emperor's fourth grandchild to be born since World War I began; he was consequently very young when Hohenzollern fortunes fell.
+His grandfather abdicated in 1918, and his father, Prince Joachim, committed suicide in 1920.
+At the time of his grandfather's abdication, Prince Karl Franz was twelfth in line of succession to the German and Prussian thrones.
+After his father's suicide, Karl Franz was taken into custody by his paternal uncle, Prince Eitel Friedrich of Prussia.
+As the legal head of the House of Hohenzollern, he claimed this right because Emperor Wilhelm had issued an edict placing Hohenzollern powers in Eitel's hands.
+Eitel's defence had also stated that Marie-Auguste was not a fit person for Karl Franz's guardianship.
+Marie-Auguste went to court however and made a plea that she was heartbroken, which may have helped win the case for her.
+In 1922, Marie-Auguste sued ex-Emperor Wilhelm for financial support that had been promised in her and Joachim's marriage contract.
+Wilhelm's attorney argued that the House of Hohenzollern laws were no longer valid, and therefore there was no obligation to support her.
+In World War II, Karl Franz served as a lieutenant in an armoured car division, and at one point was stationed on the Polish front.
+Marriages
+
+First
+
+On 1 October 1940, Karl Franz married Princess Henriette Hermine Wanda Ida Luise of Schönaich-Carolath.
+She was the daughter of Princess Hermine Reuss of Greiz, who had been the second wife of Karl Franz's grandfather Emperor Wilhelm II since 1922 (Henriette was thus Kaiser Wilhelm's stepdaughter).
+Held at Wilhelm's private residence without much ceremony, he and Hermine attended the ceremony, as did a few other guests.
+Second
+
+Karl Franz married secondly, on 9 November 1946, to Luise Dora Hartmann (5 September 1909 Hamburg, Germany –
+Third
+
+Karl Franz married lastly, on 20 July 1959 in Lima, Peru, Eva Maria Herrera y Valdeavellano (10 June 1922 Lima, Peru – 6 March 1987 Lima, Peru).
+They were married until Prince Karl's death and had two daughters:
+
+
+Ancestry
+
+References
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -100,39 +126,9 @@ Duke Paul Frederick died in Ludwigslust, where he and his wife are both buried i
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -147,6 +143,23 @@ Duke Paul Frederick died in Ludwigslust, where he and his wife are both buried i
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -164,6 +177,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -231,29 +259,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,6 +282,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -274,6 +302,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -282,17 +312,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -320,6 +352,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -335,149 +451,161 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (83674579-ce9d-4249-bdf4-35932b6f7147)
- Call ID: 83674579-ce9d-4249-bdf4-35932b6f7147
+  AssignClass (e97a3789-cf26-4273-8ed8-09dcebbc762d)
+ Call ID: e97a3789-cf26-4273-8ed8-09dcebbc762d
   Args:
+    source: Karl_Franz_of_Prussia
     type: :Man
-    source: Duke_Paul_Frederick_of_Mecklenburg
-  AssignClass (d41f5cb7-b7bc-4d6d-b117-4d22be86486d)
- Call ID: d41f5cb7-b7bc-4d6d-b117-4d22be86486d
+  AssignClass (b24b7cd6-2a16-4544-b53e-f495e8712d7f)
+ Call ID: b24b7cd6-2a16-4544-b53e-f495e8712d7f
   Args:
     type: :Person
-    source: Duke_Paul_Frederick_of_Mecklenburg
-  AssignClass (afa18d93-4173-4690-990f-8c2034dc60f4)
- Call ID: afa18d93-4173-4690-990f-8c2034dc60f4
-  Args:
-    source: Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin
-    type: :Man
-  AssignClass (98e56836-de26-4652-bb8e-e9e1548508f0)
- Call ID: 98e56836-de26-4652-bb8e-e9e1548508f0
-  Args:
-    type: :Person
-    source: Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin
-  AssignClass (d3d5180f-94c9-4ceb-b607-32f7122808dd)
- Call ID: d3d5180f-94c9-4ceb-b607-32f7122808dd
-  Args:
-    source: Princess_Augusta_Reuss_of_Köstritz
-    type: :Woman
-  AssignClass (997d3a4c-0468-4f7e-8cf9-9f42fc712ce1)
- Call ID: 997d3a4c-0468-4f7e-8cf9-9f42fc712ce1
-  Args:
-    source: Princess_Augusta_Reuss_of_Köstritz
-    type: :Person
-  AssignClass (dbcfeb4c-bca5-4015-be91-c2e293e9d5ea)
- Call ID: dbcfeb4c-bca5-4015-be91-c2e293e9d5ea
-  Args:
-    type: :Man
-    source: Prince_Henry_LXIII_Reuss_of_Köstritz
-  AssignClass (fa4c8122-14b1-4cb6-8ed3-4024cef0c4ea)
- Call ID: fa4c8122-14b1-4cb6-8ed3-4024cef0c4ea
-  Args:
-    type: :Person
-    source: Prince_Henry_LXIII_Reuss_of_Köstritz
-  AssignClass (15898015-c072-4143-9d78-fea9e47ea9ff)
- Call ID: 15898015-c072-4143-9d78-fea9e47ea9ff
-  Args:
-    source: Princess_Marie_of_Windisch_Graetz
-    type: :Woman
-  AssignClass (2ea44249-32d0-4bf7-9d9d-c8e5ffdb5545)
- Call ID: 2ea44249-32d0-4bf7-9d9d-c8e5ffdb5545
-  Args:
-    type: :Person
-    source: Princess_Marie_of_Windisch_Graetz
-  AssignClass (a88c1304-61f8-494c-a9d9-e5ffef7f293c)
- Call ID: a88c1304-61f8-494c-a9d9-e5ffef7f293c
-  Args:
-    type: :Man
-    source: Prince_Hugo_of_Windisch_Graetz
-  AssignClass (0ea286ae-3687-4f1a-a0ee-9b62c085b9af)
- Call ID: 0ea286ae-3687-4f1a-a0ee-9b62c085b9af
-  Args:
-    type: :Person
-    source: Prince_Hugo_of_Windisch_Graetz
-  AssignClass (c81936ee-2b42-4138-820b-45586baa9a44)
- Call ID: c81936ee-2b42-4138-820b-45586baa9a44
-  Args:
-    type: :Woman
-    source: Duchess_Louise_of_Mecklenburg_Schwerin
-  AssignClass (2f3cd9f4-7234-440a-aff9-25242be3b0e5)
- Call ID: 2f3cd9f4-7234-440a-aff9-25242be3b0e5
-  Args:
-    type: :Person
-    source: Duchess_Louise_of_Mecklenburg_Schwerin
-  AssignClass (9f282df5-7355-46db-a802-86a27dadde19)
- Call ID: 9f282df5-7355-46db-a802-86a27dadde19
-  Args:
-    type: :Man
-    source: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin
-  AssignClass (3f9bd9a1-5c82-4cd2-9493-f0681fd799d5)
- Call ID: 3f9bd9a1-5c82-4cd2-9493-f0681fd799d5
-  Args:
-    type: :Person
-    source: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin
-  AddLiteral (536ea41f-4c59-46f5-a01f-90681519be09)
- Call ID: 536ea41f-4c59-46f5-a01f-90681519be09
+    source: Karl_Franz_of_Prussia
+  AddLiteral (1e6e81e2-1097-41e4-81e6-e552b9b0f905)
+ Call ID: 1e6e81e2-1097-41e4-81e6-e552b9b0f905
   Args:
     relation: :hasBirthYear
-    literal_type: xsd:string
-    source: Duke_Paul_Frederick_of_Mecklenburg
-    literal_value: 1852
-  AddLiteral (4c0c28d4-10bd-4ce4-bbe6-cabcd51d6db9)
- Call ID: 4c0c28d4-10bd-4ce4-bbe6-cabcd51d6db9
+    literal_type: xsd:integer
+    source: Karl_Franz_of_Prussia
+    literal_value: 1916
+  AddLiteral (a904b81e-1630-4082-92f1-05ea10501004)
+ Call ID: a904b81e-1630-4082-92f1-05ea10501004
   Args:
     relation: :hasDeathYear
-    literal_type: xsd:string
-    source: Duke_Paul_Frederick_of_Mecklenburg
-    literal_value: 1923
-  AddTriple (b718f384-f79f-43ab-8d6b-fa5708f99980)
- Call ID: b718f384-f79f-43ab-8d6b-fa5708f99980
+    literal_value: 1975
+    source: Karl_Franz_of_Prussia
+    literal_type: xsd:integer
+  AssignClass (bcba2323-5033-4a3c-bb9a-83994e667224)
+ Call ID: bcba2323-5033-4a3c-bb9a-83994e667224
   Args:
-    source: Duke_Paul_Frederick_of_Mecklenburg
+    source: Joachim_of_Prussia
+    type: :Man
+  AssignClass (4f5dedab-7fe5-4761-8549-90291d706b19)
+ Call ID: 4f5dedab-7fe5-4761-8549-90291d706b19
+  Args:
+    source: Joachim_of_Prussia
+    type: :Person
+  AssignClass (7d11fb6e-9b58-46c7-86f5-a8eddb4c0bc4)
+ Call ID: 7d11fb6e-9b58-46c7-86f5-a8eddb4c0bc4
+  Args:
+    type: :Woman
+    source: Marie-Auguste_of_Anhalt
+  AssignClass (3b503325-e08c-4120-8759-4321d2a75766)
+ Call ID: 3b503325-e08c-4120-8759-4321d2a75766
+  Args:
+    source: Marie-Auguste_of_Anhalt
+    type: :Person
+  AddTriple (995ff4c8-4e77-46b9-b032-a1ea36c2e712)
+ Call ID: 995ff4c8-4e77-46b9-b032-a1ea36c2e712
+  Args:
+    source: Karl_Franz_of_Prussia
+    target: Joachim_of_Prussia
     relation: :hasFather
-    target: Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin
-  AddTriple (91ad4d73-3953-4e97-bff7-bcd1a9a0a4be)
- Call ID: 91ad4d73-3953-4e97-bff7-bcd1a9a0a4be
+  AddTriple (25f94bb7-3057-4f25-85ea-de4e5d1006a4)
+ Call ID: 25f94bb7-3057-4f25-85ea-de4e5d1006a4
   Args:
     relation: :hasMother
-    target: Princess_Augusta_Reuss_of_Köstritz
-    source: Duke_Paul_Frederick_of_Mecklenburg
-  AddTriple (8dd7fa26-29d4-41f3-a759-a9a584483ead)
- Call ID: 8dd7fa26-29d4-41f3-a759-a9a584483ead
+    target: Marie-Auguste_of_Anhalt
+    source: Karl_Franz_of_Prussia
+  AssignClass (1eb46a72-8428-4f45-9964-914f80bc5db3)
+ Call ID: 1eb46a72-8428-4f45-9964-914f80bc5db3
   Args:
-    source: Princess_Augusta_Reuss_of_Köstritz
-    target: Prince_Henry_LXIII_Reuss_of_Köstritz
-    relation: :hasFather
-  AddLiteral (9c3b561f-e0b6-4714-bca6-2be1bbd6e93f)
- Call ID: 9c3b561f-e0b6-4714-bca6-2be1bbd6e93f
+    type: :Man
+    source: Wilhelm_II
+  AssignClass (c4ce84bb-c9ef-47e2-ae67-2740b3578888)
+ Call ID: c4ce84bb-c9ef-47e2-ae67-2740b3578888
   Args:
-    literal_type: xsd:string
+    source: Wilhelm_II
+    type: :Person
+  AddTriple (d0965aa6-7b7c-40c8-941a-6918f7291770)
+ Call ID: d0965aa6-7b7c-40c8-941a-6918f7291770
+  Args:
+    relation: :hasAncestor
+    source: Karl_Franz_of_Prussia
+    target: Wilhelm_II
+  AssignClass (e871a8b7-ab40-421e-9932-fa1cdbdcf670)
+ Call ID: e871a8b7-ab40-421e-9932-fa1cdbdcf670
+  Args:
+    type: :Man
+    source: Eitel_Friedrich_of_Prussia
+  AssignClass (f0d2ab93-8dcf-40c5-b585-d079bf1a5337)
+ Call ID: f0d2ab93-8dcf-40c5-b585-d079bf1a5337
+  Args:
+    type: :Person
+    source: Eitel_Friedrich_of_Prussia
+  AddTriple (779628e4-24fd-4bdf-8899-76a0ded8e797)
+ Call ID: 779628e4-24fd-4bdf-8899-76a0ded8e797
+  Args:
+    relation: :isBrotherOf
+    target: Joachim_of_Prussia
+    source: Eitel_Friedrich_of_Prussia
+  AssignClass (9a7c504b-b5e3-4711-ace8-93ad613f35e5)
+ Call ID: 9a7c504b-b5e3-4711-ace8-93ad613f35e5
+  Args:
+    source: Henriette_of_Schönaich-Carolath
+    type: :Woman
+  AssignClass (6f2d109a-dba9-46bb-a99a-3ab7110c2c48)
+ Call ID: 6f2d109a-dba9-46bb-a99a-3ab7110c2c48
+  Args:
+    type: :Person
+    source: Henriette_of_Schönaich-Carolath
+  AddLiteral (42098421-b8ea-4d06-b336-27378efb60ac)
+ Call ID: 42098421-b8ea-4d06-b336-27378efb60ac
+  Args:
     relation: :hasMarriageYear
-    source: Duke_Paul_Frederick_of_Mecklenburg
-    literal_value: 1881
-  AddTriple (285c7436-598b-434d-b047-66eebeac6460)
- Call ID: 285c7436-598b-434d-b047-66eebeac6460
+    literal_value: 1940
+    source: Karl_Franz_of_Prussia
+    literal_type: xsd:integer
+  AssignClass (ba3a7035-cbff-4181-895e-43ce9b8dbe56)
+ Call ID: ba3a7035-cbff-4181-895e-43ce9b8dbe56
   Args:
-    target: Princess_Marie_of_Windisch_Graetz
-    relation: :hasRelation
-    source: Duke_Paul_Frederick_of_Mecklenburg
-  AddTriple (359155a6-813d-423b-8cb2-1deb76b698ca)
- Call ID: 359155a6-813d-423b-8cb2-1deb76b698ca
+    type: :Woman
+    source: Luise_Dora_Hartmann
+  AssignClass (586a26a8-43b2-4fa6-87d8-3b3ba74a8641)
+ Call ID: 586a26a8-43b2-4fa6-87d8-3b3ba74a8641
   Args:
-    source: Princess_Marie_of_Windisch_Graetz
-    relation: :hasFather
-    target: Prince_Hugo_of_Windisch_Graetz
-  AddTriple (3b5d4bed-2d7e-4383-bb26-99f5dda1423c)
- Call ID: 3b5d4bed-2d7e-4383-bb26-99f5dda1423c
+    source: Luise_Dora_Hartmann
+    type: :Person
+  AddLiteral (24ec208a-c7e2-4a3d-92c5-f242fd654f95)
+ Call ID: 24ec208a-c7e2-4a3d-92c5-f242fd654f95
   Args:
-    source: Princess_Marie_of_Windisch_Graetz
-    target: Duchess_Louise_of_Mecklenburg_Schwerin
+    relation: :hasMarriageYear
+    literal_value: 1946
+    source: Karl_Franz_of_Prussia
+    literal_type: xsd:integer
+  AssignClass (0ed93973-662f-4a1e-82be-8ff5be872b79)
+ Call ID: 0ed93973-662f-4a1e-82be-8ff5be872b79
+  Args:
+    type: :Woman
+    source: Eva_Maria_Herrera_y_Valdeavellano
+  AssignClass (7621f93a-0e9a-48c7-9c58-9ee91eb06df8)
+ Call ID: 7621f93a-0e9a-48c7-9c58-9ee91eb06df8
+  Args:
+    type: :Person
+    source: Eva_Maria_Herrera_y_Valdeavellano
+  AddLiteral (20eac14c-92ea-43dc-a004-69a4b34e2c92)
+ Call ID: 20eac14c-92ea-43dc-a004-69a4b34e2c92
+  Args:
+    source: Karl_Franz_of_Prussia
+    literal_type: xsd:integer
+    literal_value: 1959
+    relation: :hasMarriageYear
+  AssignClass (e8a9d224-0ade-4656-a9b5-93741d75133c)
+ Call ID: e8a9d224-0ade-4656-a9b5-93741d75133c
+  Args:
+    source: Hermine_Reuss_of_Greiz
+    type: :Woman
+  AssignClass (1e57288b-87e5-48ad-bbbd-b71cf4f47236)
+ Call ID: 1e57288b-87e5-48ad-bbbd-b71cf4f47236
+  Args:
+    type: :Person
+    source: Hermine_Reuss_of_Greiz
+  AddTriple (dfb6c3d0-2b50-4db3-8790-2fc803b5ee26)
+ Call ID: dfb6c3d0-2b50-4db3-8790-2fc803b5ee26
+  Args:
+    target: Hermine_Reuss_of_Greiz
+    source: Henriette_of_Schönaich-Carolath
     relation: :hasMother
-  AddTriple (4ad09b3d-5834-4ca2-af1e-ae895334da11)
- Call ID: 4ad09b3d-5834-4ca2-af1e-ae895334da11
-  Args:
-    target: Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin
-    relation: :hasRelation
-    source: Duke_Paul_Frederick_of_Mecklenburg
-  Finish (a3c578a2-2360-49af-8b15-3c6cf809226e)
- Call ID: a3c578a2-2360-49af-8b15-3c6cf809226e
+  Finish (de9b541a-1abc-45af-aa57-d70e96df21ff)
+ Call ID: de9b541a-1abc-45af-aa57-d70e96df21ff
   Args:

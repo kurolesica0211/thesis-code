@@ -7,37 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Amélie_of_Orléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Amélie of Orléans" ;
-    data:posIndicesFull "955:972" ;
-    data:posIndicesPart "2199:2205",
-        "2227:2233",
-        "2452:2458" ;
-    data:wdtLink wdt:Q236965 ;
-    :alsoKnownAs "Amelie of Orleans",
-        "Maria Amélia",
-        "Marie Amelie d'Orleans",
-        "Marie Amelie of Orleans",
-        "Marie Amélie d'Orléans",
-        "Marie Amélie of Orléans" ;
-    :hasChild data:Manuel_II_of_Portugal ;
-    :hasSex data:female ;
-    :hasSon data:Manuel_II_of_Portugal ;
-    :isMotherOf data:Manuel_II_of_Portugal ;
-    :isParentOf data:Manuel_II_of_Portugal .
-
-data:Manuel_II_of_Portugal a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Manuel_II_of_Portugal a :Person ;
     rdfs:label "Manuel II of Portugal" ;
     data:posIndicesFull "1013:1022",
         "2291:2300",
@@ -119,9 +89,31 @@ data:Manuel_II_of_Portugal a :Man,
     :alsoKnownAs "Manuel II",
         "Manuel the Patriot",
         "Manuel the Unfortunate" ;
-    :hasMother data:Amélie_of_Orléans ;
     :hasParent data:Amélie_of_Orléans ;
-    :hasSex data:male ;
-    :isChildOf data:Amélie_of_Orléans ;
-    :isSonOf data:Amélie_of_Orléans .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Amélie_of_Orléans a :Person ;
+    rdfs:label "Amélie of Orléans" ;
+    data:posIndicesFull "955:972" ;
+    data:posIndicesPart "2199:2205",
+        "2227:2233",
+        "2452:2458" ;
+    data:wdtLink wdt:Q236965 ;
+    :alsoKnownAs "Amelie of Orleans",
+        "Maria Amélia",
+        "Marie Amelie d'Orleans",
+        "Marie Amelie of Orleans",
+        "Marie Amélie d'Orléans",
+        "Marie Amélie of Orléans" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

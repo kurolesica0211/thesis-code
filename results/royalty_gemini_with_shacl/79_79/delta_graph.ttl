@@ -2,66 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+data:Alexander_I_of_Greece a :Man,
+        :Person ;
+    :hasSister data:Helen_of_Greece_and_Denmark .
+
 data:Carol_II_of_Romania a :Ancestor,
         :Man,
-        :Person ;
-    :hasMother data:Maria_of_Romania ;
-    :isFatherOf data:Michael_I_of_Romania .
+        :Person .
 
-data:Elisabeth_of_Romania a :Person,
-        :Woman ;
-    :hasMother data:Maria_of_Romania .
-
-data:George_I_of_Greece a :Ancestor,
+data:Constantine_I_of_Greece a :Ancestor,
         :Man,
         :Person ;
-    :isFatherOf data:Constantine_I_of_Greece .
+    :hasSon data:Alexander_I_of_Greece .
 
-data:Helen_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1896 ;
-    :hasBrother data:Alexander_I_of_Greece,
-        data:George_II_of_Greece,
-        data:Paul_of_Greece ;
-    :hasDeathYear 1982 ;
-    :hasFather data:Constantine_I_of_Greece ;
-    :hasMother data:Sophia_of_Prussia ;
-    :hasSister data:Irene_of_Greece_and_Denmark,
-        data:Katherine_of_Greece_and_Denmark ;
-    :isMotherOf data:Michael_I_of_Romania .
-
-data:Nicolae_of_Romania a :Man,
+data:Michael_I_of_Romania a :Man,
         :Person ;
-    :isUncleOf data:Michael_I_of_Romania .
-
-data:Alexander_I_of_Greece a :Man,
-        :Person .
-
-data:George_II_of_Greece a :Man,
-        :Person .
-
-data:Irene_of_Greece_and_Denmark a :Person,
-        :Woman .
-
-data:Katherine_of_Greece_and_Denmark a :Person,
-        :Woman .
-
-data:Paul_of_Greece a :Man,
-        :Person .
+    :hasFather data:Carol_II_of_Romania ;
+    :hasMother data:Helen_of_Greece_and_Denmark .
 
 data:Sophia_of_Prussia a :Ancestor,
         :Person,
         :Woman .
 
-data:Constantine_I_of_Greece a :Ancestor,
-        :Man,
-        :Person .
-
-data:Maria_of_Romania a :Ancestor,
+data:Helen_of_Greece_and_Denmark a :Ancestor,
         :Person,
-        :Woman .
-
-data:Michael_I_of_Romania a :Man,
-        :Person .
+        :Woman ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1982 ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMarriageYear 1921 ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasSon data:Michael_I_of_Romania .
 

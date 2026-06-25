@@ -2,54 +2,47 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Herzeleide_of_Prussia a :Person,
+data:Christian_Louis a :Man,
+        :Person ;
+    :isBrotherOf data:Friedrich_Franz .
+
+data:Alexandra_of_Hanover a :Person,
         :Woman ;
-    :hasBirthYear 1918 ;
-    :hasBrother data:Burchard,
-        data:Oscar_brother,
-        data:Wilhelm-Karl ;
-    :hasDeathYear 1989 ;
-    :hasFather data:Oskar_of_Prussia ;
-    :hasMarriageYear 1938 ;
-    :hasMother data:Ina_Marie_von_Bassewitz ;
-    :hasRelation data:Karl_Biron_von_Courland ;
-    :isMotherOf data:Ernst-Johann_Biron .
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Thyra_of_Denmark .
 
-data:Burchard a :Man,
+data:Christian_IX_of_Denmark a :Man,
         :Person .
 
-data:Ernst-Johann_Biron a :Man,
+data:Ernest_Augustus_of_Hanover a :Man,
         :Person .
 
-data:Francoise_Levisse_de_Montigny a :Ancestor,
-        :Person,
+data:Frederick_Francis_IV a :Man,
+        :Person .
+
+data:Friedrich_Franz a :Man,
+        :Person ;
+    :hasBirthYear 1910 ;
+    :hasDeathYear 2001 ;
+    :hasFather data:Frederick_Francis_IV ;
+    :hasMarriageYear 1941 ;
+    :hasMother data:Alexandra_of_Hanover ;
+    :hasRelation data:Karin_Elisabeth_von_Schaper .
+
+data:Karin_Elisabeth_von_Schaper a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2012 ;
+    :hasFather data:Walter_von_Schaper ;
+    :hasMother data:Louise_von_M%C3%BCnchhausen .
+
+data:Louise_von_M%C3%BCnchhausen a :Person,
         :Woman .
 
-data:Gustav_Biron_of_Courland a :Ancestor,
-        :Man,
-        :Person .
+data:Thyra_of_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Christian_IX_of_Denmark .
 
-data:Ina_Marie_von_Bassewitz a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Karl_Biron_von_Courland a :Man,
-        :Person ;
-    :hasFather data:Gustav_Biron_of_Courland ;
-    :hasMother data:Francoise_Levisse_de_Montigny .
-
-data:Oscar_brother a :Man,
-        :Person .
-
-data:Oskar_of_Prussia a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Wilhelm_II .
-
-data:Wilhelm-Karl a :Man,
-        :Person .
-
-data:Wilhelm_II a :Ancestor,
-        :Man,
+data:Walter_von_Schaper a :Man,
         :Person .
 

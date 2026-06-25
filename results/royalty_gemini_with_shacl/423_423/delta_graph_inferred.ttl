@@ -1,0 +1,219 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:KirbyWilliamPatterson a :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasBrother data:KirbyWilliamPatterson ;
+    :hasDeathYear 1984 ;
+    :hasRelation data:KirbyWilliamPatterson ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:KirbyWilliamPatterson ;
+    :isBrotherOf data:KirbyWilliamPatterson ;
+    :isSiblingOf data:KirbyWilliamPatterson .
+
+data:CountessWilhelmineVonWuthenauHohenthurm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1895 ;
+    :hasChild data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :hasDaughter data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :hasDeathYear 1983 ;
+    :hasRelation data:CountessWilhelmineVonWuthenauHohenthurm,
+        data:FriedrichCountOfHoyosStichsenstein,
+        data:MarieAntoinetteCountessOfHoyosStichsenstein,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen,
+        data:PrincessViktoriaMarina ;
+    :hasSex data:Female ;
+    :hasSister data:CountessWilhelmineVonWuthenauHohenthurm ;
+    :isAncestorOf data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :isAuntOf data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :isBloodrelationOf data:CountessWilhelmineVonWuthenauHohenthurm ;
+    :isMotherOf data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :isParentOf data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :isSiblingOf data:CountessWilhelmineVonWuthenauHohenthurm ;
+    :isSisterOf data:CountessWilhelmineVonWuthenauHohenthurm .
+
+data:FriedrichCountOfHoyosStichsenstein a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:FriedrichCountOfHoyosStichsenstein ;
+    :hasChild data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :hasDaughter data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :hasDeathYear 1951 ;
+    :hasRelation data:CountessWilhelmineVonWuthenauHohenthurm,
+        data:FriedrichCountOfHoyosStichsenstein,
+        data:MarieAntoinetteCountessOfHoyosStichsenstein,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen,
+        data:PrincessViktoriaMarina ;
+    :hasSex data:Male ;
+    :isAncestorOf data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :isBloodrelationOf data:FriedrichCountOfHoyosStichsenstein ;
+    :isBrotherOf data:FriedrichCountOfHoyosStichsenstein ;
+    :isFatherOf data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :isParentOf data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :isSiblingOf data:FriedrichCountOfHoyosStichsenstein ;
+    :isUncleOf data:MarieAntoinetteCountessOfHoyosStichsenstein .
+
+data:PrinceAdalbertOfPrussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1884 ;
+    :hasBrother data:PrinceAdalbertOfPrussia ;
+    :hasChild data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :hasDaughter data:PrincessViktoriaMarina ;
+    :hasDeathYear 1948 ;
+    :hasRelation data:CountessWilhelmineVonWuthenauHohenthurm,
+        data:FriedrichCountOfHoyosStichsenstein,
+        data:MarieAntoinetteCountessOfHoyosStichsenstein,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen,
+        data:PrincessViktoriaMarina ;
+    :hasSex data:Male ;
+    :hasSon data:PrinceWilhelmVictorOfPrussia ;
+    :isAncestorOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :isBloodrelationOf data:PrinceAdalbertOfPrussia ;
+    :isBrotherOf data:PrinceAdalbertOfPrussia ;
+    :isFatherOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :isParentOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :isSiblingOf data:PrinceAdalbertOfPrussia ;
+    :isUncleOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina .
+
+data:PrincessAdelheidOfSaxeMeiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1891 ;
+    :hasChild data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :hasDaughter data:PrincessViktoriaMarina ;
+    :hasDeathYear 1971 ;
+    :hasRelation data:CountessWilhelmineVonWuthenauHohenthurm,
+        data:FriedrichCountOfHoyosStichsenstein,
+        data:MarieAntoinetteCountessOfHoyosStichsenstein,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen,
+        data:PrincessViktoriaMarina ;
+    :hasSex data:Female ;
+    :hasSister data:PrincessAdelheidOfSaxeMeiningen ;
+    :hasSon data:PrinceWilhelmVictorOfPrussia ;
+    :isAncestorOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :isAuntOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :isBloodrelationOf data:PrincessAdelheidOfSaxeMeiningen ;
+    :isMotherOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :isParentOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :isSiblingOf data:PrincessAdelheidOfSaxeMeiningen ;
+    :isSisterOf data:PrincessAdelheidOfSaxeMeiningen .
+
+data:MarieAntoinetteCountessOfHoyosStichsenstein a :Person,
+        :Woman ;
+    :hasAncestor data:CountessWilhelmineVonWuthenauHohenthurm,
+        data:FriedrichCountOfHoyosStichsenstein ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:FriedrichCountOfHoyosStichsenstein ;
+    :hasMother data:CountessWilhelmineVonWuthenauHohenthurm ;
+    :hasParent data:CountessWilhelmineVonWuthenauHohenthurm,
+        data:FriedrichCountOfHoyosStichsenstein ;
+    :hasRelation data:CountessWilhelmineVonWuthenauHohenthurm,
+        data:FriedrichCountOfHoyosStichsenstein,
+        data:MarieAntoinetteCountessOfHoyosStichsenstein,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen,
+        data:PrincessViktoriaMarina ;
+    :hasSex data:Female ;
+    :hasSister data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :isBloodrelationOf data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :isChildOf data:CountessWilhelmineVonWuthenauHohenthurm,
+        data:FriedrichCountOfHoyosStichsenstein ;
+    :isDaughterOf data:CountessWilhelmineVonWuthenauHohenthurm,
+        data:FriedrichCountOfHoyosStichsenstein ;
+    :isSiblingOf data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :isSisterOf data:MarieAntoinetteCountessOfHoyosStichsenstein .
+
+data:PrinceWilhelmVictorOfPrussia a :Man,
+        :Person ;
+    :hasAncestor data:PrinceAdalbertOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen ;
+    :hasBirthYear 1919 ;
+    :hasBrother data:PrinceWilhelmVictorOfPrussia ;
+    :hasDeathYear 1989 ;
+    :hasFather data:PrinceAdalbertOfPrussia ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:PrincessAdelheidOfSaxeMeiningen ;
+    :hasParent data:PrinceAdalbertOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen ;
+    :hasRelation data:CountessWilhelmineVonWuthenauHohenthurm,
+        data:FriedrichCountOfHoyosStichsenstein,
+        data:MarieAntoinetteCountessOfHoyosStichsenstein,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen,
+        data:PrincessViktoriaMarina ;
+    :hasSex data:Male ;
+    :hasSister data:PrincessViktoriaMarina ;
+    :isBloodrelationOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :isBrotherOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :isChildOf data:PrinceAdalbertOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen ;
+    :isSiblingOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :isSonOf data:PrinceAdalbertOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen .
+
+data:PrincessViktoriaMarina a :Person,
+        :Woman ;
+    :hasAncestor data:PrinceAdalbertOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen ;
+    :hasBirthYear 1917 ;
+    :hasBrother data:PrinceWilhelmVictorOfPrussia ;
+    :hasDeathYear 1981 ;
+    :hasFather data:PrinceAdalbertOfPrussia ;
+    :hasMother data:PrincessAdelheidOfSaxeMeiningen ;
+    :hasParent data:PrinceAdalbertOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen ;
+    :hasRelation data:CountessWilhelmineVonWuthenauHohenthurm,
+        data:FriedrichCountOfHoyosStichsenstein,
+        data:MarieAntoinetteCountessOfHoyosStichsenstein,
+        data:PrinceAdalbertOfPrussia,
+        data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen,
+        data:PrincessViktoriaMarina ;
+    :hasSex data:Female ;
+    :hasSister data:PrincessViktoriaMarina ;
+    :isBloodrelationOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :isChildOf data:PrinceAdalbertOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen ;
+    :isDaughterOf data:PrinceAdalbertOfPrussia,
+        data:PrincessAdelheidOfSaxeMeiningen ;
+    :isSiblingOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina ;
+    :isSisterOf data:PrinceWilhelmVictorOfPrussia,
+        data:PrincessViktoriaMarina .
+

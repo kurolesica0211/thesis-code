@@ -1,0 +1,377 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Autumn_Phillips a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Autumn Phillips"^^xsd:string ;
+    data:posIndicesFull "3192:3204"^^xsd:string,
+        "3228:3240"^^xsd:string,
+        "500:512"^^xsd:string ;
+    data:posIndicesPart "1025:1033"^^xsd:string,
+        "1294:1302"^^xsd:string,
+        "1421:1429"^^xsd:string,
+        "1470:1478"^^xsd:string,
+        "1645:1653"^^xsd:string,
+        "1733:1741"^^xsd:string,
+        "1884:1892"^^xsd:string,
+        "2011:2019"^^xsd:string,
+        "2289:2297"^^xsd:string,
+        "2413:2421"^^xsd:string,
+        "2725:2733"^^xsd:string,
+        "3097:3105"^^xsd:string,
+        "3386:3394"^^xsd:string,
+        "4207:4215"^^xsd:string,
+        "4354:4362"^^xsd:string,
+        "4499:4507"^^xsd:string,
+        "4673:4681"^^xsd:string,
+        "620:628"^^xsd:string ;
+    data:wdtLink wdt:Q455160 ;
+    :alsoKnownAs "Autumm Patricia Phillips"^^xsd:string,
+        "Autumn Kelly"^^xsd:string,
+        "Autumn Patricia Phillips"^^xsd:string ;
+    :hasChild data:Isla_Phillips ;
+    :hasDaughter data:Isla_Phillips ;
+    :hasRelation data:Autumn_Phillips,
+        data:Isla_Phillips,
+        data:Peter_Phillips ;
+    :hasSex data:female ;
+    :hasSister data:Autumn_Phillips ;
+    :isAncestorOf data:Isla_Phillips ;
+    :isAuntOf data:Isla_Phillips ;
+    :isBloodrelationOf data:Autumn_Phillips ;
+    :isMotherOf data:Isla_Phillips ;
+    :isParentOf data:Isla_Phillips ;
+    :isSiblingOf data:Autumn_Phillips ;
+    :isSisterOf data:Autumn_Phillips .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "1221:1239"^^xsd:string,
+        "1227:1239"^^xsd:string,
+        "258:276"^^xsd:string,
+        "264:276"^^xsd:string,
+        "2705:2723"^^xsd:string,
+        "2711:2723"^^xsd:string,
+        "813:831"^^xsd:string,
+        "819:831"^^xsd:string ;
+    data:posIndicesPart "3065:3074"^^xsd:string,
+        "3112:3121"^^xsd:string,
+        "4278:4287"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasChild data:Anne-_Princess_Royal ;
+    :hasDaughter data:Anne-_Princess_Royal ;
+    :hasRelation data:Anne-_Princess_Royal,
+        data:Elizabeth_II,
+        data:Isla_Phillips,
+        data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :isAncestorOf data:Anne-_Princess_Royal,
+        data:Isla_Phillips,
+        data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isAuntOf data:Anne-_Princess_Royal ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isMotherOf data:Anne-_Princess_Royal ;
+    :isParentOf data:Anne-_Princess_Royal ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "836:849"^^xsd:string,
+        "836:868"^^xsd:string ;
+    data:posIndicesPart "1130:1136"^^xsd:string,
+        "2241:2250"^^xsd:string,
+        "4890:4896"^^xsd:string,
+        "4906:4910"^^xsd:string,
+        "910:916"^^xsd:string ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip"^^xsd:string,
+        "H.R.H. The Duke Of Edinburgh"^^xsd:string,
+        "Lieutenant Philip Mountbatten"^^xsd:string,
+        "Philip Edinburgh"^^xsd:string,
+        "Philip Mountbatten"^^xsd:string,
+        "Philip Mountbatten; Prince Philip of Greece and Denmark"^^xsd:string,
+        "Philip of Greece and Denmark"^^xsd:string,
+        "Prince Philip"^^xsd:string,
+        "Prince Philip of Greece and Denmark"^^xsd:string,
+        "The Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasChild data:Anne-_Princess_Royal ;
+    :hasDaughter data:Anne-_Princess_Royal ;
+    :hasRelation data:Anne-_Princess_Royal,
+        data:Isla_Phillips,
+        data:Peter_Phillips,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Zara_Tindall ;
+    :hasSex data:male ;
+    :isAncestorOf data:Anne-_Princess_Royal,
+        data:Isla_Phillips,
+        data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isFatherOf data:Anne-_Princess_Royal ;
+    :isParentOf data:Anne-_Princess_Royal ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isUncleOf data:Anne-_Princess_Royal .
+
+data:Mark_Phillips a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Mark Phillips"^^xsd:string ;
+    data:posIndicesFull "1577:1590"^^xsd:string,
+        "159:172"^^xsd:string,
+        "745:758"^^xsd:string ;
+    data:posIndicesPart "1025:1033"^^xsd:string,
+        "1294:1302"^^xsd:string,
+        "1733:1741"^^xsd:string,
+        "1884:1892"^^xsd:string,
+        "2011:2019"^^xsd:string,
+        "2289:2297"^^xsd:string,
+        "2413:2421"^^xsd:string,
+        "2725:2733"^^xsd:string,
+        "278:286"^^xsd:string,
+        "3097:3105"^^xsd:string,
+        "3215:3223"^^xsd:string,
+        "3386:3394"^^xsd:string,
+        "370:378"^^xsd:string,
+        "4207:4215"^^xsd:string,
+        "4354:4362"^^xsd:string,
+        "4499:4507"^^xsd:string,
+        "4673:4681"^^xsd:string,
+        "608:612"^^xsd:string,
+        "620:628"^^xsd:string ;
+    data:wdtLink wdt:Q547893 ;
+    :alsoKnownAs "Captain Mark Anthony Peter Phillips"^^xsd:string,
+        "Captain Mark Phillips"^^xsd:string ;
+    :hasBrother data:Mark_Phillips ;
+    :hasChild data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :hasDaughter data:Zara_Tindall ;
+    :hasRelation data:Isla_Phillips,
+        data:Mark_Phillips,
+        data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :hasSex data:male ;
+    :hasSon data:Peter_Phillips ;
+    :isAncestorOf data:Isla_Phillips,
+        data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isBloodrelationOf data:Mark_Phillips ;
+    :isBrotherOf data:Mark_Phillips ;
+    :isFatherOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isParentOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isSiblingOf data:Mark_Phillips ;
+    :isUncleOf data:Peter_Phillips,
+        data:Zara_Tindall .
+
+data:Isla_Phillips a :Person,
+        :Woman ;
+    rdfs:label "Isla Phillips"^^xsd:string ;
+    data:wdtLink wdt:Q5921597 ;
+    :alsoKnownAs "Isla Elizabeth Phillips"^^xsd:string ;
+    :hasAncestor data:Anne-_Princess_Royal,
+        data:Autumn_Phillips,
+        data:Elizabeth_II,
+        data:Mark_Phillips,
+        data:Peter_Phillips,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasFather data:Peter_Phillips ;
+    :hasMother data:Autumn_Phillips ;
+    :hasParent data:Autumn_Phillips,
+        data:Peter_Phillips ;
+    :hasRelation data:Anne-_Princess_Royal,
+        data:Autumn_Phillips,
+        data:Elizabeth_II,
+        data:Isla_Phillips,
+        data:Mark_Phillips,
+        data:Peter_Phillips,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasSex data:female ;
+    :hasSister data:Isla_Phillips ;
+    :isBloodrelationOf data:Isla_Phillips ;
+    :isChildOf data:Autumn_Phillips,
+        data:Peter_Phillips ;
+    :isDaughterOf data:Autumn_Phillips,
+        data:Peter_Phillips ;
+    :isSiblingOf data:Isla_Phillips ;
+    :isSisterOf data:Isla_Phillips .
+
+data:Zara_Tindall a :Person,
+        :Woman ;
+    rdfs:label "Zara Tindall"^^xsd:string ;
+    data:posIndicesFull "1452:1464"^^xsd:string,
+        "1577:1590"^^xsd:string,
+        "159:172"^^xsd:string,
+        "745:758"^^xsd:string ;
+    data:wdtLink wdt:Q147663 ;
+    :alsoKnownAs "Zara Anne Elizabeth Tindall"^^xsd:string,
+        "Zara Phillips"^^xsd:string ;
+    :hasAncestor data:Anne-_Princess_Royal,
+        data:Elizabeth_II,
+        data:Mark_Phillips,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasBrother data:Peter_Phillips ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne-_Princess_Royal ;
+    :hasParent data:Anne-_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasRelation data:Anne-_Princess_Royal,
+        data:Elizabeth_II,
+        data:Mark_Phillips,
+        data:Peter_Phillips,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Zara_Tindall ;
+    :hasSex data:female ;
+    :hasSister data:Zara_Tindall ;
+    :isAuntOf data:Isla_Phillips ;
+    :isBloodrelationOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isChildOf data:Anne-_Princess_Royal,
+        data:Mark_Phillips ;
+    :isDaughterOf data:Anne-_Princess_Royal,
+        data:Mark_Phillips ;
+    :isSiblingOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isSisterOf data:Peter_Phillips,
+        data:Zara_Tindall .
+
+data:Anne-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Anne, Princess Royal"^^xsd:string ;
+    data:posIndicesFull "133:153"^^xsd:string,
+        "727:740"^^xsd:string ;
+    data:posIndicesPart "2215:2220"^^xsd:string,
+        "2531:2536"^^xsd:string,
+        "2611:2616"^^xsd:string,
+        "2959:2964"^^xsd:string,
+        "3698:3703"^^xsd:string,
+        "3787:3792"^^xsd:string,
+        "3959:3963"^^xsd:string,
+        "4022:4027"^^xsd:string,
+        "4317:4322"^^xsd:string ;
+    data:wdtLink wdt:Q151754 ;
+    :alsoKnownAs "Anne Elizabeth Alice Louise"^^xsd:string,
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor"^^xsd:string,
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor, Princess Royal of the United Kingdom"^^xsd:string,
+        "Anne Mountbatten-Windsor"^^xsd:string,
+        "Princess Anne"^^xsd:string,
+        "Princess Anne Elizabeth Alice Louise of Edinburgh"^^xsd:string,
+        "Princess Anne Elizabeth Alice Louise, Princess Royal"^^xsd:string,
+        "Princess Anne of Edinburgh"^^xsd:string,
+        "Princess Anne, Princess Royal"^^xsd:string,
+        "Princess Anne, The Princess Royal"^^xsd:string,
+        "The Princess Anne"^^xsd:string,
+        "The Princess Anne Elizabeth Alice Louise, Princess Royal"^^xsd:string,
+        "The Princess Anne, Princess Royal"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasChild data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :hasDaughter data:Zara_Tindall ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Anne-_Princess_Royal,
+        data:Elizabeth_II,
+        data:Isla_Phillips,
+        data:Peter_Phillips,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Zara_Tindall ;
+    :hasSex data:female ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :hasSon data:Peter_Phillips ;
+    :isAncestorOf data:Isla_Phillips,
+        data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isAuntOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isBloodrelationOf data:Anne-_Princess_Royal ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isDaughterOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isMotherOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isParentOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isSiblingOf data:Anne-_Princess_Royal ;
+    :isSisterOf data:Anne-_Princess_Royal .
+
+data:Peter_Phillips a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Peter Phillips"^^xsd:string ;
+    data:posIndicesFull "3743:3757"^^xsd:string ;
+    data:posIndicesPart "4207:4215"^^xsd:string,
+        "4354:4362"^^xsd:string,
+        "4499:4507"^^xsd:string,
+        "4673:4681"^^xsd:string ;
+    data:wdtLink wdt:Q344908 ;
+    :hasAncestor data:Anne-_Princess_Royal,
+        data:Elizabeth_II,
+        data:Mark_Phillips,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasBrother data:Peter_Phillips ;
+    :hasChild data:Isla_Phillips ;
+    :hasDaughter data:Isla_Phillips ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne-_Princess_Royal ;
+    :hasParent data:Anne-_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasRelation data:Anne-_Princess_Royal,
+        data:Autumn_Phillips,
+        data:Elizabeth_II,
+        data:Isla_Phillips,
+        data:Mark_Phillips,
+        data:Peter_Phillips,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Zara_Tindall ;
+    :hasSex data:male ;
+    :hasSister data:Zara_Tindall ;
+    :isAncestorOf data:Isla_Phillips ;
+    :isBloodrelationOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isBrotherOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isChildOf data:Anne-_Princess_Royal,
+        data:Mark_Phillips ;
+    :isFatherOf data:Isla_Phillips ;
+    :isParentOf data:Isla_Phillips ;
+    :isSiblingOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isSonOf data:Anne-_Princess_Royal,
+        data:Mark_Phillips ;
+    :isUncleOf data:Isla_Phillips .
+

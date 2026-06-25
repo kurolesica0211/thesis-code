@@ -1,0 +1,123 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Henrik-_Prince_Consort_of_Denmark a :Man,
+        :Person ;
+    rdfs:label "Henrik, Prince Consort of Denmark"^^xsd:string ;
+    data:posIndicesFull "1354:1360"^^xsd:string,
+        "303:309"^^xsd:string,
+        "649:655"^^xsd:string,
+        "846:852"^^xsd:string ;
+    data:posIndicesPart "1142:1148"^^xsd:string,
+        "1730:1736"^^xsd:string,
+        "460:467"^^xsd:string ;
+    data:wdtLink wdt:Q1389258 ;
+    :alsoKnownAs "Enric de Monpezat"^^xsd:string,
+        "Henri Marie Jean Andre de Laborde de Monpezat"^^xsd:string,
+        "Henri Marie Jean André de Laborde de Monpezat"^^xsd:string,
+        "Henri Marie Jean André de Laborde de Monpezat, Comte de Laborde de Monpezat"^^xsd:string,
+        "Henri de Monpezat"^^xsd:string,
+        "Henrik"^^xsd:string,
+        "Prince Henrik of Denmark"^^xsd:string ;
+    :hasBrother data:Henrik-_Prince_Consort_of_Denmark ;
+    :hasRelation data:Henrik-_Prince_Consort_of_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Henrik-_Prince_Consort_of_Denmark ;
+    :isBrotherOf data:Henrik-_Prince_Consort_of_Denmark ;
+    :isSiblingOf data:Henrik-_Prince_Consort_of_Denmark .
+
+data:Margrethe_II_of_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Margrethe II of Denmark"^^xsd:string ;
+    data:posIndicesFull "1686:1698"^^xsd:string,
+        "279:291"^^xsd:string,
+        "6:18"^^xsd:string ;
+    data:posIndicesPart "460:467"^^xsd:string ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer"^^xsd:string,
+        "Margrethe II"^^xsd:string ;
+    :hasRelation data:Margrethe_II_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark ;
+    :isBloodrelationOf data:Margrethe_II_of_Denmark ;
+    :isSiblingOf data:Margrethe_II_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark .
+
+data:Princess_Marie_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Marie of Denmark"^^xsd:string ;
+    data:posIndicesFull "212:237"^^xsd:string ;
+    data:posIndicesPart "1741:1749"^^xsd:string,
+        "448:456"^^xsd:string,
+        "460:467"^^xsd:string,
+        "917:922"^^xsd:string ;
+    data:wdtLink wdt:Q231895 ;
+    :alsoKnownAs "Marie Agathe Odile"^^xsd:string,
+        "Marie Agathe Odile Cavallier"^^xsd:string,
+        "Marie Cavallier"^^xsd:string,
+        "Princess Marie Agathe Odile of Denmark"^^xsd:string,
+        "Princess Marie of Denmark, Countess of Monpezat"^^xsd:string,
+        "Princess Marie, Countess of Monpezat"^^xsd:string ;
+    :hasChild data:Countess_Athena_of_Monpezat ;
+    :hasDaughter data:Countess_Athena_of_Monpezat ;
+    :hasRelation data:Countess_Athena_of_Monpezat,
+        data:Princess_Marie_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marie_of_Denmark ;
+    :isAncestorOf data:Countess_Athena_of_Monpezat ;
+    :isAuntOf data:Countess_Athena_of_Monpezat ;
+    :isBloodrelationOf data:Princess_Marie_of_Denmark ;
+    :isMotherOf data:Countess_Athena_of_Monpezat ;
+    :isParentOf data:Countess_Athena_of_Monpezat ;
+    :isSiblingOf data:Princess_Marie_of_Denmark ;
+    :isSisterOf data:Princess_Marie_of_Denmark .
+
+data:Countess_Athena_of_Monpezat a :Person,
+        :Woman ;
+    rdfs:label "Countess Athena of Monpezat"^^xsd:string ;
+    data:posIndicesFull "1578:1604"^^xsd:string,
+        "1578:1626"^^xsd:string,
+        "1858:1885"^^xsd:string,
+        "21:48"^^xsd:string ;
+    data:posIndicesPart "1376:1382"^^xsd:string,
+        "345:351"^^xsd:string,
+        "430:436"^^xsd:string,
+        "889:895"^^xsd:string ;
+    data:wdtLink wdt:Q2036974 ;
+    :alsoKnownAs "Athena Marguerite Francoise Marie of Monpezat"^^xsd:string,
+        "Athena Marguerite Francoise Marie, Princess of Denmark"^^xsd:string,
+        "Countess Athena Marguerite Francoise Marie of Monpezat"^^xsd:string,
+        "Princess Athena Marguerite Francoise Marie of Denmark"^^xsd:string,
+        "Princess Athena Marguerite Francoise Marie of Denmark, Countess of Monpezat"^^xsd:string,
+        "Princess Athena of Denmark"^^xsd:string,
+        "Princess Athena of Denmark, Countess of Monpezat"^^xsd:string ;
+    :hasAncestor data:Princess_Marie_of_Denmark ;
+    :hasMother data:Princess_Marie_of_Denmark ;
+    :hasParent data:Princess_Marie_of_Denmark ;
+    :hasRelation data:Countess_Athena_of_Monpezat,
+        data:Princess_Marie_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Countess_Athena_of_Monpezat ;
+    :isBloodrelationOf data:Countess_Athena_of_Monpezat ;
+    :isChildOf data:Princess_Marie_of_Denmark ;
+    :isDaughterOf data:Princess_Marie_of_Denmark ;
+    :isSiblingOf data:Countess_Athena_of_Monpezat ;
+    :isSisterOf data:Countess_Athena_of_Monpezat .
+

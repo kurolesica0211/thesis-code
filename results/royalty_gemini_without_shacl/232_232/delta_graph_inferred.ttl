@@ -1,0 +1,278 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FerdinandOfHohenzollern a :Man,
+        :Person ;
+    :hasBrother data:FerdinandOfHohenzollern ;
+    :hasRelation data:FerdinandOfHohenzollern,
+        data:GeorgFriedrich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr,
+        data:WilhelmOfPrussia ;
+    :isBloodrelationOf data:FerdinandOfHohenzollern ;
+    :isBrotherOf data:FerdinandOfHohenzollern ;
+    :isSiblingOf data:FerdinandOfHohenzollern .
+
+data:WilhelmII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilhelmII ;
+    :hasRelation data:GeorgFriedrich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr,
+        data:WilhelmII,
+        data:WilhelmOfPrussia ;
+    :isAncestorOf data:GeorgFriedrich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr ;
+    :isBloodrelationOf data:WilhelmII ;
+    :isBrotherOf data:WilhelmII ;
+    :isSiblingOf data:WilhelmII .
+
+data:KyrilVladimirovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:KyrilVladimirovich ;
+    :hasChild data:KiraKirillovna ;
+    :hasDaughter data:KiraKirillovna ;
+    :hasRelation data:GeorgFriedrich,
+        data:KiraKirillovna,
+        data:KyrilVladimirovich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr,
+        data:VictoriaMelita,
+        data:WilhelmOfPrussia ;
+    :isAncestorOf data:KiraKirillovna ;
+    :isBloodrelationOf data:KyrilVladimirovich ;
+    :isBrotherOf data:KyrilVladimirovich ;
+    :isFatherOf data:KiraKirillovna ;
+    :isParentOf data:KiraKirillovna ;
+    :isSiblingOf data:KyrilVladimirovich ;
+    :isUncleOf data:KiraKirillovna .
+
+data:VictoriaMelita a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:KiraKirillovna ;
+    :hasDaughter data:KiraKirillovna ;
+    :hasRelation data:GeorgFriedrich,
+        data:KiraKirillovna,
+        data:KyrilVladimirovich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr,
+        data:VictoriaMelita,
+        data:WilhelmOfPrussia ;
+    :hasSister data:VictoriaMelita ;
+    :isAncestorOf data:KiraKirillovna ;
+    :isAuntOf data:KiraKirillovna ;
+    :isBloodrelationOf data:VictoriaMelita ;
+    :isMotherOf data:KiraKirillovna ;
+    :isParentOf data:KiraKirillovna ;
+    :isSiblingOf data:VictoriaMelita ;
+    :isSisterOf data:VictoriaMelita .
+
+data:WilhelmOfPrussia a :Man,
+        :Person ;
+    :hasBrother data:LouisFerdinand,
+        data:WilhelmOfPrussia ;
+    :hasRelation data:FerdinandOfHohenzollern,
+        data:FrederickWilliamI,
+        data:GeorgFriedrich,
+        data:KiraKirillovna,
+        data:KyrilVladimirovich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr,
+        data:VictoriaMelita,
+        data:WilhelmII,
+        data:WilhelmOfPrussia,
+        data:WilliamCrownPrince ;
+    :isBloodrelationOf data:LouisFerdinand,
+        data:WilhelmOfPrussia ;
+    :isBrotherOf data:LouisFerdinand,
+        data:WilhelmOfPrussia ;
+    :isSiblingOf data:LouisFerdinand,
+        data:WilhelmOfPrussia ;
+    :isUncleOf data:PrinceLouisFerdinandJr .
+
+data:FrederickWilliamI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FrederickWilliamI,
+        data:WilliamCrownPrince ;
+    :hasChild data:LouisFerdinand ;
+    :hasRelation data:FrederickWilliamI,
+        data:GeorgFriedrich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr,
+        data:WilhelmOfPrussia,
+        data:WilliamCrownPrince ;
+    :hasSon data:LouisFerdinand ;
+    :isAncestorOf data:GeorgFriedrich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr ;
+    :isBloodrelationOf data:FrederickWilliamI,
+        data:WilliamCrownPrince ;
+    :isBrotherOf data:FrederickWilliamI,
+        data:WilliamCrownPrince ;
+    :isFatherOf data:LouisFerdinand ;
+    :isParentOf data:LouisFerdinand ;
+    :isSiblingOf data:FrederickWilliamI,
+        data:WilliamCrownPrince ;
+    :isUncleOf data:LouisFerdinand .
+
+data:WilliamCrownPrince a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FrederickWilliamI,
+        data:WilliamCrownPrince ;
+    :hasChild data:LouisFerdinand ;
+    :hasRelation data:FrederickWilliamI,
+        data:GeorgFriedrich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr,
+        data:WilhelmOfPrussia,
+        data:WilliamCrownPrince ;
+    :hasSon data:LouisFerdinand ;
+    :isAncestorOf data:GeorgFriedrich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr ;
+    :isBloodrelationOf data:FrederickWilliamI,
+        data:WilliamCrownPrince ;
+    :isBrotherOf data:FrederickWilliamI,
+        data:WilliamCrownPrince ;
+    :isFatherOf data:LouisFerdinand ;
+    :isParentOf data:LouisFerdinand ;
+    :isSiblingOf data:FrederickWilliamI,
+        data:WilliamCrownPrince ;
+    :isUncleOf data:LouisFerdinand .
+
+data:KiraKirillovna a :Person,
+        :Woman ;
+    :hasAncestor data:KyrilVladimirovich,
+        data:VictoriaMelita ;
+    :hasFather data:KyrilVladimirovich ;
+    :hasMother data:VictoriaMelita ;
+    :hasParent data:KyrilVladimirovich,
+        data:VictoriaMelita ;
+    :hasRelation data:GeorgFriedrich,
+        data:KiraKirillovna,
+        data:KyrilVladimirovich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr,
+        data:VictoriaMelita,
+        data:WilhelmOfPrussia ;
+    :hasSister data:KiraKirillovna ;
+    :isBloodrelationOf data:KiraKirillovna ;
+    :isChildOf data:KyrilVladimirovich,
+        data:VictoriaMelita ;
+    :isDaughterOf data:KyrilVladimirovich,
+        data:VictoriaMelita ;
+    :isSiblingOf data:KiraKirillovna ;
+    :isSisterOf data:KiraKirillovna .
+
+data:GeorgFriedrich a :Man,
+        :Person ;
+    :hasAncestor data:FrederickWilliamI,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr,
+        data:WilhelmII,
+        data:WilliamCrownPrince ;
+    :hasBrother data:GeorgFriedrich ;
+    :hasFather data:PrinceLouisFerdinandJr ;
+    :hasParent data:PrinceLouisFerdinandJr ;
+    :hasRelation data:FerdinandOfHohenzollern,
+        data:FrederickWilliamI,
+        data:GeorgFriedrich,
+        data:KiraKirillovna,
+        data:KyrilVladimirovich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr,
+        data:VictoriaMelita,
+        data:WilhelmII,
+        data:WilhelmOfPrussia,
+        data:WilliamCrownPrince ;
+    :isBloodrelationOf data:GeorgFriedrich ;
+    :isBrotherOf data:GeorgFriedrich ;
+    :isChildOf data:PrinceLouisFerdinandJr ;
+    :isSiblingOf data:GeorgFriedrich ;
+    :isSonOf data:PrinceLouisFerdinandJr .
+
+data:PrinceLouisFerdinandJr a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:FrederickWilliamI,
+        data:LouisFerdinand,
+        data:WilhelmII,
+        data:WilliamCrownPrince ;
+    :hasBrother data:PrinceLouisFerdinandJr ;
+    :hasChild data:GeorgFriedrich ;
+    :hasDeathYear 1977 ;
+    :hasFather data:LouisFerdinand ;
+    :hasParent data:LouisFerdinand ;
+    :hasRelation data:FerdinandOfHohenzollern,
+        data:FrederickWilliamI,
+        data:GeorgFriedrich,
+        data:KiraKirillovna,
+        data:KyrilVladimirovich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr,
+        data:VictoriaMelita,
+        data:WilhelmII,
+        data:WilhelmOfPrussia,
+        data:WilliamCrownPrince ;
+    :hasSon data:GeorgFriedrich ;
+    :isAncestorOf data:GeorgFriedrich ;
+    :isBloodrelationOf data:PrinceLouisFerdinandJr ;
+    :isBrotherOf data:PrinceLouisFerdinandJr ;
+    :isChildOf data:LouisFerdinand ;
+    :isFatherOf data:GeorgFriedrich ;
+    :isParentOf data:GeorgFriedrich ;
+    :isSiblingOf data:PrinceLouisFerdinandJr ;
+    :isSonOf data:LouisFerdinand ;
+    :isUncleOf data:GeorgFriedrich .
+
+data:LouisFerdinand a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:FrederickWilliamI,
+        data:WilhelmII,
+        data:WilliamCrownPrince ;
+    :hasBirthYear 1907 ;
+    :hasBrother data:LouisFerdinand,
+        data:WilhelmOfPrussia ;
+    :hasChild data:PrinceLouisFerdinandJr ;
+    :hasDeathYear 1994 ;
+    :hasFather data:FrederickWilliamI,
+        data:WilliamCrownPrince ;
+    :hasMarriageYear 1938 ;
+    :hasParent data:FrederickWilliamI,
+        data:WilliamCrownPrince ;
+    :hasRelation data:FerdinandOfHohenzollern,
+        data:FrederickWilliamI,
+        data:GeorgFriedrich,
+        data:KiraKirillovna,
+        data:KyrilVladimirovich,
+        data:LouisFerdinand,
+        data:PrinceLouisFerdinandJr,
+        data:VictoriaMelita,
+        data:WilhelmII,
+        data:WilhelmOfPrussia,
+        data:WilliamCrownPrince ;
+    :hasSon data:PrinceLouisFerdinandJr ;
+    :isAncestorOf data:GeorgFriedrich,
+        data:PrinceLouisFerdinandJr ;
+    :isBloodrelationOf data:LouisFerdinand,
+        data:WilhelmOfPrussia ;
+    :isBrotherOf data:LouisFerdinand,
+        data:WilhelmOfPrussia ;
+    :isChildOf data:FrederickWilliamI,
+        data:WilliamCrownPrince ;
+    :isFatherOf data:PrinceLouisFerdinandJr ;
+    :isParentOf data:PrinceLouisFerdinandJr ;
+    :isSiblingOf data:LouisFerdinand,
+        data:WilhelmOfPrussia ;
+    :isSonOf data:FrederickWilliamI,
+        data:WilliamCrownPrince ;
+    :isUncleOf data:PrinceLouisFerdinandJr .
+

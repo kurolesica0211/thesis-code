@@ -2,35 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Donatus a :Man,
-        :Person ;
-    :hasFather data:Moritz ;
-    :hasMarriageYear "2003"^^xsd:string ;
-    :hasMother data:Tatiana ;
-    :hasRelation data:Floria_Franziska ;
-    :hasSex data:Male_Sex_Node .
+data:Amelie_of_Orleans a :Woman ;
+    :isSisterOf data:Philippe_Duke_of_Orleans .
 
-data:Floria_Franziska a :Person,
-        :Woman ;
-    :hasFather data:Hubertus_von_Faber-Castell .
+data:Helene_Duchess_of_Aosta a :Woman ;
+    :isSisterOf data:Philippe_Duke_of_Orleans .
 
-data:Hubertus_von_Faber-Castell a :Ancestor,
-        :Man,
-        :Person .
+data:Jean_Duke_of_Guise a :Man .
 
-data:Male_Sex_Node a :Male,
-        :Sex .
+data:Maria_Dorothea_of_Austria a :Woman ;
+    :hasFather data:Joseph_Karl_of_Austria ;
+    :hasMother data:Clementine_of_Orleans .
 
-data:Moritz a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Philipp .
+data:Philippe_Debien a :Man ;
+    :hasFather data:Philippe_Duke_of_Orleans ;
+    :hasMother data:Nina .
 
-data:Philipp a :Ancestor,
-        :Man,
-        :Person .
-
-data:Tatiana a :Ancestor,
-        :Person,
+data:Clementine_of_Orleans a :Ancestor,
         :Woman .
+
+data:Isabelle_of_Orleans a :Ancestor,
+        :Woman .
+
+data:Joseph_Karl_of_Austria a :Ancestor,
+        :Man .
+
+data:Nina a :Ancestor,
+        :Woman .
+
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man .
+
+data:Philippe_Duke_of_Orleans a :Ancestor,
+        :Man ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1926 ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasMarriageYear 1896 ;
+    :hasMother data:Isabelle_of_Orleans .
 

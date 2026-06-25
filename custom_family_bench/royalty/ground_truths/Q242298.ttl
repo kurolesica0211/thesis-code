@@ -7,71 +7,20 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Infanta_Sofía_of_Spain a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta Sofía of Spain" ;
-    data:posIndicesFull "2015:2029" ;
-    data:posIndicesPart "2585:2590",
-        "3611:3616",
-        "4545:4550" ;
-    data:wdtLink wdt:Q847010 ;
-    :alsoKnownAs "Princess Sofia",
-        "Sofía de Borbón y Ortiz, infanta de España" ;
-    :hasSex data:female .
+data:George_II_of_Greece a :Person ;
+    rdfs:label "George II of Greece" ;
+    data:posIndicesFull "1093:1117",
+        "1098:1117" ;
+    data:posIndicesPart "1290:1296",
+        "1397:1403",
+        "1468:1474",
+        "3107:3113",
+        "3227:3233" ;
+    data:wdtLink wdt:Q152935 ;
+    :alsoKnownAs "King George II of Greece" ;
+    :hasSex data:male .
 
-data:Princess_Margaret_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Margaret of Prussia" ;
-    data:posIndicesFull "3282:3286" ;
-    data:posIndicesPart "3412:3420" ;
-    data:wdtLink wdt:Q61338 ;
-    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
-        "Margaret of Prussia",
-        "Margaret of Prussia, Queen consort-elect of Finland",
-        "Margaret of Prussia, Queen-elect of Finland",
-        "Margarethe Beatrice Feodora of Prussia",
-        "Margarethe of Prussia",
-        "Mossy",
-        "Princess Frederick Charles of Hesse",
-        "Princess Margaret Beatrice Feodora of Prussia",
-        "Princess Margarethe Beatrice Feodora of Prussia",
-        "Princess Margarethe of Prussia" ;
-    :hasSex data:female ;
-    :isAuntOf data:George_II_of_Greece,
-        data:Paul_of_Greece,
-        data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Irene-_Duchess_of_Aosta,
-        data:Princess_Katherine_of_Greece_and_Denmark .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince August Wilhelm of Prussia" ;
-    data:posIndicesFull "1086:1090",
-        "956:960" ;
-    data:posIndicesPart "1606:1612",
-        "1844:1850",
-        "1992:1998",
-        "4113:4119" ;
-    data:wdtLink wdt:Q58777 ;
-    :alsoKnownAs "Auwi" ;
-    :hasSex data:male ;
-    :isUncleOf data:Frederica_of_Hanover .
-
-data:Pavlos-_Crown_Prince_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Pavlos-_Crown_Prince_of_Greece a :Person ;
     rdfs:label "Pavlos, Crown Prince of Greece" ;
     data:posIndicesFull "682:710" ;
     data:posIndicesPart "1290:1296",
@@ -81,49 +30,16 @@ data:Pavlos-_Crown_Prince_of_Greece a :Ancestor,
         "1844:1850",
         "1992:1998",
         "3107:3113",
-        "3394:3400",
-        "4113:4119" ;
+        "3227:3233",
+        "3946:3952" ;
     data:wdtLink wdt:Q381700 ;
     :alsoKnownAs "Paul, Crown Prince of Greece",
         "Pavlos de Grecia",
         "Pavlos zu Schleswig-Holstein-Sonderburg-Glücksburg, Crown Prince of Greece" ;
-    :hasFather data:Constantine_II_of_Greece ;
     :hasParent data:Constantine_II_of_Greece ;
-    :hasSex data:male ;
-    :isChildOf data:Constantine_II_of_Greece ;
-    :isSonOf data:Constantine_II_of_Greece .
+    :hasSex data:male .
 
-data:George_II_of_Greece a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George II of Greece" ;
-    data:posIndicesFull "1093:1117",
-        "1098:1117" ;
-    data:posIndicesPart "1290:1296",
-        "1397:1403",
-        "1468:1474",
-        "3107:3113",
-        "3394:3400" ;
-    data:wdtLink wdt:Q152935 ;
-    :alsoKnownAs "King George II of Greece" ;
-    :hasBrother data:Paul_of_Greece ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Irene-_Duchess_of_Aosta,
-        data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isBrotherOf data:Paul_of_Greece,
-        data:Princess_Irene-_Duchess_of_Aosta,
-        data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isSiblingOf data:Paul_of_Greece,
-        data:Princess_Irene-_Duchess_of_Aosta,
-        data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isUncleOf data:Constantine_II_of_Greece,
-        data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain .
-
-data:Princess_Irene-_Duchess_of_Aosta a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Irene-_Duchess_of_Aosta a :Person ;
     rdfs:label "Princess Irene, Duchess of Aosta" ;
     data:posIndicesFull "0:36",
         "961:993" ;
@@ -132,6 +48,7 @@ data:Princess_Irene-_Duchess_of_Aosta a :Ancestor,
         "1534:1539",
         "1585:1590",
         "1933:1938",
+        "2015:2023",
         "2170:2178",
         "2187:2192",
         "2332:2337",
@@ -141,90 +58,22 @@ data:Princess_Irene-_Duchess_of_Aosta a :Ancestor,
         "2934:2939",
         "3129:3134",
         "312:317",
-        "3385:3390",
-        "3412:3420",
-        "3454:3459",
-        "3541:3546",
-        "3771:3776",
-        "3925:3930",
-        "3991:3996",
-        "4038:4043",
-        "4323:4328",
-        "4635:4640",
+        "3218:3223",
+        "3245:3253",
+        "3287:3292",
+        "3374:3379",
+        "3604:3609",
+        "3758:3763",
+        "3824:3829",
+        "3871:3876",
+        "4156:4161",
+        "4468:4473",
         "474:479" ;
     data:wdtLink wdt:Q236770 ;
     :alsoKnownAs "Princess Irene of Greece and Denmark" ;
-    :hasBrother data:George_II_of_Greece,
-        data:Paul_of_Greece ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isAuntOf data:Constantine_II_of_Greece,
-        data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain ;
-    :isSiblingOf data:George_II_of_Greece,
-        data:Paul_of_Greece,
-        data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isSisterOf data:George_II_of_Greece,
-        data:Paul_of_Greece,
-        data:Princess_Katherine_of_Greece_and_Denmark .
+    :hasSex data:female .
 
-data:Princess_Katherine_of_Greece_and_Denmark a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Katherine of Greece and Denmark" ;
-    data:posIndicesFull "1048:1071" ;
-    data:posIndicesPart "1290:1296",
-        "1468:1474",
-        "2170:2178",
-        "3107:3113",
-        "3394:3400",
-        "3412:3420" ;
-    data:wdtLink wdt:Q242338 ;
-    :alsoKnownAs "Lady Katherine Brandram",
-        "Princess Aikaterini of Greece and Denmark" ;
-    :hasBrother data:George_II_of_Greece,
-        data:Paul_of_Greece ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Irene-_Duchess_of_Aosta ;
-    :isAuntOf data:Constantine_II_of_Greece,
-        data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain ;
-    :isSiblingOf data:George_II_of_Greece,
-        data:Paul_of_Greece,
-        data:Princess_Irene-_Duchess_of_Aosta ;
-    :isSisterOf data:George_II_of_Greece,
-        data:Paul_of_Greece,
-        data:Princess_Irene-_Duchess_of_Aosta .
-
-data:Frederica_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Frederica of Hanover" ;
-    data:posIndicesFull "188:197",
-        "743:752",
-        "743:763" ;
-    data:wdtLink wdt:Q61351 ;
-    :alsoKnownAs "Fredericka",
-        "Friederike Luise von Griechenland",
-        "Princess Fredericka" ;
-    :hasChild data:Constantine_II_of_Greece,
-        data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain ;
-    :hasDaughter data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain ;
-    :hasSex data:female ;
-    :hasSon data:Constantine_II_of_Greece ;
-    :isMotherOf data:Constantine_II_of_Greece,
-        data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain ;
-    :isParentOf data:Constantine_II_of_Greece,
-        data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain .
-
-data:Princess_Irene_of_Greece_and_Denmark a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Irene_of_Greece_and_Denmark a :Person ;
     rdfs:label "Princess Irene of Greece and Denmark" ;
     data:posIndicesFull "0:36" ;
     data:posIndicesPart "1290:1296",
@@ -233,6 +82,7 @@ data:Princess_Irene_of_Greece_and_Denmark a :Person,
         "1534:1539",
         "1585:1590",
         "1933:1938",
+        "2015:2023",
         "2170:2178",
         "2187:2192",
         "2332:2337",
@@ -243,80 +93,70 @@ data:Princess_Irene_of_Greece_and_Denmark a :Person,
         "3107:3113",
         "3129:3134",
         "312:317",
-        "3385:3390",
-        "3394:3400",
-        "3412:3420",
-        "3454:3459",
-        "3541:3546",
-        "3771:3776",
-        "3925:3930",
-        "3991:3996",
-        "4038:4043",
-        "4323:4328",
-        "4635:4640",
+        "3218:3223",
+        "3227:3233",
+        "3245:3253",
+        "3287:3292",
+        "3374:3379",
+        "3604:3609",
+        "3758:3763",
+        "3824:3829",
+        "3871:3876",
+        "4156:4161",
+        "4468:4473",
         "474:479",
         "614:620" ;
     data:wdtLink wdt:Q242298 ;
     :alsoKnownAs "Irene zu Schleswig-Holstein-Sonderburg-Glücksburg, Πριγκίπισσα της Ελλάδος",
         "Ειρήνη της Ελλάδας και της Δανίας" ;
-    :hasBrother data:Constantine_II_of_Greece ;
-    :hasFather data:Paul_of_Greece ;
-    :hasMother data:Frederica_of_Hanover ;
     :hasParent data:Frederica_of_Hanover,
         data:Paul_of_Greece ;
-    :hasSex data:female ;
-    :hasSister data:Queen_Sofía_of_Spain ;
-    :isAuntOf data:Pavlos-_Crown_Prince_of_Greece ;
-    :isChildOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isDaughterOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isSiblingOf data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain ;
-    :isSisterOf data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain .
+    :hasSex data:female .
 
-data:Queen_Sofía_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Katherine_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Katherine of Greece and Denmark" ;
+    data:posIndicesFull "1048:1071" ;
+    data:posIndicesPart "1290:1296",
+        "1468:1474",
+        "2015:2023",
+        "2170:2178",
+        "3107:3113",
+        "3227:3233",
+        "3245:3253" ;
+    data:wdtLink wdt:Q242338 ;
+    :alsoKnownAs "Lady Katherine Brandram",
+        "Princess Aikaterini of Greece and Denmark" ;
+    :hasSex data:female .
+
+data:Queen_Sofía_of_Spain a :Person ;
     rdfs:label "Queen Sofía of Spain" ;
     data:posIndicesFull "229:240",
         "229:249",
         "2692:2703",
         "3007:3018",
         "399:410",
-        "4282:4293",
-        "4431:4442" ;
+        "4115:4126",
+        "4264:4275" ;
     data:posIndicesPart "1140:1145",
-        "3611:3616",
-        "4545:4550" ;
+        "2024:2029",
+        "3444:3449",
+        "4378:4383" ;
     data:wdtLink wdt:Q156548 ;
     :alsoKnownAs "Princess Sophia of Greece and Denmark",
         "Queen Sofia of Spain",
         "Queen Sofía",
         "Queen Sofía, Queen Consort of Spain" ;
-    :hasBrother data:Constantine_II_of_Greece ;
-    :hasFather data:Paul_of_Greece ;
-    :hasMother data:Frederica_of_Hanover ;
     :hasParent data:Frederica_of_Hanover,
         data:Paul_of_Greece ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Irene_of_Greece_and_Denmark ;
-    :isAuntOf data:Pavlos-_Crown_Prince_of_Greece ;
-    :isChildOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isDaughterOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isSiblingOf data:Constantine_II_of_Greece,
-        data:Princess_Irene_of_Greece_and_Denmark ;
-    :isSisterOf data:Constantine_II_of_Greece,
-        data:Princess_Irene_of_Greece_and_Denmark .
+    :hasSex data:female .
 
-data:Constantine_II_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Constantine_II_of_Greece a :Person ;
     rdfs:label "Constantine II of Greece" ;
     data:posIndicesFull "254:270",
         "259:273",
@@ -326,7 +166,7 @@ data:Constantine_II_of_Greece a :Ancestor,
         "2051:2062",
         "2380:2391",
         "3107:3113",
-        "3394:3400",
+        "3227:3233",
         "614:620" ;
     data:wdtLink wdt:Q151773 ;
     :alsoKnownAs "Constantine 2 of Greece",
@@ -340,38 +180,30 @@ data:Constantine_II_of_Greece a :Ancestor,
         "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
         "Konstantínos 2",
         "Konstantínos II" ;
-    :hasChild data:Pavlos-_Crown_Prince_of_Greece ;
-    :hasFather data:Paul_of_Greece ;
-    :hasMother data:Frederica_of_Hanover ;
     :hasParent data:Frederica_of_Hanover,
         data:Paul_of_Greece ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain ;
-    :hasSon data:Pavlos-_Crown_Prince_of_Greece ;
-    :isBrotherOf data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain ;
-    :isChildOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isFatherOf data:Pavlos-_Crown_Prince_of_Greece ;
-    :isParentOf data:Pavlos-_Crown_Prince_of_Greece ;
-    :isSiblingOf data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain ;
-    :isSonOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece .
+    :hasSex data:male .
 
-data:Paul_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Frederica_of_Hanover a :Person ;
+    rdfs:label "Frederica of Hanover" ;
+    data:posIndicesFull "188:197",
+        "743:752",
+        "743:763" ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka",
+        "Friederike Luise von Griechenland",
+        "Princess Fredericka" ;
+    :hasSex data:female .
+
+data:Paul_of_Greece a :Person ;
     rdfs:label "Paul of Greece" ;
     data:posIndicesFull "148:167",
         "153:167" ;
     data:posIndicesPart "1290:1296",
         "1468:1474",
         "3107:3113",
-        "3394:3400",
-        "3919:3923",
+        "3227:3233",
+        "3752:3756",
         "614:620",
         "723:727" ;
     data:wdtLink wdt:Q155394 ;
@@ -380,26 +212,9 @@ data:Paul_of_Greece a :Ancestor,
         "King Pavlos I of Greece",
         "Paul I of Greece",
         "Pavlos I of Greece" ;
-    :hasBrother data:George_II_of_Greece ;
-    :hasChild data:Constantine_II_of_Greece,
-        data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain ;
-    :hasDaughter data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Irene-_Duchess_of_Aosta,
-        data:Princess_Katherine_of_Greece_and_Denmark ;
-    :hasSon data:Constantine_II_of_Greece ;
-    :isBrotherOf data:George_II_of_Greece,
-        data:Princess_Irene-_Duchess_of_Aosta,
-        data:Princess_Katherine_of_Greece_and_Denmark ;
-    :isFatherOf data:Constantine_II_of_Greece,
-        data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain ;
-    :isParentOf data:Constantine_II_of_Greece,
-        data:Princess_Irene_of_Greece_and_Denmark,
-        data:Queen_Sofía_of_Spain ;
-    :isSiblingOf data:George_II_of_Greece,
-        data:Princess_Irene-_Duchess_of_Aosta,
-        data:Princess_Katherine_of_Greece_and_Denmark .
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

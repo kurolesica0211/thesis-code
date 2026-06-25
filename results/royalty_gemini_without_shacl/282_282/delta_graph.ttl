@@ -2,33 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Catherine_Princess_of_Wales a :Person,
-        :Woman .
+data:Michael_Bowes-Lyon a :Man,
+        :Person ;
+    :hasFather data:Fergus_Michael_Claude_Bowes-Lyon .
 
-data:Diana_Princess_of_Wales a :Person,
-        :Woman .
+data:Elizabeth_Margaret_Cator a :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1959 ;
+    :hasFather data:John_Cator .
 
-data:King_Charles_III a :Man,
+data:Fergus_Michael_Claude_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBirthYear 1928 ;
+    :hasDeathYear 1987 ;
+    :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasMarriageYear 1956 ;
+    :hasMother data:Elizabeth_Margaret_Cator ;
+    :hasRelation data:Mary_Pamela_McCorquodale .
+
+data:John_Cator a :Man,
         :Person .
 
-data:Prince_George a :Man,
-        :Person ;
-    :isBrotherOf data:Prince_Louis_of_Wales .
-
-data:Prince_William a :Man,
-        :Person ;
-    :hasFather data:King_Charles_III ;
-    :hasMother data:Diana_Princess_of_Wales .
-
-data:Princess_Charlotte a :Person,
+data:Mary_Pamela_McCorquodale a :Person,
         :Woman ;
-    :isSisterOf data:Prince_Louis_of_Wales .
+    :hasBirthYear 1932 ;
+    :hasDeathYear 2025 .
 
-data:Prince_Louis_of_Wales a :Man,
-        :Person ;
-    :hasBirthYear 2018 ;
-    :hasBrother data:Prince_George ;
-    :hasFather data:Prince_William ;
-    :hasMother data:Catherine_Princess_of_Wales ;
-    :hasSister data:Princess_Charlotte .
+data:Michael_Claude_Hamilton_Bowes-Lyon a :Man,
+        :Person .
 

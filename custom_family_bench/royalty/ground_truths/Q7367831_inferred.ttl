@@ -1,0 +1,171 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Princess_Anne_of_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Anne of Denmark"^^xsd:string ;
+    data:posIndicesFull "50:64"^^xsd:string ;
+    data:posIndicesPart "613:621"^^xsd:string ;
+    data:wdtLink wdt:Q2871729 ;
+    :alsoKnownAs "Anne Anson"^^xsd:string,
+        "Anne Anson, Viscountess Anson"^^xsd:string,
+        "Anne Bowes-Lyon"^^xsd:string,
+        "Anne Ferelith Fenella Anson"^^xsd:string,
+        "Anne Ferelith Fenella Anson, Viscountess Anson"^^xsd:string,
+        "Anne Ferelith Fenella Bowes-Lyon"^^xsd:string,
+        "Princess Anne Ferelith Fenella of Denmark"^^xsd:string ;
+    :hasRelation data:Princess_Anne_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Anne_of_Denmark ;
+    :isBloodrelationOf data:Princess_Anne_of_Denmark ;
+    :isSiblingOf data:Princess_Anne_of_Denmark ;
+    :isSisterOf data:Princess_Anne_of_Denmark .
+
+data:Rose_Leveson-Gower-_Countess_Granville a :Person,
+        :Woman ;
+    rdfs:label "Rose Leveson-Gower, Countess Granville"^^xsd:string ;
+    data:wdtLink wdt:Q7367831 ;
+    :alsoKnownAs "Lady Rose Constance Bowes-Lyon"^^xsd:string ;
+    :hasRelation data:Rose_Leveson-Gower-_Countess_Granville ;
+    :hasSex data:female ;
+    :hasSister data:Rose_Leveson-Gower-_Countess_Granville ;
+    :isBloodrelationOf data:Rose_Leveson-Gower-_Countess_Granville ;
+    :isSiblingOf data:Rose_Leveson-Gower-_Countess_Granville ;
+    :isSisterOf data:Rose_Leveson-Gower-_Countess_Granville .
+
+data:William_Leveson-Gower-_4th_Earl_Granville a :Man,
+        :Person ;
+    rdfs:label "William Leveson-Gower, 4th Earl Granville"^^xsd:string ;
+    data:posIndicesFull "389:410"^^xsd:string ;
+    data:posIndicesPart "518:527"^^xsd:string,
+        "573:582"^^xsd:string,
+        "795:804"^^xsd:string,
+        "841:850"^^xsd:string ;
+    data:wdtLink wdt:Q1149075 ;
+    :alsoKnownAs "Hon. William Leveson-Gower"^^xsd:string,
+        "Hon. William Spencer Leveson-Gower"^^xsd:string,
+        "Vice-Adm. William Spencer Leveson-Gower"^^xsd:string,
+        "William Leveson-Gower"^^xsd:string,
+        "William Spencer Leveson-Gower"^^xsd:string ;
+    :hasBrother data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :hasRelation data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :isBrotherOf data:William_Leveson-Gower-_4th_Earl_Granville ;
+    :isSiblingOf data:William_Leveson-Gower-_4th_Earl_Granville .
+
+data:female a :Female .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "296:314"^^xsd:string,
+        "302:314"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasAncestor data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isBloodrelationOf data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isSisterOf data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon .
+
+data:Princess_Margaret-_Countess_of_Snowdon a :Person,
+        :Woman ;
+    rdfs:label "Princess Margaret, Countess of Snowdon"^^xsd:string ;
+    data:posIndicesFull "622:635"^^xsd:string ;
+    data:wdtLink wdt:Q153815 ;
+    :alsoKnownAs "Margaret Rose"^^xsd:string,
+        "Margaret Windsor"^^xsd:string,
+        "Margaret York"^^xsd:string ;
+    :hasAncestor data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isBloodrelationOf data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isSisterOf data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "225:240"^^xsd:string,
+        "241:257"^^xsd:string,
+        "296:311"^^xsd:string,
+        "964:979"^^xsd:string,
+        "980:996"^^xsd:string ;
+    data:posIndicesPart "762:767"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasChild data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasDaughter data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasRelation data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAncestorOf data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isAuntOf data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isBloodrelationOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isParentOf data:Elizabeth_II,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+

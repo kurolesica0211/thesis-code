@@ -1,0 +1,125 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Dorothy_Osborne a :Person,
+        :Woman ;
+    rdfs:label "Dorothy Osborne"^^xsd:string ;
+    data:posIndicesFull "1058:1096"^^xsd:string ;
+    data:wdtLink wdt:Q75240055 ;
+    :alsoKnownAs "Dorothy Beatrix Godolphin Bowes-Lyon, Countess of Strathearn and Kinghorne"^^xsd:string,
+        "Dorothy Bowes-Lyon, Countess of Strathearn and Kinghorne"^^xsd:string,
+        "Lady Dorothy Beatrix Godolphin Osborne"^^xsd:string ;
+    :hasRelation data:Dorothy_Osborne ;
+    :hasSex data:female ;
+    :hasSister data:Dorothy_Osborne ;
+    :isBloodrelationOf data:Dorothy_Osborne ;
+    :isSiblingOf data:Dorothy_Osborne ;
+    :isSisterOf data:Dorothy_Osborne .
+
+data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne a :Man,
+        :Person ;
+    rdfs:label "Patrick Bowes-Lyon, 15th Earl of Strathmore and Kinghorne"^^xsd:string ;
+    data:posIndicesFull "0:65"^^xsd:string ;
+    data:posIndicesPart "1235:1245"^^xsd:string,
+        "337:344"^^xsd:string,
+        "345:350"^^xsd:string,
+        "351:355"^^xsd:string,
+        "482:492"^^xsd:string,
+        "602:606"^^xsd:string,
+        "610:620"^^xsd:string,
+        "625:634"^^xsd:string,
+        "641:645"^^xsd:string,
+        "681:685"^^xsd:string,
+        "930:940"^^xsd:string ;
+    data:wdtLink wdt:Q1758535 ;
+    :alsoKnownAs "Patrick Bowes-Lyon, 15th and 2nd Earl of Strathmore and Kinghorne"^^xsd:string ;
+    :hasBrother data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasRelation data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBrotherOf data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne ;
+    :isSiblingOf data:Patrick_Bowes-Lyon-_15th_Earl_of_Strathmore_and_Kinghorne .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "252:267"^^xsd:string,
+        "268:284"^^xsd:string,
+        "311:326"^^xsd:string,
+        "773:798"^^xsd:string,
+        "778:798"^^xsd:string,
+        "806:821"^^xsd:string,
+        "822:838"^^xsd:string,
+        "862:877"^^xsd:string ;
+    data:posIndicesPart "993:1002"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasRelation data:Elizabeth_II,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAncestorOf data:Elizabeth_II ;
+    :isAuntOf data:Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "311:329"^^xsd:string,
+        "317:329"^^xsd:string,
+        "862:880"^^xsd:string,
+        "868:880"^^xsd:string ;
+    data:posIndicesPart "993:1002"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasAncestor data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:Elizabeth_II,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+

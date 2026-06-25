@@ -2,49 +2,58 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elizabeth_Bowes-Lyon a :Woman ;
-    :hasFather data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne ;
-    :hasMother data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne ;
-    :isSisterOf data:John_Herbert_Bowes-Lyon .
-
-data:Lady_Jane_McDonnell a :Woman .
-
-data:Nerissa_Bowes-Lyon a :Woman ;
-    :hasBirthYear 1919 ;
-    :hasDeathYear 1986 ;
-    :hasFather data:John_Herbert_Bowes-Lyon ;
-    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
-    :isSisterOf data:Katherine_Bowes-Lyon .
-
-data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton a :Ancestor,
-        :Man .
-
-data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Ancestor,
-        :Man ;
-    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
-    :hasMother data:Harriet_Williamina_Hepburn-Forbes .
-
-data:Harriet_Williamina_Hepburn-Forbes a :Ancestor,
-        :Woman .
-
-data:Katherine_Bowes-Lyon a :Woman ;
-    :hasBirthYear 1926 ;
-    :hasDeathYear 2014 ;
-    :hasFather data:John_Herbert_Bowes-Lyon ;
-    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
-
-data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne a :Ancestor,
-        :Woman .
-
-data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
-        :Man .
-
-data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+data:Mary_Cecilia_Colman a :Person,
         :Woman ;
-    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .
+    :hasBirthYear 1932 ;
+    :hasDeathYear 2021 ;
+    :hasFather data:Michael_Bowes-Lyon ;
+    :hasMarriageYear 1951 ;
+    :hasMother data:Elizabeth_Margaret_Cator ;
+    :hasRelation data:Timothy_Colman ;
+    :isSiblingOf data:Fergus_Michael_Claude_Bowes-Lyon,
+        data:Michael_Albemarle_Bowes-Lyon,
+        data:Patricia_Maud_Tetley .
 
-data:John_Herbert_Bowes-Lyon a :Ancestor,
-        :Man ;
-    :hasFather data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne ;
-    :hasMother data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne .
+data:Cecilia_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person .
+
+data:Elizabeth_Margaret_Cator a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1959 .
+
+data:Fergus_Michael_Claude_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person .
+
+data:Geoffrey_Colman a :Ancestor,
+        :Man,
+        :Person .
+
+data:Michael_Albemarle_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person .
+
+data:Michael_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1893 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasMother data:Cecilia_Bowes-Lyon .
+
+data:Patricia_Maud_Tetley a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Timothy_Colman a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Geoffrey_Colman .
 

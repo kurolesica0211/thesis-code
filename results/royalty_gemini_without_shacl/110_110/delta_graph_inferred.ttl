@@ -1,0 +1,283 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_III_King_of_the_United_Kingdom a :Man,
+        :Person ;
+    :hasBrother data:Charles_III_King_of_the_United_Kingdom ;
+    :hasRelation data:Charles_III_King_of_the_United_Kingdom ;
+    :isBloodrelationOf data:Charles_III_King_of_the_United_Kingdom ;
+    :isBrotherOf data:Charles_III_King_of_the_United_Kingdom ;
+    :isSiblingOf data:Charles_III_King_of_the_United_Kingdom .
+
+data:Margarita_Princess_of_Hohenlohe_Langenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :hasDaughter data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :hasRelation data:Margarita_Princess_of_Hohenlohe_Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :hasSister data:Margarita_Princess_of_Hohenlohe_Langenburg ;
+    :isAncestorOf data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :isAuntOf data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :isBloodrelationOf data:Margarita_Princess_of_Hohenlohe_Langenburg ;
+    :isMotherOf data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :isParentOf data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :isSiblingOf data:Margarita_Princess_of_Hohenlohe_Langenburg ;
+    :isSisterOf data:Margarita_Princess_of_Hohenlohe_Langenburg .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Bernhard_Margrave_of_Baden,
+        data:Maximilian_Margrave_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isUncleOf data:Maximilian_Margrave_of_Baden .
+
+data:Princess_Beatrix_of_Hohenlohe_Langenburg a :Person,
+        :Woman ;
+    :hasAncestor data:Margarita_Princess_of_Hohenlohe_Langenburg ;
+    :hasMother data:Margarita_Princess_of_Hohenlohe_Langenburg ;
+    :hasParent data:Margarita_Princess_of_Hohenlohe_Langenburg ;
+    :hasRelation data:Margarita_Princess_of_Hohenlohe_Langenburg,
+        data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :hasSister data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :isBloodrelationOf data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :isChildOf data:Margarita_Princess_of_Hohenlohe_Langenburg ;
+    :isDaughterOf data:Margarita_Princess_of_Hohenlohe_Langenburg ;
+    :isSiblingOf data:Princess_Beatrix_of_Hohenlohe_Langenburg ;
+    :isSisterOf data:Princess_Beatrix_of_Hohenlohe_Langenburg .
+
+data:Berthold_Margrave_of_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Berthold_Margrave_of_Baden ;
+    :hasChild data:Maximilian_Margrave_of_Baden ;
+    :hasRelation data:Bernhard_Margrave_of_Baden,
+        data:Berthold_Margrave_of_Baden,
+        data:Maximilian_Margrave_of_Baden ;
+    :hasSon data:Maximilian_Margrave_of_Baden ;
+    :isAncestorOf data:Bernhard_Margrave_of_Baden,
+        data:Maximilian_Margrave_of_Baden ;
+    :isBloodrelationOf data:Berthold_Margrave_of_Baden ;
+    :isBrotherOf data:Berthold_Margrave_of_Baden ;
+    :isFatherOf data:Maximilian_Margrave_of_Baden ;
+    :isParentOf data:Maximilian_Margrave_of_Baden ;
+    :isSiblingOf data:Berthold_Margrave_of_Baden ;
+    :isUncleOf data:Maximilian_Margrave_of_Baden .
+
+data:Archduke_Hubert_Salvator_of_Austria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Archduke_Hubert_Salvator_of_Austria ;
+    :hasChild data:Archduchess_Valerie_of_Austria ;
+    :hasDaughter data:Archduchess_Valerie_of_Austria ;
+    :hasRelation data:Archduchess_Valerie_of_Austria,
+        data:Archduke_Hubert_Salvator_of_Austria,
+        data:Bernhard_Margrave_of_Baden,
+        data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita,
+        data:Princess_Rosemary_of_Salm_Salm ;
+    :isAncestorOf data:Archduchess_Valerie_of_Austria ;
+    :isBloodrelationOf data:Archduke_Hubert_Salvator_of_Austria ;
+    :isBrotherOf data:Archduke_Hubert_Salvator_of_Austria ;
+    :isFatherOf data:Archduchess_Valerie_of_Austria ;
+    :isParentOf data:Archduchess_Valerie_of_Austria ;
+    :isSiblingOf data:Archduke_Hubert_Salvator_of_Austria ;
+    :isUncleOf data:Archduchess_Valerie_of_Austria .
+
+data:Princess_Rosemary_of_Salm_Salm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Archduchess_Valerie_of_Austria ;
+    :hasDaughter data:Archduchess_Valerie_of_Austria ;
+    :hasRelation data:Archduchess_Valerie_of_Austria,
+        data:Archduke_Hubert_Salvator_of_Austria,
+        data:Bernhard_Margrave_of_Baden,
+        data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita,
+        data:Princess_Rosemary_of_Salm_Salm ;
+    :hasSister data:Princess_Rosemary_of_Salm_Salm ;
+    :isAncestorOf data:Archduchess_Valerie_of_Austria ;
+    :isAuntOf data:Archduchess_Valerie_of_Austria ;
+    :isBloodrelationOf data:Princess_Rosemary_of_Salm_Salm ;
+    :isMotherOf data:Archduchess_Valerie_of_Austria ;
+    :isParentOf data:Archduchess_Valerie_of_Austria ;
+    :isSiblingOf data:Princess_Rosemary_of_Salm_Salm ;
+    :isSisterOf data:Princess_Rosemary_of_Salm_Salm .
+
+data:Princess_Theodora_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasChild data:Maximilian_Margrave_of_Baden ;
+    :hasRelation data:Bernhard_Margrave_of_Baden,
+        data:Maximilian_Margrave_of_Baden,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSon data:Maximilian_Margrave_of_Baden ;
+    :isAncestorOf data:Bernhard_Margrave_of_Baden,
+        data:Maximilian_Margrave_of_Baden ;
+    :isAuntOf data:Maximilian_Margrave_of_Baden ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isMotherOf data:Maximilian_Margrave_of_Baden ;
+    :isParentOf data:Maximilian_Margrave_of_Baden ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isSisterOf data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Prince_Ludwig a :Man,
+        :Person ;
+    :hasBirthYear 1937 ;
+    :hasBrother data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig ;
+    :hasRelation data:Archduchess_Valerie_of_Austria,
+        data:Archduke_Hubert_Salvator_of_Austria,
+        data:Bernhard_Margrave_of_Baden,
+        data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita,
+        data:Princess_Rosemary_of_Salm_Salm ;
+    :hasSister data:Princess_Margarita ;
+    :isBloodrelationOf data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita ;
+    :isBrotherOf data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita ;
+    :isSiblingOf data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita ;
+    :isUncleOf data:Bernhard_Margrave_of_Baden .
+
+data:Princess_Margarita a :Person,
+        :Woman ;
+    :hasBrother data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig ;
+    :hasRelation data:Archduchess_Valerie_of_Austria,
+        data:Archduke_Hubert_Salvator_of_Austria,
+        data:Bernhard_Margrave_of_Baden,
+        data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita,
+        data:Princess_Rosemary_of_Salm_Salm ;
+    :hasSister data:Princess_Margarita ;
+    :isAuntOf data:Bernhard_Margrave_of_Baden ;
+    :isBloodrelationOf data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita ;
+    :isSiblingOf data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita ;
+    :isSisterOf data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita .
+
+data:Archduchess_Valerie_of_Austria a :Person,
+        :Woman ;
+    :hasAncestor data:Archduke_Hubert_Salvator_of_Austria,
+        data:Princess_Rosemary_of_Salm_Salm ;
+    :hasBirthYear 1941 ;
+    :hasFather data:Archduke_Hubert_Salvator_of_Austria ;
+    :hasMother data:Princess_Rosemary_of_Salm_Salm ;
+    :hasParent data:Archduke_Hubert_Salvator_of_Austria,
+        data:Princess_Rosemary_of_Salm_Salm ;
+    :hasRelation data:Archduchess_Valerie_of_Austria,
+        data:Archduke_Hubert_Salvator_of_Austria,
+        data:Bernhard_Margrave_of_Baden,
+        data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita,
+        data:Princess_Rosemary_of_Salm_Salm ;
+    :hasSister data:Archduchess_Valerie_of_Austria ;
+    :isBloodrelationOf data:Archduchess_Valerie_of_Austria ;
+    :isChildOf data:Archduke_Hubert_Salvator_of_Austria,
+        data:Princess_Rosemary_of_Salm_Salm ;
+    :isDaughterOf data:Archduke_Hubert_Salvator_of_Austria,
+        data:Princess_Rosemary_of_Salm_Salm ;
+    :isSiblingOf data:Archduchess_Valerie_of_Austria ;
+    :isSisterOf data:Archduchess_Valerie_of_Austria .
+
+data:Bernhard_Margrave_of_Baden a :Man,
+        :Person ;
+    :hasAncestor data:Berthold_Margrave_of_Baden,
+        data:Maximilian_Margrave_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasBrother data:Bernhard_Margrave_of_Baden ;
+    :hasFather data:Maximilian_Margrave_of_Baden ;
+    :hasParent data:Maximilian_Margrave_of_Baden ;
+    :hasRelation data:Archduchess_Valerie_of_Austria,
+        data:Archduke_Hubert_Salvator_of_Austria,
+        data:Bernhard_Margrave_of_Baden,
+        data:Berthold_Margrave_of_Baden,
+        data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Margarita,
+        data:Princess_Rosemary_of_Salm_Salm,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Bernhard_Margrave_of_Baden ;
+    :isBrotherOf data:Bernhard_Margrave_of_Baden ;
+    :isChildOf data:Maximilian_Margrave_of_Baden ;
+    :isSiblingOf data:Bernhard_Margrave_of_Baden ;
+    :isSonOf data:Maximilian_Margrave_of_Baden .
+
+data:Maximilian_Margrave_of_Baden a :Ancestor,
+        :Man,
+        :Person ;
+    :alsoKnownAs "Max von Baden"^^xsd:string ;
+    :hasAncestor data:Berthold_Margrave_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasBirthYear 1933 ;
+    :hasBrother data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig ;
+    :hasChild data:Bernhard_Margrave_of_Baden ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Berthold_Margrave_of_Baden ;
+    :hasMarriageYear 1966 ;
+    :hasMother data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasParent data:Berthold_Margrave_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasRelation data:Archduchess_Valerie_of_Austria,
+        data:Archduke_Hubert_Salvator_of_Austria,
+        data:Bernhard_Margrave_of_Baden,
+        data:Berthold_Margrave_of_Baden,
+        data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Prince_Philip_Duke_of_Edinburgh,
+        data:Princess_Margarita,
+        data:Princess_Rosemary_of_Salm_Salm,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Margarita ;
+    :hasSon data:Bernhard_Margrave_of_Baden ;
+    :isAncestorOf data:Bernhard_Margrave_of_Baden ;
+    :isBloodrelationOf data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita ;
+    :isBrotherOf data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita ;
+    :isChildOf data:Berthold_Margrave_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isFatherOf data:Bernhard_Margrave_of_Baden ;
+    :isParentOf data:Bernhard_Margrave_of_Baden ;
+    :isSiblingOf data:Maximilian_Margrave_of_Baden,
+        data:Prince_Ludwig,
+        data:Princess_Margarita ;
+    :isSonOf data:Berthold_Margrave_of_Baden,
+        data:Princess_Theodora_of_Greece_and_Denmark ;
+    :isUncleOf data:Bernhard_Margrave_of_Baden .
+

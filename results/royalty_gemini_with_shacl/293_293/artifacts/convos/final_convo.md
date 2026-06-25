@@ -85,49 +85,23 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Ernst August, Hereditary Prince of Hanover (German:
-Ernst August Prinz von Hannover Herzog zu Braunschweig und Lüneburg, Königlicher Prinz von Großbritannien und Irland; born 19 July 1983) is a German financier and the eldest child of Ernst August, Prince of Hanover (head of the ancient House of Hanover which once ruled the Kingdom of Hanover and were rulers of Great Britain until 1901) and his first wife Chantal Hochuli.
-Due to his father's second marriage, he is also the stepson of Caroline, Princess of Hanover, a Monegasque Princess and the sister of Albert II of Monaco.
-Background
-
-Ernst August and his younger brother Christian were born in Hildesheim, Lower Saxony, while their half-sister, Alexandra, was born in Austria and lives with her mother in Monaco.
-Ernst August was baptized on 15 October 1983 at Marienburg Castle, his godparents including Felipe VI of Spain and Constantine II of Greece.
-Until his mid-teens, Ernst August and his brother lived at Hurlingham Lodge in London.
-Education
-
-Ernst August began his secondary education at Malvern College, but ultimately completed that phase of his education with an International Baccalaureate back on the Continent.
-After his marriage in 2017 he and his wife moved to Hanover.
-Already in 2004, his father had signed over to him the German property of the House of Hanover, including gothic-revival Marienburg Castle, the agricultural estates of Calenberg Castle and the Fürstenhaus ("Princely House") at Herrenhausen Gardens in Hanover; the elaborate museum in this small palace, built by King George I of Great Britain in 1720, has been closed to the public since 2011.
-Since 2004, the prince has taken over many representative tasks on behalf of his father.
-The father remained in charge of the Austrian family assets until 2013 when he was removed from the chairmanship of a family foundation based in Liechtenstein, the Duke of Cumberland Foundation, which holds the properties near Gmunden in Austria, the Hanovers' main residence in exile after 1866 when their Kingdom of Hanover was annexed by Prussia.
-Instead, the younger Ernst August was put in charge, reportedly for negligence on part of his father, at the initiative of the foundation's trustee Prince Michael of Liechtenstein.
-In 2017 Ernst August the Elder filed legal action to recover chairmanship.
-In 2014, Ernst August lent a number of paintings and objects for a Lower Saxony state exhibition, When the Royals came from Hanover - The rulers of Hanover on England's throne, which included exhibits in five museums and castles under the auspices of Charles, Prince of Wales.
-Thirty of more than 1000 items were contributed by Elizabeth II, including the State Crown of George I, while Ernst August provided the king's famous Augsburg silver throne and other furniture dating to 1720.
-He hosted a parallel exhibition, The Way to the Crown, at Marienburg Castle until through 2016, displaying—among other items—the crown jewels of the Kingdom of Hanover.
-Marriage and issue
-
-In the summer of 2016 Ernst August became engaged to Ekaterina Igorievna Malysheva (born 30 July 1986, Apatity, Soviet Russia), a Russian designer, general manager of Audiotube and founder of EKAT, and daughter of Igor Malyshev and Svetlana Malysheva.
-Days before the wedding, his father, the elder Ernst August publicly stated concerns about potential adverse impacts on family assets if the younger Ernst August were to marry his chosen fiancée.
-Despite the dynastic tradition of obtaining the head of the House of Hanover's express, prior authorization for an heir's marriage in accordance with an 1836 Hanoverian house law (as Ernst August's father had done when marrying his sons' future mother in 1981), the bridegroom's father declared his intention to withhold consent for his son's marriage to Ekaterina Malysheva, reportedly in a dispute over family assets.
-Nonetheless, the civil marriage took place on 6 July 2017 in Hanover's New Town Hall and was conducted by the mayor of Hanover, Stefan Schostok.
-The church marriage took place on 8 July 2017 in the Hanover Market Church at which the former Landesbischof of the Evangelical-Lutheran Church of Hanover, Horst Hirschler, presided.
-Her wedding dress was the work of Lebanese designer Sandra Mansour, and she wore a tiara that belonged to the former Kaiser Wilhelm II's only daughter, Princess Victoria Louise of Prussia.
-Among the wedding guests were: Prince Christian of Hanover, Princess Alexandra of Hanover, Andrea Casiraghi, Tatiana Santo Domingo, Pierre Casiraghi, Beatrice Borromeo, Charlotte Casiraghi, Georg Friedrich, Prince of Prussia and his wife Princess Sophie, Crown Prince Pavlos of Greece and his wife Crown Princess Marie-Chantal, Hereditary Prince Hubertus of Saxe-Coburg and Gotha, Alexander, Prince of Schaumburg-Lippe and Princess Elisabeth von Thurn und Taxis.
-The father of the groom, Prince Ernst August, did not attend the wedding.
-Thus, while descendants of non-dynastic marriages may have a legal right to the use of "Prinz/Prinzessin von Hannover Herzog/Herzogin zu Braunschweig und Lüneburg Königlicher Prinz/Prinzessin von Großbritannien und Irland" as surnames, they are not recognized as bearing rank, styles titles or membership appertaining to the House of Hanover, according to its house rules.
-Nor is the title "Prince/ss of Great Britain and Ireland", re-claimed by the deposed House of Hanover in 1931, accorded by British sovereigns to members thereof born after 30 November 1917.
-
-
-Notes and references
-
-External links
+Samuel Chatto (born 28 July 1996) is a British ceramic artist.
+He is a member of the extended British royal family as the elder child of Lady Sarah Chatto and Daniel Chatto, both of whom are artists.
+He is a grandson of Princess Margaret, Countess of Snowdon and a great-nephew of Elizabeth II.
+Chatto studied at the University of Edinburgh, and graduated in 2018 with a degree in art history.
+Chatto has a home studio, and has sold his creations on his own website.
+Chatto has spent time in Japan to learn pottery techniques.
+In 2019, Chatto spent six weeks in India to complete 200 hours of training to become a yoga instructor.
+Chatto does not have any official royal duties, but has attended several events such as the state funeral of Elizabeth II, the coronation of Charles III and Camilla, and the wedding of Prince Harry and Meghan Markle.
+Chatto attended a banquet during a state visit by Japanese Emperor Naruhito to the United Kingdom in 2024.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -143,39 +117,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -190,6 +134,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -207,6 +168,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -274,29 +250,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -305,6 +273,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -317,6 +293,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -325,17 +303,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -363,6 +343,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -378,118 +442,154 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c6ccac74-a25c-4568-b0ee-1016a281f3a7)
- Call ID: c6ccac74-a25c-4568-b0ee-1016a281f3a7
+  AssignClass (ec0f72ee-9d55-494d-b207-79c30af5e4f3)
+ Call ID: ec0f72ee-9d55-494d-b207-79c30af5e4f3
   Args:
+    source: :SamuelChatto
     type: :Man
-    source: Ernst_August_Hereditary_Prince_of_Hanover
-  AssignClass (f4b91395-b4fc-4484-998a-5e5f47bd6e53)
- Call ID: f4b91395-b4fc-4484-998a-5e5f47bd6e53
+  AssignClass (c3bd003d-b145-49f6-8f0f-ef2d2966d5f5)
+ Call ID: c3bd003d-b145-49f6-8f0f-ef2d2966d5f5
   Args:
-    type: :Man
-    source: Ernst_August_Prince_of_Hanover
-  AssignClass (e0f6768c-bfe6-45e2-afe1-aa16efb4ebd9)
- Call ID: e0f6768c-bfe6-45e2-afe1-aa16efb4ebd9
+    type: :Person
+    source: :SamuelChatto
+  AddLiteral (541b93f4-24f0-4443-ad89-b0764e143645)
+ Call ID: 541b93f4-24f0-4443-ad89-b0764e143645
   Args:
-    type: :Woman
-    source: Chantal_Hochuli
-  AssignClass (c355a331-a1e2-44eb-9cfc-eebc38317a19)
- Call ID: c355a331-a1e2-44eb-9cfc-eebc38317a19
-  Args:
-    type: :Man
-    source: Christian_of_Hanover
-  AssignClass (3c7bf612-69d0-4e17-a453-d773721cc1cf)
- Call ID: 3c7bf612-69d0-4e17-a453-d773721cc1cf
-  Args:
-    type: :Woman
-    source: Alexandra_of_Hanover
-  AssignClass (d20add10-1553-4e0d-934c-ff43b5fef729)
- Call ID: d20add10-1553-4e0d-934c-ff43b5fef729
-  Args:
-    type: :Woman
-    source: Ekaterina_Igorievna_Malysheva
-  AssignClass (9c3ff4b5-e613-4f8f-a07b-38f1cdcacdb8)
- Call ID: 9c3ff4b5-e613-4f8f-a07b-38f1cdcacdb8
-  Args:
-    type: :Man
-    source: Igor_Malyshev
-  AssignClass (483ce8c0-e08a-4614-a50c-8261182a11a0)
- Call ID: 483ce8c0-e08a-4614-a50c-8261182a11a0
-  Args:
-    type: :Woman
-    source: Svetlana_Malysheva
-  AddLiteral (cc92ddc4-e628-4372-948e-ab84da4ed006)
- Call ID: cc92ddc4-e628-4372-948e-ab84da4ed006
-  Args:
+    literal_value: 1996
+    source: :SamuelChatto
     literal_type: xsd:integer
-    literal_value: 1983
-    source: Ernst_August_Hereditary_Prince_of_Hanover
     relation: :hasBirthYear
-  AddTriple (f70a8264-60a5-4632-a169-0ff273afa1a8)
- Call ID: f70a8264-60a5-4632-a169-0ff273afa1a8
+  AssignClass (a6e7e132-200f-459c-9216-ebfb5c618333)
+ Call ID: a6e7e132-200f-459c-9216-ebfb5c618333
   Args:
-    source: Ernst_August_Hereditary_Prince_of_Hanover
-    target: Ernst_August_Prince_of_Hanover
-    relation: :hasFather
-  AddTriple (e3dbe980-3e5a-4b96-af7b-444ddf98df60)
- Call ID: e3dbe980-3e5a-4b96-af7b-444ddf98df60
+    type: :Woman
+    source: :LadySarahChatto
+  AssignClass (3bdd9759-b586-43fe-b82a-7a14a9abe84f)
+ Call ID: 3bdd9759-b586-43fe-b82a-7a14a9abe84f
   Args:
+    type: :Person
+    source: :LadySarahChatto
+  AssignClass (f8e06402-d54f-4f7e-8bd9-6b6498b66942)
+ Call ID: f8e06402-d54f-4f7e-8bd9-6b6498b66942
+  Args:
+    source: :DanielChatto
+    type: :Man
+  AssignClass (dd4b4085-0ab5-4639-9c95-459e218a9fa5)
+ Call ID: dd4b4085-0ab5-4639-9c95-459e218a9fa5
+  Args:
+    type: :Person
+    source: :DanielChatto
+  AddTriple (d3b05223-15e6-4aa3-9567-9419af6f1e53)
+ Call ID: d3b05223-15e6-4aa3-9567-9419af6f1e53
+  Args:
+    source: :SamuelChatto
+    target: :LadySarahChatto
     relation: :hasMother
-    source: Ernst_August_Hereditary_Prince_of_Hanover
-    target: Chantal_Hochuli
-  AddTriple (4a7c1d57-30a5-42aa-a6ef-e9a37b96bc24)
- Call ID: 4a7c1d57-30a5-42aa-a6ef-e9a37b96bc24
+  AddTriple (e7670d4e-87b7-402e-8f0e-a85316d5f66b)
+ Call ID: e7670d4e-87b7-402e-8f0e-a85316d5f66b
   Args:
     relation: :hasFather
-    target: Ernst_August_Prince_of_Hanover
-    source: Christian_of_Hanover
-  AddTriple (885019a8-ed76-4cc9-9c9e-f2d81bcc8cc1)
- Call ID: 885019a8-ed76-4cc9-9c9e-f2d81bcc8cc1
+    target: :DanielChatto
+    source: :SamuelChatto
+  AssignClass (3d8d96ef-370d-4ed8-b866-db0a3fb1425b)
+ Call ID: 3d8d96ef-370d-4ed8-b866-db0a3fb1425b
   Args:
-    target: Chantal_Hochuli
-    source: Christian_of_Hanover
-    relation: :hasMother
-  AddTriple (92367d06-7bac-460e-b796-4e3c842f2571)
- Call ID: 92367d06-7bac-460e-b796-4e3c842f2571
+    source: :PrincessMargaret
+    type: :Woman
+  AssignClass (1bef0319-567b-45c5-9fbc-5fc8fd6c701a)
+ Call ID: 1bef0319-567b-45c5-9fbc-5fc8fd6c701a
   Args:
-    relation: :hasFather
-    source: Alexandra_of_Hanover
-    target: Ernst_August_Prince_of_Hanover
-  AddLiteral (de1a3f3a-2b55-4837-b32c-98c3e3bab222)
- Call ID: de1a3f3a-2b55-4837-b32c-98c3e3bab222
+    source: :PrincessMargaret
+    type: :Person
+  AddTriple (7d2eec43-2dd2-4898-ac7e-140cee5d0580)
+ Call ID: 7d2eec43-2dd2-4898-ac7e-140cee5d0580
   Args:
-    literal_type: xsd:integer
-    literal_value: 1986
-    source: Ekaterina_Igorievna_Malysheva
-    relation: :hasBirthYear
-  AddTriple (be6bcae7-7e53-4990-a97c-6f69c6d09245)
- Call ID: be6bcae7-7e53-4990-a97c-6f69c6d09245
+    target: :PrincessMargaret
+    source: :SamuelChatto
+    relation: :hasAncestor
+  AssignClass (11373dff-6abc-4f79-8f73-529525a31190)
+ Call ID: 11373dff-6abc-4f79-8f73-529525a31190
   Args:
-    relation: :hasFather
-    target: Igor_Malyshev
-    source: Ekaterina_Igorievna_Malysheva
-  AddTriple (318726ca-f6d6-4852-85b4-a18e12f82f9c)
- Call ID: 318726ca-f6d6-4852-85b4-a18e12f82f9c
+    type: :Woman
+    source: :ElizabethII
+  AssignClass (66ace000-00fd-4336-b90b-1142bcfe4689)
+ Call ID: 66ace000-00fd-4336-b90b-1142bcfe4689
   Args:
-    relation: :hasMother
-    source: Ekaterina_Igorievna_Malysheva
-    target: Svetlana_Malysheva
-  AddLiteral (f2689c5f-ab22-4a3e-888f-e1504a7396be)
- Call ID: f2689c5f-ab22-4a3e-888f-e1504a7396be
+    source: :ElizabethII
+    type: :Person
+  AssignClass (76c6a767-7305-4bd9-b064-bee67126c24f)
+ Call ID: 76c6a767-7305-4bd9-b064-bee67126c24f
   Args:
-    relation: :hasMarriageYear
-    source: Ernst_August_Hereditary_Prince_of_Hanover
-    literal_type: xsd:integer
-    literal_value: 2017
-  AddTriple (8b881ce6-775d-4f0e-87d7-9dba4e7748d3)
- Call ID: 8b881ce6-775d-4f0e-87d7-9dba4e7748d3
+    type: :Man
+    source: :CharlesIII
+  AssignClass (dff5c292-0cf1-4ba7-9acb-643d00514fba)
+ Call ID: dff5c292-0cf1-4ba7-9acb-643d00514fba
   Args:
-    relation: :hasRelation
-    source: Ernst_August_Hereditary_Prince_of_Hanover
-    target: Ekaterina_Igorievna_Malysheva
-  Finish (5ca9a482-818d-464e-ae25-647d712e9363)
- Call ID: 5ca9a482-818d-464e-ae25-647d712e9363
+    source: :CharlesIII
+    type: :Person
+  AssignClass (6a13f50d-4b1a-4a80-bf97-442611812228)
+ Call ID: 6a13f50d-4b1a-4a80-bf97-442611812228
   Args:
+    type: :Woman
+    source: :Camilla
+  AssignClass (9f4aaa98-3409-4705-8045-f449578682e5)
+ Call ID: 9f4aaa98-3409-4705-8045-f449578682e5
+  Args:
+    type: :Person
+    source: :Camilla
+  AssignClass (9dd06860-9282-4d29-9cea-76f68fab0b6c)
+ Call ID: 9dd06860-9282-4d29-9cea-76f68fab0b6c
+  Args:
+    source: :PrinceHarry
+    type: :Man
+  AssignClass (9b1b29fa-12cd-462b-a4ea-933a796089c9)
+ Call ID: 9b1b29fa-12cd-462b-a4ea-933a796089c9
+  Args:
+    type: :Person
+    source: :PrinceHarry
+  AssignClass (2c0eec97-d719-45f4-b1e5-8907887125b1)
+ Call ID: 2c0eec97-d719-45f4-b1e5-8907887125b1
+  Args:
+    source: :MeghanMarkle
+    type: :Woman
+  AssignClass (47ccb88d-78ab-4fd9-83f6-37030bb0b1b2)
+ Call ID: 47ccb88d-78ab-4fd9-83f6-37030bb0b1b2
+  Args:
+    source: :MeghanMarkle
+    type: :Person
+  AssignClass (770d078e-bb4c-4379-846c-cae2312cd680)
+ Call ID: 770d078e-bb4c-4379-846c-cae2312cd680
+  Args:
+    type: :Man
+    source: :Naruhito
+  AssignClass (a473e522-c78e-48ca-b2a7-2a27d3f10309)
+ Call ID: a473e522-c78e-48ca-b2a7-2a27d3f10309
+  Args:
+    source: :Naruhito
+    type: :Person
+  Finish (15481372-5a4a-41bc-8f68-5cf61cc24c0d)
+ Call ID: 15481372-5a4a-41bc-8f68-5cf61cc24c0d
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -570,32 +670,39 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexandra_of_Hanover a :Woman ;
-      :hasFather data:Ernst_August_Prince_of_Hanover .
+  data:Camilla a :Person,
+          :Woman .
 
-  data:Christian_of_Hanover a :Man ;
-      :hasFather data:Ernst_August_Prince_of_Hanover ;
-      :hasMother data:Chantal_Hochuli .
+  data:CharlesIII a :Man,
+          :Person .
 
-  data:Ernst_August_Hereditary_Prince_of_Hanover a :Man ;
-      :hasBirthYear 1983 ;
-      :hasFather data:Ernst_August_Prince_of_Hanover ;
-      :hasMarriageYear 2017 ;
-      :hasMother data:Chantal_Hochuli ;
-      :hasRelation data:Ekaterina_Igorievna_Malysheva .
+  data:ElizabethII a :Person,
+          :Woman .
 
-  data:Ekaterina_Igorievna_Malysheva a :Woman ;
-      :hasBirthYear 1986 ;
-      :hasFather data:Igor_Malyshev ;
-      :hasMother data:Svetlana_Malysheva .
+  data:MeghanMarkle a :Person,
+          :Woman .
 
-  data:Igor_Malyshev a :Man .
+  data:Naruhito a :Man,
+          :Person .
 
-  data:Svetlana_Malysheva a :Woman .
+  data:PrinceHarry a :Man,
+          :Person .
 
-  data:Chantal_Hochuli a :Woman .
+  data:SamuelChatto a :Man,
+          :Person ;
+      :hasAncestor data:PrincessMargaret ;
+      :hasBirthYear 1996 ;
+      :hasFather data:DanielChatto ;
+      :hasMother data:LadySarahChatto .
 
-  data:Ernst_August_Prince_of_Hanover a :Man .
+  data:DanielChatto a :Man,
+          :Person .
+
+  data:LadySarahChatto a :Person,
+          :Woman .
+
+  data:PrincessMargaret a :Person,
+          :Woman .
 
 
 
@@ -607,182 +714,86 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (f4adc112-440e-4516-853e-e2ac79bf83cc)
- Call ID: f4adc112-440e-4516-853e-e2ac79bf83cc
+  ValidateShacl (f1e4e0f5-2e33-4072-9cb9-b21951649f14)
+ Call ID: f1e4e0f5-2e33-4072-9cb9-b21951649f14
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:21
+Total violations:9
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person 'Ernst_August_Hereditary_Prince_of_Hanover' has a father 'Ernst_August_Prince_of_Hanover' who is not assigned the required 'Ancestor' class.
+      The node PrincessMargaret is used as an ancestor for SamuelChatto but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_August_Prince_of_Hanover', class=':Ancestor')
+      AssignClass(node='PrincessMargaret', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person 'Christian_of_Hanover' has a father 'Ernst_August_Prince_of_Hanover' who is not assigned the required 'Ancestor' class.
+      The node DanielChatto is used as the father of SamuelChatto but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_August_Prince_of_Hanover', class=':Ancestor')
+      AssignClass(node='DanielChatto', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person 'Ernst_August_Hereditary_Prince_of_Hanover' has a mother 'Chantal_Hochuli' who is not assigned the required 'Ancestor' class.
+      The node LadySarahChatto is used as the mother of SamuelChatto but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Chantal_Hochuli', class=':Ancestor')
+      AssignClass(node='LadySarahChatto', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person 'Christian_of_Hanover' has a mother 'Chantal_Hochuli' who is not assigned the required 'Ancestor' class.
+      The node PrincessMargaret is used as an ancestor for SamuelChatto but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Chantal_Hochuli', class=':Ancestor')
+      AssignClass(node='PrincessMargaret', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person 'Christian_of_Hanover' has a father 'Ernst_August_Prince_of_Hanover' who is not assigned the required 'Ancestor' class.
+      The node DanielChatto is used as the father of SamuelChatto but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_August_Prince_of_Hanover', class=':Ancestor')
+      AssignClass(node='DanielChatto', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person 'Ekaterina_Igorievna_Malysheva' has a father 'Igor_Malyshev' who is not assigned the required 'Ancestor' class.
+      The node LadySarahChatto is used as the mother of SamuelChatto but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Igor_Malyshev', class=':Ancestor')
+      AssignClass(node='LadySarahChatto', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The person 'Ernst_August_Hereditary_Prince_of_Hanover' has a father 'Ernst_August_Prince_of_Hanover' who is not assigned the required 'Ancestor' class.
+      The node PrincessMargaret is used as an ancestor for SamuelChatto but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_August_Prince_of_Hanover', class=':Ancestor')
+      AssignClass(node='PrincessMargaret', class=':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person 'Alexandra_of_Hanover' has a father 'Ernst_August_Prince_of_Hanover' who is not assigned the required 'Ancestor' class.
+      The node DanielChatto is used as the father of SamuelChatto but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_August_Prince_of_Hanover', class=':Ancestor')
+      AssignClass(node='DanielChatto', class=':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person 'Christian_of_Hanover' has a mother 'Chantal_Hochuli' who is not assigned the required 'Ancestor' class.
+      The node LadySarahChatto is used as the mother of SamuelChatto but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Chantal_Hochuli', class=':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Ekaterina_Igorievna_Malysheva' has a mother 'Svetlana_Malysheva' who is not assigned the required 'Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Svetlana_Malysheva', class=':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Ernst_August_Hereditary_Prince_of_Hanover' has a mother 'Chantal_Hochuli' who is not assigned the required 'Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Chantal_Hochuli', class=':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Christian_of_Hanover' has a father 'Ernst_August_Prince_of_Hanover' who is not assigned the required 'Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_August_Prince_of_Hanover', class=':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Ekaterina_Igorievna_Malysheva' has a father 'Igor_Malyshev' who is not assigned the required 'Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Igor_Malyshev', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Ernst_August_Hereditary_Prince_of_Hanover' has a father 'Ernst_August_Prince_of_Hanover' who is not assigned the required 'Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_August_Prince_of_Hanover', class=':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Alexandra_of_Hanover' has a father 'Ernst_August_Prince_of_Hanover' who is not assigned the required 'Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_August_Prince_of_Hanover', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Christian_of_Hanover' has a mother 'Chantal_Hochuli' who is not assigned the required 'Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Chantal_Hochuli', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Ekaterina_Igorievna_Malysheva' has a mother 'Svetlana_Malysheva' who is not assigned the required 'Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Svetlana_Malysheva', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Ernst_August_Hereditary_Prince_of_Hanover' has a mother 'Chantal_Hochuli' who is not assigned the required 'Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Chantal_Hochuli', class=':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Ekaterina_Igorievna_Malysheva' has a father 'Igor_Malyshev' who is not assigned the required 'Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Igor_Malyshev', class=':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Alexandra_of_Hanover' has a father 'Ernst_August_Prince_of_Hanover' who is not assigned the required 'Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernst_August_Prince_of_Hanover', class=':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Ekaterina_Igorievna_Malysheva' has a mother 'Svetlana_Malysheva' who is not assigned the required 'Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Svetlana_Malysheva', class=':Ancestor')
+      AssignClass(node='LadySarahChatto', class=':Ancestor')
 
 
 
@@ -791,203 +802,24 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (cd4a1614-9ce8-4391-9740-641ba7a143e4)
- Call ID: cd4a1614-9ce8-4391-9740-641ba7a143e4
+  AssignClass (b3d2b34e-784b-46ca-9050-cd42bca8d292)
+ Call ID: b3d2b34e-784b-46ca-9050-cd42bca8d292
+  Args:
+    source: :PrincessMargaret
+    type: :Ancestor
+  AssignClass (8c48723c-70cd-4018-b2bf-d171dea5b97c)
+ Call ID: 8c48723c-70cd-4018-b2bf-d171dea5b97c
   Args:
     type: :Ancestor
-    source: Ernst_August_Prince_of_Hanover
-  AssignClass (3758d532-ef8a-45c1-8242-1a7bc2cb1748)
- Call ID: 3758d532-ef8a-45c1-8242-1a7bc2cb1748
+    source: :DanielChatto
+  AssignClass (d1d6e343-07bf-4fb0-b578-d038807b1cab)
+ Call ID: d1d6e343-07bf-4fb0-b578-d038807b1cab
   Args:
+    source: :LadySarahChatto
     type: :Ancestor
-    source: Chantal_Hochuli
-  AssignClass (bd240395-53f9-4001-9a40-aa06df665354)
- Call ID: bd240395-53f9-4001-9a40-aa06df665354
+  ValidateShacl (80c420c1-08b1-4a64-9820-806c261eea42)
+ Call ID: 80c420c1-08b1-4a64-9820-806c261eea42
   Args:
-    type: :Ancestor
-    source: Igor_Malyshev
-  AssignClass (39cad178-df70-4373-bf34-f2bd6334dae0)
- Call ID: 39cad178-df70-4373-bf34-f2bd6334dae0
-  Args:
-    type: :Ancestor
-    source: Svetlana_Malysheva
-  AssignClass (b271dd87-daea-4078-b351-c1ef2797db44)
- Call ID: b271dd87-daea-4078-b351-c1ef2797db44
-  Args:
-    type: :Person
-    source: Ernst_August_Hereditary_Prince_of_Hanover
-  AssignClass (a7f8f09d-1d05-4b5e-903d-d65250896bd3)
- Call ID: a7f8f09d-1d05-4b5e-903d-d65250896bd3
-  Args:
-    type: :Person
-    source: Ernst_August_Prince_of_Hanover
-  AssignClass (c3e8ef80-b800-42cb-9c20-d2da532b94e7)
- Call ID: c3e8ef80-b800-42cb-9c20-d2da532b94e7
-  Args:
-    type: :Person
-    source: Chantal_Hochuli
-  AssignClass (51a6313a-b9bd-4c18-9077-98ad15c00cca)
- Call ID: 51a6313a-b9bd-4c18-9077-98ad15c00cca
-  Args:
-    type: :Person
-    source: Christian_of_Hanover
-  AssignClass (8f6cafd3-29a5-48be-ba2c-a3d902c3076f)
- Call ID: 8f6cafd3-29a5-48be-ba2c-a3d902c3076f
-  Args:
-    type: :Person
-    source: Alexandra_of_Hanover
-  AssignClass (982f5161-2eb7-46fd-8186-cce4c55fba13)
- Call ID: 982f5161-2eb7-46fd-8186-cce4c55fba13
-  Args:
-    type: :Person
-    source: Ekaterina_Igorievna_Malysheva
-  AssignClass (cac52098-5c6d-47b1-be66-65eef0694bd2)
- Call ID: cac52098-5c6d-47b1-be66-65eef0694bd2
-  Args:
-    type: :Person
-    source: Igor_Malyshev
-  AssignClass (5548f794-9ac4-4134-9428-a380cc9a5898)
- Call ID: 5548f794-9ac4-4134-9428-a380cc9a5898
-  Args:
-    type: :Person
-    source: Svetlana_Malysheva
-  AddTriple (849f4b36-7be3-4099-a60f-8c958c831b9c)
- Call ID: 849f4b36-7be3-4099-a60f-8c958c831b9c
-  Args:
-    relation: :hasSex
-    source: Ernst_August_Hereditary_Prince_of_Hanover
-    target: Male
-  AddTriple (4dfb69e4-e74a-43ad-a688-57c897822a05)
- Call ID: 4dfb69e4-e74a-43ad-a688-57c897822a05
-  Args:
-    relation: :hasSex
-    source: Ernst_August_Prince_of_Hanover
-    target: Male
-  AddTriple (ddccec0f-ad97-4cb6-9564-06b74e92d07e)
- Call ID: ddccec0f-ad97-4cb6-9564-06b74e92d07e
-  Args:
-    target: Female
-    source: Chantal_Hochuli
-    relation: :hasSex
-  AddTriple (1fce0e5d-27e0-4cbd-b7ef-7d450db3d23b)
- Call ID: 1fce0e5d-27e0-4cbd-b7ef-7d450db3d23b
-  Args:
-    source: Christian_of_Hanover
-    target: Male
-    relation: :hasSex
-  AddTriple (26e551f1-5d91-445e-83c3-40b3888fcd5c)
- Call ID: 26e551f1-5d91-445e-83c3-40b3888fcd5c
-  Args:
-    relation: :hasSex
-    target: Female
-    source: Alexandra_of_Hanover
-  AddTriple (954c50f8-814b-4779-84fb-d19d04e59680)
- Call ID: 954c50f8-814b-4779-84fb-d19d04e59680
-  Args:
-    target: Female
-    source: Ekaterina_Igorievna_Malysheva
-    relation: :hasSex
-  AddTriple (cc8d007e-b4c0-4796-a942-faee8575c9d0)
- Call ID: cc8d007e-b4c0-4796-a942-faee8575c9d0
-  Args:
-    relation: :hasSex
-    source: Igor_Malyshev
-    target: Male
-  AddTriple (a844286b-4a25-4b2d-8aed-51e999d8d549)
- Call ID: a844286b-4a25-4b2d-8aed-51e999d8d549
-  Args:
-    relation: :hasSex
-    target: Female
-    source: Svetlana_Malysheva
-  AssignClass (2e79fd75-e421-4ca0-9e5d-6d785c5eea6c)
- Call ID: 2e79fd75-e421-4ca0-9e5d-6d785c5eea6c
-  Args:
-    type: :Male
-    source: Male
-  AssignClass (1b51b8d4-f996-460e-bf5f-12f46afae509)
- Call ID: 1b51b8d4-f996-460e-bf5f-12f46afae509
-  Args:
-    type: :Female
-    source: Female
-  Finish (f1d0fb5f-ae27-4d76-8954-9f7f19625bb1)
- Call ID: f1d0fb5f-ae27-4d76-8954-9f7f19625bb1
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1004,70 +836,44 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexandra_of_Hanover a :Person,
-          :Woman ;
-      :hasFather data:Ernst_August_Prince_of_Hanover ;
-      :hasSex data:Female .
+  data:Camilla a :Person,
+          :Woman .
 
-  data:Christian_of_Hanover a :Man,
+  data:CharlesIII a :Man,
+          :Person .
+
+  data:ElizabethII a :Person,
+          :Woman .
+
+  data:MeghanMarkle a :Person,
+          :Woman .
+
+  data:Naruhito a :Man,
+          :Person .
+
+  data:PrinceHarry a :Man,
+          :Person .
+
+  data:SamuelChatto a :Man,
           :Person ;
-      :hasFather data:Ernst_August_Prince_of_Hanover ;
-      :hasMother data:Chantal_Hochuli ;
-      :hasSex data:Male .
+      :hasAncestor data:PrincessMargaret ;
+      :hasBirthYear 1996 ;
+      :hasFather data:DanielChatto ;
+      :hasMother data:LadySarahChatto .
 
-  data:Ernst_August_Hereditary_Prince_of_Hanover a :Man,
-          :Person ;
-      :hasBirthYear 1983 ;
-      :hasFather data:Ernst_August_Prince_of_Hanover ;
-      :hasMarriageYear 2017 ;
-      :hasMother data:Chantal_Hochuli ;
-      :hasRelation data:Ekaterina_Igorievna_Malysheva ;
-      :hasSex data:Male .
-
-  data:Ekaterina_Igorievna_Malysheva a :Person,
-          :Woman ;
-      :hasBirthYear 1986 ;
-      :hasFather data:Igor_Malyshev ;
-      :hasMother data:Svetlana_Malysheva ;
-      :hasSex data:Female .
-
-  data:Igor_Malyshev a :Ancestor,
+  data:DanielChatto a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
-  data:Svetlana_Malysheva a :Ancestor,
+  data:LadySarahChatto a :Ancestor,
           :Person,
-          :Woman ;
-      :hasSex data:Female .
+          :Woman .
 
-  data:Chantal_Hochuli a :Ancestor,
+  data:PrincessMargaret a :Ancestor,
           :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Ernst_August_Prince_of_Hanover a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Female a :Female .
-
-  data:Male a :Male .
+          :Woman .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (99f43862-ef45-4aa6-afde-c030ae5c7a44)
- Call ID: 99f43862-ef45-4aa6-afde-c030ae5c7a44
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1077,6 +883,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (d7fce9b2-e282-4996-aeba-c46a6e6eb44b)
- Call ID: d7fce9b2-e282-4996-aeba-c46a6e6eb44b
+  Finish (b4f86a19-c46b-4f2a-8c6a-09b4f3be0708)
+ Call ID: b4f86a19-c46b-4f2a-8c6a-09b4f3be0708
   Args:

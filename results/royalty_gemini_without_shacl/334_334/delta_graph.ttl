@@ -2,36 +2,27 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
-        :Woman ;
-    :hasBirthYear 1879 ;
-    :hasBrother data:Frederick_Francis_Mecklenburg-Schwerin ;
-    :hasDeathYear 1952 ;
-    :hasFather data:Frederick_Francis_III ;
-    :hasMarriageYear 1898 ;
-    :hasMother data:Anastasia_Mikhailovna ;
-    :hasRelation data:Christian_X ;
-    :hasSister data:Cecilie_of_Mecklenburg-Schwerin .
-
-data:Anastasia_Mikhailovna a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Cecilie_of_Mecklenburg-Schwerin a :Person,
-        :Woman .
-
-data:Christian_X a :Man,
-        :Person .
-
-data:Frederick_Francis_II a :Ancestor,
-        :Man,
-        :Person .
-
-data:Frederick_Francis_III a :Ancestor,
-        :Man,
+data:Albrecht_Willem_Lier a :Man,
         :Person ;
-    :hasFather data:Frederick_Francis_II .
+    :alsoKnownAs "Pim"^^xsd:string ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 2015 ;
+    :isBrotherOf data:Queen_Juliana ;
+    :isSonOf data:Prince_Henry,
+        data:Willemina_Martina_Wenneker ;
+    :isUncleOf data:Queen_Beatrix .
 
-data:Frederick_Francis_Mecklenburg-Schwerin a :Man,
+data:Prince_Henry a :Man,
         :Person .
+
+data:Queen_Beatrix a :Person,
+        :Woman .
+
+data:Queen_Juliana a :Person,
+        :Woman .
+
+data:Willemina_Martina_Wenneker a :Person,
+        :Woman ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1973 .
 

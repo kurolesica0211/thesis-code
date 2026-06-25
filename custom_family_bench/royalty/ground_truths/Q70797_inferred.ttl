@@ -1,0 +1,65 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Josias, Hereditary Prince of Waldeck and Pyrmont"^^xsd:string ;
+    data:posIndicesFull "372:398"^^xsd:string ;
+    data:posIndicesPart "1228:1234"^^xsd:string,
+        "1238:1245"^^xsd:string,
+        "1250:1257"^^xsd:string,
+        "659:666"^^xsd:string,
+        "671:678"^^xsd:string,
+        "987:994"^^xsd:string,
+        "999:1006"^^xsd:string ;
+    data:wdtLink wdt:Q75911 ;
+    :alsoKnownAs "Josias Georg Wilhelm Adolf"^^xsd:string ;
+    :hasBrother data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
+    :hasChild data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont,
+        data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :hasSex data:male ;
+    :hasSon data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :isAncestorOf data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :isBloodrelationOf data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
+    :isBrotherOf data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
+    :isFatherOf data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :isParentOf data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :isSiblingOf data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
+    :isUncleOf data:Wittekind-_Prince_of_Waldeck_and_Pyrmont .
+
+data:Wittekind-_Prince_of_Waldeck_and_Pyrmont a :Man,
+        :Person ;
+    rdfs:label "Wittekind, Prince of Waldeck and Pyrmont"^^xsd:string ;
+    data:wdtLink wdt:Q70797 ;
+    :alsoKnownAs "Wittekind Adolf Heinrich Georg Wilhelm Prinz zu Waldeck und Pyrmont"^^xsd:string ;
+    :hasAncestor data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
+    :hasBrother data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :hasFather data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
+    :hasParent data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont,
+        data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :isBrotherOf data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :isChildOf data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont ;
+    :isSiblingOf data:Wittekind-_Prince_of_Waldeck_and_Pyrmont ;
+    :isSonOf data:Josias-_Hereditary_Prince_of_Waldeck_and_Pyrmont .
+

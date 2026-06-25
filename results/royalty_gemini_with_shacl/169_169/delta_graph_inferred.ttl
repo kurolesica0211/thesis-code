@@ -1,0 +1,112 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Juan_Carlos_I a :Man,
+        :Person ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasRelation data:Bruno_Alejandro_Gomez-Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona ;
+    :hasSister data:Infanta_Pilar ;
+    :isBloodrelationOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isBrotherOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isSiblingOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isUncleOf data:Bruno_Alejandro_Gomez-Acebo_Borbon .
+
+data:Maria_Mercedes_of_the_Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infanta_Pilar ;
+    :hasDaughter data:Infanta_Pilar ;
+    :hasRelation data:Bruno_Alejandro_Gomez-Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Maria_Mercedes_of_the_Two_Sicilies ;
+    :hasSister data:Maria_Mercedes_of_the_Two_Sicilies ;
+    :isAncestorOf data:Bruno_Alejandro_Gomez-Acebo_Borbon,
+        data:Infanta_Pilar ;
+    :isAuntOf data:Infanta_Pilar ;
+    :isBloodrelationOf data:Maria_Mercedes_of_the_Two_Sicilies ;
+    :isMotherOf data:Infanta_Pilar ;
+    :isParentOf data:Infanta_Pilar ;
+    :isSiblingOf data:Maria_Mercedes_of_the_Two_Sicilies ;
+    :isSisterOf data:Maria_Mercedes_of_the_Two_Sicilies .
+
+data:Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Juan_Count_of_Barcelona ;
+    :hasChild data:Infanta_Pilar ;
+    :hasDaughter data:Infanta_Pilar ;
+    :hasRelation data:Bruno_Alejandro_Gomez-Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona ;
+    :isAncestorOf data:Bruno_Alejandro_Gomez-Acebo_Borbon,
+        data:Infanta_Pilar ;
+    :isBloodrelationOf data:Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Juan_Count_of_Barcelona ;
+    :isFatherOf data:Infanta_Pilar ;
+    :isParentOf data:Infanta_Pilar ;
+    :isSiblingOf data:Juan_Count_of_Barcelona ;
+    :isUncleOf data:Infanta_Pilar .
+
+data:Bruno_Alejandro_Gomez-Acebo_Borbon a :Man,
+        :Person ;
+    :hasAncestor data:Infanta_Pilar,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_the_Two_Sicilies ;
+    :hasBrother data:Bruno_Alejandro_Gomez-Acebo_Borbon ;
+    :hasMother data:Infanta_Pilar ;
+    :hasParent data:Infanta_Pilar ;
+    :hasRelation data:Bruno_Alejandro_Gomez-Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_the_Two_Sicilies ;
+    :isBloodrelationOf data:Bruno_Alejandro_Gomez-Acebo_Borbon ;
+    :isBrotherOf data:Bruno_Alejandro_Gomez-Acebo_Borbon ;
+    :isChildOf data:Infanta_Pilar ;
+    :isSiblingOf data:Bruno_Alejandro_Gomez-Acebo_Borbon ;
+    :isSonOf data:Infanta_Pilar .
+
+data:Infanta_Pilar a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs "Pilar de Borbón"^^xsd:string ;
+    :hasAncestor data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_the_Two_Sicilies ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasChild data:Bruno_Alejandro_Gomez-Acebo_Borbon ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMother data:Maria_Mercedes_of_the_Two_Sicilies ;
+    :hasParent data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_the_Two_Sicilies ;
+    :hasRelation data:Bruno_Alejandro_Gomez-Acebo_Borbon,
+        data:Infanta_Pilar,
+        data:Juan_Carlos_I,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_the_Two_Sicilies ;
+    :hasSister data:Infanta_Pilar ;
+    :hasSon data:Bruno_Alejandro_Gomez-Acebo_Borbon ;
+    :isAncestorOf data:Bruno_Alejandro_Gomez-Acebo_Borbon ;
+    :isAuntOf data:Bruno_Alejandro_Gomez-Acebo_Borbon ;
+    :isBloodrelationOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isChildOf data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_the_Two_Sicilies ;
+    :isDaughterOf data:Juan_Count_of_Barcelona,
+        data:Maria_Mercedes_of_the_Two_Sicilies ;
+    :isMotherOf data:Bruno_Alejandro_Gomez-Acebo_Borbon ;
+    :isParentOf data:Bruno_Alejandro_Gomez-Acebo_Borbon ;
+    :isSiblingOf data:Infanta_Pilar,
+        data:Juan_Carlos_I ;
+    :isSisterOf data:Infanta_Pilar,
+        data:Juan_Carlos_I .
+

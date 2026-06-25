@@ -2,72 +2,65 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_I_Greece a :Ancestor,
+data:Sophia_of_Prussia a :Person,
+        :Woman ;
+    :hasBirthYear 1870 ;
+    :hasBrother data:William_II_German_Emperor ;
+    :hasDaughter data:Katherine_Princess_of_Greece ;
+    :hasDeathYear 1932 ;
+    :hasFather data:Frederick_III_German_Emperor ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Constantine_I_King_of_Greece ;
+    :hasSon data:Alexander_I_King_of_Greece,
+        data:George_II_King_of_Greece .
+
+data:Alexander_I_King_of_Greece a :Man,
+        :Person .
+
+data:Constantine_I_King_of_Greece a :Ancestor,
         :Man,
         :Person ;
-    :isSonOf data:Constantine_I,
-        data:Sophia_of_Prussia .
+    :hasFather data:George_I_King_of_Greece ;
+    :hasMother data:Queen_Olga_of_Greece .
 
-data:George_II_Greece a :Man,
+data:Frederick_III_German_Emperor a :Ancestor,
+        :Man,
         :Person ;
-    :isSonOf data:Constantine_I,
-        data:Sophia_of_Prussia .
+    :hasFather data:William_I_German_Emperor .
 
-data:Helen_Greece a :Person,
-        :Woman ;
-    :isDaughterOf data:Constantine_I,
-        data:Sophia_of_Prussia .
+data:George_II_King_of_Greece a :Man,
+        :Person .
 
-data:Irene_Greece a :Person,
-        :Woman ;
-    :isDaughterOf data:Constantine_I,
-        data:Sophia_of_Prussia .
-
-data:Katherine_Greece a :Person,
-        :Woman ;
-    :isDaughterOf data:Constantine_I,
-        data:Sophia_of_Prussia .
-
-data:Paul_Greece a :Man,
-        :Person ;
-    :isSonOf data:Constantine_I,
-        data:Sophia_of_Prussia .
-
-data:Frederick_III a :Ancestor,
+data:George_I_King_of_Greece a :Ancestor,
         :Man,
         :Person .
 
-data:George_I_Greece a :Ancestor,
+data:Katherine_Princess_of_Greece a :Person,
+        :Woman .
+
+data:Prince_Albert a :Ancestor,
         :Man,
         :Person .
 
-data:Olga_Greece a :Ancestor,
+data:Queen_Olga_of_Greece a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Queen_Victoria a :Ancestor,
         :Person,
         :Woman .
 
 data:Victoria_Princess_Royal a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
 
-data:William_II_Germany a :Man,
+data:William_II_German_Emperor a :Man,
         :Person .
 
-data:Sophia_of_Prussia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1870 ;
-    :hasBrother data:William_II_Germany ;
-    :hasDeathYear 1932 ;
-    :hasFather data:Frederick_III ;
-    :hasMarriageYear 1889 ;
-    :hasMother data:Victoria_Princess_Royal ;
-    :hasRelation data:Constantine_I ;
-    :knownAs "Sophia of Prussia"^^xsd:string .
-
-data:Constantine_I a :Ancestor,
+data:William_I_German_Emperor a :Ancestor,
         :Man,
-        :Person ;
-    :hasFather data:George_I_Greece ;
-    :hasMother data:Olga_Greece ;
-    :knownAs "Constantine I"^^xsd:string .
+        :Person .
 

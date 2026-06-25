@@ -2,73 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:PrincePhilip a :Ancestor,
-        :Man,
+data:Karl_von_Habsburg a :Man,
         :Person ;
-    :hasBirthYear 1921 ;
-    :hasDeathYear 2021 ;
-    :hasFather data:PrinceAndrewOfGreece ;
-    :hasMarriageYear 1947 ;
-    :hasMother data:PrincessAliceOfBattenberg ;
-    :hasRelation data:QueenElizabethII ;
-    :hasSex data:Male ;
-    :hasSister data:Cecilie,
-        data:Margarita,
-        data:Sophie,
-        data:Theodora ;
-    :isFatherOf data:PrinceAndrew,
-        data:PrinceCharles,
-        data:PrinceEdward,
-        data:PrincessAnne .
+    :alsoKnownAs "Karl Habsburg-Lothringen"^^xsd:string ;
+    :hasAncestor data:Charles_I ;
+    :hasBirthYear 1961 ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMarriageYear 1993 ;
+    :hasMother data:Regina_von_Sachsen-Meiningen ;
+    :hasRelation data:Christian_Nicolau_de_Almeida_Reid,
+        data:Francesca_Thyssen-Bornemisza ;
+    :knownAs "Karl Thomas Robert Maria Franziskus Georg Bahnam"^^xsd:string .
 
-data:Cecilie a :Person,
-        :Woman .
-
-data:Female a :Sex .
-
-data:KingGeorgeVI a :Ancestor,
+data:Charles_I a :Ancestor,
         :Man,
         :Person .
 
-data:Male a :Male,
-        :Sex .
-
-data:Margarita a :Person,
+data:Christian_Nicolau_de_Almeida_Reid a :Person,
         :Woman .
 
-data:PrinceAndrewOfGreece a :Ancestor,
-        :Man,
-        :Person .
-
-data:PrincessAliceOfBattenberg a :Ancestor,
+data:Fiona_Frances_Elaine_Campbell-Walter a :Ancestor,
         :Person,
         :Woman .
 
-data:QueenElizabethII a :Ancestor,
-        :Person,
+data:Francesca_Thyssen-Bornemisza a :Person,
         :Woman ;
-    :hasFather data:KingGeorgeVI ;
-    :hasSex data:Female ;
-    :isMotherOf data:PrinceAndrew,
-        data:PrinceCharles,
-        data:PrinceEdward,
-        data:PrincessAnne .
+    :hasFather data:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon ;
+    :hasMother data:Fiona_Frances_Elaine_Campbell-Walter .
 
-data:Sophie a :Person,
-        :Woman .
-
-data:Theodora a :Person,
-        :Woman .
-
-data:PrinceAndrew a :Man,
+data:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon a :Ancestor,
+        :Man,
         :Person .
 
-data:PrinceCharles a :Man,
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
         :Person .
 
-data:PrinceEdward a :Man,
-        :Person .
-
-data:PrincessAnne a :Person,
+data:Regina_von_Sachsen-Meiningen a :Ancestor,
+        :Person,
         :Woman .
 

@@ -85,25 +85,32 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Duke Christian Louis of Mecklenburg (German: Christian-Ludwig Herzog zu Mecklenburg; 29 September 1912 – 18 July 1996) was the second son of the last reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV.
+Mary Frances Elphinstone, Lady Elphinstone GCVO (née Bowes-Lyon; 30 August 1883 – 8 February 1961), was a British aristocrat.
+She was an elder sister of Queen Elizabeth the Queen Mother and an aunt and godmother of Queen Elizabeth II.
 Early life
 
-Born in Schloss Ludwigslust, as a member of an elder, Mecklenburg-Schwerin line of an ancient House of Mecklenburg, he was the second child of the reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV, and his wife, Princess Alexandra of Hanover, third child and second daughter of Ernest Augustus, Crown Prince of Hanover and Princess Thyra of Denmark.
-After the abolition of the monarchy, in 1919 the family went at the invitation of Queen Alexandrine, consort of Christian X of Denmark and sister of the Grand Duke, into exile in Denmark, where they lived for a year in Sorgenfri Palace.
-Later, the family returned to Mecklenburg and lived in Gelbensande, and from 1921 the family settled at Ludwigslust Castle.
-After the war
+Lady Elphinstone was born The Honourable Mary Frances Bowes-Lyon on 30 August 1883 in Angus, Scotland, to Claude Bowes-Lyon, 14th
+She was an elder sister of Elizabeth Bowes-Lyon known as Queen Elizabeth of the United Kingdom (later the Queen Mother).
+Personal life
 
-When the war ended, Ludwigslust was first occupied by the British, but soon was transferred to the Soviet occupation, so that Christian Louis initially went with his family to Glücksburg Castle in Schleswig-Holstein.
-Together with his sister Thyra, he took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
-Marriage and family
+Lady Mary married Sidney Elphinstone, 16th Lord Elphinstone (1869–1955) on 24 July 1910 in Westminster.
+Lord Elphinstone inherited extensive estates, some of which had been in the family since the reign of King David II of Scotland.
+He served as a governor of the Bank of Scotland, Lord Clerk Register of Scotland and Keeper of the Signet and Lord High Commissioner of the Church of Scotland.
+The couple had five children:
 
-On 5 July 1954 in Glücksburg, Christian Louis married in a civil wedding Princess Barbara of Prussia (1920–1994), the daughter of Prince Sigismund of Prussia and his wife, Princess Charlotte of Saxe-Altenburg.
+
+In 1937, Lady Elphinstone attended her sister and brother-in-law's coronation whereby she sat behind her niece Princess Elizabeth, who would be the future queen, in the royal box.
+She was one of the leading guests in the wedding of Princess Elizabeth and Philip Mountbatten in 1947.
+Lord Elphinstone died at their home Carberry Tower, Musselburgh, on 28 November 1955.
+Lady Elphinstone, who served as president of the Midlothian branch of the British Red Cross, died on 8 February 1961, aged 77, also at Carberry Tower in Inveresk, Scotland.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -119,39 +126,9 @@ On 5 July 1954 in Glücksburg, Christian Louis married in a civil wedding Prince
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -166,6 +143,23 @@ On 5 July 1954 in Glücksburg, Christian Louis married in a civil wedding Prince
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -183,6 +177,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -250,29 +259,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -281,6 +282,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -293,6 +302,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -301,17 +312,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -339,6 +352,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -354,154 +451,130 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bccc6381-7b1f-41cc-a598-886c6ed50955)
- Call ID: bccc6381-7b1f-41cc-a598-886c6ed50955
+  AssignClass (8b04cec0-395f-4c95-8004-7812aeaa6320)
+ Call ID: 8b04cec0-395f-4c95-8004-7812aeaa6320
   Args:
-    type: :Man
-    source: Christian_Louis_of_Mecklenburg
-  AssignClass (bde01d58-da16-4aef-bcef-a707918be982)
- Call ID: bde01d58-da16-4aef-bcef-a707918be982
-  Args:
-    source: Frederick_Francis_IV
-    type: :Man
-  AssignClass (b746ce49-a2f3-42b0-ab06-f83bce039315)
- Call ID: b746ce49-a2f3-42b0-ab06-f83bce039315
-  Args:
-    source: Alexandra_of_Hanover
+    source: Mary_Frances_Elphinstone
     type: :Woman
-  AssignClass (393fac1d-1baf-49ce-be1f-0dea1b2c6ae1)
- Call ID: 393fac1d-1baf-49ce-be1f-0dea1b2c6ae1
+  AssignClass (492ed0e5-c4e0-4711-b43c-fe02386f8d96)
+ Call ID: 492ed0e5-c4e0-4711-b43c-fe02386f8d96
   Args:
-    type: :Man
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-  AssignClass (db3ec8e5-04be-4826-9fb6-158989720eed)
- Call ID: db3ec8e5-04be-4826-9fb6-158989720eed
+    source: Mary_Frances_Elphinstone
+    type: :Person
+  AddLiteral (2da7a51e-eef6-408b-944f-c8ff4f3d4800)
+ Call ID: 2da7a51e-eef6-408b-944f-c8ff4f3d4800
   Args:
-    source: Thyra_of_Denmark
-    type: :Woman
-  AssignClass (81b750f6-f55d-4440-9eda-fd8bede7ffb7)
- Call ID: 81b750f6-f55d-4440-9eda-fd8bede7ffb7
-  Args:
-    type: :Woman
-    source: Thyra_of_Mecklenburg
-  AssignClass (3a1aedbb-87f2-42fd-8aee-51a2c3bdecc9)
- Call ID: 3a1aedbb-87f2-42fd-8aee-51a2c3bdecc9
-  Args:
-    source: Barbara_of_Prussia
-    type: :Woman
-  AssignClass (df0d4524-fc24-4f22-8c40-6370faeaee25)
- Call ID: df0d4524-fc24-4f22-8c40-6370faeaee25
-  Args:
-    type: :Man
-    source: Sigismund_of_Prussia
-  AssignClass (96cad6f6-e7d4-475b-94d4-11df7246928b)
- Call ID: 96cad6f6-e7d4-475b-94d4-11df7246928b
-  Args:
-    source: Charlotte_of_Saxe_Altenburg
-    type: :Woman
-  AddLiteral (12513339-e6fb-4fca-97a1-a9bdd1815a89)
- Call ID: 12513339-e6fb-4fca-97a1-a9bdd1815a89
-  Args:
-    literal_value: 1912
-    source: Christian_Louis_of_Mecklenburg
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (5d69fae5-1649-4b02-bd27-074025ccab31)
- Call ID: 5d69fae5-1649-4b02-bd27-074025ccab31
+    literal_value: 1883
+    source: Mary_Frances_Elphinstone
+    literal_type: xsd:integer
+  AddLiteral (a9292b73-0823-4b64-95a4-767206fa8021)
+ Call ID: a9292b73-0823-4b64-95a4-767206fa8021
   Args:
     relation: :hasDeathYear
-    source: Christian_Louis_of_Mecklenburg
+    literal_value: 1961
+    source: Mary_Frances_Elphinstone
     literal_type: xsd:integer
-    literal_value: 1996
-  AddTriple (277711df-11fa-4a51-9344-8388c5393ce2)
- Call ID: 277711df-11fa-4a51-9344-8388c5393ce2
+  AddTriple (a439a2f7-b8b0-4925-850a-5c390e2a5794)
+ Call ID: a439a2f7-b8b0-4925-850a-5c390e2a5794
   Args:
+    target: Lady_Elphinstone
+    relation: :knownAs
+    source: Mary_Frances_Elphinstone
+  AssignClass (4da96500-de94-473e-9cfe-b8905f84fde5)
+ Call ID: 4da96500-de94-473e-9cfe-b8905f84fde5
+  Args:
+    source: Elizabeth_Bowes-Lyon
+    type: :Woman
+  AssignClass (be4d7d62-04c0-4066-944f-0f0b2c1366dc)
+ Call ID: be4d7d62-04c0-4066-944f-0f0b2c1366dc
+  Args:
+    source: Elizabeth_Bowes-Lyon
+    type: :Person
+  AddTriple (22cdcb3f-220f-41f9-8c5f-93848ea1c961)
+ Call ID: 22cdcb3f-220f-41f9-8c5f-93848ea1c961
+  Args:
+    source: Mary_Frances_Elphinstone
+    relation: :isSisterOf
+    target: Elizabeth_Bowes-Lyon
+  AssignClass (4a570bc9-45f6-4097-90dc-6a0c74b31fed)
+ Call ID: 4a570bc9-45f6-4097-90dc-6a0c74b31fed
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (88d47485-f44d-428c-822b-2dfc8f58381b)
+ Call ID: 88d47485-f44d-428c-822b-2dfc8f58381b
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Person
+  AddTriple (c4b41ab6-6a55-4905-86c3-16a5a964cd3d)
+ Call ID: c4b41ab6-6a55-4905-86c3-16a5a964cd3d
+  Args:
+    target: Queen_Elizabeth_II
+    relation: :isAuntOf
+    source: Mary_Frances_Elphinstone
+  AssignClass (03b42a97-8980-490f-a5ab-fcc88573dc73)
+ Call ID: 03b42a97-8980-490f-a5ab-fcc88573dc73
+  Args:
+    source: Claude_Bowes-Lyon
+    type: :Man
+  AssignClass (0edf53e0-dd5d-4612-b846-f1334ca2559e)
+ Call ID: 0edf53e0-dd5d-4612-b846-f1334ca2559e
+  Args:
+    source: Claude_Bowes-Lyon
+    type: :Person
+  AddTriple (a2a76442-3027-4d0f-a843-6d643d2f95f6)
+ Call ID: a2a76442-3027-4d0f-a843-6d643d2f95f6
+  Args:
+    target: Claude_Bowes-Lyon
     relation: :hasFather
-    target: Frederick_Francis_IV
-    source: Christian_Louis_of_Mecklenburg
-  AddTriple (318cf54b-a445-46a4-8472-a19cb85807df)
- Call ID: 318cf54b-a445-46a4-8472-a19cb85807df
+    source: Mary_Frances_Elphinstone
+  AssignClass (dd2c5a48-6572-497e-8cbc-523686c0a6ab)
+ Call ID: dd2c5a48-6572-497e-8cbc-523686c0a6ab
   Args:
-    target: Alexandra_of_Hanover
-    source: Christian_Louis_of_Mecklenburg
-    relation: :hasMother
-  AddTriple (3976008e-01c7-497d-bd85-9bb73c280330)
- Call ID: 3976008e-01c7-497d-bd85-9bb73c280330
+    source: Sidney_Elphinstone
+    type: :Man
+  AssignClass (665a9d02-b133-4ce9-a4b6-dc539ddf3008)
+ Call ID: 665a9d02-b133-4ce9-a4b6-dc539ddf3008
   Args:
-    relation: :hasFather
-    target: Ernest_Augustus_Crown_Prince_of_Hanover
-    source: Alexandra_of_Hanover
-  AddTriple (4ff12e56-29f2-419b-89d8-034990e7446f)
- Call ID: 4ff12e56-29f2-419b-89d8-034990e7446f
-  Args:
-    source: Alexandra_of_Hanover
-    target: Thyra_of_Denmark
-    relation: :hasMother
-  AddTriple (0d498b5c-535d-438d-81f7-0c4e0f5c6eaa)
- Call ID: 0d498b5c-535d-438d-81f7-0c4e0f5c6eaa
-  Args:
-    source: Christian_Louis_of_Mecklenburg
-    target: Thyra_of_Mecklenburg
-    relation: :hasSister
-  AddTriple (6f84f1b6-d252-4f7a-b15a-3bd650efe323)
- Call ID: 6f84f1b6-d252-4f7a-b15a-3bd650efe323
-  Args:
-    source: Thyra_of_Mecklenburg
-    target: Frederick_Francis_IV
-    relation: :hasFather
-  AddTriple (90b774d2-7e65-4493-8d96-b08173757d45)
- Call ID: 90b774d2-7e65-4493-8d96-b08173757d45
-  Args:
-    relation: :hasMother
-    target: Alexandra_of_Hanover
-    source: Thyra_of_Mecklenburg
-  AddLiteral (1b52e7c0-127f-41f4-83a7-c67e0780ad1f)
- Call ID: 1b52e7c0-127f-41f4-83a7-c67e0780ad1f
+    source: Sidney_Elphinstone
+    type: :Person
+  AddLiteral (298af030-41dd-425f-9cdd-2abe66cefe8a)
+ Call ID: 298af030-41dd-425f-9cdd-2abe66cefe8a
   Args:
     relation: :hasMarriageYear
-    source: Christian_Louis_of_Mecklenburg
+    literal_value: 1910
+    source: Mary_Frances_Elphinstone
     literal_type: xsd:integer
-    literal_value: 1954
-  AddTriple (ed480dea-3c00-4f70-8e59-16c2f175b400)
- Call ID: ed480dea-3c00-4f70-8e59-16c2f175b400
+  AddTriple (3228a4b8-f317-452a-bbc4-1eece2a9a434)
+ Call ID: 3228a4b8-f317-452a-bbc4-1eece2a9a434
   Args:
-    target: Sigismund_of_Prussia
-    source: Barbara_of_Prussia
-    relation: :hasFather
-  AddTriple (9f44c739-6ae8-4210-b4c2-fa49bf4a84a0)
- Call ID: 9f44c739-6ae8-4210-b4c2-fa49bf4a84a0
+    source: Mary_Frances_Elphinstone
+    target: Sidney_Elphinstone
+    relation: :hasRelation
+  AddLiteral (bff7df48-c19a-40da-93ea-d7dffbd84f8e)
+ Call ID: bff7df48-c19a-40da-93ea-d7dffbd84f8e
   Args:
-    target: Charlotte_of_Saxe_Altenburg
-    source: Barbara_of_Prussia
-    relation: :hasMother
-  AddLiteral (b3571226-e381-43a5-8461-dfa664c4ceba)
- Call ID: b3571226-e381-43a5-8461-dfa664c4ceba
-  Args:
-    literal_value: 1920
-    source: Barbara_of_Prussia
+    source: Sidney_Elphinstone
     literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (563ae6a6-5bf1-4944-bc9d-069c1ee85654)
- Call ID: 563ae6a6-5bf1-4944-bc9d-069c1ee85654
+    literal_value: 1869
+  AddLiteral (70d07fba-d0a5-45c5-84ac-9682ee2b67de)
+ Call ID: 70d07fba-d0a5-45c5-84ac-9682ee2b67de
   Args:
+    literal_value: 1955
     relation: :hasDeathYear
-    source: Barbara_of_Prussia
     literal_type: xsd:integer
-    literal_value: 1994
-  ValidateShacl (6ef953e8-e7ca-4435-b178-4ad39c93977d)
- Call ID: 6ef953e8-e7ca-4435-b178-4ad39c93977d
+    source: Sidney_Elphinstone
+  AddTriple (97fee208-28b3-4979-8c8d-9282f1eb3c0f)
+ Call ID: 97fee208-28b3-4979-8c8d-9282f1eb3c0f
   Args:
-  Finish (072ab892-7b68-4afc-97b4-5a71f43c414d)
- Call ID: 072ab892-7b68-4afc-97b4-5a71f43c414d
+    source: Sidney_Elphinstone
+    target: Lord_Elphinstone
+    relation: :knownAs
+  Finish (a7d4b0e4-3640-4b50-871e-eed0700e61d3)
+ Call ID: a7d4b0e4-3640-4b50-871e-eed0700e61d3
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -590,237 +663,31 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Barbara_of_Prussia a :Woman ;
-      :hasBirthYear 1920 ;
-      :hasDeathYear 1994 ;
-      :hasFather data:Sigismund_of_Prussia ;
-      :hasMother data:Charlotte_of_Saxe_Altenburg .
+  data:Mary_Frances_Elphinstone a :Person,
+          :Woman ;
+      :hasBirthYear 1883 ;
+      :hasDeathYear 1961 ;
+      :hasFather data:Claude_Bowes-Lyon ;
+      :hasMarriageYear 1910 ;
+      :hasRelation data:Sidney_Elphinstone ;
+      :isAuntOf data:Queen_Elizabeth_II ;
+      :isSisterOf data:Elizabeth_Bowes-Lyon ;
+      :knownAs data:Lady_Elphinstone .
 
-  data:Christian_Louis_of_Mecklenburg a :Man ;
-      :hasBirthYear 1912 ;
-      :hasDeathYear 1996 ;
-      :hasFather data:Frederick_Francis_IV ;
-      :hasMarriageYear 1954 ;
-      :hasMother data:Alexandra_of_Hanover ;
-      :hasSister data:Thyra_of_Mecklenburg .
+  data:Claude_Bowes-Lyon a :Man,
+          :Person .
 
-  data:Charlotte_of_Saxe_Altenburg a :Woman .
+  data:Elizabeth_Bowes-Lyon a :Person,
+          :Woman .
 
-  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man .
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
 
-  data:Sigismund_of_Prussia a :Man .
-
-  data:Thyra_of_Denmark a :Woman .
-
-  data:Thyra_of_Mecklenburg a :Woman ;
-      :hasFather data:Frederick_Francis_IV ;
-      :hasMother data:Alexandra_of_Hanover .
-
-  data:Alexandra_of_Hanover a :Woman ;
-      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-      :hasMother data:Thyra_of_Denmark .
-
-  data:Frederick_Francis_IV a :Man .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:24
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Frederick_Francis_IV used for the hasFather property of Christian_Louis_of_Mecklenburg does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_IV, :Ancestor)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Alexandra_of_Hanover used for the hasMother property of Christian_Louis_of_Mecklenburg does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_of_Hanover, :Ancestor)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Frederick_Francis_IV used for the hasFather property of Christian_Louis_of_Mecklenburg does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_IV, :Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Sigismund_of_Prussia used for the hasFather property of Barbara_of_Prussia does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Sigismund_of_Prussia, :Ancestor)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Frederick_Francis_IV used for the hasFather property of Thyra_of_Mecklenburg does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_IV, :Ancestor)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Ernest_Augustus_Crown_Prince_of_Hanover used for the hasFather property of Alexandra_of_Hanover does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Alexandra_of_Hanover used for the hasMother property of Christian_Louis_of_Mecklenburg does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_of_Hanover, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Charlotte_of_Saxe_Altenburg used for the hasMother property of Barbara_of_Prussia does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charlotte_of_Saxe_Altenburg, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Alexandra_of_Hanover used for the hasMother property of Thyra_of_Mecklenburg does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_of_Hanover, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Thyra_of_Denmark used for the hasMother property of Alexandra_of_Hanover does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thyra_of_Denmark, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Frederick_Francis_IV used for the hasFather property of Christian_Louis_of_Mecklenburg does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_IV, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Sigismund_of_Prussia used for the hasFather property of Barbara_of_Prussia does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Sigismund_of_Prussia, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Frederick_Francis_IV used for the hasFather property of Thyra_of_Mecklenburg does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_IV, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Ernest_Augustus_Crown_Prince_of_Hanover used for the hasFather property of Alexandra_of_Hanover does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Alexandra_of_Hanover used for the hasMother property of Christian_Louis_of_Mecklenburg does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_of_Hanover, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Charlotte_of_Saxe_Altenburg used for the hasMother property of Barbara_of_Prussia does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charlotte_of_Saxe_Altenburg, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Alexandra_of_Hanover used for the hasMother property of Thyra_of_Mecklenburg does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_of_Hanover, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Thyra_of_Denmark used for the hasMother property of Alexandra_of_Hanover does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thyra_of_Denmark, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Sigismund_of_Prussia used for the hasFather property of Barbara_of_Prussia does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Sigismund_of_Prussia, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Frederick_Francis_IV used for the hasFather property of Thyra_of_Mecklenburg does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_IV, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Ernest_Augustus_Crown_Prince_of_Hanover used for the hasFather property of Alexandra_of_Hanover does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_Crown_Prince_of_Hanover, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Charlotte_of_Saxe_Altenburg used for the hasMother property of Barbara_of_Prussia does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Charlotte_of_Saxe_Altenburg, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Alexandra_of_Hanover used for the hasMother property of Thyra_of_Mecklenburg does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandra_of_Hanover, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Thyra_of_Denmark used for the hasMother property of Alexandra_of_Hanover does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Thyra_of_Denmark, :Ancestor)
-
+  data:Sidney_Elphinstone a :Man,
+          :Person ;
+      :hasBirthYear 1869 ;
+      :hasDeathYear 1955 ;
+      :knownAs data:Lord_Elphinstone .
 
 
 
@@ -832,58 +699,140 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  AssignClass (2648762c-ebb7-4a4f-a0de-1a1aec37fca1)
- Call ID: 2648762c-ebb7-4a4f-a0de-1a1aec37fca1
-  Args:
-    type: :Ancestor
-    source: Frederick_Francis_IV
-  AssignClass (26297d93-e8db-4065-aa2e-ff88b98893b7)
- Call ID: 26297d93-e8db-4065-aa2e-ff88b98893b7
-  Args:
-    type: :Ancestor
-    source: Alexandra_of_Hanover
-  AssignClass (95ca4f11-c523-45f9-b591-2ddc3a6ec15e)
- Call ID: 95ca4f11-c523-45f9-b591-2ddc3a6ec15e
-  Args:
-    type: :Ancestor
-    source: Sigismund_of_Prussia
-  AssignClass (c01e88ef-079e-49cc-8896-de6443efdb2a)
- Call ID: c01e88ef-079e-49cc-8896-de6443efdb2a
-  Args:
-    source: Ernest_Augustus_Crown_Prince_of_Hanover
-    type: :Ancestor
-  AssignClass (56abea15-a7ce-42cf-8002-5337490ba2e0)
- Call ID: 56abea15-a7ce-42cf-8002-5337490ba2e0
-  Args:
-    type: :Ancestor
-    source: Charlotte_of_Saxe_Altenburg
-  AssignClass (7e3233af-af79-4c3a-9baf-766b0b0248bd)
- Call ID: 7e3233af-af79-4c3a-9baf-766b0b0248bd
-  Args:
-    source: Thyra_of_Denmark
-    type: :Ancestor
-  ValidateShacl (33da83e9-fb7e-4aba-bda7-79c67fafa147)
- Call ID: 33da83e9-fb7e-4aba-bda7-79c67fafa147
-  Args:
-  Finish (e3bd1de6-5b76-46a4-b30e-f97053853068)
- Call ID: e3bd1de6-5b76-46a4-b30e-f97053853068
+  ValidateShacl (27c602ea-f417-4b1a-bcd3-f38d42793c0a)
+ Call ID: 27c602ea-f417-4b1a-bcd3-f38d42793c0a
   Args:
 
 ================================= Tool Message =================================
 
-Look at the messages below to see the final data graph after all the edits.
+VALIDATION RESULTS
+Total violations:3
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Claude_Bowes-Lyon, assigned as the father of Mary_Frances_Elphinstone, is missing the required class :Ancestor. While it is currently marked as a :Man, the SHACL shape requires it to specifically hold the :Ancestor class to satisfy the property constraint.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add the :Ancestor class to the node Claude_Bowes-Lyon.
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Claude_Bowes-Lyon is currently missing the :Ancestor class, which is a mandatory class assignment for any value linked via the :hasFather property according to the SHACL shape :Person-hasFather.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add the :Ancestor class to the node Claude_Bowes-Lyon.
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Claude_Bowes-Lyon fails the class validation for the property :hasFather because it lacks the :Ancestor class definition required by the SHACL constraint.
+    LLM-provided instruction on how to handle the violation:
+      Use AssignClass to add the :Ancestor class to the node Claude_Bowes-Lyon.
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (f86a7f68-8cda-4724-9cec-b059de4b42e4)
+ Call ID: f86a7f68-8cda-4724-9cec-b059de4b42e4
+  Args:
+    type: :Ancestor
+    source: Claude_Bowes-Lyon
 
 ================================= Tool Message =================================
 
-Look at the messages below to see the final data graph after all the edits.
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Mary_Frances_Elphinstone a :Person,
+          :Woman ;
+      :hasBirthYear 1883 ;
+      :hasDeathYear 1961 ;
+      :hasFather data:Claude_Bowes-Lyon ;
+      :hasMarriageYear 1910 ;
+      :hasRelation data:Sidney_Elphinstone ;
+      :isAuntOf data:Queen_Elizabeth_II ;
+      :isSisterOf data:Elizabeth_Bowes-Lyon ;
+      :knownAs data:Lady_Elphinstone .
+
+  data:Claude_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Elizabeth_Bowes-Lyon a :Person,
+          :Woman .
+
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
+
+  data:Sidney_Elphinstone a :Man,
+          :Person ;
+      :hasBirthYear 1869 ;
+      :hasDeathYear 1955 ;
+      :knownAs data:Lord_Elphinstone .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (057e352a-167f-4d67-a66d-137a9a462f49)
+ Call ID: 057e352a-167f-4d67-a66d-137a9a462f49
+  Args:
 
 ================================= Tool Message =================================
 
-Look at the messages below to see the final data graph after all the edits.
+SHACL validation has not produced any violations.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (151737a9-3e70-4635-8a74-b443088490fa)
+ Call ID: 151737a9-3e70-4635-8a74-b443088490fa
+  Args:
 
 ================================= Tool Message =================================
 
-Look at the messages below to see the final data graph after all the edits.
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Lady_Elphinstone', 'Lord_Elphinstone']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (68752499-4885-4c76-8c1c-bbbf8cc1403a)
+ Call ID: 68752499-4885-4c76-8c1c-bbbf8cc1403a
+  Args:
+    type: :Woman
+    source: Lady_Elphinstone
+  AssignClass (ea3db90f-7dfd-491e-a741-b3caacc10aa6)
+ Call ID: ea3db90f-7dfd-491e-a741-b3caacc10aa6
+  Args:
+    source: Lord_Elphinstone
+    type: :Man
 
 ================================= Tool Message =================================
 
@@ -896,61 +845,43 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Barbara_of_Prussia a :Woman ;
-      :hasBirthYear 1920 ;
-      :hasDeathYear 1994 ;
-      :hasFather data:Sigismund_of_Prussia ;
-      :hasMother data:Charlotte_of_Saxe_Altenburg .
-
-  data:Christian_Louis_of_Mecklenburg a :Man ;
-      :hasBirthYear 1912 ;
-      :hasDeathYear 1996 ;
-      :hasFather data:Frederick_Francis_IV ;
-      :hasMarriageYear 1954 ;
-      :hasMother data:Alexandra_of_Hanover ;
-      :hasSister data:Thyra_of_Mecklenburg .
-
-  data:Charlotte_of_Saxe_Altenburg a :Ancestor,
-          :Woman .
-
-  data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
-          :Man .
-
-  data:Sigismund_of_Prussia a :Ancestor,
-          :Man .
-
-  data:Thyra_of_Denmark a :Ancestor,
-          :Woman .
-
-  data:Thyra_of_Mecklenburg a :Woman ;
-      :hasFather data:Frederick_Francis_IV ;
-      :hasMother data:Alexandra_of_Hanover .
-
-  data:Alexandra_of_Hanover a :Ancestor,
+  data:Mary_Frances_Elphinstone a :Person,
           :Woman ;
-      :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-      :hasMother data:Thyra_of_Denmark .
+      :hasBirthYear 1883 ;
+      :hasDeathYear 1961 ;
+      :hasFather data:Claude_Bowes-Lyon ;
+      :hasMarriageYear 1910 ;
+      :hasRelation data:Sidney_Elphinstone ;
+      :isAuntOf data:Queen_Elizabeth_II ;
+      :isSisterOf data:Elizabeth_Bowes-Lyon ;
+      :knownAs data:Lady_Elphinstone .
 
-  data:Frederick_Francis_IV a :Ancestor,
-          :Man .
+  data:Claude_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Elizabeth_Bowes-Lyon a :Person,
+          :Woman .
+
+  data:Lady_Elphinstone a :Woman .
+
+  data:Lord_Elphinstone a :Man .
+
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
+
+  data:Sidney_Elphinstone a :Man,
+          :Person ;
+      :hasBirthYear 1869 ;
+      :hasDeathYear 1955 ;
+      :knownAs data:Lord_Elphinstone .
 
 
-
-================================= Tool Message =================================
-
-SHACL validation has not produced any violations.
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (c9d4f7f8-336b-46d1-ab9c-5c3f2b00a584)
- Call ID: c9d4f7f8-336b-46d1-ab9c-5c3f2b00a584
-  Args:
-  Finish (9777d042-77aa-452e-86b6-3b59912af0ac)
- Call ID: 9777d042-77aa-452e-86b6-3b59912af0ac
+  Finish (aea1515b-f501-4520-9bd2-e7b332faf4d2)
+ Call ID: aea1515b-f501-4520-9bd2-e7b332faf4d2
   Args:

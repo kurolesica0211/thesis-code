@@ -85,19 +85,28 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Maria Immaculata Cristina Pia Isabella of Bourbon-Two Sicilies (Full Italian name: Maria Immacolata Speranza Pia Teresa Cristina Filomena Lucia Anna Isabella Cecilia Apollonia Barbara Agnese Zenobia, Principessa di Borbone delle
-Due Sicilie,) (30 October 1874 – 28 November 1947) was the fourth child and eldest daughter of Prince Alfonso of Bourbon-Two Sicilies, Count of Caserta, and his wife Princess Maria Antonietta of Bourbon-Two Sicilies.
-Marriage
+Prince Karl Adolf Andreas Prinz von Hesse (German: Karl Adolf Andreas Prinz Von Hessen; 26 March 1937 – 23 March 2022) was a member of the German electoral House of Hesse-Kassel.
+He was a first cousin of King Charles III of the United Kingdom through his uncle Prince Philip.
+Early life and ancestry
 
-Maria Immaculata married Prince Johann Georg of Saxony, sixth child and second-eldest son of George of Saxony and his wife Maria Anna of Portugal, on 30 October 1906 in Cannes.
-Her mother-in-law, Maria Anna, was the daughter of Maria II of Portugal and her husband Ferdinand II of Portugal.
-The couple did not have children, but Maria Immaculata cared for the children of her brother-in-law Frederick Augustus III of Saxony.
+Born on 26  March 1937 in Berlin, into an elder line of the House of Hesse, a house directly descended from the House of Brabant, Karl Adolf Andreas was the eldest son of Prince Christoph of Hesse and his wife, Princess Sophie of Greece and Denmark, youngest sister of Prince Philip, Duke of Edinburgh.
+In 1946, his mother was married again to Prince George William of Hanover, maternal grandson of Wilhelm II.
+Orphaned by his father at an early age, Karl was later adopted by one of his paternal uncles, Prince Wolfgang of Hesse, in 1952.
+Related to most European dynasties, Karl participated in the major events of the gotha.
+In 1954, he and his family were invited to take part in the Cruise of the Kings, organized by King Paul of Greece and his wife Queen Frederica.
+Karl briefly discussed his mother's childhood and her ties to the Nazi regime in a documentary in 2015 about his uncle, Prince Philip:
+Death
+
+Prince Karl of Hesse died in Munich, at the age of 84 years, on March 23, 2022.
+}} Media related to Karl Adolf Andreas of Hesse at Wikimedia Commons
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -113,39 +122,9 @@ The couple did not have children, but Maria Immaculata cared for the children of
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -160,6 +139,23 @@ The couple did not have children, but Maria Immaculata cared for the children of
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -177,6 +173,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -244,29 +255,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -275,6 +278,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -287,6 +298,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -295,17 +308,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -333,6 +348,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -348,221 +447,156 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e4376262-fb74-4512-bdf0-01f2fa466d31)
- Call ID: e4376262-fb74-4512-bdf0-01f2fa466d31
+  AssignClass (387c2563-0b3a-4b19-bb91-68a5aca1c2c6)
+ Call ID: 387c2563-0b3a-4b19-bb91-68a5aca1c2c6
+  Args:
+    source: Karl_Adolf_Andreas_von_Hesse
+    type: :Man
+  AssignClass (a5aff2f9-82d7-4d9b-88c3-6d121fe7bf16)
+ Call ID: a5aff2f9-82d7-4d9b-88c3-6d121fe7bf16
   Args:
     type: :Person
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-  AssignClass (5beba095-8a51-4115-b175-327d02662bb1)
- Call ID: 5beba095-8a51-4115-b175-327d02662bb1
+    source: Karl_Adolf_Andreas_von_Hesse
+  AddLiteral (67eb0f11-6cbd-4d4c-9d22-a221d17452bb)
+ Call ID: 67eb0f11-6cbd-4d4c-9d22-a221d17452bb
   Args:
-    type: :Woman
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-  AddLiteral (8d2efc00-24d3-4502-a2e2-92d6f34c2a1c)
- Call ID: 8d2efc00-24d3-4502-a2e2-92d6f34c2a1c
-  Args:
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-    literal_type: xsd:int
-    literal_value: 1874
+    literal_type: xsd:integer
+    source: Karl_Adolf_Andreas_von_Hesse
     relation: :hasBirthYear
-  AddLiteral (6ca437ab-1bb2-40a0-85c9-518541b2b4d7)
- Call ID: 6ca437ab-1bb2-40a0-85c9-518541b2b4d7
+    literal_value: 1937
+  AddLiteral (761ec2a8-57d7-4d90-9e7b-464cc1015e5f)
+ Call ID: 761ec2a8-57d7-4d90-9e7b-464cc1015e5f
   Args:
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-    literal_value: 1947
-    literal_type: xsd:int
+    literal_type: xsd:integer
     relation: :hasDeathYear
-  AssignClass (fb75458a-1087-4444-8921-65445dcdffd1)
- Call ID: fb75458a-1087-4444-8921-65445dcdffd1
+    literal_value: 2022
+    source: Karl_Adolf_Andreas_von_Hesse
+  AddTriple (657c495b-54c5-4248-8e47-5bad2d4e1931)
+ Call ID: 657c495b-54c5-4248-8e47-5bad2d4e1931
   Args:
-    type: :Person
-    source: Alfonso_of_Bourbon-Two_Sicilies
-  AssignClass (ca06960b-a2cb-4e14-a297-a7e74e8d417a)
- Call ID: ca06960b-a2cb-4e14-a297-a7e74e8d417a
+    relation: :knownAs
+    source: Karl_Adolf_Andreas_von_Hesse
+    target: Karl_Adolf_Andreas_Prinz_Von_Hessen
+  AssignClass (d52e986f-ec64-4d20-b148-bf3e97c54d14)
+ Call ID: d52e986f-ec64-4d20-b148-bf3e97c54d14
   Args:
     type: :Man
-    source: Alfonso_of_Bourbon-Two_Sicilies
-  AssignClass (9706d7ee-6e87-49fd-9221-8ee99b5f5d60)
- Call ID: 9706d7ee-6e87-49fd-9221-8ee99b5f5d60
-  Args:
-    type: :Ancestor
-    source: Alfonso_of_Bourbon-Two_Sicilies
-  AddTriple (113d2ebb-17cf-4bbe-bf30-82a1159c0077)
- Call ID: 113d2ebb-17cf-4bbe-bf30-82a1159c0077
-  Args:
-    relation: :hasFather
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-    target: Alfonso_of_Bourbon-Two_Sicilies
-  AssignClass (916737fc-033a-4adc-8265-14f026b61d28)
- Call ID: 916737fc-033a-4adc-8265-14f026b61d28
+    source: Christoph_of_Hesse
+  AssignClass (7a7ea9e9-eb20-45f0-95cf-91e6f6c79c50)
+ Call ID: 7a7ea9e9-eb20-45f0-95cf-91e6f6c79c50
   Args:
     type: :Person
-    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (62ab7a3e-72c0-4b08-b9ef-8a7108c78d24)
- Call ID: 62ab7a3e-72c0-4b08-b9ef-8a7108c78d24
+    source: Christoph_of_Hesse
+  AssignClass (32f9d907-66da-472a-ac26-9d77a2f15e29)
+ Call ID: 32f9d907-66da-472a-ac26-9d77a2f15e29
   Args:
+    source: Sophie_of_Greece_and_Denmark
     type: :Woman
-    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (b9e418cc-e929-474f-9401-98ff99e07208)
- Call ID: b9e418cc-e929-474f-9401-98ff99e07208
+  AssignClass (eefa51e5-97e4-4c84-bd65-0554310e820f)
+ Call ID: eefa51e5-97e4-4c84-bd65-0554310e820f
   Args:
-    type: :Ancestor
-    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AddTriple (ac97385b-4186-4e28-8b8d-812fa4ea6cbd)
- Call ID: ac97385b-4186-4e28-8b8d-812fa4ea6cbd
-  Args:
-    relation: :hasMother
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-    target: Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (d1bb5f91-d3c6-42ad-9a82-e29fb429dfaa)
- Call ID: d1bb5f91-d3c6-42ad-9a82-e29fb429dfaa
-  Args:
+    source: Sophie_of_Greece_and_Denmark
     type: :Person
-    source: Johann_Georg_of_Saxony
-  AssignClass (0ac65e6e-b633-4eee-8f25-c768ecc91018)
- Call ID: 0ac65e6e-b633-4eee-8f25-c768ecc91018
+  AddTriple (dd34cb88-4b69-4e7f-9e94-909c7bb33369)
+ Call ID: dd34cb88-4b69-4e7f-9e94-909c7bb33369
+  Args:
+    target: Christoph_of_Hesse
+    relation: :hasFather
+    source: Karl_Adolf_Andreas_von_Hesse
+  AddTriple (65a7c100-1aba-4a1f-b62e-6692c593a1c1)
+ Call ID: 65a7c100-1aba-4a1f-b62e-6692c593a1c1
+  Args:
+    target: Sophie_of_Greece_and_Denmark
+    source: Karl_Adolf_Andreas_von_Hesse
+    relation: :hasMother
+  AssignClass (a6dd8c0d-4310-40b5-a0f3-c420c039fa1d)
+ Call ID: a6dd8c0d-4310-40b5-a0f3-c420c039fa1d
   Args:
     type: :Man
-    source: Johann_Georg_of_Saxony
-  AddLiteral (8df55de7-934b-484c-9cb6-6be070ec9838)
- Call ID: 8df55de7-934b-484c-9cb6-6be070ec9838
+    source: George_William_of_Hanover
+  AssignClass (394e9c34-a5d1-4d2d-b38b-1bf18c045ad1)
+ Call ID: 394e9c34-a5d1-4d2d-b38b-1bf18c045ad1
   Args:
-    literal_type: xsd:int
-    literal_value: 1906
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+    source: George_William_of_Hanover
+    type: :Person
+  AddLiteral (b987a549-f662-49f9-a204-4ced1ae1b4c2)
+ Call ID: b987a549-f662-49f9-a204-4ced1ae1b4c2
+  Args:
+    literal_type: xsd:integer
+    source: Sophie_of_Greece_and_Denmark
     relation: :hasMarriageYear
-  AddTriple (f1158147-825f-43ca-bf38-a0fe0f9930d2)
- Call ID: f1158147-825f-43ca-bf38-a0fe0f9930d2
+    literal_value: 1946
+  AddTriple (c75ba30e-e661-4b17-becc-d52b69b4a94f)
+ Call ID: c75ba30e-e661-4b17-becc-d52b69b4a94f
   Args:
+    target: George_William_of_Hanover
     relation: :hasRelation
-    target: Johann_Georg_of_Saxony
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-  AssignClass (549fbde0-f60e-4b08-bdaf-a07fc00aaa54)
- Call ID: 549fbde0-f60e-4b08-bdaf-a07fc00aaa54
+    source: Sophie_of_Greece_and_Denmark
+  AssignClass (a9fef665-52b2-4219-bc96-1573843c67a4)
+ Call ID: a9fef665-52b2-4219-bc96-1573843c67a4
+  Args:
+    source: Wolfgang_of_Hesse
+    type: :Man
+  AssignClass (2733a184-e9c1-493f-9a19-212787cc58ab)
+ Call ID: 2733a184-e9c1-493f-9a19-212787cc58ab
   Args:
     type: :Person
-    source: George_of_Saxony
-  AssignClass (ec8e7a26-7a40-4650-bed8-e2a41667f0bf)
- Call ID: ec8e7a26-7a40-4650-bed8-e2a41667f0bf
+    source: Wolfgang_of_Hesse
+  AssignClass (a3bee3e7-4d29-460b-bc01-dad0f98a8b0c)
+ Call ID: a3bee3e7-4d29-460b-bc01-dad0f98a8b0c
+  Args:
+    source: Prince_Philip
+    type: :Man
+  AssignClass (4fd369f2-3911-4e0d-9d69-4fcb66df49e5)
+ Call ID: 4fd369f2-3911-4e0d-9d69-4fcb66df49e5
+  Args:
+    type: :Person
+    source: Prince_Philip
+  AddTriple (ffac00f0-3159-4047-99bc-0a3792c7511f)
+ Call ID: ffac00f0-3159-4047-99bc-0a3792c7511f
+  Args:
+    relation: :isSisterOf
+    source: Sophie_of_Greece_and_Denmark
+    target: Prince_Philip
+  AssignClass (35245a98-a078-4d4a-a98b-6f5466612578)
+ Call ID: 35245a98-a078-4d4a-a98b-6f5466612578
+  Args:
+    source: King_Charles_III
+    type: :Man
+  AssignClass (8b2332e3-303d-4547-912e-047d162f6e2b)
+ Call ID: 8b2332e3-303d-4547-912e-047d162f6e2b
+  Args:
+    source: King_Charles_III
+    type: :Person
+  AssignClass (9a2344f5-ef50-4b03-ba7f-d87a183369a1)
+ Call ID: 9a2344f5-ef50-4b03-ba7f-d87a183369a1
   Args:
     type: :Man
-    source: George_of_Saxony
-  AssignClass (74328661-6eab-49a7-b117-7f321b3dce62)
- Call ID: 74328661-6eab-49a7-b117-7f321b3dce62
+    source: Paul_of_Greece
+  AssignClass (699967b9-8a57-4ac3-9776-9a79ad1ed901)
+ Call ID: 699967b9-8a57-4ac3-9776-9a79ad1ed901
   Args:
+    source: Paul_of_Greece
     type: :Person
-    source: Maria_Anna_of_Portugal
-  AssignClass (ff43354c-3e5e-4e3c-95e2-ee3d209ee112)
- Call ID: ff43354c-3e5e-4e3c-95e2-ee3d209ee112
+  AssignClass (94c99bab-6afe-4cf0-9e73-e0cd6e23e8bf)
+ Call ID: 94c99bab-6afe-4cf0-9e73-e0cd6e23e8bf
   Args:
     type: :Woman
-    source: Maria_Anna_of_Portugal
-  AssignClass (8e98b853-e6d3-4686-9eec-fe13e0d720c8)
- Call ID: 8e98b853-e6d3-4686-9eec-fe13e0d720c8
+    source: Frederica_of_Greece
+  AssignClass (52770348-faa5-4620-84b2-e13a53f93345)
+ Call ID: 52770348-faa5-4620-84b2-e13a53f93345
   Args:
-    type: :Ancestor
-    source: Maria_Anna_of_Portugal
-  AddTriple (cf5df36d-3402-4dd4-98fa-a48dbfdd5b4e)
- Call ID: cf5df36d-3402-4dd4-98fa-a48dbfdd5b4e
-  Args:
-    relation: :hasFather
-    source: Johann_Georg_of_Saxony
-    target: George_of_Saxony
-  AddTriple (0d30e5aa-e794-4c98-9fca-0046656e8efa)
- Call ID: 0d30e5aa-e794-4c98-9fca-0046656e8efa
-  Args:
-    relation: :hasMother
-    source: Johann_Georg_of_Saxony
-    target: Maria_Anna_of_Portugal
-  AssignClass (c2dea82f-7e13-4e61-bd51-ac6f43b23cbc)
- Call ID: c2dea82f-7e13-4e61-bd51-ac6f43b23cbc
-  Args:
+    source: Frederica_of_Greece
     type: :Person
-    source: Maria_II_of_Portugal
-  AssignClass (a437a1ab-e594-40e2-9d1a-49a063065b72)
- Call ID: a437a1ab-e594-40e2-9d1a-49a063065b72
-  Args:
-    type: :Woman
-    source: Maria_II_of_Portugal
-  AssignClass (a2e26a36-8da4-4e42-a302-e6519301dbe1)
- Call ID: a2e26a36-8da4-4e42-a302-e6519301dbe1
-  Args:
-    type: :Ancestor
-    source: Maria_II_of_Portugal
-  AssignClass (b4e092b3-1f69-4af5-8d0d-079f8e5b9b27)
- Call ID: b4e092b3-1f69-4af5-8d0d-079f8e5b9b27
-  Args:
-    type: :Person
-    source: Ferdinand_II_of_Portugal
-  AssignClass (c1d08b87-0744-4a21-9b51-f685dfc15043)
- Call ID: c1d08b87-0744-4a21-9b51-f685dfc15043
-  Args:
-    type: :Man
-    source: Ferdinand_II_of_Portugal
-  AssignClass (649302f6-16da-4b7d-bc77-f8d3537e4859)
- Call ID: 649302f6-16da-4b7d-bc77-f8d3537e4859
-  Args:
-    type: :Ancestor
-    source: Ferdinand_II_of_Portugal
-  AddTriple (9ca8e942-94af-4e67-aec1-4b0f1de1e360)
- Call ID: 9ca8e942-94af-4e67-aec1-4b0f1de1e360
-  Args:
-    relation: :hasMother
-    target: Maria_II_of_Portugal
-    source: Maria_Anna_of_Portugal
-  AddTriple (830165d8-e1e7-4b75-8b1b-eb39a31ee731)
- Call ID: 830165d8-e1e7-4b75-8b1b-eb39a31ee731
-  Args:
-    source: Maria_Anna_of_Portugal
-    target: Ferdinand_II_of_Portugal
-    relation: :hasFather
-  AssignClass (dafd5608-0369-4b10-a927-72afc632215a)
- Call ID: dafd5608-0369-4b10-a927-72afc632215a
-  Args:
-    type: :Person
-    source: Frederick_Augustus_III_of_Saxony
-  AssignClass (53e65add-5fbc-4b7b-90d3-521f7df8471b)
- Call ID: 53e65add-5fbc-4b7b-90d3-521f7df8471b
-  Args:
-    type: :Man
-    source: Frederick_Augustus_III_of_Saxony
-  AddTriple (c896a97f-87cc-48fe-8b71-04e4b1ad6dc8)
- Call ID: c896a97f-87cc-48fe-8b71-04e4b1ad6dc8
+  AddTriple (c59bf942-caef-45fc-907b-2b6fdeab3f04)
+ Call ID: c59bf942-caef-45fc-907b-2b6fdeab3f04
   Args:
     relation: :hasRelation
-    target: Frederick_Augustus_III_of_Saxony
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-  Finish (b76bef8a-f95c-40de-b52f-b6ef0983c087)
- Call ID: b76bef8a-f95c-40de-b52f-b6ef0983c087
+    source: Paul_of_Greece
+    target: Frederica_of_Greece
+  ValidateShacl (a566de0b-dbf2-484c-8d40-3a8805f08938)
+ Call ID: a566de0b-dbf2-484c-8d40-3a8805f08938
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -675,91 +709,96 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Maria_Immaculata_of_Bourbon-Two_Sicilies a :Person,
-          :Woman ;
-      :hasBirthYear "1874"^^xsd:int ;
-      :hasDeathYear "1947"^^xsd:int ;
-      :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
-      :hasMarriageYear "1906"^^xsd:int ;
-      :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-      :hasRelation data:Frederick_Augustus_III_of_Saxony,
-          data:Johann_Georg_of_Saxony .
-
-  data:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Ferdinand_II_of_Portugal a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Frederick_Augustus_III_of_Saxony a :Man,
-          :Person .
-
-  data:George_of_Saxony a :Man,
-          :Person .
-
-  data:Johann_Georg_of_Saxony a :Man,
+  data:Karl_Adolf_Andreas_von_Hesse a :Man,
           :Person ;
-      :hasFather data:George_of_Saxony ;
-      :hasMother data:Maria_Anna_of_Portugal .
+      :hasBirthYear 1937 ;
+      :hasDeathYear 2022 ;
+      :hasFather data:Christoph_of_Hesse ;
+      :hasMother data:Sophie_of_Greece_and_Denmark ;
+      :knownAs data:Karl_Adolf_Andreas_Prinz_Von_Hessen .
 
-  data:Maria_Anna_of_Portugal a :Ancestor,
-          :Person,
+  data:King_Charles_III a :Man,
+          :Person .
+
+  data:Paul_of_Greece a :Man,
+          :Person ;
+      :hasRelation data:Frederica_of_Greece .
+
+  data:Wolfgang_of_Hesse a :Man,
+          :Person .
+
+  data:Christoph_of_Hesse a :Man,
+          :Person .
+
+  data:Frederica_of_Greece a :Person,
+          :Woman .
+
+  data:George_William_of_Hanover a :Man,
+          :Person .
+
+  data:Prince_Philip a :Man,
+          :Person .
+
+  data:Sophie_of_Greece_and_Denmark a :Person,
           :Woman ;
-      :hasFather data:Ferdinand_II_of_Portugal ;
-      :hasMother data:Maria_II_of_Portugal .
-
-  data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Maria_II_of_Portugal a :Ancestor,
-          :Person,
-          :Woman .
+      :hasMarriageYear 1946 ;
+      :hasRelation data:George_William_of_Hanover ;
+      :isSisterOf data:Prince_Philip .
 
 
-
-================================= Tool Message =================================
-
-You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (26389fa9-dba8-4e55-9e68-e8adb5cba091)
- Call ID: 26389fa9-dba8-4e55-9e68-e8adb5cba091
-  Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:3
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'George_of_Saxony', which is the value for the 'hasFather' property of 'Johann_Georg_of_Saxony', does not have the required ':Ancestor' class assignment.
+      The node 'Christoph_of_Hesse' is assigned as the father of 'Karl_Adolf_Andreas_von_Hesse', but it lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add the class ':Ancestor' to the node 'George_of_Saxony'.
+      AssignClass(node='Christoph_of_Hesse', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'George_of_Saxony' is currently missing the mandatory ':Ancestor' classification required by the 'hasFather' property shape.
+      The node 'Sophie_of_Greece_and_Denmark' is assigned as the mother of 'Karl_Adolf_Andreas_von_Hesse', but it lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add the class ':Ancestor' to the node 'George_of_Saxony'.
+      AssignClass(node='Sophie_of_Greece_and_Denmark', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'George_of_Saxony' fails to satisfy the class constraints for the 'hasFather' property because it is not explicitly classified as an ':Ancestor'.
+      The node 'Christoph_of_Hesse' is missing the ':Ancestor' classification required for the 'hasFather' relationship.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add the class ':Ancestor' to the node 'George_of_Saxony'.
+      AssignClass(node='Christoph_of_Hesse', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Sophie_of_Greece_and_Denmark' is missing the ':Ancestor' classification required for the 'hasMother' relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Sophie_of_Greece_and_Denmark', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Christoph_of_Hesse' is still identified as missing the required ':Ancestor' class for the 'hasFather' property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Christoph_of_Hesse', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Sophie_of_Greece_and_Denmark' is still identified as missing the required ':Ancestor' class for the 'hasMother' property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Sophie_of_Greece_and_Denmark', class=':Ancestor')
 
 
 
@@ -768,11 +807,23 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (e641bca5-a0de-44fc-bc86-33638e621282)
- Call ID: e641bca5-a0de-44fc-bc86-33638e621282
+  AssignClass (98e72655-8d74-4f6c-888b-41334d73efa6)
+ Call ID: 98e72655-8d74-4f6c-888b-41334d73efa6
   Args:
     type: :Ancestor
-    source: George_of_Saxony
+    source: Christoph_of_Hesse
+  AssignClass (0fe6d831-877b-4663-b425-5dbdca46f960)
+ Call ID: 0fe6d831-877b-4663-b425-5dbdca46f960
+  Args:
+    type: :Ancestor
+    source: Sophie_of_Greece_and_Denmark
+  Finish (60fa1fd0-98ba-4752-bf0a-239ee7264a3c)
+ Call ID: 60fa1fd0-98ba-4752-bf0a-239ee7264a3c
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -781,58 +832,56 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Maria_Immaculata_of_Bourbon-Two_Sicilies a :Person,
-          :Woman ;
-      :hasBirthYear "1874"^^xsd:int ;
-      :hasDeathYear "1947"^^xsd:int ;
-      :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
-      :hasMarriageYear "1906"^^xsd:int ;
-      :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-      :hasRelation data:Frederick_Augustus_III_of_Saxony,
-          data:Johann_Georg_of_Saxony .
-
-  data:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Ferdinand_II_of_Portugal a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Frederick_Augustus_III_of_Saxony a :Man,
-          :Person .
-
-  data:George_of_Saxony a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Johann_Georg_of_Saxony a :Man,
+  data:Karl_Adolf_Andreas_von_Hesse a :Man,
           :Person ;
-      :hasFather data:George_of_Saxony ;
-      :hasMother data:Maria_Anna_of_Portugal .
+      :hasBirthYear 1937 ;
+      :hasDeathYear 2022 ;
+      :hasFather data:Christoph_of_Hesse ;
+      :hasMother data:Sophie_of_Greece_and_Denmark ;
+      :knownAs data:Karl_Adolf_Andreas_Prinz_Von_Hessen .
 
-  data:Maria_Anna_of_Portugal a :Ancestor,
+  data:King_Charles_III a :Man,
+          :Person .
+
+  data:Paul_of_Greece a :Man,
+          :Person ;
+      :hasRelation data:Frederica_of_Greece .
+
+  data:Wolfgang_of_Hesse a :Man,
+          :Person .
+
+  data:Christoph_of_Hesse a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Frederica_of_Greece a :Person,
+          :Woman .
+
+  data:George_William_of_Hanover a :Man,
+          :Person .
+
+  data:Prince_Philip a :Man,
+          :Person .
+
+  data:Sophie_of_Greece_and_Denmark a :Ancestor,
           :Person,
           :Woman ;
-      :hasFather data:Ferdinand_II_of_Portugal ;
-      :hasMother data:Maria_II_of_Portugal .
-
-  data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Maria_II_of_Portugal a :Ancestor,
-          :Person,
-          :Woman .
+      :hasMarriageYear 1946 ;
+      :hasRelation data:George_William_of_Hanover ;
+      :isSisterOf data:Prince_Philip .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (2b2ce77c-a317-4f39-9d2e-0b1dcf666977)
- Call ID: 2b2ce77c-a317-4f39-9d2e-0b1dcf666977
+  ValidateShacl (ab61d33c-b095-4419-8504-2f71222ff920)
+ Call ID: ab61d33c-b095-4419-8504-2f71222ff920
   Args:
 
 ================================= Tool Message =================================
@@ -843,6 +892,37 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (bfa08e72-dc3b-4424-937c-ff81e889c8c2)
- Call ID: bfa08e72-dc3b-4424-937c-ff81e889c8c2
+  Finish (3b902120-80a0-4e06-affc-4dd86924beee)
+ Call ID: 3b902120-80a0-4e06-affc-4dd86924beee
+  Args:
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Karl_Adolf_Andreas_Prinz_Von_Hessen']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (7a2326dc-d6d3-49ba-94c0-2f4a03cf265e)
+ Call ID: 7a2326dc-d6d3-49ba-94c0-2f4a03cf265e
+  Args:
+    type: :Person
+    source: Karl_Adolf_Andreas_Prinz_Von_Hessen
+  Finish (51685e00-666f-4d10-9b92-1003750c3b31)
+ Call ID: 51685e00-666f-4d10-9b92-1003750c3b31
   Args:

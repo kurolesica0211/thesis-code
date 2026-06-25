@@ -69,32 +69,56 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lady Mary Cecilia Colman (née Bowes-Lyon; 30 January 1932 – 2 January 2021) was an English socialite, philanthropist, and extra lady-in-waiting to Princess Alexandra, The Honourable Lady Ogilvy.
-The daughter of Michael Bowes-Lyon and Elizabeth Margaret Cator, her paternal aunt was Queen Elizabeth
-The Queen Mother, and she was thus a first cousin of Queen Elizabeth II and Princess Margaret, Countess of Snowdon.
-Early life
+India Riven Oxenberg (born June 7, 1991) is an American actress and documentary film producer.
+A granddaughter of Princess Elizabeth of Yugoslavia, she is a relative of the House of Karađorđević, the former royal family of Serbia and, later, Yugoslavia.
+Oxenberg began her career as a child actress, with small roles in film and television projects that her mother, Catherine Oxenberg, and then-stepfather, Casper Van Dien, were involved in.
+As a teenager, she was a cast member of the reality television series I Married a Princess.
+From 2011 to 2018, Oxenberg was involved in NXIVM, an American multi-level marketing company that was later exposed as a cult.
+Early life and education
 
-Mary Cecilia Bowes-Lyon was born on 30 January 1932 at Gastlings, the Bowes-Lyon family home in Biggleswade, Bedfordshire.
-Her father, Michael Bowes-Lyon (1893–1953), was the fifth son of Claude Bowes-Lyon, 14th
-Earl of Strathmore and Kinghorne and Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne (née Cavendish-Bentinck).
-Her mother, Elizabeth Margaret Cator (1899–1959), was a great-granddaughter of Charles Yorke, 4th Earl of Hardwicke.
-She had a twin sister, Patricia Maud, later Lady Patricia Tetley, an older brother, Fergus Michael Claude, later Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne, and a younger brother, Michael Albemarle.
-Lady Mary was also a godmother to Diana, Princess of Wales.
-In 1949, a coming-out ball was held for her and her twin sister Patricia at Londonderry House, which was attended by their aunt, the Queen, and their cousins, The Princess Elizabeth and The Princess Margaret.
-Marriage and children
+Oxenberg was born on June 7, 1991, to actress Catherine Oxenberg and William Weitz Shaffer.
+Oxenberg's father was arrested in 1992 for smuggling marijuana from Thailand, reportedly profiting $50 million from drug trading.
+Her maternal grandparents are Princess Elizabeth of Yugoslavia and Howard Oxenberg, a Jewish dress manufacturer.
+As a great-granddaughter of Prince Regent Paul of Yugoslavia (Elizabeth's father), Oxenberg is a descendant of the House of Karađorđević, which ruled Serbia and Yugoslavia.
+Oxenberg is also a relative of the British royal family, the Danish royal family, and the Greek royal family through her great-grandmother, Princess Olga of Greece and Denmark.
+She is a niece of writer and fashion designer Christina Oxenberg.
+In 2008, Oxenberg was presented to society at Le Bal des débutantes at the Hôtel de Crillon in Paris.
+She was one of two descendants of the Karađorđević dynasty to make her debut at Le Bal that year, alongside her cousin Victoria de Silva, the daughter of Princess Katarina and Sir Desmond de Silva.
+Career
 
-On 10 November 1951 at St Bartholomew-the-Great in London, Mary married the then-Lieutenant Timothy Colman, son of the cricketer Geoffrey Colman.
-Work and later life
+Oxenberg's first film was the 2001 television drama The Miracle of the Cards.
+In 2002, Oxenberg played the role of Mattie in the science fiction television film The Vector File.
+Oxenberg was a cast member on the 2005 Lifetime reality television series I Married a Princess, which followed her family while her mother was married to Casper Van Dien.
+In 2009, she had a small role in the Disney film Princess Protection Program.
+Personal life
 
-In 1970, Mary was appointed an Extra Lady-in-waiting to another of the Queen's first cousins, Princess Alexandra, The Hon.
-After her elder brother succeeded their cousin as 17th Earl of Strathmore and Kinghorne, she received the title and precedence of a daughter of an earl by royal warrant of precedence in 1974.
-Lady Mary died at her home in Bixley, Norfolk on 2 January 2021, at the age of 88.
+In 2018, Oxenberg met Patrick D'Ignazio, a chef, while working as a manager for a restaurant in New York City.
+Oxenberg and D’Ignazio had their first child, a girl, in 2024.
+NXIVM
+
+After attending college for one year, Oxenberg, alongside her mother, enrolled in a self-help entrepreneurship course hosted by NXIVM, following a recommendation from a family friend.
+While they initially started the program together, Oxenberg's mother eventually withdrew.
+In January 2015, after five years in NXIVM, Oxenberg was approached by Allison Mack about joining a secret sorority, "DOS".
+In DOS, Mack became a mentor to Oxenberg.
+Oxenberg was instructed to provide personal family secrets and pose for nude photographs for Mack, who also limited the amount of food Oxenberg could eat and required her to cook and clean for her while living with Mack in Albany, New York.
+Throughout this process, Oxenberg was groomed to become a sexual partner for NXIVM's founder and the leader of DOS, Keith Raniere.
+In January 2016, Oxenberg was held down and branded with the initials of Raniere.
+Oxenberg left NXIVM in 2018.
+While Oxenberg was involved in NXIVM, her mother Catherine tried to get her out of the organization and expose the cult through media in 2017.
+In 2018, Catherine wrote the book Captive: A Mother's Crusade to Save Her Daughter from a Terrifying Cult.
+In 2019, Catherine produced the Lifetime television movie Escaping the NXIVM Cult: A Mother's Fight to Save Her Daughter.
+Oxenberg officially left NXIVM in the summer of 2018 and moved back to Malibu with her mother.
+Oxenberg's time in the cult was discussed in the HBO 2020 documentary The Vow.
+Oxenberg produced and starred in the 2020 Starz documentary series Seduced: Inside the NXIVM Cult.
+Oxenberg had her NXIVM brand covered up with a tattoo of a mandala and the inscription "ancora imparo" (i'm still learning) by a tattoo artist in New York City's East Village.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -110,39 +134,9 @@ Lady Mary died at her home in Bixley, Norfolk on 2 January 2021, at the age of 8
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -157,6 +151,23 @@ Lady Mary died at her home in Bixley, Norfolk on 2 January 2021, at the age of 8
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -174,6 +185,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -241,29 +267,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -272,6 +290,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -284,6 +310,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -292,17 +320,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -330,6 +360,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -345,181 +459,203 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a1fde7b7-fc9e-4abf-a122-b7f4e8945ce5)
- Call ID: a1fde7b7-fc9e-4abf-a122-b7f4e8945ce5
+  AssignClass (dc8f453e-eccf-4935-b7be-7a3c6968cb4e)
+ Call ID: dc8f453e-eccf-4935-b7be-7a3c6968cb4e
+  Args:
+    source: India_Riven_Oxenberg
+    type: :Person
+  AssignClass (e4e10211-0912-47b0-9800-3162bfd7d8fe)
+ Call ID: e4e10211-0912-47b0-9800-3162bfd7d8fe
   Args:
     type: :Woman
-    source: Mary_Cecilia_Colman
-  AssignClass (907cb285-0372-48dd-a2dc-495dbdeeac4d)
- Call ID: 907cb285-0372-48dd-a2dc-495dbdeeac4d
+    source: India_Riven_Oxenberg
+  AddLiteral (7e4f7421-ff43-4100-9fe6-84091ec73158)
+ Call ID: 7e4f7421-ff43-4100-9fe6-84091ec73158
   Args:
-    type: :Person
-    source: Mary_Cecilia_Colman
-  AddLiteral (f9882239-9949-4eaf-8f8f-307740786e62)
- Call ID: f9882239-9949-4eaf-8f8f-307740786e62
-  Args:
-    literal_value: 1932
+    source: India_Riven_Oxenberg
+    literal_value: 1991
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Mary_Cecilia_Colman
-    literal_type: xsd:integer
-  AddLiteral (2b914e8c-ea63-4a6b-9fbf-054664f0fce1)
- Call ID: 2b914e8c-ea63-4a6b-9fbf-054664f0fce1
-  Args:
-    literal_value: 2021
-    relation: :hasDeathYear
-    source: Mary_Cecilia_Colman
-    literal_type: xsd:integer
-  AssignClass (dfcae20a-aec6-4ff4-ab9f-8db2915b7b21)
- Call ID: dfcae20a-aec6-4ff4-ab9f-8db2915b7b21
-  Args:
-    type: :Man
-    source: Michael_Bowes-Lyon
-  AssignClass (13202019-29aa-4c9b-b3d3-5f8871d149ea)
- Call ID: 13202019-29aa-4c9b-b3d3-5f8871d149ea
+  AssignClass (f0dac1f0-7b5f-4602-b21a-21ca11e73b97)
+ Call ID: f0dac1f0-7b5f-4602-b21a-21ca11e73b97
   Args:
     type: :Person
-    source: Michael_Bowes-Lyon
-  AssignClass (b5f573d2-8535-4faa-aa85-480ef9d892d8)
- Call ID: b5f573d2-8535-4faa-aa85-480ef9d892d8
+    source: Catherine_Oxenberg
+  AssignClass (94d7bec8-da46-4713-afa1-aa78507780b8)
+ Call ID: 94d7bec8-da46-4713-afa1-aa78507780b8
   Args:
     type: :Woman
-    source: Elizabeth_Margaret_Cator
-  AssignClass (01849e3c-2606-4dc6-ab9b-9443df1dc5eb)
- Call ID: 01849e3c-2606-4dc6-ab9b-9443df1dc5eb
+    source: Catherine_Oxenberg
+  AssignClass (42f425dc-bed6-4577-8e1a-6bd8618e1255)
+ Call ID: 42f425dc-bed6-4577-8e1a-6bd8618e1255
   Args:
     type: :Person
-    source: Elizabeth_Margaret_Cator
-  AddTriple (a68c101d-62f4-44cb-a142-c9ca34f30939)
- Call ID: a68c101d-62f4-44cb-a142-c9ca34f30939
+    source: William_Weitz_Shaffer
+  AssignClass (c88179e3-a7aa-4751-89ab-7ed4bbb5dde5)
+ Call ID: c88179e3-a7aa-4751-89ab-7ed4bbb5dde5
   Args:
-    target: Michael_Bowes-Lyon
-    source: Mary_Cecilia_Colman
-    relation: :hasFather
-  AddTriple (08a5f0ae-bc83-4c68-a3ac-96000d4ae2c6)
- Call ID: 08a5f0ae-bc83-4c68-a3ac-96000d4ae2c6
+    source: William_Weitz_Shaffer
+    type: :Man
+  AddTriple (42b3251e-2af8-419c-a502-27a29e4e84f0)
+ Call ID: 42b3251e-2af8-419c-a502-27a29e4e84f0
   Args:
-    target: Elizabeth_Margaret_Cator
-    source: Mary_Cecilia_Colman
+    target: Catherine_Oxenberg
+    source: India_Riven_Oxenberg
     relation: :hasMother
-  AssignClass (d1999cf3-8533-4bcf-ba76-be3be3c3b613)
- Call ID: d1999cf3-8533-4bcf-ba76-be3be3c3b613
+  AddTriple (b5464e59-ea44-44da-b6ae-db0af8df4ee2)
+ Call ID: b5464e59-ea44-44da-b6ae-db0af8df4ee2
+  Args:
+    relation: :hasFather
+    target: William_Weitz_Shaffer
+    source: India_Riven_Oxenberg
+  AssignClass (90edbb6f-1af9-452f-8dc0-481b6521e2c7)
+ Call ID: 90edbb6f-1af9-452f-8dc0-481b6521e2c7
+  Args:
+    source: Princess_Elizabeth_of_Yugoslavia
+    type: :Person
+  AssignClass (5faa83bb-168c-44c7-9f00-8c345de6d89f)
+ Call ID: 5faa83bb-168c-44c7-9f00-8c345de6d89f
   Args:
     type: :Woman
-    source: Patricia_Maud
-  AssignClass (c73cae39-be83-4185-8c7e-ac043bd3d458)
- Call ID: c73cae39-be83-4185-8c7e-ac043bd3d458
+    source: Princess_Elizabeth_of_Yugoslavia
+  AssignClass (339ad8e4-ed59-4aed-843e-07091bc127ea)
+ Call ID: 339ad8e4-ed59-4aed-843e-07091bc127ea
   Args:
+    source: Howard_Oxenberg
     type: :Person
-    source: Patricia_Maud
-  AddTriple (c5a60cd9-7292-46d7-ac67-e892e9c1ed26)
- Call ID: c5a60cd9-7292-46d7-ac67-e892e9c1ed26
-  Args:
-    source: Mary_Cecilia_Colman
-    relation: :hasSister
-    target: Patricia_Maud
-  AssignClass (c5390527-ff0a-4549-9bce-f8b585375ba2)
- Call ID: c5390527-ff0a-4549-9bce-f8b585375ba2
+  AssignClass (2bc62c73-94f8-4e20-9def-e54ccf03a18c)
+ Call ID: 2bc62c73-94f8-4e20-9def-e54ccf03a18c
   Args:
     type: :Man
-    source: Fergus_Michael_Claude
-  AssignClass (ba4345be-f8cc-4ca0-8c10-4ca7182a0076)
- Call ID: ba4345be-f8cc-4ca0-8c10-4ca7182a0076
+    source: Howard_Oxenberg
+  AddTriple (d90c5ce5-1ab7-4f6a-99bf-807ce0a600df)
+ Call ID: d90c5ce5-1ab7-4f6a-99bf-807ce0a600df
   Args:
-    type: :Person
-    source: Fergus_Michael_Claude
-  AddTriple (3e63ceb4-7b9d-4f57-9d4b-94defcfe1b0b)
- Call ID: 3e63ceb4-7b9d-4f57-9d4b-94defcfe1b0b
-  Args:
-    target: Fergus_Michael_Claude
-    source: Mary_Cecilia_Colman
-    relation: :hasBrother
-  AssignClass (bb8d9a04-34cc-45f7-8d63-09f0b3b58064)
- Call ID: bb8d9a04-34cc-45f7-8d63-09f0b3b58064
-  Args:
-    type: :Man
-    source: Michael_Albemarle
-  AssignClass (37e5f2c5-6473-4284-be53-57b01e903f51)
- Call ID: 37e5f2c5-6473-4284-be53-57b01e903f51
-  Args:
-    type: :Person
-    source: Michael_Albemarle
-  AddTriple (21340deb-d2f4-4391-a5d3-07bb9d372357)
- Call ID: 21340deb-d2f4-4391-a5d3-07bb9d372357
-  Args:
-    source: Mary_Cecilia_Colman
-    relation: :hasBrother
-    target: Michael_Albemarle
-  AssignClass (02186dae-3876-4a07-9b04-69b9af114126)
- Call ID: 02186dae-3876-4a07-9b04-69b9af114126
-  Args:
-    type: :Man
-    source: Timothy_Colman
-  AssignClass (1bd7806d-723a-4076-af43-bc03e7eb5da1)
- Call ID: 1bd7806d-723a-4076-af43-bc03e7eb5da1
-  Args:
-    type: :Person
-    source: Timothy_Colman
-  AddLiteral (d6134b08-c056-40d9-b043-6ac784375c2e)
- Call ID: d6134b08-c056-40d9-b043-6ac784375c2e
-  Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: Mary_Cecilia_Colman
-    literal_value: 1951
-  AddTriple (0b54ee82-6e41-4c55-9d48-51f2167de796)
- Call ID: 0b54ee82-6e41-4c55-9d48-51f2167de796
-  Args:
-    target: Timothy_Colman
-    source: Mary_Cecilia_Colman
-    relation: :hasRelation
-  AssignClass (90c01dfd-0170-4510-b0ed-41290f6d4501)
- Call ID: 90c01dfd-0170-4510-b0ed-41290f6d4501
-  Args:
-    type: :Man
-    source: Geoffrey_Colman
-  AssignClass (9a2f20cf-8ffb-4f0b-bb6d-9171811f9a10)
- Call ID: 9a2f20cf-8ffb-4f0b-bb6d-9171811f9a10
-  Args:
-    type: :Person
-    source: Geoffrey_Colman
-  AddTriple (a5f30cdd-0d4b-4948-8e9f-1cdf8de39fde)
- Call ID: a5f30cdd-0d4b-4948-8e9f-1cdf8de39fde
-  Args:
-    source: Timothy_Colman
-    relation: :hasFather
-    target: Geoffrey_Colman
-  AssignClass (1d420d14-f44d-46b0-ad79-d971e3c55626)
- Call ID: 1d420d14-f44d-46b0-ad79-d971e3c55626
-  Args:
-    type: :Man
-    source: Claude_Bowes-Lyon
-  AssignClass (9dbedfd0-9781-478a-83bb-5677e1be6626)
- Call ID: 9dbedfd0-9781-478a-83bb-5677e1be6626
-  Args:
-    type: :Person
-    source: Claude_Bowes-Lyon
-  AssignClass (01b23ce6-06d7-48f4-9034-235f0507463c)
- Call ID: 01b23ce6-06d7-48f4-9034-235f0507463c
-  Args:
-    type: :Woman
-    source: Cecilia_Bowes-Lyon
-  AssignClass (6dd5e9f6-7d2b-4b74-a895-be9730a60d52)
- Call ID: 6dd5e9f6-7d2b-4b74-a895-be9730a60d52
-  Args:
-    type: :Person
-    source: Cecilia_Bowes-Lyon
-  AddTriple (329b90b8-4c45-4ddd-85e4-9ea99b3c7a1b)
- Call ID: 329b90b8-4c45-4ddd-85e4-9ea99b3c7a1b
-  Args:
-    source: Michael_Bowes-Lyon
-    relation: :hasFather
-    target: Claude_Bowes-Lyon
-  AddTriple (e8dd48d0-9da2-4811-ac50-33f5952696bd)
- Call ID: e8dd48d0-9da2-4811-ac50-33f5952696bd
-  Args:
-    target: Cecilia_Bowes-Lyon
-    source: Michael_Bowes-Lyon
+    target: Princess_Elizabeth_of_Yugoslavia
+    source: Catherine_Oxenberg
     relation: :hasMother
-  Finish (503a1fe9-d7a9-48b5-ab96-4d1a372ca1e3)
- Call ID: 503a1fe9-d7a9-48b5-ab96-4d1a372ca1e3
+  AddTriple (278254bf-9071-4730-b8f3-b498bc6695ee)
+ Call ID: 278254bf-9071-4730-b8f3-b498bc6695ee
+  Args:
+    relation: :hasFather
+    target: Howard_Oxenberg
+    source: Catherine_Oxenberg
+  AssignClass (290fc6c0-b5df-4e81-849e-7c9b87e78577)
+ Call ID: 290fc6c0-b5df-4e81-849e-7c9b87e78577
+  Args:
+    type: :Person
+    source: Prince_Regent_Paul_of_Yugoslavia
+  AssignClass (019487b2-4ecd-4970-b9d8-b0910ba130c3)
+ Call ID: 019487b2-4ecd-4970-b9d8-b0910ba130c3
+  Args:
+    source: Prince_Regent_Paul_of_Yugoslavia
+    type: :Man
+  AddTriple (65a2aa59-4fae-4678-8fbd-79cc834a9ccb)
+ Call ID: 65a2aa59-4fae-4678-8fbd-79cc834a9ccb
+  Args:
+    source: Princess_Elizabeth_of_Yugoslavia
+    target: Prince_Regent_Paul_of_Yugoslavia
+    relation: :hasFather
+  AssignClass (87f17c4e-601d-4203-8d7b-5c9f40b41713)
+ Call ID: 87f17c4e-601d-4203-8d7b-5c9f40b41713
+  Args:
+    type: :Person
+    source: Christina_Oxenberg
+  AssignClass (05b66b30-c33c-47a7-abed-5dfdb44bc2ea)
+ Call ID: 05b66b30-c33c-47a7-abed-5dfdb44bc2ea
+  Args:
+    source: Christina_Oxenberg
+    type: :Woman
+  AddTriple (407a7b11-9581-43b4-8d84-b27c3993a604)
+ Call ID: 407a7b11-9581-43b4-8d84-b27c3993a604
+  Args:
+    relation: :isSisterOf
+    target: Catherine_Oxenberg
+    source: Christina_Oxenberg
+  AssignClass (c58a367f-12da-448d-a11a-928a909159c3)
+ Call ID: c58a367f-12da-448d-a11a-928a909159c3
+  Args:
+    type: :Person
+    source: Casper_Van_Dien
+  AssignClass (afac3b0d-fe76-4e2f-a3d6-9fafc72f9625)
+ Call ID: afac3b0d-fe76-4e2f-a3d6-9fafc72f9625
+  Args:
+    type: :Man
+    source: Casper_Van_Dien
+  AssignClass (0811c069-f5f9-43d8-9f77-a4808d5d8476)
+ Call ID: 0811c069-f5f9-43d8-9f77-a4808d5d8476
+  Args:
+    source: Victoria_de_Silva
+    type: :Person
+  AssignClass (11e6460b-27c7-4c8c-8355-04522e5119aa)
+ Call ID: 11e6460b-27c7-4c8c-8355-04522e5119aa
+  Args:
+    source: Victoria_de_Silva
+    type: :Woman
+  AssignClass (e2ab944a-3a3d-43db-9cbb-85cce0adb0d4)
+ Call ID: e2ab944a-3a3d-43db-9cbb-85cce0adb0d4
+  Args:
+    type: :Person
+    source: Princess_Katarina
+  AssignClass (47caf427-a3fc-4f94-bd9c-a8521bcefdb2)
+ Call ID: 47caf427-a3fc-4f94-bd9c-a8521bcefdb2
+  Args:
+    source: Princess_Katarina
+    type: :Woman
+  AssignClass (d17b5429-5d47-4b1d-b4ee-4bd585894ecb)
+ Call ID: d17b5429-5d47-4b1d-b4ee-4bd585894ecb
+  Args:
+    type: :Person
+    source: Sir_Desmond_de_Silva
+  AssignClass (b57a7e7a-9fda-4100-b8cd-5024c4d7879e)
+ Call ID: b57a7e7a-9fda-4100-b8cd-5024c4d7879e
+  Args:
+    type: :Man
+    source: Sir_Desmond_de_Silva
+  AddTriple (6f0d5579-1777-4892-a2df-c211d6c2c8ab)
+ Call ID: 6f0d5579-1777-4892-a2df-c211d6c2c8ab
+  Args:
+    relation: :hasMother
+    target: Princess_Katarina
+    source: Victoria_de_Silva
+  AddTriple (9eda92c3-9545-44bb-b928-a003141abcf6)
+ Call ID: 9eda92c3-9545-44bb-b928-a003141abcf6
+  Args:
+    relation: :hasFather
+    target: Sir_Desmond_de_Silva
+    source: Victoria_de_Silva
+  AssignClass (226caa41-53c9-42cb-9576-727f7e85130c)
+ Call ID: 226caa41-53c9-42cb-9576-727f7e85130c
+  Args:
+    source: Patrick_D_Ignazio
+    type: :Person
+  AssignClass (082ef42a-d6fb-4223-9c88-00cc87cf07fb)
+ Call ID: 082ef42a-d6fb-4223-9c88-00cc87cf07fb
+  Args:
+    source: Patrick_D_Ignazio
+    type: :Man
+  AssignClass (07711803-bb99-483e-b846-4f6ab95cdbd1)
+ Call ID: 07711803-bb99-483e-b846-4f6ab95cdbd1
+  Args:
+    source: India_Riven_Oxenberg_Daughter
+    type: :Person
+  AssignClass (728e8060-aa33-4c16-acdd-b5c48d395683)
+ Call ID: 728e8060-aa33-4c16-acdd-b5c48d395683
+  Args:
+    source: India_Riven_Oxenberg_Daughter
+    type: :Woman
+  AddTriple (1db9e397-0c81-4938-86e6-3eab263f709f)
+ Call ID: 1db9e397-0c81-4938-86e6-3eab263f709f
+  Args:
+    target: India_Riven_Oxenberg
+    source: India_Riven_Oxenberg_Daughter
+    relation: :hasMother
+  AddTriple (40e71879-3818-41e3-8b4f-04b8c3a64a32)
+ Call ID: 40e71879-3818-41e3-8b4f-04b8c3a64a32
+  Args:
+    source: India_Riven_Oxenberg_Daughter
+    target: Patrick_D_Ignazio
+    relation: :hasFather
+  Finish (edff9c93-8cc2-4288-9c44-da9d1b2571ae)
+ Call ID: edff9c93-8cc2-4288-9c44-da9d1b2571ae
   Args:

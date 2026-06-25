@@ -1,0 +1,226 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_XIII_of_Spain a :Man ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasRelation data:Alfonso_XIII_of_Spain ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain .
+
+data:Francoise_Cazaudehore a :Woman ;
+    :hasRelation data:Francoise_Cazaudehore ;
+    :hasSister data:Francoise_Cazaudehore ;
+    :isBloodrelationOf data:Francoise_Cazaudehore ;
+    :isSiblingOf data:Francoise_Cazaudehore ;
+    :isSisterOf data:Francoise_Cazaudehore .
+
+data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro a :Man ;
+    :hasBrother data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro ;
+    :hasRelation data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro ;
+    :isBloodrelationOf data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro ;
+    :isBrotherOf data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro ;
+    :isSiblingOf data:Gonzalo_Maria_de_Ulloa_y_Ramirez_de_Haro .
+
+data:Kristine_Dzidziguri a :Woman ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Kristine_Dzidziguri,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :hasSister data:Kristine_Dzidziguri ;
+    :isBloodrelationOf data:Kristine_Dzidziguri ;
+    :isSiblingOf data:Kristine_Dzidziguri ;
+    :isSisterOf data:Kristine_Dzidziguri .
+
+data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Kristine_Dzidziguri,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :hasSister data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves ;
+    :hasSon data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isAncestorOf data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isAuntOf data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isBloodrelationOf data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves ;
+    :isMotherOf data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isParentOf data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isSiblingOf data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves ;
+    :isSisterOf data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves .
+
+data:Prince_Irakli_Bagration_of_Mukhrani a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasChild data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Kristine_Dzidziguri,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :hasSon data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isAncestorOf data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isBloodrelationOf data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isBrotherOf data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isFatherOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isParentOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isSiblingOf data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isUncleOf data:Prince_Bagrat_de_Bagration_y_de_Baviera .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man ;
+    :hasBrother data:Alfonso_XII_of_Spain ;
+    :hasChild data:Prince_Ferdinand_of_Bavaria ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Kristine_Dzidziguri,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :hasSon data:Prince_Ferdinand_of_Bavaria ;
+    :isAncestorOf data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isBloodrelationOf data:Alfonso_XII_of_Spain ;
+    :isBrotherOf data:Alfonso_XII_of_Spain ;
+    :isFatherOf data:Prince_Ferdinand_of_Bavaria ;
+    :isParentOf data:Prince_Ferdinand_of_Bavaria ;
+    :isSiblingOf data:Alfonso_XII_of_Spain ;
+    :isUncleOf data:Prince_Ferdinand_of_Bavaria .
+
+data:Infanta_Maria_de_las_Mercedes_of_Spain a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Alfonso_XII_of_Spain,
+        data:Prince_Ferdinand_of_Bavaria ;
+    :hasChild data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :hasFather data:Prince_Ferdinand_of_Bavaria ;
+    :hasParent data:Prince_Ferdinand_of_Bavaria ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Kristine_Dzidziguri,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :hasSister data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :hasSon data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isAncestorOf data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isAuntOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isBloodrelationOf data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :isChildOf data:Prince_Ferdinand_of_Bavaria ;
+    :isDaughterOf data:Prince_Ferdinand_of_Bavaria ;
+    :isMotherOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isParentOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isSiblingOf data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :isSisterOf data:Infanta_Maria_de_las_Mercedes_of_Spain .
+
+data:Prince_Ferdinand_of_Bavaria a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alfonso_XII_of_Spain ;
+    :hasBrother data:Prince_Ferdinand_of_Bavaria ;
+    :hasChild data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :hasDaughter data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasParent data:Alfonso_XII_of_Spain ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Kristine_Dzidziguri,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isAncestorOf data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isBloodrelationOf data:Prince_Ferdinand_of_Bavaria ;
+    :isBrotherOf data:Prince_Ferdinand_of_Bavaria ;
+    :isChildOf data:Alfonso_XII_of_Spain ;
+    :isFatherOf data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :isParentOf data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :isSiblingOf data:Prince_Ferdinand_of_Bavaria ;
+    :isSonOf data:Alfonso_XII_of_Spain ;
+    :isUncleOf data:Infanta_Maria_de_las_Mercedes_of_Spain .
+
+data:Prince_Juan_Jorge_de_Bagration-Mukhrani a :Man ;
+    :hasAncestor data:Alfonso_XII_of_Spain,
+        data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasBirthYear 1977 ;
+    :hasBrother data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :hasFather data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :hasMarriageYear 2009,
+        2014 ;
+    :hasMother data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves ;
+    :hasParent data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Kristine_Dzidziguri,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isBloodrelationOf data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isBrotherOf data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isChildOf data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isSiblingOf data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isSonOf data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera .
+
+data:Prince_Bagrat_de_Bagration_y_de_Baviera a :Ancestor,
+        :Man ;
+    :hasAncestor data:Alfonso_XII_of_Spain,
+        data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasBrother data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :hasChild data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasMother data:Infanta_Maria_de_las_Mercedes_of_Spain ;
+    :hasParent data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasRelation data:Alfonso_XII_of_Spain,
+        data:Dona_Maria_del_Carmen_de_Ulloa_y_Suelves,
+        data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Kristine_Dzidziguri,
+        data:Prince_Bagrat_de_Bagration_y_de_Baviera,
+        data:Prince_Ferdinand_of_Bavaria,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :hasSon data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isAncestorOf data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isBloodrelationOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isBrotherOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isChildOf data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isFatherOf data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isParentOf data:Prince_Juan_Jorge_de_Bagration-Mukhrani ;
+    :isSiblingOf data:Prince_Bagrat_de_Bagration_y_de_Baviera ;
+    :isSonOf data:Infanta_Maria_de_las_Mercedes_of_Spain,
+        data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isUncleOf data:Prince_Juan_Jorge_de_Bagration-Mukhrani .
+

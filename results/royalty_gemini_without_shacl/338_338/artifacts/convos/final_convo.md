@@ -69,92 +69,53 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Victoria Louise of Prussia (German: Viktoria Luise Adelheid Mathilde Charlotte; 13 September 1892 – 11 December 1980) was the only daughter and youngest child of Wilhelm II, and Augusta Victoria of Schleswig-Holstein.
-Through her father, Victoria Louise was a great-granddaughter of Queen Victoria of the United Kingdom.
-Victoria Louise's 1913 wedding to Prince Ernest Augustus of Hanover was the largest gathering of reigning monarchs in Germany since German unification in 1871, and one of the last great social events of European royalty before the First World War began fourteen months later.
-Upon marriage, she became the Duchess of Brunswick.
-Early life and education
+Count Christian of Rosenborg  (Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik; 22 October 1942 – 21 May 2013) was a member of the Danish royal family.
+Born Prince Christian of Denmark, from 1947 he was third in the line of line of succession until the constitution was changed in 1953 to allow females to inherit the crown, placing his branch of the dynasty behind that of his cousin Margrethe and her two younger sisters.
+Family
 
-Victoria Louise was born on 13 September 1892 at the Marmorpalais in Potsdam, the seventh child and only daughter of German Emperor Wilhelm II and Empress Augusta Victoria.
-The princess was baptised in the Marble Gallery of the New Palace in Potsdam on 22 October, the birthday of the empress.
-She was named Victoria after her paternal great-grandmother, Queen Victoria, and Louise after her paternal great-great-grandmother, Louise of Mecklenburg-Strelitz.
-Known officially as Victoria Louise, she was nicknamed "Sissy" by her family.
-Historian Justin C. Vovk writes that Victoria Louise was intelligent like her paternal grandmother Empress Frederick, stately and dignified like her mother, but imperious and willful like her father.
-According to her eldest brother Crown Prince Wilhelm, Victoria Louise was "the only one of us who succeeded in her childhood in gaining a snug place" in their father's heart.
-In 1902, her English governess, Anne Topham, observed in their first meeting that the nine-year-old princess was friendly, energetic, and always quarreling with her next eldest brother, Prince Joachim.
-"
+He was born at Sorgenfri Palace, Sorgenfri, as the younger son of Hereditary Prince Knud by his wife and first cousin, Princess Caroline-Mathilde of Denmark.
+Loss of place in succession
 
+From the death of his grandfather in 1947, Christian stood only behind his father and elder brother Prince Ingolf in the order of hereditary succession to the throne, with only future children of Ingolf possibly taking a place ahead of him.
+His father Prince Knud was then the heir presumptive, due to succeed Christian's uncle King Frederik IX, who had three daughters but no sons.
+In 1953, the Constitution of Denmark was amended to allow cognatic primogeniture.
+The new law made thirteen-year-old Princess Margrethe the new heir presumptive, placing her and her two sisters before Prince Knud and his family in the succession.
+Christian was thus relegated to sixth in the line of succession to the Danish throne, but more importantly, he then ranked behind Margrethe and others who were likely to have dynastic children of their own (as has, in fact, happened).
+The princess became Queen Margrethe II in 1972 and reigned until her abdication in 2024.
+Christian's place in the line of succession, if he had been still eligible, would have been no higher than thirteenth in 2013.
+Marriage, loss of dynastic rights and children
 
-The family resided at Homburg Castle, and Victoria Louise and Joachim would often visit their cousins – the children of the Prussian princesses Margaret and Sophia – at nearby Kronberg Castle.
-In 1905, the princess studied music with concert pianist Sandra Droucker.
-For one week in May 1911, Victoria Louise traveled to England aboard the royal yacht Hohenzollern with her parents, where they visited their cousin George V, for the unveiling of a statue of Queen Victoria in front of Buckingham Palace.
-The princess's confirmation took place at Friedenskirche in Potsdam on 18 October 1909.
-Marriage
-
-In 1912, Ernest Augustus, the wealthy heir-apparent to the title of Duke of Cumberland and Teviotdale, came to the Berlin court to thank Emperor Wilhelm for having Crown Prince Wilhelm and Prince Eitel Friedrich attend the funeral of his brother, Prince George William.
-At the time, the House of Hanover lived in exile at Gmunden, Austria.
-While in Berlin, Ernest Augustus met Victoria Louise and the two became smitten with each other.
-However, any discussions of marriage were prolonged for months due to political concerns; Ernest Augustus was also the heir to the Kingdom of Hanover, which the Kingdom of Prussia annexed following the 1866 Austro-Prussian War.
-The Prussian crown prince was displeased with the match and wished that Ernest Augustus would abdicate his rights to Hanover; in a compromise, it was decided that, in exchange, he would succeed to the smaller duchy of Brunswick, of which his father was the lawful heir.
-The family had been barred from the succession to Brunswick due to their claims towards the Hanoverian kingdom.
-Ernest and Victoria became engaged in Karlsruhe on 11 February 1913.
-It was hailed in the press as the end of the rift between the House of Hanover and House of Hohenzollern that had existed since the 1866 annexation.
-Despite press fixation on the union as a love match, whether the match was one of love or politics remains unclear; historian Eva Giloi believes that the marriage was more likely the result of Prussia's desire to end the rift, though Victoria Louise described it as a "love match” in one of her letters.
-In a diplomatic gesture, Emperor Wilhelm invited almost all of his extended family.
-He also pardoned and released two imprisoned British spies, Captain Bertrand Stewart and Captain Bernard Frederick Trench, as a present to the United Kingdom.
-The wedding became the largest gathering of reigning monarchs in Germany since German unification in 1871, and one of the last great social events of European royalty before World War I began fourteen months later.
-Attendees included Wilhelm's cousins George V and Tsar Nicholas II, who were also cousins of Ernest Augustus through their mothers.
-Empress Augusta Victoria took the separation from her only daughter badly and wept.
-In a 2003 documentary, Constantine II of Greece, a grandson of the couple, recounted that their wedding was "the last time all the heads of state of Europe met" before the start of World War I.
+By 1971, Princess Margrethe had produced two children, pushing Christian to 8th in the line of succession.
+The king's permission to marry was not sought because it was expected to be denied, since Christian's fiancée was an untitled commoner.
+Prior to his elder son's wedding in 1968, Prince Knud sought to convince his brother that Ingolf should be allowed to retain his royal title after his non-dynastic marriage, a privilege which might have been subsequently extended to Christian.
+But the king refused, on the grounds that other males of the dynasty, who had been demoted to counts of Rosenborg upon marriage, might try to re-claim their royal rank if Ingolf were allowed to do so despite his marrying a commoner as they had done.
+So, in 1971, Christian renounced his rights to the throne and took the title count of Rosenborg.
+On 27 February 1971, at Kongens Lyngby Kirke, Kongens Lyngby, Denmark, Christian married Anne Dorte Maltoft-Nielsen (3 October 1947 in Frederikssund – 2 January 2014 in Copenhagen) who thus became Her Excellency Countess Anne Dorte of Rosenborg.
+Although lacking the prior royal assent of the monarch given in the Council of State that the law required, the king expressed no personal opposition to his nephew's choice of bride and, according to Christian, the king's private consent later had to be formally registered by the King-in-Council.
+In a 1985 interview with Billed-Bladet, Count Christian had explained (translated from Danish):
+As protocol dictates, I had to ask my uncle, King Frederik IX, if he had any objections to my getting engaged...
+I was number four in the line of succession after Princess Margrethe, Princess Benedikte, and my father.
+Count Christian and Countess Anne Dorte had three daughters: 
 
 
-Husband and children
+All three were born “Komtesser” a lower title than “Grevinde” which translates to “Countess” from birth.
+And a title that all daughters of Counts in Denmark are given.
+Public life
 
-The new duke and duchess of Brunswick moved into Brunswick Palace in the capital of Brunswick and began their family with the birth of their eldest son, Prince Ernest Augustus (1914–1987), less than a year after their wedding.
-They had four further children: Prince George William (1915–2006), Princess Frederica (1917–1981), Prince Christian Oscar (1919–1981), and Prince Welf Henry (1923–1997).
-Through Frederica, Victoria Louise was a great-grandmother of Felipe VI of Spain.
-On 8 November 1918, her husband was forced to abdicate his throne along with the other German kings, grand dukes, dukes, and princes, and the duchy of Brunswick was subsequently abolished.
-The next year, he was deprived of his British peerages under the Titles Deprivation Act 1917 as a result of his service in the German army during the war.
-Thus, when his father died in 1923, Ernest Augustus did not succeed to his father's British title of Duke of Cumberland.
-Interwar years
+Count Christian took part in some major public events associated with the royal family, in 2004, he and Countess Anne Dorte attended the wedding on 14 May 2004 of Crown Prince Frederik at Copenhagen Cathedral, Copenhagen and the subsequent reception at Fredensborg Palace.
+Death
 
-For the next thirty years, Ernest Augustus remained the head of the House of Hanover, living in retirement on his various estates with his family, mainly Blankenburg Castle in Germany and Cumberland Castle in Gmunden, Austria.
-He also owned Marienburg Castle near Hanover; however, the couple rarely lived there until 1945.
-Several of Victoria Louise's brothers were early members of the Nazi party, including former Crown Prince Wilhelm and Prince August Wilhelm.
-While Ernest Augustus never officially joined the party, he donated funds and was close to several leaders.
-As a former British prince, Ernest Augustus as well as Victoria Louise desired a rapprochement between the United Kingdom and Germany.
-Ostensibly desiring to pursue an alliance with the UK, in the mid-1930s, Adolf Hitler took advantage of their sentiment by asking the couple to arrange a match between their daughter Princess Frederica and the Prince of Wales.
-The Duke and Duchess of Brunswick refused, believing that the age difference was too great; Princess Frederica would have been around 18 years of age while Edward was over 22 years older.
-Following his brief reign as King Edward VIII in 1936 Edward, now Duke of Windsor, and his wife Wallis visited "the Cumberlands" at Cumberland Castle in Gmunden, Austria.
-Instead, in 1938 Princess Frederica married her second cousin, the future King Paul of Greece.
-World War II
-
-In May 1941, her father fell ill from an intestinal blockage, and Victoria Louise traveled to Doorn to visit him, as did several of her brothers.
-Wilhelm recovered enough for them to feel able to depart, but soon relapsed.
-Victoria Louise returned in time to be at her father's bedside, along with nephew Louis Ferdinand and stepmother Hermine, when he died on 4 June 1941 of a pulmonary embolism.
-By the time of the war's ending in Europe in April 1945, Victoria Louise was living with her husband at Blankenburg Castle.
-Later life
-
-After the war, Victoria Louise spent much of her time attending public events in Lower Saxony, supporting palace restoration projects, high-society parties, hunting, and the showing of horses.
-Instead, she moved back to Brunswick, occupying a house which had been offered to her by a wealthy industrialist and a circle of fans called "Braunschweiger Freundeskreis" (circle of Brunswick friends).
-In 1965 she published her autobiography Life as Daughter of the Emperor, and thereafter several other books, including biographies of her mother and of her sister-in-law Cecilie, the last crown princess of Germany.
-She is buried next to her husband in front of the Royal Mausoleum in the Berggarten at Herrenhausen Gardens in Hanover, which is the burial chapel of Ernest Augustus, King of Hanover, and his wife and, since his reburial after World War II, also of George I of Great Britain.
-A number of vessels were named after the princess:
-
-
-Honours
-
-Regimental commissions
-
-Issue
-
-married second 1981, Countess Monika zu Solms-Laubach; no issue.
+Count Christian died on 21 May 2013 (aged 70) at Gentofte Hospital, Copenhagen in Denmark.
+A number of members of the Danish royal family, led by Queen Margrethe, attended Count Christian's funeral, held at Lyngby Church on 29 May 2013.
+His wife Countess Anne Dorte of Rosenborg died just 7 months later on 2 January 2014 in Copenhagen.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -170,39 +131,9 @@ married second 1981, Countess Monika zu Solms-Laubach; no issue.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -217,6 +148,23 @@ married second 1981, Countess Monika zu Solms-Laubach; no issue.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -234,6 +182,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -301,29 +264,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -332,6 +287,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -344,6 +307,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -352,17 +317,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -390,6 +357,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -405,138 +456,131 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (7934ba83-5b7a-426f-bbcd-0fe27956b9df)
- Call ID: 7934ba83-5b7a-426f-bbcd-0fe27956b9df
-  Args:
-    type: :Woman
-    source: Victoria_Louise_of_Prussia
-  AssignClass (34947851-12b4-43be-b0ff-2289eb8f8e8d)
- Call ID: 34947851-12b4-43be-b0ff-2289eb8f8e8d
-  Args:
-    source: Wilhelm_II
-    type: :Man
-  AssignClass (4f48ec4d-cda1-486d-8fbe-4415e4fbc4e3)
- Call ID: 4f48ec4d-cda1-486d-8fbe-4415e4fbc4e3
-  Args:
-    source: Augusta_Victoria_of_Schleswig-Holstein
-    type: :Woman
-  AssignClass (052b4b69-22ba-4da4-8948-32a8ec9c2b2c)
- Call ID: 052b4b69-22ba-4da4-8948-32a8ec9c2b2c
+  AssignClass (12255f49-4d2a-40f7-a4e4-4842bdc294d5)
+ Call ID: 12255f49-4d2a-40f7-a4e4-4842bdc294d5
   Args:
     type: :Man
-    source: Ernest_Augustus_of_Hanover
-  AssignClass (78d4b5c0-721c-4496-ae8b-43ac83deaeca)
- Call ID: 78d4b5c0-721c-4496-ae8b-43ac83deaeca
+    source: Christian_of_Rosenborg
+  AssignClass (8c4f3b46-ba8e-4ba5-b549-f0a3328f24d3)
+ Call ID: 8c4f3b46-ba8e-4ba5-b549-f0a3328f24d3
   Args:
-    source: Prince_Joachim
-    type: :Man
-  AssignClass (725fc2dd-b2f2-4cbc-ab3b-5d5cf539335c)
- Call ID: 725fc2dd-b2f2-4cbc-ab3b-5d5cf539335c
-  Args:
-    source: Prince_Ernest_Augustus_1914
-    type: :Man
-  AssignClass (6d1c4f81-ed9c-4cad-beb1-ec7f0b6b0ef6)
- Call ID: 6d1c4f81-ed9c-4cad-beb1-ec7f0b6b0ef6
-  Args:
-    source: Prince_George_William_1915
-    type: :Man
-  AssignClass (74e55ccf-21cf-4e8e-8304-409c32e4f982)
- Call ID: 74e55ccf-21cf-4e8e-8304-409c32e4f982
-  Args:
-    source: Princess_Frederica
-    type: :Woman
-  AssignClass (7c17d8f8-93e4-442e-8d2e-e86546d95854)
- Call ID: 7c17d8f8-93e4-442e-8d2e-e86546d95854
-  Args:
-    type: :Man
-    source: Prince_Christian_Oscar
-  AssignClass (74f174b1-e506-4f85-bb27-6910f8751e0a)
- Call ID: 74f174b1-e506-4f85-bb27-6910f8751e0a
-  Args:
-    source: Prince_Welf_Henry
-    type: :Man
-  AddLiteral (bda89dfd-7b08-416c-999c-9710d8a786a1)
- Call ID: bda89dfd-7b08-416c-999c-9710d8a786a1
+    source: Christian_of_Rosenborg
+    type: :Person
+  AddLiteral (baf86d34-9cad-4c5e-874e-ba50fb33643a)
+ Call ID: baf86d34-9cad-4c5e-874e-ba50fb33643a
   Args:
     relation: :hasBirthYear
-    source: Victoria_Louise_of_Prussia
+    source: Christian_of_Rosenborg
+    literal_value: 1942
     literal_type: xsd:integer
-    literal_value: 1892
-  AddLiteral (b5f99470-cf8a-49a7-a1b6-2a42cbed1dc7)
- Call ID: b5f99470-cf8a-49a7-a1b6-2a42cbed1dc7
+  AddLiteral (8e338e16-1ee2-41c1-88c6-6b17b47b1f33)
+ Call ID: 8e338e16-1ee2-41c1-88c6-6b17b47b1f33
   Args:
-    literal_value: 1980
     relation: :hasDeathYear
-    source: Victoria_Louise_of_Prussia
+    source: Christian_of_Rosenborg
     literal_type: xsd:integer
-  AddTriple (c8881db4-b3aa-46ff-99bd-5bab4ccbf743)
- Call ID: c8881db4-b3aa-46ff-99bd-5bab4ccbf743
+    literal_value: 2013
+  AssignClass (87b42b29-ca73-40b6-b3d1-f0ee1d12d082)
+ Call ID: 87b42b29-ca73-40b6-b3d1-f0ee1d12d082
   Args:
-    target: Wilhelm_II
+    source: Hereditary_Prince_Knud
+    type: :Man
+  AssignClass (b4e05ef3-c882-48f1-bcde-4b8ee5417152)
+ Call ID: b4e05ef3-c882-48f1-bcde-4b8ee5417152
+  Args:
+    type: :Person
+    source: Hereditary_Prince_Knud
+  AssignClass (5de1e5d9-6ad6-45e9-896e-a47dce445d27)
+ Call ID: 5de1e5d9-6ad6-45e9-896e-a47dce445d27
+  Args:
+    type: :Woman
+    source: Princess_Caroline-Mathilde
+  AssignClass (b56a45cb-3faf-41a9-8eac-7f8488dec92e)
+ Call ID: b56a45cb-3faf-41a9-8eac-7f8488dec92e
+  Args:
+    type: :Person
+    source: Princess_Caroline-Mathilde
+  AddTriple (7014d1ce-c9da-4a5f-9141-09e069fbf447)
+ Call ID: 7014d1ce-c9da-4a5f-9141-09e069fbf447
+  Args:
+    source: Christian_of_Rosenborg
+    target: Hereditary_Prince_Knud
     relation: :hasFather
-    source: Victoria_Louise_of_Prussia
-  AddTriple (4b523a6f-bb2b-4bd1-aff5-f1ab24e8f5e5)
- Call ID: 4b523a6f-bb2b-4bd1-aff5-f1ab24e8f5e5
+  AddTriple (eccd7c6c-16b8-4175-81b5-88e63e944ac9)
+ Call ID: eccd7c6c-16b8-4175-81b5-88e63e944ac9
   Args:
-    target: Augusta_Victoria_of_Schleswig-Holstein
+    target: Princess_Caroline-Mathilde
     relation: :hasMother
-    source: Victoria_Louise_of_Prussia
-  AddTriple (e16e92fd-1079-429d-8514-1cfa361b5226)
- Call ID: e16e92fd-1079-429d-8514-1cfa361b5226
+    source: Christian_of_Rosenborg
+  AssignClass (d31d896a-4b69-4c41-8ced-f6e10df82745)
+ Call ID: d31d896a-4b69-4c41-8ced-f6e10df82745
+  Args:
+    source: Prince_Ingolf
+    type: :Man
+  AssignClass (a47f1fba-4ea5-4dfc-9c22-1b2962f02794)
+ Call ID: a47f1fba-4ea5-4dfc-9c22-1b2962f02794
+  Args:
+    type: :Person
+    source: Prince_Ingolf
+  AddTriple (0e483223-7dd6-4215-93f3-de18b9a9b5a6)
+ Call ID: 0e483223-7dd6-4215-93f3-de18b9a9b5a6
+  Args:
+    target: Prince_Ingolf
+    relation: :isBrotherOf
+    source: Christian_of_Rosenborg
+  AssignClass (4a794b82-c030-48a8-a331-8137da900303)
+ Call ID: 4a794b82-c030-48a8-a331-8137da900303
+  Args:
+    source: Anne_Dorte_of_Rosenborg
+    type: :Woman
+  AssignClass (9654f904-7906-4aa7-980b-9c47569a1293)
+ Call ID: 9654f904-7906-4aa7-980b-9c47569a1293
+  Args:
+    type: :Person
+    source: Anne_Dorte_of_Rosenborg
+  AddTriple (3a2838af-3ea3-4d79-9d30-37ec4c721f3a)
+ Call ID: 3a2838af-3ea3-4d79-9d30-37ec4c721f3a
   Args:
     relation: :hasRelation
-    source: Victoria_Louise_of_Prussia
-    target: Ernest_Augustus_of_Hanover
-  AddLiteral (5c417418-7df3-4359-ac3b-2451a77e3018)
- Call ID: 5c417418-7df3-4359-ac3b-2451a77e3018
+    target: Anne_Dorte_of_Rosenborg
+    source: Christian_of_Rosenborg
+  AddLiteral (50fe36a9-e0ec-4859-8f81-c30f1243cd48)
+ Call ID: 50fe36a9-e0ec-4859-8f81-c30f1243cd48
   Args:
-    literal_value: 1913
-    literal_type: xsd:integer
+    source: Christian_of_Rosenborg
     relation: :hasMarriageYear
-    source: Victoria_Louise_of_Prussia
-  AddTriple (f8bca361-b257-492c-b804-499618185cb0)
- Call ID: f8bca361-b257-492c-b804-499618185cb0
+    literal_type: xsd:integer
+    literal_value: 1971
+  AddLiteral (db743bdd-4987-44bd-b509-2375f970b860)
+ Call ID: db743bdd-4987-44bd-b509-2375f970b860
   Args:
-    target: Prince_Joachim
-    relation: :hasBrother
-    source: Victoria_Louise_of_Prussia
-  AddTriple (60ac5e62-210f-44db-84d0-77f75ab0a0df)
- Call ID: 60ac5e62-210f-44db-84d0-77f75ab0a0df
+    literal_value: 1947
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: Anne_Dorte_of_Rosenborg
+  AddLiteral (4499b72f-5761-4366-816b-0a151e929300)
+ Call ID: 4499b72f-5761-4366-816b-0a151e929300
   Args:
-    target: Prince_Ernest_Augustus_1914
-    source: Victoria_Louise_of_Prussia
-    relation: :hasSon
-  AddTriple (4f475d29-984e-4ccc-8da0-f0c9b537fc07)
- Call ID: 4f475d29-984e-4ccc-8da0-f0c9b537fc07
+    literal_value: 2014
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Anne_Dorte_of_Rosenborg
+  AssignClass (1819e259-1c29-442f-a1a6-034c8d16a31f)
+ Call ID: 1819e259-1c29-442f-a1a6-034c8d16a31f
   Args:
-    relation: :hasSon
-    source: Victoria_Louise_of_Prussia
-    target: Prince_George_William_1915
-  AddTriple (7d112c9e-2881-46fe-b295-78ceebd6179f)
- Call ID: 7d112c9e-2881-46fe-b295-78ceebd6179f
+    source: Frederik_IX
+    type: :Man
+  AssignClass (260870df-917f-46f1-b975-dece15e4d228)
+ Call ID: 260870df-917f-46f1-b975-dece15e4d228
   Args:
-    target: Princess_Frederica
-    source: Victoria_Louise_of_Prussia
-    relation: :hasDaughter
-  AddTriple (b81d5efd-3bea-4aa0-a6a6-d5c0654f8e08)
- Call ID: b81d5efd-3bea-4aa0-a6a6-d5c0654f8e08
+    source: Frederik_IX
+    type: :Person
+  AddTriple (c03362f1-2592-41b5-aea4-035b1eef8942)
+ Call ID: c03362f1-2592-41b5-aea4-035b1eef8942
   Args:
-    target: Prince_Christian_Oscar
-    relation: :hasSon
-    source: Victoria_Louise_of_Prussia
-  AddTriple (c21d554d-10a0-4364-827e-7ad646cae4b1)
- Call ID: c21d554d-10a0-4364-827e-7ad646cae4b1
-  Args:
-    target: Prince_Welf_Henry
-    source: Victoria_Louise_of_Prussia
-    relation: :hasSon
-  AddLiteral (fe1f9ddc-7c4b-4466-89f9-6bd1325e1ce1)
- Call ID: fe1f9ddc-7c4b-4466-89f9-6bd1325e1ce1
-  Args:
-    relation: :knownAs
-    source: Victoria_Louise_of_Prussia
-    literal_type: xsd:string
-    literal_value: Sissy
-  Finish (9beb1812-18a4-49b3-b9bd-b39c8e094ae5)
- Call ID: 9beb1812-18a4-49b3-b9bd-b39c8e094ae5
+    target: Hereditary_Prince_Knud
+    relation: :isBrotherOf
+    source: Frederik_IX
+  Finish (17f45569-a2b1-44c9-9aef-7cc01d528f3a)
+ Call ID: 17f45569-a2b1-44c9-9aef-7cc01d528f3a
   Args:

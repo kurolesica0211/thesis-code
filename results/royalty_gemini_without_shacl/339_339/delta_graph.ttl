@@ -2,54 +2,63 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:HeinrichJr a :Man,
+data:Carl_Friedrich_Franz_Alexander a :Man,
         :Person ;
-    :hasSex data:Male ;
-    :isSonOf data:PrinceHeinrichOfPrussia,
-        data:PrincessIrene .
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Sophie_of_Isenburg .
 
-data:QueenVictoria a :Ancestor,
-        :Person,
+data:Friedrich_Wilhelm a :Man,
+        :Person ;
+    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen .
+
+data:Heinrich_Albert_Johann_Georg a :Man,
+        :Person ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Sophie_of_Isenburg .
+
+data:Louis_Ferdinand_Christian_Albrecht a :Man,
+        :Person ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Sophie_of_Isenburg .
+
+data:Michael a :Man,
+        :Person ;
+    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen .
+
+data:Donata_of_Castell_R%C3%BCdenhausen a :Person,
         :Woman ;
-    :hasSex data:Female ;
-    :isMotherOf data:EmpressVictoria .
+    :hasBirthYear 1950 ;
+    :hasDeathYear 2015 ;
+    :hasRelation data:Friedrich_August_of_Oldenburg .
 
-data:Waldemar a :Man,
+data:Friedrich_August_of_Oldenburg a :Man,
         :Person ;
-    :hasSex data:Male ;
-    :isSonOf data:PrinceHeinrichOfPrussia,
-        data:PrincessIrene .
+    :hasRelation data:Marie_C%C3%A9cile_of_Prussia .
 
-data:FrederickIII a :Ancestor,
-        :Man,
+data:Kira_of_Russia a :Person,
+        :Woman .
+
+data:Marie_C%C3%A9cile_of_Prussia a :Person,
+        :Woman .
+
+data:Wilhelm_II a :Man,
+        :Person .
+
+data:Georg_Friedrich_Prinz_von_Preussen a :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasAncestor data:Wilhelm_II ;
+    :hasBirthYear 1976 ;
+    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;
+    :hasMarriageYear 2011 ;
+    :hasMother data:Donata_of_Castell_R%C3%BCdenhausen ;
+    :hasRelation data:Sophie_of_Isenburg .
 
-data:WilhelmII a :Man,
+data:Louis_Ferdinand_Prinz_von_Preussen a :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasBirthYear 1944 ;
+    :hasDeathYear 1977 ;
+    :hasMother data:Kira_of_Russia .
 
-data:EmpressVictoria a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:PrinceHeinrichOfPrussia a :Man,
-        :Person ;
-    :hasBirthYear 1862 ;
-    :hasDeathYear 1929 ;
-    :hasFather data:FrederickIII ;
-    :hasMarriageYear 1888 ;
-    :hasMother data:EmpressVictoria ;
-    :hasRelation data:PrincessIrene ;
-    :hasSex data:Male ;
-    :isBrotherOf data:WilhelmII .
-
-data:Female a :Sex .
-
-data:PrincessIrene a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Male a :Male .
+data:Sophie_of_Isenburg a :Person,
+        :Woman .
 

@@ -85,39 +85,183 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Baroness Armgard of Sierstorpff-Cramm, known as Armgard von Cramm (German: Armgard Kunigunde Alharda Agnes Oda von Cramm; 18 December 1883 – 27 April 1971) was the mother of Prince Bernhard of Lippe-Biesterfeld, Prince consort of Queen Juliana of the Netherlands.
-Early life
+Queen Victoria, the British monarch from 1837 to 1901, and Prince Albert (her husband from 1840 until his death in 1861) had 9 children, 42 grandchildren, and 87 great-grandchildren.
+Their first grandchild was the future German Emperor Wilhelm II, who was born to their eldest child, Princess Victoria, on 27 January 1859; the youngest was Prince Maurice of Battenberg, born on 3 October 1891 to Princess Beatrice (1857–1944), who was herself the last child born to Victoria and Albert and the last child to die.
+The last of Victoria and Albert's grandchildren to die (almost exactly 80 years after Queen Victoria herself) was Princess Alice, Countess of Athlone (25 February 1883 – 3 January 1981).
+Just as Victoria and Albert shared one grandfather (Duke Francis of Saxe-Coburg-Saalfeld) and one grandmother (Countess Augusta Reuss), two pairs of their grandchildren married each other:
 
-Armgard was born at Bad Driburg, Kingdom of Prussia (now in North Rhine-Westphalia, Germany), as the fourth child and fourth daughter of Baron Aschwin of Sierstorpff-Cramm, and his wife, Baroness Hedwig of Sierstorpff-Driburg.
-By birth, she belonged to the ancient German Cramm family.
-Marriages
 
-Armgard married on 24 October 1905 at Hanover to Count Bodo von Oeynhausen, an officer in the 8th Hussars in Paderborn, son of Count Erich von Oeynhausen and his wife, Therese von Lenthe.
-Armgard married secondly, after the death of her ex-husband, on 4 March 1909 at Oelber, Brunswick to Prince Bernhard of Lippe-Biesterfeld, a younger son of Ernest II, Count of Lippe-Biesterfeld, regent (1897–1904) of the Principality of Lippe, and his wife, Countess Karoline von Wartensleben.
-The marriage was at first considered morganatic, as Armgard's family didn't belong to one of the reigning or former reigning families.
-Thus, she was created "Countess of Biesterfeld" (German: Gräfin von Biesterfeld) on 8 February 1909.
-On 24 February 1916, her marriage was declared equal and she was made "Princess of Lippe-Biesterfeld" (German: Prinzessin zur Lippe-Biesterfeld) along with the style Serene Highness by her brother-in-law, Leopold IV, Prince of Lippe, and this title was extended to her two sons in order to produce a new branch of the Lippe family.
-World War II
+Prince Albert, the Prince Consort (26 August 1819 – 14 December 1861), lived long enough to see only one of his children married (Victoria, the Princess Royal) and two of his grandchildren born (Wilhelm II, 1859–1941, and his sister Princess Charlotte of Prussia, 1860–1919), while Queen Victoria (24 May 1819 – 22 January 1901) lived long enough to see not only all her grandchildren, but many of her 87 great-grandchildren as well.
+(Three of Victoria's 56 great-grandsons were stillborn, another died shortly after birth, and one of her 31 great-granddaughters was born out of wedlock).
+Victoria, the Princess Royal and first child of Victoria and Albert (21 November 1840 – 5 August 1901), known as "Vicky", was not only the mother to their first grandchild, Wilhelm II; she was also the first of Victoria and Albert's children to become a grandparent, with the birth in 1879 of Princess Feodora of Saxe-Meiningen, who was the daughter of Princess Charlotte (Queen Victoria's first granddaughter).
+The Princess Royal was also the grandmother of the last of Victoria and Albert's great-granddaughters to die, Princess Katherine of Greece and Denmark (4 May 1913 – 2 October 2007), daughter of Vicky's fourth daughter, Queen Sophia of Greece.
+After Katherine's death in 2007, the only surviving great-grandchild of Queen Victoria was Count Carl Johan Bernadotte of Wisborg (31 October 1916 – 5 May 2012), born to Crown Princess Margaret of Sweden, daughter of Victoria and Albert's third son, Prince Arthur, Duke of Connaught and Strathearn.
+The death of Count Carl Johan Bernadotte marked the end of a generation of royalty that began in 1879 with the birth of Princess Feodora and included the British Kings Edward VIII and George VI, the Norwegian King Olav V, the Romanian King Carol II and the Greek Kings George II, Alexander and Paul—as well as six uncrowned victims of political assassination: Earl Mountbatten of Burma (last Viceroy of India), Tsarevich Alexei of Russia, and Alexei’s sisters, the Grand Duchesses Olga, Tatiana, Maria and Anastasia.
+Queen Victoria's death in January 1901 was preceded by the deaths of three of her children (Princess Alice in December 1878, Prince Leopold in March 1884, and Prince Alfred in July 1900) and soon followed by the Princess Royal's death in August 1901.
+Aside from the four boys who died as infants, Queen Victoria had survived seven of her grandchildren:
 
-After the death of her husband in 1934, Armgard moved into Reckenwalde palace with her sons and managed an estate in Wojnowo, Lubusz Voivodeship, Province of Brandenburg (now Wojnowo, Poland), together with her new partner, Alexis Pantchoulidzew, an exiled Russian nobleman.
-Alexis accompanied Armgard to the wedding of Bernhard to Princess Juliana.
-During World War II Armgard and Alexis were observed by the local Gestapo.
-The SS demanded in September 1944 in Recke, one of Armgard's properties, Schloss Woynowo Walde for military purposes.
-Armgard and Alexis gave an account of the withdrawal in 1945 of the Wehrmacht behind the Oder-line on their estate at Neumark.
-Wim Klinkenberg and some other writers have accused Armgard of sexual promiscuity, intrigue, conspiracy, and – as with her son Aschwin – of Nazi sympathies.
-In March 2004, her son Bernhard tried to rectify this image with an open letter to The Times.
-Armgard was a convert to Roman Catholicism like her granddaughter Princess Irene, but decided against attending Irene's controversial wedding to Carlos Hugo, Duke of Parma, which neither the Dutch royal family nor any Dutch diplomatic representative attended.
-The family nevertheless gathered at Armgard's home for the television coverage of the wedding.
-Death
 
-Armgard died on 27 April 1971 in House Warmelo in Diepenheim, at the age of 87.
-Zur Lippe-Biesterfeld- Prof. mr. E.J.H.Schrage
+Victoria, Albert and their children
+
+Ancestors of Victoria and Albert
+
+Victoria and Albert had one pair of grandparents in common, Francis, Duke of Saxe-Coburg-Saalfeld, and Countess Augusta Reuss of Ebersdorf, who were parents both of Albert's father Ernest I, Duke of Saxe-Coburg and Gotha, and of Victoria's mother (and Ernest I's sister), Princess Victoria of Saxe-Coburg-Saalfeld.
+Duke Francis & Countess Augusta → Duke Ernest I → Prince Albert
+Duke Francis & Countess Augusta → Princess Victoria → Queen Victoria
+
+
+Another of Victoria's (but not Albert's) grandfathers was King George III, father of Victoria's father, the Duke of Kent, and his brothers, King George IV and King William IV.
+Marriage of Victoria and Albert
+
+Queen Victoria (who had ascended to the throne on 20 June 1837 and been crowned on 28 June 1838) was married to Prince Albert on 10 February 1840 by William Howley, the Archbishop of Canterbury, in the Chapel Royal of St James's Palace in Westminster (London).
+(Albert died nearly fifteen years before Victoria was proclaimed Empress of India on 1 May 1876.)
+
+
+20 grandsons (of whom 2 were stillborn), 22 granddaughters including
+
+
+Children of Victoria and Albert
+
+Queen Victoria, at times, had contentious relations with her children.
+According to one modern author, both Victoria and Albert weren't above playing favourites with their children, and unfortunately did little to hide their favouritism.
+According to one modern author, Victoria was initially jealous of the time that Albert had spent with Vicky, but in her widowhood, Victoria made Vicky something of her confidante, and for her part, Vicky had accrued hundreds of letters from her mother, to the point that shortly before her death, she had them smuggled out of Germany by her brother's secretary, Sir Frederick Ponsonby.
+Of her sons, Victoria had the most trouble with her eldest, Albert Edward, and her youngest, Leopold.
+Among her daughters, Victoria clashed often with Louise.
+In her widowhood, Victoria expected Beatrice, who was only 4 when her father died, to remain at home with her, and only permitted her to marry on the condition that she and her husband would remain in England.
+Children and grandchildren of Victoria and Albert
+
+Victoria, Princess Royal
+
+The eldest child of Victoria and Albert was Princess Victoria, the Princess Royal, called "Vicky" (1840–1901).
+On 25 January 1858, she married Prince Frederick Wilhelm of Prussia (1831–1888; Crown Prince from 1861, German Emperor March–June 1888).
+Not only was the Princess Royal the first child of Queen Victoria and Prince Albert, she also gave them their first grandchild (the future Emperor Wilhelm II, 27 January 1859 – 4 June 1941) and was the grandmother to both the first of their 87 great-grandchildren to be born, Princess Feodora of Saxe-Meiningen (12 May 1879 – 26 August 1945), daughter of Princess Charlotte, and to the last of their 29 great-granddaughters to die, Princess Katherine of Greece and Denmark (4 May 1913 – 2 October 2007), daughter of Princess Sophie.
+Queen Victoria → Princess Victoria → German Emperor Wilhelm II → Princess Victoria Louise of Prussia → Princess Frederica of Hanover (Queen of the Hellenes) → King Constantine II
+
+
+Queen Victoria → Princess Victoria → Princess Sophie of Prussia → King Paul → King Constantine II
+
+
+Queen Victoria → Princess Victoria → Princess Sophie of Prussia → Helen, Queen of Romania → King Michael I
+
+
+Children of the Princess Royal and Crown Prince Frederick William of Prussia
+
+The portrait below shows the Princess Royal with her husband Frederick William and with Victoria and Albert's first two grandchildren, the future Kaiser Wilhelm II (1859–1941) and Princess Charlotte (1860–1919), who were the only grandchildren born during Albert's lifetime.
+Edward VII
+
+Prince Albert Edward (1841–1910), then the Prince of Wales, married Princess Alexandra of Denmark (1844–1925), later Queen Alexandra of the United Kingdom, on 10 March 1863.
+The Prince of Wales became King Edward VII and Emperor of India at the death of his mother Queen Victoria on 22 January 1901.
+Edward and Alexandra's son, King George V, (reigned 1910–1936) was the father of Kings Edward VIII (reigned 1936) and George VI (1936–1952), and thereby the paternal grandfather of Queen Elizabeth II (reigned 1952–2022) and her sister Princess Margaret (1930–2002).
+Elizabeth and Margaret were therefore great-granddaughters of Edward VII and great-great-granddaughters of Queen Victoria.
+Queen Victoria → King Edward VII → King George V → King George VI → Queen Elizabeth II → King Charles III
+
+
+Edward and Alexandra's daughter Princess Maud of Wales became Queen of Norway when her husband, Prince Carl of Denmark, became King Haakon VII (1905–1957) upon the dissolution of Norway's union with Sweden in 1905.
+Their son, and Edward's grandson, became King Olav V (1957–1991); and Olav's children, King Harald V (since 1991), Princess Ragnhild and Princess Astrid, are thus great-grandchildren of Edward VII and great-great-grandchildren of Victoria and Albert.
+Queen Victoria → King Edward VII → Princess Maud of Wales (Queen of Norway) → King Olav V → King Harald V
+
+
+Children of King Edward VII and Queen Alexandra
+
+Princess Alice
+
+Princess Alice (1843–1878) married Prince Louis of Hesse (1837–1892), later Grand Duke Louis IV of Hesse, on 1 July 1862.
+Prince Ludwig succeeded to the Grand Duchy of Hesse as Grand Duke Louis IV of Hesse, and Princess Alice as the Grand Duchess of Hesse, on 13 July 1877.
+Alice and Louis's daughter, Princess Victoria of Hesse and by Rhine, married Prince Louis of Battenberg, and was the mother of Princess Alice of Battenberg (1885–1969), who became Alice, Princess Andrew of Greece and Denmark, when she married Prince Andrew of Greece and Denmark on 6 October 1903.
+Princess Alice was the mother of Prince Philip, Duke of Edinburgh, the husband of Queen Elizabeth II.
+Princess Victoria was also the mother of Queen Louise of Sweden.
+Queen Victoria → Princess Alice → Princess Victoria of Hesse → Princess Alice of Battenberg → Prince Philip, Duke of Edinburgh
+
+
+Alice and Louis's second daughter, Princess Elisabeth of Hesse and by Rhine, married, in 1884, the Russian Grand Duke Sergei Alexandrovich, the fifth son of Tsar Alexander II and Empress Maria Alexandrovna, and younger brother of the then reigning Tsar Alexander III.
+He married his first cousin, Princess Victoria Melita of Saxe-Coburg and Gotha (1876-1936), in April 1894, and had one daughter, Princess Elisabeth of Hesse who died of typhoid fever, aged 8.
+The Grand Duke married for a second time to Princess Eleonore of Solms-Hohensolms-Lich (1871–1937), and had two sons: Georg Donatus, Hereditary Grand Duke of Hesse who married Princess Cecilie of Greece and Denmark, sister of Prince Philip, Duke of Edinburgh, and had issue, and Prince Louis of Hesse and by Rhine.
+Princess Alix of Hesse, the youngest surviving child of the Grand Ducal pair, became the last Empress of All the Russias through her marriage to Nicholas II of Russia in 1894.
+Queen Victoria → Princess Alice → Princess Alix of Hesse (Tsarina Alexandra Feodorovna of Russia)
+
+
+Children of Princess Alice and Louis IV of Hesse
+
+¶
+The entire family was killed in July 1918 in the aftermath of the Bolshevik Revolution, as was Alexandra's sister, the Grand Duchess Elisabeth (Princess Elisabeth of Hesse) the following day.
+Alfred, Duke of Saxe-Coburg and Gotha
+
+Prince Alfred (1844–1900) married the Grand Duchess Maria Alexandrovna of Russia (1853–1920), the only surviving daughter of Tsar Alexander II and Empress Marie Alexandrovna, on 23 January 1874 at the Winter Palace in St Petersburg, Russia.
+In June 1893, Prince Alfred achieved the Royal Navy rank of Admiral of the Fleet, shortly before succeeding his paternal uncle, Ernest II, as Duke of Saxe-Coburg and Gotha in August 1893.
+Prince Alfred's daughter (and Queen Victoria's granddaughter) Princess Marie of Edinburgh became Queen of Romania in 1914 after marrying the future King Ferdinand in 1893.
+Queen Victoria → Prince Alfred → Princess Marie of Edinburgh (Queen of Romania) → King Carol II → King Michael I
+Queen Victoria → Prince Alfred → Princess Marie of Edinburgh (Queen of Romania) → Princess Elisabeth of Romania (Queen of the Hellenes)
+Queen Victoria → Prince Alfred → Princess Marie of Edinburgh (Queen of Romania) → Princess Marie of Romania (Queen of Yugoslavia) → King Peter II
+
+
+Children of Alfred, Duke of Edinburgh, and Grand Duchess Marie
+
+Princess Helena
+
+Princess Helena (1846–1923) married Prince Christian of Schleswig-Holstein (1831–1917) in Windsor Castle's private chapel on 5 July 1866.
+Princess Helena and Prince Christian had no legitimate grandchildren and one natural granddaughter who died without having issue of her own.
+Like other British royal holders of German titles (such as Admiral Louis Battenberg), Princess Helena, Prince Christian, and their two daughters gave up their titles to Schleswig-Holstein in 1917 when the British and German Empires were at war.
+Children of Princess Helena and Prince Christian of Schleswig-Holstein
+
+Princess Louise
+
+Princess Louise (1848–1939), who married John Campbell, 9th Duke of Argyll (1845–1914) in 1871, was the only one of Victoria's nine children who was childless.
+She was the first British monarch's child since 1515 to marry a subject rather than someone of royal blood.
+Prince Arthur, Duke of Connaught and Strathearn
+
+Prince Arthur (1850–1942) married Princess Louise Margaret of Prussia (1860–1917) on 13 March 1879 at St George's Chapel in Windsor Castle.
+He thus became the first, and so far only, Governor General of Canada to be of the Blood Royal, although he had been preceded in this office from 1878 to 1883 by the Marquess of Lorne, the non-royal husband of his sister Princess Louise (see above).
+Prince Arthur's elder daughter (and Queen Victoria's granddaughter) Princess Margaret of Connaught became Crown Princess of Sweden in 1907 after marrying the future Gustaf VI Adolf of Sweden in 1905 (however, Margaret died before Gustav became king).
+Queen Victoria → Prince Arthur → Princess Margaret of Connaught → Prince Gustaf Adolf, Duke of Västerbotten → King Carl XVI Gustaf
+Queen Victoria → Prince Arthur → Princess Margaret of Connaught → Princess Ingrid of Sweden → Queen Margrethe II of Denmark → King Frederik X of Denmark
+Queen Victoria → Prince Arthur → Princess Margaret of Connaught → Princess Ingrid of Sweden → Queen Anne Marie of Greece
+Queen Victoria → Prince Arthur → Princess Margaret of Connaught → Count Carl Johan Bernadotte
+
+
+Children of Arthur, Duke of Connaught, and Princess Louise Margaret of Prussia
+
+Prince Leopold, Duke of Albany
+
+Prince Leopold (1853–1884) married Princess Helen of Waldeck and Pyrmont (1861–1922) on 27 April 1882 at St George's Chapel, Windsor Castle.
+He inherited the disease of haemophilia from his mother, Queen Victoria, and spent most of his life as a semi-invalid.
+His daughter, Princess Alice of Albany, married Prince Alexander of Teck, the younger brother of Queen Mary, in February 1904 and became Countess of Athlone when her husband was created Earl of Athlone in June 1917.
+She has, so far, been the longest-lived Princess of the Blood Royal of Britain and was the last surviving grandchild of Queen Victoria.
+In 1900, Charles Edward succeeded his paternal uncle, Alfred, as Duke of Saxe-Coburg and Gotha, but was forced to abdicate his ducal throne during the German Revolution of 1918, later gaining high positions in and through the Nazi movement.
+Because of his support for Germany in World War I, he lost his English knighthood in the Order of the Garter in 1915 and his British royal titles, peerages and honours in 1919.
+He is the grandfather of Carl XVI Gustaf of Sweden through his elder daughter, Princess Sibylla.
+Queen Victoria → Prince Leopold → Prince Charles Edward → Princess Sibylla of Saxe-Coburg and Gotha → King Carl XVI Gustaf
+
+
+Children of Leopold, Duke of Albany, and Princess Helena
+
+Princess Beatrice
+
+Princess Beatrice (1857–1944) married Prince Henry of Battenberg (1858–1896) on 23 July 1885 in St. Mildred's Church, Whippingham on the Isle of Wight.
+They had 3 sons, 1 daughter (the future Queen Victoria Eugenia of Spain), 5 grandsons (1 stillborn) and 3 granddaughters.
+The present King Felipe VI of Spain, as the great-grandson of Victoria Eugenie, is the great-great-grandson of Princess Beatrice and thus the great-great-great-grandson of Queen Victoria.
+Queen Victoria → Princess Beatrice → Princess Victoria Eugenie of Battenberg (Queen of Spain) → Infante Juan, Count of Barcelona → King Juan Carlos I → King Felipe VI
+
+
+Due to anti-German feeling during the First World War, the members of the Battenberg family who were British citizens relinquished their titles of Prince and Princess of Battenberg and the styles of Highness and Serene Highness.
+Under Royal Warrant, they instead took the surname Mountbatten, an Anglicised form of Battenberg.
+Both Prince Henry and his youngest son Prince Maurice (the lastborn of Victoria's grandchildren) died on active military service, the father from malaria contracted during the Ashanti War and the son in battle on the Western Front of World War I.
+
+
+Children of Princess Beatrice and Prince Henry of Battenberg
+
+See also
+
+References
+
+Sources and external links
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -133,39 +277,9 @@ Zur Lippe-Biesterfeld- Prof. mr. E.J.H.Schrage
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -180,6 +294,23 @@ Zur Lippe-Biesterfeld- Prof. mr. E.J.H.Schrage
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -197,6 +328,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,29 +410,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -295,6 +433,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -307,6 +453,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -315,17 +463,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -353,6 +503,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -368,317 +602,116 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (434f2485-922e-4f08-959e-a33bca111454)
- Call ID: 434f2485-922e-4f08-959e-a33bca111454
+  AssignClass (9b82a6ae-9b17-4a3b-b28c-f6d1e6ebebb0)
+ Call ID: 9b82a6ae-9b17-4a3b-b28c-f6d1e6ebebb0
   Args:
+    source: Queen_Victoria
     type: :Woman
-    source: Armgard_von_Cramm
-  AssignClass (9ba2e5da-1fb0-4c2f-92d4-39175591bf96)
- Call ID: 9ba2e5da-1fb0-4c2f-92d4-39175591bf96
+  AssignClass (23fd0714-74b4-45df-8dfb-bdc110566e04)
+ Call ID: 23fd0714-74b4-45df-8dfb-bdc110566e04
   Args:
-    type: :Person
-    source: Armgard_von_Cramm
-  AddLiteral (c7b3247b-f92b-4369-a9bc-c92c59eb33ec)
- Call ID: c7b3247b-f92b-4369-a9bc-c92c59eb33ec
+    type: :Man
+    source: Prince_Albert
+  AddLiteral (53975361-2bcf-4617-9b95-ea6f15b17f22)
+ Call ID: 53975361-2bcf-4617-9b95-ea6f15b17f22
   Args:
-    relation: :hasSex
-    literal_value: Female
-    source: Armgard_von_Cramm
-    literal_type: xsd:string
-  AddLiteral (7d2598de-3c74-46de-abee-5d7783a7a70f)
- Call ID: 7d2598de-3c74-46de-abee-5d7783a7a70f
-  Args:
-    relation: :knownAs
-    literal_value: Armgard von Cramm
-    literal_type: xsd:string
-    source: Armgard_von_Cramm
-  AddLiteral (9a83fe1d-809b-45b2-84b0-82a39e0ff3f7)
- Call ID: 9a83fe1d-809b-45b2-84b0-82a39e0ff3f7
-  Args:
-    source: Armgard_von_Cramm
     literal_type: xsd:integer
+    source: Queen_Victoria
+    literal_value: 1819
     relation: :hasBirthYear
-    literal_value: 1883
-  AddLiteral (94db9714-6f34-4bfe-9e3a-4061f0b7a665)
- Call ID: 94db9714-6f34-4bfe-9e3a-4061f0b7a665
+  AddLiteral (b718024e-32c5-4f83-9a6a-e0e6d3384111)
+ Call ID: b718024e-32c5-4f83-9a6a-e0e6d3384111
   Args:
-    source: Armgard_von_Cramm
     literal_type: xsd:integer
-    literal_value: 1971
+    source: Queen_Victoria
     relation: :hasDeathYear
-  AssignClass (0d151c7c-85a1-4e9a-8f74-544ab4c9daab)
- Call ID: 0d151c7c-85a1-4e9a-8f74-544ab4c9daab
+    literal_value: 1901
+  AddLiteral (1ead1355-5f29-4c4c-ab89-0b6560bf87bf)
+ Call ID: 1ead1355-5f29-4c4c-ab89-0b6560bf87bf
   Args:
-    type: :Man
-    source: Aschwin_of_Sierstorpff-Cramm
-  AssignClass (1f95155e-5807-49dd-920c-0e0a49c0366a)
- Call ID: 1f95155e-5807-49dd-920c-0e0a49c0366a
-  Args:
-    type: :Person
-    source: Aschwin_of_Sierstorpff-Cramm
-  AddTriple (c3bf9fcb-6abd-4d46-b753-3662ced2e8cc)
- Call ID: c3bf9fcb-6abd-4d46-b753-3662ced2e8cc
-  Args:
-    relation: :hasFather
-    source: Armgard_von_Cramm
-    target: Aschwin_of_Sierstorpff-Cramm
-  AssignClass (db6bca37-04c1-48d3-ab2d-f58eb2a7fd6c)
- Call ID: db6bca37-04c1-48d3-ab2d-f58eb2a7fd6c
-  Args:
-    type: :Woman
-    source: Hedwig_of_Sierstorpff-Driburg
-  AssignClass (499cdc88-02e2-42c8-a619-3ae1d8b10c7b)
- Call ID: 499cdc88-02e2-42c8-a619-3ae1d8b10c7b
-  Args:
-    type: :Person
-    source: Hedwig_of_Sierstorpff-Driburg
-  AddTriple (77648adc-6710-45fb-88b1-cc5f100a2525)
- Call ID: 77648adc-6710-45fb-88b1-cc5f100a2525
-  Args:
-    relation: :hasMother
-    target: Hedwig_of_Sierstorpff-Driburg
-    source: Armgard_von_Cramm
-  AssignClass (3bb483d4-3b1f-464a-965c-cf1bd813e7a7)
- Call ID: 3bb483d4-3b1f-464a-965c-cf1bd813e7a7
-  Args:
-    type: :Man
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-  AssignClass (725649bc-ab9a-429e-a72d-fc1e460d250d)
- Call ID: 725649bc-ab9a-429e-a72d-fc1e460d250d
-  Args:
-    type: :Person
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-  AddTriple (780a669e-9323-46d4-98dd-a244ed923e0a)
- Call ID: 780a669e-9323-46d4-98dd-a244ed923e0a
-  Args:
-    relation: :hasMother
-    source: Prince_Bernhard_of_Lippe-Biesterfeld
-    target: Armgard_von_Cramm
-  AssignClass (f323d7d0-dfea-4a46-803d-e972a299d3c1)
- Call ID: f323d7d0-dfea-4a46-803d-e972a299d3c1
-  Args:
-    type: :Man
-    source: Bodo_von_Oeynhausen
-  AssignClass (62907584-bf1c-44b6-800d-22407986edea)
- Call ID: 62907584-bf1c-44b6-800d-22407986edea
-  Args:
-    type: :Person
-    source: Bodo_von_Oeynhausen
-  AddLiteral (c5ba9041-30f1-41c1-b092-1762e0e09719)
- Call ID: c5ba9041-30f1-41c1-b092-1762e0e09719
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1905
+    literal_value: 1819
+    relation: :hasBirthYear
+    source: Prince_Albert
     literal_type: xsd:integer
-    source: Bodo_von_Oeynhausen
-  AssignClass (0f24bc51-2ab4-4e77-bb6f-520ed2cbc7e0)
- Call ID: 0f24bc51-2ab4-4e77-bb6f-520ed2cbc7e0
+  AddLiteral (bdb3c59c-7bad-413b-aca5-74fb0606ad2a)
+ Call ID: bdb3c59c-7bad-413b-aca5-74fb0606ad2a
   Args:
-    type: :Man
-    source: Erich_von_Oeynhausen
-  AssignClass (bcddda97-df31-46e9-9773-5397e1ed88e9)
- Call ID: bcddda97-df31-46e9-9773-5397e1ed88e9
-  Args:
-    type: :Person
-    source: Erich_von_Oeynhausen
-  AssignClass (5b45356e-1791-4166-9829-33537bacbffc)
- Call ID: 5b45356e-1791-4166-9829-33537bacbffc
-  Args:
-    type: :Woman
-    source: Therese_von_Lenthe
-  AssignClass (8c70c035-ba09-4248-a38b-21737b1a6a7e)
- Call ID: 8c70c035-ba09-4248-a38b-21737b1a6a7e
-  Args:
-    type: :Person
-    source: Therese_von_Lenthe
-  AddTriple (b2ae4c57-36b0-42dc-bcd5-eadf583235e1)
- Call ID: b2ae4c57-36b0-42dc-bcd5-eadf583235e1
-  Args:
-    source: Bodo_von_Oeynhausen
-    target: Erich_von_Oeynhausen
-    relation: :hasFather
-  AddTriple (ec70bf31-61d0-46ce-b0e8-6a3442e9c312)
- Call ID: ec70bf31-61d0-46ce-b0e8-6a3442e9c312
-  Args:
-    source: Bodo_von_Oeynhausen
-    target: Therese_von_Lenthe
-    relation: :hasMother
-  AssignClass (42cc16c3-2709-4445-9f88-0eae2fc97a05)
- Call ID: 42cc16c3-2709-4445-9f88-0eae2fc97a05
-  Args:
-    type: :Man
-    source: Prince_Bernhard_of_Lippe-Biesterfeld_Sr
-  AssignClass (77b1f857-21fc-4b4b-91a4-c8e2af483307)
- Call ID: 77b1f857-21fc-4b4b-91a4-c8e2af483307
-  Args:
-    type: :Person
-    source: Prince_Bernhard_of_Lippe-Biesterfeld_Sr
-  AddLiteral (b0f1ee21-8463-4ebb-8127-c820e65d4517)
- Call ID: b0f1ee21-8463-4ebb-8127-c820e65d4517
-  Args:
-    literal_value: 1909
-    relation: :hasMarriageYear
-    source: Prince_Bernhard_of_Lippe-Biesterfeld_Sr
+    source: Prince_Albert
     literal_type: xsd:integer
-  AssignClass (ba154ff5-1300-4bcd-ba9a-af3610356c63)
- Call ID: ba154ff5-1300-4bcd-ba9a-af3610356c63
+    relation: :hasDeathYear
+    literal_value: 1861
+  AddTriple (cdada74d-4c2f-4284-8ee3-c8551cfdd494)
+ Call ID: cdada74d-4c2f-4284-8ee3-c8551cfdd494
+  Args:
+    target: Prince_Albert
+    source: Queen_Victoria
+    relation: :hasRelation
+  AddLiteral (9398a4db-6ef0-474e-b2b9-d2f9d16b67b9)
+ Call ID: 9398a4db-6ef0-474e-b2b9-d2f9d16b67b9
+  Args:
+    literal_value: 1840
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Queen_Victoria
+  AssignClass (9566f847-ea11-4b56-89a1-cc5ff3774c89)
+ Call ID: 9566f847-ea11-4b56-89a1-cc5ff3774c89
   Args:
     type: :Man
-    source: Ernest_II_Count_of_Lippe-Biesterfeld
-  AssignClass (7a98a551-a4d0-4cf5-bfea-abc0b6c95fbd)
- Call ID: 7a98a551-a4d0-4cf5-bfea-abc0b6c95fbd
-  Args:
-    type: :Person
-    source: Ernest_II_Count_of_Lippe-Biesterfeld
-  AssignClass (d9910190-a32f-4271-ad83-27d9192ac157)
- Call ID: d9910190-a32f-4271-ad83-27d9192ac157
+    source: Duke_Francis_of_Saxe-Coburg-Saalfeld
+  AssignClass (fd3381b4-b446-4df4-bee5-4c7da5608cf6)
+ Call ID: fd3381b4-b446-4df4-bee5-4c7da5608cf6
   Args:
     type: :Woman
-    source: Karoline_von_Wartensleben
-  AssignClass (a603a5f0-7eb9-4870-a9e4-c7d85322d311)
- Call ID: a603a5f0-7eb9-4870-a9e4-c7d85322d311
-  Args:
-    type: :Person
-    source: Karoline_von_Wartensleben
-  AddTriple (bfefd25a-04ea-43dc-9537-6275447a457d)
- Call ID: bfefd25a-04ea-43dc-9537-6275447a457d
-  Args:
-    source: Prince_Bernhard_of_Lippe-Biesterfeld_Sr
-    target: Ernest_II_Count_of_Lippe-Biesterfeld
-    relation: :hasFather
-  AddTriple (298c71b6-f304-4880-8387-e54efa0316e6)
- Call ID: 298c71b6-f304-4880-8387-e54efa0316e6
-  Args:
-    target: Karoline_von_Wartensleben
-    source: Prince_Bernhard_of_Lippe-Biesterfeld_Sr
-    relation: :hasMother
-  AssignClass (1812d087-0a94-4687-935c-1642d82255be)
- Call ID: 1812d087-0a94-4687-935c-1642d82255be
+    source: Countess_Augusta_Reuss
+  AssignClass (6acc6479-224a-49e3-9743-c40cb57d12d8)
+ Call ID: 6acc6479-224a-49e3-9743-c40cb57d12d8
   Args:
     type: :Man
-    source: Leopold_IV_Prince_of_Lippe
-  AssignClass (633fee33-c5d1-4d68-b752-4573e8d29dfd)
- Call ID: 633fee33-c5d1-4d68-b752-4573e8d29dfd
+    source: Duke_Ernest_I
+  AssignClass (ffedfe57-789a-4376-ba43-f8441c74683f)
+ Call ID: ffedfe57-789a-4376-ba43-f8441c74683f
   Args:
-    type: :Person
-    source: Leopold_IV_Prince_of_Lippe
-  AssignClass (fcf229bd-1f33-4935-8bb1-0832564df97f)
- Call ID: fcf229bd-1f33-4935-8bb1-0832564df97f
-  Args:
-    type: :Man
-    source: Aschwin_son_of_Armgard
-  AssignClass (bc1951df-b94f-4351-b98b-038bd8bd6452)
- Call ID: bc1951df-b94f-4351-b98b-038bd8bd6452
-  Args:
-    type: :Person
-    source: Aschwin_son_of_Armgard
-  AddTriple (a3005688-6f2c-4ed3-a346-301163fdf75f)
- Call ID: a3005688-6f2c-4ed3-a346-301163fdf75f
-  Args:
-    relation: :hasMother
-    target: Armgard_von_Cramm
-    source: Aschwin_son_of_Armgard
-  AssignClass (eee4bb0a-35d1-4c1e-8c8b-2b689afdc3e1)
- Call ID: eee4bb0a-35d1-4c1e-8c8b-2b689afdc3e1
-  Args:
+    source: Princess_Victoria_of_Saxe-Coburg-Saalfeld
     type: :Woman
-    source: Princess_Irene
-  AssignClass (cabdc256-83c9-43aa-998b-799756321d6e)
- Call ID: cabdc256-83c9-43aa-998b-799756321d6e
+  AddTriple (6ef8971f-7d6f-42d5-800f-126b82ad2fcc)
+ Call ID: 6ef8971f-7d6f-42d5-800f-126b82ad2fcc
   Args:
-    type: :Person
-    source: Princess_Irene
-  Finish (95f4dba8-328b-45b0-9cef-b8a1ab6716b4)
- Call ID: 95f4dba8-328b-45b0-9cef-b8a1ab6716b4
+    target: Duke_Ernest_I
+    source: Duke_Francis_of_Saxe-Coburg-Saalfeld
+    relation: :isFatherOf
+  AddTriple (cb812cdd-f188-4514-8622-5e9cb4f31167)
+ Call ID: cb812cdd-f188-4514-8622-5e9cb4f31167
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Countess_Augusta_Reuss
+    target: Duke_Ernest_I
+    relation: :isMotherOf
+  AddTriple (d8343d0c-c6df-4fa5-9202-dc6c07220bed)
+ Call ID: d8343d0c-c6df-4fa5-9202-dc6c07220bed
+  Args:
+    target: Princess_Victoria_of_Saxe-Coburg-Saalfeld
+    source: Duke_Francis_of_Saxe-Coburg-Saalfeld
+    relation: :isFatherOf
+  AddTriple (94834cb5-3da9-4b02-b7a0-b34bb161e5ca)
+ Call ID: 94834cb5-3da9-4b02-b7a0-b34bb161e5ca
+  Args:
+    target: Princess_Victoria_of_Saxe-Coburg-Saalfeld
+    source: Countess_Augusta_Reuss
+    relation: :isMotherOf
+  AddTriple (6ad93f93-cb13-4e6a-a9d4-6a5aa914ec31)
+ Call ID: 6ad93f93-cb13-4e6a-a9d4-6a5aa914ec31
+  Args:
+    relation: :isFatherOf
+    source: Duke_Ernest_I
+    target: Prince_Albert
+  AddTriple (e2437f9e-9337-43c1-a063-9505cbf39fe8)
+ Call ID: e2437f9e-9337-43c1-a063-9505cbf39fe8
+  Args:
+    target: Queen_Victoria
+    source: Princess_Victoria_of_Saxe-Coburg-Saalfeld
+    relation: :isMotherOf
+  Finish (016ab6bd-58bf-44bf-ab0b-c4a353e8441f)
+ Call ID: 016ab6bd-58bf-44bf-ab0b-c4a353e8441f
+  Args:
 
 ================================= Tool Message =================================
 
@@ -755,58 +788,29 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Aschwin_son_of_Armgard a :Man,
-          :Person ;
-      :hasMother data:Armgard_von_Cramm .
+  data:Countess_Augusta_Reuss a :Woman ;
+      :isMotherOf data:Duke_Ernest_I,
+          data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .
 
-  data:Bodo_von_Oeynhausen a :Man,
-          :Person ;
-      :hasFather data:Erich_von_Oeynhausen ;
-      :hasMarriageYear 1905 ;
-      :hasMother data:Therese_von_Lenthe .
+  data:Duke_Francis_of_Saxe-Coburg-Saalfeld a :Man ;
+      :isFatherOf data:Duke_Ernest_I,
+          data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .
 
-  data:Leopold_IV_Prince_of_Lippe a :Man,
-          :Person .
+  data:Queen_Victoria a :Woman ;
+      :hasBirthYear 1819 ;
+      :hasDeathYear 1901 ;
+      :hasMarriageYear 1840 ;
+      :hasRelation data:Prince_Albert .
 
-  data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
-          :Person ;
-      :hasMother data:Armgard_von_Cramm .
+  data:Duke_Ernest_I a :Man ;
+      :isFatherOf data:Prince_Albert .
 
-  data:Prince_Bernhard_of_Lippe-Biesterfeld_Sr a :Man,
-          :Person ;
-      :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;
-      :hasMarriageYear 1909 ;
-      :hasMother data:Karoline_von_Wartensleben .
+  data:Prince_Albert a :Man ;
+      :hasBirthYear 1819 ;
+      :hasDeathYear 1861 .
 
-  data:Princess_Irene a :Person,
-          :Woman .
-
-  data:Aschwin_of_Sierstorpff-Cramm a :Man,
-          :Person .
-
-  data:Erich_von_Oeynhausen a :Man,
-          :Person .
-
-  data:Ernest_II_Count_of_Lippe-Biesterfeld a :Man,
-          :Person .
-
-  data:Hedwig_of_Sierstorpff-Driburg a :Person,
-          :Woman .
-
-  data:Karoline_von_Wartensleben a :Person,
-          :Woman .
-
-  data:Therese_von_Lenthe a :Person,
-          :Woman .
-
-  data:Armgard_von_Cramm a :Person,
-          :Woman ;
-      :hasBirthYear 1883 ;
-      :hasDeathYear 1971 ;
-      :hasFather data:Aschwin_of_Sierstorpff-Cramm ;
-      :hasMother data:Hedwig_of_Sierstorpff-Driburg ;
-      :hasSex "Female"^^xsd:string ;
-      :knownAs "Armgard von Cramm"^^xsd:string .
+  data:Princess_Victoria_of_Saxe-Coburg-Saalfeld a :Woman ;
+      :isMotherOf data:Queen_Victoria .
 
 
 
@@ -818,270 +822,46 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (fac4f37b-c174-40c4-99df-9a7148adad39)
- Call ID: fac4f37b-c174-40c4-99df-9a7148adad39
+  ValidateShacl (f1a7570f-0bea-4fed-b1da-3782fbb74607)
+ Call ID: f1a7570f-0bea-4fed-b1da-3782fbb74607
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:32
+Total violations:4
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The person 'Prince_Bernhard_of_Lippe-Biesterfeld_Sr' has a father 'Ernest_II_Count_of_Lippe-Biesterfeld' who is not correctly classified as an ':Ancestor' or ':Man'.
+      The node Duke_Ernest_I is used as a subject of the property isFatherOf, but it is missing the mandatory class Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernest_II_Count_of_Lippe-Biesterfeld', class=':Man')
+      Use AssignClass to add the class :Ancestor to the node :Duke_Ernest_I.
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The person 'Bodo_von_Oeynhausen' has a father 'Erich_von_Oeynhausen' who is not correctly classified as an ':Ancestor' or ':Man'.
+      The node Duke_Francis_of_Saxe-Coburg-Saalfeld is used as a subject of the property isFatherOf, but it is missing the mandatory class Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Erich_von_Oeynhausen', class=':Man')
+      Use AssignClass to add the class :Ancestor to the node :Duke_Francis_of_Saxe-Coburg-Saalfeld.
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The person 'Aschwin_son_of_Armgard' has a mother 'Armgard_von_Cramm' who is not correctly classified as an ':Ancestor' or ':Woman'.
+      The node Countess_Augusta_Reuss is used as a subject of the property isMotherOf, but it is missing the mandatory class Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Armgard_von_Cramm', class=':Woman')
+      Use AssignClass to add the class :Ancestor to the node :Countess_Augusta_Reuss.
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The person 'Prince_Bernhard_of_Lippe-Biesterfeld_Sr' has a mother 'Karoline_von_Wartensleben' who is not correctly classified as an ':Ancestor' or ':Woman'.
+      The node Princess_Victoria_of_Saxe-Coburg-Saalfeld is used as a subject of the property isMotherOf, but it is missing the mandatory class Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Karoline_von_Wartensleben', class=':Woman')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Prince_Bernhard_of_Lippe-Biesterfeld' has a mother 'Armgard_von_Cramm' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Armgard_von_Cramm', class=':Woman')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Bodo_von_Oeynhausen' has a mother 'Therese_von_Lenthe' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Therese_von_Lenthe', class=':Woman')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' assigned to 'Armgard_von_Cramm' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Prince_Bernhard_of_Lippe-Biesterfeld_Sr' has a father 'Ernest_II_Count_of_Lippe-Biesterfeld' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernest_II_Count_of_Lippe-Biesterfeld', class=':Man')
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Armgard_von_Cramm' has a father 'Aschwin_of_Sierstorpff-Cramm' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Aschwin_of_Sierstorpff-Cramm', class=':Man')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Bodo_von_Oeynhausen' has a father 'Erich_von_Oeynhausen' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Erich_von_Oeynhausen', class=':Man')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Aschwin_son_of_Armgard' has a mother 'Armgard_von_Cramm' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Armgard_von_Cramm', class=':Woman')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Prince_Bernhard_of_Lippe-Biesterfeld_Sr' has a mother 'Karoline_von_Wartensleben' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Karoline_von_Wartensleben', class=':Woman')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Armgard_von_Cramm' has a mother 'Hedwig_of_Sierstorpff-Driburg' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Hedwig_of_Sierstorpff-Driburg', class=':Woman')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Prince_Bernhard_of_Lippe-Biesterfeld' has a mother 'Armgard_von_Cramm' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Armgard_von_Cramm', class=':Woman')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Bodo_von_Oeynhausen' has a mother 'Therese_von_Lenthe' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Therese_von_Lenthe', class=':Woman')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' assigned to 'Armgard_von_Cramm' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' assigned to 'Armgard_von_Cramm' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' assigned to 'Armgard_von_Cramm' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Prince_Bernhard_of_Lippe-Biesterfeld_Sr' has a father 'Ernest_II_Count_of_Lippe-Biesterfeld' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ernest_II_Count_of_Lippe-Biesterfeld', class=':Man')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Armgard_von_Cramm' has a father 'Aschwin_of_Sierstorpff-Cramm' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Aschwin_of_Sierstorpff-Cramm', class=':Man')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Bodo_von_Oeynhausen' has a father 'Erich_von_Oeynhausen' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Erich_von_Oeynhausen', class=':Man')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Aschwin_son_of_Armgard' has a mother 'Armgard_von_Cramm' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Armgard_von_Cramm', class=':Woman')
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Prince_Bernhard_of_Lippe-Biesterfeld_Sr' has a mother 'Karoline_von_Wartensleben' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Karoline_von_Wartensleben', class=':Woman')
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Armgard_von_Cramm' has a mother 'Hedwig_of_Sierstorpff-Driburg' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Hedwig_of_Sierstorpff-Driburg', class=':Woman')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Prince_Bernhard_of_Lippe-Biesterfeld' has a mother 'Armgard_von_Cramm' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Armgard_von_Cramm', class=':Woman')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Bodo_von_Oeynhausen' has a mother 'Therese_von_Lenthe' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Therese_von_Lenthe', class=':Woman')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' assigned to 'Armgard_von_Cramm' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' assigned to 'Armgard_von_Cramm' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Armgard_von_Cramm' has a father 'Aschwin_of_Sierstorpff-Cramm' who is not correctly classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Aschwin_of_Sierstorpff-Cramm', class=':Man')
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Armgard_von_Cramm' has a mother 'Hedwig_of_Sierstorpff-Driburg' who is not correctly classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Hedwig_of_Sierstorpff-Driburg', class=':Woman')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' assigned to 'Armgard_von_Cramm' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The sex value 'Female' assigned to 'Armgard_von_Cramm' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      Use AssignClass to add the class :Ancestor to the node :Princess_Victoria_of_Saxe-Coburg-Saalfeld.
 
 
 
@@ -1090,65 +870,29 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (88092291-a84d-48fc-bc82-05d3b11e1df4)
- Call ID: 88092291-a84d-48fc-bc82-05d3b11e1df4
+  AssignClass (e0f5c4e9-ab01-49b5-b5c6-d327cdb5ff7d)
+ Call ID: e0f5c4e9-ab01-49b5-b5c6-d327cdb5ff7d
   Args:
-    source: Aschwin_of_Sierstorpff-Cramm
+    source: Duke_Ernest_I
     type: :Ancestor
-  AssignClass (05a0b116-7bdf-46a9-bf6b-37028d50627e)
- Call ID: 05a0b116-7bdf-46a9-bf6b-37028d50627e
+  AssignClass (74d9e895-efb1-41e4-8f5e-fd239d775fd9)
+ Call ID: 74d9e895-efb1-41e4-8f5e-fd239d775fd9
   Args:
-    source: Erich_von_Oeynhausen
+    source: Duke_Francis_of_Saxe-Coburg-Saalfeld
     type: :Ancestor
-  AssignClass (472bd90d-8bad-4405-91cb-d333ff9a6a13)
- Call ID: 472bd90d-8bad-4405-91cb-d333ff9a6a13
+  AssignClass (aa9f8bce-5a1e-4594-a7a4-cdc5a2cded22)
+ Call ID: aa9f8bce-5a1e-4594-a7a4-cdc5a2cded22
   Args:
-    source: Ernest_II_Count_of_Lippe-Biesterfeld
+    source: Countess_Augusta_Reuss
     type: :Ancestor
-  AssignClass (c2e067da-a9ca-4fa1-adc5-39acc05978c0)
- Call ID: c2e067da-a9ca-4fa1-adc5-39acc05978c0
+  AssignClass (5f8d00b5-3c64-4032-a7da-770aaf273d58)
+ Call ID: 5f8d00b5-3c64-4032-a7da-770aaf273d58
   Args:
-    source: Armgard_von_Cramm
+    source: Princess_Victoria_of_Saxe-Coburg-Saalfeld
     type: :Ancestor
-  AssignClass (99b8e01c-1414-4b61-9163-df76948e0e0f)
- Call ID: 99b8e01c-1414-4b61-9163-df76948e0e0f
+  ValidateShacl (b678a69b-2f19-4a2b-b4a3-35387cbe5193)
+ Call ID: b678a69b-2f19-4a2b-b4a3-35387cbe5193
   Args:
-    source: Hedwig_of_Sierstorpff-Driburg
-    type: :Ancestor
-  AssignClass (26c7b2d1-9847-443d-8a2e-c45d517a280f)
- Call ID: 26c7b2d1-9847-443d-8a2e-c45d517a280f
-  Args:
-    source: Karoline_von_Wartensleben
-    type: :Ancestor
-  AssignClass (d931557e-5444-4b92-82e5-145cb54496d3)
- Call ID: d931557e-5444-4b92-82e5-145cb54496d3
-  Args:
-    type: :Ancestor
-    source: Therese_von_Lenthe
-  AssignClass (19f858a1-6c38-4239-8214-291b61d7a3de)
- Call ID: 19f858a1-6c38-4239-8214-291b61d7a3de
-  Args:
-    type: :Sex
-    source: Female
-  Finish (489c75dc-3ce7-4cd9-9aad-584a624ed43d)
- Call ID: 489c75dc-3ce7-4cd9-9aad-584a624ed43d
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1169,285 +913,35 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Aschwin_son_of_Armgard a :Man,
-          :Person ;
-      :hasMother data:Armgard_von_Cramm .
-
-  data:Bodo_von_Oeynhausen a :Man,
-          :Person ;
-      :hasFather data:Erich_von_Oeynhausen ;
-      :hasMarriageYear 1905 ;
-      :hasMother data:Therese_von_Lenthe .
-
-  data:Female a :Sex .
-
-  data:Leopold_IV_Prince_of_Lippe a :Man,
-          :Person .
-
-  data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
-          :Person ;
-      :hasMother data:Armgard_von_Cramm .
-
-  data:Prince_Bernhard_of_Lippe-Biesterfeld_Sr a :Man,
-          :Person ;
-      :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;
-      :hasMarriageYear 1909 ;
-      :hasMother data:Karoline_von_Wartensleben .
-
-  data:Princess_Irene a :Person,
-          :Woman .
-
-  data:Aschwin_of_Sierstorpff-Cramm a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Erich_von_Oeynhausen a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Ernest_II_Count_of_Lippe-Biesterfeld a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Hedwig_of_Sierstorpff-Driburg a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Karoline_von_Wartensleben a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Therese_von_Lenthe a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Armgard_von_Cramm a :Ancestor,
-          :Person,
+  data:Countess_Augusta_Reuss a :Ancestor,
           :Woman ;
-      :hasBirthYear 1883 ;
-      :hasDeathYear 1971 ;
-      :hasFather data:Aschwin_of_Sierstorpff-Cramm ;
-      :hasMother data:Hedwig_of_Sierstorpff-Driburg ;
-      :hasSex "Female"^^xsd:string ;
-      :knownAs "Armgard von Cramm"^^xsd:string .
+      :isMotherOf data:Duke_Ernest_I,
+          data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .
 
+  data:Duke_Francis_of_Saxe-Coburg-Saalfeld a :Ancestor,
+          :Man ;
+      :isFatherOf data:Duke_Ernest_I,
+          data:Princess_Victoria_of_Saxe-Coburg-Saalfeld .
 
+  data:Queen_Victoria a :Woman ;
+      :hasBirthYear 1819 ;
+      :hasDeathYear 1901 ;
+      :hasMarriageYear 1840 ;
+      :hasRelation data:Prince_Albert .
 
-================================= Tool Message =================================
+  data:Duke_Ernest_I a :Ancestor,
+          :Man ;
+      :isFatherOf data:Prince_Albert .
 
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+  data:Prince_Albert a :Man ;
+      :hasBirthYear 1819 ;
+      :hasDeathYear 1861 .
 
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (a0132bfb-05bf-485e-b37a-09467f53d8fd)
- Call ID: a0132bfb-05bf-485e-b37a-09467f53d8fd
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:11
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the 'hasSex' property of 'Armgard_von_Cramm' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the 'hasSex' property of 'Armgard_von_Cramm' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the 'hasSex' property of 'Armgard_von_Cramm' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the 'hasSex' property of 'Armgard_von_Cramm' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the 'hasSex' property of 'Armgard_von_Cramm' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the 'hasSex' property of 'Armgard_von_Cramm' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the 'hasSex' property of 'Armgard_von_Cramm' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the 'hasSex' property of 'Armgard_von_Cramm' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the 'hasSex' property of 'Armgard_von_Cramm' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the 'hasSex' property of 'Armgard_von_Cramm' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' assigned to the 'hasSex' property of 'Armgard_von_Cramm' is not recognized as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (e4672e15-b85f-49da-b0dd-8969b3cb96c0)
- Call ID: e4672e15-b85f-49da-b0dd-8969b3cb96c0
-  Args:
-    source: Armgard_von_Cramm
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-  AddTriple (bbe54274-2466-49ea-9935-ffaf0308dfd9)
- Call ID: bbe54274-2466-49ea-9935-ffaf0308dfd9
-  Args:
-    source: Armgard_von_Cramm
-    relation: :hasSex
-    target: Female
-  Finish (dc02be0c-4646-4182-a535-d52e836b63c7)
- Call ID: dc02be0c-4646-4182-a535-d52e836b63c7
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Aschwin_son_of_Armgard a :Man,
-          :Person ;
-      :hasMother data:Armgard_von_Cramm .
-
-  data:Bodo_von_Oeynhausen a :Man,
-          :Person ;
-      :hasFather data:Erich_von_Oeynhausen ;
-      :hasMarriageYear 1905 ;
-      :hasMother data:Therese_von_Lenthe .
-
-  data:Leopold_IV_Prince_of_Lippe a :Man,
-          :Person .
-
-  data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
-          :Person ;
-      :hasMother data:Armgard_von_Cramm .
-
-  data:Prince_Bernhard_of_Lippe-Biesterfeld_Sr a :Man,
-          :Person ;
-      :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;
-      :hasMarriageYear 1909 ;
-      :hasMother data:Karoline_von_Wartensleben .
-
-  data:Princess_Irene a :Person,
-          :Woman .
-
-  data:Aschwin_of_Sierstorpff-Cramm a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Erich_von_Oeynhausen a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Ernest_II_Count_of_Lippe-Biesterfeld a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Female a :Sex .
-
-  data:Hedwig_of_Sierstorpff-Driburg a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Karoline_von_Wartensleben a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Therese_von_Lenthe a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Armgard_von_Cramm a :Ancestor,
-          :Person,
+  data:Princess_Victoria_of_Saxe-Coburg-Saalfeld a :Ancestor,
           :Woman ;
-      :hasBirthYear 1883 ;
-      :hasDeathYear 1971 ;
-      :hasFather data:Aschwin_of_Sierstorpff-Cramm ;
-      :hasMother data:Hedwig_of_Sierstorpff-Driburg ;
-      :hasSex data:Female ;
-      :knownAs "Armgard von Cramm"^^xsd:string .
+      :isMotherOf data:Queen_Victoria .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (956013b6-5b08-4c35-a4c3-bb7a0a7c7c24)
- Call ID: 956013b6-5b08-4c35-a4c3-bb7a0a7c7c24
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1457,6 +951,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (1cd4992b-e2c6-486a-95dd-04a93ab6e237)
- Call ID: 1cd4992b-e2c6-486a-95dd-04a93ab6e237
+  Finish (d8e954de-a3f0-4246-9931-33331bf271f8)
+ Call ID: d8e954de-a3f0-4246-9931-33331bf271f8
   Args:

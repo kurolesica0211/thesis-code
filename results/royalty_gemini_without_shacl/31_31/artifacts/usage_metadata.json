@@ -2,14 +2,30 @@
     "translation": [],
     "final": [
         {
-            "iteration": 1,
+            "iteration": 3,
             "metadata": [
                 {
-                    "input_tokens": 9289,
-                    "output_tokens": 1038,
-                    "total_tokens": 10327,
+                    "input_tokens": 11371,
+                    "output_tokens": 888,
+                    "total_tokens": 12259,
                     "input_token_details": {
-                        "cache_read": 9284
+                        "cache_read": 11366
+                    }
+                },
+                {
+                    "input_tokens": 13335,
+                    "output_tokens": 23,
+                    "total_tokens": 13358,
+                    "input_token_details": {
+                        "cache_read": 11366
+                    }
+                },
+                {
+                    "input_tokens": 13773,
+                    "output_tokens": 8,
+                    "total_tokens": 13781,
+                    "input_token_details": {
+                        "cache_read": 11366
                     }
                 }
             ]

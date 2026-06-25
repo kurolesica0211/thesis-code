@@ -2,23 +2,61 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Frederick_of_Prussia a :Man,
+data:Alfonso_Prince_of_Asturias a :Man,
         :Person ;
-    :alsoKnownAs "Friedrich von Preussen"^^xsd:string,
-        "George Mansfield"^^xsd:string ;
-    :hasBirthYear 1911 ;
-    :hasDeathYear 1966 ;
-    :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
-    :hasMarriageYear 1945 ;
-    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
-    :hasRelation data:Lady_Brigid_Guinness .
+    :isBrotherOf data:Jaime_of_Spain .
 
-data:Crown_Prince_Wilhelm_of_Germany a :Man,
+data:Beatriz_of_Spain a :Person,
+        :Woman ;
+    :isSisterOf data:Jaime_of_Spain .
+
+data:Charlotte_Luise_Auguste_Tiedemann a :Person,
+        :Woman ;
+    :hasFather data:Otto_Eugen_Tiedemann ;
+    :hasMother data:Luise_Amalia_Klein .
+
+data:Emanuela_de_Dampierre a :Person,
+        :Woman ;
+    :hasChild data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon .
+
+data:Gonzalo_of_Spain a :Man,
+        :Person ;
+    :isBrotherOf data:Jaime_of_Spain .
+
+data:Juan_Count_of_Barcelona a :Man,
+        :Person ;
+    :isBrotherOf data:Jaime_of_Spain .
+
+data:Maria_Cristina_of_Spain a :Person,
+        :Woman ;
+    :isSisterOf data:Jaime_of_Spain .
+
+data:Alfonso_XIII a :Man,
         :Person .
 
-data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Person,
+data:Luise_Amalia_Klein a :Person,
         :Woman .
 
-data:Lady_Brigid_Guinness a :Person,
+data:Otto_Eugen_Tiedemann a :Man,
+        :Person .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
         :Woman .
+
+data:Alfonso_de_Borbon a :Man,
+        :Person .
+
+data:Gonzalo_de_Borbon a :Man,
+        :Person .
+
+data:Jaime_of_Spain a :Man,
+        :Person ;
+    :hasBirthYear 1908 ;
+    :hasChild data:Alfonso_de_Borbon,
+        data:Gonzalo_de_Borbon ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMarriageYear 1949 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg .
 

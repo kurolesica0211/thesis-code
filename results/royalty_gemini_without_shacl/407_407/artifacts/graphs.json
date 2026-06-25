@@ -4,20 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mary_Frances_Elphinstone a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1961 ;\n    :hasFather data:Claude_Bowes-Lyon ;\n    :hasMarriageYear 1910 ;\n    :hasRelation data:Sidney_Elphinstone ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother ;\n    :knownAs data:Lady_Elphinstone .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:Sidney_Elphinstone a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1955 .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Juan_Carlos_I_of_Spain a :Man .\n\ndata:Marco_Alfonso_Torlonia a :Man ;\n    :hasBirthYear 1937 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:Alessandro_Torlonia ;\n    :hasMother data:Beatriz_of_Spain ;\n    :hasSister data:Olimpia .\n\ndata:Alessandro_Torlonia a :Man .\n\ndata:Alfonso_XIII_of_Spain a :Man .\n\ndata:Beatriz_of_Spain a :Woman ;\n    :hasFather data:Alfonso_XIII_of_Spain .\n\ndata:Olimpia a :Woman ;\n    :hasChild data:Sibilla_of_Luxembourg .\n\ndata:Sibilla_of_Luxembourg a :Woman .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 2,
-        "source": "post_edits",
-        "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mary_Frances_Elphinstone a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1961 ;\n    :hasFather data:Claude_Bowes-Lyon ;\n    :hasMarriageYear 1910 ;\n    :hasRelation data:Sidney_Elphinstone ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother ;\n    :knownAs data:Lady_Elphinstone .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Lady_Elphinstone a :Person .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:Sidney_Elphinstone a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1955 .\n\n"
-    },
-    {
-        "graph_type": "data_graph",
-        "iteration": 2,
+        "iteration": 1,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mary_Frances_Elphinstone a :Person,\n        :Woman ;\n    :hasBirthYear 1883 ;\n    :hasDeathYear 1961 ;\n    :hasFather data:Claude_Bowes-Lyon ;\n    :hasMarriageYear 1910 ;\n    :hasRelation data:Sidney_Elphinstone ;\n    :isAuntOf data:Queen_Elizabeth_II ;\n    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother ;\n    :knownAs data:Lady_Elphinstone .\n\ndata:Claude_Bowes-Lyon a :Man,\n        :Person .\n\ndata:Lady_Elphinstone a :Person .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_the_Queen_Mother a :Person,\n        :Woman .\n\ndata:Sidney_Elphinstone a :Man,\n        :Person ;\n    :hasBirthYear 1869 ;\n    :hasDeathYear 1955 .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Juan_Carlos_I_of_Spain a :Man .\n\ndata:Marco_Alfonso_Torlonia a :Man ;\n    :hasBirthYear 1937 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:Alessandro_Torlonia ;\n    :hasMother data:Beatriz_of_Spain ;\n    :hasSister data:Olimpia .\n\ndata:Alessandro_Torlonia a :Man .\n\ndata:Alfonso_XIII_of_Spain a :Man .\n\ndata:Beatriz_of_Spain a :Woman ;\n    :hasFather data:Alfonso_XIII_of_Spain .\n\ndata:Olimpia a :Woman ;\n    :hasChild data:Sibilla_of_Luxembourg .\n\ndata:Sibilla_of_Luxembourg a :Woman .\n\n"
     }
 ]

@@ -1,0 +1,232 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Emmanuelle_de_Dampierre a :Person,
+        :Woman ;
+    rdfs:label "Emmanuelle de Dampierre"^^xsd:string ;
+    data:posIndicesFull "3191:3214"^^xsd:string ;
+    data:wdtLink wdt:Q3052995 ;
+    :alsoKnownAs "Emanuela de Dampierre"^^xsd:string,
+        "Emmanuela de Dampierre"^^xsd:string,
+        "Manuela Dampierre"^^xsd:string ;
+    :hasRelation data:Emmanuelle_de_Dampierre ;
+    :hasSex data:female ;
+    :hasSister data:Emmanuelle_de_Dampierre ;
+    :isBloodrelationOf data:Emmanuelle_de_Dampierre ;
+    :isSiblingOf data:Emmanuelle_de_Dampierre ;
+    :isSisterOf data:Emmanuelle_de_Dampierre .
+
+data:Infante_Jaime-_Duke_of_Segovia a :Man,
+        :Person ;
+    rdfs:label "Infante Jaime, Duke of Segovia"^^xsd:string ;
+    data:posIndicesFull "1217:1247"^^xsd:string,
+        "640:670"^^xsd:string ;
+    data:posIndicesPart "1288:1293"^^xsd:string,
+        "1448:1452"^^xsd:string,
+        "1917:1921"^^xsd:string,
+        "2750:2754"^^xsd:string,
+        "3578:3582"^^xsd:string,
+        "5047:5051"^^xsd:string,
+        "5653:5657"^^xsd:string,
+        "5693:5697"^^xsd:string,
+        "5895:5899"^^xsd:string,
+        "843:847"^^xsd:string,
+        "949:953"^^xsd:string ;
+    data:wdtLink wdt:Q703780 ;
+    :hasBrother data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasRelation data:Infante_Jaime-_Duke_of_Segovia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Infante_Jaime-_Duke_of_Segovia ;
+    :isBrotherOf data:Infante_Jaime-_Duke_of_Segovia ;
+    :isSiblingOf data:Infante_Jaime-_Duke_of_Segovia .
+
+data:María_Margarita_Vargas_Santaella a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "María Margarita Vargas Santaella"^^xsd:string ;
+    data:posIndicesFull "4695:4727"^^xsd:string ;
+    data:posIndicesPart "5082:5087"^^xsd:string,
+        "5088:5097"^^xsd:string,
+        "5784:5790"^^xsd:string ;
+    data:wdtLink wdt:Q3296460 ;
+    :alsoKnownAs "Marie Marguerite, Duchess of Anjou"^^xsd:string ;
+    :hasChild data:Eugénie_de_Bourbon ;
+    :hasDaughter data:Eugénie_de_Bourbon ;
+    :hasRelation data:Carmen_Martínez-Bordiú_y_Franco,
+        data:Eugénie_de_Bourbon,
+        data:Louis_Alphonse_de_Bourbon,
+        data:María_Margarita_Vargas_Santaella ;
+    :hasSex data:female ;
+    :hasSister data:María_Margarita_Vargas_Santaella ;
+    :isAncestorOf data:Eugénie_de_Bourbon ;
+    :isAuntOf data:Eugénie_de_Bourbon ;
+    :isBloodrelationOf data:María_Margarita_Vargas_Santaella ;
+    :isMotherOf data:Eugénie_de_Bourbon ;
+    :isParentOf data:Eugénie_de_Bourbon ;
+    :isSiblingOf data:María_Margarita_Vargas_Santaella ;
+    :isSisterOf data:María_Margarita_Vargas_Santaella .
+
+data:Carmen_Martínez-Bordiú_y_Franco a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Carmen Martínez-Bordiú y Franco"^^xsd:string ;
+    data:posIndicesFull "1000:1031"^^xsd:string ;
+    data:posIndicesPart "2875:2881"^^xsd:string,
+        "4177:4183"^^xsd:string,
+        "4241:4247"^^xsd:string,
+        "4248:4254"^^xsd:string,
+        "4271:4277"^^xsd:string,
+        "4506:4512"^^xsd:string,
+        "4585:4591"^^xsd:string ;
+    data:wdtLink wdt:Q2939617 ;
+    :alsoKnownAs "Carmen Martínez-Bordiú y Franco, 2nd Duchess of Franco"^^xsd:string,
+        "Dona Maria del Carmen Martinez-Bordiu y Franco"^^xsd:string ;
+    :hasChild data:Louis_Alphonse_de_Bourbon ;
+    :hasRelation data:Carmen_Martínez-Bordiú_y_Franco,
+        data:Eugénie_de_Bourbon,
+        data:Louis_Alphonse_de_Bourbon,
+        data:María_Margarita_Vargas_Santaella ;
+    :hasSex data:female ;
+    :hasSister data:Carmen_Martínez-Bordiú_y_Franco ;
+    :hasSon data:Louis_Alphonse_de_Bourbon ;
+    :isAncestorOf data:Eugénie_de_Bourbon,
+        data:Louis_Alphonse_de_Bourbon ;
+    :isAuntOf data:Louis_Alphonse_de_Bourbon ;
+    :isBloodrelationOf data:Carmen_Martínez-Bordiú_y_Franco ;
+    :isMotherOf data:Louis_Alphonse_de_Bourbon ;
+    :isParentOf data:Louis_Alphonse_de_Bourbon ;
+    :isSiblingOf data:Carmen_Martínez-Bordiú_y_Franco ;
+    :isSisterOf data:Carmen_Martínez-Bordiú_y_Franco .
+
+data:Louis_Alphonse_de_Bourbon a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Louis Alphonse de Bourbon"^^xsd:string ;
+    data:posIndicesFull "0:25"^^xsd:string,
+        "284:292"^^xsd:string,
+        "3936:3961"^^xsd:string ;
+    data:posIndicesPart "1128:1135"^^xsd:string,
+        "1363:1370"^^xsd:string,
+        "1475:1480"^^xsd:string,
+        "1481:1489"^^xsd:string,
+        "1589:1594"^^xsd:string,
+        "1595:1603"^^xsd:string,
+        "1673:1678"^^xsd:string,
+        "1679:1687"^^xsd:string,
+        "1789:1794"^^xsd:string,
+        "1795:1803"^^xsd:string,
+        "1925:1932"^^xsd:string,
+        "2171:2176"^^xsd:string,
+        "2177:2185"^^xsd:string,
+        "2231:2236"^^xsd:string,
+        "2237:2245"^^xsd:string,
+        "2346:2351"^^xsd:string,
+        "2458:2463"^^xsd:string,
+        "2464:2472"^^xsd:string,
+        "2598:2603"^^xsd:string,
+        "2604:2612"^^xsd:string,
+        "2692:2699"^^xsd:string,
+        "2722:2729"^^xsd:string,
+        "2803:2808"^^xsd:string,
+        "2809:2817"^^xsd:string,
+        "2971:2976"^^xsd:string,
+        "2977:2985"^^xsd:string,
+        "3063:3068"^^xsd:string,
+        "3114:3119"^^xsd:string,
+        "3120:3128"^^xsd:string,
+        "3248:3253"^^xsd:string,
+        "3254:3262"^^xsd:string,
+        "333:338"^^xsd:string,
+        "3533:3538"^^xsd:string,
+        "3539:3547"^^xsd:string,
+        "3660:3667"^^xsd:string,
+        "4024:4029"^^xsd:string,
+        "4030:4038"^^xsd:string,
+        "4116:4121"^^xsd:string,
+        "4122:4130"^^xsd:string,
+        "4658:4663"^^xsd:string,
+        "4664:4672"^^xsd:string,
+        "493:498"^^xsd:string,
+        "4990:4995"^^xsd:string,
+        "4996:5004"^^xsd:string,
+        "499:507"^^xsd:string,
+        "5063:5068"^^xsd:string,
+        "5069:5077"^^xsd:string,
+        "5241:5248"^^xsd:string,
+        "535:540"^^xsd:string,
+        "541:549"^^xsd:string,
+        "5518:5523"^^xsd:string,
+        "5528:5536"^^xsd:string,
+        "877:882"^^xsd:string,
+        "883:891"^^xsd:string ;
+    data:wdtLink wdt:Q1871533 ;
+    :alsoKnownAs "Louis XX"^^xsd:string,
+        "Luis Alfonso de Borbón y de Martinez"^^xsd:string ;
+    :hasAncestor data:Carmen_Martínez-Bordiú_y_Franco ;
+    :hasBrother data:Louis_Alphonse_de_Bourbon ;
+    :hasChild data:Eugénie_de_Bourbon ;
+    :hasDaughter data:Eugénie_de_Bourbon ;
+    :hasMother data:Carmen_Martínez-Bordiú_y_Franco ;
+    :hasParent data:Carmen_Martínez-Bordiú_y_Franco ;
+    :hasRelation data:Carmen_Martínez-Bordiú_y_Franco,
+        data:Eugénie_de_Bourbon,
+        data:Louis_Alphonse_de_Bourbon,
+        data:María_Margarita_Vargas_Santaella ;
+    :hasSex data:male ;
+    :isAncestorOf data:Eugénie_de_Bourbon ;
+    :isBloodrelationOf data:Louis_Alphonse_de_Bourbon ;
+    :isBrotherOf data:Louis_Alphonse_de_Bourbon ;
+    :isChildOf data:Carmen_Martínez-Bordiú_y_Franco ;
+    :isFatherOf data:Eugénie_de_Bourbon ;
+    :isParentOf data:Eugénie_de_Bourbon ;
+    :isSiblingOf data:Louis_Alphonse_de_Bourbon ;
+    :isSonOf data:Carmen_Martínez-Bordiú_y_Franco ;
+    :isUncleOf data:Eugénie_de_Bourbon .
+
+data:Eugénie_de_Bourbon a :Person,
+        :Woman ;
+    rdfs:label "Eugénie de Bourbon"^^xsd:string ;
+    data:posIndicesFull "5455:5472"^^xsd:string,
+        "5455:5481"^^xsd:string ;
+    data:wdtLink wdt:Q16999217 ;
+    :alsoKnownAs "Eugenia de Borbón"^^xsd:string,
+        "Eugenia de Borbón y Vargas"^^xsd:string,
+        "Eugenia de Borbón y de Vargas"^^xsd:string,
+        "Princess Eugénie of Bourbon"^^xsd:string ;
+    :hasAncestor data:Carmen_Martínez-Bordiú_y_Franco,
+        data:Louis_Alphonse_de_Bourbon,
+        data:María_Margarita_Vargas_Santaella ;
+    :hasFather data:Louis_Alphonse_de_Bourbon ;
+    :hasMother data:María_Margarita_Vargas_Santaella ;
+    :hasParent data:Louis_Alphonse_de_Bourbon,
+        data:María_Margarita_Vargas_Santaella ;
+    :hasRelation data:Carmen_Martínez-Bordiú_y_Franco,
+        data:Eugénie_de_Bourbon,
+        data:Louis_Alphonse_de_Bourbon,
+        data:María_Margarita_Vargas_Santaella ;
+    :hasSex data:female ;
+    :hasSister data:Eugénie_de_Bourbon ;
+    :isBloodrelationOf data:Eugénie_de_Bourbon ;
+    :isChildOf data:Louis_Alphonse_de_Bourbon,
+        data:María_Margarita_Vargas_Santaella ;
+    :isDaughterOf data:Louis_Alphonse_de_Bourbon,
+        data:María_Margarita_Vargas_Santaella ;
+    :isSiblingOf data:Eugénie_de_Bourbon ;
+    :isSisterOf data:Eugénie_de_Bourbon .
+

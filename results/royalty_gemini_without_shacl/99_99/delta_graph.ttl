@@ -2,36 +2,29 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Feodora_of_Saxe-Meiningen a :Person,
-        :Woman ;
-    :alsoKnownAs "Feodora Viktoria Auguste Marie Marianne"^^xsd:string ;
+data:Feodora a :Woman ;
     :hasBirthYear 1879 ;
     :hasDeathYear 1945 ;
-    :hasFather data:Bernhard_III_of_Saxe-Meiningen ;
+    :hasFather data:Bernhard_III ;
     :hasMarriageYear 1898 ;
-    :hasMother data:Charlotte_of_Prussia ;
-    :hasRelation data:Heinrich_XXX_Reuss_of_K%C3%B6stritz .
+    :hasMother data:Charlotte ;
+    :hasRelation data:Heinrich_XXX .
 
-data:Queen_Victoria_of_the_United_Kingdom a :Person,
-        :Woman .
+data:Queen_Victoria a :Woman .
 
-data:William_I_German_Emperor a :Man,
-        :Person .
+data:William_I a :Man .
 
-data:Bernhard_III_of_Saxe-Meiningen a :Man,
-        :Person .
+data:Bernhard_III a :Man .
 
-data:Charlotte_of_Prussia a :Person,
-        :Woman ;
-    :hasFather data:Friedrich_III_of_Germany ;
-    :hasMother data:Empress_Victoria .
+data:Charlotte a :Woman ;
+    :hasFather data:Friedrich_III ;
+    :hasMother data:Victoria_Empress .
 
-data:Empress_Victoria a :Person,
-        :Woman .
+data:Friedrich_III a :Man .
 
-data:Friedrich_III_of_Germany a :Man,
-        :Person .
+data:Heinrich_XXX a :Man ;
+    :hasBirthYear 1864 ;
+    :hasDeathYear 1939 .
 
-data:Heinrich_XXX_Reuss_of_K%C3%B6stritz a :Man,
-        :Person .
+data:Victoria_Empress a :Woman .
 

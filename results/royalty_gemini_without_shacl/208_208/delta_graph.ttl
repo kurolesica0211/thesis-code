@@ -2,21 +2,58 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Alexander a :Man ;
-    :hasFather data:King_William_III ;
-    :hasMother data:Sophie_of_W%C3%BCrttemberg ;
-    :isBrotherOf data:Prince_Maurice .
+data:Christopher_of_Greece a :Man,
+        :Person .
 
-data:Prince_Maurice a :Man ;
-    :hasBirthYear 1843 ;
-    :hasDeathYear 1850 ;
-    :hasFather data:King_William_III ;
-    :hasMother data:Sophie_of_W%C3%BCrttemberg ;
-    :isBrotherOf data:Prince_William .
+data:Isabelle_dOrleans a :Person,
+        :Woman ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasDeathYear 1983 ;
+    :hasFather data:Jean_Duke_of_Guise ;
+    :hasMarriageYear 1923,
+        1934 ;
+    :hasMother data:Isabelle_of_Orleans_mother ;
+    :hasRelation data:Bruno_dHarcourt,
+        data:Pierre_Murat ;
+    :hasSister data:Francoise_of_Greece .
 
-data:Prince_William a :Man .
+data:Lucien_Murat a :Man,
+        :Person .
 
-data:King_William_III a :Man .
+data:Michel_dOrleans a :Man,
+        :Person ;
+    :hasFather data:Henri_Count_of_Paris .
 
-data:Sophie_of_W%C3%BCrttemberg a :Woman .
+data:Armande_de_Pierre_de_Bernis a :Person,
+        :Woman .
+
+data:Bruno_dHarcourt a :Man,
+        :Person ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1930 ;
+    :hasFather data:Eugene_dHarcourt ;
+    :hasMother data:Armande_de_Pierre_de_Bernis .
+
+data:Eugene_dHarcourt a :Man,
+        :Person .
+
+data:Francoise_of_Greece a :Person,
+        :Woman .
+
+data:Isabelle_of_Orleans_mother a :Person,
+        :Woman .
+
+data:Jean_Duke_of_Guise a :Man,
+        :Person ;
+    :hasBirthYear 1874 ;
+    :hasDeathYear 1940 .
+
+data:Pierre_Murat a :Man,
+        :Person ;
+    :hasBirthYear 1900 ;
+    :hasDeathYear 1948 .
+
+data:Henri_Count_of_Paris a :Man,
+        :Person .
 

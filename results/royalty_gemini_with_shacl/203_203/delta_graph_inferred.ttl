@@ -1,0 +1,208 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ari a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ari ;
+    :hasChild data:Gary_Christie_Lewis ;
+    :hasRelation data:Ari,
+        data:Birgitte_Duchess_of_Gloucester,
+        data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor,
+        data:Prince_Richard_Duke_of_Gloucester,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasSon data:Gary_Christie_Lewis ;
+    :isAncestorOf data:Gary_Christie_Lewis,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isBloodrelationOf data:Ari ;
+    :isBrotherOf data:Ari ;
+    :isFatherOf data:Gary_Christie_Lewis ;
+    :isParentOf data:Gary_Christie_Lewis ;
+    :isSiblingOf data:Ari ;
+    :isUncleOf data:Gary_Christie_Lewis .
+
+data:Birgitte_Duchess_of_Gloucester a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Davina_Windsor ;
+    :hasDaughter data:Lady_Davina_Windsor ;
+    :hasRelation data:Ari,
+        data:Birgitte_Duchess_of_Gloucester,
+        data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor,
+        data:Prince_Richard_Duke_of_Gloucester,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasSister data:Birgitte_Duchess_of_Gloucester ;
+    :isAncestorOf data:Lady_Davina_Windsor,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isAuntOf data:Lady_Davina_Windsor ;
+    :isBloodrelationOf data:Birgitte_Duchess_of_Gloucester ;
+    :isMotherOf data:Lady_Davina_Windsor ;
+    :isParentOf data:Lady_Davina_Windsor ;
+    :isSiblingOf data:Birgitte_Duchess_of_Gloucester ;
+    :isSisterOf data:Birgitte_Duchess_of_Gloucester .
+
+data:Prince_Richard_Duke_of_Gloucester a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Richard_Duke_of_Gloucester ;
+    :hasChild data:Lady_Davina_Windsor ;
+    :hasDaughter data:Lady_Davina_Windsor ;
+    :hasRelation data:Ari,
+        data:Birgitte_Duchess_of_Gloucester,
+        data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor,
+        data:Prince_Richard_Duke_of_Gloucester,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isAncestorOf data:Lady_Davina_Windsor,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isBloodrelationOf data:Prince_Richard_Duke_of_Gloucester ;
+    :isBrotherOf data:Prince_Richard_Duke_of_Gloucester ;
+    :isFatherOf data:Lady_Davina_Windsor ;
+    :isParentOf data:Lady_Davina_Windsor ;
+    :isSiblingOf data:Prince_Richard_Duke_of_Gloucester ;
+    :isUncleOf data:Lady_Davina_Windsor .
+
+data:Gary_Christie_Lewis a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Ari ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Gary_Christie_Lewis ;
+    :hasChild data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasDaughter data:Senna_Kowhai ;
+    :hasFather data:Ari ;
+    :hasParent data:Ari ;
+    :hasRelation data:Ari,
+        data:Birgitte_Duchess_of_Gloucester,
+        data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor,
+        data:Prince_Richard_Duke_of_Gloucester,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasSon data:Tane_Mahuta ;
+    :isAncestorOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isBloodrelationOf data:Gary_Christie_Lewis ;
+    :isBrotherOf data:Gary_Christie_Lewis ;
+    :isChildOf data:Ari ;
+    :isFatherOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isParentOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isSiblingOf data:Gary_Christie_Lewis ;
+    :isSonOf data:Ari ;
+    :isUncleOf data:Senna_Kowhai,
+        data:Tane_Mahuta .
+
+data:Senna_Kowhai a :Person,
+        :Woman ;
+    :hasAncestor data:Ari,
+        data:Birgitte_Duchess_of_Gloucester,
+        data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :hasBrother data:Tane_Mahuta ;
+    :hasFather data:Gary_Christie_Lewis ;
+    :hasMother data:Lady_Davina_Windsor ;
+    :hasParent data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor ;
+    :hasRelation data:Ari,
+        data:Birgitte_Duchess_of_Gloucester,
+        data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor,
+        data:Prince_Richard_Duke_of_Gloucester,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasSister data:Senna_Kowhai ;
+    :isBloodrelationOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isChildOf data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor ;
+    :isDaughterOf data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor ;
+    :isSiblingOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isSisterOf data:Senna_Kowhai,
+        data:Tane_Mahuta .
+
+data:Tane_Mahuta a :Man,
+        :Person ;
+    :hasAncestor data:Ari,
+        data:Birgitte_Duchess_of_Gloucester,
+        data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :hasBrother data:Tane_Mahuta ;
+    :hasFather data:Gary_Christie_Lewis ;
+    :hasMother data:Lady_Davina_Windsor ;
+    :hasParent data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor ;
+    :hasRelation data:Ari,
+        data:Birgitte_Duchess_of_Gloucester,
+        data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor,
+        data:Prince_Richard_Duke_of_Gloucester,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasSister data:Senna_Kowhai ;
+    :isBloodrelationOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isBrotherOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isChildOf data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor ;
+    :isSiblingOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isSonOf data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor .
+
+data:Lady_Davina_Windsor a :Ancestor,
+        :Person,
+        :Woman ;
+    :formerlyKnownAs "Lady Davina Lewis"^^xsd:string ;
+    :hasAncestor data:Birgitte_Duchess_of_Gloucester,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :hasBirthYear 1977 ;
+    :hasChild data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasDaughter data:Senna_Kowhai ;
+    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:Birgitte_Duchess_of_Gloucester ;
+    :hasParent data:Birgitte_Duchess_of_Gloucester,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :hasRelation data:Ari,
+        data:Birgitte_Duchess_of_Gloucester,
+        data:Gary_Christie_Lewis,
+        data:Lady_Davina_Windsor,
+        data:Prince_Richard_Duke_of_Gloucester,
+        data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :hasSister data:Lady_Davina_Windsor ;
+    :hasSon data:Tane_Mahuta ;
+    :isAncestorOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isAuntOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isBloodrelationOf data:Lady_Davina_Windsor ;
+    :isChildOf data:Birgitte_Duchess_of_Gloucester,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :isDaughterOf data:Birgitte_Duchess_of_Gloucester,
+        data:Prince_Richard_Duke_of_Gloucester ;
+    :isMotherOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isParentOf data:Senna_Kowhai,
+        data:Tane_Mahuta ;
+    :isSiblingOf data:Lady_Davina_Windsor ;
+    :isSisterOf data:Lady_Davina_Windsor .
+

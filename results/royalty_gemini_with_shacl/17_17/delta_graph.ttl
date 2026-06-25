@@ -2,32 +2,51 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:DavidArmstrongJones a :Ancestor,
-        :Man ;
-    :formerlyKnownAs "Viscount Linley"^^xsd:string ;
-    :hasBirthYear 1961 ;
-    :hasFather data:AntonyArmstrongJones ;
-    :hasMother data:PrincessMargaret ;
-    :hasRelation data:SerenaAlleyneStanhope ;
-    :hasSister data:LadySarahChatto ;
-    :isFatherOf data:LadyMargaritaArmstrongJones ;
-    :knownAs "David Linley"^^xsd:string .
+data:Antony_Armstrong-Jones a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:David_Albert_Charles_Armstrong-Jones .
 
-data:AntonyArmstrongJones a :Ancestor,
-        :Man ;
-    :isFatherOf data:LadyFrancesVonHofmannsthal,
-        data:PollyFry .
+data:King_George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Princess_Margaret .
 
-data:LadyFrancesVonHofmannsthal a :Woman .
+data:Lady_Frances_von_Hofmannsthal a :Person,
+        :Woman ;
+    :isSisterOf data:David_Albert_Charles_Armstrong-Jones .
 
-data:LadyMargaritaArmstrongJones a :Woman .
+data:Lady_Margarita_Armstrong-Jones a :Person,
+        :Woman ;
+    :isChildOf data:David_Albert_Charles_Armstrong-Jones,
+        data:Serena_Alleyne_Stanhope .
 
-data:LadySarahChatto a :Woman .
+data:Lady_Sarah_Chatto a :Person,
+        :Woman ;
+    :isSisterOf data:David_Albert_Charles_Armstrong-Jones .
 
-data:PollyFry a :Woman .
+data:Polly_Fry a :Person,
+        :Woman ;
+    :isSisterOf data:David_Albert_Charles_Armstrong-Jones .
 
-data:PrincessMargaret a :Ancestor,
+data:Viscount_Linley_son a :Man,
+        :Person ;
+    :isChildOf data:David_Albert_Charles_Armstrong-Jones,
+        data:Serena_Alleyne_Stanhope .
+
+data:Princess_Margaret a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:David_Albert_Charles_Armstrong-Jones .
+
+data:Serena_Alleyne_Stanhope a :Ancestor,
+        :Person,
         :Woman .
 
-data:SerenaAlleyneStanhope a :Woman .
+data:David_Albert_Charles_Armstrong-Jones a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1961 ;
+    :hasRelation data:Serena_Alleyne_Stanhope ;
+    :knownAs "David Linley"^^xsd:string .
 

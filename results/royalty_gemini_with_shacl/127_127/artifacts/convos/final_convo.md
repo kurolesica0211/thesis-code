@@ -85,46 +85,32 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Baroness Gösta von dem Bussche-Haddenhausen (German: Freiin Gösta Julie Adelheid Marion Marie von dem Bussche-Haddenhausen; 26 January 1902 – 13 June 1996) was a German noblewoman and the mother of Prince Claus of the Netherlands.
-Life in Germany
+Countess Adelaide of Lippe-Biesterfeld (22 June 1870 – 3 September 1948) was the eldest child of Ernest II, Count of Lippe-Biesterfeld and Countess Karoline von Wartensleben.
+Family and early life
 
-Gösta was born at Döbeln, Kingdom of Saxony, German Empire (now Saxony, Germany), the second child and daughter of Baron George von dem Bussche-Haddenhausen (1869–1923), and his wife, Baroness Gabriele von dem Bussche-Ippenburg (1877–1973).
-Her father belonged to the Bussche-Haddenhausen branch of the Bussche family, and her mother belonged to the Bussche-Ippenburg branch.
-Both of Gösta's parents were descended from Clamor von dem Bussche (1532–1573).
-Gösta's mother was the heir of Dötzingen Estate near Hitzacker, which her maternal grandfather had inherited from the Counts von Oeynhausen after 1918.
-Gösta's father was an officer in the Royal Saxon Army.
-Dötzingen Estate later passed on to Gösta's brother Baron Julius von dem Bussche-Haddenhausen (1906–1977).
-After Gösta's return from Africa and her husband's death in 1963, she spent the rest of her life in Dötzingen.
-Gösta died at the age of 94 in Hitzacker, Germany.
-Marriage
+Adelaide was born on 22 June 1870 to Ernest II, Count of Lippe-Biesterfeld and his wife, Countess Karoline von Wartensleben.
+After the death of Woldemar, Prince of Lippe in 1895, her parents were involved in a regency and succession dispute to the principality of Lippe.
+Consequently, two branches of the House of Lippe argued over rights to a regency.
+Prince Adolf of Schaumburg-Lippe, a brother-in-law of Wilhelm II, German Emperor was chosen, but a court-settlement allowed Ernest to become the regent of Lippe-Detmold on 17 July 1897.
+Marriage and issue
 
-Gösta married Claus Felix von Amsberg (1890–1953), son of Wilhelm von Amsberg and Elise von Vieregge, on 4 September 1924 at Hitzacker.
-Together, Gösta and Claus Felix had six daughters and one son:
+At Neudorf, Adelaide married Prince Friedrich Johann of Saxe-Meiningen, son of Georg II, Duke of Saxe-Meiningen, on 24 April 1889.
+They had six children together:
 
 
-Life in Africa
+Role in Lippe succession dispute
 
-Gösta's husband Claus Felix had returned from the Tanganyika Territory (now Tanzania), a German colony, during World War I to become the manager of Dötzingen Estate in 1917.
-Shortly after, the estate passed on to the Bussche family.
-In 1924, Gösta and Claus Felix married, and in 1926, their son Claus was born at Dötzingen.
-Claus Felix was the manager of a German-British tea and sisal plantation.
-Claus was sent back to a German boarding school in 1933, but he returned to Africa in 1936.
-In 1938, Gösta returned to Germany, and Claus was sent to a boarding school in Misdroy before being drafted by the army.
-Gösta's husband returned to Germany in 1947.
-Family relations
-
-Gösta was a second cousin of Dorothea von Salviati (wife of Wilhelm, German Crown Prince's eldest son Prince Wilhelm of Prussia), both being great-granddaughters of Heinrich von Salviati and Caroline Rahlenbeck.
-Gösta's younger and only brother Julius (1906–1977) was married to Anna-Elisabeth von Pfuel (1909–2005).
-Gösta's family's home, Dötzingen Castle in Lower Saxony, had passed to her maternal grandfather, Eberhard Friedrich Gustav von dem Bussche-Ippenburg, from the Counts von Oeynhausen.
-At a dinner party hosted by a distant cousin, the Count von Oeynhausen-Sierstorpff in Bad Driburg, on New Year's Eve 1962, Gösta's son Claus met then-Princess Beatrix of the Netherlands for the first time.
-Beatrix, like Gösta and Claus, was a cousin of the Counts von Oeynhausen: Beatrix's paternal grandmother Armgard von Cramm was a daughter of Baron Aschwin of Sierstorpff-Cramm (1846–1909) and his wife, Baroness Hedwig von Sierstorpff-Driburg (1848–1900).
-Additionally, Armgard's elder sister Baroness Hedwig von Sierstorpff-Cramm (1874–1907) was the heir to her mother's family's Driburg Estate.
+Two branches of the House of Lippe debated over rights to the principality of Lippe-Detmold.
+As Adelaide's great-grandmother was a member of the lower nobility (Modeste Christiane von Unruh) and has one quarter commoner ancestry, her family's claim to full royalty was challenged.
+This claim threatened the succession to Saxe-Meiningen, as Adelaide was married to the Duke of Saxe-Meiningen's heir apparent; were her father deemed a lesser royal status, it might be thought that her own claim was not equal enough for her husband's family.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -140,39 +126,9 @@ Additionally, Armgard's elder sister Baroness Hedwig von Sierstorpff-Cramm (1874
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -187,6 +143,23 @@ Additionally, Armgard's elder sister Baroness Hedwig von Sierstorpff-Cramm (1874
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -204,6 +177,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,29 +259,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -302,6 +282,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -314,6 +302,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -322,17 +312,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -360,6 +352,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -375,238 +451,90 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9d17b416-47b3-4e8d-8ea6-7a3a28b58f33)
- Call ID: 9d17b416-47b3-4e8d-8ea6-7a3a28b58f33
+  AssignClass (48a91a28-fa8b-42e6-a29d-3163824efe46)
+ Call ID: 48a91a28-fa8b-42e6-a29d-3163824efe46
   Args:
     type: :Woman
-    source: Gösta_von_dem_Bussche-Haddenhausen
-  AssignClass (af857fea-e74a-44c3-ad60-d2f78d3f694d)
- Call ID: af857fea-e74a-44c3-ad60-d2f78d3f694d
+    source: :Adelaide_of_Lippe-Biesterfeld
+  AssignClass (b5693ac6-d912-41f9-b51b-48218519738c)
+ Call ID: b5693ac6-d912-41f9-b51b-48218519738c
   Args:
-    type: :Person
-    source: Gösta_von_dem_Bussche-Haddenhausen
-  AddLiteral (5bd3c849-8d2f-4728-8d0c-3bac2c179b19)
- Call ID: 5bd3c849-8d2f-4728-8d0c-3bac2c179b19
+    type: :Man
+    source: :Ernest_II_of_Lippe-Biesterfeld
+  AssignClass (ff7903c1-b8a6-48d9-aa60-6a559526c9bb)
+ Call ID: ff7903c1-b8a6-48d9-aa60-6a559526c9bb
   Args:
+    type: :Woman
+    source: :Karoline_von_Wartensleben
+  AddLiteral (1210e238-cfe0-442a-885c-3bd6ade4c6d7)
+ Call ID: 1210e238-cfe0-442a-885c-3bd6ade4c6d7
+  Args:
+    literal_value: 1870
+    source: :Adelaide_of_Lippe-Biesterfeld
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1902
-    source: Gösta_von_dem_Bussche-Haddenhausen
-  AddLiteral (85e165e5-dfbd-44a2-9bc0-f3b48fb7036d)
- Call ID: 85e165e5-dfbd-44a2-9bc0-f3b48fb7036d
+  AddLiteral (59eec575-aecd-4fcb-9365-dcbf9596833c)
+ Call ID: 59eec575-aecd-4fcb-9365-dcbf9596833c
   Args:
-    source: Gösta_von_dem_Bussche-Haddenhausen
-    literal_value: 1996
-    relation: :hasDeathYear
     literal_type: xsd:integer
-  AssignClass (3dbcf7a6-d61f-4d3d-aeae-2c39219b351f)
- Call ID: 3dbcf7a6-d61f-4d3d-aeae-2c39219b351f
+    relation: :hasDeathYear
+    source: :Adelaide_of_Lippe-Biesterfeld
+    literal_value: 1948
+  AddTriple (cf85d7c4-7a29-4d44-82c7-e0a6d51cec13)
+ Call ID: cf85d7c4-7a29-4d44-82c7-e0a6d51cec13
   Args:
-    type: :Man
-    source: George_von_dem_Bussche-Haddenhausen
-  AssignClass (190af68f-2a42-4638-a9c9-63a5af8dede8)
- Call ID: 190af68f-2a42-4638-a9c9-63a5af8dede8
-  Args:
-    source: George_von_dem_Bussche-Haddenhausen
-    type: :Person
-  AssignClass (e31a1901-329b-4771-88b6-379cf0c4dc09)
- Call ID: e31a1901-329b-4771-88b6-379cf0c4dc09
-  Args:
-    type: :Woman
-    source: Gabriele_von_dem_Bussche-Ippenburg
-  AssignClass (58739627-69d7-4352-8840-7f2f27ddd0c0)
- Call ID: 58739627-69d7-4352-8840-7f2f27ddd0c0
-  Args:
-    type: :Person
-    source: Gabriele_von_dem_Bussche-Ippenburg
-  AddTriple (0fed7bce-67e8-4d4b-8e20-8247ca43268f)
- Call ID: 0fed7bce-67e8-4d4b-8e20-8247ca43268f
-  Args:
-    source: Gösta_von_dem_Bussche-Haddenhausen
-    target: George_von_dem_Bussche-Haddenhausen
+    source: :Adelaide_of_Lippe-Biesterfeld
+    target: :Ernest_II_of_Lippe-Biesterfeld
     relation: :hasFather
-  AddTriple (6ea975ab-95cc-4ed5-b4d8-71a08a4e7d18)
- Call ID: 6ea975ab-95cc-4ed5-b4d8-71a08a4e7d18
+  AddTriple (21f55ef0-6ec8-4680-9319-9db525a59738)
+ Call ID: 21f55ef0-6ec8-4680-9319-9db525a59738
   Args:
-    source: Gösta_von_dem_Bussche-Haddenhausen
-    target: Gabriele_von_dem_Bussche-Ippenburg
+    source: :Adelaide_of_Lippe-Biesterfeld
+    target: :Karoline_von_Wartensleben
     relation: :hasMother
-  AssignClass (193c9084-8acc-4d37-8053-2bd2c1dbb092)
- Call ID: 193c9084-8acc-4d37-8053-2bd2c1dbb092
+  AssignClass (25d9c3a8-6acd-4b1b-9e71-ad6f9686391c)
+ Call ID: 25d9c3a8-6acd-4b1b-9e71-ad6f9686391c
   Args:
-    source: Claus_Felix_von_Amsberg
     type: :Man
-  AssignClass (8d1990c2-2235-4d6c-8232-0836a245ad69)
- Call ID: 8d1990c2-2235-4d6c-8232-0836a245ad69
+    source: :Friedrich_Johann_of_Saxe-Meiningen
+  AddTriple (b9ee43b6-eabf-441a-8780-5a103195d397)
+ Call ID: b9ee43b6-eabf-441a-8780-5a103195d397
   Args:
-    source: Claus_Felix_von_Amsberg
-    type: :Person
-  AddLiteral (f8222283-5052-4921-a5aa-8917f74729e7)
- Call ID: f8222283-5052-4921-a5aa-8917f74729e7
+    relation: :hasRelation
+    source: :Adelaide_of_Lippe-Biesterfeld
+    target: :Friedrich_Johann_of_Saxe-Meiningen
+  AddLiteral (63f0a1a6-dfaf-4410-9c57-0f4ec36de9fe)
+ Call ID: 63f0a1a6-dfaf-4410-9c57-0f4ec36de9fe
   Args:
     literal_type: xsd:integer
     relation: :hasMarriageYear
-    literal_value: 1924
-    source: Gösta_von_dem_Bussche-Haddenhausen
-  AddTriple (59a0a607-218a-4264-8086-1eb24ce744aa)
- Call ID: 59a0a607-218a-4264-8086-1eb24ce744aa
-  Args:
-    source: Gösta_von_dem_Bussche-Haddenhausen
-    target: Claus_Felix_von_Amsberg
-    relation: :hasRelation
-  AssignClass (5f0a913b-eabe-44e4-855f-598d29296f7b)
- Call ID: 5f0a913b-eabe-44e4-855f-598d29296f7b
+    literal_value: 1889
+    source: :Adelaide_of_Lippe-Biesterfeld
+  AssignClass (93add5c5-3ee3-49c5-8012-53bf7237e317)
+ Call ID: 93add5c5-3ee3-49c5-8012-53bf7237e317
   Args:
     type: :Man
-    source: Claus_von_Amsberg
-  AssignClass (77599753-3764-4832-83bf-8d164aed7c8a)
- Call ID: 77599753-3764-4832-83bf-8d164aed7c8a
+    source: :Georg_II_of_Saxe-Meiningen
+  AddTriple (84dc9e18-9419-4d00-99b5-bb1392f3be6f)
+ Call ID: 84dc9e18-9419-4d00-99b5-bb1392f3be6f
   Args:
-    source: Claus_von_Amsberg
-    type: :Person
-  AddTriple (77f111b4-f499-4dd3-aa64-ab9c30dfaaa7)
- Call ID: 77f111b4-f499-4dd3-aa64-ab9c30dfaaa7
-  Args:
-    source: Claus_von_Amsberg
-    target: Claus_Felix_von_Amsberg
     relation: :hasFather
-  AddTriple (7ceaa54a-b67b-4177-8b0a-25cb46154d23)
- Call ID: 7ceaa54a-b67b-4177-8b0a-25cb46154d23
-  Args:
-    relation: :hasMother
-    target: Gösta_von_dem_Bussche-Haddenhausen
-    source: Claus_von_Amsberg
-  AssignClass (999ed13e-acec-4aa0-b9af-cdd97eaa8129)
- Call ID: 999ed13e-acec-4aa0-b9af-cdd97eaa8129
-  Args:
-    type: :Man
-    source: Julius_von_dem_Bussche-Haddenhausen
-  AssignClass (950bfa4b-2344-46cf-b438-ea3ade5638cd)
- Call ID: 950bfa4b-2344-46cf-b438-ea3ade5638cd
-  Args:
-    type: :Person
-    source: Julius_von_dem_Bussche-Haddenhausen
-  AddTriple (df395718-5b4e-4af0-a156-5700959e0fd5)
- Call ID: df395718-5b4e-4af0-a156-5700959e0fd5
-  Args:
-    source: Gösta_von_dem_Bussche-Haddenhausen
-    target: Julius_von_dem_Bussche-Haddenhausen
-    relation: :hasBrother
-  AssignClass (43747037-a385-46c8-ba93-ba5bd01ac2ab)
- Call ID: 43747037-a385-46c8-ba93-ba5bd01ac2ab
-  Args:
-    type: :Man
-    source: Wilhelm_von_Amsberg
-  AssignClass (fea222c9-4814-49d6-a47a-be45c769e276)
- Call ID: fea222c9-4814-49d6-a47a-be45c769e276
-  Args:
-    source: Wilhelm_von_Amsberg
-    type: :Person
-  AssignClass (3bc379f4-51c6-4fae-8de0-b6447e6b7be1)
- Call ID: 3bc379f4-51c6-4fae-8de0-b6447e6b7be1
+    target: :Georg_II_of_Saxe-Meiningen
+    source: :Friedrich_Johann_of_Saxe-Meiningen
+  AssignClass (81f7b4be-0b0c-4ce4-8480-423eee030288)
+ Call ID: 81f7b4be-0b0c-4ce4-8480-423eee030288
   Args:
     type: :Woman
-    source: Elise_von_Vieregge
-  AssignClass (082348f4-e9e1-4e97-9c6d-d77e23b62856)
- Call ID: 082348f4-e9e1-4e97-9c6d-d77e23b62856
+    source: :Modeste_Christiane_von_Unruh
+  AddTriple (8989c9f7-50cb-4995-b4b0-8236927ef8d6)
+ Call ID: 8989c9f7-50cb-4995-b4b0-8236927ef8d6
   Args:
-    type: :Person
-    source: Elise_von_Vieregge
-  AddTriple (b34a9ae9-ec1b-4be2-a3c0-e4c48ec620b8)
- Call ID: b34a9ae9-ec1b-4be2-a3c0-e4c48ec620b8
-  Args:
-    source: Claus_Felix_von_Amsberg
-    target: Wilhelm_von_Amsberg
-    relation: :hasFather
-  AddTriple (f289f3c1-0816-4818-8dad-63030ec36a32)
- Call ID: f289f3c1-0816-4818-8dad-63030ec36a32
-  Args:
-    source: Claus_Felix_von_Amsberg
-    target: Elise_von_Vieregge
+    source: :Adelaide_of_Lippe-Biesterfeld
+    target: :Modeste_Christiane_von_Unruh
     relation: :hasMother
-  AssignClass (daeec237-d0fb-46a2-8744-c5cb498a5db1)
- Call ID: daeec237-d0fb-46a2-8744-c5cb498a5db1
+  Finish (898d0668-2d3e-4082-8e76-3bbdd0c85c7d)
+ Call ID: 898d0668-2d3e-4082-8e76-3bbdd0c85c7d
   Args:
-    source: Anna-Elisabeth_von_Pfuel
-    type: :Woman
-  AssignClass (ca7267a2-428c-4cda-84bf-26d475eae7b9)
- Call ID: ca7267a2-428c-4cda-84bf-26d475eae7b9
-  Args:
-    type: :Person
-    source: Anna-Elisabeth_von_Pfuel
-  AddTriple (68515831-c3a2-4bac-a233-e15fcedb10b6)
- Call ID: 68515831-c3a2-4bac-a233-e15fcedb10b6
-  Args:
-    target: Anna-Elisabeth_von_Pfuel
-    relation: :hasRelation
-    source: Julius_von_dem_Bussche-Haddenhausen
-  Finish (bc2e3ec1-0f5f-4049-8f6e-169267dc0a7e)
- Call ID: bc2e3ec1-0f5f-4049-8f6e-169267dc0a7e
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -667,44 +595,25 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Claus_von_Amsberg a :Man,
-          :Person ;
-      :hasFather data:Claus_Felix_von_Amsberg ;
-      :hasMother data:G%C3%B6sta_von_dem_Bussche-Haddenhausen .
+  data:Adelaide_of_Lippe-Biesterfeld a :Woman ;
+      :hasBirthYear 1870 ;
+      :hasDeathYear 1948 ;
+      :hasFather data:Ernest_II_of_Lippe-Biesterfeld ;
+      :hasMarriageYear 1889 ;
+      :hasMother data:Karoline_von_Wartensleben,
+          data:Modeste_Christiane_von_Unruh ;
+      :hasRelation data:Friedrich_Johann_of_Saxe-Meiningen .
 
-  data:Anna-Elisabeth_von_Pfuel a :Person,
-          :Woman .
+  data:Ernest_II_of_Lippe-Biesterfeld a :Man .
 
-  data:Elise_von_Vieregge a :Person,
-          :Woman .
+  data:Friedrich_Johann_of_Saxe-Meiningen a :Man ;
+      :hasFather data:Georg_II_of_Saxe-Meiningen .
 
-  data:G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Person,
-          :Woman ;
-      :hasBirthYear 1902 ;
-      :hasBrother data:Julius_von_dem_Bussche-Haddenhausen ;
-      :hasDeathYear 1996 ;
-      :hasFather data:George_von_dem_Bussche-Haddenhausen ;
-      :hasMarriageYear 1924 ;
-      :hasMother data:Gabriele_von_dem_Bussche-Ippenburg ;
-      :hasRelation data:Claus_Felix_von_Amsberg .
+  data:Georg_II_of_Saxe-Meiningen a :Man .
 
-  data:Gabriele_von_dem_Bussche-Ippenburg a :Person,
-          :Woman .
+  data:Karoline_von_Wartensleben a :Woman .
 
-  data:George_von_dem_Bussche-Haddenhausen a :Man,
-          :Person .
-
-  data:Julius_von_dem_Bussche-Haddenhausen a :Man,
-          :Person ;
-      :hasRelation data:Anna-Elisabeth_von_Pfuel .
-
-  data:Wilhelm_von_Amsberg a :Man,
-          :Person .
-
-  data:Claus_Felix_von_Amsberg a :Man,
-          :Person ;
-      :hasFather data:Wilhelm_von_Amsberg ;
-      :hasMother data:Elise_von_Vieregge .
+  data:Modeste_Christiane_von_Unruh a :Woman .
 
 
 
@@ -716,158 +625,134 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (7523069b-abd6-4110-b087-fdcb1ca23c74)
- Call ID: 7523069b-abd6-4110-b087-fdcb1ca23c74
+  ValidateShacl (3dc8a357-8a1d-405a-bd10-3c0b90d208a5)
+ Call ID: 3dc8a357-8a1d-405a-bd10-3c0b90d208a5
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:15
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Wilhelm_von_Amsberg for the property hasFather on node Claus_Felix_von_Amsberg is missing the required :Ancestor class.
+      The node Georg_II_of_Saxe-Meiningen lacks the required class :Ancestor, which is mandatory for being a father.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_von_Amsberg', class=':Ancestor')
+      AssignClass(Georg_II_of_Saxe-Meiningen, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Claus_Felix_von_Amsberg for the property hasFather on node Claus_von_Amsberg is missing the required :Ancestor class.
+      The node Ernest_II_of_Lippe-Biesterfeld lacks the required class :Ancestor, which is mandatory for being a father.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claus_Felix_von_Amsberg', class=':Ancestor')
+      AssignClass(Ernest_II_of_Lippe-Biesterfeld, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Elise_von_Vieregge for the property hasMother on node Claus_Felix_von_Amsberg is missing the required :Ancestor class.
+      The node Georg_II_of_Saxe-Meiningen lacks the required class :Ancestor, which is mandatory for being a father.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Elise_von_Vieregge', class=':Ancestor')
+      AssignClass(Georg_II_of_Saxe-Meiningen, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value G%C3%B6sta_von_dem_Bussche-Haddenhausen for the property hasMother on node Claus_von_Amsberg is missing the required :Ancestor class.
+      The node Modeste_Christiane_von_Unruh lacks the required class :Ancestor, which is mandatory for being a mother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='G%C3%B6sta_von_dem_Bussche-Haddenhausen', class=':Ancestor')
+      AssignClass(Modeste_Christiane_von_Unruh, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Wilhelm_von_Amsberg for the property hasFather on node Claus_Felix_von_Amsberg is missing the required :Ancestor class.
+      The node Karoline_von_Wartensleben lacks the required class :Ancestor, which is mandatory for being a mother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_von_Amsberg', class=':Ancestor')
+      AssignClass(Karoline_von_Wartensleben, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: More than 1 values on data:Adelaide_of_Lippe-Biesterfeld->:hasMother
     LLM-provided explanation of the violation:
-      The value Claus_Felix_von_Amsberg for the property hasFather on node Claus_von_Amsberg is missing the required :Ancestor class.
+      Adelaide_of_Lippe-Biesterfeld has more than one mother defined, violating the functional property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claus_Felix_von_Amsberg', class=':Ancestor')
+      RemoveTriple(Adelaide_of_Lippe-Biesterfeld, :hasMother, Karoline_von_Wartensleben)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value George_von_dem_Bussche-Haddenhausen for the property hasFather on node G%C3%B6sta_von_dem_Bussche-Haddenhausen is missing the required :Ancestor class.
+      The node Ernest_II_of_Lippe-Biesterfeld lacks the required class :Ancestor, which is mandatory for being a father.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_von_dem_Bussche-Haddenhausen', class=':Ancestor')
+      AssignClass(Ernest_II_of_Lippe-Biesterfeld, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Elise_von_Vieregge for the property hasMother on node Claus_Felix_von_Amsberg is missing the required :Ancestor class.
+      The node Georg_II_of_Saxe-Meiningen lacks the required class :Ancestor, which is mandatory for being a father.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Elise_von_Vieregge', class=':Ancestor')
+      AssignClass(Georg_II_of_Saxe-Meiningen, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value G%C3%B6sta_von_dem_Bussche-Haddenhausen for the property hasMother on node Claus_von_Amsberg is missing the required :Ancestor class.
+      The node Modeste_Christiane_von_Unruh lacks the required class :Ancestor, which is mandatory for being a mother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='G%C3%B6sta_von_dem_Bussche-Haddenhausen', class=':Ancestor')
+      AssignClass(Modeste_Christiane_von_Unruh, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Gabriele_von_dem_Bussche-Ippenburg for the property hasMother on node G%C3%B6sta_von_dem_Bussche-Haddenhausen is missing the required :Ancestor class.
+      The node Karoline_von_Wartensleben lacks the required class :Ancestor, which is mandatory for being a mother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Gabriele_von_dem_Bussche-Ippenburg', class=':Ancestor')
+      AssignClass(Karoline_von_Wartensleben, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: More than 1 values on data:Adelaide_of_Lippe-Biesterfeld->:hasMother
     LLM-provided explanation of the violation:
-      The value Wilhelm_von_Amsberg for the property hasFather on node Claus_Felix_von_Amsberg is missing the required :Ancestor class.
+      Adelaide_of_Lippe-Biesterfeld has more than one mother defined, violating the functional property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_von_Amsberg', class=':Ancestor')
+      RemoveTriple(Adelaide_of_Lippe-Biesterfeld, :hasMother, Karoline_von_Wartensleben)
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Claus_Felix_von_Amsberg for the property hasFather on node Claus_von_Amsberg is missing the required :Ancestor class.
+      The node Ernest_II_of_Lippe-Biesterfeld lacks the required class :Ancestor, which is mandatory for being a father.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claus_Felix_von_Amsberg', class=':Ancestor')
+      AssignClass(Ernest_II_of_Lippe-Biesterfeld, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value George_von_dem_Bussche-Haddenhausen for the property hasFather on node G%C3%B6sta_von_dem_Bussche-Haddenhausen is missing the required :Ancestor class.
+      The node Modeste_Christiane_von_Unruh lacks the required class :Ancestor, which is mandatory for being a mother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_von_dem_Bussche-Haddenhausen', class=':Ancestor')
+      AssignClass(Modeste_Christiane_von_Unruh, :Ancestor)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Elise_von_Vieregge for the property hasMother on node Claus_Felix_von_Amsberg is missing the required :Ancestor class.
+      The node Karoline_von_Wartensleben lacks the required class :Ancestor, which is mandatory for being a mother.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Elise_von_Vieregge', class=':Ancestor')
+      AssignClass(Karoline_von_Wartensleben, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: More than 1 values on data:Adelaide_of_Lippe-Biesterfeld->:hasMother
     LLM-provided explanation of the violation:
-      The value G%C3%B6sta_von_dem_Bussche-Haddenhausen for the property hasMother on node Claus_von_Amsberg is missing the required :Ancestor class.
+      Adelaide_of_Lippe-Biesterfeld has more than one mother defined, violating the functional property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='G%C3%B6sta_von_dem_Bussche-Haddenhausen', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Gabriele_von_dem_Bussche-Ippenburg for the property hasMother on node G%C3%B6sta_von_dem_Bussche-Haddenhausen is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Gabriele_von_dem_Bussche-Ippenburg', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value George_von_dem_Bussche-Haddenhausen for the property hasFather on node G%C3%B6sta_von_dem_Bussche-Haddenhausen is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_von_dem_Bussche-Haddenhausen', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Gabriele_von_dem_Bussche-Ippenburg for the property hasMother on node G%C3%B6sta_von_dem_Bussche-Haddenhausen is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Gabriele_von_dem_Bussche-Ippenburg', class=':Ancestor')
+      RemoveTriple(Adelaide_of_Lippe-Biesterfeld, :hasMother, Karoline_von_Wartensleben)
 
 
 
@@ -876,44 +761,30 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (8c0b7702-44cf-49fe-b30a-bbbf5880c950)
- Call ID: 8c0b7702-44cf-49fe-b30a-bbbf5880c950
+  AssignClass (d692a6c0-6a7c-40b0-9250-ecdeb434bbe7)
+ Call ID: d692a6c0-6a7c-40b0-9250-ecdeb434bbe7
   Args:
-    source: Wilhelm_von_Amsberg
+    source: :Ernest_II_of_Lippe-Biesterfeld
     type: :Ancestor
-  AssignClass (a7e420e3-7703-46ec-8417-d7c9067167a0)
- Call ID: a7e420e3-7703-46ec-8417-d7c9067167a0
-  Args:
-    type: :Ancestor
-    source: Claus_Felix_von_Amsberg
-  AssignClass (5393cb46-0437-4f43-9e72-1eb77559afa9)
- Call ID: 5393cb46-0437-4f43-9e72-1eb77559afa9
-  Args:
-    source: Elise_von_Vieregge
-    type: :Ancestor
-  AssignClass (c1bb8e14-f7b1-4fb3-bf6a-bea7d4ca143c)
- Call ID: c1bb8e14-f7b1-4fb3-bf6a-bea7d4ca143c
+  AssignClass (2dc09812-fc24-4846-a86b-939573447253)
+ Call ID: 2dc09812-fc24-4846-a86b-939573447253
   Args:
     type: :Ancestor
-    source: Gösta_von_dem_Bussche-Haddenhausen
-  AssignClass (697d10a5-3e91-44c3-8fdf-2eba93f7a990)
- Call ID: 697d10a5-3e91-44c3-8fdf-2eba93f7a990
+    source: :Georg_II_of_Saxe-Meiningen
+  AssignClass (be518838-5705-4f1a-ac2f-de10eba4fe1e)
+ Call ID: be518838-5705-4f1a-ac2f-de10eba4fe1e
   Args:
-    source: George_von_dem_Bussche-Haddenhausen
+    source: :Karoline_von_Wartensleben
     type: :Ancestor
-  AssignClass (56dcf2f2-728a-4df5-b944-a51112b916dd)
- Call ID: 56dcf2f2-728a-4df5-b944-a51112b916dd
+  RemoveTriple (f5ef04e1-94c0-4e3b-aef9-c29471c284ae)
+ Call ID: f5ef04e1-94c0-4e3b-aef9-c29471c284ae
   Args:
-    source: Gabriele_von_dem_Bussche-Ippenburg
-    type: :Ancestor
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Adelaide_of_Lippe-Biesterfeld
+    relation: :hasMother
+    target: :Modeste_Christiane_von_Unruh
+  Finish (b1980234-d765-400c-9bf8-f1733176d939)
+ Call ID: b1980234-d765-400c-9bf8-f1733176d939
+  Args:
 
 ================================= Tool Message =================================
 
@@ -934,59 +805,40 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Claus_von_Amsberg a :Man,
-          :Person ;
-      :hasFather data:Claus_Felix_von_Amsberg ;
-      :hasMother data:G%C3%B6sta_von_dem_Bussche-Haddenhausen .
+  data:Adelaide_of_Lippe-Biesterfeld a :Woman ;
+      :hasBirthYear 1870 ;
+      :hasDeathYear 1948 ;
+      :hasFather data:Ernest_II_of_Lippe-Biesterfeld ;
+      :hasMarriageYear 1889 ;
+      :hasMother data:Karoline_von_Wartensleben ;
+      :hasRelation data:Friedrich_Johann_of_Saxe-Meiningen .
 
-  data:Anna-Elisabeth_von_Pfuel a :Person,
+  data:Modeste_Christiane_von_Unruh a :Woman .
+
+  data:Ernest_II_of_Lippe-Biesterfeld a :Ancestor,
+          :Man .
+
+  data:Friedrich_Johann_of_Saxe-Meiningen a :Man ;
+      :hasFather data:Georg_II_of_Saxe-Meiningen .
+
+  data:Georg_II_of_Saxe-Meiningen a :Ancestor,
+          :Man .
+
+  data:Karoline_von_Wartensleben a :Ancestor,
           :Woman .
 
-  data:Elise_von_Vieregge a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1902 ;
-      :hasBrother data:Julius_von_dem_Bussche-Haddenhausen ;
-      :hasDeathYear 1996 ;
-      :hasFather data:George_von_dem_Bussche-Haddenhausen ;
-      :hasMarriageYear 1924 ;
-      :hasMother data:Gabriele_von_dem_Bussche-Ippenburg ;
-      :hasRelation data:Claus_Felix_von_Amsberg .
-
-  data:Gabriele_von_dem_Bussche-Ippenburg a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:George_von_dem_Bussche-Haddenhausen a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Julius_von_dem_Bussche-Haddenhausen a :Man,
-          :Person ;
-      :hasRelation data:Anna-Elisabeth_von_Pfuel .
-
-  data:Wilhelm_von_Amsberg a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Claus_Felix_von_Amsberg a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Wilhelm_von_Amsberg ;
-      :hasMother data:Elise_von_Vieregge .
 
 
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (f373f50e-30fb-409a-8f45-fe4e2b02ed8c)
- Call ID: f373f50e-30fb-409a-8f45-fe4e2b02ed8c
+  ValidateShacl (f9bdb4c2-d65e-462c-9cae-ef05a8e964b8)
+ Call ID: f9bdb4c2-d65e-462c-9cae-ef05a8e964b8
   Args:
 
 ================================= Tool Message =================================
@@ -997,6 +849,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (0265f67c-8841-4ac6-ab19-1bc548291e07)
- Call ID: 0265f67c-8841-4ac6-ab19-1bc548291e07
+  Finish (4eb356d6-5848-48a5-adc6-070a42ae102c)
+ Call ID: 4eb356d6-5848-48a5-adc6-070a42ae102c
   Args:

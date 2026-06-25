@@ -93,6 +93,8 @@ From 1 January 2023, Felix is known as "His Excellency Count Felix of Monpezat".
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -108,39 +110,9 @@ From 1 January 2023, Felix is known as "His Excellency Count Felix of Monpezat".
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -155,6 +127,23 @@ From 1 January 2023, Felix is known as "His Excellency Count Felix of Monpezat".
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -172,6 +161,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -239,29 +243,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -270,6 +266,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -282,6 +286,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -290,17 +296,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -328,6 +336,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -343,126 +435,119 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f637083e-3b7b-469f-ba28-ee3dbb1c58c5)
- Call ID: f637083e-3b7b-469f-ba28-ee3dbb1c58c5
+  AssignClass (4eb0818c-e247-4bb9-916b-70dabe32a705)
+ Call ID: 4eb0818c-e247-4bb9-916b-70dabe32a705
+  Args:
+    source: :Queen_Margrethe_II
+    type: :Woman
+  AssignClass (5669b360-6bec-42fc-a86b-ce2413157ae8)
+ Call ID: 5669b360-6bec-42fc-a86b-ce2413157ae8
   Args:
     type: :Person
-    source: Count_Felix_of_Monpezat
-  AssignClass (d857df3c-e8b0-4c76-b325-73a9be70cfcd)
- Call ID: d857df3c-e8b0-4c76-b325-73a9be70cfcd
+    source: :Queen_Margrethe_II
+  AssignClass (1e74fced-7d43-4b8a-a26e-886e1910e5ab)
+ Call ID: 1e74fced-7d43-4b8a-a26e-886e1910e5ab
   Args:
     type: :Man
-    source: Count_Felix_of_Monpezat
-  AddLiteral (fb3257a7-64b2-4306-bd69-98c8b3185600)
- Call ID: fb3257a7-64b2-4306-bd69-98c8b3185600
+    source: :Prince_Henrik
+  AssignClass (542681e7-ea48-46f1-8066-33858564ffc1)
+ Call ID: 542681e7-ea48-46f1-8066-33858564ffc1
   Args:
-    literal_value: Male
-    source: Count_Felix_of_Monpezat
-    literal_type: xsd:string
-    relation: :hasSex
-  AddLiteral (58b46156-50ff-4329-9831-00fc1561505c)
- Call ID: 58b46156-50ff-4329-9831-00fc1561505c
+    source: :Prince_Henrik
+    type: :Person
+  AssignClass (cb9bf3c8-ecd5-43f7-a979-42df9a1cc792)
+ Call ID: cb9bf3c8-ecd5-43f7-a979-42df9a1cc792
   Args:
-    literal_type: xsd:integer
-    source: Count_Felix_of_Monpezat
-    relation: :hasBirthYear
+    source: :King_Frederik_X
+    type: :Man
+  AssignClass (4347fff2-2d28-4631-ab81-3b29a9febf10)
+ Call ID: 4347fff2-2d28-4631-ab81-3b29a9febf10
+  Args:
+    type: :Person
+    source: :King_Frederik_X
+  AssignClass (9530cd92-14bd-42e6-9672-026fb1fd51a9)
+ Call ID: 9530cd92-14bd-42e6-9672-026fb1fd51a9
+  Args:
+    source: :Count_Felix_of_Monpezat
+    type: :Man
+  AssignClass (baf2b5db-d620-4e96-9f43-ab9606d78b6c)
+ Call ID: baf2b5db-d620-4e96-9f43-ab9606d78b6c
+  Args:
+    type: :Person
+    source: :Count_Felix_of_Monpezat
+  AssignClass (71b69623-e418-4c99-8b84-814842c058a6)
+ Call ID: 71b69623-e418-4c99-8b84-814842c058a6
+  Args:
+    type: :Man
+    source: :Prince_Nikolai
+  AssignClass (f3e6fdda-2e76-489e-a5a7-efa702adcf4f)
+ Call ID: f3e6fdda-2e76-489e-a5a7-efa702adcf4f
+  Args:
+    source: :Prince_Nikolai
+    type: :Person
+  AssignClass (2dfab4d1-5046-40ac-bb95-f75cbfade77a)
+ Call ID: 2dfab4d1-5046-40ac-bb95-f75cbfade77a
+  Args:
+    type: :Man
+    source: :Prince_Joachim
+  AssignClass (f030d8df-4dfe-493b-96d4-7b340eac589e)
+ Call ID: f030d8df-4dfe-493b-96d4-7b340eac589e
+  Args:
+    type: :Person
+    source: :Prince_Joachim
+  AssignClass (939b044a-dacb-4d2f-8652-b818041107ba)
+ Call ID: 939b044a-dacb-4d2f-8652-b818041107ba
+  Args:
+    source: :Countess_Alexandra
+    type: :Woman
+  AssignClass (6aae4ec4-6129-4434-980a-b9f167611609)
+ Call ID: 6aae4ec4-6129-4434-980a-b9f167611609
+  Args:
+    source: :Countess_Alexandra
+    type: :Person
+  AddLiteral (e722f9a9-7f92-4898-832b-3525e8a6f98a)
+ Call ID: e722f9a9-7f92-4898-832b-3525e8a6f98a
+  Args:
     literal_value: 2002
-  AssignClass (d1535512-cbd5-4842-961a-cd72fddcb41e)
- Call ID: d1535512-cbd5-4842-961a-cd72fddcb41e
+    source: :Count_Felix_of_Monpezat
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddTriple (079e7d67-abf7-4eec-a485-87ea4113f378)
+ Call ID: 079e7d67-abf7-4eec-a485-87ea4113f378
   Args:
-    type: :Person
-    source: Queen_Margrethe_II
-  AssignClass (81f91094-0c39-482d-b469-59cbeb440bcf)
- Call ID: 81f91094-0c39-482d-b469-59cbeb440bcf
+    source: :Count_Felix_of_Monpezat
+    relation: :hasMother
+    target: :Countess_Alexandra
+  AddTriple (1d33cbc0-470f-405b-b631-6a64af276c60)
+ Call ID: 1d33cbc0-470f-405b-b631-6a64af276c60
   Args:
-    type: :Woman
-    source: Queen_Margrethe_II
-  AssignClass (a646a1b2-3462-4be0-8d7f-f544e3d8a55d)
- Call ID: a646a1b2-3462-4be0-8d7f-f544e3d8a55d
+    relation: :hasFather
+    source: :Count_Felix_of_Monpezat
+    target: :Prince_Joachim
+  AddTriple (f5904ed9-c2f2-4c92-9aea-1cdbd3e055d6)
+ Call ID: f5904ed9-c2f2-4c92-9aea-1cdbd3e055d6
   Args:
-    type: :Person
-    source: Prince_Henrik
-  AssignClass (f4be3aec-65d7-4b67-8614-20e392a3fd4e)
- Call ID: f4be3aec-65d7-4b67-8614-20e392a3fd4e
+    source: :Prince_Nikolai
+    relation: :isBrotherOf
+    target: :Count_Felix_of_Monpezat
+  AddTriple (2c36e00c-d53c-4d0c-bf54-5ebb13a94f87)
+ Call ID: 2c36e00c-d53c-4d0c-bf54-5ebb13a94f87
   Args:
-    type: :Man
-    source: Prince_Henrik
-  AssignClass (92c81994-b549-490d-9d66-b2dc40b26fb1)
- Call ID: 92c81994-b549-490d-9d66-b2dc40b26fb1
+    relation: :isChildOf
+    source: :Count_Felix_of_Monpezat
+    target: :Queen_Margrethe_II
+  AddTriple (4519bdb9-3d00-4660-bf58-07df3c527c94)
+ Call ID: 4519bdb9-3d00-4660-bf58-07df3c527c94
   Args:
-    type: :Person
-    source: King_Frederik_X
-  AssignClass (cf5cdda7-3515-4f8d-8d71-fa13bcdc7f08)
- Call ID: cf5cdda7-3515-4f8d-8d71-fa13bcdc7f08
+    source: :Count_Felix_of_Monpezat
+    relation: :isChildOf
+    target: :Prince_Henrik
+  AddTriple (9c926eb4-769e-4735-85fa-9cc4cf043c39)
+ Call ID: 9c926eb4-769e-4735-85fa-9cc4cf043c39
   Args:
-    type: :Man
-    source: King_Frederik_X
-  AddTriple (19e86411-5fa0-41fe-b745-66e2fa5657e3)
- Call ID: 19e86411-5fa0-41fe-b745-66e2fa5657e3
-  Args:
-    target: Count_Felix_of_Monpezat
-    source: Queen_Margrethe_II
-    relation: :isAncestorOf
-  AddTriple (e992f2e7-3e41-48b3-81d2-0a0e67498210)
- Call ID: e992f2e7-3e41-48b3-81d2-0a0e67498210
-  Args:
-    target: Count_Felix_of_Monpezat
-    relation: :isAncestorOf
-    source: Prince_Henrik
-  AssignClass (0ec9d1a3-4136-4d9c-9bce-bbbcea9f40df)
- Call ID: 0ec9d1a3-4136-4d9c-9bce-bbbcea9f40df
-  Args:
-    type: :Person
-    source: Prince_Joachim
-  AssignClass (e8eb651b-6a1a-4747-93eb-c951dd2fe39e)
- Call ID: e8eb651b-6a1a-4747-93eb-c951dd2fe39e
-  Args:
-    type: :Man
-    source: Prince_Joachim
-  AssignClass (4c4b84a1-6c39-4364-b6b9-0d6ff8d4ba0a)
- Call ID: 4c4b84a1-6c39-4364-b6b9-0d6ff8d4ba0a
-  Args:
-    type: :Person
-    source: Countess_Alexandra
-  AssignClass (11031b68-513a-4977-8cc7-2a0f93edb800)
- Call ID: 11031b68-513a-4977-8cc7-2a0f93edb800
-  Args:
-    type: :Woman
-    source: Countess_Alexandra
-  AddTriple (8ab90a41-cd02-414b-9af7-c243069850ea)
- Call ID: 8ab90a41-cd02-414b-9af7-c243069850ea
-  Args:
-    relation: :isFatherOf
-    source: Prince_Joachim
-    target: Count_Felix_of_Monpezat
-  AddTriple (48202793-f4f8-430e-9dcf-03dd57e5633e)
- Call ID: 48202793-f4f8-430e-9dcf-03dd57e5633e
-  Args:
-    target: Count_Felix_of_Monpezat
-    relation: :isMotherOf
-    source: Countess_Alexandra
-  AssignClass (14fa927f-fb52-4fa4-83ea-10ac3081ebe7)
- Call ID: 14fa927f-fb52-4fa4-83ea-10ac3081ebe7
-  Args:
-    type: :Person
-    source: Prince_Nikolai
-  AssignClass (56f5930e-88a5-49cf-8cba-495faeb3eb5b)
- Call ID: 56f5930e-88a5-49cf-8cba-495faeb3eb5b
-  Args:
-    type: :Man
-    source: Prince_Nikolai
-  AddTriple (d6374684-7ae1-49a9-89b9-441f81de74d4)
- Call ID: d6374684-7ae1-49a9-89b9-441f81de74d4
-  Args:
-    source: Count_Felix_of_Monpezat
-    relation: :hasBrother
-    target: Prince_Nikolai
-  AddTriple (67c58286-25c6-4e5d-b204-381815a50d2a)
- Call ID: 67c58286-25c6-4e5d-b204-381815a50d2a
-  Args:
-    source: Prince_Nikolai
-    relation: :hasBrother
-    target: Count_Felix_of_Monpezat
-  Finish (3c76fd74-58c8-49c4-8e62-30314c46f3b2)
- Call ID: 3c76fd74-58c8-49c4-8e62-30314c46f3b2
+    target: :Prince_Joachim
+    source: :King_Frederik_X
+    relation: :isSiblingOf
+  Finish (153c6ca7-2c0f-4d1b-be0c-68c3bd4f87bc)
+ Call ID: 153c6ca7-2c0f-4d1b-be0c-68c3bd4f87bc
   Args:

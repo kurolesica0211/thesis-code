@@ -2,86 +2,77 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Irina_Aleksandrovna_Ovtchinnikova a :Person,
+data:Felicity_Wade a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Heather_Tonkin .
+
+data:Isla_Elizabeth a :Person,
+        :Woman ;
+    :hasFather data:Peter_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:Savannah_Anne_Kathleen a :Person,
+        :Woman ;
+    :hasFather data:Peter_Phillips ;
+    :hasMother data:Autumn_Kelly .
+
+data:Stephanie_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Sandy_Pflueger .
+
+data:Harriet_Sperling a :Person,
+        :Woman ;
+    :hasFather data:Rupert_Sanders .
+
+data:Heather_Tonkin a :Person,
         :Woman .
 
-data:Jehan_de_Monl%C3%A9on a :Man,
+data:King_Charles_III a :Man,
         :Person .
 
-data:King_Constantine_I a :Man,
+data:Lindsay_Wallace a :Person,
+        :Woman .
+
+data:Prince_Philip a :Man,
         :Person .
 
-data:King_Constantine_II a :Man,
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :isMotherOf data:Anne_Princess_Royal .
+
+data:Rupert_Sanders a :Man,
         :Person .
 
-data:King_George_II a :Man,
-        :Person .
+data:Sandy_Pflueger a :Person,
+        :Woman .
 
-data:Lewis_Sloden a :Man,
-        :Person .
+data:Zara_Tindall a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne_Princess_Royal .
 
-data:Prince_Axel_of_Denmark a :Man,
-        :Person .
-
-data:Prince_Paul a :Man,
-        :Person .
-
-data:Prince_Peter_of_Greece_and_Denmark a :Man,
+data:Peter_Phillips a :Man,
         :Person ;
-    :hasBirthYear 1908 ;
-    :hasDeathYear 1980 ;
-    :hasFather data:Prince_George_of_Greece_and_Denmark ;
-    :hasMother data:Princess_Marie_Bonaparte ;
-    :hasSister data:Eug%C3%A9nie .
+    :hasBirthYear 1977 ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear 2008 ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasRelation data:Autumn_Kelly,
+        data:Harriet_Sperling,
+        data:King_Charles_III,
+        data:Lindsay_Wallace ;
+    :hasSister data:Zara_Tindall .
 
-data:Prince_Valdemar_of_Denmark a :Man,
-        :Person .
-
-data:Princess_Alexia a :Person,
-        :Woman .
-
-data:Princess_Anne-Marie_of_Denmark a :Person,
-        :Woman .
-
-data:Princess_Frederica_of_Hanover a :Person,
-        :Woman .
-
-data:Princess_Irene a :Person,
-        :Woman .
-
-data:Princess_Sophia_of_Greece a :Person,
-        :Woman .
-
-data:Princess_Tatiana_Radziwill a :Person,
+data:Anne_Princess_Royal a :Person,
         :Woman ;
-    :hasMother data:Eug%C3%A9nie .
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II .
 
-data:Queen_Olga a :Person,
+data:Autumn_Kelly a :Person,
         :Woman .
 
-data:Queen_Sophia a :Person,
-        :Woman .
-
-data:King_George_I_of_Greece a :Man,
+data:Mark_Phillips a :Man,
         :Person .
-
-data:Marie-F%C3%A9lix_Blanc a :Person,
-        :Woman .
-
-data:Prince_Roland_Bonaparte a :Man,
-        :Person .
-
-data:Eug%C3%A9nie a :Person,
-        :Woman ;
-    :hasFather data:Prince_George_of_Greece_and_Denmark ;
-    :hasMother data:Princess_Marie_Bonaparte .
-
-data:Prince_George_of_Greece_and_Denmark a :Man,
-        :Person ;
-    :hasFather data:King_George_I_of_Greece .
-
-data:Princess_Marie_Bonaparte a :Person,
-        :Woman ;
-    :hasFather data:Prince_Roland_Bonaparte ;
-    :hasMother data:Marie-F%C3%A9lix_Blanc .
 

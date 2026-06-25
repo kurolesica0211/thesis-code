@@ -1,0 +1,96 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Peter-_Duke_of_Schleswig-Holstein a :Man,
+        :Person ;
+    rdfs:label "Peter, Duke of Schleswig-Holstein"^^xsd:string ;
+    data:posIndicesFull "154:187"^^xsd:string,
+        "696:729"^^xsd:string ;
+    data:posIndicesPart "1006:1015"^^xsd:string,
+        "1016:1024"^^xsd:string,
+        "1187:1196"^^xsd:string ;
+    data:wdtLink wdt:Q739253 ;
+    :alsoKnownAs "Friedrich Ernst Peter Herzog zu Schleswig-Holstein-Sonderburg-Glücksburg"^^xsd:string ;
+    :hasBrother data:Peter-_Duke_of_Schleswig-Holstein ;
+    :hasRelation data:Peter-_Duke_of_Schleswig-Holstein ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Peter-_Duke_of_Schleswig-Holstein ;
+    :isBrotherOf data:Peter-_Duke_of_Schleswig-Holstein ;
+    :isSiblingOf data:Peter-_Duke_of_Schleswig-Holstein .
+
+data:Prince_Stefan_of_Schaumburg-Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Stefan of Schaumburg-Lippe"^^xsd:string ;
+    data:posIndicesFull "262:295"^^xsd:string ;
+    data:posIndicesPart "434:444"^^xsd:string,
+        "445:450"^^xsd:string,
+        "542:548"^^xsd:string,
+        "565:575"^^xsd:string,
+        "576:581"^^xsd:string ;
+    data:wdtLink wdt:Q15882344 ;
+    :alsoKnownAs "Stephan Alexander Viktor Prinz zu Schaumburg-Lippe"^^xsd:string ;
+    :hasBrother data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :hasChild data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
+    :hasDaughter data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
+    :hasRelation data:Marie_Alix-_Duchess_of_Schleswig-Holstein,
+        data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :hasSex data:male ;
+    :isAncestorOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
+    :isBloodrelationOf data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :isBrotherOf data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :isFatherOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
+    :isParentOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
+    :isSiblingOf data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :isUncleOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein .
+
+data:Marie_Alix-_Duchess_of_Schleswig-Holstein a :Person,
+        :Woman ;
+    rdfs:label "Marie Alix, Duchess of Schleswig-Holstein"^^xsd:string ;
+    data:posIndicesFull "0:39"^^xsd:string,
+        "1054:1093"^^xsd:string ;
+    data:posIndicesPart "1006:1015"^^xsd:string,
+        "1016:1024"^^xsd:string,
+        "1187:1196"^^xsd:string,
+        "226:231"^^xsd:string,
+        "232:236"^^xsd:string,
+        "310:314"^^xsd:string,
+        "512:517"^^xsd:string,
+        "518:522"^^xsd:string,
+        "677:682"^^xsd:string,
+        "683:687"^^xsd:string,
+        "771:780"^^xsd:string,
+        "781:789"^^xsd:string,
+        "804:809"^^xsd:string ;
+    data:wdtLink wdt:Q6490795 ;
+    :alsoKnownAs "Marie-Alix Prinzessin zu Schaumburg-Lippe"^^xsd:string,
+        "Princess Marie Alix of Schaumburg-Lippe"^^xsd:string ;
+    :hasAncestor data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :hasFather data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :hasParent data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :hasRelation data:Marie_Alix-_Duchess_of_Schleswig-Holstein,
+        data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :hasSex data:female ;
+    :hasSister data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
+    :isBloodrelationOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
+    :isChildOf data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :isDaughterOf data:Prince_Stefan_of_Schaumburg-Lippe ;
+    :isSiblingOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
+    :isSisterOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein .
+

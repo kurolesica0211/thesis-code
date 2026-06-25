@@ -117,6 +117,8 @@ He is also one of the godparents of Prince Achileas-Andreas of Greece and Denmar
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -132,39 +134,9 @@ He is also one of the godparents of Prince Achileas-Andreas of Greece and Denmar
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -179,6 +151,23 @@ He is also one of the godparents of Prince Achileas-Andreas of Greece and Denmar
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -196,6 +185,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -263,29 +267,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -294,6 +290,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -306,6 +310,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -314,17 +320,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -352,6 +360,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -367,58 +459,189 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (83359385-6ade-4936-92fd-82cda23beffa)
- Call ID: 83359385-6ade-4936-92fd-82cda23beffa
+  AssignClass (b606a5c1-8349-4cc4-950e-65c531950489)
+ Call ID: b606a5c1-8349-4cc4-950e-65c531950489
   Args:
-    source: :PrinceGuillaumeOfLuxembourg
     type: :Man
-  AssignClass (113aae29-81d7-4152-858a-f13490c46af5)
- Call ID: 113aae29-81d7-4152-858a-f13490c46af5
+    source: :GrandDukeHenri
+  AssignClass (6b8ece13-c40e-4f92-9031-0db5df1c2b63)
+ Call ID: 6b8ece13-c40e-4f92-9031-0db5df1c2b63
   Args:
+    type: :Woman
+    source: :GrandDuchessMariaTeresa
+  AssignClass (abe824bc-4435-4138-acc5-8c4c96b81c4a)
+ Call ID: abe824bc-4435-4138-acc5-8c4c96b81c4a
+  Args:
+    type: :Woman
+    source: :PrincessJoan
+  AssignClass (6c44cd4b-d6ed-4a7f-817e-ff61d0a65b07)
+ Call ID: 6c44cd4b-d6ed-4a7f-817e-ff61d0a65b07
+  Args:
+    source: :PrinceFelix
+    type: :Man
+  AssignClass (58f8394e-aaa9-4364-925b-b2e614312441)
+ Call ID: 58f8394e-aaa9-4364-925b-b2e614312441
+  Args:
+    type: :Man
+    source: :PrinceRené
+  AssignClass (31f54409-7d69-46ca-b3cc-8ce23dcf78f2)
+ Call ID: 31f54409-7d69-46ca-b3cc-8ce23dcf78f2
+  Args:
+    source: :PrincessMariaPia
+    type: :Woman
+  AssignClass (1dbe30ba-9c69-4a71-aef5-2053a1cdafb6)
+ Call ID: 1dbe30ba-9c69-4a71-aef5-2053a1cdafb6
+  Args:
+    source: :PrincessMarina
+    type: :Woman
+  AssignClass (9bf30602-f9e9-4c8c-b337-1f8740920dd6)
+ Call ID: 9bf30602-f9e9-4c8c-b337-1f8740920dd6
+  Args:
+    source: :PrinceLouis
+    type: :Man
+  AssignClass (18e8c2d1-6e59-42e8-92bf-261511854733)
+ Call ID: 18e8c2d1-6e59-42e8-92bf-261511854733
+  Args:
+    source: :PrinceRémy
+    type: :Man
+  AssignClass (35d02f5d-c9d5-494c-8649-450c3e00d65d)
+ Call ID: 35d02f5d-c9d5-494c-8649-450c3e00d65d
+  Args:
+    type: :Woman
+    source: :PrincessElisabeth
+  AssignClass (0fb9e2a7-10a5-4d73-8081-f3580b57c71a)
+ Call ID: 0fb9e2a7-10a5-4d73-8081-f3580b57c71a
+  Args:
+    source: :PrincessChantal
+    type: :Woman
+  AssignClass (9739a76d-ec42-4f91-babc-3f7f19b54fc3)
+ Call ID: 9739a76d-ec42-4f91-babc-3f7f19b54fc3
+  Args:
+    source: :PrinceJean
+    type: :Man
+  AssignClass (ae5c988c-95f2-45ef-8141-2fa4a731e307)
+ Call ID: ae5c988c-95f2-45ef-8141-2fa4a731e307
+  Args:
+    type: :Woman
+    source: :PrincessVirginia
+  AssignClass (64fd28b3-a944-48e4-a632-faab85c2d749)
+ Call ID: 64fd28b3-a944-48e4-a632-faab85c2d749
+  Args:
+    source: :PrinceGuillaumeLuxembourg
+    type: :Man
+  AssignClass (fec0f230-5b0a-4463-a5af-b40cdb00373a)
+ Call ID: fec0f230-5b0a-4463-a5af-b40cdb00373a
+  Args:
+    type: :Man
     source: :GrandDukeJean
+  AssignClass (1beb4d26-01eb-48c7-8ece-64ccba72b6ae)
+ Call ID: 1beb4d26-01eb-48c7-8ece-64ccba72b6ae
+  Args:
+    source: :GrandDuchessJosephineCharlotte
+    type: :Woman
+  AssignClass (290f7500-5999-4b22-a80e-f2fee23157a4)
+ Call ID: 290f7500-5999-4b22-a80e-f2fee23157a4
+  Args:
+    type: :Woman
+    source: :PrincessSibilla
+  AssignClass (6bddb033-c634-487b-9a1d-54f71841d3bb)
+ Call ID: 6bddb033-c634-487b-9a1d-54f71841d3bb
+  Args:
     type: :Man
-  AssignClass (2eb1a766-22a0-47d1-831a-94cae27abef2)
- Call ID: 2eb1a766-22a0-47d1-831a-94cae27abef2
+    source: :PaulAnnikWeiller
+  AssignClass (628119e9-a406-430f-8cf3-8b31a9084fbb)
+ Call ID: 628119e9-a406-430f-8cf3-8b31a9084fbb
+  Args:
+    source: :PaulLouisWeiller
+    type: :Man
+  AssignClass (352087ac-85f4-4bdf-b530-bb5d9594a0f7)
+ Call ID: 352087ac-85f4-4bdf-b530-bb5d9594a0f7
+  Args:
+    source: :AlikiLadyRussell
+    type: :Woman
+  AssignClass (22f1ebbc-64b6-4846-8919-0680eadce12a)
+ Call ID: 22f1ebbc-64b6-4846-8919-0680eadce12a
+  Args:
+    source: :DonnaOlimpiaTorlonia
+    type: :Woman
+  AssignClass (bccc3f5e-2f84-4cf0-819d-1180e5863fdd)
+ Call ID: bccc3f5e-2f84-4cf0-819d-1180e5863fdd
+  Args:
+    source: :AlessandroTorlonia
+    type: :Man
+  AssignClass (2cf99e97-4822-4a86-bf1a-b40a48eed937)
+ Call ID: 2cf99e97-4822-4a86-bf1a-b40a48eed937
   Args:
     type: :Woman
-    source: :GrandDuchessJosephineCharlotteOfLuxembourg
-  AssignClass (8467a9be-2949-4e20-a511-436f74837b31)
- Call ID: 8467a9be-2949-4e20-a511-436f74837b31
+    source: :InfantaBeatriz
+  AddLiteral (124fe8e1-3c6b-46f4-884c-8709abce3a33)
+ Call ID: 124fe8e1-3c6b-46f4-884c-8709abce3a33
   Args:
-    type: :Woman
-    source: :PrincessSibillaOfLuxembourg
-  AddLiteral (830d1629-4919-4bc3-89ab-f93366208489)
- Call ID: 830d1629-4919-4bc3-89ab-f93366208489
-  Args:
-    source: :PrinceGuillaumeOfLuxembourg
-    literal_type: xsd:integer
     literal_value: 1963
+    source: :PrinceGuillaumeLuxembourg
+    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddTriple (6cf1b288-350d-4e3b-8d88-921106095d76)
- Call ID: 6cf1b288-350d-4e3b-8d88-921106095d76
+  AddTriple (c0910499-f305-425d-a73d-1ddfe5c21c8e)
+ Call ID: c0910499-f305-425d-a73d-1ddfe5c21c8e
   Args:
-    source: :PrinceGuillaumeOfLuxembourg
+    source: :PrinceGuillaumeLuxembourg
     target: :GrandDukeJean
     relation: :hasFather
-  AddTriple (4b06cac0-01c8-4179-82b3-5a2dc2df50f9)
- Call ID: 4b06cac0-01c8-4179-82b3-5a2dc2df50f9
+  AddTriple (1f0f9e1f-f940-4787-b365-1754b1917f43)
+ Call ID: 1f0f9e1f-f940-4787-b365-1754b1917f43
   Args:
-    source: :PrinceGuillaumeOfLuxembourg
-    target: :GrandDuchessJosephineCharlotteOfLuxembourg
+    source: :PrinceGuillaumeLuxembourg
+    target: :GrandDuchessJosephineCharlotte
     relation: :hasMother
-  AddTriple (2c7b85ed-ff97-4fdd-b9c2-6522ad9e92e8)
- Call ID: 2c7b85ed-ff97-4fdd-b9c2-6522ad9e92e8
+  AddTriple (23f5a579-0192-45e9-9671-dcf9cb4a7270)
+ Call ID: 23f5a579-0192-45e9-9671-dcf9cb4a7270
   Args:
-    target: :PrincessSibillaOfLuxembourg
-    relation: :hasRelation
-    source: :PrinceGuillaumeOfLuxembourg
-  AddLiteral (cced9fcf-bd3d-4709-99eb-14e35a6b20cb)
- Call ID: cced9fcf-bd3d-4709-99eb-14e35a6b20cb
+    relation: :hasFather
+    target: :PaulAnnikWeiller
+    source: :PrincessSibilla
+  AddTriple (fb1b86c1-809c-4db3-946a-09b171ecd844)
+ Call ID: fb1b86c1-809c-4db3-946a-09b171ecd844
   Args:
-    source: :PrinceGuillaumeOfLuxembourg
+    target: :DonnaOlimpiaTorlonia
+    source: :PrincessSibilla
+    relation: :hasMother
+  AddTriple (0a9a79b4-9a71-4dc8-8cb0-3c5f5d5be3d3)
+ Call ID: 0a9a79b4-9a71-4dc8-8cb0-3c5f5d5be3d3
+  Args:
+    relation: :hasFather
+    target: :PaulLouisWeiller
+    source: :PaulAnnikWeiller
+  AddTriple (239d6e08-0233-4c9a-a413-0c7ee2f40478)
+ Call ID: 239d6e08-0233-4c9a-a413-0c7ee2f40478
+  Args:
+    relation: :hasMother
+    source: :PaulAnnikWeiller
+    target: :AlikiLadyRussell
+  AddTriple (c86ec965-3daa-4ce2-8ac1-58dc547315b0)
+ Call ID: c86ec965-3daa-4ce2-8ac1-58dc547315b0
+  Args:
+    target: :AlessandroTorlonia
+    source: :DonnaOlimpiaTorlonia
+    relation: :hasFather
+  AddTriple (53449488-b613-4736-8c09-0c7a7af9a8ac)
+ Call ID: 53449488-b613-4736-8c09-0c7a7af9a8ac
+  Args:
+    relation: :hasMother
+    source: :DonnaOlimpiaTorlonia
+    target: :InfantaBeatriz
+  AddLiteral (48a6ebb6-b7a9-44ed-8e36-3f9f7bec54d7)
+ Call ID: 48a6ebb6-b7a9-44ed-8e36-3f9f7bec54d7
+  Args:
+    relation: :hasMarriageYear
+    source: :PrinceGuillaumeLuxembourg
     literal_type: xsd:integer
     literal_value: 1994
-    relation: :hasMarriageYear
-  Finish (d88b5320-9ea3-45db-920a-3cb49ea90225)
- Call ID: d88b5320-9ea3-45db-920a-3cb49ea90225
+  AddTriple (a7173a78-cb08-4beb-8707-098131f01fdf)
+ Call ID: a7173a78-cb08-4beb-8707-098131f01fdf
+  Args:
+    relation: :hasRelation
+    target: :PrincessSibilla
+    source: :PrinceGuillaumeLuxembourg
+  Finish (310a3a71-b847-4e33-bb15-23e41c5f7ef0)
+ Call ID: 310a3a71-b847-4e33-bb15-23e41c5f7ef0
   Args:

@@ -1,0 +1,857 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlfonsoXIII a :Man,
+        :Person ;
+    :hasBrother data:AlfonsoXIII ;
+    :hasRelation data:AlfonsoXIII,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:Leopold,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isBloodrelationOf data:AlfonsoXIII ;
+    :isBrotherOf data:AlfonsoXIII ;
+    :isSiblingOf data:AlfonsoXIII .
+
+data:Leopold a :Man,
+        :Person ;
+    :hasBrother data:Leopold ;
+    :hasRelation data:AlfonsoXIII,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuliaPrincessOfBattenberg,
+        data:Leopold,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSister data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isBloodrelationOf data:Leopold,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isBrotherOf data:Leopold,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isSiblingOf data:Leopold,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isUncleOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona .
+
+data:FelipeVI a :Man,
+        :Person ;
+    :hasAncestor data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasBrother data:FelipeVI ;
+    :hasFather data:JuanCarlosI ;
+    :hasParent data:JuanCarlosI ;
+    :hasRelation data:FelipeVI,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isBloodrelationOf data:FelipeVI ;
+    :isBrotherOf data:FelipeVI ;
+    :isChildOf data:JuanCarlosI ;
+    :isSiblingOf data:FelipeVI ;
+    :isSonOf data:JuanCarlosI .
+
+data:JuliaPrincessOfBattenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceHenryOfBattenberg ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:Leopold,
+        data:PrinceHenryOfBattenberg,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSister data:JuliaPrincessOfBattenberg ;
+    :hasSon data:PrinceHenryOfBattenberg ;
+    :isAncestorOf data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:PrinceHenryOfBattenberg,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isAuntOf data:PrinceHenryOfBattenberg ;
+    :isBloodrelationOf data:JuliaPrincessOfBattenberg ;
+    :isMotherOf data:PrinceHenryOfBattenberg ;
+    :isParentOf data:PrinceHenryOfBattenberg ;
+    :isSiblingOf data:JuliaPrincessOfBattenberg ;
+    :isSisterOf data:JuliaPrincessOfBattenberg .
+
+data:PrinceAlbertOfSaxeCoburgAndGotha a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceAlbertOfSaxeCoburgAndGotha ;
+    :hasChild data:PrincessBeatrice ;
+    :hasDaughter data:PrincessBeatrice ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:Leopold,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrincessBeatrice,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isAncestorOf data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:PrincessBeatrice,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isBloodrelationOf data:PrinceAlbertOfSaxeCoburgAndGotha ;
+    :isBrotherOf data:PrinceAlbertOfSaxeCoburgAndGotha ;
+    :isFatherOf data:PrincessBeatrice ;
+    :isParentOf data:PrincessBeatrice ;
+    :isSiblingOf data:PrinceAlbertOfSaxeCoburgAndGotha ;
+    :isUncleOf data:PrincessBeatrice .
+
+data:PrinceAlexanderOfHesseAndByRhine a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceAlexanderOfHesseAndByRhine ;
+    :hasChild data:PrinceHenryOfBattenberg ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:Leopold,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSon data:PrinceHenryOfBattenberg ;
+    :isAncestorOf data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:PrinceHenryOfBattenberg,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isBloodrelationOf data:PrinceAlexanderOfHesseAndByRhine ;
+    :isBrotherOf data:PrinceAlexanderOfHesseAndByRhine ;
+    :isFatherOf data:PrinceHenryOfBattenberg ;
+    :isParentOf data:PrinceHenryOfBattenberg ;
+    :isSiblingOf data:PrinceAlexanderOfHesseAndByRhine ;
+    :isUncleOf data:PrinceHenryOfBattenberg .
+
+data:QueenVictoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessBeatrice ;
+    :hasDaughter data:PrincessBeatrice ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:Leopold,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSister data:QueenVictoria ;
+    :isAncestorOf data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:PrincessBeatrice,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isAuntOf data:PrincessBeatrice ;
+    :isBloodrelationOf data:QueenVictoria ;
+    :isMotherOf data:PrincessBeatrice ;
+    :isParentOf data:PrincessBeatrice ;
+    :isSiblingOf data:QueenVictoria ;
+    :isSisterOf data:QueenVictoria .
+
+data:JuanCarlosI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasBrother data:JuanCarlosI ;
+    :hasChild data:FelipeVI ;
+    :hasFather data:JuanCountOfBarcelona ;
+    :hasParent data:JuanCountOfBarcelona ;
+    :hasRelation data:FelipeVI,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSon data:FelipeVI ;
+    :isAncestorOf data:FelipeVI ;
+    :isBloodrelationOf data:JuanCarlosI ;
+    :isBrotherOf data:JuanCarlosI ;
+    :isChildOf data:JuanCountOfBarcelona ;
+    :isFatherOf data:FelipeVI ;
+    :isParentOf data:FelipeVI ;
+    :isSiblingOf data:JuanCarlosI ;
+    :isSonOf data:JuanCountOfBarcelona ;
+    :isUncleOf data:FelipeVI .
+
+data:PrinceHenryOfBattenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:JuliaPrincessOfBattenberg,
+        data:PrinceAlexanderOfHesseAndByRhine ;
+    :hasBrother data:PrinceHenryOfBattenberg ;
+    :hasChild data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasDaughter data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasFather data:PrinceAlexanderOfHesseAndByRhine ;
+    :hasMother data:JuliaPrincessOfBattenberg ;
+    :hasParent data:JuliaPrincessOfBattenberg,
+        data:PrinceAlexanderOfHesseAndByRhine ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:Leopold,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isAncestorOf data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isBloodrelationOf data:PrinceHenryOfBattenberg ;
+    :isBrotherOf data:PrinceHenryOfBattenberg ;
+    :isChildOf data:JuliaPrincessOfBattenberg,
+        data:PrinceAlexanderOfHesseAndByRhine ;
+    :isFatherOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isParentOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isSiblingOf data:PrinceHenryOfBattenberg ;
+    :isSonOf data:JuliaPrincessOfBattenberg,
+        data:PrinceAlexanderOfHesseAndByRhine ;
+    :isUncleOf data:VictoriaEugenieJuliaEnaOfBattenberg .
+
+data:PrincessBeatrice a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:QueenVictoria ;
+    :hasChild data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasDaughter data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasFather data:PrinceAlbertOfSaxeCoburgAndGotha ;
+    :hasMother data:QueenVictoria ;
+    :hasParent data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:QueenVictoria ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:Leopold,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSister data:PrincessBeatrice ;
+    :isAncestorOf data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isAuntOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isBloodrelationOf data:PrincessBeatrice ;
+    :isChildOf data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:QueenVictoria ;
+    :isDaughterOf data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:QueenVictoria ;
+    :isMotherOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isParentOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isSiblingOf data:PrincessBeatrice ;
+    :isSisterOf data:PrincessBeatrice .
+
+data:AlfonsoPrinceOfAsturias a :Man,
+        :Person ;
+    :hasAncestor data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasBrother data:AlfonsoPrinceOfAsturias,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :hasMother data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasParent data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSister data:InfantaBeatriz,
+        data:InfantaMariaCristina ;
+    :isBloodrelationOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isBrotherOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isChildOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isSiblingOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isSonOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isUncleOf data:JuanCarlosI .
+
+data:InfantaBeatriz a :Person,
+        :Woman ;
+    :hasAncestor data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasBrother data:AlfonsoPrinceOfAsturias,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :hasMother data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasParent data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSister data:InfantaBeatriz,
+        data:InfantaMariaCristina ;
+    :isAuntOf data:JuanCarlosI ;
+    :isBloodrelationOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isChildOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isDaughterOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isSiblingOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isSisterOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona .
+
+data:InfantaMariaCristina a :Person,
+        :Woman ;
+    :hasAncestor data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasBrother data:AlfonsoPrinceOfAsturias,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :hasMother data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasParent data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSister data:InfantaBeatriz,
+        data:InfantaMariaCristina ;
+    :isAuntOf data:JuanCarlosI ;
+    :isBloodrelationOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isChildOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isDaughterOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isSiblingOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isSisterOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona .
+
+data:InfanteAlfonso a :Man,
+        :Person ;
+    :hasAncestor data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasBrother data:AlfonsoPrinceOfAsturias,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :hasMother data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasParent data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSister data:InfantaBeatriz,
+        data:InfantaMariaCristina ;
+    :isBloodrelationOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isBrotherOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isChildOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isSiblingOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isSonOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isUncleOf data:JuanCarlosI .
+
+data:InfanteGonzalo a :Man,
+        :Person ;
+    :hasAncestor data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasBrother data:AlfonsoPrinceOfAsturias,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :hasMother data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasParent data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:AlfonsoXIII,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:Leopold,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSister data:InfantaBeatriz,
+        data:InfantaMariaCristina ;
+    :isBloodrelationOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isBrotherOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isChildOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isSiblingOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isSonOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isUncleOf data:JuanCarlosI .
+
+data:InfanteJaime a :Man,
+        :Person ;
+    :hasAncestor data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasBrother data:AlfonsoPrinceOfAsturias,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :hasMother data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasParent data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:AlfonsoXIII,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:Leopold,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSister data:InfantaBeatriz,
+        data:InfantaMariaCristina ;
+    :isBloodrelationOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isBrotherOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isChildOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isSiblingOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isSonOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isUncleOf data:JuanCarlosI .
+
+data:JuanCountOfBarcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasBrother data:AlfonsoPrinceOfAsturias,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :hasChild data:JuanCarlosI ;
+    :hasMother data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasParent data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSister data:InfantaBeatriz,
+        data:InfantaMariaCristina ;
+    :hasSon data:JuanCarlosI ;
+    :isAncestorOf data:FelipeVI,
+        data:JuanCarlosI ;
+    :isBloodrelationOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isBrotherOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isChildOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isFatherOf data:JuanCarlosI ;
+    :isParentOf data:JuanCarlosI ;
+    :isSiblingOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isSonOf data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isUncleOf data:JuanCarlosI .
+
+data:VictoriaEugenieJuliaEnaOfBattenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:JuliaPrincessOfBattenberg,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:Leopold ;
+    :hasChild data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :hasDaughter data:InfantaBeatriz,
+        data:InfantaMariaCristina ;
+    :hasDeathYear 1969 ;
+    :hasFather data:PrinceHenryOfBattenberg ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:PrincessBeatrice ;
+    :hasParent data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice ;
+    :hasRelation data:AlfonsoPrinceOfAsturias,
+        data:AlfonsoXIII,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona,
+        data:JuliaPrincessOfBattenberg,
+        data:Leopold,
+        data:PrinceAlbertOfSaxeCoburgAndGotha,
+        data:PrinceAlexanderOfHesseAndByRhine,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:QueenVictoria,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSister data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :hasSon data:AlfonsoPrinceOfAsturias,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isAncestorOf data:AlfonsoPrinceOfAsturias,
+        data:FelipeVI,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCarlosI,
+        data:JuanCountOfBarcelona ;
+    :isAuntOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isBloodrelationOf data:Leopold,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isChildOf data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice ;
+    :isDaughterOf data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice ;
+    :isMotherOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isParentOf data:AlfonsoPrinceOfAsturias,
+        data:InfantaBeatriz,
+        data:InfantaMariaCristina,
+        data:InfanteAlfonso,
+        data:InfanteGonzalo,
+        data:InfanteJaime,
+        data:JuanCountOfBarcelona ;
+    :isSiblingOf data:Leopold,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :isSisterOf data:Leopold,
+        data:VictoriaEugenieJuliaEnaOfBattenberg ;
+    :knownAs "Ena"^^xsd:string .
+

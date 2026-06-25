@@ -7,15 +7,21 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:Alfonso_XIII a :Person ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "476:488",
+        "785:797" ;
+    data:posIndicesPart "854:861" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasSex data:male .
 
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Infante_Alfonso_of_Spain a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Infante_Alfonso_of_Spain a :Person ;
     rdfs:label "Infante Alfonso of Spain" ;
     data:posIndicesFull "0:24" ;
     data:posIndicesPart "367:372",
@@ -28,67 +34,7 @@ data:Infante_Alfonso_of_Spain a :Man,
     :alsoKnownAs "Alfonso Cristino de Borbón y Borbón" ;
     :hasSex data:male .
 
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alfonso XIII" ;
-    data:posIndicesFull "476:488",
-        "785:797" ;
-    data:posIndicesPart "854:861" ;
-    data:wdtLink wdt:Q18363 ;
-    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
-        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
-        "Alfonso XIII of Spain",
-        "Don Alfonso de Borbon y Habsburgo",
-        "Don Alfonso de Borbón y Habsburgo",
-        "The African" ;
-    :hasSex data:male ;
-    :hasSister data:María_de_las_Mercedes-_Princess_of_Asturias ;
-    :isBrotherOf data:María_de_las_Mercedes-_Princess_of_Asturias ;
-    :isSiblingOf data:María_de_las_Mercedes-_Princess_of_Asturias ;
-    :isUncleOf data:Infante_Alfonso-_Duke_of_Calabria .
-
-data:Infanta_Alicia-_Duchess_of_Calabria a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta Alicia, Duchess of Calabria" ;
-    data:posIndicesFull "870:901" ;
-    data:wdtLink wdt:Q33218 ;
-    :alsoKnownAs "Princess Alicia Maria Teresa Francesca Luisa Pia Anna Valeria of Bourbon-Parma",
-        "Princess Alicia of Bourbon-Parma" ;
-    :hasChild data:Infante_Carlos-_Duke_of_Calabria ;
-    :hasSex data:female ;
-    :hasSon data:Infante_Carlos-_Duke_of_Calabria ;
-    :isMotherOf data:Infante_Carlos-_Duke_of_Calabria ;
-    :isParentOf data:Infante_Carlos-_Duke_of_Calabria .
-
-data:María_de_las_Mercedes-_Princess_of_Asturias a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "María de las Mercedes, Princess of Asturias" ;
-    data:posIndicesFull "290:333",
-        "395:438" ;
-    data:posIndicesPart "541:549",
-        "557:565",
-        "708:716" ;
-    data:wdtLink wdt:Q129179 ;
-    :alsoKnownAs "María de las Mercedes of Spain" ;
-    :hasBrother data:Alfonso_XIII ;
-    :hasChild data:Infante_Alfonso-_Duke_of_Calabria ;
-    :hasSex data:female ;
-    :hasSon data:Infante_Alfonso-_Duke_of_Calabria ;
-    :isMotherOf data:Infante_Alfonso-_Duke_of_Calabria ;
-    :isParentOf data:Infante_Alfonso-_Duke_of_Calabria ;
-    :isSiblingOf data:Alfonso_XIII ;
-    :isSisterOf data:Alfonso_XIII .
-
-data:Infante_Carlos-_Duke_of_Calabria a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Infante_Carlos-_Duke_of_Calabria a :Person ;
     rdfs:label "Infante Carlos, Duke of Calabria" ;
     data:posIndicesFull "248:285",
         "255:285" ;
@@ -100,30 +46,51 @@ data:Infante_Carlos-_Duke_of_Calabria a :Ancestor,
         "Carlos of Bourbon-Two Sicilies",
         "Infante Carlos of Spain, Prince of Bourbon-Two Sicilies, Duke of Calabria",
         "Prince Carlos of Bourbon-Two Sicilies" ;
-    :hasFather data:Infante_Alfonso-_Duke_of_Calabria ;
-    :hasMother data:Infanta_Alicia-_Duchess_of_Calabria ;
     :hasParent data:Infanta_Alicia-_Duchess_of_Calabria,
         data:Infante_Alfonso-_Duke_of_Calabria ;
-    :hasSex data:male ;
-    :isChildOf data:Infanta_Alicia-_Duchess_of_Calabria,
-        data:Infante_Alfonso-_Duke_of_Calabria ;
-    :isSonOf data:Infanta_Alicia-_Duchess_of_Calabria,
-        data:Infante_Alfonso-_Duke_of_Calabria .
+    :hasSex data:male .
 
-data:Infante_Alfonso-_Duke_of_Calabria a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Person ;
+    rdfs:label "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo" ;
+    data:posIndicesFull "526:530" ;
+    data:wdtLink wdt:Q75317760 ;
+    :alsoKnownAs "Jaime",
+        "Jaime de Borbón y Landaluce",
+        "Jaime di Borbone-Due Sicilie" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Infanta_Alicia-_Duchess_of_Calabria a :Person ;
+    rdfs:label "Infanta Alicia, Duchess of Calabria" ;
+    data:posIndicesFull "870:901" ;
+    data:wdtLink wdt:Q33218 ;
+    :alsoKnownAs "Princess Alicia Maria Teresa Francesca Luisa Pia Anna Valeria of Bourbon-Parma",
+        "Princess Alicia of Bourbon-Parma" ;
+    :hasSex data:female .
+
+data:Infante_Alfonso-_Duke_of_Calabria a :Person ;
     rdfs:label "Infante Alfonso, Duke of Calabria" ;
     data:wdtLink wdt:Q1333222 ;
-    :hasChild data:Infante_Carlos-_Duke_of_Calabria ;
-    :hasMother data:María_de_las_Mercedes-_Princess_of_Asturias ;
     :hasParent data:María_de_las_Mercedes-_Princess_of_Asturias ;
-    :hasSex data:male ;
-    :hasSon data:Infante_Carlos-_Duke_of_Calabria ;
-    :isChildOf data:María_de_las_Mercedes-_Princess_of_Asturias ;
-    :isFatherOf data:Infante_Carlos-_Duke_of_Calabria ;
-    :isParentOf data:Infante_Carlos-_Duke_of_Calabria ;
-    :isSonOf data:María_de_las_Mercedes-_Princess_of_Asturias ;
-    :isUncleOf data:Infante_Alfonso_of_Spain .
+    :hasSex data:male .
+
+data:María_de_las_Mercedes-_Princess_of_Asturias a :Person ;
+    rdfs:label "María de las Mercedes, Princess of Asturias" ;
+    data:posIndicesFull "290:333",
+        "395:438" ;
+    data:posIndicesPart "541:549",
+        "557:565",
+        "708:716" ;
+    data:wdtLink wdt:Q129179 ;
+    :alsoKnownAs "María de las Mercedes of Spain" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

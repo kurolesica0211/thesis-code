@@ -2,25 +2,60 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_August_Wilhelm_of_Prussia a :Man ;
-    :hasBirthYear 1887 ;
-    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :hasDeathYear 1949 ;
-    :hasFather data:Wilhelm_II_of_Prussia ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
-    :knownAs "Auwi"^^xsd:string .
+data:Princess_Irene_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :isAuntOf data:Nikolaos_of_Greece_and_Denmark .
 
-data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman ;
-    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia .
+data:Queen_Sof%C3%ADa_of_Spain a :Person,
+        :Woman ;
+    :isAuntOf data:Nikolaos_of_Greece_and_Denmark .
 
-data:Princess_Margaret_of_Prussia a :Woman ;
-    :isSisterOf data:Wilhelm_II_of_Prussia .
-
-data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
+data:Agapi_Politi a :Ancestor,
+        :Person,
         :Woman .
 
-data:Prince_Alexander_Ferdinand_of_Prussia a :Man .
+data:Anne-Marie_of_Denmark a :Ancestor,
+        :Person,
+        :Woman .
 
-data:Wilhelm_II_of_Prussia a :Ancestor,
-        :Man .
+data:Chrys%C3%AD_Vardinogi%C3%A1nni a :Person,
+        :Woman ;
+    :hasFather data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis ;
+    :hasMother data:Agapi_Politi .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person .
+
+data:Crown_Prince_Pavlos a :Man,
+        :Person .
+
+data:Gi%C3%B3rgos_Vardinogi%C3%A1nnis a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Philippos a :Man,
+        :Person .
+
+data:Princess_Alexia a :Person,
+        :Woman .
+
+data:Princess_Theodora a :Person,
+        :Woman .
+
+data:Tatiana_Ellinka_Blatnik a :Person,
+        :Woman .
+
+data:Nikolaos_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasBirthYear "1969"^^xsd:positiveInteger ;
+    :hasBrother data:Crown_Prince_Pavlos,
+        data:Prince_Philippos ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMarriageYear "2010"^^xsd:positiveInteger ;
+    :hasMother data:Anne-Marie_of_Denmark ;
+    :hasRelation data:Chrys%C3%AD_Vardinogi%C3%A1nni,
+        data:Tatiana_Ellinka_Blatnik ;
+    :hasSister data:Princess_Alexia,
+        data:Princess_Theodora .
 

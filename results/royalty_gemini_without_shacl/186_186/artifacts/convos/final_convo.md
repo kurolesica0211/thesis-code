@@ -69,196 +69,39 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Theodora of Greece and Denmark (Greek: Θεοδώρα; 30 May 1906 – 16 October 1969) was a Greek and Danish princess by birth and Margravine of Baden through her marriage to Berthold, pretender to the throne of the Grand Duchy of Baden.
-The second of five children of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, Theodora spent a happy childhood between Athens and Corfu.
-For the young princess and her relatives, these conflicts had dramatic consequences and led to their exile in Switzerland (between 1917 and 1920), then in France and the United Kingdom (from 1922 to 1936).
-During their exile, Theodora and her family depended on the generosity of their foreign relatives, in particular Marie Bonaparte (who offered them accommodation in Saint-Cloud) and Lady Louis Mountbatten (who supported them financially).
-At the end of the 1920s, Theodora's mother was struck by a mental health crisis which led to her confinement in a Swiss psychiatric hospital.
-Shortly after, in 1931, Theodora married Berthold, Margrave of Baden, son of Chancellor of the German Reich Prince Maximilian.
-The princess gave birth to three children there: Margarita, Maximilian and Ludwig.
-Opposed to Nazism, Theodora and her husband kept their distance from the Nazi regime; however, this did not prevent Berthold from enlisting in the Wehrmacht at the start of the Second World War.
-Affected by the conflict, which divided her family into two factions, Theodora became involved in the German Red Cross and other charitable organizations.
-The defeat of Germany and its occupation by the Allies brought new upheavals in the life of Theodora and Berthold.
-Though not held by the Soviets, responsible for the death of several of their cousins, the couple was ostracized by the British royal family at the time of the marriage of Prince Philip, Theodora's only brother, to Princess Elizabeth of the United Kingdom (later Queen Elizabeth II) in 1947.
-Over the years, the couple was nevertheless reintegrated into the life of the European elite, as illustrated by their invitation and presence at the coronation of Elizabeth II in 1953 and at the wedding of Juan Carlos, Prince of Asturias, and Princess Sophia of Greece and Denmark in 1962.
-Theodora died of heart problems six years after her husband, in 1969.
-She was the paternal aunt of the Prince of Wales, who later became King Charles III.
-Biography
+Duchess Elisabeth of Mecklenburg-Schwerin (10 August 1869 – 3 September 1955) was a daughter of Frederick Francis II, Grand Duke of Mecklenburg by his third wife Princess Marie of Schwarzburg-Rudolstadt.
+By her marriage to Frederick Augustus II, she became the consort of the last reigning Grand Duke of Oldenburg.
+Family
 
-Childhood
+Elisabeth was related to many of Europe's royal families.
+She was the eldest child of Frederick Francis II, Grand Duke of Mecklenburg by his third wife, Princess Marie of Schwarzburg-Rudolstadt.
+She was an older sister of Hendrik, Prince consort of the Netherlands, husband of Queen Wilhelmina of the Netherlands, making her an aunt of Queen Juliana of the Netherlands.
+She was also a younger half-sister of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin.
+Through Frederick Francis, she was an aunt of Alexandrine, Queen of Denmark and Cecilie, German Crown Princess.
+Elisabeth was also a half sister of Marie, Grand Duchess of Russia, who was the mother of Grand Duke Cyril Vladimirovich of Russia, the pretender to the Russian throne.
+Her paternal grandparents were Paul Frederick, Grand Duke of Mecklenburg and Princess Alexandrine of Prussia.
+Her maternal grandparents were Prince Adolph of Schwarzburg-Rudolstadt and Princess Mathilde of Schönburg-Waldenburg.
+Marriage
 
-In Greece and abroad
+On 24 October 1896, Elisabeth married Frederick Augustus, Hereditary Grand Duke of Oldenburg.
+His first wife Elisabeth Anna had died the previous year, leaving only one surviving daughter: Duchess Sophia Charlotte of Oldenburg.
+Frederick Augustus was thus in need of a male heir.
+He succeeded as Grand Duke of Oldenburg in 1900, making Elisabeth Grand Duchess consort of Oldenburg.
+They had five children:
 
-The second daughter of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, Theodora was born at Tatoi Palace, near Athens, on 30 May 1906.
-At the time of her birth, her father was traveling to Spain, where he represented the Greek royal family on the occasion of the marriage of King Alfonso XIII of Spain to Princess Victoria Eugenie of Battenberg, a cousin of her mother Alice.
-Baptised "Theodora" in honor of the Byzantine empress, but nicknamed "Dolla" by her family, the princess was raised within a united household, together with her elder sister Margarita, and younger sisters Cecilie, and Sophie.
-With their mother, Theodora and her sisters communicated in English, but they also used French, German, and Greek in the presence of their relatives and governesses.
-Theodora's early childhood was affected by the instability that the Kingdom of Greece experienced at the start of the twentieth century.
-Tired of attacks from the press and the opposition, Andrew and Alice found refuge in travel and spent most of the period between 1907 and 1908 outside the borders of their country.
-With their daughters, they stayed in the United Kingdom, Germany, Malta and Russia, where they reunited with their many relatives including Edward VII of the United Kingdom, Ernest Louis, Grand Duke of Hesse, Alexandra Feodorovna, and Prince and Princess Louis of Battenberg (Alice's parents).
-At this time, Theodora was introduced to her young maternal uncle and aunt, Louis and Louise, to whom she and her sister Margarita later became very close.
-In 1909, the Goudi coup occurred, a military putsch organized against the government of King George I of Greece, Theodora's grandfather.
-Shortly after this event, Prince Andrew and his brothers were forced to resign from the army.
-Concerned about the political situation of their country, Andrew and Alice once again found refuge abroad and stayed in the United Kingdom, France and Hesse.
-After considering a life in exile for a while, the couple returned to live in Greece, where their third daughter was born.
-At that time, Theodora was described by her maternal grandmother as a funny and imaginative little girl, but also very scatterbrained.
-The Balkan Wars and the First World War
 
-Between 1912 and 1913, Greece engaged in the Balkan Wars, which put the country in opposition to the Ottoman Empire and to Bulgaria.
-Called to join the army again, Prince Andrew served under Crown Prince Constantine, while Princess Alice worked as a nurse for wounded soldiers.
-Too young to follow their parents, Theodora and her sisters spent the duration of the conflict in Athens, with the exception of a brief stay in Thessaloniki in December 1912.
-Greece came out of the Balkan Wars with an expanded territory, but the conflict also led to the assassination of George I in March 1913.
-The death of the King of the Hellenes caused significant changes in the life of Theodora and her relatives.
-In his will, the sovereign bequeathed the Corfiote palace of Mon Repos to Andrew.
-After years of living in close proximity to the monarch, in the palaces of Athens and Tatoi, Andrew and his family therefore finally had their own residence.
-When peace returned, Andrew, Alice and their daughters left Greece in August 1913.
-After a visit to Germany, they stayed in the United Kingdom, with Theodora's maternal grandparents.
-Returning to Greece on 17 November 1913, the family was then retained in the country by Alice's fourth pregnancy and, above all, by the outbreak of the First World War.
-With Greece having proclaimed its neutrality, this new conflict initially hardly affected Theodora and her relatives.
-Things changed as war entered into the life of the country's people.
-Stationed in Thessaloniki with his garrison, Andrew was thus confronted with the occupation of the city by the Allies in October 1915.
-Shortly after, in December, the routed Serbian army found refuge in Corfu, leading Alice and her daughters to abandon Mon Repos for the capital.
-Over the months, the amount of threats against members of the royal dynasty increased.
-In addition, on 1 December, the French navy bombarded the royal palace in Athens, forcing Theodora and her sisters to take refuge in the cellars with their mother.
-Exile in Switzerland
-
-In June 1917, King Constantine I was deposed and driven out of Greece by the Allies, who replaced him on the throne by his second son, the young Alexander.
-Fifteen days later, Theodora's family was in turn forced into exile in order to remove the possibility of the new monarch being influenced by those close to him.
-Following the Russian Revolution, several of Theodora's relatives (the Romanovs)  were executed in Russia.
-Shortly after these events, the Grand Ducal family of Hesse, to which Theodora was closely related through her mother, was overthrown along with all the other German dynasties during the winter of 1918–1919.
-At the beginning of 1919, Theodora nevertheless had the joy of reuniting with her paternal grandmother, the Dowager Queen Olga, spared by the Bolsheviks thanks to the diplomatic intervention of the Danes.
-In the months that followed, she also reconnected with her maternal grandparents, whom the war had forced to abandon the name of Battenberg for that of Mountbatten.
-For Theodora, who now formed a duo with her elder sister Margarita, exile was synonymous with sadness but also an opportunity for long family reunions and walks in the mountains.
-Young adulthood
-
-Brief return to Greece
-
-On 2 October 1920, King Alexander, cousin of Theodora, was bitten by a domestic monkey during a walk in Tatoi.
-The death of the sovereign caused a violent institutional crisis in Greece.
-Humiliated, he retired abroad while a referendum reinstalled Constantine I on the throne.
-Prince Andrew was received triumphantly in Athens on 23 November 1920, and his wife and four daughters joined him a few days later.
-Theodora then returned to live in Corfu with her family.
-At the same time, Princess Alice found out that she was pregnant again.
-On 10 June 1921, the family welcomed Prince Philip of Greece and Denmark (later Prince Philip, Duke of Edinburgh, 1921–2021).
-The joy that surrounded this birth, however, was obscured by the absence of Prince Andrew, who joined the Greek forces in Asia Minor during the Occupation of Smyrna.
-Despite concerns about the war, Theodora and her siblings enjoyed life at Mon Repos, where they received a visit from their maternal grandmother and their aunt Louise in the spring of 1922.
-In the park near the palace, built on an ancient cemetery, the princesses devoted themselves to archeology and discovered some pottery, bronze pieces and bones.
-During this period, Theodora and her sisters also participated, for the first time, in a number of great social events.
-In March 1921, the princesses attended in Athens the wedding of their cousin Helen to Crown Prince Carol of Romania.
-In July 1922, they went to the United Kingdom to be bridesmaids at the wedding of their uncle Louis Mountbatten to the wealthy heiress Edwina Ashley.
-However, the military defeat of Greece against Turkey and the political unrest that it caused disrupted the life of Theodora and her family.
-In September 1922, Constantine I abdicated in favor of his eldest son, George II.
-A month later, Prince Andrew was arrested before being tried by a military tribunal, which declared him responsible for the defeat of the Sakarya.
-Saved from execution by the intervention of foreign chancelleries, the prince was condemned to banishment and cashiering.
-After a brief stop in Corfu, the prince and his relatives hurriedly left Greece aboard HMS Calypso in early December 1922.
-In the UK and France
-
-After a journey of several weeks, which led them successively to Italy, France and the United Kingdom, Theodora, her parents and her siblings settled in Saint-Cloud in 1923.
-Settled in a house adjoining the home of Princess Marie Bonaparte, the family depended for seven years on her generosity, and two other aunts of Theodora: first Princess Anastasia and then Lady Louis Mountbatten.
-Marie Bonaparte financed the studies of her nieces and nephew, while Lady Mountbatten got into the habit of offering her nieces her "used" clothes.
-In fact, Theodora's parents had little income and the children were the regular witnesses to their money problems and their difficulty in maintaining a household.
-Deprived of their Greek nationality after the proclamation of the Second Hellenic Republic in March 1924, Theodora and her family received Danish passports from their cousin King Christian X.
-Now of marrying age, the princess and her sister Margarita regularly left France for the United Kingdom, where they lived with their maternal grandmother, the Dowager Marchioness of Milford Haven.
-With their aunt Louise, who increasingly replaced their mother as a chaperone and confidante, the two young girls attended most of the events by British aristocracy during the 1920s, including balls and dances, birthdays and garden parties at Buckingham Palace, horse races, etc.
-However, the young girls' lack of fortune and their life in exile meant that they hardly had any suitors.
-This did not prevent them from rejoicing for their aunt Louise when she was asked by Gustaf Adolf, Crown Prince of Sweden, to marry him in June 1923.
-Alice's confinement
-
-Theodora, Margarita and Philip spent the summer of 1928 in Romania.
-Invited by Princess Helen, whose son Michael I was the same age as Philip, the two young women and their brother stayed for several weeks in Sinaia.
-At the time, Prince Nicholas of Romania was still single and Helen wanted to see him marry one of her relatives, but her plans for her brother-in-law to marry one of her cousins came to nothing.
-A few months after this trip, Alice began to suffer from psychological problems.
-Struck by a mental health crisis, the princess convinced herself that she possessed healing powers and that she was receiving divine messages about potential husbands for her daughters.
-Distraught by the situation, Prince Andrew finally made the decision to place his wife in a sanatorium.
-He took advantage of his family's stay in Darmstadt, Germany, in April 1930, to send Alice to a psychiatric hospital located in Kreuzlingen, Switzerland.
-In the months which followed, Theodora's three sisters successively married German princes.
-Sophie married Prince Christoph of Hesse in December 1930, followed by Cecilie who married Georg Donatus, Hereditary Grand Duke of Hesse in February 1931, and Margarita who married Gottfried, Hereditary Prince of Hohenlohe-Langenburg in April 1931.
-Theodora thus became the last of the four sisters to get married.
-Son of the last chancellor of the German Empire and titular Grand Duke of Baden from November 1929, Berthold was in charge of a substantial fortune.
-On 17 August 1931, Theodora and Berthold married in a double religious ceremony, both Lutheran and Orthodox, at the Neues Schloss in Baden-Baden, which resulted in a large family reunion, at which the bride's mother, Princess Alice, was not present.
-Concerned about her mother's fate, Theodora visited her several times in Kreuzlingen, but Alice did not always receive her daughter warmly.
-Aware that her brother had been living a chaotic existence since their mother's placement in a sanatorium, Theodora got Philip to go to school in Salem and to come and live with her and her husband in 1933.
-Over the years, Theodora welcomed several members of her family to Salem.
-The Dowager Marchioness of Milford Haven stayed on several occasions with her granddaughter, as did Prince Andrew.
-The princess also received her mother, once she had recovered from her health problems, and her sisters.
-Political upheavals
-
-While several of their relatives such as Cecilie and Margarita, (Theodora's sisters) as well as Marie Alexandra (Berthold's sister), gradually joined the Nazi Party, the Margrave and Margravine of Baden tried to keep their distance from the Nazi regime.
-A month later, King George II, Theodora's cousin, was reinstalled on the throne after a referendum.
-At the beginning of 1936, the banishment sentence issued in 1922 against Theodora's father Prince Andrew was lifted, which allowed him to stay in his country again.
-A regular target for the Hellenic press, the prince however chose to stay abroad for most of the year.
-Estranged from her husband since her confinement, Princess Alice made the choice to return and live in Athens, where she settled in November 1938.
-In the meantime, Theodora also returned to Greece with Berthold on the occasion of the marriage of Crown Prince Paul to Princess Frederica of Hanover in January 1938.
-Second World War and its aftermath
-
-Enlisted in the Wehrmacht shortly after the outbreak of the Second World War, Theodora's husband was seriously injured in the leg during the Battle of France in 1940.
-While Theodora engaged with the German Red Cross and other charitable organizations, Berthold took part in riskier actions, by attempting to hide Jews in his castle.
-Affected by the occupation of Greece by the Nazis, Theodora was cut off from a large part of her family because of the conflict.
-Her father, Prince Andrew, found himself isolated on the French Riviera and contacting him became very difficult.
-As for her mother, she spent the war in Athens, but managed to pay a few visits to her daughters in 1940, 1942, and 1944 Added to this was the anguish of knowing her brothers-in-law Christoph and Gottfried and her brother Philip were fighting in opposite camps.
-The war brought its share of tragedies for Theodora and her relatives.
-In October 1943, her sister Sophie's husband died in a plane crash while flying over the Apennine Mountains.
-Finally, in December 1944, her father Prince Andrew died in Monaco without having been able to see his children again.
-These events greatly affected Theodora, who then went through a period of depression.
-Post-war years
-
-Occupation of Germany and Philip's marriage
-
-The defeat of Germany and its occupation by the Allies brought new upheavals in the life of the former German princely families, several of whom (such as Hermine Reuss of Greiz, Joachim Ernst, Duke of Anhalt, or Georg, Prince of Saxe-Meiningen) perished in hands of the Soviets.
-Baden was placed under the administration of France and the United States, however, Berthold and Theodora were not under threat, and it did not take long for the margrave to find a leading social role.
-Berthold was thus able to reopen the Salem School, which he entrusted to his cousin, Prince George William of Hanover, in 1948.
-Two years earlier, the latter had married Theodora's sister Sophie (widowed since 1943), and the couple's move to Salem allowed Theodora to maintain close ties with her sister.
-Theodora's relationship with her brother Philip was, on the other hand, more complicated.
-Since 1939, he had been linked to Princess Elizabeth of the United Kingdom, and the two's engagement was officially announced on 10 July 1947.
-However, the ties of Philip's family to Germany frightened the British court and government, who feared that the public could be reminded of the Germanic origins of the House of Windsor if the royal family were publicly associated with former Nazi Party members.
-Prince Philip found himself unable to invite his sisters to his wedding.
-Aware of the difficulties their brother had to face, Theodora, Margarita and Sophie considered their sidelining wrong and hurtful.
-Harassed by the press, who submitted requests for interviews with them, Theodora and her sisters spent the day of 20 November 1947 at Marienburg Castle with their families.
-Invited by the Duke and Duchess of Brunswick, they celebrated the union of their brother in the company of their cousin Princess Elizabeth of Greece and Denmark and Prince Louis and Princess Margaret of Hesse and by Rhine.
-A few days later, the Greek princesses received a visit from the Queen of the Hellenes (who came to bring them a letter from their mother Princess Alice describing the wedding in detail) and the Duchess of Kent.
-Reintegration into royal circles
-
-Once the monarchy was restored in Greece in 1946, Theodora and her husband were regularly invited to Athens.
-Theodora and her family were also invited to Athens on the occasion of the marriage of Princess Sophia of Greece and Denmark and Juan Carlos, Prince of Asturias in 1962, and the marriage of King Constantine II and Princess Anne-Marie of Denmark in 1964.
-In the early 1950s, relations between the British royal family and their German relatives in turn normalized.
-Theodora, her sisters, their husbands and some of their children were thus invited to the coronation of Elizabeth II in 1953.
-Over the years, Theodora forged a close relationship with the British sovereign Queen Elizabeth II, who came to consider her as her favorite sister-in-law, according to the Spanish biographer Ricardo Mateos Sainz de Medrano.
-The marriages of their daughter Margarita to Prince Tomislav of Yugoslavia in 1957 and their son Maximilian to Archduchess Valerie of Austria in 1966 were the occasions for great meetings of the European aristocracy.
-In 1965, Theodora organized a large reception in Salem on the occasion of the official trip of Queen Elizabeth II and Prince Philip to West Germany.
-Final years
-
-At the end of the 1940s, Theodora began to suffer from heart problems.
-Over time, her health deteriorated and she appeared very diminished at the wedding of Prince Juan Carlos and Princess Sophia in 1962.
-Upset by the death of her husband, Theodora then hurriedly returned from Italy, where she was on vacation.
-Theodora's last years were affected by the establishment of the Regime of the Colonels in Greece and by the departure into exile of King Constantine II and his family.
-Hospitalized at the clinic of Doctor Büdingen in Konstanz, Theodora died on 16 October 1969, 7 weeks before her mother Princess Alice of Battenberg.
-Her funeral was held at the mausoleum of the Baden family in Salem in the presence of many members of the aristocracy, including her nephew Prince Charles, but not her brother Prince Philip who was on an official trip to Canada.
-In popular culture
-
-A brief allusion to Theodora and Berthold is made in the episode "Dear Mrs Kennedy" (season 2, episode 8) of the historical drama series The Crown (2017).
-Ancestry
-
-Through her father, she was a grandchild of George I of Greece and Olga Konstantinovna of Russia and a great-great-granddaughter of Emperor Nicholas I of Russia.
-Her mother was a granddaughter of Princess Alice, second daughter of Queen Victoria.
-Notes and references
-
-Notes
-
-References
-
-Bibliography
-
-On Theodora and the Greek royal family
-
-On Theodora and her German relatives
-
-Biographies of Theodora's relatives
+Frederick was forced to abdicate his throne at the end of World War I, when the former Grand Duchy of the German Empire joined the post-war German Republic.
+A year after his abdication, he asked the Oldenburg Diet for a yearly allowance of 150,000 marks, stating that his financial condition was "extremely precarious".
+In 1931, Frederick died in Rastede.
+Elisabeth died on 3 September 1955, having been widowed for 24 years.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -274,39 +117,9 @@ Biographies of Theodora's relatives
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -321,6 +134,23 @@ Biographies of Theodora's relatives
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -338,6 +168,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -405,29 +250,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -436,6 +273,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -448,6 +293,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -456,17 +303,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -494,6 +343,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -509,208 +442,322 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (60b82764-b318-4fff-a4f6-abb7624cb2a6)
- Call ID: 60b82764-b318-4fff-a4f6-abb7624cb2a6
+  AssignClass (e64d41ae-80c4-42a1-b8d3-98cc64f2debf)
+ Call ID: e64d41ae-80c4-42a1-b8d3-98cc64f2debf
   Args:
+    source: Elisabeth_of_Mecklenburg-Schwerin
     type: :Woman
-    source: :Theodora_of_Greece_and_Denmark
-  AssignClass (3ed5164c-4561-4259-96e5-7276b2987e38)
- Call ID: 3ed5164c-4561-4259-96e5-7276b2987e38
+  AssignClass (f878b8a7-b7e0-4cbd-9350-ad8b72e6d5c6)
+ Call ID: f878b8a7-b7e0-4cbd-9350-ad8b72e6d5c6
   Args:
-    source: :Prince_Andrew_of_Greece_and_Denmark
-    type: :Man
-  AssignClass (df70a479-04cb-4f64-a320-3ad769fbfda7)
- Call ID: df70a479-04cb-4f64-a320-3ad769fbfda7
+    type: :Person
+    source: Elisabeth_of_Mecklenburg-Schwerin
+  AddLiteral (e38b0329-57ce-4ae0-bbb3-46920c56ad81)
+ Call ID: e38b0329-57ce-4ae0-bbb3-46920c56ad81
   Args:
-    source: :Princess_Alice_of_Battenberg
-    type: :Woman
-  AssignClass (3b803903-8b39-492b-a8df-094692508642)
- Call ID: 3b803903-8b39-492b-a8df-094692508642
-  Args:
-    type: :Man
-    source: :Berthold_Margrave_of_Baden
-  AssignClass (be939a56-1c0e-49ba-b491-e32230e31c40)
- Call ID: be939a56-1c0e-49ba-b491-e32230e31c40
-  Args:
-    type: :Man
-    source: :Prince_Maximilian_of_Baden
-  AssignClass (78a278b2-0759-41d1-96b2-849bb859f677)
- Call ID: 78a278b2-0759-41d1-96b2-849bb859f677
-  Args:
-    source: :Margarita_of_Baden
-    type: :Woman
-  AssignClass (45511875-e87b-45bf-af44-a5895e2da75c)
- Call ID: 45511875-e87b-45bf-af44-a5895e2da75c
-  Args:
-    type: :Man
-    source: :Maximilian_of_Baden
-  AssignClass (2beb41fb-265e-4ef3-9c72-60592045ed12)
- Call ID: 2beb41fb-265e-4ef3-9c72-60592045ed12
-  Args:
-    type: :Man
-    source: :Ludwig_of_Baden
-  AssignClass (51bd099f-4746-4f1f-88bd-361b73dfc253)
- Call ID: 51bd099f-4746-4f1f-88bd-361b73dfc253
-  Args:
-    type: :Man
-    source: :Prince_Philip_Duke_of_Edinburgh
-  AssignClass (88bd7aa3-525c-498b-9563-474cacf3087b)
- Call ID: 88bd7aa3-525c-498b-9563-474cacf3087b
-  Args:
-    source: :Cecilie_of_Greece_and_Denmark
-    type: :Woman
-  AssignClass (04672478-1b3e-4cdd-9b72-948b2d58ccf9)
- Call ID: 04672478-1b3e-4cdd-9b72-948b2d58ccf9
-  Args:
-    source: :Sophie_of_Greece_and_Denmark
-    type: :Woman
-  AssignClass (a322a620-bcc6-4249-9801-37a5293c62fd)
- Call ID: a322a620-bcc6-4249-9801-37a5293c62fd
-  Args:
-    type: :Woman
-    source: :Margarita_of_Greece_and_Denmark
-  AddLiteral (e83b23ab-7010-4370-92d1-472fa096fe06)
- Call ID: e83b23ab-7010-4370-92d1-472fa096fe06
-  Args:
-    relation: :knownAs
-    source: :Theodora_of_Greece_and_Denmark
-    literal_type: xsd:string
-    literal_value: Theodora of Greece and Denmark
-  AddLiteral (9210e284-9aa6-4eda-8285-ebdf05b3c246)
- Call ID: 9210e284-9aa6-4eda-8285-ebdf05b3c246
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1906
     relation: :hasBirthYear
-    source: :Theodora_of_Greece_and_Denmark
-  AddLiteral (f9547cf0-0bc8-4462-9a9c-2ca267cf8dc2)
- Call ID: f9547cf0-0bc8-4462-9a9c-2ca267cf8dc2
+    literal_value: 1869
+    literal_type: xsd:integer
+    source: Elisabeth_of_Mecklenburg-Schwerin
+  AddLiteral (512ce820-fbb2-493b-b921-ef5e7ac18112)
+ Call ID: 512ce820-fbb2-493b-b921-ef5e7ac18112
   Args:
+    literal_value: 1955
     relation: :hasDeathYear
-    source: :Theodora_of_Greece_and_Denmark
+    source: Elisabeth_of_Mecklenburg-Schwerin
     literal_type: xsd:integer
-    literal_value: 1969
-  AddTriple (7c870758-bd51-42cd-8185-79f33d5140cf)
- Call ID: 7c870758-bd51-42cd-8185-79f33d5140cf
+  AssignClass (ace663c6-7113-469c-9d8d-31cdf2bfb54d)
+ Call ID: ace663c6-7113-469c-9d8d-31cdf2bfb54d
   Args:
-    source: :Theodora_of_Greece_and_Denmark
-    target: :Prince_Andrew_of_Greece_and_Denmark
+    source: Frederick_Francis_II
+    type: :Man
+  AssignClass (af6e9858-ca79-4da2-a120-dbc1f295271b)
+ Call ID: af6e9858-ca79-4da2-a120-dbc1f295271b
+  Args:
+    source: Frederick_Francis_II
+    type: :Ancestor
+  AssignClass (e6d803b2-f036-4332-81b5-9d6dd1704a13)
+ Call ID: e6d803b2-f036-4332-81b5-9d6dd1704a13
+  Args:
+    source: Marie_of_Schwarzburg-Rudolstadt
+    type: :Woman
+  AssignClass (3c854832-ae64-4f86-9546-044ca528e207)
+ Call ID: 3c854832-ae64-4f86-9546-044ca528e207
+  Args:
+    type: :Ancestor
+    source: Marie_of_Schwarzburg-Rudolstadt
+  AddTriple (7c1372c9-fd5b-4a53-b737-7a8d9a14bf77)
+ Call ID: 7c1372c9-fd5b-4a53-b737-7a8d9a14bf77
+  Args:
+    target: Frederick_Francis_II
+    source: Elisabeth_of_Mecklenburg-Schwerin
     relation: :hasFather
-  AddTriple (d4f23a7a-f5f0-49b1-b1d8-1a2f07bf2452)
- Call ID: d4f23a7a-f5f0-49b1-b1d8-1a2f07bf2452
+  AddTriple (3653e41a-026c-4779-b920-8872c501b4b2)
+ Call ID: 3653e41a-026c-4779-b920-8872c501b4b2
   Args:
+    target: Marie_of_Schwarzburg-Rudolstadt
+    source: Elisabeth_of_Mecklenburg-Schwerin
     relation: :hasMother
-    target: :Princess_Alice_of_Battenberg
-    source: :Theodora_of_Greece_and_Denmark
-  AddTriple (b05d0edb-b173-4a5c-baf1-b8a674bf1c06)
- Call ID: b05d0edb-b173-4a5c-baf1-b8a674bf1c06
+  AssignClass (f720287d-2eb5-4966-b45b-ee90cb471c3a)
+ Call ID: f720287d-2eb5-4966-b45b-ee90cb471c3a
   Args:
-    source: :Berthold_Margrave_of_Baden
-    relation: :hasFather
-    target: :Prince_Maximilian_of_Baden
-  AddTriple (d2062921-4ae7-4169-936c-d3abe003c378)
- Call ID: d2062921-4ae7-4169-936c-d3abe003c378
+    type: :Man
+    source: Frederick_Augustus_II
+  AssignClass (97dfb9c2-9591-4ed6-a352-64bb4de93ee1)
+ Call ID: 97dfb9c2-9591-4ed6-a352-64bb4de93ee1
   Args:
-    target: :Prince_Andrew_of_Greece_and_Denmark
-    relation: :hasFather
-    source: :Theodora_of_Greece_and_Denmark
-  AddTriple (d23eb31e-ce75-4694-9a35-0910c1631afd)
- Call ID: d23eb31e-ce75-4694-9a35-0910c1631afd
+    type: :Person
+    source: Frederick_Augustus_II
+  AddLiteral (d013e457-1203-45f3-b877-a9293b220732)
+ Call ID: d013e457-1203-45f3-b877-a9293b220732
   Args:
-    target: :Princess_Alice_of_Battenberg
-    relation: :hasMother
-    source: :Theodora_of_Greece_and_Denmark
-  AddTriple (e571607e-5b2a-47d0-8f43-a1b65730b8cf)
- Call ID: e571607e-5b2a-47d0-8f43-a1b65730b8cf
-  Args:
-    source: :Prince_Philip_Duke_of_Edinburgh
-    relation: :hasFather
-    target: :Prince_Andrew_of_Greece_and_Denmark
-  AddTriple (6e55539a-6e43-45df-8d22-84efd09e1a80)
- Call ID: 6e55539a-6e43-45df-8d22-84efd09e1a80
-  Args:
-    relation: :hasMother
-    target: :Princess_Alice_of_Battenberg
-    source: :Prince_Philip_Duke_of_Edinburgh
-  AddTriple (4a5c0cf7-5e04-4966-a2f9-8c9c04d69035)
- Call ID: 4a5c0cf7-5e04-4966-a2f9-8c9c04d69035
-  Args:
-    relation: :hasFather
-    target: :Prince_Andrew_of_Greece_and_Denmark
-    source: :Margarita_of_Greece_and_Denmark
-  AddTriple (4389259c-7ed3-4eae-a834-fd28d35ea855)
- Call ID: 4389259c-7ed3-4eae-a834-fd28d35ea855
-  Args:
-    relation: :hasMother
-    target: :Princess_Alice_of_Battenberg
-    source: :Margarita_of_Greece_and_Denmark
-  AddTriple (eb04c465-9211-4c78-b021-9b69b850bb14)
- Call ID: eb04c465-9211-4c78-b021-9b69b850bb14
-  Args:
-    source: :Cecilie_of_Greece_and_Denmark
-    target: :Prince_Andrew_of_Greece_and_Denmark
-    relation: :hasFather
-  AddTriple (12b1cba4-269b-44fb-98d7-51124bbc2cc3)
- Call ID: 12b1cba4-269b-44fb-98d7-51124bbc2cc3
-  Args:
-    target: :Princess_Alice_of_Battenberg
-    relation: :hasMother
-    source: :Cecilie_of_Greece_and_Denmark
-  AddTriple (ece723b0-9156-485e-a1b7-446182e32748)
- Call ID: ece723b0-9156-485e-a1b7-446182e32748
-  Args:
-    relation: :hasFather
-    target: :Prince_Andrew_of_Greece_and_Denmark
-    source: :Sophie_of_Greece_and_Denmark
-  AddTriple (dd0f8f8f-74b7-46fe-ba68-d4f7d1f6c024)
- Call ID: dd0f8f8f-74b7-46fe-ba68-d4f7d1f6c024
-  Args:
-    source: :Sophie_of_Greece_and_Denmark
-    target: :Princess_Alice_of_Battenberg
-    relation: :hasMother
-  AddTriple (8e0dad07-d505-4c7c-a697-33137349feab)
- Call ID: 8e0dad07-d505-4c7c-a697-33137349feab
-  Args:
-    source: :Margarita_of_Baden
-    relation: :hasFather
-    target: :Berthold_Margrave_of_Baden
-  AddTriple (07edc25d-7260-4f86-a287-d67e0dface3d)
- Call ID: 07edc25d-7260-4f86-a287-d67e0dface3d
-  Args:
-    source: :Margarita_of_Baden
-    relation: :hasMother
-    target: :Theodora_of_Greece_and_Denmark
-  AddTriple (587d7598-7894-48e9-9c34-248c6dd79261)
- Call ID: 587d7598-7894-48e9-9c34-248c6dd79261
-  Args:
-    target: :Berthold_Margrave_of_Baden
-    relation: :hasFather
-    source: :Maximilian_of_Baden
-  AddTriple (abf9c7a1-9bda-4789-a80e-18c8b5e432b9)
- Call ID: abf9c7a1-9bda-4789-a80e-18c8b5e432b9
-  Args:
-    target: :Theodora_of_Greece_and_Denmark
-    relation: :hasMother
-    source: :Maximilian_of_Baden
-  AddTriple (86901982-637a-4bc1-b7b6-e4f28447674f)
- Call ID: 86901982-637a-4bc1-b7b6-e4f28447674f
-  Args:
-    relation: :hasFather
-    target: :Berthold_Margrave_of_Baden
-    source: :Ludwig_of_Baden
-  AddTriple (c6950470-366a-4693-91fe-44881b444c33)
- Call ID: c6950470-366a-4693-91fe-44881b444c33
-  Args:
-    source: :Ludwig_of_Baden
-    relation: :hasMother
-    target: :Theodora_of_Greece_and_Denmark
-  AddLiteral (b6c441f3-de5a-461e-85e7-a2bd3f17299b)
- Call ID: b6c441f3-de5a-461e-85e7-a2bd3f17299b
-  Args:
-    source: :Theodora_of_Greece_and_Denmark
+    literal_type: xsd:integer
+    source: Elisabeth_of_Mecklenburg-Schwerin
     relation: :hasMarriageYear
-    literal_value: 1931
+    literal_value: 1896
+  AddTriple (fe2f365f-7225-4700-beeb-fb59080cc178)
+ Call ID: fe2f365f-7225-4700-beeb-fb59080cc178
+  Args:
+    relation: :hasRelation
+    source: Elisabeth_of_Mecklenburg-Schwerin
+    target: Frederick_Augustus_II
+  AssignClass (15526755-85e8-4130-aa0d-ff7d5f7a4c0f)
+ Call ID: 15526755-85e8-4130-aa0d-ff7d5f7a4c0f
+  Args:
+    type: :Man
+    source: Hendrik_Prince_Consort_of_the_Netherlands
+  AssignClass (97a55cfd-d3d0-4478-8156-c12f75e9b766)
+ Call ID: 97a55cfd-d3d0-4478-8156-c12f75e9b766
+  Args:
+    type: :Person
+    source: Hendrik_Prince_Consort_of_the_Netherlands
+  AddTriple (a6114eb8-6705-47fe-a5a1-a17b84626ba8)
+ Call ID: a6114eb8-6705-47fe-a5a1-a17b84626ba8
+  Args:
+    relation: :isSisterOf
+    source: Elisabeth_of_Mecklenburg-Schwerin
+    target: Hendrik_Prince_Consort_of_the_Netherlands
+  AssignClass (29867c0a-a52c-4d0d-90f2-e83748d70d41)
+ Call ID: 29867c0a-a52c-4d0d-90f2-e83748d70d41
+  Args:
+    source: Queen_Wilhelmina_of_the_Netherlands
+    type: :Woman
+  AssignClass (13b6d28f-c1e9-4edd-a401-c96406592217)
+ Call ID: 13b6d28f-c1e9-4edd-a401-c96406592217
+  Args:
+    type: :Person
+    source: Queen_Wilhelmina_of_the_Netherlands
+  AddTriple (6e8288fc-7ca9-4630-92b1-2f52ddb531c8)
+ Call ID: 6e8288fc-7ca9-4630-92b1-2f52ddb531c8
+  Args:
+    relation: :hasRelation
+    target: Queen_Wilhelmina_of_the_Netherlands
+    source: Hendrik_Prince_Consort_of_the_Netherlands
+  AssignClass (e2801af1-4c49-48e0-b20d-c2fac366d008)
+ Call ID: e2801af1-4c49-48e0-b20d-c2fac366d008
+  Args:
+    type: :Woman
+    source: Queen_Juliana_of_the_Netherlands
+  AssignClass (87ac3938-37ad-4045-a8e8-17c54e4d2e00)
+ Call ID: 87ac3938-37ad-4045-a8e8-17c54e4d2e00
+  Args:
+    type: :Person
+    source: Queen_Juliana_of_the_Netherlands
+  AddTriple (d5fd21be-67eb-4cac-95e1-45e3f17024b1)
+ Call ID: d5fd21be-67eb-4cac-95e1-45e3f17024b1
+  Args:
+    target: Queen_Juliana_of_the_Netherlands
+    source: Elisabeth_of_Mecklenburg-Schwerin
+    relation: :isAuntOf
+  AssignClass (331a194e-f5cc-4e82-be84-05b2cb3622f4)
+ Call ID: 331a194e-f5cc-4e82-be84-05b2cb3622f4
+  Args:
+    type: :Man
+    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
+  AssignClass (dbed8925-4304-4293-9a73-08258e49aa88)
+ Call ID: dbed8925-4304-4293-9a73-08258e49aa88
+  Args:
+    type: :Person
+    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
+  AddTriple (49e4939d-4a31-47cc-af8e-c4b92457801d)
+ Call ID: 49e4939d-4a31-47cc-af8e-c4b92457801d
+  Args:
+    relation: :isSiblingOf
+    target: Frederick_Francis_III_of_Mecklenburg-Schwerin
+    source: Elisabeth_of_Mecklenburg-Schwerin
+  AssignClass (0d8c509b-b2cc-446b-8d5e-9e9710250622)
+ Call ID: 0d8c509b-b2cc-446b-8d5e-9e9710250622
+  Args:
+    type: :Woman
+    source: Alexandrine_Queen_of_Denmark
+  AssignClass (accefa21-3b52-457c-b376-d88b4a2aaa77)
+ Call ID: accefa21-3b52-457c-b376-d88b4a2aaa77
+  Args:
+    type: :Person
+    source: Alexandrine_Queen_of_Denmark
+  AddTriple (4b7f089e-7a32-44e9-8dbb-0c3d090b55ce)
+ Call ID: 4b7f089e-7a32-44e9-8dbb-0c3d090b55ce
+  Args:
+    relation: :isAuntOf
+    target: Alexandrine_Queen_of_Denmark
+    source: Elisabeth_of_Mecklenburg-Schwerin
+  AssignClass (07db8b56-c82d-4fa9-bb80-fe2371ffe518)
+ Call ID: 07db8b56-c82d-4fa9-bb80-fe2371ffe518
+  Args:
+    source: Cecilie_German_Crown_Princess
+    type: :Woman
+  AssignClass (62e91fed-e4a8-46e8-a929-f4c3cc76dbde)
+ Call ID: 62e91fed-e4a8-46e8-a929-f4c3cc76dbde
+  Args:
+    type: :Person
+    source: Cecilie_German_Crown_Princess
+  AddTriple (1f12169e-4969-4cf8-ab20-b7c7905545c2)
+ Call ID: 1f12169e-4969-4cf8-ab20-b7c7905545c2
+  Args:
+    relation: :isAuntOf
+    source: Elisabeth_of_Mecklenburg-Schwerin
+    target: Cecilie_German_Crown_Princess
+  AssignClass (c66d52de-7d87-47f2-8201-82a0e9973024)
+ Call ID: c66d52de-7d87-47f2-8201-82a0e9973024
+  Args:
+    source: Marie_Grand_Duchess_of_Russia
+    type: :Woman
+  AssignClass (6db001d7-6e25-461d-ad32-e3eeb37a2b37)
+ Call ID: 6db001d7-6e25-461d-ad32-e3eeb37a2b37
+  Args:
+    type: :Person
+    source: Marie_Grand_Duchess_of_Russia
+  AddTriple (50c82d60-98df-45c4-885f-b4aec7da6f3c)
+ Call ID: 50c82d60-98df-45c4-885f-b4aec7da6f3c
+  Args:
+    relation: :isSiblingOf
+    target: Marie_Grand_Duchess_of_Russia
+    source: Elisabeth_of_Mecklenburg-Schwerin
+  AssignClass (ba24008d-eb8b-45aa-91a1-ea3b4fcff959)
+ Call ID: ba24008d-eb8b-45aa-91a1-ea3b4fcff959
+  Args:
+    type: :Man
+    source: Grand_Duke_Cyril_Vladimirovich_of_Russia
+  AssignClass (6f6a1f91-9d51-4471-b7fd-76db73f33655)
+ Call ID: 6f6a1f91-9d51-4471-b7fd-76db73f33655
+  Args:
+    source: Grand_Duke_Cyril_Vladimirovich_of_Russia
+    type: :Person
+  AddTriple (4a423bea-ce72-44f0-8955-db9367d22674)
+ Call ID: 4a423bea-ce72-44f0-8955-db9367d22674
+  Args:
+    relation: :hasMother
+    target: Marie_Grand_Duchess_of_Russia
+    source: Grand_Duke_Cyril_Vladimirovich_of_Russia
+  AssignClass (cc7cdfe0-c77b-4604-9468-602d02f59152)
+ Call ID: cc7cdfe0-c77b-4604-9468-602d02f59152
+  Args:
+    source: Paul_Frederick_Grand_Duke_of_Mecklenburg
+    type: :Man
+  AssignClass (b6a8a0b7-7f02-4abe-8391-d2520dc5d5e3)
+ Call ID: b6a8a0b7-7f02-4abe-8391-d2520dc5d5e3
+  Args:
+    type: :Ancestor
+    source: Paul_Frederick_Grand_Duke_of_Mecklenburg
+  AssignClass (8b68078b-cf3d-41e0-a252-52e48487b909)
+ Call ID: 8b68078b-cf3d-41e0-a252-52e48487b909
+  Args:
+    type: :Woman
+    source: Princess_Alexandrine_of_Prussia
+  AssignClass (5170b088-0aac-42f9-aa66-addcfa350e29)
+ Call ID: 5170b088-0aac-42f9-aa66-addcfa350e29
+  Args:
+    type: :Ancestor
+    source: Princess_Alexandrine_of_Prussia
+  AddTriple (6b38c677-4706-463c-8283-26243810774a)
+ Call ID: 6b38c677-4706-463c-8283-26243810774a
+  Args:
+    source: Frederick_Francis_II
+    target: Paul_Frederick_Grand_Duke_of_Mecklenburg
+    relation: :hasFather
+  AddTriple (08e0d54d-b8d0-4a26-b424-a0793bdae17d)
+ Call ID: 08e0d54d-b8d0-4a26-b424-a0793bdae17d
+  Args:
+    source: Frederick_Francis_II
+    target: Princess_Alexandrine_of_Prussia
+    relation: :hasMother
+  AssignClass (db9addbf-fb17-4e15-8330-df47f9c76ceb)
+ Call ID: db9addbf-fb17-4e15-8330-df47f9c76ceb
+  Args:
+    type: :Man
+    source: Prince_Adolph_of_Schwarzburg-Rudolstadt
+  AssignClass (fde07818-af64-4350-a98d-00aae291ae48)
+ Call ID: fde07818-af64-4350-a98d-00aae291ae48
+  Args:
+    type: :Ancestor
+    source: Prince_Adolph_of_Schwarzburg-Rudolstadt
+  AssignClass (da33a5bc-6f72-4465-b918-e89e3c4d5f36)
+ Call ID: da33a5bc-6f72-4465-b918-e89e3c4d5f36
+  Args:
+    type: :Woman
+    source: Princess_Mathilde_of_Schönburg-Waldenburg
+  AssignClass (63b3068b-26ca-49fe-aad3-483ad615fe56)
+ Call ID: 63b3068b-26ca-49fe-aad3-483ad615fe56
+  Args:
+    type: :Ancestor
+    source: Princess_Mathilde_of_Schönburg-Waldenburg
+  AddTriple (d3f44d6e-e37b-4c7c-a96c-5d699f898f08)
+ Call ID: d3f44d6e-e37b-4c7c-a96c-5d699f898f08
+  Args:
+    source: Marie_of_Schwarzburg-Rudolstadt
+    target: Prince_Adolph_of_Schwarzburg-Rudolstadt
+    relation: :hasFather
+  AddTriple (fc16434c-a9cf-42d2-aabd-3b22280ca1ab)
+ Call ID: fc16434c-a9cf-42d2-aabd-3b22280ca1ab
+  Args:
+    relation: :hasMother
+    source: Marie_of_Schwarzburg-Rudolstadt
+    target: Princess_Mathilde_of_Schönburg-Waldenburg
+  AssignClass (a1bd1ee1-d5f3-4a7e-8b1b-2a4bf910f207)
+ Call ID: a1bd1ee1-d5f3-4a7e-8b1b-2a4bf910f207
+  Args:
+    source: Elisabeth_Anna
+    type: :Woman
+  AssignClass (7ab7a24a-f965-471c-bb1d-d0c2803a5314)
+ Call ID: 7ab7a24a-f965-471c-bb1d-d0c2803a5314
+  Args:
+    source: Elisabeth_Anna
+    type: :Ancestor
+  AddTriple (a553d728-1593-423f-ac22-a299307fdd0c)
+ Call ID: a553d728-1593-423f-ac22-a299307fdd0c
+  Args:
+    relation: :hasRelation
+    source: Frederick_Augustus_II
+    target: Elisabeth_Anna
+  AssignClass (85c89322-8ddc-4a33-b52a-5e575a4261d8)
+ Call ID: 85c89322-8ddc-4a33-b52a-5e575a4261d8
+  Args:
+    source: Duchess_Sophia_Charlotte_of_Oldenburg
+    type: :Woman
+  AssignClass (ddff7c25-528d-46f5-b03e-856e16cdb0b9)
+ Call ID: ddff7c25-528d-46f5-b03e-856e16cdb0b9
+  Args:
+    type: :Person
+    source: Duchess_Sophia_Charlotte_of_Oldenburg
+  AddTriple (388ec372-5003-406d-8930-51fcc54a38db)
+ Call ID: 388ec372-5003-406d-8930-51fcc54a38db
+  Args:
+    relation: :hasMother
+    target: Elisabeth_Anna
+    source: Duchess_Sophia_Charlotte_of_Oldenburg
+  AddTriple (0aa260ee-be75-426d-80f0-104ce50b36d3)
+ Call ID: 0aa260ee-be75-426d-80f0-104ce50b36d3
+  Args:
+    relation: :hasFather
+    target: Frederick_Augustus_II
+    source: Duchess_Sophia_Charlotte_of_Oldenburg
+  AddLiteral (3c9d9d37-0572-4c23-b190-519678d054c5)
+ Call ID: 3c9d9d37-0572-4c23-b190-519678d054c5
+  Args:
     literal_type: xsd:integer
-  Finish (3df853bb-3996-4e83-ad23-683f7721ebba)
- Call ID: 3df853bb-3996-4e83-ad23-683f7721ebba
+    source: Frederick_Augustus_II
+    relation: :hasDeathYear
+    literal_value: 1931
+  Finish (1ac3fca9-af9c-4730-b047-13390ae23adb)
+ Call ID: 1ac3fca9-af9c-4730-b047-13390ae23adb
   Args:

@@ -16,38 +16,77 @@
       "qid": "Q13091129",
       "label": "Princess Alexandra of Greece",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Marina_Karella",
       "qid": "Q2623984",
       "label": "Marina Karella",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_Michael_of_Greece_and_Denmark",
       "qid": "Q724825",
       "label": "Prince Michael of Greece and Denmark",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_Christopher_of_Greece_and_Denmark",
       "qid": "Q447757",
       "label": "Prince Christopher of Greece and Denmark",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Françoise_of_Orléans",
       "qid": "Q577228",
       "label": "Princess Françoise of Orléans",
       "distance": 2,
-      "gender": "female"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#George_I_of_Greece",
+      "qid": "Q17142",
+      "label": "George I of Greece",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Olga_Constantinovna_of_Russia",
+      "qid": "Q155178",
+      "label": "Olga Constantinovna of Russia",
+      "distance": 3,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Jean_dOrléans_1",
+      "qid": "Q578791",
+      "label": "Prince Jean d’Orléans",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
+    {
+      "extracted_uri": "http://example.org/data/George_I_of_Greece",
+      "extracted_local_name": "George_I_of_Greece",
+      "embedding_text": "George I of Greece",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#George_I_of_Greece",
+      "ground_truth_qid": "Q17142",
+      "ground_truth_label": "George I of Greece",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "George I of Greece",
+      "best_candidate_label": "George I of Greece",
+      "best_candidate_qid": "Q17142",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
     {
       "extracted_uri": "http://example.org/data/Marina_Karella",
       "extracted_local_name": "Marina_Karella",
@@ -59,11 +98,47 @@
       "ground_truth_qid": "Q2623984",
       "ground_truth_label": "Marina Karella",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Marina Karella",
       "best_candidate_label": "Marina Karella",
       "best_candidate_qid": "Q2623984",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Olga_Constantinovna_of_Russia",
+      "extracted_local_name": "Olga_Constantinovna_of_Russia",
+      "embedding_text": "Olga Constantinovna of Russia",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Olga_Constantinovna_of_Russia",
+      "ground_truth_qid": "Q155178",
+      "ground_truth_label": "Olga Constantinovna of Russia",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Olga Constantinovna of Russia",
+      "best_candidate_label": "Olga Constantinovna of Russia",
+      "best_candidate_qid": "Q155178",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Christopher_of_Greece_and_Denmark",
+      "extracted_local_name": "Prince_Christopher_of_Greece_and_Denmark",
+      "embedding_text": "Prince Christopher of Greece and Denmark",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Christopher_of_Greece_and_Denmark",
+      "ground_truth_qid": "Q447757",
+      "ground_truth_label": "Prince Christopher of Greece and Denmark",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Christopher of Greece and Denmark",
+      "best_candidate_label": "Prince Christopher of Greece and Denmark",
+      "best_candidate_qid": "Q447757",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -77,11 +152,11 @@
       "ground_truth_qid": "Q724825",
       "ground_truth_label": "Prince Michael of Greece and Denmark",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Prince Michael of Greece and Denmark",
       "best_candidate_label": "Prince Michael of Greece and Denmark",
       "best_candidate_qid": "Q724825",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -95,12 +170,66 @@
       "ground_truth_qid": "Q13091129",
       "ground_truth_label": "Princess Alexandra of Greece",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Alexandra of Greece",
       "best_candidate_label": "Princess Alexandra of Greece",
       "best_candidate_qid": "Q13091129",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Jean_Duke_of_Guise",
+      "extracted_local_name": "Prince_Jean_Duke_of_Guise",
+      "embedding_text": "Prince Jean Duke of Guise",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.9824561403508771,
+      "ground_truth_uri": "http://example.com/data#Prince_Jean_dOrléans_1",
+      "ground_truth_qid": "Q578791",
+      "ground_truth_label": "Prince Jean d’Orléans",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Jean, Duke of Guise",
+      "best_candidate_label": "Prince Jean d’Orléans",
+      "best_candidate_qid": "Q578791",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.9824561403508771
+    },
+    {
+      "extracted_uri": "http://example.org/data/Christian_IX_of_Denmark",
+      "extracted_local_name": "Christian_IX_of_Denmark",
+      "embedding_text": "Christian IX of Denmark",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Christo",
+      "best_candidate_label": "Prince Christopher of Greece and Denmark",
+      "best_candidate_qid": "Q447757",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4666666666666667
+    },
+    {
+      "extracted_uri": "http://example.org/data/Constantine_II_of_Greece",
+      "extracted_local_name": "Constantine_II_of_Greece",
+      "embedding_text": "Constantine II of Greece",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Michel de Grece",
+      "best_candidate_label": "Prince Michael of Greece and Denmark",
+      "best_candidate_qid": "Q724825",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.46153846153846156
     },
     {
       "extracted_uri": "http://example.org/data/Nicolas_Mirzayantz",
@@ -114,11 +243,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Michel de Grece",
-      "best_candidate_label": "Prince Michael of Greece and Denmark",
-      "best_candidate_qid": "Q724825",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.30303030303030304
+      "best_candidate_match_text": "Jean Pierre Clément Marie d’Orléans",
+      "best_candidate_label": "Prince Jean d’Orléans",
+      "best_candidate_qid": "Q578791",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.37735849056603776
     },
     {
       "extracted_uri": "http://example.org/data/Princess_Olga",
@@ -135,13 +264,13 @@
       "best_candidate_match_text": "Françoise of Orléans",
       "best_candidate_label": "Princess Françoise of Orléans",
       "best_candidate_qid": "Q577228",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.42424242424242425
     }
   ],
   "summary": {
-    "entities_total": 5,
-    "entities_matched": 3,
-    "entities_unmatched": 2
+    "entities_total": 11,
+    "entities_matched": 7,
+    "entities_unmatched": 4
   }
 }

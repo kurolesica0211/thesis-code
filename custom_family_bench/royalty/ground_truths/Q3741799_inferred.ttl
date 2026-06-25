@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Julia_Ogilvy a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Julia Ogilvy"^^xsd:string ;
+    data:posIndicesFull "169:193"^^xsd:string ;
+    data:posIndicesPart "346:352"^^xsd:string,
+        "434:440"^^xsd:string ;
+    data:wdtLink wdt:Q15956270 ;
+    :alsoKnownAs "Julia Caroline Rawlinson"^^xsd:string,
+        "Julia Rawlinson"^^xsd:string ;
+    :hasChild data:Flora_Vesterberg ;
+    :hasDaughter data:Flora_Vesterberg ;
+    :hasRelation data:Flora_Vesterberg,
+        data:Julia_Ogilvy ;
+    :hasSex data:female ;
+    :hasSister data:Julia_Ogilvy ;
+    :isAncestorOf data:Flora_Vesterberg ;
+    :isAuntOf data:Flora_Vesterberg ;
+    :isBloodrelationOf data:Julia_Ogilvy ;
+    :isMotherOf data:Flora_Vesterberg ;
+    :isParentOf data:Flora_Vesterberg ;
+    :isSiblingOf data:Julia_Ogilvy ;
+    :isSisterOf data:Julia_Ogilvy .
+
+data:Flora_Vesterberg a :Person,
+        :Woman ;
+    rdfs:label "Flora Vesterberg"^^xsd:string ;
+    data:wdtLink wdt:Q3741799 ;
+    :alsoKnownAs "Flora Ogilvy"^^xsd:string ;
+    :hasAncestor data:Julia_Ogilvy ;
+    :hasMother data:Julia_Ogilvy ;
+    :hasParent data:Julia_Ogilvy ;
+    :hasRelation data:Flora_Vesterberg,
+        data:Julia_Ogilvy ;
+    :hasSex data:female ;
+    :hasSister data:Flora_Vesterberg ;
+    :isBloodrelationOf data:Flora_Vesterberg ;
+    :isChildOf data:Julia_Ogilvy ;
+    :isDaughterOf data:Julia_Ogilvy ;
+    :isSiblingOf data:Flora_Vesterberg ;
+    :isSisterOf data:Flora_Vesterberg .
+

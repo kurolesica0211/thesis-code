@@ -1,0 +1,140 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "112:128"^^xsd:string,
+        "383:398"^^xsd:string,
+        "441:457"^^xsd:string,
+        "826:841"^^xsd:string,
+        "842:858"^^xsd:string,
+        "96:111"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasRelation data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isBloodrelationOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:Elizabeth_Cator a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elizabeth Cator"^^xsd:string ;
+    data:posIndicesFull "278:302"^^xsd:string ;
+    data:wdtLink wdt:Q75240065 ;
+    :alsoKnownAs "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth Margaret Bowes-Lyon"^^xsd:string,
+        "Elizabeth Margaret Cator"^^xsd:string ;
+    :hasChild data:Albemarle_Bowes-Lyon ;
+    :hasRelation data:Albemarle_Bowes-Lyon,
+        data:Elizabeth_Cator ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_Cator ;
+    :hasSon data:Albemarle_Bowes-Lyon ;
+    :isAncestorOf data:Albemarle_Bowes-Lyon ;
+    :isAuntOf data:Albemarle_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Cator ;
+    :isMotherOf data:Albemarle_Bowes-Lyon ;
+    :isParentOf data:Albemarle_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Cator ;
+    :isSisterOf data:Elizabeth_Cator .
+
+data:Michael_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Michael Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "227:261"^^xsd:string ;
+    data:posIndicesPart "542:547"^^xsd:string,
+        "548:552"^^xsd:string,
+        "646:651"^^xsd:string,
+        "652:656"^^xsd:string,
+        "904:909"^^xsd:string,
+        "910:914"^^xsd:string ;
+    data:wdtLink wdt:Q63806478 ;
+    :alsoKnownAs "Hon. Michael Bowes-Lyon"^^xsd:string,
+        "Hon. Michael Claude Hamilton Bowes-Lyon"^^xsd:string,
+        "Michael Claude Hamilton Bowes-Lyon"^^xsd:string ;
+    :hasBrother data:Michael_Bowes-Lyon ;
+    :hasChild data:Albemarle_Bowes-Lyon ;
+    :hasRelation data:Albemarle_Bowes-Lyon,
+        data:Michael_Bowes-Lyon ;
+    :hasSex data:male ;
+    :hasSon data:Albemarle_Bowes-Lyon ;
+    :isAncestorOf data:Albemarle_Bowes-Lyon ;
+    :isBloodrelationOf data:Michael_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Bowes-Lyon ;
+    :isFatherOf data:Albemarle_Bowes-Lyon ;
+    :isParentOf data:Albemarle_Bowes-Lyon ;
+    :isSiblingOf data:Michael_Bowes-Lyon ;
+    :isUncleOf data:Albemarle_Bowes-Lyon .
+
+data:Albemarle_Bowes-Lyon a :Man,
+        :Person ;
+    rdfs:label "Albemarle Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "0:28"^^xsd:string,
+        "8:28"^^xsd:string ;
+    data:posIndicesPart "141:146"^^xsd:string,
+        "147:151"^^xsd:string,
+        "542:547"^^xsd:string,
+        "548:552"^^xsd:string,
+        "646:651"^^xsd:string,
+        "652:656"^^xsd:string,
+        "904:909"^^xsd:string,
+        "910:914"^^xsd:string ;
+    data:wdtLink wdt:Q75248478 ;
+    :alsoKnownAs "Hon. Albemarle Bowes-Lyon"^^xsd:string,
+        "Hon. Michael Albemarle Bowes-Lyon"^^xsd:string,
+        "Hon. Michael Bowes-Lyon"^^xsd:string,
+        "Michael Albemarle Bowes-Lyon"^^xsd:string,
+        "Michael Bowes-Lyon"^^xsd:string ;
+    :hasAncestor data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :hasBrother data:Albemarle_Bowes-Lyon ;
+    :hasFather data:Michael_Bowes-Lyon ;
+    :hasMother data:Elizabeth_Cator ;
+    :hasParent data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :hasRelation data:Albemarle_Bowes-Lyon,
+        data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Albemarle_Bowes-Lyon ;
+    :isBrotherOf data:Albemarle_Bowes-Lyon ;
+    :isChildOf data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :isSiblingOf data:Albemarle_Bowes-Lyon ;
+    :isSonOf data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon .
+

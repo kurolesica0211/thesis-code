@@ -85,36 +85,46 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Beatrix*
+Infante Juan, Count of Barcelona (Juan Carlos Teresa Silverio Alfonso de Borbón y Battenberg; 20 June 1913 – 1 April 1993), was a claimant to the Spanish throne as Juan III.
+He was the third son and designated heir of King Alfonso XIII and Victoria Eugenie of Battenberg.
+Juan's son Juan Carlos I became King of Spain when Spain's constitutional monarchy was restored in 1975.
+Early life
+
+Infante Juan was born at the Palace of San Ildefonso.
+Owing to the renunciations in 1933 of his brothers Alfonso, Prince of Asturias, and Infante Jaime, Duke of Segovia, Infante Juan became first in line to the defunct Spanish throne.
+He thus received the title Prince of Asturias while serving with the Royal Navy in Bombay.
+He married Princess María de las Mercedes of Bourbon-Two Sicilies (1910–2000), known in Spain as Doña María de las Mercedes de Borbón-Dos Sicilias y Orleans, in Rome on 12 October 1935.
+Children
+
+They had four children:
 
 
-Princess Margriet*Pieter van Vollenhoven*
+They lived in Cannes and Rome, and, with the outbreak of World War II, they moved to Lausanne to live with his mother, Victoria Eugenie.
+Together with their children Pilar and Juan Carlos, they took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
+On this trip, Juan Carlos met the hosts' 15-year-old daughter, Sofia, his future wife, for the first time.
+Claim to the Spanish throne
 
-
-Prince Floris Frederik Martijn of Orange-Nassau, van Vollenhoven (born 10 April 1975) is the fourth and youngest son of Princess Margriet of the Netherlands and Pieter van Vollenhoven.
-Prince Floris has three older brothers: Prince Maurits, Prince Bernhard, Prince Pieter-Christiaan
-
-
-Marriage and children
-
-Prince Floris announced his engagement to Aimée Söhngen, the daughter of Hans Söhngen and Eleonoor Stammeijer, on 25 February 2005.
-Prince Floris had been 10th in the line of succession to the Dutch throne but decided not to seek parliamentary approval for his marriage, as would be required in the Netherlands.
-Prince Floris and Princess Aimée's first child, Magali Margriet Eleonoor van Vollenhoven, was born at VU University Medical Center in Amsterdam on 9 October 2007.
-She is named for Aimée's sister, Magali Söhngen, and her mother Eleonoor, as well as Princess Margriet.
-Their second child, Eliane Sophia Carolina van Vollenhoven, was born at VU University Medical Center in Amsterdam on 5 July 2009.
-Their third child, a son named Willem Jan Johannes Pieter Floris, was born at HMC Bronovo  in The Hague on 1 July 2013.
-Ancestry
-
-References
-
-2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
-3 title granted by Royal Decree to descendants of Princess Irene
+In 1931, Juan was subject to dynastic negotiations between the Alfonsists and the Carlists, concluded in the so-called Pact of Territet, which was never implemented.
+Juan became heir apparent to the defunct Spanish throne after the renunciations of his two older brothers, Alfonso and Jaime, in 1933.
+To assert his claim to the throne, following his father's death (in 1941) he used the title of Count of Barcelona, a sovereign title associated with the Spanish crown.
+Spain runs the risk of being dragged into a new fratricidal conflict and of finding itself totally isolated from the world.
+When General Franco declared Spain a monarchy in 1947, he characterized it as a "restoration".
+However, Franco was afraid that Juan would roll back the Spanish State because he favoured constitutional monarchy, which would restore parliamentary democracy.
+As a result, in 1969, Franco passed over Juan in favour of Juan's son, Juan Carlos, who Franco believed would be more likely to continue the dictatorship after his death.
+Juan Carlos later surprised many by his support of democratising Spain.
+Franco and Juan did not have a good relationship, with the latter constantly pressing Franco to restore the monarchy.
+Relations soured further when Juan called Franco an "illegitimate usurper".
+Juan formally renounced his rights to the Spanish throne eight years after being displaced as recognised heir to the throne by Franco, and two years after his son, Juan Carlos, had become king.
+In return, his son officially granted him the title of Count of Barcelona, which he had claimed for so long.
+After his death in 1993, he was buried with honours due a king, under the name Juan III (his title if he had become king) in the Royal Crypt of the monastery of San Lorenzo de El Escorial, near Madrid.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -130,39 +140,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -177,6 +157,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -194,6 +191,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,29 +273,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -292,6 +296,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -304,6 +316,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -312,17 +326,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -350,6 +366,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -365,158 +465,262 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ed2ab4d5-ee11-4c49-9c58-8a2efeedf19b)
- Call ID: ed2ab4d5-ee11-4c49-9c58-8a2efeedf19b
+  AssignClass (1dec90c7-7351-4f2f-a74f-e41ac5c307e8)
+ Call ID: 1dec90c7-7351-4f2f-a74f-e41ac5c307e8
   Args:
     type: :Man
-    source: Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven
-  AssignClass (03377b27-e595-45ab-a81e-bf4773009cf2)
- Call ID: 03377b27-e595-45ab-a81e-bf4773009cf2
+    source: :Juan
+  AssignClass (c32fb865-2443-4b86-a231-f4799f81be1f)
+ Call ID: c32fb865-2443-4b86-a231-f4799f81be1f
+  Args:
+    source: :Juan
+    type: :Person
+  AddLiteral (47176650-4faf-4b5a-9bee-2d22949517fa)
+ Call ID: 47176650-4faf-4b5a-9bee-2d22949517fa
+  Args:
+    literal_value: 1913
+    source: :Juan
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (89a1f766-a0c6-47d2-a07c-981b2bb4f965)
+ Call ID: 89a1f766-a0c6-47d2-a07c-981b2bb4f965
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: :Juan
+    literal_value: 1993
+  AddTriple (8edb9d31-2454-41f1-9fe2-9e267235475f)
+ Call ID: 8edb9d31-2454-41f1-9fe2-9e267235475f
+  Args:
+    target: :Male
+    relation: :hasSex
+    source: :Juan
+  AssignClass (0b7e4d61-9593-4dcd-a08b-435ccec99aaa)
+ Call ID: 0b7e4d61-9593-4dcd-a08b-435ccec99aaa
+  Args:
+    type: :Man
+    source: :AlfonsoXIII
+  AssignClass (f7eed36a-8981-4a6a-a3c5-65e43ce6cfe0)
+ Call ID: f7eed36a-8981-4a6a-a3c5-65e43ce6cfe0
+  Args:
+    type: :Person
+    source: :AlfonsoXIII
+  AssignClass (24bef911-97ca-41b2-9531-6801abea9e15)
+ Call ID: 24bef911-97ca-41b2-9531-6801abea9e15
   Args:
     type: :Woman
-    source: Princess_Margriet_of_the_Netherlands
-  AssignClass (06d06762-ef26-4c74-b171-113c6921e701)
- Call ID: 06d06762-ef26-4c74-b171-113c6921e701
+    source: :VictoriaEugenie
+  AssignClass (53086606-7571-4a42-84ba-667b783f67e2)
+ Call ID: 53086606-7571-4a42-84ba-667b783f67e2
+  Args:
+    source: :VictoriaEugenie
+    type: :Person
+  AddTriple (3c85e349-cb14-4f2b-a51e-bb142e5afdd7)
+ Call ID: 3c85e349-cb14-4f2b-a51e-bb142e5afdd7
+  Args:
+    target: :Juan
+    relation: :isFatherOf
+    source: :AlfonsoXIII
+  AddTriple (6b5675ef-83e5-4895-97a9-055349fca2ca)
+ Call ID: 6b5675ef-83e5-4895-97a9-055349fca2ca
+  Args:
+    target: :Juan
+    relation: :isMotherOf
+    source: :VictoriaEugenie
+  AssignClass (8f0301c2-143c-4734-be2e-281b14f7f952)
+ Call ID: 8f0301c2-143c-4734-be2e-281b14f7f952
   Args:
     type: :Man
-    source: Pieter_van_Vollenhoven
-  AssignClass (597711bc-b0ac-4366-8aed-e4e33c5acfef)
- Call ID: 597711bc-b0ac-4366-8aed-e4e33c5acfef
+    source: :JuanCarlosI
+  AssignClass (35fca559-c704-440b-a74e-aad625ebe3e9)
+ Call ID: 35fca559-c704-440b-a74e-aad625ebe3e9
   Args:
+    type: :Person
+    source: :JuanCarlosI
+  AddTriple (8699108e-937e-4c1f-8592-3ac34949d2ac)
+ Call ID: 8699108e-937e-4c1f-8592-3ac34949d2ac
+  Args:
+    target: :JuanCarlosI
+    relation: :isFatherOf
+    source: :Juan
+  AssignClass (52d0ec88-e2ef-4181-8ca5-e11570177721)
+ Call ID: 52d0ec88-e2ef-4181-8ca5-e11570177721
+  Args:
+    source: :AlfonsoPrinceOfAsturias
     type: :Man
-    source: Prince_Maurits
-  AssignClass (dc9d094f-5295-49f7-a6b9-114e79123eab)
- Call ID: dc9d094f-5295-49f7-a6b9-114e79123eab
+  AssignClass (ffade187-d03a-42cd-9f2a-b9e12489c2eb)
+ Call ID: ffade187-d03a-42cd-9f2a-b9e12489c2eb
   Args:
+    type: :Person
+    source: :AlfonsoPrinceOfAsturias
+  AssignClass (3fddd8ca-05ee-4ef2-baec-bfd76f8e0955)
+ Call ID: 3fddd8ca-05ee-4ef2-baec-bfd76f8e0955
+  Args:
+    source: :JaimeDukeOfSegovia
     type: :Man
-    source: Prince_Bernhard
-  AssignClass (94f6ec0d-a97f-4c4a-af28-d1c7aa2c6dac)
- Call ID: 94f6ec0d-a97f-4c4a-af28-d1c7aa2c6dac
+  AssignClass (c4ed0dcb-8594-4139-a4c7-a4bd2b6da274)
+ Call ID: c4ed0dcb-8594-4139-a4c7-a4bd2b6da274
   Args:
-    type: :Man
-    source: Prince_Pieter-Christiaan
-  AssignClass (27d42cfc-bee6-4304-b702-ecbfaa562578)
- Call ID: 27d42cfc-bee6-4304-b702-ecbfaa562578
+    source: :JaimeDukeOfSegovia
+    type: :Person
+  AddTriple (a329dbd4-2f4b-4713-9b20-7a0eacea8664)
+ Call ID: a329dbd4-2f4b-4713-9b20-7a0eacea8664
   Args:
-    type: :Woman
-    source: Aimée_Söhngen
-  AssignClass (4fafecc7-d92f-4bb8-a080-ac4aa470ce7f)
- Call ID: 4fafecc7-d92f-4bb8-a080-ac4aa470ce7f
-  Args:
-    type: :Man
-    source: Hans_Söhngen
-  AssignClass (bb6a3b12-1034-4fad-88e9-5e8ef60d5dcb)
- Call ID: bb6a3b12-1034-4fad-88e9-5e8ef60d5dcb
-  Args:
-    type: :Woman
-    source: Eleonoor_Stammeijer
-  AssignClass (5c148a12-ea58-4781-9134-7af961ab3398)
- Call ID: 5c148a12-ea58-4781-9134-7af961ab3398
-  Args:
-    type: :Woman
-    source: Magali_Margriet_Eleonoor_van_Vollenhoven
-  AssignClass (c72e8f0e-dc92-499e-895a-658a6fe8c3b5)
- Call ID: c72e8f0e-dc92-499e-895a-658a6fe8c3b5
-  Args:
-    type: :Woman
-    source: Eliane_Sophia_Carolina_van_Vollenhoven
-  AssignClass (5aca818b-3e42-4fc2-8f5e-8293c8eee8ff)
- Call ID: 5aca818b-3e42-4fc2-8f5e-8293c8eee8ff
-  Args:
-    type: :Man
-    source: Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven
-  AssignClass (cc855df5-270b-4438-8a53-53d7af1d2e9c)
- Call ID: cc855df5-270b-4438-8a53-53d7af1d2e9c
-  Args:
-    type: :Woman
-    source: Magali_Söhngen
-  AddTriple (ee807e20-2ad6-4361-ae50-9170afff4933)
- Call ID: ee807e20-2ad6-4361-ae50-9170afff4933
-  Args:
-    source: Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven
-    relation: :hasFather
-    target: Pieter_van_Vollenhoven
-  AddTriple (8e2bc0f3-6314-4617-adc1-7bc7f86f5baa)
- Call ID: 8e2bc0f3-6314-4617-adc1-7bc7f86f5baa
-  Args:
-    target: Princess_Margriet_of_the_Netherlands
-    relation: :hasMother
-    source: Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven
-  AddTriple (148ee54c-8f2c-4c40-a582-935d0da276cb)
- Call ID: 148ee54c-8f2c-4c40-a582-935d0da276cb
-  Args:
+    target: :Juan
     relation: :isBrotherOf
-    source: Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven
-    target: Prince_Maurits
-  AddTriple (5e4f2208-2226-429c-a1ce-9869b7d6dddb)
- Call ID: 5e4f2208-2226-429c-a1ce-9869b7d6dddb
+    source: :AlfonsoPrinceOfAsturias
+  AddTriple (303acbd4-dbdb-45b7-a4b2-18feec85949f)
+ Call ID: 303acbd4-dbdb-45b7-a4b2-18feec85949f
   Args:
-    target: Prince_Bernhard
+    source: :JaimeDukeOfSegovia
     relation: :isBrotherOf
-    source: Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven
-  AddTriple (60055f63-4ab1-47c4-a54f-112a14192f2a)
- Call ID: 60055f63-4ab1-47c4-a54f-112a14192f2a
+    target: :Juan
+  AssignClass (c859a23a-4150-43b6-bef4-f73939b09241)
+ Call ID: c859a23a-4150-43b6-bef4-f73939b09241
   Args:
-    target: Prince_Pieter-Christiaan
-    relation: :isBrotherOf
-    source: Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven
-  AddTriple (646eddf7-cc3c-4269-999e-4ceb5c801b4f)
- Call ID: 646eddf7-cc3c-4269-999e-4ceb5c801b4f
+    type: :Woman
+    source: :MariaDeLasMercedes
+  AssignClass (b9f57a7c-898d-4369-b4bb-5a79d49de1fd)
+ Call ID: b9f57a7c-898d-4369-b4bb-5a79d49de1fd
   Args:
-    target: Hans_Söhngen
-    source: Aimée_Söhngen
-    relation: :hasFather
-  AddTriple (fa31aed5-879c-4ff5-9d3b-ca6108dbffe1)
- Call ID: fa31aed5-879c-4ff5-9d3b-ca6108dbffe1
+    type: :Person
+    source: :MariaDeLasMercedes
+  AddLiteral (61a82764-895e-415e-a577-89c0de9961a6)
+ Call ID: 61a82764-895e-415e-a577-89c0de9961a6
   Args:
-    target: Eleonoor_Stammeijer
-    source: Aimée_Söhngen
-    relation: :hasMother
-  AddTriple (e2b5bed7-cde0-485c-8290-f81da5d4c24f)
- Call ID: e2b5bed7-cde0-485c-8290-f81da5d4c24f
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: :Juan
+    literal_value: 1935
+  AddTriple (5ba342b6-83d7-4207-a114-cf0f2aedfac5)
+ Call ID: 5ba342b6-83d7-4207-a114-cf0f2aedfac5
   Args:
-    target: Aimée_Söhngen
-    relation: :isSisterOf
-    source: Magali_Söhngen
-  AddTriple (5c956765-3e83-45ed-a53b-3475c8741b5c)
- Call ID: 5c956765-3e83-45ed-a53b-3475c8741b5c
+    source: :Juan
+    target: :MariaDeLasMercedes
+    relation: :hasRelation
+  AssignClass (7e69b96b-2d9c-493e-9c3d-7da69e465e05)
+ Call ID: 7e69b96b-2d9c-493e-9c3d-7da69e465e05
   Args:
-    relation: :hasFather
-    source: Magali_Margriet_Eleonoor_van_Vollenhoven
-    target: Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven
-  AddTriple (8cdcf7d4-1b10-47c5-b93b-c412640a1baa)
- Call ID: 8cdcf7d4-1b10-47c5-b93b-c412640a1baa
+    source: :Pilar
+    type: :Woman
+  AssignClass (f00572cf-f979-4f32-ac1f-57997d09f5d9)
+ Call ID: f00572cf-f979-4f32-ac1f-57997d09f5d9
   Args:
-    source: Magali_Margriet_Eleonoor_van_Vollenhoven
-    relation: :hasMother
-    target: Aimée_Söhngen
-  AddTriple (39602da4-37bf-4978-a0e6-d47e3a5e7311)
- Call ID: 39602da4-37bf-4978-a0e6-d47e3a5e7311
+    source: :Pilar
+    type: :Person
+  AddTriple (ab589683-fc3a-4098-b9d0-54be4b38fde2)
+ Call ID: ab589683-fc3a-4098-b9d0-54be4b38fde2
   Args:
-    target: Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven
-    relation: :hasFather
-    source: Eliane_Sophia_Carolina_van_Vollenhoven
-  AddTriple (93410a8e-51fc-4763-8c2e-e1216ff48c86)
- Call ID: 93410a8e-51fc-4763-8c2e-e1216ff48c86
+    source: :Juan
+    relation: :isFatherOf
+    target: :Pilar
+  AddTriple (54c94983-182c-49b6-a443-8ac043f349e9)
+ Call ID: 54c94983-182c-49b6-a443-8ac043f349e9
   Args:
-    source: Eliane_Sophia_Carolina_van_Vollenhoven
-    relation: :hasMother
-    target: Aimée_Söhngen
-  AddTriple (6dddaff1-81e4-4d64-9471-10c98f774201)
- Call ID: 6dddaff1-81e4-4d64-9471-10c98f774201
+    relation: :isMotherOf
+    target: :Pilar
+    source: :MariaDeLasMercedes
+  AddTriple (7165820d-53d9-486d-86ef-b45c33c605f0)
+ Call ID: 7165820d-53d9-486d-86ef-b45c33c605f0
   Args:
-    target: Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven
-    source: Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven
-    relation: :hasFather
-  AddTriple (62beff46-0c91-4477-8743-7960b3d0e4c9)
- Call ID: 62beff46-0c91-4477-8743-7960b3d0e4c9
+    target: :JuanCarlosI
+    relation: :isFatherOf
+    source: :Juan
+  AddTriple (27d4d19c-1f44-4b9d-b7fc-acb5624ddbf8)
+ Call ID: 27d4d19c-1f44-4b9d-b7fc-acb5624ddbf8
   Args:
-    relation: :hasMother
-    source: Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven
-    target: Aimée_Söhngen
-  Finish (e022d6a8-866c-4c9d-bf9a-d12b1650585f)
- Call ID: e022d6a8-866c-4c9d-bf9a-d12b1650585f
+    source: :MariaDeLasMercedes
+    target: :JuanCarlosI
+    relation: :isMotherOf
+  AssignClass (c0b2a3cf-b971-4ef2-8f20-f5404cf9e0b5)
+ Call ID: c0b2a3cf-b971-4ef2-8f20-f5404cf9e0b5
   Args:
+    type: :Woman
+    source: :Frederica
+  AssignClass (223376a3-1039-4e1c-8a6c-6e904b795f93)
+ Call ID: 223376a3-1039-4e1c-8a6c-6e904b795f93
+  Args:
+    source: :Frederica
+    type: :Person
+  AssignClass (ef61780c-9067-431d-9450-43b4a4427f56)
+ Call ID: ef61780c-9067-431d-9450-43b4a4427f56
+  Args:
+    source: :PaulOfGreece
+    type: :Man
+  AssignClass (46ece30b-d8f6-4a3a-b964-0d0f5918d955)
+ Call ID: 46ece30b-d8f6-4a3a-b964-0d0f5918d955
+  Args:
+    source: :PaulOfGreece
+    type: :Person
+  AssignClass (bd54b95f-6c1c-4f42-8bba-8c48f40ad200)
+ Call ID: bd54b95f-6c1c-4f42-8bba-8c48f40ad200
+  Args:
+    type: :Woman
+    source: :Sofia
+  AssignClass (ef3a5f30-413c-40ae-a430-92523f0e1966)
+ Call ID: ef3a5f30-413c-40ae-a430-92523f0e1966
+  Args:
+    source: :Sofia
+    type: :Person
+  AddTriple (cc542e31-cd93-4b1f-8373-8148a1ef8184)
+ Call ID: cc542e31-cd93-4b1f-8373-8148a1ef8184
+  Args:
+    relation: :isFatherOf
+    target: :Sofia
+    source: :PaulOfGreece
+  AddTriple (f37d0071-115e-4abf-9911-60adb2496807)
+ Call ID: f37d0071-115e-4abf-9911-60adb2496807
+  Args:
+    relation: :isMotherOf
+    target: :Sofia
+    source: :Frederica
+  Finish (af312c9e-e08d-4180-a8ef-b0a58147a0d6)
+ Call ID: af312c9e-e08d-4180-a8ef-b0a58147a0d6
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -627,46 +831,55 @@ Look at the messages below to see the final data graph after all the edits.
 The final data graph after all the edits:
   @prefix : <http://example.com/family_TBOX.ttl#> .
   @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Eliane_Sophia_Carolina_van_Vollenhoven a :Woman ;
-      :hasFather data:Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven ;
-      :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+  data:AlfonsoPrinceOfAsturias a :Man,
+          :Person ;
+      :isBrotherOf data:Juan .
 
-  data:Magali_Margriet_Eleonoor_van_Vollenhoven a :Woman ;
-      :hasFather data:Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven ;
-      :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+  data:AlfonsoXIII a :Man,
+          :Person ;
+      :isFatherOf data:Juan .
 
-  data:Magali_S%C3%B6hngen a :Woman ;
-      :isSisterOf data:Aim%C3%A9e_S%C3%B6hngen .
+  data:Frederica a :Person,
+          :Woman ;
+      :isMotherOf data:Sofia .
 
-  data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven a :Man ;
-      :hasFather data:Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven ;
-      :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+  data:JaimeDukeOfSegovia a :Man,
+          :Person ;
+      :isBrotherOf data:Juan .
 
-  data:Eleonoor_Stammeijer a :Woman .
+  data:PaulOfGreece a :Man,
+          :Person ;
+      :isFatherOf data:Sofia .
 
-  data:Hans_S%C3%B6hngen a :Man .
+  data:VictoriaEugenie a :Person,
+          :Woman ;
+      :isMotherOf data:Juan .
 
-  data:Pieter_van_Vollenhoven a :Man .
+  data:MariaDeLasMercedes a :Person,
+          :Woman ;
+      :isMotherOf data:JuanCarlosI,
+          data:Pilar .
 
-  data:Prince_Bernhard a :Man .
+  data:JuanCarlosI a :Man,
+          :Person .
 
-  data:Prince_Maurits a :Man .
+  data:Pilar a :Person,
+          :Woman .
 
-  data:Prince_Pieter-Christiaan a :Man .
+  data:Sofia a :Person,
+          :Woman .
 
-  data:Princess_Margriet_of_the_Netherlands a :Woman .
-
-  data:Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven a :Man ;
-      :hasFather data:Pieter_van_Vollenhoven ;
-      :hasMother data:Princess_Margriet_of_the_Netherlands ;
-      :isBrotherOf data:Prince_Bernhard,
-          data:Prince_Maurits,
-          data:Prince_Pieter-Christiaan .
-
-  data:Aim%C3%A9e_S%C3%B6hngen a :Woman ;
-      :hasFather data:Hans_S%C3%B6hngen ;
-      :hasMother data:Eleonoor_Stammeijer .
+  data:Juan a :Man,
+          :Person ;
+      :hasBirthYear 1913 ;
+      :hasDeathYear 1993 ;
+      :hasMarriageYear 1935 ;
+      :hasRelation data:MariaDeLasMercedes ;
+      :hasSex data:Male ;
+      :isFatherOf data:JuanCarlosI,
+          data:Pilar .
 
 
 
@@ -678,254 +891,126 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (47439f94-aa56-468a-af40-c3f01435b95f)
- Call ID: 47439f94-aa56-468a-af40-c3f01435b95f
+  ValidateShacl (59ec27d9-7278-423b-9684-8b6ae08e61d9)
+ Call ID: 59ec27d9-7278-423b-9684-8b6ae08e61d9
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:30
+Total violations:14
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven is listed as the father of Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven but lacks the required :Ancestor or :Man class.
+      The node 'Juan' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not an instance of the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven, :Man)
+      AssignClass(Male, :Sex)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Pieter_van_Vollenhoven is listed as the father of Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven but lacks the required :Ancestor or :Man class.
+      The node 'Juan' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not an instance of the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Pieter_van_Vollenhoven, :Man)
+      AssignClass(Male, :Sex)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Aim%C3%A9e_S%C3%B6hngen is listed as the mother of Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven but lacks the required :Ancestor or :Woman class.
+      The node 'Juan' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not an instance of the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Aim%C3%A9e_S%C3%B6hngen, :Woman)
+      AssignClass(Male, :Sex)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Princess_Margriet_of_the_Netherlands is listed as the mother of Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven but lacks the required :Ancestor or :Woman class.
+      The node 'Juan' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not an instance of the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Margriet_of_the_Netherlands, :Woman)
+      AssignClass(Male, :Sex)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven is listed as the father of Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven but lacks the required :Ancestor or :Man class.
+      The node 'Juan' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not an instance of the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven, :Man)
+      AssignClass(Male, :Sex)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Pieter_van_Vollenhoven is listed as the father of Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven but lacks the required :Ancestor or :Man class.
+      The node 'Juan' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not an instance of the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Pieter_van_Vollenhoven, :Man)
+      AssignClass(Male, :Sex)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Hans_S%C3%B6hngen is listed as the father of Aim%C3%A9e_S%C3%B6hngen but lacks the required :Ancestor or :Man class.
+      The node 'Juan' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not an instance of the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Hans_S%C3%B6hngen, :Man)
+      AssignClass(Male, :Sex)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven is listed as the father of Eliane_Sophia_Carolina_van_Vollenhoven but lacks the required :Ancestor or :Man class.
+      The node 'Juan' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not an instance of the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven, :Man)
+      AssignClass(Male, :Sex)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven is listed as the father of Magali_Margriet_Eleonoor_van_Vollenhoven but lacks the required :Ancestor or :Man class.
+      The node 'Juan' is involved in an 'isFatherOf' relationship, but it is not assigned the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven, :Man)
+      AssignClass(Juan, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node Aim%C3%A9e_S%C3%B6hngen is listed as the mother of Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven but lacks the required :Ancestor or :Woman class.
+      The node 'AlfonsoXIII' is involved in an 'isFatherOf' relationship, but it is not assigned the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Aim%C3%A9e_S%C3%B6hngen, :Woman)
+      AssignClass(AlfonsoXIII, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node Princess_Margriet_of_the_Netherlands is listed as the mother of Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven but lacks the required :Ancestor or :Woman class.
+      The node 'PaulOfGreece' is involved in an 'isFatherOf' relationship, but it is not assigned the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Margriet_of_the_Netherlands, :Woman)
+      AssignClass(PaulOfGreece, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The node Eleonoor_Stammeijer is listed as the mother of Aim%C3%A9e_S%C3%B6hngen but lacks the required :Ancestor or :Woman class.
+      The node 'MariaDeLasMercedes' is involved in an 'isMotherOf' relationship, but it is not assigned the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Eleonoor_Stammeijer, :Woman)
+      AssignClass(MariaDeLasMercedes, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The node Aim%C3%A9e_S%C3%B6hngen is listed as the mother of Eliane_Sophia_Carolina_van_Vollenhoven but lacks the required :Ancestor or :Woman class.
+      The node 'Frederica' is involved in an 'isMotherOf' relationship, but it is not assigned the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Aim%C3%A9e_S%C3%B6hngen, :Woman)
+      AssignClass(Frederica, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The node Aim%C3%A9e_S%C3%B6hngen is listed as the mother of Magali_Margriet_Eleonoor_van_Vollenhoven but lacks the required :Ancestor or :Woman class.
+      The node 'VictoriaEugenie' is involved in an 'isMotherOf' relationship, but it is not assigned the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Aim%C3%A9e_S%C3%B6hngen, :Woman)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven is listed as the father of Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven but lacks the required :Ancestor or :Man class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven, :Man)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Pieter_van_Vollenhoven is listed as the father of Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven but lacks the required :Ancestor or :Man class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Pieter_van_Vollenhoven, :Man)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Hans_S%C3%B6hngen is listed as the father of Aim%C3%A9e_S%C3%B6hngen but lacks the required :Ancestor or :Man class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Hans_S%C3%B6hngen, :Man)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven is listed as the father of Eliane_Sophia_Carolina_van_Vollenhoven but lacks the required :Ancestor or :Man class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven, :Man)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven is listed as the father of Magali_Margriet_Eleonoor_van_Vollenhoven but lacks the required :Ancestor or :Man class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven, :Man)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Aim%C3%A9e_S%C3%B6hngen is listed as the mother of Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven but lacks the required :Ancestor or :Woman class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Aim%C3%A9e_S%C3%B6hngen, :Woman)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Princess_Margriet_of_the_Netherlands is listed as the mother of Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven but lacks the required :Ancestor or :Woman class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Margriet_of_the_Netherlands, :Woman)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Eleonoor_Stammeijer is listed as the mother of Aim%C3%A9e_S%C3%B6hngen but lacks the required :Ancestor or :Woman class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Eleonoor_Stammeijer, :Woman)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Aim%C3%A9e_S%C3%B6hngen is listed as the mother of Eliane_Sophia_Carolina_van_Vollenhoven but lacks the required :Ancestor or :Woman class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Aim%C3%A9e_S%C3%B6hngen, :Woman)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Aim%C3%A9e_S%C3%B6hngen is listed as the mother of Magali_Margriet_Eleonoor_van_Vollenhoven but lacks the required :Ancestor or :Woman class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Aim%C3%A9e_S%C3%B6hngen, :Woman)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven is listed as the father of Magali_Margriet_Eleonoor_van_Vollenhoven but lacks the required :Ancestor or :Man class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven, :Man)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Hans_S%C3%B6hngen is listed as the father of Aim%C3%A9e_S%C3%B6hngen but lacks the required :Ancestor or :Man class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Hans_S%C3%B6hngen, :Man)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven is listed as the father of Eliane_Sophia_Carolina_van_Vollenhoven but lacks the required :Ancestor or :Man class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven, :Man)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Aim%C3%A9e_S%C3%B6hngen is listed as the mother of Magali_Margriet_Eleonoor_van_Vollenhoven but lacks the required :Ancestor or :Woman class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Aim%C3%A9e_S%C3%B6hngen, :Woman)
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Eleonoor_Stammeijer is listed as the mother of Aim%C3%A9e_S%C3%B6hngen but lacks the required :Ancestor or :Woman class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Eleonoor_Stammeijer, :Woman)
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Aim%C3%A9e_S%C3%B6hngen is listed as the mother of Eliane_Sophia_Carolina_van_Vollenhoven but lacks the required :Ancestor or :Woman class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Aim%C3%A9e_S%C3%B6hngen, :Woman)
+      AssignClass(VictoriaEugenie, :Ancestor)
 
 
 
@@ -934,39 +1019,48 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (e646050e-4d86-46f3-a5b4-f29793009077)
- Call ID: e646050e-4d86-46f3-a5b4-f29793009077
+  AssignClass (916b28ca-2ffe-441a-815a-e731fcf95ccc)
+ Call ID: 916b28ca-2ffe-441a-815a-e731fcf95ccc
   Args:
+    source: :Male
+    type: :Sex
+  AssignClass (416704de-81da-486e-aaff-7fc436b7723f)
+ Call ID: 416704de-81da-486e-aaff-7fc436b7723f
+  Args:
+    source: :Juan
     type: :Ancestor
-    source: Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven
-  AssignClass (b1316d7f-223d-4aac-8aff-e7e569875f09)
- Call ID: b1316d7f-223d-4aac-8aff-e7e569875f09
+  AssignClass (75ebd17a-9abe-4d55-a958-901bb4efe64b)
+ Call ID: 75ebd17a-9abe-4d55-a958-901bb4efe64b
   Args:
+    source: :AlfonsoXIII
     type: :Ancestor
-    source: Pieter_van_Vollenhoven
-  AssignClass (5da71517-d519-498c-8749-07a3bd28e520)
- Call ID: 5da71517-d519-498c-8749-07a3bd28e520
+  AssignClass (182df83a-282b-4675-8b65-0c0f6ad48b99)
+ Call ID: 182df83a-282b-4675-8b65-0c0f6ad48b99
   Args:
+    source: :PaulOfGreece
     type: :Ancestor
-    source: Princess_Margriet_of_the_Netherlands
-  AssignClass (d0079df8-b38e-4330-a812-01224faff255)
- Call ID: d0079df8-b38e-4330-a812-01224faff255
+  AssignClass (a0be7410-a4c6-48ab-927a-8a4705f51495)
+ Call ID: a0be7410-a4c6-48ab-927a-8a4705f51495
   Args:
+    source: :MariaDeLasMercedes
     type: :Ancestor
-    source: Aimée_Söhngen
-  AssignClass (b8d21f9d-5bff-44d2-82c5-80618e9ed72c)
- Call ID: b8d21f9d-5bff-44d2-82c5-80618e9ed72c
+  AssignClass (afec5fd5-8ec0-4ed8-86ba-a53250ec541d)
+ Call ID: afec5fd5-8ec0-4ed8-86ba-a53250ec541d
   Args:
+    source: :Frederica
     type: :Ancestor
-    source: Hans_Söhngen
-  AssignClass (fabf4877-3409-48ef-84fa-d108d6bdd64c)
- Call ID: fabf4877-3409-48ef-84fa-d108d6bdd64c
+  AssignClass (7872553c-80f4-4ec2-b3bf-a62250e5b33c)
+ Call ID: 7872553c-80f4-4ec2-b3bf-a62250e5b33c
   Args:
+    source: :VictoriaEugenie
     type: :Ancestor
-    source: Eleonoor_Stammeijer
-  Finish (5f5b8a92-0a7b-4c8d-8c98-1102f6920440)
- Call ID: 5f5b8a92-0a7b-4c8d-8c98-1102f6920440
+  Finish (2985cd44-56b2-49f5-8bd4-177f8cef3204)
+ Call ID: 2985cd44-56b2-49f5-8bd4-177f8cef3204
   Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -993,52 +1087,63 @@ Look at the messages below to see the final data graph after all the edits.
 The final data graph after all the edits:
   @prefix : <http://example.com/family_TBOX.ttl#> .
   @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Eliane_Sophia_Carolina_van_Vollenhoven a :Woman ;
-      :hasFather data:Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven ;
-      :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+  data:AlfonsoPrinceOfAsturias a :Man,
+          :Person ;
+      :isBrotherOf data:Juan .
 
-  data:Magali_Margriet_Eleonoor_van_Vollenhoven a :Woman ;
-      :hasFather data:Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven ;
-      :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
+  data:AlfonsoXIII a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Juan .
 
-  data:Magali_S%C3%B6hngen a :Woman ;
-      :isSisterOf data:Aim%C3%A9e_S%C3%B6hngen .
-
-  data:Willem_Jan_Johannes_Pieter_Floris_van_Vollenhoven a :Man ;
-      :hasFather data:Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven ;
-      :hasMother data:Aim%C3%A9e_S%C3%B6hngen .
-
-  data:Eleonoor_Stammeijer a :Ancestor,
-          :Woman .
-
-  data:Hans_S%C3%B6hngen a :Ancestor,
-          :Man .
-
-  data:Pieter_van_Vollenhoven a :Ancestor,
-          :Man .
-
-  data:Prince_Bernhard a :Man .
-
-  data:Prince_Maurits a :Man .
-
-  data:Prince_Pieter-Christiaan a :Man .
-
-  data:Princess_Margriet_of_the_Netherlands a :Ancestor,
-          :Woman .
-
-  data:Prince_Floris_Frederik_Martijn_of_Orange-Nassau_van_Vollenhoven a :Ancestor,
-          :Man ;
-      :hasFather data:Pieter_van_Vollenhoven ;
-      :hasMother data:Princess_Margriet_of_the_Netherlands ;
-      :isBrotherOf data:Prince_Bernhard,
-          data:Prince_Maurits,
-          data:Prince_Pieter-Christiaan .
-
-  data:Aim%C3%A9e_S%C3%B6hngen a :Ancestor,
+  data:Frederica a :Ancestor,
+          :Person,
           :Woman ;
-      :hasFather data:Hans_S%C3%B6hngen ;
-      :hasMother data:Eleonoor_Stammeijer .
+      :isMotherOf data:Sofia .
+
+  data:JaimeDukeOfSegovia a :Man,
+          :Person ;
+      :isBrotherOf data:Juan .
+
+  data:PaulOfGreece a :Ancestor,
+          :Man,
+          :Person ;
+      :isFatherOf data:Sofia .
+
+  data:VictoriaEugenie a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Juan .
+
+  data:Male a :Sex .
+
+  data:MariaDeLasMercedes a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:JuanCarlosI,
+          data:Pilar .
+
+  data:JuanCarlosI a :Man,
+          :Person .
+
+  data:Pilar a :Person,
+          :Woman .
+
+  data:Sofia a :Person,
+          :Woman .
+
+  data:Juan a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1913 ;
+      :hasDeathYear 1993 ;
+      :hasMarriageYear 1935 ;
+      :hasRelation data:MariaDeLasMercedes ;
+      :hasSex data:Male ;
+      :isFatherOf data:JuanCarlosI,
+          data:Pilar .
 
 
 
@@ -1050,8 +1155,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (45f7a479-a193-401c-9190-5647c0e73230)
- Call ID: 45f7a479-a193-401c-9190-5647c0e73230
+  ValidateShacl (8472821d-0e23-44c1-a6f7-f76094eb68d7)
+ Call ID: 8472821d-0e23-44c1-a6f7-f76094eb68d7
   Args:
 
 ================================= Tool Message =================================
@@ -1062,6 +1167,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (35bd34ab-50df-4e27-82ce-2278c450b192)
- Call ID: 35bd34ab-50df-4e27-82ce-2278c450b192
+  Finish (d83fa985-f24a-4a31-bf7c-bbf545f6a60e)
+ Call ID: d83fa985-f24a-4a31-bf7c-bbf545f6a60e
   Args:

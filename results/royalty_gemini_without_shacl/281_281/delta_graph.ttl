@@ -2,29 +2,66 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Michael_son_of_Fergus a :Man,
+data:Adalbert_of_Bavaria a :Man,
+        :Person .
+
+data:Alfonso_XIII a :Man,
+        :Person .
+
+data:Carlos_of_Bourbon-Two_Sicilies a :Man,
+        :Person .
+
+data:Irakli_Bagration_of_Mukhrani a :Man,
         :Person ;
-    :isSonOf data:Fergus_Michael_Claude_Bowes-Lyon .
+    :hasSister data:Leonida_Bagration .
 
-data:Elizabeth_Margaret_Cator a :Person,
+data:Isabella_II_of_Spain a :Person,
+        :Woman .
+
+data:Maria_de_las_Mercedes_of_Bavaria a :Person,
         :Woman ;
-    :hasBirthYear 1899 ;
-    :hasDeathYear 1959 .
+    :hasBirthYear 1911 ;
+    :hasBrother data:Jose_Eugenio,
+        data:Luis_Alfonso ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Ferdinand_of_Bavaria ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:Maria_Teresa_of_Spain ;
+    :hasSister data:Maria_del_Pilar .
 
-data:Fergus_Michael_Claude_Bowes-Lyon a :Man,
+data:Alfonso_XII a :Man,
+        :Person .
+
+data:Ferdinand_of_Bavaria a :Man,
         :Person ;
-    :hasBirthYear 1928 ;
-    :hasDeathYear 1987 ;
-    :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;
-    :hasMarriageYear 1956 ;
-    :hasMother data:Elizabeth_Margaret_Cator ;
-    :hasRelation data:Mary_Pamela_McCorquodale .
+    :hasMother data:Maria_de_la_Paz_of_Spain .
 
-data:Mary_Pamela_McCorquodale a :Person,
+data:Jose_Eugenio a :Man,
+        :Person ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1966 .
+
+data:Leonida_Bagration a :Person,
         :Woman ;
-    :hasBirthYear 1932 ;
-    :hasDeathYear 2025 .
+    :hasMarriageYear data:Vladimir .
 
-data:Michael_Claude_Hamilton_Bowes-Lyon a :Man,
+data:Luis_Alfonso a :Man,
+        :Person ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1983 .
+
+data:Maria_Teresa_of_Spain a :Person,
+        :Woman ;
+    :hasFather data:Alfonso_XII .
+
+data:Maria_de_la_Paz_of_Spain a :Person,
+        :Woman .
+
+data:Maria_del_Pilar a :Person,
+        :Woman ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1918 .
+
+data:Vladimir a :Man,
         :Person .
 

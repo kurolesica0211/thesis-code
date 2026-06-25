@@ -16,42 +16,42 @@
       "qid": "Q1753485",
       "label": "Nicholas de Roumanie",
       "distance": 0,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Margareta_of_Romania",
-      "qid": "Q663875",
-      "label": "Margareta of Romania",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Elena_of_Romania",
       "qid": "Q2423576",
       "label": "Princess Elena of Romania",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Robin_Medforth-Mills",
       "qid": "Q7352653",
       "label": "Robin Medforth-Mills",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Michael_I_of_Romania",
       "qid": "Q930013",
       "label": "Michael I of Romania",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Queen_Anne_of_Romania",
       "qid": "Q563765",
       "label": "Queen Anne of Romania",
       "distance": 2,
-      "gender": "female"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Margareta_of_Romania",
+      "qid": "Q663875",
+      "label": "Margareta of Romania",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
@@ -66,11 +66,11 @@
       "ground_truth_qid": "Q930013",
       "ground_truth_label": "Michael I of Romania",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "King Michael I of Romania",
       "best_candidate_label": "Michael I of Romania",
       "best_candidate_qid": "Q930013",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -84,11 +84,11 @@
       "ground_truth_qid": "Q1753485",
       "ground_truth_label": "Nicholas de Roumanie",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Nicholas Michael de Roumanie Medforth-Mills",
       "best_candidate_label": "Nicholas de Roumanie",
       "best_candidate_qid": "Q1753485",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -102,11 +102,11 @@
       "ground_truth_qid": "Q2423576",
       "ground_truth_label": "Princess Elena of Romania",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Elena of Romania",
       "best_candidate_label": "Princess Elena of Romania",
       "best_candidate_qid": "Q2423576",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -120,11 +120,11 @@
       "ground_truth_qid": "Q563765",
       "ground_truth_label": "Queen Anne of Romania",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Queen Anne of Romania",
       "best_candidate_label": "Queen Anne of Romania",
       "best_candidate_qid": "Q563765",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -138,11 +138,11 @@
       "ground_truth_qid": "Q7352653",
       "ground_truth_label": "Robin Medforth-Mills",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Robin Medforth-Mills",
       "best_candidate_label": "Robin Medforth-Mills",
       "best_candidate_qid": "Q7352653",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -155,13 +155,31 @@
       "ground_truth_uri": "http://example.com/data#Margareta_of_Romania",
       "ground_truth_qid": "Q663875",
       "ground_truth_label": "Margareta of Romania",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Margareta of Romania",
       "best_candidate_label": "Margareta of Romania",
       "best_candidate_qid": "Q663875",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.7727272727272727
+    },
+    {
+      "extracted_uri": "http://example.org/data/Alexander_Nixon",
+      "extracted_local_name": "Alexander_Nixon",
+      "embedding_text": "Alexander Nixon",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Queen Anne of Romania",
+      "best_candidate_label": "Queen Anne of Romania",
+      "best_candidate_qid": "Q563765",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3888888888888889
     },
     {
       "extracted_uri": "http://example.org/data/Alina-Maria_Binder",
@@ -175,52 +193,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Queen Margareta I",
-      "best_candidate_label": "Margareta of Romania",
-      "best_candidate_qid": "Q663875",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.4
-    },
-    {
-      "extracted_uri": "http://example.org/data/Illegitimate_Daughter_of_Nicholas_Medforth-Mills",
-      "extracted_local_name": "Illegitimate_Daughter_of_Nicholas_Medforth-Mills",
-      "embedding_text": "Illegitimate Daughter of Nicholas Medforth-Mills",
-      "extracted_gender": "female",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
       "best_candidate_match_text": "Elena de Roumanie",
       "best_candidate_label": "Princess Elena of Romania",
       "best_candidate_qid": "Q2423576",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.2153846153846154
-    },
-    {
-      "extracted_uri": "http://example.org/data/Nicoleta_C%C3%AErjan",
-      "extracted_local_name": "Nicoleta_C%C3%AErjan",
-      "embedding_text": "Nicoleta Cîrjan",
-      "extracted_gender": "female",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": "The Princess Elena",
-      "best_candidate_label": "Princess Elena of Romania",
-      "best_candidate_qid": "Q2423576",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.30303030303030304
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4
     }
   ],
   "summary": {
-    "entities_total": 9,
+    "entities_total": 8,
     "entities_matched": 6,
-    "entities_unmatched": 3
+    "entities_unmatched": 2
   }
 }

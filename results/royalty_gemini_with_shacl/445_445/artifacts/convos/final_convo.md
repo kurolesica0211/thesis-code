@@ -85,27 +85,53 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lady Charlotte Anne Santo Domingo (née Wellesley; 8 October 1990) is an English aristocrat and socialite and photography producer.
-Early life and family
+Lady Elizabeth Georgiana Shakerley CVO (née Anson; 7 June 1941 – 1 November 2020) was a British party planner, writer and socialite from the Anson family.
+She was a first cousin once removed of Queen Elizabeth II and sister of Patrick Anson, 5th Earl of Lichfield.
+Early life
 
-Lady Charlotte Wellesley was born at St Mary's Hospital, London on 8 October 1990 to Princess Antonia of Prussia and Charles Wellesley, Marquess of Douro.
-After the death of her paternal grandfather, Valerian Wellesley, 8th Duke of Wellington, in 2014, her father succeeded him as the 9th Duke of Wellington, the 9th Prince of Waterloo, the 9th Duke of Victoria, and the 10th Duke of Ciudad Rodrigo.
-Her mother, Princess Antonia, is the youngest child of Prince Frederick of Prussia and Lady Brigid Guinness.
-Through her mother, Lady Charlotte is a great-great-granddaughter of Wilhelm II, German Emperor and a great-great-great-great-granddaughter of Queen Victoria.
-Lady Charlotte grew up at Stratfield Saye House, her family's estate in Hampshire.
-She is the younger sister of Arthur Wellesley, Earl of Mornington and Lady Mary Wellesley.
-Education and career
+The Honourable Elizabeth Georgiana Anson was born on 7 June 1941 at Windsor Castle to Thomas Anson, Viscount Anson (1913–1958), and Anne Bowes-Lyon.
+Shakerley's mother was a niece of Queen Elizabeth (later the Queen Mother).
+She was the niece of Nerissa and Katherine Bowes-Lyon.
+In 1960, her paternal grandfather, the 4th Earl of Lichfield, died and her brother, Patrick, inherited the title and family seat, Shugborough Hall near Great Haywood, Staffordshire.
+Despite the estate's passing to the National Trust in lieu of death duties, Lord Lichfield maintained an apartment for himself and his sister.
+Subsequently, her mother married Prince Georg of Denmark and moved to Paris where Prince Georg served as military, naval and air attaché.
+Her father died in 1958 before acceding to the earldom of  Lichfield.
+On 12 July 1961, Queen Elizabeth II issued a Royal Warrant of Precedence granting Shakerley the title, rank, place, pre-eminence and precedence of the daughter of an Earl as if her father had succeeded.
+Thus, she became known as Lady Elizabeth Anson.
+In 1966, Shakerley was a bridesmaid at the wedding of Princess Beatrix of the Netherlands and Claus van Amsberg.
+Career
 
-Lady Charlotte attended Wycombe Abbey, an all-girls boarding school in Buckinghamshire.
-Personal life
+Following the stress of planning her own debutante ball in 1959, Lady Elizabeth founded the firm Party Planners in 1960.
+From then on she planned parties for her cousin Queen Elizabeth II.
+Even after her marriage, she continued to be known as Elizabeth Anson professionally.
+In 1986, Shakerley published Lady Elizabeth Anson's Party Planners Book.
+The courts eventually ruled in favour of Trump.
 
-Lady Charlotte married Colombian-American financier Alejandro Santo Domingo in Íllora, Spain, on 28 May 2016.
+
+Notable events she planned include: Sting's 1992 wedding to Trudie Styler; Margaret Thatcher's 70th birthday party in 1995; Queen Elizabeth II's 80th and 90th birthday parties in 2006 and 2016, respectively; Crown Prince Pavlos of Greece's 1995 wedding to Marie-Chantal Miller; and a reception for foreign royal guests the night before the Prince William's 2011 wedding to Catherine Middleton.
+In 2000, she planned three consecutive events for the royal family; Prince William's 18th birthday on 21 June, Princess Anne's 50th birthday on 15 August and Princess Margaret's 70th birthday on 21 August.
+As the stepdaughter of a Danish prince, Shakerley also attended many royal events in continental Europe, including the birthday celebrations of the King Harald V of Norway (her stepfather's first cousin) and the funeral of Jean, Grand Duke of Luxembourg.
+In 2018, Shakerley attended a state banquet given by Queen Elizabeth II in honour of the King and Queen of the Netherlands at Buckingham Palace.
+Personal life and death
+
+On 27 July 1972, Shakerley married Sir Geoffrey Shakerley, 6th Bt, at Westminster Abbey.
+Guests at the wedding included Queen Elizabeth II, Queen Elizabeth the Queen Mother and Princess Beatrix of the Netherlands.
+Her second cousins Princess Anne and Lady Sarah Armstrong-Jones were among her bridesmaids.
+Lady Elizabeth and Shakerley separated in 1986 and divorced in 2009.
+They had one daughter and two grandchildren:
+
+
+Shakerley suffered from chronic fatigue syndrome.
+She is buried in the Anson family vault at St Michael and All Angels Church, Colwich, Staffordshire, near Shugborough Hall.
+The Countess of Wessex (representing Queen Elizabeth II), Princess Beatrix of the Netherlands and Sheikh Hamad bin Khalifa Al Thani of Qatar attended.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -121,39 +147,9 @@ Lady Charlotte married Colombian-American financier Alejandro Santo Domingo in �
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -168,6 +164,23 @@ Lady Charlotte married Colombian-American financier Alejandro Santo Domingo in �
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -185,6 +198,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -252,29 +280,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -283,6 +303,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -295,6 +323,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -303,17 +333,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -341,6 +373,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -356,237 +472,116 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2c22e8a3-e000-48df-986d-ec97e89351e3)
- Call ID: 2c22e8a3-e000-48df-986d-ec97e89351e3
+  AssignClass (fad2b575-67b3-4ece-a2b9-c93f2ab53cb6)
+ Call ID: fad2b575-67b3-4ece-a2b9-c93f2ab53cb6
   Args:
+    source: :LadyElizabethShakerley
     type: :Woman
-    source: Charlotte_Anne_Santo_Domingo
-  AssignClass (34ff7611-babe-428a-a414-5495c014c676)
- Call ID: 34ff7611-babe-428a-a414-5495c014c676
+  AddLiteral (e3bed6f2-f886-4757-8289-e57078807f13)
+ Call ID: e3bed6f2-f886-4757-8289-e57078807f13
   Args:
-    type: :Person
-    source: Charlotte_Anne_Santo_Domingo
-  AddLiteral (2a826c29-5f80-4b0f-b8dc-b9fe7c71a684)
- Call ID: 2a826c29-5f80-4b0f-b8dc-b9fe7c71a684
-  Args:
-    literal_type: xsd:integer
-    source: Charlotte_Anne_Santo_Domingo
-    literal_value: 1990
+    source: :LadyElizabethShakerley
+    literal_value: 1941
     relation: :hasBirthYear
-  AddTriple (2e76737f-f02b-459c-971b-3c7a6d025d75)
- Call ID: 2e76737f-f02b-459c-971b-3c7a6d025d75
+    literal_type: xsd:integer
+  AddLiteral (0932f180-e81d-457c-add2-4472ac1e0846)
+ Call ID: 0932f180-e81d-457c-add2-4472ac1e0846
   Args:
-    target: Charlotte_Wellesley
-    source: Charlotte_Anne_Santo_Domingo
-    relation: :alsoKnownAs
-  AssignClass (7d0b684c-5366-47f1-a727-aba31e56c7e4)
- Call ID: 7d0b684c-5366-47f1-a727-aba31e56c7e4
+    literal_value: 2020
+    relation: :hasDeathYear
+    source: :LadyElizabethShakerley
+    literal_type: xsd:integer
+  AssignClass (05428943-540e-4f56-9637-a5b0faf6f8d8)
+ Call ID: 05428943-540e-4f56-9637-a5b0faf6f8d8
+  Args:
+    source: :ThomasAnson
+    type: :Man
+  AddLiteral (d50e87ca-5629-4ed5-8eae-385bad664b6e)
+ Call ID: d50e87ca-5629-4ed5-8eae-385bad664b6e
+  Args:
+    source: :ThomasAnson
+    literal_value: 1913
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (53513591-541f-408b-abb7-56f0dc2d1f13)
+ Call ID: 53513591-541f-408b-abb7-56f0dc2d1f13
+  Args:
+    source: :ThomasAnson
+    relation: :hasDeathYear
+    literal_value: 1958
+    literal_type: xsd:integer
+  AssignClass (5ddce6e0-ffd6-42d0-b842-f46b21b12304)
+ Call ID: 5ddce6e0-ffd6-42d0-b842-f46b21b12304
   Args:
     type: :Woman
-    source: Antonia_of_Prussia
-  AssignClass (0cfdc97d-69ea-4cc6-82dc-03bd528176d4)
- Call ID: 0cfdc97d-69ea-4cc6-82dc-03bd528176d4
+    source: :AnneBowesLyon
+  AddTriple (703ea98d-a028-4ba6-89a7-e55cf6d8cdc4)
+ Call ID: 703ea98d-a028-4ba6-89a7-e55cf6d8cdc4
   Args:
-    source: Antonia_of_Prussia
-    type: :Ancestor
-  AssignClass (45e63ef0-a663-4b80-a8d7-0b8f917862b7)
- Call ID: 45e63ef0-a663-4b80-a8d7-0b8f917862b7
-  Args:
-    type: :Man
-    source: Charles_Wellesley
-  AssignClass (bfd345aa-c179-40eb-9766-063ba4b2a8aa)
- Call ID: bfd345aa-c179-40eb-9766-063ba4b2a8aa
-  Args:
-    source: Charles_Wellesley
-    type: :Ancestor
-  AddTriple (1ffe6f94-67f7-4cf4-a7da-f7dda42b2057)
- Call ID: 1ffe6f94-67f7-4cf4-a7da-f7dda42b2057
+    target: :ThomasAnson
+    relation: :hasFather
+    source: :LadyElizabethShakerley
+  AddTriple (ab0fd132-9ca7-4c6c-bae3-b7e9bd5b253f)
+ Call ID: ab0fd132-9ca7-4c6c-bae3-b7e9bd5b253f
   Args:
     relation: :hasMother
-    source: Charlotte_Anne_Santo_Domingo
-    target: Antonia_of_Prussia
-  AddTriple (d52068cf-e72f-4a0f-9677-6e7f96f9235c)
- Call ID: d52068cf-e72f-4a0f-9677-6e7f96f9235c
+    target: :AnneBowesLyon
+    source: :LadyElizabethShakerley
+  AssignClass (f337e9bb-c1ce-456c-800f-1659f787e910)
+ Call ID: f337e9bb-c1ce-456c-800f-1659f787e910
   Args:
+    type: :Man
+    source: :PatrickAnson
+  AddTriple (679f6ef5-b559-435d-be08-d09df05eb886)
+ Call ID: 679f6ef5-b559-435d-be08-d09df05eb886
+  Args:
+    source: :PatrickAnson
+    target: :LadyElizabethShakerley
+    relation: :isBrotherOf
+  AddTriple (cba308f7-1283-423e-8e5d-001d0dc43273)
+ Call ID: cba308f7-1283-423e-8e5d-001d0dc43273
+  Args:
+    source: :PatrickAnson
     relation: :hasFather
-    source: Charlotte_Anne_Santo_Domingo
-    target: Charles_Wellesley
-  AssignClass (80bc6bff-7011-4982-93e8-f876ec4db5c3)
- Call ID: 80bc6bff-7011-4982-93e8-f876ec4db5c3
+    target: :ThomasAnson
+  AddTriple (c9e43a41-2b56-4bf5-99c1-0ce71b34d937)
+ Call ID: c9e43a41-2b56-4bf5-99c1-0ce71b34d937
   Args:
+    source: :PatrickAnson
+    relation: :hasMother
+    target: :AnneBowesLyon
+  AssignClass (9d2e9caf-25bb-461c-aea6-1c971a1c0e2c)
+ Call ID: 9d2e9caf-25bb-461c-aea6-1c971a1c0e2c
+  Args:
+    source: :PrinceGeorgOfDenmark
     type: :Man
-    source: Valerian_Wellesley
-  AssignClass (5bd26b56-ddce-4dfd-9958-60ac2a767ade)
- Call ID: 5bd26b56-ddce-4dfd-9958-60ac2a767ade
+  AddTriple (c0be0526-eccd-4ac1-9e89-6394b6c473cd)
+ Call ID: c0be0526-eccd-4ac1-9e89-6394b6c473cd
   Args:
-    source: Valerian_Wellesley
-    type: :Ancestor
-  AddTriple (cfed86ae-c433-452f-8755-012e1d243b14)
- Call ID: cfed86ae-c433-452f-8755-012e1d243b14
+    target: :PrinceGeorgOfDenmark
+    relation: :hasRelation
+    source: :AnneBowesLyon
+  AssignClass (14eff42c-c0a1-4154-b449-193151a587e4)
+ Call ID: 14eff42c-c0a1-4154-b449-193151a587e4
   Args:
-    source: Valerian_Wellesley
-    target: Charles_Wellesley
-    relation: :isFatherOf
-  AssignClass (09d02dd2-7f0a-4019-af82-a96cd43693f6)
- Call ID: 09d02dd2-7f0a-4019-af82-a96cd43693f6
-  Args:
-    source: Frederick_of_Prussia
+    source: :GeoffreyShakerley
     type: :Man
-  AssignClass (969401a1-3c8f-4c91-a07f-a7956c22f354)
- Call ID: 969401a1-3c8f-4c91-a07f-a7956c22f354
+  AddLiteral (454d7f70-6bc5-4493-aee2-44130ef9aaa4)
+ Call ID: 454d7f70-6bc5-4493-aee2-44130ef9aaa4
   Args:
-    type: :Ancestor
-    source: Frederick_of_Prussia
-  AssignClass (57bee1e1-354a-4af4-98a1-20c6a2a060dc)
- Call ID: 57bee1e1-354a-4af4-98a1-20c6a2a060dc
-  Args:
-    source: Brigid_Guinness
-    type: :Woman
-  AssignClass (5cbf032e-3984-44cd-9bc2-e2d21c8ab083)
- Call ID: 5cbf032e-3984-44cd-9bc2-e2d21c8ab083
-  Args:
-    source: Brigid_Guinness
-    type: :Ancestor
-  AddTriple (d4454da1-2232-4b1d-8c57-a124f4401ac1)
- Call ID: d4454da1-2232-4b1d-8c57-a124f4401ac1
-  Args:
-    relation: :isFatherOf
-    target: Antonia_of_Prussia
-    source: Frederick_of_Prussia
-  AddTriple (ce97bfe4-15f7-4d21-a724-e09290a65409)
- Call ID: ce97bfe4-15f7-4d21-a724-e09290a65409
-  Args:
-    target: Antonia_of_Prussia
-    source: Brigid_Guinness
-    relation: :isMotherOf
-  AssignClass (d3a051e4-7788-4dfd-9cbe-8ccf53b8c721)
- Call ID: d3a051e4-7788-4dfd-9cbe-8ccf53b8c721
-  Args:
-    type: :Man
-    source: Wilhelm_II
-  AssignClass (956462b8-02fd-4eed-b879-fa9ff697c888)
- Call ID: 956462b8-02fd-4eed-b879-fa9ff697c888
-  Args:
-    source: Wilhelm_II
-    type: :Ancestor
-  AssignClass (14b04f6d-4ec2-4662-8db1-52f03634d027)
- Call ID: 14b04f6d-4ec2-4662-8db1-52f03634d027
-  Args:
-    type: :Woman
-    source: Queen_Victoria
-  AssignClass (06e2f87c-d218-4edf-b4f6-1702b02a2ef2)
- Call ID: 06e2f87c-d218-4edf-b4f6-1702b02a2ef2
-  Args:
-    source: Queen_Victoria
-    type: :Ancestor
-  AssignClass (b0853220-63d1-4b7b-a2e4-ce3d77e94323)
- Call ID: b0853220-63d1-4b7b-a2e4-ce3d77e94323
-  Args:
-    type: :Man
-    source: Arthur_Wellesley
-  AssignClass (43035a9d-92f3-4874-b5fd-70bad6c39eff)
- Call ID: 43035a9d-92f3-4874-b5fd-70bad6c39eff
-  Args:
-    type: :Person
-    source: Arthur_Wellesley
-  AssignClass (452ef060-6a75-44bb-961e-b879d6348ed8)
- Call ID: 452ef060-6a75-44bb-961e-b879d6348ed8
-  Args:
-    type: :Woman
-    source: Mary_Wellesley
-  AssignClass (aa54d86a-cd15-47b7-ad62-457026d69c61)
- Call ID: aa54d86a-cd15-47b7-ad62-457026d69c61
-  Args:
-    type: :Person
-    source: Mary_Wellesley
-  AddTriple (f1edc5d3-52a6-4670-bbfb-b92f87bc6564)
- Call ID: f1edc5d3-52a6-4670-bbfb-b92f87bc6564
-  Args:
-    target: Arthur_Wellesley
-    source: Charlotte_Anne_Santo_Domingo
-    relation: :hasBrother
-  AddTriple (1495f952-70c8-4cbc-a7b7-f75936409a82)
- Call ID: 1495f952-70c8-4cbc-a7b7-f75936409a82
-  Args:
-    target: Mary_Wellesley
-    source: Charlotte_Anne_Santo_Domingo
-    relation: :hasSister
-  AssignClass (ede4438e-19b3-4a9c-ae62-c1e21a5d1616)
- Call ID: ede4438e-19b3-4a9c-ae62-c1e21a5d1616
-  Args:
-    type: :Man
-    source: Alejandro_Santo_Domingo
-  AssignClass (5e0229ef-9b9b-4b32-8975-5f3e9f79bef5)
- Call ID: 5e0229ef-9b9b-4b32-8975-5f3e9f79bef5
-  Args:
-    type: :Person
-    source: Alejandro_Santo_Domingo
-  AddLiteral (153af8ec-2441-4aea-831b-0c83a3ea6e3b)
- Call ID: 153af8ec-2441-4aea-831b-0c83a3ea6e3b
-  Args:
-    literal_value: 2016
-    source: Charlotte_Anne_Santo_Domingo
     literal_type: xsd:integer
+    source: :LadyElizabethShakerley
     relation: :hasMarriageYear
-  Finish (6ba98bd2-f42c-42c2-9a3a-95b08466579f)
- Call ID: 6ba98bd2-f42c-42c2-9a3a-95b08466579f
+    literal_value: 1972
+  AddTriple (88c46d96-d94f-4b72-bd50-ff95b2913bc7)
+ Call ID: 88c46d96-d94f-4b72-bd50-ff95b2913bc7
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :LadyElizabethShakerley
+    target: :GeoffreyShakerley
+    relation: :hasRelation
+  Finish (ad725a06-7b10-4de7-9f8f-cc0aa6d62e20)
+ Call ID: ad725a06-7b10-4de7-9f8f-cc0aa6d62e20
+  Args:
 
 ================================= Tool Message =================================
 
@@ -663,48 +658,29 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alejandro_Santo_Domingo a :Man,
-          :Person .
+  data:PatrickAnson a :Man ;
+      :hasFather data:ThomasAnson ;
+      :hasMother data:AnneBowesLyon ;
+      :isBrotherOf data:LadyElizabethShakerley .
 
-  data:Brigid_Guinness a :Ancestor,
-          :Woman ;
-      :isMotherOf data:Antonia_of_Prussia .
+  data:GeoffreyShakerley a :Man .
 
-  data:Charlotte_Anne_Santo_Domingo a :Person,
-          :Woman ;
-      :alsoKnownAs data:Charlotte_Wellesley ;
-      :hasBirthYear 1990 ;
-      :hasBrother data:Arthur_Wellesley ;
-      :hasFather data:Charles_Wellesley ;
-      :hasMarriageYear 2016 ;
-      :hasMother data:Antonia_of_Prussia ;
-      :hasSister data:Mary_Wellesley .
+  data:LadyElizabethShakerley a :Woman ;
+      :hasBirthYear 1941 ;
+      :hasDeathYear 2020 ;
+      :hasFather data:ThomasAnson ;
+      :hasMarriageYear 1972 ;
+      :hasMother data:AnneBowesLyon ;
+      :hasRelation data:GeoffreyShakerley .
 
-  data:Frederick_of_Prussia a :Ancestor,
-          :Man ;
-      :isFatherOf data:Antonia_of_Prussia .
+  data:PrinceGeorgOfDenmark a :Man .
 
-  data:Queen_Victoria a :Ancestor,
-          :Woman .
+  data:AnneBowesLyon a :Woman ;
+      :hasRelation data:PrinceGeorgOfDenmark .
 
-  data:Valerian_Wellesley a :Ancestor,
-          :Man ;
-      :isFatherOf data:Charles_Wellesley .
-
-  data:Wilhelm_II a :Ancestor,
-          :Man .
-
-  data:Arthur_Wellesley a :Man,
-          :Person .
-
-  data:Mary_Wellesley a :Person,
-          :Woman .
-
-  data:Charles_Wellesley a :Ancestor,
-          :Man .
-
-  data:Antonia_of_Prussia a :Ancestor,
-          :Woman .
+  data:ThomasAnson a :Man ;
+      :hasBirthYear 1913 ;
+      :hasDeathYear 1958 .
 
 
 
@@ -716,8 +692,174 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (af05846e-686f-4d52-a774-77b495547e25)
- Call ID: af05846e-686f-4d52-a774-77b495547e25
+  ValidateShacl (f466779f-9184-4320-a901-a5af4c274eea)
+ Call ID: f466779f-9184-4320-a901-a5af4c274eea
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:12
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node ThomasAnson, which is the value of the 'hasFather' property for PatrickAnson, is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='ThomasAnson', class=':Ancestor')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node AnneBowesLyon, which is the value of the 'hasMother' property for PatrickAnson, is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='AnneBowesLyon', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node ThomasAnson, which is the value of the 'hasFather' property for PatrickAnson, is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='ThomasAnson', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node ThomasAnson, which is the value of the 'hasFather' property for LadyElizabethShakerley, is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='ThomasAnson', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node AnneBowesLyon, which is the value of the 'hasMother' property for PatrickAnson, is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='AnneBowesLyon', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node AnneBowesLyon, which is the value of the 'hasMother' property for LadyElizabethShakerley, is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='AnneBowesLyon', class=':Ancestor')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node ThomasAnson, which is the value of the 'hasFather' property for PatrickAnson, is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='ThomasAnson', class=':Ancestor')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node ThomasAnson, which is the value of the 'hasFather' property for LadyElizabethShakerley, is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='ThomasAnson', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node AnneBowesLyon, which is the value of the 'hasMother' property for PatrickAnson, is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='AnneBowesLyon', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node AnneBowesLyon, which is the value of the 'hasMother' property for LadyElizabethShakerley, is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='AnneBowesLyon', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node ThomasAnson, which is the value of the 'hasFather' property for LadyElizabethShakerley, is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='ThomasAnson', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node AnneBowesLyon, which is the value of the 'hasMother' property for LadyElizabethShakerley, is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='AnneBowesLyon', class=':Ancestor')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (5316e63c-646f-49c4-ba6f-d1237c2f967e)
+ Call ID: 5316e63c-646f-49c4-ba6f-d1237c2f967e
+  Args:
+    type: :Ancestor
+    source: :ThomasAnson
+  AssignClass (8e847cd8-2034-4fd0-9454-716efa8bebb3)
+ Call ID: 8e847cd8-2034-4fd0-9454-716efa8bebb3
+  Args:
+    type: :Ancestor
+    source: :AnneBowesLyon
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:PatrickAnson a :Man ;
+      :hasFather data:ThomasAnson ;
+      :hasMother data:AnneBowesLyon ;
+      :isBrotherOf data:LadyElizabethShakerley .
+
+  data:GeoffreyShakerley a :Man .
+
+  data:LadyElizabethShakerley a :Woman ;
+      :hasBirthYear 1941 ;
+      :hasDeathYear 2020 ;
+      :hasFather data:ThomasAnson ;
+      :hasMarriageYear 1972 ;
+      :hasMother data:AnneBowesLyon ;
+      :hasRelation data:GeoffreyShakerley .
+
+  data:PrinceGeorgOfDenmark a :Man .
+
+  data:AnneBowesLyon a :Ancestor,
+          :Woman ;
+      :hasRelation data:PrinceGeorgOfDenmark .
+
+  data:ThomasAnson a :Ancestor,
+          :Man ;
+      :hasBirthYear 1913 ;
+      :hasDeathYear 1958 .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (ff1eb662-04a5-49db-92b7-8800c66ec771)
+ Call ID: ff1eb662-04a5-49db-92b7-8800c66ec771
   Args:
 
 ================================= Tool Message =================================
@@ -728,37 +870,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (b0ef85f3-8bdd-4829-99a6-3cb78907d2c2)
- Call ID: b0ef85f3-8bdd-4829-99a6-3cb78907d2c2
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Charlotte_Wellesley']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (c63631b5-3254-4c2f-bc96-c33065770bb8)
- Call ID: c63631b5-3254-4c2f-bc96-c33065770bb8
-  Args:
-    type: :Person
-    source: Charlotte_Wellesley
-  Finish (5a10d07a-78ff-4fc1-b0ba-6f451d16fab2)
- Call ID: 5a10d07a-78ff-4fc1-b0ba-6f451d16fab2
+  Finish (762a32df-95b9-445c-902a-6541aec786d0)
+ Call ID: 762a32df-95b9-445c-902a-6541aec786d0
   Args:

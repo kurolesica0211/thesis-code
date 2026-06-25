@@ -99,7 +99,6 @@ Upbringing
 The family lived at Anmer Hall in Norfolk during Charlotte's infancy, before relocating to Kensington Palace in 2017.
 Charlotte started at Willcocks Nursery School in January 2018.
 She joined George at Thomas's School in Battersea in September 2019, where she was known as Charlotte Cambridge.
-In 2022, the family relocated to Adelaide Cottage in Windsor Home Park, after which she and her brothers began attending Lambrook, an independent preparatory school in Berkshire.
 Following the death of Elizabeth II on 8 September 2022, Charlotte's grandfather acceded to the throne as Charles III, and Charlotte became third in line to the throne.
 Public image
 
@@ -119,6 +118,8 @@ Because of the implementation of the Perth Agreement, which replaced male-prefer
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -134,39 +135,9 @@ Because of the implementation of the Perth Agreement, which replaced male-prefer
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -181,6 +152,23 @@ Because of the implementation of the Perth Agreement, which replaced male-prefer
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -198,6 +186,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,29 +268,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -296,6 +291,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -308,6 +311,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -316,17 +321,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -354,6 +361,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -369,133 +460,128 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (fbd35c40-9405-48ec-a2c8-581f6334c388)
- Call ID: fbd35c40-9405-48ec-a2c8-581f6334c388
+  AssignClass (ee3df8bb-8b87-4546-99a8-3e5512c0e71b)
+ Call ID: ee3df8bb-8b87-4546-99a8-3e5512c0e71b
   Args:
+    source: Princess_Charlotte_of_Wales
     type: :Woman
-    source: Princess_Charlotte_of_Wales
-  AssignClass (3050cfab-f129-498f-94a9-d369ec75d19c)
- Call ID: 3050cfab-f129-498f-94a9-d369ec75d19c
-  Args:
-    source: Princess_Charlotte_of_Wales
-    type: :Person
-  AssignClass (f793ed62-2775-4bd1-aabe-a1318c080649)
- Call ID: f793ed62-2775-4bd1-aabe-a1318c080649
+  AssignClass (05f9a8bc-5a8f-4727-9849-2c915e58c7a0)
+ Call ID: 05f9a8bc-5a8f-4727-9849-2c915e58c7a0
   Args:
     source: William_Prince_of_Wales
     type: :Man
-  AssignClass (593fa2a9-2abe-474a-b9b5-5bafd591a2d2)
- Call ID: 593fa2a9-2abe-474a-b9b5-5bafd591a2d2
+  AssignClass (513cf2dc-fb16-4b7c-91ba-d500586f794c)
+ Call ID: 513cf2dc-fb16-4b7c-91ba-d500586f794c
   Args:
-    source: William_Prince_of_Wales
-    type: :Ancestor
-  AssignClass (e8dec78d-1719-411c-95b0-3358b7965f95)
- Call ID: e8dec78d-1719-411c-95b0-3358b7965f95
-  Args:
-    source: Catherine_Princess_of_Wales
     type: :Woman
-  AssignClass (c532ec80-f788-41c2-b6e8-70fe90fac2f4)
- Call ID: c532ec80-f788-41c2-b6e8-70fe90fac2f4
-  Args:
     source: Catherine_Princess_of_Wales
-    type: :Ancestor
-  AssignClass (48389609-e9a7-40d8-b47f-36f13796a822)
- Call ID: 48389609-e9a7-40d8-b47f-36f13796a822
+  AssignClass (93b3f7e2-75a1-4b49-8c50-624827a97df2)
+ Call ID: 93b3f7e2-75a1-4b49-8c50-624827a97df2
   Args:
     type: :Man
     source: King_Charles_III
-  AssignClass (d045c464-123b-44f5-b988-15daa0583c7d)
- Call ID: d045c464-123b-44f5-b988-15daa0583c7d
-  Args:
-    type: :Ancestor
-    source: King_Charles_III
-  AssignClass (dc40ed8f-c2d1-434f-839e-7dc872c7a56d)
- Call ID: dc40ed8f-c2d1-434f-839e-7dc872c7a56d
+  AssignClass (738cae0e-575c-43fa-865f-d2e894bc1775)
+ Call ID: 738cae0e-575c-43fa-865f-d2e894bc1775
   Args:
     type: :Woman
     source: Diana_Princess_of_Wales
-  AssignClass (1097c6ae-386a-4fb4-8bef-c8fbf20e4c94)
- Call ID: 1097c6ae-386a-4fb4-8bef-c8fbf20e4c94
-  Args:
-    source: Diana_Princess_of_Wales
-    type: :Ancestor
-  AssignClass (346070af-91a5-4d96-848f-8b4c1bf6ac69)
- Call ID: 346070af-91a5-4d96-848f-8b4c1bf6ac69
-  Args:
-    type: :Man
-    source: Prince_George
-  AssignClass (b30fba77-930f-433c-a589-7709e2b38fd6)
- Call ID: b30fba77-930f-433c-a589-7709e2b38fd6
+  AssignClass (c406b6a4-07f9-47fa-bc91-84d13a860513)
+ Call ID: c406b6a4-07f9-47fa-bc91-84d13a860513
   Args:
     source: Prince_George
-    type: :Person
-  AssignClass (b5bdd873-949b-42fd-b1bf-5a035b2f17fa)
- Call ID: b5bdd873-949b-42fd-b1bf-5a035b2f17fa
-  Args:
-    source: Prince_Louis
     type: :Man
-  AssignClass (4eb13c3d-de6e-4523-8e2c-6578090c28d9)
- Call ID: 4eb13c3d-de6e-4523-8e2c-6578090c28d9
+  AssignClass (a0ab540f-a58f-4fcd-9a36-e29e9b86bc66)
+ Call ID: a0ab540f-a58f-4fcd-9a36-e29e9b86bc66
   Args:
+    type: :Man
     source: Prince_Louis
-    type: :Person
-  AddTriple (4cf42487-3f6a-4c38-9d76-47c1a6ca9ef2)
- Call ID: 4cf42487-3f6a-4c38-9d76-47c1a6ca9ef2
+  AssignClass (555e8441-542f-4869-93c0-bbfb463f1d75)
+ Call ID: 555e8441-542f-4869-93c0-bbfb463f1d75
   Args:
+    source: Queen_Elizabeth_II
+    type: :Woman
+  AddLiteral (e8066d9c-e69e-4e5e-aae9-4f36eb538da6)
+ Call ID: e8066d9c-e69e-4e5e-aae9-4f36eb538da6
+  Args:
+    literal_type: xsd:integer
     source: Princess_Charlotte_of_Wales
-    relation: :hasFather
+    relation: :hasBirthYear
+    literal_value: 2015
+  AddTriple (aa722119-e970-4f66-9e9b-34aaa62c9ec9)
+ Call ID: aa722119-e970-4f66-9e9b-34aaa62c9ec9
+  Args:
     target: William_Prince_of_Wales
-  AddTriple (bb3946f3-112a-4d8c-b34b-7f8e9a60b7bf)
- Call ID: bb3946f3-112a-4d8c-b34b-7f8e9a60b7bf
+    relation: :hasFather
+    source: Princess_Charlotte_of_Wales
+  AddTriple (738504fb-beb6-4a50-a17a-4459b1322fcf)
+ Call ID: 738504fb-beb6-4a50-a17a-4459b1322fcf
   Args:
     target: Catherine_Princess_of_Wales
-    relation: :hasMother
     source: Princess_Charlotte_of_Wales
-  AddTriple (1dd3361b-1656-4f6a-91e4-5bb75995d3cd)
- Call ID: 1dd3361b-1656-4f6a-91e4-5bb75995d3cd
+    relation: :hasMother
+  AddTriple (dd3fbac5-d35d-4a80-91ed-846a0e134608)
+ Call ID: dd3fbac5-d35d-4a80-91ed-846a0e134608
   Args:
-    target: King_Charles_III
-    relation: :hasFather
     source: William_Prince_of_Wales
-  AddTriple (2884fb37-6185-45f2-9339-00c094d56253)
- Call ID: 2884fb37-6185-45f2-9339-00c094d56253
+    relation: :hasFather
+    target: King_Charles_III
+  AddTriple (29ac79d0-a404-4610-a42c-284426227dd2)
+ Call ID: 29ac79d0-a404-4610-a42c-284426227dd2
   Args:
     target: Diana_Princess_of_Wales
     source: William_Prince_of_Wales
     relation: :hasMother
-  AddTriple (f222601c-142e-4e2e-9dd4-f8892cd012b7)
- Call ID: f222601c-142e-4e2e-9dd4-f8892cd012b7
+  AddTriple (917664b9-7518-4940-b48e-9880896c7509)
+ Call ID: 917664b9-7518-4940-b48e-9880896c7509
   Args:
-    target: Prince_George
+    relation: :isSiblingOf
     source: Princess_Charlotte_of_Wales
-    relation: :hasBrother
-  AddTriple (d25d0085-b65b-4b88-ba18-f43fc069290f)
- Call ID: d25d0085-b65b-4b88-ba18-f43fc069290f
+    target: Prince_George
+  AddTriple (bb0ac909-36cf-4bff-80d3-2c3ff2bf1ebd)
+ Call ID: bb0ac909-36cf-4bff-80d3-2c3ff2bf1ebd
   Args:
     target: Prince_Louis
-    relation: :hasBrother
     source: Princess_Charlotte_of_Wales
-  AddLiteral (6b3bb266-b4ec-442c-aad7-8b2f731743ae)
- Call ID: 6b3bb266-b4ec-442c-aad7-8b2f731743ae
+    relation: :isSiblingOf
+  AddTriple (8e4617d5-89f7-4c9d-bf7d-35b5caf24beb)
+ Call ID: 8e4617d5-89f7-4c9d-bf7d-35b5caf24beb
   Args:
-    literal_value: 2015
-    relation: :hasBirthYear
-    literal_type: xsd:integer
+    relation: :hasParent
     source: Princess_Charlotte_of_Wales
-  AddLiteral (9846cd7c-c567-49fd-abdd-597339359170)
- Call ID: 9846cd7c-c567-49fd-abdd-597339359170
+    target: William_Prince_of_Wales
+  AddTriple (0591a2bc-9995-42be-9efa-2c96f92cde73)
+ Call ID: 0591a2bc-9995-42be-9efa-2c96f92cde73
   Args:
-    relation: :knownAs
-    literal_value: Charlotte Cambridge
+    relation: :hasParent
     source: Princess_Charlotte_of_Wales
-    literal_type: xsd:string
-  Finish (d3050ebb-9eef-49b2-96fa-d200e2ac3f6e)
- Call ID: d3050ebb-9eef-49b2-96fa-d200e2ac3f6e
+    target: Catherine_Princess_of_Wales
+  AddTriple (ac59b150-3fd3-4f6a-939c-3c5e12ced6c2)
+ Call ID: ac59b150-3fd3-4f6a-939c-3c5e12ced6c2
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Prince_George
+    relation: :hasParent
+    target: William_Prince_of_Wales
+  AddTriple (a47c6675-d478-4d8e-832e-53e30025e40d)
+ Call ID: a47c6675-d478-4d8e-832e-53e30025e40d
+  Args:
+    relation: :hasParent
+    source: Prince_George
+    target: Catherine_Princess_of_Wales
+  AddTriple (514c486c-855e-416b-a073-524f80095dec)
+ Call ID: 514c486c-855e-416b-a073-524f80095dec
+  Args:
+    relation: :hasParent
+    source: Prince_Louis
+    target: William_Prince_of_Wales
+  AddTriple (2c950df0-b2fb-4f80-8829-1a2551ff9616)
+ Call ID: 2c950df0-b2fb-4f80-8829-1a2551ff9616
+  Args:
+    relation: :hasParent
+    source: Prince_Louis
+    target: Catherine_Princess_of_Wales
+  Finish (537e0a2c-a348-451c-b899-3d1208232a74)
+ Call ID: 537e0a2c-a348-451c-b899-3d1208232a74
+  Args:
 
 ================================= Tool Message =================================
 
@@ -584,32 +670,32 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Princess_Charlotte_of_Wales a :Person,
-          :Woman ;
+  data:Princess_Charlotte_of_Wales a :Woman ;
       :hasBirthYear 2015 ;
-      :hasBrother data:Prince_George,
-          data:Prince_Louis ;
       :hasFather data:William_Prince_of_Wales ;
       :hasMother data:Catherine_Princess_of_Wales ;
-      :knownAs "Charlotte Cambridge"^^xsd:string .
+      :hasParent data:Catherine_Princess_of_Wales,
+          data:William_Prince_of_Wales ;
+      :isSiblingOf data:Prince_George,
+          data:Prince_Louis .
 
-  data:Catherine_Princess_of_Wales a :Ancestor,
-          :Woman .
+  data:Queen_Elizabeth_II a :Woman .
 
-  data:Diana_Princess_of_Wales a :Ancestor,
-          :Woman .
+  data:Diana_Princess_of_Wales a :Woman .
 
-  data:King_Charles_III a :Ancestor,
-          :Man .
+  data:King_Charles_III a :Man .
 
-  data:Prince_George a :Man,
-          :Person .
+  data:Prince_George a :Man ;
+      :hasParent data:Catherine_Princess_of_Wales,
+          data:William_Prince_of_Wales .
 
-  data:Prince_Louis a :Man,
-          :Person .
+  data:Prince_Louis a :Man ;
+      :hasParent data:Catherine_Princess_of_Wales,
+          data:William_Prince_of_Wales .
 
-  data:William_Prince_of_Wales a :Ancestor,
-          :Man ;
+  data:Catherine_Princess_of_Wales a :Woman .
+
+  data:William_Prince_of_Wales a :Man ;
       :hasFather data:King_Charles_III ;
       :hasMother data:Diana_Princess_of_Wales .
 
@@ -623,9 +709,339 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (dbfe395d-2ad4-46e3-9a21-ea8812608ccb)
- Call ID: dbfe395d-2ad4-46e3-9a21-ea8812608ccb
+  ValidateShacl (be756417-9f77-40e4-a9c5-28820c13e8f7)
+ Call ID: be756417-9f77-40e4-a9c5-28820c13e8f7
   Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:30
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node King_Charles_III is missing the mandatory class :Ancestor required for the hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Charles_III', class=':Ancestor')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Diana_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Diana_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node William_Prince_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='William_Prince_of_Wales', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node Catherine_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Catherine_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node William_Prince_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='William_Prince_of_Wales', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node Catherine_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Catherine_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node William_Prince_of_Wales is missing the mandatory class :Ancestor required for the hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='William_Prince_of_Wales', class=':Ancestor')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node King_Charles_III is missing the mandatory class :Ancestor required for the hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Charles_III', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Catherine_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Catherine_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Diana_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Diana_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node William_Prince_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='William_Prince_of_Wales', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node Catherine_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Catherine_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node William_Prince_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='William_Prince_of_Wales', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node Catherine_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Catherine_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node William_Prince_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='William_Prince_of_Wales', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node Catherine_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Catherine_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node William_Prince_of_Wales is missing the mandatory class :Ancestor required for the hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='William_Prince_of_Wales', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node King_Charles_III is missing the mandatory class :Ancestor required for the hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_Charles_III', class=':Ancestor')
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Catherine_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Catherine_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Diana_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Diana_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node William_Prince_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='William_Prince_of_Wales', class=':Ancestor')
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node Catherine_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Catherine_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node William_Prince_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='William_Prince_of_Wales', class=':Ancestor')
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node Catherine_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Catherine_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node William_Prince_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='William_Prince_of_Wales', class=':Ancestor')
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node Catherine_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Catherine_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node William_Prince_of_Wales is missing the mandatory class :Ancestor required for the hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='William_Prince_of_Wales', class=':Ancestor')
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Catherine_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Catherine_Princess_of_Wales', class=':Ancestor')
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node William_Prince_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='William_Prince_of_Wales', class=':Ancestor')
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node Catherine_Princess_of_Wales is missing the mandatory class :Ancestor required for the hasParent relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Catherine_Princess_of_Wales', class=':Ancestor')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (6e0a7e31-72fc-43a7-ba67-2f4c0c4c55a7)
+ Call ID: 6e0a7e31-72fc-43a7-ba67-2f4c0c4c55a7
+  Args:
+    source: William_Prince_of_Wales
+    type: :Ancestor
+  AssignClass (37c0b345-1e9b-47f5-89df-e855b5f7ca72)
+ Call ID: 37c0b345-1e9b-47f5-89df-e855b5f7ca72
+  Args:
+    source: Catherine_Princess_of_Wales
+    type: :Ancestor
+  AssignClass (06ea1959-7171-4f45-8435-548c073206df)
+ Call ID: 06ea1959-7171-4f45-8435-548c073206df
+  Args:
+    source: King_Charles_III
+    type: :Ancestor
+  AssignClass (1ecaae35-5783-482d-ace6-6128145a8dd9)
+ Call ID: 1ecaae35-5783-482d-ace6-6128145a8dd9
+  Args:
+    type: :Ancestor
+    source: Diana_Princess_of_Wales
+  ValidateShacl (d374c107-b772-488d-9463-af229966d89e)
+ Call ID: d374c107-b772-488d-9463-af229966d89e
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Princess_Charlotte_of_Wales a :Woman ;
+      :hasBirthYear 2015 ;
+      :hasFather data:William_Prince_of_Wales ;
+      :hasMother data:Catherine_Princess_of_Wales ;
+      :hasParent data:Catherine_Princess_of_Wales,
+          data:William_Prince_of_Wales ;
+      :isSiblingOf data:Prince_George,
+          data:Prince_Louis .
+
+  data:Queen_Elizabeth_II a :Woman .
+
+  data:Diana_Princess_of_Wales a :Ancestor,
+          :Woman .
+
+  data:King_Charles_III a :Ancestor,
+          :Man .
+
+  data:Prince_George a :Man ;
+      :hasParent data:Catherine_Princess_of_Wales,
+          data:William_Prince_of_Wales .
+
+  data:Prince_Louis a :Man ;
+      :hasParent data:Catherine_Princess_of_Wales,
+          data:William_Prince_of_Wales .
+
+  data:Catherine_Princess_of_Wales a :Ancestor,
+          :Woman .
+
+  data:William_Prince_of_Wales a :Ancestor,
+          :Man ;
+      :hasFather data:King_Charles_III ;
+      :hasMother data:Diana_Princess_of_Wales .
+
+
 
 ================================= Tool Message =================================
 
@@ -635,6 +1051,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5b6de39d-9dc9-4b68-be5d-5d1d4a74f9b1)
- Call ID: 5b6de39d-9dc9-4b68-be5d-5d1d4a74f9b1
+  Finish (6e7629ed-0a3f-415e-92ec-2a985c00bc66)
+ Call ID: 6e7629ed-0a3f-415e-92ec-2a985c00bc66
   Args:

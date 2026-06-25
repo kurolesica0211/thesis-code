@@ -1,0 +1,158 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Margaret a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :hasSister data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :isSisterOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :hasSister data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II ;
+    :isSisterOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II .
+
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman ;
+    :hasBrother data:John_Herbert_Bowes-Lyon ;
+    :hasRelation data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,
+        data:Countess_of_Strathmore_and_Kinghorne,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon .
+
+data:14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasChild data:John_Herbert_Bowes-Lyon ;
+    :hasRelation data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,
+        data:Countess_of_Strathmore_and_Kinghorne,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasSon data:John_Herbert_Bowes-Lyon ;
+    :isAncestorOf data:John_Herbert_Bowes-Lyon ;
+    :isBloodrelationOf data:14th_Earl_of_Strathmore_and_Kinghorne ;
+    :isBrotherOf data:14th_Earl_of_Strathmore_and_Kinghorne ;
+    :isFatherOf data:John_Herbert_Bowes-Lyon ;
+    :isParentOf data:John_Herbert_Bowes-Lyon ;
+    :isSiblingOf data:14th_Earl_of_Strathmore_and_Kinghorne ;
+    :isUncleOf data:John_Herbert_Bowes-Lyon .
+
+data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+    :hasChild data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasDaughter data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasRelation data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,
+        data:Countess_of_Strathmore_and_Kinghorne,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :isAncestorOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isBloodrelationOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+    :isBrotherOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+    :isFatherOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isParentOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSiblingOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+    :isUncleOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:Countess_of_Strathmore_and_Kinghorne a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:John_Herbert_Bowes-Lyon ;
+    :hasRelation data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,
+        data:Countess_of_Strathmore_and_Kinghorne,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasSister data:Countess_of_Strathmore_and_Kinghorne ;
+    :hasSon data:John_Herbert_Bowes-Lyon ;
+    :isAncestorOf data:John_Herbert_Bowes-Lyon ;
+    :isAuntOf data:John_Herbert_Bowes-Lyon ;
+    :isBloodrelationOf data:Countess_of_Strathmore_and_Kinghorne ;
+    :isMotherOf data:John_Herbert_Bowes-Lyon ;
+    :isParentOf data:John_Herbert_Bowes-Lyon ;
+    :isSiblingOf data:Countess_of_Strathmore_and_Kinghorne ;
+    :isSisterOf data:Countess_of_Strathmore_and_Kinghorne .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person,
+        :Woman ;
+    :hasAncestor data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1966 ;
+    :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+    :hasParent data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+    :hasRelation data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,
+        data:Countess_of_Strathmore_and_Kinghorne,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasSister data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isBloodrelationOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isChildOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+    :isDaughterOf data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+    :isSiblingOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSisterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:John_Herbert_Bowes-Lyon a :Man,
+        :Person ;
+    :hasAncestor data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Countess_of_Strathmore_and_Kinghorne ;
+    :hasBirthYear 1886 ;
+    :hasBrother data:John_Herbert_Bowes-Lyon ;
+    :hasDeathYear 1930 ;
+    :hasFather data:14th_Earl_of_Strathmore_and_Kinghorne ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Countess_of_Strathmore_and_Kinghorne ;
+    :hasParent data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Countess_of_Strathmore_and_Kinghorne ;
+    :hasRelation data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton,
+        data:Countess_of_Strathmore_and_Kinghorne,
+        data:Elizabeth_Bowes-Lyon,
+        data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Herbert_Bowes-Lyon ;
+    :hasSister data:Elizabeth_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isBrotherOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isChildOf data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Countess_of_Strathmore_and_Kinghorne ;
+    :isSiblingOf data:Elizabeth_Bowes-Lyon,
+        data:John_Herbert_Bowes-Lyon ;
+    :isSonOf data:14th_Earl_of_Strathmore_and_Kinghorne,
+        data:Countess_of_Strathmore_and_Kinghorne ;
+    :isUncleOf data:Queen_Elizabeth_II .
+

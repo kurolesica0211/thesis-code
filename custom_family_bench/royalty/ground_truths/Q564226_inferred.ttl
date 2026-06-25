@@ -1,0 +1,134 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:George_I_of_Greece a :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "271:294"^^xsd:string,
+        "276:284"^^xsd:string,
+        "276:294"^^xsd:string,
+        "352:359"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasRelation data:George_I_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece .
+
+data:Grand_Duchess_Maria_Pavlovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Maria Pavlovna of Russia"^^xsd:string ;
+    data:posIndicesFull "387:425"^^xsd:string ;
+    data:posIndicesPart "1129:1134"^^xsd:string,
+        "1135:1142"^^xsd:string,
+        "2211:2216"^^xsd:string ;
+    data:wdtLink wdt:Q235438 ;
+    :hasChild data:Lennart_Bernadotte ;
+    :hasRelation data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Maria_Pavlovna_of_Russia ;
+    :hasSon data:Lennart_Bernadotte ;
+    :isAncestorOf data:Lennart_Bernadotte ;
+    :isAuntOf data:Lennart_Bernadotte ;
+    :isBloodrelationOf data:Grand_Duchess_Maria_Pavlovna_of_Russia ;
+    :isMotherOf data:Lennart_Bernadotte ;
+    :isParentOf data:Lennart_Bernadotte ;
+    :isSiblingOf data:Grand_Duchess_Maria_Pavlovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Maria_Pavlovna_of_Russia .
+
+data:Prince_Wilhelm-_Duke_of_Södermanland a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Wilhelm, Duke of Södermanland"^^xsd:string ;
+    data:posIndicesFull "345:381"^^xsd:string ;
+    data:posIndicesPart "1299:1305"^^xsd:string,
+        "1633:1639"^^xsd:string,
+        "1689:1695"^^xsd:string,
+        "461:467"^^xsd:string,
+        "483:487"^^xsd:string,
+        "594:600"^^xsd:string,
+        "923:929"^^xsd:string ;
+    data:wdtLink wdt:Q435739 ;
+    :alsoKnownAs "Prince Wilhelm of Sweden"^^xsd:string ;
+    :hasBrother data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :hasChild data:Lennart_Bernadotte ;
+    :hasRelation data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :hasSex data:male ;
+    :hasSon data:Lennart_Bernadotte ;
+    :isAncestorOf data:Lennart_Bernadotte ;
+    :isBloodrelationOf data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :isBrotherOf data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :isFatherOf data:Lennart_Bernadotte ;
+    :isParentOf data:Lennart_Bernadotte ;
+    :isSiblingOf data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :isUncleOf data:Lennart_Bernadotte .
+
+data:Lennart_Bernadotte a :Man,
+        :Person ;
+    rdfs:label "Lennart Bernadotte"^^xsd:string ;
+    data:posIndicesFull "1015:1033"^^xsd:string,
+        "1842:1860"^^xsd:string,
+        "1998:2016"^^xsd:string,
+        "782:800"^^xsd:string,
+        "7:25"^^xsd:string ;
+    data:posIndicesPart "1102:1112"^^xsd:string,
+        "1278:1285"^^xsd:string,
+        "1306:1316"^^xsd:string,
+        "1363:1370"^^xsd:string,
+        "1394:1404"^^xsd:string,
+        "1596:1606"^^xsd:string,
+        "1704:1714"^^xsd:string,
+        "2063:2073"^^xsd:string,
+        "2180:2190"^^xsd:string,
+        "2255:2265"^^xsd:string,
+        "436:446"^^xsd:string,
+        "524:534"^^xsd:string ;
+    data:wdtLink wdt:Q564226 ;
+    :hasAncestor data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :hasBrother data:Lennart_Bernadotte ;
+    :hasFather data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :hasMother data:Grand_Duchess_Maria_Pavlovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :hasRelation data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Lennart_Bernadotte,
+        data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Lennart_Bernadotte ;
+    :isBrotherOf data:Lennart_Bernadotte ;
+    :isChildOf data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Prince_Wilhelm-_Duke_of_Södermanland ;
+    :isSiblingOf data:Lennart_Bernadotte ;
+    :isSonOf data:Grand_Duchess_Maria_Pavlovna_of_Russia,
+        data:Prince_Wilhelm-_Duke_of_Södermanland .
+

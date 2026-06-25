@@ -2,22 +2,71 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Cristina_de_Borbon a :Woman ;
-    :hasBirthYear 1965 ;
-    :hasBrother data:Felipe_VI ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMarriageYear 1997 ;
-    :hasMother data:Sofia ;
-    :hasRelation data:Inaki_Urdangarin ;
-    :hasSister data:Elena_de_Borbon .
+data:FriedrichWilhelmOfLippe a :Man,
+        :Person ;
+    :isSonOf data:ErnstAugustOfLippe .
 
-data:Elena_de_Borbon a :Woman .
+data:StephanOfLippe a :Man,
+        :Person ;
+    :isSonOf data:ArminOfLippe .
 
-data:Felipe_VI a :Man .
+data:AdolphusFrederickV a :Man,
+        :Person .
 
-data:Inaki_Urdangarin a :Man .
+data:CarolineVonWartensleben a :Person,
+        :Woman .
 
-data:Juan_Carlos_I a :Man .
+data:ChristaVonArnim a :Person,
+        :Woman ;
+    :hasBirthYear 1923 ;
+    :hasDeathYear 2020 ;
+    :hasFather data:CurtDavidVonArnim ;
+    :hasMother data:StephanieVonStechow .
 
-data:Sofia a :Woman .
+data:CurtDavidVonArnim a :Man,
+        :Person .
+
+data:ElisabethOfAnhalt a :Person,
+        :Woman .
+
+data:ErnstAugustOfLippe a :Man,
+        :Person ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1990 ;
+    :hasFather data:JuliusErnstOfLippe ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:MarieOfMecklenburgStrelitz ;
+    :hasRelation data:ChristaVonArnim ;
+    :isSiblingOf data:ArminOfLippe,
+        data:LeopoldOfLippe .
+
+data:ErnstCountOfLippeBiesterfeld a :Man,
+        :Person .
+
+data:JuliusErnstOfLippe a :Man,
+        :Person ;
+    :hasBirthYear 1873 ;
+    :hasDeathYear 1952 ;
+    :hasFather data:ErnstCountOfLippeBiesterfeld ;
+    :hasMother data:CarolineVonWartensleben .
+
+data:LeopoldIV a :Man,
+        :Person .
+
+data:LeopoldOfLippe a :Man,
+        :Person .
+
+data:MarieOfMecklenburgStrelitz a :Person,
+        :Woman ;
+    :hasBirthYear 1878 ;
+    :hasDeathYear 1948 ;
+    :hasFather data:AdolphusFrederickV ;
+    :hasMother data:ElisabethOfAnhalt .
+
+data:StephanieVonStechow a :Person,
+        :Woman .
+
+data:ArminOfLippe a :Man,
+        :Person ;
+    :hasFather data:LeopoldIV .
 

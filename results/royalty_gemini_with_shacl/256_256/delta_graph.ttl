@@ -2,60 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Albert_Mountbatten a :Man,
+data:George_Ivar_Louis_Mountbatten a :Man,
         :Person ;
-    :hasBirthYear 1886 ;
-    :hasDeathYear 1960 ;
-    :hasFather data:Prince_Henry_of_Battenberg ;
-    :hasMarriageYear 1917 ;
-    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
-    :hasRelation data:Lady_Irene_Denison ;
-    :hasSister data:Princess_Victoria_Eugenia ;
-    :knownAs "Drino"^^xsd:string .
+    :hasBirthYear 1961 ;
+    :hasFather data:3rd_Marquess_of_Milford_Haven ;
+    :hasMarriageYear 1989,
+        1997 ;
+    :hasMother data:Janet_Mercedes_Bryce ;
+    :hasRelation data:Clare_Husted_Steel,
+        data:Sarah_Georgina_Walker ;
+    :isBrotherOf data:Lord_Ivar_Mountbatten .
 
-data:Earl_of_Londesborough a :Ancestor,
+data:3rd_Marquess_of_Milford_Haven a :Ancestor,
         :Man,
         :Person .
 
-data:Julia_von_Hauke a :Ancestor,
+data:Clare_Husted_Steel a :Person,
+        :Woman .
+
+data:George_Alfred_Walker a :Ancestor,
+        :Man,
+        :Person .
+
+data:Janet_Mercedes_Bryce a :Ancestor,
         :Person,
         :Woman .
 
-data:Lady_Grace_Adelaide_Fane a :Ancestor,
+data:Jean_Maureen_Hatton a :Ancestor,
         :Person,
         :Woman .
 
-data:Lady_Irene_Denison a :Person,
+data:Lord_Ivar_Mountbatten a :Man,
+        :Person .
+
+data:Michael_Spencer a :Man,
+        :Person .
+
+data:Sarah_Georgina_Walker a :Person,
         :Woman ;
-    :hasBirthYear 1890 ;
-    :hasDeathYear 1956 ;
-    :hasFather data:Earl_of_Londesborough ;
-    :hasMother data:Lady_Grace_Adelaide_Fane .
-
-data:Prince_Albert a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Henry_of_Battenberg a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
-    :hasMother data:Julia_von_Hauke .
-
-data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Prince_Albert ;
-    :hasMother data:Queen_Victoria .
-
-data:Princess_Victoria_Eugenia a :Person,
-        :Woman .
-
-data:Queen_Victoria a :Ancestor,
-        :Person,
-        :Woman .
+    :hasBirthYear 1961 ;
+    :hasFather data:George_Alfred_Walker ;
+    :hasMother data:Jean_Maureen_Hatton ;
+    :hasRelation data:Michael_Spencer .
 

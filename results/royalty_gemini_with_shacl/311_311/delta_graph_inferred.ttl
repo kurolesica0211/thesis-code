@@ -1,0 +1,303 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Francis_II a :Man,
+        :Person ;
+    :hasBrother data:Francis_II ;
+    :hasRelation data:Alfonso_son_of_Carlos,
+        data:Don_Carlos,
+        data:Francis_II ;
+    :isBloodrelationOf data:Francis_II ;
+    :isBrotherOf data:Francis_II ;
+    :isSiblingOf data:Francis_II .
+
+data:Alfonso_of_the_Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_of_the_Two_Sicilies ;
+    :hasChild data:Don_Carlos ;
+    :hasRelation data:Alfonso_of_the_Two_Sicilies,
+        data:Alfonso_son_of_Carlos,
+        data:Don_Carlos,
+        data:Ranieri ;
+    :hasSon data:Don_Carlos ;
+    :isAncestorOf data:Alfonso_son_of_Carlos,
+        data:Don_Carlos ;
+    :isBloodrelationOf data:Alfonso_of_the_Two_Sicilies ;
+    :isBrotherOf data:Alfonso_of_the_Two_Sicilies ;
+    :isFatherOf data:Don_Carlos ;
+    :isParentOf data:Don_Carlos ;
+    :isSiblingOf data:Alfonso_of_the_Two_Sicilies ;
+    :isUncleOf data:Don_Carlos .
+
+data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Don_Carlos ;
+    :hasRelation data:Alfonso_son_of_Carlos,
+        data:Don_Carlos,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies,
+        data:Ranieri ;
+    :hasSister data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Don_Carlos ;
+    :isAncestorOf data:Alfonso_son_of_Carlos,
+        data:Don_Carlos ;
+    :isAuntOf data:Don_Carlos ;
+    :isBloodrelationOf data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Don_Carlos ;
+    :isParentOf data:Don_Carlos ;
+    :isSiblingOf data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Philippe_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philippe_Count_of_Paris ;
+    :hasChild data:Louise_of_Orl%C3%A9ans ;
+    :hasDaughter data:Louise_of_Orl%C3%A9ans ;
+    :hasRelation data:Alfonso_son_of_Carlos,
+        data:Don_Carlos,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Philippe_Count_of_Paris,
+        data:Ranieri ;
+    :isAncestorOf data:Louise_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Philippe_Count_of_Paris ;
+    :isBrotherOf data:Philippe_Count_of_Paris ;
+    :isFatherOf data:Louise_of_Orl%C3%A9ans ;
+    :isParentOf data:Louise_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Philippe_Count_of_Paris ;
+    :isUncleOf data:Louise_of_Orl%C3%A9ans .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_XII_of_Spain,
+        data:Alfonso_son_of_Carlos,
+        data:Don_Carlos,
+        data:Maria_Christina_of_Austria,
+        data:Mercedes_Princess_of_Asturias,
+        data:Ranieri ;
+    :hasSister data:Mercedes_Princess_of_Asturias ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain,
+        data:Mercedes_Princess_of_Asturias ;
+    :isBrotherOf data:Alfonso_XIII_of_Spain,
+        data:Mercedes_Princess_of_Asturias ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain,
+        data:Mercedes_Princess_of_Asturias .
+
+data:Louise_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasAncestor data:Philippe_Count_of_Paris ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasParent data:Philippe_Count_of_Paris ;
+    :hasRelation data:Alfonso_son_of_Carlos,
+        data:Don_Carlos,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Philippe_Count_of_Paris,
+        data:Ranieri ;
+    :hasSister data:Louise_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Louise_of_Orl%C3%A9ans ;
+    :isChildOf data:Philippe_Count_of_Paris ;
+    :isDaughterOf data:Philippe_Count_of_Paris ;
+    :isSiblingOf data:Louise_of_Orl%C3%A9ans ;
+    :isSisterOf data:Louise_of_Orl%C3%A9ans .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XII_of_Spain ;
+    :hasChild data:Mercedes_Princess_of_Asturias ;
+    :hasDaughter data:Mercedes_Princess_of_Asturias ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_XII_of_Spain,
+        data:Alfonso_son_of_Carlos,
+        data:Don_Carlos,
+        data:Maria_Christina_of_Austria,
+        data:Mercedes_Princess_of_Asturias,
+        data:Ranieri ;
+    :isAncestorOf data:Mercedes_Princess_of_Asturias ;
+    :isBloodrelationOf data:Alfonso_XII_of_Spain ;
+    :isBrotherOf data:Alfonso_XII_of_Spain ;
+    :isFatherOf data:Mercedes_Princess_of_Asturias ;
+    :isParentOf data:Mercedes_Princess_of_Asturias ;
+    :isSiblingOf data:Alfonso_XII_of_Spain ;
+    :isUncleOf data:Mercedes_Princess_of_Asturias .
+
+data:Ferdinand a :Man,
+        :Person ;
+    :hasBrother data:Don_Carlos,
+        data:Ferdinand,
+        data:Ranieri ;
+    :hasRelation data:Alfonso_son_of_Carlos,
+        data:Don_Carlos,
+        data:Ferdinand,
+        data:Ranieri ;
+    :isBloodrelationOf data:Don_Carlos,
+        data:Ferdinand,
+        data:Francis_II,
+        data:Ranieri ;
+    :isBrotherOf data:Don_Carlos,
+        data:Ferdinand,
+        data:Ranieri ;
+    :isSiblingOf data:Don_Carlos,
+        data:Ferdinand,
+        data:Ranieri ;
+    :isUncleOf data:Alfonso_son_of_Carlos .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Mercedes_Princess_of_Asturias ;
+    :hasDaughter data:Mercedes_Princess_of_Asturias ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_XII_of_Spain,
+        data:Alfonso_son_of_Carlos,
+        data:Don_Carlos,
+        data:Maria_Christina_of_Austria,
+        data:Mercedes_Princess_of_Asturias,
+        data:Ranieri ;
+    :hasSister data:Maria_Christina_of_Austria ;
+    :isAncestorOf data:Mercedes_Princess_of_Asturias ;
+    :isAuntOf data:Mercedes_Princess_of_Asturias ;
+    :isBloodrelationOf data:Maria_Christina_of_Austria ;
+    :isMotherOf data:Mercedes_Princess_of_Asturias ;
+    :isParentOf data:Mercedes_Princess_of_Asturias ;
+    :isSiblingOf data:Maria_Christina_of_Austria ;
+    :isSisterOf data:Maria_Christina_of_Austria .
+
+data:Ranieri a :Man,
+        :Person ;
+    :hasBrother data:Don_Carlos,
+        data:Ferdinand,
+        data:Ranieri ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_XII_of_Spain,
+        data:Alfonso_of_the_Two_Sicilies,
+        data:Alfonso_son_of_Carlos,
+        data:Don_Carlos,
+        data:Ferdinand,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Mercedes_Princess_of_Asturias,
+        data:Philippe_Count_of_Paris,
+        data:Ranieri ;
+    :isBloodrelationOf data:Don_Carlos,
+        data:Ferdinand,
+        data:Francis_II,
+        data:Ranieri ;
+    :isBrotherOf data:Don_Carlos,
+        data:Ferdinand,
+        data:Ranieri ;
+    :isSiblingOf data:Don_Carlos,
+        data:Ferdinand,
+        data:Ranieri ;
+    :isUncleOf data:Alfonso_son_of_Carlos .
+
+data:Alfonso_son_of_Carlos a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_of_the_Two_Sicilies,
+        data:Don_Carlos,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasBrother data:Alfonso_son_of_Carlos ;
+    :hasFather data:Don_Carlos ;
+    :hasParent data:Don_Carlos ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_XII_of_Spain,
+        data:Alfonso_of_the_Two_Sicilies,
+        data:Alfonso_son_of_Carlos,
+        data:Don_Carlos,
+        data:Ferdinand,
+        data:Francis_II,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Mercedes_Princess_of_Asturias,
+        data:Philippe_Count_of_Paris,
+        data:Ranieri ;
+    :isBloodrelationOf data:Alfonso_son_of_Carlos ;
+    :isBrotherOf data:Alfonso_son_of_Carlos ;
+    :isChildOf data:Don_Carlos ;
+    :isSiblingOf data:Alfonso_son_of_Carlos ;
+    :isSonOf data:Don_Carlos .
+
+data:Mercedes_Princess_of_Asturias a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasBrother data:Alfonso_XIII_of_Spain ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_XII_of_Spain,
+        data:Alfonso_son_of_Carlos,
+        data:Don_Carlos,
+        data:Maria_Christina_of_Austria,
+        data:Mercedes_Princess_of_Asturias,
+        data:Ranieri ;
+    :hasSister data:Mercedes_Princess_of_Asturias ;
+    :isBloodrelationOf data:Alfonso_XIII_of_Spain,
+        data:Mercedes_Princess_of_Asturias ;
+    :isChildOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isDaughterOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isSiblingOf data:Alfonso_XIII_of_Spain,
+        data:Mercedes_Princess_of_Asturias ;
+    :isSisterOf data:Alfonso_XIII_of_Spain,
+        data:Mercedes_Princess_of_Asturias .
+
+data:Don_Carlos a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_of_the_Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasBirthYear 1870 ;
+    :hasBrother data:Don_Carlos,
+        data:Ferdinand,
+        data:Ranieri ;
+    :hasChild data:Alfonso_son_of_Carlos ;
+    :hasDeathYear 1949 ;
+    :hasFather data:Alfonso_of_the_Two_Sicilies ;
+    :hasMarriageYear 1901,
+        1907 ;
+    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Alfonso_of_the_Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_XIII_of_Spain,
+        data:Alfonso_XII_of_Spain,
+        data:Alfonso_of_the_Two_Sicilies,
+        data:Alfonso_son_of_Carlos,
+        data:Don_Carlos,
+        data:Ferdinand,
+        data:Francis_II,
+        data:Louise_of_Orl%C3%A9ans,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies,
+        data:Maria_Christina_of_Austria,
+        data:Mercedes_Princess_of_Asturias,
+        data:Philippe_Count_of_Paris,
+        data:Ranieri ;
+    :hasSon data:Alfonso_son_of_Carlos ;
+    :isAncestorOf data:Alfonso_son_of_Carlos ;
+    :isBloodrelationOf data:Don_Carlos,
+        data:Ferdinand,
+        data:Francis_II,
+        data:Ranieri ;
+    :isBrotherOf data:Don_Carlos,
+        data:Ferdinand,
+        data:Ranieri ;
+    :isChildOf data:Alfonso_of_the_Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isFatherOf data:Alfonso_son_of_Carlos ;
+    :isParentOf data:Alfonso_son_of_Carlos ;
+    :isSiblingOf data:Don_Carlos,
+        data:Ferdinand,
+        data:Ranieri ;
+    :isSonOf data:Alfonso_of_the_Two_Sicilies,
+        data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isUncleOf data:Alfonso_son_of_Carlos .
+

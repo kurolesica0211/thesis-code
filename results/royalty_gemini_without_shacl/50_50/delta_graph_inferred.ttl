@@ -1,0 +1,500 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:Maria_Argyropoulos a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Aspasia_Manos ;
+    :hasDaughter data:Aspasia_Manos ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Maria_Argyropoulos ;
+    :isAncestorOf data:Alexandra,
+        data:Aspasia_Manos ;
+    :isAuntOf data:Aspasia_Manos ;
+    :isBloodrelationOf data:Maria_Argyropoulos ;
+    :isMotherOf data:Aspasia_Manos ;
+    :isParentOf data:Aspasia_Manos ;
+    :isSiblingOf data:Maria_Argyropoulos ;
+    :isSisterOf data:Maria_Argyropoulos .
+
+data:Petros_Manos a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Petros_Manos ;
+    :hasChild data:Aspasia_Manos ;
+    :hasDaughter data:Aspasia_Manos ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :isAncestorOf data:Alexandra,
+        data:Aspasia_Manos ;
+    :isBloodrelationOf data:Petros_Manos ;
+    :isBrotherOf data:Petros_Manos ;
+    :isFatherOf data:Aspasia_Manos ;
+    :isParentOf data:Aspasia_Manos ;
+    :isSiblingOf data:Petros_Manos ;
+    :isUncleOf data:Aspasia_Manos .
+
+data:Frederick_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_III ;
+    :hasChild data:Sophia_of_Prussia ;
+    :hasDaughter data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :isAncestorOf data:Alexander,
+        data:Alexandra,
+        data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Frederick_III ;
+    :isBrotherOf data:Frederick_III ;
+    :isFatherOf data:Sophia_of_Prussia ;
+    :isParentOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Frederick_III ;
+    :isUncleOf data:Sophia_of_Prussia .
+
+data:George_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_I ;
+    :hasChild data:Constantine_I ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSon data:Constantine_I ;
+    :isAncestorOf data:Alexander,
+        data:Alexandra,
+        data:Constantine_I ;
+    :isBloodrelationOf data:George_I ;
+    :isBrotherOf data:George_I ;
+    :isFatherOf data:Constantine_I ;
+    :isParentOf data:Constantine_I ;
+    :isSiblingOf data:George_I ;
+    :isUncleOf data:Constantine_I .
+
+data:Olga_Constantinovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Constantine_I ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Olga_Constantinovna ;
+    :hasSon data:Constantine_I ;
+    :isAncestorOf data:Alexander,
+        data:Alexandra,
+        data:Constantine_I ;
+    :isAuntOf data:Constantine_I ;
+    :isBloodrelationOf data:Olga_Constantinovna ;
+    :isMotherOf data:Constantine_I ;
+    :isParentOf data:Constantine_I ;
+    :isSiblingOf data:Olga_Constantinovna ;
+    :isSisterOf data:Olga_Constantinovna .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sophia_of_Prussia ;
+    :hasDaughter data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Victoria_Princess_Royal ;
+    :isAncestorOf data:Alexander,
+        data:Alexandra,
+        data:Sophia_of_Prussia ;
+    :isAuntOf data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Victoria_Princess_Royal ;
+    :isMotherOf data:Sophia_of_Prussia ;
+    :isParentOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Victoria_Princess_Royal ;
+    :isSisterOf data:Victoria_Princess_Royal .
+
+data:George a :Man,
+        :Person ;
+    :hasBrother data:Alexander,
+        data:George,
+        data:Paul ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Helen ;
+    :isBloodrelationOf data:Alexander,
+        data:George,
+        data:Helen,
+        data:Paul ;
+    :isBrotherOf data:Alexander,
+        data:George,
+        data:Helen,
+        data:Paul ;
+    :isSiblingOf data:Alexander,
+        data:George,
+        data:Helen,
+        data:Paul ;
+    :isUncleOf data:Alexandra .
+
+data:Helen a :Person,
+        :Woman ;
+    :hasBrother data:Alexander,
+        data:George,
+        data:Paul ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Helen ;
+    :isAuntOf data:Alexandra ;
+    :isBloodrelationOf data:Alexander,
+        data:George,
+        data:Helen,
+        data:Paul ;
+    :isSiblingOf data:Alexander,
+        data:George,
+        data:Helen,
+        data:Paul ;
+    :isSisterOf data:Alexander,
+        data:George,
+        data:Helen,
+        data:Paul .
+
+data:Paul a :Man,
+        :Person ;
+    :hasBrother data:Alexander,
+        data:George,
+        data:Paul ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Helen ;
+    :isBloodrelationOf data:Alexander,
+        data:George,
+        data:Helen,
+        data:Paul ;
+    :isBrotherOf data:Alexander,
+        data:George,
+        data:Helen,
+        data:Paul ;
+    :isSiblingOf data:Alexander,
+        data:George,
+        data:Helen,
+        data:Paul ;
+    :isUncleOf data:Alexandra .
+
+data:Aspasia_Manos a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Maria_Argyropoulos,
+        data:Petros_Manos ;
+    :hasChild data:Alexandra ;
+    :hasDaughter data:Alexandra ;
+    :hasFather data:Petros_Manos ;
+    :hasMother data:Maria_Argyropoulos ;
+    :hasParent data:Maria_Argyropoulos,
+        data:Petros_Manos ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Aspasia_Manos ;
+    :isAncestorOf data:Alexandra ;
+    :isAuntOf data:Alexandra ;
+    :isBloodrelationOf data:Aspasia_Manos ;
+    :isChildOf data:Maria_Argyropoulos,
+        data:Petros_Manos ;
+    :isDaughterOf data:Maria_Argyropoulos,
+        data:Petros_Manos ;
+    :isMotherOf data:Alexandra ;
+    :isParentOf data:Alexandra ;
+    :isSiblingOf data:Aspasia_Manos ;
+    :isSisterOf data:Aspasia_Manos .
+
+data:Constantine_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_I,
+        data:Olga_Constantinovna ;
+    :hasBrother data:Constantine_I ;
+    :hasChild data:Alexander ;
+    :hasFather data:George_I ;
+    :hasMother data:Olga_Constantinovna ;
+    :hasParent data:George_I,
+        data:Olga_Constantinovna ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSon data:Alexander ;
+    :isAncestorOf data:Alexander,
+        data:Alexandra ;
+    :isBloodrelationOf data:Constantine_I ;
+    :isBrotherOf data:Constantine_I ;
+    :isChildOf data:George_I,
+        data:Olga_Constantinovna ;
+    :isFatherOf data:Alexander ;
+    :isParentOf data:Alexander ;
+    :isSiblingOf data:Constantine_I ;
+    :isSonOf data:George_I,
+        data:Olga_Constantinovna ;
+    :isUncleOf data:Alexander .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :hasChild data:Alexander ;
+    :hasFather data:Frederick_III ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasParent data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Sophia_of_Prussia ;
+    :hasSon data:Alexander ;
+    :isAncestorOf data:Alexander,
+        data:Alexandra ;
+    :isAuntOf data:Alexander ;
+    :isBloodrelationOf data:Sophia_of_Prussia ;
+    :isChildOf data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :isDaughterOf data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :isMotherOf data:Alexander ;
+    :isParentOf data:Alexander ;
+    :isSiblingOf data:Sophia_of_Prussia ;
+    :isSisterOf data:Sophia_of_Prussia .
+
+data:Alexandra a :Person,
+        :Woman ;
+    :hasAncestor data:Alexander,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George_I,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasFather data:Alexander ;
+    :hasMother data:Aspasia_Manos ;
+    :hasParent data:Alexander,
+        data:Aspasia_Manos ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSister data:Alexandra ;
+    :isBloodrelationOf data:Alexandra ;
+    :isChildOf data:Alexander,
+        data:Aspasia_Manos ;
+    :isDaughterOf data:Alexander,
+        data:Aspasia_Manos ;
+    :isSiblingOf data:Alexandra ;
+    :isSisterOf data:Alexandra .
+
+data:Alexander a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Constantine_I,
+        data:Frederick_III,
+        data:George_I,
+        data:Olga_Constantinovna,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasBirthYear 1893 ;
+    :hasBrother data:Alexander,
+        data:George,
+        data:Paul ;
+    :hasChild data:Alexandra ;
+    :hasDaughter data:Alexandra ;
+    :hasDeathYear 1920 ;
+    :hasFather data:Constantine_I ;
+    :hasMarriageYear 1919 ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Constantine_I,
+        data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George,
+        data:George_I,
+        data:Helen,
+        data:Maria_Argyropoulos,
+        data:Olga_Constantinovna,
+        data:Paul,
+        data:Petros_Manos,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :hasSex data:Male ;
+    :hasSister data:Helen ;
+    :isAncestorOf data:Alexandra ;
+    :isBloodrelationOf data:Alexander,
+        data:George,
+        data:Helen,
+        data:Paul ;
+    :isBrotherOf data:Alexander,
+        data:George,
+        data:Helen,
+        data:Paul ;
+    :isChildOf data:Constantine_I,
+        data:Sophia_of_Prussia ;
+    :isFatherOf data:Alexandra ;
+    :isParentOf data:Alexandra ;
+    :isSiblingOf data:Alexander,
+        data:George,
+        data:Helen,
+        data:Paul ;
+    :isSonOf data:Constantine_I,
+        data:Sophia_of_Prussia ;
+    :isUncleOf data:Alexandra .
+

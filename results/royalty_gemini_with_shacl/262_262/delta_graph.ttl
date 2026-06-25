@@ -2,56 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:CountessLuana a :Person,
-        :Woman ;
-    :hasFather data:PrinceFriso ;
-    :hasMother data:MabelWisseSmit .
-
-data:CountessZaria a :Person,
-        :Woman ;
-    :hasFather data:PrinceFriso ;
-    :hasMother data:MabelWisseSmit .
-
-data:KingWillemAlexander a :Man,
+data:Georg_von_Habsburg a :Man,
         :Person ;
-    :hasFather data:ClausVonAmsberg ;
-    :hasMother data:QueenBeatrix .
+    :hasBirthYear 1964 ;
+    :hasMarriageYear 1997 ;
+    :hasRelation data:Eilika_of_Oldenburg .
 
-data:PrinceBernhard a :Ancestor,
-        :Man,
-        :Person .
+data:Eilika_of_Oldenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1972 ;
+    :isDaughterOf data:Ilka_of_Ortenburg,
+        data:Johann_of_Oldenburg .
 
-data:PrinceConstantijn a :Man,
-        :Person ;
-    :hasFather data:ClausVonAmsberg ;
-    :hasMother data:QueenBeatrix .
-
-data:QueenJuliana a :Ancestor,
+data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
         :Person,
         :Woman .
 
-data:MabelWisseSmit a :Ancestor,
+data:Ilka_of_Ortenburg a :Ancestor,
         :Person,
         :Woman .
 
-data:PrinceFriso a :Ancestor,
+data:Johann_of_Oldenburg a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear 1968 ;
-    :hasBrother data:KingWillemAlexander,
-        data:PrinceConstantijn ;
-    :hasDeathYear 2013 ;
-    :hasFather data:ClausVonAmsberg ;
-    :hasMarriageYear 2004 ;
-    :hasMother data:QueenBeatrix .
+    :isSonOf data:Helena_of_Waldeck_and_Pyrmont,
+        data:Nikolaus_of_Oldenburg .
 
-data:ClausVonAmsberg a :Ancestor,
+data:Nikolaus_of_Oldenburg a :Ancestor,
         :Man,
         :Person .
-
-data:QueenBeatrix a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:PrinceBernhard ;
-    :hasMother data:QueenJuliana .
 

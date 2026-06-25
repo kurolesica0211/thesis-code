@@ -7,15 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Infanta_María_Cristina_of_Spain a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Infanta_María_Cristina_of_Spain a :Person ;
     rdfs:label "Infanta María Cristina of Spain" ;
     data:posIndicesFull "818:849" ;
     data:posIndicesPart "1116:1121",
@@ -23,80 +15,10 @@ data:Infanta_María_Cristina_of_Spain a :Person,
     data:wdtLink wdt:Q2412713 ;
     :alsoKnownAs "Infanta María Cristina, Countess Marone",
         "María Cristina de Borbón y Battenberg" ;
-    :hasBrother data:Infante_Juan-_Count_of_Barcelona ;
-    :hasFather data:Alfonso_XIII ;
     :hasParent data:Alfonso_XIII ;
-    :hasSex data:female ;
-    :isAuntOf data:Infante_Alfonso_of_Spain,
-        data:Juan_Carlos_I_of_Spain ;
-    :isChildOf data:Alfonso_XIII ;
-    :isDaughterOf data:Alfonso_XIII ;
-    :isSiblingOf data:Infante_Juan-_Count_of_Barcelona ;
-    :isSisterOf data:Infante_Juan-_Count_of_Barcelona .
+    :hasSex data:female .
 
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alfonso XIII" ;
-    data:posIndicesFull "369:381" ;
-    data:posIndicesPart "1100:1107",
-        "1265:1272",
-        "1402:1409",
-        "1521:1528",
-        "1618:1625",
-        "1927:1934",
-        "2153:2160",
-        "2274:2281",
-        "2528:2535",
-        "2638:2645",
-        "2890:2897",
-        "3211:3218",
-        "3252:3259",
-        "527:534",
-        "751:758",
-        "957:964",
-        "971:978" ;
-    data:wdtLink wdt:Q18363 ;
-    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
-        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
-        "Alfonso XIII of Spain",
-        "Don Alfonso de Borbon y Habsburgo",
-        "Don Alfonso de Borbón y Habsburgo",
-        "The African" ;
-    :hasChild data:Infanta_María_Cristina_of_Spain,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :hasDaughter data:Infanta_María_Cristina_of_Spain ;
-    :hasSex data:male ;
-    :hasSon data:Infante_Juan-_Count_of_Barcelona ;
-    :isFatherOf data:Infanta_María_Cristina_of_Spain,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isParentOf data:Infanta_María_Cristina_of_Spain,
-        data:Infante_Juan-_Count_of_Barcelona .
-
-data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta María de las Mercedes, Countess of Barcelona" ;
-    data:posIndicesFull "288:342" ;
-    data:posIndicesPart "644:653",
-        "687:695" ;
-    data:wdtLink wdt:Q235128 ;
-    :alsoKnownAs "Princess Maria de las Mercedes of Bourbon-Two Sicilies" ;
-    :hasChild data:Infante_Alfonso_of_Spain,
-        data:Juan_Carlos_I_of_Spain ;
-    :hasSex data:female ;
-    :hasSon data:Infante_Alfonso_of_Spain,
-        data:Juan_Carlos_I_of_Spain ;
-    :isMotherOf data:Infante_Alfonso_of_Spain,
-        data:Juan_Carlos_I_of_Spain ;
-    :isParentOf data:Infante_Alfonso_of_Spain,
-        data:Juan_Carlos_I_of_Spain .
-
-data:Infante_Alfonso_of_Spain a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Infante_Alfonso_of_Spain a :Person ;
     rdfs:label "Infante Alfonso of Spain" ;
     data:posIndicesFull "0:24" ;
     data:posIndicesPart "1100:1107",
@@ -123,23 +45,11 @@ data:Infante_Alfonso_of_Spain a :Man,
         "971:978" ;
     data:wdtLink wdt:Q704310 ;
     :alsoKnownAs "Alfonso Cristino de Borbón y Borbón" ;
-    :hasBrother data:Juan_Carlos_I_of_Spain ;
-    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
-    :hasMother data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
     :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
         data:Infante_Juan-_Count_of_Barcelona ;
-    :hasSex data:male ;
-    :isBrotherOf data:Juan_Carlos_I_of_Spain ;
-    :isChildOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isSiblingOf data:Juan_Carlos_I_of_Spain ;
-    :isSonOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
-        data:Infante_Juan-_Count_of_Barcelona .
+    :hasSex data:male .
 
-data:Juan_Carlos_I_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Juan_Carlos_I_of_Spain a :Person ;
     rdfs:label "Juan Carlos I of Spain" ;
     data:posIndicesFull "195:208",
         "195:217",
@@ -179,23 +89,55 @@ data:Juan_Carlos_I_of_Spain a :Ancestor,
     data:wdtLink wdt:Q19943 ;
     :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
         "Juan Carlos I" ;
-    :hasBrother data:Infante_Alfonso_of_Spain ;
-    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
-    :hasMother data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
     :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
         data:Infante_Juan-_Count_of_Barcelona ;
-    :hasSex data:male ;
-    :isBrotherOf data:Infante_Alfonso_of_Spain ;
-    :isChildOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isSiblingOf data:Infante_Alfonso_of_Spain ;
-    :isSonOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
-        data:Infante_Juan-_Count_of_Barcelona .
+    :hasSex data:male .
 
-data:Infante_Juan-_Count_of_Barcelona a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alfonso_XIII a :Person ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "369:381" ;
+    data:posIndicesPart "1100:1107",
+        "1265:1272",
+        "1402:1409",
+        "1521:1528",
+        "1618:1625",
+        "1927:1934",
+        "2153:2160",
+        "2274:2281",
+        "2528:2535",
+        "2638:2645",
+        "2890:2897",
+        "3211:3218",
+        "3252:3259",
+        "527:534",
+        "751:758",
+        "957:964",
+        "971:978" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasSex data:male .
+
+data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona a :Person ;
+    rdfs:label "Infanta María de las Mercedes, Countess of Barcelona" ;
+    data:posIndicesFull "288:342" ;
+    data:posIndicesPart "644:653",
+        "687:695" ;
+    data:wdtLink wdt:Q235128 ;
+    :alsoKnownAs "Princess Maria de las Mercedes of Bourbon-Two Sicilies" ;
+    :hasSex data:female .
+
+data:Infante_Juan-_Count_of_Barcelona a :Person ;
     rdfs:label "Infante Juan, Count of Barcelona" ;
     data:posIndicesFull "251:283",
         "3111:3143" ;
@@ -220,20 +162,10 @@ data:Infante_Juan-_Count_of_Barcelona a :Ancestor,
         "743:750" ;
     data:wdtLink wdt:Q313857 ;
     :alsoKnownAs "Infante Juan of Barcelona" ;
-    :hasChild data:Infante_Alfonso_of_Spain,
-        data:Juan_Carlos_I_of_Spain ;
-    :hasFather data:Alfonso_XIII ;
     :hasParent data:Alfonso_XIII ;
-    :hasSex data:male ;
-    :hasSister data:Infanta_María_Cristina_of_Spain ;
-    :hasSon data:Infante_Alfonso_of_Spain,
-        data:Juan_Carlos_I_of_Spain ;
-    :isBrotherOf data:Infanta_María_Cristina_of_Spain ;
-    :isChildOf data:Alfonso_XIII ;
-    :isFatherOf data:Infante_Alfonso_of_Spain,
-        data:Juan_Carlos_I_of_Spain ;
-    :isParentOf data:Infante_Alfonso_of_Spain,
-        data:Juan_Carlos_I_of_Spain ;
-    :isSiblingOf data:Infanta_María_Cristina_of_Spain ;
-    :isSonOf data:Alfonso_XIII .
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

@@ -7,38 +7,30 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Duke_Johann_of_Oldenburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Duke Johann of Oldenburg" ;
-    data:posIndicesFull "168:192" ;
-    data:wdtLink wdt:Q75390945 ;
-    :alsoKnownAs "Johann Friedrich Adolf von Holstein-Gottorp, Herzog von Oldenburg" ;
-    :hasChild data:Eilika_Duchess_of_Oldenburg ;
-    :hasDaughter data:Eilika_Duchess_of_Oldenburg ;
-    :hasSex data:male ;
-    :isFatherOf data:Eilika_Duchess_of_Oldenburg ;
-    :isParentOf data:Eilika_Duchess_of_Oldenburg .
-
-data:Eilika_Duchess_of_Oldenburg a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Eilika_Duchess_of_Oldenburg a :Person ;
     rdfs:label "Eilika Duchess of Oldenburg" ;
     data:wdtLink wdt:Q3512965 ;
     :alsoKnownAs "Archduchess Eilika",
         "Archduchess Eilika Helene Jutta Clementine",
         "Archduchess Eilika, The Archduchess Georg of Austria",
         "Eilika Duchess of Oldenburg" ;
-    :hasFather data:Duke_Johann_of_Oldenburg ;
     :hasParent data:Duke_Johann_of_Oldenburg ;
-    :hasSex data:female ;
-    :isChildOf data:Duke_Johann_of_Oldenburg ;
-    :isDaughterOf data:Duke_Johann_of_Oldenburg .
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Duke_Johann_of_Oldenburg a :Person ;
+    rdfs:label "Duke Johann of Oldenburg" ;
+    data:posIndicesFull "168:192" ;
+    data:wdtLink wdt:Q75390945 ;
+    :alsoKnownAs "Johann Friedrich Adolf von Holstein-Gottorp, Herzog von Oldenburg" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

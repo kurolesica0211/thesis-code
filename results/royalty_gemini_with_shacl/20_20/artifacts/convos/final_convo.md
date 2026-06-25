@@ -112,6 +112,8 @@ Under the stage name Achi Miller, he had a minor role in the 2023 film No Hard F
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -127,39 +129,9 @@ Under the stage name Achi Miller, he had a minor role in the 2023 film No Hard F
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -174,6 +146,23 @@ Under the stage name Achi Miller, he had a minor role in the 2023 film No Hard F
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -191,6 +180,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,29 +262,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -289,6 +285,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -301,6 +305,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -309,17 +315,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -347,6 +355,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -362,170 +454,163 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (408dcd6a-22c9-4af5-8e79-d3211abbd3bc)
- Call ID: 408dcd6a-22c9-4af5-8e79-d3211abbd3bc
+  AssignClass (f131961f-0192-4ff7-8884-750c9328253d)
+ Call ID: f131961f-0192-4ff7-8884-750c9328253d
   Args:
-    source: :Anne-Marie_of_Denmark
     type: :Person
-  AssignClass (5863c5b0-0748-4c5e-aa2a-2806b928d54a)
- Call ID: 5863c5b0-0748-4c5e-aa2a-2806b928d54a
-  Args:
-    type: :Woman
     source: :Anne-Marie_of_Denmark
-  AssignClass (66727d75-b935-4aba-b68f-160300f01dcc)
- Call ID: 66727d75-b935-4aba-b68f-160300f01dcc
+  AssignClass (52292b9e-2823-4b60-805f-418e9ea44996)
+ Call ID: 52292b9e-2823-4b60-805f-418e9ea44996
+  Args:
+    source: :Anne-Marie_of_Denmark
+    type: :Woman
+  AssignClass (74f1171d-ca3d-48c6-987a-7440390b803a)
+ Call ID: 74f1171d-ca3d-48c6-987a-7440390b803a
   Args:
     source: :Sofia_of_Spain
     type: :Person
-  AssignClass (5bbfc690-59a2-4eba-a461-00185ae81f46)
- Call ID: 5bbfc690-59a2-4eba-a461-00185ae81f46
+  AssignClass (1dcac014-61cf-4ee1-bbe5-0a0756c69266)
+ Call ID: 1dcac014-61cf-4ee1-bbe5-0a0756c69266
   Args:
+    type: :Woman
     source: :Sofia_of_Spain
-    type: :Woman
-  AssignClass (ab55c0ae-8065-499d-ad5e-2f36e55846dc)
- Call ID: ab55c0ae-8065-499d-ad5e-2f36e55846dc
+  AssignClass (81d80c39-b393-4e22-82c1-ea882b182c44)
+ Call ID: 81d80c39-b393-4e22-82c1-ea882b182c44
   Args:
     type: :Person
-    source: :Marina_consort_of_Prince_Michael
-  AssignClass (327fee14-c31a-490c-b764-189271efec7e)
- Call ID: 327fee14-c31a-490c-b764-189271efec7e
+    source: :Marina_consort_of_Michael
+  AssignClass (02c56d50-26b6-4460-b39d-fabfaccbeab6)
+ Call ID: 02c56d50-26b6-4460-b39d-fabfaccbeab6
   Args:
-    source: :Marina_consort_of_Prince_Michael
     type: :Woman
-  AssignClass (7763b20e-2fbc-4004-a98f-f28d919d8322)
- Call ID: 7763b20e-2fbc-4004-a98f-f28d919d8322
-  Args:
-    type: :Person
-    source: :Prince_Michael
-  AssignClass (8377223f-8524-4047-a397-ff51cdfb4416)
- Call ID: 8377223f-8524-4047-a397-ff51cdfb4416
-  Args:
-    type: :Man
-    source: :Prince_Michael
-  AssignClass (f9bc0b3e-e6dc-4057-bb49-67d3999372da)
- Call ID: f9bc0b3e-e6dc-4057-bb49-67d3999372da
+    source: :Marina_consort_of_Michael
+  AssignClass (d0928811-3155-4421-b6f1-485a53102e3f)
+ Call ID: d0928811-3155-4421-b6f1-485a53102e3f
   Args:
     type: :Person
     source: :Achileas-Andreas_of_Greece_and_Denmark
-  AssignClass (68da3437-2c75-4e8f-866f-34f631a74dcc)
- Call ID: 68da3437-2c75-4e8f-866f-34f631a74dcc
+  AssignClass (b02d5c5a-282e-4ce3-b3ef-cfdbfaa5efc1)
+ Call ID: b02d5c5a-282e-4ce3-b3ef-cfdbfaa5efc1
   Args:
     source: :Achileas-Andreas_of_Greece_and_Denmark
     type: :Man
-  AssignClass (44a17a6f-5c36-452c-b637-0dab12747e98)
- Call ID: 44a17a6f-5c36-452c-b637-0dab12747e98
+  AssignClass (2a5ed809-1272-4e2b-bf3e-d34ec170b726)
+ Call ID: 2a5ed809-1272-4e2b-bf3e-d34ec170b726
   Args:
     type: :Person
-    source: :Crown_Prince_Pavlos_of_Greece
-  AssignClass (90049154-520d-4cc6-b65a-0140caccf84a)
- Call ID: 90049154-520d-4cc6-b65a-0140caccf84a
+    source: :Pavlos_Crown_Prince_of_Greece
+  AssignClass (2453de89-4c4d-4c21-9406-1b07760866e4)
+ Call ID: 2453de89-4c4d-4c21-9406-1b07760866e4
   Args:
-    source: :Crown_Prince_Pavlos_of_Greece
     type: :Man
-  AssignClass (736432fa-0f9a-4eab-b5b5-dffcde2b2763)
- Call ID: 736432fa-0f9a-4eab-b5b5-dffcde2b2763
+    source: :Pavlos_Crown_Prince_of_Greece
+  AssignClass (c4b1fb7a-69bc-4f83-8fc9-2ff97237d1a9)
+ Call ID: c4b1fb7a-69bc-4f83-8fc9-2ff97237d1a9
   Args:
+    source: :Marie-Chantal_Miller
     type: :Person
-    source: :Marie-Chantal_Miller
-  AssignClass (cf5cfbab-846b-4d98-bac5-68889b980807)
- Call ID: cf5cfbab-846b-4d98-bac5-68889b980807
+  AssignClass (54b90b6f-9835-4959-8f2c-0fa491a83f30)
+ Call ID: 54b90b6f-9835-4959-8f2c-0fa491a83f30
   Args:
-    source: :Marie-Chantal_Miller
     type: :Woman
-  AssignClass (3006dd68-64e8-43e8-9048-71c6d23af76a)
- Call ID: 3006dd68-64e8-43e8-9048-71c6d23af76a
+    source: :Marie-Chantal_Miller
+  AssignClass (8d507f4e-da7c-4d05-a120-ca02b84ac25a)
+ Call ID: 8d507f4e-da7c-4d05-a120-ca02b84ac25a
   Args:
+    source: :Constantine_II_of_Greece
     type: :Person
-    source: :Constantine_II_of_Greece
-  AssignClass (7244db3d-43ef-4219-aa26-58186c1bc707)
- Call ID: 7244db3d-43ef-4219-aa26-58186c1bc707
+  AssignClass (16447bea-672e-42e9-a706-946f17231db6)
+ Call ID: 16447bea-672e-42e9-a706-946f17231db6
   Args:
-    source: :Constantine_II_of_Greece
     type: :Man
-  AssignClass (bad858aa-12b7-4f90-8bcd-dce52827dab3)
- Call ID: bad858aa-12b7-4f90-8bcd-dce52827dab3
+    source: :Constantine_II_of_Greece
+  AssignClass (d7fe4ece-58e5-4554-9cc6-7a3028b350b8)
+ Call ID: d7fe4ece-58e5-4554-9cc6-7a3028b350b8
   Args:
     type: :Person
     source: :Princess_Theodora_of_Greece_and_Denmark
-  AssignClass (8f947617-96c9-4747-9115-c0d4b8ca2621)
- Call ID: 8f947617-96c9-4747-9115-c0d4b8ca2621
+  AssignClass (a3d75695-89b7-49a9-b8b9-c9644dfc5b9c)
+ Call ID: a3d75695-89b7-49a9-b8b9-c9644dfc5b9c
   Args:
     source: :Princess_Theodora_of_Greece_and_Denmark
     type: :Woman
-  AssignClass (72e4b39f-1b95-4144-b183-cb25dec7b52a)
- Call ID: 72e4b39f-1b95-4144-b183-cb25dec7b52a
+  AssignClass (de7fedb5-6ae8-4b8a-a1cd-78e206489ba7)
+ Call ID: de7fedb5-6ae8-4b8a-a1cd-78e206489ba7
   Args:
     type: :Person
     source: :Matthew_Kumar
-  AssignClass (20af941f-9708-494d-b346-fba48c18960a)
- Call ID: 20af941f-9708-494d-b346-fba48c18960a
+  AssignClass (0a39af53-4389-4c1d-93b4-297bb157a254)
+ Call ID: 0a39af53-4389-4c1d-93b4-297bb157a254
   Args:
+    source: :Matthew_Kumar
     type: :Man
-    source: :Matthew_Kumar
-  AssignClass (30fbd49a-e436-49e1-be01-509d27b42f1d)
- Call ID: 30fbd49a-e436-49e1-be01-509d27b42f1d
+  AssignClass (adab27bd-0aba-4fc1-910c-e70d0c72a1f7)
+ Call ID: adab27bd-0aba-4fc1-910c-e70d0c72a1f7
   Args:
     type: :Person
     source: :Isabella_Massenet
-  AssignClass (a9417a4a-f532-4d2a-a6b5-7c600bd85735)
- Call ID: a9417a4a-f532-4d2a-a6b5-7c600bd85735
+  AssignClass (959788cf-eac5-4153-a450-ac96d4f9f17d)
+ Call ID: 959788cf-eac5-4153-a450-ac96d4f9f17d
   Args:
+    type: :Woman
     source: :Isabella_Massenet
-    type: :Woman
-  AssignClass (eeb3ecf0-2c19-4017-b50e-e17b518cb730)
- Call ID: eeb3ecf0-2c19-4017-b50e-e17b518cb730
+  AssignClass (ac49795a-bc6e-4787-adf8-b7aa23cc1370)
+ Call ID: ac49795a-bc6e-4787-adf8-b7aa23cc1370
   Args:
+    source: :Natalie_Massenet
     type: :Person
-    source: :Natalie_Massenet
-  AssignClass (a8aaa287-3e8b-43d8-9bfc-d82b8b149f4e)
- Call ID: a8aaa287-3e8b-43d8-9bfc-d82b8b149f4e
+  AssignClass (dcf05f44-ab71-4323-b8b4-efd79432f19a)
+ Call ID: dcf05f44-ab71-4323-b8b4-efd79432f19a
   Args:
     type: :Woman
     source: :Natalie_Massenet
-  AddLiteral (234f1381-bea1-446a-825e-ba2bf3834a0a)
- Call ID: 234f1381-bea1-446a-825e-ba2bf3834a0a
+  AddLiteral (0a4a8e24-6ccb-4fed-9362-11fe8a8864ce)
+ Call ID: 0a4a8e24-6ccb-4fed-9362-11fe8a8864ce
   Args:
     literal_type: xsd:string
-    literal_value: Achi Miller
     relation: :knownAs
     source: :Achileas-Andreas_of_Greece_and_Denmark
-  AddTriple (d20458be-792e-4c92-bf69-a7a50cb1c1b3)
- Call ID: d20458be-792e-4c92-bf69-a7a50cb1c1b3
+    literal_value: Achi Miller
+  AddLiteral (ece5d9df-6c7e-4725-85fa-747468655fab)
+ Call ID: ece5d9df-6c7e-4725-85fa-747468655fab
   Args:
-    target: :Crown_Prince_Pavlos_of_Greece
+    source: :Achileas-Andreas_of_Greece_and_Denmark
+    literal_value: 2000
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddTriple (02ad0577-ffcf-455a-ac64-14eac14c769d)
+ Call ID: 02ad0577-ffcf-455a-ac64-14eac14c769d
+  Args:
+    target: :Pavlos_Crown_Prince_of_Greece
+    source: :Achileas-Andreas_of_Greece_and_Denmark
     relation: :hasFather
-    source: :Achileas-Andreas_of_Greece_and_Denmark
-  AddTriple (fe7deabc-0afa-4148-bfa8-9b8d1b536bfc)
- Call ID: fe7deabc-0afa-4148-bfa8-9b8d1b536bfc
+  AddTriple (1830f10c-81e1-40c1-a00a-289cf75cd875)
+ Call ID: 1830f10c-81e1-40c1-a00a-289cf75cd875
   Args:
-    source: :Achileas-Andreas_of_Greece_and_Denmark
     relation: :hasMother
     target: :Marie-Chantal_Miller
-  AddTriple (d6dcacf8-5736-4e73-a3e1-a00986f2cd59)
- Call ID: d6dcacf8-5736-4e73-a3e1-a00986f2cd59
+    source: :Achileas-Andreas_of_Greece_and_Denmark
+  AddTriple (3ac5dfde-0ed3-49f2-b768-e33e95b06db3)
+ Call ID: 3ac5dfde-0ed3-49f2-b768-e33e95b06db3
   Args:
+    relation: :hasFather
     source: :Achileas-Andreas_of_Greece_and_Denmark
     target: :Constantine_II_of_Greece
-    relation: :hasFather
-  AddTriple (057b5907-85e0-4c79-a3c6-c8e03c0347c7)
- Call ID: 057b5907-85e0-4c79-a3c6-c8e03c0347c7
+  AddTriple (b67a28da-1d4f-4937-829b-fb5dd7db5c00)
+ Call ID: b67a28da-1d4f-4937-829b-fb5dd7db5c00
   Args:
     relation: :hasMother
     target: :Anne-Marie_of_Denmark
     source: :Achileas-Andreas_of_Greece_and_Denmark
-  AddTriple (4f2c981e-f905-4f2c-9718-c6dcef3bef47)
- Call ID: 4f2c981e-f905-4f2c-9718-c6dcef3bef47
+  AddTriple (a0026cef-8937-43b3-aad2-a2b4f9c47b86)
+ Call ID: a0026cef-8937-43b3-aad2-a2b4f9c47b86
   Args:
+    target: :Natalie_Massenet
     source: :Isabella_Massenet
     relation: :hasMother
-    target: :Natalie_Massenet
-  Finish (b45e47c0-eee8-4316-905e-98c0d8dd44b1)
- Call ID: b45e47c0-eee8-4316-905e-98c0d8dd44b1
+  Finish (4eee05d1-a47a-41d5-9a7c-e94e5ef3f972)
+ Call ID: 4eee05d1-a47a-41d5-9a7c-e94e5ef3f972
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -648,8 +733,9 @@ The final data graph after all the edits:
 
   data:Achileas-Andreas_of_Greece_and_Denmark a :Man,
           :Person ;
+      :hasBirthYear 2000 ;
       :hasFather data:Constantine_II_of_Greece,
-          data:Crown_Prince_Pavlos_of_Greece ;
+          data:Pavlos_Crown_Prince_of_Greece ;
       :hasMother data:Anne-Marie_of_Denmark,
           data:Marie-Chantal_Miller ;
       :knownAs "Achi Miller"^^xsd:string .
@@ -658,13 +744,10 @@ The final data graph after all the edits:
           :Woman ;
       :hasMother data:Natalie_Massenet .
 
-  data:Marina_consort_of_Prince_Michael a :Person,
+  data:Marina_consort_of_Michael a :Person,
           :Woman .
 
   data:Matthew_Kumar a :Man,
-          :Person .
-
-  data:Prince_Michael a :Man,
           :Person .
 
   data:Princess_Theodora_of_Greece_and_Denmark a :Person,
@@ -679,14 +762,14 @@ The final data graph after all the edits:
   data:Constantine_II_of_Greece a :Man,
           :Person .
 
-  data:Crown_Prince_Pavlos_of_Greece a :Man,
-          :Person .
-
   data:Marie-Chantal_Miller a :Person,
           :Woman .
 
   data:Natalie_Massenet a :Person,
           :Woman .
+
+  data:Pavlos_Crown_Prince_of_Greece a :Man,
+          :Person .
 
 
 
@@ -698,8 +781,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (a98bef64-305b-4e55-964f-5f5fce0da749)
- Call ID: a98bef64-305b-4e55-964f-5f5fce0da749
+  ValidateShacl (fd480653-856b-4635-89b5-0e0dc051a629)
+ Call ID: fd480653-856b-4635-89b5-0e0dc051a629
   Args:
 
 ================================= Tool Message =================================
@@ -711,7 +794,7 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Constantine_II_of_Greece lacks the required class :Ancestor or :Man to be a valid value for the property :hasFather.
+      The person Constantine_II_of_Greece is assigned to the :hasFather property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node: 'Constantine_II_of_Greece', class: ':Ancestor')
 
@@ -719,15 +802,15 @@ Violations:
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Crown_Prince_Pavlos_of_Greece lacks the required class :Ancestor or :Man to be a valid value for the property :hasFather.
+      The person Pavlos_Crown_Prince_of_Greece is assigned to the :hasFather property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Crown_Prince_Pavlos_of_Greece', class: ':Ancestor')
+      AssignClass(node: 'Pavlos_Crown_Prince_of_Greece', class: ':Ancestor')
 
 
   Violation [3]:
     SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasFather
     LLM-provided explanation of the violation:
-      The node Achileas-Andreas_of_Greece_and_Denmark has more than one value for the functional property :hasFather.
+      The node Achileas-Andreas_of_Greece_and_Denmark has multiple :hasFather relationships, violating the maximum count constraint of 1.
     LLM-provided instruction on how to handle the violation:
       RemoveTriple(subject: 'Achileas-Andreas_of_Greece_and_Denmark', predicate: ':hasFather', object: 'Constantine_II_of_Greece')
 
@@ -735,31 +818,31 @@ Violations:
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Marie-Chantal_Miller lacks the required class :Ancestor or :Woman to be a valid value for the property :hasMother.
+      The person Anne-Marie_of_Denmark is assigned to the :hasMother property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Marie-Chantal_Miller', class: ':Ancestor')
+      AssignClass(node: 'Anne-Marie_of_Denmark', class: ':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Anne-Marie_of_Denmark lacks the required class :Ancestor or :Woman to be a valid value for the property :hasMother.
+      The person Marie-Chantal_Miller is assigned to the :hasMother property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Anne-Marie_of_Denmark', class: ':Ancestor')
+      AssignClass(node: 'Marie-Chantal_Miller', class: ':Ancestor')
 
 
   Violation [6]:
     SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasMother
     LLM-provided explanation of the violation:
-      The node Achileas-Andreas_of_Greece_and_Denmark has more than one value for the functional property :hasMother.
+      The node Achileas-Andreas_of_Greece_and_Denmark has multiple :hasMother relationships, violating the maximum count constraint of 1.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject: 'Achileas-Andreas_of_Greece_and_Denmark', predicate: ':hasMother', object: 'Marie-Chantal_Miller')
+      RemoveTriple(subject: 'Achileas-Andreas_of_Greece_and_Denmark', predicate: ':hasMother', object: 'Anne-Marie_of_Denmark')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Constantine_II_of_Greece is missing the required class assignment to satisfy the :hasFather relationship requirements.
+      The person Constantine_II_of_Greece is assigned to the :hasFather property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node: 'Constantine_II_of_Greece', class: ':Ancestor')
 
@@ -767,55 +850,55 @@ Violations:
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Crown_Prince_Pavlos_of_Greece is missing the required class assignment to satisfy the :hasFather relationship requirements.
+      The person Pavlos_Crown_Prince_of_Greece is assigned to the :hasFather property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Crown_Prince_Pavlos_of_Greece', class: ':Ancestor')
+      AssignClass(node: 'Pavlos_Crown_Prince_of_Greece', class: ':Ancestor')
 
 
   Violation [9]:
     SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasFather
     LLM-provided explanation of the violation:
-      The node Achileas-Andreas_of_Greece_and_Denmark has multiple values assigned to the functional property :hasFather.
+      The node Achileas-Andreas_of_Greece_and_Denmark has multiple :hasFather relationships, violating the maximum count constraint of 1.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject: 'Achileas-Andreas_of_Greece_and_Denmark', predicate: ':hasFather', object: 'Crown_Prince_Pavlos_of_Greece')
+      RemoveTriple(subject: 'Achileas-Andreas_of_Greece_and_Denmark', predicate: ':hasFather', object: 'Constantine_II_of_Greece')
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Natalie_Massenet lacks the required class :Ancestor or :Woman to be a valid value for the property :hasMother.
+      The person Anne-Marie_of_Denmark is assigned to the :hasMother property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Natalie_Massenet', class: ':Ancestor')
+      AssignClass(node: 'Anne-Marie_of_Denmark', class: ':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Marie-Chantal_Miller is missing the required class assignment to satisfy the :hasMother relationship requirements.
+      The person Marie-Chantal_Miller is assigned to the :hasMother property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node: 'Marie-Chantal_Miller', class: ':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasMother
     LLM-provided explanation of the violation:
-      The node Anne-Marie_of_Denmark is missing the required class assignment to satisfy the :hasMother relationship requirements.
+      The node Achileas-Andreas_of_Greece_and_Denmark has multiple :hasMother relationships, violating the maximum count constraint of 1.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Anne-Marie_of_Denmark', class: ':Ancestor')
+      RemoveTriple(subject: 'Achileas-Andreas_of_Greece_and_Denmark', predicate: ':hasMother', object: 'Anne-Marie_of_Denmark')
 
 
   Violation [13]:
-    SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasMother
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Achileas-Andreas_of_Greece_and_Denmark has multiple values assigned to the functional property :hasMother.
+      The person Natalie_Massenet is assigned to the :hasMother property of Isabella_Massenet, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject: 'Achileas-Andreas_of_Greece_and_Denmark', predicate: ':hasMother', object: 'Anne-Marie_of_Denmark')
+      AssignClass(node: 'Natalie_Massenet', class: ':Ancestor')
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Constantine_II_of_Greece is missing the required class assignment to satisfy the :hasFather relationship requirements.
+      The person Constantine_II_of_Greece is assigned to the :hasFather property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node: 'Constantine_II_of_Greece', class: ':Ancestor')
 
@@ -823,15 +906,15 @@ Violations:
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Crown_Prince_Pavlos_of_Greece is missing the required class assignment to satisfy the :hasFather relationship requirements.
+      The person Pavlos_Crown_Prince_of_Greece is assigned to the :hasFather property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Crown_Prince_Pavlos_of_Greece', class: ':Ancestor')
+      AssignClass(node: 'Pavlos_Crown_Prince_of_Greece', class: ':Ancestor')
 
 
   Violation [16]:
     SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasFather
     LLM-provided explanation of the violation:
-      The node Achileas-Andreas_of_Greece_and_Denmark has multiple values assigned to the functional property :hasFather.
+      The node Achileas-Andreas_of_Greece_and_Denmark has multiple :hasFather relationships, violating the maximum count constraint of 1.
     LLM-provided instruction on how to handle the violation:
       RemoveTriple(subject: 'Achileas-Andreas_of_Greece_and_Denmark', predicate: ':hasFather', object: 'Constantine_II_of_Greece')
 
@@ -839,39 +922,39 @@ Violations:
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Natalie_Massenet is missing the required class assignment to satisfy the :hasMother relationship requirements.
+      The person Anne-Marie_of_Denmark is assigned to the :hasMother property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Natalie_Massenet', class: ':Ancestor')
+      AssignClass(node: 'Anne-Marie_of_Denmark', class: ':Ancestor')
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Marie-Chantal_Miller is missing the required class assignment to satisfy the :hasMother relationship requirements.
+      The person Marie-Chantal_Miller is assigned to the :hasMother property of Achileas-Andreas_of_Greece_and_Denmark, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node: 'Marie-Chantal_Miller', class: ':Ancestor')
 
 
   Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasMother
     LLM-provided explanation of the violation:
-      The node Anne-Marie_of_Denmark is missing the required class assignment to satisfy the :hasMother relationship requirements.
+      The node Achileas-Andreas_of_Greece_and_Denmark has multiple :hasMother relationships, violating the maximum count constraint of 1.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Anne-Marie_of_Denmark', class: ':Ancestor')
+      RemoveTriple(subject: 'Achileas-Andreas_of_Greece_and_Denmark', predicate: ':hasMother', object: 'Anne-Marie_of_Denmark')
 
 
   Violation [20]:
-    SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasMother
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Achileas-Andreas_of_Greece_and_Denmark has multiple values assigned to the functional property :hasMother.
+      The person Natalie_Massenet is assigned to the :hasMother property of Isabella_Massenet, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject: 'Achileas-Andreas_of_Greece_and_Denmark', predicate: ':hasMother', object: 'Marie-Chantal_Miller')
+      AssignClass(node: 'Natalie_Massenet', class: ':Ancestor')
 
 
   Violation [21]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Natalie_Massenet is missing the required class assignment to satisfy the :hasMother relationship requirements.
+      The person Natalie_Massenet is assigned to the :hasMother property of Isabella_Massenet, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node: 'Natalie_Massenet', class: ':Ancestor')
 
@@ -882,135 +965,58 @@ Violations:
 
 []
 Tool Calls:
-  RemoveTriple (8a3e762c-b1c3-44ae-baa3-e00b36ca024d)
- Call ID: 8a3e762c-b1c3-44ae-baa3-e00b36ca024d
+  RemoveTriple (52f64bf4-9f93-4e76-87ba-b307f68b8231)
+ Call ID: 52f64bf4-9f93-4e76-87ba-b307f68b8231
   Args:
     relation: :hasFather
+    source: :Achileas-Andreas_of_Greece_and_Denmark
+    target: :Constantine_II_of_Greece
+  RemoveTriple (f1d45c1f-d69e-4b6a-80e7-c1fdc6e1244c)
+ Call ID: f1d45c1f-d69e-4b6a-80e7-c1fdc6e1244c
+  Args:
+    target: :Anne-Marie_of_Denmark
+    source: :Achileas-Andreas_of_Greece_and_Denmark
+    relation: :hasMother
+  AssignClass (e2416a94-353a-4c59-bb71-fbd607cdd72d)
+ Call ID: e2416a94-353a-4c59-bb71-fbd607cdd72d
+  Args:
+    source: :Constantine_II_of_Greece
+    type: :Ancestor
+  AssignClass (bd1f9c95-eb3f-498b-bb12-a8bbe667cae9)
+ Call ID: bd1f9c95-eb3f-498b-bb12-a8bbe667cae9
+  Args:
+    type: :Ancestor
+    source: :Pavlos_Crown_Prince_of_Greece
+  AssignClass (86adfbb8-0ec8-4a02-b740-9771cc84c53b)
+ Call ID: 86adfbb8-0ec8-4a02-b740-9771cc84c53b
+  Args:
+    source: :Anne-Marie_of_Denmark
+    type: :Ancestor
+  AssignClass (9084c218-33ef-4385-b32d-ecbc2ab361ce)
+ Call ID: 9084c218-33ef-4385-b32d-ecbc2ab361ce
+  Args:
+    type: :Ancestor
+    source: :Marie-Chantal_Miller
+  AssignClass (a0a25821-8f1f-4a6a-b1cb-7fc6e6a1be52)
+ Call ID: a0a25821-8f1f-4a6a-b1cb-7fc6e6a1be52
+  Args:
+    source: :Natalie_Massenet
+    type: :Ancestor
+  AddTriple (99890cb4-e78e-46cf-abcd-e02b174c2231)
+ Call ID: 99890cb4-e78e-46cf-abcd-e02b174c2231
+  Args:
     target: :Constantine_II_of_Greece
     source: :Achileas-Andreas_of_Greece_and_Denmark
-  RemoveTriple (3cb6f6af-9535-4491-9592-50241bcb8855)
- Call ID: 3cb6f6af-9535-4491-9592-50241bcb8855
+    relation: :hasFather
+  AddTriple (b482ff99-a509-409a-a06d-0d880fff44fc)
+ Call ID: b482ff99-a509-409a-a06d-0d880fff44fc
   Args:
     target: :Anne-Marie_of_Denmark
     relation: :hasMother
     source: :Achileas-Andreas_of_Greece_and_Denmark
-  AssignClass (d1bbb96c-0b6d-4cb3-a03e-ae2b726ea22e)
- Call ID: d1bbb96c-0b6d-4cb3-a03e-ae2b726ea22e
+  Finish (470cd77a-cf76-4105-9593-7ffd6552e1da)
+ Call ID: 470cd77a-cf76-4105-9593-7ffd6552e1da
   Args:
-    type: :Ancestor
-    source: :Constantine_II_of_Greece
-  AssignClass (4eb87323-b8ef-4b16-93d1-677bb262ef70)
- Call ID: 4eb87323-b8ef-4b16-93d1-677bb262ef70
-  Args:
-    source: :Crown_Prince_Pavlos_of_Greece
-    type: :Ancestor
-  AssignClass (422c5cdc-e7ba-44c7-9aff-80041e269e3a)
- Call ID: 422c5cdc-e7ba-44c7-9aff-80041e269e3a
-  Args:
-    source: :Marie-Chantal_Miller
-    type: :Ancestor
-  AssignClass (aa28ae1e-8193-473f-bb99-adbc5a788325)
- Call ID: aa28ae1e-8193-473f-bb99-adbc5a788325
-  Args:
-    type: :Ancestor
-    source: :Anne-Marie_of_Denmark
-  AssignClass (f4a2fa97-b2e1-4284-ba65-8422457c61cc)
- Call ID: f4a2fa97-b2e1-4284-ba65-8422457c61cc
-  Args:
-    type: :Ancestor
-    source: :Natalie_Massenet
-  AssignClass (f44fb0c4-8003-411f-9c25-e8f45c8eea0d)
- Call ID: f44fb0c4-8003-411f-9c25-e8f45c8eea0d
-  Args:
-    source: :Achileas-Andreas_of_Greece_and_Denmark
-    type: :Person
-  AddTriple (fec0086e-5523-41f4-9bf8-8603b1ec6bef)
- Call ID: fec0086e-5523-41f4-9bf8-8603b1ec6bef
-  Args:
-    target: :Male
-    relation: :hasSex
-    source: :Achileas-Andreas_of_Greece_and_Denmark
-  AssignClass (fe098314-0edf-4471-8ea5-7055246ebafa)
- Call ID: fe098314-0edf-4471-8ea5-7055246ebafa
-  Args:
-    source: :Male
-    type: :Sex
-  AssignClass (2156f012-2aa9-46cc-a703-4ac0216afb3c)
- Call ID: 2156f012-2aa9-46cc-a703-4ac0216afb3c
-  Args:
-    type: :Sex
-    source: :Female
-  AddTriple (de7b2546-2ed2-47d4-8b08-f808a37ea33d)
- Call ID: de7b2546-2ed2-47d4-8b08-f808a37ea33d
-  Args:
-    source: :Crown_Prince_Pavlos_of_Greece
-    target: :Male
-    relation: :hasSex
-  AddTriple (1139960f-09a3-4e78-a789-768105749a73)
- Call ID: 1139960f-09a3-4e78-a789-768105749a73
-  Args:
-    target: :Female
-    relation: :hasSex
-    source: :Marie-Chantal_Miller
-  AddTriple (6fc73b39-0706-4b67-bb9c-8545db7829e0)
- Call ID: 6fc73b39-0706-4b67-bb9c-8545db7829e0
-  Args:
-    source: :Constantine_II_of_Greece
-    target: :Male
-    relation: :hasSex
-  AddTriple (1d74472b-90b5-4b46-9734-cce448189bc4)
- Call ID: 1d74472b-90b5-4b46-9734-cce448189bc4
-  Args:
-    relation: :hasSex
-    target: :Female
-    source: :Anne-Marie_of_Denmark
-  AddTriple (02116dd3-c074-4cc8-870a-d05e2c89399d)
- Call ID: 02116dd3-c074-4cc8-870a-d05e2c89399d
-  Args:
-    target: :Female
-    relation: :hasSex
-    source: :Natalie_Massenet
-  AddTriple (7ea2dd46-85ab-43f0-8a73-51e927e954d5)
- Call ID: 7ea2dd46-85ab-43f0-8a73-51e927e954d5
-  Args:
-    relation: :hasSex
-    target: :Female
-    source: :Isabella_Massenet
-  Finish (378a51b3-fbc9-4acf-9822-df32935f78c0)
- Call ID: 378a51b3-fbc9-4acf-9822-df32935f78c0
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1053,33 +1059,21 @@ The final data graph after all the edits:
 
   data:Achileas-Andreas_of_Greece_and_Denmark a :Man,
           :Person ;
-      :hasFather data:Crown_Prince_Pavlos_of_Greece ;
-      :hasMother data:Marie-Chantal_Miller ;
-      :hasSex data:Male ;
+      :hasBirthYear 2000 ;
+      :hasFather data:Constantine_II_of_Greece,
+          data:Pavlos_Crown_Prince_of_Greece ;
+      :hasMother data:Anne-Marie_of_Denmark,
+          data:Marie-Chantal_Miller ;
       :knownAs "Achi Miller"^^xsd:string .
-
-  data:Anne-Marie_of_Denmark a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Constantine_II_of_Greece a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
 
   data:Isabella_Massenet a :Person,
           :Woman ;
-      :hasMother data:Natalie_Massenet ;
-      :hasSex data:Female .
+      :hasMother data:Natalie_Massenet .
 
-  data:Marina_consort_of_Prince_Michael a :Person,
+  data:Marina_consort_of_Michael a :Person,
           :Woman .
 
   data:Matthew_Kumar a :Man,
-          :Person .
-
-  data:Prince_Michael a :Man,
           :Person .
 
   data:Princess_Theodora_of_Greece_and_Denmark a :Person,
@@ -1088,24 +1082,25 @@ The final data graph after all the edits:
   data:Sofia_of_Spain a :Person,
           :Woman .
 
-  data:Crown_Prince_Pavlos_of_Greece a :Ancestor,
+  data:Anne-Marie_of_Denmark a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Constantine_II_of_Greece a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
   data:Marie-Chantal_Miller a :Ancestor,
           :Person,
-          :Woman ;
-      :hasSex data:Female .
+          :Woman .
 
   data:Natalie_Massenet a :Ancestor,
           :Person,
-          :Woman ;
-      :hasSex data:Female .
+          :Woman .
 
-  data:Male a :Sex .
-
-  data:Female a :Sex .
+  data:Pavlos_Crown_Prince_of_Greece a :Ancestor,
+          :Man,
+          :Person .
 
 
 
@@ -1117,8 +1112,152 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (3f10513d-bd65-41eb-ae64-13ed2c3c0048)
- Call ID: 3f10513d-bd65-41eb-ae64-13ed2c3c0048
+  ValidateShacl (e9ebf644-9946-4739-8b99-24094cf878c0)
+ Call ID: e9ebf644-9946-4739-8b99-24094cf878c0
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:6
+Violations:
+
+  Violation [1]:
+    SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasFather
+    LLM-provided explanation of the violation:
+      The entity Achileas-Andreas_of_Greece_and_Denmark has more than one father assigned, which violates the constraint that a person can have only one father.
+    LLM-provided instruction on how to handle the violation:
+      Use RemoveTriple to delete the incorrect :hasFather relationship for Achileas-Andreas_of_Greece_and_Denmark.
+
+
+  Violation [2]:
+    SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasMother
+    LLM-provided explanation of the violation:
+      The entity Achileas-Andreas_of_Greece_and_Denmark has more than one mother assigned, which violates the constraint that a person can have only one mother.
+    LLM-provided instruction on how to handle the violation:
+      Use RemoveTriple to delete the incorrect :hasMother relationship for Achileas-Andreas_of_Greece_and_Denmark.
+
+
+  Violation [3]:
+    SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasFather
+    LLM-provided explanation of the violation:
+      The entity Achileas-Andreas_of_Greece_and_Denmark has multiple :hasFather entries, exceeding the maximum count of one.
+    LLM-provided instruction on how to handle the violation:
+      Use RemoveTriple to remove the extra :hasFather link for Achileas-Andreas_of_Greece_and_Denmark until only one remains.
+
+
+  Violation [4]:
+    SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasMother
+    LLM-provided explanation of the violation:
+      The entity Achileas-Andreas_of_Greece_and_Denmark has multiple :hasMother entries, exceeding the maximum count of one.
+    LLM-provided instruction on how to handle the violation:
+      Use RemoveTriple to remove the extra :hasMother link for Achileas-Andreas_of_Greece_and_Denmark until only one remains.
+
+
+  Violation [5]:
+    SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasFather
+    LLM-provided explanation of the violation:
+      The entity Achileas-Andreas_of_Greece_and_Denmark is associated with multiple fathers, violating the functional property constraint.
+    LLM-provided instruction on how to handle the violation:
+      Use RemoveTriple to remove the surplus :hasFather record for Achileas-Andreas_of_Greece_and_Denmark.
+
+
+  Violation [6]:
+    SHACL message: More than 1 values on data:Achileas-Andreas_of_Greece_and_Denmark->:hasMother
+    LLM-provided explanation of the violation:
+      The entity Achileas-Andreas_of_Greece_and_Denmark is associated with multiple mothers, violating the functional property constraint.
+    LLM-provided instruction on how to handle the violation:
+      Use RemoveTriple to remove the surplus :hasMother record for Achileas-Andreas_of_Greece_and_Denmark.
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (87c4ccc6-a935-403b-90e1-605651d5f5f6)
+ Call ID: 87c4ccc6-a935-403b-90e1-605651d5f5f6
+  Args:
+    source: :Achileas-Andreas_of_Greece_and_Denmark
+    target: :Constantine_II_of_Greece
+    relation: :hasFather
+  RemoveTriple (25e421e9-4273-481f-a818-6d2b2731682f)
+ Call ID: 25e421e9-4273-481f-a818-6d2b2731682f
+  Args:
+    source: :Achileas-Andreas_of_Greece_and_Denmark
+    target: :Anne-Marie_of_Denmark
+    relation: :hasMother
+  Finish (c82ded81-fdcd-44a7-8e79-33b95eb2ef6c)
+ Call ID: c82ded81-fdcd-44a7-8e79-33b95eb2ef6c
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Achileas-Andreas_of_Greece_and_Denmark a :Man,
+          :Person ;
+      :hasBirthYear 2000 ;
+      :hasFather data:Pavlos_Crown_Prince_of_Greece ;
+      :hasMother data:Marie-Chantal_Miller ;
+      :knownAs "Achi Miller"^^xsd:string .
+
+  data:Anne-Marie_of_Denmark a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Constantine_II_of_Greece a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Isabella_Massenet a :Person,
+          :Woman ;
+      :hasMother data:Natalie_Massenet .
+
+  data:Marina_consort_of_Michael a :Person,
+          :Woman .
+
+  data:Matthew_Kumar a :Man,
+          :Person .
+
+  data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+          :Woman .
+
+  data:Sofia_of_Spain a :Person,
+          :Woman .
+
+  data:Marie-Chantal_Miller a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Natalie_Massenet a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Pavlos_Crown_Prince_of_Greece a :Ancestor,
+          :Man,
+          :Person .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (12855cd5-52b6-4f8a-a7d8-1240a4244b2c)
+ Call ID: 12855cd5-52b6-4f8a-a7d8-1240a4244b2c
   Args:
 
 ================================= Tool Message =================================
@@ -1129,6 +1268,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (1036123d-dfcd-4c19-ae4f-f9199430d864)
- Call ID: 1036123d-dfcd-4c19-ae4f-f9199430d864
+  Finish (679ddd32-fc96-45c7-8eeb-83e1d57e324e)
+ Call ID: 679ddd32-fc96-45c7-8eeb-83e1d57e324e
   Args:

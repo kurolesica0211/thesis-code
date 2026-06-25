@@ -5,11 +5,11 @@
             "iteration": 1,
             "metadata": [
                 {
-                    "input_tokens": 8619,
-                    "output_tokens": 468,
-                    "total_tokens": 9087,
+                    "input_tokens": 11105,
+                    "output_tokens": 1375,
+                    "total_tokens": 12480,
                     "input_token_details": {
-                        "cache_read": 8614
+                        "cache_read": 11100
                     }
                 }
             ]

@@ -2,63 +2,76 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:CharlotteOfMecklenburgStrelitz a :Person,
+data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden a :Man,
+        :Person ;
+    :hasFather data:Ernst_August ;
+    :hasMother data:Baroness_Maria_Anna_von_Humboldt_Dachroeden .
+
+data:Prince_George_William a :Man,
+        :Person ;
+    :hasMarriageYear 1946 ;
+    :hasRelation data:Princess_Sophie_of_Greece_and_Denmark ;
+    :isBrotherOf data:Ernst_August .
+
+data:Prince_Hubertus_of_Prussia a :Man,
+        :Person ;
+    :hasMarriageYear 1941 ;
+    :hasRelation data:Baroness_Maria_Anna_von_Humboldt_Dachroeden .
+
+data:Princess_Frederica a :Person,
         :Woman ;
-    :hasBirthYear 1744 ;
-    :hasDeathYear 1818 .
+    :hasMarriageYear 1938 ;
+    :hasRelation data:King_Paul_of_Greece ;
+    :isSisterOf data:Ernst_August .
 
-data:GeorgeIIIOfTheUnitedKingdom a :Man,
-        :Person ;
-    :hasBirthYear 1738 ;
-    :hasDeathYear 1820 .
-
-data:PrincessAlexandraOfHanover a :Person,
+data:Countess_Monika_zu_Solms_Laubach a :Person,
         :Woman ;
-    :hasBirthYear 1882 ;
-    :hasDeathYear 1963 ;
-    :hasFather data:ErnestAugustusCrownPrinceOfHanover ;
-    :hasMarriageYear 1904 ;
-    :hasMother data:PrincessThyraOfDenmark ;
-    :hasRelation data:FrederickFrancisIVGrandDukeOfMecklenburgSchwerin .
+    :hasFather data:Georg_9th_Count_of_Solms_Laubach ;
+    :hasMother data:Princess_Johanna_of_Solms_Hohensolms_Lich .
 
-data:ChristianIXOfDenmark a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1818 ;
-    :hasDeathYear 1906 .
-
-data:ErnestAugustusCrownPrinceOfHanover a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1845 ;
-    :hasDeathYear 1923 .
-
-data:FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin a :Ancestor,
+data:Emperor_Wilhelm_II a :Ancestor,
         :Man,
         :Person .
 
-data:FrederickFrancisIVGrandDukeOfMecklenburgSchwerin a :Man,
-        :Person ;
-    :hasBirthYear 1882 ;
-    :hasDeathYear 1945 ;
-    :hasFather data:FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin ;
-    :hasMother data:GrandDuchessAnastasiaMikhailovnaOfRussia .
+data:Ernest_Augustus_Duke_of_Brunswick a :Ancestor,
+        :Man,
+        :Person .
 
-data:GrandDuchessAnastasiaMikhailovnaOfRussia a :Ancestor,
+data:Georg_9th_Count_of_Solms_Laubach a :Ancestor,
+        :Man,
+        :Person .
+
+data:King_Paul_of_Greece a :Man,
+        :Person .
+
+data:Princess_Johanna_of_Solms_Hohensolms_Lich a :Ancestor,
         :Person,
         :Woman .
 
-data:LouiseOfHesseKassel a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1817 ;
-    :hasDeathYear 1898 .
+data:Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg a :Person,
+        :Woman .
 
-data:PrincessThyraOfDenmark a :Ancestor,
+data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Princess_Viktoria_Luise_of_Prussia a :Ancestor,
         :Person,
         :Woman ;
-    :hasBirthYear 1853 ;
-    :hasDeathYear 1933 ;
-    :hasFather data:ChristianIXOfDenmark ;
-    :hasMother data:LouiseOfHesseKassel .
+    :hasFather data:Emperor_Wilhelm_II .
+
+data:Baroness_Maria_Anna_von_Humboldt_Dachroeden a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Ernst_August a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 1987 ;
+    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
+    :hasMarriageYear 1951,
+        1981 ;
+    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasRelation data:Countess_Monika_zu_Solms_Laubach,
+        data:Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg .
 

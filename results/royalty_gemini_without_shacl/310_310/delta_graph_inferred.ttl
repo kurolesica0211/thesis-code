@@ -1,0 +1,203 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Hans_van_den_Broek a :Ancestor,
+        :Man ;
+    :hasBrother data:Hans_van_den_Broek ;
+    :hasChild data:Marilene_van_den_Broek ;
+    :hasDaughter data:Marilene_van_den_Broek ;
+    :hasRelation data:Hans_van_den_Broek,
+        data:Josee_van_Schendel,
+        data:Marilene_van_den_Broek ;
+    :isAncestorOf data:Marilene_van_den_Broek ;
+    :isBloodrelationOf data:Hans_van_den_Broek ;
+    :isBrotherOf data:Hans_van_den_Broek ;
+    :isFatherOf data:Marilene_van_den_Broek ;
+    :isParentOf data:Marilene_van_den_Broek ;
+    :isSiblingOf data:Hans_van_den_Broek ;
+    :isUncleOf data:Marilene_van_den_Broek .
+
+data:Josee_van_Schendel a :Ancestor,
+        :Woman ;
+    :hasChild data:Marilene_van_den_Broek ;
+    :hasDaughter data:Marilene_van_den_Broek ;
+    :hasRelation data:Hans_van_den_Broek,
+        data:Josee_van_Schendel,
+        data:Marilene_van_den_Broek ;
+    :hasSister data:Josee_van_Schendel ;
+    :isAncestorOf data:Marilene_van_den_Broek ;
+    :isAuntOf data:Marilene_van_den_Broek ;
+    :isBloodrelationOf data:Josee_van_Schendel ;
+    :isMotherOf data:Marilene_van_den_Broek ;
+    :isParentOf data:Marilene_van_den_Broek ;
+    :isSiblingOf data:Josee_van_Schendel ;
+    :isSisterOf data:Josee_van_Schendel .
+
+data:Pieter_van_Vollenhoven a :Ancestor,
+        :Man ;
+    :hasBrother data:Pieter_van_Vollenhoven ;
+    :hasChild data:Prince_Maurits ;
+    :hasRelation data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Princess_Margriet ;
+    :hasSon data:Prince_Maurits ;
+    :isAncestorOf data:Prince_Maurits ;
+    :isBloodrelationOf data:Pieter_van_Vollenhoven ;
+    :isBrotherOf data:Pieter_van_Vollenhoven ;
+    :isFatherOf data:Prince_Maurits ;
+    :isParentOf data:Prince_Maurits ;
+    :isSiblingOf data:Pieter_van_Vollenhoven ;
+    :isUncleOf data:Prince_Maurits .
+
+data:Princess_Margriet a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Maurits ;
+    :hasRelation data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Princess_Margriet ;
+    :hasSister data:Princess_Margriet ;
+    :hasSon data:Prince_Maurits ;
+    :isAncestorOf data:Prince_Maurits ;
+    :isAuntOf data:Prince_Maurits ;
+    :isBloodrelationOf data:Princess_Margriet ;
+    :isMotherOf data:Prince_Maurits ;
+    :isParentOf data:Prince_Maurits ;
+    :isSiblingOf data:Princess_Margriet ;
+    :isSisterOf data:Princess_Margriet .
+
+data:Marilene_van_den_Broek a :Woman ;
+    :hasAncestor data:Hans_van_den_Broek,
+        data:Josee_van_Schendel ;
+    :hasBirthYear 1970 ;
+    :hasFather data:Hans_van_den_Broek ;
+    :hasMarriageYear 1989 ;
+    :hasMother data:Josee_van_Schendel ;
+    :hasParent data:Hans_van_den_Broek,
+        data:Josee_van_Schendel ;
+    :hasRelation data:Hans_van_den_Broek,
+        data:Josee_van_Schendel,
+        data:Marilene_van_den_Broek ;
+    :hasSister data:Marilene_van_den_Broek ;
+    :isBloodrelationOf data:Marilene_van_den_Broek ;
+    :isChildOf data:Hans_van_den_Broek,
+        data:Josee_van_Schendel ;
+    :isDaughterOf data:Hans_van_den_Broek,
+        data:Josee_van_Schendel ;
+    :isSiblingOf data:Marilene_van_den_Broek ;
+    :isSisterOf data:Marilene_van_den_Broek .
+
+data:Bernhard a :Man ;
+    :hasBrother data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits ;
+    :hasRelation data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Princess_Margriet ;
+    :isBloodrelationOf data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits ;
+    :isBrotherOf data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits ;
+    :isSiblingOf data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits .
+
+data:Floris a :Man ;
+    :hasBrother data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits ;
+    :hasRelation data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Princess_Margriet ;
+    :isBloodrelationOf data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits ;
+    :isBrotherOf data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits ;
+    :isSiblingOf data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits .
+
+data:Pieter-Christiaan a :Man ;
+    :hasBrother data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits ;
+    :hasRelation data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Princess_Margriet ;
+    :isBloodrelationOf data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits ;
+    :isBrotherOf data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits ;
+    :isSiblingOf data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits .
+
+data:Prince_Maurits a :Man ;
+    :hasAncestor data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasBirthYear 1968 ;
+    :hasBrother data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits ;
+    :hasFather data:Pieter_van_Vollenhoven ;
+    :hasMarriageYear 1989 ;
+    :hasMother data:Princess_Margriet ;
+    :hasParent data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :hasRelation data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Pieter_van_Vollenhoven,
+        data:Prince_Maurits,
+        data:Princess_Margriet ;
+    :isBloodrelationOf data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits ;
+    :isBrotherOf data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits ;
+    :isChildOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet ;
+    :isSiblingOf data:Bernhard,
+        data:Floris,
+        data:Pieter-Christiaan,
+        data:Prince_Maurits ;
+    :isSonOf data:Pieter_van_Vollenhoven,
+        data:Princess_Margriet .
+

@@ -77,7 +77,6 @@ He was married to Sophia of Prussia, a younger sister of Wilhelm II, the Emperor
 During his reign, Constantine's pro-German aligned interests led him to twice refuse Venizelos' popular elected mandates for Greece to join World War I on the side of Allies.
 Constantine unconstitutionally dismissed his Prime Minister, causing the National Schism.
 The country was split between the pro-Venizelos New Greece (lands of recently liberated in the Balkan Wars) and the royalist Old Greece, driving deep social cleavages and brought Greece at the brink of civil war.
-In late 1916, his pro-German policies led to the unconditional surrender of Fort Roupel and the loss of much of newly conquered Macedonian territories to Bulgaria.
 After a five-month naval blockade of Athens by France and Great Britain that caused famine, Constantine abdicated, despite strong popular support for continued resistance.
 After Alexander's death, Venizelos' defeat in the 1920 legislative elections, and a plebiscite in favor of his return, Constantine was reinstated.
 Constantine I abdicated the throne  in favor of his eldest son George II in September 1922, after an army revolt of Venizelist officers.
@@ -93,7 +92,6 @@ Constantine also studied political science and business in Heidelberg and Leipzi
 In January 1895, Constantine caused political turmoil when he ordered army and gendarmerie forces to break up a street protest against tax policy.
 Constantine had previously addressed the crowd and advised them to submit their grievances to the government.
 King George responded that the Crown Prince was, in dispersing protesters, merely obeying military orders, and that his conduct lacked political significance.
-In the following elections Trikoupis was defeated, and the new prime minister, Theodoros Deligiannis, seeking to downplay hostility between government and the Palace, regarded the matter closed.
 The organization of the first modern Olympics in Athens was another issue which caused a Constantine-Trikoupis confrontation, with Trikoupis opposed to hosting the Games.
 Subsequently, Constantine was instrumental in the organization of the 1896 Summer Olympics; according to Pierre de Coubertin, in 1894 "the Crown Prince learned with great pleasure that the Games will be inaugurated in Athens."
 Constantine later conferred more than that; he eagerly assumed the presidency of the 1896 organizing committee.
@@ -108,10 +106,6 @@ Balkan Wars
 Overview
 
 In 1912 with the formation of the Balkan League, Greece was ready for war against the Ottoman Empire and Prince Constantine became Chief of the Hellenic Army.
-Advancing on foot, the Greeks soundly defeated the Turks twice, and were in Thessaloniki within 4 weeks.
-With the Bulgarians directing the bulk of their force towards Constantinople, the capture of Thessaloniki would ensure that the railway axis between these two main cities was lost to the Turks, causing loss of logistics and supplies and severe impairment of command and control capability.
-The Turks would be hard placed to recruit locals, as their loyalties would be liable to lie with the Balkan Allies.
-Ottoman armies in Europe would be quickly cut off and their loss of morale and operational capability would lead them toward a quick surrender.
 Macedonian Front
 
 Previously the Inspector General of the Army, Constantine was appointed commander-in-chief of the "Army of Thessaly" when the First Balkan War broke out in October 1912.
@@ -122,7 +116,6 @@ As prime minister and war minister, he outranked Constantine and his response wa
 Constantine was left with no choice but to turn east, and after defeating the Ottoman army at Giannitsa, he accepted the surrender of the city of Thessaloniki and of its Ottoman garrison on 27 October (O.S.), less than 24 hours before the arrival of Bulgarian forces who hoped to capture the city first.
 The capture of Thessaloniki against Constantine's whim proved a crucial achievement: the pacts of the Balkan League had provided that in the forthcoming war against the Ottoman Empire, the four Balkan allies would provisionally hold any ground they took from the Turks, without contest from the other allies.
 With operations in Macedonia complete, Constantine transferred the bulk of his forces to Epirus, and assumed command.
-After lengthy preparations, the Greeks broke through the Ottoman defences in the Battle of Bizani and captured Ioannina and most of Epirus up into what is today southern Albania (Northern Epirus).
 These victories dispelled the tarnish of the 1897 defeat, and raised Constantine to great popularity with the Greek people.
 Accession to the Throne and Second Balkan War
 
@@ -170,31 +163,23 @@ Constantine was accused also by his Venizelist opponents for secret discussions 
 In March 1916, in an effort to increase his prestige, Constantine declared the official annexation of Northern Epirus, which was controlled by the Greeks since 1914, but the Greek forces were driven from the area by the Italians and French during the next year.
 In June 1916, Constantine, General Metaxas (the future dictator) and Prime Minister Skouloudis allowed Fort Rupel and parts of eastern Macedonia to be occupied, without opposition, by the Germans and Bulgarians, as a counterbalance to the Allied forces in Thessaloniki.
 The leadership of the Allied armies in Thessaloniki was worried also about a possible attack by the army of Constantine in their back.
-In July 1916, arsonists set fire to the forest surrounding the summer palace at Tatoi.
-With Allied support, the revolutionary government of Venizelos gained control of half the country – significantly, most of the "New Lands" won during the Balkan Wars.
-This cemented the National Schism, a division of Greek society between Venizelists and anti-Venizelist monarchists, which was to have repercussions in Greek politics until past World War II.
 The royal governments of Constantine in Athens continued to negotiate with the Allies a possible entry in the war.
 During November/December 1916, the British and French landed units at Athens claiming the surrender of war materiel equivalent to what was lost at Fort Rupel as a guarantee of Greece's neutrality.
 Constantine so became the most hated person for the Allies after his best man Kaiser Wilhelm.
 After the fall of the monarchy in Russia, Constantine lost his last supporter inside the Entente opposed to his removal from the throne.
 In the face of Venizelist and Anglo-French pressure, King Constantine finally left the country for Switzerland on 11 June 1917; his second-born son Alexander became king in his place.
 The Allied Powers were opposed to Constantine's first born son George becoming king, as he had served in the German army before the war and like his father was thought to be a Germanophile.
-What seemed like a minor injury turned to sepsis, and he died a few days later.
 Greece had at this point been at war for eight continuous years: World War I had come and gone, but yet no sign of an enduring peace was near, as the country was already at war against the Kemalist forces in Asia Minor.
 Following a plebiscite in which nearly 99% of votes were cast in favor of his return, Constantine returned as king on 19 December 1920.
 This caused great dissatisfaction not only to the newly liberated populations in Asia Minor, but also to the British and even more the French, who opposed the return of Constantine.
 In March 1921, despite his health problems, Constantine was landed in Anatolia to boost the Army's morale and command personally the Battle of Kütahya-Eskişehir.
 Following an army revolt by Venizelist officers, considering him as key responsible for the defeat, Constantine abdicated the throne again on 27 September 1922 and was succeeded by his eldest son, George II.
-Second exile and death
-
-He spent the last four months of his life in exile in Italy and died at 1:30 am on 11 January 1923 at Palermo, Sicily of heart failure.
 His wife, Sophie of Prussia, was never allowed back to Greece and was later interred beside her husband in the Russian Church in Florence.
 After his restoration on the Greek throne, George II organized the repatriation of the remains of members of his family who died in exile; an important religious ceremony that brought together, for six days in November 1936, all members of the royal family still alive.
 Constantine's body was buried at the royal burial ground at Tatoi Palace, where he remains.
 Marriage and issue
 
 As Crown Prince of Greece, Constantine married Princess Sophia of Prussia, a granddaughter of Queen Victoria and sister of Kaiser Wilhelm II, on 27 October 1889 in Athens.
-Their eldest daughter Helen married Crown Prince Carol of Romania; their second daughter married the 4th Duke of Aosta; while their youngest child, Princess Katherine, married a British commoner.
 Legacy and popular culture
 
 Constantine remained an idol for his supporters (much like Venizelos for his own supporters), and generally for the conservative Right, for years after his death.
@@ -213,6 +198,8 @@ He is sometimes numbered Constantine XII in succession to Constantine XI Palaiol
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -228,39 +215,9 @@ He is sometimes numbered Constantine XII in succession to Constantine XI Palaiol
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -275,6 +232,23 @@ He is sometimes numbered Constantine XII in succession to Constantine XI Palaiol
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -292,6 +266,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -359,29 +348,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -390,6 +371,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -402,6 +391,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -410,17 +401,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -448,6 +441,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -463,175 +540,143 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (fdd75982-65a5-405c-98f0-e717a23ae11d)
- Call ID: fdd75982-65a5-405c-98f0-e717a23ae11d
+  AssignClass (f0a8cd8d-0cf9-4eef-9a15-602ae48b5da8)
+ Call ID: f0a8cd8d-0cf9-4eef-9a15-602ae48b5da8
   Args:
+    source: :Constantine_I
     type: :Man
-    source: Constantine_I
-  AssignClass (367c1c73-f3a7-43ab-94b4-6611658d5025)
- Call ID: 367c1c73-f3a7-43ab-94b4-6611658d5025
+  AssignClass (a4599ad1-0d7c-458c-9d7d-a621eff94980)
+ Call ID: a4599ad1-0d7c-458c-9d7d-a621eff94980
   Args:
     type: :Person
-    source: Constantine_I
-  AssignClass (da734ea2-578c-4138-909f-72346d8c8e40)
- Call ID: da734ea2-578c-4138-909f-72346d8c8e40
+    source: :Constantine_I
+  AddLiteral (c66bbe41-246a-4537-9723-71429fd5228a)
+ Call ID: c66bbe41-246a-4537-9723-71429fd5228a
   Args:
-    source: George_I
-    type: :Man
-  AssignClass (ba8ac41f-f7e4-49c4-b8da-e4682dd10fef)
- Call ID: ba8ac41f-f7e4-49c4-b8da-e4682dd10fef
-  Args:
-    type: :Person
-    source: George_I
-  AssignClass (b26b815e-c7d4-4b38-8149-5835050fc9ba)
- Call ID: b26b815e-c7d4-4b38-8149-5835050fc9ba
-  Args:
-    source: Olga
-    type: :Woman
-  AssignClass (e8bdca0b-c6bf-448d-8f49-78d89b1f5a82)
- Call ID: e8bdca0b-c6bf-448d-8f49-78d89b1f5a82
-  Args:
-    type: :Person
-    source: Olga
-  AssignClass (e4258825-27d2-4cba-ae09-2fa872ec175d)
- Call ID: e4258825-27d2-4cba-ae09-2fa872ec175d
-  Args:
-    source: Sophia_of_Prussia
-    type: :Woman
-  AssignClass (eedf031e-6a14-4470-a891-05f9c2a130df)
- Call ID: eedf031e-6a14-4470-a891-05f9c2a130df
-  Args:
-    source: Sophia_of_Prussia
-    type: :Person
-  AssignClass (26d1b3ae-dd98-4fa8-8753-0617be15988c)
- Call ID: 26d1b3ae-dd98-4fa8-8753-0617be15988c
-  Args:
-    type: :Man
-    source: Wilhelm_II
-  AssignClass (349d39dd-ed74-4ee9-bbb2-d633f9ed4f43)
- Call ID: 349d39dd-ed74-4ee9-bbb2-d633f9ed4f43
-  Args:
-    source: Wilhelm_II
-    type: :Person
-  AssignClass (6da5fda6-cd3e-47d4-b17d-7290fe4cbebe)
- Call ID: 6da5fda6-cd3e-47d4-b17d-7290fe4cbebe
-  Args:
-    type: :Man
-    source: Alexander
-  AssignClass (090e1ed2-bee1-4fe3-93be-4055b6f7f7bc)
- Call ID: 090e1ed2-bee1-4fe3-93be-4055b6f7f7bc
-  Args:
-    type: :Person
-    source: Alexander
-  AssignClass (40cf03af-a299-47ac-9248-565b722afb47)
- Call ID: 40cf03af-a299-47ac-9248-565b722afb47
-  Args:
-    source: George_II
-    type: :Man
-  AssignClass (0c91b191-0f20-45a8-9d11-ab78640ecc09)
- Call ID: 0c91b191-0f20-45a8-9d11-ab78640ecc09
-  Args:
-    source: George_II
-    type: :Person
-  AssignClass (200bae47-0288-4625-a29f-2f71daeccf46)
- Call ID: 200bae47-0288-4625-a29f-2f71daeccf46
-  Args:
-    type: :Woman
-    source: Helen
-  AssignClass (84aa4d53-6f6c-48e6-9bfd-2fa8e35e029b)
- Call ID: 84aa4d53-6f6c-48e6-9bfd-2fa8e35e029b
-  Args:
-    type: :Person
-    source: Helen
-  AssignClass (8082e631-aece-4685-8a73-fe369f1695c5)
- Call ID: 8082e631-aece-4685-8a73-fe369f1695c5
-  Args:
-    type: :Woman
-    source: Katherine
-  AssignClass (37b67e39-731b-4dfd-8b3d-530dc9debbf2)
- Call ID: 37b67e39-731b-4dfd-8b3d-530dc9debbf2
-  Args:
-    type: :Person
-    source: Katherine
-  AssignClass (be44c914-8109-47c5-b230-d753841067b3)
- Call ID: be44c914-8109-47c5-b230-d753841067b3
-  Args:
-    source: Konstantin_Romanov
-    type: :Man
-  AssignClass (499bbf83-c1ae-4b62-a560-f92dfa3e4479)
- Call ID: 499bbf83-c1ae-4b62-a560-f92dfa3e4479
-  Args:
-    type: :Person
-    source: Konstantin_Romanov
-  AddTriple (5cca96d8-768d-492e-92df-3812afa244e2)
- Call ID: 5cca96d8-768d-492e-92df-3812afa244e2
-  Args:
-    source: Constantine_I
-    target: George_I
-    relation: :hasFather
-  AddTriple (a2f23930-c649-47ac-9015-aba76eb8155a)
- Call ID: a2f23930-c649-47ac-9015-aba76eb8155a
-  Args:
-    source: Constantine_I
-    target: Olga
-    relation: :hasMother
-  AddTriple (e9b1d69d-7195-4bba-b580-b11925193a89)
- Call ID: e9b1d69d-7195-4bba-b580-b11925193a89
-  Args:
-    source: Constantine_I
-    relation: :hasFather
-    target: Konstantin_Romanov
-  AddTriple (8da0bf19-cec1-4b2c-bc1a-a0eeb38a138d)
- Call ID: 8da0bf19-cec1-4b2c-bc1a-a0eeb38a138d
-  Args:
-    target: Sophia_of_Prussia
-    relation: :hasSister
-    source: Wilhelm_II
-  AddTriple (57e7697c-52a8-431e-b7a8-6acb26d12045)
- Call ID: 57e7697c-52a8-431e-b7a8-6acb26d12045
-  Args:
-    relation: :hasSon
-    target: Alexander
-    source: Constantine_I
-  AddTriple (49dc75aa-8a15-41de-88fb-c19a41a4c344)
- Call ID: 49dc75aa-8a15-41de-88fb-c19a41a4c344
-  Args:
-    source: Constantine_I
-    relation: :hasSon
-    target: George_II
-  AddTriple (44150c78-9087-4528-b460-d9374d2cf2bb)
- Call ID: 44150c78-9087-4528-b460-d9374d2cf2bb
-  Args:
-    source: Constantine_I
-    target: Helen
-    relation: :hasDaughter
-  AddTriple (efa72ac1-8fa3-419b-b467-e21030bfd07c)
- Call ID: efa72ac1-8fa3-419b-b467-e21030bfd07c
-  Args:
-    relation: :hasDaughter
-    target: Katherine
-    source: Constantine_I
-  AddLiteral (c47112f9-8956-49d2-94d3-4d88f9b9276c)
- Call ID: c47112f9-8956-49d2-94d3-4d88f9b9276c
-  Args:
-    source: Constantine_I
-    literal_type: xsd:integer
-    relation: :hasBirthYear
     literal_value: 1868
-  AddLiteral (e41103b2-36ba-4e87-8df4-ba66364f0072)
- Call ID: e41103b2-36ba-4e87-8df4-ba66364f0072
+    source: :Constantine_I
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (f9a322b2-1b54-4bf8-988d-3753f5b94dfa)
+ Call ID: f9a322b2-1b54-4bf8-988d-3753f5b94dfa
   Args:
-    literal_value: 1923
+    source: :Constantine_I
     relation: :hasDeathYear
     literal_type: xsd:integer
-    source: Constantine_I
-  AddLiteral (d85573da-6858-42e7-904a-fc90afa2425f)
- Call ID: d85573da-6858-42e7-904a-fc90afa2425f
+    literal_value: 1923
+  AssignClass (77dc7761-6483-406a-a8cd-6eadf2b5f19b)
+ Call ID: 77dc7761-6483-406a-a8cd-6eadf2b5f19b
+  Args:
+    source: :George_I_of_Greece
+    type: :Man
+  AssignClass (1ad945dd-ec6d-4c54-adf0-b532abb4c9ac)
+ Call ID: 1ad945dd-ec6d-4c54-adf0-b532abb4c9ac
+  Args:
+    type: :Person
+    source: :George_I_of_Greece
+  AssignClass (fa0f313c-4677-4c40-a17a-1339b3f22637)
+ Call ID: fa0f313c-4677-4c40-a17a-1339b3f22637
+  Args:
+    type: :Woman
+    source: :Olga_of_Greece
+  AssignClass (5c019b4d-8fe1-4533-b068-07c44c5ea79b)
+ Call ID: 5c019b4d-8fe1-4533-b068-07c44c5ea79b
+  Args:
+    source: :Olga_of_Greece
+    type: :Person
+  AddTriple (a384a412-4436-40d2-916f-f0e36725a04c)
+ Call ID: a384a412-4436-40d2-916f-f0e36725a04c
+  Args:
+    relation: :hasFather
+    source: :Constantine_I
+    target: :George_I_of_Greece
+  AddTriple (fbb01568-13a1-4d09-ad29-1159fddc91cc)
+ Call ID: fbb01568-13a1-4d09-ad29-1159fddc91cc
+  Args:
+    relation: :hasMother
+    source: :Constantine_I
+    target: :Olga_of_Greece
+  AssignClass (d80a63d8-5c20-472b-9e5f-d8983e1bad49)
+ Call ID: d80a63d8-5c20-472b-9e5f-d8983e1bad49
+  Args:
+    type: :Woman
+    source: :Sophia_of_Prussia
+  AssignClass (999c2101-1a2b-4e69-94ae-d7631b335fb0)
+ Call ID: 999c2101-1a2b-4e69-94ae-d7631b335fb0
+  Args:
+    source: :Sophia_of_Prussia
+    type: :Person
+  AddTriple (678d2686-fd16-440f-b369-89ea800dc807)
+ Call ID: 678d2686-fd16-440f-b369-89ea800dc807
+  Args:
+    relation: :hasRelation
+    source: :Constantine_I
+    target: :Sophia_of_Prussia
+  AddLiteral (b9103b05-59a4-48e5-aa87-6d211d095a83)
+ Call ID: b9103b05-59a4-48e5-aa87-6d211d095a83
   Args:
     literal_type: xsd:integer
-    source: Constantine_I
-    literal_value: 1889
     relation: :hasMarriageYear
-  Finish (6810be97-8a79-4cd9-a4d7-1b901a0aeb35)
- Call ID: 6810be97-8a79-4cd9-a4d7-1b901a0aeb35
+    source: :Constantine_I
+    literal_value: 1889
+  AssignClass (4c3d40a8-4b93-4a78-a5e6-849674e8b30d)
+ Call ID: 4c3d40a8-4b93-4a78-a5e6-849674e8b30d
+  Args:
+    type: :Man
+    source: :Wilhelm_II
+  AssignClass (e526ac98-8680-4509-bcd0-f516182ccd5e)
+ Call ID: e526ac98-8680-4509-bcd0-f516182ccd5e
+  Args:
+    source: :Wilhelm_II
+    type: :Person
+  AddTriple (6d484ec9-1cd2-4c19-b83f-6c8aa607a364)
+ Call ID: 6d484ec9-1cd2-4c19-b83f-6c8aa607a364
+  Args:
+    target: :Wilhelm_II
+    source: :Sophia_of_Prussia
+    relation: :isSisterOf
+  AssignClass (2b3061a9-09c5-4e57-9d1f-db9f5085c968)
+ Call ID: 2b3061a9-09c5-4e57-9d1f-db9f5085c968
+  Args:
+    source: :Konstantin_Romanov
+    type: :Man
+  AssignClass (45a7d609-a560-4ed3-8baf-2767e9ffce5d)
+ Call ID: 45a7d609-a560-4ed3-8baf-2767e9ffce5d
+  Args:
+    source: :Konstantin_Romanov
+    type: :Person
+  AssignClass (44743be3-b487-456f-9e61-2a8070e21748)
+ Call ID: 44743be3-b487-456f-9e61-2a8070e21748
+  Args:
+    type: :Man
+    source: :George_II
+  AssignClass (2521ede7-289b-46fb-a110-28b740999d88)
+ Call ID: 2521ede7-289b-46fb-a110-28b740999d88
+  Args:
+    type: :Person
+    source: :George_II
+  AddTriple (ce318525-03b3-4f58-83ff-a72d4a338d2a)
+ Call ID: ce318525-03b3-4f58-83ff-a72d4a338d2a
+  Args:
+    target: :Constantine_I
+    relation: :isSonOf
+    source: :George_II
+  AssignClass (016ad9bc-2fea-43d1-949e-48a7be5c5c4f)
+ Call ID: 016ad9bc-2fea-43d1-949e-48a7be5c5c4f
+  Args:
+    type: :Man
+    source: :Alexander_of_Greece
+  AssignClass (e4f9fea7-9094-45f0-aaf8-f9f0de8fe2f1)
+ Call ID: e4f9fea7-9094-45f0-aaf8-f9f0de8fe2f1
+  Args:
+    source: :Alexander_of_Greece
+    type: :Person
+  AddTriple (1dc680b1-d40d-4449-9184-e825e0baf56f)
+ Call ID: 1dc680b1-d40d-4449-9184-e825e0baf56f
+  Args:
+    target: :Constantine_I
+    relation: :isSonOf
+    source: :Alexander_of_Greece
+  Finish (375860d7-2f6f-43d8-8382-d01e72bf8e9a)
+ Call ID: 375860d7-2f6f-43d8-8382-d01e72bf8e9a
   Args:

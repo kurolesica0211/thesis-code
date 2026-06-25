@@ -3,8 +3,10 @@ Calculate precision and recall metrics for knowledge graph construction pipeline
 
 This script:
 1. Matches extracted triples (from delta_graph.ttl) to ground truth triples
-2. Filters out invalid triples based on entity matching and predicate types
-3. Calculates semantic precision/recall using synonym relations
+2. Filters out metadata triples
+3. Keeps only extracted triples whose relation exists in ground truth
+4. Keeps only extracted triples whose entities map to ground truth entities,
+   while allowing class entities
 4. Reports micro and macro metrics
 """
 
@@ -15,34 +17,9 @@ import json
 import os
 from pathlib import Path
 from typing import Dict, List, Set, Tuple, Optional
-from collections import defaultdict, deque
-from rdflib import Graph, URIRef, Namespace
+from rdflib import Graph, URIRef
 import csv
-import sys
 from urllib.parse import unquote
-
-# Synonym relations from precision_recall.py
-DIRECT_SYNONYMS = [
-    ("hasParent", "hasMother"),
-    ("hasParent", "hasFather"),
-    ("hasParent", "isDaughterOf"),
-    ("hasParent", "isSonOf"),
-    ("hasParent", "isChildOf"),
-    ("hasChild", "hasDaughter"),
-    ("hasChild", "hasSon"),
-    ("hasChild", "isFatherOf"),
-    ("hasChild", "isMotherOf"),
-    ("hasChild", "isParentOf"),
-    ("isSiblingOf", "isBrotherOf"),
-    ("isSiblingOf", "isSisterOf"),
-    ("isSiblingOf", "hasBrother"),
-    ("isSiblingOf", "hasSister"),
-]
-
-INVERSE_SYNONYMS = [
-    ("hasParent", "isParentOf"),
-    ("isSiblingOf", "isSiblingOf"),
-]
 
 # Metadata properties to filter out
 METADATA_PROPERTIES = {
@@ -52,7 +29,6 @@ METADATA_PROPERTIES = {
     "hasDeathYear",
     "hasMarriageYear",
     "knownAs",
-    "type",  # RDF.type
     "hasSex",
     "wdtLink",
     "posIndicesFull",
@@ -60,94 +36,6 @@ METADATA_PROPERTIES = {
     "imports",
     "label"
 }
-
-# Derived relations to filter out
-FILTERED_RELATIONS = {
-    "hasAncestor",
-    "hasRelation",
-    "isBloodrelationOf",
-    "hasFemalePartner",
-    "hasMalePartner"
-}
-
-
-def compute_synonym_closure() -> Tuple[Dict[str, Set[str]], Dict[str, Set[str]]]:
-    """Compute transitive closure of synonym relations.
-    
-    Closure rules:
-    - Direct ∘ Direct = Direct (if A~dB and B~dC then A~dC)
-    - Inverse ∘ Inverse = Direct (if A~iB and B~iC then A~dC)
-    - Direct ∘ Inverse = Inverse (if A~dB and B~iC then A~iC)
-    - Inverse ∘ Direct = Inverse (if A~iB and B~dC then A~iC)
-    
-    Returns:
-        Tuple of:
-        - direct_synonyms: Dict[str, Set[str]] - all pairs that are directly synonymous
-        - inverse_synonyms: Dict[str, Set[str]] - all pairs that are inversely synonymous
-    """
-    # Build graph of relations with labeled edges
-    edges = defaultdict(list)  # edges[A] = [(B, 'direct'), (C, 'inverse'), ...]
-    all_relations = set()
-    
-    # Add initial direct synonymies
-    for rel1, rel2 in DIRECT_SYNONYMS:
-        edges[rel1].append((rel2, 'direct'))
-        edges[rel2].append((rel1, 'direct'))
-        all_relations.add(rel1)
-        all_relations.add(rel2)
-    
-    # Add initial inverse synonymies
-    for rel1, rel2 in INVERSE_SYNONYMS:
-        edges[rel1].append((rel2, 'inverse'))
-        edges[rel2].append((rel1, 'inverse'))
-        all_relations.add(rel1)
-        all_relations.add(rel2)
-    
-    # Compute transitive closure using BFS from each starting relation
-    direct_synonyms = defaultdict(set)
-    inverse_synonyms = defaultdict(set)
-    for start_rel in all_relations:
-        # BFS over (relation, parity) states so we do not lose inverse reachability.
-        visited_states = {(start_rel, 'direct')}
-        queue = deque([(start_rel, 'direct')])  # Start with 'direct' to self (identity)
-        reachable_parities = defaultdict(set)
-        
-        while queue:
-            current_rel, current_type = queue.popleft()
-            reachable_parities[current_rel].add(current_type)
-            
-            # Explore all neighbors
-            for next_rel, edge_type in edges[current_rel]:
-                # Compose relation types using the closure rules
-                if current_type == 'direct':
-                    # d ∘ d = d,  d ∘ i = i
-                    new_type = edge_type
-                else:  # current_type == 'inverse'
-                    # i ∘ d = i,  i ∘ i = d
-                    new_type = 'direct' if edge_type == 'inverse' else 'inverse'
-                
-                next_state = (next_rel, new_type)
-                if next_state not in visited_states:
-                    visited_states.add(next_state)
-                    queue.append(next_state)
-        
-        # Store computed relations (excluding self-loops)
-        for rel, parities in reachable_parities.items():
-            if rel == start_rel:
-                if 'inverse' in parities:
-                    inverse_synonyms[start_rel].add(start_rel)
-                continue
-
-            if 'direct' in parities:
-                direct_synonyms[start_rel].add(rel)
-            if 'inverse' in parities:
-                inverse_synonyms[start_rel].add(rel)
-    
-    return dict(direct_synonyms), dict(inverse_synonyms)
-
-
-# Compute synonym closure at module initialization
-_DIRECT_SYN_CLOSURE, _INVERSE_SYN_CLOSURE = compute_synonym_closure()
 
 
 def load_ground_truth_csv(csv_path: str) -> Dict[str, str]:
@@ -195,23 +83,41 @@ def get_qid_from_fuzzy_match(fuzzy_match_file: str) -> Optional[str]:
 
 def get_entity_mapping(fuzzy_match_file: str) -> Dict[str, str]:
     """Load fuzzy_entity_match_map.json and create URI mapping.
-    
-    Returns dict mapping extracted URIs to ground truth URIs.
+
+    Returns a mapping from extracted URIs to ground truth URIs for matched entities.
     """
     mapping = {}
     try:
         with open(fuzzy_match_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
             for entity in data.get('entities', []):
-                if entity['matched']:
-                    extracted_uri = entity['extracted_uri']
-                    # Map to ground truth URI
-                    ground_truth_uri = entity['ground_truth_uri']
-                    if ground_truth_uri:
+                if entity.get('matched'):
+                    extracted_uri = entity.get('extracted_uri')
+                    ground_truth_uri = entity.get('ground_truth_uri')
+                    if extracted_uri and ground_truth_uri:
                         mapping[extracted_uri] = ground_truth_uri
     except (FileNotFoundError, json.JSONDecodeError):
         pass
     return mapping
+
+
+def get_class_entities(triples: Set[Tuple[str, str, str]]) -> Set[str]:
+    """Extract known class names from rdf:type triples."""
+    class_entities = set()
+    for subject, predicate, obj in triples:
+        if predicate == 'type':
+            class_entities.add(obj)
+
+    # Ignore OWL/RDFS infrastructure terms that are not user-level entities.
+    class_entities.difference_update({
+        'Ontology',
+        'AnnotationProperty',
+        'Class',
+        'Thing',
+        'Nothing',
+        'NamedIndividual',
+    })
+    return class_entities
 
 
 def normalize_uri(uri: str) -> str:
@@ -234,39 +140,11 @@ def get_predicate_name(predicate: URIRef) -> str:
 def is_metadata_property(predicate: URIRef) -> bool:
     """Check if predicate is a metadata property."""
     pred_name = get_predicate_name(predicate)
-    return pred_name in METADATA_PROPERTIES or str(predicate).endswith('type')
+    return pred_name in METADATA_PROPERTIES
 
 
-def should_filter_relation(predicate: URIRef) -> bool:
-    """Check if relation should be filtered out."""
-    pred_name = get_predicate_name(predicate)
-    return pred_name in FILTERED_RELATIONS
-
-
-def get_equivalent_triples(subject: str, predicate: str, obj: str) -> Set[Tuple[str, str, str]]:
-    """Get all semantically equivalent forms of a triple.
-    
-    Uses transitive closure of synonym relations to handle:
-    1. Direct synonyms: (s, p1, o) == (s, p2, o) where p1 and p2 are directly synonymous
-    2. Inverse synonyms: (s, p1, o) == (o, p2, s) where p1 and p2 are inversely synonymous
-    
-    All transitively inferred relations are included through the closure sets.
-    """
-    equivalent = {(subject, predicate, obj)}
-    
-    # Add all directly synonymous predicates
-    for syn_pred in _DIRECT_SYN_CLOSURE.get(predicate, set()):
-        equivalent.add((subject, syn_pred, obj))
-    
-    # Add all inversely synonymous predicates (with subject/object swapped)
-    for inv_pred in _INVERSE_SYN_CLOSURE.get(predicate, set()):
-        equivalent.add((obj, inv_pred, subject))
-    
-    return equivalent
-
-
-def load_and_normalize_graph(graph_path: str, entity_mapping: Dict[str, str]) -> Set[Tuple[str, str, str]]:
-    """Load a TTL graph and normalize URIs using entity mapping.
+def load_and_normalize_graph(graph_path: str, entity_mapping: Optional[Dict[str, str]] = None) -> Set[Tuple[str, str, str]]:
+    """Load a TTL graph and normalize URIs.
     
     Returns set of (subject, predicate, object) tuples as strings.
     """
@@ -280,12 +158,12 @@ def load_and_normalize_graph(graph_path: str, entity_mapping: Dict[str, str]) ->
             s_str = str(s)
             p_str = str(p)
             o_str = str(o)
-            
-            # Map extracted URIs to ground truth URIs if they exist
-            if s_str in entity_mapping:
-                s_str = entity_mapping[s_str]
-            if o_str in entity_mapping:
-                o_str = entity_mapping[o_str]
+
+            if entity_mapping:
+                if s_str in entity_mapping:
+                    s_str = entity_mapping[s_str]
+                if o_str in entity_mapping:
+                    o_str = entity_mapping[o_str]
             
             # Normalize to local names for comparison
             s_local = normalize_uri(s_str)
@@ -299,23 +177,15 @@ def load_and_normalize_graph(graph_path: str, entity_mapping: Dict[str, str]) ->
     return triples
 
 
-def filter_triples(triples: Set[Tuple[str, str, str]], 
-                valid_entities: Optional[Set[str]] = None) -> Set[Tuple[str, str, str]]:
+def filter_triples(triples: Set[Tuple[str, str, str]]) -> Set[Tuple[str, str, str]]:
     """Filter out invalid triples.
     
     Removes:
-    1. Triples with unmatched entities (if valid_entities provided)
-    2. Triples with metadata predicates
-    3. Triples with filtered relations
+    1. Triples with metadata predicates
     """
     filtered = set()
     for s, p, o in triples:
-        # Check entity matching if provided
-        if valid_entities and (s not in valid_entities or o not in valid_entities):
-            continue
-        
-        # Check predicates
-        if p in METADATA_PROPERTIES or p in FILTERED_RELATIONS:
+        if p in METADATA_PROPERTIES:
             continue
         
         filtered.add((s, p, o))
@@ -323,52 +193,66 @@ def filter_triples(triples: Set[Tuple[str, str, str]],
     return filtered
 
 
-def deduplicate_by_synonymy(triples: Set[Tuple[str, str, str]]) -> Set[Tuple[str, str, str]]:
-    """Remove duplicate triples that are semantically equivalent.
-    
-    For each group of equivalent triples, keep only one representative.
-    """
-    if not triples:
-        return triples
-    
-    seen_equivalents = set()
-    deduplicated = set()
-    
-    for triple in triples:
-        s, p, o = triple
-        equivalents = get_equivalent_triples(s, p, o)
-        
-        # Create a canonical form to detect duplicates
-        canonical = frozenset(equivalents)
-        if canonical not in seen_equivalents:
-            seen_equivalents.add(canonical)
-            deduplicated.add(triple)
-    
-    return deduplicated
+def filter_extracted_triples(
+    extracted_triples: Set[Tuple[str, str, str]],
+    ground_truth_triples: Set[Tuple[str, str, str]],
+    entity_mapping: Dict[str, str],
+) -> Set[Tuple[str, str, str]]:
+    """Filter extracted triples to those comparable against ground truth."""
+    allowed_predicates = {predicate for _, predicate, _ in ground_truth_triples}
+    mapped_entities = {normalize_uri(uri) for uri in entity_mapping.values()}
+    class_entities = get_class_entities(ground_truth_triples)
+
+    filtered = set()
+    for subject, predicate, obj in extracted_triples:
+        if predicate in METADATA_PROPERTIES:
+            continue
+
+        if predicate not in allowed_predicates:
+            continue
+
+        subject_allowed = subject in mapped_entities or subject in class_entities
+        object_allowed = obj in mapped_entities or obj in class_entities
+
+        if subject_allowed and object_allowed:
+            filtered.add((subject, predicate, obj))
+
+    return filtered
+
+
+def filter_ground_truth_triples(
+    ground_truth_triples: Set[Tuple[str, str, str]],
+    extracted_triples: Set[Tuple[str, str, str]],
+    entity_mapping: Dict[str, str],
+) -> Set[Tuple[str, str, str]]:
+    """Filter ground-truth triples to the same comparable slice as extracted triples."""
+    allowed_predicates = {predicate for _, predicate, _ in extracted_triples}
+    mapped_entities = {normalize_uri(uri) for uri in entity_mapping.values()}
+    class_entities = get_class_entities(ground_truth_triples)
+
+    filtered = set()
+    for subject, predicate, obj in ground_truth_triples:
+        if predicate in METADATA_PROPERTIES:
+            continue
+
+        if predicate not in allowed_predicates:
+            continue
+
+        subject_allowed = subject in mapped_entities or subject in class_entities
+        object_allowed = obj in mapped_entities or obj in class_entities
+
+        if subject_allowed and object_allowed:
+            filtered.add((subject, predicate, obj))
+
+    return filtered
 
 
 def calculate_metrics(extracted_triples: Set[Tuple[str, str, str]],
                     ground_truth_triples: Set[Tuple[str, str, str]]) -> Dict[str, float]:
     """Calculate precision, recall, and F1 score."""
-    
-    # Deduplicate by synonymy
-    extracted_dedup = deduplicate_by_synonymy(extracted_triples)
-    ground_truth_dedup = deduplicate_by_synonymy(ground_truth_triples)
-    
-    # Count correct triples (those in both sets, considering synonymy)
-    correct = 0
-    for extracted_triple in extracted_dedup:
-        s, p, o = extracted_triple
-        equivalents = get_equivalent_triples(s, p, o)
-        
-        # Check if any equivalent form exists in ground truth
-        for equiv in equivalents:
-            if equiv in ground_truth_dedup:
-                correct += 1
-                break
-    
-    total_extracted = len(extracted_dedup)
-    total_ground_truth = len(ground_truth_dedup)
+    correct = len(extracted_triples & ground_truth_triples)
+    total_extracted = len(extracted_triples)
+    total_ground_truth = len(ground_truth_triples)
     
     precision = correct / total_extracted if total_extracted > 0 else 0.0
     recall = correct / total_ground_truth if total_ground_truth > 0 else 0.0
@@ -382,22 +266,6 @@ def calculate_metrics(extracted_triples: Set[Tuple[str, str, str]],
         'extracted': total_extracted,
         'ground_truth': total_ground_truth,
     }
-
-
-def get_valid_entities_from_matching(fuzzy_match_file: str) -> Set[str]:
-    """Get set of entities that were successfully matched."""
-    valid = set()
-    try:
-        with open(fuzzy_match_file, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            for entity in data.get('entities', []):
-                if entity['matched']:
-                    ground_truth_uri = entity['ground_truth_uri']
-                    if ground_truth_uri:
-                        valid.add(normalize_uri(ground_truth_uri))
-    except (FileNotFoundError, json.JSONDecodeError):
-        pass
-    return valid
 
 
 def process_run(run_path: str, ground_truths_dir: str) -> Tuple[Dict, List[Dict]]:
@@ -419,17 +287,16 @@ def process_run(run_path: str, ground_truths_dir: str) -> Tuple[Dict, List[Dict]
             subrun_path = os.path.join(run_path, subrun_dir)
             
             # Load file paths
-            delta_graph_file = os.path.join(subrun_path, "delta_graph.ttl")
-            fuzzy_match_file = os.path.join(subrun_path, "fuzzy_entity_match_map.json")
-            
+            delta_graph_file = os.path.join(subrun_path, "delta_graph_inferred.ttl")
             # Get Q-id from fuzzy match file
+            fuzzy_match_file = os.path.join(subrun_path, "fuzzy_entity_match_map.json")
             qid = get_qid_from_fuzzy_match(fuzzy_match_file)
             if not qid:
                 print(f"Warning: Could not extract Q-id from {fuzzy_match_file}")
                 continue
             
             # Load ground truth
-            ground_truth_file = os.path.join(ground_truths_dir, f"{qid}.ttl")
+            ground_truth_file = os.path.join(ground_truths_dir, f"{qid}_inferred.ttl")
             if not os.path.exists(ground_truth_file):
                 print(f"Warning: Ground truth file not found: {ground_truth_file}")
                 continue
@@ -438,21 +305,24 @@ def process_run(run_path: str, ground_truths_dir: str) -> Tuple[Dict, List[Dict]
                 print(f"Warning: delta_graph.ttl not found in {subrun_path}")
                 continue
             
-            # Get entity mapping
-            entity_mapping = get_entity_mapping(fuzzy_match_file)
-            
             # Load graphs
+            entity_mapping = get_entity_mapping(fuzzy_match_file)
+
             extracted_triples = load_and_normalize_graph(delta_graph_file, entity_mapping)
-            ground_truth_triples = load_and_normalize_graph(ground_truth_file, {})
+            ground_truth_triples = load_and_normalize_graph(ground_truth_file)
             
-            # Get valid entities (those successfully matched)
-            valid_entities = get_valid_entities_from_matching(fuzzy_match_file)
+            # Filter triples down to comparable triples only
+            extracted_filtered = filter_extracted_triples(
+                extracted_triples,
+                ground_truth_triples,
+                entity_mapping,
+            )
+            ground_truth_filtered = filter_ground_truth_triples(
+                ground_truth_triples,
+                extracted_filtered,
+                entity_mapping,
+            )
             
-            # Filter extracted triples
-            extracted_filtered = filter_triples(extracted_triples, valid_entities)
-            
-            # Filter ground truth triples (same filters)
-            ground_truth_filtered = filter_triples(ground_truth_triples)
             
             # Calculate metrics
             metrics = calculate_metrics(extracted_filtered, ground_truth_filtered)

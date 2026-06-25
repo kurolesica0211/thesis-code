@@ -125,7 +125,6 @@ For the wedding, Anne wore a white jacket over a "demure, cropped-to-the-knee dr
 Kidnapping attempt
 
 On 20 March 1974, Anne and Mark Phillips were returning to Buckingham Palace when a car forced their Rolls-Royce to stop on Pall Mall.
-Its driver, Ian Ball, jumped out and began firing a pistol.
 Inspector James Beaton, Anne's personal protection officer, left the car to shield her and attempted to disarm Ball.
 Beaton's Walther PPK jammed, and he was shot, as was Anne's chauffeur, Alex Callender, when he tried to intervene.
 Ball approached Anne's car and told her that he intended to kidnap her and hold her for ransom, the amount reported variously as £2 million or £3 million, which he claimed he intended to donate to the National Health Service.
@@ -214,6 +213,8 @@ Anne's ancestry can be traced as far back as Cerdic, King of Wessex (519–534).
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -229,39 +230,9 @@ Anne's ancestry can be traced as far back as Cerdic, King of Wessex (519–534).
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -276,6 +247,23 @@ Anne's ancestry can be traced as far back as Cerdic, King of Wessex (519–534).
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -293,6 +281,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -360,29 +363,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -391,6 +386,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -403,6 +406,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -411,17 +416,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -449,6 +456,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -464,128 +555,147 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b1d1b281-15b2-4338-8e30-b5432cda478a)
- Call ID: b1d1b281-15b2-4338-8e30-b5432cda478a
+  AssignClass (044256f5-c21e-4d1e-aea9-9ef635abc3f8)
+ Call ID: 044256f5-c21e-4d1e-aea9-9ef635abc3f8
   Args:
     type: :Woman
-    source: Anne
-  AssignClass (61d303cd-6d69-4020-83ad-e6ff46db4f2d)
- Call ID: 61d303cd-6d69-4020-83ad-e6ff46db4f2d
+    source: Anne_Princess_Royal
+  AssignClass (2421f040-1957-474a-93fd-99119282254c)
+ Call ID: 2421f040-1957-474a-93fd-99119282254c
   Args:
-    type: :Woman
-    source: ElizabethII
-  AssignClass (369666a6-6846-49e2-aa33-dc9b186dfda1)
- Call ID: 369666a6-6846-49e2-aa33-dc9b186dfda1
+    source: Anne_Princess_Royal
+    type: :Person
+  AddLiteral (e03ccc95-4129-4ab4-825d-bef17e4cff7b)
+ Call ID: e03ccc95-4129-4ab4-825d-bef17e4cff7b
   Args:
-    source: Philip
-    type: :Man
-  AssignClass (7187d224-9619-48ed-a900-d86f91d3dbae)
- Call ID: 7187d224-9619-48ed-a900-d86f91d3dbae
-  Args:
-    source: CharlesIII
-    type: :Man
-  AssignClass (fe6178ec-b765-43e2-8041-d46769e1bf61)
- Call ID: fe6178ec-b765-43e2-8041-d46769e1bf61
-  Args:
-    type: :Man
-    source: MarkPhillips
-  AssignClass (7da06c28-1fe0-4969-89e0-71bc04385477)
- Call ID: 7da06c28-1fe0-4969-89e0-71bc04385477
-  Args:
-    source: PeterPhillips
-    type: :Man
-  AssignClass (7b2ad6eb-7a3e-4df1-8384-c93b6fe2a674)
- Call ID: 7b2ad6eb-7a3e-4df1-8384-c93b6fe2a674
-  Args:
-    source: ZaraTindall
-    type: :Woman
-  AssignClass (afcf2420-0a8c-4c4f-99eb-6e577b810f56)
- Call ID: afcf2420-0a8c-4c4f-99eb-6e577b810f56
-  Args:
-    source: TimothyLaurence
-    type: :Man
-  AddLiteral (85de79e9-4e11-41a1-ad3b-b17a4eb88655)
- Call ID: 85de79e9-4e11-41a1-ad3b-b17a4eb88655
-  Args:
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Anne
     literal_value: 1950
-  AddTriple (9189c710-402a-4759-ad3c-e0e054a08008)
- Call ID: 9189c710-402a-4759-ad3c-e0e054a08008
+    source: Anne_Princess_Royal
+  AssignClass (525d9bcb-e70a-456b-8b28-72ee6f07d986)
+ Call ID: 525d9bcb-e70a-456b-8b28-72ee6f07d986
   Args:
-    target: ElizabethII
+    source: Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (65b28eab-3de1-484e-bc3c-c060c306c3ca)
+ Call ID: 65b28eab-3de1-484e-bc3c-c060c306c3ca
+  Args:
+    type: :Person
+    source: Queen_Elizabeth_II
+  AssignClass (3aecc98e-8a97-4ede-9966-3f89a895ba20)
+ Call ID: 3aecc98e-8a97-4ede-9966-3f89a895ba20
+  Args:
+    source: Prince_Philip
+    type: :Man
+  AssignClass (ff04e09c-7765-40c8-b7be-cf3402289428)
+ Call ID: ff04e09c-7765-40c8-b7be-cf3402289428
+  Args:
+    type: :Person
+    source: Prince_Philip
+  AddTriple (3671f1f3-999b-4547-95d9-45911e712f94)
+ Call ID: 3671f1f3-999b-4547-95d9-45911e712f94
+  Args:
+    target: Queen_Elizabeth_II
     relation: :hasMother
-    source: Anne
-  AddTriple (2f184f7c-2389-41c9-8d45-b4d3c1afc590)
- Call ID: 2f184f7c-2389-41c9-8d45-b4d3c1afc590
+    source: Anne_Princess_Royal
+  AddTriple (bc28d4e1-c7db-4015-afcd-e56e79da6451)
+ Call ID: bc28d4e1-c7db-4015-afcd-e56e79da6451
   Args:
-    source: Anne
+    source: Anne_Princess_Royal
     relation: :hasFather
-    target: Philip
-  AddTriple (20b9b972-72bc-444b-a4ca-285e2e8194da)
- Call ID: 20b9b972-72bc-444b-a4ca-285e2e8194da
+    target: Prince_Philip
+  AssignClass (2e1081a3-0f45-475c-8aea-ff51ae09a644)
+ Call ID: 2e1081a3-0f45-475c-8aea-ff51ae09a644
   Args:
-    source: Anne
-    target: CharlesIII
-    relation: :hasBrother
-  AddTriple (ad312a5a-5e9f-4a0b-8b96-dc6bcdf460b8)
- Call ID: ad312a5a-5e9f-4a0b-8b96-dc6bcdf460b8
+    source: King_Charles_III
+    type: :Man
+  AssignClass (75c24e83-8609-43fc-b2b6-b52c17c9c9f9)
+ Call ID: 75c24e83-8609-43fc-b2b6-b52c17c9c9f9
   Args:
-    source: Anne
-    target: PeterPhillips
-    relation: :hasChild
-  AddTriple (d06bb41e-c0d1-4c2f-8056-d1b4217d3586)
- Call ID: d06bb41e-c0d1-4c2f-8056-d1b4217d3586
+    source: King_Charles_III
+    type: :Person
+  AddTriple (f14b747a-24e0-4a37-be9b-bc0b91380a22)
+ Call ID: f14b747a-24e0-4a37-be9b-bc0b91380a22
   Args:
-    source: Anne
-    relation: :hasChild
-    target: ZaraTindall
-  AddTriple (e6196da7-f651-4569-a410-71c428a60608)
- Call ID: e6196da7-f651-4569-a410-71c428a60608
+    relation: :isSisterOf
+    target: King_Charles_III
+    source: Anne_Princess_Royal
+  AssignClass (94847db0-aaed-433e-8840-272cae42ab67)
+ Call ID: 94847db0-aaed-433e-8840-272cae42ab67
   Args:
-    target: PeterPhillips
-    relation: :hasChild
-    source: MarkPhillips
-  AddTriple (123e1a31-e41e-4a81-a29b-8819cb25bf6b)
- Call ID: 123e1a31-e41e-4a81-a29b-8819cb25bf6b
+    type: :Man
+    source: Mark_Phillips
+  AssignClass (87f540dc-39e0-4ada-bb9b-10133c72e79f)
+ Call ID: 87f540dc-39e0-4ada-bb9b-10133c72e79f
   Args:
-    relation: :hasChild
-    target: ZaraTindall
-    source: MarkPhillips
-  AddLiteral (71ef21d4-12eb-430d-9db3-c76de2f56538)
- Call ID: 71ef21d4-12eb-430d-9db3-c76de2f56538
+    source: Mark_Phillips
+    type: :Person
+  AddTriple (3b71f5dd-172d-4888-9b9e-489eb5b03e5a)
+ Call ID: 3b71f5dd-172d-4888-9b9e-489eb5b03e5a
   Args:
-    literal_value: 1973
-    source: Anne
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AddLiteral (65b5caa8-9c64-44e1-bb0f-aca226b95ff6)
- Call ID: 65b5caa8-9c64-44e1-bb0f-aca226b95ff6
-  Args:
-    literal_value: 1992
-    source: Anne
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AddLiteral (35201f88-2959-4bee-9421-3011502677bf)
- Call ID: 35201f88-2959-4bee-9421-3011502677bf
-  Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: MarkPhillips
-    literal_value: 1992
-  AddTriple (a330961e-84c0-4a7e-9a86-5bba2669c3a3)
- Call ID: a330961e-84c0-4a7e-9a86-5bba2669c3a3
-  Args:
-    target: MarkPhillips
+    source: Anne_Princess_Royal
+    target: Mark_Phillips
     relation: :hasRelation
-    source: Anne
-  AddTriple (bb8c6213-2923-4fa8-95b2-4660eda69c61)
- Call ID: bb8c6213-2923-4fa8-95b2-4660eda69c61
+  AssignClass (634e0e6e-a64c-4355-852a-0c0b3c22e67b)
+ Call ID: 634e0e6e-a64c-4355-852a-0c0b3c22e67b
   Args:
-    target: TimothyLaurence
+    source: Peter_Phillips
+    type: :Man
+  AssignClass (657c04bf-44e9-444b-9626-0ee073d627a7)
+ Call ID: 657c04bf-44e9-444b-9626-0ee073d627a7
+  Args:
+    type: :Person
+    source: Peter_Phillips
+  AddTriple (5a772dfe-e8d8-4f8a-b638-2eba7a6a1c4f)
+ Call ID: 5a772dfe-e8d8-4f8a-b638-2eba7a6a1c4f
+  Args:
+    target: Anne_Princess_Royal
+    relation: :isChildOf
+    source: Peter_Phillips
+  AddTriple (39536a97-cf02-412e-8c93-6aa50ff04c4f)
+ Call ID: 39536a97-cf02-412e-8c93-6aa50ff04c4f
+  Args:
+    target: Mark_Phillips
+    relation: :isChildOf
+    source: Peter_Phillips
+  AssignClass (5a9debe9-9f5c-4929-9c00-889abd8c3088)
+ Call ID: 5a9debe9-9f5c-4929-9c00-889abd8c3088
+  Args:
+    type: :Woman
+    source: Zara_Tindall
+  AssignClass (998bf6f8-157c-4e29-b3ab-839d6d0f4c82)
+ Call ID: 998bf6f8-157c-4e29-b3ab-839d6d0f4c82
+  Args:
+    source: Zara_Tindall
+    type: :Person
+  AddTriple (d56b484c-cd93-46e7-acab-9c2a968d9334)
+ Call ID: d56b484c-cd93-46e7-acab-9c2a968d9334
+  Args:
+    relation: :isChildOf
+    target: Anne_Princess_Royal
+    source: Zara_Tindall
+  AddTriple (3f216418-5074-4a6b-8d09-2ba8ddd8011f)
+ Call ID: 3f216418-5074-4a6b-8d09-2ba8ddd8011f
+  Args:
+    target: Mark_Phillips
+    relation: :isChildOf
+    source: Zara_Tindall
+  AssignClass (941c69c4-a4e7-45f0-8b7b-2e261579c641)
+ Call ID: 941c69c4-a4e7-45f0-8b7b-2e261579c641
+  Args:
+    source: Timothy_Laurence
+    type: :Man
+  AssignClass (c5b37784-8034-406b-adfa-9f36d8243a1f)
+ Call ID: c5b37784-8034-406b-adfa-9f36d8243a1f
+  Args:
+    source: Timothy_Laurence
+    type: :Person
+  AddTriple (8834a178-ce36-44e9-ad67-070d73e6ac2f)
+ Call ID: 8834a178-ce36-44e9-ad67-070d73e6ac2f
+  Args:
     relation: :hasRelation
-    source: Anne
-  Finish (16a06ce5-152c-4c63-bbef-27b63e911697)
- Call ID: 16a06ce5-152c-4c63-bbef-27b63e911697
+    target: Timothy_Laurence
+    source: Anne_Princess_Royal
+  Finish (aa8d01fe-9d6b-499b-85d5-5bfa998e2847)
+ Call ID: aa8d01fe-9d6b-499b-85d5-5bfa998e2847
   Args:

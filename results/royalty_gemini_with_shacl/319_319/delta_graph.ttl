@@ -2,41 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elizabeth_The_Queen_Mother a :Person,
-        :Woman ;
-    :hasBrother data:David_Bowes-Lyon .
+data:Alfonso_Son_of_Carlos a :Man ;
+    :hasFather data:Don_Carlos .
 
-data:Claude_Bowes-Lyon_13th a :Ancestor,
-        :Man,
-        :Person .
+data:Francis_II a :Man .
 
-data:Claude_Bowes-Lyon_14th a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Claude_Bowes-Lyon_13th .
+data:Louise_Orleans a :Woman ;
+    :hasFather data:Philippe_Count_Paris .
 
-data:David_Bowes-Lyon a :Man,
-        :Person ;
-    :hasBirthYear 1902 ;
-    :hasDeathYear 1961 ;
-    :hasFather data:Claude_Bowes-Lyon_14th ;
-    :hasMarriageYear 1929 ;
-    :hasRelation data:Rachel_Pauline_Spender-Clay ;
-    :isUncleOf data:Elizabeth_II .
+data:Mercedes_Princess_Asturias a :Woman ;
+    :hasFather data:Alfonso_XII_Spain ;
+    :hasMother data:Maria_Christina_Austria ;
+    :isSisterOf data:Alfonso_XIII_Spain .
 
-data:Elizabeth_II a :Person,
+data:Alfonso_Two_Sicilies a :Ancestor,
+        :Man .
+
+data:Alfonso_XIII_Spain a :Man .
+
+data:Alfonso_XII_Spain a :Ancestor,
+        :Man .
+
+data:Don_Carlos a :Ancestor,
+        :Man ;
+    :hasBirthYear 1870 ;
+    :hasDeathYear 1949 ;
+    :hasFather data:Alfonso_Two_Sicilies ;
+    :hasMother data:Maria_Antonietta ;
+    :isBrotherOf data:Ferdinand_Two_Sicilies,
+        data:Ranieri_Two_Sicilies .
+
+data:Ferdinand_Two_Sicilies a :Man .
+
+data:Maria_Antonietta a :Ancestor,
         :Woman .
 
-data:Herbert_Henry_Spender-Clay a :Ancestor,
-        :Man,
-        :Person .
-
-data:Pauline_Spender-Clay a :Ancestor,
-        :Person,
+data:Maria_Christina_Austria a :Ancestor,
         :Woman .
 
-data:Rachel_Pauline_Spender-Clay a :Person,
-        :Woman ;
-    :hasFather data:Herbert_Henry_Spender-Clay ;
-    :hasMother data:Pauline_Spender-Clay .
+data:Philippe_Count_Paris a :Ancestor,
+        :Man .
+
+data:Ranieri_Two_Sicilies a :Man .
 

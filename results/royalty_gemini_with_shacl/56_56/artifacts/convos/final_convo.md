@@ -194,10 +194,8 @@ Andrew is a teetotaller.
 Interests
 
 Andrew is a keen golfer and has held a low single-figure handicap.
-He served as captain of the Royal and Ancient Golf Club of St Andrews between 2003 and 2004 – during the club's 250th anniversary season – was patron of several royal golf clubs, and had been elected an honorary member of many others.
 In 2004, he was criticised by the Labour and Co-operative MP Ian Davidson, who, in a letter to the National Audit Office, questioned Andrew's decision to fly to St Andrews on RAF aircraft for two golfing trips.
 Andrew resigned his honorary membership of the Royal and Ancient Golf Club of St Andrews after the Queen removed royal patronages at several golf clubs.
-His honorary membership of the Royal Dornoch Golf Club was revoked the following month.
 Charitable work
 
 Patronages
@@ -208,7 +206,6 @@ Andrew is direct and to the point, and his methods seem to work".
 Andrew was patron of Fight for Sight, a charity dedicated to research into the prevention and treatment of blindness and eye disease, and was a member of the Scout Association.
 Andrew toured Canada frequently to undertake duties related to his Canadian military role.
 Rick Peters, former commanding officer of the Royal Highland Fusiliers of Canada, stated that Andrew was "very well informed on Canadian military methods".
-He became patron of the charity Attend in 2003 and served as a member of the International Advisory Board of the Royal United Services Institute.
 On 3 September 2012, Andrew was among a team of 40 people who abseiled down The Shard, then the tallest building in Europe, to raise money for the educational charities the Outward Bound Trust and the Royal Marines Charitable Trust Fund.
 In 2014, Andrew visited Geneva, Switzerland, to promote British science at CERN's 60th anniversary celebrations.
 In 2013, it was announced that Andrew would become patron of London Metropolitan University and the University of Huddersfield.
@@ -222,7 +219,6 @@ In January 2023, it was reported that King Charles III had agreed that Andrew co
 In July 2025, the philanthropy adviser Giving Evidence published research examining the impact of Andrew's charity patronages on the incomes of the organisations he supported prior to his retirement from public duties.
 The study found that revenues at roughly half of the 35 registered charities in England for which Andrew had been the sole royal patron rose after his patronage ended, while revenues at the other half fell.
 Researchers then compared the 35 charities with others across the country and found "no material differences in revenue patterns when Andrew's patronages ceased".
-This and earlier studies supported the conclusion that having a royal patron did not significantly affect charities' incomes.
 Initiatives
 
 While touring India as part of the Queen's Diamond Jubilee in 2012, Andrew became interested in the work of Women's Interlink Foundation (WIF), a charity that helps women acquire skills to earn an income.
@@ -239,7 +235,6 @@ Special Representative for International Trade and Investment
 
 From 2001 to July 2011, Andrew worked with UK Trade & Investment, part of the Department for Business, Innovation and Skills, as the United Kingdom's Special Representative for International Trade and Investment.
 The post, previously held by Prince Edward, Duke of Kent, involved representing and promoting the UK at trade fairs and conferences around the world.
-His suitability for the role was challenged in the House of Commons by Shadow Justice Minister Chris Bryant in February 2011, during the 2011 Libyan civil war, on the grounds that he was "not only a very close friend of Saif al-Islam Gaddafi, but also ... a close friend of the convicted Libyan gun smuggler Tarek Kaituni".
 Further criticism arose after Andrew hosted a lunch for Sakher El Materi, a member of the corrupt Tunisian regime, at Buckingham Palace around the time of the Tunisian Revolution.
 Andrew also formed a friendship with Ilham Aliyev, the president of Azerbaijan, who has been criticised for corruption and human-rights abuses by Amnesty International, and visited him both during and after his tenure as the trade envoy.
 As of November 2014, Andrew had met Aliyev on 12 occasions.
@@ -252,7 +247,6 @@ Alleged comments on corruption and Kazakhstan
 
 As the United Kingdom's Special Trade Representative, Andrew travelled widely to promote British businesses.
 The United States diplomatic cables leak revealed that Tatiana Gfoeller, the United States Ambassador to Kyrgyzstan, had reported Andrew discussing bribery in Kyrgyzstan and the investigation into the Al-Yamamah arms deal.
-According to Gfoeller, he "was referencing an investigation, subsequently closed, into alleged kickbacks a senior Saudi royal had received in exchange for the multi-year, lucrative BAE Systems contract to provide equipment and training to Saudi security forces."
 The dispatch continued: "His mother's subjects seated around the table roared their approval.
 In May 2008, Andrew attended a goose-hunt in Kazakhstan with President Nursultan Nazarbayev.
 In 2010, it emerged that the president's son-in-law, Timur Kulibayev, had paid Andrew's representatives £15 million – £3 million above the asking price – via offshore companies, for Andrew's Surrey mansion, Sunninghill Park.
@@ -269,8 +263,6 @@ In May 2016, a further controversy arose when the Daily Mail alleged that Andrew
 The newspaper published an email from Andrew to Kazakh oligarch Kenges Rakishev – who had allegedly brokered the sale of Sunninghill Park – and reported that Rakishev had arranged meetings for the consortium.
 After initially stating that the email was a forgery, Buckingham Palace sought to block its publication as a privacy breach.
 The Palace denied that Andrew had acted as a "fixer" calling the article "untrue, defamatory and a breach of the editor's code of conduct".
-Former Foreign Office minister, MP Chris Bryant commented: "When I was at the Foreign Office it was very difficult to see in whose interests he  was acting.
-He doesn't exactly add lustre to the Royal diadem".
 Arms sales
 
 During his tenure as the UK's Special Representative for International Trade and Investment, Andrew faced significant controversy regarding his role in fostering arms deals with Saudi Arabia, particularly in relation to alleged bribery and corruption involving BAE Systems.
@@ -295,7 +287,6 @@ The Rowland family were among Andrew's investment advisers, and he attended the 
 In his email exchanges with Jeffrey Epstein in May 2010, Andrew described Rowland as his "trusted money man" although despite Andrew's encouragement for Epstein to invest in the Rowlands' venture he appeared to be reluctant.
 In 2021, Bloomberg News reported that a firm connected to Rowland had been paying off Andrew's debts.
 In November 2017, Andrew borrowed £250,000 from Banque Havilland, adding to an existing £1.25 million loan that had been "extended or increased 10 times" since 2015.
-Documents indicated that although the "credibility of the applicant" had been questioned, the loan was approved in an effort to "further business potential with the Royal Family".
 Eleven days later, in December 2017, £1.5 million was transferred from an account at Albany Reserves – controlled by the Rowland family – to Andrew's account at Banque Havilland, paying off the loan due in March 2018.
 In February 2026, The Daily Telegraph reported that, in February 2010, while serving as the UK's trade envoy, Andrew forwarded a confidential Treasury briefing on the Icelandic financial crisis to Jonathan Rowland, the chief executive of Banque Havilland.
 Relationship with alleged Chinese spy
@@ -305,13 +296,11 @@ Yang had been authorised by a royal aide, Dominic Hampshire, to act on Andrew's 
 Andrew ceased all contact with Yang following government concerns.
 According to a 2025 report by The Telegraph, UK intelligence agencies deemed Andrew a potential national‐security risk because of his repeated meetings and close relationship with Yang, with concerns dating back to 2021 that his vulnerability and access could be exploited.
 In 2025, it was reported that Andrew had met Cai Qi – who later became the first-ranked member of the Secretariat of the Chinese Communist Party (CCP) and de facto chief of staff to Xi Jinping – in London in 2018 and in Beijing in 2018 and 2019.
-Cai had been suspected of receiving sensitive information from British nationals Christopher Cash and Christopher Berry, though charges against them were dropped by the Crown Prosecution Service in 2025.
 Andrew's subsequent meetings with Cai were connected to the expansion and launch of his Pitch@Palace business initiative in China.
 Finances
 
 Andrew received a £249,000 annuity from Queen Elizabeth II, which was reduced by King Charles III in April 2023.
 The Sunday Times reported in July 2008 that, for "the Duke of York's public role ... he last year received £436,000 to cover his expenses".
-He also receives a Royal Navy pension of £20,000.
 In June 2019, Andrew arranged a private Buckingham Palace tour for Jay Bloom and Michael Evers, businessmen from the US cryptocurrency mining company Pegasus Group Holdings, which had agreed to pay his ex-wife up to £1.4 million for her role as a "brand ambassador".
 Bloom and Evers were driven into the Palace in Andrew's car from their Knightsbridge hotel and later attended his Pitch@Palace event at St James's Palace before dining that evening with Andrew, Ferguson, and their daughter Beatrice.
 Ferguson was promoting Pegasus's plan to use thousands of solar-powered generators to mine Bitcoin in Arizona, though the project collapsed after acquiring only 615 of the planned 16,000 units and generating just $33,779 (£25,000) in cryptocurrency.
@@ -377,7 +366,6 @@ The scrutiny of Andrew's relationship with Epstein also led to scrutiny of other
 In March 2020, Andrew hired Mark Gallagher, a crisis-management expert who had assisted high-profile clients falsely accused during Operation Midland.
 In May 2020, it was announced that Andrew would permanently resign from all public roles due to his ties to Epstein.
 In January 2022, Andrew's social-media accounts were deleted, his page on the royal family's website was rewritten in the past tense, and his military affiliations and patronages were removed to emphasise his withdrawal from public life.
-He also stopped using the style His Royal Highness (HRH), although it was not formally removed.
 In June 2022, Rachael Maskell, Labour MP for York Central, introduced a 'Removal of Titles' private members bill in the House of Commons, which would have enabled the monarch or a parliamentary committee to strip aristocratic titles from individuals deemed unworthy.
 In March 2022, Andrew made his first public appearance in months, helping the Queen walk into Westminster Abbey for a memorial service for his father, the Duke of Edinburgh.
 In June 2022, Andrew took part in the private elements of the Garter Day ceremony, including lunch and the investiture of new members, but was excluded from the public procession amid reports that his brother Charles and nephew William had intervened to prevent him appearing in view of the public.
@@ -460,7 +448,6 @@ His banner of arms, which had hung in St George's Chapel, Windsor Castle, since 
 On 30 October, Buckingham Palace announced that the King had begun a "formal process" to remove his brother's style, titles, and honours.
 Andrew's name was removed from the Roll of the Peerage the same day.
 Although this did not revoke his peerages, it meant he was no longer entitled to any place in the orders of precedence in the United Kingdom derived from them, and ceased to be addressed or referred to by any title derived from his peerages in official documents.
-His profile was taken down from the royal website the following day.
 On 3 November, letters patent were issued that removed the style "Royal Highness" and the title "prince" from Andrew, and on 1 December, a notice, backdated to 30 October, was published in The London Gazette, stating that his appointments to the Order of the Garter and Royal Victorian Order had been annulled.
 He is to use the surname "Mountbatten-Windsor", in accordance with the 1960 Privy Council declaration on the family surname by Queen Elizabeth II.
 On 13 December, the Ministry of Defence announced that the Defence Council of the United Kingdom had removed Andrew's honorary rank of vice-admiral, whereupon he reverted to the rank of commander (retired).
@@ -498,7 +485,6 @@ Arms
 Depictions
 
 Andrew was portrayed by Rufus Sewell in the 2024 Netflix drama film Scoop, which depicts the 2019 BBC Newsnight interview "Prince Andrew & the Epstein Scandal".
-He was portrayed by Michael Sheen in the 2024 three-part Amazon MGM Studios drama series A Very Royal Scandal, which also centres on the interview.
 Andrew was portrayed by Tom Byrne in the fourth season, and by James Murray in the final two seasons, of Netflix's The Crown.
 
 
@@ -506,6 +492,8 @@ Andrew was portrayed by Tom Byrne in the fourth season, and by James Murray in t
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -521,39 +509,9 @@ Andrew was portrayed by Tom Byrne in the fourth season, and by James Murray in t
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -568,6 +526,23 @@ Andrew was portrayed by Tom Byrne in the fourth season, and by James Murray in t
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -585,6 +560,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -652,29 +642,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -683,6 +665,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -695,6 +685,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -703,17 +695,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -741,6 +735,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -756,183 +834,135 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bc95eec0-0365-44bb-9809-999cc3bca2a8)
- Call ID: bc95eec0-0365-44bb-9809-999cc3bca2a8
+  AssignClass (9217fd63-5b40-4f31-be53-ece308a5a376)
+ Call ID: 9217fd63-5b40-4f31-be53-ece308a5a376
   Args:
-    type: :Man
     source: :Andrew_Mountbatten-Windsor
-  AssignClass (b99be903-1da9-468c-b39d-ded08d63b623)
- Call ID: b99be903-1da9-468c-b39d-ded08d63b623
+    type: :Man
+  AssignClass (a041a5b1-9e80-4086-9996-2e31599d5f05)
+ Call ID: a041a5b1-9e80-4086-9996-2e31599d5f05
   Args:
-    type: :Person
     source: :Andrew_Mountbatten-Windsor
-  AssignClass (31f23ad0-fbb3-407f-8482-9b69334eaaf1)
- Call ID: 31f23ad0-fbb3-407f-8482-9b69334eaaf1
+    type: :Person
+  AssignClass (cafe92c8-22dc-4a31-b567-28fb220feaf5)
+ Call ID: cafe92c8-22dc-4a31-b567-28fb220feaf5
   Args:
-    source: :Elizabeth_II
+    source: :Queen_Elizabeth_II
     type: :Woman
-  AssignClass (240a1829-687c-4de7-85c0-ad7180490768)
- Call ID: 240a1829-687c-4de7-85c0-ad7180490768
+  AssignClass (4dd05224-a4b0-40fa-b15a-affd884a3782)
+ Call ID: 4dd05224-a4b0-40fa-b15a-affd884a3782
   Args:
-    source: :Elizabeth_II
-    type: :Ancestor
-  AssignClass (8a6ea971-3514-4da0-9388-ccdbe9bc72b5)
- Call ID: 8a6ea971-3514-4da0-9388-ccdbe9bc72b5
-  Args:
+    source: :Queen_Elizabeth_II
     type: :Person
-    source: :Elizabeth_II
-  AssignClass (d19a1c24-ebf6-40b5-a2d2-1b4bacc449da)
- Call ID: d19a1c24-ebf6-40b5-a2d2-1b4bacc449da
+  AssignClass (8730a8f2-dc1c-42e0-b6fe-3611330b608c)
+ Call ID: 8730a8f2-dc1c-42e0-b6fe-3611330b608c
   Args:
+    source: :Prince_Philip
     type: :Man
-    source: :Philip_Duke_of_Edinburgh
-  AssignClass (569b43e7-97f7-4b74-b02c-ca6d0e315cd1)
- Call ID: 569b43e7-97f7-4b74-b02c-ca6d0e315cd1
+  AssignClass (f955f267-589c-4ad5-8d56-06d96e7d0be0)
+ Call ID: f955f267-589c-4ad5-8d56-06d96e7d0be0
   Args:
-    type: :Ancestor
-    source: :Philip_Duke_of_Edinburgh
-  AssignClass (a348a6ab-7d4e-45bc-b667-3c1688d5012f)
- Call ID: a348a6ab-7d4e-45bc-b667-3c1688d5012f
-  Args:
+    source: :Prince_Philip
     type: :Person
-    source: :Philip_Duke_of_Edinburgh
-  AssignClass (1ca5dee7-147c-4daa-bf42-cce1072a796f)
- Call ID: 1ca5dee7-147c-4daa-bf42-cce1072a796f
+  AssignClass (600baa7c-999d-482c-a10b-23763b5bedeb)
+ Call ID: 600baa7c-999d-482c-a10b-23763b5bedeb
   Args:
-    source: :Charles_III
+    source: :King_Charles_III
     type: :Man
-  AssignClass (a6323690-f762-4f0b-ae46-c4e0d7cc6e36)
- Call ID: a6323690-f762-4f0b-ae46-c4e0d7cc6e36
+  AssignClass (7ea40967-4bd9-4a0c-a3b6-cbad58f7d567)
+ Call ID: 7ea40967-4bd9-4a0c-a3b6-cbad58f7d567
   Args:
+    source: :King_Charles_III
     type: :Person
-    source: :Charles_III
-  AssignClass (819e140f-f3f0-40f6-b704-a17d2d11a724)
- Call ID: 819e140f-f3f0-40f6-b704-a17d2d11a724
+  AssignClass (8f819f53-8df8-4918-93eb-d6d8ff21a87e)
+ Call ID: 8f819f53-8df8-4918-93eb-d6d8ff21a87e
   Args:
+    source: :Sarah_Ferguson
     type: :Woman
-    source: :Sarah_Ferguson
-  AssignClass (988e684c-26c1-48f3-bdff-e4abc1ca1c6f)
- Call ID: 988e684c-26c1-48f3-bdff-e4abc1ca1c6f
+  AssignClass (baaab635-b32e-4903-8f86-3546a210fb1f)
+ Call ID: baaab635-b32e-4903-8f86-3546a210fb1f
   Args:
-    type: :Person
     source: :Sarah_Ferguson
-  AssignClass (aea4d00a-4476-44d5-9e22-2f0caa8c2dfb)
- Call ID: aea4d00a-4476-44d5-9e22-2f0caa8c2dfb
+    type: :Person
+  AssignClass (f449bb86-5f04-452c-9a22-3ff8dc66014a)
+ Call ID: f449bb86-5f04-452c-9a22-3ff8dc66014a
   Args:
     source: :Princess_Beatrice
     type: :Woman
-  AssignClass (df1f1c75-a5d1-4570-8a09-a2766c6b4373)
- Call ID: df1f1c75-a5d1-4570-8a09-a2766c6b4373
+  AssignClass (ec30865b-a7f3-408b-bc15-7066aad04cb0)
+ Call ID: ec30865b-a7f3-408b-bc15-7066aad04cb0
   Args:
-    type: :Person
     source: :Princess_Beatrice
-  AssignClass (ee70f0c5-14b2-476f-88c5-230f5f952406)
- Call ID: ee70f0c5-14b2-476f-88c5-230f5f952406
-  Args:
-    type: :Woman
-    source: :Princess_Eugenie
-  AssignClass (5d77bb27-e572-4aa8-b598-5c214e8f6e9a)
- Call ID: 5d77bb27-e572-4aa8-b598-5c214e8f6e9a
-  Args:
     type: :Person
+  AssignClass (f509e3c2-1d19-42c4-837f-cd8a4123f596)
+ Call ID: f509e3c2-1d19-42c4-837f-cd8a4123f596
+  Args:
     source: :Princess_Eugenie
-  AddLiteral (26f2d51d-533b-4962-a920-a72d3e1a7fb5)
- Call ID: 26f2d51d-533b-4962-a920-a72d3e1a7fb5
+    type: :Woman
+  AssignClass (57a5e051-2903-4b3b-b8b2-e5a3c6ef205e)
+ Call ID: 57a5e051-2903-4b3b-b8b2-e5a3c6ef205e
   Args:
-    relation: :hasBirthYear
-    source: :Andrew_Mountbatten-Windsor
-    literal_value: 1960
-    literal_type: xsd:integer
-  AddTriple (8404adc4-cae3-4e97-9b73-1960db095d7a)
- Call ID: 8404adc4-cae3-4e97-9b73-1960db095d7a
+    source: :Princess_Eugenie
+    type: :Person
+  AddTriple (f0350816-3ced-4a5b-a2af-fa83924ef8b1)
+ Call ID: f0350816-3ced-4a5b-a2af-fa83924ef8b1
   Args:
-    target: :Philip_Duke_of_Edinburgh
     relation: :hasFather
     source: :Andrew_Mountbatten-Windsor
-  AddTriple (3f19c8c6-1a1a-4785-b977-a72efe2c3514)
- Call ID: 3f19c8c6-1a1a-4785-b977-a72efe2c3514
+    target: :Prince_Philip
+  AddTriple (bb6bbd00-501a-464d-8d0d-39f2093b0494)
+ Call ID: bb6bbd00-501a-464d-8d0d-39f2093b0494
   Args:
+    target: :Queen_Elizabeth_II
+    source: :Andrew_Mountbatten-Windsor
     relation: :hasMother
-    target: :Elizabeth_II
-    source: :Andrew_Mountbatten-Windsor
-  AddTriple (537d3ceb-621e-46d2-88d1-59b618dce701)
- Call ID: 537d3ceb-621e-46d2-88d1-59b618dce701
+  AddTriple (57a43701-db28-4225-9181-8ba836eeca56)
+ Call ID: 57a43701-db28-4225-9181-8ba836eeca56
   Args:
-    target: :Charles_III
+    source: :Andrew_Mountbatten-Windsor
     relation: :isBrotherOf
-    source: :Andrew_Mountbatten-Windsor
-  AddLiteral (5e95b192-7fe3-42c4-85b1-a02b63a6c44b)
- Call ID: 5e95b192-7fe3-42c4-85b1-a02b63a6c44b
+    target: :King_Charles_III
+  AddLiteral (2323fb53-9991-4311-960b-cae7f65979fb)
+ Call ID: 2323fb53-9991-4311-960b-cae7f65979fb
   Args:
+    source: :Andrew_Mountbatten-Windsor
+    literal_value: 1960
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddTriple (29620902-f2c7-4f2a-b173-5bd9735b437e)
+ Call ID: 29620902-f2c7-4f2a-b173-5bd9735b437e
+  Args:
+    source: :Princess_Beatrice
+    relation: :hasFather
+    target: :Andrew_Mountbatten-Windsor
+  AddTriple (9794fa26-30f0-400e-8124-cb816bf99ecd)
+ Call ID: 9794fa26-30f0-400e-8124-cb816bf99ecd
+  Args:
+    source: :Princess_Beatrice
+    relation: :hasMother
+    target: :Sarah_Ferguson
+  AddTriple (eff0bcc5-df4f-4f0f-ab3d-45f6f75e4ca2)
+ Call ID: eff0bcc5-df4f-4f0f-ab3d-45f6f75e4ca2
+  Args:
+    source: :Princess_Eugenie
+    relation: :hasFather
+    target: :Andrew_Mountbatten-Windsor
+  AddTriple (9f4d94d4-7839-4d6e-a9d6-eeab3cfeebc1)
+ Call ID: 9f4d94d4-7839-4d6e-a9d6-eeab3cfeebc1
+  Args:
+    source: :Princess_Eugenie
+    relation: :hasMother
+    target: :Sarah_Ferguson
+  AddLiteral (4486c165-32a2-4cc6-a2fb-af05dfe67df1)
+ Call ID: 4486c165-32a2-4cc6-a2fb-af05dfe67df1
+  Args:
+    literal_value: 1986
     source: :Andrew_Mountbatten-Windsor
     relation: :hasMarriageYear
     literal_type: xsd:integer
-    literal_value: 1986
-  AddTriple (6451040d-7fee-4763-86ff-d19280a0bee8)
- Call ID: 6451040d-7fee-4763-86ff-d19280a0bee8
+  Finish (e1ebd02b-c166-4e0a-af02-0a6cceb438d0)
+ Call ID: e1ebd02b-c166-4e0a-af02-0a6cceb438d0
   Args:
-    target: :Sarah_Ferguson
-    relation: :hasRelation
-    source: :Andrew_Mountbatten-Windsor
-  AddTriple (717dbc22-b88f-4f5c-8aeb-793aa24a83b1)
- Call ID: 717dbc22-b88f-4f5c-8aeb-793aa24a83b1
-  Args:
-    target: :Princess_Beatrice
-    relation: :hasDaughter
-    source: :Andrew_Mountbatten-Windsor
-  AddTriple (271e2a90-9d34-4456-a292-69be50cc5f57)
- Call ID: 271e2a90-9d34-4456-a292-69be50cc5f57
-  Args:
-    relation: :hasDaughter
-    target: :Princess_Eugenie
-    source: :Andrew_Mountbatten-Windsor
-  AddTriple (4828cba7-dcb9-4847-b294-761b2e0a0070)
- Call ID: 4828cba7-dcb9-4847-b294-761b2e0a0070
-  Args:
-    relation: :isFatherOf
-    target: :Princess_Beatrice
-    source: :Sarah_Ferguson
-  AddTriple (ff284413-6b07-4fd9-b5a4-d6ddb01e5275)
- Call ID: ff284413-6b07-4fd9-b5a4-d6ddb01e5275
-  Args:
-    source: :Sarah_Ferguson
-    relation: :isMotherOf
-    target: :Princess_Beatrice
-  AddTriple (929a9ebc-66ac-4b73-b910-9d478b77872a)
- Call ID: 929a9ebc-66ac-4b73-b910-9d478b77872a
-  Args:
-    relation: :isFatherOf
-    target: :Princess_Eugenie
-    source: :Sarah_Ferguson
-  AddTriple (d22f05e6-f175-49cf-8713-cd91fff4459e)
- Call ID: d22f05e6-f175-49cf-8713-cd91fff4459e
-  Args:
-    source: :Sarah_Ferguson
-    relation: :isMotherOf
-    target: :Princess_Eugenie
-  Finish (5043c0ec-40dd-4a59-8ac0-3d697884defd)
- Call ID: 5043c0ec-40dd-4a59-8ac0-3d697884defd
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1029,39 +1059,34 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+  data:Princess_Beatrice a :Person,
+          :Woman ;
+      :hasFather data:Andrew_Mountbatten-Windsor ;
+      :hasMother data:Sarah_Ferguson .
+
+  data:Princess_Eugenie a :Person,
+          :Woman ;
+      :hasFather data:Andrew_Mountbatten-Windsor ;
+      :hasMother data:Sarah_Ferguson .
+
+  data:King_Charles_III a :Man,
+          :Person .
+
+  data:Prince_Philip a :Man,
+          :Person .
+
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
+
   data:Andrew_Mountbatten-Windsor a :Man,
           :Person ;
       :hasBirthYear 1960 ;
-      :hasDaughter data:Princess_Beatrice,
-          data:Princess_Eugenie ;
-      :hasFather data:Philip_Duke_of_Edinburgh ;
+      :hasFather data:Prince_Philip ;
       :hasMarriageYear 1986 ;
-      :hasMother data:Elizabeth_II ;
-      :hasRelation data:Sarah_Ferguson ;
-      :isBrotherOf data:Charles_III .
-
-  data:Charles_III a :Man,
-          :Person .
-
-  data:Elizabeth_II a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Philip_Duke_of_Edinburgh a :Ancestor,
-          :Man,
-          :Person .
+      :hasMother data:Queen_Elizabeth_II ;
+      :isBrotherOf data:King_Charles_III .
 
   data:Sarah_Ferguson a :Person,
-          :Woman ;
-      :isFatherOf data:Princess_Beatrice,
-          data:Princess_Eugenie ;
-      :isMotherOf data:Princess_Beatrice,
-          data:Princess_Eugenie .
-
-  data:Princess_Beatrice a :Person,
-          :Woman .
-
-  data:Princess_Eugenie a :Person,
           :Woman .
 
 
@@ -1074,38 +1099,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (c95a24d5-87fe-4551-95fc-fccb78c45de6)
- Call ID: c95a24d5-87fe-4551-95fc-fccb78c45de6
+  ValidateShacl (fe2dca40-9fe4-478e-8b91-5987de679685)
+ Call ID: fe2dca40-9fe4-478e-8b91-5987de679685
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:3
+Total violations:18
 Violations:
 
   Violation [1]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Sarah_Ferguson' is used as a subject for the property ':isMotherOf', but it lacks the required ':Ancestor' class assignment.
+      The entity Prince_Philip does not have the required class :Ancestor assigned, which is mandatory for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Sarah_Ferguson'.
+      AssignClass(Prince_Philip, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Sarah_Ferguson' is used as a subject for the property ':isFatherOf', but it is currently assigned the ':Woman' class, which is inconsistent with the requirement that subjects of ':isFatherOf' must be an ':Ancestor' and a ':Man'.
+      The entity Queen_Elizabeth_II does not have the required class :Ancestor assigned, which is mandatory for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      Use 'UnassignClass' to remove ':Woman' from 'Sarah_Ferguson', then use 'AssignClass' to add ':Man' and ':Ancestor' to 'Sarah_Ferguson'.
+      AssignClass(Queen_Elizabeth_II, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Sarah_Ferguson' fails the requirement for the ':isFatherOf' relationship because it does not currently possess the mandatory ':Ancestor' class.
+      The entity Andrew_Mountbatten-Windsor does not have the required class :Ancestor assigned, which is mandatory for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Sarah_Ferguson'.
+      AssignClass(Andrew_Mountbatten-Windsor, :Ancestor)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Andrew_Mountbatten-Windsor does not have the required class :Ancestor assigned, which is mandatory for the hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Andrew_Mountbatten-Windsor, :Ancestor)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Prince_Philip does not have the required class :Ancestor assigned, which is mandatory for the hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Philip, :Ancestor)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Sarah_Ferguson does not have the required class :Ancestor assigned, which is mandatory for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sarah_Ferguson, :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Sarah_Ferguson does not have the required class :Ancestor assigned, which is mandatory for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sarah_Ferguson, :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Queen_Elizabeth_II does not have the required class :Ancestor assigned, which is mandatory for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Elizabeth_II, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Andrew_Mountbatten-Windsor does not have the required class :Ancestor assigned, which is mandatory for the hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Andrew_Mountbatten-Windsor, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Andrew_Mountbatten-Windsor does not have the required class :Ancestor assigned, which is mandatory for the hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Andrew_Mountbatten-Windsor, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Prince_Philip does not have the required class :Ancestor assigned, which is mandatory for the hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Philip, :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Sarah_Ferguson does not have the required class :Ancestor assigned, which is mandatory for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sarah_Ferguson, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Sarah_Ferguson does not have the required class :Ancestor assigned, which is mandatory for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sarah_Ferguson, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Queen_Elizabeth_II does not have the required class :Ancestor assigned, which is mandatory for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Elizabeth_II, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Andrew_Mountbatten-Windsor does not have the required class :Ancestor assigned, which is mandatory for the hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Andrew_Mountbatten-Windsor, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Andrew_Mountbatten-Windsor does not have the required class :Ancestor assigned, which is mandatory for the hasFather relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Andrew_Mountbatten-Windsor, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Sarah_Ferguson does not have the required class :Ancestor assigned, which is mandatory for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sarah_Ferguson, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Sarah_Ferguson does not have the required class :Ancestor assigned, which is mandatory for the hasMother relationship.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sarah_Ferguson, :Ancestor)
 
 
 
@@ -1114,26 +1259,33 @@ Violations:
 
 []
 Tool Calls:
-  RemoveTriple (46ab309d-92e8-4800-90ba-e64d65e904f7)
- Call ID: 46ab309d-92e8-4800-90ba-e64d65e904f7
+  AssignClass (b0851148-4e00-4f0b-850e-da048b76d6c0)
+ Call ID: b0851148-4e00-4f0b-850e-da048b76d6c0
   Args:
-    source: :Sarah_Ferguson
-    target: :Princess_Beatrice
-    relation: :isFatherOf
-  RemoveTriple (9a93847f-f159-4591-96c2-0b63df297893)
- Call ID: 9a93847f-f159-4591-96c2-0b63df297893
+    source: :Prince_Philip
+    type: :Ancestor
+  AssignClass (377e19e0-563f-42ad-b2d7-8703c8b49a36)
+ Call ID: 377e19e0-563f-42ad-b2d7-8703c8b49a36
   Args:
-    target: :Princess_Eugenie
-    relation: :isFatherOf
-    source: :Sarah_Ferguson
-  AssignClass (7e57012c-d0d9-4557-b384-e121d25e98ae)
- Call ID: 7e57012c-d0d9-4557-b384-e121d25e98ae
+    type: :Ancestor
+    source: :Queen_Elizabeth_II
+  AssignClass (ca20d804-92de-49c7-9210-4c6dae39a2ce)
+ Call ID: ca20d804-92de-49c7-9210-4c6dae39a2ce
+  Args:
+    source: :Andrew_Mountbatten-Windsor
+    type: :Ancestor
+  AssignClass (7388e50d-50fb-406f-8e1b-31f9dd8e5a53)
+ Call ID: 7388e50d-50fb-406f-8e1b-31f9dd8e5a53
   Args:
     type: :Ancestor
     source: :Sarah_Ferguson
-  ValidateShacl (ca4a7256-f7e3-4f6a-b135-f36f8fbbdf9b)
- Call ID: ca4a7256-f7e3-4f6a-b135-f36f8fbbdf9b
+  ValidateShacl (abdeb37a-be75-4cc4-a5d7-5153207286e4)
+ Call ID: abdeb37a-be75-4cc4-a5d7-5153207286e4
   Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1150,38 +1302,38 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Andrew_Mountbatten-Windsor a :Man,
-          :Person ;
-      :hasBirthYear 1960 ;
-      :hasDaughter data:Princess_Beatrice,
-          data:Princess_Eugenie ;
-      :hasFather data:Philip_Duke_of_Edinburgh ;
-      :hasMarriageYear 1986 ;
-      :hasMother data:Elizabeth_II ;
-      :hasRelation data:Sarah_Ferguson ;
-      :isBrotherOf data:Charles_III .
+  data:Princess_Beatrice a :Person,
+          :Woman ;
+      :hasFather data:Andrew_Mountbatten-Windsor ;
+      :hasMother data:Sarah_Ferguson .
 
-  data:Charles_III a :Man,
+  data:Princess_Eugenie a :Person,
+          :Woman ;
+      :hasFather data:Andrew_Mountbatten-Windsor ;
+      :hasMother data:Sarah_Ferguson .
+
+  data:King_Charles_III a :Man,
           :Person .
 
-  data:Elizabeth_II a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Philip_Duke_of_Edinburgh a :Ancestor,
+  data:Prince_Philip a :Ancestor,
           :Man,
           :Person .
 
-  data:Sarah_Ferguson a :Ancestor,
+  data:Queen_Elizabeth_II a :Ancestor,
           :Person,
-          :Woman ;
-      :isMotherOf data:Princess_Beatrice,
-          data:Princess_Eugenie .
-
-  data:Princess_Beatrice a :Person,
           :Woman .
 
-  data:Princess_Eugenie a :Person,
+  data:Andrew_Mountbatten-Windsor a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1960 ;
+      :hasFather data:Prince_Philip ;
+      :hasMarriageYear 1986 ;
+      :hasMother data:Queen_Elizabeth_II ;
+      :isBrotherOf data:King_Charles_III .
+
+  data:Sarah_Ferguson a :Ancestor,
+          :Person,
           :Woman .
 
 
@@ -1194,6 +1346,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (30d7b529-0f52-4202-ab1d-5cab11972175)
- Call ID: 30d7b529-0f52-4202-ab1d-5cab11972175
+  Finish (de76e5f9-6ece-4543-a3a1-6d3417279f6a)
+ Call ID: de76e5f9-6ece-4543-a3a1-6d3417279f6a
   Args:

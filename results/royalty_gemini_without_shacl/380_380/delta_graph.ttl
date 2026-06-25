@@ -2,25 +2,26 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Waldemar_of_Prussia a :Man,
+data:Archie_Harrison_Mountbatten-Windsor a :Man,
         :Person ;
-    :hasBirthYear 1889 ;
-    :hasBrother data:Henry_youngest_brother_of_Waldemar ;
-    :hasDeathYear 1945 ;
-    :hasFather data:Henry_of_Prussia ;
-    :hasMarriageYear 1919 ;
-    :hasMother data:Irene_of_Hesse_and_by_Rhine ;
-    :hasRelation data:Calixta_of_Lippe .
+    :hasBirthYear 2019 ;
+    :hasFather data:Prince_Harry_Duke_of_Sussex ;
+    :hasMother data:Meghan_Duchess_of_Sussex ;
+    :knownAs "Prince Archie of Sussex"^^xsd:string .
 
-data:Calixta_of_Lippe a :Person,
-        :Woman .
+data:King_Charles_III a :Man,
+        :Person ;
+    :isFatherOf data:Prince_Harry_Duke_of_Sussex .
 
-data:Henry_of_Prussia a :Man,
+data:Prince_Philip a :Man,
         :Person .
 
-data:Henry_youngest_brother_of_Waldemar a :Man,
-        :Person .
-
-data:Irene_of_Hesse_and_by_Rhine a :Person,
+data:Queen_Elizabeth_II a :Person,
         :Woman .
+
+data:Meghan_Duchess_of_Sussex a :Person,
+        :Woman .
+
+data:Prince_Harry_Duke_of_Sussex a :Man,
+        :Person .
 

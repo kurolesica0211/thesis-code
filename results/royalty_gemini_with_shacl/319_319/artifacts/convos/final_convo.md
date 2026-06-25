@@ -85,33 +85,38 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Sir David Bowes-Lyon (2 May 1902 – 13 September 1961) was a British aristocrat who was the younger brother of Queen Elizabeth the Queen Mother and uncle to Queen Elizabeth II.
-Early life
-
-David Bowes-Lyon was born on 2 May 1902.
-He was the tenth and youngest child, and the sixth son, of Claude Bowes-Lyon, 14th
-His paternal grandparents were Claude Bowes-Lyon, 13th
-Career
-
-During World War II, Bowes-Lyon was a member of the secret propaganda department Political Warfare Executive.
-On 15 December 1948, Bowes-Lyon attended the christening of his great-nephew Prince Charles.
-He was one of eight sponsors of the prince, along with King George VI, King Haakon VII of Norway, Queen Mary, Princess Margaret, the Dowager Marchioness of Milford Haven, Patricia, Lady Brabourne, and Prince George of Greece and Denmark.
-As a keen gardener, Bowes-Lyon was awarded the Victoria Medal of Honour in 1953 and served as president of the Royal Horticultural Society from 1953 to 1961.
-Bowes-Lyon was made a Knight Commander of the Royal Victorian Order in the 1959 Birthday Honours.
-Personal life
-
-On 6 February 1929, David Bowes-Lyon married Rachel Pauline Spender-Clay (1907–1996), younger daughter of Herbert Henry Spender-Clay and Pauline Spender-Clay.
-Together, they had two children:
+Don Carlos, Prince of Bourbon-Two Sicilies, Infante of Spain (Full Italian name: Carlo Maria Francesco d'Assisi Pasquale Ferdinando Antonio di Padova Francesco de Paola Alfonso Andrea Avelino Tancredi, Principe di Borbone delle Due Sicilie, Infante di Spagna; 10 November 1870 – 11 November 1949) was the son of Prince Alfonso of the Two Sicilies, Count of Caserta and Princess Maria Antonietta of Bourbon-Two Sicilies, and nephew of the last King of the Two Sicilies, Francis II.
 
 
-Bowes-Lyon died at his sister Elizabeth's home, Birkhall, on the Balmoral estate, of a heart attack after suffering from hemiplegia on 13 September 1961, aged 59.
-The Queen Mother discovered him dead in bed.
+Marriages and children
+
+On 14 February 1901 in Madrid, Carlos married Mercedes, Princess of Asturias, elder daughter of the late King Alfonso XII of Spain and of his wife Archduchess Maria Christina of Austria.
+Mercedes was the elder sister and heir presumptive to King Alfonso XIII of Spain, an unmarried teenager.
+A week before the wedding, on 7 February, Carlos was given the title of Infante of Spain.
+In 1907, Carlos married secondly to Princess Louise of Orléans, daughter of Prince Philippe, Count of Paris.
+The couple had four children:
+
+
+Prince Carlos's descendants include King Felipe VI of Spain, Prince Pedro, Duke of Calabria, Prince Pedro Carlos of Orléans-Braganza, and Philip, Hereditary Prince of Yugoslavia, among others.
+Military service
+
+Carlos served in the Spanish Army in the Spanish–American War and received the Military Order of Maria Cristina.
+Two Sicilies succession
+
+In 1894, Carlos's father Alfonso became the head of the House of Bourbon-Two Sicilies.
+On marrying his first wife, Carlos renounced on 14 December 1900 his future rights of succession to the non-existent Crown of Two Sicilies in an official document, known as the Act of Cannes, subject to a requirement in the Treaty of Naples of 1759 and the Pragmatic Decree of 6 October 1759 that the Crown of Spain should not be combined with the "Italian Sovereignty".
+In 1960, Carlos' elder brother Ferdinand died without male issue, and a dispute arose between Carlos' son Alfonso and Carlos' younger brother Ranieri on the headship of the house, this with competing claims: by the law of primogeniture, Carlos' son Alfonso was considered the heir, but Ranieri claimed that Carlos had renounced his rights and those of his descendants according to the Act of Cannes.
+Alfonso refuted that claim by stating that it was only a promise from his father to relinquish this right if the crown of the Kingdom of the Two Sicilies were to be united with the Spanish Crown.
+Since this did not happen, the act had no effect and Carlos' son Alfonso reclaimed his rights.
+Alfonso's claim was recognised by the heads of the different lines of the House of Bourbon, although not by the head of the Orleans family, and in 1983 the Spanish Council of State, following an investigation by the Ministries of Justice and Foreign Affairs, the Royal Academy of Jurisprudence and Legislation and the Institute Salazar y Castro concluded unanimously in favour of Infante Don Alfonso's only son, Prince and Infante Don Carlos, a position shared by the Spanish Royal House.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -127,39 +132,9 @@ The Queen Mother discovered him dead in bed.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -174,6 +149,23 @@ The Queen Mother discovered him dead in bed.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -191,6 +183,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,29 +265,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -289,6 +288,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -301,6 +308,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -309,17 +318,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -347,6 +358,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -362,160 +457,142 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (edc09e47-d2a4-4592-83d6-14c0b46d5568)
- Call ID: edc09e47-d2a4-4592-83d6-14c0b46d5568
+  AssignClass (e11e51a9-bcbd-49d9-b2e3-d75072ec5e2c)
+ Call ID: e11e51a9-bcbd-49d9-b2e3-d75072ec5e2c
   Args:
-    source: :David_Bowes-Lyon
     type: :Man
-  AssignClass (1bdfa347-23fc-4921-8904-18c9ef59c37a)
- Call ID: 1bdfa347-23fc-4921-8904-18c9ef59c37a
+    source: Don_Carlos
+  AssignClass (81a6a84e-3057-4744-af90-a0601ada7fa3)
+ Call ID: 81a6a84e-3057-4744-af90-a0601ada7fa3
   Args:
-    source: :David_Bowes-Lyon
-    type: :Person
-  AddLiteral (1efdecd3-452e-439f-882a-3784db080c95)
- Call ID: 1efdecd3-452e-439f-882a-3784db080c95
+    source: Alfonso_Two_Sicilies
+    type: :Man
+  AssignClass (fa617859-7dd1-4d52-8f05-5ddcf3274e5a)
+ Call ID: fa617859-7dd1-4d52-8f05-5ddcf3274e5a
   Args:
-    literal_value: 1902
-    literal_type: xsd:integer
-    source: :David_Bowes-Lyon
+    type: :Woman
+    source: Maria_Antonietta
+  AssignClass (266fd889-483b-43ef-9bba-beadf4fe1be6)
+ Call ID: 266fd889-483b-43ef-9bba-beadf4fe1be6
+  Args:
+    source: Francis_II
+    type: :Man
+  AssignClass (062b1d11-19f4-44cd-b1fd-84b88beac442)
+ Call ID: 062b1d11-19f4-44cd-b1fd-84b88beac442
+  Args:
+    type: :Woman
+    source: Mercedes_Princess_Asturias
+  AssignClass (f43967ce-d9ee-4ab2-9bc4-9889812f36fc)
+ Call ID: f43967ce-d9ee-4ab2-9bc4-9889812f36fc
+  Args:
+    type: :Man
+    source: Alfonso_XII_Spain
+  AssignClass (2fa82440-d329-43df-bf55-f0d75dd544e7)
+ Call ID: 2fa82440-d329-43df-bf55-f0d75dd544e7
+  Args:
+    source: Maria_Christina_Austria
+    type: :Woman
+  AssignClass (9adad878-c830-4d91-877b-728adb20540b)
+ Call ID: 9adad878-c830-4d91-877b-728adb20540b
+  Args:
+    source: Alfonso_XIII_Spain
+    type: :Man
+  AssignClass (b034ba57-0a55-4850-b4c3-bd0bd82d63a6)
+ Call ID: b034ba57-0a55-4850-b4c3-bd0bd82d63a6
+  Args:
+    source: Louise_Orleans
+    type: :Woman
+  AssignClass (daeb136c-10a2-4970-baed-f484bfeac16d)
+ Call ID: daeb136c-10a2-4970-baed-f484bfeac16d
+  Args:
+    type: :Man
+    source: Philippe_Count_Paris
+  AssignClass (4ddfceeb-1fe4-441a-8a73-cd9c25064fb4)
+ Call ID: 4ddfceeb-1fe4-441a-8a73-cd9c25064fb4
+  Args:
+    source: Ferdinand_Two_Sicilies
+    type: :Man
+  AssignClass (d00b3021-9ffd-433f-8723-1366b5bbd0f5)
+ Call ID: d00b3021-9ffd-433f-8723-1366b5bbd0f5
+  Args:
+    source: Alfonso_Son_of_Carlos
+    type: :Man
+  AssignClass (6d4bf654-9436-4f76-9837-662e49e69ca4)
+ Call ID: 6d4bf654-9436-4f76-9837-662e49e69ca4
+  Args:
+    type: :Man
+    source: Ranieri_Two_Sicilies
+  AddLiteral (4b22d18e-2f0e-4f94-b968-453f8d3a8191)
+ Call ID: 4b22d18e-2f0e-4f94-b968-453f8d3a8191
+  Args:
+    literal_value: 1870
+    source: Don_Carlos
     relation: :hasBirthYear
-  AddLiteral (4432f07c-7650-4ab4-9e65-665a3d196de7)
- Call ID: 4432f07c-7650-4ab4-9e65-665a3d196de7
+    literal_type: xsd:integer
+  AddLiteral (f8738bf8-d004-46d9-a4ed-c8e2113da2d1)
+ Call ID: f8738bf8-d004-46d9-a4ed-c8e2113da2d1
   Args:
-    source: :David_Bowes-Lyon
+    literal_type: xsd:integer
+    source: Don_Carlos
     relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1961
-  AssignClass (4bed68f8-feaa-4fae-ba3f-6793c15184c0)
- Call ID: 4bed68f8-feaa-4fae-ba3f-6793c15184c0
+    literal_value: 1949
+  AddTriple (b808f1fa-f45a-4720-b942-6571f2618494)
+ Call ID: b808f1fa-f45a-4720-b942-6571f2618494
   Args:
-    type: :Woman
-    source: :Elizabeth_The_Queen_Mother
-  AssignClass (4c4d174a-acef-42dc-9b7d-f68b455f7681)
- Call ID: 4c4d174a-acef-42dc-9b7d-f68b455f7681
-  Args:
-    source: :Elizabeth_The_Queen_Mother
-    type: :Person
-  AddTriple (03e2ec1a-f0ee-4ca7-a1eb-df3691c8b3cf)
- Call ID: 03e2ec1a-f0ee-4ca7-a1eb-df3691c8b3cf
-  Args:
-    relation: :hasBrother
-    target: :David_Bowes-Lyon
-    source: :Elizabeth_The_Queen_Mother
-  AssignClass (1932c231-d573-4f22-b4a4-b49168feceb5)
- Call ID: 1932c231-d573-4f22-b4a4-b49168feceb5
-  Args:
-    source: :Elizabeth_II
-    type: :Woman
-  AssignClass (91e04840-19d0-432b-93b2-645967daa15d)
- Call ID: 91e04840-19d0-432b-93b2-645967daa15d
-  Args:
-    type: :Person
-    source: :Elizabeth_II
-  AddTriple (18f81850-8917-469f-a096-cb4ff4725f7f)
- Call ID: 18f81850-8917-469f-a096-cb4ff4725f7f
-  Args:
-    relation: :isUncleOf
-    target: :Elizabeth_II
-    source: :David_Bowes-Lyon
-  AssignClass (ead302c1-6eb5-4cc4-94d5-5671c04beb29)
- Call ID: ead302c1-6eb5-4cc4-94d5-5671c04beb29
-  Args:
-    source: :Claude_Bowes-Lyon_14th
-    type: :Man
-  AssignClass (e9ffa529-d48a-46df-ade7-f6436edf811b)
- Call ID: e9ffa529-d48a-46df-ade7-f6436edf811b
-  Args:
-    type: :Person
-    source: :Claude_Bowes-Lyon_14th
-  AddTriple (6d491350-ebd1-477c-a64e-c8c918a60808)
- Call ID: 6d491350-ebd1-477c-a64e-c8c918a60808
-  Args:
-    source: :David_Bowes-Lyon
+    source: Don_Carlos
     relation: :hasFather
-    target: :Claude_Bowes-Lyon_14th
-  AssignClass (78b30867-2257-4f5c-a34e-86fbcb9952cb)
- Call ID: 78b30867-2257-4f5c-a34e-86fbcb9952cb
+    target: Alfonso_Two_Sicilies
+  AddTriple (8b4f1b94-645e-4c59-bc2d-f2be7830fe75)
+ Call ID: 8b4f1b94-645e-4c59-bc2d-f2be7830fe75
   Args:
-    type: :Man
-    source: :Claude_Bowes-Lyon_13th
-  AssignClass (13c9a470-0dbc-4a61-a29f-69d909f3079e)
- Call ID: 13c9a470-0dbc-4a61-a29f-69d909f3079e
-  Args:
-    source: :Claude_Bowes-Lyon_13th
-    type: :Person
-  AddTriple (286b1267-9975-40f6-a8b8-4e65ed17e7fe)
- Call ID: 286b1267-9975-40f6-a8b8-4e65ed17e7fe
-  Args:
-    source: :Claude_Bowes-Lyon_14th
-    target: :Claude_Bowes-Lyon_13th
-    relation: :hasFather
-  AssignClass (1041627f-c01a-4489-8cae-f8469679dc22)
- Call ID: 1041627f-c01a-4489-8cae-f8469679dc22
-  Args:
-    source: :Rachel_Pauline_Spender-Clay
-    type: :Woman
-  AssignClass (3024b928-f7fd-4382-bbcc-96e30f8d19fb)
- Call ID: 3024b928-f7fd-4382-bbcc-96e30f8d19fb
-  Args:
-    source: :Rachel_Pauline_Spender-Clay
-    type: :Person
-  AddLiteral (ad57dc07-9d4d-4698-8f1b-c41861357b78)
- Call ID: ad57dc07-9d4d-4698-8f1b-c41861357b78
-  Args:
-    source: :David_Bowes-Lyon
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 1929
-  AddTriple (2d06743e-f4ba-4626-a10a-a55f4da2d6df)
- Call ID: 2d06743e-f4ba-4626-a10a-a55f4da2d6df
-  Args:
-    source: :David_Bowes-Lyon
-    relation: :hasRelation
-    target: :Rachel_Pauline_Spender-Clay
-  AssignClass (f6bd98b1-6c70-4827-a3ac-b2cabbb300c5)
- Call ID: f6bd98b1-6c70-4827-a3ac-b2cabbb300c5
-  Args:
-    type: :Man
-    source: :Herbert_Henry_Spender-Clay
-  AssignClass (c105c1dd-e7fa-48ea-92fb-ca527a862c8c)
- Call ID: c105c1dd-e7fa-48ea-92fb-ca527a862c8c
-  Args:
-    type: :Person
-    source: :Herbert_Henry_Spender-Clay
-  AssignClass (d985f792-4061-499b-b5e7-f64245ba8ffd)
- Call ID: d985f792-4061-499b-b5e7-f64245ba8ffd
-  Args:
-    source: :Pauline_Spender-Clay
-    type: :Woman
-  AssignClass (8a7224c7-f178-4b05-8035-59abe3810814)
- Call ID: 8a7224c7-f178-4b05-8035-59abe3810814
-  Args:
-    type: :Person
-    source: :Pauline_Spender-Clay
-  AddTriple (a1a28be0-c85d-4428-a4ea-485d4dd70ba0)
- Call ID: a1a28be0-c85d-4428-a4ea-485d4dd70ba0
-  Args:
-    source: :Rachel_Pauline_Spender-Clay
-    relation: :hasFather
-    target: :Herbert_Henry_Spender-Clay
-  AddTriple (93209ea6-f305-48ad-ae47-ad39e854e199)
- Call ID: 93209ea6-f305-48ad-ae47-ad39e854e199
-  Args:
-    source: :Rachel_Pauline_Spender-Clay
-    target: :Pauline_Spender-Clay
+    target: Maria_Antonietta
+    source: Don_Carlos
     relation: :hasMother
-  Finish (66f20d3e-3721-438b-be17-edccfb947604)
- Call ID: 66f20d3e-3721-438b-be17-edccfb947604
+  AddTriple (ace4c66e-30db-4bdd-8240-3bb6162791d5)
+ Call ID: ace4c66e-30db-4bdd-8240-3bb6162791d5
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    target: Ferdinand_Two_Sicilies
+    relation: :isBrotherOf
+    source: Don_Carlos
+  AddTriple (3147a4e2-68f3-44ff-bbee-a048a42d1805)
+ Call ID: 3147a4e2-68f3-44ff-bbee-a048a42d1805
+  Args:
+    target: Ranieri_Two_Sicilies
+    relation: :isBrotherOf
+    source: Don_Carlos
+  AddTriple (bb8c1260-3e76-4002-8d4e-020c95adcf61)
+ Call ID: bb8c1260-3e76-4002-8d4e-020c95adcf61
+  Args:
+    target: Alfonso_XII_Spain
+    relation: :hasFather
+    source: Mercedes_Princess_Asturias
+  AddTriple (e859c741-3852-47e8-b222-c48d272c1096)
+ Call ID: e859c741-3852-47e8-b222-c48d272c1096
+  Args:
+    target: Maria_Christina_Austria
+    relation: :hasMother
+    source: Mercedes_Princess_Asturias
+  AddTriple (e943d7e3-3fe7-473f-b9e7-7024d7e1e75c)
+ Call ID: e943d7e3-3fe7-473f-b9e7-7024d7e1e75c
+  Args:
+    target: Alfonso_XIII_Spain
+    relation: :isSisterOf
+    source: Mercedes_Princess_Asturias
+  AddTriple (216a8115-8198-428e-9fb5-662247dd18d2)
+ Call ID: 216a8115-8198-428e-9fb5-662247dd18d2
+  Args:
+    target: Philippe_Count_Paris
+    relation: :hasFather
+    source: Louise_Orleans
+  AddTriple (9b847960-d133-4fcd-aa81-f58bcf95fad4)
+ Call ID: 9b847960-d133-4fcd-aa81-f58bcf95fad4
+  Args:
+    target: Don_Carlos
+    relation: :hasFather
+    source: Alfonso_Son_of_Carlos
+  ValidateShacl (5a892c97-8590-4f8b-a526-a3cf524f1cc2)
+ Call ID: 5a892c97-8590-4f8b-a526-a3cf524f1cc2
+  Args:
 
 ================================= Tool Message =================================
 
@@ -616,154 +693,193 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Elizabeth_The_Queen_Mother a :Person,
-          :Woman ;
-      :hasBrother data:David_Bowes-Lyon .
+  data:Alfonso_Son_of_Carlos a :Man ;
+      :hasFather data:Don_Carlos .
 
-  data:Claude_Bowes-Lyon_13th a :Man,
-          :Person .
+  data:Francis_II a :Man .
 
-  data:Claude_Bowes-Lyon_14th a :Man,
-          :Person ;
-      :hasFather data:Claude_Bowes-Lyon_13th .
+  data:Louise_Orleans a :Woman ;
+      :hasFather data:Philippe_Count_Paris .
 
-  data:David_Bowes-Lyon a :Man,
-          :Person ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1961 ;
-      :hasFather data:Claude_Bowes-Lyon_14th ;
-      :hasMarriageYear 1929 ;
-      :hasRelation data:Rachel_Pauline_Spender-Clay ;
-      :isUncleOf data:Elizabeth_II .
+  data:Mercedes_Princess_Asturias a :Woman ;
+      :hasFather data:Alfonso_XII_Spain ;
+      :hasMother data:Maria_Christina_Austria ;
+      :isSisterOf data:Alfonso_XIII_Spain .
 
-  data:Elizabeth_II a :Person,
-          :Woman .
+  data:Alfonso_Two_Sicilies a :Man .
 
-  data:Herbert_Henry_Spender-Clay a :Man,
-          :Person .
+  data:Alfonso_XIII_Spain a :Man .
 
-  data:Pauline_Spender-Clay a :Person,
-          :Woman .
+  data:Alfonso_XII_Spain a :Man .
 
-  data:Rachel_Pauline_Spender-Clay a :Person,
-          :Woman ;
-      :hasFather data:Herbert_Henry_Spender-Clay ;
-      :hasMother data:Pauline_Spender-Clay .
+  data:Don_Carlos a :Man ;
+      :hasBirthYear 1870 ;
+      :hasDeathYear 1949 ;
+      :hasFather data:Alfonso_Two_Sicilies ;
+      :hasMother data:Maria_Antonietta ;
+      :isBrotherOf data:Ferdinand_Two_Sicilies,
+          data:Ranieri_Two_Sicilies .
+
+  data:Ferdinand_Two_Sicilies a :Man .
+
+  data:Maria_Antonietta a :Woman .
+
+  data:Maria_Christina_Austria a :Woman .
+
+  data:Philippe_Count_Paris a :Man .
+
+  data:Ranieri_Two_Sicilies a :Man .
 
 
-
-================================= Tool Message =================================
-
-You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (fd3b0ae4-20dc-4aad-83ed-e6ab4bec1ab3)
- Call ID: fd3b0ae4-20dc-4aad-83ed-e6ab4bec1ab3
-  Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:18
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Claude_Bowes-Lyon_13th' assigned as the father of 'Claude_Bowes-Lyon_14th' is not recognized as an 'Ancestor' or 'Man'.
+      The node Alfonso_Two_Sicilies is linked via hasFather but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Claude_Bowes-Lyon_13th", class: ":Man")
+      AssignClass(node='Alfonso_Two_Sicilies', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Claude_Bowes-Lyon_14th' assigned as the father of 'David_Bowes-Lyon' is not recognized as an 'Ancestor' or 'Man'.
+      The node Don_Carlos is linked via hasFather but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Claude_Bowes-Lyon_14th", class: ":Man")
+      AssignClass(node='Don_Carlos', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Claude_Bowes-Lyon_13th' assigned as the father of 'Claude_Bowes-Lyon_14th' is not recognized as an 'Ancestor' or 'Man'.
+      The node Maria_Antonietta is linked via hasMother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Claude_Bowes-Lyon_13th", class: ":Man")
+      AssignClass(node='Maria_Antonietta', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Claude_Bowes-Lyon_14th' assigned as the father of 'David_Bowes-Lyon' is not recognized as an 'Ancestor' or 'Man'.
+      The node Alfonso_Two_Sicilies is linked via hasFather but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Claude_Bowes-Lyon_14th", class: ":Man")
+      AssignClass(node='Alfonso_Two_Sicilies', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Herbert_Henry_Spender-Clay' assigned as the father of 'Rachel_Pauline_Spender-Clay' is not recognized as an 'Ancestor' or 'Man'.
+      The node Philippe_Count_Paris is linked via hasFather but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Herbert_Henry_Spender-Clay", class: ":Man")
+      AssignClass(node='Philippe_Count_Paris', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Pauline_Spender-Clay' assigned as the mother of 'Rachel_Pauline_Spender-Clay' is not recognized as an 'Ancestor' or 'Woman'.
+      The node Don_Carlos is linked via hasFather but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Pauline_Spender-Clay", class: ":Woman")
+      AssignClass(node='Don_Carlos', class=':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Claude_Bowes-Lyon_13th' assigned as the father of 'Claude_Bowes-Lyon_14th' is not recognized as an 'Ancestor' or 'Man'.
+      The node Alfonso_XII_Spain is linked via hasFather but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Claude_Bowes-Lyon_13th", class: ":Man")
+      AssignClass(node='Alfonso_XII_Spain', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Claude_Bowes-Lyon_14th' assigned as the father of 'David_Bowes-Lyon' is not recognized as an 'Ancestor' or 'Man'.
+      The node Maria_Antonietta is linked via hasMother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Claude_Bowes-Lyon_14th", class: ":Man")
+      AssignClass(node='Maria_Antonietta', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Herbert_Henry_Spender-Clay' assigned as the father of 'Rachel_Pauline_Spender-Clay' is not recognized as an 'Ancestor' or 'Man'.
+      The node Maria_Christina_Austria is linked via hasMother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Herbert_Henry_Spender-Clay", class: ":Man")
+      AssignClass(node='Maria_Christina_Austria', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Pauline_Spender-Clay' assigned as the mother of 'Rachel_Pauline_Spender-Clay' is not recognized as an 'Ancestor' or 'Woman'.
+      The node Alfonso_Two_Sicilies is linked via hasFather but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Pauline_Spender-Clay", class: ":Woman")
+      AssignClass(node='Alfonso_Two_Sicilies', class=':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Herbert_Henry_Spender-Clay' assigned as the father of 'Rachel_Pauline_Spender-Clay' is not recognized as an 'Ancestor' or 'Man'.
+      The node Philippe_Count_Paris is linked via hasFather but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Herbert_Henry_Spender-Clay", class: ":Man")
+      AssignClass(node='Philippe_Count_Paris', class=':Ancestor')
 
 
   Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Don_Carlos is linked via hasFather but lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Don_Carlos', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alfonso_XII_Spain is linked via hasFather but lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alfonso_XII_Spain', class=':Ancestor')
+
+
+  Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Pauline_Spender-Clay' assigned as the mother of 'Rachel_Pauline_Spender-Clay' is not recognized as an 'Ancestor' or 'Woman'.
+      The node Maria_Antonietta is linked via hasMother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: "Pauline_Spender-Clay", class: ":Woman")
+      AssignClass(node='Maria_Antonietta', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Christina_Austria is linked via hasMother but lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Christina_Austria', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Philippe_Count_Paris is linked via hasFather but lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Philippe_Count_Paris', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alfonso_XII_Spain is linked via hasFather but lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alfonso_XII_Spain', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Christina_Austria is linked via hasMother but lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Maria_Christina_Austria', class=':Ancestor')
 
 
 
@@ -772,29 +888,47 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (7cf618b8-aa38-48ab-bf4c-83bd64abc855)
- Call ID: 7cf618b8-aa38-48ab-bf4c-83bd64abc855
+  AssignClass (fe73c5aa-465c-4a00-9d5d-9f69145bf585)
+ Call ID: fe73c5aa-465c-4a00-9d5d-9f69145bf585
   Args:
     type: :Ancestor
-    source: :Claude_Bowes-Lyon_13th
-  AssignClass (36fba0f9-2141-4da2-a223-64cca597512d)
- Call ID: 36fba0f9-2141-4da2-a223-64cca597512d
+    source: Alfonso_Two_Sicilies
+  AssignClass (8e45c2ba-a10d-48ea-8c3a-ab07c0d44894)
+ Call ID: 8e45c2ba-a10d-48ea-8c3a-ab07c0d44894
   Args:
-    source: :Claude_Bowes-Lyon_14th
+    source: Don_Carlos
     type: :Ancestor
-  AssignClass (7f44d57e-ca15-4b7e-be74-6b5c31799353)
- Call ID: 7f44d57e-ca15-4b7e-be74-6b5c31799353
+  AssignClass (b7b14875-f8a4-4a6f-9919-803ebbdd355c)
+ Call ID: b7b14875-f8a4-4a6f-9919-803ebbdd355c
   Args:
     type: :Ancestor
-    source: :Herbert_Henry_Spender-Clay
-  AssignClass (4c744ce6-6fd9-44c3-b019-cb5899c32507)
- Call ID: 4c744ce6-6fd9-44c3-b019-cb5899c32507
+    source: Maria_Antonietta
+  AssignClass (44039070-8034-467f-a277-d28a8e058eba)
+ Call ID: 44039070-8034-467f-a277-d28a8e058eba
   Args:
-    source: :Pauline_Spender-Clay
+    source: Philippe_Count_Paris
     type: :Ancestor
-  ValidateShacl (8be1fea6-b4fc-4002-8961-bb202fc7fa46)
- Call ID: 8be1fea6-b4fc-4002-8961-bb202fc7fa46
+  AssignClass (2cc88cd0-0c49-441f-9676-97c41aafea61)
+ Call ID: 2cc88cd0-0c49-441f-9676-97c41aafea61
   Args:
+    type: :Ancestor
+    source: Alfonso_XII_Spain
+  AssignClass (c461725c-47bc-4388-b433-6792fc4726b0)
+ Call ID: c461725c-47bc-4388-b433-6792fc4726b0
+  Args:
+    source: Maria_Christina_Austria
+    type: :Ancestor
+  ValidateShacl (0eab04d6-31ea-4717-afb0-3d6ad6d6cded)
+ Call ID: 0eab04d6-31ea-4717-afb0-3d6ad6d6cded
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -815,43 +949,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Elizabeth_The_Queen_Mother a :Person,
-          :Woman ;
-      :hasBrother data:David_Bowes-Lyon .
+  data:Alfonso_Son_of_Carlos a :Man ;
+      :hasFather data:Don_Carlos .
 
-  data:Claude_Bowes-Lyon_13th a :Ancestor,
-          :Man,
-          :Person .
+  data:Francis_II a :Man .
 
-  data:Claude_Bowes-Lyon_14th a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Claude_Bowes-Lyon_13th .
+  data:Louise_Orleans a :Woman ;
+      :hasFather data:Philippe_Count_Paris .
 
-  data:David_Bowes-Lyon a :Man,
-          :Person ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1961 ;
-      :hasFather data:Claude_Bowes-Lyon_14th ;
-      :hasMarriageYear 1929 ;
-      :hasRelation data:Rachel_Pauline_Spender-Clay ;
-      :isUncleOf data:Elizabeth_II .
+  data:Mercedes_Princess_Asturias a :Woman ;
+      :hasFather data:Alfonso_XII_Spain ;
+      :hasMother data:Maria_Christina_Austria ;
+      :isSisterOf data:Alfonso_XIII_Spain .
 
-  data:Elizabeth_II a :Person,
+  data:Alfonso_Two_Sicilies a :Ancestor,
+          :Man .
+
+  data:Alfonso_XIII_Spain a :Man .
+
+  data:Alfonso_XII_Spain a :Ancestor,
+          :Man .
+
+  data:Don_Carlos a :Ancestor,
+          :Man ;
+      :hasBirthYear 1870 ;
+      :hasDeathYear 1949 ;
+      :hasFather data:Alfonso_Two_Sicilies ;
+      :hasMother data:Maria_Antonietta ;
+      :isBrotherOf data:Ferdinand_Two_Sicilies,
+          data:Ranieri_Two_Sicilies .
+
+  data:Ferdinand_Two_Sicilies a :Man .
+
+  data:Maria_Antonietta a :Ancestor,
           :Woman .
 
-  data:Herbert_Henry_Spender-Clay a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Pauline_Spender-Clay a :Ancestor,
-          :Person,
+  data:Maria_Christina_Austria a :Ancestor,
           :Woman .
 
-  data:Rachel_Pauline_Spender-Clay a :Person,
-          :Woman ;
-      :hasFather data:Herbert_Henry_Spender-Clay ;
-      :hasMother data:Pauline_Spender-Clay .
+  data:Philippe_Count_Paris a :Ancestor,
+          :Man .
+
+  data:Ranieri_Two_Sicilies a :Man .
 
 
 
@@ -863,6 +1002,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ac29a6ed-b769-4ab3-bf88-a230f706f034)
- Call ID: ac29a6ed-b769-4ab3-bf88-a230f706f034
+  Finish (0e23684f-ddd0-4d0d-b450-0fb43e1bbd0d)
+ Call ID: 0e23684f-ddd0-4d0d-b450-0fb43e1bbd0d
   Args:

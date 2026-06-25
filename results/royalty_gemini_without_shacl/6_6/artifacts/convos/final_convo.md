@@ -180,6 +180,8 @@ In 2022, Ferdinand with his family observed the 100th anniversary of the death o
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -195,39 +197,9 @@ In 2022, Ferdinand with his family observed the 100th anniversary of the death o
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -242,6 +214,23 @@ In 2022, Ferdinand with his family observed the 100th anniversary of the death o
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -259,6 +248,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -326,29 +330,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -357,6 +353,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -369,6 +373,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -377,17 +383,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -415,6 +423,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -430,342 +522,181 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9e7c0d23-6e7b-4764-a8c3-20540632f15a)
- Call ID: 9e7c0d23-6e7b-4764-a8c3-20540632f15a
+  AssignClass (297e5294-4879-48b5-b894-b82d1c3db2cf)
+ Call ID: 297e5294-4879-48b5-b894-b82d1c3db2cf
   Args:
-    source: Ferdinand Habsburg-Lothringen
     type: :Man
-  AssignClass (f0788a2c-4ce5-4b1f-bfa4-8d190a9a8613)
- Call ID: f0788a2c-4ce5-4b1f-bfa4-8d190a9a8613
+    source: :Ferdinand_Habsburg-Lothringen
+  AssignClass (50fc06f4-3a62-4fd5-af48-a4ca387b380e)
+ Call ID: 50fc06f4-3a62-4fd5-af48-a4ca387b380e
   Args:
+    source: :Ferdinand_Habsburg-Lothringen
     type: :Person
-    source: Ferdinand Habsburg-Lothringen
-  AddLiteral (68ffb470-876e-4fe7-8ae1-59856c873b94)
- Call ID: 68ffb470-876e-4fe7-8ae1-59856c873b94
+  AddLiteral (c59259d9-c122-42d0-b027-24e3dfc5aec0)
+ Call ID: c59259d9-c122-42d0-b027-24e3dfc5aec0
   Args:
     literal_value: 1997
+    source: :Ferdinand_Habsburg-Lothringen
     literal_type: xsd:integer
-    source: Ferdinand Habsburg-Lothringen
     relation: :hasBirthYear
-  AddTriple (9f5c4e94-f1c1-4b90-8f4d-91504c35e55a)
- Call ID: 9f5c4e94-f1c1-4b90-8f4d-91504c35e55a
+  AddLiteral (b2698433-bb78-4ccc-9fe4-edd349c90e74)
+ Call ID: b2698433-bb78-4ccc-9fe4-edd349c90e74
   Args:
-    relation: :hasSex
-    source: Ferdinand Habsburg-Lothringen
-    target: :Male
-  AssignClass (97f52c3b-e38f-4bbe-a36b-4a8a2c2bd90f)
- Call ID: 97f52c3b-e38f-4bbe-a36b-4a8a2c2bd90f
+    literal_type: xsd:string
+    source: :Ferdinand_Habsburg-Lothringen
+    literal_value: Ferdinand Zvonimir Maria Balthus Keith Michael Otto Antal Bahnam Leonhard
+    relation: :knownAs
+  AddLiteral (2b526508-c67b-41bc-9dc4-ff05f3cd409f)
+ Call ID: 2b526508-c67b-41bc-9dc4-ff05f3cd409f
   Args:
-    source: Karl von Habsburg
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    source: :Ferdinand_Habsburg-Lothringen
+    literal_value: Zvonimir
+  AssignClass (f7072d0c-8192-4341-bf3e-c6f92b22270a)
+ Call ID: f7072d0c-8192-4341-bf3e-c6f92b22270a
+  Args:
     type: :Man
-  AssignClass (987f6ae7-749a-459c-8a84-36930de27f0c)
- Call ID: 987f6ae7-749a-459c-8a84-36930de27f0c
+    source: :Karl_von_Habsburg
+  AssignClass (cb8395b0-7b44-47ba-959e-df9b0adb3c66)
+ Call ID: cb8395b0-7b44-47ba-959e-df9b0adb3c66
   Args:
-    source: Karl von Habsburg
+    source: :Karl_von_Habsburg
     type: :Person
-  AssignClass (961adc4e-d4fb-49b3-b85b-dfb83e41cdac)
- Call ID: 961adc4e-d4fb-49b3-b85b-dfb83e41cdac
+  AssignClass (6f007d44-18df-4ff8-84b4-26ae5dd6a5ff)
+ Call ID: 6f007d44-18df-4ff8-84b4-26ae5dd6a5ff
   Args:
-    source: Francesca von Thyssen-Bornemisza
+    source: :Francesca_von_Thyssen-Bornemisza
     type: :Woman
-  AssignClass (435497d1-497d-4d2d-9950-b492edc65f86)
- Call ID: 435497d1-497d-4d2d-9950-b492edc65f86
+  AssignClass (5ef90a9a-e862-4480-ad79-295e6ce7972b)
+ Call ID: 5ef90a9a-e862-4480-ad79-295e6ce7972b
   Args:
+    source: :Francesca_von_Thyssen-Bornemisza
     type: :Person
-    source: Francesca von Thyssen-Bornemisza
-  AddTriple (05b3597d-078c-43be-a0e0-af410691873c)
- Call ID: 05b3597d-078c-43be-a0e0-af410691873c
+  AddTriple (08628bb5-f54e-4b30-a1c1-e086fb704167)
+ Call ID: 08628bb5-f54e-4b30-a1c1-e086fb704167
   Args:
+    target: :Karl_von_Habsburg
     relation: :hasFather
-    source: Ferdinand Habsburg-Lothringen
-    target: :Karl von Habsburg
-  AddTriple (0afd62fd-2e22-4f43-8c7e-f8685ec92b31)
- Call ID: 0afd62fd-2e22-4f43-8c7e-f8685ec92b31
+    source: :Ferdinand_Habsburg-Lothringen
+  AddTriple (5c748721-4cc7-426d-9169-4bd9b146292f)
+ Call ID: 5c748721-4cc7-426d-9169-4bd9b146292f
   Args:
-    target: :Francesca von Thyssen-Bornemisza
-    source: Ferdinand Habsburg-Lothringen
+    source: :Ferdinand_Habsburg-Lothringen
     relation: :hasMother
-  AssignClass (faa4ef5e-4b61-4aba-b459-7426255776c9)
- Call ID: faa4ef5e-4b61-4aba-b459-7426255776c9
+    target: :Francesca_von_Thyssen-Bornemisza
+  AssignClass (3e37a179-7a70-4fb3-808a-cddc72c428e2)
+ Call ID: 3e37a179-7a70-4fb3-808a-cddc72c428e2
   Args:
-    source: Otto von Habsburg
     type: :Man
-  AssignClass (da2af7c8-c72f-4cff-94ff-9d2784f9db88)
- Call ID: da2af7c8-c72f-4cff-94ff-9d2784f9db88
+    source: :Otto_von_Habsburg
+  AssignClass (ae6e7d56-3d78-4a7f-b320-695f84411e39)
+ Call ID: ae6e7d56-3d78-4a7f-b320-695f84411e39
   Args:
     type: :Person
-    source: Otto von Habsburg
-  AssignClass (7f24201a-7f03-49b5-85a2-dfebbdecbfc6)
- Call ID: 7f24201a-7f03-49b5-85a2-dfebbdecbfc6
+    source: :Otto_von_Habsburg
+  AssignClass (0b5b3021-d28b-479b-89fa-b19b9b1212ef)
+ Call ID: 0b5b3021-d28b-479b-89fa-b19b9b1212ef
   Args:
-    source: Regina of Saxe-Meiningen
     type: :Woman
-  AssignClass (5c98578f-730a-4d27-8c60-0654f8b3712b)
- Call ID: 5c98578f-730a-4d27-8c60-0654f8b3712b
+    source: :Regina_of_Saxe-Meiningen
+  AssignClass (02919d32-6d81-42c1-995e-bd980780568b)
+ Call ID: 02919d32-6d81-42c1-995e-bd980780568b
   Args:
     type: :Person
-    source: Regina of Saxe-Meiningen
-  AddTriple (dad0bfef-70ad-4985-856a-df02ab1e0d7d)
- Call ID: dad0bfef-70ad-4985-856a-df02ab1e0d7d
+    source: :Regina_of_Saxe-Meiningen
+  AddTriple (70558041-8a28-418f-9a00-3546ba59d81b)
+ Call ID: 70558041-8a28-418f-9a00-3546ba59d81b
   Args:
-    source: Karl von Habsburg
+    target: :Otto_von_Habsburg
     relation: :hasFather
-    target: :Otto von Habsburg
-  AddTriple (c34c3487-db02-4eda-b313-6a79bf537686)
- Call ID: c34c3487-db02-4eda-b313-6a79bf537686
+    source: :Karl_von_Habsburg
+  AddTriple (87b2d25c-3fe5-4c08-9a48-081fc319bef7)
+ Call ID: 87b2d25c-3fe5-4c08-9a48-081fc319bef7
   Args:
     relation: :hasMother
-    source: Karl von Habsburg
-    target: :Regina of Saxe-Meiningen
-  AssignClass (d6936c0d-96dd-469d-9ead-b2b7dd2b8ce9)
- Call ID: d6936c0d-96dd-469d-9ead-b2b7dd2b8ce9
+    target: :Regina_of_Saxe-Meiningen
+    source: :Karl_von_Habsburg
+  AssignClass (a601398f-34fd-4468-8538-8e43ed796144)
+ Call ID: a601398f-34fd-4468-8538-8e43ed796144
   Args:
-    source: Hans Heinrich Thyssen-Bornemisza
+    source: :Hans_Heinrich_Thyssen-Bornemisza
     type: :Man
-  AssignClass (14e874dc-3c21-4319-b366-cd7936f3c38b)
- Call ID: 14e874dc-3c21-4319-b366-cd7936f3c38b
+  AssignClass (c26192a4-029f-452d-b299-9ecd4749332a)
+ Call ID: c26192a4-029f-452d-b299-9ecd4749332a
   Args:
-    source: Hans Heinrich Thyssen-Bornemisza
+    source: :Hans_Heinrich_Thyssen-Bornemisza
     type: :Person
-  AssignClass (07e1661e-73e5-4ace-8eb9-b784928620f9)
- Call ID: 07e1661e-73e5-4ace-8eb9-b784928620f9
+  AssignClass (acb894f7-6b98-4718-8036-d844bbaf723e)
+ Call ID: acb894f7-6b98-4718-8036-d844bbaf723e
   Args:
+    source: :Fiona_Campbell-Walter
     type: :Woman
-    source: Fiona Campbell-Walter
-  AssignClass (feef6ed1-898d-4d3d-a93b-0444c58c0d4b)
- Call ID: feef6ed1-898d-4d3d-a93b-0444c58c0d4b
+  AssignClass (9594ff12-e2f9-4ebe-86ee-1de8ebf1457e)
+ Call ID: 9594ff12-e2f9-4ebe-86ee-1de8ebf1457e
   Args:
-    source: Fiona Campbell-Walter
     type: :Person
-  AddTriple (9ad59b02-c263-4cc1-8184-3642ce642d7c)
- Call ID: 9ad59b02-c263-4cc1-8184-3642ce642d7c
+    source: :Fiona_Campbell-Walter
+  AddTriple (3fd118b9-b219-4dc1-abac-34055340b550)
+ Call ID: 3fd118b9-b219-4dc1-abac-34055340b550
   Args:
-    target: :Hans Heinrich Thyssen-Bornemisza
+    source: :Francesca_von_Thyssen-Bornemisza
     relation: :hasFather
-    source: Francesca von Thyssen-Bornemisza
-  AddTriple (77041a15-f53b-4128-8b34-30e05895dc74)
- Call ID: 77041a15-f53b-4128-8b34-30e05895dc74
+    target: :Hans_Heinrich_Thyssen-Bornemisza
+  AddTriple (1104a68c-1f16-4062-bcf7-196aafe076c1)
+ Call ID: 1104a68c-1f16-4062-bcf7-196aafe076c1
   Args:
-    target: :Fiona Campbell-Walter
+    source: :Francesca_von_Thyssen-Bornemisza
+    target: :Fiona_Campbell-Walter
     relation: :hasMother
-    source: Francesca von Thyssen-Bornemisza
-  AssignClass (f613bc0d-287b-416f-ae46-e9fba6ea30ff)
- Call ID: f613bc0d-287b-416f-ae46-e9fba6ea30ff
+  AssignClass (f72c0db6-c5db-4471-a2ea-9cfb6d40fd68)
+ Call ID: f72c0db6-c5db-4471-a2ea-9cfb6d40fd68
   Args:
-    source: Eleonore von Habsburg
     type: :Woman
-  AssignClass (25b299f4-a51d-43ba-820a-7c0ac52a63f5)
- Call ID: 25b299f4-a51d-43ba-820a-7c0ac52a63f5
+    source: :Eleonore_von_Habsburg
+  AssignClass (46166e63-72ec-4d08-a769-8acb13ec72c6)
+ Call ID: 46166e63-72ec-4d08-a769-8acb13ec72c6
+  Args:
+    source: :Eleonore_von_Habsburg
+    type: :Person
+  AssignClass (9722c07b-6f55-49f3-a07f-bf05327cf353)
+ Call ID: 9722c07b-6f55-49f3-a07f-bf05327cf353
+  Args:
+    source: :Gloria_von_Habsburg
+    type: :Woman
+  AssignClass (3af939e4-30cc-4d3e-aa16-b1bc83e58de1)
+ Call ID: 3af939e4-30cc-4d3e-aa16-b1bc83e58de1
   Args:
     type: :Person
-    source: Eleonore von Habsburg
-  AssignClass (393e6490-97e9-4cc5-9d3c-cdb95a354df2)
- Call ID: 393e6490-97e9-4cc5-9d3c-cdb95a354df2
+    source: :Gloria_von_Habsburg
+  AddTriple (d46ee948-2e9a-4b38-88ff-97ea4c80bbb6)
+ Call ID: d46ee948-2e9a-4b38-88ff-97ea4c80bbb6
   Args:
-    source: Gloria von Habsburg
-    type: :Woman
-  AssignClass (5871ba11-14b9-41f1-858c-640509341b88)
- Call ID: 5871ba11-14b9-41f1-858c-640509341b88
-  Args:
-    type: :Person
-    source: Gloria von Habsburg
-  AddTriple (e0116988-e50a-4e28-8ef1-7eb5ddc843ef)
- Call ID: e0116988-e50a-4e28-8ef1-7eb5ddc843ef
-  Args:
-    target: :Eleonore von Habsburg
-    source: Ferdinand Habsburg-Lothringen
+    source: :Ferdinand_Habsburg-Lothringen
     relation: :hasSister
-  AddTriple (704cf35a-d6b8-4b1e-bfca-b047b266814c)
- Call ID: 704cf35a-d6b8-4b1e-bfca-b047b266814c
+    target: :Eleonore_von_Habsburg
+  AddTriple (d19945e8-96ad-46c2-ade7-5c91e53752a2)
+ Call ID: d19945e8-96ad-46c2-ade7-5c91e53752a2
   Args:
+    target: :Gloria_von_Habsburg
     relation: :hasSister
-    source: Ferdinand Habsburg-Lothringen
-    target: :Gloria von Habsburg
-  Finish (07378997-add6-4645-8882-cebc76b5ceab)
- Call ID: 07378997-add6-4645-8882-cebc76b5ceab
+    source: :Ferdinand_Habsburg-Lothringen
+  AssignClass (2c0c59a2-d41a-4471-9452-c3cf9867910d)
+ Call ID: 2c0c59a2-d41a-4471-9452-c3cf9867910d
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Ferdinand_Habsburg-Lothringen a :Man,
-          :Person ;
-      :hasBirthYear 1997 ;
-      :hasFather data:Karl_von_Habsburg ;
-      :hasMother data:Francesca_von_Thyssen-Bornemisza ;
-      :hasSex data:Male ;
-      :hasSister data:Eleonore_von_Habsburg,
-          data:Gloria_von_Habsburg .
-
-  data:Eleonore_von_Habsburg a :Person,
-          :Woman .
-
-  data:Fiona_Campbell-Walter a :Person,
-          :Woman .
-
-  data:Francesca_von_Thyssen-Bornemisza a :Person,
-          :Woman ;
-      :hasFather data:Hans_Heinrich_Thyssen-Bornemisza ;
-      :hasMother data:Fiona_Campbell-Walter .
-
-  data:Gloria_von_Habsburg a :Person,
-          :Woman .
-
-  data:Hans_Heinrich_Thyssen-Bornemisza a :Man,
-          :Person .
-
-  data:Karl_von_Habsburg a :Man,
-          :Person ;
-      :hasFather data:Otto_von_Habsburg ;
-      :hasMother data:Regina_of_Saxe-Meiningen .
-
-  data:Otto_von_Habsburg a :Man,
-          :Person .
-
-  data:Regina_of_Saxe-Meiningen a :Person,
-          :Woman .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (53ff798e-1a68-434f-9f4c-7f37e2121941)
- Call ID: 53ff798e-1a68-434f-9f4c-7f37e2121941
+    source: :Georg_von_Habsburg
+    type: :Man
+  AssignClass (a19299f4-640e-403e-8280-d752b1a2cf36)
+ Call ID: a19299f4-640e-403e-8280-d752b1a2cf36
   Args:
-    source: Male
-    type: :Sex
-  Finish (f64f34e6-567a-4417-b3a1-6df1a012e176)
- Call ID: f64f34e6-567a-4417-b3a1-6df1a012e176
+    type: :Person
+    source: :Georg_von_Habsburg
+  AddTriple (28441e63-5657-4d2b-b0d0-671436b01e4a)
+ Call ID: 28441e63-5657-4d2b-b0d0-671436b01e4a
+  Args:
+    source: :Georg_von_Habsburg
+    target: :Karl_von_Habsburg
+    relation: :isBrotherOf
+  Finish (98acdefb-9de6-4f75-924f-10d7482b7066)
+ Call ID: 98acdefb-9de6-4f75-924f-10d7482b7066
   Args:

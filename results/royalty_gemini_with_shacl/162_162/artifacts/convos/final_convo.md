@@ -85,43 +85,47 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-King Juan Carlos IQueen Sofía
+Amélie of Orléans (French: Marie Amélie Louise Hélène; 28 September 1865 – 25 October 1951) was the last Queen of Portugal as the wife of Carlos I of Portugal.
+She was regent of Portugal during the absence of her husband in 1895.
+She was the eldest daughter of Prince Philippe, Count of Paris, and Princess Marie Isabelle d'Orléans, and a "Princess of Orléans" by birth.
+Amélie's paternal grandparents were Prince Ferdinand Philippe, Duke of Orléans, and Duchess Helena of Mecklenburg-Schwerin.
+Her maternal grandparents were Prince Antoine, Duke of Montpensier, and the Infanta Luisa Fernanda of Spain.
+The Dukes of Orléans and Montpensier were siblings, both sons of King Louis-Philippe I of France, and Maria Amalia of the Two Sicilies.
+Marriage and issue
+
+On 22 May 1886, Amélie married Carlos, Prince Royal of Portugal.
+He was the eldest son of King Luís I of Portugal and Maria Pia of Savoy.
+At first, the marriage was not popular and Queen Maria Pia was expecting to marry Carlos to Archduchess Marie Valerie of Austria, Princess Mathilde of Saxony, Princess Viktoria of Prussia or Princess Victoria of Wales.
+However, Amélie and Carlos came to live quite harmoniously with each other.
+They had three children:
 
 
-The Duchess of Soria and HernaniThe Duke of Soria and Hernani
+Queen consort
 
+On 19 October 1889, King Luís died and Carlos succeeded him on the throne.
+Amélie became the new Queen consort of Portugal.
+Amélie played an active role as a queen, and somewhat softened the growing criticism towards the monarchy with her personal popularity, though she did receive some criticism for her expenses.
+In 1892, Pope Leo XIII gave a Golden Rose to Amélie.
+On their way to the Palace of Necessidades, the carriage carrying Carlos and his family passed through the Rua do Arsenal.
+The King died immediately, his heir Prince Dom Luís Filipe was mortally wounded and Infante Dom Manuel was hit in the arm.
+Queen Amélie remained unharmed as she tried to defend her youngest son, the new king Manuel II, with the flower bouquet she kept in her hand.
+About twenty minutes later, Prince Luís Filipe died and the next day Manuel was acclaimed King of Portugal, the last of the Braganza dynasty.
+Manuel II was deposed in a military coup, later known as the 5 October 1910 revolution, which resulted in the establishment of the Portuguese First Republic.
+Queen Amélie left Portugal with the rest of the royal family and went into exile.
+During the Second World War, the Portuguese government invited her to return to Portugal, but she declined the offer.
+She visited Portugal for the last time in 1945.
+Later years and death
 
-The Dowager Duchess of Calabria
-
-
-Infanta Margarita, Duchess of Soria, 2nd Duchess of Hernani (Margarita María de la Victoria Esperanza
-Jacoba Felicidad Perpetua de Todos los Santos de Borbón y Borbón; born 6 March 1939), is the younger sister of King Juan Carlos I and aunt of the reigning King Felipe VI of Spain.
-Early life
-
-Infanta Margarita was born at Hotel Firenze Anglo American in Rome as the younger daughter of Infante Juan, Count of Barcelona, and Princess Mercedes of the Two Sicilies.
-Margarita has been blind since birth.
-Marriage
-
-She married the physician and aristocrat Carlos Zurita y Delgado on 12 October 1972 in Estoril at St. Anthony's Church.
-They have two children:
-
-
-Activities
-
-In 1989, alongside her husband, they created The Duke and Duchess of Soria Cultural Foundation (Spanish: Fundación Cultural Duques de Soria), a nonprofit organization dedicated to the promotion of Spanish culture, Hispanic studies, science and knowledge, as well as the preservation of cultural heritage.
-Titles, styles and honours
-
-Infanta Margarita renounced her right of succession to the Spanish throne upon marriage because it was not a dynastic wedding.
-On 6 January 1979, the Infanta's distant cousin Manfredo de Borbón, 1st Duke of Hernani, died and willed his ducal title to be inherited by Margarita.
-The King granted this request in 1977 and, on 27 May 1981, she became 2nd Duchess of Hernani, accompanied by the dignity of Grandee.
-The peerage title refers to the town Hernani, Spain.
-The month after, on 23 June 1981, King Juan Carlos created her Duchess of Soria (referring to the city Soria, Spain); this title is a title of the Royal House and cannot be inherited by her children.
+In 1949, Amélie left her Portuguese possessions to her godson, Duarte Pio, Duke of Braganza, at the request of Prime Minister António de Oliveira Salazar.
+She was given a state funeral and buried at the Pantheon of the Braganzas located in the Monastery of São Vicente de Fora, in Lisbon, Portugal.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -137,39 +141,9 @@ The month after, on 23 June 1981, King Juan Carlos created her Duchess of Soria 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -184,6 +158,23 @@ The month after, on 23 June 1981, King Juan Carlos created her Duchess of Soria 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -201,6 +192,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -268,29 +274,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -299,6 +297,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -311,6 +317,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -319,17 +327,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -357,6 +367,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -372,161 +466,360 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e270b6e2-4ac4-44f3-8312-78f26044c355)
- Call ID: e270b6e2-4ac4-44f3-8312-78f26044c355
+  AssignClass (c95ba6d0-4bb7-48e3-8ec1-d0cfb01ab9d0)
+ Call ID: c95ba6d0-4bb7-48e3-8ec1-d0cfb01ab9d0
   Args:
-    source: :Infanta_Margarita
+    source: Amélie_of_Orléans
     type: :Woman
-  AssignClass (d7758d6a-58cf-4e5e-a67c-6d99383b35c0)
- Call ID: d7758d6a-58cf-4e5e-a67c-6d99383b35c0
+  AssignClass (8c8d7351-fb39-49e8-a32a-bc5b8612bbef)
+ Call ID: 8c8d7351-fb39-49e8-a32a-bc5b8612bbef
   Args:
-    source: :Infanta_Margarita
+    source: Amélie_of_Orléans
     type: :Person
-  AddLiteral (5a278b99-c90d-4dfa-8d38-76ced2248f7c)
- Call ID: 5a278b99-c90d-4dfa-8d38-76ced2248f7c
+  AddLiteral (3baf9124-6bbc-4d91-8e3e-17d2c2d41ba5)
+ Call ID: 3baf9124-6bbc-4d91-8e3e-17d2c2d41ba5
   Args:
-    literal_type: xsd:string
-    source: :Infanta_Margarita
-    literal_value: Female
-    relation: :hasSex
-  AssignClass (a5a72f0e-9bb2-43b5-884c-1e99fbcd0e5f)
- Call ID: a5a72f0e-9bb2-43b5-884c-1e99fbcd0e5f
+    source: Amélie_of_Orléans
+    literal_value: 1865
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (dcdccb30-b294-4dc4-af47-00ebb75dec00)
+ Call ID: dcdccb30-b294-4dc4-af47-00ebb75dec00
   Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1951
+    source: Amélie_of_Orléans
+  AssignClass (a8217341-1616-44e3-a4c7-fb664019a2c8)
+ Call ID: a8217341-1616-44e3-a4c7-fb664019a2c8
+  Args:
+    source: Carlos_I_of_Portugal
     type: :Man
-    source: :Juan_Carlos_I
-  AssignClass (e5d4f43b-c54a-4a3c-8c25-3c24b5c3fa36)
- Call ID: e5d4f43b-c54a-4a3c-8c25-3c24b5c3fa36
+  AssignClass (f011c324-cc35-4682-aecc-f4704aab10ac)
+ Call ID: f011c324-cc35-4682-aecc-f4704aab10ac
   Args:
+    source: Carlos_I_of_Portugal
     type: :Person
-    source: :Juan_Carlos_I
-  AddLiteral (4a9221b6-65cb-4d24-afd8-4b38d198f683)
- Call ID: 4a9221b6-65cb-4d24-afd8-4b38d198f683
-  Args:
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-    source: :Juan_Carlos_I
-  AssignClass (312f502e-eb70-46d7-ad08-baf475af111f)
- Call ID: 312f502e-eb70-46d7-ad08-baf475af111f
-  Args:
-    source: :Felipe_VI
-    type: :Man
-  AssignClass (a89cea99-ed50-4114-8ef9-f3b66c13a04e)
- Call ID: a89cea99-ed50-4114-8ef9-f3b66c13a04e
-  Args:
-    type: :Person
-    source: :Felipe_VI
-  AddLiteral (02dde2b6-11f8-4026-946d-d6c48ac2db57)
- Call ID: 02dde2b6-11f8-4026-946d-d6c48ac2db57
-  Args:
-    source: :Felipe_VI
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Male
-  AddTriple (168c065a-9850-4536-b9a1-bf266f74f895)
- Call ID: 168c065a-9850-4536-b9a1-bf266f74f895
-  Args:
-    source: :Juan_Carlos_I
-    relation: :hasSister
-    target: :Infanta_Margarita
-  AddTriple (5e2ec403-3b6f-4328-a83e-f4d42a9c318c)
- Call ID: 5e2ec403-3b6f-4328-a83e-f4d42a9c318c
-  Args:
-    target: :Juan_Carlos_I
-    relation: :isSisterOf
-    source: :Infanta_Margarita
-  AddTriple (6d77f31a-95e8-45c4-9ff0-777f2869d240)
- Call ID: 6d77f31a-95e8-45c4-9ff0-777f2869d240
-  Args:
-    source: :Infanta_Margarita
-    target: :Felipe_VI
-    relation: :isAuntOf
-  AssignClass (36767123-2d12-4d3a-b0ef-f2c2272da88f)
- Call ID: 36767123-2d12-4d3a-b0ef-f2c2272da88f
-  Args:
-    type: :Man
-    source: :Infante_Juan
-  AssignClass (ce107801-5d1c-4c4b-8f1f-161acad88b16)
- Call ID: ce107801-5d1c-4c4b-8f1f-161acad88b16
-  Args:
-    source: :Infante_Juan
-    type: :Person
-  AddLiteral (75f87ec0-d1f4-448e-9269-1866187bcce3)
- Call ID: 75f87ec0-d1f4-448e-9269-1866187bcce3
-  Args:
-    literal_type: xsd:string
-    source: :Infante_Juan
-    relation: :hasSex
-    literal_value: Male
-  AssignClass (1f63f0aa-7176-4537-8d4f-094e0162347c)
- Call ID: 1f63f0aa-7176-4537-8d4f-094e0162347c
-  Args:
-    type: :Woman
-    source: :Princess_Mercedes
-  AssignClass (0510de68-7dbb-4ce6-8973-513757e4b47b)
- Call ID: 0510de68-7dbb-4ce6-8973-513757e4b47b
-  Args:
-    type: :Person
-    source: :Princess_Mercedes
-  AddLiteral (99291e4c-4034-4234-b81f-7ab4ec1d1740)
- Call ID: 99291e4c-4034-4234-b81f-7ab4ec1d1740
-  Args:
-    literal_type: xsd:string
-    source: :Princess_Mercedes
-    relation: :hasSex
-    literal_value: Female
-  AddTriple (944ff405-098b-46a9-a0a6-e9dc28bc81fe)
- Call ID: 944ff405-098b-46a9-a0a6-e9dc28bc81fe
-  Args:
-    source: :Infanta_Margarita
-    relation: :hasFather
-    target: :Infante_Juan
-  AddTriple (c9341aaa-97fd-4c57-aa1d-8b8aa8be58b9)
- Call ID: c9341aaa-97fd-4c57-aa1d-8b8aa8be58b9
-  Args:
-    source: :Infanta_Margarita
-    target: :Princess_Mercedes
-    relation: :hasMother
-  AssignClass (fbbca7d2-6521-4de0-9bb6-bc323525fd9a)
- Call ID: fbbca7d2-6521-4de0-9bb6-bc323525fd9a
-  Args:
-    source: :Carlos_Zurita_y_Delgado
-    type: :Man
-  AssignClass (e34cb6d4-32c7-4fe1-8e43-395b57f5ee3b)
- Call ID: e34cb6d4-32c7-4fe1-8e43-395b57f5ee3b
-  Args:
-    source: :Carlos_Zurita_y_Delgado
-    type: :Person
-  AddLiteral (3b8f82f3-de10-465d-a1ec-019f78eec4cf)
- Call ID: 3b8f82f3-de10-465d-a1ec-019f78eec4cf
-  Args:
-    literal_value: Male
-    relation: :hasSex
-    source: :Carlos_Zurita_y_Delgado
-    literal_type: xsd:string
-  AddLiteral (bb3d0402-07f5-4c32-b90e-023d18f034ff)
- Call ID: bb3d0402-07f5-4c32-b90e-023d18f034ff
+  AddLiteral (6591ae0b-7574-474f-bb6f-f1f613ca7fe3)
+ Call ID: 6591ae0b-7574-474f-bb6f-f1f613ca7fe3
   Args:
     relation: :hasMarriageYear
-    literal_value: 1972
-    source: :Infanta_Margarita
     literal_type: xsd:integer
-  AddTriple (6483d381-3ea0-4389-96a1-01d8b1778e13)
- Call ID: 6483d381-3ea0-4389-96a1-01d8b1778e13
+    literal_value: 1886
+    source: Amélie_of_Orléans
+  AddTriple (f440a617-744c-45e7-a540-9831221b58d1)
+ Call ID: f440a617-744c-45e7-a540-9831221b58d1
   Args:
     relation: :hasRelation
-    target: :Carlos_Zurita_y_Delgado
-    source: :Infanta_Margarita
-  AddLiteral (ed60817e-63ee-4902-89d8-ecf68d1ff54f)
- Call ID: ed60817e-63ee-4902-89d8-ecf68d1ff54f
+    target: Carlos_I_of_Portugal
+    source: Amélie_of_Orléans
+  AssignClass (4bfc1e5a-49f4-43d7-93b3-c79911834398)
+ Call ID: 4bfc1e5a-49f4-43d7-93b3-c79911834398
   Args:
-    relation: :hasBirthYear
-    literal_value: 1939
-    literal_type: xsd:integer
-    source: :Infanta_Margarita
-  Finish (d9fe7ba6-260d-495c-bfcb-94e6267261ba)
- Call ID: d9fe7ba6-260d-495c-bfcb-94e6267261ba
+    source: Philippe_Count_of_Paris
+    type: :Man
+  AssignClass (2604861b-2ab5-4877-b03f-b9a455ec9366)
+ Call ID: 2604861b-2ab5-4877-b03f-b9a455ec9366
   Args:
+    source: Philippe_Count_of_Paris
+    type: :Person
+  AssignClass (9608f97c-0264-4d1b-ac2a-90233ec85530)
+ Call ID: 9608f97c-0264-4d1b-ac2a-90233ec85530
+  Args:
+    source: Marie_Isabelle_dOrléans
+    type: :Woman
+  AssignClass (debc495b-b0a2-47a7-bad8-8a4affa813cb)
+ Call ID: debc495b-b0a2-47a7-bad8-8a4affa813cb
+  Args:
+    source: Marie_Isabelle_dOrléans
+    type: :Person
+  AddTriple (e5d35251-75a1-42a3-a5b9-2d9852bc8d19)
+ Call ID: e5d35251-75a1-42a3-a5b9-2d9852bc8d19
+  Args:
+    source: Amélie_of_Orléans
+    target: Philippe_Count_of_Paris
+    relation: :hasFather
+  AddTriple (e8f90317-b76c-43e0-85a6-912b7aaa978a)
+ Call ID: e8f90317-b76c-43e0-85a6-912b7aaa978a
+  Args:
+    relation: :hasMother
+    target: Marie_Isabelle_dOrléans
+    source: Amélie_of_Orléans
+  AssignClass (dad16c43-3588-43db-8868-a5b8c26ccfea)
+ Call ID: dad16c43-3588-43db-8868-a5b8c26ccfea
+  Args:
+    source: Ferdinand_Philippe_Duke_of_Orléans
+    type: :Man
+  AssignClass (dd7d8eb5-e340-43a7-b938-209e6b2a0ffe)
+ Call ID: dd7d8eb5-e340-43a7-b938-209e6b2a0ffe
+  Args:
+    source: Ferdinand_Philippe_Duke_of_Orléans
+    type: :Person
+  AssignClass (f8049a79-8e21-4860-830b-95a397332e61)
+ Call ID: f8049a79-8e21-4860-830b-95a397332e61
+  Args:
+    source: Helena_of_Mecklenburg-Schwerin
+    type: :Woman
+  AssignClass (3a61c062-7d3a-4a9d-b734-479d4696e9cb)
+ Call ID: 3a61c062-7d3a-4a9d-b734-479d4696e9cb
+  Args:
+    source: Helena_of_Mecklenburg-Schwerin
+    type: :Person
+  AddTriple (ca53b38a-b1dc-4cab-ae16-1e52935b958a)
+ Call ID: ca53b38a-b1dc-4cab-ae16-1e52935b958a
+  Args:
+    relation: :hasFather
+    target: Ferdinand_Philippe_Duke_of_Orléans
+    source: Philippe_Count_of_Paris
+  AddTriple (f13596db-2785-4f9c-a183-9d428b649899)
+ Call ID: f13596db-2785-4f9c-a183-9d428b649899
+  Args:
+    source: Philippe_Count_of_Paris
+    relation: :hasMother
+    target: Helena_of_Mecklenburg-Schwerin
+  AssignClass (a8ea3c98-718a-42c5-9eaa-bdbe54bdf2d7)
+ Call ID: a8ea3c98-718a-42c5-9eaa-bdbe54bdf2d7
+  Args:
+    source: Antoine_Duke_of_Montpensier
+    type: :Man
+  AssignClass (5834a2fc-a554-4efe-baff-f95e3a577796)
+ Call ID: 5834a2fc-a554-4efe-baff-f95e3a577796
+  Args:
+    source: Antoine_Duke_of_Montpensier
+    type: :Person
+  AssignClass (d5cad921-5c9d-482c-910b-1d31beff2da5)
+ Call ID: d5cad921-5c9d-482c-910b-1d31beff2da5
+  Args:
+    source: Luisa_Fernanda_of_Spain
+    type: :Woman
+  AssignClass (1dd47e5c-e47f-4b6d-b156-b9fed6351b64)
+ Call ID: 1dd47e5c-e47f-4b6d-b156-b9fed6351b64
+  Args:
+    source: Luisa_Fernanda_of_Spain
+    type: :Person
+  AddTriple (549583fb-6f1d-4f8d-b4a5-22a147f0383e)
+ Call ID: 549583fb-6f1d-4f8d-b4a5-22a147f0383e
+  Args:
+    source: Marie_Isabelle_dOrléans
+    target: Antoine_Duke_of_Montpensier
+    relation: :hasFather
+  AddTriple (420d366f-5090-475b-8310-810af1b8234a)
+ Call ID: 420d366f-5090-475b-8310-810af1b8234a
+  Args:
+    target: Luisa_Fernanda_of_Spain
+    relation: :hasMother
+    source: Marie_Isabelle_dOrléans
+  AssignClass (a24bdfa5-b766-49b7-a4c3-2dc025d2f805)
+ Call ID: a24bdfa5-b766-49b7-a4c3-2dc025d2f805
+  Args:
+    source: Louis-Philippe_I_of_France
+    type: :Man
+  AssignClass (9f170419-ab1b-4f40-8069-e1010788e1e8)
+ Call ID: 9f170419-ab1b-4f40-8069-e1010788e1e8
+  Args:
+    source: Louis-Philippe_I_of_France
+    type: :Person
+  AssignClass (a66a8ca7-6113-4368-ab4d-fcf08311bc52)
+ Call ID: a66a8ca7-6113-4368-ab4d-fcf08311bc52
+  Args:
+    source: Maria_Amalia_of_the_Two_Sicilies
+    type: :Woman
+  AssignClass (1504eeae-a488-4c0d-9e0d-b3cf077b802f)
+ Call ID: 1504eeae-a488-4c0d-9e0d-b3cf077b802f
+  Args:
+    source: Maria_Amalia_of_the_Two_Sicilies
+    type: :Person
+  AddTriple (0bc0f3ae-a9df-4f6f-be02-e552096a6a26)
+ Call ID: 0bc0f3ae-a9df-4f6f-be02-e552096a6a26
+  Args:
+    source: Ferdinand_Philippe_Duke_of_Orléans
+    target: Louis-Philippe_I_of_France
+    relation: :hasFather
+  AddTriple (80a5d743-ff07-4a90-b554-f3309bbed231)
+ Call ID: 80a5d743-ff07-4a90-b554-f3309bbed231
+  Args:
+    relation: :hasMother
+    target: Maria_Amalia_of_the_Two_Sicilies
+    source: Ferdinand_Philippe_Duke_of_Orléans
+  AddTriple (d3e6df46-6225-44f4-b633-ad293086b8c0)
+ Call ID: d3e6df46-6225-44f4-b633-ad293086b8c0
+  Args:
+    target: Louis-Philippe_I_of_France
+    relation: :hasFather
+    source: Antoine_Duke_of_Montpensier
+  AddTriple (bf7dec76-b403-4246-ad46-080901276ec1)
+ Call ID: bf7dec76-b403-4246-ad46-080901276ec1
+  Args:
+    source: Antoine_Duke_of_Montpensier
+    relation: :hasMother
+    target: Maria_Amalia_of_the_Two_Sicilies
+  AssignClass (94c9b289-9924-47f3-9400-110fc167f543)
+ Call ID: 94c9b289-9924-47f3-9400-110fc167f543
+  Args:
+    source: Luís_I_of_Portugal
+    type: :Man
+  AssignClass (3476fa87-3d53-450c-892a-d2b85326ee28)
+ Call ID: 3476fa87-3d53-450c-892a-d2b85326ee28
+  Args:
+    source: Luís_I_of_Portugal
+    type: :Person
+  AssignClass (ad1632b4-f86b-4706-a1d6-6b17d73a796a)
+ Call ID: ad1632b4-f86b-4706-a1d6-6b17d73a796a
+  Args:
+    source: Maria_Pia_of_Savoy
+    type: :Woman
+  AssignClass (b88de8bf-5dc8-4554-af83-9d172326b578)
+ Call ID: b88de8bf-5dc8-4554-af83-9d172326b578
+  Args:
+    source: Maria_Pia_of_Savoy
+    type: :Person
+  AddTriple (0be1bb92-343a-44d0-84ac-8282eb5942b2)
+ Call ID: 0be1bb92-343a-44d0-84ac-8282eb5942b2
+  Args:
+    target: Luís_I_of_Portugal
+    relation: :hasFather
+    source: Carlos_I_of_Portugal
+  AddTriple (c457e693-3f86-48bf-859a-cec34552680e)
+ Call ID: c457e693-3f86-48bf-859a-cec34552680e
+  Args:
+    source: Carlos_I_of_Portugal
+    relation: :hasMother
+    target: Maria_Pia_of_Savoy
+  AssignClass (a922d550-60a9-43a7-986a-7bd990ef1795)
+ Call ID: a922d550-60a9-43a7-986a-7bd990ef1795
+  Args:
+    source: Luís_Filipe_Prince_Royal_of_Portugal
+    type: :Man
+  AssignClass (9cd2af15-6f12-4789-bafa-1b63091daed5)
+ Call ID: 9cd2af15-6f12-4789-bafa-1b63091daed5
+  Args:
+    source: Luís_Filipe_Prince_Royal_of_Portugal
+    type: :Person
+  AssignClass (ea37e91b-afa1-48ae-a87a-eeb03cbccae7)
+ Call ID: ea37e91b-afa1-48ae-a87a-eeb03cbccae7
+  Args:
+    source: Manuel_II_of_Portugal
+    type: :Man
+  AssignClass (4949450c-0bf6-4810-a588-d716ab562482)
+ Call ID: 4949450c-0bf6-4810-a588-d716ab562482
+  Args:
+    source: Manuel_II_of_Portugal
+    type: :Person
+  AddTriple (73f34ddd-02ff-4b1c-86d2-65ea5857fcb5)
+ Call ID: 73f34ddd-02ff-4b1c-86d2-65ea5857fcb5
+  Args:
+    target: Carlos_I_of_Portugal
+    relation: :hasFather
+    source: Luís_Filipe_Prince_Royal_of_Portugal
+  AddTriple (a6da014f-270f-44df-8f97-63fea97271c5)
+ Call ID: a6da014f-270f-44df-8f97-63fea97271c5
+  Args:
+    source: Luís_Filipe_Prince_Royal_of_Portugal
+    relation: :hasMother
+    target: Amélie_of_Orléans
+  AddTriple (3d839551-d7d0-4e15-a3c6-0a63ecb8e3e4)
+ Call ID: 3d839551-d7d0-4e15-a3c6-0a63ecb8e3e4
+  Args:
+    source: Manuel_II_of_Portugal
+    relation: :hasFather
+    target: Carlos_I_of_Portugal
+  AddTriple (e308c35d-7119-4428-a5bb-657ec709514d)
+ Call ID: e308c35d-7119-4428-a5bb-657ec709514d
+  Args:
+    target: Amélie_of_Orléans
+    relation: :hasMother
+    source: Manuel_II_of_Portugal
+  Finish (cbbfcf62-8035-4e73-aefd-73e0fc82c684)
+ Call ID: cbbfcf62-8035-4e73-aefd-73e0fc82c684
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -635,37 +928,67 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Carlos_Zurita_y_Delgado a :Man,
+  data:Lu%C3%ADs_Filipe_Prince_Royal_of_Portugal a :Man,
           :Person ;
-      :hasSex "Male"^^xsd:string .
+      :hasFather data:Carlos_I_of_Portugal ;
+      :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
 
-  data:Felipe_VI a :Man,
+  data:Manuel_II_of_Portugal a :Man,
           :Person ;
-      :hasSex "Male"^^xsd:string .
+      :hasFather data:Carlos_I_of_Portugal ;
+      :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
 
-  data:Infanta_Margarita a :Person,
+  data:Antoine_Duke_of_Montpensier a :Man,
+          :Person ;
+      :hasFather data:Louis-Philippe_I_of_France ;
+      :hasMother data:Maria_Amalia_of_the_Two_Sicilies .
+
+  data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans a :Man,
+          :Person ;
+      :hasFather data:Louis-Philippe_I_of_France ;
+      :hasMother data:Maria_Amalia_of_the_Two_Sicilies .
+
+  data:Helena_of_Mecklenburg-Schwerin a :Person,
+          :Woman .
+
+  data:Lu%C3%ADs_I_of_Portugal a :Man,
+          :Person .
+
+  data:Luisa_Fernanda_of_Spain a :Person,
+          :Woman .
+
+  data:Maria_Pia_of_Savoy a :Person,
+          :Woman .
+
+  data:Marie_Isabelle_dOrl%C3%A9ans a :Person,
           :Woman ;
-      :hasBirthYear 1939 ;
-      :hasFather data:Infante_Juan ;
-      :hasMarriageYear 1972 ;
-      :hasMother data:Princess_Mercedes ;
-      :hasRelation data:Carlos_Zurita_y_Delgado ;
-      :hasSex "Female"^^xsd:string ;
-      :isAuntOf data:Felipe_VI ;
-      :isSisterOf data:Juan_Carlos_I .
+      :hasFather data:Antoine_Duke_of_Montpensier ;
+      :hasMother data:Luisa_Fernanda_of_Spain .
 
-  data:Infante_Juan a :Man,
+  data:Philippe_Count_of_Paris a :Man,
           :Person ;
-      :hasSex "Male"^^xsd:string .
+      :hasFather data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+      :hasMother data:Helena_of_Mecklenburg-Schwerin .
 
-  data:Juan_Carlos_I a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :hasSister data:Infanta_Margarita .
-
-  data:Princess_Mercedes a :Person,
+  data:Am%C3%A9lie_of_Orl%C3%A9ans a :Person,
           :Woman ;
-      :hasSex "Female"^^xsd:string .
+      :hasBirthYear 1865 ;
+      :hasDeathYear 1951 ;
+      :hasFather data:Philippe_Count_of_Paris ;
+      :hasMarriageYear 1886 ;
+      :hasMother data:Marie_Isabelle_dOrl%C3%A9ans ;
+      :hasRelation data:Carlos_I_of_Portugal .
+
+  data:Louis-Philippe_I_of_France a :Man,
+          :Person .
+
+  data:Maria_Amalia_of_the_Two_Sicilies a :Person,
+          :Woman .
+
+  data:Carlos_I_of_Portugal a :Man,
+          :Person ;
+      :hasFather data:Lu%C3%ADs_I_of_Portugal ;
+      :hasMother data:Maria_Pia_of_Savoy .
 
 
 
@@ -677,973 +1000,398 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (a8b9682b-0ff7-4ba2-8903-c6e952ae0716)
- Call ID: a8b9682b-0ff7-4ba2-8903-c6e952ae0716
+  ValidateShacl (f10cc1d5-dadc-475d-ace0-986327c1576b)
+ Call ID: f10cc1d5-dadc-475d-ace0-986327c1576b
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:54
+Total violations:48
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Carlos_Zurita_y_Delgado' is not assigned the class ':Sex'.
+      The value node Carlos_I_of_Portugal is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Carlos_I_of_Portugal', class=':Man')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Juan' is not assigned the class ':Sex'.
+      The value node Louis-Philippe_I_of_France is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Louis-Philippe_I_of_France', class=':Man')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Felipe_VI' is not assigned the class ':Sex'.
+      The value node Carlos_I_of_Portugal is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Carlos_I_of_Portugal', class=':Man')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Juan_Carlos_I' is not assigned the class ':Sex'.
+      The value node Louis-Philippe_I_of_France is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Louis-Philippe_I_of_France', class=':Man')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Carlos_Zurita_y_Delgado' is not assigned the class ':Sex'.
+      The value node Lu%C3%ADs_I_of_Portugal is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Lu%C3%ADs_I_of_Portugal', class=':Man')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Juan' is not assigned the class ':Sex'.
+      The value node Ferdinand_Philippe_Duke_of_Orl%C3%A9ans is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Ferdinand_Philippe_Duke_of_Orl%C3%A9ans', class=':Man')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Felipe_VI' is not assigned the class ':Sex'.
+      The value node Am%C3%A9lie_of_Orl%C3%A9ans is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Am%C3%A9lie_of_Orl%C3%A9ans', class=':Woman')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Juan_Carlos_I' is not assigned the class ':Sex'.
+      The value node Maria_Amalia_of_the_Two_Sicilies is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Maria_Amalia_of_the_Two_Sicilies', class=':Woman')
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Juan' is not assigned the class ':Sex'.
+      The value node Am%C3%A9lie_of_Orl%C3%A9ans is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Am%C3%A9lie_of_Orl%C3%A9ans', class=':Woman')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Mercedes' is not assigned the class ':Sex'.
+      The value node Maria_Amalia_of_the_Two_Sicilies is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
+      AssignClass(node='Maria_Amalia_of_the_Two_Sicilies', class=':Woman')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Felipe_VI' is not assigned the class ':Sex'.
+      The value node Maria_Pia_of_Savoy is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Maria_Pia_of_Savoy', class=':Woman')
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Margarita' is not assigned the class ':Sex'.
+      The value node Helena_of_Mecklenburg-Schwerin is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
+      AssignClass(node='Helena_of_Mecklenburg-Schwerin', class=':Woman')
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Carlos_Zurita_y_Delgado' is not assigned the class ':Sex'.
+      The value node Carlos_I_of_Portugal is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Carlos_I_of_Portugal', class=':Man')
 
 
   Violation [14]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Juan_Carlos_I' is not assigned the class ':Sex'.
+      The value node Louis-Philippe_I_of_France is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Louis-Philippe_I_of_France', class=':Man')
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Infante_Juan' is the value for 'hasFather' on 'Infanta_Margarita' but lacks the required classes ':Ancestor' or ':Man'.
+      The value node Carlos_I_of_Portugal is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Infante_Juan', ':Ancestor')
+      AssignClass(node='Carlos_I_of_Portugal', class=':Man')
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Princess_Mercedes' is the value for 'hasMother' on 'Infanta_Margarita' but lacks the required classes ':Ancestor' or ':Woman'.
+      The value node Louis-Philippe_I_of_France is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Mercedes', ':Ancestor')
+      AssignClass(node='Louis-Philippe_I_of_France', class=':Man')
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Juan' is not assigned the class ':Sex'.
+      The value node Lu%C3%ADs_I_of_Portugal is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Lu%C3%ADs_I_of_Portugal', class=':Man')
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Mercedes' is not assigned the class ':Sex'.
+      The value node Philippe_Count_of_Paris is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
+      AssignClass(node='Philippe_Count_of_Paris', class=':Man')
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Felipe_VI' is not assigned the class ':Sex'.
+      The value node Ferdinand_Philippe_Duke_of_Orl%C3%A9ans is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Ferdinand_Philippe_Duke_of_Orl%C3%A9ans', class=':Man')
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Margarita' is not assigned the class ':Sex'.
+      The value node Antoine_Duke_of_Montpensier is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
+      AssignClass(node='Antoine_Duke_of_Montpensier', class=':Man')
 
 
   Violation [21]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Carlos_Zurita_y_Delgado' is not assigned the class ':Sex'.
+      The value node Am%C3%A9lie_of_Orl%C3%A9ans is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Am%C3%A9lie_of_Orl%C3%A9ans', class=':Woman')
 
 
   Violation [22]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Juan_Carlos_I' is not assigned the class ':Sex'.
+      The value node Maria_Amalia_of_the_Two_Sicilies is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Maria_Amalia_of_the_Two_Sicilies', class=':Woman')
 
 
   Violation [23]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Juan' is not assigned the class ':Sex'.
+      The value node Am%C3%A9lie_of_Orl%C3%A9ans is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Am%C3%A9lie_of_Orl%C3%A9ans', class=':Woman')
 
 
   Violation [24]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Mercedes' is not assigned the class ':Sex'.
+      The value node Maria_Amalia_of_the_Two_Sicilies is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
+      AssignClass(node='Maria_Amalia_of_the_Two_Sicilies', class=':Woman')
 
 
   Violation [25]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Felipe_VI' is not assigned the class ':Sex'.
+      The value node Maria_Pia_of_Savoy is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Maria_Pia_of_Savoy', class=':Woman')
 
 
   Violation [26]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Margarita' is not assigned the class ':Sex'.
+      The value node Marie_Isabelle_dOrl%C3%A9ans is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
+      AssignClass(node='Marie_Isabelle_dOrl%C3%A9ans', class=':Woman')
 
 
   Violation [27]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Carlos_Zurita_y_Delgado' is not assigned the class ':Sex'.
+      The value node Helena_of_Mecklenburg-Schwerin is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Helena_of_Mecklenburg-Schwerin', class=':Woman')
 
 
   Violation [28]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Juan_Carlos_I' is not assigned the class ':Sex'.
+      The value node Luisa_Fernanda_of_Spain is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Luisa_Fernanda_of_Spain', class=':Woman')
 
 
   Violation [29]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Mercedes' is not assigned the class ':Sex'.
+      The value node Carlos_I_of_Portugal is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
+      AssignClass(node='Carlos_I_of_Portugal', class=':Man')
 
 
   Violation [30]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Felipe_VI' is not assigned the class ':Sex'.
+      The value node Louis-Philippe_I_of_France is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Louis-Philippe_I_of_France', class=':Man')
 
 
   Violation [31]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Margarita' is not assigned the class ':Sex'.
+      The value node Carlos_I_of_Portugal is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
+      AssignClass(node='Carlos_I_of_Portugal', class=':Man')
 
 
   Violation [32]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Juan' is not assigned the class ':Sex'.
+      The value node Louis-Philippe_I_of_France is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Louis-Philippe_I_of_France', class=':Man')
 
 
   Violation [33]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Carlos_Zurita_y_Delgado' is not assigned the class ':Sex'.
+      The value node Lu%C3%ADs_I_of_Portugal is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Lu%C3%ADs_I_of_Portugal', class=':Man')
 
 
   Violation [34]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Juan_Carlos_I' is not assigned the class ':Sex'.
+      The value node Philippe_Count_of_Paris is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Philippe_Count_of_Paris', class=':Man')
 
 
   Violation [35]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Infante_Juan' is the value for 'hasFather' on 'Infanta_Margarita' but lacks the required classes ':Ancestor' or ':Man'.
+      The value node Ferdinand_Philippe_Duke_of_Orl%C3%A9ans is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Infante_Juan', ':Ancestor')
+      AssignClass(node='Ferdinand_Philippe_Duke_of_Orl%C3%A9ans', class=':Man')
 
 
   Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Mercedes' is the value for 'hasMother' on 'Infanta_Margarita' but lacks the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Mercedes', ':Ancestor')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Mercedes' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Felipe_VI' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Margarita' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Juan' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Carlos_Zurita_y_Delgado' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Juan_Carlos_I' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Mercedes' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Felipe_VI' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Margarita' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Infante_Juan' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Carlos_Zurita_y_Delgado' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Juan_Carlos_I' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [49]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Infante_Juan' is the value for 'hasFather' on 'Infanta_Margarita' but lacks the required classes ':Ancestor' or ':Man'.
+      The value node Antoine_Duke_of_Montpensier is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Infante_Juan', ':Ancestor')
-
-
-  Violation [50]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Mercedes' is the value for 'hasMother' on 'Infanta_Margarita' but lacks the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Mercedes', ':Ancestor')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Mercedes' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Margarita' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Mercedes' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Infanta_Margarita' is not assigned the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Female', ':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (94a542e7-28ec-487f-8301-3ae6ba9d5799)
- Call ID: 94a542e7-28ec-487f-8301-3ae6ba9d5799
-  Args:
-    source: :Male
-    type: :Sex
-  AssignClass (687277b8-699c-4998-8ef9-2969b672ad10)
- Call ID: 687277b8-699c-4998-8ef9-2969b672ad10
-  Args:
-    source: :Female
-    type: :Sex
-  AssignClass (c2ce3466-ddec-45d9-bf24-e9d8392d8153)
- Call ID: c2ce3466-ddec-45d9-bf24-e9d8392d8153
-  Args:
-    source: :Infante_Juan
-    type: :Ancestor
-  AssignClass (436986df-19c5-4f4d-9f85-f318f05a30c5)
- Call ID: 436986df-19c5-4f4d-9f85-f318f05a30c5
-  Args:
-    type: :Ancestor
-    source: :Princess_Mercedes
-  ValidateShacl (410a90e4-5d34-48c6-a760-51849a1d8afa)
- Call ID: 410a90e4-5d34-48c6-a760-51849a1d8afa
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
-
-  data:Carlos_Zurita_y_Delgado a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Felipe_VI a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Infanta_Margarita a :Person,
-          :Woman ;
-      :hasBirthYear 1939 ;
-      :hasFather data:Infante_Juan ;
-      :hasMarriageYear 1972 ;
-      :hasMother data:Princess_Mercedes ;
-      :hasRelation data:Carlos_Zurita_y_Delgado ;
-      :hasSex "Female"^^xsd:string ;
-      :isAuntOf data:Felipe_VI ;
-      :isSisterOf data:Juan_Carlos_I .
-
-  data:Infante_Juan a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Juan_Carlos_I a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string ;
-      :hasSister data:Infanta_Margarita .
-
-  data:Princess_Mercedes a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:54
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Infante_Juan' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Mercedes' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Infante_Juan' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Mercedes' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Infante_Juan' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Mercedes' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Carlos_Zurita_y_Delgado' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Infante_Juan' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felipe_VI' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Juan_Carlos_I' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Carlos_Zurita_y_Delgado' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Infante_Juan' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felipe_VI' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Juan_Carlos_I' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Mercedes' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felipe_VI' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Infante_Juan' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Carlos_Zurita_y_Delgado' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Juan_Carlos_I' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Infanta_Margarita' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Mercedes' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felipe_VI' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Infante_Juan' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Carlos_Zurita_y_Delgado' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Juan_Carlos_I' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Infanta_Margarita' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Mercedes' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felipe_VI' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Infante_Juan' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Carlos_Zurita_y_Delgado' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Juan_Carlos_I' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Infanta_Margarita' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Mercedes' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felipe_VI' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Infanta_Margarita' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Infante_Juan' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Antoine_Duke_of_Montpensier', class=':Man')
 
 
   Violation [37]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Carlos_Zurita_y_Delgado' does not have the required class ':Sex'.
+      The value node Am%C3%A9lie_of_Orl%C3%A9ans is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Am%C3%A9lie_of_Orl%C3%A9ans', class=':Woman')
 
 
   Violation [38]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Juan_Carlos_I' does not have the required class ':Sex'.
+      The value node Maria_Amalia_of_the_Two_Sicilies is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Maria_Amalia_of_the_Two_Sicilies', class=':Woman')
 
 
   Violation [39]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Mercedes' does not have the required class ':Sex'.
+      The value node Am%C3%A9lie_of_Orl%C3%A9ans is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+      AssignClass(node='Am%C3%A9lie_of_Orl%C3%A9ans', class=':Woman')
 
 
   Violation [40]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felipe_VI' does not have the required class ':Sex'.
+      The value node Maria_Amalia_of_the_Two_Sicilies is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Maria_Amalia_of_the_Two_Sicilies', class=':Woman')
 
 
   Violation [41]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Infanta_Margarita' does not have the required class ':Sex'.
+      The value node Maria_Pia_of_Savoy is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+      AssignClass(node='Maria_Pia_of_Savoy', class=':Woman')
 
 
   Violation [42]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Infante_Juan' does not have the required class ':Sex'.
+      The value node Marie_Isabelle_dOrl%C3%A9ans is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Marie_Isabelle_dOrl%C3%A9ans', class=':Woman')
 
 
   Violation [43]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Carlos_Zurita_y_Delgado' does not have the required class ':Sex'.
+      The value node Helena_of_Mecklenburg-Schwerin is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Helena_of_Mecklenburg-Schwerin', class=':Woman')
 
 
   Violation [44]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Juan_Carlos_I' does not have the required class ':Sex'.
+      The value node Luisa_Fernanda_of_Spain is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Luisa_Fernanda_of_Spain', class=':Woman')
 
 
   Violation [45]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Mercedes' does not have the required class ':Sex'.
+      The value node Philippe_Count_of_Paris is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+      AssignClass(node='Philippe_Count_of_Paris', class=':Man')
 
 
   Violation [46]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Felipe_VI' does not have the required class ':Sex'.
+      The value node Antoine_Duke_of_Montpensier is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Antoine_Duke_of_Montpensier', class=':Man')
 
 
   Violation [47]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Infanta_Margarita' does not have the required class ':Sex'.
+      The value node Marie_Isabelle_dOrl%C3%A9ans is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+      AssignClass(node='Marie_Isabelle_dOrl%C3%A9ans', class=':Woman')
 
 
   Violation [48]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Infante_Juan' does not have the required class ':Sex'.
+      The value node Luisa_Fernanda_of_Spain is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Carlos_Zurita_y_Delgado' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Juan_Carlos_I' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Mercedes' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Infanta_Margarita' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Mercedes' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Infanta_Margarita' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Female'.
+      AssignClass(node='Luisa_Fernanda_of_Spain', class=':Woman')
 
 
 
@@ -1652,98 +1400,68 @@ Violations:
 
 []
 Tool Calls:
-  Finish (f94dd625-86f6-4717-a11e-1db5fdb76491)
- Call ID: f94dd625-86f6-4717-a11e-1db5fdb76491
+  AssignClass (9fafa532-e4b9-47a8-a81b-d663940a0694)
+ Call ID: 9fafa532-e4b9-47a8-a81b-d663940a0694
   Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (fe849a0c-f99d-4afa-8cbc-1a9542848b05)
- Call ID: fe849a0c-f99d-4afa-8cbc-1a9542848b05
+    type: :Ancestor
+    source: Carlos_I_of_Portugal
+  AssignClass (5fe8e388-2d60-4339-bdf4-dc642bd1bff0)
+ Call ID: 5fe8e388-2d60-4339-bdf4-dc642bd1bff0
   Args:
-    literal_type: xsd:string
-    source: :Carlos_Zurita_y_Delgado
-    relation: :hasSex
-    literal_value: Male
-  RemoveLiteral (e8fa870a-3bd1-475c-8ac2-6aa242472650)
- Call ID: e8fa870a-3bd1-475c-8ac2-6aa242472650
+    type: :Ancestor
+    source: Louis-Philippe_I_of_France
+  AssignClass (5e087860-1b0d-4a36-a897-1dfb1fcc1708)
+ Call ID: 5e087860-1b0d-4a36-a897-1dfb1fcc1708
   Args:
-    literal_value: Male
-    relation: :hasSex
-    literal_type: xsd:string
-    source: :Felipe_VI
-  RemoveLiteral (43574570-2a87-4071-9cc6-c800ea91a512)
- Call ID: 43574570-2a87-4071-9cc6-c800ea91a512
+    type: :Ancestor
+    source: Lu%C3%ADs_I_of_Portugal
+  AssignClass (4bb39cab-6cce-4cc6-b9bd-d36f06ab6928)
+ Call ID: 4bb39cab-6cce-4cc6-b9bd-d36f06ab6928
   Args:
-    source: :Infante_Juan
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Male
-  RemoveLiteral (994e9784-db43-4bc3-ba29-382b525c4dd7)
- Call ID: 994e9784-db43-4bc3-ba29-382b525c4dd7
+    type: :Ancestor
+    source: Ferdinand_Philippe_Duke_of_Orl%C3%A9ans
+  AssignClass (c662cfca-749a-4ef7-9aab-70183b7bd8c8)
+ Call ID: c662cfca-749a-4ef7-9aab-70183b7bd8c8
   Args:
-    literal_value: Male
-    relation: :hasSex
-    source: :Juan_Carlos_I
-    literal_type: xsd:string
-  RemoveLiteral (229d95b6-ac91-4f6f-8e8a-fa572c83f6eb)
- Call ID: 229d95b6-ac91-4f6f-8e8a-fa572c83f6eb
+    type: :Ancestor
+    source: Am%C3%A9lie_of_Orl%C3%A9ans
+  AssignClass (c99c06a1-3d8a-476d-826c-9526902c4a85)
+ Call ID: c99c06a1-3d8a-476d-826c-9526902c4a85
   Args:
-    source: :Infanta_Margarita
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Female
-  RemoveLiteral (6d22edac-fb61-4901-b302-b096938b677c)
- Call ID: 6d22edac-fb61-4901-b302-b096938b677c
+    type: :Ancestor
+    source: Maria_Amalia_of_the_Two_Sicilies
+  AssignClass (4139e25d-66c6-4ba7-9019-13896b65dcb6)
+ Call ID: 4139e25d-66c6-4ba7-9019-13896b65dcb6
   Args:
-    literal_type: xsd:string
-    source: :Princess_Mercedes
-    relation: :hasSex
-    literal_value: Female
-  AddTriple (8ff3bc80-c363-43bf-a5b3-1ddf5dc73cd8)
- Call ID: 8ff3bc80-c363-43bf-a5b3-1ddf5dc73cd8
+    source: Maria_Pia_of_Savoy
+    type: :Ancestor
+  AssignClass (5a85701e-e3da-4da3-9b32-8908f7b73fb1)
+ Call ID: 5a85701e-e3da-4da3-9b32-8908f7b73fb1
   Args:
-    target: :Male
-    source: :Carlos_Zurita_y_Delgado
-    relation: :hasSex
-  AddTriple (33f981ca-ebbc-43b4-b16d-10ab7eac09a5)
- Call ID: 33f981ca-ebbc-43b4-b16d-10ab7eac09a5
+    source: Helena_of_Mecklenburg-Schwerin
+    type: :Ancestor
+  AssignClass (47cfaff6-a5ba-49dc-bc37-2d2b90fb61b1)
+ Call ID: 47cfaff6-a5ba-49dc-bc37-2d2b90fb61b1
   Args:
-    relation: :hasSex
-    target: :Male
-    source: :Felipe_VI
-  AddTriple (87818c04-cb4d-4b34-a4b6-4f9e5c071a67)
- Call ID: 87818c04-cb4d-4b34-a4b6-4f9e5c071a67
+    source: Philippe_Count_of_Paris
+    type: :Ancestor
+  AssignClass (090cf340-547b-45e4-ba65-3c36f77df033)
+ Call ID: 090cf340-547b-45e4-ba65-3c36f77df033
   Args:
-    relation: :hasSex
-    source: :Infante_Juan
-    target: :Male
-  AddTriple (c89e8521-ad04-4fdb-b098-50e3a127acae)
- Call ID: c89e8521-ad04-4fdb-b098-50e3a127acae
+    type: :Ancestor
+    source: Antoine_Duke_of_Montpensier
+  AssignClass (7ef2fb47-c3f2-4096-ac5f-88c5981c37b4)
+ Call ID: 7ef2fb47-c3f2-4096-ac5f-88c5981c37b4
   Args:
-    relation: :hasSex
-    target: :Male
-    source: :Juan_Carlos_I
-  AddTriple (5c168698-0789-4e1a-9834-2a62b7e7381f)
- Call ID: 5c168698-0789-4e1a-9834-2a62b7e7381f
+    type: :Ancestor
+    source: Marie_Isabelle_dOrl%C3%A9ans
+  AssignClass (1b43cd0c-3c57-46a8-a084-3d71273c28bd)
+ Call ID: 1b43cd0c-3c57-46a8-a084-3d71273c28bd
   Args:
-    relation: :hasSex
-    target: :Female
-    source: :Infanta_Margarita
-  AddTriple (89562bab-c8b2-480f-b7da-03ccb0042b05)
- Call ID: 89562bab-c8b2-480f-b7da-03ccb0042b05
-  Args:
-    relation: :hasSex
-    source: :Princess_Mercedes
-    target: :Female
-  ValidateShacl (66cbcd34-5851-4534-b0b9-e0fd0f2108e7)
- Call ID: 66cbcd34-5851-4534-b0b9-e0fd0f2108e7
+    source: Luisa_Fernanda_of_Spain
+    type: :Ancestor
+  ValidateShacl (2e23f375-db41-48d7-904d-097f267ce72a)
+ Call ID: 2e23f375-db41-48d7-904d-097f267ce72a
   Args:
 
 ================================= Tool Message =================================
@@ -1797,43 +1515,79 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Carlos_Zurita_y_Delgado a :Man,
+  data:Lu%C3%ADs_Filipe_Prince_Royal_of_Portugal a :Man,
           :Person ;
-      :hasSex data:Male .
+      :hasFather data:Carlos_I_of_Portugal ;
+      :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
 
-  data:Felipe_VI a :Man,
+  data:Manuel_II_of_Portugal a :Man,
           :Person ;
-      :hasSex data:Male .
+      :hasFather data:Carlos_I_of_Portugal ;
+      :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
 
-  data:Infanta_Margarita a :Person,
-          :Woman ;
-      :hasBirthYear 1939 ;
-      :hasFather data:Infante_Juan ;
-      :hasMarriageYear 1972 ;
-      :hasMother data:Princess_Mercedes ;
-      :hasRelation data:Carlos_Zurita_y_Delgado ;
-      :hasSex data:Female ;
-      :isAuntOf data:Felipe_VI ;
-      :isSisterOf data:Juan_Carlos_I .
-
-  data:Infante_Juan a :Ancestor,
+  data:Antoine_Duke_of_Montpensier a :Ancestor,
           :Man,
           :Person ;
-      :hasSex data:Male .
+      :hasFather data:Louis-Philippe_I_of_France ;
+      :hasMother data:Maria_Amalia_of_the_Two_Sicilies .
 
-  data:Juan_Carlos_I a :Man,
+  data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans a :Ancestor,
+          :Man,
           :Person ;
-      :hasSex data:Male ;
-      :hasSister data:Infanta_Margarita .
+      :hasFather data:Louis-Philippe_I_of_France ;
+      :hasMother data:Maria_Amalia_of_the_Two_Sicilies .
 
-  data:Princess_Mercedes a :Ancestor,
+  data:Helena_of_Mecklenburg-Schwerin a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Lu%C3%ADs_I_of_Portugal a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Luisa_Fernanda_of_Spain a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Maria_Pia_of_Savoy a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Marie_Isabelle_dOrl%C3%A9ans a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasFather data:Antoine_Duke_of_Montpensier ;
+      :hasMother data:Luisa_Fernanda_of_Spain .
 
-  data:Female a :Sex .
+  data:Philippe_Count_of_Paris a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Ferdinand_Philippe_Duke_of_Orl%C3%A9ans ;
+      :hasMother data:Helena_of_Mecklenburg-Schwerin .
 
-  data:Male a :Sex .
+  data:Am%C3%A9lie_of_Orl%C3%A9ans a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1865 ;
+      :hasDeathYear 1951 ;
+      :hasFather data:Philippe_Count_of_Paris ;
+      :hasMarriageYear 1886 ;
+      :hasMother data:Marie_Isabelle_dOrl%C3%A9ans ;
+      :hasRelation data:Carlos_I_of_Portugal .
+
+  data:Louis-Philippe_I_of_France a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Maria_Amalia_of_the_Two_Sicilies a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Carlos_I_of_Portugal a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Lu%C3%ADs_I_of_Portugal ;
+      :hasMother data:Maria_Pia_of_Savoy .
 
 
 
@@ -1845,6 +1599,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (347cc2b7-8eda-4b98-9805-5c500ebdec33)
- Call ID: 347cc2b7-8eda-4b98-9805-5c500ebdec33
+  Finish (a9cfa8f3-fc25-460d-b0b0-43b00393474e)
+ Call ID: a9cfa8f3-fc25-460d-b0b0-43b00393474e
   Args:

@@ -85,55 +85,90 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-King Juan Carlos IQueen Sofía
+The Crown PrinceThe Crown Princess
 
 
-The Duchess of Soria and HernaniThe Duke of Soria and Hernani
+Princess Tomislav
 
 
-The Dowager Duchess of Calabria
+Princess Alexander
 
 
-Infanta Sofía of Spain (Sofía de Todos los Santos de Borbón y Ortiz; born 29 April 2007) is a member of the Spanish royal family.
-She is the younger daughter of King Felipe VI and Queen Letizia and, as such, is second in the line of succession to the Spanish throne behind her sister, Leonor, Princess of Asturias.
-Sofía was born at the Ruber International Hospital in Madrid during the reign of her paternal grandfather, King Juan Carlos.
-Early life and family
+Princess Elizabeth
 
-Infanta Sofía was born on 29 April 2007 at 16:50 (CET) at the Ruber International Hospital in Madrid by means of a caesarean section, two days after due date.
-The parents, then the Prince and Princess of Asturias, did the same with Leonor's cells: they were taken to a private center in Arizona, which caused controversy in Spain.
-Sofía was named after her paternal grandmother, Queen Sofía.
-Education
 
-Like her older sister, in 2009, Sofía started her education at the Escuela Infantil Guardia Real, the daycare for the children of the Spanish Royal Guard.
-After announcing in April 2025 that the Infanta had decided not to undergo military service, in July 2025 the Royal Household confirmed that she would study Politics and International Relations at Forward College, an institution affiliated with the University of London.
-Activities
+Alexander, Crown Prince of Yugoslavia (Serbian: Александар Карађорђевић, Престолонаследник Југославије, romanized: Aleksandar Karađorđević, Prestolonaslednik Jugoslavije; born 17 July 1945), is the head of the House of Karađorđević, the former royal house of the defunct Kingdom of Yugoslavia and its predecessor the Kingdom of Serbia.
+Alexander is the only child of King Peter II and Princess Alexandra of Greece and Denmark.
+He held the position of crown prince in the Democratic Federal Yugoslavia for the first four-and-a-half months of his life, until the declaration of the Federal People's Republic of Yugoslavia later in November 1945, when the monarchy was abolished.
+In public he claims the crowned royal title of "Alexander II Karadjordjevic" (Serbian: Александар II Карађорђевић, Aleksandar II Karađorđević) as a pretender to the throne.
+Through his father, Alexander is a direct descendant of Queen Victoria, through his great-great-grandfather Prince Alfred, Duke of Saxe-Coburg and Gotha, Victoria's second eldest son.
+Alexander is known for his support of constitutional monarchism and his humanitarian work.
+He left Yugoslavia in April 1941 and arrived in London in June 1941.
+Commenting on the event and what happened to his father, Crown Prince Alexander said, "He  was too straight.
+On 29 November 1943, AVNOJ (formed by the Partisans) declared themselves the sovereign communist government of Yugoslavia and announced that they would take away all legal rights from the Royal government.
+On 10 August 1945, less than a month after Alexander's birth, AVNOJ named the country Democratic Federal Yugoslavia.
+On 29 November 1945, the country was declared a communist republic and changed its name to People's Federal Republic of Yugoslavia.
+In 1947, all members of Alexander's family except for his granduncle Prince George were deprived of their Yugoslav citizenship and their property was confiscated.
+As of 8 July 2015, the High Court in Belgrade found that decree 392, issued by the Presidency of the Presidium of the National Assembly on 3 August 1947, which deprived King Peter II and other members of the House of Karađorđević of their citizenship, was null and void from the moment of its adoption, in the parts pertaining to Crown Prince Alexander, and that all of its legal consequences are thus null and void.
+Birth and childhood
 
-As Infanta of Spain, it is very common to see her in official events with her parents and sister, such as the opening of Parliament, the National Day parade or the Princess of Asturias and Princess of Girona Awards ceremonies.
-In 2021, Infanta Sofía and Princess Leonor participated in their first joint act without their parents, representing the "A Tree for Europe" campaign of the European youth association Equipo Europa .
-On 16 July 2022, she accompanied her sister Leonor in her first international trip.
-In late August 2023, she travelled with her mother, Queen Letizia, to Australia to see the final of the 2023 FIFA Women's World Cup between Spain and England.
-The Queen and the Infanta delivered the trophy to the World Champions, Spain, and celebrated with them on the pitch.
-In July 2024, she travelled with her father, King Felipe, to watch the Spanish national football team compete in the UEFA Euro 2024 final.
-The photography contest aims to showcase the beauty of Spain.
-On 5 December 2024 announced that the photography contest would only feature Sofía and not her parents or her older sister.
-Sofía is due to present the second edition of the photography contest later in 2025.
-In addition, to the photography contest a painting contest formerly known as “Ciudad de Hellín (City of Hellín)” will be changed to the “Certamen Internacional de Pintura “Infanta Sofía” de Hellín (International Painting Contest of Infanata Sofía of Hellín)” to honor her.
-At the end of the month, she attended the Princess of Girona Awards ceremony and the UEFA Women's Euro 2025 final.
-On 4 August 2025, Infanta Sofía along with her sister Leonor, Princess of Asturias attended the annual reception at Marivent Palace for Balearic Islands' authorities and personalities.
-The reception also had King Felipe VI, Queen Letizia, and Queen Sofia in attendance.
-This event marked the first reception attended by Leonor and Sofía.
-Her older sister Leonor’s first official visit to Portugal took place on 12 July 2024.
-In January 2026, Sofía attended the funeral of Princess Irene of Greece and Denmark and replaced her grandmother, Queen Sofía, in some public events.
-Titles, styles and honours
+Alexander was born in Suite 212 of Claridge's Hotel in Brook Street, Mayfair, London, on 17 July 1945.
+The British Government is said to have temporarily ceded sovereignty over the suite in which the birth occurred to Yugoslavia so that the crown prince would be born on Yugoslav territory, though the story may be apocryphal, as there exists no documentary record of this.
+Another part of the story says that a box of soil from the homeland was placed under the bed, so the Prince could be born on Yugoslav soil.
+It is now Suite 214 and known as the 'Alexander Suite'.
+He was the only child of King Peter II and Queen Alexandra of Yugoslavia.
+His parents were relatively unable to take care of him due to their various health and financial problems, so Alexander was raised by his maternal grandmother, Princess Aspasia of Greece and Denmark.
+Military service
 
-As children of the prince of Asturias, Sofía was born infanta and styled "Her Royal Highness Infanta Doña Sofia".
-Although with the same dignity and status as a prince, Sofia does not hold the title of princess, because in Spain only the heir to the Crown is allowed to carry that title.
+Alexander graduated from the Royal Military Academy Sandhurst in 1966 and was commissioned as an officer into the British Army's 16th/5th The Queen's Royal Lancers regiment, rising to the rank of captain.
+After leaving the army in 1972, Alexander, who speaks several languages, pursued a career in international business.
+, he married Princess Maria da Gloria of Orléans-Braganza (b. 1946) from the Brazilian imperial family, at the parish church of St. Mary Magdalene.
+They are double 4th cousins once removed as both are descendants of Prince Ferdinand of Saxe-Coburg and Gotha (1785–1851) and Princess Maria Antonia von Koháry (1797–1862), as well as of Pedro I, Emperor of Brazil and Archduchess Maria Leopoldina of Austria.
+They have three sons: Peter (born 5 February 1980), and fraternal twins: Philip and Alexander (both born 15 January 1982).
+Alexander and Maria da Gloria divorced on 19 February 1985.
+Maria da Gloria married Ignacio de Medina, Duke of Segorbe (b. 1947), while Crown Prince Alexander married Katherine Clairy Batis, daughter of Robert Batis and Anna Dosti, civilly on 20 September 1985, and religiously the following day, at St. Sava Serbian Orthodox Church, Notting Hill, London.
+Since their marriage, she is known as Crown Princess Katherine, as per the royal family's website.
+On 16 December 2017, Alexander attended with his wife the state funeral of his first cousin once removed, King Michael of Romania in Bucharest, along with other heads of European royal families and invited guests.
+On 19 September 2022, Crown Prince Alexander and his wife Katherine attended the state funeral of his godmother Queen Elizabeth II.
+On 6 February 2024, following the news about King Charles' health, Alexander himself revealed that he had been treated for early stage prostate cancer in December 2023.
+Return to Yugoslavia
+
+Alexander first came to Yugoslavia in 1991.
+He actively worked with the opposition to Slobodan Milošević and moved to Yugoslavia after Milošević had been deposed in 2000.
+On 27 February 2001, the parliament of the Federal Republic of Yugoslavia (FRY) passed legislation conferring citizenship on members of the Karađorđević family.
+The legislation may also have effectively annulled a decree stripping the family of its citizenship of the Socialist Federal Republic of Yugoslavia (SFRY) in 1947.
+Belief in constitutional monarchy
+
+Alexander is a proponent of re-creating a constitutional monarchy in Serbia and sees himself as the rightful king.
+He believes that monarchy could give Serbia "stability, continuity and unity".
+A number of political parties and organizations support a constitutional parliamentary monarchy in Serbia.
+The assassinated former Serbian Prime Minister Zoran Đinđić was often seen in the company of the prince and his family, supporting their campaigns and projects, although his Democratic Party never publicly embraced monarchism.
+Crown Prince Alexander has vowed to stay out of politics.
+He and Princess Katherine spend considerable time engaging in humanitarian work.
+The Crown Prince has, however, increasingly participated in public functions alongside the leaders of Serbia, the former Yugoslav republics and members of the diplomatic corps.
+On 11 May 2006, he hosted a reception at the Royal Palace for delegates attending a summit on Serbia and Montenegro.
+The reception was attended by the Governor of the National Bank of Serbia, as well as ambassadors and diplomats from Slovenia, Poland, Brazil, Japan, the United States, and Austria.
+In addition, we in Serbia and Montenegro must take into account that whatever form we take within the European Union, we have only but one choice and that is to work for the common good of all member nations.
+It is also central to take into account that stability in our region will be enhanced when Serbia is fully at peace with itself.
+The Crown Prince raised the issue of a royal restoration in the immediate aftermath of the vote.
+I strongly believe in a Constitutional Parliamentary Kingdom of Serbia.
+Again, we need to be proud, a strong Serbia that is at peace with itself and with its neighbors.
+Only if we have a form of governance close to the Serbian soul: the Kingdom of Serbia.
+What is most important is the interest of Serbia.
+I am ready to meet all our politicians; we have to work together for the common good of Serbia, and to be friends in the name of the future of our country.
+I appeal for mature democratic debate in the interest of Serbia.
+Serbia must have clear and realistic objectives.
+The public also had reservations with Alexander's apparent lack of knowledge of the Serbian language.
+On 27 July 2015, newspaper Blic published a poll "Da li Srbija treba da bude monarhija?" ("Should Serbia be a monarchy?"); 49.8% respondents expressed support in a reconstitution of monarchy, 44.6% were opposed and 5.5% were indifferent.
+In 2017, an NGO, the Kingdom of Serbia Association, announced that in 2016, they had collected over 123,000 signatures of support for a referendum on Alexander being named king, short of the 150,000 needed to force a constitutional amendment.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -149,39 +184,9 @@ Although with the same dignity and status as a prince, Sofia does not hold the t
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -196,6 +201,23 @@ Although with the same dignity and status as a prince, Sofia does not hold the t
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -213,6 +235,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,29 +317,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -311,6 +340,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -323,6 +360,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -331,17 +370,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -369,6 +410,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -384,106 +509,264 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8a916dea-b0c0-45d1-9542-a109d5513c63)
- Call ID: 8a916dea-b0c0-45d1-9542-a109d5513c63
+  AssignClass (9e612f9a-4bc9-4f65-9d69-a38833b4851f)
+ Call ID: 9e612f9a-4bc9-4f65-9d69-a38833b4851f
   Args:
-    type: :Woman
-    source: Infanta_Sofia_of_Spain
-  AssignClass (6945a047-363d-493a-8e97-a9c4f491ca05)
- Call ID: 6945a047-363d-493a-8e97-a9c4f491ca05
-  Args:
-    type: :Person
-    source: Infanta_Sofia_of_Spain
-  AssignClass (b0404ed6-ace7-4fbe-b36d-13e178c3cccc)
- Call ID: b0404ed6-ace7-4fbe-b36d-13e178c3cccc
-  Args:
-    source: King_Felipe_VI
+    source: Alexander_Karađorđević
     type: :Man
-  AssignClass (1c854106-4ab0-484a-9d93-aea7ed80b468)
- Call ID: 1c854106-4ab0-484a-9d93-aea7ed80b468
+  AssignClass (26b32917-ac98-4a07-b705-fd3a7c88e753)
+ Call ID: 26b32917-ac98-4a07-b705-fd3a7c88e753
   Args:
+    source: Alexander_Karađorđević
     type: :Person
-    source: King_Felipe_VI
-  AssignClass (db490fb2-80bb-4ca9-aac3-d5fae6b6aa6f)
- Call ID: db490fb2-80bb-4ca9-aac3-d5fae6b6aa6f
+  AddLiteral (6b1849d3-d40f-4c6c-8cdd-8362b5a5ee34)
+ Call ID: 6b1849d3-d40f-4c6c-8cdd-8362b5a5ee34
   Args:
-    type: :Woman
-    source: Queen_Letizia
-  AssignClass (7e6f221a-58be-4514-b803-c9a4f95f1c3f)
- Call ID: 7e6f221a-58be-4514-b803-c9a4f95f1c3f
-  Args:
-    source: Queen_Letizia
-    type: :Person
-  AssignClass (9bbd7e01-7887-4abf-b711-9767452f9234)
- Call ID: 9bbd7e01-7887-4abf-b711-9767452f9234
-  Args:
-    source: Leonor_Princess_of_Asturias
-    type: :Woman
-  AssignClass (2e29fab1-6e5d-4133-9aa7-0a5e95753dcf)
- Call ID: 2e29fab1-6e5d-4133-9aa7-0a5e95753dcf
-  Args:
-    source: Leonor_Princess_of_Asturias
-    type: :Person
-  AssignClass (77a7cd92-a5f5-4a88-9d51-12ece60f1b21)
- Call ID: 77a7cd92-a5f5-4a88-9d51-12ece60f1b21
-  Args:
-    source: King_Juan_Carlos_I
-    type: :Man
-  AssignClass (c473415d-4d17-4483-92ff-1d713316e14e)
- Call ID: c473415d-4d17-4483-92ff-1d713316e14e
-  Args:
-    type: :Person
-    source: King_Juan_Carlos_I
-  AssignClass (0a9e43d5-b057-4340-a170-7897e9421929)
- Call ID: 0a9e43d5-b057-4340-a170-7897e9421929
-  Args:
-    type: :Woman
-    source: Queen_Sofia
-  AssignClass (ff6442ef-15c0-44d5-bfbe-2635e98cb8b8)
- Call ID: ff6442ef-15c0-44d5-bfbe-2635e98cb8b8
-  Args:
-    source: Queen_Sofia
-    type: :Person
-  AddLiteral (274994a9-4eb2-4c21-923f-0d9f6c444e00)
- Call ID: 274994a9-4eb2-4c21-923f-0d9f6c444e00
-  Args:
-    relation: :hasBirthYear
+    source: Alexander_Karađorđević
     literal_type: xsd:integer
-    literal_value: 2007
-    source: Infanta_Sofia_of_Spain
-  AddTriple (368910a6-7a7c-4e0e-8dc0-79df8d6ced01)
- Call ID: 368910a6-7a7c-4e0e-8dc0-79df8d6ced01
+    relation: :hasBirthYear
+    literal_value: 1945
+  AssignClass (27c75195-d896-4fda-ae3b-4dbe04b810a5)
+ Call ID: 27c75195-d896-4fda-ae3b-4dbe04b810a5
+  Args:
+    type: :Man
+    source: Peter_II
+  AssignClass (a7ed6fe1-aa3c-4604-80bc-f16c3341adb3)
+ Call ID: a7ed6fe1-aa3c-4604-80bc-f16c3341adb3
+  Args:
+    source: Peter_II
+    type: :Person
+  AssignClass (45a2164d-c38e-44b0-bc53-7c3cb681fd63)
+ Call ID: 45a2164d-c38e-44b0-bc53-7c3cb681fd63
+  Args:
+    source: Alexandra_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (957f15ab-1932-43b5-bc95-91994e7a176e)
+ Call ID: 957f15ab-1932-43b5-bc95-91994e7a176e
+  Args:
+    source: Alexandra_of_Greece_and_Denmark
+    type: :Person
+  AddTriple (e2c28cb7-8ee8-43e5-982e-e386a83b991b)
+ Call ID: e2c28cb7-8ee8-43e5-982e-e386a83b991b
+  Args:
+    target: Peter_II
+    relation: :hasFather
+    source: Alexander_Karađorđević
+  AddTriple (466c37c5-9d65-46ff-bc71-5475785e27f7)
+ Call ID: 466c37c5-9d65-46ff-bc71-5475785e27f7
+  Args:
+    source: Alexander_Karađorđević
+    target: Alexandra_of_Greece_and_Denmark
+    relation: :hasMother
+  AssignClass (bbb9fbe9-409a-481f-acc7-e74660f0ae7a)
+ Call ID: bbb9fbe9-409a-481f-acc7-e74660f0ae7a
+  Args:
+    source: Aspasia_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (02da40f7-9a72-4afa-b32f-d91ea43c7251)
+ Call ID: 02da40f7-9a72-4afa-b32f-d91ea43c7251
+  Args:
+    source: Aspasia_of_Greece_and_Denmark
+    type: :Person
+  AssignClass (bacb3f17-5442-41ab-ac6b-5d702febce81)
+ Call ID: bacb3f17-5442-41ab-ac6b-5d702febce81
+  Args:
+    source: Maria_da_Gloria_of_Orléans-Braganza
+    type: :Woman
+  AssignClass (df4c227e-c637-42bc-94ac-e8549762f4d2)
+ Call ID: df4c227e-c637-42bc-94ac-e8549762f4d2
+  Args:
+    source: Maria_da_Gloria_of_Orléans-Braganza
+    type: :Person
+  AssignClass (b9d842ff-3ad7-4b67-b9d0-79007792e30a)
+ Call ID: b9d842ff-3ad7-4b67-b9d0-79007792e30a
+  Args:
+    type: :Man
+    source: Peter_son_of_Alexander
+  AssignClass (bf0256cb-b62e-435d-988a-86e7a0308982)
+ Call ID: bf0256cb-b62e-435d-988a-86e7a0308982
+  Args:
+    source: Peter_son_of_Alexander
+    type: :Person
+  AssignClass (6bb25f28-1470-43b5-b857-236ae707c774)
+ Call ID: 6bb25f28-1470-43b5-b857-236ae707c774
+  Args:
+    type: :Man
+    source: Philip_son_of_Alexander
+  AssignClass (f4261292-7ff3-44c1-8662-2edb13e4e67b)
+ Call ID: f4261292-7ff3-44c1-8662-2edb13e4e67b
+  Args:
+    source: Philip_son_of_Alexander
+    type: :Person
+  AssignClass (e22521d4-50a9-4f0a-b08f-c49529d60b8e)
+ Call ID: e22521d4-50a9-4f0a-b08f-c49529d60b8e
+  Args:
+    type: :Man
+    source: Alexander_son_of_Alexander
+  AssignClass (ac3a1c3b-40e1-4e21-b6b6-ef15402a1389)
+ Call ID: ac3a1c3b-40e1-4e21-b6b6-ef15402a1389
+  Args:
+    type: :Person
+    source: Alexander_son_of_Alexander
+  AddTriple (fc7988f7-1de8-4be9-8708-e5b4510ae8a8)
+ Call ID: fc7988f7-1de8-4be9-8708-e5b4510ae8a8
   Args:
     relation: :hasFather
-    target: King_Felipe_VI
-    source: Infanta_Sofia_of_Spain
-  AddTriple (ad73fa3b-923b-4132-86ab-b8c1cfdde10c)
- Call ID: ad73fa3b-923b-4132-86ab-b8c1cfdde10c
+    target: Alexander_Karađorđević
+    source: Peter_son_of_Alexander
+  AddTriple (e4bed665-9030-4494-a289-fce36e66dcd9)
+ Call ID: e4bed665-9030-4494-a289-fce36e66dcd9
   Args:
-    source: Infanta_Sofia_of_Spain
+    target: Maria_da_Gloria_of_Orléans-Braganza
     relation: :hasMother
-    target: Queen_Letizia
-  AddTriple (01e31d70-6de9-4542-82ff-5d50647a38d2)
- Call ID: 01e31d70-6de9-4542-82ff-5d50647a38d2
+    source: Peter_son_of_Alexander
+  AddTriple (2a92def4-bcd4-43d6-b016-b7a6132fec3e)
+ Call ID: 2a92def4-bcd4-43d6-b016-b7a6132fec3e
   Args:
-    source: Infanta_Sofia_of_Spain
-    relation: :isSisterOf
-    target: Leonor_Princess_of_Asturias
-  AddTriple (64be0b6f-eb65-4551-b02b-1a9611c7f1b2)
- Call ID: 64be0b6f-eb65-4551-b02b-1a9611c7f1b2
+    target: Alexander_Karađorđević
+    relation: :hasFather
+    source: Philip_son_of_Alexander
+  AddTriple (383f6d1f-3fdf-4c7d-9cae-d993688d4b32)
+ Call ID: 383f6d1f-3fdf-4c7d-9cae-d993688d4b32
+  Args:
+    relation: :hasMother
+    target: Maria_da_Gloria_of_Orléans-Braganza
+    source: Philip_son_of_Alexander
+  AddTriple (704cf2a8-6242-48ba-8892-b3d2c3a97265)
+ Call ID: 704cf2a8-6242-48ba-8892-b3d2c3a97265
   Args:
     relation: :hasFather
-    target: King_Juan_Carlos_I
-    source: King_Felipe_VI
-  AddTriple (a0a69b07-bbcb-4170-9d78-215e6a4e1a4c)
- Call ID: a0a69b07-bbcb-4170-9d78-215e6a4e1a4c
+    target: Alexander_Karađorđević
+    source: Alexander_son_of_Alexander
+  AddTriple (49c5d632-d266-4e19-9e74-5da1471e18d2)
+ Call ID: 49c5d632-d266-4e19-9e74-5da1471e18d2
   Args:
+    source: Alexander_son_of_Alexander
     relation: :hasMother
-    target: Queen_Sofia
-    source: King_Felipe_VI
-  Finish (2ec1ce1f-19f3-4251-b66e-45e8d729d6fb)
- Call ID: 2ec1ce1f-19f3-4251-b66e-45e8d729d6fb
+    target: Maria_da_Gloria_of_Orléans-Braganza
+  AssignClass (80683edf-adca-41d5-b062-027b21dcabe6)
+ Call ID: 80683edf-adca-41d5-b062-027b21dcabe6
   Args:
+    type: :Man
+    source: Ignacio_de_Medina
+  AssignClass (1a825d4e-6b3a-43de-b83b-1ea4389992d0)
+ Call ID: 1a825d4e-6b3a-43de-b83b-1ea4389992d0
+  Args:
+    source: Ignacio_de_Medina
+    type: :Person
+  AssignClass (351f7938-d4fc-4932-9215-07bf0ad3c70b)
+ Call ID: 351f7938-d4fc-4932-9215-07bf0ad3c70b
+  Args:
+    source: Katherine_Clairy_Batis
+    type: :Woman
+  AssignClass (b4a85e9b-9596-420c-ae98-f190acb8c47d)
+ Call ID: b4a85e9b-9596-420c-ae98-f190acb8c47d
+  Args:
+    type: :Person
+    source: Katherine_Clairy_Batis
+  AssignClass (ab415888-1744-4eca-b6e0-9cbfa4815b4f)
+ Call ID: ab415888-1744-4eca-b6e0-9cbfa4815b4f
+  Args:
+    source: Robert_Batis
+    type: :Man
+  AssignClass (6e65696b-ff90-4f04-ac9f-c78c766c302e)
+ Call ID: 6e65696b-ff90-4f04-ac9f-c78c766c302e
+  Args:
+    source: Robert_Batis
+    type: :Person
+  AssignClass (7098a0e0-65dd-4485-905d-4b377ee35b65)
+ Call ID: 7098a0e0-65dd-4485-905d-4b377ee35b65
+  Args:
+    type: :Woman
+    source: Anna_Dosti
+  AssignClass (7d770ba8-663c-487c-970c-751a476e5e01)
+ Call ID: 7d770ba8-663c-487c-970c-751a476e5e01
+  Args:
+    type: :Person
+    source: Anna_Dosti
+  AddTriple (7e6db93e-b787-42bb-8a32-03866efad148)
+ Call ID: 7e6db93e-b787-42bb-8a32-03866efad148
+  Args:
+    source: Katherine_Clairy_Batis
+    target: Robert_Batis
+    relation: :hasFather
+  AddTriple (8e63e789-60cd-422e-bea4-9c940ed6d0ce)
+ Call ID: 8e63e789-60cd-422e-bea4-9c940ed6d0ce
+  Args:
+    source: Katherine_Clairy_Batis
+    relation: :hasMother
+    target: Anna_Dosti
+  Finish (0012cb1b-efb0-417c-b088-e90fec34544b)
+ Call ID: 0012cb1b-efb0-417c-b088-e90fec34544b
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -560,28 +843,51 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Infanta_Sofia_of_Spain a :Person,
-          :Woman ;
-      :hasBirthYear 2007 ;
-      :hasFather data:King_Felipe_VI ;
-      :hasMother data:Queen_Letizia ;
-      :isSisterOf data:Leonor_Princess_of_Asturias .
-
-  data:King_Felipe_VI a :Man,
+  data:Alexander_son_of_Alexander a :Man,
           :Person ;
-      :hasFather data:King_Juan_Carlos_I ;
-      :hasMother data:Queen_Sofia .
+      :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
 
-  data:King_Juan_Carlos_I a :Man,
+  data:Aspasia_of_Greece_and_Denmark a :Person,
+          :Woman .
+
+  data:Ignacio_de_Medina a :Man,
           :Person .
 
-  data:Leonor_Princess_of_Asturias a :Person,
+  data:Katherine_Clairy_Batis a :Person,
+          :Woman ;
+      :hasFather data:Robert_Batis ;
+      :hasMother data:Anna_Dosti .
+
+  data:Peter_son_of_Alexander a :Man,
+          :Person ;
+      :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+
+  data:Philip_son_of_Alexander a :Man,
+          :Person ;
+      :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+
+  data:Alexandra_of_Greece_and_Denmark a :Person,
           :Woman .
 
-  data:Queen_Letizia a :Person,
+  data:Anna_Dosti a :Person,
           :Woman .
 
-  data:Queen_Sofia a :Person,
+  data:Peter_II a :Man,
+          :Person .
+
+  data:Robert_Batis a :Man,
+          :Person .
+
+  data:Alexander_Kara%C4%91or%C4%91evi%C4%87 a :Man,
+          :Person ;
+      :hasBirthYear 1945 ;
+      :hasFather data:Peter_II ;
+      :hasMother data:Alexandra_of_Greece_and_Denmark .
+
+  data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza a :Person,
           :Woman .
 
 
@@ -594,110 +900,254 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (9f044d75-940a-4776-b06f-ee250b653553)
- Call ID: 9f044d75-940a-4776-b06f-ee250b653553
+  ValidateShacl (540ed3e3-b49f-4a3a-b801-98e5007950a3)
+ Call ID: 540ed3e3-b49f-4a3a-b801-98e5007950a3
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:30
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Juan_Carlos_I, which is the value of the hasFather property for King_Felipe_VI, is missing the required class assignment to :Ancestor.
+      The value node Peter_II for the hasFather property of Alexander_Karađorđević is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Juan_Carlos_I', class=':Ancestor')
+      AssignClass(Peter_II, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Sofia, which is the value of the hasMother property for King_Felipe_VI, is missing the required class assignment to :Ancestor.
+      The value node Alexander_Karađorđević for the hasFather property of Alexander_son_of_Alexander is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Sofia', class=':Ancestor')
+      AssignClass(Alexander_Karađorđević, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Felipe_VI, which is the value of the hasFather property for Infanta_Sofia_of_Spain, is missing the required class assignment to :Ancestor.
+      The value node Alexander_Karađorđević for the hasFather property of Philip_son_of_Alexander is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Felipe_VI', class=':Ancestor')
+      AssignClass(Alexander_Karađorđević, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Juan_Carlos_I, which is the value of the hasFather property for King_Felipe_VI, is missing the required class assignment to :Ancestor.
+      The value node Alexander_Karađorđević for the hasFather property of Peter_son_of_Alexander is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Juan_Carlos_I', class=':Ancestor')
+      AssignClass(Alexander_Karađorđević, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Letizia, which is the value of the hasMother property for Infanta_Sofia_of_Spain, is missing the required class assignment to :Ancestor.
+      The value node Alexandra_of_Greece_and_Denmark for the hasMother property of Alexander_Karađorđević is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Letizia', class=':Ancestor')
+      AssignClass(Alexandra_of_Greece_and_Denmark, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Sofia, which is the value of the hasMother property for King_Felipe_VI, is missing the required class assignment to :Ancestor.
+      The value node Maria_da_Gloria_of_Orléans-Braganza for the hasMother property of Alexander_son_of_Alexander is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Sofia', class=':Ancestor')
+      AssignClass(Maria_da_Gloria_of_Orléans-Braganza, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node King_Felipe_VI, which is the value of the hasFather property for Infanta_Sofia_of_Spain, is missing the required class assignment to :Ancestor.
+      The value node Maria_da_Gloria_of_Orléans-Braganza for the hasMother property of Philip_son_of_Alexander is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Felipe_VI', class=':Ancestor')
+      AssignClass(Maria_da_Gloria_of_Orléans-Braganza, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node King_Juan_Carlos_I, which is the value of the hasFather property for King_Felipe_VI, is missing the required class assignment to :Ancestor.
+      The value node Maria_da_Gloria_of_Orléans-Braganza for the hasMother property of Peter_son_of_Alexander is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Juan_Carlos_I', class=':Ancestor')
+      AssignClass(Maria_da_Gloria_of_Orléans-Braganza, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Letizia, which is the value of the hasMother property for Infanta_Sofia_of_Spain, is missing the required class assignment to :Ancestor.
+      The value node Peter_II for the hasFather property of Alexander_Karađorđević is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Letizia', class=':Ancestor')
+      AssignClass(Peter_II, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Sofia, which is the value of the hasMother property for King_Felipe_VI, is missing the required class assignment to :Ancestor.
+      The value node Alexander_Karađorđević for the hasFather property of Alexander_son_of_Alexander is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Sofia', class=':Ancestor')
+      AssignClass(Alexander_Karađorđević, :Ancestor)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node King_Felipe_VI, which is the value of the hasFather property for Infanta_Sofia_of_Spain, is missing the required class assignment to :Ancestor.
+      The value node Alexander_Karađorđević for the hasFather property of Peter_son_of_Alexander is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Felipe_VI', class=':Ancestor')
+      AssignClass(Alexander_Karađorđević, :Ancestor)
 
 
   Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Robert_Batis for the hasFather property of Katherine_Clairy_Batis is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Robert_Batis, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Alexander_Karađorđević for the hasFather property of Philip_son_of_Alexander is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alexander_Karađorđević, :Ancestor)
+
+
+  Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Letizia, which is the value of the hasMother property for Infanta_Sofia_of_Spain, is missing the required class assignment to :Ancestor.
+      The value node Alexandra_of_Greece_and_Denmark for the hasMother property of Alexander_Karađorđević is missing the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Letizia', class=':Ancestor')
+      AssignClass(Alexandra_of_Greece_and_Denmark, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Maria_da_Gloria_of_Orléans-Braganza for the hasMother property of Alexander_son_of_Alexander is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_da_Gloria_of_Orléans-Braganza, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Maria_da_Gloria_of_Orléans-Braganza for the hasMother property of Peter_son_of_Alexander is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_da_Gloria_of_Orléans-Braganza, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Anna_Dosti for the hasMother property of Katherine_Clairy_Batis is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Anna_Dosti, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Maria_da_Gloria_of_Orléans-Braganza for the hasMother property of Philip_son_of_Alexander is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_da_Gloria_of_Orléans-Braganza, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Peter_II for the hasFather property of Alexander_Karađorđević is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Peter_II, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Alexander_Karađorđević for the hasFather property of Alexander_son_of_Alexander is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alexander_Karađorđević, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Alexander_Karađorđević for the hasFather property of Peter_son_of_Alexander is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alexander_Karađorđević, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Robert_Batis for the hasFather property of Katherine_Clairy_Batis is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Robert_Batis, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Alexander_Karađorđević for the hasFather property of Philip_son_of_Alexander is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alexander_Karađorđević, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Alexandra_of_Greece_and_Denmark for the hasMother property of Alexander_Karađorđević is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alexandra_of_Greece_and_Denmark, :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Maria_da_Gloria_of_Orléans-Braganza for the hasMother property of Alexander_son_of_Alexander is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_da_Gloria_of_Orléans-Braganza, :Ancestor)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Maria_da_Gloria_of_Orléans-Braganza for the hasMother property of Peter_son_of_Alexander is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_da_Gloria_of_Orléans-Braganza, :Ancestor)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Anna_Dosti for the hasMother property of Katherine_Clairy_Batis is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Anna_Dosti, :Ancestor)
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Maria_da_Gloria_of_Orléans-Braganza for the hasMother property of Philip_son_of_Alexander is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_da_Gloria_of_Orléans-Braganza, :Ancestor)
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Robert_Batis for the hasFather property of Katherine_Clairy_Batis is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Robert_Batis, :Ancestor)
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Anna_Dosti for the hasMother property of Katherine_Clairy_Batis is missing the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Anna_Dosti, :Ancestor)
 
 
 
@@ -706,29 +1156,44 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (ca86e427-9257-4c59-b9f6-575231067f97)
- Call ID: ca86e427-9257-4c59-b9f6-575231067f97
+  AssignClass (3bf09ae7-7d90-49c6-be34-ccec110bc60b)
+ Call ID: 3bf09ae7-7d90-49c6-be34-ccec110bc60b
   Args:
+    source: Peter_II
     type: :Ancestor
-    source: King_Juan_Carlos_I
-  AssignClass (42b93f9a-bc1e-4ac5-9332-da1b012ff93f)
- Call ID: 42b93f9a-bc1e-4ac5-9332-da1b012ff93f
+  AssignClass (3faeb5eb-0221-44af-930a-42daae688341)
+ Call ID: 3faeb5eb-0221-44af-930a-42daae688341
   Args:
-    source: Queen_Sofia
+    source: Alexander_Karađorđević
     type: :Ancestor
-  AssignClass (0d31b5dd-7d83-473e-bdcc-9121fdcb6df4)
- Call ID: 0d31b5dd-7d83-473e-bdcc-9121fdcb6df4
+  AssignClass (32735979-facf-4a10-9ad5-488e59b5c0f6)
+ Call ID: 32735979-facf-4a10-9ad5-488e59b5c0f6
   Args:
-    source: King_Felipe_VI
+    source: Alexandra_of_Greece_and_Denmark
     type: :Ancestor
-  AssignClass (99e659a5-7d81-48e1-a595-1ff74bb97043)
- Call ID: 99e659a5-7d81-48e1-a595-1ff74bb97043
+  AssignClass (78a204d6-a24f-4fb0-8f57-ab769982f4f5)
+ Call ID: 78a204d6-a24f-4fb0-8f57-ab769982f4f5
   Args:
-    source: Queen_Letizia
+    source: Maria_da_Gloria_of_Orléans-Braganza
     type: :Ancestor
-  Finish (cc3405e4-9c32-4345-98ed-91f4b19603da)
- Call ID: cc3405e4-9c32-4345-98ed-91f4b19603da
+  AssignClass (be67d01d-007e-439e-b622-53f9e6cdb786)
+ Call ID: be67d01d-007e-439e-b622-53f9e6cdb786
   Args:
+    source: Robert_Batis
+    type: :Ancestor
+  AssignClass (f8cbf091-b68d-4748-914d-08b53e1cbff9)
+ Call ID: f8cbf091-b68d-4748-914d-08b53e1cbff9
+  Args:
+    source: Anna_Dosti
+    type: :Ancestor
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -749,46 +1214,67 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Infanta_Sofia_of_Spain a :Person,
-          :Woman ;
-      :hasBirthYear 2007 ;
-      :hasFather data:King_Felipe_VI ;
-      :hasMother data:Queen_Letizia ;
-      :isSisterOf data:Leonor_Princess_of_Asturias .
-
-  data:King_Felipe_VI a :Ancestor,
-          :Man,
+  data:Alexander_son_of_Alexander a :Man,
           :Person ;
-      :hasFather data:King_Juan_Carlos_I ;
-      :hasMother data:Queen_Sofia .
+      :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
 
-  data:King_Juan_Carlos_I a :Ancestor,
+  data:Aspasia_of_Greece_and_Denmark a :Person,
+          :Woman .
+
+  data:Ignacio_de_Medina a :Man,
+          :Person .
+
+  data:Katherine_Clairy_Batis a :Person,
+          :Woman ;
+      :hasFather data:Robert_Batis ;
+      :hasMother data:Anna_Dosti .
+
+  data:Peter_son_of_Alexander a :Man,
+          :Person ;
+      :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+
+  data:Philip_son_of_Alexander a :Man,
+          :Person ;
+      :hasFather data:Alexander_Kara%C4%91or%C4%91evi%C4%87 ;
+      :hasMother data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza .
+
+  data:Alexandra_of_Greece_and_Denmark a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Anna_Dosti a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Peter_II a :Ancestor,
           :Man,
           :Person .
 
-  data:Leonor_Princess_of_Asturias a :Person,
-          :Woman .
+  data:Robert_Batis a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Queen_Letizia a :Ancestor,
+  data:Alexander_Kara%C4%91or%C4%91evi%C4%87 a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1945 ;
+      :hasFather data:Peter_II ;
+      :hasMother data:Alexandra_of_Greece_and_Denmark .
+
+  data:Maria_da_Gloria_of_Orl%C3%A9ans-Braganza a :Ancestor,
           :Person,
           :Woman .
 
-  data:Queen_Sofia a :Ancestor,
-          :Person,
-          :Woman .
 
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (5e400cc4-9df0-44ab-abc5-3c4a5fc92f0f)
- Call ID: 5e400cc4-9df0-44ab-abc5-3c4a5fc92f0f
+  ValidateShacl (c8a3772c-df17-4f47-a4fb-b2fde1336531)
+ Call ID: c8a3772c-df17-4f47-a4fb-b2fde1336531
   Args:
 
 ================================= Tool Message =================================
@@ -799,6 +1285,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (48db936a-d73d-401e-aa61-a3a92ff89746)
- Call ID: 48db936a-d73d-401e-aa61-a3a92ff89746
+  Finish (a32115a1-099c-4ae2-a9e1-065b5582fa96)
+ Call ID: a32115a1-099c-4ae2-a9e1-065b5582fa96
   Args:

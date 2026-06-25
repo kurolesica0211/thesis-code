@@ -72,7 +72,6 @@ Please update the Knowledge Graph based on the provided data.
 Ashley Louis David Hicks (born 18 July 1963) is a British interior designer, author, photographer and artist.
 He is the only son of Lady Pamela Hicks (née Mountbatten) and David Nightingale Hicks.
 Hicks has designed interiors in Europe, the United States, and the United Kingdom.
-He also has a fabric line for Lee Jofa and furniture lines.
 Hicks is the grandson of Louis Mountbatten, 1st
 Earl Mountbatten of Burma.
 Early life and family
@@ -100,7 +99,6 @@ Career
 Hicks says his first decorating experience took place when he was 15 or 16 years old, when he decorated his room in a checkered black-and-white motif.
 Influenced by his father, Hicks studied painting and fine art, graduating from the Bath School of Art and Design and trained with the Architectural Association School of Architecture, in London.
 In 1997, Hicks began designing furniture at the Gem Palace in Jaipur, India.
-He describes the chair as "far more like the ancient Greek ones in its construction, than the Neoclassical revivals".
 When Hicks initially designed in India, he designed under the moniker of "Jantar Mantar".
 Hicks explains, "It means abracadabra, also hocus pocus, and is local slang for the Jaipur Observatory.
 "
@@ -110,7 +108,6 @@ In addition to interior and furniture design, Hicks produces various lines of fa
 Hicks also produced a series of Allegra Hicks shops as well as a collection of home accessories that were sold in these shops.
 In 2017, Hicks published his first book on his own work, Details, which also serves as a source book for his inspiration; published by IDEA Publishing, it sold out within a month.
 Hicks began photographing historic interiors for Cabana Magazine in 2016, ranging from a derelict glass factory in Murano, Venice, to grand English country houses like Houghton and Althorp.
-In 2017 he photographed and wrote a history of Buckingham Palace: The Interiors, published by Rizzoli in conjunction with the Royal Collection.
 Hicks is currently a contributing editor for Cabana Magazine.
 Hicks exhibited furniture and sculptural objects made by his own hands at New York's R and Company gallery in 2019,
 
@@ -119,7 +116,6 @@ Hicks has also regularly worked with various brands on product collaborations, i
 Personal life
 
 On 18 October 1990, Hicks married Italian designer, Marina Allegra Federica Silvia Tondato (born Turin, Italy, 20 May 1960), a daughter of physicist and musician Dr. Carlo Tondato and his wife, the former Rosy Maza, in Wheatley, Oxfordshire.
-He proposed to her over "Twiglets and apple juice at the Groucho Club" in Soho, London.
 From his first marriage, Hicks has two daughters:
 
 
@@ -138,6 +134,8 @@ Hicks decorated his partner Martina Mondadori's home in Milan, Italy, in 2020.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -153,39 +151,9 @@ Hicks decorated his partner Martina Mondadori's home in Milan, Italy, in 2020.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -200,6 +168,23 @@ Hicks decorated his partner Martina Mondadori's home in Milan, Italy, in 2020.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -217,6 +202,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,29 +284,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -315,6 +307,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -327,6 +327,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -335,17 +337,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -373,6 +377,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -388,328 +476,213 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5156fe08-68ba-48cf-8842-d0698d9967a2)
- Call ID: 5156fe08-68ba-48cf-8842-d0698d9967a2
+  AssignClass (b437359b-f16c-4739-a02b-c9d7b35d62bf)
+ Call ID: b437359b-f16c-4739-a02b-c9d7b35d62bf
   Args:
+    source: Ashley_Hicks
     type: :Man
-    source: :Ashley_Hicks
-  AssignClass (fbeaeb3a-dc39-4599-a924-5b27e5b2c876)
- Call ID: fbeaeb3a-dc39-4599-a924-5b27e5b2c876
+  AssignClass (e70af653-c411-4cdb-9234-2d72409b379d)
+ Call ID: e70af653-c411-4cdb-9234-2d72409b379d
   Args:
     type: :Person
-    source: :Ashley_Hicks
-  AssignClass (fe387b46-ec87-4433-852b-4b4d2cbf7e84)
- Call ID: fe387b46-ec87-4433-852b-4b4d2cbf7e84
+    source: Ashley_Hicks
+  AddLiteral (3ec1a9b0-1ca6-4299-b566-5f98a1470d96)
+ Call ID: 3ec1a9b0-1ca6-4299-b566-5f98a1470d96
   Args:
-    type: :Woman
-    source: :Lady_Pamela_Hicks
-  AssignClass (655f6d3f-26fd-4566-bca9-3d9763453eaf)
- Call ID: 655f6d3f-26fd-4566-bca9-3d9763453eaf
-  Args:
-    type: :Person
-    source: :Lady_Pamela_Hicks
-  AssignClass (8248e13e-9cd2-40d9-b434-f521fe251371)
- Call ID: 8248e13e-9cd2-40d9-b434-f521fe251371
-  Args:
-    type: :Man
-    source: :David_Nightingale_Hicks
-  AssignClass (0eeeff9c-b7a0-4d80-83c6-9508f2a06d20)
- Call ID: 0eeeff9c-b7a0-4d80-83c6-9508f2a06d20
-  Args:
-    type: :Person
-    source: :David_Nightingale_Hicks
-  AssignClass (2d512c37-77bb-48fa-bc8f-aa022a012933)
- Call ID: 2d512c37-77bb-48fa-bc8f-aa022a012933
-  Args:
-    type: :Man
-    source: :Louis_Mountbatten
-  AssignClass (434cf084-e046-439d-9e45-d4690b35f84d)
- Call ID: 434cf084-e046-439d-9e45-d4690b35f84d
-  Args:
-    type: :Person
-    source: :Louis_Mountbatten
-  AssignClass (1801c845-7615-43e5-8fad-694c1e00c34e)
- Call ID: 1801c845-7615-43e5-8fad-694c1e00c34e
-  Args:
-    type: :Woman
-    source: :Edwina_Brudenell
-  AssignClass (7c0ddc20-a75c-45f8-a019-975dedc86c08)
- Call ID: 7c0ddc20-a75c-45f8-a019-975dedc86c08
-  Args:
-    type: :Person
-    source: :Edwina_Brudenell
-  AssignClass (6ff687fa-814d-4a38-bc83-004da86099cc)
- Call ID: 6ff687fa-814d-4a38-bc83-004da86099cc
-  Args:
-    type: :Woman
-    source: :India_Hicks
-  AssignClass (f536a78c-0cfa-46c2-abec-927571c261e3)
- Call ID: f536a78c-0cfa-46c2-abec-927571c261e3
-  Args:
-    type: :Person
-    source: :India_Hicks
-  AssignClass (a5a9c3cc-9728-40bb-af41-f5d24f577245)
- Call ID: a5a9c3cc-9728-40bb-af41-f5d24f577245
-  Args:
-    type: :Woman
-    source: :Marina_Allegra_Federica_Silvia_Tondato
-  AssignClass (8b0b6b8d-58db-4952-893e-102005afdf05)
- Call ID: 8b0b6b8d-58db-4952-893e-102005afdf05
-  Args:
-    type: :Person
-    source: :Marina_Allegra_Federica_Silvia_Tondato
-  AssignClass (5b625840-5a13-4a9d-80de-290d261610e2)
- Call ID: 5b625840-5a13-4a9d-80de-290d261610e2
-  Args:
-    type: :Woman
-    source: :Kathryn_Sharkey
-  AssignClass (461f72a6-c8be-45d3-86e0-d44a3736ece5)
- Call ID: 461f72a6-c8be-45d3-86e0-d44a3736ece5
-  Args:
-    type: :Person
-    source: :Kathryn_Sharkey
-  AddLiteral (b905f22b-1c19-4307-bc95-2096da333b37)
- Call ID: b905f22b-1c19-4307-bc95-2096da333b37
-  Args:
+    literal_type: xsd:integer
+    source: Ashley_Hicks
     relation: :hasBirthYear
     literal_value: 1963
-    literal_type: xsd:integer
-    source: :Ashley_Hicks
-  AddTriple (1b8945d9-d05b-4e11-bad0-b80e8d4ba687)
- Call ID: 1b8945d9-d05b-4e11-bad0-b80e8d4ba687
+  AssignClass (368e4554-d139-48fb-894e-1eb829fa27b6)
+ Call ID: 368e4554-d139-48fb-894e-1eb829fa27b6
   Args:
+    source: Lady_Pamela_Hicks
+    type: :Woman
+  AssignClass (af4d336d-8e91-48bd-8968-d8234f7bba31)
+ Call ID: af4d336d-8e91-48bd-8968-d8234f7bba31
+  Args:
+    type: :Person
+    source: Lady_Pamela_Hicks
+  AssignClass (346d471e-5d16-4a7d-80ee-adf5822a5bf8)
+ Call ID: 346d471e-5d16-4a7d-80ee-adf5822a5bf8
+  Args:
+    type: :Man
+    source: David_Nightingale_Hicks
+  AssignClass (5c82307d-3a98-4757-b96b-e8dbb9035129)
+ Call ID: 5c82307d-3a98-4757-b96b-e8dbb9035129
+  Args:
+    source: David_Nightingale_Hicks
+    type: :Person
+  AddTriple (25cc323f-d6a3-4bde-a5c7-e408cfdceb45)
+ Call ID: 25cc323f-d6a3-4bde-a5c7-e408cfdceb45
+  Args:
+    target: Lady_Pamela_Hicks
+    source: Ashley_Hicks
+    relation: :hasMother
+  AddTriple (4fb570d9-84c9-4c4e-86ca-3db10e0a23d4)
+ Call ID: 4fb570d9-84c9-4c4e-86ca-3db10e0a23d4
+  Args:
+    target: David_Nightingale_Hicks
+    source: Ashley_Hicks
     relation: :hasFather
-    source: :Ashley_Hicks
-    target: :David_Nightingale_Hicks
-  AddTriple (aa538f3d-b07f-4f3c-8e73-5118649065ec)
- Call ID: aa538f3d-b07f-4f3c-8e73-5118649065ec
+  AssignClass (5c652a91-1b9f-43d8-8d17-88b44ae60f76)
+ Call ID: 5c652a91-1b9f-43d8-8d17-88b44ae60f76
   Args:
-    target: :Lady_Pamela_Hicks
-    source: :Ashley_Hicks
-    relation: :hasMother
-  AddTriple (cdb21ae4-e1ad-48d3-a66e-e6d752b578d3)
- Call ID: cdb21ae4-e1ad-48d3-a66e-e6d752b578d3
+    type: :Woman
+    source: Edwina_Brudenell
+  AssignClass (8d64e0c6-c579-44b0-b4e6-54e1afee6993)
+ Call ID: 8d64e0c6-c579-44b0-b4e6-54e1afee6993
   Args:
-    source: :Ashley_Hicks
-    target: :Lady_Pamela_Hicks
-    relation: :hasMother
-  AddTriple (4694f31e-f82d-4377-a768-e61855a19da1)
- Call ID: 4694f31e-f82d-4377-a768-e61855a19da1
+    source: Edwina_Brudenell
+    type: :Person
+  AssignClass (be16bfcd-4716-4b7f-a084-9c0240a038df)
+ Call ID: be16bfcd-4716-4b7f-a084-9c0240a038df
   Args:
-    relation: :hasSister
-    source: :Ashley_Hicks
-    target: :Edwina_Brudenell
-  AddTriple (d4fd1e8c-ff36-45bc-8252-ea7eee4df150)
- Call ID: d4fd1e8c-ff36-45bc-8252-ea7eee4df150
+    type: :Woman
+    source: India_Hicks
+  AssignClass (59e7abfe-ec53-4ba4-a26b-3b9016e56dba)
+ Call ID: 59e7abfe-ec53-4ba4-a26b-3b9016e56dba
   Args:
-    relation: :hasSister
-    target: :India_Hicks
-    source: :Ashley_Hicks
-  AddTriple (974ed87c-593e-4a2c-8b5d-c0d1f1a09bd1)
- Call ID: 974ed87c-593e-4a2c-8b5d-c0d1f1a09bd1
+    source: India_Hicks
+    type: :Person
+  AddTriple (9a9cd3ba-c966-4a52-a11a-20fe6fd9a2c7)
+ Call ID: 9a9cd3ba-c966-4a52-a11a-20fe6fd9a2c7
   Args:
-    source: :Ashley_Hicks
-    target: :Louis_Mountbatten
+    relation: :isSiblingOf
+    source: Ashley_Hicks
+    target: Edwina_Brudenell
+  AddTriple (79442fce-6345-4501-981c-22302bd304c4)
+ Call ID: 79442fce-6345-4501-981c-22302bd304c4
+  Args:
+    relation: :isSiblingOf
+    source: Ashley_Hicks
+    target: India_Hicks
+  AssignClass (f2e9785f-452a-4835-bd21-715eea7978af)
+ Call ID: f2e9785f-452a-4835-bd21-715eea7978af
+  Args:
+    type: :Man
+    source: Louis_Mountbatten
+  AssignClass (eaac828a-f6b0-439a-87e5-185e120ae4f7)
+ Call ID: eaac828a-f6b0-439a-87e5-185e120ae4f7
+  Args:
+    type: :Person
+    source: Louis_Mountbatten
+  AddTriple (91bfd23a-eea3-4715-ae81-f69a09b3b041)
+ Call ID: 91bfd23a-eea3-4715-ae81-f69a09b3b041
+  Args:
     relation: :hasAncestor
-  AddTriple (bd2f99ca-75bf-45d7-b14a-60ccd0794b17)
- Call ID: bd2f99ca-75bf-45d7-b14a-60ccd0794b17
+    target: Louis_Mountbatten
+    source: Ashley_Hicks
+  AssignClass (3ffb332c-f264-4b9f-a39b-7c6e0bad0af5)
+ Call ID: 3ffb332c-f264-4b9f-a39b-7c6e0bad0af5
   Args:
-    target: :1990
-    source: :Ashley_Hicks
-    relation: :hasMarriageYear
-  AddTriple (3e7f7900-d3ec-4ce9-8eac-1fed005ba9c7)
- Call ID: 3e7f7900-d3ec-4ce9-8eac-1fed005ba9c7
+    source: Marina_Allegra_Federica_Silvia_Tondato
+    type: :Woman
+  AssignClass (2b377369-6d43-466f-babd-023e3ca8b9be)
+ Call ID: 2b377369-6d43-466f-babd-023e3ca8b9be
   Args:
-    relation: :hasRelation
-    target: :Marina_Allegra_Federica_Silvia_Tondato
-    source: :Ashley_Hicks
-  AddTriple (f6fa7e8b-4fc9-46e3-a3ce-03fa1676e475)
- Call ID: f6fa7e8b-4fc9-46e3-a3ce-03fa1676e475
-  Args:
-    relation: :hasRelation
-    source: :Ashley_Hicks
-    target: :Kathryn_Sharkey
-  Finish (a2096a2e-46b3-4f23-bddb-555f853e1f4c)
- Call ID: a2096a2e-46b3-4f23-bddb-555f853e1f4c
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Ashley_Hicks a :Man,
-          :Person ;
-      :hasAncestor data:Louis_Mountbatten ;
-      :hasBirthYear 1963 ;
-      :hasFather data:David_Nightingale_Hicks ;
-      :hasMarriageYear data:1990 ;
-      :hasMother data:Lady_Pamela_Hicks ;
-      :hasRelation data:Kathryn_Sharkey,
-          data:Marina_Allegra_Federica_Silvia_Tondato ;
-      :hasSister data:Edwina_Brudenell,
-          data:India_Hicks .
-
-  data:David_Nightingale_Hicks a :Man,
-          :Person .
-
-  data:Edwina_Brudenell a :Person,
-          :Woman .
-
-  data:India_Hicks a :Person,
-          :Woman .
-
-  data:Kathryn_Sharkey a :Person,
-          :Woman .
-
-  data:Lady_Pamela_Hicks a :Person,
-          :Woman .
-
-  data:Louis_Mountbatten a :Man,
-          :Person .
-
-  data:Marina_Allegra_Federica_Silvia_Tondato a :Person,
-          :Woman .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1990']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (93d156a7-e32e-46c3-9186-524ed8c90a05)
- Call ID: 93d156a7-e32e-46c3-9186-524ed8c90a05
-  Args:
-    source: :Ashley_Hicks
-    target: :1990
-    relation: :hasMarriageYear
-  AddLiteral (588215db-c9d1-4a1a-9ce2-fd404d04055b)
- Call ID: 588215db-c9d1-4a1a-9ce2-fd404d04055b
+    source: Marina_Allegra_Federica_Silvia_Tondato
+    type: :Person
+  AddLiteral (2b6a5c0b-7de2-4df9-a3b1-d52fc0cad3c2)
+ Call ID: 2b6a5c0b-7de2-4df9-a3b1-d52fc0cad3c2
   Args:
     literal_type: xsd:integer
+    source: Ashley_Hicks
     literal_value: 1990
     relation: :hasMarriageYear
-    source: :Ashley_Hicks
-  Finish (7e51739f-9787-4136-9b53-b4b496a40a8f)
- Call ID: 7e51739f-9787-4136-9b53-b4b496a40a8f
+  AddTriple (f24a74a3-6889-45ee-b9c9-94d4bf7ef6fd)
+ Call ID: f24a74a3-6889-45ee-b9c9-94d4bf7ef6fd
+  Args:
+    target: Marina_Allegra_Federica_Silvia_Tondato
+    source: Ashley_Hicks
+    relation: :hasRelation
+  AssignClass (ea897301-a7bb-49e2-afda-2e982d3ea46d)
+ Call ID: ea897301-a7bb-49e2-afda-2e982d3ea46d
+  Args:
+    type: :Man
+    source: Carlo_Tondato
+  AssignClass (6a03256d-4710-4ecf-ad2c-c8f9fa5796bf)
+ Call ID: 6a03256d-4710-4ecf-ad2c-c8f9fa5796bf
+  Args:
+    type: :Person
+    source: Carlo_Tondato
+  AssignClass (aa34964c-4b9d-4faa-af7c-d465ae85aa61)
+ Call ID: aa34964c-4b9d-4faa-af7c-d465ae85aa61
+  Args:
+    source: Rosy_Maza
+    type: :Woman
+  AssignClass (6f28cb8e-bc45-4dc1-abbd-a3187816c89a)
+ Call ID: 6f28cb8e-bc45-4dc1-abbd-a3187816c89a
+  Args:
+    source: Rosy_Maza
+    type: :Person
+  AddTriple (f85b4eff-3400-43a4-8082-5644f7419555)
+ Call ID: f85b4eff-3400-43a4-8082-5644f7419555
+  Args:
+    relation: :hasFather
+    source: Marina_Allegra_Federica_Silvia_Tondato
+    target: Carlo_Tondato
+  AddTriple (dc0f3e56-8583-4338-a481-8c6359164f0a)
+ Call ID: dc0f3e56-8583-4338-a481-8c6359164f0a
+  Args:
+    relation: :hasMother
+    target: Rosy_Maza
+    source: Marina_Allegra_Federica_Silvia_Tondato
+  AssignClass (05cc7a05-46e6-4119-856e-2a37a9bda50c)
+ Call ID: 05cc7a05-46e6-4119-856e-2a37a9bda50c
+  Args:
+    type: :Woman
+    source: Kathryn_Sharkey
+  AssignClass (5d3e9187-4771-4586-9039-31cb97b50cb9)
+ Call ID: 5d3e9187-4771-4586-9039-31cb97b50cb9
+  Args:
+    type: :Person
+    source: Kathryn_Sharkey
+  AddLiteral (2698104c-6a04-4440-876f-f100c697e2fd)
+ Call ID: 2698104c-6a04-4440-876f-f100c697e2fd
+  Args:
+    literal_type: xsd:integer
+    source: Ashley_Hicks
+    literal_value: 2015
+    relation: :hasMarriageYear
+  AddTriple (2e59cb01-ca64-41f4-96d4-acaa7254cc89)
+ Call ID: 2e59cb01-ca64-41f4-96d4-acaa7254cc89
+  Args:
+    relation: :hasRelation
+    target: Kathryn_Sharkey
+    source: Ashley_Hicks
+  AssignClass (4f1af88d-1071-4764-9310-1e6d5438b01a)
+ Call ID: 4f1af88d-1071-4764-9310-1e6d5438b01a
+  Args:
+    source: William_T_Sharkey
+    type: :Man
+  AssignClass (992f8143-fb66-40ae-8580-e660c1d3bb50)
+ Call ID: 992f8143-fb66-40ae-8580-e660c1d3bb50
+  Args:
+    source: William_T_Sharkey
+    type: :Person
+  AssignClass (dafca0bb-1a70-414e-9e51-abda3cfa1041)
+ Call ID: dafca0bb-1a70-414e-9e51-abda3cfa1041
+  Args:
+    type: :Woman
+    source: Rosalie_Solis
+  AssignClass (1b61f534-1725-4233-b312-2f3787dda973)
+ Call ID: 1b61f534-1725-4233-b312-2f3787dda973
+  Args:
+    type: :Person
+    source: Rosalie_Solis
+  AddTriple (f78d1486-16d1-4350-99b0-c03456d757b9)
+ Call ID: f78d1486-16d1-4350-99b0-c03456d757b9
+  Args:
+    relation: :hasFather
+    target: William_T_Sharkey
+    source: Kathryn_Sharkey
+  AddTriple (340f4d01-a5b2-45b3-bc8e-2af348458548)
+ Call ID: 340f4d01-a5b2-45b3-bc8e-2af348458548
+  Args:
+    target: Rosalie_Solis
+    source: Kathryn_Sharkey
+    relation: :hasMother
+  Finish (319dccdf-bcb5-41f6-8e59-ed269915b859)
+ Call ID: 319dccdf-bcb5-41f6-8e59-ed269915b859
   Args:

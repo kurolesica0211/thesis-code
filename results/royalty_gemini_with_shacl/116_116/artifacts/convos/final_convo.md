@@ -130,6 +130,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -145,39 +147,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -192,6 +164,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -209,6 +198,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -276,29 +280,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -307,6 +303,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -319,6 +323,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -327,17 +333,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -365,6 +373,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -380,544 +472,140 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b5b4e6f6-30b6-4156-9730-94cbbef650e0)
- Call ID: b5b4e6f6-30b6-4156-9730-94cbbef650e0
+  AssignClass (18deca14-53f3-4508-96f2-f0d65a5b0a4b)
+ Call ID: 18deca14-53f3-4508-96f2-f0d65a5b0a4b
   Args:
     type: :Man
     source: Bertrand_of_Orléans-Braganza
-  AssignClass (28a39db7-f0fc-4d99-811d-f915c71d5834)
- Call ID: 28a39db7-f0fc-4d99-811d-f915c71d5834
+  AssignClass (f40999ad-b79d-45b2-b6a1-429f60ba7d39)
+ Call ID: f40999ad-b79d-45b2-b6a1-429f60ba7d39
   Args:
-    type: :Man
-    source: Luiz_of_Orléans-Braganza
-  AssignClass (3b94b600-2e70-4366-a5b2-87d78c71aa46)
- Call ID: 3b94b600-2e70-4366-a5b2-87d78c71aa46
+    type: :Person
+    source: Bertrand_of_Orléans-Braganza
+  AddLiteral (bc4133ed-d567-4763-b6ee-8c1e6a43c3f1)
+ Call ID: bc4133ed-d567-4763-b6ee-8c1e6a43c3f1
   Args:
-    source: Pedro_Carlos
-    type: :Man
-  AssignClass (7477e7a4-2f96-43bd-8b55-6a662366961e)
- Call ID: 7477e7a4-2f96-43bd-8b55-6a662366961e
-  Args:
-    type: :Woman
-    source: Isabel_Princess_Imperial_of_Brazil
-  AssignClass (0fc71807-193b-49e9-a504-7f66cb94745f)
- Call ID: 0fc71807-193b-49e9-a504-7f66cb94745f
-  Args:
-    type: :Man
-    source: Pedro_II_of_Brazil
-  AssignClass (e43a176d-ac8d-4210-8d02-0201848fc77d)
- Call ID: e43a176d-ac8d-4210-8d02-0201848fc77d
-  Args:
-    source: Pedro_Henrique_of_Orléans-Braganza
-    type: :Man
-  AssignClass (2b51b5f2-a328-4f54-966a-4d46900e612b)
- Call ID: 2b51b5f2-a328-4f54-966a-4d46900e612b
-  Args:
-    type: :Woman
-    source: Maria_Elisabeth_of_Bavaria
-  AssignClass (bd6ffaba-e139-4528-8c33-71fc7192648e)
- Call ID: bd6ffaba-e139-4528-8c33-71fc7192648e
-  Args:
-    source: Eudes_of_Orléans-Braganza
-    type: :Man
-  AssignClass (7e60fcc5-ba6f-4469-b832-828e38d5f734)
- Call ID: 7e60fcc5-ba6f-4469-b832-828e38d5f734
-  Args:
-    source: Ludwig_III_of_Bavaria
-    type: :Man
-  AddLiteral (a6426f20-f58d-4894-a623-8366537be28b)
- Call ID: a6426f20-f58d-4894-a623-8366537be28b
-  Args:
-    relation: :hasBirthYear
     literal_value: 1941
+    relation: :hasBirthYear
     source: Bertrand_of_Orléans-Braganza
     literal_type: xsd:integer
-  AddTriple (19b2edb8-cfc8-4e9a-b5b9-5b9cb5212c7f)
- Call ID: 19b2edb8-cfc8-4e9a-b5b9-5b9cb5212c7f
+  AssignClass (fb22db02-9b0c-4cd6-83cd-c61abc87a508)
+ Call ID: fb22db02-9b0c-4cd6-83cd-c61abc87a508
   Args:
+    type: :Man
+    source: Luiz_of_Orléans-Braganza
+  AssignClass (d7e1a6b3-5538-4c15-93df-ca5d28b129f3)
+ Call ID: d7e1a6b3-5538-4c15-93df-ca5d28b129f3
+  Args:
+    source: Luiz_of_Orléans-Braganza
+    type: :Person
+  AddTriple (cd2cc96d-77db-45dc-89b0-8fac97c07376)
+ Call ID: cd2cc96d-77db-45dc-89b0-8fac97c07376
+  Args:
+    relation: :isBrotherOf
+    source: Bertrand_of_Orléans-Braganza
     target: Luiz_of_Orléans-Braganza
-    relation: :hasBrother
-    source: Bertrand_of_Orléans-Braganza
-  AddTriple (fc71bfdc-1a1f-451d-bcbd-72261491686f)
- Call ID: fc71bfdc-1a1f-451d-bcbd-72261491686f
+  AssignClass (4274dc79-fdab-4f56-b857-4401a04b4862)
+ Call ID: 4274dc79-fdab-4f56-b857-4401a04b4862
   Args:
-    source: Bertrand_of_Orléans-Braganza
-    relation: :hasBrother
-    target: Eudes_of_Orléans-Braganza
-  AddTriple (307af867-bed2-43cd-9e15-7e8f8005d6d3)
- Call ID: 307af867-bed2-43cd-9e15-7e8f8005d6d3
+    source: Pedro_Carlos
+    type: :Man
+  AssignClass (787e5ceb-1b12-42e0-95fd-82b1231d62ee)
+ Call ID: 787e5ceb-1b12-42e0-95fd-82b1231d62ee
   Args:
-    target: Pedro_Henrique_of_Orléans-Braganza
-    source: Bertrand_of_Orléans-Braganza
-    relation: :hasFather
-  AddTriple (2088c194-d5e9-4b3f-a010-f798e3d180f2)
- Call ID: 2088c194-d5e9-4b3f-a010-f798e3d180f2
+    source: Pedro_Carlos
+    type: :Person
+  AssignClass (06054ed8-3ad4-45b7-9f31-a5b02929b24f)
+ Call ID: 06054ed8-3ad4-45b7-9f31-a5b02929b24f
   Args:
-    relation: :hasMother
-    source: Bertrand_of_Orléans-Braganza
-    target: Maria_Elisabeth_of_Bavaria
-  AddTriple (26f0573b-0c3a-4f25-a445-d5ee516a192c)
- Call ID: 26f0573b-0c3a-4f25-a445-d5ee516a192c
+    source: Isabel_Princess_Imperial_of_Brazil
+    type: :Woman
+  AssignClass (bec74ce5-bd4b-488b-974f-32fad131145b)
+ Call ID: bec74ce5-bd4b-488b-974f-32fad131145b
   Args:
-    target: Pedro_II_of_Brazil
+    source: Isabel_Princess_Imperial_of_Brazil
+    type: :Person
+  AssignClass (abc863b0-27cc-4da8-8001-7f4d90f64f36)
+ Call ID: abc863b0-27cc-4da8-8001-7f4d90f64f36
+  Args:
+    source: Pedro_II_of_Brazil
+    type: :Man
+  AssignClass (2d7b65e8-1808-4b7b-ad5f-481e249ef31d)
+ Call ID: 2d7b65e8-1808-4b7b-ad5f-481e249ef31d
+  Args:
+    type: :Person
+    source: Pedro_II_of_Brazil
+  AddTriple (4f660680-844c-4cfc-8c8c-a00b740feccc)
+ Call ID: 4f660680-844c-4cfc-8c8c-a00b740feccc
+  Args:
     source: Isabel_Princess_Imperial_of_Brazil
     relation: :isDaughterOf
-  AddTriple (24e6bd55-5fc1-4621-afb1-8beccec60713)
- Call ID: 24e6bd55-5fc1-4621-afb1-8beccec60713
+    target: Pedro_II_of_Brazil
+  AssignClass (564f1fa3-5993-4c0a-b6c8-ec1ea3bc0502)
+ Call ID: 564f1fa3-5993-4c0a-b6c8-ec1ea3bc0502
   Args:
-    source: Luiz_of_Orléans-Braganza
+    source: Pedro_Henrique_of_Orléans-Braganza
+    type: :Man
+  AssignClass (014a07c8-c9f3-41e8-abaa-6db58d9f9dae)
+ Call ID: 014a07c8-c9f3-41e8-abaa-6db58d9f9dae
+  Args:
+    type: :Person
+    source: Pedro_Henrique_of_Orléans-Braganza
+  AssignClass (6d177248-213b-4c31-b582-8fc79788b98b)
+ Call ID: 6d177248-213b-4c31-b582-8fc79788b98b
+  Args:
+    source: Maria_Elisabeth_of_Bavaria
+    type: :Woman
+  AssignClass (3ac18929-1971-4989-9523-95f457803f91)
+ Call ID: 3ac18929-1971-4989-9523-95f457803f91
+  Args:
+    source: Maria_Elisabeth_of_Bavaria
+    type: :Person
+  AddTriple (2b920ff9-21c5-4821-ad65-850cd01684e0)
+ Call ID: 2b920ff9-21c5-4821-ad65-850cd01684e0
+  Args:
+    source: Bertrand_of_Orléans-Braganza
     relation: :hasFather
     target: Pedro_Henrique_of_Orléans-Braganza
-  AddTriple (2e758c29-e4ba-43c2-96a5-503e035ffec0)
- Call ID: 2e758c29-e4ba-43c2-96a5-503e035ffec0
+  AddTriple (c1264dd6-9f5e-4a38-9dd9-1d1574610a54)
+ Call ID: c1264dd6-9f5e-4a38-9dd9-1d1574610a54
   Args:
     target: Maria_Elisabeth_of_Bavaria
     relation: :hasMother
-    source: Luiz_of_Orléans-Braganza
-  AddTriple (4a7e7868-b468-4317-a677-2bee9e58ea52)
- Call ID: 4a7e7868-b468-4317-a677-2bee9e58ea52
+    source: Bertrand_of_Orléans-Braganza
+  AssignClass (b9af120d-dee9-46b7-9082-471b7e3b5b70)
+ Call ID: b9af120d-dee9-46b7-9082-471b7e3b5b70
   Args:
     source: Eudes_of_Orléans-Braganza
-    relation: :hasFather
-    target: Pedro_Henrique_of_Orléans-Braganza
-  AddTriple (cc6e298f-4404-475d-b4e7-41cbc6881fd7)
- Call ID: cc6e298f-4404-475d-b4e7-41cbc6881fd7
+    type: :Man
+  AssignClass (1d9f1987-af90-42d1-8672-ae117e2e4536)
+ Call ID: 1d9f1987-af90-42d1-8672-ae117e2e4536
   Args:
-    target: Maria_Elisabeth_of_Bavaria
-    relation: :hasMother
     source: Eudes_of_Orléans-Braganza
-  Finish (dc66ada3-56c7-436a-98de-f8ea33b2d16f)
- Call ID: dc66ada3-56c7-436a-98de-f8ea33b2d16f
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Bertrand_of_Orl%C3%A9ans-Braganza a :Man ;
-      :hasBirthYear 1941 ;
-      :hasBrother data:Eudes_of_Orl%C3%A9ans-Braganza,
-          data:Luiz_of_Orl%C3%A9ans-Braganza ;
-      :hasFather data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
-      :hasMother data:Maria_Elisabeth_of_Bavaria .
-
-  data:Isabel_Princess_Imperial_of_Brazil a :Woman ;
-      :isDaughterOf data:Pedro_II_of_Brazil .
-
-  data:Ludwig_III_of_Bavaria a :Man .
-
-  data:Pedro_Carlos a :Man .
-
-  data:Eudes_of_Orl%C3%A9ans-Braganza a :Man ;
-      :hasFather data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
-      :hasMother data:Maria_Elisabeth_of_Bavaria .
-
-  data:Luiz_of_Orl%C3%A9ans-Braganza a :Man ;
-      :hasFather data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
-      :hasMother data:Maria_Elisabeth_of_Bavaria .
-
-  data:Pedro_II_of_Brazil a :Man .
-
-  data:Maria_Elisabeth_of_Bavaria a :Woman .
-
-  data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man .
-
-
-
-================================= Tool Message =================================
-
-You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (9f149d1b-c3d0-4e7e-b937-f23837bef8b8)
- Call ID: 9f149d1b-c3d0-4e7e-b937-f23837bef8b8
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:21
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Pedro_Henrique_of_Orl%C3%A9ans-Braganza is missing the required class :Ancestor, which is mandatory for the :hasFather property of Eudes_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Pedro_Henrique_of_Orl%C3%A9ans-Braganza, :Ancestor)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Pedro_Henrique_of_Orl%C3%A9ans-Braganza is missing the required class :Ancestor, which is mandatory for the :hasFather property of Bertrand_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Pedro_Henrique_of_Orl%C3%A9ans-Braganza, :Ancestor)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Pedro_Henrique_of_Orl%C3%A9ans-Braganza is missing the required class :Ancestor, which is mandatory for the :hasFather property of Luiz_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Pedro_Henrique_of_Orl%C3%A9ans-Braganza, :Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Maria_Elisabeth_of_Bavaria is missing the required class :Ancestor, which is mandatory for the :hasMother property of Eudes_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Elisabeth_of_Bavaria, :Ancestor)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Maria_Elisabeth_of_Bavaria is missing the required class :Ancestor, which is mandatory for the :hasMother property of Bertrand_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Elisabeth_of_Bavaria, :Ancestor)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Maria_Elisabeth_of_Bavaria is missing the required class :Ancestor, which is mandatory for the :hasMother property of Luiz_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Elisabeth_of_Bavaria, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Pedro_Henrique_of_Orl%C3%A9ans-Braganza is missing the required class :Ancestor, which is mandatory for the :hasFather property of Eudes_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Pedro_Henrique_of_Orl%C3%A9ans-Braganza, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Pedro_Henrique_of_Orl%C3%A9ans-Braganza is missing the required class :Ancestor, which is mandatory for the :hasFather property of Bertrand_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Pedro_Henrique_of_Orl%C3%A9ans-Braganza, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Pedro_Henrique_of_Orl%C3%A9ans-Braganza is missing the required class :Ancestor, which is mandatory for the :hasFather property of Luiz_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Pedro_Henrique_of_Orl%C3%A9ans-Braganza, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Maria_Elisabeth_of_Bavaria is missing the required class :Ancestor, which is mandatory for the :hasMother property of Eudes_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Elisabeth_of_Bavaria, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Maria_Elisabeth_of_Bavaria is missing the required class :Ancestor, which is mandatory for the :hasMother property of Bertrand_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Elisabeth_of_Bavaria, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Maria_Elisabeth_of_Bavaria is missing the required class :Ancestor, which is mandatory for the :hasMother property of Luiz_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Elisabeth_of_Bavaria, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Pedro_II_of_Brazil is missing the required class :Ancestor, which is mandatory for the :isDaughterOf property of Isabel_Princess_Imperial_of_Brazil.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Pedro_II_of_Brazil, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Pedro_Henrique_of_Orl%C3%A9ans-Braganza is missing the required class :Ancestor, which is mandatory for the :hasFather property of Eudes_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Pedro_Henrique_of_Orl%C3%A9ans-Braganza, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Pedro_Henrique_of_Orl%C3%A9ans-Braganza is missing the required class :Ancestor, which is mandatory for the :hasFather property of Bertrand_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Pedro_Henrique_of_Orl%C3%A9ans-Braganza, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Pedro_Henrique_of_Orl%C3%A9ans-Braganza is missing the required class :Ancestor, which is mandatory for the :hasFather property of Luiz_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Pedro_Henrique_of_Orl%C3%A9ans-Braganza, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Maria_Elisabeth_of_Bavaria is missing the required class :Ancestor, which is mandatory for the :hasMother property of Eudes_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Elisabeth_of_Bavaria, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Maria_Elisabeth_of_Bavaria is missing the required class :Ancestor, which is mandatory for the :hasMother property of Bertrand_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Elisabeth_of_Bavaria, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Maria_Elisabeth_of_Bavaria is missing the required class :Ancestor, which is mandatory for the :hasMother property of Luiz_of_Orl%C3%A9ans-Braganza.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Elisabeth_of_Bavaria, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Pedro_II_of_Brazil is missing the required class :Ancestor, which is mandatory for the :isDaughterOf property of Isabel_Princess_Imperial_of_Brazil.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Pedro_II_of_Brazil, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Pedro_II_of_Brazil is missing the required class :Ancestor, which is mandatory for the :isDaughterOf property of Isabel_Princess_Imperial_of_Brazil.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Pedro_II_of_Brazil, :Ancestor)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (1966b536-b39a-4845-ac57-3410fc3c9990)
- Call ID: 1966b536-b39a-4845-ac57-3410fc3c9990
-  Args:
-    type: :Ancestor
-    source: Pedro_Henrique_of_Orléans-Braganza
-  AssignClass (bd91b20e-9679-47fc-b52c-6dee161985e6)
- Call ID: bd91b20e-9679-47fc-b52c-6dee161985e6
-  Args:
-    type: :Ancestor
-    source: Maria_Elisabeth_of_Bavaria
-  AssignClass (cc4f2401-144b-439a-9d06-4b35e48ee918)
- Call ID: cc4f2401-144b-439a-9d06-4b35e48ee918
-  Args:
-    type: :Ancestor
-    source: Pedro_II_of_Brazil
-  AddTriple (88973319-f3a9-4f22-b3b1-0a3f1c4ff8f9)
- Call ID: 88973319-f3a9-4f22-b3b1-0a3f1c4ff8f9
+    type: :Person
+  AddTriple (2881f7c9-2747-4cf0-910b-b5345ca3ac7c)
+ Call ID: 2881f7c9-2747-4cf0-910b-b5345ca3ac7c
   Args:
     source: Bertrand_of_Orléans-Braganza
-    target: :Male
-    relation: :hasSex
-  AddTriple (a08a5924-2a8e-4f69-8a92-243a28ae72f6)
- Call ID: a08a5924-2a8e-4f69-8a92-243a28ae72f6
+    relation: :isBrotherOf
+    target: Eudes_of_Orléans-Braganza
+  AssignClass (888e6769-127f-4f8c-b77f-5dac0182cb01)
+ Call ID: 888e6769-127f-4f8c-b77f-5dac0182cb01
   Args:
-    target: :Male
-    source: Luiz_of_Orléans-Braganza
-    relation: :hasSex
-  AddTriple (01e7a5c8-6da3-4424-9504-36e2f6ca8fce)
- Call ID: 01e7a5c8-6da3-4424-9504-36e2f6ca8fce
-  Args:
-    relation: :hasSex
-    source: Eudes_of_Orléans-Braganza
-    target: :Male
-  AddTriple (003a8b86-5826-4870-954a-18d0930719c6)
- Call ID: 003a8b86-5826-4870-954a-18d0930719c6
-  Args:
-    relation: :hasSex
-    source: Pedro_Carlos
-    target: :Male
-  AddTriple (f516a771-5e2c-44e9-b4d1-c25755c67d60)
- Call ID: f516a771-5e2c-44e9-b4d1-c25755c67d60
-  Args:
-    source: Pedro_II_of_Brazil
-    target: :Male
-    relation: :hasSex
-  AddTriple (c9367481-6fc9-4eac-81d8-788392fbf0ab)
- Call ID: c9367481-6fc9-4eac-81d8-788392fbf0ab
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: Pedro_Henrique_of_Orléans-Braganza
-  AddTriple (e5b9e11b-b555-4e64-a2e9-623fc59bcc27)
- Call ID: e5b9e11b-b555-4e64-a2e9-623fc59bcc27
-  Args:
-    target: :Male
     source: Ludwig_III_of_Bavaria
-    relation: :hasSex
-  AddTriple (2356781d-ea3b-4fd9-8c6f-b128e9786eb2)
- Call ID: 2356781d-ea3b-4fd9-8c6f-b128e9786eb2
+    type: :Man
+  AssignClass (a17e4541-b284-4e64-8e9b-9b4a4609e5f3)
+ Call ID: a17e4541-b284-4e64-8e9b-9b4a4609e5f3
   Args:
-    relation: :hasSex
-    target: :Female
-    source: Isabel_Princess_Imperial_of_Brazil
-  AddTriple (85144fef-7ca1-4410-9245-88e0ff4c2e0d)
- Call ID: 85144fef-7ca1-4410-9245-88e0ff4c2e0d
-  Args:
-    source: Maria_Elisabeth_of_Bavaria
-    target: :Female
-    relation: :hasSex
-  AssignClass (4ac0e70f-5564-4fb3-aa9f-4da374e325bd)
- Call ID: 4ac0e70f-5564-4fb3-aa9f-4da374e325bd
-  Args:
-    type: :Male
-    source: :Male
-  AssignClass (a5eebe29-0ec8-4265-9158-a117ab4bf055)
- Call ID: a5eebe29-0ec8-4265-9158-a117ab4bf055
-  Args:
-    type: :Female
-    source: :Female
-  AssignClass (72aecb99-201a-486b-9621-07a35d02776b)
- Call ID: 72aecb99-201a-486b-9621-07a35d02776b
-  Args:
-    type: :Person
-    source: Bertrand_of_Orléans-Braganza
-  AssignClass (32546e11-64ec-4e2f-8c1f-f802e69a748c)
- Call ID: 32546e11-64ec-4e2f-8c1f-f802e69a748c
-  Args:
-    type: :Person
-    source: Luiz_of_Orléans-Braganza
-  AssignClass (e5153fe7-eb5c-4625-b494-a16a02d1329c)
- Call ID: e5153fe7-eb5c-4625-b494-a16a02d1329c
-  Args:
-    type: :Person
-    source: Eudes_of_Orléans-Braganza
-  AssignClass (aab530a5-464f-4074-b0d5-dddf3b3c6d83)
- Call ID: aab530a5-464f-4074-b0d5-dddf3b3c6d83
-  Args:
-    type: :Person
-    source: Pedro_Carlos
-  AssignClass (8da43374-1c08-4942-a83d-ce17439fe7af)
- Call ID: 8da43374-1c08-4942-a83d-ce17439fe7af
-  Args:
-    type: :Person
-    source: Pedro_II_of_Brazil
-  AssignClass (499c3f4a-8484-4685-a328-1d23310ce3e3)
- Call ID: 499c3f4a-8484-4685-a328-1d23310ce3e3
-  Args:
-    type: :Person
-    source: Pedro_Henrique_of_Orléans-Braganza
-  AssignClass (b3eb589e-1dd8-4104-8e7b-f8b3059a4a6b)
- Call ID: b3eb589e-1dd8-4104-8e7b-f8b3059a4a6b
-  Args:
-    type: :Person
     source: Ludwig_III_of_Bavaria
-  AssignClass (21762d3a-c8ca-4c61-acb3-119297ee7311)
- Call ID: 21762d3a-c8ca-4c61-acb3-119297ee7311
-  Args:
     type: :Person
-    source: Isabel_Princess_Imperial_of_Brazil
-  AssignClass (f2db264c-9004-44af-94c8-8a74f68c1278)
- Call ID: f2db264c-9004-44af-94c8-8a74f68c1278
+  Finish (dde01b87-59e4-40f6-ba6b-7292e6da2d8a)
+ Call ID: dde01b87-59e4-40f6-ba6b-7292e6da2d8a
   Args:
-    type: :Person
-    source: Maria_Elisabeth_of_Bavaria
-  ValidateShacl (af177e65-61e7-460f-961c-f261b2508466)
- Call ID: af177e65-61e7-460f-961c-f261b2508466
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1017,55 +705,203 @@ The final data graph after all the edits:
   data:Bertrand_of_Orl%C3%A9ans-Braganza a :Man,
           :Person ;
       :hasBirthYear 1941 ;
-      :hasBrother data:Eudes_of_Orl%C3%A9ans-Braganza,
-          data:Luiz_of_Orl%C3%A9ans-Braganza ;
       :hasFather data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
       :hasMother data:Maria_Elisabeth_of_Bavaria ;
-      :hasSex data:Male .
+      :isBrotherOf data:Eudes_of_Orl%C3%A9ans-Braganza,
+          data:Luiz_of_Orl%C3%A9ans-Braganza .
 
   data:Isabel_Princess_Imperial_of_Brazil a :Person,
           :Woman ;
-      :hasSex data:Female ;
       :isDaughterOf data:Pedro_II_of_Brazil .
 
   data:Ludwig_III_of_Bavaria a :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
   data:Pedro_Carlos a :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
   data:Eudes_of_Orl%C3%A9ans-Braganza a :Man,
-          :Person ;
-      :hasFather data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
-      :hasMother data:Maria_Elisabeth_of_Bavaria ;
-      :hasSex data:Male .
+          :Person .
 
   data:Luiz_of_Orl%C3%A9ans-Braganza a :Man,
+          :Person .
+
+  data:Maria_Elisabeth_of_Bavaria a :Person,
+          :Woman .
+
+  data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man,
+          :Person .
+
+  data:Pedro_II_of_Brazil a :Man,
+          :Person .
+
+
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (da077af5-7297-4c08-93ee-daa70d57ffc0)
+ Call ID: da077af5-7297-4c08-93ee-daa70d57ffc0
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:9
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Pedro_Henrique_of_Orleans-Braganza, assigned as the father of Bertrand_of_Orleans-Braganza, is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pedro_Henrique_of_Orleans-Braganza, :Ancestor)
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Elisabeth_of_Bavaria, assigned as the mother of Bertrand_of_Orleans-Braganza, is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_Elisabeth_of_Bavaria, :Ancestor)
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Pedro_Henrique_of_Orleans-Braganza is missing the required class ':Ancestor' to satisfy the hasFather property constraint.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pedro_Henrique_of_Orleans-Braganza, :Ancestor)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Elisabeth_of_Bavaria is missing the required class ':Ancestor' to satisfy the hasMother property constraint.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_Elisabeth_of_Bavaria, :Ancestor)
+
+
+  Violation [5]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Pedro_II_of_Brazil, identified as the target of the isDaughterOf relation for Isabel_Princess_Imperial_of_Brazil, lacks the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pedro_II_of_Brazil, :Ancestor)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Pedro_Henrique_of_Orleans-Braganza is missing the required class ':Ancestor' to satisfy the hasFather property constraint.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pedro_Henrique_of_Orleans-Braganza, :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Elisabeth_of_Bavaria is missing the required class ':Ancestor' to satisfy the hasMother property constraint.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Maria_Elisabeth_of_Bavaria, :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Pedro_II_of_Brazil is missing the required class ':Ancestor' to satisfy the isDaughterOf property constraint.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pedro_II_of_Brazil, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node Pedro_II_of_Brazil is missing the required class ':Ancestor' to satisfy the isDaughterOf property constraint.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Pedro_II_of_Brazil, :Ancestor)
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (81dc72f4-892a-43f3-819b-5e44e8061a3c)
+ Call ID: 81dc72f4-892a-43f3-819b-5e44e8061a3c
+  Args:
+    source: Pedro_Henrique_of_Orléans-Braganza
+    type: :Ancestor
+  AssignClass (b9c0f8ff-bb09-4c56-9cf3-a4ba8af3b102)
+ Call ID: b9c0f8ff-bb09-4c56-9cf3-a4ba8af3b102
+  Args:
+    source: Maria_Elisabeth_of_Bavaria
+    type: :Ancestor
+  AssignClass (bd101a8f-0dff-4752-972c-50168b373671)
+ Call ID: bd101a8f-0dff-4752-972c-50168b373671
+  Args:
+    source: Pedro_II_of_Brazil
+    type: :Ancestor
+  ValidateShacl (989ef48d-24b1-44f6-9bce-8eecb64bd885)
+ Call ID: 989ef48d-24b1-44f6-9bce-8eecb64bd885
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Bertrand_of_Orl%C3%A9ans-Braganza a :Man,
           :Person ;
+      :hasBirthYear 1941 ;
       :hasFather data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
       :hasMother data:Maria_Elisabeth_of_Bavaria ;
-      :hasSex data:Male .
+      :isBrotherOf data:Eudes_of_Orl%C3%A9ans-Braganza,
+          data:Luiz_of_Orl%C3%A9ans-Braganza .
 
-  data:Pedro_II_of_Brazil a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
+  data:Isabel_Princess_Imperial_of_Brazil a :Person,
+          :Woman ;
+      :isDaughterOf data:Pedro_II_of_Brazil .
 
-  data:Female a :Female .
+  data:Ludwig_III_of_Bavaria a :Man,
+          :Person .
+
+  data:Pedro_Carlos a :Man,
+          :Person .
+
+  data:Eudes_of_Orl%C3%A9ans-Braganza a :Man,
+          :Person .
+
+  data:Luiz_of_Orl%C3%A9ans-Braganza a :Man,
+          :Person .
 
   data:Maria_Elisabeth_of_Bavaria a :Ancestor,
           :Person,
-          :Woman ;
-      :hasSex data:Female .
+          :Woman .
 
   data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
-  data:Male a :Male .
+  data:Pedro_II_of_Brazil a :Ancestor,
+          :Man,
+          :Person .
 
 
 
@@ -1077,6 +913,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (bfe19285-30c5-44f3-be56-ce98874926b6)
- Call ID: bfe19285-30c5-44f3-be56-ce98874926b6
+  Finish (9a78b810-30f2-4df9-b002-89277fc12bd3)
+ Call ID: 9a78b810-30f2-4df9-b002-89277fc12bd3
   Args:

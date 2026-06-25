@@ -85,53 +85,51 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Beatrix*
+Nerissa Jane Irene Bowes-Lyon (18 February 1919 – 22 January 1986) and Katherine Juliet Bowes-Lyon (4 July 1926 – 23 February 2014) were two mentally disabled daughters of John Herbert Bowes-Lyon and his wife Fenella (née Hepburn-Stuart-Forbes-Trefusis).
+John was the brother of Queen Elizabeth the Queen Mother, thus his two daughters were the maternal first cousins of Queen Elizabeth II and Princess Margaret, sharing one pair of grandparents, Claude Bowes-Lyon, 14th
+Earl of Strathmore and Kinghorne, and Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne.
+Background
+
+Nerissa Bowes-Lyon was born on 18 February 1919 and Katherine Bowes-Lyon was born on 4 July 1926, the daughters of John Herbert Bowes-Lyon and Fenella Hepburn-Stuart-Forbes-Trefusis.
+Their father, the second son of Claude Bowes-Lyon, 14th Earl of Strathmore and Kinghorne, was a brother of Lady Elizabeth Bowes-Lyon, Duchess of York, the future Queen Elizabeth II's mother.
+Their mother was the younger daughter of Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton.
+The sisters’ maternal great-grandparents Charles Hepburn-Stuart-Forbes-Trefusis, 20th Baron Clinton and his wife Harriet Williamina Hepburn-Forbes had been first cousins and their son (the sisters maternal grand-father)
+Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton, married his second cousin once removed Lady Jane McDonnell.
+Their father died 7 February 1930 after having contracted pneumonia at the age of 43, leaving their mother alone to care for their four young children.
+The 1963 edition of Burke's Peerage listed Nerissa and Katherine as having died in 1940 and 1961 respectively; but in 1987 it was revealed by The Sun that the sisters were alive, and had been placed in Earlswood Hospital for mentally disabled people in 1941.
+Nerissa died in 1986, aged 66, with only hospital staff attending the funeral, while Katherine died in 2014, aged 87.
+Controversy
+
+Suggestions of a cover-up were rejected in the press by Lord Clinton in 1987, who claimed that his aunt Fenella (the mother of the two women) had completed the form for Burke's incorrectly due to Fenella being "a vague person"; however, Burke's included specific dates of death for both sisters.
+According to a 2011 television documentary about the sisters, The Queen's Hidden Cousins, broadcast by Channel 4, "throughout their time at the hospital, there is no known record that the sisters were ever visited by any member of the Bowes-Lyon or royal families, despite their aunt, the Queen Mother, being a Patron of Mencap" (a charity for people with learning disabilities).
+When Nerissa died in 1986, none of her family attended the funeral.
+Sources from within the family, however, report that their mother Fenella often visited the two sisters until her death in 1966; Lady Elizabeth Shakerley, Fenella's granddaughter, also said other members of the family had often visited over the years and had often sent gifts and cards on Christmas and birthdays.
+Queen Elizabeth The Queen Mother, upon discovering that her nieces were alive in 1982, sent money for toys and sweets on their birthdays and at Christmas.
+The three grandchildren of Fenella and John (Lady Elizabeth Shakerley, the 5th Earl of Lichfield, and Katherine Somervell) organised the headstone for Nerissa Bowes-Lyon.
+Harriet Hepburn-Stuart-Forbes-Trefusis (1887–1958), sister of Nerissa and Katherine's mother Fenella, married Major Henry Nevile Fane, and three of their seven children lived in Earlswood Hospital.
+David Danks, then director of the Murdoch Children's Research Institute, thought that a genetic disease in the Hepburn-Stuart-Forbes-Trefusis family may have been the cause of death of some male family members in early childhood and caused learning disabilities in some female family members.
+According to Lady Colin Campbell, whose mother was a friend of a doctor who treated the sisters, they suffered from Huntington's disease.
+Anne Tennant, Baroness Glenconner was, as a young woman and 1950s debutante of the year, engaged to Johnnie, Viscount Althorp, later the Earl Spencer and father to Diana, Princess of Wales; his father objected to the match on the grounds of "mad blood", as one of her grandmothers was a Trefusis, and the engagement was broken off.
+The Queen's Hidden Cousins
+
+In November 2011, Channel 4 broadcast a documentary about the sisters, The Queen's Hidden Cousins.
+The documentary was directed by Kelly Close and made by Minnow Films, an independent production company, whose synopsis states that "Whilst their sisters Elizabeth and Anne enjoyed lives of privilege and inclusion in the upper echelons of the aristocracy, Katherine and Nerissa were all but forgotten, written out of family history."
+"
 
 
-Princess Margriet*Pieter van Vollenhoven*
-
-
-Prince Hugo de Bourbon de Parme (Carlos Hugo Roderik Sybren; born 20 January 1997), formerly Hugo Klynstra, is a member of the extended Dutch royal family as the son of Prince Carlos, Hereditary Duke of Parma.
-Born out of wedlock, he was denied titles and family rights by his father until the Dutch Council of State ruled in his favor in 2018, granting him the style and title of His Royal Highness Prince Carlos Hugo
-Roderik Sybren de Bourbon de Parme.
-Despite the ruling, he is neither a member of the Dutch royal house (although considered a member of the extended Dutch royal family) nor a member of the House of Bourbon-Parma and is not in the line of succession to the defunct Parmese throne.
-Early life and family
-
-Carlos Hugo Roderik Sybren Klynstra was born in Nijmegen on 20 January 1997 to Prince Carlos de Bourbon de Parme, Prince of Piacenza and his friend Brigitte Klynstra.
-Due to being an illegitimate son, he was not born a prince.
-His father told Dutch media that Hugo's birth was "his mother's wish" and an "independent decision", denying his son any family rights.
-His maternal grandmother, Ingrid Pieksma-Klynstra, was the wife of Adolph Roderik Ernst Leopold, Count of Rechteren-Limpurg.
-Through his father, he is a grandson of Carlos Hugo, Duke of Parma and Princess Irene of the Netherlands.
-He is the first great-grandchild of Queen Juliana of the Netherlands and Prince Bernhard of Lippe-Biesterfeld.
-He is also a great-grandson of Prince Xavier of Bourbon-Parma and Madeleine de Bourbon-Busset.
-Upon the death of his grandfather, Carlos Hugo, in 2010, his father became the titular Duke of Parma and Piacenza, Carlist claimant to the Spanish throne, and the Head of the House of Bourbon-Parma.
-According to a royal decree of Queen Beatrix in 1996, his father is also a Dutch prince.
-He is the half-brother of Princess Luisa of Parma, Marchioness of Castell'Arquato, Princess Cecilia of Parma, Countess of Berceto and Prince Carlos of Parma, The Prince of Piacenza.
-Legal dispute over title
-
-Upon turning eighteen in 2015, Hugo went to court to have his surname changed from Klynstra to his father's surname, 'de Bourbon de Parme', and claimed the dutch noble title of prince.
-The Hereditary Duke of Parma insisted that he had a formal agreement with Hugo's mother that their relationship was "no-strings-attached" and that there would be "no family entanglement" following Hugo's conception.
-In 2016 the Ministry of Justice and Security ruled in favor of Hugo's claim and granted him the use of his father's surname.
-On 28 February 2018, the Dutch Council of State ruled in Hugo's favor, stating that Dutch law on nobility was clear and that the circumstances of Hugo's birth are irrelevant, granting Hugo the right to claim both his father's surname and (dutch) noble title and address.
-As such, he became His Royal Highness Prince Carlos Hugo Roderik Sybren de Bourbon de Parme.
-The title of 'Prince(ss) de Bourbon de Parme' is a Dutch title, bestowed by Queen Beatrix in 1996, and does not mean that Hugo automatically became a member of the House of Bourbon-Parma.
-The court ruling stated that membership to the House of Bourbon-Parma is "a private matter for the royal house itself".
-As such, he is not in the line of succession to the defunct Parma throne.
-Titles and styles
-
-References
-
-
-
-
-2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
-3 title granted by Royal Decree to descendants of Princess Irene
+Prior to the screening, the Daily Express reported that the Queen was said to be "hugely distressed" by it.
+Lady Elizabeth Shakerley, party planner to the Queen and the sisters' niece, responded at length, disputing both the assertions by the programme-makers of familial abandonment and the methods of "this supposedly factual documentary".
+She called it "cruel" and "intrusive" and said that "far from being a taboo subject, Katherine and Nerissa were very much a part of the family as sisters of Shakerley's mother, the late Princess Anne of Denmark.
+Following the programme's broadcast, The Guardian's reviewer John Crace wrote that "All we learned was just common knowledge."
+Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid interest in the story the following year.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -147,39 +145,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -194,6 +162,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -211,6 +196,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -278,29 +278,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -309,6 +301,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -321,6 +321,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -329,17 +331,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -367,6 +371,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -382,193 +470,186 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e921237d-3fdd-4b01-abf0-8cb5c0f7c16a)
- Call ID: e921237d-3fdd-4b01-abf0-8cb5c0f7c16a
+  AssignClass (571405e5-b539-4bca-8b0d-ff284b0dfa9c)
+ Call ID: 571405e5-b539-4bca-8b0d-ff284b0dfa9c
   Args:
-    source: Beatrix
-    type: :Person
-  AssignClass (930b4e8e-0dbe-4c10-afb6-c6c4f223057e)
- Call ID: 930b4e8e-0dbe-4c10-afb6-c6c4f223057e
-  Args:
-    type: :Person
-    source: Margriet
-  AssignClass (000884c2-93fc-48f9-af35-f0b250dc1456)
- Call ID: 000884c2-93fc-48f9-af35-f0b250dc1456
-  Args:
-    source: Pieter van Vollenhoven
-    type: :Person
-  AssignClass (4931144d-f5bd-4333-8cf7-6cdce0ebc1ea)
- Call ID: 4931144d-f5bd-4333-8cf7-6cdce0ebc1ea
-  Args:
-    source: Hugo de Bourbon de Parme
-    type: :Man
-  AssignClass (d6e18b4a-9531-49d0-9ce8-242c065a6281)
- Call ID: d6e18b4a-9531-49d0-9ce8-242c065a6281
-  Args:
-    type: :Man
-    source: Carlos de Bourbon de Parme
-  AssignClass (0bfc1060-bb15-4b41-8d2e-405331c3075c)
- Call ID: 0bfc1060-bb15-4b41-8d2e-405331c3075c
-  Args:
-    source: Brigitte Klynstra
+    source: Nerissa_Bowes-Lyon
     type: :Woman
-  AssignClass (30a30f33-f1bc-45f3-b154-8a3d31e89e09)
- Call ID: 30a30f33-f1bc-45f3-b154-8a3d31e89e09
+  AssignClass (6fd28f6e-979e-4885-aec3-da9f1618b0e9)
+ Call ID: 6fd28f6e-979e-4885-aec3-da9f1618b0e9
   Args:
-    source: Ingrid Pieksma-Klynstra
+    source: Katherine_Bowes-Lyon
     type: :Woman
-  AssignClass (7033a360-200e-4285-8241-ff96cebdb0bf)
- Call ID: 7033a360-200e-4285-8241-ff96cebdb0bf
+  AssignClass (7bf623bf-3393-4d20-9d47-9964bf2487bf)
+ Call ID: 7bf623bf-3393-4d20-9d47-9964bf2487bf
   Args:
-    source: Adolph Roderik Ernst Leopold
+    source: John_Herbert_Bowes-Lyon
     type: :Man
-  AssignClass (db18ff3b-dcf1-4d93-b292-5eb01c0452da)
- Call ID: db18ff3b-dcf1-4d93-b292-5eb01c0452da
+  AssignClass (80f395e3-6a49-44ac-ab39-e4164fc28ad4)
+ Call ID: 80f395e3-6a49-44ac-ab39-e4164fc28ad4
   Args:
+    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
+    type: :Woman
+  AssignClass (ae13549f-0ac9-4842-a9d6-84e783fceda6)
+ Call ID: ae13549f-0ac9-4842-a9d6-84e783fceda6
+  Args:
+    source: Claude_Bowes-Lyon
     type: :Man
-    source: Carlos Hugo, Duke of Parma
-  AssignClass (0cef2c11-41fd-457d-bacf-101dd954ec67)
- Call ID: 0cef2c11-41fd-457d-bacf-101dd954ec67
+  AssignClass (2fa08706-84f6-4111-9809-e8225b60fd5c)
+ Call ID: 2fa08706-84f6-4111-9809-e8225b60fd5c
   Args:
-    source: Irene of the Netherlands
+    source: Cecilia_Bowes-Lyon
     type: :Woman
-  AssignClass (a3bed9f7-a88c-4e0d-a58d-dceaf6de8d17)
- Call ID: a3bed9f7-a88c-4e0d-a58d-dceaf6de8d17
+  AssignClass (2e9e7a45-6f03-488b-98e0-c657a851eaac)
+ Call ID: 2e9e7a45-6f03-488b-98e0-c657a851eaac
   Args:
+    source: Elizabeth_Bowes-Lyon
     type: :Woman
-    source: Juliana of the Netherlands
-  AssignClass (72a06b61-56fb-487d-8802-9cd8d635ba3d)
- Call ID: 72a06b61-56fb-487d-8802-9cd8d635ba3d
+  AssignClass (a859f563-848b-4587-842e-fa13235403f1)
+ Call ID: a859f563-848b-4587-842e-fa13235403f1
   Args:
+    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
     type: :Man
-    source: Bernhard of Lippe-Biesterfeld
-  AssignClass (e58ea608-90d9-4684-96fe-69cbff0b18aa)
- Call ID: e58ea608-90d9-4684-96fe-69cbff0b18aa
+  AssignClass (f6b4ed07-00a2-450f-908b-8c2ffb21fa07)
+ Call ID: f6b4ed07-00a2-450f-908b-8c2ffb21fa07
   Args:
+    source: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
     type: :Man
-    source: Xavier of Bourbon-Parma
-  AssignClass (ce2251e4-4cf7-420d-8b49-048b1632516e)
- Call ID: ce2251e4-4cf7-420d-8b49-048b1632516e
+  AssignClass (13336dec-8ac8-4d06-952f-40fbd516f809)
+ Call ID: 13336dec-8ac8-4d06-952f-40fbd516f809
   Args:
-    source: Madeleine de Bourbon-Busset
+    source: Harriet_Williamina_Hepburn-Forbes
     type: :Woman
-  AssignClass (d2da97cd-ed8a-4ab1-bbbd-2adb54382ff8)
- Call ID: d2da97cd-ed8a-4ab1-bbbd-2adb54382ff8
+  AssignClass (2eec9292-4037-44de-865e-f903129a2152)
+ Call ID: 2eec9292-4037-44de-865e-f903129a2152
   Args:
+    source: Lady_Jane_McDonnell
     type: :Woman
-    source: Luisa of Parma
-  AssignClass (29fad6ff-a774-4168-8547-3e579fce2e8f)
- Call ID: 29fad6ff-a774-4168-8547-3e579fce2e8f
+  AssignClass (2612a30c-4eb9-4afd-b915-3950172876f5)
+ Call ID: 2612a30c-4eb9-4afd-b915-3950172876f5
   Args:
-    source: Cecilia of Parma
+    source: Harriet_Hepburn-Stuart-Forbes-Trefusis
     type: :Woman
-  AssignClass (64a6abca-c11a-40dc-8e5a-dbc229288ea4)
- Call ID: 64a6abca-c11a-40dc-8e5a-dbc229288ea4
+  AssignClass (009e0b2b-4ef7-45a1-8a3d-b73d8bdc62c1)
+ Call ID: 009e0b2b-4ef7-45a1-8a3d-b73d8bdc62c1
   Args:
+    source: Major_Henry_Nevile_Fane
     type: :Man
-    source: Carlos of Parma
-  AddLiteral (56e58abf-33ad-4e17-8ca9-ffc46bb3e462)
- Call ID: 56e58abf-33ad-4e17-8ca9-ffc46bb3e462
+  AddLiteral (e16a3dc7-0c59-45a8-84e5-f5cd568aca22)
+ Call ID: e16a3dc7-0c59-45a8-84e5-f5cd568aca22
   Args:
-    source: Hugo de Bourbon de Parme
-    relation: :formerlyKnownAs
-    literal_type: xsd:string
-    literal_value: Hugo Klynstra
-  AddLiteral (ced1daba-156e-4e17-a68f-65af15375ba0)
- Call ID: ced1daba-156e-4e17-a68f-65af15375ba0
+    literal_value: 1919
+    literal_type: xsd:integer
+    source: Nerissa_Bowes-Lyon
+    relation: :hasBirthYear
+  AddLiteral (e9e1ee3e-80ed-4ede-8927-5e27d9741bbb)
+ Call ID: e9e1ee3e-80ed-4ede-8927-5e27d9741bbb
+  Args:
+    source: Nerissa_Bowes-Lyon
+    relation: :hasDeathYear
+    literal_value: 1986
+    literal_type: xsd:integer
+  AddLiteral (c5ce8768-2e84-4dab-b13e-0a758bd1cf85)
+ Call ID: c5ce8768-2e84-4dab-b13e-0a758bd1cf85
+  Args:
+    relation: :hasBirthYear
+    source: Katherine_Bowes-Lyon
+    literal_type: xsd:integer
+    literal_value: 1926
+  AddLiteral (07767fa2-5849-4331-b0a0-bc6b0d422e7c)
+ Call ID: 07767fa2-5849-4331-b0a0-bc6b0d422e7c
   Args:
     literal_type: xsd:integer
-    source: Hugo de Bourbon de Parme
-    relation: :hasBirthYear
-    literal_value: 1997
-  AddTriple (a1a786c2-28ac-46f3-9b57-4781730a0bb3)
- Call ID: a1a786c2-28ac-46f3-9b57-4781730a0bb3
+    literal_value: 2014
+    relation: :hasDeathYear
+    source: Katherine_Bowes-Lyon
+  AddTriple (ec838fac-6d57-485e-baa4-063d174a9b37)
+ Call ID: ec838fac-6d57-485e-baa4-063d174a9b37
   Args:
-    source: Hugo de Bourbon de Parme
+    target: John_Herbert_Bowes-Lyon
+    source: Nerissa_Bowes-Lyon
     relation: :hasFather
-    target: Carlos de Bourbon de Parme
-  AddTriple (f6160045-4c6a-4e4b-9377-372cde042cbe)
- Call ID: f6160045-4c6a-4e4b-9377-372cde042cbe
+  AddTriple (a3365a53-ad23-49e4-be5d-897a5a1a8361)
+ Call ID: a3365a53-ad23-49e4-be5d-897a5a1a8361
   Args:
-    source: Hugo de Bourbon de Parme
+    target: Fenella_Hepburn-Stuart-Forbes-Trefusis
+    source: Nerissa_Bowes-Lyon
     relation: :hasMother
-    target: Brigitte Klynstra
-  AddTriple (70bf6ab9-fd82-4f82-9240-a48f5f56791e)
- Call ID: 70bf6ab9-fd82-4f82-9240-a48f5f56791e
+  AddTriple (d0c33b4f-7ffb-41c2-b19d-9757377dc840)
+ Call ID: d0c33b4f-7ffb-41c2-b19d-9757377dc840
   Args:
-    source: Brigitte Klynstra
+    source: Katherine_Bowes-Lyon
+    target: John_Herbert_Bowes-Lyon
+    relation: :hasFather
+  AddTriple (3581a65c-51cc-4e08-a166-4aae389bf21f)
+ Call ID: 3581a65c-51cc-4e08-a166-4aae389bf21f
+  Args:
     relation: :hasMother
-    target: Ingrid Pieksma-Klynstra
-  AddTriple (4f4ca9a4-0cff-4348-bb02-0a8626e6d67d)
- Call ID: 4f4ca9a4-0cff-4348-bb02-0a8626e6d67d
+    target: Fenella_Hepburn-Stuart-Forbes-Trefusis
+    source: Katherine_Bowes-Lyon
+  AddTriple (5ef87470-c264-4a3b-828e-99000afa2a85)
+ Call ID: 5ef87470-c264-4a3b-828e-99000afa2a85
   Args:
-    source: Brigitte Klynstra
+    target: Claude_Bowes-Lyon
+    source: John_Herbert_Bowes-Lyon
     relation: :hasFather
-    target: Adolph Roderik Ernst Leopold
-  AddTriple (644494b7-672a-4e6a-9e63-c6bc7d7123a0)
- Call ID: 644494b7-672a-4e6a-9e63-c6bc7d7123a0
+  AddTriple (6aa940cb-6c95-4475-a7ac-811f0f1ed2a6)
+ Call ID: 6aa940cb-6c95-4475-a7ac-811f0f1ed2a6
   Args:
-    source: Carlos de Bourbon de Parme
-    relation: :hasFather
-    target: Carlos Hugo, Duke of Parma
-  AddTriple (436c3235-fb2f-4d93-a31e-3bc935019638)
- Call ID: 436c3235-fb2f-4d93-a31e-3bc935019638
-  Args:
-    source: Carlos de Bourbon de Parme
+    source: John_Herbert_Bowes-Lyon
+    target: Cecilia_Bowes-Lyon
     relation: :hasMother
-    target: Irene of the Netherlands
-  AddTriple (763aca30-8792-48a2-a825-328a24ea01d4)
- Call ID: 763aca30-8792-48a2-a825-328a24ea01d4
+  AddTriple (0b69f97b-8144-4c4c-bae5-c159e592b5e6)
+ Call ID: 0b69f97b-8144-4c4c-bae5-c159e592b5e6
   Args:
-    source: Irene of the Netherlands
+    source: John_Herbert_Bowes-Lyon
+    target: Elizabeth_Bowes-Lyon
+    relation: :hasSister
+  AddTriple (414ecd20-a58c-4bf9-80d2-deacddb9b992)
+ Call ID: 414ecd20-a58c-4bf9-80d2-deacddb9b992
+  Args:
+    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
+    target: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
+    relation: :hasFather
+  AddTriple (56c27e11-30bb-47cb-9db8-9bc1f0410339)
+ Call ID: 56c27e11-30bb-47cb-9db8-9bc1f0410339
+  Args:
+    relation: :hasFather
+    target: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
+    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
+  AddTriple (b65da510-5e8c-4fdb-9e57-511bf4b931c7)
+ Call ID: b65da510-5e8c-4fdb-9e57-511bf4b931c7
+  Args:
+    target: Harriet_Williamina_Hepburn-Forbes
+    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
     relation: :hasMother
-    target: Juliana of the Netherlands
-  AddTriple (67cc9d1f-7d2a-4bb7-aa9f-6a83a8a1ed32)
- Call ID: 67cc9d1f-7d2a-4bb7-aa9f-6a83a8a1ed32
+  AddTriple (4de90b39-ea66-474d-ad79-e4cf08a95974)
+ Call ID: 4de90b39-ea66-474d-ad79-e4cf08a95974
   Args:
-    source: Irene of the Netherlands
     relation: :hasFather
-    target: Bernhard of Lippe-Biesterfeld
-  AddTriple (6ef8a130-7d20-4e06-9a5a-5538f7ad23b3)
- Call ID: 6ef8a130-7d20-4e06-9a5a-5538f7ad23b3
+    source: Harriet_Hepburn-Stuart-Forbes-Trefusis
+    target: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
+  AddTriple (007d528d-1952-4b9e-b2a5-7eb6547353e3)
+ Call ID: 007d528d-1952-4b9e-b2a5-7eb6547353e3
   Args:
-    source: Carlos Hugo, Duke of Parma
+    relation: :hasSister
+    target: Harriet_Hepburn-Stuart-Forbes-Trefusis
+    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
+  AddTriple (c2b1cbb2-5da5-4648-b1a2-c0bc7d8bf6f6)
+ Call ID: c2b1cbb2-5da5-4648-b1a2-c0bc7d8bf6f6
+  Args:
+    source: Elizabeth_Bowes-Lyon
+    target: Claude_Bowes-Lyon
     relation: :hasFather
-    target: Xavier of Bourbon-Parma
-  AddTriple (3cd7d068-70c9-4cb3-9366-9da481a4c05c)
- Call ID: 3cd7d068-70c9-4cb3-9366-9da481a4c05c
+  AddTriple (1ad582b4-d9f4-4b96-80e8-94a3296b9fc6)
+ Call ID: 1ad582b4-d9f4-4b96-80e8-94a3296b9fc6
   Args:
-    source: Carlos Hugo, Duke of Parma
     relation: :hasMother
-    target: Madeleine de Bourbon-Busset
-  AddTriple (57d0b71a-0461-49ea-87f5-3094c4b651ad)
- Call ID: 57d0b71a-0461-49ea-87f5-3094c4b651ad
+    target: Cecilia_Bowes-Lyon
+    source: Elizabeth_Bowes-Lyon
+  Finish (6724e849-8b5c-4315-9768-1bc0e89cd76e)
+ Call ID: 6724e849-8b5c-4315-9768-1bc0e89cd76e
   Args:
-    source: Luisa of Parma
-    relation: :hasFather
-    target: Carlos de Bourbon de Parme
-  AddTriple (88675196-2a8d-44bc-94da-20ce6ea28a31)
- Call ID: 88675196-2a8d-44bc-94da-20ce6ea28a31
-  Args:
-    source: Cecilia of Parma
-    relation: :hasFather
-    target: Carlos de Bourbon de Parme
-  AddTriple (26a84251-e894-4e67-8a72-be5d9ce44fd7)
- Call ID: 26a84251-e894-4e67-8a72-be5d9ce44fd7
-  Args:
-    source: Carlos of Parma
-    relation: :hasFather
-    target: Carlos de Bourbon de Parme
-  ValidateShacl (3e7799c7-c9d7-4fa0-a5b2-1842f99497ce)
- Call ID: 3e7799c7-c9d7-4fa0-a5b2-1842f99497ce
-  Args:
-  Finish (aade2450-e559-435a-ab6e-6718d21a2d9b)
- Call ID: aade2450-e559-435a-ab6e-6718d21a2d9b
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -697,374 +778,49 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Beatrix a :Person .
+  data:Katherine_Bowes-Lyon a :Woman ;
+      :hasBirthYear 1926 ;
+      :hasDeathYear 2014 ;
+      :hasFather data:John_Herbert_Bowes-Lyon ;
+      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
 
-  data:Carlos_of_Parma a :Man ;
-      :hasFather data:Carlos_de_Bourbon_de_Parme .
+  data:Lady_Jane_McDonnell a :Woman .
 
-  data:Cecilia_of_Parma a :Woman ;
-      :hasFather data:Carlos_de_Bourbon_de_Parme .
+  data:Major_Henry_Nevile_Fane a :Man .
 
-  data:Hugo_de_Bourbon_de_Parme a :Man ;
-      :formerlyKnownAs "Hugo Klynstra"^^xsd:string ;
-      :hasBirthYear 1997 ;
-      :hasFather data:Carlos_de_Bourbon_de_Parme ;
-      :hasMother data:Brigitte_Klynstra .
+  data:Nerissa_Bowes-Lyon a :Woman ;
+      :hasBirthYear 1919 ;
+      :hasDeathYear 1986 ;
+      :hasFather data:John_Herbert_Bowes-Lyon ;
+      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
 
-  data:Luisa_of_Parma a :Woman ;
-      :hasFather data:Carlos_de_Bourbon_de_Parme .
+  data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton a :Man .
 
-  data:Margriet a :Person .
+  data:Elizabeth_Bowes-Lyon a :Woman ;
+      :hasFather data:Claude_Bowes-Lyon ;
+      :hasMother data:Cecilia_Bowes-Lyon .
 
-  data:Pieter_van_Vollenhoven a :Person .
+  data:Harriet_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
+      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .
 
-  data:Adolph_Roderik_Ernst_Leopold a :Man .
+  data:Harriet_Williamina_Hepburn-Forbes a :Woman .
 
-  data:Bernhard_of_Lippe-Biesterfeld a :Man .
+  data:Cecilia_Bowes-Lyon a :Woman .
 
-  data:Brigitte_Klynstra a :Woman ;
-      :hasFather data:Adolph_Roderik_Ernst_Leopold ;
-      :hasMother data:Ingrid_Pieksma-Klynstra .
+  data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Man ;
+      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
+      :hasMother data:Harriet_Williamina_Hepburn-Forbes .
 
-  data:Carlos_Hugo%2C_Duke_of_Parma a :Man ;
-      :hasFather data:Xavier_of_Bourbon-Parma ;
-      :hasMother data:Madeleine_de_Bourbon-Busset .
+  data:Claude_Bowes-Lyon a :Man .
 
-  data:Ingrid_Pieksma-Klynstra a :Woman .
+  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
+      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+      :hasSister data:Harriet_Hepburn-Stuart-Forbes-Trefusis .
 
-  data:Irene_of_the_Netherlands a :Woman ;
-      :hasFather data:Bernhard_of_Lippe-Biesterfeld ;
-      :hasMother data:Juliana_of_the_Netherlands .
-
-  data:Juliana_of_the_Netherlands a :Woman .
-
-  data:Madeleine_de_Bourbon-Busset a :Woman .
-
-  data:Xavier_of_Bourbon-Parma a :Man .
-
-  data:Carlos_de_Bourbon_de_Parme a :Man ;
-      :hasFather data:Carlos_Hugo%2C_Duke_of_Parma ;
-      :hasMother data:Irene_of_the_Netherlands .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:39
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_Hugo%2C_Duke_of_Parma' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_Hugo%2C_Duke_of_Parma', class=':Ancestor')
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_de_Bourbon_de_Parme' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_de_Bourbon_de_Parme', class=':Ancestor')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_de_Bourbon_de_Parme' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_de_Bourbon_de_Parme', class=':Ancestor')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Xavier_of_Bourbon-Parma' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Xavier_of_Bourbon-Parma', class=':Ancestor')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Irene_of_the_Netherlands' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Irene_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Brigitte_Klynstra' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Brigitte_Klynstra', class=':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Madeleine_de_Bourbon-Busset' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Madeleine_de_Bourbon-Busset', class=':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_Hugo%2C_Duke_of_Parma' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_Hugo%2C_Duke_of_Parma', class=':Ancestor')
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Bernhard_of_Lippe-Biesterfeld' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_de_Bourbon_de_Parme' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_de_Bourbon_de_Parme', class=':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Adolph_Roderik_Ernst_Leopold' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Adolph_Roderik_Ernst_Leopold', class=':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_de_Bourbon_de_Parme' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_de_Bourbon_de_Parme', class=':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_de_Bourbon_de_Parme' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_de_Bourbon_de_Parme', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_de_Bourbon_de_Parme' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_de_Bourbon_de_Parme', class=':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Xavier_of_Bourbon-Parma' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Xavier_of_Bourbon-Parma', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Irene_of_the_Netherlands' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Irene_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Juliana_of_the_Netherlands' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Ingrid_Pieksma-Klynstra' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ingrid_Pieksma-Klynstra', class=':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Brigitte_Klynstra' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Brigitte_Klynstra', class=':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Madeleine_de_Bourbon-Busset' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Madeleine_de_Bourbon-Busset', class=':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_Hugo%2C_Duke_of_Parma' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_Hugo%2C_Duke_of_Parma', class=':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Bernhard_of_Lippe-Biesterfeld' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_de_Bourbon_de_Parme' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_de_Bourbon_de_Parme', class=':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Adolph_Roderik_Ernst_Leopold' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Adolph_Roderik_Ernst_Leopold', class=':Ancestor')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_de_Bourbon_de_Parme' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_de_Bourbon_de_Parme', class=':Ancestor')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_de_Bourbon_de_Parme' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_de_Bourbon_de_Parme', class=':Ancestor')
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_de_Bourbon_de_Parme' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_de_Bourbon_de_Parme', class=':Ancestor')
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Xavier_of_Bourbon-Parma' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Xavier_of_Bourbon-Parma', class=':Ancestor')
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Irene_of_the_Netherlands' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Irene_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Juliana_of_the_Netherlands' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Ingrid_Pieksma-Klynstra' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ingrid_Pieksma-Klynstra', class=':Ancestor')
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Brigitte_Klynstra' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Brigitte_Klynstra', class=':Ancestor')
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Madeleine_de_Bourbon-Busset' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Madeleine_de_Bourbon-Busset', class=':Ancestor')
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_de_Bourbon_de_Parme' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_de_Bourbon_de_Parme', class=':Ancestor')
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Carlos_de_Bourbon_de_Parme' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carlos_de_Bourbon_de_Parme', class=':Ancestor')
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Bernhard_of_Lippe-Biesterfeld' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernhard_of_Lippe-Biesterfeld', class=':Ancestor')
-
-
-  Violation [37]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father node 'Adolph_Roderik_Ernst_Leopold' is not classified as an ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Adolph_Roderik_Ernst_Leopold', class=':Ancestor')
-
-
-  Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Juliana_of_the_Netherlands' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juliana_of_the_Netherlands', class=':Ancestor')
-
-
-  Violation [39]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother node 'Ingrid_Pieksma-Klynstra' is not classified as an ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ingrid_Pieksma-Klynstra', class=':Ancestor')
-
+  data:John_Herbert_Bowes-Lyon a :Man ;
+      :hasFather data:Claude_Bowes-Lyon ;
+      :hasMother data:Cecilia_Bowes-Lyon ;
+      :hasSister data:Elizabeth_Bowes-Lyon .
 
 
 
@@ -1076,74 +832,348 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  AssignClass (c13b9f78-42db-41f1-9f7a-5e25be6afff3)
- Call ID: c13b9f78-42db-41f1-9f7a-5e25be6afff3
-  Args:
-    source: Carlos_Hugo, Duke of Parma
-    type: :Ancestor
-  AssignClass (a58abd82-c510-4374-bcff-f19a63f0f471)
- Call ID: a58abd82-c510-4374-bcff-f19a63f0f471
-  Args:
-    type: :Ancestor
-    source: Carlos_de_Bourbon_de_Parme
-  AssignClass (33e3012f-34f7-4de2-9678-62415a447a3a)
- Call ID: 33e3012f-34f7-4de2-9678-62415a447a3a
-  Args:
-    type: :Ancestor
-    source: Xavier_of_Bourbon-Parma
-  AssignClass (ff8a12e3-9d1b-467e-a684-b42a80200815)
- Call ID: ff8a12e3-9d1b-467e-a684-b42a80200815
-  Args:
-    source: Irene_of_the_Netherlands
-    type: :Ancestor
-  AssignClass (fb01e6bf-d768-426a-b30b-9a1b94271368)
- Call ID: fb01e6bf-d768-426a-b30b-9a1b94271368
-  Args:
-    source: Brigitte_Klynstra
-    type: :Ancestor
-  AssignClass (dec82bb2-3afb-47b3-9588-1587ec7001ab)
- Call ID: dec82bb2-3afb-47b3-9588-1587ec7001ab
-  Args:
-    source: Madeleine_de_Bourbon-Busset
-    type: :Ancestor
-  AssignClass (04be08f2-1814-4c05-a02a-a13ff3b77c65)
- Call ID: 04be08f2-1814-4c05-a02a-a13ff3b77c65
-  Args:
-    type: :Ancestor
-    source: Bernhard_of_Lippe-Biesterfeld
-  AssignClass (3991f208-9f4c-47c3-97e9-c6435406ca87)
- Call ID: 3991f208-9f4c-47c3-97e9-c6435406ca87
-  Args:
-    type: :Ancestor
-    source: Adolph_Roderik_Ernst_Leopold
-  AssignClass (24d3f013-f8b8-4bdc-a284-501dbef09b48)
- Call ID: 24d3f013-f8b8-4bdc-a284-501dbef09b48
-  Args:
-    source: Juliana_of_the_Netherlands
-    type: :Ancestor
-  AssignClass (0fe9206b-ef4c-4ee5-8593-14cffd9bd8aa)
- Call ID: 0fe9206b-ef4c-4ee5-8593-14cffd9bd8aa
-  Args:
-    source: Ingrid_Pieksma-Klynstra
-    type: :Ancestor
-  ValidateShacl (dc42de98-0f9f-4989-8367-643cc709f1ae)
- Call ID: dc42de98-0f9f-4989-8367-643cc709f1ae
-  Args:
-  Finish (da4fe940-5b66-4968-a8a0-fae9676f343a)
- Call ID: da4fe940-5b66-4968-a8a0-fae9676f343a
+  ValidateShacl (bf18b1a1-c0d2-490e-af24-77d964e2cf04)
+ Call ID: bf18b1a1-c0d2-490e-af24-77d964e2cf04
   Args:
 
 ================================= Tool Message =================================
 
-Look at the messages below to see the final data graph after all the edits.
+VALIDATION RESULTS
+Total violations:36
+Violations:
 
-================================= Tool Message =================================
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
 
-Look at the messages below to see the final data graph after all the edits.
 
-================================= Tool Message =================================
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Claude_Bowes-Lyon' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Claude_Bowes-Lyon, :Ancestor)
 
-Look at the messages below to see the final data graph after all the edits.
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Harriet_Williamina_Hepburn-Forbes' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Cecilia_Bowes-Lyon' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Cecilia_Bowes-Lyon, :Ancestor)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'John_Herbert_Bowes-Lyon' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'John_Herbert_Bowes-Lyon' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Claude_Bowes-Lyon' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Claude_Bowes-Lyon, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Claude_Bowes-Lyon' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Claude_Bowes-Lyon, :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Fenella_Hepburn-Stuart-Forbes-Trefusis' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Fenella_Hepburn-Stuart-Forbes-Trefusis' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Harriet_Williamina_Hepburn-Forbes' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Cecilia_Bowes-Lyon' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Cecilia_Bowes-Lyon, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Cecilia_Bowes-Lyon' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Cecilia_Bowes-Lyon, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'John_Herbert_Bowes-Lyon' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'John_Herbert_Bowes-Lyon' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Claude_Bowes-Lyon' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Claude_Bowes-Lyon, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Claude_Bowes-Lyon' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Claude_Bowes-Lyon, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Fenella_Hepburn-Stuart-Forbes-Trefusis' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Fenella_Hepburn-Stuart-Forbes-Trefusis' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Harriet_Williamina_Hepburn-Forbes' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Harriet_Williamina_Hepburn-Forbes, :Ancestor)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Cecilia_Bowes-Lyon' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Cecilia_Bowes-Lyon, :Ancestor)
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Cecilia_Bowes-Lyon' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Cecilia_Bowes-Lyon, :Ancestor)
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'John_Herbert_Bowes-Lyon' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'John_Herbert_Bowes-Lyon' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(John_Herbert_Bowes-Lyon, :Ancestor)
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton, :Ancestor)
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton, :Ancestor)
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Claude_Bowes-Lyon' is used as a father but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Claude_Bowes-Lyon, :Ancestor)
+
+
+  Violation [34]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Fenella_Hepburn-Stuart-Forbes-Trefusis' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
+
+
+  Violation [35]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Fenella_Hepburn-Stuart-Forbes-Trefusis' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Fenella_Hepburn-Stuart-Forbes-Trefusis, :Ancestor)
+
+
+  Violation [36]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Cecilia_Bowes-Lyon' is used as a mother but is not assigned the class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Cecilia_Bowes-Lyon, :Ancestor)
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (aa8a9a79-8bd4-4c6c-8908-2963ec3d4eba)
+ Call ID: aa8a9a79-8bd4-4c6c-8908-2963ec3d4eba
+  Args:
+    source: Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton
+    type: :Ancestor
+  AssignClass (b2b1da91-1959-48be-886e-8a7fac694b61)
+ Call ID: b2b1da91-1959-48be-886e-8a7fac694b61
+  Args:
+    source: Claude_Bowes-Lyon
+    type: :Ancestor
+  AssignClass (f096d12b-2492-4b44-81cb-5b0036400cb1)
+ Call ID: f096d12b-2492-4b44-81cb-5b0036400cb1
+  Args:
+    source: Harriet_Williamina_Hepburn-Forbes
+    type: :Ancestor
+  AssignClass (9a3511c8-c2b5-4df8-85ae-b44491008b28)
+ Call ID: 9a3511c8-c2b5-4df8-85ae-b44491008b28
+  Args:
+    source: Cecilia_Bowes-Lyon
+    type: :Ancestor
+  AssignClass (736c46be-3bd1-4f50-9013-6d856017ad41)
+ Call ID: 736c46be-3bd1-4f50-9013-6d856017ad41
+  Args:
+    source: John_Herbert_Bowes-Lyon
+    type: :Ancestor
+  AssignClass (18d64bff-0be8-4657-beb5-bab22d20c7bc)
+ Call ID: 18d64bff-0be8-4657-beb5-bab22d20c7bc
+  Args:
+    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
+    type: :Ancestor
+  AssignClass (cb0da6c2-f2da-45bf-a19a-75ba2ddcbb6f)
+ Call ID: cb0da6c2-f2da-45bf-a19a-75ba2ddcbb6f
+  Args:
+    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
+    type: :Ancestor
+  ValidateShacl (7924114e-f344-4824-889e-fb47c116f86b)
+ Call ID: 7924114e-f344-4824-889e-fb47c116f86b
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1176,82 +1206,58 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Beatrix a :Person .
+  data:Katherine_Bowes-Lyon a :Woman ;
+      :hasBirthYear 1926 ;
+      :hasDeathYear 2014 ;
+      :hasFather data:John_Herbert_Bowes-Lyon ;
+      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
 
-  data:Carlos_of_Parma a :Man ;
-      :hasFather data:Carlos_de_Bourbon_de_Parme .
+  data:Lady_Jane_McDonnell a :Woman .
 
-  data:Cecilia_of_Parma a :Woman ;
-      :hasFather data:Carlos_de_Bourbon_de_Parme .
+  data:Major_Henry_Nevile_Fane a :Man .
 
-  data:Hugo_de_Bourbon_de_Parme a :Man ;
-      :formerlyKnownAs "Hugo Klynstra"^^xsd:string ;
-      :hasBirthYear 1997 ;
-      :hasFather data:Carlos_de_Bourbon_de_Parme ;
-      :hasMother data:Brigitte_Klynstra .
+  data:Nerissa_Bowes-Lyon a :Woman ;
+      :hasBirthYear 1919 ;
+      :hasDeathYear 1986 ;
+      :hasFather data:John_Herbert_Bowes-Lyon ;
+      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
 
-  data:Luisa_of_Parma a :Woman ;
-      :hasFather data:Carlos_de_Bourbon_de_Parme .
-
-  data:Margriet a :Person .
-
-  data:Pieter_van_Vollenhoven a :Person .
-
-  data:Adolph_Roderik_Ernst_Leopold a :Ancestor,
+  data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton a :Ancestor,
           :Man .
 
-  data:Bernhard_of_Lippe-Biesterfeld a :Ancestor,
-          :Man .
+  data:Elizabeth_Bowes-Lyon a :Woman ;
+      :hasFather data:Claude_Bowes-Lyon ;
+      :hasMother data:Cecilia_Bowes-Lyon .
 
-  data:Brigitte_Klynstra a :Ancestor,
-          :Woman ;
-      :hasFather data:Adolph_Roderik_Ernst_Leopold ;
-      :hasMother data:Ingrid_Pieksma-Klynstra .
+  data:Harriet_Hepburn-Stuart-Forbes-Trefusis a :Woman ;
+      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton .
 
-  data:Carlos_Hugo%2C_Duke_of_Parma a :Ancestor,
+  data:Harriet_Williamina_Hepburn-Forbes a :Ancestor,
+          :Woman .
+
+  data:Cecilia_Bowes-Lyon a :Ancestor,
+          :Woman .
+
+  data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton a :Ancestor,
           :Man ;
-      :hasFather data:Xavier_of_Bourbon-Parma ;
-      :hasMother data:Madeleine_de_Bourbon-Busset .
+      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_20th_Baron_Clinton ;
+      :hasMother data:Harriet_Williamina_Hepburn-Forbes .
 
-  data:Ingrid_Pieksma-Klynstra a :Ancestor,
-          :Woman .
-
-  data:Irene_of_the_Netherlands a :Ancestor,
-          :Woman ;
-      :hasFather data:Bernhard_of_Lippe-Biesterfeld ;
-      :hasMother data:Juliana_of_the_Netherlands .
-
-  data:Juliana_of_the_Netherlands a :Ancestor,
-          :Woman .
-
-  data:Madeleine_de_Bourbon-Busset a :Ancestor,
-          :Woman .
-
-  data:Xavier_of_Bourbon-Parma a :Ancestor,
+  data:Claude_Bowes-Lyon a :Ancestor,
           :Man .
 
-  data:Carlos_de_Bourbon_de_Parme a :Ancestor,
+  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+          :Woman ;
+      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton ;
+      :hasSister data:Harriet_Hepburn-Stuart-Forbes-Trefusis .
+
+  data:John_Herbert_Bowes-Lyon a :Ancestor,
           :Man ;
-      :hasFather data:Carlos_Hugo%2C_Duke_of_Parma ;
-      :hasMother data:Irene_of_the_Netherlands .
+      :hasFather data:Claude_Bowes-Lyon ;
+      :hasMother data:Cecilia_Bowes-Lyon ;
+      :hasSister data:Elizabeth_Bowes-Lyon .
 
 
-
-================================= Tool Message =================================
-
-SHACL validation has not produced any violations.
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (84e9263a-34f3-4946-9195-3cdf0078e760)
- Call ID: 84e9263a-34f3-4946-9195-3cdf0078e760
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1261,6 +1267,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (0ab5aa49-4d70-421c-965b-a9cd62ef0795)
- Call ID: 0ab5aa49-4d70-421c-965b-a9cd62ef0795
+  Finish (0d6c7ddf-2a4f-47f7-8c5b-4328bd2ab755)
+ Call ID: 0d6c7ddf-2a4f-47f7-8c5b-4328bd2ab755
   Args:

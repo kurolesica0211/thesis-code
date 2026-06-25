@@ -69,18 +69,33 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-James Robert Bruce Ogilvy (born 29 February 1964) is a British landscape designer, and the founder and editor of the magazine Luxury Briefing.
-Personal life
+Edward Edmund Maximilian George Windsor, Lord Downpatrick (born 2 December 1988), known professionally as Eddy Downpatrick, is a British travel consultant, fashion designer, and former financial analyst.
+As second-in-line to the Dukedom of Kent, he uses one of his grandfather's subsidiary titles, Baron Downpatrick, by courtesy.
+A second cousin once removed of Charles III, Downpatrick is the most senior member of the House of Windsor to be excluded from the line of succession to the British throne owing to his Roman Catholic faith.
+Early life and family
 
-He married Julia Caroline Rawlinson, daughter of Charles Frederick Melville Rawlinson, of Arkesden, Essex, a merchant banker, on 30 July 1988 at St Mary's Church in Saffron Walden, Essex.
-Ogilvy had several leg wounds and required 30 stitches.
-He has a younger sister, Marina Ogilvy.
+Edward Edmund Maximilian George Windsor was born on 2 December 1988 at St Mary's Hospital, London, and grew up in Cambridge.
+He is the eldest child of George Windsor, Earl of St Andrews, son and heir apparent of Prince Edward, Duke of Kent.
+Downpatrick's mother, Sylvana, Countess of St Andrews, a member by birth of the Austrian Tomaselli family, is a Canadian-born historian of Austro-Italian and French extraction.
+Downpatrick was educated at Eton College and matriculated at Keble College, Oxford, where he studied modern languages with a specialisation in French and German.
+Career
+
+Downpatrick first had the idea of launching a fashion brand while hiking in Scotland in 2009, but chose to focus on his studies and his career as a financial analyst at JP Morgan.
+In 2021, Downpatrick founded Aristeia Travel, a company that organises tours and expeditions to destinations across, Europe, Asia, Africa, and Latin America.
+Downpatrick is also a partner at Wheeler-Windsor Expeditions, alongside California native Jack Wheeler, offering curated expeditions to clients.
+Succession rights
+
+In 2003, aged 15, following the example of his grandmother, the Duchess of Kent, and his uncle Lord Nicholas Windsor, Downpatrick – who had been baptised in the Church of England – chose to be confirmed into the Catholic Church.
+As a second cousin once removed of King Charles III, Downpatrick is the most senior person excluded from the line of succession for being a Catholic.
+Downpatrick remains second in the line of succession, after his father, to the Dukedom of Kent.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -96,39 +111,9 @@ He has a younger sister, Marina Ogilvy.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -143,6 +128,23 @@ He has a younger sister, Marina Ogilvy.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -160,6 +162,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -227,29 +244,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,6 +267,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -270,6 +287,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -278,17 +297,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -316,6 +337,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -331,83 +436,182 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c953e8eb-0d5d-4c4d-a45f-628ccf7ff317)
- Call ID: c953e8eb-0d5d-4c4d-a45f-628ccf7ff317
+  AssignClass (80e13714-cf11-4c2a-b113-b99e1bf7105c)
+ Call ID: 80e13714-cf11-4c2a-b113-b99e1bf7105c
   Args:
-    source: James_Robert_Bruce_Ogilvy
+    source: Edward_Edmund_Maximilian_George_Windsor
     type: :Man
-  AssignClass (28b1f505-10bc-4ba7-ab38-298a42d87233)
- Call ID: 28b1f505-10bc-4ba7-ab38-298a42d87233
+  AssignClass (804b73d4-0d8c-4a52-8704-e9d3a29830c9)
+ Call ID: 804b73d4-0d8c-4a52-8704-e9d3a29830c9
   Args:
     type: :Person
-    source: James_Robert_Bruce_Ogilvy
-  AddLiteral (6abefd1d-9a29-4895-a01c-800f8808cffd)
- Call ID: 6abefd1d-9a29-4895-a01c-800f8808cffd
+    source: Edward_Edmund_Maximilian_George_Windsor
+  AddLiteral (9de84c9b-9eb8-4177-9480-fc9fd2b8ce33)
+ Call ID: 9de84c9b-9eb8-4177-9480-fc9fd2b8ce33
   Args:
-    literal_value: 1964
-    relation: :hasBirthYear
-    source: James_Robert_Bruce_Ogilvy
-    literal_type: xsd:integer
-  AssignClass (4f935bda-2068-4f82-a248-4730f4aeec31)
- Call ID: 4f935bda-2068-4f82-a248-4730f4aeec31
-  Args:
-    type: :Woman
-    source: Julia_Caroline_Rawlinson
-  AssignClass (78e5365d-feaa-4a8d-b7d4-a17d8a6b0f1a)
- Call ID: 78e5365d-feaa-4a8d-b7d4-a17d8a6b0f1a
-  Args:
-    type: :Person
-    source: Julia_Caroline_Rawlinson
-  AddLiteral (e3d8b049-2777-434a-b1e1-9099d3bea6cd)
- Call ID: e3d8b049-2777-434a-b1e1-9099d3bea6cd
-  Args:
-    literal_type: xsd:integer
-    source: James_Robert_Bruce_Ogilvy
-    relation: :hasMarriageYear
     literal_value: 1988
-  AddTriple (f13dac17-1aab-4775-9a3c-536e3afe43ea)
- Call ID: f13dac17-1aab-4775-9a3c-536e3afe43ea
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Edward_Edmund_Maximilian_George_Windsor
+  AddTriple (3281a2c1-20a7-4d10-bd90-99afd38aa985)
+ Call ID: 3281a2c1-20a7-4d10-bd90-99afd38aa985
   Args:
-    relation: :hasRelation
-    source: James_Robert_Bruce_Ogilvy
-    target: Julia_Caroline_Rawlinson
-  AssignClass (2d1960d8-6702-454b-90e4-036237fd5b2b)
- Call ID: 2d1960d8-6702-454b-90e4-036237fd5b2b
+    relation: :knownAs
+    source: Edward_Edmund_Maximilian_George_Windsor
+    target: Eddy_Downpatrick
+  AssignClass (b5fd93b7-7a0f-4f4c-ae1b-f6e0f8593147)
+ Call ID: b5fd93b7-7a0f-4f4c-ae1b-f6e0f8593147
   Args:
-    source: Charles_Frederick_Melville_Rawlinson
+    source: George_Windsor_Earl_of_St_Andrews
     type: :Man
-  AssignClass (5870bb71-856b-41b7-92fe-65205ccf68dd)
- Call ID: 5870bb71-856b-41b7-92fe-65205ccf68dd
+  AssignClass (32efc2ef-d57b-4c0d-b328-fad787a73ca8)
+ Call ID: 32efc2ef-d57b-4c0d-b328-fad787a73ca8
   Args:
-    type: :Ancestor
-    source: Charles_Frederick_Melville_Rawlinson
-  AssignClass (c32c67d8-c291-4c19-8734-87db98c4cbbf)
- Call ID: c32c67d8-c291-4c19-8734-87db98c4cbbf
-  Args:
-    source: Charles_Frederick_Melville_Rawlinson
     type: :Person
-  AddTriple (83c79056-7f74-4878-8980-d65ab82f442a)
- Call ID: 83c79056-7f74-4878-8980-d65ab82f442a
+    source: George_Windsor_Earl_of_St_Andrews
+  AssignClass (d5d3e83f-bfdc-46ca-898f-7f0beed71a98)
+ Call ID: d5d3e83f-bfdc-46ca-898f-7f0beed71a98
   Args:
-    source: Charles_Frederick_Melville_Rawlinson
-    relation: :isFatherOf
-    target: Julia_Caroline_Rawlinson
-  AssignClass (78baa3ae-bab4-42cf-88ee-43a480b7fbb5)
- Call ID: 78baa3ae-bab4-42cf-88ee-43a480b7fbb5
-  Args:
-    source: Marina_Ogilvy
+    source: Sylvana_Countess_of_St_Andrews
     type: :Woman
-  AssignClass (ddfefa5f-5ceb-4ad9-9690-6d41f2e8b06d)
- Call ID: ddfefa5f-5ceb-4ad9-9690-6d41f2e8b06d
+  AssignClass (9594d61a-650d-443e-a874-c7ef84bbb205)
+ Call ID: 9594d61a-650d-443e-a874-c7ef84bbb205
+  Args:
+    source: Sylvana_Countess_of_St_Andrews
+    type: :Person
+  AssignClass (c54a52c6-ce3d-4a94-9d22-e24915c3e72a)
+ Call ID: c54a52c6-ce3d-4a94-9d22-e24915c3e72a
+  Args:
+    type: :Man
+    source: Prince_Edward_Duke_of_Kent
+  AssignClass (c1b2acb6-5a35-4703-a715-275e888a8a88)
+ Call ID: c1b2acb6-5a35-4703-a715-275e888a8a88
   Args:
     type: :Person
-    source: Marina_Ogilvy
-  AddTriple (99c60926-07e9-4522-b271-d59d45b6ac3e)
- Call ID: 99c60926-07e9-4522-b271-d59d45b6ac3e
+    source: Prince_Edward_Duke_of_Kent
+  AddTriple (1c51f088-3a25-4bc9-b1de-31f7707e7991)
+ Call ID: 1c51f088-3a25-4bc9-b1de-31f7707e7991
   Args:
-    source: James_Robert_Bruce_Ogilvy
-    relation: :hasSister
-    target: Marina_Ogilvy
-  Finish (4ed3400e-6205-4f89-9457-06ea55a7b01a)
- Call ID: 4ed3400e-6205-4f89-9457-06ea55a7b01a
+    source: Edward_Edmund_Maximilian_George_Windsor
+    target: George_Windsor_Earl_of_St_Andrews
+    relation: :hasFather
+  AddTriple (87e0dd98-4832-46d3-9695-1fa563db9f12)
+ Call ID: 87e0dd98-4832-46d3-9695-1fa563db9f12
+  Args:
+    relation: :hasMother
+    source: Edward_Edmund_Maximilian_George_Windsor
+    target: Sylvana_Countess_of_St_Andrews
+  AddTriple (28139489-9eb5-4cb4-ab92-fc561fc58422)
+ Call ID: 28139489-9eb5-4cb4-ab92-fc561fc58422
+  Args:
+    relation: :hasFather
+    source: George_Windsor_Earl_of_St_Andrews
+    target: Prince_Edward_Duke_of_Kent
+  Finish (1bfdaaf8-d6d5-457f-abff-c498a1fde391)
+ Call ID: 1bfdaaf8-d6d5-457f-abff-c498a1fde391
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Edward_Edmund_Maximilian_George_Windsor a :Man,
+          :Person ;
+      :hasBirthYear 1988 ;
+      :hasFather data:George_Windsor_Earl_of_St_Andrews ;
+      :hasMother data:Sylvana_Countess_of_St_Andrews ;
+      :knownAs data:Eddy_Downpatrick .
+
+  data:George_Windsor_Earl_of_St_Andrews a :Man,
+          :Person ;
+      :hasFather data:Prince_Edward_Duke_of_Kent .
+
+  data:Prince_Edward_Duke_of_Kent a :Man,
+          :Person .
+
+  data:Sylvana_Countess_of_St_Andrews a :Person,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Eddy_Downpatrick']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (f3b7fb6f-fcfd-4763-a5b9-9427405c58dc)
+ Call ID: f3b7fb6f-fcfd-4763-a5b9-9427405c58dc
+  Args:
+    source: Eddy_Downpatrick
+    type: :Person
+  Finish (bcd3048a-c739-4c2c-8b04-42453d21e0bc)
+ Call ID: bcd3048a-c739-4c2c-8b04-42453d21e0bc
   Args:

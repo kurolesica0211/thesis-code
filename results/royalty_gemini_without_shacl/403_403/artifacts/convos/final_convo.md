@@ -69,21 +69,41 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Wolfgang of Hesse (Wolfgang Moritz Prinz von Hessen; 6 November 1896 – 12 July 1989) was the district administrator of Obertaunuskreis from 1933 to 1945.
-Wolfgang was born at Castle Rumpenheim, Offenbach am Main, the fourth son of Prince Frederick Charles of Hesse (1868–1940) and Princess Margaret of Prussia (1872–1954).
-His maternal uncle was the German Emperor Willhelm II.
-In World War I, Wolfgang served as an officer in the command of Field Marshal August von Mackensen.
-Towards the end of the war, Wolfgang's father Frederick Charles of Hesse was selected by the Central Powers as a prospective King of Finland on 9 October 1918, to replace his first cousin once removed, the deposed Russian emperor, Nicholas II, who was titled Grand Duke of Finland.
-Wolfgang was designated heir, in preference to his elder twin brother Philipp to ensure the separation of the thrones of Hesse and Finland.
-However, Frederick Charles renounced his candidature on 14 December 1918, and the title was never actually held by the family.
-Wolfgang married on 17 September 1924 Princess Marie Alexandra of Baden (1902–1944), daughter of Prince Maximilian of Baden and Princess Marie Louise of Hanover; they had no children.
-He joined the NSDAP and the SA in December 1933, and was appointed Landrat (district administrator) of Obertaunuskreis, a landkreis in the state of Hesse, serving in that capacity until the end of  World War II.
+Princess Feodora of Saxe-Meiningen (Feodora Karola Charlotte Marie Adelheid Auguste Mathilde; 29 May 1890 – 12 March 1972) was the eldest child of Prince Friedrich Johann of Saxe-Meiningen, a younger son of Georg II, Duke of Saxe-Meiningen, and Countess Adelaide of Lippe-Biesterfeld, a daughter of Ernst, Count of Lippe-Biesterfeld.
+By marriage, she was known as Grand Duchess of Saxe-Weimar-Eisenach.
+Biography
+
+Marriage
+
+During a summer visit to the palace Wilhelmshöhe, Feodora was urged by her kinsman Emperor Wilhelm II to make a match with the widowed Wilhelm Ernst, Grand Duke of Saxe-Weimar-Eisenach.
+This was seen by many to be due to mutual ill will between Wilhelm and Feodora's grandfather Georg II, Duke of Saxe-Meiningen, whose morganatic wedding to Ellen Franz had displeased many royal personages like Wilhelm.
+Wilhelm's disapproval was even more surprising in that he had recently allowed the marriage between a Hohenzollern dynast (Prince Frederick William of Prussia) with a much lower-ranked member of the nobility (Princess Agatha of Hohenlohe-Schillingsfürst); it was considered odd that he refused to recognize one equal marriage yet acknowledged another lesser match, especially when the latter was within his own family and subject to the rigid Hohenzollern house laws.
+The Emperor's boycott of the wedding was so strongly resented in Saxe-Meiningen that, when newspapers announced that Wilhelm would not be attending the wedding, the official communication from the royal palace declared that he had never been invited.
+On 14 January 1910 in Meiningen, Feodora was married to Wilhelm Ernst.
+She was his second wife (his first wife Princess Caroline Reuss, Elder Line had died childless after eighteen months of marriage in 1905).
+Court life
+
+
+Feodora's marriage was unhappy; the Weimar court was generally considered to be one of the most stifling and etiquette-driven in Germany.
+Feodora was unhappy in such an environment; at the age of 23, reports leaked out that she was staying at a sanatorium for her health.
+Feodora was very popular among the middle and lower classes of Weimar; this was largely attributed to her charm and kindness to the poor and suffering.
+Feodora died on 12 March 1972 in Freiburg
+Issue
+
+Feodora and her husband had four children:
+
+
+Ancestry
+
+References
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -99,39 +119,9 @@ He joined the NSDAP and the SA in December 1933, and was appointed Landrat (dist
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -146,6 +136,23 @@ He joined the NSDAP and the SA in December 1933, and was appointed Landrat (dist
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -163,6 +170,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -230,29 +252,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,6 +275,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -273,6 +295,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -281,17 +305,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -319,6 +345,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -334,116 +444,383 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c8154e11-8a43-4ae0-9b3a-4648285ff0cb)
- Call ID: c8154e11-8a43-4ae0-9b3a-4648285ff0cb
+  AssignClass (86937807-e041-4362-852a-63f8efe26a6a)
+ Call ID: 86937807-e041-4362-852a-63f8efe26a6a
   Args:
-    type: :Man
-    source: Wolfgang_of_Hesse
-  AssignClass (8d37e02f-b281-4aef-90bb-5d9157850ca4)
- Call ID: 8d37e02f-b281-4aef-90bb-5d9157850ca4
-  Args:
-    type: :Man
-    source: Frederick_Charles_of_Hesse
-  AssignClass (d08c6003-dba7-4312-9ca6-cb33582c374b)
- Call ID: d08c6003-dba7-4312-9ca6-cb33582c374b
-  Args:
+    source: Feodora_of_Saxe-Meiningen
     type: :Woman
-    source: Margaret_of_Prussia
-  AssignClass (596a6e2f-43b6-4590-a057-64dcd4124661)
- Call ID: 596a6e2f-43b6-4590-a057-64dcd4124661
+  AssignClass (54e9833f-3b70-46df-b8ec-627f5f8cbd9a)
+ Call ID: 54e9833f-3b70-46df-b8ec-627f5f8cbd9a
   Args:
-    source: Philipp_of_Hesse
-    type: :Man
-  AssignClass (e9c5646e-9cbc-4626-b9ed-a5fd97c0e55c)
- Call ID: e9c5646e-9cbc-4626-b9ed-a5fd97c0e55c
-  Args:
-    type: :Woman
-    source: Marie_Alexandra_of_Baden
-  AssignClass (ddc45b70-09f4-4b78-a7b8-bdf77ebbbfa6)
- Call ID: ddc45b70-09f4-4b78-a7b8-bdf77ebbbfa6
-  Args:
-    source: Maximilian_of_Baden
-    type: :Man
-  AssignClass (2aa8aa73-74d9-480e-9dd0-133b83a39124)
- Call ID: 2aa8aa73-74d9-480e-9dd0-133b83a39124
-  Args:
-    type: :Woman
-    source: Marie_Louise_of_Hanover
-  AddLiteral (b599cf30-78a8-494f-aafe-b55a57dc862e)
- Call ID: b599cf30-78a8-494f-aafe-b55a57dc862e
+    source: Feodora_of_Saxe-Meiningen
+    type: :Person
+  AddLiteral (f4c8a67e-757f-4b95-b8ef-e91dde10fde0)
+ Call ID: f4c8a67e-757f-4b95-b8ef-e91dde10fde0
   Args:
     literal_type: xsd:integer
-    source: Wolfgang_of_Hesse
-    literal_value: 1896
+    literal_value: 1890
     relation: :hasBirthYear
-  AddLiteral (02a97afe-19fd-47de-adba-7053d268a25b)
- Call ID: 02a97afe-19fd-47de-adba-7053d268a25b
+    source: Feodora_of_Saxe-Meiningen
+  AddLiteral (126467ce-366e-44d9-81be-aaa1737e074d)
+ Call ID: 126467ce-366e-44d9-81be-aaa1737e074d
   Args:
-    literal_type: xsd:integer
-    literal_value: 1989
-    source: Wolfgang_of_Hesse
     relation: :hasDeathYear
-  AddTriple (3c4af477-1320-42f3-95d2-a36e89e1642a)
- Call ID: 3c4af477-1320-42f3-95d2-a36e89e1642a
-  Args:
-    source: Wolfgang_of_Hesse
-    relation: :hasFather
-    target: Frederick_Charles_of_Hesse
-  AddTriple (fb2cc746-535a-4639-b1c0-7d793e2fe506)
- Call ID: fb2cc746-535a-4639-b1c0-7d793e2fe506
-  Args:
-    relation: :hasMother
-    target: Margaret_of_Prussia
-    source: Wolfgang_of_Hesse
-  AddTriple (4f399351-2fe2-4ed4-a188-aa0daf187d80)
- Call ID: 4f399351-2fe2-4ed4-a188-aa0daf187d80
-  Args:
-    source: Philipp_of_Hesse
-    target: Wolfgang_of_Hesse
-    relation: :isBrotherOf
-  AddTriple (c84992cb-8ce5-4a0e-9754-4f7fc109d4ff)
- Call ID: c84992cb-8ce5-4a0e-9754-4f7fc109d4ff
-  Args:
-    source: Wolfgang_of_Hesse
-    target: Philipp_of_Hesse
-    relation: :isBrotherOf
-  AddTriple (454c7c44-8f01-42e4-a08f-2b89ffd1bbf7)
- Call ID: 454c7c44-8f01-42e4-a08f-2b89ffd1bbf7
-  Args:
-    source: Philipp_of_Hesse
-    relation: :hasFather
-    target: Frederick_Charles_of_Hesse
-  AddTriple (da6d2f30-416d-4765-908e-ecab59efe476)
- Call ID: da6d2f30-416d-4765-908e-ecab59efe476
-  Args:
-    target: Margaret_of_Prussia
-    relation: :hasMother
-    source: Philipp_of_Hesse
-  AddLiteral (03bbb71a-2df5-4092-b417-e2cad626ea0a)
- Call ID: 03bbb71a-2df5-4092-b417-e2cad626ea0a
-  Args:
-    relation: :hasMarriageYear
-    source: Wolfgang_of_Hesse
-    literal_value: 1924
+    source: Feodora_of_Saxe-Meiningen
+    literal_value: 1972
     literal_type: xsd:integer
-  AddTriple (bdad94b5-5d20-4653-a4de-a7097bbb0508)
- Call ID: bdad94b5-5d20-4653-a4de-a7097bbb0508
+  AddLiteral (db253815-06db-4533-8bcb-c18c3d208f26)
+ Call ID: db253815-06db-4533-8bcb-c18c3d208f26
   Args:
-    target: Marie_Alexandra_of_Baden
-    relation: :hasRelation
-    source: Wolfgang_of_Hesse
-  AddTriple (48044716-a616-49ef-a487-e840cf014272)
- Call ID: 48044716-a616-49ef-a487-e840cf014272
+    relation: :knownAs
+    source: Feodora_of_Saxe-Meiningen
+    literal_value: Grand Duchess of Saxe-Weimar-Eisenach
+    literal_type: xsd:string
+  AssignClass (f420d360-da89-4ed3-94bc-91bef445c2f5)
+ Call ID: f420d360-da89-4ed3-94bc-91bef445c2f5
+  Args:
+    source: Friedrich_Johann_of_Saxe-Meiningen
+    type: :Man
+  AssignClass (6128a4d7-4276-4b5d-93dd-936fa6ca1987)
+ Call ID: 6128a4d7-4276-4b5d-93dd-936fa6ca1987
+  Args:
+    source: Friedrich_Johann_of_Saxe-Meiningen
+    type: :Person
+  AddTriple (bdd2010c-d818-4360-a551-51c188b5e831)
+ Call ID: bdd2010c-d818-4360-a551-51c188b5e831
+  Args:
+    source: Feodora_of_Saxe-Meiningen
+    target: Friedrich_Johann_of_Saxe-Meiningen
+    relation: :hasFather
+  AssignClass (16fb002b-5819-484f-9599-960aa258ff31)
+ Call ID: 16fb002b-5819-484f-9599-960aa258ff31
+  Args:
+    source: Georg_II_of_Saxe-Meiningen
+    type: :Man
+  AssignClass (e46e37a7-3913-4394-8e04-d075c5912b94)
+ Call ID: e46e37a7-3913-4394-8e04-d075c5912b94
+  Args:
+    source: Georg_II_of_Saxe-Meiningen
+    type: :Person
+  AddTriple (c95fc3c5-5d5d-47a6-82f9-e09c9f47522a)
+ Call ID: c95fc3c5-5d5d-47a6-82f9-e09c9f47522a
+  Args:
+    target: Georg_II_of_Saxe-Meiningen
+    source: Friedrich_Johann_of_Saxe-Meiningen
+    relation: :hasFather
+  AssignClass (c972f226-a449-4f15-951f-ab19a37f238a)
+ Call ID: c972f226-a449-4f15-951f-ab19a37f238a
+  Args:
+    source: Adelaide_of_Lippe-Biesterfeld
+    type: :Woman
+  AssignClass (d37866d3-3621-42fd-b104-063a8974f3ec)
+ Call ID: d37866d3-3621-42fd-b104-063a8974f3ec
+  Args:
+    source: Adelaide_of_Lippe-Biesterfeld
+    type: :Person
+  AddTriple (e30f6d7d-60ce-455d-9b62-74692ddc09fe)
+ Call ID: e30f6d7d-60ce-455d-9b62-74692ddc09fe
+  Args:
+    target: Adelaide_of_Lippe-Biesterfeld
+    source: Feodora_of_Saxe-Meiningen
+    relation: :hasMother
+  AssignClass (221736ac-dc82-4de0-bd54-ed6341191e87)
+ Call ID: 221736ac-dc82-4de0-bd54-ed6341191e87
+  Args:
+    source: Ernst_of_Lippe-Biesterfeld
+    type: :Man
+  AssignClass (2415de24-e289-4787-9fdb-87726bb9942f)
+ Call ID: 2415de24-e289-4787-9fdb-87726bb9942f
+  Args:
+    source: Ernst_of_Lippe-Biesterfeld
+    type: :Person
+  AddTriple (05616ac4-d385-4fd9-9f8d-d4eabe01c820)
+ Call ID: 05616ac4-d385-4fd9-9f8d-d4eabe01c820
   Args:
     relation: :hasFather
-    target: Maximilian_of_Baden
-    source: Marie_Alexandra_of_Baden
-  AddTriple (b794b6ec-ba40-43c8-bead-1d083cf43111)
- Call ID: b794b6ec-ba40-43c8-bead-1d083cf43111
+    source: Adelaide_of_Lippe-Biesterfeld
+    target: Ernst_of_Lippe-Biesterfeld
+  AssignClass (b48c1def-bc16-462e-ac90-6598b81d180f)
+ Call ID: b48c1def-bc16-462e-ac90-6598b81d180f
   Args:
-    source: Marie_Alexandra_of_Baden
-    target: Marie_Louise_of_Hanover
-    relation: :hasMother
-  Finish (6b995886-358b-46b5-8322-f27f3610d03e)
- Call ID: 6b995886-358b-46b5-8322-f27f3610d03e
+    source: Wilhelm_Ernst_of_Saxe-Weimar-Eisenach
+    type: :Man
+  AssignClass (4d188318-9125-47ed-8954-eaa75972ef71)
+ Call ID: 4d188318-9125-47ed-8954-eaa75972ef71
+  Args:
+    source: Wilhelm_Ernst_of_Saxe-Weimar-Eisenach
+    type: :Person
+  AddLiteral (34402f65-e4d8-49bb-9138-9ccaa6257b6e)
+ Call ID: 34402f65-e4d8-49bb-9138-9ccaa6257b6e
+  Args:
+    source: Feodora_of_Saxe-Meiningen
+    relation: :hasMarriageYear
+    literal_value: 1910
+    literal_type: xsd:integer
+  AddTriple (ffb35b12-e6ab-4504-bdb5-491b26812006)
+ Call ID: ffb35b12-e6ab-4504-bdb5-491b26812006
+  Args:
+    relation: :hasRelation
+    source: Feodora_of_Saxe-Meiningen
+    target: Wilhelm_Ernst_of_Saxe-Weimar-Eisenach
+  AssignClass (2b39530b-e736-415d-92de-2431250c914d)
+ Call ID: 2b39530b-e736-415d-92de-2431250c914d
+  Args:
+    source: Caroline_Reuss_Elder_Line
+    type: :Woman
+  AssignClass (61750b72-3860-4801-bded-d25b5d4cfe8d)
+ Call ID: 61750b72-3860-4801-bded-d25b5d4cfe8d
+  Args:
+    source: Caroline_Reuss_Elder_Line
+    type: :Person
+  AddTriple (7b809bb3-53db-4d77-ae34-6f1f044e1d4e)
+ Call ID: 7b809bb3-53db-4d77-ae34-6f1f044e1d4e
+  Args:
+    target: Caroline_Reuss_Elder_Line
+    source: Wilhelm_Ernst_of_Saxe-Weimar-Eisenach
+    relation: :hasRelation
+  AssignClass (a92a8063-db10-4a00-ab46-25e70e5f7dce)
+ Call ID: a92a8063-db10-4a00-ab46-25e70e5f7dce
+  Args:
+    source: Ellen_Franz
+    type: :Woman
+  AssignClass (27538f94-7759-4c84-864b-0182f7190e5c)
+ Call ID: 27538f94-7759-4c84-864b-0182f7190e5c
+  Args:
+    source: Ellen_Franz
+    type: :Person
+  AddTriple (756efd1f-92ec-4bf6-998e-1fbd12f12d71)
+ Call ID: 756efd1f-92ec-4bf6-998e-1fbd12f12d71
+  Args:
+    target: Ellen_Franz
+    source: Georg_II_of_Saxe-Meiningen
+    relation: :hasRelation
+  AssignClass (ea1fbc63-5bc0-4380-97f8-95ffb71fc277)
+ Call ID: ea1fbc63-5bc0-4380-97f8-95ffb71fc277
+  Args:
+    source: Wilhelm_II
+    type: :Man
+  AssignClass (24bb7f4e-6365-404b-b798-3790977a1970)
+ Call ID: 24bb7f4e-6365-404b-b798-3790977a1970
+  Args:
+    source: Wilhelm_II
+    type: :Person
+  AssignClass (be203f21-0157-4f58-a0cc-a7aa22d33f1e)
+ Call ID: be203f21-0157-4f58-a0cc-a7aa22d33f1e
+  Args:
+    source: Frederick_William_of_Prussia
+    type: :Man
+  AssignClass (305aea16-313b-456a-9f03-55ab5cc90417)
+ Call ID: 305aea16-313b-456a-9f03-55ab5cc90417
+  Args:
+    source: Frederick_William_of_Prussia
+    type: :Person
+  AssignClass (88f8bd04-407e-4bba-8806-7279acc44bc7)
+ Call ID: 88f8bd04-407e-4bba-8806-7279acc44bc7
+  Args:
+    source: Agatha_of_Hohenlohe-Schillingsfürst
+    type: :Woman
+  AssignClass (c2ba8e41-fa29-4e14-9048-4181ebe3a0b8)
+ Call ID: c2ba8e41-fa29-4e14-9048-4181ebe3a0b8
+  Args:
+    source: Agatha_of_Hohenlohe-Schillingsfürst
+    type: :Person
+  AddTriple (2caece5d-e813-40fc-96c3-5323a25afd43)
+ Call ID: 2caece5d-e813-40fc-96c3-5323a25afd43
+  Args:
+    relation: :hasRelation
+    source: Frederick_William_of_Prussia
+    target: Agatha_of_Hohenlohe-Schillingsfürst
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Feodora_of_Saxe-Meiningen a :Person,
+          :Woman ;
+      :hasBirthYear 1890 ;
+      :hasDeathYear 1972 ;
+      :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;
+      :hasMarriageYear 1910 ;
+      :hasMother data:Adelaide_of_Lippe-Biesterfeld ;
+      :hasRelation data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+      :knownAs "Grand Duchess of Saxe-Weimar-Eisenach"^^xsd:string .
+
+  data:Frederick_William_of_Prussia a :Man,
+          :Person ;
+      :hasRelation data:Agatha_of_Hohenlohe-Schillingsf%C3%BCrst .
+
+  data:Wilhelm_II a :Man,
+          :Person .
+
+  data:Adelaide_of_Lippe-Biesterfeld a :Person,
+          :Woman ;
+      :hasFather data:Ernst_of_Lippe-Biesterfeld .
+
+  data:Agatha_of_Hohenlohe-Schillingsf%C3%BCrst a :Person,
+          :Woman .
+
+  data:Caroline_Reuss_Elder_Line a :Person,
+          :Woman .
+
+  data:Ellen_Franz a :Person,
+          :Woman .
+
+  data:Ernst_of_Lippe-Biesterfeld a :Man,
+          :Person .
+
+  data:Friedrich_Johann_of_Saxe-Meiningen a :Man,
+          :Person ;
+      :hasFather data:Georg_II_of_Saxe-Meiningen .
+
+  data:Georg_II_of_Saxe-Meiningen a :Man,
+          :Person ;
+      :hasRelation data:Ellen_Franz .
+
+  data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach a :Man,
+          :Person ;
+      :hasRelation data:Caroline_Reuss_Elder_Line .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (6788a2f4-60fc-4eb9-80e1-7217c759c927)
+ Call ID: 6788a2f4-60fc-4eb9-80e1-7217c759c927
   Args:

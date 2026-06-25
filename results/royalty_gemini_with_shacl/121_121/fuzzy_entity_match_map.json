@@ -1,72 +1,83 @@
 {
   "run_directory": "results/royalty_gemini_with_shacl",
   "task_directory": "results/royalty_gemini_with_shacl/121_121",
-  "text_file": "Q2036974.txt",
-  "text_key": "Q2036974",
-  "article": "https://en.wikipedia.org/wiki/Countess_Athena_of_Monpezat",
-  "article_key": "Countess Athena of Monpezat",
+  "text_file": "Q2031618.txt",
+  "text_key": "Q2031618",
+  "article": "https://en.wikipedia.org/wiki/Aimone_di_Savoia_Aosta_(born_1967)",
+  "article_key": "Aimone di Savoia Aosta",
   "main_entity": {
-    "uri": "http://example.com/data#Countess_Athena_of_Monpezat",
-    "qid": "Q2036974",
-    "label": "Countess Athena of Monpezat"
+    "uri": "http://example.com/data#Prince_Aimone-_6th_Duke_of_Aosta",
+    "qid": "Q2031618",
+    "label": "Prince Aimone, 6th Duke of Aosta"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Countess_Athena_of_Monpezat",
-      "qid": "Q2036974",
-      "label": "Countess Athena of Monpezat",
+      "uri": "http://example.com/data#Prince_Aimone-_6th_Duke_of_Aosta",
+      "qid": "Q2031618",
+      "label": "Prince Aimone, 6th Duke of Aosta",
       "distance": 0,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Marie_of_Denmark",
-      "qid": "Q231895",
-      "label": "Princess Marie of Denmark",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Athena_of_Monpezat",
-      "extracted_local_name": "Athena_of_Monpezat",
-      "embedding_text": "Athena of Monpezat",
-      "extracted_gender": "female",
+      "extracted_uri": "http://example.org/data/Aimone_of_Savoy-Aosta",
+      "extracted_local_name": "Aimone_of_Savoy-Aosta",
+      "embedding_text": "Aimone of Savoy-Aosta",
+      "extracted_gender": "male",
       "matched": true,
-      "score": 0.7857142857142857,
-      "ground_truth_uri": "http://example.com/data#Countess_Athena_of_Monpezat",
-      "ground_truth_qid": "Q2036974",
-      "ground_truth_label": "Countess Athena of Monpezat",
+      "score": 0.8157894736842105,
+      "ground_truth_uri": "http://example.com/data#Prince_Aimone-_6th_Duke_of_Aosta",
+      "ground_truth_qid": "Q2031618",
+      "ground_truth_label": "Prince Aimone, 6th Duke of Aosta",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Countess Athena of Monpezat",
-      "best_candidate_label": "Countess Athena of Monpezat",
-      "best_candidate_qid": "Q2036974",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.7857142857142857
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Aimone of Savoy-Aosta",
+      "best_candidate_label": "Prince Aimone, 6th Duke of Aosta",
+      "best_candidate_qid": "Q2031618",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8157894736842105
     },
     {
-      "extracted_uri": "http://example.org/data/Marie_of_Denmark",
-      "extracted_local_name": "Marie_of_Denmark",
-      "embedding_text": "Marie of Denmark",
+      "extracted_uri": "http://example.org/data/Amedeo_of_Savoy",
+      "extracted_local_name": "Amedeo_of_Savoy",
+      "embedding_text": "Amedeo of Savoy",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
+    },
+    {
+      "extracted_uri": "http://example.org/data/Claude_of_Orleans",
+      "extracted_local_name": "Claude_of_Orleans",
+      "embedding_text": "Claude of Orleans",
       "extracted_gender": "female",
-      "matched": true,
-      "score": 0.763157894736842,
-      "ground_truth_uri": "http://example.com/data#Princess_Marie_of_Denmark",
-      "ground_truth_qid": "Q231895",
-      "ground_truth_label": "Princess Marie of Denmark",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Princess Marie of Denmark",
-      "best_candidate_label": "Princess Marie of Denmark",
-      "best_candidate_qid": "Q231895",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.763157894736842
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": null,
+      "best_candidate_label": null,
+      "best_candidate_qid": null,
+      "best_candidate_gender": null,
+      "best_candidate_score": null
     },
     {
-      "extracted_uri": "http://example.org/data/Felix",
-      "extracted_local_name": "Felix",
-      "embedding_text": "Felix",
+      "extracted_uri": "http://example.org/data/Emanuele_Filiberto_of_Savoy",
+      "extracted_local_name": "Emanuele_Filiberto_of_Savoy",
+      "embedding_text": "Emanuele Filiberto of Savoy",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -82,9 +93,9 @@
       "best_candidate_score": null
     },
     {
-      "extracted_uri": "http://example.org/data/Henrik_Denmark",
-      "extracted_local_name": "Henrik_Denmark",
-      "embedding_text": "Henrik Denmark",
+      "extracted_uri": "http://example.org/data/Michael_of_Greece_and_Denmark",
+      "extracted_local_name": "Michael_of_Greece_and_Denmark",
+      "embedding_text": "Michael of Greece and Denmark",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -100,10 +111,10 @@
       "best_candidate_score": null
     },
     {
-      "extracted_uri": "http://example.org/data/Joachim_of_Denmark",
-      "extracted_local_name": "Joachim_of_Denmark",
-      "embedding_text": "Joachim of Denmark",
-      "extracted_gender": "male",
+      "extracted_uri": "http://example.org/data/Olga_of_Greece",
+      "extracted_local_name": "Olga_of_Greece",
+      "embedding_text": "Olga of Greece",
+      "extracted_gender": "female",
       "matched": false,
       "score": null,
       "ground_truth_uri": null,
@@ -118,9 +129,9 @@
       "best_candidate_score": null
     },
     {
-      "extracted_uri": "http://example.org/data/Nikolai",
-      "extracted_local_name": "Nikolai",
-      "embedding_text": "Nikolai",
+      "extracted_uri": "http://example.org/data/Vittorio_Emanuele",
+      "extracted_local_name": "Vittorio_Emanuele",
+      "embedding_text": "Vittorio Emanuele",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -137,8 +148,8 @@
     }
   ],
   "summary": {
-    "entities_total": 6,
-    "entities_matched": 2,
-    "entities_unmatched": 4
+    "entities_total": 7,
+    "entities_matched": 1,
+    "entities_unmatched": 6
   }
 }

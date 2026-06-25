@@ -1,0 +1,135 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Prince_Henry_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Henry of Battenberg"^^xsd:string ;
+    data:posIndicesFull "490:516"^^xsd:string,
+        "497:516"^^xsd:string,
+        "786:812"^^xsd:string,
+        "793:812"^^xsd:string ;
+    data:posIndicesPart "1264:1270"^^xsd:string,
+        "1375:1381"^^xsd:string,
+        "1431:1437"^^xsd:string,
+        "1447:1457"^^xsd:string,
+        "1788:1794"^^xsd:string,
+        "2339:2345"^^xsd:string,
+        "2394:2404"^^xsd:string,
+        "723:729"^^xsd:string ;
+    data:wdtLink wdt:Q444347 ;
+    :alsoKnownAs "Heinrich Moritz von Battenberg"^^xsd:string,
+        "Henry Maurice Battenberg"^^xsd:string,
+        "Henry of Battenberg"^^xsd:string,
+        "Prince Henry Maurice of Battenberg"^^xsd:string ;
+    :hasBrother data:Prince_Henry_of_Battenberg ;
+    :hasChild data:Lord_Leopold_Mountbatten ;
+    :hasRelation data:Lord_Leopold_Mountbatten,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSex data:male ;
+    :hasSon data:Lord_Leopold_Mountbatten ;
+    :isAncestorOf data:Lord_Leopold_Mountbatten ;
+    :isBloodrelationOf data:Prince_Henry_of_Battenberg ;
+    :isBrotherOf data:Prince_Henry_of_Battenberg ;
+    :isFatherOf data:Lord_Leopold_Mountbatten ;
+    :isParentOf data:Lord_Leopold_Mountbatten ;
+    :isSiblingOf data:Prince_Henry_of_Battenberg ;
+    :isUncleOf data:Lord_Leopold_Mountbatten .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Beatrice of the United Kingdom"^^xsd:string ;
+    data:posIndicesFull "490:516"^^xsd:string,
+        "618:635"^^xsd:string,
+        "618:657"^^xsd:string,
+        "786:812"^^xsd:string ;
+    data:posIndicesPart "1042:1048"^^xsd:string,
+        "1049:1056"^^xsd:string,
+        "1630:1638"^^xsd:string,
+        "2101:2107"^^xsd:string,
+        "2108:2115"^^xsd:string ;
+    data:wdtLink wdt:Q158140 ;
+    :alsoKnownAs "Beatrice Mary Victoria Feodore"^^xsd:string,
+        "Princess Beatrice"^^xsd:string,
+        "Princess Beatrice Mary Victoria Feodore of the United Kingdom"^^xsd:string,
+        "Princess Beatrice of Battenberg"^^xsd:string,
+        "Princess Henry of Battenberg"^^xsd:string,
+        "The Princess Beatrice"^^xsd:string ;
+    :hasChild data:Lord_Leopold_Mountbatten ;
+    :hasRelation data:Lord_Leopold_Mountbatten,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSon data:Lord_Leopold_Mountbatten ;
+    :isAncestorOf data:Lord_Leopold_Mountbatten ;
+    :isAuntOf data:Lord_Leopold_Mountbatten ;
+    :isBloodrelationOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isMotherOf data:Lord_Leopold_Mountbatten ;
+    :isParentOf data:Lord_Leopold_Mountbatten ;
+    :isSiblingOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSisterOf data:Princess_Beatrice_of_the_United_Kingdom .
+
+data:Lord_Leopold_Mountbatten a :Man,
+        :Person ;
+    rdfs:label "Lord Leopold Mountbatten"^^xsd:string ;
+    data:posIndicesFull "0:37"^^xsd:string,
+        "1085:1113"^^xsd:string,
+        "230:258"^^xsd:string,
+        "2703:2727"^^xsd:string,
+        "5:37"^^xsd:string,
+        "994:1022"^^xsd:string ;
+    data:posIndicesPart "1190:1197"^^xsd:string,
+        "1686:1693"^^xsd:string,
+        "1795:1802"^^xsd:string,
+        "1871:1878"^^xsd:string,
+        "2120:2127"^^xsd:string,
+        "2308:2315"^^xsd:string,
+        "2479:2486"^^xsd:string,
+        "2487:2498"^^xsd:string,
+        "2736:2740"^^xsd:string,
+        "2741:2748"^^xsd:string,
+        "442:449"^^xsd:string ;
+    data:wdtLink wdt:Q2205590 ;
+    :alsoKnownAs "Leopold Arthur Louis Mountbatten"^^xsd:string,
+        "Leopold Arthur Louis of Battenberg"^^xsd:string,
+        "Lord Leopold Arthur Louis Mountbatten"^^xsd:string,
+        "Major Lord Leopold Arthur Louis Mountbatten"^^xsd:string,
+        "Prince Leopold of Battenberg"^^xsd:string ;
+    :hasAncestor data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasBrother data:Lord_Leopold_Mountbatten ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasParent data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Lord_Leopold_Mountbatten,
+        data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Lord_Leopold_Mountbatten ;
+    :isBrotherOf data:Lord_Leopold_Mountbatten ;
+    :isChildOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSiblingOf data:Lord_Leopold_Mountbatten ;
+    :isSonOf data:Prince_Henry_of_Battenberg,
+        data:Princess_Beatrice_of_the_United_Kingdom .
+

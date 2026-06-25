@@ -1,0 +1,167 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sophie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexander ;
+    :hasRelation data:Alexander,
+        data:Maurice,
+        data:Sophie,
+        data:Wilhelmina,
+        data:William_III,
+        data:William_prince ;
+    :hasSister data:Sophie ;
+    :hasSon data:Alexander ;
+    :isAncestorOf data:Alexander ;
+    :isAuntOf data:Alexander ;
+    :isBloodrelationOf data:Sophie ;
+    :isMotherOf data:Alexander ;
+    :isParentOf data:Alexander ;
+    :isSiblingOf data:Sophie ;
+    :isSisterOf data:Sophie .
+
+data:William_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:William_III ;
+    :hasChild data:Alexander,
+        data:Wilhelmina ;
+    :hasDaughter data:Wilhelmina ;
+    :hasRelation data:Alexander,
+        data:Maurice,
+        data:Sophie,
+        data:Wilhelmina,
+        data:William_III,
+        data:William_prince ;
+    :hasSon data:Alexander ;
+    :isAncestorOf data:Alexander,
+        data:Wilhelmina ;
+    :isBloodrelationOf data:William_III ;
+    :isBrotherOf data:William_III ;
+    :isFatherOf data:Alexander,
+        data:Wilhelmina ;
+    :isParentOf data:Alexander,
+        data:Wilhelmina ;
+    :isSiblingOf data:William_III ;
+    :isUncleOf data:Alexander,
+        data:Wilhelmina .
+
+data:Maurice a :Man,
+        :Person ;
+    :hasBrother data:Alexander,
+        data:Maurice,
+        data:William_prince ;
+    :hasRelation data:Alexander,
+        data:Maurice,
+        data:Sophie,
+        data:Wilhelmina,
+        data:William_III,
+        data:William_prince ;
+    :hasSister data:Wilhelmina ;
+    :isBloodrelationOf data:Alexander,
+        data:Maurice,
+        data:Wilhelmina,
+        data:William_prince ;
+    :isBrotherOf data:Alexander,
+        data:Maurice,
+        data:Wilhelmina,
+        data:William_prince ;
+    :isSiblingOf data:Alexander,
+        data:Maurice,
+        data:Wilhelmina,
+        data:William_prince .
+
+data:William_prince a :Man,
+        :Person ;
+    :hasBrother data:Alexander,
+        data:Maurice,
+        data:William_prince ;
+    :hasRelation data:Alexander,
+        data:Maurice,
+        data:Sophie,
+        data:Wilhelmina,
+        data:William_III,
+        data:William_prince ;
+    :hasSister data:Wilhelmina ;
+    :isBloodrelationOf data:Alexander,
+        data:Maurice,
+        data:Wilhelmina,
+        data:William_prince ;
+    :isBrotherOf data:Alexander,
+        data:Maurice,
+        data:Wilhelmina,
+        data:William_prince ;
+    :isSiblingOf data:Alexander,
+        data:Maurice,
+        data:Wilhelmina,
+        data:William_prince .
+
+data:Wilhelmina a :Person,
+        :Woman ;
+    :hasAncestor data:William_III ;
+    :hasBrother data:Alexander,
+        data:Maurice,
+        data:William_prince ;
+    :hasFather data:William_III ;
+    :hasParent data:William_III ;
+    :hasRelation data:Alexander,
+        data:Maurice,
+        data:Sophie,
+        data:Wilhelmina,
+        data:William_III,
+        data:William_prince ;
+    :hasSister data:Wilhelmina ;
+    :isBloodrelationOf data:Alexander,
+        data:Maurice,
+        data:Wilhelmina,
+        data:William_prince ;
+    :isChildOf data:William_III ;
+    :isDaughterOf data:William_III ;
+    :isSiblingOf data:Alexander,
+        data:Maurice,
+        data:Wilhelmina,
+        data:William_prince ;
+    :isSisterOf data:Alexander,
+        data:Maurice,
+        data:Wilhelmina,
+        data:William_prince .
+
+data:Alexander a :Man,
+        :Person ;
+    :hasAncestor data:Sophie,
+        data:William_III ;
+    :hasBirthYear 1851 ;
+    :hasBrother data:Alexander,
+        data:Maurice,
+        data:William_prince ;
+    :hasDeathYear 1884 ;
+    :hasFather data:William_III ;
+    :hasMother data:Sophie ;
+    :hasParent data:Sophie,
+        data:William_III ;
+    :hasRelation data:Alexander,
+        data:Maurice,
+        data:Sophie,
+        data:Wilhelmina,
+        data:William_III,
+        data:William_prince ;
+    :hasSister data:Wilhelmina ;
+    :isBloodrelationOf data:Alexander,
+        data:Maurice,
+        data:Wilhelmina,
+        data:William_prince ;
+    :isBrotherOf data:Alexander,
+        data:Maurice,
+        data:Wilhelmina,
+        data:William_prince ;
+    :isChildOf data:Sophie,
+        data:William_III ;
+    :isSiblingOf data:Alexander,
+        data:Maurice,
+        data:Wilhelmina,
+        data:William_prince ;
+    :isSonOf data:Sophie,
+        data:William_III .
+

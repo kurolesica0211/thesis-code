@@ -69,34 +69,30 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lord Nicholas Charles Edward Jonathan Windsor (born 25 July 1970) is a relative of the British royal family, the youngest child of Prince Edward, Duke of Kent.
-Lord Nicholas has voiced strong anti-abortion views.
-Early years
+Lady Gabriella Marina Alexandra Ophelia Kingston (née Windsor; born 23 April 1981) is a British writer and editor.
+She is a member of the British royal family as the only daughter of Prince and Princess Michael of Kent.
+As a great-grandchild of King George V and Queen Mary, she is a second cousin of King Charles III.
+Early life and education
 
-Nicholas Charles Edward Jonathan Windsor was born on 25 July 1970 at King's College Hospital in Denmark Hill, London, to Prince Edward, Duke of Kent and Katharine, Duchess of Kent.
-He has an older brother, Earl of St Andrews, and a sister, Lady Helen Taylor.
-He was baptised later that year at Windsor Castle.
-His godparents included his paternal second cousin Charles, Prince of Wales (later King Charles III), and Donald Coggan, at the time Archbishop of York and later Archbishop of Canterbury.
-Religion
+Lady Gabriella Marina Alexandra Ophelia Windsor was born on 23 April 1981 at St Mary's Hospital, London, the second child and only daughter of Prince and Princess Michael of Kent.
+Gabriella was baptised on 8 June at the Chapel Royal, St James's Palace, London.
+Her godparents were Constantine II of Greece; Mariano Hugo, Prince of Windisch-Graetz; Marina Ogilvy; Princess Antonia, Marchioness of Douro; and Lady Elizabeth Shakerley.
+In May 2004, Gabriella graduated from Brown University in Providence, Rhode Island, with a BA degree in Comparative Literature and Hispanic studies.
+Career
 
-Nicholas's mother, the Duchess of Kent, had been received into the Catholic Church in 1994.
-On 14 July 2011, Nicholas became an Honorary Vice-president of the Friends of the Personal Ordinariate of Our Lady of Walsingham, an Anglican Ordinariate within the Catholic Church.
-Nicholas is also a patron of the Society of King Charles the Martyr and, though it is a largely Anglican society, he identifies it with his Catholic faith.
-In a passage written by Windsor for the Society's website, he extols Charles's virtues: "In the King's personal piety, devotion and support of the Church, his ecumenical understanding (far advanced for his day), his patronage of the Arts in the service of God, his inspiration of the Christian classic, Eikon Basilike and of course his martyrdom, we have much to REMEMBER and be thankful for.
-"
-
-
-Nicholas has voiced strong views on the issue of abortion, which he has stated is, as a societal threat, "worse than al-Qaeda".
-Marriage and family
-
-Nicholas met his future wife, Paola Doimi de Lupis Frankopan Šubić Zrinski, at a party in New York City in 1999 to mark the Millennium.
-By the marriage, the bride became Lady Nicholas Windsor.
+Gabriella works as a writer and contributing editor, and contributes to The London Magazine among other publications.
+Gabriella undertook a research project with El Colegio del Cuerpo in Colombia and later worked for the brand company Branding Latin America as an arts and travel director.
+In 2024, she helped Catherine, Princess of Wales, plan the annual Together at Christmas carol service at Westminster Abbey.
+Gabriella's engagement to Thomas Henry Robin Kingston (22 June 1978 – 25 February 2024), a Dean Close School alumnus and University of Bristol graduate, was announced by Buckingham Palace on 19 September 2018.
+Their wedding took place at St George's Chapel, Windsor Castle, on 18 May 2019, and was attended by Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -112,39 +108,9 @@ By the marriage, the bride became Lady Nicholas Windsor.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -159,6 +125,23 @@ By the marriage, the bride became Lady Nicholas Windsor.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -176,6 +159,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -243,29 +241,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -274,6 +264,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -286,6 +284,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -294,17 +294,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -332,6 +334,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -347,103 +433,223 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0bd5e7d0-8647-4a67-af4f-03141fede6e1)
- Call ID: 0bd5e7d0-8647-4a67-af4f-03141fede6e1
+  AssignClass (8a385434-675f-4264-9eea-ed15c82a1f26)
+ Call ID: 8a385434-675f-4264-9eea-ed15c82a1f26
   Args:
-    type: :Man
-    source: Nicholas_Charles_Edward_Jonathan_Windsor
-  AssignClass (f209290a-0890-4b40-a5fe-85e7275a98bc)
- Call ID: f209290a-0890-4b40-a5fe-85e7275a98bc
-  Args:
-    type: :Person
-    source: Nicholas_Charles_Edward_Jonathan_Windsor
-  AssignClass (f096c424-d3b0-42c3-92e9-4df0a875c5ff)
- Call ID: f096c424-d3b0-42c3-92e9-4df0a875c5ff
-  Args:
-    type: :Man
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (6c4553b8-32e3-4afe-88a4-bf4d1d1decbd)
- Call ID: 6c4553b8-32e3-4afe-88a4-bf4d1d1decbd
-  Args:
-    type: :Person
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (f0cd01bc-5cf4-41f9-9871-ff1c39a4e3c7)
- Call ID: f0cd01bc-5cf4-41f9-9871-ff1c39a4e3c7
-  Args:
+    source: Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston
     type: :Woman
-    source: Katharine_Duchess_of_Kent
-  AssignClass (a0e916fa-59a0-4b18-b8ab-d8280f1c6440)
- Call ID: a0e916fa-59a0-4b18-b8ab-d8280f1c6440
+  AssignClass (52a9f120-5491-48d9-ab3b-0dd51b93d9bc)
+ Call ID: 52a9f120-5491-48d9-ab3b-0dd51b93d9bc
   Args:
+    source: Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston
     type: :Person
-    source: Katharine_Duchess_of_Kent
-  AssignClass (de80214d-a7d8-46c9-a854-ba0b6e868188)
- Call ID: de80214d-a7d8-46c9-a854-ba0b6e868188
+  AddLiteral (df3f7665-6374-4cdf-b0cd-760d3862587c)
+ Call ID: df3f7665-6374-4cdf-b0cd-760d3862587c
   Args:
-    type: :Man
-    source: Earl_of_St_Andrews
-  AssignClass (773c045c-81d0-430b-8d55-9cef3363fd42)
- Call ID: 773c045c-81d0-430b-8d55-9cef3363fd42
-  Args:
-    type: :Person
-    source: Earl_of_St_Andrews
-  AssignClass (9c9846f3-0db2-41a5-8d8f-1291f6f8a1b9)
- Call ID: 9c9846f3-0db2-41a5-8d8f-1291f6f8a1b9
-  Args:
-    type: :Woman
-    source: Lady_Helen_Taylor
-  AssignClass (8b7c7254-9ef1-405a-87c9-266e764e0176)
- Call ID: 8b7c7254-9ef1-405a-87c9-266e764e0176
-  Args:
-    type: :Person
-    source: Lady_Helen_Taylor
-  AssignClass (375d6cb9-feb0-4f86-8fb4-a058d3a6059b)
- Call ID: 375d6cb9-feb0-4f86-8fb4-a058d3a6059b
-  Args:
-    type: :Woman
-    source: Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski
-  AssignClass (7f45ab74-1709-4581-8192-c8f6fad4fed3)
- Call ID: 7f45ab74-1709-4581-8192-c8f6fad4fed3
-  Args:
-    type: :Person
-    source: Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski
-  AddLiteral (30e24e4d-5c3b-49d0-a2b7-1c0bb6ac0151)
- Call ID: 30e24e4d-5c3b-49d0-a2b7-1c0bb6ac0151
-  Args:
+    source: Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston
+    literal_value: 1981
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1970
-    source: Nicholas_Charles_Edward_Jonathan_Windsor
-  AddTriple (331ee7a2-6b93-4011-8c45-629d26e58f76)
- Call ID: 331ee7a2-6b93-4011-8c45-629d26e58f76
+  AddTriple (c0bbc117-85f7-4692-ac66-8614cbc93107)
+ Call ID: c0bbc117-85f7-4692-ac66-8614cbc93107
   Args:
-    source: Nicholas_Charles_Edward_Jonathan_Windsor
+    target: Lady_Gabriella_Marina_Alexandra_Ophelia_Windsor
+    relation: :alsoKnownAs
+    source: Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston
+  AssignClass (e28edc54-87e9-49f7-b381-98d63ba6b85d)
+ Call ID: e28edc54-87e9-49f7-b381-98d63ba6b85d
+  Args:
+    type: :Man
+    source: Prince_Michael_of_Kent
+  AssignClass (aee420d9-2ef1-4d91-9ab5-e5f5303fbc9b)
+ Call ID: aee420d9-2ef1-4d91-9ab5-e5f5303fbc9b
+  Args:
+    source: Prince_Michael_of_Kent
+    type: :Person
+  AssignClass (d0d4f947-8075-479e-b236-315fa4f6d200)
+ Call ID: d0d4f947-8075-479e-b236-315fa4f6d200
+  Args:
+    type: :Woman
+    source: Princess_Michael_of_Kent
+  AssignClass (3d972912-9ea5-40a8-a383-ba1d7c340afd)
+ Call ID: 3d972912-9ea5-40a8-a383-ba1d7c340afd
+  Args:
+    type: :Person
+    source: Princess_Michael_of_Kent
+  AddTriple (4741935b-2884-4f38-9dc0-a3b1aafe4ff5)
+ Call ID: 4741935b-2884-4f38-9dc0-a3b1aafe4ff5
+  Args:
+    source: Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston
     relation: :hasFather
-    target: Prince_Edward_Duke_of_Kent
-  AddTriple (43b754ef-5db8-407c-9361-301b4cefa3d1)
- Call ID: 43b754ef-5db8-407c-9361-301b4cefa3d1
+    target: Prince_Michael_of_Kent
+  AddTriple (2b6d6482-ee7b-40cb-a161-415152c09698)
+ Call ID: 2b6d6482-ee7b-40cb-a161-415152c09698
   Args:
-    target: Katharine_Duchess_of_Kent
+    target: Princess_Michael_of_Kent
     relation: :hasMother
-    source: Nicholas_Charles_Edward_Jonathan_Windsor
-  AddTriple (ead12c64-653c-4e7a-b818-4f260ecc6bb0)
- Call ID: ead12c64-653c-4e7a-b818-4f260ecc6bb0
+    source: Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston
+  AssignClass (6311c3c8-aa8e-4b91-b654-2bdb66c2ebb3)
+ Call ID: 6311c3c8-aa8e-4b91-b654-2bdb66c2ebb3
   Args:
-    relation: :hasBrother
-    target: Earl_of_St_Andrews
-    source: Nicholas_Charles_Edward_Jonathan_Windsor
-  AddTriple (5495e4bb-24ad-45ce-b160-70a09f602ea2)
- Call ID: 5495e4bb-24ad-45ce-b160-70a09f602ea2
+    source: Thomas_Henry_Robin_Kingston
+    type: :Man
+  AssignClass (6ce9204d-33b5-431d-8a77-0988fa7bf8bd)
+ Call ID: 6ce9204d-33b5-431d-8a77-0988fa7bf8bd
   Args:
-    relation: :hasSister
-    target: Lady_Helen_Taylor
-    source: Nicholas_Charles_Edward_Jonathan_Windsor
-  AddTriple (c1358a55-3611-42e5-83db-b589cf628ebd)
- Call ID: c1358a55-3611-42e5-83db-b589cf628ebd
+    type: :Person
+    source: Thomas_Henry_Robin_Kingston
+  AddLiteral (a1e8b883-c1ec-4eb6-b7ab-63f630e811b3)
+ Call ID: a1e8b883-c1ec-4eb6-b7ab-63f630e811b3
   Args:
+    literal_type: xsd:integer
+    literal_value: 1978
+    relation: :hasBirthYear
+    source: Thomas_Henry_Robin_Kingston
+  AddLiteral (8c24478d-66bd-4bbd-b84d-c8b55cfc869b)
+ Call ID: 8c24478d-66bd-4bbd-b84d-c8b55cfc869b
+  Args:
+    relation: :hasDeathYear
+    literal_value: 2024
+    literal_type: xsd:integer
+    source: Thomas_Henry_Robin_Kingston
+  AddLiteral (439c4e81-174d-4171-a01b-83e98d56b97b)
+ Call ID: 439c4e81-174d-4171-a01b-83e98d56b97b
+  Args:
+    literal_value: 2019
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston
+  AddTriple (36398232-1cab-45fb-860c-a4d31271a8b7)
+ Call ID: 36398232-1cab-45fb-860c-a4d31271a8b7
+  Args:
+    target: Thomas_Henry_Robin_Kingston
     relation: :hasRelation
-    target: Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski
-    source: Nicholas_Charles_Edward_Jonathan_Windsor
-  Finish (16d6f800-64b9-46fd-88b5-32fd51d6788d)
- Call ID: 16d6f800-64b9-46fd-88b5-32fd51d6788d
+    source: Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston
+  Finish (5a0e211e-7a5f-4ad5-b6d7-b68767f52922)
+ Call ID: 5a0e211e-7a5f-4ad5-b6d7-b68767f52922
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston a :Person,
+          :Woman ;
+      :alsoKnownAs data:Lady_Gabriella_Marina_Alexandra_Ophelia_Windsor ;
+      :hasBirthYear 1981 ;
+      :hasFather data:Prince_Michael_of_Kent ;
+      :hasMarriageYear 2019 ;
+      :hasMother data:Princess_Michael_of_Kent ;
+      :hasRelation data:Thomas_Henry_Robin_Kingston .
+
+  data:Prince_Michael_of_Kent a :Man,
+          :Person .
+
+  data:Princess_Michael_of_Kent a :Person,
+          :Woman .
+
+  data:Thomas_Henry_Robin_Kingston a :Man,
+          :Person ;
+      :hasBirthYear 1978 ;
+      :hasDeathYear 2024 .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Lady_Gabriella_Marina_Alexandra_Ophelia_Windsor']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (b35e6bb6-98a0-4f92-944b-b5bb21400643)
+ Call ID: b35e6bb6-98a0-4f92-944b-b5bb21400643
+  Args:
+    source: Lady_Gabriella_Marina_Alexandra_Ophelia_Windsor
+    type: :Person
+  AssignClass (b6078ab4-102a-4db1-8d03-22f2aba57e92)
+ Call ID: b6078ab4-102a-4db1-8d03-22f2aba57e92
+  Args:
+    source: Lady_Gabriella_Marina_Alexandra_Ophelia_Windsor
+    type: :Woman
+  Finish (5bc33a32-291c-4002-b50d-e53b8addd3e5)
+ Call ID: 5bc33a32-291c-4002-b50d-e53b8addd3e5
   Args:

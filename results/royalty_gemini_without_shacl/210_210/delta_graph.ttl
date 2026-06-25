@@ -2,19 +2,22 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:David_Michael_Mountbatten a :Man ;
-    :hasBirthYear 1919 ;
-    :hasDeathYear 1970 ;
-    :hasFather data:George_Mountbatten ;
-    :hasMother data:Nadejda_Mikhailovna_of_Torby .
+data:Prince_Francois_of_Orleans a :Man,
+        :Person ;
+    :hasBirthYear 1961 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Prince_Henri ;
+    :hasMother data:Duchess_Marie-Therese_of_Wurttemberg ;
+    :isSiblingOf data:Princess_Blanche .
 
-data:George_Mountbatten a :Man ;
-    :hasFather data:Louis_of_Battenberg ;
-    :hasMother data:Victoria_of_Hesse_and_by_Rhine .
+data:Princess_Blanche a :Person,
+        :Woman ;
+    :hasFather data:Prince_Henri ;
+    :hasMother data:Duchess_Marie-Therese_of_Wurttemberg .
 
-data:Louis_of_Battenberg a :Man .
+data:Duchess_Marie-Therese_of_Wurttemberg a :Person,
+        :Woman .
 
-data:Nadejda_Mikhailovna_of_Torby a :Woman .
-
-data:Victoria_of_Hesse_and_by_Rhine a :Woman .
+data:Prince_Henri a :Man,
+        :Person .
 

@@ -7,10 +7,26 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Leonora_Anson-_Countess_of_Lichfield a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Lady_Elizabeth_Shakerley a :Person ;
+    rdfs:label "Lady Elizabeth Shakerley" ;
+    data:posIndicesFull "792:822",
+        "797:822" ;
+    data:posIndicesPart "1486:1495",
+        "1709:1718",
+        "2172:2176" ;
+    data:wdtLink wdt:Q75332807 ;
+    :alsoKnownAs "Elizabeth Anson",
+        "Elizabeth Georgiana Anson",
+        "Elizabeth Georgiana Shakerley",
+        "Elizabeth Shakerley",
+        "Lady Elizabeth Anson",
+        "Lady Elizabeth Georgiana Anson",
+        "Lady Elizabeth Georgiana Shakerley" ;
+    :hasParent data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasSex data:female .
+
+data:Leonora_Anson-_Countess_of_Lichfield a :Person ;
     rdfs:label "Leonora Anson, Countess of Lichfield" ;
     data:posIndicesFull "1897:1919",
         "1902:1919" ;
@@ -30,117 +46,7 @@ data:Leonora_Anson-_Countess_of_Lichfield a :Ancestor,
         "Leonora, Countess of Lichfield" ;
     :hasSex data:female .
 
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Elizabeth, The Queen Mother" ;
-    data:posIndicesFull "1480:1495",
-        "1703:1718",
-        "592:607",
-        "608:624" ;
-    data:posIndicesPart "664:670" ;
-    data:wdtLink wdt:Q10633 ;
-    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
-        "Elizabeth Angela Marguerite, Duchess of York",
-        "Elizabeth Bowes-Lyon",
-        "Elizabeth, Duchess of York",
-        "Elizabeth, Queen Consort of the British Empire",
-        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
-        "Hon. Elizabeth Bowes-Lyon",
-        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
-        "Lady Elizabeth Bowes-Lyon",
-        "Queen Elizabeth",
-        "Queen Elizabeth Angela Marguerite",
-        "Queen-Empress Elizabeth",
-        "The Queen Mother",
-        "The Queen Mum" ;
-    :hasSex data:female ;
-    :isAuntOf data:Princess_Anne_of_Denmark .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Thomas_Anson-_Viscount_Anson a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Thomas Anson, Viscount Anson" ;
-    data:posIndicesFull "383:426" ;
-    data:wdtLink wdt:Q75390868 ;
-    :alsoKnownAs "Thomas William Arnold Anson, Viscount Anson" ;
-    :hasChild data:Lady_Elizabeth_Shakerley,
-        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
-    :hasDaughter data:Lady_Elizabeth_Shakerley ;
-    :hasSex data:male ;
-    :hasSon data:Patrick_Anson-_5th_Earl_of_Lichfield ;
-    :isFatherOf data:Lady_Elizabeth_Shakerley,
-        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
-    :isParentOf data:Lady_Elizabeth_Shakerley,
-        data:Patrick_Anson-_5th_Earl_of_Lichfield .
-
-data:Princess_Anne_of_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Anne of Denmark" ;
-    data:posIndicesFull "2083:2090",
-        "552:567",
-        "691:715" ;
-    data:posIndicesPart "1370:1378" ;
-    data:wdtLink wdt:Q2871729 ;
-    :alsoKnownAs "Anne Anson",
-        "Anne Anson, Viscountess Anson",
-        "Anne Bowes-Lyon",
-        "Anne Ferelith Fenella Anson",
-        "Anne Ferelith Fenella Anson, Viscountess Anson",
-        "Anne Ferelith Fenella Bowes-Lyon",
-        "Princess Anne Ferelith Fenella of Denmark" ;
-    :hasChild data:Lady_Elizabeth_Shakerley,
-        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
-    :hasDaughter data:Lady_Elizabeth_Shakerley ;
-    :hasSex data:female ;
-    :hasSon data:Patrick_Anson-_5th_Earl_of_Lichfield ;
-    :isMotherOf data:Lady_Elizabeth_Shakerley,
-        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
-    :isParentOf data:Lady_Elizabeth_Shakerley,
-        data:Patrick_Anson-_5th_Earl_of_Lichfield .
-
-data:Lady_Elizabeth_Shakerley a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Lady Elizabeth Shakerley" ;
-    data:posIndicesFull "792:822",
-        "797:822" ;
-    data:posIndicesPart "2172:2176" ;
-    data:wdtLink wdt:Q75332807 ;
-    :alsoKnownAs "Elizabeth Anson",
-        "Elizabeth Georgiana Anson",
-        "Elizabeth Georgiana Shakerley",
-        "Elizabeth Shakerley",
-        "Lady Elizabeth Anson",
-        "Lady Elizabeth Georgiana Anson",
-        "Lady Elizabeth Georgiana Shakerley" ;
-    :hasBrother data:Patrick_Anson-_5th_Earl_of_Lichfield ;
-    :hasFather data:Thomas_Anson-_Viscount_Anson ;
-    :hasMother data:Princess_Anne_of_Denmark ;
-    :hasParent data:Princess_Anne_of_Denmark,
-        data:Thomas_Anson-_Viscount_Anson ;
-    :hasSex data:female ;
-    :isChildOf data:Princess_Anne_of_Denmark,
-        data:Thomas_Anson-_Viscount_Anson ;
-    :isDaughterOf data:Princess_Anne_of_Denmark,
-        data:Thomas_Anson-_Viscount_Anson ;
-    :isSiblingOf data:Patrick_Anson-_5th_Earl_of_Lichfield ;
-    :isSisterOf data:Patrick_Anson-_5th_Earl_of_Lichfield .
-
-data:Patrick_Anson-_5th_Earl_of_Lichfield a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Patrick_Anson-_5th_Earl_of_Lichfield a :Person ;
     rdfs:label "Patrick Anson, 5th Earl of Lichfield" ;
     data:posIndicesFull "0:25",
         "0:48",
@@ -168,16 +74,40 @@ data:Patrick_Anson-_5th_Earl_of_Lichfield a :Ancestor,
         "Patrick Lichfield",
         "Thomas Patrick John Anson",
         "Thomas Patrick John Anson, 5th Earl of Lichfield" ;
-    :hasFather data:Thomas_Anson-_Viscount_Anson ;
-    :hasMother data:Princess_Anne_of_Denmark ;
     :hasParent data:Princess_Anne_of_Denmark,
         data:Thomas_Anson-_Viscount_Anson ;
-    :hasSex data:male ;
-    :hasSister data:Lady_Elizabeth_Shakerley ;
-    :isBrotherOf data:Lady_Elizabeth_Shakerley ;
-    :isChildOf data:Princess_Anne_of_Denmark,
-        data:Thomas_Anson-_Viscount_Anson ;
-    :isSiblingOf data:Lady_Elizabeth_Shakerley ;
-    :isSonOf data:Princess_Anne_of_Denmark,
-        data:Thomas_Anson-_Viscount_Anson .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Anne_of_Denmark a :Person ;
+    rdfs:label "Princess Anne of Denmark" ;
+    data:posIndicesFull "2083:2090",
+        "552:567",
+        "691:715" ;
+    data:posIndicesPart "1370:1378" ;
+    data:wdtLink wdt:Q2871729 ;
+    :alsoKnownAs "Anne Anson",
+        "Anne Anson, Viscountess Anson",
+        "Anne Bowes-Lyon",
+        "Anne Ferelith Fenella Anson",
+        "Anne Ferelith Fenella Anson, Viscountess Anson",
+        "Anne Ferelith Fenella Bowes-Lyon",
+        "Princess Anne Ferelith Fenella of Denmark" ;
+    :hasSex data:female .
+
+data:Thomas_Anson-_Viscount_Anson a :Person ;
+    rdfs:label "Thomas Anson, Viscount Anson" ;
+    data:posIndicesFull "383:426" ;
+    data:wdtLink wdt:Q75390868 ;
+    :alsoKnownAs "Thomas William Arnold Anson, Viscount Anson" ;
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

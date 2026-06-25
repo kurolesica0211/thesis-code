@@ -1,0 +1,98 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Count_Henrik_of_Monpezat a :Man,
+        :Person ;
+    rdfs:label "Count Henrik of Monpezat"^^xsd:string ;
+    data:posIndicesFull "1164:1188"^^xsd:string,
+        "1164:1207"^^xsd:string,
+        "1399:1423"^^xsd:string,
+        "21:45"^^xsd:string,
+        "52:76"^^xsd:string,
+        "561:586"^^xsd:string ;
+    data:posIndicesPart "852:857"^^xsd:string ;
+    data:wdtLink wdt:Q2317090 ;
+    :alsoKnownAs "Count Henrik Carl Joachim Alain of Monpezat"^^xsd:string,
+        "Henrik Carl Joachim Alain"^^xsd:string,
+        "Henrik Carl Joachim Alain of Monpezat"^^xsd:string,
+        "Henrik Carl Joachim Alain, Prince of Denmark"^^xsd:string,
+        "Prince Henrik Carl Joachim Alain of Denmark"^^xsd:string,
+        "Prince Henrik Carl Joachim Alain of Denmark, Count of Monpezat"^^xsd:string,
+        "Prince Henrik of Denmark"^^xsd:string,
+        "Prince Henrik of Denmark, Count of Monpezat"^^xsd:string ;
+    :hasBrother data:Count_Henrik_of_Monpezat ;
+    :hasRelation data:Count_Henrik_of_Monpezat ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Count_Henrik_of_Monpezat ;
+    :isBrotherOf data:Count_Henrik_of_Monpezat ;
+    :isSiblingOf data:Count_Henrik_of_Monpezat .
+
+data:Henrik-_Prince_Consort_of_Denmark a :Man,
+        :Person ;
+    rdfs:label "Henrik, Prince Consort of Denmark"^^xsd:string ;
+    data:posIndicesFull "1021:1027"^^xsd:string,
+        "1129:1135"^^xsd:string,
+        "1164:1188"^^xsd:string,
+        "1171:1177"^^xsd:string,
+        "1405:1411"^^xsd:string,
+        "27:33"^^xsd:string,
+        "284:290"^^xsd:string,
+        "324:330"^^xsd:string,
+        "400:406"^^xsd:string,
+        "52:76"^^xsd:string,
+        "561:567"^^xsd:string,
+        "59:65"^^xsd:string,
+        "858:864"^^xsd:string ;
+    data:posIndicesPart "1300:1306"^^xsd:string,
+        "1433:1439"^^xsd:string,
+        "166:172"^^xsd:string,
+        "640:647"^^xsd:string ;
+    data:wdtLink wdt:Q1389258 ;
+    :alsoKnownAs "Enric de Monpezat"^^xsd:string,
+        "Henri Marie Jean Andre de Laborde de Monpezat"^^xsd:string,
+        "Henri Marie Jean André de Laborde de Monpezat"^^xsd:string,
+        "Henri Marie Jean André de Laborde de Monpezat, Comte de Laborde de Monpezat"^^xsd:string,
+        "Henri de Monpezat"^^xsd:string,
+        "Henrik"^^xsd:string,
+        "Prince Henrik of Denmark"^^xsd:string ;
+    :hasBrother data:Henrik-_Prince_Consort_of_Denmark ;
+    :hasRelation data:Henrik-_Prince_Consort_of_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Henrik-_Prince_Consort_of_Denmark ;
+    :isBrotherOf data:Henrik-_Prince_Consort_of_Denmark ;
+    :isSiblingOf data:Henrik-_Prince_Consort_of_Denmark .
+
+data:Margrethe_II_of_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Margrethe II of Denmark"^^xsd:string ;
+    data:posIndicesFull "1256:1268"^^xsd:string,
+        "260:272"^^xsd:string,
+        "6:18"^^xsd:string ;
+    data:posIndicesPart "428:435"^^xsd:string,
+        "640:647"^^xsd:string ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer"^^xsd:string,
+        "Margrethe II"^^xsd:string ;
+    :hasRelation data:Margrethe_II_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark ;
+    :isBloodrelationOf data:Margrethe_II_of_Denmark ;
+    :isSiblingOf data:Margrethe_II_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark .
+

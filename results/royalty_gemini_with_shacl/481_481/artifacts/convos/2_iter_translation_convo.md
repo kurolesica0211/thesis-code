@@ -30,14 +30,14 @@ The SHACL validation process has identified the following violations in the curr
 ---
 ### Violations:
 VALIDATION RESULTS
-Total violations:9
+Total violations:12
 Violations:
 
   Violation [1]:
     Severity: Violation
-    Focus node: Hermann_Friedrich_Fernando_Roland_of_Leiningen
+    Focus node: Philipp_Albrecht_of_W%C3%BCrttemberg
     Path: hasFather
-    Value: Prince_Karl_of_Leiningen
+    Value: Albrecht_of_W%C3%BCrttemberg
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -118,9 +118,9 @@ Violations:
 
   Violation [2]:
     Severity: Violation
-    Focus node: Hermann_Friedrich_Fernando_Roland_of_Leiningen
+    Focus node: Philipp_Albrecht_of_W%C3%BCrttemberg
     Path: hasMother
-    Value: Princess_Marie_Louise_of_Bulgaria
+    Value: Margarete_Sophie_of_Austria
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -202,9 +202,9 @@ Violations:
 
   Violation [3]:
     Severity: Violation
-    Focus node: Hermann_Friedrich_Fernando_Roland_of_Leiningen
+    Focus node: Philipp_Albrecht_of_W%C3%BCrttemberg
     Path: hasFather
-    Value: Prince_Karl_of_Leiningen
+    Value: Albrecht_of_W%C3%BCrttemberg
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -285,9 +285,9 @@ Violations:
 
   Violation [4]:
     Severity: Violation
-    Focus node: Princess_Marie_Louise_of_Bulgaria
+    Focus node: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
     Path: hasFather
-    Value: King_Boris_III_of_Bulgaria
+    Value: Peter_Ferdinand_of_Tuscany
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -364,9 +364,9 @@ Violations:
 
   Violation [5]:
     Severity: Violation
-    Focus node: Hermann_Friedrich_Fernando_Roland_of_Leiningen
+    Focus node: Philipp_Albrecht_of_W%C3%BCrttemberg
     Path: hasMother
-    Value: Princess_Marie_Louise_of_Bulgaria
+    Value: Margarete_Sophie_of_Austria
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -448,9 +448,89 @@ Violations:
 
   Violation [6]:
     Severity: Violation
-    Focus node: Hermann_Friedrich_Fernando_Roland_of_Leiningen
+    Focus node: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+    Path: hasMother
+    Value: Maria_Cristina_of_Bourbon-Two_Sicilies
+    Constraint: ClassConstraintComponent
+    Source shape:
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
+          sh:maxCount 1 ;
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    Classes assigned to the focus node: [':Woman', ':Person']
+    Definitions of the classes assigned to the focus node:
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+    Definition of the path:
+      :hasMother a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Woman ;
+          rdfs:subPropertyOf :hasParent,
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
+    Classes assigned to the value node: [':Woman', ':Person']
+    Definitions of the classes assigned to the value node:
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+
+
+  Violation [7]:
+    Severity: Violation
+    Focus node: Philipp_Albrecht_of_W%C3%BCrttemberg
     Path: hasFather
-    Value: Prince_Karl_of_Leiningen
+    Value: Albrecht_of_W%C3%BCrttemberg
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -529,11 +609,11 @@ Violations:
 
 
 
-  Violation [7]:
+  Violation [8]:
     Severity: Violation
-    Focus node: Princess_Marie_Louise_of_Bulgaria
+    Focus node: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
     Path: hasFather
-    Value: King_Boris_III_of_Bulgaria
+    Value: Peter_Ferdinand_of_Tuscany
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -608,11 +688,11 @@ Violations:
 
 
 
-  Violation [8]:
+  Violation [9]:
     Severity: Violation
-    Focus node: Hermann_Friedrich_Fernando_Roland_of_Leiningen
+    Focus node: Philipp_Albrecht_of_W%C3%BCrttemberg
     Path: hasMother
-    Value: Princess_Marie_Louise_of_Bulgaria
+    Value: Margarete_Sophie_of_Austria
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -692,11 +772,91 @@ Violations:
 
 
 
-  Violation [9]:
+  Violation [10]:
     Severity: Violation
-    Focus node: Princess_Marie_Louise_of_Bulgaria
+    Focus node: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+    Path: hasMother
+    Value: Maria_Cristina_of_Bourbon-Two_Sicilies
+    Constraint: ClassConstraintComponent
+    Source shape:
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
+          sh:maxCount 1 ;
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    Classes assigned to the focus node: [':Woman', ':Person']
+    Definitions of the classes assigned to the focus node:
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+    Definition of the path:
+      :hasMother a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Woman ;
+          rdfs:subPropertyOf :hasParent,
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
+    Classes assigned to the value node: [':Woman', ':Person']
+    Definitions of the classes assigned to the value node:
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+
+
+  Violation [11]:
+    Severity: Violation
+    Focus node: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
     Path: hasFather
-    Value: King_Boris_III_of_Bulgaria
+    Value: Peter_Ferdinand_of_Tuscany
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -771,6 +931,86 @@ Violations:
 
 
 
+  Violation [12]:
+    Severity: Violation
+    Focus node: Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria
+    Path: hasMother
+    Value: Maria_Cristina_of_Bourbon-Two_Sicilies
+    Constraint: ClassConstraintComponent
+    Source shape:
+      :Person-hasMother a sh:PropertyShape ;
+          sh:class :Ancestor,
+              :Woman ;
+          sh:maxCount 1 ;
+          sh:path :hasMother .
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    Classes assigned to the focus node: [':Woman', ':Person']
+    Definitions of the classes assigned to the focus node:
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+    Definition of the path:
+      :hasMother a owl:FunctionalProperty,
+              owl:ObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Ancestor,
+              :Woman ;
+          rdfs:subPropertyOf :hasParent,
+              :isChildOf ;
+          owl:inverseOf :isMotherOf .
+    Classes assigned to the value node: [':Woman', ':Person']
+    Definitions of the classes assigned to the value node:
+      Class :Woman:
+        :Woman a owl:Class ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:intersectionOf ( :Person [ a owl:Restriction ;
+                                owl:onProperty :hasSex ;
+                                owl:someValuesFrom :Female ] ) ] .
+      Class :Person:
+        :Person a owl:Class ;
+            rdfs:subClassOf [ a owl:Restriction ;
+                    owl:onProperty :hasFather ;
+                    owl:someValuesFrom :Man ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasMother ;
+                    owl:someValuesFrom :Woman ],
+                [ a owl:Restriction ;
+                    owl:onProperty :hasSex ;
+                    owl:someValuesFrom :Sex ],
+                [ a owl:Restriction ;
+                    owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                    owl:onClass :Person ;
+                    owl:onProperty :hasParent ],
+                :DomainEntity ;
+            owl:disjointWith :Sex ;
+            owl:equivalentClass [ a owl:Class ;
+                    owl:unionOf ( :Man :Woman ) ] .
+
+
+
 
 ---
 
@@ -778,4 +1018,4 @@ Please analyze each violation and provide the corresponding explanation and fix 
 
 ================================== Ai Message ==================================
 
-[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The value \'Prince_Karl_of_Leiningen\' assigned to \'hasFather\' for \'Hermann_Friedrich_Fernando_Roland_of_Leiningen\' is not recognized as an \'Ancestor\' or \'Man\'.",\n      "instruction": "AssignClass(Prince_Karl_of_Leiningen, :Ancestor)"\n    },\n    {\n      "explanation": "The value \'Princess_Marie_Louise_of_Bulgaria\' assigned to \'hasMother\' for \'Hermann_Friedrich_Fernando_Roland_of_Leiningen\' is not recognized as an \'Ancestor\' or \'Woman\'.",\n      "instruction": "AssignClass(Princess_Marie_Louise_of_Bulgaria, :Ancestor)"\n    },\n    {\n      "explanation": "The value \'Prince_Karl_of_Leiningen\' assigned to \'hasFather\' for \'Hermann_Friedrich_Fernando_Roland_of_Leiningen\' is not recognized as an \'Ancestor\' or \'Man\'.",\n      "instruction": "AssignClass(Prince_Karl_of_Leiningen, :Ancestor)"\n    },\n    {\n      "explanation": "The value \'King_Boris_III_of_Bulgaria\' assigned to \'hasFather\' for \'Princess_Marie_Louise_of_Bulgaria\' is not recognized as an \'Ancestor\' or \'Man\'.",\n      "instruction": "AssignClass(King_Boris_III_of_Bulgaria, :Ancestor)"\n    },\n    {\n      "explanation": "The value \'Princess_Marie_Louise_of_Bulgaria\' assigned to \'hasMother\' for \'Hermann_Friedrich_Fernando_Roland_of_Leiningen\' is not recognized as an \'Ancestor\' or \'Woman\'.",\n      "instruction": "AssignClass(Princess_Marie_Louise_of_Bulgaria, :Ancestor)"\n    },\n    {\n      "explanation": "The value \'Prince_Karl_of_Leiningen\' assigned to \'hasFather\' for \'Hermann_Friedrich_Fernando_Roland_of_Leiningen\' is not recognized as an \'Ancestor\' or \'Man\'.",\n      "instruction": "AssignClass(Prince_Karl_of_Leiningen, :Ancestor)"\n    },\n    {\n      "explanation": "The value \'King_Boris_III_of_Bulgaria\' assigned to \'hasFather\' for \'Princess_Marie_Louise_of_Bulgaria\' is not recognized as an \'Ancestor\' or \'Man\'.",\n      "instruction": "AssignClass(King_Boris_III_of_Bulgaria, :Ancestor)"\n    },\n    {\n      "explanation": "The value \'Princess_Marie_Louise_of_Bulgaria\' assigned to \'hasMother\' for \'Hermann_Friedrich_Fernando_Roland_of_Leiningen\' is not recognized as an \'Ancestor\' or \'Woman\'.",\n      "instruction": "AssignClass(Princess_Marie_Louise_of_Bulgaria, :Ancestor)"\n    },\n    {\n      "explanation": "The value \'King_Boris_III_of_Bulgaria\' assigned to \'hasFather\' for \'Princess_Marie_Louise_of_Bulgaria\' is not recognized as an \'Ancestor\' or \'Man\'.",\n      "instruction": "AssignClass(King_Boris_III_of_Bulgaria, :Ancestor)"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHrM4SiMOYrDJzC6TvJ5Pw9ceRrd/klkLD94h4zE0XN/c1Lc8Ef4FxUDX1Rin3'}}]
+[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The value node Albrecht_of_Württemberg is missing the required class :Ancestor, which is expected for the hasFather property of Philipp_Albrecht_of_Württemberg.",\n      "instruction": "AssignClass(node=\'Albrecht_of_Württemberg\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The value node Margarete_Sophie_of_Austria is missing the required class :Ancestor, which is expected for the hasMother property of Philipp_Albrecht_of_Württemberg.",\n      "instruction": "AssignClass(node=\'Margarete_Sophie_of_Austria\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The value node Albrecht_of_Württemberg is missing the required class :Ancestor, which is expected for the hasFather property of Philipp_Albrecht_of_Württemberg.",\n      "instruction": "AssignClass(node=\'Albrecht_of_Württemberg\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The value node Peter_Ferdinand_of_Tuscany is missing the required class :Ancestor, which is expected for the hasFather property of Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria.",\n      "instruction": "AssignClass(node=\'Peter_Ferdinand_of_Tuscany\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The value node Margarete_Sophie_of_Austria is missing the required class :Ancestor, which is expected for the hasMother property of Philipp_Albrecht_of_Württemberg.",\n      "instruction": "AssignClass(node=\'Margarete_Sophie_of_Austria\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The value node Maria_Cristina_of_Bourbon-Two_Sicilies is missing the required class :Ancestor, which is expected for the hasMother property of Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria.",\n      "instruction": "AssignClass(node=\'Maria_Cristina_of_Bourbon-Two_Sicilies\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The value node Albrecht_of_Württemberg is missing the required class :Ancestor, which is expected for the hasFather property of Philipp_Albrecht_of_Württemberg.",\n      "instruction": "AssignClass(node=\'Albrecht_of_Württemberg\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The value node Peter_Ferdinand_of_Tuscany is missing the required class :Ancestor, which is expected for the hasFather property of Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria.",\n      "instruction": "AssignClass(node=\'Peter_Ferdinand_of_Tuscany\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The value node Margarete_Sophie_of_Austria is missing the required class :Ancestor, which is expected for the hasMother property of Philipp_Albrecht_of_Württemberg.",\n      "instruction": "AssignClass(node=\'Margarete_Sophie_of_Austria\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The value node Maria_Cristina_of_Bourbon-Two_Sicilies is missing the required class :Ancestor, which is expected for the hasMother property of Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria.",\n      "instruction": "AssignClass(node=\'Maria_Cristina_of_Bourbon-Two_Sicilies\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The value node Peter_Ferdinand_of_Tuscany is missing the required class :Ancestor, which is expected for the hasFather property of Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria.",\n      "instruction": "AssignClass(node=\'Peter_Ferdinand_of_Tuscany\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The value node Maria_Cristina_of_Bourbon-Two_Sicilies is missing the required class :Ancestor, which is expected for the hasMother property of Rosa_Maria_Antonie_Roberta_Josepha_Anna_Walburga_Carmela_Ignazia_Rita_de_Cascia_of_Austria.",\n      "instruction": "AssignClass(node=\'Maria_Cristina_of_Bourbon-Two_Sicilies\', class=\':Ancestor\')"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHstDz8qAlSu/xL/0fIlWPQIg/GRk5tyaTCq8+Mr2IxnbH12oEhlvooWku51I4'}}]

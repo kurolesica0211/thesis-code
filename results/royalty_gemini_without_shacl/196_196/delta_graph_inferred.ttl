@@ -1,0 +1,215 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Maria_Pia_of_the_Two_Sicilies a :Person,
+        :Woman ;
+    :hasRelation data:Maria_Pia_of_the_Two_Sicilies ;
+    :hasSister data:Maria_Pia_of_the_Two_Sicilies ;
+    :isBloodrelationOf data:Maria_Pia_of_the_Two_Sicilies ;
+    :isSiblingOf data:Maria_Pia_of_the_Two_Sicilies ;
+    :isSisterOf data:Maria_Pia_of_the_Two_Sicilies .
+
+data:Robert_I_Duke_of_Parma a :Man,
+        :Person ;
+    :hasBrother data:Robert_I_Duke_of_Parma ;
+    :hasRelation data:Robert_I_Duke_of_Parma ;
+    :isBloodrelationOf data:Robert_I_Duke_of_Parma ;
+    :isBrotherOf data:Robert_I_Duke_of_Parma ;
+    :isSiblingOf data:Robert_I_Duke_of_Parma .
+
+data:Francis_II_of_the_Two_Sicilies a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Count_of_Caserta,
+        data:Francis_II_of_the_Two_Sicilies ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Antonietta_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Francis_II_of_the_Two_Sicilies,
+        data:Gaston_of_Orl%C3%A9ans_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Luiz_of_Orl%C3%A9ans-Braganza,
+        data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Alfonso_Count_of_Caserta,
+        data:Francis_II_of_the_Two_Sicilies ;
+    :isBrotherOf data:Alfonso_Count_of_Caserta,
+        data:Francis_II_of_the_Two_Sicilies ;
+    :isSiblingOf data:Alfonso_Count_of_Caserta,
+        data:Francis_II_of_the_Two_Sicilies ;
+    :isUncleOf data:Maria_di_Grazia_of_Bourbon-Two_Sicilies .
+
+data:Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Antonietta_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Francis_II_of_the_Two_Sicilies,
+        data:Gaston_of_Orl%C3%A9ans_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Luiz_of_Orl%C3%A9ans-Braganza,
+        data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Antonietta_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Antonietta_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Gaston_of_Orl%C3%A9ans_Count_of_Eu a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Gaston_of_Orl%C3%A9ans_Count_of_Eu ;
+    :hasChild data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Antonietta_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Francis_II_of_the_Two_Sicilies,
+        data:Gaston_of_Orl%C3%A9ans_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Luiz_of_Orl%C3%A9ans-Braganza,
+        data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isBloodrelationOf data:Gaston_of_Orl%C3%A9ans_Count_of_Eu ;
+    :isBrotherOf data:Gaston_of_Orl%C3%A9ans_Count_of_Eu ;
+    :isFatherOf data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isParentOf data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Gaston_of_Orl%C3%A9ans_Count_of_Eu ;
+    :isUncleOf data:Luiz_of_Orl%C3%A9ans-Braganza .
+
+data:Isabel_Princess_Imperial_of_Brazil a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Antonietta_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Francis_II_of_the_Two_Sicilies,
+        data:Gaston_of_Orl%C3%A9ans_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Luiz_of_Orl%C3%A9ans-Braganza,
+        data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasSon data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isAuntOf data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isBloodrelationOf data:Isabel_Princess_Imperial_of_Brazil ;
+    :isMotherOf data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isParentOf data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Isabel_Princess_Imperial_of_Brazil ;
+    :isSisterOf data:Isabel_Princess_Imperial_of_Brazil .
+
+data:Ferdinand_II_of_the_Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ferdinand_II_of_the_Two_Sicilies ;
+    :hasChild data:Alfonso_Count_of_Caserta ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Antonietta_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Francis_II_of_the_Two_Sicilies,
+        data:Gaston_of_Orl%C3%A9ans_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Luiz_of_Orl%C3%A9ans-Braganza,
+        data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Alfonso_Count_of_Caserta ;
+    :isAncestorOf data:Alfonso_Count_of_Caserta,
+        data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Ferdinand_II_of_the_Two_Sicilies ;
+    :isBrotherOf data:Ferdinand_II_of_the_Two_Sicilies ;
+    :isFatherOf data:Alfonso_Count_of_Caserta ;
+    :isParentOf data:Alfonso_Count_of_Caserta ;
+    :isSiblingOf data:Ferdinand_II_of_the_Two_Sicilies ;
+    :isUncleOf data:Alfonso_Count_of_Caserta .
+
+data:Luiz_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasAncestor data:Gaston_of_Orl%C3%A9ans_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasBrother data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :hasFather data:Gaston_of_Orl%C3%A9ans_Count_of_Eu ;
+    :hasMother data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasParent data:Gaston_of_Orl%C3%A9ans_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Antonietta_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Francis_II_of_the_Two_Sicilies,
+        data:Gaston_of_Orl%C3%A9ans_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Luiz_of_Orl%C3%A9ans-Braganza,
+        data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isBrotherOf data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isChildOf data:Gaston_of_Orl%C3%A9ans_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil ;
+    :isSiblingOf data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isSonOf data:Gaston_of_Orl%C3%A9ans_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil .
+
+data:Maria_di_Grazia_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_Count_of_Caserta,
+        data:Antonietta_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_II_of_the_Two_Sicilies ;
+    :hasBirthYear 1878 ;
+    :hasDeathYear 1973 ;
+    :hasFather data:Alfonso_Count_of_Caserta ;
+    :hasMarriageYear 1908 ;
+    :hasMother data:Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Alfonso_Count_of_Caserta,
+        data:Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Antonietta_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Francis_II_of_the_Two_Sicilies,
+        data:Gaston_of_Orl%C3%A9ans_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Luiz_of_Orl%C3%A9ans-Braganza,
+        data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Alfonso_Count_of_Caserta,
+        data:Antonietta_of_Bourbon-Two_Sicilies ;
+    :isDaughterOf data:Alfonso_Count_of_Caserta,
+        data:Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :knownAs "Maria Pia"^^xsd:string .
+
+data:Alfonso_Count_of_Caserta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Ferdinand_II_of_the_Two_Sicilies ;
+    :hasBrother data:Alfonso_Count_of_Caserta,
+        data:Francis_II_of_the_Two_Sicilies ;
+    :hasChild data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Ferdinand_II_of_the_Two_Sicilies ;
+    :hasParent data:Ferdinand_II_of_the_Two_Sicilies ;
+    :hasRelation data:Alfonso_Count_of_Caserta,
+        data:Antonietta_of_Bourbon-Two_Sicilies,
+        data:Ferdinand_II_of_the_Two_Sicilies,
+        data:Francis_II_of_the_Two_Sicilies,
+        data:Gaston_of_Orl%C3%A9ans_Count_of_Eu,
+        data:Isabel_Princess_Imperial_of_Brazil,
+        data:Luiz_of_Orl%C3%A9ans-Braganza,
+        data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Alfonso_Count_of_Caserta,
+        data:Francis_II_of_the_Two_Sicilies ;
+    :isBrotherOf data:Alfonso_Count_of_Caserta,
+        data:Francis_II_of_the_Two_Sicilies ;
+    :isChildOf data:Ferdinand_II_of_the_Two_Sicilies ;
+    :isFatherOf data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Maria_di_Grazia_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Alfonso_Count_of_Caserta,
+        data:Francis_II_of_the_Two_Sicilies ;
+    :isSonOf data:Ferdinand_II_of_the_Two_Sicilies ;
+    :isUncleOf data:Maria_di_Grazia_of_Bourbon-Two_Sicilies .
+

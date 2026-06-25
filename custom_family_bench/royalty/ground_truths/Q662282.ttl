@@ -7,71 +7,81 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:James_Ogilvy a :Person ;
+    rdfs:label "James Ogilvy" ;
+    data:posIndicesFull "0:25",
+        "302:327" ;
+    data:posIndicesPart "1004:1010",
+        "1061:1067",
+        "1128:1134",
+        "557:563",
+        "814:820",
+        "914:920" ;
+    data:wdtLink wdt:Q662282 ;
+    :alsoKnownAs "James Robert Bruce Ogilvy" ;
+    :hasParent data:Angus_Ogilvy ;
+    :hasSex data:male .
+
+data:Marina_Ogilvy a :Person ;
+    rdfs:label "Marina Ogilvy" ;
+    data:posIndicesFull "1534:1547" ;
+    data:wdtLink wdt:Q3312290 ;
+    :alsoKnownAs "Marina Victoria Alexandra Mowatt",
+        "Marina Victoria Alexandra Ogilvy" ;
+    :hasParent data:Angus_Ogilvy ;
+    :hasSex data:female .
+
+data:Prince_Edward-_Duke_of_Kent a :Person ;
+    rdfs:label "Prince Edward, Duke of Kent" ;
+    data:posIndicesFull "1240:1252",
+        "491:504",
+        "734:747",
+        "886:899",
+        "925:938",
+        "932:943" ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent",
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
+        "Edward Kent",
+        "His Royal Highness The Duke of Kent",
+        "Prince Edward",
+        "Prince Edward of Kent",
+        "The Duke of Kent" ;
+    :hasParent data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Edward_VIII a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Edward VIII" ;
-    data:posIndicesFull "491:504",
-        "734:747",
-        "886:899",
-        "925:938" ;
-    data:wdtLink wdt:Q590227 ;
-    :alsoKnownAs "David Windsor",
-        "Duke of Windsor",
-        "Edward Albert Christian George Andrew Patrick David",
-        "Edward Albert Christian George Andrew Patrick David Windsor",
-        "Edward VIII Edward VIII of the United Kingdom",
-        "Edward VIII Edward VIII, King of the United Kingdom",
-        "Edward VIII of the United Kingdom",
-        "Edward Windsor",
-        "Edward, Duke of Windsor",
-        "Edward, Prince of Wales",
-        "King Edward VIII",
-        "Prince Edward",
-        "Prince Edward, Duke of Windsor" ;
-    :hasBrother data:Prince_George-_Duke_of_Kent ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_George-_Duke_of_Kent ;
-    :isSiblingOf data:Prince_George-_Duke_of_Kent ;
-    :isUncleOf data:Prince_Edward-_Duke_of_Kent .
+data:George_V a :Person ;
+    rdfs:label "George V" ;
+    data:posIndicesFull "1272:1285",
+        "1277:1285" ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert",
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
+        "George Frederick Ernest Albert Windsor",
+        "George Saxe-Coburg-Gotha",
+        "George V (King of Great Britain)",
+        "George V of the United Kingdom",
+        "George Windsor",
+        "King George V" ;
+    :hasSex data:male .
 
-data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Marina of Greece and Denmark" ;
-    data:posIndicesFull "1291:1328" ;
-    data:posIndicesPart "1330:1338",
-        "1339:1345",
-        "1385:1391",
-        "1396:1403",
-        "1467:1475",
-        "1488:1494",
-        "1499:1506" ;
-    data:wdtLink wdt:Q170184 ;
-    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent",
-        "Princess Marina of Greece and Denmark, The Duchess of Kent",
-        "Princess Marina, The Duchess Of Kent" ;
-    :hasChild data:Prince_Edward-_Duke_of_Kent ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Edward-_Duke_of_Kent ;
-    :isMotherOf data:Prince_Edward-_Duke_of_Kent ;
-    :isParentOf data:Prince_Edward-_Duke_of_Kent .
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person ;
+    rdfs:label "Grand Duchess Elena Vladimirovna of Russia" ;
+    data:posIndicesFull "1408:1450" ;
+    data:wdtLink wdt:Q232483 ;
+    :hasSex data:female .
 
-data:Prince_George-_Duke_of_Kent a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_George-_Duke_of_Kent a :Person ;
     rdfs:label "Prince George, Duke of Kent" ;
     data:posIndicesFull "1225:1252",
         "1232:1252" ;
-    data:posIndicesPart "1366:1372" ;
     data:wdtLink wdt:Q160770 ;
     :alsoKnownAs "George Edward Alexander Edmund of Wales",
         "George Edward Alexander Edmund, Duke of Kent",
@@ -85,19 +95,31 @@ data:Prince_George-_Duke_of_Kent a :Ancestor,
         "The Prince George Edward Alexander Edmund, Duke of Kent",
         "The Prince George of the United Kingdom",
         "The Prince George, Duke of Kent" ;
-    :hasBrother data:Edward_VIII ;
-    :hasChild data:Prince_Edward-_Duke_of_Kent ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Edward-_Duke_of_Kent ;
-    :isBrotherOf data:Edward_VIII ;
-    :isFatherOf data:Prince_Edward-_Duke_of_Kent ;
-    :isParentOf data:Prince_Edward-_Duke_of_Kent ;
-    :isSiblingOf data:Edward_VIII .
+    :hasParent data:George_V ;
+    :hasSex data:male .
 
-data:Angus_Ogilvy a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Nicholas_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Nicholas of Greece and Denmark" ;
+    data:posIndicesFull "1366:1403",
+        "1467:1506" ;
+    data:wdtLink wdt:Q170160 ;
+    :alsoKnownAs "Prince Nikolaos of Greece and Denmark" ;
+    :hasSex data:male .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Marina of Greece and Denmark" ;
+    data:posIndicesFull "1291:1328" ;
+    data:posIndicesPart "1330:1338",
+        "1339:1345" ;
+    data:wdtLink wdt:Q170184 ;
+    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent",
+        "Princess Marina of Greece and Denmark, The Duchess of Kent",
+        "Princess Marina, The Duchess Of Kent" ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:Angus_Ogilvy a :Person ;
     rdfs:label "Angus Ogilvy" ;
     data:posIndicesFull "261:277",
         "265:277" ;
@@ -117,86 +139,9 @@ data:Angus_Ogilvy a :Ancestor,
         "Rt. Hon. Sir Angus Ogilvy",
         "Sir Angus James Bruce Ogilvy",
         "Sir Angus Ogilvy" ;
-    :hasChild data:James_Ogilvy,
-        data:Marina_Ogilvy ;
-    :hasDaughter data:Marina_Ogilvy ;
-    :hasSex data:male ;
-    :hasSon data:James_Ogilvy ;
-    :isFatherOf data:James_Ogilvy,
-        data:Marina_Ogilvy ;
-    :isParentOf data:James_Ogilvy,
-        data:Marina_Ogilvy .
+    :hasSex data:male .
 
-data:James_Ogilvy a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "James Ogilvy" ;
-    data:posIndicesFull "0:25",
-        "302:327" ;
-    data:posIndicesPart "1004:1010",
-        "1061:1067",
-        "1128:1134",
-        "557:563",
-        "814:820",
-        "914:920" ;
-    data:wdtLink wdt:Q662282 ;
-    :alsoKnownAs "James Robert Bruce Ogilvy" ;
-    :hasFather data:Angus_Ogilvy ;
-    :hasParent data:Angus_Ogilvy ;
-    :hasSex data:male ;
-    :hasSister data:Marina_Ogilvy ;
-    :isBrotherOf data:Marina_Ogilvy ;
-    :isChildOf data:Angus_Ogilvy ;
-    :isSiblingOf data:Marina_Ogilvy ;
-    :isSonOf data:Angus_Ogilvy .
+data:female a :Female .
 
-data:Marina_Ogilvy a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Marina Ogilvy" ;
-    data:posIndicesFull "1534:1547" ;
-    data:wdtLink wdt:Q3312290 ;
-    :alsoKnownAs "Marina Victoria Alexandra Mowatt",
-        "Marina Victoria Alexandra Ogilvy" ;
-    :hasBrother data:James_Ogilvy ;
-    :hasFather data:Angus_Ogilvy ;
-    :hasParent data:Angus_Ogilvy ;
-    :hasSex data:female ;
-    :isChildOf data:Angus_Ogilvy ;
-    :isDaughterOf data:Angus_Ogilvy ;
-    :isSiblingOf data:James_Ogilvy ;
-    :isSisterOf data:James_Ogilvy .
-
-data:Prince_Edward-_Duke_of_Kent a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Edward, Duke of Kent" ;
-    data:posIndicesFull "1240:1252",
-        "491:504",
-        "734:747",
-        "886:899",
-        "925:938",
-        "932:943" ;
-    data:posIndicesPart "1366:1372" ;
-    data:wdtLink wdt:Q158258 ;
-    :alsoKnownAs "Duke of Kent",
-        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
-        "Edward Kent",
-        "His Royal Highness The Duke of Kent",
-        "Prince Edward",
-        "Prince Edward of Kent",
-        "The Duke of Kent" ;
-    :hasFather data:Prince_George-_Duke_of_Kent ;
-    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasParent data:Prince_George-_Duke_of_Kent,
-        data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_George-_Duke_of_Kent,
-        data:Princess_Marina_of_Greece_and_Denmark ;
-    :isSonOf data:Prince_George-_Duke_of_Kent,
-        data:Princess_Marina_of_Greece_and_Denmark ;
-    :isUncleOf data:James_Ogilvy,
-        data:Marina_Ogilvy .
+data:male a :Male .
 

@@ -1,0 +1,144 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Richard a :Man,
+        :Person ;
+    :hasBrother data:Prince_Richard,
+        data:Prince_William_of_Gloucester ;
+    :hasRelation data:George_V,
+        data:Prince_Henry_Duke_of_Gloucester,
+        data:Prince_Richard,
+        data:Prince_William_of_Gloucester,
+        data:Princess_Alice_Duchess_of_Gloucester,
+        data:Queen_Mary ;
+    :isBloodrelationOf data:Prince_Richard,
+        data:Prince_William_of_Gloucester ;
+    :isBrotherOf data:Prince_Richard,
+        data:Prince_William_of_Gloucester ;
+    :isSiblingOf data:Prince_Richard,
+        data:Prince_William_of_Gloucester .
+
+data:Princess_Alice_Duchess_of_Gloucester a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_William_of_Gloucester ;
+    :hasRelation data:George_V,
+        data:Prince_Henry_Duke_of_Gloucester,
+        data:Prince_Richard,
+        data:Prince_William_of_Gloucester,
+        data:Princess_Alice_Duchess_of_Gloucester,
+        data:Queen_Mary ;
+    :hasSister data:Princess_Alice_Duchess_of_Gloucester ;
+    :hasSon data:Prince_William_of_Gloucester ;
+    :isAncestorOf data:Prince_William_of_Gloucester ;
+    :isAuntOf data:Prince_William_of_Gloucester ;
+    :isBloodrelationOf data:Princess_Alice_Duchess_of_Gloucester ;
+    :isMotherOf data:Prince_William_of_Gloucester ;
+    :isParentOf data:Prince_William_of_Gloucester ;
+    :isSiblingOf data:Princess_Alice_Duchess_of_Gloucester ;
+    :isSisterOf data:Princess_Alice_Duchess_of_Gloucester .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_V ;
+    :hasChild data:Prince_Henry_Duke_of_Gloucester ;
+    :hasRelation data:George_V,
+        data:Prince_Henry_Duke_of_Gloucester,
+        data:Prince_Richard,
+        data:Prince_William_of_Gloucester,
+        data:Princess_Alice_Duchess_of_Gloucester,
+        data:Queen_Mary ;
+    :hasSon data:Prince_Henry_Duke_of_Gloucester ;
+    :isAncestorOf data:Prince_Henry_Duke_of_Gloucester,
+        data:Prince_William_of_Gloucester ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isFatherOf data:Prince_Henry_Duke_of_Gloucester ;
+    :isParentOf data:Prince_Henry_Duke_of_Gloucester ;
+    :isSiblingOf data:George_V ;
+    :isUncleOf data:Prince_Henry_Duke_of_Gloucester .
+
+data:Queen_Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Henry_Duke_of_Gloucester ;
+    :hasRelation data:George_V,
+        data:Prince_Henry_Duke_of_Gloucester,
+        data:Prince_Richard,
+        data:Prince_William_of_Gloucester,
+        data:Princess_Alice_Duchess_of_Gloucester,
+        data:Queen_Mary ;
+    :hasSister data:Queen_Mary ;
+    :hasSon data:Prince_Henry_Duke_of_Gloucester ;
+    :isAncestorOf data:Prince_Henry_Duke_of_Gloucester,
+        data:Prince_William_of_Gloucester ;
+    :isAuntOf data:Prince_Henry_Duke_of_Gloucester ;
+    :isBloodrelationOf data:Queen_Mary ;
+    :isMotherOf data:Prince_Henry_Duke_of_Gloucester ;
+    :isParentOf data:Prince_Henry_Duke_of_Gloucester ;
+    :isSiblingOf data:Queen_Mary ;
+    :isSisterOf data:Queen_Mary .
+
+data:Prince_Henry_Duke_of_Gloucester a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_V,
+        data:Queen_Mary ;
+    :hasBrother data:Prince_Henry_Duke_of_Gloucester ;
+    :hasChild data:Prince_William_of_Gloucester ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary ;
+    :hasParent data:George_V,
+        data:Queen_Mary ;
+    :hasRelation data:George_V,
+        data:Prince_Henry_Duke_of_Gloucester,
+        data:Prince_Richard,
+        data:Prince_William_of_Gloucester,
+        data:Princess_Alice_Duchess_of_Gloucester,
+        data:Queen_Mary ;
+    :hasSon data:Prince_William_of_Gloucester ;
+    :isAncestorOf data:Prince_William_of_Gloucester ;
+    :isBloodrelationOf data:Prince_Henry_Duke_of_Gloucester ;
+    :isBrotherOf data:Prince_Henry_Duke_of_Gloucester ;
+    :isChildOf data:George_V,
+        data:Queen_Mary ;
+    :isFatherOf data:Prince_William_of_Gloucester ;
+    :isParentOf data:Prince_William_of_Gloucester ;
+    :isSiblingOf data:Prince_Henry_Duke_of_Gloucester ;
+    :isSonOf data:George_V,
+        data:Queen_Mary ;
+    :isUncleOf data:Prince_William_of_Gloucester .
+
+data:Prince_William_of_Gloucester a :Man,
+        :Person ;
+    :hasAncestor data:George_V,
+        data:Prince_Henry_Duke_of_Gloucester,
+        data:Princess_Alice_Duchess_of_Gloucester,
+        data:Queen_Mary ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:Prince_Richard,
+        data:Prince_William_of_Gloucester ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Prince_Henry_Duke_of_Gloucester ;
+    :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
+    :hasParent data:Prince_Henry_Duke_of_Gloucester,
+        data:Princess_Alice_Duchess_of_Gloucester ;
+    :hasRelation data:George_V,
+        data:Prince_Henry_Duke_of_Gloucester,
+        data:Prince_Richard,
+        data:Prince_William_of_Gloucester,
+        data:Princess_Alice_Duchess_of_Gloucester,
+        data:Queen_Mary ;
+    :isBloodrelationOf data:Prince_Richard,
+        data:Prince_William_of_Gloucester ;
+    :isBrotherOf data:Prince_Richard,
+        data:Prince_William_of_Gloucester ;
+    :isChildOf data:Prince_Henry_Duke_of_Gloucester,
+        data:Princess_Alice_Duchess_of_Gloucester ;
+    :isSiblingOf data:Prince_Richard,
+        data:Prince_William_of_Gloucester ;
+    :isSonOf data:Prince_Henry_Duke_of_Gloucester,
+        data:Princess_Alice_Duchess_of_Gloucester .
+

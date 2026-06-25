@@ -1,0 +1,252 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:BernhardIII a :Ancestor,
+        :Man ;
+    :hasBrother data:BernhardIII ;
+    :hasChild data:FeodoraOfSaxeMeiningen ;
+    :hasDaughter data:FeodoraOfSaxeMeiningen ;
+    :hasRelation data:BernhardIII,
+        data:CharlotteOfPrussia,
+        data:FeodoraOfSaxeMeiningen,
+        data:FrederickIIIOfPrussia,
+        data:PrinceAlbert,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal,
+        data:WilhelmII ;
+    :hasSex data:Male ;
+    :isAncestorOf data:FeodoraOfSaxeMeiningen ;
+    :isBloodrelationOf data:BernhardIII ;
+    :isBrotherOf data:BernhardIII ;
+    :isFatherOf data:FeodoraOfSaxeMeiningen ;
+    :isParentOf data:FeodoraOfSaxeMeiningen ;
+    :isSiblingOf data:BernhardIII ;
+    :isUncleOf data:FeodoraOfSaxeMeiningen .
+
+data:PrinceAlbert a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceAlbert ;
+    :hasChild data:VictoriaPrincessRoyal ;
+    :hasDaughter data:VictoriaPrincessRoyal ;
+    :hasRelation data:BernhardIII,
+        data:CharlotteOfPrussia,
+        data:FeodoraOfSaxeMeiningen,
+        data:FrederickIIIOfPrussia,
+        data:PrinceAlbert,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal,
+        data:WilhelmII ;
+    :hasSex data:Male ;
+    :isAncestorOf data:CharlotteOfPrussia,
+        data:FeodoraOfSaxeMeiningen,
+        data:VictoriaPrincessRoyal,
+        data:WilhelmII ;
+    :isBloodrelationOf data:PrinceAlbert ;
+    :isBrotherOf data:PrinceAlbert ;
+    :isFatherOf data:VictoriaPrincessRoyal ;
+    :isParentOf data:VictoriaPrincessRoyal ;
+    :isSiblingOf data:PrinceAlbert ;
+    :isUncleOf data:VictoriaPrincessRoyal .
+
+data:QueenVictoria a :Ancestor,
+        :Woman ;
+    :hasChild data:VictoriaPrincessRoyal ;
+    :hasDaughter data:VictoriaPrincessRoyal ;
+    :hasRelation data:BernhardIII,
+        data:CharlotteOfPrussia,
+        data:FeodoraOfSaxeMeiningen,
+        data:FrederickIIIOfPrussia,
+        data:PrinceAlbert,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal,
+        data:WilhelmII ;
+    :hasSex data:Female ;
+    :hasSister data:QueenVictoria ;
+    :isAncestorOf data:CharlotteOfPrussia,
+        data:FeodoraOfSaxeMeiningen,
+        data:VictoriaPrincessRoyal,
+        data:WilhelmII ;
+    :isAuntOf data:VictoriaPrincessRoyal ;
+    :isBloodrelationOf data:QueenVictoria ;
+    :isMotherOf data:VictoriaPrincessRoyal ;
+    :isParentOf data:VictoriaPrincessRoyal ;
+    :isSiblingOf data:QueenVictoria ;
+    :isSisterOf data:QueenVictoria .
+
+data:FrederickIIIOfPrussia a :Ancestor,
+        :Man ;
+    :hasBrother data:FrederickIIIOfPrussia ;
+    :hasChild data:CharlotteOfPrussia,
+        data:WilhelmII ;
+    :hasDaughter data:CharlotteOfPrussia ;
+    :hasRelation data:BernhardIII,
+        data:CharlotteOfPrussia,
+        data:FeodoraOfSaxeMeiningen,
+        data:FrederickIIIOfPrussia,
+        data:PrinceAlbert,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal,
+        data:WilhelmII ;
+    :hasSex data:Male ;
+    :hasSon data:WilhelmII ;
+    :isAncestorOf data:CharlotteOfPrussia,
+        data:FeodoraOfSaxeMeiningen,
+        data:WilhelmII ;
+    :isBloodrelationOf data:FrederickIIIOfPrussia ;
+    :isBrotherOf data:FrederickIIIOfPrussia ;
+    :isFatherOf data:CharlotteOfPrussia,
+        data:WilhelmII ;
+    :isParentOf data:CharlotteOfPrussia,
+        data:WilhelmII ;
+    :isSiblingOf data:FrederickIIIOfPrussia ;
+    :isUncleOf data:CharlotteOfPrussia,
+        data:WilhelmII .
+
+data:FeodoraOfSaxeMeiningen a :Woman ;
+    :hasAncestor data:BernhardIII,
+        data:CharlotteOfPrussia,
+        data:FrederickIIIOfPrussia,
+        data:PrinceAlbert,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal ;
+    :hasFather data:BernhardIII ;
+    :hasMother data:CharlotteOfPrussia ;
+    :hasParent data:BernhardIII,
+        data:CharlotteOfPrussia ;
+    :hasRelation data:BernhardIII,
+        data:CharlotteOfPrussia,
+        data:FeodoraOfSaxeMeiningen,
+        data:FrederickIIIOfPrussia,
+        data:PrinceAlbert,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal,
+        data:WilhelmII ;
+    :hasSex data:Female ;
+    :hasSister data:FeodoraOfSaxeMeiningen ;
+    :isBloodrelationOf data:FeodoraOfSaxeMeiningen ;
+    :isChildOf data:BernhardIII,
+        data:CharlotteOfPrussia ;
+    :isDaughterOf data:BernhardIII,
+        data:CharlotteOfPrussia ;
+    :isSiblingOf data:FeodoraOfSaxeMeiningen ;
+    :isSisterOf data:FeodoraOfSaxeMeiningen .
+
+data:WilhelmII a :Man ;
+    :hasAncestor data:FrederickIIIOfPrussia,
+        data:PrinceAlbert,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal ;
+    :hasBrother data:WilhelmII ;
+    :hasFather data:FrederickIIIOfPrussia ;
+    :hasMother data:VictoriaPrincessRoyal ;
+    :hasParent data:FrederickIIIOfPrussia,
+        data:VictoriaPrincessRoyal ;
+    :hasRelation data:BernhardIII,
+        data:CharlotteOfPrussia,
+        data:FeodoraOfSaxeMeiningen,
+        data:FrederickIIIOfPrussia,
+        data:PrinceAlbert,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal,
+        data:WilhelmII ;
+    :hasSex data:Male ;
+    :hasSister data:CharlotteOfPrussia ;
+    :isBloodrelationOf data:CharlotteOfPrussia,
+        data:WilhelmII ;
+    :isBrotherOf data:CharlotteOfPrussia,
+        data:WilhelmII ;
+    :isChildOf data:FrederickIIIOfPrussia,
+        data:VictoriaPrincessRoyal ;
+    :isSiblingOf data:CharlotteOfPrussia,
+        data:WilhelmII ;
+    :isSonOf data:FrederickIIIOfPrussia,
+        data:VictoriaPrincessRoyal ;
+    :isUncleOf data:FeodoraOfSaxeMeiningen .
+
+data:CharlotteOfPrussia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:FrederickIIIOfPrussia,
+        data:PrinceAlbert,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal ;
+    :hasBirthYear 1860 ;
+    :hasBrother data:WilhelmII ;
+    :hasChild data:FeodoraOfSaxeMeiningen ;
+    :hasDaughter data:FeodoraOfSaxeMeiningen ;
+    :hasDeathYear 1919 ;
+    :hasFather data:FrederickIIIOfPrussia ;
+    :hasMarriageYear 1878 ;
+    :hasMother data:VictoriaPrincessRoyal ;
+    :hasParent data:FrederickIIIOfPrussia,
+        data:VictoriaPrincessRoyal ;
+    :hasRelation data:BernhardIII,
+        data:CharlotteOfPrussia,
+        data:FeodoraOfSaxeMeiningen,
+        data:FrederickIIIOfPrussia,
+        data:PrinceAlbert,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal,
+        data:WilhelmII ;
+    :hasSex data:Female ;
+    :hasSister data:CharlotteOfPrussia ;
+    :isAncestorOf data:FeodoraOfSaxeMeiningen ;
+    :isAuntOf data:FeodoraOfSaxeMeiningen ;
+    :isBloodrelationOf data:CharlotteOfPrussia,
+        data:WilhelmII ;
+    :isChildOf data:FrederickIIIOfPrussia,
+        data:VictoriaPrincessRoyal ;
+    :isDaughterOf data:FrederickIIIOfPrussia,
+        data:VictoriaPrincessRoyal ;
+    :isMotherOf data:FeodoraOfSaxeMeiningen ;
+    :isParentOf data:FeodoraOfSaxeMeiningen ;
+    :isSiblingOf data:CharlotteOfPrussia,
+        data:WilhelmII ;
+    :isSisterOf data:CharlotteOfPrussia,
+        data:WilhelmII .
+
+data:VictoriaPrincessRoyal a :Ancestor,
+        :Woman ;
+    :hasAncestor data:PrinceAlbert,
+        data:QueenVictoria ;
+    :hasChild data:CharlotteOfPrussia,
+        data:WilhelmII ;
+    :hasDaughter data:CharlotteOfPrussia ;
+    :hasFather data:PrinceAlbert ;
+    :hasMother data:QueenVictoria ;
+    :hasParent data:PrinceAlbert,
+        data:QueenVictoria ;
+    :hasRelation data:BernhardIII,
+        data:CharlotteOfPrussia,
+        data:FeodoraOfSaxeMeiningen,
+        data:FrederickIIIOfPrussia,
+        data:PrinceAlbert,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal,
+        data:WilhelmII ;
+    :hasSex data:Female ;
+    :hasSister data:VictoriaPrincessRoyal ;
+    :hasSon data:WilhelmII ;
+    :isAncestorOf data:CharlotteOfPrussia,
+        data:FeodoraOfSaxeMeiningen,
+        data:WilhelmII ;
+    :isAuntOf data:CharlotteOfPrussia,
+        data:WilhelmII ;
+    :isBloodrelationOf data:VictoriaPrincessRoyal ;
+    :isChildOf data:PrinceAlbert,
+        data:QueenVictoria ;
+    :isDaughterOf data:PrinceAlbert,
+        data:QueenVictoria ;
+    :isMotherOf data:CharlotteOfPrussia,
+        data:WilhelmII ;
+    :isParentOf data:CharlotteOfPrussia,
+        data:WilhelmII ;
+    :isSiblingOf data:VictoriaPrincessRoyal ;
+    :isSisterOf data:VictoriaPrincessRoyal .
+

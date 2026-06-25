@@ -1,0 +1,399 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Diana-_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Diana, Princess of Wales"^^xsd:string ;
+    data:posIndicesFull "244:249"^^xsd:string,
+        "244:268"^^xsd:string ;
+    data:posIndicesPart "1303:1308"^^xsd:string,
+        "723:731"^^xsd:string ;
+    data:wdtLink wdt:Q9685 ;
+    :alsoKnownAs "Diana"^^xsd:string,
+        "Diana Frances Spencer"^^xsd:string,
+        "Diana Princess of Wales"^^xsd:string,
+        "Diana Spencer"^^xsd:string,
+        "Lady Di"^^xsd:string,
+        "Lady Diana Frances Spencer"^^xsd:string,
+        "Lady Diana Spencer"^^xsd:string,
+        "Princess Di"^^xsd:string,
+        "Princess Diana"^^xsd:string,
+        "The People's Princess"^^xsd:string,
+        "The Princess of Wales"^^xsd:string ;
+    :hasChild data:William-_Prince_of_Wales ;
+    :hasRelation data:Catherine-_Princess_of_Wales,
+        data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Diana-_Princess_of_Wales ;
+    :hasSon data:William-_Prince_of_Wales ;
+    :isAncestorOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :isAuntOf data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:Diana-_Princess_of_Wales ;
+    :isMotherOf data:William-_Prince_of_Wales ;
+    :isParentOf data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Diana-_Princess_of_Wales ;
+    :isSisterOf data:Diana-_Princess_of_Wales .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "2338:2350"^^xsd:string,
+        "369:387"^^xsd:string,
+        "375:387"^^xsd:string,
+        "564:582"^^xsd:string,
+        "570:582"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasChild data:Charles_III ;
+    :hasRelation data:Catherine-_Princess_of_Wales,
+        data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :hasSon data:Charles_III ;
+    :isAncestorOf data:Charles_III,
+        data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :isAuntOf data:Charles_III ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isMotherOf data:Charles_III ;
+    :isParentOf data:Charles_III ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Catherine-_Princess_of_Wales a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Catherine, Princess of Wales"^^xsd:string ;
+    data:posIndicesFull "164:192"^^xsd:string ;
+    data:posIndicesPart "1303:1308"^^xsd:string,
+        "629:638"^^xsd:string,
+        "723:731"^^xsd:string ;
+    data:wdtLink wdt:Q10479 ;
+    :alsoKnownAs "Catherine Elizabeth Middleton"^^xsd:string,
+        "Catherine Elizabeth, Duchess of Cambridge"^^xsd:string,
+        "Catherine Elizabeth, Duchess of Cornwall and Cambridge"^^xsd:string,
+        "Catherine Elizabeth, Princess of Wales"^^xsd:string,
+        "Catherine Middleton"^^xsd:string,
+        "Catherine Princess of Wales"^^xsd:string,
+        "Catherine, Duchess of Cambridge"^^xsd:string,
+        "Catherine, Duchess of Cornwall and Cambridge"^^xsd:string,
+        "Duchess Catherine"^^xsd:string,
+        "Duchess Kate"^^xsd:string,
+        "Kate Middleton"^^xsd:string,
+        "Kate Princess of Wales"^^xsd:string,
+        "Princess Catherine"^^xsd:string,
+        "Princess Kate"^^xsd:string ;
+    :hasChild data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :hasRelation data:Catherine-_Princess_of_Wales,
+        data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Catherine-_Princess_of_Wales ;
+    :hasSon data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isAncestorOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isAuntOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isBloodrelationOf data:Catherine-_Princess_of_Wales ;
+    :isMotherOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isParentOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isSiblingOf data:Catherine-_Princess_of_Wales ;
+    :isSisterOf data:Catherine-_Princess_of_Wales .
+
+data:Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Charles III"^^xsd:string ;
+    data:posIndicesFull "223:235"^^xsd:string,
+        "223:239"^^xsd:string,
+        "228:239"^^xsd:string,
+        "2419:2430"^^xsd:string ;
+    data:posIndicesPart "1114:1121"^^xsd:string ;
+    data:wdtLink wdt:Q43274 ;
+    :alsoKnownAs "C III"^^xsd:string,
+        "Charles III of England"^^xsd:string,
+        "Charles III of the United Kingdom"^^xsd:string,
+        "Charles Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George"^^xsd:string,
+        "Charles Philip Arthur George Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George Windsor"^^xsd:string,
+        "Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Charles Wales"^^xsd:string,
+        "Charles Windsor"^^xsd:string,
+        "Charles the Third"^^xsd:string,
+        "HM King Charles III"^^xsd:string,
+        "His Majesty"^^xsd:string,
+        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith"^^xsd:string,
+        "His Majesty The King"^^xsd:string,
+        "His Royal Highness Charles III of Great Britain"^^xsd:string,
+        "King Charles"^^xsd:string,
+        "King Charles III"^^xsd:string,
+        "King of England"^^xsd:string,
+        "Prince Charles"^^xsd:string,
+        "Prince Charles Philip Arthur George of Edinburgh"^^xsd:string,
+        "Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Prince Charles of Edinburgh"^^xsd:string,
+        "Prince Charles, Duke of Rothesay"^^xsd:string,
+        "Prince Charles, Prince of Wales"^^xsd:string,
+        "The Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "The Prince Charles, Prince of Wales"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II ;
+    :hasBrother data:Charles_III ;
+    :hasChild data:William-_Prince_of_Wales ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II ;
+    :hasRelation data:Catherine-_Princess_of_Wales,
+        data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSon data:William-_Prince_of_Wales ;
+    :isAncestorOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:Charles_III ;
+    :isBrotherOf data:Charles_III ;
+    :isChildOf data:Elizabeth_II ;
+    :isFatherOf data:William-_Prince_of_Wales ;
+    :isParentOf data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Charles_III ;
+    :isSonOf data:Elizabeth_II ;
+    :isUncleOf data:William-_Prince_of_Wales .
+
+data:Prince_George_of_Wales a :Man,
+        :Person ;
+    rdfs:label "Prince George of Wales"^^xsd:string ;
+    data:posIndicesFull "0:13"^^xsd:string,
+        "0:22"^^xsd:string,
+        "1915:1931"^^xsd:string,
+        "2838:2851"^^xsd:string,
+        "3258:3271"^^xsd:string,
+        "3258:3280"^^xsd:string,
+        "3265:3280"^^xsd:string,
+        "3360:3373"^^xsd:string,
+        "3360:3386"^^xsd:string,
+        "3367:3386"^^xsd:string,
+        "7:22"^^xsd:string ;
+    data:posIndicesPart "1064:1070"^^xsd:string,
+        "1123:1129"^^xsd:string,
+        "1260:1266"^^xsd:string,
+        "1303:1308"^^xsd:string,
+        "1377:1383"^^xsd:string,
+        "1580:1586"^^xsd:string,
+        "1655:1661"^^xsd:string,
+        "1766:1772"^^xsd:string,
+        "2049:2055"^^xsd:string,
+        "2145:2151"^^xsd:string,
+        "2196:2202"^^xsd:string,
+        "2397:2403"^^xsd:string,
+        "2439:2445"^^xsd:string,
+        "2494:2500"^^xsd:string,
+        "2625:2631"^^xsd:string,
+        "270:276"^^xsd:string,
+        "2979:2985"^^xsd:string,
+        "3141:3147"^^xsd:string,
+        "438:444"^^xsd:string,
+        "786:792"^^xsd:string,
+        "821:827"^^xsd:string ;
+    data:wdtLink wdt:Q13590412 ;
+    :alsoKnownAs "George Alexander Louis Mountbatten-Windsor"^^xsd:string,
+        "George Alexander Louis of Cambridge"^^xsd:string,
+        "George Alexander Louis of Cornwall and Cambridge"^^xsd:string,
+        "George Alexander Louis of Wales"^^xsd:string,
+        "George Cambridge"^^xsd:string,
+        "George Mountbatten-Windsor"^^xsd:string,
+        "George of Cambridge"^^xsd:string,
+        "George of Cornwall and Cambridge"^^xsd:string,
+        "George of Wales"^^xsd:string,
+        "Prince George"^^xsd:string,
+        "Prince George Alexander Louis"^^xsd:string,
+        "Prince George Alexander Louis of Cambridge"^^xsd:string,
+        "Prince George Alexander Louis of Cornwall and Cambridge"^^xsd:string,
+        "Prince George Alexander Louis of Wales"^^xsd:string,
+        "Prince George of Cambridge"^^xsd:string ;
+    :hasAncestor data:Catherine-_Princess_of_Wales,
+        data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:William-_Prince_of_Wales ;
+    :hasBrother data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :hasFather data:William-_Prince_of_Wales ;
+    :hasMother data:Catherine-_Princess_of_Wales ;
+    :hasParent data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasRelation data:Catherine-_Princess_of_Wales,
+        data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isBrotherOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isChildOf data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isSonOf data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales .
+
+data:Prince_Louis_of_Wales a :Man,
+        :Person ;
+    rdfs:label "Prince Louis of Wales"^^xsd:string ;
+    data:posIndicesFull "746:758"^^xsd:string ;
+    data:posIndicesPart "1303:1308"^^xsd:string,
+        "3197:3203"^^xsd:string,
+        "803:808"^^xsd:string ;
+    data:wdtLink wdt:Q38668629 ;
+    :alsoKnownAs "Louis Arthur Charles of Cambridge"^^xsd:string,
+        "Louis Arthur Charles of Cornwall and Cambridge"^^xsd:string,
+        "Louis Arthur Charles of Wales"^^xsd:string,
+        "Louis Cambridge"^^xsd:string,
+        "Louis Wales"^^xsd:string,
+        "Louis of Cambridge"^^xsd:string,
+        "Louis of Cornwall and Cambridge"^^xsd:string,
+        "Louis of Wales"^^xsd:string,
+        "Prince Louis"^^xsd:string,
+        "Prince Louis Arthur Charles of Cambridge"^^xsd:string,
+        "Prince Louis Arthur Charles of Cornwall and Cambridge"^^xsd:string,
+        "Prince Louis Arthur Charles of Wales"^^xsd:string,
+        "Prince Louis of Cambridge"^^xsd:string,
+        "Prince Louis of Cornwall and Cambridge"^^xsd:string ;
+    :hasAncestor data:Catherine-_Princess_of_Wales,
+        data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:William-_Prince_of_Wales ;
+    :hasBrother data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :hasFather data:William-_Prince_of_Wales ;
+    :hasMother data:Catherine-_Princess_of_Wales ;
+    :hasParent data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasRelation data:Catherine-_Princess_of_Wales,
+        data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isBrotherOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isChildOf data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isSonOf data:Catherine-_Princess_of_Wales,
+        data:William-_Prince_of_Wales .
+
+data:William-_Prince_of_Wales a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "William, Prince of Wales"^^xsd:string ;
+    data:posIndicesFull "1084:1091"^^xsd:string,
+        "134:141"^^xsd:string,
+        "134:158"^^xsd:string,
+        "610:624"^^xsd:string,
+        "617:624"^^xsd:string ;
+    data:posIndicesPart "1303:1308"^^xsd:string,
+        "3197:3203"^^xsd:string ;
+    data:wdtLink wdt:Q36812 ;
+    :alsoKnownAs "Bulliam"^^xsd:string,
+        "Prince William"^^xsd:string,
+        "Prince William Arthur Philip Louis of Wales"^^xsd:string,
+        "Prince William Arthur Philip Louis, Duke of Cambridge"^^xsd:string,
+        "Prince William of Wales"^^xsd:string,
+        "Prince William, Duke of Cambridge"^^xsd:string,
+        "William Arthur Philip Louis"^^xsd:string,
+        "William Arthur Philip Louis Mountbatten-Windsor"^^xsd:string,
+        "William Arthur Philip Louis, Prince of Wales"^^xsd:string,
+        "William Cambridge"^^xsd:string,
+        "William Wales"^^xsd:string,
+        "William Windsor"^^xsd:string ;
+    :hasAncestor data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II ;
+    :hasBrother data:William-_Prince_of_Wales ;
+    :hasChild data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :hasFather data:Charles_III ;
+    :hasMother data:Diana-_Princess_of_Wales ;
+    :hasParent data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :hasRelation data:Catherine-_Princess_of_Wales,
+        data:Charles_III,
+        data:Diana-_Princess_of_Wales,
+        data:Elizabeth_II,
+        data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSon data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isAncestorOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isBloodrelationOf data:William-_Prince_of_Wales ;
+    :isBrotherOf data:William-_Prince_of_Wales ;
+    :isChildOf data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :isFatherOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isParentOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales ;
+    :isSiblingOf data:William-_Prince_of_Wales ;
+    :isSonOf data:Charles_III,
+        data:Diana-_Princess_of_Wales ;
+    :isUncleOf data:Prince_George_of_Wales,
+        data:Prince_Louis_of_Wales .
+

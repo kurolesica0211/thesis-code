@@ -85,72 +85,19 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Karl von Habsburg (given name: Karl Thomas Robert Maria Franziskus Georg Bahnam; born 11 January 1961) is an Austrian politician and the head of the House of Habsburg-Lorraine, the former royal house of the defunct Austro-Hungarian thrones.
-As a citizen of the Republic of Austria, his legal name is Karl Habsburg-Lothringen.
-Karl is the son of Otto von Habsburg and Regina von Sachsen-Meiningen, and the grandson of the last Austro-Hungarian emperor, Charles I.
-Karl Habsburg served as a member of the European Parliament for the Austrian People's Party (1996–1999).
-Karl Habsburg's career has focused on the issue of protecting cultural heritage from threats such as armed conflict and natural disasters.
-Early life and background
-
-Karl Habsburg was born on 11 January 1961 in Starnberg, Bavaria.
-He was baptised in Pöcking, Bavaria, as Archduke Karl of Austria (Erzherzog Karl von Österreich), the name entered in the baptismal records.
-House of Habsburg titles and issues
-
-
-In 1961, Karl's father, Otto von Habsburg, renounced all claims to the defunct Austrian throne, as a necessary legal condition to being allowed to return to Austria.
-Karl does not use his ancestral titles, because unlike most European countries, even the unofficial use of such titles is not permitted in Hungary and Austria.
-Habsburg says: 
-
-I don't refer to titles, I'm not that vain.
-Although the Adelsaufhebungsgesetz (Law on the Abolition of the Nobility) abolished all Austrian and Hungarian noble, royal, and imperial titles in 1919, and their usage is still illegal in those countries, media elsewhere occasionally refer to Karl Habsburg by his ancestral titles of Archduke of Austria, Royal Prince of Hungary, Bohemia and Croatia.
-At the request of the USSR, which was wary of a restoration of the monarchy, the anti-Habsburg laws became mandatory international and constitutional components of the Austrian State Treaty in 1955.
-The attempt of Karl Habsburg failed because the law of expropriation still has constitutional status.
-On 1 January 2007, his father relinquished his position as the head of the House of Habsburg-Lorraine, a status which then devolved on Karl.
-As head of the House of Habsburg-Lorraine, Karl undertakes numerous commitments.
-Education
-
-Between 1982 and 1989, Habsburg studied law, philosophy, and political science at the University of Salzburg, passing his first staatsexamen in 1984; while there, he spent a year studying law and philosophy at Michigan State University in the United States.
-Career
-
-Defunct
-
-
-Military service
-
-Karl Habsburg did his military service in 1981 as a platoon commander of a Jäger (infantry) platoon as a one-year volunteer with the Austrian Armed Forces, where he later also completed his pilot training.
-Activism
-
-Since 1986, Karl Habsburg has been president of the Austrian branch of the Paneuropean Union, which co-organised the Pan-European Picnic.
-In May 1990, Habsburg personally led an aid convoy to Vilnius with food, medicine and clothing as a representative of the Paneuropean Union, in response to the Soviet Union's blockade of raw materials following the proclamation of Lithuanian independence in March 1990.
-In October 1996, Habsburg was elected as a member of the European Parliament (MEP) for Austria, representing the Austrian People's Party.
-Habsburg was a strong supporter of those who created the "No Strike List" of cultural heritage sites and cultural sites that should be preserved when attacks or flight operations were carried out.
-Habsburg particularly supports the bringing together of military and civilian personnel and the cooperation of various international organizations for the protection of cultural assets, such as the Blue Shield, UNIFIL and UNESCO deployment in Lebanon in 2019, and the cooperation with the International Committee of the Red Cross in 2020.
-After the explosion in the port of Beirut in Lebanon in summer 2020, Habsburg helped coordinate the reconstruction and aid on site.
-Personal life
-
-Habsburg has lived in Austria since 1981 and resided in Casa Austria, formerly called Villa Swoboda, in Anif, near the city of Salzburg, until 2022.
-On 31 January 1993 in Mariazell, he married Baroness Francesca Thyssen-Bornemisza (born 7 June 1958 in Lausanne), the only daughter of Baron Hans Heinrich Thyssen-Bornemisza de Kászon, a European industrialist, and his third wife, the fashion model Fiona Frances Elaine Campbell-Walter.
-The marriage received the dynastic authorization of Karl's father, as head of the House of Habsburg, despite objections from some members of the family as the bride, although a baroness in the nobility of pre-republican Hungary and Transylvania, did not descend in the canonically legitimate male line from a family of dynastic (ruling or formerly ruling or mediatised) status.
-Karl and Francesca have three children:
-
-
-In the spring of 2022 in Portugal, Karl married Christian Nicolau de Almeida Reid, a woman of Portuguese descent.
-Habsburg self-isolated at home.
-Karl von Habsburg was officially declared healthy after almost three weeks of quarantine.
-After his illness, Karl Habsburg encouraged everyone to follow the official protective measures strictly, and asked survivors of the disease to donate blood plasma.
-Controversies
-
-In July 1998 an Austrian court fined Karl von Habsburg 180,000 schillings ($14,300); he had failed to declare immediately to customs officials that he had an antique diadem in his luggage when he crossed the border from Switzerland in July 1996.
-Also in 1998, evidence emerged that during Habsburg's election campaign for membership in the European Parliament two years prior, his political party the ÖVP, had benefited from at least 30,000 Marks worth of World Vision donations via Paneurope Austria while Karl Habsburg sat on the board of World Vision Austria, apparently without noticing the director's dubiously legal activities.
-His father exacerbated the controversy when he complained that his son was being attacked unfairly and drew a parallel between the name "Habsburg" and a yellow badge.
-ÖVP did not nominate Karl von Habsburg again for the 1999 elections.
-In 2004, Karl von Habsburg paid 37,000 euros to the new World Vision Austria branch.
+Princess Kira Auguste Viktoria Friederike of Prussia (27 June 1943 – 10 January 2004) was the fourth child and second daughter of Louis Ferdinand, Prince of Prussia and Grand Duchess Kira Kirillovna of Russia.
+Princess Kira was born in Cadienen, East Prussia (today Kadyny, Poland).
+They had one daughter, Kira-Marina Liepsner (born 22 January 1977), who married Andreas Felix Paul von Bismarck (31 January 1979 – 31 October 2019)
+Kira-Marina and Andreas had two daughters, Princess Kira’s granddaughters.
+When her father died in 1994, Princess Kira took his seat on the board of the Kissinger Sommer classical music festival.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -166,39 +113,9 @@ In 2004, Karl von Habsburg paid 37,000 euros to the new World Vision Austria bra
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -213,6 +130,23 @@ In 2004, Karl von Habsburg paid 37,000 euros to the new World Vision Austria bra
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -230,6 +164,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -297,29 +246,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -328,6 +269,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -340,6 +289,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -348,17 +299,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -386,6 +339,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -401,180 +438,156 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ec160adb-8412-42ad-a7a5-045d71fc5d20)
- Call ID: ec160adb-8412-42ad-a7a5-045d71fc5d20
+  AssignClass (68faa489-c31c-4bb2-950a-91694dfcc3c2)
+ Call ID: 68faa489-c31c-4bb2-950a-91694dfcc3c2
   Args:
-    type: :Man
-    source: :Karl_Habsburg-Lothringen
-  AssignClass (731faab2-15d4-4660-a3d2-b01ae229be85)
- Call ID: 731faab2-15d4-4660-a3d2-b01ae229be85
-  Args:
-    type: :Man
-    source: :Otto_von_Habsburg
-  AssignClass (1136e11c-2ae3-49a7-847f-9b0fc91cdd4a)
- Call ID: 1136e11c-2ae3-49a7-847f-9b0fc91cdd4a
+    type: :Person
+    source: :Princess_Kira_of_Prussia
+  AssignClass (6923a281-a102-4063-8b03-f522cc847915)
+ Call ID: 6923a281-a102-4063-8b03-f522cc847915
   Args:
     type: :Woman
-    source: :Regina_von_Sachsen-Meiningen
-  AssignClass (9c88f461-3383-4c7e-b045-60d6d5c20c03)
- Call ID: 9c88f461-3383-4c7e-b045-60d6d5c20c03
+    source: :Princess_Kira_of_Prussia
+  AddLiteral (19938282-a069-4f74-8074-455e54751384)
+ Call ID: 19938282-a069-4f74-8074-455e54751384
   Args:
-    type: :Man
-    source: :Charles_I
-  AssignClass (318677a8-e3f9-49b1-9648-a117fe641163)
- Call ID: 318677a8-e3f9-49b1-9648-a117fe641163
-  Args:
-    type: :Woman
-    source: :Francesca_Thyssen-Bornemisza
-  AssignClass (57e8a3dd-15bb-4a86-9534-78558da58c02)
- Call ID: 57e8a3dd-15bb-4a86-9534-78558da58c02
-  Args:
-    type: :Man
-    source: :Hans_Heinrich_Thyssen-Bornemisza_de_Kászon
-  AssignClass (02398840-1905-46ec-8210-4f6b4a095107)
- Call ID: 02398840-1905-46ec-8210-4f6b4a095107
-  Args:
-    type: :Woman
-    source: :Fiona_Frances_Elaine_Campbell-Walter
-  AssignClass (6d059c2b-92e3-4553-9328-835ca2c138ee)
- Call ID: 6d059c2b-92e3-4553-9328-835ca2c138ee
-  Args:
-    type: :Woman
-    source: :Christian_Nicolau_de_Almeida_Reid
-  AssignClass (1707cdd4-28eb-4fd8-8e5e-a2769fbc695c)
- Call ID: 1707cdd4-28eb-4fd8-8e5e-a2769fbc695c
-  Args:
-    type: :Sex
-    source: :Male
-  AssignClass (5cd2fd4b-dadc-4d4a-9ad6-c40efd01c9a9)
- Call ID: 5cd2fd4b-dadc-4d4a-9ad6-c40efd01c9a9
-  Args:
-    type: :Sex
-    source: :Female
-  AddLiteral (74fa368a-f230-4ded-ac18-8ccab7ee215b)
- Call ID: 74fa368a-f230-4ded-ac18-8ccab7ee215b
-  Args:
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    source: :Karl_Habsburg-Lothringen
-    literal_value: Karl Thomas Robert Maria Franziskus Georg Bahnam
-  AddLiteral (f356c87e-8d81-4729-98d6-c72103a8367b)
- Call ID: f356c87e-8d81-4729-98d6-c72103a8367b
-  Args:
-    literal_type: xsd:string
-    source: :Karl_Habsburg-Lothringen
-    relation: :alsoKnownAs
-    literal_value: Archduke Karl of Austria
-  AddLiteral (9080e46d-8096-437c-8e01-f1c51a011c7f)
- Call ID: 9080e46d-8096-437c-8e01-f1c51a011c7f
-  Args:
-    literal_value: 1961
-    source: :Karl_Habsburg-Lothringen
+    source: :Princess_Kira_of_Prussia
+    literal_value: 1943
+    literal_type: xsd:integer
     relation: :hasBirthYear
+  AddLiteral (7c01fd03-98dd-4659-b2f8-ff47f9c42933)
+ Call ID: 7c01fd03-98dd-4659-b2f8-ff47f9c42933
+  Args:
     literal_type: xsd:integer
-  AddTriple (3fe04bd9-241e-4e6d-a43c-787d36d49927)
- Call ID: 3fe04bd9-241e-4e6d-a43c-787d36d49927
+    source: :Princess_Kira_of_Prussia
+    literal_value: 2004
+    relation: :hasDeathYear
+  AssignClass (a70bdbd2-52d2-4d1f-bfb2-04b94e629127)
+ Call ID: a70bdbd2-52d2-4d1f-bfb2-04b94e629127
   Args:
-    source: :Karl_Habsburg-Lothringen
+    type: :Person
+    source: :Louis_Ferdinand_Prince_of_Prussia
+  AssignClass (733c4225-bc1d-43eb-aa39-2940b8267fa3)
+ Call ID: 733c4225-bc1d-43eb-aa39-2940b8267fa3
+  Args:
+    type: :Man
+    source: :Louis_Ferdinand_Prince_of_Prussia
+  AssignClass (cdae7bdb-8e6c-4cd1-b587-b4d62bad05fe)
+ Call ID: cdae7bdb-8e6c-4cd1-b587-b4d62bad05fe
+  Args:
+    source: :Grand_Duchess_Kira_Kirillovna_of_Russia
+    type: :Person
+  AssignClass (18ebc248-9829-4289-b5ba-1e62e5ee9878)
+ Call ID: 18ebc248-9829-4289-b5ba-1e62e5ee9878
+  Args:
+    type: :Woman
+    source: :Grand_Duchess_Kira_Kirillovna_of_Russia
+  AddTriple (fe3649a9-4603-4740-8661-38bc33473e57)
+ Call ID: fe3649a9-4603-4740-8661-38bc33473e57
+  Args:
+    source: :Princess_Kira_of_Prussia
+    target: :Louis_Ferdinand_Prince_of_Prussia
     relation: :hasFather
-    target: :Otto_von_Habsburg
-  AddTriple (141a5415-8936-4b27-9188-5d3caaaa965f)
- Call ID: 141a5415-8936-4b27-9188-5d3caaaa965f
+  AddTriple (711016e9-874b-4708-923d-443bb194445c)
+ Call ID: 711016e9-874b-4708-923d-443bb194445c
   Args:
-    target: :Regina_von_Sachsen-Meiningen
     relation: :hasMother
-    source: :Karl_Habsburg-Lothringen
-  AddTriple (1172e3f4-4e8b-4ce4-b50c-e70813120f83)
- Call ID: 1172e3f4-4e8b-4ce4-b50c-e70813120f83
+    target: :Grand_Duchess_Kira_Kirillovna_of_Russia
+    source: :Princess_Kira_of_Prussia
+  AssignClass (a0305c79-ffc3-4523-8689-e9d72831fd3a)
+ Call ID: a0305c79-ffc3-4523-8689-e9d72831fd3a
   Args:
-    target: :Charles_I
-    source: :Karl_Habsburg-Lothringen
-    relation: :hasFather
-  AddTriple (3737c4c6-d86d-4169-b92c-1fdf9a7fcc46)
- Call ID: 3737c4c6-d86d-4169-b92c-1fdf9a7fcc46
+    type: :Person
+    source: :Kira-Marina_Liepsner
+  AssignClass (bdf271c3-f664-4575-bdcf-b71bab7b605e)
+ Call ID: bdf271c3-f664-4575-bdcf-b71bab7b605e
   Args:
-    target: :Hans_Heinrich_Thyssen-Bornemisza_de_Kászon
-    source: :Francesca_Thyssen-Bornemisza
-    relation: :hasFather
-  AddTriple (925f4faa-1d22-4abf-95d8-314f122cc703)
- Call ID: 925f4faa-1d22-4abf-95d8-314f122cc703
+    source: :Kira-Marina_Liepsner
+    type: :Woman
+  AddTriple (ae69dfc0-fddd-4031-ac9f-4b5a390391bd)
+ Call ID: ae69dfc0-fddd-4031-ac9f-4b5a390391bd
   Args:
+    source: :Kira-Marina_Liepsner
+    target: :Princess_Kira_of_Prussia
     relation: :hasMother
-    source: :Francesca_Thyssen-Bornemisza
-    target: :Fiona_Frances_Elaine_Campbell-Walter
-  AddLiteral (70b1cfae-2733-4a5a-adee-8b5c79706014)
- Call ID: 70b1cfae-2733-4a5a-adee-8b5c79706014
+  AddLiteral (cf366f4f-e5d4-4595-b417-e1e8841854f5)
+ Call ID: cf366f4f-e5d4-4595-b417-e1e8841854f5
   Args:
-    literal_value: 1993
-    source: :Karl_Habsburg-Lothringen
-    relation: :hasMarriageYear
+    relation: :hasBirthYear
+    literal_value: 1977
+    source: :Kira-Marina_Liepsner
     literal_type: xsd:integer
-  AddLiteral (9f1e5b12-c412-4f1a-906e-1a6a71dfe9b7)
- Call ID: 9f1e5b12-c412-4f1a-906e-1a6a71dfe9b7
+  AssignClass (772def3e-c72d-4805-9dcd-46d986ae3176)
+ Call ID: 772def3e-c72d-4805-9dcd-46d986ae3176
   Args:
-    literal_value: 2022
-    relation: :hasMarriageYear
-    source: :Karl_Habsburg-Lothringen
+    source: :Andreas_Felix_Paul_von_Bismarck
+    type: :Person
+  AssignClass (4fe4d9fc-c9c3-4434-a6b6-13eb5736872a)
+ Call ID: 4fe4d9fc-c9c3-4434-a6b6-13eb5736872a
+  Args:
+    source: :Andreas_Felix_Paul_von_Bismarck
+    type: :Man
+  AddLiteral (4ae9e84f-86fd-4109-844a-57201fbdae88)
+ Call ID: 4ae9e84f-86fd-4109-844a-57201fbdae88
+  Args:
     literal_type: xsd:integer
-  AddTriple (e33e6161-0d17-46c3-9ee9-869580faa7bd)
- Call ID: e33e6161-0d17-46c3-9ee9-869580faa7bd
+    literal_value: 1979
+    source: :Andreas_Felix_Paul_von_Bismarck
+    relation: :hasBirthYear
+  AddLiteral (07462f1c-d0d3-4808-a775-3efd28e2975e)
+ Call ID: 07462f1c-d0d3-4808-a775-3efd28e2975e
   Args:
-    relation: :hasSex
-    source: :Karl_Habsburg-Lothringen
-    target: :Male
-  AddTriple (ae1a4917-24bc-4456-89ff-13c86d0a5443)
- Call ID: ae1a4917-24bc-4456-89ff-13c86d0a5443
+    literal_type: xsd:integer
+    literal_value: 2019
+    source: :Andreas_Felix_Paul_von_Bismarck
+    relation: :hasDeathYear
+  AddTriple (4518a230-46db-42b5-a01d-14eca22dea91)
+ Call ID: 4518a230-46db-42b5-a01d-14eca22dea91
   Args:
-    source: :Otto_von_Habsburg
-    relation: :hasSex
-    target: :Male
-  AddTriple (7c23a77f-201e-48fe-9e22-849d5127119a)
- Call ID: 7c23a77f-201e-48fe-9e22-849d5127119a
+    source: :Kira-Marina_Liepsner
+    target: :Granddaughter_1_of_Kira
+    relation: :hasChild
+  AddTriple (28a24b1d-bb4d-432e-8fef-df5479f501e2)
+ Call ID: 28a24b1d-bb4d-432e-8fef-df5479f501e2
   Args:
-    target: :Female
-    relation: :hasSex
-    source: :Regina_von_Sachsen-Meiningen
-  AddTriple (3fe0ea47-27a7-4929-9d51-069d95ea3b99)
- Call ID: 3fe0ea47-27a7-4929-9d51-069d95ea3b99
+    target: :Granddaughter_2_of_Kira
+    source: :Kira-Marina_Liepsner
+    relation: :hasChild
+  AddTriple (1d1ee9fc-c72d-4b52-9dad-7b5cabf591cc)
+ Call ID: 1d1ee9fc-c72d-4b52-9dad-7b5cabf591cc
   Args:
-    target: :Male
-    source: :Charles_I
-    relation: :hasSex
-  AddTriple (ce9da0bc-9b12-4c09-b14d-0b4857afe97d)
- Call ID: ce9da0bc-9b12-4c09-b14d-0b4857afe97d
+    source: :Andreas_Felix_Paul_von_Bismarck
+    target: :Granddaughter_1_of_Kira
+    relation: :hasChild
+  AddTriple (5fa5050c-5cb1-4ed0-a94d-3fefd6534db3)
+ Call ID: 5fa5050c-5cb1-4ed0-a94d-3fefd6534db3
   Args:
-    source: :Francesca_Thyssen-Bornemisza
-    relation: :hasSex
-    target: :Female
-  AddTriple (53220f7f-7d2d-4dd6-9747-cda6f679c875)
- Call ID: 53220f7f-7d2d-4dd6-9747-cda6f679c875
+    relation: :hasChild
+    target: :Granddaughter_2_of_Kira
+    source: :Andreas_Felix_Paul_von_Bismarck
+  AssignClass (f6c5f6c1-4868-4661-bc4f-69029bfedba6)
+ Call ID: f6c5f6c1-4868-4661-bc4f-69029bfedba6
   Args:
-    relation: :hasSex
-    source: :Hans_Heinrich_Thyssen-Bornemisza_de_Kászon
-    target: :Male
-  AddTriple (603155bc-a089-463e-9de5-9f31e3699b1a)
- Call ID: 603155bc-a089-463e-9de5-9f31e3699b1a
+    type: :Person
+    source: :Granddaughter_1_of_Kira
+  AssignClass (b0feca6e-088a-49a9-8ccf-49aafb52de16)
+ Call ID: b0feca6e-088a-49a9-8ccf-49aafb52de16
   Args:
-    source: :Fiona_Frances_Elaine_Campbell-Walter
-    relation: :hasSex
-    target: :Female
-  AddTriple (361da269-d77f-44d1-9642-92b05fb52f73)
- Call ID: 361da269-d77f-44d1-9642-92b05fb52f73
+    type: :Woman
+    source: :Granddaughter_1_of_Kira
+  AssignClass (b3f35b24-33e2-4f15-b80a-7fbf8f3e385d)
+ Call ID: b3f35b24-33e2-4f15-b80a-7fbf8f3e385d
   Args:
-    target: :Female
-    relation: :hasSex
-    source: :Christian_Nicolau_de_Almeida_Reid
-  Finish (7eb0c9de-4361-449d-ac36-01c257758d83)
- Call ID: 7eb0c9de-4361-449d-ac36-01c257758d83
+    type: :Person
+    source: :Granddaughter_2_of_Kira
+  AssignClass (a6154908-605f-49b7-8807-48c8ece35518)
+ Call ID: a6154908-605f-49b7-8807-48c8ece35518
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    type: :Woman
+    source: :Granddaughter_2_of_Kira
+  Finish (eaf74786-8cd1-4831-a7ae-626cca16c9ce)
+ Call ID: eaf74786-8cd1-4831-a7ae-626cca16c9ce
+  Args:
 
 ================================= Tool Message =================================
 
@@ -683,43 +696,38 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Christian_Nicolau_de_Almeida_Reid a :Woman ;
-      :hasSex data:Female .
+  data:Andreas_Felix_Paul_von_Bismarck a :Man,
+          :Person ;
+      :hasBirthYear 1979 ;
+      :hasChild data:Granddaughter_1_of_Kira,
+          data:Granddaughter_2_of_Kira ;
+      :hasDeathYear 2019 .
 
-  data:Francesca_Thyssen-Bornemisza a :Woman ;
-      :hasFather data:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon ;
-      :hasMother data:Fiona_Frances_Elaine_Campbell-Walter ;
-      :hasSex data:Female .
+  data:Kira-Marina_Liepsner a :Person,
+          :Woman ;
+      :hasBirthYear 1977 ;
+      :hasChild data:Granddaughter_1_of_Kira,
+          data:Granddaughter_2_of_Kira ;
+      :hasMother data:Princess_Kira_of_Prussia .
 
-  data:Karl_Habsburg-Lothringen a :Man ;
-      :alsoKnownAs "Archduke Karl of Austria"^^xsd:string,
-          "Karl Thomas Robert Maria Franziskus Georg Bahnam"^^xsd:string ;
-      :hasBirthYear 1961 ;
-      :hasFather data:Charles_I,
-          data:Otto_von_Habsburg ;
-      :hasMarriageYear 1993,
-          2022 ;
-      :hasMother data:Regina_von_Sachsen-Meiningen ;
-      :hasSex data:Male .
+  data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,
+          :Woman .
 
-  data:Charles_I a :Man ;
-      :hasSex data:Male .
+  data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+          :Person .
 
-  data:Fiona_Frances_Elaine_Campbell-Walter a :Woman ;
-      :hasSex data:Female .
+  data:Princess_Kira_of_Prussia a :Person,
+          :Woman ;
+      :hasBirthYear 1943 ;
+      :hasDeathYear 2004 ;
+      :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
+      :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia .
 
-  data:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon a :Man ;
-      :hasSex data:Male .
+  data:Granddaughter_1_of_Kira a :Person,
+          :Woman .
 
-  data:Otto_von_Habsburg a :Man ;
-      :hasSex data:Male .
-
-  data:Regina_von_Sachsen-Meiningen a :Woman ;
-      :hasSex data:Female .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
+  data:Granddaughter_2_of_Kira a :Person,
+          :Woman .
 
 
 
@@ -731,158 +739,86 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (69a0e99a-f785-4c3d-ac4d-5655078fdd77)
- Call ID: 69a0e99a-f785-4c3d-ac4d-5655078fdd77
+  ValidateShacl (ecda6c32-b2ca-4992-993c-b14a9d16d4af)
+ Call ID: ecda6c32-b2ca-4992-993c-b14a9d16d4af
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:9
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person 'Charles_I' linked as a father to 'Karl_Habsburg-Lothringen' is not currently assigned the required class ':Ancestor'.
+      The node 'Louis_Ferdinand_Prince_of_Prussia' assigned as the father of 'Princess_Kira_of_Prussia' does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_I', class=':Ancestor')
+      AssignClass(Louis_Ferdinand_Prince_of_Prussia, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person 'Otto_von_Habsburg' linked as a father to 'Karl_Habsburg-Lothringen' is not currently assigned the required class ':Ancestor'.
+      The node 'Grand_Duchess_Kira_Kirillovna_of_Russia' assigned as the mother of 'Princess_Kira_of_Prussia' does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Otto_von_Habsburg', class=':Ancestor')
+      AssignClass(Grand_Duchess_Kira_Kirillovna_of_Russia, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: More than 1 values on data:Karl_Habsburg-Lothringen->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Karl_Habsburg-Lothringen' has more than one 'hasFather' relation, which violates the functional property constraint.
+      The node 'Princess_Kira_of_Prussia' assigned as the mother of 'Kira-Marina_Liepsner' does not belong to the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject='Karl_Habsburg-Lothringen', predicate=':hasFather', object='Otto_von_Habsburg')
+      AssignClass(Princess_Kira_of_Prussia, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person 'Regina_von_Sachsen-Meiningen' linked as a mother to 'Karl_Habsburg-Lothringen' is not currently assigned the required class ':Ancestor'.
+      The node 'Louis_Ferdinand_Prince_of_Prussia' is missing the ':Ancestor' class assignment for the 'hasFather' property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Regina_von_Sachsen-Meiningen', class=':Ancestor')
+      AssignClass(Louis_Ferdinand_Prince_of_Prussia, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person 'Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon' linked as a father to 'Francesca_Thyssen-Bornemisza' is not currently assigned the required class ':Ancestor'.
+      The node 'Grand_Duchess_Kira_Kirillovna_of_Russia' is missing the ':Ancestor' class assignment for the 'hasMother' property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon', class=':Ancestor')
+      AssignClass(Grand_Duchess_Kira_Kirillovna_of_Russia, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person 'Charles_I' is missing the class ':Ancestor'.
+      The node 'Princess_Kira_of_Prussia' is missing the ':Ancestor' class assignment for the 'hasMother' property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_I', class=':Ancestor')
+      AssignClass(Princess_Kira_of_Prussia, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person 'Otto_von_Habsburg' is missing the class ':Ancestor'.
+      The node 'Louis_Ferdinand_Prince_of_Prussia' must have the ':Ancestor' class to satisfy the 'hasFather' relationship requirements.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Otto_von_Habsburg', class=':Ancestor')
+      AssignClass(Louis_Ferdinand_Prince_of_Prussia, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: More than 1 values on data:Karl_Habsburg-Lothringen->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      Multiple 'hasFather' links on 'Karl_Habsburg-Lothringen' exceed the allowed count of one.
+      The node 'Grand_Duchess_Kira_Kirillovna_of_Russia' must have the ':Ancestor' class to satisfy the 'hasMother' relationship requirements.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject='Karl_Habsburg-Lothringen', predicate=':hasFather', object='Otto_von_Habsburg')
+      AssignClass(Grand_Duchess_Kira_Kirillovna_of_Russia, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person 'Fiona_Frances_Elaine_Campbell-Walter' linked as a mother to 'Francesca_Thyssen-Bornemisza' is missing the class ':Ancestor'.
+      The node 'Princess_Kira_of_Prussia' must have the ':Ancestor' class to satisfy the 'hasMother' relationship requirements.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Fiona_Frances_Elaine_Campbell-Walter', class=':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Regina_von_Sachsen-Meiningen' is missing the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Regina_von_Sachsen-Meiningen', class=':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon' is missing the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon', class=':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Charles_I' is missing the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_I', class=':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Otto_von_Habsburg' is missing the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Otto_von_Habsburg', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: More than 1 values on data:Karl_Habsburg-Lothringen->:hasFather
-    LLM-provided explanation of the violation:
-      Redundant 'hasFather' relationship exists for 'Karl_Habsburg-Lothringen'.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(subject='Karl_Habsburg-Lothringen', predicate=':hasFather', object='Otto_von_Habsburg')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Fiona_Frances_Elaine_Campbell-Walter' is missing the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Fiona_Frances_Elaine_Campbell-Walter', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Regina_von_Sachsen-Meiningen' is missing the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Regina_von_Sachsen-Meiningen', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon' is missing the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person 'Fiona_Frances_Elaine_Campbell-Walter' is missing the class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Fiona_Frances_Elaine_Campbell-Walter', class=':Ancestor')
+      AssignClass(Princess_Kira_of_Prussia, :Ancestor)
 
 
 
@@ -891,52 +827,24 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (92863434-9de8-4a88-8502-4981a351d4f9)
- Call ID: 92863434-9de8-4a88-8502-4981a351d4f9
+  AssignClass (84d9f7b4-fd02-4ac9-a9cf-afdd69d083f3)
+ Call ID: 84d9f7b4-fd02-4ac9-a9cf-afdd69d083f3
+  Args:
+    source: :Louis_Ferdinand_Prince_of_Prussia
+    type: :Ancestor
+  AssignClass (962cd4bf-b28b-49d0-b46f-8503c334af65)
+ Call ID: 962cd4bf-b28b-49d0-b46f-8503c334af65
   Args:
     type: :Ancestor
-    source: :Charles_I
-  AssignClass (d1bc3b4c-ea19-4700-8087-9fd6ebcfddfd)
- Call ID: d1bc3b4c-ea19-4700-8087-9fd6ebcfddfd
+    source: :Grand_Duchess_Kira_Kirillovna_of_Russia
+  AssignClass (0f1ce1a7-c7cc-43c8-a824-7cdcbe614ba5)
+ Call ID: 0f1ce1a7-c7cc-43c8-a824-7cdcbe614ba5
   Args:
+    source: :Princess_Kira_of_Prussia
     type: :Ancestor
-    source: :Otto_von_Habsburg
-  AssignClass (635f21a8-9a83-4327-8461-cb58d720c4fb)
- Call ID: 635f21a8-9a83-4327-8461-cb58d720c4fb
+  Finish (ff7e474d-34c9-4548-a453-1a56d3e56b37)
+ Call ID: ff7e474d-34c9-4548-a453-1a56d3e56b37
   Args:
-    type: :Ancestor
-    source: :Regina_von_Sachsen-Meiningen
-  AssignClass (56ac0871-8fc5-4cf6-a725-f25a7a4d812f)
- Call ID: 56ac0871-8fc5-4cf6-a725-f25a7a4d812f
-  Args:
-    type: :Ancestor
-    source: :Hans_Heinrich_Thyssen-Bornemisza_de_Kászon
-  AssignClass (ca1c9225-0f44-45cf-8433-3cf41815708d)
- Call ID: ca1c9225-0f44-45cf-8433-3cf41815708d
-  Args:
-    type: :Ancestor
-    source: :Fiona_Frances_Elaine_Campbell-Walter
-  RemoveTriple (8aebf161-2836-4095-8fae-c1f93d6f647c)
- Call ID: 8aebf161-2836-4095-8fae-c1f93d6f647c
-  Args:
-    source: :Karl_Habsburg-Lothringen
-    relation: :hasFather
-    target: :Otto_von_Habsburg
-  Finish (fcec64c1-bd47-4479-b97d-54cefc22f317)
- Call ID: fcec64c1-bd47-4479-b97d-54cefc22f317
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -953,47 +861,41 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Christian_Nicolau_de_Almeida_Reid a :Woman ;
-      :hasSex data:Female .
+  data:Andreas_Felix_Paul_von_Bismarck a :Man,
+          :Person ;
+      :hasBirthYear 1979 ;
+      :hasChild data:Granddaughter_1_of_Kira,
+          data:Granddaughter_2_of_Kira ;
+      :hasDeathYear 2019 .
 
-  data:Francesca_Thyssen-Bornemisza a :Woman ;
-      :hasFather data:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon ;
-      :hasMother data:Fiona_Frances_Elaine_Campbell-Walter ;
-      :hasSex data:Female .
-
-  data:Karl_Habsburg-Lothringen a :Man ;
-      :alsoKnownAs "Archduke Karl of Austria"^^xsd:string,
-          "Karl Thomas Robert Maria Franziskus Georg Bahnam"^^xsd:string ;
-      :hasBirthYear 1961 ;
-      :hasFather data:Charles_I ;
-      :hasMarriageYear 1993,
-          2022 ;
-      :hasMother data:Regina_von_Sachsen-Meiningen ;
-      :hasSex data:Male .
-
-  data:Otto_von_Habsburg a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Charles_I a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Fiona_Frances_Elaine_Campbell-Walter a :Ancestor,
+  data:Kira-Marina_Liepsner a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasBirthYear 1977 ;
+      :hasChild data:Granddaughter_1_of_Kira,
+          data:Granddaughter_2_of_Kira ;
+      :hasMother data:Princess_Kira_of_Prussia .
 
-  data:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
+  data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Regina_von_Sachsen-Meiningen a :Ancestor,
+  data:Louis_Ferdinand_Prince_of_Prussia a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Princess_Kira_of_Prussia a :Ancestor,
+          :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasBirthYear 1943 ;
+      :hasDeathYear 2004 ;
+      :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
+      :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia .
 
-  data:Female a :Sex .
+  data:Granddaughter_1_of_Kira a :Person,
+          :Woman .
 
-  data:Male a :Sex .
+  data:Granddaughter_2_of_Kira a :Person,
+          :Woman .
 
 
 
@@ -1005,8 +907,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (f511f91f-a0bc-425c-bded-f52bf5ee108c)
- Call ID: f511f91f-a0bc-425c-bded-f52bf5ee108c
+  ValidateShacl (9220bdf5-612d-4eb6-af23-ee35316fdfe5)
+ Call ID: 9220bdf5-612d-4eb6-af23-ee35316fdfe5
   Args:
 
 ================================= Tool Message =================================
@@ -1017,6 +919,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ae5dbdcf-cc8c-4d58-9bdf-2384e665c644)
- Call ID: ae5dbdcf-cc8c-4d58-9bdf-2384e665c644
+  Finish (f6399fef-4e56-4af7-8224-062e0eb2180b)
+ Call ID: f6399fef-4e56-4af7-8224-062e0eb2180b
   Args:

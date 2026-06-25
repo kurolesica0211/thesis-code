@@ -69,123 +69,65 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Peter of Greece and Denmark (Greek: Πέτρος; 3 December 1908 –  15 October 1980) was a Greek prince, soldier and anthropologist specialising in Tibetan culture and polyandry.
-Born in Paris and high in the line of succession to the Greek throne, Prince Peter was deemed to have forfeited his succession rights by marrying a twice-divorced Russian commoner, Irina Aleksandrovna Ovtchinnikova.
-Following his first scientific voyage to Asia, Peter served as an officer of the Greek army during the Second World War.
-The Prince returned to Asia several more times for his research of Tibetan culture.
-Peter eventually separated from his wife and died childless in London.
-Early life
+Peter Mark Andrew Phillips (born 15 November 1977) is a British businessman and member of the British royal family.
+He is the son of Anne, Princess Royal, and Mark Phillips, and a nephew of King Charles III.
+Born during the reign of his maternal grandmother Queen Elizabeth II, Phillips was fifth in the line of succession to the British throne; as of 2026, he is 19th.
+Phillips attended the University of Exeter and later worked for Jaguar Racing.
+In 2008, he married Canadian management consultant Autumn Kelly at St George's Chapel, Windsor Castle; they have two children.
+Early life and education
 
-A member of the House of Schleswig-Holstein-Sonderburg-Glücksburg, Prince Peter was the elder child and only son of Prince George of Greece and Denmark and the wealthy author and psychoanalyst Princess Marie Bonaparte.
-His father was the second son of King George I of Greece and his mother the only daughter of the French botanist Prince Roland Bonaparte and Marie-Félix Blanc.
-Peter was born in Paris and spent his childhood in France, and did not set foot in Greece between 1912 and 1935 due to the First World War and the later proclamation of the Second Hellenic Republic.
-During that time, he came to know Denmark, the kingdom from which the Greek royal family originated.
-He joined the Royal Guards of Denmark in 1932 for basic military service, and was commissioned as a second lieutenant in 1934.
-He spent summers at Bernstorff Palace, then owned by his paternal granduncle, Prince Valdemar of Denmark.
-Due to their father's long-lasting sexual and emotional relationship with his uncle Valdemar, Peter and his sister Eugénie referred to Valdemar as "Papa Two".
-As customary, Princess George took no part in her son's upbringing, and when he reached adolescence, only the counsels of the psychoanalyst Sigmund Freud helped them suppress their incestuous feelings for each other.
-Greek restoration
+Peter Mark Andrew Phillips was born at 10:46 am on 15 November 1977 at St Mary's Hospital, London.
+He was the first child of Princess Anne and Mark Phillips, who had married in 1973, and the first grandchild of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
+His godparents were his maternal uncle, Prince Charles; Geoffrey Tiarks; Captain Hamish Lochore; Lady Cecil Cameron of Lochiel and Jane Holderness-Roddam.
+Phillips was fifth in line to the throne at birth and remained so until the birth of his cousin William, Prince of Wales in 1982.
+His parents were said to have refused offers from his grandmother Queen Elizabeth II that would have led to his being born in the peerage.
+Phillips was the first legitimate grandchild of a monarch in more than 500 years to be born without a title or courtesy title.
+Phillips has a younger sister, Zara Tindall (née Phillips; born 1981), and two younger half-sisters, Felicity Wade (née Tonkin; born 1985), the daughter of Mark Phillips and his former mistress Heather Tonkin; and Stephanie Phillips (born 1997), the daughter from his father's second marriage to Sandy Pflueger.
+Phillips went to Port Regis Prep School in Shaftesbury, Dorset before following some of his family by attending Gordonstoun School in Moray, Scotland.
+Phillips represented Scotland at rugby union at youth and junior level in the mid-1990s.
+Career
 
-Following the restoration of his cousin, King George II, Prince Peter travelled to the Kingdom to take part in the ceremonial reinterment of the remains of his uncle, King Constantine I, and those of the queens Olga and Sophia, his grandmother and aunt respectively.
-In the 1930s, a possible marriage between Prince Peter and Princess Frederica of Hanover may have been discussed, but she eventually married Prince Paul.
-Education
+After his graduation in 2000, Phillips worked for Jaguar as corporate hospitality manager and then for Williams racing team, where he was sponsorship accounts manager.
+He left Williams in September 2005, for a job as a manager at the Royal Bank of Scotland in Edinburgh.
+In the year leading up to June 2016, Phillips was responsible for organising the "Patron's Lunch", in celebration of the Queen's 90th birthday.
+In January 2020, Phillips appeared in an advertisement for Chinese company Bright Food.
+In the video, he uses his status as a "British royal family member" to promote the company's milk, while surrounded by luxury.
+Royal funeral participation
 
-Peter attended Lycée Janson de Sailly and received the degree of Doctor of Law from the University of Paris.
-Peter joined the 3/40 Evzone Regiment in 1936, becoming an officer.
-He proceeded to travel through Greece with his parents and visited Crete in April 1937.
-Voyage to Asia and marriage
+On 17 September 2022, during the period of official mourning for Queen Elizabeth II, Phillips joined his sister and six cousins to mount a 15-minute vigil around the coffin of their grandmother as it lay in state at Westminster Hall.
+On 19 September 2022, he joined the Queen's children and other senior members of the royal family in walking behind the cortege in the state funeral procession.
+Personal life
 
-In 1935, Prince Peter met and started a relationship with Irina Aleksandrovna Ovtchinnikova, a four years older married Russian émigré with an ex-husband, Jehan de Monléon, Marquis de Monléon.
-The next year, she obtained divorce from her second husband Lewis (Slodon) Sloden, and her influence over Peter steadily increased.
-Peter himself did not want to gain a reputation as bad as that of King Edward VIII of the United Kingdom, who abdicated the same year to marry his own twice divorced foreign lover, the American Wallis Simpson.
-Accompanied by Ovtchinnikova and a student of Malinowski, Prince Peter embarked on a voyage to Asia in September 1937.
-The party passed through Syria and Persia before reaching British India, in search of a tribe that Peter could study.
-They arrived in what is now Pakistan in early 1938, and Peter conducted research in the regions of Lahore, Kulu, Leh, and Srinagar.
-Throughout the entire journey, Peter focused his attention on the study of polyandry – an interest that may have resulted from the Oedipus complex.
-While in Madras, Peter decided to officialise his relationship with Ovtchinnikova.
-Aware of his family's disapproval of the relationship, but also possibly wishing to take advantage of the turmoil created by the recently declared Second World War, the Prince did not bother to inform either the Greek royal court or his parents about the marriage.
-Prince George, affronted by his son's decision not to ask him or the King for permission to marry, disowned Peter and henceforward refused contact with him.
-Despite her own disappointment, however, Princess George remained in touch with her son and continued to regularly send him money.
-However, not all members of the royal family were dissatisfied with Peter's mesalliance and subsequent loss of dynastic rights.
-Second World War
+Relationships
 
-Prince Peter and Ovtchinnikova returned to Europe in November 1939.
-Prince George refused to see him.
-Peter also met with his sister and her newborn daughter, Princess Tatiana Radziwill.
-The German invasion of France in 1940 led Peter and his wife to leave Paris and move to Assisi, Italy.
-Malinowski, now working at Yale University in the United States of America, was impressed by Peter's research in Asia and offered him a position as research associate in the Anthropology Department of the university.
-Peter declined this offer to move to Greece and join his country's infantry in the wake of Greco-Italian War.
-King George II believed her to be a plotter, and was also wary of his cousin.
-The King suspected that some (particularly leftists) would like to replace him with Peter.
-Germany invaded Greece on 6 April 1941.
-Peter was not evacuated until 27 April, when the Germans entered Athens.
-On Crete, Peter rejoined the King, who was satisfied with his conduct and named him his personal aide de camp.
-King George and Prince Paul therefore moved to London, while the majority of the family found refuge in South Africa.
-Peter was the only one to remain in Cairo, having been named "Representative of the King of the Hellenes in the Middle East".
-The royal family's exile allowed Peter to rejoin Ovtchinnikova in Palestine.
-The couple settled in Cairo, where Peter introduced his wife as a princess.
-"The Russian", it was rumoured, wished Greece to be Orthodox but Communist and with Peter as king.
-Prince Peter's chief task in the Middle East was to reorganise the remnants of the Greek royal army and prepare them to participate in the war alongside the Allies of World War II.
-Aftermath of the war
+Elizabeth Iorio and Tara Swain
 
-The royal family could not return to Greece immediately after the war ended due to a civil war between the Communists and the Conservatives.
-Prince Peter was aware that King George, if allowed to return, would never allow him to move to Greece along with his wife.
-On 1 September 1946, a referendum confirmed George II's position.
-The King, however, died unexpectedly on 1 April the next year and the Prince was demobilised.
-Peter hoped that Paul, George II's successor, would recognise his marriage to Ovtchinnikova.
-King Paul agreed but only if Prince Peter officially recognised that the marriage deprived him of his dynastic rights, something the Prince had always refused to do.
-Peter turned down the offer and Paul prohibited him from returning to Greece.
-Prince Peter and Irene Ovtchinnikova thus decided to move from Egypt to Denmark.
-Peter accepted.
-The Prince wished to avoid any possible dispute with the Greek government and thus prudently avoided expressing his opinion about the Greek politics.
-A few days later, he was relieved when he received a letter from Prince Axel of Denmark, son of Prince Valdemar and first cousin of Peter's father, who informed him that the expedition should still take place.
-Tibetan studies
+Phillips dated Elizabeth Iorio, a cod liver oil heiress from the United States, for two years.
+Autumn Kelly
 
-First sojourn
+In 2003, Phillips met Autumn Kelly, a Canadian management consultant, at the Formula 1 Canadian Grand Prix in Montreal.
+If she had been Roman Catholic at the time of the marriage, Phillips would have lost his place in the line of the succession to the throne because of since-repealed terms of the Act of Settlement 1701.
+Shortly before their wedding, the couple were interviewed and photographed by Hello! magazine, and were reported to have been paid £500,000, resulting in some concern in royal circles.
+The couple lived in Hong Kong after Phillips changed positions within the Royal Bank of Scotland and became head of their sponsorships activities in the region.
+Their first child, and the Queen's first great-grandchild, a daughter named Savannah Anne Kathleen, was born on 29 December 2010 at Gloucestershire Royal Hospital.
+The Queen was present for the baby's baptism, which took place on 23 April 2011 at Church of the Holy Cross in Avening, Gloucestershire, near Gatcombe Park, the home of Phillips' mother.
+On 29 March 2012, the couple's second daughter, Isla Elizabeth, was born at Gloucestershire Royal Hospital.
+On 11 February 2020, Phillips and his wife confirmed that they had separated in 2019 and announced they were planning to divorce.
+Lindsay Wallace
 
-Prince Peter and Ovtchinnikova left the United States in January 1949, travelling from California to Colombo, the capital of Ceylon.
-Peter was dismayed to find out that the people lived in poor sanitary conditions and that their culture was on the verge of disappearance.
-A large number of Tibetans fled to India, and many found refuge in Kalimpong, enabling Peter to study the people and Tibetan culture.
-Peter gathered anthropometric data on 3,284 persons, analysed 198 blood samples, bought clothes, jewellery, books (such as the Tengyur and Kangyur), and various other objects now found at the National Museum of Denmark and the Royal Library.
-Having registered their songs, sagas, everyday conversations, oracle prophecies and religious ceremonies, Peter took more than 3,000 photographs of Tibetans.
-One man did not understand why the Prince bothered to wear a shirt, given that he already had hair.
-The expedition ended in 1952, and the pair went to Copenhagen, where Peter presented his findings.
-Despite everything, Peter continued learning Tibetan and by 1954, he learned enough to be able to work without an interpreter.
-In mid-1953, the Prince once again left the Himalayas to head a commemorative expedition to Afghanistan in honour of Haslund-Christensen, but returned to the Himalayas within six weeks.
-In 1956, Peter was pleased to welcome his mother to his Kalimpong residence.
-The more Peter studied the Tibetans, the less he hesitated to criticise the Chinese government and occupying army, who, in turn, suspected him to be a Western spy.
-The government of India, on the other hand, feared the wrath of its powerful neighbour and thus proceeded to harass the Prince and Ovtchinnikova to push them out of the country.
-The situation was complicated by Ovtchinnikova's progressing tuberculosis, and Peter pleaded with the authorities to allow them to stay until she could travel.
-Princess George also tried to intercede on behalf of her son and daughter-in-law, but failed to meet Nehru during his visit to London in June 1956.
-During the seven years that Prince Peter spent with his wife in the Himalayas, he was able to collect "...a rich collection of artefacts and books, still and moving photography, sound recordings, ethnographic information as well as an astoundingly large set of physical anthropology data.
-"
+After his divorce, Phillips began a relationship with Lindsay Wallace in 2021, with whom he made his official debut as a couple at the Epsom Derby in June 2022.
+Harriet Sperling
 
-
-Final decades
-
-Upon their return to Europe, Prince Peter and Ovtchinnikova settled in the United Kingdom, where the Prince resumed his studies at the London School of Economics.
-After King Paul's death, Peter found himself at odds with Paul's son and successor, King Constantine II.
-Had he not been deemed excluded from the line of succession due to his unsuitable marriage, Peter would have been heir presumptive to Constantine II according to the original laws of succession.
-However, the Parliament of Greece modified the Constitution to replace the original agnatic primogeniture with male-preference cognatic primogeniture, thereby introducing a number of female dynasts and their descendants into the line of succession.
-King Constantine II, still unmarried and childless, thus officially recognised his only unmarried sister, Princess Irene, as heir presumptive (excluding the older sister, Princess Sophia, who was due to become Queen of Spain).
-Peter remained convinced that the change was illegal and that he would be the rightful heir if the King died without fathering a son.
-Shortly after the King's marriage to their cousin, Princess Anne-Marie of Denmark, the uninvited Prince Peter called a press conference in Athens and openly questioned the legality of the constitutional amendment.
-King Constantine II and Queen Anne-Marie's first child, Princess Alexia, was born in 1965 and designated as the new heir presumptive, but Peter refused to recognise that either.
-Following the rupture between King Constantine and Prime Minister Georgios Papandreou the same year, the Prince openly criticised the King's conduct and suggested himself as an alternative to Constantine II.
-However, the abolition of the monarchy and the proclamation of the Third Hellenic Republic in 1974 did not allow Peter to fulfill his dream of ascending the Greek throne.
-After the monarchy was abolished, Prince Peter decided to liquidate his possessions in Greece, most notably his residence in Glyfada.
-Ovtchinnikova moved to Hong Kong, while Peter took up a relationship with a young Englishwoman who lived with him in Copenhagen.
-Prince Peter continued to support the Tibetan cause.
-In 1967 he, "...was instrumental in procuring vocational training for young Tibetans in Denmark.
-A memorial mass for Prince Peter was held at St Sophia's Cathedral, London, on 22 October.
-He compromised by agreeing that the tomb inscription would describe her as "Irina, spouse of Prince Peter, née Alexandrovna Ovtchinnikova" rather than as a Greek princess.
-The Greek government, however, refused to allow his burial in Greece.
+By June 2024, Phillips had introduced his partner, NHS paediatric nurse and freelance writer Harriet Sperling (née Sanders; born 1980), to King Charles III and Queen Camilla.
+According to the BBC, Sperling is a distant relation of Prince Richard, Duke of Gloucester through her father Rupert Sanders (1946–2023).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -201,39 +143,9 @@ The Greek government, however, refused to allow his burial in Greece.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -248,6 +160,23 @@ The Greek government, however, refused to allow his burial in Greece.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -265,6 +194,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -332,29 +276,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -363,6 +299,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -375,6 +319,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -383,17 +329,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -421,6 +369,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -436,314 +468,316 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c494b9fd-ccf8-40ab-b518-bbf36e8ba969)
- Call ID: c494b9fd-ccf8-40ab-b518-bbf36e8ba969
+  AssignClass (cc016424-5559-4078-b684-b247b0372f63)
+ Call ID: cc016424-5559-4078-b684-b247b0372f63
   Args:
     type: :Man
-    source: Prince_Peter_of_Greece_and_Denmark
-  AssignClass (3c00dfab-c251-4a45-a6b1-dab571bc8ba1)
- Call ID: 3c00dfab-c251-4a45-a6b1-dab571bc8ba1
+    source: Peter_Phillips
+  AssignClass (7ed9173f-5557-454b-b224-cda8cf597d96)
+ Call ID: 7ed9173f-5557-454b-b224-cda8cf597d96
   Args:
+    source: Peter_Phillips
     type: :Person
-    source: Prince_Peter_of_Greece_and_Denmark
-  AddLiteral (4f71335d-2574-4e95-9993-8b2e1c02d540)
- Call ID: 4f71335d-2574-4e95-9993-8b2e1c02d540
+  AddLiteral (9ec0aee5-28bc-4863-b960-b1a0ed9c0cb5)
+ Call ID: 9ec0aee5-28bc-4863-b960-b1a0ed9c0cb5
   Args:
-    literal_value: 1908
+    literal_value: 1977
     relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Prince_Peter_of_Greece_and_Denmark
-  AddLiteral (0748e845-70dc-4021-8ba8-367722e34227)
- Call ID: 0748e845-70dc-4021-8ba8-367722e34227
+    source: Peter_Phillips
+  AssignClass (52aff0e8-8fcd-4f34-8d27-11247c69598b)
+ Call ID: 52aff0e8-8fcd-4f34-8d27-11247c69598b
   Args:
-    relation: :hasDeathYear
-    literal_value: 1980
-    source: Prince_Peter_of_Greece_and_Denmark
-    literal_type: xsd:integer
-  AssignClass (c1717879-8ba2-4414-83e8-720e9b419388)
- Call ID: c1717879-8ba2-4414-83e8-720e9b419388
-  Args:
-    source: Prince_George_of_Greece_and_Denmark
-    type: :Man
-  AssignClass (452f24a5-3ac3-4deb-abe9-0c943b4d0224)
- Call ID: 452f24a5-3ac3-4deb-abe9-0c943b4d0224
-  Args:
-    type: :Person
-    source: Prince_George_of_Greece_and_Denmark
-  AssignClass (f84252ca-69ff-4fc2-885d-447a590b0d64)
- Call ID: f84252ca-69ff-4fc2-885d-447a590b0d64
-  Args:
+    source: Anne_Princess_Royal
     type: :Woman
-    source: Princess_Marie_Bonaparte
-  AssignClass (3635e2f7-4f78-48a6-9b8a-1e1e702821f7)
- Call ID: 3635e2f7-4f78-48a6-9b8a-1e1e702821f7
+  AssignClass (f0f9c7cd-eb40-43b9-8cef-579195d33f1a)
+ Call ID: f0f9c7cd-eb40-43b9-8cef-579195d33f1a
   Args:
-    source: Princess_Marie_Bonaparte
+    source: Anne_Princess_Royal
     type: :Person
-  AddTriple (5b3b744e-d82d-4a10-9c92-2fca3d63e10d)
- Call ID: 5b3b744e-d82d-4a10-9c92-2fca3d63e10d
+  AssignClass (8e8fa7be-ec5c-4161-bdce-3aaf22b95cdb)
+ Call ID: 8e8fa7be-ec5c-4161-bdce-3aaf22b95cdb
+  Args:
+    type: :Man
+    source: Mark_Phillips
+  AssignClass (7f62f3fe-f013-4b01-962f-6032bafbfaad)
+ Call ID: 7f62f3fe-f013-4b01-962f-6032bafbfaad
+  Args:
+    source: Mark_Phillips
+    type: :Person
+  AddTriple (e62560db-2857-46c4-b49c-44e1c94ecd45)
+ Call ID: e62560db-2857-46c4-b49c-44e1c94ecd45
+  Args:
+    relation: :hasMother
+    target: Anne_Princess_Royal
+    source: Peter_Phillips
+  AddTriple (55ad9501-a06a-49f3-8d79-21743598ad0e)
+ Call ID: 55ad9501-a06a-49f3-8d79-21743598ad0e
   Args:
     relation: :hasFather
-    source: Prince_Peter_of_Greece_and_Denmark
-    target: Prince_George_of_Greece_and_Denmark
-  AddTriple (61e4ea66-316d-436e-ac27-a7a426168316)
- Call ID: 61e4ea66-316d-436e-ac27-a7a426168316
+    target: Mark_Phillips
+    source: Peter_Phillips
+  AssignClass (04011a64-99bb-4f86-accf-a4ac4fa15024)
+ Call ID: 04011a64-99bb-4f86-accf-a4ac4fa15024
   Args:
-    target: Princess_Marie_Bonaparte
-    relation: :hasMother
-    source: Prince_Peter_of_Greece_and_Denmark
-  AssignClass (ccd3edcc-3a8c-4350-920e-b637fde43c66)
- Call ID: ccd3edcc-3a8c-4350-920e-b637fde43c66
+    type: :Man
+    source: King_Charles_III
+  AssignClass (76c5f2ab-ce0f-4fc9-beaa-d8f08b2c1b33)
+ Call ID: 76c5f2ab-ce0f-4fc9-beaa-d8f08b2c1b33
   Args:
-    source: Eugénie
-    type: :Woman
-  AssignClass (1addbdc9-daf4-48e3-9d26-d53d362bd02b)
- Call ID: 1addbdc9-daf4-48e3-9d26-d53d362bd02b
-  Args:
-    source: Eugénie
     type: :Person
-  AddTriple (8b17b860-0d0f-4524-a9d0-df390ebd5154)
- Call ID: 8b17b860-0d0f-4524-a9d0-df390ebd5154
+    source: King_Charles_III
+  AddTriple (159d105a-bad3-4377-9405-cd010cc892eb)
+ Call ID: 159d105a-bad3-4377-9405-cd010cc892eb
   Args:
+    source: Peter_Phillips
+    target: King_Charles_III
+    relation: :hasRelation
+  AssignClass (e706955a-bc79-47be-95cb-1e8ca2776d45)
+ Call ID: e706955a-bc79-47be-95cb-1e8ca2776d45
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (3a307674-d490-48e3-8e6f-ebed285c5d16)
+ Call ID: 3a307674-d490-48e3-8e6f-ebed285c5d16
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Person
+  AddTriple (e3e36b32-e9c4-4675-a29b-9b88b944d325)
+ Call ID: e3e36b32-e9c4-4675-a29b-9b88b944d325
+  Args:
+    source: Queen_Elizabeth_II
+    target: Anne_Princess_Royal
+    relation: :isMotherOf
+  AssignClass (93f930ef-3907-42d8-aa3f-60f30698e8d4)
+ Call ID: 93f930ef-3907-42d8-aa3f-60f30698e8d4
+  Args:
+    source: Prince_Philip
+    type: :Man
+  AssignClass (88ff903a-17a8-4166-a766-e5996745bc1f)
+ Call ID: 88ff903a-17a8-4166-a766-e5996745bc1f
+  Args:
+    type: :Person
+    source: Prince_Philip
+  AddTriple (2ce9d566-d46f-4fad-af81-e1c24c052eb1)
+ Call ID: 2ce9d566-d46f-4fad-af81-e1c24c052eb1
+  Args:
+    relation: :hasFather
+    target: Prince_Philip
+    source: Anne_Princess_Royal
+  AddTriple (15f6b3b7-fe02-46e6-8ea8-1ab44793f32d)
+ Call ID: 15f6b3b7-fe02-46e6-8ea8-1ab44793f32d
+  Args:
+    relation: :hasMother
+    target: Queen_Elizabeth_II
+    source: Anne_Princess_Royal
+  AssignClass (304a33e0-0122-4d7a-a0a8-4ebbbe33b3b8)
+ Call ID: 304a33e0-0122-4d7a-a0a8-4ebbbe33b3b8
+  Args:
+    type: :Woman
+    source: Zara_Tindall
+  AssignClass (5ab805cc-87cb-4c4c-ac39-94fc003e2243)
+ Call ID: 5ab805cc-87cb-4c4c-ac39-94fc003e2243
+  Args:
+    type: :Person
+    source: Zara_Tindall
+  AddTriple (4d4dd958-e906-4e95-a3ba-bfe698a8c2c5)
+ Call ID: 4d4dd958-e906-4e95-a3ba-bfe698a8c2c5
+  Args:
+    target: Zara_Tindall
     relation: :hasSister
-    source: Prince_Peter_of_Greece_and_Denmark
-    target: Eugénie
-  AddTriple (769499f4-64ec-406a-829a-d18619706257)
- Call ID: 769499f4-64ec-406a-829a-d18619706257
+    source: Peter_Phillips
+  AddTriple (f8bbe69e-9695-4cd8-8dd8-1543445919c4)
+ Call ID: f8bbe69e-9695-4cd8-8dd8-1543445919c4
   Args:
-    source: Eugénie
-    relation: :hasFather
-    target: Prince_George_of_Greece_and_Denmark
-  AddTriple (8b675247-abae-4f37-ab89-c60b1767611c)
- Call ID: 8b675247-abae-4f37-ab89-c60b1767611c
-  Args:
-    source: Eugénie
     relation: :hasMother
-    target: Princess_Marie_Bonaparte
-  AssignClass (534b0040-d15d-4b80-a1f5-afdbf0a5bca3)
- Call ID: 534b0040-d15d-4b80-a1f5-afdbf0a5bca3
+    target: Anne_Princess_Royal
+    source: Zara_Tindall
+  AddTriple (dc4561fd-5124-49f0-aea8-662c0663df13)
+ Call ID: dc4561fd-5124-49f0-aea8-662c0663df13
   Args:
-    type: :Man
-    source: King_George_I_of_Greece
-  AssignClass (08108e3d-cd1d-4062-ba80-b677a49eed6f)
- Call ID: 08108e3d-cd1d-4062-ba80-b677a49eed6f
-  Args:
-    type: :Person
-    source: King_George_I_of_Greece
-  AddTriple (51648de1-a3ce-4ae1-bf84-704ef9cf1f6a)
- Call ID: 51648de1-a3ce-4ae1-bf84-704ef9cf1f6a
-  Args:
-    source: Prince_George_of_Greece_and_Denmark
+    source: Zara_Tindall
     relation: :hasFather
-    target: King_George_I_of_Greece
-  AssignClass (c25e8af0-aed1-4ed3-98ff-3fb4343e2a2c)
- Call ID: c25e8af0-aed1-4ed3-98ff-3fb4343e2a2c
+    target: Mark_Phillips
+  AssignClass (bb622988-1276-4ab3-9ef1-942fe3b58bc2)
+ Call ID: bb622988-1276-4ab3-9ef1-942fe3b58bc2
   Args:
-    type: :Man
-    source: Prince_Roland_Bonaparte
-  AssignClass (2bf174da-316c-41fb-943a-4b284e73675f)
- Call ID: 2bf174da-316c-41fb-943a-4b284e73675f
-  Args:
-    source: Prince_Roland_Bonaparte
-    type: :Person
-  AssignClass (23a2f7e0-9bca-4e79-9b12-a45de4396862)
- Call ID: 23a2f7e0-9bca-4e79-9b12-a45de4396862
-  Args:
+    source: Felicity_Wade
     type: :Woman
-    source: Marie-Félix_Blanc
-  AssignClass (85ff437b-51e4-4feb-b441-e75a391d3a8a)
- Call ID: 85ff437b-51e4-4feb-b441-e75a391d3a8a
+  AssignClass (286116ef-36f1-4c10-8aa9-2e89d2c9fff9)
+ Call ID: 286116ef-36f1-4c10-8aa9-2e89d2c9fff9
   Args:
-    source: Marie-Félix_Blanc
     type: :Person
-  AddTriple (458b6ad6-2d7a-4ff4-a090-1b9fab2adb5e)
- Call ID: 458b6ad6-2d7a-4ff4-a090-1b9fab2adb5e
+    source: Felicity_Wade
+  AddTriple (7e19aec2-dabe-4728-a3be-2b09ddd7fef3)
+ Call ID: 7e19aec2-dabe-4728-a3be-2b09ddd7fef3
   Args:
-    target: Prince_Roland_Bonaparte
+    source: Felicity_Wade
+    target: Mark_Phillips
     relation: :hasFather
-    source: Princess_Marie_Bonaparte
-  AddTriple (bfdbfc11-26f1-4b25-9711-d6561d4d1d64)
- Call ID: bfdbfc11-26f1-4b25-9711-d6561d4d1d64
+  AssignClass (56ccbd1c-951e-4a73-aeb1-21e03534ef1c)
+ Call ID: 56ccbd1c-951e-4a73-aeb1-21e03534ef1c
   Args:
-    source: Princess_Marie_Bonaparte
+    type: :Woman
+    source: Heather_Tonkin
+  AssignClass (345fac74-9db9-4460-b1f1-beeff643ce54)
+ Call ID: 345fac74-9db9-4460-b1f1-beeff643ce54
+  Args:
+    type: :Person
+    source: Heather_Tonkin
+  AddTriple (599e37e6-d581-40a3-a8b5-22e45f547cf5)
+ Call ID: 599e37e6-d581-40a3-a8b5-22e45f547cf5
+  Args:
     relation: :hasMother
-    target: Marie-Félix_Blanc
-  AssignClass (47c29546-cc60-4b01-a2e0-9135e5d20389)
- Call ID: 47c29546-cc60-4b01-a2e0-9135e5d20389
+    target: Heather_Tonkin
+    source: Felicity_Wade
+  AssignClass (22bb58aa-d15c-4098-b787-e56daf7488a1)
+ Call ID: 22bb58aa-d15c-4098-b787-e56daf7488a1
   Args:
-    source: Irina_Aleksandrovna_Ovtchinnikova
+    source: Stephanie_Phillips
     type: :Woman
-  AssignClass (6bd7f402-59a0-48c3-a3da-60ac87c91b5f)
- Call ID: 6bd7f402-59a0-48c3-a3da-60ac87c91b5f
+  AssignClass (fc877974-6058-44c0-81d7-23d39be55087)
+ Call ID: fc877974-6058-44c0-81d7-23d39be55087
   Args:
     type: :Person
-    source: Irina_Aleksandrovna_Ovtchinnikova
-  AssignClass (efc2ccdd-6361-477e-abc6-df696c40b927)
- Call ID: efc2ccdd-6361-477e-abc6-df696c40b927
+    source: Stephanie_Phillips
+  AddTriple (62e7ac54-c6e9-413c-a021-9c6243a44037)
+ Call ID: 62e7ac54-c6e9-413c-a021-9c6243a44037
   Args:
-    source: Princess_Tatiana_Radziwill
+    target: Mark_Phillips
+    relation: :hasFather
+    source: Stephanie_Phillips
+  AssignClass (fd665192-94e7-438f-92d2-32ef9cd9e5c0)
+ Call ID: fd665192-94e7-438f-92d2-32ef9cd9e5c0
+  Args:
     type: :Woman
-  AssignClass (2d09c4d2-a4ba-498e-b816-f5d1f2af426a)
- Call ID: 2d09c4d2-a4ba-498e-b816-f5d1f2af426a
+    source: Sandy_Pflueger
+  AssignClass (92024037-226b-4cdc-9882-aadc75117480)
+ Call ID: 92024037-226b-4cdc-9882-aadc75117480
   Args:
+    source: Sandy_Pflueger
     type: :Person
-    source: Princess_Tatiana_Radziwill
-  AddTriple (dfe36823-e076-490d-868c-e02932edd1cb)
- Call ID: dfe36823-e076-490d-868c-e02932edd1cb
+  AddTriple (043ec5f3-0ce4-4acb-a9d5-2e9dbc6c6c34)
+ Call ID: 043ec5f3-0ce4-4acb-a9d5-2e9dbc6c6c34
   Args:
-    target: Eugénie
     relation: :hasMother
-    source: Princess_Tatiana_Radziwill
-  AssignClass (df8aafcb-f96c-45ef-9a01-f0c3d620022a)
- Call ID: df8aafcb-f96c-45ef-9a01-f0c3d620022a
+    target: Sandy_Pflueger
+    source: Stephanie_Phillips
+  AssignClass (fb480182-2da8-45df-899a-36cf000c01ec)
+ Call ID: fb480182-2da8-45df-899a-36cf000c01ec
   Args:
-    type: :Man
-    source: Prince_Valdemar_of_Denmark
-  AssignClass (caf98e2e-998c-4a76-960c-715158a0ad3e)
- Call ID: caf98e2e-998c-4a76-960c-715158a0ad3e
-  Args:
-    source: Prince_Valdemar_of_Denmark
-    type: :Person
-  AssignClass (852388e3-88b8-4229-b320-bb858c9c5886)
- Call ID: 852388e3-88b8-4229-b320-bb858c9c5886
-  Args:
-    type: :Man
-    source: King_George_II
-  AssignClass (dd88b9f5-fe99-4b01-b05b-17306f8b8af3)
- Call ID: dd88b9f5-fe99-4b01-b05b-17306f8b8af3
-  Args:
-    source: King_George_II
-    type: :Person
-  AssignClass (5783fdc1-7d69-4bf7-b080-6b35eb0d0d9a)
- Call ID: 5783fdc1-7d69-4bf7-b080-6b35eb0d0d9a
-  Args:
-    type: :Man
-    source: King_Constantine_I
-  AssignClass (280bd85f-a5a4-4be1-80e4-108d2a198e02)
- Call ID: 280bd85f-a5a4-4be1-80e4-108d2a198e02
-  Args:
-    source: King_Constantine_I
-    type: :Person
-  AssignClass (7fd185e6-c82b-4216-8c85-ca2f4f41ede6)
- Call ID: 7fd185e6-c82b-4216-8c85-ca2f4f41ede6
-  Args:
-    source: Queen_Olga
+    source: Autumn_Kelly
     type: :Woman
-  AssignClass (6991147a-b84f-4c79-83f9-d05b30c98521)
- Call ID: 6991147a-b84f-4c79-83f9-d05b30c98521
+  AssignClass (d21040b2-2ee5-456a-bca7-b45a36e52b57)
+ Call ID: d21040b2-2ee5-456a-bca7-b45a36e52b57
   Args:
-    source: Queen_Olga
     type: :Person
-  AssignClass (6d6e4ba7-51b2-453c-83c3-91c67833a9b2)
- Call ID: 6d6e4ba7-51b2-453c-83c3-91c67833a9b2
+    source: Autumn_Kelly
+  AddTriple (996e164c-1a89-44e3-ba55-43c0d7fbe2b0)
+ Call ID: 996e164c-1a89-44e3-ba55-43c0d7fbe2b0
   Args:
+    target: Autumn_Kelly
+    relation: :hasRelation
+    source: Peter_Phillips
+  AddLiteral (25fb8750-e740-420e-b406-0f60e6438c3a)
+ Call ID: 25fb8750-e740-420e-b406-0f60e6438c3a
+  Args:
+    literal_value: 2008
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Peter_Phillips
+  AssignClass (8b590574-4a57-44b3-bbe0-d62acbeefedf)
+ Call ID: 8b590574-4a57-44b3-bbe0-d62acbeefedf
+  Args:
+    source: Savannah_Anne_Kathleen
     type: :Woman
-    source: Queen_Sophia
-  AssignClass (0fcfcec9-41e1-466f-94c2-7bb43d5031d2)
- Call ID: 0fcfcec9-41e1-466f-94c2-7bb43d5031d2
+  AssignClass (03b7b2d7-e500-48c4-851c-6aacdb1451b8)
+ Call ID: 03b7b2d7-e500-48c4-851c-6aacdb1451b8
   Args:
     type: :Person
-    source: Queen_Sophia
-  AssignClass (5d882741-b43d-4a77-b53f-75a1d0a246bc)
- Call ID: 5d882741-b43d-4a77-b53f-75a1d0a246bc
+    source: Savannah_Anne_Kathleen
+  AddTriple (d2dc38ca-e1bd-421f-a69b-2a81986f4e51)
+ Call ID: d2dc38ca-e1bd-421f-a69b-2a81986f4e51
   Args:
-    type: :Man
-    source: Prince_Paul
-  AssignClass (1b305db3-8560-4d2f-87f0-2fb17e334c61)
- Call ID: 1b305db3-8560-4d2f-87f0-2fb17e334c61
+    source: Savannah_Anne_Kathleen
+    relation: :hasMother
+    target: Autumn_Kelly
+  AddTriple (60bea8fc-a50e-432b-ac49-7caef4a28143)
+ Call ID: 60bea8fc-a50e-432b-ac49-7caef4a28143
   Args:
-    type: :Person
-    source: Prince_Paul
-  AssignClass (c804ab5c-5ee8-4267-b0b6-c0933c51b53a)
- Call ID: c804ab5c-5ee8-4267-b0b6-c0933c51b53a
+    relation: :hasFather
+    target: Peter_Phillips
+    source: Savannah_Anne_Kathleen
+  AssignClass (75b4a507-1ce0-4254-a1b0-fb06c603e5c2)
+ Call ID: 75b4a507-1ce0-4254-a1b0-fb06c603e5c2
   Args:
+    source: Isla_Elizabeth
     type: :Woman
-    source: Princess_Frederica_of_Hanover
-  AssignClass (94ac66af-d73e-4a85-8247-c668e0be00b2)
- Call ID: 94ac66af-d73e-4a85-8247-c668e0be00b2
+  AssignClass (5d731640-1990-41bb-bc1f-5814117a4574)
+ Call ID: 5d731640-1990-41bb-bc1f-5814117a4574
   Args:
     type: :Person
-    source: Princess_Frederica_of_Hanover
-  AssignClass (029f55fe-fd15-4047-8307-f3d920b0d7a4)
- Call ID: 029f55fe-fd15-4047-8307-f3d920b0d7a4
+    source: Isla_Elizabeth
+  AddTriple (14c2917e-c65b-4204-b044-bd921078f9bf)
+ Call ID: 14c2917e-c65b-4204-b044-bd921078f9bf
   Args:
-    source: Jehan_de_Monléon
-    type: :Man
-  AssignClass (7e494ab1-8f22-4c90-924f-04c5cdab8b46)
- Call ID: 7e494ab1-8f22-4c90-924f-04c5cdab8b46
+    source: Isla_Elizabeth
+    relation: :hasMother
+    target: Autumn_Kelly
+  AddTriple (a90ca83a-6cd5-44da-95f8-559b8458d08b)
+ Call ID: a90ca83a-6cd5-44da-95f8-559b8458d08b
   Args:
-    source: Jehan_de_Monléon
+    source: Isla_Elizabeth
+    relation: :hasFather
+    target: Peter_Phillips
+  AssignClass (26170075-b4f9-4ed1-b24d-4ea5b5c8af94)
+ Call ID: 26170075-b4f9-4ed1-b24d-4ea5b5c8af94
+  Args:
+    source: Lindsay_Wallace
+    type: :Woman
+  AssignClass (1022b4c8-8f87-4d27-93b5-e13ed93c7783)
+ Call ID: 1022b4c8-8f87-4d27-93b5-e13ed93c7783
+  Args:
+    source: Lindsay_Wallace
     type: :Person
-  AssignClass (b39116a3-3bad-477d-8709-5df91c34f41f)
- Call ID: b39116a3-3bad-477d-8709-5df91c34f41f
+  AddTriple (62051d4e-e207-49d5-8e27-f31fdcbd0039)
+ Call ID: 62051d4e-e207-49d5-8e27-f31fdcbd0039
   Args:
-    source: Lewis_Sloden
-    type: :Man
-  AssignClass (feb764d4-cfff-43bd-aed6-5ae8f09681bb)
- Call ID: feb764d4-cfff-43bd-aed6-5ae8f09681bb
-  Args:
-    type: :Person
-    source: Lewis_Sloden
-  AssignClass (9e1d8452-08d8-418d-bcbb-15d4749c8227)
- Call ID: 9e1d8452-08d8-418d-bcbb-15d4749c8227
-  Args:
-    source: Prince_Axel_of_Denmark
-    type: :Man
-  AssignClass (fcffdba6-4da7-45dd-a163-39c5e4e56291)
- Call ID: fcffdba6-4da7-45dd-a163-39c5e4e56291
-  Args:
-    type: :Person
-    source: Prince_Axel_of_Denmark
-  AssignClass (e21b946f-5f08-4493-b8e8-3bcb626464ee)
- Call ID: e21b946f-5f08-4493-b8e8-3bcb626464ee
-  Args:
-    type: :Man
-    source: King_Constantine_II
-  AssignClass (be17fc58-a272-4da3-bb7c-31190fd52c05)
- Call ID: be17fc58-a272-4da3-bb7c-31190fd52c05
-  Args:
-    source: King_Constantine_II
-    type: :Person
-  AssignClass (832bae4c-9185-461f-a139-3f8c3d011ba2)
- Call ID: 832bae4c-9185-461f-a139-3f8c3d011ba2
+    source: Peter_Phillips
+    target: Lindsay_Wallace
+    relation: :hasRelation
+  AssignClass (e537c3cd-7393-43e3-b156-7a33d5b7cd74)
+ Call ID: e537c3cd-7393-43e3-b156-7a33d5b7cd74
   Args:
     type: :Woman
-    source: Princess_Irene
-  AssignClass (e85d00b0-be4a-42df-9b4c-41e3fbb7c925)
- Call ID: e85d00b0-be4a-42df-9b4c-41e3fbb7c925
+    source: Harriet_Sperling
+  AssignClass (4cf92171-32d8-49fa-a111-ee1869da8759)
+ Call ID: 4cf92171-32d8-49fa-a111-ee1869da8759
+  Args:
+    source: Harriet_Sperling
+    type: :Person
+  AddTriple (59c10b65-9b82-4c07-877f-5a8ac2d156a7)
+ Call ID: 59c10b65-9b82-4c07-877f-5a8ac2d156a7
+  Args:
+    source: Peter_Phillips
+    relation: :hasRelation
+    target: Harriet_Sperling
+  AssignClass (de93a968-6cd6-4c97-b8c2-ed7868dc9d28)
+ Call ID: de93a968-6cd6-4c97-b8c2-ed7868dc9d28
+  Args:
+    source: Rupert_Sanders
+    type: :Man
+  AssignClass (844c4f8a-bf5e-480d-9ec2-f1a94ca0baf8)
+ Call ID: 844c4f8a-bf5e-480d-9ec2-f1a94ca0baf8
   Args:
     type: :Person
-    source: Princess_Irene
-  AssignClass (c551d1f3-37c3-4bd0-9568-3e3010e3a6f4)
- Call ID: c551d1f3-37c3-4bd0-9568-3e3010e3a6f4
+    source: Rupert_Sanders
+  AddTriple (d04f1e3a-e387-4b2f-a66d-6220a6b7b18d)
+ Call ID: d04f1e3a-e387-4b2f-a66d-6220a6b7b18d
   Args:
-    type: :Woman
-    source: Princess_Sophia_of_Greece
-  AssignClass (585ba8b3-6ef3-4689-8ebf-6ca5cf1a11ef)
- Call ID: 585ba8b3-6ef3-4689-8ebf-6ca5cf1a11ef
-  Args:
-    source: Princess_Sophia_of_Greece
-    type: :Person
-  AssignClass (955ddd31-2d41-4205-8cd7-2d751ec8485c)
- Call ID: 955ddd31-2d41-4205-8cd7-2d751ec8485c
-  Args:
-    source: Princess_Anne-Marie_of_Denmark
-    type: :Woman
-  AssignClass (6b1a9cbe-d848-4a61-8e40-aabdc39511a7)
- Call ID: 6b1a9cbe-d848-4a61-8e40-aabdc39511a7
-  Args:
-    type: :Person
-    source: Princess_Anne-Marie_of_Denmark
-  AssignClass (26cb61b4-3e95-4868-9636-db8a8cb69af1)
- Call ID: 26cb61b4-3e95-4868-9636-db8a8cb69af1
-  Args:
-    source: Princess_Alexia
-    type: :Woman
-  AssignClass (13fa1bd2-5ebd-4bc3-b3cc-3d9b46460d1c)
- Call ID: 13fa1bd2-5ebd-4bc3-b3cc-3d9b46460d1c
-  Args:
-    type: :Person
-    source: Princess_Alexia
-  Finish (90331ad2-8c1c-4651-8be7-2c6c900eb45f)
- Call ID: 90331ad2-8c1c-4651-8be7-2c6c900eb45f
+    source: Harriet_Sperling
+    relation: :hasFather
+    target: Rupert_Sanders
+  Finish (a81eb1b6-96da-4c4a-a3a9-70d6f63a6d92)
+ Call ID: a81eb1b6-96da-4c4a-a3a9-70d6f63a6d92
   Args:

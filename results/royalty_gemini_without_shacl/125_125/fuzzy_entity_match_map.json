@@ -1,86 +1,54 @@
 {
   "run_directory": "results/royalty_gemini_without_shacl",
   "task_directory": "results/royalty_gemini_without_shacl/125_125",
-  "text_file": "Q2072516.txt",
-  "text_key": "Q2072516",
-  "article": "https://en.wikipedia.org/wiki/Princess_Anne,_Duchess_of_Calabria",
-  "article_key": "Princess Anne, Duchess of Calabria",
+  "text_file": "Q2071496.txt",
+  "text_key": "Q2071496",
+  "article": "https://en.wikipedia.org/wiki/Prince_Amedeo_of_Belgium",
+  "article_key": "Prince Amedeo of Belgium",
   "main_entity": {
-    "uri": "http://example.com/data#Princess_Anne_dOrléans",
-    "qid": "Q2072516",
-    "label": "Princess Anne d'Orléans"
+    "uri": "http://example.com/data#Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este",
+    "qid": "Q2071496",
+    "label": "Prince Amedeo, Hereditary Archduke of Austria-Este"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Princess_Anne_dOrléans",
-      "qid": "Q2072516",
-      "label": "Princess Anne d'Orléans",
+      "uri": "http://example.com/data#Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este",
+      "qid": "Q2071496",
+      "label": "Prince Amedeo, Hereditary Archduke of Austria-Este",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Isabelle_of_Orléans-Braganza",
-      "qid": "Q261284",
-      "label": "Isabelle of Orléans-Braganza",
+      "uri": "http://example.com/data#Princess_Astrid-_Archduchess_of_Austria-Este",
+      "qid": "Q170194",
+      "label": "Princess Astrid, Archduchess of Austria-Este",
       "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Anne_of_Orléans",
-      "qid": "Q2278538",
-      "label": "Princess Anne of Orléans",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Isabelle_dOrléans",
-      "qid": "Q261322",
-      "label": "Princess Isabelle d’Orléans",
-      "distance": 2,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Princess_Anne_of_Orleans",
-      "extracted_local_name": "Princess_Anne_of_Orleans",
-      "embedding_text": "Princess Anne of Orleans",
-      "extracted_gender": "female",
+      "extracted_uri": "http://example.org/data/Lorenz%2C_Archduke_of_Austria-Este",
+      "extracted_local_name": "Lorenz%2C_Archduke_of_Austria-Este",
+      "embedding_text": "Lorenz, Archduke of Austria-Este",
+      "extracted_gender": "male",
       "matched": true,
-      "score": 0.9523809523809524,
-      "ground_truth_uri": "http://example.com/data#Princess_Anne_of_Orléans",
-      "ground_truth_qid": "Q2278538",
-      "ground_truth_label": "Princess Anne of Orléans",
+      "score": 0.75,
+      "ground_truth_uri": "http://example.com/data#Princess_Astrid-_Archduchess_of_Austria-Este",
+      "ground_truth_qid": "Q170194",
+      "ground_truth_label": "Princess Astrid, Archduchess of Austria-Este",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Princess Anne of Orléans",
-      "best_candidate_label": "Princess Anne of Orléans",
-      "best_candidate_qid": "Q2278538",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.9523809523809524
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Astrid, Archduchess of Austria-Este",
+      "best_candidate_label": "Princess Astrid, Archduchess of Austria-Este",
+      "best_candidate_qid": "Q170194",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.75
     },
     {
-      "extracted_uri": "http://example.org/data/Princess_Isabelle_of_Orleans-Braganza",
-      "extracted_local_name": "Princess_Isabelle_of_Orleans-Braganza",
-      "embedding_text": "Princess Isabelle of Orleans-Braganza",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 0.8695652173913043,
-      "ground_truth_uri": "http://example.com/data#Princess_Isabelle_dOrléans",
-      "ground_truth_qid": "Q261322",
-      "ground_truth_label": "Princess Isabelle d’Orléans",
-      "ground_truth_distance": 2,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Princess Isabelle of Orleans",
-      "best_candidate_label": "Princess Isabelle d’Orléans",
-      "best_candidate_qid": "Q261322",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.8695652173913043
-    },
-    {
-      "extracted_uri": "http://example.org/data/Henri_Count_of_Paris",
-      "extracted_local_name": "Henri_Count_of_Paris",
-      "embedding_text": "Henri Count of Paris",
+      "extracted_uri": "http://example.org/data/Amedeo_of_Austria-Este",
+      "extracted_local_name": "Amedeo_of_Austria-Este",
+      "embedding_text": "Amedeo of Austria-Este",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -89,16 +57,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Amedeo Marie de Belgique, Prince de Belgique",
+      "best_candidate_label": "Prince Amedeo, Hereditary Archduke of Austria-Este",
+      "best_candidate_qid": "Q2071496",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.36363636363636365
     },
     {
-      "extracted_uri": "http://example.org/data/Infanta_Alicia_Duchess_of_Calabria",
-      "extracted_local_name": "Infanta_Alicia_Duchess_of_Calabria",
-      "embedding_text": "Infanta Alicia Duchess of Calabria",
+      "extracted_uri": "http://example.org/data/Princess_Astrid_of_Belgium",
+      "extracted_local_name": "Princess_Astrid_of_Belgium",
+      "embedding_text": "Princess Astrid of Belgium",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -107,52 +75,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Anne Hélène Marie d'Orléans",
-      "best_candidate_label": "Princess Anne of Orléans",
-      "best_candidate_qid": "Q2278538",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.22950819672131148
-    },
-    {
-      "extracted_uri": "http://example.org/data/Infante_Alfonso_Duke_of_Calabria",
-      "extracted_local_name": "Infante_Alfonso_Duke_of_Calabria",
-      "embedding_text": "Infante Alfonso Duke of Calabria",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Amedeo Marie de Belgique, Prince de Belgique",
+      "best_candidate_label": "Prince Amedeo, Hereditary Archduke of Austria-Este",
+      "best_candidate_qid": "Q2071496",
       "best_candidate_gender": null,
-      "best_candidate_score": null
-    },
-    {
-      "extracted_uri": "http://example.org/data/Prince_Carlos_Duke_of_Calabria",
-      "extracted_local_name": "Prince_Carlos_Duke_of_Calabria",
-      "embedding_text": "Prince Carlos Duke of Calabria",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
-      "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.42857142857142855
     }
   ],
   "summary": {
-    "entities_total": 6,
-    "entities_matched": 2,
-    "entities_unmatched": 4
+    "entities_total": 3,
+    "entities_matched": 1,
+    "entities_unmatched": 2
   }
 }

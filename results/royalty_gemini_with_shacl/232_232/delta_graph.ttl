@@ -2,51 +2,55 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Michael_of_Kent a :Man,
+data:Frederick_William_I a :Man,
+        :Person .
+
+data:Georg_Friedrich a :Man,
+        :Person .
+
+data:Georg_Friedrich%2Ctarget a :Man,
         :Person ;
-    :alsoKnownAs "Michael George Charles Franklin"^^xsd:string ;
-    :hasBirthYear "1942"^^xsd:string ;
-    :hasBrother data:Prince_Edward_Duke_of_Kent ;
-    :hasFather data:Prince_George_Duke_of_Kent ;
-    :hasMarriageYear "1978"^^xsd:string ;
-    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasRelation data:Baroness_Marie-Christine_von_Reibnitz ;
-    :hasSister data:Princess_Alexandra .
+    :isSonOf data:Prince_Louis_Ferdinand_Jr .
 
-data:Baroness_Marie-Christine_von_Reibnitz a :Person,
-        :Woman .
-
-data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman .
-
-data:King_George_V a :Ancestor,
-        :Man,
+data:Prince_Ferdinand_of_Hohenzollern a :Man,
         :Person .
 
-data:Prince_Edward_Duke_of_Kent a :Man,
-        :Person .
-
-data:Prince_George_Duke_of_Kent a :Ancestor,
-        :Man,
+data:Prince_Wilhelm_of_Prussia a :Man,
         :Person ;
-    :hasFather data:King_George_V ;
-    :hasMother data:Queen_Mary .
+    :isBrotherOf data:Louis_Ferdinand_Prince_of_Prussia .
 
-data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person .
+data:Wilhelm_II a :Man,
+        :Person ;
+    :isAncestorOf data:Louis_Ferdinand_Prince_of_Prussia .
 
-data:Princess_Alexandra a :Person,
-        :Woman .
-
-data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
-        :Person,
+data:Kira_Kirillovna a :Person,
         :Woman ;
-    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+    :hasFather data:Kyril_Vladimirovich ;
+    :hasMother data:Victoria_Melita .
 
-data:Queen_Mary a :Ancestor,
+data:Kyril_Vladimirovich a :Ancestor,
+        :Man,
+        :Person .
+
+data:Victoria_Melita a :Ancestor,
         :Person,
         :Woman .
+
+data:William_German_Crown_Prince a :Ancestor,
+        :Man,
+        :Person .
+
+data:Louis_Ferdinand_Prince_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1994 ;
+    :hasFather data:William_German_Crown_Prince ;
+    :hasMarriageYear 1938 ;
+    :hasRelation data:Kira_Kirillovna ;
+    :hasSon data:Prince_Louis_Ferdinand_Jr .
+
+data:Prince_Louis_Ferdinand_Jr a :Ancestor,
+        :Man,
+        :Person ;
+    :hasDeathYear 1977 .
 

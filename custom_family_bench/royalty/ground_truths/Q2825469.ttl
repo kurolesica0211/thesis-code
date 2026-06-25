@@ -7,9 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Adélaïde_de_Clermont-Tonnerre a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Adélaïde_de_Clermont-Tonnerre a :Person ;
     rdfs:label "Adélaïde de Clermont-Tonnerre" ;
     data:posIndicesFull "0:29",
         "97:126" ;
@@ -20,9 +18,13 @@ data:Adélaïde_de_Clermont-Tonnerre a :Person,
     data:wdtLink wdt:Q2825469 ;
     :hasSex data:female .
 
+data:male a :Male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
 

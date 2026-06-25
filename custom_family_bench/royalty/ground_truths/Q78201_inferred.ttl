@@ -1,0 +1,60 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Margarita_of_Leiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Margarita of Leiningen"^^xsd:string ;
+    data:posIndicesFull "188:219"^^xsd:string ;
+    data:posIndicesPart "422:430"^^xsd:string ;
+    data:wdtLink wdt:Q2591944 ;
+    :alsoKnownAs "Margarita, Princess of Hohenzollern"^^xsd:string,
+        "Princess Margarita, Princess of Hohenzollern"^^xsd:string ;
+    :hasChild data:Karl_Friedrich-_Prince_of_Hohenzollern ;
+    :hasRelation data:Karl_Friedrich-_Prince_of_Hohenzollern,
+        data:Princess_Margarita_of_Leiningen ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margarita_of_Leiningen ;
+    :hasSon data:Karl_Friedrich-_Prince_of_Hohenzollern ;
+    :isAncestorOf data:Karl_Friedrich-_Prince_of_Hohenzollern ;
+    :isAuntOf data:Karl_Friedrich-_Prince_of_Hohenzollern ;
+    :isBloodrelationOf data:Princess_Margarita_of_Leiningen ;
+    :isMotherOf data:Karl_Friedrich-_Prince_of_Hohenzollern ;
+    :isParentOf data:Karl_Friedrich-_Prince_of_Hohenzollern ;
+    :isSiblingOf data:Princess_Margarita_of_Leiningen ;
+    :isSisterOf data:Princess_Margarita_of_Leiningen .
+
+data:Karl_Friedrich-_Prince_of_Hohenzollern a :Man,
+        :Person ;
+    rdfs:label "Karl Friedrich, Prince of Hohenzollern"^^xsd:string ;
+    data:wdtLink wdt:Q78201 ;
+    :alsoKnownAs "Karl Friedrich Fürst von Hohenzollern-Sigmaringen"^^xsd:string ;
+    :hasAncestor data:Princess_Margarita_of_Leiningen ;
+    :hasBrother data:Karl_Friedrich-_Prince_of_Hohenzollern ;
+    :hasMother data:Princess_Margarita_of_Leiningen ;
+    :hasParent data:Princess_Margarita_of_Leiningen ;
+    :hasRelation data:Karl_Friedrich-_Prince_of_Hohenzollern,
+        data:Princess_Margarita_of_Leiningen ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Karl_Friedrich-_Prince_of_Hohenzollern ;
+    :isBrotherOf data:Karl_Friedrich-_Prince_of_Hohenzollern ;
+    :isChildOf data:Princess_Margarita_of_Leiningen ;
+    :isSiblingOf data:Karl_Friedrich-_Prince_of_Hohenzollern ;
+    :isSonOf data:Princess_Margarita_of_Leiningen .
+

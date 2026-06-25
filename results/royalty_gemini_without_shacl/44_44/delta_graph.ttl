@@ -2,39 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Anne-Marie_of_Greece a :Person,
-        :Woman .
-
-data:Christian_of_Denmark a :Man,
-        :Person ;
-    :isBrotherOf data:Isabella_of_Denmark .
-
-data:Vincent_of_Denmark a :Man,
-        :Person ;
-    :isBrotherOf data:Isabella_of_Denmark .
-
-data:Frederik_X a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Henrik_of_Denmark ;
-    :hasMother data:Margrethe_II .
-
-data:Henrik_of_Denmark a :Ancestor,
-        :Man,
-        :Person .
-
-data:Margrethe_II a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Mary_of_Denmark a :Ancestor,
-        :Person,
-        :Woman .
+data:Henrik a :Person .
 
 data:Isabella_of_Denmark a :Person,
         :Woman ;
     :hasBirthYear 2007 ;
+    :hasBrother data:Christian_Crown_Prince,
+        data:Vincent ;
     :hasFather data:Frederik_X ;
-    :hasMother data:Mary_of_Denmark ;
-    :hasSex "Female"^^xsd:string .
+    :hasMother data:Mary .
+
+data:Christian_Crown_Prince a :Man,
+        :Person .
+
+data:Frederik_X a :Man,
+        :Person ;
+    :hasFather data:Henrik_Prince ;
+    :hasMother data:Margrethe_II .
+
+data:Henrik_Prince a :Man .
+
+data:Margrethe_II a :Person,
+        :Woman .
+
+data:Mary a :Person,
+        :Woman .
+
+data:Vincent a :Man,
+        :Person .
 

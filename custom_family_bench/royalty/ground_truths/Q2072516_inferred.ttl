@@ -1,0 +1,242 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Man,
+        :Person ;
+    rdfs:label "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo"^^xsd:string ;
+    data:posIndicesFull "1164:1168"^^xsd:string ;
+    data:wdtLink wdt:Q75317760 ;
+    :alsoKnownAs "Jaime"^^xsd:string,
+        "Jaime de Borbón y Landaluce"^^xsd:string,
+        "Jaime di Borbone-Due Sicilie"^^xsd:string ;
+    :hasBrother data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
+    :hasRelation data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
+    :isBrotherOf data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo ;
+    :isSiblingOf data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo .
+
+data:female a :Female .
+
+data:Infanta_Alicia-_Duchess_of_Calabria a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Infanta Alicia, Duchess of Calabria"^^xsd:string ;
+    data:posIndicesFull "3007:3042"^^xsd:string ;
+    data:posIndicesPart "3155:3162"^^xsd:string,
+        "3166:3174"^^xsd:string ;
+    data:wdtLink wdt:Q33218 ;
+    :alsoKnownAs "Princess Alicia Maria Teresa Francesca Luisa Pia Anna Valeria of Bourbon-Parma"^^xsd:string,
+        "Princess Alicia of Bourbon-Parma"^^xsd:string ;
+    :hasChild data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasRelation data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :hasSon data:Infante_Carlos-_Duke_of_Calabria ;
+    :isAncestorOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isAuntOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isBloodrelationOf data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :isMotherOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isParentOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isSiblingOf data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :isSisterOf data:Infanta_Alicia-_Duchess_of_Calabria .
+
+data:Infante_Alfonso-_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Infante Alfonso, Duke of Calabria"^^xsd:string ;
+    data:posIndicesFull "1828:1861"^^xsd:string ;
+    data:posIndicesPart "2125:2129"^^xsd:string,
+        "2596:2600"^^xsd:string,
+        "2604:2612"^^xsd:string,
+        "2780:2784"^^xsd:string,
+        "2800:2808"^^xsd:string,
+        "2880:2884"^^xsd:string,
+        "2955:2963"^^xsd:string,
+        "3132:3140"^^xsd:string,
+        "3146:3150"^^xsd:string,
+        "3166:3174"^^xsd:string ;
+    data:wdtLink wdt:Q1333222 ;
+    :hasBrother data:Infante_Alfonso-_Duke_of_Calabria ;
+    :hasChild data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasRelation data:Infante_Alfonso-_Duke_of_Calabria,
+        data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasSex data:male ;
+    :hasSon data:Infante_Carlos-_Duke_of_Calabria ;
+    :isAncestorOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isBloodrelationOf data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isFatherOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isParentOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isSiblingOf data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isUncleOf data:Infante_Carlos-_Duke_of_Calabria .
+
+data:Isabelle_of_Orléans-Braganza a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Isabelle of Orléans-Braganza"^^xsd:string ;
+    data:posIndicesFull "1127:1155"^^xsd:string,
+        "930:958"^^xsd:string ;
+    data:posIndicesPart "2767:2774"^^xsd:string ;
+    data:wdtLink wdt:Q261284 ;
+    :alsoKnownAs "Isabelle of Orleans-Braganza"^^xsd:string ;
+    :hasChild data:Princess_Anne_dOrléans ;
+    :hasDaughter data:Princess_Anne_dOrléans ;
+    :hasRelation data:Isabelle_of_Orléans-Braganza,
+        data:Princess_Anne_dOrléans ;
+    :hasSex data:female ;
+    :hasSister data:Isabelle_of_Orléans-Braganza ;
+    :isAncestorOf data:Princess_Anne_dOrléans ;
+    :isAuntOf data:Princess_Anne_dOrléans ;
+    :isBloodrelationOf data:Isabelle_of_Orléans-Braganza ;
+    :isMotherOf data:Princess_Anne_dOrléans ;
+    :isParentOf data:Princess_Anne_dOrléans ;
+    :isSiblingOf data:Isabelle_of_Orléans-Braganza ;
+    :isSisterOf data:Isabelle_of_Orléans-Braganza .
+
+data:Princess_Isabelle_dOrléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Isabelle d’Orléans"^^xsd:string ;
+    data:posIndicesFull "1118:1146"^^xsd:string,
+        "921:949"^^xsd:string ;
+    data:posIndicesPart "1274:1282"^^xsd:string,
+        "1520:1528"^^xsd:string,
+        "1735:1743"^^xsd:string,
+        "1960:1968"^^xsd:string,
+        "2563:2571"^^xsd:string ;
+    data:wdtLink wdt:Q261322 ;
+    :alsoKnownAs "Princess Isabelle of Orleans"^^xsd:string ;
+    :hasChild data:Princess_Anne_of_Orléans ;
+    :hasDaughter data:Princess_Anne_of_Orléans ;
+    :hasRelation data:Princess_Anne_of_Orléans,
+        data:Princess_Isabelle_dOrléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Isabelle_dOrléans ;
+    :isAncestorOf data:Princess_Anne_of_Orléans ;
+    :isAuntOf data:Princess_Anne_of_Orléans ;
+    :isBloodrelationOf data:Princess_Isabelle_dOrléans ;
+    :isMotherOf data:Princess_Anne_of_Orléans ;
+    :isParentOf data:Princess_Anne_of_Orléans ;
+    :isSiblingOf data:Princess_Isabelle_dOrléans ;
+    :isSisterOf data:Princess_Isabelle_dOrléans .
+
+data:Princess_Anne_dOrléans a :Person,
+        :Woman ;
+    rdfs:label "Princess Anne d'Orléans"^^xsd:string ;
+    data:wdtLink wdt:Q2072516 ;
+    :alsoKnownAs "Anne Maruerite Brigitte Marie d'Orléans"^^xsd:string,
+        "Anne d’Orléans"^^xsd:string,
+        "Princess Anne Marguerite Brigitte Marie d'Orléans"^^xsd:string,
+        "Princess Anne d’Orléans"^^xsd:string ;
+    :hasAncestor data:Isabelle_of_Orléans-Braganza ;
+    :hasMother data:Isabelle_of_Orléans-Braganza ;
+    :hasParent data:Isabelle_of_Orléans-Braganza ;
+    :hasRelation data:Isabelle_of_Orléans-Braganza,
+        data:Princess_Anne_dOrléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Anne_dOrléans ;
+    :isBloodrelationOf data:Princess_Anne_dOrléans ;
+    :isChildOf data:Isabelle_of_Orléans-Braganza ;
+    :isDaughterOf data:Isabelle_of_Orléans-Braganza ;
+    :isSiblingOf data:Princess_Anne_dOrléans ;
+    :isSisterOf data:Princess_Anne_dOrléans .
+
+data:Princess_Anne_of_Orléans a :Person,
+        :Woman ;
+    rdfs:label "Princess Anne of Orléans"^^xsd:string ;
+    data:posIndicesFull "971:995"^^xsd:string ;
+    data:posIndicesPart "1274:1282"^^xsd:string,
+        "1283:1287"^^xsd:string,
+        "1520:1528"^^xsd:string,
+        "1529:1533"^^xsd:string,
+        "1735:1743"^^xsd:string,
+        "1744:1748"^^xsd:string,
+        "1960:1968"^^xsd:string,
+        "2563:2571"^^xsd:string,
+        "2572:2576"^^xsd:string,
+        "2767:2774"^^xsd:string,
+        "2912:2916"^^xsd:string,
+        "3115:3119"^^xsd:string ;
+    data:wdtLink wdt:Q2278538 ;
+    :alsoKnownAs "Anne Hélène Marie d'Orléans"^^xsd:string,
+        "Anne d'Orléans"^^xsd:string,
+        "Princess Anne Hélène Marie d'Orléans"^^xsd:string,
+        "Princess Anne, Dowager Duchess of Aosta"^^xsd:string,
+        "Princess Anne, Duchess of Aosta"^^xsd:string,
+        "Princess Anne, The Dowager Duchess of Aosta"^^xsd:string,
+        "Princess Anne, The Duchess of Aosta"^^xsd:string ;
+    :hasAncestor data:Princess_Isabelle_dOrléans ;
+    :hasMother data:Princess_Isabelle_dOrléans ;
+    :hasParent data:Princess_Isabelle_dOrléans ;
+    :hasRelation data:Princess_Anne_of_Orléans,
+        data:Princess_Isabelle_dOrléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Anne_of_Orléans ;
+    :isBloodrelationOf data:Princess_Anne_of_Orléans ;
+    :isChildOf data:Princess_Isabelle_dOrléans ;
+    :isDaughterOf data:Princess_Isabelle_dOrléans ;
+    :isSiblingOf data:Princess_Anne_of_Orléans ;
+    :isSisterOf data:Princess_Anne_of_Orléans .
+
+data:Infante_Carlos-_Duke_of_Calabria a :Man,
+        :Person ;
+    rdfs:label "Infante Carlos, Duke of Calabria"^^xsd:string ;
+    data:posIndicesFull "757:789"^^xsd:string ;
+    data:posIndicesPart "1512:1518"^^xsd:string,
+        "1626:1634"^^xsd:string,
+        "1790:1796"^^xsd:string,
+        "1798:1802"^^xsd:string,
+        "1938:1944"^^xsd:string,
+        "2125:2129"^^xsd:string,
+        "2257:2263"^^xsd:string,
+        "2500:2506"^^xsd:string,
+        "2596:2600"^^xsd:string,
+        "2604:2612"^^xsd:string,
+        "2780:2784"^^xsd:string,
+        "2800:2808"^^xsd:string,
+        "2880:2884"^^xsd:string,
+        "2955:2963"^^xsd:string,
+        "3132:3140"^^xsd:string,
+        "3146:3150"^^xsd:string,
+        "3166:3174"^^xsd:string ;
+    data:wdtLink wdt:Q526743 ;
+    :alsoKnownAs "Carlos Maria Alfonso Marcelo de Borbón-Dos Sicilias y de Borbón-Parma, Infante of Spain, Duke of Calabria"^^xsd:string,
+        "Carlos de Borbón-Dos Sicilias y de Borbón-Parma"^^xsd:string,
+        "Carlos of Bourbon-Two Sicilies"^^xsd:string,
+        "Infante Carlos of Spain, Prince of Bourbon-Two Sicilies, Duke of Calabria"^^xsd:string,
+        "Prince Carlos of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasAncestor data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria ;
+    :hasBrother data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasFather data:Infante_Alfonso-_Duke_of_Calabria ;
+    :hasMother data:Infanta_Alicia-_Duchess_of_Calabria ;
+    :hasParent data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria ;
+    :hasRelation data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria,
+        data:Infante_Carlos-_Duke_of_Calabria ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isChildOf data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria ;
+    :isSiblingOf data:Infante_Carlos-_Duke_of_Calabria ;
+    :isSonOf data:Infanta_Alicia-_Duchess_of_Calabria,
+        data:Infante_Alfonso-_Duke_of_Calabria .
+

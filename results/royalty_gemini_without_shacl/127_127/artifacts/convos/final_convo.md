@@ -69,46 +69,32 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Baroness Gösta von dem Bussche-Haddenhausen (German: Freiin Gösta Julie Adelheid Marion Marie von dem Bussche-Haddenhausen; 26 January 1902 – 13 June 1996) was a German noblewoman and the mother of Prince Claus of the Netherlands.
-Life in Germany
+Countess Adelaide of Lippe-Biesterfeld (22 June 1870 – 3 September 1948) was the eldest child of Ernest II, Count of Lippe-Biesterfeld and Countess Karoline von Wartensleben.
+Family and early life
 
-Gösta was born at Döbeln, Kingdom of Saxony, German Empire (now Saxony, Germany), the second child and daughter of Baron George von dem Bussche-Haddenhausen (1869–1923), and his wife, Baroness Gabriele von dem Bussche-Ippenburg (1877–1973).
-Her father belonged to the Bussche-Haddenhausen branch of the Bussche family, and her mother belonged to the Bussche-Ippenburg branch.
-Both of Gösta's parents were descended from Clamor von dem Bussche (1532–1573).
-Gösta's mother was the heir of Dötzingen Estate near Hitzacker, which her maternal grandfather had inherited from the Counts von Oeynhausen after 1918.
-Gösta's father was an officer in the Royal Saxon Army.
-Dötzingen Estate later passed on to Gösta's brother Baron Julius von dem Bussche-Haddenhausen (1906–1977).
-After Gösta's return from Africa and her husband's death in 1963, she spent the rest of her life in Dötzingen.
-Gösta died at the age of 94 in Hitzacker, Germany.
-Marriage
+Adelaide was born on 22 June 1870 to Ernest II, Count of Lippe-Biesterfeld and his wife, Countess Karoline von Wartensleben.
+After the death of Woldemar, Prince of Lippe in 1895, her parents were involved in a regency and succession dispute to the principality of Lippe.
+Consequently, two branches of the House of Lippe argued over rights to a regency.
+Prince Adolf of Schaumburg-Lippe, a brother-in-law of Wilhelm II, German Emperor was chosen, but a court-settlement allowed Ernest to become the regent of Lippe-Detmold on 17 July 1897.
+Marriage and issue
 
-Gösta married Claus Felix von Amsberg (1890–1953), son of Wilhelm von Amsberg and Elise von Vieregge, on 4 September 1924 at Hitzacker.
-Together, Gösta and Claus Felix had six daughters and one son:
+At Neudorf, Adelaide married Prince Friedrich Johann of Saxe-Meiningen, son of Georg II, Duke of Saxe-Meiningen, on 24 April 1889.
+They had six children together:
 
 
-Life in Africa
+Role in Lippe succession dispute
 
-Gösta's husband Claus Felix had returned from the Tanganyika Territory (now Tanzania), a German colony, during World War I to become the manager of Dötzingen Estate in 1917.
-Shortly after, the estate passed on to the Bussche family.
-In 1924, Gösta and Claus Felix married, and in 1926, their son Claus was born at Dötzingen.
-Claus Felix was the manager of a German-British tea and sisal plantation.
-Claus was sent back to a German boarding school in 1933, but he returned to Africa in 1936.
-In 1938, Gösta returned to Germany, and Claus was sent to a boarding school in Misdroy before being drafted by the army.
-Gösta's husband returned to Germany in 1947.
-Family relations
-
-Gösta was a second cousin of Dorothea von Salviati (wife of Wilhelm, German Crown Prince's eldest son Prince Wilhelm of Prussia), both being great-granddaughters of Heinrich von Salviati and Caroline Rahlenbeck.
-Gösta's younger and only brother Julius (1906–1977) was married to Anna-Elisabeth von Pfuel (1909–2005).
-Gösta's family's home, Dötzingen Castle in Lower Saxony, had passed to her maternal grandfather, Eberhard Friedrich Gustav von dem Bussche-Ippenburg, from the Counts von Oeynhausen.
-At a dinner party hosted by a distant cousin, the Count von Oeynhausen-Sierstorpff in Bad Driburg, on New Year's Eve 1962, Gösta's son Claus met then-Princess Beatrix of the Netherlands for the first time.
-Beatrix, like Gösta and Claus, was a cousin of the Counts von Oeynhausen: Beatrix's paternal grandmother Armgard von Cramm was a daughter of Baron Aschwin of Sierstorpff-Cramm (1846–1909) and his wife, Baroness Hedwig von Sierstorpff-Driburg (1848–1900).
-Additionally, Armgard's elder sister Baroness Hedwig von Sierstorpff-Cramm (1874–1907) was the heir to her mother's family's Driburg Estate.
+Two branches of the House of Lippe debated over rights to the principality of Lippe-Detmold.
+As Adelaide's great-grandmother was a member of the lower nobility (Modeste Christiane von Unruh) and has one quarter commoner ancestry, her family's claim to full royalty was challenged.
+This claim threatened the succession to Saxe-Meiningen, as Adelaide was married to the Duke of Saxe-Meiningen's heir apparent; were her father deemed a lesser royal status, it might be thought that her own claim was not equal enough for her husband's family.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -124,39 +110,9 @@ Additionally, Armgard's elder sister Baroness Hedwig von Sierstorpff-Cramm (1874
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -171,6 +127,23 @@ Additionally, Armgard's elder sister Baroness Hedwig von Sierstorpff-Cramm (1874
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -188,6 +161,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -255,29 +243,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -286,6 +266,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -298,6 +286,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -306,17 +296,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -344,6 +336,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -359,380 +435,117 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0d8e61db-27c3-4fd4-a0a2-c8548b9cfaa6)
- Call ID: 0d8e61db-27c3-4fd4-a0a2-c8548b9cfaa6
+  AssignClass (a1faa189-121d-4bd2-ab67-4a8e7f3e70cb)
+ Call ID: a1faa189-121d-4bd2-ab67-4a8e7f3e70cb
   Args:
+    source: Adelaide_of_Lippe-Biesterfeld
     type: :Woman
-    source: Gösta_von_dem_Bussche-Haddenhausen
-  AssignClass (5f0a8449-54de-443c-9e77-acdace1991fe)
- Call ID: 5f0a8449-54de-443c-9e77-acdace1991fe
+  AssignClass (e9a518b2-e175-4bea-b870-1315d1244ff9)
+ Call ID: e9a518b2-e175-4bea-b870-1315d1244ff9
   Args:
+    source: Adelaide_of_Lippe-Biesterfeld
     type: :Person
-    source: Gösta_von_dem_Bussche-Haddenhausen
-  AddLiteral (3346ead9-8e30-4d12-8ab6-a27f6a63a7e1)
- Call ID: 3346ead9-8e30-4d12-8ab6-a27f6a63a7e1
+  AddLiteral (85490838-3b00-4c53-88f2-46d934bf9197)
+ Call ID: 85490838-3b00-4c53-88f2-46d934bf9197
   Args:
-    source: Gösta_von_dem_Bussche-Haddenhausen
-    literal_value: 1902
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (d291db53-0893-47d3-9969-898edb0bf6d4)
- Call ID: d291db53-0893-47d3-9969-898edb0bf6d4
+    literal_value: 1870
+    source: Adelaide_of_Lippe-Biesterfeld
+  AddLiteral (694c1d05-b441-432f-9339-2c0270a6d9f6)
+ Call ID: 694c1d05-b441-432f-9339-2c0270a6d9f6
   Args:
-    source: Gösta_von_dem_Bussche-Haddenhausen
-    literal_value: 1996
     relation: :hasDeathYear
+    literal_value: 1948
+    source: Adelaide_of_Lippe-Biesterfeld
     literal_type: xsd:integer
-  AssignClass (0b8eb163-465f-4426-ad3e-2b94594548f1)
- Call ID: 0b8eb163-465f-4426-ad3e-2b94594548f1
+  AssignClass (ea781556-c606-4129-8a2d-7a3930dcb8df)
+ Call ID: ea781556-c606-4129-8a2d-7a3930dcb8df
   Args:
+    source: Ernest_II_of_Lippe-Biesterfeld
     type: :Man
-    source: George_von_dem_Bussche-Haddenhausen
-  AssignClass (6ca1056c-7ed0-4830-9477-47d5afa0cffe)
- Call ID: 6ca1056c-7ed0-4830-9477-47d5afa0cffe
+  AssignClass (daea230d-414d-40a9-aa0f-62bd8899ecfc)
+ Call ID: daea230d-414d-40a9-aa0f-62bd8899ecfc
   Args:
-    type: :Person
-    source: George_von_dem_Bussche-Haddenhausen
-  AddLiteral (94d973c4-1679-4ad8-ab0a-739d73f40697)
- Call ID: 94d973c4-1679-4ad8-ab0a-739d73f40697
+    source: Ernest_II_of_Lippe-Biesterfeld
+    type: :Ancestor
+  AssignClass (6ac0a75f-c329-4d11-a9ec-9478d74d6c5a)
+ Call ID: 6ac0a75f-c329-4d11-a9ec-9478d74d6c5a
   Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1869
-    source: George_von_dem_Bussche-Haddenhausen
-  AddLiteral (b45b5800-aca0-4eeb-8629-ef8dc9928e94)
- Call ID: b45b5800-aca0-4eeb-8629-ef8dc9928e94
-  Args:
-    literal_value: 1923
-    source: George_von_dem_Bussche-Haddenhausen
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AssignClass (e112f2f5-94fe-41a5-96ff-a3abae16f4c5)
- Call ID: e112f2f5-94fe-41a5-96ff-a3abae16f4c5
-  Args:
+    source: Karoline_von_Wartensleben
     type: :Woman
-    source: Gabriele_von_dem_Bussche-Ippenburg
-  AssignClass (d688ff4f-346a-458c-a5ab-a15dec48f631)
- Call ID: d688ff4f-346a-458c-a5ab-a15dec48f631
+  AssignClass (2dde63df-a1a7-488c-b8d1-5df9fa915bbe)
+ Call ID: 2dde63df-a1a7-488c-b8d1-5df9fa915bbe
   Args:
-    type: :Person
-    source: Gabriele_von_dem_Bussche-Ippenburg
-  AddLiteral (9266da16-6efe-4cef-afa0-2ac88e1dcf79)
- Call ID: 9266da16-6efe-4cef-afa0-2ac88e1dcf79
+    source: Karoline_von_Wartensleben
+    type: :Ancestor
+  AddTriple (f609f495-97da-41e1-93a6-cf28f4671a63)
+ Call ID: f609f495-97da-41e1-93a6-cf28f4671a63
   Args:
-    source: Gabriele_von_dem_Bussche-Ippenburg
-    literal_value: 1877
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (0aba1df1-3f26-4587-97a8-852426325ae6)
- Call ID: 0aba1df1-3f26-4587-97a8-852426325ae6
-  Args:
-    source: Gabriele_von_dem_Bussche-Ippenburg
-    literal_value: 1973
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AddTriple (4df99979-4cc8-46f9-961e-4d74e18a9c10)
- Call ID: 4df99979-4cc8-46f9-961e-4d74e18a9c10
-  Args:
-    target: George_von_dem_Bussche-Haddenhausen
+    target: Ernest_II_of_Lippe-Biesterfeld
     relation: :hasFather
-    source: Gösta_von_dem_Bussche-Haddenhausen
-  AddTriple (3c8e5abf-081f-4592-9711-44be4cc8bdf6)
- Call ID: 3c8e5abf-081f-4592-9711-44be4cc8bdf6
+    source: Adelaide_of_Lippe-Biesterfeld
+  AddTriple (223c743c-828e-4ceb-a109-4b11d7b1e98f)
+ Call ID: 223c743c-828e-4ceb-a109-4b11d7b1e98f
   Args:
+    target: Karoline_von_Wartensleben
     relation: :hasMother
-    source: Gösta_von_dem_Bussche-Haddenhausen
-    target: Gabriele_von_dem_Bussche-Ippenburg
-  AssignClass (612be9b4-16e3-42d7-8cf6-99171cb51e58)
- Call ID: 612be9b4-16e3-42d7-8cf6-99171cb51e58
+    source: Adelaide_of_Lippe-Biesterfeld
+  AssignClass (8e5f626c-b401-4420-b9e9-a912c0d8312c)
+ Call ID: 8e5f626c-b401-4420-b9e9-a912c0d8312c
   Args:
+    source: Friedrich_Johann_of_Saxe-Meiningen
     type: :Man
-    source: Clamor_von_dem_Bussche
-  AssignClass (d48b8b47-9ac9-4432-8918-1a1377beb59c)
- Call ID: d48b8b47-9ac9-4432-8918-1a1377beb59c
+  AssignClass (2793cbc3-9640-47b9-b6a3-36429807c76b)
+ Call ID: 2793cbc3-9640-47b9-b6a3-36429807c76b
   Args:
+    source: Friedrich_Johann_of_Saxe-Meiningen
     type: :Person
-    source: Clamor_von_dem_Bussche
-  AddTriple (4ee15895-9854-483a-93cd-a1401b5d6888)
- Call ID: 4ee15895-9854-483a-93cd-a1401b5d6888
+  AddLiteral (34cbd2ef-b5db-4d4c-a949-18675800704f)
+ Call ID: 34cbd2ef-b5db-4d4c-a949-18675800704f
   Args:
-    target: Clamor_von_dem_Bussche
-    relation: :hasAncestor
-    source: George_von_dem_Bussche-Haddenhausen
-  AddTriple (72a9477d-3dc4-4778-9bf0-c5c665f0ba7a)
- Call ID: 72a9477d-3dc4-4778-9bf0-c5c665f0ba7a
-  Args:
-    source: Gabriele_von_dem_Bussche-Ippenburg
-    relation: :hasAncestor
-    target: Clamor_von_dem_Bussche
-  AssignClass (8616a840-c9e1-4bea-9541-102846a09d6b)
- Call ID: 8616a840-c9e1-4bea-9541-102846a09d6b
-  Args:
-    type: :Man
-    source: Julius_von_dem_Bussche-Haddenhausen
-  AssignClass (bcc0b700-1630-4e29-95d1-9be0392180e3)
- Call ID: bcc0b700-1630-4e29-95d1-9be0392180e3
-  Args:
-    type: :Person
-    source: Julius_von_dem_Bussche-Haddenhausen
-  AddLiteral (2710717e-8717-4482-a597-bc8a1d513f3e)
- Call ID: 2710717e-8717-4482-a597-bc8a1d513f3e
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1906
-    source: Julius_von_dem_Bussche-Haddenhausen
-  AddLiteral (cfcbfd04-5e77-48fb-9cea-87599a98907a)
- Call ID: cfcbfd04-5e77-48fb-9cea-87599a98907a
-  Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 1977
-    source: Julius_von_dem_Bussche-Haddenhausen
-  AddTriple (a11a4f02-9375-49b9-9f83-2e88ce1d34b5)
- Call ID: a11a4f02-9375-49b9-9f83-2e88ce1d34b5
-  Args:
-    target: Julius_von_dem_Bussche-Haddenhausen
-    source: Gösta_von_dem_Bussche-Haddenhausen
-    relation: :hasBrother
-  AssignClass (3a07c713-b70c-43d5-9902-b7cd897f28ab)
- Call ID: 3a07c713-b70c-43d5-9902-b7cd897f28ab
-  Args:
-    type: :Man
-    source: Claus_Felix_von_Amsberg
-  AssignClass (9e02bdcc-bd23-4450-a869-2cc4d9c8ade5)
- Call ID: 9e02bdcc-bd23-4450-a869-2cc4d9c8ade5
-  Args:
-    type: :Person
-    source: Claus_Felix_von_Amsberg
-  AddLiteral (18d3cbd9-2710-4516-9be9-c691e6b665fe)
- Call ID: 18d3cbd9-2710-4516-9be9-c691e6b665fe
-  Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1890
-    source: Claus_Felix_von_Amsberg
-  AddLiteral (63b92129-7eea-4b75-935d-f48b07f30fbd)
- Call ID: 63b92129-7eea-4b75-935d-f48b07f30fbd
-  Args:
-    source: Claus_Felix_von_Amsberg
-    literal_value: 1953
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AddLiteral (66ac0f97-759d-449f-88b3-db4523ee282c)
- Call ID: 66ac0f97-759d-449f-88b3-db4523ee282c
-  Args:
-    literal_type: xsd:integer
+    source: Adelaide_of_Lippe-Biesterfeld
     relation: :hasMarriageYear
-    source: Gösta_von_dem_Bussche-Haddenhausen
-    literal_value: 1924
-  AssignClass (bd63891e-96a7-4f46-a643-c36bedd1b090)
- Call ID: bd63891e-96a7-4f46-a643-c36bedd1b090
+    literal_value: 1889
+    literal_type: xsd:integer
+  AddTriple (7c28a4fb-6831-42bb-bcf3-c661fff96307)
+ Call ID: 7c28a4fb-6831-42bb-bcf3-c661fff96307
   Args:
+    target: Friedrich_Johann_of_Saxe-Meiningen
+    relation: :hasRelation
+    source: Adelaide_of_Lippe-Biesterfeld
+  AssignClass (966d943b-3d5e-43b9-b92f-fa7452a77136)
+ Call ID: 966d943b-3d5e-43b9-b92f-fa7452a77136
+  Args:
+    source: Georg_II_of_Saxe-Meiningen
     type: :Man
-    source: Wilhelm_von_Amsberg
-  AssignClass (10a56539-0df7-4cca-a7a9-82dd1af7381d)
- Call ID: 10a56539-0df7-4cca-a7a9-82dd1af7381d
+  AssignClass (c971cb4e-832b-4960-ae64-033e40bbb023)
+ Call ID: c971cb4e-832b-4960-ae64-033e40bbb023
   Args:
-    type: :Person
-    source: Wilhelm_von_Amsberg
-  AssignClass (d966c3ca-5180-48a7-af38-8be8ea887e00)
- Call ID: d966c3ca-5180-48a7-af38-8be8ea887e00
+    source: Georg_II_of_Saxe-Meiningen
+    type: :Ancestor
+  AddTriple (b69b4a30-3ca1-4d54-9bee-aa88f5b5d567)
+ Call ID: b69b4a30-3ca1-4d54-9bee-aa88f5b5d567
   Args:
-    type: :Woman
-    source: Elise_von_Vieregge
-  AssignClass (91cc4d67-62dd-4b75-b23b-9e2cd0044496)
- Call ID: 91cc4d67-62dd-4b75-b23b-9e2cd0044496
-  Args:
-    type: :Person
-    source: Elise_von_Vieregge
-  AddTriple (39b2d194-d603-42b0-addb-ecec9b040162)
- Call ID: 39b2d194-d603-42b0-addb-ecec9b040162
-  Args:
+    target: Georg_II_of_Saxe-Meiningen
     relation: :hasFather
-    source: Claus_Felix_von_Amsberg
-    target: Wilhelm_von_Amsberg
-  AddTriple (1846f2c3-26bb-4660-ac7a-8c94778d8a3b)
- Call ID: 1846f2c3-26bb-4660-ac7a-8c94778d8a3b
+    source: Friedrich_Johann_of_Saxe-Meiningen
+  AssignClass (b518905e-741f-495c-a0a8-9fa1d0773cc9)
+ Call ID: b518905e-741f-495c-a0a8-9fa1d0773cc9
   Args:
-    relation: :hasMother
-    source: Claus_Felix_von_Amsberg
-    target: Elise_von_Vieregge
-  AssignClass (5745b363-3132-45cb-9e41-9bbf46c694c3)
- Call ID: 5745b363-3132-45cb-9e41-9bbf46c694c3
-  Args:
-    type: :Man
-    source: Claus_Netherlands
-  AssignClass (77ce84dc-b887-4d11-90a6-bc412bc855d6)
- Call ID: 77ce84dc-b887-4d11-90a6-bc412bc855d6
-  Args:
-    type: :Person
-    source: Claus_Netherlands
-  AddTriple (9d8e8c5a-3cb8-4682-9a66-e76cd3b9a84c)
- Call ID: 9d8e8c5a-3cb8-4682-9a66-e76cd3b9a84c
-  Args:
-    relation: :hasFather
-    source: Claus_Netherlands
-    target: Claus_Felix_von_Amsberg
-  AddTriple (ed8ae922-f25c-4d83-be77-abf4f1423299)
- Call ID: ed8ae922-f25c-4d83-be77-abf4f1423299
-  Args:
-    source: Claus_Netherlands
-    relation: :hasMother
-    target: Gösta_von_dem_Bussche-Haddenhausen
-  AddLiteral (c4aeb72c-d238-48fa-a55a-9c71b100d666)
- Call ID: c4aeb72c-d238-48fa-a55a-9c71b100d666
-  Args:
-    literal_value: 1926
-    source: Claus_Netherlands
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AssignClass (7699dd15-686d-4ca5-b900-eaf5c5ed662e)
- Call ID: 7699dd15-686d-4ca5-b900-eaf5c5ed662e
-  Args:
+    source: Modeste_Christiane_von_Unruh
     type: :Woman
-    source: Anna-Elisabeth_von_Pfuel
-  AssignClass (569d2ba7-850e-46ef-9174-5e4ba435f37a)
- Call ID: 569d2ba7-850e-46ef-9174-5e4ba435f37a
+  AssignClass (5282cf3a-f44b-4afa-b155-3352e9f9f389)
+ Call ID: 5282cf3a-f44b-4afa-b155-3352e9f9f389
   Args:
-    type: :Person
-    source: Anna-Elisabeth_von_Pfuel
-  AddLiteral (1084062a-36dd-4598-83d4-ef3031ed2da8)
- Call ID: 1084062a-36dd-4598-83d4-ef3031ed2da8
+    source: Modeste_Christiane_von_Unruh
+    type: :Ancestor
+  AddTriple (8a787d06-a363-4e79-b5b3-fd547364920c)
+ Call ID: 8a787d06-a363-4e79-b5b3-fd547364920c
   Args:
-    source: Anna-Elisabeth_von_Pfuel
-    literal_value: 1909
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (885d0ef5-7ec1-4f58-9548-a8d33ea97899)
- Call ID: 885d0ef5-7ec1-4f58-9548-a8d33ea97899
-  Args:
-    literal_value: 2005
-    source: Anna-Elisabeth_von_Pfuel
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AssignClass (89b50abb-bd5b-45f2-aec8-1b369db06655)
- Call ID: 89b50abb-bd5b-45f2-aec8-1b369db06655
-  Args:
-    type: :Man
-    source: Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg
-  AssignClass (98a92a88-db4d-48c9-bae2-4f20ae46950d)
- Call ID: 98a92a88-db4d-48c9-bae2-4f20ae46950d
-  Args:
-    type: :Person
-    source: Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg
-  AddTriple (454b8a71-a270-4149-9f45-63b04d4b755b)
- Call ID: 454b8a71-a270-4149-9f45-63b04d4b755b
-  Args:
-    source: Gabriele_von_dem_Bussche-Ippenburg
-    relation: :hasFather
-    target: Eberhard_Friedrich_Gustav_von_dem_Bussche-Ippenburg
-  AssignClass (d82f8797-7c19-4440-a709-4ced3118876c)
- Call ID: d82f8797-7c19-4440-a709-4ced3118876c
-  Args:
-    type: :Woman
-    source: Armgard_von_Cramm
-  AssignClass (ee142ef1-a166-4e1d-9256-8900f35acf56)
- Call ID: ee142ef1-a166-4e1d-9256-8900f35acf56
-  Args:
-    type: :Person
-    source: Armgard_von_Cramm
-  AssignClass (378238af-173d-43b8-9ceb-09e387183cc7)
- Call ID: 378238af-173d-43b8-9ceb-09e387183cc7
-  Args:
-    type: :Man
-    source: Aschwin_of_Sierstorpff-Cramm
-  AssignClass (eb810b40-8cb5-4ab8-a309-a1c03a1dd680)
- Call ID: eb810b40-8cb5-4ab8-a309-a1c03a1dd680
-  Args:
-    type: :Person
-    source: Aschwin_of_Sierstorpff-Cramm
-  AddLiteral (ed4e7edd-d6b6-473a-9e1a-46b1d0401744)
- Call ID: ed4e7edd-d6b6-473a-9e1a-46b1d0401744
-  Args:
-    literal_value: 1846
-    source: Aschwin_of_Sierstorpff-Cramm
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (3d96d85b-fcf6-4699-b48e-047c88fa99a7)
- Call ID: 3d96d85b-fcf6-4699-b48e-047c88fa99a7
-  Args:
-    literal_value: 1909
-    source: Aschwin_of_Sierstorpff-Cramm
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AssignClass (e2bbca89-b259-4336-92ab-f443a2a044af)
- Call ID: e2bbca89-b259-4336-92ab-f443a2a044af
-  Args:
-    type: :Woman
-    source: Hedwig_von_Sierstorpff-Driburg
-  AssignClass (7abdde4d-0951-4837-a7eb-04054e3178d2)
- Call ID: 7abdde4d-0951-4837-a7eb-04054e3178d2
-  Args:
-    type: :Person
-    source: Hedwig_von_Sierstorpff-Driburg
-  AddLiteral (f0c5a5ab-6678-4850-aba0-c8655508788e)
- Call ID: f0c5a5ab-6678-4850-aba0-c8655508788e
-  Args:
-    source: Hedwig_von_Sierstorpff-Driburg
-    literal_value: 1848
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (d5b70902-e636-40c9-981b-cb1bdd471b3c)
- Call ID: d5b70902-e636-40c9-981b-cb1bdd471b3c
-  Args:
-    source: Hedwig_von_Sierstorpff-Driburg
-    literal_value: 1900
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddTriple (e9a36680-036d-4398-b7f1-e4808efc38ec)
- Call ID: e9a36680-036d-4398-b7f1-e4808efc38ec
-  Args:
-    target: Aschwin_of_Sierstorpff-Cramm
-    relation: :hasFather
-    source: Armgard_von_Cramm
-  AddTriple (af355373-bdcf-493a-a180-634fd078c2c7)
- Call ID: af355373-bdcf-493a-a180-634fd078c2c7
-  Args:
-    relation: :hasMother
-    source: Armgard_von_Cramm
-    target: Hedwig_von_Sierstorpff-Driburg
-  AssignClass (41876558-5e97-4d9a-a542-4ad917dff0b0)
- Call ID: 41876558-5e97-4d9a-a542-4ad917dff0b0
-  Args:
-    type: :Woman
-    source: Hedwig_von_Sierstorpff-Cramm
-  AssignClass (ea58921c-d3e2-4a01-9364-a9b22d4acda8)
- Call ID: ea58921c-d3e2-4a01-9364-a9b22d4acda8
-  Args:
-    type: :Person
-    source: Hedwig_von_Sierstorpff-Cramm
-  AddLiteral (844bd661-8353-4769-aaea-4a292ee82011)
- Call ID: 844bd661-8353-4769-aaea-4a292ee82011
-  Args:
-    literal_value: 1874
-    source: Hedwig_von_Sierstorpff-Cramm
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (6c1ef67d-7619-48ae-a2b6-f16c1a7b4370)
- Call ID: 6c1ef67d-7619-48ae-a2b6-f16c1a7b4370
-  Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: Hedwig_von_Sierstorpff-Cramm
-    literal_value: 1907
-  AddTriple (f56c0ac4-5a94-41ee-b88b-2c4acaf15665)
- Call ID: f56c0ac4-5a94-41ee-b88b-2c4acaf15665
-  Args:
-    source: Hedwig_von_Sierstorpff-Cramm
-    relation: :hasFather
-    target: Aschwin_of_Sierstorpff-Cramm
-  AddTriple (7e77fc04-22b3-48df-bfe8-49393da3c248)
- Call ID: 7e77fc04-22b3-48df-bfe8-49393da3c248
-  Args:
-    target: Hedwig_von_Sierstorpff-Driburg
-    relation: :hasMother
-    source: Hedwig_von_Sierstorpff-Cramm
-  Finish (31263315-0109-466e-9db6-2187bb91de73)
- Call ID: 31263315-0109-466e-9db6-2187bb91de73
+    relation: :hasAncestor
+    target: Modeste_Christiane_von_Unruh
+    source: Adelaide_of_Lippe-Biesterfeld
+  Finish (011eb372-22e1-4083-887c-f871f8ccffd8)
+ Call ID: 011eb372-22e1-4083-887c-f871f8ccffd8
   Args:

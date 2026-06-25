@@ -7,160 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Prince_Claus-_Prince_Consort_of_the_Netherlands a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Claus, Prince Consort of the Netherlands" ;
-    data:posIndicesFull "4959:4976",
-        "5822:5839",
-        "6049:6066",
-        "6120:6173",
-        "6206:6223",
-        "836:853" ;
-    data:posIndicesPart "10087:10093",
-        "10495:10506",
-        "10948:10959",
-        "1185:1196",
-        "1688:1699",
-        "2405:2416",
-        "2687:2698",
-        "3759:3770",
-        "3811:3822",
-        "4072:4083",
-        "4586:4597",
-        "4741:4752",
-        "4798:4809",
-        "5028:5034",
-        "5035:5040",
-        "5178:5183",
-        "5193:5198",
-        "5341:5347",
-        "5348:5353",
-        "5449:5455",
-        "5456:5461",
-        "5855:5860",
-        "6923:6929",
-        "6930:6935",
-        "7027:7032",
-        "7757:7768",
-        "8292:8298",
-        "8768:8779",
-        "9229:9235",
-        "9236:9241" ;
-    data:wdtLink wdt:Q159609 ;
-    :alsoKnownAs "Claus van Amsberg",
-        "Claus von Amsberg",
-        "Claus, Prince Consort of the Netherlands",
-        "Klaus von Amsberg",
-        "Klaus-Georg Wilhelm Otto Friedrich Gerd von Amsberg",
-        "Prince Claus of the Netherlands, Jonkheer van Amsberg" ;
-    :hasSex data:male .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Armgard_of_Sierstorpff-Cramm a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Armgard of Sierstorpff-Cramm" ;
-    data:posIndicesFull "1776:1812" ;
-    data:posIndicesPart "2251:2258",
-        "6645:6656" ;
-    data:wdtLink wdt:Q2802589 ;
-    :alsoKnownAs "Armgard Kunigunde Alharda Agnes Oda von Cramm",
-        "Armgard von Cramm",
-        "Baroness Armgard of Sierstorpff-Cramm",
-        "Baroness Armgard von Cramm",
-        "Countess Bodo von Oeynhausen",
-        "Princess Bernhard of Lippe-Biesterfeld" ;
-    :hasChild data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isMotherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isParentOf data:Prince_Bernhard_of_Lippe-Biesterfeld .
-
-data:Prince_Bernhard_of_Lippe a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Bernhard of Lippe" ;
-    data:posIndicesFull "1776:1800",
-        "1783:1812" ;
-    data:posIndicesPart "10087:10093",
-        "11403:11408",
-        "11517:11522",
-        "2272:2277",
-        "2568:2576",
-        "5028:5034",
-        "5341:5347",
-        "5449:5455",
-        "6923:6929",
-        "8292:8298",
-        "9229:9235" ;
-    data:wdtLink wdt:Q649601 ;
-    :alsoKnownAs "Bernhard Prinz zur Lippe",
-        "Bernhard of Lippe-Biesterfeld",
-        "Bernhard zur Lippe",
-        "Prince Bernhard of Lippe (1872–1934)",
-        "Prince Bernhard of Lippe-Biesterfeld (1872–1934)" ;
-    :hasChild data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isFatherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isParentOf data:Prince_Bernhard_of_Lippe-Biesterfeld .
-
-data:Wilhelmina_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelmina of the Netherlands" ;
-    data:posIndicesFull "1611:1621",
-        "2211:2227",
-        "2211:2246",
-        "2217:2227",
-        "2217:2246",
-        "2602:2618",
-        "2608:2618",
-        "4045:4055",
-        "535:551",
-        "541:551",
-        "81:91" ;
-    data:posIndicesPart "10495:10506",
-        "10948:10959",
-        "1185:1196",
-        "2405:2416",
-        "2687:2698",
-        "3759:3770",
-        "3811:3822",
-        "4586:4597",
-        "4741:4752",
-        "4798:4809",
-        "7757:7768",
-        "775:786",
-        "8768:8779" ;
-    data:wdtLink wdt:Q150747 ;
-    :alsoKnownAs "Princess Wilhelmina of The Netherlands",
-        "Princess Wilhelmina of the Netherlands",
-        "Queen Wilhelmina",
-        "Queen Wilhelmina of the Netherlands",
-        "Wilhelmina",
-        "Wilhelmina I",
-        "Wilhelmina Koningin der Nederlanden" ;
-    :hasChild data:Juliana_of_the_Netherlands ;
-    :hasDaughter data:Juliana_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isMotherOf data:Juliana_of_the_Netherlands ;
-    :isParentOf data:Juliana_of_the_Netherlands .
-
-data:Beatrix_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Beatrix_of_the_Netherlands a :Person ;
     rdfs:label "Beatrix of the Netherlands" ;
     data:posIndicesFull "11327:11362",
         "11336:11362",
@@ -243,22 +90,58 @@ data:Beatrix_of_the_Netherlands a :Ancestor,
         "Princess Beatrix of Orange-Nassau",
         "Princess Beatrix of the Netherlands",
         "Queen Beatrix" ;
-    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasMother data:Juliana_of_the_Netherlands ;
     :hasParent data:Juliana_of_the_Netherlands,
         data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Christina_of_the_Netherlands ;
-    :isChildOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isDaughterOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isSiblingOf data:Princess_Christina_of_the_Netherlands ;
-    :isSisterOf data:Princess_Christina_of_the_Netherlands .
+    :hasSex data:female .
 
-data:Princess_Christina_of_the_Netherlands a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Prince_Claus-_Prince_Consort_of_the_Netherlands a :Person ;
+    rdfs:label "Prince Claus, Prince Consort of the Netherlands" ;
+    data:posIndicesFull "4959:4976",
+        "5822:5839",
+        "6049:6066",
+        "6120:6173",
+        "6206:6223",
+        "836:853" ;
+    data:posIndicesPart "10087:10093",
+        "10495:10506",
+        "10948:10959",
+        "1185:1196",
+        "1688:1699",
+        "2405:2416",
+        "2687:2698",
+        "3759:3770",
+        "3811:3822",
+        "4072:4083",
+        "4586:4597",
+        "4741:4752",
+        "4798:4809",
+        "5028:5034",
+        "5035:5040",
+        "5178:5183",
+        "5193:5198",
+        "5341:5347",
+        "5348:5353",
+        "5449:5455",
+        "5456:5461",
+        "5855:5860",
+        "6923:6929",
+        "6930:6935",
+        "7027:7032",
+        "7757:7768",
+        "8292:8298",
+        "8768:8779",
+        "9229:9235",
+        "9236:9241" ;
+    data:wdtLink wdt:Q159609 ;
+    :alsoKnownAs "Claus van Amsberg",
+        "Claus von Amsberg",
+        "Claus, Prince Consort of the Netherlands",
+        "Klaus von Amsberg",
+        "Klaus-Georg Wilhelm Otto Friedrich Gerd von Amsberg",
+        "Prince Claus of the Netherlands, Jonkheer van Amsberg" ;
+    :hasSex data:male .
+
+data:Princess_Christina_of_the_Netherlands a :Person ;
     rdfs:label "Princess Christina of the Netherlands" ;
     data:posIndicesFull "6333:6370",
         "6342:6370" ;
@@ -280,23 +163,90 @@ data:Princess_Christina_of_the_Netherlands a :Person,
         "Maria Christina van Oranje-Nassau",
         "Princess Maria Christina of the Netherlands",
         "Princess Marijke" ;
-    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasMother data:Juliana_of_the_Netherlands ;
     :hasParent data:Juliana_of_the_Netherlands,
         data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasSex data:female ;
-    :hasSister data:Beatrix_of_the_Netherlands ;
-    :isChildOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isDaughterOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isSiblingOf data:Beatrix_of_the_Netherlands ;
-    :isSisterOf data:Beatrix_of_the_Netherlands .
+    :hasSex data:female .
 
-data:Juliana_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Armgard_of_Sierstorpff-Cramm a :Person ;
+    rdfs:label "Armgard of Sierstorpff-Cramm" ;
+    data:posIndicesFull "1776:1812" ;
+    data:posIndicesPart "2251:2258",
+        "6645:6656" ;
+    data:wdtLink wdt:Q2802589 ;
+    :alsoKnownAs "Armgard Kunigunde Alharda Agnes Oda von Cramm",
+        "Armgard von Cramm",
+        "Baroness Armgard of Sierstorpff-Cramm",
+        "Baroness Armgard von Cramm",
+        "Countess Bodo von Oeynhausen",
+        "Princess Bernhard of Lippe-Biesterfeld" ;
+    :hasSex data:female .
+
+data:Prince_Bernhard_of_Lippe a :Person ;
+    rdfs:label "Prince Bernhard of Lippe" ;
+    data:posIndicesFull "1776:1800",
+        "1783:1812" ;
+    data:posIndicesPart "10087:10093",
+        "11403:11408",
+        "11517:11522",
+        "2272:2277",
+        "2568:2576",
+        "5028:5034",
+        "5341:5347",
+        "5449:5455",
+        "6923:6929",
+        "8292:8298",
+        "9229:9235" ;
+    data:wdtLink wdt:Q649601 ;
+    :alsoKnownAs "Bernhard Prinz zur Lippe",
+        "Bernhard of Lippe-Biesterfeld",
+        "Bernhard zur Lippe",
+        "Prince Bernhard of Lippe (1872–1934)",
+        "Prince Bernhard of Lippe-Biesterfeld (1872–1934)" ;
+    :hasSex data:male .
+
+data:Wilhelmina_of_the_Netherlands a :Person ;
+    rdfs:label "Wilhelmina of the Netherlands" ;
+    data:posIndicesFull "1611:1621",
+        "2211:2227",
+        "2211:2246",
+        "2217:2227",
+        "2217:2246",
+        "2602:2618",
+        "2608:2618",
+        "4045:4055",
+        "535:551",
+        "541:551",
+        "81:91" ;
+    data:posIndicesPart "10495:10506",
+        "10948:10959",
+        "1185:1196",
+        "2405:2416",
+        "2687:2698",
+        "3759:3770",
+        "3811:3822",
+        "4586:4597",
+        "4741:4752",
+        "4798:4809",
+        "7757:7768",
+        "775:786",
+        "8768:8779" ;
+    data:wdtLink wdt:Q150747 ;
+    :alsoKnownAs "Princess Wilhelmina of The Netherlands",
+        "Princess Wilhelmina of the Netherlands",
+        "Queen Wilhelmina",
+        "Queen Wilhelmina of the Netherlands",
+        "Wilhelmina",
+        "Wilhelmina I",
+        "Wilhelmina Koningin der Nederlanden" ;
+    :hasSex data:female .
+
+data:Juliana_of_the_Netherlands a :Person ;
     rdfs:label "Juliana of the Netherlands" ;
     data:posIndicesFull "1723:1758",
         "1732:1739",
@@ -336,24 +286,10 @@ data:Juliana_of_the_Netherlands a :Ancestor,
         "Queen Juliana",
         "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
         "Queen Juliana of the Netherlands" ;
-    :hasChild data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands ;
-    :hasDaughter data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands ;
-    :hasMother data:Wilhelmina_of_the_Netherlands ;
     :hasParent data:Wilhelmina_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isChildOf data:Wilhelmina_of_the_Netherlands ;
-    :isDaughterOf data:Wilhelmina_of_the_Netherlands ;
-    :isMotherOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands ;
-    :isParentOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands .
+    :hasSex data:female .
 
-data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Person ;
     rdfs:label "Prince Bernhard of Lippe-Biesterfeld" ;
     data:posIndicesFull "1776:1812",
         "1783:1812" ;
@@ -379,21 +315,11 @@ data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
         "Prince Bernhard of the Netherlands",
         "Prince Bernhard, Prince Consort of the Netherlands",
         "Z.K.H. Prins Bernhard" ;
-    :hasChild data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands ;
-    :hasDaughter data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands ;
-    :hasFather data:Prince_Bernhard_of_Lippe ;
-    :hasMother data:Armgard_of_Sierstorpff-Cramm ;
     :hasParent data:Armgard_of_Sierstorpff-Cramm,
         data:Prince_Bernhard_of_Lippe ;
-    :hasSex data:male ;
-    :isChildOf data:Armgard_of_Sierstorpff-Cramm,
-        data:Prince_Bernhard_of_Lippe ;
-    :isFatherOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands ;
-    :isParentOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Christina_of_the_Netherlands ;
-    :isSonOf data:Armgard_of_Sierstorpff-Cramm,
-        data:Prince_Bernhard_of_Lippe .
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

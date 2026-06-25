@@ -2,23 +2,34 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carl_Duke_of_W%C3%BCrttemberg a :Ancestor,
-        :Man,
+data:Carl_Duke_of_W%C3%BCrttemberg a :Man,
         :Person ;
-    :hasSex data:Male ;
-    :isFatherOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg .
-
-data:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,
-        :Person ;
-    :hasBirthYear "1994"^^xsd:int ;
-    :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
-    :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;
     :hasSex data:Male .
 
 data:Duke_Eberhard_of_W%C3%BCrttemberg a :Man,
         :Person ;
-    :hasMarriageYear "2023"^^xsd:int ;
+    :hasMarriageYear 2023 ;
     :hasRelation data:Gaby_Maier ;
+    :hasSex data:Male .
+
+data:Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg a :Man,
+        :Person .
+
+data:Prince_Wilhelm_of_Wied a :Man,
+        :Person .
+
+data:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,
+        :Person ;
+    :hasBirthYear 1994 ;
+    :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
+    :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;
+    :hasSex data:Male .
+
+data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1961 ;
+    :hasDeathYear 2018 ;
     :hasSex data:Male .
 
 data:Gaby_Maier a :Person,
@@ -28,18 +39,10 @@ data:Gaby_Maier a :Person,
 data:Princess_Marie_Wilhelmine_of_Wied a :Ancestor,
         :Person,
         :Woman ;
-    :hasBirthYear "1973"^^xsd:int ;
+    :hasBirthYear 1973 ;
     :hasSex data:Female .
 
 data:Female a :Sex .
-
-data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear "1961"^^xsd:int ;
-    :hasBrother data:Duke_Eberhard_of_W%C3%BCrttemberg ;
-    :hasDeathYear "2018"^^xsd:int ;
-    :hasSex data:Male .
 
 data:Male a :Sex .
 

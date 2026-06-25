@@ -2,11 +2,6 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:King_Juan_Carlos_I a :Man,
-        :Person ;
-    :hasFather data:Infante_Juan_Count_of_Barcelona ;
-    :hasMother data:Princess_Maria_de_las_Mercedes .
-
 data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies a :Person,
         :Woman ;
     :hasBirthYear 1914 ;
@@ -15,13 +10,19 @@ data:Maria_de_la_Esperanza_of_Bourbon-Two_Sicilies a :Person,
     :hasMarriageYear 1944 ;
     :hasMother data:Princess_Louise_of_Orleans ;
     :hasRelation data:Prince_Pedro_Gastao_of_Orleans-Braganza ;
-    :isSisterOf data:Princess_Maria_de_las_Mercedes .
+    :hasSister data:Princess_Maria_de_las_Mercedes ;
+    :isAuntOf data:King_Juan_Carlos_I_of_Spain .
 
-data:Queen_Sofia a :Person,
+data:Queen_Sofia_of_Spain a :Person,
         :Woman .
 
 data:Infante_Juan_Count_of_Barcelona a :Man,
         :Person .
+
+data:King_Juan_Carlos_I_of_Spain a :Man,
+        :Person ;
+    :hasFather data:Infante_Juan_Count_of_Barcelona ;
+    :hasMother data:Princess_Maria_de_las_Mercedes .
 
 data:Philippe_Count_of_Paris a :Man,
         :Person .

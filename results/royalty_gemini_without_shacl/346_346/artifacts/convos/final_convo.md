@@ -69,84 +69,38 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Descendants of Prince Felix and also members of the Grand Ducal Family of Luxembourg:
+Frederick Francis III (German: Friedrich Franz Paul Nikolaus Ernst Heinrich; 19 March 1851 – 10 April 1897) was the penultimate Grand Duke of Mecklenburg-Schwerin.
+He was born in Schloss Ludwigslust as the son of Frederick Francis II, Grand Duke of Mecklenburg-Schwerin and his first wife Princess Augusta Reuss of Köstritz.
+From an early age Frederick Francis suffered from asthma and severe breathing difficulties.
+Frederick Francis' death in Cannes on 10 April 1897 is shrouded in mystery, as he was originally reported to have committed suicide by throwing himself off a parapet of a bridge.
+He was succeeded by his son Frederick Francis IV, who would be the last Grand Duke of Mecklenburg-Schwerin.
+Marriage and children
 
-
-Princess Joan
-
-
-Descendants of Prince René:
-
-
-Princess Maria Pia
-
-
-Princess Marina
-
-
-Descendants of Prince Louis:
-
-
-Prince RémyPrincess Elisabeth
-
-
-Princess Chantal
-Prince JeanPrincess Virginia
-
-
-Princess Beatrix*
-
-
-Princess Margriet*Pieter van Vollenhoven*
-
-
-Prince Jaime Bernardo of Bourbon-Parma, Count of Bardi (born 13 October 1972) is a Dutch diplomat and the second son and third child of Princess Irene of the Netherlands and Carlos Hugo, Duke of Parma.
-He is a member of the House of Bourbon-Parma as well a member of the extended Dutch royal family.
-He was the senior advisor on private sector partnerships at the United Nations High Commissioner for Refugees until 2021 and served as the climate envoy of the Netherlands.
-Early life
-
-Jaime was born in Nijmegen, Netherlands.
-He has a twin sister, Princess Margarita, who was born one minute earlier.
-Besides his twin sister, the prince has one elder brother, Carlos, Duke of Parma, and one younger sister, Princess Carolina.
-Prince Jaime was born six weeks prematurely and stayed with his sister in an incubator at the hospital.
-Jaime was baptised by Bernardus Johannes Cardinal Alfrink, with his grandfather Prince Bernhard of Lippe-Biesterfeld and his grandmother Princess Madeleine of Bourbon-Parma as his godparents.
-Together with his mother and his siblings he moved to the Soestdijk Palace (Baarn), then residence of his grandparents, Queen Juliana and Prince Bernhard, where he lived for several years.
-He now works for the Ministry of Foreign Affairs of the Netherlands.
-His first role was as the first secretary of the Netherlands Embassy in Baghdad, before becoming a political advisor to the peace mission in Pol-e Khomri in the Baghlan Province in the northern part of Afghanistan.
-Until the summer of 2007 the prince worked on secondment in the cabinet of the European Commissioner Neelie Kroes.
-On 7 February 2014, the Ministry of Foreign Affairs announced that he would be appointed as ambassador of the Kingdom of the Netherlands to the Holy See.
-Prince Jaime was, on 15 July 2014, sworn in as ambassador by King Willem-Alexander and he served till August 2018.
-In August 2021 he started as the Climate Envoy of the Netherlands and served for over four years.
-The prince performs representative tasks for the Ducal House of Bourbon-Parma.
-On 9 November 2015, it was announced that the couple were expecting a second child; daughter Gloria Irene was born on (2016-05-09)9 May 2016.
-In a 2015 interview, Princess Viktória stated that the gender of her future child did not matter ("fortunately, we can not influence nature in the terms of gender"), after being told that there were no grandsons for the late Duke of Parma (in April 2016, Jaime's elder brother Carlos, Duke of Parma finally had a son, named Carlos Enrique).
-Titles, styles and honours
-
-Titles
+Frederick Francis married Grand Duchess Anastasia Mikhailovna of Russia, his second cousin once removed, he being the great-great-grandson and she great-granddaughter of Paul I of Russia.
+"
 
 Honours
 
-Dynastic honours
+He received the following orders and decorations:
 
-Foreign honours
 
-Notes
+Ancestry
 
-Already a ducal prince from birth, his father bestowed the substantive title Conte di Bardi ('Count of Bardi') upon him on 2 September 1996.
-In 1996 he was incorporated into the Dutch nobility by Queen Beatrix, with the highest noble title Prins de Bourbon de Parme (Prince of Bourbon-Parma), and styled Zijne Koninklijke Hoogheid ('His Royal Highness').
-He does not belong to the House of Orange-Nassau or the limited Dutch royal house, but as a grandson of Queen Juliana and cousin of the present King Willem-Alexander, he is an official member of the more extended Dutch royal family.
+Literature
+
 References
 
 External links
 
-2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
-3 title granted by Royal Decree to descendants of Princess Irene
+@media screen{html.skin-theme-clientpref-night .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}} Media related to Frederick Francis III, Grand Duke of Mecklenburg-Schwerin at Wikimedia Commons
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -162,39 +116,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -209,6 +133,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -226,6 +167,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -293,29 +249,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -324,6 +272,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -336,6 +292,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -344,17 +302,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -382,6 +342,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -397,95 +441,86 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5b48109b-97d6-4aca-99fa-b253e9bde71d)
- Call ID: 5b48109b-97d6-4aca-99fa-b253e9bde71d
+  AssignClass (a9d09465-2c05-41c5-bd97-bcea91f6d632)
+ Call ID: a9d09465-2c05-41c5-bd97-bcea91f6d632
+  Args:
+    source: Frederick_Francis_III
+    type: :Man
+  AssignClass (e1547adb-6453-40b4-bd28-237d65a8bf9f)
+ Call ID: e1547adb-6453-40b4-bd28-237d65a8bf9f
   Args:
     type: :Man
-    source: Prince_Jaime_Bernardo_of_Bourbon-Parma
-  AssignClass (7d45272d-5f95-4be6-b4d8-e03bbe622dab)
- Call ID: 7d45272d-5f95-4be6-b4d8-e03bbe622dab
+    source: Frederick_Francis_II
+  AssignClass (7e5e7403-51bc-44ae-9166-4c016a2d1c7c)
+ Call ID: 7e5e7403-51bc-44ae-9166-4c016a2d1c7c
   Args:
-    source: Princess_Irene_of_the_Netherlands
     type: :Woman
-  AssignClass (cb2493ed-e996-4b55-bed5-ac2d156dbd78)
- Call ID: cb2493ed-e996-4b55-bed5-ac2d156dbd78
+    source: Augusta_Reuss_of_Köstritz
+  AssignClass (47f24812-4e9d-463a-ba49-11b25ea707d7)
+ Call ID: 47f24812-4e9d-463a-ba49-11b25ea707d7
   Args:
+    source: Frederick_Francis_IV
     type: :Man
-    source: Carlos_Hugo_Duke_of_Parma
-  AssignClass (c0f717ae-60f8-41b8-8af0-5e23b1bf5bbb)
- Call ID: c0f717ae-60f8-41b8-8af0-5e23b1bf5bbb
+  AssignClass (64c95688-3f96-41bd-841a-e9b0ee45a159)
+ Call ID: 64c95688-3f96-41bd-841a-e9b0ee45a159
   Args:
     type: :Woman
-    source: Princess_Margarita
-  AssignClass (9c5e3e49-ff13-42a5-9a47-35339d300ec0)
- Call ID: 9c5e3e49-ff13-42a5-9a47-35339d300ec0
+    source: Anastasia_Mikhailovna_of_Russia
+  AssignClass (b56e5cf3-e0b7-4714-a642-d31367f87c90)
+ Call ID: b56e5cf3-e0b7-4714-a642-d31367f87c90
   Args:
+    source: Paul_I_of_Russia
     type: :Man
-    source: Carlos_Duke_of_Parma
-  AssignClass (faa24f60-a5cd-47c1-9a5a-8fa79ce3fa99)
- Call ID: faa24f60-a5cd-47c1-9a5a-8fa79ce3fa99
+  AddLiteral (5c2363fd-6974-41c4-b1ca-b1eb7e97d459)
+ Call ID: 5c2363fd-6974-41c4-b1ca-b1eb7e97d459
   Args:
-    source: Princess_Carolina
-    type: :Woman
-  AssignClass (3905f3f4-0d9e-4289-a677-eac21bcc3054)
- Call ID: 3905f3f4-0d9e-4289-a677-eac21bcc3054
-  Args:
-    type: :Woman
-    source: Gloria_Irene
-  AssignClass (19bbb608-1849-4ec1-8f92-009ca27bf133)
- Call ID: 19bbb608-1849-4ec1-8f92-009ca27bf133
-  Args:
-    type: :Man
-    source: Carlos_Enrique
-  AddLiteral (b16ac303-2c37-4f2c-ab92-085aad07f80d)
- Call ID: b16ac303-2c37-4f2c-ab92-085aad07f80d
-  Args:
-    source: Prince_Jaime_Bernardo_of_Bourbon-Parma
     literal_type: xsd:integer
+    source: Frederick_Francis_III
     relation: :hasBirthYear
-    literal_value: 1972
-  AddTriple (d9eec52f-93bb-4ebb-87c2-41d4edd92524)
- Call ID: d9eec52f-93bb-4ebb-87c2-41d4edd92524
+    literal_value: 1851
+  AddLiteral (2070613d-f55d-47ac-8e58-30bae27dbd96)
+ Call ID: 2070613d-f55d-47ac-8e58-30bae27dbd96
   Args:
-    source: Prince_Jaime_Bernardo_of_Bourbon-Parma
-    target: Princess_Irene_of_the_Netherlands
-    relation: :hasMother
-  AddTriple (db30a556-e6f2-49f2-bcdc-751b368aa2a2)
- Call ID: db30a556-e6f2-49f2-bcdc-751b368aa2a2
+    source: Frederick_Francis_III
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1897
+  AddTriple (b47487a3-e194-4968-924e-e9d4e71e35e8)
+ Call ID: b47487a3-e194-4968-924e-e9d4e71e35e8
   Args:
-    source: Prince_Jaime_Bernardo_of_Bourbon-Parma
+    source: Frederick_Francis_III
     relation: :hasFather
-    target: Carlos_Hugo_Duke_of_Parma
-  AddTriple (00435d00-57e5-4d05-867d-3f0728ac904b)
- Call ID: 00435d00-57e5-4d05-867d-3f0728ac904b
+    target: Frederick_Francis_II
+  AddTriple (99bbe314-e035-417f-a35b-fa94e5fb372c)
+ Call ID: 99bbe314-e035-417f-a35b-fa94e5fb372c
   Args:
-    source: Carlos_Duke_of_Parma
-    target: Prince_Jaime_Bernardo_of_Bourbon-Parma
-    relation: :isBrotherOf
-  AddTriple (79e5bfe2-f6ba-4c8b-bf2b-ae890a5b3b27)
- Call ID: 79e5bfe2-f6ba-4c8b-bf2b-ae890a5b3b27
+    relation: :hasMother
+    source: Frederick_Francis_III
+    target: Augusta_Reuss_of_Köstritz
+  AddTriple (3427560b-7434-46c2-9001-1deeb91fca44)
+ Call ID: 3427560b-7434-46c2-9001-1deeb91fca44
   Args:
-    target: Prince_Jaime_Bernardo_of_Bourbon-Parma
-    relation: :isSisterOf
-    source: Princess_Margarita
-  AddTriple (66e83cfd-7b87-4a1a-b9c2-a6ec13de88b2)
- Call ID: 66e83cfd-7b87-4a1a-b9c2-a6ec13de88b2
-  Args:
-    source: Princess_Carolina
-    relation: :isSisterOf
-    target: Prince_Jaime_Bernardo_of_Bourbon-Parma
-  AddTriple (c914c7fe-51e5-4156-ba80-d646fb9007d7)
- Call ID: c914c7fe-51e5-4156-ba80-d646fb9007d7
-  Args:
-    target: Gloria_Irene
     relation: :isFatherOf
-    source: Prince_Jaime_Bernardo_of_Bourbon-Parma
-  AddTriple (d5c7ce27-5c02-4998-a8cc-de5c8df31979)
- Call ID: d5c7ce27-5c02-4998-a8cc-de5c8df31979
+    source: Frederick_Francis_III
+    target: Frederick_Francis_IV
+  AddTriple (a684feed-2bd2-40ce-ad53-452a0ea850a9)
+ Call ID: a684feed-2bd2-40ce-ad53-452a0ea850a9
   Args:
-    source: Carlos_Duke_of_Parma
-    target: Carlos_Enrique
-    relation: :isFatherOf
-  Finish (4d0912c9-2744-4b71-ad41-54e902654044)
- Call ID: 4d0912c9-2744-4b71-ad41-54e902654044
+    source: Frederick_Francis_III
+    relation: :hasRelation
+    target: Anastasia_Mikhailovna_of_Russia
+  AddTriple (eab02085-0cb9-4767-9316-15953db0337a)
+ Call ID: eab02085-0cb9-4767-9316-15953db0337a
+  Args:
+    relation: :isAncestorOf
+    source: Paul_I_of_Russia
+    target: Frederick_Francis_III
+  AddTriple (e5740dfe-b60e-4da4-8683-fc4ba4c8352a)
+ Call ID: e5740dfe-b60e-4da4-8683-fc4ba4c8352a
+  Args:
+    relation: :isAncestorOf
+    source: Paul_I_of_Russia
+    target: Anastasia_Mikhailovna_of_Russia
+  Finish (5a350b6b-9b4d-480e-bcd7-af8c8e270689)
+ Call ID: 5a350b6b-9b4d-480e-bcd7-af8c8e270689
   Args:

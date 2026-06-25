@@ -90,7 +90,6 @@ Alexandra (Greek: Αλεξάνδρα, Serbo-Croatian: Александра/Aleks
 
 Posthumous daughter of King Alexander of Greece and his morganatic wife, Aspasia Manos, Alexandra was not part of the Greek royal family until July 1922 when, at the behest of Queen Sophia, Alexander's mother, a law was passed which retroactively recognized marriages of members of the royal family, although on a non-dynastic basis; in consequence, she obtained the style and name of Her Royal Highness Princess Alexandra of Greece and Denmark.
 At the same time, a serious political and military crisis, linked to the defeat of Greece by Turkey in Anatolia, led to the deposition and exile of the royal family, beginning in 1924.
-Being the only members of the dynasty allowed to remain in the country by the Second Hellenic Republic, the princess and her mother later found refuge in Italy with Dowager Queen Sophia.
 After three years with her paternal grandmother, Alexandra left Florence to continue her studies in the United Kingdom, while her mother settled in Venice.
 Separated from her mother, the princess fell ill, forcing Aspasia to make her leave the boarding school where she was studying.
 After the restoration of her uncle, King George II, on the Hellenic throne in 1935, Alexandra stayed in her native country several times but the outbreak of the Greco-Italian War, in 1940, forced her and her mother to settle in Athens.
@@ -140,7 +139,6 @@ From London to Venice
 
 In 1927, Alexandra and her mother moved to Ascot, Berkshire, in the United Kingdom.
 Now seven years old, Alexandra was enrolled in boarding schools in Westfield and Heathfield, as was the custom for the upper class.
-However, the Princess took very badly to this experience: separated from her mother, she stopped eating and eventually contracted tuberculosis.
 Alarmed, Aspasia thus moved her daughter to Switzerland for treatment.
 Later, Alexandra was educated in a Parisian finishing school, during which time she and her mother stayed at the Hotel Crillon.
 Eventually, the two princesses settled on the island of Giudecca in Venice, where Aspasia acquired a small property with her savings and Horlick's financial support.
@@ -150,17 +148,11 @@ Between Greece and Venice
 
 In 1935, the Second Hellenic Republic was abolished and King George II (Alexandra's uncle) was restored to the throne after a referendum organized by General Georgios Kondylis.
 Alexandra was then allowed to return to Greece, a country she had not seen since 1924.
-Although she continued to reside in Venice with her mother (who still suffered the ostracism of the royal family), the princess was invited to all the great ceremonies that punctuate the life of the dynasty.
 In 1936, she participated in the official ceremonies which marked the reburial in Tatoi of the remains of King Constantine I, Queen Sophia, and Dowager Queen Olga; all three died in exile in Italy.
-Two years later, in 1938, she was invited to the wedding of her uncle, Crown Prince Paul, with Princess Frederica of Hanover.
 Despite her participation in the ceremonies of the Greek royal family, at that time Alexandra understood that she was not a full member of the European royalty.
 Her mother had to claim in her name the share of the inheritance of Alexandra's paternal grandparents.
-Also, the princess' mother had no site in the royal necropolis of Tatoi.
 During the 1936 ceremonies, a chapel was arranged in the park of the palace for the remains of King Constantine I and Queen Sophia.
 The remains of King Alexander − previously based in the gardens next to his grandfather King George I – were then transferred to this chapel, with no space reserved for Aspasia.
-First marriage proposal
-
-In 1936, the fifteen-years-old Princess received her first marriage proposal: King Zog I of Albania, who wished to marry a member of the European royalty in order to consolidate his position, asked her hand.
 Alexandra attended numerous dances, which aimed to introduce her to the European elite.
 World War II
 
@@ -204,7 +196,6 @@ Now without income and any prospect of returning to Yugoslavia, Peter II and Ale
 Still penniless, the couple was forced to sell Alexandra's necklace of emeralds and other pieces of her jewelry to pay their accumulated debts.
 As Alexandra wrote in her autobiography, she had no idea of the value of things, and she quickly proved incapable of maintaining a home.
 In the United States, Peter II soon drifted away.
-Having made poor financial investments, he lost the little money he had left.
 Thanks to the intervention of his maternal grandmother, the 4-year-old former Crown Prince Alexander was sent to Italy with the Count and Countess of Robilant, friends of the royal couple.
 Divorce attempt and reconciliation
 
@@ -240,6 +231,8 @@ With her, the remains of her husband King Peter II, her mother-in-law Queen Moth
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -255,39 +248,9 @@ With her, the remains of her husband King Peter II, her mother-in-law Queen Moth
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -302,6 +265,23 @@ With her, the remains of her husband King Peter II, her mother-in-law Queen Moth
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -319,6 +299,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -386,29 +381,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -417,6 +404,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -429,6 +424,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -437,17 +434,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -475,6 +474,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -490,169 +573,193 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ef65881a-a6a3-480d-acce-26ee36287db1)
- Call ID: ef65881a-a6a3-480d-acce-26ee36287db1
+  AssignClass (f40aaa51-9ed6-4a53-abaa-305c24961a33)
+ Call ID: f40aaa51-9ed6-4a53-abaa-305c24961a33
   Args:
-    source: Alexandra_of_Greece_and_Denmark
+    source: Alexandra
+    type: :Person
+  AssignClass (0ad3b737-8ee3-4223-b2f5-a734d9d71e62)
+ Call ID: 0ad3b737-8ee3-4223-b2f5-a734d9d71e62
+  Args:
+    source: Alexandra
     type: :Woman
-  AssignClass (9f6dc198-a6de-4019-afd7-6aab8e763a9a)
- Call ID: 9f6dc198-a6de-4019-afd7-6aab8e763a9a
+  AddLiteral (aa121727-5a8b-4c48-b000-04a23fb698ae)
+ Call ID: aa121727-5a8b-4c48-b000-04a23fb698ae
   Args:
-    source: Alexandra_of_Greece_and_Denmark
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1921
+    source: Alexandra
+  AddLiteral (0e78cd1f-9cc3-4ade-bd90-eb6a573d55e0)
+ Call ID: 0e78cd1f-9cc3-4ade-bd90-eb6a573d55e0
+  Args:
+    literal_value: 1993
+    source: Alexandra
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AssignClass (3179b7ff-f0a1-469f-a138-95b30a773767)
+ Call ID: 3179b7ff-f0a1-469f-a138-95b30a773767
+  Args:
+    source: Peter_II
     type: :Person
-  AssignClass (2c3af143-7494-4afb-b9bf-5cb440f641a1)
- Call ID: 2c3af143-7494-4afb-b9bf-5cb440f641a1
+  AssignClass (7cf9453f-b198-4afd-925b-e5268c4942d8)
+ Call ID: 7cf9453f-b198-4afd-925b-e5268c4942d8
   Args:
+    source: Peter_II
     type: :Man
-    source: Peter_II_of_Yugoslavia
-  AssignClass (4653e01a-43d4-4b97-a0dd-eb890db78830)
- Call ID: 4653e01a-43d4-4b97-a0dd-eb890db78830
+  AddTriple (aa3d1c99-5a51-412c-b446-f2d5ce3ec50d)
+ Call ID: aa3d1c99-5a51-412c-b446-f2d5ce3ec50d
   Args:
-    source: Peter_II_of_Yugoslavia
+    source: Alexandra
+    target: Peter_II
+    relation: :hasRelation
+  AddLiteral (d8c8701e-1b76-4dd0-94fc-04dbe1e69406)
+ Call ID: d8c8701e-1b76-4dd0-94fc-04dbe1e69406
+  Args:
+    literal_type: xsd:integer
+    source: Alexandra
+    literal_value: 1944
+    relation: :hasMarriageYear
+  AssignClass (da3fa250-5056-4a79-bc69-1be7d7a74d10)
+ Call ID: da3fa250-5056-4a79-bc69-1be7d7a74d10
+  Args:
+    source: Alexander_of_Greece
     type: :Person
-  AssignClass (4e0895e7-0a84-43c1-8510-86e1426581ec)
- Call ID: 4e0895e7-0a84-43c1-8510-86e1426581ec
+  AssignClass (2cd90cef-7b73-4607-b410-b9319465a5f3)
+ Call ID: 2cd90cef-7b73-4607-b410-b9319465a5f3
   Args:
     source: Alexander_of_Greece
     type: :Man
-  AssignClass (b248fe2d-e662-48aa-ae93-36d99dfc7108)
- Call ID: b248fe2d-e662-48aa-ae93-36d99dfc7108
+  AssignClass (e505976c-bb48-4706-b0e5-ee0f73818343)
+ Call ID: e505976c-bb48-4706-b0e5-ee0f73818343
   Args:
-    type: :Person
     source: Alexander_of_Greece
-  AssignClass (98cc34fb-bddc-4d68-9740-87b18584b1a8)
- Call ID: 98cc34fb-bddc-4d68-9740-87b18584b1a8
-  Args:
-    source: Aspasia_Manos
-    type: :Woman
-  AssignClass (064b2e9e-b153-4a12-933d-29a90b50549d)
- Call ID: 064b2e9e-b153-4a12-933d-29a90b50549d
-  Args:
-    source: Aspasia_Manos
-    type: :Person
-  AssignClass (a03b107f-2026-4b86-bd60-d1e49266e3c6)
- Call ID: a03b107f-2026-4b86-bd60-d1e49266e3c6
-  Args:
-    type: :Man
-    source: Alexander_Crown_Prince_of_Yugoslavia
-  AssignClass (1cd706df-a41f-4ad3-aa12-44436fc66566)
- Call ID: 1cd706df-a41f-4ad3-aa12-44436fc66566
-  Args:
-    source: Alexander_Crown_Prince_of_Yugoslavia
-    type: :Person
-  AssignClass (b2e97b3d-5900-42ac-ad7c-8750a55a6c41)
- Call ID: b2e97b3d-5900-42ac-ad7c-8750a55a6c41
-  Args:
-    type: :Woman
-    source: Maria_of_Yugoslavia
-  AssignClass (d6bb1e26-83fb-47bf-b015-3f164a241f47)
- Call ID: d6bb1e26-83fb-47bf-b015-3f164a241f47
-  Args:
-    source: Maria_of_Yugoslavia
-    type: :Person
-  AddLiteral (83358a73-cd60-4804-b7be-397af205d85c)
- Call ID: 83358a73-cd60-4804-b7be-397af205d85c
-  Args:
-    source: Alexandra_of_Greece_and_Denmark
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Female
-  AddLiteral (9c7baa7c-f045-4219-a0fc-3e9d93f5ad25)
- Call ID: 9c7baa7c-f045-4219-a0fc-3e9d93f5ad25
-  Args:
-    literal_value: Male
-    relation: :hasSex
-    source: Peter_II_of_Yugoslavia
-    literal_type: xsd:string
-  AddLiteral (3167feb3-e635-42e4-9f5c-35a58fab3489)
- Call ID: 3167feb3-e635-42e4-9f5c-35a58fab3489
-  Args:
-    literal_value: Male
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Alexander_of_Greece
-  AddLiteral (f5e7b25a-1961-42ea-9fb5-545b45f2b406)
- Call ID: f5e7b25a-1961-42ea-9fb5-545b45f2b406
-  Args:
-    literal_value: Female
-    relation: :hasSex
-    source: Aspasia_Manos
-    literal_type: xsd:string
-  AddLiteral (522ac4f9-19fe-4ac8-9798-44e49953851a)
- Call ID: 522ac4f9-19fe-4ac8-9798-44e49953851a
-  Args:
-    literal_type: xsd:string
-    source: Alexander_Crown_Prince_of_Yugoslavia
-    relation: :hasSex
-    literal_value: Male
-  AddLiteral (e992c03a-718e-453e-ac71-4b3d7854d766)
- Call ID: e992c03a-718e-453e-ac71-4b3d7854d766
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Maria_of_Yugoslavia
-    literal_value: Female
-  AddTriple (3a516970-9cfc-403c-8552-6e27b21163b8)
- Call ID: 3a516970-9cfc-403c-8552-6e27b21163b8
+    type: :Ancestor
+  AddTriple (3a2cb6d0-35bb-4828-8168-e225982520dd)
+ Call ID: 3a2cb6d0-35bb-4828-8168-e225982520dd
   Args:
     relation: :hasFather
-    source: Alexandra_of_Greece_and_Denmark
+    source: Alexandra
     target: Alexander_of_Greece
-  AddTriple (62ae0cff-7939-4950-9963-7695522342bb)
- Call ID: 62ae0cff-7939-4950-9963-7695522342bb
+  AssignClass (4e3ffde4-c42f-4bc1-9016-a60b7231e5c2)
+ Call ID: 4e3ffde4-c42f-4bc1-9016-a60b7231e5c2
+  Args:
+    source: Aspasia_Manos
+    type: :Person
+  AssignClass (6b6c3e95-27bf-4389-8a43-dbf5ab32c900)
+ Call ID: 6b6c3e95-27bf-4389-8a43-dbf5ab32c900
+  Args:
+    source: Aspasia_Manos
+    type: :Woman
+  AssignClass (b4fcfa6b-af4f-4c38-9a54-3a935874a709)
+ Call ID: b4fcfa6b-af4f-4c38-9a54-3a935874a709
+  Args:
+    source: Aspasia_Manos
+    type: :Ancestor
+  AddTriple (b3284665-d865-47e9-8291-20e613cd03f3)
+ Call ID: b3284665-d865-47e9-8291-20e613cd03f3
   Args:
     relation: :hasMother
     target: Aspasia_Manos
-    source: Alexandra_of_Greece_and_Denmark
-  AddTriple (f7534b7e-07ab-4a3d-ac35-8d040b475db2)
- Call ID: f7534b7e-07ab-4a3d-ac35-8d040b475db2
+    source: Alexandra
+  AssignClass (02978982-5b55-48ff-9e9f-e9448cf3c5d2)
+ Call ID: 02978982-5b55-48ff-9e9f-e9448cf3c5d2
   Args:
-    source: Peter_II_of_Yugoslavia
-    target: Maria_of_Yugoslavia
-    relation: :hasMother
-  AddTriple (f15c5e9f-8301-4744-bede-11c1dd313cfc)
- Call ID: f15c5e9f-8301-4744-bede-11c1dd313cfc
-  Args:
-    target: Alexandra_of_Greece_and_Denmark
     source: Alexander_Crown_Prince_of_Yugoslavia
-    relation: :hasMother
-  AddTriple (e2325a8f-5f12-4c36-b7c0-23f5e8fada86)
- Call ID: e2325a8f-5f12-4c36-b7c0-23f5e8fada86
+    type: :Person
+  AssignClass (8bf13829-33b8-400b-8082-53bb8f8d2019)
+ Call ID: 8bf13829-33b8-400b-8082-53bb8f8d2019
   Args:
-    relation: :hasFather
     source: Alexander_Crown_Prince_of_Yugoslavia
-    target: Peter_II_of_Yugoslavia
-  AddLiteral (2714fc0b-3b8c-4d4f-bf08-b63b07f2a0df)
- Call ID: 2714fc0b-3b8c-4d4f-bf08-b63b07f2a0df
+    type: :Man
+  AddTriple (59478dc6-f913-45dd-9b75-6f67ce360acc)
+ Call ID: 59478dc6-f913-45dd-9b75-6f67ce360acc
   Args:
-    literal_value: 1921
-    literal_type: xsd:integer
-    source: Alexandra_of_Greece_and_Denmark
-    relation: :hasBirthYear
-  AddLiteral (72127224-429e-4d67-b873-5a8592a3e040)
- Call ID: 72127224-429e-4d67-b873-5a8592a3e040
+    relation: :isSonOf
+    target: Alexandra
+    source: Alexander_Crown_Prince_of_Yugoslavia
+  AddTriple (6af9a62f-747d-4c77-9bc7-2d431947d3fb)
+ Call ID: 6af9a62f-747d-4c77-9bc7-2d431947d3fb
   Args:
-    literal_value: 1993
-    literal_type: xsd:integer
-    source: Alexandra_of_Greece_and_Denmark
-    relation: :hasDeathYear
-  AddLiteral (c0ae7c65-9048-43cf-9b03-96a9eec2e2fe)
- Call ID: c0ae7c65-9048-43cf-9b03-96a9eec2e2fe
+    relation: :isSonOf
+    target: Peter_II
+    source: Alexander_Crown_Prince_of_Yugoslavia
+  AssignClass (a9fb99df-5243-499c-8145-2af5a2a6704f)
+ Call ID: a9fb99df-5243-499c-8145-2af5a2a6704f
   Args:
-    literal_value: 1970
-    literal_type: xsd:integer
-    source: Peter_II_of_Yugoslavia
-    relation: :hasDeathYear
-  AddLiteral (4beb3048-e642-444f-81d6-3c9d5639d845)
- Call ID: 4beb3048-e642-444f-81d6-3c9d5639d845
+    source: Queen_Sophia
+    type: :Person
+  AssignClass (3735be8f-4f86-478f-868f-32e9bfa91ae6)
+ Call ID: 3735be8f-4f86-478f-868f-32e9bfa91ae6
   Args:
-    literal_value: 1944
-    literal_type: xsd:integer
-    source: Alexandra_of_Greece_and_Denmark
-    relation: :hasMarriageYear
-  Finish (56d4d7c3-3704-41bd-a63a-89dc68598d73)
- Call ID: 56d4d7c3-3704-41bd-a63a-89dc68598d73
+    source: Queen_Sophia
+    type: :Woman
+  AssignClass (58dd522d-ad04-47f9-845f-e3ca9fcc20b1)
+ Call ID: 58dd522d-ad04-47f9-845f-e3ca9fcc20b1
   Args:
+    source: Queen_Sophia
+    type: :Ancestor
+  AddTriple (2fd141ec-ef6e-4aea-a7e7-830124fcab4f)
+ Call ID: 2fd141ec-ef6e-4aea-a7e7-830124fcab4f
+  Args:
+    relation: :isMotherOf
+    source: Queen_Sophia
+    target: Alexander_of_Greece
+  AssignClass (c63656c1-4dea-4389-ac63-e93c09827fe2)
+ Call ID: c63656c1-4dea-4389-ac63-e93c09827fe2
+  Args:
+    source: King_George_II
+    type: :Person
+  AssignClass (b0baad82-9765-4f10-b4c3-a042accd3494)
+ Call ID: b0baad82-9765-4f10-b4c3-a042accd3494
+  Args:
+    source: King_George_II
+    type: :Man
+  AssignClass (213d514d-929c-4bd4-8d11-8965ac32f2b7)
+ Call ID: 213d514d-929c-4bd4-8d11-8965ac32f2b7
+  Args:
+    source: King_George_II
+    type: :Ancestor
+  AssignClass (4e9557cc-cd91-43f3-9241-ce409331c149)
+ Call ID: 4e9557cc-cd91-43f3-9241-ce409331c149
+  Args:
+    source: Maria_of_Yugoslavia
+    type: :Person
+  AssignClass (1270868f-de09-4b49-9524-7d4cadc4825f)
+ Call ID: 1270868f-de09-4b49-9524-7d4cadc4825f
+  Args:
+    source: Maria_of_Yugoslavia
+    type: :Woman
+  AssignClass (13b0960a-d34a-4078-9eba-619b0fb8b567)
+ Call ID: 13b0960a-d34a-4078-9eba-619b0fb8b567
+  Args:
+    source: Maria_of_Yugoslavia
+    type: :Ancestor
+  AddTriple (f573bd48-aad6-4f87-8ac9-de4e8e04f50b)
+ Call ID: f573bd48-aad6-4f87-8ac9-de4e8e04f50b
+  Args:
+    relation: :isMotherOf
+    source: Maria_of_Yugoslavia
+    target: Peter_II
+  Finish (146fee0a-3a07-43d7-89dc-c69636fefcf3)
+ Call ID: 146fee0a-3a07-43d7-89dc-c69636fefcf3
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -767,36 +874,42 @@ The final data graph after all the edits:
 
   data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
           :Person ;
-      :hasFather data:Peter_II_of_Yugoslavia ;
-      :hasMother data:Alexandra_of_Greece_and_Denmark ;
-      :hasSex "Male"^^xsd:string .
+      :isSonOf data:Alexandra,
+          data:Peter_II .
 
-  data:Alexander_of_Greece a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
+  data:King_George_II a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Alexandra_of_Greece_and_Denmark a :Person,
+  data:Maria_of_Yugoslavia a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Peter_II .
+
+  data:Queen_Sophia a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Alexander_of_Greece .
+
+  data:Alexandra a :Person,
           :Woman ;
       :hasBirthYear 1921 ;
       :hasDeathYear 1993 ;
       :hasFather data:Alexander_of_Greece ;
       :hasMarriageYear 1944 ;
       :hasMother data:Aspasia_Manos ;
-      :hasSex "Female"^^xsd:string .
+      :hasRelation data:Peter_II .
 
-  data:Aspasia_Manos a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+  data:Aspasia_Manos a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Maria_of_Yugoslavia a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+  data:Alexander_of_Greece a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Peter_II_of_Yugoslavia a :Man,
-          :Person ;
-      :hasDeathYear 1970 ;
-      :hasMother data:Maria_of_Yugoslavia ;
-      :hasSex "Male"^^xsd:string .
+  data:Peter_II a :Man,
+          :Person .
 
 
 
@@ -808,518 +921,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (f7a05af3-0f85-462b-8b35-aa09e7ab1e5f)
- Call ID: f7a05af3-0f85-462b-8b35-aa09e7ab1e5f
+  ValidateShacl (653bbd7b-6f86-4d2c-b546-e42ef337a4fe)
+ Call ID: 653bbd7b-6f86-4d2c-b546-e42ef337a4fe
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:63
+Total violations:6
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_of_Greece' is not classified as a ':Sex'.
+      The node Peter_II is used as the object of the isSonOf relationship but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Peter_II, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_Crown_Prince_of_Yugoslavia' is not classified as a ':Sex'.
+      The node Alexandra is used as the object of the isSonOf relationship but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Alexandra, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Peter_II_of_Yugoslavia' is not classified as a ':Sex'.
+      The node Peter_II is used as the object of the isSonOf relationship but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Peter_II, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value ':Peter_II_of_Yugoslavia' for the property ':hasFather' on node ':Alexander_Crown_Prince_of_Yugoslavia' does not have the required class ':Ancestor' or ':Man'.
+      The node Alexandra is used as the object of the isSonOf relationship but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Peter_II_of_Yugoslavia', class=':Ancestor')
+      AssignClass(Alexandra, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value ':Alexandra_of_Greece_and_Denmark' for the property ':hasMother' on node ':Alexander_Crown_Prince_of_Yugoslavia' does not have the required class ':Ancestor' or ':Woman'.
+      The node Peter_II is used as the object of the isSonOf relationship but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Alexandra_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(Peter_II, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value ':Maria_of_Yugoslavia' for the property ':hasMother' on node ':Peter_II_of_Yugoslavia' does not have the required class ':Ancestor' or ':Woman'.
+      The node Alexandra is used as the object of the isSonOf relationship but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Maria_of_Yugoslavia', class=':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_of_Greece' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_Crown_Prince_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Peter_II_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Peter_II_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Maria_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Alexandra_of_Greece_and_Denmark' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Aspasia_Manos' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_of_Greece' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_Crown_Prince_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value ':Alexander_of_Greece' for the property ':hasFather' on node ':Alexandra_of_Greece_and_Denmark' does not have the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Alexander_of_Greece', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value ':Peter_II_of_Yugoslavia' for the property ':hasFather' on node ':Alexander_Crown_Prince_of_Yugoslavia' does not have the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Peter_II_of_Yugoslavia', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value ':Maria_of_Yugoslavia' for the property ':hasMother' on node ':Peter_II_of_Yugoslavia' does not have the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Maria_of_Yugoslavia', class=':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value ':Aspasia_Manos' for the property ':hasMother' on node ':Alexandra_of_Greece_and_Denmark' does not have the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Aspasia_Manos', class=':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value ':Alexandra_of_Greece_and_Denmark' for the property ':hasMother' on node ':Alexander_Crown_Prince_of_Yugoslavia' does not have the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Alexandra_of_Greece_and_Denmark', class=':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Peter_II_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Maria_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Alexandra_of_Greece_and_Denmark' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Aspasia_Manos' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_of_Greece' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_Crown_Prince_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Peter_II_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Maria_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Alexandra_of_Greece_and_Denmark' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Aspasia_Manos' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_of_Greece' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_Crown_Prince_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Peter_II_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Maria_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Alexandra_of_Greece_and_Denmark' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Aspasia_Manos' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_of_Greece' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_Crown_Prince_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value ':Alexander_of_Greece' for the property ':hasFather' on node ':Alexandra_of_Greece_and_Denmark' does not have the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Alexander_of_Greece', class=':Ancestor')
-
-
-  Violation [40]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value ':Peter_II_of_Yugoslavia' for the property ':hasFather' on node ':Alexander_Crown_Prince_of_Yugoslavia' does not have the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Peter_II_of_Yugoslavia', class=':Ancestor')
-
-
-  Violation [41]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value ':Maria_of_Yugoslavia' for the property ':hasMother' on node ':Peter_II_of_Yugoslavia' does not have the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Maria_of_Yugoslavia', class=':Ancestor')
-
-
-  Violation [42]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value ':Aspasia_Manos' for the property ':hasMother' on node ':Alexandra_of_Greece_and_Denmark' does not have the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Aspasia_Manos', class=':Ancestor')
-
-
-  Violation [43]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value ':Alexandra_of_Greece_and_Denmark' for the property ':hasMother' on node ':Alexander_Crown_Prince_of_Yugoslavia' does not have the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Alexandra_of_Greece_and_Denmark', class=':Ancestor')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Peter_II_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Maria_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Alexandra_of_Greece_and_Denmark' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Aspasia_Manos' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_of_Greece' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_Crown_Prince_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Peter_II_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Maria_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Alexandra_of_Greece_and_Denmark' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Aspasia_Manos' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_of_Greece' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property ':hasSex' on node ':Alexander_Crown_Prince_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value ':Alexander_of_Greece' for the property ':hasFather' on node ':Alexandra_of_Greece_and_Denmark' does not have the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Alexander_of_Greece', class=':Ancestor')
-
-
-  Violation [57]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value ':Aspasia_Manos' for the property ':hasMother' on node ':Alexandra_of_Greece_and_Denmark' does not have the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node=':Aspasia_Manos', class=':Ancestor')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Alexandra_of_Greece_and_Denmark' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Aspasia_Manos' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Maria_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Alexandra_of_Greece_and_Denmark' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Aspasia_Manos' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property ':hasSex' on node ':Maria_of_Yugoslavia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Alexandra, :Ancestor)
 
 
 
@@ -1328,64 +985,19 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (3c3f2425-a01a-4932-bfbd-333829438cce)
- Call ID: 3c3f2425-a01a-4932-bfbd-333829438cce
+  AssignClass (7a92b8e3-4fa8-44bf-a216-e1f754d4632f)
+ Call ID: 7a92b8e3-4fa8-44bf-a216-e1f754d4632f
   Args:
-    type: :Sex
-    source: Male
-  AssignClass (599baf2b-b198-4f13-9779-10b1d2deddf8)
- Call ID: 599baf2b-b198-4f13-9779-10b1d2deddf8
-  Args:
-    type: :Sex
-    source: Female
-  AssignClass (e0552e7d-af09-499d-913b-ad0b3c531baa)
- Call ID: e0552e7d-af09-499d-913b-ad0b3c531baa
-  Args:
+    source: Peter_II
     type: :Ancestor
-    source: Alexander_of_Greece
-  AssignClass (0794fd02-7068-41f8-ab70-2c1ea9390ea1)
- Call ID: 0794fd02-7068-41f8-ab70-2c1ea9390ea1
+  AssignClass (763725f8-5dbb-497e-aa0a-7c31bfc4493b)
+ Call ID: 763725f8-5dbb-497e-aa0a-7c31bfc4493b
   Args:
-    source: Peter_II_of_Yugoslavia
+    source: Alexandra
     type: :Ancestor
-  AssignClass (fdb13d96-70cd-49dd-b7b5-a7972d02e26f)
- Call ID: fdb13d96-70cd-49dd-b7b5-a7972d02e26f
+  ValidateShacl (8b414509-3ad0-415f-974a-0fd4ec692359)
+ Call ID: 8b414509-3ad0-415f-974a-0fd4ec692359
   Args:
-    source: Maria_of_Yugoslavia
-    type: :Ancestor
-  AssignClass (fdbcb3fa-8078-447e-ae5d-cc7a722d254c)
- Call ID: fdbcb3fa-8078-447e-ae5d-cc7a722d254c
-  Args:
-    type: :Ancestor
-    source: Aspasia_Manos
-  AssignClass (4e98f14a-aa73-4193-9ca7-fff05deece61)
- Call ID: 4e98f14a-aa73-4193-9ca7-fff05deece61
-  Args:
-    type: :Ancestor
-    source: Alexandra_of_Greece_and_Denmark
-  Finish (4821cd2b-50f0-4e98-9d0e-0960d61357d1)
- Call ID: 4821cd2b-50f0-4e98-9d0e-0960d61357d1
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1400,20 +1012,24 @@ The final data graph after all the edits:
 
   data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
           :Person ;
-      :hasFather data:Peter_II_of_Yugoslavia ;
-      :hasMother data:Alexandra_of_Greece_and_Denmark ;
-      :hasSex "Male"^^xsd:string .
+      :isSonOf data:Alexandra,
+          data:Peter_II .
 
-  data:Female a :Sex .
-
-  data:Male a :Sex .
-
-  data:Alexander_of_Greece a :Ancestor,
+  data:King_George_II a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
+          :Person .
 
-  data:Alexandra_of_Greece_and_Denmark a :Ancestor,
+  data:Maria_of_Yugoslavia a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Peter_II .
+
+  data:Queen_Sophia a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Alexander_of_Greece .
+
+  data:Alexandra a :Ancestor,
           :Person,
           :Woman ;
       :hasBirthYear 1921 ;
@@ -1421,741 +1037,19 @@ The final data graph after all the edits:
       :hasFather data:Alexander_of_Greece ;
       :hasMarriageYear 1944 ;
       :hasMother data:Aspasia_Manos ;
-      :hasSex "Female"^^xsd:string .
+      :hasRelation data:Peter_II .
 
   data:Aspasia_Manos a :Ancestor,
           :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Maria_of_Yugoslavia a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Peter_II_of_Yugoslavia a :Ancestor,
-          :Man,
-          :Person ;
-      :hasDeathYear 1970 ;
-      :hasMother data:Maria_of_Yugoslavia ;
-      :hasSex "Male"^^xsd:string .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (47aa620f-f325-4150-9dd8-5e1db46b8c65)
- Call ID: 47aa620f-f325-4150-9dd8-5e1db46b8c65
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:63
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Peter_II_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandra_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Aspasia_Manos' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_of_Greece' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Maria_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Peter_II_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandra_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Aspasia_Manos' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_of_Greece' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Maria_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Peter_II_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandra_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Aspasia_Manos' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_of_Greece' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Maria_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_of_Greece' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Peter_II_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_of_Greece' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Peter_II_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandra_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Peter_II_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Aspasia_Manos' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_of_Greece' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Maria_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandra_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Peter_II_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Aspasia_Manos' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_of_Greece' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Maria_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandra_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Peter_II_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Aspasia_Manos' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_of_Greece' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Maria_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Peter_II_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Maria_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandra_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Aspasia_Manos' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_of_Greece' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Peter_II_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Maria_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandra_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Aspasia_Manos' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_of_Greece' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Peter_II_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Maria_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandra_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Aspasia_Manos' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_of_Greece' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Alexander_Crown_Prince_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandra_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Aspasia_Manos' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Maria_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Alexandra_of_Greece_and_Denmark' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Aspasia_Manos' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on the node 'Maria_of_Yugoslavia' does not belong to the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (170cb437-7c5e-4eb0-8eed-18d785b1d7a3)
- Call ID: 170cb437-7c5e-4eb0-8eed-18d785b1d7a3
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (841e2053-dd4a-4bfe-9fac-94fe70f9ce3e)
- Call ID: 841e2053-dd4a-4bfe-9fac-94fe70f9ce3e
-  Args:
-    source: Peter_II_of_Yugoslavia
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-  RemoveLiteral (1efd4f8f-8318-461f-af9e-180e76cc22e5)
- Call ID: 1efd4f8f-8318-461f-af9e-180e76cc22e5
-  Args:
-    literal_type: xsd:string
-    source: Alexandra_of_Greece_and_Denmark
-    relation: :hasSex
-    literal_value: Female
-  RemoveLiteral (a4ac63e7-6fbd-458a-95f9-df85601828fb)
- Call ID: a4ac63e7-6fbd-458a-95f9-df85601828fb
-  Args:
-    relation: :hasSex
-    literal_value: Female
-    source: Aspasia_Manos
-    literal_type: xsd:string
-  RemoveLiteral (ef7074ad-c293-4f29-989f-0a23e605230c)
- Call ID: ef7074ad-c293-4f29-989f-0a23e605230c
-  Args:
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-    source: Alexander_of_Greece
-  RemoveLiteral (e631300b-2f62-4ba0-8187-5bd61a6d2fb7)
- Call ID: e631300b-2f62-4ba0-8187-5bd61a6d2fb7
-  Args:
-    source: Maria_of_Yugoslavia
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-  RemoveLiteral (c0599ad2-1f4a-492a-bba6-20ab21463adc)
- Call ID: c0599ad2-1f4a-492a-bba6-20ab21463adc
-  Args:
-    literal_type: xsd:string
-    source: Alexander_Crown_Prince_of_Yugoslavia
-    relation: :hasSex
-    literal_value: Male
-  AddTriple (63ed98e6-a50d-4ad8-bd34-aa61e0a2e5bf)
- Call ID: 63ed98e6-a50d-4ad8-bd34-aa61e0a2e5bf
-  Args:
-    target: Male
-    source: Peter_II_of_Yugoslavia
-    relation: :hasSex
-  AddTriple (44a13cdb-df5d-4191-8be7-458b462dd36a)
- Call ID: 44a13cdb-df5d-4191-8be7-458b462dd36a
-  Args:
-    relation: :hasSex
-    source: Alexandra_of_Greece_and_Denmark
-    target: Female
-  AddTriple (aa59a8bf-6961-4d93-85d5-85c44bd06c90)
- Call ID: aa59a8bf-6961-4d93-85d5-85c44bd06c90
-  Args:
-    target: Female
-    source: Aspasia_Manos
-    relation: :hasSex
-  AddTriple (2121d38c-a45d-4c28-8ee3-baf5a1d19aa0)
- Call ID: 2121d38c-a45d-4c28-8ee3-baf5a1d19aa0
-  Args:
-    target: Male
-    source: Alexander_of_Greece
-    relation: :hasSex
-  AddTriple (96317d17-0e5e-4e09-b866-315ec73b179c)
- Call ID: 96317d17-0e5e-4e09-b866-315ec73b179c
-  Args:
-    target: Female
-    source: Maria_of_Yugoslavia
-    relation: :hasSex
-  AddTriple (edaf71d3-3ac1-4118-b58d-ad9d57cf8c90)
- Call ID: edaf71d3-3ac1-4118-b58d-ad9d57cf8c90
-  Args:
-    source: Alexander_Crown_Prince_of_Yugoslavia
-    relation: :hasSex
-    target: Male
-  ValidateShacl (596192d8-c732-40ef-aeb0-7d65eb1efa9f)
- Call ID: 596192d8-c732-40ef-aeb0-7d65eb1efa9f
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
-          :Person ;
-      :hasFather data:Peter_II_of_Yugoslavia ;
-      :hasMother data:Alexandra_of_Greece_and_Denmark ;
-      :hasSex data:Male .
+          :Woman .
 
   data:Alexander_of_Greece a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
-  data:Alexandra_of_Greece_and_Denmark a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1921 ;
-      :hasDeathYear 1993 ;
-      :hasFather data:Alexander_of_Greece ;
-      :hasMarriageYear 1944 ;
-      :hasMother data:Aspasia_Manos ;
-      :hasSex data:Female .
-
-  data:Aspasia_Manos a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Maria_of_Yugoslavia a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Peter_II_of_Yugoslavia a :Ancestor,
+  data:Peter_II a :Ancestor,
           :Man,
-          :Person ;
-      :hasDeathYear 1970 ;
-      :hasMother data:Maria_of_Yugoslavia ;
-      :hasSex data:Male .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
+          :Person .
 
 
 
@@ -2167,6 +1061,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (6de914c1-d120-4fd4-a787-81f5c6d5485a)
- Call ID: 6de914c1-d120-4fd4-a787-81f5c6d5485a
+  Finish (23628628-6311-4f53-9be9-d9d6ff76fd6a)
+ Call ID: 23628628-6311-4f53-9be9-d9d6ff76fd6a
   Args:

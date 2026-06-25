@@ -117,6 +117,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -132,39 +134,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -179,6 +151,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -196,6 +185,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -263,29 +267,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -294,6 +290,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -306,6 +310,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -314,17 +320,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -352,6 +360,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -367,173 +459,112 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (87e659ee-7cf2-466d-9211-af7364d7bbef)
- Call ID: 87e659ee-7cf2-466d-9211-af7364d7bbef
+  AssignClass (decef64d-1d2b-4827-896e-3ed151aca670)
+ Call ID: decef64d-1d2b-4827-896e-3ed151aca670
   Args:
-    type: :Man
-    source: :Pieter-Christiaan_van_Vollenhoven
-  AssignClass (2ac47e9e-7c7a-43f1-880a-98cf14af56f0)
- Call ID: 2ac47e9e-7c7a-43f1-880a-98cf14af56f0
-  Args:
-    source: :Pieter-Christiaan_van_Vollenhoven
-    type: :Person
-  AssignClass (14f25153-1e98-4734-949e-8749f8a34672)
- Call ID: 14f25153-1e98-4734-949e-8749f8a34672
+    source: :Princess_Beatrix
+    type: :Woman
+  AssignClass (3ffa3ff5-cf10-4251-bff9-f3a902da7f53)
+ Call ID: 3ffa3ff5-cf10-4251-bff9-f3a902da7f53
   Args:
     source: :Princess_Margriet
     type: :Woman
-  AssignClass (ad7d8692-fe98-4394-afb7-8e80d04e48e3)
- Call ID: ad7d8692-fe98-4394-afb7-8e80d04e48e3
+  AssignClass (47982d08-e4cd-425a-90a9-1825dd7757d3)
+ Call ID: 47982d08-e4cd-425a-90a9-1825dd7757d3
   Args:
-    type: :Person
-    source: :Princess_Margriet
-  AssignClass (ab9acf4e-3f78-4cd4-930b-ce4598736e44)
- Call ID: ab9acf4e-3f78-4cd4-930b-ce4598736e44
-  Args:
+    source: :Pieter_van_Vollenhoven_Sr
     type: :Man
-    source: :Pieter_van_Vollenhoven_Sr
-  AssignClass (2b310e1a-56c0-4177-86df-0529fbc752b1)
- Call ID: 2b310e1a-56c0-4177-86df-0529fbc752b1
+  AssignClass (7f80c684-52d7-4095-9112-b40cdc59edf7)
+ Call ID: 7f80c684-52d7-4095-9112-b40cdc59edf7
   Args:
-    type: :Person
-    source: :Pieter_van_Vollenhoven_Sr
-  AssignClass (a4b21149-288e-4c90-b80c-8e256cc4f8ca)
- Call ID: a4b21149-288e-4c90-b80c-8e256cc4f8ca
-  Args:
-    source: :Princess_Anita
-    type: :Woman
-  AssignClass (061552fe-033b-4f44-b096-ec72bd5749a3)
- Call ID: 061552fe-033b-4f44-b096-ec72bd5749a3
-  Args:
-    source: :Princess_Anita
-    type: :Person
-  AssignClass (09e2cce8-5dca-42cf-a978-facc7d0e673f)
- Call ID: 09e2cce8-5dca-42cf-a978-facc7d0e673f
-  Args:
-    type: :Woman
-    source: :Emma_Francisca_Catharina_van_Vollenhoven
-  AssignClass (015b47a9-8313-4a65-9b73-267a01e868d6)
- Call ID: 015b47a9-8313-4a65-9b73-267a01e868d6
-  Args:
-    type: :Person
-    source: :Emma_Francisca_Catharina_van_Vollenhoven
-  AssignClass (3458ffe8-63dd-43d5-9fe0-f358201a4717)
- Call ID: 3458ffe8-63dd-43d5-9fe0-f358201a4717
-  Args:
+    source: :Prince_Pieter-Christiaan
     type: :Man
-    source: :Prince_Maurits
-  AssignClass (dea04ec9-45a0-4fdc-901d-df341746f006)
- Call ID: dea04ec9-45a0-4fdc-901d-df341746f006
+  AddLiteral (07d5f38a-2f7b-4333-90be-d3a97d67a3f9)
+ Call ID: 07d5f38a-2f7b-4333-90be-d3a97d67a3f9
   Args:
-    type: :Person
-    source: :Prince_Maurits
-  AddLiteral (7fdbdcac-0a7e-479e-9f6e-1f7827b612c7)
- Call ID: 7fdbdcac-0a7e-479e-9f6e-1f7827b612c7
-  Args:
-    literal_value: Male
-    source: :Pieter-Christiaan_van_Vollenhoven
-    literal_type: xsd:string
-    relation: :hasSex
-  AddLiteral (38acb749-44ce-4da3-9f41-241d32ef199f)
- Call ID: 38acb749-44ce-4da3-9f41-241d32ef199f
-  Args:
-    literal_type: xsd:string
-    relation: :hasSex
-    source: :Princess_Margriet
-    literal_value: Female
-  AddLiteral (e7505807-b1f4-4077-8224-0c3b2a22aa06)
- Call ID: e7505807-b1f4-4077-8224-0c3b2a22aa06
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    source: :Pieter_van_Vollenhoven_Sr
-    literal_value: Male
-  AddLiteral (88b6577f-989e-4807-a010-afac0d7f4248)
- Call ID: 88b6577f-989e-4807-a010-afac0d7f4248
-  Args:
-    literal_value: Female
-    source: :Princess_Anita
-    relation: :hasSex
-    literal_type: xsd:string
-  AddLiteral (597b9142-ca30-464e-9301-7745df290966)
- Call ID: 597b9142-ca30-464e-9301-7745df290966
-  Args:
-    literal_value: Female
-    source: :Emma_Francisca_Catharina_van_Vollenhoven
-    relation: :hasSex
-    literal_type: xsd:string
-  AddLiteral (9a01159f-5234-4bcf-bc1a-14d6849ac0ea)
- Call ID: 9a01159f-5234-4bcf-bc1a-14d6849ac0ea
-  Args:
-    source: :Prince_Maurits
-    literal_value: Male
-    literal_type: xsd:string
-    relation: :hasSex
-  AddTriple (683b28f0-db6b-4b56-92be-94c5d905d050)
- Call ID: 683b28f0-db6b-4b56-92be-94c5d905d050
-  Args:
-    target: :Princess_Margriet
-    relation: :hasMother
-    source: :Pieter-Christiaan_van_Vollenhoven
-  AddTriple (7a059b3d-f4fe-4323-96e8-dbebb9957737)
- Call ID: 7a059b3d-f4fe-4323-96e8-dbebb9957737
-  Args:
-    relation: :hasFather
-    target: :Pieter_van_Vollenhoven_Sr
-    source: :Pieter-Christiaan_van_Vollenhoven
-  AddTriple (35076527-0ce2-452f-a5ea-e028d0666e69)
- Call ID: 35076527-0ce2-452f-a5ea-e028d0666e69
-  Args:
-    source: :Emma_Francisca_Catharina_van_Vollenhoven
-    target: :Pieter-Christiaan_van_Vollenhoven
-    relation: :hasFather
-  AddTriple (5c5f35f2-b109-4d5c-9388-df16858aa49a)
- Call ID: 5c5f35f2-b109-4d5c-9388-df16858aa49a
-  Args:
-    relation: :hasMother
-    target: :Princess_Anita
-    source: :Emma_Francisca_Catharina_van_Vollenhoven
-  AddLiteral (3f8f6426-d486-4876-8289-88bf3cd663f3)
- Call ID: 3f8f6426-d486-4876-8289-88bf3cd663f3
-  Args:
-    relation: :hasBirthYear
     literal_type: xsd:integer
-    source: :Pieter-Christiaan_van_Vollenhoven
+    source: :Prince_Pieter-Christiaan
+    relation: :hasBirthYear
     literal_value: 1972
-  AddLiteral (263fe58f-7ba8-462e-b71a-88476758c279)
- Call ID: 263fe58f-7ba8-462e-b71a-88476758c279
+  AddTriple (34ba9432-77cf-4817-86eb-811a498de040)
+ Call ID: 34ba9432-77cf-4817-86eb-811a498de040
   Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 2006
+    relation: :hasMother
+    source: :Prince_Pieter-Christiaan
+    target: :Princess_Margriet
+  AddTriple (5f36d48e-7915-4163-8cb9-05e956fe0421)
+ Call ID: 5f36d48e-7915-4163-8cb9-05e956fe0421
+  Args:
+    target: :Pieter_van_Vollenhoven_Sr
+    source: :Prince_Pieter-Christiaan
+    relation: :hasFather
+  AddTriple (de40cb34-1768-4d48-b45b-6395344abae7)
+ Call ID: de40cb34-1768-4d48-b45b-6395344abae7
+  Args:
+    target: :Prince_Pieter-Christiaan
+    source: :Princess_Margriet
+    relation: :hasChild
+  AddTriple (6926337d-9e9f-4494-af5c-4251da2df9dc)
+ Call ID: 6926337d-9e9f-4494-af5c-4251da2df9dc
+  Args:
+    target: :Prince_Pieter-Christiaan
+    relation: :hasChild
+    source: :Pieter_van_Vollenhoven_Sr
+  AssignClass (58e749b6-097d-4889-8d46-281940404e7c)
+ Call ID: 58e749b6-097d-4889-8d46-281940404e7c
+  Args:
+    source: :Princess_Anita
+    type: :Woman
+  AssignClass (5e6681c9-6552-46fd-b830-2e39d0616868)
+ Call ID: 5e6681c9-6552-46fd-b830-2e39d0616868
+  Args:
     source: :Emma_Francisca_Catharina_van_Vollenhoven
-  Finish (1ad9c6bc-e6b0-4f1b-a095-86e8c2973274)
- Call ID: 1ad9c6bc-e6b0-4f1b-a095-86e8c2973274
+    type: :Woman
+  AddTriple (ad96b813-19c3-4bc6-9b49-18104557ad0d)
+ Call ID: ad96b813-19c3-4bc6-9b49-18104557ad0d
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    target: :Princess_Anita
+    relation: :hasMother
+    source: :Emma_Francisca_Catharina_van_Vollenhoven
+  AddTriple (52b273fd-7f72-4eec-9fd0-32dbd30faddb)
+ Call ID: 52b273fd-7f72-4eec-9fd0-32dbd30faddb
+  Args:
+    relation: :hasFather
+    source: :Emma_Francisca_Catharina_van_Vollenhoven
+    target: :Prince_Pieter-Christiaan
+  AddTriple (90ef7306-d2cf-40ec-b0ea-32f4b06aa457)
+ Call ID: 90ef7306-d2cf-40ec-b0ea-32f4b06aa457
+  Args:
+    relation: :hasChild
+    source: :Princess_Anita
+    target: :Emma_Francisca_Catharina_van_Vollenhoven
+  AddTriple (a3168c2e-c392-480c-b0d2-703dea5a8eb7)
+ Call ID: a3168c2e-c392-480c-b0d2-703dea5a8eb7
+  Args:
+    relation: :hasChild
+    source: :Prince_Pieter-Christiaan
+    target: :Emma_Francisca_Catharina_van_Vollenhoven
+  AddLiteral (b6c7c1d2-6b5c-4461-8578-d7c457bf5f8f)
+ Call ID: b6c7c1d2-6b5c-4461-8578-d7c457bf5f8f
+  Args:
+    literal_value: Pieter Anton Maurits Erik van Vollenhoven
+    relation: :alsoKnownAs
+    source: :Prince_Pieter-Christiaan
+    literal_type: xsd:string
+  AssignClass (049e3c68-4078-49ef-a7c1-a890ff3fe18d)
+ Call ID: 049e3c68-4078-49ef-a7c1-a890ff3fe18d
+  Args:
+    source: :Prince_Maurits
+    type: :Man
+  AddTriple (de0a13cf-9db4-43c5-a2da-50e3a837ce0e)
+ Call ID: de0a13cf-9db4-43c5-a2da-50e3a837ce0e
+  Args:
+    source: :Prince_Pieter-Christiaan
+    relation: :hasBrother
+    target: :Prince_Maurits
+  Finish (8f471c43-b296-489e-8187-64b66b6eb79d)
+ Call ID: 8f471c43-b296-489e-8187-64b66b6eb79d
+  Args:
 
 ================================= Tool Message =================================
 
@@ -610,35 +641,30 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Emma_Francisca_Catharina_van_Vollenhoven a :Person,
-          :Woman ;
-      :hasBirthYear 2006 ;
-      :hasFather data:Pieter-Christiaan_van_Vollenhoven ;
-      :hasMother data:Princess_Anita ;
-      :hasSex "Female"^^xsd:string .
+  data:Princess_Beatrix a :Woman .
 
-  data:Prince_Maurits a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
+  data:Pieter_van_Vollenhoven_Sr a :Man ;
+      :hasChild data:Prince_Pieter-Christiaan .
 
-  data:Pieter-Christiaan_van_Vollenhoven a :Man,
-          :Person ;
+  data:Prince_Maurits a :Man .
+
+  data:Princess_Anita a :Woman ;
+      :hasChild data:Emma_Francisca_Catharina_van_Vollenhoven .
+
+  data:Princess_Margriet a :Woman ;
+      :hasChild data:Prince_Pieter-Christiaan .
+
+  data:Emma_Francisca_Catharina_van_Vollenhoven a :Woman ;
+      :hasFather data:Prince_Pieter-Christiaan ;
+      :hasMother data:Princess_Anita .
+
+  data:Prince_Pieter-Christiaan a :Man ;
+      :alsoKnownAs "Pieter Anton Maurits Erik van Vollenhoven"^^xsd:string ;
       :hasBirthYear 1972 ;
+      :hasBrother data:Prince_Maurits ;
+      :hasChild data:Emma_Francisca_Catharina_van_Vollenhoven ;
       :hasFather data:Pieter_van_Vollenhoven_Sr ;
-      :hasMother data:Princess_Margriet ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Pieter_van_Vollenhoven_Sr a :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
-
-  data:Princess_Anita a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
-
-  data:Princess_Margriet a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+      :hasMother data:Princess_Margriet .
 
 
 
@@ -650,494 +676,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (cbbef866-f7da-434e-89e4-eb454dda820c)
- Call ID: cbbef866-f7da-434e-89e4-eb454dda820c
+  ValidateShacl (43f97f82-58f2-4929-be0b-1c0446c10c6b)
+ Call ID: 43f97f82-58f2-4929-be0b-1c0446c10c6b
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:60
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Prince_Maurits' is missing the required class ':Sex'.
+      The value node 'Pieter_van_Vollenhoven_Sr' used in the 'hasFather' relationship for 'Prince_Pieter-Christiaan' is not classified as an 'Ancestor' or 'Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Pieter_van_Vollenhoven_Sr, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter_van_Vollenhoven_Sr' is missing the required class ':Sex'.
+      The value node 'Princess_Margriet' used in the 'hasMother' relationship for 'Prince_Pieter-Christiaan' is not classified as an 'Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Margriet, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter-Christiaan_van_Vollenhoven' is missing the required class ':Sex'.
+      The value node 'Prince_Pieter-Christiaan' used in the 'hasFather' relationship for 'Emma_Francisca_Catharina_van_Vollenhoven' is not classified as an 'Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Pieter-Christiaan, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Pieter_van_Vollenhoven_Sr' used as the father of 'Pieter-Christiaan_van_Vollenhoven' lacks the required classes ':Ancestor' or ':Man'.
+      The value node 'Pieter_van_Vollenhoven_Sr' used in the 'hasFather' relationship for 'Prince_Pieter-Christiaan' is not classified as an 'Ancestor' or 'Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Pieter_van_Vollenhoven_Sr', class=':Ancestor')
+      AssignClass(Pieter_van_Vollenhoven_Sr, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Princess_Margriet' used as the mother of 'Pieter-Christiaan_van_Vollenhoven' lacks the required classes ':Ancestor' or ':Woman'.
+      The value node 'Princess_Anita' used in the 'hasMother' relationship for 'Emma_Francisca_Catharina_van_Vollenhoven' is not classified as an 'Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Margriet', class=':Ancestor')
+      AssignClass(Princess_Anita, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Prince_Maurits' is missing the required class ':Sex'.
+      The value node 'Princess_Margriet' used in the 'hasMother' relationship for 'Prince_Pieter-Christiaan' is not classified as an 'Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Margriet, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter_van_Vollenhoven_Sr' is missing the required class ':Sex'.
+      The value node 'Prince_Pieter-Christiaan' used in the 'hasFather' relationship for 'Emma_Francisca_Catharina_van_Vollenhoven' is not classified as an 'Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Pieter-Christiaan, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter-Christiaan_van_Vollenhoven' is missing the required class ':Sex'.
+      The value node 'Pieter_van_Vollenhoven_Sr' used in the 'hasFather' relationship for 'Prince_Pieter-Christiaan' is not classified as an 'Ancestor' or 'Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Pieter_van_Vollenhoven_Sr, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Margriet' is missing the required class ':Sex'.
+      The value node 'Princess_Anita' used in the 'hasMother' relationship for 'Emma_Francisca_Catharina_van_Vollenhoven' is not classified as an 'Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Princess_Anita, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter-Christiaan_van_Vollenhoven' is missing the required class ':Sex'.
+      The value node 'Princess_Margriet' used in the 'hasMother' relationship for 'Prince_Pieter-Christiaan' is not classified as an 'Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Margriet, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Anita' is missing the required class ':Sex'.
+      The value node 'Prince_Pieter-Christiaan' used in the 'hasFather' relationship for 'Emma_Francisca_Catharina_van_Vollenhoven' is not classified as an 'Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Prince_Pieter-Christiaan, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Prince_Maurits' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Emma_Francisca_Catharina_van_Vollenhoven' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter_van_Vollenhoven_Sr' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Pieter_van_Vollenhoven_Sr' used as the father of 'Pieter-Christiaan_van_Vollenhoven' lacks the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Pieter_van_Vollenhoven_Sr', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Pieter-Christiaan_van_Vollenhoven' used as the father of 'Emma_Francisca_Catharina_van_Vollenhoven' lacks the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Pieter-Christiaan_van_Vollenhoven', class=':Ancestor')
-
-
-  Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Princess_Margriet' used as the mother of 'Pieter-Christiaan_van_Vollenhoven' lacks the required classes ':Ancestor' or ':Woman'.
+      The value node 'Princess_Anita' used in the 'hasMother' relationship for 'Emma_Francisca_Catharina_van_Vollenhoven' is not classified as an 'Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Margriet', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Anita' used as the mother of 'Emma_Francisca_Catharina_van_Vollenhoven' lacks the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Anita', class=':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Margriet' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter-Christiaan_van_Vollenhoven' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Anita' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Prince_Maurits' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Emma_Francisca_Catharina_van_Vollenhoven' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter_van_Vollenhoven_Sr' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Margriet' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter-Christiaan_van_Vollenhoven' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Anita' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Prince_Maurits' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Emma_Francisca_Catharina_van_Vollenhoven' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter_van_Vollenhoven_Sr' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Margriet' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter-Christiaan_van_Vollenhoven' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Anita' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Prince_Maurits' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Emma_Francisca_Catharina_van_Vollenhoven' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter_van_Vollenhoven_Sr' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Pieter_van_Vollenhoven_Sr' used as the father of 'Pieter-Christiaan_van_Vollenhoven' lacks the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Pieter_van_Vollenhoven_Sr', class=':Ancestor')
-
-
-  Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Pieter-Christiaan_van_Vollenhoven' used as the father of 'Emma_Francisca_Catharina_van_Vollenhoven' lacks the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Pieter-Christiaan_van_Vollenhoven', class=':Ancestor')
-
-
-  Violation [39]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Margriet' used as the mother of 'Pieter-Christiaan_van_Vollenhoven' lacks the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Margriet', class=':Ancestor')
-
-
-  Violation [40]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Anita' used as the mother of 'Emma_Francisca_Catharina_van_Vollenhoven' lacks the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Anita', class=':Ancestor')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Margriet' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter-Christiaan_van_Vollenhoven' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Anita' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Prince_Maurits' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Emma_Francisca_Catharina_van_Vollenhoven' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter_van_Vollenhoven_Sr' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Margriet' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter-Christiaan_van_Vollenhoven' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Anita' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Prince_Maurits' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Emma_Francisca_Catharina_van_Vollenhoven' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Pieter_van_Vollenhoven_Sr' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Pieter-Christiaan_van_Vollenhoven' used as the father of 'Emma_Francisca_Catharina_van_Vollenhoven' lacks the required classes ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Pieter-Christiaan_van_Vollenhoven', class=':Ancestor')
-
-
-  Violation [54]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Princess_Anita' used as the mother of 'Emma_Francisca_Catharina_van_Vollenhoven' lacks the required classes ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Anita', class=':Ancestor')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Margriet' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Anita' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Emma_Francisca_Catharina_van_Vollenhoven' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Margriet' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Princess_Anita' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Emma_Francisca_Catharina_van_Vollenhoven' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Princess_Anita, :Ancestor)
 
 
 
@@ -1146,157 +788,49 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (45030060-e223-4687-a0bc-682c2274495d)
- Call ID: 45030060-e223-4687-a0bc-682c2274495d
-  Args:
-    source: :Male
-    type: :Sex
-  AssignClass (d4883063-1316-4a5d-a1c3-a89d57807e82)
- Call ID: d4883063-1316-4a5d-a1c3-a89d57807e82
-  Args:
-    source: :Female
-    type: :Sex
-  AssignClass (8ebc0b5a-79c5-4a6e-9996-e949e78c5513)
- Call ID: 8ebc0b5a-79c5-4a6e-9996-e949e78c5513
+  AssignClass (2687f047-9c9f-4072-b2f0-b43626ff5b46)
+ Call ID: 2687f047-9c9f-4072-b2f0-b43626ff5b46
   Args:
     type: :Ancestor
     source: :Pieter_van_Vollenhoven_Sr
-  AssignClass (58220b07-eeb1-466d-b969-47bfbc48f423)
- Call ID: 58220b07-eeb1-466d-b969-47bfbc48f423
+  AssignClass (d5a042ba-5ceb-41bf-9dfa-aefb7f0c41e6)
+ Call ID: d5a042ba-5ceb-41bf-9dfa-aefb7f0c41e6
   Args:
     source: :Princess_Margriet
     type: :Ancestor
-  AssignClass (f2af2067-6233-4d1e-bbe0-95c176d8cc15)
- Call ID: f2af2067-6233-4d1e-bbe0-95c176d8cc15
+  AssignClass (ba15d9c8-0488-4f36-bb78-6a3dfee3b4bd)
+ Call ID: ba15d9c8-0488-4f36-bb78-6a3dfee3b4bd
   Args:
     type: :Ancestor
-    source: :Pieter-Christiaan_van_Vollenhoven
-  AssignClass (fedcfae7-5b69-4431-b5ed-7923af852e60)
- Call ID: fedcfae7-5b69-4431-b5ed-7923af852e60
+    source: :Prince_Pieter-Christiaan
+  AssignClass (e24eff0a-affc-4bce-ac64-4e1feb73dec8)
+ Call ID: e24eff0a-affc-4bce-ac64-4e1feb73dec8
+  Args:
+    type: :Ancestor
+    source: :Princess_Anita
+  AssignClass (962a9944-b92c-48c4-8ac8-f00507d1c20b)
+ Call ID: 962a9944-b92c-48c4-8ac8-f00507d1c20b
+  Args:
+    type: :Man
+    source: :Prince_Pieter-Christiaan
+  AssignClass (f03eb20e-4656-419c-972e-0ba00c78eeb7)
+ Call ID: f03eb20e-4656-419c-972e-0ba00c78eeb7
+  Args:
+    type: :Woman
+    source: :Princess_Margriet
+  AssignClass (fd06dabc-8880-4a4d-83df-fa120967088c)
+ Call ID: fd06dabc-8880-4a4d-83df-fa120967088c
   Args:
     source: :Princess_Anita
-    type: :Ancestor
-  RemoveLiteral (6de77ca9-9b05-439f-b1b5-7a42d617a8e6)
- Call ID: 6de77ca9-9b05-439f-b1b5-7a42d617a8e6
-  Args:
-    source: :Pieter-Christiaan_van_Vollenhoven
-    literal_value: Male
-    relation: :hasSex
-    literal_type: xsd:string
-  RemoveLiteral (8b9b0172-1e6e-4bff-af53-28f9259398a5)
- Call ID: 8b9b0172-1e6e-4bff-af53-28f9259398a5
-  Args:
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Female
-    source: :Princess_Margriet
-  RemoveLiteral (2114270b-d6ba-4dbf-9f70-15935aaaad75)
- Call ID: 2114270b-d6ba-4dbf-9f70-15935aaaad75
+    type: :Woman
+  AssignClass (9c4722ee-6cbb-4488-acfb-4bfdb6a9f030)
+ Call ID: 9c4722ee-6cbb-4488-acfb-4bfdb6a9f030
   Args:
     source: :Pieter_van_Vollenhoven_Sr
-    literal_value: Male
-    relation: :hasSex
-    literal_type: xsd:string
-  RemoveLiteral (fe3e084a-bdaf-4380-b516-1d82213fcc62)
- Call ID: fe3e084a-bdaf-4380-b516-1d82213fcc62
+    type: :Man
+  ValidateShacl (4f46f266-4a44-44d2-b3cc-04822ff0116e)
+ Call ID: 4f46f266-4a44-44d2-b3cc-04822ff0116e
   Args:
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Female
-    source: :Princess_Anita
-  RemoveLiteral (3881a244-3799-44ad-a99a-5ec9d2a9c647)
- Call ID: 3881a244-3799-44ad-a99a-5ec9d2a9c647
-  Args:
-    source: :Emma_Francisca_Catharina_van_Vollenhoven
-    literal_value: Female
-    literal_type: xsd:string
-    relation: :hasSex
-  RemoveLiteral (9b77845a-1c19-4d22-9a0d-b219a5fffe37)
- Call ID: 9b77845a-1c19-4d22-9a0d-b219a5fffe37
-  Args:
-    source: :Prince_Maurits
-    literal_value: Male
-    literal_type: xsd:string
-    relation: :hasSex
-  AddTriple (2f12da3a-48cb-4a38-8fc5-087179fe21d6)
- Call ID: 2f12da3a-48cb-4a38-8fc5-087179fe21d6
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: :Pieter-Christiaan_van_Vollenhoven
-  AddTriple (1c6ba124-a9e9-4916-b1ee-3b4fb6538aa4)
- Call ID: 1c6ba124-a9e9-4916-b1ee-3b4fb6538aa4
-  Args:
-    source: :Princess_Margriet
-    target: :Female
-    relation: :hasSex
-  AddTriple (1f1c194b-e0b7-4ca3-abf6-3e1116ebf5ab)
- Call ID: 1f1c194b-e0b7-4ca3-abf6-3e1116ebf5ab
-  Args:
-    source: :Pieter_van_Vollenhoven_Sr
-    target: :Male
-    relation: :hasSex
-  AddTriple (a33fbd5b-4c20-4eaf-81cf-4e59987e9e0e)
- Call ID: a33fbd5b-4c20-4eaf-81cf-4e59987e9e0e
-  Args:
-    source: :Princess_Anita
-    target: :Female
-    relation: :hasSex
-  AddTriple (7aae641a-e67e-446f-a248-fc7ef4f0e8ed)
- Call ID: 7aae641a-e67e-446f-a248-fc7ef4f0e8ed
-  Args:
-    source: :Emma_Francisca_Catharina_van_Vollenhoven
-    relation: :hasSex
-    target: :Female
-  AddTriple (486cda98-39ee-4c7b-8db6-dbd21833dd4e)
- Call ID: 486cda98-39ee-4c7b-8db6-dbd21833dd4e
-  Args:
-    target: :Male
-    relation: :hasSex
-    source: :Prince_Maurits
-  ValidateShacl (4f619354-c6c4-46c3-acc3-bbfab5cc493e)
- Call ID: 4f619354-c6c4-46c3-acc3-bbfab5cc493e
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1333,43 +867,34 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Emma_Francisca_Catharina_van_Vollenhoven a :Person,
-          :Woman ;
-      :hasBirthYear 2006 ;
-      :hasFather data:Pieter-Christiaan_van_Vollenhoven ;
-      :hasMother data:Princess_Anita ;
-      :hasSex data:Female .
-
-  data:Prince_Maurits a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Pieter-Christiaan_van_Vollenhoven a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1972 ;
-      :hasFather data:Pieter_van_Vollenhoven_Sr ;
-      :hasMother data:Princess_Margriet ;
-      :hasSex data:Male .
+  data:Princess_Beatrix a :Woman .
 
   data:Pieter_van_Vollenhoven_Sr a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Man ;
+      :hasChild data:Prince_Pieter-Christiaan .
+
+  data:Prince_Maurits a :Man .
 
   data:Princess_Anita a :Ancestor,
-          :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasChild data:Emma_Francisca_Catharina_van_Vollenhoven .
 
   data:Princess_Margriet a :Ancestor,
-          :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasChild data:Prince_Pieter-Christiaan .
 
-  data:Female a :Sex .
+  data:Emma_Francisca_Catharina_van_Vollenhoven a :Woman ;
+      :hasFather data:Prince_Pieter-Christiaan ;
+      :hasMother data:Princess_Anita .
 
-  data:Male a :Sex .
+  data:Prince_Pieter-Christiaan a :Ancestor,
+          :Man ;
+      :alsoKnownAs "Pieter Anton Maurits Erik van Vollenhoven"^^xsd:string ;
+      :hasBirthYear 1972 ;
+      :hasBrother data:Prince_Maurits ;
+      :hasChild data:Emma_Francisca_Catharina_van_Vollenhoven ;
+      :hasFather data:Pieter_van_Vollenhoven_Sr ;
+      :hasMother data:Princess_Margriet .
 
 
 
@@ -1381,6 +906,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (1bdaec12-21c9-40cc-81ae-8293aab84553)
- Call ID: 1bdaec12-21c9-40cc-81ae-8293aab84553
+  Finish (1cb9e2b1-0fb9-41b9-8ffe-de58f48fe14c)
+ Call ID: 1cb9e2b1-0fb9-41b9-8ffe-de58f48fe14c
   Args:

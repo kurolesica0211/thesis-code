@@ -2,29 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Countess_Leonore_of_Orange-Nassau a :Person,
+data:Kira_Kirillovna_of_Russia a :Person,
         :Woman ;
-    :hasBirthYear "2006-06-03"^^xsd:date ;
-    :hasFather data:Prince_Constantijn ;
-    :hasMother data:Princess_Laurentien .
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1967 ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Louis_Ferdinand_of_Prussia ;
+    :hasSon data:Friedrich_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Maria_of_Russia,
+        data:Vladimir_of_Russia .
 
-data:Pieter_van_Vollenhoven a :Man,
+data:Friedrich_Wilhelm_of_Prussia a :Man,
         :Person .
 
-data:Princess_Alexia a :Person,
-        :Woman .
-
-data:Princess_Beatrix a :Person,
-        :Woman .
-
-data:Princess_Margriet a :Person,
-        :Woman .
-
-data:Prince_Constantijn a :Ancestor,
+data:Kirill_Vladimirovich_of_Russia a :Ancestor,
         :Man,
         :Person .
 
-data:Princess_Laurentien a :Ancestor,
+data:Louis_Ferdinand_of_Prussia a :Man,
+        :Person .
+
+data:Maria_of_Russia a :Person,
+        :Woman .
+
+data:Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
         :Person,
         :Woman .
+
+data:Vladimir_of_Russia a :Man,
+        :Person .
 

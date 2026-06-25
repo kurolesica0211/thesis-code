@@ -125,6 +125,8 @@ Through his mother, Dimitri descends from kings Umberto II of Italy, Albert I of
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -140,39 +142,9 @@ Through his mother, Dimitri descends from kings Umberto II of Italy, Albert I of
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -187,6 +159,23 @@ Through his mother, Dimitri descends from kings Umberto II of Italy, Albert I of
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -204,6 +193,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,29 +275,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -302,6 +298,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -314,6 +318,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -322,17 +328,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -360,6 +368,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -375,158 +467,178 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (7e589d8f-6f97-4b69-a2b4-e8a796bf3f73)
- Call ID: 7e589d8f-6f97-4b69-a2b4-e8a796bf3f73
+  AssignClass (dffb87e1-18c1-4397-9537-55924d857336)
+ Call ID: dffb87e1-18c1-4397-9537-55924d857336
   Args:
+    source: Prince_Dimitri_of_Yugoslavia
     type: :Man
-    source: Prince_Dimitri_of_Yugoslavia
-  AssignClass (4886477c-12b8-49ca-9ced-eb5070b9c890)
- Call ID: 4886477c-12b8-49ca-9ced-eb5070b9c890
+  AssignClass (8fe401ef-6c38-4303-a7d4-b37d028a8333)
+ Call ID: 8fe401ef-6c38-4303-a7d4-b37d028a8333
   Args:
+    source: Prince_Dimitri_of_Yugoslavia
     type: :Person
-    source: Prince_Dimitri_of_Yugoslavia
-  AddLiteral (c1f106a5-f549-45f7-8992-1ecbd818111e)
- Call ID: c1f106a5-f549-45f7-8992-1ecbd818111e
+  AddLiteral (eb8f7dd5-273a-46ff-9d42-b135afc44922)
+ Call ID: eb8f7dd5-273a-46ff-9d42-b135afc44922
   Args:
-    source: Prince_Dimitri_of_Yugoslavia
-    literal_type: xsd:integer
     literal_value: 1958
+    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (53aad7bc-377b-42a0-8e7c-a752742be333)
- Call ID: 53aad7bc-377b-42a0-8e7c-a752742be333
+    source: Prince_Dimitri_of_Yugoslavia
+  AddLiteral (e5045756-56d1-4c48-af60-4cafb0714490)
+ Call ID: e5045756-56d1-4c48-af60-4cafb0714490
   Args:
     relation: :alsoKnownAs
+    source: Prince_Dimitri_of_Yugoslavia
     literal_type: xsd:string
     literal_value: Dimitri Karageorgevich
-    source: Prince_Dimitri_of_Yugoslavia
-  AddLiteral (7ca2fe58-30d6-4ca0-93c0-50bb71010e9f)
- Call ID: 7ca2fe58-30d6-4ca0-93c0-50bb71010e9f
+  AddLiteral (61e2809f-6939-43fa-8702-7e056adf69cd)
+ Call ID: 61e2809f-6939-43fa-8702-7e056adf69cd
   Args:
     literal_value: Dimitrije Karađorđević
     literal_type: xsd:string
     relation: :alsoKnownAs
     source: Prince_Dimitri_of_Yugoslavia
-  AssignClass (fa097b8b-06aa-4669-b807-daf477888b24)
- Call ID: fa097b8b-06aa-4669-b807-daf477888b24
+  AssignClass (e30d621e-f48f-4316-8e4f-5878c5269e74)
+ Call ID: e30d621e-f48f-4316-8e4f-5878c5269e74
   Args:
-    type: :Man
     source: Prince_Michael_of_Yugoslavia
-  AssignClass (48e248b6-b9ed-4a96-9a06-33dd958d07c8)
- Call ID: 48e248b6-b9ed-4a96-9a06-33dd958d07c8
+    type: :Man
+  AssignClass (3f0d502a-8a50-4ca0-8444-93468732f9ea)
+ Call ID: 3f0d502a-8a50-4ca0-8444-93468732f9ea
   Args:
+    source: Prince_Michael_of_Yugoslavia
     type: :Person
-    source: Prince_Michael_of_Yugoslavia
-  AssignClass (c8c36713-1177-42da-86ef-ac87b1f572fe)
- Call ID: c8c36713-1177-42da-86ef-ac87b1f572fe
-  Args:
-    type: :Man
-    source: Prince_Alexander_of_Yugoslavia
-  AssignClass (7c261a18-4967-4a01-bfcd-b5d832475469)
- Call ID: 7c261a18-4967-4a01-bfcd-b5d832475469
+  AssignClass (3c812a32-6a85-4f6d-bfb5-467260973e26)
+ Call ID: 3c812a32-6a85-4f6d-bfb5-467260973e26
   Args:
     source: Prince_Alexander_of_Yugoslavia
+    type: :Man
+  AssignClass (9cfc7f77-7452-4771-8ad6-c63a54158d4e)
+ Call ID: 9cfc7f77-7452-4771-8ad6-c63a54158d4e
+  Args:
+    source: Prince_Alexander_of_Yugoslavia
     type: :Person
-  AssignClass (49425898-622c-4098-bf95-edb3159e25c9)
- Call ID: 49425898-622c-4098-bf95-edb3159e25c9
+  AssignClass (f66e5064-5a14-40d6-80cf-4818c3bb3333)
+ Call ID: f66e5064-5a14-40d6-80cf-4818c3bb3333
   Args:
     source: Princess_Maria_Pia_of_Savoy
     type: :Woman
-  AssignClass (c0a68612-876c-4d28-a425-b8b0c48c2cc3)
- Call ID: c0a68612-876c-4d28-a425-b8b0c48c2cc3
+  AssignClass (5c3bd4ea-169f-4823-ad1d-06e04c1701b4)
+ Call ID: 5c3bd4ea-169f-4823-ad1d-06e04c1701b4
   Args:
     source: Princess_Maria_Pia_of_Savoy
     type: :Person
-  AddTriple (0fa76ad3-d763-4ab5-b947-e8947cafa6cb)
- Call ID: 0fa76ad3-d763-4ab5-b947-e8947cafa6cb
+  AssignClass (39781838-c911-43a5-9cc7-2ebf49a14357)
+ Call ID: 39781838-c911-43a5-9cc7-2ebf49a14357
   Args:
-    target: Prince_Alexander_of_Yugoslavia
-    relation: :hasFather
-    source: Prince_Dimitri_of_Yugoslavia
-  AddTriple (6d2b7f8a-5fbd-444e-b6bf-cfc5d0787412)
- Call ID: 6d2b7f8a-5fbd-444e-b6bf-cfc5d0787412
-  Args:
-    source: Prince_Dimitri_of_Yugoslavia
-    relation: :hasMother
-    target: Princess_Maria_Pia_of_Savoy
-  AddTriple (9f811621-a61f-4461-b8fe-99fd7a055f2b)
- Call ID: 9f811621-a61f-4461-b8fe-99fd7a055f2b
-  Args:
-    source: Prince_Michael_of_Yugoslavia
-    relation: :hasFather
-    target: Prince_Alexander_of_Yugoslavia
-  AddTriple (e2a5c553-1255-43cc-b2b0-15a3d06640d5)
- Call ID: e2a5c553-1255-43cc-b2b0-15a3d06640d5
-  Args:
-    target: Princess_Maria_Pia_of_Savoy
-    relation: :hasMother
-    source: Prince_Michael_of_Yugoslavia
-  AssignClass (7eef26ba-9769-4c8d-8b79-ebe4fe6c1743)
- Call ID: 7eef26ba-9769-4c8d-8b79-ebe4fe6c1743
-  Args:
+    source: Prince_Serge_of_Yugoslavia
     type: :Man
-    source: Prince_Serge_of_Yugoslavia
-  AssignClass (5e6d81bf-69c8-498d-82bd-044a82f690d0)
- Call ID: 5e6d81bf-69c8-498d-82bd-044a82f690d0
+  AssignClass (9279e977-cfce-4aa4-9d33-a79c330bcc15)
+ Call ID: 9279e977-cfce-4aa4-9d33-a79c330bcc15
   Args:
+    source: Prince_Serge_of_Yugoslavia
     type: :Person
-    source: Prince_Serge_of_Yugoslavia
-  AssignClass (83f537f0-af3d-4fcd-8b5e-ecf0af649d32)
- Call ID: 83f537f0-af3d-4fcd-8b5e-ecf0af649d32
+  AssignClass (04a0175c-d2f5-4a80-ad7c-c14d68b8bd8c)
+ Call ID: 04a0175c-d2f5-4a80-ad7c-c14d68b8bd8c
   Args:
+    source: Princess_Helene_of_Yugoslavia
     type: :Woman
-    source: Princess_Helene_of_Yugoslavia
-  AssignClass (af4853f0-6e33-4a47-b51f-0c96ff75ff35)
- Call ID: af4853f0-6e33-4a47-b51f-0c96ff75ff35
+  AssignClass (485b66e0-2655-421e-bfae-749bb664c27b)
+ Call ID: 485b66e0-2655-421e-bfae-749bb664c27b
   Args:
     source: Princess_Helene_of_Yugoslavia
     type: :Person
-  AddTriple (b69fde52-276e-4265-9c4f-df21cb702760)
- Call ID: b69fde52-276e-4265-9c4f-df21cb702760
+  AssignClass (6fc79c3c-2d1d-486e-82fa-c4e2376bb644)
+ Call ID: 6fc79c3c-2d1d-486e-82fa-c4e2376bb644
   Args:
-    relation: :hasMother
-    target: Princess_Maria_Pia_of_Savoy
-    source: Prince_Serge_of_Yugoslavia
-  AddTriple (b9706db3-c270-46cc-81dc-7222dcc64106)
- Call ID: b9706db3-c270-46cc-81dc-7222dcc64106
-  Args:
-    source: Princess_Helene_of_Yugoslavia
-    target: Princess_Maria_Pia_of_Savoy
-    relation: :hasMother
-  AssignClass (95db6f98-205a-4188-9e5b-698200a49777)
- Call ID: 95db6f98-205a-4188-9e5b-698200a49777
-  Args:
+    source: Prince_Dushan_of_Yugoslavia
     type: :Man
-    source: Prince_Dushan_of_Yugoslavia
-  AssignClass (2f58dd10-f67b-4efa-bbb2-32a848a5b6fa)
- Call ID: 2f58dd10-f67b-4efa-bbb2-32a848a5b6fa
+  AssignClass (8d6e9db0-dbd1-42ef-9860-6d66720af01f)
+ Call ID: 8d6e9db0-dbd1-42ef-9860-6d66720af01f
   Args:
+    source: Prince_Dushan_of_Yugoslavia
     type: :Person
-    source: Prince_Dushan_of_Yugoslavia
-  AddTriple (4b52e904-8d76-4b02-842e-141890062201)
- Call ID: 4b52e904-8d76-4b02-842e-141890062201
+  AssignClass (33968fca-3997-43dc-baf4-dbb61f31646b)
+ Call ID: 33968fca-3997-43dc-baf4-dbb61f31646b
   Args:
-    source: Prince_Dushan_of_Yugoslavia
-    target: Prince_Alexander_of_Yugoslavia
-    relation: :hasFather
-  AssignClass (5ad3b026-ef1f-43e7-99b3-35d7bc7994c2)
- Call ID: 5ad3b026-ef1f-43e7-99b3-35d7bc7994c2
-  Args:
-    type: :Woman
     source: Princess_Barbara_of_Liechtenstein
-  AssignClass (94835e4e-6c8e-4d30-9cb9-fcd4e083a6dd)
- Call ID: 94835e4e-6c8e-4d30-9cb9-fcd4e083a6dd
+    type: :Woman
+  AssignClass (102c4e37-c218-47ba-92ef-99826d51745b)
+ Call ID: 102c4e37-c218-47ba-92ef-99826d51745b
   Args:
     source: Princess_Barbara_of_Liechtenstein
     type: :Person
-  AddTriple (40edc3c4-cd40-4180-8a28-fd41b0907871)
- Call ID: 40edc3c4-cd40-4180-8a28-fd41b0907871
+  AddTriple (398aaca8-dd68-4c41-bce3-7d4778e43179)
+ Call ID: 398aaca8-dd68-4c41-bce3-7d4778e43179
   Args:
+    relation: :hasFather
+    source: Prince_Dimitri_of_Yugoslavia
+    target: Prince_Alexander_of_Yugoslavia
+  AddTriple (24121f2d-606c-4379-9cec-33cc649a5402)
+ Call ID: 24121f2d-606c-4379-9cec-33cc649a5402
+  Args:
+    target: Princess_Maria_Pia_of_Savoy
+    relation: :hasMother
+    source: Prince_Dimitri_of_Yugoslavia
+  AddTriple (d6033619-888b-44e3-ace1-b1d4aa41485e)
+ Call ID: d6033619-888b-44e3-ace1-b1d4aa41485e
+  Args:
+    target: Prince_Alexander_of_Yugoslavia
+    relation: :hasFather
+    source: Prince_Michael_of_Yugoslavia
+  AddTriple (b2e206af-d956-4a87-8a2a-3fbb0c6c295f)
+ Call ID: b2e206af-d956-4a87-8a2a-3fbb0c6c295f
+  Args:
+    target: Princess_Maria_Pia_of_Savoy
+    relation: :hasMother
+    source: Prince_Michael_of_Yugoslavia
+  AddTriple (0682beb9-aafa-4e37-bcef-484f6136788b)
+ Call ID: 0682beb9-aafa-4e37-bcef-484f6136788b
+  Args:
+    relation: :hasFather
+    source: Prince_Serge_of_Yugoslavia
+    target: Prince_Alexander_of_Yugoslavia
+  AddTriple (bef9f769-60bf-4ebb-a999-cbdce74df9c1)
+ Call ID: bef9f769-60bf-4ebb-a999-cbdce74df9c1
+  Args:
+    target: Princess_Maria_Pia_of_Savoy
+    relation: :hasMother
+    source: Prince_Serge_of_Yugoslavia
+  AddTriple (47ee4f19-781a-4729-9945-081d956d7adf)
+ Call ID: 47ee4f19-781a-4729-9945-081d956d7adf
+  Args:
+    target: Prince_Alexander_of_Yugoslavia
+    source: Princess_Helene_of_Yugoslavia
+    relation: :hasFather
+  AddTriple (eecfb51b-b967-4891-af2f-661a7a5e1d42)
+ Call ID: eecfb51b-b967-4891-af2f-661a7a5e1d42
+  Args:
+    target: Princess_Maria_Pia_of_Savoy
+    source: Princess_Helene_of_Yugoslavia
+    relation: :hasMother
+  AddTriple (1c909a1e-b9be-4482-a92c-eaf40d0d115a)
+ Call ID: 1c909a1e-b9be-4482-a92c-eaf40d0d115a
+  Args:
+    target: Prince_Alexander_of_Yugoslavia
+    source: Prince_Dushan_of_Yugoslavia
+    relation: :hasFather
+  AddTriple (370eb365-0cd7-432b-8f1b-194dee258787)
+ Call ID: 370eb365-0cd7-432b-8f1b-194dee258787
+  Args:
+    source: Prince_Dushan_of_Yugoslavia
     relation: :hasMother
     target: Princess_Barbara_of_Liechtenstein
-    source: Prince_Dushan_of_Yugoslavia
-  Finish (57f3d9c3-b015-45f5-a495-711aa43061a5)
- Call ID: 57f3d9c3-b015-45f5-a495-711aa43061a5
+  Finish (cae45a56-c053-4064-8ef1-20018c46107c)
+ Call ID: cae45a56-c053-4064-8ef1-20018c46107c
   Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -659,20 +771,22 @@ The final data graph after all the edits:
 
   data:Prince_Serge_of_Yugoslavia a :Man,
           :Person ;
+      :hasFather data:Prince_Alexander_of_Yugoslavia ;
       :hasMother data:Princess_Maria_Pia_of_Savoy .
 
   data:Princess_Helene_of_Yugoslavia a :Person,
           :Woman ;
+      :hasFather data:Prince_Alexander_of_Yugoslavia ;
       :hasMother data:Princess_Maria_Pia_of_Savoy .
 
   data:Princess_Barbara_of_Liechtenstein a :Person,
           :Woman .
 
-  data:Prince_Alexander_of_Yugoslavia a :Man,
-          :Person .
-
   data:Princess_Maria_Pia_of_Savoy a :Person,
           :Woman .
+
+  data:Prince_Alexander_of_Yugoslavia a :Man,
+          :Person .
 
 
 
@@ -684,206 +798,254 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (5a044930-e47b-4f19-97ab-18da016dcc89)
- Call ID: 5a044930-e47b-4f19-97ab-18da016dcc89
+  ValidateShacl (5f510fd7-4c3c-4579-9c86-fc82a485cb31)
+ Call ID: 5f510fd7-4c3c-4579-9c86-fc82a485cb31
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:24
+Total violations:30
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Prince_Alexander_of_Yugoslavia for the property hasFather of Prince_Dushan_of_Yugoslavia is missing the required class :Ancestor or :Man.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Prince_Dimitri_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Alexander_of_Yugoslavia, :Man)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Prince_Alexander_of_Yugoslavia for the property hasFather of Prince_Michael_of_Yugoslavia is missing the required class :Ancestor or :Man.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Prince_Dushan_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Alexander_of_Yugoslavia, :Man)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Prince_Alexander_of_Yugoslavia for the property hasFather of Prince_Dimitri_of_Yugoslavia is missing the required class :Ancestor or :Man.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Prince_Serge_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Alexander_of_Yugoslavia, :Man)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Princess_Barbara_of_Liechtenstein for the property hasMother of Prince_Dushan_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Prince_Michael_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Barbara_of_Liechtenstein, :Woman)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Princess_Maria_Pia_of_Savoy for the property hasMother of Prince_Serge_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Princess_Maria_Pia_of_Savoy is not assigned the required class :Ancestor, which is expected for the mother of Prince_Dimitri_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Pia_of_Savoy, :Woman)
+      AssignClass(Princess_Maria_Pia_of_Savoy, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Princess_Maria_Pia_of_Savoy for the property hasMother of Prince_Michael_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Princess_Barbara_of_Liechtenstein is not assigned the required class :Ancestor, which is expected for the mother of Prince_Dushan_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Pia_of_Savoy, :Woman)
+      AssignClass(Princess_Barbara_of_Liechtenstein, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Princess_Maria_Pia_of_Savoy for the property hasMother of Prince_Dimitri_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Princess_Maria_Pia_of_Savoy is not assigned the required class :Ancestor, which is expected for the mother of Prince_Serge_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Pia_of_Savoy, :Woman)
+      AssignClass(Princess_Maria_Pia_of_Savoy, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Prince_Alexander_of_Yugoslavia for the property hasFather of Prince_Dushan_of_Yugoslavia is missing the required class :Ancestor or :Man.
+      The person Princess_Maria_Pia_of_Savoy is not assigned the required class :Ancestor, which is expected for the mother of Prince_Michael_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Alexander_of_Yugoslavia, :Man)
+      AssignClass(Princess_Maria_Pia_of_Savoy, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Prince_Alexander_of_Yugoslavia for the property hasFather of Prince_Michael_of_Yugoslavia is missing the required class :Ancestor or :Man.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Princess_Helene_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Alexander_of_Yugoslavia, :Man)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Prince_Alexander_of_Yugoslavia for the property hasFather of Prince_Dimitri_of_Yugoslavia is missing the required class :Ancestor or :Man.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Prince_Michael_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Alexander_of_Yugoslavia, :Man)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Princess_Barbara_of_Liechtenstein for the property hasMother of Prince_Dushan_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Prince_Dimitri_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Barbara_of_Liechtenstein, :Woman)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Princess_Maria_Pia_of_Savoy for the property hasMother of Prince_Serge_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Prince_Dushan_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Pia_of_Savoy, :Woman)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Princess_Maria_Pia_of_Savoy for the property hasMother of Prince_Michael_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Prince_Serge_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Pia_of_Savoy, :Woman)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Princess_Maria_Pia_of_Savoy for the property hasMother of Prince_Dimitri_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Princess_Maria_Pia_of_Savoy is not assigned the required class :Ancestor, which is expected for the mother of Princess_Helene_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Pia_of_Savoy, :Woman)
+      AssignClass(Princess_Maria_Pia_of_Savoy, :Ancestor)
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Princess_Maria_Pia_of_Savoy for the property hasMother of Princess_Helene_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Princess_Maria_Pia_of_Savoy is not assigned the required class :Ancestor, which is expected for the mother of Prince_Michael_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Pia_of_Savoy, :Woman)
+      AssignClass(Princess_Maria_Pia_of_Savoy, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Prince_Alexander_of_Yugoslavia for the property hasFather of Prince_Dushan_of_Yugoslavia is missing the required class :Ancestor or :Man.
+      The person Princess_Maria_Pia_of_Savoy is not assigned the required class :Ancestor, which is expected for the mother of Prince_Dimitri_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Alexander_of_Yugoslavia, :Man)
+      AssignClass(Princess_Maria_Pia_of_Savoy, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Prince_Alexander_of_Yugoslavia for the property hasFather of Prince_Michael_of_Yugoslavia is missing the required class :Ancestor or :Man.
+      The person Princess_Barbara_of_Liechtenstein is not assigned the required class :Ancestor, which is expected for the mother of Prince_Dushan_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Alexander_of_Yugoslavia, :Man)
+      AssignClass(Princess_Barbara_of_Liechtenstein, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Prince_Alexander_of_Yugoslavia for the property hasFather of Prince_Dimitri_of_Yugoslavia is missing the required class :Ancestor or :Man.
+      The person Princess_Maria_Pia_of_Savoy is not assigned the required class :Ancestor, which is expected for the mother of Prince_Serge_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Alexander_of_Yugoslavia, :Man)
+      AssignClass(Princess_Maria_Pia_of_Savoy, :Ancestor)
 
 
   Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Princess_Barbara_of_Liechtenstein for the property hasMother of Prince_Dushan_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Princess_Helene_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Barbara_of_Liechtenstein, :Woman)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Princess_Maria_Pia_of_Savoy for the property hasMother of Prince_Serge_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Prince_Michael_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Pia_of_Savoy, :Woman)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Princess_Maria_Pia_of_Savoy for the property hasMother of Prince_Michael_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Prince_Dimitri_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Pia_of_Savoy, :Woman)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Princess_Maria_Pia_of_Savoy for the property hasMother of Prince_Dimitri_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Prince_Dushan_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Pia_of_Savoy, :Woman)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Princess_Maria_Pia_of_Savoy for the property hasMother of Princess_Helene_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Prince_Serge_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Pia_of_Savoy, :Woman)
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
 
 
   Violation [24]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Princess_Maria_Pia_of_Savoy for the property hasMother of Princess_Helene_of_Yugoslavia is missing the required class :Ancestor or :Woman.
+      The person Princess_Maria_Pia_of_Savoy is not assigned the required class :Ancestor, which is expected for the mother of Princess_Helene_of_Yugoslavia.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Maria_Pia_of_Savoy, :Woman)
+      AssignClass(Princess_Maria_Pia_of_Savoy, :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Princess_Maria_Pia_of_Savoy is not assigned the required class :Ancestor, which is expected for the mother of Prince_Michael_of_Yugoslavia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Maria_Pia_of_Savoy, :Ancestor)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Princess_Maria_Pia_of_Savoy is not assigned the required class :Ancestor, which is expected for the mother of Prince_Dimitri_of_Yugoslavia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Maria_Pia_of_Savoy, :Ancestor)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Princess_Barbara_of_Liechtenstein is not assigned the required class :Ancestor, which is expected for the mother of Prince_Dushan_of_Yugoslavia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Barbara_of_Liechtenstein, :Ancestor)
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Princess_Maria_Pia_of_Savoy is not assigned the required class :Ancestor, which is expected for the mother of Prince_Serge_of_Yugoslavia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Maria_Pia_of_Savoy, :Ancestor)
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Prince_Alexander_of_Yugoslavia is not assigned the required class :Ancestor, which is expected for the father of Princess_Helene_of_Yugoslavia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Alexander_of_Yugoslavia, :Ancestor)
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Princess_Maria_Pia_of_Savoy is not assigned the required class :Ancestor, which is expected for the mother of Princess_Helene_of_Yugoslavia.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Maria_Pia_of_Savoy, :Ancestor)
 
 
 
@@ -892,23 +1054,23 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (a8fc4bb0-fdbf-4275-9fee-5e30ea38663c)
- Call ID: a8fc4bb0-fdbf-4275-9fee-5e30ea38663c
+  AssignClass (8dee383f-684a-4513-a7b3-dfd88c53bdae)
+ Call ID: 8dee383f-684a-4513-a7b3-dfd88c53bdae
   Args:
-    source: Prince_Alexander_of_Yugoslavia
     type: :Ancestor
-  AssignClass (bcb5bb5d-3f4f-4498-be82-b6760fc10b0e)
- Call ID: bcb5bb5d-3f4f-4498-be82-b6760fc10b0e
+    source: Prince_Alexander_of_Yugoslavia
+  AssignClass (5b9019fb-d781-4bab-8f57-3293ecf63fd9)
+ Call ID: 5b9019fb-d781-4bab-8f57-3293ecf63fd9
   Args:
     type: :Ancestor
     source: Princess_Maria_Pia_of_Savoy
-  AssignClass (e3b14dc3-a554-4367-b992-937e9612d111)
- Call ID: e3b14dc3-a554-4367-b992-937e9612d111
+  AssignClass (3d77c200-3dad-4b7c-a155-364256311fe2)
+ Call ID: 3d77c200-3dad-4b7c-a155-364256311fe2
   Args:
-    source: Princess_Barbara_of_Liechtenstein
     type: :Ancestor
-  ValidateShacl (302e6c80-72fc-4279-b9f4-0d6c76de65c7)
- Call ID: 302e6c80-72fc-4279-b9f4-0d6c76de65c7
+    source: Princess_Barbara_of_Liechtenstein
+  Finish (ce4574ef-9e30-424c-8059-6199c443b0e7)
+ Call ID: ce4574ef-9e30-424c-8059-6199c443b0e7
   Args:
 
 ================================= Tool Message =================================
@@ -946,13 +1108,19 @@ The final data graph after all the edits:
 
   data:Prince_Serge_of_Yugoslavia a :Man,
           :Person ;
+      :hasFather data:Prince_Alexander_of_Yugoslavia ;
       :hasMother data:Princess_Maria_Pia_of_Savoy .
 
   data:Princess_Helene_of_Yugoslavia a :Person,
           :Woman ;
+      :hasFather data:Prince_Alexander_of_Yugoslavia ;
       :hasMother data:Princess_Maria_Pia_of_Savoy .
 
   data:Princess_Barbara_of_Liechtenstein a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Princess_Maria_Pia_of_Savoy a :Ancestor,
           :Person,
           :Woman .
 
@@ -960,11 +1128,19 @@ The final data graph after all the edits:
           :Man,
           :Person .
 
-  data:Princess_Maria_Pia_of_Savoy a :Ancestor,
-          :Person,
-          :Woman .
 
 
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (68643a74-8070-49e3-8807-e9f8b92b159d)
+ Call ID: 68643a74-8070-49e3-8807-e9f8b92b159d
+  Args:
 
 ================================= Tool Message =================================
 
@@ -974,6 +1150,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (e960818c-ecda-456c-8d14-ca326d51e73d)
- Call ID: e960818c-ecda-456c-8d14-ca326d51e73d
+  Finish (535bc9a1-f0bf-47e4-a764-e8b7f262ff3b)
+ Call ID: 535bc9a1-f0bf-47e4-a764-e8b7f262ff3b
   Args:

@@ -1,0 +1,84 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Countess Adelaide of Lippe-Biesterfeld"^^xsd:string ;
+    data:posIndicesFull "300:338"^^xsd:string ;
+    data:posIndicesPart "450:455"^^xsd:string,
+        "456:467"^^xsd:string ;
+    data:wdtLink wdt:Q2085981 ;
+    :hasChild data:Bernhard-_Prince_of_Saxe-Meiningen ;
+    :hasRelation data:Bernhard-_Prince_of_Saxe-Meiningen,
+        data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasSex data:female ;
+    :hasSister data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasSon data:Bernhard-_Prince_of_Saxe-Meiningen ;
+    :isAncestorOf data:Bernhard-_Prince_of_Saxe-Meiningen ;
+    :isAuntOf data:Bernhard-_Prince_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isMotherOf data:Bernhard-_Prince_of_Saxe-Meiningen ;
+    :isParentOf data:Bernhard-_Prince_of_Saxe-Meiningen ;
+    :isSiblingOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isSisterOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+
+data:Bernhard-_Prince_of_Saxe-Meiningen a :Man,
+        :Person ;
+    rdfs:label "Bernhard, Prince of Saxe-Meiningen"^^xsd:string ;
+    data:posIndicesFull "0:34"^^xsd:string ;
+    data:posIndicesPart "1073:1081"^^xsd:string,
+        "1294:1302"^^xsd:string,
+        "1638:1642"^^xsd:string,
+        "1643:1652"^^xsd:string,
+        "185:191"^^xsd:string,
+        "195:199"^^xsd:string,
+        "200:209"^^xsd:string,
+        "211:219"^^xsd:string,
+        "254:260"^^xsd:string,
+        "281:285"^^xsd:string,
+        "286:295"^^xsd:string,
+        "391:395"^^xsd:string,
+        "396:405"^^xsd:string,
+        "506:512"^^xsd:string,
+        "538:544"^^xsd:string,
+        "601:609"^^xsd:string,
+        "652:656"^^xsd:string,
+        "657:666"^^xsd:string,
+        "700:704"^^xsd:string,
+        "705:714"^^xsd:string,
+        "719:727"^^xsd:string,
+        "785:791"^^xsd:string,
+        "888:896"^^xsd:string ;
+    data:wdtLink wdt:Q746752 ;
+    :alsoKnownAs "Bernhard Friedrich Julius Heinrich"^^xsd:string,
+        "Bernhard Prinz von Sachsen-Meiningen"^^xsd:string ;
+    :hasAncestor data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasBrother data:Bernhard-_Prince_of_Saxe-Meiningen ;
+    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Bernhard-_Prince_of_Saxe-Meiningen,
+        data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Bernhard-_Prince_of_Saxe-Meiningen ;
+    :isBrotherOf data:Bernhard-_Prince_of_Saxe-Meiningen ;
+    :isChildOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Bernhard-_Prince_of_Saxe-Meiningen ;
+    :isSonOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+

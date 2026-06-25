@@ -7,86 +7,72 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:George_V a :Person ;
+    rdfs:label "George V" ;
+    data:posIndicesFull "245:258",
+        "250:258" ;
+    data:posIndicesPart "1590:1596" ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert",
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
+        "George Frederick Ernest Albert Windsor",
+        "George Saxe-Coburg-Gotha",
+        "George V (King of Great Britain)",
+        "George V of the United Kingdom",
+        "George Windsor",
+        "King George V" ;
+    :hasSex data:male .
+
+data:Lady_Gabriella_Windsor a :Person ;
+    rdfs:label "Lady Gabriella Windsor" ;
+    data:posIndicesFull "0:48",
+        "345:392" ;
+    data:posIndicesPart "1053:1062",
+        "1349:1358",
+        "1607:1614",
+        "525:534",
+        "752:756",
+        "791:800",
+        "935:944" ;
+    data:wdtLink wdt:Q75426 ;
+    :alsoKnownAs "Ella Kingston",
+        "Ella Windsor",
+        "Lady Gabriella Marina Alexandra Ophelia Kingston",
+        "Lady Gabriella Marina Alexandra Ophelia Windsor" ;
+    :hasParent data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Marina_Ogilvy a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Marina Ogilvy" ;
-    data:posIndicesFull "594:607" ;
-    data:wdtLink wdt:Q3312290 ;
-    :alsoKnownAs "Marina Victoria Alexandra Mowatt",
-        "Marina Victoria Alexandra Ogilvy" ;
-    :hasSex data:female .
-
-data:Marie_Christine-_Princess_Michael_of_Kent a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Marie_Christine-_Princess_Michael_of_Kent a :Person ;
     rdfs:label "Marie Christine, Princess Michael of Kent" ;
     data:posIndicesFull "194:218",
-        "400:424" ;
-    data:posIndicesPart "1157:1165",
-        "609:617" ;
+        "499:523" ;
+    data:posIndicesPart "1256:1264",
+        "708:716" ;
     data:wdtLink wdt:Q93535 ;
     :alsoKnownAs "Marie Christine von Reibnitz",
         "Marie-Christine Agnes Hedwig Ida Baronin von Reibnitz",
         "Princess Michael of Kent" ;
-    :hasChild data:Lady_Gabriella_Windsor ;
-    :hasDaughter data:Lady_Gabriella_Windsor ;
-    :hasSex data:female ;
-    :isMotherOf data:Lady_Gabriella_Windsor ;
-    :isParentOf data:Lady_Gabriella_Windsor .
+    :hasSex data:female .
 
-data:Prince_Michael_of_Kent a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Michael_of_Kent a :Person ;
     rdfs:label "Prince Michael of Kent" ;
     data:posIndicesFull "194:218",
-        "400:424" ;
-    data:posIndicesPart "1583:1589",
-        "567:573" ;
+        "499:523" ;
+    data:posIndicesPart "1682:1688",
+        "666:672" ;
     data:wdtLink wdt:Q313752 ;
     :alsoKnownAs "Michael George Charles Franklin",
         "Prince Michael George Charles Franklin of Kent" ;
-    :hasChild data:Lady_Gabriella_Windsor ;
-    :hasDaughter data:Lady_Gabriella_Windsor ;
-    :hasSex data:male ;
-    :isFatherOf data:Lady_Gabriella_Windsor ;
-    :isParentOf data:Lady_Gabriella_Windsor ;
-    :isUncleOf data:Marina_Ogilvy .
+    :hasSex data:male .
 
-data:Lady_Gabriella_Windsor a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Lady Gabriella Windsor" ;
-    data:posIndicesFull "0:48",
-        "246:293" ;
-    data:posIndicesPart "1250:1259",
-        "1508:1515",
-        "426:435",
-        "653:657",
-        "692:701",
-        "836:845",
-        "954:963" ;
-    data:wdtLink wdt:Q75426 ;
-    :alsoKnownAs "Ella Kingston",
-        "Ella Windsor",
-        "Lady Gabriella Marina Alexandra Ophelia Kingston",
-        "Lady Gabriella Marina Alexandra Ophelia Windsor" ;
-    :hasFather data:Prince_Michael_of_Kent ;
-    :hasMother data:Marie_Christine-_Princess_Michael_of_Kent ;
-    :hasParent data:Marie_Christine-_Princess_Michael_of_Kent,
-        data:Prince_Michael_of_Kent ;
-    :hasSex data:female ;
-    :isChildOf data:Marie_Christine-_Princess_Michael_of_Kent,
-        data:Prince_Michael_of_Kent ;
-    :isDaughterOf data:Marie_Christine-_Princess_Michael_of_Kent,
-        data:Prince_Michael_of_Kent .
+data:female a :Female .
+
+data:male a :Male .
 

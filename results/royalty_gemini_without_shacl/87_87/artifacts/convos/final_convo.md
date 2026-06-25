@@ -90,6 +90,8 @@ Lord Stair married Emily Mary Julia Stonor (daughter of Ralph Stonor, 7th Baron 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -105,39 +107,9 @@ Lord Stair married Emily Mary Julia Stonor (daughter of Ralph Stonor, 7th Baron 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -152,6 +124,23 @@ Lord Stair married Emily Mary Julia Stonor (daughter of Ralph Stonor, 7th Baron 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -169,6 +158,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -236,29 +240,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -267,6 +263,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -279,6 +283,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -287,17 +293,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -325,6 +333,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -340,160 +432,156 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1c62bf69-01b4-46c1-9d8e-d29f75aabb9f)
- Call ID: 1c62bf69-01b4-46c1-9d8e-d29f75aabb9f
+  AssignClass (400eb053-31da-488b-9167-deaa850f7644)
+ Call ID: 400eb053-31da-488b-9167-deaa850f7644
   Args:
+    source: :John_David_James_Dalrymple
     type: :Man
-    source: John_David_James_Dalrymple_14th_Earl_of_Stair
-  AssignClass (9c18eb9d-4601-4b06-8960-ad94b86f2f52)
- Call ID: 9c18eb9d-4601-4b06-8960-ad94b86f2f52
+  AssignClass (bfe58f32-714d-4b20-9098-0e6bcae74efe)
+ Call ID: bfe58f32-714d-4b20-9098-0e6bcae74efe
   Args:
+    source: :John_David_James_Dalrymple
     type: :Person
-    source: John_David_James_Dalrymple_14th_Earl_of_Stair
-  AssignClass (daf6c1a0-4cb2-4756-9edb-7ccf74d2eafd)
- Call ID: daf6c1a0-4cb2-4756-9edb-7ccf74d2eafd
-  Args:
-    type: :Man
-    source: John_Dalrymple_13th_Earl_of_Stair
-  AssignClass (e860419e-d8d1-4d82-9ff3-b333df16daf4)
- Call ID: e860419e-d8d1-4d82-9ff3-b333df16daf4
-  Args:
-    type: :Person
-    source: John_Dalrymple_13th_Earl_of_Stair
-  AssignClass (e52318a2-c32f-44f4-bf9e-532c7b410166)
- Call ID: e52318a2-c32f-44f4-bf9e-532c7b410166
-  Args:
-    type: :Woman
-    source: Davina_Katherine_Bowes-Lyon
-  AssignClass (bbe1ad22-f4e9-4a6d-9674-4b1f8d6fd42b)
- Call ID: bbe1ad22-f4e9-4a6d-9674-4b1f8d6fd42b
-  Args:
-    type: :Person
-    source: Davina_Katherine_Bowes-Lyon
-  AssignClass (e330dae7-e649-4515-8147-a387455e19f5)
- Call ID: e330dae7-e649-4515-8147-a387455e19f5
-  Args:
-    type: :Man
-    source: David_Bowes-Lyon
-  AssignClass (704e2a05-b297-418c-b634-0e4f3fd27b48)
- Call ID: 704e2a05-b297-418c-b634-0e4f3fd27b48
-  Args:
-    type: :Person
-    source: David_Bowes-Lyon
-  AssignClass (69fdd81e-7c7b-4e09-89e1-c8caac0f8dd2)
- Call ID: 69fdd81e-7c7b-4e09-89e1-c8caac0f8dd2
-  Args:
-    type: :Woman
-    source: Violet_Evelyn_Dalrymple
-  AssignClass (fe8d2206-1d11-4671-a8c3-4c318ac1902e)
- Call ID: fe8d2206-1d11-4671-a8c3-4c318ac1902e
-  Args:
-    type: :Person
-    source: Violet_Evelyn_Dalrymple
-  AssignClass (88bcb424-af43-47b3-be48-802d39f66aa7)
- Call ID: 88bcb424-af43-47b3-be48-802d39f66aa7
-  Args:
-    type: :Man
-    source: Frederick_Calvert_6th_Baron_Baltimore
-  AssignClass (161a411f-d110-4fd9-b2db-d186a9f1cd09)
- Call ID: 161a411f-d110-4fd9-b2db-d186a9f1cd09
-  Args:
-    type: :Person
-    source: Frederick_Calvert_6th_Baron_Baltimore
-  AssignClass (d8f202f0-c10b-497d-9076-cf581dfd5903)
- Call ID: d8f202f0-c10b-497d-9076-cf581dfd5903
-  Args:
-    type: :Woman
-    source: Emily_Mary_Julia_Stonor
-  AssignClass (2eaedf6b-2645-4cf4-acd3-244904e67228)
- Call ID: 2eaedf6b-2645-4cf4-acd3-244904e67228
-  Args:
-    type: :Person
-    source: Emily_Mary_Julia_Stonor
-  AssignClass (42d4a13c-0215-4bba-b6e9-eb10dca87e98)
- Call ID: 42d4a13c-0215-4bba-b6e9-eb10dca87e98
-  Args:
-    type: :Man
-    source: Ralph_Stonor_7th_Baron_Camoys
-  AssignClass (58b3aae1-321f-4f34-8544-0dd423e45c8a)
- Call ID: 58b3aae1-321f-4f34-8544-0dd423e45c8a
-  Args:
-    type: :Person
-    source: Ralph_Stonor_7th_Baron_Camoys
-  AssignClass (f3ebb8b7-bd18-4ec4-b427-b42ad1aae0ff)
- Call ID: f3ebb8b7-bd18-4ec4-b427-b42ad1aae0ff
-  Args:
-    type: :Woman
-    source: Elizabeth_Mary_Hyde_Parker
-  AssignClass (7a02a6bb-3744-4e6f-be96-c111b8d4257a)
- Call ID: 7a02a6bb-3744-4e6f-be96-c111b8d4257a
-  Args:
-    type: :Person
-    source: Elizabeth_Mary_Hyde_Parker
-  AddLiteral (9dd38887-d9f7-471d-85bd-f43a031db1c3)
- Call ID: 9dd38887-d9f7-471d-85bd-f43a031db1c3
+  AddLiteral (0ebae15a-0d85-46a4-ab6f-e579eb52fbfc)
+ Call ID: 0ebae15a-0d85-46a4-ab6f-e579eb52fbfc
   Args:
     literal_type: xsd:integer
     literal_value: 1961
+    source: :John_David_James_Dalrymple
     relation: :hasBirthYear
-    source: John_David_James_Dalrymple_14th_Earl_of_Stair
-  AddLiteral (3749706c-04f7-4b87-9c28-d63e0c52ae22)
- Call ID: 3749706c-04f7-4b87-9c28-d63e0c52ae22
+  AssignClass (13e7c317-6dd1-4ef9-a57f-352eaf6c6861)
+ Call ID: 13e7c317-6dd1-4ef9-a57f-352eaf6c6861
   Args:
-    literal_value: 1930
-    literal_type: xsd:integer
+    source: :John_Dalrymple_13th_Earl_of_Stair
+    type: :Man
+  AssignClass (24e8e80c-4b79-4c85-bb3b-6fc08172916d)
+ Call ID: 24e8e80c-4b79-4c85-bb3b-6fc08172916d
+  Args:
+    source: :John_Dalrymple_13th_Earl_of_Stair
+    type: :Person
+  AddTriple (5371cc8d-c9d2-4219-865f-c07c35196a57)
+ Call ID: 5371cc8d-c9d2-4219-865f-c07c35196a57
+  Args:
+    source: :John_David_James_Dalrymple
+    relation: :hasFather
+    target: :John_Dalrymple_13th_Earl_of_Stair
+  AssignClass (3c35603c-0fc8-4445-92b5-b3ac44ec58a8)
+ Call ID: 3c35603c-0fc8-4445-92b5-b3ac44ec58a8
+  Args:
+    source: :Davina_Katherine_Bowes-Lyon
+    type: :Woman
+  AssignClass (94627f98-25f7-42ac-940f-3b0375bae07d)
+ Call ID: 94627f98-25f7-42ac-940f-3b0375bae07d
+  Args:
+    source: :Davina_Katherine_Bowes-Lyon
+    type: :Person
+  AddTriple (df3979a5-729f-4360-9941-1c08e4e8894b)
+ Call ID: df3979a5-729f-4360-9941-1c08e4e8894b
+  Args:
+    target: :Davina_Katherine_Bowes-Lyon
+    relation: :hasMother
+    source: :John_David_James_Dalrymple
+  AddLiteral (a0fc7c99-78d3-4259-9f8f-cfccf7bbcdfd)
+ Call ID: a0fc7c99-78d3-4259-9f8f-cfccf7bbcdfd
+  Args:
     relation: :hasBirthYear
-    source: Davina_Katherine_Bowes-Lyon
-  AddLiteral (56e3cab3-342a-46b1-b1e0-1416662cd6d3)
- Call ID: 56e3cab3-342a-46b1-b1e0-1416662cd6d3
+    source: :Davina_Katherine_Bowes-Lyon
+    literal_value: 1930-05-02
+    literal_type: xsd:date
+  AddLiteral (2e41e49a-39c0-4e01-8992-443253c172ad)
+ Call ID: 2e41e49a-39c0-4e01-8992-443253c172ad
   Args:
     relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 2017
-    source: Davina_Katherine_Bowes-Lyon
-  AddTriple (f8e2c46e-e051-42ec-af88-1900814950a6)
- Call ID: f8e2c46e-e051-42ec-af88-1900814950a6
+    literal_value: 2017-11-01
+    source: :Davina_Katherine_Bowes-Lyon
+    literal_type: xsd:date
+  AssignClass (a7c225c0-33ed-4315-afd6-2e60ffe6736c)
+ Call ID: a7c225c0-33ed-4315-afd6-2e60ffe6736c
   Args:
-    source: John_David_James_Dalrymple_14th_Earl_of_Stair
-    target: John_Dalrymple_13th_Earl_of_Stair
+    source: :David_Bowes-Lyon
+    type: :Man
+  AssignClass (ac1f8044-e312-482c-85e9-920851c7f847)
+ Call ID: ac1f8044-e312-482c-85e9-920851c7f847
+  Args:
+    source: :David_Bowes-Lyon
+    type: :Person
+  AddTriple (6de33041-9582-49b2-9906-e76f2f9158ad)
+ Call ID: 6de33041-9582-49b2-9906-e76f2f9158ad
+  Args:
+    source: :Davina_Katherine_Bowes-Lyon
+    target: :David_Bowes-Lyon
     relation: :hasFather
-  AddTriple (505dcb5d-a8ed-4822-8cae-5af2cb46bc32)
- Call ID: 505dcb5d-a8ed-4822-8cae-5af2cb46bc32
+  AssignClass (9fa8fd33-207c-40e8-83e0-901357a18c51)
+ Call ID: 9fa8fd33-207c-40e8-83e0-901357a18c51
   Args:
-    target: Davina_Katherine_Bowes-Lyon
+    source: :Violet_Evelyn_Dalrymple
+    type: :Woman
+  AssignClass (d60fe0fb-dce1-4217-9622-2313c7538f00)
+ Call ID: d60fe0fb-dce1-4217-9622-2313c7538f00
+  Args:
+    source: :Violet_Evelyn_Dalrymple
+    type: :Person
+  AddTriple (68c7e135-93b2-4c73-ad38-552d52008346)
+ Call ID: 68c7e135-93b2-4c73-ad38-552d52008346
+  Args:
     relation: :hasMother
-    source: John_David_James_Dalrymple_14th_Earl_of_Stair
-  AddTriple (d79b6a6f-fe46-419c-8805-9c633cc5200a)
- Call ID: d79b6a6f-fe46-419c-8805-9c633cc5200a
+    target: :Violet_Evelyn_Dalrymple
+    source: :John_Dalrymple_13th_Earl_of_Stair
+  AssignClass (f5895f47-1dda-4a0b-8ea5-2225c09bfdd7)
+ Call ID: f5895f47-1dda-4a0b-8ea5-2225c09bfdd7
   Args:
-    source: Davina_Katherine_Bowes-Lyon
-    target: David_Bowes-Lyon
-    relation: :hasFather
-  AddTriple (d6b79e55-edef-46a8-abc4-e635a11b4bb3)
- Call ID: d6b79e55-edef-46a8-abc4-e635a11b4bb3
+    source: :Emily_Mary_Julia_Stonor
+    type: :Woman
+  AssignClass (6397debc-9e77-4712-80d7-1424a0d16308)
+ Call ID: 6397debc-9e77-4712-80d7-1424a0d16308
   Args:
-    target: Ralph_Stonor_7th_Baron_Camoys
-    relation: :hasFather
-    source: Emily_Mary_Julia_Stonor
-  AddTriple (dc5cb054-f008-422d-a8c7-940a2395a599)
- Call ID: dc5cb054-f008-422d-a8c7-940a2395a599
+    source: :Emily_Mary_Julia_Stonor
+    type: :Person
+  AddTriple (e7fa095c-d62e-4cf0-a2a3-cc41361bdc8d)
+ Call ID: e7fa095c-d62e-4cf0-a2a3-cc41361bdc8d
   Args:
-    source: Emily_Mary_Julia_Stonor
-    target: Elizabeth_Mary_Hyde_Parker
-    relation: :hasMother
-  AddTriple (2319f388-4384-4cd3-ad22-e5a9b0bfc4d5)
- Call ID: 2319f388-4384-4cd3-ad22-e5a9b0bfc4d5
+    source: :John_David_James_Dalrymple
+    target: :Emily_Mary_Julia_Stonor
+    relation: :hasRelation
+  AddLiteral (a794d0c0-3111-4e7b-81f0-1a779878d990)
+ Call ID: a794d0c0-3111-4e7b-81f0-1a779878d990
   Args:
-    source: John_David_James_Dalrymple_14th_Earl_of_Stair
-    target: Emily_Mary_Julia_Stonor
-    relation: :hasMarriageYear
-  AddLiteral (a380649a-ea03-402e-b753-d47d06cae48c)
- Call ID: a380649a-ea03-402e-b753-d47d06cae48c
-  Args:
-    source: John_David_James_Dalrymple_14th_Earl_of_Stair
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
+    source: :John_David_James_Dalrymple
     literal_value: 2006
-  Finish (9fb5c4f1-625e-4237-b4c9-60055c2239ad)
- Call ID: 9fb5c4f1-625e-4237-b4c9-60055c2239ad
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AssignClass (84d0bed8-cd5b-46dd-8438-9e09652216dd)
+ Call ID: 84d0bed8-cd5b-46dd-8438-9e09652216dd
+  Args:
+    source: :Ralph_Stonor_7th_Baron_Camoys
+    type: :Man
+  AssignClass (f419041b-bc87-4e2f-a384-55dbb6374bb3)
+ Call ID: f419041b-bc87-4e2f-a384-55dbb6374bb3
+  Args:
+    source: :Ralph_Stonor_7th_Baron_Camoys
+    type: :Person
+  AddTriple (a1887109-7c32-4116-a1ae-7ba78e4477b5)
+ Call ID: a1887109-7c32-4116-a1ae-7ba78e4477b5
+  Args:
+    relation: :hasFather
+    target: :Ralph_Stonor_7th_Baron_Camoys
+    source: :Emily_Mary_Julia_Stonor
+  AssignClass (f7b93d8c-3923-4d10-96a0-fc874a35fff2)
+ Call ID: f7b93d8c-3923-4d10-96a0-fc874a35fff2
+  Args:
+    source: :Elizabeth_Mary_Hyde_Parker
+    type: :Woman
+  AssignClass (6d4b07c4-ae69-47eb-abb3-545f16361f0f)
+ Call ID: 6d4b07c4-ae69-47eb-abb3-545f16361f0f
+  Args:
+    source: :Elizabeth_Mary_Hyde_Parker
+    type: :Person
+  AddTriple (e2854deb-839f-49a6-98b6-0dab993ba8e1)
+ Call ID: e2854deb-839f-49a6-98b6-0dab993ba8e1
+  Args:
+    target: :Elizabeth_Mary_Hyde_Parker
+    relation: :hasMother
+    source: :Emily_Mary_Julia_Stonor
+  Finish (de550e82-78cb-4d8c-9c6e-59a356c3a793)
+ Call ID: de550e82-78cb-4d8c-9c6e-59a356c3a793
   Args:

@@ -1,0 +1,271 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Man,
+        :Person ;
+    rdfs:label "Frederick Augustus II, Grand Duke of Oldenburg"^^xsd:string ;
+    data:posIndicesFull "223:244"^^xsd:string ;
+    data:posIndicesPart "1107:1116"^^xsd:string,
+        "1118:1123"^^xsd:string,
+        "1124:1128"^^xsd:string,
+        "1347:1356"^^xsd:string,
+        "1357:1365"^^xsd:string,
+        "1378:1383"^^xsd:string,
+        "1384:1388"^^xsd:string,
+        "1392:1401"^^xsd:string,
+        "1526:1535"^^xsd:string,
+        "1537:1546"^^xsd:string,
+        "1547:1555"^^xsd:string,
+        "1605:1610"^^xsd:string,
+        "1611:1615"^^xsd:string,
+        "1619:1628"^^xsd:string,
+        "1655:1660"^^xsd:string,
+        "1680:1689"^^xsd:string,
+        "1717:1726"^^xsd:string,
+        "1804:1809"^^xsd:string,
+        "1916:1925"^^xsd:string,
+        "2046:2055"^^xsd:string,
+        "431:436"^^xsd:string,
+        "437:441"^^xsd:string,
+        "798:807"^^xsd:string,
+        "945:950"^^xsd:string,
+        "992:997"^^xsd:string,
+        "998:1002"^^xsd:string ;
+    data:wdtLink wdt:Q62129 ;
+    :alsoKnownAs "Frederick Augustus II"^^xsd:string,
+        "Friedrich August von Oldenburg"^^xsd:string ;
+    :hasBrother data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasRelation data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isBrotherOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isSiblingOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg .
+
+data:Juliana_of_the_Netherlands a :Person,
+        :Woman ;
+    rdfs:label "Juliana of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "659:672"^^xsd:string,
+        "659:691"^^xsd:string,
+        "665:672"^^xsd:string,
+        "665:691"^^xsd:string ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Juliana der Nederlanden"^^xsd:string,
+        "Julijana"^^xsd:string,
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Princess Juliana of the Netherlands"^^xsd:string,
+        "Queen Juliana"^^xsd:string,
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Juliana of the Netherlands"^^xsd:string ;
+    :hasRelation data:Juliana_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Juliana_of_the_Netherlands ;
+    :isBloodrelationOf data:Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Juliana_of_the_Netherlands ;
+    :isSisterOf data:Juliana_of_the_Netherlands .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Marie of Schwarzburg-Rudolstadt"^^xsd:string ;
+    data:posIndicesFull "162:202"^^xsd:string,
+        "476:516"^^xsd:string ;
+    data:posIndicesPart "1148:1156"^^xsd:string,
+        "1229:1240"^^xsd:string,
+        "1241:1251"^^xsd:string,
+        "1256:1264"^^xsd:string,
+        "892:900"^^xsd:string,
+        "938:943"^^xsd:string ;
+    data:wdtLink wdt:Q154388 ;
+    :hasChild data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isAncestorOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isAuntOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isMotherOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isSisterOf data:Princess_Marie_of_Schwarzburg-Rudolstadt .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    rdfs:label "Alexandrine of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "836:865"^^xsd:string ;
+    data:posIndicesPart "1132:1143"^^xsd:string,
+        "1157:1168"^^xsd:string ;
+    data:wdtLink wdt:Q57264 ;
+    :alsoKnownAs "Alexandrine Auguste of Mecklenburg-Schwerin"^^xsd:string,
+        "Alexandrine, Queen of Denmark"^^xsd:string,
+        "Duchess Alexandrine Auguste of Mecklenburg-Schwerin"^^xsd:string,
+        "Duchess Alexandrine of Mecklenburg-Schwerin"^^xsd:string,
+        "Queen Alexandrine of Denmark"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Frederick_Francis_III ;
+    :hasFather data:Frederick_Francis_III ;
+    :hasParent data:Frederick_Francis_III ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:female ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Frederick_Francis_III ;
+    :isDaughterOf data:Frederick_Francis_III ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Francis II"^^xsd:string ;
+    data:posIndicesFull "409:429"^^xsd:string,
+        "96:116"^^xsd:string ;
+    data:posIndicesPart "1107:1116"^^xsd:string,
+        "1347:1356"^^xsd:string,
+        "1537:1546"^^xsd:string,
+        "1717:1726"^^xsd:string,
+        "2046:2055"^^xsd:string,
+        "798:807"^^xsd:string,
+        "808:815"^^xsd:string ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II."^^xsd:string ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :hasDaughter data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:male ;
+    :hasSon data:Frederick_Francis_III ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isFatherOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isParentOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isUncleOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III .
+
+data:Frederick_Francis_III a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Francis III"^^xsd:string ;
+    data:posIndicesFull "731:752"^^xsd:string,
+        "731:788"^^xsd:string ;
+    data:posIndicesPart "1107:1116"^^xsd:string,
+        "1347:1356"^^xsd:string,
+        "1537:1546"^^xsd:string,
+        "1717:1726"^^xsd:string,
+        "2046:2055"^^xsd:string,
+        "798:807"^^xsd:string,
+        "808:815"^^xsd:string ;
+    data:wdtLink wdt:Q57974 ;
+    :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz III"^^xsd:string,
+        "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_II ;
+    :hasBrother data:Frederick_Francis_III ;
+    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasParent data:Frederick_Francis_II ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:male ;
+    :hasSister data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isBrotherOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isChildOf data:Frederick_Francis_II ;
+    :isFatherOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isSonOf data:Frederick_Francis_II ;
+    :isUncleOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    rdfs:label "Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "0:41"^^xsd:string ;
+    data:posIndicesPart "1132:1143"^^xsd:string,
+        "1157:1168"^^xsd:string,
+        "1329:1338"^^xsd:string,
+        "1418:1427"^^xsd:string,
+        "1498:1505"^^xsd:string,
+        "1645:1654"^^xsd:string,
+        "1661:1668"^^xsd:string,
+        "2073:2082"^^xsd:string,
+        "323:332"^^xsd:string,
+        "445:456"^^xsd:string,
+        "902:911"^^xsd:string,
+        "951:958"^^xsd:string ;
+    data:wdtLink wdt:Q2525746 ;
+    :alsoKnownAs "Duchess Elisabeth of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasBrother data:Frederick_Francis_III ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II,
+        data:Frederick_Francis_III,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
+    :isAuntOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isDaughterOf data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isSiblingOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III ;
+    :isSisterOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_III .
+

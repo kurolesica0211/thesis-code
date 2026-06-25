@@ -4,13 +4,48 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felicity_Wade a :Person,\n        :Woman ;\n    :hasFather data:Captain_Mark_Phillips .\n\ndata:Mia_Grace_Tindall a :Person,\n        :Woman ;\n    :hasFather data:Mike_Tindall ;\n    :hasMother data:Zara_Tindall .\n\ndata:Stephanie_Phillips a :Person,\n        :Woman ;\n    :hasFather data:Captain_Mark_Phillips .\n\ndata:Anne_Princess_Royal a :Ancestor,\n        :Woman .\n\ndata:Peter_Phillips a :Man,\n        :Person .\n\ndata:Zara_Tindall a :Person,\n        :Woman ;\n    :hasBirthYear 1981 ;\n    :hasBrother data:Peter_Phillips ;\n    :hasFather data:Captain_Mark_Phillips ;\n    :hasMarriageYear 2011 ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasRelation data:Mike_Tindall .\n\ndata:Mike_Tindall a :Man,\n        :Person .\n\ndata:Captain_Mark_Phillips a :Ancestor,\n        :Man .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 1,
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,\n        :Woman ;\n    :hasBirthYear 1976 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,\n        :Woman ;\n    :hasBirthYear 1976 .\n\ndata:Princess_Isabelle_d%27Orl%C3%A9ans a :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,\n        :Woman ;\n    :hasBirthYear 1976 .\n\ndata:Princess_Isabelle_d%27Orl%C3%A9ans a :Ancestor,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,\n        :Woman ;\n    :hasAncestor data:Princess_Isabelle_d%27Orl%C3%A9ans ;\n    :hasBirthYear 1976 .\n\ndata:Princess_Isabelle_d%27Orl%C3%A9ans a :Ancestor,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Felicity_Wade a :Person,\n        :Woman ;\n    :hasFather data:Captain_Mark_Phillips .\n\ndata:Mia_Grace_Tindall a :Person,\n        :Woman ;\n    :hasFather data:Mike_Tindall ;\n    :hasMother data:Zara_Tindall .\n\ndata:Stephanie_Phillips a :Person,\n        :Woman ;\n    :hasFather data:Captain_Mark_Phillips .\n\ndata:Anne_Princess_Royal a :Ancestor,\n        :Woman .\n\ndata:Peter_Phillips a :Man,\n        :Person .\n\ndata:Zara_Tindall a :Person,\n        :Woman ;\n    :hasBirthYear 1981 ;\n    :hasBrother data:Peter_Phillips ;\n    :hasFather data:Captain_Mark_Phillips ;\n    :hasMarriageYear 2011 ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasRelation data:Mike_Tindall .\n\ndata:Mike_Tindall a :Man,\n        :Person .\n\ndata:Captain_Mark_Phillips a :Ancestor,\n        :Man .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,\n        :Woman ;\n    :hasAncestor data:Princess_Isabelle_d%27Orl%C3%A9ans ;\n    :hasBirthYear 1976 .\n\ndata:Princess_Isabelle_d%27Orl%C3%A9ans a :Ancestor,\n        :Person .\n\n"
     }
 ]

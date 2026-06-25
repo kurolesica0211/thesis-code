@@ -69,271 +69,31 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Sophie of Greece and Denmark (Greek: Σοφία, romanized: Sofía; 26 June 1914 – 24 November 2001) was by birth a Greek and Danish princess, as well as a princess of Hesse-Kassel and a princess of Hanover through her successive marriages to Prince Christoph of Hesse and Prince George William of Hanover.
-An elder sister of Prince Philip, Duke of Edinburgh (husband of Queen Elizabeth II), she was, for a time, linked to the Nazi regime.
-The fourth of five children of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, Sophie spent a happy childhood.
-During their exile, Sophie and her family depended on the generosity of their foreign relatives, in particular Marie Bonaparte (who offered them accommodation in Saint-Cloud) and Lady Louis Mountbatten (who supported them financially).
-At the end of the 1920s, Sophie fell in love with one of her distant cousins, Prince Christoph of Hesse.
-Married in December 1930, Sophie moved to Berlin with her husband.
-Close to the Nazi circles, in which her husband and several of her in-laws were involved from 1930, Sophie joined the National Socialist Women's League in 1938.
-Sophie and her in-laws served as unofficial intermediaries between Nazi Germany and the European dynasties to which they were related.
-Christoph and Sophie moved into a large house located in Dahlem, in 1936.
-The outbreak of the Second World War, however, forced the couple to separate; Sophie moved with her children to her mother-in-law at Friedrichshof Castle in Kronberg im Taunus.
-Adolf Hitler's growing distrust of the German aristocracy (from 1942) and the betrayal of King Victor Emmanuel III of Italy (in 1943) led the Nazi regime to turn against the House of Hesse-Kassel.
-Princess Mafalda, daughter of the Italian monarch and sister-in-law of Sophie, was imprisoned in Buchenwald, where she was seriously wounded and died shortly after, while her husband, Philipp, Landgrave of Hesse, was confined in Flossenbürg until the victory of the Allies.
-At the same time, Christoph was found dead in mysterious circumstances, leaving Sophie almost alone with her four children and a fifth one on the way, as well as the children of Philipp and Mafalda.
-The tragic events made Sophie turn against Nazism.
-The defeat of Germany and its occupation by the Allies brought new difficulties in the life of Sophie, who found herself in a precarious financial situation due to the theft of her jewelry by American soldiers in 1946 and the sequestration of the property of her first husband until 1953.
-After living for several months in Wolfsgarten, she began a relationship with another cousin, Prince George William of Hanover, whom she married in 1946.
-The couple moved to Salem, where George William worked as director of Schule Schloss Salem (1948–1959), before settling in Schliersee (from 1959).
-Excluded from the 1947 wedding of her brother Prince Philip to Princess Elizabeth of the United Kingdom (later Queen Elizabeth II) because of her past links to the Nazi regime, Sophie was reintegrated into the royal circles in the early 1950s.
-She nevertheless led a discreet and withdrawn life, spending her time reading, listening to music and gardening.
-The last surviving sibling of the Duke of Edinburgh, she died in a retirement home in Schliersee in 2001.
-She was the paternal aunt of the Prince of Wales, who later became King Charles III.
-Biography
+Berthold Prinz und Markgraf von Baden (24 February 1906 – 27 October 1963), styled Margrave of Baden and Duke of Zähringen, was the head of the House of Baden, which had reigned over the Grand Duchy of Baden until 1918, from 1929 until his death.
+He was the brother-in-law of Prince Philip, Duke of Edinburgh, through his marriage to Philip's sister, Princess Theodora of Greece and Denmark.
+Marriage and children
 
-Childhood
+The only son and younger child of Prince Maximilian, Margrave of Baden and Princess Marie Louise of Hanover, Berthold married his second cousin Princess Theodora of Greece and Denmark, daughter of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, on 17 August 1931 in Baden-Baden.
+Via his marriage, he was the brother-in-law of Prince Philip of Greece and Denmark, later Prince Philip, Duke of Edinburgh from November 1947.
+His bride was also his second cousin, through Christian IX of Denmark.
+The couple had three children:
 
-First World War and exile in Switzerland
 
-The fourth daughter of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, Sophie was born on 26 June 1914 at Mon Repos, a palace in Corfu that her parents inherited after the assassination of King George I in 1913.
-Nicknamed "Tiny" by her family, the princess grew up within a united household, together with her elder sisters Margarita (1905–1981), Theodora (1906–1969), and Cecilie (1911–1937).
-With their mother, Sophie and her sisters communicated in English, but they also used French, German, and Greek in the presence of their relatives and governesses.
-Sophie's early childhood was marked by the instability that the Kingdom of Greece experienced due to the First World War.
-The conflict divided her family into opposing branches, and Greece eventually set aside its neutrality due to the Triple Entente.
-Sophie and her sisters were in the royal palace of Athens when it was bombarded by the French Navy during the battle in the capital on 1 December 1916.
-In June 1917, King Constantine I, Sophie's uncle, was finally deposed and driven out of Greece by the Allies, who replaced him on the throne by his second son, the young Alexander.
-Fifteen days later, Sophie's family was in turn forced into exile and had to leave Mon Repos in order to remove the possibility of the new monarch being influenced by those close to him.
-Following the Russian Revolution, Sophie's Romanov relatives were murdered in Russia.
-Shortly after these events, the Grand Ducal family of Hesse, to which Sophie was closely related through her mother, was overthrown along with all the other German dynasties during the winter of 1918–1919.
-At the beginning of 1919, Sophie reunited with her paternal grandmother, the Dowager Queen Olga, spared by the Bolsheviks thanks to the diplomatic intervention of the Danes.
-In the following months, Sophie attended a family reunion with her maternal grandparents, and met her aunt Louise and uncle Louis Mountbatten.
-For Sophie, who now formed a duo with her third-eldest sister Cecilie, exile was not only synonymous with sadness; it was also an opportunity for long family reunions and walks in the mountains.
-Brief return to Greece
+Personal life
 
-On 2 October 1920, King Alexander, cousin of Sophie, was bitten by a domestic monkey during a walk in Tatoi.
-The death of the sovereign caused a violent institutional crisis in Greece.
-Humiliated, he retired abroad while a referendum reinstalled Constantine I on the throne.
-Prince Andrew was received triumphantly in Athens on 23 November 1920, and his wife and four daughters joined him a few days later.
-Sophie then returned to live in Corfu with her family.
-At the same time, Princess Alice found out that she was pregnant again.
-On 10 June 1921, the family welcomed Philip (1921–2021), later the Duke of Edinburgh.
-The joy that surrounded this birth, however, was obscured by the absence of Prince Andrew, who joined the Greek forces in Asia Minor during the Occupation of Smyrna.
-Despite worries about the war, Sophie and her siblings enjoyed life at Mon Repos, where they received a visit from their maternal grandmother and their aunt Louise in the spring of 1922.
-In the park near the palace, built on an ancient cemetery, the princesses devoted themselves to archeology and discovered some pottery, bronze pieces and bones.
-During this period, Sophie and her sisters also participated, for the first time, in a number of great social events.
-In March 1921, the princesses attended in Athens the wedding of their cousin Helen to Crown Prince Carol of Romania.
-In July 1922, they visited the United Kingdom to be bridesmaids at the wedding of their uncle Louis Mountbatten to the wealthy heiress and aristocrat Edwina Ashley.
-However, the military defeat of Greece against Turkey and the political unrest that it caused disrupted the life of Sophie and her family.
-In September 1922, Constantine I abdicated in favor of his eldest son, George II.
-A month later, Prince Andrew was arrested before being tried by a military tribunal, which declared him responsible for the defeat of the Sakarya.
-Saved from execution by the intervention of foreign chancelleries, the prince was condemned to banishment and cashiering.
-After a brief stop in Corfu, the prince and his relatives hurriedly left Greece aboard HMS Calypso in early December 1922.
-Exile in France
+He was conscripted as a soldier into the army of the Wehrmacht, but served only briefly and was exempted from military service in 1940 after being injured in France.
+Death
 
-After a journey of several weeks, which led them successively to Italy, France and the United Kingdom, Sophie, her parents and her siblings settled in Saint-Cloud in 1923.
-Settled in a house adjoining that of Princess Marie Bonaparte, the family depended for seven years on her generosity, and two other aunts of Sophie: first Princess Anastasia and then Lady Louis Mountbatten.
-Marie Bonaparte financed the studies of her nieces and nephew, while Lady Mountbatten gained the habit of offering her nieces her "used" clothes.
-In fact, Sophie's parents had little income and the children were the regular witnesses to their money problems and their difficulty in maintaining a household.
-Deprived of their Greek nationality after the proclamation of the Second Hellenic Republic in March 1924, Sophie and her family received Danish passports from their cousin King Christian X. In Saint-Cloud, the small group spent a relatively simple life.
-Sophie and her siblings continued their studies in private institutions, and, during their free time, their father took them regularly to Paris or to the Bois de Boulogne.
-Every Sunday, the family was received for lunch by Princess Marie Bonaparte and Prince George of Greece and Denmark.
-Sophie and her family also regularly met Prince Nicholas of Greece and Denmark and his wife Elena Vladimirovna of Russia, who had also chosen France to spend their time in exile with their daughters.
-Finally, they often saw their cousin Princess Margaret of Denmark, who settled in the Paris region after her marriage to Prince René of Bourbon-Parma.
-Sophie and her relatives made frequent stays abroad, and in particular in the United Kingdom.
-In 1923, the princess was invited to London to be a bridesmaid at the wedding of her aunt Louise Mountbatten to the future Gustav VI Adolf of Sweden.
-Young adulthood
-
-First marriage and settling in Germany
-
-In 1927, Sophie met one of her distant cousins, Prince Philipp of Hesse-Kassel.
-Shortly after, she met two of his brothers, the twins Christoph and Richard of Hesse-Kassel at Schloss Hemmelmark, the home of her great-aunt Princess Irene of Hesse and by Rhine.
-Despite her being 13 years their junior, the two German princes soon attempted to court her and it was Christoph who managed to grab her attention.
-Their romance eventually ended in an engagement, which was officially celebrated when Sophie turned 16, in 1930.
-Around the same time, Cecilie, Sophie's favorite sister, became engaged to another member of the House of Hesse, Georg Donatus, Hereditary Grand Duke of Hesse.
-The happiness of the princess was however clouded by the situation of her mother, whose mental health deteriorated sharply after the celebration of her silver wedding anniversary with Prince Andrew, in 1928.
-Struck by a mental health crisis, the princess convinced herself that she possessed healing powers and that she was receiving divine messages about potential husbands for her daughters.
-Distraught by the situation, Prince Andrew finally made the decision to place his wife in a sanatorium.
-He took advantage of his family's stay in Darmstadt, on the occasion of the celebration for Cecilie's official engagement in April 1930, to send Alice to a psychiatric hospital located in Kreuzlingen, Switzerland.
-In the absence of their mother, Sophie and Cecilie made their wedding preparations together.
-The nuptials of Sophie and Christoph were celebrated in Kronberg im
-They were married in two religious ceremonies, with the Orthodox one held at Friedrichshof Castle, owned by her mother-in-law Princess Margaret of Prussia, and the Lutheran one at a church in the city.
-A few weeks later, on 2 February 1931, Cecilie and Georg Donatus married in the presence of their family at the Neue Palais in Darmstadt.
-With their honeymoon over, Sophie and Christoph moved into an apartment in Berlin's Schöneberg quarter.
-After working for a long time in the Maybach car factory in Friedrichshafen, the prince had just been hired as a broker by the Victoria insurance company.
-While the princess moved to Germany to start a family, Greece went through a tumultuous political period, marked by numerous coups d'état.
-Confronted with permanent instability, the population gradually lost confidence in the institutions of the Hellenic Republic and King George II (Sophie's cousin) was finally reinstalled on the throne in November 1935.
-Family life and adherence to Nazism
-
-In October 1930, Prince August Wilhelm of Prussia, son of Kaiser Wilhelm II, introduced his cousin Christoph to the politician Hermann Göring, and it did not take long for the two to form a closer relationship.
-Under the influence of Göring, the prince and his wife then met Adolf Hitler, who deceived them with his charm and his apparent modesty.
-Under these conditions, Christoph joined the Nazi Party, first secretly in 1931, and then publicly in 1933.
-However, in his family, Christoph was not an exceptional case.
-Subsequently, their respective twins, Princes Wolfgang and Richard of Hesse-Kassel, joined the party in 1932.
-Finally, their parents, Frederick Charles, Landgrave of Hesse and Princess Margaret, followed the example of their sons in May 1938.
-Unlike her sisters Cecilie and Margarita, who joined the Nazi Party at the same time as their husbands in 1937, Sophie never became a member of the Nazi Party.
-Like her sisters-in-law, Princess Mafalda and Princess Marie Alexandra, she nevertheless joined the National Socialist Women's League in 1938.
-In fact, Sophie had long shown enthusiasm for Nazi Germany.
-Linked to the elite of the Hitler regime, the princess thus maintained friendly relations with Emmy Sonnemann, and was one of the guests of honor at the time of her marriage in April 1935 to Hermann Göring, who notably had Adolf Hitler as a witness.
-From a financial point of view, the coming to power of Adolf Hitler significantly improved the situation of Christoph and Sophie.
-In 1933, the prince was appointed personal advisor to State Secretary to the Prussian State Ministry Paul Körner.
-Two years later, Göring placed Christoph in charge of the Forschungsamt, an intelligence service responsible for spying on the telecommunications of Nazi Germany.
-Under these conditions, Sophie and her husband left their old apartment for a new one in 1933, before moving into a large red brick villa located in Dahlem in 1936.
-At the same time as these events, Sophie and Christoph's family grew larger with the successive births of Christina (1933–2011), Dorothea (1934–2025), Karl (1937–2022), and Rainer of Hesse (born 1939).
-Sophie also continued to worry about the fate of her mother Alice, whom she visited several times during the latter's confinement in Kreuzlingen between 1930 and 1933.
-Sophie also happily attended the weddings of her two eldest sisters, Margarita and Theodora, to German princes Gottfried, Prince of Hohenlohe-Langenburg and Berthold, Margrave of Baden in 1931.
-Sophie and Christoph also maintained their ties to their foreign relatives.
-The princess made several visits to the United Kingdom, and also stayed in Italy (1936) and Yugoslavia (1939).
-According to historian Jonathan Petropoulos, their travels were an opportunity for the couple to carry out, for the benefit of the Nazi Germany, a parallel diplomacy with their European cousins, such as Prince Paul of Yugoslavia and his wife Princess Olga of Greece and Denmark.
-Second World War and the death of Prince Christoph
-
-As a means of protection, Christoph warned Sophie about the need to beware of prying ears and never to speak politics with people other than her sisters and cousins.
-Even though he probably moved away from the SS from 1934, the prince nonetheless remained a staunch supporter of the Nazi regime.
-Sophie and her four children then left Berlin to settle in Friedrichshof, near her husband's parents the Landgrave and the Landgravine of Hesse.
-Then began a close correspondence between the couple, which testified to the love that Sophie and her husband had for each other.
-Shortly after Sophie moved to Kronberg im
-Taunus on 28 May 1940, her father-in-law died in Wilhelmshöhe, making his eldest surviving son Philipp the new head of the House of Hesse-Kassel.
-At the same time, most of Europe fell under Nazi rule and Sophie's parents found themselves isolated far from their children.
-After the invasion of France, Prince Andrew was stuck on the French Riviera in June 1940.
-For her part, Princess Alice chose to stay in Athens despite the occupation of Greece and the departure into exile of other members of the Greek royal family in April 1941.
-This did not prevent Sophie from continuing to support the Nazi regime, as illustrated by the continuation of her visits to Emmy and Hermann Göring.
-In January and October 1943, Princes Wolfgang and Richard of Hesse-Kassel were successively dismissed from the army, without being threatened by the Nazi regime.
-At the same time, searches were carried out by Obergruppenführer Josias, Hereditary Prince of Waldeck and Pyrmont, in the residences of Philipp and his mother.
-All these events led Sophie to open her eyes completely to the true nature of the Nazi regime.
-The tragedies of the House of Hesse-Kassel did not end there, however.
-On 7 October 1943, Prince Christoph died under mysterious circumstances during a plane crash in the Apennine Mountains, near Forlì.
-A few months later, Princess Marie Alexandra of Baden (wife of Wolfgang) perished buried during an air-raid on Frankfurt am Main on 29–30 January 1944.
-Widowed and pregnant with her fifth child (Princess Clarissa, who was born on 6 February 1944), Sophie therefore found herself in a precarious situation, with her mother-in-law, Landgravine Margaret as her main support.
-Tired and emaciated, the princess was now responsible for bringing up her children on her own, while also taking care of Philipp and Mafalda's four children.
-As Christoph's death was not made public by the Nazi regime, Sophie published a simple death notice for her husband in the Völkischer Beobachter on 18 October 1943.
-A few weeks later, in November 1943, the princess and her mother-in-law received a visit from Obergruppenführer Siegfried Taubert, commissioned by Heinrich Himmler to discreetly spy on the family.
-Aware of their vulnerability, the two women then refrained from expressing doubts about the conditions surrounding Christoph's death.
-Eager to know more about the fate of Philipp and Mafalda, Sophie tried, on the other hand, to obtain information from Emmy Göring, without success.
-At the same time, several relatives of the princess visited Friedrichshof, including her mother, Princess Alice, who managed to obtain a pass for Germany at the end of January 1944 and stayed with her daughter until April.
-Other relatives, including her brother-in-law Wolfgang and their cousin Prince August Wilhelm of Prussia arrived at the castle in February 1945.
-Post-war years
-
-Occupation of Friedrichshof
-
-The defeat of Germany and its occupation by the Allies affected the lives of Sophie and those close to her.
-Before the arrival of the US Army, the Hesse-Kassels removed compromising documents, such as books of a political nature from their library.
-In the days following the beginning of the occupation, the American intelligence services arrested Princes August Wilhelm of Prussia (7 April) and Wolfgang of Hesse (12 April).
-With Landgravine Margaret suffering from pneumonia, Sophie found herself in the situation of having to represent her family alone before the authorities.
-However, on 12 April, the American army ordered the evacuation of Friedrichshof, leaving to Hesse-Kassel family only the use of its dependencies.
-Sophie and her mother-in-law had to find refuge with neighbors, and in particular with the parents of the future MP Walther Leisler Kiep.
-While Friedrichshof was transformed into an officers' club by the American army, the Hesse-Kassels settled in Wolfsgarten in May, where they were received by Louis, Prince of Hesse and by Rhine and his wife Margaret Campbell Geddes, who soon took care of the younger children of Philipp, Landgrave of Hesse.
-Deprived of her husband's property, which was placed in receivership until 1953, Sophie found herself in a very precarious financial situation.
-Under these conditions, the death of her father Prince Andrew (who died in Monaco in December 1944) brought her a mediocre, but welcome inheritance.
-Second marriage
-
-Widowed since October 1943 and mother to five children, Sophie got close to Prince George William of Hanover, son of Ernest Augustus, Duke of Brunswick, and brother of Frederica, Queen of the Hellenes.
-Encouraged by Princess Margaret of Hesse and by Rhine, their romance ended in an engagement, which was celebrated in January 1946.
-As the House of Hanover was related to the British royal family, George William's father had previously sought permission from King George VI to proceed with the engagement.
-As her wedding was scheduled for April, Sophie was trying to convince to the American authorities to allow her to use the jewelry she left in Friedrichshof and wished to wear during the ceremony.
-Having obtained the necessary permit, the princess and Landgravine Margaret went to the castle, where they thought they would find the jewelry that Prince Wolfgang hid in the cellar in 1943.
-To their dismay, however, the two women realized that the jewels had been stolen and an investigation was soon opened to find out what happened to them.
-In addition, the American government procrastinated for several years around the question of the return of the remaining pieces, which were not given back to their owners until 1 August 1951.
-Under these conditions, the marriage of Sophie and George William took on a simpler form than expected.
-Organized at Salem Castle, property of Berthold, Margrave of Baden (husband of Sophie's sister Theodora), the event was the occasion for the bride to reunite with her brother Prince Philip, whom she had not seen since 1937 and who came to Germany with his arms laden with food and gifts.
-In the years that followed, Sophie gave birth to three more children: Welf Ernst (1947–1981), Georg (born 1949) and Friederike of Hanover (born 1954).
-Philip's marriage
-
-Since 1939, Sophie's brother Prince Philip had been linked to Princess Elizabeth of the United Kingdom.
-Already in love, the two were unofficially engaged at Balmoral in 1946, and shortly after, Philip adopted British nationality.
-However, the ties of Philip's family to Germany frightened the British court and government, who feared that the public could be reminded of the Germanic origins of the House of Windsor if the royal family were publicly associated with former Nazi Party members.
-Prince Philip found himself unable to invite his sisters to his wedding.
-Aware of the difficulties their brother had to face, Sophie, Margarita and Theodora nevertheless considered their sidelining wrong and hurtful.
-They felt particularly dismayed and snubbed when they realized that their cousins, the Queen Mother of the Romanians and the Duchess of Aosta, had been invited despite their countries having been allies of the Nazi regime during the conflict.
-Harassed by the press, who submitted requests for interviews with them, Sophie and her sisters spent the wedding day, 20 November 1947, at Marienburg Castle with their families.
-Invited by Sophie's in-laws, Duke and Duchess of Brunswick, they celebrated the union of their brother in the company of their cousin Princess Elizabeth of Greece and Denmark and Prince Louis and Princess Margaret of Hesse and by Rhine.
-A few days later, the Greek princesses received a visit from Prince George William's sister, the Queen of the Hellenes, who came to bring them a letter from their mother Princess Alice describing the wedding in detail; the queen was accompanied by the Duchess of Kent, widow of the bride's uncle.
-Return to normal life
-
-Settling in Salem
-
-With George William having completed his law studies at the University of Göttingen in 1948, he was approached by his brother-in-law, Berthold, Margrave of Baden, to take over the management of the Salem Castle School, which had since been closed due to the Second World War.
-A former student of the institution, the prince then went to Scotland with his wife to meet with Kurt Hahn, the founder of the school, and to visit Gordonstoun, the establishment that the latter founded when he had to flee Nazi Germany because of his Jewish origins.
-For Sophie, who was very affected by the way she was treated at the time of her brother's wedding, this trip to the United Kingdom was an opportunity to discreetly reconnect with Prince Philip and Princess Elizabeth.
-Once in Salem, George William and Sophie settled in a large house provided by the Margrave of Baden, and the children of the princess were educated in the institution run by George William.
-In fact, the financial situation of Sophie and her husband remained precarious for a long time.
-For the princess, however, things gradually improved from 1950, when she received a small inheritance from her maternal grandmother, the Dowager Marchioness of Milford Haven.
-The conclusion in 1951 of the case of jewelry theft from the residence of Hesse-Kassels, and the end of the investigation into the role of Sophie's first husband Christoph in the Nazi regime in 1953 then helped to normalize her financial situation and that of her five elder children.
-Sophie and her family remained in Salem until 1959, when George William gave up his post of school director.
-In the meantime, the couple welcomed their nieces to their home, Princesses Sophia and Irene of Greece and Denmark, sent to Salem by their father, King Paul, to complete their studies.
-Reintegration into royal circles
-
-Once the monarchy was restored in Greece in 1946, Sophie was invited to Athens by her mother, Princess Alice, some time later, in 1948.
-In the years that followed, Sophie and George William got closer to their brother-in-law, King Paul of Greece, and to his family.
-Queen Frederica thus came to consider Sophie as her best friend.
-As a result, the princess and her husband were regularly welcomed at the Greek Court, and the couple was among the many personalities invited by the Greek sovereign to the "Cruise of the Kings" in 1954.
-Sophie and her family were also invited to Athens on the occasion of the wedding of Princess Sophia of Greece and Denmark and Juan Carlos, Prince of Asturias in 1962.
-They were also present at the wedding of King Constantine II of Greece and Princess Anne-Marie of Denmark in 1964.
-In the early 1950s, relations between the British royal family and their German relatives in turn normalized, and Sophie, her sisters and their husbands were all invited to the coronation of Elizabeth II in 1953.
-The princesses and their families were then frequently invited to Buckingham Palace and Sandringham House.
-In 1964, Sophie was chosen as godmother to her nephew Prince Edward.
-In 1978, she attended the wedding of Prince Michael of Kent (son of her cousin Princess Marina of Greece and Denmark) and Baroness Marie Christine von Reibnitz.
-In 1997, she was invited, with her husband, to the celebrations for the golden wedding anniversary of Queen Elizabeth II and Prince Philip.
-Over the years, Sophie also developed a special relationship with Prince Charles (later King Charles III), who received her on several occasions at his Highgrove residence.
-Family losses
-
-In 1958, Sophie and George William bought a large chalet located in Schliersee, Bavaria.
-Well integrated with the local population, the couple led a relatively simple and discreet life in the village.
-When she was not taking care of her children, Sophie would devote herself to gardening, reading and listening to music while her husband went about his professional tasks.
-In the same years, the elder children of the princess formed their own families.
-Princess Christina was the first of Sophie's eight children to marry, in 1956.
-Princess Dorothea married Prince Friedrich of Windisch-Graetz at Schliersee in March 1959.
-Over the years, Princess Alice's state of health became a source of concern for Sophie and her family.
-Despite repeated requests from her children and her advancing age, she refused to move abroad and continued to live almost alone in Athens most of the year.
-After the establishment of the Regime of the Colonels in 1967, however, Sophie went to the Hellenic capital to persuade her mother to leave Greece and settle in the United Kingdom, which she finally agreed to do.
-Two years later, in 1969, Alice died at Buckingham Palace and Sophie and her family traveled to London to attend her funeral.
-Struck by these successive losses, Sophie accompanied, in the weeks that followed, her sister-in-law, Queen Frederica and her niece Princess Irene on a spiritual journey to India.
-A long legal battle ensued, during which Sophie and George William challenged their daughter-in-law, Wibke van Gunsteren, to win the custody of their granddaughter, Princess Saskia of Hanover, who was finally entrusted to her aunt Princess Christina.
-Final years
-
-In 1988, Sophie had the satisfaction of making her mother's last wishes come true by transferring her remains to the Church of Mary Magdalene, on the Mount of Olives, in Jerusalem.
-A few years later, in 1993, the Yad Vashem Memorial honored Princess Alice as "Righteous Among the Nations" for supporting a Jewish family during the Second World War.
-Sophie and Philip, her last surviving children since Margarita's death in 1981, were invited to the Israeli capital in 1994, for a ceremony in honor of their mother.
-As the Spanish historian Ricardo Mateos Sainz de Medrano pointed out, there was a certain irony here, considering Sophie's past links to the Nazi regime.
-The year 1994 also brought the accidental death of one of Sophie's grandsons, Prince Christopher of Yugoslavia.
-A science teacher at a high school in Bowmore, Scotland, the 34-year-old prince died when he was hit by a car on his way home on his bicycle.
-Informed by the Duke of Edinburgh while staying in the UK, Sophie was shocked by the news.
-The princess spent the last months of her life in a nursing home in Schliersee, where she died on 24 November 2001 and was survived by her husband, seven children, fourteen grandchildren and fourteen great-grandchildren.
-In popular culture
-
-Documentaries
-
-Prince Karl of Hesse briefly discusses his mother's childhood and her ties to the Nazi regime in a documentary about his uncle, Prince Philip:
-In the same documentary, it is mentioned that Princess Sophie is the author of an as of yet unpublished memoir.
-Princess Sophie is also mentioned in episode 6 ("Hesse Jewels") of the second season of the documentary series Daring Capers (2001).
-Film and television
-
-Sophie features as a character in the 2009 Belgian pseudo-film noir The Hessen Affair (The Hessen Conspiracy on DVD), the plot of which centers around the theft of her jewels and the entirely fictional post-1871 Imperial German crown jewels from Kronberg Castle.
-Sophie is briefly portrayed by actress Eliza Sodró in the episode "Paterfamilias" of the second season of the television series The Crown (2017).
-Ancestry
-
-Notes and references
-
-Notes
-
-References
-
-Bibliography
-
-On Sophie
-
-Press articles devoted to Sophie
-
-On Sophie and the Greek royal family
-
-On Sophie and the princely family of Hesse-Kassel
-
-Biographies of Sophie's relatives
+Berthold died on 27 October 1963, aged 57, in Spaichingen.
+He was succeeded as titular margrave and head of house by his son Max.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -349,39 +109,9 @@ Biographies of Sophie's relatives
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -396,6 +126,23 @@ Biographies of Sophie's relatives
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -413,6 +160,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -480,29 +242,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -511,6 +265,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -523,6 +285,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -531,17 +295,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -569,6 +335,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -584,188 +434,149 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0f064df5-a12c-4263-8a64-c7a8680a09e9)
- Call ID: 0f064df5-a12c-4263-8a64-c7a8680a09e9
+  AssignClass (cf12a60a-be89-4330-b777-c84c9c2359a8)
+ Call ID: cf12a60a-be89-4330-b777-c84c9c2359a8
   Args:
-    type: :Woman
-    source: :Sophie_of_Greece_and_Denmark
-  AssignClass (c380d6c8-b5b5-459f-9154-f2dfc86277f7)
- Call ID: c380d6c8-b5b5-459f-9154-f2dfc86277f7
+    type: :Man
+    source: Berthold_Prinz_und_Markgraf_von_Baden
+  AssignClass (2bc97668-77de-4bcc-8fb3-84af359832f6)
+ Call ID: 2bc97668-77de-4bcc-8fb3-84af359832f6
   Args:
     type: :Person
-    source: :Sophie_of_Greece_and_Denmark
-  AddLiteral (9f55e374-c176-49bb-a3ee-cd29fb8bfde5)
- Call ID: 9f55e374-c176-49bb-a3ee-cd29fb8bfde5
+    source: Berthold_Prinz_und_Markgraf_von_Baden
+  AddLiteral (d7f80e1d-29c4-4178-89af-9b0c4f5d0731)
+ Call ID: d7f80e1d-29c4-4178-89af-9b0c4f5d0731
   Args:
+    literal_value: 1906
+    source: Berthold_Prinz_und_Markgraf_von_Baden
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: :Sophie_of_Greece_and_Denmark
-    literal_value: 1914
-    literal_type: xsd:integer
-  AddLiteral (c1864860-8c2c-4cca-a95f-158de686b1f3)
- Call ID: c1864860-8c2c-4cca-a95f-158de686b1f3
+  AddLiteral (d274cc3d-ecfd-4eb1-b242-4d5ebc140710)
+ Call ID: d274cc3d-ecfd-4eb1-b242-4d5ebc140710
   Args:
-    source: :Sophie_of_Greece_and_Denmark
+    literal_value: 1963
+    source: Berthold_Prinz_und_Markgraf_von_Baden
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 2001
-  AssignClass (b1c597e7-1b5b-4926-bc63-7b36e2678b7c)
- Call ID: b1c597e7-1b5b-4926-bc63-7b36e2678b7c
+  AssignClass (42c30e90-342f-43a2-8b7f-867c96404ee1)
+ Call ID: 42c30e90-342f-43a2-8b7f-867c96404ee1
   Args:
+    source: Prince_Maximilian_Margrave_of_Baden
     type: :Man
-    source: :Prince_Andrew_of_Greece_and_Denmark
-  AssignClass (629fdeb9-eca7-4c06-a837-61997992e5b4)
- Call ID: 629fdeb9-eca7-4c06-a837-61997992e5b4
+  AssignClass (b6041914-e878-4612-96eb-5b952a9a1223)
+ Call ID: b6041914-e878-4612-96eb-5b952a9a1223
   Args:
+    source: Prince_Maximilian_Margrave_of_Baden
     type: :Person
-    source: :Prince_Andrew_of_Greece_and_Denmark
-  AssignClass (7eec6cc7-8c6e-4671-a0a4-db366a0fee79)
- Call ID: 7eec6cc7-8c6e-4671-a0a4-db366a0fee79
+  AssignClass (ef2aa25d-6131-4fd3-9ed2-c5683454499b)
+ Call ID: ef2aa25d-6131-4fd3-9ed2-c5683454499b
   Args:
     type: :Woman
-    source: :Princess_Alice_of_Battenberg
-  AssignClass (0c91ce80-0b50-4c93-9397-62d87632e940)
- Call ID: 0c91ce80-0b50-4c93-9397-62d87632e940
+    source: Princess_Marie_Louise_of_Hanover
+  AssignClass (1ab2b494-db17-4a66-8e80-770eebb27d61)
+ Call ID: 1ab2b494-db17-4a66-8e80-770eebb27d61
   Args:
+    source: Princess_Marie_Louise_of_Hanover
     type: :Person
-    source: :Princess_Alice_of_Battenberg
-  AddTriple (a0927768-a87b-45d8-879b-81bdcdf07662)
- Call ID: a0927768-a87b-45d8-879b-81bdcdf07662
+  AddTriple (65473199-3784-4a5b-9a2d-ca39b7df4556)
+ Call ID: 65473199-3784-4a5b-9a2d-ca39b7df4556
   Args:
-    target: :Prince_Andrew_of_Greece_and_Denmark
+    target: Prince_Maximilian_Margrave_of_Baden
+    source: Berthold_Prinz_und_Markgraf_von_Baden
     relation: :hasFather
-    source: :Sophie_of_Greece_and_Denmark
-  AddTriple (cffdf9bb-8915-4b3f-bac8-88ad437a680b)
- Call ID: cffdf9bb-8915-4b3f-bac8-88ad437a680b
+  AddTriple (a8011bc4-aa36-414a-aa5d-5cd7e238071a)
+ Call ID: a8011bc4-aa36-414a-aa5d-5cd7e238071a
   Args:
-    target: :Princess_Alice_of_Battenberg
+    target: Princess_Marie_Louise_of_Hanover
+    source: Berthold_Prinz_und_Markgraf_von_Baden
     relation: :hasMother
-    source: :Sophie_of_Greece_and_Denmark
-  AssignClass (9d6ed024-f4c3-45be-96aa-4f160a5900f3)
- Call ID: 9d6ed024-f4c3-45be-96aa-4f160a5900f3
+  AssignClass (ce3ea81e-904a-470c-8a29-52096b34d74e)
+ Call ID: ce3ea81e-904a-470c-8a29-52096b34d74e
   Args:
-    type: :Man
-    source: :Prince_Christoph_of_Hesse
-  AssignClass (2df596c7-09de-4d9f-89b2-bfbbedeffefd)
- Call ID: 2df596c7-09de-4d9f-89b2-bfbbedeffefd
+    source: Princess_Theodora_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (00b33703-1fcd-45f7-bec1-b252ab4a6159)
+ Call ID: 00b33703-1fcd-45f7-bec1-b252ab4a6159
   Args:
     type: :Person
-    source: :Prince_Christoph_of_Hesse
-  AddLiteral (e9a4ce0d-87f9-4ce4-b584-057cd26c12e2)
- Call ID: e9a4ce0d-87f9-4ce4-b584-057cd26c12e2
+    source: Princess_Theodora_of_Greece_and_Denmark
+  AddLiteral (07fd71d6-ea1f-476d-aa46-16bc301b4262)
+ Call ID: 07fd71d6-ea1f-476d-aa46-16bc301b4262
   Args:
     relation: :hasMarriageYear
-    source: :Sophie_of_Greece_and_Denmark
-    literal_value: 1930
+    literal_value: 1931
+    source: Berthold_Prinz_und_Markgraf_von_Baden
     literal_type: xsd:integer
-  AddTriple (9b721901-b025-45f6-86fd-fbff044703ed)
- Call ID: 9b721901-b025-45f6-86fd-fbff044703ed
+  AddTriple (a18a469c-4659-4d03-a8ee-f32e90adcf7f)
+ Call ID: a18a469c-4659-4d03-a8ee-f32e90adcf7f
   Args:
+    target: Princess_Theodora_of_Greece_and_Denmark
+    source: Berthold_Prinz_und_Markgraf_von_Baden
     relation: :hasRelation
-    source: :Sophie_of_Greece_and_Denmark
-    target: :Prince_Christoph_of_Hesse
-  AssignClass (b127a45e-4b7c-448a-af4f-059557c866b0)
- Call ID: b127a45e-4b7c-448a-af4f-059557c866b0
+  AssignClass (d4dcfc22-d08f-42ec-acef-cd72f780a1d0)
+ Call ID: d4dcfc22-d08f-42ec-acef-cd72f780a1d0
   Args:
+    source: Prince_Andrew_of_Greece_and_Denmark
     type: :Man
-    source: :Prince_George_William_of_Hanover
-  AssignClass (cbc8c55a-d940-4b80-856a-2017cdf3005f)
- Call ID: cbc8c55a-d940-4b80-856a-2017cdf3005f
+  AssignClass (c4307792-da74-4664-87d8-49f752e6c499)
+ Call ID: c4307792-da74-4664-87d8-49f752e6c499
   Args:
+    source: Prince_Andrew_of_Greece_and_Denmark
     type: :Person
-    source: :Prince_George_William_of_Hanover
-  AddLiteral (74c265f5-1e9d-4538-87b0-45ccb0a48f23)
- Call ID: 74c265f5-1e9d-4538-87b0-45ccb0a48f23
+  AssignClass (a2e9336b-7749-49ee-8680-2c2597e52331)
+ Call ID: a2e9336b-7749-49ee-8680-2c2597e52331
   Args:
-    source: :Sophie_of_Greece_and_Denmark
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 1946
-  AddTriple (e019c970-1827-4d45-a1d4-ffe25973b293)
- Call ID: e019c970-1827-4d45-a1d4-ffe25973b293
+    source: Princess_Alice_of_Battenberg
+    type: :Woman
+  AssignClass (9d970546-ccd6-4b60-be47-6f1aec308c49)
+ Call ID: 9d970546-ccd6-4b60-be47-6f1aec308c49
   Args:
-    relation: :hasRelation
-    source: :Sophie_of_Greece_and_Denmark
-    target: :Prince_George_William_of_Hanover
-  AssignClass (19380f08-58c7-4ab6-9916-f5d8ece58fd1)
- Call ID: 19380f08-58c7-4ab6-9916-f5d8ece58fd1
+    source: Princess_Alice_of_Battenberg
+    type: :Person
+  AddTriple (b6b781c9-c12d-48ee-8ffc-f54b6e583a8a)
+ Call ID: b6b781c9-c12d-48ee-8ffc-f54b6e583a8a
   Args:
+    relation: :hasFather
+    target: Prince_Andrew_of_Greece_and_Denmark
+    source: Princess_Theodora_of_Greece_and_Denmark
+  AddTriple (a109027e-5a07-458f-8e53-6a0684927adf)
+ Call ID: a109027e-5a07-458f-8e53-6a0684927adf
+  Args:
+    target: Princess_Alice_of_Battenberg
+    source: Princess_Theodora_of_Greece_and_Denmark
+    relation: :hasMother
+  AssignClass (fd4f9ef8-65e7-47e7-a2a1-00e52132c89f)
+ Call ID: fd4f9ef8-65e7-47e7-a2a1-00e52132c89f
+  Args:
+    source: Prince_Philip_Duke_of_Edinburgh
     type: :Man
-    source: :Prince_Philip_Duke_of_Edinburgh
-  AssignClass (a3484603-6172-46b4-b3da-e34cf23b53ff)
- Call ID: a3484603-6172-46b4-b3da-e34cf23b53ff
+  AssignClass (687405cc-aa79-4cb3-97fe-61aada884d9b)
+ Call ID: 687405cc-aa79-4cb3-97fe-61aada884d9b
   Args:
     type: :Person
-    source: :Prince_Philip_Duke_of_Edinburgh
-  AddTriple (0618a23b-9eb5-43db-b93f-887ad01f91d8)
- Call ID: 0618a23b-9eb5-43db-b93f-887ad01f91d8
+    source: Prince_Philip_Duke_of_Edinburgh
+  AddTriple (936ebc7d-4c1a-41fe-b4d8-893d746910b1)
+ Call ID: 936ebc7d-4c1a-41fe-b4d8-893d746910b1
   Args:
-    relation: :hasBrother
-    source: :Sophie_of_Greece_and_Denmark
-    target: :Prince_Philip_Duke_of_Edinburgh
-  AssignClass (531bd596-bf21-4d0f-98cb-7467e2f61666)
- Call ID: 531bd596-bf21-4d0f-98cb-7467e2f61666
+    source: Prince_Philip_Duke_of_Edinburgh
+    target: Princess_Theodora_of_Greece_and_Denmark
+    relation: :isSiblingOf
+  AssignClass (3be83bcb-edee-471c-8b6d-9ccab91fcc22)
+ Call ID: 3be83bcb-edee-471c-8b6d-9ccab91fcc22
   Args:
-    type: :Woman
-    source: :Queen_Elizabeth_II
-  AssignClass (9e379c74-3a21-4ea0-a2af-0c0ae65ae1e3)
- Call ID: 9e379c74-3a21-4ea0-a2af-0c0ae65ae1e3
-  Args:
-    type: :Person
-    source: :Queen_Elizabeth_II
-  AddTriple (86487706-4149-4dd0-b105-6b87466b0495)
- Call ID: 86487706-4149-4dd0-b105-6b87466b0495
-  Args:
-    relation: :hasRelation
-    source: :Prince_Philip_Duke_of_Edinburgh
-    target: :Queen_Elizabeth_II
-  AssignClass (9c931b9b-4b2a-4534-8289-3c68c4be4b56)
- Call ID: 9c931b9b-4b2a-4534-8289-3c68c4be4b56
-  Args:
-    type: :Woman
-    source: :Margarita_of_Greece_and_Denmark
-  AssignClass (50913e7f-ba98-4762-8a61-548e5f4e7d4c)
- Call ID: 50913e7f-ba98-4762-8a61-548e5f4e7d4c
+    source: Max
+    type: :Man
+  AssignClass (9982d316-0013-4e91-a9cc-6b523d0a42d1)
+ Call ID: 9982d316-0013-4e91-a9cc-6b523d0a42d1
   Args:
     type: :Person
-    source: :Margarita_of_Greece_and_Denmark
-  AssignClass (bbfbad39-7c2f-4f85-a766-83f9a4fc6645)
- Call ID: bbfbad39-7c2f-4f85-a766-83f9a4fc6645
+    source: Max
+  AddTriple (9095cd0e-39ab-4ec6-89ad-826c5d6b0220)
+ Call ID: 9095cd0e-39ab-4ec6-89ad-826c5d6b0220
   Args:
-    type: :Woman
-    source: :Theodora_of_Greece_and_Denmark
-  AssignClass (cf80b123-d43c-4430-af06-6ce0e9071a91)
- Call ID: cf80b123-d43c-4430-af06-6ce0e9071a91
-  Args:
-    type: :Person
-    source: :Theodora_of_Greece_and_Denmark
-  AssignClass (4dc28da6-72f1-48af-8db6-54c8dd6ecfa5)
- Call ID: 4dc28da6-72f1-48af-8db6-54c8dd6ecfa5
-  Args:
-    type: :Woman
-    source: :Cecilie_of_Greece_and_Denmark
-  AssignClass (825809c3-78d9-46a7-8b03-bbd319eafdd4)
- Call ID: 825809c3-78d9-46a7-8b03-bbd319eafdd4
-  Args:
-    type: :Person
-    source: :Cecilie_of_Greece_and_Denmark
-  AddTriple (06fcc61d-07c9-458b-811c-7b61c2643474)
- Call ID: 06fcc61d-07c9-458b-811c-7b61c2643474
-  Args:
-    source: :Sophie_of_Greece_and_Denmark
-    relation: :hasSister
-    target: :Margarita_of_Greece_and_Denmark
-  AddTriple (d0db733e-2feb-46f5-8e74-62b8b1624d4f)
- Call ID: d0db733e-2feb-46f5-8e74-62b8b1624d4f
-  Args:
-    target: :Theodora_of_Greece_and_Denmark
-    source: :Sophie_of_Greece_and_Denmark
-    relation: :hasSister
-  AddTriple (14cc6cd9-55a1-4cd6-aba0-201bca349c32)
- Call ID: 14cc6cd9-55a1-4cd6-aba0-201bca349c32
-  Args:
-    source: :Sophie_of_Greece_and_Denmark
-    relation: :hasSister
-    target: :Cecilie_of_Greece_and_Denmark
-  Finish (d4389f46-10f0-4c4f-b05b-9e0b8081e169)
- Call ID: d4389f46-10f0-4c4f-b05b-9e0b8081e169
+    target: Berthold_Prinz_und_Markgraf_von_Baden
+    source: Max
+    relation: :hasFather
+  Finish (acfcc755-cdad-4f2a-9767-2fe3b5cf919e)
+ Call ID: acfcc755-cdad-4f2a-9767-2fe3b5cf919e
   Args:

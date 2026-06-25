@@ -1,0 +1,99 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Prince_Edward-_Duke_of_Kent a :Man,
+        :Person ;
+    rdfs:label "Prince Edward, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "130:143"^^xsd:string,
+        "130:157"^^xsd:string,
+        "145:157"^^xsd:string ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent"^^xsd:string,
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent"^^xsd:string,
+        "Edward Kent"^^xsd:string,
+        "His Royal Highness The Duke of Kent"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward of Kent"^^xsd:string,
+        "The Duke of Kent"^^xsd:string ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
+    :hasRelation data:Prince_Edward-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Edward-_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent .
+
+data:Katharine-_Duchess_of_Kent a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Katharine, Duchess of Kent"^^xsd:string ;
+    data:posIndicesFull "163:189"^^xsd:string ;
+    data:wdtLink wdt:Q236678 ;
+    :alsoKnownAs "Katharine Kent"^^xsd:string,
+        "Katharine Lucy Mary Worsley"^^xsd:string,
+        "Katharine Lucy Mary, Duchess of Kent"^^xsd:string,
+        "Katharine Worsley"^^xsd:string ;
+    :hasChild data:Lady_Helen_Taylor ;
+    :hasDaughter data:Lady_Helen_Taylor ;
+    :hasRelation data:Katharine-_Duchess_of_Kent,
+        data:Lady_Helen_Taylor ;
+    :hasSex data:female ;
+    :hasSister data:Katharine-_Duchess_of_Kent ;
+    :isAncestorOf data:Lady_Helen_Taylor ;
+    :isAuntOf data:Lady_Helen_Taylor ;
+    :isBloodrelationOf data:Katharine-_Duchess_of_Kent ;
+    :isMotherOf data:Lady_Helen_Taylor ;
+    :isParentOf data:Lady_Helen_Taylor ;
+    :isSiblingOf data:Katharine-_Duchess_of_Kent ;
+    :isSisterOf data:Katharine-_Duchess_of_Kent .
+
+data:Lady_Helen_Taylor a :Person,
+        :Woman ;
+    rdfs:label "Lady Helen Taylor"^^xsd:string ;
+    data:posIndicesFull "0:29"^^xsd:string,
+        "259:289"^^xsd:string,
+        "264:289"^^xsd:string,
+        "5:29"^^xsd:string ;
+    data:posIndicesPart "1015:1020"^^xsd:string,
+        "1040:1046"^^xsd:string,
+        "1084:1089"^^xsd:string,
+        "460:465"^^xsd:string,
+        "544:549"^^xsd:string,
+        "825:830"^^xsd:string,
+        "921:926"^^xsd:string ;
+    data:wdtLink wdt:Q674343 ;
+    :alsoKnownAs "Helen Marina Lucy Taylor"^^xsd:string,
+        "Helen Marina Lucy Windsor"^^xsd:string,
+        "Helen Taylor"^^xsd:string,
+        "Helen Windsor"^^xsd:string,
+        "Lady Helen Marina Lucy Taylor"^^xsd:string,
+        "Lady Helen Marina Lucy Windsor"^^xsd:string,
+        "The Lady Helen Marina Lucy Taylor"^^xsd:string ;
+    :hasAncestor data:Katharine-_Duchess_of_Kent ;
+    :hasMother data:Katharine-_Duchess_of_Kent ;
+    :hasParent data:Katharine-_Duchess_of_Kent ;
+    :hasRelation data:Katharine-_Duchess_of_Kent,
+        data:Lady_Helen_Taylor ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Helen_Taylor ;
+    :isBloodrelationOf data:Lady_Helen_Taylor ;
+    :isChildOf data:Katharine-_Duchess_of_Kent ;
+    :isDaughterOf data:Katharine-_Duchess_of_Kent ;
+    :isSiblingOf data:Lady_Helen_Taylor ;
+    :isSisterOf data:Lady_Helen_Taylor .
+

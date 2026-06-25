@@ -85,15 +85,38 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Albrecht Willem "Pim" Lier (22 July 1918 – 9 April 2015) was a Dutch lawyer and jurist.
-He became well known in 1979 when he was revealed to be the illegitimate son of Prince Henry, the husband of Queen Wilhelmina, by his mistress, Willemina Martina Wenneker (1887–1973).
-This made him a paternal half-brother of Queen Juliana and the half-uncle of Queen Beatrix.
+Prince Lennart Bernadotte, Count of Wisborg (born Prince Lennart of Sweden, Duke of Småland; 8 May 1909 – 21 December 2004) was a Swedish-German landscaper, filmmaker, photographer and was a grandson of King Gustaf V of Sweden.
+He was also the eldest great-grandchild of King George I of Greece.
+He was born at the Royal Palace in Stockholm, to Prince Wilhelm, Duke of Södermanland, and Grand Duchess Maria Pavlovna of Russia.
+At birth Bernadotte was a Swedish prince and was titled Duke of Småland.
+Thus, he was called Mr. Bernadotte as a result.
+Title
+
+Under the Swedish Act of Succession, a prince or princess marrying without the consent of the monarch and government forfeits the right of succession for themselves and their descendants.
+In a new policy adopted in the case of Lennart Bernadotte, they were also forbidden to use their titles and told to use the surname of Bernadotte.
+By his marriage on 11 March 1932 Prince Lennart consequently, as far as Swedish records were concerned, was to be called Mr. Lennart Bernadotte.
+On 2 July 1951, for himself, his wife and his marital descendants, Bernadotte was admitted by Grand Duchess Charlotte (head of state at the time) into the nobility of Luxembourg as Count of Wisborg and in that conferral was also called Gustaf Lennart Nicolas Paul Prince Bernadotte.
+It has been reported (without accuracy) that Lennart and his cousin Sigvard Bernadotte wanted King Carl XVI Gustaf of Sweden to restore their royal titles, which he could have done, but that he chose not to do so; no such request was actually ever made however.
+Career
+
+In 1944 Bernadotte portrayed the young Crown Prince Carl of Sweden and Norway in the historical film Prince Gustaf, Bernadotte's only screen acting role.
+He served as head of the Sveriges Scoutförbund (Scouting Association of Sweden) from 1948 to 1951
+
+
+Lennart Bernadotte concentrated his energy on his estate on the island of Mainau in Lake Constance, Germany, where he died, and on his charitable fund, the Lennart Bernadotte Stiftung.
+Family
+
+In London on 11 March 1932, Bernadotte married firstly Karin Emma Louise Nissvandt (7 July 1911 – 9 September 1991).
+In Mainau on 29 April 1972, Bernadotte married Sonja Anita Maria Haunz (7 May 1944 – 21 October 2008).
+Bernadotte died on 21 December 2004.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -109,39 +132,9 @@ This made him a paternal half-brother of Queen Juliana and the half-uncle of Que
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -156,6 +149,23 @@ This made him a paternal half-brother of Queen Juliana and the half-uncle of Que
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -173,6 +183,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -240,29 +265,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,6 +288,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -283,6 +308,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -291,17 +318,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -329,6 +358,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -344,134 +457,100 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (94218d72-3740-4226-b981-074da391cacb)
- Call ID: 94218d72-3740-4226-b981-074da391cacb
+  AssignClass (6def32b8-8eba-437d-8bb2-0b790a6eab1c)
+ Call ID: 6def32b8-8eba-437d-8bb2-0b790a6eab1c
   Args:
-    source: Albrecht_Willem_Lier
+    source: Lennart_Bernadotte
     type: :Man
-  AssignClass (f6e6496d-a579-492c-b2b4-ad9e5258dc51)
- Call ID: f6e6496d-a579-492c-b2b4-ad9e5258dc51
+  AssignClass (0fc4ab82-c7e2-47f0-9c5d-578722386a45)
+ Call ID: 0fc4ab82-c7e2-47f0-9c5d-578722386a45
   Args:
-    type: :Person
-    source: Albrecht_Willem_Lier
-  AddLiteral (0a0cda00-528f-4375-b1b6-1d96179a15fc)
- Call ID: 0a0cda00-528f-4375-b1b6-1d96179a15fc
-  Args:
-    relation: :knownAs
-    source: Albrecht_Willem_Lier
-    literal_value: Pim
-    literal_type: xsd:string
-  AddLiteral (c5142b2b-37e6-45c1-82b2-b9fe19794ab1)
- Call ID: c5142b2b-37e6-45c1-82b2-b9fe19794ab1
-  Args:
-    relation: :hasBirthYear
-    source: Albrecht_Willem_Lier
-    literal_value: 1918
-    literal_type: xsd:integer
-  AddLiteral (e8705a03-65e0-4294-972c-c41e91285f60)
- Call ID: e8705a03-65e0-4294-972c-c41e91285f60
-  Args:
-    relation: :hasDeathYear
-    source: Albrecht_Willem_Lier
-    literal_value: 2015
-    literal_type: xsd:integer
-  AssignClass (46edd4f7-cfc0-49dd-809f-fc18a201328b)
- Call ID: 46edd4f7-cfc0-49dd-809f-fc18a201328b
-  Args:
-    source: Prince_Henry
+    source: Wilhelm_Duke_of_Södermanland
     type: :Man
-  AssignClass (6147192e-4f35-441a-8379-5637d92f2fe9)
- Call ID: 6147192e-4f35-441a-8379-5637d92f2fe9
+  AssignClass (0705d260-6468-438b-97c4-d12b5ca8eaa5)
+ Call ID: 0705d260-6468-438b-97c4-d12b5ca8eaa5
   Args:
-    source: Prince_Henry
-    type: :Person
-  AssignClass (8a91ce9c-bd6f-44f5-a444-ba8a69cd7203)
- Call ID: 8a91ce9c-bd6f-44f5-a444-ba8a69cd7203
-  Args:
-    source: Willemina_Martina_Wenneker
+    source: Maria_Pavlovna_of_Russia
     type: :Woman
-  AssignClass (f3125c3a-0766-42d1-8711-6d9fc7a82e3a)
- Call ID: f3125c3a-0766-42d1-8711-6d9fc7a82e3a
+  AssignClass (6f121979-5e72-4b2f-82dd-4443b30a1dec)
+ Call ID: 6f121979-5e72-4b2f-82dd-4443b30a1dec
   Args:
-    source: Willemina_Martina_Wenneker
-    type: :Person
-  AddLiteral (bdd3dafd-db15-4c4f-be08-1735ea24a4e8)
- Call ID: bdd3dafd-db15-4c4f-be08-1735ea24a4e8
+    source: Karin_Emma_Louise_Nissvandt
+    type: :Woman
+  AssignClass (0cd72914-c066-439d-998d-6ba3e6e35ed0)
+ Call ID: 0cd72914-c066-439d-998d-6ba3e6e35ed0
   Args:
+    source: Sonja_Anita_Maria_Haunz
+    type: :Woman
+  AddLiteral (b0e8c0b4-0bd1-46b6-baf0-9f1c508351b1)
+ Call ID: b0e8c0b4-0bd1-46b6-baf0-9f1c508351b1
+  Args:
+    source: Lennart_Bernadotte
+    literal_type: xsd:integer
+    literal_value: 1909
     relation: :hasBirthYear
-    source: Willemina_Martina_Wenneker
-    literal_value: 1887
-    literal_type: xsd:integer
-  AddLiteral (8136c4ad-b856-43e1-b5e7-b4b60d273851)
- Call ID: 8136c4ad-b856-43e1-b5e7-b4b60d273851
+  AddLiteral (e45484fe-8223-4ec0-ba03-5a99d919f4aa)
+ Call ID: e45484fe-8223-4ec0-ba03-5a99d919f4aa
   Args:
+    source: Lennart_Bernadotte
+    literal_value: 2004
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    source: Willemina_Martina_Wenneker
-    literal_value: 1973
-    literal_type: xsd:integer
-  AddTriple (a84a19fa-5789-4632-8c2b-cc661758a8c8)
- Call ID: a84a19fa-5789-4632-8c2b-cc661758a8c8
+  AddTriple (5863812b-fed3-4a29-ad3b-7714def6d84e)
+ Call ID: 5863812b-fed3-4a29-ad3b-7714def6d84e
   Args:
-    target: Prince_Henry
+    source: Lennart_Bernadotte
+    target: Wilhelm_Duke_of_Södermanland
     relation: :hasFather
-    source: Albrecht_Willem_Lier
-  AddTriple (a7927ebb-ac15-417e-a09f-81dca42c47f9)
- Call ID: a7927ebb-ac15-417e-a09f-81dca42c47f9
+  AddTriple (021de239-a864-4400-9c1c-3d131a771838)
+ Call ID: 021de239-a864-4400-9c1c-3d131a771838
   Args:
-    target: Willemina_Martina_Wenneker
+    source: Lennart_Bernadotte
+    target: Maria_Pavlovna_of_Russia
     relation: :hasMother
-    source: Albrecht_Willem_Lier
-  AssignClass (89313f4c-a344-438a-a3f4-5bfa56f2e6ad)
- Call ID: 89313f4c-a344-438a-a3f4-5bfa56f2e6ad
+  AddLiteral (788eddb3-3cc6-40c9-8996-c5cf3d706436)
+ Call ID: 788eddb3-3cc6-40c9-8996-c5cf3d706436
   Args:
-    source: Queen_Juliana
-    type: :Woman
-  AssignClass (b2e53ef9-de55-474f-a296-719df8e5aa96)
- Call ID: b2e53ef9-de55-474f-a296-719df8e5aa96
+    relation: :hasMarriageYear
+    literal_value: 1932
+    literal_type: xsd:integer
+    source: Lennart_Bernadotte
+  AddTriple (4f902d82-6609-41b0-ad4d-6aaf3d781a93)
+ Call ID: 4f902d82-6609-41b0-ad4d-6aaf3d781a93
   Args:
-    source: Queen_Juliana
-    type: :Person
-  AssignClass (f8a40847-ac1e-4cde-b225-0ffb9ea93bf6)
- Call ID: f8a40847-ac1e-4cde-b225-0ffb9ea93bf6
+    source: Lennart_Bernadotte
+    relation: :hasRelation
+    target: Karin_Emma_Louise_Nissvandt
+  AddLiteral (cff04461-752d-4371-8f00-1295439f1936)
+ Call ID: cff04461-752d-4371-8f00-1295439f1936
   Args:
-    type: :Woman
-    source: Queen_Beatrix
-  AssignClass (df2ac8ee-b0fa-4845-b08c-fe665d1cf87a)
- Call ID: df2ac8ee-b0fa-4845-b08c-fe665d1cf87a
+    source: Lennart_Bernadotte
+    relation: :hasMarriageYear
+    literal_value: 1972
+    literal_type: xsd:integer
+  AddTriple (33586fc3-31b4-4513-b980-557955fee82d)
+ Call ID: 33586fc3-31b4-4513-b980-557955fee82d
   Args:
-    type: :Person
-    source: Queen_Beatrix
-  AddTriple (ee9db489-0f19-4ab1-99b0-2087a5378ae9)
- Call ID: ee9db489-0f19-4ab1-99b0-2087a5378ae9
+    relation: :hasRelation
+    target: Sonja_Anita_Maria_Haunz
+    source: Lennart_Bernadotte
+  AddLiteral (3938fe3e-8e73-440b-890c-2203eff104df)
+ Call ID: 3938fe3e-8e73-440b-890c-2203eff104df
   Args:
-    target: Albrecht_Willem_Lier
-    source: Queen_Juliana
-    relation: :hasBrother
-  AddTriple (57e9e0df-876f-4b1c-abdc-4f0314bd9211)
- Call ID: 57e9e0df-876f-4b1c-abdc-4f0314bd9211
+    literal_type: xsd:integer
+    literal_value: 1991
+    relation: :hasDeathYear
+    source: Karin_Emma_Louise_Nissvandt
+  AddLiteral (7705a56a-3068-41d4-bb8b-6cd428997286)
+ Call ID: 7705a56a-3068-41d4-bb8b-6cd428997286
   Args:
-    target: Queen_Beatrix
-    relation: :isUncleOf
-    source: Albrecht_Willem_Lier
-  ValidateShacl (163db889-b9c7-4542-b9a9-357de41b97f8)
- Call ID: 163db889-b9c7-4542-b9a9-357de41b97f8
+    literal_value: 2008
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Sonja_Anita_Maria_Haunz
+  Finish (41632179-e93c-4436-9cf2-b1fe8a917586)
+ Call ID: 41632179-e93c-4436-9cf2-b1fe8a917586
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -536,31 +615,39 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Queen_Juliana a :Person,
-          :Woman ;
-      :hasBrother data:Albrecht_Willem_Lier .
+  data:Lennart_Bernadotte a :Man ;
+      :hasBirthYear 1909 ;
+      :hasDeathYear 2004 ;
+      :hasFather data:Wilhelm_Duke_of_S%C3%B6dermanland ;
+      :hasMarriageYear 1932,
+          1972 ;
+      :hasMother data:Maria_Pavlovna_of_Russia ;
+      :hasRelation data:Karin_Emma_Louise_Nissvandt,
+          data:Sonja_Anita_Maria_Haunz .
 
-  data:Albrecht_Willem_Lier a :Man,
-          :Person ;
-      :hasBirthYear 1918 ;
-      :hasDeathYear 2015 ;
-      :hasFather data:Prince_Henry ;
-      :hasMother data:Willemina_Martina_Wenneker ;
-      :isUncleOf data:Queen_Beatrix ;
-      :knownAs "Pim"^^xsd:string .
+  data:Karin_Emma_Louise_Nissvandt a :Woman ;
+      :hasDeathYear 1991 .
 
-  data:Prince_Henry a :Man,
-          :Person .
+  data:Maria_Pavlovna_of_Russia a :Woman .
 
-  data:Queen_Beatrix a :Person,
-          :Woman .
+  data:Sonja_Anita_Maria_Haunz a :Woman ;
+      :hasDeathYear 2008 .
 
-  data:Willemina_Martina_Wenneker a :Person,
-          :Woman ;
-      :hasBirthYear 1887 ;
-      :hasDeathYear 1973 .
+  data:Wilhelm_Duke_of_S%C3%B6dermanland a :Man .
 
 
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (24fb11c6-a22f-4498-8af7-bbe8a173eb1e)
+ Call ID: 24fb11c6-a22f-4498-8af7-bbe8a173eb1e
+  Args:
 
 ================================= Tool Message =================================
 
@@ -571,49 +658,49 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Henry assigned as the father of Albrecht_Willem_Lier is missing the required Ancestor class.
+      The node Wilhelm_Duke_of_Södermanland is assigned the class :Man but is missing the required :Ancestor class, which is mandatory for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Henry, :Ancestor)
+      AssignClass(Wilhelm_Duke_of_Södermanland, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Willemina_Martina_Wenneker assigned as the mother of Albrecht_Willem_Lier is missing the required Ancestor class.
+      The node Maria_Pavlovna_of_Russia is assigned the class :Woman but is missing the required :Ancestor class, which is mandatory for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Willemina_Martina_Wenneker, :Ancestor)
+      AssignClass(Maria_Pavlovna_of_Russia, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Henry assigned as the father of Albrecht_Willem_Lier is missing the required Ancestor class.
+      The node Wilhelm_Duke_of_Södermanland is assigned the class :Man but is missing the required :Ancestor class, which is mandatory for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Henry, :Ancestor)
+      AssignClass(Wilhelm_Duke_of_Södermanland, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Willemina_Martina_Wenneker assigned as the mother of Albrecht_Willem_Lier is missing the required Ancestor class.
+      The node Maria_Pavlovna_of_Russia is assigned the class :Woman but is missing the required :Ancestor class, which is mandatory for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Willemina_Martina_Wenneker, :Ancestor)
+      AssignClass(Maria_Pavlovna_of_Russia, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Henry assigned as the father of Albrecht_Willem_Lier is missing the required Ancestor class.
+      The node Wilhelm_Duke_of_Södermanland is assigned the class :Man but is missing the required :Ancestor class, which is mandatory for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Henry, :Ancestor)
+      AssignClass(Wilhelm_Duke_of_Södermanland, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Willemina_Martina_Wenneker assigned as the mother of Albrecht_Willem_Lier is missing the required Ancestor class.
+      The node Maria_Pavlovna_of_Russia is assigned the class :Woman but is missing the required :Ancestor class, which is mandatory for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Willemina_Martina_Wenneker, :Ancestor)
+      AssignClass(Maria_Pavlovna_of_Russia, :Ancestor)
 
 
 
@@ -622,19 +709,16 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (5f016243-6875-467b-98bf-00732de2ebda)
- Call ID: 5f016243-6875-467b-98bf-00732de2ebda
+  AssignClass (63fc5f13-318a-47fa-a21b-8f5bfa90dc73)
+ Call ID: 63fc5f13-318a-47fa-a21b-8f5bfa90dc73
   Args:
+    source: Wilhelm_Duke_of_Södermanland
     type: :Ancestor
-    source: Prince_Henry
-  AssignClass (9a7c9bcb-6b0f-4ceb-9fed-f618d49089de)
- Call ID: 9a7c9bcb-6b0f-4ceb-9fed-f618d49089de
+  AssignClass (1bcfd912-7934-41e1-b251-c98e2928986c)
+ Call ID: 1bcfd912-7934-41e1-b251-c98e2928986c
   Args:
+    source: Maria_Pavlovna_of_Russia
     type: :Ancestor
-    source: Willemina_Martina_Wenneker
-  ValidateShacl (cb67f586-c4ea-4942-89c9-fafa0d97ed4d)
- Call ID: cb67f586-c4ea-4942-89c9-fafa0d97ed4d
-  Args:
 
 ================================= Tool Message =================================
 
@@ -647,33 +731,37 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Queen_Juliana a :Person,
-          :Woman ;
-      :hasBrother data:Albrecht_Willem_Lier .
+  data:Lennart_Bernadotte a :Man ;
+      :hasBirthYear 1909 ;
+      :hasDeathYear 2004 ;
+      :hasFather data:Wilhelm_Duke_of_S%C3%B6dermanland ;
+      :hasMarriageYear 1932,
+          1972 ;
+      :hasMother data:Maria_Pavlovna_of_Russia ;
+      :hasRelation data:Karin_Emma_Louise_Nissvandt,
+          data:Sonja_Anita_Maria_Haunz .
 
-  data:Albrecht_Willem_Lier a :Man,
-          :Person ;
-      :hasBirthYear 1918 ;
-      :hasDeathYear 2015 ;
-      :hasFather data:Prince_Henry ;
-      :hasMother data:Willemina_Martina_Wenneker ;
-      :isUncleOf data:Queen_Beatrix ;
-      :knownAs "Pim"^^xsd:string .
+  data:Karin_Emma_Louise_Nissvandt a :Woman ;
+      :hasDeathYear 1991 .
 
-  data:Prince_Henry a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Queen_Beatrix a :Person,
+  data:Maria_Pavlovna_of_Russia a :Ancestor,
           :Woman .
 
-  data:Willemina_Martina_Wenneker a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1887 ;
-      :hasDeathYear 1973 .
+  data:Sonja_Anita_Maria_Haunz a :Woman ;
+      :hasDeathYear 2008 .
+
+  data:Wilhelm_Duke_of_S%C3%B6dermanland a :Ancestor,
+          :Man .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (1a3df1dc-d7de-490d-92b8-68776131221d)
+ Call ID: 1a3df1dc-d7de-490d-92b8-68776131221d
+  Args:
 
 ================================= Tool Message =================================
 
@@ -683,6 +771,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (1147a9e4-d266-432f-96c6-7f01088baae6)
- Call ID: 1147a9e4-d266-432f-96c6-7f01088baae6
+  Finish (665866f2-bcc2-4593-b939-f2dc02c1847f)
+ Call ID: 665866f2-bcc2-4593-b939-f2dc02c1847f
   Args:

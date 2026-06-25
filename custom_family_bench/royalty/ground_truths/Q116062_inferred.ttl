@@ -1,0 +1,1342 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:James-_Earl_of_Wessex a :Man,
+        :Person ;
+    rdfs:label "James, Earl of Wessex"^^xsd:string ;
+    data:posIndicesFull "11541:11552"^^xsd:string ;
+    data:wdtLink wdt:Q550183 ;
+    :alsoKnownAs "James Alexander Philip Theo Mountbatten-Windsor"^^xsd:string,
+        "James Alexander Philip Theo Windsor, Viscount Severn"^^xsd:string,
+        "James Mountbatten-Windsor, Viscount Severn"^^xsd:string,
+        "James Severn"^^xsd:string,
+        "James Windsor, Viscount Severn"^^xsd:string,
+        "James, Earl of Forfar"^^xsd:string,
+        "James, Earl of Wessex and Forfar"^^xsd:string,
+        "James, Viscount Severn"^^xsd:string,
+        "Lord Severn"^^xsd:string ;
+    :hasBrother data:James-_Earl_of_Wessex ;
+    :hasRelation data:James-_Earl_of_Wessex ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:James-_Earl_of_Wessex ;
+    :isBrotherOf data:James-_Earl_of_Wessex ;
+    :isSiblingOf data:James-_Earl_of_Wessex .
+
+data:Lady_Louise_Mountbatten-Windsor a :Person,
+        :Woman ;
+    rdfs:label "Lady Louise Mountbatten-Windsor"^^xsd:string ;
+    data:posIndicesFull "612:626"^^xsd:string ;
+    data:posIndicesPart "10335:10341"^^xsd:string,
+        "13133:13144"^^xsd:string,
+        "13155:13166"^^xsd:string,
+        "13964:13971"^^xsd:string,
+        "1641:1648"^^xsd:string,
+        "1857:1864"^^xsd:string,
+        "2430:2436"^^xsd:string,
+        "2523:2534"^^xsd:string,
+        "3687:3694"^^xsd:string,
+        "6630:6641"^^xsd:string ;
+    data:wdtLink wdt:Q680304 ;
+    :alsoKnownAs "Lady Louise Alice Elizabeth Mary Windsor"^^xsd:string,
+        "Lady Louise Mountbatten-Windsor"^^xsd:string,
+        "Louise Alice Elizabeth Mary Mountbatten-Windsor"^^xsd:string,
+        "Louise Alice Elizabeth Mary Windsor"^^xsd:string,
+        "Louise Mountbatten-Windsor"^^xsd:string,
+        "Louise Windsor"^^xsd:string,
+        "Louise of Wessex"^^xsd:string,
+        "Princess Louise of Edinburgh"^^xsd:string,
+        "Princess Louise of Wessex"^^xsd:string ;
+    :hasRelation data:Lady_Louise_Mountbatten-Windsor ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Louise_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Lady_Louise_Mountbatten-Windsor ;
+    :isSiblingOf data:Lady_Louise_Mountbatten-Windsor ;
+    :isSisterOf data:Lady_Louise_Mountbatten-Windsor .
+
+data:Prince_Christoph_of_Hesse-Kassel a :Man,
+        :Person ;
+    rdfs:label "Prince Christoph of Hesse-Kassel"^^xsd:string ;
+    data:posIndicesFull "10443:10468"^^xsd:string ;
+    data:wdtLink wdt:Q2314771 ;
+    :alsoKnownAs "Prince Christoph Ernst August of Hesse"^^xsd:string,
+        "Prince Christoph of Hesse"^^xsd:string ;
+    :hasBrother data:Prince_Christoph_of_Hesse-Kassel ;
+    :hasRelation data:Prince_Christoph_of_Hesse-Kassel ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Christoph_of_Hesse-Kassel ;
+    :isBrotherOf data:Prince_Christoph_of_Hesse-Kassel ;
+    :isSiblingOf data:Prince_Christoph_of_Hesse-Kassel .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "10850:10873"^^xsd:string,
+        "10855:10863"^^xsd:string,
+        "10855:10873"^^xsd:string,
+        "3877:3900"^^xsd:string,
+        "3882:3890"^^xsd:string,
+        "3882:3900"^^xsd:string ;
+    data:posIndicesPart "10092:10098"^^xsd:string,
+        "10891:10897"^^xsd:string,
+        "11169:11175"^^xsd:string,
+        "11935:11941"^^xsd:string,
+        "12097:12103"^^xsd:string,
+        "13406:13412"^^xsd:string,
+        "13634:13640"^^xsd:string,
+        "13945:13951"^^xsd:string,
+        "14223:14229"^^xsd:string,
+        "14490:14496"^^xsd:string,
+        "4175:4181"^^xsd:string,
+        "5011:5017"^^xsd:string,
+        "5673:5679"^^xsd:string,
+        "5784:5790"^^xsd:string,
+        "6481:6487"^^xsd:string,
+        "7076:7082"^^xsd:string,
+        "7574:7580"^^xsd:string,
+        "7768:7774"^^xsd:string,
+        "7778:7784"^^xsd:string,
+        "8108:8114"^^xsd:string,
+        "9791:9797"^^xsd:string,
+        "9907:9913"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Prince_Andrew_of_Greece_and_Denmark .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Olga Constantinovna of Russia"^^xsd:string ;
+    data:posIndicesFull "3905:3934"^^xsd:string ;
+    data:posIndicesPart "12626:12632"^^xsd:string,
+        "4154:4160"^^xsd:string,
+        "4559:4565"^^xsd:string,
+        "4608:4614"^^xsd:string,
+        "6727:6733"^^xsd:string ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece"^^xsd:string,
+        "Queen Olga of Greece"^^xsd:string ;
+    :hasChild data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :hasSon data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:William-_Prince_of_Wales ;
+    :isAuntOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Man,
+        :Person ;
+    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma"^^xsd:string ;
+    data:posIndicesFull "1969:1995"^^xsd:string,
+        "6339:6365"^^xsd:string,
+        "8789:8811"^^xsd:string,
+        "8794:8811"^^xsd:string,
+        "9351:9373"^^xsd:string,
+        "9356:9373"^^xsd:string ;
+    data:posIndicesPart "13133:13144"^^xsd:string,
+        "13155:13166"^^xsd:string,
+        "13170:13175"^^xsd:string,
+        "2089:2094"^^xsd:string,
+        "2370:2375"^^xsd:string,
+        "2450:2455"^^xsd:string,
+        "2518:2522"^^xsd:string,
+        "2523:2534"^^xsd:string,
+        "2538:2543"^^xsd:string,
+        "2712:2717"^^xsd:string,
+        "6630:6641"^^xsd:string,
+        "6950:6955"^^xsd:string ;
+    data:wdtLink wdt:Q157068 ;
+    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten"^^xsd:string,
+        "Lord Louis Mountbatten"^^xsd:string,
+        "Lord Mountbatten"^^xsd:string,
+        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma"^^xsd:string,
+        "Louis Mountbatten"^^xsd:string,
+        "Prince Louis of Battenberg"^^xsd:string,
+        "The Earl Mountbatten of Burma"^^xsd:string ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSex data:male ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBrotherOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSonOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "13475:13493"^^xsd:string,
+        "13481:13493"^^xsd:string,
+        "173:191"^^xsd:string,
+        "179:191"^^xsd:string ;
+    data:posIndicesPart "11876:11885"^^xsd:string,
+        "12000:12009"^^xsd:string,
+        "12245:12254"^^xsd:string,
+        "12589:12598"^^xsd:string,
+        "14173:14182"^^xsd:string,
+        "2838:2847"^^xsd:string,
+        "4697:4706"^^xsd:string,
+        "4902:4911"^^xsd:string,
+        "6752:6761"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasChild data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :hasDaughter data:Anne-_Princess_Royal ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :hasSon data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isAuntOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isMotherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isParentOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Prince_Harry-_Duke_of_Sussex a :Man,
+        :Person ;
+    rdfs:label "Prince Harry, Duke of Sussex"^^xsd:string ;
+    data:posIndicesFull "3520:3533"^^xsd:string ;
+    data:posIndicesPart "12076:12080"^^xsd:string,
+        "14459:14463"^^xsd:string,
+        "6525:6531"^^xsd:string,
+        "6963:6967"^^xsd:string,
+        "9727:9733"^^xsd:string ;
+    data:wdtLink wdt:Q152316 ;
+    :alsoKnownAs "Captain Wales"^^xsd:string,
+        "Harry Sussex"^^xsd:string,
+        "Harry Wales"^^xsd:string,
+        "Harry Windsor"^^xsd:string,
+        "Henry Charles Albert David"^^xsd:string,
+        "Henry Sussex"^^xsd:string,
+        "Henry Wales"^^xsd:string,
+        "Henry Windsor"^^xsd:string,
+        "Prince Harry"^^xsd:string,
+        "Prince Harry of Wales"^^xsd:string,
+        "Prince Henry"^^xsd:string,
+        "Prince Henry Charles Albert"^^xsd:string,
+        "Prince Henry Charles Albert David"^^xsd:string,
+        "Prince Henry of Wales"^^xsd:string,
+        "Prince Henry, Duke of Sussex"^^xsd:string,
+        "Prince Henry, Duke of Sussex, KCVO"^^xsd:string,
+        "The Prince Henry, Duke of Sussex"^^xsd:string ;
+    :hasAncestor data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :hasFather data:Charles_III ;
+    :hasParent data:Charles_III ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBrotherOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isChildOf data:Charles_III ;
+    :isSiblingOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isSonOf data:Charles_III .
+
+data:William-_Prince_of_Wales a :Man,
+        :Person ;
+    rdfs:label "William, Prince of Wales"^^xsd:string ;
+    data:posIndicesFull "14230:14237"^^xsd:string,
+        "4619:4633"^^xsd:string,
+        "4626:4633"^^xsd:string ;
+    data:posIndicesPart "6525:6531"^^xsd:string,
+        "9727:9733"^^xsd:string ;
+    data:wdtLink wdt:Q36812 ;
+    :alsoKnownAs "Bulliam"^^xsd:string,
+        "Prince William"^^xsd:string,
+        "Prince William Arthur Philip Louis of Wales"^^xsd:string,
+        "Prince William Arthur Philip Louis, Duke of Cambridge"^^xsd:string,
+        "Prince William of Wales"^^xsd:string,
+        "Prince William, Duke of Cambridge"^^xsd:string,
+        "William Arthur Philip Louis"^^xsd:string,
+        "William Arthur Philip Louis Mountbatten-Windsor"^^xsd:string,
+        "William Arthur Philip Louis, Prince of Wales"^^xsd:string,
+        "William Cambridge"^^xsd:string,
+        "William Wales"^^xsd:string,
+        "William Windsor"^^xsd:string ;
+    :hasAncestor data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :hasFather data:Charles_III ;
+    :hasParent data:Charles_III ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBrotherOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isChildOf data:Charles_III ;
+    :isSiblingOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isSonOf data:Charles_III .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Andrew of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "254:289"^^xsd:string,
+        "261:289"^^xsd:string,
+        "346:383"^^xsd:string,
+        "355:383"^^xsd:string,
+        "3786:3821"^^xsd:string,
+        "3793:3821"^^xsd:string ;
+    data:posIndicesPart "11169:11175"^^xsd:string,
+        "1188:1194"^^xsd:string,
+        "1225:1231"^^xsd:string,
+        "13406:13412"^^xsd:string,
+        "13634:13640"^^xsd:string,
+        "1378:1384"^^xsd:string,
+        "1424:1430"^^xsd:string,
+        "2224:2230"^^xsd:string,
+        "2731:2737"^^xsd:string,
+        "3487:3493"^^xsd:string,
+        "4162:4169"^^xsd:string,
+        "4175:4181"^^xsd:string,
+        "5011:5017"^^xsd:string,
+        "5784:5790"^^xsd:string,
+        "651:657"^^xsd:string,
+        "6525:6531"^^xsd:string,
+        "7076:7082"^^xsd:string,
+        "733:739"^^xsd:string,
+        "7574:7580"^^xsd:string,
+        "7778:7784"^^xsd:string,
+        "7789:7796"^^xsd:string,
+        "9727:9733"^^xsd:string,
+        "9791:9797"^^xsd:string,
+        "9907:9913"^^xsd:string ;
+    data:wdtLink wdt:Q156531 ;
+    :alsoKnownAs "Andrew of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isFatherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Victoria of Hesse and by Rhine"^^xsd:string ;
+    data:posIndicesFull "2010:2049"^^xsd:string,
+        "2019:2049"^^xsd:string ;
+    data:posIndicesPart "10326:10334"^^xsd:string,
+        "11084:11092"^^xsd:string,
+        "11867:11875"^^xsd:string,
+        "11991:11999"^^xsd:string,
+        "12420:12428"^^xsd:string,
+        "12733:12741"^^xsd:string,
+        "14214:14222"^^xsd:string,
+        "14481:14489"^^xsd:string,
+        "14876:14884"^^xsd:string,
+        "2113:2118"^^xsd:string,
+        "2124:2132"^^xsd:string,
+        "2244:2249"^^xsd:string,
+        "2257:2262"^^xsd:string,
+        "2336:2344"^^xsd:string,
+        "2395:2400"^^xsd:string,
+        "2724:2729"^^xsd:string,
+        "2751:2756"^^xsd:string,
+        "2764:2769"^^xsd:string,
+        "2782:2790"^^xsd:string,
+        "2888:2896"^^xsd:string,
+        "2965:2973"^^xsd:string,
+        "3192:3200"^^xsd:string,
+        "3645:3653"^^xsd:string,
+        "4261:4269"^^xsd:string,
+        "6971:6976"^^xsd:string,
+        "7759:7767"^^xsd:string,
+        "8330:8338"^^xsd:string,
+        "9886:9894"^^xsd:string ;
+    data:wdtLink wdt:Q57658 ;
+    :alsoKnownAs "Princess Victoria Alberta Elizabeth Mathilde Marie of Hesse and by Rhine"^^xsd:string,
+        "Princess Victoria, Marchioness of Milford Have"^^xsd:string,
+        "Victoria Alberta Elizabeth Mathilde Marie Mountbatten, Marchioness of Milford Haven"^^xsd:string,
+        "Victoria Alberta Elizabeth Mathilde Marie of Hesse and by Rhine"^^xsd:string,
+        "Victoria Milford Haven"^^xsd:string,
+        "Victoria of Hesse and by Rhine"^^xsd:string,
+        "Victoria, Marchioness of Milford Haven"^^xsd:string ;
+    :hasChild data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasDaughter data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasSon data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:William-_Prince_of_Wales ;
+    :isAuntOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isParentOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Princess_Victoria_of_Hesse_and_by_Rhine .
+
+data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven a :Man,
+        :Person ;
+    rdfs:label "George Mountbatten, 2nd Marquess of Milford Haven"^^xsd:string ;
+    data:posIndicesFull "8816:8865"^^xsd:string ;
+    data:posIndicesPart "10092:10098"^^xsd:string,
+        "10891:10897"^^xsd:string,
+        "11935:11941"^^xsd:string,
+        "12097:12103"^^xsd:string,
+        "13133:13144"^^xsd:string,
+        "13155:13166"^^xsd:string,
+        "13945:13951"^^xsd:string,
+        "14223:14229"^^xsd:string,
+        "14490:14496"^^xsd:string ;
+    data:wdtLink wdt:Q335129 ;
+    :alsoKnownAs "George Louis Victor Henry Serge Mountbatten, 2nd Marquess of Milford Haven"^^xsd:string,
+        "George Louis Victor Henry Serge Mountbatten, Earl of Medina"^^xsd:string,
+        "George Medina"^^xsd:string,
+        "George Milford Haven"^^xsd:string,
+        "George Mountbatten, Earl of Medina"^^xsd:string,
+        "Prince George Louis Victor Henry Serge of Battenberg"^^xsd:string,
+        "Prince George of Battenberg"^^xsd:string ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBrotherOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSonOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:Louise_Mountbatten a :Person,
+        :Woman ;
+    rdfs:label "Louise Mountbatten"^^xsd:string ;
+    data:posIndicesFull "1969:1995"^^xsd:string,
+        "1976:1995"^^xsd:string,
+        "6339:6365"^^xsd:string,
+        "6346:6365"^^xsd:string,
+        "8794:8811"^^xsd:string,
+        "9356:9373"^^xsd:string ;
+    data:posIndicesPart "10335:10341"^^xsd:string,
+        "13133:13144"^^xsd:string,
+        "13155:13166"^^xsd:string,
+        "2430:2436"^^xsd:string,
+        "2523:2534"^^xsd:string,
+        "6630:6641"^^xsd:string ;
+    data:wdtLink wdt:Q115477 ;
+    :alsoKnownAs "Countess of Gripsholm"^^xsd:string,
+        "Lady Louise Alexandra Marie Irene Mountbatten"^^xsd:string,
+        "Lady Louise Mountbatten"^^xsd:string,
+        "Louise Alexandra Marie Irene Mountbatten"^^xsd:string,
+        "Louise Alexandra Marie Irene of Battenberg"^^xsd:string,
+        "Louise of Battenberg"^^xsd:string,
+        "Louise of Sweden"^^xsd:string,
+        "Mrs Olsson"^^xsd:string,
+        "Princess Louise Alexandra Marie Irene of Battenberg"^^xsd:string,
+        "Princess Louise of Battenberg"^^xsd:string,
+        "Queen Louise of Sweden"^^xsd:string ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Andrew_Mountbatten-Windsor a :Man,
+        :Person ;
+    rdfs:label "Andrew Mountbatten-Windsor"^^xsd:string ;
+    data:posIndicesFull "10384:10399"^^xsd:string,
+        "10654:10669"^^xsd:string,
+        "11057:11072"^^xsd:string,
+        "11177:11192"^^xsd:string,
+        "11310:11325"^^xsd:string,
+        "11588:11603"^^xsd:string,
+        "11747:11762"^^xsd:string,
+        "12134:12149"^^xsd:string,
+        "12271:12286"^^xsd:string,
+        "12642:12657"^^xsd:string,
+        "12959:12974"^^xsd:string,
+        "13302:13317"^^xsd:string,
+        "13385:13400"^^xsd:string,
+        "13520:13535"^^xsd:string,
+        "13774:13789"^^xsd:string,
+        "14319:14334"^^xsd:string,
+        "1440:1455"^^xsd:string,
+        "14413:14428"^^xsd:string,
+        "254:267"^^xsd:string,
+        "346:361"^^xsd:string,
+        "3786:3799"^^xsd:string,
+        "4042:4057"^^xsd:string,
+        "4328:4343"^^xsd:string,
+        "4434:4447"^^xsd:string,
+        "4489:4504"^^xsd:string,
+        "4796:4811"^^xsd:string,
+        "5030:5045"^^xsd:string,
+        "5367:5380"^^xsd:string,
+        "5517:5530"^^xsd:string,
+        "5563:5578"^^xsd:string,
+        "5902:5917"^^xsd:string,
+        "6313:6328"^^xsd:string,
+        "6670:6685"^^xsd:string,
+        "6919:6934"^^xsd:string,
+        "7040:7055"^^xsd:string,
+        "7140:7153"^^xsd:string,
+        "7194:7207"^^xsd:string,
+        "7426:7439"^^xsd:string,
+        "7534:7549"^^xsd:string,
+        "7846:7861"^^xsd:string,
+        "8535:8550"^^xsd:string,
+        "8581:8594"^^xsd:string,
+        "8939:8954"^^xsd:string,
+        "9266:9279"^^xsd:string,
+        "9581:9596"^^xsd:string,
+        "963:978"^^xsd:string ;
+    data:posIndicesPart "13964:13971"^^xsd:string,
+        "1641:1648"^^xsd:string,
+        "1857:1864"^^xsd:string,
+        "2523:2534"^^xsd:string,
+        "3687:3694"^^xsd:string,
+        "444:451"^^xsd:string,
+        "6630:6641"^^xsd:string ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward"^^xsd:string,
+        "Andrew Albert Christian Edward Mountbatten-Windsor"^^xsd:string,
+        "Baron Killyleagh"^^xsd:string,
+        "Earl of Inverness"^^xsd:string,
+        "Prince Andrew"^^xsd:string,
+        "Prince Andrew of the United Kingdom"^^xsd:string,
+        "Prince Andrew, Duke of York"^^xsd:string,
+        "Randy Andy"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isSonOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isUncleOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales .
+
+data:Anne-_Princess_Royal a :Person,
+        :Woman ;
+    rdfs:label "Anne, Princess Royal"^^xsd:string ;
+    data:posIndicesFull "4317:4327"^^xsd:string,
+        "5019:5029"^^xsd:string,
+        "7029:7039"^^xsd:string,
+        "7523:7533"^^xsd:string ;
+    data:posIndicesPart "10326:10334"^^xsd:string,
+        "11084:11092"^^xsd:string,
+        "11148:11153"^^xsd:string,
+        "11867:11875"^^xsd:string,
+        "11991:11999"^^xsd:string,
+        "12420:12428"^^xsd:string,
+        "12733:12741"^^xsd:string,
+        "13620:13624"^^xsd:string,
+        "13927:13932"^^xsd:string,
+        "14214:14222"^^xsd:string,
+        "14481:14489"^^xsd:string,
+        "14876:14884"^^xsd:string,
+        "5698:5703"^^xsd:string,
+        "6147:6152"^^xsd:string,
+        "6258:6263"^^xsd:string,
+        "7759:7767"^^xsd:string,
+        "8330:8338"^^xsd:string,
+        "9703:9708"^^xsd:string,
+        "9886:9894"^^xsd:string,
+        "9984:9989"^^xsd:string ;
+    data:wdtLink wdt:Q151754 ;
+    :alsoKnownAs "Anne Elizabeth Alice Louise"^^xsd:string,
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor"^^xsd:string,
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor, Princess Royal of the United Kingdom"^^xsd:string,
+        "Anne Mountbatten-Windsor"^^xsd:string,
+        "Princess Anne"^^xsd:string,
+        "Princess Anne Elizabeth Alice Louise of Edinburgh"^^xsd:string,
+        "Princess Anne Elizabeth Alice Louise, Princess Royal"^^xsd:string,
+        "Princess Anne of Edinburgh"^^xsd:string,
+        "Princess Anne, Princess Royal"^^xsd:string,
+        "Princess Anne, The Princess Royal"^^xsd:string,
+        "The Princess Anne"^^xsd:string,
+        "The Princess Anne Elizabeth Alice Louise, Princess Royal"^^xsd:string,
+        "The Princess Anne, Princess Royal"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isAuntOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isDaughterOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isSisterOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Louis of Battenberg"^^xsd:string ;
+    data:posIndicesFull "1969:1995"^^xsd:string,
+        "1976:1995"^^xsd:string,
+        "6339:6365"^^xsd:string,
+        "6346:6365"^^xsd:string ;
+    data:posIndicesPart "2089:2094"^^xsd:string,
+        "2224:2230"^^xsd:string,
+        "2348:2358"^^xsd:string,
+        "2370:2375"^^xsd:string,
+        "2450:2455"^^xsd:string,
+        "2712:2717"^^xsd:string,
+        "2731:2737"^^xsd:string,
+        "2794:2804"^^xsd:string,
+        "3204:3214"^^xsd:string,
+        "3487:3493"^^xsd:string,
+        "6525:6531"^^xsd:string,
+        "6535:6545"^^xsd:string,
+        "6950:6955"^^xsd:string,
+        "9727:9733"^^xsd:string ;
+    data:wdtLink wdt:Q57468 ;
+    :alsoKnownAs "Count Alexander of Battenberg"^^xsd:string,
+        "Count Louis of Battenberg"^^xsd:string,
+        "Louis Alexander Mountbatten, 1st Marquess of Milford Haven"^^xsd:string,
+        "Louis Alexander of Battenberg"^^xsd:string,
+        "Louis Milford Haven"^^xsd:string,
+        "Louis Mountbatten, 1st Marquess of Milford Haven"^^xsd:string,
+        "Louis of Battenberg"^^xsd:string,
+        "Prince Louis Alexander of Battenberg"^^xsd:string,
+        "Sir Louis Alexander Mountbatten"^^xsd:string,
+        "Sir Louis Mountbatten"^^xsd:string ;
+    :hasBrother data:Prince_Louis_of_Battenberg ;
+    :hasChild data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasDaughter data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSon data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:Prince_Louis_of_Battenberg ;
+    :isBrotherOf data:Prince_Louis_of_Battenberg ;
+    :isFatherOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isParentOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "0:28"^^xsd:string,
+        "13572:13578"^^xsd:string,
+        "13768:13772"^^xsd:string,
+        "13850:13856"^^xsd:string,
+        "1502:1506"^^xsd:string,
+        "1521:1527"^^xsd:string,
+        "1781:1785"^^xsd:string,
+        "1787:1792"^^xsd:string,
+        "2133:2138"^^xsd:string,
+        "254:289"^^xsd:string,
+        "2559:2564"^^xsd:string,
+        "2580:2616"^^xsd:string,
+        "2589:2594"^^xsd:string,
+        "2975:2980"^^xsd:string,
+        "30:66"^^xsd:string,
+        "3314:3319"^^xsd:string,
+        "346:383"^^xsd:string,
+        "3776:3781"^^xsd:string,
+        "3786:3821"^^xsd:string,
+        "39:44"^^xsd:string,
+        "426:431"^^xsd:string,
+        "4986:4990"^^xsd:string,
+        "5468:5472"^^xsd:string,
+        "5965:5971"^^xsd:string,
+        "8366:8372"^^xsd:string,
+        "9458:9463"^^xsd:string,
+        "9:14"^^xsd:string,
+        "9:28"^^xsd:string ;
+    data:posIndicesPart "10326:10334"^^xsd:string,
+        "11084:11092"^^xsd:string,
+        "11867:11875"^^xsd:string,
+        "11991:11999"^^xsd:string,
+        "12420:12428"^^xsd:string,
+        "12733:12741"^^xsd:string,
+        "14214:14222"^^xsd:string,
+        "14481:14489"^^xsd:string,
+        "14876:14884"^^xsd:string,
+        "2336:2344"^^xsd:string,
+        "2348:2358"^^xsd:string,
+        "2782:2790"^^xsd:string,
+        "2794:2804"^^xsd:string,
+        "2888:2896"^^xsd:string,
+        "3192:3200"^^xsd:string,
+        "3204:3214"^^xsd:string,
+        "523:531"^^xsd:string,
+        "566:576"^^xsd:string,
+        "6535:6545"^^xsd:string,
+        "7759:7767"^^xsd:string,
+        "8330:8338"^^xsd:string,
+        "9886:9894"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasAncestor data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasParent data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:female ;
+    :hasSister data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:William-_Prince_of_Wales ;
+    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isDaughterOf data:Prince_Louis_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Charles_III a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Charles III"^^xsd:string ;
+    data:posIndicesFull "221:233"^^xsd:string,
+        "221:237"^^xsd:string,
+        "226:237"^^xsd:string ;
+    data:wdtLink wdt:Q43274 ;
+    :alsoKnownAs "C III"^^xsd:string,
+        "Charles III of England"^^xsd:string,
+        "Charles III of the United Kingdom"^^xsd:string,
+        "Charles Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George"^^xsd:string,
+        "Charles Philip Arthur George Mountbatten-Windsor"^^xsd:string,
+        "Charles Philip Arthur George Windsor"^^xsd:string,
+        "Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Charles Wales"^^xsd:string,
+        "Charles Windsor"^^xsd:string,
+        "Charles the Third"^^xsd:string,
+        "HM King Charles III"^^xsd:string,
+        "His Majesty"^^xsd:string,
+        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith"^^xsd:string,
+        "His Majesty The King"^^xsd:string,
+        "His Royal Highness Charles III of Great Britain"^^xsd:string,
+        "King Charles"^^xsd:string,
+        "King Charles III"^^xsd:string,
+        "King of England"^^xsd:string,
+        "Prince Charles"^^xsd:string,
+        "Prince Charles Philip Arthur George of Edinburgh"^^xsd:string,
+        "Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "Prince Charles of Edinburgh"^^xsd:string,
+        "Prince Charles, Duke of Rothesay"^^xsd:string,
+        "Prince Charles, Prince of Wales"^^xsd:string,
+        "The Prince Charles Philip Arthur George, Prince of Wales"^^xsd:string,
+        "The Prince Charles, Prince of Wales"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :hasChild data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :hasSon data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isAncestorOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isFatherOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isParentOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isSonOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isUncleOf data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "122:135"^^xsd:string,
+        "122:154"^^xsd:string,
+        "13498:13511"^^xsd:string,
+        "14716:14729"^^xsd:string,
+        "8714:8727"^^xsd:string,
+        "9333:9346"^^xsd:string ;
+    data:posIndicesPart "11856:11862"^^xsd:string,
+        "12076:12080"^^xsd:string,
+        "12084:12093"^^xsd:string,
+        "14459:14463"^^xsd:string,
+        "14467:14476"^^xsd:string,
+        "2105:2109"^^xsd:string,
+        "2224:2230"^^xsd:string,
+        "2387:2391"^^xsd:string,
+        "2707:2711"^^xsd:string,
+        "2731:2737"^^xsd:string,
+        "3487:3493"^^xsd:string,
+        "3502:3506"^^xsd:string,
+        "4405:4411"^^xsd:string,
+        "6525:6531"^^xsd:string,
+        "6963:6967"^^xsd:string,
+        "9727:9733"^^xsd:string ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip"^^xsd:string,
+        "H.R.H. The Duke Of Edinburgh"^^xsd:string,
+        "Lieutenant Philip Mountbatten"^^xsd:string,
+        "Philip Edinburgh"^^xsd:string,
+        "Philip Mountbatten"^^xsd:string,
+        "Philip Mountbatten; Prince Philip of Greece and Denmark"^^xsd:string,
+        "Philip of Greece and Denmark"^^xsd:string,
+        "Prince Philip"^^xsd:string,
+        "Prince Philip of Greece and Denmark"^^xsd:string,
+        "The Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasChild data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :hasDaughter data:Anne-_Princess_Royal ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Elizabeth_II,
+        data:George_I_of_Greece,
+        data:George_Mountbatten-_2nd_Marquess_of_Milford_Haven,
+        data:Louise_Mountbatten,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg,
+        data:Princess_Victoria_of_Hesse_and_by_Rhine,
+        data:William-_Prince_of_Wales ;
+    :hasSex data:male ;
+    :hasSon data:Andrew_Mountbatten-Windsor,
+        data:Charles_III ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III,
+        data:Prince_Harry-_Duke_of_Sussex,
+        data:William-_Prince_of_Wales ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isFatherOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isParentOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSonOf data:Prince_Andrew_of_Greece_and_Denmark,
+        data:Princess_Alice_of_Battenberg ;
+    :isUncleOf data:Andrew_Mountbatten-Windsor,
+        data:Anne-_Princess_Royal,
+        data:Charles_III .
+

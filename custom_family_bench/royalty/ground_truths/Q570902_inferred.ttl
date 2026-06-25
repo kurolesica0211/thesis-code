@@ -1,0 +1,147 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Count_Ingolf_of_Rosenborg a :Man,
+        :Person ;
+    rdfs:label "Count Ingolf of Rosenborg"^^xsd:string ;
+    data:posIndicesFull "0:25"^^xsd:string,
+        "102:119"^^xsd:string,
+        "530:554"^^xsd:string,
+        "537:554"^^xsd:string,
+        "6:25"^^xsd:string,
+        "95:119"^^xsd:string ;
+    data:posIndicesPart "1005:1011"^^xsd:string,
+        "1236:1242"^^xsd:string,
+        "135:141"^^xsd:string,
+        "1422:1428"^^xsd:string,
+        "1667:1673"^^xsd:string,
+        "2066:2071"^^xsd:string,
+        "2283:2289"^^xsd:string,
+        "2310:2315"^^xsd:string,
+        "2319:2328"^^xsd:string,
+        "2527:2533"^^xsd:string,
+        "2697:2706"^^xsd:string,
+        "2762:2768"^^xsd:string,
+        "2851:2857"^^xsd:string,
+        "2912:2917"^^xsd:string,
+        "2921:2930"^^xsd:string,
+        "2994:3000"^^xsd:string,
+        "3470:3479"^^xsd:string,
+        "3518:3524"^^xsd:string,
+        "3577:3586"^^xsd:string,
+        "3647:3652"^^xsd:string,
+        "3653:3659"^^xsd:string,
+        "4394:4399"^^xsd:string,
+        "4400:4406"^^xsd:string,
+        "4521:4527"^^xsd:string,
+        "4654:4660"^^xsd:string,
+        "4678:4684"^^xsd:string,
+        "649:655"^^xsd:string,
+        "853:859"^^xsd:string ;
+    data:wdtLink wdt:Q570902 ;
+    :alsoKnownAs "Count Ingolf Christian Frederik Knud Harald Gorm Gustav Viggo Valdemar Aage of Rosenborg"^^xsd:string,
+        "Ingolf Christian Frederik Knud Harald Gorm Gustav Viggo Valdemar Aage of Denmark"^^xsd:string,
+        "Ingolf Christian Frederik Knud Harald Gorm Gustav Viggo Valdemar Aage of Rosenborg"^^xsd:string,
+        "Ingolf of Denmark"^^xsd:string,
+        "Ingolf of Rosenborg"^^xsd:string,
+        "Ingolf zu Schleswig-Holstein-Sonderburg-Glücksburg, Prince of Denmark"^^xsd:string,
+        "Prince Ingolf Christian Frederik Knud Harald Gorm Gustav Viggo Valdemar Aage of Denmark"^^xsd:string,
+        "Prince Ingolf of Denmark"^^xsd:string ;
+    :hasBrother data:Count_Ingolf_of_Rosenborg ;
+    :hasRelation data:Count_Ingolf_of_Rosenborg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Count_Ingolf_of_Rosenborg ;
+    :isBrotherOf data:Count_Ingolf_of_Rosenborg ;
+    :isSiblingOf data:Count_Ingolf_of_Rosenborg .
+
+data:Princess_Elisabeth_of_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Elisabeth of Denmark"^^xsd:string ;
+    data:posIndicesFull "4363:4392"^^xsd:string ;
+    data:posIndicesPart "4617:4625"^^xsd:string,
+        "4640:4647"^^xsd:string,
+        "4793:4801"^^xsd:string,
+        "4802:4811"^^xsd:string ;
+    data:wdtLink wdt:Q242691 ;
+    :alsoKnownAs "Elisabeth zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark"^^xsd:string ;
+    :hasRelation data:Princess_Elisabeth_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Elisabeth_of_Denmark ;
+    :isBloodrelationOf data:Princess_Elisabeth_of_Denmark ;
+    :isSiblingOf data:Princess_Elisabeth_of_Denmark ;
+    :isSisterOf data:Princess_Elisabeth_of_Denmark .
+
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Christian X of Denmark"^^xsd:string ;
+    data:posIndicesFull "625:636"^^xsd:string,
+        "625:647"^^xsd:string ;
+    data:posIndicesPart "2952:2961"^^xsd:string,
+        "3245:3252"^^xsd:string,
+        "3509:3516"^^xsd:string,
+        "3623:3632"^^xsd:string,
+        "4640:4647"^^xsd:string,
+        "952:959"^^xsd:string ;
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm"^^xsd:string,
+        "Christian X"^^xsd:string ;
+    :hasBrother data:Christian_X_of_Denmark ;
+    :hasChild data:Frederik_IX_of_Denmark ;
+    :hasRelation data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Frederik_IX_of_Denmark ;
+    :isAncestorOf data:Frederik_IX_of_Denmark ;
+    :isBloodrelationOf data:Christian_X_of_Denmark ;
+    :isBrotherOf data:Christian_X_of_Denmark ;
+    :isFatherOf data:Frederik_IX_of_Denmark ;
+    :isParentOf data:Frederik_IX_of_Denmark ;
+    :isSiblingOf data:Christian_X_of_Denmark ;
+    :isUncleOf data:Frederik_IX_of_Denmark .
+
+data:Frederik_IX_of_Denmark a :Man,
+        :Person ;
+    rdfs:label "Frederik IX of Denmark"^^xsd:string ;
+    data:posIndicesFull "1717:1728"^^xsd:string,
+        "873:884"^^xsd:string ;
+    data:posIndicesPart "3245:3252"^^xsd:string,
+        "3509:3516"^^xsd:string,
+        "3805:3813"^^xsd:string,
+        "4640:4647"^^xsd:string,
+        "952:959"^^xsd:string ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg"^^xsd:string,
+        "Frederick IX"^^xsd:string,
+        "Frederik IX"^^xsd:string,
+        "King Frederick IX of Denmark"^^xsd:string,
+        "King Frederik IX of Denmark"^^xsd:string ;
+    :hasAncestor data:Christian_X_of_Denmark ;
+    :hasBrother data:Frederik_IX_of_Denmark ;
+    :hasFather data:Christian_X_of_Denmark ;
+    :hasParent data:Christian_X_of_Denmark ;
+    :hasRelation data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Frederik_IX_of_Denmark ;
+    :isBrotherOf data:Frederik_IX_of_Denmark ;
+    :isChildOf data:Christian_X_of_Denmark ;
+    :isSiblingOf data:Frederik_IX_of_Denmark ;
+    :isSonOf data:Christian_X_of_Denmark .
+

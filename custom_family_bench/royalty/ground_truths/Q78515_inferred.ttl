@@ -1,0 +1,154 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Baroness_Francesca_Thyssen-Bornemisza a :Person,
+        :Woman ;
+    rdfs:label "Baroness Francesca Thyssen-Bornemisza"^^xsd:string ;
+    data:posIndicesFull "4184:4221"^^xsd:string,
+        "4193:4221"^^xsd:string ;
+    data:posIndicesPart "4604:4612"^^xsd:string,
+        "4814:4823"^^xsd:string ;
+    data:wdtLink wdt:Q1276954 ;
+    :alsoKnownAs "Baroness Francesca von Thyssen-Bornemisza"^^xsd:string,
+        "Francesca Thyssen-Bornemisza"^^xsd:string,
+        "Francesca von Habsburg"^^xsd:string,
+        "Franziska Baronin von Thyssen-Bornemisza"^^xsd:string ;
+    :hasRelation data:Baroness_Francesca_Thyssen-Bornemisza ;
+    :hasSex data:female ;
+    :hasSister data:Baroness_Francesca_Thyssen-Bornemisza ;
+    :isBloodrelationOf data:Baroness_Francesca_Thyssen-Bornemisza ;
+    :isSiblingOf data:Baroness_Francesca_Thyssen-Bornemisza ;
+    :isSisterOf data:Baroness_Francesca_Thyssen-Bornemisza .
+
+data:Otto_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Otto von Habsburg"^^xsd:string ;
+    data:posIndicesFull "1002:1019"^^xsd:string,
+        "345:362"^^xsd:string ;
+    data:posIndicesPart "1304:1312"^^xsd:string,
+        "1615:1623"^^xsd:string,
+        "1804:1812"^^xsd:string,
+        "1937:1945"^^xsd:string,
+        "2103:2111"^^xsd:string,
+        "2184:2192"^^xsd:string,
+        "2275:2283"^^xsd:string,
+        "2551:2559"^^xsd:string,
+        "2779:2787"^^xsd:string,
+        "2913:2921"^^xsd:string,
+        "3187:3195"^^xsd:string,
+        "3308:3316"^^xsd:string,
+        "3505:3513"^^xsd:string,
+        "3913:3921"^^xsd:string,
+        "3991:3999"^^xsd:string,
+        "4518:4526"^^xsd:string,
+        "468:476"^^xsd:string,
+        "4961:4969"^^xsd:string,
+        "5107:5115"^^xsd:string,
+        "5552:5560"^^xsd:string,
+        "573:581"^^xsd:string,
+        "5775:5783"^^xsd:string,
+        "6034:6042"^^xsd:string,
+        "739:747"^^xsd:string ;
+    data:wdtLink wdt:Q76343 ;
+    :alsoKnownAs "Crown Prince Otto of Austria"^^xsd:string,
+        "Otto, Crown Prince of Austria"^^xsd:string ;
+    :hasBrother data:Otto_von_Habsburg ;
+    :hasChild data:Karl_von_Habsburg ;
+    :hasRelation data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :hasSon data:Karl_von_Habsburg ;
+    :isAncestorOf data:Karl_von_Habsburg ;
+    :isBloodrelationOf data:Otto_von_Habsburg ;
+    :isBrotherOf data:Otto_von_Habsburg ;
+    :isFatherOf data:Karl_von_Habsburg ;
+    :isParentOf data:Karl_von_Habsburg ;
+    :isSiblingOf data:Otto_von_Habsburg ;
+    :isUncleOf data:Karl_von_Habsburg .
+
+data:Karl_von_Habsburg a :Man,
+        :Person ;
+    rdfs:label "Karl von Habsburg"^^xsd:string ;
+    data:posIndicesFull "0:17"^^xsd:string,
+        "4993:5010"^^xsd:string,
+        "5300:5317"^^xsd:string,
+        "6085:6102"^^xsd:string,
+        "6142:6159"^^xsd:string ;
+    data:posIndicesPart "1144:1148"^^xsd:string,
+        "1304:1312"^^xsd:string,
+        "1610:1614"^^xsd:string,
+        "1615:1623"^^xsd:string,
+        "1804:1812"^^xsd:string,
+        "1932:1936"^^xsd:string,
+        "1937:1945"^^xsd:string,
+        "2103:2111"^^xsd:string,
+        "2154:2158"^^xsd:string,
+        "2184:2192"^^xsd:string,
+        "2203:2207"^^xsd:string,
+        "2275:2283"^^xsd:string,
+        "2546:2550"^^xsd:string,
+        "2551:2559"^^xsd:string,
+        "2774:2778"^^xsd:string,
+        "2779:2787"^^xsd:string,
+        "2913:2921"^^xsd:string,
+        "300:304"^^xsd:string,
+        "305:313"^^xsd:string,
+        "3187:3195"^^xsd:string,
+        "326:330"^^xsd:string,
+        "3308:3316"^^xsd:string,
+        "3505:3513"^^xsd:string,
+        "3913:3921"^^xsd:string,
+        "3991:3999"^^xsd:string,
+        "4479:4483"^^xsd:string,
+        "4518:4526"^^xsd:string,
+        "463:467"^^xsd:string,
+        "468:476"^^xsd:string,
+        "4805:4809"^^xsd:string,
+        "4882:4886"^^xsd:string,
+        "4961:4969"^^xsd:string,
+        "5102:5106"^^xsd:string,
+        "5107:5115"^^xsd:string,
+        "5552:5560"^^xsd:string,
+        "568:572"^^xsd:string,
+        "573:581"^^xsd:string,
+        "5770:5774"^^xsd:string,
+        "5775:5783"^^xsd:string,
+        "6034:6042"^^xsd:string,
+        "734:738"^^xsd:string,
+        "739:747"^^xsd:string,
+        "848:852"^^xsd:string,
+        "875:879"^^xsd:string,
+        "949:957"^^xsd:string,
+        "987:991"^^xsd:string ;
+    data:wdtLink wdt:Q78515 ;
+    :alsoKnownAs "Karl Thomas Erzherzog von Österreich"^^xsd:string ;
+    :hasAncestor data:Otto_von_Habsburg ;
+    :hasBrother data:Karl_von_Habsburg ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasParent data:Otto_von_Habsburg ;
+    :hasRelation data:Karl_von_Habsburg,
+        data:Otto_von_Habsburg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Karl_von_Habsburg ;
+    :isBrotherOf data:Karl_von_Habsburg ;
+    :isChildOf data:Otto_von_Habsburg ;
+    :isSiblingOf data:Karl_von_Habsburg ;
+    :isSonOf data:Otto_von_Habsburg .
+

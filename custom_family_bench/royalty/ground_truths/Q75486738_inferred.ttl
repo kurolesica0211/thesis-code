@@ -1,0 +1,131 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Constantine II of Greece"^^xsd:string ;
+    data:posIndicesFull "134:148"^^xsd:string,
+        "455:471"^^xsd:string,
+        "460:474"^^xsd:string ;
+    data:posIndicesPart "2729:2735"^^xsd:string,
+        "562:568"^^xsd:string,
+        "883:889"^^xsd:string ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece"^^xsd:string,
+        "Constantine Glucksburg"^^xsd:string,
+        "Constantine II"^^xsd:string,
+        "Constantino de Grecia"^^xsd:string,
+        "King Constantine"^^xsd:string,
+        "Konstantinos 2"^^xsd:string,
+        "Konstantinos II"^^xsd:string,
+        "Konstantinos II of Greece"^^xsd:string,
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes"^^xsd:string,
+        "Konstantínos 2"^^xsd:string,
+        "Konstantínos II"^^xsd:string ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasChild data:Princess_Alexia_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Alexia_of_Greece_and_Denmark ;
+    :hasRelation data:Carlos_Morales_y_de_Grecia,
+        data:Constantine_II_of_Greece,
+        data:Princess_Alexia_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isAncestorOf data:Carlos_Morales_y_de_Grecia,
+        data:Princess_Alexia_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isFatherOf data:Princess_Alexia_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Alexia_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_II_of_Greece ;
+    :isUncleOf data:Princess_Alexia_of_Greece_and_Denmark .
+
+data:Carlos_Morales_y_de_Grecia a :Man,
+        :Person ;
+    rdfs:label "Carlos Morales y de Grecia"^^xsd:string ;
+    data:wdtLink wdt:Q75486738 ;
+    :hasAncestor data:Constantine_II_of_Greece,
+        data:Princess_Alexia_of_Greece_and_Denmark ;
+    :hasBrother data:Carlos_Morales_y_de_Grecia ;
+    :hasMother data:Princess_Alexia_of_Greece_and_Denmark ;
+    :hasParent data:Princess_Alexia_of_Greece_and_Denmark ;
+    :hasRelation data:Carlos_Morales_y_de_Grecia,
+        data:Constantine_II_of_Greece,
+        data:Princess_Alexia_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Carlos_Morales_y_de_Grecia ;
+    :isBrotherOf data:Carlos_Morales_y_de_Grecia ;
+    :isChildOf data:Princess_Alexia_of_Greece_and_Denmark ;
+    :isSiblingOf data:Carlos_Morales_y_de_Grecia ;
+    :isSonOf data:Princess_Alexia_of_Greece_and_Denmark .
+
+data:Princess_Alexia_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alexia of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "0:37"^^xsd:string,
+        "9:37"^^xsd:string ;
+    data:posIndicesPart "1232:1239"^^xsd:string,
+        "1251:1257"^^xsd:string,
+        "1351:1358"^^xsd:string,
+        "1441:1447"^^xsd:string,
+        "1589:1595"^^xsd:string,
+        "1823:1829"^^xsd:string,
+        "1988:1994"^^xsd:string,
+        "2063:2069"^^xsd:string,
+        "2071:2077"^^xsd:string,
+        "2158:2164"^^xsd:string,
+        "2242:2248"^^xsd:string,
+        "2301:2307"^^xsd:string,
+        "2450:2458"^^xsd:string,
+        "2479:2487"^^xsd:string,
+        "2507:2515"^^xsd:string,
+        "265:271"^^xsd:string,
+        "2729:2735"^^xsd:string,
+        "2800:2806"^^xsd:string,
+        "3025:3031"^^xsd:string,
+        "562:568"^^xsd:string,
+        "598:605"^^xsd:string,
+        "756:762"^^xsd:string,
+        "883:889"^^xsd:string ;
+    data:wdtLink wdt:Q242348 ;
+    :alsoKnownAs "Alexia de Grecia"^^xsd:string,
+        "Alexia of Greece and Denmark"^^xsd:string,
+        "Alexia zu Schleswig-Holstein-Sonderburg-Glücksburg, Crown Princess of Greece"^^xsd:string,
+        "Princess Alexia, Mrs Morales"^^xsd:string,
+        "Princess Alexia, Mrs. Morales"^^xsd:string ;
+    :hasAncestor data:Constantine_II_of_Greece ;
+    :hasChild data:Carlos_Morales_y_de_Grecia ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasParent data:Constantine_II_of_Greece ;
+    :hasRelation data:Carlos_Morales_y_de_Grecia,
+        data:Constantine_II_of_Greece,
+        data:Princess_Alexia_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alexia_of_Greece_and_Denmark ;
+    :hasSon data:Carlos_Morales_y_de_Grecia ;
+    :isAncestorOf data:Carlos_Morales_y_de_Grecia ;
+    :isAuntOf data:Carlos_Morales_y_de_Grecia ;
+    :isBloodrelationOf data:Princess_Alexia_of_Greece_and_Denmark ;
+    :isChildOf data:Constantine_II_of_Greece ;
+    :isDaughterOf data:Constantine_II_of_Greece ;
+    :isMotherOf data:Carlos_Morales_y_de_Grecia ;
+    :isParentOf data:Carlos_Morales_y_de_Grecia ;
+    :isSiblingOf data:Princess_Alexia_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Alexia_of_Greece_and_Denmark .
+

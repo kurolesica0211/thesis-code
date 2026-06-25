@@ -7,32 +7,36 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:Alfonso-_Prince_of_Asturias a :Person ;
+    rdfs:label "Alfonso, Prince of Asturias" ;
+    data:posIndicesFull "494:521",
+        "62:92" ;
+    data:posIndicesPart "1747:1754",
+        "651:657",
+        "661:669" ;
+    data:wdtLink wdt:Q518846 ;
+    :alsoKnownAs "Alfons de Borbo i de Battenberg",
+        "Alfons de Borbó i de Battenberg",
+        "Alfonso Pius de Borbón y Battenberg, Infante de España",
+        "Alfonso de Borbon y Battenberg",
+        "Alfonso de Borbón y Battenberg",
+        "Alfonso, Count of Covadonga",
+        "Alphonse de Bourbon",
+        "Infante Alfonso, Count of Covadonga" ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male .
 
-data:posIndicesPart a owl:AnnotationProperty .
+data:Infante_Jaime-_Duke_of_Segovia a :Person ;
+    rdfs:label "Infante Jaime, Duke of Segovia" ;
+    data:posIndicesFull "527:557" ;
+    data:posIndicesPart "1759:1764" ;
+    data:wdtLink wdt:Q703780 ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male .
 
-data:wdtLink a owl:AnnotationProperty .
-
-data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta María de las Mercedes, Countess of Barcelona" ;
-    data:posIndicesFull "726:780" ;
-    data:posIndicesPart "1879:1888",
-        "3018:3027" ;
-    data:wdtLink wdt:Q235128 ;
-    :alsoKnownAs "Princess Maria de las Mercedes of Bourbon-Two Sicilies" ;
-    :hasChild data:Juan_Carlos_I_of_Spain ;
-    :hasSex data:female ;
-    :hasSon data:Juan_Carlos_I_of_Spain ;
-    :isMotherOf data:Juan_Carlos_I_of_Spain ;
-    :isParentOf data:Juan_Carlos_I_of_Spain .
-
-data:Juan_Carlos_I_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Juan_Carlos_I_of_Spain a :Person ;
     rdfs:label "Juan Carlos I of Spain" ;
     data:posIndicesFull "283:296" ;
     data:posIndicesPart "1113:1117",
@@ -63,137 +67,26 @@ data:Juan_Carlos_I_of_Spain a :Ancestor,
     data:wdtLink wdt:Q19943 ;
     :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
         "Juan Carlos I" ;
-    :hasFather data:Infante_Juan-_Count_of_Barcelona ;
-    :hasMother data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona ;
     :hasParent data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
         data:Infante_Juan-_Count_of_Barcelona ;
-    :hasSex data:male ;
-    :isChildOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isSonOf data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona,
-        data:Infante_Juan-_Count_of_Barcelona .
+    :hasSex data:male .
 
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alfonso XIII" ;
-    data:posIndicesFull "223:235" ;
-    data:posIndicesPart "1747:1754" ;
-    data:wdtLink wdt:Q18363 ;
-    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
-        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
-        "Alfonso XIII of Spain",
-        "Don Alfonso de Borbon y Habsburgo",
-        "Don Alfonso de Borbón y Habsburgo",
-        "The African" ;
-    :hasChild data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :hasSex data:male ;
-    :hasSon data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isFatherOf data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isParentOf data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Victoria_Eugenie_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Victoria Eugenie of Battenberg" ;
-    data:posIndicesFull "240:270" ;
-    data:posIndicesPart "1056:1064",
-        "1065:1072" ;
-    data:wdtLink wdt:Q160001 ;
-    :alsoKnownAs "Ena",
-        "Princess Ena",
-        "Princess Victoria Eugenie of Battenberg",
-        "Queen Victoria Eugenie of Spain",
-        "Victoria Eugenie Julia Ena of Battenberg",
-        "Victoria Eugenie, Queen of Spain" ;
-    :hasChild data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :hasSex data:female ;
-    :hasSon data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isMotherOf data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isParentOf data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona .
+data:posIndicesPart a owl:AnnotationProperty .
 
-data:Alfonso-_Prince_of_Asturias a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alfonso, Prince of Asturias" ;
-    data:posIndicesFull "494:521",
-        "62:92" ;
-    data:posIndicesPart "1747:1754",
-        "651:657",
-        "661:669" ;
-    data:wdtLink wdt:Q518846 ;
-    :alsoKnownAs "Alfons de Borbo i de Battenberg",
-        "Alfons de Borbó i de Battenberg",
-        "Alfonso Pius de Borbón y Battenberg, Infante de España",
-        "Alfonso de Borbon y Battenberg",
-        "Alfonso de Borbón y Battenberg",
-        "Alfonso, Count of Covadonga",
-        "Alphonse de Bourbon",
-        "Infante Alfonso, Count of Covadonga" ;
-    :hasBrother data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :hasFather data:Alfonso_XIII ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg ;
-    :hasParent data:Alfonso_XIII,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :hasSex data:male ;
-    :isBrotherOf data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isChildOf data:Alfonso_XIII,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :isSiblingOf data:Infante_Jaime-_Duke_of_Segovia,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isSonOf data:Alfonso_XIII,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :isUncleOf data:Juan_Carlos_I_of_Spain .
+data:wdtLink a owl:AnnotationProperty .
 
-data:Infante_Jaime-_Duke_of_Segovia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Infante Jaime, Duke of Segovia" ;
-    data:posIndicesFull "527:557" ;
-    data:posIndicesPart "1759:1764" ;
-    data:wdtLink wdt:Q703780 ;
-    :hasBrother data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :hasFather data:Alfonso_XIII ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg ;
-    :hasParent data:Alfonso_XIII,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :hasSex data:male ;
-    :isBrotherOf data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isChildOf data:Alfonso_XIII,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :isSiblingOf data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Juan-_Count_of_Barcelona ;
-    :isSonOf data:Alfonso_XIII,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :isUncleOf data:Juan_Carlos_I_of_Spain .
+data:Infanta_María_de_las_Mercedes-_Countess_of_Barcelona a :Person ;
+    rdfs:label "Infanta María de las Mercedes, Countess of Barcelona" ;
+    data:posIndicesFull "726:780" ;
+    data:posIndicesPart "1879:1888",
+        "3018:3027" ;
+    data:wdtLink wdt:Q235128 ;
+    :alsoKnownAs "Princess Maria de las Mercedes of Bourbon-Two Sicilies" ;
+    :hasSex data:female .
 
-data:Infante_Juan-_Count_of_Barcelona a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Infante_Juan-_Count_of_Barcelona a :Person ;
     rdfs:label "Infante Juan, Count of Barcelona" ;
     data:posIndicesFull "0:32" ;
     data:posIndicesPart "1113:1117",
@@ -221,23 +114,38 @@ data:Infante_Juan-_Count_of_Barcelona a :Ancestor,
         "567:571" ;
     data:wdtLink wdt:Q313857 ;
     :alsoKnownAs "Infante Juan of Barcelona" ;
-    :hasBrother data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia ;
-    :hasChild data:Juan_Carlos_I_of_Spain ;
-    :hasFather data:Alfonso_XIII ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg ;
     :hasParent data:Alfonso_XIII,
         data:Victoria_Eugenie_of_Battenberg ;
-    :hasSex data:male ;
-    :hasSon data:Juan_Carlos_I_of_Spain ;
-    :isBrotherOf data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia ;
-    :isChildOf data:Alfonso_XIII,
-        data:Victoria_Eugenie_of_Battenberg ;
-    :isFatherOf data:Juan_Carlos_I_of_Spain ;
-    :isParentOf data:Juan_Carlos_I_of_Spain ;
-    :isSiblingOf data:Alfonso-_Prince_of_Asturias,
-        data:Infante_Jaime-_Duke_of_Segovia ;
-    :isSonOf data:Alfonso_XIII,
-        data:Victoria_Eugenie_of_Battenberg .
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:Alfonso_XIII a :Person ;
+    rdfs:label "Alfonso XIII" ;
+    data:posIndicesFull "223:235" ;
+    data:posIndicesPart "1747:1754" ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
+        "Alfonso XIII of Spain",
+        "Don Alfonso de Borbon y Habsburgo",
+        "Don Alfonso de Borbón y Habsburgo",
+        "The African" ;
+    :hasSex data:male .
+
+data:Victoria_Eugenie_of_Battenberg a :Person ;
+    rdfs:label "Victoria Eugenie of Battenberg" ;
+    data:posIndicesFull "240:270" ;
+    data:posIndicesPart "1056:1064",
+        "1065:1072" ;
+    data:wdtLink wdt:Q160001 ;
+    :alsoKnownAs "Ena",
+        "Princess Ena",
+        "Princess Victoria Eugenie of Battenberg",
+        "Queen Victoria Eugenie of Spain",
+        "Victoria Eugenie Julia Ena of Battenberg",
+        "Victoria Eugenie, Queen of Spain" ;
+    :hasSex data:female .
+
+data:male a :Male .
 

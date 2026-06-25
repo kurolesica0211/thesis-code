@@ -2,35 +2,66 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Michael_Bowes-Lyon a :Man,
-        :Person ;
-    :hasFather data:Fergus_Michael_Claude_Bowes-Lyon ;
-    :hasMother data:Mary_Pamela_McCorquodale .
+data:Adalbert_of_Bavaria a :Ancestor,
+        :Man .
 
-data:Elizabeth_Margaret_Cator a :Ancestor,
-        :Person,
+data:Alfonso_XIII a :Ancestor,
+        :Man .
+
+data:Mar%C3%ADa_de_la_Paz_of_Spain a :Ancestor,
+        :Woman .
+
+data:Mar%C3%ADa_de_las_Mercedes_of_Bavaria a :Person,
         :Woman ;
-    :hasFather data:John_Cator .
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Ferdinand_of_Bavaria ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:Mar%C3%ADa_Teresa_of_Spain ;
+    :hasRelation data:Irakli_Bagration_of_Mukhrani ;
+    :isSiblingOf data:Jos%C3%A9_Eugenio,
+        data:Luis_Alfonso,
+        data:Mar%C3%ADa_del_Pilar .
 
-data:Fergus_Michael_Claude_Bowes-Lyon a :Ancestor,
-        :Man,
+data:Alfonso_XII a :Ancestor,
+        :Man .
+
+data:Ferdinand_of_Bavaria a :Ancestor,
+        :Man ;
+    :hasAncestor data:Isabella_II_of_Spain .
+
+data:Irakli_Bagration_of_Mukhrani a :Man,
         :Person ;
-    :hasBirthYear 1928 ;
-    :hasDeathYear 1987 ;
-    :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;
-    :hasMarriageYear 1956 ;
-    :hasMother data:Elizabeth_Margaret_Cator ;
-    :hasRelation data:Mary_Pamela_McCorquodale .
+    :isSiblingOf data:Leonida .
 
-data:John_Cator a :Ancestor,
-        :Man,
+data:Jos%C3%A9_Eugenio a :Man,
+        :Person ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 1966 .
+
+data:Leonida a :Person,
+        :Woman ;
+    :hasMarriageYear 1948 ;
+    :hasRelation data:Vladimir .
+
+data:Luis_Alfonso a :Man,
+        :Person ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1983 .
+
+data:Mar%C3%ADa_Teresa_of_Spain a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Alfonso_XII,
+        data:Isabella_II_of_Spain .
+
+data:Mar%C3%ADa_del_Pilar a :Person,
+        :Woman ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1918 .
+
+data:Vladimir a :Man,
         :Person .
 
-data:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,
-        :Man,
-        :Person .
-
-data:Mary_Pamela_McCorquodale a :Ancestor,
-        :Person,
+data:Isabella_II_of_Spain a :Ancestor,
         :Woman .
 

@@ -2,38 +2,35 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:ElizabethII a :Person,
+data:Queen_Elizabeth_The_Queen_Mother a :Person,
+        :Woman ;
+    :isAuntOf data:Sir_Simon_Alexander_Bowes-Lyon .
+
+data:Herbert_Spender-Clay a :Ancestor,
+        :Man,
+        :Person .
+
+data:Pauline_Astor a :Ancestor,
+        :Person,
         :Woman .
 
-data:QueenElizabethTheQueenMother a :Person,
+data:Rachel_Pauline_Spender-Clay a :Ancestor,
+        :Person,
         :Woman ;
-    :isAuntOf data:SimonBowesLyon .
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Herbert_Spender-Clay ;
+    :hasMother data:Pauline_Astor .
 
-data:DavidBowesLyon a :Ancestor,
+data:Sir_David_Bowes-Lyon a :Ancestor,
         :Man,
         :Person ;
     :hasBirthYear 1902 ;
     :hasDeathYear 1961 .
 
-data:HerbertSpenderClay a :Ancestor,
-        :Man,
-        :Person .
-
-data:PaulineAstor a :Ancestor,
-        :Person,
-        :Woman .
-
-data:RachelPaulineSpenderClay a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1907 ;
-    :hasDeathYear 1996 ;
-    :hasFather data:HerbertSpenderClay ;
-    :hasMother data:PaulineAstor .
-
-data:SimonBowesLyon a :Man,
+data:Sir_Simon_Alexander_Bowes-Lyon a :Man,
         :Person ;
     :hasBirthYear 1932 ;
-    :hasFather data:DavidBowesLyon ;
-    :hasMother data:RachelPaulineSpenderClay .
+    :hasFather data:Sir_David_Bowes-Lyon ;
+    :hasMother data:Rachel_Pauline_Spender-Clay .
 

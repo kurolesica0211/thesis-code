@@ -1,0 +1,437 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alessandro_Torlonia a :Man ;
+    :hasBrother data:Alessandro_Torlonia ;
+    :hasRelation data:Alessandro_Torlonia ;
+    :isBloodrelationOf data:Alessandro_Torlonia ;
+    :isBrotherOf data:Alessandro_Torlonia ;
+    :isSiblingOf data:Alessandro_Torlonia .
+
+data:King_Juan_Carlos_I a :Man,
+        :Person ;
+    :hasBrother data:King_Juan_Carlos_I ;
+    :hasRelation data:King_Juan_Carlos_I ;
+    :isBloodrelationOf data:King_Juan_Carlos_I ;
+    :isBrotherOf data:King_Juan_Carlos_I ;
+    :isSiblingOf data:King_Juan_Carlos_I .
+
+data:Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi a :Man,
+        :Person ;
+    :hasBrother data:Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi ;
+    :hasRelation data:Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi,
+        data:Don_Juan,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco,
+        data:Olimpia ;
+    :isBloodrelationOf data:Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi ;
+    :isBrotherOf data:Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi ;
+    :isSiblingOf data:Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi .
+
+data:King_Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Alfonso_XIII_of_Spain ;
+    :hasChild data:Infanta_Beatriz_of_Spain ;
+    :hasDaughter data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Don_Juan,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isAncestorOf data:Infanta_Beatriz_of_Spain,
+        data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isBloodrelationOf data:King_Alfonso_XIII_of_Spain ;
+    :isBrotherOf data:King_Alfonso_XIII_of_Spain ;
+    :isFatherOf data:Infanta_Beatriz_of_Spain ;
+    :isParentOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:King_Alfonso_XIII_of_Spain ;
+    :isUncleOf data:Infanta_Beatriz_of_Spain .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Infanta_Beatriz_of_Spain ;
+    :hasDaughter data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Don_Juan,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :isAncestorOf data:Infanta_Beatriz_of_Spain,
+        data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isAuntOf data:Infanta_Beatriz_of_Spain ;
+    :isBloodrelationOf data:Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Infanta_Beatriz_of_Spain ;
+    :isParentOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Alfonso_Count_of_Covadonga a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo ;
+    :hasRelation data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco,
+        data:Maria_Cristina,
+        data:Olimpia ;
+    :hasSister data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isBloodrelationOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isBrotherOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isSiblingOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isUncleOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra .
+
+data:Gonzalo a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo ;
+    :hasRelation data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco,
+        data:Maria_Cristina,
+        data:Olimpia ;
+    :hasSister data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isBloodrelationOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isBrotherOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isSiblingOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isUncleOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra .
+
+data:Maria_Cristina a :Person,
+        :Woman ;
+    :hasBrother data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo ;
+    :hasRelation data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Marco,
+        data:Maria_Cristina,
+        data:Olimpia ;
+    :hasSister data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isAuntOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isBloodrelationOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isSiblingOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isSisterOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina .
+
+data:Don_Juan a :Man,
+        :Person ;
+    :hasBrother data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo ;
+    :hasRelation data:Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi,
+        data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marco,
+        data:Maria_Cristina,
+        data:Olimpia,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isBloodrelationOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isBrotherOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isSiblingOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isUncleOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra .
+
+data:Marino_son_of_Beatriz a :Man,
+        :Person ;
+    :hasAncestor data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Marco,
+        data:Marino_son_of_Beatriz ;
+    :hasMother data:Infanta_Beatriz_of_Spain ;
+    :hasParent data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Olimpia,
+        data:Sandra ;
+    :isBloodrelationOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isBrotherOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isChildOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isSonOf data:Infanta_Beatriz_of_Spain .
+
+data:Sandra a :Person,
+        :Woman ;
+    :hasAncestor data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Marco,
+        data:Marino_son_of_Beatriz ;
+    :hasMother data:Infanta_Beatriz_of_Spain ;
+    :hasParent data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Olimpia,
+        data:Sandra ;
+    :isBloodrelationOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isChildOf data:Infanta_Beatriz_of_Spain ;
+    :isDaughterOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isSisterOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra .
+
+data:Marco a :Man,
+        :Person ;
+    :hasAncestor data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Marco,
+        data:Marino_son_of_Beatriz ;
+    :hasMother data:Infanta_Beatriz_of_Spain ;
+    :hasParent data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi,
+        data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marco,
+        data:Maria_Cristina,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Olimpia,
+        data:Sandra ;
+    :isBloodrelationOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isBrotherOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isChildOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isSonOf data:Infanta_Beatriz_of_Spain .
+
+data:Olimpia a :Person,
+        :Woman ;
+    :hasAncestor data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Marco,
+        data:Marino_son_of_Beatriz ;
+    :hasMother data:Infanta_Beatriz_of_Spain ;
+    :hasParent data:Infanta_Beatriz_of_Spain ;
+    :hasRelation data:Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi,
+        data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marco,
+        data:Maria_Cristina,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Olimpia,
+        data:Sandra ;
+    :isBloodrelationOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isChildOf data:Infanta_Beatriz_of_Spain ;
+    :isDaughterOf data:Infanta_Beatriz_of_Spain ;
+    :isSiblingOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isSisterOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra .
+
+data:Infanta_Beatriz_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:King_Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBirthYear 1909 ;
+    :hasBrother data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo ;
+    :hasChild data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :hasDaughter data:Olimpia,
+        data:Sandra ;
+    :hasDeathYear 2002 ;
+    :hasFather data:King_Alfonso_XIII_of_Spain ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:King_Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alessandro_Torlonia_5th_Prince_di_Civitella_Cesi,
+        data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:King_Alfonso_XIII_of_Spain,
+        data:Marco,
+        data:Maria_Cristina,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSister data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :hasSon data:Marco,
+        data:Marino_son_of_Beatriz ;
+    :isAncestorOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isAuntOf data:King_Juan_Carlos_I,
+        data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isBloodrelationOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isChildOf data:King_Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isDaughterOf data:King_Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isMotherOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isParentOf data:Marco,
+        data:Marino_son_of_Beatriz,
+        data:Olimpia,
+        data:Sandra ;
+    :isSiblingOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :isSisterOf data:Alfonso_Count_of_Covadonga,
+        data:Don_Juan,
+        data:Gonzalo,
+        data:Infanta_Beatriz_of_Spain,
+        data:Maria_Cristina ;
+    :knownAs "Beatriz Isabel Federica Alfonsa Eugénie Cristina Maria Teresia Bienvenida Ladislàa de Borbón y Battenberg"^^xsd:string .
+

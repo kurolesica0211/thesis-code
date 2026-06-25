@@ -1,0 +1,211 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ferdinand_IV a :Man,
+        :Person ;
+    :hasBrother data:Ferdinand_IV ;
+    :hasRelation data:Ferdinand_IV ;
+    :isBloodrelationOf data:Ferdinand_IV ;
+    :isBrotherOf data:Ferdinand_IV ;
+    :isSiblingOf data:Ferdinand_IV .
+
+data:Laetitia_d_Arenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Archduke_Sigismund ;
+    :hasRelation data:Archduke_Gottfried,
+        data:Archduke_Leopold_Franz,
+        data:Archduke_Sigismund,
+        data:Elyssa_Edmonstone,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Major_General_Peter_Deakin,
+        data:Sir_Archibald_Bruce_Edmonstone ;
+    :hasSister data:Laetitia_d_Arenberg ;
+    :hasSon data:Archduke_Sigismund ;
+    :isAncestorOf data:Archduke_Sigismund ;
+    :isAuntOf data:Archduke_Sigismund ;
+    :isBloodrelationOf data:Laetitia_d_Arenberg ;
+    :isMotherOf data:Archduke_Sigismund ;
+    :isParentOf data:Archduke_Sigismund ;
+    :isSiblingOf data:Laetitia_d_Arenberg ;
+    :isSisterOf data:Laetitia_d_Arenberg .
+
+data:Sir_Archibald_Bruce_Edmonstone a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Sir_Archibald_Bruce_Edmonstone ;
+    :hasChild data:Elyssa_Edmonstone ;
+    :hasDaughter data:Elyssa_Edmonstone ;
+    :hasRelation data:Archduke_Gottfried,
+        data:Archduke_Leopold_Franz,
+        data:Archduke_Sigismund,
+        data:Elyssa_Edmonstone,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Major_General_Peter_Deakin,
+        data:Sir_Archibald_Bruce_Edmonstone ;
+    :isAncestorOf data:Elyssa_Edmonstone ;
+    :isBloodrelationOf data:Sir_Archibald_Bruce_Edmonstone ;
+    :isBrotherOf data:Sir_Archibald_Bruce_Edmonstone ;
+    :isFatherOf data:Elyssa_Edmonstone ;
+    :isParentOf data:Elyssa_Edmonstone ;
+    :isSiblingOf data:Sir_Archibald_Bruce_Edmonstone ;
+    :isUncleOf data:Elyssa_Edmonstone .
+
+data:Archduke_Gottfried a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Archduke_Gottfried ;
+    :hasChild data:Archduke_Leopold_Franz ;
+    :hasRelation data:Archduke_Gottfried,
+        data:Archduke_Leopold_Franz,
+        data:Archduke_Sigismund,
+        data:Elyssa_Edmonstone,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Major_General_Peter_Deakin,
+        data:Sir_Archibald_Bruce_Edmonstone ;
+    :hasSon data:Archduke_Leopold_Franz ;
+    :isAncestorOf data:Archduke_Leopold_Franz,
+        data:Archduke_Sigismund ;
+    :isBloodrelationOf data:Archduke_Gottfried ;
+    :isBrotherOf data:Archduke_Gottfried ;
+    :isFatherOf data:Archduke_Leopold_Franz ;
+    :isParentOf data:Archduke_Leopold_Franz ;
+    :isSiblingOf data:Archduke_Gottfried ;
+    :isUncleOf data:Archduke_Leopold_Franz .
+
+data:Major_General_Peter_Deakin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Major_General_Peter_Deakin ;
+    :hasChild data:Julieta_Isabel_Deakin ;
+    :hasDaughter data:Julieta_Isabel_Deakin ;
+    :hasRelation data:Archduke_Gottfried,
+        data:Archduke_Leopold_Franz,
+        data:Archduke_Sigismund,
+        data:Elyssa_Edmonstone,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Major_General_Peter_Deakin,
+        data:Sir_Archibald_Bruce_Edmonstone ;
+    :isAncestorOf data:Elyssa_Edmonstone,
+        data:Julieta_Isabel_Deakin ;
+    :isBloodrelationOf data:Major_General_Peter_Deakin ;
+    :isBrotherOf data:Major_General_Peter_Deakin ;
+    :isFatherOf data:Julieta_Isabel_Deakin ;
+    :isParentOf data:Julieta_Isabel_Deakin ;
+    :isSiblingOf data:Major_General_Peter_Deakin ;
+    :isUncleOf data:Julieta_Isabel_Deakin .
+
+data:Archduke_Leopold_Franz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Archduke_Gottfried ;
+    :hasBrother data:Archduke_Leopold_Franz ;
+    :hasChild data:Archduke_Sigismund ;
+    :hasFather data:Archduke_Gottfried ;
+    :hasParent data:Archduke_Gottfried ;
+    :hasRelation data:Archduke_Gottfried,
+        data:Archduke_Leopold_Franz,
+        data:Archduke_Sigismund,
+        data:Elyssa_Edmonstone,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Major_General_Peter_Deakin,
+        data:Sir_Archibald_Bruce_Edmonstone ;
+    :hasSon data:Archduke_Sigismund ;
+    :isAncestorOf data:Archduke_Sigismund ;
+    :isBloodrelationOf data:Archduke_Leopold_Franz ;
+    :isBrotherOf data:Archduke_Leopold_Franz ;
+    :isChildOf data:Archduke_Gottfried ;
+    :isFatherOf data:Archduke_Sigismund ;
+    :isParentOf data:Archduke_Sigismund ;
+    :isSiblingOf data:Archduke_Leopold_Franz ;
+    :isSonOf data:Archduke_Gottfried ;
+    :isUncleOf data:Archduke_Sigismund .
+
+data:Julieta_Isabel_Deakin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Major_General_Peter_Deakin ;
+    :hasChild data:Elyssa_Edmonstone ;
+    :hasDaughter data:Elyssa_Edmonstone ;
+    :hasFather data:Major_General_Peter_Deakin ;
+    :hasParent data:Major_General_Peter_Deakin ;
+    :hasRelation data:Archduke_Gottfried,
+        data:Archduke_Leopold_Franz,
+        data:Archduke_Sigismund,
+        data:Elyssa_Edmonstone,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Major_General_Peter_Deakin,
+        data:Sir_Archibald_Bruce_Edmonstone ;
+    :hasSister data:Julieta_Isabel_Deakin ;
+    :isAncestorOf data:Elyssa_Edmonstone ;
+    :isAuntOf data:Elyssa_Edmonstone ;
+    :isBloodrelationOf data:Julieta_Isabel_Deakin ;
+    :isChildOf data:Major_General_Peter_Deakin ;
+    :isDaughterOf data:Major_General_Peter_Deakin ;
+    :isMotherOf data:Elyssa_Edmonstone ;
+    :isParentOf data:Elyssa_Edmonstone ;
+    :isSiblingOf data:Julieta_Isabel_Deakin ;
+    :isSisterOf data:Julieta_Isabel_Deakin .
+
+data:Archduke_Sigismund a :Man,
+        :Person ;
+    :hasAncestor data:Archduke_Gottfried,
+        data:Archduke_Leopold_Franz,
+        data:Laetitia_d_Arenberg ;
+    :hasBirthYear 1966 ;
+    :hasBrother data:Archduke_Sigismund ;
+    :hasFather data:Archduke_Leopold_Franz ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Laetitia_d_Arenberg ;
+    :hasParent data:Archduke_Leopold_Franz,
+        data:Laetitia_d_Arenberg ;
+    :hasRelation data:Archduke_Gottfried,
+        data:Archduke_Leopold_Franz,
+        data:Archduke_Sigismund,
+        data:Elyssa_Edmonstone,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Major_General_Peter_Deakin,
+        data:Sir_Archibald_Bruce_Edmonstone ;
+    :isBloodrelationOf data:Archduke_Sigismund ;
+    :isBrotherOf data:Archduke_Sigismund ;
+    :isChildOf data:Archduke_Leopold_Franz,
+        data:Laetitia_d_Arenberg ;
+    :isSiblingOf data:Archduke_Sigismund ;
+    :isSonOf data:Archduke_Leopold_Franz,
+        data:Laetitia_d_Arenberg .
+
+data:Elyssa_Edmonstone a :Person,
+        :Woman ;
+    :hasAncestor data:Julieta_Isabel_Deakin,
+        data:Major_General_Peter_Deakin,
+        data:Sir_Archibald_Bruce_Edmonstone ;
+    :hasBirthYear 1973 ;
+    :hasFather data:Sir_Archibald_Bruce_Edmonstone ;
+    :hasMother data:Julieta_Isabel_Deakin ;
+    :hasParent data:Julieta_Isabel_Deakin,
+        data:Sir_Archibald_Bruce_Edmonstone ;
+    :hasRelation data:Archduke_Gottfried,
+        data:Archduke_Leopold_Franz,
+        data:Archduke_Sigismund,
+        data:Elyssa_Edmonstone,
+        data:Julieta_Isabel_Deakin,
+        data:Laetitia_d_Arenberg,
+        data:Major_General_Peter_Deakin,
+        data:Sir_Archibald_Bruce_Edmonstone ;
+    :hasSister data:Elyssa_Edmonstone ;
+    :isBloodrelationOf data:Elyssa_Edmonstone ;
+    :isChildOf data:Julieta_Isabel_Deakin,
+        data:Sir_Archibald_Bruce_Edmonstone ;
+    :isDaughterOf data:Julieta_Isabel_Deakin,
+        data:Sir_Archibald_Bruce_Edmonstone ;
+    :isSiblingOf data:Elyssa_Edmonstone ;
+    :isSisterOf data:Elyssa_Edmonstone .
+

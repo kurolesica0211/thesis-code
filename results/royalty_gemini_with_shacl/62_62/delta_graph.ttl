@@ -2,77 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Paul a :Man ;
-    :hasBirthYear 1901 ;
-    :hasBrother data:Alexander_of_Greece,
-        data:George_II ;
-    :hasDaughter data:Irene_of_Greece,
-        data:Sofia_of_Spain ;
-    :hasDeathYear 1964 ;
-    :hasFather data:Constantine_I ;
-    :hasMarriageYear 1938 ;
-    :hasMother data:Sophia_of_Prussia ;
-    :hasRelation data:Frederica_of_Hanover,
-        data:Nina_Georgievna,
-        data:Prince_Philip ;
-    :hasSister data:Helen_of_Greece,
-        data:Katherine_of_Greece ;
-    :hasSon data:Constantine_II .
+data:Alexander_of_Greece a :Man,
+        :Person ;
+    :isBrotherOf data:Paul_of_Greece .
 
-data:Alexander_of_Greece a :Man .
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    :isSonOf data:Paul_of_Greece .
 
-data:Alice_of_Battenberg a :Ancestor,
+data:George_II_of_Greece a :Man,
+        :Person ;
+    :isBrotherOf data:Paul_of_Greece .
+
+data:Helen_of_Greece a :Person,
+        :Woman ;
+    :isSisterOf data:Paul_of_Greece .
+
+data:Irene_of_Greece a :Person,
+        :Woman ;
+    :isDaughterOf data:Paul_of_Greece .
+
+data:Princess_Katherine a :Person,
+        :Woman ;
+    :isSisterOf data:Paul_of_Greece .
+
+data:Sofia_of_Spain a :Person,
+        :Woman ;
+    :isDaughterOf data:Paul_of_Greece .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:George_I_of_Greece .
+
+data:Frederica_of_Hanover a :Person,
         :Woman .
-
-data:Constantine_I a :Ancestor,
-        :Man ;
-    :hasFather data:George_I_of_Greece ;
-    :hasMother data:Olga_Constantinovna .
-
-data:Constantine_II a :Man .
-
-data:Ernest_Augustus_of_Brunswick a :Ancestor,
-        :Man .
-
-data:Frederica_of_Hanover a :Woman ;
-    :hasFather data:Ernest_Augustus_of_Brunswick ;
-    :hasMother data:Victoria_Louise .
-
-data:George_II a :Man .
 
 data:George_I_of_Greece a :Ancestor,
-        :Man .
-
-data:George_Mikhailovich a :Ancestor,
-        :Man .
-
-data:Helen_of_Greece a :Woman .
-
-data:Irene_of_Greece a :Woman .
-
-data:Katherine_of_Greece a :Woman .
-
-data:Margaret_of_Prussia a :Woman .
-
-data:Maria_of_Russia a :Ancestor,
-        :Woman .
-
-data:Nina_Georgievna a :Woman ;
-    :hasFather data:George_Mikhailovich ;
-    :hasMother data:Maria_of_Russia .
-
-data:Olga_Constantinovna a :Ancestor,
-        :Woman .
-
-data:Prince_Philip a :Man ;
-    :hasMother data:Alice_of_Battenberg .
-
-data:Sofia_of_Spain a :Woman .
+        :Man,
+        :Person .
 
 data:Sophia_of_Prussia a :Ancestor,
-        :Woman ;
-    :hasSister data:Margaret_of_Prussia .
-
-data:Victoria_Louise a :Ancestor,
+        :Person,
         :Woman .
+
+data:Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1964 ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasRelation data:Frederica_of_Hanover .
 

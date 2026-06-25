@@ -85,28 +85,56 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Luiz Philippe of Orléans-Braganza (Portuguese: Luiz Philippe de Orléans e Bragança; born 3 April 1969) is a Brazilian politician, activist, businessman, and member of the former ruling House of Orléans-Braganza.
-A great-great-grandson of Emperor Pedro II, Luiz Philippe is a member of the Brazilian imperial family’s Vassouras branch.
+Queen Anne-Marie
+
+
+Queen Sofía of Spain
+
+
+Marina, consort of Prince Michael
+
+
+Princess Theodora of Greece and Denmark (Greek: Θεοδώρα Ντε Γκρες, romanized: Theodora de Grèce; born 9 June 1983), also known under her stage name Theodora Greece, is a British-Greek actress and member of the Greek and Danish royal families.
+She is the fourth child and younger daughter of deposed King Constantine II of Greece and Queen Anne-Marie of Greece.
+Theodora made her television debut in 2011 as Alison Montgomery in the American soap opera The Bold and the Beautiful.
 Biography
 
-Luiz Philippe was born in Rio de Janeiro in 1969, the son of Eudes of Orléans-Braganza and Ana Maria de Moraes Barros.
-Luiz Philippe is the grandson of Pedro Henrique of Orléans-Braganza.
-Luiz Philippe studied business at Fundação Armando Álvares Penteado (FAAP) and in 1993 received a master's degree in political science from Stanford University.
-Professional life
+Early life
 
-The professional trajectory of Luiz Philippe began in the United States, where he worked in companies of the financial market.
-Luiz Philippe was part of the financial planning of Saint-Gobain, a French multinational, between 1993 and 1996.
-In 2012 Luiz Philippe founded ZAP Tech, an incubator of means of payment for mobile platforms.
-Political activism
+Theodora was born on 9 June 1983 at St Mary's Hospital, London.
+She is the younger daughter and fourth of the five children of the deposed Greek king Constantine II and his wife, Anne-Marie of Denmark.
+Education
 
-Luiz Philippe founded the liberal movement "Acorda Brasil" (Wake up Brazil) in 2014.
-Luiz Philippe also participates in the Canal Terça Livre with the Caia na Real program, and travels Brazil with the lecture Redefinindo o Brasil.
+Theodora attended Woldingham School, an all-girls boarding school in Surrey, England, between 1994 and 2001.
+After a gap year spent at St Philip's College in Alice Springs, Australia, Theodora attended Brown University where she received her Bachelor of Arts on 28 May 2006 in Theatre Arts, having also attended Northeastern University in Boston.
+Career
+
+In April 2010, Theodora moved to Los Angeles to pursue an acting career, appearing in supporting roles under the stage name Theodora Greece.
+Personal life
+
+On 16 November 2018, it was announced that Princess Theodora was engaged to American attorney Matthew Jeremiah Kumar.
+On 28 September 2024, Theodora married Kumar in a Greek Orthodox ceremony officiated by Metropolitan Dorotheos II of Syros at the Metropolitan Cathedral of Athens.
+Guests included 250 friends and relatives, including members of European royal families, such as the bride's aunt, Queen Sofia of Spain, and Infanta Cristina of Spain, Infanta Elena of Spain, Princess Alexandra of Sayn-Wittgenstein-Berleburg, Count Michael Ahlefeldt-Laurvig-Bille, Princess Benedikte of Denmark, Crown Prince Alexander of Yugoslavia, Crown Princess Katherine of Serbia, and Prince Christian of Hanover.
+Her nieces, Princess Maria-Olympia and Arrietta Morales y de Grecia, served as bridesmaids.
+For the ceremony, Theodora wore a custom gown by Celia Kritharioti, an Irish lace veil that once belonged to her great-grandmother Princess Margaret of Connaught, and a Cartier diamond tiara that was given to Princess Margaret of Connaught by Abbas II of Egypt.
+The veil and tiara have been worn by all of Queen Ingrid of Denmark's female descendants.
+Οn 20 December 2024, Theodora, along with the other members of the former royal family acquired Greek citizenship, under the surname Theodora de Grèce.
+The family was deprived of citizenship in 1994 when the former King Constantine refused to acquire a surname, as required by law for all Greek citizens.
+Filmography
+
+Ancestry
+
+Her paternal grandparents were King Paul of Greece and Frederica of Hanover.
+Her maternal grandparents are Frederik IX of Denmark and Ingrid of Sweden.
+As an agnatic descendant of Christian IX of Denmark Theodora is a Danish princess, and because King Christian's second son, Prince William of Denmark, was elected "George I, King of the Hellenes" in 1863, her father (George's great-grandson) inherited the throne of Greece in 1964.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +150,9 @@ Luiz Philippe also participates in the Canal Terça Livre with the Caia na Real 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +167,23 @@ Luiz Philippe also participates in the Canal Terça Livre with the Caia na Real 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +201,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +283,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +306,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +326,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +336,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +376,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,90 +475,291 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (61b65043-561f-4340-a88d-b5aa9aea9712)
- Call ID: 61b65043-561f-4340-a88d-b5aa9aea9712
+  AssignClass (7213bbfe-a131-491e-82b0-662d9557dcc5)
+ Call ID: 7213bbfe-a131-491e-82b0-662d9557dcc5
   Args:
-    source: Luiz_Philippe_of_Orleans-Braganza
-    type: :Man
-  AssignClass (5fd359aa-0b8b-4013-ad57-a5af62a3e4bb)
- Call ID: 5fd359aa-0b8b-4013-ad57-a5af62a3e4bb
-  Args:
-    type: :Person
-    source: Luiz_Philippe_of_Orleans-Braganza
-  AddLiteral (a251e8ae-5215-48b7-badb-4251409d5112)
- Call ID: a251e8ae-5215-48b7-badb-4251409d5112
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1969
-    source: Luiz_Philippe_of_Orleans-Braganza
-    relation: :hasBirthYear
-  AssignClass (b3387458-8f31-46aa-9c6a-c7a9f2f6e1d6)
- Call ID: b3387458-8f31-46aa-9c6a-c7a9f2f6e1d6
-  Args:
-    type: :Man
-    source: Eudes_of_Orleans-Braganza
-  AssignClass (feac78f1-576f-43c0-affc-1a55bb7c80b6)
- Call ID: feac78f1-576f-43c0-affc-1a55bb7c80b6
-  Args:
-    source: Eudes_of_Orleans-Braganza
-    type: :Person
-  AssignClass (99a6e87b-1ae7-4c2f-b694-9646cca7f1e6)
- Call ID: 99a6e87b-1ae7-4c2f-b694-9646cca7f1e6
-  Args:
-    source: Ana_Maria_de_Moraes_Barros
+    source: :Theodora_of_Greece_and_Denmark
     type: :Woman
-  AssignClass (aa966fd2-795f-4c99-b739-99f813460a5d)
- Call ID: aa966fd2-795f-4c99-b739-99f813460a5d
+  AssignClass (197ff18f-e34e-4eee-b718-a5652af7b270)
+ Call ID: 197ff18f-e34e-4eee-b718-a5652af7b270
   Args:
-    source: Ana_Maria_de_Moraes_Barros
+    source: :Theodora_of_Greece_and_Denmark
     type: :Person
-  AddTriple (f0aac1b1-1638-4a5c-ae1f-fdae5c3cdd6c)
- Call ID: f0aac1b1-1638-4a5c-ae1f-fdae5c3cdd6c
+  AddLiteral (c26fdfe0-69fd-4d65-84b1-cb37a794b475)
+ Call ID: c26fdfe0-69fd-4d65-84b1-cb37a794b475
   Args:
-    target: Eudes_of_Orleans-Braganza
-    source: Luiz_Philippe_of_Orleans-Braganza
+    source: :Theodora_of_Greece_and_Denmark
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1983
+  AddLiteral (df69aa0e-9d61-4b08-981a-7175dbc2d96b)
+ Call ID: df69aa0e-9d61-4b08-981a-7175dbc2d96b
+  Args:
+    literal_value: Theodora Greece
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    source: :Theodora_of_Greece_and_Denmark
+  AddLiteral (ae36f6c1-69e5-4f02-877f-7e2f7f7cb499)
+ Call ID: ae36f6c1-69e5-4f02-877f-7e2f7f7cb499
+  Args:
+    source: :Theodora_of_Greece_and_Denmark
+    literal_type: xsd:string
+    literal_value: Theodora de Grèce
+    relation: :alsoKnownAs
+  AssignClass (a068e07b-f1b1-4eaa-bc4c-edf30aee11db)
+ Call ID: a068e07b-f1b1-4eaa-bc4c-edf30aee11db
+  Args:
+    source: :Constantine_II_of_Greece
+    type: :Man
+  AssignClass (7530d890-6ed8-4ded-bba0-9e03dbf9d2f9)
+ Call ID: 7530d890-6ed8-4ded-bba0-9e03dbf9d2f9
+  Args:
+    source: :Constantine_II_of_Greece
+    type: :Person
+  AssignClass (3dfb5a59-a520-4b18-b6e1-e2404f7a7599)
+ Call ID: 3dfb5a59-a520-4b18-b6e1-e2404f7a7599
+  Args:
+    source: :Anne-Marie_of_Denmark
+    type: :Woman
+  AssignClass (b76e3792-c5f3-4cb9-beba-97bc2527d369)
+ Call ID: b76e3792-c5f3-4cb9-beba-97bc2527d369
+  Args:
+    type: :Person
+    source: :Anne-Marie_of_Denmark
+  AddTriple (af74e8d4-8f4a-47a7-9953-c2fab02b2335)
+ Call ID: af74e8d4-8f4a-47a7-9953-c2fab02b2335
+  Args:
+    source: :Theodora_of_Greece_and_Denmark
+    target: :Constantine_II_of_Greece
     relation: :hasFather
-  AddTriple (c5171cd1-5a26-42cf-980e-4c99a0291661)
- Call ID: c5171cd1-5a26-42cf-980e-4c99a0291661
+  AddTriple (2fb76655-ff37-4d8a-86e0-e151db328687)
+ Call ID: 2fb76655-ff37-4d8a-86e0-e151db328687
   Args:
-    target: Ana_Maria_de_Moraes_Barros
     relation: :hasMother
-    source: Luiz_Philippe_of_Orleans-Braganza
-  AssignClass (f94b5aa1-f1a0-43b9-bc28-4796155dd0b2)
- Call ID: f94b5aa1-f1a0-43b9-bc28-4796155dd0b2
+    target: :Anne-Marie_of_Denmark
+    source: :Theodora_of_Greece_and_Denmark
+  AssignClass (fd4d88ff-9855-426a-a630-ab796ae87daf)
+ Call ID: fd4d88ff-9855-426a-a630-ab796ae87daf
   Args:
-    source: Pedro_Henrique_of_Orleans-Braganza
+    source: :Matthew_Jeremiah_Kumar
     type: :Man
-  AssignClass (7cebfa63-d949-459c-acd7-1efcf8c39d89)
- Call ID: 7cebfa63-d949-459c-acd7-1efcf8c39d89
+  AssignClass (5b18ab9d-e4b6-45ec-9139-a63e7fc93785)
+ Call ID: 5b18ab9d-e4b6-45ec-9139-a63e7fc93785
+  Args:
+    source: :Matthew_Jeremiah_Kumar
+    type: :Person
+  AddTriple (4079f3ca-5e93-4370-bfb3-772d612d77c2)
+ Call ID: 4079f3ca-5e93-4370-bfb3-772d612d77c2
+  Args:
+    relation: :hasRelation
+    target: :Matthew_Jeremiah_Kumar
+    source: :Theodora_of_Greece_and_Denmark
+  AddLiteral (43ccf5d4-2c19-4f72-8280-4b5982d08fd6)
+ Call ID: 43ccf5d4-2c19-4f72-8280-4b5982d08fd6
+  Args:
+    source: :Theodora_of_Greece_and_Denmark
+    literal_type: xsd:integer
+    literal_value: 2024
+    relation: :hasMarriageYear
+  AssignClass (ff30132c-969a-4356-bb8b-b3eccf2fc17f)
+ Call ID: ff30132c-969a-4356-bb8b-b3eccf2fc17f
+  Args:
+    source: :Paul_of_Greece
+    type: :Man
+  AssignClass (51644895-e73d-4af4-87b8-2625243e6356)
+ Call ID: 51644895-e73d-4af4-87b8-2625243e6356
   Args:
     type: :Person
-    source: Pedro_Henrique_of_Orleans-Braganza
-  AddTriple (2843ba68-ca9e-4d0e-9458-80f332a28771)
- Call ID: 2843ba68-ca9e-4d0e-9458-80f332a28771
+    source: :Paul_of_Greece
+  AssignClass (2501e7be-d0b4-4f4a-a0d2-746a1ed12645)
+ Call ID: 2501e7be-d0b4-4f4a-a0d2-746a1ed12645
   Args:
-    relation: :hasAncestor
-    source: Luiz_Philippe_of_Orleans-Braganza
-    target: Pedro_Henrique_of_Orleans-Braganza
-  AssignClass (e7360fed-543a-4a8e-a52e-e83bd6e8d888)
- Call ID: e7360fed-543a-4a8e-a52e-e83bd6e8d888
-  Args:
-    type: :Man
-    source: Emperor_Pedro_II
-  AssignClass (ff3fbf89-e29b-4d9b-a284-e823e01029f3)
- Call ID: ff3fbf89-e29b-4d9b-a284-e823e01029f3
+    source: :Frederica_of_Hanover
+    type: :Woman
+  AssignClass (e4ba4b68-fe4e-4924-a87a-868e886e0760)
+ Call ID: e4ba4b68-fe4e-4924-a87a-868e886e0760
   Args:
     type: :Person
-    source: Emperor_Pedro_II
-  AddTriple (94b9bb01-ff58-4129-8f80-6d161f6b9992)
- Call ID: 94b9bb01-ff58-4129-8f80-6d161f6b9992
+    source: :Frederica_of_Hanover
+  AssignClass (8bde8855-4a74-4e69-8d69-7c290459eec8)
+ Call ID: 8bde8855-4a74-4e69-8d69-7c290459eec8
   Args:
-    target: Emperor_Pedro_II
-    source: Luiz_Philippe_of_Orleans-Braganza
-    relation: :hasAncestor
-  Finish (6913a4d0-e470-4713-a418-7068b7440f8b)
- Call ID: 6913a4d0-e470-4713-a418-7068b7440f8b
+    type: :Man
+    source: :Frederik_IX_of_Denmark
+  AssignClass (6a301b75-68e3-4f69-a22b-80f7310ba93e)
+ Call ID: 6a301b75-68e3-4f69-a22b-80f7310ba93e
   Args:
+    type: :Person
+    source: :Frederik_IX_of_Denmark
+  AssignClass (e31e4f07-c2e5-4c99-a6bd-f0e026cdf107)
+ Call ID: e31e4f07-c2e5-4c99-a6bd-f0e026cdf107
+  Args:
+    type: :Woman
+    source: :Ingrid_of_Sweden
+  AssignClass (6a204cd3-fd8e-475b-a3e7-31e0874e4711)
+ Call ID: 6a204cd3-fd8e-475b-a3e7-31e0874e4711
+  Args:
+    source: :Ingrid_of_Sweden
+    type: :Person
+  AddTriple (bf1e8e3c-6eea-4a72-8968-81e856972e20)
+ Call ID: bf1e8e3c-6eea-4a72-8968-81e856972e20
+  Args:
+    relation: :hasFather
+    target: :Paul_of_Greece
+    source: :Constantine_II_of_Greece
+  AddTriple (635c34e7-fd51-4720-9c55-5583b6382f53)
+ Call ID: 635c34e7-fd51-4720-9c55-5583b6382f53
+  Args:
+    target: :Frederica_of_Hanover
+    source: :Constantine_II_of_Greece
+    relation: :hasMother
+  AddTriple (6c1a0992-15ae-405b-9b16-11314a506ce9)
+ Call ID: 6c1a0992-15ae-405b-9b16-11314a506ce9
+  Args:
+    relation: :hasFather
+    source: :Anne-Marie_of_Denmark
+    target: :Frederik_IX_of_Denmark
+  AddTriple (b3ab1983-0ad4-454c-b87a-5c7e00afc385)
+ Call ID: b3ab1983-0ad4-454c-b87a-5c7e00afc385
+  Args:
+    target: :Ingrid_of_Sweden
+    source: :Anne-Marie_of_Denmark
+    relation: :hasMother
+  AssignClass (f05da8e2-a33e-4b40-9cd7-5bb3d340afd0)
+ Call ID: f05da8e2-a33e-4b40-9cd7-5bb3d340afd0
+  Args:
+    source: :Sofia_of_Spain
+    type: :Woman
+  AssignClass (c58f37bf-ecea-4b9e-bb96-f88c8e5927ab)
+ Call ID: c58f37bf-ecea-4b9e-bb96-f88c8e5927ab
+  Args:
+    source: :Sofia_of_Spain
+    type: :Person
+  AddTriple (6d6680fd-42c6-4023-8f42-db30658860c3)
+ Call ID: 6d6680fd-42c6-4023-8f42-db30658860c3
+  Args:
+    target: :Theodora_of_Greece_and_Denmark
+    source: :Sofia_of_Spain
+    relation: :isAuntOf
+  AssignClass (93c5450f-3feb-4e92-af1f-e96fe9a98bb5)
+ Call ID: 93c5450f-3feb-4e92-af1f-e96fe9a98bb5
+  Args:
+    type: :Woman
+    source: :Maria-Olympia_of_Greece
+  AssignClass (9669fa30-f1d3-43ff-bc42-f16dee0a8bb8)
+ Call ID: 9669fa30-f1d3-43ff-bc42-f16dee0a8bb8
+  Args:
+    source: :Maria-Olympia_of_Greece
+    type: :Person
+  AddTriple (024822bd-3ae8-4428-9665-459d1a3a5838)
+ Call ID: 024822bd-3ae8-4428-9665-459d1a3a5838
+  Args:
+    relation: :hasMother
+    source: :Maria-Olympia_of_Greece
+    target: :Theodora_of_Greece_and_Denmark
+  AssignClass (f3828558-e130-4cfd-a197-e8e30bdfa638)
+ Call ID: f3828558-e130-4cfd-a197-e8e30bdfa638
+  Args:
+    type: :Woman
+    source: :Arrietta_Morales_y_de_Grecia
+  AssignClass (2b73a476-3038-4580-a5f9-696dea1c4cdb)
+ Call ID: 2b73a476-3038-4580-a5f9-696dea1c4cdb
+  Args:
+    source: :Arrietta_Morales_y_de_Grecia
+    type: :Person
+  AddTriple (bcb7aed1-bef2-4aa8-9d19-80319cfd578a)
+ Call ID: bcb7aed1-bef2-4aa8-9d19-80319cfd578a
+  Args:
+    relation: :hasMother
+    target: :Theodora_of_Greece_and_Denmark
+    source: :Arrietta_Morales_y_de_Grecia
+  Finish (2eb32a3d-042e-4a5d-bc16-5935d11ea021)
+ Call ID: 2eb32a3d-042e-4a5d-bc16-5935d11ea021
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -505,25 +824,52 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Luiz_Philippe_of_Orleans-Braganza a :Man,
-          :Person ;
-      :hasAncestor data:Emperor_Pedro_II,
-          data:Pedro_Henrique_of_Orleans-Braganza ;
-      :hasBirthYear 1969 ;
-      :hasFather data:Eudes_of_Orleans-Braganza ;
-      :hasMother data:Ana_Maria_de_Moraes_Barros .
+  data:Arrietta_Morales_y_de_Grecia a :Person,
+          :Woman ;
+      :hasMother data:Theodora_of_Greece_and_Denmark .
 
-  data:Ana_Maria_de_Moraes_Barros a :Person,
+  data:Maria-Olympia_of_Greece a :Person,
+          :Woman ;
+      :hasMother data:Theodora_of_Greece_and_Denmark .
+
+  data:Sofia_of_Spain a :Person,
+          :Woman ;
+      :isAuntOf data:Theodora_of_Greece_and_Denmark .
+
+  data:Anne-Marie_of_Denmark a :Person,
+          :Woman ;
+      :hasFather data:Frederik_IX_of_Denmark ;
+      :hasMother data:Ingrid_of_Sweden .
+
+  data:Constantine_II_of_Greece a :Man,
+          :Person ;
+      :hasFather data:Paul_of_Greece ;
+      :hasMother data:Frederica_of_Hanover .
+
+  data:Frederica_of_Hanover a :Person,
           :Woman .
 
-  data:Emperor_Pedro_II a :Man,
+  data:Frederik_IX_of_Denmark a :Man,
           :Person .
 
-  data:Eudes_of_Orleans-Braganza a :Man,
+  data:Ingrid_of_Sweden a :Person,
+          :Woman .
+
+  data:Matthew_Jeremiah_Kumar a :Man,
           :Person .
 
-  data:Pedro_Henrique_of_Orleans-Braganza a :Man,
+  data:Paul_of_Greece a :Man,
           :Person .
+
+  data:Theodora_of_Greece_and_Denmark a :Person,
+          :Woman ;
+      :alsoKnownAs "Theodora Greece"^^xsd:string,
+          "Theodora de Grèce"^^xsd:string ;
+      :hasBirthYear 1983 ;
+      :hasFather data:Constantine_II_of_Greece ;
+      :hasMarriageYear 2024 ;
+      :hasMother data:Anne-Marie_of_Denmark ;
+      :hasRelation data:Matthew_Jeremiah_Kumar .
 
 
 
@@ -535,110 +881,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (4d0454c2-d83f-4c07-adb0-4d782a886517)
- Call ID: 4d0454c2-d83f-4c07-adb0-4d782a886517
+  ValidateShacl (b2256dd4-4464-4f82-9214-a2989c3ee087)
+ Call ID: b2256dd4-4464-4f82-9214-a2989c3ee087
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:24
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Pedro_Henrique_of_Orleans-Braganza, linked via hasAncestor, is missing the mandatory :Ancestor class.
+      The node 'Paul_of_Greece' assigned as the father of 'Constantine_II_of_Greece' lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Pedro_Henrique_of_Orleans-Braganza', class=':Ancestor')
+      AssignClass(Paul_of_Greece, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Emperor_Pedro_II, linked via hasAncestor, is missing the mandatory :Ancestor class.
+      The node 'Frederica_of_Hanover' assigned as the mother of 'Constantine_II_of_Greece' lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Emperor_Pedro_II', class=':Ancestor')
+      AssignClass(Frederica_of_Hanover, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Eudes_of_Orleans-Braganza, linked via hasFather, is missing the mandatory :Ancestor class.
+      The node 'Paul_of_Greece' assigned as the father of 'Constantine_II_of_Greece' lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Eudes_of_Orleans-Braganza', class=':Ancestor')
+      AssignClass(Paul_of_Greece, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Ana_Maria_de_Moraes_Barros, linked via hasMother, is missing the mandatory :Ancestor class.
+      The node 'Frederik_IX_of_Denmark' assigned as the father of 'Anne-Marie_of_Denmark' lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ana_Maria_de_Moraes_Barros', class=':Ancestor')
+      AssignClass(Frederik_IX_of_Denmark, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Pedro_Henrique_of_Orleans-Braganza, linked via hasAncestor, is missing the mandatory :Ancestor class.
+      The node 'Constantine_II_of_Greece' assigned as the father of 'Theodora_of_Greece_and_Denmark' lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Pedro_Henrique_of_Orleans-Braganza', class=':Ancestor')
+      AssignClass(Constantine_II_of_Greece, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Emperor_Pedro_II, linked via hasAncestor, is missing the mandatory :Ancestor class.
+      The node 'Frederica_of_Hanover' assigned as the mother of 'Constantine_II_of_Greece' lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Emperor_Pedro_II', class=':Ancestor')
+      AssignClass(Frederica_of_Hanover, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Eudes_of_Orleans-Braganza, linked via hasFather, is missing the mandatory :Ancestor class.
+      The node 'Ingrid_of_Sweden' assigned as the mother of 'Anne-Marie_of_Denmark' lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Eudes_of_Orleans-Braganza', class=':Ancestor')
+      AssignClass(Ingrid_of_Sweden, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Ana_Maria_de_Moraes_Barros, linked via hasMother, is missing the mandatory :Ancestor class.
+      The node 'Anne-Marie_of_Denmark' assigned as the mother of 'Theodora_of_Greece_and_Denmark' lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ana_Maria_de_Moraes_Barros', class=':Ancestor')
+      AssignClass(Anne-Marie_of_Denmark, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Pedro_Henrique_of_Orleans-Braganza, linked via hasAncestor, is missing the mandatory :Ancestor class.
+      The node 'Theodora_of_Greece_and_Denmark' assigned as the mother of 'Maria-Olympia_of_Greece' lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Pedro_Henrique_of_Orleans-Braganza', class=':Ancestor')
+      AssignClass(Theodora_of_Greece_and_Denmark, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Emperor_Pedro_II, linked via hasAncestor, is missing the mandatory :Ancestor class.
+      The node 'Theodora_of_Greece_and_Denmark' assigned as the mother of 'Arrietta_Morales_y_de_Grecia' lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Emperor_Pedro_II', class=':Ancestor')
+      AssignClass(Theodora_of_Greece_and_Denmark, :Ancestor)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Eudes_of_Orleans-Braganza, linked via hasFather, is missing the mandatory :Ancestor class.
+      The node 'Paul_of_Greece' assigned as the father of 'Constantine_II_of_Greece' lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Eudes_of_Orleans-Braganza', class=':Ancestor')
+      AssignClass(Paul_of_Greece, :Ancestor)
 
 
   Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Frederik_IX_of_Denmark' assigned as the father of 'Anne-Marie_of_Denmark' lacks the required 'Ancestor' class classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederik_IX_of_Denmark, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Constantine_II_of_Greece' assigned as the father of 'Theodora_of_Greece_and_Denmark' lacks the required 'Ancestor' class classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_II_of_Greece, :Ancestor)
+
+
+  Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Ana_Maria_de_Moraes_Barros, linked via hasMother, is missing the mandatory :Ancestor class.
+      The node 'Frederica_of_Hanover' assigned as the mother of 'Constantine_II_of_Greece' lacks the required 'Ancestor' class classification.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Ana_Maria_de_Moraes_Barros', class=':Ancestor')
+      AssignClass(Frederica_of_Hanover, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Ingrid_of_Sweden' assigned as the mother of 'Anne-Marie_of_Denmark' lacks the required 'Ancestor' class classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ingrid_of_Sweden, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Anne-Marie_of_Denmark' assigned as the mother of 'Theodora_of_Greece_and_Denmark' lacks the required 'Ancestor' class classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Anne-Marie_of_Denmark, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Theodora_of_Greece_and_Denmark' assigned as the mother of 'Maria-Olympia_of_Greece' lacks the required 'Ancestor' class classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Theodora_of_Greece_and_Denmark, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Theodora_of_Greece_and_Denmark' assigned as the mother of 'Arrietta_Morales_y_de_Grecia' lacks the required 'Ancestor' class classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Theodora_of_Greece_and_Denmark, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Frederik_IX_of_Denmark' assigned as the father of 'Anne-Marie_of_Denmark' lacks the required 'Ancestor' class classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederik_IX_of_Denmark, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Constantine_II_of_Greece' assigned as the father of 'Theodora_of_Greece_and_Denmark' lacks the required 'Ancestor' class classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Constantine_II_of_Greece, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Ingrid_of_Sweden' assigned as the mother of 'Anne-Marie_of_Denmark' lacks the required 'Ancestor' class classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Ingrid_of_Sweden, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Theodora_of_Greece_and_Denmark' assigned as the mother of 'Maria-Olympia_of_Greece' lacks the required 'Ancestor' class classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Theodora_of_Greece_and_Denmark, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Anne-Marie_of_Denmark' assigned as the mother of 'Theodora_of_Greece_and_Denmark' lacks the required 'Ancestor' class classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Anne-Marie_of_Denmark, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Theodora_of_Greece_and_Denmark' assigned as the mother of 'Arrietta_Morales_y_de_Grecia' lacks the required 'Ancestor' class classification.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Theodora_of_Greece_and_Denmark, :Ancestor)
 
 
 
@@ -647,29 +1089,56 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (3c84e56f-eb9a-48ca-8899-dc05c4cd422d)
- Call ID: 3c84e56f-eb9a-48ca-8899-dc05c4cd422d
+  AssignClass (73c14de6-c150-4665-94c0-c55edb1f482a)
+ Call ID: 73c14de6-c150-4665-94c0-c55edb1f482a
   Args:
     type: :Ancestor
-    source: Pedro_Henrique_of_Orleans-Braganza
-  AssignClass (312573ed-6b79-4ec5-a6b9-7d28161e8857)
- Call ID: 312573ed-6b79-4ec5-a6b9-7d28161e8857
+    source: :Paul_of_Greece
+  AssignClass (09026ad5-31c2-4040-ab96-aa0c37e62034)
+ Call ID: 09026ad5-31c2-4040-ab96-aa0c37e62034
   Args:
     type: :Ancestor
-    source: Emperor_Pedro_II
-  AssignClass (91f0265d-f5d9-4cc2-b119-64ca4de3a9b2)
- Call ID: 91f0265d-f5d9-4cc2-b119-64ca4de3a9b2
+    source: :Frederica_of_Hanover
+  AssignClass (aba35236-2e19-4212-b913-04dcb4306ee6)
+ Call ID: aba35236-2e19-4212-b913-04dcb4306ee6
+  Args:
+    source: :Frederik_IX_of_Denmark
+    type: :Ancestor
+  AssignClass (16464070-fad1-4bb2-880d-e259417b6500)
+ Call ID: 16464070-fad1-4bb2-880d-e259417b6500
   Args:
     type: :Ancestor
-    source: Eudes_of_Orleans-Braganza
-  AssignClass (9a42a2e9-e965-4e72-b4dc-d1aa34f406d3)
- Call ID: 9a42a2e9-e965-4e72-b4dc-d1aa34f406d3
+    source: :Ingrid_of_Sweden
+  AssignClass (6fa2ddd2-1291-4dbb-a0ea-a7f95c1a6396)
+ Call ID: 6fa2ddd2-1291-4dbb-a0ea-a7f95c1a6396
   Args:
     type: :Ancestor
-    source: Ana_Maria_de_Moraes_Barros
-  ValidateShacl (ca5695f2-44d8-47e6-98e5-09de5138ada9)
- Call ID: ca5695f2-44d8-47e6-98e5-09de5138ada9
+    source: :Constantine_II_of_Greece
+  AssignClass (2dbca4e1-2a57-4a94-b7c1-e53122174a09)
+ Call ID: 2dbca4e1-2a57-4a94-b7c1-e53122174a09
   Args:
+    source: :Anne-Marie_of_Denmark
+    type: :Ancestor
+  AssignClass (a3bfbeac-f929-4b26-bd5b-bb6b483de0b3)
+ Call ID: a3bfbeac-f929-4b26-bd5b-bb6b483de0b3
+  Args:
+    type: :Ancestor
+    source: :Theodora_of_Greece_and_Denmark
+  ValidateShacl (19fc2fd2-5f41-4a0b-8a9f-d517c06c43e9)
+ Call ID: 19fc2fd2-5f41-4a0b-8a9f-d517c06c43e9
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -690,29 +1159,59 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Luiz_Philippe_of_Orleans-Braganza a :Man,
-          :Person ;
-      :hasAncestor data:Emperor_Pedro_II,
-          data:Pedro_Henrique_of_Orleans-Braganza ;
-      :hasBirthYear 1969 ;
-      :hasFather data:Eudes_of_Orleans-Braganza ;
-      :hasMother data:Ana_Maria_de_Moraes_Barros .
+  data:Arrietta_Morales_y_de_Grecia a :Person,
+          :Woman ;
+      :hasMother data:Theodora_of_Greece_and_Denmark .
 
-  data:Ana_Maria_de_Moraes_Barros a :Ancestor,
+  data:Maria-Olympia_of_Greece a :Person,
+          :Woman ;
+      :hasMother data:Theodora_of_Greece_and_Denmark .
+
+  data:Sofia_of_Spain a :Person,
+          :Woman ;
+      :isAuntOf data:Theodora_of_Greece_and_Denmark .
+
+  data:Anne-Marie_of_Denmark a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Frederik_IX_of_Denmark ;
+      :hasMother data:Ingrid_of_Sweden .
+
+  data:Constantine_II_of_Greece a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Paul_of_Greece ;
+      :hasMother data:Frederica_of_Hanover .
+
+  data:Frederica_of_Hanover a :Ancestor,
           :Person,
           :Woman .
 
-  data:Emperor_Pedro_II a :Ancestor,
+  data:Frederik_IX_of_Denmark a :Ancestor,
           :Man,
           :Person .
 
-  data:Eudes_of_Orleans-Braganza a :Ancestor,
+  data:Ingrid_of_Sweden a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Matthew_Jeremiah_Kumar a :Man,
+          :Person .
+
+  data:Paul_of_Greece a :Ancestor,
           :Man,
           :Person .
 
-  data:Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
-          :Man,
-          :Person .
+  data:Theodora_of_Greece_and_Denmark a :Ancestor,
+          :Person,
+          :Woman ;
+      :alsoKnownAs "Theodora Greece"^^xsd:string,
+          "Theodora de Grèce"^^xsd:string ;
+      :hasBirthYear 1983 ;
+      :hasFather data:Constantine_II_of_Greece ;
+      :hasMarriageYear 2024 ;
+      :hasMother data:Anne-Marie_of_Denmark ;
+      :hasRelation data:Matthew_Jeremiah_Kumar .
 
 
 
@@ -724,6 +1223,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ce8651b9-2a82-4bcf-9e99-45959153bb93)
- Call ID: ce8651b9-2a82-4bcf-9e99-45959153bb93
+  Finish (532276d4-577e-4c57-bf7a-856cfae678fe)
+ Call ID: 532276d4-577e-4c57-bf7a-856cfae678fe
   Args:

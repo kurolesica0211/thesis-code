@@ -2,53 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:George_Ivar_Louis_Mountbatten a :Man,
-        :Person ;
-    :hasBirthYear 1961 ;
-    :hasBrother data:Lord_Ivar_Mountbatten ;
-    :hasFather data:3rd_Marquess_of_Milford_Haven ;
-    :hasMother data:Janet_Mercedes_Bryce ;
-    :hasRelation data:Clare_Husted_Steel,
-        data:Sarah_Georgina_Walker ;
-    :hasSex data:Male .
+data:Amanda_Knatchbull a :Person,
+        :Woman ;
+    :isDaughterOf data:Patricia_Mountbatten .
 
-data:3rd_Marquess_of_Milford_Haven a :Ancestor,
+data:Earl_Mountbatten_of_Burma a :Ancestor,
         :Man,
         :Person ;
-    :hasSex data:Male .
+    :isFatherOf data:Patricia_Mountbatten .
 
-data:Clare_Husted_Steel a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:George_Alfred_Walker a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Janet_Mercedes_Bryce a :Ancestor,
+data:Edwina_Ashley a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
+    :isMotherOf data:Patricia_Mountbatten .
 
-data:Jean_Maureen_Hatton a :Ancestor,
+data:Lady_Pamela_Hicks a :Person,
+        :Woman ;
+    :isSisterOf data:Patricia_Mountbatten .
+
+data:Nicholas_Knatchbull a :Man,
+        :Person ;
+    :isSonOf data:Patricia_Mountbatten .
+
+data:John_Knatchbull a :Man,
+        :Person .
+
+data:Patricia_Mountbatten a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
-
-data:Lord_Ivar_Mountbatten a :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Sarah_Georgina_Walker a :Person,
-        :Woman ;
-    :hasFather data:George_Alfred_Walker ;
-    :hasMother data:Jean_Maureen_Hatton ;
-    :hasSex data:Female .
-
-data:Female a :Female,
-        :Sex .
-
-data:Male a :Male,
-        :Sex .
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2017 ;
+    :hasMarriageYear 1946 ;
+    :hasRelation data:John_Knatchbull .
 

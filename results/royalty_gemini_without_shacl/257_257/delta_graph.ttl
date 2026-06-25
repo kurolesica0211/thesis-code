@@ -2,47 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Lu%C3%ADs_Gast%C3%A3o_of_Orl%C3%A9ans-Braganza a :Man,
-        :Person ;
-    :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
-    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
-
-data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Man,
-        :Person ;
-    :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
-    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
-
-data:Pia_Maria_of_Orl%C3%A9ans-Braganza a :Person,
+data:Princess_Victoria_Eugenia a :Person,
         :Woman ;
-    :hasFather data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza ;
-    :hasMother data:Maria_Pia_of_Bourbon-Two_Sicilies .
+    :isSisterOf data:Alexander_Mountbatten .
 
-data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza a :Man,
+data:Alexander_Mountbatten a :Man,
         :Person ;
-    :hasFather data:Gaston_Count_of_Eu ;
-    :hasMother data:Isabel_Princess_Imperial_of_Brazil .
+    :alsoKnownAs "Alexander Albert Mountbatten, 1st Marquess of Carisbrooke"^^xsd:string ;
+    :formerlyKnownAs "Prince Alexander Albert of Battenberg"^^xsd:string ;
+    :hasBirthYear 1886 ;
+    :hasDeathYear 1960 ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMarriageYear 1917 ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Lady_Irene_Denison,
+        data:Simon_Fleet ;
+    :knownAs "Drino"^^xsd:string .
 
-data:Pedro_of_Orl%C3%A9ans-Braganza a :Man,
-        :Person ;
-    :hasFather data:Gaston_Count_of_Eu ;
-    :hasMother data:Isabel_Princess_Imperial_of_Brazil .
+data:Julie_Countess_of_Hauke a :Person,
+        :Woman .
 
-data:Gaston_Count_of_Eu a :Man,
+data:Lady_Irene_Denison a :Person,
+        :Woman .
+
+data:Prince_Albert a :Man,
         :Person .
 
-data:Isabel_Princess_Imperial_of_Brazil a :Person,
-        :Woman .
+data:Prince_Alexander_of_Hesse_and_by_Rhine a :Man,
+        :Person .
 
-data:Lu%C3%ADs_of_Orl%C3%A9ans-Braganza a :Man,
+data:Prince_Henry_of_Battenberg a :Man,
         :Person ;
-    :hasBirthYear 1878 ;
-    :hasDeathYear 1920 ;
-    :hasFather data:Gaston_Count_of_Eu ;
-    :hasMarriageYear 1908 ;
-    :hasMother data:Isabel_Princess_Imperial_of_Brazil ;
-    :isBrotherOf data:Ant%C3%B4nio_of_Orl%C3%A9ans-Braganza,
-        data:Pedro_of_Orl%C3%A9ans-Braganza .
+    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasMother data:Julie_Countess_of_Hauke .
 
-data:Maria_Pia_of_Bourbon-Two_Sicilies a :Person,
+data:Princess_Beatrice_of_the_United_Kingdom a :Person,
+        :Woman ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
+
+data:Queen_Victoria a :Person,
         :Woman .
+
+data:Simon_Fleet a :Man,
+        :Person .
 

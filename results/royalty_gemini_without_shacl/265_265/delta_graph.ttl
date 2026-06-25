@@ -2,18 +2,49 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Dom_Lu%C3%ADs_Filipe a :Man ;
-    :hasBirthYear 1887 ;
-    :hasBrother data:Manuel_II ;
-    :hasDeathYear 1908 ;
-    :hasFather data:Carlos_I ;
-    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .
+data:William_Prince_of_Wales a :Man,
+        :Person ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Prince_Harry ;
+    :hasChild data:Prince_George,
+        data:Prince_Louis,
+        data:Princess_Charlotte ;
+    :hasFather data:King_Charles_III ;
+    :hasMarriageYear 2011 ;
+    :hasMother data:Diana_Princess_of_Wales ;
+    :hasRelation data:Catherine_Princess_of_Wales .
 
-data:Manuel_II a :Man ;
-    :hasFather data:Carlos_I ;
-    :hasMother data:Am%C3%A9lie_dOrl%C3%A9ans .
+data:Prince_George a :Man,
+        :Person ;
+    :hasMother data:Catherine_Princess_of_Wales .
 
-data:Am%C3%A9lie_dOrl%C3%A9ans a :Woman .
+data:Prince_Harry a :Man,
+        :Person ;
+    :hasFather data:King_Charles_III ;
+    :hasMother data:Diana_Princess_of_Wales .
 
-data:Carlos_I a :Man .
+data:Prince_Louis a :Man,
+        :Person ;
+    :hasMother data:Catherine_Princess_of_Wales .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person .
+
+data:Princess_Charlotte a :Person,
+        :Woman ;
+    :hasMother data:Catherine_Princess_of_Wales .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Diana_Princess_of_Wales a :Person,
+        :Woman .
+
+data:King_Charles_III a :Man,
+        :Person ;
+    :hasFather data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasMother data:Queen_Elizabeth_II .
+
+data:Catherine_Princess_of_Wales a :Person,
+        :Woman .
 

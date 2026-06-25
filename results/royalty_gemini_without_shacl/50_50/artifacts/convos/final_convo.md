@@ -188,6 +188,8 @@ Alexander, Crown Prince of Yugoslavia.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -203,39 +205,9 @@ Alexander, Crown Prince of Yugoslavia.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -250,6 +222,23 @@ Alexander, Crown Prince of Yugoslavia.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -267,6 +256,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -334,29 +338,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -365,6 +361,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -377,6 +381,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -385,17 +391,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -423,6 +431,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -438,487 +530,356 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0fc4e9d5-1ffb-40b7-98a7-e3e303192111)
- Call ID: 0fc4e9d5-1ffb-40b7-98a7-e3e303192111
-  Args:
-    type: :Man
-    source: Alexander
-  AssignClass (1ab8eb33-6c15-4327-bbcf-9708e1c0c156)
- Call ID: 1ab8eb33-6c15-4327-bbcf-9708e1c0c156
+  AssignClass (37865ba6-fb23-4d94-8672-172bdb7fd4ac)
+ Call ID: 37865ba6-fb23-4d94-8672-172bdb7fd4ac
   Args:
     source: Alexander
-    type: :Person
-  AssignClass (bb593c5d-5cf5-47a1-8b3d-342615aa7219)
- Call ID: bb593c5d-5cf5-47a1-8b3d-342615aa7219
-  Args:
-    source: Constantine_I
     type: :Man
-  AssignClass (055cd33f-6781-4cd7-a3bc-37317290f341)
- Call ID: 055cd33f-6781-4cd7-a3bc-37317290f341
-  Args:
-    source: Constantine_I
-    type: :Person
-  AssignClass (2c717d33-3ccc-4fc6-8463-70dcb321fce4)
- Call ID: 2c717d33-3ccc-4fc6-8463-70dcb321fce4
-  Args:
-    source: Sophia_of_Prussia
-    type: :Woman
-  AssignClass (028dd7e6-9e3e-4221-853b-5f4e683fd01d)
- Call ID: 028dd7e6-9e3e-4221-853b-5f4e683fd01d
+  AssignClass (b828dbbc-d2af-456e-ae8a-b5c7615bc2d1)
+ Call ID: b828dbbc-d2af-456e-ae8a-b5c7615bc2d1
   Args:
     type: :Person
-    source: Sophia_of_Prussia
-  AssignClass (acd40aa5-959c-4f8b-8a98-8b445cae4891)
- Call ID: acd40aa5-959c-4f8b-8a98-8b445cae4891
-  Args:
-    type: :Man
-    source: George_I
-  AssignClass (a1f3fa80-0159-4b33-b426-65af1bb7a555)
- Call ID: a1f3fa80-0159-4b33-b426-65af1bb7a555
-  Args:
-    type: :Person
-    source: George_I
-  AssignClass (8974c685-af53-41d1-9df3-e6aaf21149cc)
- Call ID: 8974c685-af53-41d1-9df3-e6aaf21149cc
-  Args:
-    source: Olga_Constantinovna_of_Russia
-    type: :Woman
-  AssignClass (b019f007-15e5-4a57-bbaa-5f1d239c7568)
- Call ID: b019f007-15e5-4a57-bbaa-5f1d239c7568
-  Args:
-    source: Olga_Constantinovna_of_Russia
-    type: :Person
-  AssignClass (a7f65033-0374-43b9-a33e-6c387e6cad4a)
- Call ID: a7f65033-0374-43b9-a33e-6c387e6cad4a
-  Args:
-    type: :Man
-    source: Frederick_III
-  AssignClass (2e90d0b0-5289-43bc-98d8-f63bc5a5ca67)
- Call ID: 2e90d0b0-5289-43bc-98d8-f63bc5a5ca67
-  Args:
-    source: Frederick_III
-    type: :Person
-  AssignClass (ba93742c-e47f-40aa-aba2-3bf1f9931946)
- Call ID: ba93742c-e47f-40aa-aba2-3bf1f9931946
-  Args:
-    type: :Woman
-    source: Victoria_Princess_Royal
-  AssignClass (9c96f361-ffe3-45d8-a080-c24ffc870683)
- Call ID: 9c96f361-ffe3-45d8-a080-c24ffc870683
-  Args:
-    source: Victoria_Princess_Royal
-    type: :Person
-  AssignClass (53bb5f30-cd3c-48b4-bc53-e14083dfc17d)
- Call ID: 53bb5f30-cd3c-48b4-bc53-e14083dfc17d
-  Args:
-    type: :Man
-    source: George_II
-  AssignClass (70a39e1d-3f1b-47ec-a5e1-ef6e6b2967b9)
- Call ID: 70a39e1d-3f1b-47ec-a5e1-ef6e6b2967b9
-  Args:
-    type: :Person
-    source: George_II
-  AssignClass (6a30b876-c065-4340-9944-938b310f249d)
- Call ID: 6a30b876-c065-4340-9944-938b310f249d
-  Args:
-    type: :Woman
-    source: Helen_of_Greece
-  AssignClass (7ccc47fe-1a18-484c-bfba-e6109d7ccfe8)
- Call ID: 7ccc47fe-1a18-484c-bfba-e6109d7ccfe8
-  Args:
-    source: Helen_of_Greece
-    type: :Person
-  AssignClass (ed4efe8f-1771-4a9c-9037-fa672a71ccb6)
- Call ID: ed4efe8f-1771-4a9c-9037-fa672a71ccb6
-  Args:
-    source: Paul_of_Greece
-    type: :Man
-  AssignClass (fb88367a-bcd6-409a-b9fc-33f76007229a)
- Call ID: fb88367a-bcd6-409a-b9fc-33f76007229a
-  Args:
-    source: Paul_of_Greece
-    type: :Person
-  AssignClass (abe10a20-5ca4-4079-ac89-bb02dd1cdc85)
- Call ID: abe10a20-5ca4-4079-ac89-bb02dd1cdc85
-  Args:
-    source: Aspasia_Manos
-    type: :Woman
-  AssignClass (acffdcfb-ce68-4018-b130-0ca6d9a93911)
- Call ID: acffdcfb-ce68-4018-b130-0ca6d9a93911
-  Args:
-    type: :Person
-    source: Aspasia_Manos
-  AssignClass (ef9c39ad-c310-4072-9f9f-db57bdf9ec3e)
- Call ID: ef9c39ad-c310-4072-9f9f-db57bdf9ec3e
-  Args:
-    type: :Man
-    source: Petros_Manos
-  AssignClass (d2a68125-a5cf-44e2-bb37-344d0d4d9ea0)
- Call ID: d2a68125-a5cf-44e2-bb37-344d0d4d9ea0
-  Args:
-    source: Petros_Manos
-    type: :Person
-  AssignClass (4319fd0f-4570-4996-83d1-3f8f15971d02)
- Call ID: 4319fd0f-4570-4996-83d1-3f8f15971d02
-  Args:
-    source: Maria_Argyropoulos
-    type: :Woman
-  AssignClass (fe83c96e-417e-479e-8406-b01262255244)
- Call ID: fe83c96e-417e-479e-8406-b01262255244
-  Args:
-    type: :Person
-    source: Maria_Argyropoulos
-  AssignClass (6cd7169e-46ef-442a-8c8d-e8003e97448d)
- Call ID: 6cd7169e-46ef-442a-8c8d-e8003e97448d
-  Args:
-    source: Alexandra_of_Greece
-    type: :Woman
-  AssignClass (061cc072-39ca-4900-a73d-96f9f79a80d4)
- Call ID: 061cc072-39ca-4900-a73d-96f9f79a80d4
-  Args:
-    type: :Person
-    source: Alexandra_of_Greece
-  AssignClass (afb7b8bf-3250-46d0-afbc-56e9b4704530)
- Call ID: afb7b8bf-3250-46d0-afbc-56e9b4704530
-  Args:
-    type: :Woman
-    source: Katherine_of_Greece
-  AssignClass (d3839102-9a5a-4501-88a1-6af09b863348)
- Call ID: d3839102-9a5a-4501-88a1-6af09b863348
-  Args:
-    type: :Person
-    source: Katherine_of_Greece
-  AssignClass (6907e6e3-892a-4008-989d-960b287a49ac)
- Call ID: 6907e6e3-892a-4008-989d-960b287a49ac
-  Args:
-    type: :Man
-    source: Prince_George_of_Greece
-  AssignClass (7d952c1e-e897-4fad-9328-a264fadbeaf2)
- Call ID: 7d952c1e-e897-4fad-9328-a264fadbeaf2
-  Args:
-    source: Prince_George_of_Greece
-    type: :Person
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-
-  data:Alexander a :Man,
-          :Person .
-
-  data:Alexandra_of_Greece a :Person,
-          :Woman .
-
-  data:Aspasia_Manos a :Person,
-          :Woman .
-
-  data:Constantine_I a :Man,
-          :Person .
-
-  data:Frederick_III a :Man,
-          :Person .
-
-  data:George_I a :Man,
-          :Person .
-
-  data:George_II a :Man,
-          :Person .
-
-  data:Helen_of_Greece a :Person,
-          :Woman .
-
-  data:Katherine_of_Greece a :Person,
-          :Woman .
-
-  data:Maria_Argyropoulos a :Person,
-          :Woman .
-
-  data:Olga_Constantinovna_of_Russia a :Person,
-          :Woman .
-
-  data:Paul_of_Greece a :Man,
-          :Person .
-
-  data:Petros_Manos a :Man,
-          :Person .
-
-  data:Prince_George_of_Greece a :Man,
-          :Person .
-
-  data:Sophia_of_Prussia a :Person,
-          :Woman .
-
-  data:Victoria_Princess_Royal a :Person,
-          :Woman .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AddTriple (49e0e660-1d5d-4e35-b7b3-beb468f73630)
- Call ID: 49e0e660-1d5d-4e35-b7b3-beb468f73630
-  Args:
-    relation: :hasFather
-    target: Constantine_I
     source: Alexander
-  AddTriple (22fe1c4e-5236-4ffd-84f2-1e18653935ae)
- Call ID: 22fe1c4e-5236-4ffd-84f2-1e18653935ae
+  AddLiteral (4221295e-e6c6-44c5-84b7-e5e80cc4f13a)
+ Call ID: 4221295e-e6c6-44c5-84b7-e5e80cc4f13a
   Args:
-    target: Sophia_of_Prussia
-    relation: :hasMother
     source: Alexander
-  AddTriple (8313045c-fc54-44ab-827c-1ff7fcdb52f5)
- Call ID: 8313045c-fc54-44ab-827c-1ff7fcdb52f5
-  Args:
-    source: Constantine_I
-    relation: :hasFather
-    target: George_I
-  AddTriple (7cb54d5a-5fef-4342-bc94-4eb158767c3a)
- Call ID: 7cb54d5a-5fef-4342-bc94-4eb158767c3a
-  Args:
-    target: Olga_Constantinovna_of_Russia
-    relation: :hasMother
-    source: Constantine_I
-  AddTriple (8c3455fe-ca46-4418-97ef-8904ac2ffeb4)
- Call ID: 8c3455fe-ca46-4418-97ef-8904ac2ffeb4
-  Args:
-    source: Sophia_of_Prussia
-    target: Frederick_III
-    relation: :hasFather
-  AddTriple (57be1bd0-3298-43b6-b5c3-9e265e6a0e98)
- Call ID: 57be1bd0-3298-43b6-b5c3-9e265e6a0e98
-  Args:
-    relation: :hasMother
-    target: Victoria_Princess_Royal
-    source: Sophia_of_Prussia
-  AddTriple (e1d33808-24c3-4fad-9124-929c6dfe7f64)
- Call ID: e1d33808-24c3-4fad-9124-929c6dfe7f64
-  Args:
-    source: George_II
-    target: Constantine_I
-    relation: :hasFather
-  AddTriple (f14b9c97-bd4e-4600-abed-44e7e981d51f)
- Call ID: f14b9c97-bd4e-4600-abed-44e7e981d51f
-  Args:
-    source: George_II
-    relation: :hasMother
-    target: Sophia_of_Prussia
-  AddTriple (70820053-b50f-4993-9d90-8ddfb9d9015f)
- Call ID: 70820053-b50f-4993-9d90-8ddfb9d9015f
-  Args:
-    target: Constantine_I
-    relation: :hasFather
-    source: Helen_of_Greece
-  AddTriple (f69b4577-94fb-4449-9219-8c3f621d1acd)
- Call ID: f69b4577-94fb-4449-9219-8c3f621d1acd
-  Args:
-    target: Sophia_of_Prussia
-    relation: :hasMother
-    source: Helen_of_Greece
-  AddTriple (3de23424-2990-45f8-bc27-98d449af30a4)
- Call ID: 3de23424-2990-45f8-bc27-98d449af30a4
-  Args:
-    source: Paul_of_Greece
-    relation: :hasFather
-    target: Constantine_I
-  AddTriple (19b68ad4-e486-4773-9a9f-7c857f022fca)
- Call ID: 19b68ad4-e486-4773-9a9f-7c857f022fca
-  Args:
-    source: Paul_of_Greece
-    target: Sophia_of_Prussia
-    relation: :hasMother
-  AddTriple (2a8fb401-a102-4326-b3fd-30df889972f1)
- Call ID: 2a8fb401-a102-4326-b3fd-30df889972f1
-  Args:
-    relation: :hasFather
-    target: Constantine_I
-    source: Katherine_of_Greece
-  AddTriple (34efc4f5-046d-4047-9652-b131103c561a)
- Call ID: 34efc4f5-046d-4047-9652-b131103c561a
-  Args:
-    source: Katherine_of_Greece
-    relation: :hasMother
-    target: Sophia_of_Prussia
-  AddTriple (139bb777-afb8-428e-8240-caab391b438d)
- Call ID: 139bb777-afb8-428e-8240-caab391b438d
-  Args:
-    target: Petros_Manos
-    relation: :hasFather
-    source: Aspasia_Manos
-  AddTriple (b13a9f44-9ec1-4556-95e7-efaf51cbbab7)
- Call ID: b13a9f44-9ec1-4556-95e7-efaf51cbbab7
-  Args:
-    target: Maria_Argyropoulos
-    relation: :hasMother
-    source: Aspasia_Manos
-  AddTriple (7f10cfdc-c66f-4c34-b949-5cc2c8c43c0b)
- Call ID: 7f10cfdc-c66f-4c34-b949-5cc2c8c43c0b
-  Args:
-    source: Alexandra_of_Greece
-    target: Alexander
-    relation: :hasFather
-  AddTriple (caffd6cf-bdce-4fb2-b329-d62eb4b7f22f)
- Call ID: caffd6cf-bdce-4fb2-b329-d62eb4b7f22f
-  Args:
-    relation: :hasMother
-    target: Aspasia_Manos
-    source: Alexandra_of_Greece
-  AddLiteral (6aecd4ff-2ada-4206-87e8-f2c954aed494)
- Call ID: 6aecd4ff-2ada-4206-87e8-f2c954aed494
-  Args:
     relation: :hasBirthYear
-    literal_value: 1893
-    source: Alexander
     literal_type: xsd:integer
-  AddLiteral (3720e2a3-dfb2-4b81-9b71-6e1af5ab8b91)
- Call ID: 3720e2a3-dfb2-4b81-9b71-6e1af5ab8b91
+    literal_value: 1893
+  AddLiteral (f11b4902-bb5c-4535-816b-d8d51ec983ca)
+ Call ID: f11b4902-bb5c-4535-816b-d8d51ec983ca
   Args:
     literal_type: xsd:integer
-    relation: :hasDeathYear
     literal_value: 1920
     source: Alexander
-  AddLiteral (479be221-43e9-4001-8904-1bca21792b16)
- Call ID: 479be221-43e9-4001-8904-1bca21792b16
+    relation: :hasDeathYear
+  AddTriple (3f4830c0-d18d-45a0-bd21-90e9d3811f5e)
+ Call ID: 3f4830c0-d18d-45a0-bd21-90e9d3811f5e
   Args:
-    literal_type: xsd:integer
+    relation: :hasSex
+    source: Alexander
+    target: :Male
+  AssignClass (31177346-96a1-439f-9645-c70a751d8e74)
+ Call ID: 31177346-96a1-439f-9645-c70a751d8e74
+  Args:
+    type: :Man
+    source: Constantine_I
+  AssignClass (3b693056-d1e1-46a1-9ce4-3ff4bb3a5696)
+ Call ID: 3b693056-d1e1-46a1-9ce4-3ff4bb3a5696
+  Args:
+    type: :Person
+    source: Constantine_I
+  AddTriple (77990dfb-2d64-4fa4-8bf9-cd174968036b)
+ Call ID: 77990dfb-2d64-4fa4-8bf9-cd174968036b
+  Args:
+    relation: :hasFather
+    source: Alexander
+    target: :Constantine_I
+  AssignClass (dfbd1af2-8f8a-4e73-a2cb-b6fa7514956e)
+ Call ID: dfbd1af2-8f8a-4e73-a2cb-b6fa7514956e
+  Args:
+    source: Sophia_of_Prussia
+    type: :Woman
+  AssignClass (24402f01-cb32-4103-9caf-11e297b62134)
+ Call ID: 24402f01-cb32-4103-9caf-11e297b62134
+  Args:
+    source: Sophia_of_Prussia
+    type: :Person
+  AddTriple (cf87c7dc-1867-4397-b444-bcb628282270)
+ Call ID: cf87c7dc-1867-4397-b444-bcb628282270
+  Args:
+    relation: :hasMother
+    source: Alexander
+    target: :Sophia_of_Prussia
+  AssignClass (dd096f14-752d-4528-bf28-c2a507708557)
+ Call ID: dd096f14-752d-4528-bf28-c2a507708557
+  Args:
+    type: :Man
+    source: George_I
+  AssignClass (595e1a48-2459-47ff-bdcb-8435e4a5d327)
+ Call ID: 595e1a48-2459-47ff-bdcb-8435e4a5d327
+  Args:
+    type: :Person
+    source: George_I
+  AddTriple (d44d4ba0-8e52-4e32-bb48-e80fc5a963aa)
+ Call ID: d44d4ba0-8e52-4e32-bb48-e80fc5a963aa
+  Args:
+    relation: :hasFather
+    target: :George_I
+    source: Constantine_I
+  AssignClass (986c1f43-d487-4cdb-9901-80772d4c581a)
+ Call ID: 986c1f43-d487-4cdb-9901-80772d4c581a
+  Args:
+    type: :Woman
+    source: Olga_Constantinovna
+  AssignClass (eb745c69-279d-4587-976d-74af2a80ce5b)
+ Call ID: eb745c69-279d-4587-976d-74af2a80ce5b
+  Args:
+    type: :Person
+    source: Olga_Constantinovna
+  AddTriple (1b7c7bbd-001d-441f-b285-bed4ce47bec3)
+ Call ID: 1b7c7bbd-001d-441f-b285-bed4ce47bec3
+  Args:
+    target: :Olga_Constantinovna
+    source: Constantine_I
+    relation: :hasMother
+  AssignClass (be8d8a27-43dd-4584-807d-163eac90150b)
+ Call ID: be8d8a27-43dd-4584-807d-163eac90150b
+  Args:
+    type: :Man
+    source: Frederick_III
+  AssignClass (26377485-b124-4371-985b-934531bf26f9)
+ Call ID: 26377485-b124-4371-985b-934531bf26f9
+  Args:
+    source: Frederick_III
+    type: :Person
+  AddTriple (df9a01c2-e523-41f5-a288-0d39b570ca35)
+ Call ID: df9a01c2-e523-41f5-a288-0d39b570ca35
+  Args:
+    relation: :hasFather
+    target: :Frederick_III
+    source: Sophia_of_Prussia
+  AssignClass (ae71864c-d004-4585-abe7-6001b4ed30b8)
+ Call ID: ae71864c-d004-4585-abe7-6001b4ed30b8
+  Args:
+    source: Victoria_Princess_Royal
+    type: :Woman
+  AssignClass (b8b660e4-6f97-4a71-9566-7bfc509abf3a)
+ Call ID: b8b660e4-6f97-4a71-9566-7bfc509abf3a
+  Args:
+    type: :Person
+    source: Victoria_Princess_Royal
+  AddTriple (348f46d1-9051-4d48-aa16-4b23a9ce7b72)
+ Call ID: 348f46d1-9051-4d48-aa16-4b23a9ce7b72
+  Args:
+    target: :Victoria_Princess_Royal
+    source: Sophia_of_Prussia
+    relation: :hasMother
+  AssignClass (636fd940-535a-48f6-8020-0e24a943bd20)
+ Call ID: 636fd940-535a-48f6-8020-0e24a943bd20
+  Args:
+    type: :Woman
+    source: Helen
+  AssignClass (c19142e7-ea68-4640-bf82-f6e35d7b927a)
+ Call ID: c19142e7-ea68-4640-bf82-f6e35d7b927a
+  Args:
+    type: :Person
+    source: Helen
+  AddTriple (920a905f-049e-4ab7-9bce-4c5f58d96bb1)
+ Call ID: 920a905f-049e-4ab7-9bce-4c5f58d96bb1
+  Args:
+    relation: :hasSister
+    source: Alexander
+    target: :Helen
+  AssignClass (1d1f3ca3-c2d2-4ff6-99d9-edd427a6a6dc)
+ Call ID: 1d1f3ca3-c2d2-4ff6-99d9-edd427a6a6dc
+  Args:
+    source: George
+    type: :Man
+  AssignClass (2ce2c347-90cc-4576-9d69-d4ab6a2f478b)
+ Call ID: 2ce2c347-90cc-4576-9d69-d4ab6a2f478b
+  Args:
+    type: :Person
+    source: George
+  AddTriple (769c9d10-5de4-45eb-9f57-d48afc284ed2)
+ Call ID: 769c9d10-5de4-45eb-9f57-d48afc284ed2
+  Args:
+    relation: :hasBrother
+    source: Alexander
+    target: :George
+  AssignClass (7601a7da-762f-4688-8e23-260e1be065a2)
+ Call ID: 7601a7da-762f-4688-8e23-260e1be065a2
+  Args:
+    type: :Man
+    source: Paul
+  AssignClass (b9c85b22-4de0-4f5d-99e6-c82619944be0)
+ Call ID: b9c85b22-4de0-4f5d-99e6-c82619944be0
+  Args:
+    type: :Person
+    source: Paul
+  AddTriple (9aaea161-834b-4266-a502-0d19fdd32c1b)
+ Call ID: 9aaea161-834b-4266-a502-0d19fdd32c1b
+  Args:
+    target: :Paul
+    source: Alexander
+    relation: :hasBrother
+  AssignClass (e6102deb-d58a-4754-9f1c-c78a19b73e71)
+ Call ID: e6102deb-d58a-4754-9f1c-c78a19b73e71
+  Args:
+    type: :Woman
+    source: Aspasia_Manos
+  AssignClass (cc594827-c80e-47cf-a7fb-b650275281b3)
+ Call ID: cc594827-c80e-47cf-a7fb-b650275281b3
+  Args:
+    source: Aspasia_Manos
+    type: :Person
+  AddLiteral (6752fc91-c0a8-4f49-bca5-191cf93e8221)
+ Call ID: 6752fc91-c0a8-4f49-bca5-191cf93e8221
+  Args:
     literal_value: 1919
+    literal_type: xsd:integer
     source: Alexander
     relation: :hasMarriageYear
-  AddLiteral (248a81c4-de40-4ccb-9185-918ca025e76a)
- Call ID: 248a81c4-de40-4ccb-9185-918ca025e76a
+  AddTriple (c37f6cd5-e08f-42b1-9cbe-2bc840d01576)
+ Call ID: c37f6cd5-e08f-42b1-9cbe-2bc840d01576
   Args:
-    relation: :knownAs
-    literal_value: Alexandra
-    source: Alexandra_of_Greece
-    literal_type: xsd:string
+    target: :Aspasia_Manos
+    source: Alexander
+    relation: :hasRelation
+  AssignClass (09486e32-7c59-4581-ad31-bbab55076455)
+ Call ID: 09486e32-7c59-4581-ad31-bbab55076455
+  Args:
+    type: :Man
+    source: Petros_Manos
+  AssignClass (7b0c66e8-4718-4f5e-adde-53196dbce4de)
+ Call ID: 7b0c66e8-4718-4f5e-adde-53196dbce4de
+  Args:
+    source: Petros_Manos
+    type: :Person
+  AddTriple (0a494b5d-69de-409f-9e25-24348361a6e1)
+ Call ID: 0a494b5d-69de-409f-9e25-24348361a6e1
+  Args:
+    source: Aspasia_Manos
+    target: :Petros_Manos
+    relation: :hasFather
+  AssignClass (f283aa17-aeb0-4db5-898c-314396ab4770)
+ Call ID: f283aa17-aeb0-4db5-898c-314396ab4770
+  Args:
+    type: :Woman
+    source: Maria_Argyropoulos
+  AssignClass (f9cb2ddf-907e-4a2c-8f16-436bf4a99bcf)
+ Call ID: f9cb2ddf-907e-4a2c-8f16-436bf4a99bcf
+  Args:
+    source: Maria_Argyropoulos
+    type: :Person
+  AddTriple (099a8ef5-0619-49d6-9b3f-5f6011212a42)
+ Call ID: 099a8ef5-0619-49d6-9b3f-5f6011212a42
+  Args:
+    relation: :hasMother
+    source: Aspasia_Manos
+    target: :Maria_Argyropoulos
+  AssignClass (c5fea795-226a-4644-9fda-f3f2238bf2db)
+ Call ID: c5fea795-226a-4644-9fda-f3f2238bf2db
+  Args:
+    type: :Woman
+    source: Alexandra
+  AssignClass (bb2c5965-8c29-4762-9de0-c6a98cba5cff)
+ Call ID: bb2c5965-8c29-4762-9de0-c6a98cba5cff
+  Args:
+    source: Alexandra
+    type: :Person
+  AddTriple (1458318b-7b54-4844-afe2-c0d062fa6713)
+ Call ID: 1458318b-7b54-4844-afe2-c0d062fa6713
+  Args:
+    relation: :hasFather
+    source: Alexandra
+    target: :Alexander
+  AddTriple (e1a4c8bb-8ae3-44b3-9ace-aa2a1a7a71e1)
+ Call ID: e1a4c8bb-8ae3-44b3-9ace-aa2a1a7a71e1
+  Args:
+    relation: :hasMother
+    target: :Aspasia_Manos
+    source: Alexandra
+  Finish (e3cdfca9-7747-46e5-b69f-0d38d1f0a46a)
+ Call ID: e3cdfca9-7747-46e5-b69f-0d38d1f0a46a
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1011,82 +972,95 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexandra_of_Greece a :Person,
+  data:Alexandra a :Person,
           :Woman ;
       :hasFather data:Alexander ;
-      :hasMother data:Aspasia_Manos ;
-      :knownAs "Alexandra"^^xsd:string .
-
-  data:George_II a :Man,
-          :Person ;
-      :hasFather data:Constantine_I ;
-      :hasMother data:Sophia_of_Prussia .
-
-  data:Helen_of_Greece a :Person,
-          :Woman ;
-      :hasFather data:Constantine_I ;
-      :hasMother data:Sophia_of_Prussia .
-
-  data:Katherine_of_Greece a :Person,
-          :Woman ;
-      :hasFather data:Constantine_I ;
-      :hasMother data:Sophia_of_Prussia .
-
-  data:Paul_of_Greece a :Man,
-          :Person ;
-      :hasFather data:Constantine_I ;
-      :hasMother data:Sophia_of_Prussia .
-
-  data:Prince_George_of_Greece a :Man,
-          :Person .
+      :hasMother data:Aspasia_Manos .
 
   data:Alexander a :Man,
           :Person ;
       :hasBirthYear 1893 ;
+      :hasBrother data:George,
+          data:Paul ;
       :hasDeathYear 1920 ;
       :hasFather data:Constantine_I ;
       :hasMarriageYear 1919 ;
-      :hasMother data:Sophia_of_Prussia .
+      :hasMother data:Sophia_of_Prussia ;
+      :hasRelation data:Aspasia_Manos ;
+      :hasSex data:Male ;
+      :hasSister data:Helen .
 
-  data:Aspasia_Manos a :Person,
-          :Woman ;
-      :hasFather data:Petros_Manos ;
-      :hasMother data:Maria_Argyropoulos .
+  data:Constantine_I a :Man,
+          :Person ;
+      :hasFather data:George_I ;
+      :hasMother data:Olga_Constantinovna .
 
   data:Frederick_III a :Man,
+          :Person .
+
+  data:George a :Man,
           :Person .
 
   data:George_I a :Man,
           :Person .
 
+  data:Helen a :Person,
+          :Woman .
+
   data:Maria_Argyropoulos a :Person,
           :Woman .
 
-  data:Olga_Constantinovna_of_Russia a :Person,
+  data:Olga_Constantinovna a :Person,
           :Woman .
+
+  data:Paul a :Man,
+          :Person .
 
   data:Petros_Manos a :Man,
           :Person .
-
-  data:Victoria_Princess_Royal a :Person,
-          :Woman .
-
-  data:Constantine_I a :Man,
-          :Person ;
-      :hasFather data:George_I ;
-      :hasMother data:Olga_Constantinovna_of_Russia .
 
   data:Sophia_of_Prussia a :Person,
           :Woman ;
       :hasFather data:Frederick_III ;
       :hasMother data:Victoria_Princess_Royal .
 
+  data:Victoria_Princess_Royal a :Person,
+          :Woman .
 
+  data:Aspasia_Manos a :Person,
+          :Woman ;
+      :hasFather data:Petros_Manos ;
+      :hasMother data:Maria_Argyropoulos .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Male']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  Finish (19dd252d-9ec4-4b2a-b60a-d5347c43dc58)
- Call ID: 19dd252d-9ec4-4b2a-b60a-d5347c43dc58
+  AssignClass (55fc0fc5-4aca-459f-b616-53ed6fbc6be2)
+ Call ID: 55fc0fc5-4aca-459f-b616-53ed6fbc6be2
+  Args:
+    type: :Sex
+    source: Male
+  Finish (386c88f2-4b74-4e8b-a4b2-c73fbcc14b30)
+ Call ID: 386c88f2-4b74-4e8b-a4b2-c73fbcc14b30
   Args:

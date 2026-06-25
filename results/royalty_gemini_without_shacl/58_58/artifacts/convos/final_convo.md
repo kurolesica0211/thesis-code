@@ -165,6 +165,8 @@ But the project was terminated prematurely in 1932, when Manuel died unexpectedl
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -180,39 +182,9 @@ But the project was terminated prematurely in 1932, when Manuel died unexpectedl
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -227,6 +199,23 @@ But the project was terminated prematurely in 1932, when Manuel died unexpectedl
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -244,6 +233,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -311,29 +315,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -342,6 +338,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -354,6 +358,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -362,17 +368,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -400,6 +408,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -415,184 +507,129 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (3f1ed3aa-a9a0-48bc-b0f2-13d4fb2cdab6)
- Call ID: 3f1ed3aa-a9a0-48bc-b0f2-13d4fb2cdab6
-  Args:
-    type: :Man
-    source: Manuel_II
-  AssignClass (73aabdb4-b3a8-48f3-b2a5-05daef2f00df)
- Call ID: 73aabdb4-b3a8-48f3-b2a5-05daef2f00df
+  AssignClass (aa1e416f-e348-4e78-ad62-2b99a4588bd8)
+ Call ID: aa1e416f-e348-4e78-ad62-2b99a4588bd8
   Args:
     source: Manuel_II
-    type: :Person
-  AssignClass (be1e60d1-0a3d-4fef-8652-d3d91633e9b7)
- Call ID: be1e60d1-0a3d-4fef-8652-d3d91633e9b7
+    type: :Man
+  AssignClass (5618ea3a-e696-45c2-bed5-4e2a284d90a2)
+ Call ID: 5618ea3a-e696-45c2-bed5-4e2a284d90a2
   Args:
+    type: :Person
     source: Manuel_II
-    type: :Ancestor
-  AssignClass (8c7def70-b80b-4228-9c16-72f47a610fcb)
- Call ID: 8c7def70-b80b-4228-9c16-72f47a610fcb
+  AddLiteral (124bc618-3e4b-48f4-9111-6ed92d6fd684)
+ Call ID: 124bc618-3e4b-48f4-9111-6ed92d6fd684
   Args:
-    source: Carlos_I
-    type: :Man
-  AssignClass (8e13cf93-3499-4f0c-9ac4-59f58bba0ca4)
- Call ID: 8e13cf93-3499-4f0c-9ac4-59f58bba0ca4
-  Args:
-    type: :Person
-    source: Carlos_I
-  AssignClass (be48b2f4-8d25-423e-9822-abff9f889579)
- Call ID: be48b2f4-8d25-423e-9822-abff9f889579
-  Args:
-    source: Carlos_I
-    type: :Ancestor
-  AssignClass (c782ccb2-c38a-405e-9ffd-322c5afeaed1)
- Call ID: c782ccb2-c38a-405e-9ffd-322c5afeaed1
-  Args:
-    type: :Woman
-    source: Amélie_of_Orléans
-  AssignClass (dd18ebc9-93b7-4430-96e5-13716fb39c1d)
- Call ID: dd18ebc9-93b7-4430-96e5-13716fb39c1d
-  Args:
-    source: Amélie_of_Orléans
-    type: :Person
-  AssignClass (26b6bc9e-16db-49fe-9fcd-db6c64ef96e8)
- Call ID: 26b6bc9e-16db-49fe-9fcd-db6c64ef96e8
-  Args:
-    source: Amélie_of_Orléans
-    type: :Ancestor
-  AssignClass (113fc397-3e10-4759-a293-9f4ee36f95b5)
- Call ID: 113fc397-3e10-4759-a293-9f4ee36f95b5
-  Args:
-    type: :Man
-    source: Luís_Filipe
-  AssignClass (85fb2768-28e2-4303-9aac-88d63384f7bc)
- Call ID: 85fb2768-28e2-4303-9aac-88d63384f7bc
-  Args:
-    type: :Person
-    source: Luís_Filipe
-  AssignClass (e344f5bf-45af-49d0-a770-fb7c992c8e23)
- Call ID: e344f5bf-45af-49d0-a770-fb7c992c8e23
-  Args:
-    source: Maria_Pia_of_Savoy
-    type: :Woman
-  AssignClass (b1481846-441f-493d-aa60-d4ef3cbeba0f)
- Call ID: b1481846-441f-493d-aa60-d4ef3cbeba0f
-  Args:
-    type: :Person
-    source: Maria_Pia_of_Savoy
-  AssignClass (0983ad03-89d5-45fd-a47c-c1da3eea9cfc)
- Call ID: 0983ad03-89d5-45fd-a47c-c1da3eea9cfc
-  Args:
-    type: :Ancestor
-    source: Maria_Pia_of_Savoy
-  AssignClass (cfe87de3-8d50-40d3-abc2-3775cce4b1ce)
- Call ID: cfe87de3-8d50-40d3-abc2-3775cce4b1ce
-  Args:
-    source: Augusta_Victoria
-    type: :Woman
-  AssignClass (9fda8df9-777e-485a-ba1e-317a2e9f1e12)
- Call ID: 9fda8df9-777e-485a-ba1e-317a2e9f1e12
-  Args:
-    type: :Person
-    source: Augusta_Victoria
-  AssignClass (a7aa8fbd-6e5a-49b8-8b1d-569a960ca184)
- Call ID: a7aa8fbd-6e5a-49b8-8b1d-569a960ca184
-  Args:
-    type: :Man
-    source: William_Prince_of_Hohenzollern
-  AssignClass (ad3b7705-f764-43e5-b357-d4a059f402ef)
- Call ID: ad3b7705-f764-43e5-b357-d4a059f402ef
-  Args:
-    type: :Person
-    source: William_Prince_of_Hohenzollern
-  AssignClass (c323b36d-46d4-43f9-b498-016dafec704a)
- Call ID: c323b36d-46d4-43f9-b498-016dafec704a
-  Args:
-    source: William_Prince_of_Hohenzollern
-    type: :Ancestor
-  AddLiteral (31bc4317-0c6e-4958-be82-2f536bf29acd)
- Call ID: 31bc4317-0c6e-4958-be82-2f536bf29acd
-  Args:
-    relation: :hasBirthYear
     literal_value: 1889
+    relation: :hasBirthYear
     literal_type: xsd:integer
     source: Manuel_II
-  AddLiteral (de5639e8-63ba-417d-8c3b-3c556e455c1a)
- Call ID: de5639e8-63ba-417d-8c3b-3c556e455c1a
+  AddLiteral (531170c3-f5cd-40d4-9006-be3715f458e5)
+ Call ID: 531170c3-f5cd-40d4-9006-be3715f458e5
   Args:
     literal_value: 1932
-    source: Manuel_II
-    literal_type: xsd:integer
     relation: :hasDeathYear
-  AddLiteral (932ba0e1-f15c-40bd-ae02-540e2e4ca54d)
- Call ID: 932ba0e1-f15c-40bd-ae02-540e2e4ca54d
-  Args:
-    relation: :alsoKnownAs
-    literal_type: xsd:string
+    literal_type: xsd:integer
     source: Manuel_II
-    literal_value: Unfortunate
-  AddLiteral (20264c08-006d-4d13-8e67-22512d42a0f8)
- Call ID: 20264c08-006d-4d13-8e67-22512d42a0f8
+  AddLiteral (b2618e68-a9a2-43c6-a5c4-a741b5b4fc6b)
+ Call ID: b2618e68-a9a2-43c6-a5c4-a741b5b4fc6b
   Args:
-    literal_value: Patriot
-    source: Manuel_II
     literal_type: xsd:string
     relation: :alsoKnownAs
-  AddTriple (225b3bfd-8d87-4bb4-a597-6ce951e5f6ee)
- Call ID: 225b3bfd-8d87-4bb4-a597-6ce951e5f6ee
+    literal_value: The Unfortunate
+    source: Manuel_II
+  AddLiteral (75658fc2-e96b-4c90-b811-6e22ad25a866)
+ Call ID: 75658fc2-e96b-4c90-b811-6e22ad25a866
+  Args:
+    source: Manuel_II
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    literal_value: o Desaventurado
+  AddLiteral (bf844f64-7c49-4c98-afd2-22bca9b8ae04)
+ Call ID: bf844f64-7c49-4c98-afd2-22bca9b8ae04
+  Args:
+    source: Manuel_II
+    literal_type: xsd:string
+    relation: :alsoKnownAs
+    literal_value: The Patriot
+  AddLiteral (3a79a392-b9da-46e7-a31f-32da29c0a587)
+ Call ID: 3a79a392-b9da-46e7-a31f-32da29c0a587
+  Args:
+    source: Manuel_II
+    literal_value: o Patriota
+    literal_type: xsd:string
+    relation: :alsoKnownAs
+  AssignClass (172ed2f6-6e49-491b-a557-a0bb7a61e918)
+ Call ID: 172ed2f6-6e49-491b-a557-a0bb7a61e918
+  Args:
+    type: :Man
+    source: Carlos_I
+  AssignClass (812780e1-1c8e-4c54-ac10-f7de0d567ff2)
+ Call ID: 812780e1-1c8e-4c54-ac10-f7de0d567ff2
+  Args:
+    type: :Person
+    source: Carlos_I
+  AddTriple (d1eb4e87-d9e4-4192-a642-dc64c51a46f8)
+ Call ID: d1eb4e87-d9e4-4192-a642-dc64c51a46f8
   Args:
     relation: :hasFather
-    source: Manuel_II
     target: Carlos_I
-  AddTriple (e790fe0f-e9ae-4c13-8553-502941e3bd2d)
- Call ID: e790fe0f-e9ae-4c13-8553-502941e3bd2d
-  Args:
-    relation: :hasMother
-    target: Amélie_of_Orléans
     source: Manuel_II
-  AddTriple (b334b1cb-318c-471a-bc38-8207fce69a5f)
- Call ID: b334b1cb-318c-471a-bc38-8207fce69a5f
+  AssignClass (cd8e55b5-4e37-4115-ad4d-715b82a489bc)
+ Call ID: cd8e55b5-4e37-4115-ad4d-715b82a489bc
+  Args:
+    source: Amélie_of_Orléans
+    type: :Woman
+  AssignClass (9f3a75bf-194f-493f-a3ff-4dad90ee6887)
+ Call ID: 9f3a75bf-194f-493f-a3ff-4dad90ee6887
+  Args:
+    source: Amélie_of_Orléans
+    type: :Person
+  AddTriple (e84da870-901f-4f0f-81b9-321774478732)
+ Call ID: e84da870-901f-4f0f-81b9-321774478732
+  Args:
+    source: Manuel_II
+    target: Amélie_of_Orléans
+    relation: :hasMother
+  AssignClass (366812f3-2f27-47e0-8577-105ef9c2f63f)
+ Call ID: 366812f3-2f27-47e0-8577-105ef9c2f63f
+  Args:
+    source: Luís_Filipe
+    type: :Man
+  AssignClass (3c47fde9-8ea5-4e08-aaee-19e0ae6fdfcb)
+ Call ID: 3c47fde9-8ea5-4e08-aaee-19e0ae6fdfcb
+  Args:
+    type: :Person
+    source: Luís_Filipe
+  AddTriple (4284c304-e2ea-47bc-9979-34c5f0633c37)
+ Call ID: 4284c304-e2ea-47bc-9979-34c5f0633c37
   Args:
     target: Luís_Filipe
+    relation: :isBrotherOf
     source: Manuel_II
-    relation: :hasBrother
-  AddTriple (95cb70a8-fea4-4249-a598-f2ef1d62f856)
- Call ID: 95cb70a8-fea4-4249-a598-f2ef1d62f856
-  Args:
-    source: Luís_Filipe
-    target: Carlos_I
-    relation: :hasFather
-  AddTriple (67b27850-a56f-453a-b2c3-99d8fbda89b6)
- Call ID: 67b27850-a56f-453a-b2c3-99d8fbda89b6
-  Args:
-    relation: :hasMother
-    target: Amélie_of_Orléans
-    source: Luís_Filipe
-  AddTriple (bf8ea9ea-6f2a-46f4-9446-1060570dbc5d)
- Call ID: bf8ea9ea-6f2a-46f4-9446-1060570dbc5d
-  Args:
-    relation: :hasMother
-    source: Carlos_I
-    target: Maria_Pia_of_Savoy
-  AddTriple (1048e576-cd88-485c-ba8c-e1d90bd900e0)
- Call ID: 1048e576-cd88-485c-ba8c-e1d90bd900e0
+  AssignClass (04c1af2b-d9ad-40f6-903c-ab69209eaeb7)
+ Call ID: 04c1af2b-d9ad-40f6-903c-ab69209eaeb7
   Args:
     source: Augusta_Victoria
-    target: William_Prince_of_Hohenzollern
-    relation: :hasFather
-  AddLiteral (030ed94f-c02d-4f2e-9e4f-8393eadd320e)
- Call ID: 030ed94f-c02d-4f2e-9e4f-8393eadd320e
+    type: :Woman
+  AssignClass (16c2cb1d-685e-4a0a-9f32-b9589487a63a)
+ Call ID: 16c2cb1d-685e-4a0a-9f32-b9589487a63a
+  Args:
+    source: Augusta_Victoria
+    type: :Person
+  AddTriple (0340646f-a449-48ac-9b5f-1ac02989d761)
+ Call ID: 0340646f-a449-48ac-9b5f-1ac02989d761
+  Args:
+    relation: :hasRelation
+    target: Augusta_Victoria
+    source: Manuel_II
+  AddLiteral (2dcca27e-0cb7-4bb4-a87c-3f9117566c14)
+ Call ID: 2dcca27e-0cb7-4bb4-a87c-3f9117566c14
   Args:
     literal_value: 1913
+    relation: :hasMarriageYear
     literal_type: xsd:integer
     source: Manuel_II
-    relation: :hasMarriageYear
-  AddTriple (6bed7637-fee0-4acd-9bcf-9daa67d59314)
- Call ID: 6bed7637-fee0-4acd-9bcf-9daa67d59314
-  Args:
-    source: Manuel_II
-    target: Augusta_Victoria
-    relation: :hasRelation
-  Finish (41665ac4-509f-4cc2-b759-d7bed2f839d6)
- Call ID: 41665ac4-509f-4cc2-b759-d7bed2f839d6
+  Finish (58143d6a-5032-4ee1-a2f6-90ac1b05c20a)
+ Call ID: 58143d6a-5032-4ee1-a2f6-90ac1b05c20a
   Args:

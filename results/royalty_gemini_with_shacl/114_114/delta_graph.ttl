@@ -5,18 +5,29 @@
 data:Doreen_Knatchbull a :Person,
         :Woman .
 
-data:Louis_Mountbatten a :Man,
-        :Person .
+data:Norton_Louis_Philip_Knatchbull a :Man,
+        :Person ;
+    :hasAncestor data:Louis_Mountbatten ;
+    :hasBirthYear 1947 ;
+    :hasBrother data:Nicholas_Knatchbull ;
+    :hasFather data:John_Knatchbull ;
+    :hasMarriageYear 1979 ;
+    :hasMother data:Patricia_Knatchbull ;
+    :hasRelation data:Eugenie_Lady_Nuttall,
+        data:Penelope_Meredith_Eastwood .
 
 data:Eugenie_Lady_Nuttall a :Person,
         :Woman .
 
 data:John_Knatchbull a :Ancestor,
         :Man,
-        :Person ;
-    :isFatherOf data:Norton_Louis_Philip_Knatchbull .
+        :Person .
 
-data:Marian_Elizabeth a :Ancestor,
+data:Louis_Mountbatten a :Ancestor,
+        :Man,
+        :Person .
+
+data:Marian_Elizabeth_Hood a :Ancestor,
         :Person,
         :Woman ;
     :hasBirthYear 1926 ;
@@ -27,30 +38,17 @@ data:Nicholas_Knatchbull a :Man,
 
 data:Patricia_Knatchbull a :Ancestor,
         :Person,
-        :Woman ;
-    :isMotherOf data:Norton_Louis_Philip_Knatchbull .
+        :Woman .
 
 data:Penelope_Meredith_Eastwood a :Person,
         :Woman ;
     :hasBirthYear 1953 ;
     :hasFather data:Reginald_Wray_Frank_Eastwood ;
-    :hasMother data:Marian_Elizabeth .
+    :hasMother data:Marian_Elizabeth_Hood .
 
 data:Reginald_Wray_Frank_Eastwood a :Ancestor,
         :Man,
         :Person ;
     :hasBirthYear 1912 ;
     :hasDeathYear 1980 .
-
-data:Norton_Louis_Philip_Knatchbull a :Man,
-        :Person ;
-    :formerlyKnownAs "Lord Brabourne"^^xsd:string,
-        "Lord Romsey"^^xsd:string ;
-    :hasBirthYear 1947 ;
-    :hasBrother data:Nicholas_Knatchbull ;
-    :hasFather data:John_Knatchbull ;
-    :hasMarriageYear 1979 ;
-    :hasMother data:Patricia_Knatchbull ;
-    :hasRelation data:Eugenie_Lady_Nuttall,
-        data:Penelope_Meredith_Eastwood .
 

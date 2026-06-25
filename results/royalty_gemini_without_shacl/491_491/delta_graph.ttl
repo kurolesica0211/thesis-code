@@ -2,23 +2,28 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_Louise_Francoise_Marie_Laure_of_Orleans a :Woman ;
-    :hasBirthYear "1882"^^xsd:string ;
-    :hasDeathYear "1958"^^xsd:string ;
-    :hasMarriageYear "1907"^^xsd:string ;
-    :hasMother data:Princess_Marie_Isabelle_dOrleans ;
-    :hasRelation data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies .
+data:AlfonsoXIII a :Man,
+        :Person ;
+    :isFatherOf data:Jaime .
 
-data:Antoine_Duke_of_Montpensier a :Man .
+data:Gonzalo a :Man,
+        :Person ;
+    :hasBirthYear 1937 ;
+    :hasDeathYear 2000 ;
+    :hasFather data:Jaime ;
+    :hasMother data:EmmanuelleDeDampierre ;
+    :hasParent data:VictoriaEugenie ;
+    :isSiblingOf data:Alfonso .
 
-data:Infanta_Luisa_Fernanda_of_Spain a :Woman .
+data:Alfonso a :Man,
+        :Person .
 
-data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies a :Man ;
-    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .
+data:EmmanuelleDeDampierre a :Person,
+        :Woman .
 
-data:Maria_de_las_Mercedes_Princess_of_Asturias a :Woman .
+data:VictoriaEugenie a :Person,
+        :Woman .
 
-data:Princess_Marie_Isabelle_dOrleans a :Woman ;
-    :hasFather data:Antoine_Duke_of_Montpensier ;
-    :hasMother data:Infanta_Luisa_Fernanda_of_Spain .
+data:Jaime a :Man,
+        :Person .
 

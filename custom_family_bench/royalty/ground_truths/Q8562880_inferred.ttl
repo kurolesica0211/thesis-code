@@ -1,0 +1,107 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Prince_Karl_of_Leiningen a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Karl of Leiningen"^^xsd:string ;
+    data:posIndicesFull "182:206"^^xsd:string ;
+    data:posIndicesPart "252:261"^^xsd:string,
+        "312:321"^^xsd:string,
+        "478:487"^^xsd:string,
+        "586:595"^^xsd:string,
+        "659:668"^^xsd:string,
+        "716:722"^^xsd:string ;
+    data:wdtLink wdt:Q2325684 ;
+    :alsoKnownAs "Karl Vladimir Ernst Heinrich"^^xsd:string,
+        "Karl Wladimir Ernst Heinrich Prinz zu Leiningen"^^xsd:string ;
+    :hasBrother data:Prince_Karl_of_Leiningen ;
+    :hasChild data:Hermann_Leiningen ;
+    :hasRelation data:Hermann_Leiningen,
+        data:Prince_Karl_of_Leiningen,
+        data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
+    :hasSex data:male ;
+    :hasSon data:Hermann_Leiningen ;
+    :isAncestorOf data:Hermann_Leiningen ;
+    :isBloodrelationOf data:Prince_Karl_of_Leiningen ;
+    :isBrotherOf data:Prince_Karl_of_Leiningen ;
+    :isFatherOf data:Hermann_Leiningen ;
+    :isParentOf data:Hermann_Leiningen ;
+    :isSiblingOf data:Prince_Karl_of_Leiningen ;
+    :isUncleOf data:Hermann_Leiningen .
+
+data:Princess_Maria_Luisa-_9th_Princess_of_Koháry a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Maria Luisa, 9th Princess of Koháry"^^xsd:string ;
+    data:posIndicesFull "211:244"^^xsd:string ;
+    data:posIndicesPart "791:799"^^xsd:string ;
+    data:wdtLink wdt:Q3292104 ;
+    :alsoKnownAs "Mariya Luiza of Bulgaria, Princess of Bulgaria"^^xsd:string,
+        "Princess Maria Louisa of Bulgaria"^^xsd:string,
+        "Princess Marie Louise of Bulgaria"^^xsd:string,
+        "Princess Marie Louise, 9th Princess of Koháry"^^xsd:string ;
+    :hasChild data:Hermann_Leiningen ;
+    :hasRelation data:Hermann_Leiningen,
+        data:Prince_Karl_of_Leiningen,
+        data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
+    :hasSon data:Hermann_Leiningen ;
+    :isAncestorOf data:Hermann_Leiningen ;
+    :isAuntOf data:Hermann_Leiningen ;
+    :isBloodrelationOf data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
+    :isMotherOf data:Hermann_Leiningen ;
+    :isParentOf data:Hermann_Leiningen ;
+    :isSiblingOf data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
+    :isSisterOf data:Princess_Maria_Luisa-_9th_Princess_of_Koháry .
+
+data:Hermann_Leiningen a :Man,
+        :Person ;
+    rdfs:label "Hermann Leiningen"^^xsd:string ;
+    data:posIndicesFull "0:53"^^xsd:string,
+        "540:557"^^xsd:string ;
+    data:posIndicesPart "252:261"^^xsd:string,
+        "312:321"^^xsd:string,
+        "586:595"^^xsd:string,
+        "659:668"^^xsd:string ;
+    data:wdtLink wdt:Q8562880 ;
+    :alsoKnownAs "Hermann Friedrich Roland Fernando Prinz zu Leiningen"^^xsd:string,
+        "Prince Hermann Friedrich Fernando Roland of Leiningen"^^xsd:string,
+        "Prince Hermann Friedrich of Leiningen"^^xsd:string,
+        "Prince Hermann of Leiningen"^^xsd:string ;
+    :hasAncestor data:Prince_Karl_of_Leiningen,
+        data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
+    :hasBrother data:Hermann_Leiningen ;
+    :hasFather data:Prince_Karl_of_Leiningen ;
+    :hasMother data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
+    :hasParent data:Prince_Karl_of_Leiningen,
+        data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
+    :hasRelation data:Hermann_Leiningen,
+        data:Prince_Karl_of_Leiningen,
+        data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Hermann_Leiningen ;
+    :isBrotherOf data:Hermann_Leiningen ;
+    :isChildOf data:Prince_Karl_of_Leiningen,
+        data:Princess_Maria_Luisa-_9th_Princess_of_Koháry ;
+    :isSiblingOf data:Hermann_Leiningen ;
+    :isSonOf data:Prince_Karl_of_Leiningen,
+        data:Princess_Maria_Luisa-_9th_Princess_of_Koháry .
+

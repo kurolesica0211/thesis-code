@@ -7,15 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Count_Christian_of_Rosenborg a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Count_Christian_of_Rosenborg a :Person ;
     rdfs:label "Count Christian of Rosenborg" ;
     data:posIndicesFull "1356:1383",
         "1363:1383",
@@ -38,67 +30,21 @@ data:Count_Christian_of_Rosenborg a :Man,
         "Prince Christian of Denmark" ;
     :hasSex data:male .
 
-data:Duchess_Marie_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Duchess Marie of Mecklenburg-Schwerin" ;
-    data:posIndicesFull "2041:2078",
-        "2049:2078" ;
-    data:wdtLink wdt:Q231463 ;
-    :alsoKnownAs "Grand Duchess Maria Pavlovna of Russia",
-        "Maria Pavlovna of Russia",
-        "Maria Pavlovna the Elder",
-        "Marie of Mecklenburg-Schwerin" ;
-    :hasBrother data:Frederick_Francis_III ;
-    :hasSex data:female ;
-    :isAuntOf data:Alexandrine_of_Mecklenburg-Schwerin,
-        data:Frederick_Francis_IV ;
-    :isSiblingOf data:Frederick_Francis_III ;
-    :isSisterOf data:Frederick_Francis_III .
+data:Frederick_Francis_IV a :Person ;
+    rdfs:label "Frederick Francis IV" ;
+    data:posIndicesFull "2210:2230",
+        "2210:2266" ;
+    data:wdtLink wdt:Q57930 ;
+    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz IV",
+        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin",
+        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
+        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin" ;
+    :hasParent data:Frederick_Francis_III,
+        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:male .
 
-data:Christian_X_of_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Christian X of Denmark" ;
-    data:posIndicesFull "1396:1407",
-        "362:373",
-        "5909:5920" ;
-    data:posIndicesPart "1271:1278",
-        "1327:1336",
-        "1745:1754",
-        "1761:1768",
-        "2133:2140",
-        "2181:2188",
-        "2658:2665",
-        "3161:3170",
-        "3406:3413",
-        "3435:3444",
-        "3766:3775",
-        "3943:3950",
-        "4649:4656",
-        "4697:4706",
-        "4713:4720",
-        "481:488",
-        "5419:5426",
-        "5530:5537",
-        "6019:6026",
-        "6284:6291",
-        "7894:7901" ;
-    data:wdtLink wdt:Q156617 ;
-    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm",
-        "Christian X" ;
-    :hasChild data:Frederik_IX_of_Denmark ;
-    :hasSex data:male ;
-    :hasSon data:Frederik_IX_of_Denmark ;
-    :isFatherOf data:Frederik_IX_of_Denmark ;
-    :isParentOf data:Frederik_IX_of_Denmark .
-
-data:Frederik_X_of_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Frederik_X_of_Denmark a :Person ;
     rdfs:label "Frederik X of Denmark" ;
     data:posIndicesFull "1816:1835" ;
     data:posIndicesPart "3062:3070",
@@ -147,175 +93,75 @@ data:Frederik_X_of_Denmark a :Ancestor,
         "Frederik X",
         "Frederik of Denmark",
         "Frederik of Denmark, Count of Monpezat" ;
-    :hasMother data:Margrethe_II_of_Denmark ;
     :hasParent data:Margrethe_II_of_Denmark ;
-    :hasSex data:male ;
-    :isChildOf data:Margrethe_II_of_Denmark ;
-    :isSonOf data:Margrethe_II_of_Denmark .
+    :hasSex data:male .
 
-data:Ingrid_of_Sweden a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Ingrid of Sweden" ;
-    data:posIndicesFull "418:443",
-        "427:443",
-        "4864:4889",
-        "4873:4889",
-        "6151:6163",
-        "7193:7205" ;
-    data:posIndicesPart "1473:1479",
-        "2934:2940",
-        "3008:3014",
-        "5062:5068",
-        "5126:5132",
-        "5265:5271",
-        "5347:5353",
-        "7142:7148" ;
-    data:wdtLink wdt:Q163010 ;
-    :alsoKnownAs "Ingrid Victoria Sofia Louise Margareta",
-        "Ingrid of Sweden",
-        "Ingrid, Queen of Denmark",
-        "Princess Ingrid of Sweden",
-        "Queen Ingrid" ;
-    :hasChild data:Margrethe_II_of_Denmark ;
-    :hasDaughter data:Margrethe_II_of_Denmark ;
-    :hasSex data:female ;
-    :isMotherOf data:Margrethe_II_of_Denmark ;
-    :isParentOf data:Margrethe_II_of_Denmark .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Grand Duchess Anastasia Mikhailovna of Russia" ;
-    data:posIndicesFull "1662:1707",
-        "1676:1707" ;
-    data:posIndicesPart "1876:1881",
-        "1882:1889",
-        "1890:1899",
-        "1952:1957",
-        "1986:1992",
-        "2035:2040",
-        "2481:2486",
-        "2518:2524",
-        "2600:2606",
-        "4448:4453",
-        "4474:4483",
-        "4498:4504",
-        "5146:5151",
-        "5225:5231" ;
-    data:wdtLink wdt:Q232159 ;
-    :alsoKnownAs "Anastasia Mikhailovna of Russia",
-        "Anastasia Mikhailovna, Grand Duchess of Mecklenburg-Schwerin",
-        "Anastasia, Grand Duchess of Mecklenburg-Schwerin" ;
-    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin,
-        data:Frederick_Francis_IV ;
-    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :hasSex data:female ;
-    :hasSon data:Frederick_Francis_IV ;
-    :isMotherOf data:Alexandrine_of_Mecklenburg-Schwerin,
-        data:Frederick_Francis_IV ;
-    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin,
-        data:Frederick_Francis_IV .
+data:posIndicesPart a owl:AnnotationProperty .
 
-data:Frederick_Francis_III a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Frederick Francis III" ;
-    data:posIndicesFull "1600:1621",
-        "1600:1657" ;
-    data:posIndicesPart "4743:4752",
-        "4753:4760" ;
-    data:wdtLink wdt:Q57974 ;
-    :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin",
-        "Friedrich Franz III",
-        "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin" ;
-    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin,
-        data:Frederick_Francis_IV ;
-    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :hasSex data:male ;
-    :hasSister data:Duchess_Marie_of_Mecklenburg-Schwerin ;
-    :hasSon data:Frederick_Francis_IV ;
-    :isBrotherOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
-    :isFatherOf data:Alexandrine_of_Mecklenburg-Schwerin,
-        data:Frederick_Francis_IV ;
-    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin,
-        data:Frederick_Francis_IV ;
-    :isSiblingOf data:Duchess_Marie_of_Mecklenburg-Schwerin .
+data:wdtLink a owl:AnnotationProperty .
 
-data:Frederick_Francis_IV a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Frederick Francis IV" ;
-    data:posIndicesFull "2210:2230",
-        "2210:2266" ;
-    data:posIndicesPart "4743:4752",
-        "4753:4760" ;
-    data:wdtLink wdt:Q57930 ;
-    :alsoKnownAs "Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
-        "Friedrich Franz IV",
-        "Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin",
-        "Grand Duke Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin",
-        "Grand Duke Friedrich Franz IV, Grand Duke of Mecklenburg-Schwerin" ;
-    :hasFather data:Frederick_Francis_III ;
-    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Alexandrine of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "1540:1575",
+        "314:349" ;
+    data:posIndicesPart "1903:1914",
+        "1915:1923",
+        "2058:2069",
+        "2070:2078",
+        "4366:4377" ;
+    data:wdtLink wdt:Q57264 ;
+    :alsoKnownAs "Alexandrine Auguste of Mecklenburg-Schwerin",
+        "Alexandrine, Queen of Denmark",
+        "Duchess Alexandrine Auguste of Mecklenburg-Schwerin",
+        "Duchess Alexandrine of Mecklenburg-Schwerin",
+        "Queen Alexandrine of Denmark" ;
     :hasParent data:Frederick_Francis_III,
         data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-    :hasSex data:male ;
-    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :isBrotherOf data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :isChildOf data:Frederick_Francis_III,
-        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :isSonOf data:Frederick_Francis_III,
-        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-    :isUncleOf data:Frederik_IX_of_Denmark .
+    :hasSex data:female .
 
-data:Margrethe_II_of_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Margrethe II of Denmark" ;
-    data:posIndicesFull "1029:1041",
-        "6581:6593" ;
-    data:posIndicesPart "1761:1768",
+data:Christian_X_of_Denmark a :Person ;
+    rdfs:label "Christian X of Denmark" ;
+    data:posIndicesFull "1396:1407",
+        "362:373",
+        "5909:5920" ;
+    data:posIndicesPart "1271:1278",
+        "1327:1336",
+        "1745:1754",
+        "1761:1768",
         "2133:2140",
         "2181:2188",
         "2658:2665",
+        "3161:3170",
         "3406:3413",
+        "3435:3444",
+        "3766:3775",
         "3943:3950",
         "4649:4656",
+        "4697:4706",
         "4713:4720",
+        "481:488",
         "5419:5426",
         "5530:5537",
         "6019:6026",
         "6284:6291",
-        "6370:6379",
         "7894:7901" ;
-    data:wdtLink wdt:Q102139 ;
-    :alsoKnownAs "Ingahild Grathmer",
-        "Margrethe II" ;
-    :hasChild data:Frederik_X_of_Denmark ;
-    :hasFather data:Frederik_IX_of_Denmark ;
-    :hasMother data:Ingrid_of_Sweden ;
-    :hasParent data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :hasSex data:female ;
-    :hasSon data:Frederik_X_of_Denmark ;
-    :isChildOf data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :isDaughterOf data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :isMotherOf data:Frederik_X_of_Denmark ;
-    :isParentOf data:Frederik_X_of_Denmark .
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm",
+        "Christian X" ;
+    :hasSex data:male .
 
-data:Frederik_IX_of_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Frederick_Francis_II a :Person ;
+    rdfs:label "Frederick Francis II" ;
+    data:posIndicesFull "4743:4763" ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II." ;
+    :hasSex data:male .
+
+data:Frederik_IX_of_Denmark a :Person ;
     rdfs:label "Frederik IX of Denmark" ;
     data:posIndicesFull "0:11",
         "13:65",
@@ -380,51 +226,96 @@ data:Frederik_IX_of_Denmark a :Ancestor,
         "Frederik IX",
         "King Frederick IX of Denmark",
         "King Frederik IX of Denmark" ;
-    :hasChild data:Margrethe_II_of_Denmark ;
-    :hasDaughter data:Margrethe_II_of_Denmark ;
-    :hasFather data:Christian_X_of_Denmark ;
-    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
     :hasParent data:Alexandrine_of_Mecklenburg-Schwerin,
         data:Christian_X_of_Denmark ;
-    :hasSex data:male ;
-    :isChildOf data:Alexandrine_of_Mecklenburg-Schwerin,
-        data:Christian_X_of_Denmark ;
-    :isFatherOf data:Margrethe_II_of_Denmark ;
-    :isParentOf data:Margrethe_II_of_Denmark ;
-    :isSonOf data:Alexandrine_of_Mecklenburg-Schwerin,
-        data:Christian_X_of_Denmark ;
-    :isUncleOf data:Count_Christian_of_Rosenborg .
+    :hasSex data:male .
 
-data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Alexandrine of Mecklenburg-Schwerin" ;
-    data:posIndicesFull "1540:1575",
-        "314:349" ;
-    data:posIndicesPart "1903:1914",
-        "1915:1923",
-        "4366:4377" ;
-    data:wdtLink wdt:Q57264 ;
-    :alsoKnownAs "Alexandrine Auguste of Mecklenburg-Schwerin",
-        "Alexandrine, Queen of Denmark",
-        "Duchess Alexandrine Auguste of Mecklenburg-Schwerin",
-        "Duchess Alexandrine of Mecklenburg-Schwerin",
-        "Queen Alexandrine of Denmark" ;
-    :hasBrother data:Frederick_Francis_IV ;
-    :hasChild data:Frederik_IX_of_Denmark ;
-    :hasFather data:Frederick_Francis_III ;
-    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-    :hasParent data:Frederick_Francis_III,
-        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-    :hasSex data:female ;
-    :hasSon data:Frederik_IX_of_Denmark ;
-    :isChildOf data:Frederick_Francis_III,
-        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-    :isDaughterOf data:Frederick_Francis_III,
-        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-    :isMotherOf data:Frederik_IX_of_Denmark ;
-    :isParentOf data:Frederik_IX_of_Denmark ;
-    :isSiblingOf data:Frederick_Francis_IV ;
-    :isSisterOf data:Frederick_Francis_IV .
+data:Ingrid_of_Sweden a :Person ;
+    rdfs:label "Ingrid of Sweden" ;
+    data:posIndicesFull "418:443",
+        "427:443",
+        "4864:4889",
+        "4873:4889",
+        "6151:6163",
+        "7193:7205" ;
+    data:posIndicesPart "1473:1479",
+        "2934:2940",
+        "3008:3014",
+        "5062:5068",
+        "5126:5132",
+        "5265:5271",
+        "5347:5353",
+        "7142:7148" ;
+    data:wdtLink wdt:Q163010 ;
+    :alsoKnownAs "Ingrid Victoria Sofia Louise Margareta",
+        "Ingrid of Sweden",
+        "Ingrid, Queen of Denmark",
+        "Princess Ingrid of Sweden",
+        "Queen Ingrid" ;
+    :hasSex data:female .
+
+data:Margrethe_II_of_Denmark a :Person ;
+    rdfs:label "Margrethe II of Denmark" ;
+    data:posIndicesFull "1029:1041",
+        "6581:6593" ;
+    data:posIndicesPart "1761:1768",
+        "2133:2140",
+        "2181:2188",
+        "2658:2665",
+        "3406:3413",
+        "3943:3950",
+        "4649:4656",
+        "4713:4720",
+        "5419:5426",
+        "5530:5537",
+        "6019:6026",
+        "6284:6291",
+        "6370:6379",
+        "7894:7901" ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer",
+        "Margrethe II" ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasSex data:female .
+
+data:Frederick_Francis_III a :Person ;
+    rdfs:label "Frederick Francis III" ;
+    data:posIndicesFull "1600:1621",
+        "1600:1657" ;
+    data:wdtLink wdt:Q57974 ;
+    :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz III",
+        "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin" ;
+    :hasParent data:Frederick_Francis_II ;
+    :hasSex data:male .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Person ;
+    rdfs:label "Grand Duchess Anastasia Mikhailovna of Russia" ;
+    data:posIndicesFull "1662:1707",
+        "1676:1707" ;
+    data:posIndicesPart "1876:1881",
+        "1882:1889",
+        "1890:1899",
+        "1952:1957",
+        "1986:1992",
+        "2035:2040",
+        "2041:2048",
+        "2481:2486",
+        "2518:2524",
+        "2600:2606",
+        "4448:4453",
+        "4474:4483",
+        "4498:4504",
+        "5146:5151",
+        "5225:5231" ;
+    data:wdtLink wdt:Q232159 ;
+    :alsoKnownAs "Anastasia Mikhailovna of Russia",
+        "Anastasia Mikhailovna, Grand Duchess of Mecklenburg-Schwerin",
+        "Anastasia, Grand Duchess of Mecklenburg-Schwerin" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

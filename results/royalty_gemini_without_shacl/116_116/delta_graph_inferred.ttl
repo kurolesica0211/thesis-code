@@ -1,0 +1,159 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Ludwig_III_of_Bavaria a :Man,
+        :Person ;
+    :hasBrother data:King_Ludwig_III_of_Bavaria ;
+    :hasRelation data:King_Ludwig_III_of_Bavaria ;
+    :isBloodrelationOf data:King_Ludwig_III_of_Bavaria ;
+    :isBrotherOf data:King_Ludwig_III_of_Bavaria ;
+    :isSiblingOf data:King_Ludwig_III_of_Bavaria .
+
+data:Pedro_Carlos a :Man,
+        :Person ;
+    :hasBrother data:Pedro_Carlos ;
+    :hasRelation data:Pedro_Carlos ;
+    :isBloodrelationOf data:Pedro_Carlos ;
+    :isBrotherOf data:Pedro_Carlos ;
+    :isSiblingOf data:Pedro_Carlos .
+
+data:Emperor_Pedro_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Emperor_Pedro_II ;
+    :hasChild data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasDaughter data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasRelation data:Emperor_Pedro_II,
+        data:Isabel_Princess_Imperial_of_Brazil ;
+    :isAncestorOf data:Isabel_Princess_Imperial_of_Brazil ;
+    :isBloodrelationOf data:Emperor_Pedro_II ;
+    :isBrotherOf data:Emperor_Pedro_II ;
+    :isFatherOf data:Isabel_Princess_Imperial_of_Brazil ;
+    :isParentOf data:Isabel_Princess_Imperial_of_Brazil ;
+    :isSiblingOf data:Emperor_Pedro_II ;
+    :isUncleOf data:Isabel_Princess_Imperial_of_Brazil .
+
+data:Isabel_Princess_Imperial_of_Brazil a :Person,
+        :Woman ;
+    :hasAncestor data:Emperor_Pedro_II ;
+    :hasFather data:Emperor_Pedro_II ;
+    :hasParent data:Emperor_Pedro_II ;
+    :hasRelation data:Emperor_Pedro_II,
+        data:Isabel_Princess_Imperial_of_Brazil ;
+    :hasSister data:Isabel_Princess_Imperial_of_Brazil ;
+    :isBloodrelationOf data:Isabel_Princess_Imperial_of_Brazil ;
+    :isChildOf data:Emperor_Pedro_II ;
+    :isDaughterOf data:Emperor_Pedro_II ;
+    :isSiblingOf data:Isabel_Princess_Imperial_of_Brazil ;
+    :isSisterOf data:Isabel_Princess_Imperial_of_Brazil .
+
+data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :hasChild data:Bertrand_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSon data:Bertrand_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Bertrand_of_Orl%C3%A9ans-Braganza ;
+    :isBloodrelationOf data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :isBrotherOf data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :isFatherOf data:Bertrand_of_Orl%C3%A9ans-Braganza ;
+    :isParentOf data:Bertrand_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :isUncleOf data:Bertrand_of_Orl%C3%A9ans-Braganza .
+
+data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Bertrand_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSister data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSon data:Bertrand_of_Orl%C3%A9ans-Braganza ;
+    :isAncestorOf data:Bertrand_of_Orl%C3%A9ans-Braganza ;
+    :isAuntOf data:Bertrand_of_Orl%C3%A9ans-Braganza ;
+    :isBloodrelationOf data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isMotherOf data:Bertrand_of_Orl%C3%A9ans-Braganza ;
+    :isParentOf data:Bertrand_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isSisterOf data:Princess_Maria_Elisabeth_of_Bavaria .
+
+data:Eudes_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasBrother data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isBloodrelationOf data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isBrotherOf data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza .
+
+data:Luiz_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasBrother data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isBloodrelationOf data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isBrotherOf data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isSiblingOf data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza .
+
+data:Bertrand_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasAncestor data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasBirthYear 1941 ;
+    :hasBrother data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :hasFather data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
+    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasParent data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasRelation data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza,
+        data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isBloodrelationOf data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isBrotherOf data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isChildOf data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isSiblingOf data:Bertrand_of_Orl%C3%A9ans-Braganza,
+        data:Eudes_of_Orl%C3%A9ans-Braganza,
+        data:Luiz_of_Orl%C3%A9ans-Braganza ;
+    :isSonOf data:Pedro_Henrique_of_Orl%C3%A9ans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria .
+

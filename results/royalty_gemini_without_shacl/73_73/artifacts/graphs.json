@@ -4,13 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian a :Man ;\n    :hasBirthYear 2005 ;\n    :hasFather data:Frederik_X ;\n    :hasMother data:Mary .\n\ndata:Frederik_X a :Man ;\n    :hasMother data:Margrethe_II .\n\ndata:Margrethe_II a :Woman .\n\ndata:Mary a :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian a :Man ;\n    :hasBirthYear 2005 ;\n    :hasFather data:FrederikX ;\n    :hasMother data:Mary .\n\ndata:FrederikX a :Man ;\n    :hasMother data:MargretheII .\n\ndata:MargretheII a :Woman .\n\ndata:Mary a :Woman .\n\n"
     },
     {
         "graph_type": "data_graph",
         "iteration": 1,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian a :Man ;\n    :hasBirthYear 2005 ;\n    :hasFather data:Frederik_X ;\n    :hasMother data:Mary .\n\ndata:Frederik_X a :Man ;\n    :hasMother data:Margrethe_II .\n\ndata:Margrethe_II a :Woman .\n\ndata:Mary a :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Christian a :Man ;\n    :hasBirthYear 2005 ;\n    :hasFather data:FrederikX ;\n    :hasMother data:Mary .\n\ndata:FrederikX a :Man ;\n    :hasMother data:MargretheII .\n\ndata:MargretheII a :Woman .\n\ndata:Mary a :Woman .\n\n"
     }
 ]

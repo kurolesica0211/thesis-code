@@ -2,23 +2,87 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Ferdinand_dOrleans a :Man,
-        :Person ;
-    :hasBirthYear 1884 ;
-    :hasDeathYear 1924 ;
-    :hasFather data:Philippe_dOrleans_Count_of_Paris ;
-    :hasMarriageYear 1921 ;
-    :hasMother data:Marie_Isabelle_dOrleans ;
-    :hasRelation data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta .
+data:Woizlawa_Feodora_Princess_Reuss a :Person,
+        :Woman ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Father_of_Woizlawa ;
+    :hasMarriageYear data:1939 ;
+    :hasMother data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :hasRelation data:Heinrich_I_Prinz_Reuss ;
+    :hasSex data:Female .
 
-data:Maria_Isabel_Gonzalez_de_Olaneta_e_Ibarreta a :Person,
-        :Woman .
+data:1939 a :DomainEntity .
 
-data:Marie_Isabelle_dOrleans a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Philippe_dOrleans_Count_of_Paris a :Ancestor,
+data:Father_of_Woizlawa a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSex data:Male .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1823 ;
+    :hasDeathYear 1883 ;
+    :hasSex data:Male .
+
+data:Heinrich_I_Prinz_Reuss a :Man,
+        :Person ;
+    :hasBirthYear 1910 ;
+    :hasDeathYear 1982 ;
+    :hasFather data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz ;
+    :hasMother data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz ;
+    :hasSex data:Male .
+
+data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1956 ;
+    :hasSex data:Male .
+
+data:Princess_Elise_of_Hohenlohe-Langenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasMother data:Princess_Feodora_of_Leiningen ;
+    :hasSex data:Female .
+
+data:Princess_Feodora_of_Leiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1850 ;
+    :hasDeathYear 1922 ;
+    :hasSex data:Female .
+
+data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1968 ;
+    :hasSex data:Female .
+
+data:Viktoria_Feodora_Reuss_zu_Schleiz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1918 ;
+    :hasFather data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz ;
+    :hasMother data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
 

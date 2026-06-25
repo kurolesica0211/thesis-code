@@ -7,44 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Tatiana_Radziwiłł a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Tatiana Radziwiłł" ;
-    data:posIndicesFull "4720:4737" ;
-    data:wdtLink wdt:Q63205821 ;
-    :alsoKnownAs "Princess Tatania Marie Radziwill" ;
-    :hasSex data:female .
-
-data:Marie_Bonaparte a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Marie Bonaparte" ;
-    data:posIndicesFull "878:902",
-        "887:902" ;
-    data:posIndicesPart "1031:1040",
-        "1045:1050",
-        "11003:11008",
-        "11187:11192" ;
-    data:wdtLink wdt:Q115472 ;
-    :alsoKnownAs "Princess Marie Bonaparte" ;
-    :hasChild data:Prince_Peter_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Peter_of_Greece_and_Denmark ;
-    :isMotherOf data:Prince_Peter_of_Greece_and_Denmark ;
-    :isParentOf data:Prince_Peter_of_Greece_and_Denmark .
-
-data:Constantine_I_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Constantine_I_of_Greece a :Person ;
     rdfs:label "Constantine I of Greece" ;
     data:posIndicesFull "2159:2177",
         "2164:2177" ;
@@ -70,67 +33,10 @@ data:Constantine_I_of_Greece a :Ancestor,
         "King Constantine I",
         "King Constantine I of Greece",
         "Konstantinos I of Greece" ;
-    :hasBrother data:Prince_George_of_Greece_and_Denmark ;
-    :hasFather data:George_I_of_Greece ;
     :hasParent data:George_I_of_Greece ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_George_of_Greece_and_Denmark ;
-    :isChildOf data:George_I_of_Greece ;
-    :isSiblingOf data:Prince_George_of_Greece_and_Denmark ;
-    :isSonOf data:George_I_of_Greece ;
-    :isUncleOf data:Prince_Peter_of_Greece_and_Denmark .
+    :hasSex data:male .
 
-data:George_I_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George I of Greece" ;
-    data:posIndicesFull "937:960",
-        "942:950",
-        "942:960" ;
-    data:posIndicesPart "10355:10361",
-        "1147:1153",
-        "11796:11802",
-        "12447:12453",
-        "1779:1785",
-        "2038:2044",
-        "2632:2638",
-        "4125:4131",
-        "4325:4331",
-        "4627:4633",
-        "5096:5102",
-        "5174:5180",
-        "5354:5360",
-        "5567:5573",
-        "5998:6004",
-        "6298:6304",
-        "6435:6441",
-        "6498:6504",
-        "6570:6576",
-        "6709:6715",
-        "7015:7021",
-        "9418:9424" ;
-    data:wdtLink wdt:Q17142 ;
-    :alsoKnownAs "George I",
-        "George I of the Hellens",
-        "George I, King of Greece",
-        "George I, King of the Hellenes",
-        "King George I of Greece",
-        "King George I of the Hellens",
-        "Vilhelm" ;
-    :hasChild data:Constantine_I_of_Greece,
-        data:Prince_George_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :hasSon data:Constantine_I_of_Greece,
-        data:Prince_George_of_Greece_and_Denmark ;
-    :isFatherOf data:Constantine_I_of_Greece,
-        data:Prince_George_of_Greece_and_Denmark ;
-    :isParentOf data:Constantine_I_of_Greece,
-        data:Prince_George_of_Greece_and_Denmark .
-
-data:Prince_Peter_of_Greece_and_Denmark a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Peter_of_Greece_and_Denmark a :Person ;
     rdfs:label "Prince Peter of Greece and Denmark" ;
     data:posIndicesFull "0:34" ;
     data:posIndicesPart "10053:10058",
@@ -254,21 +160,36 @@ data:Prince_Peter_of_Greece_and_Denmark a :Man,
         "9966:9972" ;
     data:wdtLink wdt:Q601229 ;
     :alsoKnownAs "Panayiotis zu Schleswig-Holstein-Sonderburg-Glücksburg, Prince of Greece and Denmark" ;
-    :hasFather data:Prince_George_of_Greece_and_Denmark ;
-    :hasMother data:Marie_Bonaparte ;
     :hasParent data:Marie_Bonaparte,
         data:Prince_George_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :isChildOf data:Marie_Bonaparte,
-        data:Prince_George_of_Greece_and_Denmark ;
-    :isSonOf data:Marie_Bonaparte,
-        data:Prince_George_of_Greece_and_Denmark ;
-    :isUncleOf data:Tatiana_Radziwiłł .
+    :hasSex data:male .
 
-data:Prince_George_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Tatiana_Radziwiłł a :Person ;
+    rdfs:label "Tatiana Radziwiłł" ;
+    data:posIndicesFull "4720:4737" ;
+    data:wdtLink wdt:Q63205821 ;
+    :alsoKnownAs "Princess Tatania Marie Radziwill" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Marie_Bonaparte a :Person ;
+    rdfs:label "Marie Bonaparte" ;
+    data:posIndicesFull "878:902",
+        "887:902" ;
+    data:posIndicesPart "1031:1040",
+        "1045:1050",
+        "11003:11008",
+        "11187:11192" ;
+    data:wdtLink wdt:Q115472 ;
+    :alsoKnownAs "Princess Marie Bonaparte" ;
+    :hasSex data:female .
+
+data:Prince_George_of_Greece_and_Denmark a :Person ;
     rdfs:label "Prince George of Greece and Denmark" ;
     data:posIndicesFull "801:836" ;
     data:posIndicesPart "1017:1023",
@@ -337,16 +258,47 @@ data:Prince_George_of_Greece_and_Denmark a :Ancestor,
         "9966:9972" ;
     data:wdtLink wdt:Q170396 ;
     :alsoKnownAs "Prince Georgios of Greece and Denmark" ;
-    :hasBrother data:Constantine_I_of_Greece ;
-    :hasChild data:Prince_Peter_of_Greece_and_Denmark ;
-    :hasFather data:George_I_of_Greece ;
     :hasParent data:George_I_of_Greece ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Peter_of_Greece_and_Denmark ;
-    :isBrotherOf data:Constantine_I_of_Greece ;
-    :isChildOf data:George_I_of_Greece ;
-    :isFatherOf data:Prince_Peter_of_Greece_and_Denmark ;
-    :isParentOf data:Prince_Peter_of_Greece_and_Denmark ;
-    :isSiblingOf data:Constantine_I_of_Greece ;
-    :isSonOf data:George_I_of_Greece .
+    :hasSex data:male .
+
+data:George_I_of_Greece a :Person ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "937:960",
+        "942:950",
+        "942:960" ;
+    data:posIndicesPart "10355:10361",
+        "1147:1153",
+        "11796:11802",
+        "12447:12453",
+        "1779:1785",
+        "2038:2044",
+        "2632:2638",
+        "4125:4131",
+        "4325:4331",
+        "4627:4633",
+        "5096:5102",
+        "5174:5180",
+        "5354:5360",
+        "5567:5573",
+        "5998:6004",
+        "6298:6304",
+        "6435:6441",
+        "6498:6504",
+        "6570:6576",
+        "6709:6715",
+        "7015:7021",
+        "9418:9424" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

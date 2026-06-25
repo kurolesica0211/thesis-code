@@ -2,19 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
-        :Woman ;
-    :hasBirthYear 2005 ;
-    :hasFather data:Prince_Carlo_Duke_of_Castro ;
-    :hasMother data:Camilla_Crociani ;
-    :hasSister data:Maria_Carolina_of_Bourbon-Two_Sicilies .
+data:Gerald_David_Lascelles a :Man ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 1998 ;
+    :hasFather data:Henry_Lascelles%2C_6th_Earl_of_Harewood ;
+    :hasMarriageYear 1978 ;
+    :hasMother data:Mary%2C_Princess_Royal ;
+    :hasRelation data:Elizabeth_Colvin .
 
-data:Camilla_Crociani a :Person,
-        :Woman .
+data:Gerald_Lascelles a :Man ;
+    :hasRelation data:Edward_VIII .
 
-data:Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,
-        :Woman .
+data:Edward_VIII a :Man .
 
-data:Prince_Carlo_Duke_of_Castro a :Man,
-        :Person .
+data:Elizabeth_Colvin a :Woman ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2006 .
+
+data:Henry_Lascelles%2C_6th_Earl_of_Harewood a :Man .
+
+data:King_George_V a :Man .
+
+data:Mary%2C_Princess_Royal a :Woman ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary .
+
+data:Queen_Mary a :Woman .
 

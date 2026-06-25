@@ -2,33 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:FrederickII a :Man ;
-    :isAncestorOf data:Donatus,
-        data:FloriaFranziska .
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Woman ;
+    :isSisterOf data:Philippe .
 
-data:Louis a :Man .
+data:Archduchess_Maria_Dorothea_of_Austria a :Woman ;
+    :hasFather data:Archduke_Joseph_Karl_of_Austria ;
+    :hasMother data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans .
 
-data:Mary a :Woman ;
-    :isAncestorOf data:Donatus,
-        data:FloriaFranziska .
+data:H%C3%A9l%C3%A8ne_Duchess_of_Aosta a :Woman ;
+    :isSisterOf data:Philippe .
 
-data:Hubertus a :Man .
+data:Jean_Duke_of_Guise a :Man .
 
-data:Moritz a :Man ;
-    :hasFather data:Philipp .
+data:Louis_Philippe_I a :Man .
 
-data:Philipp a :Man .
+data:Philippe_Debien a :Man ;
+    :hasFather data:Philippe ;
+    :hasMother data:Nina .
 
-data:Tatiana a :Woman ;
-    :hasBirthYear 1940 .
+data:Princess_Marguerite_of_Orl%C3%A9ans a :Woman .
 
-data:Donatus a :Man ;
-    :hasBirthYear 1966 ;
-    :hasFather data:Moritz ;
-    :hasMarriageYear 2003 ;
-    :hasMother data:Tatiana .
+data:Archduke_Joseph_Karl_of_Austria a :Man .
 
-data:FloriaFranziska a :Woman ;
-    :hasBirthYear 1974 ;
-    :hasFather data:Hubertus .
+data:Nina a :Woman .
+
+data:Princess_Cl%C3%A9mentine_of_Orl%C3%A9ans a :Woman .
+
+data:Philippe_Count_of_Paris a :Man .
+
+data:Princess_Isabelle_of_Orl%C3%A9ans a :Woman .
+
+data:Philippe a :Man ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1926 ;
+    :hasFather data:Philippe_Count_of_Paris ;
+    :hasMarriageYear 1896,
+        "1896"^^xsd:string ;
+    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans ;
+    :hasParent data:Philippe_Count_of_Paris,
+        data:Princess_Isabelle_of_Orl%C3%A9ans .
 

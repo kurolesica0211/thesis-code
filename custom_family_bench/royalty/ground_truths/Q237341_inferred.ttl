@@ -1,0 +1,207 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man,
+        :Person ;
+    rdfs:label "Grand Duke Andrei Vladimirovich of Russia"^^xsd:string ;
+    data:posIndicesFull "3446:3487"^^xsd:string ;
+    data:posIndicesPart "3781:3786"^^xsd:string,
+        "3804:3810"^^xsd:string ;
+    data:wdtLink wdt:Q502763 ;
+    :hasBrother data:Grand_Duke_Andrei_Vladimirovich_of_Russia ;
+    :hasRelation data:Grand_Duke_Andrei_Vladimirovich_of_Russia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Andrei_Vladimirovich_of_Russia .
+
+data:Louis_Ferdinand-_Prince_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Louis Ferdinand, Prince of Prussia"^^xsd:string ;
+    data:posIndicesFull "208:230"^^xsd:string,
+        "208:241"^^xsd:string,
+        "3009:3031"^^xsd:string,
+        "3009:3042"^^xsd:string ;
+    data:posIndicesPart "2744:2750"^^xsd:string,
+        "2824:2830"^^xsd:string,
+        "2879:2885"^^xsd:string,
+        "2929:2935"^^xsd:string,
+        "3308:3315"^^xsd:string,
+        "645:650"^^xsd:string ;
+    data:wdtLink wdt:Q311442 ;
+    :alsoKnownAs "Louis Ferdinand Victor Eduard Adalbert Michael Hubertus Prinz von Preußen"^^xsd:string,
+        "Prince Louis Ferdinand"^^xsd:string,
+        "Prince Louis Ferdinand of Prussia"^^xsd:string ;
+    :hasBrother data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasRelation data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isBrotherOf data:Louis_Ferdinand-_Prince_of_Prussia ;
+    :isSiblingOf data:Louis_Ferdinand-_Prince_of_Prussia .
+
+data:Grand_Duke_Kirill_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Grand Duke Kirill Vladimirovich of Russia"^^xsd:string ;
+    data:posIndicesFull "473:514"^^xsd:string,
+        "99:140"^^xsd:string ;
+    data:posIndicesPart "1042:1047"^^xsd:string,
+        "1890:1896"^^xsd:string,
+        "2026:2031"^^xsd:string,
+        "2037:2043"^^xsd:string,
+        "2232:2238"^^xsd:string,
+        "2291:2296"^^xsd:string,
+        "2410:2416"^^xsd:string,
+        "3162:3167"^^xsd:string,
+        "3200:3206"^^xsd:string,
+        "3781:3786"^^xsd:string,
+        "3804:3810"^^xsd:string,
+        "652:657"^^xsd:string,
+        "750:755"^^xsd:string,
+        "828:834"^^xsd:string,
+        "959:964"^^xsd:string,
+        "973:979"^^xsd:string ;
+    data:wdtLink wdt:Q160948 ;
+    :alsoKnownAs "Cyril Vladimirovich, Grand Duke of Russia"^^xsd:string ;
+    :hasBrother data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :hasChild data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:male ;
+    :isAncestorOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :isFatherOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :isUncleOf data:Grand_Duchess_Kira_Kirillovna_of_Russia .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Victoria Melita of Saxe-Coburg and Gotha"^^xsd:string ;
+    data:posIndicesFull "105:109"^^xsd:string,
+        "145:194"^^xsd:string,
+        "154:169"^^xsd:string,
+        "2032:2036"^^xsd:string,
+        "3452:3456"^^xsd:string,
+        "3787:3791"^^xsd:string,
+        "479:483"^^xsd:string,
+        "530:579"^^xsd:string,
+        "539:554"^^xsd:string,
+        "658:662"^^xsd:string,
+        "756:760"^^xsd:string,
+        "965:969"^^xsd:string ;
+    data:posIndicesPart "2150:2156"^^xsd:string,
+        "2204:2212"^^xsd:string,
+        "2635:2643"^^xsd:string,
+        "3288:3296"^^xsd:string ;
+    data:wdtLink wdt:Q164500 ;
+    :alsoKnownAs "Ducky"^^xsd:string,
+        "Grand Duchess Victoria Feodorovna of Russia"^^xsd:string,
+        "Princess Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Feodorovna of Russia"^^xsd:string,
+        "Victoria Melita"^^xsd:string,
+        "Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Melita of Saxe-Coburg-Gotha"^^xsd:string,
+        "Victoria Melita, Grand Duchess of Hesse and the Rhine"^^xsd:string ;
+    :hasChild data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasDaughter data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isAncestorOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isAuntOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isMotherOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isParentOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isSiblingOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSisterOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
+
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Kira Kirillovna of Russia"^^xsd:string ;
+    data:posIndicesFull "0:39"^^xsd:string,
+        "208:241"^^xsd:string,
+        "3009:3042"^^xsd:string,
+        "303:341"^^xsd:string ;
+    data:posIndicesPart "1042:1047"^^xsd:string,
+        "1048:1055"^^xsd:string,
+        "1077:1081"^^xsd:string,
+        "1139:1143"^^xsd:string,
+        "1316:1320"^^xsd:string,
+        "1476:1480"^^xsd:string,
+        "1625:1629"^^xsd:string,
+        "1711:1715"^^xsd:string,
+        "1890:1896"^^xsd:string,
+        "1898:1902"^^xsd:string,
+        "2026:2031"^^xsd:string,
+        "2190:2194"^^xsd:string,
+        "2213:2217"^^xsd:string,
+        "2218:2228"^^xsd:string,
+        "2232:2238"^^xsd:string,
+        "2291:2296"^^xsd:string,
+        "2297:2304"^^xsd:string,
+        "2456:2460"^^xsd:string,
+        "2521:2525"^^xsd:string,
+        "2644:2648"^^xsd:string,
+        "3072:3076"^^xsd:string,
+        "3162:3167"^^xsd:string,
+        "3168:3175"^^xsd:string,
+        "3200:3206"^^xsd:string,
+        "3208:3212"^^xsd:string,
+        "3348:3352"^^xsd:string,
+        "3372:3376"^^xsd:string,
+        "3432:3436"^^xsd:string,
+        "3611:3615"^^xsd:string,
+        "3781:3786"^^xsd:string,
+        "3804:3810"^^xsd:string,
+        "652:657"^^xsd:string,
+        "750:755"^^xsd:string,
+        "793:797"^^xsd:string,
+        "959:964"^^xsd:string,
+        "973:979"^^xsd:string ;
+    data:wdtLink wdt:Q237341 ;
+    :alsoKnownAs "Kira Kirillovna Romanova"^^xsd:string,
+        "Kira Kirillovna, Princess Louis Ferdinand of Prussia"^^xsd:string,
+        "Kira Kirillovna, Princess of Prussia"^^xsd:string,
+        "Princess Louis Ferdinand of Prussia"^^xsd:string ;
+    :hasAncestor data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasFather data:Grand_Duke_Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasParent data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasRelation data:Grand_Duchess_Kira_Kirillovna_of_Russia,
+        data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isBloodrelationOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isChildOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isDaughterOf data:Grand_Duke_Kirill_Vladimirovich_of_Russia,
+        data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSiblingOf data:Grand_Duchess_Kira_Kirillovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Kira_Kirillovna_of_Russia .
+

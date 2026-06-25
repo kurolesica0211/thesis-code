@@ -85,34 +85,29 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lord Nicholas Charles Edward Jonathan Windsor (born 25 July 1970) is a relative of the British royal family, the youngest child of Prince Edward, Duke of Kent.
-Lord Nicholas has voiced strong anti-abortion views.
-Early years
+Lady Rose Victoria Birgitte Louise Gilman (née Windsor; born 1 March 1980) is a British film art assistant and member of the British royal family.
+She is the daughter of Prince Richard, Duke of Gloucester, and his wife Birgitte, Duchess of Gloucester.
+Early life and education
 
-Nicholas Charles Edward Jonathan Windsor was born on 25 July 1970 at King's College Hospital in Denmark Hill, London, to Prince Edward, Duke of Kent and Katharine, Duchess of Kent.
-He has an older brother, Earl of St Andrews, and a sister, Lady Helen Taylor.
-He was baptised later that year at Windsor Castle.
-His godparents included his paternal second cousin Charles, Prince of Wales (later King Charles III), and Donald Coggan, at the time Archbishop of York and later Archbishop of Canterbury.
-Religion
+Rose Victoria Birgitte Louise Windsor was born on 1 March 1980 at St Mary's Hospital, London, the youngest child of Prince Richard, Duke of Gloucester and Birgitte, Duchess of Gloucester.
+Her godparents included Prince Edward and Lady Sarah Armstrong-Jones.
+Career
 
-Nicholas's mother, the Duchess of Kent, had been received into the Catholic Church in 1994.
-On 14 July 2011, Nicholas became an Honorary Vice-president of the Friends of the Personal Ordinariate of Our Lady of Walsingham, an Anglican Ordinariate within the Catholic Church.
-Nicholas is also a patron of the Society of King Charles the Martyr and, though it is a largely Anglican society, he identifies it with his Catholic faith.
-In a passage written by Windsor for the Society's website, he extols Charles's virtues: "In the King's personal piety, devotion and support of the Church, his ecumenical understanding (far advanced for his day), his patronage of the Arts in the service of God, his inspiration of the Christian classic, Eikon Basilike and of course his martyrdom, we have much to REMEMBER and be thankful for.
-"
+Rose has worked in the film industry as a film art assistant.
+Her film credits include Harry Potter and the Order of the Phoenix, Harry Potter and the Half-Blood Prince, Margaret Thatcher: The Long Walk to Finchley, and the television series Little Britain.
+Rose continues to make public appearances at state events alongside other members of the extended royal family, including the 2022 state funeral of Queen Elizabeth II and the 2023 coronation of King Charles III and Queen Camilla.
+Marriage and children
 
-
-Nicholas has voiced strong views on the issue of abortion, which he has stated is, as a societal threat, "worse than al-Qaeda".
-Marriage and family
-
-Nicholas met his future wife, Paola Doimi de Lupis Frankopan Šubić Zrinski, at a party in New York City in 1999 to mark the Millennium.
-By the marriage, the bride became Lady Nicholas Windsor.
+Rose announced her engagement on 16 November 2007 to businessman George Gilman, the son of a former director of Leeds United.
+Rose and her husband have a daughter, Lyla (born 30 May 2010, then 32nd in line of succession to the British throne), and a son, Rufus (born 30 October 2012, then 33rd in line of succession to the British throne).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -128,39 +123,9 @@ By the marriage, the bride became Lady Nicholas Windsor.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -175,6 +140,23 @@ By the marriage, the bride became Lady Nicholas Windsor.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -192,6 +174,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -259,29 +256,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -290,6 +279,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -302,6 +299,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -310,17 +309,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -348,6 +349,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -363,106 +448,126 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f7e2efc4-77f2-4a70-abf8-79acd7308e5a)
- Call ID: f7e2efc4-77f2-4a70-abf8-79acd7308e5a
+  AssignClass (b0a28c22-9637-4cbd-9553-6725f314d3b7)
+ Call ID: b0a28c22-9637-4cbd-9553-6725f314d3b7
   Args:
-    source: Nicholas_Windsor
-    type: :Man
-  AssignClass (71778dee-eae9-41d4-855a-40d59b2d66a1)
- Call ID: 71778dee-eae9-41d4-855a-40d59b2d66a1
-  Args:
-    source: Nicholas_Windsor
-    type: :Person
-  AssignClass (636d03f9-c933-4dbf-a2e6-fb68325ab7cd)
- Call ID: 636d03f9-c933-4dbf-a2e6-fb68325ab7cd
-  Args:
-    type: :Man
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (4441d7c3-12fb-44f1-ad9a-88b51e34ad0f)
- Call ID: 4441d7c3-12fb-44f1-ad9a-88b51e34ad0f
-  Args:
-    type: :Person
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (25db32c2-8e27-4ad6-acaa-083ac6607fa0)
- Call ID: 25db32c2-8e27-4ad6-acaa-083ac6607fa0
-  Args:
+    source: Rose_Windsor
     type: :Woman
-    source: Katharine_Duchess_of_Kent
-  AssignClass (2bca86d0-28df-48d1-b723-e7aca77ba432)
- Call ID: 2bca86d0-28df-48d1-b723-e7aca77ba432
+  AssignClass (4ab13341-bd16-4071-b5dd-94a5a62ca880)
+ Call ID: 4ab13341-bd16-4071-b5dd-94a5a62ca880
   Args:
     type: :Person
-    source: Katharine_Duchess_of_Kent
-  AssignClass (30a8c16c-1722-444b-99d3-e3c3b9d576cb)
- Call ID: 30a8c16c-1722-444b-99d3-e3c3b9d576cb
+    source: Rose_Windsor
+  AddLiteral (21db35f1-0794-4c96-826f-52aafb8a7c77)
+ Call ID: 21db35f1-0794-4c96-826f-52aafb8a7c77
   Args:
-    source: Earl_of_St_Andrews
-    type: :Man
-  AssignClass (3c142f6f-930d-4c44-aa3b-e8cd9b26a6d3)
- Call ID: 3c142f6f-930d-4c44-aa3b-e8cd9b26a6d3
-  Args:
-    type: :Person
-    source: Earl_of_St_Andrews
-  AssignClass (e886d0be-5e24-407a-9a70-42f6e0a21cbd)
- Call ID: e886d0be-5e24-407a-9a70-42f6e0a21cbd
-  Args:
-    type: :Woman
-    source: Lady_Helen_Taylor
-  AssignClass (e668822f-27cc-4a06-863d-ffab34646c8a)
- Call ID: e668822f-27cc-4a06-863d-ffab34646c8a
-  Args:
-    source: Lady_Helen_Taylor
-    type: :Person
-  AssignClass (dbd23586-5de4-437a-97e4-abe1148a8c90)
- Call ID: dbd23586-5de4-437a-97e4-abe1148a8c90
-  Args:
-    source: Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski
-    type: :Woman
-  AssignClass (6d6258f2-bd36-4687-82c0-e2428fe47f86)
- Call ID: 6d6258f2-bd36-4687-82c0-e2428fe47f86
-  Args:
-    source: Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski
-    type: :Person
-  AddLiteral (ef21a817-6a5a-43e4-a6b6-6778eb085699)
- Call ID: ef21a817-6a5a-43e4-a6b6-6778eb085699
-  Args:
-    source: Nicholas_Windsor
-    relation: :hasBirthYear
-    literal_value: 1970
+    source: Rose_Windsor
     literal_type: xsd:integer
-  AddTriple (34d7942e-845d-4f2d-8b7f-0dce6dfeb5fa)
- Call ID: 34d7942e-845d-4f2d-8b7f-0dce6dfeb5fa
+    relation: :hasBirthYear
+    literal_value: 1980
+  AssignClass (bb237267-f915-40bb-8090-7929b3418871)
+ Call ID: bb237267-f915-40bb-8090-7929b3418871
   Args:
-    target: Prince_Edward_Duke_of_Kent
+    source: Prince_Richard
+    type: :Man
+  AssignClass (42b79b34-d221-46ab-9aed-71e3d81ef9b1)
+ Call ID: 42b79b34-d221-46ab-9aed-71e3d81ef9b1
+  Args:
+    type: :Person
+    source: Prince_Richard
+  AssignClass (97f28d8f-55a1-419b-95cc-50d3fd29f124)
+ Call ID: 97f28d8f-55a1-419b-95cc-50d3fd29f124
+  Args:
+    source: Birgitte_Gloucester
+    type: :Woman
+  AssignClass (0dd637d6-80f7-4a08-8014-d6c179582149)
+ Call ID: 0dd637d6-80f7-4a08-8014-d6c179582149
+  Args:
+    type: :Person
+    source: Birgitte_Gloucester
+  AddTriple (7173967b-9ab3-4a6d-8ab9-37cb7638b310)
+ Call ID: 7173967b-9ab3-4a6d-8ab9-37cb7638b310
+  Args:
+    target: Prince_Richard
+    source: Rose_Windsor
     relation: :hasFather
-    source: Nicholas_Windsor
-  AddTriple (9bb357db-f226-4935-9c59-fd8843e56c03)
- Call ID: 9bb357db-f226-4935-9c59-fd8843e56c03
+  AddTriple (5c1c3071-cac0-4e8e-ada8-0021c7ed5814)
+ Call ID: 5c1c3071-cac0-4e8e-ada8-0021c7ed5814
   Args:
     relation: :hasMother
-    source: Nicholas_Windsor
-    target: Katharine_Duchess_of_Kent
-  AddTriple (621e1d34-2e7c-4280-aab7-05bed234cf25)
- Call ID: 621e1d34-2e7c-4280-aab7-05bed234cf25
+    target: Birgitte_Gloucester
+    source: Rose_Windsor
+  AssignClass (bc9b4c6b-b71f-4678-b660-7b80ddc1678d)
+ Call ID: bc9b4c6b-b71f-4678-b660-7b80ddc1678d
   Args:
-    source: Nicholas_Windsor
-    relation: :hasBrother
-    target: Earl_of_St_Andrews
-  AddTriple (303872f0-602e-4233-8921-0c20eb7351e0)
- Call ID: 303872f0-602e-4233-8921-0c20eb7351e0
+    source: George_Gilman
+    type: :Man
+  AssignClass (8da174b7-b016-42cb-9799-29155ccf74ce)
+ Call ID: 8da174b7-b016-42cb-9799-29155ccf74ce
   Args:
-    relation: :hasSister
-    source: Nicholas_Windsor
-    target: Lady_Helen_Taylor
-  AddTriple (6d65bf1b-5bd7-49d9-b9e1-2a62a026a66c)
- Call ID: 6d65bf1b-5bd7-49d9-b9e1-2a62a026a66c
+    source: George_Gilman
+    type: :Person
+  AddTriple (096e0953-42f4-49f8-b9e4-1a83bfd7184b)
+ Call ID: 096e0953-42f4-49f8-b9e4-1a83bfd7184b
   Args:
     relation: :hasRelation
-    source: Nicholas_Windsor
-    target: Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski
-  Finish (98830ca2-5278-4f16-99a0-ef4954fdbb25)
- Call ID: 98830ca2-5278-4f16-99a0-ef4954fdbb25
+    source: Rose_Windsor
+    target: George_Gilman
+  AssignClass (e15350e1-c2d2-4f22-b4cd-fe4a6004109e)
+ Call ID: e15350e1-c2d2-4f22-b4cd-fe4a6004109e
   Args:
+    source: Lyla_Gilman
+    type: :Woman
+  AssignClass (9774e886-c9c4-4019-8f68-1028cae3f017)
+ Call ID: 9774e886-c9c4-4019-8f68-1028cae3f017
+  Args:
+    source: Lyla_Gilman
+    type: :Person
+  AddTriple (aa5b30d3-2ae2-4cc3-9d89-64070e9ab512)
+ Call ID: aa5b30d3-2ae2-4cc3-9d89-64070e9ab512
+  Args:
+    relation: :hasMother
+    target: Rose_Windsor
+    source: Lyla_Gilman
+  AddTriple (4c5df67b-073d-4ada-9931-9f1495219c54)
+ Call ID: 4c5df67b-073d-4ada-9931-9f1495219c54
+  Args:
+    relation: :hasFather
+    target: George_Gilman
+    source: Lyla_Gilman
+  AssignClass (dd41c155-e3a3-4ec1-98d0-8e4d44080b2d)
+ Call ID: dd41c155-e3a3-4ec1-98d0-8e4d44080b2d
+  Args:
+    type: :Man
+    source: Rufus_Gilman
+  AssignClass (684de362-1788-44fc-98f4-c8ddbc5970c5)
+ Call ID: 684de362-1788-44fc-98f4-c8ddbc5970c5
+  Args:
+    type: :Person
+    source: Rufus_Gilman
+  AddTriple (07b6260f-4c5f-4fee-8dc6-4b6e3bd80114)
+ Call ID: 07b6260f-4c5f-4fee-8dc6-4b6e3bd80114
+  Args:
+    relation: :hasMother
+    source: Rufus_Gilman
+    target: Rose_Windsor
+  AddTriple (48fbaf98-6637-408a-953e-cf924c25f9d6)
+ Call ID: 48fbaf98-6637-408a-953e-cf924c25f9d6
+  Args:
+    relation: :hasFather
+    target: George_Gilman
+    source: Rufus_Gilman
+  Finish (a28acfc4-c4c1-40bc-a44a-804103270f87)
+ Call ID: a28acfc4-c4c1-40bc-a44a-804103270f87
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -539,28 +644,30 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Nicholas_Windsor a :Man,
-          :Person ;
-      :hasBirthYear 1970 ;
-      :hasBrother data:Earl_of_St_Andrews ;
-      :hasFather data:Prince_Edward_Duke_of_Kent ;
-      :hasMother data:Katharine_Duchess_of_Kent ;
-      :hasRelation data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski ;
-      :hasSister data:Lady_Helen_Taylor .
+  data:Lyla_Gilman a :Person,
+          :Woman ;
+      :hasFather data:George_Gilman ;
+      :hasMother data:Rose_Windsor .
 
-  data:Earl_of_St_Andrews a :Man,
+  data:Rufus_Gilman a :Man,
+          :Person ;
+      :hasFather data:George_Gilman ;
+      :hasMother data:Rose_Windsor .
+
+  data:Birgitte_Gloucester a :Person,
+          :Woman .
+
+  data:Prince_Richard a :Man,
           :Person .
 
-  data:Katharine_Duchess_of_Kent a :Person,
-          :Woman .
+  data:Rose_Windsor a :Person,
+          :Woman ;
+      :hasBirthYear 1980 ;
+      :hasFather data:Prince_Richard ;
+      :hasMother data:Birgitte_Gloucester ;
+      :hasRelation data:George_Gilman .
 
-  data:Lady_Helen_Taylor a :Person,
-          :Woman .
-
-  data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski a :Person,
-          :Woman .
-
-  data:Prince_Edward_Duke_of_Kent a :Man,
+  data:George_Gilman a :Man,
           :Person .
 
 
@@ -573,62 +680,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (06ac6f44-ac43-473b-b5dc-89f52a1dbb9e)
- Call ID: 06ac6f44-ac43-473b-b5dc-89f52a1dbb9e
+  ValidateShacl (95fc5d72-1bb5-495a-8d4f-1590ec3a4228)
+ Call ID: 95fc5d72-1bb5-495a-8d4f-1590ec3a4228
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:18
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Edward_Duke_of_Kent, identified as the father of Nicholas_Windsor, is missing the required class :Ancestor.
+      The value node George_Gilman for the property :hasFather of Rufus_Gilman is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Edward_Duke_of_Kent, :Ancestor)
+      AssignClass(node: "George_Gilman", class: ":Man")
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Katharine_Duchess_of_Kent, identified as the mother of Nicholas_Windsor, is missing the required class :Ancestor.
+      The value node Rose_Windsor for the property :hasMother of Rufus_Gilman is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Katharine_Duchess_of_Kent, :Ancestor)
+      AssignClass(node: "Rose_Windsor", class: ":Woman")
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Edward_Duke_of_Kent is missing the required class :Ancestor, which is expected for the hasFather relationship.
+      The value node George_Gilman for the property :hasFather of Lyla_Gilman is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Edward_Duke_of_Kent, :Ancestor)
+      AssignClass(node: "George_Gilman", class: ":Man")
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Katharine_Duchess_of_Kent is missing the required class :Ancestor, which is expected for the hasMother relationship.
+      The value node Prince_Richard for the property :hasFather of Rose_Windsor is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Katharine_Duchess_of_Kent, :Ancestor)
+      AssignClass(node: "Prince_Richard", class: ":Man")
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Edward_Duke_of_Kent fails the class constraint for the hasFather path because it lacks the mandatory :Ancestor type.
+      The value node George_Gilman for the property :hasFather of Rufus_Gilman is not assigned the required class :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Edward_Duke_of_Kent, :Ancestor)
+      AssignClass(node: "George_Gilman", class: ":Man")
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Katharine_Duchess_of_Kent fails the class constraint for the hasMother path because it lacks the mandatory :Ancestor type.
+      The value node Rose_Windsor for the property :hasMother of Lyla_Gilman is not assigned the required class :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Katharine_Duchess_of_Kent, :Ancestor)
+      AssignClass(node: "Rose_Windsor", class: ":Woman")
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Birgitte_Gloucester for the property :hasMother of Rose_Windsor is not assigned the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Birgitte_Gloucester", class: ":Woman")
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Rose_Windsor for the property :hasMother of Rufus_Gilman is not assigned the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Rose_Windsor", class: ":Woman")
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node George_Gilman for the property :hasFather of Lyla_Gilman is not assigned the required class :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "George_Gilman", class: ":Man")
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Richard for the property :hasFather of Rose_Windsor is not assigned the required class :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Prince_Richard", class: ":Man")
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node George_Gilman for the property :hasFather of Rufus_Gilman is not assigned the required class :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "George_Gilman", class: ":Man")
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Rose_Windsor for the property :hasMother of Lyla_Gilman is not assigned the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Rose_Windsor", class: ":Woman")
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Birgitte_Gloucester for the property :hasMother of Rose_Windsor is not assigned the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Birgitte_Gloucester", class: ":Woman")
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Rose_Windsor for the property :hasMother of Rufus_Gilman is not assigned the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Rose_Windsor", class: ":Woman")
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node George_Gilman for the property :hasFather of Lyla_Gilman is not assigned the required class :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "George_Gilman", class: ":Man")
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Richard for the property :hasFather of Rose_Windsor is not assigned the required class :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Prince_Richard", class: ":Man")
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Rose_Windsor for the property :hasMother of Lyla_Gilman is not assigned the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Rose_Windsor", class: ":Woman")
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Birgitte_Gloucester for the property :hasMother of Rose_Windsor is not assigned the required class :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Birgitte_Gloucester", class: ":Woman")
 
 
 
@@ -637,16 +840,37 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (e362aa07-6194-47db-af6a-539754e88f68)
- Call ID: e362aa07-6194-47db-af6a-539754e88f68
+  AssignClass (ee4673d2-b719-4c5c-887b-d4adae4d6986)
+ Call ID: ee4673d2-b719-4c5c-887b-d4adae4d6986
   Args:
+    source: Prince_Richard
     type: :Ancestor
-    source: Prince_Edward_Duke_of_Kent
-  AssignClass (2e29b70d-7089-4918-aa4b-0947e7926913)
- Call ID: 2e29b70d-7089-4918-aa4b-0947e7926913
+  AssignClass (11fcc47a-cf18-43a7-8719-9bc36fbc8da2)
+ Call ID: 11fcc47a-cf18-43a7-8719-9bc36fbc8da2
   Args:
-    source: Katharine_Duchess_of_Kent
+    source: Birgitte_Gloucester
     type: :Ancestor
+  AssignClass (cc5a8bbe-d6f4-499f-8514-559ab658beb1)
+ Call ID: cc5a8bbe-d6f4-499f-8514-559ab658beb1
+  Args:
+    source: Rose_Windsor
+    type: :Ancestor
+  AssignClass (037dab78-3df4-42c5-b178-ba712a3d475c)
+ Call ID: 037dab78-3df4-42c5-b178-ba712a3d475c
+  Args:
+    source: George_Gilman
+    type: :Ancestor
+  Finish (8c975dca-8fdd-4336-a08b-6fe4d493cfc6)
+ Call ID: 8c975dca-8fdd-4336-a08b-6fe4d493cfc6
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -659,40 +883,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Nicholas_Windsor a :Man,
+  data:Lyla_Gilman a :Person,
+          :Woman ;
+      :hasFather data:George_Gilman ;
+      :hasMother data:Rose_Windsor .
+
+  data:Rufus_Gilman a :Man,
           :Person ;
-      :hasBirthYear 1970 ;
-      :hasBrother data:Earl_of_St_Andrews ;
-      :hasFather data:Prince_Edward_Duke_of_Kent ;
-      :hasMother data:Katharine_Duchess_of_Kent ;
-      :hasRelation data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski ;
-      :hasSister data:Lady_Helen_Taylor .
+      :hasFather data:George_Gilman ;
+      :hasMother data:Rose_Windsor .
 
-  data:Earl_of_St_Andrews a :Man,
-          :Person .
-
-  data:Katharine_Duchess_of_Kent a :Ancestor,
+  data:Birgitte_Gloucester a :Ancestor,
           :Person,
           :Woman .
 
-  data:Lady_Helen_Taylor a :Person,
-          :Woman .
+  data:Prince_Richard a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski a :Person,
-          :Woman .
+  data:Rose_Windsor a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1980 ;
+      :hasFather data:Prince_Richard ;
+      :hasMother data:Birgitte_Gloucester ;
+      :hasRelation data:George_Gilman .
 
-  data:Prince_Edward_Duke_of_Kent a :Ancestor,
+  data:George_Gilman a :Ancestor,
           :Man,
           :Person .
 
 
 
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (7de45437-a93c-4014-a66f-15c134d8e279)
- Call ID: 7de45437-a93c-4014-a66f-15c134d8e279
+  ValidateShacl (cc911b1a-f673-4eaf-b1a9-b752fd73e93f)
+ Call ID: cc911b1a-f673-4eaf-b1a9-b752fd73e93f
   Args:
 
 ================================= Tool Message =================================
@@ -703,6 +935,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (e69f1783-7974-4c3d-aa00-90706ac117b6)
- Call ID: e69f1783-7974-4c3d-aa00-90706ac117b6
+  Finish (483bfa79-c039-4bdf-96ed-373b8f96f810)
+ Call ID: 483bfa79-c039-4bdf-96ed-373b8f96f810
   Args:

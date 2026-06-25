@@ -70,7 +70,6 @@ Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
 Sir Simon Alexander Bowes-Lyon (born 17 June 1932) is a British businessman who served as Lord Lieutenant of Hertfordshire from 1986 to 2007.
-He was a maternal first cousin of Elizabeth II.
 Early life and family
 
 Bowes-Lyon was born in 1932, the son of The Hon.
@@ -88,6 +87,8 @@ Bowes-Lyon was appointed Lord Lieutenant of Hertfordshire on 12 February 1986, a
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -103,39 +104,9 @@ Bowes-Lyon was appointed Lord Lieutenant of Hertfordshire on 12 February 1986, a
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -150,6 +121,23 @@ Bowes-Lyon was appointed Lord Lieutenant of Hertfordshire on 12 February 1986, a
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -167,6 +155,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -234,29 +237,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,6 +260,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -277,6 +280,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -285,17 +290,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -323,6 +330,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -338,115 +429,197 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (719a3a36-d6bc-4a7a-a65a-bc268d02351a)
- Call ID: 719a3a36-d6bc-4a7a-a65a-bc268d02351a
+  AssignClass (fc775d14-8d03-41b3-b9ce-09c60ef8eeb3)
+ Call ID: fc775d14-8d03-41b3-b9ce-09c60ef8eeb3
   Args:
     type: :Man
-    source: :SimonAlexanderBowesLyon
-  AssignClass (ad23d811-cfed-403c-8fe8-d1be4f49c944)
- Call ID: ad23d811-cfed-403c-8fe8-d1be4f49c944
+    source: Simon_Alexander_Bowes-Lyon
+  AssignClass (28e8fed6-d436-466d-a6fe-fb0721acb4ed)
+ Call ID: 28e8fed6-d436-466d-a6fe-fb0721acb4ed
   Args:
-    type: :Person
-    source: :SimonAlexanderBowesLyon
-  AddLiteral (6104557a-5660-4692-a1c2-cb7bd9bb651d)
- Call ID: 6104557a-5660-4692-a1c2-cb7bd9bb651d
-  Args:
-    relation: :hasBirthYear
-    source: :SimonAlexanderBowesLyon
-    literal_type: xsd:integer
-    literal_value: 1932
-  AssignClass (5f730a93-8dff-4989-94cd-cde23070160d)
- Call ID: 5f730a93-8dff-4989-94cd-cde23070160d
-  Args:
+    source: David_Bowes-Lyon
     type: :Man
-    source: :DavidBowesLyon
-  AssignClass (f71b1293-c25b-46f5-baa8-6f8473585b90)
- Call ID: f71b1293-c25b-46f5-baa8-6f8473585b90
+  AssignClass (5adf829f-9a98-4df1-94d3-0f59c6a9969c)
+ Call ID: 5adf829f-9a98-4df1-94d3-0f59c6a9969c
   Args:
-    source: :DavidBowesLyon
-    type: :Person
-  AddLiteral (dfbc4099-98f7-43ab-b055-760ee8cbf8c7)
- Call ID: dfbc4099-98f7-43ab-b055-760ee8cbf8c7
-  Args:
-    literal_value: 1902
-    literal_type: xsd:integer
-    source: :DavidBowesLyon
-    relation: :hasBirthYear
-  AddLiteral (b80d1e62-5e62-44fe-9b78-95bd3341dcc7)
- Call ID: b80d1e62-5e62-44fe-9b78-95bd3341dcc7
-  Args:
-    relation: :hasDeathYear
-    source: :DavidBowesLyon
-    literal_type: xsd:integer
-    literal_value: 1961
-  AssignClass (28786043-9fc6-4e9f-8a7c-bcd32765a031)
- Call ID: 28786043-9fc6-4e9f-8a7c-bcd32765a031
-  Args:
-    source: :RachelPaulineSpenderClay
+    source: Rachel_Pauline_Spender-Clay
     type: :Woman
-  AssignClass (6e535749-7790-44a7-9f55-22b96523913b)
- Call ID: 6e535749-7790-44a7-9f55-22b96523913b
+  AssignClass (3692b9f9-2f2e-4f41-9240-caefa98b64b5)
+ Call ID: 3692b9f9-2f2e-4f41-9240-caefa98b64b5
   Args:
-    source: :RachelPaulineSpenderClay
-    type: :Person
-  AddLiteral (9bac113f-1cbf-4330-a134-c29ad3c6d20b)
- Call ID: 9bac113f-1cbf-4330-a134-c29ad3c6d20b
+    type: :Man
+    source: Herbert_Spender-Clay
+  AssignClass (b299d4a5-5c28-40f1-933c-2239a8226e22)
+ Call ID: b299d4a5-5c28-40f1-933c-2239a8226e22
   Args:
-    relation: :hasBirthYear
-    source: :RachelPaulineSpenderClay
+    source: Pauline_Astor
+    type: :Woman
+  AssignClass (ea098391-11e1-41e1-b33e-04e7d34bbb20)
+ Call ID: ea098391-11e1-41e1-b33e-04e7d34bbb20
+  Args:
+    type: :Woman
+    source: Queen_Elizabeth_The_Queen_Mother
+  AddLiteral (dce52333-e2c8-4d65-b09c-f1e4c434114b)
+ Call ID: dce52333-e2c8-4d65-b09c-f1e4c434114b
+  Args:
     literal_type: xsd:integer
-    literal_value: 1907
-  AddLiteral (ade1d9de-4f6f-4281-92b2-5a3d31fe6a03)
- Call ID: ade1d9de-4f6f-4281-92b2-5a3d31fe6a03
+    source: Simon_Alexander_Bowes-Lyon
+    relation: :hasBirthYear
+    literal_value: 1932
+  AddLiteral (be5c0d07-6591-4ffc-953d-fb79aacb0768)
+ Call ID: be5c0d07-6591-4ffc-953d-fb79aacb0768
   Args:
+    source: David_Bowes-Lyon
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1902
+  AddLiteral (c541fb43-9659-4d5f-85cb-e84dfa6cd363)
+ Call ID: c541fb43-9659-4d5f-85cb-e84dfa6cd363
+  Args:
+    literal_type: xsd:integer
+    source: David_Bowes-Lyon
+    literal_value: 1961
     relation: :hasDeathYear
-    source: :RachelPaulineSpenderClay
+  AddLiteral (0e342258-e00b-48e9-8c1a-57041d8bca99)
+ Call ID: 0e342258-e00b-48e9-8c1a-57041d8bca99
+  Args:
+    literal_type: xsd:integer
+    source: Rachel_Pauline_Spender-Clay
+    relation: :hasBirthYear
+    literal_value: 1907
+  AddLiteral (ff7eefdb-9386-4288-8318-e58b8709f1eb)
+ Call ID: ff7eefdb-9386-4288-8318-e58b8709f1eb
+  Args:
+    source: Rachel_Pauline_Spender-Clay
     literal_type: xsd:integer
     literal_value: 1996
-  AddTriple (3f56f166-b944-47ec-aa39-3b4697ae67d0)
- Call ID: 3f56f166-b944-47ec-aa39-3b4697ae67d0
+    relation: :hasDeathYear
+  AddTriple (4cd56b88-c907-402f-9517-f2e5c9f46e20)
+ Call ID: 4cd56b88-c907-402f-9517-f2e5c9f46e20
   Args:
-    target: :DavidBowesLyon
+    source: Simon_Alexander_Bowes-Lyon
+    target: David_Bowes-Lyon
     relation: :hasFather
-    source: :SimonAlexanderBowesLyon
-  AddTriple (c7520369-7cfc-42a3-ad40-ad474cf33325)
- Call ID: c7520369-7cfc-42a3-ad40-ad474cf33325
+  AddTriple (c9bbfd2b-d0d0-4676-8d21-47c350b5f13f)
+ Call ID: c9bbfd2b-d0d0-4676-8d21-47c350b5f13f
   Args:
-    source: :SimonAlexanderBowesLyon
-    target: :RachelPaulineSpenderClay
+    target: Rachel_Pauline_Spender-Clay
+    source: Simon_Alexander_Bowes-Lyon
     relation: :hasMother
-  AssignClass (551a4e3c-c127-4353-b145-d9e7becdd97c)
- Call ID: 551a4e3c-c127-4353-b145-d9e7becdd97c
+  AddTriple (6a5fb003-7638-4205-a1ec-0c5a723b661d)
+ Call ID: 6a5fb003-7638-4205-a1ec-0c5a723b661d
   Args:
-    type: :Man
-    source: :HerbertSpenderClay
-  AssignClass (7f8fd005-b2bb-4788-b8b1-8adc1c4d8713)
- Call ID: 7f8fd005-b2bb-4788-b8b1-8adc1c4d8713
-  Args:
-    type: :Person
-    source: :HerbertSpenderClay
-  AssignClass (c9c9b19b-dabc-4cd9-bfa5-663dc3be9dd7)
- Call ID: c9c9b19b-dabc-4cd9-bfa5-663dc3be9dd7
-  Args:
-    type: :Woman
-    source: :PaulineAstor
-  AssignClass (275800b6-6598-486e-8a33-dd716a8ba2b6)
- Call ID: 275800b6-6598-486e-8a33-dd716a8ba2b6
-  Args:
-    source: :PaulineAstor
-    type: :Person
-  AddTriple (1c0a3229-beb4-410c-9895-7456e89b30ac)
- Call ID: 1c0a3229-beb4-410c-9895-7456e89b30ac
-  Args:
-    target: :HerbertSpenderClay
     relation: :hasFather
-    source: :RachelPaulineSpenderClay
-  AddTriple (f39a44e4-436b-432e-9296-c162f0b59139)
- Call ID: f39a44e4-436b-432e-9296-c162f0b59139
+    source: Rachel_Pauline_Spender-Clay
+    target: Herbert_Spender-Clay
+  AddTriple (53d4efa0-df8d-4205-add6-8c7cdcad1a90)
+ Call ID: 53d4efa0-df8d-4205-add6-8c7cdcad1a90
   Args:
+    source: Rachel_Pauline_Spender-Clay
+    target: Pauline_Astor
     relation: :hasMother
-    target: :PaulineAstor
-    source: :RachelPaulineSpenderClay
-  Finish (2d079af8-b739-49df-8668-a45789d13aee)
- Call ID: 2d079af8-b739-49df-8668-a45789d13aee
+  AddTriple (9783857f-841b-47a2-b76b-d8bd67280e8a)
+ Call ID: 9783857f-841b-47a2-b76b-d8bd67280e8a
+  Args:
+    relation: :isAuntOf
+    source: Queen_Elizabeth_The_Queen_Mother
+    target: Simon_Alexander_Bowes-Lyon
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Queen_Elizabeth_The_Queen_Mother a :Woman ;
+      :isAuntOf data:Simon_Alexander_Bowes-Lyon .
+
+  data:David_Bowes-Lyon a :Man ;
+      :hasBirthYear 1902 ;
+      :hasDeathYear 1961 .
+
+  data:Herbert_Spender-Clay a :Man .
+
+  data:Pauline_Astor a :Woman .
+
+  data:Rachel_Pauline_Spender-Clay a :Woman ;
+      :hasBirthYear 1907 ;
+      :hasDeathYear 1996 ;
+      :hasFather data:Herbert_Spender-Clay ;
+      :hasMother data:Pauline_Astor .
+
+  data:Simon_Alexander_Bowes-Lyon a :Man ;
+      :hasBirthYear 1932 ;
+      :hasFather data:David_Bowes-Lyon ;
+      :hasMother data:Rachel_Pauline_Spender-Clay .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (52f489c4-f762-4f7b-a43f-081c1b7bbf93)
+ Call ID: 52f489c4-f762-4f7b-a43f-081c1b7bbf93
   Args:

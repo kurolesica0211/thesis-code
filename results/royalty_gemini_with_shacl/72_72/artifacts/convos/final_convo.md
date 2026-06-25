@@ -103,6 +103,8 @@ Malcolm had the onset of dementia late on in her life and died on 13 October 201
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -118,39 +120,9 @@ Malcolm had the onset of dementia late on in her life and died on 13 October 201
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -165,6 +137,23 @@ Malcolm had the onset of dementia late on in her life and died on 13 October 201
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -182,6 +171,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -249,29 +253,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,6 +276,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -292,6 +296,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -300,17 +306,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -338,6 +346,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -353,121 +445,123 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a8e66ef4-7f6e-43c9-abd9-00ccd4d058e7)
- Call ID: a8e66ef4-7f6e-43c9-abd9-00ccd4d058e7
+  AssignClass (562d9ad8-39ee-40c0-a30c-a70a64c7d645)
+ Call ID: 562d9ad8-39ee-40c0-a30c-a70a64c7d645
   Args:
-    source: :Mary_Malcolm
     type: :Person
-  AssignClass (f16b974a-8881-4b44-af14-f0f30032cde2)
- Call ID: f16b974a-8881-4b44-af14-f0f30032cde2
+    source: :Mary_Malcolm
+  AssignClass (c50efb99-0d6c-4d12-88d4-f4f867de0a32)
+ Call ID: c50efb99-0d6c-4d12-88d4-f4f867de0a32
   Args:
     source: :Mary_Malcolm
     type: :Woman
-  AssignClass (8ff7974b-b1d5-4f9c-bc0b-2f3463f98848)
- Call ID: 8ff7974b-b1d5-4f9c-bc0b-2f3463f98848
+  AddLiteral (01c54f21-8f37-4f39-9b4c-13545348e19e)
+ Call ID: 01c54f21-8f37-4f39-9b4c-13545348e19e
   Args:
-    type: :Female
-    source: :Female_Sex
-  AddTriple (a1ce6d08-242a-40eb-8f1a-f376a1d0cfbd)
- Call ID: a1ce6d08-242a-40eb-8f1a-f376a1d0cfbd
-  Args:
-    relation: :hasSex
     source: :Mary_Malcolm
-    target: :Female_Sex
-  AddLiteral (6978c6ab-84e5-4ce8-96ae-49e172c53030)
- Call ID: 6978c6ab-84e5-4ce8-96ae-49e172c53030
-  Args:
-    literal_type: xsd:integer
     literal_value: 1918
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: :Mary_Malcolm
-  AddLiteral (e76e0ef2-c998-422e-90c9-1d5169bf14de)
- Call ID: e76e0ef2-c998-422e-90c9-1d5169bf14de
+  AddLiteral (1d3c85e9-3cbe-4320-8118-8acb794a1ba9)
+ Call ID: 1d3c85e9-3cbe-4320-8118-8acb794a1ba9
   Args:
     source: :Mary_Malcolm
     literal_value: 2010
     relation: :hasDeathYear
     literal_type: xsd:integer
-  AssignClass (5b81334c-9e4b-4ea6-95e6-a62d83bc60cf)
- Call ID: 5b81334c-9e4b-4ea6-95e6-a62d83bc60cf
+  AddTriple (7e0d11b2-3e40-47de-ad7b-3bfcf148fc90)
+ Call ID: 7e0d11b2-3e40-47de-ad7b-3bfcf148fc90
+  Args:
+    relation: :hasSex
+    source: :Mary_Malcolm
+    target: :Female
+  AssignClass (bb69f8c2-cab5-49af-8c73-5a757488da38)
+ Call ID: bb69f8c2-cab5-49af-8c73-5a757488da38
   Args:
     source: :Sir_Ian_Malcolm
     type: :Person
-  AssignClass (29a5b689-9f13-49fa-bdf0-90caf541a21b)
- Call ID: 29a5b689-9f13-49fa-bdf0-90caf541a21b
+  AssignClass (72d2d60d-1ac9-4ca5-80b9-e4c6db91a7cc)
+ Call ID: 72d2d60d-1ac9-4ca5-80b9-e4c6db91a7cc
   Args:
     type: :Man
     source: :Sir_Ian_Malcolm
-  AssignClass (88ecd382-1875-4161-a0e7-d8ecee20d66e)
- Call ID: 88ecd382-1875-4161-a0e7-d8ecee20d66e
+  AssignClass (b8366672-af9c-4d0b-ba3a-e2f4b6e7c159)
+ Call ID: b8366672-af9c-4d0b-ba3a-e2f4b6e7c159
   Args:
-    source: :Male_Sex
-    type: :Male
-  AddTriple (48ffddb4-ca25-4ca2-ba5e-ca208e93aa58)
- Call ID: 48ffddb4-ca25-4ca2-ba5e-ca208e93aa58
-  Args:
-    source: :Sir_Ian_Malcolm
-    target: :Male_Sex
-    relation: :hasSex
-  AssignClass (a599d5d3-75e1-4bb7-a6e2-c99b5e099a54)
- Call ID: a599d5d3-75e1-4bb7-a6e2-c99b5e099a54
-  Args:
-    type: :Person
     source: :Jeanne_Langtry
-  AssignClass (96aa9b6e-70fc-4c80-8ce8-9d8b13dd904e)
- Call ID: 96aa9b6e-70fc-4c80-8ce8-9d8b13dd904e
+    type: :Person
+  AssignClass (79b5906f-22ea-4e9c-ba34-c89329b5947a)
+ Call ID: 79b5906f-22ea-4e9c-ba34-c89329b5947a
   Args:
     type: :Woman
     source: :Jeanne_Langtry
-  AddTriple (085d0ef2-c6ba-4488-9f29-50de12bd025b)
- Call ID: 085d0ef2-c6ba-4488-9f29-50de12bd025b
+  AddLiteral (b4d58f4f-85aa-4041-8341-bd65fa5fdeef)
+ Call ID: b4d58f4f-85aa-4041-8341-bd65fa5fdeef
   Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1881
     source: :Jeanne_Langtry
-    target: :Female_Sex
-    relation: :hasSex
-  AddTriple (af64947f-00cf-4624-8eac-541538ae78c5)
- Call ID: af64947f-00cf-4624-8eac-541538ae78c5
+  AddLiteral (6f7510c8-30e6-4af0-9df0-9c5a14abe749)
+ Call ID: 6f7510c8-30e6-4af0-9df0-9c5a14abe749
+  Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: :Jeanne_Langtry
+    literal_value: 1964
+  AddTriple (a14ef88e-709f-4142-9ba3-47739617663c)
+ Call ID: a14ef88e-709f-4142-9ba3-47739617663c
   Args:
     target: :Sir_Ian_Malcolm
     source: :Mary_Malcolm
     relation: :hasFather
-  AddTriple (8dd930e9-fa24-4c59-a9f3-1cead35969f8)
- Call ID: 8dd930e9-fa24-4c59-a9f3-1cead35969f8
+  AddTriple (b44528a7-d8cf-47eb-93ff-1f04b535bdf6)
+ Call ID: b44528a7-d8cf-47eb-93ff-1f04b535bdf6
   Args:
     relation: :hasMother
-    source: :Mary_Malcolm
     target: :Jeanne_Langtry
-  AssignClass (bdba8e04-304f-4686-bf7f-bddcd1e848e9)
- Call ID: bdba8e04-304f-4686-bf7f-bddcd1e848e9
+    source: :Mary_Malcolm
+  AssignClass (a7b4e4a3-0bf9-420f-b669-95706f979cc2)
+ Call ID: a7b4e4a3-0bf9-420f-b669-95706f979cc2
+  Args:
+    source: :Lillie_Langtry
+    type: :Person
+  AssignClass (eb3dafc7-b740-47f1-9e35-f04df4c54b53)
+ Call ID: eb3dafc7-b740-47f1-9e35-f04df4c54b53
+  Args:
+    source: :Lillie_Langtry
+    type: :Woman
+  AddTriple (31e7a388-fb40-444a-b08a-78105c6a3ac2)
+ Call ID: 31e7a388-fb40-444a-b08a-78105c6a3ac2
+  Args:
+    target: :Lillie_Langtry
+    source: :Jeanne_Langtry
+    relation: :hasMother
+  AssignClass (72e34c12-57d7-44fa-91de-571e0ba852f5)
+ Call ID: 72e34c12-57d7-44fa-91de-571e0ba852f5
   Args:
     source: :Sir_Basil_Bartlett
     type: :Person
-  AssignClass (e316cc88-eea0-4a12-beca-849d3ffa6ac6)
- Call ID: e316cc88-eea0-4a12-beca-849d3ffa6ac6
+  AssignClass (9dcbee8a-d860-44d1-8e39-7ffe83f31166)
+ Call ID: 9dcbee8a-d860-44d1-8e39-7ffe83f31166
   Args:
     type: :Man
     source: :Sir_Basil_Bartlett
-  AddTriple (e994d065-e8f8-412d-84ed-99d1d9c5d434)
- Call ID: e994d065-e8f8-412d-84ed-99d1d9c5d434
+  AddLiteral (755266b7-70bd-452c-9965-b83f3ceacbf2)
+ Call ID: 755266b7-70bd-452c-9965-b83f3ceacbf2
   Args:
-    source: :Sir_Basil_Bartlett
-    target: :Male_Sex
-    relation: :hasSex
-  AddLiteral (7482d149-fa20-4037-b770-270a76e5de0c)
- Call ID: 7482d149-fa20-4037-b770-270a76e5de0c
-  Args:
-    source: :Mary_Malcolm
+    relation: :hasMarriageYear
     literal_type: xsd:integer
     literal_value: 1937
-    relation: :hasMarriageYear
-  AddTriple (afd39b86-e2b8-47c6-a6f7-908b29e31c1a)
- Call ID: afd39b86-e2b8-47c6-a6f7-908b29e31c1a
-  Args:
-    target: :Sir_Basil_Bartlett
     source: :Mary_Malcolm
+  AddTriple (216ab468-de2a-408f-af1a-f5f6c3c7a1ce)
+ Call ID: 216ab468-de2a-408f-af1a-f5f6c3c7a1ce
+  Args:
     relation: :hasRelation
-  Finish (84ac2baa-adde-4711-93d5-226a6fe26d3e)
- Call ID: 84ac2baa-adde-4711-93d5-226a6fe26d3e
+    source: :Mary_Malcolm
+    target: :Sir_Basil_Bartlett
+  Finish (0490b4d7-2deb-4fad-b6e1-63ed6ef5fd47)
+ Call ID: 0490b4d7-2deb-4fad-b6e1-63ed6ef5fd47
   Args:
 
 ================================= Tool Message =================================
@@ -561,23 +655,22 @@ The final data graph after all the edits:
       :hasMarriageYear 1937 ;
       :hasMother data:Jeanne_Langtry ;
       :hasRelation data:Sir_Basil_Bartlett ;
-      :hasSex data:Female_Sex .
+      :hasSex data:Female .
 
   data:Jeanne_Langtry a :Person,
           :Woman ;
-      :hasSex data:Female_Sex .
+      :hasBirthYear 1881 ;
+      :hasDeathYear 1964 ;
+      :hasMother data:Lillie_Langtry .
+
+  data:Lillie_Langtry a :Person,
+          :Woman .
 
   data:Sir_Basil_Bartlett a :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
+          :Person .
 
   data:Sir_Ian_Malcolm a :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
-
-  data:Female_Sex a :Female .
-
-  data:Male_Sex a :Male .
+          :Person .
 
 
 
@@ -589,62 +682,150 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (87c9485e-5e0e-4684-b7bf-bb5709ac76a8)
- Call ID: 87c9485e-5e0e-4684-b7bf-bb5709ac76a8
+  ValidateShacl (5bc6fd72-a8fe-4fcc-8c98-39845808458d)
+ Call ID: 5bc6fd72-a8fe-4fcc-8c98-39845808458d
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:17
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Sir_Ian_Malcolm, identified as the father of Mary_Malcolm, is missing the mandatory class :Ancestor required by the hasFather property constraint.
+      The value 'Female' assigned to property ':hasSex' for node 'Mary_Malcolm' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Sir_Ian_Malcolm.
+      AssignClass('Female', ':Sex')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Jeanne_Langtry, identified as the mother of Mary_Malcolm, is missing the mandatory class :Ancestor required by the hasMother property constraint.
+      The value 'Sir_Ian_Malcolm' assigned to property ':hasFather' for node 'Mary_Malcolm' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Jeanne_Langtry.
+      AssignClass('Sir_Ian_Malcolm', ':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Sir_Ian_Malcolm does not satisfy the class requirements for the hasFather relationship because it lacks the :Ancestor class definition.
+      The value 'Jeanne_Langtry' assigned to property ':hasMother' for node 'Mary_Malcolm' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Sir_Ian_Malcolm.
+      AssignClass('Jeanne_Langtry', ':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Jeanne_Langtry does not satisfy the class requirements for the hasMother relationship because it lacks the :Ancestor class definition.
+      The value 'Lillie_Langtry' assigned to property ':hasMother' for node 'Jeanne_Langtry' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Jeanne_Langtry.
+      AssignClass('Lillie_Langtry', ':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Sir_Ian_Malcolm is missing the :Ancestor class, which is a required type for any value linked via the hasFather property.
+      The value 'Female' assigned to property ':hasSex' for node 'Mary_Malcolm' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Sir_Ian_Malcolm.
+      AssignClass('Female', ':Sex')
 
 
   Violation [6]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' assigned to property ':hasSex' for node 'Mary_Malcolm' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Female', ':Sex')
+
+
+  Violation [7]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' assigned to property ':hasSex' for node 'Mary_Malcolm' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Female', ':Sex')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Sir_Ian_Malcolm' assigned to property ':hasFather' for node 'Mary_Malcolm' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Sir_Ian_Malcolm', ':Ancestor')
+
+
+  Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Jeanne_Langtry is missing the :Ancestor class, which is a required type for any value linked via the hasMother property.
+      The value 'Jeanne_Langtry' assigned to property ':hasMother' for node 'Mary_Malcolm' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to Jeanne_Langtry.
+      AssignClass('Jeanne_Langtry', ':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Lillie_Langtry' assigned to property ':hasMother' for node 'Jeanne_Langtry' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Lillie_Langtry', ':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' assigned to property ':hasSex' for node 'Mary_Malcolm' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Female', ':Sex')
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' assigned to property ':hasSex' for node 'Mary_Malcolm' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Female', ':Sex')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Sir_Ian_Malcolm' assigned to property ':hasFather' for node 'Mary_Malcolm' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Sir_Ian_Malcolm', ':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Jeanne_Langtry' assigned to property ':hasMother' for node 'Mary_Malcolm' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Jeanne_Langtry', ':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Lillie_Langtry' assigned to property ':hasMother' for node 'Jeanne_Langtry' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Lillie_Langtry', ':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' assigned to property ':hasSex' for node 'Mary_Malcolm' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Female', ':Sex')
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' assigned to property ':hasSex' for node 'Mary_Malcolm' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass('Female', ':Sex')
 
 
 
@@ -653,16 +834,37 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (e82c9a99-5162-41ff-afd7-47eb83246bdf)
- Call ID: e82c9a99-5162-41ff-afd7-47eb83246bdf
+  AssignClass (1c757e5b-2a51-494b-bc69-816621011f5e)
+ Call ID: 1c757e5b-2a51-494b-bc69-816621011f5e
   Args:
+    type: :Sex
+    source: :Female
+  AssignClass (21c352b8-caf8-49cc-951b-d6e6361544d3)
+ Call ID: 21c352b8-caf8-49cc-951b-d6e6361544d3
+  Args:
+    type: :Ancestor
     source: :Sir_Ian_Malcolm
-    type: :Ancestor
-  AssignClass (ec04b671-5b56-4e68-8a89-7ac6f3c3dafd)
- Call ID: ec04b671-5b56-4e68-8a89-7ac6f3c3dafd
+  AssignClass (fefae1c3-5b37-4163-8d27-352cb81fb60c)
+ Call ID: fefae1c3-5b37-4163-8d27-352cb81fb60c
   Args:
-    source: :Jeanne_Langtry
     type: :Ancestor
+    source: :Jeanne_Langtry
+  AssignClass (e66fbf64-69d9-4aae-9efc-c1f3a4c28f53)
+ Call ID: e66fbf64-69d9-4aae-9efc-c1f3a4c28f53
+  Args:
+    source: :Lillie_Langtry
+    type: :Ancestor
+  Finish (06ad1253-8343-493f-9bbf-5de6ef1ee784)
+ Call ID: 06ad1253-8343-493f-9bbf-5de6ef1ee784
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -683,34 +885,40 @@ The final data graph after all the edits:
       :hasMarriageYear 1937 ;
       :hasMother data:Jeanne_Langtry ;
       :hasRelation data:Sir_Basil_Bartlett ;
-      :hasSex data:Female_Sex .
+      :hasSex data:Female .
+
+  data:Female a :Sex .
 
   data:Jeanne_Langtry a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex data:Female_Sex .
+      :hasBirthYear 1881 ;
+      :hasDeathYear 1964 ;
+      :hasMother data:Lillie_Langtry .
+
+  data:Lillie_Langtry a :Ancestor,
+          :Person,
+          :Woman .
 
   data:Sir_Basil_Bartlett a :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
+          :Person .
 
   data:Sir_Ian_Malcolm a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
-
-  data:Female_Sex a :Female .
-
-  data:Male_Sex a :Male .
+          :Person .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (4c6e429a-c149-4710-860e-fe7a05916d40)
- Call ID: 4c6e429a-c149-4710-860e-fe7a05916d40
+  ValidateShacl (a3ffd45c-a7b8-4d52-93d1-0e03701f69c3)
+ Call ID: a3ffd45c-a7b8-4d52-93d1-0e03701f69c3
   Args:
 
 ================================= Tool Message =================================
@@ -721,6 +929,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (8380ff13-de04-45ef-a526-fd732ca0fbb1)
- Call ID: 8380ff13-de04-45ef-a526-fd732ca0fbb1
+  Finish (c5b88c68-965d-443c-b8a6-2eea509a86f5)
+ Call ID: c5b88c68-965d-443c-b8a6-2eea509a86f5
   Args:

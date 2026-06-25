@@ -69,34 +69,41 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Archie of Sussex (Archie Harrison Mountbatten-Windsor; born 6 May 2019) is a member of the British royal family.
-He is the son of Prince Harry, Duke of Sussex, and Meghan, Duchess of Sussex.
-A grandson of King Charles III, he is sixth in the line of succession to the British throne.
-Birth, family and infancy
+Carl Herzog von Württemberg (Carl Maria Peter Ferdinand Philipp Albrecht Joseph Michael Pius Konrad Robert Ulrich; 1 August 1936 – 7 June 2022) was the head of the House of Württemberg from 1975 to 2022.
+He was the second son of Philipp Albrecht, Duke of Württemberg, and Archduchess Rosa of Austria, Princess of Tuscany.
+Carl became heir-presumptive to the headship of the House of Württemberg on 29 June 1959, when his older brother, Ludwig, renounced his succession rights.
+It also maintains some seventy cultural monuments of the House of Württemberg.
+Charitable activities
 
-Archie Harrison Mountbatten-Windsor was born at 05:26 (BST) (04:26 UTC) on 6 May 2019 at Portland Hospital in London.
-He is the first child of Prince Harry, Duke of Sussex and Meghan, Duchess of Sussex.
-Archie has mixed-race ancestry, with African-American and European-American maternal lineage, and holds dual citizenship of the United Kingdom and the United States.
-Archie's parents brought him to meet his great-grandparents Queen Elizabeth II and Prince Philip for the first time when he was two days old.
-Four of the godparents were later reported to be Charlie van Straubenzee, Tiggy Pettifer, Mark Dyer, and the 7th Duke of Westminster.
-In early 2020, Archie's parents stepped down from their roles as working members of the royal family.
-Public appearances
+Carl took part in many social and charitable activities, including the German Red Cross, the Friends of Cancer Children, the Free School Foundation, the Art Foundation, the Preventive Youth Welfare Foundation, and the Baden-Württemberg Monument Foundation, which he chaired from 2002 to 2008.
+He was Patron of the Society for the Promotion of the State Museum of Württemberg, and chairman of the Friends of the University of Tübingen and the University Foundation.
+The wedding took place at Schloss Altshausen, the ancestral seat of the Dukes of Württemberg.
+They had four sons and two daughters and sixteen grandchildren:
 
-In September and October 2019, Archie accompanied his parents on a Southern African tour to Malawi, Angola, South Africa and Botswana.
-Title and styles
 
-As heir apparent to his father's dukedom of Sussex, earldom of Dumbarton, and barony of Kilkeel, Archie was at birth and by custom entitled to use Prince Harry's senior subsidiary title, Earl of Dumbarton, as a courtesy.
-However, the media reported that the Duke and Duchess decided, instead, that Archie would be styled as Master Archie Harrison Mountbatten-Windsor, in accordance with their reported wish that he grow up as a private citizen.
-Upon the accession of Charles III, Archie became entitled to use the title prince and style Royal Highness, as the child of a son of the monarch, pursuant to letters patent issued by King George V in 1917.
-However, sources reported that it was unclear whether he would use that title and style, noting that not all members of the royal family who are eligible for a title choose to use one.
-In the interview Oprah with Meghan and Harry, the Duchess of Sussex said that she had been told that changes would be made to remove that entitlement; Charles III's plans for a scaled-down royal family dated back to the 1990s.
-The official website of the royal family was updated to refer to him as "Prince Archie of Sussex" on 9 March 2023.
+Honours and awards
+
+House of Württemberg
+
+States
+
+Formerly reigning families
+
+Religious orders
+
+Academic institutions
+
+Ancestry
+
+References
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -112,39 +119,9 @@ The official website of the royal family was updated to refer to him as "Prince 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -159,6 +136,23 @@ The official website of the royal family was updated to refer to him as "Prince 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -176,6 +170,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -243,29 +252,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -274,6 +275,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -286,6 +295,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -294,17 +305,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -332,6 +345,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -347,98 +444,77 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (10d28f52-32e3-4d7c-b28d-0807afb058c9)
- Call ID: 10d28f52-32e3-4d7c-b28d-0807afb058c9
+  AssignClass (e2f3448c-5c2d-4845-b92f-44fb24475b41)
+ Call ID: e2f3448c-5c2d-4845-b92f-44fb24475b41
   Args:
-    type: :Person
-    source: Archie Harrison Mountbatten-Windsor
-  AssignClass (a73e55c3-3da1-4e3d-963a-b9f5562c37e8)
- Call ID: a73e55c3-3da1-4e3d-963a-b9f5562c37e8
+    source: Carl_Herzog_von_Württemberg
+    type: :Man
+  AssignClass (78eaaae5-d5d2-45e6-9f69-f1390bde5595)
+ Call ID: 78eaaae5-d5d2-45e6-9f69-f1390bde5595
   Args:
-    type: :Person
-    source: Prince Harry, Duke of Sussex
-  AssignClass (650df09e-b661-48f1-a1d6-37ce33b7e964)
- Call ID: 650df09e-b661-48f1-a1d6-37ce33b7e964
+    type: :Man
+    source: Philipp_Albrecht_Duke_of_Württemberg
+  AssignClass (6839f566-7a2f-4078-9d23-755652a92e9e)
+ Call ID: 6839f566-7a2f-4078-9d23-755652a92e9e
   Args:
-    type: :Person
-    source: Meghan, Duchess of Sussex
-  AssignClass (58ef55bf-702b-484e-a373-b2fa945eccbd)
- Call ID: 58ef55bf-702b-484e-a373-b2fa945eccbd
-  Args:
-    type: :Person
-    source: King Charles III
-  AssignClass (8950f62a-46fb-43df-96dc-4e8d76e8cf6c)
- Call ID: 8950f62a-46fb-43df-96dc-4e8d76e8cf6c
-  Args:
-    type: :Person
-    source: Queen Elizabeth II
-  AssignClass (616f60a3-ae89-43de-8d0e-4d9262322ee6)
- Call ID: 616f60a3-ae89-43de-8d0e-4d9262322ee6
-  Args:
-    type: :Person
-    source: Prince Philip
-  AssignClass (fb1619ee-a54a-4b9b-b6c2-e2a13235ae66)
- Call ID: fb1619ee-a54a-4b9b-b6c2-e2a13235ae66
-  Args:
-    type: :Male
-    source: Archie Harrison Mountbatten-Windsor
-  AssignClass (ca3f0cd3-36a1-4c87-ab35-4037789d40eb)
- Call ID: ca3f0cd3-36a1-4c87-ab35-4037789d40eb
-  Args:
-    type: :Male
-    source: Prince Harry, Duke of Sussex
-  AssignClass (f73fc8e7-2b5f-4e21-940f-22dc3aa8209e)
- Call ID: f73fc8e7-2b5f-4e21-940f-22dc3aa8209e
-  Args:
-    type: :Male
-    source: King Charles III
-  AssignClass (bf6dfffd-d2c5-4f2f-91f2-604e4c9a5a99)
- Call ID: bf6dfffd-d2c5-4f2f-91f2-604e4c9a5a99
-  Args:
-    type: :Male
-    source: Prince Philip
-  AssignClass (352f7638-1a1b-4129-817d-f48a67cba8a0)
- Call ID: 352f7638-1a1b-4129-817d-f48a67cba8a0
-  Args:
+    source: Archduchess_Rosa_of_Austria
     type: :Woman
-    source: Meghan, Duchess of Sussex
-  AssignClass (c095be0f-9383-4cab-b7f5-cc614bb6aa7f)
- Call ID: c095be0f-9383-4cab-b7f5-cc614bb6aa7f
+  AssignClass (5ef1dd98-ef82-4633-b652-0100cc398e79)
+ Call ID: 5ef1dd98-ef82-4633-b652-0100cc398e79
   Args:
-    type: :Woman
-    source: Queen Elizabeth II
-  AddTriple (91dd341c-f342-4ea2-873a-8d6b3d2e0239)
- Call ID: 91dd341c-f342-4ea2-873a-8d6b3d2e0239
+    type: :Man
+    source: Ludwig_von_Württemberg
+  AddLiteral (e5261204-efdf-4c5c-bc81-2bfcc9761524)
+ Call ID: e5261204-efdf-4c5c-bc81-2bfcc9761524
   Args:
-    relation: :hasFather
-    target: Prince Harry, Duke of Sussex
-    source: Archie Harrison Mountbatten-Windsor
-  AddTriple (dd42aad8-531b-4903-a011-41ff9f14d560)
- Call ID: dd42aad8-531b-4903-a011-41ff9f14d560
-  Args:
-    target: Meghan, Duchess of Sussex
-    source: Archie Harrison Mountbatten-Windsor
-    relation: :hasMother
-  AddTriple (b7507531-6691-485c-a8c9-29c87f70ae7f)
- Call ID: b7507531-6691-485c-a8c9-29c87f70ae7f
-  Args:
-    target: King Charles III
-    source: Prince Harry, Duke of Sussex
-    relation: :hasFather
-  AddLiteral (554fd776-98b5-48a0-8074-227913e7833b)
- Call ID: 554fd776-98b5-48a0-8074-227913e7833b
-  Args:
-    source: Archie Harrison Mountbatten-Windsor
-    literal_value: 2019
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (adfa6921-596d-4f29-9700-40385cd7254c)
- Call ID: adfa6921-596d-4f29-9700-40385cd7254c
-  Args:
-    literal_value: Prince Archie of Sussex
-    source: Archie Harrison Mountbatten-Windsor
-    literal_type: xsd:string
+    literal_value: Carl Maria Peter Ferdinand Philipp Albrecht Joseph Michael Pius Konrad Robert Ulrich
     relation: :knownAs
-  Finish (aa8924ff-70b4-4495-8c33-854cdd499298)
- Call ID: aa8924ff-70b4-4495-8c33-854cdd499298
+    literal_type: xsd:string
+    source: Carl_Herzog_von_Württemberg
+  AddLiteral (2f3fe448-ae42-45ff-9d82-628851c50e42)
+ Call ID: 2f3fe448-ae42-45ff-9d82-628851c50e42
+  Args:
+    source: Carl_Herzog_von_Württemberg
+    literal_type: xsd:integer
+    literal_value: 1936
+    relation: :hasBirthYear
+  AddLiteral (f89e1ea6-5f1f-4205-b7a8-a13860e493b8)
+ Call ID: f89e1ea6-5f1f-4205-b7a8-a13860e493b8
+  Args:
+    source: Carl_Herzog_von_Württemberg
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 2022
+  AddTriple (f31a3ad6-3b98-4615-9d7b-a3ded1350ef7)
+ Call ID: f31a3ad6-3b98-4615-9d7b-a3ded1350ef7
+  Args:
+    relation: :hasFather
+    target: Philipp_Albrecht_Duke_of_Württemberg
+    source: Carl_Herzog_von_Württemberg
+  AddTriple (a9d43269-bd95-4265-8b87-79b74cf6f521)
+ Call ID: a9d43269-bd95-4265-8b87-79b74cf6f521
+  Args:
+    relation: :hasMother
+    target: Archduchess_Rosa_of_Austria
+    source: Carl_Herzog_von_Württemberg
+  AddTriple (32d64a47-04d4-40fb-b99b-b02d50f480b4)
+ Call ID: 32d64a47-04d4-40fb-b99b-b02d50f480b4
+  Args:
+    target: Carl_Herzog_von_Württemberg
+    source: Ludwig_von_Württemberg
+    relation: :isBrotherOf
+  AddTriple (7365be01-5acc-4c07-8d3c-11707885860c)
+ Call ID: 7365be01-5acc-4c07-8d3c-11707885860c
+  Args:
+    target: Philipp_Albrecht_Duke_of_Württemberg
+    source: Ludwig_von_Württemberg
+    relation: :hasFather
+  AddTriple (aa59f54e-d750-49f8-9eda-ad41c1f1c8c5)
+ Call ID: aa59f54e-d750-49f8-9eda-ad41c1f1c8c5
+  Args:
+    relation: :hasMother
+    source: Ludwig_von_Württemberg
+    target: Archduchess_Rosa_of_Austria
+  Finish (e6bf7e08-4a3f-4f39-829c-ba21b54b86e3)
+ Call ID: e6bf7e08-4a3f-4f39-829c-ba21b54b86e3
   Args:

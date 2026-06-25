@@ -2,23 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_Carolina_of_Bourbon-Parma a :Woman ;
-    :hasBirthYear "1974-06-23"^^xsd:date ;
-    :hasBrother data:Prince_Carlos,
-        data:Prince_Jaime ;
-    :hasSister data:Princess_Margarita ;
-    :isDaughterOf data:Carlos_Hugo_Duke_of_Parma,
-        data:Princess_Irene_of_the_Netherlands .
+data:Anna-Elisabeth_von_Pfuel a :Woman .
 
-data:Carlos_Hugo_Duke_of_Parma a :Ancestor,
-        :Man .
+data:Claus_von_Amsberg a :Man ;
+    :hasFather data:Claus_Felix_von_Amsberg ;
+    :hasMother data:G%C3%B6sta_von_dem_Bussche-Haddenhausen .
 
-data:Prince_Carlos a :Man .
+data:Claus_Felix_von_Amsberg a :Ancestor,
+        :Man ;
+    :hasFather data:Wilhelm_von_Amsberg ;
+    :hasMother data:Elise_von_Vieregge .
 
-data:Prince_Jaime a :Man .
-
-data:Princess_Irene_of_the_Netherlands a :Ancestor,
+data:Elise_von_Vieregge a :Ancestor,
         :Woman .
 
-data:Princess_Margarita a :Woman .
+data:G%C3%B6sta_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1902 ;
+    :hasBrother data:Julius_von_dem_Bussche-Haddenhausen ;
+    :hasDeathYear 1996 ;
+    :hasFather data:George_von_dem_Bussche-Haddenhausen ;
+    :hasMarriageYear data:Marriage_1924 ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .
+
+data:Julius_von_dem_Bussche-Haddenhausen a :Man ;
+    :hasFather data:George_von_dem_Bussche-Haddenhausen ;
+    :hasMother data:Gabriele_von_dem_Bussche-Ippenburg .
+
+data:Marriage_1924 a :DomainEntity .
+
+data:Wilhelm_von_Amsberg a :Ancestor,
+        :Man .
+
+data:Clamor_von_dem_Bussche a :Ancestor,
+        :Man .
+
+data:Gabriele_von_dem_Bussche-Ippenburg a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Clamor_von_dem_Bussche .
+
+data:George_von_dem_Bussche-Haddenhausen a :Ancestor,
+        :Man ;
+    :hasAncestor data:Clamor_von_dem_Bussche .
 

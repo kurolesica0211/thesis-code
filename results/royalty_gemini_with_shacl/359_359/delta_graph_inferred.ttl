@@ -1,0 +1,443 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Francisco_de_Asis a :Man,
+        :Person ;
+    :hasBrother data:Francisco_de_Asis ;
+    :hasRelation data:Francisco_de_Asis ;
+    :isBloodrelationOf data:Francisco_de_Asis ;
+    :isBrotherOf data:Francisco_de_Asis ;
+    :isSiblingOf data:Francisco_de_Asis .
+
+data:Victoria_Eugenie a :Person,
+        :Woman ;
+    :hasRelation data:Victoria_Eugenie ;
+    :hasSister data:Victoria_Eugenie ;
+    :isBloodrelationOf data:Victoria_Eugenie ;
+    :isSiblingOf data:Victoria_Eugenie ;
+    :isSisterOf data:Victoria_Eugenie .
+
+data:Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasChild data:Henri_of_Orleans_Count_of_Clermont ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Henri_of_Orleans_Count_of_Clermont ;
+    :hasSon data:Henri_of_Orleans_Count_of_Clermont ;
+    :isAncestorOf data:Henri_of_Orleans_Count_of_Clermont ;
+    :isBloodrelationOf data:Henri_Count_of_Paris ;
+    :isBrotherOf data:Henri_Count_of_Paris ;
+    :isFatherOf data:Henri_of_Orleans_Count_of_Clermont ;
+    :isParentOf data:Henri_of_Orleans_Count_of_Clermont ;
+    :isSiblingOf data:Henri_Count_of_Paris ;
+    :isUncleOf data:Henri_of_Orleans_Count_of_Clermont .
+
+data:Henri_of_Orleans_Count_of_Clermont a :Man,
+        :Person ;
+    :hasAncestor data:Henri_Count_of_Paris ;
+    :hasBrother data:Henri_of_Orleans_Count_of_Clermont ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasParent data:Henri_Count_of_Paris ;
+    :hasRelation data:Henri_Count_of_Paris,
+        data:Henri_of_Orleans_Count_of_Clermont ;
+    :isBloodrelationOf data:Henri_of_Orleans_Count_of_Clermont ;
+    :isBrotherOf data:Henri_of_Orleans_Count_of_Clermont ;
+    :isChildOf data:Henri_Count_of_Paris ;
+    :isSiblingOf data:Henri_of_Orleans_Count_of_Clermont ;
+    :isSonOf data:Henri_Count_of_Paris .
+
+data:Carmen_Franco_y_Polo a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasDaughter data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan_Carlos,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasSister data:Carmen_Franco_y_Polo ;
+    :isAncestorOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isAuntOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isBloodrelationOf data:Carmen_Franco_y_Polo ;
+    :isMotherOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isParentOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isSiblingOf data:Carmen_Franco_y_Polo ;
+    :isSisterOf data:Carmen_Franco_y_Polo .
+
+data:Cristobal_Martinez-Bordiu a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Cristobal_Martinez-Bordiu ;
+    :hasChild data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasDaughter data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan_Carlos,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :isAncestorOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isBloodrelationOf data:Cristobal_Martinez-Bordiu ;
+    :isBrotherOf data:Cristobal_Martinez-Bordiu ;
+    :isFatherOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isParentOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isSiblingOf data:Cristobal_Martinez-Bordiu ;
+    :isUncleOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+
+data:Roger_de_San_Lorenzo a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Roger_de_San_Lorenzo ;
+    :hasChild data:Emanuela_de_Dampierre ;
+    :hasDaughter data:Emanuela_de_Dampierre ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan_Carlos,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :isAncestorOf data:Alfonso,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo ;
+    :isBloodrelationOf data:Roger_de_San_Lorenzo ;
+    :isBrotherOf data:Roger_de_San_Lorenzo ;
+    :isFatherOf data:Emanuela_de_Dampierre ;
+    :isParentOf data:Emanuela_de_Dampierre ;
+    :isSiblingOf data:Roger_de_San_Lorenzo ;
+    :isUncleOf data:Emanuela_de_Dampierre .
+
+data:Vittoria_Ruspoli a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Emanuela_de_Dampierre ;
+    :hasDaughter data:Emanuela_de_Dampierre ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan_Carlos,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasSister data:Vittoria_Ruspoli ;
+    :isAncestorOf data:Alfonso,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo ;
+    :isAuntOf data:Emanuela_de_Dampierre ;
+    :isBloodrelationOf data:Vittoria_Ruspoli ;
+    :isMotherOf data:Emanuela_de_Dampierre ;
+    :isParentOf data:Emanuela_de_Dampierre ;
+    :isSiblingOf data:Vittoria_Ruspoli ;
+    :isSisterOf data:Vittoria_Ruspoli .
+
+data:Juan_Carlos a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Juan_Count_of_Barcelona ;
+    :hasBrother data:Juan_Carlos ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasParent data:Juan_Count_of_Barcelona ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan_Carlos,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :isBloodrelationOf data:Juan_Carlos ;
+    :isBrotherOf data:Juan_Carlos ;
+    :isChildOf data:Juan_Count_of_Barcelona ;
+    :isSiblingOf data:Juan_Carlos ;
+    :isSonOf data:Juan_Count_of_Barcelona .
+
+data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Person,
+        :Woman ;
+    :hasAncestor data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu ;
+    :hasFather data:Cristobal_Martinez-Bordiu ;
+    :hasMother data:Carmen_Franco_y_Polo ;
+    :hasParent data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan_Carlos,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasSister data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isBloodrelationOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isChildOf data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu ;
+    :isDaughterOf data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu ;
+    :isSiblingOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco ;
+    :isSisterOf data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Jaime,
+        data:Juan_Count_of_Barcelona ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan_Carlos,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasSon data:Jaime,
+        data:Juan_Count_of_Barcelona ;
+    :isAncestorOf data:Alfonso,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan_Carlos,
+        data:Juan_Count_of_Barcelona ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isFatherOf data:Jaime,
+        data:Juan_Count_of_Barcelona ;
+    :isParentOf data:Jaime,
+        data:Juan_Count_of_Barcelona ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isUncleOf data:Jaime,
+        data:Juan_Count_of_Barcelona .
+
+data:Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Jaime,
+        data:Juan_Count_of_Barcelona ;
+    :hasChild data:Juan_Carlos ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan_Carlos,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasSon data:Juan_Carlos ;
+    :isAncestorOf data:Juan_Carlos ;
+    :isBloodrelationOf data:Jaime,
+        data:Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Jaime,
+        data:Juan_Count_of_Barcelona ;
+    :isChildOf data:Alfonso_XIII ;
+    :isFatherOf data:Juan_Carlos ;
+    :isParentOf data:Juan_Carlos ;
+    :isSiblingOf data:Jaime,
+        data:Juan_Count_of_Barcelona ;
+    :isSonOf data:Alfonso_XIII ;
+    :isUncleOf data:Alfonso,
+        data:Gonzalo,
+        data:Juan_Carlos .
+
+data:Alfonso a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Emanuela_de_Dampierre,
+        data:Jaime,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasBirthYear "1936-04-20"^^xsd:date ;
+    :hasBrother data:Alfonso,
+        data:Gonzalo ;
+    :hasDeathYear "1989-01-30"^^xsd:date ;
+    :hasFather data:Jaime ;
+    :hasMarriageYear "1972-03-08"^^xsd:date ;
+    :hasMother data:Emanuela_de_Dampierre ;
+    :hasParent data:Emanuela_de_Dampierre,
+        data:Jaime ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan_Carlos,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :isBloodrelationOf data:Alfonso,
+        data:Gonzalo ;
+    :isBrotherOf data:Alfonso,
+        data:Gonzalo ;
+    :isChildOf data:Emanuela_de_Dampierre,
+        data:Jaime ;
+    :isSiblingOf data:Alfonso,
+        data:Gonzalo ;
+    :isSonOf data:Emanuela_de_Dampierre,
+        data:Jaime .
+
+data:Gonzalo a :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Emanuela_de_Dampierre,
+        data:Jaime,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasBrother data:Alfonso,
+        data:Gonzalo ;
+    :hasFather data:Jaime ;
+    :hasMother data:Emanuela_de_Dampierre ;
+    :hasParent data:Emanuela_de_Dampierre,
+        data:Jaime ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan_Carlos,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :isBloodrelationOf data:Alfonso,
+        data:Gonzalo ;
+    :isBrotherOf data:Alfonso,
+        data:Gonzalo ;
+    :isChildOf data:Emanuela_de_Dampierre,
+        data:Jaime ;
+    :isSiblingOf data:Alfonso,
+        data:Gonzalo ;
+    :isSonOf data:Emanuela_de_Dampierre,
+        data:Jaime .
+
+data:Jaime a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alfonso_XIII ;
+    :hasBrother data:Jaime,
+        data:Juan_Count_of_Barcelona ;
+    :hasChild data:Alfonso,
+        data:Gonzalo ;
+    :hasFather data:Alfonso_XIII ;
+    :hasParent data:Alfonso_XIII ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan_Carlos,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasSon data:Alfonso,
+        data:Gonzalo ;
+    :isAncestorOf data:Alfonso,
+        data:Gonzalo ;
+    :isBloodrelationOf data:Jaime,
+        data:Juan_Count_of_Barcelona ;
+    :isBrotherOf data:Jaime,
+        data:Juan_Count_of_Barcelona ;
+    :isChildOf data:Alfonso_XIII ;
+    :isFatherOf data:Alfonso,
+        data:Gonzalo ;
+    :isParentOf data:Alfonso,
+        data:Gonzalo ;
+    :isSiblingOf data:Jaime,
+        data:Juan_Count_of_Barcelona ;
+    :isSonOf data:Alfonso_XIII ;
+    :isUncleOf data:Alfonso,
+        data:Gonzalo,
+        data:Juan_Carlos .
+
+data:Emanuela_de_Dampierre a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasChild data:Alfonso,
+        data:Gonzalo ;
+    :hasFather data:Roger_de_San_Lorenzo ;
+    :hasMother data:Vittoria_Ruspoli ;
+    :hasParent data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasRelation data:Alfonso,
+        data:Alfonso_XIII,
+        data:Carmen_Franco_y_Polo,
+        data:Cristobal_Martinez-Bordiu,
+        data:Emanuela_de_Dampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:Juan_Carlos,
+        data:Juan_Count_of_Barcelona,
+        data:Maria_del_Carmen_Martinez-Bordiu_y_Franco,
+        data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :hasSister data:Emanuela_de_Dampierre ;
+    :hasSon data:Alfonso,
+        data:Gonzalo ;
+    :isAncestorOf data:Alfonso,
+        data:Gonzalo ;
+    :isAuntOf data:Alfonso,
+        data:Gonzalo ;
+    :isBloodrelationOf data:Emanuela_de_Dampierre ;
+    :isChildOf data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :isDaughterOf data:Roger_de_San_Lorenzo,
+        data:Vittoria_Ruspoli ;
+    :isMotherOf data:Alfonso,
+        data:Gonzalo ;
+    :isParentOf data:Alfonso,
+        data:Gonzalo ;
+    :isSiblingOf data:Emanuela_de_Dampierre ;
+    :isSisterOf data:Emanuela_de_Dampierre .
+

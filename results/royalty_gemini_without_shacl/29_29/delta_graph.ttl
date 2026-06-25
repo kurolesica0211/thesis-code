@@ -5,30 +5,25 @@
 data:August_Brooksbank a :Man,
         :Person ;
     :hasFather data:Jack_Brooksbank ;
-    :hasMother data:Princess_Eugenie .
+    :hasMother data:Eugenie_Victoria_Helena .
+
+data:Charles_III a :Man,
+        :Person .
 
 data:Ernest_Brooksbank a :Man,
         :Person ;
     :hasFather data:Jack_Brooksbank ;
-    :hasMother data:Princess_Eugenie .
+    :hasMother data:Eugenie_Victoria_Helena .
 
-data:King_Charles_III a :Man,
-        :Person ;
-    :hasRelation data:Princess_Eugenie .
+data:Beatrice a :Person,
+        :Woman ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMother data:Sarah_Ferguson .
 
 data:Andrew_Mountbatten-Windsor a :Man,
         :Person .
 
-data:Beatrice a :Person,
-        :Woman .
-
-data:Sarah_Ferguson a :Person,
-        :Woman .
-
-data:Jack_Brooksbank a :Man,
-        :Person .
-
-data:Princess_Eugenie a :Person,
+data:Eugenie_Victoria_Helena a :Person,
         :Woman ;
     :hasBirthYear 1990 ;
     :hasFather data:Andrew_Mountbatten-Windsor ;
@@ -36,4 +31,10 @@ data:Princess_Eugenie a :Person,
     :hasMother data:Sarah_Ferguson ;
     :hasRelation data:Jack_Brooksbank ;
     :hasSister data:Beatrice .
+
+data:Sarah_Ferguson a :Person,
+        :Woman .
+
+data:Jack_Brooksbank a :Man,
+        :Person .
 

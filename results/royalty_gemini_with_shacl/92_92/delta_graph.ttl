@@ -2,61 +2,47 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Richard_Duke_of_Gloucester a :Man,
+data:Richard_of_Gloucester a :Man,
         :Person ;
     :hasBirthYear 1944 ;
-    :hasBrother data:Prince_William_of_Gloucester ;
     :hasFather data:Prince_Henry_Duke_of_Gloucester ;
-    :hasMarriageYear data:Birgitte_van_Deurs_Henriksen,
-        1972 ;
+    :hasMarriageYear 1972 ;
     :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
-    :hasSex data:Male .
+    :hasRelation data:Birgitte_van_Deurs_Henriksen ;
+    :isSiblingOf data:Prince_William_of_Gloucester .
 
 data:Birgitte_van_Deurs_Henriksen a :Person,
-        :Woman ;
-    :hasSex data:Female .
+        :Woman .
 
 data:George_V a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
 data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
 data:Lady_Margaret_Bridgeman a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female .
+        :Woman .
 
 data:Prince_Henry_Duke_of_Gloucester a :Ancestor,
         :Man,
         :Person ;
-    :hasDeathYear 1974 ;
     :hasFather data:George_V ;
-    :hasMother data:Queen_Mary ;
-    :hasSex data:Male .
+    :hasMother data:Queen_Mary .
 
 data:Prince_William_of_Gloucester a :Man,
         :Person ;
-    :hasDeathYear 1972 ;
-    :hasSex data:Male .
+    :hasDeathYear 1972 .
 
 data:Princess_Alice_Duchess_of_Gloucester a :Ancestor,
         :Person,
         :Woman ;
     :hasFather data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch ;
-    :hasMother data:Lady_Margaret_Bridgeman ;
-    :hasSex data:Female .
+    :hasMother data:Lady_Margaret_Bridgeman .
 
 data:Queen_Mary a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+        :Woman .
 

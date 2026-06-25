@@ -85,29 +85,27 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Infante Jaime of Spain, Duke of Segovia  (Spanish: Don Jaime Leopoldo Isabelino Enrique Alejandro Alberto Alfonso Víctor Acacio Pedro Pablo María de Borbón y Battenberg; French: Jacques Léopold Isabellin Henri Alexandre Albért Alphonse Victor Acace Pierre Paul Marie de Bourbon; 23 June 1908 – 20 March 1975), was the second son of King Alfonso XIII of Spain and his wife, Princess Victoria Eugenie of Battenberg.
+Duke Christian Louis of Mecklenburg (German: Christian-Ludwig Herzog zu Mecklenburg; 29 September 1912 – 18 July 1996) was the second son of the last reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV.
 Early life
 
-Infante Jaime was born 23 June 1908 at the Royal Palace of La Granja de San Ildefonso, the second son of King Alfonso XIII and his Hessian wife, Victoria Eugenie of Battenberg, the youngest granddaughter of Queen Victoria.
-He had three brothers, Alfonso, Prince of Asturias (1907–1938), Infante Juan, Count of Barcelona (1913–1993), and  Infante Gonzalo (1914–1934); and two younger sisters, Infanta Beatriz (1909–2002) and Infanta María Cristina (1911–1996).
-His elder brother, the Prince of Asturias, and his youngest brother, Gonzalo, both had the bleeding disorder hemophilia, the genetic condition that plagued many descendants of Queen Victoria.
-Infante Jaime was born with an infection of the inner ear that progressively worsened, causing him to gradually lose his hearing.
-On 11 June 1933, his elder brother and heir to the defunct throne, Alfonso, renounced his title of Prince of Asturias in order to marry a Cuban commoner.
-Infante Jaime then held the title of Prince of Asturias, as successor to the throne of Spain, for only ten days before under pressure from his father, he was forced also to renounce his rights and the rights of his heirs, in favor of his younger, healthier brother Infante Juan.
-He was then granted the title "Duke of Segovia" by King Alfonso XIII.
-Don Jaime and Donna Emanuela had two sons, named after Jaime's brothers, Alfonso and Gonzalo:
+Born in Schloss Ludwigslust, as a member of an elder, Mecklenburg-Schwerin line of an ancient House of Mecklenburg, he was the second child of the reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV, and his wife, Princess Alexandra of Hanover, third child and second daughter of Ernest Augustus, Crown Prince of Hanover and Princess Thyra of Denmark.
+After the abolition of the monarchy, in 1919 the family went at the invitation of Queen Alexandrine, consort of Christian X of Denmark and sister of the Grand Duke, into exile in Denmark, where they lived for a year in Sorgenfri Palace.
+Later, the family returned to Mecklenburg and lived in Gelbensande, and from 1921 the family settled at Ludwigslust Castle.
+After the war
 
+When the war ended, Ludwigslust was first occupied by the British, but soon was transferred to the Soviet occupation, so that Christian Louis initially went with his family to Glücksburg Castle in Schleswig-Holstein.
+Together with his sister Thyra, he took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
+Marriage and family
 
-Don Jaime and Emmanuelle de Dampierre divorced on 6 May 1947 in Bucharest (recognized by the Italian courts on 3 June 1949 in Turin but never recognized in Spain) and, on 3 August 1949 in Innsbruck, Don Jaime remarried civilly to divorced singer Charlotte Luise Auguste Tiedemann (2 January 1919 in Königsberg – 3 July 1979 in Berlin), daughter of Otto Eugen Tiedemann and wife Luise Amalia Klein.
-In the eyes of the Roman Catholic Church and of the French legitimists, Emmanuelle de Dampierre remained always his wife.
-On 3 May 1964, he took the title "Duke of Madrid" as head of a Carlist branch of the Spanish succession (recognized by the legitimist group of Carlists who did not support the Bourbon-Parma claim after Alfonso Carlos, Duke of San Jaime died in 1936).
-On 19 July 1969, Don Jaime definitively renounced the Spanish succession in favour of his nephew, the future King Juan Carlos I, at the request of his elder son, Alfonso de Borbón.
+On 5 July 1954 in Glücksburg, Christian Louis married in a civil wedding Princess Barbara of Prussia (1920–1994), the daughter of Prince Sigismund of Prussia and his wife, Princess Charlotte of Saxe-Altenburg.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -123,39 +121,9 @@ On 19 July 1969, Don Jaime definitively renounced the Spanish succession in favo
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -170,6 +138,23 @@ On 19 July 1969, Don Jaime definitively renounced the Spanish succession in favo
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -187,6 +172,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -254,29 +254,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -285,6 +277,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -297,6 +297,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -305,17 +307,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -343,6 +347,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -358,205 +446,194 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1ce35473-b601-459d-86cd-0fef5149a62e)
- Call ID: 1ce35473-b601-459d-86cd-0fef5149a62e
+  AssignClass (d4f12433-cc26-42e6-bcfc-6d06f1f4ed6e)
+ Call ID: d4f12433-cc26-42e6-bcfc-6d06f1f4ed6e
   Args:
+    source: Christian_Louis_of_Mecklenburg
     type: :Man
-    source: :Jaime_of_Spain
-  AssignClass (7f58a09a-2322-42ba-ad9f-4958916b9445)
- Call ID: 7f58a09a-2322-42ba-ad9f-4958916b9445
+  AssignClass (2529366e-034e-40e0-8c51-2befc4d0a14d)
+ Call ID: 2529366e-034e-40e0-8c51-2befc4d0a14d
   Args:
-    type: :Man
-    source: :Alfonso_XIII
-  AssignClass (02e0405a-4c4b-4571-818e-e834bba86ce9)
- Call ID: 02e0405a-4c4b-4571-818e-e834bba86ce9
+    source: Christian_Louis_of_Mecklenburg
+    type: :Person
+  AddLiteral (0aaba8d1-ac12-47aa-a3bf-6329037ca144)
+ Call ID: 0aaba8d1-ac12-47aa-a3bf-6329037ca144
   Args:
-    source: :Victoria_Eugenie_of_Battenberg
-    type: :Woman
-  AssignClass (15e30323-87d8-402d-8065-f1f60357944c)
- Call ID: 15e30323-87d8-402d-8065-f1f60357944c
-  Args:
-    source: :Alfonso_Prince_of_Asturias
-    type: :Man
-  AssignClass (59d70079-61c9-4700-a383-074778ab0ec9)
- Call ID: 59d70079-61c9-4700-a383-074778ab0ec9
-  Args:
-    type: :Man
-    source: :Juan_Count_of_Barcelona
-  AssignClass (ba3a1594-a1f6-4f38-806d-f5f0ee742179)
- Call ID: ba3a1594-a1f6-4f38-806d-f5f0ee742179
-  Args:
-    source: :Gonzalo_of_Spain
-    type: :Man
-  AssignClass (d874b67f-ccb6-4a1d-946b-bddc311a260b)
- Call ID: d874b67f-ccb6-4a1d-946b-bddc311a260b
-  Args:
-    type: :Woman
-    source: :Beatriz_of_Spain
-  AssignClass (c638dd3d-a5e8-4b23-a66f-f5de19efe9a3)
- Call ID: c638dd3d-a5e8-4b23-a66f-f5de19efe9a3
-  Args:
-    source: :Maria_Cristina_of_Spain
-    type: :Woman
-  AssignClass (99962442-04cf-43b5-ad37-782057a8b743)
- Call ID: 99962442-04cf-43b5-ad37-782057a8b743
-  Args:
-    type: :Woman
-    source: :Emanuela_de_Dampierre
-  AssignClass (2b4f87ff-17b3-4eea-9885-dc156b30e439)
- Call ID: 2b4f87ff-17b3-4eea-9885-dc156b30e439
-  Args:
-    source: :Charlotte_Luise_Auguste_Tiedemann
-    type: :Woman
-  AssignClass (343b785a-9a1b-4fa5-9efd-5cf01420fb02)
- Call ID: 343b785a-9a1b-4fa5-9efd-5cf01420fb02
-  Args:
-    type: :Man
-    source: :Otto_Eugen_Tiedemann
-  AssignClass (05fb4300-ab0d-4b79-93ac-4dd24e9fb5f9)
- Call ID: 05fb4300-ab0d-4b79-93ac-4dd24e9fb5f9
-  Args:
-    source: :Luise_Amalia_Klein
-    type: :Woman
-  AssignClass (d5207c4d-2b9e-4bc2-950f-b61d5abc0093)
- Call ID: d5207c4d-2b9e-4bc2-950f-b61d5abc0093
-  Args:
-    source: :Alfonso_de_Borbon_son_of_Jaime
-    type: :Man
-  AssignClass (3984919d-2438-4b42-8f76-58c26518ecf6)
- Call ID: 3984919d-2438-4b42-8f76-58c26518ecf6
-  Args:
-    type: :Man
-    source: :Gonzalo_son_of_Jaime
-  AddTriple (e69905c0-30ca-471f-9a92-4f98a4556460)
- Call ID: e69905c0-30ca-471f-9a92-4f98a4556460
-  Args:
-    target: :Alfonso_XIII
-    source: :Jaime_of_Spain
-    relation: :hasFather
-  AddTriple (9b27f4c8-961c-4342-ae98-9436485cc16f)
- Call ID: 9b27f4c8-961c-4342-ae98-9436485cc16f
-  Args:
-    target: :Victoria_Eugenie_of_Battenberg
-    relation: :hasMother
-    source: :Jaime_of_Spain
-  AddTriple (2597e4cf-1911-416c-8194-1aca22871891)
- Call ID: 2597e4cf-1911-416c-8194-1aca22871891
-  Args:
-    source: :Alfonso_Prince_of_Asturias
-    relation: :hasFather
-    target: :Alfonso_XIII
-  AddTriple (fbbdd992-16ed-4a89-8552-9285e01864b3)
- Call ID: fbbdd992-16ed-4a89-8552-9285e01864b3
-  Args:
-    target: :Victoria_Eugenie_of_Battenberg
-    relation: :hasMother
-    source: :Alfonso_Prince_of_Asturias
-  AddTriple (3597ed25-1261-4000-827f-f98cf6a29ba5)
- Call ID: 3597ed25-1261-4000-827f-f98cf6a29ba5
-  Args:
-    source: :Juan_Count_of_Barcelona
-    relation: :hasFather
-    target: :Alfonso_XIII
-  AddTriple (bbfee8f4-76ff-4998-8f00-2d1177f36aa1)
- Call ID: bbfee8f4-76ff-4998-8f00-2d1177f36aa1
-  Args:
-    target: :Victoria_Eugenie_of_Battenberg
-    source: :Juan_Count_of_Barcelona
-    relation: :hasMother
-  AddTriple (f77f7e42-8705-490e-aaa5-77c007b0334c)
- Call ID: f77f7e42-8705-490e-aaa5-77c007b0334c
-  Args:
-    target: :Alfonso_XIII
-    source: :Gonzalo_of_Spain
-    relation: :hasFather
-  AddTriple (c9b25a4d-015c-4533-b618-64ccb5695c3f)
- Call ID: c9b25a4d-015c-4533-b618-64ccb5695c3f
-  Args:
-    source: :Gonzalo_of_Spain
-    relation: :hasMother
-    target: :Victoria_Eugenie_of_Battenberg
-  AddTriple (a0eb4ac2-46c3-4a15-9c4a-bf23cc2b34b6)
- Call ID: a0eb4ac2-46c3-4a15-9c4a-bf23cc2b34b6
-  Args:
-    target: :Alfonso_XIII
-    relation: :hasFather
-    source: :Beatriz_of_Spain
-  AddTriple (8d652ab1-a445-4ca3-bc56-fc685e6d8a4d)
- Call ID: 8d652ab1-a445-4ca3-bc56-fc685e6d8a4d
-  Args:
-    target: :Victoria_Eugenie_of_Battenberg
-    source: :Beatriz_of_Spain
-    relation: :hasMother
-  AddTriple (609c36a9-bb89-491a-9fe9-bfb8f87306ca)
- Call ID: 609c36a9-bb89-491a-9fe9-bfb8f87306ca
-  Args:
-    target: :Alfonso_XIII
-    source: :Maria_Cristina_of_Spain
-    relation: :hasFather
-  AddTriple (381896a5-d8e4-424c-92c7-ccd74317e62f)
- Call ID: 381896a5-d8e4-424c-92c7-ccd74317e62f
-  Args:
-    source: :Maria_Cristina_of_Spain
-    relation: :hasMother
-    target: :Victoria_Eugenie_of_Battenberg
-  AddLiteral (4a152c00-e514-46b9-826e-a43960632962)
- Call ID: 4a152c00-e514-46b9-826e-a43960632962
-  Args:
-    literal_value: 1908
-    source: :Jaime_of_Spain
+    source: Christian_Louis_of_Mecklenburg
     literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (44a51545-29f9-45c7-8941-de426f6af344)
- Call ID: 44a51545-29f9-45c7-8941-de426f6af344
+    literal_value: 1912
+  AddLiteral (41d4e76c-c498-4a21-b013-bbcdf6cf702d)
+ Call ID: 41d4e76c-c498-4a21-b013-bbcdf6cf702d
   Args:
-    literal_type: xsd:integer
     relation: :hasDeathYear
-    source: :Jaime_of_Spain
-    literal_value: 1975
-  AddTriple (aebe8d5f-cfc0-4a05-8789-0e68775352b6)
- Call ID: aebe8d5f-cfc0-4a05-8789-0e68775352b6
+    literal_value: 1996
+    literal_type: xsd:integer
+    source: Christian_Louis_of_Mecklenburg
+  AssignClass (181f8b84-8d76-4cca-92bb-96d2b2f09134)
+ Call ID: 181f8b84-8d76-4cca-92bb-96d2b2f09134
   Args:
-    target: :Otto_Eugen_Tiedemann
-    source: :Charlotte_Luise_Auguste_Tiedemann
+    source: Frederick_Francis_IV
+    type: :Man
+  AssignClass (1846f2c4-6f72-4e10-b1cc-9d45ee401a22)
+ Call ID: 1846f2c4-6f72-4e10-b1cc-9d45ee401a22
+  Args:
+    source: Frederick_Francis_IV
+    type: :Person
+  AddTriple (58652dd4-27a0-4981-b56b-4e736779d6fd)
+ Call ID: 58652dd4-27a0-4981-b56b-4e736779d6fd
+  Args:
+    source: Christian_Louis_of_Mecklenburg
     relation: :hasFather
-  AddTriple (1c0492f9-85a4-4429-b310-f2a7e710664d)
- Call ID: 1c0492f9-85a4-4429-b310-f2a7e710664d
+    target: Frederick_Francis_IV
+  AssignClass (ce5692f1-8385-419d-9d5d-4e69ee25d3c3)
+ Call ID: ce5692f1-8385-419d-9d5d-4e69ee25d3c3
   Args:
-    target: :Luise_Amalia_Klein
-    relation: :hasMother
-    source: :Charlotte_Luise_Auguste_Tiedemann
-  AddTriple (02942e87-b387-4ef0-8965-b03fa03d981b)
- Call ID: 02942e87-b387-4ef0-8965-b03fa03d981b
+    source: Alexandra_of_Hanover
+    type: :Woman
+  AssignClass (f5deb779-4f78-49aa-a9f1-434774460a39)
+ Call ID: f5deb779-4f78-49aa-a9f1-434774460a39
   Args:
-    target: :Jaime_of_Spain
-    relation: :hasFather
-    source: :Alfonso_de_Borbon_son_of_Jaime
-  AddTriple (58e27722-00a6-4a28-86ed-d25a505f6433)
- Call ID: 58e27722-00a6-4a28-86ed-d25a505f6433
-  Args:
-    target: :Emanuela_de_Dampierre
-    relation: :hasMother
-    source: :Alfonso_de_Borbon_son_of_Jaime
-  AddTriple (11d649c1-3b0f-41e0-80a6-5b53f7d6e57d)
- Call ID: 11d649c1-3b0f-41e0-80a6-5b53f7d6e57d
-  Args:
-    target: :Jaime_of_Spain
-    relation: :hasFather
-    source: :Gonzalo_son_of_Jaime
-  AddTriple (91f639b7-5346-4fe9-8548-6412c319d17b)
- Call ID: 91f639b7-5346-4fe9-8548-6412c319d17b
+    source: Alexandra_of_Hanover
+    type: :Person
+  AddTriple (4af9b5be-9427-4613-9d39-5c23e1589857)
+ Call ID: 4af9b5be-9427-4613-9d39-5c23e1589857
   Args:
     relation: :hasMother
-    source: :Gonzalo_son_of_Jaime
-    target: :Emanuela_de_Dampierre
-  Finish (f596095b-4801-4977-ac4d-66819eac5a0e)
- Call ID: f596095b-4801-4977-ac4d-66819eac5a0e
+    target: Alexandra_of_Hanover
+    source: Christian_Louis_of_Mecklenburg
+  AssignClass (eb2644ca-f9fa-4665-b4dd-a5909b1ddeab)
+ Call ID: eb2644ca-f9fa-4665-b4dd-a5909b1ddeab
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Ernest_Augustus_of_Hanover
+    type: :Man
+  AssignClass (860b8d7e-97d3-4c0c-97d6-dc6fef6f8de1)
+ Call ID: 860b8d7e-97d3-4c0c-97d6-dc6fef6f8de1
+  Args:
+    source: Ernest_Augustus_of_Hanover
+    type: :Person
+  AddTriple (79710578-36ee-4845-ae5c-9abae585aa69)
+ Call ID: 79710578-36ee-4845-ae5c-9abae585aa69
+  Args:
+    relation: :hasFather
+    target: Ernest_Augustus_of_Hanover
+    source: Alexandra_of_Hanover
+  AssignClass (6c5f4c7d-0fa0-4a38-b96d-71cf63e7116f)
+ Call ID: 6c5f4c7d-0fa0-4a38-b96d-71cf63e7116f
+  Args:
+    source: Thyra_of_Denmark_Princess
+    type: :Woman
+  AssignClass (9497d613-3d37-4c1f-bf90-92bcb3065da4)
+ Call ID: 9497d613-3d37-4c1f-bf90-92bcb3065da4
+  Args:
+    source: Thyra_of_Denmark_Princess
+    type: :Person
+  AddTriple (5b8d59e9-2216-4f57-8bda-e9672fb0c282)
+ Call ID: 5b8d59e9-2216-4f57-8bda-e9672fb0c282
+  Args:
+    source: Alexandra_of_Hanover
+    target: Thyra_of_Denmark_Princess
+    relation: :hasMother
+  AssignClass (2086924f-e7b6-459c-a038-d3524bb287a9)
+ Call ID: 2086924f-e7b6-459c-a038-d3524bb287a9
+  Args:
+    source: Thyra_of_Mecklenburg
+    type: :Woman
+  AssignClass (1e5f9b12-5254-439e-9215-b6464d7875c8)
+ Call ID: 1e5f9b12-5254-439e-9215-b6464d7875c8
+  Args:
+    source: Thyra_of_Mecklenburg
+    type: :Person
+  AddTriple (2a64165f-8132-42bb-a120-cd5a25886cef)
+ Call ID: 2a64165f-8132-42bb-a120-cd5a25886cef
+  Args:
+    relation: :isSisterOf
+    target: Christian_Louis_of_Mecklenburg
+    source: Thyra_of_Mecklenburg
+  AddTriple (6cc20fbb-b535-416f-bbc0-7c03fb998273)
+ Call ID: 6cc20fbb-b535-416f-bbc0-7c03fb998273
+  Args:
+    target: Frederick_Francis_IV
+    relation: :hasFather
+    source: Thyra_of_Mecklenburg
+  AddTriple (d30606ae-bee4-47c9-af2b-5f3eb29ea06f)
+ Call ID: d30606ae-bee4-47c9-af2b-5f3eb29ea06f
+  Args:
+    source: Thyra_of_Mecklenburg
+    relation: :hasMother
+    target: Alexandra_of_Hanover
+  AssignClass (f6dc09a6-03a5-44fc-9dc4-3cc0765e1408)
+ Call ID: f6dc09a6-03a5-44fc-9dc4-3cc0765e1408
+  Args:
+    source: Barbara_of_Prussia
+    type: :Woman
+  AssignClass (db9c5a62-1da3-4a2f-a56d-e4a2229889be)
+ Call ID: db9c5a62-1da3-4a2f-a56d-e4a2229889be
+  Args:
+    source: Barbara_of_Prussia
+    type: :Person
+  AddLiteral (2f0c473e-8b23-4dee-8361-2f4c7ba181e6)
+ Call ID: 2f0c473e-8b23-4dee-8361-2f4c7ba181e6
+  Args:
+    source: Barbara_of_Prussia
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1920
+  AddLiteral (a069239f-03d7-4ca9-b1d6-3c68c6c50c9c)
+ Call ID: a069239f-03d7-4ca9-b1d6-3c68c6c50c9c
+  Args:
+    source: Barbara_of_Prussia
+    literal_value: 1994
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddLiteral (51abdb64-0e3e-4e33-9101-7005b4afbb13)
+ Call ID: 51abdb64-0e3e-4e33-9101-7005b4afbb13
+  Args:
+    source: Christian_Louis_of_Mecklenburg
+    literal_type: xsd:integer
+    literal_value: 1954
+    relation: :hasMarriageYear
+  AddTriple (0c6950cb-26d4-4ba9-8413-4339ddffa7fa)
+ Call ID: 0c6950cb-26d4-4ba9-8413-4339ddffa7fa
+  Args:
+    relation: :hasRelation
+    target: Barbara_of_Prussia
+    source: Christian_Louis_of_Mecklenburg
+  AssignClass (a67c12c4-468d-4f11-a3b0-00cb669a280e)
+ Call ID: a67c12c4-468d-4f11-a3b0-00cb669a280e
+  Args:
+    source: Sigismund_of_Prussia
+    type: :Man
+  AssignClass (55897b65-2525-4376-aeaa-e7b096172dc6)
+ Call ID: 55897b65-2525-4376-aeaa-e7b096172dc6
+  Args:
+    source: Sigismund_of_Prussia
+    type: :Person
+  AddTriple (fa37c74b-d6c8-4a09-8793-bd592cf54053)
+ Call ID: fa37c74b-d6c8-4a09-8793-bd592cf54053
+  Args:
+    target: Sigismund_of_Prussia
+    relation: :hasFather
+    source: Barbara_of_Prussia
+  AssignClass (fc42a5af-d47b-4fa1-a3d7-fddfbe38a00f)
+ Call ID: fc42a5af-d47b-4fa1-a3d7-fddfbe38a00f
+  Args:
+    source: Charlotte_of_Saxe-Altenburg
+    type: :Woman
+  AssignClass (240136bc-ad70-47d2-9a64-31a184683a8b)
+ Call ID: 240136bc-ad70-47d2-9a64-31a184683a8b
+  Args:
+    source: Charlotte_of_Saxe-Altenburg
+    type: :Person
+  AddTriple (a3aae5da-fd9e-4259-9501-4a89cc89a83d)
+ Call ID: a3aae5da-fd9e-4259-9501-4a89cc89a83d
+  Args:
+    source: Barbara_of_Prussia
+    relation: :hasMother
+    target: Charlotte_of_Saxe-Altenburg
+  Finish (90cfb2c2-da87-42d6-ac16-a17a8067d304)
+ Call ID: 90cfb2c2-da87-42d6-ac16-a17a8067d304
+  Args:
 
 ================================= Tool Message =================================
 
@@ -693,53 +770,47 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alfonso_Prince_of_Asturias a :Man ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
+  data:Thyra_of_Mecklenburg a :Person,
+          :Woman ;
+      :hasFather data:Frederick_Francis_IV ;
+      :hasMother data:Alexandra_of_Hanover ;
+      :isSisterOf data:Christian_Louis_of_Mecklenburg .
 
-  data:Alfonso_de_Borbon_son_of_Jaime a :Man ;
-      :hasFather data:Jaime_of_Spain ;
-      :hasMother data:Emanuela_de_Dampierre .
+  data:Barbara_of_Prussia a :Person,
+          :Woman ;
+      :hasBirthYear 1920 ;
+      :hasDeathYear 1994 ;
+      :hasFather data:Sigismund_of_Prussia ;
+      :hasMother data:Charlotte_of_Saxe-Altenburg .
 
-  data:Beatriz_of_Spain a :Woman ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
+  data:Charlotte_of_Saxe-Altenburg a :Person,
+          :Woman .
 
-  data:Charlotte_Luise_Auguste_Tiedemann a :Woman ;
-      :hasFather data:Otto_Eugen_Tiedemann ;
-      :hasMother data:Luise_Amalia_Klein .
+  data:Christian_Louis_of_Mecklenburg a :Man,
+          :Person ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 1996 ;
+      :hasFather data:Frederick_Francis_IV ;
+      :hasMarriageYear 1954 ;
+      :hasMother data:Alexandra_of_Hanover ;
+      :hasRelation data:Barbara_of_Prussia .
 
-  data:Gonzalo_of_Spain a :Man ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
+  data:Ernest_Augustus_of_Hanover a :Man,
+          :Person .
 
-  data:Gonzalo_son_of_Jaime a :Man ;
-      :hasFather data:Jaime_of_Spain ;
-      :hasMother data:Emanuela_de_Dampierre .
+  data:Sigismund_of_Prussia a :Man,
+          :Person .
 
-  data:Juan_Count_of_Barcelona a :Man ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
+  data:Thyra_of_Denmark_Princess a :Person,
+          :Woman .
 
-  data:Maria_Cristina_of_Spain a :Woman ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
+  data:Alexandra_of_Hanover a :Person,
+          :Woman ;
+      :hasFather data:Ernest_Augustus_of_Hanover ;
+      :hasMother data:Thyra_of_Denmark_Princess .
 
-  data:Luise_Amalia_Klein a :Woman .
-
-  data:Otto_Eugen_Tiedemann a :Man .
-
-  data:Emanuela_de_Dampierre a :Woman .
-
-  data:Jaime_of_Spain a :Man ;
-      :hasBirthYear 1908 ;
-      :hasDeathYear 1975 ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
-
-  data:Alfonso_XIII a :Man .
-
-  data:Victoria_Eugenie_of_Battenberg a :Woman .
+  data:Frederick_Francis_IV a :Man,
+          :Person .
 
 
 
@@ -751,446 +822,206 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (9f27c733-f4fd-4b54-823f-03cc9abc6ad7)
- Call ID: 9f27c733-f4fd-4b54-823f-03cc9abc6ad7
+  ValidateShacl (6e0f5674-bd43-4ab4-82a9-035224031a34)
+ Call ID: 6e0f5674-bd43-4ab4-82a9-035224031a34
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:54
+Total violations:24
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Juan_Count_of_Barcelona is missing the mandatory class :Ancestor.
+      The person Frederick_Francis_IV used as a father is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
+      AssignClass(Frederick_Francis_IV, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Jaime_of_Spain for the property hasFather of Gonzalo_son_of_Jaime is missing the mandatory class :Ancestor.
+      The person Alexandra_of_Hanover used as a mother is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jaime_of_Spain, :Ancestor)
+      AssignClass(Alexandra_of_Hanover, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Alfonso_Prince_of_Asturias is missing the mandatory class :Ancestor.
+      The person Sigismund_of_Prussia used as a father is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
+      AssignClass(Sigismund_of_Prussia, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
+      The person Frederick_Francis_IV used as a father is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
+      AssignClass(Frederick_Francis_IV, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Jaime_of_Spain is missing the mandatory class :Ancestor.
+      The person Ernest_Augustus_of_Hanover used as a father is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
+      AssignClass(Ernest_Augustus_of_Hanover, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Jaime_of_Spain for the property hasFather of Alfonso_de_Borbon_son_of_Jaime is missing the mandatory class :Ancestor.
+      The person Frederick_Francis_IV used as a father is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jaime_of_Spain, :Ancestor)
+      AssignClass(Frederick_Francis_IV, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Juan_Count_of_Barcelona is missing the mandatory class :Ancestor.
+      The person Charlotte_of_Saxe-Altenburg used as a mother is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
+      AssignClass(Charlotte_of_Saxe-Altenburg, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Emanuela_de_Dampierre for the property hasMother of Gonzalo_son_of_Jaime is missing the mandatory class :Ancestor.
+      The person Alexandra_of_Hanover used as a mother is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Emanuela_de_Dampierre, :Ancestor)
+      AssignClass(Alexandra_of_Hanover, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Alfonso_Prince_of_Asturias is missing the mandatory class :Ancestor.
+      The person Thyra_of_Denmark_Princess used as a mother is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
+      AssignClass(Thyra_of_Denmark_Princess, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
+      The person Alexandra_of_Hanover used as a mother is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
+      AssignClass(Alexandra_of_Hanover, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Jaime_of_Spain is missing the mandatory class :Ancestor.
+      The person Sigismund_of_Prussia used as a father is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
+      AssignClass(Sigismund_of_Prussia, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Emanuela_de_Dampierre for the property hasMother of Alfonso_de_Borbon_son_of_Jaime is missing the mandatory class :Ancestor.
+      The person Frederick_Francis_IV used as a father is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Emanuela_de_Dampierre, :Ancestor)
+      AssignClass(Frederick_Francis_IV, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Juan_Count_of_Barcelona is missing the mandatory class :Ancestor.
+      The person Ernest_Augustus_of_Hanover used as a father is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
+      AssignClass(Ernest_Augustus_of_Hanover, :Ancestor)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Jaime_of_Spain for the property hasFather of Gonzalo_son_of_Jaime is missing the mandatory class :Ancestor.
+      The person Frederick_Francis_IV used as a father is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jaime_of_Spain, :Ancestor)
+      AssignClass(Frederick_Francis_IV, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Beatriz_of_Spain is missing the mandatory class :Ancestor.
+      The person Charlotte_of_Saxe-Altenburg used as a mother is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
+      AssignClass(Charlotte_of_Saxe-Altenburg, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Alfonso_Prince_of_Asturias is missing the mandatory class :Ancestor.
+      The person Alexandra_of_Hanover used as a mother is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
+      AssignClass(Alexandra_of_Hanover, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
+      The person Thyra_of_Denmark_Princess used as a mother is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
+      AssignClass(Thyra_of_Denmark_Princess, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Otto_Eugen_Tiedemann for the property hasFather of Charlotte_Luise_Auguste_Tiedemann is missing the mandatory class :Ancestor.
+      The person Alexandra_of_Hanover used as a mother is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Otto_Eugen_Tiedemann, :Ancestor)
+      AssignClass(Alexandra_of_Hanover, :Ancestor)
 
 
   Violation [19]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Jaime_of_Spain is missing the mandatory class :Ancestor.
+      The person Sigismund_of_Prussia used as a father is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
+      AssignClass(Sigismund_of_Prussia, :Ancestor)
 
 
   Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Maria_Cristina_of_Spain is missing the mandatory class :Ancestor.
+      The person Ernest_Augustus_of_Hanover used as a father is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
+      AssignClass(Ernest_Augustus_of_Hanover, :Ancestor)
 
 
   Violation [21]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Jaime_of_Spain for the property hasFather of Alfonso_de_Borbon_son_of_Jaime is missing the mandatory class :Ancestor.
+      The person Frederick_Francis_IV used as a father is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jaime_of_Spain, :Ancestor)
+      AssignClass(Frederick_Francis_IV, :Ancestor)
 
 
   Violation [22]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Juan_Count_of_Barcelona is missing the mandatory class :Ancestor.
+      The person Charlotte_of_Saxe-Altenburg used as a mother is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
+      AssignClass(Charlotte_of_Saxe-Altenburg, :Ancestor)
 
 
   Violation [23]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Emanuela_de_Dampierre for the property hasMother of Gonzalo_son_of_Jaime is missing the mandatory class :Ancestor.
+      The person Thyra_of_Denmark_Princess used as a mother is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Emanuela_de_Dampierre, :Ancestor)
+      AssignClass(Thyra_of_Denmark_Princess, :Ancestor)
 
 
   Violation [24]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Beatriz_of_Spain is missing the mandatory class :Ancestor.
+      The person Alexandra_of_Hanover used as a mother is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Alfonso_Prince_of_Asturias is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Luise_Amalia_Klein for the property hasMother of Charlotte_Luise_Auguste_Tiedemann is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Luise_Amalia_Klein, :Ancestor)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Jaime_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Maria_Cristina_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Emanuela_de_Dampierre for the property hasMother of Alfonso_de_Borbon_son_of_Jaime is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Emanuela_de_Dampierre, :Ancestor)
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Juan_Count_of_Barcelona is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Jaime_of_Spain for the property hasFather of Gonzalo_son_of_Jaime is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Jaime_of_Spain, :Ancestor)
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Beatriz_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Alfonso_Prince_of_Asturias is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Otto_Eugen_Tiedemann for the property hasFather of Charlotte_Luise_Auguste_Tiedemann is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Otto_Eugen_Tiedemann, :Ancestor)
-
-
-  Violation [37]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Jaime_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
-
-
-  Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Maria_Cristina_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
-
-
-  Violation [39]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Jaime_of_Spain for the property hasFather of Alfonso_de_Borbon_son_of_Jaime is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Jaime_of_Spain, :Ancestor)
-
-
-  Violation [40]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Juan_Count_of_Barcelona is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [41]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Emanuela_de_Dampierre for the property hasMother of Gonzalo_son_of_Jaime is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Emanuela_de_Dampierre, :Ancestor)
-
-
-  Violation [42]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Beatriz_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [43]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Alfonso_Prince_of_Asturias is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [44]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Gonzalo_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [45]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Luise_Amalia_Klein for the property hasMother of Charlotte_Luise_Auguste_Tiedemann is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Luise_Amalia_Klein, :Ancestor)
-
-
-  Violation [46]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Jaime_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [47]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Maria_Cristina_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [48]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Emanuela_de_Dampierre for the property hasMother of Alfonso_de_Borbon_son_of_Jaime is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Emanuela_de_Dampierre, :Ancestor)
-
-
-  Violation [49]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Maria_Cristina_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
-
-
-  Violation [50]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Alfonso_XIII for the property hasFather of Beatriz_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alfonso_XIII, :Ancestor)
-
-
-  Violation [51]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Otto_Eugen_Tiedemann for the property hasFather of Charlotte_Luise_Auguste_Tiedemann is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Otto_Eugen_Tiedemann, :Ancestor)
-
-
-  Violation [52]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Maria_Cristina_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [53]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Victoria_Eugenie_of_Battenberg for the property hasMother of Beatriz_of_Spain is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Eugenie_of_Battenberg, :Ancestor)
-
-
-  Violation [54]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Luise_Amalia_Klein for the property hasMother of Charlotte_Luise_Auguste_Tiedemann is missing the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Luise_Amalia_Klein, :Ancestor)
+      AssignClass(Alexandra_of_Hanover, :Ancestor)
 
 
 
@@ -1199,39 +1030,147 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (02d9b36a-5abd-41fb-9c62-835e894dc251)
- Call ID: 02d9b36a-5abd-41fb-9c62-835e894dc251
-  Args:
-    source: :Alfonso_XIII
-    type: :Ancestor
-  AssignClass (304d6dce-2bac-4e3f-a2b6-bdff0f198bf0)
- Call ID: 304d6dce-2bac-4e3f-a2b6-bdff0f198bf0
-  Args:
-    source: :Victoria_Eugenie_of_Battenberg
-    type: :Ancestor
-  AssignClass (98cf6c10-e5ec-42bd-871c-abb763beecd2)
- Call ID: 98cf6c10-e5ec-42bd-871c-abb763beecd2
+  AssignClass (0cac0b7a-3621-4cf8-9540-6d3f593e9964)
+ Call ID: 0cac0b7a-3621-4cf8-9540-6d3f593e9964
   Args:
     type: :Ancestor
-    source: :Jaime_of_Spain
-  AssignClass (81dd5414-2efe-4a3b-a351-67fff828df88)
- Call ID: 81dd5414-2efe-4a3b-a351-67fff828df88
+    source: Frederick_Francis_IV
+  AssignClass (a74892f9-e81a-4564-a2a0-39658628ac39)
+ Call ID: a74892f9-e81a-4564-a2a0-39658628ac39
+  Args:
+    source: Alexandra_of_Hanover
+    type: :Ancestor
+  AssignClass (fe8c6526-9f22-4933-a374-8c38414abbec)
+ Call ID: fe8c6526-9f22-4933-a374-8c38414abbec
   Args:
     type: :Ancestor
-    source: :Emanuela_de_Dampierre
-  AssignClass (28a7d880-662a-4809-bd96-11e45dac2c37)
- Call ID: 28a7d880-662a-4809-bd96-11e45dac2c37
+    source: Sigismund_of_Prussia
+  AssignClass (bff4f0f5-2dfa-4f75-b220-20ea5ed561f8)
+ Call ID: bff4f0f5-2dfa-4f75-b220-20ea5ed561f8
   Args:
     type: :Ancestor
-    source: :Otto_Eugen_Tiedemann
-  AssignClass (3812cadc-4d1c-4b0f-9411-5793fe192efc)
- Call ID: 3812cadc-4d1c-4b0f-9411-5793fe192efc
+    source: Ernest_Augustus_of_Hanover
+  AssignClass (476e3b5a-4159-4d5b-ab2d-0bf960ca1e89)
+ Call ID: 476e3b5a-4159-4d5b-ab2d-0bf960ca1e89
   Args:
-    source: :Luise_Amalia_Klein
     type: :Ancestor
-  Finish (cc0de298-489f-4206-8ccb-2f16a0ffe1d9)
- Call ID: cc0de298-489f-4206-8ccb-2f16a0ffe1d9
+    source: Charlotte_of_Saxe-Altenburg
+  AssignClass (7c1eb0fa-1f66-409e-80b2-67a71e7a282d)
+ Call ID: 7c1eb0fa-1f66-409e-80b2-67a71e7a282d
   Args:
+    type: :Ancestor
+    source: Thyra_of_Denmark_Princess
+  AddTriple (fa1c62c9-b5b5-4407-8007-80c7d9d03949)
+ Call ID: fa1c62c9-b5b5-4407-8007-80c7d9d03949
+  Args:
+    relation: :hasSex
+    source: Frederick_Francis_IV
+    target: :Male
+  AddTriple (9b61551b-9442-44ca-a449-c6247ec28c11)
+ Call ID: 9b61551b-9442-44ca-a449-c6247ec28c11
+  Args:
+    source: Alexandra_of_Hanover
+    target: :Female
+    relation: :hasSex
+  AddTriple (f623d77a-0143-48c9-a205-a90e116d0a77)
+ Call ID: f623d77a-0143-48c9-a205-a90e116d0a77
+  Args:
+    source: Sigismund_of_Prussia
+    target: :Male
+    relation: :hasSex
+  AddTriple (1ddbccbc-e39b-4750-b6c1-86fcd23a4d40)
+ Call ID: 1ddbccbc-e39b-4750-b6c1-86fcd23a4d40
+  Args:
+    source: Ernest_Augustus_of_Hanover
+    target: :Male
+    relation: :hasSex
+  AddTriple (9b2f171a-cbbc-4d22-b4e3-63fa936b99d6)
+ Call ID: 9b2f171a-cbbc-4d22-b4e3-63fa936b99d6
+  Args:
+    relation: :hasSex
+    source: Charlotte_of_Saxe-Altenburg
+    target: :Female
+  AddTriple (ddeaebf2-7a5a-4f48-becc-80efc298b318)
+ Call ID: ddeaebf2-7a5a-4f48-becc-80efc298b318
+  Args:
+    relation: :hasSex
+    source: Thyra_of_Denmark_Princess
+    target: :Female
+  AddTriple (8681baf2-1480-45bc-b5a0-97dcade7d9cd)
+ Call ID: 8681baf2-1480-45bc-b5a0-97dcade7d9cd
+  Args:
+    source: Christian_Louis_of_Mecklenburg
+    target: :Male
+    relation: :hasSex
+  AddTriple (fa87f4e0-4657-45f0-91ee-f0058392d797)
+ Call ID: fa87f4e0-4657-45f0-91ee-f0058392d797
+  Args:
+    source: Thyra_of_Mecklenburg
+    target: :Female
+    relation: :hasSex
+  AddTriple (bb1c8781-0075-4170-8d5c-02dd37668b65)
+ Call ID: bb1c8781-0075-4170-8d5c-02dd37668b65
+  Args:
+    relation: :hasSex
+    source: Barbara_of_Prussia
+    target: :Female
+  AssignClass (6030bbd7-adad-4e06-9be8-4d85e0e07505)
+ Call ID: 6030bbd7-adad-4e06-9be8-4d85e0e07505
+  Args:
+    type: :Sex
+    source: :Male
+  AssignClass (ae06559e-4764-4c17-85e7-15aa6809a645)
+ Call ID: ae06559e-4764-4c17-85e7-15aa6809a645
+  Args:
+    type: :Sex
+    source: :Female
+  Finish (07975d8e-4d60-4358-a928-06502216c3a8)
+ Call ID: 07975d8e-4d60-4358-a928-06502216c3a8
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1260,59 +1199,66 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alfonso_Prince_of_Asturias a :Man ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
+  data:Thyra_of_Mecklenburg a :Person,
+          :Woman ;
+      :hasFather data:Frederick_Francis_IV ;
+      :hasMother data:Alexandra_of_Hanover ;
+      :hasSex data:Female ;
+      :isSisterOf data:Christian_Louis_of_Mecklenburg .
 
-  data:Alfonso_de_Borbon_son_of_Jaime a :Man ;
-      :hasFather data:Jaime_of_Spain ;
-      :hasMother data:Emanuela_de_Dampierre .
+  data:Barbara_of_Prussia a :Person,
+          :Woman ;
+      :hasBirthYear 1920 ;
+      :hasDeathYear 1994 ;
+      :hasFather data:Sigismund_of_Prussia ;
+      :hasMother data:Charlotte_of_Saxe-Altenburg ;
+      :hasSex data:Female .
 
-  data:Beatriz_of_Spain a :Woman ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
+  data:Charlotte_of_Saxe-Altenburg a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasSex data:Female .
 
-  data:Charlotte_Luise_Auguste_Tiedemann a :Woman ;
-      :hasFather data:Otto_Eugen_Tiedemann ;
-      :hasMother data:Luise_Amalia_Klein .
+  data:Christian_Louis_of_Mecklenburg a :Man,
+          :Person ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 1996 ;
+      :hasFather data:Frederick_Francis_IV ;
+      :hasMarriageYear 1954 ;
+      :hasMother data:Alexandra_of_Hanover ;
+      :hasRelation data:Barbara_of_Prussia ;
+      :hasSex data:Male .
 
-  data:Gonzalo_of_Spain a :Man ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
+  data:Ernest_Augustus_of_Hanover a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
 
-  data:Gonzalo_son_of_Jaime a :Man ;
-      :hasFather data:Jaime_of_Spain ;
-      :hasMother data:Emanuela_de_Dampierre .
+  data:Sigismund_of_Prussia a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
 
-  data:Juan_Count_of_Barcelona a :Man ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
+  data:Thyra_of_Denmark_Princess a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasSex data:Female .
 
-  data:Maria_Cristina_of_Spain a :Woman ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
+  data:Alexandra_of_Hanover a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Ernest_Augustus_of_Hanover ;
+      :hasMother data:Thyra_of_Denmark_Princess ;
+      :hasSex data:Female .
 
-  data:Luise_Amalia_Klein a :Ancestor,
-          :Woman .
+  data:Frederick_Francis_IV a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
 
-  data:Otto_Eugen_Tiedemann a :Ancestor,
-          :Man .
+  data:Male a :Sex .
 
-  data:Emanuela_de_Dampierre a :Ancestor,
-          :Woman .
-
-  data:Jaime_of_Spain a :Ancestor,
-          :Man ;
-      :hasBirthYear 1908 ;
-      :hasDeathYear 1975 ;
-      :hasFather data:Alfonso_XIII ;
-      :hasMother data:Victoria_Eugenie_of_Battenberg .
-
-  data:Alfonso_XIII a :Ancestor,
-          :Man .
-
-  data:Victoria_Eugenie_of_Battenberg a :Ancestor,
-          :Woman .
+  data:Female a :Sex .
 
 
 
@@ -1324,8 +1270,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (79574ad6-d696-4504-ae13-3ecaa9ed7b1d)
- Call ID: 79574ad6-d696-4504-ae13-3ecaa9ed7b1d
+  ValidateShacl (95e25f8d-9d9e-4696-8a60-e15b6c8ded94)
+ Call ID: 95e25f8d-9d9e-4696-8a60-e15b6c8ded94
   Args:
 
 ================================= Tool Message =================================
@@ -1336,6 +1282,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (fb317b9b-fd2d-4f8f-b428-f3801efd2752)
- Call ID: fb317b9b-fd2d-4f8f-b428-f3801efd2752
+  Finish (7998cce0-14a8-4125-930f-87ee3d7b47b2)
+ Call ID: 7998cce0-14a8-4125-930f-87ee3d7b47b2
   Args:

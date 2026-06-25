@@ -125,6 +125,8 @@ Through his male-line descent from Christian IX of Denmark, he is also a Danish 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -140,39 +142,9 @@ Through his male-line descent from Christian IX of Denmark, he is also a Danish 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -187,6 +159,23 @@ Through his male-line descent from Christian IX of Denmark, he is also a Danish 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -204,6 +193,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,29 +275,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -302,6 +298,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -314,6 +318,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -322,17 +328,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -360,6 +368,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -375,85 +467,105 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (db7a8d45-36cb-4f9d-a83a-540f75901567)
- Call ID: db7a8d45-36cb-4f9d-a83a-540f75901567
-  Args:
-    source: Prince_Philippos_of_Greece_and_Denmark
-    type: :Man
-  AssignClass (9a89a830-9ac7-46a6-b2bc-6fb51e5e0826)
- Call ID: 9a89a830-9ac7-46a6-b2bc-6fb51e5e0826
-  Args:
-    type: :Man
-    source: Constantine_II
-  AssignClass (da1cd9d5-4a6c-4321-a9ff-4e193dd1e528)
- Call ID: da1cd9d5-4a6c-4321-a9ff-4e193dd1e528
+  AssignClass (34745a80-1ec2-403c-83b9-a7e26e9d63d6)
+ Call ID: 34745a80-1ec2-403c-83b9-a7e26e9d63d6
   Args:
     source: Anne-Marie
     type: :Woman
-  AssignClass (f53e465d-c3f8-4e44-a8ac-29484138ff9d)
- Call ID: f53e465d-c3f8-4e44-a8ac-29484138ff9d
+  AssignClass (43b4975c-1541-49a6-86c3-68f4a7a1c0eb)
+ Call ID: 43b4975c-1541-49a6-86c3-68f4a7a1c0eb
+  Args:
+    source: Sofía_of_Spain
+    type: :Woman
+  AssignClass (36984836-17a2-4b76-b8bc-552bf3e95394)
+ Call ID: 36984836-17a2-4b76-b8bc-552bf3e95394
+  Args:
+    source: Marina
+    type: :Woman
+  AssignClass (4557631a-20e2-4a5a-8c1e-f3308e81a580)
+ Call ID: 4557631a-20e2-4a5a-8c1e-f3308e81a580
+  Args:
+    source: Prince_Michael
+    type: :Man
+  AssignClass (7f128d22-46a5-4a9b-9e84-c37c4a500880)
+ Call ID: 7f128d22-46a5-4a9b-9e84-c37c4a500880
+  Args:
+    source: Philippos_of_Greece_and_Denmark
+    type: :Man
+  AssignClass (6c09add7-8a3f-4433-9ed8-0e9605043825)
+ Call ID: 6c09add7-8a3f-4433-9ed8-0e9605043825
+  Args:
+    type: :Man
+    source: Constantine_II
+  AddLiteral (2333d62e-3c7d-4ccc-be1c-8ac49a81d689)
+ Call ID: 2333d62e-3c7d-4ccc-be1c-8ac49a81d689
+  Args:
+    relation: :hasBirthYear
+    source: Philippos_of_Greece_and_Denmark
+    literal_value: 1986
+    literal_type: xsd:integer
+  AddTriple (c4e8e904-9c5a-4257-8dae-6bc2d93081af)
+ Call ID: c4e8e904-9c5a-4257-8dae-6bc2d93081af
+  Args:
+    source: Philippos_of_Greece_and_Denmark
+    target: Constantine_II
+    relation: :hasFather
+  AddTriple (37e470ad-d3eb-4039-9198-8ff7da2eed02)
+ Call ID: 37e470ad-d3eb-4039-9198-8ff7da2eed02
+  Args:
+    source: Philippos_of_Greece_and_Denmark
+    target: Anne-Marie
+    relation: :hasMother
+  AssignClass (14f99c93-cefa-42a5-9d86-d58b7ceeaa24)
+ Call ID: 14f99c93-cefa-42a5-9d86-d58b7ceeaa24
   Args:
     source: Nina_Nastassja_Flohr
     type: :Woman
-  AssignClass (61da85ae-3fa2-4439-be95-ab4a9550e7e8)
- Call ID: 61da85ae-3fa2-4439-be95-ab4a9550e7e8
+  AssignClass (8852e003-a310-48f3-a6ec-0b41af566651)
+ Call ID: 8852e003-a310-48f3-a6ec-0b41af566651
   Args:
-    source: Thomas_Flohr
     type: :Man
-  AssignClass (55adf9c0-c511-4905-92e9-0f3d27316d4a)
- Call ID: 55adf9c0-c511-4905-92e9-0f3d27316d4a
+    source: Thomas_Flohr
+  AssignClass (c24e35b5-4392-4139-9c21-495c73c2989f)
+ Call ID: c24e35b5-4392-4139-9c21-495c73c2989f
   Args:
     type: :Woman
     source: Katharina_Flohr
-  AssignClass (cd94ef96-9a7f-4e27-8d9a-1ba1781efd3c)
- Call ID: cd94ef96-9a7f-4e27-8d9a-1ba1781efd3c
+  AddTriple (6672588a-0053-4003-b5b1-c95362b3c599)
+ Call ID: 6672588a-0053-4003-b5b1-c95362b3c599
   Args:
-    source: Queen_Sofia_of_Spain
-    type: :Woman
-  AssignClass (30a4fee4-5a97-47a7-9765-160702042a6e)
- Call ID: 30a4fee4-5a97-47a7-9765-160702042a6e
-  Args:
-    type: :Man
-    source: Prince_Michael
-  AssignClass (416c3505-7ba7-43c9-95d6-73ed463c049a)
- Call ID: 416c3505-7ba7-43c9-95d6-73ed463c049a
-  Args:
-    type: :Woman
-    source: Princess_Marina
-  AddTriple (1fd3ed07-2f35-4fc0-9808-ec1ef9f7ab6b)
- Call ID: 1fd3ed07-2f35-4fc0-9808-ec1ef9f7ab6b
-  Args:
-    source: Prince_Philippos_of_Greece_and_Denmark
-    target: Constantine_II
     relation: :hasFather
-  AddTriple (65838f4a-da47-4795-94c5-250a9336c917)
- Call ID: 65838f4a-da47-4795-94c5-250a9336c917
-  Args:
-    relation: :hasMother
-    source: Prince_Philippos_of_Greece_and_Denmark
-    target: Anne-Marie
-  AddTriple (0d393086-615f-4b5e-828e-5ef246f80ec7)
- Call ID: 0d393086-615f-4b5e-828e-5ef246f80ec7
-  Args:
     source: Nina_Nastassja_Flohr
     target: Thomas_Flohr
-    relation: :hasFather
-  AddTriple (ed6d1ea7-1092-48ab-8a83-26714ac989b6)
- Call ID: ed6d1ea7-1092-48ab-8a83-26714ac989b6
+  AddTriple (552ef5c2-dedb-431d-ae79-44dd8e696e83)
+ Call ID: 552ef5c2-dedb-431d-ae79-44dd8e696e83
   Args:
     source: Nina_Nastassja_Flohr
     target: Katharina_Flohr
     relation: :hasMother
-  AddLiteral (c775b43f-977a-4e49-a3e4-49204c0343b3)
- Call ID: c775b43f-977a-4e49-a3e4-49204c0343b3
+  AddTriple (6674ebe0-e8b1-4f95-b5dd-a74bb0c3aa91)
+ Call ID: 6674ebe0-e8b1-4f95-b5dd-a74bb0c3aa91
   Args:
-    source: Prince_Philippos_of_Greece_and_Denmark
-    literal_value: 1986
-    relation: :hasBirthYear
-    literal_type: xsd:int
-  Finish (ce167a1f-324e-4051-b383-a11246f347de)
- Call ID: ce167a1f-324e-4051-b383-a11246f347de
+    relation: :hasRelation
+    source: Philippos_of_Greece_and_Denmark
+    target: Nina_Nastassja_Flohr
+  AddTriple (a3d21578-09e9-454e-b2f6-cdecc93dfc12)
+ Call ID: a3d21578-09e9-454e-b2f6-cdecc93dfc12
   Args:
+    source: Marina
+    target: Prince_Michael
+    relation: :hasRelation
+  Finish (441cdb06-e2b0-417e-93f8-f82ff32ed5dc)
+ Call ID: 441cdb06-e2b0-417e-93f8-f82ff32ed5dc
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -514,26 +626,28 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Nina_Nastassja_Flohr a :Woman ;
-      :hasFather data:Thomas_Flohr ;
-      :hasMother data:Katharina_Flohr .
+  data:Marina a :Woman ;
+      :hasRelation data:Prince_Michael .
 
-  data:Prince_Michael a :Man .
-
-  data:Prince_Philippos_of_Greece_and_Denmark a :Man ;
-      :hasBirthYear "1986"^^xsd:int ;
+  data:Philippos_of_Greece_and_Denmark a :Man ;
+      :hasBirthYear 1986 ;
       :hasFather data:Constantine_II ;
-      :hasMother data:Anne-Marie .
+      :hasMother data:Anne-Marie ;
+      :hasRelation data:Nina_Nastassja_Flohr .
 
-  data:Princess_Marina a :Woman .
-
-  data:Queen_Sofia_of_Spain a :Woman .
+  data:Sof%C3%ADa_of_Spain a :Woman .
 
   data:Anne-Marie a :Woman .
 
   data:Constantine_II a :Man .
 
   data:Katharina_Flohr a :Woman .
+
+  data:Nina_Nastassja_Flohr a :Woman ;
+      :hasFather data:Thomas_Flohr ;
+      :hasMother data:Katharina_Flohr .
+
+  data:Prince_Michael a :Man .
 
   data:Thomas_Flohr a :Man .
 
@@ -547,8 +661,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (7ddb53f0-4b2a-456e-a6a6-6131c7101f15)
- Call ID: 7ddb53f0-4b2a-456e-a6a6-6131c7101f15
+  ValidateShacl (aa214296-f23d-4d44-a169-3651dfcade96)
+ Call ID: aa214296-f23d-4d44-a169-3651dfcade96
   Args:
 
 ================================= Tool Message =================================
@@ -560,97 +674,97 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Constantine_II is assigned as the father of Prince_Philippos_of_Greece_and_Denmark, but lacks the mandatory class :Ancestor required by the property :hasFather.
+      The node Constantine_II is assigned as the hasFather of Philippos_of_Greece_and_Denmark, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Constantine_II', class: ':Ancestor')
+      AssignClass(Constantine_II, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Anne-Marie is assigned as the mother of Prince_Philippos_of_Greece_and_Denmark, but lacks the mandatory class :Ancestor required by the property :hasMother.
+      The node Anne-Marie is assigned as the hasMother of Philippos_of_Greece_and_Denmark, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+      AssignClass(Anne-Marie, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Constantine_II is assigned as the father of Prince_Philippos_of_Greece_and_Denmark, but lacks the mandatory class :Ancestor required by the property :hasFather.
+      The node Thomas_Flohr is assigned as the hasFather of Nina_Nastassja_Flohr, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Constantine_II', class: ':Ancestor')
+      AssignClass(Thomas_Flohr, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Thomas_Flohr is assigned as the father of Nina_Nastassja_Flohr, but lacks the mandatory class :Ancestor required by the property :hasFather.
+      The node Constantine_II is assigned as the hasFather of Philippos_of_Greece_and_Denmark, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Thomas_Flohr', class: ':Ancestor')
+      AssignClass(Constantine_II, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Anne-Marie is assigned as the mother of Prince_Philippos_of_Greece_and_Denmark, but lacks the mandatory class :Ancestor required by the property :hasMother.
+      The node Katharina_Flohr is assigned as the hasMother of Nina_Nastassja_Flohr, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+      AssignClass(Katharina_Flohr, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Katharina_Flohr is assigned as the mother of Nina_Nastassja_Flohr, but lacks the mandatory class :Ancestor required by the property :hasMother.
+      The node Anne-Marie is assigned as the hasMother of Philippos_of_Greece_and_Denmark, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Katharina_Flohr', class: ':Ancestor')
+      AssignClass(Anne-Marie, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Constantine_II is assigned as the father of Prince_Philippos_of_Greece_and_Denmark, but lacks the mandatory class :Ancestor required by the property :hasFather.
+      The node Thomas_Flohr is assigned as the hasFather of Nina_Nastassja_Flohr, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Constantine_II', class: ':Ancestor')
+      AssignClass(Thomas_Flohr, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Thomas_Flohr is assigned as the father of Nina_Nastassja_Flohr, but lacks the mandatory class :Ancestor required by the property :hasFather.
+      The node Constantine_II is assigned as the hasFather of Philippos_of_Greece_and_Denmark, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Thomas_Flohr', class: ':Ancestor')
+      AssignClass(Constantine_II, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Anne-Marie is assigned as the mother of Prince_Philippos_of_Greece_and_Denmark, but lacks the mandatory class :Ancestor required by the property :hasMother.
+      The node Katharina_Flohr is assigned as the hasMother of Nina_Nastassja_Flohr, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Anne-Marie', class: ':Ancestor')
+      AssignClass(Katharina_Flohr, :Ancestor)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Katharina_Flohr is assigned as the mother of Nina_Nastassja_Flohr, but lacks the mandatory class :Ancestor required by the property :hasMother.
+      The node Anne-Marie is assigned as the hasMother of Philippos_of_Greece_and_Denmark, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Katharina_Flohr', class: ':Ancestor')
+      AssignClass(Anne-Marie, :Ancestor)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Thomas_Flohr is assigned as the father of Nina_Nastassja_Flohr, but lacks the mandatory class :Ancestor required by the property :hasFather.
+      The node Thomas_Flohr is assigned as the hasFather of Nina_Nastassja_Flohr, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Thomas_Flohr', class: ':Ancestor')
+      AssignClass(Thomas_Flohr, :Ancestor)
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Katharina_Flohr is assigned as the mother of Nina_Nastassja_Flohr, but lacks the mandatory class :Ancestor required by the property :hasMother.
+      The node Katharina_Flohr is assigned as the hasMother of Nina_Nastassja_Flohr, but it lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Katharina_Flohr', class: ':Ancestor')
+      AssignClass(Katharina_Flohr, :Ancestor)
 
 
 
@@ -659,29 +773,26 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (eaa9f39f-2d30-4636-90a2-f4269b123a72)
- Call ID: eaa9f39f-2d30-4636-90a2-f4269b123a72
+  AssignClass (85b10b8b-e4c1-4805-b7e1-ad2ec3418ef0)
+ Call ID: 85b10b8b-e4c1-4805-b7e1-ad2ec3418ef0
   Args:
-    type: :Ancestor
     source: Constantine_II
-  AssignClass (ccb24bf0-792b-424f-8d8d-fed8c4729d12)
- Call ID: ccb24bf0-792b-424f-8d8d-fed8c4729d12
+    type: :Ancestor
+  AssignClass (f907ba3b-7673-4c64-bc8b-e1ed6e122582)
+ Call ID: f907ba3b-7673-4c64-bc8b-e1ed6e122582
   Args:
     source: Anne-Marie
     type: :Ancestor
-  AssignClass (4ef609a0-5dc8-46e5-8fef-8b2dd30c2cc7)
- Call ID: 4ef609a0-5dc8-46e5-8fef-8b2dd30c2cc7
+  AssignClass (a371aa9c-1762-42ca-8750-2a08b7671f0d)
+ Call ID: a371aa9c-1762-42ca-8750-2a08b7671f0d
   Args:
     source: Thomas_Flohr
     type: :Ancestor
-  AssignClass (5dfaaddb-e0db-44d4-b7f7-e5828390a1b0)
- Call ID: 5dfaaddb-e0db-44d4-b7f7-e5828390a1b0
+  AssignClass (d8ca2307-7bd8-4b72-a6e3-e790150c45a5)
+ Call ID: d8ca2307-7bd8-4b72-a6e3-e790150c45a5
   Args:
     source: Katharina_Flohr
     type: :Ancestor
-  ValidateShacl (63681e12-53fa-41ff-ba05-80822e659d60)
- Call ID: 63681e12-53fa-41ff-ba05-80822e659d60
-  Args:
 
 ================================= Tool Message =================================
 
@@ -702,20 +813,16 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Nina_Nastassja_Flohr a :Woman ;
-      :hasFather data:Thomas_Flohr ;
-      :hasMother data:Katharina_Flohr .
+  data:Marina a :Woman ;
+      :hasRelation data:Prince_Michael .
 
-  data:Prince_Michael a :Man .
-
-  data:Prince_Philippos_of_Greece_and_Denmark a :Man ;
-      :hasBirthYear "1986"^^xsd:int ;
+  data:Philippos_of_Greece_and_Denmark a :Man ;
+      :hasBirthYear 1986 ;
       :hasFather data:Constantine_II ;
-      :hasMother data:Anne-Marie .
+      :hasMother data:Anne-Marie ;
+      :hasRelation data:Nina_Nastassja_Flohr .
 
-  data:Princess_Marina a :Woman .
-
-  data:Queen_Sofia_of_Spain a :Woman .
+  data:Sof%C3%ADa_of_Spain a :Woman .
 
   data:Anne-Marie a :Ancestor,
           :Woman .
@@ -726,10 +833,24 @@ The final data graph after all the edits:
   data:Katharina_Flohr a :Ancestor,
           :Woman .
 
+  data:Nina_Nastassja_Flohr a :Woman ;
+      :hasFather data:Thomas_Flohr ;
+      :hasMother data:Katharina_Flohr .
+
+  data:Prince_Michael a :Man .
+
   data:Thomas_Flohr a :Ancestor,
           :Man .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (045b9949-61fa-4716-8bbb-b08fc96b1f82)
+ Call ID: 045b9949-61fa-4716-8bbb-b08fc96b1f82
+  Args:
 
 ================================= Tool Message =================================
 
@@ -739,6 +860,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (71daa6a6-e734-486a-b5d1-78f04dac964d)
- Call ID: 71daa6a6-e734-486a-b5d1-78f04dac964d
+  Finish (a35d85c5-33ad-49d5-a24c-587b77bb46c9)
+ Call ID: a35d85c5-33ad-49d5-a24c-587b77bb46c9
   Args:

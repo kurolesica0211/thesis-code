@@ -225,7 +225,6 @@ The Defence Secretary, Denis Healey, interviewed the forty most senior officials
 Mountbatten was appointed Colonel of The Life Guards and Gold Stick in Waiting on 29 January 1965, and Life Colonel Commandant of the Royal Marines later that year.
 Mountbatten was elected a Fellow of the Royal Society and received an honorary doctorate from Heriot-Watt University in 1968.
 The following year, Mountbatten attended an official White House dinner, during which he held a 20-minute conversation with Richard Nixon and Secretary of State William P. Rogers.
-He later wrote, "I was able to talk to the President a bit about both Tino  and Juanito  to try and put over their respective points of view about Greece and Spain, and how I felt the US could help them."
 In January 1971, Nixon hosted Juan Carlos and his wife, Sofia (sister of the exiled King Constantine), during a visit to Washington, and later that year The Washington Post published an article alleging that the Nixon administration was seeking to persuade Franco to retire in favour of the young Bourbon prince.
 From 1967 until 1978, Mountbatten served as president of the United World Colleges Organisation, then represented by a single institution: Atlantic College in South Wales.
 Under his presidency and personal involvement, the United World College of South East Asia was established in Singapore in 1971, followed by the United World College of the Pacific in Victoria, British Columbia, in 1974.
@@ -281,7 +280,6 @@ As Mountbatten had no sons when he was created Viscount Mountbatten of Burma, of
 Leisure interests
 
 Mountbatten was passionate about genealogy, an interest he shared with other European royalty and nobility; according to Ziegler, he spent a great deal of his leisure time studying his links with European royal houses.
-He was equally enthusiastic about orders, decorations, and military ranks and uniforms, though he regarded this interest as a sign of vanity and tried, with limited success, to distance himself from it.
 Throughout his career, Mountbatten consistently sought to secure as many orders and decorations as possible.
 Like many members of the royal family, Mountbatten was an aficionado of polo.
 Mentorship of King Charles III
@@ -292,7 +290,6 @@ From time to time, he strongly upbraided the Prince for showing tendencies towar
 Yet he also encouraged Charles to enjoy the bachelor life while he could, and then to marry a young and inexperienced girl so as to ensure a stable married life.
 His qualification for offering advice to this particular heir to the throne was unique.
 It was Mountbatten who had arranged the visit of King George VI and Queen Elizabeth to Dartmouth Royal Naval College on 22 July 1939, taking care to include the young Princesses Elizabeth and Margaret in the invitation, and assigning his nephew, Cadet Prince Philip of Greece, to keep them amused while their parents toured the facility.
-This was the first recorded meeting of Charles's future parents.
 A few months later, however, his efforts nearly came to naught when he received a letter from his sister Alice in Athens informing him that Philip was visiting her and had agreed to repatriate permanently to Greece.
 Within days, Philip received a command from his cousin and sovereign, King George II of Greece, to resume his naval career in Britain which, though given without explanation, the young prince obeyed.
 In 1974, Mountbatten began corresponding with Charles about a potential marriage to his granddaughter, Amanda Knatchbull, who was also Charles's second cousin.
@@ -356,7 +353,6 @@ Funeral
 On 5 September 1979, Mountbatten received a ceremonial funeral at Westminster Abbey, attended by Queen Elizabeth II, the royal family, and members of the European royal houses.
 Watched by thousands of people, the funeral procession, which began at Wellington Barracks, included representatives of all three British Armed Services and military contingents from Burma, India, the United States (represented by 70 sailors of the US Navy and 50 US Marines), France (represented by the French Navy), and Canada.
 Mountbatten's funeral was the first major royal funeral to be held in the Abbey since the 18th century.
-During the televised service, his great-nephew Charles read the lesson from Psalm 107.
 In his address, the Archbishop of Canterbury, Donald Coggan, highlighted Mountbatten's various achievements and his "lifelong devotion to the Royal Navy".
 On hearing of Mountbatten's death, the then Master of the Queen's Music, Malcolm Williamson, composed the Lament in Memory of Lord Mountbatten of Burma for violin and string orchestra.
 The Mountbatten Brailler was developed after a bequest in his will was left for the creation of a modern, low cost, portable brailler.
@@ -391,6 +387,8 @@ He was appointed personal aide-de-camp by Edward VIII, George VI and Elizabeth I
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -406,39 +404,9 @@ He was appointed personal aide-de-camp by Edward VIII, George VI and Elizabeth I
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -453,6 +421,23 @@ He was appointed personal aide-de-camp by Edward VIII, George VI and Elizabeth I
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -470,6 +455,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -537,29 +537,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -568,6 +560,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -580,6 +580,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -588,17 +590,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -626,6 +630,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -641,187 +729,402 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9768628a-e14a-41c4-a25d-2c4291ec6fed)
- Call ID: 9768628a-e14a-41c4-a25d-2c4291ec6fed
+  AssignClass (be4610e3-dfe4-453a-928e-5b61a0ad3f5a)
+ Call ID: be4610e3-dfe4-453a-928e-5b61a0ad3f5a
   Args:
+    source: :Louis_Mountbatten
     type: :Man
-    source: Louis_Mountbatten
-  AssignClass (20f6219e-259e-4967-8ccb-9105c4a6270d)
- Call ID: 20f6219e-259e-4967-8ccb-9105c4a6270d
+  AssignClass (ae83625f-de1f-4d37-9c8f-3e4011e87206)
+ Call ID: ae83625f-de1f-4d37-9c8f-3e4011e87206
   Args:
     type: :Person
-    source: Louis_Mountbatten
-  AddLiteral (16079112-8030-4374-81a5-c7a0b2009d82)
- Call ID: 16079112-8030-4374-81a5-c7a0b2009d82
+    source: :Louis_Mountbatten
+  AddLiteral (3f1bbb1e-3c37-4a0c-9e47-d6152e3f83a3)
+ Call ID: 3f1bbb1e-3c37-4a0c-9e47-d6152e3f83a3
   Args:
-    relation: :knownAs
-    source: Louis_Mountbatten
-    literal_value: Lord Mountbatten
-    literal_type: xsd:string
-  AddLiteral (92448733-1e40-43a6-8e7a-f4481080f81d)
- Call ID: 92448733-1e40-43a6-8e7a-f4481080f81d
-  Args:
+    literal_type: xsd:integer
     literal_value: 1900
-    source: Louis_Mountbatten
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (46142d9e-86d6-40a5-b65f-9ec3ec1f117d)
- Call ID: 46142d9e-86d6-40a5-b65f-9ec3ec1f117d
+    source: :Louis_Mountbatten
+  AddLiteral (97be0ea7-48a9-4eb8-9640-4cad668a3d07)
+ Call ID: 97be0ea7-48a9-4eb8-9640-4cad668a3d07
   Args:
     literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: Louis_Mountbatten
+    source: :Louis_Mountbatten
     literal_value: 1979
-  AssignClass (535e04d2-dc63-4706-bdce-d9126936278b)
- Call ID: 535e04d2-dc63-4706-bdce-d9126936278b
+    relation: :hasDeathYear
+  AddLiteral (3451f206-5512-4671-bdd5-45e6ea948cb4)
+ Call ID: 3451f206-5512-4671-bdd5-45e6ea948cb4
   Args:
-    source: Prince_Louis_of_Battenberg
+    literal_type: xsd:string
+    source: :Louis_Mountbatten
+    relation: :knownAs
+    literal_value: Lord Mountbatten
+  AddLiteral (0574984f-d361-4ad8-82e8-d8abea96ffa4)
+ Call ID: 0574984f-d361-4ad8-82e8-d8abea96ffa4
+  Args:
+    literal_type: xsd:string
+    source: :Louis_Mountbatten
+    relation: :alsoKnownAs
+    literal_value: Dickie
+  AssignClass (5e9900c2-6bf6-49e3-a4c2-8286c9b43dde)
+ Call ID: 5e9900c2-6bf6-49e3-a4c2-8286c9b43dde
+  Args:
+    source: :Prince_Louis_of_Battenberg
     type: :Man
-  AssignClass (4ad5b42c-91b6-45b9-83b1-b0eb5e569611)
- Call ID: 4ad5b42c-91b6-45b9-83b1-b0eb5e569611
+  AssignClass (7bcf2784-def2-4584-aa68-c2884936a2b2)
+ Call ID: 7bcf2784-def2-4584-aa68-c2884936a2b2
   Args:
-    source: Prince_Louis_of_Battenberg
+    source: :Prince_Louis_of_Battenberg
     type: :Person
-  AssignClass (2fe0c6b1-611e-4445-9af0-1884bf8377c6)
- Call ID: 2fe0c6b1-611e-4445-9af0-1884bf8377c6
+  AssignClass (ac0d7164-fabc-4879-95a4-a645370be395)
+ Call ID: ac0d7164-fabc-4879-95a4-a645370be395
   Args:
-    source: Princess_Victoria_of_Hesse_and_by_Rhine
+    source: :Princess_Victoria_of_Hesse_and_by_Rhine
     type: :Woman
-  AssignClass (25be1fb6-19f5-4338-82b5-316dc1bed742)
- Call ID: 25be1fb6-19f5-4338-82b5-316dc1bed742
+  AssignClass (09ebbfd7-cb94-4b96-b0fc-b283c1ef0f22)
+ Call ID: 09ebbfd7-cb94-4b96-b0fc-b283c1ef0f22
   Args:
-    source: Princess_Victoria_of_Hesse_and_by_Rhine
     type: :Person
-  AddTriple (c7426416-e754-4770-92e8-e4fa2656dddd)
- Call ID: c7426416-e754-4770-92e8-e4fa2656dddd
+    source: :Princess_Victoria_of_Hesse_and_by_Rhine
+  AddTriple (9c612129-fc63-46b2-be15-f88928027a76)
+ Call ID: 9c612129-fc63-46b2-be15-f88928027a76
   Args:
     relation: :hasFather
-    source: Louis_Mountbatten
-    target: Prince_Louis_of_Battenberg
-  AddTriple (4922c2d9-1ef0-4080-b328-387757def227)
- Call ID: 4922c2d9-1ef0-4080-b328-387757def227
+    target: :Prince_Louis_of_Battenberg
+    source: :Louis_Mountbatten
+  AddTriple (19aab844-f4a1-4f17-a7c2-5d7551120763)
+ Call ID: 19aab844-f4a1-4f17-a7c2-5d7551120763
   Args:
-    target: Princess_Victoria_of_Hesse_and_by_Rhine
     relation: :hasMother
-    source: Louis_Mountbatten
-  AssignClass (9da20b43-f9fb-4c84-b226-c0ea0d389130)
- Call ID: 9da20b43-f9fb-4c84-b226-c0ea0d389130
+    target: :Princess_Victoria_of_Hesse_and_by_Rhine
+    source: :Louis_Mountbatten
+  AssignClass (50f35017-17b6-4e9a-b271-57c9f96d20ae)
+ Call ID: 50f35017-17b6-4e9a-b271-57c9f96d20ae
   Args:
-    source: Princess_Alice_of_Battenberg
     type: :Woman
-  AssignClass (d1b7e841-cbe4-4f5d-abba-5041abb82805)
- Call ID: d1b7e841-cbe4-4f5d-abba-5041abb82805
+    source: :Alice_of_Battenberg
+  AssignClass (336cf49d-ea9b-4fae-a4ef-38413791ea27)
+ Call ID: 336cf49d-ea9b-4fae-a4ef-38413791ea27
   Args:
-    source: Princess_Alice_of_Battenberg
+    source: :Alice_of_Battenberg
     type: :Person
-  AssignClass (56687279-eda7-45cd-a0b6-92e903990947)
- Call ID: 56687279-eda7-45cd-a0b6-92e903990947
+  AddTriple (104a3199-0b1f-4a08-a185-61553253c2da)
+ Call ID: 104a3199-0b1f-4a08-a185-61553253c2da
   Args:
-    source: Princess_Louise_of_Battenberg
+    relation: :hasSister
+    target: :Alice_of_Battenberg
+    source: :Louis_Mountbatten
+  AssignClass (bc697248-b030-423b-a97a-bbd099431dc1)
+ Call ID: bc697248-b030-423b-a97a-bbd099431dc1
+  Args:
     type: :Woman
-  AssignClass (fcffcf8f-de5b-4589-9904-181a86160697)
- Call ID: fcffcf8f-de5b-4589-9904-181a86160697
+    source: :Louise_of_Battenberg
+  AssignClass (be3d0be9-5225-44f7-9c67-f39607cb29ef)
+ Call ID: be3d0be9-5225-44f7-9c67-f39607cb29ef
   Args:
+    source: :Louise_of_Battenberg
     type: :Person
-    source: Princess_Louise_of_Battenberg
-  AssignClass (1bf1e42a-34aa-46c0-82a8-41a0241d7a11)
- Call ID: 1bf1e42a-34aa-46c0-82a8-41a0241d7a11
+  AddTriple (63eeca47-d28e-4986-8199-7f5a5d716dc4)
+ Call ID: 63eeca47-d28e-4986-8199-7f5a5d716dc4
   Args:
-    source: George_Mountbatten
+    relation: :hasSister
+    target: :Louise_of_Battenberg
+    source: :Louis_Mountbatten
+  AssignClass (3a9e28bb-f9dd-40e5-a49b-82273f16fcfc)
+ Call ID: 3a9e28bb-f9dd-40e5-a49b-82273f16fcfc
+  Args:
     type: :Man
-  AssignClass (a69a2f97-cfa2-424b-86bb-879ac013ce99)
- Call ID: a69a2f97-cfa2-424b-86bb-879ac013ce99
+    source: :George_Mountbatten
+  AssignClass (170562da-369f-4693-8945-29f2bc75f411)
+ Call ID: 170562da-369f-4693-8945-29f2bc75f411
   Args:
-    source: George_Mountbatten
     type: :Person
-  AddTriple (a96b1432-c4b9-4449-aa70-8652056617d3)
- Call ID: a96b1432-c4b9-4449-aa70-8652056617d3
+    source: :George_Mountbatten
+  AddTriple (61a503f9-4b8a-40e2-bae8-bb316243cf28)
+ Call ID: 61a503f9-4b8a-40e2-bae8-bb316243cf28
   Args:
-    source: Louis_Mountbatten
-    relation: :isSiblingOf
-    target: Princess_Alice_of_Battenberg
-  AddTriple (6865cee0-b294-482e-af36-2c4d590bc2b7)
- Call ID: 6865cee0-b294-482e-af36-2c4d590bc2b7
+    target: :George_Mountbatten
+    source: :Louis_Mountbatten
+    relation: :hasBrother
+  AssignClass (c9de8374-83b0-4c50-82cf-6c7c0d355895)
+ Call ID: c9de8374-83b0-4c50-82cf-6c7c0d355895
   Args:
-    source: Louis_Mountbatten
-    relation: :isSiblingOf
-    target: Princess_Louise_of_Battenberg
-  AddTriple (1cbb3fc5-bce3-4959-be95-c3f850f709eb)
- Call ID: 1cbb3fc5-bce3-4959-be95-c3f850f709eb
-  Args:
-    relation: :isSiblingOf
-    source: Louis_Mountbatten
-    target: George_Mountbatten
-  AssignClass (8b0bd1a2-e8b0-4cdb-a7a1-04938c53170c)
- Call ID: 8b0bd1a2-e8b0-4cdb-a7a1-04938c53170c
-  Args:
-    source: Edwina_Ashley
+    source: :Edwina_Ashley
     type: :Woman
-  AssignClass (6b03e3f0-2e1a-4582-b5b9-f1f9959c4667)
- Call ID: 6b03e3f0-2e1a-4582-b5b9-f1f9959c4667
+  AssignClass (12e4150c-020c-4201-9c54-1c5edf1735d6)
+ Call ID: 12e4150c-020c-4201-9c54-1c5edf1735d6
   Args:
-    source: Edwina_Ashley
     type: :Person
-  AddLiteral (98a92ad6-5d11-444b-90c4-a46d7ab93abd)
- Call ID: 98a92ad6-5d11-444b-90c4-a46d7ab93abd
+    source: :Edwina_Ashley
+  AddLiteral (11a1a520-5009-41b5-92df-c94bb7f2f62b)
+ Call ID: 11a1a520-5009-41b5-92df-c94bb7f2f62b
   Args:
-    literal_type: xsd:integer
     literal_value: 1922
-    source: Louis_Mountbatten
     relation: :hasMarriageYear
-  AddTriple (18cce44f-cdd1-47c2-a671-7601d0dc4088)
- Call ID: 18cce44f-cdd1-47c2-a671-7601d0dc4088
+    source: :Louis_Mountbatten
+    literal_type: xsd:integer
+  AddTriple (08bf3658-07ea-4804-a274-b32e96596ade)
+ Call ID: 08bf3658-07ea-4804-a274-b32e96596ade
   Args:
-    target: Edwina_Ashley
+    source: :Louis_Mountbatten
+    target: :Edwina_Ashley
     relation: :hasRelation
-    source: Louis_Mountbatten
-  AssignClass (43a4b16b-7443-47da-a08d-b2acad31c315)
- Call ID: 43a4b16b-7443-47da-a08d-b2acad31c315
+  AssignClass (3712ad3e-0fdd-4a44-a31a-45dd02e4b683)
+ Call ID: 3712ad3e-0fdd-4a44-a31a-45dd02e4b683
   Args:
+    source: :Patricia_Knatchbull
     type: :Woman
-    source: Patricia_Knatchbull
-  AssignClass (608f84f3-d3ce-4455-9627-0ef3666b0e9c)
- Call ID: 608f84f3-d3ce-4455-9627-0ef3666b0e9c
+  AssignClass (36c08c1d-a848-477c-b69a-a2e23f18b728)
+ Call ID: 36c08c1d-a848-477c-b69a-a2e23f18b728
   Args:
     type: :Person
-    source: Patricia_Knatchbull
-  AssignClass (dc815931-ec41-4488-8ef4-a8fdbe5f4b87)
- Call ID: dc815931-ec41-4488-8ef4-a8fdbe5f4b87
+    source: :Patricia_Knatchbull
+  AddTriple (8e5b87b8-58db-487c-84f2-28dffb59b233)
+ Call ID: 8e5b87b8-58db-487c-84f2-28dffb59b233
+  Args:
+    relation: :hasDaughter
+    target: :Patricia_Knatchbull
+    source: :Louis_Mountbatten
+  AssignClass (09a9c9cc-f401-495a-b515-d9a04cb95404)
+ Call ID: 09a9c9cc-f401-495a-b515-d9a04cb95404
   Args:
     type: :Woman
-    source: Lady_Pamela_Hicks
-  AssignClass (09dfef2a-969a-4d10-ac13-77362cdbef9f)
- Call ID: 09dfef2a-969a-4d10-ac13-77362cdbef9f
+    source: :Pamela_Hicks
+  AssignClass (1a6ccded-13f3-40dc-a132-cc06681fc10b)
+ Call ID: 1a6ccded-13f3-40dc-a132-cc06681fc10b
   Args:
-    source: Lady_Pamela_Hicks
     type: :Person
-  AddTriple (57ab9995-76c1-4d3e-bdf8-c12d7648f68b)
- Call ID: 57ab9995-76c1-4d3e-bdf8-c12d7648f68b
+    source: :Pamela_Hicks
+  AddTriple (ab5741b1-f323-418c-b54f-05541f503a12)
+ Call ID: ab5741b1-f323-418c-b54f-05541f503a12
   Args:
-    source: Louis_Mountbatten
+    target: :Pamela_Hicks
+    source: :Louis_Mountbatten
     relation: :hasDaughter
-    target: Patricia_Knatchbull
-  AddTriple (e84fb923-661d-42dc-a6c1-783adc1b21b2)
- Call ID: e84fb923-661d-42dc-a6c1-783adc1b21b2
+  AssignClass (0fbf2c36-e0a9-4577-b167-feddf7e7ef7e)
+ Call ID: 0fbf2c36-e0a9-4577-b167-feddf7e7ef7e
   Args:
-    source: Louis_Mountbatten
-    relation: :hasDaughter
-    target: Lady_Pamela_Hicks
-  AddTriple (956a3497-c43b-4e08-8e38-967444ddda70)
- Call ID: 956a3497-c43b-4e08-8e38-967444ddda70
+    type: :Man
+    source: :Prince_Philip
+  AssignClass (4b43692e-00d1-4680-89bb-7a2e993441e3)
+ Call ID: 4b43692e-00d1-4680-89bb-7a2e993441e3
   Args:
-    target: Edwina_Ashley
+    source: :Prince_Philip
+    type: :Person
+  AddTriple (cc1f0ceb-283a-4bd9-a419-c64c37b8bfd9)
+ Call ID: cc1f0ceb-283a-4bd9-a419-c64c37b8bfd9
+  Args:
+    relation: :isFatherOf
+    source: :Alice_of_Battenberg
+    target: :Prince_Philip
+  AssignClass (88749ef5-0c1c-4773-a360-16969ea039c5)
+ Call ID: 88749ef5-0c1c-4773-a360-16969ea039c5
+  Args:
+    source: :Louis_IV_Grand_Duke_of_Hesse
+    type: :Man
+  AssignClass (3c2ae2bf-6b5d-4da1-8cf7-a4ed5286d1f8)
+ Call ID: 3c2ae2bf-6b5d-4da1-8cf7-a4ed5286d1f8
+  Args:
+    type: :Person
+    source: :Louis_IV_Grand_Duke_of_Hesse
+  AssignClass (512c2996-7c50-4b43-8a27-4d15d40f73b6)
+ Call ID: 512c2996-7c50-4b43-8a27-4d15d40f73b6
+  Args:
+    type: :Woman
+    source: :Princess_Alice_of_the_United_Kingdom
+  AssignClass (520d790f-9fb6-451a-a7ba-d31c2ac5a724)
+ Call ID: 520d790f-9fb6-451a-a7ba-d31c2ac5a724
+  Args:
+    source: :Princess_Alice_of_the_United_Kingdom
+    type: :Person
+  AddTriple (9111a2df-f55d-43f1-9ed7-5fc32ec0377e)
+ Call ID: 9111a2df-f55d-43f1-9ed7-5fc32ec0377e
+  Args:
+    source: :Princess_Victoria_of_Hesse_and_by_Rhine
+    target: :Louis_IV_Grand_Duke_of_Hesse
+    relation: :hasFather
+  AddTriple (57b687ce-ed1a-48a3-8234-dc5b93221d15)
+ Call ID: 57b687ce-ed1a-48a3-8234-dc5b93221d15
+  Args:
+    target: :Princess_Alice_of_the_United_Kingdom
+    source: :Princess_Victoria_of_Hesse_and_by_Rhine
     relation: :hasMother
-    source: Patricia_Knatchbull
-  AddTriple (606489cb-ce19-4888-b54c-88344b22bffe)
- Call ID: 606489cb-ce19-4888-b54c-88344b22bffe
+  AssignClass (1513598e-9569-4cba-bc5f-590e35ae8bfd)
+ Call ID: 1513598e-9569-4cba-bc5f-590e35ae8bfd
   Args:
-    target: Edwina_Ashley
+    type: :Woman
+    source: :Queen_Victoria
+  AssignClass (e7461e47-9514-4899-8e89-4c756560aff8)
+ Call ID: e7461e47-9514-4899-8e89-4c756560aff8
+  Args:
+    source: :Queen_Victoria
+    type: :Person
+  AddTriple (50d096ef-5a34-41aa-912e-15be042b7be2)
+ Call ID: 50d096ef-5a34-41aa-912e-15be042b7be2
+  Args:
     relation: :hasMother
-    source: Lady_Pamela_Hicks
-  Finish (88742508-beb6-4b99-9c17-acebb422a633)
- Call ID: 88742508-beb6-4b99-9c17-acebb422a633
+    target: :Queen_Victoria
+    source: :Princess_Alice_of_the_United_Kingdom
+  AssignClass (cc2b1fea-0f2e-4cd4-aa6b-6a873efe8af7)
+ Call ID: cc2b1fea-0f2e-4cd4-aa6b-6a873efe8af7
   Args:
+    source: :Prince_Albert_of_Saxe-Coburg_and_Gotha
+    type: :Man
+  AssignClass (a322f5e2-0941-4206-a4c9-66bc3117a93d)
+ Call ID: a322f5e2-0941-4206-a4c9-66bc3117a93d
+  Args:
+    source: :Prince_Albert_of_Saxe-Coburg_and_Gotha
+    type: :Person
+  AddTriple (33afdc65-306c-436a-971f-3b94a2b7a116)
+ Call ID: 33afdc65-306c-436a-971f-3b94a2b7a116
+  Args:
+    source: :Princess_Alice_of_the_United_Kingdom
+    target: :Prince_Albert_of_Saxe-Coburg_and_Gotha
+    relation: :hasFather
+  AssignClass (459f17c0-1cc8-40b5-9791-5d052ba40581)
+ Call ID: 459f17c0-1cc8-40b5-9791-5d052ba40581
+  Args:
+    source: :Prince_Alexander_of_Hesse_and_by_Rhine
+    type: :Man
+  AssignClass (5b523fa7-d9a7-4c01-838f-751a035f953c)
+ Call ID: 5b523fa7-d9a7-4c01-838f-751a035f953c
+  Args:
+    type: :Person
+    source: :Prince_Alexander_of_Hesse_and_by_Rhine
+  AssignClass (4635d4ed-8445-479a-95f9-fae202c1e3ba)
+ Call ID: 4635d4ed-8445-479a-95f9-fae202c1e3ba
+  Args:
+    type: :Woman
+    source: :Julia_Princess_of_Battenberg
+  AssignClass (def1fa9c-9ff9-4fc6-94f0-646e282d1060)
+ Call ID: def1fa9c-9ff9-4fc6-94f0-646e282d1060
+  Args:
+    type: :Person
+    source: :Julia_Princess_of_Battenberg
+  AddTriple (809709b2-69ca-47a3-931e-4a24aebf5ac4)
+ Call ID: 809709b2-69ca-47a3-931e-4a24aebf5ac4
+  Args:
+    target: :Prince_Alexander_of_Hesse_and_by_Rhine
+    source: :Prince_Louis_of_Battenberg
+    relation: :hasFather
+  AddTriple (1cf633e3-1adc-4592-a339-8e08618ad47b)
+ Call ID: 1cf633e3-1adc-4592-a339-8e08618ad47b
+  Args:
+    relation: :hasMother
+    source: :Prince_Louis_of_Battenberg
+    target: :Julia_Princess_of_Battenberg
+  AssignClass (4dd2a21b-e476-4cbd-b5b6-3e75efeccc69)
+ Call ID: 4dd2a21b-e476-4cbd-b5b6-3e75efeccc69
+  Args:
+    source: :Wilfred_William_Ashley
+    type: :Man
+  AssignClass (e71215e4-3597-4651-93b5-2db5847eaa48)
+ Call ID: e71215e4-3597-4651-93b5-2db5847eaa48
+  Args:
+    type: :Person
+    source: :Wilfred_William_Ashley
+  AddTriple (1ef595fd-f35d-4fdc-91c9-99301e21fca7)
+ Call ID: 1ef595fd-f35d-4fdc-91c9-99301e21fca7
+  Args:
+    source: :Edwina_Ashley
+    target: :Wilfred_William_Ashley
+    relation: :hasFather
+  Finish (d0da7d8f-e830-4ce8-8a8f-fde8fbaf3bbb)
+ Call ID: d0da7d8f-e830-4ce8-8a8f-fde8fbaf3bbb
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -956,44 +1259,75 @@ The final data graph after all the edits:
 
   data:Louis_Mountbatten a :Man,
           :Person ;
+      :alsoKnownAs "Dickie"^^xsd:string ;
       :hasBirthYear 1900 ;
-      :hasDaughter data:Lady_Pamela_Hicks,
+      :hasBrother data:George_Mountbatten ;
+      :hasDaughter data:Pamela_Hicks,
           data:Patricia_Knatchbull ;
       :hasDeathYear 1979 ;
       :hasFather data:Prince_Louis_of_Battenberg ;
       :hasMarriageYear 1922 ;
       :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
       :hasRelation data:Edwina_Ashley ;
-      :isSiblingOf data:George_Mountbatten,
-          data:Princess_Alice_of_Battenberg,
-          data:Princess_Louise_of_Battenberg ;
+      :hasSister data:Alice_of_Battenberg,
+          data:Louise_of_Battenberg ;
       :knownAs "Lord Mountbatten"^^xsd:string .
+
+  data:Alice_of_Battenberg a :Person,
+          :Woman ;
+      :isFatherOf data:Prince_Philip .
+
+  data:Edwina_Ashley a :Person,
+          :Woman ;
+      :hasFather data:Wilfred_William_Ashley .
 
   data:George_Mountbatten a :Man,
           :Person .
 
-  data:Lady_Pamela_Hicks a :Person,
-          :Woman ;
-      :hasMother data:Edwina_Ashley .
+  data:Julia_Princess_of_Battenberg a :Person,
+          :Woman .
 
-  data:Patricia_Knatchbull a :Person,
-          :Woman ;
-      :hasMother data:Edwina_Ashley .
-
-  data:Prince_Louis_of_Battenberg a :Man,
+  data:Louis_IV_Grand_Duke_of_Hesse a :Man,
           :Person .
 
-  data:Princess_Alice_of_Battenberg a :Person,
+  data:Louise_of_Battenberg a :Person,
           :Woman .
 
-  data:Princess_Louise_of_Battenberg a :Person,
+  data:Pamela_Hicks a :Person,
           :Woman .
+
+  data:Patricia_Knatchbull a :Person,
+          :Woman .
+
+  data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Man,
+          :Person .
+
+  data:Prince_Alexander_of_Hesse_and_by_Rhine a :Man,
+          :Person .
+
+  data:Prince_Louis_of_Battenberg a :Man,
+          :Person ;
+      :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+      :hasMother data:Julia_Princess_of_Battenberg .
+
+  data:Prince_Philip a :Man,
+          :Person .
+
+  data:Princess_Alice_of_the_United_Kingdom a :Person,
+          :Woman ;
+      :hasFather data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+      :hasMother data:Queen_Victoria .
 
   data:Princess_Victoria_of_Hesse_and_by_Rhine a :Person,
+          :Woman ;
+      :hasFather data:Louis_IV_Grand_Duke_of_Hesse ;
+      :hasMother data:Princess_Alice_of_the_United_Kingdom .
+
+  data:Queen_Victoria a :Person,
           :Woman .
 
-  data:Edwina_Ashley a :Person,
-          :Woman .
+  data:Wilfred_William_Ashley a :Man,
+          :Person .
 
 
 
@@ -1005,110 +1339,246 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (dfe46415-e831-4f81-920e-1bc4e51668b9)
- Call ID: dfe46415-e831-4f81-920e-1bc4e51668b9
+  ValidateShacl (425508ea-cce2-45f4-97f0-4f1e672acba1)
+ Call ID: 425508ea-cce2-45f4-97f0-4f1e672acba1
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:29
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Louis_of_Battenberg, assigned as the father of Louis_Mountbatten, lacks the required class :Man or :Ancestor.
+      The value node Prince_Alexander_of_Hesse_and_by_Rhine is not assigned the required classes :Ancestor and :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Louis_of_Battenberg, :Man)
+      AssignClass(Prince_Alexander_of_Hesse_and_by_Rhine, :Ancestor); AssignClass(Prince_Alexander_of_Hesse_and_by_Rhine, :Man)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Princess_Victoria_of_Hesse_and_by_Rhine, assigned as the mother of Louis_Mountbatten, lacks the required class :Woman or :Ancestor.
+      The value node Prince_Louis_of_Battenberg is not assigned the required classes :Ancestor and :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Victoria_of_Hesse_and_by_Rhine, :Woman)
+      AssignClass(Prince_Louis_of_Battenberg, :Ancestor); AssignClass(Prince_Louis_of_Battenberg, :Man)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Prince_Louis_of_Battenberg, assigned as the father of Louis_Mountbatten, lacks the required class :Man or :Ancestor.
+      The value node Julia_Princess_of_Battenberg is not assigned the required classes :Ancestor and :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Louis_of_Battenberg, :Man)
+      AssignClass(Julia_Princess_of_Battenberg, :Ancestor); AssignClass(Julia_Princess_of_Battenberg, :Woman)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Victoria_of_Hesse_and_by_Rhine, assigned as the mother of Louis_Mountbatten, lacks the required class :Woman or :Ancestor.
+      The value node Princess_Victoria_of_Hesse_and_by_Rhine is not assigned the required classes :Ancestor and :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Victoria_of_Hesse_and_by_Rhine, :Woman)
+      AssignClass(Princess_Victoria_of_Hesse_and_by_Rhine, :Ancestor); AssignClass(Princess_Victoria_of_Hesse_and_by_Rhine, :Woman)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Edwina_Ashley, assigned as the mother of Lady_Pamela_Hicks, lacks the required class :Woman or :Ancestor.
+      The value node Wilfred_William_Ashley is not assigned the required classes :Ancestor and :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edwina_Ashley, :Woman)
+      AssignClass(Wilfred_William_Ashley, :Ancestor); AssignClass(Wilfred_William_Ashley, :Man)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Edwina_Ashley, assigned as the mother of Patricia_Knatchbull, lacks the required class :Woman or :Ancestor.
+      The value node Prince_Louis_of_Battenberg is not assigned the required classes :Ancestor and :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edwina_Ashley, :Woman)
+      AssignClass(Prince_Louis_of_Battenberg, :Ancestor); AssignClass(Prince_Louis_of_Battenberg, :Man)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Louis_of_Battenberg, assigned as the father of Louis_Mountbatten, lacks the required class :Man or :Ancestor.
+      The value node Prince_Alexander_of_Hesse_and_by_Rhine is not assigned the required classes :Ancestor and :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Louis_of_Battenberg, :Man)
+      AssignClass(Prince_Alexander_of_Hesse_and_by_Rhine, :Ancestor); AssignClass(Prince_Alexander_of_Hesse_and_by_Rhine, :Man)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Edwina_Ashley, assigned as the mother of Patricia_Knatchbull, lacks the required class :Woman or :Ancestor.
+      The value node Prince_Albert_of_Saxe-Coburg_and_Gotha is not assigned the required classes :Ancestor and :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edwina_Ashley, :Woman)
+      AssignClass(Prince_Albert_of_Saxe-Coburg_and_Gotha, :Ancestor); AssignClass(Prince_Albert_of_Saxe-Coburg_and_Gotha, :Man)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Princess_Victoria_of_Hesse_and_by_Rhine, assigned as the mother of Louis_Mountbatten, lacks the required class :Woman or :Ancestor.
+      The value node Louis_IV_Grand_Duke_of_Hesse is not assigned the required classes :Ancestor and :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Victoria_of_Hesse_and_by_Rhine, :Woman)
+      AssignClass(Louis_IV_Grand_Duke_of_Hesse, :Ancestor); AssignClass(Louis_IV_Grand_Duke_of_Hesse, :Man)
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Edwina_Ashley, assigned as the mother of Lady_Pamela_Hicks, lacks the required class :Woman or :Ancestor.
+      The value node Princess_Victoria_of_Hesse_and_by_Rhine is not assigned the required classes :Ancestor and :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edwina_Ashley, :Woman)
+      AssignClass(Princess_Victoria_of_Hesse_and_by_Rhine, :Ancestor); AssignClass(Princess_Victoria_of_Hesse_and_by_Rhine, :Woman)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Edwina_Ashley, assigned as the mother of Patricia_Knatchbull, lacks the required class :Woman or :Ancestor.
+      The value node Julia_Princess_of_Battenberg is not assigned the required classes :Ancestor and :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edwina_Ashley, :Woman)
+      AssignClass(Julia_Princess_of_Battenberg, :Ancestor); AssignClass(Julia_Princess_of_Battenberg, :Woman)
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Edwina_Ashley, assigned as the mother of Lady_Pamela_Hicks, lacks the required class :Woman or :Ancestor.
+      The value node Queen_Victoria is not assigned the required classes :Ancestor and :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Edwina_Ashley, :Woman)
+      AssignClass(Queen_Victoria, :Ancestor); AssignClass(Queen_Victoria, :Woman)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Alice_of_the_United_Kingdom is not assigned the required classes :Ancestor and :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Alice_of_the_United_Kingdom, :Ancestor); AssignClass(Princess_Alice_of_the_United_Kingdom, :Woman)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Wilfred_William_Ashley is not assigned the required classes :Ancestor and :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Wilfred_William_Ashley, :Ancestor); AssignClass(Wilfred_William_Ashley, :Man)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Louis_of_Battenberg is not assigned the required classes :Ancestor and :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Louis_of_Battenberg, :Ancestor); AssignClass(Prince_Louis_of_Battenberg, :Man)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Alexander_of_Hesse_and_by_Rhine is not assigned the required classes :Ancestor and :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Alexander_of_Hesse_and_by_Rhine, :Ancestor); AssignClass(Prince_Alexander_of_Hesse_and_by_Rhine, :Man)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Albert_of_Saxe-Coburg_and_Gotha is not assigned the required classes :Ancestor and :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Albert_of_Saxe-Coburg_and_Gotha, :Ancestor); AssignClass(Prince_Albert_of_Saxe-Coburg_and_Gotha, :Man)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Louis_IV_Grand_Duke_of_Hesse is not assigned the required classes :Ancestor and :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louis_IV_Grand_Duke_of_Hesse, :Ancestor); AssignClass(Louis_IV_Grand_Duke_of_Hesse, :Man)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Victoria_of_Hesse_and_by_Rhine is not assigned the required classes :Ancestor and :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Victoria_of_Hesse_and_by_Rhine, :Ancestor); AssignClass(Princess_Victoria_of_Hesse_and_by_Rhine, :Woman)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Julia_Princess_of_Battenberg is not assigned the required classes :Ancestor and :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Julia_Princess_of_Battenberg, :Ancestor); AssignClass(Julia_Princess_of_Battenberg, :Woman)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Queen_Victoria is not assigned the required classes :Ancestor and :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Victoria, :Ancestor); AssignClass(Queen_Victoria, :Woman)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Alice_of_the_United_Kingdom is not assigned the required classes :Ancestor and :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Alice_of_the_United_Kingdom, :Ancestor); AssignClass(Princess_Alice_of_the_United_Kingdom, :Woman)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Wilfred_William_Ashley is not assigned the required classes :Ancestor and :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Wilfred_William_Ashley, :Ancestor); AssignClass(Wilfred_William_Ashley, :Man)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Prince_Albert_of_Saxe-Coburg_and_Gotha is not assigned the required classes :Ancestor and :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Prince_Albert_of_Saxe-Coburg_and_Gotha, :Ancestor); AssignClass(Prince_Albert_of_Saxe-Coburg_and_Gotha, :Man)
+
+
+  Violation [25]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Louis_IV_Grand_Duke_of_Hesse is not assigned the required classes :Ancestor and :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Louis_IV_Grand_Duke_of_Hesse, :Ancestor); AssignClass(Louis_IV_Grand_Duke_of_Hesse, :Man)
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Queen_Victoria is not assigned the required classes :Ancestor and :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Victoria, :Ancestor); AssignClass(Queen_Victoria, :Woman)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Princess_Alice_of_the_United_Kingdom is not assigned the required classes :Ancestor and :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Alice_of_the_United_Kingdom, :Ancestor); AssignClass(Princess_Alice_of_the_United_Kingdom, :Woman)
+
+
+  Violation [28]:
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    LLM-provided explanation of the violation:
+      The focus node Alice_of_Battenberg is a subject of :isFatherOf but is not assigned the required classes :Ancestor and :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alice_of_Battenberg, :Ancestor); AssignClass(Alice_of_Battenberg, :Man)
+
+
+  Violation [29]:
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    LLM-provided explanation of the violation:
+      The focus node Alice_of_Battenberg is a subject of :isFatherOf but is not assigned the required classes :Ancestor and :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alice_of_Battenberg, :Ancestor); AssignClass(Alice_of_Battenberg, :Man)
 
 
 
@@ -1117,24 +1587,186 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (ed5d3b39-3615-40eb-896e-fbcbb5966ca9)
- Call ID: ed5d3b39-3615-40eb-896e-fbcbb5966ca9
+  AssignClass (809e204d-92e2-41df-905d-3e11038d3fff)
+ Call ID: 809e204d-92e2-41df-905d-3e11038d3fff
   Args:
-    source: Prince_Louis_of_Battenberg
+    source: :Prince_Alexander_of_Hesse_and_by_Rhine
     type: :Ancestor
-  AssignClass (5e55984e-81e4-45f2-82fd-f2faf7d9a260)
- Call ID: 5e55984e-81e4-45f2-82fd-f2faf7d9a260
+  AssignClass (23d7806d-c3c7-46f7-9709-7fcd6a84b67c)
+ Call ID: 23d7806d-c3c7-46f7-9709-7fcd6a84b67c
   Args:
-    source: Princess_Victoria_of_Hesse_and_by_Rhine
+    source: :Prince_Alexander_of_Hesse_and_by_Rhine
+    type: :Man
+  AssignClass (ebb42c6f-ea5b-4e43-890c-46a8325293bc)
+ Call ID: ebb42c6f-ea5b-4e43-890c-46a8325293bc
+  Args:
+    source: :Prince_Louis_of_Battenberg
     type: :Ancestor
-  AssignClass (07b7870f-497d-4b51-8b07-bf58056f1241)
- Call ID: 07b7870f-497d-4b51-8b07-bf58056f1241
+  AssignClass (f94df06f-3235-4799-8160-c08e4bf3b4cc)
+ Call ID: f94df06f-3235-4799-8160-c08e4bf3b4cc
   Args:
-    source: Edwina_Ashley
+    source: :Prince_Louis_of_Battenberg
+    type: :Man
+  AssignClass (33161c33-60e4-4d58-83a8-023dd70155fd)
+ Call ID: 33161c33-60e4-4d58-83a8-023dd70155fd
+  Args:
+    source: :Julia_Princess_of_Battenberg
     type: :Ancestor
-  Finish (5e45bdf7-a14f-4078-b415-bfc50485d02e)
- Call ID: 5e45bdf7-a14f-4078-b415-bfc50485d02e
+  AssignClass (1eb56d45-275c-4da8-a1af-a70cd43f7aaf)
+ Call ID: 1eb56d45-275c-4da8-a1af-a70cd43f7aaf
   Args:
+    source: :Julia_Princess_of_Battenberg
+    type: :Woman
+  AssignClass (12be942d-37ca-4cbc-a888-5ae06c3aaa05)
+ Call ID: 12be942d-37ca-4cbc-a888-5ae06c3aaa05
+  Args:
+    source: :Princess_Victoria_of_Hesse_and_by_Rhine
+    type: :Ancestor
+  AssignClass (1cf726f0-da9e-4a9d-a955-1323a35cc336)
+ Call ID: 1cf726f0-da9e-4a9d-a955-1323a35cc336
+  Args:
+    source: :Princess_Victoria_of_Hesse_and_by_Rhine
+    type: :Woman
+  AssignClass (51fbe13d-4143-4621-a0b8-6a762ddf2715)
+ Call ID: 51fbe13d-4143-4621-a0b8-6a762ddf2715
+  Args:
+    source: :Wilfred_William_Ashley
+    type: :Ancestor
+  AssignClass (3f18a707-64e6-4d7a-b4eb-b27dbd1ade72)
+ Call ID: 3f18a707-64e6-4d7a-b4eb-b27dbd1ade72
+  Args:
+    source: :Wilfred_William_Ashley
+    type: :Man
+  AssignClass (55290605-d830-4119-9d2d-6717e65b77d2)
+ Call ID: 55290605-d830-4119-9d2d-6717e65b77d2
+  Args:
+    source: :Prince_Albert_of_Saxe-Coburg_and_Gotha
+    type: :Ancestor
+  AssignClass (67571510-8825-411d-9a90-51082627fd76)
+ Call ID: 67571510-8825-411d-9a90-51082627fd76
+  Args:
+    source: :Prince_Albert_of_Saxe-Coburg_and_Gotha
+    type: :Man
+  AssignClass (35157101-2e18-430d-ad75-01dfe5fdc592)
+ Call ID: 35157101-2e18-430d-ad75-01dfe5fdc592
+  Args:
+    source: :Louis_IV_Grand_Duke_of_Hesse
+    type: :Ancestor
+  AssignClass (2d287230-736d-41e5-a699-ff1de047b04e)
+ Call ID: 2d287230-736d-41e5-a699-ff1de047b04e
+  Args:
+    source: :Louis_IV_Grand_Duke_of_Hesse
+    type: :Man
+  AssignClass (0d9a894d-d8d1-4888-b3e1-cedecc258d68)
+ Call ID: 0d9a894d-d8d1-4888-b3e1-cedecc258d68
+  Args:
+    source: :Queen_Victoria
+    type: :Ancestor
+  AssignClass (b632fd4f-0639-4302-b53e-2028f1a6661d)
+ Call ID: b632fd4f-0639-4302-b53e-2028f1a6661d
+  Args:
+    source: :Queen_Victoria
+    type: :Woman
+  AssignClass (b249fefd-460c-4ed3-813c-c3ef6ac3391d)
+ Call ID: b249fefd-460c-4ed3-813c-c3ef6ac3391d
+  Args:
+    source: :Princess_Alice_of_the_United_Kingdom
+    type: :Ancestor
+  AssignClass (79fd9c1d-708c-4053-8f5a-068b24fddc94)
+ Call ID: 79fd9c1d-708c-4053-8f5a-068b24fddc94
+  Args:
+    source: :Princess_Alice_of_the_United_Kingdom
+    type: :Woman
+  AssignClass (428f5183-f480-4af9-9f38-9e6b3ce297cd)
+ Call ID: 428f5183-f480-4af9-9f38-9e6b3ce297cd
+  Args:
+    source: :Alice_of_Battenberg
+    type: :Ancestor
+  AssignClass (e5e88048-ecb8-40c6-99d3-ee03117b7428)
+ Call ID: e5e88048-ecb8-40c6-99d3-ee03117b7428
+  Args:
+    source: :Alice_of_Battenberg
+    type: :Man
+  AssignClass (5ffc646b-d52f-4cef-8ac6-6563932a108d)
+ Call ID: 5ffc646b-d52f-4cef-8ac6-6563932a108d
+  Args:
+    source: :Alice_of_Battenberg
+    type: :Woman
+  Finish (967a9ec7-1e7d-498b-9adb-df4a18dec571)
+ Call ID: 967a9ec7-1e7d-498b-9adb-df4a18dec571
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1153,47 +1785,86 @@ The final data graph after all the edits:
 
   data:Louis_Mountbatten a :Man,
           :Person ;
+      :alsoKnownAs "Dickie"^^xsd:string ;
       :hasBirthYear 1900 ;
-      :hasDaughter data:Lady_Pamela_Hicks,
+      :hasBrother data:George_Mountbatten ;
+      :hasDaughter data:Pamela_Hicks,
           data:Patricia_Knatchbull ;
       :hasDeathYear 1979 ;
       :hasFather data:Prince_Louis_of_Battenberg ;
       :hasMarriageYear 1922 ;
       :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
       :hasRelation data:Edwina_Ashley ;
-      :isSiblingOf data:George_Mountbatten,
-          data:Princess_Alice_of_Battenberg,
-          data:Princess_Louise_of_Battenberg ;
+      :hasSister data:Alice_of_Battenberg,
+          data:Louise_of_Battenberg ;
       :knownAs "Lord Mountbatten"^^xsd:string .
+
+  data:Alice_of_Battenberg a :Ancestor,
+          :Man,
+          :Person,
+          :Woman ;
+      :isFatherOf data:Prince_Philip .
+
+  data:Edwina_Ashley a :Person,
+          :Woman ;
+      :hasFather data:Wilfred_William_Ashley .
 
   data:George_Mountbatten a :Man,
           :Person .
 
-  data:Lady_Pamela_Hicks a :Person,
-          :Woman ;
-      :hasMother data:Edwina_Ashley .
+  data:Julia_Princess_of_Battenberg a :Ancestor,
+          :Person,
+          :Woman .
 
-  data:Patricia_Knatchbull a :Person,
-          :Woman ;
-      :hasMother data:Edwina_Ashley .
-
-  data:Prince_Louis_of_Battenberg a :Ancestor,
+  data:Louis_IV_Grand_Duke_of_Hesse a :Ancestor,
           :Man,
           :Person .
 
-  data:Princess_Alice_of_Battenberg a :Person,
+  data:Louise_of_Battenberg a :Person,
           :Woman .
 
-  data:Princess_Louise_of_Battenberg a :Person,
+  data:Pamela_Hicks a :Person,
           :Woman .
+
+  data:Patricia_Knatchbull a :Person,
+          :Woman .
+
+  data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_Louis_of_Battenberg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+      :hasMother data:Julia_Princess_of_Battenberg .
+
+  data:Prince_Philip a :Man,
+          :Person .
+
+  data:Princess_Alice_of_the_United_Kingdom a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+      :hasMother data:Queen_Victoria .
 
   data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
           :Person,
-          :Woman .
+          :Woman ;
+      :hasFather data:Louis_IV_Grand_Duke_of_Hesse ;
+      :hasMother data:Princess_Alice_of_the_United_Kingdom .
 
-  data:Edwina_Ashley a :Ancestor,
+  data:Queen_Victoria a :Ancestor,
           :Person,
           :Woman .
+
+  data:Wilfred_William_Ashley a :Ancestor,
+          :Man,
+          :Person .
 
 
 
@@ -1205,8 +1876,266 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (0951166d-5c91-495d-86cc-e46ed30bb5be)
- Call ID: 0951166d-5c91-495d-86cc-e46ed30bb5be
+  ValidateShacl (3d51eee8-0cd2-4f8d-af8a-ad21ca585982)
+ Call ID: 3d51eee8-0cd2-4f8d-af8a-ad21ca585982
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:2
+Violations:
+
+  Violation [1]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'Alice_of_Battenberg' is incorrectly assigned both the ':Man' and ':Woman' classes. These classes are disjoint, meaning an individual cannot be both simultaneously.
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove the ':Man' class from 'Alice_of_Battenberg'.
+
+
+  Violation [2]:
+    SHACL message: Class disjointness violation.
+    LLM-provided explanation of the violation:
+      The node 'Alice_of_Battenberg' is currently assigned the class ':Man', which is disjoint with the ':Woman' class. Since Alice is a woman, the ':Man' classification is erroneous.
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove the ':Man' class from 'Alice_of_Battenberg'.
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  UnassignClass (596de7e0-bf81-4404-bc6e-984610a96786)
+ Call ID: 596de7e0-bf81-4404-bc6e-984610a96786
+  Args:
+    type: :Man
+    source: :Alice_of_Battenberg
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Louis_Mountbatten a :Man,
+          :Person ;
+      :alsoKnownAs "Dickie"^^xsd:string ;
+      :hasBirthYear 1900 ;
+      :hasBrother data:George_Mountbatten ;
+      :hasDaughter data:Pamela_Hicks,
+          data:Patricia_Knatchbull ;
+      :hasDeathYear 1979 ;
+      :hasFather data:Prince_Louis_of_Battenberg ;
+      :hasMarriageYear 1922 ;
+      :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+      :hasRelation data:Edwina_Ashley ;
+      :hasSister data:Alice_of_Battenberg,
+          data:Louise_of_Battenberg ;
+      :knownAs "Lord Mountbatten"^^xsd:string .
+
+  data:Alice_of_Battenberg a :Ancestor,
+          :Person,
+          :Woman ;
+      :isFatherOf data:Prince_Philip .
+
+  data:Edwina_Ashley a :Person,
+          :Woman ;
+      :hasFather data:Wilfred_William_Ashley .
+
+  data:George_Mountbatten a :Man,
+          :Person .
+
+  data:Julia_Princess_of_Battenberg a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Louis_IV_Grand_Duke_of_Hesse a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Louise_of_Battenberg a :Person,
+          :Woman .
+
+  data:Pamela_Hicks a :Person,
+          :Woman .
+
+  data:Patricia_Knatchbull a :Person,
+          :Woman .
+
+  data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_Louis_of_Battenberg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+      :hasMother data:Julia_Princess_of_Battenberg .
+
+  data:Prince_Philip a :Man,
+          :Person .
+
+  data:Princess_Alice_of_the_United_Kingdom a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+      :hasMother data:Queen_Victoria .
+
+  data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Louis_IV_Grand_Duke_of_Hesse ;
+      :hasMother data:Princess_Alice_of_the_United_Kingdom .
+
+  data:Queen_Victoria a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Wilfred_William_Ashley a :Ancestor,
+          :Man,
+          :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (b00e02e2-ce5d-41b4-b7f8-727772939ea0)
+ Call ID: b00e02e2-ce5d-41b4-b7f8-727772939ea0
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:1
+Violations:
+
+  Violation [1]:
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    LLM-provided explanation of the violation:
+      The node 'Alice_of_Battenberg' is currently being used as the subject of an ':isFatherOf' relationship, which requires the subject to be classified as both ':Ancestor' and ':Man'. While 'Alice_of_Battenberg' is correctly classified as ':Ancestor', it is incorrectly classified as ':Woman' and lacks the ':Man' classification, creating a logical contradiction.
+    LLM-provided instruction on how to handle the violation:
+      Use UnassignClass to remove ':Woman' from 'Alice_of_Battenberg' and use AssignClass to assign ':Man' to 'Alice_of_Battenberg'.
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (97cd72fa-aee2-4455-9bfd-e64e43e5601c)
+ Call ID: 97cd72fa-aee2-4455-9bfd-e64e43e5601c
+  Args:
+    relation: :isFatherOf
+    source: :Alice_of_Battenberg
+    target: :Prince_Philip
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Louis_Mountbatten a :Man,
+          :Person ;
+      :alsoKnownAs "Dickie"^^xsd:string ;
+      :hasBirthYear 1900 ;
+      :hasBrother data:George_Mountbatten ;
+      :hasDaughter data:Pamela_Hicks,
+          data:Patricia_Knatchbull ;
+      :hasDeathYear 1979 ;
+      :hasFather data:Prince_Louis_of_Battenberg ;
+      :hasMarriageYear 1922 ;
+      :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine ;
+      :hasRelation data:Edwina_Ashley ;
+      :hasSister data:Alice_of_Battenberg,
+          data:Louise_of_Battenberg ;
+      :knownAs "Lord Mountbatten"^^xsd:string .
+
+  data:Prince_Philip a :Man,
+          :Person .
+
+  data:Alice_of_Battenberg a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Edwina_Ashley a :Person,
+          :Woman ;
+      :hasFather data:Wilfred_William_Ashley .
+
+  data:George_Mountbatten a :Man,
+          :Person .
+
+  data:Julia_Princess_of_Battenberg a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Louis_IV_Grand_Duke_of_Hesse a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Louise_of_Battenberg a :Person,
+          :Woman .
+
+  data:Pamela_Hicks a :Person,
+          :Woman .
+
+  data:Patricia_Knatchbull a :Person,
+          :Woman .
+
+  data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_Louis_of_Battenberg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+      :hasMother data:Julia_Princess_of_Battenberg .
+
+  data:Princess_Alice_of_the_United_Kingdom a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+      :hasMother data:Queen_Victoria .
+
+  data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Louis_IV_Grand_Duke_of_Hesse ;
+      :hasMother data:Princess_Alice_of_the_United_Kingdom .
+
+  data:Queen_Victoria a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Wilfred_William_Ashley a :Ancestor,
+          :Man,
+          :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (418f8012-d5f9-4f23-9e51-ad842db7e7ad)
+ Call ID: 418f8012-d5f9-4f23-9e51-ad842db7e7ad
   Args:
 
 ================================= Tool Message =================================
@@ -1217,6 +2146,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (3a8724ec-7ed9-4c34-812e-71ccce8fd4ef)
- Call ID: 3a8724ec-7ed9-4c34-812e-71ccce8fd4ef
+  Finish (d4fd50cd-a31a-4cf2-8d80-177937c60eff)
+ Call ID: d4fd50cd-a31a-4cf2-8d80-177937c60eff
   Args:

@@ -2,30 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Antonia_of_Prussia a :Person,
-        :Woman ;
-    :hasBirthYear 1955 ;
-    :hasChild data:Lady_Charlotte_Wellesley,
-        data:Lady_Mary_Wellesley ;
-    :hasFather data:Prince_Frederick_of_Prussia ;
-    :hasMarriageYear 1977 ;
-    :hasMother data:Lady_Brigid_Guinness ;
-    :hasRelation data:Charles_Wellesley .
+data:Gabriele_Renate_Thyssen a :Woman .
 
-data:Charles_Wellesley a :Man,
-        :Person ;
-    :hasChild data:Lady_Charlotte_Wellesley,
-        data:Lady_Mary_Wellesley .
+data:Karl_Emich_of_Leiningen a :Man ;
+    :alsoKnownAs "Nikolai Kirillovich Romanov"^^xsd:string ;
+    :hasBirthYear 1952 ;
+    :hasChild data:Prince_Emich_Albrecht_Karl_of_Leiningen,
+        data:Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen,
+        data:Princess_Theresa_Anna_Elisabeth_of_Leiningen ;
+    :hasFather data:Emich_7th_Prince_of_Leiningen ;
+    :hasMother data:Duchess_Eilika_of_Oldenburg ;
+    :isBrotherOf data:Andreas_8th_Prince_of_Leiningen .
 
-data:Lady_Brigid_Guinness a :Person,
-        :Woman .
+data:Princess_Margarita_of_Hohenlohe-Oehringen a :Woman .
 
-data:Prince_Frederick_of_Prussia a :Man,
-        :Person .
+data:Andreas_8th_Prince_of_Leiningen a :Man .
 
-data:Lady_Charlotte_Wellesley a :Person,
-        :Woman .
+data:Duchess_Eilika_of_Oldenburg a :Woman .
 
-data:Lady_Mary_Wellesley a :Person,
-        :Woman .
+data:Emich_7th_Prince_of_Leiningen a :Man .
+
+data:Prince_Emich_Albrecht_Karl_of_Leiningen a :Man ;
+    :hasBirthYear 2010 .
+
+data:Princess_Cecilia_Marie_Stephanie_Margarita_of_Leiningen a :Woman ;
+    :hasBirthYear 1988 .
+
+data:Princess_Theresa_Anna_Elisabeth_of_Leiningen a :Woman ;
+    :hasBirthYear 1992 .
 

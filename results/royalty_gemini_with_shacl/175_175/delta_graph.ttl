@@ -2,41 +2,61 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Nixon_McAteer a :Man ;
-    :hasBirthYear 1964 .
+data:Mafalda a :Person,
+        :Woman ;
+    :hasFather data:Kyril .
 
-data:Prince_Radu a :Man .
-
-data:Princess_Elena a :Woman ;
-    :hasBirthYear 1950 ;
-    :hasDaughter data:Elisabeta-Karina ;
-    :hasFather data:King_Michael_I ;
-    :hasMarriageYear 1983,
-        1998 ;
-    :hasMother data:Queen_Anne ;
-    :hasSister data:Princess_Irina,
-        data:Princess_Margareta,
-        data:Princess_Maria,
-        data:Princess_Sophie ;
-    :hasSon data:Prince_Nicholas .
-
-data:Robin_Medforth-Mills a :Man .
-
-data:Elisabeta-Karina a :Woman .
-
-data:King_Michael_I a :Ancestor,
-        :Man .
-
-data:Prince_Nicholas a :Man .
-
-data:Princess_Irina a :Woman .
-
-data:Princess_Margareta a :Woman .
-
-data:Princess_Maria a :Woman .
-
-data:Princess_Sophie a :Woman .
-
-data:Queen_Anne a :Ancestor,
+data:Maria-Olympia a :Person,
         :Woman .
+
+data:Sofia a :Person,
+        :Woman ;
+    :isAuntOf data:Alexia .
+
+data:Alexia a :Person,
+        :Woman ;
+    :hasBirthYear 1965 ;
+    :hasBrother data:Pavlos ;
+    :hasFather data:ConstantineII ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Anne-Marie ;
+    :hasRelation data:CarlosJavierMoralesQuintana,
+        data:FelipeVI ;
+    :hasSister data:Theodora .
+
+data:CarlosJavierMoralesQuintana a :Man,
+        :Person .
+
+data:FelipeVI a :Man,
+        :Person .
+
+data:Ingrid a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Kyril a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Simeon .
+
+data:Pavlos a :Man,
+        :Person ;
+    :hasParent data:Anne-Marie,
+        data:ConstantineII .
+
+data:Simeon a :Ancestor,
+        :Man,
+        :Person .
+
+data:Theodora a :Person,
+        :Woman .
+
+data:Anne-Marie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasMother data:Ingrid .
+
+data:ConstantineII a :Ancestor,
+        :Man,
+        :Person .
 

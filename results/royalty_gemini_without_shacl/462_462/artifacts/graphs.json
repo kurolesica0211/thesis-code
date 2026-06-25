@@ -4,13 +4,20 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Nicholas_Windsor a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasBrother data:Earl_of_St_Andrews ;\n    :hasFather data:Prince_Edward_Duke_of_Kent ;\n    :hasMother data:Katharine_Duchess_of_Kent ;\n    :hasRelation data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski ;\n    :hasSister data:Lady_Helen_Taylor .\n\ndata:Earl_of_St_Andrews a :Man,\n        :Person .\n\ndata:Katharine_Duchess_of_Kent a :Person,\n        :Woman .\n\ndata:Lady_Helen_Taylor a :Person,\n        :Woman .\n\ndata:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski a :Person,\n        :Woman .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lyla_Gilman a :Person,\n        :Woman ;\n    :isDaughterOf data:George_Gilman,\n        data:Rose_Gilman .\n\ndata:Rufus_Gilman a :Man,\n        :Person ;\n    :isSonOf data:George_Gilman,\n        data:Rose_Gilman .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman .\n\ndata:Prince_Richard a :Man,\n        :Person .\n\ndata:Rose_Gilman a :Person,\n        :Woman ;\n    :alsoKnownAs data:Rose_Windsor ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Prince_Richard ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasRelation data:George_Gilman .\n\ndata:George_Gilman a :Man,\n        :Person .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 1,
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lyla_Gilman a :Person,\n        :Woman ;\n    :isDaughterOf data:George_Gilman,\n        data:Rose_Gilman .\n\ndata:Rufus_Gilman a :Man,\n        :Person ;\n    :isSonOf data:George_Gilman,\n        data:Rose_Gilman .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman .\n\ndata:Prince_Richard a :Man,\n        :Person .\n\ndata:Rose_Windsor a :Person,\n        :Woman .\n\ndata:Rose_Gilman a :Person,\n        :Woman ;\n    :alsoKnownAs data:Rose_Windsor ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Prince_Richard ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasRelation data:George_Gilman .\n\ndata:George_Gilman a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 2,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Nicholas_Windsor a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasBrother data:Earl_of_St_Andrews ;\n    :hasFather data:Prince_Edward_Duke_of_Kent ;\n    :hasMother data:Katharine_Duchess_of_Kent ;\n    :hasRelation data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski ;\n    :hasSister data:Lady_Helen_Taylor .\n\ndata:Earl_of_St_Andrews a :Man,\n        :Person .\n\ndata:Katharine_Duchess_of_Kent a :Person,\n        :Woman .\n\ndata:Lady_Helen_Taylor a :Person,\n        :Woman .\n\ndata:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski a :Person,\n        :Woman .\n\ndata:Prince_Edward_Duke_of_Kent a :Man,\n        :Person .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lyla_Gilman a :Person,\n        :Woman ;\n    :isDaughterOf data:George_Gilman,\n        data:Rose_Gilman .\n\ndata:Rufus_Gilman a :Man,\n        :Person ;\n    :isSonOf data:George_Gilman,\n        data:Rose_Gilman .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman .\n\ndata:Prince_Richard a :Man,\n        :Person .\n\ndata:Rose_Windsor a :Person,\n        :Woman .\n\ndata:Rose_Gilman a :Person,\n        :Woman ;\n    :alsoKnownAs data:Rose_Windsor ;\n    :hasBirthYear 1980 ;\n    :hasFather data:Prince_Richard ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasRelation data:George_Gilman .\n\ndata:George_Gilman a :Man,\n        :Person .\n\n"
     }
 ]

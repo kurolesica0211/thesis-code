@@ -7,33 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Felipe_VI_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Felipe VI of Spain" ;
-    data:posIndicesFull "3077:3086" ;
-    data:wdtLink wdt:Q191045 ;
-    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia",
-        "Felipe VI",
-        "Philip John Paul Alphonse of All Saints of Bourbon",
-        "Philip VI of Spain" ;
-    :hasMother data:Queen_Sofía_of_Spain ;
-    :hasParent data:Queen_Sofía_of_Spain ;
-    :hasSex data:male ;
-    :isChildOf data:Queen_Sofía_of_Spain ;
-    :isSonOf data:Queen_Sofía_of_Spain .
-
-data:Princess_Alexia_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Alexia_of_Greece_and_Denmark a :Person ;
     rdfs:label "Princess Alexia of Greece and Denmark" ;
     data:posIndicesFull "0:37",
         "9:37" ;
@@ -66,16 +40,28 @@ data:Princess_Alexia_of_Greece_and_Denmark a :Ancestor,
         "Alexia zu Schleswig-Holstein-Sonderburg-Glücksburg, Crown Princess of Greece",
         "Princess Alexia, Mrs Morales",
         "Princess Alexia, Mrs. Morales" ;
-    :hasFather data:Constantine_II_of_Greece ;
     :hasParent data:Constantine_II_of_Greece ;
-    :hasSex data:female ;
-    :isChildOf data:Constantine_II_of_Greece ;
-    :isDaughterOf data:Constantine_II_of_Greece .
+    :hasSex data:female .
 
-data:Constantine_II_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Queen_Sofía_of_Spain a :Person ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:posIndicesFull "1748:1759",
+        "1748:1768",
+        "3040:3051" ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark",
+        "Queen Sofia of Spain",
+        "Queen Sofía",
+        "Queen Sofía, Queen Consort of Spain" ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Constantine_II_of_Greece a :Person ;
     rdfs:label "Constantine II of Greece" ;
     data:posIndicesFull "134:148",
         "455:471",
@@ -95,36 +81,9 @@ data:Constantine_II_of_Greece a :Ancestor,
         "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
         "Konstantínos 2",
         "Konstantínos II" ;
-    :hasChild data:Princess_Alexia_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Alexia_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :hasSister data:Queen_Sofía_of_Spain ;
-    :isBrotherOf data:Queen_Sofía_of_Spain ;
-    :isFatherOf data:Princess_Alexia_of_Greece_and_Denmark ;
-    :isParentOf data:Princess_Alexia_of_Greece_and_Denmark ;
-    :isSiblingOf data:Queen_Sofía_of_Spain ;
-    :isUncleOf data:Felipe_VI_of_Spain .
+    :hasSex data:male .
 
-data:Queen_Sofía_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Sofía of Spain" ;
-    data:posIndicesFull "1748:1759",
-        "1748:1768",
-        "3040:3051" ;
-    data:wdtLink wdt:Q156548 ;
-    :alsoKnownAs "Princess Sophia of Greece and Denmark",
-        "Queen Sofia of Spain",
-        "Queen Sofía",
-        "Queen Sofía, Queen Consort of Spain" ;
-    :hasBrother data:Constantine_II_of_Greece ;
-    :hasChild data:Felipe_VI_of_Spain ;
-    :hasSex data:female ;
-    :hasSon data:Felipe_VI_of_Spain ;
-    :isAuntOf data:Princess_Alexia_of_Greece_and_Denmark ;
-    :isMotherOf data:Felipe_VI_of_Spain ;
-    :isParentOf data:Felipe_VI_of_Spain ;
-    :isSiblingOf data:Constantine_II_of_Greece ;
-    :isSisterOf data:Constantine_II_of_Greece .
+data:male a :Male .
+
+data:female a :Female .
 

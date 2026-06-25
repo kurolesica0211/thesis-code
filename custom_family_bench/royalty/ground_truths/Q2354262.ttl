@@ -7,245 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Christopher of Greece and Denmark" ;
-    data:posIndicesFull "1989:1998" ;
-    data:posIndicesPart "2216:2222" ;
-    data:wdtLink wdt:Q447757 ;
-    :alsoKnownAs "Christo",
-        "Prince Christophoros of Greece and Denmark" ;
-    :hasBrother data:Prince_Andrew_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark ;
-    :isSiblingOf data:Prince_Andrew_of_Greece_and_Denmark ;
-    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Cecilie_of_Greece_and_Denmark .
-
-data:Georg_Donatus-_Hereditary_Grand_Duke_of_Hesse a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Georg Donatus, Hereditary Grand Duke of Hesse" ;
-    data:posIndicesFull "0:45" ;
-    data:posIndicesPart "1045:1050",
-        "1051:1058",
-        "1123:1128",
-        "1129:1136",
-        "1147:1152",
-        "1153:1157",
-        "1174:1179",
-        "1300:1305",
-        "1306:1313",
-        "1346:1351",
-        "1352:1359",
-        "1370:1375",
-        "1846:1851",
-        "1852:1859",
-        "1915:1920",
-        "2002:2007",
-        "2070:2075",
-        "2308:2313",
-        "2314:2321",
-        "2619:2624",
-        "2662:2667",
-        "2668:2675",
-        "317:322",
-        "323:330",
-        "705:710",
-        "809:814",
-        "832:837",
-        "953:958" ;
-    data:wdtLink wdt:Q60737 ;
-    :alsoKnownAs "Georg Donatus von Hessen-Darmstadt" ;
-    :hasChild data:Princess_Johanna_of_Hesse_and_by_Rhine ;
-    :hasDaughter data:Princess_Johanna_of_Hesse_and_by_Rhine ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Johanna_of_Hesse_and_by_Rhine ;
-    :isParentOf data:Princess_Johanna_of_Hesse_and_by_Rhine .
-
-data:Andrew_Mountbatten-Windsor a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Andrew Mountbatten-Windsor" ;
-    data:posIndicesFull "459:472" ;
-    data:wdtLink wdt:Q153330 ;
-    :alsoKnownAs "Andrew Albert Christian Edward",
-        "Andrew Albert Christian Edward Mountbatten-Windsor",
-        "Baron Killyleagh",
-        "Earl of Inverness",
-        "Prince Andrew",
-        "Prince Andrew of the United Kingdom",
-        "Prince Andrew, Duke of York",
-        "Randy Andy" ;
-    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasParent data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSonOf data:Prince_Philip-_Duke_of_Edinburgh .
-
-data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma" ;
-    data:posIndicesFull "2144:2166",
-        "2149:2166" ;
-    data:posIndicesPart "2223:2228",
-        "2476:2481",
-        "2583:2588" ;
-    data:wdtLink wdt:Q157068 ;
-    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten",
-        "Lord Louis Mountbatten",
-        "Lord Mountbatten",
-        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma",
-        "Louis Mountbatten",
-        "Prince Louis of Battenberg",
-        "The Earl Mountbatten of Burma" ;
-    :hasSex data:male ;
-    :hasSister data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isBrotherOf data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isSiblingOf data:Louise_Mountbatten,
-        data:Princess_Alice_of_Battenberg ;
-    :isUncleOf data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Cecilie_of_Greece_and_Denmark .
-
-data:Louise_Mountbatten a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Louise Mountbatten" ;
-    data:posIndicesFull "2149:2166" ;
-    data:wdtLink wdt:Q115477 ;
-    :alsoKnownAs "Countess of Gripsholm",
-        "Lady Louise Alexandra Marie Irene Mountbatten",
-        "Lady Louise Mountbatten",
-        "Louise Alexandra Marie Irene Mountbatten",
-        "Louise Alexandra Marie Irene of Battenberg",
-        "Louise of Battenberg",
-        "Louise of Sweden",
-        "Mrs Olsson",
-        "Princess Louise Alexandra Marie Irene of Battenberg",
-        "Princess Louise of Battenberg",
-        "Queen Louise of Sweden" ;
-    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Alice_of_Battenberg ;
-    :isAuntOf data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Princess_Alice_of_Battenberg ;
-    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Princess_Alice_of_Battenberg .
-
-data:Princess_Johanna_of_Hesse_and_by_Rhine a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Johanna of Hesse and by Rhine" ;
-    data:posIndicesFull "926:949" ;
-    data:posIndicesPart "1174:1179",
-        "1915:1920",
-        "2002:2007",
-        "2070:2075",
-        "2359:2366",
-        "2515:2522",
-        "2619:2624",
-        "2632:2637" ;
-    data:wdtLink wdt:Q2354262 ;
-    :alsoKnownAs "Johanna Marina Eleonore" ;
-    :hasFather data:Georg_Donatus-_Hereditary_Grand_Duke_of_Hesse ;
-    :hasMother data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :hasParent data:Georg_Donatus-_Hereditary_Grand_Duke_of_Hesse,
-        data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :isChildOf data:Georg_Donatus-_Hereditary_Grand_Duke_of_Hesse,
-        data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :isDaughterOf data:Georg_Donatus-_Hereditary_Grand_Duke_of_Hesse,
-        data:Princess_Cecilie_of_Greece_and_Denmark .
-
-data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Andrew of Greece and Denmark" ;
-    data:posIndicesFull "459:494",
-        "466:494" ;
-    data:posIndicesPart "1239:1245",
-        "1982:1988",
-        "2020:2026",
-        "2106:2112",
-        "2216:2222",
-        "674:680",
-        "792:798" ;
-    data:wdtLink wdt:Q156531 ;
-    :alsoKnownAs "Andrew of Greece and Denmark" ;
-    :hasBrother data:Prince_Christopher_of_Greece_and_Denmark ;
-    :hasChild data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isBrotherOf data:Prince_Christopher_of_Greece_and_Denmark ;
-    :isFatherOf data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :isSiblingOf data:Prince_Christopher_of_Greece_and_Denmark .
-
-data:Princess_Alice_of_Battenberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Alice of Battenberg" ;
-    data:posIndicesFull "1593:1598",
-        "1880:1885",
-        "254:258",
-        "2607:2611",
-        "459:494",
-        "499:527",
-        "508:513",
-        "508:527" ;
-    data:posIndicesPart "917:925" ;
-    data:wdtLink wdt:Q116062 ;
-    :alsoKnownAs "Alice",
-        "Alice of Battenberg",
-        "Alice, Princess Andrew of Greece and Denmark",
-        "Mother Superior Alice-Elizabeth",
-        "Princess Alice of Greece and Denmark",
-        "Princess Andrew of Greece and Denmark",
-        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
-        "Victoria Alice Elizabeth Julia Marie",
-        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
-    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
-    :hasChild data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :hasSister data:Louise_Mountbatten ;
-    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh,
-        data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :isSiblingOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten ;
-    :isSisterOf data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
-        data:Louise_Mountbatten .
-
-data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Philip-_Duke_of_Edinburgh a :Person ;
     rdfs:label "Prince Philip, Duke of Edinburgh" ;
     data:posIndicesFull "1967:1980",
         "2052:2066",
@@ -267,28 +29,83 @@ data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
         "Prince Philip",
         "Prince Philip of Greece and Denmark",
         "The Prince Philip, Duke of Edinburgh" ;
-    :hasChild data:Andrew_Mountbatten-Windsor ;
-    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-    :hasMother data:Princess_Alice_of_Battenberg ;
     :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
         data:Princess_Alice_of_Battenberg ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :hasSon data:Andrew_Mountbatten-Windsor ;
-    :isBrotherOf data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
-        data:Princess_Alice_of_Battenberg ;
-    :isFatherOf data:Andrew_Mountbatten-Windsor ;
-    :isParentOf data:Andrew_Mountbatten-Windsor ;
-    :isSiblingOf data:Princess_Cecilie_of_Greece_and_Denmark ;
-    :isSonOf data:Prince_Andrew_of_Greece_and_Denmark,
-        data:Princess_Alice_of_Battenberg ;
-    :isUncleOf data:Princess_Johanna_of_Hesse_and_by_Rhine .
+    :hasSex data:male .
 
-data:Princess_Cecilie_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Johanna_of_Hesse_and_by_Rhine a :Person ;
+    rdfs:label "Princess Johanna of Hesse and by Rhine" ;
+    data:posIndicesFull "926:949" ;
+    data:posIndicesPart "1174:1179",
+        "1915:1920",
+        "2002:2007",
+        "2070:2075",
+        "2359:2366",
+        "2447:2454",
+        "2551:2556",
+        "2564:2569" ;
+    data:wdtLink wdt:Q2354262 ;
+    :alsoKnownAs "Johanna Marina Eleonore" ;
+    :hasParent data:Georg_Donatus-_Hereditary_Grand_Duke_of_Hesse,
+        data:Princess_Cecilie_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Georg_Donatus-_Hereditary_Grand_Duke_of_Hesse a :Person ;
+    rdfs:label "Georg Donatus, Hereditary Grand Duke of Hesse" ;
+    data:posIndicesFull "0:45" ;
+    data:posIndicesPart "1045:1050",
+        "1051:1058",
+        "1123:1128",
+        "1129:1136",
+        "1147:1152",
+        "1153:1157",
+        "1174:1179",
+        "1300:1305",
+        "1306:1313",
+        "1346:1351",
+        "1352:1359",
+        "1370:1375",
+        "1846:1851",
+        "1852:1859",
+        "1915:1920",
+        "2002:2007",
+        "2070:2075",
+        "2308:2313",
+        "2314:2321",
+        "2551:2556",
+        "2594:2599",
+        "2600:2607",
+        "317:322",
+        "323:330",
+        "705:710",
+        "809:814",
+        "832:837",
+        "953:958" ;
+    data:wdtLink wdt:Q60737 ;
+    :alsoKnownAs "Georg Donatus von Hessen-Darmstadt" ;
+    :hasSex data:male .
+
+data:George_I_of_Greece a :Person ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "2120:2127",
+        "61:68" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasSex data:male .
+
+data:Princess_Cecilie_of_Greece_and_Denmark a :Person ;
     rdfs:label "Princess Cecilie of Greece and Denmark" ;
     data:posIndicesFull "407:445" ;
     data:posIndicesPart "1063:1070",
@@ -299,21 +116,50 @@ data:Princess_Cecilie_of_Greece_and_Denmark a :Ancestor,
         "917:925" ;
     data:wdtLink wdt:Q236196 ;
     :alsoKnownAs "Cecilie, Hereditary Grand Duchess of Hesse and by Rhine" ;
-    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasChild data:Princess_Johanna_of_Hesse_and_by_Rhine ;
-    :hasDaughter data:Princess_Johanna_of_Hesse_and_by_Rhine ;
-    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-    :hasMother data:Princess_Alice_of_Battenberg ;
     :hasParent data:Prince_Andrew_of_Greece_and_Denmark,
         data:Princess_Alice_of_Battenberg ;
-    :hasSex data:female ;
-    :isAuntOf data:Andrew_Mountbatten-Windsor ;
-    :isChildOf data:Prince_Andrew_of_Greece_and_Denmark,
-        data:Princess_Alice_of_Battenberg ;
-    :isDaughterOf data:Prince_Andrew_of_Greece_and_Denmark,
-        data:Princess_Alice_of_Battenberg ;
-    :isMotherOf data:Princess_Johanna_of_Hesse_and_by_Rhine ;
-    :isParentOf data:Princess_Johanna_of_Hesse_and_by_Rhine ;
-    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSisterOf data:Prince_Philip-_Duke_of_Edinburgh .
+    :hasSex data:female .
+
+data:Prince_Andrew_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Andrew of Greece and Denmark" ;
+    data:posIndicesFull "459:494",
+        "466:494" ;
+    data:posIndicesPart "1239:1245",
+        "1982:1988",
+        "2020:2026",
+        "2106:2112",
+        "2216:2222",
+        "674:680",
+        "792:798" ;
+    data:wdtLink wdt:Q156531 ;
+    :alsoKnownAs "Andrew of Greece and Denmark" ;
+    :hasParent data:George_I_of_Greece ;
+    :hasSex data:male .
+
+data:Princess_Alice_of_Battenberg a :Person ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "1593:1598",
+        "1880:1885",
+        "2539:2543",
+        "254:258",
+        "459:494",
+        "499:527",
+        "508:513",
+        "508:527" ;
+    data:posIndicesPart "917:925" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

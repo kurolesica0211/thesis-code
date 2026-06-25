@@ -2,79 +2,31 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Infante_Alfonso_Duke_of_Calabria a :Man,
-        :Person .
+data:Anne_of_Orl%C3%A9ans a :Person,
+        :Woman ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1986 ;
+    :hasFather data:Jean_Duke_of_Guise ;
+    :hasMarriageYear 1927 ;
+    :hasMother data:Isabelle_of_Orl%C3%A9ans ;
+    :hasRelation data:Amedeo_of_Savoy_Duke_of_Aosta ;
+    :hasSex data:Female .
 
-data:Prince_Ferdinand_Pius a :Man,
+data:Amedeo_of_Savoy_Duke_of_Aosta a :Man,
         :Person ;
-    :hasAncestor data:Ferdinand_II_of_the_Two_Sicilies ;
-    :hasBirthYear 1869 ;
-    :hasBrother data:Prince_Carlos_of_Bourbon-Two_Sicilies,
-        data:Prince_Gabriel_of_Bourbon-Two_Sicilies,
-        data:Prince_Philip_of_Bourbon-Two_Sicilies,
-        data:Prince_Ranieri_Duke_of_Castro ;
-    :hasDeathYear 1960 ;
-    :hasFather data:Prince_Alfonso_Count_of_Caserta ;
-    :hasMarriageYear 1897 ;
-    :hasMother data:Princess_Maria_Antonietta ;
-    :hasRelation data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
-    :hasSex data:Male ;
-    :hasSister data:Archduchess_Peter_Ferdinand_of_Austria,
-        data:Maria_Cristina,
-        data:Maria_Immaculata,
-        data:Maria_di_Grazia,
-        data:Princess_Imperial_of_Brazil,
-        data:Princess_Johann_Georg_of_Saxony .
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1942 ;
+    :hasSex data:Male .
 
-data:Archduchess_Peter_Ferdinand_of_Austria a :Person,
+data:Female a :Sex .
+
+data:Isabelle_of_Orl%C3%A9ans a :Ancestor,
+        :Person,
         :Woman .
 
-data:Ferdinand_II_of_the_Two_Sicilies a :Ancestor,
-        :Man,
-        :Person .
-
-data:King_Ludwig_III_of_Bavaria a :Ancestor,
+data:Jean_Duke_of_Guise a :Ancestor,
         :Man,
         :Person .
 
 data:Male a :Sex .
-
-data:Maria_Cristina a :Person,
-        :Woman .
-
-data:Maria_Immaculata a :Person,
-        :Woman .
-
-data:Maria_di_Grazia a :Person,
-        :Woman .
-
-data:Prince_Alfonso_Count_of_Caserta a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man,
-        :Person .
-
-data:Prince_Gabriel_of_Bourbon-Two_Sicilies a :Man,
-        :Person .
-
-data:Prince_Philip_of_Bourbon-Two_Sicilies a :Man,
-        :Person .
-
-data:Prince_Ranieri_Duke_of_Castro a :Man,
-        :Person .
-
-data:Princess_Imperial_of_Brazil a :Person,
-        :Woman .
-
-data:Princess_Johann_Georg_of_Saxony a :Person,
-        :Woman .
-
-data:Princess_Maria_Antonietta a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Person,
-        :Woman ;
-    :hasFather data:King_Ludwig_III_of_Bavaria .
 

@@ -7,33 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Archduchess Maria Cristina, Hereditary Grand Duchess of Tuscany" ;
-    data:posIndicesFull "2115:2162" ;
-    data:posIndicesPart "2711:2716",
-        "2725:2732",
-        "2814:2819",
-        "2828:2835" ;
-    data:wdtLink wdt:Q450684 ;
-    :alsoKnownAs "Princess Maria Cristina of Bourbon-Two Sicilies" ;
-    :hasChild data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
-    :hasSex data:female ;
-    :hasSon data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
-    :isMotherOf data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
-    :isParentOf data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany .
-
-data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany a :Person ;
     rdfs:label "Archduke Gottfried of Austria, Hereditary Grand Duke of Tuscany" ;
     data:posIndicesFull "0:29" ;
     data:posIndicesPart "1012:1017",
@@ -78,9 +52,27 @@ data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany a :Man,
     data:wdtLink wdt:Q2679087 ;
     :alsoKnownAs "Archduke Gottfried of Austria",
         "Archduke Gottfried of Austria-Tuscany" ;
-    :hasMother data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
     :hasParent data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
-    :hasSex data:male ;
-    :isChildOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
-    :isSonOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany .
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany a :Person ;
+    rdfs:label "Archduchess Maria Cristina, Hereditary Grand Duchess of Tuscany" ;
+    data:posIndicesFull "2115:2162" ;
+    data:posIndicesPart "2711:2716",
+        "2725:2732",
+        "2814:2819",
+        "2828:2835" ;
+    data:wdtLink wdt:Q450684 ;
+    :alsoKnownAs "Princess Maria Cristina of Bourbon-Two Sicilies" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

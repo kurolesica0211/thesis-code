@@ -85,6 +85,8 @@ St Andrews served in the Diplomatic Service in New York and Budapest.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -100,39 +102,9 @@ St Andrews served in the Diplomatic Service in New York and Budapest.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -147,6 +119,23 @@ St Andrews served in the Diplomatic Service in New York and Budapest.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -164,6 +153,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -231,29 +235,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,6 +258,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -274,6 +278,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -282,17 +288,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -320,6 +328,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -335,180 +427,145 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e098390b-cb43-435a-a1cc-b7423687e4ce)
- Call ID: e098390b-cb43-435a-a1cc-b7423687e4ce
+  AssignClass (4ffa56d7-34df-4bff-8cd8-2e1eb3d14fd6)
+ Call ID: 4ffa56d7-34df-4bff-8cd8-2e1eb3d14fd6
   Args:
+    source: George_Philip_Nicholas_Windsor
     type: :Man
-    source: :GeorgePhilipNicholasWindsor
-  AssignClass (dbab7816-6e3f-49d0-9bf2-88e23c2bbf85)
- Call ID: dbab7816-6e3f-49d0-9bf2-88e23c2bbf85
+  AssignClass (828015aa-5cce-4983-95a3-1131b5310083)
+ Call ID: 828015aa-5cce-4983-95a3-1131b5310083
   Args:
-    source: :PrinceEdwardDukeOfKent
-    type: :Man
-  AssignClass (55073dd2-2b0e-4fb6-8ce1-450e5deacc74)
- Call ID: 55073dd2-2b0e-4fb6-8ce1-450e5deacc74
+    source: George_Philip_Nicholas_Windsor
+    type: :Person
+  AddLiteral (0e759012-268c-4d93-95e0-c2fb4f0aaaf4)
+ Call ID: 0e759012-268c-4d93-95e0-c2fb4f0aaaf4
   Args:
-    type: :Woman
-    source: :KatharineDuchessOfKent
-  AssignClass (0aff86fa-bf16-4a78-aa63-7bc9b2379ac0)
- Call ID: 0aff86fa-bf16-4a78-aa63-7bc9b2379ac0
-  Args:
-    type: :Woman
-    source: :SylvanaTomaselli
-  AddLiteral (23c5274b-46bc-4109-b704-8c0c1f9531a2)
- Call ID: 23c5274b-46bc-4109-b704-8c0c1f9531a2
-  Args:
-    source: :GeorgePhilipNicholasWindsor
-    relation: :hasBirthYear
     literal_value: 1962
     literal_type: xsd:integer
-  AddTriple (7a370399-5330-4f69-8cc9-ab6c6d4b5a3d)
- Call ID: 7a370399-5330-4f69-8cc9-ab6c6d4b5a3d
+    relation: :hasBirthYear
+    source: George_Philip_Nicholas_Windsor
+  AssignClass (70abb06c-8e77-40eb-a3a3-198676412e79)
+ Call ID: 70abb06c-8e77-40eb-a3a3-198676412e79
+  Args:
+    source: Prince_Edward_Duke_of_Kent
+    type: :Man
+  AssignClass (bb6ff955-aeb9-4896-9c9f-e7dae4f847f5)
+ Call ID: bb6ff955-aeb9-4896-9c9f-e7dae4f847f5
+  Args:
+    source: Prince_Edward_Duke_of_Kent
+    type: :Person
+  AddTriple (a2a48893-59e4-4da9-b47f-cbd257c89a01)
+ Call ID: a2a48893-59e4-4da9-b47f-cbd257c89a01
+  Args:
+    target: Prince_Edward_Duke_of_Kent
+    relation: :hasFather
+    source: George_Philip_Nicholas_Windsor
+  AssignClass (f3d6f45c-2e2b-4580-b8a5-495bb31488a2)
+ Call ID: f3d6f45c-2e2b-4580-b8a5-495bb31488a2
+  Args:
+    source: Katharine_Duchess_of_Kent
+    type: :Woman
+  AssignClass (3b538dd1-cf26-4d60-b412-e692bf290fd0)
+ Call ID: 3b538dd1-cf26-4d60-b412-e692bf290fd0
+  Args:
+    type: :Person
+    source: Katharine_Duchess_of_Kent
+  AddTriple (ba7e1c03-d5c0-4f9d-9a5f-30aa9f7b02da)
+ Call ID: ba7e1c03-d5c0-4f9d-9a5f-30aa9f7b02da
+  Args:
+    source: George_Philip_Nicholas_Windsor
+    relation: :hasMother
+    target: Katharine_Duchess_of_Kent
+  AssignClass (16d51225-d66b-44f7-aaf7-5cc695ac326a)
+ Call ID: 16d51225-d66b-44f7-aaf7-5cc695ac326a
+  Args:
+    source: Sylvana_Tomaselli
+    type: :Woman
+  AssignClass (34f3f0d2-fe30-4eb1-ad22-6ebc9914f232)
+ Call ID: 34f3f0d2-fe30-4eb1-ad22-6ebc9914f232
+  Args:
+    type: :Person
+    source: Sylvana_Tomaselli
+  AddTriple (7118b7c5-990b-4a48-ba4e-a1f3698303e5)
+ Call ID: 7118b7c5-990b-4a48-ba4e-a1f3698303e5
+  Args:
+    target: Sylvana_Tomaselli
+    source: George_Philip_Nicholas_Windsor
+    relation: :hasRelation
+  AssignClass (724fc29a-f4ed-463b-9606-b9877c1f23e0)
+ Call ID: 724fc29a-f4ed-463b-9606-b9877c1f23e0
+  Args:
+    source: Sir_William_Worsley
+    type: :Man
+  AssignClass (bac85269-4593-4f53-96f1-3325bf665ea1)
+ Call ID: bac85269-4593-4f53-96f1-3325bf665ea1
+  Args:
+    type: :Person
+    source: Sir_William_Worsley
+  AddTriple (ccd794eb-a377-42f2-a237-c7ccb24b8eda)
+ Call ID: ccd794eb-a377-42f2-a237-c7ccb24b8eda
   Args:
     relation: :hasFather
-    source: :GeorgePhilipNicholasWindsor
-    target: :PrinceEdwardDukeOfKent
-  AddTriple (298631b6-5f46-4a9c-aaa5-1f4ee76e74d9)
- Call ID: 298631b6-5f46-4a9c-aaa5-1f4ee76e74d9
+    source: Katharine_Duchess_of_Kent
+    target: Sir_William_Worsley
+  AssignClass (ab374f23-bac2-4975-b2bd-0054755fda23)
+ Call ID: ab374f23-bac2-4975-b2bd-0054755fda23
   Args:
-    relation: :hasMother
-    target: :KatharineDuchessOfKent
-    source: :GeorgePhilipNicholasWindsor
-  AddTriple (f80634aa-0a53-430c-b892-938389d889b3)
- Call ID: f80634aa-0a53-430c-b892-938389d889b3
+    type: :Woman
+    source: Princess_Alexandra_of_Kent
+  AssignClass (a84cf5c5-ec53-4aa0-8ef0-8df7ad821d12)
+ Call ID: a84cf5c5-ec53-4aa0-8ef0-8df7ad821d12
   Args:
-    relation: :hasSex
-    source: :GeorgePhilipNicholasWindsor
-    target: :Male
-  AddTriple (754231a3-703e-464b-b7a7-f4db945edae6)
- Call ID: 754231a3-703e-464b-b7a7-f4db945edae6
+    type: :Person
+    source: Princess_Alexandra_of_Kent
+  AddTriple (84b3d6e1-8f9b-4cbe-964f-31de2ad412e0)
+ Call ID: 84b3d6e1-8f9b-4cbe-964f-31de2ad412e0
   Args:
-    relation: :hasSex
-    source: :PrinceEdwardDukeOfKent
-    target: :Male
-  AddTriple (0db36977-d5ac-4fd5-919b-ebd3f551f271)
- Call ID: 0db36977-d5ac-4fd5-919b-ebd3f551f271
+    target: George_Philip_Nicholas_Windsor
+    source: Princess_Alexandra_of_Kent
+    relation: :isAuntOf
+  AssignClass (87779c0a-1ba5-4b2c-8f99-463964698777)
+ Call ID: 87779c0a-1ba5-4b2c-8f99-463964698777
   Args:
-    relation: :hasSex
-    source: :KatharineDuchessOfKent
-    target: :Female
-  AddTriple (eea6eaea-d932-474f-9976-72f84283c4eb)
- Call ID: eea6eaea-d932-474f-9976-72f84283c4eb
+    source: Oliver_Worsley
+    type: :Man
+  AssignClass (dda3be5c-f952-4500-b97e-7c6f5f46ecdc)
+ Call ID: dda3be5c-f952-4500-b97e-7c6f5f46ecdc
   Args:
-    relation: :hasSex
-    target: :Female
-    source: :SylvanaTomaselli
-  AddTriple (b72c6a98-a249-4787-9105-4d986d19fd3f)
- Call ID: b72c6a98-a249-4787-9105-4d986d19fd3f
+    source: Oliver_Worsley
+    type: :Person
+  AddTriple (1defbfcc-2ebf-4316-9a51-cf4722f8a142)
+ Call ID: 1defbfcc-2ebf-4316-9a51-cf4722f8a142
   Args:
-    source: :GeorgePhilipNicholasWindsor
-    target: :SylvanaTomaselli
-    relation: :hasRelation
-  Finish (3dd1c885-4f5e-41a5-988f-f285522eefd8)
- Call ID: 3dd1c885-4f5e-41a5-988f-f285522eefd8
+    target: George_Philip_Nicholas_Windsor
+    source: Oliver_Worsley
+    relation: :isUncleOf
+  AssignClass (b2af055c-1f70-4089-be17-35becab2c767)
+ Call ID: b2af055c-1f70-4089-be17-35becab2c767
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:GeorgePhilipNicholasWindsor a :Man ;
-      :hasBirthYear 1962 ;
-      :hasFather data:PrinceEdwardDukeOfKent ;
-      :hasMother data:KatharineDuchessOfKent ;
-      :hasRelation data:SylvanaTomaselli ;
-      :hasSex data:Male .
-
-  data:KatharineDuchessOfKent a :Woman ;
-      :hasSex data:Female .
-
-  data:PrinceEdwardDukeOfKent a :Man ;
-      :hasSex data:Male .
-
-  data:SylvanaTomaselli a :Woman ;
-      :hasSex data:Female .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male', 'Female']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (9404f3e2-43dc-4767-a4c5-9d2857e23217)
- Call ID: 9404f3e2-43dc-4767-a4c5-9d2857e23217
+    type: :Woman
+    source: Lady_Lily_Serena_Lumley
+  AssignClass (eb901f36-403f-42c8-99f7-00e047487c96)
+ Call ID: eb901f36-403f-42c8-99f7-00e047487c96
   Args:
-    type: :Sex
-    source: :Male
-  AssignClass (3617f923-a6bf-444e-8d79-d70a8d5332d3)
- Call ID: 3617f923-a6bf-444e-8d79-d70a8d5332d3
+    source: Lady_Lily_Serena_Lumley
+    type: :Person
+  AssignClass (1ff51588-651f-4e97-b599-dc27cfa041d7)
+ Call ID: 1ff51588-651f-4e97-b599-dc27cfa041d7
   Args:
-    source: :Female
-    type: :Sex
-  Finish (ccc61380-cdf2-4094-a179-40a3850efe30)
- Call ID: ccc61380-cdf2-4094-a179-40a3850efe30
+    source: Earl_of_Scarbrough
+    type: :Man
+  AssignClass (e3a63acc-9a87-4963-b03b-d93d1fb4ef22)
+ Call ID: e3a63acc-9a87-4963-b03b-d93d1fb4ef22
+  Args:
+    source: Earl_of_Scarbrough
+    type: :Person
+  AddTriple (a8c8111b-fd9e-4d4b-8b34-f31047f5e08c)
+ Call ID: a8c8111b-fd9e-4d4b-8b34-f31047f5e08c
+  Args:
+    target: Earl_of_Scarbrough
+    relation: :hasFather
+    source: Lady_Lily_Serena_Lumley
+  Finish (d75f3182-7414-4b3d-b0ab-db1afe85156e)
+ Call ID: d75f3182-7414-4b3d-b0ab-db1afe85156e
   Args:

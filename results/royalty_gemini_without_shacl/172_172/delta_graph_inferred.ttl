@@ -1,0 +1,310 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Lady_Sarah_Chatto a :Person,
+        :Woman ;
+    :hasRelation data:Lady_Sarah_Chatto ;
+    :hasSister data:Lady_Sarah_Chatto ;
+    :isBloodrelationOf data:Lady_Sarah_Chatto ;
+    :isSiblingOf data:Lady_Sarah_Chatto ;
+    :isSisterOf data:Lady_Sarah_Chatto .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:Charles_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Charles_II ;
+    :hasChild data:Charles_Stanhope ;
+    :hasRelation data:Charles_II,
+        data:Charles_Stanhope ;
+    :hasSon data:Charles_Stanhope ;
+    :isAncestorOf data:Charles_Stanhope ;
+    :isBloodrelationOf data:Charles_II ;
+    :isBrotherOf data:Charles_II ;
+    :isFatherOf data:Charles_Stanhope ;
+    :isParentOf data:Charles_Stanhope ;
+    :isSiblingOf data:Charles_II ;
+    :isUncleOf data:Charles_Stanhope .
+
+data:Charles_Stanhope a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Charles_II ;
+    :hasBrother data:Charles_Stanhope ;
+    :hasFather data:Charles_II ;
+    :hasParent data:Charles_II ;
+    :hasRelation data:Charles_II,
+        data:Charles_Stanhope ;
+    :isBloodrelationOf data:Charles_Stanhope ;
+    :isBrotherOf data:Charles_Stanhope ;
+    :isChildOf data:Charles_II ;
+    :isSiblingOf data:Charles_Stanhope ;
+    :isSonOf data:Charles_II .
+
+data:Serena_Stanhope a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Margarita_Armstrong-Jones ;
+    :hasDaughter data:Lady_Margarita_Armstrong-Jones ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:King_George_VI,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Serena_Stanhope,
+        data:Viscount_Linley_brother ;
+    :hasSister data:Serena_Stanhope ;
+    :isAncestorOf data:Lady_Margarita_Armstrong-Jones ;
+    :isAuntOf data:Lady_Margarita_Armstrong-Jones ;
+    :isBloodrelationOf data:Serena_Stanhope ;
+    :isMotherOf data:Lady_Margarita_Armstrong-Jones ;
+    :isParentOf data:Lady_Margarita_Armstrong-Jones ;
+    :isSiblingOf data:Serena_Stanhope ;
+    :isSisterOf data:Serena_Stanhope .
+
+data:King_George_VI a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_George_VI ;
+    :hasChild data:Princess_Margaret ;
+    :hasDaughter data:Princess_Margaret ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:King_George_VI,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Serena_Stanhope,
+        data:Viscount_Linley_brother ;
+    :isAncestorOf data:David_Armstrong-Jones,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Princess_Margaret,
+        data:Viscount_Linley_brother ;
+    :isBloodrelationOf data:King_George_VI ;
+    :isBrotherOf data:King_George_VI ;
+    :isFatherOf data:Princess_Margaret ;
+    :isParentOf data:Princess_Margaret ;
+    :isSiblingOf data:King_George_VI ;
+    :isUncleOf data:Princess_Margaret .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Margaret ;
+    :hasDaughter data:Princess_Margaret ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:King_George_VI,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Serena_Stanhope,
+        data:Viscount_Linley_brother ;
+    :hasSister data:Queen_Elizabeth_The_Queen_Mother ;
+    :isAncestorOf data:David_Armstrong-Jones,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Princess_Margaret,
+        data:Viscount_Linley_brother ;
+    :isAuntOf data:Princess_Margaret ;
+    :isBloodrelationOf data:Queen_Elizabeth_The_Queen_Mother ;
+    :isMotherOf data:Princess_Margaret ;
+    :isParentOf data:Princess_Margaret ;
+    :isSiblingOf data:Queen_Elizabeth_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth_The_Queen_Mother .
+
+data:Antony_Armstrong-Jones a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Antony_Armstrong-Jones ;
+    :hasChild data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:King_George_VI,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Serena_Stanhope,
+        data:Viscount_Linley_brother ;
+    :hasSon data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isAncestorOf data:David_Armstrong-Jones,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isBloodrelationOf data:Antony_Armstrong-Jones ;
+    :isBrotherOf data:Antony_Armstrong-Jones ;
+    :isFatherOf data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isParentOf data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isSiblingOf data:Antony_Armstrong-Jones ;
+    :isUncleOf data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother .
+
+data:David_Armstrong-Jones a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Antony_Armstrong-Jones,
+        data:King_George_VI,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasBrother data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :hasChild data:Lady_Margarita_Armstrong-Jones ;
+    :hasDaughter data:Lady_Margarita_Armstrong-Jones ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret ;
+    :hasParent data:Antony_Armstrong-Jones,
+        data:Princess_Margaret ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:King_George_VI,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Serena_Stanhope,
+        data:Viscount_Linley_brother ;
+    :isAncestorOf data:Lady_Margarita_Armstrong-Jones ;
+    :isBloodrelationOf data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isBrotherOf data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isChildOf data:Antony_Armstrong-Jones,
+        data:Princess_Margaret ;
+    :isFatherOf data:Lady_Margarita_Armstrong-Jones ;
+    :isParentOf data:Lady_Margarita_Armstrong-Jones ;
+    :isSiblingOf data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isSonOf data:Antony_Armstrong-Jones,
+        data:Princess_Margaret ;
+    :isUncleOf data:Lady_Margarita_Armstrong-Jones .
+
+data:Princess_Margaret a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:King_George_VI,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasChild data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :hasFather data:King_George_VI ;
+    :hasMother data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasParent data:King_George_VI,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:King_George_VI,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Serena_Stanhope,
+        data:Viscount_Linley_brother ;
+    :hasSister data:Princess_Margaret ;
+    :hasSon data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isAncestorOf data:David_Armstrong-Jones,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isAuntOf data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isBloodrelationOf data:Princess_Margaret ;
+    :isChildOf data:King_George_VI,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isDaughterOf data:King_George_VI,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :isMotherOf data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isParentOf data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isSiblingOf data:Princess_Margaret ;
+    :isSisterOf data:Princess_Margaret .
+
+data:Lady_Margarita_Armstrong-Jones a :Person,
+        :Woman ;
+    :hasAncestor data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:King_George_VI,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Serena_Stanhope,
+        data:Viscount_Linley_brother ;
+    :hasBirthYear 2002 ;
+    :hasBrother data:Viscount_Linley_brother ;
+    :hasFather data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :hasMother data:Serena_Stanhope ;
+    :hasParent data:David_Armstrong-Jones,
+        data:Serena_Stanhope,
+        data:Viscount_Linley_brother ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:King_George_VI,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Serena_Stanhope,
+        data:Viscount_Linley_brother ;
+    :hasSister data:Lady_Margarita_Armstrong-Jones ;
+    :isBloodrelationOf data:Lady_Margarita_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isChildOf data:David_Armstrong-Jones,
+        data:Serena_Stanhope,
+        data:Viscount_Linley_brother ;
+    :isDaughterOf data:David_Armstrong-Jones,
+        data:Serena_Stanhope,
+        data:Viscount_Linley_brother ;
+    :isSiblingOf data:Lady_Margarita_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isSisterOf data:Lady_Margarita_Armstrong-Jones,
+        data:Viscount_Linley_brother .
+
+data:Viscount_Linley_brother a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Antony_Armstrong-Jones,
+        data:King_George_VI,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_The_Queen_Mother ;
+    :hasBrother data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :hasChild data:Lady_Margarita_Armstrong-Jones ;
+    :hasDaughter data:Lady_Margarita_Armstrong-Jones ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret ;
+    :hasParent data:Antony_Armstrong-Jones,
+        data:Princess_Margaret ;
+    :hasRelation data:Antony_Armstrong-Jones,
+        data:David_Armstrong-Jones,
+        data:King_George_VI,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Princess_Margaret,
+        data:Queen_Elizabeth_The_Queen_Mother,
+        data:Serena_Stanhope,
+        data:Viscount_Linley_brother ;
+    :hasSister data:Lady_Margarita_Armstrong-Jones ;
+    :isAncestorOf data:Lady_Margarita_Armstrong-Jones ;
+    :isBloodrelationOf data:David_Armstrong-Jones,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isBrotherOf data:David_Armstrong-Jones,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isChildOf data:Antony_Armstrong-Jones,
+        data:Princess_Margaret ;
+    :isFatherOf data:Lady_Margarita_Armstrong-Jones ;
+    :isParentOf data:Lady_Margarita_Armstrong-Jones ;
+    :isSiblingOf data:David_Armstrong-Jones,
+        data:Lady_Margarita_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :isSonOf data:Antony_Armstrong-Jones,
+        data:Princess_Margaret ;
+    :isUncleOf data:Lady_Margarita_Armstrong-Jones .
+

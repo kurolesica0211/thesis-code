@@ -2,38 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Claus-Casimir a :Man ;
-    :hasBirthYear 2004 ;
-    :hasFather data:Constantijn ;
-    :hasMother data:Laurentien_Brinkhorst .
+data:MabelWisseSmit a :Person,
+        :Woman ;
+    :hasParent data:CountessEmmaLuana,
+        data:CountessJoannaZaria .
 
-data:Eloise a :Woman ;
-    :hasBirthYear 2002 ;
-    :hasFather data:Constantijn ;
-    :hasMother data:Laurentien_Brinkhorst .
-
-data:Leonore a :Woman ;
-    :hasBirthYear 2006 ;
-    :hasFather data:Constantijn ;
-    :hasMother data:Laurentien_Brinkhorst .
-
-data:Beatrix a :Woman .
-
-data:Claus_von_Amsberg a :Man .
-
-data:Johan_Friso a :Man ;
+data:PrinceFriso a :Man,
+        :Person ;
     :hasBirthYear 1968 ;
-    :hasDeathYear 2013 .
+    :hasDeathYear 2013 ;
+    :hasFather data:ClausVonAmsberg,
+        data:PrinceBernhard ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasParent data:CountessEmmaLuana,
+        data:CountessJoannaZaria ;
+    :isBrotherOf data:KingWillemAlexander,
+        data:PrinceConstantijn .
 
-data:Willem-Alexander a :Man ;
+data:ClausVonAmsberg a :Man,
+        :Person .
+
+data:KingWillemAlexander a :Man,
+        :Person ;
     :hasBirthYear 1967 .
 
-data:Constantijn a :Man ;
-    :hasBirthYear 1969 ;
-    :hasBrother data:Johan_Friso,
-        data:Willem-Alexander ;
-    :hasFather data:Claus_von_Amsberg ;
-    :hasMother data:Beatrix .
+data:PrinceConstantijn a :Man,
+        :Person ;
+    :hasBirthYear 1969 .
 
-data:Laurentien_Brinkhorst a :Woman .
+data:QueenBeatrix a :Person,
+        :Woman ;
+    :hasFather data:PrinceBernhard ;
+    :hasMother data:QueenJuliana .
+
+data:CountessEmmaLuana a :Person,
+        :Woman .
+
+data:CountessJoannaZaria a :Person,
+        :Woman .
+
+data:PrinceBernhard a :Man,
+        :Person .
+
+data:QueenJuliana a :Person,
+        :Woman .
 

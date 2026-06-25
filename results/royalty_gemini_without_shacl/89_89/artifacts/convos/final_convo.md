@@ -98,6 +98,8 @@ Prince Nicholas died in Athens on February 8, 1938 and was buried in the Royal t
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -113,39 +115,9 @@ Prince Nicholas died in Athens on February 8, 1938 and was buried in the Royal t
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -160,6 +132,23 @@ Prince Nicholas died in Athens on February 8, 1938 and was buried in the Royal t
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -177,6 +166,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -244,29 +248,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -275,6 +271,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -287,6 +291,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -295,17 +301,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -333,6 +341,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -348,220 +440,205 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ab366eaa-cc08-4373-a99c-f5f0ca7803c2)
- Call ID: ab366eaa-cc08-4373-a99c-f5f0ca7803c2
+  AssignClass (e57d22e9-8637-439d-af23-09b433e26c7b)
+ Call ID: e57d22e9-8637-439d-af23-09b433e26c7b
   Args:
     type: :Man
-    source: :PrinceNicholasOfGreeceAndDenmark
-  AssignClass (deb1d5cb-1812-451e-a122-bbf09d12765a)
- Call ID: deb1d5cb-1812-451e-a122-bbf09d12765a
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AssignClass (81e962de-b98d-4c1d-9e72-9de52bd59a33)
+ Call ID: 81e962de-b98d-4c1d-9e72-9de52bd59a33
   Args:
     type: :Person
-    source: :PrinceNicholasOfGreeceAndDenmark
-  AddLiteral (1b4bde85-bf20-4ea0-91a0-9c8e22eec330)
- Call ID: 1b4bde85-bf20-4ea0-91a0-9c8e22eec330
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    source: :PrinceNicholasOfGreeceAndDenmark
-    literal_value: male
-  AddLiteral (70c07024-d66c-4812-a0fc-ae23c83e6eb3)
- Call ID: 70c07024-d66c-4812-a0fc-ae23c83e6eb3
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AddLiteral (71b66b67-5238-4515-96b2-ace1a2a95ebb)
+ Call ID: 71b66b67-5238-4515-96b2-ace1a2a95ebb
   Args:
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: :PrinceNicholasOfGreeceAndDenmark
     literal_value: 1872
-  AddLiteral (b561cd25-a999-47fe-b51d-dc825670a86a)
- Call ID: b561cd25-a999-47fe-b51d-dc825670a86a
-  Args:
     literal_type: xsd:integer
-    source: :PrinceNicholasOfGreeceAndDenmark
-    literal_value: 1938
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AddLiteral (036dc22a-dbe6-4784-9851-ebd6cf8fd0cb)
+ Call ID: 036dc22a-dbe6-4784-9851-ebd6cf8fd0cb
+  Args:
     relation: :hasDeathYear
-  AddLiteral (eacb55d7-9dcc-43e4-9d3a-0d5012ec5449)
- Call ID: eacb55d7-9dcc-43e4-9d3a-0d5012ec5449
+    literal_type: xsd:integer
+    literal_value: 1938
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AddLiteral (c9984701-ae58-4916-830c-e2b7a4def883)
+ Call ID: c9984701-ae58-4916-830c-e2b7a4def883
   Args:
     relation: :knownAs
     literal_type: xsd:string
-    source: :PrinceNicholasOfGreeceAndDenmark
     literal_value: Greek Nicky
-  AddLiteral (0a19d827-eb3f-4db7-b1ea-0a2d5f207d0f)
- Call ID: 0a19d827-eb3f-4db7-b1ea-0a2d5f207d0f
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AddLiteral (d45fb90b-0ead-44ed-be49-55f4bbca66ee)
+ Call ID: d45fb90b-0ead-44ed-be49-55f4bbca66ee
   Args:
-    relation: :alsoKnownAs
-    literal_value: Nicolas Leprince
     literal_type: xsd:string
-    source: :PrinceNicholasOfGreeceAndDenmark
-  AssignClass (83d37450-0141-4886-bf30-09deac14562a)
- Call ID: 83d37450-0141-4886-bf30-09deac14562a
+    literal_value: Nicolas Leprince
+    relation: :alsoKnownAs
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AssignClass (f966bc0c-7c89-4607-8bbb-71c12bc7e7c4)
+ Call ID: f966bc0c-7c89-4607-8bbb-71c12bc7e7c4
   Args:
     type: :Man
-    source: :KingGeorgeIOfGreece
-  AssignClass (2f934c18-ba8d-470c-ae87-914ea246a095)
- Call ID: 2f934c18-ba8d-470c-ae87-914ea246a095
+    source: King_George_I_of_Greece
+  AssignClass (e7cd909d-8f30-4d16-9de7-975c768b0aa4)
+ Call ID: e7cd909d-8f30-4d16-9de7-975c768b0aa4
   Args:
     type: :Person
-    source: :KingGeorgeIOfGreece
-  AddTriple (a91cd2e1-27ee-44e4-b56a-96acc8c3f70c)
- Call ID: a91cd2e1-27ee-44e4-b56a-96acc8c3f70c
+    source: King_George_I_of_Greece
+  AssignClass (6f89b88d-0b98-4ba5-81b8-f49e79cfc47a)
+ Call ID: 6f89b88d-0b98-4ba5-81b8-f49e79cfc47a
   Args:
-    source: :PrinceNicholasOfGreeceAndDenmark
+    source: Queen_Olga
+    type: :Woman
+  AssignClass (d6116ee0-c050-47ef-91d5-7895661dca5c)
+ Call ID: d6116ee0-c050-47ef-91d5-7895661dca5c
+  Args:
+    type: :Person
+    source: Queen_Olga
+  AddTriple (5913e0e7-6afc-4069-922d-c79b746f409c)
+ Call ID: 5913e0e7-6afc-4069-922d-c79b746f409c
+  Args:
+    source: Prince_Nicholas_of_Greece_and_Denmark
     relation: :hasFather
-    target: :KingGeorgeIOfGreece
-  AssignClass (dc8d73af-bd11-4fe5-a96c-c0a5f4e57e93)
- Call ID: dc8d73af-bd11-4fe5-a96c-c0a5f4e57e93
+    target: King_George_I_of_Greece
+  AddTriple (29398070-95ff-44a6-be9b-f28b20753547)
+ Call ID: 29398070-95ff-44a6-be9b-f28b20753547
   Args:
-    type: :Woman
-    source: :QueenOlga
-  AssignClass (8af7c475-3325-4ce0-9f3a-388f4738f50e)
- Call ID: 8af7c475-3325-4ce0-9f3a-388f4738f50e
-  Args:
-    type: :Person
-    source: :QueenOlga
-  AddTriple (f6eebc11-e46a-48f9-96b2-4bb73f48da19)
- Call ID: f6eebc11-e46a-48f9-96b2-4bb73f48da19
-  Args:
-    source: :PrinceNicholasOfGreeceAndDenmark
+    source: Prince_Nicholas_of_Greece_and_Denmark
     relation: :hasMother
-    target: :QueenOlga
-  AssignClass (26371bc7-d4fa-42a9-a778-17cd9c10f7a2)
- Call ID: 26371bc7-d4fa-42a9-a778-17cd9c10f7a2
+    target: Queen_Olga
+  AssignClass (70000330-0257-421d-bbcb-cf16487a1e42)
+ Call ID: 70000330-0257-421d-bbcb-cf16487a1e42
   Args:
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
     type: :Woman
-    source: :GrandDuchessElenaVladimirovnaOfRussia
-  AssignClass (2acbb289-8833-4739-9d30-1775533f1ef4)
- Call ID: 2acbb289-8833-4739-9d30-1775533f1ef4
+  AssignClass (fb7ea1ef-5dae-4ba4-8c3b-c88390dfbbbb)
+ Call ID: fb7ea1ef-5dae-4ba4-8c3b-c88390dfbbbb
   Args:
     type: :Person
-    source: :GrandDuchessElenaVladimirovnaOfRussia
-  AddLiteral (7d53aaa0-c731-41ce-b1ef-0b73c8b559fa)
- Call ID: 7d53aaa0-c731-41ce-b1ef-0b73c8b559fa
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
+  AddLiteral (7ec58805-befe-455c-88eb-25400da2c454)
+ Call ID: 7ec58805-befe-455c-88eb-25400da2c454
   Args:
-    relation: :hasBirthYear
-    source: :GrandDuchessElenaVladimirovnaOfRussia
-    literal_type: xsd:integer
-    literal_value: 1882
-  AddLiteral (801cd580-bfbe-4b8c-817b-0fd0e5712d56)
- Call ID: 801cd580-bfbe-4b8c-817b-0fd0e5712d56
-  Args:
-    literal_value: 1957
-    literal_type: xsd:integer
-    source: :GrandDuchessElenaVladimirovnaOfRussia
-    relation: :hasDeathYear
-  AddLiteral (5769ff09-1a1a-4ec3-9171-f7dcd7be3ea9)
- Call ID: 5769ff09-1a1a-4ec3-9171-f7dcd7be3ea9
-  Args:
-    literal_type: xsd:integer
-    source: :PrinceNicholasOfGreeceAndDenmark
-    literal_value: 1902
+    source: Prince_Nicholas_of_Greece_and_Denmark
     relation: :hasMarriageYear
-  AssignClass (ff5e1f98-718f-4f12-a107-32dfb676acb9)
- Call ID: ff5e1f98-718f-4f12-a107-32dfb676acb9
+    literal_type: xsd:integer
+    literal_value: 1902
+  AddTriple (76a1174a-5013-492f-ace4-8c3ab320e18a)
+ Call ID: 76a1174a-5013-492f-ace4-8c3ab320e18a
   Args:
+    source: Prince_Nicholas_of_Greece_and_Denmark
+    relation: :hasRelation
+    target: Grand_Duchess_Elena_Vladimirovna_of_Russia
+  AssignClass (2ba5def6-feb1-4802-8af0-6f37f7025481)
+ Call ID: 2ba5def6-feb1-4802-8af0-6f37f7025481
+  Args:
+    source: Grand_Duke_Vladimir_Alexandrovich_of_Russia
     type: :Man
-    source: :GrandDukeVladimirAlexandrovichOfRussia
-  AssignClass (1ffb3381-2e4d-4e78-a851-d2e3304a6079)
- Call ID: 1ffb3381-2e4d-4e78-a851-d2e3304a6079
+  AssignClass (8999ba53-b976-415b-8058-1dc13392d198)
+ Call ID: 8999ba53-b976-415b-8058-1dc13392d198
   Args:
     type: :Person
-    source: :GrandDukeVladimirAlexandrovichOfRussia
-  AddTriple (a21fc1b1-adce-4a42-93e9-b7d8f264fa8f)
- Call ID: a21fc1b1-adce-4a42-93e9-b7d8f264fa8f
+    source: Grand_Duke_Vladimir_Alexandrovich_of_Russia
+  AssignClass (e2eb6ed6-3dfd-45d9-a7d7-f2a1d630f1e8)
+ Call ID: e2eb6ed6-3dfd-45d9-a7d7-f2a1d630f1e8
   Args:
-    source: :GrandDuchessElenaVladimirovnaOfRussia
-    relation: :hasFather
-    target: :GrandDukeVladimirAlexandrovichOfRussia
-  AssignClass (603456fe-8564-4581-a0b6-4aed628c88a0)
- Call ID: 603456fe-8564-4581-a0b6-4aed628c88a0
-  Args:
+    source: Marie_of_Mecklenburg-Schwerin
     type: :Woman
-    source: :MarieOfMecklenburgSchwerin
-  AssignClass (0f90235d-80a5-47c9-9c09-1ba4dcb74659)
- Call ID: 0f90235d-80a5-47c9-9c09-1ba4dcb74659
+  AssignClass (406eca21-deb3-4120-ad0e-3c9ab3274a50)
+ Call ID: 406eca21-deb3-4120-ad0e-3c9ab3274a50
   Args:
     type: :Person
-    source: :MarieOfMecklenburgSchwerin
-  AddTriple (c38cdcf6-e9be-4dae-bedf-4555c44e5133)
- Call ID: c38cdcf6-e9be-4dae-bedf-4555c44e5133
+    source: Marie_of_Mecklenburg-Schwerin
+  AddTriple (6d27007f-8339-4387-97a4-ccfb9ba0368b)
+ Call ID: 6d27007f-8339-4387-97a4-ccfb9ba0368b
   Args:
-    relation: :hasMother
-    source: :GrandDuchessElenaVladimirovnaOfRussia
-    target: :MarieOfMecklenburgSchwerin
-  AssignClass (edb367eb-fee2-4162-aa6d-d54187738005)
- Call ID: edb367eb-fee2-4162-aa6d-d54187738005
-  Args:
-    type: :Man
-    source: :GrandDukeKirillVladimirovich
-  AssignClass (ceedb238-8916-4935-9c88-5081b52c3db0)
- Call ID: ceedb238-8916-4935-9c88-5081b52c3db0
-  Args:
-    type: :Person
-    source: :GrandDukeKirillVladimirovich
-  AddTriple (89a41ced-3b53-4a8a-bfbe-34650daefd3b)
- Call ID: 89a41ced-3b53-4a8a-bfbe-34650daefd3b
-  Args:
-    source: :GrandDuchessElenaVladimirovnaOfRussia
-    relation: :isSisterOf
-    target: :GrandDukeKirillVladimirovich
-  AssignClass (dab4b2b0-a23f-4c03-b9e5-e2fe5b1bfbec)
- Call ID: dab4b2b0-a23f-4c03-b9e5-e2fe5b1bfbec
-  Args:
-    type: :Man
-    source: :Constantine
-  AssignClass (bbc687cb-f0b6-4550-8122-293f5053daed)
- Call ID: bbc687cb-f0b6-4550-8122-293f5053daed
-  Args:
-    type: :Person
-    source: :Constantine
-  AddTriple (7ea27a04-4076-4682-882d-9d42e9941642)
- Call ID: 7ea27a04-4076-4682-882d-9d42e9941642
-  Args:
-    source: :PrinceNicholasOfGreeceAndDenmark
-    relation: :isBrotherOf
-    target: :Constantine
-  AssignClass (19d5c5c5-4a95-4642-a0f8-2193989dec00)
- Call ID: 19d5c5c5-4a95-4642-a0f8-2193989dec00
-  Args:
-    type: :Man
-    source: :George
-  AssignClass (437bdd37-b262-450e-8aa3-85de1ef139b5)
- Call ID: 437bdd37-b262-450e-8aa3-85de1ef139b5
-  Args:
-    type: :Person
-    source: :George
-  AddTriple (8b9f125b-b639-497a-b71b-705eb50cbe8e)
- Call ID: 8b9f125b-b639-497a-b71b-705eb50cbe8e
-  Args:
-    relation: :isBrotherOf
-    source: :PrinceNicholasOfGreeceAndDenmark
-    target: :George
-  AssignClass (8d3f7d77-afd1-467a-9152-fba7aaa22011)
- Call ID: 8d3f7d77-afd1-467a-9152-fba7aaa22011
-  Args:
-    type: :Man
-    source: :GeorgeSimitis
-  AssignClass (54a05938-c5a1-4c96-8357-b9f2db55d0aa)
- Call ID: 54a05938-c5a1-4c96-8357-b9f2db55d0aa
-  Args:
-    type: :Person
-    source: :GeorgeSimitis
-  AssignClass (3ac1224a-6235-4849-a2d9-3e2fdff3dcc7)
- Call ID: 3ac1224a-6235-4849-a2d9-3e2fdff3dcc7
-  Args:
-    type: :Man
-    source: :KostasSimitis
-  AssignClass (c0a19240-416a-4762-82d3-360480496ca2)
- Call ID: c0a19240-416a-4762-82d3-360480496ca2
-  Args:
-    type: :Person
-    source: :KostasSimitis
-  AddTriple (c0f82a7f-fea0-491b-811d-c9048a715a98)
- Call ID: c0f82a7f-fea0-491b-811d-c9048a715a98
-  Args:
-    source: :KostasSimitis
     relation: :hasFather
-    target: :GeorgeSimitis
-  Finish (10052f18-5c9d-4410-8b7c-b9d3dde2fc57)
- Call ID: 10052f18-5c9d-4410-8b7c-b9d3dde2fc57
+    target: Grand_Duke_Vladimir_Alexandrovich_of_Russia
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
+  AddTriple (f073fd12-20af-43c9-b9e7-319142b9d269)
+ Call ID: f073fd12-20af-43c9-b9e7-319142b9d269
+  Args:
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
+    relation: :hasMother
+    target: Marie_of_Mecklenburg-Schwerin
+  AssignClass (2851890f-f42b-4abf-93d3-15243f0ce0e4)
+ Call ID: 2851890f-f42b-4abf-93d3-15243f0ce0e4
+  Args:
+    type: :Man
+    source: Grand_Duke_Kirill_Vladimirovich
+  AssignClass (4e51c8af-8ed5-43cf-9674-bca817916584)
+ Call ID: 4e51c8af-8ed5-43cf-9674-bca817916584
+  Args:
+    source: Grand_Duke_Kirill_Vladimirovich
+    type: :Person
+  AddTriple (c14cff34-998a-4dea-a2b8-4e43e07b4bb5)
+ Call ID: c14cff34-998a-4dea-a2b8-4e43e07b4bb5
+  Args:
+    source: Grand_Duke_Kirill_Vladimirovich
+    target: Grand_Duchess_Elena_Vladimirovna_of_Russia
+    relation: :hasSister
+  AssignClass (55e4b6b7-aef5-476d-acaa-6dcafe05b4c1)
+ Call ID: 55e4b6b7-aef5-476d-acaa-6dcafe05b4c1
+  Args:
+    type: :Man
+    source: Constantine_of_Greece
+  AssignClass (44038006-db3c-4db1-96f6-e688a147f2c1)
+ Call ID: 44038006-db3c-4db1-96f6-e688a147f2c1
+  Args:
+    type: :Person
+    source: Constantine_of_Greece
+  AddTriple (f3ea788a-ff92-4ca2-a3e1-557ac436a5e0)
+ Call ID: f3ea788a-ff92-4ca2-a3e1-557ac436a5e0
+  Args:
+    target: Constantine_of_Greece
+    relation: :hasBrother
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AssignClass (ff3febb7-189d-4fac-ab34-cdec454cb003)
+ Call ID: ff3febb7-189d-4fac-ab34-cdec454cb003
+  Args:
+    source: George_of_Greece
+    type: :Man
+  AssignClass (8112f52f-416a-4ceb-ae79-1924bf4ce092)
+ Call ID: 8112f52f-416a-4ceb-ae79-1924bf4ce092
+  Args:
+    source: George_of_Greece
+    type: :Person
+  AddTriple (0310b9b3-c4fc-4a9d-9cc6-81dadff76c39)
+ Call ID: 0310b9b3-c4fc-4a9d-9cc6-81dadff76c39
+  Args:
+    target: George_of_Greece
+    relation: :hasBrother
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AssignClass (aa9947e6-3eda-46d2-940a-939f886e924e)
+ Call ID: aa9947e6-3eda-46d2-940a-939f886e924e
+  Args:
+    type: :Man
+    source: George_Simitis
+  AssignClass (7b542be0-03ae-4715-96f4-a84adbad5f8a)
+ Call ID: 7b542be0-03ae-4715-96f4-a84adbad5f8a
+  Args:
+    type: :Person
+    source: George_Simitis
+  AssignClass (77f0fa3f-e69c-4875-80f8-7537cba88284)
+ Call ID: 77f0fa3f-e69c-4875-80f8-7537cba88284
+  Args:
+    source: Kostas_Simitis
+    type: :Man
+  AssignClass (0b8dff45-0f48-46a5-8a09-cbf2f8f6792d)
+ Call ID: 0b8dff45-0f48-46a5-8a09-cbf2f8f6792d
+  Args:
+    source: Kostas_Simitis
+    type: :Person
+  AddTriple (f7f61c81-98e1-490a-bbee-8dcfe676e9bf)
+ Call ID: f7f61c81-98e1-490a-bbee-8dcfe676e9bf
+  Args:
+    relation: :hasFather
+    target: George_Simitis
+    source: Kostas_Simitis
+  Finish (b2437fb4-04c6-447d-ab9e-5850f8f439c7)
+ Call ID: b2437fb4-04c6-447d-ab9e-5850f8f439c7
   Args:

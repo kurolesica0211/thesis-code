@@ -69,20 +69,23 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Isabel Alfonsa of Bourbon-Two Sicilies, Infanta of Spain, (Isabel Alfonsa María Teresa Antonia Cristina Mercedes Carolina Adelaida Rafaela de Borbón-Dos Sicilias y Borbón; 16 October 1904 – 18 July 1985) was a member of the House of Bourbon-Two Sicilies and a princess of Bourbon-Two Sicilies by birth.
-Family
+Klaus Felix von Amsberg (German: Klaus Felix Friedrich Leopold Gabriel Archim Julius August von Amsberg; 1 September 1890 – 19 December 1953) was a member of the German Niederer Adel (lower nobility) and father of Prince Claus of the Netherlands.
+Early life
 
-Isabel Alfonsa was the third child of Prince Carlos of Bourbon-Two Sicilies and his first wife María de las Mercedes, Princess of Asturias.
-Isabel Alfonsa's maternal grandparents were Alfonso XII of Spain and Maria Christina of Austria.
-Marriage and issue
+He was born at Rehna, Mecklenburg-Schwerin, German Empire (now Mecklenburg-Vorpommern, Germany), the first child of Wilhelm von Amsberg (1856–1929), by his marriage to Elise von Vieregg (1866–1951), member of an old aristocratic family.
+Claus was from 1917 the steward of an estate after a failed venture in Africa as a planter.
+Marriage
 
-Isabel Alfonsa married her first cousin once removed Count Jan Kanty Zamoyski, seventh child and third son of Count Andrzej Zamoyski and his wife Princess Maria Carolina of Bourbon-Two Sicilies, on 9 March 1929 in Madrid.
+Claus married on 4 September 1924 at Hitzacker to Baroness Gösta von dem Bussche-Haddenhausen (26 January 1902 –
+13 June 1996), daughter of Baron Georg von dem Bussche-Haddenhausen (1869–1923) and Baroness Gabriele von dem Bussche-Ippenburg (1877–1973).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -98,39 +101,9 @@ Isabel Alfonsa married her first cousin once removed Count Jan Kanty Zamoyski, s
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -145,6 +118,23 @@ Isabel Alfonsa married her first cousin once removed Count Jan Kanty Zamoyski, s
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -162,6 +152,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -229,29 +234,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,6 +257,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -272,6 +277,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -280,17 +287,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -318,6 +327,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -333,149 +426,151 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (66932e25-3ebd-431f-b438-7f711d9b8fec)
- Call ID: 66932e25-3ebd-431f-b438-7f711d9b8fec
-  Args:
-    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
-    type: :Person
-  AssignClass (97b36e2b-a72a-4dd5-ac1b-52fa30a83284)
- Call ID: 97b36e2b-a72a-4dd5-ac1b-52fa30a83284
-  Args:
-    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
-    type: :Woman
-  AssignClass (f2664ae8-f167-494f-95c0-ef542616d7f2)
- Call ID: f2664ae8-f167-494f-95c0-ef542616d7f2
-  Args:
-    type: :Person
-    source: :Prince_Carlos_of_Bourbon_Two_Sicilies
-  AssignClass (cce3ba6d-2415-4ba7-abe3-3e8acb2fee34)
- Call ID: cce3ba6d-2415-4ba7-abe3-3e8acb2fee34
-  Args:
-    source: :Prince_Carlos_of_Bourbon_Two_Sicilies
-    type: :Man
-  AssignClass (8d70950f-e6f9-4de6-88c0-1452ad7834ca)
- Call ID: 8d70950f-e6f9-4de6-88c0-1452ad7834ca
-  Args:
-    source: :Maria_de_las_Mercedes_Princess_of_Asturias
-    type: :Person
-  AssignClass (e38c7253-6842-47e8-a55a-e01f219329b2)
- Call ID: e38c7253-6842-47e8-a55a-e01f219329b2
-  Args:
-    source: :Maria_de_las_Mercedes_Princess_of_Asturias
-    type: :Woman
-  AssignClass (568fcee4-70d5-480b-b212-0074f86e2587)
- Call ID: 568fcee4-70d5-480b-b212-0074f86e2587
-  Args:
-    type: :Person
-    source: :Alfonso_XII_of_Spain
-  AssignClass (85ed9d4f-4098-439c-8092-2a78b8ca2d7d)
- Call ID: 85ed9d4f-4098-439c-8092-2a78b8ca2d7d
+  AssignClass (5b63ee05-6f44-469e-bfa3-01d1df149465)
+ Call ID: 5b63ee05-6f44-469e-bfa3-01d1df149465
   Args:
     type: :Man
-    source: :Alfonso_XII_of_Spain
-  AssignClass (e8d75155-6162-4d74-9e9b-ed060a3c2b26)
- Call ID: e8d75155-6162-4d74-9e9b-ed060a3c2b26
+    source: Klaus_Felix_von_Amsberg
+  AssignClass (26ed350f-3085-43b1-8d52-99769f0452b3)
+ Call ID: 26ed350f-3085-43b1-8d52-99769f0452b3
   Args:
-    source: :Maria_Christina_of_Austria
-    type: :Person
-  AssignClass (68188be2-e663-42d1-97f9-020ea8ac2094)
- Call ID: 68188be2-e663-42d1-97f9-020ea8ac2094
-  Args:
-    source: :Maria_Christina_of_Austria
-    type: :Woman
-  AssignClass (4a37b198-c6a7-48f1-a4bd-a295ebe27e7c)
- Call ID: 4a37b198-c6a7-48f1-a4bd-a295ebe27e7c
-  Args:
-    type: :Person
-    source: :Count_Jan_Kanty_Zamoyski
-  AssignClass (4045590f-88e9-48c6-95e6-2606f24760e0)
- Call ID: 4045590f-88e9-48c6-95e6-2606f24760e0
-  Args:
-    source: :Count_Jan_Kanty_Zamoyski
+    source: Wilhelm_von_Amsberg
     type: :Man
-  AssignClass (7cac3c58-f0bb-4e6e-a463-80a54fc1befc)
- Call ID: 7cac3c58-f0bb-4e6e-a463-80a54fc1befc
+  AssignClass (f69dd0dc-7ea2-4119-a9b1-d250db9c8f6d)
+ Call ID: f69dd0dc-7ea2-4119-a9b1-d250db9c8f6d
   Args:
-    type: :Person
-    source: :Count_Andrzej_Zamoyski
-  AssignClass (c134ee11-ed2e-4005-ab3c-392a9280642f)
- Call ID: c134ee11-ed2e-4005-ab3c-392a9280642f
+    type: :Woman
+    source: Elise_von_Vieregg
+  AssignClass (0ae34bc6-4aa7-4840-a9c7-44fd11303369)
+ Call ID: 0ae34bc6-4aa7-4840-a9c7-44fd11303369
+  Args:
+    source: Gosta_von_dem_Bussche-Haddenhausen
+    type: :Woman
+  AssignClass (10ade1a2-ceb6-4765-9512-859d636652b0)
+ Call ID: 10ade1a2-ceb6-4765-9512-859d636652b0
   Args:
     type: :Man
-    source: :Count_Andrzej_Zamoyski
-  AssignClass (1dd9fd11-e430-4f3a-8224-0a735c5c5386)
- Call ID: 1dd9fd11-e430-4f3a-8224-0a735c5c5386
+    source: Georg_von_dem_Bussche-Haddenhausen
+  AssignClass (13cc5534-3852-45c1-b003-9fc8b16ddf00)
+ Call ID: 13cc5534-3852-45c1-b003-9fc8b16ddf00
   Args:
-    type: :Person
-    source: :Princess_Maria_Carolina_of_Bourbon_Two_Sicilies
-  AssignClass (c7c5d979-b778-4853-938f-428a6784f066)
- Call ID: c7c5d979-b778-4853-938f-428a6784f066
-  Args:
-    source: :Princess_Maria_Carolina_of_Bourbon_Two_Sicilies
+    source: Gabriele_von_dem_Bussche-Ippenburg
     type: :Woman
-  AddLiteral (db97bdc7-3f5a-4589-834f-6a06601a948e)
- Call ID: db97bdc7-3f5a-4589-834f-6a06601a948e
+  AddLiteral (44859871-0b5f-412a-9fc7-c764f5c92661)
+ Call ID: 44859871-0b5f-412a-9fc7-c764f5c92661
   Args:
-    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
-    literal_type: xsd:string
-    literal_value: 1904
+    literal_type: xsd:integer
+    source: Klaus_Felix_von_Amsberg
     relation: :hasBirthYear
-  AddLiteral (c141648c-1c55-4dad-97f3-742aedf616e3)
- Call ID: c141648c-1c55-4dad-97f3-742aedf616e3
+    literal_value: 1890
+  AddLiteral (5866231d-d685-4cff-a066-f7793facd583)
+ Call ID: 5866231d-d685-4cff-a066-f7793facd583
   Args:
-    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
-    literal_type: xsd:string
-    literal_value: 1985
+    literal_type: xsd:integer
+    source: Klaus_Felix_von_Amsberg
     relation: :hasDeathYear
-  AddTriple (e0542308-f4d8-4ce4-a102-1fc7ea18b5fc)
- Call ID: e0542308-f4d8-4ce4-a102-1fc7ea18b5fc
+    literal_value: 1953
+  AddLiteral (4a2d56bc-fdfb-4836-bbb8-3564f5af1aec)
+ Call ID: 4a2d56bc-fdfb-4836-bbb8-3564f5af1aec
   Args:
-    relation: :hasFather
-    target: :Prince_Carlos_of_Bourbon_Two_Sicilies
-    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
-  AddTriple (cf833d02-7805-40e2-92b5-b35e3bdd59c2)
- Call ID: cf833d02-7805-40e2-92b5-b35e3bdd59c2
+    source: Wilhelm_von_Amsberg
+    literal_type: xsd:integer
+    literal_value: 1856
+    relation: :hasBirthYear
+  AddLiteral (d2a1c291-821b-4def-9c29-aa989d0ac290)
+ Call ID: d2a1c291-821b-4def-9c29-aa989d0ac290
   Args:
-    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
-    target: :Maria_de_las_Mercedes_Princess_of_Asturias
-    relation: :hasMother
-  AddTriple (838763b4-9175-4955-95da-03bf1347ab00)
- Call ID: 838763b4-9175-4955-95da-03bf1347ab00
-  Args:
-    relation: :hasFather
-    target: :Alfonso_XII_of_Spain
-    source: :Maria_de_las_Mercedes_Princess_of_Asturias
-  AddTriple (27a8578d-4bd2-42c8-873c-18db51da6f28)
- Call ID: 27a8578d-4bd2-42c8-873c-18db51da6f28
-  Args:
-    source: :Maria_de_las_Mercedes_Princess_of_Asturias
-    relation: :hasMother
-    target: :Maria_Christina_of_Austria
-  AddTriple (443dd6f5-30d5-4285-8236-6d7bd931b07b)
- Call ID: 443dd6f5-30d5-4285-8236-6d7bd931b07b
-  Args:
-    source: :Count_Jan_Kanty_Zamoyski
-    relation: :hasFather
-    target: :Count_Andrzej_Zamoyski
-  AddTriple (787e51b3-a1c1-4937-b857-9ba3e2e6a929)
- Call ID: 787e51b3-a1c1-4937-b857-9ba3e2e6a929
-  Args:
-    source: :Count_Jan_Kanty_Zamoyski
-    target: :Princess_Maria_Carolina_of_Bourbon_Two_Sicilies
-    relation: :hasMother
-  AddLiteral (c1442d96-47da-422b-a1c2-14a8fe0ce045)
- Call ID: c1442d96-47da-422b-a1c2-14a8fe0ce045
-  Args:
-    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
-    literal_type: xsd:string
+    literal_type: xsd:integer
+    source: Wilhelm_von_Amsberg
+    relation: :hasDeathYear
     literal_value: 1929
-    relation: :hasMarriageYear
-  AddTriple (695ecdf1-ab49-45de-ac9d-ae3df4123694)
- Call ID: 695ecdf1-ab49-45de-ac9d-ae3df4123694
+  AddLiteral (113ab069-da09-478f-bdce-8b440a48dcb5)
+ Call ID: 113ab069-da09-478f-bdce-8b440a48dcb5
   Args:
-    relation: :hasRelation
-    target: :Count_Jan_Kanty_Zamoyski
-    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
-  Finish (fe78c804-8ea8-482f-a548-45cf0150b0e1)
- Call ID: fe78c804-8ea8-482f-a548-45cf0150b0e1
+    source: Elise_von_Vieregg
+    literal_type: xsd:integer
+    literal_value: 1866
+    relation: :hasBirthYear
+  AddLiteral (9ab46cbd-2184-4863-92c5-177192307a9d)
+ Call ID: 9ab46cbd-2184-4863-92c5-177192307a9d
+  Args:
+    literal_value: 1951
+    relation: :hasDeathYear
+    source: Elise_von_Vieregg
+    literal_type: xsd:integer
+  AddLiteral (6a96d4c4-9756-4394-9966-2f640dfc3bde)
+ Call ID: 6a96d4c4-9756-4394-9966-2f640dfc3bde
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 1924
+    literal_type: xsd:integer
+    source: Klaus_Felix_von_Amsberg
+  AddLiteral (a596371e-9377-4aa6-ba0f-b1d107ce775d)
+ Call ID: a596371e-9377-4aa6-ba0f-b1d107ce775d
+  Args:
+    literal_type: xsd:integer
+    source: Gosta_von_dem_Bussche-Haddenhausen
+    relation: :hasBirthYear
+    literal_value: 1902
+  AddLiteral (ef1848c1-740f-49a0-a6f5-0fe6ae49c0be)
+ Call ID: ef1848c1-740f-49a0-a6f5-0fe6ae49c0be
+  Args:
+    literal_value: 1996
+    relation: :hasDeathYear
+    source: Gosta_von_dem_Bussche-Haddenhausen
+    literal_type: xsd:integer
+  AddLiteral (5ec05a1a-0e68-445f-9b91-b5ac4bb21510)
+ Call ID: 5ec05a1a-0e68-445f-9b91-b5ac4bb21510
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1869
+    literal_type: xsd:integer
+    source: Georg_von_dem_Bussche-Haddenhausen
+  AddLiteral (b2f5c8d8-a702-4bf9-a0fa-c9ba0dad575d)
+ Call ID: b2f5c8d8-a702-4bf9-a0fa-c9ba0dad575d
+  Args:
+    source: Georg_von_dem_Bussche-Haddenhausen
+    literal_type: xsd:integer
+    literal_value: 1923
+    relation: :hasDeathYear
+  AddLiteral (2b39323b-5c84-4ac1-8f2a-2809f592f76b)
+ Call ID: 2b39323b-5c84-4ac1-8f2a-2809f592f76b
+  Args:
+    literal_value: 1877
+    relation: :hasBirthYear
+    source: Gabriele_von_dem_Bussche-Ippenburg
+    literal_type: xsd:integer
+  AddLiteral (8d52611a-e0a6-40e9-8acd-a594ead20fad)
+ Call ID: 8d52611a-e0a6-40e9-8acd-a594ead20fad
+  Args:
+    source: Gabriele_von_dem_Bussche-Ippenburg
+    literal_type: xsd:integer
+    literal_value: 1973
+    relation: :hasDeathYear
+  AddTriple (03d2b4a1-ef3a-4359-94b8-9f6d254f21a1)
+ Call ID: 03d2b4a1-ef3a-4359-94b8-9f6d254f21a1
+  Args:
+    target: Wilhelm_von_Amsberg
+    source: Klaus_Felix_von_Amsberg
+    relation: :hasFather
+  AddTriple (dab128ac-743c-4a76-bfb2-675afa95f5ec)
+ Call ID: dab128ac-743c-4a76-bfb2-675afa95f5ec
+  Args:
+    target: Elise_von_Vieregg
+    source: Klaus_Felix_von_Amsberg
+    relation: :hasMother
+  AddTriple (0cca0933-e497-48a3-839d-2d973bfb70cc)
+ Call ID: 0cca0933-e497-48a3-839d-2d973bfb70cc
+  Args:
+    source: Gosta_von_dem_Bussche-Haddenhausen
+    target: Georg_von_dem_Bussche-Haddenhausen
+    relation: :hasFather
+  AddTriple (efce0565-4d89-4ce6-9d3a-eb600ca844d3)
+ Call ID: efce0565-4d89-4ce6-9d3a-eb600ca844d3
+  Args:
+    source: Gosta_von_dem_Bussche-Haddenhausen
+    target: Gabriele_von_dem_Bussche-Ippenburg
+    relation: :hasMother
+  Finish (816f3627-4c1d-4f47-9d5b-912028cf73c1)
+ Call ID: 816f3627-4c1d-4f47-9d5b-912028cf73c1
   Args:

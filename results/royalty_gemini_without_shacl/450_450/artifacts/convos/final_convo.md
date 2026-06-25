@@ -69,21 +69,30 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Inés of Bourbon-Two Sicilies, Duchess of Syracuse, GE (born 18 February 1940) is a Spanish princess, the youngest child of Infante Alfonso, heir to the throne of the Two Sicilies, and Infanta Alicia.
-Princess Inés was, at the time of her birth, 9th in line of succession to the Spanish throne.
-Early life
+Princess Beatrix of Hohenlohe-Langenburg (German: Beatrix Alice Marie Melita Margarete Prinzessin zu Hohenlohe-Langenburg; 10 July 1936 – 15 November 1997) was a German princess from the House of Hohenlohe-Langenburg.
+She was a niece of Prince Philip, Duke of Edinburgh, and thus a first cousin of King Charles III.
+Biography
 
-The last of three children and the second daughter of Infante Alfonso de Borbón-Dos Sicilias y de Borbón (1901–1964) and Princess Alicia of Bourbon-Parma (1917–2017), she was born during her parents' exile from republican Spain in Lausanne, Switzerland.
-Family
-
-Inés lived in Madrid with her family, and also spent time at her parents' finca, "La Toledana", a major hunting estate in Retuerta del Bullaque.
-They had five children: Isabel, Eugenia, Sonia (1969–2022), Manuel, and Mencía de Morales y Borbón-Dos Sicilias.
+Beatrix was born on 10 July 1936 in Schwäbisch Hall to Gottfried, Hereditary Prince of Hohenlohe-Langenburg, and Princess Margarita of Greece and Denmark, the eldest sister of Prince Philip, Duke of Edinburgh.
+The family was not invited to Philip's wedding to Princess Elizabeth of the United Kingdom in 1947, due to her parents' membership in the Nazi Party.
+Six years later, however, Beatrix and her family were seated in the royal box at  her aunt's coronation in Westminster Abbey.
+In January 1956, Beatrix and her cousin, Princess Christina of Hesse, moved to London into a flat arranged by their uncle, Prince Philip, in Dolphin Square.
+Beatrix took dressmaking classes at the Royal College of Art.
+While Princess Christina eventually settled in the United Kingdom, marrying Prince Andrew of Yugoslavia whom the princesses were close friends with during their stay, Beatrix returned to Germany that same year.
+In 1961, Beatrix became engaged to her first cousin, Maximilian, Hereditary Prince of Baden.
+Maximilian later married Archduchess Valerie of Austria (b. 1941) in 1966 and Beatrix never married.
+In her later years, she served as secretary to Margaret, Princess of Hesse and by Rhine, the sister-in-law of her aunt, Princess Cecilie.
+She lived in Langenburg, Germany, for most of her life.
+She continued to attend family events in Britain, such as the weddings of her cousins Prince Charles (later King Charles III) and Prince Andrew in 1981 and 1986, respectively.
+Beatrix died on 15 November 1997, aged 61, in the town where she was born.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -99,39 +108,9 @@ They had five children: Isabel, Eugenia, Sonia (1969–2022), Manuel, and Mencí
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -146,6 +125,23 @@ They had five children: Isabel, Eugenia, Sonia (1969–2022), Manuel, and Mencí
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -163,6 +159,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -230,29 +241,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,6 +264,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -273,6 +284,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -281,17 +294,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -319,6 +334,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -334,365 +433,155 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c074ed91-090b-4a9a-b884-54550908f945)
- Call ID: c074ed91-090b-4a9a-b884-54550908f945
+  AssignClass (9bf346be-2add-4b2d-a221-5a7a67ec0f3c)
+ Call ID: 9bf346be-2add-4b2d-a221-5a7a67ec0f3c
   Args:
-    source: Inés_of_Bourbon-Two_Sicilies
     type: :Woman
-  AssignClass (8102403a-f436-41bb-90a5-16820621f440)
- Call ID: 8102403a-f436-41bb-90a5-16820621f440
+    source: Beatrix_of_Hohenlohe-Langenburg
+  AssignClass (7d048314-aaf5-4b6b-a293-f5439b2925b9)
+ Call ID: 7d048314-aaf5-4b6b-a293-f5439b2925b9
   Args:
-    source: Inés_of_Bourbon-Two_Sicilies
     type: :Person
-  AddLiteral (f93ee53d-bce1-45c3-9501-7ef77d099beb)
- Call ID: f93ee53d-bce1-45c3-9501-7ef77d099beb
+    source: Beatrix_of_Hohenlohe-Langenburg
+  AddLiteral (0d988868-3c3f-4003-b5e3-605de855efee)
+ Call ID: 0d988868-3c3f-4003-b5e3-605de855efee
   Args:
-    literal_value: 1940
+    literal_value: 1936
     literal_type: xsd:integer
-    source: Inés_of_Bourbon-Two_Sicilies
+    source: Beatrix_of_Hohenlohe-Langenburg
     relation: :hasBirthYear
-  AssignClass (ee256ba0-3dc3-4140-a086-139f08e351f6)
- Call ID: ee256ba0-3dc3-4140-a086-139f08e351f6
+  AddLiteral (d4afe175-5e65-4b64-8fa2-4072a9465725)
+ Call ID: d4afe175-5e65-4b64-8fa2-4072a9465725
   Args:
-    source: Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón
+    literal_value: 1997
+    literal_type: xsd:integer
+    source: Beatrix_of_Hohenlohe-Langenburg
+    relation: :hasDeathYear
+  AssignClass (14f033d7-71ce-4f51-87fa-31d3158b1bf4)
+ Call ID: 14f033d7-71ce-4f51-87fa-31d3158b1bf4
+  Args:
+    source: Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg
     type: :Man
-  AssignClass (b5c0db36-5b5f-42f7-90f3-ebafcf405745)
- Call ID: b5c0db36-5b5f-42f7-90f3-ebafcf405745
+  AssignClass (1ace6fdd-5e93-472e-8253-73bdbc4b2e73)
+ Call ID: 1ace6fdd-5e93-472e-8253-73bdbc4b2e73
   Args:
-    source: Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón
+    source: Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg
     type: :Person
-  AssignClass (2da8b654-6f63-4c9d-aa9d-993970c4fb2c)
- Call ID: 2da8b654-6f63-4c9d-aa9d-993970c4fb2c
+  AssignClass (3990932c-5260-4f80-bca1-16e99843556f)
+ Call ID: 3990932c-5260-4f80-bca1-16e99843556f
   Args:
-    source: Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón
-    type: :Ancestor
-  AddLiteral (bdf4d227-5d72-4a90-ac8c-d274b7c06d96)
- Call ID: bdf4d227-5d72-4a90-ac8c-d274b7c06d96
-  Args:
-    literal_value: 1901
-    source: Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (0deaf73e-027c-42be-86be-802e39bd2512)
- Call ID: 0deaf73e-027c-42be-86be-802e39bd2512
-  Args:
-    relation: :hasDeathYear
-    source: Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón
-    literal_type: xsd:integer
-    literal_value: 1964
-  AssignClass (6882f2bf-e712-43f0-93fa-3183a644d270)
- Call ID: 6882f2bf-e712-43f0-93fa-3183a644d270
-  Args:
+    source: Margarita_of_Greece_and_Denmark
     type: :Woman
-    source: Alicia_of_Bourbon-Parma
-  AssignClass (6c50bc23-3d1e-4d80-8c3a-bd25fc8e3903)
- Call ID: 6c50bc23-3d1e-4d80-8c3a-bd25fc8e3903
+  AssignClass (af79c9b6-1b4e-4cc8-9d1c-ed347cedae0e)
+ Call ID: af79c9b6-1b4e-4cc8-9d1c-ed347cedae0e
   Args:
     type: :Person
-    source: Alicia_of_Bourbon-Parma
-  AssignClass (9ea0c9c8-5305-48cb-9b62-e36f4c074b44)
- Call ID: 9ea0c9c8-5305-48cb-9b62-e36f4c074b44
+    source: Margarita_of_Greece_and_Denmark
+  AddTriple (7bd87903-1f35-4f99-b329-00c158c72e40)
+ Call ID: 7bd87903-1f35-4f99-b329-00c158c72e40
   Args:
-    type: :Ancestor
-    source: Alicia_of_Bourbon-Parma
-  AddLiteral (6f53880e-ba08-4167-99a5-b1a32bb45d95)
- Call ID: 6f53880e-ba08-4167-99a5-b1a32bb45d95
-  Args:
-    literal_value: 1917
-    literal_type: xsd:integer
-    source: Alicia_of_Bourbon-Parma
-    relation: :hasBirthYear
-  AddLiteral (3748825a-e936-4d76-b706-92a638adf9ac)
- Call ID: 3748825a-e936-4d76-b706-92a638adf9ac
-  Args:
-    source: Alicia_of_Bourbon-Parma
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 2017
-  AddTriple (028b1a8e-6346-424c-9ba3-0204f715f996)
- Call ID: 028b1a8e-6346-424c-9ba3-0204f715f996
-  Args:
-    source: Inés_of_Bourbon-Two_Sicilies
-    target: Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón
+    target: Gottfried_Hereditary_Prince_of_Hohenlohe-Langenburg
     relation: :hasFather
-  AddTriple (909b1f70-40f7-41cc-95a1-8ba6f226a0f7)
- Call ID: 909b1f70-40f7-41cc-95a1-8ba6f226a0f7
+    source: Beatrix_of_Hohenlohe-Langenburg
+  AddTriple (6e21d1d6-e11a-41ee-8cfb-29fb44830222)
+ Call ID: 6e21d1d6-e11a-41ee-8cfb-29fb44830222
   Args:
-    source: Inés_of_Bourbon-Two_Sicilies
-    target: Alicia_of_Bourbon-Parma
+    target: Margarita_of_Greece_and_Denmark
     relation: :hasMother
-  AssignClass (f42af04b-7310-42aa-a2a1-a2f5c7d80406)
- Call ID: f42af04b-7310-42aa-a2a1-a2f5c7d80406
+    source: Beatrix_of_Hohenlohe-Langenburg
+  AssignClass (e3f8853a-e81a-4175-8577-1e5df10e5f99)
+ Call ID: e3f8853a-e81a-4175-8577-1e5df10e5f99
   Args:
-    type: :Woman
-    source: Isabel
-  AssignClass (a3ce6b6f-9822-450c-8627-bd48e8b66b83)
- Call ID: a3ce6b6f-9822-450c-8627-bd48e8b66b83
-  Args:
-    source: Isabel
-    type: :Person
-  AssignClass (a7e14fff-ea31-43f3-8f97-d52dd4f11bca)
- Call ID: a7e14fff-ea31-43f3-8f97-d52dd4f11bca
-  Args:
-    type: :Woman
-    source: Eugenia
-  AssignClass (2996c4d1-3bf0-42f3-b9ba-a11bf62dd566)
- Call ID: 2996c4d1-3bf0-42f3-b9ba-a11bf62dd566
-  Args:
-    type: :Person
-    source: Eugenia
-  AssignClass (8ab2e467-3b70-4dbe-ab26-cc601e29eb7d)
- Call ID: 8ab2e467-3b70-4dbe-ab26-cc601e29eb7d
-  Args:
-    type: :Woman
-    source: Sonia
-  AssignClass (ad9cbf80-36ad-4ea2-ab2c-9a1c6489e911)
- Call ID: ad9cbf80-36ad-4ea2-ab2c-9a1c6489e911
-  Args:
-    source: Sonia
-    type: :Person
-  AddLiteral (9f2dff92-c490-40f3-b1b3-f7401a50c503)
- Call ID: 9f2dff92-c490-40f3-b1b3-f7401a50c503
-  Args:
-    relation: :hasBirthYear
-    source: Sonia
-    literal_type: xsd:integer
-    literal_value: 1969
-  AddLiteral (06372367-4ca6-4f49-96ff-c5919aa35f43)
- Call ID: 06372367-4ca6-4f49-96ff-c5919aa35f43
-  Args:
-    literal_value: 2022
-    source: Sonia
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-  AssignClass (ba8ad111-e009-43c1-bed5-43d5c363a313)
- Call ID: ba8ad111-e009-43c1-bed5-43d5c363a313
-  Args:
-    source: Manuel
     type: :Man
-  AssignClass (03499625-e99d-4e45-b3e2-0db91c710432)
- Call ID: 03499625-e99d-4e45-b3e2-0db91c710432
+    source: Prince_Philip_Duke_of_Edinburgh
+  AssignClass (52abb1da-5e0f-4253-9ecf-11026e174351)
+ Call ID: 52abb1da-5e0f-4253-9ecf-11026e174351
   Args:
-    source: Manuel
+    source: Prince_Philip_Duke_of_Edinburgh
     type: :Person
-  AssignClass (855a9cb7-68ee-4acb-8d6a-cef84b2ec1e2)
- Call ID: 855a9cb7-68ee-4acb-8d6a-cef84b2ec1e2
+  AddTriple (7431239e-3c17-4581-b939-ce9c769378ed)
+ Call ID: 7431239e-3c17-4581-b939-ce9c769378ed
   Args:
-    source: Mencía_de_Morales_y_Borbón-Dos_Sicilias
+    relation: :isBrotherOf
+    target: Margarita_of_Greece_and_Denmark
+    source: Prince_Philip_Duke_of_Edinburgh
+  AssignClass (7f812655-3fe0-49cf-b68e-9d7925f9333b)
+ Call ID: 7f812655-3fe0-49cf-b68e-9d7925f9333b
+  Args:
+    type: :Man
+    source: King_Charles_III
+  AssignClass (19e0f5cc-dc03-45bc-bbe4-96e50986c2b8)
+ Call ID: 19e0f5cc-dc03-45bc-bbe4-96e50986c2b8
+  Args:
+    source: King_Charles_III
+    type: :Person
+  AssignClass (9be0cc6f-3052-409f-b608-fa2155a54388)
+ Call ID: 9be0cc6f-3052-409f-b608-fa2155a54388
+  Args:
     type: :Woman
-  AssignClass (ff2193c7-0c9c-4dcc-9a69-e4d8eb1f53a0)
- Call ID: ff2193c7-0c9c-4dcc-9a69-e4d8eb1f53a0
+    source: Princess_Christina_of_Hesse
+  AssignClass (aa1651c0-0956-4044-af55-38a3fa1b4d09)
+ Call ID: aa1651c0-0956-4044-af55-38a3fa1b4d09
   Args:
-    source: Mencía_de_Morales_y_Borbón-Dos_Sicilias
     type: :Person
-  AddTriple (a096f9d6-5344-403e-9c7f-f8da43484eec)
- Call ID: a096f9d6-5344-403e-9c7f-f8da43484eec
+    source: Princess_Christina_of_Hesse
+  AssignClass (47046115-bde7-4821-8f05-27d37faafda6)
+ Call ID: 47046115-bde7-4821-8f05-27d37faafda6
   Args:
-    relation: :isMotherOf
-    target: Isabel
-    source: Inés_of_Bourbon-Two_Sicilies
-  AddTriple (ad6f742b-4e1f-4289-9bea-edb7eeff939d)
- Call ID: ad6f742b-4e1f-4289-9bea-edb7eeff939d
+    source: Prince_Andrew_of_Yugoslavia
+    type: :Man
+  AssignClass (d028c62b-eead-4256-b226-8331f856771f)
+ Call ID: d028c62b-eead-4256-b226-8331f856771f
   Args:
-    relation: :isMotherOf
-    target: Eugenia
-    source: Inés_of_Bourbon-Two_Sicilies
-  AddTriple (cb1e4dfd-0e0b-4d30-9ae1-b763521344d5)
- Call ID: cb1e4dfd-0e0b-4d30-9ae1-b763521344d5
+    source: Prince_Andrew_of_Yugoslavia
+    type: :Person
+  AssignClass (48a9c110-5b47-44f6-a11c-3cf62c1b6bfe)
+ Call ID: 48a9c110-5b47-44f6-a11c-3cf62c1b6bfe
   Args:
-    source: Inés_of_Bourbon-Two_Sicilies
-    target: Sonia
-    relation: :isMotherOf
-  AddTriple (df334bda-726d-449a-91d5-9fb7f53500a9)
- Call ID: df334bda-726d-449a-91d5-9fb7f53500a9
+    source: Maximilian_Hereditary_Prince_of_Baden
+    type: :Man
+  AssignClass (492e0531-d35e-4790-8f94-b470b0b420c0)
+ Call ID: 492e0531-d35e-4790-8f94-b470b0b420c0
   Args:
-    source: Inés_of_Bourbon-Two_Sicilies
-    target: Manuel
-    relation: :isMotherOf
-  AddTriple (5a4693f0-e08d-4712-acf0-323f99ab7c7c)
- Call ID: 5a4693f0-e08d-4712-acf0-323f99ab7c7c
+    source: Maximilian_Hereditary_Prince_of_Baden
+    type: :Person
+  AssignClass (29a33112-cbb6-4475-aa83-2ee22726ebb1)
+ Call ID: 29a33112-cbb6-4475-aa83-2ee22726ebb1
   Args:
-    source: Inés_of_Bourbon-Two_Sicilies
-    relation: :isMotherOf
-    target: Mencía_de_Morales_y_Borbón-Dos_Sicilias
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:In%C3%A9s_of_Bourbon-Two_Sicilies a :Person,
-          :Woman ;
-      :hasBirthYear 1940 ;
-      :hasFather data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;
-      :hasMother data:Alicia_of_Bourbon-Parma ;
-      :isMotherOf data:Eugenia,
-          data:Isabel,
-          data:Manuel,
-          data:Menc%C3%ADa_de_Morales_y_Borb%C3%B3n-Dos_Sicilias,
-          data:Sonia .
-
-  data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1901 ;
-      :hasDeathYear 1964 .
-
-  data:Alicia_of_Bourbon-Parma a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1917 ;
-      :hasDeathYear 2017 .
-
-  data:Eugenia a :Person,
-          :Woman .
-
-  data:Isabel a :Person,
-          :Woman .
-
-  data:Manuel a :Man,
-          :Person .
-
-  data:Menc%C3%ADa_de_Morales_y_Borb%C3%B3n-Dos_Sicilias a :Person,
-          :Woman .
-
-  data:Sonia a :Person,
-          :Woman ;
-      :hasBirthYear 1969 ;
-      :hasDeathYear 2022 .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (8909fe46-32c5-4816-a505-1d53dfcb9a30)
- Call ID: 8909fe46-32c5-4816-a505-1d53dfcb9a30
+    source: Archduchess_Valerie_of_Austria
+    type: :Woman
+  AssignClass (c589f512-066a-4a4e-82d6-dfa642b9455b)
+ Call ID: c589f512-066a-4a4e-82d6-dfa642b9455b
+  Args:
+    source: Archduchess_Valerie_of_Austria
+    type: :Person
+  AddLiteral (5bd00b42-c4e2-4947-9c16-ac35f6278c0a)
+ Call ID: 5bd00b42-c4e2-4947-9c16-ac35f6278c0a
+  Args:
+    relation: :hasMarriageYear
+    source: Maximilian_Hereditary_Prince_of_Baden
+    literal_type: xsd:integer
+    literal_value: 1966
+  AssignClass (e211a20b-4be5-4366-9e65-635a2578936e)
+ Call ID: e211a20b-4be5-4366-9e65-635a2578936e
+  Args:
+    source: Margaret_Princess_of_Hesse_and_by_Rhine
+    type: :Woman
+  AssignClass (76f6bc1e-fca2-4609-9a3a-116dcb548e05)
+ Call ID: 76f6bc1e-fca2-4609-9a3a-116dcb548e05
+  Args:
+    source: Margaret_Princess_of_Hesse_and_by_Rhine
+    type: :Person
+  AssignClass (02ee7026-0b45-4b36-abfd-50fa7ed5c24b)
+ Call ID: 02ee7026-0b45-4b36-abfd-50fa7ed5c24b
+  Args:
+    type: :Woman
+    source: Princess_Cecilie
+  AssignClass (534e5211-9466-42ab-b872-73c0e3b1a4ca)
+ Call ID: 534e5211-9466-42ab-b872-73c0e3b1a4ca
+  Args:
+    type: :Person
+    source: Princess_Cecilie
+  Finish (a5fe7af7-270e-4cc0-a7b4-f1f2276fe221)
+ Call ID: a5fe7af7-270e-4cc0-a7b4-f1f2276fe221
   Args:

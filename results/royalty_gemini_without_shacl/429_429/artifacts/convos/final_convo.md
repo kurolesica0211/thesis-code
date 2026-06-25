@@ -69,49 +69,31 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Rose Cecilia "Rosie" Stancer (née Clayton; born 25 January 1960) is a British explorer and polar adventurer, and a female-line second cousin of King Charles III of the UK.
-Youth, education, family
+Kraft, 9th Prince of Hohenlohe-Langenburg (German: Kraft Alexander Ernst Ludwig Georg Emich Fürst zu Hohenlohe-Langenburg; 25 June 1935 – 16 March 2004), was a German prince and landowner who was titular head of the House of Hohenlohe-Langenburg.
+He was a nephew of Prince Philip, Duke of Edinburgh, a nephew-in-law of Queen Elizabeth II, and thus a first cousin of King Charles III.
+Early life
 
-Rosie Stancer attended Butterstone House School in Scotland and then Heathfield School, Ascot.
-Stancer is the daughter of Lady Mary Cecilia Leveson-Gower (1917–2014) and Sir Samuel Clayton.
-Her maternal grandparents were Rose Leveson-Gower, Countess Granville (an elder sister of Queen Elizabeth the Queen Mother), and William Leveson-Gower, 4th Earl Granville, naval commander, making her a second cousin of King Charles III.
-Her paternal grandfather was Brigadier-General Sir Gilbert Falkingham Clayton, British Army intelligence officer and colonial administrator.
-On 9 July 1993, she married William Wordie Stancer, with whom she has one son Jock Stancer.
-Her husband’s grandfather was, like Stancer herself, a polar explorer James Wordie.
-In 1997, Stancer was one of 20 amateur women selected for a place on the first all women's expedition to the North Pole, The 'McVities Penguin Polar Relay'.
-M&G ISA South Pole Expedition 1999
+Kraft was born on 25 June 1935 in Schwäbisch Hall to Gottfried, Hereditary Prince of Hohenlohe-Langenburg, and Princess Margarita of Greece and Denmark, the eldest sister of Prince Philip, Duke of Edinburgh.
+The family was not invited to Philip's wedding to Princess Elizabeth of the United Kingdom in 1947, due to his parents' membership of the Nazi Party.
+Six years later, however and his parents and sister, Princess Beatrix, were seated in the royal box at  his aunt's coronation in Westminster Abbey.
+Activities
 
-In 1999, Stancer and four others from the first expedition organised and managed their own expedition to the South Pole, The 'M&G ISA Challenge'.
-Snickers South Pole Solo 2004
+In 1960, Kraft succeeded his father as titular Prince of Hohenlohe-Langenburg.
+In 1965, he received his aunt and uncle, Queen Elizabeth II and Prince Philip, Duke of Edinburgh, at the damaged castle during their state visit to West Germany.
+He sold Weikersheim Palace to the state of Baden-Württemberg in 1967 to cover the cost of the restoration.
+Marriage and family
 
-In the Austral summer of 2003–4, Stancer skied solo and without re-supply to the South Pole on the 'Snickers South Pole Solo 2004' expedition.
-Hauling a sledge more than twice her body weight for over 700 miles (1,100 km), Stancer reached the Pole in 43 days 23 hours, a day longer than Fiona Thornewill who reached the South Pole a few days before Stancer.
-During the expedition Stancer gathered both meteorological and physiological data.
-Mars North Pole Solo 2007
-
-In 2007, Stancer attempted to become the first woman to trek solo to the Geographic North Pole.
-Having traveled 426 nautical miles in 84 days, Stancer was still able to set the world record for furthest solo female expedition to the north.
-The Long Haul Expedition 2019
-
-In 2019, Stancer joined Mike Laird on concurrent solo expeditions across Siberia’s Lake Baikal, the world’s largest, deepest, oldest freshwater lake.
-They traveled in opposite directions, with Stancer starting from the south and Laird from the north.
-Completing over 700 km in 21 days, Stancer set the record.
-Monarch's Way (2020)
-
-Stancer walked the Monarch's Way in England in 2020.
-In 2021 Stancer began a 'desert trilogy', travelling across the Aralkum in 2021 and the Sinai Peninsula in 2023; she travelled with Pom Oliver, Arabella Dorman and Lee Watts.
-Charities
-
-Stancer is an honorary board member for the charity Special Olympics GB, which seeks to provide sports training and competition in a variety of Olympic-style events for people with learning disabilities.
-Awards
-
-Stancer was awarded an honorary fellowship from the Polar exploration society.
+Kraft married, firstly, Princess Charlotte of Croÿ (born 1938) on 5 June 1965.
+He and Charlotte were divorced in 1990.
+He maintained relations with his British royal relatives, attending family events such as the wedding of Prince Charles and Lady Diana Spencer in 1981 and the wedding of Prince Andrew and Sarah Ferguson in 1986.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -127,39 +109,9 @@ Stancer was awarded an honorary fellowship from the Polar exploration society.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -174,6 +126,23 @@ Stancer was awarded an honorary fellowship from the Polar exploration society.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -191,6 +160,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,29 +242,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -289,6 +265,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -301,6 +285,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -309,17 +295,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -347,6 +335,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -362,178 +434,184 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (54f74b09-59af-41eb-98e6-03465bede8d7)
- Call ID: 54f74b09-59af-41eb-98e6-03465bede8d7
+  AssignClass (164ed9bf-8ce2-42ee-8bf1-3736ad22ba86)
+ Call ID: 164ed9bf-8ce2-42ee-8bf1-3736ad22ba86
   Args:
+    source: Kraft
+    type: :Man
+  AssignClass (4c5fa656-4f1b-4779-9751-43cb8850cec3)
+ Call ID: 4c5fa656-4f1b-4779-9751-43cb8850cec3
+  Args:
+    source: Gottfried
+    type: :Man
+  AssignClass (fd876561-f56b-4cdc-a50f-808eff43a3bf)
+ Call ID: fd876561-f56b-4cdc-a50f-808eff43a3bf
+  Args:
+    source: Margarita
     type: :Woman
-    source: Rosie Stancer
-  AssignClass (553ebc44-a395-461f-b2e3-5197158095fb)
- Call ID: 553ebc44-a395-461f-b2e3-5197158095fb
+  AssignClass (45c4a845-369a-46ac-a7fe-e9167f63a5e2)
+ Call ID: 45c4a845-369a-46ac-a7fe-e9167f63a5e2
   Args:
-    source: Rosie Stancer
-    type: :Person
-  AddLiteral (2714b171-fb63-4067-9c19-e590e1ceb66c)
- Call ID: 2714b171-fb63-4067-9c19-e590e1ceb66c
+    source: Beatrix
+    type: :Woman
+  AssignClass (2c6af4f1-e7b4-403c-a670-01b7e896ea79)
+ Call ID: 2c6af4f1-e7b4-403c-a670-01b7e896ea79
   Args:
-    relation: :knownAs
-    literal_value: Rose Cecilia Stancer
-    literal_type: xsd:string
-    source: Rosie Stancer
-  AddLiteral (58fd11b4-17f7-4955-a943-5138c06401de)
- Call ID: 58fd11b4-17f7-4955-a943-5138c06401de
+    source: Charlotte
+    type: :Woman
+  AddLiteral (fd45c0e3-6853-42ec-b529-2c01c197ccfb)
+ Call ID: fd45c0e3-6853-42ec-b529-2c01c197ccfb
   Args:
-    source: Rosie Stancer
-    literal_type: xsd:string
-    literal_value: Rosie Stancer
-    relation: :alsoKnownAs
-  AddLiteral (f630ea76-a6cc-4139-ba1b-7365b1fb5834)
- Call ID: f630ea76-a6cc-4139-ba1b-7365b1fb5834
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1960
-    source: Rosie Stancer
     literal_type: xsd:integer
-  AssignClass (e0499d10-161e-437e-afdc-ae24fda2b8c5)
- Call ID: e0499d10-161e-437e-afdc-ae24fda2b8c5
+    relation: :hasBirthYear
+    literal_value: 1935
+    source: Kraft
+  AddLiteral (6c2ce0fd-3e9d-46c1-ab3d-20441a25c37e)
+ Call ID: 6c2ce0fd-3e9d-46c1-ab3d-20441a25c37e
   Args:
-    type: :Woman
-    source: Lady Mary Cecilia Leveson-Gower
-  AssignClass (1d605ad2-2321-42a9-96e9-096614bcf0d2)
- Call ID: 1d605ad2-2321-42a9-96e9-096614bcf0d2
+    source: Kraft
+    literal_value: 2004
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddTriple (e6aa5269-1197-4a51-9002-a57dae1cd608)
+ Call ID: e6aa5269-1197-4a51-9002-a57dae1cd608
   Args:
-    type: :Ancestor
-    source: Lady Mary Cecilia Leveson-Gower
-  AddTriple (23590e43-eef5-4389-9f13-4cf8af3a1649)
- Call ID: 23590e43-eef5-4389-9f13-4cf8af3a1649
+    target: Gottfried
+    source: Kraft
+    relation: :hasFather
+  AddTriple (b2fd972a-fb7d-4986-8fe0-640e540e66b8)
+ Call ID: b2fd972a-fb7d-4986-8fe0-640e540e66b8
   Args:
-    target: Lady Mary Cecilia Leveson-Gower
+    target: Margarita
+    source: Kraft
     relation: :hasMother
-    source: Rosie Stancer
-  AssignClass (29f6b00c-fd9f-40ab-8356-8d684580280d)
- Call ID: 29f6b00c-fd9f-40ab-8356-8d684580280d
+  AddTriple (0f754e82-a6e0-44d0-90ce-e2508f77db70)
+ Call ID: 0f754e82-a6e0-44d0-90ce-e2508f77db70
   Args:
-    source: Sir Samuel Clayton
-    type: :Man
-  AssignClass (9922fe7a-aa90-4414-a3e7-4b169e79a0d9)
- Call ID: 9922fe7a-aa90-4414-a3e7-4b169e79a0d9
-  Args:
-    type: :Ancestor
-    source: Sir Samuel Clayton
-  AddTriple (1ecd5469-868c-4a91-b5e2-d1b762b8bc94)
- Call ID: 1ecd5469-868c-4a91-b5e2-d1b762b8bc94
-  Args:
-    target: Sir Samuel Clayton
-    relation: :hasFather
-    source: Rosie Stancer
-  AssignClass (347bfe8e-58b1-49f0-a1d0-0658e43ceb54)
- Call ID: 347bfe8e-58b1-49f0-a1d0-0658e43ceb54
-  Args:
-    source: Rose Leveson-Gower, Countess Granville
-    type: :Woman
-  AssignClass (4abf9d74-a462-4be6-8f22-6ed154643143)
- Call ID: 4abf9d74-a462-4be6-8f22-6ed154643143
-  Args:
-    type: :Ancestor
-    source: Rose Leveson-Gower, Countess Granville
-  AddTriple (a438cb87-63cf-4b51-a833-bca0ba67ddc6)
- Call ID: a438cb87-63cf-4b51-a833-bca0ba67ddc6
-  Args:
-    source: Lady Mary Cecilia Leveson-Gower
-    target: Rose Leveson-Gower, Countess Granville
-    relation: :hasMother
-  AssignClass (91be270b-b3b9-416c-ae10-3774c29976cf)
- Call ID: 91be270b-b3b9-416c-ae10-3774c29976cf
-  Args:
-    type: :Man
-    source: William Leveson-Gower, 4th Earl Granville
-  AssignClass (9b000413-1d7c-40b0-8368-bc7e18266099)
- Call ID: 9b000413-1d7c-40b0-8368-bc7e18266099
-  Args:
-    type: :Ancestor
-    source: William Leveson-Gower, 4th Earl Granville
-  AddTriple (37fc5357-f7ad-4d25-a6ce-c8fc5f535eda)
- Call ID: 37fc5357-f7ad-4d25-a6ce-c8fc5f535eda
-  Args:
-    source: Lady Mary Cecilia Leveson-Gower
-    target: William Leveson-Gower, 4th Earl Granville
-    relation: :hasFather
-  AssignClass (f4f4f3b9-f41e-4d9b-8ee6-7582691c55e9)
- Call ID: f4f4f3b9-f41e-4d9b-8ee6-7582691c55e9
-  Args:
-    source: Sir Gilbert Falkingham Clayton
-    type: :Man
-  AssignClass (6a2863ef-60a4-4227-af0c-b02dc13c0393)
- Call ID: 6a2863ef-60a4-4227-af0c-b02dc13c0393
-  Args:
-    source: Sir Gilbert Falkingham Clayton
-    type: :Ancestor
-  AddTriple (c56abe8b-b75d-4aa2-80ff-adb1742e2bf8)
- Call ID: c56abe8b-b75d-4aa2-80ff-adb1742e2bf8
-  Args:
-    relation: :hasFather
-    target: Sir Gilbert Falkingham Clayton
-    source: Sir Samuel Clayton
-  AssignClass (0d81974c-123d-4091-87c3-dbf613e61128)
- Call ID: 0d81974c-123d-4091-87c3-dbf613e61128
-  Args:
-    source: William Wordie Stancer
-    type: :Man
-  AssignClass (3c5614f8-b643-4366-8cb7-a96509634ddb)
- Call ID: 3c5614f8-b643-4366-8cb7-a96509634ddb
-  Args:
-    type: :Person
-    source: William Wordie Stancer
-  AddLiteral (cd7a5a84-f1d2-4672-af25-ddf41f7e904b)
- Call ID: cd7a5a84-f1d2-4672-af25-ddf41f7e904b
+    relation: :hasSister
+    target: Beatrix
+    source: Kraft
+  AddTriple (6cbad40f-f4b8-4d27-b238-a215b2bc42c8)
+ Call ID: 6cbad40f-f4b8-4d27-b238-a215b2bc42c8
   Args:
     relation: :hasMarriageYear
-    literal_value: 1993
-    source: Rosie Stancer
-    literal_type: xsd:integer
-  AddTriple (b1c7a59e-45cf-4b86-a916-499016902605)
- Call ID: b1c7a59e-45cf-4b86-a916-499016902605
+    source: Kraft
+    target: 1965
+  AddTriple (953c8f24-1c2c-47f6-a562-194e794156c0)
+ Call ID: 953c8f24-1c2c-47f6-a562-194e794156c0
   Args:
-    target: William Wordie Stancer
     relation: :hasRelation
-    source: Rosie Stancer
-  AssignClass (0734a0a4-534a-4704-95ef-8eafa1eaad5d)
- Call ID: 0734a0a4-534a-4704-95ef-8eafa1eaad5d
+    source: Kraft
+    target: Charlotte
+  Finish (f7ed6734-8e62-4b0e-aa04-ff7c3a158050)
+ Call ID: f7ed6734-8e62-4b0e-aa04-ff7c3a158050
   Args:
-    source: Jock Stancer
-    type: :Man
-  AssignClass (b9c42110-f93c-4915-a0d0-abd1c9c3f6fa)
- Call ID: b9c42110-f93c-4915-a0d0-abd1c9c3f6fa
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Kraft a :Man ;
+      :hasBirthYear 1935 ;
+      :hasDeathYear 2004 ;
+      :hasFather data:Gottfried ;
+      :hasMarriageYear data:1965 ;
+      :hasMother data:Margarita ;
+      :hasRelation data:Charlotte ;
+      :hasSister data:Beatrix .
+
+  data:Beatrix a :Woman .
+
+  data:Charlotte a :Woman .
+
+  data:Gottfried a :Man .
+
+  data:Margarita a :Woman .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['1965']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (48a125c2-2650-46a8-b1b2-4ae48e11697e)
+ Call ID: 48a125c2-2650-46a8-b1b2-4ae48e11697e
   Args:
-    type: :Person
-    source: Jock Stancer
-  AddTriple (4f583876-6e75-494e-8ade-6edbe61b7a52)
- Call ID: 4f583876-6e75-494e-8ade-6edbe61b7a52
+    relation: :hasMarriageYear
+    target: 1965
+    source: Kraft
+  AddLiteral (5ab4a7ef-57f5-446e-8c3a-90288359a79f)
+ Call ID: 5ab4a7ef-57f5-446e-8c3a-90288359a79f
   Args:
-    relation: :hasMother
-    target: Rosie Stancer
-    source: Jock Stancer
-  AddTriple (3ce869a0-819a-4227-a94d-d6ca00d82cd6)
- Call ID: 3ce869a0-819a-4227-a94d-d6ca00d82cd6
-  Args:
-    source: Jock Stancer
-    relation: :hasFather
-    target: William Wordie Stancer
-  AssignClass (a29a1512-bce3-48a0-a29b-d2eaed9dfb58)
- Call ID: a29a1512-bce3-48a0-a29b-d2eaed9dfb58
-  Args:
-    type: :Man
-    source: James Wordie
-  AssignClass (6a62eb78-d56b-4f23-b7dd-2145d0e508a4)
- Call ID: 6a62eb78-d56b-4f23-b7dd-2145d0e508a4
-  Args:
-    type: :Ancestor
-    source: James Wordie
-  AddTriple (38378616-f4d1-4ca9-bdf2-5448edd8b034)
- Call ID: 38378616-f4d1-4ca9-bdf2-5448edd8b034
-  Args:
-    source: William Wordie Stancer
-    relation: :hasFather
-    target: James Wordie
-  Finish (884f43ce-1c2c-4b6f-b96f-81918facb46f)
- Call ID: 884f43ce-1c2c-4b6f-b96f-81918facb46f
+    literal_value: 1965
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Kraft
+  Finish (2742db45-3c77-4581-b087-c4e1ffc4e686)
+ Call ID: 2742db45-3c77-4581-b087-c4e1ffc4e686
   Args:

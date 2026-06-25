@@ -2,48 +2,54 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Dorothea_of_Bavaria a :Person,
+data:Joachim_of_Prussia a :Man,
+        :Person ;
+    :isSonOf data:Augusta_Victoria,
+        data:Wilhelm_II .
+
+data:Sophia_of_Prussia a :Person,
         :Woman ;
-    :hasFather data:Franz_of_Bavaria ;
-    :hasMother data:Isabella_Antonie_of_Croy ;
-    :hasSex data:Female .
+    :isSisterOf data:Wilhelm_II .
 
-data:Gottfried_of_Austria a :Man,
-        :Person ;
-    :hasBirthYear 1902 ;
-    :hasDeathYear 1984 ;
-    :hasFather data:Peter_Ferdinand_of_Austria ;
-    :hasMarriageYear 1938 ;
-    :hasMother data:Maria_Cristina_of_Bourbon-Two_Sicilies ;
-    :hasSex data:Male .
+data:Victoria_Louise a :Person,
+        :Woman ;
+    :isDaughterOf data:Augusta_Victoria,
+        data:Wilhelm_II .
 
-data:Ferdinando_IV_of_Tuscany a :Ancestor,
+data:Frederick_III a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
-data:Franz_of_Bavaria a :Ancestor,
+data:Hermine_Reuss a :Person,
+        :Woman .
+
+data:Prince_Albert a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
-data:Isabella_Antonie_of_Croy a :Ancestor,
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Victoria_Princess_Royal a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
 
-data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Ancestor,
+data:Augusta_Victoria a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female .
+        :Woman .
 
-data:Peter_Ferdinand_of_Austria a :Ancestor,
+data:Wilhelm_II a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Ferdinando_IV_of_Tuscany ;
-    :hasSex data:Male .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+    :hasBirthYear 1859 ;
+    :hasDeathYear 1941 ;
+    :hasFather data:Frederick_III ;
+    :hasMarriageYear 1881,
+        1922 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Augusta_Victoria,
+        data:Hermine_Reuss .
 

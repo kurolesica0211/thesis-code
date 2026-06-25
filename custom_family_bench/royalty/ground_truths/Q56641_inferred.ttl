@@ -1,0 +1,127 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Pim_Lier a :Man,
+        :Person ;
+    rdfs:label "Pim Lier"^^xsd:string ;
+    data:wdtLink wdt:Q56641 ;
+    :alsoKnownAs "Albrecht-Willem Lier"^^xsd:string ;
+    :hasBrother data:Pim_Lier ;
+    :hasRelation data:Pim_Lier ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Pim_Lier ;
+    :isBrotherOf data:Pim_Lier ;
+    :isSiblingOf data:Pim_Lier .
+
+data:Wilhelmina_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Wilhelmina of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "197:213"^^xsd:string,
+        "203:213"^^xsd:string,
+        "232:241"^^xsd:string ;
+    data:wdtLink wdt:Q150747 ;
+    :alsoKnownAs "Princess Wilhelmina of The Netherlands"^^xsd:string,
+        "Princess Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Wilhelmina"^^xsd:string,
+        "Queen Wilhelmina of the Netherlands"^^xsd:string,
+        "Wilhelmina"^^xsd:string,
+        "Wilhelmina I"^^xsd:string,
+        "Wilhelmina Koningin der Nederlanden"^^xsd:string ;
+    :hasChild data:Juliana_of_the_Netherlands ;
+    :hasDaughter data:Juliana_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Wilhelmina_of_the_Netherlands ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands ;
+    :isAuntOf data:Juliana_of_the_Netherlands ;
+    :isBloodrelationOf data:Wilhelmina_of_the_Netherlands ;
+    :isMotherOf data:Juliana_of_the_Netherlands ;
+    :isParentOf data:Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Wilhelmina_of_the_Netherlands ;
+    :isSisterOf data:Wilhelmina_of_the_Netherlands .
+
+data:Beatrix_of_the_Netherlands a :Person,
+        :Woman ;
+    rdfs:label "Beatrix of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "349:362"^^xsd:string ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau"^^xsd:string,
+        "Beatrix Wilhelmina Armgard"^^xsd:string,
+        "Beatrix der Nederlanden"^^xsd:string,
+        "Beatrix of Orange"^^xsd:string,
+        "Beatrix van Oranje"^^xsd:string,
+        "Princess Beatrix of Orange-Nassau"^^xsd:string,
+        "Princess Beatrix of the Netherlands"^^xsd:string,
+        "Queen Beatrix"^^xsd:string ;
+    :hasAncestor data:Juliana_of_the_Netherlands,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Beatrix_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Juliana of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "313:326"^^xsd:string,
+        "319:326"^^xsd:string ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Juliana der Nederlanden"^^xsd:string,
+        "Julijana"^^xsd:string,
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Princess Juliana of the Netherlands"^^xsd:string,
+        "Queen Juliana"^^xsd:string,
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Juliana of the Netherlands"^^xsd:string ;
+    :hasAncestor data:Wilhelmina_of_the_Netherlands ;
+    :hasChild data:Beatrix_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands ;
+    :hasMother data:Wilhelmina_of_the_Netherlands ;
+    :hasParent data:Wilhelmina_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Juliana_of_the_Netherlands ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands ;
+    :isAuntOf data:Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Juliana_of_the_Netherlands ;
+    :isChildOf data:Wilhelmina_of_the_Netherlands ;
+    :isDaughterOf data:Wilhelmina_of_the_Netherlands ;
+    :isMotherOf data:Beatrix_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands ;
+    :isSiblingOf data:Juliana_of_the_Netherlands ;
+    :isSisterOf data:Juliana_of_the_Netherlands .
+

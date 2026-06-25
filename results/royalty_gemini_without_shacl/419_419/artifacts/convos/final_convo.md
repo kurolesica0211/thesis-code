@@ -69,28 +69,34 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Friedrich Wilhelm of Lippe (German: Friedrich Wilhelm Ernst Viktor Alexander Prinz zur Lippe; born 7 September 1947) is a claimant to the headship of the House of Lippe.
-Early life
+The Dowager Princess Napoléon
 
-Friedrich Wilhelm was born out of wedlock at Neuwied, West Germany, the first child of Prince Ernst August of Lippe (1917–1990; son of Prince Julius Ernst of Lippe and Duchess Marie of Mecklenburg-Strelitz) and his wife, Christa von Arnim (b. 1923; daughter of Curt David von Arnim and his wife, Stephanie von Stechow).
-Marriage
 
-Friedrich Wilhelm married on 18 September 1991 in Munich to Andrea Messner (b. 1966), daughter of Günther Messner, and his wife, Lieselotte Trzoska.
-House of Lippe
+Olympia Bonaparte, Princess Napoléon (Olympia Elene Marie; née Countess Olympia von und zu Arco-Zinneberg, born 4 January 1988), is the wife of Jean-Christophe, Prince Napoléon, the disputed head of the House of Bonaparte and, in the view of Bonapartists, the pretender to the abolished French imperial throne.
+Early life and family
 
-On 30 December 1949 his father's first cousin Prince Armin succeeded his father, Leopold IV as head of the House of Lippe.
-On 22 March 1953, he renounced his position in favour of his older half-brother, Prince Leopold.
-Prince Leopold later in 1958 renounced the headship in favour of his older brother, Hereditary Prince Ernst.
-Later in that year the Hereditary Prince called a family council where it was agreed by the princes in attendance that the oldest prince living in Germany would be head of the house.
-Therefore, the position went to Prince Simon Casimir (1900–1980).
-His father died in 1990 and Friedrich Wilhelm continued the claim, despite his illegitimate birth.
-Prince Armin, who has said he did not think his decision in 1953 was irrevocable, also claimed to be head of the house until his death in 2015, with his son Stephan, Prince of Lippe continuing his claim.
+Countess Olympia Elene Marie von und zu Arco-Zinneberg was born on 4 January 1988 in Munich to Count Riprand von und zu Arco-Zinneberg (1955-2021) and his wife, Archduchess Maria Beatrice of Austria-Este.
+Through her father she is a great-great-granddaughter of Ludwig III and Maria Theresa of Austria-Este, the last king and queen of Bavaria.
+Through her mother she is the granddaughter of Robert, Archduke of Austria-Este and Princess Margherita of Savoy-Aosta.
+She is a great-granddaughter of Charles I and Zita of Bourbon-Parma, the last emperor and empress of Austria.
+Olympia is also the great-great-great-great-grandniece of Marie Louise, Duchess of Parma, the second wife of Napoleon I.
+
+
+Personal life
+
+Olympia graduated from Yale University with a bachelor's degree in political science and from Columbia University in 2015 with a Master of Arts degree in art history.
+She met Jean-Christophe, Prince Napoléon during a semester studying abroad in Paris.
+Olympia and Jean-Christophe first held a civil marriage on 17 October 2019 at the town hall of Neuilly-sur-Seine.
+The wedding festivities were attended by members of European royal and noble families including Henri, Grand Duke of Luxembourg; Guillaume, Hereditary Grand Duke of Luxembourg; Stéphanie, Hereditary Grand Duchess of Luxembourg; Princess Maria Laura of Belgium, Archduchess of Austria-Este; Pavlos, Crown Prince of Greece; Princess Maria-Olympia of Greece and Denmark; Prince Philippos of Greece and Denmark; Nina Flohr; Prince Félix of Luxembourg; Princess Claire of Luxembourg; Prince Christian of Hanover; Princess Christian of Hanover; Princess Beatrice of York; and Edoardo Mapelli Mozzi.
+The Princess gave birth to a son, Louis Charles Riprand Victor Jérôme Marie, on 7 December 2022 in Paris.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -106,39 +112,9 @@ Prince Armin, who has said he did not think his decision in 1953 was irrevocable
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -153,6 +129,23 @@ Prince Armin, who has said he did not think his decision in 1953 was irrevocable
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -170,6 +163,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -237,29 +245,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -268,6 +268,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -280,6 +288,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -288,17 +298,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -326,6 +338,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -341,146 +437,114 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1d265d2c-8dd7-4a85-90b2-c2457bf48f18)
- Call ID: 1d265d2c-8dd7-4a85-90b2-c2457bf48f18
-  Args:
-    type: :Man
-    source: FriedrichWilhelmOfLippe
-  AssignClass (8cfab7a1-efea-4bb7-98f4-02f1faec8f19)
- Call ID: 8cfab7a1-efea-4bb7-98f4-02f1faec8f19
-  Args:
-    source: ErnstAugustOfLippe
-    type: :Man
-  AssignClass (0bab169f-188e-4194-8f8d-437f591262b2)
- Call ID: 0bab169f-188e-4194-8f8d-437f591262b2
-  Args:
-    type: :Man
-    source: JuliusErnstOfLippe
-  AssignClass (294a77a6-614b-4d3e-8253-1777140ceef4)
- Call ID: 294a77a6-614b-4d3e-8253-1777140ceef4
+  AssignClass (e959c7be-b60e-428c-a25b-7dcbb1928370)
+ Call ID: e959c7be-b60e-428c-a25b-7dcbb1928370
   Args:
     type: :Woman
-    source: MarieOfMecklenburgStrelitz
-  AssignClass (0b8f3949-e999-49c3-be30-5db4abaa167a)
- Call ID: 0b8f3949-e999-49c3-be30-5db4abaa167a
+    source: :Olympia_Bonaparte
+  AssignClass (9eaf4fea-21fb-4670-a946-ab7fe817896c)
+ Call ID: 9eaf4fea-21fb-4670-a946-ab7fe817896c
   Args:
-    source: ChristaVonArnim
-    type: :Woman
-  AssignClass (3eb7cec0-149c-4b2e-99d1-efb530d88095)
- Call ID: 3eb7cec0-149c-4b2e-99d1-efb530d88095
+    type: :Person
+    source: :Olympia_Bonaparte
+  AssignClass (109e7c88-56e9-47b0-82d7-6352790c61d8)
+ Call ID: 109e7c88-56e9-47b0-82d7-6352790c61d8
+  Args:
+    source: :Jean-Christophe_Prince_Napoleon
+    type: :Man
+  AssignClass (16e54fff-dd97-41db-aa65-fa91335c1aed)
+ Call ID: 16e54fff-dd97-41db-aa65-fa91335c1aed
+  Args:
+    source: :Jean-Christophe_Prince_Napoleon
+    type: :Person
+  AssignClass (d71fa7e3-f1a2-4a14-947b-0a854e38c90a)
+ Call ID: d71fa7e3-f1a2-4a14-947b-0a854e38c90a
   Args:
     type: :Man
-    source: CurtDavidVonArnim
-  AssignClass (501252b7-fb50-4564-b0e7-641eaf060f28)
- Call ID: 501252b7-fb50-4564-b0e7-641eaf060f28
+    source: :Riprand_von_und_zu_Arco-Zinneberg
+  AssignClass (acfd2fa1-69d3-44ea-9cea-813bc3363f55)
+ Call ID: acfd2fa1-69d3-44ea-9cea-813bc3363f55
   Args:
-    source: StephanieVonStechow
-    type: :Woman
-  AssignClass (183e7254-a086-4970-bc24-d9de20bf76a8)
- Call ID: 183e7254-a086-4970-bc24-d9de20bf76a8
+    type: :Person
+    source: :Riprand_von_und_zu_Arco-Zinneberg
+  AssignClass (d17ef6b5-b441-4f8a-97be-c0511da35cf6)
+ Call ID: d17ef6b5-b441-4f8a-97be-c0511da35cf6
   Args:
     type: :Woman
-    source: AndreaMessner
-  AssignClass (35dd04fd-d953-4d8e-a55c-88e3249953ef)
- Call ID: 35dd04fd-d953-4d8e-a55c-88e3249953ef
+    source: :Maria_Beatrice_of_Austria-Este
+  AssignClass (564b6517-d1c2-4f8a-9a78-1618fdb8fe54)
+ Call ID: 564b6517-d1c2-4f8a-9a78-1618fdb8fe54
+  Args:
+    type: :Person
+    source: :Maria_Beatrice_of_Austria-Este
+  AssignClass (3a8b7347-dd76-485f-8616-f67b91c9f3b1)
+ Call ID: 3a8b7347-dd76-485f-8616-f67b91c9f3b1
   Args:
     type: :Man
-    source: GüntherMessner
-  AssignClass (5146fce8-bdb3-4f92-8b7e-d573ad8379a0)
- Call ID: 5146fce8-bdb3-4f92-8b7e-d573ad8379a0
+    source: :Louis_Charles_Riprand_Victor_Jerome_Marie
+  AssignClass (be69a917-ce28-461f-942b-5d931e289ee9)
+ Call ID: be69a917-ce28-461f-942b-5d931e289ee9
   Args:
-    source: LieselotteTrzoska
-    type: :Woman
-  AddLiteral (39713b08-d468-4fe8-9ee3-9860757f807b)
- Call ID: 39713b08-d468-4fe8-9ee3-9860757f807b
+    type: :Person
+    source: :Louis_Charles_Riprand_Victor_Jerome_Marie
+  AddLiteral (e88d7455-b7f1-4b39-8383-4cf066beef2b)
+ Call ID: e88d7455-b7f1-4b39-8383-4cf066beef2b
   Args:
+    literal_type: xsd:integer
+    literal_value: 1988
+    source: :Olympia_Bonaparte
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1947
-    source: FriedrichWilhelmOfLippe
-  AddLiteral (644c4824-9d4c-49fc-bf8b-656dcd3ffae3)
- Call ID: 644c4824-9d4c-49fc-bf8b-656dcd3ffae3
+  AddLiteral (20c8a12d-f2ef-4b35-adc8-bba973c23e9b)
+ Call ID: 20c8a12d-f2ef-4b35-adc8-bba973c23e9b
   Args:
-    source: ErnstAugustOfLippe
-    literal_value: 1917
+    literal_value: 1955
     literal_type: xsd:integer
+    source: :Riprand_von_und_zu_Arco-Zinneberg
     relation: :hasBirthYear
-  AddLiteral (abfca86e-daa4-4d3c-88cc-d2d1d7dc9d76)
- Call ID: abfca86e-daa4-4d3c-88cc-d2d1d7dc9d76
+  AddLiteral (db0ece19-669f-4699-8178-c8f3754c4232)
+ Call ID: db0ece19-669f-4699-8178-c8f3754c4232
   Args:
-    source: ErnstAugustOfLippe
-    literal_value: 1990
-    literal_type: xsd:integer
+    source: :Riprand_von_und_zu_Arco-Zinneberg
     relation: :hasDeathYear
-  AddLiteral (a4e444bf-b60e-49ef-9ef5-b9cb8a09fd48)
- Call ID: a4e444bf-b60e-49ef-9ef5-b9cb8a09fd48
-  Args:
-    literal_value: 1923
     literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: ChristaVonArnim
-  AddLiteral (539f5c02-9d78-41db-920c-318735ca6741)
- Call ID: 539f5c02-9d78-41db-920c-318735ca6741
+    literal_value: 2021
+  AddTriple (ef258e09-e4df-4235-85cb-fd848c5f3341)
+ Call ID: ef258e09-e4df-4235-85cb-fd848c5f3341
   Args:
-    literal_value: 1966
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: AndreaMessner
-  AddLiteral (959891ea-aaa6-44bf-ba45-85f4d97ae403)
- Call ID: 959891ea-aaa6-44bf-ba45-85f4d97ae403
+    source: :Olympia_Bonaparte
+    target: :Riprand_von_und_zu_Arco-Zinneberg
+    relation: :hasFather
+  AddTriple (3124ddb4-e80f-413b-bfcb-ba6851278c4c)
+ Call ID: 3124ddb4-e80f-413b-bfcb-ba6851278c4c
   Args:
-    source: FriedrichWilhelmOfLippe
-    literal_type: xsd:integer
+    target: :Maria_Beatrice_of_Austria-Este
+    relation: :hasMother
+    source: :Olympia_Bonaparte
+  AddTriple (74bd22b9-21ed-44a7-b3f6-3c3bf7e810de)
+ Call ID: 74bd22b9-21ed-44a7-b3f6-3c3bf7e810de
+  Args:
+    source: :Olympia_Bonaparte
+    relation: :hasRelation
+    target: :Jean-Christophe_Prince_Napoleon
+  AddLiteral (a49ea5e6-d8f8-4e9a-a60a-3db989a7b37e)
+ Call ID: a49ea5e6-d8f8-4e9a-a60a-3db989a7b37e
+  Args:
     relation: :hasMarriageYear
-    literal_value: 1991
-  AddTriple (f4886152-fd1b-44ea-892c-e1a3d34a0583)
- Call ID: f4886152-fd1b-44ea-892c-e1a3d34a0583
+    source: :Olympia_Bonaparte
+    literal_value: 2019
+    literal_type: xsd:integer
+  AddTriple (67766d4a-011c-443a-9f8f-5065a79abfc3)
+ Call ID: 67766d4a-011c-443a-9f8f-5065a79abfc3
   Args:
-    target: ErnstAugustOfLippe
-    source: FriedrichWilhelmOfLippe
+    target: :Jean-Christophe_Prince_Napoleon
     relation: :hasFather
-  AddTriple (0d247fd0-3946-419e-b8e3-c2bd2e328eaf)
- Call ID: 0d247fd0-3946-419e-b8e3-c2bd2e328eaf
+    source: :Louis_Charles_Riprand_Victor_Jerome_Marie
+  AddTriple (4a645e51-6a49-4726-93e3-39f86b4a0c5f)
+ Call ID: 4a645e51-6a49-4726-93e3-39f86b4a0c5f
   Args:
     relation: :hasMother
-    source: FriedrichWilhelmOfLippe
-    target: ChristaVonArnim
-  AddTriple (96950808-1fd3-4a07-a528-bd8e2fc57cfc)
- Call ID: 96950808-1fd3-4a07-a528-bd8e2fc57cfc
-  Args:
-    relation: :hasFather
-    target: JuliusErnstOfLippe
-    source: ErnstAugustOfLippe
-  AddTriple (bd0dba21-e20b-4a4c-a8f4-f7a467f053d5)
- Call ID: bd0dba21-e20b-4a4c-a8f4-f7a467f053d5
-  Args:
-    target: MarieOfMecklenburgStrelitz
-    source: ErnstAugustOfLippe
-    relation: :hasMother
-  AddTriple (9e9c78c8-cd1c-43c3-80be-dadb854891c7)
- Call ID: 9e9c78c8-cd1c-43c3-80be-dadb854891c7
-  Args:
-    source: ChristaVonArnim
-    target: CurtDavidVonArnim
-    relation: :hasFather
-  AddTriple (232a4c4e-dedc-4dc0-83d5-6db8b28da8f2)
- Call ID: 232a4c4e-dedc-4dc0-83d5-6db8b28da8f2
-  Args:
-    relation: :hasMother
-    target: StephanieVonStechow
-    source: ChristaVonArnim
-  AddTriple (c36b81a2-fd30-4aac-9c38-9018e07da609)
- Call ID: c36b81a2-fd30-4aac-9c38-9018e07da609
-  Args:
-    relation: :hasFather
-    source: AndreaMessner
-    target: GüntherMessner
-  AddTriple (b34bedc1-6cec-4c9a-b6db-b6ec0c8af164)
- Call ID: b34bedc1-6cec-4c9a-b6db-b6ec0c8af164
-  Args:
-    source: AndreaMessner
-    target: LieselotteTrzoska
-    relation: :hasMother
-  Finish (07f18bb0-eb15-4130-a625-de558898aebb)
- Call ID: 07f18bb0-eb15-4130-a625-de558898aebb
+    target: :Olympia_Bonaparte
+    source: :Louis_Charles_Riprand_Victor_Jerome_Marie
+  Finish (72cfb31a-a41a-4b8c-934d-806bd9235957)
+ Call ID: 72cfb31a-a41a-4b8c-934d-806bd9235957
   Args:

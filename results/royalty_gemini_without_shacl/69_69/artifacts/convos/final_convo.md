@@ -157,6 +157,8 @@ The Dansk Rugby Union (DRU) website names Prince Joachim as the patron of the DR
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -172,39 +174,9 @@ The Dansk Rugby Union (DRU) website names Prince Joachim as the patron of the DR
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -219,6 +191,23 @@ The Dansk Rugby Union (DRU) website names Prince Joachim as the patron of the DR
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -236,6 +225,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -303,29 +307,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -334,6 +330,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -346,6 +350,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -354,17 +360,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -392,6 +400,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -407,262 +499,211 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4b7be1d2-9461-4e90-bca5-c211dc3cf51e)
- Call ID: 4b7be1d2-9461-4e90-bca5-c211dc3cf51e
+  AssignClass (4938a5d7-10c6-462d-ad9b-42a1d4fc29f2)
+ Call ID: 4938a5d7-10c6-462d-ad9b-42a1d4fc29f2
+  Args:
+    type: :Person
+    source: :Margrethe_II
+  AssignClass (d1a5883a-da62-46ff-ad61-3fbdb47d3252)
+ Call ID: d1a5883a-da62-46ff-ad61-3fbdb47d3252
+  Args:
+    source: :Margrethe_II
+    type: :Woman
+  AssignClass (ca70bb13-58c0-48dd-a4bb-b12ce54eac0b)
+ Call ID: ca70bb13-58c0-48dd-a4bb-b12ce54eac0b
+  Args:
+    type: :Person
+    source: :Joachim_of_Denmark
+  AssignClass (d0f94a24-7aea-4e24-9745-5679a2ce7e29)
+ Call ID: d0f94a24-7aea-4e24-9745-5679a2ce7e29
   Args:
     type: :Man
-    source: :Joachim
-  AssignClass (c3a59110-18cc-420f-8259-22d6615718a1)
- Call ID: c3a59110-18cc-420f-8259-22d6615718a1
-  Args:
-    type: :Woman
-    source: :MargretheII
-  AssignClass (fd11f7bd-b29c-4601-ba69-f6bf64f2f3a5)
- Call ID: fd11f7bd-b29c-4601-ba69-f6bf64f2f3a5
-  Args:
-    source: :FrederikX
-    type: :Man
-  AssignClass (cb0e93ce-a257-4485-9e29-c5dd96a87cd3)
- Call ID: cb0e93ce-a257-4485-9e29-c5dd96a87cd3
-  Args:
-    type: :Woman
-    source: :AlexandraManley
-  AssignClass (4ac55f58-99ce-4099-8bfc-ba59caa0bc3d)
- Call ID: 4ac55f58-99ce-4099-8bfc-ba59caa0bc3d
-  Args:
-    source: :MarieCavallier
-    type: :Woman
-  AssignClass (ecd6fc67-3322-405c-9a96-afdb53088676)
- Call ID: ecd6fc67-3322-405c-9a96-afdb53088676
-  Args:
-    type: :Man
-    source: :Henrik
-  AssignClass (9fe4793c-21b0-4ec0-9946-396d37f82dfa)
- Call ID: 9fe4793c-21b0-4ec0-9946-396d37f82dfa
-  Args:
-    source: :Athena
-    type: :Woman
-  AddLiteral (08ba2da2-8fc2-4363-b838-8bef0e572f5b)
- Call ID: 08ba2da2-8fc2-4363-b838-8bef0e572f5b
+    source: :Joachim_of_Denmark
+  AddLiteral (97034593-7aed-46ab-8d7a-c7c926ef6620)
+ Call ID: 97034593-7aed-46ab-8d7a-c7c926ef6620
   Args:
     literal_type: xsd:integer
-    literal_value: 1969
-    source: :Joachim
     relation: :hasBirthYear
-  AddTriple (0c0ea1df-46fc-4bef-9da8-7911cc36b431)
- Call ID: 0c0ea1df-46fc-4bef-9da8-7911cc36b431
+    literal_value: 1969
+    source: :Joachim_of_Denmark
+  AddTriple (8ccbb960-be79-4298-b3cf-674d8c8414d5)
+ Call ID: 8ccbb960-be79-4298-b3cf-674d8c8414d5
   Args:
-    source: :Joachim
-    relation: :isSonOf
-    target: :MargretheII
-  AddTriple (466ade2a-9f18-4f07-afde-1e9f0fc18377)
- Call ID: 466ade2a-9f18-4f07-afde-1e9f0fc18377
+    target: :Margrethe_II
+    source: :Joachim_of_Denmark
+    relation: :isChildOf
+  AssignClass (ca9e9c75-fc39-49f4-9aad-af9c9adb9791)
+ Call ID: ca9e9c75-fc39-49f4-9aad-af9c9adb9791
   Args:
-    relation: :isBrotherOf
-    target: :FrederikX
-    source: :Joachim
-  AddTriple (1891f96e-3cf7-4e8c-bf7f-0769f6ef3662)
- Call ID: 1891f96e-3cf7-4e8c-bf7f-0769f6ef3662
+    source: :Frederik_X
+    type: :Person
+  AssignClass (c617f7aa-4018-426d-9497-c5822e67917f)
+ Call ID: c617f7aa-4018-426d-9497-c5822e67917f
   Args:
-    source: :Joachim
-    relation: :hasMarriageYear
-    target: :1995
-  AddTriple (061e7ff0-2443-45be-b145-de2598daec9c)
- Call ID: 061e7ff0-2443-45be-b145-de2598daec9c
+    type: :Man
+    source: :Frederik_X
+  AddTriple (44293c8c-f8cf-4338-bc11-0db97b1ae803)
+ Call ID: 44293c8c-f8cf-4338-bc11-0db97b1ae803
   Args:
-    relation: :hasRelation
-    target: :AlexandraManley
-    source: :Joachim
-  AddTriple (95761795-5e3a-4016-8efe-37bb7b0087b5)
- Call ID: 95761795-5e3a-4016-8efe-37bb7b0087b5
+    relation: :isSiblingOf
+    source: :Joachim_of_Denmark
+    target: :Frederik_X
+  AssignClass (6adbff00-0c25-4455-a713-83c538be1989)
+ Call ID: 6adbff00-0c25-4455-a713-83c538be1989
   Args:
-    relation: :hasMarriageYear
-    target: :2007
-    source: :Joachim
-  AddTriple (029072b5-9810-4864-abed-1fb318610535)
- Call ID: 029072b5-9810-4864-abed-1fb318610535
+    type: :Person
+    source: :Benedikte_of_Denmark
+  AssignClass (6d2f5cd7-324c-48f9-8dbb-cfc31ab8328d)
+ Call ID: 6d2f5cd7-324c-48f9-8dbb-cfc31ab8328d
   Args:
-    source: :Joachim
-    relation: :hasRelation
-    target: :MarieCavallier
-  AddTriple (8cfecf53-e40c-4b6a-af69-f92e1c680a92)
- Call ID: 8cfecf53-e40c-4b6a-af69-f92e1c680a92
+    source: :Benedikte_of_Denmark
+    type: :Woman
+  AddTriple (1bef943e-a4a2-4332-bfe0-9d959a7d78c9)
+ Call ID: 1bef943e-a4a2-4332-bfe0-9d959a7d78c9
   Args:
-    relation: :isSonOf
-    target: :Joachim
-    source: :Henrik
-  AddTriple (001735d1-5cd7-4466-8117-d4153e08bb9d)
- Call ID: 001735d1-5cd7-4466-8117-d4153e08bb9d
+    source: :Benedikte_of_Denmark
+    relation: :isSisterOf
+    target: :Margrethe_II
+  AssignClass (7789fcb1-11d0-4f9d-8ca3-3a3710a31456)
+ Call ID: 7789fcb1-11d0-4f9d-8ca3-3a3710a31456
   Args:
-    source: :Henrik
-    relation: :isSonOf
-    target: :MarieCavallier
-  AddTriple (95ab2934-176b-433c-a557-7abce3be677d)
- Call ID: 95ab2934-176b-433c-a557-7abce3be677d
+    source: :Jean_Baptiste_de_Laborde_de_Monpezat
+    type: :Person
+  AssignClass (6f65e3d7-ce65-46d8-a629-083600ab6c5c)
+ Call ID: 6f65e3d7-ce65-46d8-a629-083600ab6c5c
   Args:
-    relation: :isDaughterOf
-    target: :Joachim
-    source: :Athena
-  AddTriple (3f9db50f-dbd6-4291-bbbc-5497df6e86c7)
- Call ID: 3f9db50f-dbd6-4291-bbbc-5497df6e86c7
+    type: :Man
+    source: :Jean_Baptiste_de_Laborde_de_Monpezat
+  AssignClass (07b77672-91e9-467e-aa57-90f6902c1b7b)
+ Call ID: 07b77672-91e9-467e-aa57-90f6902c1b7b
   Args:
-    source: :Athena
-    relation: :isDaughterOf
-    target: :MarieCavallier
-  Finish (132443e4-8ae6-4abb-892c-d45552881368)
- Call ID: 132443e4-8ae6-4abb-892c-d45552881368
+    source: :Christina_of_Sweden
+    type: :Person
+  AssignClass (2b4b2c97-d815-4ef6-82b1-8b2b68cc82b7)
+ Call ID: 2b4b2c97-d815-4ef6-82b1-8b2b68cc82b7
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Athena a :Woman ;
-      :isDaughterOf data:Joachim,
-          data:MarieCavallier .
-
-  data:Henrik a :Man ;
-      :isSonOf data:Joachim,
-          data:MarieCavallier .
-
-  data:AlexandraManley a :Woman .
-
-  data:FrederikX a :Man .
-
-  data:MargretheII a :Woman .
-
-  data:Joachim a :Man ;
-      :hasBirthYear 1969 ;
-      :hasMarriageYear data:1995,
-          data:2007 ;
-      :hasRelation data:AlexandraManley,
-          data:MarieCavallier ;
-      :isBrotherOf data:FrederikX ;
-      :isSonOf data:MargretheII .
-
-  data:MarieCavallier a :Woman .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['2007', '1995']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (9b227514-2afd-4742-b3e7-f3274d580beb)
- Call ID: 9b227514-2afd-4742-b3e7-f3274d580beb
+    type: :Woman
+    source: :Christina_of_Sweden
+  AssignClass (d53d0483-7af4-4156-8fe1-4ac88d8dab0b)
+ Call ID: d53d0483-7af4-4156-8fe1-4ac88d8dab0b
   Args:
-    target: :1995
-    source: :Joachim
-    relation: :hasMarriageYear
-  RemoveTriple (758c7835-dc03-4f5b-b9b4-cb26b8c3f5d1)
- Call ID: 758c7835-dc03-4f5b-b9b4-cb26b8c3f5d1
+    type: :Person
+    source: :Harald_V
+  AssignClass (69ee9883-9b0a-424a-872c-7b6f50e4b5c8)
+ Call ID: 69ee9883-9b0a-424a-872c-7b6f50e4b5c8
   Args:
-    relation: :hasMarriageYear
-    target: :2007
-    source: :Joachim
-  AddLiteral (5b70819a-a2c0-4718-b5c1-dfc42f85e973)
- Call ID: 5b70819a-a2c0-4718-b5c1-dfc42f85e973
+    type: :Man
+    source: :Harald_V
+  AssignClass (cbda5de9-3a50-421f-8cb3-69046a641138)
+ Call ID: cbda5de9-3a50-421f-8cb3-69046a641138
   Args:
-    source: :Joachim
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
+    source: :Alexandra_Christina_Manley
+    type: :Person
+  AssignClass (7fbae6aa-4247-46ce-b62f-2f1718594e9d)
+ Call ID: 7fbae6aa-4247-46ce-b62f-2f1718594e9d
+  Args:
+    source: :Alexandra_Christina_Manley
+    type: :Woman
+  AddLiteral (966cfee5-dd87-459c-a766-ccadbe64f0ea)
+ Call ID: 966cfee5-dd87-459c-a766-ccadbe64f0ea
+  Args:
     literal_value: 1995
-  AddLiteral (16486fc1-4776-4029-8272-0b97d08a460d)
- Call ID: 16486fc1-4776-4029-8272-0b97d08a460d
-  Args:
+    source: :Joachim_of_Denmark
     literal_type: xsd:integer
-    source: :Joachim
-    literal_value: 2007
     relation: :hasMarriageYear
-  Finish (8b5fc70b-cd54-45dd-89f2-1ca151eb431b)
- Call ID: 8b5fc70b-cd54-45dd-89f2-1ca151eb431b
+  AddTriple (5e81b34b-7770-4fa4-be3c-1f603b99d566)
+ Call ID: 5e81b34b-7770-4fa4-be3c-1f603b99d566
+  Args:
+    source: :Joachim_of_Denmark
+    relation: :hasRelation
+    target: :Alexandra_Christina_Manley
+  AssignClass (32d6270b-df76-4af1-84d5-9756ffe8fe4b)
+ Call ID: 32d6270b-df76-4af1-84d5-9756ffe8fe4b
+  Args:
+    type: :Person
+    source: :Marie_Cavallier
+  AssignClass (6cf341bf-46be-4c48-86d5-521f477f2b2f)
+ Call ID: 6cf341bf-46be-4c48-86d5-521f477f2b2f
+  Args:
+    type: :Woman
+    source: :Marie_Cavallier
+  AddLiteral (f73273ba-ca87-4fb2-81e8-563e6bca76c7)
+ Call ID: f73273ba-ca87-4fb2-81e8-563e6bca76c7
+  Args:
+    literal_value: 2007
+    source: :Joachim_of_Denmark
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AddTriple (e7671eaf-8e8c-4d03-8bbf-9db253a8eae7)
+ Call ID: e7671eaf-8e8c-4d03-8bbf-9db253a8eae7
+  Args:
+    source: :Joachim_of_Denmark
+    relation: :hasRelation
+    target: :Marie_Cavallier
+  AssignClass (2e3600f9-cef1-463e-833f-6722560507d0)
+ Call ID: 2e3600f9-cef1-463e-833f-6722560507d0
+  Args:
+    source: :Henrik_of_Monpezat
+    type: :Person
+  AssignClass (1408aaa4-2fad-4167-931f-92b7c31e927d)
+ Call ID: 1408aaa4-2fad-4167-931f-92b7c31e927d
+  Args:
+    source: :Henrik_of_Monpezat
+    type: :Man
+  AssignClass (8f41936a-8cb9-4efa-9bd9-8a48c8aece70)
+ Call ID: 8f41936a-8cb9-4efa-9bd9-8a48c8aece70
+  Args:
+    type: :Person
+    source: :Athena_of_Monpezat
+  AssignClass (8bf10db5-ab5f-4264-955e-82f1cde7d2f0)
+ Call ID: 8bf10db5-ab5f-4264-955e-82f1cde7d2f0
+  Args:
+    type: :Woman
+    source: :Athena_of_Monpezat
+  AddTriple (868876d2-682c-4f85-a007-269244efd300)
+ Call ID: 868876d2-682c-4f85-a007-269244efd300
+  Args:
+    relation: :isChildOf
+    source: :Henrik_of_Monpezat
+    target: :Joachim_of_Denmark
+  AddTriple (aa22c2f4-090f-4bf5-93cd-aecac092df5a)
+ Call ID: aa22c2f4-090f-4bf5-93cd-aecac092df5a
+  Args:
+    target: :Marie_Cavallier
+    source: :Henrik_of_Monpezat
+    relation: :isChildOf
+  AddTriple (e99711d9-4804-4e7c-abdc-e40d940c63fd)
+ Call ID: e99711d9-4804-4e7c-abdc-e40d940c63fd
+  Args:
+    target: :Joachim_of_Denmark
+    source: :Athena_of_Monpezat
+    relation: :isChildOf
+  AddTriple (e45066c5-e182-4835-bdb0-ce922f882b2c)
+ Call ID: e45066c5-e182-4835-bdb0-ce922f882b2c
+  Args:
+    source: :Athena_of_Monpezat
+    relation: :isChildOf
+    target: :Marie_Cavallier
+  AssignClass (c34b1fc4-9f0a-43d6-af9c-7e2642432f51)
+ Call ID: c34b1fc4-9f0a-43d6-af9c-7e2642432f51
+  Args:
+    type: :Person
+    source: :Frederik_IX
+  AssignClass (96c153bf-b39b-486e-9453-2ded2d3bf6c9)
+ Call ID: 96c153bf-b39b-486e-9453-2ded2d3bf6c9
+  Args:
+    source: :Frederik_IX
+    type: :Man
+  AssignClass (9ff69d10-f130-4b4d-8c5a-ad672a4348f2)
+ Call ID: 9ff69d10-f130-4b4d-8c5a-ad672a4348f2
+  Args:
+    type: :Person
+    source: :Ingrid_of_Denmark
+  AssignClass (d7b34625-e20a-4584-a4b2-78e6b25cf2dc)
+ Call ID: d7b34625-e20a-4584-a4b2-78e6b25cf2dc
+  Args:
+    source: :Ingrid_of_Denmark
+    type: :Woman
+  Finish (a89f66e3-cdbb-4d7c-844f-223966451830)
+ Call ID: a89f66e3-cdbb-4d7c-844f-223966451830
   Args:

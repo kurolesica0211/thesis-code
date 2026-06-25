@@ -1,0 +1,349 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Hereditary_Prince_Ernst a :Man,
+        :Person ;
+    :hasBrother data:Hereditary_Prince_Ernst ;
+    :hasRelation data:Hereditary_Prince_Ernst ;
+    :isBloodrelationOf data:Hereditary_Prince_Ernst ;
+    :isBrotherOf data:Hereditary_Prince_Ernst ;
+    :isSiblingOf data:Hereditary_Prince_Ernst .
+
+data:Leopold_IV a :Man,
+        :Person ;
+    :hasBrother data:Leopold_IV ;
+    :hasRelation data:Leopold_IV ;
+    :isBloodrelationOf data:Leopold_IV ;
+    :isBrotherOf data:Leopold_IV ;
+    :isSiblingOf data:Leopold_IV .
+
+data:Prince_Leopold a :Man,
+        :Person ;
+    :hasBrother data:Prince_Leopold ;
+    :hasRelation data:Prince_Leopold ;
+    :isBloodrelationOf data:Prince_Leopold ;
+    :isBrotherOf data:Prince_Leopold ;
+    :isSiblingOf data:Prince_Leopold .
+
+data:Prince_Simon_Casimir a :Man,
+        :Person ;
+    :hasBirthYear 1900 ;
+    :hasBrother data:Prince_Simon_Casimir ;
+    :hasDeathYear 1980 ;
+    :hasRelation data:Prince_Simon_Casimir ;
+    :isBloodrelationOf data:Prince_Simon_Casimir ;
+    :isBrotherOf data:Prince_Simon_Casimir ;
+    :isSiblingOf data:Prince_Simon_Casimir .
+
+data:Prince_Armin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Armin ;
+    :hasChild data:Stephan_Prince_of_Lippe ;
+    :hasDeathYear 2015 ;
+    :hasRelation data:Prince_Armin,
+        data:Stephan_Prince_of_Lippe ;
+    :hasSon data:Stephan_Prince_of_Lippe ;
+    :isAncestorOf data:Stephan_Prince_of_Lippe ;
+    :isBloodrelationOf data:Prince_Armin ;
+    :isBrotherOf data:Prince_Armin ;
+    :isFatherOf data:Stephan_Prince_of_Lippe ;
+    :isParentOf data:Stephan_Prince_of_Lippe ;
+    :isSiblingOf data:Prince_Armin ;
+    :isUncleOf data:Stephan_Prince_of_Lippe .
+
+data:Stephan_Prince_of_Lippe a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Armin ;
+    :hasBrother data:Stephan_Prince_of_Lippe ;
+    :hasFather data:Prince_Armin ;
+    :hasParent data:Prince_Armin ;
+    :hasRelation data:Prince_Armin,
+        data:Stephan_Prince_of_Lippe ;
+    :isBloodrelationOf data:Stephan_Prince_of_Lippe ;
+    :isBrotherOf data:Stephan_Prince_of_Lippe ;
+    :isChildOf data:Prince_Armin ;
+    :isSiblingOf data:Stephan_Prince_of_Lippe ;
+    :isSonOf data:Prince_Armin .
+
+data:G%C3%BCnther_Messner a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:G%C3%BCnther_Messner ;
+    :hasChild data:Andrea_Messner ;
+    :hasDaughter data:Andrea_Messner ;
+    :hasRelation data:Andrea_Messner,
+        data:Christa_von_Arnim,
+        data:Curt_David_von_Arnim,
+        data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Friedrich_Wilhelm_of_Lippe,
+        data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska,
+        data:Prince_Ernst_August_of_Lippe,
+        data:Prince_Julius_Ernst_of_Lippe,
+        data:Stephanie_von_Stechow ;
+    :isAncestorOf data:Andrea_Messner ;
+    :isBloodrelationOf data:G%C3%BCnther_Messner ;
+    :isBrotherOf data:G%C3%BCnther_Messner ;
+    :isFatherOf data:Andrea_Messner ;
+    :isParentOf data:Andrea_Messner ;
+    :isSiblingOf data:G%C3%BCnther_Messner ;
+    :isUncleOf data:Andrea_Messner .
+
+data:Lieselotte_Trzoska a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Andrea_Messner ;
+    :hasDaughter data:Andrea_Messner ;
+    :hasRelation data:Andrea_Messner,
+        data:Christa_von_Arnim,
+        data:Curt_David_von_Arnim,
+        data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Friedrich_Wilhelm_of_Lippe,
+        data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska,
+        data:Prince_Ernst_August_of_Lippe,
+        data:Prince_Julius_Ernst_of_Lippe,
+        data:Stephanie_von_Stechow ;
+    :hasSister data:Lieselotte_Trzoska ;
+    :isAncestorOf data:Andrea_Messner ;
+    :isAuntOf data:Andrea_Messner ;
+    :isBloodrelationOf data:Lieselotte_Trzoska ;
+    :isMotherOf data:Andrea_Messner ;
+    :isParentOf data:Andrea_Messner ;
+    :isSiblingOf data:Lieselotte_Trzoska ;
+    :isSisterOf data:Lieselotte_Trzoska .
+
+data:Curt_David_von_Arnim a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Curt_David_von_Arnim ;
+    :hasChild data:Christa_von_Arnim ;
+    :hasDaughter data:Christa_von_Arnim ;
+    :hasRelation data:Andrea_Messner,
+        data:Christa_von_Arnim,
+        data:Curt_David_von_Arnim,
+        data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Friedrich_Wilhelm_of_Lippe,
+        data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska,
+        data:Prince_Ernst_August_of_Lippe,
+        data:Prince_Julius_Ernst_of_Lippe,
+        data:Stephanie_von_Stechow ;
+    :isAncestorOf data:Christa_von_Arnim,
+        data:Friedrich_Wilhelm_of_Lippe ;
+    :isBloodrelationOf data:Curt_David_von_Arnim ;
+    :isBrotherOf data:Curt_David_von_Arnim ;
+    :isFatherOf data:Christa_von_Arnim ;
+    :isParentOf data:Christa_von_Arnim ;
+    :isSiblingOf data:Curt_David_von_Arnim ;
+    :isUncleOf data:Christa_von_Arnim .
+
+data:Duchess_Marie_of_Mecklenburg-Strelitz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Ernst_August_of_Lippe ;
+    :hasRelation data:Andrea_Messner,
+        data:Christa_von_Arnim,
+        data:Curt_David_von_Arnim,
+        data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Friedrich_Wilhelm_of_Lippe,
+        data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska,
+        data:Prince_Ernst_August_of_Lippe,
+        data:Prince_Julius_Ernst_of_Lippe,
+        data:Stephanie_von_Stechow ;
+    :hasSister data:Duchess_Marie_of_Mecklenburg-Strelitz ;
+    :hasSon data:Prince_Ernst_August_of_Lippe ;
+    :isAncestorOf data:Friedrich_Wilhelm_of_Lippe,
+        data:Prince_Ernst_August_of_Lippe ;
+    :isAuntOf data:Prince_Ernst_August_of_Lippe ;
+    :isBloodrelationOf data:Duchess_Marie_of_Mecklenburg-Strelitz ;
+    :isMotherOf data:Prince_Ernst_August_of_Lippe ;
+    :isParentOf data:Prince_Ernst_August_of_Lippe ;
+    :isSiblingOf data:Duchess_Marie_of_Mecklenburg-Strelitz ;
+    :isSisterOf data:Duchess_Marie_of_Mecklenburg-Strelitz .
+
+data:Prince_Julius_Ernst_of_Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Julius_Ernst_of_Lippe ;
+    :hasChild data:Prince_Ernst_August_of_Lippe ;
+    :hasRelation data:Andrea_Messner,
+        data:Christa_von_Arnim,
+        data:Curt_David_von_Arnim,
+        data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Friedrich_Wilhelm_of_Lippe,
+        data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska,
+        data:Prince_Ernst_August_of_Lippe,
+        data:Prince_Julius_Ernst_of_Lippe,
+        data:Stephanie_von_Stechow ;
+    :hasSon data:Prince_Ernst_August_of_Lippe ;
+    :isAncestorOf data:Friedrich_Wilhelm_of_Lippe,
+        data:Prince_Ernst_August_of_Lippe ;
+    :isBloodrelationOf data:Prince_Julius_Ernst_of_Lippe ;
+    :isBrotherOf data:Prince_Julius_Ernst_of_Lippe ;
+    :isFatherOf data:Prince_Ernst_August_of_Lippe ;
+    :isParentOf data:Prince_Ernst_August_of_Lippe ;
+    :isSiblingOf data:Prince_Julius_Ernst_of_Lippe ;
+    :isUncleOf data:Prince_Ernst_August_of_Lippe .
+
+data:Stephanie_von_Stechow a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Christa_von_Arnim ;
+    :hasDaughter data:Christa_von_Arnim ;
+    :hasRelation data:Andrea_Messner,
+        data:Christa_von_Arnim,
+        data:Curt_David_von_Arnim,
+        data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Friedrich_Wilhelm_of_Lippe,
+        data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska,
+        data:Prince_Ernst_August_of_Lippe,
+        data:Prince_Julius_Ernst_of_Lippe,
+        data:Stephanie_von_Stechow ;
+    :hasSister data:Stephanie_von_Stechow ;
+    :isAncestorOf data:Christa_von_Arnim,
+        data:Friedrich_Wilhelm_of_Lippe ;
+    :isAuntOf data:Christa_von_Arnim ;
+    :isBloodrelationOf data:Stephanie_von_Stechow ;
+    :isMotherOf data:Christa_von_Arnim ;
+    :isParentOf data:Christa_von_Arnim ;
+    :isSiblingOf data:Stephanie_von_Stechow ;
+    :isSisterOf data:Stephanie_von_Stechow .
+
+data:Andrea_Messner a :Person,
+        :Woman ;
+    :hasAncestor data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska ;
+    :hasBirthYear 1966 ;
+    :hasFather data:G%C3%BCnther_Messner ;
+    :hasMother data:Lieselotte_Trzoska ;
+    :hasParent data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska ;
+    :hasRelation data:Andrea_Messner,
+        data:Christa_von_Arnim,
+        data:Curt_David_von_Arnim,
+        data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Friedrich_Wilhelm_of_Lippe,
+        data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska,
+        data:Prince_Ernst_August_of_Lippe,
+        data:Prince_Julius_Ernst_of_Lippe,
+        data:Stephanie_von_Stechow ;
+    :hasSister data:Andrea_Messner ;
+    :isBloodrelationOf data:Andrea_Messner ;
+    :isChildOf data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska ;
+    :isDaughterOf data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska ;
+    :isSiblingOf data:Andrea_Messner ;
+    :isSisterOf data:Andrea_Messner .
+
+data:Friedrich_Wilhelm_of_Lippe a :Man,
+        :Person ;
+    :hasAncestor data:Christa_von_Arnim,
+        data:Curt_David_von_Arnim,
+        data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Prince_Ernst_August_of_Lippe,
+        data:Prince_Julius_Ernst_of_Lippe,
+        data:Stephanie_von_Stechow ;
+    :hasBirthYear 1947 ;
+    :hasBrother data:Friedrich_Wilhelm_of_Lippe ;
+    :hasFather data:Prince_Ernst_August_of_Lippe ;
+    :hasMarriageYear 1991 ;
+    :hasMother data:Christa_von_Arnim ;
+    :hasParent data:Christa_von_Arnim,
+        data:Prince_Ernst_August_of_Lippe ;
+    :hasRelation data:Andrea_Messner,
+        data:Christa_von_Arnim,
+        data:Curt_David_von_Arnim,
+        data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Friedrich_Wilhelm_of_Lippe,
+        data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska,
+        data:Prince_Ernst_August_of_Lippe,
+        data:Prince_Julius_Ernst_of_Lippe,
+        data:Stephanie_von_Stechow ;
+    :isBloodrelationOf data:Friedrich_Wilhelm_of_Lippe ;
+    :isBrotherOf data:Friedrich_Wilhelm_of_Lippe ;
+    :isChildOf data:Christa_von_Arnim,
+        data:Prince_Ernst_August_of_Lippe ;
+    :isSiblingOf data:Friedrich_Wilhelm_of_Lippe ;
+    :isSonOf data:Christa_von_Arnim,
+        data:Prince_Ernst_August_of_Lippe .
+
+data:Christa_von_Arnim a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Curt_David_von_Arnim,
+        data:Stephanie_von_Stechow ;
+    :hasBirthYear 1923 ;
+    :hasChild data:Friedrich_Wilhelm_of_Lippe ;
+    :hasFather data:Curt_David_von_Arnim ;
+    :hasMother data:Stephanie_von_Stechow ;
+    :hasParent data:Curt_David_von_Arnim,
+        data:Stephanie_von_Stechow ;
+    :hasRelation data:Andrea_Messner,
+        data:Christa_von_Arnim,
+        data:Curt_David_von_Arnim,
+        data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Friedrich_Wilhelm_of_Lippe,
+        data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska,
+        data:Prince_Ernst_August_of_Lippe,
+        data:Prince_Julius_Ernst_of_Lippe,
+        data:Stephanie_von_Stechow ;
+    :hasSister data:Christa_von_Arnim ;
+    :hasSon data:Friedrich_Wilhelm_of_Lippe ;
+    :isAncestorOf data:Friedrich_Wilhelm_of_Lippe ;
+    :isAuntOf data:Friedrich_Wilhelm_of_Lippe ;
+    :isBloodrelationOf data:Christa_von_Arnim ;
+    :isChildOf data:Curt_David_von_Arnim,
+        data:Stephanie_von_Stechow ;
+    :isDaughterOf data:Curt_David_von_Arnim,
+        data:Stephanie_von_Stechow ;
+    :isMotherOf data:Friedrich_Wilhelm_of_Lippe ;
+    :isParentOf data:Friedrich_Wilhelm_of_Lippe ;
+    :isSiblingOf data:Christa_von_Arnim ;
+    :isSisterOf data:Christa_von_Arnim .
+
+data:Prince_Ernst_August_of_Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Prince_Julius_Ernst_of_Lippe ;
+    :hasBirthYear 1917 ;
+    :hasBrother data:Prince_Ernst_August_of_Lippe ;
+    :hasChild data:Friedrich_Wilhelm_of_Lippe ;
+    :hasDeathYear 1990 ;
+    :hasFather data:Prince_Julius_Ernst_of_Lippe ;
+    :hasMother data:Duchess_Marie_of_Mecklenburg-Strelitz ;
+    :hasParent data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Prince_Julius_Ernst_of_Lippe ;
+    :hasRelation data:Andrea_Messner,
+        data:Christa_von_Arnim,
+        data:Curt_David_von_Arnim,
+        data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Friedrich_Wilhelm_of_Lippe,
+        data:G%C3%BCnther_Messner,
+        data:Lieselotte_Trzoska,
+        data:Prince_Ernst_August_of_Lippe,
+        data:Prince_Julius_Ernst_of_Lippe,
+        data:Stephanie_von_Stechow ;
+    :hasSon data:Friedrich_Wilhelm_of_Lippe ;
+    :isAncestorOf data:Friedrich_Wilhelm_of_Lippe ;
+    :isBloodrelationOf data:Prince_Ernst_August_of_Lippe ;
+    :isBrotherOf data:Prince_Ernst_August_of_Lippe ;
+    :isChildOf data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Prince_Julius_Ernst_of_Lippe ;
+    :isFatherOf data:Friedrich_Wilhelm_of_Lippe ;
+    :isParentOf data:Friedrich_Wilhelm_of_Lippe ;
+    :isSiblingOf data:Prince_Ernst_August_of_Lippe ;
+    :isSonOf data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Prince_Julius_Ernst_of_Lippe ;
+    :isUncleOf data:Friedrich_Wilhelm_of_Lippe .
+

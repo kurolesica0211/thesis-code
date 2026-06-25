@@ -150,6 +150,8 @@ In the 1990s, the historian John Röhl and his colleagues Martin Warren and Davi
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -165,39 +167,9 @@ In the 1990s, the historian John Röhl and his colleagues Martin Warren and Davi
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -212,6 +184,23 @@ In the 1990s, the historian John Röhl and his colleagues Martin Warren and Davi
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -229,6 +218,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -296,29 +300,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -327,6 +323,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -339,6 +343,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -347,17 +353,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -385,6 +393,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -400,204 +492,146 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b002d768-cfa3-4868-a170-b25cc2735dda)
- Call ID: b002d768-cfa3-4868-a170-b25cc2735dda
+  AssignClass (789ee087-3e10-4af9-803c-a8ab1959d6bc)
+ Call ID: 789ee087-3e10-4af9-803c-a8ab1959d6bc
   Args:
-    source: :Feodora_of_Saxe-Meiningen
+    source: Feodora_of_Saxe-Meiningen
     type: :Woman
-  AssignClass (5a6ba455-ca63-48a5-b2e7-fe5e49644ab9)
- Call ID: 5a6ba455-ca63-48a5-b2e7-fe5e49644ab9
+  AssignClass (2f297350-0038-434f-8247-2afd72e9bd1d)
+ Call ID: 2f297350-0038-434f-8247-2afd72e9bd1d
   Args:
+    source: Feodora_of_Saxe-Meiningen
     type: :Person
-    source: :Feodora_of_Saxe-Meiningen
-  AddLiteral (3a8076ae-c434-4449-926b-e0ce70bf4e07)
- Call ID: 3a8076ae-c434-4449-926b-e0ce70bf4e07
-  Args:
-    literal_type: xsd:string
-    source: :Feodora_of_Saxe-Meiningen
-    literal_value: Feodora Viktoria Auguste Marie Marianne
-    relation: :knownAs
-  AddLiteral (bc6ed65f-4ccd-4f3c-83e1-ad60e80346a5)
- Call ID: bc6ed65f-4ccd-4f3c-83e1-ad60e80346a5
+  AddLiteral (bd0986a8-a396-4d58-9c5f-7a99bf372fc3)
+ Call ID: bd0986a8-a396-4d58-9c5f-7a99bf372fc3
   Args:
     literal_value: 1879
-    source: :Feodora_of_Saxe-Meiningen
     relation: :hasBirthYear
+    source: Feodora_of_Saxe-Meiningen
     literal_type: xsd:integer
-  AddLiteral (755d9181-c546-4d06-8ba1-66d4509820a6)
- Call ID: 755d9181-c546-4d06-8ba1-66d4509820a6
+  AddLiteral (15935a66-767e-4e42-8b9e-27e4a14a90e6)
+ Call ID: 15935a66-767e-4e42-8b9e-27e4a14a90e6
   Args:
     literal_type: xsd:integer
+    source: Feodora_of_Saxe-Meiningen
     relation: :hasDeathYear
     literal_value: 1945
-    source: :Feodora_of_Saxe-Meiningen
-  AssignClass (83ba51f0-5304-4978-b527-79140edc7a7c)
- Call ID: 83ba51f0-5304-4978-b527-79140edc7a7c
+  AssignClass (128d086c-0f40-403b-b98b-3e52fd0d22e0)
+ Call ID: 128d086c-0f40-403b-b98b-3e52fd0d22e0
   Args:
-    source: :Bernhard_III_Duke_of_Saxe-Meiningen
+    source: Bernhard_III_Duke_of_Saxe-Meiningen
     type: :Man
-  AssignClass (c53085f3-b781-497c-8487-98d25417fce1)
- Call ID: c53085f3-b781-497c-8487-98d25417fce1
+  AssignClass (a67749c2-c5d9-437a-a2c8-66c8b6ff0b43)
+ Call ID: a67749c2-c5d9-437a-a2c8-66c8b6ff0b43
   Args:
+    source: Bernhard_III_Duke_of_Saxe-Meiningen
     type: :Person
-    source: :Bernhard_III_Duke_of_Saxe-Meiningen
-  AssignClass (3e733441-eb8f-4af0-8dfd-242b4c01bdc6)
- Call ID: 3e733441-eb8f-4af0-8dfd-242b4c01bdc6
+  AssignClass (d9cfd81d-f0e9-4c2c-a3b3-40808170d822)
+ Call ID: d9cfd81d-f0e9-4c2c-a3b3-40808170d822
   Args:
-    type: :Ancestor
-    source: :Bernhard_III_Duke_of_Saxe-Meiningen
-  AssignClass (2f99a6d6-6e96-4f78-9b33-6fd61bd22d8c)
- Call ID: 2f99a6d6-6e96-4f78-9b33-6fd61bd22d8c
-  Args:
-    source: :Charlotte_of_Prussia
     type: :Woman
-  AssignClass (d918f88f-f542-46b6-a53e-b2fd6f45951b)
- Call ID: d918f88f-f542-46b6-a53e-b2fd6f45951b
+    source: Charlotte_of_Prussia
+  AssignClass (1c962cfc-f7e6-41f2-a282-703a0c09359c)
+ Call ID: 1c962cfc-f7e6-41f2-a282-703a0c09359c
   Args:
-    source: :Charlotte_of_Prussia
     type: :Person
-  AssignClass (d3786cc9-7a8d-41b6-9213-b4e74b5743bd)
- Call ID: d3786cc9-7a8d-41b6-9213-b4e74b5743bd
+    source: Charlotte_of_Prussia
+  AddTriple (2b15c3ac-a431-4541-b1a2-35c885b8bc01)
+ Call ID: 2b15c3ac-a431-4541-b1a2-35c885b8bc01
   Args:
-    source: :Charlotte_of_Prussia
-    type: :Ancestor
-  AddTriple (6a61f9db-6e83-46ad-b38f-71a41dad1fb0)
- Call ID: 6a61f9db-6e83-46ad-b38f-71a41dad1fb0
-  Args:
-    target: :Bernhard_III_Duke_of_Saxe-Meiningen
-    source: :Feodora_of_Saxe-Meiningen
+    source: Feodora_of_Saxe-Meiningen
+    target: Bernhard_III_Duke_of_Saxe-Meiningen
     relation: :hasFather
-  AddTriple (08121edf-7b24-4fdd-a034-fe1263693002)
- Call ID: 08121edf-7b24-4fdd-a034-fe1263693002
+  AddTriple (caee8c86-6028-40f5-9195-63d5da658272)
+ Call ID: caee8c86-6028-40f5-9195-63d5da658272
   Args:
     relation: :hasMother
-    target: :Charlotte_of_Prussia
-    source: :Feodora_of_Saxe-Meiningen
-  AssignClass (975cbc4d-1cfb-49d2-8b93-ece629cdbef9)
- Call ID: 975cbc4d-1cfb-49d2-8b93-ece629cdbef9
+    target: Charlotte_of_Prussia
+    source: Feodora_of_Saxe-Meiningen
+  AssignClass (5d5b7ae1-607e-4d70-b252-bcfd6d0af3ec)
+ Call ID: 5d5b7ae1-607e-4d70-b252-bcfd6d0af3ec
   Args:
     type: :Man
-    source: :Friedrich_III_of_Germany
-  AssignClass (949c1948-6ee0-48a2-a90b-05ff642ae54a)
- Call ID: 949c1948-6ee0-48a2-a90b-05ff642ae54a
+    source: Friedrich_III_of_Germany
+  AssignClass (4f0ea8a7-6e08-4a78-9f57-c7bcd9c47933)
+ Call ID: 4f0ea8a7-6e08-4a78-9f57-c7bcd9c47933
   Args:
+    source: Friedrich_III_of_Germany
     type: :Person
-    source: :Friedrich_III_of_Germany
-  AssignClass (1c9cd90b-3536-4e41-9872-b2fcbd8031f1)
- Call ID: 1c9cd90b-3536-4e41-9872-b2fcbd8031f1
+  AssignClass (296046fe-823a-42f9-a808-9dd52e0ee799)
+ Call ID: 296046fe-823a-42f9-a808-9dd52e0ee799
   Args:
-    type: :Ancestor
-    source: :Friedrich_III_of_Germany
-  AssignClass (90fae20a-d0e1-4790-be97-d3348bf3ce6c)
- Call ID: 90fae20a-d0e1-4790-be97-d3348bf3ce6c
-  Args:
-    source: :Empress_Victoria
     type: :Woman
-  AssignClass (33b90a72-226d-40ca-9535-9627e86606a6)
- Call ID: 33b90a72-226d-40ca-9535-9627e86606a6
+    source: Empress_Victoria
+  AssignClass (6efb8edf-31b4-4d97-8545-2e9826dcbadd)
+ Call ID: 6efb8edf-31b4-4d97-8545-2e9826dcbadd
   Args:
     type: :Person
-    source: :Empress_Victoria
-  AssignClass (f114ae6a-4b9a-4db8-8491-869386757fdd)
- Call ID: f114ae6a-4b9a-4db8-8491-869386757fdd
+    source: Empress_Victoria
+  AddTriple (f196449c-4092-439c-9b8a-e68c70b1ef31)
+ Call ID: f196449c-4092-439c-9b8a-e68c70b1ef31
   Args:
-    source: :Empress_Victoria
-    type: :Ancestor
-  AddTriple (3723c249-07f2-4de7-b085-a90b1327044a)
- Call ID: 3723c249-07f2-4de7-b085-a90b1327044a
-  Args:
-    source: :Charlotte_of_Prussia
-    target: :Friedrich_III_of_Germany
     relation: :hasFather
-  AddTriple (7fcec9a5-6a60-412f-a4fe-33f892e714d9)
- Call ID: 7fcec9a5-6a60-412f-a4fe-33f892e714d9
+    target: Friedrich_III_of_Germany
+    source: Charlotte_of_Prussia
+  AddTriple (eaa97f81-18b8-4507-b15a-7d6fa8623ef9)
+ Call ID: eaa97f81-18b8-4507-b15a-7d6fa8623ef9
   Args:
-    source: :Charlotte_of_Prussia
-    target: :Empress_Victoria
     relation: :hasMother
-  AssignClass (33ab7a57-f067-4f08-8a8b-b00f801e9957)
- Call ID: 33ab7a57-f067-4f08-8a8b-b00f801e9957
+    target: Empress_Victoria
+    source: Charlotte_of_Prussia
+  AssignClass (b53adb0a-dcf5-4acb-9500-2db1bb2c0e4c)
+ Call ID: b53adb0a-dcf5-4acb-9500-2db1bb2c0e4c
   Args:
+    source: William_I_German_Emperor
     type: :Man
-    source: :William_I_German_Emperor
-  AssignClass (70c5d8d4-2654-489f-809d-0bd9b518e77b)
- Call ID: 70c5d8d4-2654-489f-809d-0bd9b518e77b
+  AssignClass (809d4922-65d3-47f4-b209-9fa7886b681f)
+ Call ID: 809d4922-65d3-47f4-b209-9fa7886b681f
   Args:
     type: :Person
-    source: :William_I_German_Emperor
-  AssignClass (485133f0-c433-4f72-b16b-bac6b2bfcf92)
- Call ID: 485133f0-c433-4f72-b16b-bac6b2bfcf92
+    source: William_I_German_Emperor
+  AssignClass (e39cd847-b8b5-4c20-98c2-36e78b10a8a0)
+ Call ID: e39cd847-b8b5-4c20-98c2-36e78b10a8a0
   Args:
-    type: :Ancestor
-    source: :William_I_German_Emperor
-  AssignClass (a3cb31dd-886e-4e19-b392-a7910b5767ed)
- Call ID: a3cb31dd-886e-4e19-b392-a7910b5767ed
-  Args:
+    source: Queen_Victoria
     type: :Woman
-    source: :Queen_Victoria
-  AssignClass (56ee0b1a-6b80-4199-b4ec-b6b756622266)
- Call ID: 56ee0b1a-6b80-4199-b4ec-b6b756622266
+  AssignClass (587e2233-d6ad-4bff-a497-8fd91d170661)
+ Call ID: 587e2233-d6ad-4bff-a497-8fd91d170661
   Args:
     type: :Person
-    source: :Queen_Victoria
-  AssignClass (796cc698-0eda-482e-95cb-4c5745aa4cd6)
- Call ID: 796cc698-0eda-482e-95cb-4c5745aa4cd6
+    source: Queen_Victoria
+  AssignClass (5985295c-3a6d-4f8e-b5e1-a3727aa2004b)
+ Call ID: 5985295c-3a6d-4f8e-b5e1-a3727aa2004b
   Args:
-    type: :Ancestor
-    source: :Queen_Victoria
-  AssignClass (ec1d1d14-4e9c-48e7-a422-3d19759c1272)
- Call ID: ec1d1d14-4e9c-48e7-a422-3d19759c1272
-  Args:
-    source: :Prince_Heinrich_XXX_Reuss_of_Kostritz
+    source: Prince_Heinrich_XXX_Reuss_of_Kostritz
     type: :Man
-  AssignClass (ad229201-669c-4e9d-a5b8-e101bcee2843)
- Call ID: ad229201-669c-4e9d-a5b8-e101bcee2843
+  AssignClass (e7ffb048-c2ff-4cea-9b8a-3bf8de340c30)
+ Call ID: e7ffb048-c2ff-4cea-9b8a-3bf8de340c30
   Args:
-    source: :Prince_Heinrich_XXX_Reuss_of_Kostritz
     type: :Person
-  AddLiteral (b85f0904-cd0c-4b59-8b7e-2f3a4052be19)
- Call ID: b85f0904-cd0c-4b59-8b7e-2f3a4052be19
+    source: Prince_Heinrich_XXX_Reuss_of_Kostritz
+  AddLiteral (853a7ce4-7f49-443e-9e99-f810e17e603a)
+ Call ID: 853a7ce4-7f49-443e-9e99-f810e17e603a
   Args:
     relation: :hasMarriageYear
-    source: :Feodora_of_Saxe-Meiningen
     literal_value: 1898
+    source: Feodora_of_Saxe-Meiningen
     literal_type: xsd:integer
-  AddTriple (5e610b71-21f4-45d6-8f2a-a8c6fc6ae9d3)
- Call ID: 5e610b71-21f4-45d6-8f2a-a8c6fc6ae9d3
+  AddTriple (321bb300-e0d7-4c1c-85a8-f5869abf37be)
+ Call ID: 321bb300-e0d7-4c1c-85a8-f5869abf37be
   Args:
-    target: :Prince_Heinrich_XXX_Reuss_of_Kostritz
-    source: :Feodora_of_Saxe-Meiningen
     relation: :hasRelation
-  ValidateShacl (5f6d670e-cebd-4912-bbc7-b982956adb18)
- Call ID: 5f6d670e-cebd-4912-bbc7-b982956adb18
+    source: Feodora_of_Saxe-Meiningen
+    target: Prince_Heinrich_XXX_Reuss_of_Kostritz
+  AddTriple (84107514-c4f7-4b78-b9fa-3f712521d8c3)
+ Call ID: 84107514-c4f7-4b78-b9fa-3f712521d8c3
   Args:
-  Finish (86fbaee6-200b-4bf6-ac90-29239cbc2c13)
- Call ID: 86fbaee6-200b-4bf6-ac90-29239cbc2c13
+    target: Feodora_of_Saxe-Meiningen
+    source: Prince_Heinrich_XXX_Reuss_of_Kostritz
+    relation: :hasRelation
+  Finish (75ab4dfe-cf70-4b1d-bac6-008890d8ca89)
+ Call ID: 75ab4dfe-cf70-4b1d-bac6-008890d8ca89
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -702,6 +736,23 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+  data:Queen_Victoria a :Person,
+          :Woman .
+
+  data:William_I_German_Emperor a :Man,
+          :Person .
+
+  data:Bernhard_III_Duke_of_Saxe-Meiningen a :Man,
+          :Person .
+
+  data:Charlotte_of_Prussia a :Person,
+          :Woman ;
+      :hasFather data:Friedrich_III_of_Germany ;
+      :hasMother data:Empress_Victoria .
+
+  data:Empress_Victoria a :Person,
+          :Woman .
+
   data:Feodora_of_Saxe-Meiningen a :Person,
           :Woman ;
       :hasBirthYear 1879 ;
@@ -709,15 +760,184 @@ The final data graph after all the edits:
       :hasFather data:Bernhard_III_Duke_of_Saxe-Meiningen ;
       :hasMarriageYear 1898 ;
       :hasMother data:Charlotte_of_Prussia ;
-      :hasRelation data:Prince_Heinrich_XXX_Reuss_of_Kostritz ;
-      :knownAs "Feodora Viktoria Auguste Marie Marianne"^^xsd:string .
+      :hasRelation data:Prince_Heinrich_XXX_Reuss_of_Kostritz .
 
-  data:Queen_Victoria a :Ancestor,
-          :Person,
+  data:Friedrich_III_of_Germany a :Man,
+          :Person .
+
+  data:Prince_Heinrich_XXX_Reuss_of_Kostritz a :Man,
+          :Person ;
+      :hasRelation data:Feodora_of_Saxe-Meiningen .
+
+
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (5670c556-c203-4dde-a0e8-58fc6831d323)
+ Call ID: 5670c556-c203-4dde-a0e8-58fc6831d323
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:12
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Bernhard_III_Duke_of_Saxe-Meiningen, defined as the father of Feodora_of_Saxe-Meiningen, is missing the required Ancestor class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Bernhard_III_Duke_of_Saxe-Meiningen', class=':Ancestor')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Friedrich_III_of_Germany, defined as the father of Charlotte_of_Prussia, is missing the required Ancestor class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Friedrich_III_of_Germany', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Charlotte_of_Prussia, defined as the mother of Feodora_of_Saxe-Meiningen, is missing the required Ancestor class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Charlotte_of_Prussia', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Empress_Victoria, defined as the mother of Charlotte_of_Prussia, is missing the required Ancestor class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Empress_Victoria', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Bernhard_III_Duke_of_Saxe-Meiningen, defined as the father of Feodora_of_Saxe-Meiningen, is missing the required Ancestor class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Bernhard_III_Duke_of_Saxe-Meiningen', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Friedrich_III_of_Germany, defined as the father of Charlotte_of_Prussia, is missing the required Ancestor class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Friedrich_III_of_Germany', class=':Ancestor')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Charlotte_of_Prussia, defined as the mother of Feodora_of_Saxe-Meiningen, is missing the required Ancestor class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Charlotte_of_Prussia', class=':Ancestor')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Empress_Victoria, defined as the mother of Charlotte_of_Prussia, is missing the required Ancestor class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Empress_Victoria', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Friedrich_III_of_Germany, defined as the father of Charlotte_of_Prussia, is missing the required Ancestor class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Friedrich_III_of_Germany', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Bernhard_III_Duke_of_Saxe-Meiningen, defined as the father of Feodora_of_Saxe-Meiningen, is missing the required Ancestor class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Bernhard_III_Duke_of_Saxe-Meiningen', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Empress_Victoria, defined as the mother of Charlotte_of_Prussia, is missing the required Ancestor class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Empress_Victoria', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Charlotte_of_Prussia, defined as the mother of Feodora_of_Saxe-Meiningen, is missing the required Ancestor class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Charlotte_of_Prussia', class=':Ancestor')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (428d58ce-4af4-4c3f-9c1d-a68170c92415)
+ Call ID: 428d58ce-4af4-4c3f-9c1d-a68170c92415
+  Args:
+    source: Bernhard_III_Duke_of_Saxe-Meiningen
+    type: :Ancestor
+  AssignClass (30848edd-7847-4764-9153-e53be6e1d4bf)
+ Call ID: 30848edd-7847-4764-9153-e53be6e1d4bf
+  Args:
+    source: Friedrich_III_of_Germany
+    type: :Ancestor
+  AssignClass (cc6939a9-f0e7-4175-b18a-eb2ff2cac0f3)
+ Call ID: cc6939a9-f0e7-4175-b18a-eb2ff2cac0f3
+  Args:
+    source: Charlotte_of_Prussia
+    type: :Ancestor
+  AssignClass (d94d20c3-65c5-4018-9454-3f28336ffb92)
+ Call ID: d94d20c3-65c5-4018-9454-3f28336ffb92
+  Args:
+    source: Empress_Victoria
+    type: :Ancestor
+  Finish (9e56eeaa-92bd-4595-a285-6af2484c1338)
+ Call ID: 9e56eeaa-92bd-4595-a285-6af2484c1338
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Queen_Victoria a :Person,
           :Woman .
 
-  data:William_I_German_Emperor a :Ancestor,
-          :Man,
+  data:William_I_German_Emperor a :Man,
           :Person .
 
   data:Bernhard_III_Duke_of_Saxe-Meiningen a :Ancestor,
@@ -734,29 +954,35 @@ The final data graph after all the edits:
           :Person,
           :Woman .
 
+  data:Feodora_of_Saxe-Meiningen a :Person,
+          :Woman ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1945 ;
+      :hasFather data:Bernhard_III_Duke_of_Saxe-Meiningen ;
+      :hasMarriageYear 1898 ;
+      :hasMother data:Charlotte_of_Prussia ;
+      :hasRelation data:Prince_Heinrich_XXX_Reuss_of_Kostritz .
+
   data:Friedrich_III_of_Germany a :Ancestor,
           :Man,
           :Person .
 
   data:Prince_Heinrich_XXX_Reuss_of_Kostritz a :Man,
-          :Person .
+          :Person ;
+      :hasRelation data:Feodora_of_Saxe-Meiningen .
 
 
 
 ================================= Tool Message =================================
 
-SHACL validation has not produced any violations.
-
-================================= Tool Message =================================
-
-You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (8e2c273f-f348-4227-a342-b9b28cd98044)
- Call ID: 8e2c273f-f348-4227-a342-b9b28cd98044
+  ValidateShacl (054b2985-da2d-4c35-8897-3f2041390dc0)
+ Call ID: 054b2985-da2d-4c35-8897-3f2041390dc0
   Args:
 
 ================================= Tool Message =================================
@@ -767,6 +993,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (2832fb85-cee4-4ab0-8a48-599e6e706de8)
- Call ID: 2832fb85-cee4-4ab0-8a48-599e6e706de8
+  Finish (c8710459-9644-4ef9-a85b-e48b4652cb8a)
+ Call ID: c8710459-9644-4ef9-a85b-e48b4652cb8a
   Args:

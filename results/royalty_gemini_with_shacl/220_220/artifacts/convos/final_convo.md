@@ -85,34 +85,57 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Anne Ferelith Fenella Bowes-Lyon (4 December 1917 – 26 September 1980), later styled Viscountess Anson and later Princess Anne of Denmark, was a British noblewoman and member of the Danish royal family by marriage, and a first cousin of Elizabeth II.
-Born into the Bowes-Lyon family, she married Thomas Anson, Viscount Anson, and had two children, Patrick Anson, 5th Earl of Lichfield, and Lady Elizabeth Shakerley, before divorcing Anson in 1948.
-She became a princess of Denmark by her second marriage to Prince Georg of Denmark in 1950.
-Family
+Zara Anne Elizabeth Tindall (née Phillips; born 15 May 1981) is a British equestrian, Olympian, and member of the British royal family.
+She is the daughter of Anne, Princess Royal, and Captain Mark Phillips, and the eldest niece of King Charles III.
+At birth she was sixth in the line of succession to the British throne during the reign of her maternal grandmother, Queen Elizabeth II, and as of 2026 is 22nd.
+Tindall won the individual eventing world title at Aachen in 2006 and was later named BBC Sports Personality of the Year.
+She married former rugby union player Mike Tindall in 2011, and the couple have three children.
+Early life and education
 
-Anne Bowes-Lyon was born in Washington, D.C., in 1917.
-John Herbert Bowes-Lyon and her mother was the Hon.
-Fenella Hepburn-Stuart-Forbes-Trefusis, daughter of Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton.
-Anne's paternal grandfather was Claude Bowes-Lyon, 14th
-Earl of Strathmore and Kinghorne.
-She was a niece of Queen Elizabeth the Queen Mother.
-Anne had three younger sisters, two of whom were Nerissa and Katherine Bowes-Lyon, who were institutionalized in 1941 for severe intellectual disability.
-Apart from early deceased Patricia (1916–1917), Nerissa (1919–1986) and Katherine (1926–2014), Anne also had one younger sister, Diana Cinderella Somervell (1923–1986).
-Marriages
+Zara Anne Elizabeth Phillips was born at 8:15 pm on 15 May 1981 at St Mary's Hospital, London.
+She has an elder brother, Peter, and two younger half-sisters, Felicity Wade (née Tonkin), from her father's affair with Heather Tonkin; and Stephanie Phillips, from his second marriage to Sandy Pflueger.
+Phillips attended Beaudesert Park School in Stroud, Gloucestershire, and Port Regis School in Shaftesbury, Dorset, before following other members of the royal family in attending Gordonstoun School in Moray, Scotland.
+Equestrianism
 
-Anne married Lieutenant-Colonel Thomas William Arnold Anson (1913–1958) on 28 April 1938.
-As her husband held the courtesy title of Viscount Anson, Anne was styled Viscountess Anson upon their marriage.
-On 16 September 1950, at Glamis Castle, Anne, Viscountess Anson subsequently married Prince Georg of Denmark, upon which she became Her Highness Princess Anne of Denmark.
-Death
+After leaving university, Phillips began to pursue an equestrian career, following in the footsteps of her parents.
+Phillips missed the 2004 Summer Olympics in Athens after her horse was injured during training.
+Riding Toytown, Phillips won individual and team gold medals at the 2005 European Eventing Championship at Blenheim.
+The British Olympic Association selected Phillips and Toytown for the 2008 Olympic Games in Hong Kong; however, Toytown sustained an injury during training and she withdrew from the team.
+On 25 October 2008, Phillips fell from her horse, Tsunami II, at the 15th fence of a cross‐country event in Pau, France, breaking her right collarbone.
+In July 2010, Musto launched a range of equestrian clothing designed by Phillips, named ZP176 after her team number when she first represented Great Britain.
+Phillips competed at the 2012 London Olympic Games on High Kingdom, winning a silver medal in the team event.
+She stopped using her maiden name in March 2016 and competed as Zara Tindall for the first time during her unsuccessful attempt to qualify for the 2016 Rio Olympic Games.
+In 2017, Tindall finished third at the Kentucky Three-Day Event on High Kingdom, who retired from competition in 2018.
+Charity work
 
-Anne died in 1980, aged 62, in London of a heart attack.
-She is buried alongside her second husband, Prince George of Denmark, at Bernstorffpark, Gentofte, Denmark.
+Tindall frequently supports and attends events for a range of charitable causes, particularly those connected with spinal injuries, equestrianism, and children's welfare.
+Tindall has appeared at events for The Caudwell Charitable Trust, which supports children with special needs, disabilities, and serious illnesses.
+The following year, she became patron of the Mark Davies Injured Riders Fund.
+In 2013, she visited Stroud Maternity Ward to mark its 60th anniversary, and in 2014 she lent her support to the #bringbackourgirls campaign.
+In April 2020, Tindall participated in the Equestrian Relief initiative to help provide additional personal protective equipment for National Health Service workers.
+Other activities
+
+In June 2015, Tindall launched an equestrian-themed jewellery collection, named "Zara Phillips Collection", in collaboration with Australian designer John Calleija.
+On 17 September 2022, during the period of official mourning for Queen Elizabeth II, Tindall joined her brother and six cousins to mount a 15-minute vigil around the coffin of the Queen, as it lay in state at Westminster Hall.
+On 19 September, with her husband Mike and daughter Mia, she joined other family members at the state funeral.
+Personal life
+
+Phillips met rugby union player Mike Tindall, who was then playing for the England national team, during the squad's Rugby World Cup-winning campaign in Australia in 2003.
+As required at the time by the Royal Marriages Act 1772, the Queen gave her consent to the marriage at a meeting of the Privy Council on 10 May 2011.
+A celebration was held on the royal yacht Britannia prior to the wedding.
+The Tindalls lived in Cheltenham, Gloucestershire, before moving to Aston Farm, a seven-bedroom property adjoining the Princess Royal's Gatcombe Park estate.
+Their first child, Mia Grace, was born on 17 January 2014 at Gloucestershire Royal Hospital and was 16th, later 23rd in the line of succession.
+A second daughter, Lena Elizabeth, was born on 18 June 2018 at Stroud Maternity Hospital and was 19th, later 24th, in the line of succession.
+Tindall is a godmother to Prince George of Wales, the son of her cousin William, Prince of Wales.
+In December 2000, before her marriage, Phillips was involved in a serious car crash near Bourton-on-the-Water, escaping injury after overturning her Land Rover.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -128,39 +151,9 @@ She is buried alongside her second husband, Prince George of Denmark, at Bernsto
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -175,6 +168,23 @@ She is buried alongside her second husband, Prince George of Denmark, at Bernsto
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -192,6 +202,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -259,29 +284,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -290,6 +307,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -302,6 +327,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -310,17 +337,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -348,6 +377,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -363,308 +476,194 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (3191b8b4-77d3-470b-96e7-eb4edde9429d)
- Call ID: 3191b8b4-77d3-470b-96e7-eb4edde9429d
-  Args:
-    type: :Person
-    source: :Anne_Bowes-Lyon
-  AssignClass (6b2b32d2-f36d-4f66-84bd-4f57b6445593)
- Call ID: 6b2b32d2-f36d-4f66-84bd-4f57b6445593
+  AssignClass (06217812-4986-47a8-952b-8e6b3a0222fc)
+ Call ID: 06217812-4986-47a8-952b-8e6b3a0222fc
   Args:
     type: :Woman
-    source: :Anne_Bowes-Lyon
-  AddLiteral (b2b84db0-1805-4231-82a1-c215cac87bb4)
- Call ID: b2b84db0-1805-4231-82a1-c215cac87bb4
+    source: Zara_Tindall
+  AssignClass (7ca0d91b-5ed0-4228-bfd4-8caa9f15f119)
+ Call ID: 7ca0d91b-5ed0-4228-bfd4-8caa9f15f119
   Args:
-    source: :Anne_Bowes-Lyon
-    literal_type: xsd:integer
-    literal_value: 1917
+    source: Anne_Princess_Royal
+    type: :Woman
+  AssignClass (d6f4093a-f826-4c26-97db-d95405e1b658)
+ Call ID: d6f4093a-f826-4c26-97db-d95405e1b658
+  Args:
+    type: :Man
+    source: Mark_Phillips
+  AssignClass (ec8d0997-09e2-4ea7-a2ad-29155d232c33)
+ Call ID: ec8d0997-09e2-4ea7-a2ad-29155d232c33
+  Args:
+    type: :Man
+    source: King_Charles_III
+  AssignClass (5c762173-1c75-48dc-9bc6-027b5ea0fd1e)
+ Call ID: 5c762173-1c75-48dc-9bc6-027b5ea0fd1e
+  Args:
+    type: :Woman
+    source: Queen_Elizabeth_II
+  AssignClass (30ebd11b-d398-4bcb-95d5-b5d07852709d)
+ Call ID: 30ebd11b-d398-4bcb-95d5-b5d07852709d
+  Args:
+    source: Mike_Tindall
+    type: :Man
+  AssignClass (55677525-05eb-49fe-995a-9c2532c9f02e)
+ Call ID: 55677525-05eb-49fe-995a-9c2532c9f02e
+  Args:
+    source: Peter_Phillips
+    type: :Man
+  AssignClass (8c09a975-b628-4edd-843b-ae4465c7b693)
+ Call ID: 8c09a975-b628-4edd-843b-ae4465c7b693
+  Args:
+    source: Felicity_Wade
+    type: :Woman
+  AssignClass (60418f82-17d9-44cb-a0f3-29bc14c9796a)
+ Call ID: 60418f82-17d9-44cb-a0f3-29bc14c9796a
+  Args:
+    source: Stephanie_Phillips
+    type: :Woman
+  AssignClass (da219f89-a974-4c8f-a46c-d29c3e41fb68)
+ Call ID: da219f89-a974-4c8f-a46c-d29c3e41fb68
+  Args:
+    type: :Woman
+    source: Heather_Tonkin
+  AssignClass (c213082e-7010-4388-8e3b-a1faa3d07be8)
+ Call ID: c213082e-7010-4388-8e3b-a1faa3d07be8
+  Args:
+    source: Sandy_Pflueger
+    type: :Woman
+  AssignClass (95286682-222f-4044-8f14-99aa2581ed9e)
+ Call ID: 95286682-222f-4044-8f14-99aa2581ed9e
+  Args:
+    source: Mia_Grace_Tindall
+    type: :Woman
+  AssignClass (e68b5b55-2ed0-45aa-a941-ed8ca2a808fb)
+ Call ID: e68b5b55-2ed0-45aa-a941-ed8ca2a808fb
+  Args:
+    type: :Woman
+    source: Lena_Elizabeth_Tindall
+  AssignClass (2805e092-25a7-4c61-808c-824e718f649b)
+ Call ID: 2805e092-25a7-4c61-808c-824e718f649b
+  Args:
+    type: :Man
+    source: Prince_George_of_Wales
+  AssignClass (9cacc425-3409-4fc0-9735-4c32e00b0dd5)
+ Call ID: 9cacc425-3409-4fc0-9735-4c32e00b0dd5
+  Args:
+    source: William_Prince_of_Wales
+    type: :Man
+  AddLiteral (7678882e-cf3e-4ab2-aa5a-42023ba4486c)
+ Call ID: 7678882e-cf3e-4ab2-aa5a-42023ba4486c
+  Args:
+    literal_value: 1981
     relation: :hasBirthYear
-  AddLiteral (796dd2e8-8b5f-4946-82c4-7fd64a67ade3)
- Call ID: 796dd2e8-8b5f-4946-82c4-7fd64a67ade3
-  Args:
-    relation: :hasDeathYear
-    source: :Anne_Bowes-Lyon
-    literal_value: 1980
+    source: Zara_Tindall
     literal_type: xsd:integer
-  AddLiteral (160d7d78-2786-454d-96f4-46e1583e538f)
- Call ID: 160d7d78-2786-454d-96f4-46e1583e538f
+  AddTriple (aad8847c-f4f1-4c79-9724-637718305ddd)
+ Call ID: aad8847c-f4f1-4c79-9724-637718305ddd
   Args:
-    relation: :hasSex
-    source: :Anne_Bowes-Lyon
-    literal_type: xsd:string
-    literal_value: Female
-  AddLiteral (425c8981-917a-4ee3-a1f4-7ea182dd5412)
- Call ID: 425c8981-917a-4ee3-a1f4-7ea182dd5412
-  Args:
-    relation: :alsoKnownAs
-    source: :Anne_Bowes-Lyon
-    literal_value: Viscountess Anson
-    literal_type: xsd:string
-  AddLiteral (b667ba22-df1a-4cbc-b0f4-557184fa6829)
- Call ID: b667ba22-df1a-4cbc-b0f4-557184fa6829
-  Args:
-    source: :Anne_Bowes-Lyon
-    literal_type: xsd:string
-    literal_value: Princess Anne of Denmark
-    relation: :alsoKnownAs
-  AssignClass (d71381ca-963d-4a60-bbcc-2e1f696e1744)
- Call ID: d71381ca-963d-4a60-bbcc-2e1f696e1744
-  Args:
-    type: :Person
-    source: :John_Herbert_Bowes-Lyon
-  AssignClass (071d7613-c203-4862-8297-aede48635ac9)
- Call ID: 071d7613-c203-4862-8297-aede48635ac9
-  Args:
-    type: :Man
-    source: :John_Herbert_Bowes-Lyon
-  AddTriple (821336af-c800-4940-a0e9-35127f3bfe54)
- Call ID: 821336af-c800-4940-a0e9-35127f3bfe54
-  Args:
-    source: :Anne_Bowes-Lyon
-    target: :John_Herbert_Bowes-Lyon
-    relation: :hasFather
-  AssignClass (44c715a3-d4ee-4f48-9774-2322670e6e76)
- Call ID: 44c715a3-d4ee-4f48-9774-2322670e6e76
-  Args:
-    type: :Person
-    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
-  AssignClass (757f9c3b-7076-4daf-8106-4c0146f42bca)
- Call ID: 757f9c3b-7076-4daf-8106-4c0146f42bca
-  Args:
-    type: :Woman
-    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
-  AddTriple (bf32bc96-784c-4b7d-8b3c-00cc687a3b6b)
- Call ID: bf32bc96-784c-4b7d-8b3c-00cc687a3b6b
-  Args:
-    target: :Fenella_Hepburn-Stuart-Forbes-Trefusis
+    target: Anne_Princess_Royal
+    source: Zara_Tindall
     relation: :hasMother
-    source: :Anne_Bowes-Lyon
-  AssignClass (96b321c5-4726-4627-a874-af2e2acc53d9)
- Call ID: 96b321c5-4726-4627-a874-af2e2acc53d9
-  Args:
-    type: :Person
-    source: :Charles_Hepburn-Stuart-Forbes-Trefusis
-  AssignClass (9623ad48-73ca-4120-ad6f-666557873961)
- Call ID: 9623ad48-73ca-4120-ad6f-666557873961
-  Args:
-    type: :Man
-    source: :Charles_Hepburn-Stuart-Forbes-Trefusis
-  AddTriple (58f256c6-c070-4307-9ba8-1ad6a04bae46)
- Call ID: 58f256c6-c070-4307-9ba8-1ad6a04bae46
+  AddTriple (a04137de-a05f-4cd0-bb61-a0e0df6d06dc)
+ Call ID: a04137de-a05f-4cd0-bb61-a0e0df6d06dc
   Args:
     relation: :hasFather
-    target: :Charles_Hepburn-Stuart-Forbes-Trefusis
-    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
-  AssignClass (da414424-d266-4540-be29-097bae878e08)
- Call ID: da414424-d266-4540-be29-097bae878e08
+    source: Zara_Tindall
+    target: Mark_Phillips
+  AddTriple (d195e678-dedd-480c-b1ce-b022d96d8fd1)
+ Call ID: d195e678-dedd-480c-b1ce-b022d96d8fd1
   Args:
-    type: :Person
-    source: :Claude_Bowes-Lyon
-  AssignClass (cc2e7076-578d-4cc0-a447-59b1141e0b71)
- Call ID: cc2e7076-578d-4cc0-a447-59b1141e0b71
+    target: Queen_Elizabeth_II
+    relation: :hasMother
+    source: Anne_Princess_Royal
+  AddTriple (2dbfbfc6-20ee-41dd-97cf-7fd9730fa61b)
+ Call ID: 2dbfbfc6-20ee-41dd-97cf-7fd9730fa61b
   Args:
-    type: :Man
-    source: :Claude_Bowes-Lyon
-  AddTriple (1de2bda6-87e3-4684-8d54-5107eace430d)
- Call ID: 1de2bda6-87e3-4684-8d54-5107eace430d
+    source: Zara_Tindall
+    relation: :hasBrother
+    target: Peter_Phillips
+  AddTriple (4e1a8f50-037e-48e9-8d95-d110a626cb35)
+ Call ID: 4e1a8f50-037e-48e9-8d95-d110a626cb35
   Args:
-    source: :John_Herbert_Bowes-Lyon
     relation: :hasFather
-    target: :Claude_Bowes-Lyon
-  AssignClass (18374a1a-ebf0-40b1-9354-c8c6642ee933)
- Call ID: 18374a1a-ebf0-40b1-9354-c8c6642ee933
+    source: Peter_Phillips
+    target: Mark_Phillips
+  AddTriple (af13ec2a-40aa-4d4f-899c-22104e1c71e8)
+ Call ID: af13ec2a-40aa-4d4f-899c-22104e1c71e8
   Args:
-    type: :Person
-    source: :Thomas_Anson
-  AssignClass (0d147004-04b4-4e85-86fd-2ee0bc25b900)
- Call ID: 0d147004-04b4-4e85-86fd-2ee0bc25b900
+    target: Anne_Princess_Royal
+    source: Peter_Phillips
+    relation: :hasMother
+  AddTriple (13b700f8-e66d-44d0-aa8c-ca324229d1ea)
+ Call ID: 13b700f8-e66d-44d0-aa8c-ca324229d1ea
   Args:
-    type: :Man
-    source: :Thomas_Anson
-  AddLiteral (be88bc72-ff3e-4f32-bfdb-6a3fe45b5a6f)
- Call ID: be88bc72-ff3e-4f32-bfdb-6a3fe45b5a6f
+    source: Felicity_Wade
+    relation: :hasFather
+    target: Mark_Phillips
+  AddTriple (77d7744f-bd5f-4bcc-8bf2-0b507778af7f)
+ Call ID: 77d7744f-bd5f-4bcc-8bf2-0b507778af7f
   Args:
+    target: Heather_Tonkin
+    relation: :hasMother
+    source: Felicity_Wade
+  AddTriple (33c1379e-d59e-4c16-9be7-00986ccebd84)
+ Call ID: 33c1379e-d59e-4c16-9be7-00986ccebd84
+  Args:
+    source: Stephanie_Phillips
+    relation: :hasFather
+    target: Mark_Phillips
+  AddTriple (955818ce-a5e1-4a53-ab89-89d5f1cb384c)
+ Call ID: 955818ce-a5e1-4a53-ab89-89d5f1cb384c
+  Args:
+    target: Sandy_Pflueger
+    relation: :hasMother
+    source: Stephanie_Phillips
+  AddTriple (e1526050-c880-4651-8d39-0bdea2aff610)
+ Call ID: e1526050-c880-4651-8d39-0bdea2aff610
+  Args:
+    source: Mia_Grace_Tindall
+    relation: :hasMother
+    target: Zara_Tindall
+  AddTriple (e1ca0d9d-c67a-48bd-8b7b-bf7bdd141ff5)
+ Call ID: e1ca0d9d-c67a-48bd-8b7b-bf7bdd141ff5
+  Args:
+    target: Mike_Tindall
+    relation: :hasFather
+    source: Mia_Grace_Tindall
+  AddTriple (d161c404-4bce-425c-ba21-7c8591b92a35)
+ Call ID: d161c404-4bce-425c-ba21-7c8591b92a35
+  Args:
+    target: Zara_Tindall
+    source: Lena_Elizabeth_Tindall
+    relation: :hasMother
+  AddTriple (35ed305e-b11e-471b-8860-0f8e8bfb0f7a)
+ Call ID: 35ed305e-b11e-471b-8860-0f8e8bfb0f7a
+  Args:
+    relation: :hasFather
+    source: Lena_Elizabeth_Tindall
+    target: Mike_Tindall
+  AddTriple (eb1469ea-4fbd-4a0f-9e35-eb65309b1c87)
+ Call ID: eb1469ea-4fbd-4a0f-9e35-eb65309b1c87
+  Args:
+    target: William_Prince_of_Wales
+    relation: :hasFather
+    source: Prince_George_of_Wales
+  AddTriple (b419734b-e772-45f5-a37e-1e06ab6557ac)
+ Call ID: b419734b-e772-45f5-a37e-1e06ab6557ac
+  Args:
+    source: William_Prince_of_Wales
+    relation: :hasMother
+    target: King_Charles_III
+  AddLiteral (ff6e3aa3-0cfd-48e1-9c4c-c49d719312c6)
+ Call ID: ff6e3aa3-0cfd-48e1-9c4c-c49d719312c6
+  Args:
+    source: Zara_Tindall
     relation: :hasMarriageYear
-    source: :Anne_Bowes-Lyon
-    literal_value: 1938
+    literal_value: 2011
     literal_type: xsd:integer
-  AssignClass (a58ccd29-2b65-4892-bf94-b18c584c9c79)
- Call ID: a58ccd29-2b65-4892-bf94-b18c584c9c79
+  Finish (4519a6a0-bb0b-445c-a14d-bbb62fd4b3c2)
+ Call ID: 4519a6a0-bb0b-445c-a14d-bbb62fd4b3c2
   Args:
-    type: :Person
-    source: :Patrick_Anson
-  AssignClass (53d43051-b444-461b-9f80-3c4a01ab7a17)
- Call ID: 53d43051-b444-461b-9f80-3c4a01ab7a17
-  Args:
-    type: :Man
-    source: :Patrick_Anson
-  AddTriple (75d564f0-7281-4cc4-a77b-ac5428db3ed1)
- Call ID: 75d564f0-7281-4cc4-a77b-ac5428db3ed1
-  Args:
-    source: :Patrick_Anson
-    target: :Anne_Bowes-Lyon
-    relation: :isSonOf
-  AddTriple (91a4aded-903c-455a-8bc1-986a2c9e1126)
- Call ID: 91a4aded-903c-455a-8bc1-986a2c9e1126
-  Args:
-    target: :Thomas_Anson
-    relation: :isSonOf
-    source: :Patrick_Anson
-  AssignClass (9d2d4a39-9fda-4181-b0ba-73f13933a55f)
- Call ID: 9d2d4a39-9fda-4181-b0ba-73f13933a55f
-  Args:
-    type: :Person
-    source: :Elizabeth_Shakerley
-  AssignClass (d848f415-3f1a-4edc-8105-e56e5d6fcbc0)
- Call ID: d848f415-3f1a-4edc-8105-e56e5d6fcbc0
-  Args:
-    type: :Woman
-    source: :Elizabeth_Shakerley
-  AddTriple (4e3cd32e-2e0b-411b-b59c-175e07c4dda8)
- Call ID: 4e3cd32e-2e0b-411b-b59c-175e07c4dda8
-  Args:
-    relation: :isDaughterOf
-    target: :Anne_Bowes-Lyon
-    source: :Elizabeth_Shakerley
-  AddTriple (5a465405-8390-45bb-8d30-9f9b0994195d)
- Call ID: 5a465405-8390-45bb-8d30-9f9b0994195d
-  Args:
-    source: :Elizabeth_Shakerley
-    relation: :isDaughterOf
-    target: :Thomas_Anson
-  AssignClass (9ecdf4ad-519b-43bb-afa8-bdcdc01b44e7)
- Call ID: 9ecdf4ad-519b-43bb-afa8-bdcdc01b44e7
-  Args:
-    type: :Person
-    source: :Prince_Georg_of_Denmark
-  AssignClass (73e349f5-b06e-4d42-9e33-52d6889dbe54)
- Call ID: 73e349f5-b06e-4d42-9e33-52d6889dbe54
-  Args:
-    type: :Man
-    source: :Prince_Georg_of_Denmark
-  AddLiteral (81b6d6f7-9130-4e7e-959d-de5a849559cd)
- Call ID: 81b6d6f7-9130-4e7e-959d-de5a849559cd
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1950
-    source: :Anne_Bowes-Lyon
-    relation: :hasMarriageYear
-  AssignClass (477d112a-7a08-4492-8ed8-2884448171dd)
- Call ID: 477d112a-7a08-4492-8ed8-2884448171dd
-  Args:
-    type: :Person
-    source: :Nerissa_Bowes-Lyon
-  AssignClass (c79c8b43-7031-43fe-bdd6-57d39a17a690)
- Call ID: c79c8b43-7031-43fe-bdd6-57d39a17a690
-  Args:
-    type: :Woman
-    source: :Nerissa_Bowes-Lyon
-  AddTriple (4cf034c1-1a09-49ed-bfd3-198f15b039e1)
- Call ID: 4cf034c1-1a09-49ed-bfd3-198f15b039e1
-  Args:
-    target: :Anne_Bowes-Lyon
-    relation: :isSisterOf
-    source: :Nerissa_Bowes-Lyon
-  AssignClass (ff77eda8-62c2-4350-a84d-c286beec82cb)
- Call ID: ff77eda8-62c2-4350-a84d-c286beec82cb
-  Args:
-    type: :Person
-    source: :Katherine_Bowes-Lyon
-  AssignClass (1a7c0ad1-ca21-4432-9fb7-c57d32e20fa8)
- Call ID: 1a7c0ad1-ca21-4432-9fb7-c57d32e20fa8
-  Args:
-    type: :Woman
-    source: :Katherine_Bowes-Lyon
-  AddTriple (e7066629-07f9-4510-909f-e23ac51b250e)
- Call ID: e7066629-07f9-4510-909f-e23ac51b250e
-  Args:
-    source: :Katherine_Bowes-Lyon
-    target: :Anne_Bowes-Lyon
-    relation: :isSisterOf
-  AssignClass (41f16c23-68de-4947-b73b-be1c25925155)
- Call ID: 41f16c23-68de-4947-b73b-be1c25925155
-  Args:
-    type: :Person
-    source: :Patricia_Bowes-Lyon
-  AssignClass (123a9561-e4f4-4899-bc08-096b5cf82a88)
- Call ID: 123a9561-e4f4-4899-bc08-096b5cf82a88
-  Args:
-    type: :Woman
-    source: :Patricia_Bowes-Lyon
-  AddTriple (6deb0014-d72b-4b7c-b9cb-dd034c72f739)
- Call ID: 6deb0014-d72b-4b7c-b9cb-dd034c72f739
-  Args:
-    relation: :isSisterOf
-    target: :Anne_Bowes-Lyon
-    source: :Patricia_Bowes-Lyon
-  AssignClass (4659ddaa-940b-4192-80f2-b246a4fdb5cc)
- Call ID: 4659ddaa-940b-4192-80f2-b246a4fdb5cc
-  Args:
-    type: :Person
-    source: :Diana_Cinderella_Somervell
-  AssignClass (badfe3ba-bb5e-416e-a99b-441fdfa925f2)
- Call ID: badfe3ba-bb5e-416e-a99b-441fdfa925f2
-  Args:
-    type: :Woman
-    source: :Diana_Cinderella_Somervell
-  AddTriple (e3fe7413-5390-4d27-a56a-8fd7b727d4b5)
- Call ID: e3fe7413-5390-4d27-a56a-8fd7b727d4b5
-  Args:
-    source: :Diana_Cinderella_Somervell
-    target: :Anne_Bowes-Lyon
-    relation: :isSisterOf
-  Finish (bb33bd42-f536-485f-8886-3b4c736bdeef)
- Call ID: bb33bd42-f536-485f-8886-3b4c736bdeef
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -801,63 +800,53 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Diana_Cinderella_Somervell a :Person,
-          :Woman ;
-      :isSisterOf data:Anne_Bowes-Lyon .
+  data:Felicity_Wade a :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Heather_Tonkin .
 
-  data:Elizabeth_Shakerley a :Person,
-          :Woman ;
-      :isDaughterOf data:Anne_Bowes-Lyon,
-          data:Thomas_Anson .
+  data:Lena_Elizabeth_Tindall a :Woman ;
+      :hasFather data:Mike_Tindall ;
+      :hasMother data:Zara_Tindall .
 
-  data:Katherine_Bowes-Lyon a :Person,
-          :Woman ;
-      :isSisterOf data:Anne_Bowes-Lyon .
+  data:Mia_Grace_Tindall a :Woman ;
+      :hasFather data:Mike_Tindall ;
+      :hasMother data:Zara_Tindall .
 
-  data:Nerissa_Bowes-Lyon a :Person,
-          :Woman ;
-      :isSisterOf data:Anne_Bowes-Lyon .
+  data:Prince_George_of_Wales a :Man ;
+      :hasFather data:William_Prince_of_Wales .
 
-  data:Patricia_Bowes-Lyon a :Person,
-          :Woman ;
-      :isSisterOf data:Anne_Bowes-Lyon .
+  data:Stephanie_Phillips a :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Sandy_Pflueger .
 
-  data:Patrick_Anson a :Man,
-          :Person ;
-      :isSonOf data:Anne_Bowes-Lyon,
-          data:Thomas_Anson .
+  data:Heather_Tonkin a :Woman .
 
-  data:Prince_Georg_of_Denmark a :Man,
-          :Person .
+  data:King_Charles_III a :Man .
 
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis a :Man,
-          :Person .
+  data:Peter_Phillips a :Man ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Anne_Princess_Royal .
 
-  data:Claude_Bowes-Lyon a :Man,
-          :Person .
+  data:Queen_Elizabeth_II a :Woman .
 
-  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Person,
-          :Woman ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis .
+  data:Sandy_Pflueger a :Woman .
 
-  data:John_Herbert_Bowes-Lyon a :Man,
-          :Person ;
-      :hasFather data:Claude_Bowes-Lyon .
+  data:William_Prince_of_Wales a :Man ;
+      :hasMother data:King_Charles_III .
 
-  data:Thomas_Anson a :Man,
-          :Person .
+  data:Anne_Princess_Royal a :Woman ;
+      :hasMother data:Queen_Elizabeth_II .
 
-  data:Anne_Bowes-Lyon a :Person,
-          :Woman ;
-      :alsoKnownAs "Princess Anne of Denmark"^^xsd:string,
-          "Viscountess Anson"^^xsd:string ;
-      :hasBirthYear 1917 ;
-      :hasDeathYear 1980 ;
-      :hasFather data:John_Herbert_Bowes-Lyon ;
-      :hasMarriageYear 1938,
-          1950 ;
-      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
-      :hasSex "Female"^^xsd:string .
+  data:Mike_Tindall a :Man .
+
+  data:Zara_Tindall a :Woman ;
+      :hasBirthYear 1981 ;
+      :hasBrother data:Peter_Phillips ;
+      :hasFather data:Mark_Phillips ;
+      :hasMarriageYear 2011 ;
+      :hasMother data:Anne_Princess_Royal .
+
+  data:Mark_Phillips a :Man .
 
 
 
@@ -869,270 +858,398 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (a90e5dc7-b509-422f-8f3c-a9fc93c27121)
- Call ID: a90e5dc7-b509-422f-8f3c-a9fc93c27121
+  ValidateShacl (533b8f3c-51e2-482f-a521-ea53fc3efa61)
+ Call ID: 533b8f3c-51e2-482f-a521-ea53fc3efa61
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:32
+Total violations:48
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Thomas_Anson is missing the required class :Ancestor.
+      The value node William_Prince_of_Wales is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Thomas_Anson', class=':Ancestor')
+      AssignClass(William_Prince_of_Wales, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Anne_Bowes-Lyon is missing the required class :Ancestor.
+      The value node Mark_Phillips is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne_Bowes-Lyon', class=':Ancestor')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Claude_Bowes-Lyon is missing the required class :Ancestor.
+      The value node Anne_Princess_Royal is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claude_Bowes-Lyon', class=':Ancestor')
+      AssignClass(Anne_Princess_Royal, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node Anne_Bowes-Lyon is not a valid instance of class :Sex.
+      The value node King_Charles_III is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(King_Charles_III, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Thomas_Anson is missing the required class :Ancestor.
+      The value node King_Charles_III is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Thomas_Anson', class=':Ancestor')
+      AssignClass(King_Charles_III, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Anne_Bowes-Lyon is missing the required class :Ancestor.
+      The value node Mark_Phillips is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne_Bowes-Lyon', class=':Ancestor')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Charles_Hepburn-Stuart-Forbes-Trefusis is missing the required class :Ancestor.
+      The value node Mike_Tindall is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_Hepburn-Stuart-Forbes-Trefusis', class=':Ancestor')
+      AssignClass(Mike_Tindall, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Claude_Bowes-Lyon is missing the required class :Ancestor.
+      The value node William_Prince_of_Wales is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claude_Bowes-Lyon', class=':Ancestor')
+      AssignClass(William_Prince_of_Wales, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node John_Herbert_Bowes-Lyon is missing the required class :Ancestor.
+      The value node Mark_Phillips is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='John_Herbert_Bowes-Lyon', class=':Ancestor')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Fenella_Hepburn-Stuart-Forbes-Trefusis is missing the required class :Ancestor.
+      The value node Mike_Tindall is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Fenella_Hepburn-Stuart-Forbes-Trefusis', class=':Ancestor')
+      AssignClass(Mike_Tindall, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node Anne_Bowes-Lyon is not a valid instance of class :Sex.
+      The value node Mark_Phillips is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node Anne_Bowes-Lyon is not a valid instance of class :Sex.
+      The value node Mark_Phillips is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Thomas_Anson is missing the required class :Ancestor.
+      The value node Sandy_Pflueger is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Thomas_Anson', class=':Ancestor')
+      AssignClass(Sandy_Pflueger, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Anne_Bowes-Lyon is missing the required class :Ancestor.
+      The value node Queen_Elizabeth_II is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne_Bowes-Lyon', class=':Ancestor')
+      AssignClass(Queen_Elizabeth_II, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node Anne_Bowes-Lyon is not a valid instance of class :Sex.
+      The value node Zara_Tindall is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Zara_Tindall, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Thomas_Anson is missing the required class :Ancestor.
+      The value node King_Charles_III is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Thomas_Anson', class=':Ancestor')
+      AssignClass(King_Charles_III, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Anne_Bowes-Lyon is missing the required class :Ancestor.
+      The value node King_Charles_III is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne_Bowes-Lyon', class=':Ancestor')
+      AssignClass(King_Charles_III, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Charles_Hepburn-Stuart-Forbes-Trefusis is missing the required class :Ancestor.
+      The value node Anne_Princess_Royal is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_Hepburn-Stuart-Forbes-Trefusis', class=':Ancestor')
+      AssignClass(Anne_Princess_Royal, :Ancestor)
 
 
   Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Claude_Bowes-Lyon is missing the required class :Ancestor.
+      The value node Zara_Tindall is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Claude_Bowes-Lyon', class=':Ancestor')
+      AssignClass(Zara_Tindall, :Ancestor)
 
 
   Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node John_Herbert_Bowes-Lyon is missing the required class :Ancestor.
+      The value node Anne_Princess_Royal is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='John_Herbert_Bowes-Lyon', class=':Ancestor')
+      AssignClass(Anne_Princess_Royal, :Ancestor)
 
 
   Violation [21]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Fenella_Hepburn-Stuart-Forbes-Trefusis is missing the required class :Ancestor.
+      The value node Heather_Tonkin is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Fenella_Hepburn-Stuart-Forbes-Trefusis', class=':Ancestor')
+      AssignClass(Heather_Tonkin, :Ancestor)
 
 
   Violation [22]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node Anne_Bowes-Lyon is not a valid instance of class :Sex.
+      The value node Mark_Phillips is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [23]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node Anne_Bowes-Lyon is not a valid instance of class :Sex.
+      The value node Mike_Tindall is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Mike_Tindall, :Ancestor)
 
 
   Violation [24]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Thomas_Anson is missing the required class :Ancestor.
+      The value node William_Prince_of_Wales is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Thomas_Anson', class=':Ancestor')
+      AssignClass(William_Prince_of_Wales, :Ancestor)
 
 
   Violation [25]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Anne_Bowes-Lyon is missing the required class :Ancestor.
+      The value node Mark_Phillips is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne_Bowes-Lyon', class=':Ancestor')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [26]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Charles_Hepburn-Stuart-Forbes-Trefusis is missing the required class :Ancestor.
+      The value node Mike_Tindall is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Charles_Hepburn-Stuart-Forbes-Trefusis', class=':Ancestor')
+      AssignClass(Mike_Tindall, :Ancestor)
 
 
   Violation [27]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node John_Herbert_Bowes-Lyon is missing the required class :Ancestor.
+      The value node Mark_Phillips is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='John_Herbert_Bowes-Lyon', class=':Ancestor')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Fenella_Hepburn-Stuart-Forbes-Trefusis is missing the required class :Ancestor.
+      The value node Mark_Phillips is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Fenella_Hepburn-Stuart-Forbes-Trefusis', class=':Ancestor')
+      AssignClass(Mark_Phillips, :Ancestor)
 
 
   Violation [29]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node Anne_Bowes-Lyon is not a valid instance of class :Sex.
+      The value node Sandy_Pflueger is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Sandy_Pflueger, :Ancestor)
 
 
   Violation [30]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for property :hasSex on node Anne_Bowes-Lyon is not a valid instance of class :Sex.
+      The value node Queen_Elizabeth_II is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Queen_Elizabeth_II, :Ancestor)
 
 
   Violation [31]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Thomas_Anson is missing the required class :Ancestor.
+      The value node Zara_Tindall is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Thomas_Anson', class=':Ancestor')
+      AssignClass(Zara_Tindall, :Ancestor)
 
 
   Violation [32]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Anne_Bowes-Lyon is missing the required class :Ancestor.
+      The value node King_Charles_III is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne_Bowes-Lyon', class=':Ancestor')
+      AssignClass(King_Charles_III, :Ancestor)
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node King_Charles_III is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(King_Charles_III, :Ancestor)
+
+
+  Violation [34]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Anne_Princess_Royal is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Anne_Princess_Royal, :Ancestor)
+
+
+  Violation [35]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Zara_Tindall is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Zara_Tindall, :Ancestor)
+
+
+  Violation [36]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Anne_Princess_Royal is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Anne_Princess_Royal, :Ancestor)
+
+
+  Violation [37]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Heather_Tonkin is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Heather_Tonkin, :Ancestor)
+
+
+  Violation [38]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Mark_Phillips is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Mark_Phillips, :Ancestor)
+
+
+  Violation [39]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Mike_Tindall is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Mike_Tindall, :Ancestor)
+
+
+  Violation [40]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Mark_Phillips is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Mark_Phillips, :Ancestor)
+
+
+  Violation [41]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Mike_Tindall is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Mike_Tindall, :Ancestor)
+
+
+  Violation [42]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node Mark_Phillips is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Mark_Phillips, :Ancestor)
+
+
+  Violation [43]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Sandy_Pflueger is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sandy_Pflueger, :Ancestor)
+
+
+  Violation [44]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Queen_Elizabeth_II is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Elizabeth_II, :Ancestor)
+
+
+  Violation [45]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Zara_Tindall is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Zara_Tindall, :Ancestor)
+
+
+  Violation [46]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Anne_Princess_Royal is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Anne_Princess_Royal, :Ancestor)
+
+
+  Violation [47]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Zara_Tindall is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Zara_Tindall, :Ancestor)
+
+
+  Violation [48]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node Heather_Tonkin is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Heather_Tonkin, :Ancestor)
 
 
 
@@ -1141,56 +1258,53 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (fdd36d3a-fedd-4d5c-bdcd-06123c14154d)
- Call ID: fdd36d3a-fedd-4d5c-bdcd-06123c14154d
+  AssignClass (6470915e-aabe-4e69-b301-fda171dbb1ce)
+ Call ID: 6470915e-aabe-4e69-b301-fda171dbb1ce
+  Args:
+    source: William_Prince_of_Wales
+    type: :Ancestor
+  AssignClass (c4782dfe-10e7-45fb-90c1-93966d63ed43)
+ Call ID: c4782dfe-10e7-45fb-90c1-93966d63ed43
+  Args:
+    source: Mark_Phillips
+    type: :Ancestor
+  AssignClass (4f89eaee-b218-44af-9305-edef08dac30a)
+ Call ID: 4f89eaee-b218-44af-9305-edef08dac30a
   Args:
     type: :Ancestor
-    source: :Thomas_Anson
-  AssignClass (e2dc5bd7-953f-40d8-9723-18e7e8843c6e)
- Call ID: e2dc5bd7-953f-40d8-9723-18e7e8843c6e
-  Args:
-    source: :Anne_Bowes-Lyon
-    type: :Ancestor
-  AssignClass (f19cd36f-25fd-44a8-9821-d1503b0a2080)
- Call ID: f19cd36f-25fd-44a8-9821-d1503b0a2080
-  Args:
-    source: :Claude_Bowes-Lyon
-    type: :Ancestor
-  AssignClass (b379de09-79f2-4501-931d-2e90d0c8d0e3)
- Call ID: b379de09-79f2-4501-931d-2e90d0c8d0e3
+    source: Anne_Princess_Royal
+  AssignClass (10c975a8-6e58-48e3-a5ca-67b1c622a262)
+ Call ID: 10c975a8-6e58-48e3-a5ca-67b1c622a262
   Args:
     type: :Ancestor
-    source: :Charles_Hepburn-Stuart-Forbes-Trefusis
-  AssignClass (25d01029-c0a6-41e1-9bd0-d921d03a6961)
- Call ID: 25d01029-c0a6-41e1-9bd0-d921d03a6961
-  Args:
-    source: :John_Herbert_Bowes-Lyon
-    type: :Ancestor
-  AssignClass (90bd6557-8d3f-4969-8b28-90ad86219e7b)
- Call ID: 90bd6557-8d3f-4969-8b28-90ad86219e7b
+    source: King_Charles_III
+  AssignClass (7b4be9bd-01ba-4f92-a005-2f28eebb0430)
+ Call ID: 7b4be9bd-01ba-4f92-a005-2f28eebb0430
   Args:
     type: :Ancestor
-    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
-  RemoveLiteral (5d743c33-fc11-4387-ba0b-98d9e448606a)
- Call ID: 5d743c33-fc11-4387-ba0b-98d9e448606a
+    source: Mike_Tindall
+  AssignClass (317a30f8-e0a6-4213-b77d-8caf32456615)
+ Call ID: 317a30f8-e0a6-4213-b77d-8caf32456615
   Args:
-    source: :Anne_Bowes-Lyon
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Female
-  AssignClass (c021092b-1b61-41b9-a149-063abef5dda7)
- Call ID: c021092b-1b61-41b9-a149-063abef5dda7
+    source: Sandy_Pflueger
+    type: :Ancestor
+  AssignClass (e65e93fd-7e06-4a87-b87c-9efcfe9496aa)
+ Call ID: e65e93fd-7e06-4a87-b87c-9efcfe9496aa
   Args:
-    source: :Female_Node
-    type: :Female
-  AddTriple (7f34a324-9b6d-4314-a154-df6538c1d313)
- Call ID: 7f34a324-9b6d-4314-a154-df6538c1d313
+    type: :Ancestor
+    source: Queen_Elizabeth_II
+  AssignClass (58d89bcb-614e-44c4-8d84-9a48413109b6)
+ Call ID: 58d89bcb-614e-44c4-8d84-9a48413109b6
   Args:
-    relation: :hasSex
-    target: :Female_Node
-    source: :Anne_Bowes-Lyon
-  Finish (a4e6a2db-75ee-41c3-a3c7-1c5bfb36bf75)
- Call ID: a4e6a2db-75ee-41c3-a3c7-1c5bfb36bf75
+    source: Zara_Tindall
+    type: :Ancestor
+  AssignClass (9c307f1e-c5c8-45c5-bfc5-5dd93be6b41c)
+ Call ID: 9c307f1e-c5c8-45c5-bfc5-5dd93be6b41c
+  Args:
+    source: Heather_Tonkin
+    type: :Ancestor
+  Finish (c78433eb-806f-4776-a5dc-d5326982e405)
+ Call ID: c78433eb-806f-4776-a5dc-d5326982e405
   Args:
 
 ================================= Tool Message =================================
@@ -1232,71 +1346,62 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Diana_Cinderella_Somervell a :Person,
+  data:Felicity_Wade a :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Heather_Tonkin .
+
+  data:Lena_Elizabeth_Tindall a :Woman ;
+      :hasFather data:Mike_Tindall ;
+      :hasMother data:Zara_Tindall .
+
+  data:Mia_Grace_Tindall a :Woman ;
+      :hasFather data:Mike_Tindall ;
+      :hasMother data:Zara_Tindall .
+
+  data:Prince_George_of_Wales a :Man ;
+      :hasFather data:William_Prince_of_Wales .
+
+  data:Stephanie_Phillips a :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Sandy_Pflueger .
+
+  data:Heather_Tonkin a :Ancestor,
+          :Woman .
+
+  data:King_Charles_III a :Ancestor,
+          :Man .
+
+  data:Peter_Phillips a :Man ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Anne_Princess_Royal .
+
+  data:Queen_Elizabeth_II a :Ancestor,
+          :Woman .
+
+  data:Sandy_Pflueger a :Ancestor,
+          :Woman .
+
+  data:William_Prince_of_Wales a :Ancestor,
+          :Man ;
+      :hasMother data:King_Charles_III .
+
+  data:Anne_Princess_Royal a :Ancestor,
           :Woman ;
-      :isSisterOf data:Anne_Bowes-Lyon .
+      :hasMother data:Queen_Elizabeth_II .
 
-  data:Elizabeth_Shakerley a :Person,
+  data:Mike_Tindall a :Ancestor,
+          :Man .
+
+  data:Zara_Tindall a :Ancestor,
           :Woman ;
-      :isDaughterOf data:Anne_Bowes-Lyon,
-          data:Thomas_Anson .
+      :hasBirthYear 1981 ;
+      :hasBrother data:Peter_Phillips ;
+      :hasFather data:Mark_Phillips ;
+      :hasMarriageYear 2011 ;
+      :hasMother data:Anne_Princess_Royal .
 
-  data:Katherine_Bowes-Lyon a :Person,
-          :Woman ;
-      :isSisterOf data:Anne_Bowes-Lyon .
-
-  data:Nerissa_Bowes-Lyon a :Person,
-          :Woman ;
-      :isSisterOf data:Anne_Bowes-Lyon .
-
-  data:Patricia_Bowes-Lyon a :Person,
-          :Woman ;
-      :isSisterOf data:Anne_Bowes-Lyon .
-
-  data:Patrick_Anson a :Man,
-          :Person ;
-      :isSonOf data:Anne_Bowes-Lyon,
-          data:Thomas_Anson .
-
-  data:Prince_Georg_of_Denmark a :Man,
-          :Person .
-
-  data:Charles_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Claude_Bowes-Lyon a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Female_Node a :Female .
-
-  data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Charles_Hepburn-Stuart-Forbes-Trefusis .
-
-  data:John_Herbert_Bowes-Lyon a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Claude_Bowes-Lyon .
-
-  data:Thomas_Anson a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Anne_Bowes-Lyon a :Ancestor,
-          :Person,
-          :Woman ;
-      :alsoKnownAs "Princess Anne of Denmark"^^xsd:string,
-          "Viscountess Anson"^^xsd:string ;
-      :hasBirthYear 1917 ;
-      :hasDeathYear 1980 ;
-      :hasFather data:John_Herbert_Bowes-Lyon ;
-      :hasMarriageYear 1938,
-          1950 ;
-      :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
-      :hasSex data:Female_Node .
+  data:Mark_Phillips a :Ancestor,
+          :Man .
 
 
 
@@ -1308,8 +1413,150 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (43eed466-ec6d-41bb-933d-2c6306d8d8a8)
- Call ID: 43eed466-ec6d-41bb-933d-2c6306d8d8a8
+  ValidateShacl (50f18c52-6201-4e58-a849-52f689e12a6c)
+ Call ID: 50f18c52-6201-4e58-a849-52f689e12a6c
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:4
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'William_Prince_of_Wales' has a 'hasMother' relationship with 'King_Charles_III', but 'King_Charles_III' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use RemoveTriple to delete the relationship 'William_Prince_of_Wales :hasMother King_Charles_III'.
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'William_Prince_of_Wales' has a 'hasMother' relationship with 'King_Charles_III', but 'King_Charles_III' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use RemoveTriple to delete the relationship 'William_Prince_of_Wales :hasMother King_Charles_III'.
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'William_Prince_of_Wales' has a 'hasMother' relationship with 'King_Charles_III', but 'King_Charles_III' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use RemoveTriple to delete the relationship 'William_Prince_of_Wales :hasMother King_Charles_III'.
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'William_Prince_of_Wales' has a 'hasMother' relationship with 'King_Charles_III', but 'King_Charles_III' does not belong to the required classes ':Ancestor' or ':Woman'.
+    LLM-provided instruction on how to handle the violation:
+      Use RemoveTriple to delete the relationship 'William_Prince_of_Wales :hasMother King_Charles_III'.
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (42c11842-96e7-4c02-b0bf-191ef9fa8c52)
+ Call ID: 42c11842-96e7-4c02-b0bf-191ef9fa8c52
+  Args:
+    relation: :hasMother
+    source: William_Prince_of_Wales
+    target: King_Charles_III
+  AddTriple (1398730e-dec4-487e-9cb6-4afba2920dad)
+ Call ID: 1398730e-dec4-487e-9cb6-4afba2920dad
+  Args:
+    relation: :hasFather
+    source: William_Prince_of_Wales
+    target: King_Charles_III
+  Finish (20f459fc-0f86-4f52-9614-487deb093e38)
+ Call ID: 20f459fc-0f86-4f52-9614-487deb093e38
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Felicity_Wade a :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Heather_Tonkin .
+
+  data:Lena_Elizabeth_Tindall a :Woman ;
+      :hasFather data:Mike_Tindall ;
+      :hasMother data:Zara_Tindall .
+
+  data:Mia_Grace_Tindall a :Woman ;
+      :hasFather data:Mike_Tindall ;
+      :hasMother data:Zara_Tindall .
+
+  data:Prince_George_of_Wales a :Man ;
+      :hasFather data:William_Prince_of_Wales .
+
+  data:Stephanie_Phillips a :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Sandy_Pflueger .
+
+  data:Heather_Tonkin a :Ancestor,
+          :Woman .
+
+  data:King_Charles_III a :Ancestor,
+          :Man .
+
+  data:Peter_Phillips a :Man ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Anne_Princess_Royal .
+
+  data:Queen_Elizabeth_II a :Ancestor,
+          :Woman .
+
+  data:Sandy_Pflueger a :Ancestor,
+          :Woman .
+
+  data:William_Prince_of_Wales a :Ancestor,
+          :Man ;
+      :hasFather data:King_Charles_III .
+
+  data:Anne_Princess_Royal a :Ancestor,
+          :Woman ;
+      :hasMother data:Queen_Elizabeth_II .
+
+  data:Mike_Tindall a :Ancestor,
+          :Man .
+
+  data:Zara_Tindall a :Ancestor,
+          :Woman ;
+      :hasBirthYear 1981 ;
+      :hasBrother data:Peter_Phillips ;
+      :hasFather data:Mark_Phillips ;
+      :hasMarriageYear 2011 ;
+      :hasMother data:Anne_Princess_Royal .
+
+  data:Mark_Phillips a :Ancestor,
+          :Man .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (20e0e741-ab76-488e-ba19-25af29218534)
+ Call ID: 20e0e741-ab76-488e-ba19-25af29218534
   Args:
 
 ================================= Tool Message =================================
@@ -1320,6 +1567,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (4e14ee22-3ba8-41e3-af6d-dbb189847fac)
- Call ID: 4e14ee22-3ba8-41e3-af6d-dbb189847fac
+  Finish (9d715275-099b-4caf-8a40-9432df350800)
+ Call ID: 9d715275-099b-4caf-8a40-9432df350800
   Args:

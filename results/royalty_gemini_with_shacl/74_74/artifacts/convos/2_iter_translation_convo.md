@@ -30,14 +30,14 @@ The SHACL validation process has identified the following violations in the curr
 ---
 ### Violations:
 VALIDATION RESULTS
-Total violations:8
+Total violations:6
 Violations:
 
   Violation [1]:
     Severity: Violation
-    Focus node: PrinceGeorge
+    Focus node: Prince_George_Duke_of_Kent
     Path: hasFather
-    Value: GeorgeV
+    Value: George_V
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -80,9 +80,9 @@ Violations:
 
   Violation [2]:
     Severity: Violation
-    Focus node: PrinceGeorge
+    Focus node: Prince_George_Duke_of_Kent
     Path: hasMother
-    Value: QueenMary
+    Value: Queen_Mary
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -126,9 +126,9 @@ Violations:
 
   Violation [3]:
     Severity: Violation
-    Focus node: PrinceGeorge
+    Focus node: Prince_George_Duke_of_Kent
     Path: hasFather
-    Value: GeorgeV
+    Value: George_V
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -171,9 +171,9 @@ Violations:
 
   Violation [4]:
     Severity: Violation
-    Focus node: PrinceGeorge
+    Focus node: Prince_George_Duke_of_Kent
     Path: hasMother
-    Value: QueenMary
+    Value: Queen_Mary
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -217,42 +217,9 @@ Violations:
 
   Violation [5]:
     Severity: Violation
-    Focus node: PrincessMarina
-    Path: None
-    Value: PrincessMarina
-    Constraint: ClassConstraintComponent
-    Source shape:
-      esh:DomainConjunctionShape_isMotherOf a sh:NodeShape ;
-          sh:class :Ancestor,
-              :Woman ;
-          sh:message "Any subject of isMotherOf must be all of: Ancestor, Woman." ;
-          sh:targetSubjectsOf :isMotherOf .
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
-    Classes assigned to the focus node: [':Woman']
-    Definitions of the classes assigned to the focus node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-
-    Classes assigned to the value node: [':Woman']
-    Definitions of the classes assigned to the value node:
-      Class :Woman:
-        :Woman a owl:Class ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Female ] ) ] .
-
-
-
-  Violation [6]:
-    Severity: Violation
-    Focus node: PrinceGeorge
+    Focus node: Prince_George_Duke_of_Kent
     Path: hasFather
-    Value: GeorgeV
+    Value: George_V
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -293,11 +260,11 @@ Violations:
 
 
 
-  Violation [7]:
+  Violation [6]:
     Severity: Violation
-    Focus node: PrinceGeorge
+    Focus node: Prince_George_Duke_of_Kent
     Path: hasMother
-    Value: QueenMary
+    Value: Queen_Mary
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -339,43 +306,6 @@ Violations:
 
 
 
-  Violation [8]:
-    Severity: Violation
-    Focus node: PrinceGeorge
-    Path: None
-    Value: PrinceGeorge
-    Constraint: ClassConstraintComponent
-    Source shape:
-      esh:DomainConjunctionShape_isFatherOf a sh:NodeShape ;
-          sh:class :Ancestor,
-              :Man ;
-          sh:message "Any subject of isFatherOf must be all of: Ancestor, Man." ;
-          sh:targetSubjectsOf :isFatherOf .
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    Classes assigned to the focus node: [':Man']
-    Definitions of the classes assigned to the focus node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
-
-    Classes assigned to the value node: [':Man']
-    Definitions of the classes assigned to the value node:
-      Class :Man:
-        :Man a owl:Class ;
-            owl:disjointWith :Sex,
-                :Woman ;
-            owl:equivalentClass [ a owl:Class ;
-                    owl:intersectionOf ( :Person [ a owl:Restriction ;
-                                owl:onProperty :hasSex ;
-                                owl:someValuesFrom :Male ] ) ] .
-
-
-
 
 ---
 
@@ -383,4 +313,4 @@ Please analyze each violation and provide the corresponding explanation and fix 
 
 ================================== Ai Message ==================================
 
-[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The node GeorgeV is assigned the class :Man but lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node=\'GeorgeV\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node QueenMary is assigned the class :Woman but lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node=\'QueenMary\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node GeorgeV is assigned the class :Man but lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node=\'GeorgeV\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node QueenMary is assigned the class :Woman but lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node=\'QueenMary\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node PrincessMarina is assigned the class :Woman but lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node=\'PrincessMarina\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node GeorgeV is assigned the class :Man but lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node=\'GeorgeV\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node QueenMary is assigned the class :Woman but lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node=\'QueenMary\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node PrinceGeorge is assigned the class :Man but lacks the required :Ancestor class.",\n      "instruction": "AssignClass(node=\'PrinceGeorge\', class=\':Ancestor\')"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHgPdi4k7n62vpDUBNb7hOQARckiJOeRLfzGaVgiwsSgd8/5PsXQ3/guw/aPdH'}}]
+[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The node George_V is assigned as the father of Prince_George_Duke_of_Kent, but it is missing the mandatory class :Ancestor.",\n      "instruction": "AssignClass(George_V, :Ancestor)"\n    },\n    {\n      "explanation": "The node Queen_Mary is assigned as the mother of Prince_George_Duke_of_Kent, but it is missing the mandatory class :Ancestor.",\n      "instruction": "AssignClass(Queen_Mary, :Ancestor)"\n    },\n    {\n      "explanation": "The node George_V is missing the required class :Ancestor, which is necessary for the hasFather relationship.",\n      "instruction": "AssignClass(George_V, :Ancestor)"\n    },\n    {\n      "explanation": "The node Queen_Mary is missing the required class :Ancestor, which is necessary for the hasMother relationship.",\n      "instruction": "AssignClass(Queen_Mary, :Ancestor)"\n    },\n    {\n      "explanation": "The node George_V does not satisfy the class requirement for the hasFather property because it lacks the :Ancestor classification.",\n      "instruction": "AssignClass(George_V, :Ancestor)"\n    },\n    {\n      "explanation": "The node Queen_Mary does not satisfy the class requirement for the hasMother property because it lacks the :Ancestor classification.",\n      "instruction": "AssignClass(Queen_Mary, :Ancestor)"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHiL1pc1pMaQ2B5FCdWnCmRkVBWm2FkPf0px3whr8lOjkCWxfiquoOQL4fk3AL'}}]

@@ -85,27 +85,30 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau (German: Franz Ulrich Johannes Clemens Christophorus Antonius Bonaventura Maria Fürst Kinsky von Wchinitz und Tettau; 7 October 1936 – 2 April 2009) was the titular Prince Kinsky of Wchinitz and Tettau as well the head of an ancient House of Kinsky.
-Early life
+Duke Friedrich August of Oldenburg (11 January 1936 – 9 July 2017) was a member of the House of Holstein-Gottorp.
+He is a son of Nikolaus, Hereditary Grand Duke of Oldenburg and Princess Helena of Waldeck and Pyrmont.
+Family and early life
 
-Franz Ulrich was born at Vienna, Federal State of Austria, as the youngest son of Ulrich, 10th Prince Kinsky of Wchinitz and Tettau by his second marriage to Baroness Marie Julia Mathilde von dem Bussche-Haddenhausen (1900–1974), the eldest daughter of Baron Hilmar von dem Bussche-Haddenhausen.
-Franz Ulrich became the titular Prince upon the death of his father in 1938.
-He was first cousin of Countess Marie Aglaë Kinsky of Wchinitz and Tettau who later became Princess consort of Liechtenstein, and second cousin of Claus von Amsberg, Prince consort of Queen Beatrix of the Netherlands, both descendants of Baron Julius von dem Bussche-Haddenhausen.
-In 1942, Franz Ulrich inherited several estates from the Kinsky family, including the Kinsky Palace in Old Town Square in Prague.
-Starting in 2003, Franz Ulrich complained against various Czech courts for the return of the assets.
-Marriage and family
+Frederich August is the sixth child and fourth son of Nikolaus, Hereditary Grand Duke of Oldenburg and his first wife Princess Helena of Waldeck and Pyrmont.
+His paternal grandparents are Frederick Augustus II, Grand Duke of Oldenburg and Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin.
+His maternal grandparents are Friedrich, Prince of Waldeck and Pyrmont and Princess Bathildis of Schaumburg-Lippe.
+His grandfather was overthrown as Grand Duke of Oldenburg in 1918, at the end of World War I.
+His father Nikolaus thus never legally succeeded to the title when the deposed Grand Duke died in 1931.
+Friedrich is an uncle of Christian, Duke of Oldenburg, the current head of the House of Oldenburg.
+Marriage and issue
 
-Franz Ulrich married on 14 April 1965 in Buenos Aires to Roberta Cavanagh (1942–2002), daughter of Roberto Cavanagh and his wife, Anne Rowell.
-After Kinsky's death, his son and his widow, Countess Helena Victoria Hutten-Czapska entered a legal dispute over Kinsky's properties.
-Later life
-
-The Prince died on 2 April 2009, aged 72.
+Friedrich August's first wife was Princess Marie Cécile of Prussia, a daughter of Louis Ferdinand, Prince of Prussia (second son of William, German Crown Prince) and his wife, Grand Duchess Kira Kirillovna of Russia.
+Friedrich August and Marie-Cécile have three children: a son, and two daughters.
+Marie-Cécile and Friedrich August divorced on 23 November 1989.
+On 9 February 1991, Friedrich August was remarried to Donata Countess of Castell-Rüdenhausen in Rüdenhausen, Germany.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -121,39 +124,9 @@ The Prince died on 2 April 2009, aged 72.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -168,6 +141,23 @@ The Prince died on 2 April 2009, aged 72.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -185,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -252,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -283,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -295,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -303,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -341,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -356,179 +449,234 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (551fc5a7-9a35-40bc-8cdb-5e07642e7040)
- Call ID: 551fc5a7-9a35-40bc-8cdb-5e07642e7040
+  AssignClass (f9b3948b-6ad5-46e3-84db-da4597fda9b3)
+ Call ID: f9b3948b-6ad5-46e3-84db-da4597fda9b3
   Args:
+    source: Friedrich_August_of_Oldenburg
     type: :Man
-    source: FranzUlrichKinsky
-  AssignClass (b130423a-5491-413c-82bd-93ce6f9d3678)
- Call ID: b130423a-5491-413c-82bd-93ce6f9d3678
+  AssignClass (4df62cee-51c1-4c11-9e4f-17ea045d2070)
+ Call ID: 4df62cee-51c1-4c11-9e4f-17ea045d2070
   Args:
+    source: Friedrich_August_of_Oldenburg
     type: :Person
-    source: FranzUlrichKinsky
-  AddLiteral (2a8f080e-13e3-4c41-b6ba-990bfb53d923)
- Call ID: 2a8f080e-13e3-4c41-b6ba-990bfb53d923
+  AddLiteral (99d88be5-e7bc-4071-977f-06447ffab545)
+ Call ID: 99d88be5-e7bc-4071-977f-06447ffab545
   Args:
-    relation: :hasBirthYear
-    source: FranzUlrichKinsky
-    literal_type: xsd:int
+    literal_type: xsd:integer
+    source: Friedrich_August_of_Oldenburg
     literal_value: 1936
-  AddLiteral (03a675d9-2705-4637-991a-07ba3de7c4a1)
- Call ID: 03a675d9-2705-4637-991a-07ba3de7c4a1
-  Args:
-    relation: :hasDeathYear
-    literal_value: 2009
-    source: FranzUlrichKinsky
-    literal_type: xsd:int
-  AssignClass (28659cdf-d3ae-49ab-87b3-61cac63acba5)
- Call ID: 28659cdf-d3ae-49ab-87b3-61cac63acba5
-  Args:
-    type: :Man
-    source: UlrichKinsky
-  AssignClass (fd313d14-917d-4de9-a142-c76526ee8043)
- Call ID: fd313d14-917d-4de9-a142-c76526ee8043
-  Args:
-    type: :Person
-    source: UlrichKinsky
-  AssignClass (83ba4775-a296-4b29-a621-feef15ab3103)
- Call ID: 83ba4775-a296-4b29-a621-feef15ab3103
-  Args:
-    type: :Woman
-    source: MarieJuliaMathildeVonDemBusscheHaddenhausen
-  AssignClass (deed3bff-2b56-4ecb-b2e2-e34777c24330)
- Call ID: deed3bff-2b56-4ecb-b2e2-e34777c24330
-  Args:
-    type: :Person
-    source: MarieJuliaMathildeVonDemBusscheHaddenhausen
-  AddLiteral (2da3b623-6c6c-45d1-8ec5-f19f463a1cae)
- Call ID: 2da3b623-6c6c-45d1-8ec5-f19f463a1cae
-  Args:
     relation: :hasBirthYear
-    literal_value: 1900
-    literal_type: xsd:int
-    source: MarieJuliaMathildeVonDemBusscheHaddenhausen
-  AddLiteral (9b87f324-f93a-4d70-9dac-8549fa703e6c)
- Call ID: 9b87f324-f93a-4d70-9dac-8549fa703e6c
+  AddLiteral (ca3c4beb-7210-44f3-977c-3ec260957516)
+ Call ID: ca3c4beb-7210-44f3-977c-3ec260957516
   Args:
+    literal_type: xsd:integer
+    source: Friedrich_August_of_Oldenburg
+    literal_value: 2017
     relation: :hasDeathYear
-    source: MarieJuliaMathildeVonDemBusscheHaddenhausen
-    literal_type: xsd:int
-    literal_value: 1974
-  AddTriple (8c547fb1-fce8-427d-938c-f5738b538434)
- Call ID: 8c547fb1-fce8-427d-938c-f5738b538434
-  Args:
-    relation: :hasFather
-    target: UlrichKinsky
-    source: FranzUlrichKinsky
-  AddTriple (0e0e016b-c197-4a66-b581-8a077a0584ec)
- Call ID: 0e0e016b-c197-4a66-b581-8a077a0584ec
-  Args:
-    target: MarieJuliaMathildeVonDemBusscheHaddenhausen
-    relation: :hasMother
-    source: FranzUlrichKinsky
-  AssignClass (0e0d8cca-c715-4b58-b68f-61daa7e1ec19)
- Call ID: 0e0d8cca-c715-4b58-b68f-61daa7e1ec19
+  AssignClass (1f04d3d4-327f-46b5-b533-3d3582c1e867)
+ Call ID: 1f04d3d4-327f-46b5-b533-3d3582c1e867
   Args:
     type: :Man
-    source: HilmarVonDemBusscheHaddenhausen
-  AssignClass (ed3bb6f8-a1f7-4a1d-a578-b3313638f7a2)
- Call ID: ed3bb6f8-a1f7-4a1d-a578-b3313638f7a2
+    source: Nikolaus_of_Oldenburg
+  AssignClass (46c2543b-49f5-47ed-8ba5-4086bb2a4204)
+ Call ID: 46c2543b-49f5-47ed-8ba5-4086bb2a4204
   Args:
     type: :Person
-    source: HilmarVonDemBusscheHaddenhausen
-  AddTriple (6b2dc8ff-3104-416c-8d7c-c972aae6cbfc)
- Call ID: 6b2dc8ff-3104-416c-8d7c-c972aae6cbfc
+    source: Nikolaus_of_Oldenburg
+  AssignClass (cb361813-8207-4d22-9af5-99317851af31)
+ Call ID: cb361813-8207-4d22-9af5-99317851af31
+  Args:
+    source: Helena_of_Waldeck_and_Pyrmont
+    type: :Woman
+  AssignClass (d651c085-4e4f-427d-a2d6-5da8d1478778)
+ Call ID: d651c085-4e4f-427d-a2d6-5da8d1478778
+  Args:
+    source: Helena_of_Waldeck_and_Pyrmont
+    type: :Person
+  AddTriple (561b0698-cb29-4965-885a-25d05ec79e2c)
+ Call ID: 561b0698-cb29-4965-885a-25d05ec79e2c
   Args:
     relation: :hasFather
-    target: HilmarVonDemBusscheHaddenhausen
-    source: MarieJuliaMathildeVonDemBusscheHaddenhausen
-  AssignClass (3d1bc6e4-fc0b-493b-b8de-5d8a4bfb9074)
- Call ID: 3d1bc6e4-fc0b-493b-b8de-5d8a4bfb9074
+    target: Nikolaus_of_Oldenburg
+    source: Friedrich_August_of_Oldenburg
+  AddTriple (a24fd60c-094a-4793-ba12-9f73e597d6de)
+ Call ID: a24fd60c-094a-4793-ba12-9f73e597d6de
   Args:
-    type: :Woman
-    source: RobertaCavanagh
-  AssignClass (0d483f73-152d-4dc9-8f1e-67aca4a5c371)
- Call ID: 0d483f73-152d-4dc9-8f1e-67aca4a5c371
-  Args:
-    type: :Person
-    source: RobertaCavanagh
-  AddLiteral (3d89433a-5ab6-422b-b2b1-fec56233861a)
- Call ID: 3d89433a-5ab6-422b-b2b1-fec56233861a
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1942
-    literal_type: xsd:int
-    source: RobertaCavanagh
-  AddLiteral (f9492688-cde7-4d81-83bf-fae8938f6d30)
- Call ID: f9492688-cde7-4d81-83bf-fae8938f6d30
-  Args:
-    literal_value: 2002
-    source: RobertaCavanagh
-    literal_type: xsd:int
-    relation: :hasDeathYear
-  AddTriple (00c180ff-2919-4401-acee-f7a239bb2af2)
- Call ID: 00c180ff-2919-4401-acee-f7a239bb2af2
-  Args:
-    relation: :hasMarriageYear
-    target: 1965
-    source: FranzUlrichKinsky
-  AddTriple (e1c6929d-3d53-4860-b850-7802b307c5b8)
- Call ID: e1c6929d-3d53-4860-b850-7802b307c5b8
-  Args:
-    relation: :hasRelation
-    target: RobertaCavanagh
-    source: FranzUlrichKinsky
-  AssignClass (ec1b5505-4b10-4ea5-bf15-99e91790911d)
- Call ID: ec1b5505-4b10-4ea5-bf15-99e91790911d
+    target: Helena_of_Waldeck_and_Pyrmont
+    source: Friedrich_August_of_Oldenburg
+    relation: :hasMother
+  AssignClass (a38161b1-ab0a-4a27-91ef-c5d6d7f90540)
+ Call ID: a38161b1-ab0a-4a27-91ef-c5d6d7f90540
   Args:
     type: :Man
-    source: RobertoCavanagh
-  AssignClass (be27529f-ab45-4385-b6ac-4e61e0f100b1)
- Call ID: be27529f-ab45-4385-b6ac-4e61e0f100b1
+    source: Frederick_Augustus_II_of_Oldenburg
+  AssignClass (4a406391-5644-42b7-aafb-fce0b9f92b1d)
+ Call ID: 4a406391-5644-42b7-aafb-fce0b9f92b1d
   Args:
+    source: Frederick_Augustus_II_of_Oldenburg
     type: :Person
-    source: RobertoCavanagh
-  AssignClass (119573ba-7ddf-4370-9fa5-cd4bd9b977a5)
- Call ID: 119573ba-7ddf-4370-9fa5-cd4bd9b977a5
+  AssignClass (42ebd9f4-9cd2-43ad-9356-e80b39b97e35)
+ Call ID: 42ebd9f4-9cd2-43ad-9356-e80b39b97e35
   Args:
+    source: Elisabeth_Alexandrine_of_Mecklenburg_Schwerin
     type: :Woman
-    source: AnneRowell
-  AssignClass (e7396d15-50f3-43b0-b9b2-18fd8d919b9d)
- Call ID: e7396d15-50f3-43b0-b9b2-18fd8d919b9d
+  AssignClass (818ce30a-821a-4a22-be1e-e99a40875d0a)
+ Call ID: 818ce30a-821a-4a22-be1e-e99a40875d0a
   Args:
+    source: Elisabeth_Alexandrine_of_Mecklenburg_Schwerin
     type: :Person
-    source: AnneRowell
-  AddTriple (db1ac720-699f-4b69-9a59-6a61563105b5)
- Call ID: db1ac720-699f-4b69-9a59-6a61563105b5
+  AddTriple (3199bc0b-111c-4dfb-9d94-1aaf2282e009)
+ Call ID: 3199bc0b-111c-4dfb-9d94-1aaf2282e009
   Args:
-    source: RobertaCavanagh
     relation: :hasFather
-    target: RobertoCavanagh
-  AddTriple (cfdcc6ac-3d2a-4b45-a4cb-39b66abea19e)
- Call ID: cfdcc6ac-3d2a-4b45-a4cb-39b66abea19e
+    target: Frederick_Augustus_II_of_Oldenburg
+    source: Nikolaus_of_Oldenburg
+  AddTriple (7bd9e2df-fa41-41e4-90d3-a539540a7345)
+ Call ID: 7bd9e2df-fa41-41e4-90d3-a539540a7345
   Args:
-    source: RobertaCavanagh
+    source: Nikolaus_of_Oldenburg
+    target: Elisabeth_Alexandrine_of_Mecklenburg_Schwerin
     relation: :hasMother
-    target: AnneRowell
-  AssignClass (c3b20fc5-3716-409f-b723-ffb415382624)
- Call ID: c3b20fc5-3716-409f-b723-ffb415382624
+  AssignClass (ee8fd964-e3cc-4bc6-a8e5-04552ffe9222)
+ Call ID: ee8fd964-e3cc-4bc6-a8e5-04552ffe9222
   Args:
-    type: :Woman
-    source: HelenaVictoriaHuttenCzapska
-  AssignClass (2fe12997-5fdd-4711-bab4-55e4b86c094b)
- Call ID: 2fe12997-5fdd-4711-bab4-55e4b86c094b
+    source: Friedrich_of_Waldeck_and_Pyrmont
+    type: :Man
+  AssignClass (ed9e95c7-04ca-4039-b138-b5915d31eb8d)
+ Call ID: ed9e95c7-04ca-4039-b138-b5915d31eb8d
   Args:
     type: :Person
-    source: HelenaVictoriaHuttenCzapska
-  AddTriple (727a104e-07d3-43fc-a348-f5d57decfcca)
- Call ID: 727a104e-07d3-43fc-a348-f5d57decfcca
+    source: Friedrich_of_Waldeck_and_Pyrmont
+  AssignClass (8f9de29f-0e15-4a43-832b-f9c178f1941d)
+ Call ID: 8f9de29f-0e15-4a43-832b-f9c178f1941d
   Args:
-    target: HelenaVictoriaHuttenCzapska
+    source: Bathildis_of_Schaumburg_Lippe
+    type: :Woman
+  AssignClass (e7861d58-f2a6-479f-b570-2f9a70496336)
+ Call ID: e7861d58-f2a6-479f-b570-2f9a70496336
+  Args:
+    source: Bathildis_of_Schaumburg_Lippe
+    type: :Person
+  AddTriple (003eb754-6f3c-460a-bfe7-d2c88fd166f4)
+ Call ID: 003eb754-6f3c-460a-bfe7-d2c88fd166f4
+  Args:
+    relation: :hasFather
+    target: Friedrich_of_Waldeck_and_Pyrmont
+    source: Helena_of_Waldeck_and_Pyrmont
+  AddTriple (9fa77cf8-7d4c-43a5-874c-7f19585f97f3)
+ Call ID: 9fa77cf8-7d4c-43a5-874c-7f19585f97f3
+  Args:
+    target: Bathildis_of_Schaumburg_Lippe
+    source: Helena_of_Waldeck_and_Pyrmont
+    relation: :hasMother
+  AssignClass (16666489-c9de-4dcc-92aa-9ca1b8122b9c)
+ Call ID: 16666489-c9de-4dcc-92aa-9ca1b8122b9c
+  Args:
+    type: :Man
+    source: Christian_of_Oldenburg
+  AssignClass (e3625b11-df0a-4f66-8a13-361ad85da6b7)
+ Call ID: e3625b11-df0a-4f66-8a13-361ad85da6b7
+  Args:
+    source: Christian_of_Oldenburg
+    type: :Person
+  AddTriple (c684e769-6099-403b-b443-ed1b5a1329d7)
+ Call ID: c684e769-6099-403b-b443-ed1b5a1329d7
+  Args:
+    source: Friedrich_August_of_Oldenburg
+    target: Christian_of_Oldenburg
+    relation: :isUncleOf
+  AssignClass (d44eb88b-4900-4754-8fb5-2f08eba81b57)
+ Call ID: d44eb88b-4900-4754-8fb5-2f08eba81b57
+  Args:
+    type: :Woman
+    source: Marie_Cecile_of_Prussia
+  AssignClass (de1d0649-2334-456d-912e-ed90e341aba2)
+ Call ID: de1d0649-2334-456d-912e-ed90e341aba2
+  Args:
+    type: :Person
+    source: Marie_Cecile_of_Prussia
+  AddTriple (6da6d860-9806-40ec-821e-d716eaa9ad6f)
+ Call ID: 6da6d860-9806-40ec-821e-d716eaa9ad6f
+  Args:
+    target: Marie_Cecile_of_Prussia
+    source: Friedrich_August_of_Oldenburg
     relation: :hasRelation
-    source: FranzUlrichKinsky
-  Finish (40b2f354-7736-49b9-9de0-40ea4f7335a2)
- Call ID: 40b2f354-7736-49b9-9de0-40ea4f7335a2
+  AssignClass (7021a767-37b5-4836-a1ea-86989ad7c22d)
+ Call ID: 7021a767-37b5-4836-a1ea-86989ad7c22d
   Args:
+    type: :Man
+    source: Louis_Ferdinand_of_Prussia
+  AssignClass (1f148924-5999-4c4a-b97d-f1493c6e2448)
+ Call ID: 1f148924-5999-4c4a-b97d-f1493c6e2448
+  Args:
+    type: :Person
+    source: Louis_Ferdinand_of_Prussia
+  AssignClass (4eab5e88-e086-4970-b151-ed082510809f)
+ Call ID: 4eab5e88-e086-4970-b151-ed082510809f
+  Args:
+    type: :Woman
+    source: Kira_Kirillovna_of_Russia
+  AssignClass (2ceee3c5-3f90-464b-a627-2fcfb7522571)
+ Call ID: 2ceee3c5-3f90-464b-a627-2fcfb7522571
+  Args:
+    type: :Person
+    source: Kira_Kirillovna_of_Russia
+  AddTriple (e25bc8b1-38d2-4852-bd2e-1739fac0a395)
+ Call ID: e25bc8b1-38d2-4852-bd2e-1739fac0a395
+  Args:
+    relation: :hasFather
+    source: Marie_Cecile_of_Prussia
+    target: Louis_Ferdinand_of_Prussia
+  AddTriple (b3c47dc3-ecfd-46f2-a664-de294eb941b5)
+ Call ID: b3c47dc3-ecfd-46f2-a664-de294eb941b5
+  Args:
+    target: Kira_Kirillovna_of_Russia
+    source: Marie_Cecile_of_Prussia
+    relation: :hasMother
+  AssignClass (0afff2e1-c48a-4658-a481-36f5f51f73be)
+ Call ID: 0afff2e1-c48a-4658-a481-36f5f51f73be
+  Args:
+    type: :Woman
+    source: Donata_of_Castell_Rudenhausen
+  AssignClass (3451e383-f8e6-4197-94cb-de62393d84d1)
+ Call ID: 3451e383-f8e6-4197-94cb-de62393d84d1
+  Args:
+    source: Donata_of_Castell_Rudenhausen
+    type: :Person
+  AddTriple (4aac8f2c-ad10-4558-9a22-c48afdcc4ab4)
+ Call ID: 4aac8f2c-ad10-4558-9a22-c48afdcc4ab4
+  Args:
+    target: Donata_of_Castell_Rudenhausen
+    source: Friedrich_August_of_Oldenburg
+    relation: :hasRelation
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -653,183 +801,54 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:FranzUlrichKinsky a :Man,
+  data:Friedrich_August_of_Oldenburg a :Man,
           :Person ;
-      :hasBirthYear "1936"^^xsd:int ;
-      :hasDeathYear "2009"^^xsd:int ;
-      :hasFather data:UlrichKinsky ;
-      :hasMarriageYear data:1965 ;
-      :hasMother data:MarieJuliaMathildeVonDemBusscheHaddenhausen ;
-      :hasRelation data:HelenaVictoriaHuttenCzapska,
-          data:RobertaCavanagh .
+      :hasBirthYear 1936 ;
+      :hasDeathYear 2017 ;
+      :hasFather data:Nikolaus_of_Oldenburg ;
+      :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+      :hasRelation data:Donata_of_Castell_Rudenhausen,
+          data:Marie_Cecile_of_Prussia ;
+      :isUncleOf data:Christian_of_Oldenburg .
 
-  data:AnneRowell a :Person,
+  data:Bathildis_of_Schaumburg_Lippe a :Person,
           :Woman .
 
-  data:HelenaVictoriaHuttenCzapska a :Person,
+  data:Christian_of_Oldenburg a :Man,
+          :Person .
+
+  data:Donata_of_Castell_Rudenhausen a :Person,
           :Woman .
 
-  data:HilmarVonDemBusscheHaddenhausen a :Man,
+  data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin a :Person,
+          :Woman .
+
+  data:Frederick_Augustus_II_of_Oldenburg a :Man,
           :Person .
 
-  data:MarieJuliaMathildeVonDemBusscheHaddenhausen a :Person,
+  data:Friedrich_of_Waldeck_and_Pyrmont a :Man,
+          :Person .
+
+  data:Helena_of_Waldeck_and_Pyrmont a :Person,
           :Woman ;
-      :hasBirthYear "1900"^^xsd:int ;
-      :hasDeathYear "1974"^^xsd:int ;
-      :hasFather data:HilmarVonDemBusscheHaddenhausen .
+      :hasFather data:Friedrich_of_Waldeck_and_Pyrmont ;
+      :hasMother data:Bathildis_of_Schaumburg_Lippe .
 
-  data:RobertaCavanagh a :Person,
+  data:Kira_Kirillovna_of_Russia a :Person,
+          :Woman .
+
+  data:Louis_Ferdinand_of_Prussia a :Man,
+          :Person .
+
+  data:Marie_Cecile_of_Prussia a :Person,
           :Woman ;
-      :hasBirthYear "1942"^^xsd:int ;
-      :hasDeathYear "2002"^^xsd:int ;
-      :hasFather data:RobertoCavanagh ;
-      :hasMother data:AnneRowell .
+      :hasFather data:Louis_Ferdinand_of_Prussia ;
+      :hasMother data:Kira_Kirillovna_of_Russia .
 
-  data:RobertoCavanagh a :Man,
-          :Person .
-
-  data:UlrichKinsky a :Man,
-          :Person .
-
-
-
-================================= Tool Message =================================
-
-You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (f3b07964-8452-43f7-9981-bbe7391a6a1d)
- Call ID: f3b07964-8452-43f7-9981-bbe7391a6a1d
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:15
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'UlrichKinsky', which is the value for 'hasFather' of 'FranzUlrichKinsky', is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='UlrichKinsky', class=':Ancestor')
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'MarieJuliaMathildeVonDemBusscheHaddenhausen', which is the value for 'hasMother' of 'FranzUlrichKinsky', is missing the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='MarieJuliaMathildeVonDemBusscheHaddenhausen', class=':Ancestor')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'RobertoCavanagh', which is the value for 'hasFather' of 'RobertaCavanagh', is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='RobertoCavanagh', class=':Ancestor')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'UlrichKinsky', which is the value for 'hasFather' of 'FranzUlrichKinsky', is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='UlrichKinsky', class=':Ancestor')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'HilmarVonDemBusscheHaddenhausen', which is the value for 'hasFather' of 'MarieJuliaMathildeVonDemBusscheHaddenhausen', is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='HilmarVonDemBusscheHaddenhausen', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'AnneRowell', which is the value for 'hasMother' of 'RobertaCavanagh', is missing the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='AnneRowell', class=':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'MarieJuliaMathildeVonDemBusscheHaddenhausen', which is the value for 'hasMother' of 'FranzUlrichKinsky', is missing the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='MarieJuliaMathildeVonDemBusscheHaddenhausen', class=':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'RobertoCavanagh', which is the value for 'hasFather' of 'RobertaCavanagh', is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='RobertoCavanagh', class=':Ancestor')
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'UlrichKinsky', which is the value for 'hasFather' of 'FranzUlrichKinsky', is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='UlrichKinsky', class=':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'HilmarVonDemBusscheHaddenhausen', which is the value for 'hasFather' of 'MarieJuliaMathildeVonDemBusscheHaddenhausen', is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='HilmarVonDemBusscheHaddenhausen', class=':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'AnneRowell', which is the value for 'hasMother' of 'RobertaCavanagh', is missing the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='AnneRowell', class=':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'MarieJuliaMathildeVonDemBusscheHaddenhausen', which is the value for 'hasMother' of 'FranzUlrichKinsky', is missing the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='MarieJuliaMathildeVonDemBusscheHaddenhausen', class=':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'HilmarVonDemBusscheHaddenhausen', which is the value for 'hasFather' of 'MarieJuliaMathildeVonDemBusscheHaddenhausen', is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='HilmarVonDemBusscheHaddenhausen', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'RobertoCavanagh', which is the value for 'hasFather' of 'RobertaCavanagh', is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='RobertoCavanagh', class=':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'AnneRowell', which is the value for 'hasMother' of 'RobertaCavanagh', is missing the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='AnneRowell', class=':Ancestor')
-
+  data:Nikolaus_of_Oldenburg a :Man,
+          :Person ;
+      :hasFather data:Frederick_Augustus_II_of_Oldenburg ;
+      :hasMother data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin .
 
 
 
@@ -837,827 +856,206 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (9d7dc286-32c8-41cc-a165-54e9c588c2e6)
- Call ID: 9d7dc286-32c8-41cc-a165-54e9c588c2e6
+  ValidateShacl (2ddf1c0c-dd15-48ab-b07b-0bb11156dfb3)
+ Call ID: 2ddf1c0c-dd15-48ab-b07b-0bb11156dfb3
   Args:
-    source: UlrichKinsky
-    type: :Ancestor
-  AssignClass (fe61a19f-eee2-4883-b658-d47b4199b750)
- Call ID: fe61a19f-eee2-4883-b658-d47b4199b750
-  Args:
-    type: :Ancestor
-    source: MarieJuliaMathildeVonDemBusscheHaddenhausen
-  AssignClass (a50383cf-3c0b-4265-b5da-dc2b5a5c6676)
- Call ID: a50383cf-3c0b-4265-b5da-dc2b5a5c6676
-  Args:
-    type: :Ancestor
-    source: HilmarVonDemBusscheHaddenhausen
-  AssignClass (4efd69d7-06a5-424a-92ef-caaa52288f66)
- Call ID: 4efd69d7-06a5-424a-92ef-caaa52288f66
-  Args:
-    source: RobertoCavanagh
-    type: :Ancestor
-  AssignClass (d34fe4c7-6cf3-4d32-86c8-510d32c34cf4)
- Call ID: d34fe4c7-6cf3-4d32-86c8-510d32c34cf4
-  Args:
-    type: :Ancestor
-    source: AnneRowell
-  AddTriple (07e15812-d09e-48a0-a25d-811620ff4f01)
- Call ID: 07e15812-d09e-48a0-a25d-811620ff4f01
-  Args:
-    relation: :hasSex
-    source: FranzUlrichKinsky
-    target: :Male
-  AddTriple (2d207cb5-59f6-4ff1-b079-9cf602f198d3)
- Call ID: 2d207cb5-59f6-4ff1-b079-9cf602f198d3
-  Args:
-    target: :Male
-    source: UlrichKinsky
-    relation: :hasSex
-  AddTriple (6cb0d275-5bbd-4399-86cb-a505f05327ab)
- Call ID: 6cb0d275-5bbd-4399-86cb-a505f05327ab
-  Args:
-    relation: :hasSex
-    source: MarieJuliaMathildeVonDemBusscheHaddenhausen
-    target: :Female
-  AddTriple (550383c5-52b5-4d1d-b590-bcd314f2b7d6)
- Call ID: 550383c5-52b5-4d1d-b590-bcd314f2b7d6
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: HilmarVonDemBusscheHaddenhausen
-  AddTriple (ed2ea5f2-7951-470f-8f53-120d9fbd43ed)
- Call ID: ed2ea5f2-7951-470f-8f53-120d9fbd43ed
-  Args:
-    relation: :hasSex
-    source: RobertaCavanagh
-    target: :Female
-  AddTriple (e4296d8d-3b98-49b7-b504-cb0bdc5f6974)
- Call ID: e4296d8d-3b98-49b7-b504-cb0bdc5f6974
-  Args:
-    target: :Male
-    source: RobertoCavanagh
-    relation: :hasSex
-  AddTriple (eeab162f-5535-4c72-b2fd-4061937837eb)
- Call ID: eeab162f-5535-4c72-b2fd-4061937837eb
-  Args:
-    source: AnneRowell
-    target: :Female
-    relation: :hasSex
-  AddTriple (2ee4642d-d8e9-4127-8e8f-6dc124b72586)
- Call ID: 2ee4642d-d8e9-4127-8e8f-6dc124b72586
-  Args:
-    target: :Female
-    source: HelenaVictoriaHuttenCzapska
-    relation: :hasSex
-  ValidateShacl (cca3cb15-7080-4a96-b5f8-0b9e698e5f3d)
- Call ID: cca3cb15-7080-4a96-b5f8-0b9e698e5f3d
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:FranzUlrichKinsky a :Man,
-          :Person ;
-      :hasBirthYear "1936"^^xsd:int ;
-      :hasDeathYear "2009"^^xsd:int ;
-      :hasFather data:UlrichKinsky ;
-      :hasMarriageYear data:1965 ;
-      :hasMother data:MarieJuliaMathildeVonDemBusscheHaddenhausen ;
-      :hasRelation data:HelenaVictoriaHuttenCzapska,
-          data:RobertaCavanagh ;
-      :hasSex data:Male .
-
-  data:AnneRowell a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:HelenaVictoriaHuttenCzapska a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:HilmarVonDemBusscheHaddenhausen a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:MarieJuliaMathildeVonDemBusscheHaddenhausen a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear "1900"^^xsd:int ;
-      :hasDeathYear "1974"^^xsd:int ;
-      :hasFather data:HilmarVonDemBusscheHaddenhausen ;
-      :hasSex data:Female .
-
-  data:RobertaCavanagh a :Person,
-          :Woman ;
-      :hasBirthYear "1942"^^xsd:int ;
-      :hasDeathYear "2002"^^xsd:int ;
-      :hasFather data:RobertoCavanagh ;
-      :hasMother data:AnneRowell ;
-      :hasSex data:Female .
-
-  data:RobertoCavanagh a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:UlrichKinsky a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:79
+Total violations:24
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'UlrichKinsky' does not have the required class ':Sex'.
+      The value Frederick_Augustus_II_of_Oldenburg for the property hasFather of Nikolaus_of_Oldenburg is not classified as an Ancestor or a Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Frederick_Augustus_II_of_Oldenburg, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AnneRowell' does not have the required class ':Sex'.
+      The value Nikolaus_of_Oldenburg for the property hasFather of Friedrich_August_of_Oldenburg is not classified as an Ancestor or a Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Nikolaus_of_Oldenburg, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'HilmarVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
+      The value Elisabeth_Alexandrine_of_Mecklenburg_Schwerin for the property hasMother of Nikolaus_of_Oldenburg is not classified as an Ancestor or a Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Elisabeth_Alexandrine_of_Mecklenburg_Schwerin, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'MarieJuliaMathildeVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
+      The value Helena_of_Waldeck_and_Pyrmont for the property hasMother of Friedrich_August_of_Oldenburg is not classified as an Ancestor or a Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Helena_of_Waldeck_and_Pyrmont, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'RobertoCavanagh' does not have the required class ':Sex'.
+      The value Nikolaus_of_Oldenburg for the property hasFather of Friedrich_August_of_Oldenburg is not classified as an Ancestor or a Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Nikolaus_of_Oldenburg, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'UlrichKinsky' does not have the required class ':Sex'.
+      The value Louis_Ferdinand_of_Prussia for the property hasFather of Marie_Cecile_of_Prussia is not classified as an Ancestor or a Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Louis_Ferdinand_of_Prussia, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AnneRowell' does not have the required class ':Sex'.
+      The value Friedrich_of_Waldeck_and_Pyrmont for the property hasFather of Helena_of_Waldeck_and_Pyrmont is not classified as an Ancestor or a Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Friedrich_of_Waldeck_and_Pyrmont, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'HilmarVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
+      The value Frederick_Augustus_II_of_Oldenburg for the property hasFather of Nikolaus_of_Oldenburg is not classified as an Ancestor or a Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Frederick_Augustus_II_of_Oldenburg, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'MarieJuliaMathildeVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
+      The value Helena_of_Waldeck_and_Pyrmont for the property hasMother of Friedrich_August_of_Oldenburg is not classified as an Ancestor or a Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Helena_of_Waldeck_and_Pyrmont, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'RobertoCavanagh' does not have the required class ':Sex'.
+      The value Kira_Kirillovna_of_Russia for the property hasMother of Marie_Cecile_of_Prussia is not classified as an Ancestor or a Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Kira_Kirillovna_of_Russia, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'UlrichKinsky' does not have the required class ':Sex'.
+      The value Bathildis_of_Schaumburg_Lippe for the property hasMother of Helena_of_Waldeck_and_Pyrmont is not classified as an Ancestor or a Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Bathildis_of_Schaumburg_Lippe, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AnneRowell' does not have the required class ':Sex'.
+      The value Elisabeth_Alexandrine_of_Mecklenburg_Schwerin for the property hasMother of Nikolaus_of_Oldenburg is not classified as an Ancestor or a Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Elisabeth_Alexandrine_of_Mecklenburg_Schwerin, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'HilmarVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
+      The value Nikolaus_of_Oldenburg for the property hasFather of Friedrich_August_of_Oldenburg is not classified as an Ancestor or a Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Nikolaus_of_Oldenburg, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'MarieJuliaMathildeVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
+      The value Louis_Ferdinand_of_Prussia for the property hasFather of Marie_Cecile_of_Prussia is not classified as an Ancestor or a Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Louis_Ferdinand_of_Prussia, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'RobertoCavanagh' does not have the required class ':Sex'.
+      The value Friedrich_of_Waldeck_and_Pyrmont for the property hasFather of Helena_of_Waldeck_and_Pyrmont is not classified as an Ancestor or a Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Friedrich_of_Waldeck_and_Pyrmont, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'FranzUlrichKinsky' does not have the required class ':Sex'.
+      The value Frederick_Augustus_II_of_Oldenburg for the property hasFather of Nikolaus_of_Oldenburg is not classified as an Ancestor or a Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Frederick_Augustus_II_of_Oldenburg, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'UlrichKinsky' does not have the required class ':Sex'.
+      The value Helena_of_Waldeck_and_Pyrmont for the property hasMother of Friedrich_August_of_Oldenburg is not classified as an Ancestor or a Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Helena_of_Waldeck_and_Pyrmont, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'HilmarVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
+      The value Kira_Kirillovna_of_Russia for the property hasMother of Marie_Cecile_of_Prussia is not classified as an Ancestor or a Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Kira_Kirillovna_of_Russia, :Ancestor)
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'RobertoCavanagh' does not have the required class ':Sex'.
+      The value Bathildis_of_Schaumburg_Lippe for the property hasMother of Helena_of_Waldeck_and_Pyrmont is not classified as an Ancestor or a Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Bathildis_of_Schaumburg_Lippe, :Ancestor)
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'FranzUlrichKinsky' does not have the required class ':Sex'.
+      The value Elisabeth_Alexandrine_of_Mecklenburg_Schwerin for the property hasMother of Nikolaus_of_Oldenburg is not classified as an Ancestor or a Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Elisabeth_Alexandrine_of_Mecklenburg_Schwerin, :Ancestor)
 
 
   Violation [21]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'UlrichKinsky' does not have the required class ':Sex'.
+      The value Louis_Ferdinand_of_Prussia for the property hasFather of Marie_Cecile_of_Prussia is not classified as an Ancestor or a Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Louis_Ferdinand_of_Prussia, :Ancestor)
 
 
   Violation [22]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'HilmarVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
+      The value Friedrich_of_Waldeck_and_Pyrmont for the property hasFather of Helena_of_Waldeck_and_Pyrmont is not classified as an Ancestor or a Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Friedrich_of_Waldeck_and_Pyrmont, :Ancestor)
 
 
   Violation [23]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'RobertoCavanagh' does not have the required class ':Sex'.
+      The value Kira_Kirillovna_of_Russia for the property hasMother of Marie_Cecile_of_Prussia is not classified as an Ancestor or a Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Kira_Kirillovna_of_Russia, :Ancestor)
 
 
   Violation [24]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'RobertaCavanagh' does not have the required class ':Sex'.
+      The value Bathildis_of_Schaumburg_Lippe for the property hasMother of Helena_of_Waldeck_and_Pyrmont is not classified as an Ancestor or a Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'FranzUlrichKinsky' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AnneRowell' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'MarieJuliaMathildeVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'UlrichKinsky' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'HelenaVictoriaHuttenCzapska' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'HilmarVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'RobertoCavanagh' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'RobertaCavanagh' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'FranzUlrichKinsky' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AnneRowell' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'MarieJuliaMathildeVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'UlrichKinsky' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'HelenaVictoriaHuttenCzapska' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'HilmarVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'RobertoCavanagh' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'RobertaCavanagh' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'FranzUlrichKinsky' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AnneRowell' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'MarieJuliaMathildeVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'UlrichKinsky' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'HelenaVictoriaHuttenCzapska' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'HilmarVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'RobertoCavanagh' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'RobertaCavanagh' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'FranzUlrichKinsky' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AnneRowell' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'MarieJuliaMathildeVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'HilmarVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'UlrichKinsky' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'HelenaVictoriaHuttenCzapska' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'RobertoCavanagh' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'RobertaCavanagh' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'FranzUlrichKinsky' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AnneRowell' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'MarieJuliaMathildeVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'HilmarVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'UlrichKinsky' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'HelenaVictoriaHuttenCzapska' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'RobertoCavanagh' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'RobertaCavanagh' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'FranzUlrichKinsky' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AnneRowell' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'MarieJuliaMathildeVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'HilmarVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'UlrichKinsky' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'HelenaVictoriaHuttenCzapska' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'RobertoCavanagh' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AnneRowell' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'HelenaVictoriaHuttenCzapska' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'MarieJuliaMathildeVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'RobertaCavanagh' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'AnneRowell' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'HelenaVictoriaHuttenCzapska' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'MarieJuliaMathildeVonDemBusscheHaddenhausen' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [79]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'RobertaCavanagh' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Bathildis_of_Schaumburg_Lippe, :Ancestor)
 
 
 
@@ -1666,19 +1064,70 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (aeffb362-3227-4f89-9f16-5813d550e973)
- Call ID: aeffb362-3227-4f89-9f16-5813d550e973
+  AssignClass (222c1a42-d54e-431c-ad31-cbf9d993903e)
+ Call ID: 222c1a42-d54e-431c-ad31-cbf9d993903e
   Args:
-    type: :Sex
-    source: Male
-  AssignClass (5afea055-461e-45f1-8bbb-cde22503f1d9)
- Call ID: 5afea055-461e-45f1-8bbb-cde22503f1d9
+    type: :Ancestor
+    source: Frederick_Augustus_II_of_Oldenburg
+  AssignClass (ece0dcaf-ab56-48ae-828e-29da21fd4f32)
+ Call ID: ece0dcaf-ab56-48ae-828e-29da21fd4f32
   Args:
-    type: :Sex
-    source: Female
-  ValidateShacl (f502dcf8-bb2b-4cb2-a0fc-acc5495d506f)
- Call ID: f502dcf8-bb2b-4cb2-a0fc-acc5495d506f
+    source: Nikolaus_of_Oldenburg
+    type: :Ancestor
+  AssignClass (22a672cf-d24c-42ea-9dd0-35fd84be017c)
+ Call ID: 22a672cf-d24c-42ea-9dd0-35fd84be017c
   Args:
+    source: Elisabeth_Alexandrine_of_Mecklenburg_Schwerin
+    type: :Ancestor
+  AssignClass (67144783-b6f8-46b1-93c6-cf67ac87d75e)
+ Call ID: 67144783-b6f8-46b1-93c6-cf67ac87d75e
+  Args:
+    type: :Ancestor
+    source: Helena_of_Waldeck_and_Pyrmont
+  AssignClass (b4c44fa0-6289-40c7-b487-eae8fb6d3533)
+ Call ID: b4c44fa0-6289-40c7-b487-eae8fb6d3533
+  Args:
+    source: Louis_Ferdinand_of_Prussia
+    type: :Ancestor
+  AssignClass (476c723b-f48b-4d35-8a5e-7694605be40e)
+ Call ID: 476c723b-f48b-4d35-8a5e-7694605be40e
+  Args:
+    source: Friedrich_of_Waldeck_and_Pyrmont
+    type: :Ancestor
+  AssignClass (72eeaeea-4624-416c-8766-b5aa16e50746)
+ Call ID: 72eeaeea-4624-416c-8766-b5aa16e50746
+  Args:
+    source: Kira_Kirillovna_of_Russia
+    type: :Ancestor
+  AssignClass (510752c9-b893-49f2-adbe-69b229657dad)
+ Call ID: 510752c9-b893-49f2-adbe-69b229657dad
+  Args:
+    source: Bathildis_of_Schaumburg_Lippe
+    type: :Ancestor
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1691,62 +1140,72 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:FranzUlrichKinsky a :Man,
+  data:Friedrich_August_of_Oldenburg a :Man,
           :Person ;
-      :hasBirthYear "1936"^^xsd:int ;
-      :hasDeathYear "2009"^^xsd:int ;
-      :hasFather data:UlrichKinsky ;
-      :hasMarriageYear data:1965 ;
-      :hasMother data:MarieJuliaMathildeVonDemBusscheHaddenhausen ;
-      :hasRelation data:HelenaVictoriaHuttenCzapska,
-          data:RobertaCavanagh ;
-      :hasSex data:Male .
+      :hasBirthYear 1936 ;
+      :hasDeathYear 2017 ;
+      :hasFather data:Nikolaus_of_Oldenburg ;
+      :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+      :hasRelation data:Donata_of_Castell_Rudenhausen,
+          data:Marie_Cecile_of_Prussia ;
+      :isUncleOf data:Christian_of_Oldenburg .
 
-  data:AnneRowell a :Ancestor,
+  data:Bathildis_of_Schaumburg_Lippe a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Christian_of_Oldenburg a :Man,
+          :Person .
+
+  data:Donata_of_Castell_Rudenhausen a :Person,
+          :Woman .
+
+  data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Frederick_Augustus_II_of_Oldenburg a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Friedrich_of_Waldeck_and_Pyrmont a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex data:Female .
+      :hasFather data:Friedrich_of_Waldeck_and_Pyrmont ;
+      :hasMother data:Bathildis_of_Schaumburg_Lippe .
 
-  data:HelenaVictoriaHuttenCzapska a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:HilmarVonDemBusscheHaddenhausen a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:MarieJuliaMathildeVonDemBusscheHaddenhausen a :Ancestor,
+  data:Kira_Kirillovna_of_Russia a :Ancestor,
           :Person,
-          :Woman ;
-      :hasBirthYear "1900"^^xsd:int ;
-      :hasDeathYear "1974"^^xsd:int ;
-      :hasFather data:HilmarVonDemBusscheHaddenhausen ;
-      :hasSex data:Female .
+          :Woman .
 
-  data:RobertaCavanagh a :Person,
-          :Woman ;
-      :hasBirthYear "1942"^^xsd:int ;
-      :hasDeathYear "2002"^^xsd:int ;
-      :hasFather data:RobertoCavanagh ;
-      :hasMother data:AnneRowell ;
-      :hasSex data:Female .
+  data:Louis_Ferdinand_of_Prussia a :Ancestor,
+          :Man,
+          :Person .
 
-  data:RobertoCavanagh a :Ancestor,
+  data:Marie_Cecile_of_Prussia a :Person,
+          :Woman ;
+      :hasFather data:Louis_Ferdinand_of_Prussia ;
+      :hasMother data:Kira_Kirillovna_of_Russia .
+
+  data:Nikolaus_of_Oldenburg a :Ancestor,
           :Man,
           :Person ;
-      :hasSex data:Male .
-
-  data:UlrichKinsky a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
+      :hasFather data:Frederick_Augustus_II_of_Oldenburg ;
+      :hasMother data:Elisabeth_Alexandrine_of_Mecklenburg_Schwerin .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (72572de2-2cd8-4a1a-8c01-a92a5d29e569)
+ Call ID: 72572de2-2cd8-4a1a-8c01-a92a5d29e569
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1756,115 +1215,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (709a04f9-6a2c-4d91-b4ea-c3184500b319)
- Call ID: 709a04f9-6a2c-4d91-b4ea-c3184500b319
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1965']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (fb0860ca-b548-409a-bfed-fc9925827aa4)
- Call ID: fb0860ca-b548-409a-bfed-fc9925827aa4
-  Args:
-    type: :DomainEntity
-    source: 1965
-  ValidateShacl (84068adf-1d48-48fa-b054-a54415bcc346)
- Call ID: 84068adf-1d48-48fa-b054-a54415bcc346
-  Args:
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:FranzUlrichKinsky a :Man,
-          :Person ;
-      :hasBirthYear "1936"^^xsd:int ;
-      :hasDeathYear "2009"^^xsd:int ;
-      :hasFather data:UlrichKinsky ;
-      :hasMarriageYear data:1965 ;
-      :hasMother data:MarieJuliaMathildeVonDemBusscheHaddenhausen ;
-      :hasRelation data:HelenaVictoriaHuttenCzapska,
-          data:RobertaCavanagh ;
-      :hasSex data:Male .
-
-  data:1965 a :DomainEntity .
-
-  data:AnneRowell a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:HelenaVictoriaHuttenCzapska a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:HilmarVonDemBusscheHaddenhausen a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:MarieJuliaMathildeVonDemBusscheHaddenhausen a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear "1900"^^xsd:int ;
-      :hasDeathYear "1974"^^xsd:int ;
-      :hasFather data:HilmarVonDemBusscheHaddenhausen ;
-      :hasSex data:Female .
-
-  data:RobertaCavanagh a :Person,
-          :Woman ;
-      :hasBirthYear "1942"^^xsd:int ;
-      :hasDeathYear "2002"^^xsd:int ;
-      :hasFather data:RobertoCavanagh ;
-      :hasMother data:AnneRowell ;
-      :hasSex data:Female .
-
-  data:RobertoCavanagh a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:UlrichKinsky a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
-
-
-
-================================= Tool Message =================================
-
-SHACL validation has not produced any violations.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (f1c80188-46fa-4c1e-9a6c-54240787f2d3)
- Call ID: f1c80188-46fa-4c1e-9a6c-54240787f2d3
+  Finish (e995c280-3cf6-439f-a461-767f0bd61454)
+ Call ID: e995c280-3cf6-439f-a461-767f0bd61454
   Args:

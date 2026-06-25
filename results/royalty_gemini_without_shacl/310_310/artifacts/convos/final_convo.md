@@ -69,36 +69,51 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Don Carlos, Prince of Bourbon-Two Sicilies, Infante of Spain (Full Italian name: Carlo Maria Francesco d'Assisi Pasquale Ferdinando Antonio di Padova Francesco de Paola Alfonso Andrea Avelino Tancredi, Principe di Borbone delle Due Sicilie, Infante di Spagna; 10 November 1870 – 11 November 1949) was the son of Prince Alfonso of the Two Sicilies, Count of Caserta and Princess Maria Antonietta of Bourbon-Two Sicilies, and nephew of the last King of the Two Sicilies, Francis II.
+Princess Beatrix*
 
 
-Marriages and children
-
-On 14 February 1901 in Madrid, Carlos married Mercedes, Princess of Asturias, elder daughter of the late King Alfonso XII of Spain and of his wife Archduchess Maria Christina of Austria.
-Mercedes was the elder sister and heir presumptive to King Alfonso XIII of Spain, an unmarried teenager.
-A week before the wedding, on 7 February, Carlos was given the title of Infante of Spain.
-In 1907, Carlos married secondly to Princess Louise of Orléans, daughter of Prince Philippe, Count of Paris.
-The couple had four children:
+Princess Margriet*Pieter van Vollenhoven*
 
 
-Prince Carlos's descendants include King Felipe VI of Spain, Prince Pedro, Duke of Calabria, Prince Pedro Carlos of Orléans-Braganza, and Philip, Hereditary Prince of Yugoslavia, among others.
-Military service
+Prince Maurits Willem Pieter Hendrik of Orange-Nassau, van Vollenhoven (born 17 April 1968) is a member of the Dutch royal family as the eldest son of Princess Margriet of the Netherlands and Pieter van Vollenhoven.
+Life and career
 
-Carlos served in the Spanish Army in the Spanish–American War and received the Military Order of Maria Cristina.
-Two Sicilies succession
+Maurits was born on 17 April 1968.
+His godparents are Princess Christina of the Netherlands, Prince Alois-Konstantin of Lowenstein-Wertheim-Rosenberg, Jhr. G. Krayenhof, and The Dutch Merchant Fleet.
+Van Vollenhoven has three brothers: Bernhard, Pieter-Christiaan, Floris.
+In 1987, van Vollenhoven performed military service with the Royal Netherlands Marine Corps and the Royal Netherlands Navy.
+From September 2001 to May 2006, the prince worked for Philips (Domestic Appliances and Personal Care) in Amersfoort, where he was in charge of part of the Philishave portfolio.
+In May 2006, van Vollenhoven started his own business, The Source, which focuses on innovative concepts for products, services and systems for both business and government.
+Since 1 May 2013, Maurits is Aide-de-camp to King Willem-Alexander and promoted to the rank of Commander (Dutch: Kapitein-lieutenant ter Zee) in the Royal Netherlands Navy.
+Maurits works for Sunrock, a company which invests in solar parks and green energy.
+The prince criticised the solar energy policy of the municipality of Amsterdam and opened up about other topics.
+Marriage and family
 
-In 1894, Carlos's father Alfonso became the head of the House of Bourbon-Two Sicilies.
-On marrying his first wife, Carlos renounced on 14 December 1900 his future rights of succession to the non-existent Crown of Two Sicilies in an official document, known as the Act of Cannes, subject to a requirement in the Treaty of Naples of 1759 and the Pragmatic Decree of 6 October 1759 that the Crown of Spain should not be combined with the "Italian Sovereignty".
-In 1960, Carlos' elder brother Ferdinand died without male issue, and a dispute arose between Carlos' son Alfonso and Carlos' younger brother Ranieri on the headship of the house, this with competing claims: by the law of primogeniture, Carlos' son Alfonso was considered the heir, but Ranieri claimed that Carlos had renounced his rights and those of his descendants according to the Act of Cannes.
-Alfonso refuted that claim by stating that it was only a promise from his father to relinquish this right if the crown of the Kingdom of the Two Sicilies were to be united with the Spanish Crown.
-Since this did not happen, the act had no effect and Carlos' son Alfonso reclaimed his rights.
-Alfonso's claim was recognised by the heads of the different lines of the House of Bourbon, although not by the head of the Orleans family, and in 1983 the Spanish Council of State, following an investigation by the Ministries of Justice and Foreign Affairs, the Royal Academy of Jurisprudence and Legislation and the Institute Salazar y Castro concluded unanimously in favour of Infante Don Alfonso's only son, Prince and Infante Don Carlos, a position shared by the Spanish Royal House.
+In 1989, van Vollenhoven met Marilène (Marie-Helène) van den Broek b. 4 February 1970, the youngest daughter of Hans van den Broek and Josee van Schendel.
+He was the first grandchild of Queen Juliana and Prince Bernhard of the Netherlands who married.
+Together, the couple has three children:
+
+
+By Royal Decree of 26 May 1998, the children of van Vollenhoven bear the surname "van Lippe-Biesterfeld van Vollenhoven", without titles.
+Upon the abdication of Queen Beatrix, which took place on 30 April 2013, it was confirmed that the children of Princess Margriet and Pieter van Vollenhoven would no longer be eligible to succeed to the throne, and that they would also cease to be members of the Royal House according to The Membership of the Royal House Act.
+Titles and styles
+
+Ancestry
+
+References
+
+External links
+
+2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
+3 title granted by Royal Decree to descendants of Princess Irene
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -114,39 +129,9 @@ Alfonso's claim was recognised by the heads of the different lines of the House 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -161,6 +146,23 @@ Alfonso's claim was recognised by the heads of the different lines of the House 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -178,6 +180,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -245,29 +262,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -276,6 +285,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -288,6 +305,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -296,17 +315,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -334,6 +355,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -349,212 +454,121 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2f552507-8e30-42a3-84a2-81bb0dc4fc3f)
- Call ID: 2f552507-8e30-42a3-84a2-81bb0dc4fc3f
+  AssignClass (d37da015-b212-46fb-b187-b6a74ce79d3b)
+ Call ID: d37da015-b212-46fb-b187-b6a74ce79d3b
   Args:
     type: :Man
-    source: Don_Carlos
-  AssignClass (15dd341d-9c12-47e1-a251-5cc677672f45)
- Call ID: 15dd341d-9c12-47e1-a251-5cc677672f45
+    source: Prince_Maurits
+  AssignClass (57aad178-70fc-4279-8fc5-c7a84d31e407)
+ Call ID: 57aad178-70fc-4279-8fc5-c7a84d31e407
   Args:
-    type: :Person
-    source: Don_Carlos
-  AddLiteral (503f11fd-8e8d-4627-aae8-99589eead609)
- Call ID: 503f11fd-8e8d-4627-aae8-99589eead609
+    source: Princess_Margriet
+    type: :Woman
+  AssignClass (be8bd6a2-8786-45c6-ac62-fcbabcc7161c)
+ Call ID: be8bd6a2-8786-45c6-ac62-fcbabcc7161c
   Args:
-    source: Don_Carlos
+    type: :Man
+    source: Pieter_van_Vollenhoven
+  AssignClass (9b7d6835-c2fa-42fe-8cb1-b455e1a74fda)
+ Call ID: 9b7d6835-c2fa-42fe-8cb1-b455e1a74fda
+  Args:
+    source: Bernhard
+    type: :Man
+  AssignClass (9ded1353-735d-4f1a-bcd7-119b183c3331)
+ Call ID: 9ded1353-735d-4f1a-bcd7-119b183c3331
+  Args:
+    type: :Man
+    source: Pieter-Christiaan
+  AssignClass (cdbd0208-0f25-4d8e-a8d6-23505e948614)
+ Call ID: cdbd0208-0f25-4d8e-a8d6-23505e948614
+  Args:
+    type: :Man
+    source: Floris
+  AssignClass (9030b92e-0496-4c2c-b4bf-f463ddc53538)
+ Call ID: 9030b92e-0496-4c2c-b4bf-f463ddc53538
+  Args:
+    source: Marilene_van_den_Broek
+    type: :Woman
+  AssignClass (d585e24e-3c84-403c-9665-2c3a3fab1662)
+ Call ID: d585e24e-3c84-403c-9665-2c3a3fab1662
+  Args:
+    type: :Man
+    source: Hans_van_den_Broek
+  AssignClass (564b903b-9628-4c5e-8c30-85e664b3d039)
+ Call ID: 564b903b-9628-4c5e-8c30-85e664b3d039
+  Args:
+    source: Josee_van_Schendel
+    type: :Woman
+  AddLiteral (10f3800c-71b7-4690-a11a-fb0af8647a9f)
+ Call ID: 10f3800c-71b7-4690-a11a-fb0af8647a9f
+  Args:
     literal_type: xsd:integer
+    source: Prince_Maurits
+    literal_value: 1968
     relation: :hasBirthYear
-    literal_value: 1870
-  AddLiteral (96471a6d-1a29-46b2-8308-dd974f7a702a)
- Call ID: 96471a6d-1a29-46b2-8308-dd974f7a702a
+  AddTriple (fbc9a93b-6022-4957-82f6-570d26f4cec4)
+ Call ID: fbc9a93b-6022-4957-82f6-570d26f4cec4
   Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1949
-    source: Don_Carlos
-  AssignClass (e4ee32fa-f7d6-4ccf-95c8-8ac2157bcdcd)
- Call ID: e4ee32fa-f7d6-4ccf-95c8-8ac2157bcdcd
+    target: Princess_Margriet
+    source: Prince_Maurits
+    relation: :isSonOf
+  AddTriple (0a3c241a-f188-4064-b1b4-9595bb7f1b97)
+ Call ID: 0a3c241a-f188-4064-b1b4-9595bb7f1b97
   Args:
-    type: :Man
-    source: Prince_Alfonso
-  AssignClass (af7d11a2-9662-4e4d-9ea4-a382f606e9d3)
- Call ID: af7d11a2-9662-4e4d-9ea4-a382f606e9d3
-  Args:
-    source: Prince_Alfonso
-    type: :Person
-  AssignClass (73632c8d-ec9b-442e-8047-bcddc5ca1ae0)
- Call ID: 73632c8d-ec9b-442e-8047-bcddc5ca1ae0
-  Args:
-    type: :Woman
-    source: Maria_Antonietta
-  AssignClass (f81115ad-d50d-4949-9804-1fd39da6e33c)
- Call ID: f81115ad-d50d-4949-9804-1fd39da6e33c
-  Args:
-    source: Maria_Antonietta
-    type: :Person
-  AddTriple (dca44752-7b38-4cf3-a577-47a1ee0f5cf1)
- Call ID: dca44752-7b38-4cf3-a577-47a1ee0f5cf1
-  Args:
-    target: Prince_Alfonso
-    relation: :hasFather
-    source: Don_Carlos
-  AddTriple (a69c9616-4ec8-40fa-8e87-74dd18f3dac6)
- Call ID: a69c9616-4ec8-40fa-8e87-74dd18f3dac6
-  Args:
-    target: Maria_Antonietta
-    relation: :hasMother
-    source: Don_Carlos
-  AssignClass (7cf5b542-7960-4988-8e1d-1558649a463b)
- Call ID: 7cf5b542-7960-4988-8e1d-1558649a463b
-  Args:
-    source: Francis_II
-    type: :Man
-  AssignClass (fbf12a61-c42b-4c2a-b483-bee386efd6ee)
- Call ID: fbf12a61-c42b-4c2a-b483-bee386efd6ee
-  Args:
-    type: :Person
-    source: Francis_II
-  AssignClass (a217b5f3-b88c-4938-8d48-90d19eaa897f)
- Call ID: a217b5f3-b88c-4938-8d48-90d19eaa897f
-  Args:
-    type: :Woman
-    source: Mercedes
-  AssignClass (1208b090-1d17-44fe-9e81-03dd6b10bb37)
- Call ID: 1208b090-1d17-44fe-9e81-03dd6b10bb37
-  Args:
-    source: Mercedes
-    type: :Person
-  AddLiteral (b2235cb0-0337-4242-89c3-85ce05036f2b)
- Call ID: b2235cb0-0337-4242-89c3-85ce05036f2b
-  Args:
-    source: Don_Carlos
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1901
-  AssignClass (fca8157e-6014-4f80-a7b8-0a92dd208efd)
- Call ID: fca8157e-6014-4f80-a7b8-0a92dd208efd
-  Args:
-    type: :Man
-    source: Alfonso_XII
-  AssignClass (406ba103-fb79-44c7-bd12-6501270b3cce)
- Call ID: 406ba103-fb79-44c7-bd12-6501270b3cce
-  Args:
-    type: :Person
-    source: Alfonso_XII
-  AssignClass (0501a31e-7fe7-4d47-9a45-8947ce15ad71)
- Call ID: 0501a31e-7fe7-4d47-9a45-8947ce15ad71
-  Args:
-    source: Maria_Christina
-    type: :Woman
-  AssignClass (c634e25f-620d-4e1f-b3e4-458f8423fbab)
- Call ID: c634e25f-620d-4e1f-b3e4-458f8423fbab
-  Args:
-    type: :Person
-    source: Maria_Christina
-  AddTriple (7c8ba5b5-d350-4457-b166-4362e48c475d)
- Call ID: 7c8ba5b5-d350-4457-b166-4362e48c475d
-  Args:
-    target: Alfonso_XII
-    relation: :hasFather
-    source: Mercedes
-  AddTriple (b49cb8b4-f05b-41d3-9022-d68c1bf135b6)
- Call ID: b49cb8b4-f05b-41d3-9022-d68c1bf135b6
-  Args:
-    relation: :hasMother
-    target: Maria_Christina
-    source: Mercedes
-  AssignClass (27a5e66a-ce69-4d24-8e93-a7f0b8df11c0)
- Call ID: 27a5e66a-ce69-4d24-8e93-a7f0b8df11c0
-  Args:
-    type: :Man
-    source: Alfonso_XIII
-  AssignClass (7df0a83e-1d5e-4013-8c3f-a350a31c6084)
- Call ID: 7df0a83e-1d5e-4013-8c3f-a350a31c6084
-  Args:
-    source: Alfonso_XIII
-    type: :Person
-  AssignClass (e75d3da5-4887-4e0d-8200-ac0a0b4918c9)
- Call ID: e75d3da5-4887-4e0d-8200-ac0a0b4918c9
-  Args:
-    type: :Woman
-    source: Louise_of_Orleans
-  AssignClass (73da1555-b991-462c-a22f-b847e6da7985)
- Call ID: 73da1555-b991-462c-a22f-b847e6da7985
-  Args:
-    type: :Person
-    source: Louise_of_Orleans
-  AddLiteral (9d19bd0c-f648-4d7a-bb8d-ee291640a3fc)
- Call ID: 9d19bd0c-f648-4d7a-bb8d-ee291640a3fc
-  Args:
-    literal_value: 1907
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: Don_Carlos
-  AssignClass (b3021096-bd6f-45a1-86a0-6305ec881230)
- Call ID: b3021096-bd6f-45a1-86a0-6305ec881230
-  Args:
-    source: Philippe_Count_of_Paris
-    type: :Man
-  AssignClass (15ae7a06-1f08-4503-a815-1518c5ae7aec)
- Call ID: 15ae7a06-1f08-4503-a815-1518c5ae7aec
-  Args:
-    source: Philippe_Count_of_Paris
-    type: :Person
-  AddTriple (d4d75802-3dde-4c17-a2c1-698e0f3dd305)
- Call ID: d4d75802-3dde-4c17-a2c1-698e0f3dd305
-  Args:
-    relation: :hasFather
-    target: Philippe_Count_of_Paris
-    source: Louise_of_Orleans
-  AssignClass (a41e06e8-e30d-4669-8cbb-34144720f98c)
- Call ID: a41e06e8-e30d-4669-8cbb-34144720f98c
-  Args:
-    type: :Man
-    source: Ferdinand
-  AssignClass (d7556a12-12cc-483c-bcbc-b0bfdf410315)
- Call ID: d7556a12-12cc-483c-bcbc-b0bfdf410315
-  Args:
-    type: :Person
-    source: Ferdinand
-  AddTriple (b47125a1-9d96-46a1-bbe3-c143c538c490)
- Call ID: b47125a1-9d96-46a1-bbe3-c143c538c490
+    source: Prince_Maurits
+    target: Pieter_van_Vollenhoven
+    relation: :isSonOf
+  AddTriple (f8ff6965-3a19-412d-a26b-f05132cb18a7)
+ Call ID: f8ff6965-3a19-412d-a26b-f05132cb18a7
   Args:
     relation: :isBrotherOf
-    target: Don_Carlos
-    source: Ferdinand
-  AssignClass (cc8159be-eb02-400a-9cfd-b8e8ee5b5c81)
- Call ID: cc8159be-eb02-400a-9cfd-b8e8ee5b5c81
+    target: Bernhard
+    source: Prince_Maurits
+  AddTriple (468e91f5-05a6-4508-bdc4-6f8ab433dc04)
+ Call ID: 468e91f5-05a6-4508-bdc4-6f8ab433dc04
   Args:
-    type: :Man
-    source: Ranieri
-  AssignClass (39138fda-b0ef-45d1-a40b-c29fbd53902f)
- Call ID: 39138fda-b0ef-45d1-a40b-c29fbd53902f
-  Args:
-    type: :Person
-    source: Ranieri
-  AddTriple (e45de5e9-bd13-44c1-a28b-b49df379b13b)
- Call ID: e45de5e9-bd13-44c1-a28b-b49df379b13b
-  Args:
-    source: Ranieri
+    target: Pieter-Christiaan
+    source: Prince_Maurits
     relation: :isBrotherOf
-    target: Don_Carlos
-  AssignClass (da426309-dae3-4f1d-9c7e-f310e5f77ca9)
- Call ID: da426309-dae3-4f1d-9c7e-f310e5f77ca9
+  AddTriple (af558345-41cb-4027-9270-e80c80abbe6d)
+ Call ID: af558345-41cb-4027-9270-e80c80abbe6d
   Args:
-    source: Alfonso_son_of_Carlos
-    type: :Man
-  AssignClass (7f844c13-ecbf-424e-bfae-a10de271f9e6)
- Call ID: 7f844c13-ecbf-424e-bfae-a10de271f9e6
+    source: Prince_Maurits
+    target: Floris
+    relation: :isBrotherOf
+  AddLiteral (e9297e49-bb60-4dea-ae28-9b1a34158f27)
+ Call ID: e9297e49-bb60-4dea-ae28-9b1a34158f27
   Args:
-    source: Alfonso_son_of_Carlos
-    type: :Person
-  AddTriple (f7694e04-2e2d-4ff2-9030-a5ffae8d3ae1)
- Call ID: f7694e04-2e2d-4ff2-9030-a5ffae8d3ae1
+    literal_value: 1970
+    relation: :hasBirthYear
+    source: Marilene_van_den_Broek
+    literal_type: xsd:integer
+  AddTriple (b92fcbdb-d7b9-47c3-bdaf-dd3859fc8d1d)
+ Call ID: b92fcbdb-d7b9-47c3-bdaf-dd3859fc8d1d
   Args:
-    relation: :hasFather
-    target: Don_Carlos
-    source: Alfonso_son_of_Carlos
-  Finish (8c55f4d6-696b-4e8f-a1c3-4a9f1636dc58)
- Call ID: 8c55f4d6-696b-4e8f-a1c3-4a9f1636dc58
+    target: Hans_van_den_Broek
+    source: Marilene_van_den_Broek
+    relation: :isDaughterOf
+  AddTriple (98274506-9498-41d8-8b3e-8d9e997853f8)
+ Call ID: 98274506-9498-41d8-8b3e-8d9e997853f8
+  Args:
+    relation: :isDaughterOf
+    source: Marilene_van_den_Broek
+    target: Josee_van_Schendel
+  AddLiteral (61d97e11-2817-4f20-9d39-f035a4c56a59)
+ Call ID: 61d97e11-2817-4f20-9d39-f035a4c56a59
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 1989
+    literal_type: xsd:integer
+    source: Prince_Maurits
+  AddLiteral (0471bc71-6421-46a3-b5f9-4c80b6178848)
+ Call ID: 0471bc71-6421-46a3-b5f9-4c80b6178848
+  Args:
+    source: Marilene_van_den_Broek
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1989
+  Finish (189034d7-a9cb-41b7-91bd-b6a8a2fb956f)
+ Call ID: 189034d7-a9cb-41b7-91bd-b6a8a2fb956f
   Args:

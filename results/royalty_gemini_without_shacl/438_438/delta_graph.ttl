@@ -2,25 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Katherine_Juliet_Bowes-Lyon a :Woman ;
-    :hasBirthYear 1926 ;
-    :hasDeathYear 2014 ;
-    :hasFather data:John_Herbert_Bowes-Lyon ;
-    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+data:Michael_Albemarle_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBirthYear 1940 ;
+    :hasDeathYear 2023 ;
+    :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasMother data:Elizabeth_Margaret_Cator ;
+    :hasSex data:Male .
 
-data:Nerissa_Jane_Irene_Bowes-Lyon a :Woman ;
-    :hasBirthYear 1919 ;
-    :hasDeathYear 1986 ;
-    :hasFather data:John_Herbert_Bowes-Lyon ;
-    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+data:Princess_Margaret a :Person,
+        :Woman .
 
-data:Cecilia_Bowes-Lyon a :Woman .
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
 
-data:Claude_Bowes-Lyon a :Man .
+data:Queen_Elizabeth_The_Queen_Mother a :Person,
+        :Woman .
 
-data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman .
+data:Elizabeth_Margaret_Cator a :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1959 .
 
-data:John_Herbert_Bowes-Lyon a :Man ;
-    :hasFather data:Claude_Bowes-Lyon ;
-    :hasMother data:Cecilia_Bowes-Lyon .
+data:Male a :Sex .
+
+data:Michael_Claude_Hamilton_Bowes-Lyon a :Man,
+        :Person ;
+    :hasBirthYear 1893 ;
+    :hasDeathYear 1953 .
 

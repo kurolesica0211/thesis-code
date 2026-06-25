@@ -1,0 +1,333 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Katherine_Clairy_Batis a :Person,
+        :Woman ;
+    :hasRelation data:Katherine_Clairy_Batis ;
+    :hasSister data:Katherine_Clairy_Batis ;
+    :isBloodrelationOf data:Katherine_Clairy_Batis ;
+    :isSiblingOf data:Katherine_Clairy_Batis ;
+    :isSisterOf data:Katherine_Clairy_Batis .
+
+data:Alexander_Karadjordjevic a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_Karadjordjevic ;
+    :hasChild data:Filip_Karadjordjevic ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :hasSon data:Filip_Karadjordjevic ;
+    :isAncestorOf data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Alexander_Karadjordjevic ;
+    :isBrotherOf data:Alexander_Karadjordjevic ;
+    :isFatherOf data:Filip_Karadjordjevic ;
+    :isParentOf data:Filip_Karadjordjevic ;
+    :isSiblingOf data:Alexander_Karadjordjevic ;
+    :isUncleOf data:Filip_Karadjordjevic .
+
+data:Danica_Marinkovic a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :hasDaughter data:Marija_Karadjordjevic ;
+    :hasRelation data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Danica_Marinkovic ;
+    :hasSon data:Stefan_Karadjordjevic ;
+    :isAncestorOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isAuntOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Danica_Marinkovic ;
+    :isMotherOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isParentOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isSiblingOf data:Danica_Marinkovic ;
+    :isSisterOf data:Danica_Marinkovic .
+
+data:Ignacio_Duke_of_Segorbe a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ignacio_Duke_of_Segorbe ;
+    :hasChild data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasDaughter data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasRelation data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isAncestorOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBloodrelationOf data:Ignacio_Duke_of_Segorbe ;
+    :isBrotherOf data:Ignacio_Duke_of_Segorbe ;
+    :isFatherOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isParentOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSiblingOf data:Ignacio_Duke_of_Segorbe ;
+    :isUncleOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza .
+
+data:Peter_Karadjordjevic a :Man,
+        :Person ;
+    :hasBrother data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBloodrelationOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBrotherOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSiblingOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isUncleOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic .
+
+data:Maria_da_Gloria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasDaughter data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasRelation data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Maria_da_Gloria ;
+    :hasSon data:Filip_Karadjordjevic ;
+    :isAncestorOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Marija_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :isAuntOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBloodrelationOf data:Maria_da_Gloria ;
+    :isMotherOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isParentOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSiblingOf data:Maria_da_Gloria ;
+    :isSisterOf data:Maria_da_Gloria .
+
+data:Marija_Karadjordjevic a :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_Karadjordjevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria ;
+    :hasBrother data:Stefan_Karadjordjevic ;
+    :hasFather data:Filip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic ;
+    :hasParent data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Marija_Karadjordjevic ;
+    :isBloodrelationOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isChildOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :isDaughterOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :isSiblingOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isSisterOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic .
+
+data:Stefan_Karadjordjevic a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_Karadjordjevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria ;
+    :hasBrother data:Stefan_Karadjordjevic ;
+    :hasFather data:Filip_Karadjordjevic ;
+    :hasMother data:Danica_Marinkovic ;
+    :hasParent data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Maria_da_Gloria,
+        data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Marija_Karadjordjevic ;
+    :isBloodrelationOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBrotherOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isChildOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic ;
+    :isSiblingOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isSonOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic .
+
+data:Ana_Luna_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasAncestor data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria ;
+    :hasBrother data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :hasFather data:Ignacio_Duke_of_Segorbe ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria ;
+    :hasRelation data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isAuntOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isChildOf data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria ;
+    :isDaughterOf data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria ;
+    :isSiblingOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSisterOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza .
+
+data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasAncestor data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria ;
+    :hasBrother data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :hasFather data:Ignacio_Duke_of_Segorbe ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria ;
+    :hasRelation data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isAuntOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isChildOf data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria ;
+    :isDaughterOf data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria ;
+    :isSiblingOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSisterOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza .
+
+data:Filip_Karadjordjevic a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_Karadjordjevic,
+        data:Maria_da_Gloria ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic ;
+    :hasChild data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :hasDaughter data:Marija_Karadjordjevic ;
+    :hasFather data:Alexander_Karadjordjevic ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasParent data:Alexander_Karadjordjevic,
+        data:Maria_da_Gloria ;
+    :hasRelation data:Alexander_Karadjordjevic,
+        data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic,
+        data:Ignacio_Duke_of_Segorbe,
+        data:Maria_da_Gloria,
+        data:Marija_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza,
+        data:Stefan_Karadjordjevic ;
+    :hasSister data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :hasSon data:Stefan_Karadjordjevic ;
+    :isAncestorOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isBloodrelationOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isBrotherOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isChildOf data:Alexander_Karadjordjevic,
+        data:Maria_da_Gloria ;
+    :isFatherOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isParentOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic ;
+    :isSiblingOf data:Ana_Luna_Medina_y_Orleans_Braganza,
+        data:Filip_Karadjordjevic,
+        data:Peter_Karadjordjevic,
+        data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza ;
+    :isSonOf data:Alexander_Karadjordjevic,
+        data:Maria_da_Gloria ;
+    :isUncleOf data:Marija_Karadjordjevic,
+        data:Stefan_Karadjordjevic .
+

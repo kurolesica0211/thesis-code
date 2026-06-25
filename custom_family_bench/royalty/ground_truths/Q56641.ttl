@@ -7,50 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Pim_Lier a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Pim Lier" ;
-    data:wdtLink wdt:Q56641 ;
-    :alsoKnownAs "Albrecht-Willem Lier" ;
-    :hasSex data:male ;
-    :hasSister data:Juliana_of_the_Netherlands ;
-    :isBrotherOf data:Juliana_of_the_Netherlands ;
-    :isSiblingOf data:Juliana_of_the_Netherlands ;
-    :isUncleOf data:Beatrix_of_the_Netherlands .
-
-data:Wilhelmina_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelmina of the Netherlands" ;
-    data:posIndicesFull "197:213",
-        "203:213",
-        "232:241" ;
-    data:wdtLink wdt:Q150747 ;
-    :alsoKnownAs "Princess Wilhelmina of The Netherlands",
-        "Princess Wilhelmina of the Netherlands",
-        "Queen Wilhelmina",
-        "Queen Wilhelmina of the Netherlands",
-        "Wilhelmina",
-        "Wilhelmina I",
-        "Wilhelmina Koningin der Nederlanden" ;
-    :hasChild data:Juliana_of_the_Netherlands ;
-    :hasDaughter data:Juliana_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isMotherOf data:Juliana_of_the_Netherlands ;
-    :isParentOf data:Juliana_of_the_Netherlands .
-
-data:Beatrix_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Beatrix_of_the_Netherlands a :Person ;
     rdfs:label "Beatrix of the Netherlands" ;
     data:posIndicesFull "349:362" ;
     data:wdtLink wdt:Q29574 ;
@@ -62,16 +19,22 @@ data:Beatrix_of_the_Netherlands a :Ancestor,
         "Princess Beatrix of Orange-Nassau",
         "Princess Beatrix of the Netherlands",
         "Queen Beatrix" ;
-    :hasMother data:Juliana_of_the_Netherlands ;
     :hasParent data:Juliana_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isChildOf data:Juliana_of_the_Netherlands ;
-    :isDaughterOf data:Juliana_of_the_Netherlands .
+    :hasSex data:female .
 
-data:Juliana_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Pim_Lier a :Person ;
+    rdfs:label "Pim Lier" ;
+    data:wdtLink wdt:Q56641 ;
+    :alsoKnownAs "Albrecht-Willem Lier" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Juliana_of_the_Netherlands a :Person ;
     rdfs:label "Juliana of the Netherlands" ;
     data:posIndicesFull "313:326",
         "319:326" ;
@@ -86,16 +49,25 @@ data:Juliana_of_the_Netherlands a :Ancestor,
         "Queen Juliana",
         "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
         "Queen Juliana of the Netherlands" ;
-    :hasBrother data:Pim_Lier ;
-    :hasChild data:Beatrix_of_the_Netherlands ;
-    :hasDaughter data:Beatrix_of_the_Netherlands ;
-    :hasMother data:Wilhelmina_of_the_Netherlands ;
     :hasParent data:Wilhelmina_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isChildOf data:Wilhelmina_of_the_Netherlands ;
-    :isDaughterOf data:Wilhelmina_of_the_Netherlands ;
-    :isMotherOf data:Beatrix_of_the_Netherlands ;
-    :isParentOf data:Beatrix_of_the_Netherlands ;
-    :isSiblingOf data:Pim_Lier ;
-    :isSisterOf data:Pim_Lier .
+    :hasSex data:female .
+
+data:Wilhelmina_of_the_Netherlands a :Person ;
+    rdfs:label "Wilhelmina of the Netherlands" ;
+    data:posIndicesFull "197:213",
+        "203:213",
+        "232:241" ;
+    data:wdtLink wdt:Q150747 ;
+    :alsoKnownAs "Princess Wilhelmina of The Netherlands",
+        "Princess Wilhelmina of the Netherlands",
+        "Queen Wilhelmina",
+        "Queen Wilhelmina of the Netherlands",
+        "Wilhelmina",
+        "Wilhelmina I",
+        "Wilhelmina Koningin der Nederlanden" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

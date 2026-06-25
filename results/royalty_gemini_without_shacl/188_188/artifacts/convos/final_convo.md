@@ -69,71 +69,23 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Crown PrinceThe Crown Princess
+Infanta María Teresa of Spain (Spanish: María Teresa Isabel Eugenia del Patrocinio Diega de Borbón y Habsburgo, Infanta de España; 12 November 1882 – 23 September 1912) was the second eldest child and daughter of Alfonso XII of Spain and his second wife Maria Christina of Austria.
+Maria Teresa was an Infanta of Spain and a member of the House of Bourbon by birth.
+Marriage and issue
+
+Maria Teresa married her first cousin, Prince Ferdinand of Bavaria, Infante of Spain, eldest son and child of Prince Ludwig Ferdinand of Bavaria and his wife Infanta María de la Paz of Spain, on 12 January 1906 in Madrid.
+Maria Teresa and Ferdinand had four children:
 
 
-Princess Tomislav
-
-
-Princess Alexander
-
-
-Princess Elizabeth
-
-
-Princess Elizabeth of Yugoslavia (Serbian: Jelisaveta Karađorđević, Јелисавета Карађорђевић; born 7 April 1936) is a member of the royal House of Karađorđević, a human rights activist and a former presidential candidate for Serbia.
-Early life
-
-Princess Elizabeth was born in the White Palace, Belgrade as the third child and the only daughter of Prince Paul of Yugoslavia (prince regent of Yugoslavia 1934–1941) and Princess Olga of Greece and Denmark.
-Her older brothers were Prince Nicholas and Prince Alexander of Yugoslavia, who married, firstly, Princess Maria Pia of Savoy and, secondly, Princess Barbara of Liechtenstein.
-She is a paternal second cousin of Queen Sofía of Spain and King Charles III, and a maternal first cousin of Prince Edward, Duke of Kent and his siblings, Prince Michael of Kent and Princess Alexandra, The Honourable Lady Ogilvy.
-She is a maternal third cousin of king Willem-Alexander of the Netherlands.
-Elizabeth is also a great-great-granddaughter of Karađorđe, who started the first Serbian uprising against the Turks in 1804.
-Her godmother and namesake was her maternal aunt, Princess Elizabeth of Greece and Denmark.
-Elizabeth was educated in Kenya, South Africa, United Kingdom, Switzerland, and Paris, where she studied the history of fine art.
-Together with her brother Alexander, she took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
-On this trip, Alexander met his first wife, Maria Pia of Savoy, a daughter of Umberto II of Italy and Marie-José of Belgium, while Elizabeth fell in love for the first time with her cousin, Prince Karl of Hesse.
-Later, she developed a passion for a Russian nobleman, Prince Michel Obolensky (1926–1995), youngest brother of a family friend, Princess Irina Obolensky, but she was prevented from pursuing the relationship as her parents had another suitor in mind, Baudouin of Belgium.
-Marriages and children
-
-On 21 January 1960, Princess Elizabeth married firstly Howard Oxenberg (1919–2010), an American Jewish dress manufacturer and close friend of the Kennedy family.
-They have two daughters (and three granddaughters):
-
-
-Princess Elizabeth's second marriage was to Neil Balfour of Dawyck (born 1944) on 23 September 1969.
-He was the grandson of Alexander Balfour, founder of the Liverpool shipping company Balfour Williamson.
-In 1974, she was briefly engaged to an actor Richard Burton, after his first divorce from Elizabeth Taylor.
-Princess Elizabeth was married a third time, to former Prime Minister of Peru Manuel Ulloa Elías (1922–1992) on 28 February 1987.
-In 1992 Ulloa Elías died, which made the princess officially a widow.
-Career
-
-A businesswoman and writer, Elizabeth is the author of four storybooks for children and has created two perfumes- "Jelisaveta" and "E".
-Elizabeth recognized early the warning signs of what would eventually be known as Balkanization in Yugoslavia.
-Working behind the scenes through United Nations programs, she also journeyed to the Vatican in 1989 to ask Monsignor Tauran, then Holy See Secretary for Relations with States, to help improve relations between Catholic and Orthodox communities in Yugoslavia.
-In December 1990, she created the Princess Elizabeth Foundation, a non-political, not-for-profit organization after foreseeing the crucial importance of a vehicle to address the tension brewing just below the surface.
-Before the breakup of Yugoslavia began in 1991, she invited the Orthodox Bishop Sava and the Mufti of Belgrade, along with the Yugoslav Minister for Religious Affairs to attend a conference in Moscow that was hosted by Mikhail Gorbachev.
-In 2002, Princess Elizabeth received the first Nuclear Disarmament Forum Award, the Demiurgus Peace International (accompanying president Vladimir Putin, Archbishop Desmond Tutu, Ted Turner and others), for outstanding achievements in the field of strengthening peace among nations in Zug, Switzerland.
-She decided to run for President of Serbia in the 2004 Serbian presidential election, despite her cousin Alexander's having objected that the Royal Family should stay out of politics.
-Royal property
-
-After the death of King Alexander I, and during the Regency administration (of Regent Prince Paul, Radenko Stanković, and Ivo Perović) that followed, the City of Belgrade District Court issued Decree N° 0.428/34 on 27 October 1938.
-The decree, which became official law on 4 March 1939, pronounced King Alexander
-I's underage sons Crown Prince Peter, Prince Tomislav, and Prince Andrew, in equal parts, heirs to his entire estate.
-On 2 August 1947, Edvard Kardelj, then vice-president of the Socialist Federal Republic of Yugoslavia, issued a decree that confiscated all these properties from the Karadjordjević family.
-The decree by the National Assembly of the Presidency of the People's Federal Republic of Yugoslavia was abolished in 2001, after the deposing of Slobodan Milošević.
-The new government of Yugoslavia restored to all members of the royal family both their citizenship and the use of the royal complex in Dedinje.
-In 2013, it was announced that the villa "Crnogorka" (meaning Montenegrin), in Uzička Street, Dedinje, was to be returned to Princess Elizabeth.
-The villa had been bought in 1940 by her mother Princess Olga and taken by the state in 1947.
-Elizabeth settled permanently in Belgrade, living at the Villa "Montenegrina", until she sold it in 2018.
-Arms
-
-Princess Elizabeth was granted heraldic arms on 20 June 2008.
+She passed away after giving birth to her last child.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -149,39 +101,9 @@ Princess Elizabeth was granted heraldic arms on 20 June 2008.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -196,6 +118,23 @@ Princess Elizabeth was granted heraldic arms on 20 June 2008.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -213,6 +152,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,29 +234,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -311,6 +257,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -323,6 +277,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -331,17 +287,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -369,6 +327,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -384,147 +426,117 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5c2e9220-98c5-4a77-b6b6-2b935edec1e0)
- Call ID: 5c2e9220-98c5-4a77-b6b6-2b935edec1e0
+  AssignClass (aa00b58f-3db3-4322-b40d-6af4e53e8a95)
+ Call ID: aa00b58f-3db3-4322-b40d-6af4e53e8a95
   Args:
-    source: Princess_Elizabeth_of_Yugoslavia
+    type: :Person
+    source: :MariaTeresaOfSpain
+  AssignClass (83fb544c-5846-45fc-8f7f-c505475ad384)
+ Call ID: 83fb544c-5846-45fc-8f7f-c505475ad384
+  Args:
+    source: :MariaTeresaOfSpain
     type: :Woman
-  AssignClass (2479eb2a-31d1-475e-97a5-afc90efdb891)
- Call ID: 2479eb2a-31d1-475e-97a5-afc90efdb891
+  AddLiteral (09724069-30a5-4348-b89b-9a48b7ffb510)
+ Call ID: 09724069-30a5-4348-b89b-9a48b7ffb510
   Args:
-    source: Prince_Paul_of_Yugoslavia
-    type: :Man
-  AssignClass (8680731d-af91-4e52-86d3-b4ea8ecdd2eb)
- Call ID: 8680731d-af91-4e52-86d3-b4ea8ecdd2eb
-  Args:
-    source: Princess_Olga_of_Greece_and_Denmark
-    type: :Woman
-  AssignClass (25375bd4-68eb-45bf-9236-b2bdc0625501)
- Call ID: 25375bd4-68eb-45bf-9236-b2bdc0625501
-  Args:
-    source: Prince_Nicholas_of_Yugoslavia
-    type: :Man
-  AssignClass (a9f10b05-848e-4f00-8e37-4b615a96e9cd)
- Call ID: a9f10b05-848e-4f00-8e37-4b615a96e9cd
-  Args:
-    type: :Man
-    source: Prince_Alexander_of_Yugoslavia
-  AssignClass (fe29fc03-fbdb-4178-a673-3170dd649ee1)
- Call ID: fe29fc03-fbdb-4178-a673-3170dd649ee1
-  Args:
-    type: :Man
-    source: Howard_Oxenberg
-  AssignClass (9054623a-678b-40ba-be49-1aab0cdd54ba)
- Call ID: 9054623a-678b-40ba-be49-1aab0cdd54ba
-  Args:
-    source: Neil_Balfour_of_Dawyck
-    type: :Man
-  AssignClass (4232d5de-a636-491b-b674-4375e9514aef)
- Call ID: 4232d5de-a636-491b-b674-4375e9514aef
-  Args:
-    source: Manuel_Ulloa_Elias
-    type: :Man
-  AddTriple (431b9d92-c2ac-44fc-b4d5-dfff9f1cfed7)
- Call ID: 431b9d92-c2ac-44fc-b4d5-dfff9f1cfed7
-  Args:
-    source: Princess_Elizabeth_of_Yugoslavia
-    target: Prince_Paul_of_Yugoslavia
-    relation: :hasFather
-  AddTriple (199a0778-e62f-49ea-8952-c90534fb77a2)
- Call ID: 199a0778-e62f-49ea-8952-c90534fb77a2
-  Args:
-    source: Princess_Elizabeth_of_Yugoslavia
-    relation: :hasMother
-    target: Princess_Olga_of_Greece_and_Denmark
-  AddTriple (31bac05d-b610-462e-96b5-81ccc106a8d5)
- Call ID: 31bac05d-b610-462e-96b5-81ccc106a8d5
-  Args:
-    source: Prince_Nicholas_of_Yugoslavia
-    target: Prince_Paul_of_Yugoslavia
-    relation: :hasFather
-  AddTriple (0bcafbbe-aac7-42ce-88b6-f03fc65268bc)
- Call ID: 0bcafbbe-aac7-42ce-88b6-f03fc65268bc
-  Args:
-    relation: :hasMother
-    target: Princess_Olga_of_Greece_and_Denmark
-    source: Prince_Nicholas_of_Yugoslavia
-  AddTriple (9a0edbb4-355b-4f0d-b95b-8bbd765e51f0)
- Call ID: 9a0edbb4-355b-4f0d-b95b-8bbd765e51f0
-  Args:
-    source: Prince_Alexander_of_Yugoslavia
-    target: Prince_Paul_of_Yugoslavia
-    relation: :hasFather
-  AddTriple (a0518277-6613-4837-9d74-fff1d3c1691a)
- Call ID: a0518277-6613-4837-9d74-fff1d3c1691a
-  Args:
-    source: Prince_Alexander_of_Yugoslavia
-    relation: :hasMother
-    target: Princess_Olga_of_Greece_and_Denmark
-  AddLiteral (49ca52fa-7a9a-49eb-954e-b06745a865b3)
- Call ID: 49ca52fa-7a9a-49eb-954e-b06745a865b3
-  Args:
-    literal_type: xsd:integer
-    source: Princess_Elizabeth_of_Yugoslavia
     relation: :hasBirthYear
-    literal_value: 1936
-  AddTriple (0dc60a6d-a5da-45f4-a321-e16cf05ade93)
- Call ID: 0dc60a6d-a5da-45f4-a321-e16cf05ade93
-  Args:
-    source: Princess_Elizabeth_of_Yugoslavia
-    target: Prince_Nicholas_of_Yugoslavia
-    relation: :hasBrother
-  AddTriple (bb13ac76-e6db-4d56-8076-3c1baae5c343)
- Call ID: bb13ac76-e6db-4d56-8076-3c1baae5c343
-  Args:
-    relation: :hasBrother
-    target: Prince_Alexander_of_Yugoslavia
-    source: Princess_Elizabeth_of_Yugoslavia
-  AddLiteral (2f234ea4-94b9-4055-acc2-27845996e219)
- Call ID: 2f234ea4-94b9-4055-acc2-27845996e219
-  Args:
+    literal_value: 1882
     literal_type: xsd:integer
-    source: Howard_Oxenberg
-    relation: :hasMarriageYear
-    literal_value: 1960
-  AddTriple (c495d91c-e494-4d99-a0ca-a6a71cb5058a)
- Call ID: c495d91c-e494-4d99-a0ca-a6a71cb5058a
+    source: :MariaTeresaOfSpain
+  AddLiteral (5ee23df3-c6fe-4974-a351-9113f39ebda1)
+ Call ID: 5ee23df3-c6fe-4974-a351-9113f39ebda1
   Args:
-    source: Princess_Elizabeth_of_Yugoslavia
-    relation: :hasRelation
-    target: Howard_Oxenberg
-  AddLiteral (e8b8cc0c-ff93-445e-b67c-7e0706dc465b)
- Call ID: e8b8cc0c-ff93-445e-b67c-7e0706dc465b
-  Args:
-    literal_value: 1969
-    relation: :hasMarriageYear
-    source: Neil_Balfour_of_Dawyck
+    literal_value: 1912
     literal_type: xsd:integer
-  AddTriple (644d2d62-5878-41ff-a54f-adc7f5ca03e4)
- Call ID: 644d2d62-5878-41ff-a54f-adc7f5ca03e4
-  Args:
-    relation: :hasRelation
-    target: Neil_Balfour_of_Dawyck
-    source: Princess_Elizabeth_of_Yugoslavia
-  AddLiteral (d412f3d2-9b5f-4875-8fe5-a75818c70181)
- Call ID: d412f3d2-9b5f-4875-8fe5-a75818c70181
-  Args:
-    literal_type: xsd:integer
-    source: Manuel_Ulloa_Elias
-    relation: :hasMarriageYear
-    literal_value: 1987
-  AddTriple (fea33cea-93d3-4aa2-8a94-b55986878725)
- Call ID: fea33cea-93d3-4aa2-8a94-b55986878725
-  Args:
-    source: Princess_Elizabeth_of_Yugoslavia
-    relation: :hasRelation
-    target: Manuel_Ulloa_Elias
-  AddLiteral (89dec016-54c0-41f0-b30d-5658d76deba6)
- Call ID: 89dec016-54c0-41f0-b30d-5658d76deba6
-  Args:
-    literal_value: 1992
     relation: :hasDeathYear
-    source: Manuel_Ulloa_Elias
+    source: :MariaTeresaOfSpain
+  AssignClass (876432bf-2cf6-4478-8d93-5428052be31b)
+ Call ID: 876432bf-2cf6-4478-8d93-5428052be31b
+  Args:
+    type: :Person
+    source: :AlfonsoXIIOfSpain
+  AssignClass (f8df5bb9-bacf-4a81-aaf7-2117e24b4500)
+ Call ID: f8df5bb9-bacf-4a81-aaf7-2117e24b4500
+  Args:
+    source: :AlfonsoXIIOfSpain
+    type: :Man
+  AssignClass (f3f5283a-13c6-49fd-8f03-3dca892c6a3a)
+ Call ID: f3f5283a-13c6-49fd-8f03-3dca892c6a3a
+  Args:
+    source: :MariaChristinaOfAustria
+    type: :Person
+  AssignClass (9b119799-17f5-4b41-a1c8-a5b16f1da19b)
+ Call ID: 9b119799-17f5-4b41-a1c8-a5b16f1da19b
+  Args:
+    source: :MariaChristinaOfAustria
+    type: :Woman
+  AddTriple (d872caa7-d883-49cf-bc59-d973d5eda1fc)
+ Call ID: d872caa7-d883-49cf-bc59-d973d5eda1fc
+  Args:
+    source: :MariaTeresaOfSpain
+    relation: :hasFather
+    target: :AlfonsoXIIOfSpain
+  AddTriple (ef294568-a696-491f-afe7-48ebef9c11f2)
+ Call ID: ef294568-a696-491f-afe7-48ebef9c11f2
+  Args:
+    source: :MariaTeresaOfSpain
+    target: :MariaChristinaOfAustria
+    relation: :hasMother
+  AssignClass (ca7b3a81-6473-4641-bebd-3c3763f9bcee)
+ Call ID: ca7b3a81-6473-4641-bebd-3c3763f9bcee
+  Args:
+    source: :PrinceFerdinandOfBavaria
+    type: :Person
+  AssignClass (0f3d3da4-fb68-4cd1-ac8a-b7778479d249)
+ Call ID: 0f3d3da4-fb68-4cd1-ac8a-b7778479d249
+  Args:
+    source: :PrinceFerdinandOfBavaria
+    type: :Man
+  AddTriple (7f4e97f2-cea5-4170-9a6e-9ec6ae295984)
+ Call ID: 7f4e97f2-cea5-4170-9a6e-9ec6ae295984
+  Args:
+    source: :MariaTeresaOfSpain
+    relation: :hasRelation
+    target: :PrinceFerdinandOfBavaria
+  AddLiteral (393be2a1-b6dd-4aa2-aa02-bad8e2257088)
+ Call ID: 393be2a1-b6dd-4aa2-aa02-bad8e2257088
+  Args:
+    source: :MariaTeresaOfSpain
+    relation: :hasMarriageYear
+    literal_value: 1906
     literal_type: xsd:integer
-  Finish (9e8b1840-d7d2-46fe-872f-b384a4378775)
- Call ID: 9e8b1840-d7d2-46fe-872f-b384a4378775
+  AssignClass (267958ed-ecf9-46e7-8627-224b9db1bf1d)
+ Call ID: 267958ed-ecf9-46e7-8627-224b9db1bf1d
+  Args:
+    type: :Person
+    source: :PrinceLudwigFerdinandOfBavaria
+  AssignClass (c3ac16bc-ab5b-4b6e-98b1-c9cc2eaea663)
+ Call ID: c3ac16bc-ab5b-4b6e-98b1-c9cc2eaea663
+  Args:
+    type: :Man
+    source: :PrinceLudwigFerdinandOfBavaria
+  AssignClass (6c40e6cc-2b7b-498e-92ce-c76761327379)
+ Call ID: 6c40e6cc-2b7b-498e-92ce-c76761327379
+  Args:
+    source: :MariaDeLaPazOfSpain
+    type: :Person
+  AssignClass (afd7e5e5-ff0e-4efc-871b-e393fba08223)
+ Call ID: afd7e5e5-ff0e-4efc-871b-e393fba08223
+  Args:
+    type: :Woman
+    source: :MariaDeLaPazOfSpain
+  AddTriple (6a493997-c672-42c3-920b-aec3f1a802d7)
+ Call ID: 6a493997-c672-42c3-920b-aec3f1a802d7
+  Args:
+    source: :PrinceFerdinandOfBavaria
+    target: :PrinceLudwigFerdinandOfBavaria
+    relation: :hasFather
+  AddTriple (2cbab31b-3e88-4154-a1b4-a5aec2bb130d)
+ Call ID: 2cbab31b-3e88-4154-a1b4-a5aec2bb130d
+  Args:
+    relation: :hasMother
+    target: :MariaDeLaPazOfSpain
+    source: :PrinceFerdinandOfBavaria
+  Finish (18acb9bb-8ace-4512-b6c2-0ab38b80c061)
+ Call ID: 18acb9bb-8ace-4512-b6c2-0ab38b80c061
   Args:

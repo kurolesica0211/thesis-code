@@ -1,0 +1,491 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Constantine II of Greece"^^xsd:string ;
+    data:posIndicesFull "214:230"^^xsd:string ;
+    data:posIndicesPart "1284:1295"^^xsd:string,
+        "1723:1729"^^xsd:string,
+        "1821:1827"^^xsd:string,
+        "1867:1873"^^xsd:string,
+        "516:522"^^xsd:string ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece"^^xsd:string,
+        "Constantine Glucksburg"^^xsd:string,
+        "Constantine II"^^xsd:string,
+        "Constantino de Grecia"^^xsd:string,
+        "King Constantine"^^xsd:string,
+        "Konstantinos 2"^^xsd:string,
+        "Konstantinos II"^^xsd:string,
+        "Konstantinos II of Greece"^^xsd:string,
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes"^^xsd:string,
+        "Konstantínos 2"^^xsd:string,
+        "Konstantínos II"^^xsd:string ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasRelation data:Constantine_II_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Constantine_II_of_Greece .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "395:418"^^xsd:string,
+        "400:408"^^xsd:string,
+        "400:418"^^xsd:string,
+        "790:797"^^xsd:string ;
+    data:posIndicesPart "1420:1426"^^xsd:string,
+        "1439:1445"^^xsd:string,
+        "1697:1703"^^xsd:string,
+        "1723:1729"^^xsd:string,
+        "1756:1762"^^xsd:string,
+        "1821:1827"^^xsd:string,
+        "1867:1873"^^xsd:string,
+        "2130:2136"^^xsd:string,
+        "2198:2204"^^xsd:string,
+        "2393:2399"^^xsd:string,
+        "2875:2881"^^xsd:string,
+        "997:1003"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece ;
+    :isParentOf data:Constantine_I_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Constantine I of Greece"^^xsd:string ;
+    data:posIndicesFull "214:232"^^xsd:string,
+        "214:242"^^xsd:string,
+        "219:232"^^xsd:string,
+        "219:242"^^xsd:string ;
+    data:posIndicesPart "1284:1295"^^xsd:string,
+        "1723:1729"^^xsd:string,
+        "1821:1827"^^xsd:string,
+        "1867:1873"^^xsd:string,
+        "516:522"^^xsd:string ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I"^^xsd:string,
+        "Constantine Oldenburg I"^^xsd:string,
+        "King Constantine I"^^xsd:string,
+        "King Constantine I of Greece"^^xsd:string,
+        "Konstantinos I of Greece"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasChild data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasDaughter data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isAncestorOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_I_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isFatherOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isParentOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Frederick_III-_German_Emperor a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick III, German Emperor"^^xsd:string ;
+    data:posIndicesFull "3080:3109"^^xsd:string,
+        "3510:3539"^^xsd:string ;
+    data:wdtLink wdt:Q58600 ;
+    :alsoKnownAs "Frederick III of Germany"^^xsd:string,
+        "Friedrich III"^^xsd:string,
+        "Friedrich III of Germany"^^xsd:string,
+        "Friedrich Wilhelm Nikolaus Karl"^^xsd:string,
+        "King Frederick III of Prussia"^^xsd:string,
+        "Kronprinz Friedrich Wilhelm"^^xsd:string ;
+    :hasBrother data:Frederick_III-_German_Emperor ;
+    :hasChild data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :hasDaughter data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Wilhelm_II ;
+    :isAncestorOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Frederick_III-_German_Emperor ;
+    :isBrotherOf data:Frederick_III-_German_Emperor ;
+    :isFatherOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isParentOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Frederick_III-_German_Emperor ;
+    :isUncleOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+
+data:Victoria-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Victoria, Princess Royal"^^xsd:string ;
+    data:posIndicesFull "3114:3138"^^xsd:string,
+        "3544:3568"^^xsd:string ;
+    data:posIndicesPart "3218:3226"^^xsd:string,
+        "3397:3405"^^xsd:string ;
+    data:wdtLink wdt:Q116728 ;
+    :alsoKnownAs "Empress Frederick"^^xsd:string,
+        "Empress Frederick of Germany"^^xsd:string,
+        "Empress Friedrich"^^xsd:string,
+        "Empress Victoria of Germany"^^xsd:string,
+        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise of the United Kingdom"^^xsd:string,
+        "Princess Victoria of the United Kingdom"^^xsd:string,
+        "Victoria Adelaide Mary Louisa"^^xsd:string,
+        "Victoria Adelaide Mary Louise"^^xsd:string,
+        "Victoria, Crown Princess of Prussia"^^xsd:string,
+        "Victoria, Empress Frederick of Germany"^^xsd:string,
+        "Victoria, Empress consort of Germany"^^xsd:string,
+        "Victoria, Empress of Germany"^^xsd:string,
+        "Victoria, German Empress"^^xsd:string,
+        "Victoria, Queen of Prussia and Empress of Germany"^^xsd:string ;
+    :hasChild data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :hasDaughter data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :hasRelation data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Victoria-_Princess_Royal ;
+    :hasSon data:Wilhelm_II ;
+    :isAncestorOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isAuntOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Victoria-_Princess_Royal ;
+    :isMotherOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isParentOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Victoria-_Princess_Royal ;
+    :isSisterOf data:Victoria-_Princess_Royal .
+
+data:Princess_Margaret_of_Prussia a :Person,
+        :Woman ;
+    rdfs:label "Princess Margaret of Prussia"^^xsd:string ;
+    data:posIndicesFull "3408:3412"^^xsd:string ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Margaret of Prussia"^^xsd:string,
+        "Margaret of Prussia, Queen consort-elect of Finland"^^xsd:string,
+        "Margaret of Prussia, Queen-elect of Finland"^^xsd:string,
+        "Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Margarethe of Prussia"^^xsd:string,
+        "Mossy"^^xsd:string,
+        "Princess Frederick Charles of Hesse"^^xsd:string,
+        "Princess Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe of Prussia"^^xsd:string ;
+    :hasAncestor data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasFather data:Frederick_III-_German_Emperor ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :isAuntOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "790:800"^^xsd:string,
+        "790:816"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasAncestor data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasFather data:Frederick_III-_German_Emperor ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isBrotherOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSonOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isUncleOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Helen_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Helen of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "3307:3318"^^xsd:string,
+        "3307:3343"^^xsd:string,
+        "3313:3343"^^xsd:string ;
+    data:wdtLink wdt:Q162177 ;
+    :alsoKnownAs "Helen, Queen Mother of Romania"^^xsd:string,
+        "Helen, The Queen Mother of Romania"^^xsd:string,
+        "Queen Elena, The Queen Mother of Romania"^^xsd:string,
+        "Queen Elena, The Queen Mother of Romania, Princess of Greece and Denmark"^^xsd:string,
+        "Queen Helen"^^xsd:string,
+        "Queen Helen, Queen Mother of Romania"^^xsd:string,
+        "Queen Helen, Queen Mother of Romania, Princess of Greece and Denmark"^^xsd:string,
+        "Queen Helen, The Queen Mother of Romania"^^xsd:string,
+        "Queen Helen, The Queen Mother of Romania, Princess of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:Constantine_I_of_Greece,
+        data:Frederick_III-_German_Emperor,
+        data:George_I_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Frederick_III-_German_Emperor,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal ;
+    :hasSex data:female ;
+    :hasSister data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isChildOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isDaughterOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isSiblingOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSisterOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Princess_Katherine_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Katherine of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "0:40"^^xsd:string,
+        "123:146"^^xsd:string,
+        "2479:2502"^^xsd:string,
+        "3577:3617"^^xsd:string,
+        "4094:4134"^^xsd:string ;
+    data:posIndicesPart "1090:1098"^^xsd:string,
+        "1153:1161"^^xsd:string,
+        "1373:1382"^^xsd:string,
+        "1483:1492"^^xsd:string,
+        "1670:1678"^^xsd:string,
+        "1723:1729"^^xsd:string,
+        "1799:1808"^^xsd:string,
+        "1821:1827"^^xsd:string,
+        "1867:1873"^^xsd:string,
+        "2176:2185"^^xsd:string,
+        "2242:2251"^^xsd:string,
+        "2560:2569"^^xsd:string,
+        "287:296"^^xsd:string,
+        "2967:2976"^^xsd:string,
+        "516:522"^^xsd:string,
+        "951:960"^^xsd:string ;
+    data:wdtLink wdt:Q242338 ;
+    :alsoKnownAs "Lady Katherine Brandram"^^xsd:string,
+        "Princess Aikaterini of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:Constantine_I_of_Greece,
+        data:Frederick_III-_German_Emperor,
+        data:George_I_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Frederick_III-_German_Emperor,
+        data:George_I_of_Greece,
+        data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal ;
+    :hasSex data:female ;
+    :hasSister data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isChildOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isDaughterOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isSiblingOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSisterOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Sophia of Prussia"^^xsd:string ;
+    data:posIndicesFull "256:273"^^xsd:string ;
+    data:wdtLink wdt:Q155822 ;
+    :alsoKnownAs "Queen Sophia of Greece"^^xsd:string,
+        "Queen Sophia, Queen Consort of Greece"^^xsd:string ;
+    :hasAncestor data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasDaughter data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :hasFather data:Frederick_III-_German_Emperor ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :hasRelation data:Frederick_III-_German_Emperor,
+        data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :isAncestorOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isAuntOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Frederick_III-_German_Emperor,
+        data:Victoria-_Princess_Royal ;
+    :isMotherOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isParentOf data:Helen_of_Greece_and_Denmark,
+        data:Princess_Katherine_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+

@@ -4,13 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_Duke_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :isBrotherOf data:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg .\n\ndata:Diane_dOrl%C3%A9ans a :Person,\n        :Woman ;\n    :isSisterOf data:Henri .\n\ndata:Henri a :Man,\n        :Person .\n\ndata:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg a :Person,\n        :Woman ;\n    :hasBirthYear 1934 ;\n    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;\n    :hasMother data:Rosa_of_Austria .\n\ndata:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Man,\n        :Person .\n\ndata:Rosa_of_Austria a :Person,\n        :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Patrick_Gregers_Richard_Windsor a :Man,\n        :Person ;\n    :alsoKnownAs \"Alex Ulster\"^^xsd:string ;\n    :hasBirthYear 1974 ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMarriageYear 2002 ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasRelation data:Claire_Booth .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman .\n\ndata:Claire_Booth a :Person,\n        :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person .\n\n"
     },
     {
         "graph_type": "data_graph",
         "iteration": 1,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl_Duke_of_W%C3%BCrttemberg a :Man,\n        :Person ;\n    :isBrotherOf data:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg .\n\ndata:Diane_dOrl%C3%A9ans a :Person,\n        :Woman ;\n    :isSisterOf data:Henri .\n\ndata:Henri a :Man,\n        :Person .\n\ndata:Marie_Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg a :Person,\n        :Woman ;\n    :hasBirthYear 1934 ;\n    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;\n    :hasMother data:Rosa_of_Austria .\n\ndata:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Man,\n        :Person .\n\ndata:Rosa_of_Austria a :Person,\n        :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alexander_Patrick_Gregers_Richard_Windsor a :Man,\n        :Person ;\n    :alsoKnownAs \"Alex Ulster\"^^xsd:string ;\n    :hasBirthYear 1974 ;\n    :hasFather data:Prince_Richard_Duke_of_Gloucester ;\n    :hasMarriageYear 2002 ;\n    :hasMother data:Birgitte_Duchess_of_Gloucester ;\n    :hasRelation data:Claire_Booth .\n\ndata:Birgitte_Duchess_of_Gloucester a :Person,\n        :Woman .\n\ndata:Claire_Booth a :Person,\n        :Woman .\n\ndata:Prince_Richard_Duke_of_Gloucester a :Man,\n        :Person .\n\n"
     }
 ]

@@ -1,0 +1,47 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+
+data: a owl:Ontology ;
+    owl:imports : .
+
+data:Christian_Duke__of_Oldenburg a :Person ;
+    rdfs:label "Christian Duke  of Oldenburg" ;
+    data:wdtLink wdt:Q5312748 ;
+    :alsoKnownAs "Christian Nicholas Udo Peter von Holstein-Gottorp, Herzog von Oldenburg",
+        "Christian Nikolaus Udo Peter",
+        "Christian von Oldenburg" ;
+    :hasSex data:male .
+
+data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Person ;
+    rdfs:label "Frederick Augustus II, Grand Duke of Oldenburg" ;
+    data:posIndicesFull "133:154" ;
+    data:posIndicesPart "397:402",
+        "464:469",
+        "470:474",
+        "634:638",
+        "642:651",
+        "669:673",
+        "725:734",
+        "834:843",
+        "847:856",
+        "924:928",
+        "932:941",
+        "966:975" ;
+    data:wdtLink wdt:Q62129 ;
+    :alsoKnownAs "Frederick Augustus II",
+        "Friedrich August von Oldenburg" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+

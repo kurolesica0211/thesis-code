@@ -85,29 +85,27 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Ludwig Rudolf of Hanover, of Great Britain and Ireland, Duke of Brunswick and Lüneburg (German: Ludwig Rudolf Georg Wilhelm Philipp Friedrich Wolrad Maximilian Prinz von Hannover) (21 November 1955 – 29 November 1988) was a member of the House of Hanover and a music producer.
-Early life and career
+Marina Victoria Alexandra Ogilvy (born 31 July 1966) is the younger child and only daughter of Sir Angus Ogilvy and Princess Alexandra of Kent.
+Early life
 
-Ludwig Rudolf was born in Hanover, Lower Saxony, Germany, the third child and second son of Ernst August, Prince of Hanover, Hereditary Prince of Brunswick (1914–1987) and his wife, Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg (1925–1980).
-Ludwig Rudolf was a great-great-great-great-grandson of George III of the United Kingdom and a great-grandson of Wilhelm II, German Emperor.
-Ludwig Rudolf had trained to become a music producer in Los Angeles and London.
-Marriage and death
+Marina was born at Thatched House Lodge in Richmond Park, London, the home of her parents, on 31 July 1966.
+She was named after her maternal grandmother, Princess Marina of Greece and Denmark, who was also a first cousin of Prince Philip, Duke of Edinburgh.
+She has an elder brother, James Ogilvy, who was born in 1964.
+Marina was educated at St Mary's School, Wantage.
+Marriage and children
 
-Having obtained the consent of Elizabeth II by Order in Council on 15 September 1987 pursuant to the Royal Marriages Act 1772, Ludwig Rudolf, a Lutheran, married the Roman Catholic Countess Isabella Maria von Thurn und Valsassina-Como-Vercelli (born September 8 1962 in Gmunden, Upper Austria), a former fashion model at her father's ancestral Austrian estate, Bleiburg Castle, Carinthia on 4 October 1987.
-She was the daughter of Count Ariprand von Thurn und Valsassina-Como-Vercelli (1925–1996), whose family, an Austrian branch of the Della Torre dynasty, ruled Milan in the 13th and 14th century, and his wife, Princess Maria Perpetua Euphemia von Auersperg (born 1929).
-In the early hours of 29 November 1988, after the couple had entertained guests at their home, Königinvilla (The Queen's Villa) in Gmunden, a house left to them by Ludwig Rudolf's elder brother Ernst August, the prince went to the bedroom where his wife had retired before midnight, and found Isabella sprawled fully dressed across their bed.
-Ludwig Rudolf, who had been investigated previously on suspicion of illegal drug purchases, placed a call to his brother, Ernst August, in London, imploring him to take care of the couple's 10-month-old son.
-As authorities removed Isabella's body and investigated the scene, discovering syringes, cocaine and heroin, Ludwig Rudolf slipped away.
-Hours later, the prince was found in his car near his family's hunting lodge several miles away, on Lake Traun.
-Ludwig Rudolf and Isabelle were interred on 2 December 1988 at Grünau
-Custody of their infant son Otto Heinrich was awarded, contrary to the expressed wishes of Ludwig Rudolf, to the child's maternal grandparents.
-He grew up at their castle, Schloss Bleiburg, in Austria, and then studied art at Braunschweig University of Art in Brunswick (Braunschweig).
+In November 1989, Marina announced that she was pregnant by her boyfriend Paul Julian Mowatt (born in Hendon, 28 November 1962), a freelance photographer.
+Marina's parents denied her allegations and said that they loved her, had not cut her off and that she was welcome at home any time.
+Marina married Mowatt in Richmond Park, Surrey, on 2 February 1990, wearing a red velvet bolero with gold trim, with a black dress underneath, and a black hat.
+They had two children: Zenouska May Mowatt (born 26 May 1990), and Christian Alexander Mowatt (born 4 June 1993) and divorced in October 1997.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -123,39 +121,9 @@ He grew up at their castle, Schloss Bleiburg, in Austria, and then studied art a
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -170,6 +138,23 @@ He grew up at their castle, Schloss Bleiburg, in Austria, and then studied art a
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -187,6 +172,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -254,29 +254,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -285,6 +277,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -297,6 +297,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -305,17 +307,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -343,6 +347,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -358,211 +446,134 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (76d916b6-5ecf-42ab-baff-98bd958cd936)
- Call ID: 76d916b6-5ecf-42ab-baff-98bd958cd936
+  AssignClass (0709d9ce-fa3d-4bbc-b826-f3ae53726c8c)
+ Call ID: 0709d9ce-fa3d-4bbc-b826-f3ae53726c8c
   Args:
+    type: :Woman
+    source: Marina_Victoria_Alexandra_Ogilvy
+  AssignClass (93217499-86fa-4255-adc0-e9bbe4c95da5)
+ Call ID: 93217499-86fa-4255-adc0-e9bbe4c95da5
+  Args:
+    source: Sir_Angus_Ogilvy
     type: :Man
-    source: LudwigRudolfOfHanover
-  AssignClass (9414bd74-f527-4f53-ac82-39ad58e7afde)
- Call ID: 9414bd74-f527-4f53-ac82-39ad58e7afde
+  AssignClass (daa6bac0-05c8-40ad-aac6-fdec8188a86b)
+ Call ID: daa6bac0-05c8-40ad-aac6-fdec8188a86b
   Args:
-    type: :Person
-    source: LudwigRudolfOfHanover
-  AssignClass (d821ced0-10b1-46fc-9057-d4b6005d5943)
- Call ID: d821ced0-10b1-46fc-9057-d4b6005d5943
+    type: :Woman
+    source: Princess_Alexandra_of_Kent
+  AssignClass (ab7272fb-a2c4-46dd-99a5-563f74246a5c)
+ Call ID: ab7272fb-a2c4-46dd-99a5-563f74246a5c
   Args:
-    type: :Male
-    source: Male
-  AddTriple (b50b99c4-d690-458b-81b3-eb832dd98b6c)
- Call ID: b50b99c4-d690-458b-81b3-eb832dd98b6c
+    source: James_Ogilvy
+    type: :Man
+  AssignClass (2c31f46c-b63f-4aba-bb18-5c1e01c020c5)
+ Call ID: 2c31f46c-b63f-4aba-bb18-5c1e01c020c5
   Args:
-    target: :Male
-    source: LudwigRudolfOfHanover
-    relation: :hasSex
-  AddLiteral (9cf376cd-a579-4c13-99cc-3867bb213489)
- Call ID: 9cf376cd-a579-4c13-99cc-3867bb213489
+    source: Paul_Julian_Mowatt
+    type: :Man
+  AssignClass (89d1bdda-c4b3-4874-a092-eb0801c6813f)
+ Call ID: 89d1bdda-c4b3-4874-a092-eb0801c6813f
   Args:
-    source: LudwigRudolfOfHanover
+    type: :Woman
+    source: Zenouska_May_Mowatt
+  AssignClass (dfde0cb2-4b4b-4ca1-998e-ee367668997b)
+ Call ID: dfde0cb2-4b4b-4ca1-998e-ee367668997b
+  Args:
+    source: Christian_Alexander_Mowatt
+    type: :Man
+  AddLiteral (dbc06acf-ba12-4daa-8177-d7117299096d)
+ Call ID: dbc06acf-ba12-4daa-8177-d7117299096d
+  Args:
+    literal_value: 1966
+    source: Marina_Victoria_Alexandra_Ogilvy
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddTriple (fa6e9021-dafd-499a-9cc7-05042351a7e7)
+ Call ID: fa6e9021-dafd-499a-9cc7-05042351a7e7
+  Args:
+    target: Sir_Angus_Ogilvy
+    source: Marina_Victoria_Alexandra_Ogilvy
+    relation: :hasFather
+  AddTriple (e2eb373d-5897-4d57-a26c-064fa2017aca)
+ Call ID: e2eb373d-5897-4d57-a26c-064fa2017aca
+  Args:
+    relation: :hasMother
+    source: Marina_Victoria_Alexandra_Ogilvy
+    target: Princess_Alexandra_of_Kent
+  AddTriple (8ea26499-fef4-43b6-a735-3592a7186032)
+ Call ID: 8ea26499-fef4-43b6-a735-3592a7186032
+  Args:
+    target: James_Ogilvy
+    relation: :hasBrother
+    source: Marina_Victoria_Alexandra_Ogilvy
+  AddLiteral (92b5406a-b0c6-4e30-864e-8bba0dfff010)
+ Call ID: 92b5406a-b0c6-4e30-864e-8bba0dfff010
+  Args:
     relation: :hasBirthYear
     literal_type: xsd:integer
-    literal_value: 1955
-  AddLiteral (3be19331-90dc-4aa1-ad72-048b14ff083e)
- Call ID: 3be19331-90dc-4aa1-ad72-048b14ff083e
+    source: James_Ogilvy
+    literal_value: 1964
+  AddLiteral (3b4d1f95-52c4-4305-a554-90b844ab9cde)
+ Call ID: 3b4d1f95-52c4-4305-a554-90b844ab9cde
   Args:
-    source: LudwigRudolfOfHanover
-    relation: :hasDeathYear
+    source: Paul_Julian_Mowatt
+    relation: :hasBirthYear
     literal_type: xsd:integer
-    literal_value: 1988
-  AssignClass (b718799f-2267-4ed5-ba13-0d1cb480f678)
- Call ID: b718799f-2267-4ed5-ba13-0d1cb480f678
+    literal_value: 1962
+  AddLiteral (00738488-e85d-4a5a-bea7-3930c5641734)
+ Call ID: 00738488-e85d-4a5a-bea7-3930c5641734
   Args:
-    type: :Man
-    source: ErnstAugustPrinceOfHanover
-  AssignClass (d3f8becc-d3f7-4729-b9e5-c2004ec4dd55)
- Call ID: d3f8becc-d3f7-4729-b9e5-c2004ec4dd55
-  Args:
-    type: :Person
-    source: ErnstAugustPrinceOfHanover
-  AddTriple (c99a2a43-e427-4952-bdfb-71498051fed0)
- Call ID: c99a2a43-e427-4952-bdfb-71498051fed0
-  Args:
-    relation: :isFatherOf
-    source: ErnstAugustPrinceOfHanover
-    target: :LudwigRudolfOfHanover
-  AssignClass (13496ec3-4c5d-421c-973b-2d211555fcd6)
- Call ID: 13496ec3-4c5d-421c-973b-2d211555fcd6
-  Args:
-    type: :Woman
-    source: OrtrudOfSchleswigHolsteinSonderburgGlucksburg
-  AssignClass (7b40ed26-37cc-40c0-a579-e8c35b54748a)
- Call ID: 7b40ed26-37cc-40c0-a579-e8c35b54748a
-  Args:
-    type: :Person
-    source: OrtrudOfSchleswigHolsteinSonderburgGlucksburg
-  AddTriple (ba7cb0cc-6e45-4ddd-9b27-a05bbd8d00ab)
- Call ID: ba7cb0cc-6e45-4ddd-9b27-a05bbd8d00ab
-  Args:
-    relation: :isMotherOf
-    source: OrtrudOfSchleswigHolsteinSonderburgGlucksburg
-    target: :LudwigRudolfOfHanover
-  AssignClass (65982fe5-6bad-4cef-a078-da3d488f4977)
- Call ID: 65982fe5-6bad-4cef-a078-da3d488f4977
-  Args:
-    type: :Woman
-    source: IsabellaMariaVonThurnUndValsassinaComoVercelli
-  AssignClass (3ed1c665-7ed3-44d8-82d0-331ed2a08c6b)
- Call ID: 3ed1c665-7ed3-44d8-82d0-331ed2a08c6b
-  Args:
-    type: :Person
-    source: IsabellaMariaVonThurnUndValsassinaComoVercelli
-  AddTriple (44d20f8a-ead3-4e92-9aa6-24cf87af01dc)
- Call ID: 44d20f8a-ead3-4e92-9aa6-24cf87af01dc
-  Args:
-    relation: :hasSex
-    source: IsabellaMariaVonThurnUndValsassinaComoVercelli
-    target: :Female
-  AddLiteral (90f923e3-e8e6-4747-9ede-d06c05d7ea22)
- Call ID: 90f923e3-e8e6-4747-9ede-d06c05d7ea22
-  Args:
-    source: LudwigRudolfOfHanover
+    literal_type: xsd:integer
     relation: :hasMarriageYear
-    literal_value: 1987
-    literal_type: xsd:integer
-  AddTriple (85df7203-ea10-4151-ba96-b580a93a6525)
- Call ID: 85df7203-ea10-4151-ba96-b580a93a6525
+    source: Marina_Victoria_Alexandra_Ogilvy
+    literal_value: 1990
+  AddTriple (73037ae8-5a5d-404e-9995-73c17f29d4c4)
+ Call ID: 73037ae8-5a5d-404e-9995-73c17f29d4c4
   Args:
+    source: Marina_Victoria_Alexandra_Ogilvy
     relation: :hasRelation
-    source: LudwigRudolfOfHanover
-    target: :IsabellaMariaVonThurnUndValsassinaComoVercelli
-  AssignClass (11bf494f-1452-40ed-810b-381f3a00a6d8)
- Call ID: 11bf494f-1452-40ed-810b-381f3a00a6d8
+    target: Paul_Julian_Mowatt
+  AddTriple (9d066314-bb07-474a-8d91-bc112efb84e1)
+ Call ID: 9d066314-bb07-474a-8d91-bc112efb84e1
   Args:
-    type: :Man
-    source: AriprandVonThurnUndValsassinaComoVercelli
-  AssignClass (b6c56379-1406-42cc-a3aa-2140c72bfa37)
- Call ID: b6c56379-1406-42cc-a3aa-2140c72bfa37
+    source: Marina_Victoria_Alexandra_Ogilvy
+    relation: :hasChild
+    target: Zenouska_May_Mowatt
+  AddTriple (5ae234bb-0389-4417-bd90-522227e62c4c)
+ Call ID: 5ae234bb-0389-4417-bd90-522227e62c4c
   Args:
-    type: :Person
-    source: AriprandVonThurnUndValsassinaComoVercelli
-  AddTriple (673e5f26-dc40-4ad0-a67d-2e30a1ec23cd)
- Call ID: 673e5f26-dc40-4ad0-a67d-2e30a1ec23cd
+    relation: :hasChild
+    source: Paul_Julian_Mowatt
+    target: Zenouska_May_Mowatt
+  AddLiteral (4b7aab29-9035-45e0-afe5-d97c3bceb19d)
+ Call ID: 4b7aab29-9035-45e0-afe5-d97c3bceb19d
   Args:
-    target: :IsabellaMariaVonThurnUndValsassinaComoVercelli
-    relation: :isFatherOf
-    source: AriprandVonThurnUndValsassinaComoVercelli
-  AssignClass (c4060f31-f860-4ae7-981a-0782b9b7e20e)
- Call ID: c4060f31-f860-4ae7-981a-0782b9b7e20e
+    source: Zenouska_May_Mowatt
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1990
+  AddTriple (b2c2c46e-c93b-47a3-92f0-1cb901d070a7)
+ Call ID: b2c2c46e-c93b-47a3-92f0-1cb901d070a7
   Args:
-    type: :Woman
-    source: MariaPerpetuaEuphemiaVonAuersperg
-  AssignClass (cd716957-ddd5-4a53-a214-0be3625b7fc4)
- Call ID: cd716957-ddd5-4a53-a214-0be3625b7fc4
+    source: Marina_Victoria_Alexandra_Ogilvy
+    relation: :hasChild
+    target: Christian_Alexander_Mowatt
+  AddTriple (b84a05ec-e02a-487a-88f6-a7ec040a52ae)
+ Call ID: b84a05ec-e02a-487a-88f6-a7ec040a52ae
   Args:
-    type: :Person
-    source: MariaPerpetuaEuphemiaVonAuersperg
-  AddTriple (0c3ef9b3-f282-400f-b535-5bc73a8c813f)
- Call ID: 0c3ef9b3-f282-400f-b535-5bc73a8c813f
+    source: Paul_Julian_Mowatt
+    relation: :hasChild
+    target: Christian_Alexander_Mowatt
+  AddLiteral (27cf3078-088d-456f-ba21-55238416aa82)
+ Call ID: 27cf3078-088d-456f-ba21-55238416aa82
   Args:
-    target: :IsabellaMariaVonThurnUndValsassinaComoVercelli
-    relation: :isMotherOf
-    source: MariaPerpetuaEuphemiaVonAuersperg
-  AssignClass (cd29e984-9f86-4bda-a217-4e755adde7c4)
- Call ID: cd29e984-9f86-4bda-a217-4e755adde7c4
+    literal_value: 1993
+    source: Christian_Alexander_Mowatt
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  Finish (12954c1d-1299-45f8-b72c-a1c31d802a79)
+ Call ID: 12954c1d-1299-45f8-b72c-a1c31d802a79
   Args:
-    type: :Man
-    source: OttoHeinrich
-  AssignClass (d897bd2d-5d03-47cb-89ec-fd1dc2dee875)
- Call ID: d897bd2d-5d03-47cb-89ec-fd1dc2dee875
-  Args:
-    type: :Person
-    source: OttoHeinrich
-  AddTriple (17ab7a29-2009-4e0c-a967-f134ed142fd1)
- Call ID: 17ab7a29-2009-4e0c-a967-f134ed142fd1
-  Args:
-    target: :LudwigRudolfOfHanover
-    relation: :isSonOf
-    source: OttoHeinrich
-  AddTriple (2237d1df-37b1-4666-b526-56ff5d856de5)
- Call ID: 2237d1df-37b1-4666-b526-56ff5d856de5
-  Args:
-    target: :IsabellaMariaVonThurnUndValsassinaComoVercelli
-    source: OttoHeinrich
-    relation: :isSonOf
-  AssignClass (6dcf2096-0b94-4354-88f4-d255f8c55896)
- Call ID: 6dcf2096-0b94-4354-88f4-d255f8c55896
-  Args:
-    type: :Man
-    source: ErnstAugustElderBrother
-  AssignClass (f4b4fab0-a8ab-40ca-ad77-b21621e5c6b5)
- Call ID: f4b4fab0-a8ab-40ca-ad77-b21621e5c6b5
-  Args:
-    type: :Person
-    source: ErnstAugustElderBrother
-  AddTriple (a186629f-0fab-4dc0-a766-b2508aa2560c)
- Call ID: a186629f-0fab-4dc0-a766-b2508aa2560c
-  Args:
-    target: :LudwigRudolfOfHanover
-    source: ErnstAugustElderBrother
-    relation: :isBrotherOf
-  Finish (a3788f76-4868-4774-ba05-f22da1f3dd77)
- Call ID: a3788f76-4868-4774-ba05-f22da1f3dd77
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -651,44 +662,33 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:AriprandVonThurnUndValsassinaComoVercelli a :Man,
-          :Person ;
-      :isFatherOf data:IsabellaMariaVonThurnUndValsassinaComoVercelli .
+  data:Marina_Victoria_Alexandra_Ogilvy a :Woman ;
+      :hasBirthYear 1966 ;
+      :hasBrother data:James_Ogilvy ;
+      :hasChild data:Christian_Alexander_Mowatt,
+          data:Zenouska_May_Mowatt ;
+      :hasFather data:Sir_Angus_Ogilvy ;
+      :hasMarriageYear 1990 ;
+      :hasMother data:Princess_Alexandra_of_Kent ;
+      :hasRelation data:Paul_Julian_Mowatt .
 
-  data:ErnstAugustElderBrother a :Man,
-          :Person ;
-      :isBrotherOf data:LudwigRudolfOfHanover .
+  data:James_Ogilvy a :Man ;
+      :hasBirthYear 1964 .
 
-  data:ErnstAugustPrinceOfHanover a :Man,
-          :Person ;
-      :isFatherOf data:LudwigRudolfOfHanover .
+  data:Paul_Julian_Mowatt a :Man ;
+      :hasBirthYear 1962 ;
+      :hasChild data:Christian_Alexander_Mowatt,
+          data:Zenouska_May_Mowatt .
 
-  data:MariaPerpetuaEuphemiaVonAuersperg a :Person,
-          :Woman ;
-      :isMotherOf data:IsabellaMariaVonThurnUndValsassinaComoVercelli .
+  data:Princess_Alexandra_of_Kent a :Woman .
 
-  data:OrtrudOfSchleswigHolsteinSonderburgGlucksburg a :Person,
-          :Woman ;
-      :isMotherOf data:LudwigRudolfOfHanover .
+  data:Sir_Angus_Ogilvy a :Man .
 
-  data:OttoHeinrich a :Man,
-          :Person ;
-      :isSonOf data:IsabellaMariaVonThurnUndValsassinaComoVercelli,
-          data:LudwigRudolfOfHanover .
+  data:Christian_Alexander_Mowatt a :Man ;
+      :hasBirthYear 1993 .
 
-  data:Male a :Male .
-
-  data:IsabellaMariaVonThurnUndValsassinaComoVercelli a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:LudwigRudolfOfHanover a :Man,
-          :Person ;
-      :hasBirthYear 1955 ;
-      :hasDeathYear 1988 ;
-      :hasMarriageYear 1987 ;
-      :hasRelation data:IsabellaMariaVonThurnUndValsassinaComoVercelli ;
-      :hasSex data:Male .
+  data:Zenouska_May_Mowatt a :Woman ;
+      :hasBirthYear 1990 .
 
 
 
@@ -700,158 +700,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (42dded5c-182e-4b14-be1f-9bff95828f71)
- Call ID: 42dded5c-182e-4b14-be1f-9bff95828f71
+  ValidateShacl (080500fe-5a17-48f1-b4fc-c48d82719db7)
+ Call ID: 080500fe-5a17-48f1-b4fc-c48d82719db7
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:6
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'IsabellaMariaVonThurnUndValsassinaComoVercelli' used as an object for the 'isSonOf' relationship does not have the required ':Ancestor' class.
+      The node Sir_Angus_Ogilvy is missing the required class :Ancestor, which is necessary for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to IsabellaMariaVonThurnUndValsassinaComoVercelli.
+      AssignClass(Sir_Angus_Ogilvy, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'LudwigRudolfOfHanover' used as an object for the 'isSonOf' relationship does not have the required ':Ancestor' class.
+      The node Princess_Alexandra_of_Kent is missing the required class :Ancestor, which is necessary for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to LudwigRudolfOfHanover.
+      AssignClass(Princess_Alexandra_of_Kent, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' linked via 'hasSex' is missing the required ':Sex' class assignment.
+      The node Sir_Angus_Ogilvy is missing the required class :Ancestor, which is necessary for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Sex to Female.
+      AssignClass(Sir_Angus_Ogilvy, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'IsabellaMariaVonThurnUndValsassinaComoVercelli' used as an object for the 'isSonOf' relationship does not have the required ':Ancestor' class.
+      The node Princess_Alexandra_of_Kent is missing the required class :Ancestor, which is necessary for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to IsabellaMariaVonThurnUndValsassinaComoVercelli.
+      AssignClass(Princess_Alexandra_of_Kent, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'LudwigRudolfOfHanover' used as an object for the 'isSonOf' relationship does not have the required ':Ancestor' class.
+      The node Sir_Angus_Ogilvy is missing the required class :Ancestor, which is necessary for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to LudwigRudolfOfHanover.
+      AssignClass(Sir_Angus_Ogilvy, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Female' linked via 'hasSex' is missing the required ':Sex' class assignment.
+      The node Princess_Alexandra_of_Kent is missing the required class :Ancestor, which is necessary for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Sex to Female.
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' linked via 'hasSex' is missing the required ':Sex' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Sex to Female.
-
-
-  Violation [8]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
-    LLM-provided explanation of the violation:
-      The entity 'MariaPerpetuaEuphemiaVonAuersperg' is used as a subject of 'isMotherOf' but lacks the mandatory ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to MariaPerpetuaEuphemiaVonAuersperg.
-
-
-  Violation [9]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
-    LLM-provided explanation of the violation:
-      The entity 'OrtrudOfSchleswigHolsteinSonderburgGlucksburg' is used as a subject of 'isMotherOf' but lacks the mandatory ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to OrtrudOfSchleswigHolsteinSonderburgGlucksburg.
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' linked via 'hasSex' is missing the required ':Sex' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Sex to Female.
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'IsabellaMariaVonThurnUndValsassinaComoVercelli' used as an object for the 'isSonOf' relationship does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to IsabellaMariaVonThurnUndValsassinaComoVercelli.
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'LudwigRudolfOfHanover' used as an object for the 'isSonOf' relationship does not have the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to LudwigRudolfOfHanover.
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' linked via 'hasSex' is missing the required ':Sex' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Sex to Female.
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' linked via 'hasSex' is missing the required ':Sex' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Sex to Female.
-
-
-  Violation [15]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The entity 'AriprandVonThurnUndValsassinaComoVercelli' is used as a subject of 'isFatherOf' but lacks the mandatory ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to AriprandVonThurnUndValsassinaComoVercelli.
-
-
-  Violation [16]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The entity 'ErnstAugustPrinceOfHanover' is used as a subject of 'isFatherOf' but lacks the mandatory ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Ancestor to ErnstAugustPrinceOfHanover.
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' linked via 'hasSex' is missing the required ':Sex' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Sex to Female.
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' linked via 'hasSex' is missing the required ':Sex' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add :Sex to Female.
+      AssignClass(Princess_Alexandra_of_Kent, :Ancestor)
 
 
 
@@ -860,56 +764,29 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (dcea36d3-50a2-49a1-a8eb-5bf985ad6bff)
- Call ID: dcea36d3-50a2-49a1-a8eb-5bf985ad6bff
+  AssignClass (cea6595b-e205-426c-85e1-999cd02da2b4)
+ Call ID: cea6595b-e205-426c-85e1-999cd02da2b4
+  Args:
+    source: Sir_Angus_Ogilvy
+    type: :Ancestor
+  AssignClass (e5c05561-512c-4cd9-89d5-899be776be25)
+ Call ID: e5c05561-512c-4cd9-89d5-899be776be25
+  Args:
+    source: Princess_Alexandra_of_Kent
+    type: :Ancestor
+  AssignClass (3f2f5794-7de4-4bfe-b0bf-fb7da8a11964)
+ Call ID: 3f2f5794-7de4-4bfe-b0bf-fb7da8a11964
+  Args:
+    source: Marina_Victoria_Alexandra_Ogilvy
+    type: :Ancestor
+  AssignClass (f205f70d-335f-4950-ab76-a622092744ff)
+ Call ID: f205f70d-335f-4950-ab76-a622092744ff
   Args:
     type: :Ancestor
-    source: IsabellaMariaVonThurnUndValsassinaComoVercelli
-  AssignClass (098f2278-1b34-4897-b64e-6c7bd0f7e5fa)
- Call ID: 098f2278-1b34-4897-b64e-6c7bd0f7e5fa
+    source: Paul_Julian_Mowatt
+  ValidateShacl (946ad9f8-4dd6-4919-9c1f-f8e176f1c1dd)
+ Call ID: 946ad9f8-4dd6-4919-9c1f-f8e176f1c1dd
   Args:
-    source: LudwigRudolfOfHanover
-    type: :Ancestor
-  AssignClass (f7f1ecbd-5c2b-447c-9f9f-ea7fda03867d)
- Call ID: f7f1ecbd-5c2b-447c-9f9f-ea7fda03867d
-  Args:
-    type: :Sex
-    source: Female
-  AssignClass (1012f73a-2720-424a-9571-e2257d0bdb9c)
- Call ID: 1012f73a-2720-424a-9571-e2257d0bdb9c
-  Args:
-    source: MariaPerpetuaEuphemiaVonAuersperg
-    type: :Ancestor
-  AssignClass (d73fd737-2ae1-4a63-bacc-f87506e286e3)
- Call ID: d73fd737-2ae1-4a63-bacc-f87506e286e3
-  Args:
-    type: :Ancestor
-    source: OrtrudOfSchleswigHolsteinSonderburgGlucksburg
-  AssignClass (f3eed87b-c7a0-4cac-b3ab-14faf3cbf093)
- Call ID: f3eed87b-c7a0-4cac-b3ab-14faf3cbf093
-  Args:
-    type: :Ancestor
-    source: AriprandVonThurnUndValsassinaComoVercelli
-  AssignClass (97929888-fd06-4d38-91a4-5866aff28694)
- Call ID: 97929888-fd06-4d38-91a4-5866aff28694
-  Args:
-    source: ErnstAugustPrinceOfHanover
-    type: :Ancestor
-  ValidateShacl (ec5383f0-22e1-4327-8a43-b6c6005151ad)
- Call ID: ec5383f0-22e1-4327-8a43-b6c6005151ad
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -930,52 +807,37 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:AriprandVonThurnUndValsassinaComoVercelli a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:IsabellaMariaVonThurnUndValsassinaComoVercelli .
-
-  data:ErnstAugustElderBrother a :Man,
-          :Person ;
-      :isBrotherOf data:LudwigRudolfOfHanover .
-
-  data:ErnstAugustPrinceOfHanover a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:LudwigRudolfOfHanover .
-
-  data:MariaPerpetuaEuphemiaVonAuersperg a :Ancestor,
-          :Person,
+  data:Marina_Victoria_Alexandra_Ogilvy a :Ancestor,
           :Woman ;
-      :isMotherOf data:IsabellaMariaVonThurnUndValsassinaComoVercelli .
+      :hasBirthYear 1966 ;
+      :hasBrother data:James_Ogilvy ;
+      :hasChild data:Christian_Alexander_Mowatt,
+          data:Zenouska_May_Mowatt ;
+      :hasFather data:Sir_Angus_Ogilvy ;
+      :hasMarriageYear 1990 ;
+      :hasMother data:Princess_Alexandra_of_Kent ;
+      :hasRelation data:Paul_Julian_Mowatt .
 
-  data:OrtrudOfSchleswigHolsteinSonderburgGlucksburg a :Ancestor,
-          :Person,
-          :Woman ;
-      :isMotherOf data:LudwigRudolfOfHanover .
+  data:James_Ogilvy a :Man ;
+      :hasBirthYear 1964 .
 
-  data:OttoHeinrich a :Man,
-          :Person ;
-      :isSonOf data:IsabellaMariaVonThurnUndValsassinaComoVercelli,
-          data:LudwigRudolfOfHanover .
+  data:Paul_Julian_Mowatt a :Ancestor,
+          :Man ;
+      :hasBirthYear 1962 ;
+      :hasChild data:Christian_Alexander_Mowatt,
+          data:Zenouska_May_Mowatt .
 
-  data:Female a :Sex .
+  data:Princess_Alexandra_of_Kent a :Ancestor,
+          :Woman .
 
-  data:Male a :Male .
+  data:Sir_Angus_Ogilvy a :Ancestor,
+          :Man .
 
-  data:IsabellaMariaVonThurnUndValsassinaComoVercelli a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
+  data:Christian_Alexander_Mowatt a :Man ;
+      :hasBirthYear 1993 .
 
-  data:LudwigRudolfOfHanover a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1955 ;
-      :hasDeathYear 1988 ;
-      :hasMarriageYear 1987 ;
-      :hasRelation data:IsabellaMariaVonThurnUndValsassinaComoVercelli ;
-      :hasSex data:Male .
+  data:Zenouska_May_Mowatt a :Woman ;
+      :hasBirthYear 1990 .
 
 
 
@@ -987,6 +849,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (7da8b9f0-cb92-4d91-9a58-c419cdac9fb0)
- Call ID: 7da8b9f0-cb92-4d91-9a58-c419cdac9fb0
+  Finish (7a41b582-37fe-4648-839c-2f22fbd2a54e)
+ Call ID: 7a41b582-37fe-4648-839c-2f22fbd2a54e
   Args:

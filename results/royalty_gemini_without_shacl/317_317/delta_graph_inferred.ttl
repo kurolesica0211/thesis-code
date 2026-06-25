@@ -1,0 +1,364 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Annemarie_Gualth%C3%A9rie_van_Weezel a :Woman ;
+    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel,
+        data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Prince_Jaime,
+        data:Prince_Xavier,
+        data:Princess_Carolina,
+        data:Princess_Cecilia,
+        data:Princess_Irene,
+        data:Princess_Luisa,
+        data:Princess_Margarita ;
+    :hasSister data:Annemarie_Gualth%C3%A9rie_van_Weezel ;
+    :isBloodrelationOf data:Annemarie_Gualth%C3%A9rie_van_Weezel ;
+    :isSiblingOf data:Annemarie_Gualth%C3%A9rie_van_Weezel ;
+    :isSisterOf data:Annemarie_Gualth%C3%A9rie_van_Weezel .
+
+data:Princess_Irene a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Carlos ;
+    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel,
+        data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Prince_Jaime,
+        data:Prince_Xavier,
+        data:Princess_Carolina,
+        data:Princess_Cecilia,
+        data:Princess_Irene,
+        data:Princess_Luisa,
+        data:Princess_Margarita ;
+    :hasSister data:Princess_Irene ;
+    :hasSon data:Prince_Carlos ;
+    :isAncestorOf data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isAuntOf data:Prince_Carlos ;
+    :isBloodrelationOf data:Princess_Irene ;
+    :isMotherOf data:Prince_Carlos ;
+    :isParentOf data:Prince_Carlos ;
+    :isSiblingOf data:Princess_Irene ;
+    :isSisterOf data:Princess_Irene .
+
+data:Prince_Xavier a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Xavier ;
+    :hasChild data:Carlos_Hugo ;
+    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel,
+        data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Prince_Jaime,
+        data:Prince_Xavier,
+        data:Princess_Carolina,
+        data:Princess_Cecilia,
+        data:Princess_Irene,
+        data:Princess_Luisa,
+        data:Princess_Margarita ;
+    :hasSon data:Carlos_Hugo ;
+    :isAncestorOf data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isBloodrelationOf data:Prince_Xavier ;
+    :isBrotherOf data:Prince_Xavier ;
+    :isFatherOf data:Carlos_Hugo ;
+    :isParentOf data:Carlos_Hugo ;
+    :isSiblingOf data:Prince_Xavier ;
+    :isUncleOf data:Carlos_Hugo .
+
+data:Prince_Jaime a :Man ;
+    :hasBrother data:Prince_Carlos,
+        data:Prince_Jaime ;
+    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel,
+        data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Prince_Jaime,
+        data:Prince_Xavier,
+        data:Princess_Carolina,
+        data:Princess_Cecilia,
+        data:Princess_Irene,
+        data:Princess_Luisa,
+        data:Princess_Margarita ;
+    :hasSister data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :isBloodrelationOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :isBrotherOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :isSiblingOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :isUncleOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa .
+
+data:Princess_Carolina a :Woman ;
+    :hasBrother data:Prince_Carlos,
+        data:Prince_Jaime ;
+    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel,
+        data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Prince_Jaime,
+        data:Prince_Xavier,
+        data:Princess_Carolina,
+        data:Princess_Cecilia,
+        data:Princess_Irene,
+        data:Princess_Luisa,
+        data:Princess_Margarita ;
+    :hasSister data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :isAuntOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isBloodrelationOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :isSiblingOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :isSisterOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina,
+        data:Princess_Margarita .
+
+data:Princess_Margarita a :Woman ;
+    :hasBrother data:Prince_Carlos,
+        data:Prince_Jaime ;
+    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel,
+        data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Prince_Jaime,
+        data:Prince_Xavier,
+        data:Princess_Carolina,
+        data:Princess_Cecilia,
+        data:Princess_Irene,
+        data:Princess_Luisa,
+        data:Princess_Margarita ;
+    :hasSister data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :isAuntOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isBloodrelationOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :isSiblingOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :isSisterOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina,
+        data:Princess_Margarita .
+
+data:Carlos_Hugo a :Ancestor,
+        :Man ;
+    :hasAncestor data:Prince_Xavier ;
+    :hasBrother data:Carlos_Hugo ;
+    :hasChild data:Prince_Carlos ;
+    :hasFather data:Prince_Xavier ;
+    :hasParent data:Prince_Xavier ;
+    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel,
+        data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Prince_Jaime,
+        data:Prince_Xavier,
+        data:Princess_Carolina,
+        data:Princess_Cecilia,
+        data:Princess_Irene,
+        data:Princess_Luisa,
+        data:Princess_Margarita ;
+    :hasSon data:Prince_Carlos ;
+    :isAncestorOf data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isBloodrelationOf data:Carlos_Hugo ;
+    :isBrotherOf data:Carlos_Hugo ;
+    :isChildOf data:Prince_Xavier ;
+    :isFatherOf data:Prince_Carlos ;
+    :isParentOf data:Prince_Carlos ;
+    :isSiblingOf data:Carlos_Hugo ;
+    :isSonOf data:Prince_Xavier ;
+    :isUncleOf data:Prince_Carlos .
+
+data:Prince_Carlos_Enrique a :Man ;
+    :hasAncestor data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Xavier,
+        data:Princess_Irene ;
+    :hasBrother data:Prince_Carlos_Enrique ;
+    :hasFather data:Prince_Carlos ;
+    :hasParent data:Prince_Carlos ;
+    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel,
+        data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Prince_Jaime,
+        data:Prince_Xavier,
+        data:Princess_Carolina,
+        data:Princess_Cecilia,
+        data:Princess_Irene,
+        data:Princess_Luisa,
+        data:Princess_Margarita ;
+    :hasSister data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isBloodrelationOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isBrotherOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isChildOf data:Prince_Carlos ;
+    :isSiblingOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isSonOf data:Prince_Carlos .
+
+data:Princess_Cecilia a :Woman ;
+    :hasAncestor data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Xavier,
+        data:Princess_Irene ;
+    :hasBrother data:Prince_Carlos_Enrique ;
+    :hasFather data:Prince_Carlos ;
+    :hasParent data:Prince_Carlos ;
+    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel,
+        data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Prince_Jaime,
+        data:Prince_Xavier,
+        data:Princess_Carolina,
+        data:Princess_Cecilia,
+        data:Princess_Irene,
+        data:Princess_Luisa,
+        data:Princess_Margarita ;
+    :hasSister data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isBloodrelationOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isChildOf data:Prince_Carlos ;
+    :isDaughterOf data:Prince_Carlos ;
+    :isSiblingOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isSisterOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa .
+
+data:Princess_Luisa a :Woman ;
+    :hasAncestor data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Xavier,
+        data:Princess_Irene ;
+    :hasBrother data:Prince_Carlos_Enrique ;
+    :hasFather data:Prince_Carlos ;
+    :hasParent data:Prince_Carlos ;
+    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel,
+        data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Prince_Jaime,
+        data:Prince_Xavier,
+        data:Princess_Carolina,
+        data:Princess_Cecilia,
+        data:Princess_Irene,
+        data:Princess_Luisa,
+        data:Princess_Margarita ;
+    :hasSister data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isBloodrelationOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isChildOf data:Prince_Carlos ;
+    :isDaughterOf data:Prince_Carlos ;
+    :isSiblingOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isSisterOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa .
+
+data:Prince_Carlos a :Ancestor,
+        :Man ;
+    :hasAncestor data:Carlos_Hugo,
+        data:Prince_Xavier,
+        data:Princess_Irene ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:Prince_Carlos,
+        data:Prince_Jaime ;
+    :hasChild data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :hasDaughter data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :hasFather data:Carlos_Hugo ;
+    :hasMarriageYear 2010 ;
+    :hasMother data:Princess_Irene ;
+    :hasParent data:Carlos_Hugo,
+        data:Princess_Irene ;
+    :hasRelation data:Annemarie_Gualth%C3%A9rie_van_Weezel,
+        data:Carlos_Hugo,
+        data:Prince_Carlos,
+        data:Prince_Carlos_Enrique,
+        data:Prince_Jaime,
+        data:Prince_Xavier,
+        data:Princess_Carolina,
+        data:Princess_Cecilia,
+        data:Princess_Irene,
+        data:Princess_Luisa,
+        data:Princess_Margarita ;
+    :hasSister data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :hasSon data:Prince_Carlos_Enrique ;
+    :isAncestorOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isBloodrelationOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :isBrotherOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :isChildOf data:Carlos_Hugo,
+        data:Princess_Irene ;
+    :isFatherOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isParentOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa ;
+    :isSiblingOf data:Prince_Carlos,
+        data:Prince_Jaime,
+        data:Princess_Carolina,
+        data:Princess_Margarita ;
+    :isSonOf data:Carlos_Hugo,
+        data:Princess_Irene ;
+    :isUncleOf data:Prince_Carlos_Enrique,
+        data:Princess_Cecilia,
+        data:Princess_Luisa .
+

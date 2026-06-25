@@ -1,0 +1,517 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:HamiltonJosephKeyesOMalley a :Man,
+        :Person ;
+    :hasBrother data:HamiltonJosephKeyesOMalley ;
+    :hasMarriageYear 1941 ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :isBloodrelationOf data:HamiltonJosephKeyesOMalley ;
+    :isBrotherOf data:HamiltonJosephKeyesOMalley ;
+    :isSiblingOf data:HamiltonJosephKeyesOMalley .
+
+data:ClarenceArthurKemp a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ClarenceArthurKemp ;
+    :hasChild data:WilliamAlexanderKemp ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :hasSon data:WilliamAlexanderKemp ;
+    :isAncestorOf data:WilliamAlexanderKemp ;
+    :isBloodrelationOf data:ClarenceArthurKemp ;
+    :isBrotherOf data:ClarenceArthurKemp ;
+    :isFatherOf data:WilliamAlexanderKemp ;
+    :isParentOf data:WilliamAlexanderKemp ;
+    :isSiblingOf data:ClarenceArthurKemp ;
+    :isUncleOf data:WilliamAlexanderKemp .
+
+data:HelenJanetBallantyne a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:WilliamAlexanderKemp ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :hasSister data:HelenJanetBallantyne ;
+    :hasSon data:WilliamAlexanderKemp ;
+    :isAncestorOf data:WilliamAlexanderKemp ;
+    :isAuntOf data:WilliamAlexanderKemp ;
+    :isBloodrelationOf data:HelenJanetBallantyne ;
+    :isMotherOf data:WilliamAlexanderKemp ;
+    :isParentOf data:WilliamAlexanderKemp ;
+    :isSiblingOf data:HelenJanetBallantyne ;
+    :isSisterOf data:HelenJanetBallantyne .
+
+data:PrinceHenryOfBattenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceHenryOfBattenberg ;
+    :hasChild data:AlexanderMountbatten ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :hasSon data:AlexanderMountbatten ;
+    :isAncestorOf data:AlexanderMountbatten,
+        data:IrisMountbatten,
+        data:RobinAlexanderBryan ;
+    :isBloodrelationOf data:PrinceHenryOfBattenberg ;
+    :isBrotherOf data:PrinceHenryOfBattenberg ;
+    :isFatherOf data:AlexanderMountbatten ;
+    :isParentOf data:AlexanderMountbatten ;
+    :isSiblingOf data:PrinceHenryOfBattenberg ;
+    :isUncleOf data:AlexanderMountbatten .
+
+data:PrincessBeatrice a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AlexanderMountbatten ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :hasSister data:PrincessBeatrice ;
+    :hasSon data:AlexanderMountbatten ;
+    :isAncestorOf data:AlexanderMountbatten,
+        data:IrisMountbatten,
+        data:RobinAlexanderBryan ;
+    :isAuntOf data:AlexanderMountbatten ;
+    :isBloodrelationOf data:PrincessBeatrice ;
+    :isMotherOf data:AlexanderMountbatten ;
+    :isParentOf data:AlexanderMountbatten ;
+    :isSiblingOf data:PrincessBeatrice ;
+    :isSisterOf data:PrincessBeatrice .
+
+data:WilliamFrancisHenryDenison a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilliamFrancisHenryDenison ;
+    :hasChild data:IreneFrancesAdzaDenison ;
+    :hasDaughter data:IreneFrancesAdzaDenison ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :isAncestorOf data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:RobinAlexanderBryan ;
+    :isBloodrelationOf data:WilliamFrancisHenryDenison ;
+    :isBrotherOf data:WilliamFrancisHenryDenison ;
+    :isFatherOf data:IreneFrancesAdzaDenison ;
+    :isParentOf data:IreneFrancesAdzaDenison ;
+    :isSiblingOf data:WilliamFrancisHenryDenison ;
+    :isUncleOf data:IreneFrancesAdzaDenison .
+
+data:ZinniaRosemaryDenison a :Person,
+        :Woman ;
+    :hasAncestor data:HugoWilliamCecilDenison ;
+    :hasFather data:HugoWilliamCecilDenison ;
+    :hasParent data:HugoWilliamCecilDenison ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :hasSister data:ZinniaRosemaryDenison ;
+    :isBloodrelationOf data:ZinniaRosemaryDenison ;
+    :isChildOf data:HugoWilliamCecilDenison ;
+    :isDaughterOf data:HugoWilliamCecilDenison ;
+    :isSiblingOf data:ZinniaRosemaryDenison ;
+    :isSisterOf data:ZinniaRosemaryDenison .
+
+data:FrancisWilliamHenryFane a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FrancisWilliamHenryFane ;
+    :hasChild data:GraceAdelaideFane ;
+    :hasDaughter data:GraceAdelaideFane ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :isAncestorOf data:GraceAdelaideFane,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:RobinAlexanderBryan ;
+    :isBloodrelationOf data:FrancisWilliamHenryFane ;
+    :isBrotherOf data:FrancisWilliamHenryFane ;
+    :isFatherOf data:GraceAdelaideFane ;
+    :isParentOf data:GraceAdelaideFane ;
+    :isSiblingOf data:FrancisWilliamHenryFane ;
+    :isUncleOf data:GraceAdelaideFane .
+
+data:HugoWilliamCecilDenison a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:HugoWilliamCecilDenison ;
+    :hasChild data:ZinniaRosemaryDenison ;
+    :hasDaughter data:ZinniaRosemaryDenison ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :hasSister data:IreneFrancesAdzaDenison ;
+    :isAncestorOf data:ZinniaRosemaryDenison ;
+    :isBloodrelationOf data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison ;
+    :isBrotherOf data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison ;
+    :isFatherOf data:ZinniaRosemaryDenison ;
+    :isParentOf data:ZinniaRosemaryDenison ;
+    :isSiblingOf data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison ;
+    :isUncleOf data:IrisMountbatten,
+        data:ZinniaRosemaryDenison .
+
+data:WilliamAlexanderKemp a :Man,
+        :Person ;
+    :hasAncestor data:ClarenceArthurKemp,
+        data:HelenJanetBallantyne ;
+    :hasBirthYear 1921 ;
+    :hasBrother data:WilliamAlexanderKemp ;
+    :hasDeathYear 1991 ;
+    :hasFather data:ClarenceArthurKemp ;
+    :hasMarriageYear 1965 ;
+    :hasMother data:HelenJanetBallantyne ;
+    :hasParent data:ClarenceArthurKemp,
+        data:HelenJanetBallantyne ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :isBloodrelationOf data:WilliamAlexanderKemp ;
+    :isBrotherOf data:WilliamAlexanderKemp ;
+    :isChildOf data:ClarenceArthurKemp,
+        data:HelenJanetBallantyne ;
+    :isSiblingOf data:WilliamAlexanderKemp ;
+    :isSonOf data:ClarenceArthurKemp,
+        data:HelenJanetBallantyne .
+
+data:GraceAdelaideFane a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:FrancisWilliamHenryFane ;
+    :hasBirthYear 1860 ;
+    :hasChild data:IreneFrancesAdzaDenison ;
+    :hasDaughter data:IreneFrancesAdzaDenison ;
+    :hasDeathYear 1933 ;
+    :hasFather data:FrancisWilliamHenryFane ;
+    :hasParent data:FrancisWilliamHenryFane ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :hasSister data:GraceAdelaideFane ;
+    :isAncestorOf data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:RobinAlexanderBryan ;
+    :isAuntOf data:IreneFrancesAdzaDenison ;
+    :isBloodrelationOf data:GraceAdelaideFane ;
+    :isChildOf data:FrancisWilliamHenryFane ;
+    :isDaughterOf data:FrancisWilliamHenryFane ;
+    :isMotherOf data:IreneFrancesAdzaDenison ;
+    :isParentOf data:IreneFrancesAdzaDenison ;
+    :isSiblingOf data:GraceAdelaideFane ;
+    :isSisterOf data:GraceAdelaideFane .
+
+data:RobinAlexanderBryan a :Man,
+        :Person ;
+    :hasAncestor data:AlexanderMountbatten,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:WilliamFrancisHenryDenison ;
+    :hasBirthYear 1957 ;
+    :hasBrother data:RobinAlexanderBryan ;
+    :hasMother data:IrisMountbatten ;
+    :hasParent data:IrisMountbatten ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :isBloodrelationOf data:RobinAlexanderBryan ;
+    :isBrotherOf data:RobinAlexanderBryan ;
+    :isChildOf data:IrisMountbatten ;
+    :isSiblingOf data:RobinAlexanderBryan ;
+    :isSonOf data:IrisMountbatten .
+
+data:AlexanderMountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice ;
+    :hasBrother data:AlexanderMountbatten ;
+    :hasChild data:IrisMountbatten ;
+    :hasDaughter data:IrisMountbatten ;
+    :hasFather data:PrinceHenryOfBattenberg ;
+    :hasMother data:PrincessBeatrice ;
+    :hasParent data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :isAncestorOf data:IrisMountbatten,
+        data:RobinAlexanderBryan ;
+    :isBloodrelationOf data:AlexanderMountbatten ;
+    :isBrotherOf data:AlexanderMountbatten ;
+    :isChildOf data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice ;
+    :isFatherOf data:IrisMountbatten ;
+    :isParentOf data:IrisMountbatten ;
+    :isSiblingOf data:AlexanderMountbatten ;
+    :isSonOf data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice ;
+    :isUncleOf data:IrisMountbatten .
+
+data:IreneFrancesAdzaDenison a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:WilliamFrancisHenryDenison ;
+    :hasBirthYear 1890 ;
+    :hasBrother data:HugoWilliamCecilDenison ;
+    :hasChild data:IrisMountbatten ;
+    :hasDaughter data:IrisMountbatten ;
+    :hasDeathYear 1956 ;
+    :hasFather data:WilliamFrancisHenryDenison ;
+    :hasMother data:GraceAdelaideFane ;
+    :hasParent data:GraceAdelaideFane,
+        data:WilliamFrancisHenryDenison ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :hasSister data:IreneFrancesAdzaDenison ;
+    :isAncestorOf data:IrisMountbatten,
+        data:RobinAlexanderBryan ;
+    :isAuntOf data:IrisMountbatten,
+        data:ZinniaRosemaryDenison ;
+    :isBloodrelationOf data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison ;
+    :isChildOf data:GraceAdelaideFane,
+        data:WilliamFrancisHenryDenison ;
+    :isDaughterOf data:GraceAdelaideFane,
+        data:WilliamFrancisHenryDenison ;
+    :isMotherOf data:IrisMountbatten ;
+    :isParentOf data:IrisMountbatten ;
+    :isSiblingOf data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison ;
+    :isSisterOf data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison .
+
+data:IrisMountbatten a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:AlexanderMountbatten,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:IreneFrancesAdzaDenison,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:WilliamFrancisHenryDenison ;
+    :hasBirthYear 1920 ;
+    :hasChild data:RobinAlexanderBryan ;
+    :hasDeathYear 1982 ;
+    :hasFather data:AlexanderMountbatten ;
+    :hasMother data:IreneFrancesAdzaDenison ;
+    :hasParent data:AlexanderMountbatten,
+        data:IreneFrancesAdzaDenison ;
+    :hasRelation data:AlexanderMountbatten,
+        data:ClarenceArthurKemp,
+        data:FrancisWilliamHenryFane,
+        data:GraceAdelaideFane,
+        data:HamiltonJosephKeyesOMalley,
+        data:HelenJanetBallantyne,
+        data:HugoWilliamCecilDenison,
+        data:IreneFrancesAdzaDenison,
+        data:IrisMountbatten,
+        data:PrinceHenryOfBattenberg,
+        data:PrincessBeatrice,
+        data:RobinAlexanderBryan,
+        data:WilliamAlexanderKemp,
+        data:WilliamFrancisHenryDenison,
+        data:ZinniaRosemaryDenison ;
+    :hasSex data:Female ;
+    :hasSister data:IrisMountbatten ;
+    :hasSon data:RobinAlexanderBryan ;
+    :isAncestorOf data:RobinAlexanderBryan ;
+    :isAuntOf data:RobinAlexanderBryan ;
+    :isBloodrelationOf data:IrisMountbatten ;
+    :isChildOf data:AlexanderMountbatten,
+        data:IreneFrancesAdzaDenison ;
+    :isDaughterOf data:AlexanderMountbatten,
+        data:IreneFrancesAdzaDenison ;
+    :isMotherOf data:RobinAlexanderBryan ;
+    :isParentOf data:RobinAlexanderBryan ;
+    :isSiblingOf data:IrisMountbatten ;
+    :isSisterOf data:IrisMountbatten .
+

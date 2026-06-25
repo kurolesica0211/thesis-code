@@ -2,26 +2,19 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Archie_Harrison_Mountbatten-Windsor a :Male,
-        :Person ;
-    :hasBirthYear 2019 ;
-    :hasFather data:Prince_Harry%2C_Duke_of_Sussex ;
-    :hasMother data:Meghan%2C_Duchess_of_Sussex ;
-    :knownAs "Prince Archie of Sussex"^^xsd:string .
+data:Ludwig_von_W%C3%BCrttemberg a :Man ;
+    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasMother data:Archduchess_Rosa_of_Austria ;
+    :isBrotherOf data:Carl_Herzog_von_W%C3%BCrttemberg .
 
-data:Prince_Philip a :Male,
-        :Person .
+data:Carl_Herzog_von_W%C3%BCrttemberg a :Man ;
+    :hasBirthYear 1936 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg ;
+    :hasMother data:Archduchess_Rosa_of_Austria ;
+    :knownAs "Carl Maria Peter Ferdinand Philipp Albrecht Joseph Michael Pius Konrad Robert Ulrich"^^xsd:string .
 
-data:Queen_Elizabeth_II a :Person,
-        :Woman .
+data:Archduchess_Rosa_of_Austria a :Woman .
 
-data:King_Charles_III a :Male,
-        :Person .
-
-data:Meghan%2C_Duchess_of_Sussex a :Person,
-        :Woman .
-
-data:Prince_Harry%2C_Duke_of_Sussex a :Male,
-        :Person ;
-    :hasFather data:King_Charles_III .
+data:Philipp_Albrecht_Duke_of_W%C3%BCrttemberg a :Man .
 

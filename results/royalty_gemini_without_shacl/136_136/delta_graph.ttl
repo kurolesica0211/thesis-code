@@ -2,35 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:LeopoldMountbatten a :Man,
+data:Prince_Alexander_Ferdinand_of_Prussia a :Man,
         :Person ;
-    :alsoKnownAs "Sir Leopold Mountbatten"^^xsd:string ;
-    :formerlyKnownAs "Prince Leopold of Battenberg"^^xsd:string ;
-    :hasBirthYear 1889 ;
-    :hasDeathYear 1922 ;
-    :hasFather data:PrinceHenryOfBattenberg ;
-    :hasMother data:PrincessBeatrice ;
-    :knownAs "Lord Leopold Mountbatten"^^xsd:string .
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1985 ;
+    :hasFather data:Prince_August_Wilhelm_of_Prussia ;
+    :hasMarriageYear 1938 ;
+    :hasMother data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
+    :hasRelation data:Armgard_Weygand .
 
-data:JuliaPrincessOfBattenberg a :Person,
-        :Woman .
-
-data:PrinceAlbert a :Man,
-        :Person .
-
-data:PrinceAlexanderOfHesseAndByRhine a :Man,
-        :Person .
-
-data:PrinceHenryOfBattenberg a :Man,
-        :Person ;
-    :hasFather data:PrinceAlexanderOfHesseAndByRhine ;
-    :hasMother data:JuliaPrincessOfBattenberg .
-
-data:PrincessBeatrice a :Person,
+data:Armgard_Weygand a :Person,
         :Woman ;
-    :hasFather data:PrinceAlbert ;
-    :hasMother data:QueenVictoria .
+    :hasFather data:Major_Friedrich_Weygand ;
+    :hasMother data:Karla_Franziska_Oheim ;
+    :hasRelation data:Werner_Rosendorff .
 
-data:QueenVictoria a :Person,
+data:Kaiser_Wilhelm_II a :Man,
+        :Person .
+
+data:Karla_Franziska_Oheim a :Person,
         :Woman .
+
+data:Major_Friedrich_Weygand a :Man,
+        :Person .
+
+data:Prince_August_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasFather data:Kaiser_Wilhelm_II .
+
+data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Person,
+        :Woman .
+
+data:Werner_Rosendorff a :Man,
+        :Person .
 

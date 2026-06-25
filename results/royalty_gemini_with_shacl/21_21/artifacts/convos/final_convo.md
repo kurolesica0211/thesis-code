@@ -110,6 +110,8 @@ From 2010 to 2014, Mountbatten was in an extramarital relationship with Eugenie,
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -125,39 +127,9 @@ From 2010 to 2014, Mountbatten was in an extramarital relationship with Eugenie,
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -172,6 +144,23 @@ From 2010 to 2014, Mountbatten was in an extramarital relationship with Eugenie,
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -189,6 +178,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -256,29 +260,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -287,6 +283,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -299,6 +303,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -307,17 +313,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -345,6 +353,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -360,155 +452,303 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (32fd9063-77a3-4d6e-8ba4-142c685bce16)
- Call ID: 32fd9063-77a3-4d6e-8ba4-142c685bce16
+  AssignClass (91d00707-188c-482b-a6f0-1baadb47c7de)
+ Call ID: 91d00707-188c-482b-a6f0-1baadb47c7de
   Args:
-    source: Norton_Louis_Philip_Knatchbull
+    source: :Norton_Louis_Philip_Knatchbull
     type: :Man
-  AssignClass (c387396c-8bbc-4d7a-a894-e3601c589d68)
- Call ID: c387396c-8bbc-4d7a-a894-e3601c589d68
+  AssignClass (6241d074-181b-4323-84e8-ce479695ce7e)
+ Call ID: 6241d074-181b-4323-84e8-ce479695ce7e
   Args:
-    type: :Woman
-    source: Patricia_Knatchbull
-  AssignClass (a74899b7-5d73-45a6-b85c-f67a10461470)
- Call ID: a74899b7-5d73-45a6-b85c-f67a10461470
+    source: :Norton_Louis_Philip_Knatchbull
+    type: :Person
+  AddLiteral (3c1260da-6d4e-4147-b1ce-3521fb5f564a)
+ Call ID: 3c1260da-6d4e-4147-b1ce-3521fb5f564a
   Args:
-    source: John_Knatchbull
-    type: :Man
-  AssignClass (30fb0555-8428-406e-b5ff-cea0354ed359)
- Call ID: 30fb0555-8428-406e-b5ff-cea0354ed359
-  Args:
-    source: Penelope_Meredith_Eastwood
-    type: :Woman
-  AssignClass (9bf980a1-c0ef-4584-a4e9-735dbf77589d)
- Call ID: 9bf980a1-c0ef-4584-a4e9-735dbf77589d
-  Args:
-    source: Reginald_Wray_Frank_Eastwood
-    type: :Man
-  AssignClass (61220f01-815a-456f-b93a-e3662fc31cf1)
- Call ID: 61220f01-815a-456f-b93a-e3662fc31cf1
-  Args:
-    type: :Woman
-    source: Marian_Elizabeth
-  AssignClass (f23fd7c0-c36d-4ecf-a339-8342868d4692)
- Call ID: f23fd7c0-c36d-4ecf-a339-8342868d4692
-  Args:
-    source: Louis_Mountbatten
-    type: :Man
-  AssignClass (9125f8b9-139a-4c30-b60b-d8af02920022)
- Call ID: 9125f8b9-139a-4c30-b60b-d8af02920022
-  Args:
-    type: :Man
-    source: Nicholas_Knatchbull
-  AssignClass (57b7e4d3-5ced-4c20-925d-d37e8eeb8ef7)
- Call ID: 57b7e4d3-5ced-4c20-925d-d37e8eeb8ef7
-  Args:
-    type: :Woman
-    source: Doreen_Knatchbull
-  AddLiteral (0871b16f-ba5b-4512-b187-cc9e5379a5e3)
- Call ID: 0871b16f-ba5b-4512-b187-cc9e5379a5e3
-  Args:
-    source: Norton_Louis_Philip_Knatchbull
+    relation: :hasBirthYear
+    source: :Norton_Louis_Philip_Knatchbull
     literal_type: xsd:integer
     literal_value: 1947
+  AssignClass (9c8ac40f-a10e-4483-a2b0-fd4f89735fb9)
+ Call ID: 9c8ac40f-a10e-4483-a2b0-fd4f89735fb9
+  Args:
+    type: :Woman
+    source: :Patricia_Knatchbull
+  AssignClass (cd1fa3f6-5726-4b8b-9609-4969a6e3ec60)
+ Call ID: cd1fa3f6-5726-4b8b-9609-4969a6e3ec60
+  Args:
+    source: :Patricia_Knatchbull
+    type: :Person
+  AssignClass (cfe6c7d1-4dec-40c4-943d-a5801291da25)
+ Call ID: cfe6c7d1-4dec-40c4-943d-a5801291da25
+  Args:
+    type: :Man
+    source: :John_Knatchbull
+  AssignClass (56d24073-df4e-40a0-92ec-04e18993b8bb)
+ Call ID: 56d24073-df4e-40a0-92ec-04e18993b8bb
+  Args:
+    source: :John_Knatchbull
+    type: :Person
+  AddTriple (f4062ebd-5be5-4e3f-beb9-9cf3f2133cab)
+ Call ID: f4062ebd-5be5-4e3f-beb9-9cf3f2133cab
+  Args:
+    source: :Norton_Louis_Philip_Knatchbull
+    relation: :hasFather
+    target: :John_Knatchbull
+  AddTriple (754ec872-ec84-429d-a035-255a3a94a637)
+ Call ID: 754ec872-ec84-429d-a035-255a3a94a637
+  Args:
+    source: :Norton_Louis_Philip_Knatchbull
+    target: :Patricia_Knatchbull
+    relation: :hasMother
+  AssignClass (5ad20a9d-8317-4f1c-b12d-6624f7b63aad)
+ Call ID: 5ad20a9d-8317-4f1c-b12d-6624f7b63aad
+  Args:
+    type: :Woman
+    source: :Penelope_Meredith_Eastwood
+  AssignClass (3bd64841-862a-4b64-8a49-b57cd26aafa9)
+ Call ID: 3bd64841-862a-4b64-8a49-b57cd26aafa9
+  Args:
+    type: :Person
+    source: :Penelope_Meredith_Eastwood
+  AddLiteral (3bcd118a-90a8-4473-98ad-cf7c672f3e47)
+ Call ID: 3bcd118a-90a8-4473-98ad-cf7c672f3e47
+  Args:
     relation: :hasBirthYear
-  AddLiteral (9f7255df-05f2-42f2-ad2c-c5be11f6c1a7)
- Call ID: 9f7255df-05f2-42f2-ad2c-c5be11f6c1a7
-  Args:
-    relation: :formerlyKnownAs
-    literal_value: Lord Romsey
-    source: Norton_Louis_Philip_Knatchbull
-    literal_type: xsd:string
-  AddLiteral (f764fe51-4e17-4c9e-85cc-a29252fe7d13)
- Call ID: f764fe51-4e17-4c9e-85cc-a29252fe7d13
-  Args:
-    literal_value: Lord Brabourne
-    literal_type: xsd:string
-    source: Norton_Louis_Philip_Knatchbull
-    relation: :formerlyKnownAs
-  AddTriple (9503bd4f-ebe9-432f-8793-902dc2c49914)
- Call ID: 9503bd4f-ebe9-432f-8793-902dc2c49914
-  Args:
-    relation: :hasFather
-    source: Norton_Louis_Philip_Knatchbull
-    target: John_Knatchbull
-  AddTriple (0c6ee4d2-85c4-4cba-80ba-48f6c969e649)
- Call ID: 0c6ee4d2-85c4-4cba-80ba-48f6c969e649
-  Args:
-    relation: :hasMother
-    source: Norton_Louis_Philip_Knatchbull
-    target: Patricia_Knatchbull
-  AddTriple (cc9e01b7-3ef8-48cb-97a1-bbd0c79aa522)
- Call ID: cc9e01b7-3ef8-48cb-97a1-bbd0c79aa522
-  Args:
-    source: Norton_Louis_Philip_Knatchbull
-    target: John_Knatchbull
-    relation: :isSonOf
-  AddTriple (ab91f985-b59a-45c1-a83c-c2e108874e8c)
- Call ID: ab91f985-b59a-45c1-a83c-c2e108874e8c
-  Args:
-    relation: :isSonOf
-    source: Norton_Louis_Philip_Knatchbull
-    target: Patricia_Knatchbull
-  AddTriple (77c7d885-2415-4f41-aaad-6ad3feb64672)
- Call ID: 77c7d885-2415-4f41-aaad-6ad3feb64672
-  Args:
-    target: Reginald_Wray_Frank_Eastwood
-    source: Penelope_Meredith_Eastwood
-    relation: :hasFather
-  AddTriple (a44ca70d-f076-4adc-826a-9cc5e2c142e3)
- Call ID: a44ca70d-f076-4adc-826a-9cc5e2c142e3
-  Args:
-    relation: :hasMother
-    target: Marian_Elizabeth
-    source: Penelope_Meredith_Eastwood
-  AddLiteral (cf4f8154-8e2a-43de-bb41-cd6be89f83da)
- Call ID: cf4f8154-8e2a-43de-bb41-cd6be89f83da
-  Args:
+    source: :Penelope_Meredith_Eastwood
+    literal_type: xsd:integer
     literal_value: 1953
-    source: Penelope_Meredith_Eastwood
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (d526a863-013d-4d44-af91-45c9ce18bfa2)
- Call ID: d526a863-013d-4d44-af91-45c9ce18bfa2
+  AddLiteral (e511415d-4d6a-4fef-98dd-5a7d00bd5489)
+ Call ID: e511415d-4d6a-4fef-98dd-5a7d00bd5489
   Args:
-    source: Norton_Louis_Philip_Knatchbull
-    literal_type: xsd:integer
+    source: :Norton_Louis_Philip_Knatchbull
     literal_value: 1979
+    literal_type: xsd:integer
     relation: :hasMarriageYear
-  AddTriple (87a4fa39-5446-4bf3-99f3-469b9d8d777d)
- Call ID: 87a4fa39-5446-4bf3-99f3-469b9d8d777d
+  AssignClass (79e6b0fc-8756-48de-a73f-59c802d3f452)
+ Call ID: 79e6b0fc-8756-48de-a73f-59c802d3f452
   Args:
-    source: Nicholas_Knatchbull
-    target: Norton_Louis_Philip_Knatchbull
-    relation: :isBrotherOf
-  AddTriple (4b992ca9-115c-4a64-b553-75180359a686)
- Call ID: 4b992ca9-115c-4a64-b553-75180359a686
+    type: :Man
+    source: :Reginald_Wray_Frank_Eastwood
+  AssignClass (ed22b489-0946-4a4f-96eb-26b9ea128ce9)
+ Call ID: ed22b489-0946-4a4f-96eb-26b9ea128ce9
   Args:
-    relation: :isSonOf
-    target: Patricia_Knatchbull
-    source: Nicholas_Knatchbull
-  AddTriple (03cc9361-9a51-4e8f-9386-629670059898)
- Call ID: 03cc9361-9a51-4e8f-9386-629670059898
+    type: :Person
+    source: :Reginald_Wray_Frank_Eastwood
+  AddLiteral (2e797d53-71fc-466f-a687-35293a7bb856)
+ Call ID: 2e797d53-71fc-466f-a687-35293a7bb856
   Args:
-    relation: :isSonOf
-    source: Nicholas_Knatchbull
-    target: John_Knatchbull
-  AddTriple (752817b9-950a-4d2c-adf0-72ca686f48fa)
- Call ID: 752817b9-950a-4d2c-adf0-72ca686f48fa
+    relation: :hasBirthYear
+    source: :Reginald_Wray_Frank_Eastwood
+    literal_value: 1912
+    literal_type: xsd:integer
+  AddLiteral (6b098867-ab32-4059-bf54-fb319c950f28)
+ Call ID: 6b098867-ab32-4059-bf54-fb319c950f28
   Args:
-    source: Louis_Mountbatten
-    target: Patricia_Knatchbull
-    relation: :isFatherOf
-  AddTriple (7671cead-6040-433f-84c1-9feedc62f6cf)
- Call ID: 7671cead-6040-433f-84c1-9feedc62f6cf
+    relation: :hasDeathYear
+    source: :Reginald_Wray_Frank_Eastwood
+    literal_type: xsd:integer
+    literal_value: 1980
+  AssignClass (8de607c0-910b-4544-9e95-9fb6f46a4187)
+ Call ID: 8de607c0-910b-4544-9e95-9fb6f46a4187
   Args:
-    target: John_Knatchbull
-    source: Doreen_Knatchbull
-    relation: :isMotherOf
-  Finish (a53d516c-e8d9-4fa3-9719-d6a6d20b5c98)
- Call ID: a53d516c-e8d9-4fa3-9719-d6a6d20b5c98
+    source: :Marian_Elizabeth_Hood
+    type: :Woman
+  AssignClass (d4104cd7-8607-44cb-a92d-f21d54491a95)
+ Call ID: d4104cd7-8607-44cb-a92d-f21d54491a95
   Args:
+    type: :Person
+    source: :Marian_Elizabeth_Hood
+  AddLiteral (2ef227ba-90b8-49e2-b5da-f59973cc747b)
+ Call ID: 2ef227ba-90b8-49e2-b5da-f59973cc747b
+  Args:
+    literal_value: 1926
+    literal_type: xsd:integer
+    source: :Marian_Elizabeth_Hood
+    relation: :hasBirthYear
+  AddLiteral (fe136cee-5f16-4daf-8bd2-a1f61f4d4bd6)
+ Call ID: fe136cee-5f16-4daf-8bd2-a1f61f4d4bd6
+  Args:
+    source: :Marian_Elizabeth_Hood
+    literal_value: 2020
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddTriple (a3e594c7-95b7-4f3f-a3d9-a96c93022f24)
+ Call ID: a3e594c7-95b7-4f3f-a3d9-a96c93022f24
+  Args:
+    source: :Penelope_Meredith_Eastwood
+    relation: :hasFather
+    target: :Reginald_Wray_Frank_Eastwood
+  AddTriple (4c0e7b02-b7f5-4ad4-9537-13214eb35c31)
+ Call ID: 4c0e7b02-b7f5-4ad4-9537-13214eb35c31
+  Args:
+    source: :Penelope_Meredith_Eastwood
+    target: :Marian_Elizabeth_Hood
+    relation: :hasMother
+  AssignClass (ef6ccf7b-915f-4e51-a6e9-4813ee0f0a53)
+ Call ID: ef6ccf7b-915f-4e51-a6e9-4813ee0f0a53
+  Args:
+    type: :Man
+    source: :Louis_Mountbatten
+  AssignClass (f7d1b5e0-1623-456b-8028-84a4c3db2c54)
+ Call ID: f7d1b5e0-1623-456b-8028-84a4c3db2c54
+  Args:
+    source: :Louis_Mountbatten
+    type: :Person
+  AddLiteral (c4a86c62-50c7-4213-85e5-b7a6844226ba)
+ Call ID: c4a86c62-50c7-4213-85e5-b7a6844226ba
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1979
+    literal_type: xsd:integer
+    source: :Louis_Mountbatten
+  AssignClass (07bc2b2b-88f4-4471-a04c-57e716a90ef4)
+ Call ID: 07bc2b2b-88f4-4471-a04c-57e716a90ef4
+  Args:
+    source: :Nicholas_Knatchbull
+    type: :Man
+  AssignClass (9da5a8e7-a0da-4f55-8120-3db3c3f6222a)
+ Call ID: 9da5a8e7-a0da-4f55-8120-3db3c3f6222a
+  Args:
+    type: :Person
+    source: :Nicholas_Knatchbull
+  AddLiteral (0c4fc7c8-b62a-4b33-8a4d-98cc250e0a60)
+ Call ID: 0c4fc7c8-b62a-4b33-8a4d-98cc250e0a60
+  Args:
+    source: :Nicholas_Knatchbull
+    literal_value: 1979
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AssignClass (448814a6-5910-4a4f-bb1f-b248c8788b8b)
+ Call ID: 448814a6-5910-4a4f-bb1f-b248c8788b8b
+  Args:
+    type: :Woman
+    source: :Doreen_Knatchbull
+  AssignClass (2239732b-8237-442c-a6c5-eaff2297777a)
+ Call ID: 2239732b-8237-442c-a6c5-eaff2297777a
+  Args:
+    source: :Doreen_Knatchbull
+    type: :Person
+  AddLiteral (a5a60314-a024-4735-82ff-7534d7728240)
+ Call ID: a5a60314-a024-4735-82ff-7534d7728240
+  Args:
+    source: :Doreen_Knatchbull
+    literal_value: 1979
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddTriple (00e15b6e-7c5c-4a41-82b5-b6bafed164d5)
+ Call ID: 00e15b6e-7c5c-4a41-82b5-b6bafed164d5
+  Args:
+    relation: :hasBrother
+    target: :Nicholas_Knatchbull
+    source: :Norton_Louis_Philip_Knatchbull
+  AssignClass (bc6cfe24-45d6-491c-8882-17b47f973f01)
+ Call ID: bc6cfe24-45d6-491c-8882-17b47f973f01
+  Args:
+    type: :Woman
+    source: :Eugenie_Lady_Nuttall
+  AssignClass (8ce772c5-6820-44bf-a8b6-0634950cbfac)
+ Call ID: 8ce772c5-6820-44bf-a8b6-0634950cbfac
+  Args:
+    type: :Person
+    source: :Eugenie_Lady_Nuttall
+  AssignClass (2d95002d-f1c1-49be-bdf6-c9d5c2e0e1c9)
+ Call ID: 2d95002d-f1c1-49be-bdf6-c9d5c2e0e1c9
+  Args:
+    source: :Nicholas_Nuttall
+    type: :Man
+  AssignClass (d7b30100-5f90-4873-80e3-b6a740a9a7f4)
+ Call ID: d7b30100-5f90-4873-80e3-b6a740a9a7f4
+  Args:
+    type: :Person
+    source: :Nicholas_Nuttall
+  AssignClass (30f88354-0386-4ac8-8891-ab61fc3f7185)
+ Call ID: 30f88354-0386-4ac8-8891-ab61fc3f7185
+  Args:
+    type: :Man
+    source: :Edward_Austen_Knight
+  AssignClass (3af117f5-6c66-4db1-b36a-2cf10e2299f5)
+ Call ID: 3af117f5-6c66-4db1-b36a-2cf10e2299f5
+  Args:
+    source: :Edward_Austen_Knight
+    type: :Person
+  AssignClass (d8fd7e19-7f83-4c45-bbea-7bed5a9a8292)
+ Call ID: d8fd7e19-7f83-4c45-bbea-7bed5a9a8292
+  Args:
+    type: :Woman
+    source: :Jane_Austen
+  AssignClass (d5a38974-b7b6-441f-992d-f5725a51927c)
+ Call ID: d5a38974-b7b6-441f-992d-f5725a51927c
+  Args:
+    source: :Jane_Austen
+    type: :Person
+  Finish (d03b6e6f-79a0-464b-b4fe-b9a622e6f730)
+ Call ID: d03b6e6f-79a0-464b-b4fe-b9a622e6f730
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -613,39 +853,59 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Doreen_Knatchbull a :Woman ;
-      :isMotherOf data:John_Knatchbull .
+  data:Doreen_Knatchbull a :Person,
+          :Woman ;
+      :hasDeathYear 1979 .
 
-  data:Louis_Mountbatten a :Man ;
-      :isFatherOf data:Patricia_Knatchbull .
+  data:Edward_Austen_Knight a :Man,
+          :Person .
 
-  data:Nicholas_Knatchbull a :Man ;
-      :isBrotherOf data:Norton_Louis_Philip_Knatchbull ;
-      :isSonOf data:John_Knatchbull,
-          data:Patricia_Knatchbull .
+  data:Eugenie_Lady_Nuttall a :Person,
+          :Woman .
 
-  data:Penelope_Meredith_Eastwood a :Woman ;
-      :hasBirthYear 1953 ;
-      :hasFather data:Reginald_Wray_Frank_Eastwood ;
-      :hasMother data:Marian_Elizabeth .
+  data:Jane_Austen a :Person,
+          :Woman .
 
-  data:Marian_Elizabeth a :Woman .
+  data:Louis_Mountbatten a :Man,
+          :Person ;
+      :hasDeathYear 1979 .
 
-  data:Norton_Louis_Philip_Knatchbull a :Man ;
-      :formerlyKnownAs "Lord Brabourne"^^xsd:string,
-          "Lord Romsey"^^xsd:string ;
+  data:Nicholas_Nuttall a :Man,
+          :Person .
+
+  data:Norton_Louis_Philip_Knatchbull a :Man,
+          :Person ;
       :hasBirthYear 1947 ;
+      :hasBrother data:Nicholas_Knatchbull ;
       :hasFather data:John_Knatchbull ;
       :hasMarriageYear 1979 ;
-      :hasMother data:Patricia_Knatchbull ;
-      :isSonOf data:John_Knatchbull,
-          data:Patricia_Knatchbull .
+      :hasMother data:Patricia_Knatchbull .
 
-  data:Reginald_Wray_Frank_Eastwood a :Man .
+  data:Penelope_Meredith_Eastwood a :Person,
+          :Woman ;
+      :hasBirthYear 1953 ;
+      :hasFather data:Reginald_Wray_Frank_Eastwood ;
+      :hasMother data:Marian_Elizabeth_Hood .
 
-  data:John_Knatchbull a :Man .
+  data:John_Knatchbull a :Man,
+          :Person .
 
-  data:Patricia_Knatchbull a :Woman .
+  data:Marian_Elizabeth_Hood a :Person,
+          :Woman ;
+      :hasBirthYear 1926 ;
+      :hasDeathYear 2020 .
+
+  data:Nicholas_Knatchbull a :Man,
+          :Person ;
+      :hasDeathYear 1979 .
+
+  data:Patricia_Knatchbull a :Person,
+          :Woman .
+
+  data:Reginald_Wray_Frank_Eastwood a :Man,
+          :Person ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 1980 .
 
 
 
@@ -657,222 +917,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (f3d6ebba-3cb9-4f14-85bc-4c253e8c8f25)
- Call ID: f3d6ebba-3cb9-4f14-85bc-4c253e8c8f25
+  ValidateShacl (83604d65-c133-42ee-bdde-03b0c59e39ab)
+ Call ID: 83604d65-c133-42ee-bdde-03b0c59e39ab
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:26
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Patricia_Knatchbull' is used as an :isSonOf value for 'Norton_Louis_Philip_Knatchbull', but it lacks the required ':Ancestor' class.
+      The node John_Knatchbull is linked as a father but lacks the mandatory class assignment of :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Patricia_Knatchbull', ':Ancestor')
+      AssignClass(node='John_Knatchbull', class=':Man')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'John_Knatchbull' is used as an :isSonOf value for 'Norton_Louis_Philip_Knatchbull', but it lacks the required ':Ancestor' class.
+      The node Patricia_Knatchbull is linked as a mother but lacks the mandatory class assignment of :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('John_Knatchbull', ':Ancestor')
+      AssignClass(node='Patricia_Knatchbull', class=':Woman')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Patricia_Knatchbull' is used as an :isSonOf value for 'Nicholas_Knatchbull', but it lacks the required ':Ancestor' class.
+      The node Reginald_Wray_Frank_Eastwood is linked as a father but lacks the mandatory class assignment of :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Patricia_Knatchbull', ':Ancestor')
+      AssignClass(node='Reginald_Wray_Frank_Eastwood', class=':Man')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'John_Knatchbull' is used as an :isSonOf value for 'Nicholas_Knatchbull', but it lacks the required ':Ancestor' class.
+      The node John_Knatchbull is linked as a father but lacks the mandatory class assignment of :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('John_Knatchbull', ':Ancestor')
+      AssignClass(node='John_Knatchbull', class=':Man')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'John_Knatchbull' is used as a :hasFather value for 'Norton_Louis_Philip_Knatchbull', but it lacks the required ':Ancestor' class.
+      The node Marian_Elizabeth_Hood is linked as a mother but lacks the mandatory class assignment of :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('John_Knatchbull', ':Ancestor')
+      AssignClass(node='Marian_Elizabeth_Hood', class=':Woman')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Patricia_Knatchbull' is used as a :hasMother value for 'Norton_Louis_Philip_Knatchbull', but it lacks the required ':Ancestor' class.
+      The node Patricia_Knatchbull is linked as a mother but lacks the mandatory class assignment of :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Patricia_Knatchbull', ':Ancestor')
+      AssignClass(node='Patricia_Knatchbull', class=':Woman')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Patricia_Knatchbull' is used as an :isSonOf value for 'Norton_Louis_Philip_Knatchbull', but it lacks the required ':Ancestor' class.
+      The node Reginald_Wray_Frank_Eastwood is linked as a father but lacks the mandatory class assignment of :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Patricia_Knatchbull', ':Ancestor')
+      AssignClass(node='Reginald_Wray_Frank_Eastwood', class=':Man')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'John_Knatchbull' is used as an :isSonOf value for 'Norton_Louis_Philip_Knatchbull', but it lacks the required ':Ancestor' class.
+      The node John_Knatchbull is linked as a father but lacks the mandatory class assignment of :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('John_Knatchbull', ':Ancestor')
+      AssignClass(node='John_Knatchbull', class=':Man')
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Patricia_Knatchbull' is used as an :isSonOf value for 'Nicholas_Knatchbull', but it lacks the required ':Ancestor' class.
+      The node Marian_Elizabeth_Hood is linked as a mother but lacks the mandatory class assignment of :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Patricia_Knatchbull', ':Ancestor')
+      AssignClass(node='Marian_Elizabeth_Hood', class=':Woman')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'John_Knatchbull' is used as an :isSonOf value for 'Nicholas_Knatchbull', but it lacks the required ':Ancestor' class.
+      The node Patricia_Knatchbull is linked as a mother but lacks the mandatory class assignment of :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('John_Knatchbull', ':Ancestor')
+      AssignClass(node='Patricia_Knatchbull', class=':Woman')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'John_Knatchbull' is used as a :hasFather value for 'Norton_Louis_Philip_Knatchbull', but it lacks the required ':Ancestor' class.
+      The node Reginald_Wray_Frank_Eastwood is linked as a father but lacks the mandatory class assignment of :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('John_Knatchbull', ':Ancestor')
+      AssignClass(node='Reginald_Wray_Frank_Eastwood', class=':Man')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Reginald_Wray_Frank_Eastwood' is used as a :hasFather value for 'Penelope_Meredith_Eastwood', but it lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Reginald_Wray_Frank_Eastwood', ':Ancestor')
-
-
-  Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Patricia_Knatchbull' is used as a :hasMother value for 'Norton_Louis_Philip_Knatchbull', but it lacks the required ':Ancestor' class.
+      The node Marian_Elizabeth_Hood is linked as a mother but lacks the mandatory class assignment of :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Patricia_Knatchbull', ':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Marian_Elizabeth' is used as a :hasMother value for 'Penelope_Meredith_Eastwood', but it lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Marian_Elizabeth', ':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
-    LLM-provided explanation of the violation:
-      The node 'Doreen_Knatchbull' acts as a subject for :isMotherOf, but lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Doreen_Knatchbull', ':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Patricia_Knatchbull' is used as an :isSonOf value for 'Norton_Louis_Philip_Knatchbull', but it lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Patricia_Knatchbull', ':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'John_Knatchbull' is used as an :isSonOf value for 'Norton_Louis_Philip_Knatchbull', but it lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('John_Knatchbull', ':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'Patricia_Knatchbull' is used as an :isSonOf value for 'Nicholas_Knatchbull', but it lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Patricia_Knatchbull', ':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node 'John_Knatchbull' is used as an :isSonOf value for 'Nicholas_Knatchbull', but it lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('John_Knatchbull', ':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'John_Knatchbull' is used as a :hasFather value for 'Norton_Louis_Philip_Knatchbull', but it lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('John_Knatchbull', ':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Reginald_Wray_Frank_Eastwood' is used as a :hasFather value for 'Penelope_Meredith_Eastwood', but it lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Reginald_Wray_Frank_Eastwood', ':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Patricia_Knatchbull' is used as a :hasMother value for 'Norton_Louis_Philip_Knatchbull', but it lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Patricia_Knatchbull', ':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Marian_Elizabeth' is used as a :hasMother value for 'Penelope_Meredith_Eastwood', but it lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Marian_Elizabeth', ':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The node 'Louis_Mountbatten' acts as a subject for :isFatherOf, but lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Louis_Mountbatten', ':Ancestor')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Reginald_Wray_Frank_Eastwood' is used as a :hasFather value for 'Penelope_Meredith_Eastwood', but it lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Reginald_Wray_Frank_Eastwood', ':Ancestor')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Marian_Elizabeth' is used as a :hasMother value for 'Penelope_Meredith_Eastwood', but it lacks the required ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Marian_Elizabeth', ':Ancestor')
+      AssignClass(node='Marian_Elizabeth_Hood', class=':Woman')
 
 
 
@@ -881,47 +1029,26 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (facbc3b6-46ed-4e98-b480-125d6f133fa3)
- Call ID: facbc3b6-46ed-4e98-b480-125d6f133fa3
+  AssignClass (d389bc1f-afbc-41c6-a1e5-5dc9b3a9bb46)
+ Call ID: d389bc1f-afbc-41c6-a1e5-5dc9b3a9bb46
   Args:
-    source: Patricia_Knatchbull
-    type: :Ancestor
-  AssignClass (e84d7b69-e2ec-45af-b8fc-ae50db83e9ab)
- Call ID: e84d7b69-e2ec-45af-b8fc-ae50db83e9ab
+    type: :Man
+    source: :John_Knatchbull
+  AssignClass (4c1acb02-3101-4bc0-b361-d866075c31b6)
+ Call ID: 4c1acb02-3101-4bc0-b361-d866075c31b6
   Args:
-    source: John_Knatchbull
-    type: :Ancestor
-  AssignClass (27fd6a86-6e77-4617-b374-066128633efd)
- Call ID: 27fd6a86-6e77-4617-b374-066128633efd
+    source: :Patricia_Knatchbull
+    type: :Woman
+  AssignClass (a053adb5-37fb-4a87-8315-b3be53957993)
+ Call ID: a053adb5-37fb-4a87-8315-b3be53957993
   Args:
-    type: :Ancestor
-    source: Reginald_Wray_Frank_Eastwood
-  AssignClass (c0979094-cf4b-4003-b973-815045e1cce9)
- Call ID: c0979094-cf4b-4003-b973-815045e1cce9
+    source: :Reginald_Wray_Frank_Eastwood
+    type: :Man
+  AssignClass (c55e79b8-eeb2-4941-a2fd-a1cfe2533eb3)
+ Call ID: c55e79b8-eeb2-4941-a2fd-a1cfe2533eb3
   Args:
-    source: Marian_Elizabeth
-    type: :Ancestor
-  AssignClass (963e8e89-004a-4f1a-bd3a-a1cc816a33a3)
- Call ID: 963e8e89-004a-4f1a-bd3a-a1cc816a33a3
-  Args:
-    type: :Ancestor
-    source: Doreen_Knatchbull
-  AssignClass (16139b91-8060-4083-a83e-8c9034a9bdf5)
- Call ID: 16139b91-8060-4083-a83e-8c9034a9bdf5
-  Args:
-    source: Louis_Mountbatten
-    type: :Ancestor
-  ValidateShacl (c9c72929-879e-4b5b-8be7-bba2ada3f520)
- Call ID: c9c72929-879e-4b5b-8be7-bba2ada3f520
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    type: :Woman
+    source: :Marian_Elizabeth_Hood
 
 ================================= Tool Message =================================
 
@@ -942,47 +1069,285 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Doreen_Knatchbull a :Ancestor,
+  data:Doreen_Knatchbull a :Person,
           :Woman ;
-      :isMotherOf data:John_Knatchbull .
+      :hasDeathYear 1979 .
 
-  data:Louis_Mountbatten a :Ancestor,
-          :Man ;
-      :isFatherOf data:Patricia_Knatchbull .
+  data:Edward_Austen_Knight a :Man,
+          :Person .
 
-  data:Nicholas_Knatchbull a :Man ;
-      :isBrotherOf data:Norton_Louis_Philip_Knatchbull ;
-      :isSonOf data:John_Knatchbull,
-          data:Patricia_Knatchbull .
-
-  data:Penelope_Meredith_Eastwood a :Woman ;
-      :hasBirthYear 1953 ;
-      :hasFather data:Reginald_Wray_Frank_Eastwood ;
-      :hasMother data:Marian_Elizabeth .
-
-  data:Marian_Elizabeth a :Ancestor,
+  data:Eugenie_Lady_Nuttall a :Person,
           :Woman .
 
-  data:Norton_Louis_Philip_Knatchbull a :Man ;
-      :formerlyKnownAs "Lord Brabourne"^^xsd:string,
-          "Lord Romsey"^^xsd:string ;
+  data:Jane_Austen a :Person,
+          :Woman .
+
+  data:Louis_Mountbatten a :Man,
+          :Person ;
+      :hasDeathYear 1979 .
+
+  data:Nicholas_Nuttall a :Man,
+          :Person .
+
+  data:Norton_Louis_Philip_Knatchbull a :Man,
+          :Person ;
       :hasBirthYear 1947 ;
+      :hasBrother data:Nicholas_Knatchbull ;
       :hasFather data:John_Knatchbull ;
       :hasMarriageYear 1979 ;
-      :hasMother data:Patricia_Knatchbull ;
-      :isSonOf data:John_Knatchbull,
-          data:Patricia_Knatchbull .
+      :hasMother data:Patricia_Knatchbull .
 
-  data:Reginald_Wray_Frank_Eastwood a :Ancestor,
-          :Man .
+  data:Penelope_Meredith_Eastwood a :Person,
+          :Woman ;
+      :hasBirthYear 1953 ;
+      :hasFather data:Reginald_Wray_Frank_Eastwood ;
+      :hasMother data:Marian_Elizabeth_Hood .
 
-  data:John_Knatchbull a :Ancestor,
-          :Man .
+  data:John_Knatchbull a :Man,
+          :Person .
 
-  data:Patricia_Knatchbull a :Ancestor,
+  data:Marian_Elizabeth_Hood a :Person,
+          :Woman ;
+      :hasBirthYear 1926 ;
+      :hasDeathYear 2020 .
+
+  data:Nicholas_Knatchbull a :Man,
+          :Person ;
+      :hasDeathYear 1979 .
+
+  data:Patricia_Knatchbull a :Person,
           :Woman .
 
+  data:Reginald_Wray_Frank_Eastwood a :Man,
+          :Person ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 1980 .
 
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (505ad483-539b-4da3-ae51-38da18e4c685)
+ Call ID: 505ad483-539b-4da3-ae51-38da18e4c685
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:12
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node John_Knatchbull, identified as the father of Norton_Louis_Philip_Knatchbull, lacks the required class assignment of :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "John_Knatchbull", class: ":Man")
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Patricia_Knatchbull, identified as the mother of Norton_Louis_Philip_Knatchbull, lacks the required class assignment of :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Patricia_Knatchbull", class: ":Woman")
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Reginald_Wray_Frank_Eastwood, identified as the father of Penelope_Meredith_Eastwood, lacks the required class assignment of :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Reginald_Wray_Frank_Eastwood", class: ":Man")
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node John_Knatchbull, identified as the father of Norton_Louis_Philip_Knatchbull, lacks the required class assignment of :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "John_Knatchbull", class: ":Man")
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Marian_Elizabeth_Hood, identified as the mother of Penelope_Meredith_Eastwood, lacks the required class assignment of :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Marian_Elizabeth_Hood", class: ":Woman")
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Patricia_Knatchbull, identified as the mother of Norton_Louis_Philip_Knatchbull, lacks the required class assignment of :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Patricia_Knatchbull", class: ":Woman")
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Reginald_Wray_Frank_Eastwood, identified as the father of Penelope_Meredith_Eastwood, lacks the required class assignment of :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Reginald_Wray_Frank_Eastwood", class: ":Man")
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node John_Knatchbull, identified as the father of Norton_Louis_Philip_Knatchbull, lacks the required class assignment of :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "John_Knatchbull", class: ":Man")
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Marian_Elizabeth_Hood, identified as the mother of Penelope_Meredith_Eastwood, lacks the required class assignment of :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Marian_Elizabeth_Hood", class: ":Woman")
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Patricia_Knatchbull, identified as the mother of Norton_Louis_Philip_Knatchbull, lacks the required class assignment of :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Patricia_Knatchbull", class: ":Woman")
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Reginald_Wray_Frank_Eastwood, identified as the father of Penelope_Meredith_Eastwood, lacks the required class assignment of :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Reginald_Wray_Frank_Eastwood", class: ":Man")
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Marian_Elizabeth_Hood, identified as the mother of Penelope_Meredith_Eastwood, lacks the required class assignment of :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: "Marian_Elizabeth_Hood", class: ":Woman")
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (f92d2384-1125-4e6b-a9cd-9f6e3f62e58e)
+ Call ID: f92d2384-1125-4e6b-a9cd-9f6e3f62e58e
+  Args:
+    type: :Ancestor
+    source: data:John_Knatchbull
+  AssignClass (d148d15b-302d-4b39-be4a-b1115956d1f1)
+ Call ID: d148d15b-302d-4b39-be4a-b1115956d1f1
+  Args:
+    type: :Ancestor
+    source: data:Patricia_Knatchbull
+  AssignClass (ba4e993a-ebdb-4954-857b-f3cdb904bf23)
+ Call ID: ba4e993a-ebdb-4954-857b-f3cdb904bf23
+  Args:
+    type: :Ancestor
+    source: data:Reginald_Wray_Frank_Eastwood
+  AssignClass (d7509b4c-fac4-4d39-b258-db60a3c1f06a)
+ Call ID: d7509b4c-fac4-4d39-b258-db60a3c1f06a
+  Args:
+    type: :Ancestor
+    source: data:Marian_Elizabeth_Hood
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Doreen_Knatchbull a :Person,
+          :Woman ;
+      :hasDeathYear 1979 .
+
+  data:Edward_Austen_Knight a :Man,
+          :Person .
+
+  data:Eugenie_Lady_Nuttall a :Person,
+          :Woman .
+
+  data:Jane_Austen a :Person,
+          :Woman .
+
+  data:Louis_Mountbatten a :Man,
+          :Person ;
+      :hasDeathYear 1979 .
+
+  data:Nicholas_Nuttall a :Man,
+          :Person .
+
+  data:Norton_Louis_Philip_Knatchbull a :Man,
+          :Person ;
+      :hasBirthYear 1947 ;
+      :hasBrother data:Nicholas_Knatchbull ;
+      :hasFather data:John_Knatchbull ;
+      :hasMarriageYear 1979 ;
+      :hasMother data:Patricia_Knatchbull .
+
+  data:Penelope_Meredith_Eastwood a :Person,
+          :Woman ;
+      :hasBirthYear 1953 ;
+      :hasFather data:Reginald_Wray_Frank_Eastwood ;
+      :hasMother data:Marian_Elizabeth_Hood .
+
+  data:John_Knatchbull a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Marian_Elizabeth_Hood a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1926 ;
+      :hasDeathYear 2020 .
+
+  data:Nicholas_Knatchbull a :Man,
+          :Person ;
+      :hasDeathYear 1979 .
+
+  data:Patricia_Knatchbull a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Reginald_Wray_Frank_Eastwood a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 1980 .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (569b7364-2770-48cd-a7fb-4b35f0deb2f7)
+ Call ID: 569b7364-2770-48cd-a7fb-4b35f0deb2f7
+  Args:
 
 ================================= Tool Message =================================
 
@@ -992,6 +1357,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5941ba3f-68f5-4f99-bd95-407d6693daf4)
- Call ID: 5941ba3f-68f5-4f99-bd95-407d6693daf4
+  Finish (a09d89b7-8dd1-4be1-96d8-6bea737d6a6d)
+ Call ID: a09d89b7-8dd1-4be1-96d8-6bea737d6a6d
   Args:

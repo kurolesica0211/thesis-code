@@ -90,6 +90,7 @@ His father was the younger brother and heir presumptive of the reigning Greek ki
 Prince Constantine had an elder sister, Princess Sofia, born in 1938.
 However, since agnatic primogeniture governed the succession to throne in Greece at the time, the birth of a male heir to the throne had been anxiously awaited by the Greek royal family, and the newborn prince was therefore received with joy by his parents.
 According to Greek naming practices, being the first son, he was named after his paternal grandfather, Constantine I, who had died in 1923.
+At his baptism on 20 July 1940 at the Royal Palace of Athens, the Hellenic Armed Forces acted as his godparent.
 World War II and the exile of the royal family
 
 Constantine was born during the early stages of World War II.
@@ -97,7 +98,7 @@ He was just a few months old when, on 28 October 1940, Fascist Italy invaded Gre
 However, the Greek successes forced Nazi Germany to intervene and the Germans invaded Greece and Yugoslavia on 6 April 1941 and overran both countries within a month, despite British aid to Greece in the form of an expeditionary corps.
 On 22 April 1941, Princess Frederica and her two children, Sofia and Constantine, were evacuated to Crete in a British Short Sunderland flying boat along with most of the Greek royal family.
 However the imminent German invasion of Crete quickly made the situation untenable and Constantine and his family were evacuated from Crete to Egypt on 30 April 1941, a fortnight before the German attack on the island.
-In Alexandria, the exiled Greek royals were welcomed by the Greek diaspora, which provided them with lodging, money and clothing.
+The presence of the Greek royal family and government began to worry King Farouk of Egypt and his pro-Italian ministers.
 Constantine and his family, therefore, had to seek another refuge where they could get through the war and continue their fight against the Axis powers.
 George VI of the United Kingdom opposed the presence of Princess Frederica, who was suspected of having Nazi sympathies, and her children in Britain, but it was decided that Constantine's father and uncle could take up residence in London, where a government-in-exile was set up, while the rest of the family could seek refuge in the then-Union of South Africa.
 On 27 June 1941, most of the Greek royal family, therefore, set off for South Africa on board the Dutch steamship Nieuw Amsterdam, which arrived in Durban on 8 July 1941.
@@ -109,16 +110,11 @@ Despite their difficult financial circumstances, the family then established fri
 After World War II and return to Greece
 
 In 1944, at the end of World War II, Nazi Germany gradually withdrew from Greece.
-Britain tried to reinstate George II, who remained in exile in London, but most of the resistance, in particular the communists, were opposed.
+While the majority of exiled Greeks were able to return to their country, the royal family had to remain in exile because of the growing republican opposition at home.
 Prince Paul, who was more combative but also more popular than his brother, would have liked to return to Greece as heir to the throne as early as the liberation of Athens in 1944, as he believed that back in his country he would have been quickly proclaimed regent, which would have blocked the way for Damaskinos and made it easier to restore the monarchy.
 The majority in the referendum was in favour of reinstating the monarchy, at which time Constantine and his family also returned to Greece.
 It was there that Paul and Frederica chose to start a small school, where Constantine and his sisters received their first education under the supervision of Jocelin Winthrop Young, a British disciple of the German-Jewish educator Kurt Hahn.
 That conflict was fought mainly in northern Greece.
-Crown Prince
-
-Education
-
-During the Civil War, on 1 April 1947, George died.
 Thus, Constantine's father ascended the throne, and Constantine himself became Crown Prince of Greece at the age of six.
 Constantine and his sisters were brought up relatively simply, and communication was at the heart of the pedagogy of their parents, who spent all the time they could with their children.
 Until he was nine, Constantine continued to be educated with his sisters and other companions from Athens' wealthier population in the villa at Psychiko.
@@ -128,13 +124,11 @@ Sailing and the Olympic Games
 
 Constantine was an able sportsman.
 Subsequently, Constantine spent most of his free time training with the boat on the Saronic Gulf.
-After a few months, the Greek Navy gave the prince a Dragon class sailing boat, with which he decided to participate in the 1960 Summer Olympics in Rome.
 Constantine was the helmsman of their Olympic gold-winning sailing vessel Nireus, and other members of the team included Odysseus Eskitzoglou and Georgios Zaimis.
 Constantine was also a strong swimmer and had a black belt in karate, with interests in squash, track events, and riding.
 In 1963, Constantine became a member of the International Olympic Committee (IOC).
 Prior to this, Constantine had already been appointed regent for his ailing father while waiting for his recovery.
 During his regency, Constantine limited himself to signing decrees and appointing members of the government, as well as accepting their resignations.
-As the king's condition worsened, the crown prince went to Tinos to attain an icon considered miraculous by the Greek Orthodox Church.
 On 6 March 1964, Paul died and the 23-year-old Constantine succeeded him as King of the Hellenes.
 The new king ascended the throne as Constantine II, although some of his supporters preferred to call him Constantine XIII to emphasize the continuity between the former Byzantine Empire and the Kingdom of Greece.
 Due to his youth, Constantine was also perceived as a promise of change.
@@ -169,6 +163,7 @@ Despite the detained Prime Minister Kanellopoulos urging resistance, Constantine
 According to the then-US ambassador to Greece, Phillips Talbot, Constantine expressed his anger at this situation, revealed to him that he no longer had control of the army and claimed that "incredibly stupid extreme right-wing bastards with control of the tanks are leading Greece to destruction".
 From his inauguration as king, Constantine already manifested his disagreements with Archbishop Chrysostomos II of Athens.
 With the military dictatorship, he had the opportunity to be removed from the Greek Orthodox Cephaly, in fact it was one of the first measures with which Constantine collaborated with the Junta.
+On 28 April 1967, Chrysostomos II was retained and was forced to resign after having to sign one of the two versions of the letter brought to him by an official of the royal palace.
 Finally, Ieronymos Kotsonis was elected as archbishop by the junta's and Constantine's proposal on 13 May 1967.
 Royal countercoup of 13 December 1967 and exile
 
@@ -197,10 +192,10 @@ Constantine expected an invitation to return.
 Following the appointment of a civilian government in November 1974 after the first post-junta legislative election, Karamanlis called a referendum, held on 8 December 1974, on whether Greece would restore the monarchy or remain a republic.
 The king was not allowed by the government to return to Greece to campaign for the restoration of constitutional monarchy.
 Constantine, speaking from London, said he had made mistakes in the past.
-The vote to restore the monarchy was only about 31% with most of the support coming from the Peloponnese region.
 Post-reign
 
 Constantine remained in exile for 40 years after the vote in favour of the republic, living in Italy and the United Kingdom.
+He returned briefly for the first time in February 1981, which was to attend the funeral of his mother in the family cemetery of the former Royal Palace at Tatoi.
 The funeral was generally controversial, due to the little empathy generated by Queen Frederica and the royal family, which is why the government authorized him to stay only for six hours in the country.
 His gesture of kissing the ground upon arrival in Greece was also polemic as it was considered an act of provocation for the antiroyalists.
 Abortive conspiracies
@@ -222,7 +217,6 @@ Visits to Greece
 
 The first visit of Constantine and the former royal family to Greece took place on 12 February 1981, on the occasion of the funeral of his mother, Frederica.
 As soon as Constantine's communication with the government of then Prime Minister George Rallis about the details of the funeral became known to the press, an intense political dispute erupted.
-Only six years had passed since the referendum and the controversies between the two sides - pro-royalist and anti-royalist - were still fresh.
 Although the royal entourage's preference for a lay-in-state ceremony in Athens metropolitan cathedral  followed by a burial in Tatoi, the Rallis government, in the midst of fierce confrontations with the opposition, decided that both the funeral and the burial should take place in Tatoi to avoid the possibility of violent clashes between pro- and anti-royal supporters.
 Constantine and his family could only stay on Greek soil for six hours, as long as they needed to carry out their duties.
 The former royal family arrived at Ellinikon airport and Constantine disembarked, bent down and kissed the ground.
@@ -259,29 +253,41 @@ Properties and citizenship
 
 A long-standing dispute between the former royal family and the Greek state over the ownership of movable and immovable property which, prior to the constitutional change of the Metapolitefsi, was considered to be the property of King Constantine was resolved in 2002.
 The European Court of Human Rights condemned Greece for violating Article 1 of the First Protocol and awarded the former royal family compensation of €13.7 million.
+The legal basis of the dispute was determined by the interpretation of royal property as private or public.
+According to the royal family, the property was acquired by their predecessors through legal means (purchases) from their personal estates and was therefore considered the inheritance of the former king.
+In 1973, Decree No. 225 expropriated the movable and immovable property of the former king and members of the royal family for the benefit of the state.
 In September 1974, the government of National Salvation, headed by Constantine Karamanlis revoked the junta's decree in anticipation of the referendum that would determine the country's constitution.
 This committee later handed over its responsibilities to the legal representative of the royal family in Greece, retired admiral Mario Stavridis.
+Thus, members of the royal family continued to declare their property as inherited and to file inheritance and income tax returns, and the tax administration continued to assess taxes and impose surcharges and fines.
 In 1984, Constantine took the initiative to approach the Greek government to settle the former royal family's tax debts to the Greek state.
+The agreement - which was never implemented - included the payment by the royal family of 183,000,000 drachmas in cash from the total amount of inheritance tax due, while the rest was to be covered by the concession of 81 hectares (200 acres) to the state, 400 acres (160 ha) to the "World Hippocratic Hospital Foundation and Research Centre" to be built a huge hospital complex, and 15,146 hectares (37,426 acres) to the "Tatoi National Park".
 In 1993, on the occasion of the visit of the royal family to Greece, Andreas Papandreou announced the legislative settlement of the outstanding issues.
+The Law confiscated the King's property for the benefit of the state without the right to compensation and deprived the members of the royal family of their Greek citizenship.
+The royal family immediately appealed to the country's civil courts.
 Although upheld by the Supreme Civil and Criminal Court of Greece, the decision was overturned by the Council of State.
 All legal remedies in Greece had been depleted.
+The royal family therefore turned to the European courts.
 You cannot push an individual further and this is my limit.
 
 — Constantine II upon his decision to take the Greek government to court.
 An appeal to the European Commission of Human Rights was lodged by Constantine, Anna-Marie, their five children, Princess Irene and Princess Catherine.
 His sister, Queen Sophia, did not take part because she had already renounced her rights to the estate.
 The court allowed the appeal, but only for Constantine, Irene and Catherine.
-Constitutional lawyer Nikos Alivizatos, a member of the team of lawyers who represented the Greek State in the trial, pointed out that the trial was considered historic, as it was the most important property case to come before them.
+The former royal family challenged the expropriation without compensation of 17,000 hectares (42,000 acres) in Tatoi, 93 hectares (230 acres) in Corfu and 13,000 hectares (33,000 acres) in Polydendri, Larissa.
 The court also encouraged six months of meetings between Constantine and the Greek government to coordinate a settlement, however the Greek government refused.
 The court also defined the former king's litigation assets as private, ruling that the property that accompanied the institution of the monarchy had already been automatically transferred to the state, meaning that the Greek state could award Constantine monetary compensation, rather than returning his royal properties.
-The money was collected in March 2003.
 The court decision also ruled that Constantine's human rights were not violated by the Greek state's decision not to grant him Greek citizenship and passport unless he adopts a surname.
 Constantine said of this "the law basically said that I had to go out and acquire a name.
+The problem is that my family originates from Denmark and the Danish royal family haven't got a surname."
 Constantine and his family ultimately did not receive their Greek citizenship back.
 Although originally requesting Spanish citizenships, Anne-Marie eventually requested of her sister, Margrethe II of Denmark, to have Danish diplomatic passports instated in the names of the members of the Greek royal family.
 She agreed and in their Danish passports, Constantine and Anne-Marie's names were established as "HM King Constantine II" and "HM Queen Anne-Marie".
 On 20 December 2024, over two decades after the court ruling and almost two years after Constantine's death, his descendants received Greek citizenship upon adopting the surname "De Grèce" (Ντε Γκρες; "of Greece"), which had been used by Prince Michael of Greece and Denmark, a first cousin of Constantine's father.
+Movable property
+
+On 8 October 1990, the commissioner of the Royal Estate, Admiral Stavridis, submitted a request for the transfer of the family's "households goods" abroad.
 After secret talks with then Prime Minister Constantine Mitsotakis, the government accepted the former king's request and on 22 November, the Greek Minister for the Economy, Ioannis Palaiokrassas, and the Minister for Culture, Tzannis Tzannetakis, issued a joint ministerial decision in order to check, register and mark the objects in the collection which were probably prohibited from leaving the country.
+On 17 February 1991, nine containers weighing 32 tonnes and containing 1904 boxes were loaded onto a ship leaving Piraeus for the port of Tilbury and the former royal residence in London.
 In 2007, 850 valuable objects belonging to the royal estate were auctioned by Christie's in London.
 Constantine denied that he was the vendor - he claimed that they had already been sold in 1991  to third parties who auctioned them but journalists disputed the claim.
 The Greek government, through then Culture Minister Georgios Voulgarakis, tried to stop the auction, claiming that the items may have been illegally exported from Greece, but the attempt failed.
@@ -333,6 +339,8 @@ His official website lists his "correct form of address" as King Constantine, fo
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -348,39 +356,9 @@ His official website lists his "correct form of address" as King Constantine, fo
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -395,6 +373,23 @@ His official website lists his "correct form of address" as King Constantine, fo
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -412,6 +407,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -479,29 +489,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -510,6 +512,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -522,6 +532,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -530,17 +542,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -568,6 +582,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -583,415 +681,205 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (93ceaaf3-b3a2-45f0-be90-93215662875a)
- Call ID: 93ceaaf3-b3a2-45f0-be90-93215662875a
+  AssignClass (41125050-7f1f-4d2e-8cf9-3416a7b74490)
+ Call ID: 41125050-7f1f-4d2e-8cf9-3416a7b74490
   Args:
+    type: :Man
     source: Constantine_II
-    type: :Man
-  AssignClass (9be4f85f-6a32-45e2-a31f-88470a1684a3)
- Call ID: 9be4f85f-6a32-45e2-a31f-88470a1684a3
+  AssignClass (248f77c0-4a58-40ee-856c-a0a18cabeab2)
+ Call ID: 248f77c0-4a58-40ee-856c-a0a18cabeab2
   Args:
     type: :Person
     source: Constantine_II
-  AssignClass (2d97c585-77e6-4550-8654-ac62db442978)
- Call ID: 2d97c585-77e6-4550-8654-ac62db442978
-  Args:
-    source: Paul_of_Greece
-    type: :Man
-  AssignClass (b8b0208b-f988-435b-9831-d5d1aee24c1e)
- Call ID: b8b0208b-f988-435b-9831-d5d1aee24c1e
-  Args:
-    source: Paul_of_Greece
-    type: :Person
-  AssignClass (cc182a18-88b1-43d5-8180-94102ddd76d4)
- Call ID: cc182a18-88b1-43d5-8180-94102ddd76d4
-  Args:
-    type: :Woman
-    source: Frederica_of_Greece
-  AssignClass (087e60d7-708c-4c69-a69a-9e9c339d09a2)
- Call ID: 087e60d7-708c-4c69-a69a-9e9c339d09a2
-  Args:
-    source: Frederica_of_Greece
-    type: :Person
-  AssignClass (fd374156-1226-4b29-b1ed-0a283c3d3064)
- Call ID: fd374156-1226-4b29-b1ed-0a283c3d3064
-  Args:
-    source: George_II_of_Greece
-    type: :Man
-  AssignClass (9df74548-4208-4d23-96a3-bb681bd53b3c)
- Call ID: 9df74548-4208-4d23-96a3-bb681bd53b3c
-  Args:
-    source: George_II_of_Greece
-    type: :Person
-  AssignClass (f2a29cc6-b13d-4f2f-8297-a0de4b3580bc)
- Call ID: f2a29cc6-b13d-4f2f-8297-a0de4b3580bc
-  Args:
-    type: :Woman
-    source: Sofia_of_Greece
-  AssignClass (c16d0da5-6280-4bdd-bf2d-ab8c3bd996a7)
- Call ID: c16d0da5-6280-4bdd-bf2d-ab8c3bd996a7
-  Args:
-    source: Sofia_of_Greece
-    type: :Person
-  AssignClass (ae12095f-4bab-47a7-8526-71772ad49172)
- Call ID: ae12095f-4bab-47a7-8526-71772ad49172
-  Args:
-    source: Irene_of_Greece
-    type: :Woman
-  AssignClass (371e5e69-8803-48f4-a073-33e5a2bc8eeb)
- Call ID: 371e5e69-8803-48f4-a073-33e5a2bc8eeb
-  Args:
-    type: :Person
-    source: Irene_of_Greece
-  AssignClass (383ae22e-c1a4-4703-a68f-4fdf16e9fbdd)
- Call ID: 383ae22e-c1a4-4703-a68f-4fdf16e9fbdd
-  Args:
-    type: :Man
-    source: Ernest_Augustus_Duke_of_Brunswick
-  AssignClass (beaca603-54e8-4ac2-b195-2499fb22c916)
- Call ID: beaca603-54e8-4ac2-b195-2499fb22c916
-  Args:
-    source: Ernest_Augustus_Duke_of_Brunswick
-    type: :Person
-  AssignClass (aed799c4-aee4-40b9-827e-d9b1e449a7d9)
- Call ID: aed799c4-aee4-40b9-827e-d9b1e449a7d9
-  Args:
-    source: Victoria_Louise_of_Prussia
-    type: :Woman
-  AssignClass (885a6352-fb60-4015-914e-38983dfda3dc)
- Call ID: 885a6352-fb60-4015-914e-38983dfda3dc
-  Args:
-    type: :Person
-    source: Victoria_Louise_of_Prussia
-  AssignClass (6f07e063-d540-4abb-89ec-b3a8628d07d8)
- Call ID: 6f07e063-d540-4abb-89ec-b3a8628d07d8
-  Args:
-    type: :Woman
-    source: Anne-Marie_of_Denmark
-  AssignClass (dd6fa60b-9127-4271-b3e6-52ba866c3075)
- Call ID: dd6fa60b-9127-4271-b3e6-52ba866c3075
-  Args:
-    source: Anne-Marie_of_Denmark
-    type: :Person
-  AssignClass (44543d78-8612-4257-b4df-b49e075621db)
- Call ID: 44543d78-8612-4257-b4df-b49e075621db
-  Args:
-    type: :Man
-    source: Frederik_IX_of_Denmark
-  AssignClass (8a3c0ea2-dc76-444f-8dbc-bba6297de09a)
- Call ID: 8a3c0ea2-dc76-444f-8dbc-bba6297de09a
-  Args:
-    source: Frederik_IX_of_Denmark
-    type: :Person
-  AddLiteral (d772b8e5-adb9-4478-a0d1-856061210f54)
- Call ID: d772b8e5-adb9-4478-a0d1-856061210f54
+  AddLiteral (ad3554ca-a78f-430e-b049-d997094ccd77)
+ Call ID: ad3554ca-a78f-430e-b049-d997094ccd77
   Args:
     literal_type: xsd:integer
-    source: Constantine_II
     literal_value: 1940
     relation: :hasBirthYear
-  AddLiteral (c308c7cb-7b3a-4201-baab-017d5bd3b1db)
- Call ID: c308c7cb-7b3a-4201-baab-017d5bd3b1db
+    source: Constantine_II
+  AddLiteral (2227568a-73a7-4dea-b1f1-623631ce0e8f)
+ Call ID: 2227568a-73a7-4dea-b1f1-623631ce0e8f
   Args:
     relation: :hasDeathYear
-    source: Constantine_II
     literal_value: 2023
     literal_type: xsd:integer
-  AddTriple (bfbb4555-6e10-419b-973c-8608f42ab6d0)
- Call ID: bfbb4555-6e10-419b-973c-8608f42ab6d0
+    source: Constantine_II
+  AssignClass (4cd927d8-3a7e-4285-a0fd-472340f99743)
+ Call ID: 4cd927d8-3a7e-4285-a0fd-472340f99743
+  Args:
+    source: Paul_of_Greece
+    type: :Man
+  AssignClass (88566ea3-88d2-4fac-9a43-503c510a2632)
+ Call ID: 88566ea3-88d2-4fac-9a43-503c510a2632
+  Args:
+    type: :Person
+    source: Paul_of_Greece
+  AssignClass (d7804417-868f-4c0f-b012-f9f4a728ca6f)
+ Call ID: d7804417-868f-4c0f-b012-f9f4a728ca6f
+  Args:
+    type: :Woman
+    source: Frederica_of_Greece
+  AssignClass (34211a55-aa32-4a8f-ab4a-c8f2ee0d4b4e)
+ Call ID: 34211a55-aa32-4a8f-ab4a-c8f2ee0d4b4e
+  Args:
+    source: Frederica_of_Greece
+    type: :Person
+  AddTriple (b000c793-1e67-4093-9124-5fb31979d950)
+ Call ID: b000c793-1e67-4093-9124-5fb31979d950
+  Args:
+    source: Constantine_II
+    target: Paul_of_Greece
+    relation: :hasFather
+  AddTriple (c309f8ae-d130-45ee-8bdd-78f5a721f960)
+ Call ID: c309f8ae-d130-45ee-8bdd-78f5a721f960
+  Args:
+    relation: :hasMother
+    target: Frederica_of_Greece
+    source: Constantine_II
+  AssignClass (a1f37fcf-d17c-43cd-97b3-cb1562c5b32e)
+ Call ID: a1f37fcf-d17c-43cd-97b3-cb1562c5b32e
+  Args:
+    type: :Man
+    source: George_II_of_Greece
+  AssignClass (93c04fa8-3910-4ac1-a918-749074290fde)
+ Call ID: 93c04fa8-3910-4ac1-a918-749074290fde
+  Args:
+    source: George_II_of_Greece
+    type: :Person
+  AddTriple (2d9f6ae6-64fb-413a-bd68-f6567b5bb54c)
+ Call ID: 2d9f6ae6-64fb-413a-bd68-f6567b5bb54c
+  Args:
+    source: Paul_of_Greece
+    target: George_II_of_Greece
+    relation: :isBrotherOf
+  AssignClass (dc1ad07d-2e2d-48de-b9f9-2ee97294bf01)
+ Call ID: dc1ad07d-2e2d-48de-b9f9-2ee97294bf01
+  Args:
+    source: Sofia_of_Greece
+    type: :Woman
+  AssignClass (b96b3f7b-a204-4df4-80b5-6e9cc069dea9)
+ Call ID: b96b3f7b-a204-4df4-80b5-6e9cc069dea9
+  Args:
+    type: :Person
+    source: Sofia_of_Greece
+  AddTriple (9c0ab027-0151-4958-9cfa-f659f964ccae)
+ Call ID: 9c0ab027-0151-4958-9cfa-f659f964ccae
+  Args:
+    source: Sofia_of_Greece
+    target: Constantine_II
+    relation: :isSisterOf
+  AddTriple (d3a7a1e5-6545-42c8-9ede-8681a5d870c3)
+ Call ID: d3a7a1e5-6545-42c8-9ede-8681a5d870c3
+  Args:
+    target: Paul_of_Greece
+    source: Sofia_of_Greece
+    relation: :hasFather
+  AddTriple (ffd5da6e-57da-4660-a40a-d978a03613da)
+ Call ID: ffd5da6e-57da-4660-a40a-d978a03613da
+  Args:
+    relation: :hasMother
+    target: Frederica_of_Greece
+    source: Sofia_of_Greece
+  AssignClass (36d84cef-99da-45b4-9167-6e486a1adba9)
+ Call ID: 36d84cef-99da-45b4-9167-6e486a1adba9
+  Args:
+    type: :Woman
+    source: Irene_of_Greece
+  AssignClass (0cd86587-1d5c-40c1-9316-dcc945399ac9)
+ Call ID: 0cd86587-1d5c-40c1-9316-dcc945399ac9
+  Args:
+    source: Irene_of_Greece
+    type: :Person
+  AddTriple (cbebbf45-a71f-4b6c-8a39-856e564f9887)
+ Call ID: cbebbf45-a71f-4b6c-8a39-856e564f9887
+  Args:
+    source: Irene_of_Greece
+    target: Constantine_II
+    relation: :isSisterOf
+  AddTriple (8d8b6e3e-ca92-42cb-88e9-f0a3c69b2bf9)
+ Call ID: 8d8b6e3e-ca92-42cb-88e9-f0a3c69b2bf9
   Args:
     relation: :hasFather
     target: Paul_of_Greece
-    source: Constantine_II
-  AddTriple (efbb7a49-d4ba-462c-8076-ab7b0351cd09)
- Call ID: efbb7a49-d4ba-462c-8076-ab7b0351cd09
+    source: Irene_of_Greece
+  AddTriple (f99373d0-68a1-4e6b-9ecf-bfd9fc38eeae)
+ Call ID: f99373d0-68a1-4e6b-9ecf-bfd9fc38eeae
   Args:
-    source: Constantine_II
+    relation: :hasMother
     target: Frederica_of_Greece
-    relation: :hasMother
-  AddTriple (8562b8d9-dc24-46a8-a631-3bd0d08d073e)
- Call ID: 8562b8d9-dc24-46a8-a631-3bd0d08d073e
+    source: Irene_of_Greece
+  AssignClass (3aaca02c-0f73-4457-a8ff-bc41ee1dcce7)
+ Call ID: 3aaca02c-0f73-4457-a8ff-bc41ee1dcce7
   Args:
-    target: Constantine_I_of_Greece
-    source: Paul_of_Greece
-    relation: :hasFather
-  AddTriple (1ab8bc20-7de2-4495-8315-fc4b2ba41f7c)
- Call ID: 1ab8bc20-7de2-4495-8315-fc4b2ba41f7c
-  Args:
-    source: Constantine_I_of_Greece
-    target: Constantine_I_of_Greece
-    relation: :hasFather
-  AddTriple (244f5cbe-91ac-46e6-b46f-69d187ccbb89)
- Call ID: 244f5cbe-91ac-46e6-b46f-69d187ccbb89
-  Args:
-    relation: :hasFather
-    target: Ernest_Augustus_Duke_of_Brunswick
-    source: Frederica_of_Greece
-  AddTriple (8943d238-1226-4c29-b932-77d2e4c1fb59)
- Call ID: 8943d238-1226-4c29-b932-77d2e4c1fb59
-  Args:
-    target: Victoria_Louise_of_Prussia
-    source: Frederica_of_Greece
-    relation: :hasMother
-  AddTriple (61383233-b211-4e14-9c02-d51eed41dade)
- Call ID: 61383233-b211-4e14-9c02-d51eed41dade
-  Args:
-    relation: :hasSister
-    target: Sofia_of_Greece
-    source: Constantine_II
-  AddTriple (23291006-0021-4663-849a-2bd642abec1a)
- Call ID: 23291006-0021-4663-849a-2bd642abec1a
-  Args:
-    relation: :hasSister
-    source: Constantine_II
-    target: Irene_of_Greece
-  AddTriple (b3c4646e-ff0d-4657-9113-81ebfe77b23e)
- Call ID: b3c4646e-ff0d-4657-9113-81ebfe77b23e
-  Args:
-    target: George_II_of_Greece
-    source: Paul_of_Greece
-    relation: :hasBrother
-  AddTriple (4d05a80d-05e0-49a6-b284-d6717a38293f)
- Call ID: 4d05a80d-05e0-49a6-b284-d6717a38293f
-  Args:
+    type: :Woman
     source: Anne-Marie_of_Denmark
-    target: Frederik_IX_of_Denmark
-    relation: :hasMother
-  AddLiteral (4a90e706-7150-4f57-a4b1-00cf8ab405b8)
- Call ID: 4a90e706-7150-4f57-a4b1-00cf8ab405b8
-  Args:
-    relation: :hasMarriageYear
-    source: Constantine_II
-    literal_value: 1964
-    literal_type: xsd:integer
-  AddTriple (edd80edf-0715-4aac-ae29-aed5e1c19148)
- Call ID: edd80edf-0715-4aac-ae29-aed5e1c19148
-  Args:
-    relation: :hasRelation
-    target: Anne-Marie_of_Denmark
-    source: Constantine_II
-  Finish (09670ac8-78d9-4fbd-b5d0-ea830b9bf641)
- Call ID: 09670ac8-78d9-4fbd-b5d0-ea830b9bf641
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Constantine_II a :Man,
-          :Person ;
-      :hasBirthYear 1940 ;
-      :hasDeathYear 2023 ;
-      :hasFather data:Paul_of_Greece ;
-      :hasMarriageYear 1964 ;
-      :hasMother data:Frederica_of_Greece ;
-      :hasRelation data:Anne-Marie_of_Denmark ;
-      :hasSister data:Irene_of_Greece,
-          data:Sofia_of_Greece .
-
-  data:Anne-Marie_of_Denmark a :Person,
-          :Woman ;
-      :hasMother data:Frederik_IX_of_Denmark .
-
-  data:Ernest_Augustus_Duke_of_Brunswick a :Man,
-          :Person .
-
-  data:Frederica_of_Greece a :Person,
-          :Woman ;
-      :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
-      :hasMother data:Victoria_Louise_of_Prussia .
-
-  data:Frederik_IX_of_Denmark a :Man,
-          :Person .
-
-  data:George_II_of_Greece a :Man,
-          :Person .
-
-  data:Irene_of_Greece a :Person,
-          :Woman .
-
-  data:Paul_of_Greece a :Man,
-          :Person ;
-      :hasBrother data:George_II_of_Greece ;
-      :hasFather data:Constantine_I_of_Greece .
-
-  data:Sofia_of_Greece a :Person,
-          :Woman .
-
-  data:Victoria_Louise_of_Prussia a :Person,
-          :Woman .
-
-  data:Constantine_I_of_Greece :hasFather data:Constantine_I_of_Greece .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Constantine_I_of_Greece']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (5935f823-e186-4f1a-b1a9-2bfee03a3b14)
- Call ID: 5935f823-e186-4f1a-b1a9-2bfee03a3b14
-  Args:
-    type: :Man
-    source: Constantine_I_of_Greece
-  AssignClass (67bcff39-94c5-4e79-8daf-a27bacb7aa46)
- Call ID: 67bcff39-94c5-4e79-8daf-a27bacb7aa46
+  AssignClass (35728374-c302-4a3a-bb75-62edfae72726)
+ Call ID: 35728374-c302-4a3a-bb75-62edfae72726
   Args:
     type: :Person
-    source: Constantine_I_of_Greece
-  Finish (2fa6eb8c-a265-4757-ae80-cb28b990af68)
- Call ID: 2fa6eb8c-a265-4757-ae80-cb28b990af68
+    source: Anne-Marie_of_Denmark
+  AddTriple (59be296e-89be-4e6d-9c89-7f07cab13205)
+ Call ID: 59be296e-89be-4e6d-9c89-7f07cab13205
+  Args:
+    relation: :hasRelation
+    source: Constantine_II
+    target: Anne-Marie_of_Denmark
+  AddLiteral (047502f0-a6b2-46c7-8596-706d6d75d2a3)
+ Call ID: 047502f0-a6b2-46c7-8596-706d6d75d2a3
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1964
+    source: Constantine_II
+  AssignClass (cb04ca1b-bca1-49c4-802d-01113fe6aea5)
+ Call ID: cb04ca1b-bca1-49c4-802d-01113fe6aea5
+  Args:
+    source: Ernest_Augustus_Duke_of_Brunswick
+    type: :Man
+  AssignClass (0e6aa7d6-50f0-4768-b1ba-40d798a5ed1a)
+ Call ID: 0e6aa7d6-50f0-4768-b1ba-40d798a5ed1a
+  Args:
+    source: Ernest_Augustus_Duke_of_Brunswick
+    type: :Person
+  AssignClass (ec7e436a-7dbc-48e6-8547-da1910bf124a)
+ Call ID: ec7e436a-7dbc-48e6-8547-da1910bf124a
+  Args:
+    source: Victoria_Louise_of_Prussia
+    type: :Woman
+  AssignClass (87e95930-e2c4-4041-9c0e-90ea16b5461c)
+ Call ID: 87e95930-e2c4-4041-9c0e-90ea16b5461c
+  Args:
+    source: Victoria_Louise_of_Prussia
+    type: :Person
+  AddTriple (dc711b5f-ad5d-430d-a916-dfc48d3d108f)
+ Call ID: dc711b5f-ad5d-430d-a916-dfc48d3d108f
+  Args:
+    relation: :hasFather
+    source: Frederica_of_Greece
+    target: Ernest_Augustus_Duke_of_Brunswick
+  AddTriple (b8a7eaa7-ff42-497d-9f05-3605221b8611)
+ Call ID: b8a7eaa7-ff42-497d-9f05-3605221b8611
+  Args:
+    relation: :hasMother
+    target: Victoria_Louise_of_Prussia
+    source: Frederica_of_Greece
+  AssignClass (aba17039-5038-49e2-8670-c7b5f27ddadc)
+ Call ID: aba17039-5038-49e2-8670-c7b5f27ddadc
+  Args:
+    type: :Man
+    source: Frederik_IX_of_Denmark
+  AssignClass (239fe8b5-926b-4654-9180-8815f34c96f4)
+ Call ID: 239fe8b5-926b-4654-9180-8815f34c96f4
+  Args:
+    source: Frederik_IX_of_Denmark
+    type: :Person
+  AddTriple (06230766-23ec-47aa-a857-8ecd61861aba)
+ Call ID: 06230766-23ec-47aa-a857-8ecd61861aba
+  Args:
+    relation: :hasFather
+    target: Frederik_IX_of_Denmark
+    source: Anne-Marie_of_Denmark
+  Finish (bcf5c1be-7430-4567-9020-2bb9a1dc950c)
+ Call ID: bcf5c1be-7430-4567-9020-2bb9a1dc950c
   Args:

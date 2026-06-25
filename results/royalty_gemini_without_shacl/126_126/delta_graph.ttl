@@ -2,20 +2,28 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Adelaide_of_Lippe-Biesterfeld a :Woman ;
-    :hasBirthYear 1870 ;
-    :hasDeathYear 1948 ;
-    :hasFather data:Ernest_II_of_Lippe-Biesterfeld ;
-    :hasMarriageYear 1889 ;
-    :hasMother data:Karoline_von_Wartensleben ;
-    :hasRelation data:Friedrich_Johann_of_Saxe-Meiningen .
+data:Infanta_Alicia_Duchess_of_Calabria a :Person,
+        :Woman ;
+    :hasDeathYear 2017 .
 
-data:Ernest_II_of_Lippe-Biesterfeld a :Man .
+data:Princess_Anne_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasRelation data:Infante_Carlos_Duke_of_Calabria .
 
-data:Friedrich_Johann_of_Saxe-Meiningen a :Man ;
-    :hasFather data:Georg_II_of_Saxe-Meiningen .
+data:Henri_Count_of_Paris a :Man,
+        :Person .
 
-data:Georg_II_of_Saxe-Meiningen a :Man .
+data:Infante_Alfonso_Duke_of_Calabria a :Man,
+        :Person .
 
-data:Karoline_von_Wartensleben a :Woman .
+data:Infante_Carlos_Duke_of_Calabria a :Man,
+        :Person ;
+    :hasDeathYear 2015 ;
+    :hasFather data:Infante_Alfonso_Duke_of_Calabria .
+
+data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Person,
+        :Woman .
 

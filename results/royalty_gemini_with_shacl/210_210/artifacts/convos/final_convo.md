@@ -85,35 +85,17 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lieutenant David Michael Mountbatten, 3rd Marquess of Milford Haven, OBE, DSC (12 May 1919 – 14 April 1970), styled Viscount Alderney before 1921 and Earl of Medina between 1921 and 1938, was the son of George Mountbatten, 2nd Marquess of Milford Haven and Countess Nadejda Mikhailovna of Torby.
-Early years and education
-
-David Michael Mountbatten was born on 12 May 1919.
-He was the only son of George Mountbatten, 2nd Marquess of Milford Haven (who had been born as Prince George of Battenberg), and Russian Countess Nadejda (Nada) Torby, who were married in 1916.
-His paternal grandparents were Prince Louis of Battenberg and Princess Victoria of Hesse and by Rhine.
-Therefore, he was a great-great-grandson of Queen Victoria.
-He grew up at the family home in Holyport, Berkshire, and enjoyed a close friendship with his first cousin Prince Philip of Greece and Denmark, later the Duke of Edinburgh.
-He served as best man to the prince at his marriage in November 1947 to the Princess Elizabeth, later Queen Elizabeth II.
-Upon the death of his father on 8 April 1938, he became the 3rd Marquess of Milford Haven and head of the House of Mountbatten.
-Navy and postwar social life
-
-During the Second World War Milford Haven served in the Royal Navy.
-He then played a prominent part in the London demi-monde of the 1950s, which brought together a colourful mix of aristocrats and shadowy social climbers like osteopath Stephen Ward.
-Marriages
-
-Milford Haven was married twice:
-
-
-Death
-
-Milford Haven died of a heart attack, aged 50, on 14 April 1970 in London.
-His ashes were buried in the Battenberg Chapel at St. Mildred's Church, Whippingham, on the Isle of Wight (photo).
+Prince François of Orléans, Count of Clermont (François Henri Louis Marie; 7 February 1961 – 30 December 2017) was the eldest son and heir apparent of the Orléanist pretender to the French throne, Prince Henri, Count of Paris, Duke of France and Duchess Marie-Thérèse of Württemberg.
+However, his mother had been infected with toxoplasmosis during her second and third pregnancies, and the pre-natal exposure left both Prince François and his younger sister, Princess Blanche, developmentally disabled.
+When he was 13, his parents separated and François spent weekdays in a facility at Beaumont-sur-Oise and, from the early 1980s, in a L'Arche community, rejoining his mother and siblings at the Orléans estate in Dreux on weekends, while sometimes vacationing with his paternal grandmother at the Chateau d'Eu, where she taught him to walk when he was 4 or 5.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -129,39 +111,9 @@ His ashes were buried in the Battenberg Chapel at St. Mildred's Church, Whipping
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -176,6 +128,23 @@ His ashes were buried in the Battenberg Chapel at St. Mildred's Church, Whipping
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -193,6 +162,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,29 +244,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -291,6 +267,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -303,6 +287,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -311,17 +297,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -349,6 +337,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -364,97 +436,128 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c13b24be-e579-4416-80bc-4c49c521c89a)
- Call ID: c13b24be-e579-4416-80bc-4c49c521c89a
+  AssignClass (a11c0aec-3768-48b0-82a9-d14f9f4c7cdc)
+ Call ID: a11c0aec-3768-48b0-82a9-d14f9f4c7cdc
   Args:
+    source: :Prince_Francois_of_Orleans
     type: :Man
-    source: :David_Michael_Mountbatten
-  AssignClass (70bbdcde-3b1c-468d-aa63-8e6b313f8512)
- Call ID: 70bbdcde-3b1c-468d-aa63-8e6b313f8512
+  AssignClass (f044b3d9-cd44-4b73-a13a-8a4ef1ddaed1)
+ Call ID: f044b3d9-cd44-4b73-a13a-8a4ef1ddaed1
   Args:
     type: :Person
-    source: :David_Michael_Mountbatten
-  AddLiteral (a1c859d8-66f3-4696-9b08-52813aee93ba)
- Call ID: a1c859d8-66f3-4696-9b08-52813aee93ba
+    source: :Prince_Francois_of_Orleans
+  AddLiteral (4b6583c3-f55c-434e-a962-4e2487ea4ef6)
+ Call ID: 4b6583c3-f55c-434e-a962-4e2487ea4ef6
   Args:
+    literal_value: Prince François of Orléans, Count of Clermont
+    literal_type: xsd:string
+    relation: :knownAs
+    source: :Prince_Francois_of_Orleans
+  AddLiteral (9a2af44d-d714-4fee-85a7-3df387e30c06)
+ Call ID: 9a2af44d-d714-4fee-85a7-3df387e30c06
+  Args:
+    source: :Prince_Francois_of_Orleans
     relation: :hasBirthYear
-    source: :David_Michael_Mountbatten
     literal_type: xsd:integer
-    literal_value: 1919
-  AddLiteral (7dc790f7-e9e9-4673-b0dd-8297a9f80981)
- Call ID: 7dc790f7-e9e9-4673-b0dd-8297a9f80981
+    literal_value: 1961
+  AddLiteral (7ab93188-6f3e-42cb-8d4d-936b6029b61d)
+ Call ID: 7ab93188-6f3e-42cb-8d4d-936b6029b61d
   Args:
-    literal_value: 1970
-    source: :David_Michael_Mountbatten
+    literal_value: 2017
+    source: :Prince_Francois_of_Orleans
     relation: :hasDeathYear
     literal_type: xsd:integer
-  AssignClass (77250efb-5fa2-4f7d-892e-97f3b460f4da)
- Call ID: 77250efb-5fa2-4f7d-892e-97f3b460f4da
+  AssignClass (d98823ce-f09b-4d5c-8a83-9cee187d80c9)
+ Call ID: d98823ce-f09b-4d5c-8a83-9cee187d80c9
   Args:
-    source: :George_Mountbatten
     type: :Man
-  AssignClass (e32fe6d1-e973-4956-bf8f-610319bd959d)
- Call ID: e32fe6d1-e973-4956-bf8f-610319bd959d
+    source: :Prince_Henri_Count_of_Paris
+  AssignClass (87fd4254-bd4e-4fb1-9f6c-51e19097e7e1)
+ Call ID: 87fd4254-bd4e-4fb1-9f6c-51e19097e7e1
   Args:
-    source: :George_Mountbatten
     type: :Person
-  AssignClass (589f445b-6638-4904-bb34-2fc040d9b49e)
- Call ID: 589f445b-6638-4904-bb34-2fc040d9b49e
+    source: :Prince_Henri_Count_of_Paris
+  AssignClass (77334dc9-5fed-4acf-982d-59938adcd909)
+ Call ID: 77334dc9-5fed-4acf-982d-59938adcd909
   Args:
-    source: :Nadejda_Mikhailovna_of_Torby
     type: :Woman
-  AssignClass (80cb4b5e-aa31-4054-b321-c2f682cd5e16)
- Call ID: 80cb4b5e-aa31-4054-b321-c2f682cd5e16
+    source: :Duchess_Marie_Therese_of_Wurttemberg
+  AssignClass (e1d20b02-e455-4872-90b2-764c3f764e72)
+ Call ID: e1d20b02-e455-4872-90b2-764c3f764e72
   Args:
-    source: :Nadejda_Mikhailovna_of_Torby
     type: :Person
-  AddTriple (e565aa25-4657-4ec0-a3ac-0830e19b5210)
- Call ID: e565aa25-4657-4ec0-a3ac-0830e19b5210
+    source: :Duchess_Marie_Therese_of_Wurttemberg
+  AddTriple (72c0e989-08d2-4035-a172-9c8d70a93179)
+ Call ID: 72c0e989-08d2-4035-a172-9c8d70a93179
   Args:
-    source: :David_Michael_Mountbatten
-    target: :George_Mountbatten
+    target: :Prince_Henri_Count_of_Paris
+    source: :Prince_Francois_of_Orleans
     relation: :hasFather
-  AddTriple (db30e287-d052-47b2-8880-5db21f01ac22)
- Call ID: db30e287-d052-47b2-8880-5db21f01ac22
+  AddTriple (c57b4228-ec3f-4c96-a1c7-ba2b695b4d29)
+ Call ID: c57b4228-ec3f-4c96-a1c7-ba2b695b4d29
   Args:
-    target: :Nadejda_Mikhailovna_of_Torby
-    source: :David_Michael_Mountbatten
+    source: :Prince_Francois_of_Orleans
     relation: :hasMother
-  AssignClass (68f3e76f-1668-4956-a57f-c4aadbd2770f)
- Call ID: 68f3e76f-1668-4956-a57f-c4aadbd2770f
+    target: :Duchess_Marie_Therese_of_Wurttemberg
+  AssignClass (b2baf35c-076e-4dd8-95d5-ef81d26f4a00)
+ Call ID: b2baf35c-076e-4dd8-95d5-ef81d26f4a00
   Args:
-    source: :Prince_Louis_of_Battenberg
-    type: :Man
-  AssignClass (559d4136-f233-4d8a-84c6-bc4730413024)
- Call ID: 559d4136-f233-4d8a-84c6-bc4730413024
-  Args:
-    type: :Person
-    source: :Prince_Louis_of_Battenberg
-  AssignClass (9a32ce7d-5ae9-4aef-9c2b-677d7979a70f)
- Call ID: 9a32ce7d-5ae9-4aef-9c2b-677d7979a70f
-  Args:
-    source: :Princess_Victoria_of_Hesse_and_by_Rhine
     type: :Woman
-  AssignClass (409cfa24-0ce8-41a2-9b4f-6ade4802c396)
- Call ID: 409cfa24-0ce8-41a2-9b4f-6ade4802c396
+    source: :Princess_Blanche
+  AssignClass (032f2af4-00a7-4deb-a97c-90366bb52029)
+ Call ID: 032f2af4-00a7-4deb-a97c-90366bb52029
   Args:
-    source: :Princess_Victoria_of_Hesse_and_by_Rhine
     type: :Person
-  AddTriple (8120f64c-11a9-4d79-9f64-63818af9304c)
- Call ID: 8120f64c-11a9-4d79-9f64-63818af9304c
+    source: :Princess_Blanche
+  AddTriple (d1df96ff-82f5-4d4a-89e1-baba1fd35bfc)
+ Call ID: d1df96ff-82f5-4d4a-89e1-baba1fd35bfc
   Args:
-    source: :George_Mountbatten
-    target: :Prince_Louis_of_Battenberg
+    relation: :hasSister
+    source: :Prince_Francois_of_Orleans
+    target: :Princess_Blanche
+  AddTriple (4267c30c-5b73-407d-ad53-3fe90c636d7e)
+ Call ID: 4267c30c-5b73-407d-ad53-3fe90c636d7e
+  Args:
+    target: :Prince_Henri_Count_of_Paris
+    source: :Princess_Blanche
     relation: :hasFather
-  AddTriple (83958408-b8d6-49a6-bb49-00faa4680df3)
- Call ID: 83958408-b8d6-49a6-bb49-00faa4680df3
+  AddTriple (041ac89a-37ad-4738-a23d-4eac7cf72a12)
+ Call ID: 041ac89a-37ad-4738-a23d-4eac7cf72a12
   Args:
-    source: :George_Mountbatten
-    target: :Princess_Victoria_of_Hesse_and_by_Rhine
+    target: :Duchess_Marie_Therese_of_Wurttemberg
+    source: :Princess_Blanche
     relation: :hasMother
-  Finish (6fe9d203-0080-46a2-88ad-20522ee5c86e)
- Call ID: 6fe9d203-0080-46a2-88ad-20522ee5c86e
+  AssignClass (cb48e18a-2573-49f6-bc07-5cc5128c9b90)
+ Call ID: cb48e18a-2573-49f6-bc07-5cc5128c9b90
   Args:
+    source: :Paternal_Grandmother
+    type: :Woman
+  AssignClass (9914ad38-cb5b-4a87-a7cf-f0276aa35ed6)
+ Call ID: 9914ad38-cb5b-4a87-a7cf-f0276aa35ed6
+  Args:
+    source: :Paternal_Grandmother
+    type: :Person
+  AddTriple (c8cfb6de-0692-4fd2-8860-cd64cdeb9298)
+ Call ID: c8cfb6de-0692-4fd2-8860-cd64cdeb9298
+  Args:
+    source: :Prince_Henri_Count_of_Paris
+    relation: :hasMother
+    target: :Paternal_Grandmother
+  Finish (37602759-cdf1-4807-92a8-5810b1807a5e)
+ Call ID: 37602759-cdf1-4807-92a8-5810b1807a5e
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -523,26 +626,29 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:David_Michael_Mountbatten a :Man,
+  data:Prince_Francois_of_Orleans a :Man,
           :Person ;
-      :hasBirthYear 1919 ;
-      :hasDeathYear 1970 ;
-      :hasFather data:George_Mountbatten ;
-      :hasMother data:Nadejda_Mikhailovna_of_Torby .
+      :hasBirthYear 1961 ;
+      :hasDeathYear 2017 ;
+      :hasFather data:Prince_Henri_Count_of_Paris ;
+      :hasMother data:Duchess_Marie_Therese_of_Wurttemberg ;
+      :hasSister data:Princess_Blanche ;
+      :knownAs "Prince François of Orléans, Count of Clermont"^^xsd:string .
 
-  data:George_Mountbatten a :Man,
-          :Person ;
-      :hasFather data:Prince_Louis_of_Battenberg ;
-      :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine .
-
-  data:Nadejda_Mikhailovna_of_Torby a :Person,
+  data:Paternal_Grandmother a :Person,
           :Woman .
 
-  data:Prince_Louis_of_Battenberg a :Man,
-          :Person .
+  data:Princess_Blanche a :Person,
+          :Woman ;
+      :hasFather data:Prince_Henri_Count_of_Paris ;
+      :hasMother data:Duchess_Marie_Therese_of_Wurttemberg .
 
-  data:Princess_Victoria_of_Hesse_and_by_Rhine a :Person,
+  data:Duchess_Marie_Therese_of_Wurttemberg a :Person,
           :Woman .
+
+  data:Prince_Henri_Count_of_Paris a :Man,
+          :Person ;
+      :hasMother data:Paternal_Grandmother .
 
 
 
@@ -554,110 +660,134 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (73a8e131-0767-4796-b9fe-3c44ff6666a8)
- Call ID: 73a8e131-0767-4796-b9fe-3c44ff6666a8
+  ValidateShacl (26ebdaad-6310-4d00-8390-7826919fd449)
+ Call ID: 26ebdaad-6310-4d00-8390-7826919fd449
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:15
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Louis_of_Battenberg, assigned as the father of George_Mountbatten, lacks the mandatory class :Ancestor or :Man.
+      The node 'Prince_Henri_Count_of_Paris' assigned as the father of 'Prince_Francois_of_Orleans' lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Louis_of_Battenberg, :Ancestor)
+      AssignClass(node='Prince_Henri_Count_of_Paris', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node George_Mountbatten, assigned as the father of David_Michael_Mountbatten, lacks the mandatory class :Ancestor or :Man.
+      The node 'Paternal_Grandmother' assigned as the mother of 'Prince_Henri_Count_of_Paris' lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(George_Mountbatten, :Ancestor)
+      AssignClass(node='Paternal_Grandmother', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Princess_Victoria_of_Hesse_and_by_Rhine, assigned as the mother of George_Mountbatten, lacks the mandatory class :Ancestor or :Woman.
+      The node 'Duchess_Marie_Therese_of_Wurttemberg' assigned as the mother of 'Prince_Francois_of_Orleans' lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Victoria_of_Hesse_and_by_Rhine, :Ancestor)
+      AssignClass(node='Duchess_Marie_Therese_of_Wurttemberg', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Nadejda_Mikhailovna_of_Torby, assigned as the mother of David_Michael_Mountbatten, lacks the mandatory class :Ancestor or :Woman.
+      The node 'Prince_Henri_Count_of_Paris' assigned as the father of 'Princess_Blanche' lacks the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Nadejda_Mikhailovna_of_Torby, :Ancestor)
+      AssignClass(node='Prince_Henri_Count_of_Paris', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Louis_of_Battenberg, assigned as the father of George_Mountbatten, lacks the mandatory class :Ancestor or :Man.
+      The node 'Prince_Henri_Count_of_Paris' is already linked as father to 'Prince_Francois_of_Orleans', but the class assignment is missing the ':Ancestor' type.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Louis_of_Battenberg, :Man)
+      AssignClass(node='Prince_Henri_Count_of_Paris', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node George_Mountbatten, assigned as the father of David_Michael_Mountbatten, lacks the mandatory class :Ancestor or :Man.
+      The node 'Paternal_Grandmother' is already linked as mother to 'Prince_Henri_Count_of_Paris', but the class assignment is missing the ':Ancestor' type.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(George_Mountbatten, :Man)
+      AssignClass(node='Paternal_Grandmother', class=':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Princess_Victoria_of_Hesse_and_by_Rhine, assigned as the mother of George_Mountbatten, lacks the mandatory class :Ancestor or :Woman.
+      The node 'Duchess_Marie_Therese_of_Wurttemberg' is already linked as mother to 'Princess_Blanche', but the class assignment is missing the ':Ancestor' type.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Victoria_of_Hesse_and_by_Rhine, :Woman)
+      AssignClass(node='Duchess_Marie_Therese_of_Wurttemberg', class=':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Nadejda_Mikhailovna_of_Torby, assigned as the mother of David_Michael_Mountbatten, lacks the mandatory class :Ancestor or :Woman.
+      The node 'Duchess_Marie_Therese_of_Wurttemberg' is already linked as mother to 'Prince_Francois_of_Orleans', but the class assignment is missing the ':Ancestor' type.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Nadejda_Mikhailovna_of_Torby, :Woman)
+      AssignClass(node='Duchess_Marie_Therese_of_Wurttemberg', class=':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Louis_of_Battenberg, assigned as the father of George_Mountbatten, lacks the mandatory class :Ancestor or :Man.
+      The node 'Prince_Henri_Count_of_Paris' is already linked as father to 'Princess_Blanche', but the class assignment is missing the ':Ancestor' type.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Louis_of_Battenberg, :Ancestor)
+      AssignClass(node='Prince_Henri_Count_of_Paris', class=':Ancestor')
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node George_Mountbatten, assigned as the father of David_Michael_Mountbatten, lacks the mandatory class :Ancestor or :Man.
+      The node 'Prince_Henri_Count_of_Paris' is already linked as father to 'Prince_Francois_of_Orleans', but the class assignment is missing the ':Ancestor' type.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(George_Mountbatten, :Ancestor)
+      AssignClass(node='Prince_Henri_Count_of_Paris', class=':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Princess_Victoria_of_Hesse_and_by_Rhine, assigned as the mother of George_Mountbatten, lacks the mandatory class :Ancestor or :Woman.
+      The node 'Paternal_Grandmother' is already linked as mother to 'Prince_Henri_Count_of_Paris', but the class assignment is missing the ':Ancestor' type.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Victoria_of_Hesse_and_by_Rhine, :Ancestor)
+      AssignClass(node='Paternal_Grandmother', class=':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Nadejda_Mikhailovna_of_Torby, assigned as the mother of David_Michael_Mountbatten, lacks the mandatory class :Ancestor or :Woman.
+      The node 'Duchess_Marie_Therese_of_Wurttemberg' is already linked as mother to 'Princess_Blanche', but the class assignment is missing the ':Ancestor' type.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Nadejda_Mikhailovna_of_Torby, :Ancestor)
+      AssignClass(node='Duchess_Marie_Therese_of_Wurttemberg', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Duchess_Marie_Therese_of_Wurttemberg' is already linked as mother to 'Prince_Francois_of_Orleans', but the class assignment is missing the ':Ancestor' type.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Duchess_Marie_Therese_of_Wurttemberg', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Prince_Henri_Count_of_Paris' is already linked as father to 'Princess_Blanche', but the class assignment is missing the ':Ancestor' type.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Henri_Count_of_Paris', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Duchess_Marie_Therese_of_Wurttemberg' is already linked as mother to 'Princess_Blanche', but the class assignment is missing the ':Ancestor' type.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Duchess_Marie_Therese_of_Wurttemberg', class=':Ancestor')
 
 
 
@@ -666,33 +796,24 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (31ab7533-52b8-409a-bba2-e8e092da3cf9)
- Call ID: 31ab7533-52b8-409a-bba2-e8e092da3cf9
+  AssignClass (6995f26e-e8b9-4c72-b764-5a874d055101)
+ Call ID: 6995f26e-e8b9-4c72-b764-5a874d055101
+  Args:
+    source: :Prince_Henri_Count_of_Paris
+    type: :Ancestor
+  AssignClass (15b75431-19c5-4263-ad32-d89e6d1e0f44)
+ Call ID: 15b75431-19c5-4263-ad32-d89e6d1e0f44
   Args:
     type: :Ancestor
-    source: :Prince_Louis_of_Battenberg
-  AssignClass (b9d0621b-e4c3-4f75-9af1-fb2ee85f884f)
- Call ID: b9d0621b-e4c3-4f75-9af1-fb2ee85f884f
+    source: :Duchess_Marie_Therese_of_Wurttemberg
+  AssignClass (6cf345ef-6ed1-41b2-9193-4b07326e4976)
+ Call ID: 6cf345ef-6ed1-41b2-9193-4b07326e4976
   Args:
     type: :Ancestor
-    source: :George_Mountbatten
-  AssignClass (1d8d0c88-5e7e-4d06-b088-b2bc12f46030)
- Call ID: 1d8d0c88-5e7e-4d06-b088-b2bc12f46030
+    source: :Paternal_Grandmother
+  ValidateShacl (2a858d0f-7a29-45f3-bce0-4c242ce610e3)
+ Call ID: 2a858d0f-7a29-45f3-bce0-4c242ce610e3
   Args:
-    type: :Ancestor
-    source: :Princess_Victoria_of_Hesse_and_by_Rhine
-  AssignClass (3266dbc4-1093-45dc-8a18-8ba5679e4cfa)
- Call ID: 3266dbc4-1093-45dc-8a18-8ba5679e4cfa
-  Args:
-    type: :Ancestor
-    source: :Nadejda_Mikhailovna_of_Torby
-  ValidateShacl (bf6e1f84-c2ae-44ab-a087-6290c476a30c)
- Call ID: bf6e1f84-c2ae-44ab-a087-6290c476a30c
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -709,30 +830,32 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:David_Michael_Mountbatten a :Man,
+  data:Prince_Francois_of_Orleans a :Man,
           :Person ;
-      :hasBirthYear 1919 ;
-      :hasDeathYear 1970 ;
-      :hasFather data:George_Mountbatten ;
-      :hasMother data:Nadejda_Mikhailovna_of_Torby .
+      :hasBirthYear 1961 ;
+      :hasDeathYear 2017 ;
+      :hasFather data:Prince_Henri_Count_of_Paris ;
+      :hasMother data:Duchess_Marie_Therese_of_Wurttemberg ;
+      :hasSister data:Princess_Blanche ;
+      :knownAs "Prince François of Orléans, Count of Clermont"^^xsd:string .
 
-  data:George_Mountbatten a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Prince_Louis_of_Battenberg ;
-      :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine .
-
-  data:Nadejda_Mikhailovna_of_Torby a :Ancestor,
+  data:Paternal_Grandmother a :Ancestor,
           :Person,
           :Woman .
 
-  data:Prince_Louis_of_Battenberg a :Ancestor,
-          :Man,
-          :Person .
+  data:Princess_Blanche a :Person,
+          :Woman ;
+      :hasFather data:Prince_Henri_Count_of_Paris ;
+      :hasMother data:Duchess_Marie_Therese_of_Wurttemberg .
 
-  data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+  data:Duchess_Marie_Therese_of_Wurttemberg a :Ancestor,
           :Person,
           :Woman .
+
+  data:Prince_Henri_Count_of_Paris a :Ancestor,
+          :Man,
+          :Person ;
+      :hasMother data:Paternal_Grandmother .
 
 
 
@@ -744,6 +867,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (e5bda3a9-b8ad-4b69-b31b-f12ae6e55f76)
- Call ID: e5bda3a9-b8ad-4b69-b31b-f12ae6e55f76
+  Finish (7c6d08ba-cbb8-4f15-9955-78b20dc79d99)
+ Call ID: 7c6d08ba-cbb8-4f15-9955-78b20dc79d99
   Args:

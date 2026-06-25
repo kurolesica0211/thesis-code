@@ -2,40 +2,75 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+data:AlbertIOfBelgium a :Man,
+        :Person .
+
+data:AlexanderCrownPrinceOfYugoslavia a :Man,
+        :Person .
+
+data:AlexanderIIOfRussia a :Man,
+        :Person .
+
+data:ChristianIXOfDenmark a :Man,
+        :Person .
+
+data:GeorgeIOfGreece a :Man,
+        :Person .
+
+data:MiguelIOfPortugal a :Man,
+        :Person .
+
+data:NicholasIOfMontenegro a :Man,
+        :Person .
+
+data:PrinceAlexanderOfSerbia a :Man,
+        :Person .
+
 data:PrinceDimitriOfYugoslavia a :Man,
         :Person ;
-    :alsoKnownAs "Dimitri Karageorgevich"^^xsd:string,
-        "Dimitrije Karađorđević"^^xsd:string ;
+    :alsoKnownAs data:DimitriKarageorgevich,
+        data:DimitrijeKaradordevic ;
     :hasBirthYear 1958 ;
-    :isSiblingOf data:PrinceMichaelOfYugoslavia ;
-    :isSonOf data:PrinceAlexanderOfYugoslavia,
-        data:PrincessMariaPiaOfSavoy .
+    :hasFather data:PrinceAlexanderOfYugoslavia ;
+    :hasMother data:PrincessMariaPiaOfSavoy .
 
 data:PrinceDushanOfYugoslavia a :Man,
         :Person ;
-    :isSonOf data:PrinceAlexanderOfYugoslavia,
-        data:PrincessBarbaraOfLiechtenstein .
-
-data:PrinceSergeOfYugoslavia a :Man,
-        :Person ;
-    :isSiblingOf data:PrincessHeleneOfYugoslavia ;
-    :isSonOf data:PrincessMariaPiaOfSavoy .
+    :hasFather data:PrinceAlexanderOfYugoslavia ;
+    :hasMother data:PrincessBarbaraOfLiechtenstein .
 
 data:PrinceMichaelOfYugoslavia a :Man,
         :Person ;
-    :isSonOf data:PrinceAlexanderOfYugoslavia,
-        data:PrincessMariaPiaOfSavoy .
+    :hasFather data:PrinceAlexanderOfYugoslavia ;
+    :hasMother data:PrincessMariaPiaOfSavoy .
+
+data:PrinceRegentPaulOfYugoslavia a :Man,
+        :Person .
+
+data:PrinceSergeOfYugoslavia a :Man,
+        :Person ;
+    :hasFather data:PrinceAlexanderOfYugoslavia ;
+    :hasMother data:PrincessMariaPiaOfSavoy .
+
+data:PrincessHeleneOfYugoslavia a :Person,
+        :Woman ;
+    :hasFather data:PrinceAlexanderOfYugoslavia ;
+    :hasMother data:PrincessMariaPiaOfSavoy .
+
+data:DimitriKarageorgevich a :Person .
+
+data:DimitrijeKaradordevic a :Person .
 
 data:PrincessBarbaraOfLiechtenstein a :Person,
         :Woman .
 
-data:PrincessHeleneOfYugoslavia a :Person,
-        :Woman ;
-    :isDaughterOf data:PrincessMariaPiaOfSavoy .
-
-data:PrinceAlexanderOfYugoslavia a :Man,
+data:UmbertoIIOfItaly a :Man,
         :Person .
 
 data:PrincessMariaPiaOfSavoy a :Person,
-        :Woman .
+        :Woman ;
+    :hasFather data:UmbertoIIOfItaly .
+
+data:PrinceAlexanderOfYugoslavia a :Man,
+        :Person .
 

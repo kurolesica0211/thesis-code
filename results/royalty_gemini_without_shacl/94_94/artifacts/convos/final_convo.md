@@ -87,6 +87,8 @@ With the headship of the house passing through the male line, the heir presumpti
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -102,39 +104,9 @@ With the headship of the house passing through the male line, the heir presumpti
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -149,6 +121,23 @@ With the headship of the house passing through the male line, the heir presumpti
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -166,6 +155,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -233,29 +237,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,6 +260,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -276,6 +280,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -284,17 +290,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -322,6 +330,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -337,343 +429,118 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2bf30972-6e98-4a23-8c09-7518639d5a56)
- Call ID: 2bf30972-6e98-4a23-8c09-7518639d5a56
+  AssignClass (a3cf333b-8c08-4131-beec-e102df82af6c)
+ Call ID: a3cf333b-8c08-4131-beec-e102df82af6c
   Args:
     type: :Man
     source: Wilhelm_Herzog_von_Württemberg
-  AssignClass (bea7fad1-a8c2-46b9-9679-274e9217826c)
- Call ID: bea7fad1-a8c2-46b9-9679-274e9217826c
+  AssignClass (264a0383-c6b3-40de-b7db-80a09ca5c001)
+ Call ID: 264a0383-c6b3-40de-b7db-80a09ca5c001
   Args:
-    type: :Person
-    source: Wilhelm_Herzog_von_Württemberg
-  AddTriple (8ab59dda-8ed2-4019-8de9-07ba6649c524)
- Call ID: 8ab59dda-8ed2-4019-8de9-07ba6649c524
+    source: Friedrich_Hereditary_Duke_of_Württemberg
+    type: :Man
+  AssignClass (fd04567f-d1cc-4ac6-a8c2-bb7bf5366cf7)
+ Call ID: fd04567f-d1cc-4ac6-a8c2-bb7bf5366cf7
   Args:
-    relation: :hasSex
-    target: :Male
-    source: Wilhelm_Herzog_von_Württemberg
-  AddLiteral (10778a53-e4e8-48ba-86d8-35b6b7259e50)
- Call ID: 10778a53-e4e8-48ba-86d8-35b6b7259e50
+    source: Princess_Marie_Wilhelmine_of_Wied
+    type: :Woman
+  AssignClass (5d3ddbc3-aecf-4c46-bb73-60e5ce9f0028)
+ Call ID: 5d3ddbc3-aecf-4c46-bb73-60e5ce9f0028
+  Args:
+    source: Carl_Duke_of_Württemberg
+    type: :Man
+  AssignClass (5da66b95-6e45-4e17-9b59-a138791363c3)
+ Call ID: 5da66b95-6e45-4e17-9b59-a138791363c3
+  Args:
+    source: Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg
+    type: :Man
+  AssignClass (429019da-ae17-4bd6-ac4c-6bd2c097b1a1)
+ Call ID: 429019da-ae17-4bd6-ac4c-6bd2c097b1a1
+  Args:
+    type: :Man
+    source: Prince_Wilhelm_of_Wied
+  AssignClass (a428454c-9823-48e5-81c5-bc920b4312fb)
+ Call ID: a428454c-9823-48e5-81c5-bc920b4312fb
+  Args:
+    type: :Man
+    source: Duke_Eberhard_of_Württemberg
+  AssignClass (51345a68-31f8-4ac3-9ff2-ac427ac10763)
+ Call ID: 51345a68-31f8-4ac3-9ff2-ac427ac10763
+  Args:
+    type: :Woman
+    source: Gaby_Maier
+  AddLiteral (6e379a84-ce51-4199-8a5a-b85e34d1bc01)
+ Call ID: 6e379a84-ce51-4199-8a5a-b85e34d1bc01
   Args:
     literal_type: xsd:integer
     source: Wilhelm_Herzog_von_Württemberg
-    relation: :hasBirthYear
     literal_value: 1994
-  AssignClass (53427ed9-c2ff-4c70-b733-adc3ab951bc9)
- Call ID: 53427ed9-c2ff-4c70-b733-adc3ab951bc9
-  Args:
-    type: :Man
-    source: Friedrich_Hereditary_Duke_of_Württemberg
-  AssignClass (0d9cc53a-5f15-4392-b243-23f2b523dd22)
- Call ID: 0d9cc53a-5f15-4392-b243-23f2b523dd22
-  Args:
-    type: :Person
-    source: Friedrich_Hereditary_Duke_of_Württemberg
-  AddTriple (c99e585e-89ac-41e2-9edd-e88ca1c74bb2)
- Call ID: c99e585e-89ac-41e2-9edd-e88ca1c74bb2
-  Args:
-    source: Friedrich_Hereditary_Duke_of_Württemberg
-    relation: :hasSex
-    target: :Male
-  AddLiteral (2e2c0c3b-bb5d-4879-9ee2-9b614baa7582)
- Call ID: 2e2c0c3b-bb5d-4879-9ee2-9b614baa7582
-  Args:
-    literal_type: xsd:integer
-    source: Friedrich_Hereditary_Duke_of_Württemberg
     relation: :hasBirthYear
+  AddLiteral (7de6c73f-4ea4-4ad7-8fdb-c750152fe5f1)
+ Call ID: 7de6c73f-4ea4-4ad7-8fdb-c750152fe5f1
+  Args:
+    relation: :hasBirthYear
+    source: Friedrich_Hereditary_Duke_of_Württemberg
+    literal_type: xsd:integer
     literal_value: 1961
-  AddLiteral (c359e4db-9c73-4b40-bf3f-2a01cea76e5e)
- Call ID: c359e4db-9c73-4b40-bf3f-2a01cea76e5e
+  AddLiteral (1da0c147-7db5-4312-93c4-e9f823ecf0e9)
+ Call ID: 1da0c147-7db5-4312-93c4-e9f823ecf0e9
   Args:
     relation: :hasDeathYear
     literal_value: 2018
+    literal_type: xsd:integer
     source: Friedrich_Hereditary_Duke_of_Württemberg
-    literal_type: xsd:integer
-  AssignClass (82dbdbe7-64b5-426c-b646-d51d4a7d39e3)
- Call ID: 82dbdbe7-64b5-426c-b646-d51d4a7d39e3
+  AddLiteral (66e21094-322d-4924-99e6-3e44aa172311)
+ Call ID: 66e21094-322d-4924-99e6-3e44aa172311
   Args:
-    type: :Woman
-    source: Princess_Marie_Wilhelmine_of_Wied
-  AssignClass (5e60b195-6562-408d-8a93-c2f470cdcedd)
- Call ID: 5e60b195-6562-408d-8a93-c2f470cdcedd
-  Args:
-    type: :Person
-    source: Princess_Marie_Wilhelmine_of_Wied
-  AddTriple (26ac870e-3a71-47c2-b0e1-e94320842cae)
- Call ID: 26ac870e-3a71-47c2-b0e1-e94320842cae
-  Args:
-    relation: :hasSex
-    target: :Female
-    source: Princess_Marie_Wilhelmine_of_Wied
-  AddLiteral (1c43cf5f-0031-499e-bd01-1b7718b47fd0)
- Call ID: 1c43cf5f-0031-499e-bd01-1b7718b47fd0
-  Args:
-    literal_value: 1973
     relation: :hasBirthYear
+    literal_value: 1973
     source: Princess_Marie_Wilhelmine_of_Wied
     literal_type: xsd:integer
-  AddTriple (acb76629-0c83-4d89-889b-9916dfadbbaa)
- Call ID: acb76629-0c83-4d89-889b-9916dfadbbaa
+  AddLiteral (21227200-153c-4ee5-8dba-8cd46cbb4a5f)
+ Call ID: 21227200-153c-4ee5-8dba-8cd46cbb4a5f
+  Args:
+    relation: :hasDeathYear
+    literal_value: 2022
+    source: Carl_Duke_of_Württemberg
+    literal_type: xsd:integer
+  AddLiteral (0846b0f9-caca-499b-b9a5-f61d1ec995f8)
+ Call ID: 0846b0f9-caca-499b-b9a5-f61d1ec995f8
+  Args:
+    relation: :hasMarriageYear
+    source: Gaby_Maier
+    literal_type: xsd:integer
+    literal_value: 2023
+  AddTriple (c4c9c415-1430-451b-be64-ac7c187a9fef)
+ Call ID: c4c9c415-1430-451b-be64-ac7c187a9fef
   Args:
     relation: :hasFather
-    target: :Friedrich_Hereditary_Duke_of_Württemberg
     source: Wilhelm_Herzog_von_Württemberg
-  AddTriple (65df3ac5-2beb-420a-9845-47959059844f)
- Call ID: 65df3ac5-2beb-420a-9845-47959059844f
+    target: Friedrich_Hereditary_Duke_of_Württemberg
+  AddTriple (287974a4-1d02-4bba-813d-692f9a8b6176)
+ Call ID: 287974a4-1d02-4bba-813d-692f9a8b6176
   Args:
+    target: Princess_Marie_Wilhelmine_of_Wied
     source: Wilhelm_Herzog_von_Württemberg
     relation: :hasMother
-    target: :Princess_Marie_Wilhelmine_of_Wied
-  AssignClass (52eac2fd-99d8-4d1c-bb25-472aada28fbc)
- Call ID: 52eac2fd-99d8-4d1c-bb25-472aada28fbc
+  AddTriple (c8ea7a0c-9fff-4997-bfb3-b8b8aa8d7563)
+ Call ID: c8ea7a0c-9fff-4997-bfb3-b8b8aa8d7563
   Args:
-    type: :Man
-    source: Carl_Duke_of_Württemberg
-  AssignClass (3253aa28-7ff9-4bf8-9dd7-faf5c4efb574)
- Call ID: 3253aa28-7ff9-4bf8-9dd7-faf5c4efb574
-  Args:
-    type: :Person
-    source: Carl_Duke_of_Württemberg
-  AddTriple (24943664-15d3-481b-9c2a-9c0d1d80ff57)
- Call ID: 24943664-15d3-481b-9c2a-9c0d1d80ff57
-  Args:
-    source: Carl_Duke_of_Württemberg
-    target: :Male
-    relation: :hasSex
-  AddTriple (b77d6b1b-6b20-4ef7-953c-73d796ab1d81)
- Call ID: b77d6b1b-6b20-4ef7-953c-73d796ab1d81
-  Args:
+    target: Friedrich_Hereditary_Duke_of_Württemberg
     source: Carl_Duke_of_Württemberg
     relation: :isFatherOf
-    target: :Friedrich_Hereditary_Duke_of_Württemberg
-  AssignClass (ff017c5b-516f-4f44-8e9f-f7067b807ef2)
- Call ID: ff017c5b-516f-4f44-8e9f-f7067b807ef2
-  Args:
-    type: :Man
-    source: Duke_Eberhard_of_Württemberg
-  AssignClass (47f0454a-8015-4707-bf95-cbf2026956b7)
- Call ID: 47f0454a-8015-4707-bf95-cbf2026956b7
-  Args:
-    type: :Person
-    source: Duke_Eberhard_of_Württemberg
-  AddTriple (63d9a6b8-ee0a-4c85-a761-9c8572e016f9)
- Call ID: 63d9a6b8-ee0a-4c85-a761-9c8572e016f9
+  AddTriple (8f89a025-93e1-41cb-abb4-c2c1677817e6)
+ Call ID: 8f89a025-93e1-41cb-abb4-c2c1677817e6
   Args:
     source: Duke_Eberhard_of_Württemberg
-    target: :Male
-    relation: :hasSex
-  AssignClass (dc06e661-8119-4e00-942b-fb31d1f8c6c5)
- Call ID: dc06e661-8119-4e00-942b-fb31d1f8c6c5
+    target: Friedrich_Hereditary_Duke_of_Württemberg
+    relation: :isBrotherOf
+  AddTriple (8ca3c0de-da9e-4736-a1bd-8a593408ec56)
+ Call ID: 8ca3c0de-da9e-4736-a1bd-8a593408ec56
   Args:
-    type: :Woman
-    source: Gaby_Maier
-  AssignClass (a1063b33-59df-4289-9616-08d17202cd3d)
- Call ID: a1063b33-59df-4289-9616-08d17202cd3d
-  Args:
-    type: :Person
-    source: Gaby_Maier
-  AddTriple (ed3a8bf0-8527-473f-8d0d-507b6ea5a985)
- Call ID: ed3a8bf0-8527-473f-8d0d-507b6ea5a985
-  Args:
-    target: :Female
-    relation: :hasSex
-    source: Gaby_Maier
-  AddTriple (94e83b91-a8e8-4e77-8df9-cd0a0abe5649)
- Call ID: 94e83b91-a8e8-4e77-8df9-cd0a0abe5649
-  Args:
-    target: :Gaby_Maier
-    relation: :hasRelation
-    source: Duke_Eberhard_of_Württemberg
-  AddLiteral (e73439c9-57e2-427d-96b6-4e34e4bdb1db)
- Call ID: e73439c9-57e2-427d-96b6-4e34e4bdb1db
-  Args:
-    literal_value: 2023
     relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: Duke_Eberhard_of_Württemberg
-  Finish (0991a18c-5ed0-48c4-92f5-4128b4c63447)
- Call ID: 0991a18c-5ed0-48c4-92f5-4128b4c63447
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Carl_Duke_of_W%C3%BCrttemberg a :Man,
-          :Person ;
-      :hasSex data:Male ;
-      :isFatherOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg .
-
-  data:Duke_Eberhard_of_W%C3%BCrttemberg a :Man,
-          :Person ;
-      :hasMarriageYear 2023 ;
-      :hasRelation data:Gaby_Maier ;
-      :hasSex data:Male .
-
-  data:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,
-          :Person ;
-      :hasBirthYear 1994 ;
-      :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
-      :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;
-      :hasSex data:Male .
-
-  data:Gaby_Maier a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Princess_Marie_Wilhelmine_of_Wied a :Person,
-          :Woman ;
-      :hasBirthYear 1973 ;
-      :hasSex data:Female .
-
-  data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Man,
-          :Person ;
-      :hasBirthYear 1961 ;
-      :hasDeathYear 2018 ;
-      :hasSex data:Male .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male', 'Female']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (e662ba10-62dc-4eca-905c-6ae73a965de4)
- Call ID: e662ba10-62dc-4eca-905c-6ae73a965de4
-  Args:
-    type: :Sex
-    source: Male
-  AssignClass (f478f7c7-495d-4ba6-9c40-682bc43b0f94)
- Call ID: f478f7c7-495d-4ba6-9c40-682bc43b0f94
-  Args:
-    type: :Sex
-    source: Female
-  Finish (f2d9a4d5-b554-42aa-a996-8c95e1c34714)
- Call ID: f2d9a4d5-b554-42aa-a996-8c95e1c34714
+    target: Duke_Eberhard_of_Württemberg
+    source: Gaby_Maier
+  Finish (2aaae288-51b9-4d38-82af-6327cd40efe4)
+ Call ID: 2aaae288-51b9-4d38-82af-6327cd40efe4
   Args:

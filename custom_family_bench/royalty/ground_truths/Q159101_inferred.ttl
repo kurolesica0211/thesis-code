@@ -1,0 +1,323 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Alexandra_Manley-_Countess_of_Frederiksborg a :Person,
+        :Woman ;
+    rdfs:label "Alexandra Manley, Countess of Frederiksborg"^^xsd:string ;
+    data:posIndicesFull "4105:4131"^^xsd:string ;
+    data:posIndicesPart "4244:4253"^^xsd:string,
+        "4276:4284"^^xsd:string,
+        "4288:4301"^^xsd:string,
+        "4466:4474"^^xsd:string,
+        "4819:4827"^^xsd:string,
+        "5038:5046"^^xsd:string ;
+    data:wdtLink wdt:Q272905 ;
+    :alsoKnownAs "Alexandra Christina Manley"^^xsd:string,
+        "Alexandra Christina Manley, Countess of Frederiksborg"^^xsd:string,
+        "Alexandra Manley"^^xsd:string,
+        "Princess Alexandra, Countess of Frederiksborg"^^xsd:string,
+        "Princess Alexandra, Princess Joachim of Denmark"^^xsd:string ;
+    :hasRelation data:Alexandra_Manley-_Countess_of_Frederiksborg ;
+    :hasSex data:female ;
+    :hasSister data:Alexandra_Manley-_Countess_of_Frederiksborg ;
+    :isBloodrelationOf data:Alexandra_Manley-_Countess_of_Frederiksborg ;
+    :isSiblingOf data:Alexandra_Manley-_Countess_of_Frederiksborg ;
+    :isSisterOf data:Alexandra_Manley-_Countess_of_Frederiksborg .
+
+data:Princess_Marie_of_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Marie of Denmark"^^xsd:string ;
+    data:posIndicesFull "4622:4637"^^xsd:string ;
+    data:posIndicesPart "4763:4770"^^xsd:string,
+        "5467:5474"^^xsd:string ;
+    data:wdtLink wdt:Q231895 ;
+    :alsoKnownAs "Marie Agathe Odile"^^xsd:string,
+        "Marie Agathe Odile Cavallier"^^xsd:string,
+        "Marie Cavallier"^^xsd:string,
+        "Princess Marie Agathe Odile of Denmark"^^xsd:string,
+        "Princess Marie of Denmark, Countess of Monpezat"^^xsd:string,
+        "Princess Marie, Countess of Monpezat"^^xsd:string ;
+    :hasRelation data:Princess_Marie_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marie_of_Denmark ;
+    :isBloodrelationOf data:Princess_Marie_of_Denmark ;
+    :isSiblingOf data:Princess_Marie_of_Denmark ;
+    :isSisterOf data:Princess_Marie_of_Denmark .
+
+data:female a :Female .
+
+data:Henrik-_Prince_Consort_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Henrik, Prince Consort of Denmark"^^xsd:string ;
+    data:posIndicesFull "4808:4814"^^xsd:string ;
+    data:posIndicesPart "5467:5474"^^xsd:string,
+        "5727:5733"^^xsd:string ;
+    data:wdtLink wdt:Q1389258 ;
+    :alsoKnownAs "Enric de Monpezat"^^xsd:string,
+        "Henri Marie Jean Andre de Laborde de Monpezat"^^xsd:string,
+        "Henri Marie Jean André de Laborde de Monpezat"^^xsd:string,
+        "Henri Marie Jean André de Laborde de Monpezat, Comte de Laborde de Monpezat"^^xsd:string,
+        "Henri de Monpezat"^^xsd:string,
+        "Henrik"^^xsd:string,
+        "Prince Henrik of Denmark"^^xsd:string ;
+    :hasBrother data:Henrik-_Prince_Consort_of_Denmark ;
+    :hasChild data:Prince_Joachim_of_Denmark ;
+    :hasRelation data:Henrik-_Prince_Consort_of_Denmark,
+        data:Prince_Joachim_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Joachim_of_Denmark ;
+    :isAncestorOf data:Prince_Joachim_of_Denmark ;
+    :isBloodrelationOf data:Henrik-_Prince_Consort_of_Denmark ;
+    :isBrotherOf data:Henrik-_Prince_Consort_of_Denmark ;
+    :isFatherOf data:Prince_Joachim_of_Denmark ;
+    :isParentOf data:Prince_Joachim_of_Denmark ;
+    :isSiblingOf data:Henrik-_Prince_Consort_of_Denmark ;
+    :isUncleOf data:Prince_Joachim_of_Denmark .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederik IX of Denmark"^^xsd:string ;
+    data:posIndicesFull "4731:4742"^^xsd:string ;
+    data:posIndicesPart "5467:5474"^^xsd:string ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg"^^xsd:string,
+        "Frederick IX"^^xsd:string,
+        "Frederik IX"^^xsd:string,
+        "King Frederick IX of Denmark"^^xsd:string,
+        "King Frederik IX of Denmark"^^xsd:string ;
+    :hasBrother data:Frederik_IX_of_Denmark ;
+    :hasChild data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasDaughter data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasRelation data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Joachim_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasSex data:male ;
+    :isAncestorOf data:Margrethe_II_of_Denmark,
+        data:Prince_Joachim_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isBloodrelationOf data:Frederik_IX_of_Denmark ;
+    :isBrotherOf data:Frederik_IX_of_Denmark ;
+    :isFatherOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isParentOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isSiblingOf data:Frederik_IX_of_Denmark ;
+    :isUncleOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark .
+
+data:Ingrid_of_Sweden a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Ingrid of Sweden"^^xsd:string ;
+    data:posIndicesFull "4747:4759"^^xsd:string ;
+    data:wdtLink wdt:Q163010 ;
+    :alsoKnownAs "Ingrid Victoria Sofia Louise Margareta"^^xsd:string,
+        "Ingrid of Sweden"^^xsd:string,
+        "Ingrid, Queen of Denmark"^^xsd:string,
+        "Princess Ingrid of Sweden"^^xsd:string,
+        "Queen Ingrid"^^xsd:string ;
+    :hasChild data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasDaughter data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasRelation data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Joachim_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Ingrid_of_Sweden ;
+    :isAncestorOf data:Margrethe_II_of_Denmark,
+        data:Prince_Joachim_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isAuntOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isBloodrelationOf data:Ingrid_of_Sweden ;
+    :isMotherOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isParentOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isSiblingOf data:Ingrid_of_Sweden ;
+    :isSisterOf data:Ingrid_of_Sweden .
+
+data:Prince_Joachim_of_Denmark a :Man,
+        :Person ;
+    rdfs:label "Prince Joachim of Denmark"^^xsd:string ;
+    data:posIndicesFull "21:46"^^xsd:string,
+        "21:65"^^xsd:string,
+        "299:332"^^xsd:string,
+        "698:731"^^xsd:string ;
+    data:posIndicesPart "1068:1074"^^xsd:string,
+        "1087:1094"^^xsd:string,
+        "1243:1250"^^xsd:string,
+        "1308:1315"^^xsd:string,
+        "1482:1489"^^xsd:string,
+        "1596:1603"^^xsd:string,
+        "1664:1671"^^xsd:string,
+        "1830:1837"^^xsd:string,
+        "1916:1923"^^xsd:string,
+        "2087:2094"^^xsd:string,
+        "2339:2345"^^xsd:string,
+        "2476:2482"^^xsd:string,
+        "2509:2516"^^xsd:string,
+        "2624:2631"^^xsd:string,
+        "2705:2711"^^xsd:string,
+        "2852:2859"^^xsd:string,
+        "2985:2992"^^xsd:string,
+        "3088:3095"^^xsd:string,
+        "3422:3429"^^xsd:string,
+        "3445:3452"^^xsd:string,
+        "3555:3562"^^xsd:string,
+        "3650:3657"^^xsd:string,
+        "3736:3743"^^xsd:string,
+        "4089:4096"^^xsd:string,
+        "4501:4508"^^xsd:string,
+        "4578:4585"^^xsd:string,
+        "4702:4709"^^xsd:string,
+        "4763:4770"^^xsd:string,
+        "4844:4851"^^xsd:string,
+        "5060:5067"^^xsd:string,
+        "5147:5154"^^xsd:string,
+        "5279:5286"^^xsd:string,
+        "5326:5333"^^xsd:string,
+        "5413:5420"^^xsd:string,
+        "5467:5474"^^xsd:string,
+        "571:578"^^xsd:string,
+        "5727:5733"^^xsd:string,
+        "5734:5741"^^xsd:string ;
+    data:wdtLink wdt:Q159101 ;
+    :alsoKnownAs "Joachim Holger Valdemar Christian, Prince of Denmark"^^xsd:string,
+        "Joachim Holger Waldemar Christian"^^xsd:string,
+        "Prince Joachim of Denmark, Count of Monpezat"^^xsd:string ;
+    :hasAncestor data:Frederik_IX_of_Denmark,
+        data:Henrik-_Prince_Consort_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark ;
+    :hasBrother data:Prince_Joachim_of_Denmark ;
+    :hasFather data:Henrik-_Prince_Consort_of_Denmark ;
+    :hasMother data:Margrethe_II_of_Denmark ;
+    :hasParent data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :hasRelation data:Frederik_IX_of_Denmark,
+        data:Henrik-_Prince_Consort_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Joachim_of_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Joachim_of_Denmark ;
+    :isBrotherOf data:Prince_Joachim_of_Denmark ;
+    :isChildOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :isSiblingOf data:Prince_Joachim_of_Denmark ;
+    :isSonOf data:Henrik-_Prince_Consort_of_Denmark,
+        data:Margrethe_II_of_Denmark .
+
+data:Princess_Benedikte_of_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Benedikte of Denmark"^^xsd:string ;
+    data:posIndicesFull "892:921"^^xsd:string ;
+    data:posIndicesPart "1596:1603"^^xsd:string,
+        "2633:2641"^^xsd:string,
+        "2985:2992"^^xsd:string,
+        "3422:3429"^^xsd:string,
+        "3650:3657"^^xsd:string,
+        "4353:4361"^^xsd:string,
+        "4501:4508"^^xsd:string,
+        "4763:4770"^^xsd:string,
+        "5467:5474"^^xsd:string ;
+    data:wdtLink wdt:Q817052 ;
+    :alsoKnownAs "Benedikte Astrid Ingeborg Ingrid"^^xsd:string,
+        "Benedikte Astrid Ingeborg Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark"^^xsd:string,
+        "Princess Benedikte of Denmark, Princess of Sayn-Wittgenstein-Berleburg"^^xsd:string ;
+    :hasAncestor data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasRelation data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isAuntOf data:Prince_Joachim_of_Denmark ;
+    :isBloodrelationOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isChildOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isSiblingOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark .
+
+data:Margrethe_II_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Margrethe II of Denmark"^^xsd:string ;
+    data:posIndicesFull "417:429"^^xsd:string,
+        "6:18"^^xsd:string ;
+    data:posIndicesPart "1596:1603"^^xsd:string,
+        "2985:2992"^^xsd:string,
+        "3422:3429"^^xsd:string,
+        "3650:3657"^^xsd:string,
+        "4501:4508"^^xsd:string,
+        "4763:4770"^^xsd:string,
+        "5467:5474"^^xsd:string ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer"^^xsd:string,
+        "Margrethe II"^^xsd:string ;
+    :hasAncestor data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasChild data:Prince_Joachim_of_Denmark ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasRelation data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Joachim_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasSon data:Prince_Joachim_of_Denmark ;
+    :isAncestorOf data:Prince_Joachim_of_Denmark ;
+    :isAuntOf data:Prince_Joachim_of_Denmark ;
+    :isBloodrelationOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isChildOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isMotherOf data:Prince_Joachim_of_Denmark ;
+    :isParentOf data:Prince_Joachim_of_Denmark ;
+    :isSiblingOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark .
+

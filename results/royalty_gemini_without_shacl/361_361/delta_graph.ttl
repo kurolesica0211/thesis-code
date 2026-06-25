@@ -2,44 +2,54 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Adolf_Friedrich_Mecklenburg_Schwerin a :Man,
-        :Person ;
-    :hasBirthYear 1873 ;
-    :hasBrother data:Hendrik_Netherlands ;
-    :hasDeathYear 1969 ;
-    :hasFather data:Frederick_Francis_II_Mecklenburg_Schwerin ;
-    :hasMarriageYear 1917,
-        1924 ;
-    :hasMother data:Marie_Schwarzburg_Rudolstadt .
+data:Viktoria_of_Prussia a :Woman ;
+    :hasBirthYear 1866 ;
+    :hasBrother data:Henry_of_Prussia,
+        data:Sigismund_of_Prussia,
+        data:Waldemar_of_Prussia,
+        data:Wilhelm_II ;
+    :hasDeathYear 1929 ;
+    :hasFather data:Frederick_III ;
+    :hasMarriageYear 1890,
+        1927 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasRelation data:Adolf_of_Schaumburg-Lippe,
+        data:Alexander_Zoubkoff ;
+    :hasSister data:Charlotte_of_Prussia,
+        data:Margaret_of_Prussia,
+        data:Sophie_of_Prussia .
 
-data:Elisabeth_Stolberg_Rossla a :Person,
-        :Woman .
+data:Adolf_of_Schaumburg-Lippe a :Man .
 
-data:Viktoria_Feodora_Reuss_Schleiz a :Person,
-        :Woman ;
-    :hasBirthYear 1889 ;
-    :hasDeathYear 1918 ;
-    :hasFather data:Heinrich_XXVII_Reuss_Younger_Line ;
-    :hasMother data:Elise_Hohenlohe_Langenburg .
+data:Alexander_Zoubkoff a :Man .
 
-data:Elise_Hohenlohe_Langenburg a :Ancestor,
-        :Person,
-        :Woman .
+data:Augusta_of_Saxe-Weimar a :Woman .
 
-data:Frederick_Francis_II_Mecklenburg_Schwerin a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1823 ;
-    :hasDeathYear 1883 .
+data:Charlotte_of_Prussia a :Woman .
 
-data:Heinrich_XXVII_Reuss_Younger_Line a :Ancestor,
-        :Man,
-        :Person .
+data:Frederick_III a :Man ;
+    :hasFather data:Wilhelm_I ;
+    :hasMother data:Augusta_of_Saxe-Weimar .
 
-data:Hendrik_Netherlands a :Man,
-        :Person .
+data:Henry_of_Prussia a :Man .
 
-data:Marie_Schwarzburg_Rudolstadt a :Ancestor,
-        :Person,
-        :Woman .
+data:Margaret_of_Prussia a :Woman .
+
+data:Prince_Albert a :Man .
+
+data:Queen_Victoria a :Woman .
+
+data:Sigismund_of_Prussia a :Man .
+
+data:Sophie_of_Prussia a :Woman .
+
+data:Victoria_Princess_Royal a :Woman ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
+
+data:Waldemar_of_Prussia a :Man .
+
+data:Wilhelm_I a :Man .
+
+data:Wilhelm_II a :Man .
 

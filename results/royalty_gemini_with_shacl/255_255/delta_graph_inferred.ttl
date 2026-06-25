@@ -1,0 +1,172 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:John_Knatchbull a :Man,
+        :Person ;
+    :hasBrother data:John_Knatchbull ;
+    :hasRelation data:Amanda_Knatchbull,
+        data:John_Knatchbull,
+        data:Lady_Pamela_Hicks,
+        data:Nicholas_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :isBloodrelationOf data:John_Knatchbull ;
+    :isBrotherOf data:John_Knatchbull ;
+    :isSiblingOf data:John_Knatchbull .
+
+data:Lady_Pamela_Hicks a :Person,
+        :Woman ;
+    :hasRelation data:Amanda_Knatchbull,
+        data:Earl_Mountbatten_of_Burma,
+        data:Edwina_Ashley,
+        data:John_Knatchbull,
+        data:Lady_Pamela_Hicks,
+        data:Nicholas_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :hasSister data:Lady_Pamela_Hicks,
+        data:Patricia_Mountbatten ;
+    :isAuntOf data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull ;
+    :isBloodrelationOf data:Lady_Pamela_Hicks,
+        data:Patricia_Mountbatten ;
+    :isSiblingOf data:Lady_Pamela_Hicks,
+        data:Patricia_Mountbatten ;
+    :isSisterOf data:Lady_Pamela_Hicks,
+        data:Patricia_Mountbatten .
+
+data:Earl_Mountbatten_of_Burma a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Earl_Mountbatten_of_Burma ;
+    :hasChild data:Patricia_Mountbatten ;
+    :hasDaughter data:Patricia_Mountbatten ;
+    :hasRelation data:Amanda_Knatchbull,
+        data:Earl_Mountbatten_of_Burma,
+        data:Lady_Pamela_Hicks,
+        data:Nicholas_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :isAncestorOf data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :isBloodrelationOf data:Earl_Mountbatten_of_Burma ;
+    :isBrotherOf data:Earl_Mountbatten_of_Burma ;
+    :isFatherOf data:Patricia_Mountbatten ;
+    :isParentOf data:Patricia_Mountbatten ;
+    :isSiblingOf data:Earl_Mountbatten_of_Burma ;
+    :isUncleOf data:Patricia_Mountbatten .
+
+data:Edwina_Ashley a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Patricia_Mountbatten ;
+    :hasDaughter data:Patricia_Mountbatten ;
+    :hasRelation data:Amanda_Knatchbull,
+        data:Edwina_Ashley,
+        data:Lady_Pamela_Hicks,
+        data:Nicholas_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :hasSister data:Edwina_Ashley ;
+    :isAncestorOf data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :isAuntOf data:Patricia_Mountbatten ;
+    :isBloodrelationOf data:Edwina_Ashley ;
+    :isMotherOf data:Patricia_Mountbatten ;
+    :isParentOf data:Patricia_Mountbatten ;
+    :isSiblingOf data:Edwina_Ashley ;
+    :isSisterOf data:Edwina_Ashley .
+
+data:Amanda_Knatchbull a :Person,
+        :Woman ;
+    :hasAncestor data:Earl_Mountbatten_of_Burma,
+        data:Edwina_Ashley,
+        data:Patricia_Mountbatten ;
+    :hasBrother data:Nicholas_Knatchbull ;
+    :hasMother data:Patricia_Mountbatten ;
+    :hasParent data:Patricia_Mountbatten ;
+    :hasRelation data:Amanda_Knatchbull,
+        data:Earl_Mountbatten_of_Burma,
+        data:Edwina_Ashley,
+        data:John_Knatchbull,
+        data:Lady_Pamela_Hicks,
+        data:Nicholas_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :hasSister data:Amanda_Knatchbull ;
+    :isBloodrelationOf data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull ;
+    :isChildOf data:Patricia_Mountbatten ;
+    :isDaughterOf data:Patricia_Mountbatten ;
+    :isSiblingOf data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull ;
+    :isSisterOf data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull .
+
+data:Nicholas_Knatchbull a :Man,
+        :Person ;
+    :hasAncestor data:Earl_Mountbatten_of_Burma,
+        data:Edwina_Ashley,
+        data:Patricia_Mountbatten ;
+    :hasBrother data:Nicholas_Knatchbull ;
+    :hasMother data:Patricia_Mountbatten ;
+    :hasParent data:Patricia_Mountbatten ;
+    :hasRelation data:Amanda_Knatchbull,
+        data:Earl_Mountbatten_of_Burma,
+        data:Edwina_Ashley,
+        data:John_Knatchbull,
+        data:Lady_Pamela_Hicks,
+        data:Nicholas_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :hasSister data:Amanda_Knatchbull ;
+    :isBloodrelationOf data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull ;
+    :isBrotherOf data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull ;
+    :isChildOf data:Patricia_Mountbatten ;
+    :isSiblingOf data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull ;
+    :isSonOf data:Patricia_Mountbatten .
+
+data:Patricia_Mountbatten a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Earl_Mountbatten_of_Burma,
+        data:Edwina_Ashley ;
+    :hasBirthYear 1924 ;
+    :hasChild data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull ;
+    :hasDaughter data:Amanda_Knatchbull ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Earl_Mountbatten_of_Burma ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:Edwina_Ashley ;
+    :hasParent data:Earl_Mountbatten_of_Burma,
+        data:Edwina_Ashley ;
+    :hasRelation data:Amanda_Knatchbull,
+        data:Earl_Mountbatten_of_Burma,
+        data:Edwina_Ashley,
+        data:John_Knatchbull,
+        data:Lady_Pamela_Hicks,
+        data:Nicholas_Knatchbull,
+        data:Patricia_Mountbatten ;
+    :hasSister data:Lady_Pamela_Hicks,
+        data:Patricia_Mountbatten ;
+    :hasSon data:Nicholas_Knatchbull ;
+    :isAncestorOf data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull ;
+    :isAuntOf data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull ;
+    :isBloodrelationOf data:Lady_Pamela_Hicks,
+        data:Patricia_Mountbatten ;
+    :isChildOf data:Earl_Mountbatten_of_Burma,
+        data:Edwina_Ashley ;
+    :isDaughterOf data:Earl_Mountbatten_of_Burma,
+        data:Edwina_Ashley ;
+    :isMotherOf data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull ;
+    :isParentOf data:Amanda_Knatchbull,
+        data:Nicholas_Knatchbull ;
+    :isSiblingOf data:Lady_Pamela_Hicks,
+        data:Patricia_Mountbatten ;
+    :isSisterOf data:Lady_Pamela_Hicks,
+        data:Patricia_Mountbatten .
+

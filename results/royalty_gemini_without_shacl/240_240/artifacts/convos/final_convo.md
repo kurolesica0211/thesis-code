@@ -69,38 +69,26 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón, Lord of Tejada GE (born 17 July 1998), widely known as Froilán, is the elder child and only son of Infanta Elena, Duchess of Lugo, and Jaime de Marichalar.
-He is the maternal-line grandson of King Juan Carlos I and Queen Sofía of Spain, and the nephew of King Felipe VI.
-He is the paternal-line grandson of Amalio de Marichalar y Bruguera, VIII Count of Ripalda and Concepción Sáenz de Tejada, Lady of Tejada.
-He is fourth in the line of succession to the Spanish throne, after his cousins (King Felipe's daughters) Leonor, Princess of Asturias, and Infanta Sofía of Spain and his mother, Elena.
-He has a sister two years younger, Victoria de Marichalar y Borbón.
-Early life
+Victoria Federica de Todos los Santos de Marichalar y Borbón, Lady of Tejada GE (born 9 September 2000) is the younger child and only daughter of Infanta Elena, Duchess of Lugo, and Jaime de Marichalar.
+She is a granddaughter of King Juan Carlos I and Queen Sofía of Spain and a niece of King Felipe VI.
+Victoria is fifth in the line of succession to the Spanish throne after her cousins, King Felipe's daughters Leonor, Princess of Asturias, and Infanta Sofía; her mother; and her brother, Felipe.
+Early life and education
 
-Birth and christening
+Victoria de Marichalar y Borbón was born 9 September 2000 at 13:00 in Ruber International Hospital in Madrid.
+She made her first Holy Communion on 27 May 2009 at the Dominicos Church in Alcobendas, Spain.
+Then she studied at a British boarding school for 3 years before returning to Spain at St. George's de La Moraleja.
+Victoria studied ballet and horse riding.
+Career
 
-Felipe de Marichalar y Borbón was born on 17 July 1998 at Ruber International Hospital in Madrid.
-He was baptized on Sunday 4 October 1998 day of the feast of San Francisco de Asis and on the eve of San Froilán, patron of Lugo, the mass was celebrated in the audience hall of the Zarzuela Palace.
-His godparents were his maternal grandfather, Juan Carlos of Spain, and his paternal grandmother, Concepción Sáez de Tejada y Fernández de Boadilla, Dowager Countess of Ripalda (1929–2014).
-Froilán took a course at Cottesmore, a boarding prep school in West Sussex, to return the following year, in 2011, to Colegio Santa María del Pilar in Madrid, where he remained for three years.
-On 9 April 2012, Felipe de Marichalar accidentally shot himself in his right foot while he was on a farm of his father's family in Garray (Soria).
-The judge dismissed the case against Jaime de Marichalar, considering it not gross negligence but a small misdemeanor.
-The tuition, which for each course amounted to $45,000, was paid for by his maternal grandfather King Juan Carlos I.
-
-
-He then began his higher education studies, majoring in Business Administration and Management at the College for International Studies in Madrid, a Spanish Higher Education institution associated with Endicott College.
-In January 2023 it was announced that Felipe would be going to live in the United Arab Emirates with his grandfather, Juan Carlos I. Froilán will work for the ADNOC oil company, owned by the Minister of Advanced Technology of the United Arab Emirates, Sultan Ahmed Al-Jaber.
-Titles, styles, honours and arms
-
-He is styled as The Most Excellent Don Felipe Juan Froilán de Todos los Santos de Marichalar y Borbón, Grandee of Spain and Caballero Divisoro Hijodalgo of the Illustrious Solar de Tejada
-
-
-References
+Marichalar has been reported to be working in the fashion industry and is quoted as saying that fashion is her "true calling".
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -116,39 +104,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -163,6 +121,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -180,6 +155,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -247,29 +237,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -278,6 +260,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -290,6 +280,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -298,17 +290,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -336,6 +330,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -351,184 +429,145 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b6664797-cd2b-4c52-8fb9-a03e866dd119)
- Call ID: b6664797-cd2b-4c52-8fb9-a03e866dd119
+  AssignClass (0b22e9af-d431-4161-808f-986eee084115)
+ Call ID: 0b22e9af-d431-4161-808f-986eee084115
   Args:
-    source: Felipe_Juan_Froilán_de_Todos_los_Santos_de_Marichalar_y_Borbón
-    type: :Man
-  AssignClass (174ccd42-49a2-4e0d-90a6-24f9b9d13525)
- Call ID: 174ccd42-49a2-4e0d-90a6-24f9b9d13525
-  Args:
-    source: Felipe_Juan_Froilán_de_Todos_los_Santos_de_Marichalar_y_Borbón
     type: :Person
-  AddLiteral (cc79cbbe-9bd5-4d4c-85a6-bbe5d4664f55)
- Call ID: cc79cbbe-9bd5-4d4c-85a6-bbe5d4664f55
+    source: :Victoria_Federica_de_Marichalar_y_Borbon
+  AssignClass (e95f5f22-cbb9-4836-84c2-6f0ddf6abeae)
+ Call ID: e95f5f22-cbb9-4836-84c2-6f0ddf6abeae
   Args:
-    literal_value: 1998
-    source: Felipe_Juan_Froilán_de_Todos_los_Santos_de_Marichalar_y_Borbón
+    type: :Woman
+    source: :Victoria_Federica_de_Marichalar_y_Borbon
+  AssignClass (65ff5e18-ebd3-453b-8dde-e7462e1ad40c)
+ Call ID: 65ff5e18-ebd3-453b-8dde-e7462e1ad40c
+  Args:
+    type: :Person
+    source: :Infanta_Elena
+  AssignClass (198fbaf7-a1b6-4186-baaf-f5ca43be0ddc)
+ Call ID: 198fbaf7-a1b6-4186-baaf-f5ca43be0ddc
+  Args:
+    source: :Infanta_Elena
+    type: :Woman
+  AssignClass (922f89a3-e1e3-4fcb-8d3c-7446761b439e)
+ Call ID: 922f89a3-e1e3-4fcb-8d3c-7446761b439e
+  Args:
+    type: :Person
+    source: :Jaime_de_Marichalar
+  AssignClass (835553d1-c376-440f-8af5-7e7e5b046807)
+ Call ID: 835553d1-c376-440f-8af5-7e7e5b046807
+  Args:
+    source: :Jaime_de_Marichalar
+    type: :Man
+  AddLiteral (539b4a5a-0483-4205-9a70-785b39521c9f)
+ Call ID: 539b4a5a-0483-4205-9a70-785b39521c9f
+  Args:
+    source: :Victoria_Federica_de_Marichalar_y_Borbon
     literal_type: xsd:integer
+    literal_value: 2000
     relation: :hasBirthYear
-  AddLiteral (a778c703-b444-40dd-b66a-b41afeac348e)
- Call ID: a778c703-b444-40dd-b66a-b41afeac348e
+  AddTriple (9bb22cb7-17d4-4087-a48b-0335a3d1795a)
+ Call ID: 9bb22cb7-17d4-4087-a48b-0335a3d1795a
   Args:
-    literal_value: Froilán
-    relation: :knownAs
-    literal_type: xsd:string
-    source: Felipe_Juan_Froilán_de_Todos_los_Santos_de_Marichalar_y_Borbón
-  AssignClass (7f42aa63-caca-4317-8441-b27e0191573f)
- Call ID: 7f42aa63-caca-4317-8441-b27e0191573f
+    relation: :hasMother
+    target: :Infanta_Elena
+    source: :Victoria_Federica_de_Marichalar_y_Borbon
+  AddTriple (6b8e6c92-4c7a-41f4-8def-9de784fe4266)
+ Call ID: 6b8e6c92-4c7a-41f4-8def-9de784fe4266
   Args:
-    type: :Woman
-    source: Infanta_Elena_Duchess_of_Lugo
-  AssignClass (dbdb1ba1-2e25-4c06-8fe9-2eaac8379575)
- Call ID: dbdb1ba1-2e25-4c06-8fe9-2eaac8379575
+    target: :Jaime_de_Marichalar
+    source: :Victoria_Federica_de_Marichalar_y_Borbon
+    relation: :hasFather
+  AssignClass (3794f412-dee6-420a-87b2-da760b83eedd)
+ Call ID: 3794f412-dee6-420a-87b2-da760b83eedd
   Args:
-    source: Infanta_Elena_Duchess_of_Lugo
-    type: :Ancestor
-  AssignClass (48121f73-b7e0-4076-871b-a29fab40a237)
- Call ID: 48121f73-b7e0-4076-871b-a29fab40a237
-  Args:
-    source: Infanta_Elena_Duchess_of_Lugo
     type: :Person
-  AssignClass (3b1a058b-0ea5-4891-9574-38ac5af8dae2)
- Call ID: 3b1a058b-0ea5-4891-9574-38ac5af8dae2
+    source: :Juan_Carlos_I
+  AssignClass (a166e6a4-42b0-43c4-845d-a716587eebfb)
+ Call ID: a166e6a4-42b0-43c4-845d-a716587eebfb
+  Args:
+    source: :Juan_Carlos_I
+    type: :Man
+  AssignClass (10630411-0e94-4b52-bd69-7d5e58678c0d)
+ Call ID: 10630411-0e94-4b52-bd69-7d5e58678c0d
+  Args:
+    source: :Sofia_of_Spain
+    type: :Person
+  AssignClass (77b97a25-7be0-4646-8ba0-8ca105448426)
+ Call ID: 77b97a25-7be0-4646-8ba0-8ca105448426
+  Args:
+    source: :Sofia_of_Spain
+    type: :Woman
+  AddTriple (5cb702ee-5057-4ecc-9ed3-b87d9d4cea75)
+ Call ID: 5cb702ee-5057-4ecc-9ed3-b87d9d4cea75
+  Args:
+    target: :Juan_Carlos_I
+    source: :Infanta_Elena
+    relation: :hasParent
+  AddTriple (751ec7e7-e6fa-4891-ad25-9ec06cab9b7a)
+ Call ID: 751ec7e7-e6fa-4891-ad25-9ec06cab9b7a
+  Args:
+    source: :Infanta_Elena
+    target: :Sofia_of_Spain
+    relation: :hasParent
+  AssignClass (78a53ef0-8f2b-44c9-bfaf-b68149f99a12)
+ Call ID: 78a53ef0-8f2b-44c9-bfaf-b68149f99a12
+  Args:
+    source: :Felipe_VI
+    type: :Person
+  AssignClass (70e001b0-ddc0-479f-bf00-8fdacbe265d5)
+ Call ID: 70e001b0-ddc0-479f-bf00-8fdacbe265d5
   Args:
     type: :Man
-    source: Jaime_de_Marichalar
-  AssignClass (ff725d13-d790-4106-8f74-f5f91b3f71ee)
- Call ID: ff725d13-d790-4106-8f74-f5f91b3f71ee
+    source: :Felipe_VI
+  AssignClass (99cac6a3-d52e-458f-bc29-90be778dd983)
+ Call ID: 99cac6a3-d52e-458f-bc29-90be778dd983
   Args:
-    source: Jaime_de_Marichalar
-    type: :Ancestor
-  AssignClass (6809bea0-c40d-41d7-9c8d-df3ed8d0b736)
- Call ID: 6809bea0-c40d-41d7-9c8d-df3ed8d0b736
-  Args:
-    source: Jaime_de_Marichalar
+    source: :Felipe_de_Marichalar
     type: :Person
-  AddTriple (6cb1f9f3-f372-484a-adea-9c39ff94d778)
- Call ID: 6cb1f9f3-f372-484a-adea-9c39ff94d778
+  AssignClass (f2f0e17e-1133-467e-97dd-ccc50bc410cb)
+ Call ID: f2f0e17e-1133-467e-97dd-ccc50bc410cb
   Args:
-    target: Infanta_Elena_Duchess_of_Lugo
-    source: Felipe_Juan_Froilán_de_Todos_los_Santos_de_Marichalar_y_Borbón
-    relation: :hasMother
-  AddTriple (a0d02001-041c-4bc1-a8ef-d6163828176f)
- Call ID: a0d02001-041c-4bc1-a8ef-d6163828176f
-  Args:
-    target: Jaime_de_Marichalar
-    source: Felipe_Juan_Froilán_de_Todos_los_Santos_de_Marichalar_y_Borbón
-    relation: :hasFather
-  AssignClass (1643620c-5305-4c00-bf56-3a3e95ad1ef2)
- Call ID: 1643620c-5305-4c00-bf56-3a3e95ad1ef2
-  Args:
-    source: Juan_Carlos_I
+    source: :Felipe_de_Marichalar
     type: :Man
-  AssignClass (1246a803-dba0-44a5-bf71-7005e35e6a6c)
- Call ID: 1246a803-dba0-44a5-bf71-7005e35e6a6c
+  AddTriple (ab917656-c8de-448c-b6b0-87480efbc6ec)
+ Call ID: ab917656-c8de-448c-b6b0-87480efbc6ec
   Args:
-    source: Juan_Carlos_I
-    type: :Ancestor
-  AssignClass (903f6860-85dc-4030-8155-744124e7d2b3)
- Call ID: 903f6860-85dc-4030-8155-744124e7d2b3
+    relation: :hasBrother
+    source: :Victoria_Federica_de_Marichalar_y_Borbon
+    target: :Felipe_de_Marichalar
+  AssignClass (ffb0d448-1450-494b-8c47-1c621710b2fe)
+ Call ID: ffb0d448-1450-494b-8c47-1c621710b2fe
   Args:
-    source: Juan_Carlos_I
+    source: :Leonor_Princess_of_Asturias
     type: :Person
-  AssignClass (a3d48485-5846-4734-b0aa-47adbc480dc1)
- Call ID: a3d48485-5846-4734-b0aa-47adbc480dc1
+  AssignClass (5fdf4ed3-ee2c-47f0-8e95-a2c659b75280)
+ Call ID: 5fdf4ed3-ee2c-47f0-8e95-a2c659b75280
   Args:
     type: :Woman
-    source: Sofía_of_Spain
-  AssignClass (4277a7eb-352f-45d3-969c-00fac3a47bf3)
- Call ID: 4277a7eb-352f-45d3-969c-00fac3a47bf3
+    source: :Leonor_Princess_of_Asturias
+  AssignClass (17034b34-68b5-4505-9588-7a2ea525a8fc)
+ Call ID: 17034b34-68b5-4505-9588-7a2ea525a8fc
   Args:
-    type: :Ancestor
-    source: Sofía_of_Spain
-  AssignClass (a16c7938-d217-47a7-a361-14ab40a746aa)
- Call ID: a16c7938-d217-47a7-a361-14ab40a746aa
-  Args:
+    source: :Infanta_Sofia
     type: :Person
-    source: Sofía_of_Spain
-  AddTriple (b410ead2-8d85-44e4-8cd0-b23aa006aa2c)
- Call ID: b410ead2-8d85-44e4-8cd0-b23aa006aa2c
+  AssignClass (1ba66bd6-ac0a-499c-b830-71cc34fa9201)
+ Call ID: 1ba66bd6-ac0a-499c-b830-71cc34fa9201
   Args:
-    relation: :hasMother
-    source: Infanta_Elena_Duchess_of_Lugo
-    target: Sofía_of_Spain
-  AddTriple (cb03d618-c5cb-4294-98aa-956da68b3f91)
- Call ID: cb03d618-c5cb-4294-98aa-956da68b3f91
-  Args:
-    relation: :hasFather
-    source: Infanta_Elena_Duchess_of_Lugo
-    target: Juan_Carlos_I
-  AssignClass (e8fd6014-adaf-42ab-a82c-8d047be87730)
- Call ID: e8fd6014-adaf-42ab-a82c-8d047be87730
-  Args:
-    type: :Man
-    source: Amalio_de_Marichalar_y_Bruguera
-  AssignClass (90df1af9-0224-461e-be45-a6739dbdcb1b)
- Call ID: 90df1af9-0224-461e-be45-a6739dbdcb1b
-  Args:
-    source: Amalio_de_Marichalar_y_Bruguera
-    type: :Ancestor
-  AssignClass (c3319fae-02b1-40cc-a6af-7739a7b002c1)
- Call ID: c3319fae-02b1-40cc-a6af-7739a7b002c1
-  Args:
-    source: Amalio_de_Marichalar_y_Bruguera
-    type: :Person
-  AssignClass (c14a14c2-80ce-46c2-9ea2-ac5268561112)
- Call ID: c14a14c2-80ce-46c2-9ea2-ac5268561112
-  Args:
-    source: Concepción_Sáenz_de_Tejada
     type: :Woman
-  AssignClass (0480fce9-e46f-468e-ba57-1ebaac3cbcbe)
- Call ID: 0480fce9-e46f-468e-ba57-1ebaac3cbcbe
+    source: :Infanta_Sofia
+  AddTriple (061fbaa3-e499-4819-acf9-f77e27991b98)
+ Call ID: 061fbaa3-e499-4819-acf9-f77e27991b98
   Args:
-    source: Concepción_Sáenz_de_Tejada
-    type: :Ancestor
-  AssignClass (02374894-bd59-45bf-a807-cd5841b4aa38)
- Call ID: 02374894-bd59-45bf-a807-cd5841b4aa38
+    source: :Leonor_Princess_of_Asturias
+    target: :Felipe_VI
+    relation: :hasParent
+  AddTriple (035fd633-25e1-48aa-902c-a5122e1f771d)
+ Call ID: 035fd633-25e1-48aa-902c-a5122e1f771d
   Args:
-    source: Concepción_Sáenz_de_Tejada
-    type: :Person
-  AddTriple (572713e5-f70d-4d58-9b75-974acd256faf)
- Call ID: 572713e5-f70d-4d58-9b75-974acd256faf
-  Args:
-    target: Amalio_de_Marichalar_y_Bruguera
-    relation: :hasFather
-    source: Jaime_de_Marichalar
-  AddTriple (bec0bf98-0d7b-4d54-9104-97d67e33ef3c)
- Call ID: bec0bf98-0d7b-4d54-9104-97d67e33ef3c
-  Args:
-    target: Concepción_Sáenz_de_Tejada
-    relation: :hasMother
-    source: Jaime_de_Marichalar
-  AssignClass (637d0783-4914-4d17-bdf6-0bda87101b4b)
- Call ID: 637d0783-4914-4d17-bdf6-0bda87101b4b
-  Args:
-    source: Victoria_de_Marichalar_y_Borbón
-    type: :Woman
-  AssignClass (31f16538-70fd-4aaa-9a6d-4fda947e98f5)
- Call ID: 31f16538-70fd-4aaa-9a6d-4fda947e98f5
-  Args:
-    source: Victoria_de_Marichalar_y_Borbón
-    type: :Person
-  AddTriple (858e9ee6-0d83-4ffd-832d-93d8f2d05953)
- Call ID: 858e9ee6-0d83-4ffd-832d-93d8f2d05953
-  Args:
-    target: Infanta_Elena_Duchess_of_Lugo
-    relation: :hasMother
-    source: Victoria_de_Marichalar_y_Borbón
-  AddTriple (e023a921-c4b3-413a-976d-d4ac9721a943)
- Call ID: e023a921-c4b3-413a-976d-d4ac9721a943
-  Args:
-    source: Victoria_de_Marichalar_y_Borbón
-    relation: :hasFather
-    target: Jaime_de_Marichalar
-  AddTriple (e7a8faca-9b37-401f-897b-490b4264b930)
- Call ID: e7a8faca-9b37-401f-897b-490b4264b930
-  Args:
-    target: Victoria_de_Marichalar_y_Borbón
-    relation: :hasSister
-    source: Felipe_Juan_Froilán_de_Todos_los_Santos_de_Marichalar_y_Borbón
-  Finish (bd627334-91c7-46bf-9177-4760bc604382)
- Call ID: bd627334-91c7-46bf-9177-4760bc604382
+    source: :Infanta_Sofia
+    target: :Felipe_VI
+    relation: :hasParent
+  Finish (df46208a-e6d4-4fbe-8658-4d81286bce96)
+ Call ID: df46208a-e6d4-4fbe-8658-4d81286bce96
   Args:

@@ -2,27 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Christian_of_Rosenborg a :Man,
-        :Person ;
-    :hasBirthYear 1942 ;
-    :hasBrother data:Ingolf_of_Rosenborg ;
-    :hasDeathYear 2013 ;
-    :hasFather data:Knud_of_Denmark ;
-    :hasMarriageYear 1971 ;
-    :hasMother data:Caroline-Mathilde_of_Denmark ;
-    :hasRelation data:Anne_Dorte_of_Rosenborg .
+data:Alexandrine_of_Mecklenburg-Schwerin a :Woman ;
+    :hasBirthYear 1879 ;
+    :hasBrother data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasDeathYear 1952 ;
+    :hasFather data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1898 ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Christian_X_of_Denmark ;
+    :hasSex data:Female ;
+    :hasSister data:Cecilie_of_Mecklenburg-Schwerin .
 
-data:Anne_Dorte_of_Rosenborg a :Person,
-        :Woman ;
-    :hasBirthYear 1947 ;
-    :hasDeathYear 2014 .
+data:Anastasia_Mikhailovna_of_Russia a :Woman .
 
-data:Caroline-Mathilde_of_Denmark a :Person,
-        :Woman .
+data:Cecilie_of_Mecklenburg-Schwerin a :Woman .
 
-data:Ingolf_of_Rosenborg a :Man,
-        :Person .
+data:Christian_X_of_Denmark a :Man ;
+    :hasSex data:Male .
 
-data:Knud_of_Denmark a :Man,
-        :Person .
+data:Female a :Sex .
+
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man ;
+    :hasFather data:Frederick_Francis_II_of_Mecklenburg-Schwerin .
+
+data:Frederick_Francis_II_of_Mecklenburg-Schwerin a :Man .
+
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man .
+
+data:Male a :Sex .
 

@@ -16,103 +16,96 @@
       "qid": "Q160495",
       "label": "Christian, Crown Prince of Denmark",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Frederik_X_of_Denmark",
       "qid": "Q1004037",
       "label": "Frederik X of Denmark",
       "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Prince_Joachim_of_Denmark",
-      "qid": "Q159101",
-      "label": "Prince Joachim of Denmark",
-      "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Henrik-_Prince_Consort_of_Denmark",
       "qid": "Q1389258",
       "label": "Henrik, Prince Consort of Denmark",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Margrethe_II_of_Denmark",
       "qid": "Q102139",
       "label": "Margrethe II of Denmark",
       "distance": 2,
-      "gender": "female"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Queen_Anne-Marie_of_Greece",
-      "qid": "Q564889",
-      "label": "Queen Anne-Marie of Greece",
-      "distance": 2,
-      "gender": "female"
+      "uri": "http://example.com/data#Prince_Joachim_of_Denmark",
+      "qid": "Q159101",
+      "label": "Prince Joachim of Denmark",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Frederik_X",
-      "extracted_local_name": "Frederik_X",
-      "embedding_text": "Frederik X",
+      "extracted_uri": "http://example.org/data/Prince_Christian_of_Denmark",
+      "extracted_local_name": "Prince_Christian_of_Denmark",
+      "embedding_text": "Prince Christian of Denmark",
       "extracted_gender": "male",
       "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Frederik_X_of_Denmark",
-      "ground_truth_qid": "Q1004037",
-      "ground_truth_label": "Frederik X of Denmark",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Frederik X",
-      "best_candidate_label": "Frederik X of Denmark",
-      "best_candidate_qid": "Q1004037",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Margrethe_II",
-      "extracted_local_name": "Margrethe_II",
-      "embedding_text": "Margrethe II",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Margrethe_II_of_Denmark",
-      "ground_truth_qid": "Q102139",
-      "ground_truth_label": "Margrethe II of Denmark",
-      "ground_truth_distance": 2,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Margrethe II",
-      "best_candidate_label": "Margrethe II of Denmark",
-      "best_candidate_qid": "Q102139",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Christian_Prince_of_Denmark",
-      "extracted_local_name": "Christian_Prince_of_Denmark",
-      "embedding_text": "Christian Prince of Denmark",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 0.9102564102564102,
+      "score": 0.8148148148148148,
       "ground_truth_uri": "http://example.com/data#Christian-_Crown_Prince_of_Denmark",
       "ground_truth_qid": "Q160495",
       "ground_truth_label": "Christian, Crown Prince of Denmark",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Christian- Crown Prince of Denmark",
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prins Christian til Danmark",
       "best_candidate_label": "Christian, Crown Prince of Denmark",
       "best_candidate_qid": "Q160495",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.9102564102564102
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8148148148148148
     },
     {
-      "extracted_uri": "http://example.org/data/Mary_Queen_of_Denmark",
-      "extracted_local_name": "Mary_Queen_of_Denmark",
-      "embedding_text": "Mary Queen of Denmark",
+      "extracted_uri": "http://example.org/data/King_Frederik_X",
+      "extracted_local_name": "King_Frederik_X",
+      "embedding_text": "King Frederik X",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8,
+      "ground_truth_uri": "http://example.com/data#Frederik_X_of_Denmark",
+      "ground_truth_qid": "Q1004037",
+      "ground_truth_label": "Frederik X of Denmark",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Frederik X",
+      "best_candidate_label": "Frederik X of Denmark",
+      "best_candidate_qid": "Q1004037",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Margrethe_II",
+      "extracted_local_name": "Queen_Margrethe_II",
+      "embedding_text": "Queen Margrethe II",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 0.8,
+      "ground_truth_uri": "http://example.com/data#Margrethe_II_of_Denmark",
+      "ground_truth_qid": "Q102139",
+      "ground_truth_label": "Margrethe II of Denmark",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Margrethe II",
+      "best_candidate_label": "Margrethe II of Denmark",
+      "best_candidate_qid": "Q102139",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8
+    },
+    {
+      "extracted_uri": "http://example.org/data/Queen_Mary",
+      "extracted_local_name": "Queen_Mary",
+      "embedding_text": "Queen Mary",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -121,11 +114,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Anne-Marie Dagmar Ingrid",
-      "best_candidate_label": "Queen Anne-Marie of Greece",
-      "best_candidate_qid": "Q564889",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.4
+      "best_candidate_match_text": "Henrik",
+      "best_candidate_label": "Henrik, Prince Consort of Denmark",
+      "best_candidate_qid": "Q1389258",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.375
     }
   ],
   "summary": {

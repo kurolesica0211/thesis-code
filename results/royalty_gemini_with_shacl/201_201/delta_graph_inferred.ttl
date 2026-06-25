@@ -1,0 +1,272 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Hermine_Reuss a :Person,
+        :Woman ;
+    :hasRelation data:Hermine_Reuss,
+        data:Joachim_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Hermine_Reuss ;
+    :isBloodrelationOf data:Hermine_Reuss ;
+    :isSiblingOf data:Hermine_Reuss ;
+    :isSisterOf data:Hermine_Reuss .
+
+data:Sophia_of_Prussia a :Person,
+        :Woman ;
+    :hasBrother data:Wilhelm_II ;
+    :hasRelation data:Hermine_Reuss,
+        data:Joachim_of_Prussia,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSister data:Sophia_of_Prussia ;
+    :isAuntOf data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :isBloodrelationOf data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+
+data:Frederick_III a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_III ;
+    :hasChild data:Wilhelm_II ;
+    :hasRelation data:Frederick_III,
+        data:Joachim_of_Prussia,
+        data:Victoria_Louise,
+        data:Wilhelm_II ;
+    :hasSon data:Wilhelm_II ;
+    :isAncestorOf data:Joachim_of_Prussia,
+        data:Victoria_Louise,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Frederick_III ;
+    :isBrotherOf data:Frederick_III ;
+    :isFatherOf data:Wilhelm_II ;
+    :isParentOf data:Wilhelm_II ;
+    :isSiblingOf data:Frederick_III ;
+    :isUncleOf data:Wilhelm_II .
+
+data:Prince_Albert a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Albert ;
+    :hasChild data:Victoria_Princess_Royal ;
+    :hasDaughter data:Victoria_Princess_Royal ;
+    :hasRelation data:Joachim_of_Prussia,
+        data:Prince_Albert,
+        data:Victoria_Louise,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II ;
+    :isAncestorOf data:Joachim_of_Prussia,
+        data:Victoria_Louise,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Prince_Albert ;
+    :isBrotherOf data:Prince_Albert ;
+    :isFatherOf data:Victoria_Princess_Royal ;
+    :isParentOf data:Victoria_Princess_Royal ;
+    :isSiblingOf data:Prince_Albert ;
+    :isUncleOf data:Victoria_Princess_Royal .
+
+data:Augusta_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :hasDaughter data:Victoria_Louise ;
+    :hasRelation data:Augusta_Victoria,
+        data:Joachim_of_Prussia,
+        data:Victoria_Louise,
+        data:Wilhelm_II ;
+    :hasSister data:Augusta_Victoria ;
+    :hasSon data:Joachim_of_Prussia ;
+    :isAncestorOf data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :isAuntOf data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :isBloodrelationOf data:Augusta_Victoria ;
+    :isMotherOf data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :isParentOf data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :isSiblingOf data:Augusta_Victoria ;
+    :isSisterOf data:Augusta_Victoria .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Victoria_Princess_Royal ;
+    :hasDaughter data:Victoria_Princess_Royal ;
+    :hasRelation data:Joachim_of_Prussia,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Joachim_of_Prussia,
+        data:Victoria_Louise,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II ;
+    :isAuntOf data:Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isMotherOf data:Victoria_Princess_Royal ;
+    :isParentOf data:Victoria_Princess_Royal ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasChild data:Wilhelm_II ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria ;
+    :hasParent data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasRelation data:Joachim_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Victoria_Louise,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Princess_Royal ;
+    :hasSon data:Wilhelm_II ;
+    :isAncestorOf data:Joachim_of_Prussia,
+        data:Victoria_Louise,
+        data:Wilhelm_II ;
+    :isAuntOf data:Wilhelm_II ;
+    :isBloodrelationOf data:Victoria_Princess_Royal ;
+    :isChildOf data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isDaughterOf data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isMotherOf data:Wilhelm_II ;
+    :isParentOf data:Wilhelm_II ;
+    :isSiblingOf data:Victoria_Princess_Royal ;
+    :isSisterOf data:Victoria_Princess_Royal .
+
+data:Victoria_Louise a :Person,
+        :Woman ;
+    :hasAncestor data:Augusta_Victoria,
+        data:Frederick_III,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Joachim_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria ;
+    :hasParent data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria,
+        data:Frederick_III,
+        data:Joachim_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Victoria_Louise,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise ;
+    :isBloodrelationOf data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :isChildOf data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :isDaughterOf data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :isSisterOf data:Joachim_of_Prussia,
+        data:Victoria_Louise .
+
+data:Joachim_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Augusta_Victoria,
+        data:Frederick_III,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Joachim_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria ;
+    :hasParent data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :hasRelation data:Augusta_Victoria,
+        data:Frederick_III,
+        data:Hermine_Reuss,
+        data:Joachim_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSister data:Victoria_Louise ;
+    :isBloodrelationOf data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :isBrotherOf data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :isChildOf data:Augusta_Victoria,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :isSonOf data:Augusta_Victoria,
+        data:Wilhelm_II .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Frederick_III,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal ;
+    :hasBirthYear 1859 ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :hasDaughter data:Victoria_Louise ;
+    :hasDeathYear 1941 ;
+    :hasFather data:Frederick_III ;
+    :hasMarriageYear 1881,
+        1922 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasParent data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :hasRelation data:Augusta_Victoria,
+        data:Frederick_III,
+        data:Hermine_Reuss,
+        data:Joachim_of_Prussia,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Louise,
+        data:Victoria_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSister data:Sophia_of_Prussia ;
+    :hasSon data:Joachim_of_Prussia ;
+    :isAncestorOf data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :isBloodrelationOf data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isBrotherOf data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :isFatherOf data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :isParentOf data:Joachim_of_Prussia,
+        data:Victoria_Louise ;
+    :isSiblingOf data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSonOf data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :isUncleOf data:Joachim_of_Prussia,
+        data:Victoria_Louise .
+

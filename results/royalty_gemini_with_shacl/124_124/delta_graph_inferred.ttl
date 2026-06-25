@@ -1,0 +1,162 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Margherita_of_Savoy-Aosta a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1930 ;
+    :hasChild data:Lorenz_of_Belgium ;
+    :hasDeathYear 2022 ;
+    :hasRelation data:Lorenz_of_Belgium,
+        data:Margherita_of_Savoy-Aosta,
+        data:Robert_of_Austria-Este ;
+    :hasSister data:Margherita_of_Savoy-Aosta ;
+    :hasSon data:Lorenz_of_Belgium ;
+    :isAncestorOf data:Lorenz_of_Belgium ;
+    :isAuntOf data:Lorenz_of_Belgium ;
+    :isBloodrelationOf data:Margherita_of_Savoy-Aosta ;
+    :isMotherOf data:Lorenz_of_Belgium ;
+    :isParentOf data:Lorenz_of_Belgium ;
+    :isSiblingOf data:Margherita_of_Savoy-Aosta ;
+    :isSisterOf data:Margherita_of_Savoy-Aosta .
+
+data:Robert_of_Austria-Este a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1915 ;
+    :hasBrother data:Robert_of_Austria-Este ;
+    :hasChild data:Lorenz_of_Belgium ;
+    :hasDeathYear 1996 ;
+    :hasRelation data:Lorenz_of_Belgium,
+        data:Margherita_of_Savoy-Aosta,
+        data:Robert_of_Austria-Este ;
+    :hasSon data:Lorenz_of_Belgium ;
+    :isAncestorOf data:Lorenz_of_Belgium ;
+    :isBloodrelationOf data:Robert_of_Austria-Este ;
+    :isBrotherOf data:Robert_of_Austria-Este ;
+    :isFatherOf data:Lorenz_of_Belgium ;
+    :isParentOf data:Lorenz_of_Belgium ;
+    :isSiblingOf data:Robert_of_Austria-Este ;
+    :isUncleOf data:Lorenz_of_Belgium .
+
+data:Albert_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Albert_II ;
+    :hasChild data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :hasDaughter data:Astrid_of_Belgium ;
+    :hasRelation data:Albert_II,
+        data:Astrid_of_Belgium,
+        data:Paola,
+        data:Philippe_of_Belgium ;
+    :hasSon data:Philippe_of_Belgium ;
+    :isAncestorOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isBloodrelationOf data:Albert_II ;
+    :isBrotherOf data:Albert_II ;
+    :isFatherOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isParentOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isSiblingOf data:Albert_II ;
+    :isUncleOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium .
+
+data:Paola a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :hasDaughter data:Astrid_of_Belgium ;
+    :hasRelation data:Albert_II,
+        data:Astrid_of_Belgium,
+        data:Paola,
+        data:Philippe_of_Belgium ;
+    :hasSister data:Paola ;
+    :hasSon data:Philippe_of_Belgium ;
+    :isAncestorOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isAuntOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isBloodrelationOf data:Paola ;
+    :isMotherOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isParentOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isSiblingOf data:Paola ;
+    :isSisterOf data:Paola .
+
+data:Lorenz_of_Belgium a :Man,
+        :Person ;
+    :hasAncestor data:Margherita_of_Savoy-Aosta,
+        data:Robert_of_Austria-Este ;
+    :hasBrother data:Lorenz_of_Belgium ;
+    :hasFather data:Robert_of_Austria-Este ;
+    :hasMother data:Margherita_of_Savoy-Aosta ;
+    :hasParent data:Margherita_of_Savoy-Aosta,
+        data:Robert_of_Austria-Este ;
+    :hasRelation data:Lorenz_of_Belgium,
+        data:Margherita_of_Savoy-Aosta,
+        data:Robert_of_Austria-Este ;
+    :isBloodrelationOf data:Lorenz_of_Belgium ;
+    :isBrotherOf data:Lorenz_of_Belgium ;
+    :isChildOf data:Margherita_of_Savoy-Aosta,
+        data:Robert_of_Austria-Este ;
+    :isSiblingOf data:Lorenz_of_Belgium ;
+    :isSonOf data:Margherita_of_Savoy-Aosta,
+        data:Robert_of_Austria-Este .
+
+data:Astrid_of_Belgium a :Person,
+        :Woman ;
+    :hasAncestor data:Albert_II,
+        data:Paola ;
+    :hasBirthYear 1962 ;
+    :hasBrother data:Philippe_of_Belgium ;
+    :hasFather data:Albert_II ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Paola ;
+    :hasParent data:Albert_II,
+        data:Paola ;
+    :hasRelation data:Albert_II,
+        data:Astrid_of_Belgium,
+        data:Paola,
+        data:Philippe_of_Belgium ;
+    :hasSister data:Astrid_of_Belgium ;
+    :isBloodrelationOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isChildOf data:Albert_II,
+        data:Paola ;
+    :isDaughterOf data:Albert_II,
+        data:Paola ;
+    :isSiblingOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isSisterOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium .
+
+data:Philippe_of_Belgium a :Man,
+        :Person ;
+    :hasAncestor data:Albert_II,
+        data:Paola ;
+    :hasBrother data:Philippe_of_Belgium ;
+    :hasFather data:Albert_II ;
+    :hasMother data:Paola ;
+    :hasParent data:Albert_II,
+        data:Paola ;
+    :hasRelation data:Albert_II,
+        data:Astrid_of_Belgium,
+        data:Paola,
+        data:Philippe_of_Belgium ;
+    :hasSister data:Astrid_of_Belgium ;
+    :isBloodrelationOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isBrotherOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isChildOf data:Albert_II,
+        data:Paola ;
+    :isSiblingOf data:Astrid_of_Belgium,
+        data:Philippe_of_Belgium ;
+    :isSonOf data:Albert_II,
+        data:Paola .
+

@@ -69,49 +69,34 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Nerissa Jane Irene Bowes-Lyon (18 February 1919 – 22 January 1986) and Katherine Juliet Bowes-Lyon (4 July 1926 – 23 February 2014) were two mentally disabled daughters of John Herbert Bowes-Lyon and his wife Fenella (née Hepburn-Stuart-Forbes-Trefusis).
-John was the brother of Queen Elizabeth the Queen Mother, thus his two daughters were the maternal first cousins of Queen Elizabeth II and Princess Margaret, sharing one pair of grandparents, Claude Bowes-Lyon, 14th
-Earl of Strathmore and Kinghorne, and Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne.
-Background
+Lady Mary Cecilia Colman (née Bowes-Lyon; 30 January 1932 – 2 January 2021) was an English socialite, philanthropist, and extra lady-in-waiting to Princess Alexandra, The Honourable Lady Ogilvy.
+The daughter of Michael Bowes-Lyon and Elizabeth Margaret Cator, her paternal aunt was Queen Elizabeth
+The Queen Mother, and she was thus a first cousin of Queen Elizabeth II and Princess Margaret, Countess of Snowdon.
+Early life
 
-Nerissa Bowes-Lyon was born on 18 February 1919 and Katherine Bowes-Lyon was born on 4 July 1926, the daughters of John Herbert Bowes-Lyon and Fenella Hepburn-Stuart-Forbes-Trefusis.
-Their father, the second son of Claude Bowes-Lyon, 14th Earl of Strathmore and Kinghorne, was a brother of Lady Elizabeth Bowes-Lyon, Duchess of York, the future Queen Elizabeth II's mother.
-Their mother was the younger daughter of Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton.
-The sisters’ maternal great-grandparents Charles Hepburn-Stuart-Forbes-Trefusis, 20th Baron Clinton and his wife Harriet Williamina Hepburn-Forbes had been first cousins and their son (the sisters maternal grand-father)
-Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton, married his second cousin once removed Lady Jane McDonnell.
-Their father died 7 February 1930 after having contracted pneumonia at the age of 43, leaving their mother alone to care for their four young children.
-The 1963 edition of Burke's Peerage listed Nerissa and Katherine as having died in 1940 and 1961 respectively; but in 1987 it was revealed by The Sun that the sisters were alive, and had been placed in Earlswood Hospital for mentally disabled people in 1941.
-Nerissa died in 1986, aged 66, with only hospital staff attending the funeral, while Katherine died in 2014, aged 87.
-Controversy
+Mary Cecilia Bowes-Lyon was born on 30 January 1932 at Gastlings, the Bowes-Lyon family home in Biggleswade, Bedfordshire.
+Her father, Michael Bowes-Lyon (1893–1953), was the fifth son of Claude Bowes-Lyon, 14th
+Earl of Strathmore and Kinghorne and Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne (née Cavendish-Bentinck).
+Her mother, Elizabeth Margaret Cator (1899–1959), was a great-granddaughter of Charles Yorke, 4th Earl of Hardwicke.
+She had a twin sister, Patricia Maud, later Lady Patricia Tetley, an older brother, Fergus Michael Claude, later Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne, and a younger brother, Michael Albemarle.
+Lady Mary was also a godmother to Diana, Princess of Wales.
+In 1949, a coming-out ball was held for her and her twin sister Patricia at Londonderry House, which was attended by their aunt, the Queen, and their cousins, The Princess Elizabeth and The Princess Margaret.
+Marriage and children
 
-Suggestions of a cover-up were rejected in the press by Lord Clinton in 1987, who claimed that his aunt Fenella (the mother of the two women) had completed the form for Burke's incorrectly due to Fenella being "a vague person"; however, Burke's included specific dates of death for both sisters.
-According to a 2011 television documentary about the sisters, The Queen's Hidden Cousins, broadcast by Channel 4, "throughout their time at the hospital, there is no known record that the sisters were ever visited by any member of the Bowes-Lyon or royal families, despite their aunt, the Queen Mother, being a Patron of Mencap" (a charity for people with learning disabilities).
-When Nerissa died in 1986, none of her family attended the funeral.
-Sources from within the family, however, report that their mother Fenella often visited the two sisters until her death in 1966; Lady Elizabeth Shakerley, Fenella's granddaughter, also said other members of the family had often visited over the years and had often sent gifts and cards on Christmas and birthdays.
-Queen Elizabeth The Queen Mother, upon discovering that her nieces were alive in 1982, sent money for toys and sweets on their birthdays and at Christmas.
-The three grandchildren of Fenella and John (Lady Elizabeth Shakerley, the 5th Earl of Lichfield, and Katherine Somervell) organised the headstone for Nerissa Bowes-Lyon.
-Harriet Hepburn-Stuart-Forbes-Trefusis (1887–1958), sister of Nerissa and Katherine's mother Fenella, married Major Henry Nevile Fane, and three of their seven children lived in Earlswood Hospital.
-David Danks, then director of the Murdoch Children's Research Institute, thought that a genetic disease in the Hepburn-Stuart-Forbes-Trefusis family may have been the cause of death of some male family members in early childhood and caused learning disabilities in some female family members.
-According to Lady Colin Campbell, whose mother was a friend of a doctor who treated the sisters, they suffered from Huntington's disease.
-Anne Tennant, Baroness Glenconner was, as a young woman and 1950s debutante of the year, engaged to Johnnie, Viscount Althorp, later the Earl Spencer and father to Diana, Princess of Wales; his father objected to the match on the grounds of "mad blood", as one of her grandmothers was a Trefusis, and the engagement was broken off.
-The Queen's Hidden Cousins
+On 10 November 1951 at St Bartholomew-the-Great in London, Mary married the then-Lieutenant Timothy Colman, son of the cricketer Geoffrey Colman.
+Work and later life
 
-In November 2011, Channel 4 broadcast a documentary about the sisters, The Queen's Hidden Cousins.
-The documentary was directed by Kelly Close and made by Minnow Films, an independent production company, whose synopsis states that "Whilst their sisters Elizabeth and Anne enjoyed lives of privilege and inclusion in the upper echelons of the aristocracy, Katherine and Nerissa were all but forgotten, written out of family history."
-"
-
-
-Prior to the screening, the Daily Express reported that the Queen was said to be "hugely distressed" by it.
-Lady Elizabeth Shakerley, party planner to the Queen and the sisters' niece, responded at length, disputing both the assertions by the programme-makers of familial abandonment and the methods of "this supposedly factual documentary".
-She called it "cruel" and "intrusive" and said that "far from being a taboo subject, Katherine and Nerissa were very much a part of the family as sisters of Shakerley's mother, the late Princess Anne of Denmark.
-Following the programme's broadcast, The Guardian's reviewer John Crace wrote that "All we learned was just common knowledge."
-Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid interest in the story the following year.
+In 1970, Mary was appointed an Extra Lady-in-waiting to another of the Queen's first cousins, Princess Alexandra, The Hon.
+After her elder brother succeeded their cousin as 17th Earl of Strathmore and Kinghorne, she received the title and precedence of a daughter of an earl by royal warrant of precedence in 1974.
+Lady Mary died at her home in Bixley, Norfolk on 2 January 2021, at the age of 88.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -127,39 +112,9 @@ Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -174,6 +129,23 @@ Crace observed that it was Nerissa's death in 1986 which had sparked the tabloid
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -191,6 +163,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,29 +245,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -289,6 +268,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -301,6 +288,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -309,17 +298,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -347,6 +338,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -362,163 +437,125 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d4be79c2-97d9-4a28-9a05-b77481c80969)
- Call ID: d4be79c2-97d9-4a28-9a05-b77481c80969
+  AssignClass (abf51d80-46d7-4808-b646-560d12e45202)
+ Call ID: abf51d80-46d7-4808-b646-560d12e45202
   Args:
+    source: :LadyMaryCeciliaColman
     type: :Woman
-    source: Nerissa_Bowes-Lyon
-  AssignClass (a4428fb0-8786-48f4-9d9a-a3cfb6f94699)
- Call ID: a4428fb0-8786-48f4-9d9a-a3cfb6f94699
+  AssignClass (21f21149-c229-4c67-bda1-e44809aa9197)
+ Call ID: 21f21149-c229-4c67-bda1-e44809aa9197
   Args:
-    source: Katherine_Bowes-Lyon
-    type: :Woman
-  AssignClass (55d5c0a1-5801-4bbe-a7d2-8b72c96dd8be)
- Call ID: 55d5c0a1-5801-4bbe-a7d2-8b72c96dd8be
-  Args:
+    source: :MichaelBowes-Lyon
     type: :Man
-    source: John_Herbert_Bowes-Lyon
-  AssignClass (830e32a9-9e35-42ea-817a-bd235647134b)
- Call ID: 830e32a9-9e35-42ea-817a-bd235647134b
+  AssignClass (c10ea88d-0a7c-4f69-bb0b-882236afb74a)
+ Call ID: c10ea88d-0a7c-4f69-bb0b-882236afb74a
   Args:
-    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
     type: :Woman
-  AddLiteral (c647dece-923a-403f-b643-6d1f60cf732b)
- Call ID: c647dece-923a-403f-b643-6d1f60cf732b
+    source: :ElizabethMargaretCator
+  AssignClass (3be601bc-3019-4f9a-a591-db95a1e5ef01)
+ Call ID: 3be601bc-3019-4f9a-a591-db95a1e5ef01
   Args:
-    source: Nerissa_Bowes-Lyon
-    relation: :hasBirthYear
-    literal_value: 1919
+    source: :TimothyColman
+    type: :Man
+  AssignClass (f1e10419-fa34-43f2-82ff-11a938a4079c)
+ Call ID: f1e10419-fa34-43f2-82ff-11a938a4079c
+  Args:
+    source: :GeoffreyColman
+    type: :Man
+  AssignClass (f7a380cb-df72-4494-9020-dde26943957c)
+ Call ID: f7a380cb-df72-4494-9020-dde26943957c
+  Args:
+    type: :Woman
+    source: :PatriciaMaud
+  AssignClass (308f597b-cec7-46ca-b831-50e9e93c0af9)
+ Call ID: 308f597b-cec7-46ca-b831-50e9e93c0af9
+  Args:
+    source: :FergusMichaelClaude
+    type: :Man
+  AssignClass (5c0147ad-1610-47cd-84ab-329a9e4cf10d)
+ Call ID: 5c0147ad-1610-47cd-84ab-329a9e4cf10d
+  Args:
+    source: :MichaelAlbemarle
+    type: :Man
+  AssignClass (16edd1c3-b803-4b0c-83b8-1f318889b397)
+ Call ID: 16edd1c3-b803-4b0c-83b8-1f318889b397
+  Args:
+    source: :ClaudeBowes-Lyon
+    type: :Man
+  AssignClass (345fb00b-ff21-4884-a26f-c3ac4b359006)
+ Call ID: 345fb00b-ff21-4884-a26f-c3ac4b359006
+  Args:
+    type: :Woman
+    source: :CeciliaBowes-Lyon
+  AddLiteral (fe81aae3-df2a-46f6-a489-825c62b412a0)
+ Call ID: fe81aae3-df2a-46f6-a489-825c62b412a0
+  Args:
     literal_type: xsd:integer
-  AddLiteral (24809bca-d39d-44aa-9a5f-0c3462fc4b54)
- Call ID: 24809bca-d39d-44aa-9a5f-0c3462fc4b54
+    relation: :hasBirthYear
+    source: :LadyMaryCeciliaColman
+    literal_value: 1932
+  AddLiteral (b40b771c-4902-4bad-9dce-42efd9d69d5d)
+ Call ID: b40b771c-4902-4bad-9dce-42efd9d69d5d
   Args:
     relation: :hasDeathYear
-    source: Nerissa_Bowes-Lyon
-    literal_value: 1986
     literal_type: xsd:integer
-  AddLiteral (5942b099-dc9a-4131-9337-56a8c68852d3)
- Call ID: 5942b099-dc9a-4131-9337-56a8c68852d3
+    literal_value: 2021
+    source: :LadyMaryCeciliaColman
+  AddLiteral (427ba413-1637-4de3-b8cb-4e8162673cc1)
+ Call ID: 427ba413-1637-4de3-b8cb-4e8162673cc1
   Args:
+    relation: :hasMarriageYear
     literal_type: xsd:integer
-    literal_value: 1926
-    relation: :hasBirthYear
-    source: Katherine_Bowes-Lyon
-  AddLiteral (677e5285-932b-4b4c-a9bf-06fd7fd1b12c)
- Call ID: 677e5285-932b-4b4c-a9bf-06fd7fd1b12c
+    source: :LadyMaryCeciliaColman
+    literal_value: 1951
+  AddTriple (342bc89d-19dd-400d-b1eb-c1ae86e5ea08)
+ Call ID: 342bc89d-19dd-400d-b1eb-c1ae86e5ea08
   Args:
-    literal_type: xsd:integer
-    source: Katherine_Bowes-Lyon
-    relation: :hasDeathYear
-    literal_value: 2014
-  AddTriple (3ad14ed3-395d-4a83-ad6d-86b2ab337892)
- Call ID: 3ad14ed3-395d-4a83-ad6d-86b2ab337892
-  Args:
-    target: John_Herbert_Bowes-Lyon
-    source: Nerissa_Bowes-Lyon
+    target: :MichaelBowes-Lyon
+    source: :LadyMaryCeciliaColman
     relation: :hasFather
-  AddTriple (c66df3e2-14af-423b-844c-d812383e24b2)
- Call ID: c66df3e2-14af-423b-844c-d812383e24b2
+  AddTriple (0cdbce65-f6ad-49ec-bd4f-33e56f278728)
+ Call ID: 0cdbce65-f6ad-49ec-bd4f-33e56f278728
+  Args:
+    target: :ElizabethMargaretCator
+    source: :LadyMaryCeciliaColman
+    relation: :hasMother
+  AddTriple (ca8da53c-40d1-4433-88d9-0ae725086c8b)
+ Call ID: ca8da53c-40d1-4433-88d9-0ae725086c8b
+  Args:
+    source: :MichaelBowes-Lyon
+    target: :ClaudeBowes-Lyon
+    relation: :hasFather
+  AddTriple (08e22601-c04a-4417-bf5f-2a8a843d6486)
+ Call ID: 08e22601-c04a-4417-bf5f-2a8a843d6486
   Args:
     relation: :hasMother
-    source: Nerissa_Bowes-Lyon
-    target: Fenella_Hepburn-Stuart-Forbes-Trefusis
-  AddTriple (b0b33323-5017-4988-bdf4-fa73a6537929)
- Call ID: b0b33323-5017-4988-bdf4-fa73a6537929
+    source: :MichaelBowes-Lyon
+    target: :CeciliaBowes-Lyon
+  AddTriple (e8a75ead-9da4-40cf-8635-de7764327ae0)
+ Call ID: e8a75ead-9da4-40cf-8635-de7764327ae0
   Args:
-    target: John_Herbert_Bowes-Lyon
-    source: Katherine_Bowes-Lyon
+    target: :GeoffreyColman
+    source: :TimothyColman
     relation: :hasFather
-  AddTriple (71c8e8d9-98ed-4c92-bb19-389d599575a4)
- Call ID: 71c8e8d9-98ed-4c92-bb19-389d599575a4
-  Args:
-    target: Fenella_Hepburn-Stuart-Forbes-Trefusis
-    source: Katherine_Bowes-Lyon
-    relation: :hasMother
-  AddTriple (dc46f77b-173e-4320-b230-fa0ddd5d0447)
- Call ID: dc46f77b-173e-4320-b230-fa0ddd5d0447
-  Args:
-    source: Nerissa_Bowes-Lyon
-    relation: :isSisterOf
-    target: Katherine_Bowes-Lyon
-  AddTriple (36f66295-21d0-40d3-bfbd-b0bb263bb8bf)
- Call ID: 36f66295-21d0-40d3-bfbd-b0bb263bb8bf
-  Args:
-    target: Nerissa_Bowes-Lyon
-    relation: :isSisterOf
-    source: Katherine_Bowes-Lyon
-  AssignClass (f1d992e7-95de-4927-9cef-31053f543686)
- Call ID: f1d992e7-95de-4927-9cef-31053f543686
-  Args:
-    source: Claude_Bowes-Lyon
-    type: :Man
-  AssignClass (d25514fe-7097-40f4-8947-5580f830bf72)
- Call ID: d25514fe-7097-40f4-8947-5580f830bf72
-  Args:
-    source: Cecilia_Bowes-Lyon
-    type: :Woman
-  AddTriple (b210fc51-9386-4ff9-ab37-2479669790c1)
- Call ID: b210fc51-9386-4ff9-ab37-2479669790c1
-  Args:
-    source: John_Herbert_Bowes-Lyon
-    relation: :hasFather
-    target: Claude_Bowes-Lyon
-  AddTriple (cd105ece-89e1-491c-ba6e-4fe89a907814)
- Call ID: cd105ece-89e1-491c-ba6e-4fe89a907814
-  Args:
-    target: Cecilia_Bowes-Lyon
-    relation: :hasMother
-    source: John_Herbert_Bowes-Lyon
-  AssignClass (3219babb-29c7-42db-99b0-2e502ba1a9b5)
- Call ID: 3219babb-29c7-42db-99b0-2e502ba1a9b5
-  Args:
-    source: Elizabeth_Bowes-Lyon
-    type: :Woman
-  AddTriple (10997569-1d81-463b-99b4-a8ed5d64527f)
- Call ID: 10997569-1d81-463b-99b4-a8ed5d64527f
-  Args:
-    relation: :hasFather
-    source: Elizabeth_Bowes-Lyon
-    target: Claude_Bowes-Lyon
-  AddTriple (aa841ed3-793b-433e-aff5-e8ded5021726)
- Call ID: aa841ed3-793b-433e-aff5-e8ded5021726
-  Args:
-    target: Cecilia_Bowes-Lyon
-    relation: :hasMother
-    source: Elizabeth_Bowes-Lyon
-  AddTriple (6313e07b-ef58-4723-b8dd-45e0df5c1e60)
- Call ID: 6313e07b-ef58-4723-b8dd-45e0df5c1e60
+  AddTriple (6a15160e-b609-4c1f-93f5-5a4517d04614)
+ Call ID: 6a15160e-b609-4c1f-93f5-5a4517d04614
   Args:
     relation: :isSisterOf
-    source: Elizabeth_Bowes-Lyon
-    target: John_Herbert_Bowes-Lyon
-  AssignClass (88ed2c66-a00a-471f-ae4a-0fe4b38c3a86)
- Call ID: 88ed2c66-a00a-471f-ae4a-0fe4b38c3a86
+    source: :PatriciaMaud
+    target: :LadyMaryCeciliaColman
+  AddTriple (ed96094b-df9b-488e-b5d2-938299b7d152)
+ Call ID: ed96094b-df9b-488e-b5d2-938299b7d152
   Args:
-    type: :Man
-    source: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-  AddTriple (1f504043-2543-49d2-97f4-85a8cc5aaf3b)
- Call ID: 1f504043-2543-49d2-97f4-85a8cc5aaf3b
+    relation: :hasBrother
+    target: :FergusMichaelClaude
+    source: :LadyMaryCeciliaColman
+  AddTriple (3e6b13b3-cc94-44b8-8af2-95be885ba344)
+ Call ID: 3e6b13b3-cc94-44b8-8af2-95be885ba344
   Args:
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-    source: Fenella_Hepburn-Stuart-Forbes-Trefusis
-    relation: :hasFather
-  AssignClass (27717ca5-a46a-4df2-9d74-08dc5df3bfef)
- Call ID: 27717ca5-a46a-4df2-9d74-08dc5df3bfef
-  Args:
-    source: Harriet_Hepburn-Stuart-Forbes-Trefusis
-    type: :Woman
-  AddTriple (902d51cb-3580-4395-a45d-596d4d292574)
- Call ID: 902d51cb-3580-4395-a45d-596d4d292574
-  Args:
-    target: Fenella_Hepburn-Stuart-Forbes-Trefusis
-    source: Harriet_Hepburn-Stuart-Forbes-Trefusis
-    relation: :isSisterOf
-  AddTriple (87e7c5b1-2882-4478-b4e3-267c2069c1fd)
- Call ID: 87e7c5b1-2882-4478-b4e3-267c2069c1fd
-  Args:
-    target: Charles_Hepburn-Stuart-Forbes-Trefusis_21st_Baron_Clinton
-    relation: :hasFather
-    source: Harriet_Hepburn-Stuart-Forbes-Trefusis
-  Finish (612c47c3-ae89-409e-8fd9-94a837d065a5)
- Call ID: 612c47c3-ae89-409e-8fd9-94a837d065a5
+    target: :MichaelAlbemarle
+    source: :LadyMaryCeciliaColman
+    relation: :hasBrother
+  Finish (9aa75921-3023-4be1-981d-08762e2e30f7)
+ Call ID: 9aa75921-3023-4be1-981d-08762e2e30f7
   Args:

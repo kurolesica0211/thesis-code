@@ -7,193 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Christian_X_of_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Christian X of Denmark" ;
-    data:posIndicesFull "3881:3892" ;
-    data:posIndicesPart "4225:4232",
-        "4503:4512",
-        "5198:5205",
-        "5535:5542" ;
-    data:wdtLink wdt:Q156617 ;
-    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm",
-        "Christian X" ;
-    :hasSex data:male .
-
-data:Count_Christian_of_Rosenborg a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Count Christian of Rosenborg" ;
-    data:posIndicesFull "2902:2929",
-        "2909:2929",
-        "523:550",
-        "530:550" ;
-    data:posIndicesPart "3247:3256",
-        "3429:3438",
-        "3671:3680",
-        "3694:3703",
-        "3756:3765",
-        "4503:4512" ;
-    data:wdtLink wdt:Q573263 ;
-    :alsoKnownAs "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Denmark",
-        "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Rosenborg",
-        "Christian of Denmark",
-        "Christian of Rosenborg",
-        "Christian zu Schleswig-Holstein-Sonderburg-Glücksburg, Prince of Denmark",
-        "Count Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Rosenborg",
-        "Prince Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Denmark",
-        "Prince Christian of Denmark" ;
-    :hasSex data:male .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Juliana_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Juliana of the Netherlands" ;
-    data:posIndicesFull "1725:1732",
-        "1725:1751" ;
-    data:wdtLink wdt:Q154946 ;
-    :alsoKnownAs "Juliana I of the Netherlands",
-        "Juliana Louise Emma Marie Wilhelmina",
-        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Juliana der Nederlanden",
-        "Julijana",
-        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Princess Juliana of the Netherlands",
-        "Queen Juliana",
-        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Queen Juliana of the Netherlands" ;
-    :hasSex data:female .
-
-data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince August Wilhelm of Prussia" ;
-    data:posIndicesFull "1781:1785",
-        "5239:5243" ;
-    data:posIndicesPart "2955:2961",
-        "3240:3246",
-        "3787:3793",
-        "5086:5092" ;
-    data:wdtLink wdt:Q58777 ;
-    :alsoKnownAs "Auwi" ;
-    :hasBrother data:Wilhelm-_German_Crown_Prince ;
-    :hasSex data:male ;
-    :isBrotherOf data:Wilhelm-_German_Crown_Prince ;
-    :isSiblingOf data:Wilhelm-_German_Crown_Prince ;
-    :isUncleOf data:Prince_Wilhelm_of_Prussia .
-
-data:Frederick_Francis_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Frederick Francis II" ;
-    data:posIndicesFull "1000:1020" ;
-    data:posIndicesPart "1446:1455",
-        "1456:1463" ;
-    data:wdtLink wdt:Q57976 ;
-    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin",
-        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
-        "Friedrich Franz II." ;
-    :hasChild data:Frederick_Francis_III ;
-    :hasSex data:male ;
-    :hasSon data:Frederick_Francis_III ;
-    :isFatherOf data:Frederick_Francis_III ;
-    :isParentOf data:Frederick_Francis_III .
-
-data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Grand Duchess Anastasia Mikhailovna of Russia" ;
-    data:posIndicesFull "1037:1082",
-        "1051:1082",
-        "311:356",
-        "325:356" ;
-    data:posIndicesPart "1374:1381",
-        "1503:1508",
-        "1563:1570",
-        "1820:1826",
-        "1955:1960",
-        "2858:2865",
-        "3147:3152",
-        "3216:3223",
-        "3961:3967",
-        "693:700",
-        "800:805",
-        "902:907",
-        "989:994" ;
-    data:wdtLink wdt:Q232159 ;
-    :alsoKnownAs "Anastasia Mikhailovna of Russia",
-        "Anastasia Mikhailovna, Grand Duchess of Mecklenburg-Schwerin",
-        "Anastasia, Grand Duchess of Mecklenburg-Schwerin" ;
-    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :hasSex data:female ;
-    :isMotherOf data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin .
-
-data:Prince_Wilhelm_of_Prussia a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Wilhelm of Prussia" ;
-    data:posIndicesFull "1617:1642" ;
-    data:posIndicesPart "2955:2961",
-        "3240:3246",
-        "3787:3793",
-        "5086:5092" ;
-    data:wdtLink wdt:Q77556 ;
-    :alsoKnownAs "Prince Wilhelm Friedrich Franz Joseph Christian Olaf of Prussia" ;
-    :hasFather data:Wilhelm-_German_Crown_Prince ;
-    :hasParent data:Wilhelm-_German_Crown_Prince ;
-    :hasSex data:male ;
-    :isChildOf data:Wilhelm-_German_Crown_Prince ;
-    :isSonOf data:Wilhelm-_German_Crown_Prince .
-
-data:Wilhelm-_German_Crown_Prince a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelm, German Crown Prince" ;
-    data:posIndicesFull "1611:1631" ;
-    data:posIndicesPart "2949:2954",
-        "2955:2961",
-        "2975:2980",
-        "3240:3246",
-        "3781:3786",
-        "3787:3793",
-        "3818:3823",
-        "4312:4318",
-        "4392:4398",
-        "5080:5085",
-        "5086:5092",
-        "5112:5117",
-        "5426:5432" ;
-    data:wdtLink wdt:Q57621 ;
-    :alsoKnownAs "Crown Prince Wilhelm",
-        "Friedrich Wilhelm Victor August Ernst" ;
-    :hasBrother data:Prince_August_Wilhelm_of_Prussia ;
-    :hasChild data:Prince_Wilhelm_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Wilhelm_of_Prussia ;
-    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isFatherOf data:Prince_Wilhelm_of_Prussia ;
-    :isParentOf data:Prince_Wilhelm_of_Prussia ;
-    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia .
-
-data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person ;
     rdfs:label "Alexandrine of Mecklenburg-Schwerin" ;
     data:posIndicesFull "0:35" ;
     data:posIndicesPart "1141:1152",
@@ -201,26 +15,26 @@ data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
         "1382:1393",
         "1517:1528",
         "1529:1537",
-        "2013:2024",
-        "2078:2086",
-        "2271:2282",
-        "2329:2340",
-        "2396:2407",
-        "2622:2633",
-        "2866:2877",
-        "3046:3054",
-        "3224:3235",
-        "3799:3810",
-        "3834:3845",
-        "3898:3909",
-        "3996:4007",
+        "1945:1956",
+        "2010:2018",
+        "2203:2214",
+        "2261:2272",
+        "2328:2339",
+        "2554:2565",
+        "2798:2809",
+        "2978:2986",
+        "3156:3167",
+        "3731:3742",
+        "3766:3777",
+        "3830:3841",
+        "3928:3939",
+        "4451:4462",
+        "4493:4504",
         "450:461",
-        "4611:4622",
-        "4653:4664",
-        "4735:4746",
-        "5593:5604",
+        "4575:4586",
+        "5433:5444",
+        "5514:5525",
         "560:571",
-        "5674:5685",
         "670:681",
         "704:715",
         "716:724",
@@ -235,21 +49,85 @@ data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
         "Duchess Alexandrine Auguste of Mecklenburg-Schwerin",
         "Duchess Alexandrine of Mecklenburg-Schwerin",
         "Queen Alexandrine of Denmark" ;
-    :hasFather data:Frederick_Francis_III ;
-    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
     :hasParent data:Frederick_Francis_III,
         data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-    :hasSex data:female ;
-    :isAuntOf data:Prince_Wilhelm_of_Prussia ;
-    :isChildOf data:Frederick_Francis_III,
-        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
-    :isDaughterOf data:Frederick_Francis_III,
-        data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia .
+    :hasSex data:female .
 
-data:Frederick_Francis_III a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Christian_X_of_Denmark a :Person ;
+    rdfs:label "Christian X of Denmark" ;
+    data:posIndicesFull "3813:3824" ;
+    data:posIndicesPart "4157:4164",
+        "4343:4352",
+        "5038:5045",
+        "5375:5382" ;
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm",
+        "Christian X" ;
+    :hasSex data:male .
+
+data:Count_Christian_of_Rosenborg a :Person ;
+    rdfs:label "Count Christian of Rosenborg" ;
+    data:posIndicesFull "2834:2861",
+        "2841:2861",
+        "523:550",
+        "530:550" ;
+    data:posIndicesPart "3179:3188",
+        "3361:3370",
+        "3603:3612",
+        "3626:3635",
+        "3688:3697",
+        "4343:4352" ;
+    data:wdtLink wdt:Q573263 ;
+    :alsoKnownAs "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Denmark",
+        "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Rosenborg",
+        "Christian of Denmark",
+        "Christian of Rosenborg",
+        "Christian zu Schleswig-Holstein-Sonderburg-Glücksburg, Prince of Denmark",
+        "Count Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Rosenborg",
+        "Prince Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Denmark",
+        "Prince Christian of Denmark" ;
+    :hasSex data:male .
+
+data:Ingrid_of_Sweden a :Person ;
+    rdfs:label "Ingrid of Sweden" ;
+    data:posIndicesFull "4717:4733" ;
+    data:wdtLink wdt:Q163010 ;
+    :alsoKnownAs "Ingrid Victoria Sofia Louise Margareta",
+        "Ingrid of Sweden",
+        "Ingrid, Queen of Denmark",
+        "Princess Ingrid of Sweden",
+        "Queen Ingrid" ;
+    :hasSex data:female .
+
+data:Prince_Wilhelm_of_Prussia a :Person ;
+    rdfs:label "Prince Wilhelm of Prussia" ;
+    data:posIndicesFull "1617:1642" ;
+    data:posIndicesPart "2887:2893",
+        "3172:3178",
+        "3719:3725",
+        "4926:4932" ;
+    data:wdtLink wdt:Q77556 ;
+    :alsoKnownAs "Prince Wilhelm Friedrich Franz Joseph Christian Olaf of Prussia" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Frederick_Francis_II a :Person ;
+    rdfs:label "Frederick Francis II" ;
+    data:posIndicesFull "1000:1020" ;
+    data:posIndicesPart "1446:1455",
+        "1456:1463" ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin",
+        "Friedrich Franz II." ;
+    :hasSex data:male .
+
+data:Frederick_Francis_III a :Person ;
     rdfs:label "Frederick Francis III" ;
     data:posIndicesFull "248:269",
         "248:305" ;
@@ -261,14 +139,35 @@ data:Frederick_Francis_III a :Ancestor,
     :alsoKnownAs "Frederick Francis III, Grand Duke of Mecklenburg-Schwerin",
         "Friedrich Franz III",
         "Friedrich Franz III, Grand Duke of Mecklenburg-Schwerin" ;
-    :hasChild data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :hasDaughter data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :hasFather data:Frederick_Francis_II ;
     :hasParent data:Frederick_Francis_II ;
-    :hasSex data:male ;
-    :isChildOf data:Frederick_Francis_II ;
-    :isFatherOf data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :isParentOf data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :isSonOf data:Frederick_Francis_II ;
-    :isUncleOf data:Juliana_of_the_Netherlands .
+    :hasSex data:male .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Person ;
+    rdfs:label "Grand Duchess Anastasia Mikhailovna of Russia" ;
+    data:posIndicesFull "1037:1082",
+        "1051:1082",
+        "311:356",
+        "325:356" ;
+    data:posIndicesPart "1374:1381",
+        "1503:1508",
+        "1563:1570",
+        "1752:1758",
+        "1887:1892",
+        "2790:2797",
+        "3079:3084",
+        "3148:3155",
+        "3893:3899",
+        "693:700",
+        "800:805",
+        "902:907",
+        "989:994" ;
+    data:wdtLink wdt:Q232159 ;
+    :alsoKnownAs "Anastasia Mikhailovna of Russia",
+        "Anastasia Mikhailovna, Grand Duchess of Mecklenburg-Schwerin",
+        "Anastasia, Grand Duchess of Mecklenburg-Schwerin" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

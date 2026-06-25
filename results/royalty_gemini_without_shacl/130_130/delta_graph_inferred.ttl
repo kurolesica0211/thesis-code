@@ -1,0 +1,262 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Victoria_Louise_of_Prussia a :Person,
+        :Woman ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_III_of_the_United_Kingdom,
+        data:George_V_of_Hanover,
+        data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale,
+        data:Prince_Ernest_Augustus_the_younger,
+        data:Princess_Thyra_of_Denmark,
+        data:Princess_Victoria_Louise_of_Prussia ;
+    :hasSister data:Princess_Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:Princess_Victoria_Louise_of_Prussia ;
+    :isSiblingOf data:Princess_Victoria_Louise_of_Prussia ;
+    :isSisterOf data:Princess_Victoria_Louise_of_Prussia .
+
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Christian_IX_of_Denmark ;
+    :hasChild data:Princess_Thyra_of_Denmark ;
+    :hasDaughter data:Princess_Thyra_of_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_III_of_the_United_Kingdom,
+        data:George_V_of_Hanover,
+        data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale,
+        data:Prince_Ernest_Augustus_the_younger,
+        data:Princess_Thyra_of_Denmark,
+        data:Princess_Victoria_Louise_of_Prussia ;
+    :isAncestorOf data:George_William_of_Hanover,
+        data:Princess_Thyra_of_Denmark ;
+    :isBloodrelationOf data:Christian_IX_of_Denmark ;
+    :isBrotherOf data:Christian_IX_of_Denmark ;
+    :isFatherOf data:Princess_Thyra_of_Denmark ;
+    :isParentOf data:Princess_Thyra_of_Denmark ;
+    :isSiblingOf data:Christian_IX_of_Denmark ;
+    :isUncleOf data:Princess_Thyra_of_Denmark .
+
+data:George_III_of_the_United_Kingdom a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:George_III_of_the_United_Kingdom ;
+    :hasChild data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_III_of_the_United_Kingdom,
+        data:George_V_of_Hanover,
+        data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale,
+        data:Prince_Ernest_Augustus_the_younger,
+        data:Princess_Thyra_of_Denmark,
+        data:Princess_Victoria_Louise_of_Prussia ;
+    :hasSon data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :isAncestorOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_V_of_Hanover,
+        data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :isBloodrelationOf data:George_III_of_the_United_Kingdom ;
+    :isBrotherOf data:George_III_of_the_United_Kingdom ;
+    :isFatherOf data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :isParentOf data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :isSiblingOf data:George_III_of_the_United_Kingdom ;
+    :isUncleOf data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale .
+
+data:Princess_Thyra_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Christian_IX_of_Denmark ;
+    :hasChild data:George_William_of_Hanover ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasParent data:Christian_IX_of_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_III_of_the_United_Kingdom,
+        data:George_V_of_Hanover,
+        data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale,
+        data:Prince_Ernest_Augustus_the_younger,
+        data:Princess_Thyra_of_Denmark,
+        data:Princess_Victoria_Louise_of_Prussia ;
+    :hasSister data:Princess_Thyra_of_Denmark ;
+    :hasSon data:George_William_of_Hanover ;
+    :isAncestorOf data:George_William_of_Hanover ;
+    :isAuntOf data:George_William_of_Hanover ;
+    :isBloodrelationOf data:Princess_Thyra_of_Denmark ;
+    :isChildOf data:Christian_IX_of_Denmark ;
+    :isDaughterOf data:Christian_IX_of_Denmark ;
+    :isMotherOf data:George_William_of_Hanover ;
+    :isParentOf data:George_William_of_Hanover ;
+    :isSiblingOf data:Princess_Thyra_of_Denmark ;
+    :isSisterOf data:Princess_Thyra_of_Denmark .
+
+data:Prince_Ernest_Augustus_the_younger a :Man,
+        :Person ;
+    :hasAncestor data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_III_of_the_United_Kingdom,
+        data:George_V_of_Hanover,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :hasBrother data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMarriageYear 1913 ;
+    :hasParent data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_III_of_the_United_Kingdom,
+        data:George_V_of_Hanover,
+        data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale,
+        data:Prince_Ernest_Augustus_the_younger,
+        data:Princess_Thyra_of_Denmark,
+        data:Princess_Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :isBrotherOf data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :isChildOf data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isSiblingOf data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :isSonOf data:Ernest_Augustus_Crown_Prince_of_Hanover .
+
+data:George_V_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_III_of_the_United_Kingdom,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :hasBrother data:George_V_of_Hanover ;
+    :hasChild data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasFather data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :hasParent data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_III_of_the_United_Kingdom,
+        data:George_V_of_Hanover,
+        data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale,
+        data:Prince_Ernest_Augustus_the_younger,
+        data:Princess_Thyra_of_Denmark,
+        data:Princess_Victoria_Louise_of_Prussia ;
+    :hasSon data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isAncestorOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :isBloodrelationOf data:George_V_of_Hanover ;
+    :isBrotherOf data:George_V_of_Hanover ;
+    :isChildOf data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :isFatherOf data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isParentOf data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isSiblingOf data:George_V_of_Hanover ;
+    :isSonOf data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :isUncleOf data:Ernest_Augustus_Crown_Prince_of_Hanover .
+
+data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_III_of_the_United_Kingdom ;
+    :hasBrother data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :hasChild data:George_V_of_Hanover ;
+    :hasFather data:George_III_of_the_United_Kingdom ;
+    :hasParent data:George_III_of_the_United_Kingdom ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_III_of_the_United_Kingdom,
+        data:George_V_of_Hanover,
+        data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale,
+        data:Prince_Ernest_Augustus_the_younger,
+        data:Princess_Thyra_of_Denmark,
+        data:Princess_Victoria_Louise_of_Prussia ;
+    :hasSon data:George_V_of_Hanover ;
+    :isAncestorOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_V_of_Hanover,
+        data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :isBloodrelationOf data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :isBrotherOf data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :isChildOf data:George_III_of_the_United_Kingdom ;
+    :isFatherOf data:George_V_of_Hanover ;
+    :isParentOf data:George_V_of_Hanover ;
+    :isSiblingOf data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :isSonOf data:George_III_of_the_United_Kingdom ;
+    :isUncleOf data:George_V_of_Hanover .
+
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:George_III_of_the_United_Kingdom,
+        data:George_V_of_Hanover,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale ;
+    :hasBrother data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasChild data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :hasFather data:George_V_of_Hanover ;
+    :hasParent data:George_V_of_Hanover ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_III_of_the_United_Kingdom,
+        data:George_V_of_Hanover,
+        data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale,
+        data:Prince_Ernest_Augustus_the_younger,
+        data:Princess_Thyra_of_Denmark,
+        data:Princess_Victoria_Louise_of_Prussia ;
+    :hasSon data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :isAncestorOf data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :isBloodrelationOf data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isBrotherOf data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isChildOf data:George_V_of_Hanover ;
+    :isFatherOf data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :isParentOf data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :isSiblingOf data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isSonOf data:George_V_of_Hanover ;
+    :isUncleOf data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger .
+
+data:George_William_of_Hanover a :Man,
+        :Person ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_III_of_the_United_Kingdom,
+        data:George_V_of_Hanover,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale,
+        data:Princess_Thyra_of_Denmark ;
+    :hasBirthYear 1880 ;
+    :hasBrother data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :hasDeathYear 1912 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMother data:Princess_Thyra_of_Denmark ;
+    :hasParent data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Princess_Thyra_of_Denmark ;
+    :hasRelation data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:George_III_of_the_United_Kingdom,
+        data:George_V_of_Hanover,
+        data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale,
+        data:Prince_Ernest_Augustus_the_younger,
+        data:Princess_Thyra_of_Denmark,
+        data:Princess_Victoria_Louise_of_Prussia ;
+    :isBloodrelationOf data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :isBrotherOf data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :isChildOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Princess_Thyra_of_Denmark ;
+    :isSiblingOf data:George_William_of_Hanover,
+        data:Prince_Ernest_Augustus_the_younger ;
+    :isSonOf data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Princess_Thyra_of_Denmark .
+

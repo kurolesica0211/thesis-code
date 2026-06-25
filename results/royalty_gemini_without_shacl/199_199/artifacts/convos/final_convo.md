@@ -69,36 +69,15 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Nathalie of Sayn-Wittgenstein-Berleburg (Nathalie Xenia Margrethe Benedikte; born 2 May 1975) is a Danish equestrian, an Olympian, and the daughter of Princess Benedikte of Denmark and Prince Richard of Sayn-Wittgenstein-Berleburg.
-She is the niece of Queen Margrethe II of Denmark and King Constantine II of Greece.
-Her first cousin is King Frederik X of Denmark.
-Early life
-
-Princess Nathalie was born on 2 May 1975 in Copenhagen, Denmark, the youngest of three children of Princess Benedikte of Denmark and Prince Richard of Sayn-Wittgenstein-Berleburg.
-She grew up at Schloss Berleburg in Bad Berleburg, Germany.
-Nathalie and her sister Alexandra became Danish citizens on 19 May 1998.
-Neither she nor her siblings are in line of succession to the Danish throne, as that would have required taking up permanent residence in Denmark when reaching the age of mandatory education.
-Equestrian career
-
-In 1994, Princess Nathalie began training at the Swedish stud Flyinge with Kyra Kyrklund, a former world champion in dressage.
-Nathalie was selected as a reserve rider for the 2000 Olympic team.
-She finished 12th in the individual event and helped Denmark to a 4th-place team finish.
-In January 2017, Nathalie was named head coach of the Danish national dressage team.
-In autumn 2005, she opened her own stud farm, which is based in Bad Berleburg.
-Marriage and children
-
-On 4 January 2010, Princess Nathalie's engagement to German horse breeder Alexander Johannsmann (born 6 December 1977), son of showjumper Heinrich-Wilhelm Johannsmann, was announced.
-The couple married civilly 27 May 2010 and religiously the following year, on 18 June 2011 at the Protestant Stadtkirche in Berleburg, Germany.
-Princess Nathalie gave birth to a son, Konstantin Gustav Heinrich Richard, on 24 July 2010.
-Konstantin's godparents were Crown Princess Mary of Denmark, his aunt Ann-Kathrin Johannsmann, and his uncle Prince Gustav.
-On 28 January 2015, she gave birth to her second child, a daughter named Louisa Margareta Benedikte Hanna, in Bad Berleburg, Germany.
-On 15 August 2022, the Danish court confirmed that Nathalie and Johannsmann had divorced.
+Fernando "Fernand" Sanz y Martínez de Arizala (28 February 1881 – 8 January 1925) was a Spanish-born naturalized French racing cyclist, younger of two illegitimate sons of King Alfonso XII of Spain and his mistress, Elena Sanz.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -114,39 +93,9 @@ On 15 August 2022, the Danish court confirmed that Nathalie and Johannsmann had 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -161,6 +110,23 @@ On 15 August 2022, the Danish court confirmed that Nathalie and Johannsmann had 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -178,6 +144,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -245,29 +226,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -276,6 +249,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -288,6 +269,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -296,17 +279,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -334,6 +319,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -349,139 +418,79 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (7df28c7e-c4cd-4342-8637-7a5b7d0d69a7)
- Call ID: 7df28c7e-c4cd-4342-8637-7a5b7d0d69a7
+  AssignClass (4780f6fe-9b71-49a8-acb4-78298f4e3a9c)
+ Call ID: 4780f6fe-9b71-49a8-acb4-78298f4e3a9c
   Args:
-    type: :Woman
-    source: Nathalie_of_Sayn-Wittgenstein-Berleburg
-  AssignClass (798d94ec-f490-4afc-96d5-991c90cbd4e0)
- Call ID: 798d94ec-f490-4afc-96d5-991c90cbd4e0
-  Args:
-    source: Nathalie_of_Sayn-Wittgenstein-Berleburg
-    type: :Person
-  AssignClass (52213f82-2230-4c2b-b72e-809d633bc7b9)
- Call ID: 52213f82-2230-4c2b-b72e-809d633bc7b9
-  Args:
-    type: :Woman
-    source: Benedikte_of_Denmark
-  AssignClass (d83a3bf7-f86a-4f75-b33a-4fd2f25b8193)
- Call ID: d83a3bf7-f86a-4f75-b33a-4fd2f25b8193
-  Args:
-    type: :Person
-    source: Benedikte_of_Denmark
-  AssignClass (bfe50b6b-26d4-4ebc-b444-86286ed411ea)
- Call ID: bfe50b6b-26d4-4ebc-b444-86286ed411ea
-  Args:
+    source: :Fernando_Sanz_y_Martinez_de_Arizala
     type: :Man
-    source: Richard_of_Sayn-Wittgenstein-Berleburg
-  AssignClass (34939292-0e4f-4850-b34d-ffa785a50dce)
- Call ID: 34939292-0e4f-4850-b34d-ffa785a50dce
-  Args:
-    source: Richard_of_Sayn-Wittgenstein-Berleburg
-    type: :Person
-  AssignClass (e56b1084-2405-4bcc-9ff2-99e1fcd583f4)
- Call ID: e56b1084-2405-4bcc-9ff2-99e1fcd583f4
-  Args:
-    type: :Man
-    source: Alexander_Johannsmann
-  AssignClass (887d7f81-6eed-4e6d-a450-2f463b6ce00d)
- Call ID: 887d7f81-6eed-4e6d-a450-2f463b6ce00d
-  Args:
-    source: Alexander_Johannsmann
-    type: :Person
-  AssignClass (2135eeb5-60c7-436f-b60c-b80f69599788)
- Call ID: 2135eeb5-60c7-436f-b60c-b80f69599788
-  Args:
-    source: Konstantin_Gustav_Heinrich_Richard
-    type: :Man
-  AssignClass (7299c838-5b7a-4b0a-8c46-6dd46b7ce0bf)
- Call ID: 7299c838-5b7a-4b0a-8c46-6dd46b7ce0bf
+  AssignClass (c4e9796c-34fa-4bb9-8af4-c0b4238ceb2d)
+ Call ID: c4e9796c-34fa-4bb9-8af4-c0b4238ceb2d
   Args:
     type: :Person
-    source: Konstantin_Gustav_Heinrich_Richard
-  AssignClass (cb280c76-ff31-4740-9e1f-754c237c7019)
- Call ID: cb280c76-ff31-4740-9e1f-754c237c7019
+    source: :Fernando_Sanz_y_Martinez_de_Arizala
+  AddLiteral (4b1fe544-4b0a-4eba-bedc-5df0af7b21d1)
+ Call ID: 4b1fe544-4b0a-4eba-bedc-5df0af7b21d1
   Args:
-    type: :Woman
-    source: Louisa_Margareta_Benedikte_Hanna
-  AssignClass (4cc3f001-5267-4e59-a8dd-c0afcf759b87)
- Call ID: 4cc3f001-5267-4e59-a8dd-c0afcf759b87
+    relation: :knownAs
+    literal_value: Fernando "Fernand" Sanz y Martínez de Arizala
+    literal_type: xsd:string
+    source: :Fernando_Sanz_y_Martinez_de_Arizala
+  AddLiteral (0a8863d5-29f1-4ed2-a87e-898cdf5385b8)
+ Call ID: 0a8863d5-29f1-4ed2-a87e-898cdf5385b8
   Args:
-    source: Louisa_Margareta_Benedikte_Hanna
-    type: :Person
-  AssignClass (40e3d80c-aee0-4a67-bbd2-e6a5e26b00b6)
- Call ID: 40e3d80c-aee0-4a67-bbd2-e6a5e26b00b6
-  Args:
-    type: :Man
-    source: Heinrich-Wilhelm_Johannsmann
-  AssignClass (0b2a68ca-240f-4bc1-b86d-95ec07ff78d8)
- Call ID: 0b2a68ca-240f-4bc1-b86d-95ec07ff78d8
-  Args:
-    source: Heinrich-Wilhelm_Johannsmann
-    type: :Person
-  AddTriple (d83d91e0-af8e-4937-b585-e159925b7679)
- Call ID: d83d91e0-af8e-4937-b585-e159925b7679
-  Args:
-    source: Nathalie_of_Sayn-Wittgenstein-Berleburg
-    target: Richard_of_Sayn-Wittgenstein-Berleburg
-    relation: :hasFather
-  AddTriple (15898556-98a5-462d-956f-5de2ed8917f5)
- Call ID: 15898556-98a5-462d-956f-5de2ed8917f5
-  Args:
-    relation: :hasMother
-    source: Nathalie_of_Sayn-Wittgenstein-Berleburg
-    target: Benedikte_of_Denmark
-  AddTriple (3e9804a2-35dc-4bea-9f15-df15dd4d3c11)
- Call ID: 3e9804a2-35dc-4bea-9f15-df15dd4d3c11
-  Args:
-    source: Alexander_Johannsmann
-    target: Heinrich-Wilhelm_Johannsmann
-    relation: :hasFather
-  AddTriple (b29945ef-8ae4-47ec-9847-469b29475fb7)
- Call ID: b29945ef-8ae4-47ec-9847-469b29475fb7
-  Args:
-    target: Nathalie_of_Sayn-Wittgenstein-Berleburg
-    source: Konstantin_Gustav_Heinrich_Richard
-    relation: :hasMother
-  AddTriple (8219f232-c287-4351-b481-9714e266e164)
- Call ID: 8219f232-c287-4351-b481-9714e266e164
-  Args:
-    target: Alexander_Johannsmann
-    source: Konstantin_Gustav_Heinrich_Richard
-    relation: :hasFather
-  AddTriple (bf0b8d43-e75f-45c7-b47c-cae6074ce36c)
- Call ID: bf0b8d43-e75f-45c7-b47c-cae6074ce36c
-  Args:
-    target: Nathalie_of_Sayn-Wittgenstein-Berleburg
-    source: Louisa_Margareta_Benedikte_Hanna
-    relation: :hasMother
-  AddTriple (189183cc-b220-4670-9352-8d7aa19cef01)
- Call ID: 189183cc-b220-4670-9352-8d7aa19cef01
-  Args:
-    source: Louisa_Margareta_Benedikte_Hanna
-    target: Alexander_Johannsmann
-    relation: :hasFather
-  AddLiteral (14a9e0b0-ecb3-4165-aea6-3dda54bcafb6)
- Call ID: 14a9e0b0-ecb3-4165-aea6-3dda54bcafb6
-  Args:
+    literal_value: 1881
+    source: :Fernando_Sanz_y_Martinez_de_Arizala
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1975
-    source: Nathalie_of_Sayn-Wittgenstein-Berleburg
-  AddLiteral (93bd24f3-7d16-4a76-ae7d-8936c9b4dfbf)
- Call ID: 93bd24f3-7d16-4a76-ae7d-8936c9b4dfbf
+  AddLiteral (2a40a750-ba69-414e-b569-c0a3e464b741)
+ Call ID: 2a40a750-ba69-414e-b569-c0a3e464b741
   Args:
-    source: Alexander_Johannsmann
+    relation: :hasDeathYear
+    source: :Fernando_Sanz_y_Martinez_de_Arizala
     literal_type: xsd:integer
-    literal_value: 1977
-    relation: :hasBirthYear
-  AddLiteral (651e4bd9-3c5b-4b42-af3e-88af26e1efc1)
- Call ID: 651e4bd9-3c5b-4b42-af3e-88af26e1efc1
+    literal_value: 1925
+  AssignClass (7b9c7d1e-1547-4782-aaf2-ba83e9f16f58)
+ Call ID: 7b9c7d1e-1547-4782-aaf2-ba83e9f16f58
   Args:
-    source: Nathalie_of_Sayn-Wittgenstein-Berleburg
-    literal_value: 2010
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  Finish (4119fae4-2bbb-4866-8d66-93bf0303fda5)
- Call ID: 4119fae4-2bbb-4866-8d66-93bf0303fda5
+    source: :Alfonso_XII_of_Spain
+    type: :Ancestor
+  AssignClass (32ecb1b0-0dbd-49bd-ba2e-ac16f1bd7486)
+ Call ID: 32ecb1b0-0dbd-49bd-ba2e-ac16f1bd7486
+  Args:
+    type: :Man
+    source: :Alfonso_XII_of_Spain
+  AssignClass (8b8ec07d-2760-4e1e-bd5f-7c1696588287)
+ Call ID: 8b8ec07d-2760-4e1e-bd5f-7c1696588287
+  Args:
+    type: :Person
+    source: :Alfonso_XII_of_Spain
+  AssignClass (1ba3bda7-a4c7-43dd-ab26-2ce5120aac8c)
+ Call ID: 1ba3bda7-a4c7-43dd-ab26-2ce5120aac8c
+  Args:
+    type: :Ancestor
+    source: :Elena_Sanz
+  AssignClass (cf8826a7-9327-4826-bf1e-6c11ed9c2a58)
+ Call ID: cf8826a7-9327-4826-bf1e-6c11ed9c2a58
+  Args:
+    source: :Elena_Sanz
+    type: :Woman
+  AssignClass (03032b7f-dc6f-482a-83b6-4e3cfc74d52d)
+ Call ID: 03032b7f-dc6f-482a-83b6-4e3cfc74d52d
+  Args:
+    type: :Person
+    source: :Elena_Sanz
+  AddTriple (c32c7228-4285-4c17-871e-ff9ccf487e9e)
+ Call ID: c32c7228-4285-4c17-871e-ff9ccf487e9e
+  Args:
+    relation: :hasFather
+    target: :Alfonso_XII_of_Spain
+    source: :Fernando_Sanz_y_Martinez_de_Arizala
+  AddTriple (6ef24b52-d7b7-47f0-9cbe-dbd8cd4bd52c)
+ Call ID: 6ef24b52-d7b7-47f0-9cbe-dbd8cd4bd52c
+  Args:
+    target: :Elena_Sanz
+    source: :Fernando_Sanz_y_Martinez_de_Arizala
+    relation: :hasMother
+  Finish (ab350934-c36b-4a48-b60b-ebff4c924e19)
+ Call ID: ab350934-c36b-4a48-b60b-ebff4c924e19
   Args:

@@ -2,27 +2,29 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Bagrat_de_Bagration a :Man,
-        :Person ;
-    :hasSister data:Princess_Mariam_de_Bagration .
+data:Dr_Tomas_Ortiz_y_Valero a :Man .
 
-data:Dr_Tomas_Ortiz_y_Valero a :Man,
-        :Person .
+data:Princess_Francoise a :Woman .
 
-data:Jorge_de_Bagration a :Man,
-        :Person ;
-    :hasSister data:Princess_Mariam_de_Bagration .
+data:Princess_Mariam a :Woman .
 
-data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon a :Person,
-        :Woman .
-
-data:Prince_Irakli_Bagration_of_Mukhrani a :Man,
-        :Person .
-
-data:Princess_Mariam_de_Bagration a :Person,
-        :Woman ;
+data:Princess_Mariam_de_Bagration a :Woman ;
     :hasBirthYear 1947 ;
     :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
     :hasMarriageYear 1982 ;
-    :hasMother data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon .
+    :hasMother data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon ;
+    :isSiblingOf data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration .
+
+data:Princess_Monique a :Woman .
+
+data:Princess_Nuria a :Woman .
+
+data:Bagrat_de_Bagration a :Man .
+
+data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon a :Woman .
+
+data:Jorge_de_Bagration a :Man .
+
+data:Prince_Irakli_Bagration_of_Mukhrani a :Man .
 

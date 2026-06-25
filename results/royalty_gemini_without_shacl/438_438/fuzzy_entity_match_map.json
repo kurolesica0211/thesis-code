@@ -1,200 +1,97 @@
 {
   "run_directory": "results/royalty_gemini_without_shacl",
   "task_directory": "results/royalty_gemini_without_shacl/438_438",
-  "text_file": "Q75248488.txt",
-  "text_key": "Q75248488",
-  "article": "https://en.wikipedia.org/wiki/Katherine_Bowes-Lyon",
-  "article_key": "Katherine Bowes-Lyon",
+  "text_file": "Q75248478.txt",
+  "text_key": "Q75248478",
+  "article": "https://en.wikipedia.org/wiki/Albemarle_Bowes-Lyon",
+  "article_key": "Albemarle Bowes-Lyon",
   "main_entity": {
-    "uri": "http://example.com/data#Katherine_Bowes-Lyon",
-    "qid": "Q75248488",
-    "label": "Katherine Bowes-Lyon"
+    "uri": "http://example.com/data#Albemarle_Bowes-Lyon",
+    "qid": "Q75248478",
+    "label": "Albemarle Bowes-Lyon"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Katherine_Bowes-Lyon",
-      "qid": "Q75248488",
-      "label": "Katherine Bowes-Lyon",
+      "uri": "http://example.com/data#Albemarle_Bowes-Lyon",
+      "qid": "Q75248478",
+      "label": "Albemarle Bowes-Lyon",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Fenella_Hepburn-Stuart-Forbes-Trefusis",
-      "qid": "Q75381423",
-      "label": "Fenella Hepburn-Stuart-Forbes-Trefusis",
+      "uri": "http://example.com/data#Elizabeth_Cator",
+      "qid": "Q75240065",
+      "label": "Elizabeth Cator",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#John_Bowes-Lyon",
-      "qid": "Q75411",
-      "label": "John Bowes-Lyon",
+      "uri": "http://example.com/data#Michael_Bowes-Lyon",
+      "qid": "Q63806478",
+      "label": "Michael Bowes-Lyon",
       "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Lady_Elizabeth_Shakerley",
-      "qid": "Q75332807",
-      "label": "Lady Elizabeth Shakerley",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Nerissa_Bowes-Lyon",
-      "qid": "Q75251053",
-      "label": "Nerissa Bowes-Lyon",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Anne_of_Denmark",
-      "qid": "Q2871729",
-      "label": "Princess Anne of Denmark",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
-      "qid": "Q10633",
-      "label": "Queen Elizabeth, The Queen Mother",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne",
-      "qid": "Q238820",
-      "label": "Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne",
-      "distance": 2,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Claude_Bowes-Lyon-_14th_Earl_of_Strathmore_and_Kinghorne",
-      "qid": "Q335159",
-      "label": "Claude Bowes-Lyon, 14th Earl of Strathmore and Kinghorne",
-      "distance": 2,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Elizabeth_II",
-      "qid": "Q9682",
-      "label": "Elizabeth II",
-      "distance": 2,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Fenella_Hepburn-Stuart-Forbes-Trefusis",
-      "extracted_local_name": "Fenella_Hepburn-Stuart-Forbes-Trefusis",
-      "embedding_text": "Fenella Hepburn-Stuart-Forbes-Trefusis",
+      "extracted_uri": "http://example.org/data/Elizabeth_Margaret_Cator",
+      "extracted_local_name": "Elizabeth_Margaret_Cator",
+      "embedding_text": "Elizabeth Margaret Cator",
       "extracted_gender": "female",
       "matched": true,
       "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Fenella_Hepburn-Stuart-Forbes-Trefusis",
-      "ground_truth_qid": "Q75381423",
-      "ground_truth_label": "Fenella Hepburn-Stuart-Forbes-Trefusis",
+      "ground_truth_uri": "http://example.com/data#Elizabeth_Cator",
+      "ground_truth_qid": "Q75240065",
+      "ground_truth_label": "Elizabeth Cator",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Fenella Hepburn-Stuart-Forbes-Trefusis",
-      "best_candidate_label": "Fenella Hepburn-Stuart-Forbes-Trefusis",
-      "best_candidate_qid": "Q75381423",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/John_Herbert_Bowes-Lyon",
-      "extracted_local_name": "John_Herbert_Bowes-Lyon",
-      "embedding_text": "John Herbert Bowes-Lyon",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#John_Bowes-Lyon",
-      "ground_truth_qid": "Q75411",
-      "ground_truth_label": "John Bowes-Lyon",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "John Herbert Bowes-Lyon",
-      "best_candidate_label": "John Bowes-Lyon",
-      "best_candidate_qid": "Q75411",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Katherine_Juliet_Bowes-Lyon",
-      "extracted_local_name": "Katherine_Juliet_Bowes-Lyon",
-      "embedding_text": "Katherine Juliet Bowes-Lyon",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Katherine_Bowes-Lyon",
-      "ground_truth_qid": "Q75248488",
-      "ground_truth_label": "Katherine Bowes-Lyon",
-      "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Katherine Juliet Bowes-Lyon",
-      "best_candidate_label": "Katherine Bowes-Lyon",
-      "best_candidate_qid": "Q75248488",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Nerissa_Jane_Irene_Bowes-Lyon",
-      "extracted_local_name": "Nerissa_Jane_Irene_Bowes-Lyon",
-      "embedding_text": "Nerissa Jane Irene Bowes-Lyon",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Nerissa_Bowes-Lyon",
-      "ground_truth_qid": "Q75251053",
-      "ground_truth_label": "Nerissa Bowes-Lyon",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Nerissa Jane Irene Bowes-Lyon",
-      "best_candidate_label": "Nerissa Bowes-Lyon",
-      "best_candidate_qid": "Q75251053",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Cecilia_Bowes-Lyon",
-      "extracted_local_name": "Cecilia_Bowes-Lyon",
-      "embedding_text": "Cecilia Bowes-Lyon",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 0.75,
-      "ground_truth_uri": "http://example.com/data#Queen_Elizabeth-_The_Queen_Mother",
-      "ground_truth_qid": "Q10633",
-      "ground_truth_label": "Queen Elizabeth, The Queen Mother",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Elizabeth Bowes-Lyon",
-      "best_candidate_label": "Queen Elizabeth, The Queen Mother",
-      "best_candidate_qid": "Q10633",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.75
-    },
-    {
-      "extracted_uri": "http://example.org/data/Claude_Bowes-Lyon",
-      "extracted_local_name": "Claude_Bowes-Lyon",
-      "embedding_text": "Claude Bowes-Lyon",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "John Herbert Bowes-Lyon",
-      "best_candidate_label": "John Bowes-Lyon",
-      "best_candidate_qid": "Q75411",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.6
+      "best_candidate_match_text": "Elizabeth Margaret Cator",
+      "best_candidate_label": "Elizabeth Cator",
+      "best_candidate_qid": "Q75240065",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Michael_Albemarle_Bowes-Lyon",
+      "extracted_local_name": "Michael_Albemarle_Bowes-Lyon",
+      "embedding_text": "Michael Albemarle Bowes-Lyon",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Albemarle_Bowes-Lyon",
+      "ground_truth_qid": "Q75248478",
+      "ground_truth_label": "Albemarle Bowes-Lyon",
+      "ground_truth_distance": 0,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Michael Albemarle Bowes-Lyon",
+      "best_candidate_label": "Albemarle Bowes-Lyon",
+      "best_candidate_qid": "Q75248478",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Michael_Claude_Hamilton_Bowes-Lyon",
+      "extracted_local_name": "Michael_Claude_Hamilton_Bowes-Lyon",
+      "embedding_text": "Michael Claude Hamilton Bowes-Lyon",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Michael_Bowes-Lyon",
+      "ground_truth_qid": "Q63806478",
+      "ground_truth_label": "Michael Bowes-Lyon",
+      "ground_truth_distance": 1,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Michael Claude Hamilton Bowes-Lyon",
+      "best_candidate_label": "Michael Bowes-Lyon",
+      "best_candidate_qid": "Q63806478",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
     }
   ],
   "summary": {
-    "entities_total": 6,
-    "entities_matched": 5,
-    "entities_unmatched": 1
+    "entities_total": 3,
+    "entities_matched": 3,
+    "entities_unmatched": 0
   }
 }

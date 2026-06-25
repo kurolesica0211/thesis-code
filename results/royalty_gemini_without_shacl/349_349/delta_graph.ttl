@@ -2,58 +2,27 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_of_Yugoslavia a :Man,
+data:TatianaMountbatten a :Person,
+        :Woman ;
+    :hasAncestor data:CountessNadejdaMikhailovnaDeTorby,
+        data:PrinceGeorgeOfBattenberg ;
+    :hasBirthYear "1990-04-16"^^xsd:date ;
+    :hasBrother data:HenryMountbatten ;
+    :hasFather data:GeorgeMountbatten ;
+    :hasMother data:SarahGeorginaWalker .
+
+data:CountessNadejdaMikhailovnaDeTorby a :Person,
+        :Woman .
+
+data:GeorgeMountbatten a :Man,
         :Person .
 
-data:Alexia_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :isSisterOf data:Nikolaos_of_Greece_and_Denmark .
-
-data:Chrysi_Vardinogianni a :Person,
-        :Woman ;
-    :hasFather data:Giorgos_Vardinogiannis ;
-    :hasMother data:Agapi_Politi .
-
-data:Irene_of_Greece_and_Denmark a :Person,
-        :Woman .
-
-data:Margareta_of_Greece_and_Denmark a :Person .
-
-data:Margareta_of_Romania a :Woman .
-
-data:Pavlos_of_Greece_and_Denmark a :Man,
-        :Person ;
-    :isBrotherOf data:Nikolaos_of_Greece_and_Denmark .
-
-data:Philippos_of_Greece_and_Denmark a :Man,
-        :Person ;
-    :isBrotherOf data:Nikolaos_of_Greece_and_Denmark .
-
-data:Sofia_of_Spain a :Person,
-        :Woman .
-
-data:Tatiana_Ellinka_Blatnik a :Person,
-        :Woman .
-
-data:Theodora_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :isSisterOf data:Nikolaos_of_Greece_and_Denmark .
-
-data:Agapi_Politi a :Person,
-        :Woman .
-
-data:Anne-Marie a :Person,
-        :Woman .
-
-data:Constantine_II a :Man,
+data:HenryMountbatten a :Man,
         :Person .
 
-data:Giorgos_Vardinogiannis a :Man,
+data:PrinceGeorgeOfBattenberg a :Man,
         :Person .
 
-data:Nikolaos_of_Greece_and_Denmark a :Man,
-        :Person ;
-    :hasBirthYear 1969 ;
-    :hasFather data:Constantine_II ;
-    :hasMother data:Anne-Marie .
+data:SarahGeorginaWalker a :Person,
+        :Woman .
 

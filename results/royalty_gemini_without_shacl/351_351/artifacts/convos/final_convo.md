@@ -69,57 +69,41 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince August Wilhelm Heinrich Günther Viktor of Prussia (29 January 1887 – 25 March 1949), nicknamed "Auwi", was the fourth son of German Emperor Wilhelm II by his first wife, Augusta Victoria of Schleswig-Holstein.
-Early life
-
-He was born in the Potsdamer Stadtschloss when his grandfather was still the Crown Prince of Prussia.
-He spent his youth with his siblings at the New Palace, also in Potsdam, and his school days with his brothers at the Prinzenhaus in Plön in his mother's ancestral Schleswig-Holstein.
-Prince August Wilhelm married his cousin Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg on 22 October 1908 at the Berliner Stadtschloss.
-The couple had planned to take up residence in Schönhausen Palace in Berlin, but changed their mind when his father, Kaiser Wilhelm, decided to leave his son the Villa Liegnitz in the Sanssouci Park.
-In 1912 their only child, Prince Alexander Ferdinand of Prussia, was born.
-In the First World War, August Wilhelm was made district administrator (Landrat) of the district of Ruppin; his office and residence was now Schloss Rheinsberg.
-His personal adjutant Hans Georg von Mackensen played an important role in his life; the two had been close friends since August Wilhelm's youth.
-These "pronounced homophilic tendencies" contributed to the failure of his marriage to Princess Alexandra Victoria.
-The couple did not divorce while August Wilhelm's father, Kaiser Wilhelm II, was Emperor, owing to his opposition to the idea.
-Weimar Republic
-
-Initially, many Allied and German leaders favored transitioning Germany to a constitutional monarchy with August Wilhelm as either Emperor or regent for one of Crown Prince Wilhelm's children, although this possibility was quickly precluded when Philipp Scheidemann was forced by the pressures of the German Revolution to declare a republic.
-August Wilhelm was awarded custody of their son.
-After his divorce and the marriage of his friend von Mackensen to Winifred von Neurath, the daughter of Konstantin von Neurath, August Wilhelm lived a reclusive life in his villa in Potsdam.
-Involvement with Nazism
-
-August Wilhelm joined the conservative nationalist veterans group Der Stahlhelm (English: "The Steel helmet").
-His involvement with the NSDAP and his adoration of Adolf Hitler made August Wilhelm often the subject of mockery by the left-wing press (who gave him the nickname Braunhemdchen Auwi, or "Auwi the Little Brown Shirt"), politicians (French Ambassador André François-Poncet called him Hanswurst "Hans the Brown Sausage") and from the National Socialists themselves (Joseph Goebbels referred to him as a "good-natured but slightly gormless boy").
-As a representative of the erstwhile Hohenzollern dynasty, August Wilhelm was deliberately used by the party to gain votes in elections: he was elected as its lead candidate for the Landtag of Prussia in April 1932, and retained his seat until the Landtag's dissolution in October 1933.
-Through his appearances at the party's mass rallies, he addressed himself to sections of the population that were lukewarm towards National Socialism and convinced them "that Hitler was not a threat, but a benefactor of the German people and the German Empire".
-At the 5 March 1933 election, August Wilhelm was elected as a Nazi deputy to the German Reichstag from electoral constituency 4, Potsdam I, and he would retain this seat until the fall of the Nazi regime.
-August Wilhelm held these positions until the fall of the Nazi regime.
-However, after the passing of the Enabling Act of 1933 and the establishment of the dictatorship of the Third Reich, the party no longer needed the former prince, who had secretly hoped "that Hitler would one day hoist him or his son Alexander up to the vacant throne of the Kaiser".
-One high-profile visit took August Wilhelm to the Passau Hall of the Nibelungs (Nibelungenhalle).
-In early February 1945, in the company of the former Crown Princess Cecilie, August Wilhelm fled the approaching Red Army by going from Potsdam to Kronberg to take refuge with his aunt Princess Margaret of Prussia, a sister of his father.
-Post-war life
-
-At the end of the Second World War, on 8 May 1945, August Wilhelm was arrested by the U.S. Army and imprisoned in Ludwigsburg.
-A young German Jewish refugee started his interrogation as an American soldier.
-Immediately after his release, new proceedings were instituted against August Wilhelm.
-With his wife, Princess Alexandra of Schleswig-Holstein-Sonderburg-Glücksburg, Prince August Wilhelm had one son:
+Queen Anne-Marie
 
 
-Regimental commissions until First World War
+Queen Sofía of Spain
 
-Chivalric orders
 
-Ancestry
+Marina, consort of Prince Michael
 
-References
 
-External links
+Prince Nikolaos of Greece and Denmark (Greek: Νικόλαος Ντε Γκρες, romanized: Nikólaos de Grèce; born 1 October 1969) is the third child of Constantine II and Anne-Marie, who were the last King and Queen of Greece, from 1964 to 1973.
+Early life and education
+
+Nikolaos was born at Casa di Cura Privata Nuova Villa Claudia in Rome, Italy, on October 1, 1969.
+He is the first royal child to be born in hospital from Constantine II of Greece and Anne-Marie of Denmark.
+His godparents were Queen Sofía, Queen of Spain (his paternal aunt), Princess Irene of Greece and Denmark (another paternal aunt), Margareta of Romania (his paternal second cousin), and Crown Prince Alexander of Yugoslavia (another paternal second cousin).
+He is a member of board of the Anna-Maria Foundation, designed to help victims of natural disasters like floods and earthquakes in Greece.
+Nikolaos has an older sister Princess Alexia, an older brother Crown Prince Pavlos, a younger sister Princess Theodora, and a younger brother, Prince Philippos.
+Personal life
+
+Relationships
+
+The engagement of Nikolaos to Tatiana Ellinka Blatnik, with whom he had been in a long-term relationship, was announced on 28 December 2009 by the office of King Constantine in London.
+On 25 August 2010, the couple married at the Orthodox Church of St. Nicholas in Spetses, Greece.
+In January 2025, Nikolaos became engaged to Chrysí Vardinogiánni, daughter of Greek businessman Giórgos Vardinogiánnis and Agapi Politi.
+Citizenship
+
+Οn 20 December 2024, Nikolaos along with other members of the former royal family acquired Greek citizenship, under the surname de Grèce.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -135,39 +119,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -182,6 +136,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -199,6 +170,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -266,29 +252,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -297,6 +275,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -309,6 +295,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -317,17 +305,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -355,6 +345,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -370,240 +444,144 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9ef23031-6a8a-41d5-b661-180efff7e1ef)
- Call ID: 9ef23031-6a8a-41d5-b661-180efff7e1ef
+  AssignClass (94588be6-aa7f-4066-9b52-3089197dba40)
+ Call ID: 94588be6-aa7f-4066-9b52-3089197dba40
   Args:
-    source: August_Wilhelm_of_Prussia
-    type: :Man
-  AssignClass (037634c9-c463-455b-b26d-ee74373590b4)
- Call ID: 037634c9-c463-455b-b26d-ee74373590b4
+    source: :Anne-Marie
+    type: :Woman
+  AssignClass (13b16cee-15fd-40ee-b912-9badc3ca7ebc)
+ Call ID: 13b16cee-15fd-40ee-b912-9badc3ca7ebc
+  Args:
+    source: :Sofia
+    type: :Woman
+  AssignClass (f204907a-5ffd-4832-aab4-9cd6fdc3b981)
+ Call ID: f204907a-5ffd-4832-aab4-9cd6fdc3b981
+  Args:
+    source: :Marina
+    type: :Woman
+  AssignClass (2d86cb64-2619-4493-9119-14619f8f415a)
+ Call ID: 2d86cb64-2619-4493-9119-14619f8f415a
   Args:
     type: :Man
-    source: Wilhelm_II
-  AssignClass (62d4c882-0e31-47fb-a3aa-1400405f86d7)
- Call ID: 62d4c882-0e31-47fb-a3aa-1400405f86d7
+    source: :Michael
+  AssignClass (3527e681-734b-4e6e-ae26-cd76d06e534b)
+ Call ID: 3527e681-734b-4e6e-ae26-cd76d06e534b
+  Args:
+    source: :Nikolaos
+    type: :Man
+  AssignClass (d5c41b1b-470c-4e18-badc-d9266e0f551d)
+ Call ID: d5c41b1b-470c-4e18-badc-d9266e0f551d
+  Args:
+    source: :ConstantineII
+    type: :Man
+  AssignClass (c96d8296-7b5d-4e51-a903-c473d23e9c80)
+ Call ID: c96d8296-7b5d-4e51-a903-c473d23e9c80
   Args:
     type: :Woman
-    source: Augusta_Victoria_of_Schleswig-Holstein
-  AssignClass (ecc64ef4-e7f7-40aa-83f0-4c848b6a305a)
- Call ID: ecc64ef4-e7f7-40aa-83f0-4c848b6a305a
+    source: :Alexia
+  AssignClass (0378efd0-f72e-41af-8391-320ba3e2c193)
+ Call ID: 0378efd0-f72e-41af-8391-320ba3e2c193
   Args:
-    source: Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg
-    type: :Woman
-  AssignClass (fd87a717-caa3-490c-afa1-1fc4c15e040b)
- Call ID: fd87a717-caa3-490c-afa1-1fc4c15e040b
-  Args:
-    source: Alexander_Ferdinand_of_Prussia
+    source: :Pavlos
     type: :Man
-  AssignClass (170b0f63-d7be-4b62-999b-c27bd6463175)
- Call ID: 170b0f63-d7be-4b62-999b-c27bd6463175
+  AssignClass (f0424482-7b96-476b-a9e9-398cb299b0e9)
+ Call ID: f0424482-7b96-476b-a9e9-398cb299b0e9
+  Args:
+    source: :Theodora
+    type: :Woman
+  AssignClass (70028c0c-d0f9-4417-8a42-5ed1d656fe8e)
+ Call ID: 70028c0c-d0f9-4417-8a42-5ed1d656fe8e
+  Args:
+    source: :Philippos
+    type: :Man
+  AssignClass (d984e21e-c65e-4694-9f20-d4700d0d1d85)
+ Call ID: d984e21e-c65e-4694-9f20-d4700d0d1d85
   Args:
     type: :Woman
-    source: Margaret_of_Prussia
-  AddLiteral (c39795c6-e2f8-4428-85dc-0d43025ef7b5)
- Call ID: c39795c6-e2f8-4428-85dc-0d43025ef7b5
+    source: :TatianaBlatnik
+  AssignClass (bc73e5c6-a303-4bdf-971e-e5eb45f32e27)
+ Call ID: bc73e5c6-a303-4bdf-971e-e5eb45f32e27
   Args:
-    relation: :knownAs
-    literal_value: Auwi
-    source: August_Wilhelm_of_Prussia
-    literal_type: xsd:string
-  AddLiteral (3d14936a-8384-4293-b971-b9dbc2366243)
- Call ID: 3d14936a-8384-4293-b971-b9dbc2366243
+    source: :ChrysiVardinogianni
+    type: :Woman
+  AssignClass (4dab8af8-4d0a-4c47-9cd1-e776876867a2)
+ Call ID: 4dab8af8-4d0a-4c47-9cd1-e776876867a2
   Args:
-    literal_type: xsd:integer
-    source: August_Wilhelm_of_Prussia
-    literal_value: 1887
+    type: :Man
+    source: :GiorgosVardinogiannis
+  AssignClass (b9e211ff-7397-4fb7-8f72-72db80cd4fdc)
+ Call ID: b9e211ff-7397-4fb7-8f72-72db80cd4fdc
+  Args:
+    source: :AgapiPoliti
+    type: :Woman
+  AddLiteral (aa95392a-3df4-4d0b-a7ab-26a2f14a7b47)
+ Call ID: aa95392a-3df4-4d0b-a7ab-26a2f14a7b47
+  Args:
     relation: :hasBirthYear
-  AddLiteral (660248e7-57a2-4e28-a29c-0034ff60ed0f)
- Call ID: 660248e7-57a2-4e28-a29c-0034ff60ed0f
-  Args:
     literal_type: xsd:integer
-    source: August_Wilhelm_of_Prussia
-    literal_value: 1949
-    relation: :hasDeathYear
-  AddTriple (46748b0a-6c30-421c-b8d4-dfadd5c6fa4a)
- Call ID: 46748b0a-6c30-421c-b8d4-dfadd5c6fa4a
-  Args:
-    target: Wilhelm_II
-    relation: :hasFather
-    source: August_Wilhelm_of_Prussia
-  AddTriple (6f78afb7-38c9-43ef-9c76-0f469f5e93f5)
- Call ID: 6f78afb7-38c9-43ef-9c76-0f469f5e93f5
-  Args:
-    relation: :hasMother
-    target: Augusta_Victoria_of_Schleswig-Holstein
-    source: August_Wilhelm_of_Prussia
-  AddTriple (77f63224-1861-475d-b115-5e751b94f5fb)
- Call ID: 77f63224-1861-475d-b115-5e751b94f5fb
-  Args:
-    source: August_Wilhelm_of_Prussia
-    target: 1908
-    relation: :hasMarriageYear
-  AddTriple (e7a375f3-f0c7-4d8b-a03a-f68d14f51ec1)
- Call ID: e7a375f3-f0c7-4d8b-a03a-f68d14f51ec1
-  Args:
-    relation: :hasChild
-    target: Alexander_Ferdinand_of_Prussia
-    source: August_Wilhelm_of_Prussia
-  AddTriple (b671fe41-9055-47bb-851b-e1b9a876f053)
- Call ID: b671fe41-9055-47bb-851b-e1b9a876f053
-  Args:
-    source: Alexander_Ferdinand_of_Prussia
-    relation: :hasMother
-    target: Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg
-  AddTriple (627f3914-3485-4461-8f11-c8af3e3b091c)
- Call ID: 627f3914-3485-4461-8f11-c8af3e3b091c
+    literal_value: 1969
+    source: :Nikolaos
+  AddTriple (64f86fbb-28cd-4646-a728-4ad980c2696f)
+ Call ID: 64f86fbb-28cd-4646-a728-4ad980c2696f
   Args:
     relation: :hasFather
-    target: August_Wilhelm_of_Prussia
-    source: Alexander_Ferdinand_of_Prussia
-  AddTriple (7d525f1c-cf80-4dad-9198-5466f44e9202)
- Call ID: 7d525f1c-cf80-4dad-9198-5466f44e9202
+    target: :ConstantineII
+    source: :Nikolaos
+  AddTriple (1b70fa42-97b8-427e-95a8-d268ed665b82)
+ Call ID: 1b70fa42-97b8-427e-95a8-d268ed665b82
   Args:
-    relation: :hasParent
-    target: Margaret_of_Prussia
-    source: August_Wilhelm_of_Prussia
-  AddTriple (530313f0-2332-41f2-9964-fa0a2f0e430a)
- Call ID: 530313f0-2332-41f2-9964-fa0a2f0e430a
+    source: :Nikolaos
+    target: :Anne-Marie
+    relation: :hasMother
+  AddTriple (3f9e66fa-6c59-476d-abb1-3e3aed38335d)
+ Call ID: 3f9e66fa-6c59-476d-abb1-3e3aed38335d
   Args:
-    source: Margaret_of_Prussia
-    target: Wilhelm_II
+    source: :Alexia
+    target: :Nikolaos
     relation: :isSisterOf
-  Finish (5e25eec0-5fb1-48d2-b04a-b0ee770e2d55)
- Call ID: 5e25eec0-5fb1-48d2-b04a-b0ee770e2d55
+  AddTriple (5661400b-ea66-4e51-8ca8-96e599761072)
+ Call ID: 5661400b-ea66-4e51-8ca8-96e599761072
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Alexander_Ferdinand_of_Prussia a :Man ;
-      :hasFather data:August_Wilhelm_of_Prussia ;
-      :hasMother data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg .
-
-  data:Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Woman .
-
-  data:August_Wilhelm_of_Prussia a :Man ;
-      :hasBirthYear 1887 ;
-      :hasChild data:Alexander_Ferdinand_of_Prussia ;
-      :hasDeathYear 1949 ;
-      :hasFather data:Wilhelm_II ;
-      :hasMarriageYear data:1908 ;
-      :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
-      :hasParent data:Margaret_of_Prussia ;
-      :knownAs "Auwi"^^xsd:string .
-
-  data:Augusta_Victoria_of_Schleswig-Holstein a :Woman .
-
-  data:Margaret_of_Prussia a :Woman ;
-      :isSisterOf data:Wilhelm_II .
-
-  data:Wilhelm_II a :Man .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1908']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (62ddd6ad-60bd-46c0-8fdd-473ddaec078e)
- Call ID: 62ddd6ad-60bd-46c0-8fdd-473ddaec078e
+    target: :Nikolaos
+    relation: :isBrotherOf
+    source: :Pavlos
+  AddTriple (be689b55-62ee-41c5-8ad3-169e32abbcd7)
+ Call ID: be689b55-62ee-41c5-8ad3-169e32abbcd7
   Args:
-    source: August_Wilhelm_of_Prussia
-    target: 1908
-    relation: :hasMarriageYear
-  AddLiteral (d3b03e90-fed0-4239-bd86-3c97a9c4bfc6)
- Call ID: d3b03e90-fed0-4239-bd86-3c97a9c4bfc6
+    source: :Theodora
+    target: :Nikolaos
+    relation: :isSisterOf
+  AddTriple (e685e38c-5345-441f-aa50-dc3e87074e19)
+ Call ID: e685e38c-5345-441f-aa50-dc3e87074e19
   Args:
-    literal_value: 1908
+    relation: :isBrotherOf
+    target: :Nikolaos
+    source: :Philippos
+  AddLiteral (04844a57-3a8e-4e76-be9b-4c86753734e1)
+ Call ID: 04844a57-3a8e-4e76-be9b-4c86753734e1
+  Args:
     literal_type: xsd:integer
-    source: August_Wilhelm_of_Prussia
     relation: :hasMarriageYear
-  Finish (00d097d7-397a-4907-8342-e5e78cca9ab6)
- Call ID: 00d097d7-397a-4907-8342-e5e78cca9ab6
+    literal_value: 2010
+    source: :Nikolaos
+  AddTriple (c8d244c8-3fcb-4292-bb46-dbc1aa5e44c0)
+ Call ID: c8d244c8-3fcb-4292-bb46-dbc1aa5e44c0
+  Args:
+    source: :Nikolaos
+    relation: :hasRelation
+    target: :TatianaBlatnik
+  AddTriple (08fe0b1c-220f-4add-95fa-6bd3640741f2)
+ Call ID: 08fe0b1c-220f-4add-95fa-6bd3640741f2
+  Args:
+    target: :GiorgosVardinogiannis
+    relation: :hasFather
+    source: :ChrysiVardinogianni
+  AddTriple (7ddb3650-3c12-4cfb-915b-46a005162362)
+ Call ID: 7ddb3650-3c12-4cfb-915b-46a005162362
+  Args:
+    target: :AgapiPoliti
+    relation: :hasMother
+    source: :ChrysiVardinogianni
+  Finish (36a6a928-27e9-40e4-9f2c-1407b4cc2de2)
+ Call ID: 36a6a928-27e9-40e4-9f2c-1407b4cc2de2
   Args:

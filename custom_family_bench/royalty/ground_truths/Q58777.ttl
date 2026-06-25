@@ -7,16 +7,20 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:Prince_Alexander_Ferdinand_of_Prussia a :Person ;
+    rdfs:label "Prince Alexander Ferdinand of Prussia" ;
+    data:posIndicesFull "903:940" ;
+    data:posIndicesPart "2874:2881",
+        "3661:3667",
+        "3740:3749",
+        "4515:4521" ;
+    data:wdtLink wdt:Q2189056 ;
+    :alsoKnownAs "Prince Alexander Ferdinand Albrecht Achilles Wilhelm Joseph Viktor Karl Feodor of Prussia" ;
+    :hasParent data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
+    :hasSex data:male .
 
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Margaret_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Margaret_of_Prussia a :Person ;
     rdfs:label "Princess Margaret of Prussia" ;
     data:posIndicesFull "3007:3011",
         "4073:4101",
@@ -34,140 +38,9 @@ data:Princess_Margaret_of_Prussia a :Ancestor,
         "Princess Margaret Beatrice Feodora of Prussia",
         "Princess Margarethe Beatrice Feodora of Prussia",
         "Princess Margarethe of Prussia" ;
-    :hasBrother data:Wilhelm_II ;
-    :hasSex data:female ;
-    :isAuntOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Wilhelm-_German_Crown_Prince ;
-    :isSiblingOf data:Wilhelm_II ;
-    :isSisterOf data:Wilhelm_II .
+    :hasSex data:female .
 
-data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg" ;
-    data:posIndicesFull "556:627" ;
-    data:posIndicesPart "1346:1354",
-        "1355:1364",
-        "1365:1373",
-        "3947:3955",
-        "4451:4459",
-        "4460:4469",
-        "4473:4482",
-        "4483:4491",
-        "4492:4502",
-        "4503:4513" ;
-    data:wdtLink wdt:Q2419996 ;
-    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :isMotherOf data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :isParentOf data:Prince_Alexander_Ferdinand_of_Prussia .
-
-data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Augusta Victoria of Schleswig-Holstein" ;
-    data:posIndicesFull "177:193",
-        "177:215" ;
-    data:posIndicesPart "1365:1373",
-        "4473:4482",
-        "4483:4491",
-        "495:504",
-        "505:513" ;
-    data:wdtLink wdt:Q161247 ;
-    :alsoKnownAs "Augusta Victoria",
-        "Augusta Victoria, Empress of Germany",
-        "Augusta Viktoria",
-        "Augusta Viktoria of Schleswig-Holstein",
-        "Auguste Viktoria of Schleswig-Holstein" ;
-    :hasChild data:Prince_August_Wilhelm_of_Prussia,
-        data:Wilhelm-_German_Crown_Prince ;
-    :hasSex data:female ;
-    :hasSon data:Prince_August_Wilhelm_of_Prussia,
-        data:Wilhelm-_German_Crown_Prince ;
-    :isMotherOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Wilhelm-_German_Crown_Prince ;
-    :isParentOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Wilhelm-_German_Crown_Prince .
-
-data:Prince_Alexander_Ferdinand_of_Prussia a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Alexander Ferdinand of Prussia" ;
-    data:posIndicesFull "903:940" ;
-    data:posIndicesPart "2874:2881",
-        "3661:3667",
-        "3740:3749",
-        "4515:4521" ;
-    data:wdtLink wdt:Q2189056 ;
-    :alsoKnownAs "Prince Alexander Ferdinand Albrecht Achilles Wilhelm Joseph Viktor Karl Feodor of Prussia" ;
-    :hasFather data:Prince_August_Wilhelm_of_Prussia ;
-    :hasMother data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
-    :hasParent data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg ;
-    :isSonOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg .
-
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelm II" ;
-    data:posIndicesFull "132:157",
-        "1433:1450",
-        "1440:1450",
-        "147:157" ;
-    data:posIndicesPart "1242:1249",
-        "1632:1639",
-        "1868:1875",
-        "2045:2052",
-        "2133:2140",
-        "2314:2321",
-        "2747:2754",
-        "3267:3274",
-        "3442:3449",
-        "3825:3832",
-        "3972:3979",
-        "4200:4207",
-        "4427:4434",
-        "4529:4536",
-        "529:536",
-        "801:808",
-        "983:990" ;
-    data:wdtLink wdt:Q2677 ;
-    :alsoKnownAs "Emperor Willlam",
-        "Frederick William Victor Albert of Prussia",
-        "Friedrich Wilhelm Emperor William II",
-        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
-        "Friedrich Wilhelm Viktor Albrecht von Preußen",
-        "German Emperor Wilhelm II",
-        "Kaiser Wilhelm II",
-        "Wilhelm II of Germany",
-        "Wilhelm II, German Emperor",
-        "Wilhelm II.",
-        "William II" ;
-    :hasChild data:Prince_August_Wilhelm_of_Prussia,
-        data:Wilhelm-_German_Crown_Prince ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Margaret_of_Prussia ;
-    :hasSon data:Prince_August_Wilhelm_of_Prussia,
-        data:Wilhelm-_German_Crown_Prince ;
-    :isBrotherOf data:Princess_Margaret_of_Prussia ;
-    :isFatherOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Wilhelm-_German_Crown_Prince ;
-    :isParentOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Wilhelm-_German_Crown_Prince ;
-    :isSiblingOf data:Princess_Margaret_of_Prussia .
-
-data:Wilhelm-_German_Crown_Prince a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Wilhelm-_German_Crown_Prince a :Person ;
     rdfs:label "Wilhelm, German Crown Prince" ;
     data:posIndicesFull "1679:1699" ;
     data:posIndicesPart "1868:1875",
@@ -192,24 +65,17 @@ data:Wilhelm-_German_Crown_Prince a :Ancestor,
     data:wdtLink wdt:Q57621 ;
     :alsoKnownAs "Crown Prince Wilhelm",
         "Friedrich Wilhelm Victor August Ernst" ;
-    :hasBrother data:Prince_August_Wilhelm_of_Prussia ;
-    :hasFather data:Wilhelm_II ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
     :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
         data:Wilhelm_II ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II ;
-    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II ;
-    :isUncleOf data:Prince_Alexander_Ferdinand_of_Prussia .
+    :hasSex data:male .
 
-data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_August_Wilhelm_of_Prussia a :Person ;
     rdfs:label "Prince August Wilhelm of Prussia" ;
     data:posIndicesFull "103:107",
         "2415:2419",
@@ -254,20 +120,81 @@ data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
         "983:990" ;
     data:wdtLink wdt:Q58777 ;
     :alsoKnownAs "Auwi" ;
-    :hasBrother data:Wilhelm-_German_Crown_Prince ;
-    :hasChild data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :hasFather data:Wilhelm_II ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
     :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
         data:Wilhelm_II ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :isBrotherOf data:Wilhelm-_German_Crown_Prince ;
-    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II ;
-    :isFatherOf data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :isParentOf data:Prince_Alexander_Ferdinand_of_Prussia ;
-    :isSiblingOf data:Wilhelm-_German_Crown_Prince ;
-    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II .
+    :hasSex data:male .
+
+data:Princess_Alexandra_Victoria_of_Schleswig-Holstein-Sonderburg-Glücksburg a :Person ;
+    rdfs:label "Princess Alexandra Victoria of Schleswig-Holstein-Sonderburg-Glücksburg" ;
+    data:posIndicesFull "556:627" ;
+    data:posIndicesPart "1346:1354",
+        "1355:1364",
+        "1365:1373",
+        "3947:3955",
+        "4451:4459",
+        "4460:4469",
+        "4473:4482",
+        "4483:4491",
+        "4492:4502",
+        "4503:4513" ;
+    data:wdtLink wdt:Q2419996 ;
+    :hasSex data:female .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Person ;
+    rdfs:label "Augusta Victoria of Schleswig-Holstein" ;
+    data:posIndicesFull "177:193",
+        "177:215" ;
+    data:posIndicesPart "1365:1373",
+        "4473:4482",
+        "4483:4491",
+        "495:504",
+        "505:513" ;
+    data:wdtLink wdt:Q161247 ;
+    :alsoKnownAs "Augusta Victoria",
+        "Augusta Victoria, Empress of Germany",
+        "Augusta Viktoria",
+        "Augusta Viktoria of Schleswig-Holstein",
+        "Auguste Viktoria of Schleswig-Holstein" ;
+    :hasSex data:female .
+
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "132:157",
+        "1433:1450",
+        "1440:1450",
+        "147:157" ;
+    data:posIndicesPart "1242:1249",
+        "1632:1639",
+        "1868:1875",
+        "2045:2052",
+        "2133:2140",
+        "2314:2321",
+        "2747:2754",
+        "3267:3274",
+        "3442:3449",
+        "3825:3832",
+        "3972:3979",
+        "4200:4207",
+        "4427:4434",
+        "4529:4536",
+        "529:536",
+        "801:808",
+        "983:990" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

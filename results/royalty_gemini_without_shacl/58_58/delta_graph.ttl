@@ -2,42 +2,29 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Manuel_II a :Ancestor,
-        :Man,
+data:Manuel_II a :Man,
         :Person ;
-    :alsoKnownAs "Patriot"^^xsd:string,
-        "Unfortunate"^^xsd:string ;
+    :alsoKnownAs "The Patriot"^^xsd:string,
+        "The Unfortunate"^^xsd:string,
+        "o Desaventurado"^^xsd:string,
+        "o Patriota"^^xsd:string ;
     :hasBirthYear 1889 ;
-    :hasBrother data:Lu%C3%ADs_Filipe ;
     :hasDeathYear 1932 ;
     :hasFather data:Carlos_I ;
     :hasMarriageYear 1913 ;
     :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans ;
-    :hasRelation data:Augusta_Victoria .
+    :hasRelation data:Augusta_Victoria ;
+    :isBrotherOf data:Lu%C3%ADs_Filipe .
+
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Person,
+        :Woman .
 
 data:Augusta_Victoria a :Person,
-        :Woman ;
-    :hasFather data:William_Prince_of_Hohenzollern .
-
-data:Lu%C3%ADs_Filipe a :Man,
-        :Person ;
-    :hasFather data:Carlos_I ;
-    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans .
-
-data:Maria_Pia_of_Savoy a :Ancestor,
-        :Person,
         :Woman .
 
-data:William_Prince_of_Hohenzollern a :Ancestor,
-        :Man,
+data:Carlos_I a :Man,
         :Person .
 
-data:Am%C3%A9lie_of_Orl%C3%A9ans a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Carlos_I a :Ancestor,
-        :Man,
-        :Person ;
-    :hasMother data:Maria_Pia_of_Savoy .
+data:Lu%C3%ADs_Filipe a :Man,
+        :Person .
 

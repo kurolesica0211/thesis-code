@@ -4,13 +4,41 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bernhard a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Maximilian ;\n    :hasMarriageYear 2001 ;\n    :hasMother data:Valerie .\n\ndata:StephanieAnneKaul a :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:ChristianKaul ;\n    :hasMother data:HanneloreScheel .\n\ndata:Berthold a :Man .\n\ndata:ChristianKaul a :Man .\n\ndata:HanneloreScheel a :Woman .\n\ndata:HubertSalvator a :Man .\n\ndata:Maximilian a :Man ;\n    :hasDeathYear 2022 ;\n    :hasFather data:Berthold ;\n    :hasMother data:Theodora .\n\ndata:Rosemary a :Woman .\n\ndata:Theodora a :Woman .\n\ndata:Valerie a :Woman ;\n    :hasBirthYear 1941 ;\n    :hasFather data:HubertSalvator ;\n    :hasMother data:Rosemary .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anna_Elspeth_Campbell a :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1986 .\n\ndata:Philipp_Prince_of_Hohenlohe-Langenburg a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear data:2003 ;\n    :hasMother data:Princess_Charlotte_of_Croy ;\n    :hasRelation data:Saskia_Binder .\n\ndata:Prince_Alexander_of_Croy a :Man ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 2002 .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Woman .\n\ndata:Hans_Peter_Binder a :Man .\n\ndata:Kraft_Prince_of_Hohenlohe-Langenburg a :Man ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 .\n\ndata:Princess_Charlotte_of_Croy a :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Saskia_Binder a :Woman ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Hans_Peter_Binder .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 1,
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anna_Elspeth_Campbell a :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1986 .\n\ndata:Philipp_Prince_of_Hohenlohe-Langenburg a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear data:2003,\n        2003 ;\n    :hasMother data:Princess_Charlotte_of_Croy ;\n    :hasRelation data:Saskia_Binder .\n\ndata:Prince_Alexander_of_Croy a :Man ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 2002 .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Woman .\n\ndata:Hans_Peter_Binder a :Man .\n\ndata:Kraft_Prince_of_Hohenlohe-Langenburg a :Man ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 .\n\ndata:Princess_Charlotte_of_Croy a :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Saskia_Binder a :Woman ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Hans_Peter_Binder .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anna_Elspeth_Campbell a :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1986 .\n\ndata:Philipp_Prince_of_Hohenlohe-Langenburg a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear data:2003,\n        \"2003\"^^xsd:string ;\n    :hasMother data:Princess_Charlotte_of_Croy ;\n    :hasRelation data:Saskia_Binder .\n\ndata:Prince_Alexander_of_Croy a :Man ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 2002 .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Woman .\n\ndata:Hans_Peter_Binder a :Man .\n\ndata:Kraft_Prince_of_Hohenlohe-Langenburg a :Man ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 .\n\ndata:Princess_Charlotte_of_Croy a :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Saskia_Binder a :Woman ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Hans_Peter_Binder .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anna_Elspeth_Campbell a :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1986 .\n\ndata:Philipp_Prince_of_Hohenlohe-Langenburg a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;\n    :hasMarriageYear data:2003 ;\n    :hasMother data:Princess_Charlotte_of_Croy ;\n    :hasRelation data:Saskia_Binder .\n\ndata:Prince_Alexander_of_Croy a :Man ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 2002 .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Woman .\n\ndata:Hans_Peter_Binder a :Man .\n\ndata:Kraft_Prince_of_Hohenlohe-Langenburg a :Man ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 .\n\ndata:Princess_Charlotte_of_Croy a :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Saskia_Binder a :Woman ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Hans_Peter_Binder .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anna_Elspeth_Campbell a :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1986 .\n\ndata:Philipp_Prince_of_Hohenlohe-Langenburg a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;\n    :hasMother data:Princess_Charlotte_of_Croy ;\n    :hasRelation data:Saskia_Binder .\n\ndata:Prince_Alexander_of_Croy a :Man ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 2002 .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Woman .\n\ndata:Hans_Peter_Binder a :Man .\n\ndata:Kraft_Prince_of_Hohenlohe-Langenburg a :Man ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 .\n\ndata:Princess_Charlotte_of_Croy a :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Saskia_Binder a :Woman ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Hans_Peter_Binder .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Bernhard a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Maximilian ;\n    :hasMarriageYear 2001 ;\n    :hasMother data:Valerie .\n\ndata:StephanieAnneKaul a :Woman ;\n    :hasBirthYear 1966 ;\n    :hasFather data:ChristianKaul ;\n    :hasMother data:HanneloreScheel .\n\ndata:Berthold a :Man .\n\ndata:ChristianKaul a :Man .\n\ndata:HanneloreScheel a :Woman .\n\ndata:HubertSalvator a :Man .\n\ndata:Maximilian a :Man ;\n    :hasDeathYear 2022 ;\n    :hasFather data:Berthold ;\n    :hasMother data:Theodora .\n\ndata:Rosemary a :Woman .\n\ndata:Theodora a :Woman .\n\ndata:Valerie a :Woman ;\n    :hasBirthYear 1941 ;\n    :hasFather data:HubertSalvator ;\n    :hasMother data:Rosemary .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anna_Elspeth_Campbell a :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 1986 .\n\ndata:Philipp_Prince_of_Hohenlohe-Langenburg a :Man ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;\n    :hasMother data:Princess_Charlotte_of_Croy ;\n    :hasRelation data:Saskia_Binder .\n\ndata:Prince_Alexander_of_Croy a :Man ;\n    :hasBirthYear 1912 ;\n    :hasDeathYear 2002 .\n\ndata:Princess_Margarita_of_Greece_and_Denmark a :Woman .\n\ndata:Hans_Peter_Binder a :Man .\n\ndata:Kraft_Prince_of_Hohenlohe-Langenburg a :Man ;\n    :hasBirthYear 1935 ;\n    :hasDeathYear 2004 .\n\ndata:Princess_Charlotte_of_Croy a :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Saskia_Binder a :Woman ;\n    :hasBirthYear 1973 ;\n    :hasFather data:Hans_Peter_Binder .\n\n"
     }
 ]

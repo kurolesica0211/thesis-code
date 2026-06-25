@@ -16,56 +16,38 @@
       "qid": "Q150747",
       "label": "Wilhelmina of the Netherlands",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Emma_of_Waldeck_and_Pyrmont",
       "qid": "Q57664",
       "label": "Emma of Waldeck and Pyrmont",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Juliana_of_the_Netherlands",
       "qid": "Q154946",
       "label": "Juliana of the Netherlands",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#William_III_of_the_Netherlands",
       "qid": "Q125649",
       "label": "William III of the Netherlands",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Duke_Henry_of_Mecklenburg-Schwerin",
       "qid": "Q503991",
       "label": "Duke Henry of Mecklenburg-Schwerin",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     }
   ],
   "entities": [
-    {
-      "extracted_uri": "http://example.org/data/Emma_of_Waldeck_and_Pyrmont",
-      "extracted_local_name": "Emma_of_Waldeck_and_Pyrmont",
-      "embedding_text": "Emma of Waldeck and Pyrmont",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Emma_of_Waldeck_and_Pyrmont",
-      "ground_truth_qid": "Q57664",
-      "ground_truth_label": "Emma of Waldeck and Pyrmont",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Emma of Waldeck and Pyrmont",
-      "best_candidate_label": "Emma of Waldeck and Pyrmont",
-      "best_candidate_qid": "Q57664",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 1.0
-    },
     {
       "extracted_uri": "http://example.org/data/Wilhelmina",
       "extracted_local_name": "Wilhelmina",
@@ -77,16 +59,16 @@
       "ground_truth_qid": "Q150747",
       "ground_truth_label": "Wilhelmina of the Netherlands",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Wilhelmina",
       "best_candidate_label": "Wilhelmina of the Netherlands",
       "best_candidate_qid": "Q150747",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/William_III",
-      "extracted_local_name": "William_III",
+      "extracted_uri": "http://example.org/data/WilliamIII",
+      "extracted_local_name": "WilliamIII",
       "embedding_text": "William III",
       "extracted_gender": "male",
       "matched": true,
@@ -95,11 +77,11 @@
       "ground_truth_qid": "Q125649",
       "ground_truth_label": "William III of the Netherlands",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "William III",
       "best_candidate_label": "William III of the Netherlands",
       "best_candidate_qid": "Q125649",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -113,30 +95,12 @@
       "ground_truth_qid": "Q154946",
       "ground_truth_label": "Juliana of the Netherlands",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Julijana",
       "best_candidate_label": "Juliana of the Netherlands",
       "best_candidate_qid": "Q154946",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9333333333333333
-    },
-    {
-      "extracted_uri": "http://example.org/data/Henry_of_Mecklenburg-Schwerin",
-      "extracted_local_name": "Henry_of_Mecklenburg-Schwerin",
-      "embedding_text": "Henry of Mecklenburg-Schwerin",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 0.8524590163934426,
-      "ground_truth_uri": "http://example.com/data#Duke_Henry_of_Mecklenburg-Schwerin",
-      "ground_truth_qid": "Q503991",
-      "ground_truth_label": "Duke Henry of Mecklenburg-Schwerin",
-      "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Hendrik van Mecklenburg-Schwerin",
-      "best_candidate_label": "Duke Henry of Mecklenburg-Schwerin",
-      "best_candidate_qid": "Q503991",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.8524590163934426
     },
     {
       "extracted_uri": "http://example.org/data/Alexander",
@@ -153,7 +117,7 @@
       "best_candidate_match_text": "Dudley S. Van Antwerp",
       "best_candidate_label": "Duke Henry of Mecklenburg-Schwerin",
       "best_candidate_qid": "Q503991",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.4
     },
     {
@@ -171,8 +135,44 @@
       "best_candidate_match_text": "Wilhelmina I",
       "best_candidate_label": "Wilhelmina of the Netherlands",
       "best_candidate_qid": "Q150747",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.3157894736842105
+    },
+    {
+      "extracted_uri": "http://example.org/data/Emma",
+      "extracted_local_name": "Emma",
+      "embedding_text": "Emma",
+      "extracted_gender": "female",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Queen Emma",
+      "best_candidate_label": "Emma of Waldeck and Pyrmont",
+      "best_candidate_qid": "Q57664",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5714285714285714
+    },
+    {
+      "extracted_uri": "http://example.org/data/Henry",
+      "extracted_local_name": "Henry",
+      "embedding_text": "Henry",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Wilhelmina",
+      "best_candidate_label": "Wilhelmina of the Netherlands",
+      "best_candidate_qid": "Q150747",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4
     },
     {
       "extracted_uri": "http://example.org/data/Margriet",
@@ -189,13 +189,13 @@
       "best_candidate_match_text": "Wilhelmina I",
       "best_candidate_label": "Wilhelmina of the Netherlands",
       "best_candidate_qid": "Q150747",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.3
     },
     {
-      "extracted_uri": "http://example.org/data/Sophie_of_Wurttemberg",
-      "extracted_local_name": "Sophie_of_Wurttemberg",
-      "embedding_text": "Sophie of Wurttemberg",
+      "extracted_uri": "http://example.org/data/Sophie",
+      "extracted_local_name": "Sophie",
+      "embedding_text": "Sophie",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -204,16 +204,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Queen Wilhelmina",
+      "best_candidate_match_text": "Wilhelmina",
       "best_candidate_label": "Wilhelmina of the Netherlands",
       "best_candidate_qid": "Q150747",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.2702702702702703
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.25
     }
   ],
   "summary": {
     "entities_total": 9,
-    "entities_matched": 5,
-    "entities_unmatched": 4
+    "entities_matched": 3,
+    "entities_unmatched": 6
   }
 }

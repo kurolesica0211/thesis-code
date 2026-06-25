@@ -1,0 +1,166 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "200:218"^^xsd:string,
+        "206:218"^^xsd:string ;
+    data:posIndicesPart "1312:1321"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasAncestor data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Elizabeth_II,
+        data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Fergus_Bowes-Lyon a :Man,
+        :Person ;
+    rdfs:label "Fergus Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "0:17"^^xsd:string,
+        "245:262"^^xsd:string ;
+    data:posIndicesPart "1019:1024"^^xsd:string,
+        "1025:1029"^^xsd:string,
+        "1360:1366"^^xsd:string,
+        "1461:1466"^^xsd:string,
+        "1467:1471"^^xsd:string,
+        "339:344"^^xsd:string,
+        "345:349"^^xsd:string,
+        "416:421"^^xsd:string,
+        "422:426"^^xsd:string,
+        "583:589"^^xsd:string,
+        "744:749"^^xsd:string,
+        "750:754"^^xsd:string,
+        "881:886"^^xsd:string,
+        "887:891"^^xsd:string ;
+    data:wdtLink wdt:Q5444165 ;
+    :hasAncestor data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :hasBrother data:Fergus_Bowes-Lyon ;
+    :hasMother data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :hasRelation data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Elizabeth_II,
+        data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:male ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isBloodrelationOf data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isBrotherOf data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isChildOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :isSiblingOf data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSonOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :isUncleOf data:Elizabeth_II .
+
+data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne"^^xsd:string ;
+    data:posIndicesFull "1107:1163"^^xsd:string ;
+    data:posIndicesPart "1461:1466"^^xsd:string,
+        "1467:1471"^^xsd:string ;
+    data:wdtLink wdt:Q238820 ;
+    :alsoKnownAs "Cecilia Nina Bowes-Lyon, Countess of Strathmore and Kinghorne"^^xsd:string,
+        "Cecilia Nina Cavendish-Bentinck"^^xsd:string ;
+    :hasChild data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasDaughter data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Elizabeth_II,
+        data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :hasSon data:Fergus_Bowes-Lyon ;
+    :isAncestorOf data:Elizabeth_II,
+        data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAuntOf data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isBloodrelationOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :isMotherOf data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isParentOf data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :isSisterOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "200:215"^^xsd:string,
+        "97:117"^^xsd:string ;
+    data:posIndicesPart "1099:1105"^^xsd:string,
+        "1312:1321"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasAncestor data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :hasBrother data:Fergus_Bowes-Lyon ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasMother data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :hasParent data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :hasRelation data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne,
+        data:Elizabeth_II,
+        data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAncestorOf data:Elizabeth_II ;
+    :isAuntOf data:Elizabeth_II ;
+    :isBloodrelationOf data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isChildOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :isDaughterOf data:Cecilia_Bowes-Lyon-_Countess_of_Strathmore_and_Kinghorne ;
+    :isMotherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Fergus_Bowes-Lyon,
+        data:Queen_Elizabeth-_The_Queen_Mother .
+

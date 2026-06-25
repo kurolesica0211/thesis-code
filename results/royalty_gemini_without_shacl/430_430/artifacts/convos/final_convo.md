@@ -69,28 +69,31 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Dame Sarah Rose Troughton (née Colman; born 3
-Early life
+Rose Constance Leveson-Gower, Countess Granville (née Bowes-Lyon; 6 May 1890 – 17 November 1967) was the third daughter of the 14th Earl of Strathmore and Kinghorne by his wife, Cecilia Cavendish-Bentinck.
+An elder sister of Queen Elizabeth the Queen Mother, she was therefore a maternal aunt of Queen Elizabeth II.
 
-Troughton was born in Paddington in 1953.
-She is the eldest of the five children of Sir Timothy Colman, a past Lord Lieutenant of Norfolk, and Lady Mary Cecilia Bowes-Lyon, a granddaughter of Claude Bowes-Lyon, 14th
-Her ancestor Jeremiah Colman (1777–1851) made a fortune from Colman's mustard, a business which eventually grew into Reckitt & Colman, of which her father was a director until 1989.
-Public life
 
-From 1990 to 2000, Troughton was lady-in-waiting to the Duchess of Kent.
-As Lord Lieutenant, Troughton's public duties include overseeing arrangements for visits to Wiltshire by members of the Royal Family and escorting royal visitors; representing the King at events and presenting awards and medals on his behalf; liaising with the Wiltshire units of the Royal Navy, Army and Royal Air Force; leading the local magistracy as chairman of the Lord Chancellor's Advisory Committee on Justices of the Peace; and advising on nominations for national honours.
-In January 2013, Troughton was appointed a Commander of the Order of St John by the Queen, and advanced to Dame of Grace of the order in 2021.
-A BBC News article described Troughton as one of Camilla's longstanding personal friends.
-Troughton was appointed a Dame Commander of the Royal Victorian Order in the 2025 New Year Honours.
-Personal life
+Life and family
 
-In 1977 she married Peter Troughton (born 1948), a member of HM Diplomatic Service, and the eldest son of Sir Charles Troughton, chairman of W H Smith.
+On 24 May 1916, Lady Rose Bowes-Lyon married The Hon.
+William Leveson-Gower, who succeeded to his childless brother's earldom on 21 July 1939.
+As a result, she was styled as Countess Granville.
+The couple had two children:
+
+
+The Countess Granville stood godmother to her niece, Princess Margaret Rose of York, at the latter's christening on 3 October 1930.
+She was also awarded the honorary degree of Doctor of Laws (LL.D.) by Queen's University Belfast.
+Lord Granville died on 25 June 1953, aged 72.
+Lady Granville outlived him by fourteen years when she died on 17 November 1967, aged 77.
+She was the last surviving sibling of Queen Elizabeth The Queen Mother.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -106,39 +109,9 @@ In 1977 she married Peter Troughton (born 1948), a member of HM Diplomatic Servi
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -153,6 +126,23 @@ In 1977 she married Peter Troughton (born 1948), a member of HM Diplomatic Servi
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -170,6 +160,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -237,29 +242,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -268,6 +265,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -280,6 +285,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -288,17 +295,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -326,6 +335,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -341,147 +434,330 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1858246d-c695-4792-8f7e-20f32f54b456)
- Call ID: 1858246d-c695-4792-8f7e-20f32f54b456
-  Args:
-    source: Sarah_Troughton
-    type: :Woman
-  AssignClass (868b6daf-94d2-45b6-9dbc-a0ae6d63b114)
- Call ID: 868b6daf-94d2-45b6-9dbc-a0ae6d63b114
-  Args:
-    type: :Person
-    source: Sarah_Troughton
-  AddLiteral (72752203-26bb-4a23-8cf2-36f725a5e137)
- Call ID: 72752203-26bb-4a23-8cf2-36f725a5e137
-  Args:
-    source: Sarah_Troughton
-    literal_type: xsd:integer
-    literal_value: 1953
-    relation: :hasBirthYear
-  AssignClass (1aa57b59-f814-4109-a343-69f3cc7b8d74)
- Call ID: 1aa57b59-f814-4109-a343-69f3cc7b8d74
-  Args:
-    source: Timothy_Colman
-    type: :Man
-  AssignClass (9f797e28-d222-4091-9e4b-83b343ef546a)
- Call ID: 9f797e28-d222-4091-9e4b-83b343ef546a
-  Args:
-    type: :Person
-    source: Timothy_Colman
-  AddTriple (80bcc153-8158-4f9f-b7c0-5d431e856f55)
- Call ID: 80bcc153-8158-4f9f-b7c0-5d431e856f55
-  Args:
-    target: Timothy_Colman
-    source: Sarah_Troughton
-    relation: :hasFather
-  AssignClass (2de6aa64-b81a-4c0f-bda1-aa8437adfc15)
- Call ID: 2de6aa64-b81a-4c0f-bda1-aa8437adfc15
+  AssignClass (b8b7965c-2939-48cf-a019-49688769e02b)
+ Call ID: b8b7965c-2939-48cf-a019-49688769e02b
   Args:
     type: :Woman
-    source: Mary_Cecilia_Bowes-Lyon
-  AssignClass (5ec3e82d-3927-4055-af4d-c2ee48e31b25)
- Call ID: 5ec3e82d-3927-4055-af4d-c2ee48e31b25
+    source: Rose_Constance_Leveson-Gower
+  AssignClass (f5763c8b-7449-453a-bd33-2fe8ccb07b87)
+ Call ID: f5763c8b-7449-453a-bd33-2fe8ccb07b87
   Args:
     type: :Person
-    source: Mary_Cecilia_Bowes-Lyon
-  AddTriple (583f36e8-aeb6-4ff6-b49d-88b6b7770018)
- Call ID: 583f36e8-aeb6-4ff6-b49d-88b6b7770018
+    source: Rose_Constance_Leveson-Gower
+  AddLiteral (b9290abd-ab59-45a7-b115-71fd5edcccec)
+ Call ID: b9290abd-ab59-45a7-b115-71fd5edcccec
   Args:
-    target: Mary_Cecilia_Bowes-Lyon
-    source: Sarah_Troughton
-    relation: :hasMother
-  AssignClass (c2ea9449-8815-4851-bea9-bb2404abcc30)
- Call ID: c2ea9449-8815-4851-bea9-bb2404abcc30
-  Args:
-    source: Claude_Bowes-Lyon
-    type: :Man
-  AssignClass (7933268b-65d7-473d-8fac-e1d7faa98216)
- Call ID: 7933268b-65d7-473d-8fac-e1d7faa98216
-  Args:
-    source: Claude_Bowes-Lyon
-    type: :Person
-  AddTriple (33686c03-58f3-431d-a9ff-6e8b233e90a9)
- Call ID: 33686c03-58f3-431d-a9ff-6e8b233e90a9
-  Args:
-    relation: :hasAncestor
-    source: Mary_Cecilia_Bowes-Lyon
-    target: Claude_Bowes-Lyon
-  AssignClass (90bad6eb-9220-44d4-91a9-2d7a04c44e67)
- Call ID: 90bad6eb-9220-44d4-91a9-2d7a04c44e67
-  Args:
-    type: :Man
-    source: Jeremiah_Colman
-  AssignClass (0de6cddd-a459-40c7-a6c6-41acccfdaa06)
- Call ID: 0de6cddd-a459-40c7-a6c6-41acccfdaa06
-  Args:
-    type: :Person
-    source: Jeremiah_Colman
-  AddLiteral (6b27b30c-80cd-4ce2-ad29-e8eb67b1b559)
- Call ID: 6b27b30c-80cd-4ce2-ad29-e8eb67b1b559
-  Args:
-    source: Jeremiah_Colman
+    literal_value: 1890
     literal_type: xsd:integer
-    literal_value: 1777
     relation: :hasBirthYear
-  AddLiteral (2011cf7a-1496-48c2-9338-daa90fa1808c)
- Call ID: 2011cf7a-1496-48c2-9338-daa90fa1808c
+    source: Rose_Constance_Leveson-Gower
+  AddLiteral (b24f43fd-b8e9-4ad6-917a-84460d1ea743)
+ Call ID: b24f43fd-b8e9-4ad6-917a-84460d1ea743
   Args:
     relation: :hasDeathYear
-    literal_value: 1851
-    source: Jeremiah_Colman
+    source: Rose_Constance_Leveson-Gower
     literal_type: xsd:integer
-  AddTriple (422c92a7-a540-40ef-a6eb-0ea2ff3082ae)
- Call ID: 422c92a7-a540-40ef-a6eb-0ea2ff3082ae
+    literal_value: 1967
+  AddTriple (03d66beb-334d-489b-8315-12787bf164a5)
+ Call ID: 03d66beb-334d-489b-8315-12787bf164a5
   Args:
-    relation: :hasAncestor
-    source: Sarah_Troughton
-    target: Jeremiah_Colman
-  AssignClass (b2c7c5f2-e48b-46a5-bbf4-7bec8c384ceb)
- Call ID: b2c7c5f2-e48b-46a5-bbf4-7bec8c384ceb
+    source: Rose_Constance_Leveson-Gower
+    relation: :knownAs
+    target: Countess_Granville
+  AddTriple (6637142d-bb11-424d-b3be-55f1fcb0322a)
+ Call ID: 6637142d-bb11-424d-b3be-55f1fcb0322a
   Args:
-    source: Peter_Troughton
+    relation: :knownAs
+    source: Rose_Constance_Leveson-Gower
+    target: Lady_Rose_Bowes-Lyon
+  AssignClass (8a21ed71-f2e2-4d6b-830a-800a59f8e256)
+ Call ID: 8a21ed71-f2e2-4d6b-830a-800a59f8e256
+  Args:
+    source: 14th_Earl_of_Strathmore_and_Kinghorne
     type: :Man
-  AssignClass (06900898-8171-4fdc-be1b-c8e55b5e65e9)
- Call ID: 06900898-8171-4fdc-be1b-c8e55b5e65e9
+  AssignClass (e08f4ce8-757f-4a4e-a644-920a937f9439)
+ Call ID: e08f4ce8-757f-4a4e-a644-920a937f9439
+  Args:
+    source: 14th_Earl_of_Strathmore_and_Kinghorne
+    type: :Person
+  AssignClass (34e75526-6909-46aa-b8bc-422ad959ecc2)
+ Call ID: 34e75526-6909-46aa-b8bc-422ad959ecc2
+  Args:
+    source: Cecilia_Cavendish-Bentinck
+    type: :Woman
+  AssignClass (fd0d2949-91b5-413a-a176-3c187259be67)
+ Call ID: fd0d2949-91b5-413a-a176-3c187259be67
+  Args:
+    source: Cecilia_Cavendish-Bentinck
+    type: :Person
+  AddTriple (86b71381-2def-44cd-977e-b3d9bfc9ed0b)
+ Call ID: 86b71381-2def-44cd-977e-b3d9bfc9ed0b
+  Args:
+    target: 14th_Earl_of_Strathmore_and_Kinghorne
+    source: Rose_Constance_Leveson-Gower
+    relation: :isDaughterOf
+  AddTriple (c7e67858-56e0-48ad-8113-6ba3cf0976cb)
+ Call ID: c7e67858-56e0-48ad-8113-6ba3cf0976cb
+  Args:
+    target: Cecilia_Cavendish-Bentinck
+    source: Rose_Constance_Leveson-Gower
+    relation: :isDaughterOf
+  AssignClass (783c1352-6046-4818-bf1f-1fbe1098e22b)
+ Call ID: 783c1352-6046-4818-bf1f-1fbe1098e22b
+  Args:
+    source: Queen_Elizabeth_The_Queen_Mother
+    type: :Woman
+  AssignClass (6380c848-13ed-413d-ac0b-17bd77e9e179)
+ Call ID: 6380c848-13ed-413d-ac0b-17bd77e9e179
+  Args:
+    source: Queen_Elizabeth_The_Queen_Mother
+    type: :Person
+  AddTriple (3d678589-b792-4bbf-a99f-8375f736ab6d)
+ Call ID: 3d678589-b792-4bbf-a99f-8375f736ab6d
+  Args:
+    relation: :isSisterOf
+    source: Rose_Constance_Leveson-Gower
+    target: Queen_Elizabeth_The_Queen_Mother
+  AssignClass (a788a556-aa3d-45e3-90d9-9bd954e4a3b7)
+ Call ID: a788a556-aa3d-45e3-90d9-9bd954e4a3b7
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (0c7b9296-93ae-46cd-9a20-239cbd9f05d7)
+ Call ID: 0c7b9296-93ae-46cd-9a20-239cbd9f05d7
   Args:
     type: :Person
-    source: Peter_Troughton
-  AddLiteral (bdf50db4-cea8-4a4a-90e9-aad5b8f7b8c9)
- Call ID: bdf50db4-cea8-4a4a-90e9-aad5b8f7b8c9
+    source: Queen_Elizabeth_II
+  AddTriple (bbfd3f39-5842-49fa-8a64-b82723b58ce9)
+ Call ID: bbfd3f39-5842-49fa-8a64-b82723b58ce9
   Args:
-    literal_value: 1948
-    relation: :hasBirthYear
-    source: Peter_Troughton
-    literal_type: xsd:integer
-  AddLiteral (00af7a89-030a-4036-a4f8-3b731a69ae40)
- Call ID: 00af7a89-030a-4036-a4f8-3b731a69ae40
+    relation: :isAuntOf
+    source: Rose_Constance_Leveson-Gower
+    target: Queen_Elizabeth_II
+  AddLiteral (30c2a79a-8e8b-4f28-b7d5-3046fbddba0f)
+ Call ID: 30c2a79a-8e8b-4f28-b7d5-3046fbddba0f
   Args:
+    literal_value: 1916
     relation: :hasMarriageYear
-    literal_value: 1977
+    source: Rose_Constance_Leveson-Gower
     literal_type: xsd:integer
-    source: Sarah_Troughton
-  AddTriple (b3dfe969-6421-49ec-a235-3a846be32dfd)
- Call ID: b3dfe969-6421-49ec-a235-3a846be32dfd
+  AssignClass (a410b245-ebd5-41fc-ae73-3518526d2b10)
+ Call ID: a410b245-ebd5-41fc-ae73-3518526d2b10
   Args:
-    source: Sarah_Troughton
-    relation: :hasRelation
-    target: Peter_Troughton
-  AssignClass (08cfe405-6b02-4230-aede-e54143da4f0c)
- Call ID: 08cfe405-6b02-4230-aede-e54143da4f0c
-  Args:
+    source: William_Leveson-Gower
     type: :Man
-    source: Charles_Troughton
-  AssignClass (5c3ac03a-cf57-4a08-83c4-e15707e4b0d8)
- Call ID: 5c3ac03a-cf57-4a08-83c4-e15707e4b0d8
+  AssignClass (b92f7f79-0b98-4aac-9c02-346bfe36fe8f)
+ Call ID: b92f7f79-0b98-4aac-9c02-346bfe36fe8f
   Args:
-    source: Charles_Troughton
     type: :Person
-  AddTriple (107850ee-7f69-4807-b157-688ef8c03300)
- Call ID: 107850ee-7f69-4807-b157-688ef8c03300
+    source: William_Leveson-Gower
+  AddTriple (18d85b86-d39e-4c10-8f59-dcef735cc812)
+ Call ID: 18d85b86-d39e-4c10-8f59-dcef735cc812
   Args:
-    source: Peter_Troughton
-    relation: :hasFather
-    target: Charles_Troughton
-  Finish (00f93131-a5de-482c-a3ba-a367d769fa66)
- Call ID: 00f93131-a5de-482c-a3ba-a367d769fa66
+    relation: :hasRelation
+    source: Rose_Constance_Leveson-Gower
+    target: William_Leveson-Gower
+  AssignClass (9a8a2c44-07b5-4bc2-afd1-122b0fb6da87)
+ Call ID: 9a8a2c44-07b5-4bc2-afd1-122b0fb6da87
+  Args:
+    source: Princess_Margaret_Rose_of_York
+    type: :Woman
+  AssignClass (1d55a090-ceaf-480d-855f-1e237c9d8cf0)
+ Call ID: 1d55a090-ceaf-480d-855f-1e237c9d8cf0
+  Args:
+    source: Princess_Margaret_Rose_of_York
+    type: :Person
+  AddTriple (193ea69a-19f4-47cb-b5ca-9241a9b58fbf)
+ Call ID: 193ea69a-19f4-47cb-b5ca-9241a9b58fbf
+  Args:
+    relation: :isAuntOf
+    source: Rose_Constance_Leveson-Gower
+    target: Princess_Margaret_Rose_of_York
+  AddLiteral (02328c52-a2e7-449e-8f47-3ac58747a3fd)
+ Call ID: 02328c52-a2e7-449e-8f47-3ac58747a3fd
+  Args:
+    relation: :hasDeathYear
+    source: William_Leveson-Gower
+    literal_type: xsd:integer
+    literal_value: 1953
+  Finish (2d756770-98a2-4919-a21a-e1b61aa9d8d1)
+ Call ID: 2d756770-98a2-4919-a21a-e1b61aa9d8d1
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Rose_Constance_Leveson-Gower a :Person,
+          :Woman ;
+      :hasBirthYear 1890 ;
+      :hasDeathYear 1967 ;
+      :hasMarriageYear 1916 ;
+      :hasRelation data:William_Leveson-Gower ;
+      :isAuntOf data:Princess_Margaret_Rose_of_York,
+          data:Queen_Elizabeth_II ;
+      :isDaughterOf data:14th_Earl_of_Strathmore_and_Kinghorne,
+          data:Cecilia_Cavendish-Bentinck ;
+      :isSisterOf data:Queen_Elizabeth_The_Queen_Mother ;
+      :knownAs data:Countess_Granville,
+          data:Lady_Rose_Bowes-Lyon .
+
+  data:14th_Earl_of_Strathmore_and_Kinghorne a :Man,
+          :Person .
+
+  data:Cecilia_Cavendish-Bentinck a :Person,
+          :Woman .
+
+  data:Princess_Margaret_Rose_of_York a :Person,
+          :Woman .
+
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
+
+  data:Queen_Elizabeth_The_Queen_Mother a :Person,
+          :Woman .
+
+  data:William_Leveson-Gower a :Man,
+          :Person ;
+      :hasDeathYear 1953 .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Lady_Rose_Bowes-Lyon', 'Countess_Granville']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (db96414e-4a8c-4209-990d-d24ef7be64f5)
+ Call ID: db96414e-4a8c-4209-990d-d24ef7be64f5
+  Args:
+    source: Lady_Rose_Bowes-Lyon
+    type: :Woman
+  AssignClass (53a58214-29e3-408e-bc18-b87c0c00ccc4)
+ Call ID: 53a58214-29e3-408e-bc18-b87c0c00ccc4
+  Args:
+    source: Countess_Granville
+    type: :Woman
+  Finish (20cfcd8a-2d14-4f14-b8e3-8aab28206bbd)
+ Call ID: 20cfcd8a-2d14-4f14-b8e3-8aab28206bbd
   Args:

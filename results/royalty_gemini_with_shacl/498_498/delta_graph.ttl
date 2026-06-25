@@ -1,0 +1,38 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Philippe_de_Vilmorin a :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Sex .
+
+data:Melanie_de_Gaufridy_de_Dortan a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1876 ;
+    :hasDeathYear 1937 ;
+    :hasSex data:Female .
+
+data:Olivier a :Man,
+        :Person ;
+    :hasSex data:Male ;
+    :isSiblingOf data:Roger_de_Vilmorin .
+
+data:Roger_de_Vilmorin a :Man,
+        :Person ;
+    :hasBirthYear 1905 ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Alfonso_XIII_of_Spain ;
+    :hasMother data:Melanie_de_Gaufridy_de_Dortan ;
+    :hasSex data:Male ;
+    :isSiblingOf data:Olivier .
+
+data:Male a :Sex .
+

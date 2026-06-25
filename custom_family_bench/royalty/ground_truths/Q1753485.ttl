@@ -7,16 +7,118 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Margareta_of_Romania a :Person ;
+    rdfs:label "Margareta of Romania" ;
+    data:posIndicesFull "881:901" ;
+    data:posIndicesPart "2331:2338",
+        "2377:2384",
+        "2642:2649",
+        "2725:2732",
+        "2863:2870",
+        "2998:3007",
+        "3049:3056",
+        "3580:3589",
+        "3792:3801",
+        "3919:3926",
+        "4168:4175",
+        "4492:4499",
+        "4645:4652",
+        "4700:4707",
+        "4921:4928",
+        "5081:5090",
+        "5983:5990",
+        "6326:6335" ;
+    data:wdtLink wdt:Q663875 ;
+    :alsoKnownAs "Margareta I of Romania",
+        "Margareta, Custodian of the Crown of Romania",
+        "Margareta, Custodian of the Romanian Crown",
+        "Queen Margareta I",
+        "Queen Margareta I of Romania" ;
+    :hasParent data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female .
+
+data:Nicholas_de_Roumanie a :Person ;
+    rdfs:label "Nicholas de Roumanie" ;
+    data:posIndicesFull "0:28",
+        "0:43",
+        "4097:4117",
+        "454:474" ;
+    data:posIndicesPart "1310:1318",
+        "1454:1462",
+        "2340:2348",
+        "2538:2546",
+        "2796:2804",
+        "3436:3444",
+        "3679:3687",
+        "3845:3853",
+        "4279:4287",
+        "5181:5189",
+        "5293:5301",
+        "5454:5462",
+        "5628:5636",
+        "5678:5686",
+        "5811:5819",
+        "6072:6080",
+        "6386:6394",
+        "6463:6471",
+        "6632:6640",
+        "6718:6726" ;
+    data:wdtLink wdt:Q1753485 ;
+    :alsoKnownAs "Nicholas Michael de Roumanie",
+        "Nicholas Michael de Roumanie Medforth-Mills",
+        "Nicholas Michael de Roumanie-Medforth-Mills",
+        "Nicholas de Roumanie",
+        "Nicolae Michael de Roumanie",
+        "Nicolae Michael de Roumanie-Medforth-Mills",
+        "Nicolae de Roumanie-Medforth-Mills" ;
+    :hasParent data:Princess_Elena_of_Romania,
+        data:Robin_Medforth-Mills ;
+    :hasSex data:male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Robin_Medforth-Mills a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Princess_Elena_of_Romania a :Person ;
+    rdfs:label "Princess Elena of Romania" ;
+    data:posIndicesFull "147:172",
+        "615:640" ;
+    data:posIndicesPart "232:239",
+        "2331:2338",
+        "2377:2384",
+        "2642:2649",
+        "2725:2732",
+        "2863:2870",
+        "287:294",
+        "2989:2997",
+        "3049:3056",
+        "3571:3579",
+        "3783:3791",
+        "3919:3926",
+        "392:399",
+        "4168:4175",
+        "4492:4499",
+        "4645:4652",
+        "4700:4707",
+        "4921:4928",
+        "5072:5080",
+        "5312:5320",
+        "5321:5326",
+        "5983:5990",
+        "6317:6325",
+        "872:880" ;
+    data:wdtLink wdt:Q2423576 ;
+    :alsoKnownAs "Elena de Roumanie",
+        "The Princess Elena",
+        "The Princess Elena of Romania" ;
+    :hasParent data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female .
+
+data:Robin_Medforth-Mills a :Person ;
     rdfs:label "Robin Medforth-Mills" ;
     data:posIndicesFull "177:197",
         "663:683" ;
@@ -35,16 +137,9 @@ data:Robin_Medforth-Mills a :Ancestor,
     data:wdtLink wdt:Q7352653 ;
     :alsoKnownAs "Dr. Leslie Robin Medforth-Mills",
         "Leslie Robin Medforth-Mills" ;
-    :hasChild data:Nicholas_de_Roumanie ;
-    :hasSex data:male ;
-    :hasSon data:Nicholas_de_Roumanie ;
-    :isFatherOf data:Nicholas_de_Roumanie ;
-    :isParentOf data:Nicholas_de_Roumanie .
+    :hasSex data:male .
 
-data:Michael_I_of_Romania a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Michael_I_of_Romania a :Person ;
     rdfs:label "Michael I of Romania" ;
     data:posIndicesFull "6284:6293",
         "713:727",
@@ -80,20 +175,9 @@ data:Michael_I_of_Romania a :Ancestor,
         "King Michael I of the Romanians",
         "Michael I",
         "Michael I of the Romanians" ;
-    :hasChild data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania ;
-    :hasDaughter data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania ;
-    :hasSex data:male ;
-    :isFatherOf data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania ;
-    :isParentOf data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania .
+    :hasSex data:male .
 
-data:Queen_Anne_of_Romania a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Queen_Anne_of_Romania a :Person ;
     rdfs:label "Queen Anne of Romania" ;
     data:posIndicesFull "1660:1670",
         "1765:1775",
@@ -119,154 +203,9 @@ data:Queen_Anne_of_Romania a :Ancestor,
     :alsoKnownAs "Princess Anne of Bourbon-Parma",
         "Queen Anne",
         "Queen Anne, Queen Consort of Romania" ;
-    :hasChild data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania ;
-    :hasDaughter data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania ;
-    :hasSex data:female ;
-    :isMotherOf data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania ;
-    :isParentOf data:Margareta_of_Romania,
-        data:Princess_Elena_of_Romania .
+    :hasSex data:female .
 
-data:Nicholas_de_Roumanie a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Nicholas de Roumanie" ;
-    data:posIndicesFull "0:28",
-        "0:43",
-        "4097:4117",
-        "454:474" ;
-    data:posIndicesPart "1310:1318",
-        "1454:1462",
-        "2340:2348",
-        "2538:2546",
-        "2796:2804",
-        "3436:3444",
-        "3679:3687",
-        "3845:3853",
-        "4279:4287",
-        "5181:5189",
-        "5293:5301",
-        "5454:5462",
-        "5628:5636",
-        "5678:5686",
-        "5811:5819",
-        "6072:6080",
-        "6386:6394",
-        "6463:6471",
-        "6632:6640",
-        "6718:6726" ;
-    data:wdtLink wdt:Q1753485 ;
-    :alsoKnownAs "Nicholas Michael de Roumanie",
-        "Nicholas Michael de Roumanie Medforth-Mills",
-        "Nicholas Michael de Roumanie-Medforth-Mills",
-        "Nicholas de Roumanie",
-        "Nicolae Michael de Roumanie",
-        "Nicolae Michael de Roumanie-Medforth-Mills",
-        "Nicolae de Roumanie-Medforth-Mills" ;
-    :hasFather data:Robin_Medforth-Mills ;
-    :hasMother data:Princess_Elena_of_Romania ;
-    :hasParent data:Princess_Elena_of_Romania,
-        data:Robin_Medforth-Mills ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Elena_of_Romania,
-        data:Robin_Medforth-Mills ;
-    :isSonOf data:Princess_Elena_of_Romania,
-        data:Robin_Medforth-Mills .
+data:female a :Female .
 
-data:Margareta_of_Romania a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Margareta of Romania" ;
-    data:posIndicesFull "881:901" ;
-    data:posIndicesPart "2331:2338",
-        "2377:2384",
-        "2642:2649",
-        "2725:2732",
-        "2863:2870",
-        "2998:3007",
-        "3049:3056",
-        "3580:3589",
-        "3792:3801",
-        "3919:3926",
-        "4168:4175",
-        "4492:4499",
-        "4645:4652",
-        "4700:4707",
-        "4921:4928",
-        "5081:5090",
-        "5983:5990",
-        "6326:6335" ;
-    data:wdtLink wdt:Q663875 ;
-    :alsoKnownAs "Margareta I of Romania",
-        "Margareta, Custodian of the Crown of Romania",
-        "Margareta, Custodian of the Romanian Crown",
-        "Queen Margareta I",
-        "Queen Margareta I of Romania" ;
-    :hasFather data:Michael_I_of_Romania ;
-    :hasMother data:Queen_Anne_of_Romania ;
-    :hasParent data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Elena_of_Romania ;
-    :isAuntOf data:Nicholas_de_Roumanie ;
-    :isChildOf data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :isDaughterOf data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :isSiblingOf data:Princess_Elena_of_Romania ;
-    :isSisterOf data:Princess_Elena_of_Romania .
-
-data:Princess_Elena_of_Romania a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Elena of Romania" ;
-    data:posIndicesFull "147:172",
-        "615:640" ;
-    data:posIndicesPart "232:239",
-        "2331:2338",
-        "2377:2384",
-        "2642:2649",
-        "2725:2732",
-        "2863:2870",
-        "287:294",
-        "2989:2997",
-        "3049:3056",
-        "3571:3579",
-        "3783:3791",
-        "3919:3926",
-        "392:399",
-        "4168:4175",
-        "4492:4499",
-        "4645:4652",
-        "4700:4707",
-        "4921:4928",
-        "5072:5080",
-        "5312:5320",
-        "5321:5326",
-        "5983:5990",
-        "6317:6325",
-        "872:880" ;
-    data:wdtLink wdt:Q2423576 ;
-    :alsoKnownAs "Elena de Roumanie",
-        "The Princess Elena",
-        "The Princess Elena of Romania" ;
-    :hasChild data:Nicholas_de_Roumanie ;
-    :hasFather data:Michael_I_of_Romania ;
-    :hasMother data:Queen_Anne_of_Romania ;
-    :hasParent data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :hasSex data:female ;
-    :hasSister data:Margareta_of_Romania ;
-    :hasSon data:Nicholas_de_Roumanie ;
-    :isChildOf data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :isDaughterOf data:Michael_I_of_Romania,
-        data:Queen_Anne_of_Romania ;
-    :isMotherOf data:Nicholas_de_Roumanie ;
-    :isParentOf data:Nicholas_de_Roumanie ;
-    :isSiblingOf data:Margareta_of_Romania ;
-    :isSisterOf data:Margareta_of_Romania .
+data:male a :Male .
 

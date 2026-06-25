@@ -2,46 +2,39 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Olga_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :alsoKnownAs "Princess Paul of Yugoslavia"^^xsd:string ;
-    :hasAncestor data:King_George_I_of_Greece ;
-    :hasBirthYear 1903 ;
-    :hasDaughter data:Princess_Elizabeth_of_Yugoslavia ;
-    :hasDeathYear 1997 ;
-    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :hasMarriageYear 1923 ;
-    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-    :hasRelation data:Prince_Paul_of_Yugoslavia ;
-    :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark,
-        data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasSon data:Prince_Alexander_of_Yugoslavia,
-        data:Prince_Nikola_of_Yugoslavia .
+data:Prince_Louis_of_Hesse_and_by_Rhine a :Man ;
+    :hasFather data:Ernest_Louis_Grand_Duke_of_Hesse ;
+    :hasMother data:Princess_Eleonore_of_Solms-Hohensolms-Lich ;
+    :isBrotherOf data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse .
 
-data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
-        :Woman .
+data:Princess_Cecilie_of_Greece_and_Denmark a :Woman ;
+    :hasChild data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Princess_Alice_of_Battenberg .
 
-data:King_George_I_of_Greece a :Ancestor,
-        :Man .
+data:Georg_Donatus_Hereditary_Grand_Duke_of_Hesse a :Man ;
+    :hasBirthYear 1906 ;
+    :hasChild data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine,
+        data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine,
+        data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine ;
+    :hasDeathYear 1937 ;
+    :hasFather data:Ernest_Louis_Grand_Duke_of_Hesse ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Princess_Eleonore_of_Solms-Hohensolms-Lich .
 
-data:Prince_Alexander_of_Yugoslavia a :Man,
-        :Person .
+data:Prince_Andrew_of_Greece_and_Denmark a :Man .
 
-data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
-        :Man .
+data:Princess_Alice_of_Battenberg a :Woman .
 
-data:Prince_Nikola_of_Yugoslavia a :Man,
-        :Person .
+data:Ernest_Louis_Grand_Duke_of_Hesse a :Man .
 
-data:Prince_Paul_of_Yugoslavia a :Man,
-        :Person .
+data:Prince_Alexander_Georg_Karl_Heinrich_of_Hesse_and_by_Rhine a :Man .
 
-data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
-        :Woman .
+data:Prince_Ludwig_Ernst_Andreas_of_Hesse_and_by_Rhine a :Man .
 
-data:Princess_Elizabeth_of_Yugoslavia a :Person,
-        :Woman .
+data:Princess_Eleonore_of_Solms-Hohensolms-Lich a :Woman .
 
-data:Princess_Marina_of_Greece_and_Denmark a :Person,
-        :Woman .
+data:Princess_Johanna_Marina_Eleonore_of_Hesse_and_by_Rhine a :Woman .
 

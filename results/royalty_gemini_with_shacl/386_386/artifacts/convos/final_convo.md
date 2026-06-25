@@ -85,22 +85,48 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Duke Paul Frederick of Mecklenburg (German: Herzog Paul Friedrich zu Mecklenburg; 19 September 1852 – 17 May 1923) was a member of the House of Mecklenburg-Schwerin and general of the Mecklenburg cavalry.
-Life
+Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul of Prussia (15 December 1916 – 23 January 1975) was the only child of Prince Joachim of Prussia and Princess Marie-Auguste of Anhalt.
+He was also a grandson of Wilhelm II, German Emperor.
+Early life
 
-Duke Paul Frederick was born in Ludwigslust Castle as the second eldest son of Frederick Francis II, Grand Duke of Mecklenburg-Schwerin and his first wife Princess Augusta Reuss of Köstritz, the daughter of Prince Henry LXIII Reuss of Köstritz.
-Duke Paul Frederick married in Schwerin on 5 May 1881 his cousin, the Austrian born Princess Marie of Windisch-Graetz, the daughter of Prince Hugo of Windisch-Graetz and his wife Duchess Louise of Mecklenburg-Schwerin.
-The couple who had five children who were all raised Roman Catholic, the religion of Princess Marie, lived a quiet life in Venice.
-On 21 April 1884 Duke Paul Frederick renounced his and his sons rights of succession to Mecklenburg-Schwerin in favour of his younger brothers and their sons, so they would take precedence over him and his.
-In 1887, Duke Paul Fredrick raised a Lutheran decided to convert to Roman Catholicism the religion of his wife and children.
-In 1906 after upsetting his nephew Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin, over the amount of money that he was spending Duke Paul Frederick and his wife were ordered to submit to the controller of the royal household.
-Duke Paul Frederick died in Ludwigslust, where he and his wife are both buried in the Louisenkapelle.
+Prince Karl Franz was born on 15 December 1916 in Potsdam.
+He was the only child born to Prince Joachim of Prussia and Princess Marie-Auguste of Anhalt and was the Emperor's fourth grandchild to be born since World War I began; he was consequently very young when Hohenzollern fortunes fell.
+His grandfather abdicated in 1918, and his father, Prince Joachim, committed suicide in 1920.
+At the time of his grandfather's abdication, Prince Karl Franz was twelfth in line of succession to the German and Prussian thrones.
+After his father's suicide, Karl Franz was taken into custody by his paternal uncle, Prince Eitel Friedrich of Prussia.
+As the legal head of the House of Hohenzollern, he claimed this right because Emperor Wilhelm had issued an edict placing Hohenzollern powers in Eitel's hands.
+Eitel's defence had also stated that Marie-Auguste was not a fit person for Karl Franz's guardianship.
+Marie-Auguste went to court however and made a plea that she was heartbroken, which may have helped win the case for her.
+In 1922, Marie-Auguste sued ex-Emperor Wilhelm for financial support that had been promised in her and Joachim's marriage contract.
+Wilhelm's attorney argued that the House of Hohenzollern laws were no longer valid, and therefore there was no obligation to support her.
+In World War II, Karl Franz served as a lieutenant in an armoured car division, and at one point was stationed on the Polish front.
+Marriages
+
+First
+
+On 1 October 1940, Karl Franz married Princess Henriette Hermine Wanda Ida Luise of Schönaich-Carolath.
+She was the daughter of Princess Hermine Reuss of Greiz, who had been the second wife of Karl Franz's grandfather Emperor Wilhelm II since 1922 (Henriette was thus Kaiser Wilhelm's stepdaughter).
+Held at Wilhelm's private residence without much ceremony, he and Hermine attended the ceremony, as did a few other guests.
+Second
+
+Karl Franz married secondly, on 9 November 1946, to Luise Dora Hartmann (5 September 1909 Hamburg, Germany –
+Third
+
+Karl Franz married lastly, on 20 July 1959 in Lima, Peru, Eva Maria Herrera y Valdeavellano (10 June 1922 Lima, Peru – 6 March 1987 Lima, Peru).
+They were married until Prince Karl's death and had two daughters:
+
+
+Ancestry
+
+References
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -116,39 +142,9 @@ Duke Paul Frederick died in Ludwigslust, where he and his wife are both buried i
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -163,6 +159,23 @@ Duke Paul Frederick died in Ludwigslust, where he and his wife are both buried i
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -180,6 +193,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -247,29 +275,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -278,6 +298,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -290,6 +318,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -298,17 +328,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -336,6 +368,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -351,159 +467,198 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (eca0298d-93f3-4037-a953-1987723a246b)
- Call ID: eca0298d-93f3-4037-a953-1987723a246b
+  AssignClass (6f8f14fb-c4f5-421a-a93a-bf2a166f1e1e)
+ Call ID: 6f8f14fb-c4f5-421a-a93a-bf2a166f1e1e
   Args:
+    source: Prince_Karl_Franz_of_Prussia
     type: :Man
-    source: :Paul_Frederick_of_Mecklenburg
-  AssignClass (65d64fd5-5399-46a9-ac0d-3052fd79e367)
- Call ID: 65d64fd5-5399-46a9-ac0d-3052fd79e367
+  AssignClass (246b9c71-04ed-4df7-a0b3-039f87a29416)
+ Call ID: 246b9c71-04ed-4df7-a0b3-039f87a29416
   Args:
+    source: Prince_Karl_Franz_of_Prussia
     type: :Person
-    source: :Paul_Frederick_of_Mecklenburg
-  AddLiteral (1aac2fcf-5a4d-48df-9624-43569a80ce6d)
- Call ID: 1aac2fcf-5a4d-48df-9624-43569a80ce6d
+  AddLiteral (df5c62fa-adde-4f70-908b-3cf66aa6226f)
+ Call ID: df5c62fa-adde-4f70-908b-3cf66aa6226f
   Args:
-    literal_value: Male
-    relation: :hasSex
-    source: :Paul_Frederick_of_Mecklenburg
-    literal_type: xsd:string
-  AddLiteral (8f8f2636-8c35-4d1f-ba12-4f6c6664e23f)
- Call ID: 8f8f2636-8c35-4d1f-ba12-4f6c6664e23f
-  Args:
-    literal_value: 1852
-    literal_type: xsd:string
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: :Paul_Frederick_of_Mecklenburg
-  AddLiteral (96ef5fcc-f11c-45f6-b187-ba863e649353)
- Call ID: 96ef5fcc-f11c-45f6-b187-ba863e649353
+    source: Prince_Karl_Franz_of_Prussia
+    literal_value: 1916
+  AddLiteral (e67ccfb2-373d-402c-9b50-d71e6b897d9b)
+ Call ID: e67ccfb2-373d-402c-9b50-d71e6b897d9b
   Args:
-    literal_type: xsd:string
-    source: :Paul_Frederick_of_Mecklenburg
     relation: :hasDeathYear
-    literal_value: 1923
-  AssignClass (6c93a216-41f3-4f32-9d44-f5adaa34b03e)
- Call ID: 6c93a216-41f3-4f32-9d44-f5adaa34b03e
+    literal_type: xsd:integer
+    literal_value: 1975
+    source: Prince_Karl_Franz_of_Prussia
+  AssignClass (e49691d8-84f3-42e0-ac10-d3d31164de0a)
+ Call ID: e49691d8-84f3-42e0-ac10-d3d31164de0a
   Args:
+    source: Prince_Joachim_of_Prussia
     type: :Man
-    source: :Frederick_Francis_II_of_Mecklenburg-Schwerin
-  AssignClass (0a125fe5-d646-4e5b-aa2f-9cd2bdd5fc13)
- Call ID: 0a125fe5-d646-4e5b-aa2f-9cd2bdd5fc13
+  AssignClass (9baebeff-c14c-448f-9f92-e24cfb70ea85)
+ Call ID: 9baebeff-c14c-448f-9f92-e24cfb70ea85
   Args:
+    source: Prince_Joachim_of_Prussia
     type: :Person
-    source: :Frederick_Francis_II_of_Mecklenburg-Schwerin
-  AssignClass (7fee4caf-50b3-4e16-bbd4-1e2cb326d230)
- Call ID: 7fee4caf-50b3-4e16-bbd4-1e2cb326d230
+  AssignClass (3386405c-635f-4323-8061-56fb22159593)
+ Call ID: 3386405c-635f-4323-8061-56fb22159593
   Args:
+    source: Princess_Marie-Auguste_of_Anhalt
     type: :Woman
-    source: :Augusta_Reuss_of_Köstritz
-  AssignClass (e887e3cc-31a1-4067-afa9-5ce01a3d0e53)
- Call ID: e887e3cc-31a1-4067-afa9-5ce01a3d0e53
+  AssignClass (9c406395-b3a0-4d89-99ea-63031bc604b9)
+ Call ID: 9c406395-b3a0-4d89-99ea-63031bc604b9
   Args:
+    source: Princess_Marie-Auguste_of_Anhalt
     type: :Person
-    source: :Augusta_Reuss_of_Köstritz
-  AddTriple (b7cbdb30-886b-40dd-88b4-d7fa3c2e1889)
- Call ID: b7cbdb30-886b-40dd-88b4-d7fa3c2e1889
+  AddTriple (3b1487f6-e598-4be1-97d9-314eeda4836a)
+ Call ID: 3b1487f6-e598-4be1-97d9-314eeda4836a
   Args:
-    target: :Paul_Frederick_of_Mecklenburg
-    source: :Frederick_Francis_II_of_Mecklenburg-Schwerin
-    relation: :isFatherOf
-  AddTriple (a388a33b-6387-4178-8d12-9af6dde7fdf9)
- Call ID: a388a33b-6387-4178-8d12-9af6dde7fdf9
+    source: Prince_Karl_Franz_of_Prussia
+    relation: :hasFather
+    target: Prince_Joachim_of_Prussia
+  AddTriple (d62e4422-ccca-4333-8462-35a501c1ab11)
+ Call ID: d62e4422-ccca-4333-8462-35a501c1ab11
   Args:
-    relation: :isMotherOf
-    source: :Augusta_Reuss_of_Köstritz
-    target: :Paul_Frederick_of_Mecklenburg
-  AssignClass (572bb744-fc27-49c2-b164-4f7c9367bc25)
- Call ID: 572bb744-fc27-49c2-b164-4f7c9367bc25
+    source: Prince_Karl_Franz_of_Prussia
+    target: Princess_Marie-Auguste_of_Anhalt
+    relation: :hasMother
+  AssignClass (04c90209-daa3-443c-b320-4ff5a05768ed)
+ Call ID: 04c90209-daa3-443c-b320-4ff5a05768ed
   Args:
+    source: Wilhelm_II_German_Emperor
     type: :Man
-    source: :Henry_LXIII_Reuss_of_Köstritz
-  AssignClass (5538ad42-f4a9-4110-bf23-835c36fc2e92)
- Call ID: 5538ad42-f4a9-4110-bf23-835c36fc2e92
+  AssignClass (5cd0b6e2-864d-453a-8edb-720574a0d04e)
+ Call ID: 5cd0b6e2-864d-453a-8edb-720574a0d04e
   Args:
+    source: Wilhelm_II_German_Emperor
     type: :Person
-    source: :Henry_LXIII_Reuss_of_Köstritz
-  AddTriple (7b5493a1-c215-45a6-944f-dab55084b9cb)
- Call ID: 7b5493a1-c215-45a6-944f-dab55084b9cb
+  AddTriple (cd407fd3-72ef-499f-8793-c59de4385cd5)
+ Call ID: cd407fd3-72ef-499f-8793-c59de4385cd5
   Args:
-    relation: :isFatherOf
-    source: :Henry_LXIII_Reuss_of_Köstritz
-    target: :Augusta_Reuss_of_Köstritz
-  AssignClass (675ac677-192c-4f62-8e9e-d07a721d910c)
- Call ID: 675ac677-192c-4f62-8e9e-d07a721d910c
+    source: Prince_Karl_Franz_of_Prussia
+    relation: :hasAncestor
+    target: Wilhelm_II_German_Emperor
+  AssignClass (894f2d95-a179-4ee9-b789-815e0ae94309)
+ Call ID: 894f2d95-a179-4ee9-b789-815e0ae94309
   Args:
+    source: Prince_Eitel_Friedrich_of_Prussia
+    type: :Man
+  AssignClass (49d61879-8695-40d7-91c6-a9d96bf0a77f)
+ Call ID: 49d61879-8695-40d7-91c6-a9d96bf0a77f
+  Args:
+    source: Prince_Eitel_Friedrich_of_Prussia
+    type: :Person
+  AddTriple (43524370-a2db-4a06-87c7-dadac4d7c9b7)
+ Call ID: 43524370-a2db-4a06-87c7-dadac4d7c9b7
+  Args:
+    relation: :hasBrother
+    target: Prince_Eitel_Friedrich_of_Prussia
+    source: Prince_Joachim_of_Prussia
+  AssignClass (f5d7001b-fd56-48a1-8b06-cf0103c0249a)
+ Call ID: f5d7001b-fd56-48a1-8b06-cf0103c0249a
+  Args:
+    source: Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Schönaich-Carolath
     type: :Woman
-    source: :Marie_of_Windisch-Graetz
-  AssignClass (4b91d1a8-51cd-471c-a411-32a87c095adf)
- Call ID: 4b91d1a8-51cd-471c-a411-32a87c095adf
+  AssignClass (9dc35e26-2e37-4bc4-b14b-7734637c5e04)
+ Call ID: 9dc35e26-2e37-4bc4-b14b-7734637c5e04
   Args:
+    source: Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Schönaich-Carolath
     type: :Person
-    source: :Marie_of_Windisch-Graetz
-  AddTriple (5c51be30-c6a9-40e3-81d4-405913c35f11)
- Call ID: 5c51be30-c6a9-40e3-81d4-405913c35f11
+  AddLiteral (6ee3eb85-ad78-4374-947f-86fc5fd3e851)
+ Call ID: 6ee3eb85-ad78-4374-947f-86fc5fd3e851
   Args:
-    source: :Paul_Frederick_of_Mecklenburg
-    relation: :hasRelation
-    target: :Marie_of_Windisch-Graetz
-  AddLiteral (0ed24b4c-76f4-4323-9e0f-6416d426e079)
- Call ID: 0ed24b4c-76f4-4323-9e0f-6416d426e079
-  Args:
-    literal_type: xsd:string
-    source: :Paul_Frederick_of_Mecklenburg
+    source: Prince_Karl_Franz_of_Prussia
+    literal_value: 1940
+    literal_type: xsd:integer
     relation: :hasMarriageYear
-    literal_value: 1881
-  AssignClass (87b744b0-55d5-4539-b6a4-5adce9b728ff)
- Call ID: 87b744b0-55d5-4539-b6a4-5adce9b728ff
+  AssignClass (747f4c4b-78fc-4287-a175-14704caacd32)
+ Call ID: 747f4c4b-78fc-4287-a175-14704caacd32
   Args:
-    type: :Man
-    source: :Hugo_of_Windisch-Graetz
-  AssignClass (b4947f29-3498-4842-b3bd-267a5d9ae689)
- Call ID: b4947f29-3498-4842-b3bd-267a5d9ae689
-  Args:
-    type: :Person
-    source: :Hugo_of_Windisch-Graetz
-  AssignClass (e6bcc935-7016-4ce5-9cfe-41c38033ecb7)
- Call ID: e6bcc935-7016-4ce5-9cfe-41c38033ecb7
-  Args:
+    source: Princess_Hermine_Reuss_of_Greiz
     type: :Woman
-    source: :Louise_of_Mecklenburg-Schwerin
-  AssignClass (163deb27-a233-4c10-a001-56e9e6c2f276)
- Call ID: 163deb27-a233-4c10-a001-56e9e6c2f276
+  AssignClass (aa2e699f-d40a-4217-b6ba-850910a6177c)
+ Call ID: aa2e699f-d40a-4217-b6ba-850910a6177c
   Args:
+    source: Princess_Hermine_Reuss_of_Greiz
     type: :Person
-    source: :Louise_of_Mecklenburg-Schwerin
-  AddTriple (e82b266f-c35d-406f-856c-7f96ab2f1d5a)
- Call ID: e82b266f-c35d-406f-856c-7f96ab2f1d5a
+  AddTriple (b36bac0b-514f-41ab-8907-70ce1a80253c)
+ Call ID: b36bac0b-514f-41ab-8907-70ce1a80253c
   Args:
-    relation: :isFatherOf
-    source: :Hugo_of_Windisch-Graetz
-    target: :Marie_of_Windisch-Graetz
-  AddTriple (ecc2d005-87e3-443d-91b2-8d449fba6d85)
- Call ID: ecc2d005-87e3-443d-91b2-8d449fba6d85
+    target: Princess_Hermine_Reuss_of_Greiz
+    relation: :hasMother
+    source: Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Schönaich-Carolath
+  AssignClass (fb1241ab-03cf-4fd5-8a91-e6f7e6446705)
+ Call ID: fb1241ab-03cf-4fd5-8a91-e6f7e6446705
   Args:
-    source: :Louise_of_Mecklenburg-Schwerin
-    relation: :isMotherOf
-    target: :Marie_of_Windisch-Graetz
-  AssignClass (21867115-7628-48cc-b14a-491a11271382)
- Call ID: 21867115-7628-48cc-b14a-491a11271382
+    source: Luise_Dora_Hartmann
+    type: :Woman
+  AssignClass (916d153f-69b6-48cf-af1b-c426d84038c1)
+ Call ID: 916d153f-69b6-48cf-af1b-c426d84038c1
   Args:
-    type: :Man
-    source: :Frederick_Francis_IV_of_Mecklenburg-Schwerin
-  AssignClass (9267d12c-b025-451a-9ce6-67ba3fc12cba)
- Call ID: 9267d12c-b025-451a-9ce6-67ba3fc12cba
-  Args:
+    source: Luise_Dora_Hartmann
     type: :Person
-    source: :Frederick_Francis_IV_of_Mecklenburg-Schwerin
-  AddTriple (366681d4-de18-467a-b0ba-dc481c6b55c2)
- Call ID: 366681d4-de18-467a-b0ba-dc481c6b55c2
+  AddLiteral (ce633699-6d08-4d62-acec-742b2b6f1f5a)
+ Call ID: ce633699-6d08-4d62-acec-742b2b6f1f5a
   Args:
-    target: :Frederick_Francis_IV_of_Mecklenburg-Schwerin
-    relation: :hasRelation
-    source: :Paul_Frederick_of_Mecklenburg
-  Finish (32c70b28-ac72-403a-94f1-b96248bbbfb5)
- Call ID: 32c70b28-ac72-403a-94f1-b96248bbbfb5
+    literal_value: 1946
+    source: Prince_Karl_Franz_of_Prussia
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AssignClass (b588d7b7-eda1-4c3b-b655-1569273049c4)
+ Call ID: b588d7b7-eda1-4c3b-b655-1569273049c4
   Args:
+    source: Eva_Maria_Herrera_y_Valdeavellano
+    type: :Woman
+  AssignClass (b604385f-d76f-482b-a2cf-f675bae25877)
+ Call ID: b604385f-d76f-482b-a2cf-f675bae25877
+  Args:
+    source: Eva_Maria_Herrera_y_Valdeavellano
+    type: :Person
+  AddLiteral (ea01b16c-f1f1-41fb-8206-5589492bc16d)
+ Call ID: ea01b16c-f1f1-41fb-8206-5589492bc16d
+  Args:
+    literal_value: 1959
+    source: Prince_Karl_Franz_of_Prussia
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AddLiteral (bef2ab6d-1b8b-486d-8f6f-88c46de3f0b9)
+ Call ID: bef2ab6d-1b8b-486d-8f6f-88c46de3f0b9
+  Args:
+    literal_value: 1922
+    source: Eva_Maria_Herrera_y_Valdeavellano
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (82545369-d250-4131-bcb9-baad71aec378)
+ Call ID: 82545369-d250-4131-bcb9-baad71aec378
+  Args:
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1987
+    source: Eva_Maria_Herrera_y_Valdeavellano
+  AddLiteral (6c153844-5993-46a7-b5a5-ede3e64f5b7c)
+ Call ID: 6c153844-5993-46a7-b5a5-ede3e64f5b7c
+  Args:
+    literal_value: 1909
+    source: Luise_Dora_Hartmann
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -616,42 +771,55 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederick_Francis_II_of_Mecklenburg-Schwerin a :Man,
-          :Person ;
-      :isFatherOf data:Paul_Frederick_of_Mecklenburg .
-
-  data:Henry_LXIII_Reuss_of_K%C3%B6stritz a :Man,
-          :Person ;
-      :isFatherOf data:Augusta_Reuss_of_K%C3%B6stritz .
-
-  data:Hugo_of_Windisch-Graetz a :Man,
-          :Person ;
-      :isFatherOf data:Marie_of_Windisch-Graetz .
-
-  data:Louise_of_Mecklenburg-Schwerin a :Person,
+  data:Eva_Maria_Herrera_y_Valdeavellano a :Person,
           :Woman ;
-      :isMotherOf data:Marie_of_Windisch-Graetz .
+      :hasBirthYear 1922 ;
+      :hasDeathYear 1987 .
 
-  data:Augusta_Reuss_of_K%C3%B6stritz a :Person,
+  data:Luise_Dora_Hartmann a :Person,
           :Woman ;
-      :isMotherOf data:Paul_Frederick_of_Mecklenburg .
+      :hasBirthYear 1909 .
 
-  data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
+  data:Prince_Karl_Franz_of_Prussia a :Man,
+          :Person ;
+      :hasAncestor data:Wilhelm_II_German_Emperor ;
+      :hasBirthYear 1916 ;
+      :hasDeathYear 1975 ;
+      :hasFather data:Prince_Joachim_of_Prussia ;
+      :hasMarriageYear 1940,
+          1946,
+          1959 ;
+      :hasMother data:Princess_Marie-Auguste_of_Anhalt .
+
+  data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath a :Person,
+          :Woman ;
+      :hasMother data:Princess_Hermine_Reuss_of_Greiz .
+
+  data:Prince_Eitel_Friedrich_of_Prussia a :Man,
           :Person .
 
-  data:Paul_Frederick_of_Mecklenburg a :Man,
+  data:Prince_Joachim_of_Prussia a :Man,
           :Person ;
-      :hasBirthYear "1852"^^xsd:string ;
-      :hasDeathYear "1923"^^xsd:string ;
-      :hasMarriageYear "1881"^^xsd:string ;
-      :hasRelation data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
-          data:Marie_of_Windisch-Graetz ;
-      :hasSex "Male"^^xsd:string .
+      :hasBrother data:Prince_Eitel_Friedrich_of_Prussia .
 
-  data:Marie_of_Windisch-Graetz a :Person,
+  data:Princess_Hermine_Reuss_of_Greiz a :Person,
           :Woman .
 
+  data:Princess_Marie-Auguste_of_Anhalt a :Person,
+          :Woman .
 
+  data:Wilhelm_II_German_Emperor a :Man,
+          :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (22d6da95-5ce1-4dd0-989e-690638f1b404)
+ Call ID: 22d6da95-5ce1-4dd0-989e-690638f1b404
+  Args:
 
 ================================= Tool Message =================================
 
@@ -661,118 +829,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (6b2f5204-a540-45c8-89d2-e050b4b8292f)
- Call ID: 6b2f5204-a540-45c8-89d2-e050b4b8292f
+  ValidateShacl (6a45ae38-df6c-4b39-81b4-0d4a7489c332)
+ Call ID: 6a45ae38-df6c-4b39-81b4-0d4a7489c332
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:13
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Paul_Frederick_of_Mecklenburg' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not categorized under the required class ':Sex'.
+      The node Wilhelm_II_German_Emperor used as an ancestor for Prince_Karl_Franz_of_Prussia does not have the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Wilhelm_II_German_Emperor', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Paul_Frederick_of_Mecklenburg' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not categorized under the required class ':Sex'.
+      The node Prince_Joachim_of_Prussia used as the father of Prince_Karl_Franz_of_Prussia is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Prince_Joachim_of_Prussia', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Paul_Frederick_of_Mecklenburg' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not categorized under the required class ':Sex'.
+      The node Princess_Marie-Auguste_of_Anhalt used as the mother of Prince_Karl_Franz_of_Prussia is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Princess_Marie-Auguste_of_Anhalt', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Paul_Frederick_of_Mecklenburg' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not categorized under the required class ':Sex'.
+      The node Wilhelm_II_German_Emperor used as an ancestor for Prince_Karl_Franz_of_Prussia does not have the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Wilhelm_II_German_Emperor', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Paul_Frederick_of_Mecklenburg' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not categorized under the required class ':Sex'.
+      The node Prince_Joachim_of_Prussia used as the father of Prince_Karl_Franz_of_Prussia is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Prince_Joachim_of_Prussia', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Louise_of_Mecklenburg-Schwerin' is used as a subject of 'isMotherOf' but lacks the required class ':Ancestor'.
+      The node Princess_Hermine_Reuss_of_Greiz used as the mother of Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Ancestor' to the node 'Louise_of_Mecklenburg-Schwerin'.
+      AssignClass(node='Princess_Hermine_Reuss_of_Greiz', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Augusta_Reuss_of_K%C3%B6stritz' is used as a subject of 'isMotherOf' but lacks the required class ':Ancestor'.
+      The node Princess_Marie-Auguste_of_Anhalt used as the mother of Prince_Karl_Franz_of_Prussia is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Ancestor' to the node 'Augusta_Reuss_of_K%C3%B6stritz'.
+      AssignClass(node='Princess_Marie-Auguste_of_Anhalt', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Paul_Frederick_of_Mecklenburg' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not categorized under the required class ':Sex'.
+      The node Wilhelm_II_German_Emperor used as an ancestor for Prince_Karl_Franz_of_Prussia does not have the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Wilhelm_II_German_Emperor', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Paul_Frederick_of_Mecklenburg' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not categorized under the required class ':Sex'.
+      The node Prince_Joachim_of_Prussia used as the father of Prince_Karl_Franz_of_Prussia is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Prince_Joachim_of_Prussia', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Paul_Frederick_of_Mecklenburg' has a 'hasSex' property pointing to 'Male', but the value 'Male' is not categorized under the required class ':Sex'.
+      The node Princess_Hermine_Reuss_of_Greiz used as the mother of Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node 'Male'.
+      AssignClass(node='Princess_Hermine_Reuss_of_Greiz', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Henry_LXIII_Reuss_of_K%C3%B6stritz' is used as a subject of 'isFatherOf' but lacks the required class ':Ancestor'.
+      The node Princess_Marie-Auguste_of_Anhalt used as the mother of Prince_Karl_Franz_of_Prussia is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Ancestor' to the node 'Henry_LXIII_Reuss_of_K%C3%B6stritz'.
+      AssignClass(node='Princess_Marie-Auguste_of_Anhalt', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Hugo_of_Windisch-Graetz' is used as a subject of 'isFatherOf' but lacks the required class ':Ancestor'.
+      The node Princess_Hermine_Reuss_of_Greiz used as the mother of Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Ancestor' to the node 'Hugo_of_Windisch-Graetz'.
-
-
-  Violation [13]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The node 'Frederick_Francis_II_of_Mecklenburg-Schwerin' is used as a subject of 'isFatherOf' but lacks the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Ancestor' to the node 'Frederick_Francis_II_of_Mecklenburg-Schwerin'.
+      AssignClass(node='Princess_Hermine_Reuss_of_Greiz', class=':Ancestor')
 
 
 
@@ -781,68 +941,26 @@ Violations:
 
 []
 Tool Calls:
-  RemoveLiteral (976b9647-4a73-45a0-83c1-e52fe8e47bb9)
- Call ID: 976b9647-4a73-45a0-83c1-e52fe8e47bb9
+  AssignClass (e3efb199-3b44-4bb9-9d50-fe591b514cbd)
+ Call ID: e3efb199-3b44-4bb9-9d50-fe591b514cbd
   Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    source: :Paul_Frederick_of_Mecklenburg
-    literal_value: Male
-  AssignClass (f16c2670-3128-43cb-a33c-6c8d5cd47df1)
- Call ID: f16c2670-3128-43cb-a33c-6c8d5cd47df1
-  Args:
-    type: :Sex
-    source: :Male
-  AddTriple (a7395873-5571-46e6-abdd-dd4bab92375b)
- Call ID: a7395873-5571-46e6-abdd-dd4bab92375b
-  Args:
-    target: :Male
-    relation: :hasSex
-    source: :Paul_Frederick_of_Mecklenburg
-  AssignClass (8aa1749b-9dee-4082-a2e3-b78c6004e0ab)
- Call ID: 8aa1749b-9dee-4082-a2e3-b78c6004e0ab
-  Args:
+    source: Wilhelm_II_German_Emperor
     type: :Ancestor
-    source: :Frederick_Francis_II_of_Mecklenburg-Schwerin
-  AssignClass (0e5f8792-eeb4-4a86-8057-bd472a956653)
- Call ID: 0e5f8792-eeb4-4a86-8057-bd472a956653
+  AssignClass (e19ec278-1140-440f-b0b6-fce6a0b834d3)
+ Call ID: e19ec278-1140-440f-b0b6-fce6a0b834d3
   Args:
+    source: Prince_Joachim_of_Prussia
     type: :Ancestor
-    source: :Augusta_Reuss_of_Köstritz
-  AssignClass (9d7c92de-625e-4298-ad9a-287c1a03dc7f)
- Call ID: 9d7c92de-625e-4298-ad9a-287c1a03dc7f
+  AssignClass (640f3dfc-ca0c-47b8-b43f-8dc55a49a9b0)
+ Call ID: 640f3dfc-ca0c-47b8-b43f-8dc55a49a9b0
   Args:
+    source: Princess_Marie-Auguste_of_Anhalt
     type: :Ancestor
-    source: :Henry_LXIII_Reuss_of_Köstritz
-  AssignClass (e7a51401-17d9-4e51-a259-cd5171989062)
- Call ID: e7a51401-17d9-4e51-a259-cd5171989062
+  AssignClass (af089aa7-2e76-4c92-8d29-6f0c5309738d)
+ Call ID: af089aa7-2e76-4c92-8d29-6f0c5309738d
   Args:
+    source: Princess_Hermine_Reuss_of_Greiz
     type: :Ancestor
-    source: :Hugo_of_Windisch-Graetz
-  AssignClass (e95e3dd3-de52-431a-87ce-27aa98cf2d0d)
- Call ID: e95e3dd3-de52-431a-87ce-27aa98cf2d0d
-  Args:
-    type: :Ancestor
-    source: :Louise_of_Mecklenburg-Schwerin
-  Finish (7d0914ce-fb24-4d70-bc55-c5fd61f7fb2b)
- Call ID: 7d0914ce-fb24-4d70-bc55-c5fd61f7fb2b
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -863,60 +981,58 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederick_Francis_II_of_Mecklenburg-Schwerin a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:Paul_Frederick_of_Mecklenburg .
-
-  data:Henry_LXIII_Reuss_of_K%C3%B6stritz a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:Augusta_Reuss_of_K%C3%B6stritz .
-
-  data:Hugo_of_Windisch-Graetz a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:Marie_of_Windisch-Graetz .
-
-  data:Louise_of_Mecklenburg-Schwerin a :Ancestor,
-          :Person,
+  data:Eva_Maria_Herrera_y_Valdeavellano a :Person,
           :Woman ;
-      :isMotherOf data:Marie_of_Windisch-Graetz .
+      :hasBirthYear 1922 ;
+      :hasDeathYear 1987 .
 
-  data:Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
-          :Person,
+  data:Luise_Dora_Hartmann a :Person,
           :Woman ;
-      :isMotherOf data:Paul_Frederick_of_Mecklenburg .
+      :hasBirthYear 1909 .
 
-  data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
+  data:Prince_Karl_Franz_of_Prussia a :Man,
+          :Person ;
+      :hasAncestor data:Wilhelm_II_German_Emperor ;
+      :hasBirthYear 1916 ;
+      :hasDeathYear 1975 ;
+      :hasFather data:Prince_Joachim_of_Prussia ;
+      :hasMarriageYear 1940,
+          1946,
+          1959 ;
+      :hasMother data:Princess_Marie-Auguste_of_Anhalt .
+
+  data:Princess_Henriette_Hermine_Wanda_Ida_Luise_of_Sch%C3%B6naich-Carolath a :Person,
+          :Woman ;
+      :hasMother data:Princess_Hermine_Reuss_of_Greiz .
+
+  data:Prince_Eitel_Friedrich_of_Prussia a :Man,
           :Person .
 
-  data:Male a :Sex .
-
-  data:Paul_Frederick_of_Mecklenburg a :Man,
+  data:Prince_Joachim_of_Prussia a :Ancestor,
+          :Man,
           :Person ;
-      :hasBirthYear "1852"^^xsd:string ;
-      :hasDeathYear "1923"^^xsd:string ;
-      :hasMarriageYear "1881"^^xsd:string ;
-      :hasRelation data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
-          data:Marie_of_Windisch-Graetz ;
-      :hasSex data:Male .
+      :hasBrother data:Prince_Eitel_Friedrich_of_Prussia .
 
-  data:Marie_of_Windisch-Graetz a :Person,
+  data:Princess_Hermine_Reuss_of_Greiz a :Ancestor,
+          :Person,
           :Woman .
 
+  data:Princess_Marie-Auguste_of_Anhalt a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Wilhelm_II_German_Emperor a :Ancestor,
+          :Man,
+          :Person .
 
 
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (5c967e1d-6861-4f84-bc6b-c1298d2b7278)
- Call ID: 5c967e1d-6861-4f84-bc6b-c1298d2b7278
+  ValidateShacl (80b03bbf-1f9c-45ca-8b3a-eaf6c41ebc73)
+ Call ID: 80b03bbf-1f9c-45ca-8b3a-eaf6c41ebc73
   Args:
 
 ================================= Tool Message =================================
@@ -927,6 +1043,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (e0372413-5b98-4aa6-9f00-65aee2a0265c)
- Call ID: e0372413-5b98-4aa6-9f00-65aee2a0265c
+  Finish (cff5b494-7d9d-477e-a67b-6cb1f29b9df4)
+ Call ID: cff5b494-7d9d-477e-a67b-6cb1f29b9df4
   Args:

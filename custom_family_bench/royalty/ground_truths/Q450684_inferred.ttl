@@ -1,0 +1,74 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Maria Antonietta of Bourbon-Two Sicilies"^^xsd:string ;
+    data:posIndicesFull "613:662"^^xsd:string ;
+    data:posIndicesPart "684:689"^^xsd:string,
+        "842:850"^^xsd:string,
+        "860:867"^^xsd:string,
+        "905:910"^^xsd:string,
+        "980:985"^^xsd:string ;
+    data:wdtLink wdt:Q255400 ;
+    :hasChild data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasDaughter data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasRelation data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isAuntOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isBloodrelationOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isParentOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isSiblingOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany a :Person,
+        :Woman ;
+    rdfs:label "Archduchess Maria Cristina, Hereditary Grand Duchess of Tuscany"^^xsd:string ;
+    data:posIndicesFull "0:47"^^xsd:string ;
+    data:posIndicesPart "477:482"^^xsd:string,
+        "483:491"^^xsd:string,
+        "684:689"^^xsd:string,
+        "690:698"^^xsd:string,
+        "754:761"^^xsd:string,
+        "807:812"^^xsd:string,
+        "821:828"^^xsd:string,
+        "905:910"^^xsd:string,
+        "911:919"^^xsd:string,
+        "968:979"^^xsd:string,
+        "980:985"^^xsd:string ;
+    data:wdtLink wdt:Q450684 ;
+    :alsoKnownAs "Princess Maria Cristina of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasAncestor data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany,
+        data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasSex data:female ;
+    :hasSister data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isBloodrelationOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isChildOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isDaughterOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isSisterOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany .
+

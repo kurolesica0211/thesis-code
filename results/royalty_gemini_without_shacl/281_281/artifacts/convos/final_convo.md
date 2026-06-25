@@ -69,21 +69,30 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Fergus Michael Claude Bowes-Lyon, 17th and 4th Earl of Strathmore and Kinghorne (31 December 1928 – 19 August 1987) was a British landowner and peer.
-He was a nephew of Queen Elizabeth the Queen Mother, thus a first cousin of Queen Elizabeth II.
-Early life and family
+Princess María de las Mercedes of Bavaria, Infanta of Spain (3 October 1911 – 11 September 1953) was a German-Spanish princess.
+She was the third wife of Georgian Prince Irakli Bagration of Mukhrani.
+Through her father, Prince Ferdinand of Bavaria, she was a member of the Bavarian House of Wittelsbach.
+Through her mother, Infanta María Teresa of Spain, she was a granddaughter of Alfonso XII and niece of Alfonso XIII.
+Early life
 
-Born on 31 December 1928, Strathmore was the eldest son of Michael Claude Hamilton Bowes-Lyon and Elizabeth Margaret Cator (1899–1959).
-His paternal grandparents were the 14th Earl and Countess of Strathmore and Kinghorne, and his maternal grandfather was John Cator, Conservative MP for Huntingdon.
-In 1953, during the coronation of his cousin, Queen Elizabeth II, he was one of many servicemen lining the processional route.
-Strathmore, then Captain Fergus Bowes-Lyon, married Mary Pamela McCorquodale (31 May 1932 – 28 April 2025) at St Margaret's, Westminster, on 10 April 1956 in a ceremony attended by his cousin, the Queen.
-He was succeeded by his son, Michael.
+Princess María de las Mercedes of Bavaria, Infanta of Spain, was born on 3 October 1911 at the Palace of the Cuesta de la Vega, Madrid, to Prince Ferdinand of Bavaria and Infanta María Teresa of Spain.
+Her parents were first cousins, both grandchildren of Isabella II of Spain.
+Prior to her birth, her uncle, King Alfonso XIII, declared that any children born of her parents' marriage would be Infantes or Infantas of Spain.
+She was christened María de las Mercedes Teresa María de la
+Her godparents were Infanta María de la Paz of Spain (her paternal grandmother) and Prince Adalbert of Bavaria (her paternal uncle, for whom Prince Carlos of Bourbon-Two Sicilies stood proxy).
+She had two elder brothers, Luis Alfonso (1906–1983) and José Eugenio (1909–1966), and one younger sister, María del Pilar (1912–1918).
+Marriage and issue
+
+On 29 August 1946, Infanta María de las Mercedes married Prince Irakli Bagration of Mukhrani at the Miramar Palace in San Sebastián.
+In 1948, Irakli's sister Leonida married Grand Duke Vladimir.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -99,39 +108,9 @@ He was succeeded by his son, Michael.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -146,6 +125,23 @@ He was succeeded by his son, Michael.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -163,6 +159,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -230,29 +241,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,6 +264,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -273,6 +284,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -281,17 +294,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -319,6 +334,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -334,129 +433,285 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (fe2f6f6c-579c-42b9-bc0b-7e39fbbbea1e)
- Call ID: fe2f6f6c-579c-42b9-bc0b-7e39fbbbea1e
+  AssignClass (539095ba-efd2-4dd0-b222-22d016680c5a)
+ Call ID: 539095ba-efd2-4dd0-b222-22d016680c5a
   Args:
-    type: :Man
-    source: Fergus_Michael_Claude_Bowes-Lyon
-  AssignClass (98f874e3-643b-4675-ad5c-6085d7907b49)
- Call ID: 98f874e3-643b-4675-ad5c-6085d7907b49
-  Args:
+    source: :Maria_de_las_Mercedes_of_Bavaria
     type: :Person
-    source: Fergus_Michael_Claude_Bowes-Lyon
-  AddLiteral (53bf476c-1302-4491-b17a-40eff1e22efc)
- Call ID: 53bf476c-1302-4491-b17a-40eff1e22efc
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1928
-    source: Fergus_Michael_Claude_Bowes-Lyon
-    literal_type: xsd:integer
-  AddLiteral (47b23730-dbb8-440d-925c-9d79559f77d2)
- Call ID: 47b23730-dbb8-440d-925c-9d79559f77d2
-  Args:
-    literal_type: xsd:integer
-    source: Fergus_Michael_Claude_Bowes-Lyon
-    literal_value: 1987
-    relation: :hasDeathYear
-  AssignClass (739287ba-5e26-4743-acd5-e9999026d111)
- Call ID: 739287ba-5e26-4743-acd5-e9999026d111
-  Args:
-    type: :Man
-    source: Michael_Claude_Hamilton_Bowes-Lyon
-  AssignClass (c5bf85c8-1c93-4cb8-bea1-5fe8eb3f4660)
- Call ID: c5bf85c8-1c93-4cb8-bea1-5fe8eb3f4660
-  Args:
-    type: :Person
-    source: Michael_Claude_Hamilton_Bowes-Lyon
-  AddTriple (abb5d1d8-6a69-491b-92cd-ba1c40db1497)
- Call ID: abb5d1d8-6a69-491b-92cd-ba1c40db1497
-  Args:
-    target: Michael_Claude_Hamilton_Bowes-Lyon
-    source: Fergus_Michael_Claude_Bowes-Lyon
-    relation: :hasFather
-  AssignClass (f35c1ea8-bfd8-4bac-8bcf-72e0e30f3bfc)
- Call ID: f35c1ea8-bfd8-4bac-8bcf-72e0e30f3bfc
+  AssignClass (7bae2a2e-a3a3-46b0-b4c5-0ba606dbef90)
+ Call ID: 7bae2a2e-a3a3-46b0-b4c5-0ba606dbef90
   Args:
     type: :Woman
-    source: Elizabeth_Margaret_Cator
-  AssignClass (d43703ce-0d25-465c-988d-4ac0e5cf8d54)
- Call ID: d43703ce-0d25-465c-988d-4ac0e5cf8d54
+    source: :Maria_de_las_Mercedes_of_Bavaria
+  AssignClass (e092ba3f-87e5-4503-b82c-eb7bc10bc1f0)
+ Call ID: e092ba3f-87e5-4503-b82c-eb7bc10bc1f0
   Args:
     type: :Person
-    source: Elizabeth_Margaret_Cator
-  AddTriple (521e054f-5424-4ade-ad16-80cb7fe4d3fb)
- Call ID: 521e054f-5424-4ade-ad16-80cb7fe4d3fb
+    source: :Irakli_Bagration_of_Mukhrani
+  AssignClass (1f4c5915-7833-44a6-904b-9270760de17c)
+ Call ID: 1f4c5915-7833-44a6-904b-9270760de17c
   Args:
-    target: Elizabeth_Margaret_Cator
-    source: Fergus_Michael_Claude_Bowes-Lyon
-    relation: :hasMother
-  AddLiteral (0e1493d4-bc64-40a3-8e6d-a90acd04be3b)
- Call ID: 0e1493d4-bc64-40a3-8e6d-a90acd04be3b
+    source: :Irakli_Bagration_of_Mukhrani
+    type: :Man
+  AssignClass (96ce086f-b9b1-4783-9163-1b4a22446e9f)
+ Call ID: 96ce086f-b9b1-4783-9163-1b4a22446e9f
   Args:
-    literal_value: 1899
-    source: Elizabeth_Margaret_Cator
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (2c8fca59-5018-438d-a5df-fca4d98c8bf7)
- Call ID: 2c8fca59-5018-438d-a5df-fca4d98c8bf7
+    type: :Person
+    source: :Ferdinand_of_Bavaria
+  AssignClass (a6fe7b22-98c9-484e-bd9a-ebaae41a95b5)
+ Call ID: a6fe7b22-98c9-484e-bd9a-ebaae41a95b5
   Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1959
-    source: Elizabeth_Margaret_Cator
-  AssignClass (15701647-cc4c-48b3-ba80-90026811c0c2)
- Call ID: 15701647-cc4c-48b3-ba80-90026811c0c2
+    source: :Ferdinand_of_Bavaria
+    type: :Man
+  AssignClass (1c15f94d-2d0a-4766-88d5-5ead131d9274)
+ Call ID: 1c15f94d-2d0a-4766-88d5-5ead131d9274
+  Args:
+    source: :Maria_Teresa_of_Spain
+    type: :Person
+  AssignClass (6c4f08ce-f03d-44d1-b239-402b21b91c4f)
+ Call ID: 6c4f08ce-f03d-44d1-b239-402b21b91c4f
   Args:
     type: :Woman
-    source: Mary_Pamela_McCorquodale
-  AssignClass (45fa2ed4-5982-4d82-adee-ae2da2b88246)
- Call ID: 45fa2ed4-5982-4d82-adee-ae2da2b88246
+    source: :Maria_Teresa_of_Spain
+  AssignClass (e855f85d-66d4-41a6-b106-bf9b6ccfd824)
+ Call ID: e855f85d-66d4-41a6-b106-bf9b6ccfd824
   Args:
     type: :Person
-    source: Mary_Pamela_McCorquodale
-  AddLiteral (ba24533e-bba6-4587-90ee-b384ea52ef30)
- Call ID: ba24533e-bba6-4587-90ee-b384ea52ef30
+    source: :Alfonso_XII
+  AssignClass (adaa02bb-d33a-491d-9875-39ffd5c89ead)
+ Call ID: adaa02bb-d33a-491d-9875-39ffd5c89ead
+  Args:
+    type: :Man
+    source: :Alfonso_XII
+  AssignClass (9ffb5384-06f3-4c5b-b168-c6f6d7331e9b)
+ Call ID: 9ffb5384-06f3-4c5b-b168-c6f6d7331e9b
+  Args:
+    type: :Person
+    source: :Alfonso_XIII
+  AssignClass (f28abf1a-4f79-4c27-84bf-268d1148c520)
+ Call ID: f28abf1a-4f79-4c27-84bf-268d1148c520
+  Args:
+    source: :Alfonso_XIII
+    type: :Man
+  AssignClass (52f4c8c2-fb4d-460c-ae72-9aae7a66f3ad)
+ Call ID: 52f4c8c2-fb4d-460c-ae72-9aae7a66f3ad
+  Args:
+    type: :Person
+    source: :Isabella_II_of_Spain
+  AssignClass (f88f2e16-10b7-43dc-8ae5-cd5d4c36bb2f)
+ Call ID: f88f2e16-10b7-43dc-8ae5-cd5d4c36bb2f
+  Args:
+    source: :Isabella_II_of_Spain
+    type: :Woman
+  AssignClass (0d348838-b0fa-4332-99e4-465242bb4c56)
+ Call ID: 0d348838-b0fa-4332-99e4-465242bb4c56
+  Args:
+    type: :Person
+    source: :Maria_de_la_Paz_of_Spain
+  AssignClass (606d2b39-79ba-42df-9efd-0bba9a4d86ff)
+ Call ID: 606d2b39-79ba-42df-9efd-0bba9a4d86ff
+  Args:
+    type: :Woman
+    source: :Maria_de_la_Paz_of_Spain
+  AssignClass (f9db86d5-bffa-40ad-b676-cd3dcd4dc5ac)
+ Call ID: f9db86d5-bffa-40ad-b676-cd3dcd4dc5ac
+  Args:
+    source: :Adalbert_of_Bavaria
+    type: :Person
+  AssignClass (2761b090-c2b8-43f7-87a7-430c1773bfd7)
+ Call ID: 2761b090-c2b8-43f7-87a7-430c1773bfd7
+  Args:
+    type: :Man
+    source: :Adalbert_of_Bavaria
+  AssignClass (1e4d999b-952b-43da-9242-c982bf7a42e3)
+ Call ID: 1e4d999b-952b-43da-9242-c982bf7a42e3
+  Args:
+    type: :Person
+    source: :Carlos_of_Bourbon-Two_Sicilies
+  AssignClass (2306af7c-117e-440b-a3f6-886b33d78136)
+ Call ID: 2306af7c-117e-440b-a3f6-886b33d78136
+  Args:
+    type: :Man
+    source: :Carlos_of_Bourbon-Two_Sicilies
+  AssignClass (64337568-6eab-44b7-86ec-599d8c0fcf5f)
+ Call ID: 64337568-6eab-44b7-86ec-599d8c0fcf5f
+  Args:
+    source: :Luis_Alfonso
+    type: :Person
+  AssignClass (4809bc4c-7086-4144-9cad-8e283dcf65c3)
+ Call ID: 4809bc4c-7086-4144-9cad-8e283dcf65c3
+  Args:
+    type: :Man
+    source: :Luis_Alfonso
+  AssignClass (d40669d2-e9f8-4550-8556-d51c48608b7c)
+ Call ID: d40669d2-e9f8-4550-8556-d51c48608b7c
+  Args:
+    source: :Jose_Eugenio
+    type: :Person
+  AssignClass (f100b6e6-3216-4a34-af24-48f27fa7e1ec)
+ Call ID: f100b6e6-3216-4a34-af24-48f27fa7e1ec
+  Args:
+    source: :Jose_Eugenio
+    type: :Man
+  AssignClass (d0a66a5e-c631-4cb7-93dc-bbbceb9d160a)
+ Call ID: d0a66a5e-c631-4cb7-93dc-bbbceb9d160a
+  Args:
+    type: :Person
+    source: :Maria_del_Pilar
+  AssignClass (9cbd34a2-f25f-4369-bf5a-f7ddf17ef79e)
+ Call ID: 9cbd34a2-f25f-4369-bf5a-f7ddf17ef79e
+  Args:
+    source: :Maria_del_Pilar
+    type: :Woman
+  AssignClass (43a2a8e5-2ec2-40d0-8237-48dcbc28f11c)
+ Call ID: 43a2a8e5-2ec2-40d0-8237-48dcbc28f11c
+  Args:
+    type: :Person
+    source: :Leonida_Bagration
+  AssignClass (2b4256af-5249-4b68-96f3-9d1225a92290)
+ Call ID: 2b4256af-5249-4b68-96f3-9d1225a92290
+  Args:
+    source: :Leonida_Bagration
+    type: :Woman
+  AssignClass (54bedf66-3992-4133-8a85-cb7a12781bc9)
+ Call ID: 54bedf66-3992-4133-8a85-cb7a12781bc9
+  Args:
+    type: :Person
+    source: :Vladimir
+  AssignClass (33ce6ba0-95f4-402c-a4f4-1921c8e0aaa1)
+ Call ID: 33ce6ba0-95f4-402c-a4f4-1921c8e0aaa1
+  Args:
+    type: :Man
+    source: :Vladimir
+  AddLiteral (ce88743a-1152-4caf-af8e-cf0f93e38e25)
+ Call ID: ce88743a-1152-4caf-af8e-cf0f93e38e25
   Args:
     literal_type: xsd:integer
-    source: Mary_Pamela_McCorquodale
-    literal_value: 1932
+    source: :Maria_de_las_Mercedes_of_Bavaria
+    literal_value: 1911
     relation: :hasBirthYear
-  AddLiteral (5268e2b3-12f6-469e-a425-237b6a47061a)
- Call ID: 5268e2b3-12f6-469e-a425-237b6a47061a
+  AddLiteral (b792fb93-f7dc-45d6-badb-f4fe8e8a5495)
+ Call ID: b792fb93-f7dc-45d6-badb-f4fe8e8a5495
+  Args:
+    source: :Maria_de_las_Mercedes_of_Bavaria
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1953
+  AddLiteral (0c662c9d-32d5-4b10-b9a4-ae411f593cc7)
+ Call ID: 0c662c9d-32d5-4b10-b9a4-ae411f593cc7
   Args:
     literal_type: xsd:integer
-    source: Mary_Pamela_McCorquodale
-    literal_value: 2025
-    relation: :hasDeathYear
-  AddLiteral (2f29a562-4aa1-44c6-ab7e-7fa121507e2c)
- Call ID: 2f29a562-4aa1-44c6-ab7e-7fa121507e2c
-  Args:
+    source: :Maria_de_las_Mercedes_of_Bavaria
+    literal_value: 1946
     relation: :hasMarriageYear
+  AddLiteral (06cb037f-89e0-440a-8acd-66e965934fa9)
+ Call ID: 06cb037f-89e0-440a-8acd-66e965934fa9
+  Args:
+    source: :Luis_Alfonso
     literal_type: xsd:integer
-    source: Fergus_Michael_Claude_Bowes-Lyon
-    literal_value: 1956
-  AddTriple (a7e701ac-3bfb-4479-b878-c8b0ec74c22e)
- Call ID: a7e701ac-3bfb-4479-b878-c8b0ec74c22e
+    relation: :hasBirthYear
+    literal_value: 1906
+  AddLiteral (1e4535a3-0094-4663-a582-825e40c8dda6)
+ Call ID: 1e4535a3-0094-4663-a582-825e40c8dda6
   Args:
-    source: Fergus_Michael_Claude_Bowes-Lyon
-    target: Mary_Pamela_McCorquodale
-    relation: :hasRelation
-  AssignClass (5b051384-65d7-44d1-bdaa-8fc2f8ed0fa4)
- Call ID: 5b051384-65d7-44d1-bdaa-8fc2f8ed0fa4
+    source: :Luis_Alfonso
+    literal_type: xsd:integer
+    literal_value: 1983
+    relation: :hasDeathYear
+  AddLiteral (70b6ff0f-aacb-49f1-b0cc-bb7db8663ca9)
+ Call ID: 70b6ff0f-aacb-49f1-b0cc-bb7db8663ca9
   Args:
-    type: :Man
-    source: Michael_son_of_Fergus
-  AssignClass (08cd94d7-2dab-4c9d-9b17-450dd780ea8f)
- Call ID: 08cd94d7-2dab-4c9d-9b17-450dd780ea8f
+    source: :Jose_Eugenio
+    literal_type: xsd:integer
+    literal_value: 1909
+    relation: :hasBirthYear
+  AddLiteral (af131bd5-d6b0-45f2-98f9-54923337972d)
+ Call ID: af131bd5-d6b0-45f2-98f9-54923337972d
   Args:
-    type: :Person
-    source: Michael_son_of_Fergus
-  AddTriple (537011c1-41f5-44d7-9cc6-4abf18c8efde)
- Call ID: 537011c1-41f5-44d7-9cc6-4abf18c8efde
+    literal_value: 1966
+    relation: :hasDeathYear
+    source: :Jose_Eugenio
+    literal_type: xsd:integer
+  AddLiteral (13d6ddf0-2741-4df8-81e8-57ba379c547f)
+ Call ID: 13d6ddf0-2741-4df8-81e8-57ba379c547f
   Args:
-    relation: :isSonOf
-    source: Michael_son_of_Fergus
-    target: Fergus_Michael_Claude_Bowes-Lyon
-  Finish (451a2f05-ada0-4f1b-9b3f-106797b89566)
- Call ID: 451a2f05-ada0-4f1b-9b3f-106797b89566
+    literal_value: 1912
+    relation: :hasBirthYear
+    source: :Maria_del_Pilar
+    literal_type: xsd:integer
+  AddLiteral (bab51734-0d60-4c47-ba40-3cece42879fa)
+ Call ID: bab51734-0d60-4c47-ba40-3cece42879fa
+  Args:
+    source: :Maria_del_Pilar
+    literal_type: xsd:integer
+    literal_value: 1918
+    relation: :hasDeathYear
+  AddTriple (dd57f5fa-6b92-47d4-9b6a-1b4dad9bfa5e)
+ Call ID: dd57f5fa-6b92-47d4-9b6a-1b4dad9bfa5e
+  Args:
+    target: :Ferdinand_of_Bavaria
+    relation: :hasFather
+    source: :Maria_de_las_Mercedes_of_Bavaria
+  AddTriple (1efd92fb-be6d-43a4-a066-ff554aeb8fe6)
+ Call ID: 1efd92fb-be6d-43a4-a066-ff554aeb8fe6
+  Args:
+    target: :Maria_Teresa_of_Spain
+    relation: :hasMother
+    source: :Maria_de_las_Mercedes_of_Bavaria
+  AddTriple (ecdfc130-1c8f-4ca9-8acb-252f3d5ae4e2)
+ Call ID: ecdfc130-1c8f-4ca9-8acb-252f3d5ae4e2
+  Args:
+    target: :Alfonso_XII
+    relation: :hasFather
+    source: :Maria_Teresa_of_Spain
+  AddTriple (f15ab96f-f96c-4dd4-bcae-d114ea638c8d)
+ Call ID: f15ab96f-f96c-4dd4-bcae-d114ea638c8d
+  Args:
+    relation: :hasMother
+    target: :Maria_Teresa_of_Spain
+    source: :Maria_de_las_Mercedes_of_Bavaria
+  AddTriple (a0d06926-3eb0-4c1e-9519-253682dd32b6)
+ Call ID: a0d06926-3eb0-4c1e-9519-253682dd32b6
+  Args:
+    source: :Ferdinand_of_Bavaria
+    relation: :hasMother
+    target: :Maria_de_la_Paz_of_Spain
+  AddTriple (15b623b0-4740-478d-a35e-1640fa28a2fe)
+ Call ID: 15b623b0-4740-478d-a35e-1640fa28a2fe
+  Args:
+    source: :Maria_de_las_Mercedes_of_Bavaria
+    target: :Ferdinand_of_Bavaria
+    relation: :hasFather
+  AddTriple (c3506766-05ba-4c68-9426-2b74508b4b9a)
+ Call ID: c3506766-05ba-4c68-9426-2b74508b4b9a
+  Args:
+    source: :Maria_de_las_Mercedes_of_Bavaria
+    target: :Luis_Alfonso
+    relation: :hasBrother
+  AddTriple (9287cd88-3ed9-44ea-b2f1-f7fc5b262fb9)
+ Call ID: 9287cd88-3ed9-44ea-b2f1-f7fc5b262fb9
+  Args:
+    source: :Maria_de_las_Mercedes_of_Bavaria
+    target: :Jose_Eugenio
+    relation: :hasBrother
+  AddTriple (48b983e5-1b80-4a2f-96ed-f511db6cedc6)
+ Call ID: 48b983e5-1b80-4a2f-96ed-f511db6cedc6
+  Args:
+    source: :Maria_de_las_Mercedes_of_Bavaria
+    target: :Maria_del_Pilar
+    relation: :hasSister
+  AddTriple (7f50e601-0f04-4c1a-a710-94a5b9b05619)
+ Call ID: 7f50e601-0f04-4c1a-a710-94a5b9b05619
+  Args:
+    source: :Irakli_Bagration_of_Mukhrani
+    relation: :hasSister
+    target: :Leonida_Bagration
+  AddTriple (30b678ed-2398-428b-9952-a155517ab8ee)
+ Call ID: 30b678ed-2398-428b-9952-a155517ab8ee
+  Args:
+    source: :Leonida_Bagration
+    target: :Vladimir
+    relation: :hasMarriageYear
+  Finish (ba268137-e0c7-426f-8094-697f3429afff)
+ Call ID: ba268137-e0c7-426f-8094-697f3429afff
   Args:

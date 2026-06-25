@@ -1,0 +1,121 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Audrey_Emery a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Audrey Emery"^^xsd:string ;
+    data:posIndicesFull "1089:1101"^^xsd:string,
+        "227:239"^^xsd:string ;
+    data:posIndicesPart "2067:2072"^^xsd:string ;
+    data:wdtLink wdt:Q450692 ;
+    :alsoKnownAs "Anna Audrey Emery"^^xsd:string ;
+    :hasChild data:Paul_Ilyinsky ;
+    :hasRelation data:Audrey_Emery,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia,
+        data:Paul_Ilyinsky ;
+    :hasSex data:female ;
+    :hasSister data:Audrey_Emery ;
+    :hasSon data:Paul_Ilyinsky ;
+    :isAncestorOf data:Paul_Ilyinsky ;
+    :isAuntOf data:Paul_Ilyinsky ;
+    :isBloodrelationOf data:Audrey_Emery ;
+    :isMotherOf data:Paul_Ilyinsky ;
+    :isParentOf data:Paul_Ilyinsky ;
+    :isSiblingOf data:Audrey_Emery ;
+    :isSisterOf data:Audrey_Emery .
+
+data:Grand_Duke_Dmitri_Pavlovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Grand Duke Dmitri Pavlovich of Russia"^^xsd:string ;
+    data:posIndicesFull "145:182"^^xsd:string ;
+    data:posIndicesPart "1013:1019"^^xsd:string,
+        "1111:1116"^^xsd:string,
+        "1117:1121"^^xsd:string,
+        "1145:1151"^^xsd:string,
+        "1153:1159"^^xsd:string,
+        "1220:1225"^^xsd:string,
+        "1226:1230"^^xsd:string,
+        "1231:1237"^^xsd:string,
+        "1460:1466"^^xsd:string,
+        "1488:1494"^^xsd:string,
+        "1615:1621"^^xsd:string,
+        "1622:1631"^^xsd:string,
+        "289:295"^^xsd:string,
+        "324:329"^^xsd:string,
+        "330:334"^^xsd:string,
+        "551:555"^^xsd:string,
+        "741:746"^^xsd:string,
+        "747:751"^^xsd:string,
+        "752:758"^^xsd:string ;
+    data:wdtLink wdt:Q372954 ;
+    :alsoKnownAs "Dimitrii Pavlovich Romanov, Grand Duke of Russia"^^xsd:string ;
+    :hasBrother data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :hasChild data:Paul_Ilyinsky ;
+    :hasRelation data:Audrey_Emery,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia,
+        data:Paul_Ilyinsky ;
+    :hasSex data:male ;
+    :hasSon data:Paul_Ilyinsky ;
+    :isAncestorOf data:Paul_Ilyinsky ;
+    :isBloodrelationOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isFatherOf data:Paul_Ilyinsky ;
+    :isParentOf data:Paul_Ilyinsky ;
+    :isSiblingOf data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isUncleOf data:Paul_Ilyinsky .
+
+data:Paul_Ilyinsky a :Man,
+        :Person ;
+    rdfs:label "Paul Ilyinsky"^^xsd:string ;
+    data:posIndicesFull "0:36"^^xsd:string ;
+    data:posIndicesPart "1406:1414"^^xsd:string,
+        "1552:1560"^^xsd:string,
+        "1782:1790"^^xsd:string,
+        "1950:1958"^^xsd:string,
+        "2128:2136"^^xsd:string,
+        "2215:2223"^^xsd:string,
+        "2384:2392"^^xsd:string,
+        "386:394"^^xsd:string,
+        "624:628"^^xsd:string,
+        "640:648"^^xsd:string ;
+    data:wdtLink wdt:Q487309 ;
+    :alsoKnownAs "Paul Dimitrievitch Romanovsky-Ilynsky"^^xsd:string,
+        "Paul Dmitrievich Romanovsky-Ilyinsky"^^xsd:string,
+        "Pavel Dimitriievich Romanov-Ilyinsky, Prince Romanov-Ilyinsky"^^xsd:string ;
+    :hasAncestor data:Audrey_Emery,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :hasBrother data:Paul_Ilyinsky ;
+    :hasFather data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :hasMother data:Audrey_Emery ;
+    :hasParent data:Audrey_Emery,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :hasRelation data:Audrey_Emery,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia,
+        data:Paul_Ilyinsky ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Paul_Ilyinsky ;
+    :isBrotherOf data:Paul_Ilyinsky ;
+    :isChildOf data:Audrey_Emery,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia ;
+    :isSiblingOf data:Paul_Ilyinsky ;
+    :isSonOf data:Audrey_Emery,
+        data:Grand_Duke_Dmitri_Pavlovich_of_Russia .
+

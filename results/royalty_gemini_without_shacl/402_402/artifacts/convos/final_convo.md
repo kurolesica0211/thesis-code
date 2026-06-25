@@ -69,38 +69,228 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lord Ivar Alexander Michael Mountbatten, DL (born 9 March 1963) is a British aristocrat, farmer, geologist, businessman, and reality television personality.
-Early life and family
+Michael I (Romanian: Mihai I .mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}Romanian:  i; 25 October 1921 – 5 December 2017) was the last king of Romania, reigning from 20 July 1927 to 8 June 1930 and again from 6 September 1940 until his forced abdication on 30 December 1947.
+Shortly after Michael's birth, his father, Crown Prince Carol, had become involved in a controversial relationship with Magda Lupescu.
+In 1925, Carol was pressured to renounce his rights (in favour of his son Michael) to the throne and moved to Paris in exile with Lupescu.
+In July 1927, following the death of his grandfather Ferdinand I, Michael ascended the throne at age five, the youngest crowned head in Europe.
+As Michael was still a minor, a regency council was instituted, composed of his uncle Prince Nicolas, Patriarch Miron Cristea and Chief Justice Gheorghe Buzdugan.
+The council proved to be ineffective and, in 1930, Carol returned to Romania and replaced his son as monarch, reigning as Carol II.
+As a result, Michael returned to being heir apparent to the throne and was given the additional title of Grand Voievod of Alba-Iulia.
+Carol II was forced to abdicate in 1940, and Michael once again became king.
+Under the government led by the military dictator Ion Antonescu, Romania became aligned with Nazi Germany.
+In 1944, Michael participated in a coup against Antonescu, appointed Constantin Sănătescu as his replacement, and subsequently declared an alliance with the Allies.
+In March 1945, political pressures forced Michael to appoint a pro-Soviet government headed by Petru Groza.
+From August 1945 to January 1946, Michael went on a "royal strike" and unsuccessfully tried to oppose Groza's communist-controlled government by refusing to sign and endorse its decrees.
+In November 1947, Michael attended the wedding of his cousins, the future Queen Elizabeth II of the United Kingdom and Prince Philip of Greece and Denmark in London.
+Shortly thereafter, on the morning of 30 December 1947, Groza met with Michael and compelled him to abdicate, while the monarchy was abolished.
+Michael was forced into exile, his properties confiscated, and his citizenship stripped.
+In 1948, he married Princess Anne of Bourbon-Parma, with whom he had five daughters.
+Nicolae Ceaușescu's communist dictatorship was overthrown in December 1989, and the following year Michael attempted to return to Romania, only to be arrested and forced to leave upon arrival.
+In 1992, Michael was allowed to visit Romania for Easter, where he was greeted by huge crowds; a speech he gave from his hotel window drew an estimated one million people to Bucharest.
+Alarmed by Michael's popularity, the post-communist government of Ion Iliescu refused to allow him any further visits.
+In 1997, after Iliescu's defeat by Emil Constantinescu in the presidential election of the previous year, Michael's citizenship was restored and he was allowed to visit Romania again.
+Early life
 
-Ivar
-Alexander Michael Mountbatten was born in London, to David Mountbatten, 3rd Marquess of Milford Haven, and the former Janet Mercedes Bryce.
-His elder brother is George Mountbatten, 4th Marquess of Milford Haven.
-His paternal grandfather was Prince George of Battenberg, through whom he is a morganatic descendant of the House of Hesse-Darmstadt.
-Mountbatten grew up at Moyns Park in Essex.
-In a June 2022 interview with Tatler Mountbatten commented on the 1930s Gloria Vanderbilt child custody trial, where a maid made an allegation of a lesbian affair between the child's mother Gloria Morgan Vanderbilt and the Marchioness of Milford Haven, Mountbatten's grandmother.
-Mountbatten was educated at Gordonstoun School, the same school attended by Prince Philip and Charles III, and he graduated from Middlebury College in Vermont with a BA degree.
-Career
+Michael was born in 1921 at Foișor Castle on the Royal Complex of Peleș in Sinaia, Romania, the son of Crown Prince Carol of Romania and Crown Princess Elena.
+He was born as the paternal grandson of the then reigning King Ferdinand I of Romania and maternal grandson of the then reigning King Constantine I of Greece.
+Michael's parents had married on 10 March 1921, and he was thus born just seven months after the wedding.
+When Carol eloped with his mistress Elena Magda Lupescu and renounced his rights to the throne in December 1925, Michael was declared heir apparent.
+Michael succeeded to the throne of Romania upon Ferdinand's death in July 1927, before his sixth birthday.
+Later, Michael attended a special school established in 1932 by his father.
+Reign
 
-Mountbatten began his career as a geologist and spent significant time working in South America during his early career.
-Starting in 1995, Mountbatten began his involvement in business pursuits, including being the director of the UK subsidiary of DMX Music and being involved with Coldharbour Mill Working Wool Museum.
-Mountbatten was later involved with SCL Group, the parent company of the now-defunct data analytics firm Cambridge Analytica.
-Mountbatten also serves as a Deputy Lieutenant of Devon.
-In 2019, Mountbatten began a career in reality television by starring in the sixth series of Treasure Island with Bear Grylls.
-In October 2024, Mountbatten was announced to be part of the third season of the American reality competition series The Traitors, which premiered on 9 January 2025.
-Personal life
+1930s and the Antonescu era
 
-Mountbatten married Penelope Anne Vere Thompson (born Salisbury, Wiltshire, 17 March 1966), only daughter of Colin Graham Thompson of Old Manor House, Sutton Veny, Wiltshire, and Rosemary Vere Edwardes.
-The ceremony took place on 23 April 1994 at the Church of Saint Peter and Saint Paul in Clare, Suffolk.
-In September 2016, Mountbatten revealed that he was in a relationship with James Coyle, an airline cabin services director whom he met while at a ski resort in Verbier.
-Mountbatten's former wife walked him down the aisle and 'gave him away' at the suggestion of their daughters.
-Mountbatten is a godparent of Lady Louise Windsor (born 2003), the daughter of Prince Edward and Sophie.
-Mountbatten inherited Moyns Park in 1992 along with his brother, George Mountbatten, 4th Marquess of Milford Haven, but in 1997 moved to Bridwell Park in Uffculme, Devon.
+A regency, which included his uncle, Prince Nicolae, Patriarch Miron Cristea, and the country's Chief Justice (Gheorghe Buzdugan, and from October 1929, Constantin Sărăţeanu) functioned on behalf of the five-year-old Michael, when he succeeded Ferdinand in 1927.
+In 1930, Carol II returned to the country at the invitation of politicians dissatisfied with the regency in the context of the Great Depression, and was proclaimed king by the Parliament.
+Michael was demoted to crown prince with the title "Grand Voivode of Alba Iulia".
+In November 1939, Michael joined the Romanian Senate, as the 1938 Constitution guaranteed him a seat there upon reaching the age of eighteen.
+Just days after the Second Vienna Award, the pro-Nazi anti-Soviet regime of Prime Minister Marshal Ion Antonescu staged a coup d'état against Carol II, whom he claimed to be "anti-German".
+Antonescu suspended the Constitution, dissolved the Parliament, and re-installed the 18-year-old Michael as king, by popular acclaim in September 1940.
+(Although the Constitution was restored in 1944, and the Romanian Parliament in 1946, Michael did not subsequently take a formal oath nor have his reign approved retroactively by Parliament.)
+Michael was crowned with the Steel Crown and anointed King of Romania by the Orthodox Patriarch of Romania, Nicodim Munteanu, in the Patriarchal Cathedral of Bucharest, on the day of his accession, 6 September 1940.
+Although King Michael was formally the Supreme Head of the Army, named Conducător ("Leader of the people"), and entitled to appoint the Prime Minister with full powers, in reality he was forced to remain a figurehead for most of the war, until August 1944.
+Michael had lunch with Adolf Hitler twice—once with his father in Bavaria in 1937, and with his mother in Berlin in 1941.
+Turning against Nazi Germany
+
+In 1944, World War II was going badly for the Axis powers, but Antonescu was still in control of Romania.
+By August 1944, the Soviet conquest of Romania had become inevitable, and was expected in a few months.
+On 23 August 1944, Michael joined the pro-Allies politicians, a number of army officers, and armed Communist-led civilians in staging a coup against Antonescu.
+Michael ordered his arrest by the Royal Palace Guard.
+On the same night, the new Prime Minister, Lt. General Constantin Sănătescu—appointed by King Michael—gave custody of Antonescu to the communists (in spite of alleged instructions to the contrary by the King), and the latter delivered him to the Soviets on 1 September.
+In a radio broadcast to the Romanian nation and army, Michael issued a ceasefire just as the Red Army was penetrating the Moldavian front, proclaimed Romania's loyalty to the Allies, announced the acceptance of the armistice offered by the United Kingdom, the United States, and the Soviet Union, and declared war on Germany.
+Although the country's alliance with Nazi Germany was ended, the coup sped the Red Army's advance into Romania.
+Under the terms of the armistice, Romania recognized its defeat by the USSR and was placed under occupation of the Allied forces, with the Soviets, as their representative, in control of media, communication, post, and civil administration behind the front.
+At the end of the war, King Michael was awarded the highest degree (Chief Commander) of the American Legion of Merit by U.S. President Harry S. Truman.
+He was also decorated with the Soviet Order of Victory by Joseph Stalin "for the courageous act of the radical change in Romania's politics towards a break-up from Hitler's Germany and an alliance with the United Nations, at the moment when there was no clear sign yet of Germany's defeat", according to the official description of the decoration.
+With the death of Michał Rola-Żymierski in 1989, Michael became the sole surviving recipient of the Order of Victory.
+Reign under Communism
+
+In March 1945, political pressures forced King Michael to appoint a pro-Soviet government headed by Petru Groza.
+For the next two-plus years, Michael functioned again as little more than a figurehead.
+Between August 1945 and January 1946, during what was later known as the "royal strike", King Michael tried unsuccessfully to oppose the Groza government by refusing to sign its decrees.
+In response to Soviet, British, and American pressures, King Michael eventually gave up his opposition to the communist government and stopped demanding its resignation.
+He did not pardon Mareșal Antonescu, the former Prime Minister, who was sentenced to death "for betrayal of the Romanian people for the benefit of Nazi Germany, for the economic and political subjugation of Romania to Germany, for cooperation with the Iron Guard, for murdering his political opponents, for the mass murder of civilians and crimes against peace".
+Nor did King Michael manage to save such leaders of the opposition as Iuliu Maniu and the Bratianus, victims of Communist political trials, as the Constitution prevented him from doing so without the counter-signature of Communist Justice Minister Lucrețiu Pătrășcanu (who himself was later eliminated by Gheorghiu-Dej's opposing Communist faction).
+The memoirs of King Michael's aunt Princess Ileana quoted Emil Bodnăraș—her alleged lover, Romania's Communist minister of defence, and a Soviet spy—as saying: "Well, if the King decides not to sign the death warrant, I promise that we will uphold his point of view."
+Surely you do not wish this additional handicap at this moment!"
+
+
+Forced abdication
+
+In November 1947, King Michael travelled to London for the wedding of his cousins, Princess Elizabeth (later Queen Elizabeth II) and Prince Philip of Greece and Denmark, an occasion during which he met Princess Anne of Bourbon-Parma (his second cousin once removed), who was to become his wife.
+According to his own account, King Michael rejected any offers of asylum and decided to return to Romania, contrary to the confidential, strong advice of the British Ambassador to Romania.
+Early on the morning of 30 December 1947, Michael was preparing for a New Year's party at Peleș Castle in Sinaia, when Groza summoned him back to Bucharest.
+Michael returned to Elisabeta Palace in Bucharest, to find it surrounded by troops from the Tudor Vladimirescu Division, an army unit completely loyal to the Communists.
+Unable to call in loyal troops, due to his telephone lines allegedly being cut, Michael signed the document.
+On 3 January 1948, Michael was forced to leave the country, followed over a week later by Princesses Elisabeth and Ileana, who collaborated so closely with the Soviets that they became known as the King's "Red Aunts".
+Michael's own account of the abdication varied over time, and was gradually embellished, especially after 1990.
+Thus, in accounts published in 1950 and 1977, Michael only mentioned seeing armed groups with machine-guns on their shoulders around the palace, while in much later accounts these were described as "heavy artillery, ready to fire at any moment".
+The story of the supposed blackmail also evolved: in the 1950 account, Groza tried to negotiate some form of material compensations for the abdication, noting he could not guarantee for Michael's life in case he refused, and his refusal could lead to thousand of arrests and possibly a civil war; in a hearing before the United States House of Representatives in 1954, Michael mentioned Groza's generic threats regarding his personal security, bloodshed and ruin of the country, as well as "vague hints" of persecution, with Groza suggesting the government had a large dossier on Michael; the possible arrest of thousands and a generic threat of bloodshed is also mentioned in the 1977 account; however, beginning with 1990, Michael claimed that Groza threatened to shoot 1,000 students that had already been arrested for publicly showing their attachment to the throne.
+Thus, while according to a Time article published in 1948, Groza threatened to arrest thousands of people and order a bloodbath unless Michael abdicated, in an interview with The New York Times from 2007, Michael recounted: "It was blackmail.
+Another new element in Michael's account after 1990 was that Groza had threatened him at gunpoint; in earlier accounts Michael mentioned that Groza had shown him the pistol he was carrying only after Michael signed the abdication.
+According to the autobiography of the former head of the Soviet intelligence agency NKVD, Major General Pavel Sudoplatov, the Deputy Soviet Foreign Commissar Andrey Vyshinsky personally conducted negotiations with King Michael for his abdication, guaranteeing part of a pension to be paid to Michael in Mexico.
+According to a few articles in Jurnalul Național, Michael's abdication was negotiated with the Communist government, which allowed him to leave the country with the goods he requested, accompanied by some of the royal retinue.
+According to Albanian Communist leader Enver Hoxha's account of his conversations with the Romanian Communist leaders on the monarch's abdication, it was Gheorghiu-Dej, not Groza, who forced Michael's abdication at gunpoint.
+In March 1948, Michael denounced his abdication as illegal, and contended he was still the rightful King of Romania.
+According to Time magazine, he would have done so sooner, but for much of early 1948, he had been negotiating with the Communists over properties he had left in Romania.
+There are reports that Romanian Communist authorities allowed King Michael to depart with 42 valuable Crown-owned paintings in November 1947, so that he would leave Romania faster.
+One of the paintings belonging to the Romanian Crown, which was supposedly taken out of the country by King Michael in November 1947, returned to Romania in 2004 as a donation made by John Kreuger, the former husband of King Michael's daughter Irina.
+In 2005, Romanian Prime Minister Călin Popescu-Tăriceanu denied these accusations about King Michael, stating that the Romanian government has no proof of any such action by King Michael and that, prior to 1949, the government had no official records of any artwork taken over from the former royal residences.
+According to Ivor Porter's authorized biography, Michael of Romania: The King and The Country (2005), which quotes Queen Mother Helen's daily diary, the Romanian royal family took out paintings belonging to the Romanian Royal Crown, on their November 1947 trip to London to the wedding of the future Queen Elizabeth II; two of these paintings, signed by El Greco, were sold in 1976.
+According to declassified Foreign Office documents that were the subject of news reports in 2005, when he left Romania, the exiled King Michael's only assets amounted to 500,000 Swiss francs.
+Recently declassified Soviet transcripts of talks between Joseph Stalin and the Romanian Prime Minister Petru Groza show that shortly before his abdication, King Michael received from the communist government assets amounting to 500,000 Swiss francs.
+King Michael, however, repeatedly denied that the Communist government had allowed him to take into exile any financial assets or valuable goods besides four personal automobiles loaded on two train cars.
+Marriage
+
+Engagement
+
+In November 1947, Michael I met a distant relative, Princess Anne of Bourbon-Parma, who was visiting London for the wedding of Princess Elizabeth and Philip Mountbatten, Duke of Edinburgh.
+A year before this, Queen Helen, the Queen Mother, had invited Princess Margaret of Bourbon-Parma and her children, who included Anne, to make a visit to Bucharest, but the plan did not come off.
+Meanwhile, King Michael I had glimpsed Princess Anne in a newsreel and requested a photograph from the film footage.
+She did not want to accompany her parents to London for the royal wedding as she wished to avoid meeting Michael I in official surroundings.
+Upon arrival in London, she stopped by Claridge's to see her parents, and found herself being introduced unexpectedly to King Michael I. Abashed to the point of confusion, she clicked her heels instead of curtseying, and fled in embarrassment.
+Charmed, the king saw her again the night of the wedding at the Luxembourg embassy soirée, confided in her some of his concerns about the Communist takeover of Romania and fears for his mother's safety, and nicknamed her Nan.
+A few days later, she accepted an invitation to accompany Michael and his mother when he piloted a Beechcraft aeroplane to take his aunt Princess Irene, Duchess of Aosta, back home to Lausanne.
+Sixteen days after meeting, Michael proposed to Anne while the couple were out on a drive in Lausanne.
+Although Michael gave her an engagement ring a few days later, he felt obliged to refrain from a public announcement until he informed his government, despite the fact that the press besieged them in anticipation.
+Michael I returned to Romania, where he was told by the prime minister that a wedding announcement was not "opportune".
+Yet within days it was used as the government's public explanation for Michael's sudden "abdication", when in fact the king was deposed by the Communists on 30 December.
+Princess Anne was unable to get further news of King Michael
+Wedding
+
+As a Bourbon, Anne was bound by the canon law of the Roman Catholic Church, which required that she receive a dispensation to marry a non-Catholic Christian (King Michael I was Orthodox).
+Michael refused to make this promise since it would have violated Romania's monarchical constitution, and would be likely to have a detrimental impact upon any possible restoration.
+The Holy See (which handled the matter directly since King Michael I was a member of a reigning dynasty) refused to grant the dispensation unless Michael made the required promise.
+Helen, Queen Mother of Romania and her sister Princess Irene, Duchess of Aosta (an Orthodox married to a Catholic Prince) met with the fiancée's parents in Paris, where the two families resolved to take their case to the Vatican in person.
+In early March, the couple's mothers met with Pope Pius XII who, despite the entreaties of the Queen Mother and the fact that Anne's mother, Princess Margrethe pounded her fist on the table in anger, refused permission for Anne to marry King Michael I.
+
+
+It has been surmised that the Pope's refusal was, in part, motivated by the fact that when Princess Giovanna of Savoy married Anne's cousin, King Boris III of Bulgaria, in 1930, the couple had undertaken to raise their future children as Roman Catholics, but had baptized them in the Orthodox faith in deference to Bulgaria's state religion.
+However, King Michael I declined to make a promise he could not keep politically, while Anne's mother was herself the daughter of a mixed marriage between a Catholic (Princess Marie d'Orléans) and a Protestant (Prince Valdemar of Denmark), who had abided by their pre-ne temere compromise to raise their sons as Protestant and their daughter, Margrethe, as Catholic.
+Anne's paternal uncle, Prince Xavier of Bourbon-Parma, issued a statement objecting to any marriage conducted against the will of the Pope and the bride's family.
+It was he, not the Pontiff, who forbade Anne's parents to attend the wedding.
+King Michael I's spokesman declared on 9 June that the parents had been asked and had given their consent, and that the bride's family would be represented at the nuptials by her maternal uncle, the Protestant Prince Erik of Denmark, who was to give the bride away.
+The wedding ceremony was held on 10 June 1948 in Athens, Greece, in the throne room of the Royal Palace; the ceremony was performed by Archbishop Damaskinos, and King Paul I of Greece served as koumbaros.
+Guests at the wedding included: Michael's mother The Queen Mother of Romania, aunts Queen Frederica, The Dowager Duchess of Aosta, Lady Katherine Brandram; cousins Prince Amedeo, 5th Duke of Aosta, Princess Sophia of Greece and Denmark, Crown Prince Constantine of Greece and Princess Irene of Greece and Denmark, the three youngest ones serving as bridesmaids and pageboy; Anne's maternal uncle Prince Erik of Denmark; Grand Duchess Elena Vladimirovna of Russia, Princess Olga of Greece and Denmark, Princess Elizabeth of Yugoslavia, Prince George Wilhelm of Hanover and many other dignitaries.
+King Michael I's father, Carol, and his sisters, Maria, Queen Mother of Yugoslavia, Princess Elisabeth of Romania (ex-Queen Consort of Greece) and Princess Ileana of Romania were notified, but not invited.
+Family
+
+Michael and Anne had five daughters:
+
+
+Life in exile
+
+Michael would never see his father again, after Carol II's 1940 abdication.
+Michael could see no point in meeting his father who had humiliated his mother so many times via his open affairs and did not attend his father's funeral in 1953.
+In January 1948, Michael began using one of his family's ancestral titles, "Prince of Hohenzollern", instead of using the title of "King of Romania".
+After denouncing his abdication as forced and illegal in March 1948, Michael resumed use of the kingly title.
+Michael and Princess Anne lived near Florence, Italy, until 1948, near Lausanne, Switzerland, until 1950, and then in Hertfordshire, England, until 1956.
+The Communist Romanian authorities stripped Michael of his Romanian citizenship in 1948.
+During exile, Michael had a variety of occupations including farming, stockbroker, entrepreneur, and pilot.
+Together with his wife, he took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
+Return and rehabilitation
+
+On 25 December 1990—a year after the revolution which overthrew the dictatorship of Nicolae Ceaușescu—Michael, accompanied by several members of the royal family, landed at Otopeni Airport and entered Romania for the first time in 43 years.
+Using a Danish diplomatic passport, Michael was able to obtain a 24-hour visa.
+In 1992, the Romanian government allowed Michael to return to Romania for Easter celebrations, where he drew large crowds.
+Michael refused the offer of the president of the National Liberal Party, Radu Câmpeanu, to run for elections as president of Romania.
+Michael's popularity alarmed the government of President Ion Iliescu, and he was forbidden to re-visit Romania, being denied entry twice in 1994 and 1995.
+In 1997, after Iliescu's defeat by Emil Constantinescu, the Romanian government restored Michael's citizenship and again allowed him to visit the country.
+He then lived partly in Switzerland at Aubonne and partly in Romania, either at Săvârșin Castle in Arad County or in an official residence in Bucharest—the Elisabeta Palace—voted by the Romanian Parliament by a law concerning arrangements for former heads of state.
+Later years
+
+Michael neither encouraged nor opposed monarchist agitation in Romania and royalist parties have made little impact in post-communist Romanian politics.
+He took the view that the restoration of the monarchy in Romania can only result from a decision by the Romanian people.
+King Michael's belief was that there is still a role for, and value in, the monarchy today: "We are trying to make people understand what the Romanian monarchy was, and what it can still do .
+Michael himself, however, was shown to be much more popular personally with the Romanian people: In a July 2013 survey, 45% of Romanians had a good or very good opinion of Michael, with 6.5% thinking the opposite.
+Michael undertook some quasi-diplomatic roles on behalf of post-communist Romania.
+In 1997 and 2002 he toured Western Europe, lobbying for Romania's admission into NATO and the European Union, and was received by heads of state and government officials.
+In December 2003, to the "stupefaction of the public opinion in Romania",   Michael awarded the "Man of The Year 2003" prize to Prime Minister Adrian Năstase, leader of the Social Democratic Party (PSD), on behalf of the tabloid VIP.
+The daily Evenimentul Zilei subsequently complained that 'such an activity was unsuited to a king and that Michael was wasting away his prestige', with the majority of the political analysts 'considering his gesture as a fresh abdication'.
+On 10 May 2007, King Michael received the Prague Society for International Cooperation and Global Panel Foundation 's 6th Annual Hanno R. Ellenbogen Citizenship Award, previously awarded to Vladimir Ashkenazy, Madeleine Albright, Václav Havel, Lord Robertson, and Miloš Forman.
+On 8 April 2008, King Michael and Patriarch Daniel were elected as honorary members of the Romanian Academy.
+Michael participated in the Victory Parade in Moscow in 2010 as the only living Supreme Commander-in-Chief of a European State in the Second World War.
+The name of Michael I is listed on the memorial in the Grand Kremlin Palace as one of only 20 recipients of the Order of Victory.
+In old age, Michael enjoyed a strong revival in popularity.
+An opinion poll in January 2012 placed him as the most trusted public figure in Romania, far ahead of the political leaders.
+Later, in October 2012, celebrating Michael's 91st birthday, a square in Bucharest was renamed after him.
+On 1 August 2016, he became a widower when Queen Anne died at the age of 92.
+Health issues
+
+On 2 March 2016, the Royal Council announced King Michael's retirement from public life; with tasks assumed by Crown Princess Margareta, his daughter.
+After surgery, Michael was diagnosed with chronic leukemia and metastatic epidermoid carcinoma and faced a complex and lengthy treatment.
+King Michael is quiet, has soulful appreciation and appreciates the care of his medical team.
+"
+
+
+At the end of August 2017, the Royal House announced that King Michael was "in a fragile but balanced state, and has a good mood," stating that Princess Elena had completed a visit to Switzerland for a few days to see her father, at the private residence.
+According to the Royal House, Michael remained "daily under close supervision of physicians, medical staff of various specialties, and in the presence of devoted members of the staff of His Majesty's House, stationed in Switzerland."
+Death and state funeral
+
+On 5 December 2017, Michael died at his residence in Switzerland at the age of 96, in the presence of his youngest daughter Princess Maria.
+His coffin, draped by his Royal Standard, was brought back to Romania on 13 December, arriving at the Otopeni Airport in Bucharest from Lausanne, via Payerne Air Base, escorted by his second daughter, Princess Elena with her husband Alexander Nixon, fourth daughter Sophie and also members of the Royal Household, were transported by the Romanian Air Force's Alenia C-27J Spartan transport aircraft, which was flanked by four Mikoyan-Gurevich MiG-21 jet fighters.
+King Michael I was buried on 16 December with full state honours in the Mausoleum of the Royal Family, on the grounds of the Curtea de Argeș Cathedral together with his wife Queen Anne who died in 2016.
+His funeral is stated to have been one of the largest in Romania, with almost a million Romanians flocking to the capital to pay their respects and watch the funeral, with it being comparable to the one of Corneliu Coposu in 1995.
+According to the succession provisions of the Romanian kingdom's last democratically approved monarchical constitution of 1923, upon the death of King Michael without sons, the claim to the Crown devolves once again upon the Hohenzollern family.
+However, on 30 December 2007, on the 60th anniversary of his abdication, King Michael signed the Fundamental Rules of the Royal Family of Romania, by which he designated Princess Margareta as his heir.
+On 10 May 2011, on a background of lawsuits in Germany brought against his family by Michael's German relatives regarding the former name Hohenzollern-Veringen of his son-in-law, Radu, and of fears expressed by some that the German Hohenzollerns may claim succession to the headship of the Romanian royal house, Michael severed all of the dynastic and historical ties with the princely house of Hohenzollern, changed the name of his family to "of Romania", and gave up all princely titles conferred upon him and his family by the German Hohenzollerns.
+On 1 August 2015, Michael signed a document removing the title Prince of Romania and the qualification of Royal Highness from his grandson, Nicholas Medforth-Mills, who was also removed from the line of succession.
+The former king took the decision "with an eye on Romania's future after the reign and life of his eldest daughter, Margareta".
+Nicholas's mother, Princess Elena, received notification of the former king's decision in a personal letter.
+Personality and personal interests
+
+Aged 16, when Michael was crown prince, he hit a bicyclist while driving a car, causing the cyclist's death.
+Michael was head of the Romanian Boy Scouts in the 1930s.
+Shortly after the Second World War, Michael became interested in Moral Rearmament, which was introduced to him by his first cousin Prince Richard of Hesse-Cassel, and as Swiss residents after 1956 he and Queen Anne paid numerous visits to the MRA conference centre of Caux, where he found solace for the loss of his country and his émigré status as well as new hope for future reconciliation.
+Arms, honours and awards
+
+Honours
+
+Awards
+
+National awards
+
+Foreign awards
+
+Military ranks
+
+Honorific eponyms
+
+Statues and monuments
+
+On 25 October 2012, a large monument to Michael including a large bronze bust was unveiled at King Michael I Square in Bucharest.
+Michael attended and unveiled the statue.
+On 25 October 2021, a statue of Michael was unveiled in the town of Sinaia, on the occasion of the centenary of his birth.
+Minister of Culture Bogdan Gheorghiu was in attendance, along with Margareta of Romania, other government representatives, and members of parliament.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -116,39 +306,9 @@ Mountbatten inherited Moyns Park in 1992 along with his brother, George Mountbat
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -163,6 +323,23 @@ Mountbatten inherited Moyns Park in 1992 along with his brother, George Mountbat
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -180,6 +357,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -247,29 +439,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -278,6 +462,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -290,6 +482,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -298,17 +492,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -336,6 +532,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -351,150 +631,111 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e1c86b18-ad63-455e-9957-ffb4b2e50983)
- Call ID: e1c86b18-ad63-455e-9957-ffb4b2e50983
+  AssignClass (0e0501d1-f403-49e3-ae93-036044259a66)
+ Call ID: 0e0501d1-f403-49e3-ae93-036044259a66
   Args:
-    source: Ivar_Mountbatten
+    source: Michael_I
     type: :Man
-  AssignClass (5ece35bb-ce5c-4806-b617-a02703c3c507)
- Call ID: 5ece35bb-ce5c-4806-b617-a02703c3c507
+  AssignClass (0919186a-589c-4f2c-b2d1-c094cec8d28d)
+ Call ID: 0919186a-589c-4f2c-b2d1-c094cec8d28d
   Args:
-    source: Ivar_Mountbatten
+    source: Michael_I
     type: :Person
-  AddLiteral (7da9a9f3-bc87-4030-bf06-4eb4428835f7)
- Call ID: 7da9a9f3-bc87-4030-bf06-4eb4428835f7
+  AddLiteral (e0d51fdb-66c6-4b3a-8f82-e0c355f84531)
+ Call ID: e0d51fdb-66c6-4b3a-8f82-e0c355f84531
   Args:
-    literal_value: 1963
     literal_type: xsd:integer
+    literal_value: 1921
     relation: :hasBirthYear
-    source: Ivar_Mountbatten
-  AssignClass (64612479-fa0e-41fd-a6d4-67621628d70d)
- Call ID: 64612479-fa0e-41fd-a6d4-67621628d70d
+    source: Michael_I
+  AddLiteral (5a42efb7-2261-4f5a-8863-f44e33da18a2)
+ Call ID: 5a42efb7-2261-4f5a-8863-f44e33da18a2
   Args:
-    source: David_Mountbatten
+    source: Michael_I
+    relation: :hasDeathYear
+    literal_value: 2017
+    literal_type: xsd:integer
+  AssignClass (4f922b83-fa81-44a5-a78c-3c1c0c94c259)
+ Call ID: 4f922b83-fa81-44a5-a78c-3c1c0c94c259
+  Args:
+    source: Carol_II
     type: :Man
-  AssignClass (4f29d613-210e-4340-8a16-3dd129a85597)
- Call ID: 4f29d613-210e-4340-8a16-3dd129a85597
+  AssignClass (8400dc65-8396-4890-a43e-2cf9b2ac492a)
+ Call ID: 8400dc65-8396-4890-a43e-2cf9b2ac492a
   Args:
-    source: David_Mountbatten
+    source: Carol_II
     type: :Person
-  AssignClass (dc600dfe-ecbd-42e4-9113-b41bd5f7ba88)
- Call ID: dc600dfe-ecbd-42e4-9113-b41bd5f7ba88
+  AssignClass (95301b75-4e2c-49f9-a2b1-5b2a6870b118)
+ Call ID: 95301b75-4e2c-49f9-a2b1-5b2a6870b118
   Args:
+    source: Elena_Romania
     type: :Woman
-    source: Janet_Mercedes_Bryce
-  AssignClass (82a002f1-5baa-4bc3-ac19-bb730a718cef)
- Call ID: 82a002f1-5baa-4bc3-ac19-bb730a718cef
+  AssignClass (83363fc2-b86a-4d66-9f99-c60eee3c7773)
+ Call ID: 83363fc2-b86a-4d66-9f99-c60eee3c7773
   Args:
-    source: Janet_Mercedes_Bryce
+    source: Elena_Romania
     type: :Person
-  AddTriple (91561c41-a132-4d02-b999-bd87ddeff677)
- Call ID: 91561c41-a132-4d02-b999-bd87ddeff677
+  AddTriple (e82a086f-7ab0-4368-b332-f44e30b11d21)
+ Call ID: e82a086f-7ab0-4368-b332-f44e30b11d21
   Args:
-    source: Ivar_Mountbatten
-    target: David_Mountbatten
+    source: Michael_I
     relation: :hasFather
-  AddTriple (a7beeedf-f34c-474f-81ae-d5f9edd71fbd)
- Call ID: a7beeedf-f34c-474f-81ae-d5f9edd71fbd
+    target: Carol_II
+  AddTriple (8866fa86-05ad-4d2e-8371-49431dc17ce7)
+ Call ID: 8866fa86-05ad-4d2e-8371-49431dc17ce7
   Args:
-    target: Janet_Mercedes_Bryce
     relation: :hasMother
-    source: Ivar_Mountbatten
-  AssignClass (0b4444c5-3612-4b50-92c7-2205bb132068)
- Call ID: 0b4444c5-3612-4b50-92c7-2205bb132068
+    source: Michael_I
+    target: Elena_Romania
+  AssignClass (24fecd95-fd5a-41ef-a74d-6b1336c15161)
+ Call ID: 24fecd95-fd5a-41ef-a74d-6b1336c15161
   Args:
-    source: George_Mountbatten
+    source: Ferdinand_I
     type: :Man
-  AssignClass (4aa7fa41-59a8-4ba2-ab6d-01682d49ed30)
- Call ID: 4aa7fa41-59a8-4ba2-ab6d-01682d49ed30
+  AssignClass (980e3def-7670-47dd-98b7-96fb1f79c789)
+ Call ID: 980e3def-7670-47dd-98b7-96fb1f79c789
   Args:
-    source: George_Mountbatten
+    source: Ferdinand_I
     type: :Person
-  AddTriple (f9fe0283-c211-4c2d-b567-a0432c7139e6)
- Call ID: f9fe0283-c211-4c2d-b567-a0432c7139e6
+  AssignClass (e3470706-7116-4a53-9782-b61631f5d2fb)
+ Call ID: e3470706-7116-4a53-9782-b61631f5d2fb
   Args:
-    target: George_Mountbatten
-    relation: :hasBrother
-    source: Ivar_Mountbatten
-  AssignClass (dcabc16d-0ce8-47e8-942b-7994ebc8a453)
- Call ID: dcabc16d-0ce8-47e8-942b-7994ebc8a453
-  Args:
-    source: Prince_George_of_Battenberg
+    source: Constantine_I
     type: :Man
-  AssignClass (3127d907-0b8f-4517-9984-9263c378bc3e)
- Call ID: 3127d907-0b8f-4517-9984-9263c378bc3e
+  AssignClass (3877eba7-f443-4bd0-bc60-181b0ae2f8c0)
+ Call ID: 3877eba7-f443-4bd0-bc60-181b0ae2f8c0
   Args:
-    source: Prince_George_of_Battenberg
+    source: Constantine_I
     type: :Person
-  AddTriple (a6ab7a82-f6f1-49ed-9f8c-643d3917b457)
- Call ID: a6ab7a82-f6f1-49ed-9f8c-643d3917b457
+  AddTriple (51ef37d0-6dd2-45c2-a9a6-2eb7232cc176)
+ Call ID: 51ef37d0-6dd2-45c2-a9a6-2eb7232cc176
   Args:
-    target: Prince_George_of_Battenberg
-    relation: :hasAncestor
-    source: Ivar_Mountbatten
-  AssignClass (4c93d08b-9296-450a-bcc8-836ba5dde932)
- Call ID: 4c93d08b-9296-450a-bcc8-836ba5dde932
+    target: Carol_II
+    relation: :isFatherOf
+    source: Ferdinand_I
+  AssignClass (1bd88aea-ee5e-4a38-8486-4cd15144c551)
+ Call ID: 1bd88aea-ee5e-4a38-8486-4cd15144c551
   Args:
+    source: Anne_Bourbon_Parma
     type: :Woman
-    source: Penelope_Anne_Vere_Thompson
-  AssignClass (d3c52245-4650-444c-877b-b0d53490c242)
- Call ID: d3c52245-4650-444c-877b-b0d53490c242
+  AssignClass (242cf6ca-d58c-41ae-bfd6-37dfed0a4ec6)
+ Call ID: 242cf6ca-d58c-41ae-bfd6-37dfed0a4ec6
   Args:
-    source: Penelope_Anne_Vere_Thompson
+    source: Anne_Bourbon_Parma
     type: :Person
-  AddLiteral (65558894-5314-4778-9991-9fbb8e1f6c13)
- Call ID: 65558894-5314-4778-9991-9fbb8e1f6c13
+  AddTriple (3f4df720-90ba-46a7-b64d-fdb3ef8eeae0)
+ Call ID: 3f4df720-90ba-46a7-b64d-fdb3ef8eeae0
   Args:
-    relation: :hasBirthYear
-    source: Penelope_Anne_Vere_Thompson
-    literal_value: 1966
+    target: Anne_Bourbon_Parma
+    source: Michael_I
+    relation: :hasRelation
+  AddLiteral (66234496-1fcf-479f-b95a-6644b7541091)
+ Call ID: 66234496-1fcf-479f-b95a-6644b7541091
+  Args:
     literal_type: xsd:integer
-  AddLiteral (c393aa4f-dee6-44e9-8229-b34fadd7b0dc)
- Call ID: c393aa4f-dee6-44e9-8229-b34fadd7b0dc
-  Args:
+    literal_value: 1948
+    source: Michael_I
     relation: :hasMarriageYear
-    source: Ivar_Mountbatten
-    literal_value: 1994
-    literal_type: xsd:integer
-  AddTriple (7ecdf63f-c47b-466e-b807-373edd47a617)
- Call ID: 7ecdf63f-c47b-466e-b807-373edd47a617
-  Args:
-    target: Penelope_Anne_Vere_Thompson
-    relation: :hasRelation
-    source: Ivar_Mountbatten
-  AssignClass (77b52eda-6e99-4644-9406-c8ff06da1b07)
- Call ID: 77b52eda-6e99-4644-9406-c8ff06da1b07
-  Args:
-    source: James_Coyle
-    type: :Man
-  AssignClass (0b7e3746-060b-4bfa-b502-b9a08685b6e2)
- Call ID: 0b7e3746-060b-4bfa-b502-b9a08685b6e2
-  Args:
-    source: James_Coyle
-    type: :Person
-  AddTriple (1c19a429-8045-4a0e-befa-452b1591c771)
- Call ID: 1c19a429-8045-4a0e-befa-452b1591c771
-  Args:
-    relation: :hasRelation
-    target: James_Coyle
-    source: Ivar_Mountbatten
-  AssignClass (d14df169-12e0-4d4f-ac21-04cd10c2bc60)
- Call ID: d14df169-12e0-4d4f-ac21-04cd10c2bc60
-  Args:
-    type: :Woman
-    source: Lady_Louise_Windsor
-  AssignClass (678926d1-d930-40c0-b4ab-82652690f250)
- Call ID: 678926d1-d930-40c0-b4ab-82652690f250
-  Args:
-    type: :Person
-    source: Lady_Louise_Windsor
-  AddLiteral (51cba2f0-7671-4ac3-ab73-6881e1fef4be)
- Call ID: 51cba2f0-7671-4ac3-ab73-6881e1fef4be
-  Args:
-    literal_value: 2003
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Lady_Louise_Windsor
-  Finish (5d1d74dc-12a7-487d-997c-00b7c0ebfd16)
- Call ID: 5d1d74dc-12a7-487d-997c-00b7c0ebfd16
+  Finish (eda63665-4660-4cbd-847b-a7dbdbc581da)
+ Call ID: eda63665-4660-4cbd-847b-a7dbdbc581da
   Args:

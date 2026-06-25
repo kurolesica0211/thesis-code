@@ -7,9 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:James_Lascelles a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:James_Lascelles a :Person ;
     rdfs:label "James Lascelles" ;
     data:posIndicesFull "0:22" ;
     data:posIndicesPart "143:152",
@@ -25,9 +23,13 @@ data:James_Lascelles a :Man,
         "James Edward Lascelles" ;
     :hasSex data:male .
 
+data:female a :Female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
 

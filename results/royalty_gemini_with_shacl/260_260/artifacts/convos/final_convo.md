@@ -85,63 +85,39 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Peter Mark Andrew Phillips (born 15 November 1977) is a British businessman and member of the British royal family.
-He is the son of Anne, Princess Royal, and Mark Phillips, and a nephew of King Charles III.
-Born during the reign of his maternal grandmother Queen Elizabeth II, Phillips was fifth in the line of succession to the British throne; as of 2026, he is 19th.
-Phillips attended the University of Exeter and later worked for Jaguar Racing.
-In 2008, he married Canadian management consultant Autumn Kelly at St George's Chapel, Windsor Castle; they have two children.
-Early life and education
+Princess Margarita of Baden (Margarete Alice Thyra Viktoria Marie Louise Scholastica; 14 July 1932 – 15 January 2013) was the only daughter of Berthold, Margrave of Baden, and Princess Theodora of Greece and Denmark.
+She was the eldest surviving cousin of King Charles III and eldest surviving niece of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
+Early life
 
-Peter Mark Andrew Phillips was born at 10:46 am on 15 November 1977 at St Mary's Hospital, London.
-He was the first child of Princess Anne and Mark Phillips, who had married in 1973, and the first grandchild of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
-His godparents were his maternal uncle, Prince Charles; Geoffrey Tiarks; Captain Hamish Lochore; Lady Cecil Cameron of Lochiel and Jane Holderness-Roddam.
-Phillips was fifth in line to the throne at birth and remained so until the birth of his cousin William, Prince of Wales in 1982.
-His parents were said to have refused offers from his grandmother Queen Elizabeth II that would have led to his being born in the peerage.
-Phillips was the first legitimate grandchild of a monarch in more than 500 years to be born without a title or courtesy title.
-Phillips has a younger sister, Zara Tindall (née Phillips; born 1981), and two younger half-sisters, Felicity Wade (née Tonkin; born 1985), the daughter of Mark Phillips and his former mistress Heather Tonkin; and Stephanie Phillips (born 1997), the daughter from his father's second marriage to Sandy Pflueger.
-Phillips went to Port Regis Prep School in Shaftesbury, Dorset before following some of his family by attending Gordonstoun School in Moray, Scotland.
-Phillips represented Scotland at rugby union at youth and junior level in the mid-1990s.
-Career
+Margarita was born on 14 July 1932 at Schloss Salem, Germany, and grew up there.
+She was the eldest child and only daughter of Berthold, Margrave of Baden, who ran a school jointly with Kurt Hahn, and Princess Theodora of Greece and Denmark, older sister of Prince Philip, Duke of Edinburgh.
+Margarita was the first great-great-great-granddaughter of Queen Victoria.
+She came to live in London in 1948, and trained as a nurse at St Thomas' Hospital.
+During this time, she was often seen with her cousins Princess Christina of Hesse and Princess Beatrix of Hohenlohe-Langenburg.
+Beatrix was briefly engaged to Margarita's brother Prince Maximilian, and Christina became Margarita's future sister-in-law by marrying Prince Andrew of Yugoslavia.
+Also during this time, Margarita attended the 1953 coronation of her aunt, Queen Elizabeth II.
+While in London, she met Prince Tomislav, a member of the exiled Yugoslav royal family as a younger brother of the former King Peter II of Yugoslavia.
+Tomislav was a third cousin of Margarita's mother; both were great-great-grandchildren of Queen Victoria and Prince Albert.
+Margarita and Tomislav became engaged on 2 January 1956.
+She took part in the ship tour organized by King Paul of Greece and Queen Frederica in 1954, which became known as the "Cruise of the Kings" and was attended by over 100 royals from all over Europe.
+Marriage
 
-After his graduation in 2000, Phillips worked for Jaguar as corporate hospitality manager and then for Williams racing team, where he was sponsorship accounts manager.
-He left Williams in September 2005, for a job as a manager at the Royal Bank of Scotland in Edinburgh.
-In the year leading up to June 2016, Phillips was responsible for organising the "Patron's Lunch", in celebration of the Queen's 90th birthday.
-In January 2020, Phillips appeared in an advertisement for Chinese company Bright Food.
-In the video, he uses his status as a "British royal family member" to promote the company's milk, while surrounded by luxury.
-Royal funeral participation
+On 5 June 1957 Margarita married Prince Tomislav of Yugoslavia, younger brother of the former King Peter II of Yugoslavia, in a civil ceremony in Salem followed by Lutheran and Serbian Orthodox church services on 6 June.
+Prince Philip, Duke of Edinburgh (her maternal uncle), and King Simeon of Bulgaria were among the guests.
+Later years
 
-On 17 September 2022, during the period of official mourning for Queen Elizabeth II, Phillips joined his sister and six cousins to mount a 15-minute vigil around the coffin of their grandmother as it lay in state at Westminster Hall.
-On 19 September 2022, he joined the Queen's children and other senior members of the royal family in walking behind the cortege in the state funeral procession.
-Personal life
-
-Relationships
-
-Elizabeth Iorio and Tara Swain
-
-Phillips dated Elizabeth Iorio, a cod liver oil heiress from the United States, for two years.
-Autumn Kelly
-
-In 2003, Phillips met Autumn Kelly, a Canadian management consultant, at the Formula 1 Canadian Grand Prix in Montreal.
-If she had been Roman Catholic at the time of the marriage, Phillips would have lost his place in the line of the succession to the throne because of since-repealed terms of the Act of Settlement 1701.
-Shortly before their wedding, the couple were interviewed and photographed by Hello! magazine, and were reported to have been paid £500,000, resulting in some concern in royal circles.
-The couple lived in Hong Kong after Phillips changed positions within the Royal Bank of Scotland and became head of their sponsorships activities in the region.
-Their first child, and the Queen's first great-grandchild, a daughter named Savannah Anne Kathleen, was born on 29 December 2010 at Gloucestershire Royal Hospital.
-The Queen was present for the baby's baptism, which took place on 23 April 2011 at Church of the Holy Cross in Avening, Gloucestershire, near Gatcombe Park, the home of Phillips' mother.
-On 29 March 2012, the couple's second daughter, Isla Elizabeth, was born at Gloucestershire Royal Hospital.
-On 11 February 2020, Phillips and his wife confirmed that they had separated in 2019 and announced they were planning to divorce.
-Lindsay Wallace
-
-After his divorce, Phillips began a relationship with Lindsay Wallace in 2021, with whom he made his official debut as a couple at the Epsom Derby in June 2022.
-Harriet Sperling
-
-By June 2024, Phillips had introduced his partner, NHS paediatric nurse and freelance writer Harriet Sperling (née Sanders; born 1980), to King Charles III and Queen Camilla.
-According to the BBC, Sperling is a distant relation of Prince Richard, Duke of Gloucester through her father Rupert Sanders (1946–2023).
+Margarita was a champion of Serbian charities and was also president of the Convent of Martha and Mary in Moscow.
+Margarita died on 15 January 2013 in Farnham, Surrey, after a long illness.
+Her uncle the Duke of Edinburgh, Queen Anne-Marie of Greece, and her nephew Alexander, Crown Prince of Yugoslavia, were among the mourners.
+Margarita was buried in the family cemetery at Stefansfeld near Baden, Germany, on 28 January 2013.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -157,39 +133,9 @@ According to the BBC, Sperling is a distant relation of Prince Richard, Duke of 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -204,6 +150,23 @@ According to the BBC, Sperling is a distant relation of Prince Richard, Duke of 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -221,6 +184,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,29 +266,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -319,6 +289,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -331,6 +309,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -339,17 +319,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -377,6 +359,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -392,239 +458,240 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (90056aa6-b7b9-43df-bc2e-b713ed1b7f99)
- Call ID: 90056aa6-b7b9-43df-bc2e-b713ed1b7f99
+  AssignClass (21b77b87-36ac-4590-975a-4caf498b1cac)
+ Call ID: 21b77b87-36ac-4590-975a-4caf498b1cac
   Args:
-    type: :Man
-    source: Peter_Phillips
-  AssignClass (fbe31746-6b65-4af7-83af-7e5529e4dbc2)
- Call ID: fbe31746-6b65-4af7-83af-7e5529e4dbc2
-  Args:
-    type: :Person
-    source: Peter_Phillips
-  AssignClass (dce6ec98-393c-4b8d-9b1c-a190c88f7d62)
- Call ID: dce6ec98-393c-4b8d-9b1c-a190c88f7d62
-  Args:
+    source: Princess_Margarita_of_Baden
     type: :Woman
-    source: Anne_Princess_Royal
-  AssignClass (99dc6896-2148-4f99-ae03-d49799e33c07)
- Call ID: 99dc6896-2148-4f99-ae03-d49799e33c07
+  AssignClass (a1676481-868d-439a-bac2-016c7a610864)
+ Call ID: a1676481-868d-439a-bac2-016c7a610864
   Args:
     type: :Person
-    source: Anne_Princess_Royal
-  AssignClass (8b2aef09-e675-4570-9306-a9c6282c8538)
- Call ID: 8b2aef09-e675-4570-9306-a9c6282c8538
+    source: Princess_Margarita_of_Baden
+  AddLiteral (80f2804d-2cd6-45ab-997d-38dfe6a47127)
+ Call ID: 80f2804d-2cd6-45ab-997d-38dfe6a47127
   Args:
-    type: :Man
-    source: Mark_Phillips
-  AssignClass (9e48aed4-61ac-4571-8215-b9628ab04cfa)
- Call ID: 9e48aed4-61ac-4571-8215-b9628ab04cfa
-  Args:
-    type: :Person
-    source: Mark_Phillips
-  AddTriple (d3718bf7-d86e-478e-b974-cd9fe8cb91c1)
- Call ID: d3718bf7-d86e-478e-b974-cd9fe8cb91c1
-  Args:
-    relation: :hasFather
-    source: Peter_Phillips
-    target: Mark_Phillips
-  AddTriple (e104dbc6-6c39-4394-930d-d170642c2dc2)
- Call ID: e104dbc6-6c39-4394-930d-d170642c2dc2
-  Args:
-    target: Anne_Princess_Royal
-    relation: :hasMother
-    source: Peter_Phillips
-  AddLiteral (559bc31a-d98a-49d6-bcbd-d851b1f66bce)
- Call ID: 559bc31a-d98a-49d6-bcbd-d851b1f66bce
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1977
-    source: Peter_Phillips
+    source: Princess_Margarita_of_Baden
+    literal_value: 1932
     relation: :hasBirthYear
-  AssignClass (bb3b9c01-a4aa-41f5-a6cf-009938a42f69)
- Call ID: bb3b9c01-a4aa-41f5-a6cf-009938a42f69
-  Args:
-    type: :Woman
-    source: Zara_Tindall
-  AssignClass (cb63f3ec-db2c-4b9b-accb-3a0f9e6445b2)
- Call ID: cb63f3ec-db2c-4b9b-accb-3a0f9e6445b2
-  Args:
-    type: :Person
-    source: Zara_Tindall
-  AddTriple (cc366b98-5275-42b2-bd01-6eb72b4e4732)
- Call ID: cc366b98-5275-42b2-bd01-6eb72b4e4732
-  Args:
-    source: Peter_Phillips
-    relation: :hasSister
-    target: Zara_Tindall
-  AddTriple (6006986d-7682-4324-b1aa-1ee88d728062)
- Call ID: 6006986d-7682-4324-b1aa-1ee88d728062
-  Args:
-    source: Zara_Tindall
-    relation: :hasFather
-    target: Mark_Phillips
-  AddTriple (84e47a9d-abcc-457c-8da8-4a50cb97f777)
- Call ID: 84e47a9d-abcc-457c-8da8-4a50cb97f777
-  Args:
-    target: Anne_Princess_Royal
-    relation: :hasMother
-    source: Zara_Tindall
-  AssignClass (3a6b5f27-d7a4-4d07-a0a3-30d16e023ad6)
- Call ID: 3a6b5f27-d7a4-4d07-a0a3-30d16e023ad6
-  Args:
-    type: :Woman
-    source: Felicity_Wade
-  AssignClass (a2a208d0-3d32-45fe-ade7-3f2c8996df36)
- Call ID: a2a208d0-3d32-45fe-ade7-3f2c8996df36
-  Args:
-    type: :Person
-    source: Felicity_Wade
-  AddTriple (9a5b920a-4a3c-4b8b-8cf9-87147265b2a3)
- Call ID: 9a5b920a-4a3c-4b8b-8cf9-87147265b2a3
-  Args:
-    source: Felicity_Wade
-    relation: :hasFather
-    target: Mark_Phillips
-  AssignClass (5df7d94f-7c86-4c19-8ff9-01fc7bff6600)
- Call ID: 5df7d94f-7c86-4c19-8ff9-01fc7bff6600
-  Args:
-    type: :Woman
-    source: Stephanie_Phillips
-  AssignClass (dc61e2db-de59-485f-8d13-707f8fc10fad)
- Call ID: dc61e2db-de59-485f-8d13-707f8fc10fad
-  Args:
-    type: :Person
-    source: Stephanie_Phillips
-  AddTriple (51915028-48e2-44c2-ba71-3701da70fc19)
- Call ID: 51915028-48e2-44c2-ba71-3701da70fc19
-  Args:
-    relation: :hasFather
-    source: Stephanie_Phillips
-    target: Mark_Phillips
-  AssignClass (4218a43d-ec96-4e07-bf7b-aceeb0f7b861)
- Call ID: 4218a43d-ec96-4e07-bf7b-aceeb0f7b861
-  Args:
-    type: :Woman
-    source: Autumn_Kelly
-  AssignClass (860ac023-728f-4cbd-b8e8-fb2e51515d53)
- Call ID: 860ac023-728f-4cbd-b8e8-fb2e51515d53
-  Args:
-    type: :Person
-    source: Autumn_Kelly
-  AddTriple (be56cf31-4150-4936-acb8-1e4b4c0acd54)
- Call ID: be56cf31-4150-4936-acb8-1e4b4c0acd54
-  Args:
-    target: Autumn_Kelly
-    source: Peter_Phillips
-    relation: :hasRelation
-  AddLiteral (5f103e0f-8471-40f4-824d-d5e05e894afd)
- Call ID: 5f103e0f-8471-40f4-824d-d5e05e894afd
-  Args:
-    relation: :hasMarriageYear
-    source: Peter_Phillips
-    literal_value: 2008
     literal_type: xsd:integer
-  AssignClass (ebe75e96-336f-4d72-865c-e3ae5e1d02f2)
- Call ID: ebe75e96-336f-4d72-865c-e3ae5e1d02f2
+  AddLiteral (8eb2d4bd-b3d0-424c-91f7-aad10f23b257)
+ Call ID: 8eb2d4bd-b3d0-424c-91f7-aad10f23b257
   Args:
-    type: :Woman
-    source: Savannah_Phillips
-  AssignClass (b5e8c46b-7033-4157-a8ea-cda8d5e83508)
- Call ID: b5e8c46b-7033-4157-a8ea-cda8d5e83508
+    relation: :hasDeathYear
+    literal_value: 2013
+    source: Princess_Margarita_of_Baden
+    literal_type: xsd:integer
+  AssignClass (7f2bb8d1-9bd6-48f0-810a-807c1f6ac1b0)
+ Call ID: 7f2bb8d1-9bd6-48f0-810a-807c1f6ac1b0
   Args:
+    source: Berthold_Margrave_of_Baden
+    type: :Man
+  AssignClass (a897e6bd-3e07-4e29-8a8c-7a1495adb069)
+ Call ID: a897e6bd-3e07-4e29-8a8c-7a1495adb069
+  Args:
+    source: Berthold_Margrave_of_Baden
     type: :Person
-    source: Savannah_Phillips
-  AddTriple (b9ffe042-3d25-493c-af8e-a6b86bc3ede9)
- Call ID: b9ffe042-3d25-493c-af8e-a6b86bc3ede9
+  AssignClass (8e09ba42-2fd6-4dbe-b951-204fad71ec21)
+ Call ID: 8e09ba42-2fd6-4dbe-b951-204fad71ec21
   Args:
-    source: Savannah_Phillips
+    source: Princess_Theodora_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (cddf68e1-e1d6-4d67-a11c-25538e6ce42f)
+ Call ID: cddf68e1-e1d6-4d67-a11c-25538e6ce42f
+  Args:
+    source: Princess_Theodora_of_Greece_and_Denmark
+    type: :Person
+  AddTriple (d3cd9fe8-8304-442b-aaad-708a3a172b9a)
+ Call ID: d3cd9fe8-8304-442b-aaad-708a3a172b9a
+  Args:
+    target: Berthold_Margrave_of_Baden
     relation: :hasFather
-    target: Peter_Phillips
-  AddTriple (f8eaabc5-5337-45f0-a495-3fcaca13ce3e)
- Call ID: f8eaabc5-5337-45f0-a495-3fcaca13ce3e
+    source: Princess_Margarita_of_Baden
+  AddTriple (06ada754-1464-48da-b316-a8eb10225674)
+ Call ID: 06ada754-1464-48da-b316-a8eb10225674
   Args:
-    target: Autumn_Kelly
+    target: Princess_Theodora_of_Greece_and_Denmark
     relation: :hasMother
-    source: Savannah_Phillips
-  AssignClass (44d4a91d-ec8e-490c-ae27-f43e4c36d6bd)
- Call ID: 44d4a91d-ec8e-490c-ae27-f43e4c36d6bd
+    source: Princess_Margarita_of_Baden
+  AssignClass (1527e7c2-b252-4bb9-94eb-ca6d392a8100)
+ Call ID: 1527e7c2-b252-4bb9-94eb-ca6d392a8100
   Args:
-    type: :Woman
-    source: Isla_Phillips
-  AssignClass (0f133f53-aed5-4b36-8a9d-9df2f0f42daf)
- Call ID: 0f133f53-aed5-4b36-8a9d-9df2f0f42daf
+    source: Prince_Maximilian_of_Baden
+    type: :Man
+  AssignClass (35513c87-0a42-4947-bb0d-27fb20129c44)
+ Call ID: 35513c87-0a42-4947-bb0d-27fb20129c44
   Args:
     type: :Person
-    source: Isla_Phillips
-  AddTriple (ba63d32e-1416-4c1b-a215-eaecf5c63c81)
- Call ID: ba63d32e-1416-4c1b-a215-eaecf5c63c81
+    source: Prince_Maximilian_of_Baden
+  AddTriple (6b13b049-1a7d-4c3a-ad8b-d5c8e606f2b7)
+ Call ID: 6b13b049-1a7d-4c3a-ad8b-d5c8e606f2b7
   Args:
-    source: Isla_Phillips
-    relation: :hasFather
-    target: Peter_Phillips
-  AddTriple (c091d1cb-8198-402e-a412-7c7d5b4089fa)
- Call ID: c091d1cb-8198-402e-a412-7c7d5b4089fa
-  Args:
-    target: Autumn_Kelly
-    relation: :hasMother
-    source: Isla_Phillips
-  AssignClass (88b76c89-dd15-4b64-9774-8d6c04a3fab1)
- Call ID: 88b76c89-dd15-4b64-9774-8d6c04a3fab1
-  Args:
-    type: :Woman
-    source: Queen_Elizabeth_II
-  AssignClass (d9ff9e34-07fa-4731-aa44-b5c1e07d8ed5)
- Call ID: d9ff9e34-07fa-4731-aa44-b5c1e07d8ed5
-  Args:
-    type: :Person
-    source: Queen_Elizabeth_II
-  AddTriple (7784276d-d34c-4e01-8f31-8a75df860cda)
- Call ID: 7784276d-d34c-4e01-8f31-8a75df860cda
-  Args:
-    target: Queen_Elizabeth_II
-    source: Anne_Princess_Royal
-    relation: :hasMother
-  AssignClass (c572edc4-3af0-406d-a56f-9ab9cf4e0a1d)
- Call ID: c572edc4-3af0-406d-a56f-9ab9cf4e0a1d
+    source: Princess_Margarita_of_Baden
+    target: Prince_Maximilian_of_Baden
+    relation: :hasBrother
+  AssignClass (3ce2bb54-7c42-41e2-a763-0f7286c902f3)
+ Call ID: 3ce2bb54-7c42-41e2-a763-0f7286c902f3
   Args:
     type: :Man
-    source: Prince_Philip
-  AssignClass (6836c062-1d52-44ac-88eb-0e329a5fd5c2)
- Call ID: 6836c062-1d52-44ac-88eb-0e329a5fd5c2
+    source: Prince_Tomislav_of_Yugoslavia
+  AssignClass (2deb2ee8-a095-44d3-93fb-4b5e5be7d499)
+ Call ID: 2deb2ee8-a095-44d3-93fb-4b5e5be7d499
   Args:
     type: :Person
-    source: Prince_Philip
-  AddTriple (16ad8971-c605-411d-a298-383afd0f3761)
- Call ID: 16ad8971-c605-411d-a298-383afd0f3761
+    source: Prince_Tomislav_of_Yugoslavia
+  AddLiteral (6309dba5-fcf0-4938-aaab-ec45f7129311)
+ Call ID: 6309dba5-fcf0-4938-aaab-ec45f7129311
   Args:
-    relation: :hasFather
-    source: Anne_Princess_Royal
-    target: Prince_Philip
-  AssignClass (7b561735-2e10-433c-939f-94055e30681c)
- Call ID: 7b561735-2e10-433c-939f-94055e30681c
+    literal_type: xsd:integer
+    literal_value: 1957
+    relation: :hasMarriageYear
+    source: Princess_Margarita_of_Baden
+  AddTriple (99c0c380-75ec-417c-98d9-a640b9feb679)
+ Call ID: 99c0c380-75ec-417c-98d9-a640b9feb679
+  Args:
+    target: Prince_Tomislav_of_Yugoslavia
+    relation: :hasRelation
+    source: Princess_Margarita_of_Baden
+  AssignClass (932a7c95-9168-4d3d-a9fe-e188f41a865e)
+ Call ID: 932a7c95-9168-4d3d-a9fe-e188f41a865e
+  Args:
+    source: King_Peter_II_of_Yugoslavia
+    type: :Man
+  AssignClass (a11a0d58-c304-412a-a434-4c865d2bebe7)
+ Call ID: a11a0d58-c304-412a-a434-4c865d2bebe7
+  Args:
+    type: :Person
+    source: King_Peter_II_of_Yugoslavia
+  AddTriple (f0520e49-5a47-463f-b134-0c3dfaa01dae)
+ Call ID: f0520e49-5a47-463f-b134-0c3dfaa01dae
+  Args:
+    source: King_Peter_II_of_Yugoslavia
+    target: Prince_Tomislav_of_Yugoslavia
+    relation: :hasBrother
+  AssignClass (4163219c-4eef-4737-8114-5b97a86967e0)
+ Call ID: 4163219c-4eef-4737-8114-5b97a86967e0
   Args:
     type: :Man
+    source: Prince_Philip_Duke_of_Edinburgh
+  AssignClass (dff082f3-61ab-4013-81e3-0dcf4809474c)
+ Call ID: dff082f3-61ab-4013-81e3-0dcf4809474c
+  Args:
+    type: :Person
+    source: Prince_Philip_Duke_of_Edinburgh
+  AddTriple (9b3e4f47-3129-4709-b563-ab4bdf266968)
+ Call ID: 9b3e4f47-3129-4709-b563-ab4bdf266968
+  Args:
+    source: Prince_Philip_Duke_of_Edinburgh
+    relation: :hasSister
+    target: Princess_Theodora_of_Greece_and_Denmark
+  AssignClass (810075cc-f386-4eca-afa8-cd50031e7b48)
+ Call ID: 810075cc-f386-4eca-afa8-cd50031e7b48
+  Args:
     source: King_Charles_III
-  AssignClass (9d9edd3d-615f-44ba-8e55-9b010bf95834)
- Call ID: 9d9edd3d-615f-44ba-8e55-9b010bf95834
+    type: :Man
+  AssignClass (7803dc70-f25b-4293-92dc-284ce5c9d633)
+ Call ID: 7803dc70-f25b-4293-92dc-284ce5c9d633
   Args:
     type: :Person
     source: King_Charles_III
-  AddTriple (f57f72fe-430b-43fa-9e28-8bb0a3abe115)
- Call ID: f57f72fe-430b-43fa-9e28-8bb0a3abe115
+  AssignClass (cf34f81c-ff08-4993-b896-c5a50cc32fda)
+ Call ID: cf34f81c-ff08-4993-b896-c5a50cc32fda
   Args:
-    target: Queen_Elizabeth_II
-    source: King_Charles_III
-    relation: :hasMother
-  AddTriple (615d87be-536a-4c26-aab4-f7b179f7f33c)
- Call ID: 615d87be-536a-4c26-aab4-f7b179f7f33c
+    source: Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (fa7f0ba7-b8b9-410c-9f57-fe2da82741a4)
+ Call ID: fa7f0ba7-b8b9-410c-9f57-fe2da82741a4
   Args:
-    target: Prince_Philip
-    relation: :hasFather
-    source: King_Charles_III
-  Finish (2aa14ed3-c55c-4eb7-92c4-007e4139fadc)
- Call ID: 2aa14ed3-c55c-4eb7-92c4-007e4139fadc
+    source: Queen_Elizabeth_II
+    type: :Person
+  AssignClass (9100498a-6f64-4acd-97e7-6d3bbf2b7ef2)
+ Call ID: 9100498a-6f64-4acd-97e7-6d3bbf2b7ef2
   Args:
+    type: :Woman
+    source: Princess_Christina_of_Hesse
+  AssignClass (98c1fc70-36dc-402c-af72-05dca6e8f05a)
+ Call ID: 98c1fc70-36dc-402c-af72-05dca6e8f05a
+  Args:
+    type: :Person
+    source: Princess_Christina_of_Hesse
+  AssignClass (130db1ce-f6c0-4842-a7cc-5ecb03b99084)
+ Call ID: 130db1ce-f6c0-4842-a7cc-5ecb03b99084
+  Args:
+    source: Princess_Beatrix_of_Hohenlohe_Langenburg
+    type: :Woman
+  AssignClass (0ee1a59b-150e-4ebc-bf08-676ed10a761c)
+ Call ID: 0ee1a59b-150e-4ebc-bf08-676ed10a761c
+  Args:
+    type: :Person
+    source: Princess_Beatrix_of_Hohenlohe_Langenburg
+  AssignClass (cb6a416e-8169-447a-b463-5c2bc04b2858)
+ Call ID: cb6a416e-8169-447a-b463-5c2bc04b2858
+  Args:
+    source: Prince_Andrew_of_Yugoslavia
+    type: :Man
+  AssignClass (da1fc0e1-0eda-4269-995c-64e249788573)
+ Call ID: da1fc0e1-0eda-4269-995c-64e249788573
+  Args:
+    source: Prince_Andrew_of_Yugoslavia
+    type: :Person
+  AssignClass (b2590e28-9d08-4f77-bd11-9225c43a1736)
+ Call ID: b2590e28-9d08-4f77-bd11-9225c43a1736
+  Args:
+    source: King_Paul_of_Greece
+    type: :Man
+  AssignClass (ed88db75-a6f5-47ae-8776-ad420fefef0e)
+ Call ID: ed88db75-a6f5-47ae-8776-ad420fefef0e
+  Args:
+    source: King_Paul_of_Greece
+    type: :Person
+  AssignClass (aedc6e9c-4886-4159-9eb3-e9018c7b0fcd)
+ Call ID: aedc6e9c-4886-4159-9eb3-e9018c7b0fcd
+  Args:
+    type: :Woman
+    source: Queen_Frederica_of_Greece
+  AssignClass (e843ac2d-8a78-4939-b5d0-4023b613c692)
+ Call ID: e843ac2d-8a78-4939-b5d0-4023b613c692
+  Args:
+    type: :Person
+    source: Queen_Frederica_of_Greece
+  AssignClass (688acd9b-bbf4-4704-af82-56560c9a83e0)
+ Call ID: 688acd9b-bbf4-4704-af82-56560c9a83e0
+  Args:
+    source: King_Simeon_of_Bulgaria
+    type: :Man
+  AssignClass (ee719d66-c4ef-498c-8ea0-ee768be59236)
+ Call ID: ee719d66-c4ef-498c-8ea0-ee768be59236
+  Args:
+    type: :Person
+    source: King_Simeon_of_Bulgaria
+  AssignClass (89c421d0-4dea-412d-9dbc-6a36e0524be7)
+ Call ID: 89c421d0-4dea-412d-9dbc-6a36e0524be7
+  Args:
+    type: :Woman
+    source: Queen_Anne_Marie_of_Greece
+  AssignClass (9ef9a1b3-0894-4336-be79-7f01d264dfdc)
+ Call ID: 9ef9a1b3-0894-4336-be79-7f01d264dfdc
+  Args:
+    type: :Person
+    source: Queen_Anne_Marie_of_Greece
+  AssignClass (311decb5-f068-4be1-8163-48ba2c523e24)
+ Call ID: 311decb5-f068-4be1-8163-48ba2c523e24
+  Args:
+    source: Alexander_Crown_Prince_of_Yugoslavia
+    type: :Man
+  AssignClass (e4afe518-7394-4d9e-8222-244f84422028)
+ Call ID: e4afe518-7394-4d9e-8222-244f84422028
+  Args:
+    source: Alexander_Crown_Prince_of_Yugoslavia
+    type: :Person
+  Finish (60a90348-12e9-4996-a6a3-01bdd81f8f2f)
+ Call ID: 60a90348-12e9-4996-a6a3-01bdd81f8f2f
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -797,59 +864,65 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Felicity_Wade a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips .
-
-  data:Isla_Phillips a :Person,
-          :Woman ;
-      :hasFather data:Peter_Phillips ;
-      :hasMother data:Autumn_Kelly .
+  data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
+          :Person .
 
   data:King_Charles_III a :Man,
-          :Person ;
-      :hasFather data:Prince_Philip ;
-      :hasMother data:Queen_Elizabeth_II .
-
-  data:Savannah_Phillips a :Person,
-          :Woman ;
-      :hasFather data:Peter_Phillips ;
-      :hasMother data:Autumn_Kelly .
-
-  data:Stephanie_Phillips a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips .
-
-  data:Zara_Tindall a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Anne_Princess_Royal .
-
-  data:Anne_Princess_Royal a :Person,
-          :Woman ;
-      :hasFather data:Prince_Philip ;
-      :hasMother data:Queen_Elizabeth_II .
-
-  data:Peter_Phillips a :Man,
-          :Person ;
-      :hasBirthYear 1977 ;
-      :hasFather data:Mark_Phillips ;
-      :hasMarriageYear 2008 ;
-      :hasMother data:Anne_Princess_Royal ;
-      :hasRelation data:Autumn_Kelly ;
-      :hasSister data:Zara_Tindall .
-
-  data:Prince_Philip a :Man,
           :Person .
+
+  data:King_Paul_of_Greece a :Man,
+          :Person .
+
+  data:King_Peter_II_of_Yugoslavia a :Man,
+          :Person ;
+      :hasBrother data:Prince_Tomislav_of_Yugoslavia .
+
+  data:King_Simeon_of_Bulgaria a :Man,
+          :Person .
+
+  data:Prince_Andrew_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Prince_Philip_Duke_of_Edinburgh a :Man,
+          :Person ;
+      :hasSister data:Princess_Theodora_of_Greece_and_Denmark .
+
+  data:Princess_Beatrix_of_Hohenlohe_Langenburg a :Person,
+          :Woman .
+
+  data:Princess_Christina_of_Hesse a :Person,
+          :Woman .
+
+  data:Princess_Margarita_of_Baden a :Person,
+          :Woman ;
+      :hasBirthYear 1932 ;
+      :hasBrother data:Prince_Maximilian_of_Baden ;
+      :hasDeathYear 2013 ;
+      :hasFather data:Berthold_Margrave_of_Baden ;
+      :hasMarriageYear 1957 ;
+      :hasMother data:Princess_Theodora_of_Greece_and_Denmark ;
+      :hasRelation data:Prince_Tomislav_of_Yugoslavia .
+
+  data:Queen_Anne_Marie_of_Greece a :Person,
+          :Woman .
 
   data:Queen_Elizabeth_II a :Person,
           :Woman .
 
-  data:Autumn_Kelly a :Person,
+  data:Queen_Frederica_of_Greece a :Person,
           :Woman .
 
-  data:Mark_Phillips a :Man,
+  data:Berthold_Margrave_of_Baden a :Man,
           :Person .
+
+  data:Prince_Maximilian_of_Baden a :Man,
+          :Person .
+
+  data:Prince_Tomislav_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+          :Woman .
 
 
 
@@ -861,350 +934,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (82931f4c-8e9b-4bba-b11d-28f0a9308e1a)
- Call ID: 82931f4c-8e9b-4bba-b11d-28f0a9308e1a
+  ValidateShacl (395c5b85-d589-4e48-914f-df78313b0463)
+ Call ID: 395c5b85-d589-4e48-914f-df78313b0463
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:42
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Prince_Philip' for the 'hasFather' property of 'King_Charles_III' is missing the mandatory class ':Ancestor' or ':Man'.
+      The node 'Berthold_Margrave_of_Baden' is used as the father of 'Princess_Margarita_of_Baden', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Philip', class=':Ancestor')
+      AssignClass('Berthold_Margrave_of_Baden', ':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Mark_Phillips' for the 'hasFather' property of 'Peter_Phillips' is missing the mandatory class ':Ancestor' or ':Man'.
+      The node 'Princess_Theodora_of_Greece_and_Denmark' is used as the mother of 'Princess_Margarita_of_Baden', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mark_Phillips', class=':Ancestor')
+      AssignClass('Princess_Theodora_of_Greece_and_Denmark', ':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Queen_Elizabeth_II' for the 'hasMother' property of 'King_Charles_III' is missing the mandatory class ':Ancestor' or ':Woman'.
+      The node 'Berthold_Margrave_of_Baden' is used as the father of 'Princess_Margarita_of_Baden', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Elizabeth_II', class=':Ancestor')
+      AssignClass('Berthold_Margrave_of_Baden', ':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Anne_Princess_Royal' for the 'hasMother' property of 'Peter_Phillips' is missing the mandatory class ':Ancestor' or ':Woman'.
+      The node 'Princess_Theodora_of_Greece_and_Denmark' is used as the mother of 'Princess_Margarita_of_Baden', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne_Princess_Royal', class=':Ancestor')
+      AssignClass('Princess_Theodora_of_Greece_and_Denmark', ':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Mark_Phillips' for the 'hasFather' property of 'Stephanie_Phillips' is missing the mandatory class ':Ancestor' or ':Man'.
+      The node 'Berthold_Margrave_of_Baden' is used as the father of 'Princess_Margarita_of_Baden', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mark_Phillips', class=':Ancestor')
+      AssignClass('Berthold_Margrave_of_Baden', ':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Philip' for the 'hasFather' property of 'King_Charles_III' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Philip', class=':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Peter_Phillips' for the 'hasFather' property of 'Isla_Phillips' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Peter_Phillips', class=':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Philip' for the 'hasFather' property of 'Anne_Princess_Royal' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Philip', class=':Ancestor')
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Peter_Phillips' for the 'hasFather' property of 'Savannah_Phillips' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Peter_Phillips', class=':Ancestor')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Mark_Phillips' for the 'hasFather' property of 'Zara_Tindall' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mark_Phillips', class=':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Mark_Phillips' for the 'hasFather' property of 'Peter_Phillips' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mark_Phillips', class=':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Mark_Phillips' for the 'hasFather' property of 'Felicity_Wade' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mark_Phillips', class=':Ancestor')
-
-
-  Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Queen_Elizabeth_II' for the 'hasMother' property of 'King_Charles_III' is missing the mandatory class ':Ancestor' or ':Woman'.
+      The node 'Princess_Theodora_of_Greece_and_Denmark' is used as the mother of 'Princess_Margarita_of_Baden', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Elizabeth_II', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Autumn_Kelly' for the 'hasMother' property of 'Isla_Phillips' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Autumn_Kelly', class=':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Queen_Elizabeth_II' for the 'hasMother' property of 'Anne_Princess_Royal' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Elizabeth_II', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Autumn_Kelly' for the 'hasMother' property of 'Savannah_Phillips' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Autumn_Kelly', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Anne_Princess_Royal' for the 'hasMother' property of 'Zara_Tindall' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne_Princess_Royal', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Anne_Princess_Royal' for the 'hasMother' property of 'Peter_Phillips' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne_Princess_Royal', class=':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Mark_Phillips' for the 'hasFather' property of 'Stephanie_Phillips' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mark_Phillips', class=':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Peter_Phillips' for the 'hasFather' property of 'Isla_Phillips' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Peter_Phillips', class=':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Philip' for the 'hasFather' property of 'Anne_Princess_Royal' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Philip', class=':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Peter_Phillips' for the 'hasFather' property of 'Savannah_Phillips' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Peter_Phillips', class=':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Philip' for the 'hasFather' property of 'King_Charles_III' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Philip', class=':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Mark_Phillips' for the 'hasFather' property of 'Zara_Tindall' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mark_Phillips', class=':Ancestor')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Mark_Phillips' for the 'hasFather' property of 'Peter_Phillips' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mark_Phillips', class=':Ancestor')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Mark_Phillips' for the 'hasFather' property of 'Felicity_Wade' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mark_Phillips', class=':Ancestor')
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Autumn_Kelly' for the 'hasMother' property of 'Isla_Phillips' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Autumn_Kelly', class=':Ancestor')
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Queen_Elizabeth_II' for the 'hasMother' property of 'Anne_Princess_Royal' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Elizabeth_II', class=':Ancestor')
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Autumn_Kelly' for the 'hasMother' property of 'Savannah_Phillips' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Autumn_Kelly', class=':Ancestor')
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Queen_Elizabeth_II' for the 'hasMother' property of 'King_Charles_III' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Elizabeth_II', class=':Ancestor')
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Anne_Princess_Royal' for the 'hasMother' property of 'Zara_Tindall' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne_Princess_Royal', class=':Ancestor')
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Anne_Princess_Royal' for the 'hasMother' property of 'Peter_Phillips' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne_Princess_Royal', class=':Ancestor')
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Mark_Phillips' for the 'hasFather' property of 'Stephanie_Phillips' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mark_Phillips', class=':Ancestor')
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Peter_Phillips' for the 'hasFather' property of 'Isla_Phillips' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Peter_Phillips', class=':Ancestor')
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Philip' for the 'hasFather' property of 'Anne_Princess_Royal' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Philip', class=':Ancestor')
-
-
-  Violation [36]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Peter_Phillips' for the 'hasFather' property of 'Savannah_Phillips' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Peter_Phillips', class=':Ancestor')
-
-
-  Violation [37]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Mark_Phillips' for the 'hasFather' property of 'Zara_Tindall' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mark_Phillips', class=':Ancestor')
-
-
-  Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Mark_Phillips' for the 'hasFather' property of 'Felicity_Wade' is missing the mandatory class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Mark_Phillips', class=':Ancestor')
-
-
-  Violation [39]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Autumn_Kelly' for the 'hasMother' property of 'Isla_Phillips' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Autumn_Kelly', class=':Ancestor')
-
-
-  Violation [40]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Queen_Elizabeth_II' for the 'hasMother' property of 'Anne_Princess_Royal' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Elizabeth_II', class=':Ancestor')
-
-
-  Violation [41]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Autumn_Kelly' for the 'hasMother' property of 'Savannah_Phillips' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Autumn_Kelly', class=':Ancestor')
-
-
-  Violation [42]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Anne_Princess_Royal' for the 'hasMother' property of 'Zara_Tindall' is missing the mandatory class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Anne_Princess_Royal', class=':Ancestor')
+      AssignClass('Princess_Theodora_of_Greece_and_Denmark', ':Ancestor')
 
 
 
@@ -1213,55 +998,19 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (6658d71a-09ca-4fd8-8f1c-4e3ed219bd2c)
- Call ID: 6658d71a-09ca-4fd8-8f1c-4e3ed219bd2c
+  AssignClass (c4d4df03-1f7c-4e7f-8e22-a04f9c67c85a)
+ Call ID: c4d4df03-1f7c-4e7f-8e22-a04f9c67c85a
   Args:
+    source: Berthold_Margrave_of_Baden
     type: :Ancestor
-    source: Prince_Philip
-  AssignClass (cce0799d-e55b-4534-8722-09496cf9d327)
- Call ID: cce0799d-e55b-4534-8722-09496cf9d327
+  AssignClass (a3774783-c83b-4e51-a5d6-95bf077e833c)
+ Call ID: a3774783-c83b-4e51-a5d6-95bf077e833c
   Args:
+    source: Princess_Theodora_of_Greece_and_Denmark
     type: :Ancestor
-    source: Mark_Phillips
-  AssignClass (9516f4b7-70aa-4b5d-9f22-fa04657c3980)
- Call ID: 9516f4b7-70aa-4b5d-9f22-fa04657c3980
+  ValidateShacl (7a231c1e-5b65-4d0c-a96a-e47e7bf9a062)
+ Call ID: 7a231c1e-5b65-4d0c-a96a-e47e7bf9a062
   Args:
-    type: :Ancestor
-    source: Queen_Elizabeth_II
-  AssignClass (88a08645-5284-46b1-812b-90a52e110398)
- Call ID: 88a08645-5284-46b1-812b-90a52e110398
-  Args:
-    type: :Ancestor
-    source: Anne_Princess_Royal
-  AssignClass (1b7ba359-5f5f-4cf7-80b5-58c90a7e9e85)
- Call ID: 1b7ba359-5f5f-4cf7-80b5-58c90a7e9e85
-  Args:
-    type: :Ancestor
-    source: Peter_Phillips
-  AssignClass (18f9ad92-048e-4d65-8944-4668138b6f7d)
- Call ID: 18f9ad92-048e-4d65-8944-4668138b6f7d
-  Args:
-    type: :Ancestor
-    source: Autumn_Kelly
-  ValidateShacl (2ba38fb7-dbc6-4d85-835e-dae16279a354)
- Call ID: 2ba38fb7-dbc6-4d85-835e-dae16279a354
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1274,65 +1023,67 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Felicity_Wade a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips .
-
-  data:Isla_Phillips a :Person,
-          :Woman ;
-      :hasFather data:Peter_Phillips ;
-      :hasMother data:Autumn_Kelly .
+  data:Alexander_Crown_Prince_of_Yugoslavia a :Man,
+          :Person .
 
   data:King_Charles_III a :Man,
+          :Person .
+
+  data:King_Paul_of_Greece a :Man,
+          :Person .
+
+  data:King_Peter_II_of_Yugoslavia a :Man,
           :Person ;
-      :hasFather data:Prince_Philip ;
-      :hasMother data:Queen_Elizabeth_II .
+      :hasBrother data:Prince_Tomislav_of_Yugoslavia .
 
-  data:Savannah_Phillips a :Person,
-          :Woman ;
-      :hasFather data:Peter_Phillips ;
-      :hasMother data:Autumn_Kelly .
+  data:King_Simeon_of_Bulgaria a :Man,
+          :Person .
 
-  data:Stephanie_Phillips a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips .
+  data:Prince_Andrew_of_Yugoslavia a :Man,
+          :Person .
 
-  data:Zara_Tindall a :Person,
-          :Woman ;
-      :hasFather data:Mark_Phillips ;
-      :hasMother data:Anne_Princess_Royal .
-
-  data:Anne_Princess_Royal a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Prince_Philip ;
-      :hasMother data:Queen_Elizabeth_II .
-
-  data:Peter_Phillips a :Ancestor,
-          :Man,
+  data:Prince_Philip_Duke_of_Edinburgh a :Man,
           :Person ;
-      :hasBirthYear 1977 ;
-      :hasFather data:Mark_Phillips ;
-      :hasMarriageYear 2008 ;
-      :hasMother data:Anne_Princess_Royal ;
-      :hasRelation data:Autumn_Kelly ;
-      :hasSister data:Zara_Tindall .
+      :hasSister data:Princess_Theodora_of_Greece_and_Denmark .
 
-  data:Prince_Philip a :Ancestor,
+  data:Princess_Beatrix_of_Hohenlohe_Langenburg a :Person,
+          :Woman .
+
+  data:Princess_Christina_of_Hesse a :Person,
+          :Woman .
+
+  data:Princess_Margarita_of_Baden a :Person,
+          :Woman ;
+      :hasBirthYear 1932 ;
+      :hasBrother data:Prince_Maximilian_of_Baden ;
+      :hasDeathYear 2013 ;
+      :hasFather data:Berthold_Margrave_of_Baden ;
+      :hasMarriageYear 1957 ;
+      :hasMother data:Princess_Theodora_of_Greece_and_Denmark ;
+      :hasRelation data:Prince_Tomislav_of_Yugoslavia .
+
+  data:Queen_Anne_Marie_of_Greece a :Person,
+          :Woman .
+
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
+
+  data:Queen_Frederica_of_Greece a :Person,
+          :Woman .
+
+  data:Berthold_Margrave_of_Baden a :Ancestor,
           :Man,
           :Person .
 
-  data:Queen_Elizabeth_II a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Autumn_Kelly a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Mark_Phillips a :Ancestor,
-          :Man,
+  data:Prince_Maximilian_of_Baden a :Man,
           :Person .
+
+  data:Prince_Tomislav_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Princess_Theodora_of_Greece_and_Denmark a :Ancestor,
+          :Person,
+          :Woman .
 
 
 
@@ -1344,6 +1095,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (1bed530e-c0ff-4c11-896c-c9af825a3c80)
- Call ID: 1bed530e-c0ff-4c11-896c-c9af825a3c80
+  Finish (5a59181b-55c8-42df-bb0d-1c681dbb2eaf)
+ Call ID: 5a59181b-55c8-42df-bb0d-1c681dbb2eaf
   Args:

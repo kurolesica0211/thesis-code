@@ -164,6 +164,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -179,39 +181,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -226,6 +198,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -243,6 +232,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -310,29 +314,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -341,6 +337,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -353,6 +357,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -361,17 +367,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -399,6 +407,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -414,145 +506,177 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2bb7fba7-2217-4b9d-afc2-3261d5b531c8)
- Call ID: 2bb7fba7-2217-4b9d-afc2-3261d5b531c8
+  AssignClass (6ce4af44-1f12-43a0-97c2-1e0347e7485c)
+ Call ID: 6ce4af44-1f12-43a0-97c2-1e0347e7485c
   Args:
-    source: Prince Richard, Duke of Gloucester
+    source: Prince_Richard_Duke_of_Gloucester
     type: :Man
-  AddLiteral (4a47d214-6904-45ed-8f71-15299a320ffe)
- Call ID: 4a47d214-6904-45ed-8f71-15299a320ffe
+  AssignClass (b2c454a5-8b66-421d-86d2-874737d56d48)
+ Call ID: b2c454a5-8b66-421d-86d2-874737d56d48
   Args:
-    relation: :alsoKnownAs
-    literal_type: xsd:string
-    source: Prince Richard, Duke of Gloucester
-    literal_value: Richard Alexander Walter George
-  AddLiteral (a25a46f2-214e-46ea-a687-edd0706859e4)
- Call ID: a25a46f2-214e-46ea-a687-edd0706859e4
+    type: :Person
+    source: Prince_Richard_Duke_of_Gloucester
+  AddLiteral (8cf99b43-32f0-43ac-afe1-b714de055df0)
+ Call ID: 8cf99b43-32f0-43ac-afe1-b714de055df0
   Args:
-    relation: :hasBirthYear
-    source: Prince Richard, Duke of Gloucester
-    literal_type: xsd:integer
     literal_value: 1944
-  AssignClass (aacbbea1-6f2e-4408-812d-d21ba68698d6)
- Call ID: aacbbea1-6f2e-4408-812d-d21ba68698d6
+    source: Prince_Richard_Duke_of_Gloucester
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AssignClass (465dd2d7-2a62-4163-935b-9b2b519f64c4)
+ Call ID: 465dd2d7-2a62-4163-935b-9b2b519f64c4
   Args:
+    source: Prince_Henry_Duke_of_Gloucester
     type: :Man
-    source: Prince Henry, Duke of Gloucester
-  AssignClass (1210273f-553f-472f-9dcb-5fd5d457a844)
- Call ID: 1210273f-553f-472f-9dcb-5fd5d457a844
+  AssignClass (d43061fb-7c89-4da6-99b2-caf154515da9)
+ Call ID: d43061fb-7c89-4da6-99b2-caf154515da9
   Args:
-    source: Princess Alice, Duchess of Gloucester
+    type: :Person
+    source: Prince_Henry_Duke_of_Gloucester
+  AssignClass (c047c51b-0ec7-40e7-adf9-54806fb4d792)
+ Call ID: c047c51b-0ec7-40e7-adf9-54806fb4d792
+  Args:
+    source: Princess_Alice_Duchess_of_Gloucester
     type: :Woman
-  AddTriple (b8eb8d72-5545-4db4-89cd-8eca2386f726)
- Call ID: b8eb8d72-5545-4db4-89cd-8eca2386f726
+  AssignClass (08f47a7e-ab83-45bb-9cc7-c64cafb280fa)
+ Call ID: 08f47a7e-ab83-45bb-9cc7-c64cafb280fa
   Args:
-    source: Prince Richard, Duke of Gloucester
+    source: Princess_Alice_Duchess_of_Gloucester
+    type: :Person
+  AddTriple (243d2f87-7574-448b-9e75-cb7e647dac23)
+ Call ID: 243d2f87-7574-448b-9e75-cb7e647dac23
+  Args:
+    source: Prince_Richard_Duke_of_Gloucester
+    target: Prince_Henry_Duke_of_Gloucester
     relation: :hasFather
-    target: Prince Henry, Duke of Gloucester
-  AddTriple (90d9eabe-3624-4439-b4e3-ab0bae9196bb)
- Call ID: 90d9eabe-3624-4439-b4e3-ab0bae9196bb
+  AddTriple (a9fa05ea-c0a7-4b3b-969c-7caccdd2b0c2)
+ Call ID: a9fa05ea-c0a7-4b3b-969c-7caccdd2b0c2
   Args:
-    source: Prince Richard, Duke of Gloucester
-    target: Princess Alice, Duchess of Gloucester
+    source: Prince_Richard_Duke_of_Gloucester
     relation: :hasMother
-  AssignClass (4b4cfbee-9b96-4e66-943c-038583b2c663)
- Call ID: 4b4cfbee-9b96-4e66-943c-038583b2c663
+    target: Princess_Alice_Duchess_of_Gloucester
+  AssignClass (eed6c05c-a2bc-4d93-9925-bed15e035abf)
+ Call ID: eed6c05c-a2bc-4d93-9925-bed15e035abf
   Args:
     type: :Man
-    source: Prince William of Gloucester
-  AddTriple (e7227b2c-2b19-4f17-b0d9-0875eb690fee)
- Call ID: e7227b2c-2b19-4f17-b0d9-0875eb690fee
+    source: George_V
+  AssignClass (e6b045bf-affe-4097-a272-d25d0ea1db92)
+ Call ID: e6b045bf-affe-4097-a272-d25d0ea1db92
   Args:
-    source: Prince Richard, Duke of Gloucester
-    relation: :hasBrother
-    target: Prince William of Gloucester
-  AddTriple (fa21c51c-2955-426b-9d7c-7c3129993f31)
- Call ID: fa21c51c-2955-426b-9d7c-7c3129993f31
+    source: George_V
+    type: :Person
+  AssignClass (3bc1df4a-378a-42b3-9a62-ecb8d6636aa1)
+ Call ID: 3bc1df4a-378a-42b3-9a62-ecb8d6636aa1
   Args:
-    target: Prince Richard, Duke of Gloucester
+    source: Queen_Mary
+    type: :Woman
+  AssignClass (38af3653-225c-40db-b6b5-282de51c637f)
+ Call ID: 38af3653-225c-40db-b6b5-282de51c637f
+  Args:
+    type: :Person
+    source: Queen_Mary
+  AddTriple (46e0cf4c-d9af-4701-95cd-db9dd4a91d17)
+ Call ID: 46e0cf4c-d9af-4701-95cd-db9dd4a91d17
+  Args:
+    relation: :hasFather
+    target: George_V
+    source: Prince_Henry_Duke_of_Gloucester
+  AddTriple (1b728b08-71aa-48d0-9bbb-828cb28f73a5)
+ Call ID: 1b728b08-71aa-48d0-9bbb-828cb28f73a5
+  Args:
+    relation: :hasMother
+    target: Queen_Mary
+    source: Prince_Henry_Duke_of_Gloucester
+  AssignClass (4402f49c-17bd-4cc3-b0f1-8d1268c9e1ed)
+ Call ID: 4402f49c-17bd-4cc3-b0f1-8d1268c9e1ed
+  Args:
+    source: Prince_William_of_Gloucester
+    type: :Man
+  AssignClass (c12b0ecb-d887-4c3d-b652-76cc24e23391)
+ Call ID: c12b0ecb-d887-4c3d-b652-76cc24e23391
+  Args:
+    type: :Person
+    source: Prince_William_of_Gloucester
+  AddTriple (a49ecf5a-1f55-498b-9707-0443e5a1baab)
+ Call ID: a49ecf5a-1f55-498b-9707-0443e5a1baab
+  Args:
+    source: Prince_Richard_Duke_of_Gloucester
     relation: :isBrotherOf
-    source: Prince William of Gloucester
-  AddTriple (c2b193b4-e2fd-4e53-bb1c-6e038c1fe766)
- Call ID: c2b193b4-e2fd-4e53-bb1c-6e038c1fe766
+    target: Prince_William_of_Gloucester
+  AddTriple (ad6e6f43-198d-46a8-9bf2-d630b56dc613)
+ Call ID: ad6e6f43-198d-46a8-9bf2-d630b56dc613
   Args:
-    source: Prince William of Gloucester
+    source: Prince_William_of_Gloucester
     relation: :hasFather
-    target: Prince Henry, Duke of Gloucester
-  AddTriple (f807e4e7-6b8f-40ab-b65c-42da8caa4ff8)
- Call ID: f807e4e7-6b8f-40ab-b65c-42da8caa4ff8
+    target: Prince_Henry_Duke_of_Gloucester
+  AddTriple (70d7c69a-1dee-4d8f-a3eb-39efd1b05365)
+ Call ID: 70d7c69a-1dee-4d8f-a3eb-39efd1b05365
   Args:
-    source: Prince William of Gloucester
+    target: Princess_Alice_Duchess_of_Gloucester
     relation: :hasMother
-    target: Princess Alice, Duchess of Gloucester
-  AddLiteral (e4dd227f-bd48-4945-98c6-7428352c07e7)
- Call ID: e4dd227f-bd48-4945-98c6-7428352c07e7
+    source: Prince_William_of_Gloucester
+  AddLiteral (7788db68-24b9-4e62-9cd9-57073ede2be9)
+ Call ID: 7788db68-24b9-4e62-9cd9-57073ede2be9
   Args:
-    source: Prince William of Gloucester
-    literal_type: xsd:integer
+    source: Prince_William_of_Gloucester
     literal_value: 1972
+    literal_type: xsd:integer
     relation: :hasDeathYear
-  AssignClass (eedb74d0-7571-4010-99e0-88e5d38c1740)
- Call ID: eedb74d0-7571-4010-99e0-88e5d38c1740
+  AssignClass (f3e4a403-7b29-470a-a796-38e9237bf268)
+ Call ID: f3e4a403-7b29-470a-a796-38e9237bf268
   Args:
-    source: Birgitte van Deurs Henriksen
+    type: :Man
+    source: John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch
+  AssignClass (fc33bf30-24cb-4932-97a3-94a06f3531d1)
+ Call ID: fc33bf30-24cb-4932-97a3-94a06f3531d1
+  Args:
+    type: :Person
+    source: John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch
+  AssignClass (44d65a87-ce49-4cbf-b406-32d0a898bc00)
+ Call ID: 44d65a87-ce49-4cbf-b406-32d0a898bc00
+  Args:
+    source: Lady_Margaret_Bridgeman
     type: :Woman
-  AddTriple (df82dd59-607f-4ff9-9295-c01abec68ff4)
- Call ID: df82dd59-607f-4ff9-9295-c01abec68ff4
+  AssignClass (b1d53270-1f8f-4571-8ca1-7bcb808437d2)
+ Call ID: b1d53270-1f8f-4571-8ca1-7bcb808437d2
   Args:
-    source: Prince Richard, Duke of Gloucester
+    source: Lady_Margaret_Bridgeman
+    type: :Person
+  AddTriple (cb887b8a-868e-4f4f-89f1-8285f492decb)
+ Call ID: cb887b8a-868e-4f4f-89f1-8285f492decb
+  Args:
+    source: Princess_Alice_Duchess_of_Gloucester
+    relation: :hasFather
+    target: John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch
+  AddTriple (d52be7e9-8793-48fa-a98c-71483a4cf091)
+ Call ID: d52be7e9-8793-48fa-a98c-71483a4cf091
+  Args:
+    relation: :hasMother
+    target: Lady_Margaret_Bridgeman
+    source: Princess_Alice_Duchess_of_Gloucester
+  AssignClass (ac949736-93dd-4d0e-96ec-0bf687980f54)
+ Call ID: ac949736-93dd-4d0e-96ec-0bf687980f54
+  Args:
+    source: Birgitte_van_Deurs_Henriksen
+    type: :Woman
+  AssignClass (f6d74f85-e84f-49ba-b8aa-d19670655e75)
+ Call ID: f6d74f85-e84f-49ba-b8aa-d19670655e75
+  Args:
+    source: Birgitte_van_Deurs_Henriksen
+    type: :Person
+  AddTriple (3c81fdee-2b87-405a-86a1-9c3e26a4839e)
+ Call ID: 3c81fdee-2b87-405a-86a1-9c3e26a4839e
+  Args:
     relation: :hasRelation
-    target: Birgitte van Deurs Henriksen
-  AddLiteral (a4692d7b-da1e-43cf-90ed-7a229b7e0c5b)
- Call ID: a4692d7b-da1e-43cf-90ed-7a229b7e0c5b
+    target: Birgitte_van_Deurs_Henriksen
+    source: Prince_Richard_Duke_of_Gloucester
+  AddLiteral (9616f176-ebaf-4713-b2f0-0dcc89ba736c)
+ Call ID: 9616f176-ebaf-4713-b2f0-0dcc89ba736c
   Args:
-    literal_value: 1972
-    source: Prince Richard, Duke of Gloucester
-    literal_type: xsd:integer
     relation: :hasMarriageYear
-  AssignClass (0d7edb88-b704-46fb-ad70-ae667585dec0)
- Call ID: 0d7edb88-b704-46fb-ad70-ae667585dec0
-  Args:
-    type: :Man
-    source: King George V
-  AssignClass (863f1e43-96e4-4e21-897e-43830ed4e75f)
- Call ID: 863f1e43-96e4-4e21-897e-43830ed4e75f
-  Args:
-    type: :Woman
-    source: Queen Mary
-  AddTriple (332d644c-898f-4c08-9f9a-7c42ae5cda7b)
- Call ID: 332d644c-898f-4c08-9f9a-7c42ae5cda7b
-  Args:
-    source: Prince Henry, Duke of Gloucester
-    relation: :hasFather
-    target: King George V
-  AddTriple (2c707eeb-af49-4c18-9c21-33d7a4ff141d)
- Call ID: 2c707eeb-af49-4c18-9c21-33d7a4ff141d
-  Args:
-    target: Queen Mary
-    relation: :hasMother
-    source: Prince Henry, Duke of Gloucester
-  AssignClass (f36a34f4-2869-4f1c-b553-d5f4af1c0c62)
- Call ID: f36a34f4-2869-4f1c-b553-d5f4af1c0c62
-  Args:
-    type: :Man
-    source: John Montagu Douglas Scott, 7th Duke of Buccleuch
-  AssignClass (1b98de27-c966-40c6-93dc-a22712c5f57b)
- Call ID: 1b98de27-c966-40c6-93dc-a22712c5f57b
-  Args:
-    source: Lady Margaret Bridgeman
-    type: :Woman
-  AddTriple (ec65b194-984c-4292-84d6-128786499f36)
- Call ID: ec65b194-984c-4292-84d6-128786499f36
-  Args:
-    source: Princess Alice, Duchess of Gloucester
-    relation: :hasFather
-    target: John Montagu Douglas Scott, 7th Duke of Buccleuch
-  AddTriple (74d8ee99-3ab1-44d9-ade4-fde4ebf32e6f)
- Call ID: 74d8ee99-3ab1-44d9-ade4-fde4ebf32e6f
-  Args:
-    target: Lady Margaret Bridgeman
-    relation: :hasMother
-    source: Princess Alice, Duchess of Gloucester
-  Finish (dfaa0f5e-6554-4aa2-8d4c-9c6a7fcc56c6)
- Call ID: dfaa0f5e-6554-4aa2-8d4c-9c6a7fcc56c6
+    literal_type: xsd:integer
+    literal_value: 1972
+    source: Prince_Richard_Duke_of_Gloucester
+  Finish (4ffa159a-8883-43c9-9a97-2b3b89ca7264)
+ Call ID: 4ffa159a-8883-43c9-9a97-2b3b89ca7264
   Args:

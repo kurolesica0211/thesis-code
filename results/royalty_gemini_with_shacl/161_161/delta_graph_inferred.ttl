@@ -1,0 +1,467 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Aimone_4th_Duke_of_Aosta a :Man ;
+    :hasBrother data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone_4th_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Aimone_4th_Duke_of_Aosta .
+
+data:German_Emperor_Frederick_III a :Ancestor,
+        :Man ;
+    :hasBrother data:German_Emperor_Frederick_III ;
+    :hasChild data:Princess_Sophie_of_Prussia ;
+    :hasDaughter data:Princess_Sophie_of_Prussia ;
+    :hasRelation data:Amedeo_5th_Duke_of_Aosta,
+        data:German_Emperor_Frederick_III,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Prussia ;
+    :isAncestorOf data:Amedeo_5th_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Prussia ;
+    :isBloodrelationOf data:German_Emperor_Frederick_III ;
+    :isBrotherOf data:German_Emperor_Frederick_III ;
+    :isFatherOf data:Princess_Sophie_of_Prussia ;
+    :isParentOf data:Princess_Sophie_of_Prussia ;
+    :isSiblingOf data:German_Emperor_Frederick_III ;
+    :isUncleOf data:Princess_Sophie_of_Prussia .
+
+data:Queen_Victoria_of_the_United_Kingdom a :Ancestor,
+        :Woman ;
+    :hasChild data:Empress_Victoria_Princess_Royal ;
+    :hasDaughter data:Empress_Victoria_Princess_Royal ;
+    :hasRelation data:Amedeo_5th_Duke_of_Aosta,
+        data:Empress_Victoria_Princess_Royal,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Prussia,
+        data:Queen_Victoria_of_the_United_Kingdom ;
+    :hasSister data:Queen_Victoria_of_the_United_Kingdom ;
+    :isAncestorOf data:Amedeo_5th_Duke_of_Aosta,
+        data:Empress_Victoria_Princess_Royal,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Prussia ;
+    :isAuntOf data:Empress_Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Queen_Victoria_of_the_United_Kingdom ;
+    :isMotherOf data:Empress_Victoria_Princess_Royal ;
+    :isParentOf data:Empress_Victoria_Princess_Royal ;
+    :isSiblingOf data:Queen_Victoria_of_the_United_Kingdom ;
+    :isSisterOf data:Queen_Victoria_of_the_United_Kingdom .
+
+data:Grand_Duchess_Olga_Konstantinovna_of_Russia a :Ancestor,
+        :Woman ;
+    :hasChild data:King_Constantine_I_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:George_of_Greece,
+        data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:Helen_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSister data:Grand_Duchess_Olga_Konstantinovna_of_Russia ;
+    :hasSon data:King_Constantine_I_of_Greece ;
+    :isAncestorOf data:Amedeo_5th_Duke_of_Aosta,
+        data:King_Constantine_I_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isAuntOf data:King_Constantine_I_of_Greece ;
+    :isBloodrelationOf data:Grand_Duchess_Olga_Konstantinovna_of_Russia ;
+    :isMotherOf data:King_Constantine_I_of_Greece ;
+    :isParentOf data:King_Constantine_I_of_Greece ;
+    :isSiblingOf data:Grand_Duchess_Olga_Konstantinovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Olga_Konstantinovna_of_Russia .
+
+data:King_George_I_of_Greece a :Ancestor,
+        :Man ;
+    :hasBrother data:King_George_I_of_Greece ;
+    :hasChild data:King_Constantine_I_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSon data:King_Constantine_I_of_Greece ;
+    :isAncestorOf data:Amedeo_5th_Duke_of_Aosta,
+        data:King_Constantine_I_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:King_George_I_of_Greece ;
+    :isBrotherOf data:King_George_I_of_Greece ;
+    :isFatherOf data:King_Constantine_I_of_Greece ;
+    :isParentOf data:King_Constantine_I_of_Greece ;
+    :isSiblingOf data:King_George_I_of_Greece ;
+    :isUncleOf data:King_Constantine_I_of_Greece .
+
+data:Prince_Albert_of_Saxe-Coburg_and_Gotha a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+    :hasChild data:Empress_Victoria_Princess_Royal ;
+    :hasDaughter data:Empress_Victoria_Princess_Royal ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Empress_Victoria_Princess_Royal,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Prussia ;
+    :isAncestorOf data:Amedeo_5th_Duke_of_Aosta,
+        data:Empress_Victoria_Princess_Royal,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Prussia ;
+    :isBloodrelationOf data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+    :isBrotherOf data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+    :isFatherOf data:Empress_Victoria_Princess_Royal ;
+    :isParentOf data:Empress_Victoria_Princess_Royal ;
+    :isSiblingOf data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+    :isUncleOf data:Empress_Victoria_Princess_Royal .
+
+data:King_Constantine_I_of_Greece a :Ancestor,
+        :Man ;
+    :hasAncestor data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:King_George_I_of_Greece ;
+    :hasBrother data:King_Constantine_I_of_Greece ;
+    :hasChild data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasFather data:King_George_I_of_Greece ;
+    :hasMother data:Grand_Duchess_Olga_Konstantinovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:King_George_I_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:George_of_Greece,
+        data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:Helen_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isAncestorOf data:Amedeo_5th_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:King_Constantine_I_of_Greece ;
+    :isBrotherOf data:King_Constantine_I_of_Greece ;
+    :isChildOf data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:King_George_I_of_Greece ;
+    :isFatherOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:King_Constantine_I_of_Greece ;
+    :isSonOf data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:King_George_I_of_Greece ;
+    :isUncleOf data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Princess_Sophie_of_Prussia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Empress_Victoria_Princess_Royal,
+        data:German_Emperor_Frederick_III,
+        data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Queen_Victoria_of_the_United_Kingdom ;
+    :hasChild data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasFather data:German_Emperor_Frederick_III ;
+    :hasMother data:Empress_Victoria_Princess_Royal ;
+    :hasParent data:Empress_Victoria_Princess_Royal,
+        data:German_Emperor_Frederick_III ;
+    :hasRelation data:Amedeo_5th_Duke_of_Aosta,
+        data:Empress_Victoria_Princess_Royal,
+        data:German_Emperor_Frederick_III,
+        data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Prussia,
+        data:Queen_Victoria_of_the_United_Kingdom ;
+    :hasSister data:Princess_Sophie_of_Prussia ;
+    :isAncestorOf data:Amedeo_5th_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Sophie_of_Prussia ;
+    :isChildOf data:Empress_Victoria_Princess_Royal,
+        data:German_Emperor_Frederick_III ;
+    :isDaughterOf data:Empress_Victoria_Princess_Royal,
+        data:German_Emperor_Frederick_III ;
+    :isMotherOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Sophie_of_Prussia ;
+    :isSisterOf data:Princess_Sophie_of_Prussia .
+
+data:Alexander_of_Greece a :Man ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Empress_Victoria_Princess_Royal,
+        data:George_of_Greece,
+        data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:Helen_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSister data:Helen_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isUncleOf data:Amedeo_5th_Duke_of_Aosta .
+
+data:George_of_Greece a :Man ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Empress_Victoria_Princess_Royal,
+        data:George_of_Greece,
+        data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:Helen_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSister data:Helen_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isUncleOf data:Amedeo_5th_Duke_of_Aosta .
+
+data:Helen_of_Greece a :Woman ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Empress_Victoria_Princess_Royal,
+        data:George_of_Greece,
+        data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:Helen_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSister data:Helen_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isAuntOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSisterOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Paul_of_Greece a :Man ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Paul_of_Greece ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Empress_Victoria_Princess_Royal,
+        data:George_of_Greece,
+        data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:Helen_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSister data:Helen_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isBrotherOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isUncleOf data:Amedeo_5th_Duke_of_Aosta .
+
+data:Empress_Victoria_Princess_Royal a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Queen_Victoria_of_the_United_Kingdom ;
+    :hasChild data:Princess_Sophie_of_Prussia ;
+    :hasDaughter data:Princess_Sophie_of_Prussia ;
+    :hasFather data:Prince_Albert_of_Saxe-Coburg_and_Gotha ;
+    :hasMother data:Queen_Victoria_of_the_United_Kingdom ;
+    :hasParent data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Queen_Victoria_of_the_United_Kingdom ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Empress_Victoria_Princess_Royal,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Prussia,
+        data:Queen_Victoria_of_the_United_Kingdom ;
+    :hasSister data:Empress_Victoria_Princess_Royal ;
+    :isAncestorOf data:Amedeo_5th_Duke_of_Aosta,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Prussia ;
+    :isAuntOf data:Princess_Sophie_of_Prussia ;
+    :isBloodrelationOf data:Empress_Victoria_Princess_Royal ;
+    :isChildOf data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Queen_Victoria_of_the_United_Kingdom ;
+    :isDaughterOf data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Queen_Victoria_of_the_United_Kingdom ;
+    :isMotherOf data:Princess_Sophie_of_Prussia ;
+    :isParentOf data:Princess_Sophie_of_Prussia ;
+    :isSiblingOf data:Empress_Victoria_Princess_Royal ;
+    :isSisterOf data:Empress_Victoria_Princess_Royal .
+
+data:Amedeo_5th_Duke_of_Aosta a :Man ;
+    :hasAncestor data:Empress_Victoria_Princess_Royal,
+        data:German_Emperor_Frederick_III,
+        data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Prussia,
+        data:Queen_Victoria_of_the_United_Kingdom ;
+    :hasBrother data:Amedeo_5th_Duke_of_Aosta ;
+    :hasMother data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasParent data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Empress_Victoria_Princess_Royal,
+        data:George_of_Greece,
+        data:German_Emperor_Frederick_III,
+        data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:Helen_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Prussia,
+        data:Queen_Victoria_of_the_United_Kingdom ;
+    :isBloodrelationOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isBrotherOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isChildOf data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSiblingOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isSonOf data:Princess_Irene_of_Greece_and_Denmark .
+
+data:Princess_Irene_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Empress_Victoria_Princess_Royal,
+        data:German_Emperor_Frederick_III,
+        data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Princess_Sophie_of_Prussia,
+        data:Queen_Victoria_of_the_United_Kingdom ;
+    :hasBirthYear 1904 ;
+    :hasBrother data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Paul_of_Greece ;
+    :hasChild data:Amedeo_5th_Duke_of_Aosta ;
+    :hasDeathYear 1974 ;
+    :hasFather data:King_Constantine_I_of_Greece ;
+    :hasMarriageYear 1939 ;
+    :hasMother data:Princess_Sophie_of_Prussia ;
+    :hasParent data:King_Constantine_I_of_Greece,
+        data:Princess_Sophie_of_Prussia ;
+    :hasRelation data:Alexander_of_Greece,
+        data:Amedeo_5th_Duke_of_Aosta,
+        data:Empress_Victoria_Princess_Royal,
+        data:George_of_Greece,
+        data:German_Emperor_Frederick_III,
+        data:Grand_Duchess_Olga_Konstantinovna_of_Russia,
+        data:Helen_of_Greece,
+        data:King_Constantine_I_of_Greece,
+        data:King_George_I_of_Greece,
+        data:Paul_of_Greece,
+        data:Prince_Aimone_4th_Duke_of_Aosta,
+        data:Prince_Albert_of_Saxe-Coburg_and_Gotha,
+        data:Princess_Irene_of_Greece_and_Denmark,
+        data:Princess_Sophie_of_Prussia,
+        data:Queen_Victoria_of_the_United_Kingdom ;
+    :hasSister data:Helen_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :hasSon data:Amedeo_5th_Duke_of_Aosta ;
+    :isAncestorOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isAuntOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isBloodrelationOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isChildOf data:King_Constantine_I_of_Greece,
+        data:Princess_Sophie_of_Prussia ;
+    :isDaughterOf data:King_Constantine_I_of_Greece,
+        data:Princess_Sophie_of_Prussia ;
+    :isMotherOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isParentOf data:Amedeo_5th_Duke_of_Aosta ;
+    :isSiblingOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark ;
+    :isSisterOf data:Alexander_of_Greece,
+        data:George_of_Greece,
+        data:Helen_of_Greece,
+        data:Paul_of_Greece,
+        data:Princess_Irene_of_Greece_and_Denmark .
+

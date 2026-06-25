@@ -2,28 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Margarita_of_Baden a :Person,
-        :Woman ;
-    :hasBirthYear 1932 ;
-    :hasBrother data:Prince_Maximilian ;
-    :hasDeathYear 2013 ;
-    :hasFather data:Berthold_Margrave_of_Baden ;
-    :hasMarriageYear 1957 ;
-    :hasMother data:Theodora_of_Greece_and_Denmark ;
-    :hasRelation data:Prince_Tomislav_of_Yugoslavia ;
-    :hasSex "Female"^^xsd:string .
-
-data:Berthold_Margrave_of_Baden a :Man,
+data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta a :Man,
         :Person ;
-    :hasSex "Male"^^xsd:string .
+    :isFatherOf data:Prince_Carlos_of_Bourbon-Two_Sicilies .
 
-data:Prince_Maximilian a :Man,
-        :Person .
+data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias a :Person,
+        :Woman .
 
-data:Prince_Tomislav_of_Yugoslavia a :Man,
-        :Person .
+data:Prince_Pedro_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasBirthYear 1968 ;
+    :hasFather data:Infante_Carlos_Duke_of_Calabria ;
+    :hasMarriageYear 2001 ;
+    :hasMother data:Princess_Anne_of_Orl%C3%A9ans .
 
-data:Theodora_of_Greece_and_Denmark a :Person,
+data:Sof%C3%ADa_Landaluce_y_Melgarejo a :Person,
         :Woman ;
-    :hasSex "Female"^^xsd:string .
+    :hasBirthYear 1973 ;
+    :hasFather data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez ;
+    :hasMother data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez .
+
+data:Infante_Carlos_Duke_of_Calabria a :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2015 .
+
+data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez a :Man,
+        :Person .
+
+data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez a :Person,
+        :Woman .
+
+data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Ferdinand_of_Bourbon-Two_Sicilies .
+
+data:Prince_Ferdinand_of_Bourbon-Two_Sicilies a :Man,
+        :Person .
+
+data:Princess_Anne_of_Orl%C3%A9ans a :Person,
+        :Woman .
 

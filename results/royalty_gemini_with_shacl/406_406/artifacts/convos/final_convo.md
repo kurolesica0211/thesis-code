@@ -85,29 +85,34 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Margaret Rhodes (née Elphinstone; 9 June 1925 – 25 November 2016) was a British aristocrat, niece of Queen Elizabeth the Queen Mother and first cousin of Queen Elizabeth II and Princess Margaret, Countess of Snowdon.
-From 1991 to 2002, she served as Woman of the Bedchamber to her aunt, the Queen Mother.
-Early life and education
+Lady Helen Marina Lucy Taylor (née Windsor; born 28 April 1964) is a relative of the British royal family.
+She is the daughter of Prince Edward, Duke of Kent, and Katharine, Duchess of Kent, and a great-granddaughter of King George V.
 
-Born The Honourable Margaret Elphinstone in Westminster, London, Rhodes was the youngest daughter of the 16th Lord Elphinstone and his wife, Lady Mary Bowes-Lyon, an elder sister of Queen Elizabeth the Queen Mother.
-Less than a year older than her cousin Elizabeth, she was a frequent playmate of the future Queen.
-On 20 November 1947, she was a bridesmaid to Princess Elizabeth at her wedding to Philip Mountbatten, Duke of Edinburgh.
-She was a Woman of the Bedchamber – a mix of lady-in-waiting and companion – to her aunt Queen Elizabeth the Queen Mother, from 1991 until the latter's death in 2002.
-In the 2000 Birthday Honours Rhodes was appointed Lieutenant of the Royal Victorian Order (LVO).
-In the run-up to the Queen's 80th birthday in April 2006, Rhodes gave an interview to the BBC in which she stated her belief that the Queen would not abdicate.
-Rhodes appeared in seven documentaries about her first cousin Queen Elizabeth II.
-On 27 November 2016, Buckingham Palace confirmed that Rhodes had died, aged 91, on 25 November following a short illness.
-The Queen and the Duke of Edinburgh attended her funeral in the Royal Chapel of All Saints, Windsor Great Park, on 12 December 2016, accompanied by the Duke of York, the Earl and Countess of Wessex, the Duke and Duchess of Gloucester, and Princess Alexandra, The Hon.
-Lady Ogilvy.
-Personal life
 
-On 31 July 1950, she married the writer Denys Gravenor Rhodes (1919–1981), with Princess Margaret as one of the bridesmaids.
+Early life and youth
+
+Lady Helen Marina Lucy Windsor was born on 28 April 1964 at Coppins, a country house in Iver, Buckinghamshire, the only daughter of the Duke and Duchess of Kent.
+According to Lol Tolhurst of The Cure, Helen was a "mad Cure fan" who visited the band backstage at a gig in Bath in 1983.
+Helen worked with the art dealer Karsten Schubert between 1987 and 1991, behind the front desk, and was later credited with discovering Rachel Whiteread and Gary Hume, but confessed in a television interview that she had turned down representing artist Damien Hirst.
+For 17 years, Helen was a fashion ambassador and muse to Giorgio Armani.
+Marriage and children
+
+At some point Helen reportedly dated David Flint Wood, who would later marry her cousin India Hicks.
+At 19, Helen met Timothy Verner Taylor (born 8 August 1963), an art dealer.
+Helen and her husband have four children, who immediately follow her in the Line of succession to the British throne:
+
+
+Charity work
+
+She is a patron of the CLIC Sargent children's cancer charity.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -123,39 +128,9 @@ On 31 July 1950, she married the writer Denys Gravenor Rhodes (1919–1981), wit
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -170,6 +145,23 @@ On 31 July 1950, she married the writer Denys Gravenor Rhodes (1919–1981), wit
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -187,6 +179,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -254,29 +261,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -285,6 +284,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -297,6 +304,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -305,17 +314,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -343,6 +354,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -358,108 +453,102 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b39eb57b-7748-486a-a548-bf59fc717c1b)
- Call ID: b39eb57b-7748-486a-a548-bf59fc717c1b
+  AssignClass (0336c1d0-0440-445f-a6c2-ff9ab6fe6021)
+ Call ID: 0336c1d0-0440-445f-a6c2-ff9ab6fe6021
   Args:
-    source: Margaret_Rhodes
-    type: :Person
-  AssignClass (a6d571aa-c9cd-422f-8268-e7a3fcdf6560)
- Call ID: a6d571aa-c9cd-422f-8268-e7a3fcdf6560
-  Args:
+    source: :Lady_Helen_Taylor
     type: :Woman
-    source: Margaret_Rhodes
-  AddLiteral (1b5636d6-5f9c-4c84-816f-2d168186dcb8)
- Call ID: 1b5636d6-5f9c-4c84-816f-2d168186dcb8
+  AssignClass (a92e3c8a-821f-4677-814e-576d26af535d)
+ Call ID: a92e3c8a-821f-4677-814e-576d26af535d
   Args:
-    literal_value: 1925
-    source: Margaret_Rhodes
-    literal_type: xsd:integer
+    source: :Prince_Edward_Duke_of_Kent
+    type: :Man
+  AssignClass (6cf28078-7a86-4ff5-9314-f3eebbb9e32f)
+ Call ID: 6cf28078-7a86-4ff5-9314-f3eebbb9e32f
+  Args:
+    source: :Katharine_Duchess_of_Kent
+    type: :Woman
+  AssignClass (e2498335-3492-4b17-abdc-fdf0839615c9)
+ Call ID: e2498335-3492-4b17-abdc-fdf0839615c9
+  Args:
+    source: :King_George_V
+    type: :Man
+  AssignClass (57dc3bf0-0066-46ca-a10d-8f5d1b2f7c46)
+ Call ID: 57dc3bf0-0066-46ca-a10d-8f5d1b2f7c46
+  Args:
+    source: :Timothy_Verner_Taylor
+    type: :Man
+  AddLiteral (cd4d9940-c4e9-4518-b66a-1e14bdb7377a)
+ Call ID: cd4d9940-c4e9-4518-b66a-1e14bdb7377a
+  Args:
     relation: :hasBirthYear
-  AddLiteral (24fde6fa-09e1-48ea-95d0-41ba6df93336)
- Call ID: 24fde6fa-09e1-48ea-95d0-41ba6df93336
-  Args:
-    relation: :hasDeathYear
+    source: :Lady_Helen_Taylor
+    literal_value: 1964
     literal_type: xsd:integer
-    source: Margaret_Rhodes
-    literal_value: 2016
-  AssignClass (95c62e26-94d1-44fa-8df4-6d7fc1b7a2f7)
- Call ID: 95c62e26-94d1-44fa-8df4-6d7fc1b7a2f7
+  AddLiteral (72762541-9ba6-44a3-b973-976423fb954a)
+ Call ID: 72762541-9ba6-44a3-b973-976423fb954a
   Args:
-    source: 16th_Lord_Elphinstone
-    type: :Person
-  AssignClass (63491324-8fef-426b-aed0-58cffc78589f)
- Call ID: 63491324-8fef-426b-aed0-58cffc78589f
-  Args:
-    type: :Man
-    source: 16th_Lord_Elphinstone
-  AssignClass (3d7ef18d-c3a0-4171-91b5-fb8534a11bc0)
- Call ID: 3d7ef18d-c3a0-4171-91b5-fb8534a11bc0
-  Args:
-    type: :Person
-    source: Lady_Mary_Bowes-Lyon
-  AssignClass (7464b1df-73f9-42e3-b056-9f7ed7d22b9b)
- Call ID: 7464b1df-73f9-42e3-b056-9f7ed7d22b9b
-  Args:
-    source: Lady_Mary_Bowes-Lyon
-    type: :Woman
-  AddTriple (92e88616-aabd-49f0-a1d9-b157b0c0f6df)
- Call ID: 92e88616-aabd-49f0-a1d9-b157b0c0f6df
-  Args:
-    source: 16th_Lord_Elphinstone
-    target: Margaret_Rhodes
-    relation: :isFatherOf
-  AddTriple (20ea02b4-52bd-41fd-ad2e-b49d9b9fffff)
- Call ID: 20ea02b4-52bd-41fd-ad2e-b49d9b9fffff
-  Args:
-    relation: :isMotherOf
-    source: Lady_Mary_Bowes-Lyon
-    target: Margaret_Rhodes
-  AssignClass (3f20042d-dc20-48c4-a112-fafb02cf8480)
- Call ID: 3f20042d-dc20-48c4-a112-fafb02cf8480
-  Args:
-    source: Queen_Elizabeth_the_Queen_Mother
-    type: :Person
-  AssignClass (d32404c6-6f8b-41d1-8ca9-f56b7b3897b2)
- Call ID: d32404c6-6f8b-41d1-8ca9-f56b7b3897b2
-  Args:
-    type: :Woman
-    source: Queen_Elizabeth_the_Queen_Mother
-  AddTriple (ef87aaf7-3b90-491c-9ec3-01b97731135d)
- Call ID: ef87aaf7-3b90-491c-9ec3-01b97731135d
-  Args:
-    relation: :isSisterOf
-    source: Lady_Mary_Bowes-Lyon
-    target: Queen_Elizabeth_the_Queen_Mother
-  AssignClass (2efa0798-9586-433a-a46f-498f10ca7d2d)
- Call ID: 2efa0798-9586-433a-a46f-498f10ca7d2d
-  Args:
-    source: Denys_Gravenor_Rhodes
-    type: :Person
-  AssignClass (181d0d7a-6047-4017-a80c-530265018b43)
- Call ID: 181d0d7a-6047-4017-a80c-530265018b43
-  Args:
-    source: Denys_Gravenor_Rhodes
-    type: :Man
-  AddLiteral (195e47dc-480c-4ba1-8da8-1e690f4d073a)
- Call ID: 195e47dc-480c-4ba1-8da8-1e690f4d073a
-  Args:
+    source: :Timothy_Verner_Taylor
+    relation: :hasBirthYear
+    literal_value: 1963
     literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: Margaret_Rhodes
-    literal_value: 1950
-  AddTriple (156f14c1-0e68-42eb-b99e-ed44b8a441e4)
- Call ID: 156f14c1-0e68-42eb-b99e-ed44b8a441e4
+  AddTriple (f5e1176b-b661-4373-927d-c08fc2c0296d)
+ Call ID: f5e1176b-b661-4373-927d-c08fc2c0296d
   Args:
-    target: Denys_Gravenor_Rhodes
-    source: Margaret_Rhodes
-    relation: :hasRelation
-  Finish (87ad3acd-cc40-406a-b2db-7c7061ba2e7c)
- Call ID: 87ad3acd-cc40-406a-b2db-7c7061ba2e7c
+    target: :Prince_Edward_Duke_of_Kent
+    source: :Lady_Helen_Taylor
+    relation: :hasFather
+  AddTriple (e017b168-4c52-44cc-a65b-0ff0a647d26e)
+ Call ID: e017b168-4c52-44cc-a65b-0ff0a647d26e
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Lady_Helen_Taylor
+    relation: :hasMother
+    target: :Katharine_Duchess_of_Kent
+  AddTriple (72e7c602-2e83-479a-bd5a-1621c1b9b59a)
+ Call ID: 72e7c602-2e83-479a-bd5a-1621c1b9b59a
+  Args:
+    target: :King_George_V
+    relation: :hasAncestor
+    source: :Lady_Helen_Taylor
+  AddTriple (2c9111a5-e0a4-47f5-b99f-8c9bee54e235)
+ Call ID: 2c9111a5-e0a4-47f5-b99f-8c9bee54e235
+  Args:
+    target: :Female
+    relation: :hasSex
+    source: :Lady_Helen_Taylor
+  AddTriple (cc5a6943-0e43-426f-88ab-3983e57c57ea)
+ Call ID: cc5a6943-0e43-426f-88ab-3983e57c57ea
+  Args:
+    relation: :hasSex
+    source: :Prince_Edward_Duke_of_Kent
+    target: :Male
+  AddTriple (4df54f35-66c0-4924-8bb1-2d710056922c)
+ Call ID: 4df54f35-66c0-4924-8bb1-2d710056922c
+  Args:
+    source: :Katharine_Duchess_of_Kent
+    relation: :hasSex
+    target: :Female
+  AddTriple (5508abc0-b534-4716-b2b2-7acd41410c73)
+ Call ID: 5508abc0-b534-4716-b2b2-7acd41410c73
+  Args:
+    relation: :hasSex
+    source: :King_George_V
+    target: :Male
+  AddTriple (95073d5b-2ba7-4d4e-be34-db8bce64588e)
+ Call ID: 95073d5b-2ba7-4d4e-be34-db8bce64588e
+  Args:
+    relation: :hasSex
+    source: :Timothy_Verner_Taylor
+    target: :Male
+  AddTriple (ccbabd59-08c4-4b3f-97ae-c098715088df)
+ Call ID: ccbabd59-08c4-4b3f-97ae-c098715088df
+  Args:
+    relation: :knownAs
+    source: :Lady_Helen_Taylor
+    target: :Lady_Helen_Marina_Lucy_Windsor
+  Finish (830431a5-2988-4bdc-8e0c-d3e8dee812d7)
+ Call ID: 830431a5-2988-4bdc-8e0c-d3e8dee812d7
+  Args:
 
 ================================= Tool Message =================================
 
@@ -528,27 +617,26 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:16th_Lord_Elphinstone a :Man,
-          :Person ;
-      :isFatherOf data:Margaret_Rhodes .
+  data:Lady_Helen_Taylor a :Woman ;
+      :hasAncestor data:King_George_V ;
+      :hasBirthYear 1964 ;
+      :hasFather data:Prince_Edward_Duke_of_Kent ;
+      :hasMother data:Katharine_Duchess_of_Kent ;
+      :hasSex data:Female ;
+      :knownAs data:Lady_Helen_Marina_Lucy_Windsor .
 
-  data:Lady_Mary_Bowes-Lyon a :Person,
-          :Woman ;
-      :isMotherOf data:Margaret_Rhodes ;
-      :isSisterOf data:Queen_Elizabeth_the_Queen_Mother .
+  data:Timothy_Verner_Taylor a :Man ;
+      :hasBirthYear 1963 ;
+      :hasSex data:Male .
 
-  data:Denys_Gravenor_Rhodes a :Man,
-          :Person .
+  data:Katharine_Duchess_of_Kent a :Woman ;
+      :hasSex data:Female .
 
-  data:Queen_Elizabeth_the_Queen_Mother a :Person,
-          :Woman .
+  data:King_George_V a :Man ;
+      :hasSex data:Male .
 
-  data:Margaret_Rhodes a :Person,
-          :Woman ;
-      :hasBirthYear 1925 ;
-      :hasDeathYear 2016 ;
-      :hasMarriageYear 1950 ;
-      :hasRelation data:Denys_Gravenor_Rhodes .
+  data:Prince_Edward_Duke_of_Kent a :Man ;
+      :hasSex data:Male .
 
 
 
@@ -560,30 +648,406 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (5e151a80-36b6-4598-9361-23fb13e0fad0)
- Call ID: 5e151a80-36b6-4598-9361-23fb13e0fad0
+  ValidateShacl (e0c4f25f-d989-489c-affa-d89aebcdffd2)
+ Call ID: e0c4f25f-d989-489c-affa-d89aebcdffd2
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:2
+Total violations:49
 Violations:
 
   Violation [1]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node Lady_Mary_Bowes-Lyon is used as a subject of the property :isMotherOf, but it lacks the required class assignment of :Ancestor.
+      The value 'Male' for property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node Lady_Mary_Bowes-Lyon.
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [2]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The node 16th_Lord_Elphinstone is used as a subject of the property :isFatherOf, but it lacks the required class assignment of :Ancestor.
+      The value 'Male' for property 'hasSex' on node 'Prince_Edward_Duke_of_Kent' is missing the required class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node 16th_Lord_Elphinstone.
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [3]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Timothy_Verner_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [4]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [5]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Prince_Edward_Duke_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [6]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Timothy_Verner_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [7]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [8]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Timothy_Verner_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [9]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Lady_Helen_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [10]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Katharine_Duchess_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Prince_Edward_Duke_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value 'King_George_V' for property 'hasAncestor' on node 'Lady_Helen_Taylor' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_George_V', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Prince_Edward_Duke_of_Kent' for property 'hasFather' on node 'Lady_Helen_Taylor' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Edward_Duke_of_Kent', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Katharine_Duchess_of_Kent' for property 'hasMother' on node 'Lady_Helen_Taylor' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Katharine_Duchess_of_Kent', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Timothy_Verner_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Lady_Helen_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Katharine_Duchess_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Prince_Edward_Duke_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [21]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Timothy_Verner_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [22]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Lady_Helen_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [23]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Katharine_Duchess_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [24]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Prince_Edward_Duke_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [25]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [26]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Timothy_Verner_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Lady_Helen_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [28]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Katharine_Duchess_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [29]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Prince_Edward_Duke_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [30]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value 'King_George_V' for property 'hasAncestor' on node 'Lady_Helen_Taylor' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_George_V', class=':Ancestor')
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Prince_Edward_Duke_of_Kent' for property 'hasFather' on node 'Lady_Helen_Taylor' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Edward_Duke_of_Kent', class=':Ancestor')
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Katharine_Duchess_of_Kent' for property 'hasMother' on node 'Lady_Helen_Taylor' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Katharine_Duchess_of_Kent', class=':Ancestor')
+
+
+  Violation [33]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [34]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Timothy_Verner_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [35]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Lady_Helen_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [36]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Katharine_Duchess_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [37]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Prince_Edward_Duke_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [38]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [39]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Timothy_Verner_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [40]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Lady_Helen_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [41]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Katharine_Duchess_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [42]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for property 'hasSex' on node 'Prince_Edward_Duke_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [43]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value 'King_George_V' for property 'hasAncestor' on node 'Lady_Helen_Taylor' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='King_George_V', class=':Ancestor')
+
+
+  Violation [44]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Prince_Edward_Duke_of_Kent' for property 'hasFather' on node 'Lady_Helen_Taylor' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Edward_Duke_of_Kent', class=':Ancestor')
+
+
+  Violation [45]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Katharine_Duchess_of_Kent' for property 'hasMother' on node 'Lady_Helen_Taylor' is missing the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Katharine_Duchess_of_Kent', class=':Ancestor')
+
+
+  Violation [46]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Katharine_Duchess_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [47]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Lady_Helen_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [48]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Katharine_Duchess_of_Kent' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [49]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for property 'hasSex' on node 'Lady_Helen_Taylor' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
 
 
 
@@ -592,16 +1056,46 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (6f67d7f0-46a8-40a9-8979-a34de6f742b9)
- Call ID: 6f67d7f0-46a8-40a9-8979-a34de6f742b9
+  AssignClass (8443d519-84b9-4276-bad6-28ca3aba3526)
+ Call ID: 8443d519-84b9-4276-bad6-28ca3aba3526
   Args:
-    source: 16th_Lord_Elphinstone
-    type: :Ancestor
-  AssignClass (cb16867a-8c34-40a1-81b0-d0834fc39d58)
- Call ID: cb16867a-8c34-40a1-81b0-d0834fc39d58
+    source: :Male
+    type: :Sex
+  AssignClass (6e587fff-e8fc-4fc7-8f4d-4b0efdbd49db)
+ Call ID: 6e587fff-e8fc-4fc7-8f4d-4b0efdbd49db
   Args:
-    source: Lady_Mary_Bowes-Lyon
+    source: :Female
+    type: :Sex
+  AssignClass (bc9f5c4f-c90e-4591-b579-8b618b2c80dd)
+ Call ID: bc9f5c4f-c90e-4591-b579-8b618b2c80dd
+  Args:
+    source: :King_George_V
     type: :Ancestor
+  AssignClass (b6018d46-4a1b-4dc7-9e96-2827fceaf97f)
+ Call ID: b6018d46-4a1b-4dc7-9e96-2827fceaf97f
+  Args:
+    source: :Prince_Edward_Duke_of_Kent
+    type: :Ancestor
+  AssignClass (77c27057-549a-459e-9c75-a8fae75f431d)
+ Call ID: 77c27057-549a-459e-9c75-a8fae75f431d
+  Args:
+    source: :Katharine_Duchess_of_Kent
+    type: :Ancestor
+  Finish (a7b9906e-e819-45ce-837e-b1a8a5a52612)
+ Call ID: a7b9906e-e819-45ce-837e-b1a8a5a52612
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -614,38 +1108,46 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:16th_Lord_Elphinstone a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:Margaret_Rhodes .
+  data:Lady_Helen_Taylor a :Woman ;
+      :hasAncestor data:King_George_V ;
+      :hasBirthYear 1964 ;
+      :hasFather data:Prince_Edward_Duke_of_Kent ;
+      :hasMother data:Katharine_Duchess_of_Kent ;
+      :hasSex data:Female ;
+      :knownAs data:Lady_Helen_Marina_Lucy_Windsor .
 
-  data:Lady_Mary_Bowes-Lyon a :Ancestor,
-          :Person,
+  data:Timothy_Verner_Taylor a :Man ;
+      :hasBirthYear 1963 ;
+      :hasSex data:Male .
+
+  data:Katharine_Duchess_of_Kent a :Ancestor,
           :Woman ;
-      :isMotherOf data:Margaret_Rhodes ;
-      :isSisterOf data:Queen_Elizabeth_the_Queen_Mother .
+      :hasSex data:Female .
 
-  data:Denys_Gravenor_Rhodes a :Man,
-          :Person .
+  data:King_George_V a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
 
-  data:Queen_Elizabeth_the_Queen_Mother a :Person,
-          :Woman .
+  data:Prince_Edward_Duke_of_Kent a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
 
-  data:Margaret_Rhodes a :Person,
-          :Woman ;
-      :hasBirthYear 1925 ;
-      :hasDeathYear 2016 ;
-      :hasMarriageYear 1950 ;
-      :hasRelation data:Denys_Gravenor_Rhodes .
+  data:Female a :Sex .
+
+  data:Male a :Sex .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (6baec37a-8226-4e6c-80c6-8c263138d9c5)
- Call ID: 6baec37a-8226-4e6c-80c6-8c263138d9c5
+  ValidateShacl (2f800d8e-4b93-4c77-829f-5fc8298ecaa5)
+ Call ID: 2f800d8e-4b93-4c77-829f-5fc8298ecaa5
   Args:
 
 ================================= Tool Message =================================
@@ -656,6 +1158,37 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (eaa29fbf-6702-4b74-9289-ed55bc3bdd0e)
- Call ID: eaa29fbf-6702-4b74-9289-ed55bc3bdd0e
+  Finish (de4e9e06-65a6-498d-adb2-9d3e15df3a26)
+ Call ID: de4e9e06-65a6-498d-adb2-9d3e15df3a26
+  Args:
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Lady_Helen_Marina_Lucy_Windsor']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (5f7ec131-1dae-4721-a3bc-456d5c6bb7cc)
+ Call ID: 5f7ec131-1dae-4721-a3bc-456d5c6bb7cc
+  Args:
+    type: :Person
+    source: :Lady_Helen_Marina_Lucy_Windsor
+  Finish (5e64ba2a-6deb-4acb-8dfb-040f1eb45e0c)
+ Call ID: 5e64ba2a-6deb-4acb-8dfb-040f1eb45e0c
   Args:

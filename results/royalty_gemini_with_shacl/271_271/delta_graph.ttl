@@ -2,29 +2,23 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:James_Robert_Bruce_Ogilvy a :Man,
-        :Person ;
-    :hasBirthYear 1964 ;
-    :hasMarriageYear 1988 ;
-    :hasRelation data:Julia_Caroline_Rawlinson ;
-    :hasSex data:Male ;
-    :hasSister data:Marina_Ogilvy .
+data:Edward_Edmund_Maximilian_George_Windsor a :Man ;
+    :alsoKnownAs "Baron Downpatrick"^^xsd:string ;
+    :hasBirthYear 1988 ;
+    :hasFather data:George_Windsor_Earl_of_St_Andrews ;
+    :hasMother data:Sylvana_Countess_of_St_Andrews ;
+    :knownAs "Eddy Downpatrick"^^xsd:string .
 
-data:Charles_Frederick_Melville_Rawlinson a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Lord_Nicholas_Windsor a :Man ;
+    :hasFather data:Prince_Edward_Duke_of_Kent .
 
-data:Julia_Caroline_Rawlinson a :Person,
-        :Woman ;
-    :hasFather data:Charles_Frederick_Melville_Rawlinson ;
-    :hasSex data:Female .
+data:George_Windsor_Earl_of_St_Andrews a :Ancestor,
+        :Man ;
+    :hasFather data:Prince_Edward_Duke_of_Kent .
 
-data:Marina_Ogilvy a :Person,
-        :Woman ;
-    :hasSex data:Female .
+data:Sylvana_Countess_of_St_Andrews a :Ancestor,
+        :Woman .
 
-data:Female a :Sex .
-
-data:Male a :Sex .
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man .
 

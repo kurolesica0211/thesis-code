@@ -7,74 +7,10 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Marina_Karella a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Marina Karella" ;
-    data:posIndicesFull "1028:1042" ;
-    data:wdtLink wdt:Q2623984 ;
-    :hasChild data:Princess_Alexandra_of_Greece ;
-    :hasDaughter data:Princess_Alexandra_of_Greece ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Alexandra_of_Greece ;
-    :isParentOf data:Princess_Alexandra_of_Greece .
-
-data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Christopher of Greece and Denmark" ;
-    data:posIndicesFull "1881:1921" ;
-    data:posIndicesPart "2130:2136",
-        "2260:2266",
-        "2300:2306" ;
-    data:wdtLink wdt:Q447757 ;
-    :alsoKnownAs "Christo",
-        "Prince Christophoros of Greece and Denmark" ;
-    :hasChild data:Prince_Michael_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Michael_of_Greece_and_Denmark ;
-    :isFatherOf data:Prince_Michael_of_Greece_and_Denmark ;
-    :isParentOf data:Prince_Michael_of_Greece_and_Denmark .
-
-data:Princess_Françoise_of_Orléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Françoise of Orléans" ;
-    data:posIndicesFull "1881:1921" ;
-    data:posIndicesPart "2002:2010",
-        "2225:2233" ;
-    data:wdtLink wdt:Q577228 ;
-    :alsoKnownAs "Françoise Isabelle Louise Marie d'Orléans",
-        "Françoise Isabelle Louise Marie of Orléans",
-        "Françoise of Guise",
-        "Françoise of Orléans",
-        "Princess Christopher of Greece and Denmark",
-        "Princess François d'Orléans",
-        "Princess Françoise Isabelle Louise Marie d'Orléans",
-        "Princess Françoise Isabelle Louise Marie of Orléans",
-        "Princess Françoise, Princess Christopher of Greece and Denmark" ;
-    :hasChild data:Prince_Michael_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Michael_of_Greece_and_Denmark ;
-    :isMotherOf data:Prince_Michael_of_Greece_and_Denmark ;
-    :isParentOf data:Prince_Michael_of_Greece_and_Denmark .
-
-data:Princess_Alexandra_of_Greece a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Alexandra_of_Greece a :Person ;
     rdfs:label "Princess Alexandra of Greece" ;
     data:posIndicesFull "78:127" ;
     data:posIndicesPart "1071:1079",
-        "1130:1136",
         "1299:1307",
         "1308:1317",
         "1396:1404",
@@ -99,26 +35,77 @@ data:Princess_Alexandra_of_Greece a :Person,
     data:wdtLink wdt:Q13091129 ;
     :alsoKnownAs "Alexandra zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Greece",
         "Princess Alexandra Elli Francisca Maria of Greece" ;
-    :hasFather data:Prince_Michael_of_Greece_and_Denmark ;
-    :hasMother data:Marina_Karella ;
     :hasParent data:Marina_Karella,
         data:Prince_Michael_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :isChildOf data:Marina_Karella,
-        data:Prince_Michael_of_Greece_and_Denmark ;
-    :isDaughterOf data:Marina_Karella,
-        data:Prince_Michael_of_Greece_and_Denmark .
+    :hasSex data:female .
 
-data:Prince_Michael_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:George_I_of_Greece a :Person ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "1118:1126",
+        "1118:1136" ;
+    data:posIndicesPart "1644:1650",
+        "2260:2266" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasSex data:male .
+
+data:Marina_Karella a :Person ;
+    rdfs:label "Marina Karella" ;
+    data:posIndicesFull "1028:1042" ;
+    data:wdtLink wdt:Q2623984 ;
+    :hasSex data:female .
+
+data:Olga_Constantinovna_of_Russia a :Person ;
+    rdfs:label "Olga Constantinovna of Russia" ;
+    data:posIndicesFull "1141:1170" ;
+    data:posIndicesPart "2234:2238" ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece",
+        "Queen Olga of Greece" ;
+    :hasSex data:female .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Christopher of Greece and Denmark" ;
+    data:posIndicesFull "1881:1921" ;
+    data:posIndicesPart "2130:2136",
+        "2260:2266",
+        "2300:2306" ;
+    data:wdtLink wdt:Q447757 ;
+    :alsoKnownAs "Christo",
+        "Prince Christophoros of Greece and Denmark" ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male .
+
+data:Prince_Jean_dOrléans_1 a :Person ;
+    rdfs:label "Prince Jean d’Orléans" ;
+    data:posIndicesFull "1209:1235" ;
+    data:posIndicesPart "2130:2136",
+        "2300:2306" ;
+    data:wdtLink wdt:Q578791 ;
+    :alsoKnownAs "Jean Pierre Clément Marie d’Orléans",
+        "Jean d’Orléans",
+        "Prince Jean Pierre Clément Marie d’Orléans",
+        "Prince Jean, Duke of Guise" ;
+    :hasSex data:male .
+
+data:Prince_Michael_of_Greece_and_Denmark a :Person ;
     rdfs:label "Prince Michael of Greece and Denmark" ;
     data:posIndicesFull "291:327",
         "976:1012" ;
-    data:posIndicesPart "1130:1136",
-        "1209:1215",
-        "1287:1294",
+    data:posIndicesPart "1287:1294",
         "1644:1650",
         "2130:2136",
         "2137:2144",
@@ -128,17 +115,29 @@ data:Prince_Michael_of_Greece_and_Denmark a :Ancestor,
         "772:778" ;
     data:wdtLink wdt:Q724825 ;
     :alsoKnownAs "Michel de Grece" ;
-    :hasChild data:Princess_Alexandra_of_Greece ;
-    :hasDaughter data:Princess_Alexandra_of_Greece ;
-    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
-    :hasMother data:Princess_Françoise_of_Orléans ;
     :hasParent data:Prince_Christopher_of_Greece_and_Denmark,
         data:Princess_Françoise_of_Orléans ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Christopher_of_Greece_and_Denmark,
-        data:Princess_Françoise_of_Orléans ;
-    :isFatherOf data:Princess_Alexandra_of_Greece ;
-    :isParentOf data:Princess_Alexandra_of_Greece ;
-    :isSonOf data:Prince_Christopher_of_Greece_and_Denmark,
-        data:Princess_Françoise_of_Orléans .
+    :hasSex data:male .
+
+data:Princess_Françoise_of_Orléans a :Person ;
+    rdfs:label "Princess Françoise of Orléans" ;
+    data:posIndicesFull "1881:1921" ;
+    data:posIndicesPart "2002:2010",
+        "2225:2233" ;
+    data:wdtLink wdt:Q577228 ;
+    :alsoKnownAs "Françoise Isabelle Louise Marie d'Orléans",
+        "Françoise Isabelle Louise Marie of Orléans",
+        "Françoise of Guise",
+        "Françoise of Orléans",
+        "Princess Christopher of Greece and Denmark",
+        "Princess François d'Orléans",
+        "Princess Françoise Isabelle Louise Marie d'Orléans",
+        "Princess Françoise Isabelle Louise Marie of Orléans",
+        "Princess Françoise, Princess Christopher of Greece and Denmark" ;
+    :hasParent data:Prince_Jean_dOrléans_1 ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

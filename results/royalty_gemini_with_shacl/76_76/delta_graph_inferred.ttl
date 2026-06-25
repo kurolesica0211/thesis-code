@@ -1,0 +1,168 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Dr_Tomas_Ortiz_y_Valero a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Dr_Tomas_Ortiz_y_Valero ;
+    :hasChild data:Son_of_Mariam_and_Tomas ;
+    :hasRelation data:Dr_Tomas_Ortiz_y_Valero,
+        data:Princess_Mariam_de_Bagration,
+        data:Son_of_Mariam_and_Tomas ;
+    :hasSon data:Son_of_Mariam_and_Tomas ;
+    :isAncestorOf data:Son_of_Mariam_and_Tomas ;
+    :isBloodrelationOf data:Dr_Tomas_Ortiz_y_Valero ;
+    :isBrotherOf data:Dr_Tomas_Ortiz_y_Valero ;
+    :isFatherOf data:Son_of_Mariam_and_Tomas ;
+    :isParentOf data:Son_of_Mariam_and_Tomas ;
+    :isSiblingOf data:Dr_Tomas_Ortiz_y_Valero ;
+    :isUncleOf data:Son_of_Mariam_and_Tomas .
+
+data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Mariam_de_Bagration ;
+    :hasDaughter data:Princess_Mariam_de_Bagration ;
+    :hasRelation data:Bagrat_de_Bagration,
+        data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Jorge_de_Bagration,
+        data:Princess_Mariam_de_Bagration,
+        data:Son_of_Mariam_and_Tomas ;
+    :hasSister data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon ;
+    :isAncestorOf data:Princess_Mariam_de_Bagration,
+        data:Son_of_Mariam_and_Tomas ;
+    :isAuntOf data:Princess_Mariam_de_Bagration ;
+    :isBloodrelationOf data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon ;
+    :isMotherOf data:Princess_Mariam_de_Bagration ;
+    :isParentOf data:Princess_Mariam_de_Bagration ;
+    :isSiblingOf data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon ;
+    :isSisterOf data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon .
+
+data:Prince_Irakli_Bagration_of_Mukhrani a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasChild data:Princess_Mariam_de_Bagration ;
+    :hasDaughter data:Princess_Mariam_de_Bagration ;
+    :hasRelation data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Mariam_de_Bagration,
+        data:Son_of_Mariam_and_Tomas ;
+    :isAncestorOf data:Princess_Mariam_de_Bagration,
+        data:Son_of_Mariam_and_Tomas ;
+    :isBloodrelationOf data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isBrotherOf data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isFatherOf data:Princess_Mariam_de_Bagration ;
+    :isParentOf data:Princess_Mariam_de_Bagration ;
+    :isSiblingOf data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isUncleOf data:Princess_Mariam_de_Bagration .
+
+data:Bagrat_de_Bagration a :Man,
+        :Person ;
+    :hasBrother data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration ;
+    :hasRelation data:Bagrat_de_Bagration,
+        data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Jorge_de_Bagration,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Mariam_de_Bagration ;
+    :hasSister data:Princess_Mariam_de_Bagration ;
+    :isBloodrelationOf data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration,
+        data:Princess_Mariam_de_Bagration ;
+    :isBrotherOf data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration,
+        data:Princess_Mariam_de_Bagration ;
+    :isSiblingOf data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration,
+        data:Princess_Mariam_de_Bagration ;
+    :isUncleOf data:Son_of_Mariam_and_Tomas .
+
+data:Jorge_de_Bagration a :Man,
+        :Person ;
+    :hasBrother data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration ;
+    :hasRelation data:Bagrat_de_Bagration,
+        data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Jorge_de_Bagration,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Mariam_de_Bagration ;
+    :hasSister data:Princess_Mariam_de_Bagration ;
+    :isBloodrelationOf data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration,
+        data:Princess_Mariam_de_Bagration ;
+    :isBrotherOf data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration,
+        data:Princess_Mariam_de_Bagration ;
+    :isSiblingOf data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration,
+        data:Princess_Mariam_de_Bagration ;
+    :isUncleOf data:Son_of_Mariam_and_Tomas .
+
+data:Son_of_Mariam_and_Tomas a :Man,
+        :Person ;
+    :hasAncestor data:Dr_Tomas_Ortiz_y_Valero,
+        data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Mariam_de_Bagration ;
+    :hasBrother data:Son_of_Mariam_and_Tomas ;
+    :hasFather data:Dr_Tomas_Ortiz_y_Valero ;
+    :hasMother data:Princess_Mariam_de_Bagration ;
+    :hasParent data:Dr_Tomas_Ortiz_y_Valero,
+        data:Princess_Mariam_de_Bagration ;
+    :hasRelation data:Dr_Tomas_Ortiz_y_Valero,
+        data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Mariam_de_Bagration,
+        data:Son_of_Mariam_and_Tomas ;
+    :isBloodrelationOf data:Son_of_Mariam_and_Tomas ;
+    :isBrotherOf data:Son_of_Mariam_and_Tomas ;
+    :isChildOf data:Dr_Tomas_Ortiz_y_Valero,
+        data:Princess_Mariam_de_Bagration ;
+    :isSiblingOf data:Son_of_Mariam_and_Tomas ;
+    :isSonOf data:Dr_Tomas_Ortiz_y_Valero,
+        data:Princess_Mariam_de_Bagration .
+
+data:Princess_Mariam_de_Bagration a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasBirthYear 1947 ;
+    :hasBrother data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration ;
+    :hasChild data:Son_of_Mariam_and_Tomas ;
+    :hasFather data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasMarriageYear 1982 ;
+    :hasMother data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon ;
+    :hasParent data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :hasRelation data:Bagrat_de_Bagration,
+        data:Dr_Tomas_Ortiz_y_Valero,
+        data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Jorge_de_Bagration,
+        data:Prince_Irakli_Bagration_of_Mukhrani,
+        data:Princess_Mariam_de_Bagration,
+        data:Son_of_Mariam_and_Tomas ;
+    :hasSister data:Princess_Mariam_de_Bagration ;
+    :hasSon data:Son_of_Mariam_and_Tomas ;
+    :isAncestorOf data:Son_of_Mariam_and_Tomas ;
+    :isAuntOf data:Son_of_Mariam_and_Tomas ;
+    :isBloodrelationOf data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration,
+        data:Princess_Mariam_de_Bagration ;
+    :isChildOf data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isDaughterOf data:Infanta_Maria_de_las_Mercedes_de_Baviera_y_Borbon,
+        data:Prince_Irakli_Bagration_of_Mukhrani ;
+    :isMotherOf data:Son_of_Mariam_and_Tomas ;
+    :isParentOf data:Son_of_Mariam_and_Tomas ;
+    :isSiblingOf data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration,
+        data:Princess_Mariam_de_Bagration ;
+    :isSisterOf data:Bagrat_de_Bagration,
+        data:Jorge_de_Bagration,
+        data:Princess_Mariam_de_Bagration .
+

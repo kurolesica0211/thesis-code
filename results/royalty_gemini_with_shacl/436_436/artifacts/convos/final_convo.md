@@ -85,23 +85,42 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Michael Albemarle Bowes-Lyon (29 May 1940 – 30 October 2023) was a British banker and nephew of Queen Elizabeth The Queen Mother.
+Simon Patrick Bowes-Lyon, 19th and 6th Earl of Strathmore and Kinghorne (born 18 June 1986), styled as Lord Glamis until 2016, is a Scottish peer and landowner, the owner of estates based at Glamis Castle.
+The eldest son of Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne, and his first wife, Isobel Weatherall, he is a second cousin once removed of King Charles III, whose maternal grandmother was a Bowes-Lyon.
+In 2021, Strathmore pleaded guilty to sexually assaulting a woman at his ancestral home, Glamis Castle, and as a result served five months in prison.
 Biography
 
-Bowes-Lyon was the second son and youngest child of Lieutenant-Colonel
-The Honourable Michael Claude Hamilton Bowes-Lyon (1893–1953) and Elizabeth Margaret Cator (1899–1959).
-He was page to his cousin, Princess Margaret, at the coronation of Queen Elizabeth II in 1953.
-He was also page to his aunt, the Queen Mother, when she was installed as chancellor of the University of London in November 1955.
-Bowes-Lyon was recruited to Coutts in 1963, later joining the board of directors in 1969.
-Subsequently, Bowes-Lyon received the courtesy title The Honourable and precedence of the younger son of an earl by royal warrant of precedence on 15 February 1974.
-He was a favourite nephew of Queen Elizabeth The Queen Mother and a frequent guest of hers at Royal Lodge.
-Bowes-Lyon died at the age of 83 on 30 October 2023.
+Simon Patrick Bowes-Lyon was born on 18 June 1986 into the Bowes-Lyon family.
+His father, Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne, was a politician, soldier, and businessman, as well as a hereditary peer.
+His mother is Isobel Weatherall, daughter of Captain Anthony Edward Weatherall.
+Strathmore is a great-great-nephew of Queen Elizabeth the Queen Mother and thus a second cousin once removed of King Charles III and third cousin of his son, Prince William.
+On his father's death on 27 February 2016, the then-Lord Glamis succeeded as 19th Earl.
+In 2017 Strathmore decided to renovate Glamis House, a property on his estate and a childhood home of the Queen Mother, for use as a self-catering holiday home.
+From 2016 to 2018, he was a director of Ark Hill Wind Farm Ltd. Strathmore is the chieftain of the Strathmore Highland Games, which takes place annually in the grounds of Glamis Castle.
+COVID-19 violation
+
+In June 2020, Durham Police contacted the Earl for violating the COVID-19-related travel restrictions then in place.
+A report said Strathmore travelled 200 miles (320 km) to Holwick Lodge, Middleton-in-Teesdale, and that his butler was spotted buying newspapers.
+Sexual assault conviction
+
+In 2021, Strathmore was charged with sexual assault after admitting to attacking a 26-year-old woman at his Scottish home, Glamis Castle, in early 2020.
+On 12 January 2021, Strathmore was granted bail and placed on the Violent and Sex Offender Register (ViSOR) by Sheriff Alistair Carmichael at Dundee Sheriff Court.
+The Times reported calls for Strathmore to be removed as the Chieftain of the annual Strathmore Highland Games and as the President of the Angus Ball.
+Drink driving conviction
+
+On 10 November 2023, the Earl was convicted of drink driving at Perth Sheriff Court.
+The Earl gave a reading of 55 mcg per 100 ml of breath; the legal limit is 22 mcg, therefore, he was 2.5 times over the legal limit.
+Titles and styles
+
+In addition to the Earldom of Strathmore and Kinghorne, Strathmore holds the following subsidiary titles: 17th Viscount Lyon, 19th Lord Lyon and Glamis, 26th Lord Glamis, 17th Lord Glamis, Tannadyce, Sidlaw and Strathdichtie, and 7th Baron Bowes, of Streatlam Castle.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -117,39 +136,9 @@ Bowes-Lyon died at the age of 83 on 30 October 2023.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -164,6 +153,23 @@ Bowes-Lyon died at the age of 83 on 30 October 2023.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -181,6 +187,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -248,29 +269,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -279,6 +292,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -291,6 +312,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -299,17 +322,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -337,6 +362,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -352,139 +461,96 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c1f0796d-d50e-49f5-8a4a-ae17c21298a4)
- Call ID: c1f0796d-d50e-49f5-8a4a-ae17c21298a4
+  AssignClass (e507b345-e751-41a3-b594-5783bc47b1e5)
+ Call ID: e507b345-e751-41a3-b594-5783bc47b1e5
   Args:
+    source: :Simon_Patrick_Bowes-Lyon
     type: :Man
-    source: Michael_Albemarle_Bowes-Lyon
-  AssignClass (3a10f368-3f4d-49fd-a872-f16465a0a9ea)
- Call ID: 3a10f368-3f4d-49fd-a872-f16465a0a9ea
+  AssignClass (2962e177-21e0-4977-a848-704ace5afbc0)
+ Call ID: 2962e177-21e0-4977-a848-704ace5afbc0
   Args:
+    source: :Simon_Patrick_Bowes-Lyon
     type: :Person
-    source: Michael_Albemarle_Bowes-Lyon
-  AddLiteral (4045f2e4-67c4-4645-96be-8e1e8a775528)
- Call ID: 4045f2e4-67c4-4645-96be-8e1e8a775528
+  AddLiteral (bf108348-c8f8-44f0-87d9-5525e2192fa3)
+ Call ID: bf108348-c8f8-44f0-87d9-5525e2192fa3
   Args:
-    source: Michael_Albemarle_Bowes-Lyon
-    literal_value: 1940
     literal_type: xsd:integer
+    source: :Simon_Patrick_Bowes-Lyon
+    literal_value: 1986
     relation: :hasBirthYear
-  AddLiteral (ef3ae37b-c9e8-4187-92d8-a536f5721021)
- Call ID: ef3ae37b-c9e8-4187-92d8-a536f5721021
+  AssignClass (24c39966-1035-49da-a5b3-926f52e96d8e)
+ Call ID: 24c39966-1035-49da-a5b3-926f52e96d8e
   Args:
-    source: Michael_Albemarle_Bowes-Lyon
-    literal_value: 2023
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AssignClass (6dd4fe30-cde7-4d6f-b7d5-725b024a6085)
- Call ID: 6dd4fe30-cde7-4d6f-b7d5-725b024a6085
-  Args:
+    source: :Michael_Bowes-Lyon
     type: :Man
-    source: Michael_Claude_Hamilton_Bowes-Lyon
-  AssignClass (2f6c54fc-3e78-467a-b1b7-580bf7d8ef46)
- Call ID: 2f6c54fc-3e78-467a-b1b7-580bf7d8ef46
+  AssignClass (4b7af45f-a675-4d40-806d-10be5008f5c0)
+ Call ID: 4b7af45f-a675-4d40-806d-10be5008f5c0
   Args:
+    source: :Michael_Bowes-Lyon
     type: :Person
-    source: Michael_Claude_Hamilton_Bowes-Lyon
-  AssignClass (53b9cd6c-15b1-4c3b-b004-7162d0bd8642)
- Call ID: 53b9cd6c-15b1-4c3b-b004-7162d0bd8642
+  AssignClass (68412e6b-3637-47c2-ba2c-5a8aa8a9ffe8)
+ Call ID: 68412e6b-3637-47c2-ba2c-5a8aa8a9ffe8
   Args:
     type: :Ancestor
-    source: Michael_Claude_Hamilton_Bowes-Lyon
-  AddLiteral (fb727927-f054-4545-8622-76cf243f4199)
- Call ID: fb727927-f054-4545-8622-76cf243f4199
+    source: :Michael_Bowes-Lyon
+  AddTriple (d359f96e-8004-4a61-8c7a-4e194de99026)
+ Call ID: d359f96e-8004-4a61-8c7a-4e194de99026
   Args:
-    relation: :hasBirthYear
-    source: Michael_Claude_Hamilton_Bowes-Lyon
-    literal_value: 1893
-    literal_type: xsd:integer
-  AddLiteral (6805a215-fd44-4d4a-8014-c92244784890)
- Call ID: 6805a215-fd44-4d4a-8014-c92244784890
-  Args:
-    relation: :hasDeathYear
-    source: Michael_Claude_Hamilton_Bowes-Lyon
-    literal_value: 1953
-    literal_type: xsd:integer
-  AssignClass (a7dce70b-bce6-4e79-818e-2a118e868178)
- Call ID: a7dce70b-bce6-4e79-818e-2a118e868178
+    relation: :hasFather
+    target: :Michael_Bowes-Lyon
+    source: :Simon_Patrick_Bowes-Lyon
+  AssignClass (b80f1257-e833-4484-965a-16eaefa9ad8b)
+ Call ID: b80f1257-e833-4484-965a-16eaefa9ad8b
   Args:
     type: :Woman
-    source: Elizabeth_Margaret_Cator
-  AssignClass (cbff2bac-9514-48e9-be27-67ed10a4c1d0)
- Call ID: cbff2bac-9514-48e9-be27-67ed10a4c1d0
+    source: :Isobel_Weatherall
+  AssignClass (0abe6576-f8ec-4346-866a-24e3bdf88337)
+ Call ID: 0abe6576-f8ec-4346-866a-24e3bdf88337
   Args:
     type: :Person
-    source: Elizabeth_Margaret_Cator
-  AssignClass (30f5e3fc-96c1-4c02-8b31-dde7c209b2e3)
- Call ID: 30f5e3fc-96c1-4c02-8b31-dde7c209b2e3
+    source: :Isobel_Weatherall
+  AssignClass (dd1de78b-bdeb-4b00-a992-1e2da5216de5)
+ Call ID: dd1de78b-bdeb-4b00-a992-1e2da5216de5
   Args:
+    source: :Isobel_Weatherall
     type: :Ancestor
-    source: Elizabeth_Margaret_Cator
-  AddLiteral (375e4793-4c94-4b70-92e5-1cf71b288faf)
- Call ID: 375e4793-4c94-4b70-92e5-1cf71b288faf
-  Args:
-    source: Elizabeth_Margaret_Cator
-    literal_value: 1899
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (867d1338-acc4-4100-84c0-4093b094636e)
- Call ID: 867d1338-acc4-4100-84c0-4093b094636e
-  Args:
-    relation: :hasDeathYear
-    source: Elizabeth_Margaret_Cator
-    literal_value: 1959
-    literal_type: xsd:integer
-  AddTriple (300a2750-21f8-4b45-9164-8a0b08e34d8b)
- Call ID: 300a2750-21f8-4b45-9164-8a0b08e34d8b
-  Args:
-    source: Michael_Albemarle_Bowes-Lyon
-    relation: :hasFather
-    target: Michael_Claude_Hamilton_Bowes-Lyon
-  AddTriple (1c0f03cb-5605-4761-bd9b-ba14531a1a5d)
- Call ID: 1c0f03cb-5605-4761-bd9b-ba14531a1a5d
+  AddTriple (0587a724-8262-4b9b-a9f6-6979f9ec8bb0)
+ Call ID: 0587a724-8262-4b9b-a9f6-6979f9ec8bb0
   Args:
     relation: :hasMother
-    target: Elizabeth_Margaret_Cator
-    source: Michael_Albemarle_Bowes-Lyon
-  AssignClass (912ddf11-3859-470d-914b-d0befdf4fb23)
- Call ID: 912ddf11-3859-470d-914b-d0befdf4fb23
+    source: :Simon_Patrick_Bowes-Lyon
+    target: :Isobel_Weatherall
+  AssignClass (2fecaa41-476f-45e7-bf49-8470311815ba)
+ Call ID: 2fecaa41-476f-45e7-bf49-8470311815ba
   Args:
-    type: :Woman
-    source: Queen_Elizabeth_The_Queen_Mother
-  AssignClass (2542010d-4b9e-405a-8717-9d827f3ee8cb)
- Call ID: 2542010d-4b9e-405a-8717-9d827f3ee8cb
+    type: :Man
+    source: :Anthony_Edward_Weatherall
+  AssignClass (61102325-6dd5-448d-904c-db3157f5c63c)
+ Call ID: 61102325-6dd5-448d-904c-db3157f5c63c
   Args:
+    source: :Anthony_Edward_Weatherall
     type: :Person
-    source: Queen_Elizabeth_The_Queen_Mother
-  AssignClass (1d528388-48b0-4b5a-b9f4-0547d64014cd)
- Call ID: 1d528388-48b0-4b5a-b9f4-0547d64014cd
+  AssignClass (c880c6b9-b898-4811-9b63-35edc1d39272)
+ Call ID: c880c6b9-b898-4811-9b63-35edc1d39272
   Args:
-    type: :Woman
-    source: Princess_Margaret
-  AssignClass (f118fcb1-3663-4616-929a-36e6b90e3482)
- Call ID: f118fcb1-3663-4616-929a-36e6b90e3482
+    source: :Anthony_Edward_Weatherall
+    type: :Ancestor
+  AddTriple (b308d71c-e2ce-4fed-965e-0d22a6372218)
+ Call ID: b308d71c-e2ce-4fed-965e-0d22a6372218
   Args:
-    type: :Person
-    source: Princess_Margaret
-  Finish (eccd6bad-91f6-48f3-a76d-c1fe4943bfe7)
- Call ID: eccd6bad-91f6-48f3-a76d-c1fe4943bfe7
+    source: :Anthony_Edward_Weatherall
+    target: :Isobel_Weatherall
+    relation: :isFatherOf
+  AddLiteral (d7369e99-b03c-49df-85cf-ea27cc118292)
+ Call ID: d7369e99-b03c-49df-85cf-ea27cc118292
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    literal_value: 2016
+    source: :Michael_Bowes-Lyon
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  Finish (66773979-a7c2-4d99-9649-93bd060aad3f)
+ Call ID: 66773979-a7c2-4d99-9649-93bd060aad3f
+  Args:
 
 ================================= Tool Message =================================
 
@@ -553,30 +619,25 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Michael_Albemarle_Bowes-Lyon a :Man,
-          :Person ;
-      :hasBirthYear 1940 ;
-      :hasDeathYear 2023 ;
-      :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;
-      :hasMother data:Elizabeth_Margaret_Cator .
-
-  data:Princess_Margaret a :Person,
-          :Woman .
-
-  data:Queen_Elizabeth_The_Queen_Mother a :Person,
-          :Woman .
-
-  data:Elizabeth_Margaret_Cator a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1899 ;
-      :hasDeathYear 1959 .
-
-  data:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,
+  data:Anthony_Edward_Weatherall a :Ancestor,
           :Man,
           :Person ;
-      :hasBirthYear 1893 ;
-      :hasDeathYear 1953 .
+      :isFatherOf data:Isobel_Weatherall .
+
+  data:Simon_Patrick_Bowes-Lyon a :Man,
+          :Person ;
+      :hasBirthYear 1986 ;
+      :hasFather data:Michael_Bowes-Lyon ;
+      :hasMother data:Isobel_Weatherall .
+
+  data:Michael_Bowes-Lyon a :Ancestor,
+          :Man,
+          :Person ;
+      :hasDeathYear 2016 .
+
+  data:Isobel_Weatherall a :Ancestor,
+          :Person,
+          :Woman .
 
 
 
@@ -588,8 +649,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (169ff351-d312-4ab6-97b0-f1f4e4c5a68e)
- Call ID: 169ff351-d312-4ab6-97b0-f1f4e4c5a68e
+  ValidateShacl (8c9ac05d-e3ed-4812-b043-223132ab2e80)
+ Call ID: 8c9ac05d-e3ed-4812-b043-223132ab2e80
   Args:
 
 ================================= Tool Message =================================
@@ -600,6 +661,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (4d034d5d-a154-4055-9d07-5245a9bd547d)
- Call ID: 4d034d5d-a154-4055-9d07-5245a9bd547d
+  Finish (40f90598-9679-431f-bc80-067731190053)
+ Call ID: 40f90598-9679-431f-bc80-067731190053
   Args:

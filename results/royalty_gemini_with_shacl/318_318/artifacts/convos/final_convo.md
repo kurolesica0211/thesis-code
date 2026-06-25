@@ -85,35 +85,39 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Don Carlos, Prince of Bourbon-Two Sicilies, Infante of Spain (Full Italian name: Carlo Maria Francesco d'Assisi Pasquale Ferdinando Antonio di Padova Francesco de Paola Alfonso Andrea Avelino Tancredi, Principe di Borbone delle Due Sicilie, Infante di Spagna; 10 November 1870 – 11 November 1949) was the son of Prince Alfonso of the Two Sicilies, Count of Caserta and Princess Maria Antonietta of Bourbon-Two Sicilies, and nephew of the last King of the Two Sicilies, Francis II.
+Alfonso, Prince of Asturias (10 May 1907 – 6 September 1938), was heir apparent to the throne of Spain from birth until the abolition of the monarchy in 1931.
+Alfonso was the eldest son of King Alfonso XIII of Spain and Victoria Eugenie of Battenberg.
+Alfonso's renunciation of his rights as heir to the Spanish throne in order to marry Cuban commoner Edelmira Sampedro caused controversy at the time.
+Though appearing to have sustained minor injuries, his haemophilia, inherited through his great-grandmother Queen Victoria, led to fatal internal bleeding.
+Early life
 
+Alfonso was the eldest child of the then-reigning King Alfonso XIII and Victoria Eugenie of Battenberg.
+As decreed by custom, he was registered by the Marquis of Figueroa, Minister of Justice, in the Civil Registry of the Royal Family as Alfonso Pío Cristino Eduardo Francisco Guillermo Carlos Enrique Eugenio Fernando Antonio Venancio.
+Eight days after his birth, Alfonso was christened in the royal chapel of the Royal Palace of Madrid by the Archbishop of Toledo.
+Prince Arthur, Duke of Connaught, Prince Friedrich Leopold of Prussia, Archduke Eugen of Austria and Afonso, Duke of Porto, were also present.
+Alfonso's father faced increasing political problems that led Spain to become a republic in 1931 when the monarch was deposed.
+Renunciation and marriages
 
-Marriages and children
+There had been plans for young Alfonso's deposition from succession, but ultimately he himself renounced his rights to the then-defunct throne to marry a commoner, Edelmira Sampedro y Robato, religiously in Ouchy on 21 June 1933, after which Alfonso took the courtesy title Count of Covadonga.
+In a civil ceremony on 3 July 1937, Alfonso married another commoner, Marta Esther Rocafort-Altuzarra, in Havana.
+However, Alfonso de Bourbon, a resident of California, later claimed to be an illegitimate son of Alfonso.
+In 1938, Alfonso, then resident in the United States, publicly stated his readiness to accept the Spanish crown if called on to do so.
+This action reversed Alfonso's renunciation of 1933 and led to his being disavowed by his father King Alfonso.
+Death
 
-On 14 February 1901 in Madrid, Carlos married Mercedes, Princess of Asturias, elder daughter of the late King Alfonso XII of Spain and of his wife Archduchess Maria Christina of Austria.
-Mercedes was the elder sister and heir presumptive to King Alfonso XIII of Spain, an unmarried teenager.
-In 1907, Carlos married secondly to Princess Louise of Orléans, daughter of Prince Philippe, Count of Paris.
-The couple had four children:
-
-
-Prince Carlos's descendants include King Felipe VI of Spain, Prince Pedro, Duke of Calabria, Prince Pedro Carlos of Orléans-Braganza, and Philip, Hereditary Prince of Yugoslavia, among others.
-Military service
-
-Carlos served in the Spanish Army in the Spanish–American War and received the Military Order of Maria Cristina.
-Two Sicilies succession
-
-In 1894, Carlos's father Alfonso became the head of the House of Bourbon-Two Sicilies.
-On marrying his first wife, Carlos renounced on 14 December 1900 his future rights of succession to the non-existent Crown of Two Sicilies in an official document, known as the Act of Cannes, subject to a requirement in the Treaty of Naples of 1759 and the Pragmatic Decree of 6 October 1759 that the Crown of Spain should not be combined with the "Italian Sovereignty".
-In 1960, Carlos' elder brother Ferdinand died without male issue, and a dispute arose between Carlos' son Alfonso and Carlos' younger brother Ranieri on the headship of the house, this with competing claims: by the law of primogeniture, Carlos' son Alfonso was considered the heir, but Ranieri claimed that Carlos had renounced his rights and those of his descendants according to the Act of Cannes.
-Alfonso refuted that claim by stating that it was only a promise from his father to relinquish this right if the crown of the Kingdom of the Two Sicilies were to be united with the Spanish Crown.
-Since this did not happen, the act had no effect and Carlos' son Alfonso reclaimed his rights.
-Alfonso's claim was recognised by the heads of the different lines of the House of Bourbon, although not by the head of the Orleans family, and in 1983 the Spanish Council of State, following an investigation by the Ministries of Justice and Foreign Affairs, the Royal Academy of Jurisprudence and Legislation and the Institute Salazar y Castro concluded unanimously in favour of Infante Don Alfonso's only son, Prince and Infante Don Carlos, a position shared by the Spanish Royal House.
+A car crash led to Alfonso's early death on September 6, 1938, at the age of 31.
+The car crashed into a telephone booth and Alfonso appeared to have only minor injuries, but his haemophilia led to fatal internal bleeding.
+Alfonso’s youngest brother, Gonzalo, had died just over four years before under very similar circumstances—having also inherited hemophilia, he was involved in a crash after the automobile he was in swerved to avoid a cyclist.
+Alfonso was entombed at Woodlawn Park Cemetery and Mausoleum (now Caballero Rivero Woodlawn Park North Cemetery and Mausoleum) in Miami, and was re-entombed in 1985 at the Pantheon of the Princes in El Escorial.
+Alfonso was the 1,120th Knight of the Order of the Golden Fleece in Spain and Knight with Collar of the Order of Charles III, inducted as both shortly after his birth in 1907.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -129,39 +133,9 @@ Alfonso's claim was recognised by the heads of the different lines of the House 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -176,6 +150,23 @@ Alfonso's claim was recognised by the heads of the different lines of the House 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -193,6 +184,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,29 +266,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -291,6 +289,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -303,6 +309,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -311,17 +319,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -349,6 +359,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -364,308 +458,115 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (66d9d250-24cc-4755-a21f-35ebda5f5090)
- Call ID: 66d9d250-24cc-4755-a21f-35ebda5f5090
+  AssignClass (0874d342-236e-4ff0-b5bf-54eed10a632a)
+ Call ID: 0874d342-236e-4ff0-b5bf-54eed10a632a
   Args:
+    source: Alfonso_Prince_of_Asturias
     type: :Man
-    source: Don_Carlos
-  AssignClass (715e2f8f-3502-47e1-8cd7-8bd0e17e739e)
- Call ID: 715e2f8f-3502-47e1-8cd7-8bd0e17e739e
-  Args:
-    source: Don_Carlos
-    type: :Person
-  AssignClass (0d3e99d7-7a80-48f1-9234-2deabf1c9f63)
- Call ID: 0d3e99d7-7a80-48f1-9234-2deabf1c9f63
-  Args:
-    type: :Man
-    source: Alfonso_of_the_Two_Sicilies
-  AssignClass (4c754160-c8e3-44dd-b1fa-be35a0b90f12)
- Call ID: 4c754160-c8e3-44dd-b1fa-be35a0b90f12
+  AssignClass (3f5f23a6-db79-482c-bda3-d0c96dc85c6a)
+ Call ID: 3f5f23a6-db79-482c-bda3-d0c96dc85c6a
   Args:
     type: :Person
-    source: Alfonso_of_the_Two_Sicilies
-  AssignClass (4845574a-4a10-4c18-bf46-7a86122b2ceb)
- Call ID: 4845574a-4a10-4c18-bf46-7a86122b2ceb
+    source: Alfonso_Prince_of_Asturias
+  AddLiteral (abdcfce2-5c1d-46ec-9598-16702ff3ad4c)
+ Call ID: abdcfce2-5c1d-46ec-9598-16702ff3ad4c
   Args:
-    type: :Woman
-    source: Maria_Antonietta
-  AssignClass (bfcbb2d9-6b2d-4ae0-8381-7680951d21a2)
- Call ID: bfcbb2d9-6b2d-4ae0-8381-7680951d21a2
-  Args:
-    source: Maria_Antonietta
-    type: :Person
-  AssignClass (20e0f14e-1453-428c-8992-f7058995c117)
- Call ID: 20e0f14e-1453-428c-8992-f7058995c117
-  Args:
-    type: :Man
-    source: Francis_II
-  AssignClass (bb6cfd32-0743-4504-8ed2-99c670f6287c)
- Call ID: bb6cfd32-0743-4504-8ed2-99c670f6287c
-  Args:
-    type: :Person
-    source: Francis_II
-  AssignClass (43330a29-af26-4d3e-825f-fe574a888bab)
- Call ID: 43330a29-af26-4d3e-825f-fe574a888bab
-  Args:
-    type: :Woman
-    source: Mercedes_Princess_of_Asturias
-  AssignClass (c65a7cd4-89fb-4dc6-8305-90e676a11cd2)
- Call ID: c65a7cd4-89fb-4dc6-8305-90e676a11cd2
-  Args:
-    type: :Person
-    source: Mercedes_Princess_of_Asturias
-  AssignClass (40eb6275-a239-4e65-b2da-52358e8a418e)
- Call ID: 40eb6275-a239-4e65-b2da-52358e8a418e
-  Args:
-    source: Alfonso_XII_of_Spain
-    type: :Man
-  AssignClass (1c115ce4-6468-4f89-8d3e-7a78d551b225)
- Call ID: 1c115ce4-6468-4f89-8d3e-7a78d551b225
-  Args:
-    source: Alfonso_XII_of_Spain
-    type: :Person
-  AssignClass (4468a098-b3f4-494c-9898-e5433ffa4c7b)
- Call ID: 4468a098-b3f4-494c-9898-e5433ffa4c7b
-  Args:
-    type: :Woman
-    source: Maria_Christina_of_Austria
-  AssignClass (0ec993e3-3339-42f1-b43b-3c0768c82140)
- Call ID: 0ec993e3-3339-42f1-b43b-3c0768c82140
-  Args:
-    type: :Person
-    source: Maria_Christina_of_Austria
-  AssignClass (ca738754-6f3a-45be-bfe0-2bb669be32d0)
- Call ID: ca738754-6f3a-45be-bfe0-2bb669be32d0
-  Args:
-    source: Louise_of_Orleans
-    type: :Woman
-  AssignClass (3571d360-23e8-4f10-a4e8-1aba61f20d53)
- Call ID: 3571d360-23e8-4f10-a4e8-1aba61f20d53
-  Args:
-    source: Louise_of_Orleans
-    type: :Person
-  AssignClass (01809e05-03a5-4d56-8848-a4da1ea7a7ac)
- Call ID: 01809e05-03a5-4d56-8848-a4da1ea7a7ac
-  Args:
-    type: :Man
-    source: Philippe_Count_of_Paris
-  AssignClass (33ba6b5f-4fe9-43e9-975e-baf971057f19)
- Call ID: 33ba6b5f-4fe9-43e9-975e-baf971057f19
-  Args:
-    source: Philippe_Count_of_Paris
-    type: :Person
-  AssignClass (350839b4-a41b-434d-b986-d9689e174499)
- Call ID: 350839b4-a41b-434d-b986-d9689e174499
-  Args:
-    source: Alfonso_son_of_Carlos
-    type: :Man
-  AssignClass (f77f06c1-a8fa-45ab-9046-7f7db9bfc433)
- Call ID: f77f06c1-a8fa-45ab-9046-7f7db9bfc433
-  Args:
-    source: Alfonso_son_of_Carlos
-    type: :Person
-  AssignClass (32fc1420-6d69-4f57-844a-141923995504)
- Call ID: 32fc1420-6d69-4f57-844a-141923995504
-  Args:
-    source: Ferdinand_brother_of_Carlos
-    type: :Man
-  AssignClass (0831c759-c2e7-4f9b-90cf-0423a4948dc2)
- Call ID: 0831c759-c2e7-4f9b-90cf-0423a4948dc2
-  Args:
-    type: :Person
-    source: Ferdinand_brother_of_Carlos
-  AssignClass (9cae4edc-a27c-457c-bd48-32b389f85971)
- Call ID: 9cae4edc-a27c-457c-bd48-32b389f85971
-  Args:
-    source: Ranieri_brother_of_Carlos
-    type: :Man
-  AssignClass (47fa84db-c4bb-468f-86e5-7d40e821d891)
- Call ID: 47fa84db-c4bb-468f-86e5-7d40e821d891
-  Args:
-    source: Ranieri_brother_of_Carlos
-    type: :Person
-  AddLiteral (a5210d28-3c5a-4b5b-aff8-acddb422d2ce)
- Call ID: a5210d28-3c5a-4b5b-aff8-acddb422d2ce
-  Args:
-    literal_value: 1870
-    source: Don_Carlos
     literal_type: xsd:integer
+    source: Alfonso_Prince_of_Asturias
     relation: :hasBirthYear
-  AddLiteral (d13d7b06-dc9d-4277-9094-cdeefdc7840e)
- Call ID: d13d7b06-dc9d-4277-9094-cdeefdc7840e
+    literal_value: 1907
+  AddLiteral (c4da528d-8a01-46b8-8e54-7adf7f5b112c)
+ Call ID: c4da528d-8a01-46b8-8e54-7adf7f5b112c
   Args:
-    relation: :hasDeathYear
+    literal_value: 1938
     literal_type: xsd:integer
-    source: Don_Carlos
-    literal_value: 1949
-  AddTriple (55a9db74-a4bd-4b5f-aa90-4e29d13bf4ef)
- Call ID: 55a9db74-a4bd-4b5f-aa90-4e29d13bf4ef
+    source: Alfonso_Prince_of_Asturias
+    relation: :hasDeathYear
+  AssignClass (59188997-9c73-4aa3-923b-cbae36145e52)
+ Call ID: 59188997-9c73-4aa3-923b-cbae36145e52
   Args:
-    source: Don_Carlos
-    target: Alfonso_of_the_Two_Sicilies
+    type: :Man
+    source: Alfonso_XIII_of_Spain
+  AssignClass (0d5a48b4-05c0-4f3a-9d5b-23add22c26d0)
+ Call ID: 0d5a48b4-05c0-4f3a-9d5b-23add22c26d0
+  Args:
+    source: Alfonso_XIII_of_Spain
+    type: :Person
+  AssignClass (51e7a6af-004a-4d3d-99f6-c1061578c5ca)
+ Call ID: 51e7a6af-004a-4d3d-99f6-c1061578c5ca
+  Args:
+    type: :Woman
+    source: Victoria_Eugenie_of_Battenberg
+  AssignClass (7e9b7213-6a37-4009-9812-efed189be25a)
+ Call ID: 7e9b7213-6a37-4009-9812-efed189be25a
+  Args:
+    type: :Person
+    source: Victoria_Eugenie_of_Battenberg
+  AddTriple (083ab148-11e1-4781-b25b-8162570b3ed0)
+ Call ID: 083ab148-11e1-4781-b25b-8162570b3ed0
+  Args:
+    source: Alfonso_Prince_of_Asturias
     relation: :hasFather
-  AddTriple (55bc70d0-ae22-4127-9d99-98ab7eca6b6f)
- Call ID: 55bc70d0-ae22-4127-9d99-98ab7eca6b6f
+    target: Alfonso_XIII_of_Spain
+  AddTriple (4fe88c80-96ca-44f7-870c-cfe2ee33eeae)
+ Call ID: 4fe88c80-96ca-44f7-870c-cfe2ee33eeae
   Args:
+    source: Alfonso_Prince_of_Asturias
     relation: :hasMother
-    target: Maria_Antonietta
-    source: Don_Carlos
-  AddTriple (a4cc998f-5daa-443e-a4e9-cccfa99d1909)
- Call ID: a4cc998f-5daa-443e-a4e9-cccfa99d1909
+    target: Victoria_Eugenie_of_Battenberg
+  AssignClass (6de68ff4-9398-4a4a-b097-0e1ff4f4afd2)
+ Call ID: 6de68ff4-9398-4a4a-b097-0e1ff4f4afd2
   Args:
-    relation: :isFatherOf
-    source: Alfonso_of_the_Two_Sicilies
-    target: Don_Carlos
-  AddTriple (d851e2a9-2854-47e8-aebe-c9d7cc85514d)
- Call ID: d851e2a9-2854-47e8-aebe-c9d7cc85514d
+    source: Edelmira_Sampedro_y_Robato
+    type: :Woman
+  AssignClass (6b28af46-50a7-44f1-994b-4c5079451c37)
+ Call ID: 6b28af46-50a7-44f1-994b-4c5079451c37
   Args:
-    relation: :isMotherOf
-    target: Don_Carlos
-    source: Maria_Antonietta
-  AddTriple (e9ebeb71-1af5-4b74-bcee-b35e3f2efc08)
- Call ID: e9ebeb71-1af5-4b74-bcee-b35e3f2efc08
+    source: Edelmira_Sampedro_y_Robato
+    type: :Person
+  AddLiteral (04b4fe35-b930-4552-a999-420085d204fb)
+ Call ID: 04b4fe35-b930-4552-a999-420085d204fb
   Args:
-    source: Don_Carlos
-    target: Alfonso_XII_of_Spain
-    relation: :hasFather
-  AddTriple (c856669d-2cc8-4964-ae8a-0e2293e61d67)
- Call ID: c856669d-2cc8-4964-ae8a-0e2293e61d67
+    source: Alfonso_Prince_of_Asturias
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 1933
+  AssignClass (9c269f95-3ee2-438b-b597-0becdd0381b6)
+ Call ID: 9c269f95-3ee2-438b-b597-0becdd0381b6
   Args:
-    target: Maria_Christina_of_Austria
-    source: Don_Carlos
-    relation: :hasMother
-  AddTriple (835d8bf7-a33f-46ef-87be-180e948976f9)
- Call ID: 835d8bf7-a33f-46ef-87be-180e948976f9
+    type: :Woman
+    source: Marta_Esther_Rocafort-Altuzarra
+  AssignClass (d2a548e9-4c9f-41a3-ab5f-3953a5f3fde6)
+ Call ID: d2a548e9-4c9f-41a3-ab5f-3953a5f3fde6
   Args:
-    target: Alfonso_XII_of_Spain
-    source: Mercedes_Princess_of_Asturias
-    relation: :hasFather
-  AddTriple (4eafc0a5-553e-4443-b273-f08383e8bfd3)
- Call ID: 4eafc0a5-553e-4443-b273-f08383e8bfd3
+    type: :Person
+    source: Marta_Esther_Rocafort-Altuzarra
+  AddLiteral (9020e73f-e25b-4d00-9c3f-bb43e1a1e6c1)
+ Call ID: 9020e73f-e25b-4d00-9c3f-bb43e1a1e6c1
   Args:
-    target: Maria_Christina_of_Austria
-    source: Mercedes_Princess_of_Asturias
-    relation: :hasMother
-  AddTriple (533c9cd9-1c36-498b-b713-a80af9902b12)
- Call ID: 533c9cd9-1c36-498b-b713-a80af9902b12
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: Alfonso_Prince_of_Asturias
+    literal_value: 1937
+  AssignClass (ab531f41-91b8-4faf-a25b-774e1657fc07)
+ Call ID: ab531f41-91b8-4faf-a25b-774e1657fc07
   Args:
-    relation: :hasFather
-    source: Louise_of_Orleans
-    target: Philippe_Count_of_Paris
-  AddTriple (bcb49649-885b-40e2-8b43-2cb4c5f5db36)
- Call ID: bcb49649-885b-40e2-8b43-2cb4c5f5db36
+    type: :Man
+    source: Gonzalo
+  AssignClass (1ea488bb-e3a5-4a7d-beec-36bf51d35bb2)
+ Call ID: 1ea488bb-e3a5-4a7d-beec-36bf51d35bb2
   Args:
-    target: Alfonso_son_of_Carlos
-    source: Don_Carlos
-    relation: :isFatherOf
-  AddTriple (7d9ab0da-de16-43f3-9586-bdd385f4126e)
- Call ID: 7d9ab0da-de16-43f3-9586-bdd385f4126e
+    source: Gonzalo
+    type: :Person
+  AddTriple (b1ec97cb-c676-46f3-85ee-74d7f2ebb05b)
+ Call ID: b1ec97cb-c676-46f3-85ee-74d7f2ebb05b
   Args:
+    target: Alfonso_Prince_of_Asturias
+    source: Gonzalo
     relation: :isBrotherOf
-    source: Ferdinand_brother_of_Carlos
-    target: Don_Carlos
-  AddTriple (38a447b4-b0e9-452d-9ba5-091987d299b2)
- Call ID: 38a447b4-b0e9-452d-9ba5-091987d299b2
+  Finish (0ceefd62-5a8d-4b8b-9199-9118b1d5020c)
+ Call ID: 0ceefd62-5a8d-4b8b-9199-9118b1d5020c
   Args:
-    relation: :isBrotherOf
-    target: Don_Carlos
-    source: Ranieri_brother_of_Carlos
-  AddTriple (ebc0595d-8a68-4976-acc7-d62c83883836)
- Call ID: ebc0595d-8a68-4976-acc7-d62c83883836
-  Args:
-    relation: :isBrotherOf
-    source: Don_Carlos
-    target: Ferdinand_brother_of_Carlos
-  AddTriple (118bb0b7-c419-43a3-95d0-72106c37cbc0)
- Call ID: 118bb0b7-c419-43a3-95d0-72106c37cbc0
-  Args:
-    relation: :isBrotherOf
-    source: Don_Carlos
-    target: Ranieri_brother_of_Carlos
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -746,312 +647,97 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Francis_II a :Man,
-          :Person .
-
-  data:Louise_of_Orleans a :Person,
-          :Woman ;
-      :hasFather data:Philippe_Count_of_Paris .
-
-  data:Mercedes_Princess_of_Asturias a :Person,
-          :Woman ;
-      :hasFather data:Alfonso_XII_of_Spain ;
-      :hasMother data:Maria_Christina_of_Austria .
-
-  data:Alfonso_of_the_Two_Sicilies a :Man,
-          :Person ;
-      :isFatherOf data:Don_Carlos .
-
-  data:Alfonso_son_of_Carlos a :Man,
-          :Person .
-
-  data:Ferdinand_brother_of_Carlos a :Man,
-          :Person ;
-      :isBrotherOf data:Don_Carlos .
-
-  data:Maria_Antonietta a :Person,
-          :Woman ;
-      :isMotherOf data:Don_Carlos .
-
-  data:Philippe_Count_of_Paris a :Man,
-          :Person .
-
-  data:Ranieri_brother_of_Carlos a :Man,
-          :Person ;
-      :isBrotherOf data:Don_Carlos .
-
-  data:Alfonso_XII_of_Spain a :Man,
-          :Person .
-
-  data:Maria_Christina_of_Austria a :Person,
+  data:Edelmira_Sampedro_y_Robato a :Person,
           :Woman .
 
-  data:Don_Carlos a :Man,
+  data:Gonzalo a :Man,
           :Person ;
-      :hasBirthYear 1870 ;
-      :hasDeathYear 1949 ;
-      :hasFather data:Alfonso_XII_of_Spain,
-          data:Alfonso_of_the_Two_Sicilies ;
-      :hasMother data:Maria_Antonietta,
-          data:Maria_Christina_of_Austria ;
-      :isBrotherOf data:Ferdinand_brother_of_Carlos,
-          data:Ranieri_brother_of_Carlos ;
-      :isFatherOf data:Alfonso_son_of_Carlos .
+      :isBrotherOf data:Alfonso_Prince_of_Asturias .
+
+  data:Marta_Esther_Rocafort-Altuzarra a :Person,
+          :Woman .
+
+  data:Alfonso_Prince_of_Asturias a :Man,
+          :Person ;
+      :hasBirthYear 1907 ;
+      :hasDeathYear 1938 ;
+      :hasFather data:Alfonso_XIII_of_Spain ;
+      :hasMarriageYear 1933,
+          1937 ;
+      :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+  data:Alfonso_XIII_of_Spain a :Man,
+          :Person .
+
+  data:Victoria_Eugenie_of_Battenberg a :Person,
+          :Woman .
 
 
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (68e34ab3-2a50-47b2-808c-931cb7e5a799)
- Call ID: 68e34ab3-2a50-47b2-808c-931cb7e5a799
+  ValidateShacl (3e32c2e3-071a-442a-b7ea-a8930ddfe869)
+ Call ID: 3e32c2e3-071a-442a-b7ea-a8930ddfe869
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:30
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Alfonso_XII_of_Spain' for property 'hasFather' on 'Don_Carlos' is not classified as an 'Ancestor'.
+      The node 'Alfonso_XIII_of_Spain' assigned as the father of 'Alfonso_Prince_of_Asturias' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Alfonso_XII_of_Spain'.
+      Use AssignClass to add :Ancestor to Alfonso_XIII_of_Spain.
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Alfonso_of_the_Two_Sicilies' for property 'hasFather' on 'Don_Carlos' is not classified as an 'Ancestor'.
+      The node 'Victoria_Eugenie_of_Battenberg' assigned as the mother of 'Alfonso_Prince_of_Asturias' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Alfonso_of_the_Two_Sicilies'.
+      Use AssignClass to add :Ancestor to Victoria_Eugenie_of_Battenberg.
 
 
   Violation [3]:
-    SHACL message: More than 1 values on data:Don_Carlos->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The 'hasFather' property on 'Don_Carlos' exceeds the maximum count of 1.
+      The node 'Alfonso_XIII_of_Spain' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use 'RemoveTriple' to remove one of the 'hasFather' relationships from 'Don_Carlos'.
+      Use AssignClass to add :Ancestor to Alfonso_XIII_of_Spain.
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Christina_of_Austria' for property 'hasMother' on 'Don_Carlos' is not classified as an 'Ancestor'.
+      The node 'Victoria_Eugenie_of_Battenberg' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Maria_Christina_of_Austria'.
+      Use AssignClass to add :Ancestor to Victoria_Eugenie_of_Battenberg.
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Antonietta' for property 'hasMother' on 'Don_Carlos' is not classified as an 'Ancestor'.
+      The node 'Alfonso_XIII_of_Spain' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Maria_Antonietta'.
+      Use AssignClass to add :Ancestor to Alfonso_XIII_of_Spain.
 
 
   Violation [6]:
-    SHACL message: More than 1 values on data:Don_Carlos->:hasMother
-    LLM-provided explanation of the violation:
-      The 'hasMother' property on 'Don_Carlos' exceeds the maximum count of 1.
-    LLM-provided instruction on how to handle the violation:
-      Use 'RemoveTriple' to remove one of the 'hasMother' relationships from 'Don_Carlos'.
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Alfonso_XII_of_Spain' for property 'hasFather' on 'Don_Carlos' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Alfonso_XII_of_Spain'.
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Alfonso_of_the_Two_Sicilies' for property 'hasFather' on 'Don_Carlos' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Alfonso_of_the_Two_Sicilies'.
-
-
-  Violation [9]:
-    SHACL message: More than 1 values on data:Don_Carlos->:hasFather
-    LLM-provided explanation of the violation:
-      The 'hasFather' property on 'Don_Carlos' exceeds the maximum count of 1.
-    LLM-provided instruction on how to handle the violation:
-      Use 'RemoveTriple' to remove one of the 'hasFather' relationships from 'Don_Carlos'.
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Philippe_Count_of_Paris' for property 'hasFather' on 'Louise_of_Orleans' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Philippe_Count_of_Paris'.
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Alfonso_XII_of_Spain' for property 'hasFather' on 'Mercedes_Princess_of_Asturias' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Alfonso_XII_of_Spain'.
-
-
-  Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Christina_of_Austria' for property 'hasMother' on 'Don_Carlos' is not classified as an 'Ancestor'.
+      The node 'Victoria_Eugenie_of_Battenberg' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Maria_Christina_of_Austria'.
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Maria_Antonietta' for property 'hasMother' on 'Don_Carlos' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Maria_Antonietta'.
-
-
-  Violation [14]:
-    SHACL message: More than 1 values on data:Don_Carlos->:hasMother
-    LLM-provided explanation of the violation:
-      The 'hasMother' property on 'Don_Carlos' exceeds the maximum count of 1.
-    LLM-provided instruction on how to handle the violation:
-      Use 'RemoveTriple' to remove one of the 'hasMother' relationships from 'Don_Carlos'.
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Maria_Christina_of_Austria' for property 'hasMother' on 'Mercedes_Princess_of_Asturias' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Maria_Christina_of_Austria'.
-
-
-  Violation [16]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
-    LLM-provided explanation of the violation:
-      The node 'Maria_Antonietta' is missing the 'Ancestor' class classification.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Maria_Antonietta'.
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Philippe_Count_of_Paris' for property 'hasFather' on 'Louise_of_Orleans' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Philippe_Count_of_Paris'.
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Alfonso_XII_of_Spain' for property 'hasFather' on 'Mercedes_Princess_of_Asturias' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Alfonso_XII_of_Spain'.
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Alfonso_XII_of_Spain' for property 'hasFather' on 'Don_Carlos' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Alfonso_XII_of_Spain'.
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Alfonso_of_the_Two_Sicilies' for property 'hasFather' on 'Don_Carlos' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Alfonso_of_the_Two_Sicilies'.
-
-
-  Violation [21]:
-    SHACL message: More than 1 values on data:Don_Carlos->:hasFather
-    LLM-provided explanation of the violation:
-      The 'hasFather' property on 'Don_Carlos' exceeds the maximum count of 1.
-    LLM-provided instruction on how to handle the violation:
-      Use 'RemoveTriple' to remove one of the 'hasFather' relationships from 'Don_Carlos'.
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Maria_Christina_of_Austria' for property 'hasMother' on 'Mercedes_Princess_of_Asturias' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Maria_Christina_of_Austria'.
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Maria_Christina_of_Austria' for property 'hasMother' on 'Don_Carlos' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Maria_Christina_of_Austria'.
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Maria_Antonietta' for property 'hasMother' on 'Don_Carlos' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Maria_Antonietta'.
-
-
-  Violation [25]:
-    SHACL message: More than 1 values on data:Don_Carlos->:hasMother
-    LLM-provided explanation of the violation:
-      The 'hasMother' property on 'Don_Carlos' exceeds the maximum count of 1.
-    LLM-provided instruction on how to handle the violation:
-      Use 'RemoveTriple' to remove one of the 'hasMother' relationships from 'Don_Carlos'.
-
-
-  Violation [26]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The node 'Don_Carlos' is missing the 'Ancestor' class classification while being a subject of 'isFatherOf'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Don_Carlos'.
-
-
-  Violation [27]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
-    LLM-provided explanation of the violation:
-      The node 'Alfonso_of_the_Two_Sicilies' is missing the 'Ancestor' class classification while being a subject of 'isFatherOf'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Alfonso_of_the_Two_Sicilies'.
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Philippe_Count_of_Paris' for property 'hasFather' on 'Louise_of_Orleans' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Philippe_Count_of_Paris'.
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Alfonso_XII_of_Spain' for property 'hasFather' on 'Mercedes_Princess_of_Asturias' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Alfonso_XII_of_Spain'.
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node 'Maria_Christina_of_Austria' for property 'hasMother' on 'Mercedes_Princess_of_Asturias' is not classified as an 'Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to 'Maria_Christina_of_Austria'.
+      Use AssignClass to add :Ancestor to Victoria_Eugenie_of_Battenberg.
 
 
 
@@ -1060,72 +746,19 @@ Violations:
 
 []
 Tool Calls:
-  RemoveTriple (ab93de22-0546-4474-9a74-98d44811952b)
- Call ID: ab93de22-0546-4474-9a74-98d44811952b
-  Args:
-    target: Alfonso_XII_of_Spain
-    source: Don_Carlos
-    relation: :hasFather
-  RemoveTriple (14b8d033-7a6b-48e4-a3ee-4ce2f412c850)
- Call ID: 14b8d033-7a6b-48e4-a3ee-4ce2f412c850
-  Args:
-    relation: :hasMother
-    target: Maria_Christina_of_Austria
-    source: Don_Carlos
-  AssignClass (d13a080a-7dc6-4778-ba36-2a5e9c5229c6)
- Call ID: d13a080a-7dc6-4778-ba36-2a5e9c5229c6
+  AssignClass (72446648-2fe4-4dcd-adc3-5dbe761f2c3c)
+ Call ID: 72446648-2fe4-4dcd-adc3-5dbe761f2c3c
   Args:
     type: :Ancestor
-    source: Alfonso_of_the_Two_Sicilies
-  AssignClass (a10b1caa-2019-4c31-8291-1cf2c2af5794)
- Call ID: a10b1caa-2019-4c31-8291-1cf2c2af5794
+    source: Alfonso_XIII_of_Spain
+  AssignClass (37de45f9-4d49-45fd-bf76-b4ff056e07c8)
+ Call ID: 37de45f9-4d49-45fd-bf76-b4ff056e07c8
   Args:
-    source: Maria_Antonietta
+    source: Victoria_Eugenie_of_Battenberg
     type: :Ancestor
-  AssignClass (03c42188-d08f-41ca-8c09-fff15659cf4d)
- Call ID: 03c42188-d08f-41ca-8c09-fff15659cf4d
+  ValidateShacl (fda10124-86a0-4662-a2fe-ca65a6d62189)
+ Call ID: fda10124-86a0-4662-a2fe-ca65a6d62189
   Args:
-    type: :Ancestor
-    source: Alfonso_XII_of_Spain
-  AssignClass (40867184-69ee-40cd-9cd2-23e0f4be5604)
- Call ID: 40867184-69ee-40cd-9cd2-23e0f4be5604
-  Args:
-    type: :Ancestor
-    source: Maria_Christina_of_Austria
-  AssignClass (d3e56cd2-128b-4a7c-8762-1948a6e2333e)
- Call ID: d3e56cd2-128b-4a7c-8762-1948a6e2333e
-  Args:
-    source: Philippe_Count_of_Paris
-    type: :Ancestor
-  AssignClass (7c03b241-dbfe-4ad2-9c7f-482d0c3418bc)
- Call ID: 7c03b241-dbfe-4ad2-9c7f-482d0c3418bc
-  Args:
-    type: :Ancestor
-    source: Don_Carlos
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1138,71 +771,34 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Francis_II a :Man,
-          :Person .
+  data:Edelmira_Sampedro_y_Robato a :Person,
+          :Woman .
 
-  data:Louise_of_Orleans a :Person,
-          :Woman ;
-      :hasFather data:Philippe_Count_of_Paris .
+  data:Gonzalo a :Man,
+          :Person ;
+      :isBrotherOf data:Alfonso_Prince_of_Asturias .
 
-  data:Mercedes_Princess_of_Asturias a :Person,
-          :Woman ;
-      :hasFather data:Alfonso_XII_of_Spain ;
-      :hasMother data:Maria_Christina_of_Austria .
+  data:Marta_Esther_Rocafort-Altuzarra a :Person,
+          :Woman .
 
-  data:Alfonso_XII_of_Spain a :Ancestor,
+  data:Alfonso_Prince_of_Asturias a :Man,
+          :Person ;
+      :hasBirthYear 1907 ;
+      :hasDeathYear 1938 ;
+      :hasFather data:Alfonso_XIII_of_Spain ;
+      :hasMarriageYear 1933,
+          1937 ;
+      :hasMother data:Victoria_Eugenie_of_Battenberg .
+
+  data:Alfonso_XIII_of_Spain a :Ancestor,
           :Man,
           :Person .
 
-  data:Alfonso_of_the_Two_Sicilies a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:Don_Carlos .
-
-  data:Alfonso_son_of_Carlos a :Man,
-          :Person .
-
-  data:Ferdinand_brother_of_Carlos a :Man,
-          :Person ;
-      :isBrotherOf data:Don_Carlos .
-
-  data:Maria_Antonietta a :Ancestor,
-          :Person,
-          :Woman ;
-      :isMotherOf data:Don_Carlos .
-
-  data:Maria_Christina_of_Austria a :Ancestor,
+  data:Victoria_Eugenie_of_Battenberg a :Ancestor,
           :Person,
           :Woman .
 
-  data:Philippe_Count_of_Paris a :Ancestor,
-          :Man,
-          :Person .
 
-  data:Ranieri_brother_of_Carlos a :Man,
-          :Person ;
-      :isBrotherOf data:Don_Carlos .
-
-  data:Don_Carlos a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1870 ;
-      :hasDeathYear 1949 ;
-      :hasFather data:Alfonso_of_the_Two_Sicilies ;
-      :hasMother data:Maria_Antonietta ;
-      :isBrotherOf data:Ferdinand_brother_of_Carlos,
-          data:Ranieri_brother_of_Carlos ;
-      :isFatherOf data:Alfonso_son_of_Carlos .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (0a784e56-6765-4dc7-ae1f-c7ecc70f2024)
- Call ID: 0a784e56-6765-4dc7-ae1f-c7ecc70f2024
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1212,6 +808,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (97494761-83be-4434-9101-4c6a1fa27327)
- Call ID: 97494761-83be-4434-9101-4c6a1fa27327
+  Finish (c1e54e4d-e58a-4cfb-b36f-869d40e5a4dd)
+ Call ID: c1e54e4d-e58a-4cfb-b36f-869d40e5a4dd
   Args:

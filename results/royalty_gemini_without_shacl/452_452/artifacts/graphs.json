@@ -4,20 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Gabriella_Kingston a :Woman ;\n    :formerlyKnownAs \"Lady Gabriella Marina Alexandra Ophelia Windsor\"^^xsd:string ;\n    :hasBirthYear 1981 ;\n    :hasFather data:Prince_Michael_of_Kent ;\n    :hasMarriageYear 2019 ;\n    :hasMother data:Princess_Michael_of_Kent ;\n    :hasSex data:Female ;\n    :knownAs \"Lady Gabriella Marina Alexandra Ophelia Kingston\"^^xsd:string .\n\ndata:Thomas_Henry_Robin_Kingston a :Man ;\n    :hasBirthYear 1978 ;\n    :hasDeathYear 2024 ;\n    :hasSex data:Male .\n\ndata:Prince_Michael_of_Kent a :Man ;\n    :hasSex data:Male .\n\ndata:Princess_Michael_of_Kent a :Woman ;\n    :hasSex data:Female .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:InesOfBourbonTwoSicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1940 ;\n    :hasFather data:AlfonsoDeBorbonDosSicilias ;\n    :hasMother data:AliciaOfBourbonParma .\n\ndata:AlfonsoDeBorbonDosSicilias a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1964 .\n\ndata:AliciaOfBourbonParma a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 2017 .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 2,
-        "source": "post_edits",
-        "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Gabriella_Kingston a :Woman ;\n    :formerlyKnownAs \"Lady Gabriella Marina Alexandra Ophelia Windsor\"^^xsd:string ;\n    :hasBirthYear 1981 ;\n    :hasFather data:Prince_Michael_of_Kent ;\n    :hasMarriageYear 2019 ;\n    :hasMother data:Princess_Michael_of_Kent ;\n    :hasSex data:Female ;\n    :knownAs \"Lady Gabriella Marina Alexandra Ophelia Kingston\"^^xsd:string .\n\ndata:Thomas_Henry_Robin_Kingston a :Man ;\n    :hasBirthYear 1978 ;\n    :hasDeathYear 2024 ;\n    :hasSex data:Male .\n\ndata:Prince_Michael_of_Kent a :Man ;\n    :hasSex data:Male .\n\ndata:Princess_Michael_of_Kent a :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
-    },
-    {
-        "graph_type": "data_graph",
-        "iteration": 2,
+        "iteration": 1,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Lady_Gabriella_Kingston a :Woman ;\n    :formerlyKnownAs \"Lady Gabriella Marina Alexandra Ophelia Windsor\"^^xsd:string ;\n    :hasBirthYear 1981 ;\n    :hasFather data:Prince_Michael_of_Kent ;\n    :hasMarriageYear 2019 ;\n    :hasMother data:Princess_Michael_of_Kent ;\n    :hasSex data:Female ;\n    :knownAs \"Lady Gabriella Marina Alexandra Ophelia Kingston\"^^xsd:string .\n\ndata:Thomas_Henry_Robin_Kingston a :Man ;\n    :hasBirthYear 1978 ;\n    :hasDeathYear 2024 ;\n    :hasSex data:Male .\n\ndata:Prince_Michael_of_Kent a :Man ;\n    :hasSex data:Male .\n\ndata:Princess_Michael_of_Kent a :Woman ;\n    :hasSex data:Female .\n\ndata:Female a :Sex .\n\ndata:Male a :Sex .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:InesOfBourbonTwoSicilies a :Person,\n        :Woman ;\n    :hasBirthYear 1940 ;\n    :hasFather data:AlfonsoDeBorbonDosSicilias ;\n    :hasMother data:AliciaOfBourbonParma .\n\ndata:AlfonsoDeBorbonDosSicilias a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1901 ;\n    :hasDeathYear 1964 .\n\ndata:AliciaOfBourbonParma a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1917 ;\n    :hasDeathYear 2017 .\n\n"
     }
 ]

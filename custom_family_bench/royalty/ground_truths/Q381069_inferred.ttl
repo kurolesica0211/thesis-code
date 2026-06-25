@@ -1,0 +1,300 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Caroline-Mathilde_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Caroline-Mathilde of Denmark"^^xsd:string ;
+    data:posIndicesFull "1641:1678"^^xsd:string ;
+    data:posIndicesPart "1680:1688"^^xsd:string,
+        "1689:1697"^^xsd:string,
+        "1698:1706"^^xsd:string,
+        "1751:1758"^^xsd:string,
+        "1763:1771"^^xsd:string,
+        "1958:1965"^^xsd:string,
+        "2018:2026"^^xsd:string,
+        "2231:2238"^^xsd:string,
+        "3310:3318"^^xsd:string,
+        "3319:3327"^^xsd:string,
+        "3328:3336"^^xsd:string,
+        "3495:3503"^^xsd:string,
+        "3504:3512"^^xsd:string,
+        "3513:3521"^^xsd:string ;
+    data:wdtLink wdt:Q264675 ;
+    :hasChild data:Count_Christian_of_Rosenborg ;
+    :hasRelation data:Count_Christian_of_Rosenborg,
+        data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasSon data:Count_Christian_of_Rosenborg ;
+    :isAncestorOf data:Count_Christian_of_Rosenborg ;
+    :isAuntOf data:Count_Christian_of_Rosenborg ;
+    :isBloodrelationOf data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isMotherOf data:Count_Christian_of_Rosenborg ;
+    :isParentOf data:Count_Christian_of_Rosenborg ;
+    :isSiblingOf data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isSisterOf data:Princess_Caroline-Mathilde_of_Denmark .
+
+data:Margrethe_II_of_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Margrethe II of Denmark"^^xsd:string ;
+    data:posIndicesFull "3292:3304"^^xsd:string,
+        "465:477"^^xsd:string ;
+    data:posIndicesPart "1084:1091"^^xsd:string,
+        "1751:1758"^^xsd:string,
+        "1958:1965"^^xsd:string,
+        "2231:2238"^^xsd:string,
+        "3077:3086"^^xsd:string,
+        "918:925"^^xsd:string ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer"^^xsd:string,
+        "Margrethe II"^^xsd:string ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasParent data:Frederik_IX_of_Denmark ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark,
+        data:Margrethe_II_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark ;
+    :isBloodrelationOf data:Margrethe_II_of_Denmark ;
+    :isChildOf data:Frederik_IX_of_Denmark ;
+    :isDaughterOf data:Frederik_IX_of_Denmark ;
+    :isSiblingOf data:Margrethe_II_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Alexandrine of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "1097:1132"^^xsd:string ;
+    data:posIndicesPart "2504:2515"^^xsd:string ;
+    data:wdtLink wdt:Q57264 ;
+    :alsoKnownAs "Alexandrine Auguste of Mecklenburg-Schwerin"^^xsd:string,
+        "Alexandrine, Queen of Denmark"^^xsd:string,
+        "Duchess Alexandrine Auguste of Mecklenburg-Schwerin"^^xsd:string,
+        "Duchess Alexandrine of Mecklenburg-Schwerin"^^xsd:string,
+        "Queen Alexandrine of Denmark"^^xsd:string ;
+    :hasChild data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Count_Christian_of_Rosenborg,
+        data:Frederik_IX_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasSon data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isAncestorOf data:Count_Christian_of_Rosenborg,
+        data:Frederik_IX_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isAuntOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isBloodrelationOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isMotherOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isParentOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isSiblingOf data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Alexandrine_of_Mecklenburg-Schwerin .
+
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Christian X of Denmark"^^xsd:string ;
+    data:posIndicesFull "173:184"^^xsd:string,
+        "2661:2672"^^xsd:string ;
+    data:posIndicesPart "1084:1091"^^xsd:string,
+        "1207:1216"^^xsd:string,
+        "1394:1403"^^xsd:string,
+        "1751:1758"^^xsd:string,
+        "1958:1965"^^xsd:string,
+        "2093:2102"^^xsd:string,
+        "2231:2238"^^xsd:string,
+        "514:523"^^xsd:string,
+        "918:925"^^xsd:string,
+        "974:983"^^xsd:string ;
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm"^^xsd:string,
+        "Christian X"^^xsd:string ;
+    :hasBrother data:Christian_X_of_Denmark ;
+    :hasChild data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :hasRelation data:Christian_X_of_Denmark,
+        data:Count_Christian_of_Rosenborg,
+        data:Frederik_IX_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isAncestorOf data:Count_Christian_of_Rosenborg,
+        data:Frederik_IX_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isBloodrelationOf data:Christian_X_of_Denmark ;
+    :isBrotherOf data:Christian_X_of_Denmark ;
+    :isFatherOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isParentOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isSiblingOf data:Christian_X_of_Denmark ;
+    :isUncleOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark .
+
+data:Count_Christian_of_Rosenborg a :Man,
+        :Person ;
+    rdfs:label "Count Christian of Rosenborg"^^xsd:string ;
+    data:posIndicesFull "1005:1032"^^xsd:string,
+        "1012:1032"^^xsd:string ;
+    data:posIndicesPart "1207:1216"^^xsd:string,
+        "1394:1403"^^xsd:string,
+        "2093:2102"^^xsd:string ;
+    data:wdtLink wdt:Q573263 ;
+    :alsoKnownAs "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Denmark"^^xsd:string,
+        "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Rosenborg"^^xsd:string,
+        "Christian of Denmark"^^xsd:string,
+        "Christian of Rosenborg"^^xsd:string,
+        "Christian zu Schleswig-Holstein-Sonderburg-Glücksburg, Prince of Denmark"^^xsd:string,
+        "Count Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Rosenborg"^^xsd:string,
+        "Prince Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik of Denmark"^^xsd:string,
+        "Prince Christian of Denmark"^^xsd:string ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Prince_Knud_of_Denmark,
+        data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasBrother data:Count_Christian_of_Rosenborg ;
+    :hasFather data:Prince_Knud_of_Denmark ;
+    :hasMother data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasParent data:Prince_Knud_of_Denmark,
+        data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Count_Christian_of_Rosenborg,
+        data:Prince_Knud_of_Denmark,
+        data:Princess_Caroline-Mathilde_of_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Count_Christian_of_Rosenborg ;
+    :isBrotherOf data:Count_Christian_of_Rosenborg ;
+    :isChildOf data:Prince_Knud_of_Denmark,
+        data:Princess_Caroline-Mathilde_of_Denmark ;
+    :isSiblingOf data:Count_Christian_of_Rosenborg ;
+    :isSonOf data:Prince_Knud_of_Denmark,
+        data:Princess_Caroline-Mathilde_of_Denmark .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederik IX of Denmark"^^xsd:string ;
+    data:posIndicesFull "2735:2746"^^xsd:string,
+        "2754:2765"^^xsd:string,
+        "278:289"^^xsd:string,
+        "2967:2978"^^xsd:string,
+        "3036:3047"^^xsd:string,
+        "3227:3238"^^xsd:string ;
+    data:posIndicesPart "1072:1080"^^xsd:string,
+        "1084:1091"^^xsd:string,
+        "1162:1170"^^xsd:string,
+        "1285:1293"^^xsd:string,
+        "1333:1341"^^xsd:string,
+        "1751:1758"^^xsd:string,
+        "1958:1965"^^xsd:string,
+        "2231:2238"^^xsd:string,
+        "918:925"^^xsd:string ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg"^^xsd:string,
+        "Frederick IX"^^xsd:string,
+        "Frederik IX"^^xsd:string,
+        "King Frederick IX of Denmark"^^xsd:string,
+        "King Frederik IX of Denmark"^^xsd:string ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :hasBrother data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :hasChild data:Margrethe_II_of_Denmark ;
+    :hasDaughter data:Margrethe_II_of_Denmark ;
+    :hasFather data:Christian_X_of_Denmark ;
+    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasParent data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Frederik_IX_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :hasSex data:male ;
+    :isAncestorOf data:Margrethe_II_of_Denmark ;
+    :isBloodrelationOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isBrotherOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isChildOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :isFatherOf data:Margrethe_II_of_Denmark ;
+    :isParentOf data:Margrethe_II_of_Denmark ;
+    :isSiblingOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isSonOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :isUncleOf data:Count_Christian_of_Rosenborg,
+        data:Margrethe_II_of_Denmark .
+
+data:Prince_Knud_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Knud of Denmark"^^xsd:string ;
+    data:wdtLink wdt:Q381069 ;
+    :alsoKnownAs "Prince Knud Christian Frederik Michael of Denmark"^^xsd:string ;
+    :hasAncestor data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :hasBrother data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :hasChild data:Count_Christian_of_Rosenborg ;
+    :hasFather data:Christian_X_of_Denmark ;
+    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasParent data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :hasRelation data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark,
+        data:Count_Christian_of_Rosenborg,
+        data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Count_Christian_of_Rosenborg ;
+    :isAncestorOf data:Count_Christian_of_Rosenborg ;
+    :isBloodrelationOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isBrotherOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isChildOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :isFatherOf data:Count_Christian_of_Rosenborg ;
+    :isParentOf data:Count_Christian_of_Rosenborg ;
+    :isSiblingOf data:Frederik_IX_of_Denmark,
+        data:Prince_Knud_of_Denmark ;
+    :isSonOf data:Alexandrine_of_Mecklenburg-Schwerin,
+        data:Christian_X_of_Denmark ;
+    :isUncleOf data:Count_Christian_of_Rosenborg,
+        data:Margrethe_II_of_Denmark .
+

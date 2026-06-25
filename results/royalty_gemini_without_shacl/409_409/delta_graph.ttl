@@ -2,32 +2,27 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:ChristianLouisOfMecklenburg a :Man ;
-    :hasBirthYear 1912 ;
-    :hasDeathYear 1996 ;
-    :hasFather data:FrederickFrancisIV ;
-    :hasMarriageYear 1954 ;
-    :hasMother data:AlexandraOfHanover ;
-    :hasRelation data:BarbaraOfPrussia ;
-    :hasSister data:ThyraOfMecklenburg .
+data:Claude_Bowes-Lyon a :Man,
+        :Person ;
+    :isFatherOf data:Mary_Frances_Elphinstone .
 
-data:AlexandraOfHanover a :Woman ;
-    :hasFather data:ErnestAugustusCrownPrinceOfHanover ;
-    :hasMother data:ThyraOfDenmark .
+data:Elizabeth_Bowes-Lyon a :Person,
+        :Woman .
 
-data:BarbaraOfPrussia a :Woman ;
-    :hasFather data:SigismundOfPrussia ;
-    :hasMother data:CharlotteOfSaxeAltenburg .
+data:Mary_Frances_Elphinstone a :Person,
+        :Woman ;
+    :hasBirthYear 1883 ;
+    :hasDeathYear 1961 ;
+    :hasMarriageYear 1910 ;
+    :hasRelation data:Sidney_Elphinstone ;
+    :isAuntOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Elizabeth_Bowes-Lyon .
 
-data:CharlotteOfSaxeAltenburg a :Woman .
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
 
-data:ErnestAugustusCrownPrinceOfHanover a :Man .
-
-data:FrederickFrancisIV a :Man .
-
-data:SigismundOfPrussia a :Man .
-
-data:ThyraOfDenmark a :Woman .
-
-data:ThyraOfMecklenburg a :Woman .
+data:Sidney_Elphinstone a :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1955 .
 

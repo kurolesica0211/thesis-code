@@ -1,0 +1,147 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Augusta_Victoria a :Person,
+        :Woman ;
+    :hasRelation data:Augusta_Victoria,
+        data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasSister data:Augusta_Victoria ;
+    :isBloodrelationOf data:Augusta_Victoria ;
+    :isSiblingOf data:Augusta_Victoria ;
+    :isSisterOf data:Augusta_Victoria .
+
+data:Maria_Pia_of_Savoy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Carlos_I ;
+    :hasRelation data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Manuel_II,
+        data:Maria_Pia_of_Savoy ;
+    :hasSister data:Maria_Pia_of_Savoy ;
+    :hasSon data:Carlos_I ;
+    :isAncestorOf data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isAuntOf data:Carlos_I ;
+    :isBloodrelationOf data:Maria_Pia_of_Savoy ;
+    :isMotherOf data:Carlos_I ;
+    :isParentOf data:Carlos_I ;
+    :isSiblingOf data:Maria_Pia_of_Savoy ;
+    :isSisterOf data:Maria_Pia_of_Savoy .
+
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :hasSon data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isAncestorOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isAuntOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isMotherOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isParentOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isSiblingOf data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isSisterOf data:Am%C3%A9lie_of_Orl%C3%A9ans .
+
+data:Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Maria_Pia_of_Savoy ;
+    :hasBrother data:Carlos_I ;
+    :hasChild data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasMother data:Maria_Pia_of_Savoy ;
+    :hasParent data:Maria_Pia_of_Savoy ;
+    :hasRelation data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Manuel_II,
+        data:Maria_Pia_of_Savoy ;
+    :hasSon data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isAncestorOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Carlos_I ;
+    :isBrotherOf data:Carlos_I ;
+    :isChildOf data:Maria_Pia_of_Savoy ;
+    :isFatherOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isParentOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isSiblingOf data:Carlos_I ;
+    :isSonOf data:Maria_Pia_of_Savoy ;
+    :isUncleOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II .
+
+data:Lu%C3%ADs_Filipe a :Man,
+        :Person ;
+    :hasAncestor data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I,
+        data:Maria_Pia_of_Savoy ;
+    :hasBrother data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasFather data:Carlos_I ;
+    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :hasParent data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Augusta_Victoria,
+        data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Manuel_II,
+        data:Maria_Pia_of_Savoy ;
+    :isBloodrelationOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isBrotherOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isChildOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I ;
+    :isSiblingOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isSonOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I .
+
+data:Manuel_II a :Man,
+        :Person ;
+    :alsoKnownAs "The Patriot"^^xsd:string,
+        "The Unfortunate"^^xsd:string ;
+    :hasAncestor data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I,
+        data:Maria_Pia_of_Savoy ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasDeathYear 1932 ;
+    :hasFather data:Carlos_I ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :hasParent data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Augusta_Victoria,
+        data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Manuel_II,
+        data:Maria_Pia_of_Savoy ;
+    :isBloodrelationOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isBrotherOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isChildOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I ;
+    :isSiblingOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isSonOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I .
+

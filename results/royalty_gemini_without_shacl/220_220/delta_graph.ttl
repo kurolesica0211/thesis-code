@@ -2,56 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:AnneFerelithFenellaBowesLyon a :Person,
+data:LenaElizabethTindall a :Person,
         :Woman ;
-    :hasBirthYear 1917 ;
-    :hasDaughter data:ElizabethShakerley ;
-    :hasDeathYear 1980 ;
-    :hasFather data:JohnHerbertBowesLyon ;
-    :hasMarriageYear 1938,
-        1950 ;
-    :hasMother data:FenellaHepburnStuartForbesTrefusis ;
-    :hasSister data:DianaCinderellaSomervell,
-        data:KatherineBowesLyon,
-        data:NerissaBowesLyon,
-        data:PatriciaBowesLyon ;
-    :hasSon data:PatrickAnson .
+    :hasFather data:MikeTindall ;
+    :hasMother data:ZaraTindall .
 
-data:PrinceGeorgOfDenmark a :Man,
-        :Person .
-
-data:ThomasWilliamArnoldAnson a :Man,
-        :Person .
-
-data:CharlesHepburnStuartForbesTrefusis a :Man,
-        :Person .
-
-data:ClaudeBowesLyon a :Man,
-        :Person .
-
-data:DianaCinderellaSomervell a :Person,
-        :Woman .
-
-data:ElizabethShakerley a :Person,
-        :Woman .
-
-data:FenellaHepburnStuartForbesTrefusis a :Person,
+data:MiaGraceTindall a :Person,
         :Woman ;
-    :hasFather data:CharlesHepburnStuartForbesTrefusis .
+    :hasFather data:MikeTindall ;
+    :hasMother data:ZaraTindall .
 
-data:JohnHerbertBowesLyon a :Man,
-        :Person ;
-    :hasFather data:ClaudeBowesLyon .
-
-data:KatherineBowesLyon a :Person,
+data:AnnePrincessRoyal a :Person,
         :Woman .
 
-data:NerissaBowesLyon a :Person,
+data:FelicityWade a :Person,
         :Woman .
 
-data:PatriciaBowesLyon a :Person,
+data:MarkPhillips a :Man,
+        :Person .
+
+data:PeterPhillips a :Man,
+        :Person .
+
+data:StephaniePhillips a :Person,
         :Woman .
 
-data:PatrickAnson a :Man,
+data:ZaraPhillips a :Person,
+        :Woman .
+
+data:ZaraTindall a :Person,
+        :Woman ;
+    :alsoKnownAs data:ZaraPhillips ;
+    :hasBirthYear 1981 ;
+    :hasBrother data:PeterPhillips ;
+    :hasFather data:MarkPhillips ;
+    :hasMarriageYear 2011 ;
+    :hasMother data:AnnePrincessRoyal ;
+    :hasRelation data:MikeTindall ;
+    :hasSister data:FelicityWade,
+        data:StephaniePhillips .
+
+data:MikeTindall a :Man,
         :Person .
 

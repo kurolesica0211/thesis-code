@@ -2,55 +2,58 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Bernhard_Prinz_und_Markgraf_von_Baden a :Man,
+data:Philipp_Prince_of_Hohenlohe-Langenburg a :Man,
         :Person ;
+    :hasAncestor data:Anna_Elspeth_Campbell,
+        data:Prince_Alexander_of_Croy,
+        data:Princess_Margarita_of_Greece_and_Denmark ;
     :hasBirthYear 1970 ;
-    :hasFather data:Maximilian_Margrave_of_Baden ;
-    :hasMarriageYear 2001 ;
-    :hasMother data:Valerie_of_Austria ;
-    :hasRelation data:Stephanie_Anne_Kaul .
+    :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Princess_Charlotte_of_Croy ;
+    :hasRelation data:Saskia_Binder ;
+    :hasSex data:Male .
 
-data:Archduke_Hubert_Salvator_of_Austria a :Ancestor,
-        :Man,
-        :Person .
-
-data:Berthold_Margrave_of_Baden a :Ancestor,
-        :Man,
-        :Person .
-
-data:Christian_Kaul a :Ancestor,
-        :Man,
-        :Person .
-
-data:Hannelore_Scheel a :Ancestor,
+data:Anna_Elspeth_Campbell a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasAncestor data:Archibald_Campbell_6th_of_Glendaruel ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1986 .
 
-data:Maximilian_Margrave_of_Baden a :Ancestor,
+data:Archibald_Campbell_6th_of_Glendaruel a :Ancestor,
+        :Man,
+        :Person .
+
+data:Hans_Peter_Binder a :Ancestor,
+        :Man,
+        :Person .
+
+data:Kraft_Prince_of_Hohenlohe-Langenburg a :Ancestor,
         :Man,
         :Person ;
-    :hasDeathYear 2022 ;
-    :hasFather data:Berthold_Margrave_of_Baden ;
-    :hasMother data:Princess_Theodora_of_Greece_and_Denmark .
+    :hasBirthYear 1935 ;
+    :hasDeathYear 2004 .
 
-data:Princess_Rosemary_of_Salm-Salm a :Ancestor,
+data:Male a :Male .
+
+data:Prince_Alexander_of_Croy a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1912 ;
+    :hasDeathYear 2002 .
+
+data:Princess_Charlotte_of_Croy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1938 .
+
+data:Princess_Margarita_of_Greece_and_Denmark a :Ancestor,
         :Person,
         :Woman .
 
-data:Princess_Theodora_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Stephanie_Anne_Kaul a :Person,
+data:Saskia_Binder a :Person,
         :Woman ;
-    :hasBirthYear 1966 ;
-    :hasFather data:Christian_Kaul ;
-    :hasMother data:Hannelore_Scheel .
-
-data:Valerie_of_Austria a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1941 ;
-    :hasFather data:Archduke_Hubert_Salvator_of_Austria ;
-    :hasMother data:Princess_Rosemary_of_Salm-Salm .
+    :hasBirthYear 1973 ;
+    :hasFather data:Hans_Peter_Binder .
 

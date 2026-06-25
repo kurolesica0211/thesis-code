@@ -97,6 +97,8 @@ By the marriage, the bride became Lady Nicholas Windsor.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -112,39 +114,9 @@ By the marriage, the bride became Lady Nicholas Windsor.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -159,6 +131,23 @@ By the marriage, the bride became Lady Nicholas Windsor.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -176,6 +165,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -243,29 +247,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -274,6 +270,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -286,6 +290,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -294,17 +300,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -332,6 +340,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -347,73 +439,104 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (7c3a6782-dc3f-41b0-b8df-a09dbb524627)
- Call ID: 7c3a6782-dc3f-41b0-b8df-a09dbb524627
+  AssignClass (d6ee9f46-1eca-4fb5-8ceb-ac47da24faf5)
+ Call ID: d6ee9f46-1eca-4fb5-8ceb-ac47da24faf5
   Args:
+    source: Nicholas_Windsor
     type: :Man
-    source: Lord Nicholas Charles Edward Jonathan Windsor
-  AssignClass (41cf03b6-d6ea-43ba-b2db-d96d6d115f88)
- Call ID: 41cf03b6-d6ea-43ba-b2db-d96d6d115f88
+  AssignClass (45f146e2-ce3e-46c2-9669-3229a71d124c)
+ Call ID: 45f146e2-ce3e-46c2-9669-3229a71d124c
   Args:
-    source: Prince Edward, Duke of Kent
-    type: :Man
-  AssignClass (8e42e143-53c8-475d-afdb-714d8d290f0a)
- Call ID: 8e42e143-53c8-475d-afdb-714d8d290f0a
+    type: :Person
+    source: Nicholas_Windsor
+  AddLiteral (3ea8dadb-da37-4173-a463-3eba865faf1b)
+ Call ID: 3ea8dadb-da37-4173-a463-3eba865faf1b
   Args:
-    type: :Woman
-    source: Katharine, Duchess of Kent
-  AssignClass (f588b89c-c15d-464b-be04-bb21740e872a)
- Call ID: f588b89c-c15d-464b-be04-bb21740e872a
-  Args:
-    source: Earl of St Andrews
-    type: :Man
-  AssignClass (21eec9d5-d998-41c8-a162-ffe9a4d4324a)
- Call ID: 21eec9d5-d998-41c8-a162-ffe9a4d4324a
-  Args:
-    source: Lady Helen Taylor
-    type: :Woman
-  AssignClass (ce0c86fd-ff12-4a81-955a-3586233e0eaa)
- Call ID: ce0c86fd-ff12-4a81-955a-3586233e0eaa
-  Args:
-    source: Paola Doimi de Lupis Frankopan Šubić Zrinski
-    type: :Woman
-  AddLiteral (b42ec8d5-cdb2-4be9-8281-972b2dbeff72)
- Call ID: b42ec8d5-cdb2-4be9-8281-972b2dbeff72
-  Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
     literal_value: 1970
-    source: Lord Nicholas Charles Edward Jonathan Windsor
-  AddTriple (f28a0c34-1ffe-4216-9b8f-b4014bfd5d6f)
- Call ID: f28a0c34-1ffe-4216-9b8f-b4014bfd5d6f
+    literal_type: xsd:integer
+    source: Nicholas_Windsor
+    relation: :hasBirthYear
+  AssignClass (b60896a4-cbc5-41a9-8cc3-5ecae23fa73a)
+ Call ID: b60896a4-cbc5-41a9-8cc3-5ecae23fa73a
   Args:
+    type: :Man
+    source: Prince_Edward_Duke_of_Kent
+  AssignClass (3e578bbe-8531-4860-82fa-2330d1fc871a)
+ Call ID: 3e578bbe-8531-4860-82fa-2330d1fc871a
+  Args:
+    source: Prince_Edward_Duke_of_Kent
+    type: :Person
+  AssignClass (e3d0e6bd-8e0c-4778-b179-5b2d378fb9d3)
+ Call ID: e3d0e6bd-8e0c-4778-b179-5b2d378fb9d3
+  Args:
+    source: Katharine_Duchess_of_Kent
+    type: :Woman
+  AssignClass (91f1b119-4764-4072-b6e3-c142ba1065ff)
+ Call ID: 91f1b119-4764-4072-b6e3-c142ba1065ff
+  Args:
+    source: Katharine_Duchess_of_Kent
+    type: :Person
+  AddTriple (a06c7774-32b1-4b8e-8bb4-fc02fb19e11d)
+ Call ID: a06c7774-32b1-4b8e-8bb4-fc02fb19e11d
+  Args:
+    target: Prince_Edward_Duke_of_Kent
     relation: :hasFather
-    target: Prince Edward, Duke of Kent
-    source: Lord Nicholas Charles Edward Jonathan Windsor
-  AddTriple (83a686ab-f1db-41e2-b6cc-e979d550f43f)
- Call ID: 83a686ab-f1db-41e2-b6cc-e979d550f43f
+    source: Nicholas_Windsor
+  AddTriple (da326c3d-5d0f-40fe-9a99-4b079ea47c7e)
+ Call ID: da326c3d-5d0f-40fe-9a99-4b079ea47c7e
   Args:
-    target: Katharine, Duchess of Kent
+    target: Katharine_Duchess_of_Kent
     relation: :hasMother
-    source: Lord Nicholas Charles Edward Jonathan Windsor
-  AddTriple (9c3dd73c-4aa5-4bbb-8530-53f74bcc2083)
- Call ID: 9c3dd73c-4aa5-4bbb-8530-53f74bcc2083
+    source: Nicholas_Windsor
+  AssignClass (655d026c-af52-4e9f-a07b-64b5a8cc9aac)
+ Call ID: 655d026c-af52-4e9f-a07b-64b5a8cc9aac
   Args:
+    type: :Man
+    source: Earl_of_St_Andrews
+  AssignClass (e0dd2729-80de-4bd6-981d-30d9afb6503b)
+ Call ID: e0dd2729-80de-4bd6-981d-30d9afb6503b
+  Args:
+    type: :Person
+    source: Earl_of_St_Andrews
+  AddTriple (77b2fed8-0de3-4efb-a620-1035fc7abea4)
+ Call ID: 77b2fed8-0de3-4efb-a620-1035fc7abea4
+  Args:
+    source: Nicholas_Windsor
+    target: Earl_of_St_Andrews
     relation: :hasBrother
-    target: Earl of St Andrews
-    source: Lord Nicholas Charles Edward Jonathan Windsor
-  AddTriple (8d80a784-0fb3-4e61-ae0a-7a91b19df0d0)
- Call ID: 8d80a784-0fb3-4e61-ae0a-7a91b19df0d0
+  AssignClass (892ebba6-a816-486b-b78f-66313ceaa92c)
+ Call ID: 892ebba6-a816-486b-b78f-66313ceaa92c
   Args:
+    source: Lady_Helen_Taylor
+    type: :Woman
+  AssignClass (65fce2cf-2715-4021-88ee-819dc56d8b18)
+ Call ID: 65fce2cf-2715-4021-88ee-819dc56d8b18
+  Args:
+    source: Lady_Helen_Taylor
+    type: :Person
+  AddTriple (66b88005-0fee-4d56-9226-fc924edce901)
+ Call ID: 66b88005-0fee-4d56-9226-fc924edce901
+  Args:
+    source: Nicholas_Windsor
     relation: :hasSister
-    target: Lady Helen Taylor
-    source: Lord Nicholas Charles Edward Jonathan Windsor
-  AddTriple (224527ad-13c0-4dd0-9985-5c32d4d3fe4c)
- Call ID: 224527ad-13c0-4dd0-9985-5c32d4d3fe4c
+    target: Lady_Helen_Taylor
+  AssignClass (56238022-d53f-4159-918c-bb225c3cdc7c)
+ Call ID: 56238022-d53f-4159-918c-bb225c3cdc7c
   Args:
-    source: Lord Nicholas Charles Edward Jonathan Windsor
-    target: Paola Doimi de Lupis Frankopan Šubić Zrinski
-    relation: :hasRelation
-  Finish (7076b1eb-29bc-445b-a008-ca4a1450252d)
- Call ID: 7076b1eb-29bc-445b-a008-ca4a1450252d
+    source: Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski
+    type: :Woman
+  AssignClass (d2ad46b1-a683-4b28-a890-a29efdaa00fc)
+ Call ID: d2ad46b1-a683-4b28-a890-a29efdaa00fc
+  Args:
+    type: :Person
+    source: Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski
+  AddLiteral (6e4413ca-2beb-495a-9c64-095a109406d8)
+ Call ID: 6e4413ca-2beb-495a-9c64-095a109406d8
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 1999
+    literal_type: xsd:integer
+    source: Nicholas_Windsor
+  Finish (4542ddea-c537-4091-b7d4-4d8359564403)
+ Call ID: 4542ddea-c537-4091-b7d4-4d8359564403
   Args:

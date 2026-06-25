@@ -2,39 +2,51 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Tomislav_of_Yugoslavia a :Man,
-        :Person ;
-    :hasBirthYear 1928 ;
-    :hasBrother data:King_Peter_II_of_Yugoslavia ;
-    :hasDeathYear 2000 ;
-    :hasFather data:King_Alexander_I ;
-    :hasMarriageYear 1957 ;
-    :hasMother data:Queen_Maria_of_Yugoslavia ;
-    :hasRelation data:Princess_Margarita_of_Baden .
-
-data:King_Ferdinand_of_Romania a :Ancestor,
-        :Man,
-        :Person .
-
-data:King_Peter_II_of_Yugoslavia a :Man,
-        :Person ;
-    :hasFather data:King_Alexander_I ;
-    :hasMother data:Queen_Maria_of_Yugoslavia .
-
-data:Princess_Margarita_of_Baden a :Person,
-        :Woman .
-
-data:Queen_Marie_of_Romania a :Ancestor,
-        :Person,
-        :Woman .
-
-data:King_Alexander_I a :Ancestor,
-        :Man,
-        :Person .
-
-data:Queen_Maria_of_Yugoslavia a :Ancestor,
-        :Person,
+data:PrincessElizabethCountessOfToerringJettenbach a :Person,
         :Woman ;
-    :hasFather data:King_Ferdinand_of_Romania ;
-    :hasMother data:Queen_Marie_of_Romania .
+    :isAuntOf data:PrinceNikolaOfYugoslavia .
+
+data:PrincessMarinaDuchessOfKent a :Person,
+        :Woman ;
+    :isAuntOf data:PrinceNikolaOfYugoslavia .
+
+data:ArsenKaradjordjevic a :Man,
+        :Person .
+
+data:GrandDuchessElenaVladimirovnaOfRussia a :Person,
+        :Woman .
+
+data:PrinceAlexander a :Man,
+        :Person .
+
+data:PrinceNicholasOfGreeceAndDenmark a :Man,
+        :Person .
+
+data:PrincePaulOfYugoslavia a :Man,
+        :Person ;
+    :hasFather data:ArsenKaradjordjevic ;
+    :hasMother data:PrincessAuroraPavlovnaDemidovaDiSanDonato .
+
+data:PrincessAuroraPavlovnaDemidovaDiSanDonato a :Person,
+        :Woman .
+
+data:PrincessElizabeth a :Person,
+        :Woman .
+
+data:PrincessOlgaOfGreeceAndDenmark a :Person,
+        :Woman ;
+    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;
+    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia .
+
+data:PrinceNikolaOfYugoslavia a :Man,
+        :Person ;
+    :alsoKnownAs "Nikola Karađorđević"^^xsd:string,
+        "Prince Nicholas"^^xsd:string ;
+    :hasBirthYear 1928 ;
+    :hasBrother data:PrinceAlexander ;
+    :hasDeathYear 1954 ;
+    :hasFather data:PrincePaulOfYugoslavia ;
+    :hasMother data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSister data:PrincessElizabeth ;
+    :knownAs "Nicky"^^xsd:string .
 

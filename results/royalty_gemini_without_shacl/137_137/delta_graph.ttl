@@ -2,50 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Alexander_of_Yugoslavia a :Man,
+data:Leopold_Mountbatten a :Man,
         :Person ;
-    :hasBirthYear 1924 ;
-    :hasDeathYear 2016 ;
-    :hasFather data:Prince_Paul_of_Yugoslavia ;
-    :hasMarriageYear 1955,
-        1973 ;
-    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
-    :hasRelation data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein,
-        data:Princess_Maria_Pia_of_Savoy .
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1922 ;
+    :hasFather data:Henry_of_Battenberg ;
+    :hasMother data:Beatrice_of_the_United_Kingdom .
 
-data:Countess_Karoline_of_Ledebur-Wicheln a :Person,
-        :Woman .
-
-data:King_Umberto_II_of_Italy a :Man,
+data:Alexander_of_Hesse_and_by_Rhine a :Man,
         :Person .
 
-data:Prince_Johannes_of_Liechtenstein a :Man,
-        :Person .
+data:Beatrice_of_the_United_Kingdom a :Person,
+        :Woman ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria .
 
-data:Prince_Michel_of_Bourbon-Parma a :Man,
+data:Henry_of_Battenberg a :Man,
         :Person ;
-    :hasRelation data:Princess_Yolande_de_Broglie-Revel .
+    :hasFather data:Alexander_of_Hesse_and_by_Rhine ;
+    :hasMother data:Julia_Princess_of_Battenberg .
 
-data:Prince_Paul_of_Yugoslavia a :Man,
+data:Julia_Princess_of_Battenberg a :Person,
+        :Woman .
+
+data:Prince_Albert a :Man,
         :Person .
 
-data:Princess_Barbara_Eleonore_Marie_of_Liechtenstein a :Person,
-        :Woman ;
-    :hasFather data:Prince_Johannes_of_Liechtenstein ;
-    :hasMother data:Countess_Karoline_of_Ledebur-Wicheln .
-
-data:Princess_Maria_Pia_of_Savoy a :Person,
-        :Woman ;
-    :hasFather data:King_Umberto_II_of_Italy ;
-    :hasMother data:Princess_Marie_Jose_of_Belgium ;
-    :hasRelation data:Prince_Michel_of_Bourbon-Parma .
-
-data:Princess_Marie_Jose_of_Belgium a :Person,
-        :Woman .
-
-data:Princess_Olga_of_Greece_and_Denmark a :Person,
-        :Woman .
-
-data:Princess_Yolande_de_Broglie-Revel a :Person,
+data:Queen_Victoria a :Person,
         :Woman .
 

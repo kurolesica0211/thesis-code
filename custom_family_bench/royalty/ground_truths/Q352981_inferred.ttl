@@ -1,0 +1,470 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Mabel_of_Orange-Nassau a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Mabel of Orange-Nassau"^^xsd:string ;
+    data:posIndicesFull "2201:2217"^^xsd:string,
+        "2607:2623"^^xsd:string,
+        "2886:2902"^^xsd:string ;
+    data:posIndicesPart "3226:3234"^^xsd:string,
+        "3235:3240"^^xsd:string,
+        "5370:5378"^^xsd:string,
+        "5724:5730"^^xsd:string,
+        "5845:5851"^^xsd:string,
+        "5852:5858"^^xsd:string,
+        "5961:5967"^^xsd:string,
+        "5968:5974"^^xsd:string,
+        "6174:6180"^^xsd:string,
+        "6228:6234"^^xsd:string,
+        "6235:6241"^^xsd:string,
+        "6783:6789"^^xsd:string,
+        "6790:6796"^^xsd:string,
+        "6848:6856"^^xsd:string ;
+    data:wdtLink wdt:Q269679 ;
+    :alsoKnownAs "Mabel Martine Los"^^xsd:string,
+        "Mabel Martine Wisse Smit"^^xsd:string,
+        "Mabel Wisse Smit"^^xsd:string,
+        "Mabel van Oranje"^^xsd:string ;
+    :hasChild data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :hasDaughter data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :hasRelation data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau,
+        data:Princess_Mabel_of_Orange-Nassau ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Mabel_of_Orange-Nassau ;
+    :isAncestorOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isAuntOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isBloodrelationOf data:Princess_Mabel_of_Orange-Nassau ;
+    :isMotherOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isParentOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isSiblingOf data:Princess_Mabel_of_Orange-Nassau ;
+    :isSisterOf data:Princess_Mabel_of_Orange-Nassau .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Juliana of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "1216:1229"^^xsd:string,
+        "1216:1248"^^xsd:string,
+        "1222:1229"^^xsd:string,
+        "1222:1248"^^xsd:string,
+        "743:756"^^xsd:string,
+        "743:775"^^xsd:string,
+        "749:756"^^xsd:string,
+        "749:775"^^xsd:string ;
+    data:posIndicesPart "3165:3176"^^xsd:string,
+        "3769:3780"^^xsd:string,
+        "5064:5075"^^xsd:string,
+        "5571:5582"^^xsd:string,
+        "6734:6745"^^xsd:string,
+        "977:988"^^xsd:string ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Juliana der Nederlanden"^^xsd:string,
+        "Julijana"^^xsd:string,
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Princess Juliana of the Netherlands"^^xsd:string,
+        "Queen Juliana"^^xsd:string,
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Juliana of the Netherlands"^^xsd:string ;
+    :hasChild data:Beatrix_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Juliana_of_the_Netherlands ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands,
+        data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau,
+        data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isAuntOf data:Beatrix_of_the_Netherlands ;
+    :isBloodrelationOf data:Juliana_of_the_Netherlands ;
+    :isMotherOf data:Beatrix_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands ;
+    :isSiblingOf data:Juliana_of_the_Netherlands ;
+    :isSisterOf data:Juliana_of_the_Netherlands .
+
+data:Prince_Claus-_Prince_Consort_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Claus, Prince Consort of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "202:219"^^xsd:string ;
+    data:posIndicesPart "1041:1047"^^xsd:string,
+        "1137:1143"^^xsd:string,
+        "1282:1288"^^xsd:string,
+        "1443:1449"^^xsd:string,
+        "1562:1568"^^xsd:string,
+        "1683:1689"^^xsd:string,
+        "1872:1878"^^xsd:string,
+        "1879:1884"^^xsd:string,
+        "1973:1979"^^xsd:string,
+        "2017:2023"^^xsd:string,
+        "2175:2181"^^xsd:string,
+        "2338:2344"^^xsd:string,
+        "288:294"^^xsd:string,
+        "3066:3072"^^xsd:string,
+        "3165:3176"^^xsd:string,
+        "3200:3206"^^xsd:string,
+        "3624:3630"^^xsd:string,
+        "3769:3780"^^xsd:string,
+        "3872:3878"^^xsd:string,
+        "4163:4169"^^xsd:string,
+        "4238:4244"^^xsd:string,
+        "433:439"^^xsd:string,
+        "4366:4372"^^xsd:string,
+        "4432:4438"^^xsd:string,
+        "4590:4596"^^xsd:string,
+        "4688:4694"^^xsd:string,
+        "4850:4856"^^xsd:string,
+        "5011:5017"^^xsd:string,
+        "5064:5075"^^xsd:string,
+        "5137:5143"^^xsd:string,
+        "5528:5534"^^xsd:string,
+        "5557:5563"^^xsd:string,
+        "5571:5582"^^xsd:string,
+        "5675:5681"^^xsd:string,
+        "5951:5957"^^xsd:string,
+        "6371:6377"^^xsd:string,
+        "6474:6480"^^xsd:string,
+        "6481:6486"^^xsd:string,
+        "6514:6520"^^xsd:string,
+        "654:665"^^xsd:string,
+        "6627:6633"^^xsd:string,
+        "6720:6726"^^xsd:string,
+        "6734:6745"^^xsd:string,
+        "6773:6779"^^xsd:string,
+        "713:719"^^xsd:string,
+        "720:725"^^xsd:string,
+        "780:786"^^xsd:string,
+        "908:914"^^xsd:string,
+        "963:969"^^xsd:string,
+        "977:988"^^xsd:string,
+        "990:996"^^xsd:string ;
+    data:wdtLink wdt:Q159609 ;
+    :alsoKnownAs "Claus van Amsberg"^^xsd:string,
+        "Claus von Amsberg"^^xsd:string,
+        "Claus, Prince Consort of the Netherlands"^^xsd:string,
+        "Klaus von Amsberg"^^xsd:string,
+        "Klaus-Georg Wilhelm Otto Friedrich Gerd von Amsberg"^^xsd:string,
+        "Prince Claus of the Netherlands, Jonkheer van Amsberg"^^xsd:string ;
+    :hasBrother data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasChild data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasRelation data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands,
+        data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isAncestorOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau,
+        data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isBloodrelationOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isFatherOf data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isParentOf data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isUncleOf data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands .
+
+data:William_Alexander_of_the_Netherlands a :Man,
+        :Person ;
+    rdfs:label "William Alexander of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "244:265"^^xsd:string,
+        "3023:3044"^^xsd:string,
+        "831:852"^^xsd:string,
+        "831:871"^^xsd:string ;
+    data:posIndicesPart "2508:2517"^^xsd:string,
+        "3769:3780"^^xsd:string,
+        "5064:5075"^^xsd:string,
+        "5571:5582"^^xsd:string,
+        "654:665"^^xsd:string,
+        "6734:6745"^^xsd:string,
+        "977:988"^^xsd:string ;
+    data:wdtLink wdt:Q154952 ;
+    :alsoKnownAs "King Willem-Alexander"^^xsd:string,
+        "King Willem-Alexander of the Netherlands"^^xsd:string,
+        "Prince Willem-Alexander Claus George Ferdinand of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg"^^xsd:string,
+        "Prince Willem-Alexander of Amsberg"^^xsd:string,
+        "Prince Willem-Alexander of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg"^^xsd:string,
+        "Prince William-Alexander of the Netherlands"^^xsd:string,
+        "W.A. van Buren"^^xsd:string,
+        "Wilem van Amsberg"^^xsd:string,
+        "Willem IV of the Netherlands"^^xsd:string,
+        "Willem-Alexander Claus George Ferdinand, Prince of Orange"^^xsd:string,
+        "Willem-Alexander Prins van Oranje-Nassau Koning der Nederlanden"^^xsd:string,
+        "Willem-Alexander van Amsberg"^^xsd:string,
+        "Willem-Alexander van Oranje-Nassau"^^xsd:string,
+        "Willem-Alexander, Prince of Orange"^^xsd:string,
+        "ZM Koning Willem-Alexander"^^xsd:string ;
+    :hasAncestor data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasBrother data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasFather data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasMother data:Beatrix_of_the_Netherlands ;
+    :hasParent data:Beatrix_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands,
+        data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isChildOf data:Beatrix_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isSonOf data:Beatrix_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isUncleOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau .
+
+data:Beatrix_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Beatrix of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "165:178"^^xsd:string,
+        "171:197"^^xsd:string,
+        "6456:6469"^^xsd:string ;
+    data:posIndicesPart "3165:3176"^^xsd:string,
+        "3769:3780"^^xsd:string,
+        "5064:5075"^^xsd:string,
+        "5379:5386"^^xsd:string,
+        "5571:5582"^^xsd:string,
+        "654:665"^^xsd:string,
+        "6734:6745"^^xsd:string,
+        "701:708"^^xsd:string,
+        "977:988"^^xsd:string ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau"^^xsd:string,
+        "Beatrix Wilhelmina Armgard"^^xsd:string,
+        "Beatrix der Nederlanden"^^xsd:string,
+        "Beatrix of Orange"^^xsd:string,
+        "Beatrix van Oranje"^^xsd:string,
+        "Princess Beatrix of Orange-Nassau"^^xsd:string,
+        "Princess Beatrix of the Netherlands"^^xsd:string,
+        "Queen Beatrix"^^xsd:string ;
+    :hasAncestor data:Juliana_of_the_Netherlands ;
+    :hasChild data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_of_the_Netherlands ;
+    :hasSon data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isAncestorOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau,
+        data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isAuntOf data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isBloodrelationOf data:Beatrix_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands ;
+    :isDaughterOf data:Juliana_of_the_Netherlands ;
+    :isMotherOf data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isParentOf data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands .
+
+data:Countess_Luana_of_Orange-Nassau a :Person,
+        :Woman ;
+    rdfs:label "Countess Luana of Orange-Nassau"^^xsd:string ;
+    data:posIndicesFull "3315:3366"^^xsd:string,
+        "3315:3390"^^xsd:string ;
+    data:posIndicesPart "5724:5730"^^xsd:string,
+        "5845:5851"^^xsd:string,
+        "5852:5858"^^xsd:string,
+        "5961:5967"^^xsd:string,
+        "5968:5974"^^xsd:string,
+        "6174:6180"^^xsd:string,
+        "6215:6223"^^xsd:string,
+        "6228:6234"^^xsd:string,
+        "6235:6241"^^xsd:string,
+        "6783:6789"^^xsd:string,
+        "6790:6796"^^xsd:string ;
+    data:wdtLink wdt:Q862535 ;
+    :alsoKnownAs "Countess Emma Luana Ninette Sophie of Orange-Nassau"^^xsd:string,
+        "Countess Emma Luana Ninette Sophie of Orange-Nassau, Jonkvrouwe van Amsberg"^^xsd:string,
+        "Countess Luana of Orange-Nassau, Jonkvrouwe van Amsberg"^^xsd:string,
+        "Emma Luana Ninette Sophie van Oranje-Nassau van Amsberg Gravin van Oranje-Nassau"^^xsd:string ;
+    :hasAncestor data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands,
+        data:Prince_Friso_of_the_Netherlands,
+        data:Princess_Mabel_of_Orange-Nassau ;
+    :hasFather data:Prince_Friso_of_the_Netherlands ;
+    :hasMother data:Princess_Mabel_of_Orange-Nassau ;
+    :hasParent data:Prince_Friso_of_the_Netherlands,
+        data:Princess_Mabel_of_Orange-Nassau ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands,
+        data:Prince_Friso_of_the_Netherlands,
+        data:Princess_Mabel_of_Orange-Nassau ;
+    :hasSex data:female ;
+    :hasSister data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isBloodrelationOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isChildOf data:Prince_Friso_of_the_Netherlands,
+        data:Princess_Mabel_of_Orange-Nassau ;
+    :isDaughterOf data:Prince_Friso_of_the_Netherlands,
+        data:Princess_Mabel_of_Orange-Nassau ;
+    :isSiblingOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isSisterOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau .
+
+data:Countess_Zaria_of_Orange-Nassau a :Person,
+        :Woman ;
+    rdfs:label "Countess Zaria of Orange-Nassau"^^xsd:string ;
+    data:posIndicesFull "3452:3505"^^xsd:string,
+        "3461:3488"^^xsd:string ;
+    data:posIndicesPart "5724:5730"^^xsd:string,
+        "5845:5851"^^xsd:string,
+        "5852:5858"^^xsd:string,
+        "5961:5967"^^xsd:string,
+        "5968:5974"^^xsd:string,
+        "6174:6180"^^xsd:string,
+        "6215:6223"^^xsd:string,
+        "6228:6234"^^xsd:string,
+        "6235:6241"^^xsd:string,
+        "6783:6789"^^xsd:string,
+        "6790:6796"^^xsd:string ;
+    data:wdtLink wdt:Q4590996 ;
+    :alsoKnownAs "Countess Joanna Zaria Nicoline Milou of Orange-Nassau"^^xsd:string,
+        "Countess Zaria of Orange-Nassau, Jonkvrouwe van Amsberg"^^xsd:string,
+        "Joanna Zaria Nicoline Milou"^^xsd:string,
+        "Joanna Zaria Nicoline Milou van Oranje-Nassau van Amsberg Gravin van Oranje-Nassau"^^xsd:string,
+        "Zaria van Oranje-Nassau van Amsberg"^^xsd:string ;
+    :hasAncestor data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands,
+        data:Prince_Friso_of_the_Netherlands,
+        data:Princess_Mabel_of_Orange-Nassau ;
+    :hasFather data:Prince_Friso_of_the_Netherlands ;
+    :hasMother data:Princess_Mabel_of_Orange-Nassau ;
+    :hasParent data:Prince_Friso_of_the_Netherlands,
+        data:Princess_Mabel_of_Orange-Nassau ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands,
+        data:Prince_Friso_of_the_Netherlands,
+        data:Princess_Mabel_of_Orange-Nassau ;
+    :hasSex data:female ;
+    :hasSister data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isBloodrelationOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isChildOf data:Prince_Friso_of_the_Netherlands,
+        data:Princess_Mabel_of_Orange-Nassau ;
+    :isDaughterOf data:Prince_Friso_of_the_Netherlands,
+        data:Princess_Mabel_of_Orange-Nassau ;
+    :isSiblingOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isSisterOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau .
+
+data:Prince_Friso_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Friso of the Netherlands"^^xsd:string ;
+    data:wdtLink wdt:Q352981 ;
+    :alsoKnownAs "H.R.H. Prince Friso van Oranje-Nassau"^^xsd:string,
+        "Johan Friso van Oranje-Nassau van Amsberg"^^xsd:string,
+        "Prince Friso of the Netherlands"^^xsd:string ;
+    :hasAncestor data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasBrother data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasChild data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :hasDaughter data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :hasFather data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasMother data:Beatrix_of_the_Netherlands ;
+    :hasParent data:Beatrix_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands,
+        data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isAncestorOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isBloodrelationOf data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isChildOf data:Beatrix_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isFatherOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isParentOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau ;
+    :isSiblingOf data:Prince_Friso_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isSonOf data:Beatrix_of_the_Netherlands,
+        data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isUncleOf data:Countess_Luana_of_Orange-Nassau,
+        data:Countess_Zaria_of_Orange-Nassau .
+

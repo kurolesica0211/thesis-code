@@ -7,10 +7,16 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Princess_Camilla-_Duchess_of_Castro a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Prince_Carlo-_Duke_of_Castro a :Person ;
+    rdfs:label "Prince Carlo, Duke of Castro" ;
+    data:wdtLink wdt:Q1850305 ;
+    :alsoKnownAs "Prince Carlo Maria Bernardo Gennaro of Bourbon-Two Sicilies",
+        "Prince Carlo of Bourbon-Two Sicilies, The Duke of Castro" ;
+    :hasParent data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasSex data:male .
+
+data:Princess_Camilla-_Duchess_of_Castro a :Person ;
     rdfs:label "Princess Camilla, Duchess of Castro" ;
     data:posIndicesFull "387:403",
         "437:453" ;
@@ -39,10 +45,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Prince_Ferdinando-_Duke_of_Castro a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Ferdinando-_Duke_of_Castro a :Person ;
     rdfs:label "Prince Ferdinando, Duke of Castro" ;
     data:posIndicesFull "280:312" ;
     data:posIndicesPart "1316:1320",
@@ -69,16 +72,9 @@ data:Prince_Ferdinando-_Duke_of_Castro a :Ancestor,
     data:wdtLink wdt:Q2324276 ;
     :alsoKnownAs "Ferdinando Maria",
         "Ferdinando Maria Andrea Alfonso Marcus" ;
-    :hasChild data:Prince_Carlo-_Duke_of_Castro ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Carlo-_Duke_of_Castro ;
-    :isFatherOf data:Prince_Carlo-_Duke_of_Castro ;
-    :isParentOf data:Prince_Carlo-_Duke_of_Castro .
+    :hasSex data:male .
 
-data:Princess_Chantal-_Duchess_of_Castro a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Chantal-_Duchess_of_Castro a :Person ;
     rdfs:label "Princess Chantal, Duchess of Castro" ;
     data:posIndicesFull "317:344" ;
     data:posIndicesPart "1071:1079",
@@ -91,27 +87,9 @@ data:Princess_Chantal-_Duchess_of_Castro a :Ancestor,
     data:wdtLink wdt:Q3666240 ;
     :alsoKnownAs "Chantal Françoise Marie Camille de Chevron-Villette",
         "Chantal de Chevron-Villette" ;
-    :hasChild data:Prince_Carlo-_Duke_of_Castro ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Carlo-_Duke_of_Castro ;
-    :isMotherOf data:Prince_Carlo-_Duke_of_Castro ;
-    :isParentOf data:Prince_Carlo-_Duke_of_Castro .
+    :hasSex data:female .
 
-data:Prince_Carlo-_Duke_of_Castro a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Carlo, Duke of Castro" ;
-    data:wdtLink wdt:Q1850305 ;
-    :alsoKnownAs "Prince Carlo Maria Bernardo Gennaro of Bourbon-Two Sicilies",
-        "Prince Carlo of Bourbon-Two Sicilies, The Duke of Castro" ;
-    :hasFather data:Prince_Ferdinando-_Duke_of_Castro ;
-    :hasMother data:Princess_Chantal-_Duchess_of_Castro ;
-    :hasParent data:Prince_Ferdinando-_Duke_of_Castro,
-        data:Princess_Chantal-_Duchess_of_Castro ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Ferdinando-_Duke_of_Castro,
-        data:Princess_Chantal-_Duchess_of_Castro ;
-    :isSonOf data:Prince_Ferdinando-_Duke_of_Castro,
-        data:Princess_Chantal-_Duchess_of_Castro .
+data:female a :Female .
+
+data:male a :Male .
 

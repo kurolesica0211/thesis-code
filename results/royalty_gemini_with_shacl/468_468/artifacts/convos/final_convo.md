@@ -85,48 +85,20 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Wilhelm Friedrich Franz Joseph Christian Olaf of Prussia (4 July 1906 – 26 May 1940) was the eldest child of Wilhelm, German Crown Prince, and Duchess Cecilie of Mecklenburg-Schwerin.
-At his birth, he was second in line to the German throne and was expected to succeed to the throne after the deaths of his grandfather, Emperor Wilhelm II, and his father, Crown Prince Wilhelm, although both outlived him.
-In any case, the German monarchy was abolished in 1918 when he was twelve.
-He later enlisted to serve in the Wehrmacht and died in active service during the German invasion of France in 1940.
-Early life and childhood
+Carl-Friedrich Hubertus Georg Eduardo Paolo Nickolos Franz Alois Ignatius Hieronymus Maria, Hereditary Prince of Löwenstein-Wertheim-Rosenberg (30 September 1966 – 24 April 2010), better known by his racing alias Leonhard "Leo" Löwenstein, was a German prince and endurance race driver participating in the VLN.
+Personal life
 
-Wilhelm was born on 4 July 1906 at the Hohenzollern family's private summer residence, Marmorpalais, or Marble Palace, near Potsdam, where his parents were residing until their own home, Schloss Cecilienhof, could be completed.
-His father was Crown Prince Wilhelm, the eldest son and heir to the German Emperor, Wilhelm II.
-His mother was Duchess Cecilie of Mecklenburg-Schwerin.
-Emperor Franz Joseph of Austria was one of the Prince's godfathers.
-The selection of a nanny for Wilhelm and his younger brother, Louis Ferdinand (born in 1907) caused considerable distress within the family.
-On his tenth birthday in 1916, Wilhelm was made a lieutenant in the 1st Guards Regiment, and was given the Order of the Black Eagle by his grandfather.
-Two years later, when he was twelve, the German monarchy was abolished.
-Wilhelm and his family remained in Germany, though his grandfather, the former Emperor, went into exile in the Netherlands.
-The former Crown Prince and his family remained in Potsdam, where Wilhelm and his younger brothers attended the local gymnasium.
-After graduating from secondary school, Wilhelm went on to study at the Universities of Königsberg, Munich and Bonn.
-In 1926, while a student at the University of Bonn, Wilhelm joined the Borussia Corps, a student organization of which his father, grandfather, and other members of the Prussian royal family were members.
-Marriage and children
-
-While a student at Bonn, Wilhelm fell in love with a fellow student, Dorothea von Salviati (10 September 1907 – 7 May 1972).
-Wilhelm's grandfather did not approve of the marriage of the heir apparent in line to the German throne to a member of the minor nobility.
-Wilhelm told his grandson, "Remember, there is every possible form of horse.
-However, Wilhelm was determined to marry Dorothea.
-Wilhelm and Dorothea married on 3 June 1933 in Bonn.
-In 1940, the ex-Emperor recognized the marriage as dynastic and the girls were accorded the style of Princesses of Prussia (although their father was not restored to his former place in the putative line of succession, his renunciation of his rights remaining valid):
-
-
-Military services
-
-During the Weimar Republic, Wilhelm inadvertently caused a public scandal by attending Army manoeuvres in the uniform of the old Imperial First Foot Guards without first seeking government approval.
-The Oster conspiracy of 1938 sought to restore Wilhelm to the throne.
-At the beginning of World War II, Wilhelm was among a number of princes from the former German monarchies who enlisted to serve in the Wehrmacht, the unified armed forces of Germany.
-Death and reaction
-
-In May 1940, Wilhelm took part in the invasion of France.
-Shortly after Wilhelm's death, a decree known as the Prinzenerlaß, or Prince's Decree, was issued, barring all members of the former German royal houses from service in the Wehrmacht.
+Löwenstein was the eldest son and heir to Alois-Konstantin, Prince of Löwenstein-Wertheim-Rosenberg, who became Hereditary Prince in 1990 upon the death of his grandfather.
+(although as heir to the Roman Catholic branch of the Princely House of Löwenstein he may have been barred by the Act of Settlement from eligibility for succession to the British throne).
+Löwenstein and his family lived in the village of Laudenbach am Main in Bavaria, where they ran a vineyard.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -142,39 +114,9 @@ Shortly after Wilhelm's death, a decree known as the Prinzenerlaß, or Prince's 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -189,6 +131,23 @@ Shortly after Wilhelm's death, a decree known as the Prinzenerlaß, or Prince's 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -206,6 +165,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -273,29 +247,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -304,6 +270,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -316,6 +290,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -324,17 +300,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -362,6 +340,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -377,182 +439,62 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b2463372-4ca7-4253-a71c-5811c294487e)
- Call ID: b2463372-4ca7-4253-a71c-5811c294487e
+  AssignClass (339ea78d-6136-414c-9c4f-6df6a679ff78)
+ Call ID: 339ea78d-6136-414c-9c4f-6df6a679ff78
   Args:
-    source: Wilhelm_of_Prussia
-    type: :Person
-  AssignClass (6cac79cc-3a85-4f33-801a-df3835d07a05)
- Call ID: 6cac79cc-3a85-4f33-801a-df3835d07a05
-  Args:
-    source: Wilhelm_of_Prussia
+    source: Carl-Friedrich_Löwenstein-Wertheim-Rosenberg
     type: :Man
-  AddLiteral (cb424c1e-bace-4b75-ac81-9720fd6bb466)
- Call ID: cb424c1e-bace-4b75-ac81-9720fd6bb466
+  AssignClass (8c810dc8-5606-4d07-adb3-d30c374cd8ca)
+ Call ID: 8c810dc8-5606-4d07-adb3-d30c374cd8ca
+  Args:
+    source: Carl-Friedrich_Löwenstein-Wertheim-Rosenberg
+    type: :Person
+  AddLiteral (c94547e4-8f52-4248-8e19-fd2f82db14e2)
+ Call ID: c94547e4-8f52-4248-8e19-fd2f82db14e2
   Args:
     literal_type: xsd:integer
+    source: Carl-Friedrich_Löwenstein-Wertheim-Rosenberg
+    literal_value: 1966
     relation: :hasBirthYear
-    literal_value: 1906
-    source: Wilhelm_of_Prussia
-  AddLiteral (2b9ba7fb-a941-4604-845b-7fdb86355a62)
- Call ID: 2b9ba7fb-a941-4604-845b-7fdb86355a62
+  AddLiteral (6c79eca3-349c-47d9-8d2a-8395d5c126de)
+ Call ID: 6c79eca3-349c-47d9-8d2a-8395d5c126de
   Args:
+    literal_value: 2010
     literal_type: xsd:integer
+    source: Carl-Friedrich_Löwenstein-Wertheim-Rosenberg
     relation: :hasDeathYear
-    literal_value: 1940
-    source: Wilhelm_of_Prussia
-  AssignClass (4e44b5b2-b384-4b64-b1f0-564fe6506442)
- Call ID: 4e44b5b2-b384-4b64-b1f0-564fe6506442
+  AddLiteral (05588c60-803f-43f1-a8ef-355640f92f1a)
+ Call ID: 05588c60-803f-43f1-a8ef-355640f92f1a
   Args:
-    type: :Person
-    source: Crown_Prince_Wilhelm
-  AssignClass (a1a82a84-f394-47e4-b2f8-3d1663638300)
- Call ID: a1a82a84-f394-47e4-b2f8-3d1663638300
-  Args:
-    type: :Man
-    source: Crown_Prince_Wilhelm
-  AssignClass (0ad4e75b-0eab-4371-92b1-3bffba40c812)
- Call ID: 0ad4e75b-0eab-4371-92b1-3bffba40c812
-  Args:
-    type: :Person
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AssignClass (53ecbb5e-cd98-44d0-b1f4-63543e597f27)
- Call ID: 53ecbb5e-cd98-44d0-b1f4-63543e597f27
-  Args:
-    type: :Woman
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddTriple (cf972bac-8827-42fb-b733-093c6b44a92f)
- Call ID: cf972bac-8827-42fb-b733-093c6b44a92f
-  Args:
-    target: Crown_Prince_Wilhelm
-    relation: :hasFather
-    source: Wilhelm_of_Prussia
-  AddTriple (267c428e-ba3f-4709-9180-e0b5762cc730)
- Call ID: 267c428e-ba3f-4709-9180-e0b5762cc730
-  Args:
-    target: Cecilie_of_Mecklenburg-Schwerin
-    relation: :hasMother
-    source: Wilhelm_of_Prussia
-  AssignClass (7f1badd7-05f5-4d85-a287-3dd8990683d5)
- Call ID: 7f1badd7-05f5-4d85-a287-3dd8990683d5
-  Args:
-    source: Wilhelm_II
-    type: :Person
-  AssignClass (734399c0-e950-4c44-8950-2619d0f6f1c9)
- Call ID: 734399c0-e950-4c44-8950-2619d0f6f1c9
-  Args:
-    source: Wilhelm_II
-    type: :Man
-  AddTriple (216da4b5-3c17-4479-9bd2-e29624b21d05)
- Call ID: 216da4b5-3c17-4479-9bd2-e29624b21d05
-  Args:
-    source: Crown_Prince_Wilhelm
-    target: Wilhelm_II
-    relation: :hasFather
-  AssignClass (997d65ba-9893-41cd-ae2a-7db690e5cffc)
- Call ID: 997d65ba-9893-41cd-ae2a-7db690e5cffc
-  Args:
-    type: :Person
-    source: Louis_Ferdinand
-  AssignClass (761902d3-1c74-4b75-a05e-a1199a519afc)
- Call ID: 761902d3-1c74-4b75-a05e-a1199a519afc
+    literal_type: xsd:string
+    literal_value: Leonhard "Leo" Löwenstein
+    source: Carl-Friedrich_Löwenstein-Wertheim-Rosenberg
+    relation: :knownAs
+  AssignClass (427175ca-ddcf-4334-a743-e7754911b0ff)
+ Call ID: 427175ca-ddcf-4334-a743-e7754911b0ff
   Args:
     type: :Man
-    source: Louis_Ferdinand
-  AddTriple (3fb9b179-7d8a-4667-a117-fe61fef34d38)
- Call ID: 3fb9b179-7d8a-4667-a117-fe61fef34d38
+    source: Alois-Konstantin_Löwenstein-Wertheim-Rosenberg
+  AssignClass (2f0d5de5-df0a-411f-853f-8c7ddbe28ea7)
+ Call ID: 2f0d5de5-df0a-411f-853f-8c7ddbe28ea7
   Args:
-    relation: :hasBrother
-    target: Louis_Ferdinand
-    source: Wilhelm_of_Prussia
-  AssignClass (e419d0df-d7f2-4ffb-8c3d-9da93a72fa76)
- Call ID: e419d0df-d7f2-4ffb-8c3d-9da93a72fa76
-  Args:
-    source: Franz_Joseph_of_Austria
+    source: Alois-Konstantin_Löwenstein-Wertheim-Rosenberg
     type: :Person
-  AssignClass (e0392a4e-9afb-40cb-b870-09707503dd1f)
- Call ID: e0392a4e-9afb-40cb-b870-09707503dd1f
+  AddTriple (a4520d54-0c1d-491c-9f57-fa74dec94c7d)
+ Call ID: a4520d54-0c1d-491c-9f57-fa74dec94c7d
   Args:
-    type: :Man
-    source: Franz_Joseph_of_Austria
-  AssignClass (9fb620fc-84bb-44e8-9de1-dd61ec725011)
- Call ID: 9fb620fc-84bb-44e8-9de1-dd61ec725011
+    target: Alois-Konstantin_Löwenstein-Wertheim-Rosenberg
+    relation: :isSonOf
+    source: Carl-Friedrich_Löwenstein-Wertheim-Rosenberg
+  AddTriple (14fdc75f-5fbb-4dbc-bee0-82f8dda2f145)
+ Call ID: 14fdc75f-5fbb-4dbc-bee0-82f8dda2f145
   Args:
-    source: Dorothea_von_Salviati
-    type: :Person
-  AssignClass (ff966546-9f78-4a42-b28b-5506f7bdc9fb)
- Call ID: ff966546-9f78-4a42-b28b-5506f7bdc9fb
+    target: Carl-Friedrich_Löwenstein-Wertheim-Rosenberg
+    source: Alois-Konstantin_Löwenstein-Wertheim-Rosenberg
+    relation: :isFatherOf
+  Finish (7a29b3d3-b2cb-4c49-9948-c9b0a64b6b10)
+ Call ID: 7a29b3d3-b2cb-4c49-9948-c9b0a64b6b10
   Args:
-    source: Dorothea_von_Salviati
-    type: :Woman
-  AddLiteral (eea4ef99-785b-457c-835d-61f6a572d2c8)
- Call ID: eea4ef99-785b-457c-835d-61f6a572d2c8
-  Args:
-    source: Wilhelm_of_Prussia
-    literal_value: 1933
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-  AddTriple (27edbb20-64e7-474b-930c-f5fca2163e8b)
- Call ID: 27edbb20-64e7-474b-930c-f5fca2163e8b
-  Args:
-    source: Wilhelm_of_Prussia
-    relation: :hasRelation
-    target: Dorothea_von_Salviati
-  Finish (2d9c9496-3d2a-4f2b-a2f7-5d89fc2aab11)
- Call ID: 2d9c9496-3d2a-4f2b-a2f7-5d89fc2aab11
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -593,34 +535,16 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Franz_Joseph_of_Austria a :Man,
-          :Person .
-
-  data:Wilhelm_of_Prussia a :Man,
+  data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,
           :Person ;
-      :hasBirthYear 1906 ;
-      :hasBrother data:Louis_Ferdinand ;
-      :hasDeathYear 1940 ;
-      :hasFather data:Crown_Prince_Wilhelm ;
-      :hasMarriageYear 1933 ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-      :hasRelation data:Dorothea_von_Salviati .
+      :isFatherOf data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg .
 
-  data:Cecilie_of_Mecklenburg-Schwerin a :Person,
-          :Woman .
-
-  data:Crown_Prince_Wilhelm a :Man,
+  data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,
           :Person ;
-      :hasFather data:Wilhelm_II .
-
-  data:Dorothea_von_Salviati a :Person,
-          :Woman .
-
-  data:Louis_Ferdinand a :Man,
-          :Person .
-
-  data:Wilhelm_II a :Man,
-          :Person .
+      :hasBirthYear 1966 ;
+      :hasDeathYear 2010 ;
+      :isSonOf data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;
+      :knownAs "Leonhard \"Leo\" Löwenstein"^^xsd:string .
 
 
 
@@ -632,86 +556,46 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (5b578a87-6a89-4a09-8c13-65c4bb43fc21)
- Call ID: 5b578a87-6a89-4a09-8c13-65c4bb43fc21
+  ValidateShacl (60240409-7ead-4fe1-b514-67fd989b18bb)
+ Call ID: 60240409-7ead-4fe1-b514-67fd989b18bb
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:9
+Total violations:4
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node Crown_Prince_Wilhelm used in the hasFather property for Wilhelm_of_Prussia is missing the required Ancestor class.
+      The node 'Alois-Konstantin_Löwenstein-Wertheim-Rosenberg', which is the target of the 'isSonOf' relationship from 'Carl-Friedrich_Löwenstein-Wertheim-Rosenberg', is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Crown_Prince_Wilhelm', class=':Ancestor')
+      Use 'AssignClass' to assign class ':Ancestor' to node 'Alois-Konstantin_Löwenstein-Wertheim-Rosenberg'.
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node Wilhelm_II used in the hasFather property for Crown_Prince_Wilhelm is missing the required Ancestor class.
+      The node 'Alois-Konstantin_Löwenstein-Wertheim-Rosenberg' is still missing the ':Ancestor' class designation required by the ':Man-isSonOf' shape.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II', class=':Ancestor')
+      Use 'AssignClass' to assign class ':Ancestor' to node 'Alois-Konstantin_Löwenstein-Wertheim-Rosenberg'.
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value node Cecilie_of_Mecklenburg-Schwerin used in the hasMother property for Wilhelm_of_Prussia is missing the required Ancestor class.
+      The node 'Alois-Konstantin_Löwenstein-Wertheim-Rosenberg' is still missing the ':Ancestor' class designation required by the ':Man-isSonOf' shape.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      Use 'AssignClass' to assign class ':Ancestor' to node 'Alois-Konstantin_Löwenstein-Wertheim-Rosenberg'.
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The value node Crown_Prince_Wilhelm used in the hasFather property for Wilhelm_of_Prussia is missing the required Ancestor class.
+      The node 'Alois-Konstantin_Löwenstein-Wertheim-Rosenberg' acts as a subject for the 'isFatherOf' property, but it is missing the ':Ancestor' class, which is a mandatory requirement for any subject of this relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Crown_Prince_Wilhelm', class=':Ancestor')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Wilhelm_II used in the hasFather property for Crown_Prince_Wilhelm is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Cecilie_of_Mecklenburg-Schwerin used in the hasMother property for Wilhelm_of_Prussia is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Crown_Prince_Wilhelm used in the hasFather property for Wilhelm_of_Prussia is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Crown_Prince_Wilhelm', class=':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node Wilhelm_II used in the hasFather property for Crown_Prince_Wilhelm is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wilhelm_II', class=':Ancestor')
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value node Cecilie_of_Mecklenburg-Schwerin used in the hasMother property for Wilhelm_of_Prussia is missing the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
+      Use 'AssignClass' to assign class ':Ancestor' to node 'Alois-Konstantin_Löwenstein-Wertheim-Rosenberg'.
 
 
 
@@ -720,32 +604,11 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (4db0076b-0675-470a-a358-880bc250c666)
- Call ID: 4db0076b-0675-470a-a358-880bc250c666
+  AssignClass (c4895aad-f41e-4c47-8898-671b0108957c)
+ Call ID: c4895aad-f41e-4c47-8898-671b0108957c
   Args:
-    source: Crown_Prince_Wilhelm
+    source: Alois-Konstantin_Löwenstein-Wertheim-Rosenberg
     type: :Ancestor
-  AssignClass (9eb211be-6dd5-477b-b5aa-b546f8139b4b)
- Call ID: 9eb211be-6dd5-477b-b5aa-b546f8139b4b
-  Args:
-    source: Wilhelm_II
-    type: :Ancestor
-  AssignClass (b693f0d7-39f7-4ffb-ba5f-0a85f179d41c)
- Call ID: b693f0d7-39f7-4ffb-ba5f-0a85f179d41c
-  Args:
-    type: :Ancestor
-    source: Cecilie_of_Mecklenburg-Schwerin
-  ValidateShacl (90a3c5e8-c497-437f-b813-ee131fb1e07d)
- Call ID: 90a3c5e8-c497-437f-b813-ee131fb1e07d
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -754,39 +617,27 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Franz_Joseph_of_Austria a :Man,
-          :Person .
-
-  data:Wilhelm_of_Prussia a :Man,
-          :Person ;
-      :hasBirthYear 1906 ;
-      :hasBrother data:Louis_Ferdinand ;
-      :hasDeathYear 1940 ;
-      :hasFather data:Crown_Prince_Wilhelm ;
-      :hasMarriageYear 1933 ;
-      :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-      :hasRelation data:Dorothea_von_Salviati .
-
-  data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Crown_Prince_Wilhelm a :Ancestor,
+  data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg a :Ancestor,
           :Man,
           :Person ;
-      :hasFather data:Wilhelm_II .
+      :isFatherOf data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg .
 
-  data:Dorothea_von_Salviati a :Person,
-          :Woman .
-
-  data:Louis_Ferdinand a :Man,
-          :Person .
-
-  data:Wilhelm_II a :Ancestor,
-          :Man,
-          :Person .
+  data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,
+          :Person ;
+      :hasBirthYear 1966 ;
+      :hasDeathYear 2010 ;
+      :isSonOf data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;
+      :knownAs "Leonhard \"Leo\" Löwenstein"^^xsd:string .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (f22a62ce-14c2-4805-a976-d7685e4a8636)
+ Call ID: f22a62ce-14c2-4805-a976-d7685e4a8636
+  Args:
 
 ================================= Tool Message =================================
 
@@ -796,6 +647,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (c50d8f3a-24b3-4ea7-b9ae-4d520a90cfdc)
- Call ID: c50d8f3a-24b3-4ea7-b9ae-4d520a90cfdc
+  Finish (52f3de7e-1a9f-46de-9509-1192d7d5808b)
+ Call ID: 52f3de7e-1a9f-46de-9509-1192d7d5808b
   Args:

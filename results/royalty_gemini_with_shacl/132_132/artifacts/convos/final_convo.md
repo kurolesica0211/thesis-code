@@ -85,25 +85,57 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Granville George Fergus Leveson-Gower, 6th Earl Granville (born 10 September 1959) is a British peer, landowner, and artist.
-He was known as Lord Leveson until 1996 and was a member of the House of Lords from 1996 to 1999.
-Biography
+Prince Richard of Hesse (Richard Wilhelm Leopold; 14
+May 1901 – 11 February 1969) was a German prince and politician.
+Early life
 
-The elder son of Granville Leveson-Gower, 5th Earl Granville, whose mother Rose Leveson-Gower, Countess Granville, was a daughter of the Earl of Strathmore and Kinghorne and a sister of Queen Elizabeth the Queen Mother, he was educated at Eton College and from 1973 to 1976 was Page of Honour to Queen Elizabeth II, who was his godmother.
-On 31 October 1996, he succeeded as Earl Granville (1833), Viscount Granville (1814), and Baron Leveson of Stone (1814), all in the peerage of the United Kingdom, at the time giving him a seat in the House of Lords.
-Granville is the resident laird of North Uist, living on the island at Callernish House, Griminish, near Lochmaddy, a house shaped like a doughnut designed in the 1960s by Sir Martyn Beckett.
-In 1999, a local smokehouse business came up for sale and Granville took it over, aiming to produce high quality smoked salmon and sea trout.
-With a passion for beachcombing, Granville has also become an artist and sculptor, inspired by flotsam and jetsam and has exhibited his work in North Uist and Edinburgh.
-On 23 May 1997, Granville married Anne Topping, a daughter of Bernard Topping, and they had three children:
+Prince Richard and his twin brother Christoph were born on 14 May 1901 in Frankfurt am Main, in Prussian Hesse as the fifth son Prince Frederick Charles of Hesse and his wife Princess Margaret of Prussia.
+His great-grandmother was Queen Victoria, his mother was the youngest sister of Emperor Wilhelm II.
+Richard, affectionately nicknamed "Ri" by his family, grew up in a loving and close-knit family.
+Career and later life
 
+The First World War and the fall of the imperial regime
 
-In 2021, Granville was reported to be living at Callernish with a new wife, Florence Pearson (married in 2016), an artist, their two young sons, a labrador trained to find ambergris, and a parrot.
+Too young to be mobilized when the First World War broke out, Richard and Prince Christoph of Hesse-Kassel spent most of the conflict in Kronberg, where they were educated at the Reform Realgymnasium.
+Unlike his twin brother, who did not take the exam, Richard obtained the abitur in 1920.
+Closely linked to the former Kaiser Wilhelm II, whose sister was Princess Margaret, the Hesse-Kassel were then attacked by the revolutionaries.
+In this unstable context, Richard and Christoph engage as auxiliaries (hilfsdient) to protect the transports passing through Kronberg while awaiting the arrival of the French occupation troops.
+Training and love life
+
+After World War I, Richard studied civil engineering and mechanical engineering at the Darmstadt University of Technology.
+From a sentimental point of view, Richard fell in love with Princess Sophie of Greece and Denmark, met around 1927.
+However, she fell in love with Richard's twin brother Prince Christoph of Hesse-Kassel, and it is the latter that she married, in 1930.
+Adherence to Nazism
+
+Like his three brothers, Richard was enthusiastic about Nazism.
+In 1932, the prince thus joined simultaneously the SA and the NSDAP.
+Subsequently, Richard became a general (Obergruppenführer) in the Nationalsozialistisches Kraftfahrkorps (NSKK), a special unit of the SA corps, and obtained leadership of the Motorgruppe Hessen in 1935.
+From a more political point of view, the prince ran, without success, in the German parliamentary elections of March 1936 and April 1938.
+The Second World War and its consequences
+
+Prince Richard enlisted in the German Army shortly after the outbreak of the Second World War.
+HAS following the strengthening of the "decree of the princes", Richard was however informed of his dismissal from the army by the Reichsleiter Martin Bormann in October 1943.
+At the same time, his older brother Philippe and his sister-in-law Mafalda of Italy were arrested by the Hitler regime while his twin brother, Prince Christoph of Hesse-Kassel, died in a plane crash.
+Post-war and its consequences
+
+The defeat of Germany and its occupation by the Allies brought new difficulties to Richard's life.
+Arrested by the Americans shortly after the capitulation of his country, the prince was interned for sixteen months in the camp of Moosburg, in Bavaria.
+Several months later, the prince underwent a denazification trial.
+Meanwhile, the jewels of the House of Hesse-Kassel were stolen by American officers in 1946 and only 10% of the stolen objects were finally returned to their rightful owners, in 1951.
+Later years
+
+After the Second World War, Richard assisted his brother Prince Wolfgang of Hesse for a while in the management of the Hessische Hausstiftung.
+Subsequently, he was appointed to the traffic surveillance of the state of Hesse.
+In the same years, Richard of Hesse-Kassel joined the spiritual movement of “Moral Rearmament”, founded by the Lutheran pastor Frank Buchman.
+Prince Richard died in 1969.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -119,39 +151,9 @@ In 2021, Granville was reported to be living at Callernish with a new wife, Flor
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -166,6 +168,23 @@ In 2021, Granville was reported to be living at Callernish with a new wife, Flor
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -183,6 +202,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -250,29 +284,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -281,6 +307,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -293,6 +327,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -301,17 +337,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -339,6 +377,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -354,157 +476,208 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (af8e4ae7-8d79-4b6e-b7bb-d53930628ef6)
- Call ID: af8e4ae7-8d79-4b6e-b7bb-d53930628ef6
+  AssignClass (5870236e-8baf-4656-be11-576184b1dc97)
+ Call ID: 5870236e-8baf-4656-be11-576184b1dc97
   Args:
-    source: Granville_George_Fergus_Leveson-Gower
+    source: Prince_Richard_of_Hesse
     type: :Man
-  AssignClass (f4917b5e-ce25-4248-bc33-6323b8be8419)
- Call ID: f4917b5e-ce25-4248-bc33-6323b8be8419
+  AssignClass (173152d0-cc97-4164-9476-b9718490e319)
+ Call ID: 173152d0-cc97-4164-9476-b9718490e319
   Args:
     type: :Person
-    source: Granville_George_Fergus_Leveson-Gower
-  AddLiteral (727513b5-1573-4877-b261-28cd7c50b1b5)
- Call ID: 727513b5-1573-4877-b261-28cd7c50b1b5
+    source: Prince_Richard_of_Hesse
+  AddLiteral (2024ba13-3df4-4e5c-acee-1d7b85feb4b0)
+ Call ID: 2024ba13-3df4-4e5c-acee-1d7b85feb4b0
   Args:
     literal_type: xsd:integer
-    literal_value: 1959
+    literal_value: 1901
+    source: Prince_Richard_of_Hesse
     relation: :hasBirthYear
-    source: Granville_George_Fergus_Leveson-Gower
-  AddLiteral (9d39ec38-692a-4039-8579-41c39eeb8327)
- Call ID: 9d39ec38-692a-4039-8579-41c39eeb8327
+  AddLiteral (2867f261-0454-4534-8c9c-f7ce455b8fe1)
+ Call ID: 2867f261-0454-4534-8c9c-f7ce455b8fe1
   Args:
-    source: Granville_George_Fergus_Leveson-Gower
-    relation: :formerlyKnownAs
+    literal_type: xsd:integer
+    literal_value: 1969
+    source: Prince_Richard_of_Hesse
+    relation: :hasDeathYear
+  AddLiteral (cc6e7113-34b8-4ec1-8f93-04eeb3ca3652)
+ Call ID: cc6e7113-34b8-4ec1-8f93-04eeb3ca3652
+  Args:
     literal_type: xsd:string
-    literal_value: Lord Leveson
-  AssignClass (10e002c8-7174-4a2e-99c6-e2422f9f2b95)
- Call ID: 10e002c8-7174-4a2e-99c6-e2422f9f2b95
+    literal_value: Ri
+    source: Prince_Richard_of_Hesse
+    relation: :knownAs
+  AssignClass (1e501081-7b5d-495a-8768-83449d92a3d1)
+ Call ID: 1e501081-7b5d-495a-8768-83449d92a3d1
   Args:
     type: :Man
-    source: Granville_Leveson-Gower_5th_Earl_Granville
-  AssignClass (653fa566-4695-4827-9308-0679ba0167f2)
- Call ID: 653fa566-4695-4827-9308-0679ba0167f2
+    source: Prince_Christoph_of_Hesse-Kassel
+  AssignClass (afc6cd0b-97a8-4ce9-9259-2395a71d4316)
+ Call ID: afc6cd0b-97a8-4ce9-9259-2395a71d4316
   Args:
+    source: Prince_Christoph_of_Hesse-Kassel
     type: :Person
-    source: Granville_Leveson-Gower_5th_Earl_Granville
-  AddTriple (17f4a681-ad79-4805-bbfd-33dea867f535)
- Call ID: 17f4a681-ad79-4805-bbfd-33dea867f535
+  AddTriple (9ec3886e-c0ee-4efa-913d-82e956874e29)
+ Call ID: 9ec3886e-c0ee-4efa-913d-82e956874e29
   Args:
-    target: Granville_Leveson-Gower_5th_Earl_Granville
-    relation: :hasFather
-    source: Granville_George_Fergus_Leveson-Gower
-  AssignClass (704392a3-2552-4500-b7ed-3fce1eadc66e)
- Call ID: 704392a3-2552-4500-b7ed-3fce1eadc66e
+    source: Prince_Richard_of_Hesse
+    target: Prince_Christoph_of_Hesse-Kassel
+    relation: :isBrotherOf
+  AssignClass (503a8259-50ef-4c69-8f76-e59c2be39ff7)
+ Call ID: 503a8259-50ef-4c69-8f76-e59c2be39ff7
   Args:
-    type: :Woman
-    source: Rose_Leveson-Gower_Countess_Granville
-  AssignClass (dc8a00f9-01cc-41a5-9cdd-2c5ac409ea85)
- Call ID: dc8a00f9-01cc-41a5-9cdd-2c5ac409ea85
-  Args:
-    type: :Person
-    source: Rose_Leveson-Gower_Countess_Granville
-  AddTriple (776238b7-83ee-4bca-b8f0-44ddeef26c2a)
- Call ID: 776238b7-83ee-4bca-b8f0-44ddeef26c2a
-  Args:
-    source: Granville_George_Fergus_Leveson-Gower
-    target: Rose_Leveson-Gower_Countess_Granville
-    relation: :hasMother
-  AddTriple (5ee2e6f7-4def-4b72-ac08-80f1ba3accc7)
- Call ID: 5ee2e6f7-4def-4b72-ac08-80f1ba3accc7
-  Args:
-    source: Granville_Leveson-Gower_5th_Earl_Granville
-    target: Rose_Leveson-Gower_Countess_Granville
-    relation: :hasMother
-  AssignClass (2fe1a861-89cd-4017-af4c-1d2f6434ae63)
- Call ID: 2fe1a861-89cd-4017-af4c-1d2f6434ae63
-  Args:
-    source: Anne_Topping
-    type: :Woman
-  AssignClass (943806a1-bb57-4545-8847-ae95d9b67499)
- Call ID: 943806a1-bb57-4545-8847-ae95d9b67499
-  Args:
-    type: :Person
-    source: Anne_Topping
-  AddLiteral (243cc2e5-5f44-4065-98bf-7e4beb3a9399)
- Call ID: 243cc2e5-5f44-4065-98bf-7e4beb3a9399
-  Args:
-    source: Anne_Topping
-    relation: :hasMarriageYear
-    literal_value: 1997
-    literal_type: xsd:integer
-  AssignClass (78269fbb-7fd3-4473-bda9-087b27f45243)
- Call ID: 78269fbb-7fd3-4473-bda9-087b27f45243
-  Args:
-    source: Bernard_Topping
+    source: Prince_Frederick_Charles_of_Hesse
     type: :Man
-  AssignClass (29c31a5a-7bb4-4631-869d-22f95e629565)
- Call ID: 29c31a5a-7bb4-4631-869d-22f95e629565
+  AssignClass (826e4ee7-d395-45cb-af62-04e5091014b7)
+ Call ID: 826e4ee7-d395-45cb-af62-04e5091014b7
   Args:
+    source: Prince_Frederick_Charles_of_Hesse
     type: :Person
-    source: Bernard_Topping
-  AddTriple (fef740c8-dc03-4243-b4db-2ca30e2e2246)
- Call ID: fef740c8-dc03-4243-b4db-2ca30e2e2246
+  AssignClass (1f9b6281-b04e-4117-b3ad-874e6a71adc3)
+ Call ID: 1f9b6281-b04e-4117-b3ad-874e6a71adc3
   Args:
-    source: Anne_Topping
+    source: Princess_Margaret_of_Prussia
+    type: :Woman
+  AssignClass (227e7f23-47fe-4d12-9b97-74f147ddc24d)
+ Call ID: 227e7f23-47fe-4d12-9b97-74f147ddc24d
+  Args:
+    source: Princess_Margaret_of_Prussia
+    type: :Person
+  AddTriple (377d078a-c25f-4262-b929-25a1d38ce2c5)
+ Call ID: 377d078a-c25f-4262-b929-25a1d38ce2c5
+  Args:
+    target: Prince_Frederick_Charles_of_Hesse
     relation: :hasFather
-    target: Bernard_Topping
-  AssignClass (3b5b0a10-34ba-4c87-9245-459681c16f37)
- Call ID: 3b5b0a10-34ba-4c87-9245-459681c16f37
+    source: Prince_Richard_of_Hesse
+  AddTriple (9ad5e7b9-49a1-499f-b48f-319740162f34)
+ Call ID: 9ad5e7b9-49a1-499f-b48f-319740162f34
+  Args:
+    source: Prince_Richard_of_Hesse
+    target: Princess_Margaret_of_Prussia
+    relation: :hasMother
+  AssignClass (36975306-0bb7-4c23-86eb-e10fec4df5a2)
+ Call ID: 36975306-0bb7-4c23-86eb-e10fec4df5a2
   Args:
     type: :Woman
-    source: Florence_Pearson
-  AssignClass (e052678d-fee4-4db4-b7f9-08f636fe0413)
- Call ID: e052678d-fee4-4db4-b7f9-08f636fe0413
+    source: Queen_Victoria
+  AssignClass (d81815cf-6441-416e-9594-2c4a499c6a22)
+ Call ID: d81815cf-6441-416e-9594-2c4a499c6a22
   Args:
-    source: Florence_Pearson
+    source: Queen_Victoria
     type: :Person
-  AddLiteral (be0fe973-4628-44f5-88ac-61f0635ae198)
- Call ID: be0fe973-4628-44f5-88ac-61f0635ae198
+  AddTriple (f30a0583-0990-4da6-95f6-47551a382024)
+ Call ID: f30a0583-0990-4da6-95f6-47551a382024
   Args:
+    relation: :hasAncestor
+    target: Queen_Victoria
+    source: Prince_Richard_of_Hesse
+  AssignClass (a501309e-bfb2-42ac-b5a5-a7cf89135800)
+ Call ID: a501309e-bfb2-42ac-b5a5-a7cf89135800
+  Args:
+    source: Emperor_Wilhelm_II
+    type: :Man
+  AssignClass (c1e68591-b36c-4267-90d0-5797b5e7a7bf)
+ Call ID: c1e68591-b36c-4267-90d0-5797b5e7a7bf
+  Args:
+    type: :Person
+    source: Emperor_Wilhelm_II
+  AddTriple (f24e8404-79a2-44ec-921d-528978b3df0a)
+ Call ID: f24e8404-79a2-44ec-921d-528978b3df0a
+  Args:
+    target: Princess_Margaret_of_Prussia
+    relation: :isBrotherOf
+    source: Emperor_Wilhelm_II
+  AssignClass (f0011fd4-7c92-439d-982b-0968f9fe7431)
+ Call ID: f0011fd4-7c92-439d-982b-0968f9fe7431
+  Args:
+    source: Princess_Sophie_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (d2b5e393-9d8a-44f5-96a7-fb5bd67bb78b)
+ Call ID: d2b5e393-9d8a-44f5-96a7-fb5bd67bb78b
+  Args:
+    source: Princess_Sophie_of_Greece_and_Denmark
+    type: :Person
+  AddTriple (475d8e6d-b4f5-44ac-9444-877ed8e6fa2d)
+ Call ID: 475d8e6d-b4f5-44ac-9444-877ed8e6fa2d
+  Args:
+    source: Prince_Christoph_of_Hesse-Kassel
     relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 2016
-    source: Florence_Pearson
-  AddTriple (4be3fd80-ab60-4f05-9070-d78ccc5f0d79)
- Call ID: 4be3fd80-ab60-4f05-9070-d78ccc5f0d79
+    target: 1930
+  AddTriple (5c238e4e-7abf-4bdf-a91e-55988ab7124e)
+ Call ID: 5c238e4e-7abf-4bdf-a91e-55988ab7124e
   Args:
-    source: Granville_George_Fergus_Leveson-Gower
-    target: :Male
-    relation: :hasSex
-  AddTriple (5d644e80-1955-462a-a0d9-61d116417b66)
- Call ID: 5d644e80-1955-462a-a0d9-61d116417b66
+    source: Prince_Christoph_of_Hesse-Kassel
+    relation: :hasRelation
+    target: Princess_Sophie_of_Greece_and_Denmark
+  AssignClass (a9697273-2214-445b-a9f9-5391443c68c2)
+ Call ID: a9697273-2214-445b-a9f9-5391443c68c2
   Args:
-    source: Granville_Leveson-Gower_5th_Earl_Granville
-    target: :Male
-    relation: :hasSex
-  AddTriple (2b97ee37-2282-43da-a0a9-456289b13cee)
- Call ID: 2b97ee37-2282-43da-a0a9-456289b13cee
+    source: Philippe_of_Hesse
+    type: :Man
+  AssignClass (68fcb515-f09b-4677-8269-d013399f325d)
+ Call ID: 68fcb515-f09b-4677-8269-d013399f325d
   Args:
-    source: Rose_Leveson-Gower_Countess_Granville
-    relation: :hasSex
-    target: :Female
-  AddTriple (65ed99b5-0f44-40a7-b3be-f75a5a608052)
- Call ID: 65ed99b5-0f44-40a7-b3be-f75a5a608052
+    type: :Person
+    source: Philippe_of_Hesse
+  AddTriple (8a6e2e2f-267c-4d55-a036-ce7ab6b36992)
+ Call ID: 8a6e2e2f-267c-4d55-a036-ce7ab6b36992
   Args:
-    relation: :hasSex
-    target: :Female
-    source: Anne_Topping
-  AddTriple (f8d6c7c1-5713-41f3-8fad-9f143073a846)
- Call ID: f8d6c7c1-5713-41f3-8fad-9f143073a846
+    target: Prince_Richard_of_Hesse
+    relation: :isBrotherOf
+    source: Philippe_of_Hesse
+  AssignClass (0d67a479-25d0-4dea-bb6d-f01e98201454)
+ Call ID: 0d67a479-25d0-4dea-bb6d-f01e98201454
   Args:
-    target: :Male
-    relation: :hasSex
-    source: Bernard_Topping
-  AddTriple (3d1e896d-6c02-40de-b638-292389aff3ab)
- Call ID: 3d1e896d-6c02-40de-b638-292389aff3ab
+    type: :Woman
+    source: Mafalda_of_Italy
+  AssignClass (129e753d-ce7a-4ed7-ae3e-c2c75674bfdf)
+ Call ID: 129e753d-ce7a-4ed7-ae3e-c2c75674bfdf
   Args:
-    target: :Female
-    relation: :hasSex
-    source: Florence_Pearson
-  Finish (f85303ec-3a46-405f-a643-f64e162d9d7a)
- Call ID: f85303ec-3a46-405f-a643-f64e162d9d7a
+    source: Mafalda_of_Italy
+    type: :Person
+  AssignClass (8305c3d1-605f-4b98-96c4-38155d4f3509)
+ Call ID: 8305c3d1-605f-4b98-96c4-38155d4f3509
   Args:
+    source: Prince_Wolfgang_of_Hesse
+    type: :Man
+  AssignClass (fce51307-60d7-4592-bdc9-010c4b8b851b)
+ Call ID: fce51307-60d7-4592-bdc9-010c4b8b851b
+  Args:
+    source: Prince_Wolfgang_of_Hesse
+    type: :Person
+  AddTriple (97fae3fd-df24-40c1-a336-0989526afcdb)
+ Call ID: 97fae3fd-df24-40c1-a336-0989526afcdb
+  Args:
+    source: Prince_Wolfgang_of_Hesse
+    target: Prince_Richard_of_Hesse
+    relation: :isBrotherOf
+  Finish (59903b7c-563f-4d20-8717-77f6faf5abd7)
+ Call ID: 59903b7c-563f-4d20-8717-77f6faf5abd7
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -613,37 +786,47 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Anne_Topping a :Person,
-          :Woman ;
-      :hasFather data:Bernard_Topping ;
-      :hasMarriageYear 1997 ;
-      :hasSex data:Female .
-
-  data:Florence_Pearson a :Person,
-          :Woman ;
-      :hasMarriageYear 2016 ;
-      :hasSex data:Female .
-
-  data:Granville_George_Fergus_Leveson-Gower a :Man,
+  data:Emperor_Wilhelm_II a :Man,
           :Person ;
-      :formerlyKnownAs "Lord Leveson"^^xsd:string ;
-      :hasBirthYear 1959 ;
-      :hasFather data:Granville_Leveson-Gower_5th_Earl_Granville ;
-      :hasMother data:Rose_Leveson-Gower_Countess_Granville ;
-      :hasSex data:Male .
+      :isBrotherOf data:Princess_Margaret_of_Prussia .
 
-  data:Bernard_Topping a :Man,
+  data:Mafalda_of_Italy a :Person,
+          :Woman .
+
+  data:Philippe_of_Hesse a :Man,
           :Person ;
-      :hasSex data:Male .
+      :isBrotherOf data:Prince_Richard_of_Hesse .
 
-  data:Granville_Leveson-Gower_5th_Earl_Granville a :Man,
+  data:Prince_Wolfgang_of_Hesse a :Man,
           :Person ;
-      :hasMother data:Rose_Leveson-Gower_Countess_Granville ;
-      :hasSex data:Male .
+      :isBrotherOf data:Prince_Richard_of_Hesse .
 
-  data:Rose_Leveson-Gower_Countess_Granville a :Person,
-          :Woman ;
-      :hasSex data:Female .
+  data:Prince_Christoph_of_Hesse-Kassel a :Man,
+          :Person ;
+      :hasMarriageYear data:1930 ;
+      :hasRelation data:Princess_Sophie_of_Greece_and_Denmark .
+
+  data:Prince_Frederick_Charles_of_Hesse a :Man,
+          :Person .
+
+  data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+          :Woman .
+
+  data:Queen_Victoria a :Person,
+          :Woman .
+
+  data:Prince_Richard_of_Hesse a :Man,
+          :Person ;
+      :hasAncestor data:Queen_Victoria ;
+      :hasBirthYear 1901 ;
+      :hasDeathYear 1969 ;
+      :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+      :hasMother data:Princess_Margaret_of_Prussia ;
+      :isBrotherOf data:Prince_Christoph_of_Hesse-Kassel ;
+      :knownAs "Ri"^^xsd:string .
+
+  data:Princess_Margaret_of_Prussia a :Person,
+          :Woman .
 
 
 
@@ -655,494 +838,86 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (b7c67341-ec6b-4372-b452-f9935b51e29f)
- Call ID: b7c67341-ec6b-4372-b452-f9935b51e29f
+  ValidateShacl (d3812f0f-3e17-41ba-8e0d-aa0a990682b8)
+ Call ID: d3812f0f-3e17-41ba-8e0d-aa0a990682b8
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:60
+Total violations:9
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_George_Fergus_Leveson-Gower' is missing the required class ':Sex'.
+      The node Queen_Victoria is assigned as an ancestor to Prince_Richard_of_Hesse, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass("Queen_Victoria", ":Ancestor")
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_Leveson-Gower_5th_Earl_Granville' is missing the required class ':Sex'.
+      The node Prince_Frederick_Charles_of_Hesse is assigned as a father to Prince_Richard_of_Hesse, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass("Prince_Frederick_Charles_of_Hesse", ":Ancestor")
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Bernard_Topping' is missing the required class ':Sex'.
+      The node Princess_Margaret_of_Prussia is assigned as a mother to Prince_Richard_of_Hesse, but it lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass("Princess_Margaret_of_Prussia", ":Ancestor")
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Granville_Leveson-Gower_5th_Earl_Granville' for the property 'hasFather' on node 'Granville_George_Fergus_Leveson-Gower' is not assigned the required class ':Ancestor' or ':Man'.
+      The node Queen_Victoria is missing the required :Ancestor class for the :hasAncestor property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Granville_Leveson-Gower_5th_Earl_Granville', class=':Ancestor')
+      AssignClass("Queen_Victoria", ":Ancestor")
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Rose_Leveson-Gower_Countess_Granville' for the property 'hasMother' on node 'Granville_George_Fergus_Leveson-Gower' is not assigned the required class ':Ancestor' or ':Woman'.
+      The node Prince_Frederick_Charles_of_Hesse is missing the required :Ancestor class for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Rose_Leveson-Gower_Countess_Granville', class=':Ancestor')
+      AssignClass("Prince_Frederick_Charles_of_Hesse", ":Ancestor")
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Rose_Leveson-Gower_Countess_Granville' for the property 'hasMother' on node 'Granville_Leveson-Gower_5th_Earl_Granville' is not assigned the required class ':Ancestor' or ':Woman'.
+      The node Princess_Margaret_of_Prussia is missing the required :Ancestor class for the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Rose_Leveson-Gower_Countess_Granville', class=':Ancestor')
+      AssignClass("Princess_Margaret_of_Prussia", ":Ancestor")
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_George_Fergus_Leveson-Gower' is missing the required class ':Sex'.
+      The node Queen_Victoria is missing the required :Ancestor class for the :hasAncestor property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass("Queen_Victoria", ":Ancestor")
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_Leveson-Gower_5th_Earl_Granville' is missing the required class ':Sex'.
+      The node Prince_Frederick_Charles_of_Hesse is missing the required :Ancestor class for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass("Prince_Frederick_Charles_of_Hesse", ":Ancestor")
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Bernard_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Anne_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Florence_Pearson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Bernard_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_George_Fergus_Leveson-Gower' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_Leveson-Gower_5th_Earl_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Rose_Leveson-Gower_Countess_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Bernard_Topping' for the property 'hasFather' on node 'Anne_Topping' is not assigned the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernard_Topping', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Granville_Leveson-Gower_5th_Earl_Granville' for the property 'hasFather' on node 'Granville_George_Fergus_Leveson-Gower' is not assigned the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Granville_Leveson-Gower_5th_Earl_Granville', class=':Ancestor')
-
-
-  Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Rose_Leveson-Gower_Countess_Granville' for the property 'hasMother' on node 'Granville_George_Fergus_Leveson-Gower' is not assigned the required class ':Ancestor' or ':Woman'.
+      The node Princess_Margaret_of_Prussia is missing the required :Ancestor class for the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Rose_Leveson-Gower_Countess_Granville', class=':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Rose_Leveson-Gower_Countess_Granville' for the property 'hasMother' on node 'Granville_Leveson-Gower_5th_Earl_Granville' is not assigned the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Rose_Leveson-Gower_Countess_Granville', class=':Ancestor')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Anne_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Florence_Pearson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Bernard_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_George_Fergus_Leveson-Gower' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_Leveson-Gower_5th_Earl_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Rose_Leveson-Gower_Countess_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Anne_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Florence_Pearson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Bernard_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_George_Fergus_Leveson-Gower' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_Leveson-Gower_5th_Earl_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Rose_Leveson-Gower_Countess_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Anne_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Florence_Pearson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Bernard_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_George_Fergus_Leveson-Gower' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_Leveson-Gower_5th_Earl_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Rose_Leveson-Gower_Countess_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Bernard_Topping' for the property 'hasFather' on node 'Anne_Topping' is not assigned the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernard_Topping', class=':Ancestor')
-
-
-  Violation [39]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Granville_Leveson-Gower_5th_Earl_Granville' for the property 'hasFather' on node 'Granville_George_Fergus_Leveson-Gower' is not assigned the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Granville_Leveson-Gower_5th_Earl_Granville', class=':Ancestor')
-
-
-  Violation [40]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Rose_Leveson-Gower_Countess_Granville' for the property 'hasMother' on node 'Granville_George_Fergus_Leveson-Gower' is not assigned the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Rose_Leveson-Gower_Countess_Granville', class=':Ancestor')
-
-
-  Violation [41]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Rose_Leveson-Gower_Countess_Granville' for the property 'hasMother' on node 'Granville_Leveson-Gower_5th_Earl_Granville' is not assigned the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Rose_Leveson-Gower_Countess_Granville', class=':Ancestor')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Anne_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Florence_Pearson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Bernard_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_George_Fergus_Leveson-Gower' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_Leveson-Gower_5th_Earl_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Rose_Leveson-Gower_Countess_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Anne_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Florence_Pearson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Bernard_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_George_Fergus_Leveson-Gower' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Granville_Leveson-Gower_5th_Earl_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Rose_Leveson-Gower_Countess_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Bernard_Topping' for the property 'hasFather' on node 'Anne_Topping' is not assigned the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Bernard_Topping', class=':Ancestor')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Rose_Leveson-Gower_Countess_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Florence_Pearson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Anne_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Rose_Leveson-Gower_Countess_Granville' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Florence_Pearson' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Anne_Topping' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass("Princess_Margaret_of_Prussia", ":Ancestor")
 
 
 
@@ -1151,42 +926,24 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (cf20efc8-95cb-4e21-aa20-e7629eda8027)
- Call ID: cf20efc8-95cb-4e21-aa20-e7629eda8027
-  Args:
-    type: :Sex
-    source: Male
-  AssignClass (31f6213f-ee5e-48b5-ba4f-d09ccca5d940)
- Call ID: 31f6213f-ee5e-48b5-ba4f-d09ccca5d940
-  Args:
-    type: :Sex
-    source: Female
-  AssignClass (5a6b7759-2da8-4c1e-bbf3-625e8d32ae32)
- Call ID: 5a6b7759-2da8-4c1e-bbf3-625e8d32ae32
+  AssignClass (60747099-0b7a-49ef-997c-932231e58a91)
+ Call ID: 60747099-0b7a-49ef-997c-932231e58a91
   Args:
     type: :Ancestor
-    source: Granville_Leveson-Gower_5th_Earl_Granville
-  AssignClass (ef962790-2f7a-4e98-9b8e-933a84c6c527)
- Call ID: ef962790-2f7a-4e98-9b8e-933a84c6c527
+    source: Queen_Victoria
+  AssignClass (a53acf8b-0bce-47b5-bcb8-d1afcf80c99a)
+ Call ID: a53acf8b-0bce-47b5-bcb8-d1afcf80c99a
   Args:
     type: :Ancestor
-    source: Rose_Leveson-Gower_Countess_Granville
-  AssignClass (03f871d3-55c8-45a9-92f8-7d153456142d)
- Call ID: 03f871d3-55c8-45a9-92f8-7d153456142d
+    source: Prince_Frederick_Charles_of_Hesse
+  AssignClass (f0cca924-683f-4bcb-8a91-5bc3b9f2d223)
+ Call ID: f0cca924-683f-4bcb-8a91-5bc3b9f2d223
   Args:
     type: :Ancestor
-    source: Bernard_Topping
-  ValidateShacl (b16ba8e7-cca4-47b7-b727-06c2c68c6a78)
- Call ID: b16ba8e7-cca4-47b7-b727-06c2c68c6a78
+    source: Princess_Margaret_of_Prussia
+  Finish (1f2c8aa5-7841-4c21-af8a-c02c507910bb)
+ Call ID: 1f2c8aa5-7841-4c21-af8a-c02c507910bb
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1203,46 +960,64 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Anne_Topping a :Person,
-          :Woman ;
-      :hasFather data:Bernard_Topping ;
-      :hasMarriageYear 1997 ;
-      :hasSex data:Female .
-
-  data:Florence_Pearson a :Person,
-          :Woman ;
-      :hasMarriageYear 2016 ;
-      :hasSex data:Female .
-
-  data:Granville_George_Fergus_Leveson-Gower a :Man,
+  data:Emperor_Wilhelm_II a :Man,
           :Person ;
-      :formerlyKnownAs "Lord Leveson"^^xsd:string ;
-      :hasBirthYear 1959 ;
-      :hasFather data:Granville_Leveson-Gower_5th_Earl_Granville ;
-      :hasMother data:Rose_Leveson-Gower_Countess_Granville ;
-      :hasSex data:Male .
+      :isBrotherOf data:Princess_Margaret_of_Prussia .
 
-  data:Bernard_Topping a :Ancestor,
+  data:Mafalda_of_Italy a :Person,
+          :Woman .
+
+  data:Philippe_of_Hesse a :Man,
+          :Person ;
+      :isBrotherOf data:Prince_Richard_of_Hesse .
+
+  data:Prince_Wolfgang_of_Hesse a :Man,
+          :Person ;
+      :isBrotherOf data:Prince_Richard_of_Hesse .
+
+  data:Prince_Christoph_of_Hesse-Kassel a :Man,
+          :Person ;
+      :hasMarriageYear data:1930 ;
+      :hasRelation data:Princess_Sophie_of_Greece_and_Denmark .
+
+  data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male .
+          :Person .
 
-  data:Granville_Leveson-Gower_5th_Earl_Granville a :Ancestor,
-          :Man,
-          :Person ;
-      :hasMother data:Rose_Leveson-Gower_Countess_Granville ;
-      :hasSex data:Male .
+  data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+          :Woman .
 
-  data:Rose_Leveson-Gower_Countess_Granville a :Ancestor,
+  data:Queen_Victoria a :Ancestor,
           :Person,
-          :Woman ;
-      :hasSex data:Female .
+          :Woman .
 
-  data:Female a :Sex .
+  data:Prince_Richard_of_Hesse a :Man,
+          :Person ;
+      :hasAncestor data:Queen_Victoria ;
+      :hasBirthYear 1901 ;
+      :hasDeathYear 1969 ;
+      :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+      :hasMother data:Princess_Margaret_of_Prussia ;
+      :isBrotherOf data:Prince_Christoph_of_Hesse-Kassel ;
+      :knownAs "Ri"^^xsd:string .
 
-  data:Male a :Sex .
+  data:Princess_Margaret_of_Prussia a :Ancestor,
+          :Person,
+          :Woman .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (69079502-e32e-4885-9283-99939f5c3c47)
+ Call ID: 69079502-e32e-4885-9283-99939f5c3c47
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1252,6 +1027,45 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (99aee861-1540-41fb-84d4-e324a951dcb3)
- Call ID: 99aee861-1540-41fb-84d4-e324a951dcb3
+  Finish (55666659-f865-418c-b30c-2162f6301a21)
+ Call ID: 55666659-f865-418c-b30c-2162f6301a21
+  Args:
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['1930']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (4049418c-4081-4e87-9cda-7e0215e02a29)
+ Call ID: 4049418c-4081-4e87-9cda-7e0215e02a29
+  Args:
+    relation: :hasMarriageYear
+    source: Prince_Christoph_of_Hesse-Kassel
+    target: 1930
+  AddLiteral (e1a14afd-74d7-45af-aef5-1b1f18c25d0e)
+ Call ID: e1a14afd-74d7-45af-aef5-1b1f18c25d0e
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1930
+    source: Prince_Christoph_of_Hesse-Kassel
+    relation: :hasMarriageYear
+  Finish (9ff2d7ee-38f6-4079-9e7a-3edba8758370)
+ Call ID: 9ff2d7ee-38f6-4079-9e7a-3edba8758370
   Args:

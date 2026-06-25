@@ -1,0 +1,172 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:RosalindJoanThompson a :Person ;
+    :hasRelation data:RosalindJoanThompson ;
+    :isBloodrelationOf data:RosalindJoanThompson ;
+    :isSiblingOf data:RosalindJoanThompson .
+
+data:SarahArmstrongJones a :Person ;
+    :hasRelation data:SarahArmstrongJones ;
+    :isBloodrelationOf data:SarahArmstrongJones ;
+    :isSiblingOf data:SarahArmstrongJones .
+
+data:RosChatto a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs data:RosalindJoanThompson ;
+    :hasChild data:DanielChatto ;
+    :hasDeathYear 2012 ;
+    :hasRelation data:DanielChatto,
+        data:RosChatto,
+        data:TomChatto ;
+    :hasSister data:RosChatto ;
+    :hasSon data:DanielChatto ;
+    :isAncestorOf data:DanielChatto ;
+    :isAuntOf data:DanielChatto ;
+    :isBloodrelationOf data:RosChatto ;
+    :isMotherOf data:DanielChatto ;
+    :isParentOf data:DanielChatto ;
+    :isSiblingOf data:RosChatto ;
+    :isSisterOf data:RosChatto .
+
+data:TomChatto a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1920 ;
+    :hasBrother data:TomChatto ;
+    :hasChild data:DanielChatto ;
+    :hasDeathYear 1982 ;
+    :hasRelation data:DanielChatto,
+        data:RosChatto,
+        data:TomChatto ;
+    :hasSon data:DanielChatto ;
+    :isAncestorOf data:DanielChatto ;
+    :isBloodrelationOf data:TomChatto ;
+    :isBrotherOf data:TomChatto ;
+    :isFatherOf data:DanielChatto ;
+    :isParentOf data:DanielChatto ;
+    :isSiblingOf data:TomChatto ;
+    :isUncleOf data:DanielChatto .
+
+data:AntonyArmstrongJones a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AntonyArmstrongJones ;
+    :hasChild data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :hasDaughter data:SarahChatto ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:DavidArmstrongJones,
+        data:PrincessMargaret,
+        data:SarahChatto ;
+    :hasSon data:DavidArmstrongJones ;
+    :isAncestorOf data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :isBloodrelationOf data:AntonyArmstrongJones ;
+    :isBrotherOf data:AntonyArmstrongJones ;
+    :isFatherOf data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :isParentOf data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :isSiblingOf data:AntonyArmstrongJones ;
+    :isUncleOf data:DavidArmstrongJones,
+        data:SarahChatto .
+
+data:PrincessMargaret a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :hasDaughter data:SarahChatto ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:DavidArmstrongJones,
+        data:PrincessMargaret,
+        data:SarahChatto ;
+    :hasSister data:PrincessMargaret ;
+    :hasSon data:DavidArmstrongJones ;
+    :isAncestorOf data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :isAuntOf data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :isBloodrelationOf data:PrincessMargaret ;
+    :isMotherOf data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :isParentOf data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :isSiblingOf data:PrincessMargaret ;
+    :isSisterOf data:PrincessMargaret .
+
+data:DanielChatto a :Man,
+        :Person ;
+    :hasAncestor data:RosChatto,
+        data:TomChatto ;
+    :hasBrother data:DanielChatto ;
+    :hasFather data:TomChatto ;
+    :hasMother data:RosChatto ;
+    :hasParent data:RosChatto,
+        data:TomChatto ;
+    :hasRelation data:DanielChatto,
+        data:RosChatto,
+        data:TomChatto ;
+    :isBloodrelationOf data:DanielChatto ;
+    :isBrotherOf data:DanielChatto ;
+    :isChildOf data:RosChatto,
+        data:TomChatto ;
+    :isSiblingOf data:DanielChatto ;
+    :isSonOf data:RosChatto,
+        data:TomChatto .
+
+data:DavidArmstrongJones a :Man,
+        :Person ;
+    :hasAncestor data:AntonyArmstrongJones,
+        data:PrincessMargaret ;
+    :hasBrother data:DavidArmstrongJones ;
+    :hasFather data:AntonyArmstrongJones ;
+    :hasMother data:PrincessMargaret ;
+    :hasParent data:AntonyArmstrongJones,
+        data:PrincessMargaret ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:DavidArmstrongJones,
+        data:PrincessMargaret,
+        data:SarahChatto ;
+    :hasSister data:SarahChatto ;
+    :isBloodrelationOf data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :isBrotherOf data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :isChildOf data:AntonyArmstrongJones,
+        data:PrincessMargaret ;
+    :isSiblingOf data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :isSonOf data:AntonyArmstrongJones,
+        data:PrincessMargaret .
+
+data:SarahChatto a :Person,
+        :Woman ;
+    :alsoKnownAs data:SarahArmstrongJones ;
+    :hasAncestor data:AntonyArmstrongJones,
+        data:PrincessMargaret ;
+    :hasBirthYear 1964 ;
+    :hasBrother data:DavidArmstrongJones ;
+    :hasFather data:AntonyArmstrongJones ;
+    :hasMother data:PrincessMargaret ;
+    :hasParent data:AntonyArmstrongJones,
+        data:PrincessMargaret ;
+    :hasRelation data:AntonyArmstrongJones,
+        data:DavidArmstrongJones,
+        data:PrincessMargaret,
+        data:SarahChatto ;
+    :hasSister data:SarahChatto ;
+    :isBloodrelationOf data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :isChildOf data:AntonyArmstrongJones,
+        data:PrincessMargaret ;
+    :isDaughterOf data:AntonyArmstrongJones,
+        data:PrincessMargaret ;
+    :isSiblingOf data:DavidArmstrongJones,
+        data:SarahChatto ;
+    :isSisterOf data:DavidArmstrongJones,
+        data:SarahChatto .
+

@@ -7,34 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Archduchess Helene, Archduchess Ferdinand of Austria" ;
-    data:posIndicesFull "300:337" ;
-    data:posIndicesPart "1040:1049",
-        "408:415" ;
-    data:wdtLink wdt:Q23659419 ;
-    :alsoKnownAs "Countess Helene of Toerring-Jettenbach",
-        "Helene Gräfin zu Törring-Jettenbach",
-        "Helene Marina Elisabeth Gräfin zu Törring-Jettenbach",
-        "Helene zu Törring-Jettenbach" ;
-    :hasChild data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
-    :hasDaughter data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
-    :hasSex data:female ;
-    :isMotherOf data:Archduchess_Sophie-_Princess_of_Windisch-Graetz ;
-    :isParentOf data:Archduchess_Sophie-_Princess_of_Windisch-Graetz .
-
-data:Archduchess_Sophie-_Princess_of_Windisch-Graetz a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Archduchess_Sophie-_Princess_of_Windisch-Graetz a :Person ;
     rdfs:label "Archduchess Sophie, Princess of Windisch-Graetz" ;
     data:posIndicesFull "0:40" ;
     data:posIndicesPart "187:193",
@@ -54,9 +27,28 @@ data:Archduchess_Sophie-_Princess_of_Windisch-Graetz a :Person,
         "Sophie Franziska Maria Germaine Habsburg",
         "Sophie Franziska Maria Germaine of Habsburg-Lorraine, Archduchess of Austria",
         "Sophie Franziska of Austria" ;
-    :hasMother data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
     :hasParent data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
-    :hasSex data:female ;
-    :isChildOf data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria ;
-    :isDaughterOf data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria .
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Archduchess_Helene-_Archduchess_Ferdinand_of_Austria a :Person ;
+    rdfs:label "Archduchess Helene, Archduchess Ferdinand of Austria" ;
+    data:posIndicesFull "300:337" ;
+    data:posIndicesPart "1040:1049",
+        "408:415" ;
+    data:wdtLink wdt:Q23659419 ;
+    :alsoKnownAs "Countess Helene of Toerring-Jettenbach",
+        "Helene Gräfin zu Törring-Jettenbach",
+        "Helene Marina Elisabeth Gräfin zu Törring-Jettenbach",
+        "Helene zu Törring-Jettenbach" ;
+    :hasSex data:female .
+
+data:female a :Female .
 

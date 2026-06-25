@@ -85,48 +85,174 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Christoph of Hesse (Christoph Ernst August; 14
-May 1901 – 7 October 1943) was a nephew of Kaiser Wilhelm II.
-His brother-in-law Prince Philip of Greece and Denmark fought on the British side and married the future Queen Elizabeth II after the war.
-Birth
+Grand Duchess Maria Pavlovna of Russia (Russian: Мари́я Па́вловна Романова, romanized: Mariya Pavlovna Romanova; born Duchess Marie of Mecklenberg-Schwerin 14
+May  1854 – 6 September 1920), was the eldest daughter of Grand Duke Friedrich Franz II of Mecklenburg-Schwerin and his first wife, Princess Augusta Reuss of Köstritz.
+A prominent hostess in Saint Petersburg following her marriage in 1874 to the Grand Duke Vladimir Alexandrovich of Russia, she was known by many as the "grandest of the grand duchesses".
+Appearance and personality
 
-Prince Christoph of Hesse was born in Frankfurt, the fifth son of Prince Frederick Charles of Hesse and Princess Margaret of Prussia.
-He was a twin, with Prince Richard of Hesse.
-His father, Frederick Charles, a scion of the House of Hesse, was elected King of Finland in 1918, when Finland declared its independence after the collapse of the Russian Empire.
-Christoph's mother was the daughter of Emperor Frederick III and of Victoria, Princess Royal.
-Prince Christoph was thus a great-grandson of Queen Victoria and Prince Albert of Saxe-Coburg and Gotha.
-Christoph had several brothers, including Prince Philipp and Prince Wolfgang.
-His two eldest brothers, Friedrich Wilhelm and Maximilian, both died in World War I.
-
-
-Career and death
-
-Prince Christoph was a director in the Third Reich's Ministry of Air Forces, Commander of the Air Reserves, and held the rank of Oberführer in the SS.
-His brother Prince Philipp joined Hitler's SA.
-They were not the only family members to embrace Nazism; their mother "Mossy" (a sister of Kaiser Wilhelm II) invited Adolf Hitler to tea and flew the swastika from her home at Schloss Kronberg.
-According to the historian Hugo Vickers, Prince Christoph became "disenchanted" with the Nazi Party by the time of the assassination of Reinhard Heydrich in 1942.
+Marie was noted for her attractiveness and sense of style.
+When Prince Arthur, Duke of Connaught and Strathearn visited Germany in search of brides, Queen Victoria noted that Marie was "said to be very pretty."
+When they first met, her future husband Grand Duke Vladimir Alexandrovich of Russia admired her "wonderfully expressive eyes."
+At her wedding, Thomas W. Knox observed that "Vladimir's bride is good-looking, solid, well-formed, with plump and finely rounded shoulders; a neck neither long nor short; regularly formed features, with the exception of the nose, which has a slight tendency to pugginess."
+At the coronation of her brother-in-law Alexander III, her niece, Marie of Edinburgh, noted that "she is not thin enough for classical lines but she wears her clothes better than any other woman present; her shoulders are superb and as white as cream; there is a smartness about her that no one else can attain."
+In 1910, author Elinor Glyn wrote that Marie was "a most stately, magnificent looking princess.
 "
 
 
-Prince Christoph served in the Luftwaffe Research Office and, in 1942, he joined the staff of a fighter unit, Jagdgeschwader 53.
-After the Allied Invasion of Italy, Christoph was recalled to Germany, but was killed during his return.
-His body and the body of his copilot Wilhelm Gsteu were found two days later and were buried in a German military cemetery near Forlì.
-Family
-
-Christoph married his second cousin, once removed, Princess Sophie of Greece and Denmark on 15 December 1930 in Kronberg im Taunus, Germany.
-Princess Sophie was the youngest daughter of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, and the sister of the future Prince Philip, Duke of Edinburgh.
-The couple had five children:
+Marie was famous for her wittiness and sociability.
+Meriel Buchanan attended one of Marie's dinner parties at Vladimir Palace, and she wrote that Marie "know exactly what to say to each individual person, an inimitable gift which royalties do not always possess, but which she had at her command in the fullest sense."
+He wrote: "For three hours, the Grand Duchess was the centre of the animated and brilliant conversation.
+Author Elinor Glyn reflected that Marie "had a very highly cultivated and far-seeing mind, with a delightful sense of humour, and was adored by everyone.
+"
 
 
-Some years after Christoph's death, his widow married Prince George William of Hanover, a brother of Queen Fredrica of Greece and a grandson of Kaiser Wilhelm II.
-Four years after Christoph's death, his widow's brother, Philip, married the future Queen Elizabeth II.
-Christoph's surviving children are first cousins of King Charles III.
+Marie was interested in literature.
+In late 1909, she invited the popular British novelist Elinor Glyn to come to Russia to write a Russian-based story.
+Glyn produced a piece of fiction called His Hour, which she dedicated to Marie, saying "her kind appreciation of the finished work is a source of the deepest gratification to me."
+Glyn modeled one of the characters, Princess Ardacheff, after Marie.
+Like her husband, Marie loved the arts.
+After her husband's death, Marie succeeded him as president of the Academy of Fine Arts.
+Marie was addicted to gambling.
+The painter Henry Jones Thaddeus attended one of Marie's parties, where she insisted that her guests play roulette.
+Early life
+
+Marie Alexandrine Elisabeth Eleonore was born a duchess of the Grand Ducal House of Mecklenburg to Frederick Francis II, Grand Duke of Mecklenburg-Schwerin - the then Grand Duke of Mecklenburg-Schwerin and his first wife, Princess Augusta Reuss of Köstritz (1822–1862) - in the Schloss Ludwigslust.
+Marriage
+
+Marie married Grand Duke Vladimir Alexandrovich of Russia, the third son of Alexander II of Russia.
+Previously, she had been engaged to George Albert I, Prince of Schwarzburg-Rudolstadt, but broke it off as soon as she met Vladimir.
+Marie and Vladimir married on 28 August 1874.
+It was not as lavish as the wedding of Vladimir's sister Grand Duchess Maria Alexandrovna of Russia to the Duke of Edinburgh.
+Lord Augustus Loftus noted, "Every thing went off very well; although the marriage was not so resplendent as that of the Duke of Edinburgh.
+"
+
+
+As the Russian Emperor's daughter-in-law, Marie took on a new style Her Imperial Highness.
+Marie and Vladimir had four sons and one daughter.
+She was Emperor Paul I of Russia's great-great-granddaughter, and she wished to emphasize her exalted ancestry with the patronymic "Pavlovna.
+"
+
+
+Religion
+
+For three years, Marie and Vladimir could not marry, because Marie refused to convert from Lutheranism to the Russian Orthodox Church.
+Vladimir's mother, Empress Maria Alexandrovna was disappointed by Marie's refusal to convert: She herself had converted from Lutheranism to Russian Orthodoxy, and she thought that the Russian Orthodox church was "quite good enough for any daughter-in-law of hers."
+She told Vladimir that she hoped that Marie would "become Russian in body and soul," indicating her hope that Marie would convert.
+Emperor Alexander II finally agreed to let Vladimir marry Marie without insisting on her conversion to Orthodoxy.
+Every bride of a Russian grand duke needed to convert to Russian Orthodoxy before Marie, so Marie's decision was shocking and unprecedented.
+Lord Augustus Loftus noted: "It is a matter of surprise here for a Foreign Princess married to a grand duke to retain her own religion but it is a process to which they will have to accustom themselves or they will find no wives for the Russian grand dukes.
+In a letter to Hamilton Fish, Eugene Schuyler wrote "The Grand Duchess will retain the Lutheran religion.
+This is worthy of note, as hitherto the Russian laws have required the wives of all grand dukes to adopt the orthodox Russian faith.
+"
+
+
+Marie set the precedent for brides who did not have to convert to Russian Orthodoxy to marry Russian grand dukes.
+At the time of Marie's marriage, Alice, Grand Duchess of Hesse and by Rhine wrote to her mother, Queen Victoria, "My mother-in-law tells me that since Miechen has been allowed to retain her religion, this right will of course be conceded to all Princesses in the future."
+Many years later, Alice's daughter Princess Elisabeth of Hesse and by Rhine would use Marie's precedent to retain her Lutheran faith and marry Marie's brother-in-law, Grand Duke Sergei Alexandrovich of Russia.
+Marie was furious when her sister-in-law Grand Duchess Elizabeth Feodorovna of Russia converted to Russian Orthodoxy after her marriage.
+Grand Duchess Elizabeth predicted Marie's response, and she asked her father Louis IV, Grand Duke of Hesse and by Rhine: "Please do not yet tell anybody at Darmstadt until I write again when Miechen  knows.
+"
+
+
+In 1908, Marie converted to Orthodoxy.
+Meriel Buchanan, daughter of a British ambassador to Russia, defended Marie's conversion as sincere: "For some time past the Grand Duchess had turned more and more to the colour and ceremonial of the Russian Church.
+However, some believed that the ambitious Marie acted to improve the chances of her own sons ascending the throne.
+After Emperor Nicholas II's sickly son Tsesarevich Alexei and unmarried, childless brother Grand Duke Michael Alexandrovich of Russia, Marie's husband and her sons were in line for the throne.
+In 1916, Vladimir Purishkevich wrote in his diary: "I shall never forget the story of Ivan Grigorevich Scheglovitov, former Minister of Justice.
+He said that one day Grand Duke Boris Vladimirovich asked him whether the descendants of the Vladimir line have any legal rights to the throne and if not, why not?
+Scheglovitov... told him that the Grand Dukes had no rights whatsoever because their mother continued in the Lutheran faith even after marriage.
+Boris left him but came back sometime later with a paper showing that the Grand Duchess had given up her Protestant religion and had embraced the Orthodox.
+"
+
+
+Life in Russia
+
+Marie lived at the Vladimir Palace situated on the Palace Embankment on the Neva River.
+Marie was famous for being one of the best hostesses in the capital.
+During the reign of her nephew Emperor Nicholas II, her Grand Ducal court was the most cosmopolitan and popular one in the capital.
+Meriel Buchanan attended Marie's dinner party at Vladimir Palace, and she wrote, "Here one always met only the prettiest and smartest women, the most distinguished men, the most entertaining members of the diplomatic body.
+"
+
+
+During Alexander II's reign, Marie survived the Winter Palace explosion of February 1880.
+"
+
+
+Marie was close to her father-in-law, Alexander II.
+She resented him for forcing his family to accept Catherine, and she expressed her anger in a letter to the late Empress Maria's brother, Louis III, Grand Duke of Hesse and by Rhine: "The Tsar has commanded us as his subjects to be friendly with this wife; if not he would force us to it.
+You can imagine the internal conflict that agitates us all, and the perpetual struggle between feelings, duty, and external pressure.
+"
+
+
+Marie had a distant relationship with her sister-in-law, Maria Feodorovna.
+Maria Feodorovna disliked Marie because of her German origins.
+Marie openly declared that her husband would make a better Emperor than Maria Feodorovna's husband, Alexander III of Russia.
+After the Borki train disaster in which Alexander III, Maria Feodorovna, and their children narrowly escaped death, Marie allegedly said, "We shall never have such a chance again.
+"
+
+
+Marie had an antagonistic relationship with Emperor Nicholas II and Empress Alexandra, because of her ambitions for her own sons.
+On 14 June 1897, the Boston Daily Globe reported that she had "consulted a gypsy fortune teller, who had predicted that one of her sons would sit on the throne of Russia."
+At this time, Empress Alexandra had given birth to her second daughter Grand Duchess Tatiana.
+As girls were ineligible for the Imperial Throne, Emperor Nicholas' heirs were his two unmarried, childless brothers and his uncle Vladimir, Marie's husband.
+In 1912, Emperor Nicholas's only living brother Grand Duke Michael married a commoner, which led Emperor Nicholas to strip him of his military command, imperial honors, and right as the heir presumptive to serve as regent for Tsesarevich Alexei should Emperor Nicholas die prematurely.
+According to the laws of the succession, Marie's oldest son Kirill, the heir presumptive now that Grand Duke Michael was ineligible and his own father, Vladimir, was dead, would become regent should the Emperor die before Alexei turned 21.
+However, Emperor Nicholas overruled the existing law and nominated his oldest daughter Grand Duchess Olga as regent with his wife Empress Alexandra as guardian during Alexei's minority.
+Marie was furious, but Emperor Nicholas refused to change his mind.
+In 1916, Marie approached Empress Alexandra about a potential marriage between Grand Duchess Olga and her second son Grand Duke Boris Vladimirovich.
+Empress Alexandra refused Marie's proposal, claiming that she could not let "a pure, fresh girl, 18 years his junior" marry a "well used, half worn out, blasé young man."
+Marie was outraged by Empress Alexandra's abrupt refusal.
+In 1909, Marie's husband died.
+During World War I, Marie whole-heartedly supported Russia.
+Born a German princess, she was troubled by the outbreak of WW I but decided that she was now a Russian.
+it is my forty years’ residence in Russia— all the happiness I have known here, all the dreams that have come to me, all the affection and kindness I have received— which has given me a wholly Russian soul."
+The French ambassador Maurice Paléologue was impressed by Marie's "long diatribe which made me feel all the sentiments of inveterate hatred, of mute and  tenacious detestation which the small and once independent states of Germany have for the despotic house of Prussia.
+"
+
+
+Marie supervised many projects for the Russian army.
+Albert Stopford admired Marie's efficiency and skill in organizing, claiming that Marie "spar herself no trouble" and was "quite thorough."
+Like many other Romanovs, Marie feared that Empress Alexandra would "be the sole ruler of Russia" after Nicholas took supreme command of the Russian armies on 23 August 1915 (O.S.), hoping this would lift morale.
+It was widely speculated that along with her sons, she contemplated a coup against the Emperor in the winter of 1916–17, that would force the Tsar's abdication and replacement by his son Tsesarevich Alexei, and her son, Grand Duke Kirill or Grand Duke Nicholas Nikolaevich, as regent.
+Escape from Russia
+
+Marie was the last of the Romanovs to escape Revolutionary Russia and the first to die in exile.
+Maria spent fourteen months in Anapa, refusing to join her son Boris in leaving Russia.
+Maria, her son Andrei, Andrei's mistress Mathilde Kschessinska, and Andrei and Mathilde's son Vladimir, boarded an Italian ship headed to Venice on 13 February 1920.
+Grand Duchess Olga Alexandrovna of Russia encountered Maria at the port of Novorossiysk in early 1920: "Disregarding peril and hardship, she stubbornly kept to all the trimmings of bygone splendour and glory.
+When even generals found themselves lucky to find a horse cart and an old nag to bring them to safety, Aunt Miechen made a long journey in her own train.
+Jewels
+
+Marie had a passion for jewels, and her collection was renowned.
+In 1899, she and Vladimir received a number of jewels for their silver wedding anniversary.
+Nicholas II of Russia and Alexandra Feodorovna (Alix of Hesse) gave them "an aigrette and diadem composed of magnificent diamonds."
+Each grand duke and grand duchess gave them a golden plate, which formed a collection of 36 plates, "the most magnificent service that can be imagined."
+Marie was a major client of Cartier, and she bought many jewels from them.
+Following the Revolution, a family friend Albert Stopford rescued the jewels from her Palace safe and smuggled them out of Russia.
+After the Duchess's death, they were sold by her children to support their lives in exile.
+Queen Mary, Queen Consort of the United Kingdom purchased a Bolin tiara of diamond loops with pearl drops, later worn by Queen Elizabeth II, although the original gold frame has been replaced by Garrard with one of platinum; Her niece by marriage, Queen Marie, Queen Consort of Romania purchased a sapphire kokoshnik-style tiara by Cartier and Nancy Leeds (later Princess Christopher of Greece), the ruby parure.
+It had been rumored that some of the stones in Elizabeth Taylor's Bulgari Emerald necklace were from the Vladimir collection but this has been disproved by jeweler historian Vincent Meylan.
+In 2008 a collection of cufflinks, cigarette cases and other small jewellery items belonging to the Vladimir family were discovered in the archives of the Swedish foreign ministry, having presumably been deposited at the Swedish Embassy in St Petersburg following the Revolution.
+They were sold on behalf of the Vladimir heirs; some of the proceeds were used to restore the Grand Duchess's tomb in Contrexéville.
+Children
+
+Marie's eldest surviving son, Grand Duke Cyril Vladimirovich, married, in 1905, his first cousin Victoria Melita of Saxe-Coburg and Gotha, daughter of Vladimir's sister, the Duchess of Edinburgh and of Saxe-Coburg and Gotha.
+Other than the fact that first cousin marriages were not allowed, she was also the former wife of Ernst Louis, Grand Duke of Hesse, the brother of the Empress.
+However, after several deaths in the family put Cyril third in the line of succession to the Imperial Throne, Nicholas agreed to reinstate Cyril's Imperial titles, and the latter's wife was acknowledged as HIH Grand Duchess Viktoria Fedorovna.
+Marie was a doting grandmother.
+Marie's favorite was Princess Marina of Greece and Denmark.
+Meriel Buchanan heard Marie say "Marina is the cleverest one," "Marina has the sweetest nature," and "Marina is the most affectionate."
+Marie gave her granddaughters "dresses, dolls, prams, bicycles, a pony and carriage and jewellery suitable for their ages, such as silver muff-chains, watches, strings of pearls and diamonds and turquoise pendants".
+During the First Balkan War, Elena sent her daughters to Paris to stay with Marie.
+Marie took her granddaughters out for drives in the Bois de Boulogne, showed them off to her French friends, took them to see puppet shows, and gave them numerous "toys, presents, and chic new dresses".
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -142,39 +268,9 @@ Christoph's surviving children are first cousins of King Charles III.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -189,6 +285,23 @@ Christoph's surviving children are first cousins of King Charles III.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -206,6 +319,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -273,29 +401,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -304,6 +424,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -316,6 +444,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -324,17 +454,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -362,6 +494,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -377,336 +593,94 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f3c15e7a-5c2b-4662-a246-2e01520d033f)
- Call ID: f3c15e7a-5c2b-4662-a246-2e01520d033f
+  AssignClass (079f7765-31ce-4078-af9a-588dff66d944)
+ Call ID: 079f7765-31ce-4078-af9a-588dff66d944
+  Args:
+    source: Maria_Pavlovna_of_Russia
+    type: :Woman
+  AssignClass (d82559ca-72d2-460c-904b-3386629694de)
+ Call ID: d82559ca-72d2-460c-904b-3386629694de
+  Args:
+    type: :Person
+    source: Maria_Pavlovna_of_Russia
+  AssignClass (720b9c66-2486-4568-b044-953b892779d4)
+ Call ID: 720b9c66-2486-4568-b044-953b892779d4
   Args:
     type: :Man
-    source: Prince_Christoph_of_Hesse
-  AssignClass (20907d77-635e-48a4-af0f-9ae8a13bc2b9)
- Call ID: 20907d77-635e-48a4-af0f-9ae8a13bc2b9
+    source: Friedrich_Franz_II_of_Mecklenburg_Schwerin
+  AssignClass (d2edcfa1-9695-48b6-96b9-1a59f545a552)
+ Call ID: d2edcfa1-9695-48b6-96b9-1a59f545a552
   Args:
-    source: Prince_Christoph_of_Hesse
+    source: Friedrich_Franz_II_of_Mecklenburg_Schwerin
     type: :Person
-  AddLiteral (6156cbd2-ae4c-4193-b977-62f97b2a770e)
- Call ID: 6156cbd2-ae4c-4193-b977-62f97b2a770e
+  AssignClass (e2601d1d-dc96-46d1-baaa-66c680e23689)
+ Call ID: e2601d1d-dc96-46d1-baaa-66c680e23689
   Args:
-    literal_value: 1901
+    source: Augusta_Reuss_of_Kostritz
+    type: :Woman
+  AssignClass (e4a9c353-4203-4358-8644-2d5f274bc1db)
+ Call ID: e4a9c353-4203-4358-8644-2d5f274bc1db
+  Args:
+    type: :Person
+    source: Augusta_Reuss_of_Kostritz
+  AssignClass (307e3cfb-2d8f-43c7-ba5f-ff79a6a29ca4)
+ Call ID: 307e3cfb-2d8f-43c7-ba5f-ff79a6a29ca4
+  Args:
+    source: Vladimir_Alexandrovich_of_Russia
+    type: :Man
+  AssignClass (ce5c214f-26d6-464a-8213-194fb433d6b6)
+ Call ID: ce5c214f-26d6-464a-8213-194fb433d6b6
+  Args:
+    type: :Person
+    source: Vladimir_Alexandrovich_of_Russia
+  AddLiteral (ef3d3be8-ae71-4ed7-8022-85ea1fbf33b9)
+ Call ID: ef3d3be8-ae71-4ed7-8022-85ea1fbf33b9
+  Args:
+    literal_value: 1854
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Prince_Christoph_of_Hesse
-    literal_type: xsd:integer
-  AddLiteral (28dbe559-217d-42bb-ab2f-dcdf6a78722e)
- Call ID: 28dbe559-217d-42bb-ab2f-dcdf6a78722e
+    source: Maria_Pavlovna_of_Russia
+  AddLiteral (dccf4a3b-c09d-4f33-a88b-5bde6c084964)
+ Call ID: dccf4a3b-c09d-4f33-a88b-5bde6c084964
   Args:
-    literal_value: 1943
     relation: :hasDeathYear
+    source: Maria_Pavlovna_of_Russia
+    literal_value: 1920
     literal_type: xsd:integer
-    source: Prince_Christoph_of_Hesse
-  AssignClass (df5d2464-7ea0-4f18-a60d-1dd197d683ff)
- Call ID: df5d2464-7ea0-4f18-a60d-1dd197d683ff
-  Args:
-    type: :Man
-    source: Prince_Frederick_Charles_of_Hesse
-  AssignClass (11763a3c-d1b9-43af-9804-731c37358908)
- Call ID: 11763a3c-d1b9-43af-9804-731c37358908
-  Args:
-    source: Prince_Frederick_Charles_of_Hesse
-    type: :Person
-  AddTriple (f441f1d3-8125-4ba5-b54a-a251721f05be)
- Call ID: f441f1d3-8125-4ba5-b54a-a251721f05be
+  AddTriple (5de356a7-6920-43de-8ad8-8fced1b849b4)
+ Call ID: 5de356a7-6920-43de-8ad8-8fced1b849b4
   Args:
     relation: :hasFather
-    target: Prince_Frederick_Charles_of_Hesse
-    source: Prince_Christoph_of_Hesse
-  AssignClass (39ab4fc3-cbda-4ecd-81db-09d0c8ddc518)
- Call ID: 39ab4fc3-cbda-4ecd-81db-09d0c8ddc518
+    source: Maria_Pavlovna_of_Russia
+    target: Friedrich_Franz_II_of_Mecklenburg_Schwerin
+  AddTriple (a98d2c44-8c70-4070-a693-8ed1291f98fb)
+ Call ID: a98d2c44-8c70-4070-a693-8ed1291f98fb
   Args:
-    type: :Woman
-    source: Princess_Margaret_of_Prussia
-  AssignClass (ccfaf23a-e9aa-4088-9c20-781261c581b4)
- Call ID: ccfaf23a-e9aa-4088-9c20-781261c581b4
-  Args:
-    type: :Person
-    source: Princess_Margaret_of_Prussia
-  AddTriple (93dce123-ebbd-4b2c-a548-df1dbca8b8ba)
- Call ID: 93dce123-ebbd-4b2c-a548-df1dbca8b8ba
-  Args:
-    target: Princess_Margaret_of_Prussia
+    target: Augusta_Reuss_of_Kostritz
+    source: Maria_Pavlovna_of_Russia
     relation: :hasMother
-    source: Prince_Christoph_of_Hesse
-  AssignClass (76bc8b4b-4770-4385-9520-df2b7fa54037)
- Call ID: 76bc8b4b-4770-4385-9520-df2b7fa54037
+  AddTriple (b6aab4cb-4ef5-46c9-9ded-efe781c6f1f8)
+ Call ID: b6aab4cb-4ef5-46c9-9ded-efe781c6f1f8
   Args:
-    source: Prince_Richard_of_Hesse
-    type: :Man
-  AssignClass (6b445b59-c6ad-401e-9dff-b40a1f52c19b)
- Call ID: 6b445b59-c6ad-401e-9dff-b40a1f52c19b
-  Args:
-    type: :Person
-    source: Prince_Richard_of_Hesse
-  AddTriple (cfb84695-fcd8-4c07-8232-c324b7918924)
- Call ID: cfb84695-fcd8-4c07-8232-c324b7918924
-  Args:
-    relation: :isBrotherOf
-    target: Prince_Christoph_of_Hesse
-    source: Prince_Richard_of_Hesse
-  AssignClass (1f755b4e-29a2-4b8c-83c2-2a99997d4c5f)
- Call ID: 1f755b4e-29a2-4b8c-83c2-2a99997d4c5f
-  Args:
-    source: Prince_Philipp_of_Hesse
-    type: :Man
-  AssignClass (90980c06-ccbc-425c-92d3-8ef5257ece34)
- Call ID: 90980c06-ccbc-425c-92d3-8ef5257ece34
-  Args:
-    type: :Person
-    source: Prince_Philipp_of_Hesse
-  AddTriple (af9eb358-2c3a-4844-a9ae-865daedd6ecd)
- Call ID: af9eb358-2c3a-4844-a9ae-865daedd6ecd
-  Args:
-    source: Prince_Philipp_of_Hesse
-    target: Prince_Christoph_of_Hesse
-    relation: :isBrotherOf
-  AssignClass (72e1ae3e-e333-4950-a0b6-9c54f6fa6ec5)
- Call ID: 72e1ae3e-e333-4950-a0b6-9c54f6fa6ec5
-  Args:
-    source: Prince_Wolfgang_of_Hesse
-    type: :Man
-  AssignClass (39d8c8d3-0086-45f7-8380-b7dcad4d4fd9)
- Call ID: 39d8c8d3-0086-45f7-8380-b7dcad4d4fd9
-  Args:
-    type: :Person
-    source: Prince_Wolfgang_of_Hesse
-  AddTriple (09877930-58b7-499c-b646-257dc72c5588)
- Call ID: 09877930-58b7-499c-b646-257dc72c5588
-  Args:
-    source: Prince_Wolfgang_of_Hesse
-    target: Prince_Christoph_of_Hesse
-    relation: :isBrotherOf
-  AssignClass (7b6b3789-a4ed-403d-8b24-029666f9f4da)
- Call ID: 7b6b3789-a4ed-403d-8b24-029666f9f4da
-  Args:
-    source: Friedrich_Wilhelm_of_Hesse
-    type: :Man
-  AssignClass (28a22959-3127-4528-a001-5672ee1006cb)
- Call ID: 28a22959-3127-4528-a001-5672ee1006cb
-  Args:
-    source: Friedrich_Wilhelm_of_Hesse
-    type: :Person
-  AddTriple (c503d672-720e-467e-9c05-9930b34f3f24)
- Call ID: c503d672-720e-467e-9c05-9930b34f3f24
-  Args:
-    source: Friedrich_Wilhelm_of_Hesse
-    relation: :isBrotherOf
-    target: Prince_Christoph_of_Hesse
-  AssignClass (de0604d4-ffa1-46cd-9521-cbd869292090)
- Call ID: de0604d4-ffa1-46cd-9521-cbd869292090
-  Args:
-    source: Maximilian_of_Hesse
-    type: :Man
-  AssignClass (2b821b9b-7965-4dfc-bf3b-32d7c97bfa2a)
- Call ID: 2b821b9b-7965-4dfc-bf3b-32d7c97bfa2a
-  Args:
-    type: :Person
-    source: Maximilian_of_Hesse
-  AddTriple (9bfda877-f667-48d9-8291-2d2225c365e7)
- Call ID: 9bfda877-f667-48d9-8291-2d2225c365e7
-  Args:
-    source: Maximilian_of_Hesse
-    target: Prince_Christoph_of_Hesse
-    relation: :isBrotherOf
-  AssignClass (6c83cee5-0eca-4d03-a6c8-99ed96f99b2f)
- Call ID: 6c83cee5-0eca-4d03-a6c8-99ed96f99b2f
-  Args:
-    type: :Woman
-    source: Princess_Sophie_of_Greece_and_Denmark
-  AssignClass (b26f8437-33ec-4412-990a-90a4ea43dbe6)
- Call ID: b26f8437-33ec-4412-990a-90a4ea43dbe6
-  Args:
-    source: Princess_Sophie_of_Greece_and_Denmark
-    type: :Person
-  AddTriple (25b04fcd-44d2-47e0-bffd-a9181873180a)
- Call ID: 25b04fcd-44d2-47e0-bffd-a9181873180a
-  Args:
-    source: Prince_Christoph_of_Hesse
+    target: Vladimir_Alexandrovich_of_Russia
+    source: Maria_Pavlovna_of_Russia
     relation: :hasRelation
-    target: Princess_Sophie_of_Greece_and_Denmark
-  AddLiteral (d538cab6-b452-43eb-8808-a2c857435834)
- Call ID: d538cab6-b452-43eb-8808-a2c857435834
+  AddLiteral (f3f88bc0-27d4-42f7-a699-9a085cb80d52)
+ Call ID: f3f88bc0-27d4-42f7-a699-9a085cb80d52
   Args:
+    literal_type: xsd:integer
+    literal_value: 1874
+    source: Maria_Pavlovna_of_Russia
     relation: :hasMarriageYear
-    literal_value: 1930
-    literal_type: xsd:integer
-    source: Prince_Christoph_of_Hesse
-  AssignClass (dbc1f846-2f1a-4802-8d2d-73cd48bd5a6c)
- Call ID: dbc1f846-2f1a-4802-8d2d-73cd48bd5a6c
+  AddTriple (d6762ea2-cb2f-442a-b2d7-243c4729668f)
+ Call ID: d6762ea2-cb2f-442a-b2d7-243c4729668f
   Args:
-    type: :Man
-    source: Prince_Andrew_of_Greece_and_Denmark
-  AssignClass (3be73918-2357-475b-8796-62dcee8d989b)
- Call ID: 3be73918-2357-475b-8796-62dcee8d989b
-  Args:
-    type: :Person
-    source: Prince_Andrew_of_Greece_and_Denmark
-  AddTriple (b1d8bf05-66a7-40a8-940c-abd29db2c35b)
- Call ID: b1d8bf05-66a7-40a8-940c-abd29db2c35b
-  Args:
-    relation: :hasFather
-    target: Prince_Andrew_of_Greece_and_Denmark
-    source: Princess_Sophie_of_Greece_and_Denmark
-  AssignClass (39bad76b-a70d-46bc-9fab-5c52dc2b2f94)
- Call ID: 39bad76b-a70d-46bc-9fab-5c52dc2b2f94
-  Args:
-    type: :Woman
-    source: Princess_Alice_of_Battenberg
-  AssignClass (b63a5355-ce67-47e3-9efd-e49c34b9940e)
- Call ID: b63a5355-ce67-47e3-9efd-e49c34b9940e
-  Args:
-    type: :Person
-    source: Princess_Alice_of_Battenberg
-  AddTriple (2ee25f6e-3015-4cec-9640-ab91e60a545c)
- Call ID: 2ee25f6e-3015-4cec-9640-ab91e60a545c
-  Args:
-    source: Princess_Sophie_of_Greece_and_Denmark
-    relation: :hasMother
-    target: Princess_Alice_of_Battenberg
-  AssignClass (78a22ca6-bda0-44cd-bd01-935826e46fbe)
- Call ID: 78a22ca6-bda0-44cd-bd01-935826e46fbe
-  Args:
-    source: Prince_Philip_Duke_of_Edinburgh
-    type: :Man
-  AssignClass (aef29597-b1bb-4dfe-af04-048bae49188b)
- Call ID: aef29597-b1bb-4dfe-af04-048bae49188b
-  Args:
-    type: :Person
-    source: Prince_Philip_Duke_of_Edinburgh
-  AddTriple (cbc9b99f-1de5-44e2-ac69-772b5bd6c945)
- Call ID: cbc9b99f-1de5-44e2-ac69-772b5bd6c945
-  Args:
-    source: Prince_Philip_Duke_of_Edinburgh
-    target: Princess_Sophie_of_Greece_and_Denmark
-    relation: :isBrotherOf
-  AssignClass (6a2d0406-c1c9-48a7-84dc-322d3d0dd7d7)
- Call ID: 6a2d0406-c1c9-48a7-84dc-322d3d0dd7d7
-  Args:
-    type: :Man
-    source: Prince_George_William_of_Hanover
-  AssignClass (e74e7024-03a9-41b5-9ddc-b8e6b18cd11f)
- Call ID: e74e7024-03a9-41b5-9ddc-b8e6b18cd11f
-  Args:
-    type: :Person
-    source: Prince_George_William_of_Hanover
-  AddTriple (ddb1a6a2-ab98-413b-9461-4f18eef7a04f)
- Call ID: ddb1a6a2-ab98-413b-9461-4f18eef7a04f
-  Args:
-    source: Princess_Sophie_of_Greece_and_Denmark
+    source: Vladimir_Alexandrovich_of_Russia
+    target: Maria_Pavlovna_of_Russia
     relation: :hasRelation
-    target: Prince_George_William_of_Hanover
-  Finish (f4b348d4-8de1-4d16-b73a-e027370de1a2)
- Call ID: f4b348d4-8de1-4d16-b73a-e027370de1a2
+  Finish (9c11813e-5629-4215-8cc8-e147628b1742)
+ Call ID: 9c11813e-5629-4215-8cc8-e147628b1742
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -771,59 +745,24 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Friedrich_Wilhelm_of_Hesse a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Christoph_of_Hesse .
-
-  data:Maximilian_of_Hesse a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Christoph_of_Hesse .
-
-  data:Prince_Philip_Duke_of_Edinburgh a :Man,
-          :Person ;
-      :isBrotherOf data:Princess_Sophie_of_Greece_and_Denmark .
-
-  data:Prince_Philipp_of_Hesse a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Christoph_of_Hesse .
-
-  data:Prince_Richard_of_Hesse a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Christoph_of_Hesse .
-
-  data:Prince_Wolfgang_of_Hesse a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Christoph_of_Hesse .
-
-  data:Prince_Andrew_of_Greece_and_Denmark a :Man,
-          :Person .
-
-  data:Prince_Frederick_Charles_of_Hesse a :Man,
-          :Person .
-
-  data:Prince_George_William_of_Hanover a :Man,
-          :Person .
-
-  data:Princess_Alice_of_Battenberg a :Person,
+  data:Augusta_Reuss_of_Kostritz a :Person,
           :Woman .
 
-  data:Princess_Margaret_of_Prussia a :Person,
-          :Woman .
+  data:Friedrich_Franz_II_of_Mecklenburg_Schwerin a :Man,
+          :Person .
 
-  data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+  data:Maria_Pavlovna_of_Russia a :Person,
           :Woman ;
-      :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-      :hasMother data:Princess_Alice_of_Battenberg ;
-      :hasRelation data:Prince_George_William_of_Hanover .
+      :hasBirthYear 1854 ;
+      :hasDeathYear 1920 ;
+      :hasFather data:Friedrich_Franz_II_of_Mecklenburg_Schwerin ;
+      :hasMarriageYear 1874 ;
+      :hasMother data:Augusta_Reuss_of_Kostritz ;
+      :hasRelation data:Vladimir_Alexandrovich_of_Russia .
 
-  data:Prince_Christoph_of_Hesse a :Man,
+  data:Vladimir_Alexandrovich_of_Russia a :Man,
           :Person ;
-      :hasBirthYear 1901 ;
-      :hasDeathYear 1943 ;
-      :hasFather data:Prince_Frederick_Charles_of_Hesse ;
-      :hasMarriageYear 1930 ;
-      :hasMother data:Princess_Margaret_of_Prussia ;
-      :hasRelation data:Princess_Sophie_of_Greece_and_Denmark .
+      :hasRelation data:Maria_Pavlovna_of_Russia .
 
 
 
@@ -835,110 +774,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (4bc8cbff-b20c-4c85-bdd8-e4a9c65b6a17)
- Call ID: 4bc8cbff-b20c-4c85-bdd8-e4a9c65b6a17
+  ValidateShacl (c2787607-0fe5-4db1-b6fc-5ecb26e1fcf7)
+ Call ID: c2787607-0fe5-4db1-b6fc-5ecb26e1fcf7
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value for hasFather on Prince_Christoph_of_Hesse is missing the required :Ancestor class.
+      The node Friedrich_Franz_II_of_Mecklenburg_Schwerin, linked as the father of Maria_Pavlovna_of_Russia, is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Frederick_Charles_of_Hesse, :Ancestor)
+      AssignClass(node='Friedrich_Franz_II_of_Mecklenburg_Schwerin', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value for hasMother on Prince_Christoph_of_Hesse is missing the required :Ancestor class.
+      The node Augusta_Reuss_of_Kostritz, linked as the mother of Maria_Pavlovna_of_Russia, is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Margaret_of_Prussia, :Ancestor)
+      AssignClass(node='Augusta_Reuss_of_Kostritz', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value for hasFather on Princess_Sophie_of_Greece_and_Denmark is missing the required :Ancestor class.
+      The node Friedrich_Franz_II_of_Mecklenburg_Schwerin, linked as the father of Maria_Pavlovna_of_Russia, is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Andrew_of_Greece_and_Denmark, :Ancestor)
+      AssignClass(node='Friedrich_Franz_II_of_Mecklenburg_Schwerin', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value for hasFather on Prince_Christoph_of_Hesse is missing the required :Ancestor class.
+      The node Augusta_Reuss_of_Kostritz, linked as the mother of Maria_Pavlovna_of_Russia, is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Frederick_Charles_of_Hesse, :Ancestor)
+      AssignClass(node='Augusta_Reuss_of_Kostritz', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value for hasMother on Princess_Sophie_of_Greece_and_Denmark is missing the required :Ancestor class.
+      The node Friedrich_Franz_II_of_Mecklenburg_Schwerin, linked as the father of Maria_Pavlovna_of_Russia, is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Alice_of_Battenberg, :Ancestor)
+      AssignClass(node='Friedrich_Franz_II_of_Mecklenburg_Schwerin', class=':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value for hasMother on Prince_Christoph_of_Hesse is missing the required :Ancestor class.
+      The node Augusta_Reuss_of_Kostritz, linked as the mother of Maria_Pavlovna_of_Russia, is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Margaret_of_Prussia, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value for hasFather on Princess_Sophie_of_Greece_and_Denmark is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Andrew_of_Greece_and_Denmark, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value for hasFather on Prince_Christoph_of_Hesse is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Frederick_Charles_of_Hesse, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value for hasMother on Princess_Sophie_of_Greece_and_Denmark is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Alice_of_Battenberg, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value for hasMother on Prince_Christoph_of_Hesse is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Margaret_of_Prussia, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value for hasFather on Princess_Sophie_of_Greece_and_Denmark is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Andrew_of_Greece_and_Denmark, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value for hasMother on Princess_Sophie_of_Greece_and_Denmark is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Alice_of_Battenberg, :Ancestor)
+      AssignClass(node='Augusta_Reuss_of_Kostritz', class=':Ancestor')
 
 
 
@@ -947,34 +838,19 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (902311fb-41fe-47b5-9b5c-35c83c784750)
- Call ID: 902311fb-41fe-47b5-9b5c-35c83c784750
+  AssignClass (633ee6b2-206d-49ad-8763-8170735e0350)
+ Call ID: 633ee6b2-206d-49ad-8763-8170735e0350
   Args:
+    source: Friedrich_Franz_II_of_Mecklenburg_Schwerin
     type: :Ancestor
-    source: Prince_Frederick_Charles_of_Hesse
-  AssignClass (77ea7bb6-d5c5-4200-8d5f-5285b76db0e8)
- Call ID: 77ea7bb6-d5c5-4200-8d5f-5285b76db0e8
+  AssignClass (4b7989d2-0180-40fa-a6c9-05d3fb82b7bc)
+ Call ID: 4b7989d2-0180-40fa-a6c9-05d3fb82b7bc
   Args:
+    source: Augusta_Reuss_of_Kostritz
     type: :Ancestor
-    source: Princess_Margaret_of_Prussia
-  AssignClass (3d41cd3a-c8bf-42bd-9367-18f9707ed1fc)
- Call ID: 3d41cd3a-c8bf-42bd-9367-18f9707ed1fc
+  ValidateShacl (6829efc4-1e72-4e5b-84f4-678ed00cda3b)
+ Call ID: 6829efc4-1e72-4e5b-84f4-678ed00cda3b
   Args:
-    type: :Ancestor
-    source: Prince_Andrew_of_Greece_and_Denmark
-  AssignClass (6fccb18b-42ff-4567-ad39-aae8c2dfb7d8)
- Call ID: 6fccb18b-42ff-4567-ad39-aae8c2dfb7d8
-  Args:
-    type: :Ancestor
-    source: Princess_Alice_of_Battenberg
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -987,73 +863,28 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Friedrich_Wilhelm_of_Hesse a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Christoph_of_Hesse .
-
-  data:Maximilian_of_Hesse a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Christoph_of_Hesse .
-
-  data:Prince_Philip_Duke_of_Edinburgh a :Man,
-          :Person ;
-      :isBrotherOf data:Princess_Sophie_of_Greece_and_Denmark .
-
-  data:Prince_Philipp_of_Hesse a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Christoph_of_Hesse .
-
-  data:Prince_Richard_of_Hesse a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Christoph_of_Hesse .
-
-  data:Prince_Wolfgang_of_Hesse a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Christoph_of_Hesse .
-
-  data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_George_William_of_Hanover a :Man,
-          :Person .
-
-  data:Princess_Alice_of_Battenberg a :Ancestor,
+  data:Augusta_Reuss_of_Kostritz a :Ancestor,
           :Person,
           :Woman .
 
-  data:Princess_Margaret_of_Prussia a :Ancestor,
-          :Person,
-          :Woman .
+  data:Friedrich_Franz_II_of_Mecklenburg_Schwerin a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+  data:Maria_Pavlovna_of_Russia a :Person,
           :Woman ;
-      :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-      :hasMother data:Princess_Alice_of_Battenberg ;
-      :hasRelation data:Prince_George_William_of_Hanover .
+      :hasBirthYear 1854 ;
+      :hasDeathYear 1920 ;
+      :hasFather data:Friedrich_Franz_II_of_Mecklenburg_Schwerin ;
+      :hasMarriageYear 1874 ;
+      :hasMother data:Augusta_Reuss_of_Kostritz ;
+      :hasRelation data:Vladimir_Alexandrovich_of_Russia .
 
-  data:Prince_Christoph_of_Hesse a :Man,
+  data:Vladimir_Alexandrovich_of_Russia a :Man,
           :Person ;
-      :hasBirthYear 1901 ;
-      :hasDeathYear 1943 ;
-      :hasFather data:Prince_Frederick_Charles_of_Hesse ;
-      :hasMarriageYear 1930 ;
-      :hasMother data:Princess_Margaret_of_Prussia ;
-      :hasRelation data:Princess_Sophie_of_Greece_and_Denmark .
+      :hasRelation data:Maria_Pavlovna_of_Russia .
 
 
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (ff4144e5-63e7-4b6a-848e-d02e8d96a173)
- Call ID: ff4144e5-63e7-4b6a-848e-d02e8d96a173
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1063,6 +894,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (963ff41c-589e-49eb-a1c0-95ebb80a2664)
- Call ID: 963ff41c-589e-49eb-a1c0-95ebb80a2664
+  Finish (3b0fa544-443a-4ab5-8f4f-518a63aa8aa4)
+ Call ID: 3b0fa544-443a-4ab5-8f4f-518a63aa8aa4
   Args:

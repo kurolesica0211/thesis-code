@@ -2,37 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Max a :Man,
-        :Person ;
-    :isSonOf data:Berthold .
+data:Andrew_Charles_Victor_Elphinstone a :Man ;
+    :hasFather data:Sidney_Elphinstone ;
+    :hasMother data:Lady_Mary_Bowes-Lyon .
 
-data:Philip a :Man,
-        :Person ;
-    :isBrotherOf data:Theodora .
+data:John_Alexander_Elphinstone a :Man ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Sidney_Elphinstone ;
+    :hasMother data:Lady_Mary_Bowes-Lyon .
 
-data:Alice a :Person,
-        :Woman .
+data:Margaret_Elphinstone a :Woman ;
+    :hasFather data:Sidney_Elphinstone ;
+    :hasMother data:Lady_Mary_Bowes-Lyon ;
+    :hasRelation data:Denys_Rhodes .
 
-data:Andrew a :Man,
-        :Person .
+data:Alexander_Murray a :Man .
 
-data:Berthold a :Man,
-        :Person ;
-    :hasBirthYear 1906 ;
-    :hasDeathYear 1963 ;
-    :hasFather data:Maximilian ;
-    :hasMarriageYear 1931 ;
-    :hasMother data:MarieLouise ;
-    :hasRelation data:Theodora .
+data:Denys_Rhodes a :Man .
 
-data:MarieLouise a :Person,
-        :Woman .
+data:Lady_Constance_Euphemia_Woronzow_Murray a :Woman ;
+    :hasFather data:Alexander_Murray .
 
-data:Maximilian a :Man,
-        :Person .
+data:William_Elphinstone a :Man .
 
-data:Theodora a :Person,
-        :Woman ;
-    :hasFather data:Andrew ;
-    :hasMother data:Alice .
+data:Lady_Mary_Bowes-Lyon a :Woman .
+
+data:Sidney_Elphinstone a :Man ;
+    :hasFather data:William_Elphinstone ;
+    :hasMother data:Lady_Constance_Euphemia_Woronzow_Murray .
 

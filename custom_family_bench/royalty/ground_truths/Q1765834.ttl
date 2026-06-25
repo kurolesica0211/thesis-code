@@ -7,20 +7,34 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:Beatrix_of_the_Netherlands a :Person ;
+    rdfs:label "Beatrix of the Netherlands" ;
+    data:posIndicesFull "1064:1077",
+        "1070:1096",
+        "2786:2799",
+        "715:728" ;
+    data:posIndicesPart "1312:1323",
+        "2369:2380" ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
+        "Beatrix Wilhelmina Armgard",
+        "Beatrix der Nederlanden",
+        "Beatrix of Orange",
+        "Beatrix van Oranje",
+        "Princess Beatrix of Orange-Nassau",
+        "Princess Beatrix of the Netherlands",
+        "Queen Beatrix" ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasSex data:female .
 
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Hugo_de_Bourbon_de_Parme a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Hugo_de_Bourbon_de_Parme a :Person ;
     rdfs:label "Prince Hugo de Bourbon de Parme" ;
     data:posIndicesFull "553:564" ;
     data:posIndicesPart "1117:1123",
         "1140:1147",
         "1225:1231",
+        "2277:2283",
         "2349:2355",
         "2841:2848",
         "2852:2857",
@@ -40,124 +54,7 @@ data:Prince_Hugo_de_Bourbon_de_Parme a :Man,
         "Prince Carlos Hugo Roderik Sybren de Bourbon de Parme" ;
     :hasSex data:male .
 
-data:Prince_Carlos_Hugo-_Duke_of_Parma a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Carlos Hugo, Duke of Parma" ;
-    data:posIndicesFull "553:579" ;
-    data:posIndicesPart "1117:1123",
-        "1148:1153",
-        "1225:1231",
-        "2349:2355",
-        "2879:2884",
-        "621:626",
-        "944:950",
-        "989:995",
-        "996:1002" ;
-    data:wdtLink wdt:Q537914 ;
-    :alsoKnownAs "Carlos Hugo, Duke of Parma",
-        "Carlos Hugo, Duke of Parma and Piacenza" ;
-    :hasChild data:Princess_Margarita_de_Bourbon_de_Parme ;
-    :hasDaughter data:Princess_Margarita_de_Bourbon_de_Parme ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Margarita_de_Bourbon_de_Parme ;
-    :isParentOf data:Princess_Margarita_de_Bourbon_de_Parme .
-
-data:William_Alexander_of_the_Netherlands a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "William Alexander of the Netherlands" ;
-    data:posIndicesFull "2259:2293" ;
-    data:wdtLink wdt:Q154952 ;
-    :alsoKnownAs "King Willem-Alexander",
-        "King Willem-Alexander of the Netherlands",
-        "Prince Willem-Alexander Claus George Ferdinand of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
-        "Prince Willem-Alexander of Amsberg",
-        "Prince Willem-Alexander of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg",
-        "Prince William-Alexander of the Netherlands",
-        "W.A. van Buren",
-        "Wilem van Amsberg",
-        "Willem IV of the Netherlands",
-        "Willem-Alexander Claus George Ferdinand, Prince of Orange",
-        "Willem-Alexander Prins van Oranje-Nassau Koning der Nederlanden",
-        "Willem-Alexander van Amsberg",
-        "Willem-Alexander van Oranje-Nassau",
-        "Willem-Alexander, Prince of Orange",
-        "ZM Koning Willem-Alexander" ;
-    :hasMother data:Beatrix_of_the_Netherlands ;
-    :hasParent data:Beatrix_of_the_Netherlands ;
-    :hasSex data:male ;
-    :isChildOf data:Beatrix_of_the_Netherlands ;
-    :isSonOf data:Beatrix_of_the_Netherlands .
-
-data:Juliana_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Juliana of the Netherlands" ;
-    data:posIndicesFull "1207:1220",
-        "1213:1220",
-        "1356:1369",
-        "1356:1388",
-        "1362:1369",
-        "1362:1388",
-        "3055:3068",
-        "3061:3068" ;
-    data:posIndicesPart "2369:2380" ;
-    data:wdtLink wdt:Q154946 ;
-    :alsoKnownAs "Juliana I of the Netherlands",
-        "Juliana Louise Emma Marie Wilhelmina",
-        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Juliana der Nederlanden",
-        "Julijana",
-        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Princess Juliana of the Netherlands",
-        "Queen Juliana",
-        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-        "Queen Juliana of the Netherlands" ;
-    :hasChild data:Beatrix_of_the_Netherlands,
-        data:Princess_Irene_of_the_Netherlands ;
-    :hasDaughter data:Beatrix_of_the_Netherlands,
-        data:Princess_Irene_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isMotherOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Irene_of_the_Netherlands ;
-    :isParentOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Irene_of_the_Netherlands .
-
-data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Bernhard of Lippe-Biesterfeld" ;
-    data:posIndicesFull "1393:1429",
-        "1400:1429" ;
-    data:posIndicesPart "2349:2355",
-        "3195:3200",
-        "3201:3212" ;
-    data:wdtLink wdt:Q57304 ;
-    :alsoKnownAs "B. van Lippe Biesterfeld",
-        "Bernhard of Lippe-Biesterfeld",
-        "Bernhard zur Lippe-Biesterfeld",
-        "Bernhard, Prince Consort of the Netherlands",
-        "Prince Bernhard of the Netherlands",
-        "Prince Bernhard, Prince Consort of the Netherlands",
-        "Z.K.H. Prins Bernhard" ;
-    :hasChild data:Beatrix_of_the_Netherlands,
-        data:Princess_Irene_of_the_Netherlands ;
-    :hasDaughter data:Beatrix_of_the_Netherlands,
-        data:Princess_Irene_of_the_Netherlands ;
-    :hasSex data:male ;
-    :isFatherOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Irene_of_the_Netherlands ;
-    :isParentOf data:Beatrix_of_the_Netherlands,
-        data:Princess_Irene_of_the_Netherlands .
-
-data:Princess_Margarita_de_Bourbon_de_Parme a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Margarita_de_Bourbon_de_Parme a :Person ;
     rdfs:label "Princess Margarita de Bourbon de Parme" ;
     data:posIndicesFull "788:826",
         "797:826" ;
@@ -186,59 +83,62 @@ data:Princess_Margarita_de_Bourbon_de_Parme a :Person,
         "Margarita de Bourbon de Parme",
         "Princess Margarita Maria Beatriz de Bourbon de Parme",
         "Princess Margarita, Countess of Colorno" ;
-    :hasFather data:Prince_Carlos_Hugo-_Duke_of_Parma ;
-    :hasMother data:Princess_Irene_of_the_Netherlands ;
     :hasParent data:Prince_Carlos_Hugo-_Duke_of_Parma,
         data:Princess_Irene_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isAuntOf data:Prince_Hugo_de_Bourbon_de_Parme ;
-    :isChildOf data:Prince_Carlos_Hugo-_Duke_of_Parma,
-        data:Princess_Irene_of_the_Netherlands ;
-    :isDaughterOf data:Prince_Carlos_Hugo-_Duke_of_Parma,
-        data:Princess_Irene_of_the_Netherlands .
+    :hasSex data:female .
 
-data:Beatrix_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Beatrix of the Netherlands" ;
-    data:posIndicesFull "1064:1077",
-        "1070:1096",
-        "2786:2799",
-        "715:728" ;
-    data:posIndicesPart "1312:1323",
-        "2369:2380" ;
-    data:wdtLink wdt:Q29574 ;
-    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
-        "Beatrix Wilhelmina Armgard",
-        "Beatrix der Nederlanden",
-        "Beatrix of Orange",
-        "Beatrix van Oranje",
-        "Princess Beatrix of Orange-Nassau",
-        "Princess Beatrix of the Netherlands",
-        "Queen Beatrix" ;
-    :hasChild data:William_Alexander_of_the_Netherlands ;
-    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasMother data:Juliana_of_the_Netherlands ;
-    :hasParent data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Irene_of_the_Netherlands ;
-    :hasSon data:William_Alexander_of_the_Netherlands ;
-    :isAuntOf data:Princess_Margarita_de_Bourbon_de_Parme ;
-    :isChildOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isDaughterOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isMotherOf data:William_Alexander_of_the_Netherlands ;
-    :isParentOf data:William_Alexander_of_the_Netherlands ;
-    :isSiblingOf data:Princess_Irene_of_the_Netherlands ;
-    :isSisterOf data:Princess_Irene_of_the_Netherlands .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Princess_Irene_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Armgard_of_Sierstorpff-Cramm a :Person ;
+    rdfs:label "Armgard of Sierstorpff-Cramm" ;
+    data:posIndicesFull "1393:1429" ;
+    data:wdtLink wdt:Q2802589 ;
+    :alsoKnownAs "Armgard Kunigunde Alharda Agnes Oda von Cramm",
+        "Armgard von Cramm",
+        "Baroness Armgard of Sierstorpff-Cramm",
+        "Baroness Armgard von Cramm",
+        "Countess Bodo von Oeynhausen",
+        "Princess Bernhard of Lippe-Biesterfeld" ;
+    :hasSex data:female .
+
+data:Prince_Bernhard_of_Lippe a :Person ;
+    rdfs:label "Prince Bernhard of Lippe" ;
+    data:posIndicesFull "1393:1417",
+        "1400:1429" ;
+    data:posIndicesPart "2277:2283",
+        "2349:2355",
+        "3195:3200" ;
+    data:wdtLink wdt:Q649601 ;
+    :alsoKnownAs "Bernhard Prinz zur Lippe",
+        "Bernhard of Lippe-Biesterfeld",
+        "Bernhard zur Lippe",
+        "Prince Bernhard of Lippe (1872–1934)",
+        "Prince Bernhard of Lippe-Biesterfeld (1872–1934)" ;
+    :hasSex data:male .
+
+data:Prince_Carlos_Hugo-_Duke_of_Parma a :Person ;
+    rdfs:label "Prince Carlos Hugo, Duke of Parma" ;
+    data:posIndicesFull "553:579" ;
+    data:posIndicesPart "1117:1123",
+        "1148:1153",
+        "1225:1231",
+        "2277:2283",
+        "2349:2355",
+        "2879:2884",
+        "621:626",
+        "944:950",
+        "989:995",
+        "996:1002" ;
+    data:wdtLink wdt:Q537914 ;
+    :alsoKnownAs "Carlos Hugo, Duke of Parma",
+        "Carlos Hugo, Duke of Parma and Piacenza" ;
+    :hasSex data:male .
+
+data:Princess_Irene_of_the_Netherlands a :Person ;
     rdfs:label "Princess Irene of the Netherlands" ;
     data:posIndicesFull "515:548",
         "524:548" ;
@@ -259,21 +159,55 @@ data:Princess_Irene_of_the_Netherlands a :Ancestor,
         "Irene of the Netherlands",
         "Irene van Oranje",
         "Princess Irene Emma Elisabeth of the Netherlands" ;
-    :hasChild data:Princess_Margarita_de_Bourbon_de_Parme ;
-    :hasDaughter data:Princess_Margarita_de_Bourbon_de_Parme ;
-    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasMother data:Juliana_of_the_Netherlands ;
     :hasParent data:Juliana_of_the_Netherlands,
         data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasSex data:female ;
-    :hasSister data:Beatrix_of_the_Netherlands ;
-    :isAuntOf data:William_Alexander_of_the_Netherlands ;
-    :isChildOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isDaughterOf data:Juliana_of_the_Netherlands,
-        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :isMotherOf data:Princess_Margarita_de_Bourbon_de_Parme ;
-    :isParentOf data:Princess_Margarita_de_Bourbon_de_Parme ;
-    :isSiblingOf data:Beatrix_of_the_Netherlands ;
-    :isSisterOf data:Beatrix_of_the_Netherlands .
+    :hasSex data:female .
+
+data:Juliana_of_the_Netherlands a :Person ;
+    rdfs:label "Juliana of the Netherlands" ;
+    data:posIndicesFull "1207:1220",
+        "1213:1220",
+        "1356:1369",
+        "1356:1388",
+        "1362:1369",
+        "1362:1388",
+        "3055:3068",
+        "3061:3068" ;
+    data:posIndicesPart "2369:2380" ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands",
+        "Juliana Louise Emma Marie Wilhelmina",
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Juliana der Nederlanden",
+        "Julijana",
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Princess Juliana of the Netherlands",
+        "Queen Juliana",
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Queen Juliana of the Netherlands" ;
+    :hasSex data:female .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Person ;
+    rdfs:label "Prince Bernhard of Lippe-Biesterfeld" ;
+    data:posIndicesFull "1393:1429",
+        "1400:1429" ;
+    data:posIndicesPart "2277:2283",
+        "2349:2355",
+        "3195:3200",
+        "3201:3212" ;
+    data:wdtLink wdt:Q57304 ;
+    :alsoKnownAs "B. van Lippe Biesterfeld",
+        "Bernhard of Lippe-Biesterfeld",
+        "Bernhard zur Lippe-Biesterfeld",
+        "Bernhard, Prince Consort of the Netherlands",
+        "Prince Bernhard of the Netherlands",
+        "Prince Bernhard, Prince Consort of the Netherlands",
+        "Z.K.H. Prins Bernhard" ;
+    :hasParent data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

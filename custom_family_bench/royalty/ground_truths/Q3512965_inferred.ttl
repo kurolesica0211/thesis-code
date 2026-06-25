@@ -1,0 +1,61 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Duke_Johann_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Duke Johann of Oldenburg"^^xsd:string ;
+    data:posIndicesFull "168:192"^^xsd:string ;
+    data:wdtLink wdt:Q75390945 ;
+    :alsoKnownAs "Johann Friedrich Adolf von Holstein-Gottorp, Herzog von Oldenburg"^^xsd:string ;
+    :hasBrother data:Duke_Johann_of_Oldenburg ;
+    :hasChild data:Eilika_Duchess_of_Oldenburg ;
+    :hasDaughter data:Eilika_Duchess_of_Oldenburg ;
+    :hasRelation data:Duke_Johann_of_Oldenburg,
+        data:Eilika_Duchess_of_Oldenburg ;
+    :hasSex data:male ;
+    :isAncestorOf data:Eilika_Duchess_of_Oldenburg ;
+    :isBloodrelationOf data:Duke_Johann_of_Oldenburg ;
+    :isBrotherOf data:Duke_Johann_of_Oldenburg ;
+    :isFatherOf data:Eilika_Duchess_of_Oldenburg ;
+    :isParentOf data:Eilika_Duchess_of_Oldenburg ;
+    :isSiblingOf data:Duke_Johann_of_Oldenburg ;
+    :isUncleOf data:Eilika_Duchess_of_Oldenburg .
+
+data:Eilika_Duchess_of_Oldenburg a :Person,
+        :Woman ;
+    rdfs:label "Eilika Duchess of Oldenburg"^^xsd:string ;
+    data:wdtLink wdt:Q3512965 ;
+    :alsoKnownAs "Archduchess Eilika"^^xsd:string,
+        "Archduchess Eilika Helene Jutta Clementine"^^xsd:string,
+        "Archduchess Eilika, The Archduchess Georg of Austria"^^xsd:string,
+        "Eilika Duchess of Oldenburg"^^xsd:string ;
+    :hasAncestor data:Duke_Johann_of_Oldenburg ;
+    :hasFather data:Duke_Johann_of_Oldenburg ;
+    :hasParent data:Duke_Johann_of_Oldenburg ;
+    :hasRelation data:Duke_Johann_of_Oldenburg,
+        data:Eilika_Duchess_of_Oldenburg ;
+    :hasSex data:female ;
+    :hasSister data:Eilika_Duchess_of_Oldenburg ;
+    :isBloodrelationOf data:Eilika_Duchess_of_Oldenburg ;
+    :isChildOf data:Duke_Johann_of_Oldenburg ;
+    :isDaughterOf data:Duke_Johann_of_Oldenburg ;
+    :isSiblingOf data:Eilika_Duchess_of_Oldenburg ;
+    :isSisterOf data:Eilika_Duchess_of_Oldenburg .
+

@@ -4,41 +4,34 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_von_Storch a :Person,\n        :Woman ;\n    :hasBirthYear 1971 ;\n    :hasMarriageYear data:2010 .\n\ndata:Sven_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Berndt_Detlev_von_Storch ;\n    :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .\n\ndata:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Berndt_Detlev_von_Storch a :Ancestor,\n        :Man ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2004 .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_von_Storch a :Person,\n        :Woman ;\n    :hasBirthYear 1971 ;\n    :hasMarriageYear 2010 ;\n    :hasRelation data:Sven_von_Storch .\n\ndata:Antje_Liete_Kr%C3%BCger-Franke a :Person,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Berndt_Detlev_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2004 .\n\ndata:Sven_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Berndt_Detlev_von_Storch ;\n    :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .\n\n"
     },
     {
         "graph_type": "validation_graph",
         "iteration": 2,
         "source": "validate_shacl",
-        "tool_call_id": "73b9bd78-1152-41d4-974f-b53efd8cbde6",
-        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
+        "tool_call_id": "42a7c369-4ba2-4ff2-b94f-7dd06628d251",
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Sven_von_Storch> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Berndt_Detlev_von_Storch> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Sven_von_Storch> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Berndt_Detlev_von_Storch> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Sven_von_Storch> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Antje_Liete_Kr%C3%BCger-Franke> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Sven_von_Storch> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Antje_Liete_Kr%C3%BCger-Franke> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Sven_von_Storch> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Woman)\" ;\n            sh:resultPath :hasMother ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasMother ;\n            sh:value <http://example.org/data/Antje_Liete_Kr%C3%BCger-Franke> ],\n        [ a sh:ValidationResult ;\n            sh:focusNode <http://example.org/data/Sven_von_Storch> ;\n            sh:resultMessage \"Value class is not in classes (:Ancestor, :Man)\" ;\n            sh:resultPath :hasFather ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape :Person-hasFather ;\n            sh:value <http://example.org/data/Berndt_Detlev_von_Storch> ] .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 4,
+        "iteration": 3,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_von_Storch a :Person,\n        :Woman ;\n    :hasBirthYear 1971 .\n\ndata:Sven_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Berndt_Detlev_von_Storch ;\n    :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .\n\ndata:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Berndt_Detlev_von_Storch a :Ancestor,\n        :Man ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2004 .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_von_Storch a :Person,\n        :Woman ;\n    :hasBirthYear 1971 ;\n    :hasMarriageYear 2010 ;\n    :hasRelation data:Sven_von_Storch .\n\ndata:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Berndt_Detlev_von_Storch a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2004 .\n\ndata:Sven_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Berndt_Detlev_von_Storch ;\n    :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .\n\n"
+    },
+    {
+        "graph_type": "validation_graph",
+        "iteration": 4,
+        "source": "validate_shacl",
+        "tool_call_id": "7e654d8f-1a8c-4bcd-9973-327e295ff5f5",
+        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
     },
     {
         "graph_type": "data_graph",
         "iteration": 5,
-        "source": "post_edits",
-        "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_von_Storch a :Person,\n        :Woman ;\n    :hasBirthYear 1971 ;\n    :hasMarriageYear \"2010\"^^xsd:nonNegativeInteger .\n\ndata:Sven_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Berndt_Detlev_von_Storch ;\n    :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .\n\ndata:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Berndt_Detlev_von_Storch a :Ancestor,\n        :Man ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2004 .\n\n"
-    },
-    {
-        "graph_type": "validation_graph",
-        "iteration": 6,
-        "source": "validate_shacl",
-        "tool_call_id": "5be5c3ca-d858-4e7d-9d54-abcaa0112812",
-        "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
-    },
-    {
-        "graph_type": "data_graph",
-        "iteration": 7,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_von_Storch a :Person,\n        :Woman ;\n    :hasBirthYear 1971 ;\n    :hasMarriageYear \"2010\"^^xsd:nonNegativeInteger .\n\ndata:Sven_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Berndt_Detlev_von_Storch ;\n    :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .\n\ndata:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Berndt_Detlev_von_Storch a :Ancestor,\n        :Man ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2004 .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Beatrix_von_Storch a :Person,\n        :Woman ;\n    :hasBirthYear 1971 ;\n    :hasMarriageYear 2010 ;\n    :hasRelation data:Sven_von_Storch .\n\ndata:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1938 .\n\ndata:Berndt_Detlev_von_Storch a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1930 ;\n    :hasDeathYear 2004 .\n\ndata:Sven_von_Storch a :Man,\n        :Person ;\n    :hasBirthYear 1970 ;\n    :hasFather data:Berndt_Detlev_von_Storch ;\n    :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .\n\n"
     }
 ]

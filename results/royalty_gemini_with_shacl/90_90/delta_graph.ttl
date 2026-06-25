@@ -2,32 +2,31 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexandra_of_Kent a :Person,
+data:Princess_Marina_of_Greece_and_Denmark a :Person,
         :Woman ;
-    :isChildOf data:Prince_George_Duke_of_Kent,
-        data:Princess_Marina_of_Greece_and_Denmark .
-
-data:Edward_Duke_of_Kent a :Man,
-        :Person ;
-    :isChildOf data:Prince_George_Duke_of_Kent,
-        data:Princess_Marina_of_Greece_and_Denmark .
-
-data:Michael_of_Kent a :Man,
-        :Person ;
-    :isChildOf data:Prince_George_Duke_of_Kent,
-        data:Princess_Marina_of_Greece_and_Denmark .
+    :hasBirthYear 1906 ;
+    :hasChild data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :hasDeathYear 1968 ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMarriageYear 1934 ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasRelation data:Prince_George_Duke_of_Kent ;
+    :hasSister data:Princess_Elizabeth,
+        data:Princess_Olga .
 
 data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
         :Person,
         :Woman ;
-    :hasFather data:Grand_Duke_Vladimir_Alexandrovich ;
+    :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
     :hasMother data:Grand_Duchess_Maria_Pavlovna_of_Russia .
 
 data:Grand_Duchess_Maria_Pavlovna_of_Russia a :Ancestor,
         :Person,
         :Woman .
 
-data:Grand_Duke_Vladimir_Alexandrovich a :Ancestor,
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Ancestor,
         :Man,
         :Person .
 
@@ -39,22 +38,25 @@ data:King_George_V a :Ancestor,
         :Man,
         :Person .
 
+data:Prince_George_Duke_of_Kent a :Man,
+        :Person ;
+    :hasChild data:Alexandra_Princess_of_Kent,
+        data:Edward_Duke_of_Kent,
+        data:Michael_Prince_of_Kent ;
+    :hasFather data:King_George_V ;
+    :hasMother data:Queen_Mary .
+
 data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
         :Man,
         :Person ;
     :hasFather data:King_George_I_of_Greece ;
     :hasMother data:Queen_Olga_of_Greece .
 
-data:Prince_Paul_of_Yugoslavia a :Man,
-        :Person .
-
 data:Princess_Elizabeth a :Person,
         :Woman .
 
 data:Princess_Olga a :Person,
-        :Woman ;
-    :hasMarriageYear 1923 ;
-    :hasRelation data:Prince_Paul_of_Yugoslavia .
+        :Woman .
 
 data:Queen_Mary a :Ancestor,
         :Person,
@@ -64,22 +66,12 @@ data:Queen_Olga_of_Greece a :Ancestor,
         :Person,
         :Woman .
 
-data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1906 ;
-    :hasDeathYear 1968 ;
-    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :hasMarriageYear 1934 ;
-    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-    :hasRelation data:Prince_George_Duke_of_Kent ;
-    :isSisterOf data:Princess_Elizabeth,
-        data:Princess_Olga .
+data:Alexandra_Princess_of_Kent a :Person,
+        :Woman .
 
-data:Prince_George_Duke_of_Kent a :Ancestor,
-        :Man,
-        :Person ;
-    :hasDeathYear 1942 ;
-    :hasFather data:King_George_V ;
-    :hasMother data:Queen_Mary .
+data:Edward_Duke_of_Kent a :Man,
+        :Person .
+
+data:Michael_Prince_of_Kent a :Man,
+        :Person .
 

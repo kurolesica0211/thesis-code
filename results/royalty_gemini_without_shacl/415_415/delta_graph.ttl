@@ -2,31 +2,23 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carl-Anton a :Man,
+data:Prince_Frederick_of_Prussia a :Man,
         :Person ;
-    :hasFather data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
-    :hasMother data:Cecilia_von_Goess-Saurau .
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1966 ;
+    :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
+    :hasMarriageYear 1945 ;
+    :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Lady_Brigid_Guinness ;
+    :knownAs "Friedrich von Preussen"^^xsd:string,
+        "George Mansfield"^^xsd:string .
 
-data:Altburg_Marie_Mathilde_von_Oldenburg a :Person,
-        :Woman ;
-    :hasBirthYear 1903 ;
-    :hasDeathYear 2001 .
+data:Crown_Prince_Wilhelm_of_Germany a :Man,
+        :Person .
 
-data:Josias_Georg_Wilhelm_Adolf a :Man,
-        :Person ;
-    :hasBirthYear 1896 ;
-    :hasDeathYear 1967 .
+data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Person,
+        :Woman .
 
-data:Wittekind_Adolf_Heinrich_Georg-Wilhelm a :Man,
-        :Person ;
-    :hasBirthYear 1936 ;
-    :hasDeathYear 2024 ;
-    :hasFather data:Josias_Georg_Wilhelm_Adolf ;
-    :hasMarriageYear 1988 ;
-    :hasMother data:Altburg_Marie_Mathilde_von_Oldenburg ;
-    :hasRelation data:Cecilia_von_Goess-Saurau .
-
-data:Cecilia_von_Goess-Saurau a :Person,
-        :Woman ;
-    :hasBirthYear 1956 .
+data:Lady_Brigid_Guinness a :Person,
+        :Woman .
 

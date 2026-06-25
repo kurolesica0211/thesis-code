@@ -108,6 +108,8 @@ Upon the abdication of Queen Beatrix, which took place on 30 April 2013, the chi
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -123,39 +125,9 @@ Upon the abdication of Queen Beatrix, which took place on 30 April 2013, the chi
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -170,6 +142,23 @@ Upon the abdication of Queen Beatrix, which took place on 30 April 2013, the chi
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -187,6 +176,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -254,29 +258,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -285,6 +281,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -297,6 +301,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -305,17 +311,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -343,6 +351,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -358,116 +450,115 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bb7a85fa-ff6b-4b6d-9035-bc86e15a290c)
- Call ID: bb7a85fa-ff6b-4b6d-9035-bc86e15a290c
+  AssignClass (3eb46169-d66f-473c-8ebf-6ebd70780f49)
+ Call ID: 3eb46169-d66f-473c-8ebf-6ebd70780f49
   Args:
-    source: :Beatrix
+    source: :Princess_Beatrix
+    type: :Woman
+  AssignClass (d0e25a28-4ce3-43c7-bd8a-43ab3ccd240e)
+ Call ID: d0e25a28-4ce3-43c7-bd8a-43ab3ccd240e
+  Args:
+    source: :Princess_Beatrix
     type: :Person
-  AssignClass (526034aa-a4e6-45d2-bacf-b8322663cba0)
- Call ID: 526034aa-a4e6-45d2-bacf-b8322663cba0
+  AssignClass (7cfee230-ae3e-47b2-a61c-62616115a3e6)
+ Call ID: 7cfee230-ae3e-47b2-a61c-62616115a3e6
   Args:
-    type: :Female
-    source: :Beatrix
-  AssignClass (50dbc4b9-34b0-4343-b8f2-40dd1d92db0d)
- Call ID: 50dbc4b9-34b0-4343-b8f2-40dd1d92db0d
+    source: :Princess_Margriet
+    type: :Woman
+  AssignClass (4f17cead-cd1d-459a-886d-b77e2c1618e8)
+ Call ID: 4f17cead-cd1d-459a-886d-b77e2c1618e8
   Args:
+    source: :Princess_Margriet
     type: :Person
-    source: :Margriet
-  AssignClass (b3d07a04-238b-41ae-b731-1ad5fa650b73)
- Call ID: b3d07a04-238b-41ae-b731-1ad5fa650b73
-  Args:
-    type: :Female
-    source: :Margriet
-  AssignClass (7c9e0065-299c-4c44-bdd8-bec5d375974e)
- Call ID: 7c9e0065-299c-4c44-bdd8-bec5d375974e
-  Args:
-    source: :Pieter_van_Vollenhoven
-    type: :Person
-  AssignClass (051dcce5-6206-480e-8a4d-abd50d30250c)
- Call ID: 051dcce5-6206-480e-8a4d-abd50d30250c
+  AssignClass (b4983806-dd8a-4f96-be4d-ec8f461d8146)
+ Call ID: b4983806-dd8a-4f96-be4d-ec8f461d8146
   Args:
     source: :Pieter_van_Vollenhoven
     type: :Man
-  AssignClass (a86644ce-f5e2-4fd9-8fcc-58806e391c2e)
- Call ID: a86644ce-f5e2-4fd9-8fcc-58806e391c2e
+  AssignClass (99055b0a-2a91-4d14-81c6-d950ce64fba8)
+ Call ID: 99055b0a-2a91-4d14-81c6-d950ce64fba8
   Args:
-    source: :Eloise_van_Oranje
+    source: :Pieter_van_Vollenhoven
     type: :Person
-  AssignClass (891bcd86-bed6-4145-b762-42c7119faba7)
- Call ID: 891bcd86-bed6-4145-b762-42c7119faba7
+  AssignClass (9abccab7-7dfc-4dab-bedf-6e3a6370c7d9)
+ Call ID: 9abccab7-7dfc-4dab-bedf-6e3a6370c7d9
   Args:
-    type: :Female
-    source: :Eloise_van_Oranje
-  AssignClass (76433d2e-755a-4446-86e7-2dfa0f73aabf)
- Call ID: 76433d2e-755a-4446-86e7-2dfa0f73aabf
+    source: :Countess_Eloise_of_Orange-Nassau
+    type: :Woman
+  AssignClass (aeaa734e-caf2-43ed-9e3f-e5410c439dac)
+ Call ID: aeaa734e-caf2-43ed-9e3f-e5410c439dac
   Args:
-    source: :Constantijn
+    source: :Countess_Eloise_of_Orange-Nassau
     type: :Person
-  AssignClass (8bae49bd-49bf-4502-9b7d-5d0d15c77589)
- Call ID: 8bae49bd-49bf-4502-9b7d-5d0d15c77589
+  AssignClass (ad9e6620-c5a0-4ce8-99e8-640746043cf4)
+ Call ID: ad9e6620-c5a0-4ce8-99e8-640746043cf4
   Args:
+    source: :Prince_Constantijn
     type: :Man
-    source: :Constantijn
-  AssignClass (93009b8c-2ae5-4151-bafd-337945baac93)
- Call ID: 93009b8c-2ae5-4151-bafd-337945baac93
+  AssignClass (7c3e0609-025e-42f8-92be-a0d69c1b33f0)
+ Call ID: 7c3e0609-025e-42f8-92be-a0d69c1b33f0
   Args:
-    source: :Laurentien
+    source: :Prince_Constantijn
     type: :Person
-  AssignClass (4e46684a-7a75-4092-922d-42f98a1be03c)
- Call ID: 4e46684a-7a75-4092-922d-42f98a1be03c
+  AssignClass (863013e0-a1c8-4743-ad24-751a214a2c0b)
+ Call ID: 863013e0-a1c8-4743-ad24-751a214a2c0b
   Args:
-    type: :Female
-    source: :Laurentien
-  AssignClass (6ff5cf16-f42a-44d9-9a2f-f21def1dd3ae)
- Call ID: 6ff5cf16-f42a-44d9-9a2f-f21def1dd3ae
+    source: :Princess_Laurentien
+    type: :Woman
+  AssignClass (8639c174-f5ef-4e9e-ad10-9fb4f989ed7e)
+ Call ID: 8639c174-f5ef-4e9e-ad10-9fb4f989ed7e
   Args:
+    source: :Princess_Laurentien
     type: :Person
-    source: :Claus
-  AssignClass (d8de0ebc-a38d-44ce-90cd-94a665c733d4)
- Call ID: d8de0ebc-a38d-44ce-90cd-94a665c733d4
+  AssignClass (e2afb2ce-b2c1-414c-bc8b-5f61714b409d)
+ Call ID: e2afb2ce-b2c1-414c-bc8b-5f61714b409d
   Args:
+    source: :Prince_Claus
     type: :Man
-    source: :Claus
-  AddLiteral (238818c7-f306-4a2b-992f-eb9f744ad261)
- Call ID: 238818c7-f306-4a2b-992f-eb9f744ad261
+  AssignClass (a0bcbd2e-be9b-43e1-b970-401463f7aec2)
+ Call ID: a0bcbd2e-be9b-43e1-b970-401463f7aec2
   Args:
-    literal_type: xsd:integer
-    source: :Eloise_van_Oranje
+    source: :Prince_Claus
+    type: :Person
+  AddTriple (d2b18f7e-5de1-44f9-a726-22e111506f54)
+ Call ID: d2b18f7e-5de1-44f9-a726-22e111506f54
+  Args:
+    source: :Countess_Eloise_of_Orange-Nassau
+    relation: :hasMother
+    target: :Princess_Laurentien
+  AddTriple (5a3da677-09f2-4a1e-9158-eec0feb1207e)
+ Call ID: 5a3da677-09f2-4a1e-9158-eec0feb1207e
+  Args:
+    target: :Prince_Constantijn
+    source: :Countess_Eloise_of_Orange-Nassau
+    relation: :hasFather
+  AddTriple (d2496edd-1ca8-4d91-a864-f3d76ec77183)
+ Call ID: d2496edd-1ca8-4d91-a864-f3d76ec77183
+  Args:
+    target: :Princess_Beatrix
+    source: :Prince_Constantijn
+    relation: :hasMother
+  AddTriple (38ea2ca3-70a8-4110-827b-6b14778a8d49)
+ Call ID: 38ea2ca3-70a8-4110-827b-6b14778a8d49
+  Args:
+    relation: :hasFather
+    source: :Prince_Constantijn
+    target: :Prince_Claus
+  AddLiteral (99adb212-a819-4875-a4ac-f6069baaa190)
+ Call ID: 99adb212-a819-4875-a4ac-f6069baaa190
+  Args:
     literal_value: 2002
     relation: :hasBirthYear
-  AddTriple (14bd1ea4-6f1f-4cc6-be47-386258007248)
- Call ID: 14bd1ea4-6f1f-4cc6-be47-386258007248
+    source: :Countess_Eloise_of_Orange-Nassau
+    literal_type: xsd:integer
+  AddTriple (940acbbc-088e-49bd-bb2b-fed13492930a)
+ Call ID: 940acbbc-088e-49bd-bb2b-fed13492930a
   Args:
-    relation: :hasFather
-    source: :Eloise_van_Oranje
-    target: :Constantijn
-  AddTriple (f263e904-2ee3-4239-b3a6-311b23289312)
- Call ID: f263e904-2ee3-4239-b3a6-311b23289312
-  Args:
-    relation: :hasMother
-    source: :Eloise_van_Oranje
-    target: :Laurentien
-  AddTriple (8de411c7-1fb3-4e42-b26c-34fb125ae6d3)
- Call ID: 8de411c7-1fb3-4e42-b26c-34fb125ae6d3
-  Args:
-    target: :Claus
-    relation: :hasFather
-    source: :Eloise_van_Oranje
-  AddTriple (8ab7e088-a673-42fd-99f7-e256d0217da5)
- Call ID: 8ab7e088-a673-42fd-99f7-e256d0217da5
-  Args:
-    relation: :hasMother
-    source: :Eloise_van_Oranje
-    target: :Beatrix
-  AddLiteral (5f8ab3df-c53b-4b8e-af8a-bda4c9b11bc1)
- Call ID: 5f8ab3df-c53b-4b8e-af8a-bda4c9b11bc1
-  Args:
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    literal_value: Eloise van Oranje
-    source: :Eloise_van_Oranje
-  Finish (99593e5c-4865-4343-b18b-958e8eb19b52)
- Call ID: 99593e5c-4865-4343-b18b-958e8eb19b52
+    target: :Eloise_van_Oranje
+    source: :Countess_Eloise_of_Orange-Nassau
+    relation: :knownAs
+  Finish (d236efe7-accf-4efd-9c54-0f705b00e70b)
+ Call ID: d236efe7-accf-4efd-9c54-0f705b00e70b
   Args:
 
 ================================= Tool Message =================================
@@ -553,32 +644,32 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Eloise_van_Oranje a :Female,
-          :Person ;
-      :alsoKnownAs "Eloise van Oranje"^^xsd:string ;
+  data:Countess_Eloise_of_Orange-Nassau a :Person,
+          :Woman ;
       :hasBirthYear 2002 ;
-      :hasFather data:Claus,
-          data:Constantijn ;
-      :hasMother data:Beatrix,
-          data:Laurentien .
-
-  data:Margriet a :Female,
-          :Person .
+      :hasFather data:Prince_Constantijn ;
+      :hasMother data:Princess_Laurentien ;
+      :knownAs data:Eloise_van_Oranje .
 
   data:Pieter_van_Vollenhoven a :Man,
           :Person .
 
-  data:Beatrix a :Female,
+  data:Princess_Margriet a :Person,
+          :Woman .
+
+  data:Prince_Claus a :Man,
           :Person .
 
-  data:Claus a :Man,
-          :Person .
+  data:Prince_Constantijn a :Man,
+          :Person ;
+      :hasFather data:Prince_Claus ;
+      :hasMother data:Princess_Beatrix .
 
-  data:Constantijn a :Man,
-          :Person .
+  data:Princess_Beatrix a :Person,
+          :Woman .
 
-  data:Laurentien a :Female,
-          :Person .
+  data:Princess_Laurentien a :Person,
+          :Woman .
 
 
 
@@ -590,302 +681,110 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (aa8735cc-81cc-4296-8c79-358869342e12)
- Call ID: aa8735cc-81cc-4296-8c79-358869342e12
+  ValidateShacl (c7f15b0b-ed6a-43d6-8809-fec5838d6bfe)
+ Call ID: c7f15b0b-ed6a-43d6-8809-fec5838d6bfe
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:36
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Node data:Eloise_van_Oranje is closed. It cannot have value: data:Claus
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' is a closed shape and cannot have the property 'hasFather' with the value 'Claus'.
+      The node Prince_Claus is missing the required :Ancestor class assignment to satisfy the range constraint for the hasFather property of Prince_Constantijn.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasFather, Claus)
+      AssignClass(node='Prince_Claus', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Node data:Eloise_van_Oranje is closed. It cannot have value: data:Constantijn
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' is a closed shape and cannot have the property 'hasFather' with the value 'Constantijn'.
+      The node Princess_Beatrix is missing the required :Ancestor class assignment to satisfy the range constraint for the hasMother property of Prince_Constantijn.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasFather, Constantijn)
+      AssignClass(node='Princess_Beatrix', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Node data:Eloise_van_Oranje is closed. It cannot have value: data:Beatrix
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' is a closed shape and cannot have the property 'hasMother' with the value 'Beatrix'.
+      The node Prince_Constantijn is missing the required :Ancestor class assignment to satisfy the range constraint for the hasFather property of Countess_Eloise_of_Orange-Nassau.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Beatrix)
+      AssignClass(node='Prince_Constantijn', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Node data:Eloise_van_Oranje is closed. It cannot have value: data:Laurentien
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' is a closed shape and cannot have the property 'hasMother' with the value 'Laurentien'.
+      The node Prince_Claus is missing the required :Ancestor class assignment to satisfy the range constraint for the hasFather property of Prince_Constantijn.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Laurentien)
+      AssignClass(node='Prince_Claus', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Class disjointness violation.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Laurentien' is assigned both ':Person' and ':Female', but these classes are defined as disjoint.
+      The node Princess_Laurentien is missing the required :Ancestor class assignment to satisfy the range constraint for the hasMother property of Countess_Eloise_of_Orange-Nassau.
     LLM-provided instruction on how to handle the violation:
-      UnassignClass(Laurentien, Female)
+      AssignClass(node='Princess_Laurentien', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Class disjointness violation.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Margriet' is assigned both ':Person' and ':Female', but these classes are defined as disjoint.
+      The node Princess_Beatrix is missing the required :Ancestor class assignment to satisfy the range constraint for the hasMother property of Prince_Constantijn.
     LLM-provided instruction on how to handle the violation:
-      UnassignClass(Margriet, Female)
+      AssignClass(node='Princess_Beatrix', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Class disjointness violation.
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Beatrix' is assigned both ':Person' and ':Female', but these classes are defined as disjoint.
+      The node Prince_Constantijn is missing the required :Ancestor class assignment to satisfy the range constraint for the hasFather property of Countess_Eloise_of_Orange-Nassau.
     LLM-provided instruction on how to handle the violation:
-      UnassignClass(Beatrix, Female)
+      AssignClass(node='Prince_Constantijn', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Class disjointness violation.
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' is assigned both ':Person' and ':Female', but these classes are defined as disjoint.
+      The node Prince_Claus is missing the required :Ancestor class assignment to satisfy the range constraint for the hasFather property of Prince_Constantijn.
     LLM-provided instruction on how to handle the violation:
-      UnassignClass(Eloise_van_Oranje, Female)
+      AssignClass(node='Prince_Claus', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Node data:Eloise_van_Oranje is closed. It cannot have value: data:Claus
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' is a closed shape and cannot have the property 'hasFather' with the value 'Claus'.
+      The node Princess_Laurentien is missing the required :Ancestor class assignment to satisfy the range constraint for the hasMother property of Countess_Eloise_of_Orange-Nassau.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasFather, Claus)
+      AssignClass(node='Princess_Laurentien', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Node data:Eloise_van_Oranje is closed. It cannot have value: data:Constantijn
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' is a closed shape and cannot have the property 'hasFather' with the value 'Constantijn'.
+      The node Princess_Beatrix is missing the required :Ancestor class assignment to satisfy the range constraint for the hasMother property of Prince_Constantijn.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasFather, Constantijn)
+      AssignClass(node='Princess_Beatrix', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Node data:Eloise_van_Oranje is closed. It cannot have value: data:Beatrix
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' is a closed shape and cannot have the property 'hasMother' with the value 'Beatrix'.
+      The node Prince_Constantijn is missing the required :Ancestor class assignment to satisfy the range constraint for the hasFather property of Countess_Eloise_of_Orange-Nassau.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Beatrix)
+      AssignClass(node='Prince_Constantijn', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Node data:Eloise_van_Oranje is closed. It cannot have value: data:Laurentien
-    LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' is a closed shape and cannot have the property 'hasMother' with the value 'Laurentien'.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Laurentien)
-
-
-  Violation [13]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Margriet' has a class disjointness violation.
-    LLM-provided instruction on how to handle the violation:
-      UnassignClass(Margriet, Female)
-
-
-  Violation [14]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Laurentien' has a class disjointness violation.
-    LLM-provided instruction on how to handle the violation:
-      UnassignClass(Laurentien, Female)
-
-
-  Violation [15]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Beatrix' has a class disjointness violation.
-    LLM-provided instruction on how to handle the violation:
-      UnassignClass(Beatrix, Female)
-
-
-  Violation [16]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' has a class disjointness violation.
-    LLM-provided instruction on how to handle the violation:
-      UnassignClass(Eloise_van_Oranje, Female)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Constantijn' for 'hasFather' at 'Eloise_van_Oranje' does not match the required class constraints.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasFather, Constantijn)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Claus' for 'hasFather' at 'Eloise_van_Oranje' does not match the required class constraints.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasFather, Claus)
-
-
-  Violation [19]:
-    SHACL message: More than 1 values on data:Eloise_van_Oranje->:hasFather
-    LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' exceeds the maximum count of 1 for the 'hasFather' property.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasFather, Constantijn)
-
-
-  Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Laurentien' for 'hasMother' at 'Eloise_van_Oranje' does not match the required class constraints.
+      The node Princess_Laurentien is missing the required :Ancestor class assignment to satisfy the range constraint for the hasMother property of Countess_Eloise_of_Orange-Nassau.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Laurentien)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Beatrix' for 'hasMother' at 'Eloise_van_Oranje' does not match the required class constraints.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Beatrix)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Laurentien' for 'hasMother' at 'Eloise_van_Oranje' does not match the required class constraints.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Laurentien)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Beatrix' for 'hasMother' at 'Eloise_van_Oranje' does not match the required class constraints.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Beatrix)
-
-
-  Violation [24]:
-    SHACL message: More than 1 values on data:Eloise_van_Oranje->:hasMother
-    LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' exceeds the maximum count of 1 for the 'hasMother' property.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Laurentien)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Constantijn' for 'hasFather' at 'Eloise_van_Oranje' does not match the required class constraints.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasFather, Constantijn)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Claus' for 'hasFather' at 'Eloise_van_Oranje' does not match the required class constraints.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasFather, Claus)
-
-
-  Violation [27]:
-    SHACL message: More than 1 values on data:Eloise_van_Oranje->:hasFather
-    LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' exceeds the maximum count of 1 for the 'hasFather' property.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasFather, Constantijn)
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Laurentien' for 'hasMother' at 'Eloise_van_Oranje' does not match the required class constraints.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Laurentien)
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Beatrix' for 'hasMother' at 'Eloise_van_Oranje' does not match the required class constraints.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Beatrix)
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Laurentien' for 'hasMother' at 'Eloise_van_Oranje' does not match the required class constraints.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Laurentien)
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Beatrix' for 'hasMother' at 'Eloise_van_Oranje' does not match the required class constraints.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Beatrix)
-
-
-  Violation [32]:
-    SHACL message: More than 1 values on data:Eloise_van_Oranje->:hasMother
-    LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' exceeds the maximum count of 1 for the 'hasMother' property.
-    LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Eloise_van_Oranje, hasMother, Laurentien)
-
-
-  Violation [33]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Laurentien' is assigned to both ':Person' and ':Female', which are disjoint.
-    LLM-provided instruction on how to handle the violation:
-      UnassignClass(Laurentien, Female)
-
-
-  Violation [34]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Margriet' is assigned to both ':Person' and ':Female', which are disjoint.
-    LLM-provided instruction on how to handle the violation:
-      UnassignClass(Margriet, Female)
-
-
-  Violation [35]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Beatrix' is assigned to both ':Person' and ':Female', which are disjoint.
-    LLM-provided instruction on how to handle the violation:
-      UnassignClass(Beatrix, Female)
-
-
-  Violation [36]:
-    SHACL message: Class disjointness violation.
-    LLM-provided explanation of the violation:
-      The node 'Eloise_van_Oranje' is assigned to both ':Person' and ':Female', which are disjoint.
-    LLM-provided instruction on how to handle the violation:
-      UnassignClass(Eloise_van_Oranje, Female)
+      AssignClass(node='Princess_Laurentien', class=':Ancestor')
 
 
 
@@ -894,49 +793,29 @@ Violations:
 
 []
 Tool Calls:
-  RemoveTriple (5ab9e39e-18f2-440c-906d-cb3ec65fe50a)
- Call ID: 5ab9e39e-18f2-440c-906d-cb3ec65fe50a
+  AssignClass (d21eca89-8ef3-4aac-be9e-033df52505c6)
+ Call ID: d21eca89-8ef3-4aac-be9e-033df52505c6
   Args:
-    relation: :hasFather
-    source: :Eloise_van_Oranje
-    target: :Claus
-  RemoveTriple (b9d8f206-7b91-494e-819d-2bd4984e2f26)
- Call ID: b9d8f206-7b91-494e-819d-2bd4984e2f26
+    source: :Prince_Claus
+    type: :Ancestor
+  AssignClass (b85584c8-1851-44f5-94d2-c0933a837e73)
+ Call ID: b85584c8-1851-44f5-94d2-c0933a837e73
   Args:
-    relation: :hasMother
-    source: :Eloise_van_Oranje
-    target: :Beatrix
-  UnassignClass (048d9320-0571-463f-8bfb-937398b958b5)
- Call ID: 048d9320-0571-463f-8bfb-937398b958b5
+    source: :Princess_Beatrix
+    type: :Ancestor
+  AssignClass (02561935-1031-4336-8e5f-b93fbf60a5a5)
+ Call ID: 02561935-1031-4336-8e5f-b93fbf60a5a5
   Args:
-    type: :Female
-    source: :Laurentien
-  UnassignClass (24303874-f475-499d-8d01-b0214df57e0f)
- Call ID: 24303874-f475-499d-8d01-b0214df57e0f
+    type: :Ancestor
+    source: :Prince_Constantijn
+  AssignClass (a8fefd4d-3c15-4d63-bb98-d41bd5b04a5b)
+ Call ID: a8fefd4d-3c15-4d63-bb98-d41bd5b04a5b
   Args:
-    type: :Female
-    source: :Margriet
-  UnassignClass (4aada48e-7831-4ab2-b370-fc2228ec2efa)
- Call ID: 4aada48e-7831-4ab2-b370-fc2228ec2efa
+    type: :Ancestor
+    source: :Princess_Laurentien
+  Finish (86eded56-3fc8-47d7-bc20-d91ffd2c4de7)
+ Call ID: 86eded56-3fc8-47d7-bc20-d91ffd2c4de7
   Args:
-    source: :Beatrix
-    type: :Female
-  UnassignClass (73c32f53-4335-4308-b7fc-723b82ab57fc)
- Call ID: 73c32f53-4335-4308-b7fc-723b82ab57fc
-  Args:
-    type: :Female
-    source: :Eloise_van_Oranje
-  Finish (b2f2eb50-fcee-4868-adc1-6cff1eef4ee6)
- Call ID: b2f2eb50-fcee-4868-adc1-6cff1eef4ee6
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -957,156 +836,34 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Beatrix a :Person .
-
-  data:Claus a :Man,
-          :Person .
-
-  data:Eloise_van_Oranje a :Person ;
-      :alsoKnownAs "Eloise van Oranje"^^xsd:string ;
+  data:Countess_Eloise_of_Orange-Nassau a :Person,
+          :Woman ;
       :hasBirthYear 2002 ;
-      :hasFather data:Constantijn ;
-      :hasMother data:Laurentien .
-
-  data:Margriet a :Person .
+      :hasFather data:Prince_Constantijn ;
+      :hasMother data:Princess_Laurentien ;
+      :knownAs data:Eloise_van_Oranje .
 
   data:Pieter_van_Vollenhoven a :Man,
           :Person .
 
-  data:Constantijn a :Man,
-          :Person .
+  data:Princess_Margriet a :Person,
+          :Woman .
 
-  data:Laurentien a :Person .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (84769a81-9d16-4780-988f-bdcccbb435f6)
- Call ID: 84769a81-9d16-4780-988f-bdcccbb435f6
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:6
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Constantijn' is assigned as the father of 'Eloise_van_Oranje' via the property 'hasFather', but it is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Man' to the node 'Constantijn'.
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Laurentien' is assigned as the mother of 'Eloise_van_Oranje' via the property 'hasMother', but it is missing the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Woman' to the node 'Laurentien'.
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Laurentien' is assigned as the mother of 'Eloise_van_Oranje' via the property 'hasMother', but it is missing the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Ancestor' to the node 'Laurentien'.
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Constantijn' is assigned as the father of 'Eloise_van_Oranje' via the property 'hasFather', but it is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Ancestor' to the node 'Constantijn'.
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Laurentien' is assigned as the mother of 'Eloise_van_Oranje' via the property 'hasMother', but it is missing the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Woman' to the node 'Laurentien'.
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Laurentien' is assigned as the mother of 'Eloise_van_Oranje' via the property 'hasMother', but it is missing the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Ancestor' to the node 'Laurentien'.
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (abfa3646-5d59-4a61-a866-2bed29a583d7)
- Call ID: abfa3646-5d59-4a61-a866-2bed29a583d7
-  Args:
-    type: :Ancestor
-    source: :Constantijn
-  AssignClass (ab1ce503-7002-451a-821f-2807c56525a2)
- Call ID: ab1ce503-7002-451a-821f-2807c56525a2
-  Args:
-    type: :Ancestor
-    source: :Laurentien
-  AssignClass (dd36b47d-1e8a-415a-8150-309ea5298006)
- Call ID: dd36b47d-1e8a-415a-8150-309ea5298006
-  Args:
-    source: :Laurentien
-    type: :Woman
-  Finish (5254c578-0f70-4cd1-a2b3-2a42908272e5)
- Call ID: 5254c578-0f70-4cd1-a2b3-2a42908272e5
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Beatrix a :Person .
-
-  data:Claus a :Man,
-          :Person .
-
-  data:Eloise_van_Oranje a :Person ;
-      :alsoKnownAs "Eloise van Oranje"^^xsd:string ;
-      :hasBirthYear 2002 ;
-      :hasFather data:Constantijn ;
-      :hasMother data:Laurentien .
-
-  data:Margriet a :Person .
-
-  data:Pieter_van_Vollenhoven a :Man,
-          :Person .
-
-  data:Constantijn a :Ancestor,
+  data:Prince_Claus a :Ancestor,
           :Man,
           :Person .
 
-  data:Laurentien a :Ancestor,
+  data:Prince_Constantijn a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Prince_Claus ;
+      :hasMother data:Princess_Beatrix .
+
+  data:Princess_Beatrix a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Princess_Laurentien a :Ancestor,
           :Person,
           :Woman .
 
@@ -1120,8 +877,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (a33bb930-3eda-421a-9ad5-0862c579650e)
- Call ID: a33bb930-3eda-421a-9ad5-0862c579650e
+  ValidateShacl (03c8de0a-b3fc-41fe-a2b0-6f473a1e1b88)
+ Call ID: 03c8de0a-b3fc-41fe-a2b0-6f473a1e1b88
   Args:
 
 ================================= Tool Message =================================
@@ -1132,6 +889,42 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (cf4ad73c-eee2-47d6-a7dd-3ee0c9dba4ce)
- Call ID: cf4ad73c-eee2-47d6-a7dd-3ee0c9dba4ce
+  Finish (8f213235-7a65-4d24-8c61-b496d2e93f0f)
+ Call ID: 8f213235-7a65-4d24-8c61-b496d2e93f0f
+  Args:
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Eloise_van_Oranje']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (e52260f7-d76c-42eb-b6f4-3964f46b2f17)
+ Call ID: e52260f7-d76c-42eb-b6f4-3964f46b2f17
+  Args:
+    source: :Eloise_van_Oranje
+    type: :Person
+  AssignClass (3c869066-6c9f-4763-8dda-174607aed20f)
+ Call ID: 3c869066-6c9f-4763-8dda-174607aed20f
+  Args:
+    source: :Eloise_van_Oranje
+    type: :Woman
+  Finish (9078dd7c-5238-4ca8-a1f2-4abeabc65d77)
+ Call ID: 9078dd7c-5238-4ca8-a1f2-4abeabc65d77
   Args:

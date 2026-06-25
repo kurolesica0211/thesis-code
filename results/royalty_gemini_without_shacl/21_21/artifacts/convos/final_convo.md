@@ -94,6 +94,8 @@ From 2010 to 2014, Mountbatten was in an extramarital relationship with Eugenie,
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -109,39 +111,9 @@ From 2010 to 2014, Mountbatten was in an extramarital relationship with Eugenie,
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -156,6 +128,23 @@ From 2010 to 2014, Mountbatten was in an extramarital relationship with Eugenie,
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -173,6 +162,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -240,29 +244,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,6 +267,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -283,6 +287,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -291,17 +297,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -329,6 +337,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -344,217 +436,223 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (6701256a-ae24-48c6-958c-1d5147bb1a54)
- Call ID: 6701256a-ae24-48c6-958c-1d5147bb1a54
+  AssignClass (85269f66-2e21-4606-af7c-96ca4f17b8c9)
+ Call ID: 85269f66-2e21-4606-af7c-96ca4f17b8c9
   Args:
-    source: :Norton_Louis_Philip_Knatchbull
+    source: Norton_Louis_Philip_Knatchbull
     type: :Man
-  AssignClass (dcf28a17-ef6a-4d30-a228-211cf9cbebb1)
- Call ID: dcf28a17-ef6a-4d30-a228-211cf9cbebb1
+  AssignClass (cbac113b-c9d5-414b-8542-47935900b80b)
+ Call ID: cbac113b-c9d5-414b-8542-47935900b80b
   Args:
+    source: Norton_Louis_Philip_Knatchbull
     type: :Person
-    source: :Norton_Louis_Philip_Knatchbull
-  AddLiteral (a4315f8c-0927-4ead-acde-0f16e7efa27e)
- Call ID: a4315f8c-0927-4ead-acde-0f16e7efa27e
+  AddLiteral (86ed26a8-d0e3-4c1a-882a-4c92919b1de2)
+ Call ID: 86ed26a8-d0e3-4c1a-882a-4c92919b1de2
   Args:
-    source: :Norton_Louis_Philip_Knatchbull
+    literal_type: xsd:integer
+    source: Norton_Louis_Philip_Knatchbull
+    relation: :hasBirthYear
     literal_value: 1947
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (e9f4eb57-3fd0-4212-9f3d-292600ffb36b)
- Call ID: e9f4eb57-3fd0-4212-9f3d-292600ffb36b
+  AddLiteral (396050ed-2b3b-412c-8edd-bc7d840994ff)
+ Call ID: 396050ed-2b3b-412c-8edd-bc7d840994ff
   Args:
-    relation: :formerlyKnownAs
-    source: :Norton_Louis_Philip_Knatchbull
     literal_value: Lord Romsey
-    literal_type: xsd:string
-  AddLiteral (905ac643-b6e1-4598-a21e-9535d527061f)
- Call ID: 905ac643-b6e1-4598-a21e-9535d527061f
-  Args:
+    source: Norton_Louis_Philip_Knatchbull
     relation: :formerlyKnownAs
     literal_type: xsd:string
-    source: :Norton_Louis_Philip_Knatchbull
+  AddLiteral (a4457292-4dd5-42d2-9d69-82b2af81b5ee)
+ Call ID: a4457292-4dd5-42d2-9d69-82b2af81b5ee
+  Args:
+    relation: :formerlyKnownAs
+    source: Norton_Louis_Philip_Knatchbull
     literal_value: Lord Brabourne
-  AssignClass (d5185451-dcd4-4b58-9e96-8050fec65e10)
- Call ID: d5185451-dcd4-4b58-9e96-8050fec65e10
+    literal_type: xsd:string
+  AssignClass (2743c636-6caf-4a71-890f-3855f52b993f)
+ Call ID: 2743c636-6caf-4a71-890f-3855f52b993f
   Args:
-    source: :Patricia_Knatchbull
     type: :Woman
-  AssignClass (db88fbc8-103b-4a20-a15e-9f38703c85b2)
- Call ID: db88fbc8-103b-4a20-a15e-9f38703c85b2
+    source: Patricia_Knatchbull
+  AssignClass (9bf428ed-62ae-4775-9916-90436424d586)
+ Call ID: 9bf428ed-62ae-4775-9916-90436424d586
   Args:
-    source: :Patricia_Knatchbull
+    source: Patricia_Knatchbull
     type: :Person
-  AssignClass (4f2feefb-e93b-4225-b17c-20ffb73378c7)
- Call ID: 4f2feefb-e93b-4225-b17c-20ffb73378c7
+  AssignClass (2649b411-50f1-4a18-8269-83928b5cbd87)
+ Call ID: 2649b411-50f1-4a18-8269-83928b5cbd87
   Args:
     type: :Man
-    source: :John_Knatchbull
-  AssignClass (9cbf848e-1d94-496e-8d3f-8a8ecf79db37)
- Call ID: 9cbf848e-1d94-496e-8d3f-8a8ecf79db37
+    source: John_Knatchbull
+  AssignClass (7f838426-dbd1-45dc-a392-7a73ce9c2846)
+ Call ID: 7f838426-dbd1-45dc-a392-7a73ce9c2846
   Args:
-    source: :John_Knatchbull
     type: :Person
-  AddTriple (b20e3b63-02f4-488b-97fc-ecf0108c3823)
- Call ID: b20e3b63-02f4-488b-97fc-ecf0108c3823
+    source: John_Knatchbull
+  AddTriple (57168284-f062-4848-982e-f551a53f2465)
+ Call ID: 57168284-f062-4848-982e-f551a53f2465
   Args:
-    target: :John_Knatchbull
-    source: :Norton_Louis_Philip_Knatchbull
-    relation: :hasFather
-  AddTriple (ee94bb53-53a6-4332-bf45-c82cd71daed3)
- Call ID: ee94bb53-53a6-4332-bf45-c82cd71daed3
-  Args:
-    source: :Norton_Louis_Philip_Knatchbull
+    target: Patricia_Knatchbull
     relation: :hasMother
-    target: :Patricia_Knatchbull
-  AssignClass (d4ee4943-bc86-4bd8-be00-f4ee07053ee0)
- Call ID: d4ee4943-bc86-4bd8-be00-f4ee07053ee0
+    source: Norton_Louis_Philip_Knatchbull
+  AddTriple (5fcbc2b4-31b7-4beb-bde0-854e61eb5dc7)
+ Call ID: 5fcbc2b4-31b7-4beb-bde0-854e61eb5dc7
   Args:
-    source: :Penelope_Meredith_Eastwood
-    type: :Woman
-  AssignClass (62f85331-a3e5-44ab-b5b3-9688a3d4e5fe)
- Call ID: 62f85331-a3e5-44ab-b5b3-9688a3d4e5fe
+    source: Norton_Louis_Philip_Knatchbull
+    target: John_Knatchbull
+    relation: :hasFather
+  AddLiteral (c41776ed-d90e-405a-bb49-f876bc663cf9)
+ Call ID: c41776ed-d90e-405a-bb49-f876bc663cf9
   Args:
-    type: :Person
-    source: :Penelope_Meredith_Eastwood
-  AddLiteral (ffb9f3f6-a100-4e46-be67-32064549153e)
- Call ID: ffb9f3f6-a100-4e46-be67-32064549153e
-  Args:
-    relation: :hasBirthYear
     literal_type: xsd:integer
-    source: :Penelope_Meredith_Eastwood
-    literal_value: 1953
-  AddLiteral (e428d1f2-9ef9-47e1-80f2-7cd99ecf4252)
- Call ID: e428d1f2-9ef9-47e1-80f2-7cd99ecf4252
+    relation: :hasDeathYear
+    source: John_Knatchbull
+    literal_value: 2005
+  AddLiteral (85a7ebe3-09fc-43f7-9e94-ea1b38c89919)
+ Call ID: 85a7ebe3-09fc-43f7-9e94-ea1b38c89919
   Args:
+    source: Patricia_Knatchbull
+    relation: :hasDeathYear
+    literal_value: 2017
+    literal_type: xsd:integer
+  AssignClass (d2959a26-729e-44a0-858b-d5689ce5a1ad)
+ Call ID: d2959a26-729e-44a0-858b-d5689ce5a1ad
+  Args:
+    source: Louis_Mountbatten
+    type: :Man
+  AssignClass (8e8400ba-6d2e-4dcf-b5e3-06fbaff3c56b)
+ Call ID: 8e8400ba-6d2e-4dcf-b5e3-06fbaff3c56b
+  Args:
+    source: Louis_Mountbatten
+    type: :Person
+  AddTriple (54815bc7-77ee-4ee6-a8f4-54c122bfc7ed)
+ Call ID: 54815bc7-77ee-4ee6-a8f4-54c122bfc7ed
+  Args:
+    target: Louis_Mountbatten
+    relation: :hasFather
+    source: Patricia_Knatchbull
+  AssignClass (e65956a8-22dc-4647-bda1-54538d9424d5)
+ Call ID: e65956a8-22dc-4647-bda1-54538d9424d5
+  Args:
+    type: :Man
+    source: Nicholas_Knatchbull
+  AssignClass (fe18ac03-9ff4-473b-be73-7269063e59f4)
+ Call ID: fe18ac03-9ff4-473b-be73-7269063e59f4
+  Args:
+    source: Nicholas_Knatchbull
+    type: :Person
+  AddTriple (c2161399-fdc1-400f-b755-3c5d30a37065)
+ Call ID: c2161399-fdc1-400f-b755-3c5d30a37065
+  Args:
+    source: Norton_Louis_Philip_Knatchbull
+    relation: :hasBrother
+    target: Nicholas_Knatchbull
+  AssignClass (3c309814-5a17-48c2-b574-80faf6653c91)
+ Call ID: 3c309814-5a17-48c2-b574-80faf6653c91
+  Args:
+    type: :Woman
+    source: Doreen_Knatchbull
+  AssignClass (97f9d540-f9ca-4854-a213-45f5c10f8385)
+ Call ID: 97f9d540-f9ca-4854-a213-45f5c10f8385
+  Args:
+    source: Doreen_Knatchbull
+    type: :Person
+  AddTriple (081471d3-2fc8-47d4-88fb-40464a973a49)
+ Call ID: 081471d3-2fc8-47d4-88fb-40464a973a49
+  Args:
+    target: Doreen_Knatchbull
+    relation: :hasMother
+    source: John_Knatchbull
+  AssignClass (6284907f-b172-49fd-a35b-71986f88a736)
+ Call ID: 6284907f-b172-49fd-a35b-71986f88a736
+  Args:
+    source: Penelope_Meredith_Eastwood
+    type: :Woman
+  AssignClass (598878a0-33cc-41e6-abcd-224feb3ebcd1)
+ Call ID: 598878a0-33cc-41e6-abcd-224feb3ebcd1
+  Args:
+    source: Penelope_Meredith_Eastwood
+    type: :Person
+  AddLiteral (7a354ef1-6122-4a3b-a355-85dcac3a71aa)
+ Call ID: 7a354ef1-6122-4a3b-a355-85dcac3a71aa
+  Args:
+    source: Penelope_Meredith_Eastwood
+    relation: :hasBirthYear
+    literal_value: 1953
+    literal_type: xsd:integer
+  AddLiteral (6c1f40e0-6c76-4d7e-b62a-3f357565fd67)
+ Call ID: 6c1f40e0-6c76-4d7e-b62a-3f357565fd67
+  Args:
+    literal_value: 1979
+    source: Norton_Louis_Philip_Knatchbull
     relation: :hasMarriageYear
     literal_type: xsd:integer
-    source: :Norton_Louis_Philip_Knatchbull
-    literal_value: 1979
-  AddTriple (6fcd8996-00b5-43cc-a970-6863e4d5c61f)
- Call ID: 6fcd8996-00b5-43cc-a970-6863e4d5c61f
+  AddTriple (3c6d80d0-4e0a-4188-9126-8e8a7a80549d)
+ Call ID: 3c6d80d0-4e0a-4188-9126-8e8a7a80549d
   Args:
-    source: :Norton_Louis_Philip_Knatchbull
+    target: Penelope_Meredith_Eastwood
     relation: :hasRelation
-    target: :Penelope_Meredith_Eastwood
-  AssignClass (78d370d0-de33-4535-8457-8264c312a840)
- Call ID: 78d370d0-de33-4535-8457-8264c312a840
+    source: Norton_Louis_Philip_Knatchbull
+  AssignClass (4d7694ee-b466-4614-a808-1a7ab25ffdb5)
+ Call ID: 4d7694ee-b466-4614-a808-1a7ab25ffdb5
   Args:
+    source: Reginald_Wray_Frank_Eastwood
     type: :Man
-    source: :Louis_Mountbatten
-  AssignClass (84e053a8-3b0f-41e0-87d3-dd6d019c2c98)
- Call ID: 84e053a8-3b0f-41e0-87d3-dd6d019c2c98
+  AssignClass (bb69f390-4b72-4ce4-a91d-634623cabb7b)
+ Call ID: bb69f390-4b72-4ce4-a91d-634623cabb7b
   Args:
-    source: :Louis_Mountbatten
+    source: Reginald_Wray_Frank_Eastwood
     type: :Person
-  AddTriple (99ecb71c-7c9a-438c-bb44-dac5de4fc233)
- Call ID: 99ecb71c-7c9a-438c-bb44-dac5de4fc233
+  AssignClass (604b4070-3ff5-484e-b1d7-4cf9edad25ac)
+ Call ID: 604b4070-3ff5-484e-b1d7-4cf9edad25ac
   Args:
-    relation: :isAncestorOf
-    source: :Louis_Mountbatten
-    target: :Norton_Louis_Philip_Knatchbull
-  AssignClass (d7ab98e9-e0e9-4fb0-bb45-5e3cbba7ee13)
- Call ID: d7ab98e9-e0e9-4fb0-bb45-5e3cbba7ee13
-  Args:
-    type: :Man
-    source: :Nicholas_Knatchbull
-  AssignClass (610aaa58-02f2-4a7f-b83b-16867d0f627f)
- Call ID: 610aaa58-02f2-4a7f-b83b-16867d0f627f
-  Args:
-    type: :Person
-    source: :Nicholas_Knatchbull
-  AddTriple (415bc937-aac9-4973-aefd-eb8d8665274e)
- Call ID: 415bc937-aac9-4973-aefd-eb8d8665274e
-  Args:
-    source: :Nicholas_Knatchbull
-    relation: :isBrotherOf
-    target: :Norton_Louis_Philip_Knatchbull
-  AssignClass (143ba6a5-9295-4188-ae40-fcf07a75091d)
- Call ID: 143ba6a5-9295-4188-ae40-fcf07a75091d
-  Args:
-    source: :Doreen_Knatchbull
     type: :Woman
-  AssignClass (20970add-fa97-48a5-843f-6f147a92553f)
- Call ID: 20970add-fa97-48a5-843f-6f147a92553f
+    source: Marian_Elizabeth_Hood
+  AssignClass (74c61f21-2618-4c5d-9278-08c4505da82d)
+ Call ID: 74c61f21-2618-4c5d-9278-08c4505da82d
   Args:
-    source: :Doreen_Knatchbull
     type: :Person
-  AssignClass (d88deb7b-9c6d-4431-b575-c2baf606e585)
- Call ID: d88deb7b-9c6d-4431-b575-c2baf606e585
+    source: Marian_Elizabeth_Hood
+  AddTriple (7ac82468-aaca-442b-852e-a0387f1404cf)
+ Call ID: 7ac82468-aaca-442b-852e-a0387f1404cf
   Args:
-    source: :Reginald_Wray_Frank_Eastwood
-    type: :Man
-  AssignClass (72286849-8488-4016-a99d-212d3bdc5880)
- Call ID: 72286849-8488-4016-a99d-212d3bdc5880
-  Args:
-    source: :Reginald_Wray_Frank_Eastwood
-    type: :Person
-  AddLiteral (6bd38391-74e5-4748-9bf5-00222c033269)
- Call ID: 6bd38391-74e5-4748-9bf5-00222c033269
-  Args:
-    literal_type: xsd:integer
-    source: :Reginald_Wray_Frank_Eastwood
-    literal_value: 1912
-    relation: :hasBirthYear
-  AddLiteral (29b5317b-c012-486a-bbe4-386a02c6cfbc)
- Call ID: 29b5317b-c012-486a-bbe4-386a02c6cfbc
-  Args:
-    literal_type: xsd:integer
-    source: :Reginald_Wray_Frank_Eastwood
-    literal_value: 1980
-    relation: :hasDeathYear
-  AssignClass (64722307-628d-4e04-b5a9-e9489f4b34c8)
- Call ID: 64722307-628d-4e04-b5a9-e9489f4b34c8
-  Args:
-    source: :Marian_Elizabeth
-    type: :Woman
-  AssignClass (d00f5a62-8ade-4ec9-8185-1f2a873ef817)
- Call ID: d00f5a62-8ade-4ec9-8185-1f2a873ef817
-  Args:
-    source: :Marian_Elizabeth
-    type: :Person
-  AddLiteral (867afe27-b671-4f0a-a0a3-0f8e15c9278b)
- Call ID: 867afe27-b671-4f0a-a0a3-0f8e15c9278b
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1926
-    source: :Marian_Elizabeth
-    literal_type: xsd:integer
-  AddLiteral (4ea2e8b9-48b8-4b8d-871d-e9768c6b3cb1)
- Call ID: 4ea2e8b9-48b8-4b8d-871d-e9768c6b3cb1
-  Args:
-    literal_value: 2020
-    source: :Marian_Elizabeth
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddTriple (36324318-8737-40c0-be16-effbd724ef5a)
- Call ID: 36324318-8737-40c0-be16-effbd724ef5a
-  Args:
-    target: :Reginald_Wray_Frank_Eastwood
+    source: Penelope_Meredith_Eastwood
     relation: :hasFather
-    source: :Penelope_Meredith_Eastwood
-  AddTriple (c44af63d-0738-43bb-874f-a160f9f1028a)
- Call ID: c44af63d-0738-43bb-874f-a160f9f1028a
+    target: Reginald_Wray_Frank_Eastwood
+  AddTriple (7f21745e-2de7-40ab-8434-99fede8a2749)
+ Call ID: 7f21745e-2de7-40ab-8434-99fede8a2749
   Args:
+    source: Penelope_Meredith_Eastwood
+    target: Marian_Elizabeth_Hood
     relation: :hasMother
-    source: :Penelope_Meredith_Eastwood
-    target: :Marian_Elizabeth
-  AssignClass (f8ac4a3f-59cf-4b68-b72c-2b0042ee75ab)
- Call ID: f8ac4a3f-59cf-4b68-b72c-2b0042ee75ab
+  AddLiteral (9d6fba7d-b8f7-4d4c-b932-e72480b6a6d7)
+ Call ID: 9d6fba7d-b8f7-4d4c-b932-e72480b6a6d7
   Args:
-    source: :Eugenie_Lady_Nuttall
+    relation: :hasDeathYear
+    source: Reginald_Wray_Frank_Eastwood
+    literal_value: 1980
+    literal_type: xsd:integer
+  AddLiteral (4f5f2e1c-9a7d-45ae-8c75-4043309acf75)
+ Call ID: 4f5f2e1c-9a7d-45ae-8c75-4043309acf75
+  Args:
+    literal_type: xsd:integer
+    literal_value: 2020
+    source: Marian_Elizabeth_Hood
+    relation: :hasDeathYear
+  AssignClass (6d9acf5a-4013-4ac4-9053-3a39037dabf6)
+ Call ID: 6d9acf5a-4013-4ac4-9053-3a39037dabf6
+  Args:
+    source: Eugenie_Lady_Nuttall
     type: :Woman
-  AssignClass (8037c0c1-11e8-4745-9724-34213c406030)
- Call ID: 8037c0c1-11e8-4745-9724-34213c406030
+  AssignClass (5b3ab3f7-b68e-42bd-9081-c558ed9569dc)
+ Call ID: 5b3ab3f7-b68e-42bd-9081-c558ed9569dc
   Args:
     type: :Person
-    source: :Eugenie_Lady_Nuttall
-  AddTriple (3fe4ff71-dfbc-4c4a-82cc-f3964f684f37)
- Call ID: 3fe4ff71-dfbc-4c4a-82cc-f3964f684f37
+    source: Eugenie_Lady_Nuttall
+  AddTriple (7c773711-c85a-4865-b9ce-7016d25e9f27)
+ Call ID: 7c773711-c85a-4865-b9ce-7016d25e9f27
   Args:
-    target: :Eugenie_Lady_Nuttall
-    source: :Norton_Louis_Philip_Knatchbull
+    source: Norton_Louis_Philip_Knatchbull
+    target: Eugenie_Lady_Nuttall
     relation: :hasRelation
-  Finish (34347d4f-350d-48a4-8211-f89e20a2deea)
- Call ID: 34347d4f-350d-48a4-8211-f89e20a2deea
+  Finish (eaa4f8fe-df7c-4e5e-a0bc-c4ee2e3d90e6)
+ Call ID: eaa4f8fe-df7c-4e5e-a0bc-c4ee2e3d90e6
   Args:

@@ -2,57 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Amedeo_3rd_Duke_of_Aosta a :Man,
-        :Person ;
-    :hasBirthYear 1898 ;
-    :hasBrother data:Aimone_4th_Duke_of_Aosta ;
-    :hasDeathYear 1942 ;
-    :hasFather data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta ;
-    :hasMarriageYear 1927 ;
-    :hasMother data:Princess_Helene ;
-    :hasRelation data:Princess_Anne_of_Orleans .
-
-data:Aimone_4th_Duke_of_Aosta a :Man,
-        :Person .
-
-data:Amadeo_I_of_Spain a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Emanuele_Filiberto_2nd_Duke_of_Aosta a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Amadeo_I_of_Spain ;
-    :hasMother data:Princess_Maria_Vittoria .
-
-data:Prince_Jean_Duke_of_Guise a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Philippe_of_Orleans a :Ancestor,
-        :Man,
-        :Person .
-
-data:Princess_Anne_of_Orleans a :Person,
+data:Antonia_Elizabeth_Brigid_Louise_Mansfeld a :Person,
         :Woman ;
-    :hasFather data:Prince_Jean_Duke_of_Guise ;
-    :hasMother data:Princess_Isabelle_of_Orleans .
+    :hasBirthYear 1955 ;
+    :hasChild data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley ;
+    :hasFather data:Prince_Frederick_of_Prussia ;
+    :hasMarriageYear 1977 ;
+    :hasMother data:Lady_Brigid_Guinness ;
+    :hasRelation data:Charles_Wellesley_Marquess_of_Douro .
 
-data:Princess_Helene a :Ancestor,
+data:Charles_Wellesley_Marquess_of_Douro a :Man,
+        :Person ;
+    :hasChild data:Lady_Charlotte_Wellesley,
+        data:Lady_Mary_Wellesley .
+
+data:Lady_Brigid_Guinness a :Ancestor,
         :Person,
         :Woman ;
-    :hasFather data:Prince_Philippe_of_Orleans ;
-    :hasMother data:Princess_Marie_Isabelle_of_Orleans .
+    :hasFather data:Rupert_Guinness_2nd_Earl_of_Iveagh .
 
-data:Princess_Isabelle_of_Orleans a :Ancestor,
-        :Person,
+data:Prince_Frederick_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Wilhelm_II .
+
+data:Rupert_Guinness_2nd_Earl_of_Iveagh a :Ancestor,
+        :Man,
+        :Person .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person .
+
+data:Lady_Charlotte_Wellesley a :Person,
         :Woman .
 
-data:Princess_Maria_Vittoria a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Princess_Marie_Isabelle_of_Orleans a :Ancestor,
-        :Person,
+data:Lady_Mary_Wellesley a :Person,
         :Woman .
 

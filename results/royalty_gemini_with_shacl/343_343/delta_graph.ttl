@@ -2,60 +2,52 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Frederick_Francis_II a :Ancestor,
-        :Man,
+data:Christian_IX_of_Denmark a :Man,
         :Person ;
-    :isFatherOf data:Frederick_Francis_III .
+    :isAncestorOf data:Ernest_Augustus .
 
-data:Frederick_Francis_IV a :Man,
+data:Christian_of_Hanover a :Man,
         :Person ;
-    :alsoKnownAs "Friedrich Franz Michael"^^xsd:string ;
-    :hasBirthYear 1882 ;
-    :hasDeathYear 1945 ;
-    :hasFather data:Frederick_Francis_III ;
-    :hasMarriageYear 1904 ;
-    :hasMother data:Anastasia_Mikhailovna ;
-    :hasRelation data:Alexandra_of_Hanover ;
-    :hasSex data:Male ;
-    :hasSister data:Alexandrine,
-        data:Cecilie ;
-    :hasSon data:Friedrich_Franz_V .
+    :isBrotherOf data:Ernest_Augustus .
 
-data:Alexandra_of_Hanover a :Person,
-        :Woman ;
-    :hasFather data:Ernest_Augustus_of_Hanover ;
-    :hasMother data:Thyra_of_Denmark .
-
-data:Alexandrine a :Person,
-        :Woman .
-
-data:Anastasia_Mikhailovna a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Cecilie a :Person,
-        :Woman .
-
-data:Christian_IX a :Ancestor,
-        :Man,
-        :Person .
+data:Ernest_Augustus_Jr a :Man,
+        :Person ;
+    :isSonOf data:Ernest_Augustus,
+        data:Victoria_Louise_of_Prussia .
 
 data:Ernest_Augustus_of_Hanover a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :isFatherOf data:Ernest_Augustus .
 
-data:Friedrich_Franz_V a :Man,
-        :Person .
+data:Frederica_of_Hanover a :Person,
+        :Woman ;
+    :isDaughterOf data:Ernest_Augustus,
+        data:Victoria_Louise_of_Prussia .
 
-data:Male a :Male,
-        :Sex .
+data:George_of_Hanover a :Man,
+        :Person ;
+    :isBrotherOf data:Ernest_Augustus .
 
 data:Thyra_of_Denmark a :Ancestor,
         :Person,
         :Woman ;
-    :hasFather data:Christian_IX .
+    :isMotherOf data:Ernest_Augustus .
 
-data:Frederick_Francis_III a :Ancestor,
+data:Wilhelm_II a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :isFatherOf data:Victoria_Louise_of_Prussia .
+
+data:Victoria_Louise_of_Prussia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Ernest_Augustus a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1887 ;
+    :hasDeathYear 1953 ;
+    :hasMarriageYear 1913 ;
+    :hasRelation data:Victoria_Louise_of_Prussia .
 

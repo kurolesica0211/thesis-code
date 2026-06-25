@@ -162,6 +162,8 @@ The dish is supposedly one that was regularly served to Frederik on his birthday
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -177,39 +179,9 @@ The dish is supposedly one that was regularly served to Frederik on his birthday
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -224,6 +196,23 @@ The dish is supposedly one that was regularly served to Frederik on his birthday
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -241,6 +230,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -308,29 +312,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -339,6 +335,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -351,6 +355,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -359,17 +365,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -397,6 +405,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -412,190 +504,267 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1047b84b-d0e9-475e-b492-b5287259c4ce)
- Call ID: 1047b84b-d0e9-475e-b492-b5287259c4ce
+  AssignClass (965591c8-c529-469d-9677-d22703f6e315)
+ Call ID: 965591c8-c529-469d-9677-d22703f6e315
   Args:
+    source: :Frederik_IX
     type: :Man
-    source: Frederik_IX
-  AssignClass (88d364a0-953f-4254-8f8b-dd8b35b88c11)
- Call ID: 88d364a0-953f-4254-8f8b-dd8b35b88c11
+  AssignClass (1945b533-c7ae-40d6-b90e-5a58a96469ea)
+ Call ID: 1945b533-c7ae-40d6-b90e-5a58a96469ea
   Args:
+    source: :Frederik_IX
     type: :Person
-    source: Frederik_IX
-  AssignClass (b745ba5f-2290-4719-acee-71b24f1ca0c4)
- Call ID: b745ba5f-2290-4719-acee-71b24f1ca0c4
+  AddLiteral (cadcb94a-0cec-4cdb-89c1-ea0bb206935d)
+ Call ID: cadcb94a-0cec-4cdb-89c1-ea0bb206935d
   Args:
-    type: :Man
-    source: Christian_X
-  AssignClass (a0e2aa13-fa45-4a1b-b5f0-521b4dd425c2)
- Call ID: a0e2aa13-fa45-4a1b-b5f0-521b4dd425c2
-  Args:
-    type: :Person
-    source: Christian_X
-  AssignClass (2a345270-9640-4fb8-98e5-4b5f9568c917)
- Call ID: 2a345270-9640-4fb8-98e5-4b5f9568c917
-  Args:
-    type: :Woman
-    source: Alexandrine_of_Mecklenburg-Schwerin
-  AssignClass (214b1a3e-1d67-456a-9d78-5efc6061ac5c)
- Call ID: 214b1a3e-1d67-456a-9d78-5efc6061ac5c
-  Args:
-    type: :Person
-    source: Alexandrine_of_Mecklenburg-Schwerin
-  AssignClass (e173f0ad-7407-4104-b663-6d7dda2f0b90)
- Call ID: e173f0ad-7407-4104-b663-6d7dda2f0b90
-  Args:
-    type: :Woman
-    source: Ingrid_of_Sweden
-  AssignClass (03bdd478-4e25-4c17-9c36-e73ed3275eef)
- Call ID: 03bdd478-4e25-4c17-9c36-e73ed3275eef
-  Args:
-    type: :Person
-    source: Ingrid_of_Sweden
-  AssignClass (ee0cd4ea-abd0-4f83-89ce-8b6f7c58a6cc)
- Call ID: ee0cd4ea-abd0-4f83-89ce-8b6f7c58a6cc
-  Args:
-    type: :Man
-    source: Knud
-  AssignClass (1b4e9fb4-879f-49bd-827b-69f9f2a466a7)
- Call ID: 1b4e9fb4-879f-49bd-827b-69f9f2a466a7
-  Args:
-    type: :Person
-    source: Knud
-  AssignClass (a35a08cc-458a-415d-a5ef-a9eba3c77015)
- Call ID: a35a08cc-458a-415d-a5ef-a9eba3c77015
-  Args:
-    type: :Woman
-    source: Margrethe_II
-  AssignClass (77b996f9-8569-4301-8e9b-9dc35f05e158)
- Call ID: 77b996f9-8569-4301-8e9b-9dc35f05e158
-  Args:
-    type: :Person
-    source: Margrethe_II
-  AssignClass (c3c0a7bb-b9f6-451e-8751-4a89b7973d0a)
- Call ID: c3c0a7bb-b9f6-451e-8751-4a89b7973d0a
-  Args:
-    type: :Man
-    source: Frederik_VIII
-  AssignClass (f9740610-bfc0-4ed1-8c03-022b014d612b)
- Call ID: f9740610-bfc0-4ed1-8c03-022b014d612b
-  Args:
-    type: :Person
-    source: Frederik_VIII
-  AssignClass (3860f180-8372-4c91-b9cb-f90b97d97ddd)
- Call ID: 3860f180-8372-4c91-b9cb-f90b97d97ddd
-  Args:
-    type: :Woman
-    source: Louise_of_Sweden
-  AssignClass (71c04b33-3de1-4451-ab32-ee40dc11453f)
- Call ID: 71c04b33-3de1-4451-ab32-ee40dc11453f
-  Args:
-    type: :Person
-    source: Louise_of_Sweden
-  AssignClass (a0c4dce6-cd2c-4822-baf5-4f4f2036cea6)
- Call ID: a0c4dce6-cd2c-4822-baf5-4f4f2036cea6
-  Args:
-    type: :Man
-    source: Frederick_Francis_III
-  AssignClass (e1e75757-72eb-4264-b4ee-f030fc7faa04)
- Call ID: e1e75757-72eb-4264-b4ee-f030fc7faa04
-  Args:
-    type: :Person
-    source: Frederick_Francis_III
-  AssignClass (2607121e-69a5-42a2-8314-9f7ccf5b50fb)
- Call ID: 2607121e-69a5-42a2-8314-9f7ccf5b50fb
-  Args:
-    type: :Woman
-    source: Anastasia_Mikhailovna_of_Russia
-  AssignClass (45122a26-b652-4d26-8ab0-e0e0953c1700)
- Call ID: 45122a26-b652-4d26-8ab0-e0e0953c1700
-  Args:
-    type: :Person
-    source: Anastasia_Mikhailovna_of_Russia
-  AddLiteral (c9e57233-693a-4975-aa7c-9ecdd485a791)
- Call ID: c9e57233-693a-4975-aa7c-9ecdd485a791
-  Args:
-    relation: :hasBirthYear
+    source: :Frederik_IX
     literal_value: 1899
-    source: Frederik_IX
+    relation: :hasBirthYear
     literal_type: xsd:integer
-  AddLiteral (bc25c92a-6e47-4f98-b1b6-71b3cff376a5)
- Call ID: bc25c92a-6e47-4f98-b1b6-71b3cff376a5
+  AddLiteral (6dafc9a0-3573-4714-a0be-7b62d7c8dc83)
+ Call ID: 6dafc9a0-3573-4714-a0be-7b62d7c8dc83
   Args:
-    relation: :hasDeathYear
     literal_value: 1972
-    source: Frederik_IX
+    source: :Frederik_IX
+    relation: :hasDeathYear
     literal_type: xsd:integer
-  AddTriple (5064573f-6e23-4249-bd83-0ab2b3803ee0)
- Call ID: 5064573f-6e23-4249-bd83-0ab2b3803ee0
+  AssignClass (aa4c6e48-8c93-47a0-b24e-e3ff6b71da5b)
+ Call ID: aa4c6e48-8c93-47a0-b24e-e3ff6b71da5b
   Args:
+    type: :Man
+    source: :Christian_X
+  AssignClass (807fb23e-e8ab-4040-87a5-101bb54b351d)
+ Call ID: 807fb23e-e8ab-4040-87a5-101bb54b351d
+  Args:
+    source: :Christian_X
+    type: :Person
+  AssignClass (44ed98c0-c6b1-4297-bb5e-1c07e5cd7d70)
+ Call ID: 44ed98c0-c6b1-4297-bb5e-1c07e5cd7d70
+  Args:
+    source: :Alexandrine_of_Mecklenburg-Schwerin
+    type: :Woman
+  AssignClass (c8f2d0b5-7a1e-4077-9447-9064ae4eae58)
+ Call ID: c8f2d0b5-7a1e-4077-9447-9064ae4eae58
+  Args:
+    source: :Alexandrine_of_Mecklenburg-Schwerin
+    type: :Person
+  AddTriple (452b6a85-67e1-4ce6-91d3-30152f0e0109)
+ Call ID: 452b6a85-67e1-4ce6-91d3-30152f0e0109
+  Args:
+    source: :Frederik_IX
     relation: :hasFather
-    target: Christian_X
-    source: Frederik_IX
-  AddTriple (d4038403-94d4-47b1-be50-5025831d8074)
- Call ID: d4038403-94d4-47b1-be50-5025831d8074
+    target: :Christian_X
+  AddTriple (41303d5c-05d3-4880-b320-28fa31dc5fc5)
+ Call ID: 41303d5c-05d3-4880-b320-28fa31dc5fc5
   Args:
     relation: :hasMother
-    target: Alexandrine_of_Mecklenburg-Schwerin
-    source: Frederik_IX
-  AddTriple (9610049f-4d4f-40c3-96ec-7de7e6de1eb4)
- Call ID: 9610049f-4d4f-40c3-96ec-7de7e6de1eb4
+    source: :Frederik_IX
+    target: :Alexandrine_of_Mecklenburg-Schwerin
+  AssignClass (5c2de6db-97e6-4c56-8109-6f2913fec316)
+ Call ID: 5c2de6db-97e6-4c56-8109-6f2913fec316
   Args:
-    relation: :hasBrother
-    source: Frederik_IX
-    target: Knud
-  AddTriple (40bfb2b8-c9ff-46c7-86f6-d24c6dcd4c6f)
- Call ID: 40bfb2b8-c9ff-46c7-86f6-d24c6dcd4c6f
+    source: :Ingrid_of_Sweden
+    type: :Woman
+  AssignClass (b0758411-f501-48ac-9ba5-fcc51314de7f)
+ Call ID: b0758411-f501-48ac-9ba5-fcc51314de7f
   Args:
-    relation: :hasFather
-    source: Christian_X
-    target: Frederik_VIII
-  AddTriple (f71f89df-5343-4c29-8e29-5b0f1581767c)
- Call ID: f71f89df-5343-4c29-8e29-5b0f1581767c
+    source: :Ingrid_of_Sweden
+    type: :Person
+  AddTriple (1bc143cd-b7c4-4e46-86b9-e1f9f6129337)
+ Call ID: 1bc143cd-b7c4-4e46-86b9-e1f9f6129337
   Args:
-    relation: :hasMother
-    target: Louise_of_Sweden
-    source: Christian_X
-  AddTriple (d3173d31-ff14-496a-93e1-647624292ce3)
- Call ID: d3173d31-ff14-496a-93e1-647624292ce3
-  Args:
-    relation: :hasFather
-    source: Alexandrine_of_Mecklenburg-Schwerin
-    target: Frederick_Francis_III
-  AddTriple (76912fb1-7a2d-4211-8657-225e5fae648f)
- Call ID: 76912fb1-7a2d-4211-8657-225e5fae648f
-  Args:
-    relation: :hasMother
-    target: Anastasia_Mikhailovna_of_Russia
-    source: Alexandrine_of_Mecklenburg-Schwerin
-  AddTriple (40b1d400-8b1b-424c-92e8-2e36f403e5fd)
- Call ID: 40b1d400-8b1b-424c-92e8-2e36f403e5fd
-  Args:
-    target: Margrethe_II
-    source: Frederik_IX
-    relation: :hasDaughter
-  AddTriple (7a093692-5cfc-4234-bc37-32a0b9fee466)
- Call ID: 7a093692-5cfc-4234-bc37-32a0b9fee466
-  Args:
-    source: Margrethe_II
-    target: Ingrid_of_Sweden
-    relation: :hasMother
-  AddLiteral (120da874-4185-4daa-beda-bb73bd9f0366)
- Call ID: 120da874-4185-4daa-beda-bb73bd9f0366
-  Args:
-    source: Frederik_IX
-    literal_value: 1935
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  AddTriple (3bd5155f-5f6c-4959-8c4a-1f316a86002b)
- Call ID: 3bd5155f-5f6c-4959-8c4a-1f316a86002b
-  Args:
-    target: Ingrid_of_Sweden
-    source: Frederik_IX
+    target: :Ingrid_of_Sweden
     relation: :hasRelation
-  Finish (6b553591-f1ff-4894-8c77-f99999fcbfd9)
- Call ID: 6b553591-f1ff-4894-8c77-f99999fcbfd9
+    source: :Frederik_IX
+  AddLiteral (84aab9c2-0eeb-4be5-b115-35b1e7bf2bd2)
+ Call ID: 84aab9c2-0eeb-4be5-b115-35b1e7bf2bd2
   Args:
+    relation: :hasMarriageYear
+    literal_value: 1935
+    source: :Frederik_IX
+    literal_type: xsd:integer
+  AssignClass (b19d4ae8-5ad3-4afd-9ab2-6a4ca7ed2e96)
+ Call ID: b19d4ae8-5ad3-4afd-9ab2-6a4ca7ed2e96
+  Args:
+    type: :Man
+    source: :Knud
+  AssignClass (e14d7253-7508-4cdc-93a6-7d40ac7c2291)
+ Call ID: e14d7253-7508-4cdc-93a6-7d40ac7c2291
+  Args:
+    type: :Person
+    source: :Knud
+  AddTriple (ecfe2e7c-bac8-47a7-a7a1-435c8ed5bbb4)
+ Call ID: ecfe2e7c-bac8-47a7-a7a1-435c8ed5bbb4
+  Args:
+    relation: :isSiblingOf
+    source: :Frederik_IX
+    target: :Knud
+  AssignClass (4392c821-67cc-40cd-982b-44fbf291062d)
+ Call ID: 4392c821-67cc-40cd-982b-44fbf291062d
+  Args:
+    source: :Margrethe_II
+    type: :Woman
+  AssignClass (b4f4002e-a474-4f3a-a0c1-8e08dc582961)
+ Call ID: b4f4002e-a474-4f3a-a0c1-8e08dc582961
+  Args:
+    source: :Margrethe_II
+    type: :Person
+  AddTriple (0275136c-53cc-48aa-ad65-3aca9a8493f0)
+ Call ID: 0275136c-53cc-48aa-ad65-3aca9a8493f0
+  Args:
+    target: :Frederik_IX
+    source: :Margrethe_II
+    relation: :isDaughterOf
+  AssignClass (55862a61-bec9-4c35-aa77-d8174c009271)
+ Call ID: 55862a61-bec9-4c35-aa77-d8174c009271
+  Args:
+    type: :Man
+    source: :Christian_IX
+  AssignClass (8e08e0a2-1fb0-40d7-b78d-ef05460a654f)
+ Call ID: 8e08e0a2-1fb0-40d7-b78d-ef05460a654f
+  Args:
+    source: :Christian_IX
+    type: :Person
+  AddTriple (5184de86-3a28-4b42-8f7e-bce59a7b8011)
+ Call ID: 5184de86-3a28-4b42-8f7e-bce59a7b8011
+  Args:
+    target: :Christian_IX
+    relation: :hasAncestor
+    source: :Frederik_IX
+  AssignClass (a2867fb7-cf8b-4e79-9090-6769ccb8755d)
+ Call ID: a2867fb7-cf8b-4e79-9090-6769ccb8755d
+  Args:
+    source: :Frederik_VIII
+    type: :Man
+  AssignClass (2aaf6241-890d-4c43-beb5-b12f46ebe4f5)
+ Call ID: 2aaf6241-890d-4c43-beb5-b12f46ebe4f5
+  Args:
+    source: :Frederik_VIII
+    type: :Person
+  AssignClass (246aa25f-c4f9-4144-9944-29d75489f4cb)
+ Call ID: 246aa25f-c4f9-4144-9944-29d75489f4cb
+  Args:
+    type: :Woman
+    source: :Louise_of_Sweden
+  AssignClass (cae122ab-9a31-493d-842f-f09e68ab702c)
+ Call ID: cae122ab-9a31-493d-842f-f09e68ab702c
+  Args:
+    source: :Louise_of_Sweden
+    type: :Person
+  AddTriple (afe5f483-06b1-4e3c-b2d4-81c770bdf119)
+ Call ID: afe5f483-06b1-4e3c-b2d4-81c770bdf119
+  Args:
+    relation: :hasFather
+    source: :Christian_X
+    target: :Frederik_VIII
+  AddTriple (4e219ffc-5c97-43e1-8b20-f1d70e650c92)
+ Call ID: 4e219ffc-5c97-43e1-8b20-f1d70e650c92
+  Args:
+    target: :Louise_of_Sweden
+    source: :Christian_X
+    relation: :hasMother
+  AssignClass (dacb6c8b-369e-4218-b457-6b44abb19333)
+ Call ID: dacb6c8b-369e-4218-b457-6b44abb19333
+  Args:
+    type: :Man
+    source: :Frederick_Francis_III
+  AssignClass (78533bdc-b7f2-4f85-9ea9-71883ab6d09e)
+ Call ID: 78533bdc-b7f2-4f85-9ea9-71883ab6d09e
+  Args:
+    type: :Person
+    source: :Frederick_Francis_III
+  AssignClass (3eee79aa-3c30-498e-8155-ad9a87b34791)
+ Call ID: 3eee79aa-3c30-498e-8155-ad9a87b34791
+  Args:
+    source: :Anastasia_Mikhailovna_of_Russia
+    type: :Woman
+  AssignClass (eb80ba46-7887-46a1-8f7a-c8c82552ca4d)
+ Call ID: eb80ba46-7887-46a1-8f7a-c8c82552ca4d
+  Args:
+    type: :Person
+    source: :Anastasia_Mikhailovna_of_Russia
+  AddTriple (c744ad3f-fb89-4fd7-baaf-fdf4a76d18b1)
+ Call ID: c744ad3f-fb89-4fd7-baaf-fdf4a76d18b1
+  Args:
+    source: :Alexandrine_of_Mecklenburg-Schwerin
+    relation: :hasFather
+    target: :Frederick_Francis_III
+  AddTriple (a255c7fc-bfe8-4c68-9f31-897a6dff7b20)
+ Call ID: a255c7fc-bfe8-4c68-9f31-897a6dff7b20
+  Args:
+    target: :Anastasia_Mikhailovna_of_Russia
+    source: :Alexandrine_of_Mecklenburg-Schwerin
+    relation: :hasMother
+  AssignClass (a7ef1a02-c97e-4c55-992e-4c1942962a2a)
+ Call ID: a7ef1a02-c97e-4c55-992e-4c1942962a2a
+  Args:
+    type: :Man
+    source: :Gustaf_VI_Adolf
+  AssignClass (31582224-cb9b-4086-9356-9f779040a7af)
+ Call ID: 31582224-cb9b-4086-9356-9f779040a7af
+  Args:
+    type: :Person
+    source: :Gustaf_VI_Adolf
+  AssignClass (66170729-8082-4ec9-87e5-95e12842010d)
+ Call ID: 66170729-8082-4ec9-87e5-95e12842010d
+  Args:
+    type: :Woman
+    source: :Margaret_of_Connaught
+  AssignClass (d9a48abc-fa80-43a9-b6b4-371008b34ce8)
+ Call ID: d9a48abc-fa80-43a9-b6b4-371008b34ce8
+  Args:
+    type: :Person
+    source: :Margaret_of_Connaught
+  AddTriple (fdb9c93a-081f-4911-8b18-c2c58e0fef15)
+ Call ID: fdb9c93a-081f-4911-8b18-c2c58e0fef15
+  Args:
+    target: :Gustaf_VI_Adolf
+    source: :Ingrid_of_Sweden
+    relation: :hasFather
+  AddTriple (7e768857-204d-4088-836e-554fe08759c1)
+ Call ID: 7e768857-204d-4088-836e-554fe08759c1
+  Args:
+    relation: :hasMother
+    source: :Ingrid_of_Sweden
+    target: :Margaret_of_Connaught
+  ValidateShacl (bbaa6f55-12e0-4028-8398-edc92980257d)
+ Call ID: bbaa6f55-12e0-4028-8398-edc92980257d
+  Args:
+  Finish (99b55663-3d94-488a-8e44-7729df10b43f)
+ Call ID: 99b55663-3d94-488a-8e44-7729df10b43f
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -732,16 +901,9 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederik_IX a :Man,
-          :Person ;
-      :hasBirthYear 1899 ;
-      :hasBrother data:Knud ;
-      :hasDaughter data:Margrethe_II ;
-      :hasDeathYear 1972 ;
-      :hasFather data:Christian_X ;
-      :hasMarriageYear 1935 ;
-      :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
-      :hasRelation data:Ingrid_of_Sweden .
+  data:Margrethe_II a :Person,
+          :Woman ;
+      :isDaughterOf data:Frederik_IX .
 
   data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
           :Woman ;
@@ -751,6 +913,9 @@ The final data graph after all the edits:
   data:Anastasia_Mikhailovna_of_Russia a :Person,
           :Woman .
 
+  data:Christian_IX a :Man,
+          :Person .
+
   data:Christian_X a :Man,
           :Person ;
       :hasFather data:Frederik_VIII ;
@@ -759,8 +924,27 @@ The final data graph after all the edits:
   data:Frederick_Francis_III a :Man,
           :Person .
 
+  data:Frederik_IX a :Man,
+          :Person ;
+      :hasAncestor data:Christian_IX ;
+      :hasBirthYear 1899 ;
+      :hasDeathYear 1972 ;
+      :hasFather data:Christian_X ;
+      :hasMarriageYear 1935 ;
+      :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
+      :hasRelation data:Ingrid_of_Sweden ;
+      :isSiblingOf data:Knud .
+
   data:Frederik_VIII a :Man,
           :Person .
+
+  data:Gustaf_VI_Adolf a :Man,
+          :Person .
+
+  data:Ingrid_of_Sweden a :Person,
+          :Woman ;
+      :hasFather data:Gustaf_VI_Adolf ;
+      :hasMother data:Margaret_of_Connaught .
 
   data:Knud a :Man,
           :Person .
@@ -768,12 +952,256 @@ The final data graph after all the edits:
   data:Louise_of_Sweden a :Person,
           :Woman .
 
-  data:Margrethe_II a :Person,
-          :Woman ;
-      :hasMother data:Ingrid_of_Sweden .
-
-  data:Ingrid_of_Sweden a :Person,
+  data:Margaret_of_Connaught a :Person,
           :Woman .
+
+
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:30
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Christian_IX' is used as an ancestor for 'Frederik_IX', but it lacks the required ':Ancestor' class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Christian_IX', class=':Ancestor')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Frederik_VIII' is set as the father of 'Christian_X', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederik_VIII', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Christian_X' is set as the father of 'Frederik_IX', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Christian_X', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Louise_of_Sweden' is set as the mother of 'Christian_X', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Louise_of_Sweden', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Alexandrine_of_Mecklenburg-Schwerin' is set as the mother of 'Frederik_IX', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alexandrine_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Christian_IX' is used as an ancestor for 'Frederik_IX', but it lacks the required ':Ancestor' class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Christian_IX', class=':Ancestor')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Frederick_Francis_III' is set as the father of 'Alexandrine_of_Mecklenburg-Schwerin', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_III', class=':Ancestor')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Christian_X' is set as the father of 'Frederik_IX', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Christian_X', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Gustaf_VI_Adolf' is set as the father of 'Ingrid_of_Sweden', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Gustaf_VI_Adolf', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Frederik_VIII' is set as the father of 'Christian_X', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederik_VIII', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Anastasia_Mikhailovna_of_Russia' is set as the mother of 'Alexandrine_of_Mecklenburg-Schwerin', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anastasia_Mikhailovna_of_Russia', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Alexandrine_of_Mecklenburg-Schwerin' is set as the mother of 'Frederik_IX', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alexandrine_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Margaret_of_Connaught' is set as the mother of 'Ingrid_of_Sweden', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Margaret_of_Connaught', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Louise_of_Sweden' is set as the mother of 'Christian_X', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Louise_of_Sweden', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Frederik_IX' is identified as a parent of 'Margrethe_II', but it is missing the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederik_IX', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Christian_IX' is used as an ancestor for 'Frederik_IX', but it lacks the required ':Ancestor' class assignment.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Christian_IX', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Frederick_Francis_III' is set as the father of 'Alexandrine_of_Mecklenburg-Schwerin', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_III', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Christian_X' is set as the father of 'Frederik_IX', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Christian_X', class=':Ancestor')
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Gustaf_VI_Adolf' is set as the father of 'Ingrid_of_Sweden', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Gustaf_VI_Adolf', class=':Ancestor')
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Frederik_VIII' is set as the father of 'Christian_X', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederik_VIII', class=':Ancestor')
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Anastasia_Mikhailovna_of_Russia' is set as the mother of 'Alexandrine_of_Mecklenburg-Schwerin', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anastasia_Mikhailovna_of_Russia', class=':Ancestor')
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Alexandrine_of_Mecklenburg-Schwerin' is set as the mother of 'Frederik_IX', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Alexandrine_of_Mecklenburg-Schwerin', class=':Ancestor')
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Margaret_of_Connaught' is set as the mother of 'Ingrid_of_Sweden', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Margaret_of_Connaught', class=':Ancestor')
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Louise_of_Sweden' is set as the mother of 'Christian_X', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Louise_of_Sweden', class=':Ancestor')
+
+
+  Violation [25]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Frederik_IX' is identified as a parent of 'Margrethe_II', but it is missing the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederik_IX', class=':Ancestor')
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Frederick_Francis_III' is set as the father of 'Alexandrine_of_Mecklenburg-Schwerin', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_III', class=':Ancestor')
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Gustaf_VI_Adolf' is set as the father of 'Ingrid_of_Sweden', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Gustaf_VI_Adolf', class=':Ancestor')
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Anastasia_Mikhailovna_of_Russia' is set as the mother of 'Alexandrine_of_Mecklenburg-Schwerin', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Anastasia_Mikhailovna_of_Russia', class=':Ancestor')
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Margaret_of_Connaught' is set as the mother of 'Ingrid_of_Sweden', but it is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Margaret_of_Connaught', class=':Ancestor')
+
+
+  Violation [30]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The node 'Frederik_IX' is identified as a parent of 'Margrethe_II', but it is missing the required ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederik_IX', class=':Ancestor')
+
 
 
 
@@ -785,242 +1213,61 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (38298282-07b6-426c-8463-fbcc4f489033)
- Call ID: 38298282-07b6-426c-8463-fbcc4f489033
+  AssignClass (097b683e-54ea-414b-8442-4dd613f3ddfb)
+ Call ID: 097b683e-54ea-414b-8442-4dd613f3ddfb
   Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:21
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Christian_X, identified as the father of Frederik_IX, is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_X, :Ancestor)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Frederik_VIII, identified as the father of Christian_X, is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederik_VIII, :Ancestor)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Alexandrine_of_Mecklenburg-Schwerin, identified as the mother of Frederik_IX, is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandrine_of_Mecklenburg-Schwerin, :Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Louise_of_Sweden, identified as the mother of Christian_X, is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Louise_of_Sweden, :Ancestor)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Christian_X is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_X, :Ancestor)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Frederick_Francis_III, identified as the father of Alexandrine_of_Mecklenburg-Schwerin, is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_III, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Frederik_VIII is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederik_VIII, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Alexandrine_of_Mecklenburg-Schwerin is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandrine_of_Mecklenburg-Schwerin, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Anastasia_Mikhailovna_of_Russia, identified as the mother of Alexandrine_of_Mecklenburg-Schwerin, is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Anastasia_Mikhailovna_of_Russia, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Louise_of_Sweden is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Louise_of_Sweden, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Ingrid_of_Sweden, identified as the mother of Margrethe_II, is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ingrid_of_Sweden, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Frederick_Francis_III is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_III, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Frederik_VIII is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederik_VIII, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Christian_X is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Christian_X, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Ingrid_of_Sweden is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ingrid_of_Sweden, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Anastasia_Mikhailovna_of_Russia is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Anastasia_Mikhailovna_of_Russia, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Louise_of_Sweden is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Louise_of_Sweden, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Alexandrine_of_Mecklenburg-Schwerin is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alexandrine_of_Mecklenburg-Schwerin, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Frederick_Francis_III is missing the required class :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederick_Francis_III, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Anastasia_Mikhailovna_of_Russia is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Anastasia_Mikhailovna_of_Russia, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Ingrid_of_Sweden is missing the required class :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ingrid_of_Sweden, :Ancestor)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (61cd5005-329a-49f4-af54-e058b3cc40b1)
- Call ID: 61cd5005-329a-49f4-af54-e058b3cc40b1
-  Args:
+    source: :Christian_IX
     type: :Ancestor
-    source: Christian_X
-  AssignClass (bf47370f-e712-4019-8313-76c7124f7463)
- Call ID: bf47370f-e712-4019-8313-76c7124f7463
+  AssignClass (f2e3c697-46d2-4c9b-ba0a-aaff22dde4ff)
+ Call ID: f2e3c697-46d2-4c9b-ba0a-aaff22dde4ff
   Args:
+    source: :Frederik_VIII
     type: :Ancestor
-    source: Frederik_VIII
-  AssignClass (a05576b9-747b-4f01-bc37-d583dba79045)
- Call ID: a05576b9-747b-4f01-bc37-d583dba79045
+  AssignClass (b83567b5-997f-4a39-b982-e57ca06fe698)
+ Call ID: b83567b5-997f-4a39-b982-e57ca06fe698
   Args:
-    source: Alexandrine_of_Mecklenburg-Schwerin
+    source: :Christian_X
     type: :Ancestor
-  AssignClass (9fd503d1-5621-420a-847b-15c6336ed6e4)
- Call ID: 9fd503d1-5621-420a-847b-15c6336ed6e4
+  AssignClass (babe541c-b8db-45ab-ae0b-3d4334678d65)
+ Call ID: babe541c-b8db-45ab-ae0b-3d4334678d65
   Args:
-    source: Louise_of_Sweden
+    source: :Louise_of_Sweden
     type: :Ancestor
-  AssignClass (cf24e768-af37-4243-947d-cafe3a5c3d48)
- Call ID: cf24e768-af37-4243-947d-cafe3a5c3d48
+  AssignClass (545a3c93-204a-439b-9abd-7cc4d2871aa0)
+ Call ID: 545a3c93-204a-439b-9abd-7cc4d2871aa0
   Args:
+    source: :Alexandrine_of_Mecklenburg-Schwerin
     type: :Ancestor
-    source: Frederick_Francis_III
-  AssignClass (93792926-ea3c-4a97-b59f-3405fa209a14)
- Call ID: 93792926-ea3c-4a97-b59f-3405fa209a14
+  AssignClass (a69b2eb4-6736-4665-bc57-0eb898ead0c7)
+ Call ID: a69b2eb4-6736-4665-bc57-0eb898ead0c7
   Args:
+    source: :Frederick_Francis_III
     type: :Ancestor
-    source: Anastasia_Mikhailovna_of_Russia
-  AssignClass (cba0487c-28d7-413b-9b62-2beca9aa8cf8)
- Call ID: cba0487c-28d7-413b-9b62-2beca9aa8cf8
+  AssignClass (4a4dec23-ec15-425d-aeb3-bbc6cfa8b1f5)
+ Call ID: 4a4dec23-ec15-425d-aeb3-bbc6cfa8b1f5
   Args:
-    source: Ingrid_of_Sweden
+    source: :Anastasia_Mikhailovna_of_Russia
     type: :Ancestor
-  AssignClass (3f3cbbc4-c5cb-48d9-b20f-5743e52b766e)
- Call ID: 3f3cbbc4-c5cb-48d9-b20f-5743e52b766e
+  AssignClass (da4e32d9-e014-4eda-9f20-8ed2210464bb)
+ Call ID: da4e32d9-e014-4eda-9f20-8ed2210464bb
   Args:
+    source: :Gustaf_VI_Adolf
     type: :Ancestor
-    source: Frederik_IX
-  AssignClass (46634923-a662-4875-9df6-519e96dd0cc8)
- Call ID: 46634923-a662-4875-9df6-519e96dd0cc8
+  AssignClass (3a64f002-fd9f-4b52-854a-c8b8cab4dd69)
+ Call ID: 3a64f002-fd9f-4b52-854a-c8b8cab4dd69
   Args:
+    source: :Margaret_of_Connaught
     type: :Ancestor
-    source: Margrethe_II
-  AssignClass (55b516d8-d65a-43dc-91e8-a356a01317bb)
- Call ID: 55b516d8-d65a-43dc-91e8-a356a01317bb
+  AssignClass (26da1dfb-6f0f-4ba4-9020-ec18160dbb16)
+ Call ID: 26da1dfb-6f0f-4ba4-9020-ec18160dbb16
   Args:
+    source: :Frederik_IX
     type: :Ancestor
-    source: Knud
-  ValidateShacl (3266ddf9-41cc-467a-8d16-533bba9097e4)
- Call ID: 3266ddf9-41cc-467a-8d16-533bba9097e4
+  ValidateShacl (705624c1-6bff-491d-819c-11e8fe61208f)
+ Call ID: 705624c1-6bff-491d-819c-11e8fe61208f
+  Args:
+  Finish (f650c075-23bf-4bf3-8153-d4919de40f72)
+ Call ID: f650c075-23bf-4bf3-8153-d4919de40f72
   Args:
 
 ================================= Tool Message =================================
@@ -1066,17 +1313,9 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Frederik_IX a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1899 ;
-      :hasBrother data:Knud ;
-      :hasDaughter data:Margrethe_II ;
-      :hasDeathYear 1972 ;
-      :hasFather data:Christian_X ;
-      :hasMarriageYear 1935 ;
-      :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
-      :hasRelation data:Ingrid_of_Sweden .
+  data:Margrethe_II a :Person,
+          :Woman ;
+      :isDaughterOf data:Frederik_IX .
 
   data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
           :Person,
@@ -1088,6 +1327,10 @@ The final data graph after all the edits:
           :Person,
           :Woman .
 
+  data:Christian_IX a :Ancestor,
+          :Man,
+          :Person .
+
   data:Christian_X a :Ancestor,
           :Man,
           :Person ;
@@ -1098,24 +1341,39 @@ The final data graph after all the edits:
           :Man,
           :Person .
 
+  data:Frederik_IX a :Ancestor,
+          :Man,
+          :Person ;
+      :hasAncestor data:Christian_IX ;
+      :hasBirthYear 1899 ;
+      :hasDeathYear 1972 ;
+      :hasFather data:Christian_X ;
+      :hasMarriageYear 1935 ;
+      :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
+      :hasRelation data:Ingrid_of_Sweden ;
+      :isSiblingOf data:Knud .
+
   data:Frederik_VIII a :Ancestor,
           :Man,
           :Person .
 
-  data:Knud a :Ancestor,
+  data:Gustaf_VI_Adolf a :Ancestor,
           :Man,
+          :Person .
+
+  data:Ingrid_of_Sweden a :Person,
+          :Woman ;
+      :hasFather data:Gustaf_VI_Adolf ;
+      :hasMother data:Margaret_of_Connaught .
+
+  data:Knud a :Man,
           :Person .
 
   data:Louise_of_Sweden a :Ancestor,
           :Person,
           :Woman .
 
-  data:Margrethe_II a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasMother data:Ingrid_of_Sweden .
-
-  data:Ingrid_of_Sweden a :Ancestor,
+  data:Margaret_of_Connaught a :Ancestor,
           :Person,
           :Woman .
 
@@ -1125,10 +1383,17 @@ The final data graph after all the edits:
 
 SHACL validation has not produced any violations.
 
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  Finish (9d6c82f4-2ed6-4ea4-bc5d-b87f4ce447f7)
- Call ID: 9d6c82f4-2ed6-4ea4-bc5d-b87f4ce447f7
+  ValidateShacl (74475780-419f-493b-820a-4e4733968b87)
+ Call ID: 74475780-419f-493b-820a-4e4733968b87
+  Args:
+  Finish (342992e5-8f08-4be5-8d76-6f24717c255c)
+ Call ID: 342992e5-8f08-4be5-8d76-6f24717c255c
   Args:

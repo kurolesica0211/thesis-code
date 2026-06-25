@@ -2,36 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carl_Friedrich_Franz_Alexander a :Man,
-        :Person ;
-    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
-    :hasMother data:Princess_Sophie_of_Isenburg .
+data:Beatrix_of_the_Netherlands a :Person,
+        :Woman ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana_of_the_Netherlands .
 
-data:Heinrich_Albert_Johann_Georg a :Man,
-        :Person ;
-    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
-    :hasMother data:Princess_Sophie_of_Isenburg .
+data:Christina_of_the_Netherlands a :Person,
+        :Woman ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana_of_the_Netherlands .
 
-data:Louis_Ferdinand_Christian_Albrecht a :Man,
-        :Person ;
-    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
-    :hasMother data:Princess_Sophie_of_Isenburg .
+data:Irene_of_the_Netherlands a :Person,
+        :Woman ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana_of_the_Netherlands .
 
-data:Wilhelm_II a :Ancestor,
-        :Man .
+data:Leopold_IV_Prince_of_Lippe a :Man,
+        :Person .
 
-data:Donata_of_Castell-R%C3%BCdenhausen a :Person,
+data:Margriet_of_the_Netherlands a :Person,
+        :Woman ;
+    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
+        data:Juliana_of_the_Netherlands .
+
+data:Baroness_Armgard_von_Sierstorpff-Cramm a :Person,
         :Woman .
 
-data:Louis_Ferdinand_Prinz_von_Preussen a :Ancestor,
-        :Man .
+data:Prince_Bernhard_of_Lippe a :Man,
+        :Person .
 
-data:Georg_Friedrich_Prinz_von_Preussen a :Man,
+data:Bernhard_of_Lippe-Biesterfeld a :Man,
         :Person ;
-    :hasBirthYear 1976 ;
-    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;
-    :hasMother data:Donata_of_Castell-R%C3%BCdenhausen .
+    :hasBirthYear 1911 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Prince_Bernhard_of_Lippe ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Baroness_Armgard_von_Sierstorpff-Cramm ;
+    :hasRelation data:Juliana_of_the_Netherlands .
 
-data:Princess_Sophie_of_Isenburg a :Person,
+data:Juliana_of_the_Netherlands a :Person,
         :Woman .
 

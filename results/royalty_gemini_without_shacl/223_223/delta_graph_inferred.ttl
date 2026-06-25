@@ -1,0 +1,112 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Pedro_II_of_Brazil a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Pedro_II_of_Brazil ;
+    :hasRelation data:Ana_Maria_de_Moraes_Barros,
+        data:Eudes_of_Orleans-Braganza,
+        data:Luiz_Philippe_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_II_of_Brazil ;
+    :isAncestorOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Pedro_II_of_Brazil ;
+    :isBrotherOf data:Pedro_II_of_Brazil ;
+    :isSiblingOf data:Pedro_II_of_Brazil .
+
+data:Ana_Maria_de_Moraes_Barros a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Luiz_Philippe_of_Orleans-Braganza ;
+    :hasRelation data:Ana_Maria_de_Moraes_Barros,
+        data:Eudes_of_Orleans-Braganza,
+        data:Luiz_Philippe_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_II_of_Brazil ;
+    :hasSister data:Ana_Maria_de_Moraes_Barros ;
+    :hasSon data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isAncestorOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isAuntOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Ana_Maria_de_Moraes_Barros ;
+    :isMotherOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isParentOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isSiblingOf data:Ana_Maria_de_Moraes_Barros ;
+    :isSisterOf data:Ana_Maria_de_Moraes_Barros .
+
+data:Eudes_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Eudes_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :hasChild data:Luiz_Philippe_of_Orleans-Braganza ;
+    :hasRelation data:Ana_Maria_de_Moraes_Barros,
+        data:Eudes_of_Orleans-Braganza,
+        data:Luiz_Philippe_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_II_of_Brazil ;
+    :hasSon data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isAncestorOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Eudes_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :isBrotherOf data:Eudes_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :isFatherOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isParentOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isSiblingOf data:Eudes_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :isUncleOf data:Luiz_Philippe_of_Orleans-Braganza .
+
+data:Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Eudes_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :hasChild data:Luiz_Philippe_of_Orleans-Braganza ;
+    :hasRelation data:Ana_Maria_de_Moraes_Barros,
+        data:Eudes_of_Orleans-Braganza,
+        data:Luiz_Philippe_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_II_of_Brazil ;
+    :hasSon data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isAncestorOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Eudes_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :isBrotherOf data:Eudes_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :isFatherOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isParentOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isSiblingOf data:Eudes_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :isUncleOf data:Luiz_Philippe_of_Orleans-Braganza .
+
+data:Luiz_Philippe_of_Orleans-Braganza a :Man,
+        :Person ;
+    :hasAncestor data:Ana_Maria_de_Moraes_Barros,
+        data:Eudes_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_II_of_Brazil ;
+    :hasBirthYear 1969 ;
+    :hasBrother data:Luiz_Philippe_of_Orleans-Braganza ;
+    :hasFather data:Eudes_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :hasMother data:Ana_Maria_de_Moraes_Barros ;
+    :hasParent data:Ana_Maria_de_Moraes_Barros,
+        data:Eudes_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :hasRelation data:Ana_Maria_de_Moraes_Barros,
+        data:Eudes_of_Orleans-Braganza,
+        data:Luiz_Philippe_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza,
+        data:Pedro_II_of_Brazil ;
+    :isBloodrelationOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isBrotherOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isChildOf data:Ana_Maria_de_Moraes_Barros,
+        data:Eudes_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza ;
+    :isSiblingOf data:Luiz_Philippe_of_Orleans-Braganza ;
+    :isSonOf data:Ana_Maria_de_Moraes_Barros,
+        data:Eudes_of_Orleans-Braganza,
+        data:Pedro_Henrique_of_Orleans-Braganza .
+

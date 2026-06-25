@@ -85,32 +85,48 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Alexandra of Hanover (Alexandra Louise Marie Olga Elisabeth Therese Vera; 29 September 1882 – 30 August 1963) was Grand Duchess of Mecklenburg-Schwerin as the wife of Grand Duke Frederick Francis IV from their marriage on 7 June 1904 until the Grand Duke abdicated on 14 November 1918, following the German Revolution of 1918.
-Alexandra was the daughter of Ernest Augustus, Crown Prince of Hanover, and Princess Thyra of Denmark.
-Family
+Ernst August, Hereditary Prince of Brunswick, Prince of Hanover (German: Ernst August Prinz von Hannover; 18 March 1914 – 9 December 1987) was head of the House of Hanover from 1953 until his death in 1987.
+From his birth until the German Revolution of 1918–1919 he was the heir apparent to the Duchy of Brunswick, a state of the German Empire.
+He was born at Braunschweig, Germany, the eldest son of Ernest Augustus, Duke of Brunswick and Princess Viktoria Luise of Prussia, the only daughter of Emperor Wilhelm II, Ernest Augustus's third cousin in descent from George III the United Kingdom.
+Ernst August's parents were, therefore, third cousins, once removed.
+From his birth, he was the Hereditary Prince of Brunswick.
+He was also, shortly after birth in 1914, made a British prince by King George V of the United Kingdom, and was heir to the titles Duke of Cumberland and Teviotdale and Earl of Armagh.
+Nonetheless, he held title of Prince of the United Kingdom of Great Britain and Ireland, granted ad personam to the children of the then-Duke of Brunswick by the letters patent of 1914, which remained unrevoked.
+Life
 
-Alexandra was the second eldest daughter and third child of Ernest Augustus, Crown Prince of Hanover (1845–1923) and Princess Thyra of Denmark (1853–1933), the youngest daughter of Christian IX of Denmark (1818–1906) and Louise of Hesse-Kassel (1817–1898).
-Alexandra was a great-great-granddaughter of George III of the United Kingdom (1738–1820) and Charlotte of Mecklenburg-Strelitz (1744–1818).
-Marriage and issue
+He ceased being heir to the duchy of Brunswick at the age of four, when his father abdicated in 1918.
+After his father's death in 1953, he became head of the House of Hanover.
+In 1938 his sister, Princess Frederica had married the later King Paul of Greece and in 1946 his younger brother Prince George William married Princess Sophie of Greece and Denmark, thus becoming the brother-in-law of Prince Philip, Duke of Edinburgh and Queen Elizabeth II of the United Kingdom.
+Ernest Augustus was himself an heir to the British titles of Prince of Great Britain and Ireland, recognised ad personam for Ernst August's father as well as for him and his siblings by King George V of the United Kingdom on 17 June 1914, Duke of Cumberland and Teviotdale, Earl of Armagh, which however were all suspended under the Titles Deprivation Act 1917.
+In addition to being a German, he also held British nationality, after successfully claiming it under the Sophia Naturalization Act 1705 in the case of Attorney-General v. Prince Ernest Augustus of Hanover.
+Nonetheless, a problem arose as foreign royal titles cannot be entered into a British passport.
+Therefore, the titles Prince of Hanover, Duke of Brunswick and Lüneburg could not be mentioned there, nor could the British titles due to the Titles Deprivation Act 1917.
+The name which was finally entered into his British documents, was thus Ernest Augustus Guelph, with the addition of His Royal Highness.
+Guelph is thus also the British last name of his siblings and children, all styled Royal Highnesses in the United Kingdom.
+Ernest Augustus converted Marienburg Castle into a museum in 1954, after having moved to nearby Calenberg Demesne, which caused a row with his mother, who was forced to move out.
+He also sold the family's exile seat, Cumberland Castle at Gmunden, Austria, to the state of Upper Austria in 1979, but his family foundation based in Liechtenstein kept vast forests, a game park, a hunting lodge, The Queen's Villa and other property at Gmunden.
+The family property is now managed by his grandson Ernst August.
+Marriage and children
 
-Alexandra married on 7 June 1904 in Gmunden, Austria-Hungary to Frederick Francis IV, Grand Duke of Mecklenburg-Schwerin (1882–1945), son of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin and his wife Grand Duchess Anastasia Mikhailovna of Russia.
-The bridegroom gave Alexandra a diamond and aquamarine tiara by Faberge.
-Alexandra and Frederick Francis had five children:
-
-
-Grand Duchess of Mecklenburg-Schwerin
-
-In 1913, a fire broke out at Schwerin Castle while the Grand Duke and Duchess were dining there with guests.
-Later life
-
-After the Grand Duke's forced abdication in 1918, the family briefly went into exile in Denmark, the native country of Alexandra's mother, Princess Thyra.
-After his death in 1945, the widowed Alexandra retired to the Glucksburg family estates in Schleswig-Holstein.
+In 1941 during the Second World War, his cousin Prince Hubertus of Prussia married the noted society beauty and aristocrat Baroness Maria Anna von Humboldt-Dachroeden (1916–2003).
+The couple, however, divorced in 1943, after her affair with Ernest Augustus resulted in the birth of a son.
+Ernest Augustus however did not marry Maria Anna because his parents would not have approved, since she was considered of inadequate birth and was also a divorcée, and the marriage would have made his younger brother Prince George William heir to the headship of the House of Hanover.
+The child, christened Christian Ernst August Hubertus, Freiherr von Humboldt-Dachroeden, was born in 1943 and is currently a bank consultant.
+On 5 September 1951, Ernest Augustus married Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg (1925–1980).
+The wedding was attended by many important royal figures, including his sister Queen Frederica and her husband King Paul of Greece, and the heads of the houses of Saxony, Hesse, Mecklenburg, Oldenburg, and Baden.
+The wedding was followed with a reception in the Gallery Building at Herrenhausen Gardens, the only part of the House of Hanover's former summer palace still intact, as the palace itself had been burned down during World War II.
+In 1954, the couple, together with Ernest Augustus's three younger brothers, took part in the ship tour organized by his sister, Queen Frederica, and her husband King Paul of Greece, which became known as the "Cruise of the Kings" and was attended by over 100 royals from all over Europe.
+Princess Ortrud died in 1980.
+Ernest Augustus married again in 1981, Countess Monika zu Solms-Laubach (1929–2015), daughter of Georg, 9th Count of Solms-Laubach (1899–1969) and his wife, Princess Johanna of Solms-Hohensolms-Lich (1905–1982).
+He died at Schulenburg, Pattensen, Lower Saxony, Germany, aged 73, and was buried next to his first wife on a round bastion of Marienburg Castle (Hanover).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -126,39 +142,9 @@ After his death in 1945, the widowed Alexandra retired to the Glucksburg family 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -173,6 +159,23 @@ After his death in 1945, the widowed Alexandra retired to the Glucksburg family 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -190,6 +193,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,29 +275,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,6 +298,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -300,6 +318,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -308,17 +328,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -346,6 +368,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -361,267 +467,320 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (756847e0-1fc3-487b-af1c-dd26d0cc9923)
- Call ID: 756847e0-1fc3-487b-af1c-dd26d0cc9923
+  AssignClass (04568e7f-c78e-4e4b-a485-ff6112d67b2d)
+ Call ID: 04568e7f-c78e-4e4b-a485-ff6112d67b2d
   Args:
-    type: :Woman
-    source: PrincessAlexandraOfHanover
-  AssignClass (ed72fa00-e368-4cf4-8723-6139e0c77c1d)
- Call ID: ed72fa00-e368-4cf4-8723-6139e0c77c1d
-  Args:
-    type: :Person
-    source: PrincessAlexandraOfHanover
-  AddLiteral (37e6927b-643d-4335-9625-155dfe9511f7)
- Call ID: 37e6927b-643d-4335-9625-155dfe9511f7
-  Args:
-    source: PrincessAlexandraOfHanover
-    literal_value: 1882
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (43df5e9a-a53c-4f64-9ef3-2f80bc7fff20)
- Call ID: 43df5e9a-a53c-4f64-9ef3-2f80bc7fff20
-  Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: PrincessAlexandraOfHanover
-    literal_value: 1963
-  AssignClass (95b79993-3465-4205-8319-c55c720e95ac)
- Call ID: 95b79993-3465-4205-8319-c55c720e95ac
-  Args:
+    source: :Ernst_August
     type: :Man
-    source: ErnestAugustusCrownPrinceOfHanover
-  AssignClass (87c03d3e-ed91-4adb-b939-30bf999bc7ec)
- Call ID: 87c03d3e-ed91-4adb-b939-30bf999bc7ec
+  AssignClass (c4ad9498-7643-42d2-b805-b724de36d425)
+ Call ID: c4ad9498-7643-42d2-b805-b724de36d425
   Args:
+    source: :Ernst_August
     type: :Person
-    source: ErnestAugustusCrownPrinceOfHanover
-  AddLiteral (a88c3c0a-81bd-404d-8298-672a1948e753)
- Call ID: a88c3c0a-81bd-404d-8298-672a1948e753
+  AddLiteral (1cf7922e-811a-4004-82e8-a69d3948eaa5)
+ Call ID: 1cf7922e-811a-4004-82e8-a69d3948eaa5
   Args:
-    literal_value: 1845
-    source: ErnestAugustusCrownPrinceOfHanover
-    literal_type: xsd:integer
+    literal_value: 1914
+    source: :Ernst_August
     relation: :hasBirthYear
-  AddLiteral (4cb27b6f-104b-4e7b-b45e-901fdba2ce26)
- Call ID: 4cb27b6f-104b-4e7b-b45e-901fdba2ce26
-  Args:
-    relation: :hasDeathYear
     literal_type: xsd:integer
-    literal_value: 1923
-    source: ErnestAugustusCrownPrinceOfHanover
-  AssignClass (9719f25c-623a-4e3e-ac5a-03a4628e2a19)
- Call ID: 9719f25c-623a-4e3e-ac5a-03a4628e2a19
+  AddLiteral (1f516458-49ee-46e2-9afd-019b4cd77fe9)
+ Call ID: 1f516458-49ee-46e2-9afd-019b4cd77fe9
+  Args:
+    literal_value: 1987
+    relation: :hasDeathYear
+    source: :Ernst_August
+    literal_type: xsd:integer
+  AssignClass (2810435f-5147-476b-9bba-dd21257de91e)
+ Call ID: 2810435f-5147-476b-9bba-dd21257de91e
+  Args:
+    source: :Ernest_Augustus_Duke_of_Brunswick
+    type: :Man
+  AssignClass (db754826-c9af-481a-a862-7f63a8571da7)
+ Call ID: db754826-c9af-481a-a862-7f63a8571da7
+  Args:
+    source: :Ernest_Augustus_Duke_of_Brunswick
+    type: :Person
+  AssignClass (4cb75680-aff1-4721-a6f0-2117728b369c)
+ Call ID: 4cb75680-aff1-4721-a6f0-2117728b369c
   Args:
     type: :Woman
-    source: PrincessThyraOfDenmark
-  AssignClass (a52ff82c-35c7-4aca-b27f-5913ab820f5d)
- Call ID: a52ff82c-35c7-4aca-b27f-5913ab820f5d
+    source: :Princess_Viktoria_Luise_of_Prussia
+  AssignClass (380f687f-c6ea-490c-8b27-449451cfb1bf)
+ Call ID: 380f687f-c6ea-490c-8b27-449451cfb1bf
   Args:
+    source: :Princess_Viktoria_Luise_of_Prussia
     type: :Person
-    source: PrincessThyraOfDenmark
-  AddLiteral (cbc295db-94d6-4fc4-a16c-96d40f122dc7)
- Call ID: cbc295db-94d6-4fc4-a16c-96d40f122dc7
+  AddTriple (7b6f1b73-a8eb-4b5b-a466-92ca616de383)
+ Call ID: 7b6f1b73-a8eb-4b5b-a466-92ca616de383
   Args:
-    relation: :hasBirthYear
-    source: PrincessThyraOfDenmark
-    literal_value: 1853
-    literal_type: xsd:integer
-  AddLiteral (34482d47-9f5f-474e-9cca-2edcdad2a59e)
- Call ID: 34482d47-9f5f-474e-9cca-2edcdad2a59e
-  Args:
-    relation: :hasDeathYear
-    source: PrincessThyraOfDenmark
-    literal_value: 1933
-    literal_type: xsd:integer
-  AddTriple (b0a785c9-c642-4ff5-9fb6-ea147f6f2cef)
- Call ID: b0a785c9-c642-4ff5-9fb6-ea147f6f2cef
-  Args:
+    target: :Ernest_Augustus_Duke_of_Brunswick
     relation: :hasFather
-    source: PrincessAlexandraOfHanover
-    target: ErnestAugustusCrownPrinceOfHanover
-  AddTriple (52a0b611-bdef-4c47-93bc-8208d368d8e2)
- Call ID: 52a0b611-bdef-4c47-93bc-8208d368d8e2
+    source: :Ernst_August
+  AddTriple (db313c97-86eb-4310-bebc-12a08a158232)
+ Call ID: db313c97-86eb-4310-bebc-12a08a158232
   Args:
-    target: PrincessThyraOfDenmark
-    source: PrincessAlexandraOfHanover
+    source: :Ernst_August
     relation: :hasMother
-  AssignClass (d01ed690-5a53-4c66-8a26-1124f9b33abf)
- Call ID: d01ed690-5a53-4c66-8a26-1124f9b33abf
+    target: :Princess_Viktoria_Luise_of_Prussia
+  AssignClass (712a7b08-4a4e-4cb0-b86b-f7e060ca2e81)
+ Call ID: 712a7b08-4a4e-4cb0-b86b-f7e060ca2e81
   Args:
+    source: :Emperor_Wilhelm_II
     type: :Man
-    source: ChristianIXOfDenmark
-  AssignClass (7b2a908d-a5dc-4fe7-83fa-71d9688437a0)
- Call ID: 7b2a908d-a5dc-4fe7-83fa-71d9688437a0
+  AssignClass (1d217c37-3381-4c59-a73a-1a9483ff1d01)
+ Call ID: 1d217c37-3381-4c59-a73a-1a9483ff1d01
   Args:
     type: :Person
-    source: ChristianIXOfDenmark
-  AddLiteral (3387dcba-7756-4024-90fd-a76d48589cc0)
- Call ID: 3387dcba-7756-4024-90fd-a76d48589cc0
+    source: :Emperor_Wilhelm_II
+  AddTriple (5f900a4f-3005-49cb-b8fa-572d05f6f236)
+ Call ID: 5f900a4f-3005-49cb-b8fa-572d05f6f236
   Args:
-    source: ChristianIXOfDenmark
-    literal_value: 1818
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (89434715-3d97-4dfe-938a-40847f5367e8)
- Call ID: 89434715-3d97-4dfe-938a-40847f5367e8
-  Args:
-    relation: :hasDeathYear
-    literal_value: 1906
-    source: ChristianIXOfDenmark
-    literal_type: xsd:integer
-  AssignClass (831b4a55-ea4b-4121-9e10-1eea2ce464e7)
- Call ID: 831b4a55-ea4b-4121-9e10-1eea2ce464e7
-  Args:
-    type: :Woman
-    source: LouiseOfHesseKassel
-  AssignClass (0d8c24b3-0b9d-470b-b109-314eeb184f45)
- Call ID: 0d8c24b3-0b9d-470b-b109-314eeb184f45
-  Args:
-    type: :Person
-    source: LouiseOfHesseKassel
-  AddLiteral (e5c12704-4306-4e0e-bce5-8b0fdc756cb9)
- Call ID: e5c12704-4306-4e0e-bce5-8b0fdc756cb9
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1817
-    source: LouiseOfHesseKassel
-    literal_type: xsd:integer
-  AddLiteral (561e8d20-42c6-46db-9195-e271fc69faf6)
- Call ID: 561e8d20-42c6-46db-9195-e271fc69faf6
-  Args:
-    source: LouiseOfHesseKassel
-    literal_value: 1898
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddTriple (fa5a83aa-60ce-4624-9b99-245b35981783)
- Call ID: fa5a83aa-60ce-4624-9b99-245b35981783
-  Args:
-    source: PrincessThyraOfDenmark
-    target: ChristianIXOfDenmark
+    target: :Emperor_Wilhelm_II
     relation: :hasFather
-  AddTriple (351a3bf2-723c-4089-881e-22b699a04e92)
- Call ID: 351a3bf2-723c-4089-881e-22b699a04e92
+    source: :Princess_Viktoria_Luise_of_Prussia
+  AssignClass (2778a323-d593-407a-9d33-97a78f53c23d)
+ Call ID: 2778a323-d593-407a-9d33-97a78f53c23d
   Args:
-    target: LouiseOfHesseKassel
-    source: PrincessThyraOfDenmark
-    relation: :hasMother
-  AssignClass (a336154a-1416-4b0c-b7d7-890c546b0140)
- Call ID: a336154a-1416-4b0c-b7d7-890c546b0140
-  Args:
-    type: :Man
-    source: GeorgeIIIOfTheUnitedKingdom
-  AssignClass (fc367202-9a7c-43eb-990c-dd7c54cfd6bb)
- Call ID: fc367202-9a7c-43eb-990c-dd7c54cfd6bb
-  Args:
-    type: :Person
-    source: GeorgeIIIOfTheUnitedKingdom
-  AddLiteral (b2785503-d650-45a9-a7fd-56c0f6f0e044)
- Call ID: b2785503-d650-45a9-a7fd-56c0f6f0e044
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1738
-    source: GeorgeIIIOfTheUnitedKingdom
-    relation: :hasBirthYear
-  AddLiteral (2db8c680-8d44-4ade-a763-3e971487640a)
- Call ID: 2db8c680-8d44-4ade-a763-3e971487640a
-  Args:
-    literal_type: xsd:integer
-    source: GeorgeIIIOfTheUnitedKingdom
-    literal_value: 1820
-    relation: :hasDeathYear
-  AssignClass (468e2395-28ac-466c-80d0-f1c2b7ac494e)
- Call ID: 468e2395-28ac-466c-80d0-f1c2b7ac494e
-  Args:
+    source: :Princess_Frederica
     type: :Woman
-    source: CharlotteOfMecklenburgStrelitz
-  AssignClass (2c62eab7-d627-43c6-b5d4-8215d252dfbe)
- Call ID: 2c62eab7-d627-43c6-b5d4-8215d252dfbe
+  AssignClass (c98be449-1c4f-4fdd-b20a-09a8e0e7a5d7)
+ Call ID: c98be449-1c4f-4fdd-b20a-09a8e0e7a5d7
   Args:
     type: :Person
-    source: CharlotteOfMecklenburgStrelitz
-  AddLiteral (de742f22-4270-469c-ba06-0cb059056725)
- Call ID: de742f22-4270-469c-ba06-0cb059056725
+    source: :Princess_Frederica
+  AddTriple (57ed2b3f-e84e-40bb-9e7b-a30eed9d1173)
+ Call ID: 57ed2b3f-e84e-40bb-9e7b-a30eed9d1173
   Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1744
-    source: CharlotteOfMecklenburgStrelitz
-  AddLiteral (c3901689-d1b3-4fe0-b43a-66ecb6cad6bb)
- Call ID: c3901689-d1b3-4fe0-b43a-66ecb6cad6bb
+    target: :Ernst_August
+    relation: :isSisterOf
+    source: :Princess_Frederica
+  AssignClass (c79968b9-4dc9-453a-839d-03e5bbd84cd7)
+ Call ID: c79968b9-4dc9-453a-839d-03e5bbd84cd7
   Args:
-    source: CharlotteOfMecklenburgStrelitz
-    literal_value: 1818
+    source: :King_Paul_of_Greece
+    type: :Man
+  AssignClass (02cd9e1f-e45a-4c3e-a509-e882e442a098)
+ Call ID: 02cd9e1f-e45a-4c3e-a509-e882e442a098
+  Args:
+    type: :Person
+    source: :King_Paul_of_Greece
+  AddLiteral (66eb66a2-8aee-4e81-928d-4183e39b73da)
+ Call ID: 66eb66a2-8aee-4e81-928d-4183e39b73da
+  Args:
+    literal_value: 1938
+    relation: :hasMarriageYear
+    source: :Princess_Frederica
     literal_type: xsd:integer
-    relation: :hasDeathYear
-  AssignClass (eb6193a7-4b23-43cb-9482-56055bfdc597)
- Call ID: eb6193a7-4b23-43cb-9482-56055bfdc597
+  AddTriple (cc31bf3a-eebf-402a-966b-ad4a289aca97)
+ Call ID: cc31bf3a-eebf-402a-966b-ad4a289aca97
+  Args:
+    source: :Princess_Frederica
+    relation: :hasRelation
+    target: :King_Paul_of_Greece
+  AssignClass (74548a0a-dcfe-4c44-a98b-042d94492681)
+ Call ID: 74548a0a-dcfe-4c44-a98b-042d94492681
+  Args:
+    source: :Prince_George_William
+    type: :Man
+  AssignClass (bc177fa5-f2b8-4e0c-b270-798000cc4ee1)
+ Call ID: bc177fa5-f2b8-4e0c-b270-798000cc4ee1
+  Args:
+    source: :Prince_George_William
+    type: :Person
+  AddTriple (39965cb6-d0c1-4452-ad4d-56865a7d9fe6)
+ Call ID: 39965cb6-d0c1-4452-ad4d-56865a7d9fe6
+  Args:
+    target: :Ernst_August
+    source: :Prince_George_William
+    relation: :isBrotherOf
+  AssignClass (7df87c58-e434-4f80-9165-d010fcf6ea9f)
+ Call ID: 7df87c58-e434-4f80-9165-d010fcf6ea9f
+  Args:
+    source: :Princess_Sophie_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (142a75d6-ea33-43b9-be90-892dfe11ef81)
+ Call ID: 142a75d6-ea33-43b9-be90-892dfe11ef81
+  Args:
+    type: :Person
+    source: :Princess_Sophie_of_Greece_and_Denmark
+  AddLiteral (66d299b9-2ac1-4b87-8508-c926f5333415)
+ Call ID: 66d299b9-2ac1-4b87-8508-c926f5333415
+  Args:
+    literal_value: 1946
+    relation: :hasMarriageYear
+    source: :Prince_George_William
+    literal_type: xsd:integer
+  AddTriple (3f16ad42-d96d-471e-b60f-e16716a9afa1)
+ Call ID: 3f16ad42-d96d-471e-b60f-e16716a9afa1
+  Args:
+    source: :Prince_George_William
+    relation: :hasRelation
+    target: :Princess_Sophie_of_Greece_and_Denmark
+  AssignClass (de6293fa-3a11-4a0a-b1d8-a695a8ef257e)
+ Call ID: de6293fa-3a11-4a0a-b1d8-a695a8ef257e
   Args:
     type: :Man
-    source: FrederickFrancisIVGrandDukeOfMecklenburgSchwerin
-  AssignClass (2eac0358-9bf1-4068-9d44-f5c0205f0d58)
- Call ID: 2eac0358-9bf1-4068-9d44-f5c0205f0d58
+    source: :Prince_Hubertus_of_Prussia
+  AssignClass (8717f583-034a-49c1-bf9b-059b4584ccf5)
+ Call ID: 8717f583-034a-49c1-bf9b-059b4584ccf5
+  Args:
+    source: :Prince_Hubertus_of_Prussia
+    type: :Person
+  AssignClass (56d4e19b-c905-45ba-8980-1cf357d65ef9)
+ Call ID: 56d4e19b-c905-45ba-8980-1cf357d65ef9
+  Args:
+    source: :Baroness_Maria_Anna_von_Humboldt_Dachroeden
+    type: :Woman
+  AssignClass (26621a73-e6ed-4b03-8dda-5e2626f7747f)
+ Call ID: 26621a73-e6ed-4b03-8dda-5e2626f7747f
   Args:
     type: :Person
-    source: FrederickFrancisIVGrandDukeOfMecklenburgSchwerin
-  AddLiteral (1a3e5330-6976-46cd-8fcb-a147ba749fb8)
- Call ID: 1a3e5330-6976-46cd-8fcb-a147ba749fb8
+    source: :Baroness_Maria_Anna_von_Humboldt_Dachroeden
+  AddLiteral (37e6c169-58f7-4fd5-ac6a-19a4c6d60b9d)
+ Call ID: 37e6c169-58f7-4fd5-ac6a-19a4c6d60b9d
   Args:
-    relation: :hasBirthYear
+    literal_value: 1941
+    relation: :hasMarriageYear
+    source: :Prince_Hubertus_of_Prussia
     literal_type: xsd:integer
-    source: FrederickFrancisIVGrandDukeOfMecklenburgSchwerin
-    literal_value: 1882
-  AddLiteral (8c0445aa-17f2-44b0-b23e-41fa25a8a3b4)
- Call ID: 8c0445aa-17f2-44b0-b23e-41fa25a8a3b4
+  AddTriple (4400490b-f884-4421-a997-ac3a8752a9ca)
+ Call ID: 4400490b-f884-4421-a997-ac3a8752a9ca
   Args:
-    relation: :hasDeathYear
+    target: :Baroness_Maria_Anna_von_Humboldt_Dachroeden
+    source: :Prince_Hubertus_of_Prussia
+    relation: :hasRelation
+  AssignClass (1188dbf7-fc47-4e1b-b9bd-b2f2405eea83)
+ Call ID: 1188dbf7-fc47-4e1b-b9bd-b2f2405eea83
+  Args:
+    source: :Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden
+    type: :Man
+  AssignClass (50b72ca9-5e82-45a3-8d44-7f2aa4121a09)
+ Call ID: 50b72ca9-5e82-45a3-8d44-7f2aa4121a09
+  Args:
+    source: :Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden
+    type: :Person
+  AddTriple (ff88066e-053c-40f2-8e18-09803f50aabb)
+ Call ID: ff88066e-053c-40f2-8e18-09803f50aabb
+  Args:
+    source: :Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden
+    relation: :hasFather
+    target: :Ernst_August
+  AddTriple (2f65db3f-2f89-40ed-9cb4-992dd9e2d369)
+ Call ID: 2f65db3f-2f89-40ed-9cb4-992dd9e2d369
+  Args:
+    target: :Baroness_Maria_Anna_von_Humboldt_Dachroeden
+    relation: :hasMother
+    source: :Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden
+  AssignClass (9616f503-520d-4ea1-b9cd-b4452833a244)
+ Call ID: 9616f503-520d-4ea1-b9cd-b4452833a244
+  Args:
+    source: :Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg
+    type: :Woman
+  AssignClass (c985316b-3e02-4509-9e42-0e29b7b53334)
+ Call ID: c985316b-3e02-4509-9e42-0e29b7b53334
+  Args:
+    source: :Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg
+    type: :Person
+  AddLiteral (6c957f5f-5ad0-4153-8f01-0bfa48d0ede1)
+ Call ID: 6c957f5f-5ad0-4153-8f01-0bfa48d0ede1
+  Args:
+    literal_value: 1951
+    source: :Ernst_August
+    relation: :hasMarriageYear
     literal_type: xsd:integer
-    source: FrederickFrancisIVGrandDukeOfMecklenburgSchwerin
-    literal_value: 1945
-  AddLiteral (53d8f94f-fe94-4d08-a91e-0d6fef31f530)
- Call ID: 53d8f94f-fe94-4d08-a91e-0d6fef31f530
+  AddTriple (9409862b-de41-4de9-a872-2512a012c713)
+ Call ID: 9409862b-de41-4de9-a872-2512a012c713
+  Args:
+    target: :Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg
+    relation: :hasRelation
+    source: :Ernst_August
+  AssignClass (231e12f6-96e4-4183-ae24-bef4b68f5583)
+ Call ID: 231e12f6-96e4-4183-ae24-bef4b68f5583
+  Args:
+    source: :Countess_Monika_zu_Solms_Laubach
+    type: :Woman
+  AssignClass (908a69d9-4bce-43fe-9a3c-9083e041824b)
+ Call ID: 908a69d9-4bce-43fe-9a3c-9083e041824b
+  Args:
+    source: :Countess_Monika_zu_Solms_Laubach
+    type: :Person
+  AddLiteral (4fac68f0-8fe8-4f72-ba5c-6b90ac1c0c02)
+ Call ID: 4fac68f0-8fe8-4f72-ba5c-6b90ac1c0c02
   Args:
     relation: :hasMarriageYear
-    literal_value: 1904
-    source: PrincessAlexandraOfHanover
+    source: :Ernst_August
     literal_type: xsd:integer
-  AddTriple (bbbc5eef-5339-4e1a-b018-0f988f3c710e)
- Call ID: bbbc5eef-5339-4e1a-b018-0f988f3c710e
+    literal_value: 1981
+  AddTriple (58272605-9ea9-42b7-92ed-d55ca39eebed)
+ Call ID: 58272605-9ea9-42b7-92ed-d55ca39eebed
   Args:
+    source: :Ernst_August
     relation: :hasRelation
-    target: FrederickFrancisIVGrandDukeOfMecklenburgSchwerin
-    source: PrincessAlexandraOfHanover
-  AssignClass (5d0e5cff-54bb-4dea-9cb5-9a622eda49c4)
- Call ID: 5d0e5cff-54bb-4dea-9cb5-9a622eda49c4
+    target: :Countess_Monika_zu_Solms_Laubach
+  AssignClass (23717efe-4328-43d5-9037-c54cf79d4590)
+ Call ID: 23717efe-4328-43d5-9037-c54cf79d4590
   Args:
+    source: :Georg_9th_Count_of_Solms_Laubach
     type: :Man
-    source: FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin
-  AssignClass (f1f9bc80-448a-455a-9b57-082bbbf6a4b9)
- Call ID: f1f9bc80-448a-455a-9b57-082bbbf6a4b9
+  AssignClass (7900a6d2-2c24-43ff-91a8-645c76ba4447)
+ Call ID: 7900a6d2-2c24-43ff-91a8-645c76ba4447
   Args:
+    source: :Georg_9th_Count_of_Solms_Laubach
     type: :Person
-    source: FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin
-  AssignClass (35850f2c-99c7-4ed6-adaf-0f86dfcc2f43)
- Call ID: 35850f2c-99c7-4ed6-adaf-0f86dfcc2f43
+  AssignClass (29501014-3b83-49cd-9164-4db3e6c420cc)
+ Call ID: 29501014-3b83-49cd-9164-4db3e6c420cc
   Args:
     type: :Woman
-    source: GrandDuchessAnastasiaMikhailovnaOfRussia
-  AssignClass (2db16d8d-21e9-4cb5-b0bf-a2e187333511)
- Call ID: 2db16d8d-21e9-4cb5-b0bf-a2e187333511
+    source: :Princess_Johanna_of_Solms_Hohensolms_Lich
+  AssignClass (d4249508-d670-4767-88fb-2ace44a0c9fc)
+ Call ID: d4249508-d670-4767-88fb-2ace44a0c9fc
   Args:
+    source: :Princess_Johanna_of_Solms_Hohensolms_Lich
     type: :Person
-    source: GrandDuchessAnastasiaMikhailovnaOfRussia
-  AddTriple (00136232-bdc7-49fd-a4c6-a73dbbf548ca)
- Call ID: 00136232-bdc7-49fd-a4c6-a73dbbf548ca
+  AddTriple (9ec2836c-15be-4952-afb1-2f571bbd2aae)
+ Call ID: 9ec2836c-15be-4952-afb1-2f571bbd2aae
   Args:
     relation: :hasFather
-    target: FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin
-    source: FrederickFrancisIVGrandDukeOfMecklenburgSchwerin
-  AddTriple (c3331ad5-c85b-479f-84fb-7265b55b065e)
- Call ID: c3331ad5-c85b-479f-84fb-7265b55b065e
+    source: :Countess_Monika_zu_Solms_Laubach
+    target: :Georg_9th_Count_of_Solms_Laubach
+  AddTriple (1b5b79fb-2671-4262-bd2e-a63316fdbbb8)
+ Call ID: 1b5b79fb-2671-4262-bd2e-a63316fdbbb8
   Args:
     relation: :hasMother
-    source: FrederickFrancisIVGrandDukeOfMecklenburgSchwerin
-    target: GrandDuchessAnastasiaMikhailovnaOfRussia
+    source: :Countess_Monika_zu_Solms_Laubach
+    target: :Princess_Johanna_of_Solms_Hohensolms_Lich
+  Finish (bbe76ee1-1ec8-47d0-84b4-5311b41bc7cb)
+ Call ID: bbe76ee1-1ec8-47d0-84b4-5311b41bc7cb
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -802,218 +961,258 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:CharlotteOfMecklenburgStrelitz a :Person,
+  data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden a :Man,
+          :Person ;
+      :hasFather data:Ernst_August ;
+      :hasMother data:Baroness_Maria_Anna_von_Humboldt_Dachroeden .
+
+  data:Prince_George_William a :Man,
+          :Person ;
+      :hasMarriageYear 1946 ;
+      :hasRelation data:Princess_Sophie_of_Greece_and_Denmark ;
+      :isBrotherOf data:Ernst_August .
+
+  data:Prince_Hubertus_of_Prussia a :Man,
+          :Person ;
+      :hasMarriageYear 1941 ;
+      :hasRelation data:Baroness_Maria_Anna_von_Humboldt_Dachroeden .
+
+  data:Princess_Frederica a :Person,
           :Woman ;
-      :hasBirthYear 1744 ;
-      :hasDeathYear 1818 .
+      :hasMarriageYear 1938 ;
+      :hasRelation data:King_Paul_of_Greece ;
+      :isSisterOf data:Ernst_August .
 
-  data:GeorgeIIIOfTheUnitedKingdom a :Man,
-          :Person ;
-      :hasBirthYear 1738 ;
-      :hasDeathYear 1820 .
-
-  data:PrincessAlexandraOfHanover a :Person,
+  data:Countess_Monika_zu_Solms_Laubach a :Person,
           :Woman ;
-      :hasBirthYear 1882 ;
-      :hasDeathYear 1963 ;
-      :hasFather data:ErnestAugustusCrownPrinceOfHanover ;
-      :hasMarriageYear 1904 ;
-      :hasMother data:PrincessThyraOfDenmark ;
-      :hasRelation data:FrederickFrancisIVGrandDukeOfMecklenburgSchwerin .
+      :hasFather data:Georg_9th_Count_of_Solms_Laubach ;
+      :hasMother data:Princess_Johanna_of_Solms_Hohensolms_Lich .
 
-  data:ChristianIXOfDenmark a :Man,
-          :Person ;
-      :hasBirthYear 1818 ;
-      :hasDeathYear 1906 .
-
-  data:ErnestAugustusCrownPrinceOfHanover a :Man,
-          :Person ;
-      :hasBirthYear 1845 ;
-      :hasDeathYear 1923 .
-
-  data:FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin a :Man,
+  data:Emperor_Wilhelm_II a :Man,
           :Person .
 
-  data:FrederickFrancisIVGrandDukeOfMecklenburgSchwerin a :Man,
-          :Person ;
-      :hasBirthYear 1882 ;
-      :hasDeathYear 1945 ;
-      :hasFather data:FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin ;
-      :hasMother data:GrandDuchessAnastasiaMikhailovnaOfRussia .
+  data:Ernest_Augustus_Duke_of_Brunswick a :Man,
+          :Person .
 
-  data:GrandDuchessAnastasiaMikhailovnaOfRussia a :Person,
+  data:Georg_9th_Count_of_Solms_Laubach a :Man,
+          :Person .
+
+  data:King_Paul_of_Greece a :Man,
+          :Person .
+
+  data:Princess_Johanna_of_Solms_Hohensolms_Lich a :Person,
           :Woman .
 
-  data:LouiseOfHesseKassel a :Person,
+  data:Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg a :Person,
+          :Woman .
+
+  data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+          :Woman .
+
+  data:Princess_Viktoria_Luise_of_Prussia a :Person,
           :Woman ;
-      :hasBirthYear 1817 ;
-      :hasDeathYear 1898 .
+      :hasFather data:Emperor_Wilhelm_II .
 
-  data:PrincessThyraOfDenmark a :Person,
-          :Woman ;
-      :hasBirthYear 1853 ;
-      :hasDeathYear 1933 ;
-      :hasFather data:ChristianIXOfDenmark ;
-      :hasMother data:LouiseOfHesseKassel .
+  data:Baroness_Maria_Anna_von_Humboldt_Dachroeden a :Person,
+          :Woman .
+
+  data:Ernst_August a :Man,
+          :Person ;
+      :hasBirthYear 1914 ;
+      :hasDeathYear 1987 ;
+      :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
+      :hasMarriageYear 1951,
+          1981 ;
+      :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
+      :hasRelation data:Countess_Monika_zu_Solms_Laubach,
+          data:Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg .
 
 
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (cd5b2d27-cf23-45ea-83ab-55fcc736d4ac)
- Call ID: cd5b2d27-cf23-45ea-83ab-55fcc736d4ac
+  ValidateShacl (9da5f172-1f47-4f88-b531-9c7ccc5f0826)
+ Call ID: 9da5f172-1f47-4f88-b531-9c7ccc5f0826
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:21
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin is currently lacking the mandatory :Ancestor class assignment, which is required for the :hasFather property.
+      The value Ernst_August for the property hasFather on Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin', class=':Ancestor')
+      AssignClass(Ernst_August, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person GrandDuchessAnastasiaMikhailovnaOfRussia is missing the required :Ancestor class assignment to satisfy the :hasMother property constraint.
+      The value Ernest_Augustus_Duke_of_Brunswick for the property hasFather on Ernst_August does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='GrandDuchessAnastasiaMikhailovnaOfRussia', class=':Ancestor')
+      AssignClass(Ernest_Augustus_Duke_of_Brunswick, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin for the :hasFather property of FrederickFrancisIVGrandDukeOfMecklenburgSchwerin is missing the :Ancestor class.
+      The value Baroness_Maria_Anna_von_Humboldt_Dachroeden for the property hasMother on Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin', class=':Ancestor')
+      AssignClass(Baroness_Maria_Anna_von_Humboldt_Dachroeden, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value ChristianIXOfDenmark for the :hasFather property of PrincessThyraOfDenmark is missing the required :Ancestor class.
+      The value Princess_Viktoria_Luise_of_Prussia for the property hasMother on Ernst_August does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='ChristianIXOfDenmark', class=':Ancestor')
+      AssignClass(Princess_Viktoria_Luise_of_Prussia, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value ErnestAugustusCrownPrinceOfHanover for the :hasFather property of PrincessAlexandraOfHanover is missing the required :Ancestor class.
+      The value Emperor_Wilhelm_II for the property hasFather on Princess_Viktoria_Luise_of_Prussia does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='ErnestAugustusCrownPrinceOfHanover', class=':Ancestor')
+      AssignClass(Emperor_Wilhelm_II, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value GrandDuchessAnastasiaMikhailovnaOfRussia for the :hasMother property of FrederickFrancisIVGrandDukeOfMecklenburgSchwerin is missing the :Ancestor class.
+      The value Ernst_August for the property hasFather on Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='GrandDuchessAnastasiaMikhailovnaOfRussia', class=':Ancestor')
+      AssignClass(Ernst_August, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value LouiseOfHesseKassel for the :hasMother property of PrincessThyraOfDenmark is missing the :Ancestor class.
+      The value Georg_9th_Count_of_Solms_Laubach for the property hasFather on Countess_Monika_zu_Solms_Laubach does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='LouiseOfHesseKassel', class=':Ancestor')
+      AssignClass(Georg_9th_Count_of_Solms_Laubach, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value PrincessThyraOfDenmark for the :hasMother property of PrincessAlexandraOfHanover is missing the :Ancestor class.
+      The value Ernest_Augustus_Duke_of_Brunswick for the property hasFather on Ernst_August does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='PrincessThyraOfDenmark', class=':Ancestor')
+      AssignClass(Ernest_Augustus_Duke_of_Brunswick, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin for the :hasFather property is missing the :Ancestor class.
+      The value Baroness_Maria_Anna_von_Humboldt_Dachroeden for the property hasMother on Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin', class=':Ancestor')
+      AssignClass(Baroness_Maria_Anna_von_Humboldt_Dachroeden, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value ChristianIXOfDenmark for the :hasFather property is missing the :Ancestor class.
+      The value Princess_Johanna_of_Solms_Hohensolms_Lich for the property hasMother on Countess_Monika_zu_Solms_Laubach does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='ChristianIXOfDenmark', class=':Ancestor')
+      AssignClass(Princess_Johanna_of_Solms_Hohensolms_Lich, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value ErnestAugustusCrownPrinceOfHanover for the :hasFather property is missing the :Ancestor class.
+      The value Princess_Viktoria_Luise_of_Prussia for the property hasMother on Ernst_August does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='ErnestAugustusCrownPrinceOfHanover', class=':Ancestor')
+      AssignClass(Princess_Viktoria_Luise_of_Prussia, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value GrandDuchessAnastasiaMikhailovnaOfRussia for the :hasMother property is missing the :Ancestor class.
+      The value Emperor_Wilhelm_II for the property hasFather on Princess_Viktoria_Luise_of_Prussia does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='GrandDuchessAnastasiaMikhailovnaOfRussia', class=':Ancestor')
+      AssignClass(Emperor_Wilhelm_II, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value LouiseOfHesseKassel for the :hasMother property is missing the :Ancestor class.
+      The value Ernst_August for the property hasFather on Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='LouiseOfHesseKassel', class=':Ancestor')
+      AssignClass(Ernst_August, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value PrincessThyraOfDenmark for the :hasMother property is missing the :Ancestor class.
+      The value Georg_9th_Count_of_Solms_Laubach for the property hasFather on Countess_Monika_zu_Solms_Laubach does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='PrincessThyraOfDenmark', class=':Ancestor')
+      AssignClass(Georg_9th_Count_of_Solms_Laubach, :Ancestor)
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value ErnestAugustusCrownPrinceOfHanover for the :hasFather property is missing the :Ancestor class.
+      The value Ernest_Augustus_Duke_of_Brunswick for the property hasFather on Ernst_August does not belong to the required classes :Ancestor or :Man.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='ErnestAugustusCrownPrinceOfHanover', class=':Ancestor')
+      AssignClass(Ernest_Augustus_Duke_of_Brunswick, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value ChristianIXOfDenmark for the :hasFather property is missing the :Ancestor class.
+      The value Baroness_Maria_Anna_von_Humboldt_Dachroeden for the property hasMother on Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='ChristianIXOfDenmark', class=':Ancestor')
+      AssignClass(Baroness_Maria_Anna_von_Humboldt_Dachroeden, :Ancestor)
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value PrincessThyraOfDenmark for the :hasMother property is missing the :Ancestor class.
+      The value Princess_Johanna_of_Solms_Hohensolms_Lich for the property hasMother on Countess_Monika_zu_Solms_Laubach does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='PrincessThyraOfDenmark', class=':Ancestor')
+      AssignClass(Princess_Johanna_of_Solms_Hohensolms_Lich, :Ancestor)
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value LouiseOfHesseKassel for the :hasMother property is missing the :Ancestor class.
+      The value Princess_Viktoria_Luise_of_Prussia for the property hasMother on Ernst_August does not belong to the required classes :Ancestor or :Woman.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='LouiseOfHesseKassel', class=':Ancestor')
+      AssignClass(Princess_Viktoria_Luise_of_Prussia, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Emperor_Wilhelm_II for the property hasFather on Princess_Viktoria_Luise_of_Prussia does not belong to the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Emperor_Wilhelm_II, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value Georg_9th_Count_of_Solms_Laubach for the property hasFather on Countess_Monika_zu_Solms_Laubach does not belong to the required classes :Ancestor or :Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Georg_9th_Count_of_Solms_Laubach, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value Princess_Johanna_of_Solms_Hohensolms_Lich for the property hasMother on Countess_Monika_zu_Solms_Laubach does not belong to the required classes :Ancestor or :Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Princess_Johanna_of_Solms_Hohensolms_Lich, :Ancestor)
 
 
 
@@ -1022,36 +1221,45 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (35c2f936-7ab9-4b2f-8587-7567f3fb5234)
- Call ID: 35c2f936-7ab9-4b2f-8587-7567f3fb5234
+  AssignClass (00be698d-c0a7-4ea1-b91e-741daeb0390f)
+ Call ID: 00be698d-c0a7-4ea1-b91e-741daeb0390f
+  Args:
+    source: :Ernst_August
+    type: :Ancestor
+  AssignClass (a2dfb0cd-bb0a-4317-bcdb-5b2e5ed76bd3)
+ Call ID: a2dfb0cd-bb0a-4317-bcdb-5b2e5ed76bd3
   Args:
     type: :Ancestor
-    source: FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin
-  AssignClass (59c54005-851e-4738-b16a-fcfcd27633b4)
- Call ID: 59c54005-851e-4738-b16a-fcfcd27633b4
+    source: :Ernest_Augustus_Duke_of_Brunswick
+  AssignClass (35b018ee-9294-4c89-ad7f-c07afdaf8e2a)
+ Call ID: 35b018ee-9294-4c89-ad7f-c07afdaf8e2a
   Args:
     type: :Ancestor
-    source: GrandDuchessAnastasiaMikhailovnaOfRussia
-  AssignClass (44ce169a-4d78-4b0f-89d7-a846b09df1f4)
- Call ID: 44ce169a-4d78-4b0f-89d7-a846b09df1f4
+    source: :Baroness_Maria_Anna_von_Humboldt_Dachroeden
+  AssignClass (8a12c3ff-da2a-4369-a318-908d8f20a8cc)
+ Call ID: 8a12c3ff-da2a-4369-a318-908d8f20a8cc
+  Args:
+    source: :Princess_Viktoria_Luise_of_Prussia
+    type: :Ancestor
+  AssignClass (72d0336a-4559-4e8a-a2ad-b022bc9d9b1c)
+ Call ID: 72d0336a-4559-4e8a-a2ad-b022bc9d9b1c
   Args:
     type: :Ancestor
-    source: ChristianIXOfDenmark
-  AssignClass (af4ebd65-cdd3-4eb2-b03c-9d3a516cdb29)
- Call ID: af4ebd65-cdd3-4eb2-b03c-9d3a516cdb29
+    source: :Emperor_Wilhelm_II
+  AssignClass (6fb3e503-718c-432d-b889-d29ee2161d93)
+ Call ID: 6fb3e503-718c-432d-b889-d29ee2161d93
   Args:
     type: :Ancestor
-    source: ErnestAugustusCrownPrinceOfHanover
-  AssignClass (384d9b8d-17d5-431b-8229-750640c078a0)
- Call ID: 384d9b8d-17d5-431b-8229-750640c078a0
+    source: :Georg_9th_Count_of_Solms_Laubach
+  AssignClass (8fbd98e0-2beb-412f-be23-0857b1869a4e)
+ Call ID: 8fbd98e0-2beb-412f-be23-0857b1869a4e
   Args:
     type: :Ancestor
-    source: LouiseOfHesseKassel
-  AssignClass (f1731d7e-06d6-4327-bf90-ef44f7d55e60)
- Call ID: f1731d7e-06d6-4327-bf90-ef44f7d55e60
-  Args:
-    type: :Ancestor
-    source: PrincessThyraOfDenmark
+    source: :Princess_Johanna_of_Solms_Hohensolms_Lich
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1080,65 +1288,78 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:CharlotteOfMecklenburgStrelitz a :Person,
+  data:Christian_Ernst_August_Hubertus_Freiherr_von_Humboldt_Dachroeden a :Man,
+          :Person ;
+      :hasFather data:Ernst_August ;
+      :hasMother data:Baroness_Maria_Anna_von_Humboldt_Dachroeden .
+
+  data:Prince_George_William a :Man,
+          :Person ;
+      :hasMarriageYear 1946 ;
+      :hasRelation data:Princess_Sophie_of_Greece_and_Denmark ;
+      :isBrotherOf data:Ernst_August .
+
+  data:Prince_Hubertus_of_Prussia a :Man,
+          :Person ;
+      :hasMarriageYear 1941 ;
+      :hasRelation data:Baroness_Maria_Anna_von_Humboldt_Dachroeden .
+
+  data:Princess_Frederica a :Person,
           :Woman ;
-      :hasBirthYear 1744 ;
-      :hasDeathYear 1818 .
+      :hasMarriageYear 1938 ;
+      :hasRelation data:King_Paul_of_Greece ;
+      :isSisterOf data:Ernst_August .
 
-  data:GeorgeIIIOfTheUnitedKingdom a :Man,
-          :Person ;
-      :hasBirthYear 1738 ;
-      :hasDeathYear 1820 .
-
-  data:PrincessAlexandraOfHanover a :Person,
+  data:Countess_Monika_zu_Solms_Laubach a :Person,
           :Woman ;
-      :hasBirthYear 1882 ;
-      :hasDeathYear 1963 ;
-      :hasFather data:ErnestAugustusCrownPrinceOfHanover ;
-      :hasMarriageYear 1904 ;
-      :hasMother data:PrincessThyraOfDenmark ;
-      :hasRelation data:FrederickFrancisIVGrandDukeOfMecklenburgSchwerin .
+      :hasFather data:Georg_9th_Count_of_Solms_Laubach ;
+      :hasMother data:Princess_Johanna_of_Solms_Hohensolms_Lich .
 
-  data:ChristianIXOfDenmark a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1818 ;
-      :hasDeathYear 1906 .
-
-  data:ErnestAugustusCrownPrinceOfHanover a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1845 ;
-      :hasDeathYear 1923 .
-
-  data:FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin a :Ancestor,
+  data:Emperor_Wilhelm_II a :Ancestor,
           :Man,
           :Person .
 
-  data:FrederickFrancisIVGrandDukeOfMecklenburgSchwerin a :Man,
-          :Person ;
-      :hasBirthYear 1882 ;
-      :hasDeathYear 1945 ;
-      :hasFather data:FrederickFrancisIIIGrandDukeOfMecklenburgSchwerin ;
-      :hasMother data:GrandDuchessAnastasiaMikhailovnaOfRussia .
+  data:Ernest_Augustus_Duke_of_Brunswick a :Ancestor,
+          :Man,
+          :Person .
 
-  data:GrandDuchessAnastasiaMikhailovnaOfRussia a :Ancestor,
+  data:Georg_9th_Count_of_Solms_Laubach a :Ancestor,
+          :Man,
+          :Person .
+
+  data:King_Paul_of_Greece a :Man,
+          :Person .
+
+  data:Princess_Johanna_of_Solms_Hohensolms_Lich a :Ancestor,
           :Person,
           :Woman .
 
-  data:LouiseOfHesseKassel a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1817 ;
-      :hasDeathYear 1898 .
+  data:Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg a :Person,
+          :Woman .
 
-  data:PrincessThyraOfDenmark a :Ancestor,
+  data:Princess_Sophie_of_Greece_and_Denmark a :Person,
+          :Woman .
+
+  data:Princess_Viktoria_Luise_of_Prussia a :Ancestor,
           :Person,
           :Woman ;
-      :hasBirthYear 1853 ;
-      :hasDeathYear 1933 ;
-      :hasFather data:ChristianIXOfDenmark ;
-      :hasMother data:LouiseOfHesseKassel .
+      :hasFather data:Emperor_Wilhelm_II .
+
+  data:Baroness_Maria_Anna_von_Humboldt_Dachroeden a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Ernst_August a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1914 ;
+      :hasDeathYear 1987 ;
+      :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
+      :hasMarriageYear 1951,
+          1981 ;
+      :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
+      :hasRelation data:Countess_Monika_zu_Solms_Laubach,
+          data:Princess_Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg .
 
 
 
@@ -1146,8 +1367,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (69b411b7-bb2a-424e-b379-b2398e35bdee)
- Call ID: 69b411b7-bb2a-424e-b379-b2398e35bdee
+  ValidateShacl (05b7a5a7-e0e3-4b6e-945a-c56b8610f2fc)
+ Call ID: 05b7a5a7-e0e3-4b6e-945a-c56b8610f2fc
   Args:
 
 ================================= Tool Message =================================
@@ -1158,6 +1379,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (250ab407-6bda-4bfe-9119-e5ffb71001c2)
- Call ID: 250ab407-6bda-4bfe-9119-e5ffb71001c2
+  Finish (bba69ee1-3389-436a-b489-0cc4694bb835)
+ Call ID: bba69ee1-3389-436a-b489-0cc4694bb835
   Args:

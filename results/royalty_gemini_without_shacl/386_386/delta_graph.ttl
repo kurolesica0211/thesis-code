@@ -2,37 +2,40 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Duke_Paul_Frederick_of_Mecklenburg a :Man,
+data:Eitel_Friedrich_of_Prussia a :Man,
         :Person ;
-    :hasBirthYear "1852"^^xsd:string ;
-    :hasDeathYear "1923"^^xsd:string ;
-    :hasFather data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin ;
-    :hasMarriageYear "1881"^^xsd:string ;
-    :hasMother data:Princess_Augusta_Reuss_of_K%C3%B6stritz ;
-    :hasRelation data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin,
-        data:Princess_Marie_of_Windisch_Graetz .
+    :isBrotherOf data:Joachim_of_Prussia .
 
-data:Duchess_Louise_of_Mecklenburg_Schwerin a :Person,
+data:Eva_Maria_Herrera_y_Valdeavellano a :Person,
         :Woman .
 
-data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg_Schwerin a :Man,
-        :Person .
-
-data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg_Schwerin a :Man,
-        :Person .
-
-data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz a :Man,
-        :Person .
-
-data:Prince_Hugo_of_Windisch_Graetz a :Man,
-        :Person .
-
-data:Princess_Augusta_Reuss_of_K%C3%B6stritz a :Person,
+data:Henriette_of_Sch%C3%B6naich-Carolath a :Person,
         :Woman ;
-    :hasFather data:Prince_Henry_LXIII_Reuss_of_K%C3%B6stritz .
+    :hasMother data:Hermine_Reuss_of_Greiz .
 
-data:Princess_Marie_of_Windisch_Graetz a :Person,
-        :Woman ;
-    :hasFather data:Prince_Hugo_of_Windisch_Graetz ;
-    :hasMother data:Duchess_Louise_of_Mecklenburg_Schwerin .
+data:Karl_Franz_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBirthYear 1916 ;
+    :hasDeathYear 1975 ;
+    :hasFather data:Joachim_of_Prussia ;
+    :hasMarriageYear 1940,
+        1946,
+        1959 ;
+    :hasMother data:Marie-Auguste_of_Anhalt .
+
+data:Luise_Dora_Hartmann a :Person,
+        :Woman .
+
+data:Hermine_Reuss_of_Greiz a :Person,
+        :Woman .
+
+data:Marie-Auguste_of_Anhalt a :Person,
+        :Woman .
+
+data:Wilhelm_II a :Man,
+        :Person .
+
+data:Joachim_of_Prussia a :Man,
+        :Person .
 

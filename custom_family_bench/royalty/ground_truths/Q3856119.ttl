@@ -7,10 +7,21 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Mary_McCorquodale a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Fergus_Bowes-Lyon a :Person ;
+    rdfs:label "Fergus Bowes-Lyon" ;
+    data:posIndicesFull "721:738" ;
+    data:wdtLink wdt:Q5444165 ;
+    :hasSex data:male .
+
+data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne a :Person ;
+    rdfs:label "Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne" ;
+    data:wdtLink wdt:Q3856119 ;
+    :alsoKnownAs "Fergus Michael Claude Bowes-Lyon, 17th Earl of Strathmore and Kinghorne" ;
+    :hasParent data:Elizabeth_Cator,
+        data:Michael_Bowes-Lyon ;
+    :hasSex data:male .
+
+data:Mary_McCorquodale a :Person ;
     rdfs:label "Mary McCorquodale" ;
     data:posIndicesFull "748:772" ;
     data:wdtLink wdt:Q75240080 ;
@@ -23,109 +34,7 @@ data:Mary_McCorquodale a :Ancestor,
         "The Countess of Strathmore" ;
     :hasSex data:female .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Elizabeth_Cator a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth Cator" ;
-    data:posIndicesFull "367:391" ;
-    data:posIndicesPart "530:535" ;
-    data:wdtLink wdt:Q75240065 ;
-    :alsoKnownAs "Elizabeth Bowes-Lyon",
-        "Elizabeth Margaret Bowes-Lyon",
-        "Elizabeth Margaret Cator" ;
-    :hasChild data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
-    :hasSex data:female ;
-    :hasSon data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
-    :isMotherOf data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
-    :isParentOf data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne .
-
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "226:244",
-        "232:244",
-        "615:633",
-        "621:633" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother .
-
-data:Fergus_Bowes-Lyon a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Fergus Bowes-Lyon" ;
-    data:posIndicesFull "721:738" ;
-    data:wdtLink wdt:Q5444165 ;
-    :hasBrother data:Michael_Bowes-Lyon ;
-    :hasSex data:male ;
-    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isBrotherOf data:Michael_Bowes-Lyon,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isSiblingOf data:Michael_Bowes-Lyon,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isUncleOf data:Elizabeth_II,
-        data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne .
-
-data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Fergus Bowes-Lyon, 17th Earl of Strathmore and Kinghorne" ;
-    data:wdtLink wdt:Q3856119 ;
-    :alsoKnownAs "Fergus Michael Claude Bowes-Lyon, 17th Earl of Strathmore and Kinghorne" ;
-    :hasFather data:Michael_Bowes-Lyon ;
-    :hasMother data:Elizabeth_Cator ;
-    :hasParent data:Elizabeth_Cator,
-        data:Michael_Bowes-Lyon ;
-    :hasSex data:male ;
-    :isChildOf data:Elizabeth_Cator,
-        data:Michael_Bowes-Lyon ;
-    :isSonOf data:Elizabeth_Cator,
-        data:Michael_Bowes-Lyon .
-
-data:Michael_Bowes-Lyon a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Michael Bowes-Lyon" ;
-    data:posIndicesFull "328:362" ;
-    data:posIndicesPart "929:936" ;
-    data:wdtLink wdt:Q63806478 ;
-    :alsoKnownAs "Hon. Michael Bowes-Lyon",
-        "Hon. Michael Claude Hamilton Bowes-Lyon",
-        "Michael Claude Hamilton Bowes-Lyon" ;
-    :hasBrother data:Fergus_Bowes-Lyon ;
-    :hasChild data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
-    :hasSex data:male ;
-    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSon data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
-    :isBrotherOf data:Fergus_Bowes-Lyon,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isFatherOf data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
-    :isParentOf data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
-    :isSiblingOf data:Fergus_Bowes-Lyon,
-        data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isUncleOf data:Elizabeth_II .
-
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
     rdfs:label "Queen Elizabeth, The Queen Mother" ;
     data:posIndicesFull "169:184",
         "185:201",
@@ -147,16 +56,35 @@ data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
         "Queen-Empress Elizabeth",
         "The Queen Mother",
         "The Queen Mum" ;
-    :hasBrother data:Fergus_Bowes-Lyon,
-        data:Michael_Bowes-Lyon ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasSex data:female ;
-    :isAuntOf data:Fergus_Bowes-Lyon-_17th_Earl_of_Strathmore_and_Kinghorne ;
-    :isMotherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II ;
-    :isSiblingOf data:Fergus_Bowes-Lyon,
-        data:Michael_Bowes-Lyon ;
-    :isSisterOf data:Fergus_Bowes-Lyon,
-        data:Michael_Bowes-Lyon .
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Elizabeth_Cator a :Person ;
+    rdfs:label "Elizabeth Cator" ;
+    data:posIndicesFull "367:391" ;
+    data:posIndicesPart "530:535" ;
+    data:wdtLink wdt:Q75240065 ;
+    :alsoKnownAs "Elizabeth Bowes-Lyon",
+        "Elizabeth Margaret Bowes-Lyon",
+        "Elizabeth Margaret Cator" ;
+    :hasSex data:female .
+
+data:Michael_Bowes-Lyon a :Person ;
+    rdfs:label "Michael Bowes-Lyon" ;
+    data:posIndicesFull "328:362" ;
+    data:posIndicesPart "929:936" ;
+    data:wdtLink wdt:Q63806478 ;
+    :alsoKnownAs "Hon. Michael Bowes-Lyon",
+        "Hon. Michael Claude Hamilton Bowes-Lyon",
+        "Michael Claude Hamilton Bowes-Lyon" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

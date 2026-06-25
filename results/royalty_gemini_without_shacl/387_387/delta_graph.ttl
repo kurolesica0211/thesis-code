@@ -2,34 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Fergus_Bowes-Lyon a :Man,
-        :Person ;
-    :isSonOf data:Michael_Claude_Hamilton_Bowes-Lyon .
-
-data:Claude_Bowes-Lyon a :Man,
-        :Person .
-
-data:Elizabeth_Margaret_Cator a :Person,
+data:LenaElizabethTindall a :Person,
         :Woman ;
-    :hasFather data:John_Cator .
+    :hasFather data:MikeTindall ;
+    :hasMother data:ZaraTindall .
 
-data:Elizabeth_the_Queen_Mother a :Person,
+data:MiaGraceTindall a :Person,
+        :Woman ;
+    :hasFather data:MikeTindall ;
+    :hasMother data:ZaraTindall .
+
+data:AnnePrincessRoyal a :Person,
         :Woman .
 
-data:John_Cator a :Man,
+data:FelicityWade a :Person,
+        :Woman .
+
+data:MarkPhillips a :Man,
         :Person .
 
-data:Michael_Claude_Hamilton_Bowes-Lyon a :Man,
-        :Person ;
-    :hasBirthYear 1893 ;
-    :hasDeathYear 1953 ;
-    :hasFather data:Claude_Bowes-Lyon ;
-    :hasMarriageYear 1928 ;
-    :hasRelation data:Elizabeth_Margaret_Cator ;
-    :isBrotherOf data:Elizabeth_the_Queen_Mother ;
-    :isUncleOf data:Queen_Elizabeth_II ;
-    :knownAs "Mickie Bowes-Lyon"^^xsd:string .
+data:PeterPhillips a :Man,
+        :Person .
 
-data:Queen_Elizabeth_II a :Person,
+data:StephaniePhillips a :Person,
         :Woman .
+
+data:ZaraTindall a :Person,
+        :Woman ;
+    :formerlyKnownAs "Zara Anne Elizabeth Phillips"^^xsd:string ;
+    :hasBirthYear 1981 ;
+    :hasBrother data:PeterPhillips ;
+    :hasFather data:MarkPhillips ;
+    :hasMarriageYear 2011 ;
+    :hasMother data:AnnePrincessRoyal ;
+    :hasRelation data:MikeTindall ;
+    :hasSister data:FelicityWade,
+        data:StephaniePhillips ;
+    :knownAs "Zara Anne Elizabeth Tindall"^^xsd:string .
+
+data:MikeTindall a :Man,
+        :Person .
 

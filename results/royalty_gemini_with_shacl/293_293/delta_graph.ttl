@@ -2,54 +2,40 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexandra_of_Hanover a :Person,
-        :Woman ;
-    :hasFather data:Ernst_August_Prince_of_Hanover ;
-    :hasSex data:Female .
+data:Camilla a :Person,
+        :Woman .
 
-data:Christian_of_Hanover a :Man,
+data:CharlesIII a :Man,
+        :Person .
+
+data:ElizabethII a :Person,
+        :Woman .
+
+data:MeghanMarkle a :Person,
+        :Woman .
+
+data:Naruhito a :Man,
+        :Person .
+
+data:PrinceHarry a :Man,
+        :Person .
+
+data:SamuelChatto a :Man,
         :Person ;
-    :hasFather data:Ernst_August_Prince_of_Hanover ;
-    :hasMother data:Chantal_Hochuli ;
-    :hasSex data:Male .
+    :hasAncestor data:PrincessMargaret ;
+    :hasBirthYear 1996 ;
+    :hasFather data:DanielChatto ;
+    :hasMother data:LadySarahChatto .
 
-data:Ernst_August_Hereditary_Prince_of_Hanover a :Man,
-        :Person ;
-    :hasBirthYear 1983 ;
-    :hasFather data:Ernst_August_Prince_of_Hanover ;
-    :hasMarriageYear 2017 ;
-    :hasMother data:Chantal_Hochuli ;
-    :hasRelation data:Ekaterina_Igorievna_Malysheva ;
-    :hasSex data:Male .
-
-data:Ekaterina_Igorievna_Malysheva a :Person,
-        :Woman ;
-    :hasBirthYear 1986 ;
-    :hasFather data:Igor_Malyshev ;
-    :hasMother data:Svetlana_Malysheva ;
-    :hasSex data:Female .
-
-data:Igor_Malyshev a :Ancestor,
+data:DanielChatto a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
-data:Svetlana_Malysheva a :Ancestor,
+data:LadySarahChatto a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female .
+        :Woman .
 
-data:Chantal_Hochuli a :Ancestor,
+data:PrincessMargaret a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Ernst_August_Prince_of_Hanover a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Female a :Female .
-
-data:Male a :Male .
+        :Woman .
 

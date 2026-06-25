@@ -1,0 +1,154 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Autumn_Kelly a :Woman ;
+    :hasRelation data:Autumn_Kelly ;
+    :hasSister data:Autumn_Kelly ;
+    :isBloodrelationOf data:Autumn_Kelly ;
+    :isSiblingOf data:Autumn_Kelly ;
+    :isSisterOf data:Autumn_Kelly .
+
+data:Zara_Tindall a :Woman ;
+    :hasBrother data:Peter_Phillips ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Isla_Phillips,
+        data:Peter_Phillips,
+        data:Savannah_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Zara_Tindall ;
+    :isAuntOf data:Isla_Phillips,
+        data:Savannah_Phillips ;
+    :isBloodrelationOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isSiblingOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isSisterOf data:Peter_Phillips,
+        data:Zara_Tindall .
+
+data:Mark_Phillips a :Ancestor,
+        :Man ;
+    :hasBrother data:Mark_Phillips ;
+    :hasChild data:Peter_Phillips ;
+    :hasRelation data:Isla_Phillips,
+        data:Mark_Phillips,
+        data:Peter_Phillips,
+        data:Savannah_Phillips ;
+    :hasSon data:Peter_Phillips ;
+    :isAncestorOf data:Isla_Phillips,
+        data:Peter_Phillips,
+        data:Savannah_Phillips ;
+    :isBloodrelationOf data:Mark_Phillips ;
+    :isBrotherOf data:Mark_Phillips ;
+    :isFatherOf data:Peter_Phillips ;
+    :isParentOf data:Peter_Phillips ;
+    :isSiblingOf data:Mark_Phillips ;
+    :isUncleOf data:Peter_Phillips .
+
+data:Anne_Princess_Royal a :Ancestor,
+        :Woman ;
+    :hasChild data:Peter_Phillips ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Isla_Phillips,
+        data:Peter_Phillips,
+        data:Savannah_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Anne_Princess_Royal ;
+    :hasSon data:Peter_Phillips ;
+    :isAncestorOf data:Isla_Phillips,
+        data:Peter_Phillips,
+        data:Savannah_Phillips ;
+    :isAuntOf data:Peter_Phillips ;
+    :isBloodrelationOf data:Anne_Princess_Royal ;
+    :isMotherOf data:Peter_Phillips ;
+    :isParentOf data:Peter_Phillips ;
+    :isSiblingOf data:Anne_Princess_Royal ;
+    :isSisterOf data:Anne_Princess_Royal .
+
+data:Isla_Phillips a :Woman ;
+    :hasAncestor data:Anne_Princess_Royal,
+        data:Mark_Phillips,
+        data:Peter_Phillips ;
+    :hasFather data:Peter_Phillips ;
+    :hasParent data:Peter_Phillips ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Isla_Phillips,
+        data:Mark_Phillips,
+        data:Peter_Phillips,
+        data:Savannah_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Isla_Phillips,
+        data:Savannah_Phillips ;
+    :isBloodrelationOf data:Isla_Phillips,
+        data:Savannah_Phillips ;
+    :isChildOf data:Peter_Phillips ;
+    :isDaughterOf data:Peter_Phillips ;
+    :isSiblingOf data:Isla_Phillips,
+        data:Savannah_Phillips ;
+    :isSisterOf data:Isla_Phillips,
+        data:Savannah_Phillips .
+
+data:Savannah_Phillips a :Woman ;
+    :hasAncestor data:Anne_Princess_Royal,
+        data:Mark_Phillips,
+        data:Peter_Phillips ;
+    :hasFather data:Peter_Phillips ;
+    :hasParent data:Peter_Phillips ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Isla_Phillips,
+        data:Mark_Phillips,
+        data:Peter_Phillips,
+        data:Savannah_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Isla_Phillips,
+        data:Savannah_Phillips ;
+    :isBloodrelationOf data:Isla_Phillips,
+        data:Savannah_Phillips ;
+    :isChildOf data:Peter_Phillips ;
+    :isDaughterOf data:Peter_Phillips ;
+    :isSiblingOf data:Isla_Phillips,
+        data:Savannah_Phillips ;
+    :isSisterOf data:Isla_Phillips,
+        data:Savannah_Phillips .
+
+data:Peter_Phillips a :Ancestor,
+        :Man ;
+    :hasAncestor data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasBirthYear 1977 ;
+    :hasBrother data:Peter_Phillips ;
+    :hasChild data:Isla_Phillips,
+        data:Savannah_Phillips ;
+    :hasDaughter data:Isla_Phillips,
+        data:Savannah_Phillips ;
+    :hasFather data:Mark_Phillips ;
+    :hasMarriageYear 2008 ;
+    :hasMother data:Anne_Princess_Royal ;
+    :hasParent data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasRelation data:Anne_Princess_Royal,
+        data:Isla_Phillips,
+        data:Mark_Phillips,
+        data:Peter_Phillips,
+        data:Savannah_Phillips,
+        data:Zara_Tindall ;
+    :hasSister data:Zara_Tindall ;
+    :isAncestorOf data:Isla_Phillips,
+        data:Savannah_Phillips ;
+    :isBloodrelationOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isBrotherOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isChildOf data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :isFatherOf data:Isla_Phillips,
+        data:Savannah_Phillips ;
+    :isParentOf data:Isla_Phillips,
+        data:Savannah_Phillips ;
+    :isSiblingOf data:Peter_Phillips,
+        data:Zara_Tindall ;
+    :isSonOf data:Anne_Princess_Royal,
+        data:Mark_Phillips ;
+    :isUncleOf data:Isla_Phillips,
+        data:Savannah_Phillips .
+

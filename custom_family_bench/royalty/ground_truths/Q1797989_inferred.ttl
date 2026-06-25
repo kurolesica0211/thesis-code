@@ -1,0 +1,169 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Person,
+        :Woman ;
+    rdfs:label "Princess Alexandra of Sayn-Wittgenstein-Berleburg"^^xsd:string ;
+    data:posIndicesFull "0:49"^^xsd:string,
+        "9:49"^^xsd:string ;
+    data:posIndicesPart "1030:1039"^^xsd:string,
+        "1136:1145"^^xsd:string,
+        "1374:1383"^^xsd:string,
+        "1723:1731"^^xsd:string,
+        "1732:1741"^^xsd:string,
+        "1812:1820"^^xsd:string,
+        "1821:1830"^^xsd:string,
+        "486:494"^^xsd:string,
+        "538:546"^^xsd:string,
+        "560:568"^^xsd:string,
+        "569:578"^^xsd:string,
+        "738:747"^^xsd:string,
+        "804:813"^^xsd:string,
+        "921:930"^^xsd:string ;
+    data:wdtLink wdt:Q1797989 ;
+    :alsoKnownAs "Alexandra Rosemarie Ingrid Benedikte Prinzessin zu Sayn-Wittgenstein-Berleburg"^^xsd:string,
+        "Alexandra Rosemarie Ingrid Benedikte of Sayn-Wittgenstein-Berleburg"^^xsd:string,
+        "Alexandra of Sayn-Wittgenstein-Berleburg"^^xsd:string,
+        "Princess Alexandra Rosemarie Ingrid Benedikte of Sayn-Wittgenstein-Berleburg"^^xsd:string ;
+    :hasAncestor data:Frederik_IX_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasMother data:Princess_Benedikte_of_Denmark ;
+    :hasParent data:Princess_Benedikte_of_Denmark ;
+    :hasRelation data:Frederik_IX_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
+    :isChildOf data:Princess_Benedikte_of_Denmark ;
+    :isDaughterOf data:Princess_Benedikte_of_Denmark ;
+    :isSiblingOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg .
+
+data:Margrethe_II_of_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Margrethe II of Denmark"^^xsd:string ;
+    data:posIndicesFull "304:316"^^xsd:string ;
+    data:posIndicesPart "1560:1567"^^xsd:string,
+        "389:396"^^xsd:string,
+        "419:426"^^xsd:string,
+        "621:628"^^xsd:string ;
+    data:wdtLink wdt:Q102139 ;
+    :alsoKnownAs "Ingahild Grathmer"^^xsd:string,
+        "Margrethe II"^^xsd:string ;
+    :hasAncestor data:Frederik_IX_of_Denmark ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasParent data:Frederik_IX_of_Denmark ;
+    :hasRelation data:Frederik_IX_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isAuntOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isChildOf data:Frederik_IX_of_Denmark ;
+    :isDaughterOf data:Frederik_IX_of_Denmark ;
+    :isSiblingOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederik IX of Denmark"^^xsd:string ;
+    data:posIndicesFull "467:478"^^xsd:string ;
+    data:posIndicesPart "1560:1567"^^xsd:string ;
+    data:wdtLink wdt:Q151312 ;
+    :alsoKnownAs "Christian Frederik Franz Michael Carl Valdemar Georg"^^xsd:string,
+        "Frederick IX"^^xsd:string,
+        "Frederik IX"^^xsd:string,
+        "King Frederick IX of Denmark"^^xsd:string,
+        "King Frederik IX of Denmark"^^xsd:string ;
+    :hasBrother data:Frederik_IX_of_Denmark ;
+    :hasChild data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasDaughter data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasRelation data:Frederik_IX_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasSex data:male ;
+    :isAncestorOf data:Margrethe_II_of_Denmark,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :isBloodrelationOf data:Frederik_IX_of_Denmark ;
+    :isBrotherOf data:Frederik_IX_of_Denmark ;
+    :isFatherOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isParentOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isSiblingOf data:Frederik_IX_of_Denmark ;
+    :isUncleOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark .
+
+data:Princess_Benedikte_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Benedikte of Denmark"^^xsd:string ;
+    data:posIndicesFull "251:280"^^xsd:string ;
+    data:posIndicesPart "1560:1567"^^xsd:string,
+        "1723:1731"^^xsd:string,
+        "1812:1820"^^xsd:string,
+        "389:396"^^xsd:string,
+        "419:426"^^xsd:string,
+        "486:494"^^xsd:string,
+        "495:504"^^xsd:string,
+        "538:546"^^xsd:string,
+        "560:568"^^xsd:string,
+        "621:628"^^xsd:string ;
+    data:wdtLink wdt:Q817052 ;
+    :alsoKnownAs "Benedikte Astrid Ingeborg Ingrid"^^xsd:string,
+        "Benedikte Astrid Ingeborg Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark"^^xsd:string,
+        "Princess Benedikte of Denmark, Princess of Sayn-Wittgenstein-Berleburg"^^xsd:string ;
+    :hasAncestor data:Frederik_IX_of_Denmark ;
+    :hasChild data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
+    :hasDaughter data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasParent data:Frederik_IX_of_Denmark ;
+    :hasRelation data:Frederik_IX_of_Denmark,
+        data:Margrethe_II_of_Denmark,
+        data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isAncestorOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
+    :isAuntOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isChildOf data:Frederik_IX_of_Denmark ;
+    :isDaughterOf data:Frederik_IX_of_Denmark ;
+    :isMotherOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
+    :isParentOf data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark ;
+    :isSisterOf data:Margrethe_II_of_Denmark,
+        data:Princess_Benedikte_of_Denmark .
+

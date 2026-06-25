@@ -2,59 +2,80 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Beatrice_of_Orleans-Borbon a :Ancestor,
-        :Person,
+data:Alexia_of_Greece a :Woman ;
+    :isSisterOf data:Pavlos_Crown_Prince_of_Greece .
+
+data:Felipe_VI_of_Spain a :Man .
+
+data:Frederik_X_of_Denmark a :Man .
+
+data:Marie-Chantal_Miller a :Ancestor,
         :Woman ;
-    :isAuntOf data:Vladimir_Kirillovich_of_Russia .
+    :isMotherOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon .
 
-data:Maria_Kirillovna a :Person,
+data:Nikolaos_of_Greece a :Man ;
+    :isBrotherOf data:Pavlos_Crown_Prince_of_Greece .
+
+data:Philippos_of_Greece a :Man ;
+    :hasBirthYear 1986 ;
+    :isBrotherOf data:Pavlos_Crown_Prince_of_Greece .
+
+data:Theodora_of_Greece a :Woman ;
+    :hasBirthYear 1983 ;
+    :isSisterOf data:Pavlos_Crown_Prince_of_Greece .
+
+data:Anne-Marie_of_Greece a :Ancestor,
         :Woman ;
-    :isSisterOf data:Vladimir_Kirillovich_of_Russia .
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :isSisterOf data:Margrethe_II_of_Denmark .
 
-data:Maria_Vladimirovna a :Person,
-        :Woman ;
-    :hasMother data:Leonida_Georgievna_Bagration-Moukhransky ;
-    :isDaughterOf data:Vladimir_Kirillovich_of_Russia .
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man ;
+    :hasDeathYear 2023 ;
+    :hasFather data:Paul_of_Greece ;
+    :isBrotherOf data:Sofia_of_Spain .
 
-data:Alfred_Duke_of_Saxe-Coburg_and_Gotha a :Ancestor,
-        :Man,
-        :Person .
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man .
 
-data:Cyril_Vladimirovich a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Vladimir_Alexandrovich ;
-    :hasMother data:Maria_Pavlovna .
-
-data:Maria_Pavlovna a :Ancestor,
-        :Person,
+data:Ingrid_of_Sweden a :Ancestor,
         :Woman .
 
-data:Marie_Alexandrovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman .
+data:Margrethe_II_of_Denmark a :Woman .
 
-data:Viktoria_Feodorovna a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Alfred_Duke_of_Saxe-Coburg_and_Gotha ;
-    :hasMother data:Marie_Alexandrovna_of_Russia .
+data:Paul_of_Greece a :Ancestor,
+        :Man .
 
-data:Vladimir_Alexandrovich a :Ancestor,
-        :Man,
-        :Person .
+data:Sofia_of_Spain a :Woman .
 
-data:Leonida_Georgievna_Bagration-Moukhransky a :Ancestor,
-        :Person,
-        :Woman .
+data:Achileas-Andreas a :Man ;
+    :hasBirthYear 2000 .
 
-data:Vladimir_Kirillovich_of_Russia a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1917 ;
-    :hasDeathYear 1992 ;
-    :hasFather data:Cyril_Vladimirovich ;
-    :hasMarriageYear 1948 ;
-    :hasMother data:Viktoria_Feodorovna ;
-    :hasRelation data:Leonida_Georgievna_Bagration-Moukhransky .
+data:Aristides-Stavros a :Man ;
+    :hasBirthYear 2008 .
+
+data:Constantine-Alexios a :Man ;
+    :hasBirthYear 1998 .
+
+data:Maria-Olympia a :Woman ;
+    :hasBirthYear 1996 .
+
+data:Odysseas-Kimon a :Man ;
+    :hasBirthYear 2004 .
+
+data:Pavlos_Crown_Prince_of_Greece a :Ancestor,
+        :Man ;
+    :hasBirthYear 1967 ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie_of_Greece ;
+    :isFatherOf data:Achileas-Andreas,
+        data:Aristides-Stavros,
+        data:Constantine-Alexios,
+        data:Maria-Olympia,
+        data:Odysseas-Kimon .
 

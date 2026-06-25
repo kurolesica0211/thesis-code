@@ -10,23 +10,25 @@ data:Mary_Malcolm a :Person,
     :hasMarriageYear 1937 ;
     :hasMother data:Jeanne_Langtry ;
     :hasRelation data:Sir_Basil_Bartlett ;
-    :hasSex data:Female_Sex .
+    :hasSex data:Female .
+
+data:Female a :Sex .
 
 data:Jeanne_Langtry a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female_Sex .
+    :hasBirthYear 1881 ;
+    :hasDeathYear 1964 ;
+    :hasMother data:Lillie_Langtry .
+
+data:Lillie_Langtry a :Ancestor,
+        :Person,
+        :Woman .
 
 data:Sir_Basil_Bartlett a :Man,
-        :Person ;
-    :hasSex data:Male_Sex .
+        :Person .
 
 data:Sir_Ian_Malcolm a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male_Sex .
-
-data:Female_Sex a :Female .
-
-data:Male_Sex a :Male .
+        :Person .
 

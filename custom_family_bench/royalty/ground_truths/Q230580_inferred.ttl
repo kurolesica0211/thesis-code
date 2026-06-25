@@ -1,0 +1,305 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Iñaki_Urdangarin a :Man,
+        :Person ;
+    rdfs:label "Iñaki Urdangarin"^^xsd:string ;
+    data:posIndicesFull "1160:1176"^^xsd:string,
+        "588:604"^^xsd:string ;
+    data:posIndicesPart "1325:1335"^^xsd:string ;
+    data:wdtLink wdt:Q356560 ;
+    :alsoKnownAs "Don Iñaki Urdangarin Liebaert"^^xsd:string ;
+    :hasBrother data:Iñaki_Urdangarin ;
+    :hasRelation data:Iñaki_Urdangarin ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Iñaki_Urdangarin ;
+    :isBrotherOf data:Iñaki_Urdangarin ;
+    :isSiblingOf data:Iñaki_Urdangarin .
+
+data:Frederica_of_Hanover a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Frederica of Hanover"^^xsd:string ;
+    data:posIndicesFull "157:165"^^xsd:string ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka"^^xsd:string,
+        "Friederike Luise von Griechenland"^^xsd:string,
+        "Princess Fredericka"^^xsd:string ;
+    :hasChild data:Queen_Sofía_of_Spain ;
+    :hasDaughter data:Queen_Sofía_of_Spain ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Frederica_of_Hanover,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Frederica_of_Hanover ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Queen_Sofía_of_Spain ;
+    :isAuntOf data:Queen_Sofía_of_Spain ;
+    :isBloodrelationOf data:Frederica_of_Hanover ;
+    :isMotherOf data:Queen_Sofía_of_Spain ;
+    :isParentOf data:Queen_Sofía_of_Spain ;
+    :isSiblingOf data:Frederica_of_Hanover ;
+    :isSisterOf data:Frederica_of_Hanover .
+
+data:Juan_Carlos_I_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Juan Carlos I of Spain"^^xsd:string ;
+    data:posIndicesFull "282:295"^^xsd:string ;
+    data:posIndicesPart "1802:1807"^^xsd:string,
+        "671:675"^^xsd:string,
+        "676:682"^^xsd:string ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias"^^xsd:string,
+        "Juan Carlos I"^^xsd:string ;
+    :hasBrother data:Juan_Carlos_I_of_Spain ;
+    :hasChild data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :hasDaughter data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Frederica_of_Hanover,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:male ;
+    :hasSon data:Felipe_VI_of_Spain ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isBloodrelationOf data:Juan_Carlos_I_of_Spain ;
+    :isBrotherOf data:Juan_Carlos_I_of_Spain ;
+    :isFatherOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isParentOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isSiblingOf data:Juan_Carlos_I_of_Spain ;
+    :isUncleOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo .
+
+data:Felipe_VI_of_Spain a :Man,
+        :Person ;
+    rdfs:label "Felipe VI of Spain"^^xsd:string ;
+    data:posIndicesFull "2617:2626"^^xsd:string,
+        "408:417"^^xsd:string ;
+    data:posIndicesPart "1802:1807"^^xsd:string ;
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia"^^xsd:string,
+        "Felipe VI"^^xsd:string,
+        "Philip John Paul Alphonse of All Saints of Bourbon"^^xsd:string,
+        "Philip VI of Spain"^^xsd:string ;
+    :hasAncestor data:Frederica_of_Hanover,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasFather data:Juan_Carlos_I_of_Spain ;
+    :hasMother data:Queen_Sofía_of_Spain ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Frederica_of_Hanover,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:male ;
+    :hasSister data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isBrotherOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isChildOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isSiblingOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isSonOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain .
+
+data:Infanta_Cristina_of_Spain a :Person,
+        :Woman ;
+    rdfs:label "Infanta Cristina of Spain"^^xsd:string ;
+    data:posIndicesFull "130:146"^^xsd:string,
+        "2104:2120"^^xsd:string,
+        "2379:2395"^^xsd:string,
+        "2487:2503"^^xsd:string ;
+    data:posIndicesPart "1062:1069"^^xsd:string,
+        "1076:1084"^^xsd:string,
+        "1122:1130"^^xsd:string,
+        "1312:1320"^^xsd:string,
+        "1394:1402"^^xsd:string,
+        "1508:1516"^^xsd:string,
+        "1802:1807"^^xsd:string,
+        "2019:2027"^^xsd:string,
+        "2193:2200"^^xsd:string,
+        "2758:2766"^^xsd:string,
+        "2859:2866"^^xsd:string,
+        "3088:3095"^^xsd:string,
+        "3113:3121"^^xsd:string,
+        "3294:3302"^^xsd:string,
+        "3346:3353"^^xsd:string,
+        "684:692"^^xsd:string,
+        "759:767"^^xsd:string ;
+    data:wdtLink wdt:Q230580 ;
+    :alsoKnownAs "Cristina Federica Victoria Antonia de la Santísima Trinidad de Borbón y Grecia"^^xsd:string,
+        "Cristina Federica Victoria de Borbón y Grecia, Infanta de España"^^xsd:string,
+        "Infanta Cristina"^^xsd:string ;
+    :hasAncestor data:Frederica_of_Hanover,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasFather data:Juan_Carlos_I_of_Spain ;
+    :hasMother data:Queen_Sofía_of_Spain ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Frederica_of_Hanover,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isChildOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isDaughterOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isSiblingOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isSisterOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo .
+
+data:Infanta_Elena-_Duchess_of_Lugo a :Person,
+        :Woman ;
+    rdfs:label "Infanta Elena, Duchess of Lugo"^^xsd:string ;
+    data:posIndicesFull "441:454"^^xsd:string,
+        "441:471"^^xsd:string ;
+    data:posIndicesPart "1062:1069"^^xsd:string,
+        "1253:1260"^^xsd:string,
+        "1540:1545"^^xsd:string,
+        "1872:1879"^^xsd:string,
+        "2193:2200"^^xsd:string,
+        "2859:2866"^^xsd:string,
+        "3088:3095"^^xsd:string,
+        "3346:3353"^^xsd:string,
+        "3456:3463"^^xsd:string,
+        "622:629"^^xsd:string ;
+    data:wdtLink wdt:Q54386 ;
+    :alsoKnownAs "Elena Maria Isabela Dominica de Silas de Borbón y Grecia, Infanta de España"^^xsd:string,
+        "Elena de Borbón"^^xsd:string,
+        "Infanta Elena"^^xsd:string,
+        "Infanta Elena of Spain"^^xsd:string ;
+    :hasAncestor data:Frederica_of_Hanover,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasBrother data:Felipe_VI_of_Spain ;
+    :hasFather data:Juan_Carlos_I_of_Spain ;
+    :hasMother data:Queen_Sofía_of_Spain ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Frederica_of_Hanover,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isBloodrelationOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isChildOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isDaughterOf data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :isSiblingOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isSisterOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo .
+
+data:Queen_Sofía_of_Spain a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Sofía of Spain"^^xsd:string ;
+    data:posIndicesFull "17:29"^^xsd:string,
+        "310:321"^^xsd:string ;
+    data:posIndicesPart "1699:1704"^^xsd:string,
+        "1802:1807"^^xsd:string ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark"^^xsd:string,
+        "Queen Sofia of Spain"^^xsd:string,
+        "Queen Sofía"^^xsd:string,
+        "Queen Sofía, Queen Consort of Spain"^^xsd:string ;
+    :hasAncestor data:Frederica_of_Hanover ;
+    :hasChild data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :hasDaughter data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :hasMother data:Frederica_of_Hanover ;
+    :hasParent data:Frederica_of_Hanover ;
+    :hasRelation data:Felipe_VI_of_Spain,
+        data:Frederica_of_Hanover,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo,
+        data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Sofía_of_Spain ;
+    :hasSon data:Felipe_VI_of_Spain ;
+    :isAncestorOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isAuntOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isBloodrelationOf data:Queen_Sofía_of_Spain ;
+    :isChildOf data:Frederica_of_Hanover ;
+    :isDaughterOf data:Frederica_of_Hanover ;
+    :isMotherOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isParentOf data:Felipe_VI_of_Spain,
+        data:Infanta_Cristina_of_Spain,
+        data:Infanta_Elena-_Duchess_of_Lugo ;
+    :isSiblingOf data:Queen_Sofía_of_Spain ;
+    :isSisterOf data:Queen_Sofía_of_Spain .
+

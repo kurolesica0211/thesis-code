@@ -69,98 +69,245 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Duchess of Montpensier
+Edward VIII (Edward Albert Christian George Andrew Patrick David; 23 June 1894 – 28 May 1972), later known as the Duke of Windsor, was King of the United Kingdom and the British Dominions, and Emperor of India, from 20 January 1936 until his abdication in December of the same year.
+Edward was born during the reign of his great-grandmother Queen Victoria as the eldest child of the Duke and Duchess of York, later King George V and Queen Mary.
+As a young man, Edward served in the British Army during the First World War and undertook several overseas tours on behalf of his father.
+Upon his father's death in 1936, Edward became the second monarch of the House of Windsor.
+Only months into his reign, Edward caused a constitutional crisis through his proposal to marry Wallis Simpson, an American who had divorced her first husband and was seeking a divorce from her second.
+Additionally, such a marriage would have conflicted with Edward's status as titular head of the Church of England, which, at the time, disapproved of remarriage after divorce if a former spouse was still alive.
+Edward knew the Baldwin government would resign if the marriage went ahead, which could have forced a general election and would have ruined his status as a politically neutral constitutional monarch.
+He was succeeded by his younger brother, George VI.
+With a reign of 326 days, Edward was one of the shortest-reigning British monarchs to date, and is the most recent British monarch to abdicate.
+After his abdication, Edward was created Duke of Windsor.
+He married Simpson in France on 3 June 1937, after her second divorce became final.
+During the Second World War, Edward was at first stationed with the British Military Mission to France.
+After the war, Edward spent the rest of his life in France.
+Early life
+
+Edward was born at 10:00 pm on 23 June 1894 at White Lodge, Richmond Park, on the outskirts of London, during the reign of his great-grandmother, Queen Victoria.
+He was the eldest son of the Duke and Duchess of York (later King George V and Queen Mary).
+His father was the son of the Prince and Princess of Wales (later King Edward VII and Queen Alexandra) and his mother was the eldest daughter of Princess Mary Adelaide of Cambridge and Francis, Duke of Teck.
+Edward was baptised Edward Albert Christian George Andrew Patrick David in the Green Drawing Room of White Lodge on 16 July by Edward White Benson, Archbishop of Canterbury.
+The name Edward was chosen in honour of Edward's late uncle Prince Albert Victor, Duke of Clarence and Avondale, who was known within the family as "Eddy" (Edward being among his given names); Albert was included at the behest of Queen Victoria for her late husband Albert, Prince Consort; Christian was in honour of his great-grandfather King Christian IX of Denmark; and the last four names – George, Andrew, Patrick and David – came from, respectively, the patron saints of England, Scotland, Ireland and Wales.
+As was common practice among upper-class families of the period, Edward and his younger siblings were brought up by nannies rather than directly by their parents.
+One of Edward's early nannies frequently mistreated him by pinching him before he was due to be presented to his parents.
+His resulting crying and distress would prompt the Duke and Duchess to send him and the nanny away.
+Edward's father, though a harsh disciplinarian, was demonstratively affectionate, and his mother displayed a playful side with her children that belied her austere public image.
+Education
+
+Initially, Edward was tutored at home by Hélène Bricka.
+When his parents travelled the British Empire for almost nine months following the death of Queen Victoria in 1901, Edward and his siblings remained in Britain with their grandparents, Queen Alexandra and King Edward VII, who showered them with affection.
+Upon his parents' return, Edward was placed under the care of two men, Frederick Finch and Henry Hansell, who virtually brought up Edward and his siblings for the rest of their nursery years.
+Edward stayed under Hansell's strict tutorship until he was almost 13.
+He took the examination for entry to the Royal Naval College, Osborne, and began there in 1907.
+Hansell had wanted Edward to enter school earlier, but the prince's father disagreed.
+After two years at Osborne College, which he did not enjoy, Edward moved on to the Royal Naval College at Dartmouth.
+A two-year course, followed by entry into the Royal Navy, was planned.
+Upon the death of Edward VII, Edward's father ascended the throne as George V, and Edward himself became heir apparent.
+Prince of Wales
+
+Edward automatically became Duke of Cornwall and Duke of Rothesay on 6 May 1910 upon his father's accession.
+He was created, by letters patent, Prince of Wales and Earl of Chester a month later, on 23 June 1910, his 16th birthday.
+Edward was officially invested as Prince of Wales in a special ceremony at Caernarfon Castle on 13 July 1911.
+The investiture took place in Wales at the instigation of the Welsh politician David Lloyd George, Constable of the Castle and Chancellor of the Exchequer in the Liberal government.
+Lloyd George devised a rather fanciful ceremony in the style of a Welsh pageant and coached Edward to speak a few words in Welsh.
+When the First World War broke out in 1914, Edward had reached the minimum age for active service and was keen to participate.
+Edward visited frontline trenches several times, for which he was awarded the Military Cross in 1916.
+Edward's youngest brother, Prince John, died at the age of 13 on 18 January 1919 after a severe epileptic seizure.
+Edward, who was eleven years older than John and had hardly known him, saw his death as "little more than a regrettable nuisance".
+"
 
 
-The Count of ÉvreuxThe Countess of Évreux
+In 1919, Edward agreed to serve as president of the organising committee for the proposed British Empire Exhibition at Wembley Park, Middlesex.
+He wished the Exhibition to include "a great national sports ground", and so played a part in the creation of Wembley Stadium.
 
 
-Princess Béatrice
+Throughout the 1920s, Edward, as Prince of Wales, represented his father at home and overseas on many occasions.
+During his 1924 visit to the United States, Men's Wear magazine observed that, "The average young man in America is more interested in the clothes of the Prince of Wales than in any other individual on earth.
+"
 
 
-The Duke of OrléansThe Duchess of Orléans
+Edward visited poverty-stricken areas of Britain, and undertook sixteen tours to various parts of the Empire between 1919 and 1935.
+Named the E. P. Ranch (for Edward, Prince), he attempted unsuccessfully to develop it for the breeding of animals, including Shorthorn cattle, Dartmoor ponies, and Clydesdale horses.
+Edward's November 1921 visit to India came during the non-cooperation movement protests for Indian self-rule and was marked by riots in Bombay.
+From January to April 1931, the Prince of Wales and his brother Prince George travelled 18,000 miles (29,000 km) on a tour of South America, steaming out on the ocean liner Oropesa, and returning via Paris and an Imperial Airways flight from Paris–Le Bourget Airport that landed specially in Windsor Great Park.
+Though widely travelled, Edward shared a then-common racial prejudice against foreigners and many of the Empire's subjects, believing that whites were inherently superior.
+"
 
 
-The Dowager Countess of La Marche
+Romances
+
+Before the First World War, a royal match between Edward and his second cousin, Princess Victoria Louise of Prussia, was suggested.
+Nothing came of it, and Victoria Louise married Edward's first cousin once removed, Ernest Augustus, Duke of Brunswick.
+In 1934, Adolf Hitler, seeking to forge a link between the British and German royal houses, asked Victoria Louise to arrange a marriage between the 40-year-old Edward and her 17-year-old daughter, Frederica of Hanover, who was then at boarding school in England.
+By 1917, Edward liked to spend time partying in Paris while on leave from his regiment on the Western Front.
+After about a year, Edward ended the affair.
+Desperate efforts were made by the Royal Household to ensure that Edward's name was not mentioned in connection with the trial or Alibert.
+Also in 1917, Edward began a relationship with Lady Rosemary Leveson-Gower, the youngest daughter of the 4th Duke of Sutherland.
+According to Leveson-Gower's friends, Edward proposed to her, but the relationship ended when the King and Queen expressed their disapproval of certain relatives of hers, namely Daisy, Countess of Warwick, a maternal aunt, and the 5th Earl of Rosslyn, a maternal uncle.
+Edward's womanising and reckless behaviour during the 1920s and 1930s worried Prime Minister Stanley Baldwin, King George V, and those close to the prince.
+"After I am dead," George said, "the boy will ruin himself in twelve months.
+"
 
 
-The Countess of Schönborn-Buchheim
+George V favoured his second son Albert ("Bertie") and Albert's daughter Elizabeth ("Lilibet"), later King George VI and Queen Elizabeth II respectively.
+He told a courtier, "I pray to God that my eldest son will never marry and have children, and that nothing will come between Bertie and Lilibet and the throne."
+In 1929, Time magazine reported that Edward teased Albert's wife, also named Elizabeth (later the Queen Mother), by calling her "Queen Elizabeth".
+The magazine asked whether "she did not sometimes wonder how much truth there is in the story that he once said he would renounce his rights upon the death of George V – which would make her nickname come true".
+In 1930, the King gave Edward the lease of Fort Belvedere in Windsor Great Park.
+Wallis Simpson and the Prince of Wales, it is generally accepted, became lovers while Lady Furness was travelling abroad, although Edward adamantly insisted to his father that he was not having an affair with her and that it was not appropriate to describe her as his mistress.
+Edward's relationship with Simpson, however, further strained his already poor relationship with his father.
+Edward's affair with an American divorcée caused such grave concern that the couple were followed by members of the Metropolitan Police Special Branch, who examined in secret the nature of their relationship.
+Reign
+
+George V died on 20 January 1936, and Edward ascended the throne as Edward VIII.
+Edward caused unease in government circles with actions that were interpreted as interference in political matters.
+Government ministers were reluctant to send confidential documents and state papers to Fort Belvedere because it was clear that Edward was paying little attention to them, and it was feared that Simpson and other house guests might read them, improperly or inadvertently revealing government secrets.
+Edward's unorthodox approach to his role also extended to the coinage that bore his image.
+Edward insisted that he face left (as his father had done), to show the parting in his hair.
+When George VI succeeded to the throne, he also faced left to maintain the tradition by suggesting that, had any further coins been minted featuring Edward's portrait, they would have shown him facing right.
+On 16 July 1936, George Andrew McMahon produced a loaded revolver as Edward rode on horseback at Constitution Hill, near Buckingham Palace.
+McMahon alleged at his trial that "a foreign power" had approached him to kill Edward, that he had informed MI5 of the plan, and that he was merely seeing the plan through to help MI5 catch the real culprits.
+In August and September, Edward and Simpson cruised the Eastern Mediterranean on the steam yacht Nahlin.
+Although gossip about his affair was widespread in the United States, the British media kept silent voluntarily, and the general public knew nothing until early December.
+, Edward invited Prime Minister Stanley Baldwin to Buckingham Palace and expressed his desire to marry Simpson when she became free to remarry.
+As king, Edward was the titular head of the Church, and the clergy expected him to uphold its teachings.
+The Archbishop of Canterbury, Cosmo Gordon Lang, was vocal in insisting that Edward must go.
+Edward proposed an alternative solution of a morganatic marriage, in which he would remain king but Simpson would not become queen consort.
+Their views were sought pursuant to the Statute of Westminster 1931, which provided in part that "any alteration in the law touching the Succession to the Throne or the Royal Style and Titles shall hereafter require the assent as well of the Parliaments of all the Dominions as of the Parliament of the United Kingdom."
+Faced with this opposition, Edward initially responded that there were "not many people in Australia" and that their opinion did not matter.
+Edward informed Baldwin that he would relinquish the throne if he could not marry Simpson.
+It was clear that Edward was not prepared to give up Simpson, and he knew that if he married against the advice of his ministers, he would cause the government to resign, prompting a constitutional crisis.
+Edward duly signed the instruments of abdication at Fort Belvedere on 10 December 1936 in the presence of his younger brothers: Prince Albert, Duke of York, next in line for the throne; Prince Henry, Duke of Gloucester; and Prince George, Duke of Kent.
+The next day, the last act of his reign was the royal assent to His Majesty's Declaration of Abdication Act 1936.
+On the night of 11 December 1936, Edward, now reverted to the title and style of a prince, explained his decision to abdicate in a worldwide BBC radio broadcast.
+Edward departed Britain for Austria the following day; he was unable to join Simpson until her divorce became absolute several months later.
+The Duke of York succeeded to the throne as George VI.
+Accordingly, George VI's elder daughter, Princess Elizabeth, became heir presumptive.
+Duke of Windsor
+
+On 12 December 1936, at the accession meeting of the British Privy Council, George VI announced his intention to make his brother the "Duke of Windsor" with the style of Royal Highness.
+During the interim, Edward was known as the Duke of Windsor.
+George's decision to create Edward a royal duke ensured that he could neither stand for election to the British House of Commons nor speak on political subjects in the House of Lords.
+Letters Patent dated 27 May 1937 re-conferred the "title, style, or attribute of Royal Highness" upon the Duke, but specifically stated that "his wife and descendants, if any, shall not hold said title or attribute".
+Some British ministers advised that the reconfirmation was unnecessary, since Edward had retained the style automatically, and further that Simpson would automatically obtain the rank of wife of a prince with the style Her Royal Highness; others maintained that he had lost all royal rank and should no longer carry any royal title or style as an abdicated king, and should instead be referred to simply as "Mr Edward Windsor".
+On 14 April 1937, Sir Donald Somervell, the Attorney General for England and Wales, submitted to Sir John Simon, the Home Secretary, a memorandum summarising the views of Lord Advocate T. M. Cooper, Parliamentary Counsel Sir Granville Ram, and himself:
+Wedding
+
+The Duke married Simpson, who had changed her name by deed poll to Wallis Warfield (her birth surname), in a private ceremony on 3 June 1937, at Château de Candé, near Tours, France.
+When the Church of England refused to sanction the union, a County Durham clergyman, Robert Anderson Jardine (Vicar of St Paul's, Darlington), offered to perform the ceremony, and Edward accepted.
+George VI forbade members of the royal family to attend, to the enduring resentment of the Duke and Duchess of Windsor.
+Edward had particularly wished his brothers, the Dukes of Gloucester and Kent, and his second cousin Lord Louis Mountbatten, to attend the ceremony.
+The denial of the style Royal Highness to the Duchess of Windsor caused further conflict, as did the financial settlement.
+The Government declined to include the Duke or Duchess on the Civil List, and the Duke's allowance was paid personally by George VI.
+Edward compromised his position with his brother by concealing his full financial worth when they informally agreed upon the amount of the annual allowance.
+Edward had accumulated wealth over the previous twenty-six years from the revenues of the Duchy of Cornwall, paid to him as Prince of Wales, which was ordinarily at the disposal of the incoming monarch.
+George also purchased Sandringham House and Balmoral Castle from Edward; both were Edward's personal property, inherited from his father, and thus did not automatically pass to George VI on his accession.
+Edward received approximately £300,000 (equivalent to between £23.8 million and £173 million in 2024) for both residences, which was paid to him in yearly instalments.
+In the early days of George VI's reign, Edward telephoned daily, importuning for money and urging that Wallis be granted the style of Royal Highness, until the harassed king ordered that the calls not be put through.
+Relations between the Duke of Windsor and the rest of the royal family remained strained for decades.
+Edward had assumed that he would settle in Britain after a year or two of exile in France.
+King George VI (with the support of Queen Mary and his wife Queen Elizabeth) threatened to cut off Edward's allowance if he returned to Britain without an invitation.
+Edward became embittered toward his mother, Queen Mary, writing to her in 1939: " destroy the last vestige of feeling I had left for you ...  made further normal correspondence between us impossible.
+"
 
 
-Princess Hélène, Countess of Limburg Stirum
+1937 tour of Germany
+
+In October 1937, the Duke and Duchess visited Nazi Germany, against the advice of the British government, and met Adolf Hitler at his Berghof retreat in Bavaria.
+During it, Edward gave full Nazi salutes.
+In Germany, "they were treated like royalty ... members of the aristocracy would bow and curtsy towards her, and she was treated with all the dignity and status that the duke always wanted", according to royal biographer Andrew Morton in a 2016 BBC interview.
+The former Austrian ambassador Count Albert von Mensdorff-Pouilly-Dietrichstein, who was also a second cousin once removed and friend of George V, believed that Edward favoured German fascism as a bulwark against communism, and even that he initially favoured an alliance with Germany.
+According to the Duke of Windsor, the experience of "the unending scenes of horror" during the First World War led him to support appeasement.
+Hitler considered Edward to be friendly towards Germany and thought that Anglo-German relations could have been improved through Edward had it not been for the abdication.
+The Duke and Duchess settled in Paris, leasing a mansion in Boulevard Suchet  from late 1938.
+Second World War
+
+In May 1939, Edward was commissioned by NBC to give a radio broadcast (his first since abdicating) during a visit to the First World War battlefields of Verdun.
+It was transmitted outside the United States on shortwave radio and was reported in full by British broadsheet newspapers.
+On the outbreak of the Second World War in September 1939, the Duke and Duchess were brought back to Britain by Louis Mountbatten on board HMS Kelly, and Edward, although he held the rank of field marshal, was made a major-general attached to the British Military Mission in France.
+In February 1940, the German ambassador in The Hague, Count Julius von Zech-Burkersroda, claimed that Edward had leaked the Allied war plans for the defence of Belgium, which the Duke later denied.
+Under the code name Operation Willi, Nazi agents, principally Walter Schellenberg, plotted unsuccessfully to persuade the Duke to leave Portugal and return to Spain, kidnapping him if necessary.
+Churchill threatened Edward with a court-martial if he did not return to British soil.
+In July 1940, Edward was appointed governor of the Bahamas.
+The Duke and Duchess left Lisbon on 1 August aboard the American Export Lines steamship Excalibur, which was specially diverted from its usual direct course to New York City so that they could be dropped off at Bermuda on the 9th.
+Edward did not enjoy being governor and privately referred to the islands as "a third-class British colony".
+The British Foreign Office strenuously objected when Edward and Wallis planned to cruise aboard a yacht belonging to Swedish magnate Axel Wenner-Gren, whom British and American intelligence wrongly believed to be a close friend of Luftwaffe commander Hermann Göring.
+Edward was praised for his efforts to combat poverty on the islands.
+He was "considerably more enlightened in his attitudes than the majority of Bahamian whites, or either of his predecessors", and had an "excellent relationship" with Black individuals such as jazz musician Bert Cambridge (later elected to the Bahamian House of Assembly, to Edward's delight) and valet Sydney Johnson, whom Edward retained for thirty years and was said to have "loved as a son".
+Edward maintained a long-standing dispute with Étienne Dupuch, the editor of the Nassau Daily Tribune, writing privately at one point that Dupuch was "more than half Negro, and due to the peculiar mentality of this Race, they seem unable to rise to prominence without losing their equilibrium".
+But even Dupuch praised Edward for his resolution of civil unrest over low wages in Nassau in 1942, though Edward blamed the trouble on "mischief makers – communists" and "men of Central European Jewish descent, who had secured jobs as a pretext for obtaining a deferment of draft".
+Many historians have suggested that Hitler was prepared to reinstate Edward as king in the hope of establishing a fascist puppet government in Britain after Operation Sea Lion.
+It is widely believed that the Duke and Duchess sympathised with fascism before and during the Second World War, and were moved to the Bahamas to minimise their opportunities to act on those feelings.
+During the occupation of France, the Duke asked the German Wehrmacht forces to place guards at his Paris and Riviera homes; they did so.
+In December 1940, Edward gave Fulton Oursler of Liberty magazine an interview at Government House in Nassau.
+The interview was published on 22 March 1941, and in it Edward was reported to have said that "Hitler was the right and logical leader of the German people" and that the time was coming for President Roosevelt to mediate a peace settlement.
+Edward protested that he had been misquoted and misinterpreted.
+The Allies became sufficiently disturbed by German plots revolving around Edward that President Roosevelt ordered covert surveillance of the Duke and Duchess when they visited Palm Beach, Florida, in April 1941.
+Duke Carl Alexander of Württemberg (then a monk in an American monastery) had told the Federal Bureau of Investigation that Wallis had slept with the German ambassador in London, Joachim von Ribbentrop, in 1936; had remained in constant contact with him; and had continued to leak secrets.
+Author Charles Higham claimed that Anthony Blunt, an MI5 agent and Soviet spy, acting on orders from the British royal family, made a successful secret trip to Schloss Friedrichshof in Allied-occupied Germany towards the end of the war to retrieve sensitive letters between the Duke of Windsor and Hitler and other leading Nazis.
+What is certain is that George VI sent the Royal Librarian, Owen Morshead, accompanied by Blunt – then working part-time in the Royal Library as well as for British intelligence – to Friedrichshof in March 1945 to secure papers relating to Victoria, German Empress, the eldest child of Queen Victoria.
+The papers rescued by Morshead and Blunt, and those returned by the American authorities from Chicago, were deposited in the Royal Archives.
+Documents, since titled the Marburg Files, recovered by US troops in Marburg, Germany, in May 1945, include key material that relates directly to theories of Edward's Nazi sympathies.
+After the war, Edward admitted in his memoirs that he admired the Germans, but he denied being pro-Nazi.
+In the 1950s, journalist Frank Giles heard the Duke blame British foreign secretary Anthony Eden for helping to "precipitate the war through his treatment of Mussolini ... that's what  did, he helped to bring on the war ... and of course Roosevelt and the Jews".
+During the 1960s, in private, Edward reportedly said to a friend, Patrick Balfour, 3rd Baron Kinross, "I never thought Hitler was such a bad chap.
+"
 
 
-The Dowager Duchess of Calabria
+Later life
 
+At the end of the war, the couple returned to France and spent the remainder of their lives essentially in retirement, as Edward never again held an official role.
+Letters written by Kenneth de Courcy to the Duke, dated between 1946 and 1949 and published in extract form in 2009, suggest a scheme in which Edward would return to England and place himself in a position for a possible regency.
+The health of George VI was failing and de Courcy was concerned about the influence of the Mountbatten family over the young Princess Elizabeth.
+De Courcy proposed that Edward should buy a working agricultural estate within easy reach of London in order to gain favour with the British public and make himself available should the King become incapacitated.
+The Duke, however, hesitated, and the King recovered from his surgery.
+De Courcy also mentioned the possibility of the British occupation zone in Germany becoming a kingdom with Edward as its monarch.
+Edward's allowance was supplemented by government favours and illegal currency trading.
+The City of Paris provided the Duke with a house at 4 route du Champ d'Entraînement, on the Neuilly-sur-Seine side of the Bois de Boulogne, for a nominal rent.
+In 1951, Edward produced a memoir, A King's Story ghost-written by Charles Murphy, in which he expressed disagreement with liberal politics.
+The royalties from the book added to Edward and Wallis's income.
+Edward and Wallis effectively took on the role of celebrities and were regarded as part of café society in the 1950s and 1960s.
+They hosted parties and shuttled between Paris and New York; Gore Vidal, who met the Windsors socially, reported on the vacuity of the Duke's conversation.
+In June 1953, instead of attending the coronation of Queen Elizabeth II, his niece, in London, Edward and Wallis watched the ceremony on television in Paris.
+Edward said that it was contrary to precedent for a sovereign or former sovereign to attend the coronation of another.
+The couple appeared on Edward R. Murrow's television-interview show Person to Person in 1956, and in a 50-minute BBC television interview in 1970.
+On 4 April of that year President Richard Nixon invited them as guests of honour to a dinner at the White House with Chief Justice Warren E. Burger, Charles Lindbergh, Alice Roosevelt Longworth, Arnold Palmer, George H. W. Bush, and Frank Borman.
+The royal family never fully accepted the Duchess.
+Queen Mary refused to receive her formally.
+Edward, however, sometimes met his mother and his brother, George VI; he attended George's funeral in 1952.
+Mary remained angry with Edward and indignant over his marriage to Wallis: "To give up all this for that", she said.
+In 1965, the Duke and Duchess returned to London.
+They were visited by his niece Elizabeth II, his sister-in-law Princess Marina, Duchess of Kent, and his sister Mary, Princess Royal and Countess of Harewood.
+A week later, the Princess Royal died, and they attended her memorial service.
+In 1966, Edward gave the journalist Georg Stefan Troller a ZDF TV interview in German; he answered questions about his abdication.
+In 1967, the Duke and Duchess joined the royal family for the centenary of Queen Mary's birth.
+The last royal ceremony Edward attended was the funeral of Princess Marina in 1968.
+He declined an invitation from Elizabeth II to attend the investiture of Charles, Prince of Wales, in 1969, replying that Charles would not want his "aged great-uncle" there.
+In the 1960s, Edward's health deteriorated.
+Michael E. DeBakey operated on him in Houston for an aneurysm of the abdominal aorta in December 1964, and Sir Stewart Duke-Elder treated a detached retina in his left eye in February 1965.
+In late 1971, Edward, who had been a smoker from an early age, was diagnosed with throat cancer and underwent cobalt therapy.
+On 18 May 1972, Queen Elizabeth II visited the Duke and Duchess of Windsor while on a state visit to France; she met Edward alone for 15 minutes, but only Wallis appeared with the royal party for a photocall, which included Prince Philip and Prince Charles, as Edward was too ill.
+Death and legacy
 
-The Dowager Duchess of Württemberg
+Edward died at his home in Paris on 28 May 1972, aged 77, ten days after Elizabeth's visit.
+His body was returned to Britain, lying in state at St George's Chapel, Windsor Castle.
+The funeral service took place in the chapel on 5 June in the presence of the Queen, the royal family, and the Duchess of Windsor, who stayed at Buckingham Palace during her visit.
+He was buried in the Royal Burial Ground behind the Royal Mausoleum of Queen Victoria and Prince Albert at Frogmore.
+Until a 1965 agreement with the Queen, the Duke and Duchess had planned for a burial in a cemetery plot they had purchased at Green Mount Cemetery in Baltimore, where Wallis's father was interred.
+To modern sensibilities, the religious restrictions that prevented Edward from continuing as king while planning to marry Wallis Simpson "seem, wrongly, to provide insufficient explanation" for his abdication.
+Titles, honours and arms
 
-
-Princess Claude, Mrs. Gandolfi
-
-
-Princess Chantal, Baroness of Sambucy de Sorgue
-
-
-Prince Jean Carl Pierre Marie d'Orléans, Count of Paris (born 19 May 1965) is the current head of the House of Orléans.
-Jean is the senior male descendant by primogeniture in the male-line of Louis Philippe I, King of the French, and thus according to the Orléanists the legitimate claimant to the defunct throne of France as Jean IV.
-Jean is the second son of Henri, Count of Paris (1933–2019) and his former wife Duchess Marie-Thérèse of Württemberg (born 1934).
-Biography
-
-Early life and education
-
-Jean d'Orléans was born on 19 May 1965 in Boulogne-Billancourt, the son of Henri of Orleans and Maria Theresa of Württemberg.
-He received as godfather, his maternal uncle, Carl of Württemberg, and as godmother, his paternal aunt, Princess Chantal of Orleans.
-Jean completed his national service as an officer, first taking four months of classes at the Saumur Cavalry School.
-Jean is multilingual, speaking French, English, and German.
-First engagement
-
-Prince Jean was due to marry Duchess Tatjana of Oldenburg (b. 1974) in 2001.
-However, the wedding was cancelled at the last moment because of a dispute over religious denomination: Jean's father, Henri, feared the Orléans claim to the throne would be compromised if there were to be a Protestant heir.
-Second engagement and marriage
-
-On 29 November 2008, Henri, then Count of Paris, announced the engagement of Jean, the then Duke of Vendôme, to Maria Magdalena Philomena Juliana Johanna de Tornos y Steinhart, born in Vienna on 19 June 1977.
-Lawsuit
-
-In 2021, Jean filed a lawsuit against the Saint-Louis foundation, demanding €1 million in damages and the return of five properties, including the Château d'Amboise.
-In 1886, the château was bequeathed to the Institute of France by Jean's ancestor Henri d’Orléans, with the caveat that the property would never be altered by the institute.
-The Saint-Louis foundation was later founded by Jean's grandfather, Henri VI, Count of Paris, in 1974.
-Jean's lawsuit alleges that the Institute violated their contract to never alter the property, after they announced plans to transform the Pavillon d’Enghien into a €760-a-night luxury hotel, containing a spa and gastronomic restaurant.
-Jean had previously lived in the château from 2001 to September 2021 rent-free, but was forcefully evicted by the institute after they began to demand he pay rent, which Jean viewed as a violation of their contract.
-Family
-
-Jean and his wife Philomena have six children: 
-
-
-Politics
-
-Jean believes that the people of France are "monarchist at heart" and argues that they long for a non-partisan figurehead.
-Jean has also expressed his opposition to same-sex marriage, having participated in the La Manif pour tous protests, as well as abortion.
-In May 2019, Jean met with French President Emmanuel Macron, Brigitte Macron, and Italian President Sergio Mattarella in his then-home in the Château d'Amboise.
-
-
-Titles, styles and honours
-
-Titles in pretense
-
-He was created Duke of Vendôme (French: Duc de Vendôme) by his paternal grandfather, on 27 September 1987.
-Following the death of his father, it was initially thought that Prince Jean would not assume the title of Count of Paris for several months after his father's death, and possibly not for as much as one year.
-Honours
-
-National
-
-Dynastic
-
-Ancestry
-
-Jean is a direct male-line descendant of Louis Philippe I, the last French king, who in turn was a descendant of Philippe I, Duke of Orléans, the younger brother of Louis XIV.
-Jean is also descended from Charles X, brother of Louis XVI; and the Bourbons of Spain, the Two Sicilies and Parma.
+Edward's coat of arms as the Prince of Wales was the royal coat of arms of the United Kingdom, differenced with a label of three points argent, with an inescutcheon representing Wales surmounted by a coronet.
+As Sovereign, he bore the royal arms undifferenced.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -176,39 +323,9 @@ Jean is also descended from Charles X, brother of Louis XVI; and the Bourbons of
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -223,6 +340,23 @@ Jean is also descended from Charles X, brother of Louis XVI; and the Bourbons of
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -240,6 +374,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -307,29 +456,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -338,6 +479,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -350,6 +499,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -358,17 +509,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -396,6 +549,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -411,250 +648,236 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (99294aff-edea-4c18-bdd6-a688a59c9a7f)
- Call ID: 99294aff-edea-4c18-bdd6-a688a59c9a7f
+  AssignClass (a00cd510-5bed-4488-9da8-ac97092d965b)
+ Call ID: a00cd510-5bed-4488-9da8-ac97092d965b
   Args:
-    source: Jean_dOrleans
+    source: :Edward_VIII
     type: :Man
-  AssignClass (e4d9bdb4-161a-49db-a9b6-ac6cd3d49e90)
- Call ID: e4d9bdb4-161a-49db-a9b6-ac6cd3d49e90
+  AssignClass (e812d85e-ca63-4e35-bb9b-2272b1e2a245)
+ Call ID: e812d85e-ca63-4e35-bb9b-2272b1e2a245
   Args:
+    source: :Edward_VIII
     type: :Person
-    source: Jean_dOrleans
-  AddLiteral (56b8f7cc-91bf-4e60-83de-67291ce1649e)
- Call ID: 56b8f7cc-91bf-4e60-83de-67291ce1649e
+  AddLiteral (5fc8318d-33c8-4738-98e4-41933f3dd5bd)
+ Call ID: 5fc8318d-33c8-4738-98e4-41933f3dd5bd
   Args:
-    literal_type: xsd:integer
-    literal_value: 1965
     relation: :hasBirthYear
-    source: Jean_dOrleans
-  AssignClass (cf5e519d-6282-4e71-8f70-bb54ca3d4ad7)
- Call ID: cf5e519d-6282-4e71-8f70-bb54ca3d4ad7
-  Args:
-    type: :Man
-    source: Henri_Count_of_Paris
-  AssignClass (bf708b01-e961-4579-847f-501194d7f4f7)
- Call ID: bf708b01-e961-4579-847f-501194d7f4f7
-  Args:
-    source: Henri_Count_of_Paris
-    type: :Person
-  AddLiteral (2098f69f-fc3f-42cf-a9a8-6d0aa750c093)
- Call ID: 2098f69f-fc3f-42cf-a9a8-6d0aa750c093
-  Args:
+    literal_value: 1894
+    source: :Edward_VIII
     literal_type: xsd:integer
-    literal_value: 1933
-    source: Henri_Count_of_Paris
-    relation: :hasBirthYear
-  AddLiteral (6aa523f9-61cd-4693-98ac-488a59b407a5)
- Call ID: 6aa523f9-61cd-4693-98ac-488a59b407a5
+  AddLiteral (4b82b4cb-e5ed-4cad-9028-bc95fe7d97a0)
+ Call ID: 4b82b4cb-e5ed-4cad-9028-bc95fe7d97a0
   Args:
-    source: Henri_Count_of_Paris
+    literal_value: 1972
     relation: :hasDeathYear
+    source: :Edward_VIII
     literal_type: xsd:integer
-    literal_value: 2019
-  AssignClass (4dcbdb24-211e-427e-8db5-cf974c15eba1)
- Call ID: 4dcbdb24-211e-427e-8db5-cf974c15eba1
+  AddLiteral (252ead34-4441-4fa0-92f4-22cda29cf856)
+ Call ID: 252ead34-4441-4fa0-92f4-22cda29cf856
   Args:
-    source: Marie-Therese_of_Wurttemberg
-    type: :Woman
-  AssignClass (04d0c69c-7ee6-4fa1-8814-f634d2982d78)
- Call ID: 04d0c69c-7ee6-4fa1-8814-f634d2982d78
+    source: :Edward_VIII
+    literal_type: xsd:string
+    literal_value: Duke of Windsor
+    relation: :alsoKnownAs
+  AssignClass (f5a3d345-5543-47cb-9353-cf9913751cac)
+ Call ID: f5a3d345-5543-47cb-9353-cf9913751cac
   Args:
-    source: Marie-Therese_of_Wurttemberg
+    source: :George_V
+    type: :Man
+  AssignClass (8ff2b909-2cdc-4c46-8dd2-7078a24ea305)
+ Call ID: 8ff2b909-2cdc-4c46-8dd2-7078a24ea305
+  Args:
+    source: :George_V
     type: :Person
-  AddLiteral (02734c74-3682-4b37-b55a-a4be0f496974)
- Call ID: 02734c74-3682-4b37-b55a-a4be0f496974
+  AssignClass (6790ba95-deb6-49e0-8ff2-b3f8137ed0ce)
+ Call ID: 6790ba95-deb6-49e0-8ff2-b3f8137ed0ce
   Args:
-    relation: :hasBirthYear
-    source: Marie-Therese_of_Wurttemberg
-    literal_type: xsd:integer
-    literal_value: 1934
-  AddTriple (fe1e24a4-0702-4559-b944-363af923381d)
- Call ID: fe1e24a4-0702-4559-b944-363af923381d
+    source: :Queen_Mary
+    type: :Woman
+  AssignClass (f1e8d8dd-f9e1-409d-92c7-cb1d2ede4801)
+ Call ID: f1e8d8dd-f9e1-409d-92c7-cb1d2ede4801
   Args:
-    target: Henri_Count_of_Paris
-    source: Jean_dOrleans
+    source: :Queen_Mary
+    type: :Person
+  AddTriple (c28e66aa-1398-43c6-a7d9-b1d731e3ef6b)
+ Call ID: c28e66aa-1398-43c6-a7d9-b1d731e3ef6b
+  Args:
     relation: :hasFather
-  AddTriple (5f8cc413-bfdf-490b-b2f7-dda56c9ed732)
- Call ID: 5f8cc413-bfdf-490b-b2f7-dda56c9ed732
+    target: :George_V
+    source: :Edward_VIII
+  AddTriple (05293c4b-ed2e-490a-9963-92e5a83637c2)
+ Call ID: 05293c4b-ed2e-490a-9963-92e5a83637c2
   Args:
-    source: Jean_dOrleans
     relation: :hasMother
-    target: Marie-Therese_of_Wurttemberg
-  AssignClass (d619e6aa-6b38-4535-9e6e-f9fe8b7a7b9a)
- Call ID: d619e6aa-6b38-4535-9e6e-f9fe8b7a7b9a
+    target: :Queen_Mary
+    source: :Edward_VIII
+  AssignClass (6c8e9b65-f656-4d50-ae44-1380c23e4bb3)
+ Call ID: 6c8e9b65-f656-4d50-ae44-1380c23e4bb3
   Args:
-    source: Philomena_de_Tornos_y_Steinhart
+    source: :Queen_Victoria
     type: :Woman
-  AssignClass (16dc03f1-ed40-49f2-829a-fee64f85deb6)
- Call ID: 16dc03f1-ed40-49f2-829a-fee64f85deb6
+  AssignClass (edd72b30-53c3-4389-8155-78795f6dff29)
+ Call ID: edd72b30-53c3-4389-8155-78795f6dff29
   Args:
-    source: Philomena_de_Tornos_y_Steinhart
+    source: :Queen_Victoria
     type: :Person
-  AddLiteral (b9fd4ebb-ae71-46b3-b1f6-b5aad205954f)
- Call ID: b9fd4ebb-ae71-46b3-b1f6-b5aad205954f
+  AddTriple (d242cd92-02c7-438b-8670-e20b2ea0f96c)
+ Call ID: d242cd92-02c7-438b-8670-e20b2ea0f96c
   Args:
-    source: Philomena_de_Tornos_y_Steinhart
-    relation: :hasBirthYear
-    literal_value: 1977
-    literal_type: xsd:integer
-  AddTriple (ba0a86b9-90ea-4e19-ada0-a68f3980db66)
- Call ID: ba0a86b9-90ea-4e19-ada0-a68f3980db66
+    source: :Edward_VIII
+    target: :Queen_Victoria
+    relation: :hasAncestor
+  AssignClass (749761b8-af7c-420f-a872-2554e7aebe1a)
+ Call ID: 749761b8-af7c-420f-a872-2554e7aebe1a
   Args:
-    source: Jean_dOrleans
+    source: :Edward_VII
+    type: :Man
+  AssignClass (dedc5074-2a7a-4c4a-8979-4c60f902b61b)
+ Call ID: dedc5074-2a7a-4c4a-8979-4c60f902b61b
+  Args:
+    source: :Edward_VII
+    type: :Person
+  AssignClass (a4a4c984-c0b2-43c0-9c44-ee814572a745)
+ Call ID: a4a4c984-c0b2-43c0-9c44-ee814572a745
+  Args:
+    source: :Queen_Alexandra
+    type: :Woman
+  AssignClass (e7608b56-af8b-47c9-b3c1-72743186c92e)
+ Call ID: e7608b56-af8b-47c9-b3c1-72743186c92e
+  Args:
+    source: :Queen_Alexandra
+    type: :Person
+  AddTriple (421172f5-95f3-43a6-99ed-79fe537d54d4)
+ Call ID: 421172f5-95f3-43a6-99ed-79fe537d54d4
+  Args:
+    source: :George_V
+    relation: :hasFather
+    target: :Edward_VII
+  AddTriple (55e9b44d-56e7-4356-892a-95585d39760a)
+ Call ID: 55e9b44d-56e7-4356-892a-95585d39760a
+  Args:
+    target: :Queen_Alexandra
+    relation: :hasMother
+    source: :George_V
+  AssignClass (8787c38c-c4a7-4e5d-988c-f3097e2510c7)
+ Call ID: 8787c38c-c4a7-4e5d-988c-f3097e2510c7
+  Args:
+    source: :Princess_Mary_Adelaide_of_Cambridge
+    type: :Woman
+  AssignClass (3206b082-0219-4d1c-ac88-f5ae799576fc)
+ Call ID: 3206b082-0219-4d1c-ac88-f5ae799576fc
+  Args:
+    source: :Princess_Mary_Adelaide_of_Cambridge
+    type: :Person
+  AssignClass (02b23f6c-67db-4d15-bf6a-ec60138aa982)
+ Call ID: 02b23f6c-67db-4d15-bf6a-ec60138aa982
+  Args:
+    source: :Francis_Duke_of_Teck
+    type: :Man
+  AssignClass (7182f08d-9eb9-45e2-9f6f-bf6ca20184da)
+ Call ID: 7182f08d-9eb9-45e2-9f6f-bf6ca20184da
+  Args:
+    source: :Francis_Duke_of_Teck
+    type: :Person
+  AddTriple (ffebb333-78e5-409b-8871-3b5d27e01ca4)
+ Call ID: ffebb333-78e5-409b-8871-3b5d27e01ca4
+  Args:
+    source: :Queen_Mary
+    target: :Princess_Mary_Adelaide_of_Cambridge
+    relation: :hasMother
+  AddTriple (7e3ae18d-83b1-438f-9434-6441ee7d6e53)
+ Call ID: 7e3ae18d-83b1-438f-9434-6441ee7d6e53
+  Args:
+    relation: :hasFather
+    target: :Francis_Duke_of_Teck
+    source: :Queen_Mary
+  AssignClass (06e2b678-22f2-4d4a-8fa0-2bf707217288)
+ Call ID: 06e2b678-22f2-4d4a-8fa0-2bf707217288
+  Args:
+    source: :Prince_John
+    type: :Man
+  AssignClass (17dd4209-9f95-4ef5-8ff0-0a3b213f28b3)
+ Call ID: 17dd4209-9f95-4ef5-8ff0-0a3b213f28b3
+  Args:
+    source: :Prince_John
+    type: :Person
+  AddTriple (49b44c17-1615-4695-ba84-882f7f42c906)
+ Call ID: 49b44c17-1615-4695-ba84-882f7f42c906
+  Args:
+    target: :Edward_VIII
+    relation: :isBrotherOf
+    source: :Prince_John
+  AssignClass (664e1649-3b8b-497c-88b5-8540b0a48a3b)
+ Call ID: 664e1649-3b8b-497c-88b5-8540b0a48a3b
+  Args:
+    source: :George_VI
+    type: :Man
+  AssignClass (fe6e68c4-2d3a-43ed-9e26-2a1c4aaa8615)
+ Call ID: fe6e68c4-2d3a-43ed-9e26-2a1c4aaa8615
+  Args:
+    source: :George_VI
+    type: :Person
+  AddTriple (50a0b39d-4b4f-4654-ac17-590fe6f496e7)
+ Call ID: 50a0b39d-4b4f-4654-ac17-590fe6f496e7
+  Args:
+    target: :Edward_VIII
+    relation: :isBrotherOf
+    source: :George_VI
+  AssignClass (20a1a9e0-6b02-4f17-abec-9bd966514dd6)
+ Call ID: 20a1a9e0-6b02-4f17-abec-9bd966514dd6
+  Args:
+    source: :Prince_Henry_Duke_of_Gloucester
+    type: :Man
+  AssignClass (12a80f93-a3db-43ea-998a-e64330149282)
+ Call ID: 12a80f93-a3db-43ea-998a-e64330149282
+  Args:
+    source: :Prince_Henry_Duke_of_Gloucester
+    type: :Person
+  AddTriple (f78020ad-23f0-4215-b27c-d8992b764ce6)
+ Call ID: f78020ad-23f0-4215-b27c-d8992b764ce6
+  Args:
+    target: :Edward_VIII
+    relation: :isBrotherOf
+    source: :Prince_Henry_Duke_of_Gloucester
+  AssignClass (b92d9a71-2622-4a75-95bb-363176a0d1e7)
+ Call ID: b92d9a71-2622-4a75-95bb-363176a0d1e7
+  Args:
+    source: :Prince_George_Duke_of_Kent
+    type: :Man
+  AssignClass (a3a1ed1a-5464-405d-9430-ef5a534085c0)
+ Call ID: a3a1ed1a-5464-405d-9430-ef5a534085c0
+  Args:
+    source: :Prince_George_Duke_of_Kent
+    type: :Person
+  AddTriple (1cbe8f7b-01fe-4215-a133-30f13bd9d213)
+ Call ID: 1cbe8f7b-01fe-4215-a133-30f13bd9d213
+  Args:
+    target: :Edward_VIII
+    relation: :isBrotherOf
+    source: :Prince_George_Duke_of_Kent
+  AssignClass (0f6bd686-cdbc-4091-8885-b4321f6fa257)
+ Call ID: 0f6bd686-cdbc-4091-8885-b4321f6fa257
+  Args:
+    source: :Wallis_Simpson
+    type: :Woman
+  AssignClass (8f8aae04-f58e-4179-9e33-3ba2f0cceba4)
+ Call ID: 8f8aae04-f58e-4179-9e33-3ba2f0cceba4
+  Args:
+    source: :Wallis_Simpson
+    type: :Person
+  AddTriple (2070c11c-630a-475b-8939-537332eb09ee)
+ Call ID: 2070c11c-630a-475b-8939-537332eb09ee
+  Args:
+    source: :Edward_VIII
     relation: :hasRelation
-    target: Philomena_de_Tornos_y_Steinhart
-  AssignClass (adf613a3-bc40-4453-8966-cd42869dbe4f)
- Call ID: adf613a3-bc40-4453-8966-cd42869dbe4f
+    target: :Wallis_Simpson
+  AddLiteral (afe7bb74-2ef6-45d3-a38f-81c6b3321d99)
+ Call ID: afe7bb74-2ef6-45d3-a38f-81c6b3321d99
   Args:
-    type: :Man
-    source: Carl_of_Wurttemberg
-  AssignClass (1f9a7662-2f25-4298-af4a-5a605e861bd4)
- Call ID: 1f9a7662-2f25-4298-af4a-5a605e861bd4
-  Args:
-    source: Carl_of_Wurttemberg
-    type: :Person
-  AddTriple (518d5091-b8ac-4937-8b0d-75265904e4c1)
- Call ID: 518d5091-b8ac-4937-8b0d-75265904e4c1
-  Args:
-    target: Marie-Therese_of_Wurttemberg
-    source: Carl_of_Wurttemberg
-    relation: :isBrotherOf
-  AssignClass (60cfe44f-8da0-4480-ab4f-d6981a5bafc6)
- Call ID: 60cfe44f-8da0-4480-ab4f-d6981a5bafc6
-  Args:
-    type: :Woman
-    source: Princess_Chantal_of_Orleans
-  AssignClass (337de3b3-0da9-4de8-aaef-16218424fdba)
- Call ID: 337de3b3-0da9-4de8-aaef-16218424fdba
-  Args:
-    source: Princess_Chantal_of_Orleans
-    type: :Person
-  AddTriple (25b79a99-fc67-42e2-aa04-209b11e4ce23)
- Call ID: 25b79a99-fc67-42e2-aa04-209b11e4ce23
-  Args:
-    relation: :isSisterOf
-    source: Princess_Chantal_of_Orleans
-    target: Henri_Count_of_Paris
-  AssignClass (d1b448da-8d8b-4053-ac6e-a0747d81dd72)
- Call ID: d1b448da-8d8b-4053-ac6e-a0747d81dd72
-  Args:
-    type: :Man
-    source: Henri_VI_Count_of_Paris
-  AssignClass (d2dccba0-9e59-4c1b-9c23-61e75d0b8093)
- Call ID: d2dccba0-9e59-4c1b-9c23-61e75d0b8093
-  Args:
-    source: Henri_VI_Count_of_Paris
-    type: :Person
-  AddTriple (f3f18aef-c3bb-43de-8eef-eec8b8f46685)
- Call ID: f3f18aef-c3bb-43de-8eef-eec8b8f46685
-  Args:
-    target: Henri_Count_of_Paris
-    source: Henri_VI_Count_of_Paris
-    relation: :isFatherOf
-  AssignClass (151271bc-ebb0-443a-867d-f49c0de79c36)
- Call ID: 151271bc-ebb0-443a-867d-f49c0de79c36
-  Args:
-    source: Louis_Philippe_I
-    type: :Man
-  AssignClass (277f7e37-5784-401b-a762-414719c4970a)
- Call ID: 277f7e37-5784-401b-a762-414719c4970a
-  Args:
-    source: Louis_Philippe_I
-    type: :Person
-  AddTriple (daa57dc1-720b-4baa-b036-e6e7569b8885)
- Call ID: daa57dc1-720b-4baa-b036-e6e7569b8885
-  Args:
-    relation: :isAncestorOf
-    source: Louis_Philippe_I
-    target: Jean_dOrleans
-  AssignClass (ecea4b7b-fd67-49ca-89db-65bcc82b7984)
- Call ID: ecea4b7b-fd67-49ca-89db-65bcc82b7984
-  Args:
-    type: :Man
-    source: Philippe_I_Duke_of_Orleans
-  AssignClass (4b12360f-4232-43f9-8a6f-1370fba4adbf)
- Call ID: 4b12360f-4232-43f9-8a6f-1370fba4adbf
-  Args:
-    type: :Person
-    source: Philippe_I_Duke_of_Orleans
-  AddTriple (97eace41-29bd-4794-8693-ff21945d31a9)
- Call ID: 97eace41-29bd-4794-8693-ff21945d31a9
-  Args:
-    target: Louis_Philippe_I
-    relation: :isAncestorOf
-    source: Philippe_I_Duke_of_Orleans
-  AssignClass (c656ed5d-9bd0-4722-abbb-a757f0ffecf8)
- Call ID: c656ed5d-9bd0-4722-abbb-a757f0ffecf8
-  Args:
-    type: :Man
-    source: Louis_XIV
-  AssignClass (c041ba75-8459-40e0-a339-2ac6404916e6)
- Call ID: c041ba75-8459-40e0-a339-2ac6404916e6
-  Args:
-    source: Louis_XIV
-    type: :Person
-  AddTriple (856b99cf-7dc3-4b69-8c90-ad92c4a9f938)
- Call ID: 856b99cf-7dc3-4b69-8c90-ad92c4a9f938
-  Args:
-    target: Louis_XIV
-    relation: :isBrotherOf
-    source: Philippe_I_Duke_of_Orleans
-  AssignClass (540f0617-951d-4b4f-80a5-cacf1b52497d)
- Call ID: 540f0617-951d-4b4f-80a5-cacf1b52497d
-  Args:
-    source: Charles_X
-    type: :Man
-  AssignClass (d825c80b-a416-439e-a317-ee1afbe10461)
- Call ID: d825c80b-a416-439e-a317-ee1afbe10461
-  Args:
-    source: Charles_X
-    type: :Person
-  AssignClass (2730ccb1-3677-4539-9297-424c4249670f)
- Call ID: 2730ccb1-3677-4539-9297-424c4249670f
-  Args:
-    type: :Man
-    source: Louis_XVI
-  AssignClass (ebd9fc7a-6c86-42dd-bbca-06dad6cb5c8a)
- Call ID: ebd9fc7a-6c86-42dd-bbca-06dad6cb5c8a
-  Args:
-    source: Louis_XVI
-    type: :Person
-  AddTriple (662d4a6b-4dab-43a4-b37e-59bc1f8b5569)
- Call ID: 662d4a6b-4dab-43a4-b37e-59bc1f8b5569
-  Args:
-    relation: :isBrotherOf
-    source: Charles_X
-    target: Louis_XVI
-  AddTriple (ce4ae5f8-7b3f-4329-ba88-a6c9d6addd25)
- Call ID: ce4ae5f8-7b3f-4329-ba88-a6c9d6addd25
-  Args:
-    target: Jean_dOrleans
-    source: Charles_X
-    relation: :isAncestorOf
-  AssignClass (d1689cc6-f1b8-4f87-a6e0-dc9f83051549)
- Call ID: d1689cc6-f1b8-4f87-a6e0-dc9f83051549
-  Args:
-    source: Duchess_Tatjana_of_Oldenburg
-    type: :Woman
-  AssignClass (40bc01be-bb7f-4b9a-ad59-ac5304df6450)
- Call ID: 40bc01be-bb7f-4b9a-ad59-ac5304df6450
-  Args:
-    source: Duchess_Tatjana_of_Oldenburg
-    type: :Person
-  AddLiteral (727040b7-1658-42dc-9c47-d818d6310d88)
- Call ID: 727040b7-1658-42dc-9c47-d818d6310d88
-  Args:
-    literal_value: 1974
     literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Duchess_Tatjana_of_Oldenburg
-  AddTriple (8748746a-2b48-4b59-89ac-cebfc600749e)
- Call ID: 8748746a-2b48-4b59-89ac-cebfc600749e
-  Args:
-    relation: :hasRelation
-    source: Jean_dOrleans
-    target: Duchess_Tatjana_of_Oldenburg
-  Finish (f177ef15-21c7-4edc-99d1-70ad7b7fe83e)
- Call ID: f177ef15-21c7-4edc-99d1-70ad7b7fe83e
+    source: :Edward_VIII
+    relation: :hasMarriageYear
+    literal_value: 1937
+  Finish (f771aa6a-6f9b-40ce-bee4-43c2efe6f645)
+ Call ID: f771aa6a-6f9b-40ce-bee4-43c2efe6f645
   Args:

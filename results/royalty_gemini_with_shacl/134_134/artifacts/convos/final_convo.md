@@ -85,31 +85,26 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Herzeleide Ina-Marie Sophie Charlotte Else of Prussia (25 December 1918 – 22 March 1989) was a member of the deposed House of Hohenzollern.
-She was the only daughter of Prince Oskar of Prussia (the second youngest son of Emperor Wilhelm II) and his initially morganatic wife, Countess Ina Marie von Bassewitz.
-She is the mother of Ernst-Johann Biron, Prince of Courland, the current head of the House of Biron.
-Biography
+Friedrich Franz, Hereditary Grand Duke of Mecklenburg-Schwerin (German: Friedrich Franz Erbgroßherzog von Mecklenburg-Schwerin; 22 April 1910 – 31 July 2001) was the heir apparent to the throne of Mecklenburg-Schwerin and a member of the Waffen-SS.
+Early life
 
-Family and early life
+He was born in Schwerin, the eldest child of the reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV, and his wife Princess Alexandra of Hanover, a daughter of Crown Prince Ernest Augustus of Hanover (a first-cousin once removed of Queen Victoria) and Princess Thyra of Denmark, the youngest daughter of King Christian IX of Denmark.
+He did not succeed to the throne, as the Grand Duchy was replaced with the Free State of Mecklenburg-Schwerin.
+Upon the promulgation of the Weimar Constitution on 11 August 1919, titles of sovereigns such as emperor/empress, king/queen, grand duke/grand duchess, etc. were abolished.
+He therefore became known as Friedrich Franz Herzog von Mecklenburg-Schwerin (or Friedrich Franz, Duke of Mecklenburg-Schwerin) de facto since the establishment of the Free State of Mecklenburg-Schwerin.
+Post monarchy
 
-Countess Herzeleide-Ina-Marie von Ruppin was born in Bristow, Mecklenburg, on 25 December 1918, shortly after the defeat of the German Empire and the collapse of the monarchy.
-She was consequently given the name Herzeleide, meaning "heart's sorrow".
-She had three brothers: Oscar, Burchard, and Wilhelm-Karl.
-Herzeleide and her brothers became Princess/Prince of Prussia on 21 June 1920 when their parents' morganatic marriage was recognised as dynastic by the deposed Emperor Wilhelm II.
-In early 1938, Herzeleide was one of three bridesmaids at the wedding of the future King Paul of Greece to Frederica of Hanover, her first cousin.
-Marriage and issue
-
-On 15 August 1938 in Potsdam Garrison Church, Herzeleide married Prince Karl Biron von Courland (15 June 1907 – 28 February 1982).
-Karl was the eldest son and heir of Prince Gustav Biron of Courland and Françoise Lévisse de Montigny, daughter of Marquis de Jaucourt.
-Along with the bride and groom's parents, in attendance were the former German Crown Prince Wilhelm and Emperor Wilhelm's consort, Empress Hermine.
-All male guests wore uniforms of the former German army.
-The couple's honeymoon plans included a visit to Doorn to pay respects to Emperor Wilhelm in exile, the bride's paternal grandfather.
+In May 1931 against the will of his father, Friedrich Franz joined the SS and by 1936 he had been promoted to the rank of Hauptsturmführer (Captain).
+In May 1943, a family council was called by the Grand Ducal family and Friedrich Franz was passed over as heir (of the family estates) in favour of his younger brother Duke Christian Louis, who would instead inherit the family property.
+Friedrich Franz married Karin Elisabeth von Schaper (1920–2012), the daughter of Walter von Schaper and his wife Baroness Louise von Münchhausen, on 11 June 1941 at Schloß Wiligrad, near the Lake Schwerin.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -125,39 +120,9 @@ The couple's honeymoon plans included a visit to Doorn to pay respects to Empero
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -172,6 +137,23 @@ The couple's honeymoon plans included a visit to Doorn to pay respects to Empero
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -189,6 +171,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -256,29 +253,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -287,6 +276,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -299,6 +296,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -307,17 +306,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -345,6 +346,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -360,152 +445,212 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (31857c31-80f7-4df1-a1a5-992fafe45fb2)
- Call ID: 31857c31-80f7-4df1-a1a5-992fafe45fb2
+  AssignClass (6c9fd4e0-f5d2-4154-9ef9-dc09010c50cf)
+ Call ID: 6c9fd4e0-f5d2-4154-9ef9-dc09010c50cf
   Args:
-    type: :Woman
-    source: Herzeleide_of_Prussia
-  AssignClass (bce05def-1b53-4780-ab33-523d5f7d56c0)
- Call ID: bce05def-1b53-4780-ab33-523d5f7d56c0
-  Args:
+    source: Friedrich_Franz_of_Mecklenburg-Schwerin
     type: :Man
-    source: Oskar_of_Prussia
-  AssignClass (3b21c10c-bf7b-4a3b-80d5-e6360573351c)
- Call ID: 3b21c10c-bf7b-4a3b-80d5-e6360573351c
+  AssignClass (397df324-214a-43ed-aadf-889fc743739a)
+ Call ID: 397df324-214a-43ed-aadf-889fc743739a
   Args:
-    type: :Woman
-    source: Ina_Marie_von_Bassewitz
-  AssignClass (44153ce7-54d5-4bf1-a115-5550072d6335)
- Call ID: 44153ce7-54d5-4bf1-a115-5550072d6335
+    type: :Person
+    source: Friedrich_Franz_of_Mecklenburg-Schwerin
+  AddLiteral (4a51e8e3-c9c1-4731-b508-083aede27cd1)
+ Call ID: 4a51e8e3-c9c1-4731-b508-083aede27cd1
   Args:
-    source: Wilhelm_II
-    type: :Man
-  AssignClass (a907d23d-59b5-4733-addb-d6f601fdd7c6)
- Call ID: a907d23d-59b5-4733-addb-d6f601fdd7c6
-  Args:
-    type: :Man
-    source: Ernst-Johann_Biron
-  AssignClass (d287a76c-d5ea-43ab-b0c7-3f5f81f6b6f9)
- Call ID: d287a76c-d5ea-43ab-b0c7-3f5f81f6b6f9
-  Args:
-    source: Karl_Biron_von_Courland
-    type: :Man
-  AssignClass (83839b44-90d5-4297-836c-3062d781d989)
- Call ID: 83839b44-90d5-4297-836c-3062d781d989
-  Args:
-    type: :Man
-    source: Gustav_Biron_of_Courland
-  AssignClass (ba4b0a56-d60a-41d1-af0e-6fd830b006d2)
- Call ID: ba4b0a56-d60a-41d1-af0e-6fd830b006d2
-  Args:
-    source: Francoise_Levisse_de_Montigny
-    type: :Woman
-  AssignClass (f0a3598d-1382-4ca8-87d2-d1848b295a85)
- Call ID: f0a3598d-1382-4ca8-87d2-d1848b295a85
-  Args:
-    source: Oscar_of_Prussia_brother
-    type: :Man
-  AssignClass (635e84d4-978e-4442-a973-b49f95b46322)
- Call ID: 635e84d4-978e-4442-a973-b49f95b46322
-  Args:
-    type: :Man
-    source: Burchard_of_Prussia
-  AssignClass (d52d2059-41cb-4f17-a681-731728dd7e3e)
- Call ID: d52d2059-41cb-4f17-a681-731728dd7e3e
-  Args:
-    source: Wilhelm-Karl_of_Prussia
-    type: :Man
-  AddLiteral (7dd89833-3070-4120-8586-b971e76db118)
- Call ID: 7dd89833-3070-4120-8586-b971e76db118
-  Args:
-    literal_type: xsd:string
-    source: Herzeleide_of_Prussia
-    relation: :knownAs
-    literal_value: Herzeleide Ina-Marie Sophie Charlotte Else of Prussia
-  AddLiteral (58398320-d130-4f71-8840-535a9e1224c7)
- Call ID: 58398320-d130-4f71-8840-535a9e1224c7
-  Args:
-    literal_value: 1918
-    source: Herzeleide_of_Prussia
+    source: Friedrich_Franz_of_Mecklenburg-Schwerin
+    literal_value: 1910
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (967831ab-e725-45f5-b6b0-217bd65830c3)
- Call ID: 967831ab-e725-45f5-b6b0-217bd65830c3
+  AddLiteral (8a2c0ac5-ec26-4bdc-abb3-44d064de2ef2)
+ Call ID: 8a2c0ac5-ec26-4bdc-abb3-44d064de2ef2
   Args:
-    source: Herzeleide_of_Prussia
+    literal_value: 2001
+    source: Friedrich_Franz_of_Mecklenburg-Schwerin
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_value: 1989
+  AssignClass (415e0eda-0fab-487c-b714-9e1b75fc7dbb)
+ Call ID: 415e0eda-0fab-487c-b714-9e1b75fc7dbb
+  Args:
+    source: Frederick_Francis_IV_of_Mecklenburg-Schwerin
+    type: :Man
+  AssignClass (051740ea-1079-4548-873e-929f6819fef0)
+ Call ID: 051740ea-1079-4548-873e-929f6819fef0
+  Args:
+    source: Frederick_Francis_IV_of_Mecklenburg-Schwerin
+    type: :Person
+  AssignClass (e0184ac3-c1ad-4f1c-afb7-b35c4f8aa88d)
+ Call ID: e0184ac3-c1ad-4f1c-afb7-b35c4f8aa88d
+  Args:
+    source: Alexandra_of_Hanover
+    type: :Woman
+  AssignClass (41787b2b-bfed-4799-885f-16315a66307d)
+ Call ID: 41787b2b-bfed-4799-885f-16315a66307d
+  Args:
+    source: Alexandra_of_Hanover
+    type: :Person
+  AddTriple (72d85f57-16ff-4359-9447-d4e28ae7a823)
+ Call ID: 72d85f57-16ff-4359-9447-d4e28ae7a823
+  Args:
+    source: Friedrich_Franz_of_Mecklenburg-Schwerin
+    target: Frederick_Francis_IV_of_Mecklenburg-Schwerin
+    relation: :hasFather
+  AddTriple (5ce4367c-63d4-4467-a960-f2fe06aca4db)
+ Call ID: 5ce4367c-63d4-4467-a960-f2fe06aca4db
+  Args:
+    relation: :hasMother
+    target: Alexandra_of_Hanover
+    source: Friedrich_Franz_of_Mecklenburg-Schwerin
+  AssignClass (85e5e31d-4f25-4b4f-bdde-2edd0f0515e7)
+ Call ID: 85e5e31d-4f25-4b4f-bdde-2edd0f0515e7
+  Args:
+    type: :Man
+    source: Ernest_Augustus_of_Hanover
+  AssignClass (949a7c6d-13e1-4b54-90b9-d7502cae83a2)
+ Call ID: 949a7c6d-13e1-4b54-90b9-d7502cae83a2
+  Args:
+    source: Ernest_Augustus_of_Hanover
+    type: :Person
+  AssignClass (aa20902b-ae04-446d-999e-febc1792202a)
+ Call ID: aa20902b-ae04-446d-999e-febc1792202a
+  Args:
+    source: Thyra_of_Denmark
+    type: :Woman
+  AssignClass (f95fc865-35fa-439c-9dc6-6343daaa7082)
+ Call ID: f95fc865-35fa-439c-9dc6-6343daaa7082
+  Args:
+    type: :Person
+    source: Thyra_of_Denmark
+  AddTriple (c6c7598d-ce21-4939-a1c1-efd7efe781ef)
+ Call ID: c6c7598d-ce21-4939-a1c1-efd7efe781ef
+  Args:
+    source: Alexandra_of_Hanover
+    target: Ernest_Augustus_of_Hanover
+    relation: :hasFather
+  AddTriple (59e5f787-ee3a-4acd-9fb3-1548f80cf699)
+ Call ID: 59e5f787-ee3a-4acd-9fb3-1548f80cf699
+  Args:
+    target: Thyra_of_Denmark
+    relation: :hasMother
+    source: Alexandra_of_Hanover
+  AssignClass (07466536-1745-49fe-9e1e-a7c877614d11)
+ Call ID: 07466536-1745-49fe-9e1e-a7c877614d11
+  Args:
+    type: :Man
+    source: Christian_IX_of_Denmark
+  AssignClass (3db2816f-6b00-4c61-95ed-cb74676b61bc)
+ Call ID: 3db2816f-6b00-4c61-95ed-cb74676b61bc
+  Args:
+    source: Christian_IX_of_Denmark
+    type: :Person
+  AddTriple (a601fdb4-acac-43ea-8d87-763e899255d7)
+ Call ID: a601fdb4-acac-43ea-8d87-763e899255d7
+  Args:
+    relation: :hasFather
+    target: Christian_IX_of_Denmark
+    source: Thyra_of_Denmark
+  AssignClass (75c92636-06a2-42b6-b1d8-1e15c87e4a1e)
+ Call ID: 75c92636-06a2-42b6-b1d8-1e15c87e4a1e
+  Args:
+    type: :Man
+    source: Christian_Louis_of_Mecklenburg-Schwerin
+  AssignClass (43bd8d9e-78bd-4182-9afd-f3fec6bf1a4a)
+ Call ID: 43bd8d9e-78bd-4182-9afd-f3fec6bf1a4a
+  Args:
+    type: :Person
+    source: Christian_Louis_of_Mecklenburg-Schwerin
+  AddTriple (be8a2525-e0aa-4a6c-9a74-ab2ce804b2e5)
+ Call ID: be8a2525-e0aa-4a6c-9a74-ab2ce804b2e5
+  Args:
+    source: Friedrich_Franz_of_Mecklenburg-Schwerin
+    relation: :hasBrother
+    target: Christian_Louis_of_Mecklenburg-Schwerin
+  AssignClass (936e9d4a-7cd1-45ad-a10f-d343ce869753)
+ Call ID: 936e9d4a-7cd1-45ad-a10f-d343ce869753
+  Args:
+    type: :Woman
+    source: Karin_Elisabeth_von_Schaper
+  AssignClass (f216e9af-58a7-4103-b0cb-c63ad7c5a2e9)
+ Call ID: f216e9af-58a7-4103-b0cb-c63ad7c5a2e9
+  Args:
+    source: Karin_Elisabeth_von_Schaper
+    type: :Person
+  AddLiteral (20b6a341-b6e3-4b01-9fc6-deb9a5bdea42)
+ Call ID: 20b6a341-b6e3-4b01-9fc6-deb9a5bdea42
+  Args:
+    literal_value: 1941
+    source: Friedrich_Franz_of_Mecklenburg-Schwerin
     literal_type: xsd:integer
-  AddTriple (d0360b49-f385-4b07-a48d-69de34982289)
- Call ID: d0360b49-f385-4b07-a48d-69de34982289
-  Args:
-    target: Oskar_of_Prussia
-    relation: :hasFather
-    source: Herzeleide_of_Prussia
-  AddTriple (ed9a175d-5469-473d-b308-c51b1f6e78a5)
- Call ID: ed9a175d-5469-473d-b308-c51b1f6e78a5
-  Args:
-    relation: :hasMother
-    source: Herzeleide_of_Prussia
-    target: Ina_Marie_von_Bassewitz
-  AddTriple (21864c9d-cb61-4bd9-98f9-da4bf77f032b)
- Call ID: 21864c9d-cb61-4bd9-98f9-da4bf77f032b
-  Args:
-    source: Oskar_of_Prussia
-    relation: :hasFather
-    target: Wilhelm_II
-  AddTriple (4d45d7b5-fba4-4dfc-b624-bb091348b9d5)
- Call ID: 4d45d7b5-fba4-4dfc-b624-bb091348b9d5
-  Args:
-    target: Herzeleide_of_Prussia
-    source: Ernst-Johann_Biron
-    relation: :hasMother
-  AddTriple (f811a5c0-771f-4efb-aca5-2c0767c6d55b)
- Call ID: f811a5c0-771f-4efb-aca5-2c0767c6d55b
-  Args:
-    relation: :hasFather
-    source: Ernst-Johann_Biron
-    target: Karl_Biron_von_Courland
-  AddTriple (5084dd3a-6ea4-4d4b-9e76-c314d11bff87)
- Call ID: 5084dd3a-6ea4-4d4b-9e76-c314d11bff87
-  Args:
-    relation: :hasFather
-    source: Karl_Biron_von_Courland
-    target: Gustav_Biron_of_Courland
-  AddTriple (99423aaf-d4f4-4d23-94be-7f9e0f3f6290)
- Call ID: 99423aaf-d4f4-4d23-94be-7f9e0f3f6290
-  Args:
-    relation: :hasMother
-    source: Karl_Biron_von_Courland
-    target: Francoise_Levisse_de_Montigny
-  AddLiteral (e96909b0-a8e9-4810-a518-ceb68ad93206)
- Call ID: e96909b0-a8e9-4810-a518-ceb68ad93206
-  Args:
-    literal_value: 1938
-    source: Herzeleide_of_Prussia
     relation: :hasMarriageYear
-    literal_type: xsd:integer
-  AddTriple (b2712f66-fc1b-4dcd-bc01-431329861875)
- Call ID: b2712f66-fc1b-4dcd-bc01-431329861875
+  AddTriple (6a80414b-d16f-4358-9cf0-8d96d911747d)
+ Call ID: 6a80414b-d16f-4358-9cf0-8d96d911747d
   Args:
-    source: Herzeleide_of_Prussia
-    relation: :hasBrother
-    target: Oscar_of_Prussia_brother
-  AddTriple (1c1d3ab5-35f8-4391-a3c4-fc04adaf2f25)
- Call ID: 1c1d3ab5-35f8-4391-a3c4-fc04adaf2f25
+    source: Friedrich_Franz_of_Mecklenburg-Schwerin
+    target: Karin_Elisabeth_von_Schaper
+    relation: :hasRelation
+  AssignClass (2f3b7b5f-6916-4c6e-bf7b-c53c49b37d31)
+ Call ID: 2f3b7b5f-6916-4c6e-bf7b-c53c49b37d31
   Args:
-    source: Herzeleide_of_Prussia
-    relation: :hasBrother
-    target: Burchard_of_Prussia
-  AddTriple (86fa58dc-bc08-44b3-abaf-35cabb622415)
- Call ID: 86fa58dc-bc08-44b3-abaf-35cabb622415
+    type: :Man
+    source: Walter_von_Schaper
+  AssignClass (6dd9bd6f-342d-418d-ae2b-dd51990a7ea3)
+ Call ID: 6dd9bd6f-342d-418d-ae2b-dd51990a7ea3
   Args:
-    target: Wilhelm-Karl_of_Prussia
-    source: Herzeleide_of_Prussia
-    relation: :hasBrother
-  Finish (d5e30c94-4cf1-4d08-8dee-a7ef2900d7de)
- Call ID: d5e30c94-4cf1-4d08-8dee-a7ef2900d7de
+    type: :Person
+    source: Walter_von_Schaper
+  AssignClass (32b4ba4f-4049-4174-80a5-dd64222ebcde)
+ Call ID: 32b4ba4f-4049-4174-80a5-dd64222ebcde
   Args:
+    type: :Woman
+    source: Louise_von_Münchhausen
+  AssignClass (7478d944-d715-4fe2-a157-1cc86c2e6cd5)
+ Call ID: 7478d944-d715-4fe2-a157-1cc86c2e6cd5
+  Args:
+    source: Louise_von_Münchhausen
+    type: :Person
+  AddTriple (8d082329-c18b-408a-ac56-b744babc53af)
+ Call ID: 8d082329-c18b-408a-ac56-b744babc53af
+  Args:
+    relation: :hasFather
+    target: Walter_von_Schaper
+    source: Karin_Elisabeth_von_Schaper
+  AddTriple (17e8d601-f59a-4cbb-a038-ce0c85564707)
+ Call ID: 17e8d601-f59a-4cbb-a038-ce0c85564707
+  Args:
+    relation: :hasMother
+    target: Louise_von_Münchhausen
+    source: Karin_Elisabeth_von_Schaper
+  Finish (9efd994d-15af-46f9-a800-cbe92fc652eb)
+ Call ID: 9efd994d-15af-46f9-a800-cbe92fc652eb
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -610,41 +755,47 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ernst-Johann_Biron a :Man ;
-      :hasFather data:Karl_Biron_von_Courland ;
-      :hasMother data:Herzeleide_of_Prussia .
+  data:Friedrich_Franz_of_Mecklenburg-Schwerin a :Man,
+          :Person ;
+      :hasBirthYear 1910 ;
+      :hasBrother data:Christian_Louis_of_Mecklenburg-Schwerin ;
+      :hasDeathYear 2001 ;
+      :hasFather data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+      :hasMarriageYear 1941 ;
+      :hasMother data:Alexandra_of_Hanover ;
+      :hasRelation data:Karin_Elisabeth_von_Schaper .
 
-  data:Burchard_of_Prussia a :Man .
+  data:Alexandra_of_Hanover a :Person,
+          :Woman ;
+      :hasFather data:Ernest_Augustus_of_Hanover ;
+      :hasMother data:Thyra_of_Denmark .
 
-  data:Francoise_Levisse_de_Montigny a :Woman .
+  data:Christian_IX_of_Denmark a :Man,
+          :Person .
 
-  data:Gustav_Biron_of_Courland a :Man .
+  data:Christian_Louis_of_Mecklenburg-Schwerin a :Man,
+          :Person .
 
-  data:Herzeleide_of_Prussia a :Woman ;
-      :hasBirthYear 1918 ;
-      :hasBrother data:Burchard_of_Prussia,
-          data:Oscar_of_Prussia_brother,
-          data:Wilhelm-Karl_of_Prussia ;
-      :hasDeathYear 1989 ;
-      :hasFather data:Oskar_of_Prussia ;
-      :hasMarriageYear 1938 ;
-      :hasMother data:Ina_Marie_von_Bassewitz ;
-      :knownAs "Herzeleide Ina-Marie Sophie Charlotte Else of Prussia"^^xsd:string .
+  data:Ernest_Augustus_of_Hanover a :Man,
+          :Person .
 
-  data:Ina_Marie_von_Bassewitz a :Woman .
+  data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man,
+          :Person .
 
-  data:Karl_Biron_von_Courland a :Man ;
-      :hasFather data:Gustav_Biron_of_Courland ;
-      :hasMother data:Francoise_Levisse_de_Montigny .
+  data:Karin_Elisabeth_von_Schaper a :Person,
+          :Woman ;
+      :hasFather data:Walter_von_Schaper ;
+      :hasMother data:Louise_von_M%C3%BCnchhausen .
 
-  data:Oscar_of_Prussia_brother a :Man .
+  data:Louise_von_M%C3%BCnchhausen a :Person,
+          :Woman .
 
-  data:Oskar_of_Prussia a :Man ;
-      :hasFather data:Wilhelm_II .
+  data:Thyra_of_Denmark a :Person,
+          :Woman ;
+      :hasFather data:Christian_IX_of_Denmark .
 
-  data:Wilhelm-Karl_of_Prussia a :Man .
-
-  data:Wilhelm_II a :Man .
+  data:Walter_von_Schaper a :Man,
+          :Person .
 
 
 
@@ -656,8 +807,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (459ad887-d0da-42e9-89ea-d261a9476511)
- Call ID: 459ad887-d0da-42e9-89ea-d261a9476511
+  ValidateShacl (a5c4fd93-e2ef-4c17-8d3b-60bae6bc50d5)
+ Call ID: a5c4fd93-e2ef-4c17-8d3b-60bae6bc50d5
   Args:
 
 ================================= Tool Message =================================
@@ -669,169 +820,169 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Gustav_Biron_of_Courland does not have the required class :Ancestor.
+      The value Frederick_Francis_IV_of_Mecklenburg-Schwerin for the property hasFather on node Friedrich_Franz_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Gustav_Biron_of_Courland', class: ':Ancestor')
+      AssignClass(Frederick_Francis_IV_of_Mecklenburg-Schwerin, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Wilhelm_II does not have the required class :Ancestor.
+      The value Alexandra_of_Hanover for the property hasMother on node Friedrich_Franz_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Wilhelm_II', class: ':Ancestor')
+      AssignClass(Alexandra_of_Hanover, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Karl_Biron_von_Courland does not have the required class :Ancestor.
+      The value Walter_von_Schaper for the property hasFather on node Karin_Elisabeth_von_Schaper is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Karl_Biron_von_Courland', class: ':Ancestor')
+      AssignClass(Walter_von_Schaper, :Ancestor)
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Francoise_Levisse_de_Montigny does not have the required class :Ancestor.
+      The value Frederick_Francis_IV_of_Mecklenburg-Schwerin for the property hasFather on node Friedrich_Franz_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Francoise_Levisse_de_Montigny', class: ':Ancestor')
+      AssignClass(Frederick_Francis_IV_of_Mecklenburg-Schwerin, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Herzeleide_of_Prussia does not have the required class :Ancestor.
+      The value Christian_IX_of_Denmark for the property hasFather on node Thyra_of_Denmark is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Herzeleide_of_Prussia', class: ':Ancestor')
+      AssignClass(Christian_IX_of_Denmark, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Gustav_Biron_of_Courland does not have the required class :Ancestor.
+      The value Ernest_Augustus_of_Hanover for the property hasFather on node Alexandra_of_Hanover is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Gustav_Biron_of_Courland', class: ':Ancestor')
+      AssignClass(Ernest_Augustus_of_Hanover, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Wilhelm_II does not have the required class :Ancestor.
+      The value Louise_von_Münchhausen for the property hasMother on node Karin_Elisabeth_von_Schaper is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Wilhelm_II', class: ':Ancestor')
+      AssignClass(Louise_von_Münchhausen, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Oskar_of_Prussia does not have the required class :Ancestor.
+      The value Alexandra_of_Hanover for the property hasMother on node Friedrich_Franz_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Oskar_of_Prussia', class: ':Ancestor')
+      AssignClass(Alexandra_of_Hanover, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Karl_Biron_von_Courland does not have the required class :Ancestor.
+      The value Thyra_of_Denmark for the property hasMother on node Alexandra_of_Hanover is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Karl_Biron_von_Courland', class: ':Ancestor')
+      AssignClass(Thyra_of_Denmark, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Francoise_Levisse_de_Montigny does not have the required class :Ancestor.
+      The value Walter_von_Schaper for the property hasFather on node Karin_Elisabeth_von_Schaper is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Francoise_Levisse_de_Montigny', class: ':Ancestor')
+      AssignClass(Walter_von_Schaper, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Ina_Marie_von_Bassewitz does not have the required class :Ancestor.
+      The value Frederick_Francis_IV_of_Mecklenburg-Schwerin for the property hasFather on node Friedrich_Franz_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Ina_Marie_von_Bassewitz', class: ':Ancestor')
+      AssignClass(Frederick_Francis_IV_of_Mecklenburg-Schwerin, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Herzeleide_of_Prussia does not have the required class :Ancestor.
+      The value Christian_IX_of_Denmark for the property hasFather on node Thyra_of_Denmark is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Herzeleide_of_Prussia', class: ':Ancestor')
+      AssignClass(Christian_IX_of_Denmark, :Ancestor)
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Gustav_Biron_of_Courland does not have the required class :Ancestor.
+      The value Ernest_Augustus_of_Hanover for the property hasFather on node Alexandra_of_Hanover is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Gustav_Biron_of_Courland', class: ':Ancestor')
+      AssignClass(Ernest_Augustus_of_Hanover, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Wilhelm_II does not have the required class :Ancestor.
+      The value Louise_von_Münchhausen for the property hasMother on node Karin_Elisabeth_von_Schaper is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Wilhelm_II', class: ':Ancestor')
+      AssignClass(Louise_von_Münchhausen, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Oskar_of_Prussia does not have the required class :Ancestor.
+      The value Alexandra_of_Hanover for the property hasMother on node Friedrich_Franz_of_Mecklenburg-Schwerin is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Oskar_of_Prussia', class: ':Ancestor')
+      AssignClass(Alexandra_of_Hanover, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Karl_Biron_von_Courland does not have the required class :Ancestor.
+      The value Thyra_of_Denmark for the property hasMother on node Alexandra_of_Hanover is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Karl_Biron_von_Courland', class: ':Ancestor')
+      AssignClass(Thyra_of_Denmark, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Francoise_Levisse_de_Montigny does not have the required class :Ancestor.
+      The value Walter_von_Schaper for the property hasFather on node Karin_Elisabeth_von_Schaper is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Francoise_Levisse_de_Montigny', class: ':Ancestor')
+      AssignClass(Walter_von_Schaper, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Ina_Marie_von_Bassewitz does not have the required class :Ancestor.
+      The value Christian_IX_of_Denmark for the property hasFather on node Thyra_of_Denmark is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Ina_Marie_von_Bassewitz', class: ':Ancestor')
+      AssignClass(Christian_IX_of_Denmark, :Ancestor)
 
 
   Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Herzeleide_of_Prussia does not have the required class :Ancestor.
+      The value Ernest_Augustus_of_Hanover for the property hasFather on node Alexandra_of_Hanover is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Herzeleide_of_Prussia', class: ':Ancestor')
+      AssignClass(Ernest_Augustus_of_Hanover, :Ancestor)
 
 
   Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Oskar_of_Prussia does not have the required class :Ancestor.
+      The value Louise_von_Münchhausen for the property hasMother on node Karin_Elisabeth_von_Schaper is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Oskar_of_Prussia', class: ':Ancestor')
+      AssignClass(Louise_von_Münchhausen, :Ancestor)
 
 
   Violation [21]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Ina_Marie_von_Bassewitz does not have the required class :Ancestor.
+      The value Thyra_of_Denmark for the property hasMother on node Alexandra_of_Hanover is missing the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Ina_Marie_von_Bassewitz', class: ':Ancestor')
+      AssignClass(Thyra_of_Denmark, :Ancestor)
 
 
 
@@ -840,44 +991,171 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (bb8ee8e1-1f33-4111-a173-9c2b0bab571a)
- Call ID: bb8ee8e1-1f33-4111-a173-9c2b0bab571a
+  AssignClass (deaf8c86-9fa9-423c-a02c-860d5ba60a00)
+ Call ID: deaf8c86-9fa9-423c-a02c-860d5ba60a00
   Args:
+    source: Frederick_Francis_IV_of_Mecklenburg-Schwerin
     type: :Ancestor
-    source: Gustav_Biron_of_Courland
-  AssignClass (29a37aa1-6c11-4550-afdc-40612430acff)
- Call ID: 29a37aa1-6c11-4550-afdc-40612430acff
+  AssignClass (84707098-c39c-4a02-8280-c4d5c3ca59f8)
+ Call ID: 84707098-c39c-4a02-8280-c4d5c3ca59f8
   Args:
+    source: Alexandra_of_Hanover
     type: :Ancestor
-    source: Wilhelm_II
-  AssignClass (73d3c19b-20a1-4f1a-85e7-65bf84324cbc)
- Call ID: 73d3c19b-20a1-4f1a-85e7-65bf84324cbc
+  AssignClass (0b05e73e-f83a-4d65-8768-e4b5f4bddc2a)
+ Call ID: 0b05e73e-f83a-4d65-8768-e4b5f4bddc2a
   Args:
+    source: Walter_von_Schaper
     type: :Ancestor
-    source: Karl_Biron_von_Courland
-  AssignClass (ed5e31fb-321d-4fc5-8ff5-77858d146287)
- Call ID: ed5e31fb-321d-4fc5-8ff5-77858d146287
+  AssignClass (66ea31e3-fea7-48cc-b833-2f17f37ccb40)
+ Call ID: 66ea31e3-fea7-48cc-b833-2f17f37ccb40
   Args:
+    source: Christian_IX_of_Denmark
     type: :Ancestor
-    source: Francoise_Levisse_de_Montigny
-  AssignClass (f05c53e4-e0b6-40c3-a190-d882d5ff84de)
- Call ID: f05c53e4-e0b6-40c3-a190-d882d5ff84de
+  AssignClass (b44110eb-6e3e-4e09-aca4-5f34831a8e6c)
+ Call ID: b44110eb-6e3e-4e09-aca4-5f34831a8e6c
   Args:
+    source: Ernest_Augustus_of_Hanover
     type: :Ancestor
-    source: Herzeleide_of_Prussia
-  AssignClass (01dee683-c85a-4364-925a-86b7a1c34b31)
- Call ID: 01dee683-c85a-4364-925a-86b7a1c34b31
+  AssignClass (204480e7-70d2-40f7-8a86-ab7a00586e46)
+ Call ID: 204480e7-70d2-40f7-8a86-ab7a00586e46
   Args:
+    source: Louise_von_Münchhausen
     type: :Ancestor
-    source: Oskar_of_Prussia
-  AssignClass (f5649bee-4825-4877-ab3b-823a29c16185)
- Call ID: f5649bee-4825-4877-ab3b-823a29c16185
+  AssignClass (8803bb7c-c6a8-4999-af87-b71ebfe0cb89)
+ Call ID: 8803bb7c-c6a8-4999-af87-b71ebfe0cb89
   Args:
+    source: Thyra_of_Denmark
     type: :Ancestor
-    source: Ina_Marie_von_Bassewitz
-  ValidateShacl (b33d5420-5f0f-4196-a554-67ffdbb76022)
- Call ID: b33d5420-5f0f-4196-a554-67ffdbb76022
+  AssignClass (acb8746d-1e82-47fb-abac-a3d68d3a8ee6)
+ Call ID: acb8746d-1e82-47fb-abac-a3d68d3a8ee6
   Args:
+    source: Friedrich_Franz_of_Mecklenburg-Schwerin
+    type: :Person
+  AddTriple (faf52fc7-e586-4594-b206-0e49bcd89b10)
+ Call ID: faf52fc7-e586-4594-b206-0e49bcd89b10
+  Args:
+    relation: :hasSex
+    target: :Male
+    source: Friedrich_Franz_of_Mecklenburg-Schwerin
+  AddTriple (874d3ad5-6928-4319-b6e6-ca9709641918)
+ Call ID: 874d3ad5-6928-4319-b6e6-ca9709641918
+  Args:
+    source: Frederick_Francis_IV_of_Mecklenburg-Schwerin
+    target: :Male
+    relation: :hasSex
+  AddTriple (0b30b987-2ec0-41e8-b7b5-48dbdf41e4aa)
+ Call ID: 0b30b987-2ec0-41e8-b7b5-48dbdf41e4aa
+  Args:
+    target: :Female
+    source: Alexandra_of_Hanover
+    relation: :hasSex
+  AddTriple (a400996e-9297-4efc-bbaa-84f067221b56)
+ Call ID: a400996e-9297-4efc-bbaa-84f067221b56
+  Args:
+    source: Ernest_Augustus_of_Hanover
+    target: :Male
+    relation: :hasSex
+  AddTriple (a109b645-0df7-400a-9c5d-6bfe43d959b3)
+ Call ID: a109b645-0df7-400a-9c5d-6bfe43d959b3
+  Args:
+    source: Thyra_of_Denmark
+    target: :Female
+    relation: :hasSex
+  AddTriple (87bd92a3-7753-4163-92c3-77ba97442a12)
+ Call ID: 87bd92a3-7753-4163-92c3-77ba97442a12
+  Args:
+    source: Christian_IX_of_Denmark
+    target: :Male
+    relation: :hasSex
+  AddTriple (b474ae43-282c-4bb2-b5ea-832ba2912916)
+ Call ID: b474ae43-282c-4bb2-b5ea-832ba2912916
+  Args:
+    target: :Male
+    source: Christian_Louis_of_Mecklenburg-Schwerin
+    relation: :hasSex
+  AddTriple (713bb9a2-a64c-49ab-9bf3-134a24dfd18e)
+ Call ID: 713bb9a2-a64c-49ab-9bf3-134a24dfd18e
+  Args:
+    relation: :hasSex
+    source: Karin_Elisabeth_von_Schaper
+    target: :Female
+  AddTriple (1a554d7b-3ea3-41b7-9bbb-32a33626ca07)
+ Call ID: 1a554d7b-3ea3-41b7-9bbb-32a33626ca07
+  Args:
+    source: Walter_von_Schaper
+    target: :Male
+    relation: :hasSex
+  AddTriple (c7dfb615-01e6-4f0d-b980-f890af0783e2)
+ Call ID: c7dfb615-01e6-4f0d-b980-f890af0783e2
+  Args:
+    target: :Female
+    source: Louise_von_Münchhausen
+    relation: :hasSex
+  AssignClass (6ed3dd19-2217-416b-bb47-6c101b6f4481)
+ Call ID: 6ed3dd19-2217-416b-bb47-6c101b6f4481
+  Args:
+    source: :Male
+    type: :Male
+  AssignClass (4f482796-3439-4857-a8d4-77b4cd119b3e)
+ Call ID: 4f482796-3439-4857-a8d4-77b4cd119b3e
+  Args:
+    source: :Female
+    type: :Female
+  Finish (93f1116d-3733-47a3-ad8a-e9bf25d8e137)
+ Call ID: 93f1116d-3733-47a3-ad8a-e9bf25d8e137
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -910,50 +1188,82 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Ernst-Johann_Biron a :Man ;
-      :hasFather data:Karl_Biron_von_Courland ;
-      :hasMother data:Herzeleide_of_Prussia .
+  data:Friedrich_Franz_of_Mecklenburg-Schwerin a :Man,
+          :Person ;
+      :hasBirthYear 1910 ;
+      :hasBrother data:Christian_Louis_of_Mecklenburg-Schwerin ;
+      :hasDeathYear 2001 ;
+      :hasFather data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+      :hasMarriageYear 1941 ;
+      :hasMother data:Alexandra_of_Hanover ;
+      :hasRelation data:Karin_Elisabeth_von_Schaper ;
+      :hasSex data:Male .
 
-  data:Burchard_of_Prussia a :Man .
-
-  data:Francoise_Levisse_de_Montigny a :Ancestor,
-          :Woman .
-
-  data:Gustav_Biron_of_Courland a :Ancestor,
-          :Man .
-
-  data:Herzeleide_of_Prussia a :Ancestor,
+  data:Alexandra_of_Hanover a :Ancestor,
+          :Person,
           :Woman ;
-      :hasBirthYear 1918 ;
-      :hasBrother data:Burchard_of_Prussia,
-          data:Oscar_of_Prussia_brother,
-          data:Wilhelm-Karl_of_Prussia ;
-      :hasDeathYear 1989 ;
-      :hasFather data:Oskar_of_Prussia ;
-      :hasMarriageYear 1938 ;
-      :hasMother data:Ina_Marie_von_Bassewitz ;
-      :knownAs "Herzeleide Ina-Marie Sophie Charlotte Else of Prussia"^^xsd:string .
+      :hasFather data:Ernest_Augustus_of_Hanover ;
+      :hasMother data:Thyra_of_Denmark ;
+      :hasSex data:Female .
 
-  data:Ina_Marie_von_Bassewitz a :Ancestor,
-          :Woman .
+  data:Christian_IX_of_Denmark a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
 
-  data:Karl_Biron_von_Courland a :Ancestor,
-          :Man ;
-      :hasFather data:Gustav_Biron_of_Courland ;
-      :hasMother data:Francoise_Levisse_de_Montigny .
+  data:Christian_Louis_of_Mecklenburg-Schwerin a :Man,
+          :Person ;
+      :hasSex data:Male .
 
-  data:Oscar_of_Prussia_brother a :Man .
+  data:Ernest_Augustus_of_Hanover a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
 
-  data:Oskar_of_Prussia a :Ancestor,
-          :Man ;
-      :hasFather data:Wilhelm_II .
+  data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
 
-  data:Wilhelm-Karl_of_Prussia a :Man .
+  data:Karin_Elisabeth_von_Schaper a :Person,
+          :Woman ;
+      :hasFather data:Walter_von_Schaper ;
+      :hasMother data:Louise_von_M%C3%BCnchhausen ;
+      :hasSex data:Female .
 
-  data:Wilhelm_II a :Ancestor,
-          :Man .
+  data:Louise_von_M%C3%BCnchhausen a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Thyra_of_Denmark a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Christian_IX_of_Denmark ;
+      :hasSex data:Female .
+
+  data:Walter_von_Schaper a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Female a :Female .
+
+  data:Male a :Male .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (215c029b-29e5-4216-8585-2eb523c4a984)
+ Call ID: 215c029b-29e5-4216-8585-2eb523c4a984
+  Args:
 
 ================================= Tool Message =================================
 
@@ -963,6 +1273,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (8f1bb988-c485-4fcc-976d-aa8a1d2fbdcb)
- Call ID: 8f1bb988-c485-4fcc-976d-aa8a1d2fbdcb
+  Finish (1bf832ec-3fd2-4b52-bd3a-d8df88f04576)
+ Call ID: 1bf832ec-3fd2-4b52-bd3a-d8df88f04576
   Args:

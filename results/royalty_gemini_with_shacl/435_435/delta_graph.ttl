@@ -2,60 +2,62 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Casper_Van_Dien a :Man,
-        :Person .
+data:Alexandrine_of_Prussia a :Woman ;
+    :hasBirthYear 1915 ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Wilhelm_German_Crown_Prince ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasSex data:Female ;
+    :isSiblingOf data:Cecilie_sister,
+        data:Frederick_brother,
+        data:Hubertus_brother,
+        data:Louis_Ferdinand_brother,
+        data:Wilhelm_brother .
 
-data:India_Riven_Oxenberg a :Person,
+data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
         :Woman ;
-    :hasBirthYear 1991 ;
-    :hasFather data:William_Weitz_Shaffer ;
-    :hasMother data:Catherine_Oxenberg .
+    :hasSex data:Female .
 
-data:Patrick_D%27Ignazio a :Man,
-        :Person .
-
-data:Victoria_de_Silva a :Person,
+data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
         :Woman ;
-    :hasFather data:Sir_Desmond_de_Silva ;
-    :hasMother data:Princess_Katarina .
+    :hasFather data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :hasMother data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia ;
+    :hasSex data:Female .
 
-data:Catherine_Oxenberg a :Ancestor,
-        :Person,
+data:Cecilie_sister a :Woman ;
+    :hasSex data:Female .
+
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
+
+data:Frederick_brother a :Man ;
+    :hasSex data:Male .
+
+data:Grand_Duchess_Anastasia_Mikhailovna_of_Russia a :Ancestor,
         :Woman ;
-    :hasFather data:Howard_Oxenberg ;
-    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
-    :hasSister data:Christina_Oxenberg .
+    :hasSex data:Female .
 
-data:Christina_Oxenberg a :Person,
-        :Woman .
+data:Hubertus_brother a :Man ;
+    :hasSex data:Male .
 
-data:Howard_Oxenberg a :Ancestor,
-        :Man,
-        :Person .
+data:Louis_Ferdinand_brother a :Man ;
+    :hasSex data:Male .
 
-data:Prince_Regent_Paul_of_Yugoslavia a :Ancestor,
-        :Man,
-        :Person .
+data:Wilhelm_German_Crown_Prince a :Ancestor,
+        :Man ;
+    :hasFather data:Wilhelm_II_German_Emperor ;
+    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
+    :hasSex data:Male .
 
-data:Princess_Elizabeth_of_Yugoslavia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Prince_Regent_Paul_of_Yugoslavia ;
-    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+data:Wilhelm_II_German_Emperor a :Ancestor,
+        :Man ;
+    :hasSex data:Male .
 
-data:Princess_Katarina a :Ancestor,
-        :Person,
-        :Woman .
+data:Wilhelm_brother a :Man ;
+    :hasSex data:Male .
 
-data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman .
+data:Female a :Sex .
 
-data:Sir_Desmond_de_Silva a :Ancestor,
-        :Man,
-        :Person .
-
-data:William_Weitz_Shaffer a :Ancestor,
-        :Man,
-        :Person .
+data:Male a :Sex .
 

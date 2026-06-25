@@ -7,72 +7,51 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Margaret_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Margaret of Prussia" ;
-    data:posIndicesFull "2670:2674" ;
+data:Prince_August_Wilhelm_of_Prussia a :Person ;
+    rdfs:label "Prince August Wilhelm of Prussia" ;
+    data:posIndicesFull "2319:2323" ;
     data:posIndicesPart "3283:3290",
-        "5080:5088",
+        "3431:3438",
+        "4727:4734",
+        "5061:5067",
+        "5118:5124",
+        "5142:5149",
         "5170:5177",
-        "5255:5263" ;
-    data:wdtLink wdt:Q61338 ;
-    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
-        "Margaret of Prussia",
-        "Margaret of Prussia, Queen consort-elect of Finland",
-        "Margaret of Prussia, Queen-elect of Finland",
-        "Margarethe Beatrice Feodora of Prussia",
-        "Margarethe of Prussia",
-        "Mossy",
-        "Princess Frederick Charles of Hesse",
-        "Princess Margaret Beatrice Feodora of Prussia",
-        "Princess Margarethe Beatrice Feodora of Prussia",
-        "Princess Margarethe of Prussia" ;
-    :hasBrother data:Wilhelm_II ;
-    :hasSex data:female ;
-    :isAuntOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :isSiblingOf data:Wilhelm_II ;
-    :isSisterOf data:Wilhelm_II .
+        "5235:5241",
+        "5403:5409",
+        "5515:5521",
+        "5669:5675",
+        "5747:5753",
+        "5841:5847" ;
+    data:wdtLink wdt:Q58777 ;
+    :alsoKnownAs "Auwi" ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasSex data:male .
 
-data:Princess_Marie_Auguste_of_Anhalt a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Marie Auguste of Anhalt" ;
-    data:posIndicesFull "862:894" ;
-    data:posIndicesPart "1064:1069",
-        "1070:1077",
-        "1254:1260",
-        "4121:4126",
-        "4127:4134",
-        "5080:5088",
-        "5089:5094",
-        "5095:5102",
-        "5255:5263" ;
-    data:wdtLink wdt:Q63014 ;
-    :alsoKnownAs "Marie Auguste Prinzessin von Anhalt",
-        "Marie of Anhalt",
-        "Princess Marie Augustine of Anhalt",
-        "Princess Marie-Auguste of Anhalt" ;
-    :hasChild data:Prince_Karl_Franz_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Karl_Franz_of_Prussia ;
-    :isMotherOf data:Prince_Karl_Franz_of_Prussia ;
-    :isParentOf data:Prince_Karl_Franz_of_Prussia .
+data:Prince_Eitel_Friedrich_of_Prussia a :Person ;
+    rdfs:label "Prince Eitel Friedrich of Prussia" ;
+    data:posIndicesFull "4623:4656",
+        "4630:4645" ;
+    data:posIndicesPart "5061:5067",
+        "5118:5124",
+        "5150:5159",
+        "5170:5177",
+        "5235:5241",
+        "5403:5409",
+        "5515:5521",
+        "5669:5675",
+        "5747:5753",
+        "5841:5847" ;
+    data:wdtLink wdt:Q62056 ;
+    :alsoKnownAs "Eitel Friedrich",
+        "Prince Wilhelm Eitel Friedrich Christian Karl of Prussia",
+        "Wilhelm Eitel-Friedrich Christian Karl Prinz von Preußen" ;
+    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
+        data:Wilhelm_II ;
+    :hasSex data:male .
 
-data:Prince_Karl_Franz_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Karl_Franz_of_Prussia a :Person ;
     rdfs:label "Prince Karl Franz of Prussia" ;
     data:posIndicesFull "1321:1337",
         "5125:5141" ;
@@ -96,168 +75,38 @@ data:Prince_Karl_Franz_of_Prussia a :Ancestor,
     :alsoKnownAs "Karl Franz Joseph",
         "Karl Franz Joseph Prinz von Preußen",
         "Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul of Prussia" ;
-    :hasFather data:Prince_Joachim_of_Prussia ;
-    :hasMother data:Princess_Marie_Auguste_of_Anhalt ;
     :hasParent data:Prince_Joachim_of_Prussia,
         data:Princess_Marie_Auguste_of_Anhalt ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Joachim_of_Prussia,
-        data:Princess_Marie_Auguste_of_Anhalt ;
-    :isSonOf data:Prince_Joachim_of_Prussia,
-        data:Princess_Marie_Auguste_of_Anhalt .
+    :hasSex data:male .
 
-data:Augusta_Victoria_of_Schleswig-Holstein a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Augusta Victoria of Schleswig-Holstein" ;
-    data:posIndicesFull "161:177",
-        "161:199",
-        "543:559",
-        "543:581" ;
-    data:posIndicesPart "751:760",
-        "761:769" ;
-    data:wdtLink wdt:Q161247 ;
-    :alsoKnownAs "Augusta Victoria",
-        "Augusta Victoria, Empress of Germany",
-        "Augusta Viktoria",
-        "Augusta Viktoria of Schleswig-Holstein",
-        "Auguste Viktoria of Schleswig-Holstein" ;
-    :hasChild data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :isMotherOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :isParentOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia .
-
-data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince August Wilhelm of Prussia" ;
-    data:posIndicesFull "2319:2323" ;
+data:Princess_Margaret_of_Prussia a :Person ;
+    rdfs:label "Princess Margaret of Prussia" ;
+    data:posIndicesFull "2670:2674" ;
     data:posIndicesPart "3283:3290",
-        "3431:3438",
-        "4727:4734",
-        "5061:5067",
-        "5118:5124",
-        "5142:5149",
+        "5080:5088",
         "5170:5177",
-        "5235:5241",
-        "5403:5409",
-        "5515:5521",
-        "5669:5675",
-        "5747:5753",
-        "5841:5847" ;
-    data:wdtLink wdt:Q58777 ;
-    :alsoKnownAs "Auwi" ;
-    :hasBrother data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :hasFather data:Wilhelm_II ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
-    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II ;
-    :isSiblingOf data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II ;
-    :isUncleOf data:Prince_Karl_Franz_of_Prussia .
+        "5255:5263" ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
+        "Margaret of Prussia",
+        "Margaret of Prussia, Queen consort-elect of Finland",
+        "Margaret of Prussia, Queen-elect of Finland",
+        "Margarethe Beatrice Feodora of Prussia",
+        "Margarethe of Prussia",
+        "Mossy",
+        "Princess Frederick Charles of Hesse",
+        "Princess Margaret Beatrice Feodora of Prussia",
+        "Princess Margarethe Beatrice Feodora of Prussia",
+        "Princess Margarethe of Prussia" ;
+    :hasSex data:female .
 
-data:Prince_Eitel_Friedrich_of_Prussia a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Eitel Friedrich of Prussia" ;
-    data:posIndicesFull "4623:4656",
-        "4630:4645" ;
-    data:posIndicesPart "5061:5067",
-        "5118:5124",
-        "5150:5159",
-        "5170:5177",
-        "5235:5241",
-        "5403:5409",
-        "5515:5521",
-        "5669:5675",
-        "5747:5753",
-        "5841:5847" ;
-    data:wdtLink wdt:Q62056 ;
-    :alsoKnownAs "Eitel Friedrich",
-        "Prince Wilhelm Eitel Friedrich Christian Karl of Prussia",
-        "Wilhelm Eitel-Friedrich Christian Karl Prinz von Preußen" ;
-    :hasBrother data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :hasFather data:Wilhelm_II ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
-    :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II ;
-    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II ;
-    :isUncleOf data:Prince_Karl_Franz_of_Prussia .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelm II" ;
-    data:posIndicesFull "114:124",
-        "114:140",
-        "502:512" ;
-    data:posIndicesPart "1338:1345",
-        "1462:1469",
-        "3431:3438",
-        "4727:4734",
-        "5142:5149" ;
-    data:wdtLink wdt:Q2677 ;
-    :alsoKnownAs "Emperor Willlam",
-        "Frederick William Victor Albert of Prussia",
-        "Friedrich Wilhelm Emperor William II",
-        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
-        "Friedrich Wilhelm Viktor Albrecht von Preußen",
-        "German Emperor Wilhelm II",
-        "Kaiser Wilhelm II",
-        "Wilhelm II of Germany",
-        "Wilhelm II, German Emperor",
-        "Wilhelm II.",
-        "William II" ;
-    :hasChild data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Margaret_of_Prussia ;
-    :hasSon data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :isBrotherOf data:Princess_Margaret_of_Prussia ;
-    :isFatherOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :isParentOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia,
-        data:Prince_Joachim_of_Prussia ;
-    :isSiblingOf data:Princess_Margaret_of_Prussia .
+data:posIndicesPart a owl:AnnotationProperty .
 
-data:Prince_Joachim_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Joachim_of_Prussia a :Person ;
     rdfs:label "Prince Joachim of Prussia" ;
     data:posIndicesFull "0:39",
         "1201:1208",
@@ -290,23 +139,70 @@ data:Prince_Joachim_of_Prussia a :Ancestor,
     :alsoKnownAs "Joachim",
         "Joachim Franz Hubert",
         "Prince Joachim Franz Humbert of Prussia" ;
-    :hasBrother data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia ;
-    :hasChild data:Prince_Karl_Franz_of_Prussia ;
-    :hasFather data:Wilhelm_II ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
     :hasParent data:Augusta_Victoria_of_Schleswig-Holstein,
         data:Wilhelm_II ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Karl_Franz_of_Prussia ;
-    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia ;
-    :isChildOf data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II ;
-    :isFatherOf data:Prince_Karl_Franz_of_Prussia ;
-    :isParentOf data:Prince_Karl_Franz_of_Prussia ;
-    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Eitel_Friedrich_of_Prussia ;
-    :isSonOf data:Augusta_Victoria_of_Schleswig-Holstein,
-        data:Wilhelm_II .
+    :hasSex data:male .
+
+data:Princess_Marie_Auguste_of_Anhalt a :Person ;
+    rdfs:label "Princess Marie Auguste of Anhalt" ;
+    data:posIndicesFull "862:894" ;
+    data:posIndicesPart "1064:1069",
+        "1070:1077",
+        "1254:1260",
+        "4121:4126",
+        "4127:4134",
+        "5080:5088",
+        "5089:5094",
+        "5095:5102",
+        "5255:5263" ;
+    data:wdtLink wdt:Q63014 ;
+    :alsoKnownAs "Marie Auguste Prinzessin von Anhalt",
+        "Marie of Anhalt",
+        "Princess Marie Augustine of Anhalt",
+        "Princess Marie-Auguste of Anhalt" ;
+    :hasSex data:female .
+
+data:Augusta_Victoria_of_Schleswig-Holstein a :Person ;
+    rdfs:label "Augusta Victoria of Schleswig-Holstein" ;
+    data:posIndicesFull "161:177",
+        "161:199",
+        "543:559",
+        "543:581" ;
+    data:posIndicesPart "751:760",
+        "761:769" ;
+    data:wdtLink wdt:Q161247 ;
+    :alsoKnownAs "Augusta Victoria",
+        "Augusta Victoria, Empress of Germany",
+        "Augusta Viktoria",
+        "Augusta Viktoria of Schleswig-Holstein",
+        "Auguste Viktoria of Schleswig-Holstein" ;
+    :hasSex data:female .
+
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "114:124",
+        "114:140",
+        "502:512" ;
+    data:posIndicesPart "1338:1345",
+        "1462:1469",
+        "3431:3438",
+        "4727:4734",
+        "5142:5149" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

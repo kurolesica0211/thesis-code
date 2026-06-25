@@ -69,124 +69,46 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Queen Anne-Marie
-
-
-Queen Sofía of Spain
-
-
-Marina, consort of Prince Michael
-
-
-Pavlos, Crown Prince of Greece, Prince of Denmark (Greek: Παύλος Ντε Γκρες, romanized: Pavlos de Grèce; born 20 May 1967), is a Greek financier who is the former heir apparent to the defunct throne of Greece, becoming the Head of the Royal House of Greece upon his father's death on 10 January 2023.
-Pavlos was Crown Prince of Greece and heir apparent to the Greek throne from birth until the monarchy's abolition.
-Pavlos was born in Athens as the second child and eldest son of the last King of Greece, Constantine II, and his wife Queen Anne-Marie.
-Pavlos was born into an unstable era for Greek politics, just shy of turning eight months old when he and his family were sent into exile, after Constantine II staged a failed counter-coup against the military junta.
-They first lived in Rome, before eventually settling in Copenhagen, where his family lived with Pavlos's maternal grandparents, King Frederik IX and Queen Ingrid of Denmark.
-Although they were in exile since December 1967, his parents continued to officially reign as King and Queen of the Hellenes from 1967 until 1973, when the military junta abolished the Greek monarchy and established the Third Hellenic Republic as its successor state.
-Following the abolition of the monarchy, Pavlos and his siblings grew up in London.
-On 1 July 1995, Pavlos married Marie-Chantal Miller.
-They have five children: Maria-Olympia, Constantine-Alexios, Achileas-Andreas, Odysseas-Kimon, and Aristides-Stavros.
-Pavlos is closely related to many European royals.
-Queens Margrethe II of Denmark and Sofía of Spain are his aunts, and Kings Felipe VI of Spain and Frederik X of Denmark are his first cousins.
+Knud, Hereditary Prince of Denmark (Knud Christian Frederik Michael; 27 July 1900 – 14 June 1976) was a member of the Danish royal family, the younger son and child of King Christian X and Queen Alexandrine.
+From 1947 to 1953, he was heir presumptive to his older brother, King Frederik IX, and would have succeeded him as king following his death in January 1972 had it not been for a change in the Danish Act of Succession that replaced him with his niece, Queen Margrethe II.
+Later, Knud's two sons, Ingolf and Christian, were stripped of their titles of prince and removed from the line of succession by the new law because they had married commoners without asking consent from their uncle.
 Early life
 
-Pavlos was born on 20 May 1967 at the Tatoi Palace north of Athens, used at the time as the secondary residence of the Greek royal family.
-He was the second child and first son of King Constantine II and Queen Anne-Marie of Greece.
-Constantine II had ascended the throne on 6 March 1964, aged 23, following the death of his father and predecessor, Paul, so Pavlos was crown prince from birth.
-His mother is the youngest sister of the Danish queen Margrethe II, and his father was the brother of Sofía, the former queen consort of Spain.
-His maternal grandparents were Frederik IX of Denmark and his queen consort, Ingrid of Sweden.
-Pavlos displaced his older sister, Alexia, as heir to the throne due to Greece's order of succession adhering to male-preference primogeniture.
-Crown Prince
-
-Pavlos was born into a turbulent era in Greek politics, barely a month after a coup d'état which ended democratic rule in Greece over the king's objections on 21 April 1967, ushering in a military junta, led by Georgios Papadopoulos.
-In December of that year, Constantine attempted a counter-coup that failed due to planning mistakes, leaks, and insufficient military support.
-Pursued by the junta, Constantine fled with his wife, children, mother and sister to Rome.
-They then went to Copenhagen and lived with Anne-Marie's mother, Queen Ingrid.
-From 1967 to 1973, Greece officially remained a monarchy, with a regency appointed while the king lived in exile.
-Following the discovery and suppression of a "wide-ranging" anti-junta movement, just before its outbreak, among the ranks of the mostly royalist Navy, Papadopoulos, on 1 June 1973, declared Greece a presidential republic with himself as president and proclaimed a referendum for 29 July 1973 on the issue of the monarchy.
-The referendum was held without opposition and its result confirmed the regime change, with Constantine becoming "officially" deposed.
-On 17 November 1974, after the fall of the dictatorship, the 1974 Greek legislative election was held, resulting in a victory for Constantine Karamanlis and his New Democracy party.
-Constantine announced that he "respects" the "decision of the Greek people."
-He and Anne-Marie had been living with their family in London for several years.
-Pavlos's youngest siblings were born in London: Theodora in 1983 and Philippos in 1986.
-Pavlos was educated at the Hellenic College of London, founded by his parents in 1980.
-On 11 May 1994, the Greek Government under prime-minister Andreas Papandreou renounced the Greek-citizenship status of Pavlos, alongside Constantine, and the rest of the former royal family through law 2215/1994.
-The law stated that Constantine's Greek-citizenship status, and accordingly his family's, could only be restored under specific conditions, including the selection of an explicit surname.
-The following year, while sharing a house in Washington, DC, he and his cousin, Felipe VI of Spain, then Prince of Asturias, attended Georgetown University, where both obtained a Master of Science in Foreign Service.
-After, Pavlos lived between New York City and London, working as an investment consultant.
-Head of the Greek royal family
-
-Following the death of his father on 10 January 2023, Pavlos delivered Constantine's eulogy during the funeral ceremony and carried his coffin with his brothers, sons and nephews at the burial.
-A rumour circulated that Pavlos intended to permanently relocate to Greece, but this was later denied by the spokesperson of the former Greek royal family, Ivi Macris, as "completely false".
-On 22 January, Pavlos spoke to French magazine Point de Vue regarding his new role.
-In the interview, Pavlos thanked the public for their respect towards the Greek royal family and said that those who crowded the funeral, whether they were "monarchists or not", "paid tribute to a historical personality, a part of Greek history."
-When asked about the role he sees himself upholding in Greek society, Pavlos explained that he would "not take on an official role", but will "uphold the family's exemplary."
-He added that his eldest son Constantine-Alexios would not take on any official role either, but would "follow his grandfather's example and be a good man."
-Pavlos issued a statement about the Tempi train collision in February 2023, which caused the death of almost 60 people, styling himself Head of the former Royal House of Greece following Constantine's death.
-The statement read: "Today all of Greece is mourning.
-Pavlos also thanked the rescue and medical teams involved for their "superhuman efforts", before giving his "heartbroken" condolences to the families who lost their children in the accident and asking God to bless them all.
-Soon after, as Pavlos was leaving Athens that month, it was revealed that he and his family had been searching for a home in Greece, with Pavlos telling journalists that he had not "found a house yet".
-In April 2023, Pavlos attended a Greek Orthodox Easter service in the Hamptons, where his sons Constantine-Alexios and Odysseas-Kimon were holding the Epitaphios.
-Pavlos attended the coronation of Charles III and Camilla in May with his mother and wife.
-On 3 July 2023 at 11:45pm, Pavlos and his brother, Nikolaos, appeared in a special edition of 365 Moments, a Greek television series hosted by Sofia Papaioannou.
-The episode marked the first interview with Pavlos and Nikolaos since their father's death, and it discussed the passing of their father, their stripped Greek citizenship and their surname.
-Pavlos described his father as "strict but very loving" and said that despite being forced into exile, he still wanted to help his family.
-Pavlos also announced that he was now living in Greece again, which is what he "always wanted to".
-He explained that the opportunity to live in Greece occurred as his job allowed for overseas work.
-When asked whether he accepted the last name "Glücksburg", Pavlos said that he would never see it as his name.
-Denmark's family name is not that.
-He explained that throughout his life, he never introduced himself with a last name, but rather called himself "Pavlos of Greece".
-Pavlos also added that he was "very interested in  politics", but would never become involved, has no political association and would always long for his Greek passport to be returned.
-Pavlos and Marie-Chantal attended the 2023 British Fashion Awards.
-There, Pavlos was spotted with a black eye patch covering his left eye.
-The day prior, Marie-Chantal posted to Instagram a close-up photo of his eye patch, saying, "Hopefully a temporary new look, but he’s kind of cute".
-Following worry online, Pavlos announced on Instagram that he had undergone a retinal detachment surgery.
-After thanking people for their support and wishes, Pavlos explained that the surgery was "successful", however he would be unable to travel and therefore have to spend Christmas in London.
-Between January and February 2024, Pavlos and his family attended three memorial services to mark the one year anniversary of Constantine's death — one in Athens and two in London, including a thanksgiving service.
-After a memorial service the following day, Pavlos and Nikolaos were interviewed by ANT1 reporter Isaac Karipidis.
-On 28 September 2024, Pavlos served as a groomsman at the wedding of Princess Theodora and Matthew Kumar at the Metropolitan Cathedral.
-On 19 December 2024, Pavlos, his five children and his four siblings submitted an application for Greek citizenship, which had been stripped from the family in 1994.
-Pavlos's mother, Anne-Marie, did not apply, as she was reportedly "not interested".
-Under law, Pavlos and his family, in order to receive citizenship, must pledge allegiance to the republican constitution and adopt a surname.
-Ultimately, the surname of "Ντε Γκρες" (transliteration of De Grèce, meaning "of Greece") was chosen.
-It was reported by the royal family that this surname was chosen as it was the one used by the late Prince Michael of Greece and Denmark, and so was the "only familiar one" to them.
-The following day, Pavlos's citizenship, alongside that of his children and siblings, was reinstated according to the provisions of the 1994 law by order of the Minister of the Interior, Theodoros Livanios.
-Deputy Minister Pavlos Marinakis said to Action 24 that the ex-royal family's "request was made in accordance with the law", while the left-wing SYRIZA party stated "the choice of family name is problematic".
-The Communist Party of Greece and PASOK also criticized the government's decision.
-Personal life
-
-Pavlos married American heiress Marie-Chantal Miller, whom he had met at a party three years earlier in New Orleans, on 1 July 1995.
-After their marriage, the couple took up residence in Greenwich, Connecticut, the job that Pavlos obtained with the Charles R. Weber ship-broking company being headquartered there.
-The couple has five children: Maria-Olympia (b. 1996), Constantine-Alexios (b. 1998), Achileas-Andreas (b. 2000), Odysseas-Kimon (b. 2004), and Aristidis-Stavros (b. 2008).
-Pavlos is a bluewater yachtsman and crews on the multi-record-breaking monohull Mari-Cha IV, owned by his father-in-law;
-businessman Robert W. Miller.
+Prince Knud was born on 27 July 1900 at his parents' country residence, the Sorgenfri Palace, located on the shores of the small river Mølleåen in Kongens Lyngby north of Copenhagen on the island of Zealand in Denmark, during the reign of his great-grandfather King Christian IX.
+His parents were Prince Christian of Denmark, son of the heir apparent Crown Prince Frederik of Denmark, and Alexandrine of Mecklenburg-Schwerin.
+Knud's only sibling, Prince Frederik, had been born one year before him.
+Christian IX died on 29 January 1906, and Knud's grandfather succeeded him as Frederik VIII.
+Six years later, on 14 May 1912, Frederik VIII died, and Knud's father ascended the throne as Christian X.
 
 
-Titles, styles, and honours
+As was customary for princes at that time, Knud started a military education and entered the naval college.
+Engagement and marriage
 
-From birth, Pavlos was the heir apparent to the throne of Greece and as such he was referred to as the Crown Prince of Greece with the style of Royal Highness.
-Through his male-line descent from Christian IX of Denmark, he is also a Prince of Denmark with the style of Highness.
-Dynastic orders
+On 27 January 1933, at the age of 32, Prince Knud was engaged to his first cousin, the 20-year-old Princess Caroline-Mathilde of Denmark.
+Princess Caroline-Mathilde was the second daughter of Prince Harald of Denmark and Princess Helena of Schleswig-Holstein-Sonderburg-Glücksburg, and their fathers were brothers.
+The wedding was celebrated on 8 September 1933 at the chapel of Fredensborg Palace in North Zealand, Denmark.
+Here they created a home for their three children: Princess Elisabeth (born in 1935), Prince Ingolf (born in 1940) and Prince Christian (born in 1944).
+In 1944, Prince Knud inherited Egelund House near Fredensborg in North Zealand from his uncle, Prince Gustav of Denmark, which the couple then used as their summer residence until the hereditary prince sold it to the Danish Employers' Association in 1954.
+In 1952, Prince Knud also inherited his parents' holiday residence Klitgaarden in Skagen in North Jutland from his mother, Queen Alexandrine, which the couple then used as their holiday home, and which remained in the family's possession until 1997.
+Heir presumptive
 
-Foreign honours
+On 20 April 1947, Christian X died, and Knud's brother Frederick succeeded to the throne as Frederik IX.
+Since Frederik IX had fathered no sons and the Danish Act of Succession at the time followed the principle of agnatic primogeniture, Prince Knud became heir presumptive and first in line to succeed his brother as king.
+Frederik IX had, however, fathered three daughters.
+The new law made Frederik IX's thirteen-year-old daughter Margrethe the new heir presumptive, placing her and her two sisters before Knud and his family in the line of succession.
+Later life and legacy
 
-Ancestry
-
-Pavlos is a direct descendant of three reigning sovereign monarchs at birth.
-He is the eldest son of the King of Greece, grandson of the King of Denmark and great-grandson of the King of Sweden, all living and enthroned when he was born.
-His paternal aunt, Sofía, was Queen consort of Spain and his paternal first cousin, Felipe VI, is the current King of Spain.
-His maternal aunt, Margrethe II, was the reigning Queen of Denmark and his maternal first cousin, Frederik X, is the current King of Denmark.
-Pavlos's parents, grandparents and great-grandparents were all reigning monarchs and consorts.
-Pavlos is a scion multiple times of Queen Victoria and King Christian IX, who were dubbed the "grandmother of Europe" and "father-in-law of Europe" respectively, due to royal intermarriage.
-As a result, he descends from Christian IX of Denmark through three of his children; in the male line through his second son, George I of Greece, in the female line through his eldest son, Frederik VIII of Denmark, and through King Christian's youngest daughter, Princess Thyra.
-He also descends thrice from Queen Victoria; once through her third son, Prince Arthur, and twice through her eldest daughter, Victoria, Princess Royal.
+King Frederik IX died in 1972 and was succeeded by his daughter Queen Margrethe II.
+The Princess Caroline-Mathilde Alps in Greenland were named by the 1938–39 Mørkefjord Expedition in his wife's honour for Prince Knud had been the patron of the expedition.
+Prince Knud and Princess Caroline Mathilde had sat in the former royal loge at the far left of the hall (i.e., stage right), but one especially memorable scene had not been fully visible from where they had sat.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -202,39 +124,9 @@ He also descends thrice from Queen Victoria; once through her third son, Prince 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -249,6 +141,23 @@ He also descends thrice from Queen Victoria; once through her third son, Prince 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -266,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -333,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -364,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -376,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -384,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -422,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -437,270 +449,225 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (82efd5f7-89e3-4281-9a9a-bc8124c3d1a0)
- Call ID: 82efd5f7-89e3-4281-9a9a-bc8124c3d1a0
+  AssignClass (c091c084-6c66-45c5-9c74-bddffbc80335)
+ Call ID: c091c084-6c66-45c5-9c74-bddffbc80335
   Args:
+    source: Knud
     type: :Man
-    source: Pavlos_Crown_Prince_of_Greece
-  AssignClass (ff9fe83f-8a1b-48e0-a1a3-790cf71fae74)
- Call ID: ff9fe83f-8a1b-48e0-a1a3-790cf71fae74
+  AssignClass (5523552c-b91a-4b4e-96f2-7c238ab03b9d)
+ Call ID: 5523552c-b91a-4b4e-96f2-7c238ab03b9d
   Args:
-    type: :Man
-    source: Constantine_II_of_Greece
-  AssignClass (8d853736-464c-4266-8838-954cb90515ba)
- Call ID: 8d853736-464c-4266-8838-954cb90515ba
+    source: Knud
+    type: :Person
+  AddLiteral (c74974fa-d5e2-474f-989a-c3fd56dc30b6)
+ Call ID: c74974fa-d5e2-474f-989a-c3fd56dc30b6
   Args:
-    source: Queen_Anne-Marie
-    type: :Woman
-  AssignClass (02f980b1-eaa1-4f62-ba64-f8e5f4bd7d6d)
- Call ID: 02f980b1-eaa1-4f62-ba64-f8e5f4bd7d6d
-  Args:
-    type: :Woman
-    source: Marie-Chantal_Miller
-  AssignClass (03a262a8-3577-461f-ad0d-155b654ad2fd)
- Call ID: 03a262a8-3577-461f-ad0d-155b654ad2fd
-  Args:
-    type: :Woman
-    source: Maria-Olympia
-  AssignClass (944bf919-70e1-4db8-8a7e-135b67fd9255)
- Call ID: 944bf919-70e1-4db8-8a7e-135b67fd9255
-  Args:
-    source: Constantine-Alexios
-    type: :Man
-  AssignClass (2826df4c-1396-45ba-911b-2bfe565668be)
- Call ID: 2826df4c-1396-45ba-911b-2bfe565668be
-  Args:
-    type: :Man
-    source: Achileas-Andreas
-  AssignClass (b36014ee-fa4b-4d20-bbda-c35e1cdd60e2)
- Call ID: b36014ee-fa4b-4d20-bbda-c35e1cdd60e2
-  Args:
-    source: Odysseas-Kimon
-    type: :Man
-  AssignClass (7af885e4-df8c-45c7-8f26-2b4148cd07b8)
- Call ID: 7af885e4-df8c-45c7-8f26-2b4148cd07b8
-  Args:
-    source: Aristides-Stavros
-    type: :Man
-  AssignClass (555e5e2c-de58-487b-ac30-6b28a60a4955)
- Call ID: 555e5e2c-de58-487b-ac30-6b28a60a4955
-  Args:
-    source: Alexia_of_Greece
-    type: :Woman
-  AssignClass (707a075f-3a60-4126-8ee4-1373241d8bfa)
- Call ID: 707a075f-3a60-4126-8ee4-1373241d8bfa
-  Args:
-    type: :Woman
-    source: Theodora_of_Greece
-  AssignClass (d73f59e5-1bdc-47e4-a0f0-cb27a2d44e42)
- Call ID: d73f59e5-1bdc-47e4-a0f0-cb27a2d44e42
-  Args:
-    source: Philippos_of_Greece
-    type: :Man
-  AssignClass (e082fb97-53eb-41cc-85ce-7b693755ec8e)
- Call ID: e082fb97-53eb-41cc-85ce-7b693755ec8e
-  Args:
-    type: :Man
-    source: Nikolaos_of_Greece
-  AddTriple (7c0f546b-0588-45b9-9a98-7af4de4d4e7d)
- Call ID: 7c0f546b-0588-45b9-9a98-7af4de4d4e7d
-  Args:
-    source: Pavlos_Crown_Prince_of_Greece
-    target: Constantine_II_of_Greece
-    relation: :hasFather
-  AddTriple (c121f27a-9b88-4e71-b2be-c7c265d65fb9)
- Call ID: c121f27a-9b88-4e71-b2be-c7c265d65fb9
-  Args:
-    source: Pavlos_Crown_Prince_of_Greece
-    target: Queen_Anne-Marie
-    relation: :hasMother
-  AddTriple (75f9b03d-b1dc-404f-9cba-27727388ccde)
- Call ID: 75f9b03d-b1dc-404f-9cba-27727388ccde
-  Args:
-    relation: :hasChild
-    target: Pavlos_Crown_Prince_of_Greece
-    source: Constantine_II_of_Greece
-  AddTriple (a3ebd323-f221-4424-9365-d1bd907e1ad9)
- Call ID: a3ebd323-f221-4424-9365-d1bd907e1ad9
-  Args:
-    source: Queen_Anne-Marie
-    target: Pavlos_Crown_Prince_of_Greece
-    relation: :hasChild
-  AddTriple (35131952-a704-467c-b8e5-77adb63d2d9d)
- Call ID: 35131952-a704-467c-b8e5-77adb63d2d9d
-  Args:
-    source: Constantine_II_of_Greece
-    target: Maria-Olympia
-    relation: :hasChild
-  AddTriple (ff0321eb-0a49-49ca-be5d-6e82acbc6164)
- Call ID: ff0321eb-0a49-49ca-be5d-6e82acbc6164
-  Args:
-    source: Constantine_II_of_Greece
-    target: Constantine-Alexios
-    relation: :hasChild
-  AddTriple (f4018ced-dee1-47e4-9cb5-dc540617d779)
- Call ID: f4018ced-dee1-47e4-9cb5-dc540617d779
-  Args:
-    target: Achileas-Andreas
-    source: Constantine_II_of_Greece
-    relation: :hasChild
-  AddTriple (82c2afd8-043c-45ac-9525-3c5a51b3e2ee)
- Call ID: 82c2afd8-043c-45ac-9525-3c5a51b3e2ee
-  Args:
-    source: Constantine_II_of_Greece
-    target: Odysseas-Kimon
-    relation: :hasChild
-  AddTriple (c6d2477f-abfd-4bdd-b33e-11d7ac1f8cb2)
- Call ID: c6d2477f-abfd-4bdd-b33e-11d7ac1f8cb2
-  Args:
-    source: Constantine_II_of_Greece
-    target: Aristides-Stavros
-    relation: :hasChild
-  AddTriple (d4a8b763-3a00-4cda-b328-49fdd7646708)
- Call ID: d4a8b763-3a00-4cda-b328-49fdd7646708
-  Args:
-    source: Constantine_II_of_Greece
-    target: Alexia_of_Greece
-    relation: :hasChild
-  AddTriple (681de05c-2e6a-46aa-a94a-808b9ad2784c)
- Call ID: 681de05c-2e6a-46aa-a94a-808b9ad2784c
-  Args:
-    source: Constantine_II_of_Greece
-    target: Theodora_of_Greece
-    relation: :hasChild
-  AddTriple (35717629-06f2-4d2c-a9e2-8625ba9cb9d0)
- Call ID: 35717629-06f2-4d2c-a9e2-8625ba9cb9d0
-  Args:
-    relation: :hasChild
-    target: Philippos_of_Greece
-    source: Constantine_II_of_Greece
-  AddTriple (4aac840a-6e02-43d8-b491-73070ff2daf6)
- Call ID: 4aac840a-6e02-43d8-b491-73070ff2daf6
-  Args:
-    relation: :hasChild
-    target: Nikolaos_of_Greece
-    source: Constantine_II_of_Greece
-  AddTriple (c72eb29f-066b-4341-b311-16345dd087e3)
- Call ID: c72eb29f-066b-4341-b311-16345dd087e3
-  Args:
-    relation: :hasChild
-    source: Queen_Anne-Marie
-    target: Maria-Olympia
-  AddTriple (55b8b50a-32c4-47fc-b735-85d2f51347dc)
- Call ID: 55b8b50a-32c4-47fc-b735-85d2f51347dc
-  Args:
-    source: Queen_Anne-Marie
-    target: Constantine-Alexios
-    relation: :hasChild
-  AddTriple (306c3c14-294f-4ef3-b43f-03155b9486da)
- Call ID: 306c3c14-294f-4ef3-b43f-03155b9486da
-  Args:
-    target: Achileas-Andreas
-    source: Queen_Anne-Marie
-    relation: :hasChild
-  AddTriple (c52a454a-36a1-449d-b46c-5ceb246aec23)
- Call ID: c52a454a-36a1-449d-b46c-5ceb246aec23
-  Args:
-    relation: :hasChild
-    source: Queen_Anne-Marie
-    target: Odysseas-Kimon
-  AddTriple (cdd49162-a905-4d1a-a064-a1908decb986)
- Call ID: cdd49162-a905-4d1a-a064-a1908decb986
-  Args:
-    relation: :hasChild
-    target: Aristides-Stavros
-    source: Queen_Anne-Marie
-  AddTriple (47ed6b89-e4f9-4ce2-8abd-76bb9405a354)
- Call ID: 47ed6b89-e4f9-4ce2-8abd-76bb9405a354
-  Args:
-    relation: :hasChild
-    target: Alexia_of_Greece
-    source: Queen_Anne-Marie
-  AddTriple (659228ac-45b4-49ca-98db-5475472f84e2)
- Call ID: 659228ac-45b4-49ca-98db-5475472f84e2
-  Args:
-    relation: :hasChild
-    source: Queen_Anne-Marie
-    target: Theodora_of_Greece
-  AddTriple (6e62700f-b9fe-49c0-ac25-52b8776fd99b)
- Call ID: 6e62700f-b9fe-49c0-ac25-52b8776fd99b
-  Args:
-    target: Philippos_of_Greece
-    source: Queen_Anne-Marie
-    relation: :hasChild
-  AddTriple (3b3482e3-6bd0-4245-988f-8d0bdda36e0e)
- Call ID: 3b3482e3-6bd0-4245-988f-8d0bdda36e0e
-  Args:
-    source: Queen_Anne-Marie
-    target: Nikolaos_of_Greece
-    relation: :hasChild
-  AddLiteral (c3199980-ad36-4f2f-82c7-9dc883f0424c)
- Call ID: c3199980-ad36-4f2f-82c7-9dc883f0424c
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 1995
+    literal_value: 1900
+    relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Pavlos_Crown_Prince_of_Greece
-  AddTriple (33293c0d-4aee-4dac-9b33-d612d7c9ee41)
- Call ID: 33293c0d-4aee-4dac-9b33-d612d7c9ee41
+    source: Knud
+  AddLiteral (2467c0ae-1a93-45c6-94b4-883afc333c81)
+ Call ID: 2467c0ae-1a93-45c6-94b4-883afc333c81
+  Args:
+    source: Knud
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1976
+  AssignClass (21d657e6-a5b5-401e-9307-a870d7ffba55)
+ Call ID: 21d657e6-a5b5-401e-9307-a870d7ffba55
+  Args:
+    source: Christian_X
+    type: :Man
+  AssignClass (51feab8a-e0af-4ccb-8938-ecef873ab71a)
+ Call ID: 51feab8a-e0af-4ccb-8938-ecef873ab71a
+  Args:
+    source: Christian_X
+    type: :Person
+  AssignClass (5d5ae37f-1190-41f0-a26f-9e0ffee8528c)
+ Call ID: 5d5ae37f-1190-41f0-a26f-9e0ffee8528c
+  Args:
+    source: Alexandrine
+    type: :Woman
+  AssignClass (7eaa28ec-0dd4-4e50-b830-b882497e3493)
+ Call ID: 7eaa28ec-0dd4-4e50-b830-b882497e3493
+  Args:
+    source: Alexandrine
+    type: :Person
+  AddTriple (8f165944-de62-492c-9ab0-82024e427a42)
+ Call ID: 8f165944-de62-492c-9ab0-82024e427a42
+  Args:
+    target: Christian_X
+    relation: :hasFather
+    source: Knud
+  AddTriple (909a6cc9-5a1a-4f4a-93a6-ed52c2e7563c)
+ Call ID: 909a6cc9-5a1a-4f4a-93a6-ed52c2e7563c
+  Args:
+    source: Knud
+    target: Alexandrine
+    relation: :hasMother
+  AssignClass (cbb56034-e150-4df2-9553-42808cd8191b)
+ Call ID: cbb56034-e150-4df2-9553-42808cd8191b
+  Args:
+    source: Frederik_IX
+    type: :Man
+  AssignClass (a541371d-230e-4110-8d17-0d193cee6f07)
+ Call ID: a541371d-230e-4110-8d17-0d193cee6f07
+  Args:
+    source: Frederik_IX
+    type: :Person
+  AddTriple (088abbb4-0dfa-462c-9d3e-0a0f452c840a)
+ Call ID: 088abbb4-0dfa-462c-9d3e-0a0f452c840a
+  Args:
+    target: Frederik_IX
+    relation: :isBrotherOf
+    source: Knud
+  AssignClass (207efd09-aa4f-4a81-b54a-3a349f278829)
+ Call ID: 207efd09-aa4f-4a81-b54a-3a349f278829
+  Args:
+    source: Caroline-Mathilde
+    type: :Woman
+  AssignClass (59a64868-2f8d-4fb8-bd09-34f6e9bd57f5)
+ Call ID: 59a64868-2f8d-4fb8-bd09-34f6e9bd57f5
+  Args:
+    source: Caroline-Mathilde
+    type: :Person
+  AddTriple (b7d6514a-f839-4767-ba04-37f1843a7bfd)
+ Call ID: b7d6514a-f839-4767-ba04-37f1843a7bfd
+  Args:
+    relation: :hasRelation
+    target: Caroline-Mathilde
+    source: Knud
+  AddLiteral (9c0ded74-34b2-4e48-8a6a-103f68daddf2)
+ Call ID: 9c0ded74-34b2-4e48-8a6a-103f68daddf2
+  Args:
+    literal_type: xsd:integer
+    source: Knud
+    literal_value: 1933
+    relation: :hasMarriageYear
+  AssignClass (c035ff7f-da90-470d-b440-e935385ccc8a)
+ Call ID: c035ff7f-da90-470d-b440-e935385ccc8a
+  Args:
+    source: Harald
+    type: :Man
+  AssignClass (8c01805f-59eb-4b8b-94c4-eb6f630f7f3f)
+ Call ID: 8c01805f-59eb-4b8b-94c4-eb6f630f7f3f
+  Args:
+    source: Harald
+    type: :Person
+  AssignClass (5f870b13-bf12-4582-8a97-67a22d67292b)
+ Call ID: 5f870b13-bf12-4582-8a97-67a22d67292b
+  Args:
+    source: Helena
+    type: :Woman
+  AssignClass (a3186391-fe8f-42d9-8a08-11da69393bfd)
+ Call ID: a3186391-fe8f-42d9-8a08-11da69393bfd
+  Args:
+    source: Helena
+    type: :Person
+  AddTriple (fc6956b0-0757-434a-9445-04454ff709aa)
+ Call ID: fc6956b0-0757-434a-9445-04454ff709aa
+  Args:
+    source: Caroline-Mathilde
+    relation: :hasFather
+    target: Harald
+  AddTriple (b6701af7-b5d2-40a4-b2c1-174927147ca2)
+ Call ID: b6701af7-b5d2-40a4-b2c1-174927147ca2
+  Args:
+    source: Caroline-Mathilde
+    target: Helena
+    relation: :hasMother
+  AssignClass (5a42f9e5-5651-4d3e-95ff-a0d34c9dba2d)
+ Call ID: 5a42f9e5-5651-4d3e-95ff-a0d34c9dba2d
+  Args:
+    source: Elisabeth
+    type: :Woman
+  AssignClass (d3501105-60f3-46e9-a239-904b3d60375c)
+ Call ID: d3501105-60f3-46e9-a239-904b3d60375c
+  Args:
+    source: Elisabeth
+    type: :Person
+  AssignClass (bd3d39fc-ff85-4201-9c4d-030d35c03e06)
+ Call ID: bd3d39fc-ff85-4201-9c4d-030d35c03e06
+  Args:
+    source: Ingolf
+    type: :Man
+  AssignClass (471c57df-497f-461f-b29e-e42121fb0032)
+ Call ID: 471c57df-497f-461f-b29e-e42121fb0032
+  Args:
+    source: Ingolf
+    type: :Person
+  AssignClass (be247594-e76c-4993-b7cc-ce232eae7f57)
+ Call ID: be247594-e76c-4993-b7cc-ce232eae7f57
+  Args:
+    source: Christian_son_of_Knud
+    type: :Man
+  AssignClass (cff17160-e0f1-41e8-923b-0e4dd25cf57b)
+ Call ID: cff17160-e0f1-41e8-923b-0e4dd25cf57b
+  Args:
+    source: Christian_son_of_Knud
+    type: :Person
+  AddTriple (5d2da082-b542-44ed-9182-066cb469ae36)
+ Call ID: 5d2da082-b542-44ed-9182-066cb469ae36
+  Args:
+    source: Knud
+    relation: :hasChild
+    target: Elisabeth
+  AddTriple (5de6a86b-7c76-47d9-8b0b-adcd23507fc0)
+ Call ID: 5de6a86b-7c76-47d9-8b0b-adcd23507fc0
   Args:
     relation: :hasChild
-    source: Pavlos_Crown_Prince_of_Greece
-    target: Maria-Olympia
-  AddTriple (486f6234-f656-495f-96ee-39829d8e2d7d)
- Call ID: 486f6234-f656-495f-96ee-39829d8e2d7d
+    target: Ingolf
+    source: Knud
+  AddTriple (1a5a8701-6e3d-43d1-b7ca-94b2a8829967)
+ Call ID: 1a5a8701-6e3d-43d1-b7ca-94b2a8829967
+  Args:
+    source: Knud
+    relation: :hasChild
+    target: Christian_son_of_Knud
+  AddTriple (d69b0590-f3f0-40f9-9332-e26c70c0b330)
+ Call ID: d69b0590-f3f0-40f9-9332-e26c70c0b330
+  Args:
+    source: Caroline-Mathilde
+    relation: :hasChild
+    target: Elisabeth
+  AddTriple (9d04ebca-a3bb-48a9-88b4-b15f72bcaf89)
+ Call ID: 9d04ebca-a3bb-48a9-88b4-b15f72bcaf89
   Args:
     relation: :hasChild
-    source: Pavlos_Crown_Prince_of_Greece
-    target: Constantine-Alexios
-  AddTriple (ca7193db-d23d-4c0b-b910-f511ab25a6d7)
- Call ID: ca7193db-d23d-4c0b-b910-f511ab25a6d7
+    target: Ingolf
+    source: Caroline-Mathilde
+  AddTriple (b13c9a4b-6ac6-412a-a822-674f4ce38248)
+ Call ID: b13c9a4b-6ac6-412a-a822-674f4ce38248
   Args:
+    source: Caroline-Mathilde
     relation: :hasChild
-    source: Pavlos_Crown_Prince_of_Greece
-    target: Achileas-Andreas
-  AddTriple (70e24a5c-a9d1-44dd-84da-9577b95450d3)
- Call ID: 70e24a5c-a9d1-44dd-84da-9577b95450d3
+    target: Christian_son_of_Knud
+  AssignClass (13defa10-db98-4fff-ae83-d9aba38999bf)
+ Call ID: 13defa10-db98-4fff-ae83-d9aba38999bf
   Args:
-    relation: :hasChild
-    target: Odysseas-Kimon
-    source: Pavlos_Crown_Prince_of_Greece
-  AddTriple (1ed92054-3bca-4e1d-a951-19b49b3ea951)
- Call ID: 1ed92054-3bca-4e1d-a951-19b49b3ea951
+    source: Gustav
+    type: :Man
+  AssignClass (ea66ddb5-63ef-4d62-b454-e0e8e07f0cca)
+ Call ID: ea66ddb5-63ef-4d62-b454-e0e8e07f0cca
   Args:
-    target: Aristides-Stavros
-    source: Pavlos_Crown_Prince_of_Greece
-    relation: :hasChild
-  AddTriple (a7e2f5aa-055c-432d-a154-b0f5f46c9018)
- Call ID: a7e2f5aa-055c-432d-a154-b0f5f46c9018
+    source: Gustav
+    type: :Person
+  AssignClass (dfdf25db-630a-4d28-b705-d73b19954842)
+ Call ID: dfdf25db-630a-4d28-b705-d73b19954842
   Args:
-    source: Marie-Chantal_Miller
-    target: Maria-Olympia
-    relation: :hasChild
-  AddTriple (5bc64193-3740-4748-8f14-1c8ce4ab3bc6)
- Call ID: 5bc64193-3740-4748-8f14-1c8ce4ab3bc6
+    source: Margrethe_II
+    type: :Woman
+  AssignClass (65091fcf-5c1b-4a1d-b4a9-0621689e5d3a)
+ Call ID: 65091fcf-5c1b-4a1d-b4a9-0621689e5d3a
   Args:
-    relation: :hasChild
-    source: Marie-Chantal_Miller
-    target: Constantine-Alexios
-  AddTriple (b678c87d-583d-4a4b-89c1-0c21242fa6c1)
- Call ID: b678c87d-583d-4a4b-89c1-0c21242fa6c1
+    source: Margrethe_II
+    type: :Person
+  AddTriple (5fb20a8d-fe8b-4f71-93a5-2e88c6c3f85a)
+ Call ID: 5fb20a8d-fe8b-4f71-93a5-2e88c6c3f85a
   Args:
-    relation: :hasChild
-    target: Achileas-Andreas
-    source: Marie-Chantal_Miller
-  AddTriple (29464010-fa24-4ce8-841b-a34256f28f3b)
- Call ID: 29464010-fa24-4ce8-841b-a34256f28f3b
-  Args:
-    source: Marie-Chantal_Miller
-    target: Odysseas-Kimon
-    relation: :hasChild
-  AddTriple (e08cd57f-1057-4504-bce4-14752ed7b0c7)
- Call ID: e08cd57f-1057-4504-bce4-14752ed7b0c7
-  Args:
-    target: Aristides-Stavros
-    source: Marie-Chantal_Miller
-    relation: :hasChild
-  Finish (8544a085-1ee0-4fc2-a397-63b93bb6fbdf)
- Call ID: 8544a085-1ee0-4fc2-a397-63b93bb6fbdf
+    source: Margrethe_II
+    relation: :isChildOf
+    target: Frederik_IX
+  Finish (9cf0f480-7949-4a14-bb2a-c6322e24c4d3)
+ Call ID: 9cf0f480-7949-4a14-bb2a-c6322e24c4d3
   Args:

@@ -2,46 +2,66 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Ernst-Johann_Biron a :Man ;
-    :hasFather data:Karl_Biron_von_Courland ;
-    :hasMother data:Herzeleide_of_Prussia .
+data:Friedrich_Franz_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBirthYear 1910 ;
+    :hasBrother data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :hasDeathYear 2001 ;
+    :hasFather data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1941 ;
+    :hasMother data:Alexandra_of_Hanover ;
+    :hasRelation data:Karin_Elisabeth_von_Schaper ;
+    :hasSex data:Male .
 
-data:Burchard_of_Prussia a :Man .
-
-data:Francoise_Levisse_de_Montigny a :Ancestor,
-        :Woman .
-
-data:Gustav_Biron_of_Courland a :Ancestor,
-        :Man .
-
-data:Herzeleide_of_Prussia a :Ancestor,
+data:Alexandra_of_Hanover a :Ancestor,
+        :Person,
         :Woman ;
-    :hasBirthYear 1918 ;
-    :hasBrother data:Burchard_of_Prussia,
-        data:Oscar_of_Prussia_brother,
-        data:Wilhelm-Karl_of_Prussia ;
-    :hasDeathYear 1989 ;
-    :hasFather data:Oskar_of_Prussia ;
-    :hasMarriageYear 1938 ;
-    :hasMother data:Ina_Marie_von_Bassewitz ;
-    :knownAs "Herzeleide Ina-Marie Sophie Charlotte Else of Prussia"^^xsd:string .
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasSex data:Female .
 
-data:Ina_Marie_von_Bassewitz a :Ancestor,
-        :Woman .
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Karl_Biron_von_Courland a :Ancestor,
-        :Man ;
-    :hasFather data:Gustav_Biron_of_Courland ;
-    :hasMother data:Francoise_Levisse_de_Montigny .
+data:Christian_Louis_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Oscar_of_Prussia_brother a :Man .
+data:Ernest_Augustus_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Oskar_of_Prussia a :Ancestor,
-        :Man ;
-    :hasFather data:Wilhelm_II .
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Wilhelm-Karl_of_Prussia a :Man .
+data:Karin_Elisabeth_von_Schaper a :Person,
+        :Woman ;
+    :hasFather data:Walter_von_Schaper ;
+    :hasMother data:Louise_von_M%C3%BCnchhausen ;
+    :hasSex data:Female .
 
-data:Wilhelm_II a :Ancestor,
-        :Man .
+data:Louise_von_M%C3%BCnchhausen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Thyra_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasSex data:Female .
+
+data:Walter_von_Schaper a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Female a :Female .
+
+data:Male a :Male .
 

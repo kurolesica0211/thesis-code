@@ -88,7 +88,6 @@ Childhood and education
 
 As a child, Henry suffered from poor health, much like his elder brother Albert.
 Both brothers had rhotacism, which prevented them from pronouncing the sound r; while Albert's pronunciation was reminiscent of the "French r", Henry was unable to produce the sound at all, replacing it with .
-He also had a nasal lisp and an unusually high-pitched tone, which together gave him a distinctive voice.
 By 1909, Henry's health had become a matter of concern to his parents.
 George wrote to Henry's tutor, Henry Peter Hansell, that he should be treated differently from his more robust elder brothers, noting, "You must remember that he is rather fragile and must be treated differently to his two elder brothers who are more robust".
 On 6 May 1910, George succeeded to the throne as George V, and Henry became third in line to the throne.
@@ -96,7 +95,6 @@ Hansell persuaded the King that attending school would benefit Henry's character
 Although the King had previously rejected the idea for his elder sons, he agreed on the grounds that it would help Henry "behave like a boy and not like a little child".
 Henry thus became the first son of a British monarch to attend school.
 Henry spent three years at St Peter’s Court.
-His mother once wrote to him in exasperation, "All you write about is your everlasting football of which I am heartily sick", replying to a detailed letter he had sent about a match..
 In September 1913, Henry entered Eton College.
 During the First World War, Crown Prince Leopold of Belgium, later Leopold III, was a member of his house, Mr Lubbock's.
 Henry's academic performance did not improve, but his nerves and general disposition did.
@@ -104,24 +102,15 @@ By the time he began his studies at Trinity College, Cambridge in 1919 with Albe
 Military career
 
 Unlike his brothers, Henry joined the Army rather than the Royal Navy.
-He attended the Royal Military College, Sandhurst, in 1919, and was commissioned as a second lieutenant in the King's Royal Rifle Corps on 16 July.
-On 16 July 1921, he was promoted to lieutenant in the 10th Royal Hussars, with whom he continued to serve.
-Although he wished to undertake more active military duties, his position as a senior member of the royal family effectively precluded such roles.
 He retained a strong interest in sport, and The Cricketer reported in August 1921 that the touring Philadelphians had been presented to Henry at The Oval.
 Henry was promoted to captain on 11 May 1927, and was appointed a personal aide-de-camp to his father on 2 August 1929.
 On 23 June 1936, he was appointed a personal aide-de-camp to his eldest brother, Edward VIII.
 Following Edward's abdication and the accession of Albert as George VI, Henry was effectively retired from active duty and received a ceremonial promotion to major‐general on 1 January 1937, skipping three ranks.
-He was also granted a Royal Air Force commission as air vice-marshal on the same day.
-On 12 March, he received the colonelcy of his former regiment, the 10th Royal Hussars, together with the colonelcies of the Royal Inniskilling Fusiliers and the Gordon Highlanders.
-On 28 May, he received an honorary appointment as a captain in the Royal Naval Volunteer Reserve, followed on 10 November by the honorary colonelcies of the Ceylon Planters' Rifle Corps and the Ceylon Light Infantry (now the Sri Lanka Light Infantry).
-In January 1940, he was appointed to the colonelcies of the Ulster Anti‐Aircraft Regiments of the Royal Artillery in the Territorial Army.
-He was appointed a Field Marshal in 1955 and a Marshal of the Royal Air Force in 1958.
 Duke of Gloucester
 
 On 31 March 1928, his father created him Duke of Gloucester, Earl of Ulster, and Baron Culloden, three titles that linked him with England, Northern Ireland, and Scotland.
 Later that year, Henry visited Canada.
 Before his marriage, Henry's chief ambition was to command his regiment, the 10th Royal Hussars, or at least to spend as much time in the Army as possible.
-To his increasing frustration, he was required to undertake the many royal duties assigned to him by his father.
 In September 1928, Henry left England with his brother Edward to shoot big game in Africa.
 The brothers parted in Nairobi, where Henry remained for a time.
 Henry and Beryl began an affair, although sources differ on when it started; many state that it did not begin until her later visit to England.
@@ -182,7 +171,6 @@ Although generally optimistic, Henry experienced bouts of depression during his 
 "My beloved Alice, I did hate leaving you yesterday so very much that I could hardly keep a straight face," he wrote after reporting back.
 it is such an awful waste of everything," he told Alice.
 In June, after the fall of Dunkirk, Henry was ordered back to England by an embarrassed General Headquarters, which had been unable to guarantee the King's brother's safety.
-"Wherever I went or had been, I was bombed," he wrote to his mother, amused by the situation.
 In early 1942, the King arranged a four‐month military and diplomatic mission for Henry to the Middle East, India, and East Africa.
 The King wrote to his sister‐in‐law that he would act as guardian to the newborn William should anything happen to Henry.
 After Henry's younger brother, the Duke of Kent, was killed in a plane crash in Scotland in August 1942, it was decided that Henry would not be sent on any further missions that might place him at similar risk.
@@ -206,7 +194,6 @@ Death
 
 Henry died on 10 June 1974 at the age of 74.
 He was the last surviving son of King George V and Queen Mary, and the last living knight of the Order of St Patrick.
-He was buried in the Royal Burial Ground, Frogmore.
 His only living son, Richard, inherited the title of Duke of Gloucester.
 Alice received permission from Queen Elizabeth II to be styled Princess Alice, Duchess of Gloucester, to distinguish her from Richard's wife.
 She outlived Henry by 30 years, dying on 29 October 2004 at the age of 102, and became the longest-lived member of the British royal family in history.
@@ -225,6 +212,8 @@ In 1921, Prince Henry was granted a personal coat of arms, being the royal arms,
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -240,39 +229,9 @@ In 1921, Prince Henry was granted a personal coat of arms, being the royal arms,
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -287,6 +246,23 @@ In 1921, Prince Henry was granted a personal coat of arms, being the royal arms,
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -304,6 +280,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -371,29 +362,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -402,6 +385,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -414,6 +405,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -422,17 +415,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -460,6 +455,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -475,132 +554,203 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9d1b71f2-5713-4dfb-9d25-cb52370de0b2)
- Call ID: 9d1b71f2-5713-4dfb-9d25-cb52370de0b2
+  AssignClass (5bc1991a-068e-4e82-8fda-a4347416bd7c)
+ Call ID: 5bc1991a-068e-4e82-8fda-a4347416bd7c
   Args:
     type: :Man
-    source: :PrinceHenry
-  AssignClass (24528fbd-e15e-470b-a346-b6ffb4b41c0e)
- Call ID: 24528fbd-e15e-470b-a346-b6ffb4b41c0e
+    source: :Henry
+  AssignClass (91d6765e-0318-4f11-90c2-3cff20b5fee1)
+ Call ID: 91d6765e-0318-4f11-90c2-3cff20b5fee1
+  Args:
+    source: :Henry
+    type: :Person
+  AddLiteral (d5764410-d3d0-44a3-9a6d-133172dc27f0)
+ Call ID: d5764410-d3d0-44a3-9a6d-133172dc27f0
+  Args:
+    literal_value: 1900
+    literal_type: xsd:integer
+    source: :Henry
+    relation: :hasBirthYear
+  AddLiteral (f7cb8190-c0b9-422d-a994-e8840c652d21)
+ Call ID: f7cb8190-c0b9-422d-a994-e8840c652d21
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1974
+    relation: :hasDeathYear
+    source: :Henry
+  AssignClass (258ce2b5-b70f-4f96-9a41-4ffe00ed3481)
+ Call ID: 258ce2b5-b70f-4f96-9a41-4ffe00ed3481
   Args:
     type: :Man
-    source: :KingGeorgeV
-  AssignClass (f8d00086-c631-4bf9-8704-179916d41545)
- Call ID: f8d00086-c631-4bf9-8704-179916d41545
+    source: :GeorgeV
+  AssignClass (e81f228a-966e-43b9-ad44-9797906b0f6c)
+ Call ID: e81f228a-966e-43b9-ad44-9797906b0f6c
   Args:
-    type: :Woman
+    type: :Person
+    source: :GeorgeV
+  AssignClass (2284bbe6-b4c7-45d7-81a1-e652b9320cfd)
+ Call ID: 2284bbe6-b4c7-45d7-81a1-e652b9320cfd
+  Args:
     source: :QueenMary
-  AssignClass (50ed8f86-4679-4846-a1df-5576e6c3b453)
- Call ID: 50ed8f86-4679-4846-a1df-5576e6c3b453
+    type: :Woman
+  AssignClass (39dcf725-f155-453d-8f22-61df96c38f68)
+ Call ID: 39dcf725-f155-453d-8f22-61df96c38f68
   Args:
-    type: :Man
+    type: :Person
+    source: :QueenMary
+  AddTriple (515b5618-a375-4372-a6a8-bc7a10431179)
+ Call ID: 515b5618-a375-4372-a6a8-bc7a10431179
+  Args:
+    relation: :hasFather
+    source: :Henry
+    target: :GeorgeV
+  AddTriple (9067a875-12b9-44b3-b287-6902771ba18d)
+ Call ID: 9067a875-12b9-44b3-b287-6902771ba18d
+  Args:
+    source: :Henry
+    relation: :hasMother
+    target: :QueenMary
+  AssignClass (4f1434c9-8a31-424e-8d52-163625e79876)
+ Call ID: 4f1434c9-8a31-424e-8d52-163625e79876
+  Args:
     source: :EdwardVIII
-  AssignClass (d852c1c6-12b9-4025-ada8-492110efcebb)
- Call ID: d852c1c6-12b9-4025-ada8-492110efcebb
+    type: :Man
+  AssignClass (2bb03b75-4a79-4b0e-9162-c0c8b64dd0fd)
+ Call ID: 2bb03b75-4a79-4b0e-9162-c0c8b64dd0fd
+  Args:
+    source: :EdwardVIII
+    type: :Person
+  AssignClass (7f4f87a8-e84d-4d6a-9f4e-49403a975e5a)
+ Call ID: 7f4f87a8-e84d-4d6a-9f4e-49403a975e5a
   Args:
     type: :Man
     source: :GeorgeVI
-  AssignClass (69fc6e05-9fd3-47d9-8693-fbcfb453e1c2)
- Call ID: 69fc6e05-9fd3-47d9-8693-fbcfb453e1c2
+  AssignClass (674043f0-2948-4f83-b042-1ecea3cee1cf)
+ Call ID: 674043f0-2948-4f83-b042-1ecea3cee1cf
   Args:
+    source: :GeorgeVI
+    type: :Person
+  AddTriple (393c4ded-0f29-4a26-8e44-ddb22b98d3c2)
+ Call ID: 393c4ded-0f29-4a26-8e44-ddb22b98d3c2
+  Args:
+    target: :EdwardVIII
+    source: :Henry
+    relation: :isBrotherOf
+  AddTriple (c29deabc-a7e4-4a46-92b8-6be0fa5230a7)
+ Call ID: c29deabc-a7e4-4a46-92b8-6be0fa5230a7
+  Args:
+    relation: :isBrotherOf
+    source: :Henry
+    target: :GeorgeVI
+  AssignClass (fba9e7c1-ebe9-4490-a38c-eca454f66162)
+ Call ID: fba9e7c1-ebe9-4490-a38c-eca454f66162
+  Args:
+    source: :AliceMontaguDouglasScott
     type: :Woman
-    source: :LadyAliceMontaguDouglasScott
-  AssignClass (f5e53a0d-d6f7-4a7d-ab71-199f4bf8189b)
- Call ID: f5e53a0d-d6f7-4a7d-ab71-199f4bf8189b
+  AssignClass (8e11782d-b914-4ca3-b232-cf3ae782d9dc)
+ Call ID: 8e11782d-b914-4ca3-b232-cf3ae782d9dc
   Args:
-    type: :Man
-    source: :PrinceWilliam
-  AssignClass (879b39de-639a-4921-b0c8-aed4ac151cb9)
- Call ID: 879b39de-639a-4921-b0c8-aed4ac151cb9
+    source: :AliceMontaguDouglasScott
+    type: :Person
+  AddLiteral (13533189-c3d7-43ac-b3fa-0eaa6f9fd2e1)
+ Call ID: 13533189-c3d7-43ac-b3fa-0eaa6f9fd2e1
   Args:
+    source: :Henry
+    relation: :hasMarriageYear
+    literal_value: 1935
+    literal_type: xsd:integer
+  AddTriple (48de73d5-090d-45f0-8162-efaecb0869ba)
+ Call ID: 48de73d5-090d-45f0-8162-efaecb0869ba
+  Args:
+    target: :AliceMontaguDouglasScott
+    relation: :hasRelation
+    source: :Henry
+  AssignClass (bc9e4e66-68d5-4b17-88de-05f3c762c44e)
+ Call ID: bc9e4e66-68d5-4b17-88de-05f3c762c44e
+  Args:
+    source: :William
     type: :Man
-    source: :PrinceRichard
-  AssignClass (666f268b-a291-4e0d-814b-6ad8a76473ca)
- Call ID: 666f268b-a291-4e0d-814b-6ad8a76473ca
+  AssignClass (93d6b03e-0aef-49b4-831b-f33d1324fa40)
+ Call ID: 93d6b03e-0aef-49b4-831b-f33d1324fa40
+  Args:
+    type: :Person
+    source: :William
+  AssignClass (3a88abf4-5cb8-4ca3-b12c-4ba42cf9fe9f)
+ Call ID: 3a88abf4-5cb8-4ca3-b12c-4ba42cf9fe9f
+  Args:
+    source: :Richard
+    type: :Man
+  AssignClass (df5a6fe0-6b86-4e6c-8eb2-3020765ce144)
+ Call ID: df5a6fe0-6b86-4e6c-8eb2-3020765ce144
+  Args:
+    type: :Person
+    source: :Richard
+  AddTriple (f034bb7a-4286-4c84-aa51-c8d92be21746)
+ Call ID: f034bb7a-4286-4c84-aa51-c8d92be21746
+  Args:
+    relation: :hasSon
+    source: :Henry
+    target: :William
+  AddTriple (8702d676-39d8-4239-8ae4-d398cbf0dd5a)
+ Call ID: 8702d676-39d8-4239-8ae4-d398cbf0dd5a
+  Args:
+    target: :Richard
+    source: :Henry
+    relation: :hasSon
+  AddTriple (89f6ae45-9f01-4d44-a661-987a974cd484)
+ Call ID: 89f6ae45-9f01-4d44-a661-987a974cd484
+  Args:
+    relation: :hasMother
+    source: :William
+    target: :AliceMontaguDouglasScott
+  AddTriple (10e8ef72-d532-4c44-9db5-dbc81c30cd97)
+ Call ID: 10e8ef72-d532-4c44-9db5-dbc81c30cd97
+  Args:
+    target: :AliceMontaguDouglasScott
+    source: :Richard
+    relation: :hasMother
+  AssignClass (1317778c-6ecf-40e1-af1d-bc03be8c871a)
+ Call ID: 1317778c-6ecf-40e1-af1d-bc03be8c871a
   Args:
     type: :Man
     source: :DukeOfKent
-  AddLiteral (e917161e-41fd-4a3f-9ceb-73044331ed90)
- Call ID: e917161e-41fd-4a3f-9ceb-73044331ed90
+  AssignClass (c4635af3-29b1-4092-823c-7cd00f84e2f0)
+ Call ID: c4635af3-29b1-4092-823c-7cd00f84e2f0
   Args:
-    source: :PrinceHenry
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1900
-  AddLiteral (01d28e51-754d-4ce6-9a20-952532e93dbe)
- Call ID: 01d28e51-754d-4ce6-9a20-952532e93dbe
+    source: :DukeOfKent
+    type: :Person
+  AddTriple (609bfd55-26c4-46bf-aee3-2c24214972cd)
+ Call ID: 609bfd55-26c4-46bf-aee3-2c24214972cd
   Args:
-    source: :PrinceHenry
-    literal_value: 1974
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddTriple (9a381056-3900-4e54-bcc7-22d998c98141)
- Call ID: 9a381056-3900-4e54-bcc7-22d998c98141
-  Args:
-    source: :PrinceHenry
-    relation: :hasFather
-    target: :KingGeorgeV
-  AddTriple (3d103db7-8c3d-41f8-960d-ffe9a9b5f798)
- Call ID: 3d103db7-8c3d-41f8-960d-ffe9a9b5f798
-  Args:
-    source: :PrinceHenry
-    target: :QueenMary
-    relation: :hasMother
-  AddTriple (20f2bbda-3ab0-439b-b51b-9ad752b0cb34)
- Call ID: 20f2bbda-3ab0-439b-b51b-9ad752b0cb34
-  Args:
-    source: :PrinceHenry
-    relation: :isBrotherOf
-    target: :EdwardVIII
-  AddTriple (0a5e89ca-2f1e-4dbf-892e-8d9d0a28cc54)
- Call ID: 0a5e89ca-2f1e-4dbf-892e-8d9d0a28cc54
-  Args:
-    target: :GeorgeVI
-    relation: :isBrotherOf
-    source: :PrinceHenry
-  AddTriple (6209a49c-1608-42ed-90a9-6cd8727c1de4)
- Call ID: 6209a49c-1608-42ed-90a9-6cd8727c1de4
-  Args:
+    source: :Henry
     relation: :isBrotherOf
     target: :DukeOfKent
-    source: :PrinceHenry
-  AddTriple (dd49d59b-8771-4e48-9580-1c9b9a597541)
- Call ID: dd49d59b-8771-4e48-9580-1c9b9a597541
+  AssignClass (b8b74d3f-230c-43dc-9353-9beefb19c200)
+ Call ID: b8b74d3f-230c-43dc-9353-9beefb19c200
   Args:
-    target: :PrinceWilliam
-    relation: :hasSon
-    source: :PrinceHenry
-  AddTriple (36bddf9c-7ab6-4831-8e5d-af6d3c650ba7)
- Call ID: 36bddf9c-7ab6-4831-8e5d-af6d3c650ba7
+    type: :Woman
+    source: :ElizabethII
+  AssignClass (7ab80a3d-2722-4e44-bbc2-a61b85660f96)
+ Call ID: 7ab80a3d-2722-4e44-bbc2-a61b85660f96
   Args:
-    source: :PrinceHenry
-    relation: :hasSon
-    target: :PrinceRichard
-  AddTriple (97e01660-fb98-4a19-b75d-e0fc2a838514)
- Call ID: 97e01660-fb98-4a19-b75d-e0fc2a838514
+    source: :ElizabethII
+    type: :Person
+  AddTriple (b00ab1c9-2760-4586-905a-7480095b7a4e)
+ Call ID: b00ab1c9-2760-4586-905a-7480095b7a4e
   Args:
-    relation: :hasSon
-    target: :PrinceWilliam
-    source: :LadyAliceMontaguDouglasScott
-  AddTriple (78afc884-0c5c-47bf-b95a-3f8430d31606)
- Call ID: 78afc884-0c5c-47bf-b95a-3f8430d31606
+    target: :Margaret
+    relation: :isSiblingOf
+    source: :ElizabethII
+  AssignClass (8313a5d6-3778-4dbf-8fc4-1bd10e82a562)
+ Call ID: 8313a5d6-3778-4dbf-8fc4-1bd10e82a562
   Args:
-    source: :LadyAliceMontaguDouglasScott
-    target: :PrinceRichard
-    relation: :hasSon
-  AddLiteral (ed15f150-639e-4fa6-89c4-0ef364603b14)
- Call ID: ed15f150-639e-4fa6-89c4-0ef364603b14
+    type: :Woman
+    source: :Margaret
+  AssignClass (5051f062-e68f-4f1f-8a6b-68bb744172c1)
+ Call ID: 5051f062-e68f-4f1f-8a6b-68bb744172c1
   Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1935
-    source: :PrinceHenry
-  AddTriple (8be6aeb8-f576-44a0-bb6b-be9489e6b83b)
- Call ID: 8be6aeb8-f576-44a0-bb6b-be9489e6b83b
-  Args:
-    relation: :hasRelation
-    target: :LadyAliceMontaguDouglasScott
-    source: :PrinceHenry
-  Finish (faec0df6-8594-4608-bbab-d30d1ef6e894)
- Call ID: faec0df6-8594-4608-bbab-d30d1ef6e894
+    type: :Person
+    source: :Margaret
+  Finish (311893bb-2680-43f0-8893-9fd4415c18b4)
+ Call ID: 311893bb-2680-43f0-8893-9fd4415c18b4
   Args:

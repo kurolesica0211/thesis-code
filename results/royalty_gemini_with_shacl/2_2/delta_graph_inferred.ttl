@@ -1,0 +1,172 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:King_Frederik_X a :Man ;
+    :hasBrother data:King_Frederik_X ;
+    :hasRelation data:King_Frederik_X ;
+    :isBloodrelationOf data:King_Frederik_X ;
+    :isBrotherOf data:King_Frederik_X ;
+    :isSiblingOf data:King_Frederik_X .
+
+data:Prince_Henrik a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Henrik ;
+    :hasChild data:Prince_Joachim ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :hasSon data:Prince_Joachim ;
+    :isAncestorOf data:Count_Felix_of_Monpezat,
+        data:Prince_Joachim,
+        data:Prince_Nikolai ;
+    :isBloodrelationOf data:Prince_Henrik ;
+    :isBrotherOf data:Prince_Henrik ;
+    :isFatherOf data:Prince_Joachim ;
+    :isParentOf data:Prince_Joachim ;
+    :isSiblingOf data:Prince_Henrik ;
+    :isUncleOf data:Prince_Joachim .
+
+data:Queen_Margrethe_II a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Joachim ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Queen_Margrethe_II ;
+    :hasSon data:Prince_Joachim ;
+    :isAncestorOf data:Count_Felix_of_Monpezat,
+        data:Prince_Joachim,
+        data:Prince_Nikolai ;
+    :isAuntOf data:Prince_Joachim ;
+    :isBloodrelationOf data:Queen_Margrethe_II ;
+    :isMotherOf data:Prince_Joachim ;
+    :isParentOf data:Prince_Joachim ;
+    :isSiblingOf data:Queen_Margrethe_II ;
+    :isSisterOf data:Queen_Margrethe_II .
+
+data:Countess_Alexandra a :Ancestor,
+        :Woman ;
+    :hasChild data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Countess_Alexandra ;
+    :hasSon data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isAncestorOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isAuntOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isBloodrelationOf data:Countess_Alexandra ;
+    :isMotherOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isParentOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isSiblingOf data:Countess_Alexandra ;
+    :isSisterOf data:Countess_Alexandra .
+
+data:Count_Felix_of_Monpezat a :Man ;
+    :formerlyKnownAs "His Highness Prince Felix of Denmark"^^xsd:string ;
+    :hasAncestor data:Countess_Alexandra,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :hasBirthYear 2002 ;
+    :hasBrother data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :hasFather data:Prince_Joachim ;
+    :hasMother data:Countess_Alexandra ;
+    :hasParent data:Countess_Alexandra,
+        data:Prince_Joachim ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :isBloodrelationOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isBrotherOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isChildOf data:Countess_Alexandra,
+        data:Prince_Joachim ;
+    :isSiblingOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isSonOf data:Countess_Alexandra,
+        data:Prince_Joachim ;
+    :knownAs "His Excellency Count Felix of Monpezat"^^xsd:string .
+
+data:Prince_Nikolai a :Man ;
+    :hasAncestor data:Countess_Alexandra,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Queen_Margrethe_II ;
+    :hasBrother data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :hasFather data:Prince_Joachim ;
+    :hasMother data:Countess_Alexandra ;
+    :hasParent data:Countess_Alexandra,
+        data:Prince_Joachim ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :isBloodrelationOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isBrotherOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isChildOf data:Countess_Alexandra,
+        data:Prince_Joachim ;
+    :isSiblingOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isSonOf data:Countess_Alexandra,
+        data:Prince_Joachim .
+
+data:Prince_Joachim a :Ancestor,
+        :Man ;
+    :hasAncestor data:Prince_Henrik,
+        data:Queen_Margrethe_II ;
+    :hasBrother data:Prince_Joachim ;
+    :hasChild data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :hasFather data:Prince_Henrik ;
+    :hasMother data:Queen_Margrethe_II ;
+    :hasParent data:Prince_Henrik,
+        data:Queen_Margrethe_II ;
+    :hasRelation data:Count_Felix_of_Monpezat,
+        data:Countess_Alexandra,
+        data:Prince_Henrik,
+        data:Prince_Joachim,
+        data:Prince_Nikolai,
+        data:Queen_Margrethe_II ;
+    :hasSon data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isAncestorOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isBloodrelationOf data:Prince_Joachim ;
+    :isBrotherOf data:Prince_Joachim ;
+    :isChildOf data:Prince_Henrik,
+        data:Queen_Margrethe_II ;
+    :isFatherOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isParentOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai ;
+    :isSiblingOf data:Prince_Joachim ;
+    :isSonOf data:Prince_Henrik,
+        data:Queen_Margrethe_II ;
+    :isUncleOf data:Count_Felix_of_Monpezat,
+        data:Prince_Nikolai .
+

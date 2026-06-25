@@ -85,40 +85,27 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Simon Patrick Bowes-Lyon, 19th and 6th Earl of Strathmore and Kinghorne (born 18 June 1986), styled as Lord Glamis until 2016, is a Scottish peer and landowner, the owner of estates based at Glamis Castle.
-The eldest son of Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne, and his first wife, Isobel Weatherall, he is a second cousin once removed of King Charles III, whose maternal grandmother was a Bowes-Lyon.
-In 2021, Strathmore pleaded guilty to sexually assaulting a woman at his ancestral home, Glamis Castle, and as a result served five months in prison.
-Biography
+Heinrich Prinz von Hannover (born 29 April 1961) is a German publisher.
+Early life
 
-Simon Patrick Bowes-Lyon was born on 18 June 1986 into the Bowes-Lyon family.
-His father, Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne, was a politician, soldier, and businessman, as well as a hereditary peer.
-His mother is Isobel Weatherall, daughter of Captain Anthony Edward Weatherall.
-Strathmore is a great-great-nephew of Queen Elizabeth the Queen Mother and thus a second cousin once removed of King Charles III and third cousin of his son, Prince William.
-On his father's death on 27 February 2016, the then-Lord Glamis succeeded as 19th Earl.
-In 2017 Strathmore decided to renovate Glamis House, a property on his estate and a childhood home of the Queen Mother, for use as a self-catering holiday home.
-From 2016 to 2018, he was a director of Ark Hill Wind Farm Ltd. Strathmore is the chieftain of the Strathmore Highland Games, which takes place annually in the grounds of Glamis Castle.
-COVID-19 violation
+Heinrich is the youngest child of Ernest Augustus, Hereditary Prince of Brunswick, and his first wife Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg.
+He was born in Hanover, Lower Saxony, Germany.
+His eldest brother, Prince Ernest Augustus of Hanover, is the present head of the House of Hanover.
+Professional life
 
-In June 2020, Durham Police contacted the Earl for violating the COVID-19-related travel restrictions then in place.
-A report said Strathmore travelled 200 miles (320 km) to Holwick Lodge, Middleton-in-Teesdale, and that his butler was spotted buying newspapers.
-Sexual assault conviction
+Heinrich founded, owns and manages the publishing company MatrixMedia Verlag in Göttingen.
+The company publishes history books, mostly on the local history of the state of Lower Saxony, of which the predecessor states were the Kingdom of Hanover and the Duchy of Brunswick, and the history of the House of Welf.
+Personal life
 
-In 2021, Strathmore was charged with sexual assault after admitting to attacking a 26-year-old woman at his Scottish home, Glamis Castle, in early 2020.
-On 12 January 2021, Strathmore was granted bail and placed on the Violent and Sex Offender Register (ViSOR) by Sheriff Alistair Carmichael at Dundee Sheriff Court.
-The Times reported calls for Strathmore to be removed as the Chieftain of the annual Strathmore Highland Games and as the President of the Angus Ball.
-Drink driving conviction
-
-On 10 November 2023, the Earl was convicted of drink driving at Perth Sheriff Court.
-The Earl gave a reading of 55 mcg per 100 ml of breath; the legal limit is 22 mcg, therefore, he was 2.5 times over the legal limit.
-Titles and styles
-
-In addition to the Earldom of Strathmore and Kinghorne, Strathmore holds the following subsidiary titles: 17th Viscount Lyon, 19th Lord Lyon and Glamis, 26th Lord Glamis, 17th Lord Glamis, Tannadyce, Sidlaw and Strathdichtie, and 7th Baron Bowes, of Streatlam Castle.
+Heinrich was in a relationship with cabaret artist Désirée Nick for 17 years.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -134,39 +121,9 @@ In addition to the Earldom of Strathmore and Kinghorne, Strathmore holds the fol
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -181,6 +138,23 @@ In addition to the Earldom of Strathmore and Kinghorne, Strathmore holds the fol
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -198,6 +172,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,29 +254,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -296,6 +277,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -308,6 +297,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -316,17 +307,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -354,6 +347,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -369,68 +446,82 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8d4a0e31-7661-46a7-8033-03cf649d64a3)
- Call ID: 8d4a0e31-7661-46a7-8033-03cf649d64a3
+  AssignClass (d7914361-b05a-4e00-a9ab-eae47f62c864)
+ Call ID: d7914361-b05a-4e00-a9ab-eae47f62c864
   Args:
-    source: Simon_Patrick_Bowes-Lyon
+    source: :HeinrichPrinzVonHannover
     type: :Man
-  AssignClass (80c35d51-a86b-410f-957c-6d2779d87a45)
- Call ID: 80c35d51-a86b-410f-957c-6d2779d87a45
+  AssignClass (7dfb4302-56d9-4196-a20b-f4d101faa555)
+ Call ID: 7dfb4302-56d9-4196-a20b-f4d101faa555
   Args:
-    source: Michael_Bowes-Lyon
-    type: :Man
-  AssignClass (204a017d-4563-4770-8e5c-3a34c3ee2bf1)
- Call ID: 204a017d-4563-4770-8e5c-3a34c3ee2bf1
-  Args:
-    type: :Woman
-    source: Isobel_Weatherall
-  AssignClass (8de03767-cf94-412c-85e9-6481c58bfc6d)
- Call ID: 8de03767-cf94-412c-85e9-6481c58bfc6d
-  Args:
-    type: :Man
-    source: Anthony_Edward_Weatherall
-  AddLiteral (d2cbd6cc-84e4-48fe-90ac-65a3fd854303)
- Call ID: d2cbd6cc-84e4-48fe-90ac-65a3fd854303
+    source: :HeinrichPrinzVonHannover
+    type: :Person
+  AddLiteral (193c5a3f-af7e-4309-833c-0fb23017542f)
+ Call ID: 193c5a3f-af7e-4309-833c-0fb23017542f
   Args:
     literal_type: xsd:integer
-    literal_value: 1986
-    source: Simon_Patrick_Bowes-Lyon
+    literal_value: 1961
     relation: :hasBirthYear
-  AddTriple (15b43f72-2e74-46ca-bab6-6d33522dc5be)
- Call ID: 15b43f72-2e74-46ca-bab6-6d33522dc5be
+    source: :HeinrichPrinzVonHannover
+  AssignClass (c85f777a-f6c7-4f1b-bad1-5d56a8323114)
+ Call ID: c85f777a-f6c7-4f1b-bad1-5d56a8323114
+  Args:
+    source: :ErnestAugustusHereditaryPrinceOfBrunswick
+    type: :Man
+  AssignClass (857d64b2-d77f-4571-a183-8d283ff7c5cb)
+ Call ID: 857d64b2-d77f-4571-a183-8d283ff7c5cb
+  Args:
+    source: :ErnestAugustusHereditaryPrinceOfBrunswick
+    type: :Person
+  AssignClass (eaf5b864-4918-4f5b-bd5c-16db0592a254)
+ Call ID: eaf5b864-4918-4f5b-bd5c-16db0592a254
+  Args:
+    source: :PrincessOrtrudOfSchleswigHolsteinSonderburgGlücksburg
+    type: :Woman
+  AssignClass (0b98a146-8fa4-4181-87a0-c042e755f57c)
+ Call ID: 0b98a146-8fa4-4181-87a0-c042e755f57c
+  Args:
+    source: :PrincessOrtrudOfSchleswigHolsteinSonderburgGlücksburg
+    type: :Person
+  AddTriple (c69f519e-df45-4a2e-9f83-8699ca98fecb)
+ Call ID: c69f519e-df45-4a2e-9f83-8699ca98fecb
   Args:
     relation: :hasFather
-    source: Simon_Patrick_Bowes-Lyon
-    target: Michael_Bowes-Lyon
-  AddTriple (0af50cce-2707-4b4f-96d8-53d537c6ef41)
- Call ID: 0af50cce-2707-4b4f-96d8-53d537c6ef41
+    target: :ErnestAugustusHereditaryPrinceOfBrunswick
+    source: :HeinrichPrinzVonHannover
+  AddTriple (b575f9a1-54a7-421c-8f67-1cd5df0a921f)
+ Call ID: b575f9a1-54a7-421c-8f67-1cd5df0a921f
   Args:
-    target: Isobel_Weatherall
-    source: Simon_Patrick_Bowes-Lyon
+    target: :PrincessOrtrudOfSchleswigHolsteinSonderburgGlücksburg
+    source: :HeinrichPrinzVonHannover
     relation: :hasMother
-  AddTriple (403adae8-e7db-4692-a1cc-fa668a0af0c6)
- Call ID: 403adae8-e7db-4692-a1cc-fa668a0af0c6
+  AssignClass (b01e8041-49ad-49df-a1de-b5df25eb3922)
+ Call ID: b01e8041-49ad-49df-a1de-b5df25eb3922
   Args:
-    source: Isobel_Weatherall
-    relation: :hasFather
-    target: Anthony_Edward_Weatherall
-  AddLiteral (1849169c-85fe-4717-8077-d5a9ada0101f)
- Call ID: 1849169c-85fe-4717-8077-d5a9ada0101f
+    type: :Man
+    source: :PrinceErnestAugustusOfHanover
+  AssignClass (b274211f-6382-4512-9ff2-8bbadaba6f5b)
+ Call ID: b274211f-6382-4512-9ff2-8bbadaba6f5b
   Args:
-    relation: :knownAs
-    source: Simon_Patrick_Bowes-Lyon
-    literal_type: xsd:string
-    literal_value: 19th and 6th Earl of Strathmore and Kinghorne
-  AddLiteral (09246b67-7e44-49d4-ab78-7a9fa4972fa2)
- Call ID: 09246b67-7e44-49d4-ab78-7a9fa4972fa2
+    type: :Person
+    source: :PrinceErnestAugustusOfHanover
+  AddTriple (0ae5a6f8-2c9b-448c-acfc-d0b61bf6b43d)
+ Call ID: 0ae5a6f8-2c9b-448c-acfc-d0b61bf6b43d
   Args:
-    source: Simon_Patrick_Bowes-Lyon
-    relation: :formerlyKnownAs
-    literal_type: xsd:string
-    literal_value: Lord Glamis
-  Finish (7e4090e0-f770-46e9-9f44-6bdae330e8c6)
- Call ID: 7e4090e0-f770-46e9-9f44-6bdae330e8c6
+    relation: :isBrotherOf
+    target: :HeinrichPrinzVonHannover
+    source: :PrinceErnestAugustusOfHanover
+  Finish (3874d476-1ed3-44e0-841a-2d9a52c575d9)
+ Call ID: 3874d476-1ed3-44e0-841a-2d9a52c575d9
   Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -475,19 +566,21 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Simon_Patrick_Bowes-Lyon a :Man ;
-      :formerlyKnownAs "Lord Glamis"^^xsd:string ;
-      :hasBirthYear 1986 ;
-      :hasFather data:Michael_Bowes-Lyon ;
-      :hasMother data:Isobel_Weatherall ;
-      :knownAs "19th and 6th Earl of Strathmore and Kinghorne"^^xsd:string .
+  data:PrinceErnestAugustusOfHanover a :Man,
+          :Person ;
+      :isBrotherOf data:HeinrichPrinzVonHannover .
 
-  data:Anthony_Edward_Weatherall a :Man .
+  data:ErnestAugustusHereditaryPrinceOfBrunswick a :Man,
+          :Person .
 
-  data:Isobel_Weatherall a :Woman ;
-      :hasFather data:Anthony_Edward_Weatherall .
+  data:HeinrichPrinzVonHannover a :Man,
+          :Person ;
+      :hasBirthYear 1961 ;
+      :hasFather data:ErnestAugustusHereditaryPrinceOfBrunswick ;
+      :hasMother data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg .
 
-  data:Michael_Bowes-Lyon a :Man .
+  data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg a :Person,
+          :Woman .
 
 
 
@@ -499,86 +592,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (676acb36-310c-479d-8359-da594ac446f0)
- Call ID: 676acb36-310c-479d-8359-da594ac446f0
+  ValidateShacl (ad064991-ebdf-417c-beea-974829487770)
+ Call ID: ad064991-ebdf-417c-beea-974829487770
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:9
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Michael_Bowes-Lyon is assigned as the father of Simon_Patrick_Bowes-Lyon, but it lacks the required Ancestor class.
+      The node 'ErnestAugustusHereditaryPrinceOfBrunswick', linked via 'hasFather' to 'HeinrichPrinzVonHannover', does not belong to the required classes ':Ancestor' or ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Michael_Bowes-Lyon, :Ancestor)
+      AssignClass(node: 'ErnestAugustusHereditaryPrinceOfBrunswick', class: ':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Isobel_Weatherall is assigned as the mother of Simon_Patrick_Bowes-Lyon, but it lacks the required Ancestor class.
+      The node 'PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg', linked via 'hasMother' to 'HeinrichPrinzVonHannover', does not belong to the required classes ':Ancestor' or ':Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Isobel_Weatherall, :Ancestor)
+      AssignClass(node: 'PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg', class: ':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Anthony_Edward_Weatherall is assigned as the father of Isobel_Weatherall, but it lacks the required Ancestor class.
+      The node 'ErnestAugustusHereditaryPrinceOfBrunswick' is missing the mandatory class ':Ancestor' to satisfy the 'hasFather' property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Anthony_Edward_Weatherall, :Ancestor)
+      AssignClass(node: 'ErnestAugustusHereditaryPrinceOfBrunswick', class: ':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Michael_Bowes-Lyon is assigned as the father of Simon_Patrick_Bowes-Lyon, but it lacks the required Ancestor class.
+      The node 'PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg' is missing the mandatory class ':Ancestor' to satisfy the 'hasMother' property constraint.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Michael_Bowes-Lyon, :Ancestor)
+      AssignClass(node: 'PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg', class: ':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Isobel_Weatherall is assigned as the mother of Simon_Patrick_Bowes-Lyon, but it lacks the required Ancestor class.
+      The node 'ErnestAugustusHereditaryPrinceOfBrunswick' requires the ':Ancestor' class assignment for the 'hasFather' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Isobel_Weatherall, :Ancestor)
+      AssignClass(node: 'ErnestAugustusHereditaryPrinceOfBrunswick', class: ':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Anthony_Edward_Weatherall is assigned as the father of Isobel_Weatherall, but it lacks the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Anthony_Edward_Weatherall, :Ancestor)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Michael_Bowes-Lyon is assigned as the father of Simon_Patrick_Bowes-Lyon, but it lacks the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Michael_Bowes-Lyon, :Ancestor)
-
-
-  Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Isobel_Weatherall is assigned as the mother of Simon_Patrick_Bowes-Lyon, but it lacks the required Ancestor class.
+      The node 'PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg' requires the ':Ancestor' class assignment for the 'hasMother' relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Isobel_Weatherall, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Anthony_Edward_Weatherall is assigned as the father of Isobel_Weatherall, but it lacks the required Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Anthony_Edward_Weatherall, :Ancestor)
+      AssignClass(node: 'PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg', class: ':Ancestor')
 
 
 
@@ -587,467 +656,18 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (20505e55-bbf7-434c-9ed5-519ce217a915)
- Call ID: 20505e55-bbf7-434c-9ed5-519ce217a915
+  AssignClass (87485325-b7c0-4f05-91e1-a0ca785e6e39)
+ Call ID: 87485325-b7c0-4f05-91e1-a0ca785e6e39
   Args:
+    source: :ErnestAugustusHereditaryPrinceOfBrunswick
     type: :Ancestor
-    source: Michael_Bowes-Lyon
-  AssignClass (96691bea-9bfb-43c0-ac6e-afeab4d52bd2)
- Call ID: 96691bea-9bfb-43c0-ac6e-afeab4d52bd2
+  AssignClass (02a999aa-2a75-4264-94fa-3858aebc4e1b)
+ Call ID: 02a999aa-2a75-4264-94fa-3858aebc4e1b
   Args:
+    source: :PrincessOrtrudOfSchleswigHolsteinSonderburgGlücksburg
     type: :Ancestor
-    source: Isobel_Weatherall
-  AssignClass (1d3808fc-3b76-4e1a-892b-b7336a6a95b8)
- Call ID: 1d3808fc-3b76-4e1a-892b-b7336a6a95b8
-  Args:
-    type: :Ancestor
-    source: Anthony_Edward_Weatherall
-  AddTriple (f66597a0-63ed-4df9-8ed3-136513e7645d)
- Call ID: f66597a0-63ed-4df9-8ed3-136513e7645d
-  Args:
-    relation: :hasSex
-    source: Simon_Patrick_Bowes-Lyon
-    target: :Male
-  AddTriple (94086682-3435-4fc4-b7e7-a909c25e08a8)
- Call ID: 94086682-3435-4fc4-b7e7-a909c25e08a8
-  Args:
-    relation: :hasSex
-    source: Michael_Bowes-Lyon
-    target: :Male
-  AddTriple (3411e69e-8603-4379-8470-87563b427585)
- Call ID: 3411e69e-8603-4379-8470-87563b427585
-  Args:
-    relation: :hasSex
-    target: :Female
-    source: Isobel_Weatherall
-  AddTriple (644aa328-7afe-4533-a2e1-a70d017dde9e)
- Call ID: 644aa328-7afe-4533-a2e1-a70d017dde9e
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: Anthony_Edward_Weatherall
-  Finish (b782c943-a5bc-469a-91e3-0538169931f7)
- Call ID: b782c943-a5bc-469a-91e3-0538169931f7
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Simon_Patrick_Bowes-Lyon a :Man ;
-      :formerlyKnownAs "Lord Glamis"^^xsd:string ;
-      :hasBirthYear 1986 ;
-      :hasFather data:Michael_Bowes-Lyon ;
-      :hasMother data:Isobel_Weatherall ;
-      :hasSex data:Male ;
-      :knownAs "19th and 6th Earl of Strathmore and Kinghorne"^^xsd:string .
-
-  data:Anthony_Edward_Weatherall a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Isobel_Weatherall a :Ancestor,
-          :Woman ;
-      :hasFather data:Anthony_Edward_Weatherall ;
-      :hasSex data:Female .
-
-  data:Michael_Bowes-Lyon a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (f65536b6-7837-438f-bc37-a5508941722c)
- Call ID: f65536b6-7837-438f-bc37-a5508941722c
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:41
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Isobel_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Anthony_Edward_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Isobel_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Anthony_Edward_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Isobel_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Anthony_Edward_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Anthony_Edward_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Simon_Patrick_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Anthony_Edward_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Simon_Patrick_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Isobel_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Anthony_Edward_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Simon_Patrick_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Isobel_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Anthony_Edward_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Simon_Patrick_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Isobel_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Anthony_Edward_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Simon_Patrick_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Isobel_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Anthony_Edward_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Simon_Patrick_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Isobel_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Anthony_Edward_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Simon_Patrick_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Isobel_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Anthony_Edward_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Simon_Patrick_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Michael_Bowes-Lyon' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Isobel_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' on node 'Isobel_Weatherall' is not correctly typed as an instance of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (9a208ecf-f8e3-48fc-b8db-e1fa30c8c493)
- Call ID: 9a208ecf-f8e3-48fc-b8db-e1fa30c8c493
-  Args:
-    type: :Sex
-    source: Male
-  AssignClass (9f753b4f-5fb8-472b-b944-8474ad31aef8)
- Call ID: 9f753b4f-5fb8-472b-b944-8474ad31aef8
-  Args:
-    source: Female
-    type: :Sex
-  Finish (c0da6753-493c-49cf-8423-de1315d280c4)
- Call ID: c0da6753-493c-49cf-8423-de1315d280c4
+  ValidateShacl (b2028e53-59c3-46e3-9a63-769c3497f839)
+ Call ID: b2028e53-59c3-46e3-9a63-769c3497f839
   Args:
 
 ================================= Tool Message =================================
@@ -1061,44 +681,25 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Simon_Patrick_Bowes-Lyon a :Man ;
-      :formerlyKnownAs "Lord Glamis"^^xsd:string ;
-      :hasBirthYear 1986 ;
-      :hasFather data:Michael_Bowes-Lyon ;
-      :hasMother data:Isobel_Weatherall ;
-      :hasSex data:Male ;
-      :knownAs "19th and 6th Earl of Strathmore and Kinghorne"^^xsd:string .
+  data:PrinceErnestAugustusOfHanover a :Man,
+          :Person ;
+      :isBrotherOf data:HeinrichPrinzVonHannover .
 
-  data:Anthony_Edward_Weatherall a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
+  data:ErnestAugustusHereditaryPrinceOfBrunswick a :Ancestor,
+          :Man,
+          :Person .
 
-  data:Female a :Sex .
+  data:HeinrichPrinzVonHannover a :Man,
+          :Person ;
+      :hasBirthYear 1961 ;
+      :hasFather data:ErnestAugustusHereditaryPrinceOfBrunswick ;
+      :hasMother data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg .
 
-  data:Isobel_Weatherall a :Ancestor,
-          :Woman ;
-      :hasFather data:Anthony_Edward_Weatherall ;
-      :hasSex data:Female .
-
-  data:Michael_Bowes-Lyon a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Male a :Sex .
+  data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg a :Ancestor,
+          :Person,
+          :Woman .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (45712907-f232-453c-9808-0037a41b80eb)
- Call ID: 45712907-f232-453c-9808-0037a41b80eb
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1108,6 +709,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (8f1c605a-2707-42e1-ab7e-f14b5f2cb468)
- Call ID: 8f1c605a-2707-42e1-ab7e-f14b5f2cb468
+  Finish (792dc9e5-c86e-49e8-a69b-a8d1ce77dfb3)
+ Call ID: 792dc9e5-c86e-49e8-a69b-a8d1ce77dfb3
   Args:

@@ -35,9 +35,9 @@ Violations:
 
   Violation [1]:
     Severity: Violation
-    Focus node: Katherine_of_Greece_and_Denmark
+    Focus node: Irene_of_Greece_and_Denmark
     Path: hasFather
-    Value: Constantine_I_of_Greece
+    Value: King_Paul_of_Greece
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -114,9 +114,9 @@ Violations:
 
   Violation [2]:
     Severity: Violation
-    Focus node: Katherine_of_Greece_and_Denmark
+    Focus node: Irene_of_Greece_and_Denmark
     Path: hasMother
-    Value: Sophia_of_Prussia
+    Value: Queen_Frederica
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -194,9 +194,9 @@ Violations:
 
   Violation [3]:
     Severity: Violation
-    Focus node: Katherine_of_Greece_and_Denmark
+    Focus node: Irene_of_Greece_and_Denmark
     Path: hasFather
-    Value: Constantine_I_of_Greece
+    Value: King_Paul_of_Greece
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -273,9 +273,9 @@ Violations:
 
   Violation [4]:
     Severity: Violation
-    Focus node: Katherine_of_Greece_and_Denmark
+    Focus node: Irene_of_Greece_and_Denmark
     Path: hasMother
-    Value: Sophia_of_Prussia
+    Value: Queen_Frederica
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -353,9 +353,9 @@ Violations:
 
   Violation [5]:
     Severity: Violation
-    Focus node: Katherine_of_Greece_and_Denmark
+    Focus node: Irene_of_Greece_and_Denmark
     Path: hasFather
-    Value: Constantine_I_of_Greece
+    Value: King_Paul_of_Greece
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasFather a sh:PropertyShape ;
@@ -432,9 +432,9 @@ Violations:
 
   Violation [6]:
     Severity: Violation
-    Focus node: Katherine_of_Greece_and_Denmark
+    Focus node: Irene_of_Greece_and_Denmark
     Path: hasMother
-    Value: Sophia_of_Prussia
+    Value: Queen_Frederica
     Constraint: ClassConstraintComponent
     Source shape:
       :Person-hasMother a sh:PropertyShape ;
@@ -517,4 +517,4 @@ Please analyze each violation and provide the corresponding explanation and fix 
 
 ================================== Ai Message ==================================
 
-[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The node Constantine_I_of_Greece is assigned as the father of Katherine_of_Greece_and_Denmark, but it is missing the required class :Ancestor.",\n      "instruction": "AssignClass(node: \'Constantine_I_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Sophia_of_Prussia is assigned as the mother of Katherine_of_Greece_and_Denmark, but it is missing the required class :Ancestor.",\n      "instruction": "AssignClass(node: \'Sophia_of_Prussia\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Constantine_I_of_Greece is missing the required class :Ancestor, which is expected for values of the hasFather property.",\n      "instruction": "AssignClass(node: \'Constantine_I_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Sophia_of_Prussia is missing the required class :Ancestor, which is expected for values of the hasMother property.",\n      "instruction": "AssignClass(node: \'Sophia_of_Prussia\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Constantine_I_of_Greece is missing the required class :Ancestor, causing a validation error for the hasFather relationship.",\n      "instruction": "AssignClass(node: \'Constantine_I_of_Greece\', class: \':Ancestor\')"\n    },\n    {\n      "explanation": "The node Sophia_of_Prussia is missing the required class :Ancestor, causing a validation error for the hasMother relationship.",\n      "instruction": "AssignClass(node: \'Sophia_of_Prussia\', class: \':Ancestor\')"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHS68NqZ9b/852oBNjSbKAawd+lWXbLqDlFH5GNbPIVBX7EgMx3ZcQfY+0NPGO'}}]
+[{'type': 'text', 'text': '{\n  "translations": [\n    {\n      "explanation": "The node King_Paul_of_Greece, assigned as the father of Irene_of_Greece_and_Denmark, is missing the required class \':Ancestor\'.",\n      "instruction": "AssignClass(node=\'King_Paul_of_Greece\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Queen_Frederica, assigned as the mother of Irene_of_Greece_and_Denmark, is missing the required class \':Ancestor\'.",\n      "instruction": "AssignClass(node=\'Queen_Frederica\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node King_Paul_of_Greece, acting as the father of Irene_of_Greece_and_Denmark, requires the \':Ancestor\' class for validation compliance.",\n      "instruction": "AssignClass(node=\'King_Paul_of_Greece\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Queen_Frederica, acting as the mother of Irene_of_Greece_and_Denmark, requires the \':Ancestor\' class for validation compliance.",\n      "instruction": "AssignClass(node=\'Queen_Frederica\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node King_Paul_of_Greece, acting as the father of Irene_of_Greece_and_Denmark, requires the \':Ancestor\' class for validation compliance.",\n      "instruction": "AssignClass(node=\'King_Paul_of_Greece\', class=\':Ancestor\')"\n    },\n    {\n      "explanation": "The node Queen_Frederica, acting as the mother of Irene_of_Greece_and_Denmark, requires the \':Ancestor\' class for validation compliance.",\n      "instruction": "AssignClass(node=\'Queen_Frederica\', class=\':Ancestor\')"\n    }\n  ]\n}', 'extras': {'signature': 'EjQKMgEMOdbHz2+7sLUMKPNSc3NcqOThVhz7lH3Z44XxL3379s0rY8lNrhW8b6GQOQ985I6/'}}]

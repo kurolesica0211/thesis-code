@@ -2,31 +2,51 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_Irene_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :hasBirthYear 1904 ;
-    :hasDeathYear 1974 ;
-    :hasFather data:King_Constantine_I_of_Greece ;
-    :hasMarriageYear 1939 ;
-    :hasMother data:Princess_Sophie_of_Prussia ;
-    :hasRelation data:Prince_Aimone ;
-    :hasSex data:Female .
+data:Alexander_of_Hesse a :Man,
+        :Person .
 
-data:King_Constantine_I_of_Greece a :Man,
+data:Alice_of_Battenberg a :Person,
+        :Woman .
+
+data:Andrew_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Georg_Donatus a :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasFather data:Cecilie_of_Greece_and_Denmark ;
+    :hasMother data:Cecilie_of_Greece_and_Denmark .
 
-data:Prince_Aimone a :Man,
-        :Person ;
-    :hasBirthYear 1900 ;
-    :hasDeathYear 1948 ;
-    :hasSex data:Male .
+data:Johanna_of_Hesse a :Person,
+        :Woman .
 
-data:Princess_Sophie_of_Prussia a :Person,
+data:Ludwig_of_Hesse a :Man,
+        :Person .
+
+data:Margarita_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Philip_of_Greece_and_Denmark a :Man,
+        :Person .
+
+data:Sophie_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Theodora_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Cecilie_of_Greece_and_Denmark a :Person,
         :Woman ;
-    :hasSex data:Female .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+    :hasBirthYear 1911 ;
+    :hasBrother data:Philip_of_Greece_and_Denmark ;
+    :hasDaughter data:Johanna_of_Hesse ;
+    :hasDeathYear 1937 ;
+    :hasFather data:Andrew_of_Greece_and_Denmark ;
+    :hasMarriageYear 1931 ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasRelation data:Georg_Donatus ;
+    :hasSister data:Margarita_of_Greece_and_Denmark,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Theodora_of_Greece_and_Denmark ;
+    :hasSon data:Alexander_of_Hesse,
+        data:Ludwig_of_Hesse .
 

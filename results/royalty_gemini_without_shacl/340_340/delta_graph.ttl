@@ -2,44 +2,56 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Wilhelm_German_Crown_Prince a :Man ;
-    :hasBirthYear 1882 ;
-    :hasBrother data:Prince_Adalbert,
-        data:Prince_August_Wilhelm,
-        data:Prince_Eitel_Friedrich,
-        data:Prince_Joachim,
-        data:Prince_Oskar ;
-    :hasDeathYear 1951 ;
+data:Christian_Oscar a :Man ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise .
+
+data:Ernest_Augustus_Junior a :Man ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise .
+
+data:Frederica a :Woman ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise ;
+    :isMotherOf data:Felipe_VI .
+
+data:George_V a :Man .
+
+data:George_William a :Man ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise .
+
+data:Louise_of_Mecklenburg-Strelitz a :Woman .
+
+data:Nicholas_II a :Man .
+
+data:Paul_of_Greece a :Man ;
+    :isFatherOf data:Felipe_VI .
+
+data:Queen_Victoria a :Woman .
+
+data:Welf_Henry a :Man ;
+    :hasFather data:Ernest_Augustus_of_Hanover ;
+    :hasMother data:Victoria_Louise .
+
+data:Augusta_Victoria a :Woman ;
+    :isMotherOf data:Victoria_Louise .
+
+data:Joachim a :Man ;
+    :isBrotherOf data:Victoria_Louise .
+
+data:Wilhelm_II a :Man ;
+    :isFatherOf data:Victoria_Louise .
+
+data:Felipe_VI a :Man .
+
+data:Ernest_Augustus_of_Hanover a :Man .
+
+data:Victoria_Louise a :Woman ;
+    :hasBirthYear 1892 ;
+    :hasBrother data:Joachim ;
+    :hasDeathYear 1980 ;
     :hasFather data:Wilhelm_II ;
-    :hasMarriageYear 1905 ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
-    :hasRelation data:Cecilie_of_Mecklenburg-Schwerin ;
-    :hasSister data:Princess_Viktoria_Luise ;
-    :hasSon data:Prince_Wilhelm_of_Prussia .
-
-data:Anastasia_Mikhailovna a :Woman .
-
-data:Augusta_Victoria_of_Schleswig-Holstein a :Woman .
-
-data:Cecilie_of_Mecklenburg-Schwerin a :Woman ;
-    :hasFather data:Frederick_Francis_III ;
-    :hasMother data:Anastasia_Mikhailovna .
-
-data:Frederick_Francis_III a :Man .
-
-data:Prince_Adalbert a :Man .
-
-data:Prince_August_Wilhelm a :Man .
-
-data:Prince_Eitel_Friedrich a :Man .
-
-data:Prince_Joachim a :Man .
-
-data:Prince_Oskar a :Man .
-
-data:Prince_Wilhelm_of_Prussia a :Man .
-
-data:Princess_Viktoria_Luise a :Woman .
-
-data:Wilhelm_II a :Man .
+    :hasMarriageYear 1913 ;
+    :hasMother data:Augusta_Victoria .
 

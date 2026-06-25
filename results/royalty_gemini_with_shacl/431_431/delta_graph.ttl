@@ -2,81 +2,53 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Bernhard_Prince_of_Saxe-Meiningen a :Man,
+data:Jock_Stancer a :Man,
         :Person ;
-    :hasBirthYear "1901"^^xsd:nonNegativeInteger ;
-    :hasBrother data:Prince_Georg ;
-    :hasDeathYear "1984"^^xsd:nonNegativeInteger ;
-    :hasFather data:Prince_Frederick_Johann_of_Saxe-Meiningen ;
-    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-    :hasRelation data:Baroness_Vera_Sch%C3%A4ffer_von_Bernstein,
-        data:Margot_Gr%C3%B6ssler ;
-    :hasSon data:Konrad,
-        data:Prince_Frederick_Konrad .
+    :hasFather data:William_Wordie_Stancer ;
+    :hasMother data:Rose_Stancer .
 
-data:Baron_Friedrich_Fritz_Sch%C3%A4ffer_von_Bernstein a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear "1868"^^xsd:nonNegativeInteger ;
-    :hasDeathYear "1958"^^xsd:nonNegativeInteger .
-
-data:Baroness_Vera_Sch%C3%A4ffer_von_Bernstein a :Person,
-        :Woman ;
-    :hasBirthYear "1914"^^xsd:nonNegativeInteger ;
-    :hasDeathYear "1994"^^xsd:nonNegativeInteger ;
-    :hasFather data:Baron_Friedrich_Fritz_Sch%C3%A4ffer_von_Bernstein ;
-    :hasMarriageYear "1948"^^xsd:nonNegativeInteger ;
-    :hasMother data:Emma_Carola_Passavant .
-
-data:Count_Ernst_of_Lippe-Biesterfeld a :Ancestor,
+data:James_Wordie a :Ancestor,
         :Man,
         :Person .
 
-data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+data:Lady_Mary_Cecilia_Leveson-Gower a :Ancestor,
         :Person,
         :Woman ;
-    :hasFather data:Count_Ernst_of_Lippe-Biesterfeld .
+    :hasBirthYear 1917 ;
+    :hasDeathYear 2014 ;
+    :hasFather data:William_Leveson-Gower%2C_4th_Earl_Granville ;
+    :hasMother data:Rose_Leveson-Gower%2C_Countess_Granville .
 
-data:Emma_Carola_Passavant a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear "1884"^^xsd:nonNegativeInteger ;
-    :hasDeathYear "1971"^^xsd:nonNegativeInteger .
-
-data:Erika_W%C3%A4gner a :Ancestor,
+data:Rose_Leveson-Gower%2C_Countess_Granville a :Ancestor,
         :Person,
         :Woman .
 
-data:Friedrich_Gr%C3%B6ssler a :Ancestor,
-        :Man,
-        :Person .
-
-data:Georg_II_Duke_of_Saxe-Meiningen a :Ancestor,
-        :Man,
-        :Person .
-
-data:Konrad a :Man,
-        :Person .
-
-data:Margot_Gr%C3%B6ssler a :Person,
+data:Rose_Stancer a :Ancestor,
+        :Person,
         :Woman ;
-    :hasBirthYear "1911"^^xsd:nonNegativeInteger ;
-    :hasDeathYear "1998"^^xsd:nonNegativeInteger ;
-    :hasFather data:Friedrich_Gr%C3%B6ssler ;
-    :hasMother data:Erika_W%C3%A4gner .
+    :alsoKnownAs "Rosie Stancer"^^xsd:string ;
+    :hasBirthYear 1960 ;
+    :hasFather data:Sir_Samuel_Clayton ;
+    :hasMarriageYear 1993 ;
+    :hasMother data:Lady_Mary_Cecilia_Leveson-Gower ;
+    :hasRelation data:William_Wordie_Stancer ;
+    :knownAs "Rose Cecilia Stancer"^^xsd:string .
 
-data:Prince_Frederick_Alfred a :Man,
+data:Sir_Gilbert_Falkingham_Clayton a :Ancestor,
+        :Man,
         :Person .
 
-data:Prince_Frederick_Johann_of_Saxe-Meiningen a :Ancestor,
+data:Sir_Samuel_Clayton a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+    :hasFather data:Sir_Gilbert_Falkingham_Clayton .
 
-data:Prince_Frederick_Konrad a :Man,
+data:William_Leveson-Gower%2C_4th_Earl_Granville a :Ancestor,
+        :Man,
         :Person .
 
-data:Prince_Georg a :Man,
+data:William_Wordie_Stancer a :Ancestor,
+        :Man,
         :Person ;
-    :isParentOf data:Prince_Frederick_Alfred .
+    :hasFather data:James_Wordie .
 

@@ -85,54 +85,37 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-King Juan Carlos IQueen Sofía
-
-
-The Duchess of Soria and HernaniThe Duke of Soria and Hernani
-
-
-The Dowager Duchess of Calabria
-
-
-Infanta Cristina (Cristina Federica Victoria Antonia de la Santísima Trinidad de Borbón y de Grecia, born 13 June 1965) is the younger daughter of King Juan Carlos I and his wife, Queen Sofía.
-She is sixth in the line of succession to the Spanish throne, after her brother King Felipe VI's children, her sister Infanta Elena, Duchess of Lugo, and Elena's children Felipe and Victoria.
-On 26 September 1997, on the occasion of her marriage to handball player Iñaki Urdangarin, she was created Duchess of Palma de Mallorca by her father, King Juan Carlos.
-Cristina represented the Crown during the reign of her father.
+Prince Ernst August of Lippe (German: Prinz Ernst August Bernhard Alexander Eduard Friedrich Wilhelm zur Lippe; 1 April 1917 – 15 June 1990) was a claimant to the headship of the House of Lippe.
 Early life
 
-Cristina de Borbón was born on 13 June 1965 at Our Lady of Loreto Sanatorium, now known as ORPEA Madrid Loreto in Madrid and was baptized into the Church at the Palacio de La Zarzuela by the Archbishop of Madrid.
-Her godparents were Alfonso, Duke of Anjou and Cádiz (her first cousin once removed), and Infanta Maria Cristina (great-aunt).
-Marriage and children
+Prince Ernst August was born at Dresden, Kingdom of Saxony, the second child and first son of Prince Julius Ernst of Lippe  (1873–1952; son of Ernst, Count of Lippe-Biesterfeld and Countess Caroline von Wartensleben) and his wife, Duchess Marie of Mecklenburg-Strelitz (1878–1948; daughter of Adolphus Frederick V, Grand Duke of Mecklenburg-Strelitz and his wife Princess Elisabeth of Anhalt).
+Through his father he was first cousin of Prince Bernhard, consort to Queen Juliana of the Netherlands, and was a guest at their 1937 wedding.
+Marriage
 
-Cristina married team handball player Iñaki Urdangarin at Barcelona Cathedral on 4 October 1997.
-On this occasion, she was created Duchess of Palma de Mallorca for life.
-On 24 January 2022, Cristina and Urdangarin announced their separation.
-Activities and personal work
+Ernst August married on 3 March 1948 in Oberkassel, Bonn to Christa von Arnim (b. 2 July 1923-20 February 2020), elder daughter of Curt David von Arnim, and his wife, Stephanie von Stechow.
+They had four children:
 
-Cristina started to attend official events at a very young age.
-Since finishing her most basic education in 1983, Cristina, along with her sister Elena, supported their parents representing the Crown at official events such as the National Day, the wedding of Princess Astrid of Belgium, the re-burial of Queen Victoria Eugenia at El Escorial, and the state visit of Mexican president Miguel de la Madrid to Spain, among others.
-After the corruption scandal of her husband, the Duchess and her husband distanced themselves from the royal family, their last official event was on 12 October 2011.
-Regarding her personal work, Cristina has been working for La Caixa Foundation since October 1993.
-In April 2013, Infanta Cristina was formally named as a suspect in the case by the judge in charge.
-The infanta made her first appearance in the Majorca Court on 8 February 2014, where she denied any knowledge of her husband's dealings.
-Spanish judge Jose Castro formalised charges against Infanta Cristina on 25 June 2014.
-On 22 December 2014 the High Court of the Balearic Islands announced that Infanta Cristina, her husband, and 15 others would stand trial on tax fraud charges "as soon as next year".
-On 12 June 2015, King Felipe VI officially deprived his sister of her dukedom, privately announcing his intention beforehand.
-After this decision was made public, Cristina's lawyer, Miquel Roca, declared that the king's decision followed a formal request from the infanta, although the Royal Household denied it, saying that her renunciation to the title was after the king's private phone call to communicate her the decision.
-Her right of succession to the throne, and to the royal title of infanta were unaffected.
-Cristina's trial began on 11 January 2016, presided over by three judges in Palma de Mallorca.
-Titles, styles, honours and arms
 
-Titles and styles
+House of Lippe
 
-As a child of a Spanish monarch, Cristina is entitled to the designation and rank of infanta (princess) with the style of Royal Highness.
-On the occasion of her marriage in 1997, she was created Duchess of Palma de Mallorca.
+On 30 December 1949 his younger half-brother Prince Armin succeeded his father Leopold IV as head of the House of Lippe.
+On 22 March 1953, he renounced his position in favour of his older half brother Prince Leopold.
+Prince Leopold later in 1958 renounced the headship in favour of his older brother Hereditary Prince Ernst.
+Later that year the Hereditary Prince called a family council where it was agreed by the princes in attendance that the oldest prince living in Germany would be head of the house.
+So the position was taken by Prince Simon Casimir (1900–1980).
+Prince Ernst August changed his mind, believing all princes of the house, not just those living in Germany, should be considered.
+Ernst August died in 1990 and his son Prince Friedrich Wilhelm has continued his claim.
+Prince Armin, who said he did not think his decision in 1953 was irrevocable, also claimed to be head of the house until his death in 2015, with his son Stephan, Prince of Lippe continuing his claim.
+Prince Ernst August grew up and lived at Lippesches Palais in Oberkassel, Bonn, which had been home to the Lippe-Biesterfeld family for the past 209 years.
+In 1970 he also acquired Syburg castle at Bergen, Middle Franconia, which however he was forced to auction in 1977, followed by the sale of Lippe House in 1979.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -148,39 +131,9 @@ On the occasion of her marriage in 1997, she was created Duchess of Palma de Mal
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -195,6 +148,23 @@ On the occasion of her marriage in 1997, she was created Duchess of Palma de Mal
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -212,6 +182,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -279,29 +264,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -310,6 +287,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -322,6 +307,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -330,17 +317,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -368,6 +357,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -383,83 +456,400 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a2caff59-5f86-4c45-938f-2cffb140c579)
- Call ID: a2caff59-5f86-4c45-938f-2cffb140c579
+  AssignClass (2463c0f2-ba42-4fcc-8332-c39b730f0d47)
+ Call ID: 2463c0f2-ba42-4fcc-8332-c39b730f0d47
   Args:
+    source: ErnstAugustOfLippe
     type: :Man
-    source: Juan_Carlos_I
-  AssignClass (332db8c2-5190-4def-b6df-aae3f4072417)
- Call ID: 332db8c2-5190-4def-b6df-aae3f4072417
+  AssignClass (63fd29aa-4eba-4f5d-82ed-f4d32bac45cb)
+ Call ID: 63fd29aa-4eba-4f5d-82ed-f4d32bac45cb
   Args:
-    type: :Woman
-    source: Sofia
-  AssignClass (ac01afc5-4214-4c38-a95f-2d9a58f4c778)
- Call ID: ac01afc5-4214-4c38-a95f-2d9a58f4c778
+    source: ErnstAugustOfLippe
+    type: :Person
+  AddLiteral (75876f0c-f2eb-49d2-9514-910f51a3bde7)
+ Call ID: 75876f0c-f2eb-49d2-9514-910f51a3bde7
   Args:
-    type: :Woman
-    source: Cristina
-  AssignClass (0e6b10c1-f598-4d94-a792-e69b6ceab409)
- Call ID: 0e6b10c1-f598-4d94-a792-e69b6ceab409
+    literal_type: xsd:integer
+    source: ErnstAugustOfLippe
+    relation: :hasBirthYear
+    literal_value: 1917
+  AddLiteral (7a6ac68c-87eb-4eb6-9553-79397de93eb3)
+ Call ID: 7a6ac68c-87eb-4eb6-9553-79397de93eb3
   Args:
+    source: ErnstAugustOfLippe
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1990
+  AssignClass (a634678f-478b-41e2-bb23-cb51ff9c73db)
+ Call ID: a634678f-478b-41e2-bb23-cb51ff9c73db
+  Args:
+    source: JuliusErnstOfLippe
     type: :Man
-    source: Inaki_Urdangarin
-  AssignClass (77d38686-aa34-4541-95d0-e30530163c44)
- Call ID: 77d38686-aa34-4541-95d0-e30530163c44
+  AssignClass (a7516db1-baad-476b-98a8-4f214f25542c)
+ Call ID: a7516db1-baad-476b-98a8-4f214f25542c
   Args:
-    type: :Man
-    source: Felipe_VI
-  AssignClass (7bd3a5b7-ef29-4617-bf84-c9111be52510)
- Call ID: 7bd3a5b7-ef29-4617-bf84-c9111be52510
+    source: JuliusErnstOfLippe
+    type: :Ancestor
+  AddTriple (557d5130-f01a-41fc-b709-241629b51ae8)
+ Call ID: 557d5130-f01a-41fc-b709-241629b51ae8
   Args:
+    target: JuliusErnstOfLippe
+    source: ErnstAugustOfLippe
+    relation: :hasFather
+  AssignClass (ca6b10f5-bb26-40c0-a437-5b5a7d7b2add)
+ Call ID: ca6b10f5-bb26-40c0-a437-5b5a7d7b2add
+  Args:
+    source: MarieOfMecklenburgStrelitz
     type: :Woman
-    source: Elena
-  AddTriple (1665ca68-48f8-4deb-8616-bf3cc92fbe9d)
- Call ID: 1665ca68-48f8-4deb-8616-bf3cc92fbe9d
+  AssignClass (08f346fd-1fda-4c56-862f-89fd59447b8e)
+ Call ID: 08f346fd-1fda-4c56-862f-89fd59447b8e
+  Args:
+    source: MarieOfMecklenburgStrelitz
+    type: :Ancestor
+  AddTriple (cf035a9a-2f74-46b4-9a4f-3c0569304ec4)
+ Call ID: cf035a9a-2f74-46b4-9a4f-3c0569304ec4
+  Args:
+    relation: :hasMother
+    source: ErnstAugustOfLippe
+    target: MarieOfMecklenburgStrelitz
+  AssignClass (d2e3984f-e2af-4bbf-b2e3-fc1b4ba1e0d6)
+ Call ID: d2e3984f-e2af-4bbf-b2e3-fc1b4ba1e0d6
+  Args:
+    source: ErnstCountOfLippeBiesterfeld
+    type: :Man
+  AssignClass (b5521687-4f76-438b-8509-dee535f2f6e1)
+ Call ID: b5521687-4f76-438b-8509-dee535f2f6e1
+  Args:
+    source: ErnstCountOfLippeBiesterfeld
+    type: :Ancestor
+  AddTriple (e358fb27-6fc8-4e78-a986-a8451cf019da)
+ Call ID: e358fb27-6fc8-4e78-a986-a8451cf019da
+  Args:
+    target: ErnstCountOfLippeBiesterfeld
+    relation: :hasFather
+    source: JuliusErnstOfLippe
+  AssignClass (a3f5c5e7-9404-4423-80e4-f14f4af8ef4d)
+ Call ID: a3f5c5e7-9404-4423-80e4-f14f4af8ef4d
+  Args:
+    source: CarolineVonWartensleben
+    type: :Woman
+  AssignClass (fbfd0298-5256-4ecb-ac8b-8b9c2cad785c)
+ Call ID: fbfd0298-5256-4ecb-ac8b-8b9c2cad785c
+  Args:
+    source: CarolineVonWartensleben
+    type: :Ancestor
+  AddTriple (9c1cedea-2ea1-49c2-bf80-d10b89ef356b)
+ Call ID: 9c1cedea-2ea1-49c2-bf80-d10b89ef356b
+  Args:
+    target: CarolineVonWartensleben
+    source: JuliusErnstOfLippe
+    relation: :hasMother
+  AssignClass (d630c363-0a47-444b-a40d-174960bee920)
+ Call ID: d630c363-0a47-444b-a40d-174960bee920
+  Args:
+    source: AdolphusFrederickV
+    type: :Man
+  AssignClass (8beeb3fc-b7b7-41be-8c62-100547a46d72)
+ Call ID: 8beeb3fc-b7b7-41be-8c62-100547a46d72
+  Args:
+    source: AdolphusFrederickV
+    type: :Ancestor
+  AddTriple (922827e7-f71b-4dd9-8c0a-7b32b85bd0f6)
+ Call ID: 922827e7-f71b-4dd9-8c0a-7b32b85bd0f6
+  Args:
+    source: MarieOfMecklenburgStrelitz
+    relation: :hasFather
+    target: AdolphusFrederickV
+  AssignClass (ff30139d-c30b-45ce-98e8-6a9eebb5131f)
+ Call ID: ff30139d-c30b-45ce-98e8-6a9eebb5131f
+  Args:
+    source: ElisabethOfAnhalt
+    type: :Woman
+  AssignClass (92d295a5-571d-43b7-9b8e-db99060d0c7c)
+ Call ID: 92d295a5-571d-43b7-9b8e-db99060d0c7c
+  Args:
+    source: ElisabethOfAnhalt
+    type: :Ancestor
+  AddTriple (1c6e7867-4851-4081-b1bf-ad4918ee0f31)
+ Call ID: 1c6e7867-4851-4081-b1bf-ad4918ee0f31
+  Args:
+    target: ElisabethOfAnhalt
+    source: MarieOfMecklenburgStrelitz
+    relation: :hasMother
+  AssignClass (af4719b7-9efe-402a-ae64-3ac72f1b6634)
+ Call ID: af4719b7-9efe-402a-ae64-3ac72f1b6634
+  Args:
+    source: ChristaVonArnim
+    type: :Woman
+  AssignClass (762582f2-db27-4ac3-b27d-b52aa543a83f)
+ Call ID: 762582f2-db27-4ac3-b27d-b52aa543a83f
+  Args:
+    source: ChristaVonArnim
+    type: :Person
+  AddTriple (1f07b06b-1f75-437d-823a-5585adbaeedf)
+ Call ID: 1f07b06b-1f75-437d-823a-5585adbaeedf
+  Args:
+    relation: :hasRelation
+    source: ErnstAugustOfLippe
+    target: ChristaVonArnim
+  AddLiteral (ddb38568-387a-43fa-acb7-5b95fdbeb23b)
+ Call ID: ddb38568-387a-43fa-acb7-5b95fdbeb23b
+  Args:
+    literal_value: 1948
+    relation: :hasMarriageYear
+    source: ErnstAugustOfLippe
+    literal_type: xsd:integer
+  AssignClass (666dd71d-e1a3-4cbd-87a1-4056d83e31d3)
+ Call ID: 666dd71d-e1a3-4cbd-87a1-4056d83e31d3
+  Args:
+    source: CurtDavidVonArnim
+    type: :Man
+  AssignClass (fa619f52-dc1d-4b3a-b4fe-26d3a5e15890)
+ Call ID: fa619f52-dc1d-4b3a-b4fe-26d3a5e15890
+  Args:
+    source: CurtDavidVonArnim
+    type: :Ancestor
+  AddTriple (864be872-1e71-4fe3-800e-2f06ed2f0ee3)
+ Call ID: 864be872-1e71-4fe3-800e-2f06ed2f0ee3
   Args:
     relation: :hasFather
-    target: Juan_Carlos_I
-    source: Cristina
-  AddTriple (0ef0b3a9-648e-4dc2-843c-6a1298948b41)
- Call ID: 0ef0b3a9-648e-4dc2-843c-6a1298948b41
+    source: ChristaVonArnim
+    target: CurtDavidVonArnim
+  AssignClass (c75b94ae-4a89-40cc-9c21-bfed3d075924)
+ Call ID: c75b94ae-4a89-40cc-9c21-bfed3d075924
   Args:
-    target: Sofia
+    source: StephanieVonStechow
+    type: :Woman
+  AssignClass (3d4ab765-1f6e-4315-ba08-20975a7f4d5a)
+ Call ID: 3d4ab765-1f6e-4315-ba08-20975a7f4d5a
+  Args:
+    source: StephanieVonStechow
+    type: :Ancestor
+  AddTriple (6d1caea5-31f2-42d8-9b6d-d5e268d6a86f)
+ Call ID: 6d1caea5-31f2-42d8-9b6d-d5e268d6a86f
+  Args:
+    source: ChristaVonArnim
     relation: :hasMother
-    source: Cristina
-  AddTriple (624eb84b-7c69-4e22-acb4-6bdef93fa734)
- Call ID: 624eb84b-7c69-4e22-acb4-6bdef93fa734
+    target: StephanieVonStechow
+  AssignClass (f3028246-8a87-42dc-af9f-eace6d9d933f)
+ Call ID: f3028246-8a87-42dc-af9f-eace6d9d933f
   Args:
-    relation: :isBrotherOf
-    target: Cristina
-    source: Felipe_VI
-  AddTriple (688a8d15-4c7e-4755-980f-5e1107520627)
- Call ID: 688a8d15-4c7e-4755-980f-5e1107520627
+    source: ArminOfLippe
+    type: :Man
+  AssignClass (7ceb585f-66e6-4e4e-b5ef-fa924252f98a)
+ Call ID: 7ceb585f-66e6-4e4e-b5ef-fa924252f98a
   Args:
-    relation: :isSisterOf
-    target: Cristina
-    source: Elena
-  AddLiteral (233052f4-1fb8-463f-a118-aea1904fdba2)
- Call ID: 233052f4-1fb8-463f-a118-aea1904fdba2
+    source: ArminOfLippe
+    type: :Person
+  AddTriple (5fa245fa-a973-4775-99e1-c1b83544077c)
+ Call ID: 5fa245fa-a973-4775-99e1-c1b83544077c
   Args:
-    literal_value: 1965
-    literal_type: xsd:integer
-    source: Cristina
-    relation: :hasBirthYear
-  AddLiteral (ed514c66-09a1-4b94-86c6-54b9dc041f87)
- Call ID: ed514c66-09a1-4b94-86c6-54b9dc041f87
+    target: ArminOfLippe
+    source: ErnstAugustOfLippe
+    relation: :isSiblingOf
+  AssignClass (c1c39954-0920-43da-8b2f-f8686db8fc21)
+ Call ID: c1c39954-0920-43da-8b2f-f8686db8fc21
   Args:
-    literal_value: 1997
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: Cristina
-  AddTriple (e3a700dd-3d45-4a96-a9dd-dda8b7248c84)
- Call ID: e3a700dd-3d45-4a96-a9dd-dda8b7248c84
+    source: LeopoldIV
+    type: :Man
+  AssignClass (e1563819-7752-4e5d-9302-0d5d1de9306c)
+ Call ID: e1563819-7752-4e5d-9302-0d5d1de9306c
   Args:
-    source: Cristina
-    target: Inaki_Urdangarin
-    relation: :hasRelation
-  Finish (5ef85b62-ba2f-40d8-a7dc-de7ceab9b248)
- Call ID: 5ef85b62-ba2f-40d8-a7dc-de7ceab9b248
+    source: LeopoldIV
+    type: :Ancestor
+  AddTriple (d7e0d764-9af0-45c8-acc3-42a2d2a2776e)
+ Call ID: d7e0d764-9af0-45c8-acc3-42a2d2a2776e
   Args:
+    target: LeopoldIV
+    source: ArminOfLippe
+    relation: :hasFather
+  AssignClass (00c43ece-6301-4196-a4f6-64a6adc509c9)
+ Call ID: 00c43ece-6301-4196-a4f6-64a6adc509c9
+  Args:
+    source: LeopoldOfLippe
+    type: :Man
+  AssignClass (150635a8-a2f1-45d0-b73b-84877a569417)
+ Call ID: 150635a8-a2f1-45d0-b73b-84877a569417
+  Args:
+    source: LeopoldOfLippe
+    type: :Person
+  AddTriple (a4937e47-22c3-451a-b58e-670b98fa3816)
+ Call ID: a4937e47-22c3-451a-b58e-670b98fa3816
+  Args:
+    target: LeopoldOfLippe
+    source: ErnstAugustOfLippe
+    relation: :isSiblingOf
+  AssignClass (7a2cb4d1-e55d-4cb3-8ac4-816452200b52)
+ Call ID: 7a2cb4d1-e55d-4cb3-8ac4-816452200b52
+  Args:
+    source: FriedrichWilhelmOfLippe
+    type: :Man
+  AssignClass (9be33757-b3f7-4847-b570-56665e04c6d9)
+ Call ID: 9be33757-b3f7-4847-b570-56665e04c6d9
+  Args:
+    source: FriedrichWilhelmOfLippe
+    type: :Person
+  AddTriple (4cb0f24e-a0b9-42cf-b219-f9879833f62f)
+ Call ID: 4cb0f24e-a0b9-42cf-b219-f9879833f62f
+  Args:
+    target: ErnstAugustOfLippe
+    source: FriedrichWilhelmOfLippe
+    relation: :isSonOf
+  AssignClass (069878dc-e809-4a40-a0a0-6839c5d768bc)
+ Call ID: 069878dc-e809-4a40-a0a0-6839c5d768bc
+  Args:
+    source: StephanOfLippe
+    type: :Man
+  AssignClass (56cdf874-5729-4716-9144-745c99f38dbd)
+ Call ID: 56cdf874-5729-4716-9144-745c99f38dbd
+  Args:
+    source: StephanOfLippe
+    type: :Person
+  AddTriple (36935c78-2fc8-4896-a6cf-51c1bdfb9fc9)
+ Call ID: 36935c78-2fc8-4896-a6cf-51c1bdfb9fc9
+  Args:
+    relation: :isSonOf
+    source: StephanOfLippe
+    target: ArminOfLippe
+  Finish (44542fdc-65f3-4320-bf8a-3c855717dfdf)
+ Call ID: 44542fdc-65f3-4320-bf8a-3c855717dfdf
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -516,24 +906,67 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Elena a :Woman ;
-      :isSisterOf data:Cristina .
+  data:FriedrichWilhelmOfLippe a :Man,
+          :Person ;
+      :isSonOf data:ErnstAugustOfLippe .
 
-  data:Felipe_VI a :Man ;
-      :isBrotherOf data:Cristina .
+  data:StephanOfLippe a :Man,
+          :Person ;
+      :isSonOf data:ArminOfLippe .
 
-  data:Inaki_Urdangarin a :Man .
+  data:AdolphusFrederickV a :Ancestor,
+          :Man .
 
-  data:Juan_Carlos_I a :Man .
+  data:CarolineVonWartensleben a :Ancestor,
+          :Woman .
 
-  data:Sofia a :Woman .
+  data:ChristaVonArnim a :Person,
+          :Woman ;
+      :hasFather data:CurtDavidVonArnim ;
+      :hasMother data:StephanieVonStechow .
 
-  data:Cristina a :Woman ;
-      :hasBirthYear 1965 ;
-      :hasFather data:Juan_Carlos_I ;
-      :hasMarriageYear 1997 ;
-      :hasMother data:Sofia ;
-      :hasRelation data:Inaki_Urdangarin .
+  data:CurtDavidVonArnim a :Ancestor,
+          :Man .
+
+  data:ElisabethOfAnhalt a :Ancestor,
+          :Woman .
+
+  data:ErnstAugustOfLippe a :Man,
+          :Person ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1990 ;
+      :hasFather data:JuliusErnstOfLippe ;
+      :hasMarriageYear 1948 ;
+      :hasMother data:MarieOfMecklenburgStrelitz ;
+      :hasRelation data:ChristaVonArnim ;
+      :isSiblingOf data:ArminOfLippe,
+          data:LeopoldOfLippe .
+
+  data:ErnstCountOfLippeBiesterfeld a :Ancestor,
+          :Man .
+
+  data:JuliusErnstOfLippe a :Ancestor,
+          :Man ;
+      :hasFather data:ErnstCountOfLippeBiesterfeld ;
+      :hasMother data:CarolineVonWartensleben .
+
+  data:LeopoldIV a :Ancestor,
+          :Man .
+
+  data:LeopoldOfLippe a :Man,
+          :Person .
+
+  data:MarieOfMecklenburgStrelitz a :Ancestor,
+          :Woman ;
+      :hasFather data:AdolphusFrederickV ;
+      :hasMother data:ElisabethOfAnhalt .
+
+  data:StephanieVonStechow a :Ancestor,
+          :Woman .
+
+  data:ArminOfLippe a :Man,
+          :Person ;
+      :hasFather data:LeopoldIV .
 
 
 
@@ -545,8 +978,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (20d80351-1072-4ff0-a5c6-bbfa8977f6ff)
- Call ID: 20d80351-1072-4ff0-a5c6-bbfa8977f6ff
+  ValidateShacl (37612a66-98bf-4bda-a803-9c50c20e0946)
+ Call ID: 37612a66-98bf-4bda-a803-9c50c20e0946
   Args:
 
 ================================= Tool Message =================================
@@ -556,51 +989,51 @@ Total violations:6
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Juan_Carlos_I, identified as the father of Cristina, is missing the required class :Ancestor.
+      The node ArminOfLippe, which is the value of the :isSonOf property for StephanOfLippe, is missing the required class assignment :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juan_Carlos_I', class=':Ancestor')
+      Use AssignClass to set the type of :ArminOfLippe to :Ancestor.
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Sofia, identified as the mother of Cristina, is missing the required class :Ancestor.
+      The node ErnstAugustOfLippe, which is the value of the :isSonOf property for FriedrichWilhelmOfLippe, is missing the required class assignment :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sofia', class=':Ancestor')
+      Use AssignClass to set the type of :ErnstAugustOfLippe to :Ancestor.
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Juan_Carlos_I is currently not recognized as an :Ancestor in the context of the :hasFather relationship.
+      The node ArminOfLippe, which is the value of the :isSonOf property for StephanOfLippe, is missing the required class assignment :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juan_Carlos_I', class=':Ancestor')
+      Use AssignClass to set the type of :ArminOfLippe to :Ancestor.
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Sofia is currently not recognized as an :Ancestor in the context of the :hasMother relationship.
+      The node ErnstAugustOfLippe, which is the value of the :isSonOf property for FriedrichWilhelmOfLippe, is missing the required class assignment :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sofia', class=':Ancestor')
+      Use AssignClass to set the type of :ErnstAugustOfLippe to :Ancestor.
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Juan_Carlos_I requires the :Ancestor class definition to satisfy the SHACL constraint for :hasFather.
+      The node ArminOfLippe, which is the value of the :isSonOf property for StephanOfLippe, is missing the required class assignment :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Juan_Carlos_I', class=':Ancestor')
+      Use AssignClass to set the type of :ArminOfLippe to :Ancestor.
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Sofia requires the :Ancestor class definition to satisfy the SHACL constraint for :hasMother.
+      The node ErnstAugustOfLippe, which is the value of the :isSonOf property for FriedrichWilhelmOfLippe, is missing the required class assignment :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sofia', class=':Ancestor')
+      Use AssignClass to set the type of :ErnstAugustOfLippe to :Ancestor.
 
 
 
@@ -609,19 +1042,16 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (bd17125b-b006-4b0e-942f-0f4e2b8dc253)
- Call ID: bd17125b-b006-4b0e-942f-0f4e2b8dc253
+  AssignClass (9595eb26-0b90-4e7a-b89e-f55f3743f789)
+ Call ID: 9595eb26-0b90-4e7a-b89e-f55f3743f789
   Args:
     type: :Ancestor
-    source: Juan_Carlos_I
-  AssignClass (f9978974-da8b-407b-8747-2bfd6b918c84)
- Call ID: f9978974-da8b-407b-8747-2bfd6b918c84
+    source: ArminOfLippe
+  AssignClass (e1e604b4-fd07-4c09-91d8-285f42186dcd)
+ Call ID: e1e604b4-fd07-4c09-91d8-285f42186dcd
   Args:
     type: :Ancestor
-    source: Sofia
-  ValidateShacl (452c3f80-92b1-49c7-a043-0be1979cfa67)
- Call ID: 452c3f80-92b1-49c7-a043-0be1979cfa67
-  Args:
+    source: ErnstAugustOfLippe
 
 ================================= Tool Message =================================
 
@@ -634,28 +1064,79 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Elena a :Woman ;
-      :isSisterOf data:Cristina .
+  data:FriedrichWilhelmOfLippe a :Man,
+          :Person ;
+      :isSonOf data:ErnstAugustOfLippe .
 
-  data:Felipe_VI a :Man ;
-      :isBrotherOf data:Cristina .
+  data:StephanOfLippe a :Man,
+          :Person ;
+      :isSonOf data:ArminOfLippe .
 
-  data:Inaki_Urdangarin a :Man .
-
-  data:Juan_Carlos_I a :Ancestor,
+  data:AdolphusFrederickV a :Ancestor,
           :Man .
 
-  data:Sofia a :Ancestor,
+  data:CarolineVonWartensleben a :Ancestor,
           :Woman .
 
-  data:Cristina a :Woman ;
-      :hasBirthYear 1965 ;
-      :hasFather data:Juan_Carlos_I ;
-      :hasMarriageYear 1997 ;
-      :hasMother data:Sofia ;
-      :hasRelation data:Inaki_Urdangarin .
+  data:ChristaVonArnim a :Person,
+          :Woman ;
+      :hasFather data:CurtDavidVonArnim ;
+      :hasMother data:StephanieVonStechow .
+
+  data:CurtDavidVonArnim a :Ancestor,
+          :Man .
+
+  data:ElisabethOfAnhalt a :Ancestor,
+          :Woman .
+
+  data:ErnstAugustOfLippe a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1990 ;
+      :hasFather data:JuliusErnstOfLippe ;
+      :hasMarriageYear 1948 ;
+      :hasMother data:MarieOfMecklenburgStrelitz ;
+      :hasRelation data:ChristaVonArnim ;
+      :isSiblingOf data:ArminOfLippe,
+          data:LeopoldOfLippe .
+
+  data:ErnstCountOfLippeBiesterfeld a :Ancestor,
+          :Man .
+
+  data:JuliusErnstOfLippe a :Ancestor,
+          :Man ;
+      :hasFather data:ErnstCountOfLippeBiesterfeld ;
+      :hasMother data:CarolineVonWartensleben .
+
+  data:LeopoldIV a :Ancestor,
+          :Man .
+
+  data:LeopoldOfLippe a :Man,
+          :Person .
+
+  data:MarieOfMecklenburgStrelitz a :Ancestor,
+          :Woman ;
+      :hasFather data:AdolphusFrederickV ;
+      :hasMother data:ElisabethOfAnhalt .
+
+  data:StephanieVonStechow a :Ancestor,
+          :Woman .
+
+  data:ArminOfLippe a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:LeopoldIV .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (e5c46735-1d71-42e7-9f28-2b80f85a4837)
+ Call ID: e5c46735-1d71-42e7-9f28-2b80f85a4837
+  Args:
 
 ================================= Tool Message =================================
 
@@ -665,6 +1146,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (6023d1cd-3906-4dbe-ab47-9ef44d510620)
- Call ID: 6023d1cd-3906-4dbe-ab47-9ef44d510620
+  Finish (bae7a584-67bc-4cfe-acca-216affe5d750)
+ Call ID: bae7a584-67bc-4cfe-acca-216affe5d750
   Args:

@@ -1,0 +1,189 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:IgnacioDukeOfSegorbe a :Man,
+        :Person ;
+    :hasBrother data:IgnacioDukeOfSegorbe ;
+    :hasRelation data:IgnacioDukeOfSegorbe ;
+    :isBloodrelationOf data:IgnacioDukeOfSegorbe ;
+    :isBrotherOf data:IgnacioDukeOfSegorbe ;
+    :isSiblingOf data:IgnacioDukeOfSegorbe .
+
+data:KatherineClairyBatis a :Person,
+        :Woman ;
+    :hasRelation data:KatherineClairyBatis ;
+    :hasSister data:KatherineClairyBatis ;
+    :isBloodrelationOf data:KatherineClairyBatis ;
+    :isSiblingOf data:KatherineClairyBatis ;
+    :isSisterOf data:KatherineClairyBatis .
+
+data:PeterII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PeterII ;
+    :hasRelation data:PeterII ;
+    :isBloodrelationOf data:PeterII ;
+    :isBrotherOf data:PeterII ;
+    :isSiblingOf data:PeterII .
+
+data:PrinceAndrew a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceAndrew ;
+    :hasRelation data:PrinceAndrew ;
+    :isBloodrelationOf data:PrinceAndrew ;
+    :isBrotherOf data:PrinceAndrew ;
+    :isSiblingOf data:PrinceAndrew .
+
+data:QueenAlexandra a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:QueenAlexandra ;
+    :hasSister data:QueenAlexandra ;
+    :isBloodrelationOf data:QueenAlexandra ;
+    :isSiblingOf data:QueenAlexandra ;
+    :isSisterOf data:QueenAlexandra .
+
+data:QueenMaria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:QueenMaria ;
+    :hasSister data:QueenMaria ;
+    :isBloodrelationOf data:QueenMaria ;
+    :isSiblingOf data:QueenMaria ;
+    :isSisterOf data:QueenMaria .
+
+data:AlexanderSr a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlexanderSr ;
+    :hasChild data:AlexanderKarageorgevitch ;
+    :hasRelation data:AlexanderKarageorgevitch,
+        data:AlexanderSr,
+        data:AnaLunaMedina,
+        data:MariaDaGloria,
+        data:SolMariaMedina ;
+    :hasSon data:AlexanderKarageorgevitch ;
+    :isAncestorOf data:AlexanderKarageorgevitch ;
+    :isBloodrelationOf data:AlexanderSr ;
+    :isBrotherOf data:AlexanderSr ;
+    :isFatherOf data:AlexanderKarageorgevitch ;
+    :isParentOf data:AlexanderKarageorgevitch ;
+    :isSiblingOf data:AlexanderSr ;
+    :isUncleOf data:AlexanderKarageorgevitch .
+
+data:AnaLunaMedina a :Person,
+        :Woman ;
+    :hasAncestor data:MariaDaGloria ;
+    :hasBrother data:AlexanderKarageorgevitch ;
+    :hasMother data:MariaDaGloria ;
+    :hasParent data:MariaDaGloria ;
+    :hasRelation data:AlexanderKarageorgevitch,
+        data:AlexanderSr,
+        data:AnaLunaMedina,
+        data:MariaDaGloria,
+        data:SolMariaMedina ;
+    :hasSister data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isBloodrelationOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isChildOf data:MariaDaGloria ;
+    :isDaughterOf data:MariaDaGloria ;
+    :isSiblingOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isSisterOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina .
+
+data:SolMariaMedina a :Person,
+        :Woman ;
+    :hasAncestor data:MariaDaGloria ;
+    :hasBrother data:AlexanderKarageorgevitch ;
+    :hasMother data:MariaDaGloria ;
+    :hasParent data:MariaDaGloria ;
+    :hasRelation data:AlexanderKarageorgevitch,
+        data:AlexanderSr,
+        data:AnaLunaMedina,
+        data:MariaDaGloria,
+        data:SolMariaMedina ;
+    :hasSister data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isBloodrelationOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isChildOf data:MariaDaGloria ;
+    :isDaughterOf data:MariaDaGloria ;
+    :isSiblingOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isSisterOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina .
+
+data:MariaDaGloria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :hasDaughter data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :hasRelation data:AlexanderKarageorgevitch,
+        data:AlexanderSr,
+        data:AnaLunaMedina,
+        data:MariaDaGloria,
+        data:SolMariaMedina ;
+    :hasSister data:MariaDaGloria ;
+    :hasSon data:AlexanderKarageorgevitch ;
+    :isAncestorOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isAuntOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isBloodrelationOf data:MariaDaGloria ;
+    :isMotherOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isParentOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isSiblingOf data:MariaDaGloria ;
+    :isSisterOf data:MariaDaGloria .
+
+data:AlexanderKarageorgevitch a :Man,
+        :Person ;
+    :hasAncestor data:AlexanderSr,
+        data:MariaDaGloria ;
+    :hasBirthYear 1982 ;
+    :hasBrother data:AlexanderKarageorgevitch ;
+    :hasFather data:AlexanderSr ;
+    :hasMother data:MariaDaGloria ;
+    :hasParent data:AlexanderSr,
+        data:MariaDaGloria ;
+    :hasRelation data:AlexanderKarageorgevitch,
+        data:AlexanderSr,
+        data:AnaLunaMedina,
+        data:MariaDaGloria,
+        data:SolMariaMedina ;
+    :hasSister data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isBloodrelationOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isBrotherOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isChildOf data:AlexanderSr,
+        data:MariaDaGloria ;
+    :isSiblingOf data:AlexanderKarageorgevitch,
+        data:AnaLunaMedina,
+        data:SolMariaMedina ;
+    :isSonOf data:AlexanderSr,
+        data:MariaDaGloria ;
+    :knownAs "Prince Aleksandar III Karađorđević"^^xsd:string,
+        "Prince Alexander of Serbia and Yugoslavia"^^xsd:string .
+

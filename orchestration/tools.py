@@ -53,62 +53,62 @@ def violation_translation(state: TaskState, context: TaskContext):
             "shacl_tool_call_id": state["shacl_tool_call_id"]
         })
         
-        trans_system_path = context["config"]["prompts"]["translation_system"]
-        trans_system_prompt = get_prompt(trans_system_path)
-        trans_system_msg = SystemMessage(content=trans_system_prompt)
-        
-        trans_user_path = context["config"]["prompts"]["translation_user"]
-        trans_user_prompt = format_prompt(
-            trans_user_path,
-            violations=format_violations(
-                state["violation_report"],
-                state["data_graph"],
-                context["ontology_graph"],
-                context["shacl_graph"]
-            )
+    trans_system_path = context["config"]["prompts"]["translation_system"]
+    trans_system_prompt = get_prompt(trans_system_path)
+    trans_system_msg = SystemMessage(content=trans_system_prompt)
+    
+    trans_user_path = context["config"]["prompts"]["translation_user"]
+    trans_user_prompt = format_prompt(
+        trans_user_path,
+        violations=format_violations(
+            state["violation_report"],
+            state["data_graph"],
+            context["ontology_graph"],
+            context["shacl_graph"]
         )
-        trans_user_msg = HumanMessage(content=trans_user_prompt)
-        
-        response_model = create_translation_response_model(len(state["violation_report"].violations))
-        
-        llm = context["translation_llm"].with_structured_output(response_model, include_raw=True)
-        response = llm.invoke([trans_system_msg, trans_user_msg])
-        ai_msg = response["raw"]
-        parsed = response["parsed"]
-        translation_convo = [trans_system_msg, trans_user_msg, ai_msg]
-        final_translation_convo = "\n\n".join([msg.pretty_repr() for msg in translation_convo])
+    )
+    trans_user_msg = HumanMessage(content=trans_user_prompt)
+    
+    response_model = create_translation_response_model(len(state["violation_report"].violations))
+    
+    llm = context["translation_llm"].with_structured_output(response_model, include_raw=True)
+    response = llm.invoke([trans_system_msg, trans_user_msg])
+    ai_msg = response["raw"]
+    parsed = response["parsed"]
+    translation_convo = [trans_system_msg, trans_user_msg, ai_msg]
+    final_translation_convo = "\n\n".join([msg.pretty_repr() for msg in translation_convo])
 
-        convos_dir = f"{context['artifacts_dir']}/convos"
-        with open(f"{convos_dir}/{state['iterations']}_iter_translation_convo.md", "w", encoding="utf-8") as f:
-            f.write(final_translation_convo)
+    convos_dir = f"{context['artifacts_dir']}/convos"
+    with open(f"{convos_dir}/{state['iterations']}_iter_translation_convo.md", "w", encoding="utf-8") as f:
+        f.write(final_translation_convo)
 
-        append_usage_metadata(
-            context["artifacts_dir"],
-            "translation",
-            {
-                "iteration": state["iterations"],
-                "shacl_tool_call_id": state["shacl_tool_call_id"],
-                "metadata": ai_msg.usage_metadata,
-            },
-        )
+    append_usage_metadata(
+        context["artifacts_dir"],
+        "translation",
+        {
+            "iteration": state["iterations"],
+            "shacl_tool_call_id": state["shacl_tool_call_id"],
+            "metadata": ai_msg.usage_metadata,
+        },
+    )
+    
+    report = state["violation_report"].model_copy()
+    for i, v in enumerate(report.violations):
+        v.llm_explanation = parsed.translations[i].explanation
+        v.llm_instruction = parsed.translations[i].instruction
         
-        report = state["violation_report"].model_copy()
-        for i, v in enumerate(report.violations):
-            v.llm_explanation = parsed.translations[i].explanation
-            v.llm_instruction = parsed.translations[i].instruction
-            
-        append_trace(context["tracing_path"], "run.entry.agent.violation_translation.finish", payload={
-            "entry_id": context["entry_id"],
-            "shacl_tool_call_id": state["shacl_tool_call_id"]
-        })
-        
-        state["violation_report"] = report
-        
-        return (
-            format_violations(report, state["data_graph"], context["ontology_graph"], context["shacl_graph"]),
-            report,
-            state["shacl_tool_call_id"]
-        )
+    append_trace(context["tracing_path"], "run.entry.agent.violation_translation.finish", payload={
+        "entry_id": context["entry_id"],
+        "shacl_tool_call_id": state["shacl_tool_call_id"]
+    })
+    
+    state["violation_report"] = report
+    
+    return (
+        format_violations(report, state["data_graph"], context["ontology_graph"], context["shacl_graph"]),
+        report,
+        state["shacl_tool_call_id"]
+    )
         
 
 def check_entities_typed(state: TaskState, context: TaskContext):
@@ -122,27 +122,27 @@ def check_entities_typed(state: TaskState, context: TaskContext):
             "entry_id": context["entry_id"]
         })
         
-        not_typed = check_ents_typed(state["data_graph"])
-        if not not_typed:
-            append_trace(context["tracing_path"], "run.event.agent.check_ents_typed.finish", payload={
-                "entry_id": context["entry_id"],
-                "result": "all_typed"
-            })
-            
-            return END
-        else:
-            not_typed_str = [strip_uri(strip_ns(str(n))) for n in not_typed]
-            
-            append_trace(context["tracing_path"], "run.event.agent.check_ents_typed.finish", payload={
-                "entry_id": context["entry_id"],
-                "result": "not_all_typed",
-                "not_typed_nodes": not_typed_str
-            })
-            
-            return (
-                format_prompt(context["config"]["prompts"]["not_typed"], nodes=not_typed_str),
-                state["finish_tool_call_id"]
-            )
+    not_typed = check_ents_typed(state["data_graph"])
+    if not not_typed:
+        append_trace(context["tracing_path"], "run.event.agent.check_ents_typed.finish", payload={
+            "entry_id": context["entry_id"],
+            "result": "all_typed"
+        })
+        
+        return END
+    else:
+        not_typed_str = [strip_uri(strip_ns(str(n))) for n in not_typed]
+        
+        append_trace(context["tracing_path"], "run.event.agent.check_ents_typed.finish", payload={
+            "entry_id": context["entry_id"],
+            "result": "not_all_typed",
+            "not_typed_nodes": not_typed_str
+        })
+        
+        return (
+            format_prompt(context["config"]["prompts"]["not_typed"], nodes=not_typed_str),
+            state["finish_tool_call_id"]
+        )
             
 
 def check_shacl_used(state: TaskState, context: TaskContext):

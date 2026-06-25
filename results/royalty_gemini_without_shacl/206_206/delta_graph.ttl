@@ -2,51 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Marie_Louise_of_Hanover_and_Cumberland a :Person,
+data:Ashley_Harcourt a :Person,
         :Woman ;
-    :hasAncestor data:Charlotte_of_Mecklenburg_Strelitz,
-        data:George_III_of_the_United_Kingdom ;
-    :hasBirthYear 1879 ;
-    :hasDeathYear 1948 ;
-    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-    :hasMarriageYear 1900 ;
-    :hasMother data:Princess_Thyra_of_Denmark ;
-    :hasRelation data:Maximilian_of_Baden .
+    :hasFather data:Howard_Oxenberg .
 
-data:Charlotte_of_Mecklenburg_Strelitz a :Person,
-        :Woman .
+data:Catherine_Oxenberg a :Person,
+        :Woman ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia .
 
-data:Christian_IX_of_Denmark a :Man,
-        :Person .
+data:Christina_Oxenberg a :Person,
+        :Woman ;
+    :hasBirthYear 1962 ;
+    :hasFather data:Howard_Oxenberg ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia .
 
-data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,
-        :Person .
-
-data:George_III_of_the_United_Kingdom a :Man,
-        :Person .
-
-data:Louise_of_Hesse_Kassel a :Person,
-        :Woman .
-
-data:Maria_Maximilianovna_of_Leuchtenberg a :Person,
-        :Woman .
-
-data:Maximilian_of_Baden a :Man,
+data:Neil_Balfour a :Man,
         :Person ;
-    :hasBirthYear 1867 ;
-    :hasDeathYear 1929 ;
-    :hasFather data:Wilhelm_of_Baden ;
-    :hasMother data:Maria_Maximilianovna_of_Leuchtenberg ;
-    :hasRelation data:Napoleon_III_of_France .
+    :hasBirthYear 1970 ;
+    :hasMother data:Princess_Elizabeth_of_Yugoslavia .
 
-data:Napoleon_III_of_France a :Man,
-        :Person .
+data:Robert_Oxenberg a :Man,
+        :Person ;
+    :hasFather data:Howard_Oxenberg .
 
-data:Princess_Thyra_of_Denmark a :Person,
+data:Starr_Oxenberg a :Person,
         :Woman ;
-    :hasFather data:Christian_IX_of_Denmark ;
-    :hasMother data:Louise_of_Hesse_Kassel .
+    :hasFather data:Howard_Oxenberg .
 
-data:Wilhelm_of_Baden a :Man,
+data:Prince_Paul_of_Yugoslavia a :Man,
         :Person .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Person,
+        :Woman ;
+    :hasBirthYear 1936 ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Howard_Oxenberg a :Man,
+        :Person ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 2010 .
 

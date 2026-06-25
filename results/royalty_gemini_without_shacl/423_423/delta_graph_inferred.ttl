@@ -1,0 +1,224 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Kirby_William_Patterson a :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasBrother data:Kirby_William_Patterson ;
+    :hasDeathYear 1984 ;
+    :hasRelation data:Adalbert_of_Prussia,
+        data:Adelheid_of_Saxe-Meiningen,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Kirby_William_Patterson,
+        data:Marie_Antoinette_of_Hoyos-Stichsenstein,
+        data:Viktoria_Marina,
+        data:Wilhelm_II,
+        data:Wilhelm_Victor_of_Prussia,
+        data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :isBloodrelationOf data:Kirby_William_Patterson ;
+    :isBrotherOf data:Kirby_William_Patterson ;
+    :isSiblingOf data:Kirby_William_Patterson .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Wilhelm_II ;
+    :hasRelation data:Adalbert_of_Prussia,
+        data:Adelheid_of_Saxe-Meiningen,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Kirby_William_Patterson,
+        data:Marie_Antoinette_of_Hoyos-Stichsenstein,
+        data:Viktoria_Marina,
+        data:Wilhelm_II,
+        data:Wilhelm_Victor_of_Prussia,
+        data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :isAncestorOf data:Wilhelm_Victor_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isSiblingOf data:Wilhelm_II .
+
+data:Viktoria_Marina a :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasBrother data:Wilhelm_Victor_of_Prussia ;
+    :hasDeathYear 1981 ;
+    :hasRelation data:Adalbert_of_Prussia,
+        data:Adelheid_of_Saxe-Meiningen,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Kirby_William_Patterson,
+        data:Marie_Antoinette_of_Hoyos-Stichsenstein,
+        data:Viktoria_Marina,
+        data:Wilhelm_II,
+        data:Wilhelm_Victor_of_Prussia,
+        data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :hasSister data:Viktoria_Marina ;
+    :isBloodrelationOf data:Viktoria_Marina,
+        data:Wilhelm_Victor_of_Prussia ;
+    :isSiblingOf data:Viktoria_Marina,
+        data:Wilhelm_Victor_of_Prussia ;
+    :isSisterOf data:Viktoria_Marina,
+        data:Wilhelm_Victor_of_Prussia .
+
+data:Adalbert_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1884 ;
+    :hasBrother data:Adalbert_of_Prussia ;
+    :hasChild data:Wilhelm_Victor_of_Prussia ;
+    :hasDeathYear 1948 ;
+    :hasRelation data:Adalbert_of_Prussia,
+        data:Adelheid_of_Saxe-Meiningen,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Kirby_William_Patterson,
+        data:Marie_Antoinette_of_Hoyos-Stichsenstein,
+        data:Viktoria_Marina,
+        data:Wilhelm_II,
+        data:Wilhelm_Victor_of_Prussia,
+        data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :hasSon data:Wilhelm_Victor_of_Prussia ;
+    :isAncestorOf data:Wilhelm_Victor_of_Prussia ;
+    :isBloodrelationOf data:Adalbert_of_Prussia ;
+    :isBrotherOf data:Adalbert_of_Prussia ;
+    :isFatherOf data:Wilhelm_Victor_of_Prussia ;
+    :isParentOf data:Wilhelm_Victor_of_Prussia ;
+    :isSiblingOf data:Adalbert_of_Prussia ;
+    :isUncleOf data:Wilhelm_Victor_of_Prussia .
+
+data:Adelheid_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1891 ;
+    :hasChild data:Wilhelm_Victor_of_Prussia ;
+    :hasDeathYear 1971 ;
+    :hasRelation data:Adalbert_of_Prussia,
+        data:Adelheid_of_Saxe-Meiningen,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Kirby_William_Patterson,
+        data:Marie_Antoinette_of_Hoyos-Stichsenstein,
+        data:Viktoria_Marina,
+        data:Wilhelm_II,
+        data:Wilhelm_Victor_of_Prussia,
+        data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :hasSister data:Adelheid_of_Saxe-Meiningen ;
+    :hasSon data:Wilhelm_Victor_of_Prussia ;
+    :isAncestorOf data:Wilhelm_Victor_of_Prussia ;
+    :isAuntOf data:Wilhelm_Victor_of_Prussia ;
+    :isBloodrelationOf data:Adelheid_of_Saxe-Meiningen ;
+    :isMotherOf data:Wilhelm_Victor_of_Prussia ;
+    :isParentOf data:Wilhelm_Victor_of_Prussia ;
+    :isSiblingOf data:Adelheid_of_Saxe-Meiningen ;
+    :isSisterOf data:Adelheid_of_Saxe-Meiningen .
+
+data:Friedrich_Count_of_Hoyos-Stichsenstein a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1876 ;
+    :hasBrother data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :hasChild data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :hasDaughter data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :hasDeathYear 1951 ;
+    :hasRelation data:Adalbert_of_Prussia,
+        data:Adelheid_of_Saxe-Meiningen,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Kirby_William_Patterson,
+        data:Marie_Antoinette_of_Hoyos-Stichsenstein,
+        data:Viktoria_Marina,
+        data:Wilhelm_II,
+        data:Wilhelm_Victor_of_Prussia,
+        data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :isAncestorOf data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :isBloodrelationOf data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :isBrotherOf data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :isFatherOf data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :isParentOf data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :isSiblingOf data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :isUncleOf data:Marie_Antoinette_of_Hoyos-Stichsenstein .
+
+data:Wilhelmine_von_Wuthenau-Hohenthurm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1895 ;
+    :hasChild data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :hasDaughter data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :hasDeathYear 1983 ;
+    :hasRelation data:Adalbert_of_Prussia,
+        data:Adelheid_of_Saxe-Meiningen,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Kirby_William_Patterson,
+        data:Marie_Antoinette_of_Hoyos-Stichsenstein,
+        data:Viktoria_Marina,
+        data:Wilhelm_II,
+        data:Wilhelm_Victor_of_Prussia,
+        data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :hasSister data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :isAncestorOf data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :isAuntOf data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :isBloodrelationOf data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :isMotherOf data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :isParentOf data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :isSiblingOf data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :isSisterOf data:Wilhelmine_von_Wuthenau-Hohenthurm .
+
+data:Marie_Antoinette_of_Hoyos-Stichsenstein a :Person,
+        :Woman ;
+    :hasAncestor data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :hasMother data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :hasParent data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :hasRelation data:Adalbert_of_Prussia,
+        data:Adelheid_of_Saxe-Meiningen,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Kirby_William_Patterson,
+        data:Marie_Antoinette_of_Hoyos-Stichsenstein,
+        data:Viktoria_Marina,
+        data:Wilhelm_II,
+        data:Wilhelm_Victor_of_Prussia,
+        data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :hasSister data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :isBloodrelationOf data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :isChildOf data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :isDaughterOf data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :isSiblingOf data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :isSisterOf data:Marie_Antoinette_of_Hoyos-Stichsenstein .
+
+data:Wilhelm_Victor_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Adalbert_of_Prussia,
+        data:Adelheid_of_Saxe-Meiningen,
+        data:Wilhelm_II ;
+    :hasBirthYear 1919 ;
+    :hasBrother data:Wilhelm_Victor_of_Prussia ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Adalbert_of_Prussia ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:Adelheid_of_Saxe-Meiningen ;
+    :hasParent data:Adalbert_of_Prussia,
+        data:Adelheid_of_Saxe-Meiningen ;
+    :hasRelation data:Adalbert_of_Prussia,
+        data:Adelheid_of_Saxe-Meiningen,
+        data:Friedrich_Count_of_Hoyos-Stichsenstein,
+        data:Kirby_William_Patterson,
+        data:Marie_Antoinette_of_Hoyos-Stichsenstein,
+        data:Viktoria_Marina,
+        data:Wilhelm_II,
+        data:Wilhelm_Victor_of_Prussia,
+        data:Wilhelmine_von_Wuthenau-Hohenthurm ;
+    :hasSister data:Viktoria_Marina ;
+    :isBloodrelationOf data:Viktoria_Marina,
+        data:Wilhelm_Victor_of_Prussia ;
+    :isBrotherOf data:Viktoria_Marina,
+        data:Wilhelm_Victor_of_Prussia ;
+    :isChildOf data:Adalbert_of_Prussia,
+        data:Adelheid_of_Saxe-Meiningen ;
+    :isSiblingOf data:Viktoria_Marina,
+        data:Wilhelm_Victor_of_Prussia ;
+    :isSonOf data:Adalbert_of_Prussia,
+        data:Adelheid_of_Saxe-Meiningen .
+

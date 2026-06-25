@@ -1,0 +1,103 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Augusta_Victoria a :Person,
+        :Woman ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Augusta_Victoria,
+        data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasSister data:Augusta_Victoria ;
+    :isBloodrelationOf data:Augusta_Victoria ;
+    :isSiblingOf data:Augusta_Victoria ;
+    :isSisterOf data:Augusta_Victoria .
+
+data:Lu%C3%ADs_Filipe a :Man,
+        :Person ;
+    :hasBrother data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Augusta_Victoria,
+        data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isBrotherOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isSiblingOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II .
+
+data:Am%C3%A9lie_of_Orl%C3%A9ans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Manuel_II ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Augusta_Victoria,
+        data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :hasSon data:Manuel_II ;
+    :isAncestorOf data:Manuel_II ;
+    :isAuntOf data:Manuel_II ;
+    :isBloodrelationOf data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isMotherOf data:Manuel_II ;
+    :isParentOf data:Manuel_II ;
+    :isSiblingOf data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :isSisterOf data:Am%C3%A9lie_of_Orl%C3%A9ans .
+
+data:Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Carlos_I ;
+    :hasChild data:Manuel_II ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Augusta_Victoria,
+        data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasSon data:Manuel_II ;
+    :isAncestorOf data:Manuel_II ;
+    :isBloodrelationOf data:Carlos_I ;
+    :isBrotherOf data:Carlos_I ;
+    :isFatherOf data:Manuel_II ;
+    :isParentOf data:Manuel_II ;
+    :isSiblingOf data:Carlos_I ;
+    :isUncleOf data:Manuel_II .
+
+data:Manuel_II a :Man,
+        :Person ;
+    :alsoKnownAs "The Patriot"^^xsd:string,
+        "The Unfortunate"^^xsd:string,
+        "o Desaventurado"^^xsd:string,
+        "o Patriota"^^xsd:string ;
+    :hasAncestor data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I ;
+    :hasBirthYear 1889 ;
+    :hasBrother data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :hasDeathYear 1932 ;
+    :hasFather data:Carlos_I ;
+    :hasMarriageYear 1913 ;
+    :hasMother data:Am%C3%A9lie_of_Orl%C3%A9ans ;
+    :hasParent data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I ;
+    :hasRelation data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Augusta_Victoria,
+        data:Carlos_I,
+        data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isBloodrelationOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isBrotherOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isChildOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I ;
+    :isSiblingOf data:Lu%C3%ADs_Filipe,
+        data:Manuel_II ;
+    :isSonOf data:Am%C3%A9lie_of_Orl%C3%A9ans,
+        data:Carlos_I .
+

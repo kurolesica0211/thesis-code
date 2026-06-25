@@ -1,0 +1,115 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Michael_of_Greece_and_Denmark a :Ancestor,
+        :Man ;
+    :hasBrother data:Michael_of_Greece_and_Denmark ;
+    :hasChild data:Olga_of_Greece ;
+    :hasDaughter data:Olga_of_Greece ;
+    :hasRelation data:Michael_of_Greece_and_Denmark,
+        data:Olga_of_Greece ;
+    :isAncestorOf data:Olga_of_Greece ;
+    :isBloodrelationOf data:Michael_of_Greece_and_Denmark ;
+    :isBrotherOf data:Michael_of_Greece_and_Denmark ;
+    :isFatherOf data:Olga_of_Greece ;
+    :isParentOf data:Olga_of_Greece ;
+    :isSiblingOf data:Michael_of_Greece_and_Denmark ;
+    :isUncleOf data:Olga_of_Greece .
+
+data:Vittorio_Emanuele_of_Savoy a :Ancestor,
+        :Man ;
+    :hasBrother data:Vittorio_Emanuele_of_Savoy ;
+    :hasChild data:Emanuele_Filiberto_of_Savoy ;
+    :hasDeathYear 2024 ;
+    :hasRelation data:Emanuele_Filiberto_of_Savoy,
+        data:Vittorio_Emanuele_of_Savoy ;
+    :hasSon data:Emanuele_Filiberto_of_Savoy ;
+    :isAncestorOf data:Emanuele_Filiberto_of_Savoy ;
+    :isBloodrelationOf data:Vittorio_Emanuele_of_Savoy ;
+    :isBrotherOf data:Vittorio_Emanuele_of_Savoy ;
+    :isFatherOf data:Emanuele_Filiberto_of_Savoy ;
+    :isParentOf data:Emanuele_Filiberto_of_Savoy ;
+    :isSiblingOf data:Vittorio_Emanuele_of_Savoy ;
+    :isUncleOf data:Emanuele_Filiberto_of_Savoy .
+
+data:Amedeo_of_Savoy a :Ancestor,
+        :Man ;
+    :hasBrother data:Amedeo_of_Savoy ;
+    :hasChild data:Aimone_of_Savoy-Aosta ;
+    :hasRelation data:Aimone_of_Savoy-Aosta,
+        data:Amedeo_of_Savoy,
+        data:Claude_of_Orl%C3%A9ans ;
+    :hasSon data:Aimone_of_Savoy-Aosta ;
+    :isAncestorOf data:Aimone_of_Savoy-Aosta ;
+    :isBloodrelationOf data:Amedeo_of_Savoy ;
+    :isBrotherOf data:Amedeo_of_Savoy ;
+    :isFatherOf data:Aimone_of_Savoy-Aosta ;
+    :isParentOf data:Aimone_of_Savoy-Aosta ;
+    :isSiblingOf data:Amedeo_of_Savoy ;
+    :isUncleOf data:Aimone_of_Savoy-Aosta .
+
+data:Claude_of_Orl%C3%A9ans a :Ancestor,
+        :Woman ;
+    :hasChild data:Aimone_of_Savoy-Aosta ;
+    :hasRelation data:Aimone_of_Savoy-Aosta,
+        data:Amedeo_of_Savoy,
+        data:Claude_of_Orl%C3%A9ans ;
+    :hasSister data:Claude_of_Orl%C3%A9ans ;
+    :hasSon data:Aimone_of_Savoy-Aosta ;
+    :isAncestorOf data:Aimone_of_Savoy-Aosta ;
+    :isAuntOf data:Aimone_of_Savoy-Aosta ;
+    :isBloodrelationOf data:Claude_of_Orl%C3%A9ans ;
+    :isMotherOf data:Aimone_of_Savoy-Aosta ;
+    :isParentOf data:Aimone_of_Savoy-Aosta ;
+    :isSiblingOf data:Claude_of_Orl%C3%A9ans ;
+    :isSisterOf data:Claude_of_Orl%C3%A9ans .
+
+data:Emanuele_Filiberto_of_Savoy a :Man ;
+    :hasAncestor data:Vittorio_Emanuele_of_Savoy ;
+    :hasBrother data:Emanuele_Filiberto_of_Savoy ;
+    :hasFather data:Vittorio_Emanuele_of_Savoy ;
+    :hasParent data:Vittorio_Emanuele_of_Savoy ;
+    :hasRelation data:Emanuele_Filiberto_of_Savoy,
+        data:Vittorio_Emanuele_of_Savoy ;
+    :isBloodrelationOf data:Emanuele_Filiberto_of_Savoy ;
+    :isBrotherOf data:Emanuele_Filiberto_of_Savoy ;
+    :isChildOf data:Vittorio_Emanuele_of_Savoy ;
+    :isSiblingOf data:Emanuele_Filiberto_of_Savoy ;
+    :isSonOf data:Vittorio_Emanuele_of_Savoy .
+
+data:Olga_of_Greece a :Woman ;
+    :hasAncestor data:Michael_of_Greece_and_Denmark ;
+    :hasFather data:Michael_of_Greece_and_Denmark ;
+    :hasParent data:Michael_of_Greece_and_Denmark ;
+    :hasRelation data:Michael_of_Greece_and_Denmark,
+        data:Olga_of_Greece ;
+    :hasSister data:Olga_of_Greece ;
+    :isBloodrelationOf data:Olga_of_Greece ;
+    :isChildOf data:Michael_of_Greece_and_Denmark ;
+    :isDaughterOf data:Michael_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_of_Greece ;
+    :isSisterOf data:Olga_of_Greece .
+
+data:Aimone_of_Savoy-Aosta a :Man ;
+    :formerlyKnownAs "Duke of Apulia"^^xsd:string ;
+    :hasAncestor data:Amedeo_of_Savoy,
+        data:Claude_of_Orl%C3%A9ans ;
+    :hasBirthYear 1967 ;
+    :hasBrother data:Aimone_of_Savoy-Aosta ;
+    :hasFather data:Amedeo_of_Savoy ;
+    :hasMother data:Claude_of_Orl%C3%A9ans ;
+    :hasParent data:Amedeo_of_Savoy,
+        data:Claude_of_Orl%C3%A9ans ;
+    :hasRelation data:Aimone_of_Savoy-Aosta,
+        data:Amedeo_of_Savoy,
+        data:Claude_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Aimone_of_Savoy-Aosta ;
+    :isBrotherOf data:Aimone_of_Savoy-Aosta ;
+    :isChildOf data:Amedeo_of_Savoy,
+        data:Claude_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Aimone_of_Savoy-Aosta ;
+    :isSonOf data:Amedeo_of_Savoy,
+        data:Claude_of_Orl%C3%A9ans ;
+    :knownAs "Aimone of Savoy-Aosta, 6th Duke of Aosta"^^xsd:string .
+

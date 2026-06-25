@@ -2,30 +2,39 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:David_Chavchavadze a :Man ;
-    :hasBirthYear 1924 ;
-    :hasFather data:Paul_Chavchavadze ;
-    :hasMother data:Nina_Georgievna .
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
+        :Person .
 
-data:Xenia a :Woman ;
-    :hasFather data:George_Mikhailovich ;
-    :hasMother data:Maria_Georgievna ;
-    :hasSister data:Nina_Georgievna .
+data:Margaret_Campbell_Geddes a :Person,
+        :Woman .
 
-data:George_Mikhailovich a :Man .
+data:Prince_Heinrich_of_Hesse-Kassel a :Man,
+        :Person ;
+    :alsoKnownAs "Enrico d'Assia"^^xsd:string ;
+    :hasBirthYear 1927 ;
+    :hasBrother data:Moritz_of_Hesse-Kassel,
+        data:Otto_of_Hesse-Kassel ;
+    :hasDeathYear 1999 ;
+    :hasFather data:Prince_Philipp_of_Hesse ;
+    :hasMother data:Princess_Mafalda_of_Savoy ;
+    :hasSister data:Elisabeth_of_Hesse-Kassel .
 
-data:Maria_Georgievna a :Woman .
+data:Elisabeth_of_Hesse-Kassel a :Person,
+        :Woman .
 
-data:Nina_Georgievna a :Woman ;
-    :hasBirthYear 1901 ;
-    :hasDeathYear 1974 ;
-    :hasFather data:George_Mikhailovich ;
-    :hasMarriageYear 1922 ;
-    :hasMother data:Maria_Georgievna ;
-    :hasRelation data:Paul_Chavchavadze ;
-    :hasSister data:Xenia .
+data:King_Victor_Emmanuel_III_of_Italy a :Man,
+        :Person .
 
-data:Paul_Chavchavadze a :Man ;
-    :hasBirthYear 1899 ;
-    :hasDeathYear 1971 .
+data:Moritz_of_Hesse-Kassel a :Man,
+        :Person .
+
+data:Otto_of_Hesse-Kassel a :Man,
+        :Person .
+
+data:Prince_Philipp_of_Hesse a :Man,
+        :Person .
+
+data:Princess_Mafalda_of_Savoy a :Person,
+        :Woman ;
+    :hasFather data:King_Victor_Emmanuel_III_of_Italy .
 

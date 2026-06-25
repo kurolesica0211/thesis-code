@@ -2,40 +2,82 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Constantine_I_of_Greece a :Man .
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Elena_of_Romania .
 
-data:Michael_I a :Man ;
+data:Ferdinand_I a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Carol_II .
+
+data:Prince_Nicolas a :Man,
+        :Person ;
+    :isBrotherOf data:Carol_II ;
+    :isUncleOf data:Michael_I .
+
+data:Princess_Elisabeth a :Person,
+        :Woman ;
+    :isSisterOf data:Carol_II .
+
+data:Princess_Ileana a :Person,
+        :Woman ;
+    :isAuntOf data:Michael_I ;
+    :isSisterOf data:Carol_II .
+
+data:Alexander_Nixon a :Man,
+        :Person .
+
+data:Anne_of_Bourbon_Parma a :Person,
+        :Woman .
+
+data:Male a :Sex .
+
+data:Princess_Elena_of_Romania a :Person,
+        :Woman ;
+    :hasRelation data:Alexander_Nixon ;
+    :isDaughterOf data:Michael_I .
+
+data:Princess_Irina_of_Romania a :Person,
+        :Woman ;
+    :isDaughterOf data:Michael_I .
+
+data:Princess_Margareta_of_Romania a :Person,
+        :Woman ;
+    :isDaughterOf data:Michael_I .
+
+data:Princess_Maria_of_Romania a :Person,
+        :Woman ;
+    :isDaughterOf data:Michael_I .
+
+data:Princess_Sophie_of_Romania a :Person,
+        :Woman ;
+    :isDaughterOf data:Michael_I .
+
+data:Elena_of_Romania a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Michael_I .
+
+data:Carol_II a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Michael_I .
+
+data:Michael_I a :Ancestor,
+        :Man,
+        :Person ;
     :hasBirthYear 1921 ;
-    :hasChild data:Elena_daughter,
-        data:Irina,
-        data:Margareta,
-        data:Maria,
-        data:Sophie ;
+    :hasDaughter data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Margareta_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
     :hasDeathYear 2017 ;
     :hasFather data:Carol_II ;
     :hasMarriageYear 1948 ;
     :hasMother data:Elena_of_Romania ;
-    :hasRelation data:Anne_of_Bourbon-Parma .
-
-data:Anne_of_Bourbon-Parma a :Woman .
-
-data:Carol_II a :Ancestor,
-        :Man ;
-    :hasFather data:Ferdinand_I .
-
-data:Elena_daughter a :Woman .
-
-data:Elena_of_Romania a :Ancestor,
-        :Woman .
-
-data:Ferdinand_I a :Ancestor,
-        :Man .
-
-data:Irina a :Woman .
-
-data:Margareta a :Woman .
-
-data:Maria a :Woman .
-
-data:Sophie a :Woman .
+    :hasRelation data:Anne_of_Bourbon_Parma ;
+    :hasSex data:Male .
 

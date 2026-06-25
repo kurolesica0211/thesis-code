@@ -85,70 +85,47 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince William of Gloucester (William Henry Andrew Frederick; 18 December 1941 – 28 August 1972) was a member of the British royal family.
-The elder son of Prince Henry, Duke of Gloucester, and Princess Alice, Duchess of Gloucester, he was a grandson of George V, nephew of Edward VIII and George VI, and first cousin of Elizabeth II.
-He was the most recent descendant of George III to be diagnosed with porphyria, a condition thought to have caused George III’s mental breakdown, and in William’s case, it was most likely hereditary.
-William died in 1972, aged 30, in an air crash while piloting his plane during a competition.
-Early life
+Princess Christina Margarethe of Hesse (German: Christina Margarethe Prinzessin von Hessen; 10 January 1933 – 22 November 2011) was a German princess.
+Family background and early life
 
-William was born on 18 December 1941 at the Lady Carnarvon Nursing Home in Hadley Common, Hertfordshire, the eldest son of Prince Henry, Duke of Gloucester, and Alice, Duchess of Gloucester.
-His father was the third son of King George V and Queen Mary, and his mother was the third daughter of the 7th Duke of Buccleuch and Lady Margaret Bridgeman.
-His godparents were King George VI (his paternal uncle), Queen Mary (his paternal grandmother), Princess Helena Victoria (his paternal first cousin twice-removed), Lady Margaret Hawkins (his maternal aunt), Major Lord William Montagu Douglas Scott (his maternal uncle) and John Vereker, 6th Viscount Gort, who was unable to attend.
-At the time of William's birth, and for months afterwards, Henry was away on military duties, some involving considerable risk.
-This prompted George VI to write to his sister-in-law, assuring her that, should anything happen to his brother, he would become Prince William's guardian.
-In 1947, William served as a page boy at the wedding of his cousin Princess Elizabeth to Philip, Duke of Edinburgh.
-The other page boy was Prince Michael of Kent.
-William spent his early childhood at Barnwell Manor in Northamptonshire and later in Canberra, Australia, where his father served as Governor-General from 1945 to 1947.
-After returning to England, he was educated at Wellesley House School, a prep school in Broadstairs, Kent, then at Eton College, where he was noted in the Eton College Chronicle for his performance in junior cricket and awarded house colours for football.
-Career
+Born in Germany on 10 January 1933 at Friedrichshof Castle near Kronberg im Taunus, Princess Christina ("Krista") of Hesse was the eldest child of Prince Christoph of Hesse (1901–1943) and Princess Sophie of Greece and Denmark (1914–2001)
+Her father, Prince Christoph of Hesse, was a nephew of Germany's last emperor Wilhelm II.
+Her mother, Princess Sophie of Greece and Denmark, was a grand-daughter of King George I of Greece and a sister of Prince Philip, Duke of Edinburgh.
+Christina belonged by birth to the senior line of the House of Hesse, a junior branch of which reigned as grand dukes of Hesse and by Rhine within the German Empire until 1918.
+Christina's paternal grandmother, Princess Margaret of Prussia, was a daughter of Queen Victoria's eldest daughter Victoria, and as such a sister of Kaiser Wilhelm II.
 
-After returning to Britain, William took a position with Lazards, a merchant bank.
-He was the second member of the British royal family to work in the civil service or diplomatic service (the first was his uncle, Prince George, Duke of Kent, in the 1920s).
-By 1970, the health of his father, the Duke of Gloucester, had deteriorated following further strokes.
-William had no choice but to resign from the diplomatic service and return to Britain in order to manage his father's estate and, as he put it, take on the full-time role of a royal prince.
-Apart from taking over many engagements his father could no longer perform, William took particular interest in St John Ambulance, where he became increasingly active.
-William occasionally served as Counsellor of State during the Queen's absence.
-Personal life
 
-William was consistently described by friends as adventurous (almost to the point of recklessness), warm, tender and extremely generous.
-Regarding his family, William considered himself extremely lucky compared to other members of the royal family.
-William acknowledged his father couldn't have been very happy as a young man, as a result of the strict upbringing he had received, and expressed gratitude for the freedom he had given him throughout his life.
-Relationships
+Prince Christoph, a member of the Schutzstaffel (SS), held important positions in Germany's Nazi regime.
+On 7 October 1943, when Christina was ten years old, her father was killed in an airplane crash in the Apennine Mountains near Forlì, Italy.
+His widow married Prince George William of Hanover in 1946.
+From her mother's two marriages, Christina had four siblings and three half-siblings: Princess Dorothea of Hesse (1934–2025), Prince Karl of Hesse (1937–2022), Prince Rainer of Hesse (born 1939), Princess Clarissa of Hesse (born 1944), Prince Welf of Hanover (1947–1981), Prince Georg of Hanover (born 1949) and Princess Friederike of Hanover (born 1954).
+Her childhood homes included her paternal grandmother's palace of Friedrichshof in Taunus, a family castle at Panker in Holstein, and her parents' residence in Berlin-Dahlem.
+Christina participated in the 1953 coronation of her aunt at Westminster Abbey, walking in the procession led by her maternal grandmother, Princess Alice.
+Christina and her cousin Princess Beatrix of Hohenlohe-Langenburg spent the winter of 1955-1956 living in London, where Christina studied the restoration of paintings under Anthony Blunt.
+It was reported that the princesses' closest friend in England was Prince Andrew of Yugoslavia.
+First marriage
 
-Former Hungarian model and stewardess Zsuzsi Starkloff (1936–2020, born Zsuzsana Maria Lehel in a Jewish-Hungarian family) had a relationship with William.
-They first met in 1968 in Japan, where Starkloff worked, having previously divorced American pilot Edward Starkloff.
-The relationship was further explored in the 2015 Channel 4 TV documentary, The Other Prince William.
-Despite the reported reluctance of senior members of the royal family to take William's relationship with Starkloff seriously, marriage standards within the royal family were no longer as strict as they had been.
-Princess Margaret, while not encouraging William, did sympathise with him in this regard and advised him to "wait a bit" and to "see how everything looks" once he returned to Britain.
-William's intentions regarding his relationship with Starkloff are unclear.
-In the early 1970s, William began a relationship with divorcee Nicole Sieff (née Moschietto), daughter of a Monte Carlo restaurateur, who had two sons from her marriage to Jonathan Sieff, grandson of Israel Sieff, Baron Sieff.
-Health
+Princess Christina of Hesse married Prince Andrew of Yugoslavia, the youngest son of Alexander I of Yugoslavia and Princess Maria of Romania, on 2 August 1956, at Friedrichshof Castle.
+They had two children:
 
-Shortly before transferring to Tokyo in August 1968, William was examined by a Royal Air Force doctor, Headly Bellringer, at the request of his mother.
-Although aware of the theory of the royal family's history of porphyria then being advanced by Ida Macalpine and Richard Hunter, Bellringer stated he "tried not to let it influence him...with all the symptoms, I was left with little option but to diagnose the Prince's condition as porphyria."
-A reliable diagnosis of porphyria in a member of the British royal family lent weight to the theory – first advanced by Professor Ida Macalpine in the late 1960s – that porphyria was the underlying cause of the ill-health of both Mary, Queen of Scots (an ancestor of both of William's parents) and George III.
-Death
 
-A licensed pilot and President of the British Light Aviation Centre, William owned several aircraft and competed in amateur air show races.
-William and Mitchell were killed.
-William was buried in the Royal Burial Ground, Frogmore.
-The comprehensive school in Oundle, which he opened in 1971, was renamed Prince William School in his memory.
-William was the heir apparent of his father's peerages, Duke of Gloucester, Earl of Ulster, and Baron Culloden.
-Upon his death, his younger brother Prince Richard became heir apparent, and succeeded to these peerages in 1974.
-William was the first grandchild of King George V and Queen Mary to die.
-Honours and arms
+Soon after their marriage, Princess Christina and her first husband had purchased The Hollands, a commercial farm at Langton Green in Kent, England, which did not prove a profitable venture.
+Moving to London, Prince Andrew supported his family by working for an import/export business and, later, as a bank executive.
+In 1961 Christina left her husband to live with an abstract artist from the Netherlands, Robert Floris van Eyck.
+Second marriage
 
-Honours
-
-Arms
-
-For his 21st birthday, in 1962, Prince William was granted the use of the Royal Arms, differenced with a label argent of five points, the outer pair and central point bearing lions gules, the inner pair crosses gules.
+Following her divorce, Christina married Robert van Eyck on 3 December 1962 in London.
+Her first husband Prince Andrew also married for the second time, this time to another cousin, Princess Kira Melita zu Leiningen (1930–2006).
+Christina and Robert van Eyck separated in 1985, and divorced 3 February 1986.
+In addition to Germany and England, Princess Christina of Hesse had lived in Saint-Paul-de-Vence, France, and in Gersau, Switzerland.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -164,39 +141,9 @@ For his 21st birthday, in 1962, Prince William was granted the use of the Royal 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -211,6 +158,23 @@ For his 21st birthday, in 1962, Prince William was granted the use of the Royal 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -228,6 +192,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -295,29 +274,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -326,6 +297,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -338,6 +317,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -346,17 +327,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -384,6 +367,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -399,161 +466,283 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (32286ec8-9ae2-481e-a4aa-b602151b79fb)
- Call ID: 32286ec8-9ae2-481e-a4aa-b602151b79fb
+  AssignClass (1ac5626e-951c-4b9c-9355-b3185da3d32c)
+ Call ID: 1ac5626e-951c-4b9c-9355-b3185da3d32c
   Args:
-    type: :Man
-    source: Prince_William_of_Gloucester
-  AssignClass (23387f51-8abc-4209-ac42-2ca989d036d1)
- Call ID: 23387f51-8abc-4209-ac42-2ca989d036d1
-  Args:
-    type: :Person
-    source: Prince_William_of_Gloucester
-  AssignClass (5fd071e0-817c-4e6b-9ecc-a44c01f988ec)
- Call ID: 5fd071e0-817c-4e6b-9ecc-a44c01f988ec
-  Args:
-    type: :Man
-    source: Prince_Henry_Duke_of_Gloucester
-  AssignClass (19c20f9d-479b-4190-b760-b81a2fa459fe)
- Call ID: 19c20f9d-479b-4190-b760-b81a2fa459fe
-  Args:
-    type: :Ancestor
-    source: Prince_Henry_Duke_of_Gloucester
-  AssignClass (203adf1d-252a-4da4-990a-336b09d478ef)
- Call ID: 203adf1d-252a-4da4-990a-336b09d478ef
-  Args:
-    source: Princess_Alice_Duchess_of_Gloucester
+    source: Princess_Christina_of_Hesse
     type: :Woman
-  AssignClass (450d2b01-05b5-46bb-bdca-1ac599e6e19d)
- Call ID: 450d2b01-05b5-46bb-bdca-1ac599e6e19d
+  AddLiteral (4125b3fb-e082-4bea-8840-642f172f277d)
+ Call ID: 4125b3fb-e082-4bea-8840-642f172f277d
   Args:
-    type: :Ancestor
-    source: Princess_Alice_Duchess_of_Gloucester
-  AddLiteral (260d1843-dc08-49ca-b97d-51035aae6871)
- Call ID: 260d1843-dc08-49ca-b97d-51035aae6871
-  Args:
-    literal_value: 1941
+    source: Princess_Christina_of_Hesse
+    literal_value: 1933
     literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Prince_William_of_Gloucester
-  AddLiteral (dbd557d9-0d07-4194-8d94-75d6a43ab781)
- Call ID: dbd557d9-0d07-4194-8d94-75d6a43ab781
+  AddLiteral (5310e7cf-30fa-4b3f-a0e2-17e6a18306b2)
+ Call ID: 5310e7cf-30fa-4b3f-a0e2-17e6a18306b2
   Args:
     relation: :hasDeathYear
     literal_type: xsd:integer
-    literal_value: 1972
-    source: Prince_William_of_Gloucester
-  AddTriple (d7e6ff12-97a9-4b31-8dc9-2eb3164fa544)
- Call ID: d7e6ff12-97a9-4b31-8dc9-2eb3164fa544
+    source: Princess_Christina_of_Hesse
+    literal_value: 2011
+  AssignClass (086417c7-2a63-4f05-831f-e5e62d5e6443)
+ Call ID: 086417c7-2a63-4f05-831f-e5e62d5e6443
   Args:
-    target: Prince_Henry_Duke_of_Gloucester
-    source: Prince_William_of_Gloucester
-    relation: :hasFather
-  AddTriple (48c845be-74c9-4c7e-ac77-fdac214ec380)
- Call ID: 48c845be-74c9-4c7e-ac77-fdac214ec380
-  Args:
-    relation: :hasMother
-    target: Princess_Alice_Duchess_of_Gloucester
-    source: Prince_William_of_Gloucester
-  AddTriple (d5c21438-3cb9-443f-b14f-918251da912b)
- Call ID: d5c21438-3cb9-443f-b14f-918251da912b
-  Args:
-    relation: :hasSex
-    source: Prince_William_of_Gloucester
-    target: :Male
-  AddTriple (e50db05d-e1a8-4c34-9c62-07a9706ec91b)
- Call ID: e50db05d-e1a8-4c34-9c62-07a9706ec91b
-  Args:
-    source: Prince_Henry_Duke_of_Gloucester
-    target: :Male
-    relation: :hasSex
-  AddTriple (b3be2033-1aaf-48ea-a330-fb31f1743de3)
- Call ID: b3be2033-1aaf-48ea-a330-fb31f1743de3
-  Args:
-    relation: :hasSex
-    target: :Female
-    source: Princess_Alice_Duchess_of_Gloucester
-  AssignClass (33b409a7-46db-419f-8475-52118f55d560)
- Call ID: 33b409a7-46db-419f-8475-52118f55d560
-  Args:
+    source: Prince_Christoph_of_Hesse
     type: :Man
-    source: Prince_Richard
-  AssignClass (6da95bc1-9df7-4c55-93d5-7282aa09ceb2)
- Call ID: 6da95bc1-9df7-4c55-93d5-7282aa09ceb2
+  AddLiteral (a78e7848-9f8a-472c-97a6-529e54d6f54c)
+ Call ID: a78e7848-9f8a-472c-97a6-529e54d6f54c
   Args:
-    source: Prince_Richard
-    type: :Person
-  AddTriple (2da6cd6a-fb18-4cb8-a9b4-47f9c32f776c)
- Call ID: 2da6cd6a-fb18-4cb8-a9b4-47f9c32f776c
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1901
+    source: Prince_Christoph_of_Hesse
+  AddLiteral (8e37f097-0327-4743-833e-696817dbe158)
+ Call ID: 8e37f097-0327-4743-833e-696817dbe158
   Args:
-    target: Prince_Richard
-    source: Prince_William_of_Gloucester
-    relation: :hasBrother
-  AddTriple (d84575dd-05ba-4d44-988a-9721718a9388)
- Call ID: d84575dd-05ba-4d44-988a-9721718a9388
-  Args:
-    target: Prince_Henry_Duke_of_Gloucester
-    source: Prince_Richard
-    relation: :hasFather
-  AddTriple (558f546b-003a-47ac-ba78-a5c014a75b4e)
- Call ID: 558f546b-003a-47ac-ba78-a5c014a75b4e
-  Args:
-    source: Prince_Richard
-    target: Princess_Alice_Duchess_of_Gloucester
-    relation: :hasMother
-  AddTriple (f5441e3d-14de-438e-a8e1-da8d37852caf)
- Call ID: f5441e3d-14de-438e-a8e1-da8d37852caf
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: Prince_Richard
-  AssignClass (8115917f-6400-4f9a-b466-f2dfd88e4207)
- Call ID: 8115917f-6400-4f9a-b466-f2dfd88e4207
-  Args:
-    type: :Man
-    source: George_V
-  AssignClass (c72bb037-41e3-4c5f-af26-7e808d9570ac)
- Call ID: c72bb037-41e3-4c5f-af26-7e808d9570ac
-  Args:
-    source: George_V
-    type: :Ancestor
-  AssignClass (f1bcf83f-6132-4967-b162-d0b61ad86f96)
- Call ID: f1bcf83f-6132-4967-b162-d0b61ad86f96
+    literal_value: 1943
+    source: Prince_Christoph_of_Hesse
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AssignClass (becbd1b8-f771-4278-bc58-948575401b6e)
+ Call ID: becbd1b8-f771-4278-bc58-948575401b6e
   Args:
     type: :Woman
-    source: Queen_Mary
-  AssignClass (1db10ce9-d756-4ce2-aca3-cf692318cba1)
- Call ID: 1db10ce9-d756-4ce2-aca3-cf692318cba1
+    source: Princess_Sophie_of_Greece_and_Denmark
+  AddLiteral (18bedbad-6706-4a85-bd12-f783fee6d9bd)
+ Call ID: 18bedbad-6706-4a85-bd12-f783fee6d9bd
   Args:
-    type: :Ancestor
-    source: Queen_Mary
-  AddTriple (67e2e5d5-6ef7-482f-8ff5-a77647445325)
- Call ID: 67e2e5d5-6ef7-482f-8ff5-a77647445325
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1914
+    source: Princess_Sophie_of_Greece_and_Denmark
+  AddLiteral (cae912ef-b70c-4fd7-b4b0-35200a5096f1)
+ Call ID: cae912ef-b70c-4fd7-b4b0-35200a5096f1
   Args:
-    target: George_V
-    source: Prince_Henry_Duke_of_Gloucester
+    relation: :hasDeathYear
+    literal_value: 2001
+    source: Princess_Sophie_of_Greece_and_Denmark
+    literal_type: xsd:integer
+  AddTriple (6d53fe14-8f5c-43cb-86df-4706085ba6e2)
+ Call ID: 6d53fe14-8f5c-43cb-86df-4706085ba6e2
+  Args:
     relation: :hasFather
-  AddTriple (0d4aef8c-cd44-40b4-be87-f825e12c4153)
- Call ID: 0d4aef8c-cd44-40b4-be87-f825e12c4153
+    source: Princess_Christina_of_Hesse
+    target: Prince_Christoph_of_Hesse
+  AddTriple (3fc59d0f-c67e-4803-8fbb-593df268f51f)
+ Call ID: 3fc59d0f-c67e-4803-8fbb-593df268f51f
   Args:
     relation: :hasMother
-    source: Prince_Henry_Duke_of_Gloucester
-    target: Queen_Mary
-  AddTriple (b7a59919-0174-455e-b196-605d4bebce7e)
- Call ID: b7a59919-0174-455e-b196-605d4bebce7e
+    target: Princess_Sophie_of_Greece_and_Denmark
+    source: Princess_Christina_of_Hesse
+  AssignClass (6f08c708-b084-4639-b7ab-488fbd2b48af)
+ Call ID: 6f08c708-b084-4639-b7ab-488fbd2b48af
   Args:
-    target: :Male
-    source: George_V
-    relation: :hasSex
-  AddTriple (ad2d484d-9e4b-4faf-a20d-7cd3bc7c42a8)
- Call ID: ad2d484d-9e4b-4faf-a20d-7cd3bc7c42a8
+    type: :Woman
+    source: Princess_Dorothea_of_Hesse
+  AddTriple (f0795305-92de-4e8f-ba3f-387280d654fa)
+ Call ID: f0795305-92de-4e8f-ba3f-387280d654fa
   Args:
-    target: :Female
-    source: Queen_Mary
-    relation: :hasSex
-  Finish (8b2af150-e822-43b6-8e85-775fc126805d)
- Call ID: 8b2af150-e822-43b6-8e85-775fc126805d
+    source: Princess_Dorothea_of_Hesse
+    target: Prince_Christoph_of_Hesse
+    relation: :hasParent
+  AddTriple (c337d191-0e6b-4c51-a31a-8f10d998193d)
+ Call ID: c337d191-0e6b-4c51-a31a-8f10d998193d
   Args:
+    relation: :hasParent
+    target: Princess_Sophie_of_Greece_and_Denmark
+    source: Princess_Dorothea_of_Hesse
+  AssignClass (8d7eb61e-65e6-4cbf-9ba4-737e3e63b7da)
+ Call ID: 8d7eb61e-65e6-4cbf-9ba4-737e3e63b7da
+  Args:
+    type: :Man
+    source: Prince_Karl_of_Hesse
+  AddTriple (e6739669-ed27-431c-b9cf-b74f71709e9b)
+ Call ID: e6739669-ed27-431c-b9cf-b74f71709e9b
+  Args:
+    target: Prince_Christoph_of_Hesse
+    source: Prince_Karl_of_Hesse
+    relation: :hasParent
+  AddTriple (f98d6925-6bdc-4eab-a07c-1af0dc01da45)
+ Call ID: f98d6925-6bdc-4eab-a07c-1af0dc01da45
+  Args:
+    source: Prince_Karl_of_Hesse
+    target: Princess_Sophie_of_Greece_and_Denmark
+    relation: :hasParent
+  AssignClass (05111fce-947a-4eb9-b901-8f38f2c042dd)
+ Call ID: 05111fce-947a-4eb9-b901-8f38f2c042dd
+  Args:
+    type: :Man
+    source: Prince_Rainer_of_Hesse
+  AddTriple (0e2f31c4-e2fc-413e-b037-f44a99000c1c)
+ Call ID: 0e2f31c4-e2fc-413e-b037-f44a99000c1c
+  Args:
+    target: Prince_Christoph_of_Hesse
+    source: Prince_Rainer_of_Hesse
+    relation: :hasParent
+  AddTriple (4965faac-2403-4828-9063-03bcb7da1d9e)
+ Call ID: 4965faac-2403-4828-9063-03bcb7da1d9e
+  Args:
+    target: Princess_Sophie_of_Greece_and_Denmark
+    source: Prince_Rainer_of_Hesse
+    relation: :hasParent
+  AssignClass (b13658a9-0d32-4756-8c84-9fbc1a966aec)
+ Call ID: b13658a9-0d32-4756-8c84-9fbc1a966aec
+  Args:
+    source: Princess_Clarissa_of_Hesse
+    type: :Woman
+  AddTriple (63594f8b-f0fa-4925-ad75-caf9a0612a7c)
+ Call ID: 63594f8b-f0fa-4925-ad75-caf9a0612a7c
+  Args:
+    source: Princess_Clarissa_of_Hesse
+    target: Prince_Christoph_of_Hesse
+    relation: :hasParent
+  AddTriple (83eed9af-78d7-48a0-99a1-8f383e7cc8a4)
+ Call ID: 83eed9af-78d7-48a0-99a1-8f383e7cc8a4
+  Args:
+    source: Princess_Clarissa_of_Hesse
+    target: Princess_Sophie_of_Greece_and_Denmark
+    relation: :hasParent
+  AssignClass (7d1b2508-633c-4292-8600-3fae37c4258d)
+ Call ID: 7d1b2508-633c-4292-8600-3fae37c4258d
+  Args:
+    source: Prince_Welf_of_Hanover
+    type: :Man
+  AddTriple (db94e7b9-300e-4178-b76c-94ce70397bf7)
+ Call ID: db94e7b9-300e-4178-b76c-94ce70397bf7
+  Args:
+    relation: :hasParent
+    target: Princess_Sophie_of_Greece_and_Denmark
+    source: Prince_Welf_of_Hanover
+  AssignClass (bee9cf17-0ef3-4480-be78-bbb604a05f1d)
+ Call ID: bee9cf17-0ef3-4480-be78-bbb604a05f1d
+  Args:
+    source: Prince_Georg_of_Hanover
+    type: :Man
+  AddTriple (7a2ed4ca-4d3b-45b0-b2b2-12f97efb8083)
+ Call ID: 7a2ed4ca-4d3b-45b0-b2b2-12f97efb8083
+  Args:
+    relation: :hasParent
+    source: Prince_Georg_of_Hanover
+    target: Princess_Sophie_of_Greece_and_Denmark
+  AssignClass (185d1f46-8210-4bad-9dce-afc4f4e7178a)
+ Call ID: 185d1f46-8210-4bad-9dce-afc4f4e7178a
+  Args:
+    type: :Woman
+    source: Princess_Friederike_of_Hanover
+  AddTriple (3394357f-6cec-4d93-9596-80626d3589b4)
+ Call ID: 3394357f-6cec-4d93-9596-80626d3589b4
+  Args:
+    relation: :hasParent
+    target: Princess_Sophie_of_Greece_and_Denmark
+    source: Princess_Friederike_of_Hanover
+  AssignClass (3f2da795-c8a7-4a6e-88de-f0f1ee520784)
+ Call ID: 3f2da795-c8a7-4a6e-88de-f0f1ee520784
+  Args:
+    source: Prince_George_William_of_Hanover
+    type: :Man
+  AddTriple (18fdde2f-0e45-41b1-9dc8-a427f50ea918)
+ Call ID: 18fdde2f-0e45-41b1-9dc8-a427f50ea918
+  Args:
+    relation: :hasParent
+    target: Prince_George_William_of_Hanover
+    source: Prince_Welf_of_Hanover
+  AddTriple (4839ee51-1bf2-458f-89a9-615c40bff1f1)
+ Call ID: 4839ee51-1bf2-458f-89a9-615c40bff1f1
+  Args:
+    relation: :hasParent
+    target: Prince_George_William_of_Hanover
+    source: Prince_Georg_of_Hanover
+  AddTriple (da7d3124-e87c-4edf-ab54-3f9717f7fab9)
+ Call ID: da7d3124-e87c-4edf-ab54-3f9717f7fab9
+  Args:
+    relation: :hasParent
+    source: Princess_Friederike_of_Hanover
+    target: Prince_George_William_of_Hanover
+  AssignClass (15aa434e-c8ea-4c38-9d01-e50896e4cf3a)
+ Call ID: 15aa434e-c8ea-4c38-9d01-e50896e4cf3a
+  Args:
+    type: :Man
+    source: Prince_Andrew_of_Yugoslavia
+  AddLiteral (052acc12-012c-467b-93e6-6e42a7880e7e)
+ Call ID: 052acc12-012c-467b-93e6-6e42a7880e7e
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 1956
+    source: Princess_Christina_of_Hesse
+  AddTriple (7515e92b-4875-496e-8b36-c294bf6650e9)
+ Call ID: 7515e92b-4875-496e-8b36-c294bf6650e9
+  Args:
+    relation: :hasRelation
+    source: Princess_Christina_of_Hesse
+    target: Prince_Andrew_of_Yugoslavia
+  AssignClass (531b77f4-b1c6-4ddc-94f2-4c23f6145399)
+ Call ID: 531b77f4-b1c6-4ddc-94f2-4c23f6145399
+  Args:
+    type: :Man
+    source: Robert_van_Eyck
+  AddLiteral (80813bcc-294a-4cb6-bc20-1e8b089df58b)
+ Call ID: 80813bcc-294a-4cb6-bc20-1e8b089df58b
+  Args:
+    source: Princess_Christina_of_Hesse
+    literal_value: 1962
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AddTriple (31ed87a4-7901-4875-80e9-ac9d92bc1cfb)
+ Call ID: 31ed87a4-7901-4875-80e9-ac9d92bc1cfb
+  Args:
+    relation: :hasRelation
+    source: Princess_Christina_of_Hesse
+    target: Robert_van_Eyck
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -666,40 +855,67 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_William_of_Gloucester a :Man,
-          :Person ;
-      :hasBirthYear 1941 ;
-      :hasBrother data:Prince_Richard ;
-      :hasDeathYear 1972 ;
-      :hasFather data:Prince_Henry_Duke_of_Gloucester ;
-      :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
-      :hasSex data:Male .
+  data:Prince_Georg_of_Hanover a :Man ;
+      :hasParent data:Prince_George_William_of_Hanover,
+          data:Princess_Sophie_of_Greece_and_Denmark .
 
-  data:George_V a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
+  data:Prince_Karl_of_Hesse a :Man ;
+      :hasParent data:Prince_Christoph_of_Hesse,
+          data:Princess_Sophie_of_Greece_and_Denmark .
 
-  data:Prince_Richard a :Man,
-          :Person ;
-      :hasFather data:Prince_Henry_Duke_of_Gloucester ;
-      :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
-      :hasSex data:Male .
+  data:Prince_Rainer_of_Hesse a :Man ;
+      :hasParent data:Prince_Christoph_of_Hesse,
+          data:Princess_Sophie_of_Greece_and_Denmark .
 
-  data:Queen_Mary a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
+  data:Prince_Welf_of_Hanover a :Man ;
+      :hasParent data:Prince_George_William_of_Hanover,
+          data:Princess_Sophie_of_Greece_and_Denmark .
 
-  data:Prince_Henry_Duke_of_Gloucester a :Ancestor,
-          :Man ;
-      :hasFather data:George_V ;
-      :hasMother data:Queen_Mary ;
-      :hasSex data:Male .
+  data:Princess_Christina_of_Hesse a :Woman ;
+      :hasBirthYear 1933 ;
+      :hasDeathYear 2011 ;
+      :hasFather data:Prince_Christoph_of_Hesse ;
+      :hasMarriageYear 1956,
+          1962 ;
+      :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
+      :hasRelation data:Prince_Andrew_of_Yugoslavia,
+          data:Robert_van_Eyck .
 
-  data:Princess_Alice_Duchess_of_Gloucester a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
+  data:Princess_Clarissa_of_Hesse a :Woman ;
+      :hasParent data:Prince_Christoph_of_Hesse,
+          data:Princess_Sophie_of_Greece_and_Denmark .
+
+  data:Princess_Dorothea_of_Hesse a :Woman ;
+      :hasParent data:Prince_Christoph_of_Hesse,
+          data:Princess_Sophie_of_Greece_and_Denmark .
+
+  data:Princess_Friederike_of_Hanover a :Woman ;
+      :hasParent data:Prince_George_William_of_Hanover,
+          data:Princess_Sophie_of_Greece_and_Denmark .
+
+  data:Prince_Andrew_of_Yugoslavia a :Man .
+
+  data:Robert_van_Eyck a :Man .
+
+  data:Prince_George_William_of_Hanover a :Man .
+
+  data:Prince_Christoph_of_Hesse a :Man ;
+      :hasBirthYear 1901 ;
+      :hasDeathYear 1943 .
+
+  data:Princess_Sophie_of_Greece_and_Denmark a :Woman ;
+      :hasBirthYear 1914 ;
+      :hasDeathYear 2001 .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (c9262533-e276-4d29-94db-8b220d3ab4d3)
+ Call ID: c9262533-e276-4d29-94db-8b220d3ab4d3
+  Args:
 
 ================================= Tool Message =================================
 
@@ -709,494 +925,398 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (e0cbebd3-d1f5-456e-a35b-ec75d118db7a)
- Call ID: e0cbebd3-d1f5-456e-a35b-ec75d118db7a
+  ValidateShacl (ae7216f7-5a45-4c80-b587-e2b9c566b237)
+ Call ID: ae7216f7-5a45-4c80-b587-e2b9c566b237
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:60
+Total violations:48
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Henry_Duke_of_Gloucester is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of George_V is missing the required class ':Sex'.
+      The value node Prince_George_William_of_Hanover is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_George_William_of_Hanover, :Person)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Princess_Alice_Duchess_of_Gloucester is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Queen_Mary is missing the required class ':Sex'.
+      The value node Prince_George_William_of_Hanover is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Prince_George_William_of_Hanover, :Person)
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Henry_Duke_of_Gloucester is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of George_V is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Person)
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Princess_Alice_Duchess_of_Gloucester is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Queen_Mary is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Person)
 
 
   Violation [9]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Henry_Duke_of_Gloucester is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Man or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Man)
 
 
   Violation [10]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of George_V is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Woman or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Woman)
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Princess_Alice_Duchess_of_Gloucester is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Queen_Mary is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Person)
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Henry_Duke_of_Gloucester is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [14]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_William_of_Gloucester is missing the required class ':Sex'.
+      The value node Prince_George_William_of_Hanover is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_George_William_of_Hanover, :Person)
 
 
   Violation [15]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of George_V is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [16]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Richard is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Person)
 
 
   Violation [17]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Henry_Duke_of_Gloucester is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [18]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_William_of_Gloucester is missing the required class ':Sex'.
+      The value node Prince_George_William_of_Hanover is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_George_William_of_Hanover, :Person)
 
 
   Violation [19]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of George_V is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [20]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Richard is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Person)
 
 
   Violation [21]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_William_of_Gloucester is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [22]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Princess_Alice_Duchess_of_Gloucester is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Person)
 
 
   Violation [23]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Queen_Mary is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [24]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Henry_Duke_of_Gloucester is missing the required class ':Sex'.
+      The value node Prince_George_William_of_Hanover is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_George_William_of_Hanover, :Person)
 
 
   Violation [25]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Richard is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Man or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Man)
 
 
   Violation [26]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of George_V is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Woman or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Woman)
 
 
   Violation [27]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_William_of_Gloucester is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [28]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Princess_Alice_Duchess_of_Gloucester is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Person)
 
 
   Violation [29]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Queen_Mary is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [30]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Henry_Duke_of_Gloucester is missing the required class ':Sex'.
+      The value node Prince_George_William_of_Hanover is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_George_William_of_Hanover, :Person)
 
 
   Violation [31]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Richard is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [32]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of George_V is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Person)
 
 
   Violation [33]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_William_of_Gloucester is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [34]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Princess_Alice_Duchess_of_Gloucester is missing the required class ':Sex'.
+      The value node Prince_George_William_of_Hanover is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Prince_George_William_of_Hanover, :Person)
 
 
   Violation [35]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Queen_Mary is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [36]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Henry_Duke_of_Gloucester is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Person)
 
 
   Violation [37]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Richard is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [38]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of George_V is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Person)
 
 
   Violation [39]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_William_of_Gloucester is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [40]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Princess_Alice_Duchess_of_Gloucester is missing the required class ':Sex'.
+      The value node Prince_George_William_of_Hanover is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Prince_George_William_of_Hanover, :Person)
 
 
   Violation [41]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Queen_Mary is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Man or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Man)
 
 
   Violation [42]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Henry_Duke_of_Gloucester is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Woman or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Woman)
 
 
   Violation [43]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Richard is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [44]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of George_V is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Person)
 
 
   Violation [45]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_William_of_Gloucester is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [46]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Princess_Alice_Duchess_of_Gloucester is missing the required class ':Sex'.
+      The value node Prince_Christoph_of_Hesse is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Prince_Christoph_of_Hesse, :Person)
 
 
   Violation [47]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Queen_Mary is missing the required class ':Sex'.
+      The value node Princess_Sophie_of_Greece_and_Denmark is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Princess_Sophie_of_Greece_and_Denmark, :Person)
 
 
   Violation [48]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
     LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Henry_Duke_of_Gloucester is missing the required class ':Sex'.
+      The value node Prince_George_William_of_Hanover is not assigned the required class :Person or :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Richard is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value for 'hasSex' of George_V is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_William_of_Gloucester is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value for 'hasSex' of Princess_Alice_Duchess_of_Gloucester is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value for 'hasSex' of Queen_Mary is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Henry_Duke_of_Gloucester is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value for 'hasSex' of Prince_Richard is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value for 'hasSex' of George_V is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value for 'hasSex' of Princess_Alice_Duchess_of_Gloucester is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value for 'hasSex' of Queen_Mary is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value for 'hasSex' of Princess_Alice_Duchess_of_Gloucester is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value for 'hasSex' of Queen_Mary is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(Prince_George_William_of_Hanover, :Person)
 
 
 
@@ -1205,19 +1325,55 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (e4521e34-d124-4290-95d9-2e8682c9486f)
- Call ID: e4521e34-d124-4290-95d9-2e8682c9486f
+  AssignClass (d9f24b36-f644-4d46-bb12-e653f046423f)
+ Call ID: d9f24b36-f644-4d46-bb12-e653f046423f
   Args:
-    source: Male
-    type: :Sex
-  AssignClass (8b48c1f1-c1dc-45ba-87df-a3ac492c14dd)
- Call ID: 8b48c1f1-c1dc-45ba-87df-a3ac492c14dd
+    source: Prince_Christoph_of_Hesse
+    type: :Person
+  AssignClass (21f30f18-5183-4402-bec2-507275f41a83)
+ Call ID: 21f30f18-5183-4402-bec2-507275f41a83
   Args:
-    source: Female
-    type: :Sex
-  Finish (1fd75ac7-711b-44ad-bfa4-6a70d2fca848)
- Call ID: 1fd75ac7-711b-44ad-bfa4-6a70d2fca848
+    source: Prince_Christoph_of_Hesse
+    type: :Ancestor
+  AssignClass (47d761d6-fe01-49a6-a58f-b8e05d7ca3c1)
+ Call ID: 47d761d6-fe01-49a6-a58f-b8e05d7ca3c1
   Args:
+    type: :Person
+    source: Princess_Sophie_of_Greece_and_Denmark
+  AssignClass (ae30686f-0344-424e-aba9-91003c50713f)
+ Call ID: ae30686f-0344-424e-aba9-91003c50713f
+  Args:
+    type: :Ancestor
+    source: Princess_Sophie_of_Greece_and_Denmark
+  AssignClass (8cd5bcba-ab8b-4376-9489-d669a5a09bbb)
+ Call ID: 8cd5bcba-ab8b-4376-9489-d669a5a09bbb
+  Args:
+    source: Prince_George_William_of_Hanover
+    type: :Person
+  AssignClass (cf112103-4889-4d34-bcc3-4c1114ecce65)
+ Call ID: cf112103-4889-4d34-bcc3-4c1114ecce65
+  Args:
+    source: Prince_George_William_of_Hanover
+    type: :Ancestor
+  ValidateShacl (bdd02e24-aba3-409c-ab5e-31cbfe29a0c4)
+ Call ID: bdd02e24-aba3-409c-ab5e-31cbfe29a0c4
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1230,56 +1386,65 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_William_of_Gloucester a :Man,
+  data:Prince_Georg_of_Hanover a :Man ;
+      :hasParent data:Prince_George_William_of_Hanover,
+          data:Princess_Sophie_of_Greece_and_Denmark .
+
+  data:Prince_Karl_of_Hesse a :Man ;
+      :hasParent data:Prince_Christoph_of_Hesse,
+          data:Princess_Sophie_of_Greece_and_Denmark .
+
+  data:Prince_Rainer_of_Hesse a :Man ;
+      :hasParent data:Prince_Christoph_of_Hesse,
+          data:Princess_Sophie_of_Greece_and_Denmark .
+
+  data:Prince_Welf_of_Hanover a :Man ;
+      :hasParent data:Prince_George_William_of_Hanover,
+          data:Princess_Sophie_of_Greece_and_Denmark .
+
+  data:Princess_Christina_of_Hesse a :Woman ;
+      :hasBirthYear 1933 ;
+      :hasDeathYear 2011 ;
+      :hasFather data:Prince_Christoph_of_Hesse ;
+      :hasMarriageYear 1956,
+          1962 ;
+      :hasMother data:Princess_Sophie_of_Greece_and_Denmark ;
+      :hasRelation data:Prince_Andrew_of_Yugoslavia,
+          data:Robert_van_Eyck .
+
+  data:Princess_Clarissa_of_Hesse a :Woman ;
+      :hasParent data:Prince_Christoph_of_Hesse,
+          data:Princess_Sophie_of_Greece_and_Denmark .
+
+  data:Princess_Dorothea_of_Hesse a :Woman ;
+      :hasParent data:Prince_Christoph_of_Hesse,
+          data:Princess_Sophie_of_Greece_and_Denmark .
+
+  data:Princess_Friederike_of_Hanover a :Woman ;
+      :hasParent data:Prince_George_William_of_Hanover,
+          data:Princess_Sophie_of_Greece_and_Denmark .
+
+  data:Prince_Andrew_of_Yugoslavia a :Man .
+
+  data:Robert_van_Eyck a :Man .
+
+  data:Prince_George_William_of_Hanover a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_Christoph_of_Hesse a :Ancestor,
+          :Man,
           :Person ;
-      :hasBirthYear 1941 ;
-      :hasBrother data:Prince_Richard ;
-      :hasDeathYear 1972 ;
-      :hasFather data:Prince_Henry_Duke_of_Gloucester ;
-      :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
-      :hasSex data:Male .
+      :hasBirthYear 1901 ;
+      :hasDeathYear 1943 .
 
-  data:George_V a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Prince_Richard a :Man,
-          :Person ;
-      :hasFather data:Prince_Henry_Duke_of_Gloucester ;
-      :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
-      :hasSex data:Male .
-
-  data:Queen_Mary a :Ancestor,
+  data:Princess_Sophie_of_Greece_and_Denmark a :Ancestor,
+          :Person,
           :Woman ;
-      :hasSex data:Female .
-
-  data:Female a :Sex .
-
-  data:Prince_Henry_Duke_of_Gloucester a :Ancestor,
-          :Man ;
-      :hasFather data:George_V ;
-      :hasMother data:Queen_Mary ;
-      :hasSex data:Male .
-
-  data:Princess_Alice_Duchess_of_Gloucester a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Male a :Sex .
+      :hasBirthYear 1914 ;
+      :hasDeathYear 2001 .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (8b06d415-cad6-4b0e-aa43-41fc732d3910)
- Call ID: 8b06d415-cad6-4b0e-aa43-41fc732d3910
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1289,6 +1454,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (4a3dd4c3-01cb-460c-9643-11ee7aacae98)
- Call ID: 4a3dd4c3-01cb-460c-9643-11ee7aacae98
+  Finish (91d58b28-b4dc-411c-a576-ab6c6f4b21f9)
+ Call ID: 91d58b28-b4dc-411c-a576-ab6c6f4b21f9
   Args:

@@ -2,37 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Heinrich_XIII_Prinz_Reuss a :Man,
-        :Person ;
-    :hasBirthYear 1951 ;
-    :hasDaughter data:Elena ;
-    :hasFather data:Prince_Heinrich_I_Reuss ;
-    :hasMarriageYear 1989 ;
-    :hasMother data:Duchess_Woizlawa_Feodora_of_Mecklenburg ;
-    :hasSon data:Heinrich_XXVIII .
-
-data:Duchess_Woizlawa_Feodora_of_Mecklenburg a :Ancestor,
-        :Person,
+data:Lady_Amanda_Patricia_Victoria_Knatchbull a :Person,
         :Woman ;
-    :hasFather data:Duke_Adolf_Friedrich_of_Mecklenburg .
+    :hasBirthYear 1957 ;
+    :isChildOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten .
 
-data:Duke_Adolf_Friedrich_of_Mecklenburg a :Ancestor,
-        :Man,
-        :Person .
-
-data:Elena a :Person,
+data:Louise_Mountbatten a :Person,
         :Woman ;
-    :hasMother data:Susan_Doukht_Jalali .
+    :isAuntOf data:Patricia_Mountbatten .
 
-data:Heinrich_XXVIII a :Man,
+data:Nicholas_Timothy_Charles_Knatchbull a :Man,
         :Person ;
-    :hasMother data:Susan_Doukht_Jalali .
+    :isChildOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten .
 
-data:Prince_Heinrich_I_Reuss a :Ancestor,
-        :Man,
-        :Person .
+data:Norton_Louis_Philip_Knatchbull a :Man,
+        :Person ;
+    :hasBirthYear 1947 ;
+    :isChildOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten .
 
-data:Susan_Doukht_Jalali a :Ancestor,
+data:Timothy_Knatchbull a :Man,
+        :Person ;
+    :isChildOf data:John_Ulick_Knatchbull,
+        data:Patricia_Mountbatten .
+
+data:Lady_Doreen_Browne a :Ancestor,
         :Person,
         :Woman .
+
+data:Louis_Mountbatten a :Ancestor,
+        :Man,
+        :Person .
+
+data:Michael_Knatchbull a :Ancestor,
+        :Man,
+        :Person .
+
+data:John_Ulick_Knatchbull a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1924 ;
+    :hasDeathYear 2005 ;
+    :hasFather data:Michael_Knatchbull ;
+    :hasMarriageYear 1946 ;
+    :hasMother data:Lady_Doreen_Browne ;
+    :hasRelation data:Patricia_Mountbatten ;
+    :knownAs "John Brabourne"^^xsd:string .
+
+data:Patricia_Mountbatten a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Louis_Mountbatten .
 

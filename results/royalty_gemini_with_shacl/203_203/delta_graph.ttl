@@ -1,21 +1,41 @@
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:PieterVanVollenhoven a :Man,
+data:Senna_Kowhai a :Person,
+        :Woman ;
+    :hasFather data:Gary_Christie_Lewis ;
+    :hasMother data:Lady_Davina_Windsor .
+
+data:Tane_Mahuta a :Man,
+        :Person ;
+    :hasFather data:Gary_Christie_Lewis ;
+    :hasMother data:Lady_Davina_Windsor .
+
+data:Ari a :Ancestor,
+        :Man,
         :Person .
 
-data:PrinceBernhard a :Ancestor,
+data:Birgitte_Duchess_of_Gloucester a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Prince_Richard_Duke_of_Gloucester a :Ancestor,
+        :Man,
+        :Person .
+
+data:Gary_Christie_Lewis a :Ancestor,
         :Man,
         :Person ;
-    :isFatherOf data:PrincessMargriet .
+    :hasBirthYear 1970 ;
+    :hasFather data:Ari .
 
-data:QueenJuliana a :Ancestor,
+data:Lady_Davina_Windsor a :Ancestor,
         :Person,
         :Woman ;
-    :isMotherOf data:PrincessMargriet .
-
-data:PrincessMargriet a :Person,
-        :Woman ;
-    :hasFather data:PrinceBernhard ;
-    :hasMother data:QueenJuliana .
+    :formerlyKnownAs "Lady Davina Lewis"^^xsd:string ;
+    :hasBirthYear 1977 ;
+    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:Birgitte_Duchess_of_Gloucester .
 

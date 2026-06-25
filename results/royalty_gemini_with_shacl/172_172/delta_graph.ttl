@@ -2,26 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Irene_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :hasBirthYear "1942"^^xsd:int ;
-    :hasBrother data:Constantine_II_of_Greece ;
-    :hasDeathYear "2026"^^xsd:int ;
-    :hasFather data:Paul_of_Greece ;
-    :hasMother data:Frederica_of_Hanover ;
-    :hasSister data:Sofia_of_Spain .
+data:ViscountLinley a :Man,
+        :Person ;
+    :hasFather data:DavidArmstrongJones ;
+    :hasMother data:SerenaStanhope ;
+    :isBrotherOf data:MargaritaArmstrongJones .
 
-data:Constantine_II_of_Greece a :Man,
-        :Person .
-
-data:Frederica_of_Hanover a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Paul_of_Greece a :Ancestor,
+data:AntonyArmstrongJones a :Ancestor,
         :Man,
         :Person .
 
-data:Sofia_of_Spain a :Person,
+data:CharlesStanhope a :Ancestor,
+        :Man,
+        :Person .
+
+data:LadySarahChatto a :Person,
         :Woman .
+
+data:MargaritaArmstrongJones a :Person,
+        :Woman ;
+    :hasBirthYear "2002"^^xsd:positiveInteger ;
+    :hasFather data:DavidArmstrongJones ;
+    :hasMother data:SerenaStanhope ;
+    :hasRelation data:LadySarahChatto ;
+    :knownAs "Margarita Elizabeth Rose Alleyne Armstrong-Jones"^^xsd:string .
+
+data:PrincessMargaret a :Ancestor,
+        :Person,
+        :Woman .
+
+data:DavidArmstrongJones a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:AntonyArmstrongJones ;
+    :hasMother data:PrincessMargaret .
+
+data:SerenaStanhope a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:CharlesStanhope .
 

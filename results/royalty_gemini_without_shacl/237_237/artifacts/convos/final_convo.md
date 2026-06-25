@@ -69,27 +69,30 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau (German: Franz Ulrich Johannes Clemens Christophorus Antonius Bonaventura Maria Fürst Kinsky von Wchinitz und Tettau; 7 October 1936 – 2 April 2009) was the titular Prince Kinsky of Wchinitz and Tettau as well the head of an ancient House of Kinsky.
-Early life
+Duke Friedrich August of Oldenburg (11 January 1936 – 9 July 2017) was a member of the House of Holstein-Gottorp.
+He is a son of Nikolaus, Hereditary Grand Duke of Oldenburg and Princess Helena of Waldeck and Pyrmont.
+Family and early life
 
-Franz Ulrich was born at Vienna, Federal State of Austria, as the youngest son of Ulrich, 10th Prince Kinsky of Wchinitz and Tettau by his second marriage to Baroness Marie Julia Mathilde von dem Bussche-Haddenhausen (1900–1974), the eldest daughter of Baron Hilmar von dem Bussche-Haddenhausen.
-Franz Ulrich became the titular Prince upon the death of his father in 1938.
-He was first cousin of Countess Marie Aglaë Kinsky of Wchinitz and Tettau who later became Princess consort of Liechtenstein, and second cousin of Claus von Amsberg, Prince consort of Queen Beatrix of the Netherlands, both descendants of Baron Julius von dem Bussche-Haddenhausen.
-In 1942, Franz Ulrich inherited several estates from the Kinsky family, including the Kinsky Palace in Old Town Square in Prague.
-Starting in 2003, Franz Ulrich complained against various Czech courts for the return of the assets.
-Marriage and family
+Frederich August is the sixth child and fourth son of Nikolaus, Hereditary Grand Duke of Oldenburg and his first wife Princess Helena of Waldeck and Pyrmont.
+His paternal grandparents are Frederick Augustus II, Grand Duke of Oldenburg and Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin.
+His maternal grandparents are Friedrich, Prince of Waldeck and Pyrmont and Princess Bathildis of Schaumburg-Lippe.
+His grandfather was overthrown as Grand Duke of Oldenburg in 1918, at the end of World War I.
+His father Nikolaus thus never legally succeeded to the title when the deposed Grand Duke died in 1931.
+Friedrich is an uncle of Christian, Duke of Oldenburg, the current head of the House of Oldenburg.
+Marriage and issue
 
-Franz Ulrich married on 14 April 1965 in Buenos Aires to Roberta Cavanagh (1942–2002), daughter of Roberto Cavanagh and his wife, Anne Rowell.
-After Kinsky's death, his son and his widow, Countess Helena Victoria Hutten-Czapska entered a legal dispute over Kinsky's properties.
-Later life
-
-The Prince died on 2 April 2009, aged 72.
+Friedrich August's first wife was Princess Marie Cécile of Prussia, a daughter of Louis Ferdinand, Prince of Prussia (second son of William, German Crown Prince) and his wife, Grand Duchess Kira Kirillovna of Russia.
+Friedrich August and Marie-Cécile have three children: a son, and two daughters.
+Marie-Cécile and Friedrich August divorced on 23 November 1989.
+On 9 February 1991, Friedrich August was remarried to Donata Countess of Castell-Rüdenhausen in Rüdenhausen, Germany.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -105,39 +108,9 @@ The Prince died on 2 April 2009, aged 72.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -152,6 +125,23 @@ The Prince died on 2 April 2009, aged 72.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -169,6 +159,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -236,29 +241,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -267,6 +264,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -279,6 +284,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -287,17 +294,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -325,6 +334,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -340,149 +433,206 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5f8a3ad7-f4dc-48c2-ae90-f657448be4f0)
- Call ID: 5f8a3ad7-f4dc-48c2-ae90-f657448be4f0
+  AssignClass (85834099-1e2b-4e99-8adf-2d866b4db0fe)
+ Call ID: 85834099-1e2b-4e99-8adf-2d866b4db0fe
   Args:
+    source: Friedrich_August_of_Oldenburg
     type: :Man
-    source: Franz_Ulrich
-  AssignClass (3bc04b7f-cd5c-44c3-b52e-851b6ca3680d)
- Call ID: 3bc04b7f-cd5c-44c3-b52e-851b6ca3680d
+  AssignClass (02259e83-8d87-4130-8fdf-a002411d68dd)
+ Call ID: 02259e83-8d87-4130-8fdf-a002411d68dd
   Args:
-    source: Franz_Ulrich
+    source: Friedrich_August_of_Oldenburg
     type: :Person
-  AddLiteral (dad64333-f67f-4257-bbc1-6afee73e7f85)
- Call ID: dad64333-f67f-4257-bbc1-6afee73e7f85
+  AddLiteral (07e6964b-1c92-4f2d-9396-7316819d0f2f)
+ Call ID: 07e6964b-1c92-4f2d-9396-7316819d0f2f
   Args:
-    source: Franz_Ulrich
     relation: :hasBirthYear
-    literal_type: xsd:integer
     literal_value: 1936
-  AddLiteral (1c96e27c-f21a-4ed6-b702-1c8b67e7c071)
- Call ID: 1c96e27c-f21a-4ed6-b702-1c8b67e7c071
-  Args:
-    literal_value: 2009
+    source: Friedrich_August_of_Oldenburg
     literal_type: xsd:integer
+  AddLiteral (bb1db423-91b3-4393-a47b-fa6a53240575)
+ Call ID: bb1db423-91b3-4393-a47b-fa6a53240575
+  Args:
     relation: :hasDeathYear
-    source: Franz_Ulrich
-  AssignClass (47138521-f8bb-4c04-9085-8e247f76dd10)
- Call ID: 47138521-f8bb-4c04-9085-8e247f76dd10
-  Args:
-    source: Ulrich_10th_Prince_Kinsky
-    type: :Man
-  AssignClass (45dd6cd7-8d63-43fb-b845-c6f03ea1647e)
- Call ID: 45dd6cd7-8d63-43fb-b845-c6f03ea1647e
-  Args:
-    type: :Person
-    source: Ulrich_10th_Prince_Kinsky
-  AddTriple (04ab384e-274f-4301-bd7a-9e6b531f3a5e)
- Call ID: 04ab384e-274f-4301-bd7a-9e6b531f3a5e
-  Args:
-    target: Ulrich_10th_Prince_Kinsky
-    source: Franz_Ulrich
-    relation: :hasFather
-  AssignClass (0cf6d057-0598-4552-93db-e73b2442c208)
- Call ID: 0cf6d057-0598-4552-93db-e73b2442c208
-  Args:
-    type: :Woman
-    source: Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen
-  AssignClass (3d1b4ad4-7549-45ca-98e3-e57f2b2d94db)
- Call ID: 3d1b4ad4-7549-45ca-98e3-e57f2b2d94db
-  Args:
-    type: :Person
-    source: Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen
-  AddTriple (48e0dffd-eb45-4d85-9bff-7c8185416c24)
- Call ID: 48e0dffd-eb45-4d85-9bff-7c8185416c24
-  Args:
-    relation: :hasMother
-    target: Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen
-    source: Franz_Ulrich
-  AssignClass (682a37e4-23bd-46d8-af81-c69a435aa2d1)
- Call ID: 682a37e4-23bd-46d8-af81-c69a435aa2d1
-  Args:
-    type: :Man
-    source: Hilmar_von_dem_Bussche-Haddenhausen
-  AssignClass (47f96869-b00c-4021-811e-353bea5b08c3)
- Call ID: 47f96869-b00c-4021-811e-353bea5b08c3
-  Args:
-    type: :Person
-    source: Hilmar_von_dem_Bussche-Haddenhausen
-  AddTriple (c31b664b-f0da-47fe-9246-8a1b0643a098)
- Call ID: c31b664b-f0da-47fe-9246-8a1b0643a098
-  Args:
-    target: Hilmar_von_dem_Bussche-Haddenhausen
-    source: Marie_Julia_Mathilde_von_dem_Bussche-Haddenhausen
-    relation: :hasFather
-  AssignClass (09607ba0-d5f1-4e69-9e03-3bcfd9be3154)
- Call ID: 09607ba0-d5f1-4e69-9e03-3bcfd9be3154
-  Args:
-    type: :Woman
-    source: Roberta_Cavanagh
-  AssignClass (84ee14c7-5498-4108-9b1a-a59401ffcf95)
- Call ID: 84ee14c7-5498-4108-9b1a-a59401ffcf95
-  Args:
-    source: Roberta_Cavanagh
-    type: :Person
-  AddLiteral (4fa227a6-5934-44e5-b26d-b02e8393534a)
- Call ID: 4fa227a6-5934-44e5-b26d-b02e8393534a
-  Args:
-    source: Franz_Ulrich
-    relation: :hasMarriageYear
+    literal_value: 2017
+    source: Friedrich_August_of_Oldenburg
     literal_type: xsd:integer
-    literal_value: 1965
-  AddTriple (bed0592f-2676-421c-a574-6085c8a90026)
- Call ID: bed0592f-2676-421c-a574-6085c8a90026
+  AssignClass (8a845794-b481-4489-b194-2e557e5b0154)
+ Call ID: 8a845794-b481-4489-b194-2e557e5b0154
   Args:
-    target: Roberta_Cavanagh
-    source: Franz_Ulrich
-    relation: :hasRelation
-  AssignClass (82a64a66-ff80-4f0b-946d-df542841ad80)
- Call ID: 82a64a66-ff80-4f0b-946d-df542841ad80
-  Args:
+    source: Nikolaus_of_Oldenburg
     type: :Man
-    source: Roberto_Cavanagh
-  AssignClass (8a2a3054-7047-4f4a-a0d3-82e5e740b76f)
- Call ID: 8a2a3054-7047-4f4a-a0d3-82e5e740b76f
+  AssignClass (b1ade980-2b54-4cd8-b41e-24e8bcac5caf)
+ Call ID: b1ade980-2b54-4cd8-b41e-24e8bcac5caf
   Args:
-    source: Roberto_Cavanagh
     type: :Person
-  AddTriple (2ae2430e-ddf9-45ab-ae0c-107e83fd30b9)
- Call ID: 2ae2430e-ddf9-45ab-ae0c-107e83fd30b9
-  Args:
-    relation: :hasFather
-    target: Roberto_Cavanagh
-    source: Roberta_Cavanagh
-  AssignClass (41edcf35-522a-4024-86b5-2b14d526cd65)
- Call ID: 41edcf35-522a-4024-86b5-2b14d526cd65
+    source: Nikolaus_of_Oldenburg
+  AssignClass (796b04c4-7c27-43e6-8419-767df3255a4c)
+ Call ID: 796b04c4-7c27-43e6-8419-767df3255a4c
   Args:
     type: :Woman
-    source: Anne_Rowell
-  AssignClass (621d6354-3d49-444e-a205-73b2dd2fcb76)
- Call ID: 621d6354-3d49-444e-a205-73b2dd2fcb76
+    source: Helena_of_Waldeck_and_Pyrmont
+  AssignClass (0e1538c0-99c2-4416-a444-95626e3fba24)
+ Call ID: 0e1538c0-99c2-4416-a444-95626e3fba24
   Args:
     type: :Person
-    source: Anne_Rowell
-  AddTriple (fbff0597-1a24-4c43-a44e-790a55fafc3a)
- Call ID: fbff0597-1a24-4c43-a44e-790a55fafc3a
+    source: Helena_of_Waldeck_and_Pyrmont
+  AddTriple (e3537012-c7dc-4156-8add-50ca67d444a8)
+ Call ID: e3537012-c7dc-4156-8add-50ca67d444a8
+  Args:
+    target: Nikolaus_of_Oldenburg
+    source: Friedrich_August_of_Oldenburg
+    relation: :hasFather
+  AddTriple (4cfeab93-3b42-4dcc-83cd-2976294a3fae)
+ Call ID: 4cfeab93-3b42-4dcc-83cd-2976294a3fae
   Args:
     relation: :hasMother
-    target: Anne_Rowell
-    source: Roberta_Cavanagh
-  AssignClass (91560625-6cdc-4ef2-8789-4078f0ef7f50)
- Call ID: 91560625-6cdc-4ef2-8789-4078f0ef7f50
+    source: Friedrich_August_of_Oldenburg
+    target: Helena_of_Waldeck_and_Pyrmont
+  AssignClass (0983c5ed-75af-4238-9d63-968ec6c7664f)
+ Call ID: 0983c5ed-75af-4238-9d63-968ec6c7664f
   Args:
-    source: Helena_Victoria_Hutten-Czapska
-    type: :Woman
-  AssignClass (e69596b6-8557-4832-a9fe-8bf1d9de480b)
- Call ID: e69596b6-8557-4832-a9fe-8bf1d9de480b
+    source: Frederick_Augustus_II_of_Oldenburg
+    type: :Man
+  AssignClass (5c817440-cfca-431a-8f7c-d0e882f43f47)
+ Call ID: 5c817440-cfca-431a-8f7c-d0e882f43f47
   Args:
-    source: Helena_Victoria_Hutten-Czapska
     type: :Person
-  AddTriple (31eed313-0b21-48a3-b00e-f02e9d2f6681)
- Call ID: 31eed313-0b21-48a3-b00e-f02e9d2f6681
+    source: Frederick_Augustus_II_of_Oldenburg
+  AssignClass (8c40e360-7f46-421e-a2a4-dbe089fd4feb)
+ Call ID: 8c40e360-7f46-421e-a2a4-dbe089fd4feb
+  Args:
+    type: :Woman
+    source: Elisabeth_Alexandrine_of_Mecklenburg_Schwerin
+  AssignClass (a4ff28f7-4fbf-4b83-894f-61d278ba5438)
+ Call ID: a4ff28f7-4fbf-4b83-894f-61d278ba5438
+  Args:
+    source: Elisabeth_Alexandrine_of_Mecklenburg_Schwerin
+    type: :Person
+  AddTriple (0498f8b0-87b0-40b9-9e5e-9b7bb6a3478b)
+ Call ID: 0498f8b0-87b0-40b9-9e5e-9b7bb6a3478b
+  Args:
+    relation: :hasFather
+    target: Frederick_Augustus_II_of_Oldenburg
+    source: Nikolaus_of_Oldenburg
+  AddTriple (1e852960-4ebf-45d0-a0a2-97dfb9666e73)
+ Call ID: 1e852960-4ebf-45d0-a0a2-97dfb9666e73
+  Args:
+    relation: :hasMother
+    target: Elisabeth_Alexandrine_of_Mecklenburg_Schwerin
+    source: Nikolaus_of_Oldenburg
+  AssignClass (f2085a4a-8a53-45a7-a275-acc2e7b55393)
+ Call ID: f2085a4a-8a53-45a7-a275-acc2e7b55393
+  Args:
+    type: :Man
+    source: Friedrich_of_Waldeck_and_Pyrmont
+  AssignClass (4374f658-cdc5-4a44-b20d-657ac7307428)
+ Call ID: 4374f658-cdc5-4a44-b20d-657ac7307428
+  Args:
+    type: :Person
+    source: Friedrich_of_Waldeck_and_Pyrmont
+  AssignClass (fc208f97-b591-446c-9219-dca72f12783d)
+ Call ID: fc208f97-b591-446c-9219-dca72f12783d
+  Args:
+    source: Bathildis_of_Schaumburg_Lippe
+    type: :Woman
+  AssignClass (0fe00856-d2c4-4fdb-8e21-faae6e70265a)
+ Call ID: 0fe00856-d2c4-4fdb-8e21-faae6e70265a
+  Args:
+    type: :Person
+    source: Bathildis_of_Schaumburg_Lippe
+  AddTriple (bbf1fb00-4422-4cc9-873b-00aff4fe4a83)
+ Call ID: bbf1fb00-4422-4cc9-873b-00aff4fe4a83
+  Args:
+    relation: :hasFather
+    target: Friedrich_of_Waldeck_and_Pyrmont
+    source: Helena_of_Waldeck_and_Pyrmont
+  AddTriple (ff0694c1-7be6-476b-9814-908bc4ea5f4b)
+ Call ID: ff0694c1-7be6-476b-9814-908bc4ea5f4b
+  Args:
+    source: Helena_of_Waldeck_and_Pyrmont
+    target: Bathildis_of_Schaumburg_Lippe
+    relation: :hasMother
+  AssignClass (50ad67c6-2697-4238-a087-c24bb0c7571b)
+ Call ID: 50ad67c6-2697-4238-a087-c24bb0c7571b
+  Args:
+    source: Christian_of_Oldenburg
+    type: :Man
+  AssignClass (73503c9a-7a89-4595-8d04-44cbf318bea8)
+ Call ID: 73503c9a-7a89-4595-8d04-44cbf318bea8
+  Args:
+    source: Christian_of_Oldenburg
+    type: :Person
+  AddTriple (37ab84e1-fdea-43f1-9c31-4670a237e73b)
+ Call ID: 37ab84e1-fdea-43f1-9c31-4670a237e73b
+  Args:
+    relation: :isUncleOf
+    source: Friedrich_August_of_Oldenburg
+    target: Christian_of_Oldenburg
+  AssignClass (666bf844-46f7-489a-b108-9a869ff58dbf)
+ Call ID: 666bf844-46f7-489a-b108-9a869ff58dbf
+  Args:
+    source: Marie_Cecile_of_Prussia
+    type: :Woman
+  AssignClass (9c51d860-bc75-4323-91fe-29297e609ab4)
+ Call ID: 9c51d860-bc75-4323-91fe-29297e609ab4
+  Args:
+    source: Marie_Cecile_of_Prussia
+    type: :Person
+  AddTriple (928ebf1b-a104-4f76-8dd6-feed543b495e)
+ Call ID: 928ebf1b-a104-4f76-8dd6-feed543b495e
+  Args:
+    target: Marie_Cecile_of_Prussia
+    source: Friedrich_August_of_Oldenburg
+    relation: :hasRelation
+  AssignClass (f41c9d4a-3453-4610-b94d-6c9de80cee6f)
+ Call ID: f41c9d4a-3453-4610-b94d-6c9de80cee6f
+  Args:
+    source: Louis_Ferdinand_of_Prussia
+    type: :Man
+  AssignClass (b97090c3-cfdd-4306-884a-efdb22ad8300)
+ Call ID: b97090c3-cfdd-4306-884a-efdb22ad8300
+  Args:
+    source: Louis_Ferdinand_of_Prussia
+    type: :Person
+  AssignClass (249d3b7b-c984-40a6-aff0-ce13124f69d4)
+ Call ID: 249d3b7b-c984-40a6-aff0-ce13124f69d4
+  Args:
+    source: Kira_Kirillovna_of_Russia
+    type: :Woman
+  AssignClass (1d7aa614-165e-4661-9017-ef79e1ac0459)
+ Call ID: 1d7aa614-165e-4661-9017-ef79e1ac0459
+  Args:
+    type: :Person
+    source: Kira_Kirillovna_of_Russia
+  AddTriple (454bcfeb-80f3-4c5e-abf5-812943391630)
+ Call ID: 454bcfeb-80f3-4c5e-abf5-812943391630
+  Args:
+    source: Marie_Cecile_of_Prussia
+    target: Louis_Ferdinand_of_Prussia
+    relation: :hasFather
+  AddTriple (cf30d856-f382-41e0-b338-087818a492ce)
+ Call ID: cf30d856-f382-41e0-b338-087818a492ce
+  Args:
+    relation: :hasMother
+    source: Marie_Cecile_of_Prussia
+    target: Kira_Kirillovna_of_Russia
+  AssignClass (8f46657b-5cfe-4a69-b4de-47e1e3f30e2e)
+ Call ID: 8f46657b-5cfe-4a69-b4de-47e1e3f30e2e
+  Args:
+    type: :Woman
+    source: Donata_of_Castell_Rudenhausen
+  AssignClass (1bbb2e59-870c-4173-8f49-cbd3892c177c)
+ Call ID: 1bbb2e59-870c-4173-8f49-cbd3892c177c
+  Args:
+    source: Donata_of_Castell_Rudenhausen
+    type: :Person
+  AddTriple (491b718a-7d5c-45d0-8466-a55ee79d271e)
+ Call ID: 491b718a-7d5c-45d0-8466-a55ee79d271e
   Args:
     relation: :hasRelation
-    target: Helena_Victoria_Hutten-Czapska
-    source: Franz_Ulrich
-  Finish (c1ba653b-cbb1-408a-a978-44262a5963f1)
- Call ID: c1ba653b-cbb1-408a-a978-44262a5963f1
+    target: Donata_of_Castell_Rudenhausen
+    source: Friedrich_August_of_Oldenburg
+  Finish (e28db52f-d614-4384-88c0-dca988ffdb84)
+ Call ID: e28db52f-d614-4384-88c0-dca988ffdb84
   Args:

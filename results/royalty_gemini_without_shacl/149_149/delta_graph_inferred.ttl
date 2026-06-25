@@ -1,0 +1,579 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Olga_Karnovich a :Person,
+        :Woman ;
+    :hasRelation data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna,
+        data:Olga_Karnovich,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasSister data:Olga_Karnovich ;
+    :isBloodrelationOf data:Olga_Karnovich ;
+    :isSiblingOf data:Olga_Karnovich ;
+    :isSisterOf data:Olga_Karnovich .
+
+data:Alexander_II_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Alexander_II_of_Russia ;
+    :hasChild data:Paul_Alexandrovich_of_Russia ;
+    :hasRelation data:Alexander_II_of_Russia,
+        data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasSon data:Paul_Alexandrovich_of_Russia ;
+    :isAncestorOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isBloodrelationOf data:Alexander_II_of_Russia ;
+    :isBrotherOf data:Alexander_II_of_Russia ;
+    :isFatherOf data:Paul_Alexandrovich_of_Russia ;
+    :isParentOf data:Paul_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Alexander_II_of_Russia ;
+    :isUncleOf data:Paul_Alexandrovich_of_Russia .
+
+data:Marie_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Paul_Alexandrovich_of_Russia ;
+    :hasRelation data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna,
+        data:Marie_of_Hesse_and_by_Rhine,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasSister data:Marie_of_Hesse_and_by_Rhine ;
+    :hasSon data:Paul_Alexandrovich_of_Russia ;
+    :isAncestorOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isAuntOf data:Paul_Alexandrovich_of_Russia ;
+    :isBloodrelationOf data:Marie_of_Hesse_and_by_Rhine ;
+    :isMotherOf data:Paul_Alexandrovich_of_Russia ;
+    :isParentOf data:Paul_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Marie_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Marie_of_Hesse_and_by_Rhine .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alexandra_of_Greece_and_Denmark ;
+    :hasDaughter data:Alexandra_of_Greece_and_Denmark ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :isAncestorOf data:Alexandra_of_Greece_and_Denmark,
+        data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isAuntOf data:Alexandra_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Alexandra_of_Greece_and_Denmark ;
+    :isParentOf data:Alexandra_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Christian_IX_of_Denmark ;
+    :hasChild data:George_I_of_Greece ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_Pavlovna,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :hasSon data:George_I_of_Greece ;
+    :isAncestorOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_Pavlovna,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isBloodrelationOf data:Christian_IX_of_Denmark ;
+    :isBrotherOf data:Christian_IX_of_Denmark ;
+    :isFatherOf data:George_I_of_Greece ;
+    :isParentOf data:George_I_of_Greece ;
+    :isSiblingOf data:Christian_IX_of_Denmark ;
+    :isUncleOf data:George_I_of_Greece .
+
+data:Paul_Alexandrovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II_of_Russia,
+        data:Marie_of_Hesse_and_by_Rhine ;
+    :hasBrother data:Paul_Alexandrovich_of_Russia ;
+    :hasChild data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :hasDaughter data:Maria_Pavlovna ;
+    :hasFather data:Alexander_II_of_Russia ;
+    :hasMother data:Marie_of_Hesse_and_by_Rhine ;
+    :hasParent data:Alexander_II_of_Russia,
+        data:Marie_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Alexander_II_of_Russia,
+        data:Alexandra_of_Greece_and_Denmark,
+        data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna,
+        data:Marie_of_Hesse_and_by_Rhine,
+        data:Olga_Karnovich,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasSon data:Dmitri_Pavlovich ;
+    :isAncestorOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isBloodrelationOf data:Paul_Alexandrovich_of_Russia ;
+    :isBrotherOf data:Paul_Alexandrovich_of_Russia ;
+    :isChildOf data:Alexander_II_of_Russia,
+        data:Marie_of_Hesse_and_by_Rhine ;
+    :isFatherOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isParentOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isSiblingOf data:Paul_Alexandrovich_of_Russia ;
+    :isSonOf data:Alexander_II_of_Russia,
+        data:Marie_of_Hesse_and_by_Rhine ;
+    :isUncleOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna .
+
+data:Maria_Pavlovna a :Person,
+        :Woman ;
+    :hasAncestor data:Alexander_II_of_Russia,
+        data:Alexandra_of_Greece_and_Denmark,
+        data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_of_Hesse_and_by_Rhine,
+        data:Olga_Constantinovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasBrother data:Dmitri_Pavlovich ;
+    :hasFather data:Paul_Alexandrovich_of_Russia ;
+    :hasMother data:Alexandra_of_Greece_and_Denmark ;
+    :hasParent data:Alexandra_of_Greece_and_Denmark,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasRelation data:Alexander_II_of_Russia,
+        data:Alexandra_of_Greece_and_Denmark,
+        data:Christian_IX_of_Denmark,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_Pavlovna,
+        data:Marie_of_Hesse_and_by_Rhine,
+        data:Olga_Constantinovna_of_Russia,
+        data:Olga_Karnovich,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasSister data:Maria_Pavlovna ;
+    :isBloodrelationOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isChildOf data:Alexandra_of_Greece_and_Denmark,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isDaughterOf data:Alexandra_of_Greece_and_Denmark,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isSisterOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna .
+
+data:Andrew_of_Greece a :Man,
+        :Person ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece ;
+    :hasBrother data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Nicholas_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSister data:Alexandra_of_Greece_and_Denmark,
+        data:Maria_of_Greece ;
+    :isBloodrelationOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isBrotherOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna .
+
+data:Christopher_of_Greece a :Man,
+        :Person ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece ;
+    :hasBrother data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Nicholas_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSister data:Alexandra_of_Greece_and_Denmark,
+        data:Maria_of_Greece ;
+    :isBloodrelationOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isBrotherOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna .
+
+data:Constantine_of_Greece a :Man,
+        :Person ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece ;
+    :hasBrother data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Nicholas_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSister data:Alexandra_of_Greece_and_Denmark,
+        data:Maria_of_Greece ;
+    :isBloodrelationOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isBrotherOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna .
+
+data:Maria_of_Greece a :Person,
+        :Woman ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece ;
+    :hasBrother data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Nicholas_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSister data:Alexandra_of_Greece_and_Denmark,
+        data:Maria_of_Greece ;
+    :isAuntOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isBloodrelationOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isDaughterOf data:George_I_of_Greece ;
+    :isSiblingOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isSisterOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece .
+
+data:Nicholas_of_Greece a :Man,
+        :Person ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece ;
+    :hasBrother data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Nicholas_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSister data:Alexandra_of_Greece_and_Denmark,
+        data:Maria_of_Greece ;
+    :isBloodrelationOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isBrotherOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna .
+
+data:Dmitri_Pavlovich a :Man,
+        :Person ;
+    :hasAncestor data:Alexander_II_of_Russia,
+        data:Alexandra_of_Greece_and_Denmark,
+        data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece,
+        data:Marie_of_Hesse_and_by_Rhine,
+        data:Olga_Constantinovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasBrother data:Dmitri_Pavlovich ;
+    :hasFather data:Paul_Alexandrovich_of_Russia ;
+    :hasMother data:Alexandra_of_Greece_and_Denmark ;
+    :hasParent data:Alexandra_of_Greece_and_Denmark,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasRelation data:Alexander_II_of_Russia,
+        data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_Pavlovna,
+        data:Maria_of_Greece,
+        data:Marie_of_Hesse_and_by_Rhine,
+        data:Nicholas_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Olga_Karnovich,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasSister data:Maria_Pavlovna ;
+    :isBloodrelationOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isBrotherOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isChildOf data:Alexandra_of_Greece_and_Denmark,
+        data:Paul_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isSonOf data:Alexandra_of_Greece_and_Denmark,
+        data:Paul_Alexandrovich_of_Russia .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Christian_IX_of_Denmark ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :hasDaughter data:Alexandra_of_Greece_and_Denmark,
+        data:Maria_of_Greece ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasParent data:Christian_IX_of_Denmark ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_Pavlovna,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :hasSon data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isAncestorOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isChildOf data:Christian_IX_of_Denmark ;
+    :isFatherOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isParentOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isSonOf data:Christian_IX_of_Denmark ;
+    :isUncleOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece .
+
+data:Alexandra_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs "Grand Duchess Alexandra Georgievna of Russia"^^xsd:string ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasBirthYear 1870 ;
+    :hasBrother data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Nicholas_of_Greece ;
+    :hasChild data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :hasDaughter data:Maria_Pavlovna ;
+    :hasDeathYear 1891 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christian_IX_of_Denmark,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Dmitri_Pavlovich,
+        data:George_I_of_Greece,
+        data:Maria_Pavlovna,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece,
+        data:Olga_Constantinovna_of_Russia,
+        data:Paul_Alexandrovich_of_Russia ;
+    :hasSister data:Alexandra_of_Greece_and_Denmark,
+        data:Maria_of_Greece ;
+    :hasSon data:Dmitri_Pavlovich ;
+    :isAncestorOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isAuntOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isBloodrelationOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isChildOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isDaughterOf data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isParentOf data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :isSiblingOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece ;
+    :isSisterOf data:Alexandra_of_Greece_and_Denmark,
+        data:Andrew_of_Greece,
+        data:Christopher_of_Greece,
+        data:Constantine_of_Greece,
+        data:Maria_of_Greece,
+        data:Nicholas_of_Greece .
+

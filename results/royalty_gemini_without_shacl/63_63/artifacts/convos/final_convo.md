@@ -141,6 +141,8 @@ In France, it was feared that the arrival of a Prussian princess in Athens would
 In Berlin, the union was also unpopular: German interests were indeed important in the Ottoman Empire and the Emperor did not intend to help Greece simply because the Greek crown prince was his new brother-in-law.
 Platforms were also built on the Syntagma Square so the public could better admire the procession between the Royal Palace and the Cathedral.
 The newlyweds were related to most of the European dynasties, so representatives of all the royal houses of the continent were part of the festivities: Christian IX of Denmark (grandfather of the groom), Emperor William II of Germany (brother of the bride), the Prince of Wales (uncle of both groom and bride) and the Tsarevich of Russia (groom's cousin) were among the guests of honor.
+In fact, the hosts and their retinues were so many in Athens that King George I could not receive all of them in his palace.
+In addition, George was forced to hastily buy dozens of additional liveries for the lackeys at the service of the guests.
 Installation in Athens
 
 In Athens, Constantine and Sophia settled in a small villa of French style located on Kifisias Avenue, while waiting for the Greek state to build a new home for them, the Crown Prince's Palace, located near the Royal Palace.
@@ -205,8 +207,10 @@ In Greece, political life remained volatile throughout the first years of the 20
 In 1908, the Cretan authorities unilaterally proclaimed the attachment of their island to the Kingdom of Greece but for fear of Turkish reprisals, the Greek government refused to recognize the annexation.
 On 15 August 1909, a group of officers gathered in the "Military League" (Στρατιωτικός Σύνδεσμος) and organized the so-called Goudi coup.
 Officially, this was to protect the Crown Prince from the jealousies that could arise from his friendship with some soldiers but the reality was quite different: officers continued to hold the Crown Prince responsible for the 1897 defeat.
+The situation became so tense that George I's sons had to resign from their military posts to save their father the shame of having to expelled them.
 In September, the Crown Prince, his wife and their children also chose to leave Greece and seek refuge in Germany at Friedrichshof, now owned by the Princess Margaret of Prussia.
 Meanwhile, in Athens, discussions began in some circles about dethroning the House of Glücksburg to establishing a republic or replacing the sovereign with either a bastard son of Otto I, a foreign prince or with Prince George, with Sophia as regent.
+In December 1909, Colonel Zorbas, head of the Military League, pressured George I to appoint him as the head of the government in place of Prime Minister Kyriakoulis Mavromichalis.
 The staff was reorganized and supporters of the Crown Prince, including Ioannis Metaxas, were expelled.
 At the same time, a French army mission was called to reorganize the Greek army, which threatened both Sophia and her husband, as they helped develop republican ideas within the military.
 They then traveled to Crete to meet the prominent Cretan politician Eleftherios Venizelos, and offered him the post of Prime Minister of Greece.
@@ -236,6 +240,11 @@ When Sophia gave birth to her sixth and last child, a daughter named Katherine, 
 The rumors, true or false, did not affect Constantine, who easily recognized his paternity.
 Like her mother, Sophia inculcated in her offspring the love for the United Kingdom and for several weeks every year, the family spent time in Great Britain, where she visited the beaches of Seaford and Eastbourne.
 However, the summer vacations of the family were spent not only in Friedrichshof with the Empress Dowager, but also in Corfu and Venice, where the Greek royal family went aboard the yacht Amphitrite.
+Queen of the Hellenes: 1st tenure (1913-1917)
+
+Assassination of George I and Second Balkan War
+
+The First Balkan War ended in 1913 with the defeat of the Ottoman Empire by the Greek, Bulgarian, Serbian and Montenegrin coalition.
 The Kingdom of Greece was greatly expanded after the conflict but disagreements soon arose between the allied powers: Greece and Bulgaria competed for possession of Thessaloniki and its surrounding region.
 To affirm the sovereignty of the Greeks over the main city of Macedonia, George I moved to the city soon after its conquest by the Crown Prince, on 8 December 1912.
 Sophia was in Athens when she learned of the murder of her father-in-law, the king.
@@ -346,6 +355,7 @@ Everywhere in the streets, portraits of Venizelos were pulled and replaced by th
 A huge crowd surrounded the royal couple in the streets of the capital and, after returning to the Royal Palace, they had to appear repeatedly on the balcony to greet the people who cheered them.
 However, the presence of the sovereigns in Greece did not bring the expected peace.
 The antipathy of the great powers toward Constantine I and Sophia was evident on the occasion of the marriage, in Athens, of Princess Helen and Crown Prince Carol of Romania.
+Present at the wedding, the ambassador of Great Britain and his wife pointedly refused to salute the Greek King and Queen while clearly showing such respect to Queen Marie of Romania.
 For Sophia, the snub was more difficult to bear because she had always been on good terms with the United Kingdom representatives before the deposition of Constantine I and she continued to nurture loving feelings for the country of her mother.
 The main source of joy for Sophia after her return to Greece was the birth of her granddaughter Alexandra, on 25 March 1921.
 Although initially opposed to Alexander's marriage with Aspasia Manos, the Queen welcomed their daughter with delight and pressed both her husband and eldest son to give her granddaughter the status and titles reserved to members of the royal family.
@@ -358,6 +368,10 @@ Abdication of Constantine I
 
 In response to the military defeat by the Turks, a part of the Greek army, commanded by General Nikolaos Plastiras, revolted on 11 September 1922 (on the Julian calendar, 24 September on the Gregorian calendar in use in the rest of the world).
 They demanded the abdication of Constantine I and the dissolution of the Hellenic Parliament.
+Having consulted his friend, General Ioannis Metaxas, the King abdicated three days later on 27 September in favor of his eldest son, who succeeded him on the throne under the name of George II.
+
+
+Dowager Queen (1922-1932)
 Second exile and concerns for Greece
 
 To ensure their security and stabilize the throne of their son, Constantine I and Sophia once again chose to take the path of exile.
@@ -370,7 +384,9 @@ Increasingly depressed by the events that had shaken Greece and sick with arteri
 Faced with this situation, Sophia's anxiety (already bigger by the fate of George II and other members of the royal family who remained in Greece), only increased.
 However, Constantine I died of a brain hemorrhage shortly before their departure, on 11 January 1923, and Sophia found herself even more isolated than she was previously.
 After the death of her husband, Sophia wanted to repatriate his remains to be buried in Tatoi but the Greek government refused, with George II being unable to do anything.
+In fact, the situation of the new King was increasingly precarious and at the end, he himself went into exile in Romania a few months after the death of his father, on 19 December 1923.
 The republic was then proclaimed in Greece on 25 March 1924 and Sophia and the other members of the royal family were stripped of their Hellenic nationality.
+However, the Greek royals had maintained their Danish titles since George I ascended to the Greek throne in 1863 and they almost immediately received Danish passports.
 Last years
 
 Sophia, now Dowager Queen, left Southern Italy with her daughters Irene and Katherine and moved to Tuscany, in the Villa Bobolina of Fiesole.
@@ -380,12 +396,13 @@ During summer vacations, the Dowager Queen had the opportunity to see her grands
 Surrounded by her family, Sophia found some stability but, convinced that Greece would not remain a republic forever, refused to acquire the villa where she settled.
 She made frequent trips to Germany, where she reunited with her sister Margaret, but also to Great Britain, after having obtained the permission of King George V. The Dowager Queen also witnessed several strong moments in the life of the European elite.
 In 1929, she went to Doorn in the Netherlands for the 70th birthday of her brother, the former Emperor William II, whom she had not seen since 1914.
-The Queen Dowager was also interested in the Protestant literature, especially in the works of the Episcopalian pastor Samuel Shoemaker (particularly Religion That Works and Twice Born Ministers) and the Presbyterian Rev. James Reid (In Touch With Christ).
 Illness, death and burial
 
 Sick for many years, Sophia saw her condition worsen from 1930, which forced her to go to a hospital in Frankfurt to follow a treatment.
 After the New Year celebrations of 1932, Sophia gradually stopped eating and her health declined rapidly.
 Sophia's body was transferred to the castle of Friedrichshof, where she rested a few days before being sent to the Russian Church in Florence, where she was buried alongside her husband and mother-in-law.
+They stayed there for four years until the restoration of George II on the Greek throne in 1935.
+After his restoration on the Greek throne, George II organized the repatriation of the remains of members of his family who died in exile.
 An important religious ceremony that brought together, for six days in November 1936, all members of the royal family still alive.
 Sophia's body was buried at the royal burial ground at Tatoi Palace, where she still rests today.
 Archives
@@ -398,6 +415,8 @@ Sophia's letters to her sister Margaret are preserved in the Archive of the Hous
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -413,39 +432,9 @@ Sophia's letters to her sister Margaret are preserved in the Archive of the Hous
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -460,6 +449,23 @@ Sophia's letters to her sister Margaret are preserved in the Archive of the Hous
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -477,6 +483,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -544,29 +565,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -575,6 +588,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -587,6 +608,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -595,17 +618,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -633,6 +658,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -648,314 +757,269 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (afa36a70-e5a4-4085-bd01-b17f0592beae)
- Call ID: afa36a70-e5a4-4085-bd01-b17f0592beae
+  AssignClass (e0509e56-4d53-40ea-868c-b68106bd35b3)
+ Call ID: e0509e56-4d53-40ea-868c-b68106bd35b3
   Args:
     source: :Sophia_of_Prussia
     type: :Woman
-  AssignClass (8c769a02-5c1b-4346-ae9e-7b16b4693854)
- Call ID: 8c769a02-5c1b-4346-ae9e-7b16b4693854
+  AssignClass (91ba33e8-1bc0-4a3e-abca-0edcc2e7717d)
+ Call ID: 91ba33e8-1bc0-4a3e-abca-0edcc2e7717d
   Args:
     source: :Sophia_of_Prussia
     type: :Person
-  AssignClass (9bde0688-a481-42c3-9dc7-3b6c3bea1344)
- Call ID: 9bde0688-a481-42c3-9dc7-3b6c3bea1344
+  AddLiteral (3e53f0dc-f4cb-4107-87de-50b23b576aa3)
+ Call ID: 3e53f0dc-f4cb-4107-87de-50b23b576aa3
   Args:
-    type: :Ancestor
-    source: :Sophia_of_Prussia
-  AddLiteral (1d0d11e4-fcc0-45e9-a142-a9e1d5fca56d)
- Call ID: 1d0d11e4-fcc0-45e9-a142-a9e1d5fca56d
-  Args:
-    literal_value: Sophia of Prussia
-    source: :Sophia_of_Prussia
-    relation: :knownAs
-    literal_type: xsd:string
-  AddLiteral (8d0e117e-2048-43da-a3f4-cf963a6ce2c2)
- Call ID: 8d0e117e-2048-43da-a3f4-cf963a6ce2c2
-  Args:
-    literal_type: xsd:integer
     relation: :hasBirthYear
     source: :Sophia_of_Prussia
+    literal_type: xsd:integer
     literal_value: 1870
-  AddLiteral (3e5546b3-1381-4a08-bd06-ed0df36f8dcd)
- Call ID: 3e5546b3-1381-4a08-bd06-ed0df36f8dcd
+  AddLiteral (de17fb14-b74e-4936-8785-f3cd86b63672)
+ Call ID: de17fb14-b74e-4936-8785-f3cd86b63672
   Args:
     literal_type: xsd:integer
-    source: :Sophia_of_Prussia
-    relation: :hasDeathYear
     literal_value: 1932
-  AssignClass (7dc48673-b035-44ae-9453-54c82a711bbc)
- Call ID: 7dc48673-b035-44ae-9453-54c82a711bbc
-  Args:
-    source: :Constantine_I
-    type: :Man
-  AssignClass (87f7bb15-b516-432c-a7f0-bba3344bc4db)
- Call ID: 87f7bb15-b516-432c-a7f0-bba3344bc4db
-  Args:
-    type: :Person
-    source: :Constantine_I
-  AssignClass (26f9592b-8d2e-4b59-bb09-17ee2e7d91b8)
- Call ID: 26f9592b-8d2e-4b59-bb09-17ee2e7d91b8
-  Args:
-    source: :Constantine_I
-    type: :Ancestor
-  AddLiteral (4f69a09a-1d7f-4d3c-bb97-896e8a789751)
- Call ID: 4f69a09a-1d7f-4d3c-bb97-896e8a789751
-  Args:
-    literal_value: Constantine I
-    relation: :knownAs
-    source: :Constantine_I
-    literal_type: xsd:string
-  AddLiteral (9d2edd01-46da-455d-93ba-9f737a8b6acf)
- Call ID: 9d2edd01-46da-455d-93ba-9f737a8b6acf
-  Args:
-    relation: :hasMarriageYear
+    relation: :hasDeathYear
     source: :Sophia_of_Prussia
+  AssignClass (51489c84-4cfd-4a4c-b484-6bd0f4eb0dfd)
+ Call ID: 51489c84-4cfd-4a4c-b484-6bd0f4eb0dfd
+  Args:
+    source: :Frederick_III_German_Emperor
+    type: :Man
+  AssignClass (83b4b627-1862-4e67-a90b-706f7f87fd5c)
+ Call ID: 83b4b627-1862-4e67-a90b-706f7f87fd5c
+  Args:
+    source: :Frederick_III_German_Emperor
+    type: :Person
+  AssignClass (f55753ec-e82a-4728-b18f-beeaf2b31861)
+ Call ID: f55753ec-e82a-4728-b18f-beeaf2b31861
+  Args:
+    source: :Frederick_III_German_Emperor
+    type: :Ancestor
+  AddTriple (2e3ce298-f6e9-46d3-b690-56f1efa6a7a9)
+ Call ID: 2e3ce298-f6e9-46d3-b690-56f1efa6a7a9
+  Args:
+    relation: :hasFather
+    target: :Frederick_III_German_Emperor
+    source: :Sophia_of_Prussia
+  AssignClass (0a8dd960-23c0-4dde-937b-1d32bb5af93b)
+ Call ID: 0a8dd960-23c0-4dde-937b-1d32bb5af93b
+  Args:
+    source: :Victoria_Princess_Royal
+    type: :Woman
+  AssignClass (1be93b01-e900-4853-8772-b46ac194d661)
+ Call ID: 1be93b01-e900-4853-8772-b46ac194d661
+  Args:
+    source: :Victoria_Princess_Royal
+    type: :Person
+  AssignClass (d04f61b4-0d4b-42d9-b9b4-b6ce713ea36d)
+ Call ID: d04f61b4-0d4b-42d9-b9b4-b6ce713ea36d
+  Args:
+    source: :Victoria_Princess_Royal
+    type: :Ancestor
+  AddTriple (95bc6e4c-0de0-4544-9201-d3f862758938)
+ Call ID: 95bc6e4c-0de0-4544-9201-d3f862758938
+  Args:
+    target: :Victoria_Princess_Royal
+    relation: :hasMother
+    source: :Sophia_of_Prussia
+  AssignClass (31bb74b0-d4eb-41be-a6a1-1198458eca65)
+ Call ID: 31bb74b0-d4eb-41be-a6a1-1198458eca65
+  Args:
+    source: :Constantine_I_King_of_Greece
+    type: :Man
+  AssignClass (56ad3dd7-c154-47a4-b201-4d81c89797d1)
+ Call ID: 56ad3dd7-c154-47a4-b201-4d81c89797d1
+  Args:
+    source: :Constantine_I_King_of_Greece
+    type: :Person
+  AssignClass (89fe97db-99a9-4c75-8a31-a78757621d03)
+ Call ID: 89fe97db-99a9-4c75-8a31-a78757621d03
+  Args:
+    type: :Ancestor
+    source: :Constantine_I_King_of_Greece
+  AddLiteral (76e8c50b-9185-415d-91ef-04f6001f8a07)
+ Call ID: 76e8c50b-9185-415d-91ef-04f6001f8a07
+  Args:
     literal_type: xsd:integer
     literal_value: 1889
-  AddTriple (6575d1a0-dc20-4399-8563-6cd4c121bf37)
- Call ID: 6575d1a0-dc20-4399-8563-6cd4c121bf37
+    relation: :hasMarriageYear
+    source: :Sophia_of_Prussia
+  AddTriple (21a3cc03-8d65-4dc8-b8bb-b6fd438f1bbc)
+ Call ID: 21a3cc03-8d65-4dc8-b8bb-b6fd438f1bbc
   Args:
     relation: :hasRelation
+    target: :Constantine_I_King_of_Greece
     source: :Sophia_of_Prussia
-    target: :Constantine_I
-  AssignClass (7fca040f-7841-4e0e-9c5a-825538866750)
- Call ID: 7fca040f-7841-4e0e-9c5a-825538866750
+  AssignClass (e1085c4d-232d-4e3d-8d3c-c4ef6f283bc5)
+ Call ID: e1085c4d-232d-4e3d-8d3c-c4ef6f283bc5
   Args:
-    source: :Frederick_III
+    source: :William_II_German_Emperor
     type: :Man
-  AssignClass (dd4230d0-e5f1-482d-9604-9b295f0ce1b5)
- Call ID: dd4230d0-e5f1-482d-9604-9b295f0ce1b5
+  AssignClass (c333cfd2-e9e3-47d0-8d2e-9a8a5446aeb9)
+ Call ID: c333cfd2-e9e3-47d0-8d2e-9a8a5446aeb9
   Args:
     type: :Person
-    source: :Frederick_III
-  AssignClass (aedba248-5d95-4c4a-a74a-3c9d67666939)
- Call ID: aedba248-5d95-4c4a-a74a-3c9d67666939
+    source: :William_II_German_Emperor
+  AddTriple (e01d4b1d-5ec9-4201-9ea2-e2f9d105a0bc)
+ Call ID: e01d4b1d-5ec9-4201-9ea2-e2f9d105a0bc
   Args:
-    type: :Ancestor
-    source: :Frederick_III
-  AddTriple (5370e1ff-0e4e-4a78-8149-2d19a09a8726)
- Call ID: 5370e1ff-0e4e-4a78-8149-2d19a09a8726
-  Args:
-    target: :Frederick_III
-    source: :Sophia_of_Prussia
-    relation: :hasFather
-  AssignClass (a06298cf-7d1a-4a6f-a84d-42f6dd8a3ffc)
- Call ID: a06298cf-7d1a-4a6f-a84d-42f6dd8a3ffc
-  Args:
-    type: :Woman
-    source: :Victoria_Princess_Royal
-  AssignClass (1fd32ed7-d748-460f-9427-e33a8615b9c7)
- Call ID: 1fd32ed7-d748-460f-9427-e33a8615b9c7
-  Args:
-    source: :Victoria_Princess_Royal
-    type: :Person
-  AssignClass (36fec2d8-5d48-496f-91c0-8e7df99bce2e)
- Call ID: 36fec2d8-5d48-496f-91c0-8e7df99bce2e
-  Args:
-    source: :Victoria_Princess_Royal
-    type: :Ancestor
-  AddTriple (f0dc88a4-986e-4b89-9b4c-b73ae68b6b33)
- Call ID: f0dc88a4-986e-4b89-9b4c-b73ae68b6b33
-  Args:
-    relation: :hasMother
-    source: :Sophia_of_Prussia
-    target: :Victoria_Princess_Royal
-  AssignClass (4e1cec6c-01ae-421d-95ba-fb0c89d2a1e8)
- Call ID: 4e1cec6c-01ae-421d-95ba-fb0c89d2a1e8
-  Args:
-    source: :William_II_Germany
-    type: :Man
-  AssignClass (a8665015-e724-401b-8aac-212a69f6c65a)
- Call ID: a8665015-e724-401b-8aac-212a69f6c65a
-  Args:
-    type: :Person
-    source: :William_II_Germany
-  AddTriple (403f8e7a-cea8-4c8b-b893-911718f25f5a)
- Call ID: 403f8e7a-cea8-4c8b-b893-911718f25f5a
-  Args:
-    target: :William_II_Germany
-    source: :Sophia_of_Prussia
     relation: :hasBrother
-  AssignClass (05ba462f-65ce-4832-8a2f-7147a115597f)
- Call ID: 05ba462f-65ce-4832-8a2f-7147a115597f
+    target: :William_II_German_Emperor
+    source: :Sophia_of_Prussia
+  AssignClass (df598a68-6f2c-4a14-acf7-e4144a57aaa1)
+ Call ID: df598a68-6f2c-4a14-acf7-e4144a57aaa1
   Args:
-    source: :Alexander_I_Greece
+    source: :Alexander_I_King_of_Greece
     type: :Man
-  AssignClass (abdc2b29-b646-4790-ace9-cd9d0c9901ac)
- Call ID: abdc2b29-b646-4790-ace9-cd9d0c9901ac
+  AssignClass (4d73dcd4-223e-4c0b-8c19-e974f12baef5)
+ Call ID: 4d73dcd4-223e-4c0b-8c19-e974f12baef5
   Args:
-    source: :Alexander_I_Greece
     type: :Person
-  AssignClass (c6eedf6b-b1dd-4236-b12f-aa8d6fc2e93f)
- Call ID: c6eedf6b-b1dd-4236-b12f-aa8d6fc2e93f
+    source: :Alexander_I_King_of_Greece
+  AddTriple (2fa3b07a-00af-4ec1-866b-6a82a0b44b86)
+ Call ID: 2fa3b07a-00af-4ec1-866b-6a82a0b44b86
+  Args:
+    source: :Sophia_of_Prussia
+    target: :Alexander_I_King_of_Greece
+    relation: :hasSon
+  AssignClass (80198317-bbfd-4330-8b88-19ffc9e3e9db)
+ Call ID: 80198317-bbfd-4330-8b88-19ffc9e3e9db
+  Args:
+    source: :George_II_King_of_Greece
+    type: :Man
+  AssignClass (2a72bc8b-8bac-4d8b-9dd0-fdd60eab127c)
+ Call ID: 2a72bc8b-8bac-4d8b-9dd0-fdd60eab127c
+  Args:
+    type: :Person
+    source: :George_II_King_of_Greece
+  AddTriple (8ec01b3d-66ee-48e5-8be7-743da71491ac)
+ Call ID: 8ec01b3d-66ee-48e5-8be7-743da71491ac
+  Args:
+    source: :Sophia_of_Prussia
+    target: :George_II_King_of_Greece
+    relation: :hasSon
+  AssignClass (d432b9f9-77fa-44f9-8384-f339f8775500)
+ Call ID: d432b9f9-77fa-44f9-8384-f339f8775500
+  Args:
+    type: :Woman
+    source: :Katherine_Princess_of_Greece
+  AssignClass (78c12c78-c7eb-483f-9524-92497d97b43c)
+ Call ID: 78c12c78-c7eb-483f-9524-92497d97b43c
+  Args:
+    type: :Person
+    source: :Katherine_Princess_of_Greece
+  AddTriple (e9985a3a-11ab-4531-94c3-ee7709cd3468)
+ Call ID: e9985a3a-11ab-4531-94c3-ee7709cd3468
+  Args:
+    source: :Sophia_of_Prussia
+    relation: :hasDaughter
+    target: :Katherine_Princess_of_Greece
+  AssignClass (f3736105-88da-4ce6-9ec9-a3c8fedb1058)
+ Call ID: f3736105-88da-4ce6-9ec9-a3c8fedb1058
+  Args:
+    type: :Man
+    source: :William_I_German_Emperor
+  AssignClass (ea97eec8-dcc9-4de5-8c20-f5f45fa6ad6d)
+ Call ID: ea97eec8-dcc9-4de5-8c20-f5f45fa6ad6d
+  Args:
+    source: :William_I_German_Emperor
+    type: :Person
+  AssignClass (b2fe46a3-575e-4738-aea5-cf76408a430f)
+ Call ID: b2fe46a3-575e-4738-aea5-cf76408a430f
   Args:
     type: :Ancestor
-    source: :Alexander_I_Greece
-  AddTriple (9dd4e761-9e11-4171-b6b1-a172ab69764e)
- Call ID: 9dd4e761-9e11-4171-b6b1-a172ab69764e
+    source: :William_I_German_Emperor
+  AddTriple (2820adf9-111e-4c08-9d19-393ae21ffe9b)
+ Call ID: 2820adf9-111e-4c08-9d19-393ae21ffe9b
   Args:
-    relation: :isSonOf
-    source: :Alexander_I_Greece
-    target: :Sophia_of_Prussia
-  AddTriple (0d1cb522-45d8-44bb-a7d2-74c4ea74b1d4)
- Call ID: 0d1cb522-45d8-44bb-a7d2-74c4ea74b1d4
-  Args:
-    target: :Constantine_I
-    source: :Alexander_I_Greece
-    relation: :isSonOf
-  AssignClass (836f392b-e11d-4c61-bf1b-8e0e77cc729f)
- Call ID: 836f392b-e11d-4c61-bf1b-8e0e77cc729f
-  Args:
-    type: :Man
-    source: :George_II_Greece
-  AssignClass (8d88c015-5b3e-4c51-b09b-d8d3447e5b94)
- Call ID: 8d88c015-5b3e-4c51-b09b-d8d3447e5b94
-  Args:
-    source: :George_II_Greece
-    type: :Person
-  AddTriple (f2493821-cb5c-4ca0-96d0-9a3285a10d90)
- Call ID: f2493821-cb5c-4ca0-96d0-9a3285a10d90
-  Args:
-    source: :George_II_Greece
-    target: :Sophia_of_Prussia
-    relation: :isSonOf
-  AddTriple (6c718a5d-b207-4b4a-8dd1-b20fdf388b10)
- Call ID: 6c718a5d-b207-4b4a-8dd1-b20fdf388b10
-  Args:
-    relation: :isSonOf
-    source: :George_II_Greece
-    target: :Constantine_I
-  AssignClass (ad3e7518-fdea-4f0f-81d6-fa98a7f9b779)
- Call ID: ad3e7518-fdea-4f0f-81d6-fa98a7f9b779
-  Args:
-    type: :Woman
-    source: :Katherine_Greece
-  AssignClass (d1bc0cbb-dc72-4720-80ea-0f03d27a2355)
- Call ID: d1bc0cbb-dc72-4720-80ea-0f03d27a2355
-  Args:
-    source: :Katherine_Greece
-    type: :Person
-  AddTriple (af67e183-6a52-4c9c-bb31-4a46c15a4884)
- Call ID: af67e183-6a52-4c9c-bb31-4a46c15a4884
-  Args:
-    source: :Katherine_Greece
-    target: :Sophia_of_Prussia
-    relation: :isDaughterOf
-  AddTriple (0cda906f-69cc-44ed-8756-e680071f3f4b)
- Call ID: 0cda906f-69cc-44ed-8756-e680071f3f4b
-  Args:
-    source: :Katherine_Greece
-    target: :Constantine_I
-    relation: :isDaughterOf
-  AssignClass (f070f29a-edec-4dec-baca-f1785fd206f2)
- Call ID: f070f29a-edec-4dec-baca-f1785fd206f2
-  Args:
-    source: :Helen_Greece
-    type: :Woman
-  AssignClass (670ef82a-1bfd-48d9-b60d-31746c5f7f11)
- Call ID: 670ef82a-1bfd-48d9-b60d-31746c5f7f11
-  Args:
-    source: :Helen_Greece
-    type: :Person
-  AddTriple (aea81425-cbee-4fcf-82ce-dd0427d4eda2)
- Call ID: aea81425-cbee-4fcf-82ce-dd0427d4eda2
-  Args:
-    relation: :isDaughterOf
-    source: :Helen_Greece
-    target: :Sophia_of_Prussia
-  AddTriple (40835f29-e35c-42f4-b318-4f6e4d28c4e8)
- Call ID: 40835f29-e35c-42f4-b318-4f6e4d28c4e8
-  Args:
-    relation: :isDaughterOf
-    source: :Helen_Greece
-    target: :Constantine_I
-  AssignClass (a9ea0ebc-2fc9-4783-b04c-d6fd16b27fe9)
- Call ID: a9ea0ebc-2fc9-4783-b04c-d6fd16b27fe9
-  Args:
-    type: :Woman
-    source: :Irene_Greece
-  AssignClass (a0185c46-24e4-41ba-860e-5b007a3c82c8)
- Call ID: a0185c46-24e4-41ba-860e-5b007a3c82c8
-  Args:
-    source: :Irene_Greece
-    type: :Person
-  AddTriple (8f2b5f4b-149b-4652-95a6-91c313d3f2a7)
- Call ID: 8f2b5f4b-149b-4652-95a6-91c313d3f2a7
-  Args:
-    source: :Irene_Greece
-    target: :Sophia_of_Prussia
-    relation: :isDaughterOf
-  AddTriple (75dac68a-aba4-4dd7-8f6f-cb0290392b43)
- Call ID: 75dac68a-aba4-4dd7-8f6f-cb0290392b43
-  Args:
-    relation: :isDaughterOf
-    source: :Irene_Greece
-    target: :Constantine_I
-  AssignClass (9caddc46-2444-46f9-9986-3fec77a6591a)
- Call ID: 9caddc46-2444-46f9-9986-3fec77a6591a
-  Args:
-    source: :Paul_Greece
-    type: :Man
-  AssignClass (7238716f-9dc2-492a-806b-5b8b1f49321c)
- Call ID: 7238716f-9dc2-492a-806b-5b8b1f49321c
-  Args:
-    source: :Paul_Greece
-    type: :Person
-  AddTriple (3aea9c54-a5d2-44ed-b1c5-86a504502398)
- Call ID: 3aea9c54-a5d2-44ed-b1c5-86a504502398
-  Args:
-    relation: :isSonOf
-    target: :Sophia_of_Prussia
-    source: :Paul_Greece
-  AddTriple (a349530d-c371-4ef6-9e8d-fd9dd1a046b0)
- Call ID: a349530d-c371-4ef6-9e8d-fd9dd1a046b0
-  Args:
-    relation: :isSonOf
-    source: :Paul_Greece
-    target: :Constantine_I
-  AssignClass (b2869d26-d37e-4b5c-a74f-51565ec351cb)
- Call ID: b2869d26-d37e-4b5c-a74f-51565ec351cb
-  Args:
-    type: :Man
-    source: :George_I_Greece
-  AssignClass (a2d1ec4e-0129-490b-b9c8-d51f59847da1)
- Call ID: a2d1ec4e-0129-490b-b9c8-d51f59847da1
-  Args:
-    type: :Person
-    source: :George_I_Greece
-  AssignClass (6d858690-a2bd-495c-b240-1bc339a0d6c3)
- Call ID: 6d858690-a2bd-495c-b240-1bc339a0d6c3
-  Args:
-    source: :George_I_Greece
-    type: :Ancestor
-  AddTriple (4004d303-3d98-4e73-8960-9a84ee412d71)
- Call ID: 4004d303-3d98-4e73-8960-9a84ee412d71
-  Args:
-    target: :George_I_Greece
-    source: :Constantine_I
+    target: :William_I_German_Emperor
     relation: :hasFather
-  AssignClass (334e0bde-d79b-48d4-b9eb-49157c29773c)
- Call ID: 334e0bde-d79b-48d4-b9eb-49157c29773c
+    source: :Frederick_III_German_Emperor
+  AssignClass (0e947d8d-e03b-4554-9e77-533a5798b49d)
+ Call ID: 0e947d8d-e03b-4554-9e77-533a5798b49d
   Args:
-    source: :Olga_Greece
+    source: :Queen_Victoria
     type: :Woman
-  AssignClass (f2c2d95f-b21e-4b7d-aa5a-84e58821fbca)
- Call ID: f2c2d95f-b21e-4b7d-aa5a-84e58821fbca
+  AssignClass (223b1c54-aaba-45c4-9344-44962960ba10)
+ Call ID: 223b1c54-aaba-45c4-9344-44962960ba10
   Args:
-    source: :Olga_Greece
     type: :Person
-  AssignClass (6ed8db57-6b5d-49ad-9004-83d37ef79dc1)
- Call ID: 6ed8db57-6b5d-49ad-9004-83d37ef79dc1
+    source: :Queen_Victoria
+  AssignClass (8e4ac6a5-f804-4b2e-8c09-14527d618b36)
+ Call ID: 8e4ac6a5-f804-4b2e-8c09-14527d618b36
   Args:
     type: :Ancestor
-    source: :Olga_Greece
-  AddTriple (ca0f9f79-0e9a-4828-a413-5900cd267bce)
- Call ID: ca0f9f79-0e9a-4828-a413-5900cd267bce
+    source: :Queen_Victoria
+  AddTriple (28ceb655-d515-455d-b9a6-d8c46e1bc9ca)
+ Call ID: 28ceb655-d515-455d-b9a6-d8c46e1bc9ca
   Args:
+    target: :Queen_Victoria
     relation: :hasMother
-    target: :Olga_Greece
-    source: :Constantine_I
-  Finish (471e25d4-a742-4330-a473-8a6b0a4d7a75)
- Call ID: 471e25d4-a742-4330-a473-8a6b0a4d7a75
+    source: :Victoria_Princess_Royal
+  AssignClass (c7665a79-f6fe-4f7e-806a-d3c2c60c324b)
+ Call ID: c7665a79-f6fe-4f7e-806a-d3c2c60c324b
+  Args:
+    type: :Man
+    source: :Prince_Albert
+  AssignClass (673bf208-c711-4b6c-8c71-45f30281efd6)
+ Call ID: 673bf208-c711-4b6c-8c71-45f30281efd6
+  Args:
+    source: :Prince_Albert
+    type: :Person
+  AssignClass (802ced38-4160-48aa-8eea-e08f89fe2ce8)
+ Call ID: 802ced38-4160-48aa-8eea-e08f89fe2ce8
+  Args:
+    type: :Ancestor
+    source: :Prince_Albert
+  AddTriple (1354c92e-9c24-466d-a06f-e0d1477d6f0f)
+ Call ID: 1354c92e-9c24-466d-a06f-e0d1477d6f0f
+  Args:
+    relation: :hasFather
+    target: :Prince_Albert
+    source: :Victoria_Princess_Royal
+  AssignClass (784147f7-cd3d-4ea8-8cc5-bd6a6b3eed7e)
+ Call ID: 784147f7-cd3d-4ea8-8cc5-bd6a6b3eed7e
+  Args:
+    type: :Man
+    source: :George_I_King_of_Greece
+  AssignClass (61bf4f82-6f52-4703-b369-63f6c8a29452)
+ Call ID: 61bf4f82-6f52-4703-b369-63f6c8a29452
+  Args:
+    source: :George_I_King_of_Greece
+    type: :Person
+  AssignClass (d9d6ea0d-bacc-4c2f-be84-a74c7f84f518)
+ Call ID: d9d6ea0d-bacc-4c2f-be84-a74c7f84f518
+  Args:
+    type: :Ancestor
+    source: :George_I_King_of_Greece
+  AddTriple (88ee63f5-eef6-4040-a6fc-228519c5a4c4)
+ Call ID: 88ee63f5-eef6-4040-a6fc-228519c5a4c4
+  Args:
+    source: :Constantine_I_King_of_Greece
+    relation: :hasFather
+    target: :George_I_King_of_Greece
+  AssignClass (b24c32c9-1803-43e2-8527-2428668afd30)
+ Call ID: b24c32c9-1803-43e2-8527-2428668afd30
+  Args:
+    source: :Queen_Olga_of_Greece
+    type: :Woman
+  AssignClass (5975d2f9-5f51-4fef-9886-2a9c0513cfed)
+ Call ID: 5975d2f9-5f51-4fef-9886-2a9c0513cfed
+  Args:
+    type: :Person
+    source: :Queen_Olga_of_Greece
+  AssignClass (3e13a054-bf32-41c5-a31f-81d8112b0637)
+ Call ID: 3e13a054-bf32-41c5-a31f-81d8112b0637
+  Args:
+    source: :Queen_Olga_of_Greece
+    type: :Ancestor
+  AddTriple (2942921a-218c-47c8-a7a3-a5a0b264f767)
+ Call ID: 2942921a-218c-47c8-a7a3-a5a0b264f767
+  Args:
+    target: :Queen_Olga_of_Greece
+    relation: :hasMother
+    source: :Constantine_I_King_of_Greece
+  Finish (815fb0de-0027-4c80-894b-c6d10ed69238)
+ Call ID: 815fb0de-0027-4c80-894b-c6d10ed69238
   Args:

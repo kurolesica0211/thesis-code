@@ -2,21 +2,26 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Patrick_Gregers_Richard_Windsor a :Man,
-        :Person ;
-    :alsoKnownAs "Alex Ulster"^^xsd:string ;
-    :hasBirthYear 1974 ;
-    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
-    :hasMarriageYear 2002 ;
-    :hasMother data:Birgitte_Duchess_of_Gloucester ;
-    :hasRelation data:Claire_Booth .
+data:Louis_Charles_Riprand_Victor_J%C3%A9r%C3%B4me_Marie_Napol%C3%A9on a :Man ;
+    :hasBirthYear 2022 ;
+    :hasFather data:Jean-Christophe ;
+    :hasMother data:Olympia .
 
-data:Birgitte_Duchess_of_Gloucester a :Person,
-        :Woman .
+data:B%C3%A9atrice a :Woman ;
+    :hasFather data:Ferdinand .
 
-data:Claire_Booth a :Person,
-        :Woman .
+data:Charles a :Man ;
+    :hasFather data:Louis .
 
-data:Prince_Richard_Duke_of_Gloucester a :Man,
-        :Person .
+data:Ferdinand a :Man .
+
+data:Jean-Christophe a :Man ;
+    :hasBirthYear 1986 ;
+    :hasFather data:Charles ;
+    :hasMother data:B%C3%A9atrice .
+
+data:Louis a :Man ;
+    :hasDeathYear 1997 .
+
+data:Olympia a :Woman .
 

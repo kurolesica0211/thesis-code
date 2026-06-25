@@ -1,0 +1,118 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Man,
+        :Person ;
+    rdfs:label "Frederick Augustus II, Grand Duke of Oldenburg"^^xsd:string ;
+    data:posIndicesFull "443:464"^^xsd:string ;
+    data:posIndicesPart "1080:1084"^^xsd:string,
+        "1236:1240"^^xsd:string,
+        "1244:1253"^^xsd:string,
+        "1271:1275"^^xsd:string,
+        "1327:1336"^^xsd:string,
+        "1424:1428"^^xsd:string,
+        "1585:1589"^^xsd:string,
+        "1669:1673"^^xsd:string,
+        "654:659"^^xsd:string,
+        "676:685"^^xsd:string,
+        "731:736"^^xsd:string,
+        "737:741"^^xsd:string,
+        "795:804"^^xsd:string,
+        "808:817"^^xsd:string,
+        "885:889"^^xsd:string,
+        "893:902"^^xsd:string,
+        "927:936"^^xsd:string ;
+    data:wdtLink wdt:Q62129 ;
+    :alsoKnownAs "Frederick Augustus II"^^xsd:string,
+        "Friedrich August von Oldenburg"^^xsd:string ;
+    :hasBrother data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasRelation data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isBrotherOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
+    :isSiblingOf data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg .
+
+data:Princess_Helene_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Helene of Waldeck and Pyrmont"^^xsd:string ;
+    data:posIndicesFull "354:392"^^xsd:string ;
+    data:posIndicesPart "1458:1466"^^xsd:string,
+        "567:574"^^xsd:string,
+        "579:586"^^xsd:string ;
+    data:wdtLink wdt:Q2280905 ;
+    :alsoKnownAs "Princess Helena of Waldeck and Pyrmont"^^xsd:string ;
+    :hasChild data:Anton-Günther-_Duke_of_Oldenburg ;
+    :hasRelation data:Anton-Günther-_Duke_of_Oldenburg,
+        data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasSon data:Anton-Günther-_Duke_of_Oldenburg ;
+    :isAncestorOf data:Anton-Günther-_Duke_of_Oldenburg ;
+    :isAuntOf data:Anton-Günther-_Duke_of_Oldenburg ;
+    :isBloodrelationOf data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :isMotherOf data:Anton-Günther-_Duke_of_Oldenburg ;
+    :isParentOf data:Anton-Günther-_Duke_of_Oldenburg ;
+    :isSiblingOf data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :isSisterOf data:Princess_Helene_of_Waldeck_and_Pyrmont .
+
+data:Anton-Günther-_Duke_of_Oldenburg a :Man,
+        :Person ;
+    rdfs:label "Anton-Günther, Duke of Oldenburg"^^xsd:string ;
+    data:posIndicesFull "0:32"^^xsd:string ;
+    data:posIndicesPart "1080:1084"^^xsd:string,
+        "1085:1090"^^xsd:string,
+        "1091:1098"^^xsd:string,
+        "1236:1240"^^xsd:string,
+        "1244:1253"^^xsd:string,
+        "1271:1275"^^xsd:string,
+        "1327:1336"^^xsd:string,
+        "1424:1428"^^xsd:string,
+        "1429:1434"^^xsd:string,
+        "1435:1442"^^xsd:string,
+        "1585:1589"^^xsd:string,
+        "1669:1673"^^xsd:string,
+        "296:300"^^xsd:string,
+        "313:322"^^xsd:string,
+        "406:410"^^xsd:string,
+        "411:416"^^xsd:string,
+        "417:424"^^xsd:string,
+        "481:485"^^xsd:string,
+        "489:498"^^xsd:string,
+        "676:685"^^xsd:string,
+        "737:741"^^xsd:string,
+        "795:804"^^xsd:string,
+        "808:817"^^xsd:string,
+        "885:889"^^xsd:string,
+        "893:902"^^xsd:string,
+        "927:936"^^xsd:string ;
+    data:wdtLink wdt:Q65639 ;
+    :hasAncestor data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasBrother data:Anton-Günther-_Duke_of_Oldenburg ;
+    :hasMother data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasParent data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasRelation data:Anton-Günther-_Duke_of_Oldenburg,
+        data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Anton-Günther-_Duke_of_Oldenburg ;
+    :isBrotherOf data:Anton-Günther-_Duke_of_Oldenburg ;
+    :isChildOf data:Princess_Helene_of_Waldeck_and_Pyrmont ;
+    :isSiblingOf data:Anton-Günther-_Duke_of_Oldenburg ;
+    :isSonOf data:Princess_Helene_of_Waldeck_and_Pyrmont .
+

@@ -2,58 +2,80 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_of_Greece a :Man,
-        :Person ;
-    :hasFather data:Constantine_I_of_Greece .
+data:BertholdMargraveOfBaden a :Man ;
+    :hasSex data:Male .
 
-data:Cecilie_of_Greece a :Ancestor,
-        :Person,
+data:ConstantineOfGreece a :Ancestor,
+        :Man ;
+    :hasSex data:Male ;
+    :isBrotherOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isFatherOf data:AlexanderOfGreece .
+
+data:KingChristianIXOfDenmark a :Ancestor,
+        :Man ;
+    :hasSex data:Male ;
+    :isFatherOf data:KingGeorgeIOfGreece .
+
+data:PrinceChristophOfHesse a :Man ;
+    :hasSex data:Male .
+
+data:PrinceGottfriedOfHohenloheLangenburg a :Man ;
+    :hasSex data:Male .
+
+data:PrinceLouisOfBattenberg a :Ancestor,
+        :Man ;
+    :hasSex data:Male ;
+    :isFatherOf data:PrincessAliceOfBattenberg .
+
+data:PrincessVictoriaOfHesseAndByRhine a :Ancestor,
         :Woman ;
-    :hasFather data:Prince_Andrew_of_Greece_and_Denmark .
+    :hasSex data:Female ;
+    :isMotherOf data:PrincessAliceOfBattenberg .
 
-data:Constantine_I_of_Greece a :Ancestor,
-        :Man,
-        :Person ;
-    :isBrotherOf data:Prince_Andrew_of_Greece_and_Denmark .
+data:VictoriaMountbattenMarchionessOfMilfordHaven a :Woman ;
+    :hasSex data:Female .
 
-data:King_Christian_IX_of_Denmark a :Ancestor,
-        :Man,
-        :Person .
+data:AlexanderOfGreece a :Man ;
+    :hasSex data:Male .
 
-data:King_George_I_of_Greece a :Ancestor,
-        :Man,
-        :Person .
+data:CecilieOfGreece a :Woman ;
+    :hasSex data:Female .
 
-data:Prince_Louis_of_Battenberg a :Ancestor,
-        :Man,
-        :Person .
+data:PrincePhilipDukeOfEdinburgh a :Man ;
+    :hasSex data:Male .
 
-data:Prince_Philip_Duke_of_Edinburgh a :Man,
-        :Person ;
-    :hasMother data:Princess_Alice_of_Battenberg .
-
-data:Princess_Alice_of_Battenberg a :Ancestor,
-        :Person,
+data:PrincessAliceOfBattenberg a :Ancestor,
         :Woman ;
-    :hasFather data:Prince_Louis_of_Battenberg ;
-    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine .
+    :hasSex data:Female ;
+    :isMotherOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh .
 
-data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
-        :Person,
-        :Woman .
+data:QueenOlgaOfGreece a :Ancestor,
+        :Woman ;
+    :hasSex data:Female ;
+    :isMotherOf data:PrinceAndrewOfGreeceAndDenmark .
 
-data:Queen_Olga_of_Greece a :Ancestor,
-        :Person,
-        :Woman .
+data:KingGeorgeIOfGreece a :Ancestor,
+        :Man ;
+    :hasSex data:Male ;
+    :isFatherOf data:PrinceAndrewOfGreeceAndDenmark .
 
-data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person ;
-    :hasAncestor data:King_Christian_IX_of_Denmark ;
+data:PrinceAndrewOfGreeceAndDenmark a :Ancestor,
+        :Man ;
+    :alsoKnownAs "Andréas"^^xsd:string ;
     :hasBirthYear 1882 ;
     :hasDeathYear 1944 ;
-    :hasFather data:King_George_I_of_Greece ;
+    :hasFather data:KingGeorgeIOfGreece ;
     :hasMarriageYear 1903 ;
-    :hasMother data:Queen_Olga_of_Greece ;
-    :isFatherOf data:Prince_Philip_Duke_of_Edinburgh .
+    :hasMother data:QueenOlgaOfGreece ;
+    :hasSex data:Male ;
+    :isFatherOf data:CecilieOfGreece,
+        data:PrincePhilipDukeOfEdinburgh ;
+    :isSonOf data:KingGeorgeIOfGreece,
+        data:QueenOlgaOfGreece ;
+    :knownAs "Prince Andrew of Greece and Denmark"^^xsd:string .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

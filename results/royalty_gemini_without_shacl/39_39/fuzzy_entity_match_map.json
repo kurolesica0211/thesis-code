@@ -16,35 +16,28 @@
       "qid": "Q131934987",
       "label": "Q131934987",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Edoardo_Mapelli_Mozzi",
       "qid": "Q68688016",
       "label": "Edoardo Mapelli Mozzi",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Sienna_Mapelli_Mozzi",
       "qid": "Q108703114",
       "label": "Sienna Mapelli Mozzi",
-      "distance": 1,
-      "gender": "female"
+      "distance": 2,
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Beatrice_of_York",
       "qid": "Q165657",
       "label": "Princess Beatrice of York",
-      "distance": 2,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Eugenie_of_York",
-      "qid": "Q165709",
-      "label": "Princess Eugenie of York",
-      "distance": 2,
-      "gender": "female"
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
@@ -59,11 +52,11 @@
       "ground_truth_qid": "Q68688016",
       "ground_truth_label": "Edoardo Mapelli Mozzi",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Edoardo Mapelli Mozzi",
       "best_candidate_label": "Edoardo Mapelli Mozzi",
       "best_candidate_qid": "Q68688016",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -76,30 +69,12 @@
       "ground_truth_uri": "http://example.com/data#Princess_Beatrice_of_York",
       "ground_truth_qid": "Q165657",
       "ground_truth_label": "Princess Beatrice of York",
-      "ground_truth_distance": 2,
-      "ground_truth_gender": "female",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Beatrice",
       "best_candidate_label": "Princess Beatrice of York",
       "best_candidate_qid": "Q165657",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Princess_Eugenie",
-      "extracted_local_name": "Princess_Eugenie",
-      "embedding_text": "Princess Eugenie",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Princess_Eugenie_of_York",
-      "ground_truth_qid": "Q165709",
-      "ground_truth_label": "Princess Eugenie of York",
-      "ground_truth_distance": 2,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Princess Eugenie",
-      "best_candidate_label": "Princess Eugenie of York",
-      "best_candidate_qid": "Q165709",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -112,12 +87,12 @@
       "ground_truth_uri": "http://example.com/data#Sienna_Mapelli_Mozzi",
       "ground_truth_qid": "Q108703114",
       "ground_truth_label": "Sienna Mapelli Mozzi",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Sienna Elizabeth Mapelli Mozzi",
       "best_candidate_label": "Sienna Mapelli Mozzi",
       "best_candidate_qid": "Q108703114",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -132,11 +107,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Edoardo Mapelli Mozzi",
-      "best_candidate_label": "Edoardo Mapelli Mozzi",
-      "best_candidate_qid": "Q68688016",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.717948717948718
+      "best_candidate_match_text": "Sienna Mapelli Mozzi",
+      "best_candidate_label": "Sienna Mapelli Mozzi",
+      "best_candidate_qid": "Q108703114",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.7368421052631579
     },
     {
       "extracted_uri": "http://example.org/data/Athena_Elizabeth_Rose",
@@ -153,26 +128,8 @@
       "best_candidate_match_text": "Sienna Elizabeth Mapelli Mozzi",
       "best_candidate_label": "Sienna Mapelli Mozzi",
       "best_candidate_qid": "Q108703114",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.5882352941176471
-    },
-    {
-      "extracted_uri": "http://example.org/data/Charles_III",
-      "extracted_local_name": "Charles_III",
-      "embedding_text": "Charles III",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": "Edoardo Alessandro Mapelli Mozzi",
-      "best_candidate_label": "Edoardo Mapelli Mozzi",
-      "best_candidate_qid": "Q68688016",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.37209302325581395
     },
     {
       "extracted_uri": "http://example.org/data/Christopher_Woolf",
@@ -186,11 +143,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Count Edoardo Mapelli Mozzi",
-      "best_candidate_label": "Edoardo Mapelli Mozzi",
-      "best_candidate_qid": "Q68688016",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.18181818181818182
+      "best_candidate_match_text": "Princess Beatrice, Mrs Edoardo Mapelli Mozzi",
+      "best_candidate_label": "Princess Beatrice of York",
+      "best_candidate_qid": "Q165657",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.29508196721311475
     },
     {
       "extracted_uri": "http://example.org/data/Dara_Huang",
@@ -204,34 +161,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Eugenie Victoria Helena",
-      "best_candidate_label": "Princess Eugenie of York",
-      "best_candidate_qid": "Q165709",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.30303030303030304
-    },
-    {
-      "extracted_uri": "http://example.org/data/Paolo_Mapelli_Mozzi",
-      "extracted_local_name": "Paolo_Mapelli_Mozzi",
-      "embedding_text": "Paolo Mapelli Mozzi",
-      "extracted_gender": "male",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Edoardo Mapelli Mozzi",
+      "best_candidate_label": "Edoardo Mapelli Mozzi",
+      "best_candidate_qid": "Q68688016",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.3225806451612903
     },
     {
-      "extracted_uri": "http://example.org/data/Queen_Victoria",
-      "extracted_local_name": "Queen_Victoria",
-      "embedding_text": "Queen Victoria",
+      "extracted_uri": "http://example.org/data/Princess_Eugenie",
+      "extracted_local_name": "Princess_Eugenie",
+      "embedding_text": "Princess Eugenie",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -240,16 +179,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Sienna Mapelli Mozzi",
+      "best_candidate_match_text": "Sienna Elizabeth Mapelli Mozzi",
       "best_candidate_label": "Sienna Mapelli Mozzi",
       "best_candidate_qid": "Q108703114",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.35294117647058826
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.2608695652173913
     }
   ],
   "summary": {
-    "entities_total": 11,
-    "entities_matched": 4,
-    "entities_unmatched": 7
+    "entities_total": 8,
+    "entities_matched": 3,
+    "entities_unmatched": 5
   }
 }

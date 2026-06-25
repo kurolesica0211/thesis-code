@@ -85,27 +85,228 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Philipp, Prince of Hohenlohe-Langenburg (Philipp Gottfried Alexander; born 20 January 1970), is the head of the House of Hohenlohe-Langenburg, since the death of his father in 2004.
-Early life and ancestry
+Michael I (Romanian: Mihai I .mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}Romanian:  i; 25 October 1921 – 5 December 2017) was the last king of Romania, reigning from 20 July 1927 to 8 June 1930 and again from 6 September 1940 until his forced abdication on 30 December 1947.
+Shortly after Michael's birth, his father, Crown Prince Carol, had become involved in a controversial relationship with Magda Lupescu.
+In 1925, Carol was pressured to renounce his rights (in favour of his son Michael) to the throne and moved to Paris in exile with Lupescu.
+In July 1927, following the death of his grandfather Ferdinand I, Michael ascended the throne at age five, the youngest crowned head in Europe.
+As Michael was still a minor, a regency council was instituted, composed of his uncle Prince Nicolas, Patriarch Miron Cristea and Chief Justice Gheorghe Buzdugan.
+The council proved to be ineffective and, in 1930, Carol returned to Romania and replaced his son as monarch, reigning as Carol II.
+As a result, Michael returned to being heir apparent to the throne and was given the additional title of Grand Voievod of Alba-Iulia.
+Carol II was forced to abdicate in 1940, and Michael once again became king.
+Under the government led by the military dictator Ion Antonescu, Romania became aligned with Nazi Germany.
+In 1944, Michael participated in a coup against Antonescu, appointed Constantin Sănătescu as his replacement, and subsequently declared an alliance with the Allies.
+In March 1945, political pressures forced Michael to appoint a pro-Soviet government headed by Petru Groza.
+From August 1945 to January 1946, Michael went on a "royal strike" and unsuccessfully tried to oppose Groza's communist-controlled government by refusing to sign and endorse its decrees.
+In November 1947, Michael attended the wedding of his cousins, the future Queen Elizabeth II of the United Kingdom and Prince Philip of Greece and Denmark in London.
+Shortly thereafter, on the morning of 30 December 1947, Groza met with Michael and compelled him to abdicate, while the monarchy was abolished.
+Michael was forced into exile, his properties confiscated, and his citizenship stripped.
+In 1948, he married Princess Anne of Bourbon-Parma, with whom he had five daughters.
+Nicolae Ceaușescu's communist dictatorship was overthrown in December 1989, and the following year Michael attempted to return to Romania, only to be arrested and forced to leave upon arrival.
+In 1992, Michael was allowed to visit Romania for Easter, where he was greeted by huge crowds; a speech he gave from his hotel window drew an estimated one million people to Bucharest.
+Alarmed by Michael's popularity, the post-communist government of Ion Iliescu refused to allow him any further visits.
+In 1997, after Iliescu's defeat by Emil Constantinescu in the presidential election of the previous year, Michael's citizenship was restored and he was allowed to visit Romania again.
+Early life
 
-He was born in Crailsheim, West Germany, the middle child and only son of Kraft, Prince of Hohenlohe-Langenburg (1935–2004) and his first wife, Princess Charlotte of Croÿ (b. 1938).
-Paternally, he is a grandson of Princess Margarita of Greece and Denmark, and a grandnephew of Prince Philip, Duke of Edinburgh, whose funeral he attended.
-Anne, Princess Royal is one of his godmothers.
-Maternally, he is the grandson of Prince Alexander of Croy (1912–2002) and his Scottish wife, Anna Elspeth Campbell (1917–1986), granddaughter of Archibald Campbell, 6th of Glendaruel.
-He sought public support from (then) Charles, Prince of Wales, the current King Charles III, and from former vice chancellor and foreign minister Joschka Fischer of the Green Party, who both attended a conference at Langenburg Castle in 2013.
-Together with Fischer he founded the Langenburg Forum for Sustainability which cooperates with Charles' International Sustainability Unit
+Michael was born in 1921 at Foișor Castle on the Royal Complex of Peleș in Sinaia, Romania, the son of Crown Prince Carol of Romania and Crown Princess Elena.
+He was born as the paternal grandson of the then reigning King Ferdinand I of Romania and maternal grandson of the then reigning King Constantine I of Greece.
+Michael's parents had married on 10 March 1921, and he was thus born just seven months after the wedding.
+When Carol eloped with his mistress Elena Magda Lupescu and renounced his rights to the throne in December 1925, Michael was declared heir apparent.
+Michael succeeded to the throne of Romania upon Ferdinand's death in July 1927, before his sixth birthday.
+Later, Michael attended a special school established in 1932 by his father.
+Reign
+
+1930s and the Antonescu era
+
+A regency, which included his uncle, Prince Nicolae, Patriarch Miron Cristea, and the country's Chief Justice (Gheorghe Buzdugan, and from October 1929, Constantin Sărăţeanu) functioned on behalf of the five-year-old Michael, when he succeeded Ferdinand in 1927.
+In 1930, Carol II returned to the country at the invitation of politicians dissatisfied with the regency in the context of the Great Depression, and was proclaimed king by the Parliament.
+Michael was demoted to crown prince with the title "Grand Voivode of Alba Iulia".
+In November 1939, Michael joined the Romanian Senate, as the 1938 Constitution guaranteed him a seat there upon reaching the age of eighteen.
+Just days after the Second Vienna Award, the pro-Nazi anti-Soviet regime of Prime Minister Marshal Ion Antonescu staged a coup d'état against Carol II, whom he claimed to be "anti-German".
+Antonescu suspended the Constitution, dissolved the Parliament, and re-installed the 18-year-old Michael as king, by popular acclaim in September 1940.
+(Although the Constitution was restored in 1944, and the Romanian Parliament in 1946, Michael did not subsequently take a formal oath nor have his reign approved retroactively by Parliament.)
+Michael was crowned with the Steel Crown and anointed King of Romania by the Orthodox Patriarch of Romania, Nicodim Munteanu, in the Patriarchal Cathedral of Bucharest, on the day of his accession, 6 September 1940.
+Although King Michael was formally the Supreme Head of the Army, named Conducător ("Leader of the people"), and entitled to appoint the Prime Minister with full powers, in reality he was forced to remain a figurehead for most of the war, until August 1944.
+Michael had lunch with Adolf Hitler twice—once with his father in Bavaria in 1937, and with his mother in Berlin in 1941.
+Turning against Nazi Germany
+
+In 1944, World War II was going badly for the Axis powers, but Antonescu was still in control of Romania.
+By August 1944, the Soviet conquest of Romania had become inevitable, and was expected in a few months.
+On 23 August 1944, Michael joined the pro-Allies politicians, a number of army officers, and armed Communist-led civilians in staging a coup against Antonescu.
+Michael ordered his arrest by the Royal Palace Guard.
+On the same night, the new Prime Minister, Lt. General Constantin Sănătescu—appointed by King Michael—gave custody of Antonescu to the communists (in spite of alleged instructions to the contrary by the King), and the latter delivered him to the Soviets on 1 September.
+In a radio broadcast to the Romanian nation and army, Michael issued a ceasefire just as the Red Army was penetrating the Moldavian front, proclaimed Romania's loyalty to the Allies, announced the acceptance of the armistice offered by the United Kingdom, the United States, and the Soviet Union, and declared war on Germany.
+Although the country's alliance with Nazi Germany was ended, the coup sped the Red Army's advance into Romania.
+Under the terms of the armistice, Romania recognized its defeat by the USSR and was placed under occupation of the Allied forces, with the Soviets, as their representative, in control of media, communication, post, and civil administration behind the front.
+At the end of the war, King Michael was awarded the highest degree (Chief Commander) of the American Legion of Merit by U.S. President Harry S. Truman.
+He was also decorated with the Soviet Order of Victory by Joseph Stalin "for the courageous act of the radical change in Romania's politics towards a break-up from Hitler's Germany and an alliance with the United Nations, at the moment when there was no clear sign yet of Germany's defeat", according to the official description of the decoration.
+With the death of Michał Rola-Żymierski in 1989, Michael became the sole surviving recipient of the Order of Victory.
+Reign under Communism
+
+In March 1945, political pressures forced King Michael to appoint a pro-Soviet government headed by Petru Groza.
+For the next two-plus years, Michael functioned again as little more than a figurehead.
+Between August 1945 and January 1946, during what was later known as the "royal strike", King Michael tried unsuccessfully to oppose the Groza government by refusing to sign its decrees.
+In response to Soviet, British, and American pressures, King Michael eventually gave up his opposition to the communist government and stopped demanding its resignation.
+He did not pardon Mareșal Antonescu, the former Prime Minister, who was sentenced to death "for betrayal of the Romanian people for the benefit of Nazi Germany, for the economic and political subjugation of Romania to Germany, for cooperation with the Iron Guard, for murdering his political opponents, for the mass murder of civilians and crimes against peace".
+Nor did King Michael manage to save such leaders of the opposition as Iuliu Maniu and the Bratianus, victims of Communist political trials, as the Constitution prevented him from doing so without the counter-signature of Communist Justice Minister Lucrețiu Pătrășcanu (who himself was later eliminated by Gheorghiu-Dej's opposing Communist faction).
+The memoirs of King Michael's aunt Princess Ileana quoted Emil Bodnăraș—her alleged lover, Romania's Communist minister of defence, and a Soviet spy—as saying: "Well, if the King decides not to sign the death warrant, I promise that we will uphold his point of view."
+Surely you do not wish this additional handicap at this moment!"
 
 
-Langenburg castle is partially open to the public, including the state rooms and a museum of classic cars.
-Marriage and issue
+Forced abdication
 
-He married Saskia Binder (b. 15 January 1973 in Munich), daughter of former Deutsche Bank Munich director Hans Peter Binder, on 6 September 2003 in a civil ceremony at Langenburg.
+In November 1947, King Michael travelled to London for the wedding of his cousins, Princess Elizabeth (later Queen Elizabeth II) and Prince Philip of Greece and Denmark, an occasion during which he met Princess Anne of Bourbon-Parma (his second cousin once removed), who was to become his wife.
+According to his own account, King Michael rejected any offers of asylum and decided to return to Romania, contrary to the confidential, strong advice of the British Ambassador to Romania.
+Early on the morning of 30 December 1947, Michael was preparing for a New Year's party at Peleș Castle in Sinaia, when Groza summoned him back to Bucharest.
+Michael returned to Elisabeta Palace in Bucharest, to find it surrounded by troops from the Tudor Vladimirescu Division, an army unit completely loyal to the Communists.
+Unable to call in loyal troops, due to his telephone lines allegedly being cut, Michael signed the document.
+On 3 January 1948, Michael was forced to leave the country, followed over a week later by Princesses Elisabeth and Ileana, who collaborated so closely with the Soviets that they became known as the King's "Red Aunts".
+Michael's own account of the abdication varied over time, and was gradually embellished, especially after 1990.
+Thus, in accounts published in 1950 and 1977, Michael only mentioned seeing armed groups with machine-guns on their shoulders around the palace, while in much later accounts these were described as "heavy artillery, ready to fire at any moment".
+The story of the supposed blackmail also evolved: in the 1950 account, Groza tried to negotiate some form of material compensations for the abdication, noting he could not guarantee for Michael's life in case he refused, and his refusal could lead to thousand of arrests and possibly a civil war; in a hearing before the United States House of Representatives in 1954, Michael mentioned Groza's generic threats regarding his personal security, bloodshed and ruin of the country, as well as "vague hints" of persecution, with Groza suggesting the government had a large dossier on Michael; the possible arrest of thousands and a generic threat of bloodshed is also mentioned in the 1977 account; however, beginning with 1990, Michael claimed that Groza threatened to shoot 1,000 students that had already been arrested for publicly showing their attachment to the throne.
+Thus, while according to a Time article published in 1948, Groza threatened to arrest thousands of people and order a bloodbath unless Michael abdicated, in an interview with The New York Times from 2007, Michael recounted: "It was blackmail.
+Another new element in Michael's account after 1990 was that Groza had threatened him at gunpoint; in earlier accounts Michael mentioned that Groza had shown him the pistol he was carrying only after Michael signed the abdication.
+According to the autobiography of the former head of the Soviet intelligence agency NKVD, Major General Pavel Sudoplatov, the Deputy Soviet Foreign Commissar Andrey Vyshinsky personally conducted negotiations with King Michael for his abdication, guaranteeing part of a pension to be paid to Michael in Mexico.
+According to a few articles in Jurnalul Național, Michael's abdication was negotiated with the Communist government, which allowed him to leave the country with the goods he requested, accompanied by some of the royal retinue.
+According to Albanian Communist leader Enver Hoxha's account of his conversations with the Romanian Communist leaders on the monarch's abdication, it was Gheorghiu-Dej, not Groza, who forced Michael's abdication at gunpoint.
+In March 1948, Michael denounced his abdication as illegal, and contended he was still the rightful King of Romania.
+According to Time magazine, he would have done so sooner, but for much of early 1948, he had been negotiating with the Communists over properties he had left in Romania.
+There are reports that Romanian Communist authorities allowed King Michael to depart with 42 valuable Crown-owned paintings in November 1947, so that he would leave Romania faster.
+One of the paintings belonging to the Romanian Crown, which was supposedly taken out of the country by King Michael in November 1947, returned to Romania in 2004 as a donation made by John Kreuger, the former husband of King Michael's daughter Irina.
+In 2005, Romanian Prime Minister Călin Popescu-Tăriceanu denied these accusations about King Michael, stating that the Romanian government has no proof of any such action by King Michael and that, prior to 1949, the government had no official records of any artwork taken over from the former royal residences.
+According to Ivor Porter's authorized biography, Michael of Romania: The King and The Country (2005), which quotes Queen Mother Helen's daily diary, the Romanian royal family took out paintings belonging to the Romanian Royal Crown, on their November 1947 trip to London to the wedding of the future Queen Elizabeth II; two of these paintings, signed by El Greco, were sold in 1976.
+According to declassified Foreign Office documents that were the subject of news reports in 2005, when he left Romania, the exiled King Michael's only assets amounted to 500,000 Swiss francs.
+Recently declassified Soviet transcripts of talks between Joseph Stalin and the Romanian Prime Minister Petru Groza show that shortly before his abdication, King Michael received from the communist government assets amounting to 500,000 Swiss francs.
+King Michael, however, repeatedly denied that the Communist government had allowed him to take into exile any financial assets or valuable goods besides four personal automobiles loaded on two train cars.
+Marriage
+
+Engagement
+
+In November 1947, Michael I met a distant relative, Princess Anne of Bourbon-Parma, who was visiting London for the wedding of Princess Elizabeth and Philip Mountbatten, Duke of Edinburgh.
+A year before this, Queen Helen, the Queen Mother, had invited Princess Margaret of Bourbon-Parma and her children, who included Anne, to make a visit to Bucharest, but the plan did not come off.
+Meanwhile, King Michael I had glimpsed Princess Anne in a newsreel and requested a photograph from the film footage.
+She did not want to accompany her parents to London for the royal wedding as she wished to avoid meeting Michael I in official surroundings.
+Upon arrival in London, she stopped by Claridge's to see her parents, and found herself being introduced unexpectedly to King Michael I. Abashed to the point of confusion, she clicked her heels instead of curtseying, and fled in embarrassment.
+Charmed, the king saw her again the night of the wedding at the Luxembourg embassy soirée, confided in her some of his concerns about the Communist takeover of Romania and fears for his mother's safety, and nicknamed her Nan.
+A few days later, she accepted an invitation to accompany Michael and his mother when he piloted a Beechcraft aeroplane to take his aunt Princess Irene, Duchess of Aosta, back home to Lausanne.
+Sixteen days after meeting, Michael proposed to Anne while the couple were out on a drive in Lausanne.
+Although Michael gave her an engagement ring a few days later, he felt obliged to refrain from a public announcement until he informed his government, despite the fact that the press besieged them in anticipation.
+Michael I returned to Romania, where he was told by the prime minister that a wedding announcement was not "opportune".
+Yet within days it was used as the government's public explanation for Michael's sudden "abdication", when in fact the king was deposed by the Communists on 30 December.
+Princess Anne was unable to get further news of King Michael
+Wedding
+
+As a Bourbon, Anne was bound by the canon law of the Roman Catholic Church, which required that she receive a dispensation to marry a non-Catholic Christian (King Michael I was Orthodox).
+Michael refused to make this promise since it would have violated Romania's monarchical constitution, and would be likely to have a detrimental impact upon any possible restoration.
+The Holy See (which handled the matter directly since King Michael I was a member of a reigning dynasty) refused to grant the dispensation unless Michael made the required promise.
+Helen, Queen Mother of Romania and her sister Princess Irene, Duchess of Aosta (an Orthodox married to a Catholic Prince) met with the fiancée's parents in Paris, where the two families resolved to take their case to the Vatican in person.
+In early March, the couple's mothers met with Pope Pius XII who, despite the entreaties of the Queen Mother and the fact that Anne's mother, Princess Margrethe pounded her fist on the table in anger, refused permission for Anne to marry King Michael I.
+
+
+It has been surmised that the Pope's refusal was, in part, motivated by the fact that when Princess Giovanna of Savoy married Anne's cousin, King Boris III of Bulgaria, in 1930, the couple had undertaken to raise their future children as Roman Catholics, but had baptized them in the Orthodox faith in deference to Bulgaria's state religion.
+However, King Michael I declined to make a promise he could not keep politically, while Anne's mother was herself the daughter of a mixed marriage between a Catholic (Princess Marie d'Orléans) and a Protestant (Prince Valdemar of Denmark), who had abided by their pre-ne temere compromise to raise their sons as Protestant and their daughter, Margrethe, as Catholic.
+Anne's paternal uncle, Prince Xavier of Bourbon-Parma, issued a statement objecting to any marriage conducted against the will of the Pope and the bride's family.
+It was he, not the Pontiff, who forbade Anne's parents to attend the wedding.
+King Michael I's spokesman declared on 9 June that the parents had been asked and had given their consent, and that the bride's family would be represented at the nuptials by her maternal uncle, the Protestant Prince Erik of Denmark, who was to give the bride away.
+The wedding ceremony was held on 10 June 1948 in Athens, Greece, in the throne room of the Royal Palace; the ceremony was performed by Archbishop Damaskinos, and King Paul I of Greece served as koumbaros.
+Guests at the wedding included: Michael's mother The Queen Mother of Romania, aunts Queen Frederica, The Dowager Duchess of Aosta, Lady Katherine Brandram; cousins Prince Amedeo, 5th Duke of Aosta, Princess Sophia of Greece and Denmark, Crown Prince Constantine of Greece and Princess Irene of Greece and Denmark, the three youngest ones serving as bridesmaids and pageboy; Anne's maternal uncle Prince Erik of Denmark; Grand Duchess Elena Vladimirovna of Russia, Princess Olga of Greece and Denmark, Princess Elizabeth of Yugoslavia, Prince George Wilhelm of Hanover and many other dignitaries.
+King Michael I's father, Carol, and his sisters, Maria, Queen Mother of Yugoslavia, Princess Elisabeth of Romania (ex-Queen Consort of Greece) and Princess Ileana of Romania were notified, but not invited.
+Family
+
+Michael and Anne had five daughters:
+
+
+Life in exile
+
+Michael would never see his father again, after Carol II's 1940 abdication.
+Michael could see no point in meeting his father who had humiliated his mother so many times via his open affairs and did not attend his father's funeral in 1953.
+In January 1948, Michael began using one of his family's ancestral titles, "Prince of Hohenzollern", instead of using the title of "King of Romania".
+After denouncing his abdication as forced and illegal in March 1948, Michael resumed use of the kingly title.
+Michael and Princess Anne lived near Florence, Italy, until 1948, near Lausanne, Switzerland, until 1950, and then in Hertfordshire, England, until 1956.
+The Communist Romanian authorities stripped Michael of his Romanian citizenship in 1948.
+During exile, Michael had a variety of occupations including farming, stockbroker, entrepreneur, and pilot.
+Together with his wife, he took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
+Return and rehabilitation
+
+On 25 December 1990—a year after the revolution which overthrew the dictatorship of Nicolae Ceaușescu—Michael, accompanied by several members of the royal family, landed at Otopeni Airport and entered Romania for the first time in 43 years.
+Using a Danish diplomatic passport, Michael was able to obtain a 24-hour visa.
+In 1992, the Romanian government allowed Michael to return to Romania for Easter celebrations, where he drew large crowds.
+Michael refused the offer of the president of the National Liberal Party, Radu Câmpeanu, to run for elections as president of Romania.
+Michael's popularity alarmed the government of President Ion Iliescu, and he was forbidden to re-visit Romania, being denied entry twice in 1994 and 1995.
+In 1997, after Iliescu's defeat by Emil Constantinescu, the Romanian government restored Michael's citizenship and again allowed him to visit the country.
+He then lived partly in Switzerland at Aubonne and partly in Romania, either at Săvârșin Castle in Arad County or in an official residence in Bucharest—the Elisabeta Palace—voted by the Romanian Parliament by a law concerning arrangements for former heads of state.
+Later years
+
+Michael neither encouraged nor opposed monarchist agitation in Romania and royalist parties have made little impact in post-communist Romanian politics.
+He took the view that the restoration of the monarchy in Romania can only result from a decision by the Romanian people.
+King Michael's belief was that there is still a role for, and value in, the monarchy today: "We are trying to make people understand what the Romanian monarchy was, and what it can still do .
+Michael himself, however, was shown to be much more popular personally with the Romanian people: In a July 2013 survey, 45% of Romanians had a good or very good opinion of Michael, with 6.5% thinking the opposite.
+Michael undertook some quasi-diplomatic roles on behalf of post-communist Romania.
+In 1997 and 2002 he toured Western Europe, lobbying for Romania's admission into NATO and the European Union, and was received by heads of state and government officials.
+In December 2003, to the "stupefaction of the public opinion in Romania",   Michael awarded the "Man of The Year 2003" prize to Prime Minister Adrian Năstase, leader of the Social Democratic Party (PSD), on behalf of the tabloid VIP.
+The daily Evenimentul Zilei subsequently complained that 'such an activity was unsuited to a king and that Michael was wasting away his prestige', with the majority of the political analysts 'considering his gesture as a fresh abdication'.
+On 10 May 2007, King Michael received the Prague Society for International Cooperation and Global Panel Foundation 's 6th Annual Hanno R. Ellenbogen Citizenship Award, previously awarded to Vladimir Ashkenazy, Madeleine Albright, Václav Havel, Lord Robertson, and Miloš Forman.
+On 8 April 2008, King Michael and Patriarch Daniel were elected as honorary members of the Romanian Academy.
+Michael participated in the Victory Parade in Moscow in 2010 as the only living Supreme Commander-in-Chief of a European State in the Second World War.
+The name of Michael I is listed on the memorial in the Grand Kremlin Palace as one of only 20 recipients of the Order of Victory.
+In old age, Michael enjoyed a strong revival in popularity.
+An opinion poll in January 2012 placed him as the most trusted public figure in Romania, far ahead of the political leaders.
+Later, in October 2012, celebrating Michael's 91st birthday, a square in Bucharest was renamed after him.
+On 1 August 2016, he became a widower when Queen Anne died at the age of 92.
+Health issues
+
+On 2 March 2016, the Royal Council announced King Michael's retirement from public life; with tasks assumed by Crown Princess Margareta, his daughter.
+After surgery, Michael was diagnosed with chronic leukemia and metastatic epidermoid carcinoma and faced a complex and lengthy treatment.
+King Michael is quiet, has soulful appreciation and appreciates the care of his medical team.
+"
+
+
+At the end of August 2017, the Royal House announced that King Michael was "in a fragile but balanced state, and has a good mood," stating that Princess Elena had completed a visit to Switzerland for a few days to see her father, at the private residence.
+According to the Royal House, Michael remained "daily under close supervision of physicians, medical staff of various specialties, and in the presence of devoted members of the staff of His Majesty's House, stationed in Switzerland."
+Death and state funeral
+
+On 5 December 2017, Michael died at his residence in Switzerland at the age of 96, in the presence of his youngest daughter Princess Maria.
+His coffin, draped by his Royal Standard, was brought back to Romania on 13 December, arriving at the Otopeni Airport in Bucharest from Lausanne, via Payerne Air Base, escorted by his second daughter, Princess Elena with her husband Alexander Nixon, fourth daughter Sophie and also members of the Royal Household, were transported by the Romanian Air Force's Alenia C-27J Spartan transport aircraft, which was flanked by four Mikoyan-Gurevich MiG-21 jet fighters.
+King Michael I was buried on 16 December with full state honours in the Mausoleum of the Royal Family, on the grounds of the Curtea de Argeș Cathedral together with his wife Queen Anne who died in 2016.
+His funeral is stated to have been one of the largest in Romania, with almost a million Romanians flocking to the capital to pay their respects and watch the funeral, with it being comparable to the one of Corneliu Coposu in 1995.
+According to the succession provisions of the Romanian kingdom's last democratically approved monarchical constitution of 1923, upon the death of King Michael without sons, the claim to the Crown devolves once again upon the Hohenzollern family.
+However, on 30 December 2007, on the 60th anniversary of his abdication, King Michael signed the Fundamental Rules of the Royal Family of Romania, by which he designated Princess Margareta as his heir.
+On 10 May 2011, on a background of lawsuits in Germany brought against his family by Michael's German relatives regarding the former name Hohenzollern-Veringen of his son-in-law, Radu, and of fears expressed by some that the German Hohenzollerns may claim succession to the headship of the Romanian royal house, Michael severed all of the dynastic and historical ties with the princely house of Hohenzollern, changed the name of his family to "of Romania", and gave up all princely titles conferred upon him and his family by the German Hohenzollerns.
+On 1 August 2015, Michael signed a document removing the title Prince of Romania and the qualification of Royal Highness from his grandson, Nicholas Medforth-Mills, who was also removed from the line of succession.
+The former king took the decision "with an eye on Romania's future after the reign and life of his eldest daughter, Margareta".
+Nicholas's mother, Princess Elena, received notification of the former king's decision in a personal letter.
+Personality and personal interests
+
+Aged 16, when Michael was crown prince, he hit a bicyclist while driving a car, causing the cyclist's death.
+Michael was head of the Romanian Boy Scouts in the 1930s.
+Shortly after the Second World War, Michael became interested in Moral Rearmament, which was introduced to him by his first cousin Prince Richard of Hesse-Cassel, and as Swiss residents after 1956 he and Queen Anne paid numerous visits to the MRA conference centre of Caux, where he found solace for the loss of his country and his émigré status as well as new hope for future reconciliation.
+Arms, honours and awards
+
+Honours
+
+Awards
+
+National awards
+
+Foreign awards
+
+Military ranks
+
+Honorific eponyms
+
+Statues and monuments
+
+On 25 October 2012, a large monument to Michael including a large bronze bust was unveiled at King Michael I Square in Bucharest.
+Michael attended and unveiled the statue.
+On 25 October 2021, a statue of Michael was unveiled in the town of Sinaia, on the occasion of the centenary of his birth.
+Minister of Culture Bogdan Gheorghiu was in attendance, along with Margareta of Romania, other government representatives, and members of parliament.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -121,39 +322,9 @@ He married Saskia Binder (b. 15 January 1973 in Munich), daughter of former Deut
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -168,6 +339,23 @@ He married Saskia Binder (b. 15 January 1973 in Munich), daughter of former Deut
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -185,6 +373,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -252,29 +455,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -283,6 +478,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -295,6 +498,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -303,17 +508,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -341,6 +548,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -356,231 +647,278 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d9008eab-e5ad-4a42-9725-635ffa270f66)
- Call ID: d9008eab-e5ad-4a42-9725-635ffa270f66
+  AssignClass (6bbc178f-2e5f-43c6-9a1a-892e3c0f5518)
+ Call ID: 6bbc178f-2e5f-43c6-9a1a-892e3c0f5518
+  Args:
+    source: :Michael_I
+    type: :Man
+  AssignClass (8241866f-43a7-4b4d-bbe7-f4e170f0897a)
+ Call ID: 8241866f-43a7-4b4d-bbe7-f4e170f0897a
   Args:
     type: :Person
-    source: Philipp_Prince_of_Hohenlohe-Langenburg
-  AssignClass (e013fd27-7e8e-48dd-beb8-9e183549787c)
- Call ID: e013fd27-7e8e-48dd-beb8-9e183549787c
+    source: :Michael_I
+  AddLiteral (083ca834-1929-4539-a2cb-043b5263eef8)
+ Call ID: 083ca834-1929-4539-a2cb-043b5263eef8
   Args:
-    type: :Man
-    source: Philipp_Prince_of_Hohenlohe-Langenburg
-  AddLiteral (e1743832-3f3a-4b32-a013-bee79f8657db)
- Call ID: e1743832-3f3a-4b32-a013-bee79f8657db
-  Args:
-    source: Philipp_Prince_of_Hohenlohe-Langenburg
-    literal_value: 1970
-    relation: :hasBirthYear
+    literal_value: 1921
     literal_type: xsd:integer
-  AssignClass (834d97a7-5603-4682-abaf-fad4d311bb46)
- Call ID: 834d97a7-5603-4682-abaf-fad4d311bb46
-  Args:
-    type: :Person
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-  AssignClass (a5cd0f00-7931-4624-b804-fe4e6eaa7d78)
- Call ID: a5cd0f00-7931-4624-b804-fe4e6eaa7d78
-  Args:
-    type: :Man
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-  AssignClass (78d2e2d0-8235-444f-bc35-256c3a145da7)
- Call ID: 78d2e2d0-8235-444f-bc35-256c3a145da7
-  Args:
-    type: :Ancestor
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-  AddLiteral (02e8552f-3d38-459b-a0eb-b9b6b5eee352)
- Call ID: 02e8552f-3d38-459b-a0eb-b9b6b5eee352
-  Args:
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-    literal_value: 1935
+    source: :Michael_I
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (dee3d330-2aaa-4ab8-9ad9-4437ad0ad03b)
- Call ID: dee3d330-2aaa-4ab8-9ad9-4437ad0ad03b
+  AddLiteral (e248f150-b0ff-4a1f-8014-3a3a49311126)
+ Call ID: e248f150-b0ff-4a1f-8014-3a3a49311126
   Args:
+    source: :Michael_I
     relation: :hasDeathYear
     literal_type: xsd:integer
-    source: Kraft_Prince_of_Hohenlohe-Langenburg
-    literal_value: 2004
-  AssignClass (5d49b448-d02e-403d-a559-6f2abcdf2515)
- Call ID: 5d49b448-d02e-403d-a559-6f2abcdf2515
+    literal_value: 2017
+  AddTriple (927589db-9e0b-47d9-81f4-9702203484ad)
+ Call ID: 927589db-9e0b-47d9-81f4-9702203484ad
+  Args:
+    relation: :hasSex
+    source: :Michael_I
+    target: :Male
+  AssignClass (a095127e-162f-41d5-8eb0-335c6eaca044)
+ Call ID: a095127e-162f-41d5-8eb0-335c6eaca044
+  Args:
+    type: :Man
+    source: :Carol_II
+  AssignClass (6ea41ded-7faf-42a0-959f-c623c7a106f4)
+ Call ID: 6ea41ded-7faf-42a0-959f-c623c7a106f4
   Args:
     type: :Person
-    source: Princess_Charlotte_of_Croy
-  AssignClass (11d05f5f-4b39-44f2-ae61-8e2cddd2ff5f)
- Call ID: 11d05f5f-4b39-44f2-ae61-8e2cddd2ff5f
+    source: :Carol_II
+  AddTriple (df83c4f9-95ef-4bec-a35b-33e86da7ae28)
+ Call ID: df83c4f9-95ef-4bec-a35b-33e86da7ae28
   Args:
-    type: :Woman
-    source: Princess_Charlotte_of_Croy
-  AssignClass (4201a832-e74f-4d01-b567-173c98acfa9d)
- Call ID: 4201a832-e74f-4d01-b567-173c98acfa9d
-  Args:
-    type: :Ancestor
-    source: Princess_Charlotte_of_Croy
-  AddLiteral (17cf53d9-f0b0-429c-a8c6-fe6d82304478)
- Call ID: 17cf53d9-f0b0-429c-a8c6-fe6d82304478
-  Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1938
-    source: Princess_Charlotte_of_Croy
-  AddTriple (54ef9c68-57ac-4928-9214-1aa196bf53dd)
- Call ID: 54ef9c68-57ac-4928-9214-1aa196bf53dd
-  Args:
+    target: :Carol_II
     relation: :hasFather
-    source: Philipp_Prince_of_Hohenlohe-Langenburg
-    target: Kraft_Prince_of_Hohenlohe-Langenburg
-  AddTriple (30e2a805-901c-44b3-92bd-ffb1fc0c6302)
- Call ID: 30e2a805-901c-44b3-92bd-ffb1fc0c6302
+    source: :Michael_I
+  AssignClass (25a3bf06-900b-4654-9be8-2e70e81c0b02)
+ Call ID: 25a3bf06-900b-4654-9be8-2e70e81c0b02
   Args:
-    target: Princess_Charlotte_of_Croy
-    relation: :hasMother
-    source: Philipp_Prince_of_Hohenlohe-Langenburg
-  AssignClass (3329d0b6-e151-4a13-a8cb-6c004624a355)
- Call ID: 3329d0b6-e151-4a13-a8cb-6c004624a355
+    source: :Elena_of_Romania
+    type: :Woman
+  AssignClass (7d55c344-6d33-42dc-a98d-73cf8254b35f)
+ Call ID: 7d55c344-6d33-42dc-a98d-73cf8254b35f
   Args:
+    source: :Elena_of_Romania
     type: :Person
-    source: Saskia_Binder
-  AssignClass (b35e76b5-cdab-441b-a3a8-ae88babfb540)
- Call ID: b35e76b5-cdab-441b-a3a8-ae88babfb540
+  AddTriple (bc3ec07e-eebb-4ca7-8054-0a1f54519bfc)
+ Call ID: bc3ec07e-eebb-4ca7-8054-0a1f54519bfc
+  Args:
+    target: :Elena_of_Romania
+    relation: :hasMother
+    source: :Michael_I
+  AssignClass (86fc46d8-baa4-4730-8d19-3cb3a65647a1)
+ Call ID: 86fc46d8-baa4-4730-8d19-3cb3a65647a1
+  Args:
+    source: :Ferdinand_I
+    type: :Man
+  AssignClass (ca4f8269-c9db-40a0-8bc6-93e63dec6230)
+ Call ID: ca4f8269-c9db-40a0-8bc6-93e63dec6230
+  Args:
+    source: :Ferdinand_I
+    type: :Person
+  AddTriple (c2026964-ca46-4a58-9697-c67103debb32)
+ Call ID: c2026964-ca46-4a58-9697-c67103debb32
+  Args:
+    target: :Ferdinand_I
+    relation: :hasFather
+    source: :Carol_II
+  AssignClass (bdb45527-0a96-475a-9149-53d8d82169b7)
+ Call ID: bdb45527-0a96-475a-9149-53d8d82169b7
+  Args:
+    type: :Man
+    source: :Constantine_I_of_Greece
+  AssignClass (50ea257d-81a8-432f-8d2b-e2938a05fd54)
+ Call ID: 50ea257d-81a8-432f-8d2b-e2938a05fd54
+  Args:
+    source: :Constantine_I_of_Greece
+    type: :Person
+  AddTriple (a33e17d5-ac0c-49e5-b0e7-066334ad19d4)
+ Call ID: a33e17d5-ac0c-49e5-b0e7-066334ad19d4
+  Args:
+    target: :Constantine_I_of_Greece
+    relation: :hasFather
+    source: :Elena_of_Romania
+  AssignClass (f393239d-9383-4ca2-8a57-d1bc278f4c2b)
+ Call ID: f393239d-9383-4ca2-8a57-d1bc278f4c2b
   Args:
     type: :Woman
-    source: Saskia_Binder
-  AddLiteral (43e8331f-0309-4f6a-a4a8-9aaa9bdbf9af)
- Call ID: 43e8331f-0309-4f6a-a4a8-9aaa9bdbf9af
+    source: :Anne_of_Bourbon-Parma
+  AssignClass (fca77724-bc7b-42d1-9e50-942755542829)
+ Call ID: fca77724-bc7b-42d1-9e50-942755542829
   Args:
-    literal_value: 1973
-    source: Saskia_Binder
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (59b31e29-097a-4ab0-9c05-412ceeddeede)
- Call ID: 59b31e29-097a-4ab0-9c05-412ceeddeede
+    source: :Anne_of_Bourbon-Parma
+    type: :Person
+  AddTriple (52ca0465-0fb0-4766-b756-6d1e25fd7bae)
+ Call ID: 52ca0465-0fb0-4766-b756-6d1e25fd7bae
   Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: Philipp_Prince_of_Hohenlohe-Langenburg
-    literal_value: 2003
-  AddTriple (6f122797-1195-4c41-8256-463b26ed69b1)
- Call ID: 6f122797-1195-4c41-8256-463b26ed69b1
-  Args:
-    source: Philipp_Prince_of_Hohenlohe-Langenburg
+    target: :Anne_of_Bourbon-Parma
     relation: :hasRelation
-    target: Saskia_Binder
-  AssignClass (5ec9964d-714b-4ae0-bb54-a4ac424239bd)
- Call ID: 5ec9964d-714b-4ae0-bb54-a4ac424239bd
-  Args:
-    type: :Person
-    source: Hans_Peter_Binder
-  AssignClass (f9adff8d-e7e9-415b-b29e-7b7de48a4331)
- Call ID: f9adff8d-e7e9-415b-b29e-7b7de48a4331
-  Args:
-    type: :Man
-    source: Hans_Peter_Binder
-  AssignClass (f86c575b-8adf-4cf0-a775-55cccc161883)
- Call ID: f86c575b-8adf-4cf0-a775-55cccc161883
-  Args:
-    type: :Ancestor
-    source: Hans_Peter_Binder
-  AddTriple (53d88fcf-8be2-486a-b51f-e38b47289a47)
- Call ID: 53d88fcf-8be2-486a-b51f-e38b47289a47
-  Args:
-    relation: :hasFather
-    source: Saskia_Binder
-    target: Hans_Peter_Binder
-  AssignClass (d4917c5f-5044-4db7-9325-7ed9e00d8d12)
- Call ID: d4917c5f-5044-4db7-9325-7ed9e00d8d12
-  Args:
-    type: :Person
-    source: Prince_Alexander_of_Croy
-  AssignClass (5b57b734-f735-497f-8b36-aa37adad8d67)
- Call ID: 5b57b734-f735-497f-8b36-aa37adad8d67
-  Args:
-    type: :Man
-    source: Prince_Alexander_of_Croy
-  AssignClass (f3068dd2-5fc9-4f87-a5d7-0fa435db835e)
- Call ID: f3068dd2-5fc9-4f87-a5d7-0fa435db835e
-  Args:
-    type: :Ancestor
-    source: Prince_Alexander_of_Croy
-  AddLiteral (24d78b4a-453e-49a5-8c61-58554d7bbea9)
- Call ID: 24d78b4a-453e-49a5-8c61-58554d7bbea9
+    source: :Michael_I
+  AddLiteral (90460a4b-c19d-4c87-a478-3711836d3674)
+ Call ID: 90460a4b-c19d-4c87-a478-3711836d3674
   Args:
     literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1912
-    source: Prince_Alexander_of_Croy
-  AddLiteral (97c5f3d9-d70e-4819-91a4-e3b396509999)
- Call ID: 97c5f3d9-d70e-4819-91a4-e3b396509999
+    literal_value: 1948
+    source: :Michael_I
+    relation: :hasMarriageYear
+  AssignClass (cfa8eea6-cd44-47af-afdc-ea72d3fdd5a1)
+ Call ID: cfa8eea6-cd44-47af-afdc-ea72d3fdd5a1
   Args:
-    literal_value: 2002
-    source: Prince_Alexander_of_Croy
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AssignClass (43d9dfd9-d217-46c5-a447-efa718f0b01f)
- Call ID: 43d9dfd9-d217-46c5-a447-efa718f0b01f
+    type: :Man
+    source: :Prince_Nicolas
+  AssignClass (8eb207ab-4300-4008-8332-5726043c267e)
+ Call ID: 8eb207ab-4300-4008-8332-5726043c267e
   Args:
     type: :Person
-    source: Anna_Elspeth_Campbell
-  AssignClass (3b66aa56-d614-40cf-97e6-162f53ee5497)
- Call ID: 3b66aa56-d614-40cf-97e6-162f53ee5497
+    source: :Prince_Nicolas
+  AddTriple (8a5bfc49-e955-423a-9b22-cac9ffc0d46f)
+ Call ID: 8a5bfc49-e955-423a-9b22-cac9ffc0d46f
+  Args:
+    source: :Prince_Nicolas
+    relation: :isBrotherOf
+    target: :Carol_II
+  AssignClass (8a2762de-d700-4575-85de-015804e7d0dc)
+ Call ID: 8a2762de-d700-4575-85de-015804e7d0dc
+  Args:
+    source: :Princess_Ileana
+    type: :Woman
+  AssignClass (5bce8c34-fcd0-4e25-94ba-c5204e9df862)
+ Call ID: 5bce8c34-fcd0-4e25-94ba-c5204e9df862
+  Args:
+    source: :Princess_Ileana
+    type: :Person
+  AddTriple (303c470f-3464-4d42-901d-bff485f05cc0)
+ Call ID: 303c470f-3464-4d42-901d-bff485f05cc0
+  Args:
+    target: :Carol_II
+    source: :Princess_Ileana
+    relation: :isSisterOf
+  AssignClass (7017d222-adfd-49a6-bb08-996253fa48f8)
+ Call ID: 7017d222-adfd-49a6-bb08-996253fa48f8
+  Args:
+    source: :Princess_Elisabeth
+    type: :Woman
+  AssignClass (5e9bdd7d-4549-4c12-ac1a-2d4825575cfd)
+ Call ID: 5e9bdd7d-4549-4c12-ac1a-2d4825575cfd
+  Args:
+    type: :Person
+    source: :Princess_Elisabeth
+  AddTriple (c3e557be-8d51-4474-996a-da7cfe5b17eb)
+ Call ID: c3e557be-8d51-4474-996a-da7cfe5b17eb
+  Args:
+    relation: :isSisterOf
+    source: :Princess_Elisabeth
+    target: :Carol_II
+  AssignClass (d2eaaaf7-9005-4da2-81a2-dbb783100408)
+ Call ID: d2eaaaf7-9005-4da2-81a2-dbb783100408
+  Args:
+    source: :Princess_Elena_Granddaughter
+    type: :Woman
+  AssignClass (97904843-7ffd-4c1e-8584-93720b72c24b)
+ Call ID: 97904843-7ffd-4c1e-8584-93720b72c24b
+  Args:
+    type: :Person
+    source: :Princess_Elena_Granddaughter
+  AddTriple (4ab4fd40-cc9b-4636-b99a-547d8f368e90)
+ Call ID: 4ab4fd40-cc9b-4636-b99a-547d8f368e90
+  Args:
+    relation: :isDaughterOf
+    source: :Princess_Elena_Granddaughter
+    target: :Michael_I
+  AssignClass (57965b80-e255-42b1-861a-fe677a57c2df)
+ Call ID: 57965b80-e255-42b1-861a-fe677a57c2df
   Args:
     type: :Woman
-    source: Anna_Elspeth_Campbell
-  AssignClass (1a0ad1c9-4dc3-44c1-918a-fc82b18df8b5)
- Call ID: 1a0ad1c9-4dc3-44c1-918a-fc82b18df8b5
-  Args:
-    type: :Ancestor
-    source: Anna_Elspeth_Campbell
-  AddLiteral (3c5cd5fe-28ff-4b11-b417-8684baf19c3e)
- Call ID: 3c5cd5fe-28ff-4b11-b417-8684baf19c3e
-  Args:
-    literal_value: 1917
-    source: Anna_Elspeth_Campbell
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (b4214157-e2b5-43c5-9bfe-ef614a588530)
- Call ID: b4214157-e2b5-43c5-9bfe-ef614a588530
-  Args:
-    literal_value: 1986
-    source: Anna_Elspeth_Campbell
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddTriple (22793897-ab56-4f49-aa0b-f718c0794732)
- Call ID: 22793897-ab56-4f49-aa0b-f718c0794732
-  Args:
-    relation: :hasFather
-    source: Princess_Charlotte_of_Croy
-    target: Prince_Alexander_of_Croy
-  AddTriple (2d993386-4f71-41aa-bbae-9742d31052b5)
- Call ID: 2d993386-4f71-41aa-bbae-9742d31052b5
-  Args:
-    source: Princess_Charlotte_of_Croy
-    relation: :hasMother
-    target: Anna_Elspeth_Campbell
-  AssignClass (3a6d4e6c-f27e-48f2-b584-0dbeac0f1546)
- Call ID: 3a6d4e6c-f27e-48f2-b584-0dbeac0f1546
+    source: :Princess_Maria
+  AssignClass (839cbf24-144f-496d-beeb-222d1c16a31a)
+ Call ID: 839cbf24-144f-496d-beeb-222d1c16a31a
   Args:
     type: :Person
-    source: Archibald_Campbell_6th_of_Glendaruel
-  AssignClass (f36de66f-7168-4555-9ad8-9aba5e139951)
- Call ID: f36de66f-7168-4555-9ad8-9aba5e139951
+    source: :Princess_Maria
+  AddTriple (e95c71f7-74a0-4d96-8f73-b1c30e522284)
+ Call ID: e95c71f7-74a0-4d96-8f73-b1c30e522284
   Args:
-    type: :Man
-    source: Archibald_Campbell_6th_of_Glendaruel
-  AssignClass (b30534b3-8850-4097-a7e5-41b631d9c6d0)
- Call ID: b30534b3-8850-4097-a7e5-41b631d9c6d0
+    source: :Princess_Maria
+    relation: :isDaughterOf
+    target: :Michael_I
+  AssignClass (d7239716-1c90-439b-9c70-bec1eaeccc74)
+ Call ID: d7239716-1c90-439b-9c70-bec1eaeccc74
   Args:
-    type: :Ancestor
-    source: Archibald_Campbell_6th_of_Glendaruel
-  AddTriple (e56e7312-27c1-4cde-a323-33b8a2b8ce68)
- Call ID: e56e7312-27c1-4cde-a323-33b8a2b8ce68
+    type: :Woman
+    source: :Princess_Sophie
+  AssignClass (a0cb1f4f-8d97-40f5-ae07-5d05a3e99520)
+ Call ID: a0cb1f4f-8d97-40f5-ae07-5d05a3e99520
   Args:
-    target: Archibald_Campbell_6th_of_Glendaruel
-    source: Anna_Elspeth_Campbell
-    relation: :hasFather
-  Finish (26853a65-64fa-416d-85cc-08e4703fb255)
- Call ID: 26853a65-64fa-416d-85cc-08e4703fb255
+    type: :Person
+    source: :Princess_Sophie
+  AddTriple (d789348d-9ea7-4f7a-9d32-f46f4079074d)
+ Call ID: d789348d-9ea7-4f7a-9d32-f46f4079074d
   Args:
+    relation: :isDaughterOf
+    source: :Princess_Sophie
+    target: :Michael_I
+  AssignClass (742dca60-b50f-44f0-a8f7-ba7895964191)
+ Call ID: 742dca60-b50f-44f0-a8f7-ba7895964191
+  Args:
+    type: :Woman
+    source: :Princess_Irina
+  AssignClass (a4660d4f-d73f-40fc-a001-8a0ff0195339)
+ Call ID: a4660d4f-d73f-40fc-a001-8a0ff0195339
+  Args:
+    type: :Person
+    source: :Princess_Irina
+  AddTriple (57ac19c2-3d03-4922-ad27-4b051a0c77ad)
+ Call ID: 57ac19c2-3d03-4922-ad27-4b051a0c77ad
+  Args:
+    source: :Princess_Irina
+    relation: :isDaughterOf
+    target: :Michael_I
+  AssignClass (8d492047-772c-4632-9171-720c3ede143c)
+ Call ID: 8d492047-772c-4632-9171-720c3ede143c
+  Args:
+    source: :Princess_Margareta
+    type: :Woman
+  AssignClass (a7e986a3-0687-490a-88a1-00130d810d68)
+ Call ID: a7e986a3-0687-490a-88a1-00130d810d68
+  Args:
+    type: :Person
+    source: :Princess_Margareta
+  AddTriple (db09536b-3d0f-492e-aa82-0d2377275800)
+ Call ID: db09536b-3d0f-492e-aa82-0d2377275800
+  Args:
+    target: :Michael_I
+    relation: :isDaughterOf
+    source: :Princess_Margareta
+  Finish (e09b7731-a3e4-4db8-b4d8-e4cb5776d2e8)
+ Call ID: e09b7731-a3e4-4db8-b4d8-e4cb5776d2e8
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -741,52 +1079,64 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Philipp_Prince_of_Hohenlohe-Langenburg a :Man,
+  data:Prince_Nicolas a :Man,
           :Person ;
-      :hasBirthYear 1970 ;
-      :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;
-      :hasMarriageYear 2003 ;
-      :hasMother data:Princess_Charlotte_of_Croy ;
-      :hasRelation data:Saskia_Binder .
+      :isBrotherOf data:Carol_II .
 
-  data:Anna_Elspeth_Campbell a :Ancestor,
-          :Person,
+  data:Princess_Elena_Granddaughter a :Person,
           :Woman ;
-      :hasBirthYear 1917 ;
-      :hasDeathYear 1986 ;
-      :hasFather data:Archibald_Campbell_6th_of_Glendaruel .
+      :isDaughterOf data:Michael_I .
 
-  data:Archibald_Campbell_6th_of_Glendaruel a :Ancestor,
-          :Man,
+  data:Princess_Elisabeth a :Person,
+          :Woman ;
+      :isSisterOf data:Carol_II .
+
+  data:Princess_Ileana a :Person,
+          :Woman ;
+      :isSisterOf data:Carol_II .
+
+  data:Princess_Irina a :Person,
+          :Woman ;
+      :isDaughterOf data:Michael_I .
+
+  data:Princess_Margareta a :Person,
+          :Woman ;
+      :isDaughterOf data:Michael_I .
+
+  data:Princess_Maria a :Person,
+          :Woman ;
+      :isDaughterOf data:Michael_I .
+
+  data:Princess_Sophie a :Person,
+          :Woman ;
+      :isDaughterOf data:Michael_I .
+
+  data:Anne_of_Bourbon-Parma a :Person,
+          :Woman .
+
+  data:Constantine_I_of_Greece a :Man,
           :Person .
 
-  data:Hans_Peter_Binder a :Ancestor,
-          :Man,
+  data:Elena_of_Romania a :Person,
+          :Woman ;
+      :hasFather data:Constantine_I_of_Greece .
+
+  data:Ferdinand_I a :Man,
           :Person .
 
-  data:Kraft_Prince_of_Hohenlohe-Langenburg a :Ancestor,
-          :Man,
+  data:Carol_II a :Man,
           :Person ;
-      :hasBirthYear 1935 ;
-      :hasDeathYear 2004 .
+      :hasFather data:Ferdinand_I .
 
-  data:Prince_Alexander_of_Croy a :Ancestor,
-          :Man,
+  data:Michael_I a :Man,
           :Person ;
-      :hasBirthYear 1912 ;
-      :hasDeathYear 2002 .
-
-  data:Princess_Charlotte_of_Croy a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1938 ;
-      :hasFather data:Prince_Alexander_of_Croy ;
-      :hasMother data:Anna_Elspeth_Campbell .
-
-  data:Saskia_Binder a :Person,
-          :Woman ;
-      :hasBirthYear 1973 ;
-      :hasFather data:Hans_Peter_Binder .
+      :hasBirthYear 1921 ;
+      :hasDeathYear 2017 ;
+      :hasFather data:Carol_II ;
+      :hasMarriageYear 1948 ;
+      :hasMother data:Elena_of_Romania ;
+      :hasRelation data:Anne_of_Bourbon-Parma ;
+      :hasSex data:Male .
 
 
 
@@ -798,8 +1148,441 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (1eb971ab-c71a-4131-b6f4-4d75345ef44b)
- Call ID: 1eb971ab-c71a-4131-b6f4-4d75345ef44b
+  ValidateShacl (2c7036e1-2646-4b47-8c76-9da861c25c26)
+ Call ID: 2c7036e1-2646-4b47-8c76-9da861c25c26
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:35
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Michael_I' is not a valid instance of the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father 'Ferdinand_I' of node 'Carol_II' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Ferdinand_I', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father 'Carol_II' of node 'Michael_I' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Carol_II', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother 'Elena_of_Romania' of node 'Michael_I' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Elena_of_Romania', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Michael_I' is not a valid instance of the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [6]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Michael_I' is not a valid instance of the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father 'Constantine_I_of_Greece' of node 'Elena_of_Romania' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Constantine_I_of_Greece', class=':Ancestor')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father 'Ferdinand_I' of node 'Carol_II' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Ferdinand_I', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father 'Carol_II' of node 'Michael_I' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Carol_II', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother 'Elena_of_Romania' of node 'Michael_I' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Elena_of_Romania', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Michael_I' is not a valid instance of the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Michael_I' is not a valid instance of the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [13]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Sophie' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Irina' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Elena_Granddaughter' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Margareta' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Maria' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Michael_I' is not a valid instance of the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father 'Constantine_I_of_Greece' of node 'Elena_of_Romania' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Constantine_I_of_Greece', class=':Ancestor')
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father 'Ferdinand_I' of node 'Carol_II' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Ferdinand_I', class=':Ancestor')
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father 'Carol_II' of node 'Michael_I' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Carol_II', class=':Ancestor')
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother 'Elena_of_Romania' of node 'Michael_I' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Elena_of_Romania', class=':Ancestor')
+
+
+  Violation [23]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Michael_I' is not a valid instance of the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [24]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of node 'Michael_I' is not a valid instance of the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [25]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Sophie' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [26]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Irina' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Elena_Granddaughter' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [28]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Margareta' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [29]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Maria' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father 'Constantine_I_of_Greece' of node 'Elena_of_Romania' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Constantine_I_of_Greece', class=':Ancestor')
+
+
+  Violation [31]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Sophie' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [32]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Irina' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [33]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Elena_Granddaughter' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [34]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Margareta' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+  Violation [35]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The parent 'Michael_I' of node 'Princess_Maria' is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Michael_I', class=':Ancestor')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (87a0e5cf-ff1b-4963-95fe-0dedace496dc)
+ Call ID: 87a0e5cf-ff1b-4963-95fe-0dedace496dc
+  Args:
+    source: :Male
+    type: :Sex
+  AssignClass (bbfa8002-da22-4363-9c01-ad7351d311cd)
+ Call ID: bbfa8002-da22-4363-9c01-ad7351d311cd
+  Args:
+    type: :Ancestor
+    source: :Ferdinand_I
+  AssignClass (bc9712e5-da54-46d7-afef-8e0854fc96b4)
+ Call ID: bc9712e5-da54-46d7-afef-8e0854fc96b4
+  Args:
+    source: :Carol_II
+    type: :Ancestor
+  AssignClass (a27381f8-7dcf-45df-a0fb-79a65cd46f97)
+ Call ID: a27381f8-7dcf-45df-a0fb-79a65cd46f97
+  Args:
+    type: :Ancestor
+    source: :Elena_of_Romania
+  AssignClass (aa81769b-ad9c-4f50-a36f-698a9ce06335)
+ Call ID: aa81769b-ad9c-4f50-a36f-698a9ce06335
+  Args:
+    source: :Constantine_I_of_Greece
+    type: :Ancestor
+  AssignClass (54149dbf-7c83-425e-a2d1-cffdeef15114)
+ Call ID: 54149dbf-7c83-425e-a2d1-cffdeef15114
+  Args:
+    source: :Michael_I
+    type: :Ancestor
+  Finish (55103892-7ac6-4481-abb7-79675bf1cf90)
+ Call ID: 55103892-7ac6-4481-abb7-79675bf1cf90
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Prince_Nicolas a :Man,
+          :Person ;
+      :isBrotherOf data:Carol_II .
+
+  data:Princess_Elena_Granddaughter a :Person,
+          :Woman ;
+      :isDaughterOf data:Michael_I .
+
+  data:Princess_Elisabeth a :Person,
+          :Woman ;
+      :isSisterOf data:Carol_II .
+
+  data:Princess_Ileana a :Person,
+          :Woman ;
+      :isSisterOf data:Carol_II .
+
+  data:Princess_Irina a :Person,
+          :Woman ;
+      :isDaughterOf data:Michael_I .
+
+  data:Princess_Margareta a :Person,
+          :Woman ;
+      :isDaughterOf data:Michael_I .
+
+  data:Princess_Maria a :Person,
+          :Woman ;
+      :isDaughterOf data:Michael_I .
+
+  data:Princess_Sophie a :Person,
+          :Woman ;
+      :isDaughterOf data:Michael_I .
+
+  data:Anne_of_Bourbon-Parma a :Person,
+          :Woman .
+
+  data:Constantine_I_of_Greece a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Elena_of_Romania a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasFather data:Constantine_I_of_Greece .
+
+  data:Ferdinand_I a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Male a :Sex .
+
+  data:Carol_II a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Ferdinand_I .
+
+  data:Michael_I a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1921 ;
+      :hasDeathYear 2017 ;
+      :hasFather data:Carol_II ;
+      :hasMarriageYear 1948 ;
+      :hasMother data:Elena_of_Romania ;
+      :hasRelation data:Anne_of_Bourbon-Parma ;
+      :hasSex data:Male .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (dfb5757d-a62d-4060-bfba-ce307bc9980c)
+ Call ID: dfb5757d-a62d-4060-bfba-ce307bc9980c
   Args:
 
 ================================= Tool Message =================================
@@ -810,6 +1593,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (274e135b-ef8b-48ac-9a61-836ee059e8df)
- Call ID: 274e135b-ef8b-48ac-9a61-836ee059e8df
+  Finish (bd77102f-3461-4e60-b498-3af584860bd3)
+ Call ID: bd77102f-3461-4e60-b498-3af584860bd3
   Args:

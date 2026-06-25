@@ -1,0 +1,110 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Atalanta_Cowen a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Atalanta Cowen"^^xsd:string ;
+    data:posIndicesFull "297:311"^^xsd:string ;
+    data:wdtLink wdt:Q75716787 ;
+    :alsoKnownAs "Atalanta Knatchbull"^^xsd:string,
+        "Atalanta Vereker"^^xsd:string ;
+    :hasChild data:Daisy_Knatchbull ;
+    :hasDaughter data:Daisy_Knatchbull ;
+    :hasRelation data:Atalanta_Cowen,
+        data:Daisy_Knatchbull,
+        data:Philip_Knatchbull ;
+    :hasSex data:female ;
+    :hasSister data:Atalanta_Cowen ;
+    :isAncestorOf data:Daisy_Knatchbull ;
+    :isAuntOf data:Daisy_Knatchbull ;
+    :isBloodrelationOf data:Atalanta_Cowen ;
+    :isMotherOf data:Daisy_Knatchbull ;
+    :isParentOf data:Daisy_Knatchbull ;
+    :isSiblingOf data:Atalanta_Cowen ;
+    :isSisterOf data:Atalanta_Cowen .
+
+data:Philip_Knatchbull a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Philip Knatchbull"^^xsd:string ;
+    data:posIndicesFull "263:280"^^xsd:string ;
+    data:posIndicesPart "1013:1023"^^xsd:string,
+        "1033:1043"^^xsd:string,
+        "1148:1158"^^xsd:string,
+        "1160:1170"^^xsd:string,
+        "450:460"^^xsd:string,
+        "519:529"^^xsd:string,
+        "667:677"^^xsd:string,
+        "751:761"^^xsd:string,
+        "904:914"^^xsd:string ;
+    data:wdtLink wdt:Q75383945 ;
+    :alsoKnownAs "Hon. Philip Knatchbull"^^xsd:string,
+        "Hon. Philip Wyndham Ashley Knatchbull"^^xsd:string,
+        "Philip Wyndham Ashley Knatchbull"^^xsd:string ;
+    :hasBrother data:Philip_Knatchbull ;
+    :hasChild data:Daisy_Knatchbull ;
+    :hasDaughter data:Daisy_Knatchbull ;
+    :hasRelation data:Atalanta_Cowen,
+        data:Daisy_Knatchbull,
+        data:Philip_Knatchbull ;
+    :hasSex data:male ;
+    :isAncestorOf data:Daisy_Knatchbull ;
+    :isBloodrelationOf data:Philip_Knatchbull ;
+    :isBrotherOf data:Philip_Knatchbull ;
+    :isFatherOf data:Daisy_Knatchbull ;
+    :isParentOf data:Daisy_Knatchbull ;
+    :isSiblingOf data:Philip_Knatchbull ;
+    :isUncleOf data:Daisy_Knatchbull .
+
+data:Daisy_Knatchbull a :Person,
+        :Woman ;
+    rdfs:label "Daisy Knatchbull"^^xsd:string ;
+    data:posIndicesFull "0:31"^^xsd:string ;
+    data:posIndicesPart "1013:1023"^^xsd:string,
+        "1033:1043"^^xsd:string,
+        "1148:1158"^^xsd:string,
+        "1160:1170"^^xsd:string,
+        "213:223"^^xsd:string,
+        "450:460"^^xsd:string,
+        "519:529"^^xsd:string,
+        "667:677"^^xsd:string,
+        "751:761"^^xsd:string,
+        "904:914"^^xsd:string ;
+    data:wdtLink wdt:Q75774742 ;
+    :alsoKnownAs "Daisy Isadora Louise Knatchbull"^^xsd:string ;
+    :hasAncestor data:Atalanta_Cowen,
+        data:Philip_Knatchbull ;
+    :hasFather data:Philip_Knatchbull ;
+    :hasMother data:Atalanta_Cowen ;
+    :hasParent data:Atalanta_Cowen,
+        data:Philip_Knatchbull ;
+    :hasRelation data:Atalanta_Cowen,
+        data:Daisy_Knatchbull,
+        data:Philip_Knatchbull ;
+    :hasSex data:female ;
+    :hasSister data:Daisy_Knatchbull ;
+    :isBloodrelationOf data:Daisy_Knatchbull ;
+    :isChildOf data:Atalanta_Cowen,
+        data:Philip_Knatchbull ;
+    :isDaughterOf data:Atalanta_Cowen,
+        data:Philip_Knatchbull ;
+    :isSiblingOf data:Daisy_Knatchbull ;
+    :isSisterOf data:Daisy_Knatchbull .
+

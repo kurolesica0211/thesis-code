@@ -2,25 +2,28 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Adalbert_of_Prussia a :Man ;
-    :hasBirthYear 1884 ;
-    :hasDeathYear 1948 ;
-    :hasFather data:Wilhelm_II_of_Prussia ;
-    :hasMarriageYear 1914 ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein .
+data:Carlo_Alessandro_della_Torre_e_Tasso a :Man,
+        :Person ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_of_Greece ;
+    :hasBirthYear 1952 ;
+    :hasFather data:Raimundo_della_Torre_e_Tasso ;
+    :hasMother data:Eugenie_of_Greece_and_Denmark .
 
-data:Adelheid_of_Saxe-Meiningen a :Woman ;
-    :alsoKnownAs "Adi"^^xsd:string ;
-    :hasBirthYear 1891 ;
-    :hasDeathYear 1971 ;
-    :hasFather data:Frederick_of_Saxe-Meiningen ;
-    :hasMother data:Adelaide_of_Lippe-Biesterfeld .
+data:Charles_III a :Man,
+        :Person ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Olga_of_Greece .
 
-data:Adelaide_of_Lippe-Biesterfeld a :Woman .
+data:Eugenie_of_Greece_and_Denmark a :Person,
+        :Woman .
 
-data:Augusta_Victoria_of_Schleswig-Holstein a :Woman .
+data:Raimundo_della_Torre_e_Tasso a :Man,
+        :Person .
 
-data:Frederick_of_Saxe-Meiningen a :Man .
+data:George_I_of_Greece a :Man,
+        :Person .
 
-data:Wilhelm_II_of_Prussia a :Man .
+data:Olga_of_Greece a :Person,
+        :Woman .
 

@@ -69,42 +69,30 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Carl Herzog von Württemberg (Carl Maria Peter Ferdinand Philipp Albrecht Joseph Michael Pius Konrad Robert Ulrich; 1 August 1936 – 7 June 2022) was the head of the House of Württemberg from 1975 to 2022.
-He was the second son of Philipp Albrecht, Duke of Württemberg, and Archduchess Rosa of Austria, Princess of Tuscany.
-Carl became heir-presumptive to the headship of the House of Württemberg on 29 June 1959, when his older brother, Ludwig, renounced his succession rights.
-It also maintains some seventy cultural monuments of the House of Württemberg.
-Charitable activities
+Alexander Patrick Gregers Richard Windsor, Earl of Ulster (born 24 October 1974), is a member of the British royal family and the only son of Prince Richard, Duke of Gloucester, and Birgitte, Duchess of Gloucester.
+He is the heir apparent to the dukedom of Gloucester and is the second cousin of Charles III.
+He is also sometimes referred to as Alex Ulster.
+Early life and education
 
-Carl took part in many social and charitable activities, including the German Red Cross, the Friends of Cancer Children, the Free School Foundation, the Art Foundation, the Preventive Youth Welfare Foundation, and the Baden-Württemberg Monument Foundation, which he chaired from 2002 to 2008.
-He was Patron of the Society for the Promotion of the State Museum of Württemberg, and chairman of the Friends of the University of Tübingen and the University Foundation.
-Marriage and issue
+Alexander Patrick Gregers Richard Windsor was born prematurely on 24 October 1974 at St Mary's Hospital, London.
+He is the only son of Prince Richard, Duke of Gloucester, and Birgitte, Duchess of Gloucester.
+Alexander attended Eton College and later graduated with a degree in war studies from King's College London in 1996.
+Military career
 
-On 21 July 1960, Carl married Princess Diane d'Orléans, the daughter of Prince Henri, Count of Paris, and his wife Princess Isabelle of Orléans-Braganza.
-The wedding took place at Schloss Altshausen, the ancestral seat of the Dukes of Württemberg.
-They had four sons and two daughters and sixteen grandchildren:
+Alexander was commissioned in the King's Royal Hussars on 10 April 1998 as a subaltern (second lieutenant) with seniority from 14 April 1995; he was given the service number 548299.
+Marriage and family
 
-
-Honours and awards
-
-House of Württemberg
-
-States
-
-Formerly reigning families
-
-Religious orders
-
-Academic institutions
-
-Ancestry
-
-References
+On 22 June 2002, Alexander married Claire Booth, a physician, at the Queen's Chapel, St James's Palace.
+Lady Ulster is a professor of Gene Therapy and Paediatric Immunology at University College London's Great Ormond Street Institute of Child Health.
+Alexander continues to make public appearances at state events alongside other members of the extended royal family, including the 2022 state funeral of Queen Elizabeth II and the 2023 coronation of King Charles III and Queen Camilla.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -120,39 +108,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -167,6 +125,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -184,6 +159,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -251,29 +241,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -282,6 +264,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -294,6 +284,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -302,17 +294,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -340,6 +334,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -355,116 +433,85 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (3f43e4a0-b660-477b-8c1f-ca46ee6738dd)
- Call ID: 3f43e4a0-b660-477b-8c1f-ca46ee6738dd
-  Args:
-    source: Carl_Herzog_von_Württemberg
-    type: :Man
-  AssignClass (7a07b616-d6df-4b67-847f-2cd4bced1782)
- Call ID: 7a07b616-d6df-4b67-847f-2cd4bced1782
-  Args:
-    source: Philipp_Albrecht_Duke_of_Württemberg
-    type: :Man
-  AssignClass (70ebfc7e-132e-4de5-8a74-1f1897b1b9e2)
- Call ID: 70ebfc7e-132e-4de5-8a74-1f1897b1b9e2
-  Args:
-    type: :Woman
-    source: Rosa_of_Austria
-  AssignClass (ba3897ce-9d23-4224-a3ac-ebcdb07a9e9f)
- Call ID: ba3897ce-9d23-4224-a3ac-ebcdb07a9e9f
+  AssignClass (c66c6e62-dbd7-4af9-91ff-f50dc72be298)
+ Call ID: c66c6e62-dbd7-4af9-91ff-f50dc72be298
   Args:
     type: :Man
-    source: Ludwig_Württemberg
-  AssignClass (1b49c694-5a7c-4023-8b00-7a3d07999b43)
- Call ID: 1b49c694-5a7c-4023-8b00-7a3d07999b43
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+  AssignClass (0dcb5370-4018-465a-8795-aab6d6c78f0f)
+ Call ID: 0dcb5370-4018-465a-8795-aab6d6c78f0f
   Args:
-    source: Diane_dOrléans
-    type: :Woman
-  AssignClass (de39309e-8e10-47c6-903c-59e665ccdf44)
- Call ID: de39309e-8e10-47c6-903c-59e665ccdf44
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+    type: :Person
+  AddLiteral (75be1027-2b21-49ef-af14-5ead46c42ef8)
+ Call ID: 75be1027-2b21-49ef-af14-5ead46c42ef8
   Args:
-    type: :Man
-    source: Henri_Count_of_Paris
-  AssignClass (9fd31785-8648-4513-96bd-e6e509053c09)
- Call ID: 9fd31785-8648-4513-96bd-e6e509053c09
-  Args:
-    type: :Woman
-    source: Isabelle_of_Orléans-Braganza
-  AddLiteral (dc6b2a02-354e-4d1b-a1e6-917660c37d3d)
- Call ID: dc6b2a02-354e-4d1b-a1e6-917660c37d3d
-  Args:
+    literal_type: xsd:integer
+    literal_value: 1974
     relation: :hasBirthYear
-    source: Carl_Herzog_von_Württemberg
-    literal_type: xsd:integer
-    literal_value: 1936
-  AddLiteral (448d214f-f18f-49d1-8ec2-05b75770ebb2)
- Call ID: 448d214f-f18f-49d1-8ec2-05b75770ebb2
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+  AddLiteral (6b9b4ff2-2444-45ac-800c-0095804d9c70)
+ Call ID: 6b9b4ff2-2444-45ac-800c-0095804d9c70
   Args:
-    literal_value: 2022
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: Carl_Herzog_von_Württemberg
-  AddTriple (d1231704-6115-4df9-97f1-ff91b3d7fa6d)
- Call ID: d1231704-6115-4df9-97f1-ff91b3d7fa6d
+    literal_value: Alex Ulster
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+  AssignClass (33f1a9fc-5b0b-440a-9148-afd753f6e9ab)
+ Call ID: 33f1a9fc-5b0b-440a-9148-afd753f6e9ab
   Args:
-    source: Carl_Herzog_von_Württemberg
+    type: :Man
+    source: Prince_Richard_Duke_of_Gloucester
+  AssignClass (35ad8551-1bd0-4486-b8fc-71ac264afe18)
+ Call ID: 35ad8551-1bd0-4486-b8fc-71ac264afe18
+  Args:
+    source: Prince_Richard_Duke_of_Gloucester
+    type: :Person
+  AssignClass (6d05bdd3-025f-4337-8808-1a5677886ad5)
+ Call ID: 6d05bdd3-025f-4337-8808-1a5677886ad5
+  Args:
+    type: :Woman
+    source: Birgitte_Duchess_of_Gloucester
+  AssignClass (00777a43-48fa-4ac3-aacd-0da245d76fae)
+ Call ID: 00777a43-48fa-4ac3-aacd-0da245d76fae
+  Args:
+    source: Birgitte_Duchess_of_Gloucester
+    type: :Person
+  AddTriple (6aa21d72-2357-4e1d-be64-61f6cc48cff3)
+ Call ID: 6aa21d72-2357-4e1d-be64-61f6cc48cff3
+  Args:
+    source: Alexander_Patrick_Gregers_Richard_Windsor
     relation: :hasFather
-    target: Philipp_Albrecht_Duke_of_Württemberg
-  AddTriple (b64752b5-2349-42b4-9ce6-4dc70892559d)
- Call ID: b64752b5-2349-42b4-9ce6-4dc70892559d
+    target: Prince_Richard_Duke_of_Gloucester
+  AddTriple (61d62987-6708-4d0d-849d-d9db991b03b9)
+ Call ID: 61d62987-6708-4d0d-849d-d9db991b03b9
   Args:
-    source: Carl_Herzog_von_Württemberg
     relation: :hasMother
-    target: Rosa_of_Austria
-  AddTriple (56370435-3b69-4e98-a5a9-9c8a07ed1d76)
- Call ID: 56370435-3b69-4e98-a5a9-9c8a07ed1d76
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+    target: Birgitte_Duchess_of_Gloucester
+  AssignClass (948f1744-4605-4b1a-9231-14a35e1b527e)
+ Call ID: 948f1744-4605-4b1a-9231-14a35e1b527e
   Args:
-    source: Ludwig_Württemberg
-    target: Carl_Herzog_von_Württemberg
-    relation: :isBrotherOf
-  AddTriple (a948d08d-a195-4e81-bbf6-0e7d8e624b61)
- Call ID: a948d08d-a195-4e81-bbf6-0e7d8e624b61
+    source: Claire_Booth
+    type: :Woman
+  AssignClass (ce7ef8eb-2014-43db-9423-50e12de1c5e4)
+ Call ID: ce7ef8eb-2014-43db-9423-50e12de1c5e4
   Args:
-    target: Philipp_Albrecht_Duke_of_Württemberg
-    relation: :hasFather
-    source: Carl_Herzog_von_Württemberg
-  AddTriple (cf037489-efdc-49c3-a721-333b59d4376d)
- Call ID: cf037489-efdc-49c3-a721-333b59d4376d
+    type: :Person
+    source: Claire_Booth
+  AddTriple (90cccaa5-0a3f-4e70-a936-fcd5a99293d5)
+ Call ID: 90cccaa5-0a3f-4e70-a936-fcd5a99293d5
   Args:
-    target: Rosa_of_Austria
-    relation: :hasMother
-    source: Carl_Herzog_von_Württemberg
-  AddTriple (79bcfdea-01e6-4df0-bb19-93dd9495b829)
- Call ID: 79bcfdea-01e6-4df0-bb19-93dd9495b829
+    target: Claire_Booth
+    source: Alexander_Patrick_Gregers_Richard_Windsor
+    relation: :hasRelation
+  AddLiteral (60d74215-7399-4caf-b8a8-b1b9d930ee80)
+ Call ID: 60d74215-7399-4caf-b8a8-b1b9d930ee80
   Args:
-    relation: :hasFather
-    target: Philipp_Albrecht_Duke_of_Württemberg
-    source: Carl_Herzog_von_Württemberg
-  AddTriple (f5fe1d14-550f-4561-aba1-ae41b2c37950)
- Call ID: f5fe1d14-550f-4561-aba1-ae41b2c37950
-  Args:
-    source: Carl_Herzog_von_Württemberg
-    target: Rosa_of_Austria
-    relation: :hasMother
-  AddTriple (b9fc7aef-b2e9-4894-8475-f4eefe5a9a11)
- Call ID: b9fc7aef-b2e9-4894-8475-f4eefe5a9a11
-  Args:
-    target: Henri_Count_of_Paris
-    relation: :hasFather
-    source: Diane_dOrléans
-  AddTriple (0b0ee099-c914-4d56-9b07-e0169917247e)
- Call ID: 0b0ee099-c914-4d56-9b07-e0169917247e
-  Args:
-    source: Diane_dOrléans
-    target: Isabelle_of_Orléans-Braganza
-    relation: :hasMother
-  AddLiteral (2af98eeb-08ce-408a-ba45-8633a29a1419)
- Call ID: 2af98eeb-08ce-408a-ba45-8633a29a1419
-  Args:
-    literal_value: 1960
-    literal_type: xsd:integer
+    source: Alexander_Patrick_Gregers_Richard_Windsor
     relation: :hasMarriageYear
-    source: Carl_Herzog_von_Württemberg
-  Finish (70d3e6b8-bff6-4557-bb8b-7ab8fad9494b)
- Call ID: 70d3e6b8-bff6-4557-bb8b-7ab8fad9494b
+    literal_value: 2002
+    literal_type: xsd:integer
+  Finish (0fc97274-41d4-49e7-9456-a58323db65b1)
+ Call ID: 0fc97274-41d4-49e7-9456-a58323db65b1
   Args:

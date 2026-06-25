@@ -1,0 +1,207 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Armgard_Else_Helene_von_Veltheim a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Armgard Else Helene von Veltheim"^^xsd:string ;
+    data:posIndicesFull "790:822"^^xsd:string ;
+    data:wdtLink wdt:Q75383555 ;
+    :hasChild data:Oskar_of_Prussia ;
+    :hasRelation data:Armgard_Else_Helene_von_Veltheim,
+        data:Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Armgard_Else_Helene_von_Veltheim ;
+    :hasSon data:Oskar_of_Prussia ;
+    :isAncestorOf data:Oskar_of_Prussia ;
+    :isAuntOf data:Oskar_of_Prussia ;
+    :isBloodrelationOf data:Armgard_Else_Helene_von_Veltheim ;
+    :isMotherOf data:Oskar_of_Prussia ;
+    :isParentOf data:Oskar_of_Prussia ;
+    :isSiblingOf data:Armgard_Else_Helene_von_Veltheim ;
+    :isSisterOf data:Armgard_Else_Helene_von_Veltheim .
+
+data:Countess_Ina_Marie_von_Bassewitz a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Countess Ina Marie von Bassewitz"^^xsd:string ;
+    data:posIndicesFull "303:335"^^xsd:string ;
+    data:wdtLink wdt:Q772541 ;
+    :alsoKnownAs "Countess Ina-Marie Helene Adele Elise von Bassewitz"^^xsd:string,
+        "Ina Marie Bassewitz"^^xsd:string ;
+    :hasChild data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasRelation data:Countess_Ina_Marie_von_Bassewitz,
+        data:Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Countess_Ina_Marie_von_Bassewitz ;
+    :hasSon data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isAncestorOf data:Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isAuntOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isBloodrelationOf data:Countess_Ina_Marie_von_Bassewitz ;
+    :isMotherOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isSiblingOf data:Countess_Ina_Marie_von_Bassewitz ;
+    :isSisterOf data:Countess_Ina_Marie_von_Bassewitz .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "194:204"^^xsd:string ;
+    data:posIndicesPart "242:249"^^xsd:string,
+        "353:360"^^xsd:string,
+        "531:538"^^xsd:string,
+        "769:776"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Prince_Oskar_of_Prussia ;
+    :hasRelation data:Oskar_of_Prussia,
+        data:Prince_Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Oskar_of_Prussia ;
+    :isAncestorOf data:Oskar_of_Prussia,
+        data:Prince_Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Prince_Oskar_of_Prussia ;
+    :isParentOf data:Prince_Oskar_of_Prussia ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Prince_Oskar_of_Prussia .
+
+data:Prince_Oskar_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Oskar of Prussia"^^xsd:string ;
+    data:posIndicesFull "134:157"^^xsd:string,
+        "141:157"^^xsd:string,
+        "275:298"^^xsd:string,
+        "282:298"^^xsd:string ;
+    data:wdtLink wdt:Q61242 ;
+    :alsoKnownAs "Oskar Karl Gustav Adolf of Prussia"^^xsd:string,
+        "Oskar of Prussia"^^xsd:string,
+        "Prince Oskar Karl Gustav Adolf of Prussia"^^xsd:string ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBrother data:Prince_Oskar_of_Prussia ;
+    :hasChild data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Oskar_of_Prussia,
+        data:Prince_Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isAncestorOf data:Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isBloodrelationOf data:Prince_Oskar_of_Prussia ;
+    :isBrotherOf data:Prince_Oskar_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isFatherOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isParentOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isSiblingOf data:Prince_Oskar_of_Prussia ;
+    :isSonOf data:Wilhelm_II ;
+    :isUncleOf data:Prince_Wilhelm-Karl_of_Prussia .
+
+data:Oskar_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Oskar of Prussia"^^xsd:string ;
+    data:posIndicesFull "134:157"^^xsd:string,
+        "141:157"^^xsd:string,
+        "275:298"^^xsd:string,
+        "282:298"^^xsd:string ;
+    data:wdtLink wdt:Q100307 ;
+    :alsoKnownAs "Prince Oscar of Prussia"^^xsd:string ;
+    :hasAncestor data:Armgard_Else_Helene_von_Veltheim,
+        data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Oskar_of_Prussia ;
+    :hasFather data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasMother data:Armgard_Else_Helene_von_Veltheim ;
+    :hasParent data:Armgard_Else_Helene_von_Veltheim,
+        data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasRelation data:Armgard_Else_Helene_von_Veltheim,
+        data:Countess_Ina_Marie_von_Bassewitz,
+        data:Oskar_of_Prussia,
+        data:Prince_Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Oskar_of_Prussia ;
+    :isBrotherOf data:Oskar_of_Prussia ;
+    :isChildOf data:Armgard_Else_Helene_von_Veltheim,
+        data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isSiblingOf data:Oskar_of_Prussia ;
+    :isSonOf data:Armgard_Else_Helene_von_Veltheim,
+        data:Prince_Wilhelm-Karl_of_Prussia .
+
+data:Prince_Wilhelm-Karl_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Wilhelm-Karl of Prussia"^^xsd:string ;
+    data:wdtLink wdt:Q92141 ;
+    :alsoKnownAs "Prince Wilhelm Karl of Prussia"^^xsd:string,
+        "Wilhelm-Karl of Prussia"^^xsd:string ;
+    :hasAncestor data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasChild data:Oskar_of_Prussia ;
+    :hasFather data:Prince_Oskar_of_Prussia ;
+    :hasMother data:Countess_Ina_Marie_von_Bassewitz ;
+    :hasParent data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia ;
+    :hasRelation data:Armgard_Else_Helene_von_Veltheim,
+        data:Countess_Ina_Marie_von_Bassewitz,
+        data:Oskar_of_Prussia,
+        data:Prince_Oskar_of_Prussia,
+        data:Prince_Wilhelm-Karl_of_Prussia,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Oskar_of_Prussia ;
+    :isAncestorOf data:Oskar_of_Prussia ;
+    :isBloodrelationOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isBrotherOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isChildOf data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia ;
+    :isFatherOf data:Oskar_of_Prussia ;
+    :isParentOf data:Oskar_of_Prussia ;
+    :isSiblingOf data:Prince_Wilhelm-Karl_of_Prussia ;
+    :isSonOf data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia ;
+    :isUncleOf data:Oskar_of_Prussia .
+

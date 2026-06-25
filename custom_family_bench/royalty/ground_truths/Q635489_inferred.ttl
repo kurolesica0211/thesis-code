@@ -1,0 +1,232 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Marie_Auguste_of_Anhalt a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Marie Auguste of Anhalt"^^xsd:string ;
+    data:posIndicesFull "154:186"^^xsd:string,
+        "373:405"^^xsd:string ;
+    data:posIndicesPart "1090:1095"^^xsd:string,
+        "1096:1103"^^xsd:string,
+        "1156:1161"^^xsd:string,
+        "1162:1169"^^xsd:string,
+        "1287:1292"^^xsd:string,
+        "1293:1300"^^xsd:string,
+        "1736:1744"^^xsd:string,
+        "1826:1834"^^xsd:string ;
+    data:wdtLink wdt:Q63014 ;
+    :alsoKnownAs "Marie Auguste Prinzessin von Anhalt"^^xsd:string,
+        "Marie of Anhalt"^^xsd:string,
+        "Princess Marie Augustine of Anhalt"^^xsd:string,
+        "Princess Marie-Auguste of Anhalt"^^xsd:string ;
+    :hasChild data:Prince_Karl_Franz_of_Prussia ;
+    :hasRelation data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Marie_Auguste_of_Anhalt,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marie_Auguste_of_Anhalt ;
+    :hasSon data:Prince_Karl_Franz_of_Prussia ;
+    :isAncestorOf data:Prince_Karl_Franz_of_Prussia ;
+    :isAuntOf data:Prince_Karl_Franz_of_Prussia ;
+    :isBloodrelationOf data:Princess_Marie_Auguste_of_Anhalt ;
+    :isMotherOf data:Prince_Karl_Franz_of_Prussia ;
+    :isParentOf data:Prince_Karl_Franz_of_Prussia ;
+    :isSiblingOf data:Princess_Marie_Auguste_of_Anhalt ;
+    :isSisterOf data:Princess_Marie_Auguste_of_Anhalt .
+
+data:Prince_Eitel_Friedrich_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Eitel Friedrich of Prussia"^^xsd:string ;
+    data:posIndicesFull "858:891"^^xsd:string,
+        "865:880"^^xsd:string ;
+    data:posIndicesPart "1038:1043"^^xsd:string,
+        "1053:1058"^^xsd:string,
+        "2415:2421"^^xsd:string ;
+    data:wdtLink wdt:Q62056 ;
+    :alsoKnownAs "Eitel Friedrich"^^xsd:string,
+        "Prince Wilhelm Eitel Friedrich Christian Karl of Prussia"^^xsd:string,
+        "Wilhelm Eitel-Friedrich Christian Karl Prinz von Preußen"^^xsd:string ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBrother data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Marie_Auguste_of_Anhalt,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isBrotherOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isSiblingOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isSonOf data:Wilhelm_II ;
+    :isUncleOf data:Prince_Karl_Franz_of_Prussia .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "1924:1934"^^xsd:string,
+        "214:224"^^xsd:string,
+        "214:240"^^xsd:string ;
+    data:posIndicesPart "1317:1324"^^xsd:string,
+        "1410:1417"^^xsd:string,
+        "2006:2013"^^xsd:string,
+        "979:986"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :hasRelation data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Marie_Auguste_of_Anhalt,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isAncestorOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia ;
+    :isBloodrelationOf data:Wilhelm_II ;
+    :isBrotherOf data:Wilhelm_II ;
+    :isFatherOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isParentOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isSiblingOf data:Wilhelm_II ;
+    :isUncleOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia .
+
+data:Prince_Karl_Franz_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince Karl Franz of Prussia"^^xsd:string ;
+    data:posIndicesFull "0:64"^^xsd:string,
+        "7:23"^^xsd:string ;
+    data:posIndicesPart "1129:1133"^^xsd:string,
+        "1134:1139"^^xsd:string,
+        "1565:1569"^^xsd:string,
+        "1570:1575"^^xsd:string,
+        "1717:1721"^^xsd:string,
+        "1722:1727"^^xsd:string,
+        "1891:1895"^^xsd:string,
+        "1896:1901"^^xsd:string,
+        "2130:2134"^^xsd:string,
+        "2135:2140"^^xsd:string,
+        "2246:2250"^^xsd:string,
+        "2251:2256"^^xsd:string,
+        "2415:2421"^^xsd:string,
+        "2422:2426"^^xsd:string,
+        "254:260"^^xsd:string,
+        "261:265"^^xsd:string,
+        "266:271"^^xsd:string,
+        "597:603"^^xsd:string,
+        "685:691"^^xsd:string,
+        "692:696"^^xsd:string,
+        "697:702"^^xsd:string,
+        "801:805"^^xsd:string,
+        "806:811"^^xsd:string ;
+    data:wdtLink wdt:Q635489 ;
+    :alsoKnownAs "Karl Franz Joseph"^^xsd:string,
+        "Karl Franz Joseph Prinz von Preußen"^^xsd:string,
+        "Prince Karl Franz Josef Wilhelm Friedrich Eduard Paul of Prussia"^^xsd:string ;
+    :hasAncestor data:Prince_Joachim_of_Prussia,
+        data:Princess_Marie_Auguste_of_Anhalt,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_Karl_Franz_of_Prussia ;
+    :hasFather data:Prince_Joachim_of_Prussia ;
+    :hasMother data:Princess_Marie_Auguste_of_Anhalt ;
+    :hasParent data:Prince_Joachim_of_Prussia,
+        data:Princess_Marie_Auguste_of_Anhalt ;
+    :hasRelation data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Marie_Auguste_of_Anhalt,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Karl_Franz_of_Prussia ;
+    :isBrotherOf data:Prince_Karl_Franz_of_Prussia ;
+    :isChildOf data:Prince_Joachim_of_Prussia,
+        data:Princess_Marie_Auguste_of_Anhalt ;
+    :isSiblingOf data:Prince_Karl_Franz_of_Prussia ;
+    :isSonOf data:Prince_Joachim_of_Prussia,
+        data:Princess_Marie_Auguste_of_Anhalt .
+
+data:Prince_Joachim_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Joachim of Prussia"^^xsd:string ;
+    data:posIndicesFull "124:149"^^xsd:string,
+        "131:138"^^xsd:string,
+        "1381:1388"^^xsd:string,
+        "343:368"^^xsd:string,
+        "350:357"^^xsd:string,
+        "604:611"^^xsd:string ;
+    data:posIndicesPart "2415:2421"^^xsd:string,
+        "254:260"^^xsd:string,
+        "685:691"^^xsd:string ;
+    data:wdtLink wdt:Q60371 ;
+    :alsoKnownAs "Joachim"^^xsd:string,
+        "Joachim Franz Hubert"^^xsd:string,
+        "Prince Joachim Franz Humbert of Prussia"^^xsd:string ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBrother data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :hasChild data:Prince_Karl_Franz_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia,
+        data:Prince_Karl_Franz_of_Prussia,
+        data:Princess_Marie_Auguste_of_Anhalt,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Karl_Franz_of_Prussia ;
+    :isAncestorOf data:Prince_Karl_Franz_of_Prussia ;
+    :isBloodrelationOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isBrotherOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isFatherOf data:Prince_Karl_Franz_of_Prussia ;
+    :isParentOf data:Prince_Karl_Franz_of_Prussia ;
+    :isSiblingOf data:Prince_Eitel_Friedrich_of_Prussia,
+        data:Prince_Joachim_of_Prussia ;
+    :isSonOf data:Wilhelm_II ;
+    :isUncleOf data:Prince_Karl_Franz_of_Prussia .
+

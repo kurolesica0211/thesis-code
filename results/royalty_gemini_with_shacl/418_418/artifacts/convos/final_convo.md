@@ -85,39 +85,61 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Donatus, Prince and Landgrave of Hesse (legally Heinrich Donatus Philipp Umberto Prinz und Landgraf von Hessen; born 17 October 1966) is a German businessman and the head of the House of Brabant and the House of Hesse.
-He is the eldest son and successor of German aristocrat Moritz, Landgrave of Hesse, and his former wife, Princess Tatiana of Sayn-Wittgenstein-Berleburg (b. 1940).
-Donatus's father became the head of the Hesse-Cassel line on the death of his own father, Landgrave Philipp in 1980.
-Having also been the adopted son and heir of his distant cousin, Louis, Prince of Hesse and by Rhine, the latter's death in 1968 as the last male of the Hesse-Darmstadt branch left Moritz head of the entire House of Hesse, to which Donatus succeeded.
-Profession
+Prince Philippe, Duke of Orléans (French: Louis Philippe Robert; 6 February 1869 – 28 March 1926) was the Orléanist pretender to the throne of France from 1894 to 1926 as Philippe VIII.
+Early life
 
-Donatus directs the Hessische Hausstiftung (Foundation of the House of Hesse), a foundation (see below) established to curate and showcase the cultural heritage and history of the House of Hesse, a dynasty which ruled the Electorate of Hesse-Cassel until 1866, the Grand Duchy of Hesse and by Rhine until 1918, and whose male-line antecedents and co-lateral ties include the Protestant leader Philip the Magnanimous, the Swedish king Frederick I, Russia's last tsarina Alexandra Feodorovna, the exiled Spanish queen Victoria Eugenie of Battenberg, and Britain's last viceroy of India, the assassinated Louis, Earl Mountbatten of Burma.
-Donatus also manages Prinz von Hessen, a winery specializing in production of varietal vintages on his 45 hectare vineyard.
-Marriage and issue
+Philippe was born at York House, Twickenham, near London, the son of Philippe, Count of Paris, by his wife (and first cousin), Princess Isabelle of Orléans.
+He was baptised with the names Louis-Philippe-Robert, and was called Philippe.
+His family lived in the United Kingdom from the abdication and banishment of his great-grandfather Louis Philippe I, King of the French, in 1848, and returned to France in 1871 following the fall of the Second French Empire.
+However, they again took refuge in England in 1886, when the French Republic exiled them following the wedding in Paris of Philippe's sister Amélie of Orléans to Crown Prince Carlos of Portugal.
+Returning therefore to France in 1871 with his parents, Philippe was educated at home at the Château d'Eu and at the Collège Stanislas de Paris.
+In 1880 Philippe's father granted him the title Duc d'Orléans.
+Military career
 
-Donatus married the daughter of German industrial heir and Chinese honorary citizen Count Hubertus von Faber-Castell, Countess Floria Franziska Marie-Luisa Erika von Faber-Castell (born 14 October 1974, Düsseldorf), in a civil ceremony in Wiesbaden on 25 April 2003.
-Prince Donatus and Floria Franziska are 6th cousins, as both descended from Frederick II, Landgrave of Hesse-Kassel and his first wife Princess Mary of Great Britain.
-Held at the Johanneskirche and followed by a grand ball in the Green Salon, state room of the former Friedrichshof palace in Kronberg (now a luxury hotel and golf course owned by the House of Hesse's family foundation) where Donatus's ancestress, the German Empress Frederick, Princess Royal, lived in widowhood, more than 300 guests were present.
-Among them were Caroline, Princess of Hanover, Princess Benedikte of Denmark, and Gloria, Princess of Thurn and Taxis.
-Representative appearances
+Philippe began his military education at the École spéciale militaire de Saint-Cyr.
+In October 1889, Philippe went to Switzerland to complete a course in military theory.
+While there he fathered a son, Philippe Debien, by Nina, an actress working in the casino at Lausanne.
+Drawn to explore the "unknown", Philippe asked Prince George, Duke of Cambridge, to send him to a military post in the Himalayas.
+While in the East, he undertook a hunting and exploratory expedition in Nepal with his cousin Prince Henri of Orléans, went mountain-climbing in Tibet, and visited Afghanistan, Ceylon, and the Persian Gulf, before being posted back to Britain.
+Prior to his imprisonment in France, Philippe had been unofficially engaged to his first cousin Princess Marguerite of Orléans, but the engagement was cancelled when Philippe's involvement with the Australian opera singer Nellie Melba was revealed.
+Armstrong filed for divorce from Melba on the grounds of adultery, naming Philippe as co-respondent; the case was eventually dropped.
+In September 1890, Philippe accompanied his father on a two-month trip to the United States and Canada.
+On 12 November 1890, while in Philadelphia, Philippe joined the Pennsylvania Commandery of the Military Order of the Loyal Legion of the United States (MOLLUS) - a military society composed of officers who had served the Union in the American Civil War and their descendants - by right of his father's service in the Union Army.
+In December 1890, Philippe applied unsuccessfully to serve in the Russian Army.
+In March 1894, Philippe went to Egypt and Palestine with his sister Hélène, Duchess of Aosta.
+Claimant to the defunct throne
 
-In 2021, Donatus was one of only 30 mourners at Prince Philip, the Duke of Edinburgh's, funeral at St George's Chapel, Windsor Castle.
-King Charles III appointed Donatus his personal representative to the funeral of his first cousin Maximilian, Margrave of Baden, on 13 January 2023.
-Although, as a descendant of Queen Victoria, he is only a distant relative of today's British royals who are more closely related to some other princes of Hesse, descendants of Prince Philip's sister Sophie, there is a close connection to the British royal family through Donatus' adoptive grandparents, Louis, Prince of Hesse and by Rhine, and his wife Margaret Campbell Geddes, who were relatives and close friends of Queen Elizabeth II and Prince Philip, as Philip's sister Cecilie had been married to Louis' elder brother Georg Donatus, Hereditary Grand Duke of Hesse.
-The late Queen, Prince Philip and Charles (then Prince of Wales) have visited Wolfsgarten on several occasions.
-Ancestry
+Upon the death of his father on 8 September 1894, Philippe became the Orléanist claimant to the defunct French throne.
+He was known to monarchists as Philippe VIII.
+In October 1895, Philippe was named as co-respondent in the divorce case of Woolston v. Woolston.
+Unlike his great grandfather, Louis Philippe I, Philippe claimed grand mastership of the Order of the Holy Spirit as intrinsic to his dynastic claim to the throne, and sometimes wore the breast star of the order.
+On 5 November 1896, in Vienna, Philippe married Archduchess Maria Dorothea of Austria (1867–1932), a daughter of Archduke Joseph Karl of Austria, Palatine of Hungary, and granddaughter of Princess Clémentine of Orléans, as well as a niece of Marie Henriette of Austria, Queen Consort of the Belgians.
+While travelling in Geneva in 1898, Philippe narrowly missed being assassinated by Luigi Lucheni, an anarchist, who vowed to kill the next member of a royal family that he saw.
+He explored parts of the northeastern coast of Greenland, Denmark, in 1905 during his Duke of Orléans Arctic Expedition on ship Belgica.
+Philippe continued to reside in the United Kingdom until 1912, when he moved his primary residence to Belgium.
+In 1914, Philippe and his wife Maria Dorothea were legally separated.
+At the outbreak of the First World War, Philippe again tried unsuccessfully to join the French army.
+In 1926, Philippe died of pneumonia at the Palais d'Orléans in Palermo, Sicily, Italy.
+Having no legitimate issue, he was succeeded as pretender to the defunct throne of France by his cousin and brother in law, Jean, Duke of Guise.
+Publications
 
-Foundation of the House of Hesse
+Philippe wrote a number of works based on his many travels: 
 
-Founded in 1928, the Foundation of the House of Hesse is the successor institution of a family trust that had been established in 1830, confiscated by the Kingdom of Prussia in 1866, and re-established after partial restitution in 1878.
-The latter is mainly shown at Fasanerie Palace in Eichenzell, Hesse, a former summer palace of the Prince Abbots of Fulda that had been taken over by the Landgraves of Hesse after the secularization and mediatisation of the Prince-bishopric of Fulda in 1803.
-The Landgrave and his family live in Wolfsgarten and Panker.
+
+He also published a collection of the papers of his father and of the Henri, comte de Chambord:
+Honours
+
+In popular culture
+
+Duke Philippe of Orleans briefly appears in an urban fantasy novel for children, The Master Key (1901) by L. Frank Baum.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -133,39 +155,9 @@ The Landgrave and his family live in Wolfsgarten and Panker.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -180,6 +172,23 @@ The Landgrave and his family live in Wolfsgarten and Panker.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -197,6 +206,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,29 +288,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -295,6 +311,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -307,6 +331,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -315,17 +341,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -353,6 +381,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -368,137 +480,133 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (152c62b8-3bc7-4f59-90f2-d46e9a58a756)
- Call ID: 152c62b8-3bc7-4f59-90f2-d46e9a58a756
+  AssignClass (e1b668da-78c8-4a33-968e-c355eb4a646f)
+ Call ID: e1b668da-78c8-4a33-968e-c355eb4a646f
   Args:
-    source: Donatus
     type: :Man
-  AssignClass (288c966f-b5d2-465e-b150-4b2529ccc6fa)
- Call ID: 288c966f-b5d2-465e-b150-4b2529ccc6fa
+    source: Philippe_Duke_of_Orleans
+  AssignClass (b25ab34c-ce8c-4035-b839-a35b7b490fa6)
+ Call ID: b25ab34c-ce8c-4035-b839-a35b7b490fa6
   Args:
-    type: :Person
-    source: Donatus
-  AddLiteral (af59c275-6ca0-4e2f-8053-4f83f5508ee2)
- Call ID: af59c275-6ca0-4e2f-8053-4f83f5508ee2
-  Args:
-    source: Donatus
-    literal_type: xsd:string
-    relation: :hasSex
-    literal_value: Male
-  AssignClass (a6411849-446a-471b-ba9f-07c380f485a8)
- Call ID: a6411849-446a-471b-ba9f-07c380f485a8
-  Args:
-    source: Moritz
     type: :Man
-  AssignClass (eed33139-f932-4530-a80c-5cb418cca04f)
- Call ID: eed33139-f932-4530-a80c-5cb418cca04f
+    source: Philippe_Count_of_Paris
+  AssignClass (3adaa027-b7e7-4e3e-bd31-ccb854198587)
+ Call ID: 3adaa027-b7e7-4e3e-bd31-ccb854198587
   Args:
-    source: Moritz
-    type: :Person
-  AssignClass (f9c1cd7f-0e3a-47e2-ba1a-510193b3c72e)
- Call ID: f9c1cd7f-0e3a-47e2-ba1a-510193b3c72e
-  Args:
-    source: Moritz
-    type: :Ancestor
-  AssignClass (3df3b233-7b5d-4808-aac4-6bd132897470)
- Call ID: 3df3b233-7b5d-4808-aac4-6bd132897470
+    source: Isabelle_of_Orleans
+    type: :Woman
+  AssignClass (1bb43030-f3f3-4a6b-89b8-898ca005fa78)
+ Call ID: 1bb43030-f3f3-4a6b-89b8-898ca005fa78
   Args:
     type: :Woman
-    source: Tatiana
-  AssignClass (5d0d09a6-295b-468c-bd82-9475f4b17a63)
- Call ID: 5d0d09a6-295b-468c-bd82-9475f4b17a63
+    source: Amelie_of_Orleans
+  AssignClass (51f30318-825f-471c-a847-b84d45ae93a1)
+ Call ID: 51f30318-825f-471c-a847-b84d45ae93a1
   Args:
-    type: :Person
-    source: Tatiana
-  AssignClass (8297bbb2-a90e-4b12-8a60-07bf31ac77a9)
- Call ID: 8297bbb2-a90e-4b12-8a60-07bf31ac77a9
+    source: Philippe_Debien
+    type: :Man
+  AssignClass (39d6d816-a538-4860-9102-75d3872290e4)
+ Call ID: 39d6d816-a538-4860-9102-75d3872290e4
   Args:
-    source: Tatiana
-    type: :Ancestor
-  AddTriple (f921225d-c913-4c37-a824-326593fd1979)
- Call ID: f921225d-c913-4c37-a824-326593fd1979
+    type: :Woman
+    source: Nina
+  AssignClass (c2d21bdf-2404-4318-add0-d6ace11f1ac0)
+ Call ID: c2d21bdf-2404-4318-add0-d6ace11f1ac0
   Args:
-    source: Donatus
-    target: Moritz
+    source: Helene_Duchess_of_Aosta
+    type: :Woman
+  AssignClass (2a1766f8-3a5e-4bfd-bd66-3d7562a42c3e)
+ Call ID: 2a1766f8-3a5e-4bfd-bd66-3d7562a42c3e
+  Args:
+    source: Maria_Dorothea_of_Austria
+    type: :Woman
+  AssignClass (fa09203c-01cc-4d91-b995-b6f1d7520895)
+ Call ID: fa09203c-01cc-4d91-b995-b6f1d7520895
+  Args:
+    type: :Man
+    source: Jean_Duke_of_Guise
+  AddTriple (08096d9c-73e0-4ed6-9d4d-41768460b851)
+ Call ID: 08096d9c-73e0-4ed6-9d4d-41768460b851
+  Args:
     relation: :hasFather
-  AddTriple (41a44844-fa5e-4e4f-a71a-484702c09025)
- Call ID: 41a44844-fa5e-4e4f-a71a-484702c09025
+    source: Philippe_Duke_of_Orleans
+    target: Philippe_Count_of_Paris
+  AddTriple (23084968-45a8-4d05-be16-15516ac6af40)
+ Call ID: 23084968-45a8-4d05-be16-15516ac6af40
   Args:
+    target: Isabelle_of_Orleans
+    source: Philippe_Duke_of_Orleans
     relation: :hasMother
-    source: Donatus
-    target: Tatiana
-  AssignClass (f7a49fcb-b54e-4f3f-bde7-2250b1e2fe54)
- Call ID: f7a49fcb-b54e-4f3f-bde7-2250b1e2fe54
+  AddTriple (2bc101ee-a6f6-4508-ab0f-84acc4233129)
+ Call ID: 2bc101ee-a6f6-4508-ab0f-84acc4233129
   Args:
-    source: Philipp
-    type: :Man
-  AssignClass (a0ba15a0-b598-46a4-8c4a-365f484f8b85)
- Call ID: a0ba15a0-b598-46a4-8c4a-365f484f8b85
-  Args:
-    type: :Person
-    source: Philipp
-  AssignClass (2c673c1c-ae52-4705-9eaf-fd13cf292d12)
- Call ID: 2c673c1c-ae52-4705-9eaf-fd13cf292d12
-  Args:
-    source: Philipp
-    type: :Ancestor
-  AddTriple (a8fd190f-2e87-4fd9-b081-822f0551c79d)
- Call ID: a8fd190f-2e87-4fd9-b081-822f0551c79d
-  Args:
+    source: Philippe_Debien
     relation: :hasFather
-    source: Moritz
-    target: Philipp
-  AssignClass (8765dbfd-8c57-43c2-bcb4-9335d7cd9662)
- Call ID: 8765dbfd-8c57-43c2-bcb4-9335d7cd9662
+    target: Philippe_Duke_of_Orleans
+  AddTriple (486d1722-1b40-4748-88f5-8f8793ec6aca)
+ Call ID: 486d1722-1b40-4748-88f5-8f8793ec6aca
   Args:
-    type: :Woman
-    source: Floria_Franziska
-  AssignClass (54e469a2-634d-422c-a9d2-9e049993f996)
- Call ID: 54e469a2-634d-422c-a9d2-9e049993f996
+    target: Nina
+    relation: :hasMother
+    source: Philippe_Debien
+  AddTriple (fbc15f69-0312-463d-991c-1a7465049bca)
+ Call ID: fbc15f69-0312-463d-991c-1a7465049bca
   Args:
-    source: Floria_Franziska
-    type: :Person
-  AssignClass (90e60db2-8eb0-41cd-ad42-000c27ade42e)
- Call ID: 90e60db2-8eb0-41cd-ad42-000c27ade42e
+    target: Philippe_Duke_of_Orleans
+    relation: :isSisterOf
+    source: Amelie_of_Orleans
+  AddTriple (d888e404-82a9-4dff-ae06-1582b3a363bd)
+ Call ID: d888e404-82a9-4dff-ae06-1582b3a363bd
   Args:
-    source: Hubertus_von_Faber-Castell
-    type: :Man
-  AssignClass (ccd9369b-a5d4-49f4-8bdc-5c9ceff5415b)
- Call ID: ccd9369b-a5d4-49f4-8bdc-5c9ceff5415b
+    target: Philippe_Duke_of_Orleans
+    source: Helene_Duchess_of_Aosta
+    relation: :isSisterOf
+  AddLiteral (7b576b1f-93c6-4d66-95ac-cd7e99d21211)
+ Call ID: 7b576b1f-93c6-4d66-95ac-cd7e99d21211
   Args:
-    source: Hubertus_von_Faber-Castell
-    type: :Person
-  AssignClass (ac385708-e145-4245-a4bd-8bb1c3d35d29)
- Call ID: ac385708-e145-4245-a4bd-8bb1c3d35d29
+    literal_value: 1869
+    source: Philippe_Duke_of_Orleans
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (b65d61ff-b306-4ada-b422-6e0b9e7e3db8)
+ Call ID: b65d61ff-b306-4ada-b422-6e0b9e7e3db8
   Args:
-    type: :Ancestor
-    source: Hubertus_von_Faber-Castell
-  AddTriple (8506dd51-43eb-473a-9f75-0e726a39dff5)
- Call ID: 8506dd51-43eb-473a-9f75-0e726a39dff5
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Philippe_Duke_of_Orleans
+    literal_value: 1926
+  AddLiteral (98663b73-a18c-4c43-bbf1-78e067466295)
+ Call ID: 98663b73-a18c-4c43-bbf1-78e067466295
   Args:
-    source: Floria_Franziska
-    target: Hubertus_von_Faber-Castell
-    relation: :hasFather
-  AddLiteral (77c9f45d-99b8-4572-b996-9a233c714a82)
- Call ID: 77c9f45d-99b8-4572-b996-9a233c714a82
-  Args:
-    literal_type: xsd:string
-    source: Donatus
-    literal_value: 2003
+    source: Philippe_Duke_of_Orleans
+    literal_type: xsd:integer
     relation: :hasMarriageYear
-  AddTriple (0227e022-d1e1-4e4e-aa2c-426d4a02d3bf)
- Call ID: 0227e022-d1e1-4e4e-aa2c-426d4a02d3bf
+    literal_value: 1896
+  AddTriple (4b49739c-256f-4a39-b5e3-2f53dd852b53)
+ Call ID: 4b49739c-256f-4a39-b5e3-2f53dd852b53
   Args:
-    source: Donatus
-    target: Floria_Franziska
-    relation: :hasRelation
-  Finish (2ca33a89-75cb-47b0-99e4-830049150711)
- Call ID: 2ca33a89-75cb-47b0-99e4-830049150711
+    target: Joseph_Karl_of_Austria
+    relation: :hasFather
+    source: Maria_Dorothea_of_Austria
+  AssignClass (feb9c432-4eb2-4a46-ab3a-7b57a545eab9)
+ Call ID: feb9c432-4eb2-4a46-ab3a-7b57a545eab9
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Joseph_Karl_of_Austria
+    type: :Man
+  AddTriple (a58b0a81-92d5-4469-9d5d-dacf26010b47)
+ Call ID: a58b0a81-92d5-4469-9d5d-dacf26010b47
+  Args:
+    source: Maria_Dorothea_of_Austria
+    relation: :hasMother
+    target: Clementine_of_Orleans
+  AssignClass (86bafc48-7381-497b-8cb8-ec92c09aace8)
+ Call ID: 86bafc48-7381-497b-8cb8-ec92c09aace8
+  Args:
+    source: Clementine_of_Orleans
+    type: :Woman
+  Finish (d9f8ecfe-fd87-4887-a1e2-8671cbf67bb0)
+ Call ID: d9f8ecfe-fd87-4887-a1e2-8671cbf67bb0
+  Args:
 
 ================================= Tool Message =================================
 
@@ -591,34 +699,38 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Donatus a :Man,
-          :Person ;
-      :hasFather data:Moritz ;
-      :hasMarriageYear "2003"^^xsd:string ;
-      :hasMother data:Tatiana ;
-      :hasRelation data:Floria_Franziska ;
-      :hasSex "Male"^^xsd:string .
+  data:Amelie_of_Orleans a :Woman ;
+      :isSisterOf data:Philippe_Duke_of_Orleans .
 
-  data:Floria_Franziska a :Person,
-          :Woman ;
-      :hasFather data:Hubertus_von_Faber-Castell .
+  data:Helene_Duchess_of_Aosta a :Woman ;
+      :isSisterOf data:Philippe_Duke_of_Orleans .
 
-  data:Hubertus_von_Faber-Castell a :Ancestor,
-          :Man,
-          :Person .
+  data:Jean_Duke_of_Guise a :Man .
 
-  data:Moritz a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Philipp .
+  data:Maria_Dorothea_of_Austria a :Woman ;
+      :hasFather data:Joseph_Karl_of_Austria ;
+      :hasMother data:Clementine_of_Orleans .
 
-  data:Philipp a :Ancestor,
-          :Man,
-          :Person .
+  data:Philippe_Debien a :Man ;
+      :hasFather data:Philippe_Duke_of_Orleans ;
+      :hasMother data:Nina .
 
-  data:Tatiana a :Ancestor,
-          :Person,
-          :Woman .
+  data:Clementine_of_Orleans a :Woman .
+
+  data:Isabelle_of_Orleans a :Woman .
+
+  data:Joseph_Karl_of_Austria a :Man .
+
+  data:Nina a :Woman .
+
+  data:Philippe_Count_of_Paris a :Man .
+
+  data:Philippe_Duke_of_Orleans a :Man ;
+      :hasBirthYear 1869 ;
+      :hasDeathYear 1926 ;
+      :hasFather data:Philippe_Count_of_Paris ;
+      :hasMarriageYear 1896 ;
+      :hasMother data:Isabelle_of_Orleans .
 
 
 
@@ -630,78 +742,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (9e7b75aa-30e4-4270-acad-28e405c8d636)
- Call ID: 9e7b75aa-30e4-4270-acad-28e405c8d636
+  ValidateShacl (2ba86e72-f55c-4f0d-87b0-90d98fe7f3b2)
+ Call ID: 2ba86e72-f55c-4f0d-87b0-90d98fe7f3b2
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:8
+Total violations:18
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Donatus' has a 'hasSex' relationship pointing to 'Male', but 'Male' is not categorized as an instance of the class ':Sex'.
+      The node Philippe_Count_of_Paris is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node ':Male'.
+      AssignClass(node='Philippe_Count_of_Paris', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Donatus' has a 'hasSex' relationship pointing to 'Male', but 'Male' is not categorized as an instance of the class ':Sex'.
+      The node Philippe_Duke_of_Orleans is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node ':Male'.
+      AssignClass(node='Philippe_Duke_of_Orleans', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Donatus' has a 'hasSex' relationship pointing to 'Male', but 'Male' is not categorized as an instance of the class ':Sex'.
+      The node Isabelle_of_Orleans is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node ':Male'.
+      AssignClass(node='Isabelle_of_Orleans', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Donatus' has a 'hasSex' relationship pointing to 'Male', but 'Male' is not categorized as an instance of the class ':Sex'.
+      The node Nina is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node ':Male'.
+      AssignClass(node='Nina', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Donatus' has a 'hasSex' relationship pointing to 'Male', but 'Male' is not categorized as an instance of the class ':Sex'.
+      The node Philippe_Duke_of_Orleans is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node ':Male'.
+      AssignClass(node='Philippe_Duke_of_Orleans', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Donatus' has a 'hasSex' relationship pointing to 'Male', but 'Male' is not categorized as an instance of the class ':Sex'.
+      The node Joseph_Karl_of_Austria is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node ':Male'.
+      AssignClass(node='Joseph_Karl_of_Austria', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Donatus' has a 'hasSex' relationship pointing to 'Male', but 'Male' is not categorized as an instance of the class ':Sex'.
+      The node Philippe_Count_of_Paris is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasFather property.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node ':Male'.
+      AssignClass(node='Philippe_Count_of_Paris', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Donatus' has a 'hasSex' relationship pointing to 'Male', but 'Male' is not categorized as an instance of the class ':Sex'.
+      The node Nina is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasMother property.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class ':Sex' to the node ':Male'.
+      AssignClass(node='Nina', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Clementine_of_Orleans is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Clementine_of_Orleans', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Isabelle_of_Orleans is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Isabelle_of_Orleans', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Philippe_Duke_of_Orleans is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Philippe_Duke_of_Orleans', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Joseph_Karl_of_Austria is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Joseph_Karl_of_Austria', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Philippe_Count_of_Paris is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Philippe_Count_of_Paris', class=':Ancestor')
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Nina is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Nina', class=':Ancestor')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Clementine_of_Orleans is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Clementine_of_Orleans', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Isabelle_of_Orleans is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Isabelle_of_Orleans', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Joseph_Karl_of_Austria is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Joseph_Karl_of_Austria', class=':Ancestor')
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Clementine_of_Orleans is missing the required class :Ancestor. This class is necessary for it to be a valid value for the hasMother property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Clementine_of_Orleans', class=':Ancestor')
 
 
 
@@ -710,32 +902,47 @@ Violations:
 
 []
 Tool Calls:
-  RemoveLiteral (065d6dcf-b03e-4d93-b68b-7d9fb918597b)
- Call ID: 065d6dcf-b03e-4d93-b68b-7d9fb918597b
+  AssignClass (16ac1286-5498-49ef-aea3-8163ea0f29e9)
+ Call ID: 16ac1286-5498-49ef-aea3-8163ea0f29e9
   Args:
-    relation: :hasSex
-    literal_value: Male
-    source: Donatus
-    literal_type: xsd:string
-  AssignClass (4ddfdf95-b462-4658-827a-00670c6717db)
- Call ID: 4ddfdf95-b462-4658-827a-00670c6717db
+    type: :Ancestor
+    source: Philippe_Count_of_Paris
+  AssignClass (855589fa-276c-4989-8ca7-2b9f4e7cd259)
+ Call ID: 855589fa-276c-4989-8ca7-2b9f4e7cd259
   Args:
-    type: :Male
-    source: Male_Sex_Node
-  AssignClass (0d79dd27-501a-4417-b345-75b8cd341e27)
- Call ID: 0d79dd27-501a-4417-b345-75b8cd341e27
+    source: Philippe_Duke_of_Orleans
+    type: :Ancestor
+  AssignClass (09f559ca-ff61-4b7b-bc53-bb7207accb3f)
+ Call ID: 09f559ca-ff61-4b7b-bc53-bb7207accb3f
   Args:
-    source: Male_Sex_Node
-    type: :Sex
-  AddTriple (43f0625e-81ee-4116-a8a6-501a147ebd92)
- Call ID: 43f0625e-81ee-4116-a8a6-501a147ebd92
+    type: :Ancestor
+    source: Isabelle_of_Orleans
+  AssignClass (94074331-eec6-468c-bb63-ce0924f8789b)
+ Call ID: 94074331-eec6-468c-bb63-ce0924f8789b
   Args:
-    source: Donatus
-    target: Male_Sex_Node
-    relation: :hasSex
-  Finish (8d0fc909-8eb8-49b5-bd04-8bc3a96b81b5)
- Call ID: 8d0fc909-8eb8-49b5-bd04-8bc3a96b81b5
+    type: :Ancestor
+    source: Nina
+  AssignClass (8ea420fe-1003-4def-bf6e-82dc53f692be)
+ Call ID: 8ea420fe-1003-4def-bf6e-82dc53f692be
   Args:
+    source: Joseph_Karl_of_Austria
+    type: :Ancestor
+  AssignClass (a8503d0f-ba64-42eb-9526-32460fa69e39)
+ Call ID: a8503d0f-ba64-42eb-9526-32460fa69e39
+  Args:
+    source: Clementine_of_Orleans
+    type: :Ancestor
+  ValidateShacl (6e672dd9-287b-4b78-a52c-2532f8caa2de)
+ Call ID: 6e672dd9-287b-4b78-a52c-2532f8caa2de
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -756,51 +963,46 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Donatus a :Man,
-          :Person ;
-      :hasFather data:Moritz ;
-      :hasMarriageYear "2003"^^xsd:string ;
-      :hasMother data:Tatiana ;
-      :hasRelation data:Floria_Franziska ;
-      :hasSex data:Male_Sex_Node .
+  data:Amelie_of_Orleans a :Woman ;
+      :isSisterOf data:Philippe_Duke_of_Orleans .
 
-  data:Floria_Franziska a :Person,
-          :Woman ;
-      :hasFather data:Hubertus_von_Faber-Castell .
+  data:Helene_Duchess_of_Aosta a :Woman ;
+      :isSisterOf data:Philippe_Duke_of_Orleans .
 
-  data:Hubertus_von_Faber-Castell a :Ancestor,
-          :Man,
-          :Person .
+  data:Jean_Duke_of_Guise a :Man .
 
-  data:Male_Sex_Node a :Male,
-          :Sex .
+  data:Maria_Dorothea_of_Austria a :Woman ;
+      :hasFather data:Joseph_Karl_of_Austria ;
+      :hasMother data:Clementine_of_Orleans .
 
-  data:Moritz a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Philipp .
+  data:Philippe_Debien a :Man ;
+      :hasFather data:Philippe_Duke_of_Orleans ;
+      :hasMother data:Nina .
 
-  data:Philipp a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Tatiana a :Ancestor,
-          :Person,
+  data:Clementine_of_Orleans a :Ancestor,
           :Woman .
 
+  data:Isabelle_of_Orleans a :Ancestor,
+          :Woman .
+
+  data:Joseph_Karl_of_Austria a :Ancestor,
+          :Man .
+
+  data:Nina a :Ancestor,
+          :Woman .
+
+  data:Philippe_Count_of_Paris a :Ancestor,
+          :Man .
+
+  data:Philippe_Duke_of_Orleans a :Ancestor,
+          :Man ;
+      :hasBirthYear 1869 ;
+      :hasDeathYear 1926 ;
+      :hasFather data:Philippe_Count_of_Paris ;
+      :hasMarriageYear 1896 ;
+      :hasMother data:Isabelle_of_Orleans .
 
 
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (8036367e-f221-4f1a-8855-bd2ef9fc27f7)
- Call ID: 8036367e-f221-4f1a-8855-bd2ef9fc27f7
-  Args:
 
 ================================= Tool Message =================================
 
@@ -810,6 +1012,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (bafcdf0d-4e41-4a76-ac26-37bc4d7765e5)
- Call ID: bafcdf0d-4e41-4a76-ac26-37bc4d7765e5
+  Finish (ccd4b60b-4d64-47e3-8ff6-e61609694a01)
+ Call ID: ccd4b60b-4d64-47e3-8ff6-e61609694a01
   Args:

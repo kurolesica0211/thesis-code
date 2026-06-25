@@ -1,0 +1,148 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alix_de_Foresta a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Charles_Napol%C3%A9on_Bonaparte ;
+    :hasRelation data:Alix_de_Foresta,
+        data:Charles_Napol%C3%A9on_Bonaparte,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Alix_de_Foresta ;
+    :hasSon data:Charles_Napol%C3%A9on_Bonaparte ;
+    :isAncestorOf data:Charles_Napol%C3%A9on_Bonaparte ;
+    :isAuntOf data:Charles_Napol%C3%A9on_Bonaparte ;
+    :isBloodrelationOf data:Alix_de_Foresta ;
+    :isMotherOf data:Charles_Napol%C3%A9on_Bonaparte ;
+    :isParentOf data:Charles_Napol%C3%A9on_Bonaparte ;
+    :isSiblingOf data:Alix_de_Foresta ;
+    :isSisterOf data:Alix_de_Foresta .
+
+data:Chantal_de_Chevron-Villette a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Chantal_de_Chevron-Villette,
+        data:Charles_Napol%C3%A9on_Bonaparte,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Chantal_de_Chevron-Villette ;
+    :isAncestorOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Chantal_de_Chevron-Villette ;
+    :isMotherOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Chantal_de_Chevron-Villette ;
+    :isSisterOf data:Chantal_de_Chevron-Villette .
+
+data:Louis_Prince_Napol%C3%A9on a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_Prince_Napol%C3%A9on ;
+    :hasChild data:Charles_Napol%C3%A9on_Bonaparte ;
+    :hasRelation data:Charles_Napol%C3%A9on_Bonaparte,
+        data:Louis_Prince_Napol%C3%A9on,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Charles_Napol%C3%A9on_Bonaparte ;
+    :isAncestorOf data:Charles_Napol%C3%A9on_Bonaparte ;
+    :isBloodrelationOf data:Louis_Prince_Napol%C3%A9on ;
+    :isBrotherOf data:Louis_Prince_Napol%C3%A9on ;
+    :isFatherOf data:Charles_Napol%C3%A9on_Bonaparte ;
+    :isParentOf data:Charles_Napol%C3%A9on_Bonaparte ;
+    :isSiblingOf data:Louis_Prince_Napol%C3%A9on ;
+    :isUncleOf data:Charles_Napol%C3%A9on_Bonaparte .
+
+data:Prince_Ferdinand_Duke_of_Castro a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasChild data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Charles_Napol%C3%A9on_Bonaparte,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Prince_Ferdinand_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Ferdinand_Duke_of_Castro ;
+    :isBrotherOf data:Prince_Ferdinand_Duke_of_Castro ;
+    :isFatherOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Ferdinand_Duke_of_Castro ;
+    :isUncleOf data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies .
+
+data:Prince_Carlo_Duke_of_Castro a :Man,
+        :Person ;
+    :hasBrother data:Prince_Carlo_Duke_of_Castro ;
+    :hasRelation data:Alix_de_Foresta,
+        data:Chantal_de_Chevron-Villette,
+        data:Charles_Napol%C3%A9on_Bonaparte,
+        data:Louis_Prince_Napol%C3%A9on,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Prince_Ferdinand_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies .
+
+data:Charles_Napol%C3%A9on_Bonaparte a :Man,
+        :Person ;
+    :hasAncestor data:Alix_de_Foresta,
+        data:Louis_Prince_Napol%C3%A9on ;
+    :hasBrother data:Charles_Napol%C3%A9on_Bonaparte ;
+    :hasFather data:Louis_Prince_Napol%C3%A9on ;
+    :hasMother data:Alix_de_Foresta ;
+    :hasParent data:Alix_de_Foresta,
+        data:Louis_Prince_Napol%C3%A9on ;
+    :hasRelation data:Alix_de_Foresta,
+        data:Chantal_de_Chevron-Villette,
+        data:Charles_Napol%C3%A9on_Bonaparte,
+        data:Louis_Prince_Napol%C3%A9on,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Prince_Ferdinand_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Charles_Napol%C3%A9on_Bonaparte ;
+    :isBrotherOf data:Charles_Napol%C3%A9on_Bonaparte ;
+    :isChildOf data:Alix_de_Foresta,
+        data:Louis_Prince_Napol%C3%A9on ;
+    :isSiblingOf data:Charles_Napol%C3%A9on_Bonaparte ;
+    :isSonOf data:Alix_de_Foresta,
+        data:Louis_Prince_Napol%C3%A9on .
+
+data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasAncestor data:Chantal_de_Chevron-Villette,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasBirthYear 1950 ;
+    :hasBrother data:Prince_Carlo_Duke_of_Castro ;
+    :hasFather data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasMarriageYear 1978 ;
+    :hasMother data:Chantal_de_Chevron-Villette ;
+    :hasParent data:Chantal_de_Chevron-Villette,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :hasRelation data:Alix_de_Foresta,
+        data:Chantal_de_Chevron-Villette,
+        data:Charles_Napol%C3%A9on_Bonaparte,
+        data:Louis_Prince_Napol%C3%A9on,
+        data:Prince_Carlo_Duke_of_Castro,
+        data:Prince_Ferdinand_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Chantal_de_Chevron-Villette,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :isDaughterOf data:Chantal_de_Chevron-Villette,
+        data:Prince_Ferdinand_Duke_of_Castro ;
+    :isSiblingOf data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Prince_Carlo_Duke_of_Castro,
+        data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies .
+

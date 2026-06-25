@@ -85,21 +85,36 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Klaus Felix von Amsberg (German: Klaus Felix Friedrich Leopold Gabriel Archim Julius August von Amsberg; 1 September 1890 – 19 December 1953) was a member of the German Niederer Adel (lower nobility) and father of Prince Claus of the Netherlands.
-Early life
+Princess Elisabeth of Denmark (Elisabeth Caroline-Mathilde Alexandrine Helena Olga Thyra Feodora Estrid Margrethe Désirée; 8 May 1935 – 19 June 2018) was a member of the Danish royal family.
+The only daughter and eldest child of Knud, Hereditary Prince of Denmark, and Princess Caroline-Mathilde of Denmark, she was a granddaughter of Christian X, niece of Frederik IX, and first cousin of Margrethe II.
+In addition to undertaking occasionally royal duties, she was a career diplomat with the Ministry of Foreign Affairs of Denmark.
+Early life and education
 
-He was born at Rehna, Mecklenburg-Schwerin, German Empire (now Mecklenburg-Vorpommern, Germany), the first child of Wilhelm von Amsberg (1856–1929), by his marriage to Elise von Vieregg (1866–1951), member of an old aristocratic family.
-Claus was from 1917 the steward of an estate after a failed venture in Africa as a planter.
-Marriage
+Elisabeth was born on 8 May 1935 in Copenhagen to Prince Knud and Princess Caroline-Mathilde of Denmark.
+Her father was the second son of Christian X.
+The family resided at Sorgenfri Palace in Kongens Lyngby, where she was raised with her two younger brothers Prince Ingolf and Prince Christian.
+During the 1938-39 Mørkefjord expedition, paleontologist Eigil Nielsen named the Princess Elisabeth Alps in northeastern Greenland after her.
+Elisabeth began her education privately at Sorgenfri.
+In 1953, when  succession to the Danish throne switched from agnatic primogeniture to male-preference primogeniture, Elisabeth gained succession rights and became seventh in line to the throne.
+She was titled of Prinsesse til Danmark (literally translated as "Princess to Denmark", reserved for members of the Royal Family in the line of succession) with the style of Highness.
+She was the only one of her siblings to retain her title and succession rights, as her younger brothers married commoners without the permission of their uncle, Frederik IX.
+Career
 
-Claus married on 4 September 1924 at Hitzacker to Baroness Gösta von dem Bussche-Haddenhausen (26 January 1902 –
-13 June 1996), daughter of Baron Georg von dem Bussche-Haddenhausen (1869–1923) and Baroness Gabriele von dem Bussche-Ippenburg (1877–1973).
+In 1956, Elisabeth began her career with the Danish Ministry of Foreign Affairs.
+She was posted to the Embassy of Denmark, Washington, D.C. from 1973 to 1976 and again from 1981 to 1985.
+In addition to her diplomatic career, Elisabeth occasionally undertook royal duties on behalf of her uncle and later cousin.
+Personal life and death
+
+Elisabeth never married nor had children.
+After a long period of ill health, Elisabeth died on 19 June 2018, at the age of 83.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +130,9 @@ Claus married on 4 September 1924 at Hitzacker to Baroness Gösta von dem Bussch
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +147,23 @@ Claus married on 4 September 1924 at Hitzacker to Baroness Gösta von dem Bussch
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +181,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +263,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +286,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +306,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +316,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +356,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,245 +455,133 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (503dae00-102f-48b4-8f79-7b48cbd6fb93)
- Call ID: 503dae00-102f-48b4-8f79-7b48cbd6fb93
+  AssignClass (24a7e263-e9e2-4a5b-a172-7d8d0ccfdffa)
+ Call ID: 24a7e263-e9e2-4a5b-a172-7d8d0ccfdffa
   Args:
-    type: :Man
-    source: Klaus_Felix_von_Amsberg
-  AssignClass (e4973db2-5ba0-4191-8bce-7362c711685f)
- Call ID: e4973db2-5ba0-4191-8bce-7362c711685f
-  Args:
-    source: Klaus_Felix_von_Amsberg
-    type: :Person
-  AddLiteral (5e294a83-7d64-42d8-96c5-0f98ac66412d)
- Call ID: 5e294a83-7d64-42d8-96c5-0f98ac66412d
-  Args:
-    source: Klaus_Felix_von_Amsberg
-    literal_type: xsd:integer
-    literal_value: 1890
-    relation: :hasBirthYear
-  AddLiteral (156aaa08-894a-4e0a-b5fc-49f76ff14490)
- Call ID: 156aaa08-894a-4e0a-b5fc-49f76ff14490
-  Args:
-    literal_type: xsd:integer
-    source: Klaus_Felix_von_Amsberg
-    literal_value: 1953
-    relation: :hasDeathYear
-  AssignClass (2dc8ab46-0466-4f79-b344-2d85278b4f21)
- Call ID: 2dc8ab46-0466-4f79-b344-2d85278b4f21
-  Args:
-    type: :Man
-    source: Wilhelm_von_Amsberg
-  AssignClass (7a953a78-3387-4f6a-be83-3b3bd79b320d)
- Call ID: 7a953a78-3387-4f6a-be83-3b3bd79b320d
-  Args:
-    source: Wilhelm_von_Amsberg
-    type: :Person
-  AddLiteral (f1b47a38-2d44-4f72-ab70-c2798e8cfa05)
- Call ID: f1b47a38-2d44-4f72-ab70-c2798e8cfa05
-  Args:
-    source: Wilhelm_von_Amsberg
-    literal_type: xsd:integer
-    literal_value: 1856
-    relation: :hasBirthYear
-  AddLiteral (64d919b9-5532-42cf-ad9c-c91977ad9f80)
- Call ID: 64d919b9-5532-42cf-ad9c-c91977ad9f80
-  Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: Wilhelm_von_Amsberg
-    literal_value: 1929
-  AssignClass (7769f2a7-8ce1-404b-8319-13b521ab41bc)
- Call ID: 7769f2a7-8ce1-404b-8319-13b521ab41bc
-  Args:
+    source: :Princess_Elisabeth_of_Denmark
     type: :Woman
-    source: Elise_von_Vieregg
-  AssignClass (c4c6b5e2-221e-4b51-b1e9-47e5a4969bb0)
- Call ID: c4c6b5e2-221e-4b51-b1e9-47e5a4969bb0
+  AssignClass (539a3a83-7d57-4d2c-aa93-2964d82be9e0)
+ Call ID: 539a3a83-7d57-4d2c-aa93-2964d82be9e0
   Args:
-    source: Elise_von_Vieregg
+    source: :Princess_Elisabeth_of_Denmark
     type: :Person
-  AddLiteral (a3e9a935-691e-45bb-8905-6fa35865ff75)
- Call ID: a3e9a935-691e-45bb-8905-6fa35865ff75
+  AddLiteral (9c0deb0a-04c6-4e8d-b2f1-338638c9e06d)
+ Call ID: 9c0deb0a-04c6-4e8d-b2f1-338638c9e06d
   Args:
-    literal_value: 1866
-    source: Elise_von_Vieregg
     literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (776aa32e-0f54-4a24-9c30-1ffb5d305d5f)
- Call ID: 776aa32e-0f54-4a24-9c30-1ffb5d305d5f
+    source: :Princess_Elisabeth_of_Denmark
+    literal_value: 1935
+  AddLiteral (6ee9770d-e8fe-4a06-b34c-e57ca3c9f808)
+ Call ID: 6ee9770d-e8fe-4a06-b34c-e57ca3c9f808
   Args:
+    source: :Princess_Elisabeth_of_Denmark
     relation: :hasDeathYear
-    literal_value: 1951
     literal_type: xsd:integer
-    source: Elise_von_Vieregg
-  AddTriple (9bbe6755-7898-4022-8f7e-68d1b5cf7789)
- Call ID: 9bbe6755-7898-4022-8f7e-68d1b5cf7789
+    literal_value: 2018
+  AssignClass (4f7c76fd-9bac-430e-bd1d-0c79b976f16a)
+ Call ID: 4f7c76fd-9bac-430e-bd1d-0c79b976f16a
   Args:
-    source: Klaus_Felix_von_Amsberg
+    source: :Prince_Knud
+    type: :Man
+  AssignClass (9e3c56a4-efc3-4a7d-b179-35ca807fc7b1)
+ Call ID: 9e3c56a4-efc3-4a7d-b179-35ca807fc7b1
+  Args:
+    source: :Prince_Knud
+    type: :Person
+  AssignClass (f8876550-c98b-4497-8b81-fff8b3534f1f)
+ Call ID: f8876550-c98b-4497-8b81-fff8b3534f1f
+  Args:
+    source: :Princess_Caroline-Mathilde_of_Denmark
+    type: :Woman
+  AssignClass (e03cdf58-6741-463a-a946-8b8b7a45bd94)
+ Call ID: e03cdf58-6741-463a-a946-8b8b7a45bd94
+  Args:
+    source: :Princess_Caroline-Mathilde_of_Denmark
+    type: :Person
+  AddTriple (5a612300-aafe-477c-b83b-c569baecaf3c)
+ Call ID: 5a612300-aafe-477c-b83b-c569baecaf3c
+  Args:
+    target: :Prince_Knud
     relation: :hasFather
-    target: Wilhelm_von_Amsberg
-  AddTriple (a5895cc8-4efd-4ddb-9829-da35f783d88b)
- Call ID: a5895cc8-4efd-4ddb-9829-da35f783d88b
+    source: :Princess_Elisabeth_of_Denmark
+  AddTriple (a1273e0d-0175-4431-a5cc-ed84512585e0)
+ Call ID: a1273e0d-0175-4431-a5cc-ed84512585e0
   Args:
-    source: Klaus_Felix_von_Amsberg
+    source: :Princess_Elisabeth_of_Denmark
     relation: :hasMother
-    target: Elise_von_Vieregg
-  AssignClass (91eb98b7-1f00-44b4-9687-910dc18236ef)
- Call ID: 91eb98b7-1f00-44b4-9687-910dc18236ef
+    target: :Princess_Caroline-Mathilde_of_Denmark
+  AssignClass (c230973f-e137-4173-9ad2-927bde0f9e3d)
+ Call ID: c230973f-e137-4173-9ad2-927bde0f9e3d
   Args:
+    source: :Christian_X
     type: :Man
-    source: Prince_Claus_of_the_Netherlands
-  AssignClass (1f6afdb4-c90b-44c9-bae1-8e6865f5361c)
- Call ID: 1f6afdb4-c90b-44c9-bae1-8e6865f5361c
+  AssignClass (e4efd9a5-b33a-46bd-8861-2a13700e0e4c)
+ Call ID: e4efd9a5-b33a-46bd-8861-2a13700e0e4c
   Args:
+    source: :Christian_X
     type: :Person
-    source: Prince_Claus_of_the_Netherlands
-  AddTriple (56f0671b-716c-4bf4-a2f6-9ae0eabc7be6)
- Call ID: 56f0671b-716c-4bf4-a2f6-9ae0eabc7be6
+  AddTriple (dc04cfc8-c125-428e-8b37-6dd3b6f0f051)
+ Call ID: dc04cfc8-c125-428e-8b37-6dd3b6f0f051
   Args:
-    source: Prince_Claus_of_the_Netherlands
-    target: Klaus_Felix_von_Amsberg
     relation: :hasFather
-  AssignClass (d6559e8b-ead6-4be7-a5f0-74047c462659)
- Call ID: d6559e8b-ead6-4be7-a5f0-74047c462659
+    target: :Christian_X
+    source: :Prince_Knud
+  AssignClass (5d5bce4f-1b29-495e-b007-b9635878fc13)
+ Call ID: 5d5bce4f-1b29-495e-b007-b9635878fc13
   Args:
-    source: Gosta_von_dem_Bussche_Haddenhausen
-    type: :Woman
-  AssignClass (52a30b2b-b7ad-4c46-8372-c13c4ccc410f)
- Call ID: 52a30b2b-b7ad-4c46-8372-c13c4ccc410f
-  Args:
-    type: :Person
-    source: Gosta_von_dem_Bussche_Haddenhausen
-  AddLiteral (911d81e3-6c34-4848-933e-7f158205471c)
- Call ID: 911d81e3-6c34-4848-933e-7f158205471c
-  Args:
-    literal_value: 1902
-    literal_type: xsd:integer
-    source: Gosta_von_dem_Bussche_Haddenhausen
-    relation: :hasBirthYear
-  AddLiteral (6b01c250-2ef1-4319-91a6-e8c41a0fef90)
- Call ID: 6b01c250-2ef1-4319-91a6-e8c41a0fef90
-  Args:
-    relation: :hasDeathYear
-    source: Gosta_von_dem_Bussche_Haddenhausen
-    literal_type: xsd:integer
-    literal_value: 1996
-  AddTriple (f2fc4da9-2dd2-4d95-958e-4d26be2531e7)
- Call ID: f2fc4da9-2dd2-4d95-958e-4d26be2531e7
-  Args:
-    source: Klaus_Felix_von_Amsberg
-    relation: :hasMarriageYear
-    target: 1924
-  AddTriple (6fa0e5b3-c9d0-4d35-a4df-933abee914cb)
- Call ID: 6fa0e5b3-c9d0-4d35-a4df-933abee914cb
-  Args:
-    source: Klaus_Felix_von_Amsberg
-    relation: :hasRelation
-    target: Gosta_von_dem_Bussche_Haddenhausen
-  AssignClass (e33a98ef-07f5-49e1-8f53-09a43b46f98b)
- Call ID: e33a98ef-07f5-49e1-8f53-09a43b46f98b
-  Args:
+    source: :Frederik_IX
     type: :Man
-    source: Georg_von_dem_Bussche_Haddenhausen
-  AssignClass (15c43bff-4c0a-4c43-b82a-e4b4e6ca2fc4)
- Call ID: 15c43bff-4c0a-4c43-b82a-e4b4e6ca2fc4
+  AssignClass (53e97684-3e13-4bf2-be77-9406f50cae03)
+ Call ID: 53e97684-3e13-4bf2-be77-9406f50cae03
   Args:
-    source: Georg_von_dem_Bussche_Haddenhausen
+    source: :Frederik_IX
     type: :Person
-  AddLiteral (5a7de2f2-4c56-4f4b-9856-ef7d5f4ed37d)
- Call ID: 5a7de2f2-4c56-4f4b-9856-ef7d5f4ed37d
+  AssignClass (9c90af64-51dd-4d15-a905-865af8492613)
+ Call ID: 9c90af64-51dd-4d15-a905-865af8492613
   Args:
-    relation: :hasBirthYear
-    literal_value: 1869
-    source: Georg_von_dem_Bussche_Haddenhausen
-    literal_type: xsd:integer
-  AddLiteral (a0a96d39-ce78-425b-aa8c-1a1de7e6bdc9)
- Call ID: a0a96d39-ce78-425b-aa8c-1a1de7e6bdc9
-  Args:
-    literal_type: xsd:integer
-    source: Georg_von_dem_Bussche_Haddenhausen
-    literal_value: 1923
-    relation: :hasDeathYear
-  AssignClass (03542821-fdbe-48b0-99c4-7b98bb55bd0d)
- Call ID: 03542821-fdbe-48b0-99c4-7b98bb55bd0d
-  Args:
+    source: :Margrethe_II
     type: :Woman
-    source: Gabriele_von_dem_Bussche_Ippenburg
-  AssignClass (f768be9f-8ee8-42bf-b8ec-b0b1479c8c54)
- Call ID: f768be9f-8ee8-42bf-b8ec-b0b1479c8c54
+  AssignClass (887048be-50b6-4fef-a2ec-06cc4296fb7e)
+ Call ID: 887048be-50b6-4fef-a2ec-06cc4296fb7e
   Args:
+    source: :Margrethe_II
     type: :Person
-    source: Gabriele_von_dem_Bussche_Ippenburg
-  AddLiteral (c4f8716d-043c-427d-8ba1-a8c09931b2c8)
- Call ID: c4f8716d-043c-427d-8ba1-a8c09931b2c8
+  AssignClass (1318b788-b9ae-4afc-98f0-72c76fe94a4d)
+ Call ID: 1318b788-b9ae-4afc-98f0-72c76fe94a4d
   Args:
-    relation: :hasBirthYear
-    source: Gabriele_von_dem_Bussche_Ippenburg
-    literal_type: xsd:integer
-    literal_value: 1877
-  AddLiteral (5c7b17f6-4391-44ff-82ad-467b1044f3a2)
- Call ID: 5c7b17f6-4391-44ff-82ad-467b1044f3a2
+    source: :Prince_Ingolf
+    type: :Man
+  AssignClass (0ae06683-2415-42f6-839d-9f8f4e495334)
+ Call ID: 0ae06683-2415-42f6-839d-9f8f4e495334
   Args:
-    relation: :hasDeathYear
-    literal_value: 1973
-    literal_type: xsd:integer
-    source: Gabriele_von_dem_Bussche_Ippenburg
-  AddTriple (74fa72f1-87f1-4945-9aca-25b580d61050)
- Call ID: 74fa72f1-87f1-4945-9aca-25b580d61050
+    source: :Prince_Ingolf
+    type: :Person
+  AssignClass (42c66bf6-a294-4f00-9bb3-c162c0eb2c03)
+ Call ID: 42c66bf6-a294-4f00-9bb3-c162c0eb2c03
   Args:
-    source: Gosta_von_dem_Bussche_Haddenhausen
-    relation: :hasFather
-    target: Georg_von_dem_Bussche_Haddenhausen
-  AddTriple (c84a5e33-0937-4a5c-a0d8-991991df7c7d)
- Call ID: c84a5e33-0937-4a5c-a0d8-991991df7c7d
+    source: :Prince_Christian
+    type: :Man
+  AssignClass (12d326aa-7d74-4ff8-b558-2f4cadcd74ba)
+ Call ID: 12d326aa-7d74-4ff8-b558-2f4cadcd74ba
   Args:
-    source: Gosta_von_dem_Bussche_Haddenhausen
-    relation: :hasMother
-    target: Gabriele_von_dem_Bussche_Ippenburg
-  ValidateShacl (b2d8c718-19ed-4b2f-ae9d-df18a19a0c85)
- Call ID: b2d8c718-19ed-4b2f-ae9d-df18a19a0c85
+    source: :Prince_Christian
+    type: :Person
+  AddTriple (d68d9b7f-8703-460e-8e3d-9b13547fbe91)
+ Call ID: d68d9b7f-8703-460e-8e3d-9b13547fbe91
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Princess_Elisabeth_of_Denmark
+    target: :Prince_Ingolf
+    relation: :isSiblingOf
+  AddTriple (8d63a12d-0be5-4a49-a67b-985b7939f448)
+ Call ID: 8d63a12d-0be5-4a49-a67b-985b7939f448
+  Args:
+    source: :Princess_Elisabeth_of_Denmark
+    target: :Prince_Christian
+    relation: :isSiblingOf
+  ValidateShacl (e0a5c483-eef6-4ea6-a3bf-803a09457e78)
+ Call ID: e0a5c483-eef6-4ea6-a3bf-803a09457e78
+  Args:
 
 ================================= Tool Message =================================
 
@@ -685,172 +678,115 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Claus_of_the_Netherlands a :Man,
-          :Person ;
-      :hasFather data:Klaus_Felix_von_Amsberg .
+  data:Frederik_IX a :Man,
+          :Person .
 
-  data:Elise_von_Vieregg a :Person,
+  data:Margrethe_II a :Person,
+          :Woman .
+
+  data:Princess_Elisabeth_of_Denmark a :Person,
           :Woman ;
-      :hasBirthYear 1866 ;
-      :hasDeathYear 1951 .
+      :hasBirthYear 1935 ;
+      :hasDeathYear 2018 ;
+      :hasFather data:Prince_Knud ;
+      :hasMother data:Princess_Caroline-Mathilde_of_Denmark ;
+      :isSiblingOf data:Prince_Christian,
+          data:Prince_Ingolf .
 
-  data:Gabriele_von_dem_Bussche_Ippenburg a :Person,
-          :Woman ;
-      :hasBirthYear 1877 ;
-      :hasDeathYear 1973 .
+  data:Christian_X a :Man,
+          :Person .
 
-  data:Georg_von_dem_Bussche_Haddenhausen a :Man,
+  data:Prince_Christian a :Man,
+          :Person .
+
+  data:Prince_Ingolf a :Man,
+          :Person .
+
+  data:Prince_Knud a :Man,
           :Person ;
-      :hasBirthYear 1869 ;
-      :hasDeathYear 1923 .
+      :hasFather data:Christian_X .
 
-  data:Gosta_von_dem_Bussche_Haddenhausen a :Person,
-          :Woman ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1996 ;
-      :hasFather data:Georg_von_dem_Bussche_Haddenhausen ;
-      :hasMother data:Gabriele_von_dem_Bussche_Ippenburg .
-
-  data:Klaus_Felix_von_Amsberg a :Man,
-          :Person ;
-      :hasBirthYear 1890 ;
-      :hasDeathYear 1953 ;
-      :hasFather data:Wilhelm_von_Amsberg ;
-      :hasMarriageYear data:1924 ;
-      :hasMother data:Elise_von_Vieregg ;
-      :hasRelation data:Gosta_von_dem_Bussche_Haddenhausen .
-
-  data:Wilhelm_von_Amsberg a :Man,
-          :Person ;
-      :hasBirthYear 1856 ;
-      :hasDeathYear 1929 .
+  data:Princess_Caroline-Mathilde_of_Denmark a :Person,
+          :Woman .
 
 
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:15
+Total violations:9
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Klaus_Felix_von_Amsberg is assigned as the father of Prince_Claus_of_the_Netherlands, but it lacks the required class :Ancestor.
+      The node 'Prince_Knud' has a 'hasFather' relationship with 'Christian_X', but 'Christian_X' is not classified as an 'Ancestor' or 'Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Klaus_Felix_von_Amsberg, :Ancestor)
+      Use AssignClass(node='Christian_X', class=':Man') to properly classify the father.
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Wilhelm_von_Amsberg is assigned as the father of Klaus_Felix_von_Amsberg, but it lacks the required class :Ancestor.
+      The node 'Prince_Knud' has a 'hasFather' relationship with 'Christian_X', but 'Christian_X' is not classified as an 'Ancestor' or 'Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Wilhelm_von_Amsberg, :Ancestor)
+      Use AssignClass(node='Christian_X', class=':Ancestor') to satisfy the range requirement.
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Elise_von_Vieregg is assigned as the mother of Klaus_Felix_von_Amsberg, but it lacks the required class :Ancestor.
+      The node 'Princess_Elisabeth_of_Denmark' has a 'hasFather' relationship with 'Prince_Knud', but 'Prince_Knud' is not classified as an 'Ancestor' or 'Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Elise_von_Vieregg, :Ancestor)
+      Use AssignClass(node='Prince_Knud', class=':Man') to satisfy the range requirement.
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Klaus_Felix_von_Amsberg is assigned as the father of Prince_Claus_of_the_Netherlands, but it lacks the required class :Ancestor.
+      The node 'Princess_Elisabeth_of_Denmark' has a 'hasMother' relationship with 'Princess_Caroline-Mathilde_of_Denmark', but she is not classified as an 'Ancestor' or 'Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Klaus_Felix_von_Amsberg, :Ancestor)
+      Use AssignClass(node='Princess_Caroline-Mathilde_of_Denmark', class=':Woman') to satisfy the range requirement.
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Wilhelm_von_Amsberg is assigned as the father of Klaus_Felix_von_Amsberg, but it lacks the required class :Ancestor.
+      The node 'Prince_Knud' has a 'hasFather' relationship with 'Christian_X', but 'Christian_X' is not classified as an 'Ancestor' or 'Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Wilhelm_von_Amsberg, :Ancestor)
+      Use AssignClass(node='Christian_X', class=':Ancestor') to satisfy the range requirement.
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Georg_von_dem_Bussche_Haddenhausen is assigned as the father of Gosta_von_dem_Bussche_Haddenhausen, but it lacks the required class :Ancestor.
+      The node 'Princess_Elisabeth_of_Denmark' has a 'hasFather' relationship with 'Prince_Knud', but 'Prince_Knud' is not classified as an 'Ancestor' or 'Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Georg_von_dem_Bussche_Haddenhausen, :Ancestor)
+      Use AssignClass(node='Prince_Knud', class=':Ancestor') to satisfy the range requirement.
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Elise_von_Vieregg is assigned as the mother of Klaus_Felix_von_Amsberg, but it lacks the required class :Ancestor.
+      The node 'Princess_Elisabeth_of_Denmark' has a 'hasMother' relationship with 'Princess_Caroline-Mathilde_of_Denmark', but she is not classified as an 'Ancestor' or 'Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Elise_von_Vieregg, :Ancestor)
+      Use AssignClass(node='Princess_Caroline-Mathilde_of_Denmark', class=':Ancestor') to satisfy the range requirement.
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Gabriele_von_dem_Bussche_Ippenburg is assigned as the mother of Gosta_von_dem_Bussche_Haddenhausen, but it lacks the required class :Ancestor.
+      The node 'Princess_Elisabeth_of_Denmark' has a 'hasFather' relationship with 'Prince_Knud', but 'Prince_Knud' is not classified as an 'Ancestor' or 'Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Gabriele_von_dem_Bussche_Ippenburg, :Ancestor)
+      Use AssignClass(node='Prince_Knud', class=':Man') to satisfy the range requirement.
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Klaus_Felix_von_Amsberg is assigned as the father of Prince_Claus_of_the_Netherlands, but it lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Klaus_Felix_von_Amsberg, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Wilhelm_von_Amsberg is assigned as the father of Klaus_Felix_von_Amsberg, but it lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Wilhelm_von_Amsberg, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Georg_von_dem_Bussche_Haddenhausen is assigned as the father of Gosta_von_dem_Bussche_Haddenhausen, but it lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Georg_von_dem_Bussche_Haddenhausen, :Ancestor)
-
-
-  Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Elise_von_Vieregg is assigned as the mother of Klaus_Felix_von_Amsberg, but it lacks the required class :Ancestor.
+      The node 'Princess_Elisabeth_of_Denmark' has a 'hasMother' relationship with 'Princess_Caroline-Mathilde_of_Denmark', but she is not classified as an 'Ancestor' or 'Woman'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Elise_von_Vieregg, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Gabriele_von_dem_Bussche_Ippenburg is assigned as the mother of Gosta_von_dem_Bussche_Haddenhausen, but it lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Gabriele_von_dem_Bussche_Ippenburg, :Ancestor)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Georg_von_dem_Bussche_Haddenhausen is assigned as the father of Gosta_von_dem_Bussche_Haddenhausen, but it lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Georg_von_dem_Bussche_Haddenhausen, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Gabriele_von_dem_Bussche_Ippenburg is assigned as the mother of Gosta_von_dem_Bussche_Haddenhausen, but it lacks the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Gabriele_von_dem_Bussche_Ippenburg, :Ancestor)
+      Use AssignClass(node='Princess_Caroline-Mathilde_of_Denmark', class=':Woman') to satisfy the range requirement.
 
 
 
@@ -859,42 +795,24 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (528ac2b0-a8da-4908-bfb8-2a56736b318f)
- Call ID: 528ac2b0-a8da-4908-bfb8-2a56736b318f
+  AssignClass (7246a69f-7d33-418d-b6d1-5f504c3fff48)
+ Call ID: 7246a69f-7d33-418d-b6d1-5f504c3fff48
+  Args:
+    source: :Christian_X
+    type: :Ancestor
+  AssignClass (c3c517eb-417c-464f-8415-c2f90cef49db)
+ Call ID: c3c517eb-417c-464f-8415-c2f90cef49db
   Args:
     type: :Ancestor
-    source: Klaus_Felix_von_Amsberg
-  AssignClass (bc06921c-fac9-4653-8bbe-4816ef5b1d80)
- Call ID: bc06921c-fac9-4653-8bbe-4816ef5b1d80
-  Args:
-    source: Wilhelm_von_Amsberg
-    type: :Ancestor
-  AssignClass (d07de9fb-1d04-4343-93ce-6c5c4794a4e5)
- Call ID: d07de9fb-1d04-4343-93ce-6c5c4794a4e5
-  Args:
-    source: Elise_von_Vieregg
-    type: :Ancestor
-  AssignClass (40ffc185-3c25-4da1-b641-45d91da7b37b)
- Call ID: 40ffc185-3c25-4da1-b641-45d91da7b37b
+    source: :Prince_Knud
+  AssignClass (920f0aa9-1c01-4756-89a5-647a2b5fd05d)
+ Call ID: 920f0aa9-1c01-4756-89a5-647a2b5fd05d
   Args:
     type: :Ancestor
-    source: Georg_von_dem_Bussche_Haddenhausen
-  AssignClass (688dfa81-d53c-4a40-9245-21d9fbe858d2)
- Call ID: 688dfa81-d53c-4a40-9245-21d9fbe858d2
+    source: :Princess_Caroline-Mathilde_of_Denmark
+  Finish (003e8fed-7eb5-4e15-866d-bea772aa4c1f)
+ Call ID: 003e8fed-7eb5-4e15-866d-bea772aa4c1f
   Args:
-    type: :Ancestor
-    source: Gabriele_von_dem_Bussche_Ippenburg
-  ValidateShacl (e7a7f472-7336-4d4a-bb37-3810dca0f0fb)
- Call ID: e7a7f472-7336-4d4a-bb37-3810dca0f0fb
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -911,52 +829,53 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Claus_of_the_Netherlands a :Man,
-          :Person ;
-      :hasFather data:Klaus_Felix_von_Amsberg .
+  data:Frederik_IX a :Man,
+          :Person .
 
-  data:Elise_von_Vieregg a :Ancestor,
+  data:Margrethe_II a :Person,
+          :Woman .
+
+  data:Princess_Elisabeth_of_Denmark a :Person,
+          :Woman ;
+      :hasBirthYear 1935 ;
+      :hasDeathYear 2018 ;
+      :hasFather data:Prince_Knud ;
+      :hasMother data:Princess_Caroline-Mathilde_of_Denmark ;
+      :isSiblingOf data:Prince_Christian,
+          data:Prince_Ingolf .
+
+  data:Christian_X a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_Christian a :Man,
+          :Person .
+
+  data:Prince_Ingolf a :Man,
+          :Person .
+
+  data:Prince_Knud a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:Christian_X .
+
+  data:Princess_Caroline-Mathilde_of_Denmark a :Ancestor,
           :Person,
-          :Woman ;
-      :hasBirthYear 1866 ;
-      :hasDeathYear 1951 .
-
-  data:Gabriele_von_dem_Bussche_Ippenburg a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1877 ;
-      :hasDeathYear 1973 .
-
-  data:Georg_von_dem_Bussche_Haddenhausen a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1869 ;
-      :hasDeathYear 1923 .
-
-  data:Gosta_von_dem_Bussche_Haddenhausen a :Person,
-          :Woman ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1996 ;
-      :hasFather data:Georg_von_dem_Bussche_Haddenhausen ;
-      :hasMother data:Gabriele_von_dem_Bussche_Ippenburg .
-
-  data:Klaus_Felix_von_Amsberg a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1890 ;
-      :hasDeathYear 1953 ;
-      :hasFather data:Wilhelm_von_Amsberg ;
-      :hasMarriageYear data:1924 ;
-      :hasMother data:Elise_von_Vieregg ;
-      :hasRelation data:Gosta_von_dem_Bussche_Haddenhausen .
-
-  data:Wilhelm_von_Amsberg a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1856 ;
-      :hasDeathYear 1929 .
+          :Woman .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (725c1107-8d29-4429-8efe-156525d6b68b)
+ Call ID: 725c1107-8d29-4429-8efe-156525d6b68b
+  Args:
 
 ================================= Tool Message =================================
 
@@ -966,115 +885,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (fa76c589-b8b8-4564-99b7-8e62f0b2887b)
- Call ID: fa76c589-b8b8-4564-99b7-8e62f0b2887b
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1924']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (719d545f-dbc5-4ecd-ab10-876e5a09f46d)
- Call ID: 719d545f-dbc5-4ecd-ab10-876e5a09f46d
-  Args:
-    source: Klaus_Felix_von_Amsberg
-    target: 1924
-    relation: :hasMarriageYear
-  AddLiteral (fcda09bf-3edc-4c8e-b890-a84262d9401b)
- Call ID: fcda09bf-3edc-4c8e-b890-a84262d9401b
-  Args:
-    literal_value: 1924
-    source: Klaus_Felix_von_Amsberg
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-  ValidateShacl (95a45319-5d10-4f0f-b3fe-d0b12df9df0c)
- Call ID: 95a45319-5d10-4f0f-b3fe-d0b12df9df0c
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Prince_Claus_of_the_Netherlands a :Man,
-          :Person ;
-      :hasFather data:Klaus_Felix_von_Amsberg .
-
-  data:Elise_von_Vieregg a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1866 ;
-      :hasDeathYear 1951 .
-
-  data:Gabriele_von_dem_Bussche_Ippenburg a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1877 ;
-      :hasDeathYear 1973 .
-
-  data:Georg_von_dem_Bussche_Haddenhausen a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1869 ;
-      :hasDeathYear 1923 .
-
-  data:Gosta_von_dem_Bussche_Haddenhausen a :Person,
-          :Woman ;
-      :hasBirthYear 1902 ;
-      :hasDeathYear 1996 ;
-      :hasFather data:Georg_von_dem_Bussche_Haddenhausen ;
-      :hasMother data:Gabriele_von_dem_Bussche_Ippenburg .
-
-  data:Klaus_Felix_von_Amsberg a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1890 ;
-      :hasDeathYear 1953 ;
-      :hasFather data:Wilhelm_von_Amsberg ;
-      :hasMarriageYear 1924 ;
-      :hasMother data:Elise_von_Vieregg ;
-      :hasRelation data:Gosta_von_dem_Bussche_Haddenhausen .
-
-  data:Wilhelm_von_Amsberg a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1856 ;
-      :hasDeathYear 1929 .
-
-
-
-================================= Tool Message =================================
-
-SHACL validation has not produced any violations.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (ebe1d2b3-86d9-411a-beaf-54e011de894e)
- Call ID: ebe1d2b3-86d9-411a-beaf-54e011de894e
+  Finish (3a06d0fe-709f-4243-9087-27da197abec3)
+ Call ID: 3a06d0fe-709f-4243-9087-27da197abec3
   Args:

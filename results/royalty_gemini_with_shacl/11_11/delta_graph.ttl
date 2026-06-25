@@ -2,34 +2,54 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:King_Charles_III a :Man .
+data:Felicity_Wade a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips .
 
-data:Zara_Tindall a :Woman ;
-    :formerlyKnownAs "Zara Phillips"^^xsd:string ;
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Lena_Elizabeth_Tindall a :Person,
+        :Woman ;
+    :hasFather data:Mike_Tindall ;
+    :hasMother data:Zara_Tindall .
+
+data:Mia_Grace_Tindall a :Person,
+        :Woman ;
+    :hasFather data:Mike_Tindall ;
+    :hasMother data:Zara_Tindall .
+
+data:Stephanie_Phillips a :Person,
+        :Woman ;
+    :hasFather data:Mark_Phillips .
+
+data:Anne_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasMother data:Queen_Elizabeth_II .
+
+data:Peter_Phillips a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Zara_Tindall a :Ancestor,
+        :Person,
+        :Woman ;
     :hasBirthYear 1981 ;
     :hasBrother data:Peter_Phillips ;
-    :hasDaughter data:Mia_Grace_Tindall ;
     :hasFather data:Mark_Phillips ;
     :hasMarriageYear 2011 ;
     :hasMother data:Anne_Princess_Royal ;
-    :hasRelation data:Mike_Tindall ;
-    :hasSister data:Felicity_Wade,
-        data:Stephanie_Phillips .
-
-data:Anne_Princess_Royal a :Ancestor,
-        :Woman .
-
-data:Felicity_Wade a :Woman .
+    :hasRelation data:Mike_Tindall .
 
 data:Mark_Phillips a :Ancestor,
-        :Man .
+        :Man,
+        :Person .
 
-data:Mike_Tindall a :Man ;
-    :hasDaughter data:Mia_Grace_Tindall .
-
-data:Peter_Phillips a :Man .
-
-data:Stephanie_Phillips a :Woman .
-
-data:Mia_Grace_Tindall a :Woman .
+data:Mike_Tindall a :Ancestor,
+        :Man,
+        :Person .
 

@@ -148,8 +148,10 @@ Queen Sofía has also been a strong supporter of Somaly Mam's Agir pour les Femm
 In 1998, Mam was awarded the prestigious Prince of Asturias Award for International Cooperation in the Queen's presence.
 As Queen, Sofía never publicly commented on political issues.
 However, in October 2008, Pilar Urbano's book La Reina muy de cerca ("The Queen up close") sparked strong controversy as it contained alleged statements by the Queen on issues debated in Spanish society.
+The Royal Household commented that the book "puts in Her Majesty's mouth alleged claims that  do not correspond exactly to the opinions expressed by Her Majesty".
 In May 2012, Sofía was reportedly refused permission to  attend the celebrations for the Diamond Jubilee of Elizabeth II by the Spanish government, citing tensions over fishing rights at Gibraltar.
 In July 2012, Sofía visited the Philippines for a fourth time.
+She visited the National Library, National Museum and the Pontifical and Royal University of Santo Tomas, The Catholic University of the Philippines, which had the oldest extant university charter in Asia and housed the world's largest collection of suyat scripts.
 Queen emerita
 
 Following her husband's abdication as King in 2014, Sofía has focused on her sponsoring activities, spending her time between La Zarzuela and, in the summer months, the Marivent Palace in Palma de Mallorca.
@@ -176,6 +178,8 @@ Queen Sofía is portrayed on screen by Mónica López in the Televisión Españo
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -191,39 +195,9 @@ Queen Sofía is portrayed on screen by Mónica López in the Televisión Españo
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -238,6 +212,23 @@ Queen Sofía is portrayed on screen by Mónica López in the Televisión Españo
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -255,6 +246,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -322,29 +328,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -353,6 +351,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -365,6 +371,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -373,17 +381,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -411,6 +421,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -426,187 +520,173 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (3e249bca-6ca9-4222-9e73-b04fb9613d5c)
- Call ID: 3e249bca-6ca9-4222-9e73-b04fb9613d5c
+  AssignClass (4a44f407-ef12-4583-9107-0070d9e8c278)
+ Call ID: 4a44f407-ef12-4583-9107-0070d9e8c278
   Args:
-    type: :Woman
     source: Sofía
-  AssignClass (920b96b9-dbcd-4f2d-9ca3-3be52bf0254f)
- Call ID: 920b96b9-dbcd-4f2d-9ca3-3be52bf0254f
+    type: :Woman
+  AssignClass (5fc12131-7f3a-473d-910e-70d7590353f1)
+ Call ID: 5fc12131-7f3a-473d-910e-70d7590353f1
   Args:
     source: Juan Carlos I
     type: :Man
-  AssignClass (0f4aa3d0-9f25-4167-8348-9e55534f69b4)
- Call ID: 0f4aa3d0-9f25-4167-8348-9e55534f69b4
+  AssignClass (12203511-2c62-4504-bc3e-97a5ff77227c)
+ Call ID: 12203511-2c62-4504-bc3e-97a5ff77227c
   Args:
     type: :Man
     source: Paul of Greece
-  AssignClass (56290a4c-d7af-4e74-a193-12551f2a3ee1)
- Call ID: 56290a4c-d7af-4e74-a193-12551f2a3ee1
+  AssignClass (63a96737-deea-4e7c-b2e1-c9ddd4f69377)
+ Call ID: 63a96737-deea-4e7c-b2e1-c9ddd4f69377
   Args:
-    type: :Woman
     source: Frederica of Hanover
-  AssignClass (740ed212-0a0a-4ac4-8b27-d8e70b47c83e)
- Call ID: 740ed212-0a0a-4ac4-8b27-d8e70b47c83e
+    type: :Woman
+  AssignClass (e263105d-bf5d-4274-bc76-94a5da4a519b)
+ Call ID: e263105d-bf5d-4274-bc76-94a5da4a519b
   Args:
-    type: :Man
     source: Constantine I
-  AssignClass (10cc7f90-5183-4b9d-8f56-c9ebe0ba22b2)
- Call ID: 10cc7f90-5183-4b9d-8f56-c9ebe0ba22b2
+    type: :Man
+  AssignClass (7b9762c4-9a4a-4675-a385-39816761609d)
+ Call ID: 7b9762c4-9a4a-4675-a385-39816761609d
   Args:
     source: Sophia of Greece
     type: :Woman
-  AssignClass (1c525f58-7499-4b35-870a-6b707bbddc7d)
- Call ID: 1c525f58-7499-4b35-870a-6b707bbddc7d
+  AssignClass (7d5f6d87-9d28-40a0-803b-6e95bffd6c18)
+ Call ID: 7d5f6d87-9d28-40a0-803b-6e95bffd6c18
   Args:
     type: :Man
     source: Constantine II
-  AssignClass (4ae8f72d-ad9b-45d5-9f32-466d54097c07)
- Call ID: 4ae8f72d-ad9b-45d5-9f32-466d54097c07
+  AssignClass (5b395c7d-80ee-4cdb-b364-220c72032bbf)
+ Call ID: 5b395c7d-80ee-4cdb-b364-220c72032bbf
   Args:
-    type: :Woman
     source: Irene
-  AssignClass (a3a7f24b-577f-4c12-9e33-a7fe1edfe550)
- Call ID: a3a7f24b-577f-4c12-9e33-a7fe1edfe550
+    type: :Woman
+  AssignClass (b335fab1-0d24-4a01-ba37-ac15f956e4b0)
+ Call ID: b335fab1-0d24-4a01-ba37-ac15f956e4b0
   Args:
+    type: :Woman
+    source: Victoria Louise of Prussia
+  AssignClass (ce7b238e-0e41-4e75-a146-98f88149e6ed)
+ Call ID: ce7b238e-0e41-4e75-a146-98f88149e6ed
+  Args:
+    type: :Woman
     source: Elena
-    type: :Woman
-  AssignClass (75a3bf6c-8f8e-49e3-8b4e-457c1c552d59)
- Call ID: 75a3bf6c-8f8e-49e3-8b4e-457c1c552d59
+  AssignClass (08145e01-7b9a-462f-8229-bb459f88282d)
+ Call ID: 08145e01-7b9a-462f-8229-bb459f88282d
   Args:
-    type: :Woman
     source: Cristina
-  AssignClass (e6b34a06-deb9-4042-baf7-03b81730696e)
- Call ID: e6b34a06-deb9-4042-baf7-03b81730696e
+    type: :Woman
+  AssignClass (8a265f07-8e18-4f98-b537-82ba8f40977a)
+ Call ID: 8a265f07-8e18-4f98-b537-82ba8f40977a
   Args:
-    source: Felipe VI
     type: :Man
-  AddTriple (1ccd55b5-2635-414f-ab9f-dd1bf7e7c639)
- Call ID: 1ccd55b5-2635-414f-ab9f-dd1bf7e7c639
+    source: Felipe VI
+  AddLiteral (ccba96e3-4c00-4292-8a78-6ad772e56924)
+ Call ID: ccba96e3-4c00-4292-8a78-6ad772e56924
   Args:
-    relation: :hasFather
+    source: Sofía
+    relation: :hasBirthYear
+    literal_value: 1938
+    literal_type: xsd:integer
+  AddTriple (edfba7ba-f5b3-445d-ad89-772110783ebe)
+ Call ID: edfba7ba-f5b3-445d-ad89-772110783ebe
+  Args:
     source: Sofía
     target: Paul of Greece
-  AddTriple (3d93172c-1d10-44d4-afc6-2fa4ddfc8616)
- Call ID: 3d93172c-1d10-44d4-afc6-2fa4ddfc8616
+    relation: :hasFather
+  AddTriple (420edf86-30c4-492e-b2ec-ec32a08cd13f)
+ Call ID: 420edf86-30c4-492e-b2ec-ec32a08cd13f
   Args:
     source: Sofía
     relation: :hasMother
     target: Frederica of Hanover
-  AddTriple (94e20561-29cc-4964-97ce-e0a7e4b5c2a2)
- Call ID: 94e20561-29cc-4964-97ce-e0a7e4b5c2a2
+  AddTriple (cac8f657-8b80-4005-bea9-fee26aefce4d)
+ Call ID: cac8f657-8b80-4005-bea9-fee26aefce4d
   Args:
-    target: Constantine I
     relation: :hasFather
+    target: Constantine I
     source: Paul of Greece
-  AddTriple (4170b8b5-e6f9-4eca-905b-2b725a80d103)
- Call ID: 4170b8b5-e6f9-4eca-905b-2b725a80d103
+  AddTriple (f47d0e4d-218e-4ad6-828f-227ce7976aa3)
+ Call ID: f47d0e4d-218e-4ad6-828f-227ce7976aa3
   Args:
-    source: Paul of Greece
     relation: :hasMother
     target: Sophia of Greece
-  AddTriple (ae897d4c-014a-4133-9216-7e5f79264950)
- Call ID: ae897d4c-014a-4133-9216-7e5f79264950
+    source: Paul of Greece
+  AddTriple (b0cca8ef-02c4-4301-8f6a-ca023a9af3b6)
+ Call ID: b0cca8ef-02c4-4301-8f6a-ca023a9af3b6
   Args:
-    target: Juan Carlos I
     relation: :hasFather
-    source: Sofía
-  AddTriple (bdc1131d-7561-4aec-a0b6-acc6c22d9f78)
- Call ID: bdc1131d-7561-4aec-a0b6-acc6c22d9f78
+    target: Paul of Greece
+    source: Constantine II
+  AddTriple (001b8974-a7f0-4542-a46d-9a17c1069b47)
+ Call ID: 001b8974-a7f0-4542-a46d-9a17c1069b47
   Args:
     relation: :hasMother
-    source: Sofía
-    target: Juan Carlos I
-  AddTriple (0606fcfb-5c75-4d99-adcf-ae8c96fb6a5b)
- Call ID: 0606fcfb-5c75-4d99-adcf-ae8c96fb6a5b
+    target: Frederica of Hanover
+    source: Constantine II
+  AddTriple (a8f9ecea-4dc2-4aca-a96c-7b5ad414310e)
+ Call ID: a8f9ecea-4dc2-4aca-a96c-7b5ad414310e
   Args:
-    target: Constantine II
-    source: Sofía
-    relation: :hasBrother
-  AddTriple (82e0d45d-3fde-42c6-b3f5-65dd72be4480)
- Call ID: 82e0d45d-3fde-42c6-b3f5-65dd72be4480
+    source: Irene
+    relation: :hasFather
+    target: Paul of Greece
+  AddTriple (464f5bc2-0d39-45ea-8021-366ca50fe7a7)
+ Call ID: 464f5bc2-0d39-45ea-8021-366ca50fe7a7
   Args:
-    relation: :hasSister
-    source: Sofía
-    target: Irene
-  AddTriple (8e132c85-4215-4624-8176-b830b062db04)
- Call ID: 8e132c85-4215-4624-8176-b830b062db04
+    source: Irene
+    relation: :hasMother
+    target: Frederica of Hanover
+  AddTriple (9fa686e4-178b-4b3c-ad61-5de236f99f51)
+ Call ID: 9fa686e4-178b-4b3c-ad61-5de236f99f51
   Args:
     source: Elena
     relation: :hasFather
     target: Juan Carlos I
-  AddTriple (c4115b1f-c4db-46f0-a8eb-d1be45a7e9fd)
- Call ID: c4115b1f-c4db-46f0-a8eb-d1be45a7e9fd
+  AddTriple (6bd04bd9-f338-4658-ba25-b1d54ace193c)
+ Call ID: 6bd04bd9-f338-4658-ba25-b1d54ace193c
   Args:
-    relation: :hasMother
     source: Elena
     target: Sofía
-  AddTriple (ad32975e-5b78-4190-b68f-a064d3b48f8a)
- Call ID: ad32975e-5b78-4190-b68f-a064d3b48f8a
+    relation: :hasMother
+  AddTriple (aee36664-9b24-44b0-b456-89a7176b5f34)
+ Call ID: aee36664-9b24-44b0-b456-89a7176b5f34
   Args:
     target: Juan Carlos I
     relation: :hasFather
     source: Cristina
-  AddTriple (1d6bf0eb-e6c2-47d2-ab94-1e439a750208)
- Call ID: 1d6bf0eb-e6c2-47d2-ab94-1e439a750208
+  AddTriple (7a8868f9-903a-458e-b553-e978ca704995)
+ Call ID: 7a8868f9-903a-458e-b553-e978ca704995
   Args:
-    relation: :hasMother
     source: Cristina
     target: Sofía
-  AddTriple (3ebeb7f6-faf4-461e-83bd-06991c0342fb)
- Call ID: 3ebeb7f6-faf4-461e-83bd-06991c0342fb
-  Args:
-    target: Juan Carlos I
-    source: Felipe VI
-    relation: :hasFather
-  AddTriple (a0e49089-e478-48fb-bd5d-2667aee3611f)
- Call ID: a0e49089-e478-48fb-bd5d-2667aee3611f
-  Args:
-    target: Sofía
     relation: :hasMother
-    source: Felipe VI
-  AddLiteral (d1883b90-9fb0-49a0-b201-b0448b25f808)
- Call ID: d1883b90-9fb0-49a0-b201-b0448b25f808
+  AddTriple (4959c0ae-a1de-4294-b874-4e792921f51b)
+ Call ID: 4959c0ae-a1de-4294-b874-4e792921f51b
   Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
+    source: Felipe VI
+    target: Juan Carlos I
+    relation: :hasFather
+  AddTriple (c4f1480d-92c1-4291-99a3-739e6aea1be3)
+ Call ID: c4f1480d-92c1-4291-99a3-739e6aea1be3
+  Args:
+    source: Felipe VI
+    relation: :hasMother
+    target: Sofía
+  AddLiteral (dbd2b927-b0dc-4c5e-85d9-e5c2a8edefaa)
+ Call ID: dbd2b927-b0dc-4c5e-85d9-e5c2a8edefaa
+  Args:
     source: Sofía
-    literal_value: 1938
-  AddLiteral (218b90cd-4f32-44eb-af85-545086c6b825)
- Call ID: 218b90cd-4f32-44eb-af85-545086c6b825
-  Args:
     literal_type: xsd:integer
-    literal_value: 1962
     relation: :hasMarriageYear
+    literal_value: 1962
+  AddTriple (d158c076-269a-412b-a29e-4c9694293bd1)
+ Call ID: d158c076-269a-412b-a29e-4c9694293bd1
+  Args:
+    relation: :hasRelation
+    target: Juan Carlos I
     source: Sofía
-  AddLiteral (d230816c-ab70-4256-b49e-0be12117b2df)
- Call ID: d230816c-ab70-4256-b49e-0be12117b2df
+  Finish (1d079361-33ec-422c-953f-18794b7a58b3)
+ Call ID: 1d079361-33ec-422c-953f-18794b7a58b3
   Args:
-    relation: :hasBirthYear
-    source: Elena
-    literal_value: 1963
-    literal_type: xsd:integer
-  AddLiteral (08a73add-35c6-4088-9e36-63b36f1e3ef2)
- Call ID: 08a73add-35c6-4088-9e36-63b36f1e3ef2
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1965
-    source: Cristina
-    relation: :hasBirthYear
-  AddLiteral (6f5a603b-6109-4934-8fd5-5722f8f43f10)
- Call ID: 6f5a603b-6109-4934-8fd5-5722f8f43f10
-  Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Felipe VI
-    literal_value: 1968
-  Finish (b1fc1f4b-3a20-43cb-b481-a9de54edd560)
- Call ID: b1fc1f4b-3a20-43cb-b481-a9de54edd560
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -727,44 +807,44 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+  data:Constantine_II a :Man ;
+      :hasFather data:Paul_of_Greece ;
+      :hasMother data:Frederica_of_Hanover .
+
   data:Cristina a :Woman ;
-      :hasBirthYear 1965 ;
       :hasFather data:Juan_Carlos_I ;
       :hasMother data:Sof%C3%ADa .
 
   data:Elena a :Woman ;
-      :hasBirthYear 1963 ;
       :hasFather data:Juan_Carlos_I ;
       :hasMother data:Sof%C3%ADa .
 
   data:Felipe_VI a :Man ;
-      :hasBirthYear 1968 ;
       :hasFather data:Juan_Carlos_I ;
       :hasMother data:Sof%C3%ADa .
 
+  data:Irene a :Woman ;
+      :hasFather data:Paul_of_Greece ;
+      :hasMother data:Frederica_of_Hanover .
+
+  data:Victoria_Louise_of_Prussia a :Woman .
+
   data:Constantine_I a :Man .
 
-  data:Constantine_II a :Man .
+  data:Sophia_of_Greece a :Woman .
 
   data:Frederica_of_Hanover a :Woman .
-
-  data:Irene a :Woman .
 
   data:Paul_of_Greece a :Man ;
       :hasFather data:Constantine_I ;
       :hasMother data:Sophia_of_Greece .
 
-  data:Sophia_of_Greece a :Woman .
-
   data:Sof%C3%ADa a :Woman ;
       :hasBirthYear 1938 ;
-      :hasBrother data:Constantine_II ;
-      :hasFather data:Juan_Carlos_I,
-          data:Paul_of_Greece ;
+      :hasFather data:Paul_of_Greece ;
       :hasMarriageYear 1962 ;
-      :hasMother data:Frederica_of_Hanover,
-          data:Juan_Carlos_I ;
-      :hasSister data:Irene .
+      :hasMother data:Frederica_of_Hanover ;
+      :hasRelation data:Juan_Carlos_I .
 
   data:Juan_Carlos_I a :Man .
 
@@ -778,276 +858,212 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  RemoveTriple (85dd248d-33ef-4fb4-a0b0-4d98de39ffce)
- Call ID: 85dd248d-33ef-4fb4-a0b0-4d98de39ffce
+  ValidateShacl (6472ca3c-bfdb-4747-8f1a-88c7191e391e)
+ Call ID: 6472ca3c-bfdb-4747-8f1a-88c7191e391e
   Args:
-    relation: :hasFather
-    target: Juan Carlos I
-    source: Sofía
-  RemoveTriple (a03ec603-b558-4e58-8181-06d2a87cc599)
- Call ID: a03ec603-b558-4e58-8181-06d2a87cc599
-  Args:
-    relation: :hasMother
-    source: Sofía
-    target: Juan Carlos I
-  ValidateShacl (39b3ba86-4cb8-40d5-a4ca-cf3fe3e3482a)
- Call ID: 39b3ba86-4cb8-40d5-a4ca-cf3fe3e3482a
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Cristina a :Woman ;
-      :hasBirthYear 1965 ;
-      :hasFather data:Juan_Carlos_I ;
-      :hasMother data:Sof%C3%ADa .
-
-  data:Elena a :Woman ;
-      :hasBirthYear 1963 ;
-      :hasFather data:Juan_Carlos_I ;
-      :hasMother data:Sof%C3%ADa .
-
-  data:Felipe_VI a :Man ;
-      :hasBirthYear 1968 ;
-      :hasFather data:Juan_Carlos_I ;
-      :hasMother data:Sof%C3%ADa .
-
-  data:Constantine_I a :Man .
-
-  data:Constantine_II a :Man .
-
-  data:Frederica_of_Hanover a :Woman .
-
-  data:Irene a :Woman .
-
-  data:Paul_of_Greece a :Man ;
-      :hasFather data:Constantine_I ;
-      :hasMother data:Sophia_of_Greece .
-
-  data:Sophia_of_Greece a :Woman .
-
-  data:Juan_Carlos_I a :Man .
-
-  data:Sof%C3%ADa a :Woman ;
-      :hasBirthYear 1938 ;
-      :hasBrother data:Constantine_II ;
-      :hasFather data:Paul_of_Greece ;
-      :hasMarriageYear 1962 ;
-      :hasMother data:Frederica_of_Hanover ;
-      :hasSister data:Irene .
-
-
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:30
+Total violations:42
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Constantine_I is assigned the class :Man but not the required class :Ancestor, which is expected for a father relationship.
+      The person Juan_Carlos_I, who is the father of Felipe_VI, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Constantine_I, :Ancestor)
+      AssignClass(Juan_Carlos_I, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Juan_Carlos_I is assigned the class :Man but not the required class :Ancestor, which is expected for a father relationship.
+      The person Constantine_I, who is the father of Paul_of_Greece, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Juan_Carlos_I, :Ancestor)
+      AssignClass(Constantine_I, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Sophia_of_Greece is assigned the class :Woman but not the required class :Ancestor, which is expected for a mother relationship.
+      The person Paul_of_Greece, who is the father of Constantine_II, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophia_of_Greece, :Ancestor)
+      AssignClass(Paul_of_Greece, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Sof%C3%ADa is assigned the class :Woman but not the required class :Ancestor, which is expected for a mother relationship.
+      The person Sof%C3%ADa, who is the mother of Felipe_VI, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Sof%C3%ADa, :Ancestor)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Constantine_I is missing the :Ancestor class required for the hasFather property.
+      The person Sophia_of_Greece, who is the mother of Paul_of_Greece, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Constantine_I, :Ancestor)
+      AssignClass(Sophia_of_Greece, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Juan_Carlos_I is missing the :Ancestor class required for the hasFather property.
+      The person Frederica_of_Hanover, who is the mother of Constantine_II, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Juan_Carlos_I, :Ancestor)
+      AssignClass(Frederica_of_Hanover, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Paul_of_Greece is missing the :Ancestor class required for the hasFather property.
+      The person Juan_Carlos_I, who is the father of Elena, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_of_Greece, :Ancestor)
+      AssignClass(Juan_Carlos_I, :Ancestor)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Juan_Carlos_I is missing the :Ancestor class required for the hasFather property.
+      The person Constantine_I, who is the father of Paul_of_Greece, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Juan_Carlos_I, :Ancestor)
+      AssignClass(Constantine_I, :Ancestor)
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Juan_Carlos_I is missing the :Ancestor class required for the hasFather property.
+      The person Paul_of_Greece, who is the father of Constantine_II, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Paul_of_Greece, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Paul_of_Greece, who is the father of Irene, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Paul_of_Greece, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Juan_Carlos_I, who is the father of Felipe_VI, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Juan_Carlos_I, :Ancestor)
 
 
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Sophia_of_Greece is missing the :Ancestor class required for the hasMother property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophia_of_Greece, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The person Sof%C3%ADa is missing the :Ancestor class required for the hasMother property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Sof%C3%ADa, :Ancestor)
-
-
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Frederica_of_Hanover is missing the :Ancestor class required for the hasMother property.
+      The person Paul_of_Greece, who is the father of Sof%C3%ADa, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederica_of_Hanover, :Ancestor)
+      AssignClass(Paul_of_Greece, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Sof%C3%ADa is missing the :Ancestor class required for the hasMother property.
+      The person Juan_Carlos_I, who is the father of Cristina, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sof%C3%ADa, :Ancestor)
+      AssignClass(Juan_Carlos_I, :Ancestor)
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Sof%C3%ADa is missing the :Ancestor class required for the hasMother property.
+      The person Sof%C3%ADa, who is the mother of Elena, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Sof%C3%ADa, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Constantine_I is missing the :Ancestor class required for the hasFather property.
+      The person Sophia_of_Greece, who is the mother of Paul_of_Greece, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Constantine_I, :Ancestor)
+      AssignClass(Sophia_of_Greece, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Juan_Carlos_I is missing the :Ancestor class required for the hasFather property.
+      The person Frederica_of_Hanover, who is the mother of Constantine_II, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Juan_Carlos_I, :Ancestor)
+      AssignClass(Frederica_of_Hanover, :Ancestor)
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Paul_of_Greece is missing the :Ancestor class required for the hasFather property.
+      The person Frederica_of_Hanover, who is the mother of Irene, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Paul_of_Greece, :Ancestor)
+      AssignClass(Frederica_of_Hanover, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Juan_Carlos_I is missing the :Ancestor class required for the hasFather property.
+      The person Sof%C3%ADa, who is the mother of Felipe_VI, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Juan_Carlos_I, :Ancestor)
+      AssignClass(Sof%C3%ADa, :Ancestor)
 
 
   Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Juan_Carlos_I is missing the :Ancestor class required for the hasFather property.
+      The person Frederica_of_Hanover, who is the mother of Sof%C3%ADa, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Juan_Carlos_I, :Ancestor)
+      AssignClass(Frederica_of_Hanover, :Ancestor)
 
 
   Violation [20]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Sophia_of_Greece is missing the :Ancestor class required for the hasMother property.
+      The person Sof%C3%ADa, who is the mother of Cristina, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophia_of_Greece, :Ancestor)
+      AssignClass(Sof%C3%ADa, :Ancestor)
 
 
   Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Sof%C3%ADa is missing the :Ancestor class required for the hasMother property.
+      The person Juan_Carlos_I, who is the father of Elena, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sof%C3%ADa, :Ancestor)
+      AssignClass(Juan_Carlos_I, :Ancestor)
 
 
   Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Frederica_of_Hanover is missing the :Ancestor class required for the hasMother property.
+      The person Constantine_I, who is the father of Paul_of_Greece, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederica_of_Hanover, :Ancestor)
+      AssignClass(Constantine_I, :Ancestor)
 
 
   Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Sof%C3%ADa is missing the :Ancestor class required for the hasMother property.
+      The person Paul_of_Greece, who is the father of Constantine_II, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sof%C3%ADa, :Ancestor)
+      AssignClass(Paul_of_Greece, :Ancestor)
 
 
   Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Sof%C3%ADa is missing the :Ancestor class required for the hasMother property.
+      The person Paul_of_Greece, who is the father of Irene, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sof%C3%ADa, :Ancestor)
+      AssignClass(Paul_of_Greece, :Ancestor)
 
 
   Violation [25]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Juan_Carlos_I is missing the :Ancestor class required for the hasFather property.
+      The person Juan_Carlos_I, who is the father of Felipe_VI, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Juan_Carlos_I, :Ancestor)
 
@@ -1055,7 +1071,7 @@ Violations:
   Violation [26]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Paul_of_Greece is missing the :Ancestor class required for the hasFather property.
+      The person Paul_of_Greece, who is the father of Sof%C3%ADa, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Paul_of_Greece, :Ancestor)
 
@@ -1063,7 +1079,7 @@ Violations:
   Violation [27]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The person Juan_Carlos_I is missing the :Ancestor class required for the hasFather property.
+      The person Juan_Carlos_I, who is the father of Cristina, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Juan_Carlos_I, :Ancestor)
 
@@ -1071,7 +1087,7 @@ Violations:
   Violation [28]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Sof%C3%ADa is missing the :Ancestor class required for the hasMother property.
+      The person Sof%C3%ADa, who is the mother of Elena, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Sof%C3%ADa, :Ancestor)
 
@@ -1079,17 +1095,113 @@ Violations:
   Violation [29]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Frederica_of_Hanover is missing the :Ancestor class required for the hasMother property.
+      The person Sophia_of_Greece, who is the mother of Paul_of_Greece, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Frederica_of_Hanover, :Ancestor)
+      AssignClass(Sophia_of_Greece, :Ancestor)
 
 
   Violation [30]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The person Sof%C3%ADa is missing the :Ancestor class required for the hasMother property.
+      The person Frederica_of_Hanover, who is the mother of Constantine_II, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederica_of_Hanover, :Ancestor)
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Frederica_of_Hanover, who is the mother of Irene, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederica_of_Hanover, :Ancestor)
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Sof%C3%ADa, who is the mother of Felipe_VI, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Sof%C3%ADa, :Ancestor)
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Frederica_of_Hanover, who is the mother of Sof%C3%ADa, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederica_of_Hanover, :Ancestor)
+
+
+  Violation [34]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Sof%C3%ADa, who is the mother of Cristina, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sof%C3%ADa, :Ancestor)
+
+
+  Violation [35]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Juan_Carlos_I, who is the father of Elena, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juan_Carlos_I, :Ancestor)
+
+
+  Violation [36]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Paul_of_Greece, who is the father of Sof%C3%ADa, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Paul_of_Greece, :Ancestor)
+
+
+  Violation [37]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Juan_Carlos_I, who is the father of Cristina, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Juan_Carlos_I, :Ancestor)
+
+
+  Violation [38]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Paul_of_Greece, who is the father of Irene, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Paul_of_Greece, :Ancestor)
+
+
+  Violation [39]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Sof%C3%ADa, who is the mother of Elena, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sof%C3%ADa, :Ancestor)
+
+
+  Violation [40]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Frederica_of_Hanover, who is the mother of Sof%C3%ADa, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederica_of_Hanover, :Ancestor)
+
+
+  Violation [41]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Sof%C3%ADa, who is the mother of Cristina, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sof%C3%ADa, :Ancestor)
+
+
+  Violation [42]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person Frederica_of_Hanover, who is the mother of Irene, is not assigned the required class :Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Frederica_of_Hanover, :Ancestor)
 
 
 
@@ -1098,38 +1210,38 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (884c7115-ce8f-44f1-8155-7f727c3146b4)
- Call ID: 884c7115-ce8f-44f1-8155-7f727c3146b4
+  AssignClass (18309395-08dc-4beb-90ae-e75ca4c5dbea)
+ Call ID: 18309395-08dc-4beb-90ae-e75ca4c5dbea
   Args:
     type: :Ancestor
-    source: Constantine_I
-  AssignClass (0930345a-8f4a-4e15-a0fb-7dbbb5f2b18e)
- Call ID: 0930345a-8f4a-4e15-a0fb-7dbbb5f2b18e
+    source: Juan Carlos I
+  AssignClass (068c5b40-4aa6-4879-8ea8-6b33979efc2d)
+ Call ID: 068c5b40-4aa6-4879-8ea8-6b33979efc2d
+  Args:
+    source: Constantine I
+    type: :Ancestor
+  AssignClass (1cd05d97-564e-48fc-bb7d-61e593addfaa)
+ Call ID: 1cd05d97-564e-48fc-bb7d-61e593addfaa
   Args:
     type: :Ancestor
-    source: Juan_Carlos_I
-  AssignClass (e189b4f8-dac2-46bd-ac26-c4a4fb3533d9)
- Call ID: e189b4f8-dac2-46bd-ac26-c4a4fb3533d9
+    source: Paul of Greece
+  AssignClass (ca64d758-7314-4699-ba52-316363a0331f)
+ Call ID: ca64d758-7314-4699-ba52-316363a0331f
   Args:
-    type: :Ancestor
-    source: Sophia_of_Greece
-  AssignClass (1a05e511-9940-407b-b8d3-e92c86198078)
- Call ID: 1a05e511-9940-407b-b8d3-e92c86198078
-  Args:
-    type: :Ancestor
     source: Sofía
-  AssignClass (7c850be8-a02d-4bfd-9aed-30c4886a0f2d)
- Call ID: 7c850be8-a02d-4bfd-9aed-30c4886a0f2d
-  Args:
     type: :Ancestor
-    source: Paul_of_Greece
-  AssignClass (69706655-e405-4854-b23c-d2233026e68b)
- Call ID: 69706655-e405-4854-b23c-d2233026e68b
+  AssignClass (45fff92b-a37d-46ef-9b04-35b5ad71742d)
+ Call ID: 45fff92b-a37d-46ef-9b04-35b5ad71742d
   Args:
+    source: Sophia of Greece
     type: :Ancestor
-    source: Frederica_of_Hanover
-  ValidateShacl (a0d3a6ac-97d3-4661-b81f-f584243f9541)
- Call ID: a0d3a6ac-97d3-4661-b81f-f584243f9541
+  AssignClass (02ab0769-05e8-40c5-95fa-e359f1b8a3e8)
+ Call ID: 02ab0769-05e8-40c5-95fa-e359f1b8a3e8
+  Args:
+    source: Frederica of Hanover
+    type: :Ancestor
+  Finish (d7379635-7d8f-47b6-b501-bc2fce506346)
+ Call ID: d7379635-7d8f-47b6-b501-bc2fce506346
   Args:
 
 ================================= Tool Message =================================
@@ -1159,52 +1271,66 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+  data:Constantine_II a :Man ;
+      :hasFather data:Paul_of_Greece ;
+      :hasMother data:Frederica_of_Hanover .
+
   data:Cristina a :Woman ;
-      :hasBirthYear 1965 ;
       :hasFather data:Juan_Carlos_I ;
       :hasMother data:Sof%C3%ADa .
 
   data:Elena a :Woman ;
-      :hasBirthYear 1963 ;
       :hasFather data:Juan_Carlos_I ;
       :hasMother data:Sof%C3%ADa .
 
   data:Felipe_VI a :Man ;
-      :hasBirthYear 1968 ;
       :hasFather data:Juan_Carlos_I ;
       :hasMother data:Sof%C3%ADa .
+
+  data:Irene a :Woman ;
+      :hasFather data:Paul_of_Greece ;
+      :hasMother data:Frederica_of_Hanover .
+
+  data:Victoria_Louise_of_Prussia a :Woman .
 
   data:Constantine_I a :Ancestor,
           :Man .
 
-  data:Constantine_II a :Man .
+  data:Sophia_of_Greece a :Ancestor,
+          :Woman .
 
   data:Frederica_of_Hanover a :Ancestor,
           :Woman .
-
-  data:Irene a :Woman .
 
   data:Paul_of_Greece a :Ancestor,
           :Man ;
       :hasFather data:Constantine_I ;
       :hasMother data:Sophia_of_Greece .
 
-  data:Sophia_of_Greece a :Ancestor,
-          :Woman .
+  data:Sof%C3%ADa a :Ancestor,
+          :Woman ;
+      :hasBirthYear 1938 ;
+      :hasFather data:Paul_of_Greece ;
+      :hasMarriageYear 1962 ;
+      :hasMother data:Frederica_of_Hanover ;
+      :hasRelation data:Juan_Carlos_I .
 
   data:Juan_Carlos_I a :Ancestor,
           :Man .
 
-  data:Sof%C3%ADa a :Ancestor,
-          :Woman ;
-      :hasBirthYear 1938 ;
-      :hasBrother data:Constantine_II ;
-      :hasFather data:Paul_of_Greece ;
-      :hasMarriageYear 1962 ;
-      :hasMother data:Frederica_of_Hanover ;
-      :hasSister data:Irene .
 
 
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (dd960fdb-4920-4d10-9ea2-e72431479733)
+ Call ID: dd960fdb-4920-4d10-9ea2-e72431479733
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1214,6 +1340,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (93146e84-326d-4f7e-a5bb-76166eb42592)
- Call ID: 93146e84-326d-4f7e-a5bb-76166eb42592
+  Finish (5e8c7978-d342-430c-bf10-1f80e64f2085)
+ Call ID: 5e8c7978-d342-430c-bf10-1f80e64f2085
   Args:

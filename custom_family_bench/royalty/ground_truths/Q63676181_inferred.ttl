@@ -1,0 +1,249 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Mike_Tindall a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Mike Tindall"^^xsd:string ;
+    data:posIndicesFull "3701:3713"^^xsd:string,
+        "571:583"^^xsd:string ;
+    data:posIndicesPart "2305:2312"^^xsd:string,
+        "2429:2436"^^xsd:string,
+        "2600:2607"^^xsd:string,
+        "2982:2989"^^xsd:string,
+        "3165:3172"^^xsd:string,
+        "3401:3408"^^xsd:string,
+        "3577:3581"^^xsd:string,
+        "4509:4516"^^xsd:string ;
+    data:wdtLink wdt:Q1386944 ;
+    :alsoKnownAs "Michael James Tindall"^^xsd:string,
+        "Michael Tindall"^^xsd:string ;
+    :hasBrother data:Mike_Tindall ;
+    :hasChild data:Lena_Tindall ;
+    :hasDaughter data:Lena_Tindall ;
+    :hasRelation data:Lena_Tindall,
+        data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasSex data:male ;
+    :isAncestorOf data:Lena_Tindall ;
+    :isBloodrelationOf data:Mike_Tindall ;
+    :isBrotherOf data:Mike_Tindall ;
+    :isFatherOf data:Lena_Tindall ;
+    :isParentOf data:Lena_Tindall ;
+    :isSiblingOf data:Mike_Tindall ;
+    :isUncleOf data:Lena_Tindall .
+
+data:Mark_Phillips a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Mark Phillips"^^xsd:string ;
+    data:posIndicesFull "185:206"^^xsd:string,
+        "193:206"^^xsd:string,
+        "3232:3245"^^xsd:string ;
+    data:posIndicesPart "1214:1222"^^xsd:string,
+        "1304:1312"^^xsd:string,
+        "1416:1424"^^xsd:string,
+        "1558:1566"^^xsd:string,
+        "1725:1733"^^xsd:string,
+        "1929:1937"^^xsd:string,
+        "2015:2023"^^xsd:string,
+        "2792:2796"^^xsd:string,
+        "2871:2875"^^xsd:string,
+        "3669:3677"^^xsd:string,
+        "4646:4654"^^xsd:string,
+        "675:683"^^xsd:string,
+        "901:909"^^xsd:string,
+        "955:963"^^xsd:string ;
+    data:wdtLink wdt:Q547893 ;
+    :alsoKnownAs "Captain Mark Anthony Peter Phillips"^^xsd:string,
+        "Captain Mark Phillips"^^xsd:string ;
+    :hasBrother data:Mark_Phillips ;
+    :hasChild data:Zara_Tindall ;
+    :hasDaughter data:Zara_Tindall ;
+    :hasRelation data:Lena_Tindall,
+        data:Mark_Phillips,
+        data:Zara_Tindall ;
+    :hasSex data:male ;
+    :isAncestorOf data:Lena_Tindall,
+        data:Zara_Tindall ;
+    :isBloodrelationOf data:Mark_Phillips ;
+    :isBrotherOf data:Mark_Phillips ;
+    :isFatherOf data:Zara_Tindall ;
+    :isParentOf data:Zara_Tindall ;
+    :isSiblingOf data:Mark_Phillips ;
+    :isUncleOf data:Zara_Tindall .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "3381:3399"^^xsd:string,
+        "3387:3399"^^xsd:string,
+        "367:385"^^xsd:string,
+        "373:385"^^xsd:string ;
+    data:posIndicesPart "4391:4400"^^xsd:string,
+        "665:674"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasChild data:Anne-_Princess_Royal ;
+    :hasDaughter data:Anne-_Princess_Royal ;
+    :hasRelation data:Anne-_Princess_Royal,
+        data:Elizabeth_II,
+        data:Lena_Tindall,
+        data:Zara_Tindall ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :isAncestorOf data:Anne-_Princess_Royal,
+        data:Lena_Tindall,
+        data:Zara_Tindall ;
+    :isAuntOf data:Anne-_Princess_Royal ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isMotherOf data:Anne-_Princess_Royal ;
+    :isParentOf data:Anne-_Princess_Royal ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Anne-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Anne, Princess Royal"^^xsd:string ;
+    data:posIndicesFull "159:179"^^xsd:string ;
+    data:posIndicesPart "1108:1113"^^xsd:string,
+        "3872:3877"^^xsd:string,
+        "4021:4026"^^xsd:string,
+        "4184:4192"^^xsd:string,
+        "4193:4198"^^xsd:string,
+        "4300:4305"^^xsd:string,
+        "660:664"^^xsd:string ;
+    data:wdtLink wdt:Q151754 ;
+    :alsoKnownAs "Anne Elizabeth Alice Louise"^^xsd:string,
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor"^^xsd:string,
+        "Anne Elizabeth Alice Louise Mountbatten-Windsor, Princess Royal of the United Kingdom"^^xsd:string,
+        "Anne Mountbatten-Windsor"^^xsd:string,
+        "Princess Anne"^^xsd:string,
+        "Princess Anne Elizabeth Alice Louise of Edinburgh"^^xsd:string,
+        "Princess Anne Elizabeth Alice Louise, Princess Royal"^^xsd:string,
+        "Princess Anne of Edinburgh"^^xsd:string,
+        "Princess Anne, Princess Royal"^^xsd:string,
+        "Princess Anne, The Princess Royal"^^xsd:string,
+        "The Princess Anne"^^xsd:string,
+        "The Princess Anne Elizabeth Alice Louise, Princess Royal"^^xsd:string,
+        "The Princess Anne, Princess Royal"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II ;
+    :hasChild data:Zara_Tindall ;
+    :hasDaughter data:Zara_Tindall ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II ;
+    :hasRelation data:Anne-_Princess_Royal,
+        data:Elizabeth_II,
+        data:Lena_Tindall,
+        data:Zara_Tindall ;
+    :hasSex data:female ;
+    :hasSister data:Anne-_Princess_Royal ;
+    :isAncestorOf data:Lena_Tindall,
+        data:Zara_Tindall ;
+    :isAuntOf data:Zara_Tindall ;
+    :isBloodrelationOf data:Anne-_Princess_Royal ;
+    :isChildOf data:Elizabeth_II ;
+    :isDaughterOf data:Elizabeth_II ;
+    :isMotherOf data:Zara_Tindall ;
+    :isParentOf data:Zara_Tindall ;
+    :isSiblingOf data:Anne-_Princess_Royal ;
+    :isSisterOf data:Anne-_Princess_Royal .
+
+data:Lena_Tindall a :Person,
+        :Woman ;
+    rdfs:label "Lena Tindall"^^xsd:string ;
+    data:wdtLink wdt:Q63676181 ;
+    :alsoKnownAs "Lena Elizabeth Tindall"^^xsd:string ;
+    :hasAncestor data:Anne-_Princess_Royal,
+        data:Elizabeth_II,
+        data:Mark_Phillips,
+        data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasFather data:Mike_Tindall ;
+    :hasMother data:Zara_Tindall ;
+    :hasParent data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasRelation data:Anne-_Princess_Royal,
+        data:Elizabeth_II,
+        data:Lena_Tindall,
+        data:Mark_Phillips,
+        data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasSex data:female ;
+    :hasSister data:Lena_Tindall ;
+    :isBloodrelationOf data:Lena_Tindall ;
+    :isChildOf data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :isDaughterOf data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :isSiblingOf data:Lena_Tindall ;
+    :isSisterOf data:Lena_Tindall .
+
+data:Zara_Tindall a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Zara Tindall"^^xsd:string ;
+    data:posIndicesFull "0:27"^^xsd:string,
+        "193:206"^^xsd:string,
+        "2189:2201"^^xsd:string,
+        "3232:3245"^^xsd:string ;
+    data:posIndicesPart "2305:2312"^^xsd:string,
+        "2429:2436"^^xsd:string,
+        "2600:2607"^^xsd:string,
+        "2982:2989"^^xsd:string,
+        "3401:3408"^^xsd:string,
+        "411:418"^^xsd:string,
+        "4509:4516"^^xsd:string,
+        "655:659"^^xsd:string ;
+    data:wdtLink wdt:Q147663 ;
+    :alsoKnownAs "Zara Anne Elizabeth Tindall"^^xsd:string,
+        "Zara Phillips"^^xsd:string ;
+    :hasAncestor data:Anne-_Princess_Royal,
+        data:Elizabeth_II,
+        data:Mark_Phillips ;
+    :hasChild data:Lena_Tindall ;
+    :hasDaughter data:Lena_Tindall ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne-_Princess_Royal ;
+    :hasParent data:Anne-_Princess_Royal,
+        data:Mark_Phillips ;
+    :hasRelation data:Anne-_Princess_Royal,
+        data:Elizabeth_II,
+        data:Lena_Tindall,
+        data:Mark_Phillips,
+        data:Mike_Tindall,
+        data:Zara_Tindall ;
+    :hasSex data:female ;
+    :hasSister data:Zara_Tindall ;
+    :isAncestorOf data:Lena_Tindall ;
+    :isAuntOf data:Lena_Tindall ;
+    :isBloodrelationOf data:Zara_Tindall ;
+    :isChildOf data:Anne-_Princess_Royal,
+        data:Mark_Phillips ;
+    :isDaughterOf data:Anne-_Princess_Royal,
+        data:Mark_Phillips ;
+    :isMotherOf data:Lena_Tindall ;
+    :isParentOf data:Lena_Tindall ;
+    :isSiblingOf data:Zara_Tindall ;
+    :isSisterOf data:Zara_Tindall .
+

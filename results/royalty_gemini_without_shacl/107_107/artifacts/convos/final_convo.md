@@ -114,6 +114,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -129,39 +131,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -176,6 +148,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -193,6 +182,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,29 +264,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -291,6 +287,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -303,6 +307,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -311,17 +317,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -349,6 +357,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -364,124 +456,141 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (34df7eec-a246-454a-becb-7008251c3507)
- Call ID: 34df7eec-a246-454a-becb-7008251c3507
+  AssignClass (bcc99ab1-cf4a-4230-a83a-8460a7611847)
+ Call ID: bcc99ab1-cf4a-4230-a83a-8460a7611847
   Args:
-    type: :Man
-    source: :Bernhard_van_Vollenhoven
-  AssignClass (951ad339-2313-4cd1-b99d-38ccf472bcae)
- Call ID: 951ad339-2313-4cd1-b99d-38ccf472bcae
-  Args:
-    source: :Princess_Margriet
     type: :Woman
-  AssignClass (5b86ac96-bd82-436f-bfe6-2b262fcb8cf7)
- Call ID: 5b86ac96-bd82-436f-bfe6-2b262fcb8cf7
+    source: :Beatrix
+  AssignClass (54852f0d-c7b6-437e-9e16-74f0bc8b2d70)
+ Call ID: 54852f0d-c7b6-437e-9e16-74f0bc8b2d70
   Args:
-    type: :Man
+    type: :Woman
+    source: :Margriet
+  AssignClass (613bdc75-121c-4eb8-99f5-415782d11f08)
+ Call ID: 613bdc75-121c-4eb8-99f5-415782d11f08
+  Args:
     source: :Pieter_van_Vollenhoven
-  AssignClass (9653028f-35f8-4c64-aa98-99623ecf4b09)
- Call ID: 9653028f-35f8-4c64-aa98-99623ecf4b09
-  Args:
-    source: :Annette_Sekreve
-    type: :Woman
-  AssignClass (b65f543d-83c7-4415-a5e0-df5d7ef36dce)
- Call ID: b65f543d-83c7-4415-a5e0-df5d7ef36dce
-  Args:
-    type: :Woman
-    source: :Isabella_Lily_Juliana
-  AssignClass (1e2c8a48-491d-4e39-ab58-3737f8019cf8)
- Call ID: 1e2c8a48-491d-4e39-ab58-3737f8019cf8
-  Args:
-    source: :Samuel_Bernhard_Louis
     type: :Man
-  AssignClass (4b563f12-85ce-46bc-b295-48b6d0e81fb7)
- Call ID: 4b563f12-85ce-46bc-b295-48b6d0e81fb7
-  Args:
-    type: :Man
-    source: :Benjamin_Pieter_Floris
-  AddLiteral (943571d6-2955-4d15-89c0-aaba5af6e5a8)
- Call ID: 943571d6-2955-4d15-89c0-aaba5af6e5a8
+  AssignClass (b357f2b5-0b7f-44d3-9a7a-a8fdbd2d9001)
+ Call ID: b357f2b5-0b7f-44d3-9a7a-a8fdbd2d9001
   Args:
     source: :Bernhard_van_Vollenhoven
+    type: :Man
+  AddLiteral (adf91522-a2c3-46ca-9c88-3d08789b305a)
+ Call ID: adf91522-a2c3-46ca-9c88-3d08789b305a
+  Args:
     relation: :hasBirthYear
     literal_type: xsd:integer
     literal_value: 1969
-  AddTriple (6f843cc6-86bd-4809-adfc-0762de403b86)
- Call ID: 6f843cc6-86bd-4809-adfc-0762de403b86
-  Args:
     source: :Bernhard_van_Vollenhoven
+  AddTriple (043882a5-8821-4400-80ce-eeda8ae69849)
+ Call ID: 043882a5-8821-4400-80ce-eeda8ae69849
+  Args:
     relation: :hasMother
-    target: :Princess_Margriet
-  AddTriple (0f8dc6f7-af9f-420b-aed1-22c80d66adf2)
- Call ID: 0f8dc6f7-af9f-420b-aed1-22c80d66adf2
+    target: :Margriet
+    source: :Bernhard_van_Vollenhoven
+  AddTriple (a6d021e2-2ee3-4554-af13-93b243d8b8a1)
+ Call ID: a6d021e2-2ee3-4554-af13-93b243d8b8a1
   Args:
     relation: :hasFather
     target: :Pieter_van_Vollenhoven
     source: :Bernhard_van_Vollenhoven
-  AddLiteral (eea0d2be-4fc2-4b8c-b6b4-9862b0ebb058)
- Call ID: eea0d2be-4fc2-4b8c-b6b4-9862b0ebb058
+  AssignClass (88c46f02-5ce4-4357-93c3-2dab3ec2cc74)
+ Call ID: 88c46f02-5ce4-4357-93c3-2dab3ec2cc74
   Args:
-    literal_type: xsd:integer
-    literal_value: 1972
+    source: :Maurits_van_Vollenhoven
+    type: :Man
+  AssignClass (53ca6475-b039-4fb2-8dac-833ad2f73ae5)
+ Call ID: 53ca6475-b039-4fb2-8dac-833ad2f73ae5
+  Args:
+    type: :Man
+    source: :Pieter-Christiaan_van_Vollenhoven
+  AssignClass (900fb622-4e80-47bc-abe9-7aab61b1cc45)
+ Call ID: 900fb622-4e80-47bc-abe9-7aab61b1cc45
+  Args:
+    source: :Floris_van_Vollenhoven
+    type: :Man
+  AddTriple (10a92e90-9f25-4065-895d-bb22e32fa87a)
+ Call ID: 10a92e90-9f25-4065-895d-bb22e32fa87a
+  Args:
+    source: :Bernhard_van_Vollenhoven
+    target: :Maurits_van_Vollenhoven
+    relation: :isBrotherOf
+  AddTriple (d130450a-fc2d-4bb8-ad5e-41cf5d502fe2)
+ Call ID: d130450a-fc2d-4bb8-ad5e-41cf5d502fe2
+  Args:
+    relation: :isBrotherOf
+    target: :Pieter-Christiaan_van_Vollenhoven
+    source: :Bernhard_van_Vollenhoven
+  AddTriple (1d113bde-66ae-4ef0-8788-5028e72ec922)
+ Call ID: 1d113bde-66ae-4ef0-8788-5028e72ec922
+  Args:
+    source: :Bernhard_van_Vollenhoven
+    relation: :isBrotherOf
+    target: :Floris_van_Vollenhoven
+  AssignClass (33a7e5a1-12c6-4932-b6f7-24f2b41809f7)
+ Call ID: 33a7e5a1-12c6-4932-b6f7-24f2b41809f7
+  Args:
+    source: :Annette_Sekreve
+    type: :Woman
+  AddLiteral (ea6ac5b4-2171-40d9-bb13-39e19a389557)
+ Call ID: ea6ac5b4-2171-40d9-bb13-39e19a389557
+  Args:
     relation: :hasBirthYear
     source: :Annette_Sekreve
-  AddTriple (de05cad1-141d-403c-81f6-ae5df503073e)
- Call ID: de05cad1-141d-403c-81f6-ae5df503073e
-  Args:
-    relation: :hasMother
-    target: :Annette_Sekreve
-    source: :Isabella_Lily_Juliana
-  AddTriple (0e8575ff-a6e8-46aa-8412-41e0460b9591)
- Call ID: 0e8575ff-a6e8-46aa-8412-41e0460b9591
-  Args:
-    target: :Bernhard_van_Vollenhoven
-    relation: :hasFather
-    source: :Isabella_Lily_Juliana
-  AddLiteral (10ff1e99-ba30-4198-8b13-2ee065b24448)
- Call ID: 10ff1e99-ba30-4198-8b13-2ee065b24448
-  Args:
-    relation: :hasBirthYear
+    literal_value: 1972
     literal_type: xsd:integer
-    literal_value: 2002
-    source: :Isabella_Lily_Juliana
-  AddTriple (108eddbd-7524-45a9-aa5f-1e1b8ec5d3bb)
- Call ID: 108eddbd-7524-45a9-aa5f-1e1b8ec5d3bb
+  AssignClass (b7951920-0425-4fe2-bc4a-1dabed49b654)
+ Call ID: b7951920-0425-4fe2-bc4a-1dabed49b654
+  Args:
+    type: :Woman
+    source: :Isabella_Lily_Juliana_van_Vollenhoven
+  AssignClass (d102640a-b8ca-4553-8895-c16f9e05cb73)
+ Call ID: d102640a-b8ca-4553-8895-c16f9e05cb73
+  Args:
+    type: :Man
+    source: :Samuel_Bernhard_Louis_van_Vollenhoven
+  AssignClass (ac1fbf5b-60e2-41ac-959e-9726a7aeb403)
+ Call ID: ac1fbf5b-60e2-41ac-959e-9726a7aeb403
+  Args:
+    source: :Benjamin_Pieter_Floris_van_Vollenhoven
+    type: :Man
+  AddTriple (f3ef1a8c-9246-415b-8039-7d1c49ad59d8)
+ Call ID: f3ef1a8c-9246-415b-8039-7d1c49ad59d8
   Args:
     target: :Annette_Sekreve
     relation: :hasMother
-    source: :Samuel_Bernhard_Louis
-  AddTriple (7edd459d-c193-4daa-a7a5-9673279b6f46)
- Call ID: 7edd459d-c193-4daa-a7a5-9673279b6f46
+    source: :Isabella_Lily_Juliana_van_Vollenhoven
+  AddTriple (d0ac4e0f-3a7e-456b-b194-8e572d4d0e0c)
+ Call ID: d0ac4e0f-3a7e-456b-b194-8e572d4d0e0c
   Args:
-    source: :Samuel_Bernhard_Louis
+    source: :Isabella_Lily_Juliana_van_Vollenhoven
     target: :Bernhard_van_Vollenhoven
     relation: :hasFather
-  AddLiteral (db6c724c-b01b-4dda-ba43-2b9d1e2593fe)
- Call ID: db6c724c-b01b-4dda-ba43-2b9d1e2593fe
+  AddTriple (ad787d12-c9c6-4d6c-810c-632f88029f36)
+ Call ID: ad787d12-c9c6-4d6c-810c-632f88029f36
   Args:
-    literal_type: xsd:integer
-    literal_value: 2004
-    relation: :hasBirthYear
-    source: :Samuel_Bernhard_Louis
-  AddTriple (dd7ca982-f5b6-487c-ba0e-871bdb608382)
- Call ID: dd7ca982-f5b6-487c-ba0e-871bdb608382
+    source: :Samuel_Bernhard_Louis_van_Vollenhoven
+    target: :Annette_Sekreve
+    relation: :hasMother
+  AddTriple (77c3e667-d596-462e-885e-ee6fa2d32d58)
+ Call ID: 77c3e667-d596-462e-885e-ee6fa2d32d58
   Args:
-    source: :Benjamin_Pieter_Floris
+    relation: :hasFather
+    target: :Bernhard_van_Vollenhoven
+    source: :Samuel_Bernhard_Louis_van_Vollenhoven
+  AddTriple (6c310a1d-5926-498e-be11-5c3b4432ed4b)
+ Call ID: 6c310a1d-5926-498e-be11-5c3b4432ed4b
+  Args:
+    source: :Benjamin_Pieter_Floris_van_Vollenhoven
     relation: :hasMother
     target: :Annette_Sekreve
-  AddTriple (f0040d42-bf43-4ea7-acd8-b0683f3352b1)
- Call ID: f0040d42-bf43-4ea7-acd8-b0683f3352b1
+  AddTriple (561a3fd4-687c-4a5d-959c-2c211b7e67ad)
+ Call ID: 561a3fd4-687c-4a5d-959c-2c211b7e67ad
   Args:
-    source: :Benjamin_Pieter_Floris
     target: :Bernhard_van_Vollenhoven
     relation: :hasFather
-  AddLiteral (cfa38b00-0e69-4499-939a-3075526cab2b)
- Call ID: cfa38b00-0e69-4499-939a-3075526cab2b
-  Args:
-    literal_type: xsd:integer
-    literal_value: 2008
-    relation: :hasBirthYear
-    source: :Benjamin_Pieter_Floris
-  Finish (6b1f1a3b-78ef-4287-a212-86ef490bcea1)
- Call ID: 6b1f1a3b-78ef-4287-a212-86ef490bcea1
+    source: :Benjamin_Pieter_Floris_van_Vollenhoven
+  Finish (78bb9a6d-d262-440b-9af0-8d9f919e024e)
+ Call ID: 78bb9a6d-d262-440b-9af0-8d9f919e024e
   Args:

@@ -2,37 +2,47 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Anne a :Woman .
+data:James_Mountbatten-Windsor a :Man,
+        :Person ;
+    :isChildOf data:Prince_Edward,
+        data:Sophie_Rhys-Jones .
 
-data:James_Mountbatten-Windsor a :Man ;
-    :hasFather data:Edward ;
-    :hasMother data:Sophie_Rhys-Jones .
+data:Lady_Louise_Mountbatten-Windsor a :Person,
+        :Woman ;
+    :isChildOf data:Prince_Edward,
+        data:Sophie_Rhys-Jones .
 
-data:Louise_Mountbatten-Windsor a :Woman ;
-    :hasFather data:Edward ;
-    :hasMother data:Sophie_Rhys-Jones .
+data:Andrew a :Man,
+        :Person .
 
-data:Andrew a :Man .
-
-data:Charles_III a :Man .
-
-data:Elizabeth_II a :Ancestor,
+data:Anne a :Person,
         :Woman .
 
-data:Philip a :Ancestor,
-        :Man ;
-    :hasDeathYear 2021 .
+data:Charles_III a :Man,
+        :Person .
 
-data:Edward a :Ancestor,
-        :Man ;
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Prince_Edward a :Ancestor,
+        :Man,
+        :Person ;
     :hasBirthYear 1964 ;
-    :hasFather data:Philip ;
+    :hasFather data:Prince_Philip ;
     :hasMarriageYear 1999 ;
     :hasMother data:Elizabeth_II ;
-    :hasRelation data:Sophie_Rhys-Jones ;
-    :isBrotherOf data:Andrew,
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip ;
+    :isSiblingOf data:Andrew,
+        data:Anne,
         data:Charles_III .
 
+data:Prince_Philip a :Ancestor,
+        :Man,
+        :Person .
+
 data:Sophie_Rhys-Jones a :Ancestor,
+        :Person,
         :Woman .
 

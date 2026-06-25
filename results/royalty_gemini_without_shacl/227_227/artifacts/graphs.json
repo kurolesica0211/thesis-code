@@ -4,13 +4,90 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alice_of_Hesse a :Person,\n        :Woman ;\n    :isAuntOf data:Prince_Waldemar_of_Prussia .\n\ndata:Heinrich a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Waldemar_of_Prussia .\n\ndata:Marie_cousin a :Person,\n        :Woman .\n\ndata:Prince_Sigismund_of_Prussia a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Waldemar_of_Prussia .\n\ndata:Wilhelm a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Waldemar_of_Prussia .\n\ndata:Frederick_III a :Man,\n        :Person .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Victoria_Empress a :Person,\n        :Woman .\n\ndata:William_I a :Man,\n        :Person .\n\ndata:Prince_Waldemar_of_Prussia a :Man,\n        :Person ;\n    :alsoKnownAs \"Joachim Friedrich Ernst Waldemar\"^^xsd:string ;\n    :hasAncestor data:Queen_Victoria,\n        data:William_I ;\n    :hasBirthYear 1868 ;\n    :hasDeathYear 1879 ;\n    :hasFather data:Frederick_III ;\n    :hasMother data:Victoria_Empress .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 1,
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Prince_Carlo_Duke_of_Castro a :Person .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Camilla_Crociani a :Person .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 2005 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:Prince_Carlo_Duke_of_Castro .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 9,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:Prince_Carlo_Duke_of_Castro ;\n    :hasMother data:Camilla_Crociani .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 10,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_Carolina a :Person .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:Prince_Carlo_Duke_of_Castro ;\n    :hasMother data:Camilla_Crociani .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 11,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_Carolina a :Person,\n        :Woman .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:Prince_Carlo_Duke_of_Castro ;\n    :hasMother data:Camilla_Crociani .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 12,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:Prince_Carlo_Duke_of_Castro ;\n    :hasMother data:Camilla_Crociani ;\n    :hasSister data:Princess_Maria_Carolina .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person .\n\ndata:Princess_Maria_Carolina a :Person,\n        :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 13,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alice_of_Hesse a :Person,\n        :Woman ;\n    :isAuntOf data:Prince_Waldemar_of_Prussia .\n\ndata:Heinrich a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Waldemar_of_Prussia .\n\ndata:Marie_cousin a :Person,\n        :Woman .\n\ndata:Prince_Sigismund_of_Prussia a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Waldemar_of_Prussia .\n\ndata:Wilhelm a :Man,\n        :Person ;\n    :isBrotherOf data:Prince_Waldemar_of_Prussia .\n\ndata:Frederick_III a :Man,\n        :Person .\n\ndata:Queen_Victoria a :Person,\n        :Woman .\n\ndata:Victoria_Empress a :Person,\n        :Woman .\n\ndata:William_I a :Man,\n        :Person .\n\ndata:Prince_Waldemar_of_Prussia a :Man,\n        :Person ;\n    :alsoKnownAs \"Joachim Friedrich Ernst Waldemar\"^^xsd:string ;\n    :hasAncestor data:Queen_Victoria,\n        data:William_I ;\n    :hasBirthYear 1868 ;\n    :hasDeathYear 1879 ;\n    :hasFather data:Frederick_III ;\n    :hasMother data:Victoria_Empress .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:Prince_Carlo_Duke_of_Castro ;\n    :hasMother data:Camilla_Crociani ;\n    :hasSister data:Princess_Maria_Carolina .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person .\n\ndata:Princess_Maria_Carolina a :Person,\n        :Woman .\n\n"
     }
 ]

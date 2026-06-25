@@ -2,29 +2,58 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Bernhard_Margrave_of_Baden a :Man ;
-    :hasFather data:Maximilian_Margrave_of_Baden ;
-    :hasMother data:Archduchess_Valerie_of_Austria .
+data:Charles_III_King_of_the_United_Kingdom a :Man,
+        :Person .
 
-data:Berthold_Margrave_of_Baden a :Man .
-
-data:Maximilian_Margrave_of_Baden a :Man ;
+data:Maximilian_Margrave_of_Baden a :Man,
+        :Person ;
     :alsoKnownAs "Max von Baden"^^xsd:string ;
     :hasBirthYear 1933 ;
-    :hasBrother data:Prince_Ludwig_of_Baden ;
+    :hasBrother data:Prince_Ludwig ;
     :hasDeathYear 2022 ;
     :hasFather data:Berthold_Margrave_of_Baden ;
     :hasMarriageYear 1966 ;
     :hasMother data:Princess_Theodora_of_Greece_and_Denmark ;
     :hasRelation data:Archduchess_Valerie_of_Austria ;
-    :hasSister data:Princess_Margarita_of_Baden .
+    :hasSister data:Princess_Margarita ;
+    :hasSon data:Bernhard_Margrave_of_Baden .
 
-data:Prince_Ludwig_of_Baden a :Man ;
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasSister data:Princess_Theodora_of_Greece_and_Denmark .
+
+data:Princess_Beatrix_of_Hohenlohe_Langenburg a :Person,
+        :Woman ;
+    :hasMother data:Margarita_Princess_of_Hohenlohe_Langenburg .
+
+data:Archduchess_Valerie_of_Austria a :Person,
+        :Woman ;
+    :hasBirthYear 1941 ;
+    :hasFather data:Archduke_Hubert_Salvator_of_Austria ;
+    :hasMother data:Princess_Rosemary_of_Salm_Salm .
+
+data:Archduke_Hubert_Salvator_of_Austria a :Man,
+        :Person .
+
+data:Bernhard_Margrave_of_Baden a :Man,
+        :Person .
+
+data:Berthold_Margrave_of_Baden a :Man,
+        :Person .
+
+data:Margarita_Princess_of_Hohenlohe_Langenburg a :Person,
+        :Woman .
+
+data:Prince_Ludwig a :Man,
+        :Person ;
     :hasBirthYear 1937 .
 
-data:Princess_Margarita_of_Baden a :Woman .
+data:Princess_Margarita a :Person,
+        :Woman .
 
-data:Princess_Theodora_of_Greece_and_Denmark a :Woman .
+data:Princess_Rosemary_of_Salm_Salm a :Person,
+        :Woman .
 
-data:Archduchess_Valerie_of_Austria a :Woman .
+data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+        :Woman .
 

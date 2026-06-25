@@ -2,45 +2,39 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Christian_Nicolau_de_Almeida_Reid a :Woman ;
-    :hasSex data:Female .
+data:Andreas_Felix_Paul_von_Bismarck a :Man,
+        :Person ;
+    :hasBirthYear 1979 ;
+    :hasChild data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :hasDeathYear 2019 .
 
-data:Francesca_Thyssen-Bornemisza a :Woman ;
-    :hasFather data:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon ;
-    :hasMother data:Fiona_Frances_Elaine_Campbell-Walter ;
-    :hasSex data:Female .
-
-data:Karl_Habsburg-Lothringen a :Man ;
-    :alsoKnownAs "Archduke Karl of Austria"^^xsd:string,
-        "Karl Thomas Robert Maria Franziskus Georg Bahnam"^^xsd:string ;
-    :hasBirthYear 1961 ;
-    :hasFather data:Charles_I ;
-    :hasMarriageYear 1993,
-        2022 ;
-    :hasMother data:Regina_von_Sachsen-Meiningen ;
-    :hasSex data:Male .
-
-data:Otto_von_Habsburg a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
-
-data:Charles_I a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
-
-data:Fiona_Frances_Elaine_Campbell-Walter a :Ancestor,
+data:Kira-Marina_Liepsner a :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasBirthYear 1977 ;
+    :hasChild data:Granddaughter_1_of_Kira,
+        data:Granddaughter_2_of_Kira ;
+    :hasMother data:Princess_Kira_of_Prussia .
 
-data:Hans_Heinrich_Thyssen-Bornemisza_de_K%C3%A1szon a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
+data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman .
 
-data:Regina_von_Sachsen-Meiningen a :Ancestor,
+data:Louis_Ferdinand_Prince_of_Prussia a :Ancestor,
+        :Man,
+        :Person .
+
+data:Princess_Kira_of_Prussia a :Ancestor,
+        :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasBirthYear 1943 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Louis_Ferdinand_Prince_of_Prussia ;
+    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia .
 
-data:Female a :Sex .
+data:Granddaughter_1_of_Kira a :Person,
+        :Woman .
 
-data:Male a :Sex .
+data:Granddaughter_2_of_Kira a :Person,
+        :Woman .
 

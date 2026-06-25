@@ -1,0 +1,617 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Queen_Sofia_of_Spain a :Person,
+        :Woman ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:King_Paul_of_Greece,
+        data:Princess_Alexia,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II,
+        data:Queen_Sofia_of_Spain ;
+    :hasSister data:Constantine_II_of_Greece,
+        data:Queen_Sofia_of_Spain ;
+    :isBloodrelationOf data:Constantine_II_of_Greece,
+        data:Queen_Sofia_of_Spain ;
+    :isSiblingOf data:Constantine_II_of_Greece,
+        data:Queen_Sofia_of_Spain ;
+    :isSisterOf data:Constantine_II_of_Greece,
+        data:Queen_Sofia_of_Spain .
+
+data:Princess_Benedikte a :Person,
+        :Woman ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Benedikte,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Anne-Marie,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isAuntOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isSiblingOf data:Anne-Marie,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isSisterOf data:Anne-Marie,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II .
+
+data:Queen_Margrethe_II a :Person,
+        :Woman ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Benedikte,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II,
+        data:Queen_Sofia_of_Spain ;
+    :hasSister data:Anne-Marie,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isAuntOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isSiblingOf data:Anne-Marie,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isSisterOf data:Anne-Marie,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II .
+
+data:Frederik_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederik_IX_of_Denmark ;
+    :hasChild data:Anne-Marie ;
+    :hasDaughter data:Anne-Marie ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Benedikte,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II ;
+    :isAncestorOf data:Anne-Marie,
+        data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Frederik_IX_of_Denmark ;
+    :isBrotherOf data:Frederik_IX_of_Denmark ;
+    :isFatherOf data:Anne-Marie ;
+    :isParentOf data:Anne-Marie ;
+    :isSiblingOf data:Frederik_IX_of_Denmark ;
+    :isUncleOf data:Anne-Marie .
+
+data:Ingrid_of_Sweden a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Anne-Marie ;
+    :hasDaughter data:Anne-Marie ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Benedikte,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Ingrid_of_Sweden ;
+    :isAncestorOf data:Anne-Marie,
+        data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isAuntOf data:Anne-Marie ;
+    :isBloodrelationOf data:Ingrid_of_Sweden ;
+    :isMotherOf data:Anne-Marie ;
+    :isParentOf data:Anne-Marie ;
+    :isSiblingOf data:Ingrid_of_Sweden ;
+    :isSisterOf data:Ingrid_of_Sweden .
+
+data:King_Paul_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:King_Paul_of_Greece ;
+    :hasChild data:Constantine_II_of_Greece ;
+    :hasDaughter data:Constantine_II_of_Greece ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Benedikte,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II,
+        data:Queen_Sofia_of_Spain ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:King_Paul_of_Greece ;
+    :isBrotherOf data:King_Paul_of_Greece ;
+    :isFatherOf data:Constantine_II_of_Greece ;
+    :isParentOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:King_Paul_of_Greece ;
+    :isUncleOf data:Constantine_II_of_Greece .
+
+data:Queen_Frederica_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Constantine_II_of_Greece ;
+    :hasDaughter data:Constantine_II_of_Greece ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Benedikte,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II,
+        data:Queen_Sofia_of_Spain ;
+    :hasSister data:Queen_Frederica_of_Greece ;
+    :hasSon data:Constantine_II_of_Greece ;
+    :isAncestorOf data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isAuntOf data:Constantine_II_of_Greece ;
+    :isBloodrelationOf data:Queen_Frederica_of_Greece ;
+    :isMotherOf data:Constantine_II_of_Greece ;
+    :isParentOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Queen_Frederica_of_Greece ;
+    :isSisterOf data:Queen_Frederica_of_Greece .
+
+data:Crown_Prince_Pavlos a :Man,
+        :Person ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Queen_Frederica_of_Greece ;
+    :hasBrother data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II_of_Greece ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Benedikte,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBrotherOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSonOf data:Anne-Marie,
+        data:Constantine_II_of_Greece .
+
+data:Prince_Nikolaos a :Man,
+        :Person ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Queen_Frederica_of_Greece ;
+    :hasBrother data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II_of_Greece ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Benedikte,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBrotherOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSonOf data:Anne-Marie,
+        data:Constantine_II_of_Greece .
+
+data:Prince_Philippos a :Man,
+        :Person ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Queen_Frederica_of_Greece ;
+    :hasBrother data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II_of_Greece ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Benedikte,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II ;
+    :hasSister data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBrotherOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSonOf data:Anne-Marie,
+        data:Constantine_II_of_Greece .
+
+data:Princess_Alexia a :Person,
+        :Woman ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Queen_Frederica_of_Greece ;
+    :hasBrother data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II_of_Greece ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Benedikte,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II,
+        data:Queen_Sofia_of_Spain ;
+    :hasSister data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II_of_Greece ;
+    :isDaughterOf data:Anne-Marie,
+        data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSisterOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora .
+
+data:Princess_Theodora a :Person,
+        :Woman ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Queen_Frederica_of_Greece ;
+    :hasBrother data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos ;
+    :hasFather data:Constantine_II_of_Greece ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:Constantine_II_of_Greece ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Benedikte,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II,
+        data:Queen_Sofia_of_Spain ;
+    :hasSister data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine_II_of_Greece ;
+    :isDaughterOf data:Anne-Marie,
+        data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSisterOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora .
+
+data:Anne-Marie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasBirthYear 1946 ;
+    :hasChild data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :hasDaughter data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :hasFather data:Frederik_IX_of_Denmark ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Ingrid_of_Sweden ;
+    :hasParent data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Benedikte,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II,
+        data:Queen_Sofia_of_Spain ;
+    :hasSister data:Anne-Marie,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :hasSon data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos ;
+    :isAncestorOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isAuntOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Anne-Marie,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isChildOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isDaughterOf data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden ;
+    :isMotherOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isParentOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSiblingOf data:Anne-Marie,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II ;
+    :isSisterOf data:Anne-Marie,
+        data:Princess_Benedikte,
+        data:Queen_Margrethe_II .
+
+data:Constantine_II_of_Greece a :Ancestor,
+        :Man,
+        :Person,
+        :Woman ;
+    :hasAncestor data:King_Paul_of_Greece,
+        data:Queen_Frederica_of_Greece ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasChild data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :hasDaughter data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :hasFather data:King_Paul_of_Greece ;
+    :hasMother data:Queen_Frederica_of_Greece ;
+    :hasParent data:King_Paul_of_Greece,
+        data:Queen_Frederica_of_Greece ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine_II_of_Greece,
+        data:Crown_Prince_Pavlos,
+        data:Frederik_IX_of_Denmark,
+        data:Ingrid_of_Sweden,
+        data:King_Paul_of_Greece,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Benedikte,
+        data:Princess_Theodora,
+        data:Queen_Frederica_of_Greece,
+        data:Queen_Margrethe_II,
+        data:Queen_Sofia_of_Spain ;
+    :hasSister data:Constantine_II_of_Greece,
+        data:Queen_Sofia_of_Spain ;
+    :hasSon data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos ;
+    :isAncestorOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isBloodrelationOf data:Constantine_II_of_Greece,
+        data:Queen_Sofia_of_Spain ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isChildOf data:King_Paul_of_Greece,
+        data:Queen_Frederica_of_Greece ;
+    :isDaughterOf data:King_Paul_of_Greece,
+        data:Queen_Frederica_of_Greece ;
+    :isFatherOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isParentOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora ;
+    :isSiblingOf data:Constantine_II_of_Greece,
+        data:Queen_Sofia_of_Spain ;
+    :isSisterOf data:Constantine_II_of_Greece,
+        data:Queen_Sofia_of_Spain ;
+    :isSonOf data:King_Paul_of_Greece,
+        data:Queen_Frederica_of_Greece ;
+    :isUncleOf data:Crown_Prince_Pavlos,
+        data:Prince_Nikolaos,
+        data:Prince_Philippos,
+        data:Princess_Alexia,
+        data:Princess_Theodora .
+

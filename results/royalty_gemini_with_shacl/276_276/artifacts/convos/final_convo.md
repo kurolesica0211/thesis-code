@@ -85,30 +85,25 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-King Albert IIQueen Paola
+Prince Gabriele of Bourbon-Two Sicilies (Gabriele Maria Giuseppe Carlo Ignazio Antonio Alfonso Pietro Giovanni Gerardo di Majella et Omni Sancti; 11 January 1897 – 22 October 1975) was a prince of the deposed dynasty which ruled the Kingdom of the Two Sicilies.
+Family
 
-
-Prince Lorenz of Belgium, Archduke of Austria-Este (born 16 December 1955) is a member of the Belgian royal family as the husband of Princess Astrid of Belgium.
-He is the head of the House of Austria-Este, a cadet branch of the House of Habsburg-Lorraine; he has held this position since 1996.
-He is a grandson of Emperor Charles I of Austria, the last Emperor of Austria and King of Hungary.
-Early life
-
-Prince Lorenz was born at Clinique du Belvédère in Boulogne-Billancourt, Hauts-de-Seine, France as the second child and eldest son of Robert, Archduke of Austria-Este, and his wife, Archduchess Margaret (née Princess Margherita of Savoy-Aosta).
-He is the grandson of Charles I of Austria, the last Emperor of Austria.
+Gabriel was the twelfth child and youngest son of Prince Alfonso, Count of Caserta, and his wife, Princess Maria Antonietta of Bourbon-Two Sicilies.
 Marriage and issue
 
-On 22 September 1984, at the Church of Our Lady of Victories at the Sablon in Brussels, Prince Lorenz married Princess Astrid of Belgium, the only daughter of the then-Prince and Princess of Liège, later King Albert II and Queen Paola.
-The couple has five children:
+Gabriel married firstly Princess Malgorzata Izabella Czartoryska, daughter of Prince Adam Ludwik Czartoryski and Countess Maria Ludwika Krasińska, on 25 August 1927 in Paris.
+The couple had one child before Malgorzata died in Cannes on 8 March 1929:
 
 
-Prince Lorenz is the godfather to Prince Carl-Johan of Nassau, youngest child of Prince Jean of Luxembourg, and Count Costantino Secco di Aragona, the oldest son of his cousin, Archduchess Catharina-Maria of Austria.
-The Belgian monarchy refers to him as the Archduke of Austria-Este.
+Gabriel married, secondly, Princess Cecylia Lubomirska, daughter of Prince Kasimierz Lubomirski and Countess Maria Theresia Granow-Wodicka, on 15 September 1932 in Kraków.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -124,39 +119,9 @@ The Belgian monarchy refers to him as the Archduke of Austria-Este.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -171,6 +136,23 @@ The Belgian monarchy refers to him as the Archduke of Austria-Este.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -188,6 +170,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -255,29 +252,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -286,6 +275,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -298,6 +295,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -306,17 +305,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -344,6 +345,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -359,94 +444,235 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9298df7c-651e-4365-8798-a5db9390f8ec)
- Call ID: 9298df7c-651e-4365-8798-a5db9390f8ec
+  AssignClass (76d90085-f983-41c3-94a3-a23f332fa7b3)
+ Call ID: 76d90085-f983-41c3-94a3-a23f332fa7b3
   Args:
+    source: :Gabriele_of_Bourbon-Two_Sicilies
     type: :Man
-    source: Prince_Lorenz_of_Belgium
-  AssignClass (9e1579ea-f38e-43c6-8ce2-cf1493b13615)
- Call ID: 9e1579ea-f38e-43c6-8ce2-cf1493b13615
+  AssignClass (b83f62a6-6310-47e0-bb38-e80b9597b0fe)
+ Call ID: b83f62a6-6310-47e0-bb38-e80b9597b0fe
   Args:
-    type: :Woman
-    source: Princess_Astrid_of_Belgium
-  AssignClass (37278748-0c50-4682-98ca-e1a5fab82cd5)
- Call ID: 37278748-0c50-4682-98ca-e1a5fab82cd5
+    source: :Gabriele_of_Bourbon-Two_Sicilies
+    type: :Person
+  AddLiteral (9e96fdec-5445-4ff1-8bc8-71192b314dca)
+ Call ID: 9e96fdec-5445-4ff1-8bc8-71192b314dca
   Args:
-    type: :Man
-    source: King_Albert_II
-  AssignClass (a515cd92-a9c5-4d9b-aed3-b88b37eb3be2)
- Call ID: a515cd92-a9c5-4d9b-aed3-b88b37eb3be2
-  Args:
-    type: :Woman
-    source: Queen_Paola
-  AssignClass (1d7eb52e-6622-41ca-9a3f-c892305949cb)
- Call ID: 1d7eb52e-6622-41ca-9a3f-c892305949cb
-  Args:
-    type: :Man
-    source: Robert_Archduke_of_Austria-Este
-  AssignClass (41aea02e-eeea-4449-98d0-58c76fda4b98)
- Call ID: 41aea02e-eeea-4449-98d0-58c76fda4b98
-  Args:
-    type: :Woman
-    source: Archduchess_Margaret
-  AssignClass (73e2acfe-0168-464f-b540-17fe97831d8b)
- Call ID: 73e2acfe-0168-464f-b540-17fe97831d8b
-  Args:
-    type: :Man
-    source: Emperor_Charles_I_of_Austria
-  AddLiteral (fc56cbfd-0d65-46d6-bbf5-1fd342b0f94f)
- Call ID: fc56cbfd-0d65-46d6-bbf5-1fd342b0f94f
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1955
-    source: Prince_Lorenz_of_Belgium
     literal_type: xsd:integer
-  AddTriple (3fdb41cd-4cbf-4098-818b-a9861a697b6d)
- Call ID: 3fdb41cd-4cbf-4098-818b-a9861a697b6d
+    source: :Gabriele_of_Bourbon-Two_Sicilies
+    relation: :hasBirthYear
+    literal_value: 1897
+  AddLiteral (e36be40f-0606-4c91-a4ad-54dee6d3e66c)
+ Call ID: e36be40f-0606-4c91-a4ad-54dee6d3e66c
   Args:
+    source: :Gabriele_of_Bourbon-Two_Sicilies
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1975
+  AssignClass (707fdca3-aa1a-409b-a081-51913cefdb97)
+ Call ID: 707fdca3-aa1a-409b-a081-51913cefdb97
+  Args:
+    source: :Alfonso_Count_of_Caserta
+    type: :Man
+  AssignClass (50891549-8eba-4c7d-9542-f0960998f898)
+ Call ID: 50891549-8eba-4c7d-9542-f0960998f898
+  Args:
+    source: :Alfonso_Count_of_Caserta
+    type: :Person
+  AssignClass (59886719-561d-4c7a-a276-14cee58771e8)
+ Call ID: 59886719-561d-4c7a-a276-14cee58771e8
+  Args:
+    source: :Maria_Antonietta_of_Bourbon-Two_Sicilies
+    type: :Woman
+  AssignClass (025a83ec-41b7-400d-9f28-928633a2b7fa)
+ Call ID: 025a83ec-41b7-400d-9f28-928633a2b7fa
+  Args:
+    source: :Maria_Antonietta_of_Bourbon-Two_Sicilies
+    type: :Person
+  AddTriple (9236dde7-e187-4e22-9eca-d8f15afac43f)
+ Call ID: 9236dde7-e187-4e22-9eca-d8f15afac43f
+  Args:
+    target: :Alfonso_Count_of_Caserta
     relation: :hasFather
-    target: Robert_Archduke_of_Austria-Este
-    source: Prince_Lorenz_of_Belgium
-  AddTriple (9545f093-04ae-4476-b469-136c24bbed70)
- Call ID: 9545f093-04ae-4476-b469-136c24bbed70
+    source: :Gabriele_of_Bourbon-Two_Sicilies
+  AddTriple (a6cdf883-68cb-44fa-9eff-cdbc83b67c36)
+ Call ID: a6cdf883-68cb-44fa-9eff-cdbc83b67c36
   Args:
-    source: Prince_Lorenz_of_Belgium
+    source: :Gabriele_of_Bourbon-Two_Sicilies
     relation: :hasMother
-    target: Archduchess_Margaret
-  AddTriple (1da8489a-26c5-459f-915f-4486ce38b9cd)
- Call ID: 1da8489a-26c5-459f-915f-4486ce38b9cd
+    target: :Maria_Antonietta_of_Bourbon-Two_Sicilies
+  AssignClass (8c4c5094-4002-4dcb-b63d-bf5c3138ae10)
+ Call ID: 8c4c5094-4002-4dcb-b63d-bf5c3138ae10
   Args:
-    source: Prince_Lorenz_of_Belgium
-    target: Emperor_Charles_I_of_Austria
-    relation: :hasFather
-  AddTriple (7ee30e03-8b48-4382-b836-bf10499099e3)
- Call ID: 7ee30e03-8b48-4382-b836-bf10499099e3
+    source: :Malgorzata_Izabella_Czartoryska
+    type: :Woman
+  AssignClass (246a8cf6-987c-4d1e-b67c-f55fbe2442e7)
+ Call ID: 246a8cf6-987c-4d1e-b67c-f55fbe2442e7
   Args:
-    relation: :hasFather
-    target: King_Albert_II
-    source: Princess_Astrid_of_Belgium
-  AddTriple (1900bec8-2fe2-416a-9246-fde30dbc70ed)
- Call ID: 1900bec8-2fe2-416a-9246-fde30dbc70ed
+    source: :Malgorzata_Izabella_Czartoryska
+    type: :Person
+  AddLiteral (0a000531-13ea-492a-bf56-406d19117f51)
+ Call ID: 0a000531-13ea-492a-bf56-406d19117f51
   Args:
-    source: Princess_Astrid_of_Belgium
-    relation: :hasMother
-    target: Queen_Paola
-  AddLiteral (886694d6-56ad-4e60-89ca-05a7a730ab48)
- Call ID: 886694d6-56ad-4e60-89ca-05a7a730ab48
-  Args:
-    literal_value: 1984
-    source: Prince_Lorenz_of_Belgium
+    literal_value: 1927
     literal_type: xsd:integer
     relation: :hasMarriageYear
-  AddTriple (f6de7720-de7c-4acc-8fe5-96c3ad187365)
- Call ID: f6de7720-de7c-4acc-8fe5-96c3ad187365
+    source: :Gabriele_of_Bourbon-Two_Sicilies
+  AddTriple (222c5c59-568c-4918-8e1c-2d1418346912)
+ Call ID: 222c5c59-568c-4918-8e1c-2d1418346912
   Args:
+    target: :Malgorzata_Izabella_Czartoryska
+    source: :Gabriele_of_Bourbon-Two_Sicilies
     relation: :hasRelation
-    target: Princess_Astrid_of_Belgium
-    source: Prince_Lorenz_of_Belgium
-  Finish (8ed68594-5c68-4cf9-9e1d-d0adc2a376d3)
- Call ID: 8ed68594-5c68-4cf9-9e1d-d0adc2a376d3
+  AssignClass (343c7ff3-5ae0-4faa-9bc6-b33a23b6a610)
+ Call ID: 343c7ff3-5ae0-4faa-9bc6-b33a23b6a610
   Args:
+    source: :Adam_Ludwik_Czartoryski
+    type: :Man
+  AssignClass (9f9e094b-3a40-4f1f-8440-c6d9ee53be6f)
+ Call ID: 9f9e094b-3a40-4f1f-8440-c6d9ee53be6f
+  Args:
+    source: :Adam_Ludwik_Czartoryski
+    type: :Person
+  AssignClass (28c805fc-b76e-4484-8be4-a8db289e6a07)
+ Call ID: 28c805fc-b76e-4484-8be4-a8db289e6a07
+  Args:
+    source: :Maria_Ludwika_Krasinska
+    type: :Woman
+  AssignClass (0da2ba03-3c1f-4574-a39d-12dd173503eb)
+ Call ID: 0da2ba03-3c1f-4574-a39d-12dd173503eb
+  Args:
+    source: :Maria_Ludwika_Krasinska
+    type: :Person
+  AddTriple (44824c07-d734-4a4b-bfd7-ccc027db9826)
+ Call ID: 44824c07-d734-4a4b-bfd7-ccc027db9826
+  Args:
+    target: :Adam_Ludwik_Czartoryski
+    relation: :hasFather
+    source: :Malgorzata_Izabella_Czartoryska
+  AddTriple (98a33605-806f-4d3b-bba8-80cc2904f31d)
+ Call ID: 98a33605-806f-4d3b-bba8-80cc2904f31d
+  Args:
+    target: :Maria_Ludwika_Krasinska
+    source: :Malgorzata_Izabella_Czartoryska
+    relation: :hasMother
+  AssignClass (37835aad-fb41-4cd7-99d8-38167a071cd5)
+ Call ID: 37835aad-fb41-4cd7-99d8-38167a071cd5
+  Args:
+    source: :Cecylia_Lubomirska
+    type: :Woman
+  AssignClass (a3af064e-611d-4c58-845c-8cac340b041b)
+ Call ID: a3af064e-611d-4c58-845c-8cac340b041b
+  Args:
+    source: :Cecylia_Lubomirska
+    type: :Person
+  AddLiteral (1defecd7-285d-4b43-b580-db9f7ba3c1a6)
+ Call ID: 1defecd7-285d-4b43-b580-db9f7ba3c1a6
+  Args:
+    relation: :hasMarriageYear
+    source: :Gabriele_of_Bourbon-Two_Sicilies
+    literal_type: xsd:integer
+    literal_value: 1932
+  AddTriple (1574bec6-3d38-493f-8216-518a96cf44fd)
+ Call ID: 1574bec6-3d38-493f-8216-518a96cf44fd
+  Args:
+    target: :Cecylia_Lubomirska
+    source: :Gabriele_of_Bourbon-Two_Sicilies
+    relation: :hasRelation
+  AssignClass (d377a33d-2dea-42b6-8b8c-e9350830779e)
+ Call ID: d377a33d-2dea-42b6-8b8c-e9350830779e
+  Args:
+    source: :Kasimierz_Lubomirski
+    type: :Man
+  AssignClass (5e3b5eef-e861-458c-89c5-6ad14eead74c)
+ Call ID: 5e3b5eef-e861-458c-89c5-6ad14eead74c
+  Args:
+    source: :Kasimierz_Lubomirski
+    type: :Person
+  AssignClass (f8c4446c-1d28-495b-af74-3ccf4e381c78)
+ Call ID: f8c4446c-1d28-495b-af74-3ccf4e381c78
+  Args:
+    source: :Maria_Theresia_Granow-Wodicka
+    type: :Woman
+  AssignClass (d11a92f5-6294-44a5-898b-a0a6a052c7d1)
+ Call ID: d11a92f5-6294-44a5-898b-a0a6a052c7d1
+  Args:
+    source: :Maria_Theresia_Granow-Wodicka
+    type: :Person
+  AddTriple (e2d96670-bc05-4651-ba01-a75e8834fa16)
+ Call ID: e2d96670-bc05-4651-ba01-a75e8834fa16
+  Args:
+    source: :Cecylia_Lubomirska
+    relation: :hasFather
+    target: :Kasimierz_Lubomirski
+  AddTriple (552e9b7a-d890-4834-8996-1da3bda78c46)
+ Call ID: 552e9b7a-d890-4834-8996-1da3bda78c46
+  Args:
+    target: :Maria_Theresia_Granow-Wodicka
+    source: :Cecylia_Lubomirska
+    relation: :hasMother
+  Finish (3f06dd6a-a35a-4704-abed-960d089e8119)
+ Call ID: 3f06dd6a-a35a-4704-abed-960d089e8119
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -511,27 +737,44 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Lorenz_of_Belgium a :Man ;
-      :hasBirthYear 1955 ;
-      :hasFather data:Emperor_Charles_I_of_Austria,
-          data:Robert_Archduke_of_Austria-Este ;
-      :hasMarriageYear 1984 ;
-      :hasMother data:Archduchess_Margaret ;
-      :hasRelation data:Princess_Astrid_of_Belgium .
+  data:Gabriele_of_Bourbon-Two_Sicilies a :Man,
+          :Person ;
+      :hasBirthYear 1897 ;
+      :hasDeathYear 1975 ;
+      :hasFather data:Alfonso_Count_of_Caserta ;
+      :hasMarriageYear 1927,
+          1932 ;
+      :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+      :hasRelation data:Cecylia_Lubomirska,
+          data:Malgorzata_Izabella_Czartoryska .
 
-  data:Archduchess_Margaret a :Woman .
+  data:Adam_Ludwik_Czartoryski a :Man,
+          :Person .
 
-  data:Emperor_Charles_I_of_Austria a :Man .
+  data:Alfonso_Count_of_Caserta a :Man,
+          :Person .
 
-  data:King_Albert_II a :Man .
+  data:Cecylia_Lubomirska a :Person,
+          :Woman ;
+      :hasFather data:Kasimierz_Lubomirski ;
+      :hasMother data:Maria_Theresia_Granow-Wodicka .
 
-  data:Princess_Astrid_of_Belgium a :Woman ;
-      :hasFather data:King_Albert_II ;
-      :hasMother data:Queen_Paola .
+  data:Kasimierz_Lubomirski a :Man,
+          :Person .
 
-  data:Queen_Paola a :Woman .
+  data:Malgorzata_Izabella_Czartoryska a :Person,
+          :Woman ;
+      :hasFather data:Adam_Ludwik_Czartoryski ;
+      :hasMother data:Maria_Ludwika_Krasinska .
 
-  data:Robert_Archduke_of_Austria-Este a :Man .
+  data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,
+          :Woman .
+
+  data:Maria_Ludwika_Krasinska a :Person,
+          :Woman .
+
+  data:Maria_Theresia_Granow-Wodicka a :Person,
+          :Woman .
 
 
 
@@ -543,8 +786,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (57bdc1b6-fd31-4ba2-a799-a0df47e3dbf4)
- Call ID: 57bdc1b6-fd31-4ba2-a799-a0df47e3dbf4
+  ValidateShacl (f3fffcc3-87ec-4716-93ae-eb03a59a095b)
+ Call ID: f3fffcc3-87ec-4716-93ae-eb03a59a095b
   Args:
 
 ================================= Tool Message =================================
@@ -556,145 +799,145 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Emperor_Charles_I_of_Austria is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasFather property of Prince_Lorenz_of_Belgium.
+      The node 'Alfonso_Count_of_Caserta' is assigned the class ':Man' and ':Person', but is missing the required ':Ancestor' class to satisfy the 'hasFather' property constraint for 'Gabriele_of_Bourbon-Two_Sicilies'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Emperor_Charles_I_of_Austria, :Ancestor)
+      AssignClass(node='Alfonso_Count_of_Caserta', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Robert_Archduke_of_Austria-Este is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasFather property of Prince_Lorenz_of_Belgium.
+      The node 'Maria_Antonietta_of_Bourbon-Two_Sicilies' is assigned the class ':Woman' and ':Person', but is missing the required ':Ancestor' class to satisfy the 'hasMother' property constraint for 'Gabriele_of_Bourbon-Two_Sicilies'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Robert_Archduke_of_Austria-Este, :Ancestor)
+      AssignClass(node='Maria_Antonietta_of_Bourbon-Two_Sicilies', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: More than 1 values on data:Prince_Lorenz_of_Belgium->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      Prince_Lorenz_of_Belgium has more than one hasFather relationship defined, but the schema allows only one.
+      The node 'Kasimierz_Lubomirski' is assigned the class ':Man' and ':Person', but is missing the required ':Ancestor' class to satisfy the 'hasFather' property constraint for 'Cecylia_Lubomirska'.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Prince_Lorenz_of_Belgium, :hasFather, Emperor_Charles_I_of_Austria)
+      AssignClass(node='Kasimierz_Lubomirski', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Archduchess_Margaret is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasMother property of Prince_Lorenz_of_Belgium.
+      The node 'Alfonso_Count_of_Caserta' is missing the required ':Ancestor' class to satisfy the 'hasFather' property constraint for 'Gabriele_of_Bourbon-Two_Sicilies'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Archduchess_Margaret, :Ancestor)
+      AssignClass(node='Alfonso_Count_of_Caserta', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Emperor_Charles_I_of_Austria is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasFather property of Prince_Lorenz_of_Belgium.
+      The node 'Adam_Ludwik_Czartoryski' is assigned the class ':Man' and ':Person', but is missing the required ':Ancestor' class to satisfy the 'hasFather' property constraint for 'Malgorzata_Izabella_Czartoryska'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Emperor_Charles_I_of_Austria, :Ancestor)
+      AssignClass(node='Adam_Ludwik_Czartoryski', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Robert_Archduke_of_Austria-Este is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasFather property of Prince_Lorenz_of_Belgium.
+      The node 'Maria_Theresia_Granow-Wodicka' is assigned the class ':Woman' and ':Person', but is missing the required ':Ancestor' class to satisfy the 'hasMother' property constraint for 'Cecylia_Lubomirska'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Robert_Archduke_of_Austria-Este, :Ancestor)
+      AssignClass(node='Maria_Theresia_Granow-Wodicka', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: More than 1 values on data:Prince_Lorenz_of_Belgium->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      Prince_Lorenz_of_Belgium has more than one hasFather relationship defined, but the schema allows only one.
+      The node 'Maria_Antonietta_of_Bourbon-Two_Sicilies' is missing the required ':Ancestor' class to satisfy the 'hasMother' property constraint for 'Gabriele_of_Bourbon-Two_Sicilies'.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Prince_Lorenz_of_Belgium, :hasFather, Emperor_Charles_I_of_Austria)
+      AssignClass(node='Maria_Antonietta_of_Bourbon-Two_Sicilies', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node King_Albert_II is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasFather property of Princess_Astrid_of_Belgium.
+      The node 'Maria_Ludwika_Krasinska' is assigned the class ':Woman' and ':Person', but is missing the required ':Ancestor' class to satisfy the 'hasMother' property constraint for 'Malgorzata_Izabella_Czartoryska'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Albert_II, :Ancestor)
+      AssignClass(node='Maria_Ludwika_Krasinska', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Archduchess_Margaret is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasMother property of Prince_Lorenz_of_Belgium.
+      The node 'Kasimierz_Lubomirski' is missing the required ':Ancestor' class to satisfy the 'hasFather' property constraint for 'Cecylia_Lubomirska'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Archduchess_Margaret, :Ancestor)
+      AssignClass(node='Kasimierz_Lubomirski', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Paola is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasMother property of Princess_Astrid_of_Belgium.
+      The node 'Alfonso_Count_of_Caserta' is missing the required ':Ancestor' class to satisfy the 'hasFather' property constraint for 'Gabriele_of_Bourbon-Two_Sicilies'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Paola, :Ancestor)
+      AssignClass(node='Alfonso_Count_of_Caserta', class=':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Emperor_Charles_I_of_Austria is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasFather property of Prince_Lorenz_of_Belgium.
+      The node 'Adam_Ludwik_Czartoryski' is missing the required ':Ancestor' class to satisfy the 'hasFather' property constraint for 'Malgorzata_Izabella_Czartoryska'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Emperor_Charles_I_of_Austria, :Ancestor)
+      AssignClass(node='Adam_Ludwik_Czartoryski', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Robert_Archduke_of_Austria-Este is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasFather property of Prince_Lorenz_of_Belgium.
+      The node 'Maria_Theresia_Granow-Wodicka' is missing the required ':Ancestor' class to satisfy the 'hasMother' property constraint for 'Cecylia_Lubomirska'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Robert_Archduke_of_Austria-Este, :Ancestor)
+      AssignClass(node='Maria_Theresia_Granow-Wodicka', class=':Ancestor')
 
 
   Violation [13]:
-    SHACL message: More than 1 values on data:Prince_Lorenz_of_Belgium->:hasFather
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      Prince_Lorenz_of_Belgium has more than one hasFather relationship defined, but the schema allows only one.
+      The node 'Maria_Antonietta_of_Bourbon-Two_Sicilies' is missing the required ':Ancestor' class to satisfy the 'hasMother' property constraint for 'Gabriele_of_Bourbon-Two_Sicilies'.
     LLM-provided instruction on how to handle the violation:
-      RemoveTriple(Prince_Lorenz_of_Belgium, :hasFather, Emperor_Charles_I_of_Austria)
+      AssignClass(node='Maria_Antonietta_of_Bourbon-Two_Sicilies', class=':Ancestor')
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node King_Albert_II is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasFather property of Princess_Astrid_of_Belgium.
+      The node 'Maria_Ludwika_Krasinska' is missing the required ':Ancestor' class to satisfy the 'hasMother' property constraint for 'Malgorzata_Izabella_Czartoryska'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Albert_II, :Ancestor)
+      AssignClass(node='Maria_Ludwika_Krasinska', class=':Ancestor')
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Archduchess_Margaret is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasMother property of Prince_Lorenz_of_Belgium.
+      The node 'Adam_Ludwik_Czartoryski' is missing the required ':Ancestor' class to satisfy the 'hasFather' property constraint for 'Malgorzata_Izabella_Czartoryska'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Archduchess_Margaret, :Ancestor)
+      AssignClass(node='Adam_Ludwik_Czartoryski', class=':Ancestor')
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Paola is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasMother property of Princess_Astrid_of_Belgium.
+      The node 'Kasimierz_Lubomirski' is missing the required ':Ancestor' class to satisfy the 'hasFather' property constraint for 'Cecylia_Lubomirska'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Paola, :Ancestor)
+      AssignClass(node='Kasimierz_Lubomirski', class=':Ancestor')
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node King_Albert_II is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasFather property of Princess_Astrid_of_Belgium.
+      The node 'Maria_Ludwika_Krasinska' is missing the required ':Ancestor' class to satisfy the 'hasMother' property constraint for 'Malgorzata_Izabella_Czartoryska'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(King_Albert_II, :Ancestor)
+      AssignClass(node='Maria_Ludwika_Krasinska', class=':Ancestor')
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Queen_Paola is not assigned the required class :Ancestor, which is necessary to be a valid value for the hasMother property of Princess_Astrid_of_Belgium.
+      The node 'Maria_Theresia_Granow-Wodicka' is missing the required ':Ancestor' class to satisfy the 'hasMother' property constraint for 'Cecylia_Lubomirska'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Queen_Paola, :Ancestor)
+      AssignClass(node='Maria_Theresia_Granow-Wodicka', class=':Ancestor')
 
 
 
@@ -703,50 +946,36 @@ Violations:
 
 []
 Tool Calls:
-  RemoveTriple (13e38b7a-44ae-488d-addd-a664bfbdfb91)
- Call ID: 13e38b7a-44ae-488d-addd-a664bfbdfb91
-  Args:
-    source: Prince_Lorenz_of_Belgium
-    relation: :hasFather
-    target: Emperor_Charles_I_of_Austria
-  AssignClass (fb9b3f38-adca-4f8b-9903-acc2e30209a0)
- Call ID: fb9b3f38-adca-4f8b-9903-acc2e30209a0
-  Args:
-    source: Robert_Archduke_of_Austria-Este
-    type: :Ancestor
-  AssignClass (b053432f-9f70-4471-8e93-ebf7417851f0)
- Call ID: b053432f-9f70-4471-8e93-ebf7417851f0
+  AssignClass (d997414c-151f-41aa-b9c8-c10a2129fab8)
+ Call ID: d997414c-151f-41aa-b9c8-c10a2129fab8
   Args:
     type: :Ancestor
-    source: Archduchess_Margaret
-  AssignClass (ad3ee377-3823-4209-b3b9-475ab18e2223)
- Call ID: ad3ee377-3823-4209-b3b9-475ab18e2223
+    source: :Alfonso_Count_of_Caserta
+  AssignClass (84008ccc-28d5-4383-8844-8da0e29cd33f)
+ Call ID: 84008ccc-28d5-4383-8844-8da0e29cd33f
   Args:
     type: :Ancestor
-    source: King_Albert_II
-  AssignClass (93510c8d-e808-4181-a371-99ba4e5abff2)
- Call ID: 93510c8d-e808-4181-a371-99ba4e5abff2
+    source: :Maria_Antonietta_of_Bourbon-Two_Sicilies
+  AssignClass (ed8237ea-9610-4bef-9296-22bfdabdf61f)
+ Call ID: ed8237ea-9610-4bef-9296-22bfdabdf61f
+  Args:
+    source: :Adam_Ludwik_Czartoryski
+    type: :Ancestor
+  AssignClass (58e2941e-09f5-4cda-8f14-cf5e4c557326)
+ Call ID: 58e2941e-09f5-4cda-8f14-cf5e4c557326
   Args:
     type: :Ancestor
-    source: Queen_Paola
-  AddTriple (b716558e-55c2-4583-8eb8-34dd8ddb8c3d)
- Call ID: b716558e-55c2-4583-8eb8-34dd8ddb8c3d
+    source: :Maria_Ludwika_Krasinska
+  AssignClass (2da5f3ac-92ff-444a-bbf9-6820f76269be)
+ Call ID: 2da5f3ac-92ff-444a-bbf9-6820f76269be
   Args:
-    source: Prince_Lorenz_of_Belgium
-    relation: :hasAncestor
-    target: Emperor_Charles_I_of_Austria
-  AssignClass (81128c17-3a94-47e8-917a-2c8d2a10dcff)
- Call ID: 81128c17-3a94-47e8-917a-2c8d2a10dcff
-  Args:
-    source: Emperor_Charles_I_of_Austria
     type: :Ancestor
-  Finish (7729c941-8a41-4085-b354-0e760aa4d29d)
- Call ID: 7729c941-8a41-4085-b354-0e760aa4d29d
+    source: :Kasimierz_Lubomirski
+  AssignClass (fd0c96b4-92db-419b-87e8-a238a22a3395)
+ Call ID: fd0c96b4-92db-419b-87e8-a238a22a3395
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Maria_Theresia_Granow-Wodicka
+    type: :Ancestor
 
 ================================= Tool Message =================================
 
@@ -775,45 +1004,59 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Lorenz_of_Belgium a :Man ;
-      :hasAncestor data:Emperor_Charles_I_of_Austria ;
-      :hasBirthYear 1955 ;
-      :hasFather data:Robert_Archduke_of_Austria-Este ;
-      :hasMarriageYear 1984 ;
-      :hasMother data:Archduchess_Margaret ;
-      :hasRelation data:Princess_Astrid_of_Belgium .
+  data:Gabriele_of_Bourbon-Two_Sicilies a :Man,
+          :Person ;
+      :hasBirthYear 1897 ;
+      :hasDeathYear 1975 ;
+      :hasFather data:Alfonso_Count_of_Caserta ;
+      :hasMarriageYear 1927,
+          1932 ;
+      :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+      :hasRelation data:Cecylia_Lubomirska,
+          data:Malgorzata_Izabella_Czartoryska .
 
-  data:Archduchess_Margaret a :Ancestor,
+  data:Adam_Ludwik_Czartoryski a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Alfonso_Count_of_Caserta a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Cecylia_Lubomirska a :Person,
+          :Woman ;
+      :hasFather data:Kasimierz_Lubomirski ;
+      :hasMother data:Maria_Theresia_Granow-Wodicka .
+
+  data:Kasimierz_Lubomirski a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Malgorzata_Izabella_Czartoryska a :Person,
+          :Woman ;
+      :hasFather data:Adam_Ludwik_Czartoryski ;
+      :hasMother data:Maria_Ludwika_Krasinska .
+
+  data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Emperor_Charles_I_of_Austria a :Ancestor,
-          :Man .
-
-  data:King_Albert_II a :Ancestor,
-          :Man .
-
-  data:Princess_Astrid_of_Belgium a :Woman ;
-      :hasFather data:King_Albert_II ;
-      :hasMother data:Queen_Paola .
-
-  data:Queen_Paola a :Ancestor,
+  data:Maria_Ludwika_Krasinska a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Robert_Archduke_of_Austria-Este a :Ancestor,
-          :Man .
+  data:Maria_Theresia_Granow-Wodicka a :Ancestor,
+          :Person,
+          :Woman .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (f41d8c3f-8e22-495d-9202-1cf211cc1734)
- Call ID: f41d8c3f-8e22-495d-9202-1cf211cc1734
+  ValidateShacl (1f1ae3f3-3db2-48d0-9aac-be2e8c2cb5e7)
+ Call ID: 1f1ae3f3-3db2-48d0-9aac-be2e8c2cb5e7
   Args:
 
 ================================= Tool Message =================================
@@ -824,6 +1067,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (2b9a3f59-99ae-4811-8015-e505c2c128db)
- Call ID: 2b9a3f59-99ae-4811-8015-e505c2c128db
+  Finish (4d33db44-dd48-4288-b894-3a7f7894e405)
+ Call ID: 4d33db44-dd48-4288-b894-3a7f7894e405
   Args:

@@ -2,75 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Marie_Alexandra_of_Baden a :Person,
-        :Woman ;
-    :hasBirthYear 1902 ;
-    :hasDeathYear 1944 ;
-    :hasFather data:Maximilian_of_Baden ;
-    :hasMarriageYear 1924 ;
-    :hasMother data:Marie_Louise_of_Hanover_and_Cumberland ;
-    :hasRelation data:Wolfgang_of_Hesse ;
-    :hasSex data:Female .
-
-data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
-        :Man,
+data:Felipe_Juan_Froilan_de_Todos_los_Santos_de_Marichalar_y_Borbon a :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasBirthYear 1998 ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Infanta_Elena_Duchess_of_Lugo ;
+    :hasSister data:Victoria_de_Marichalar_y_Borbon ;
+    :knownAs "Froilán"^^xsd:string .
 
-data:Maria_Maximilianovna_of_Leuchtenberg a :Ancestor,
+data:Amalio_de_Marichalar_y_Bruguera a :Ancestor,
+        :Man,
+        :Person .
+
+data:Concepcion_Saenz_de_Tejada a :Ancestor,
+        :Person,
+        :Woman .
+
+data:King_Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person .
+
+data:Queen_Sofia_of_Spain a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Victoria_de_Marichalar_y_Borbon a :Person,
+        :Woman ;
+    :hasFather data:Jaime_de_Marichalar ;
+    :hasMother data:Infanta_Elena_Duchess_of_Lugo .
+
+data:Infanta_Elena_Duchess_of_Lugo a :Ancestor,
         :Person,
         :Woman ;
-    :hasBirthYear 1841 ;
-    :hasDeathYear 1914 ;
-    :hasFather data:Maximilian_Duke_of_Leuchtenberg ;
-    :hasMother data:Maria_Nikolaevna ;
-    :hasSex data:Female .
+    :hasFather data:King_Juan_Carlos_I ;
+    :hasMother data:Queen_Sofia_of_Spain .
 
-data:Maria_Nikolaevna a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1819 ;
-    :hasDeathYear 1876 ;
-    :hasSex data:Female .
-
-data:Marie_Louise_of_Hanover_and_Cumberland a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1879 ;
-    :hasDeathYear 1948 ;
-    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
-    :hasSex data:Female .
-
-data:Maximilian_Duke_of_Leuchtenberg a :Ancestor,
+data:Jaime_de_Marichalar a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear 1817 ;
-    :hasDeathYear 1852 ;
-    :hasSex data:Male .
-
-data:Maximilian_of_Baden a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1867 ;
-    :hasDeathYear 1929 ;
-    :hasFather data:Wilhelm_of_Baden ;
-    :hasMother data:Maria_Maximilianovna_of_Leuchtenberg ;
-    :hasSex data:Male .
-
-data:Wilhelm_of_Baden a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1829 ;
-    :hasDeathYear 1897 ;
-    :hasSex data:Male .
-
-data:Wolfgang_of_Hesse a :Man,
-        :Person ;
-    :hasBirthYear 1896 ;
-    :hasDeathYear 1989 ;
-    :hasSex data:Male .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+    :hasFather data:Amalio_de_Marichalar_y_Bruguera ;
+    :hasMother data:Concepcion_Saenz_de_Tejada .
 

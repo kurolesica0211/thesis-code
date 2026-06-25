@@ -1,0 +1,157 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Elisabeth_of_Stolberg-Rossla a :Person,
+        :Woman ;
+    :hasRelation data:Elisabeth_of_Stolberg-Rossla ;
+    :hasSister data:Elisabeth_of_Stolberg-Rossla ;
+    :isBloodrelationOf data:Elisabeth_of_Stolberg-Rossla ;
+    :isSiblingOf data:Elisabeth_of_Stolberg-Rossla ;
+    :isSisterOf data:Elisabeth_of_Stolberg-Rossla .
+
+data:Heinrich_XXVII a :Man ;
+    :hasBrother data:Heinrich_XXVII ;
+    :hasRelation data:Heinrich_XXVII ;
+    :isBloodrelationOf data:Heinrich_XXVII ;
+    :isBrotherOf data:Heinrich_XXVII ;
+    :isSiblingOf data:Heinrich_XXVII .
+
+data:Elise_of_Hohenlohe-Langenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :hasDaughter data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :hasRelation data:Elise_of_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Prince_Reuss_Younger_Line,
+        data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :hasSister data:Elise_of_Hohenlohe-Langenburg ;
+    :isAncestorOf data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :isAuntOf data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :isBloodrelationOf data:Elise_of_Hohenlohe-Langenburg ;
+    :isMotherOf data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :isParentOf data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :isSiblingOf data:Elise_of_Hohenlohe-Langenburg ;
+    :isSisterOf data:Elise_of_Hohenlohe-Langenburg .
+
+data:Heinrich_XXVII_Prince_Reuss_Younger_Line a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Heinrich_XXVII_Prince_Reuss_Younger_Line ;
+    :hasChild data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :hasDaughter data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :hasRelation data:Elise_of_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Prince_Reuss_Younger_Line,
+        data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :isAncestorOf data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :isBloodrelationOf data:Heinrich_XXVII_Prince_Reuss_Younger_Line ;
+    :isBrotherOf data:Heinrich_XXVII_Prince_Reuss_Younger_Line ;
+    :isFatherOf data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :isParentOf data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :isSiblingOf data:Heinrich_XXVII_Prince_Reuss_Younger_Line ;
+    :isUncleOf data:Viktoria_Feodora_of_Reuss-Schleiz .
+
+data:John_Albert a :Man,
+        :Person ;
+    :hasBrother data:Adolf_Friedrich,
+        data:John_Albert ;
+    :hasRelation data:Adolf_Friedrich,
+        data:Frederick_Francis_II,
+        data:John_Albert,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isBloodrelationOf data:Adolf_Friedrich,
+        data:John_Albert ;
+    :isBrotherOf data:Adolf_Friedrich,
+        data:John_Albert ;
+    :isSiblingOf data:Adolf_Friedrich,
+        data:John_Albert .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1823 ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Adolf_Friedrich ;
+    :hasDeathYear 1883 ;
+    :hasRelation data:Adolf_Friedrich,
+        data:Frederick_Francis_II,
+        data:John_Albert,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSon data:Adolf_Friedrich ;
+    :isAncestorOf data:Adolf_Friedrich ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isFatherOf data:Adolf_Friedrich ;
+    :isParentOf data:Adolf_Friedrich ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isUncleOf data:Adolf_Friedrich .
+
+data:Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Adolf_Friedrich ;
+    :hasRelation data:Adolf_Friedrich,
+        data:Frederick_Francis_II,
+        data:John_Albert,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSister data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSon data:Adolf_Friedrich ;
+    :isAncestorOf data:Adolf_Friedrich ;
+    :isAuntOf data:Adolf_Friedrich ;
+    :isBloodrelationOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isMotherOf data:Adolf_Friedrich ;
+    :isParentOf data:Adolf_Friedrich ;
+    :isSiblingOf data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isSisterOf data:Marie_of_Schwarzburg-Rudolstadt .
+
+data:Viktoria_Feodora_of_Reuss-Schleiz a :Person,
+        :Woman ;
+    :hasAncestor data:Elise_of_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Prince_Reuss_Younger_Line ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1918 ;
+    :hasFather data:Heinrich_XXVII_Prince_Reuss_Younger_Line ;
+    :hasMother data:Elise_of_Hohenlohe-Langenburg ;
+    :hasParent data:Elise_of_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Prince_Reuss_Younger_Line ;
+    :hasRelation data:Elise_of_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Prince_Reuss_Younger_Line,
+        data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :hasSister data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :isBloodrelationOf data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :isChildOf data:Elise_of_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Prince_Reuss_Younger_Line ;
+    :isDaughterOf data:Elise_of_Hohenlohe-Langenburg,
+        data:Heinrich_XXVII_Prince_Reuss_Younger_Line ;
+    :isSiblingOf data:Viktoria_Feodora_of_Reuss-Schleiz ;
+    :isSisterOf data:Viktoria_Feodora_of_Reuss-Schleiz .
+
+data:Adolf_Friedrich a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasBirthYear 1873 ;
+    :hasBrother data:Adolf_Friedrich,
+        data:John_Albert ;
+    :hasDeathYear 1969 ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMarriageYear 1917,
+        1924 ;
+    :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasParent data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Adolf_Friedrich,
+        data:Frederick_Francis_II,
+        data:John_Albert,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isBloodrelationOf data:Adolf_Friedrich,
+        data:John_Albert ;
+    :isBrotherOf data:Adolf_Friedrich,
+        data:John_Albert ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt ;
+    :isSiblingOf data:Adolf_Friedrich,
+        data:John_Albert ;
+    :isSonOf data:Frederick_Francis_II,
+        data:Marie_of_Schwarzburg-Rudolstadt .
+

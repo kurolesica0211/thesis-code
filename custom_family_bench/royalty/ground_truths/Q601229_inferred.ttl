@@ -1,0 +1,408 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Tatiana_Radziwiłł a :Person,
+        :Woman ;
+    rdfs:label "Tatiana Radziwiłł"^^xsd:string ;
+    data:posIndicesFull "4720:4737"^^xsd:string ;
+    data:wdtLink wdt:Q63205821 ;
+    :alsoKnownAs "Princess Tatania Marie Radziwill"^^xsd:string ;
+    :hasRelation data:Tatiana_Radziwiłł ;
+    :hasSex data:female ;
+    :hasSister data:Tatiana_Radziwiłł ;
+    :isBloodrelationOf data:Tatiana_Radziwiłł ;
+    :isSiblingOf data:Tatiana_Radziwiłł ;
+    :isSisterOf data:Tatiana_Radziwiłł .
+
+data:Marie_Bonaparte a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Marie Bonaparte"^^xsd:string ;
+    data:posIndicesFull "878:902"^^xsd:string,
+        "887:902"^^xsd:string ;
+    data:posIndicesPart "1031:1040"^^xsd:string,
+        "1045:1050"^^xsd:string,
+        "11003:11008"^^xsd:string,
+        "11187:11192"^^xsd:string ;
+    data:wdtLink wdt:Q115472 ;
+    :alsoKnownAs "Princess Marie Bonaparte"^^xsd:string ;
+    :hasChild data:Prince_Peter_of_Greece_and_Denmark ;
+    :hasRelation data:Marie_Bonaparte,
+        data:Prince_Peter_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Marie_Bonaparte ;
+    :hasSon data:Prince_Peter_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Peter_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Peter_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Marie_Bonaparte ;
+    :isMotherOf data:Prince_Peter_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Peter_of_Greece_and_Denmark ;
+    :isSiblingOf data:Marie_Bonaparte ;
+    :isSisterOf data:Marie_Bonaparte .
+
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Constantine I of Greece"^^xsd:string ;
+    data:posIndicesFull "2159:2177"^^xsd:string,
+        "2164:2177"^^xsd:string ;
+    data:posIndicesPart "10117:10128"^^xsd:string,
+        "10267:10278"^^xsd:string,
+        "10355:10361"^^xsd:string,
+        "10582:10593"^^xsd:string,
+        "11157:11168"^^xsd:string,
+        "11365:11376"^^xsd:string,
+        "11522:11533"^^xsd:string,
+        "11796:11802"^^xsd:string,
+        "12447:12453"^^xsd:string,
+        "2632:2638"^^xsd:string,
+        "5096:5102"^^xsd:string,
+        "5354:5360"^^xsd:string,
+        "5998:6004"^^xsd:string,
+        "6298:6304"^^xsd:string,
+        "6498:6504"^^xsd:string,
+        "7015:7021"^^xsd:string ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I"^^xsd:string,
+        "Constantine Oldenburg I"^^xsd:string,
+        "King Constantine I"^^xsd:string,
+        "King Constantine I of Greece"^^xsd:string,
+        "Konstantinos I of Greece"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Peter_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Prince_Peter_of_Greece_and_Denmark .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "937:960"^^xsd:string,
+        "942:950"^^xsd:string,
+        "942:960"^^xsd:string ;
+    data:posIndicesPart "10355:10361"^^xsd:string,
+        "1147:1153"^^xsd:string,
+        "11796:11802"^^xsd:string,
+        "12447:12453"^^xsd:string,
+        "1779:1785"^^xsd:string,
+        "2038:2044"^^xsd:string,
+        "2632:2638"^^xsd:string,
+        "4125:4131"^^xsd:string,
+        "4325:4331"^^xsd:string,
+        "4627:4633"^^xsd:string,
+        "5096:5102"^^xsd:string,
+        "5174:5180"^^xsd:string,
+        "5354:5360"^^xsd:string,
+        "5567:5573"^^xsd:string,
+        "5998:6004"^^xsd:string,
+        "6298:6304"^^xsd:string,
+        "6435:6441"^^xsd:string,
+        "6498:6504"^^xsd:string,
+        "6570:6576"^^xsd:string,
+        "6709:6715"^^xsd:string,
+        "7015:7021"^^xsd:string,
+        "9418:9424"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Peter_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Peter_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark .
+
+data:Prince_George_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince George of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "801:836"^^xsd:string ;
+    data:posIndicesPart "1017:1023"^^xsd:string,
+        "10355:10361"^^xsd:string,
+        "11012:11019"^^xsd:string,
+        "11035:11041"^^xsd:string,
+        "11435:11441"^^xsd:string,
+        "1147:1153"^^xsd:string,
+        "11743:11749"^^xsd:string,
+        "11796:11802"^^xsd:string,
+        "11972:11978"^^xsd:string,
+        "12113:12120"^^xsd:string,
+        "12142:12148"^^xsd:string,
+        "12306:12312"^^xsd:string,
+        "12447:12453"^^xsd:string,
+        "1297:1304"^^xsd:string,
+        "1394:1401"^^xsd:string,
+        "1569:1575"^^xsd:string,
+        "1588:1595"^^xsd:string,
+        "1779:1785"^^xsd:string,
+        "2038:2044"^^xsd:string,
+        "2049:2055"^^xsd:string,
+        "2301:2307"^^xsd:string,
+        "2400:2406"^^xsd:string,
+        "2632:2638"^^xsd:string,
+        "2727:2733"^^xsd:string,
+        "3311:3317"^^xsd:string,
+        "4022:4028"^^xsd:string,
+        "4118:4124"^^xsd:string,
+        "4125:4131"^^xsd:string,
+        "4325:4331"^^xsd:string,
+        "4552:4558"^^xsd:string,
+        "4620:4626"^^xsd:string,
+        "4627:4633"^^xsd:string,
+        "5096:5102"^^xsd:string,
+        "5174:5180"^^xsd:string,
+        "5354:5360"^^xsd:string,
+        "5567:5573"^^xsd:string,
+        "5578:5584"^^xsd:string,
+        "5998:6004"^^xsd:string,
+        "6058:6064"^^xsd:string,
+        "6298:6304"^^xsd:string,
+        "6402:6408"^^xsd:string,
+        "6435:6441"^^xsd:string,
+        "6498:6504"^^xsd:string,
+        "6570:6576"^^xsd:string,
+        "6662:6668"^^xsd:string,
+        "6709:6715"^^xsd:string,
+        "6808:6814"^^xsd:string,
+        "6912:6918"^^xsd:string,
+        "7015:7021"^^xsd:string,
+        "7023:7029"^^xsd:string,
+        "7095:7102"^^xsd:string,
+        "7124:7130"^^xsd:string,
+        "7335:7341"^^xsd:string,
+        "7350:7357"^^xsd:string,
+        "7366:7372"^^xsd:string,
+        "7512:7518"^^xsd:string,
+        "8129:8136"^^xsd:string,
+        "8353:8359"^^xsd:string,
+        "8661:8667"^^xsd:string,
+        "9191:9197"^^xsd:string,
+        "9418:9424"^^xsd:string,
+        "9585:9591"^^xsd:string,
+        "9894:9900"^^xsd:string,
+        "9966:9972"^^xsd:string ;
+    data:wdtLink wdt:Q170396 ;
+    :alsoKnownAs "Prince Georgios of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasChild data:Prince_Peter_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Peter_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Peter_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Peter_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isFatherOf data:Prince_Peter_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Peter_of_Greece_and_Denmark ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:Prince_Peter_of_Greece_and_Denmark .
+
+data:Prince_Peter_of_Greece_and_Denmark a :Man,
+        :Person ;
+    rdfs:label "Prince Peter of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "0:34"^^xsd:string ;
+    data:posIndicesPart "10053:10058"^^xsd:string,
+        "1017:1023"^^xsd:string,
+        "10225:10230"^^xsd:string,
+        "10355:10361"^^xsd:string,
+        "1064:1069"^^xsd:string,
+        "10804:10809"^^xsd:string,
+        "11012:11019"^^xsd:string,
+        "11035:11041"^^xsd:string,
+        "11042:11047"^^xsd:string,
+        "11290:11295"^^xsd:string,
+        "11435:11441"^^xsd:string,
+        "1147:1153"^^xsd:string,
+        "11651:11656"^^xsd:string,
+        "11743:11749"^^xsd:string,
+        "11750:11755"^^xsd:string,
+        "11796:11802"^^xsd:string,
+        "11883:11888"^^xsd:string,
+        "11972:11978"^^xsd:string,
+        "11979:11984"^^xsd:string,
+        "12113:12120"^^xsd:string,
+        "12142:12148"^^xsd:string,
+        "12149:12154"^^xsd:string,
+        "12306:12312"^^xsd:string,
+        "12313:12318"^^xsd:string,
+        "12447:12453"^^xsd:string,
+        "1297:1304"^^xsd:string,
+        "1394:1401"^^xsd:string,
+        "1569:1575"^^xsd:string,
+        "1588:1595"^^xsd:string,
+        "1691:1696"^^xsd:string,
+        "2049:2055"^^xsd:string,
+        "2056:2061"^^xsd:string,
+        "2301:2307"^^xsd:string,
+        "2308:2313"^^xsd:string,
+        "2400:2406"^^xsd:string,
+        "2424:2429"^^xsd:string,
+        "251:257"^^xsd:string,
+        "2533:2538"^^xsd:string,
+        "258:263"^^xsd:string,
+        "2632:2638"^^xsd:string,
+        "2727:2733"^^xsd:string,
+        "2734:2739"^^xsd:string,
+        "3017:3022"^^xsd:string,
+        "3043:3048"^^xsd:string,
+        "3311:3317"^^xsd:string,
+        "3318:3323"^^xsd:string,
+        "3471:3476"^^xsd:string,
+        "3546:3551"^^xsd:string,
+        "3653:3658"^^xsd:string,
+        "3787:3792"^^xsd:string,
+        "4022:4028"^^xsd:string,
+        "4118:4124"^^xsd:string,
+        "4226:4231"^^xsd:string,
+        "444:449"^^xsd:string,
+        "4474:4479"^^xsd:string,
+        "4552:4558"^^xsd:string,
+        "4559:4564"^^xsd:string,
+        "4620:4626"^^xsd:string,
+        "4654:4659"^^xsd:string,
+        "4781:4786"^^xsd:string,
+        "4935:4940"^^xsd:string,
+        "5059:5064"^^xsd:string,
+        "5096:5102"^^xsd:string,
+        "522:528"^^xsd:string,
+        "5331:5336"^^xsd:string,
+        "5354:5360"^^xsd:string,
+        "5378:5383"^^xsd:string,
+        "5461:5466"^^xsd:string,
+        "5578:5584"^^xsd:string,
+        "5680:5685"^^xsd:string,
+        "5839:5844"^^xsd:string,
+        "5918:5923"^^xsd:string,
+        "5998:6004"^^xsd:string,
+        "602:607"^^xsd:string,
+        "6043:6048"^^xsd:string,
+        "6058:6064"^^xsd:string,
+        "6065:6070"^^xsd:string,
+        "6298:6304"^^xsd:string,
+        "6402:6408"^^xsd:string,
+        "6409:6414"^^xsd:string,
+        "6498:6504"^^xsd:string,
+        "6662:6668"^^xsd:string,
+        "6686:6691"^^xsd:string,
+        "6808:6814"^^xsd:string,
+        "6815:6820"^^xsd:string,
+        "6912:6918"^^xsd:string,
+        "6945:6950"^^xsd:string,
+        "7015:7021"^^xsd:string,
+        "7023:7029"^^xsd:string,
+        "7030:7035"^^xsd:string,
+        "7095:7102"^^xsd:string,
+        "7104:7109"^^xsd:string,
+        "7124:7130"^^xsd:string,
+        "7335:7341"^^xsd:string,
+        "7350:7357"^^xsd:string,
+        "7366:7372"^^xsd:string,
+        "7402:7407"^^xsd:string,
+        "7512:7518"^^xsd:string,
+        "7519:7524"^^xsd:string,
+        "752:758"^^xsd:string,
+        "759:764"^^xsd:string,
+        "7645:7650"^^xsd:string,
+        "7871:7876"^^xsd:string,
+        "7918:7923"^^xsd:string,
+        "8129:8136"^^xsd:string,
+        "8266:8271"^^xsd:string,
+        "8353:8359"^^xsd:string,
+        "8487:8492"^^xsd:string,
+        "8537:8542"^^xsd:string,
+        "8661:8667"^^xsd:string,
+        "8839:8844"^^xsd:string,
+        "8916:8921"^^xsd:string,
+        "9191:9197"^^xsd:string,
+        "9328:9333"^^xsd:string,
+        "9585:9591"^^xsd:string,
+        "9592:9597"^^xsd:string,
+        "9894:9900"^^xsd:string,
+        "9901:9906"^^xsd:string,
+        "9966:9972"^^xsd:string ;
+    data:wdtLink wdt:Q601229 ;
+    :alsoKnownAs "Panayiotis zu Schleswig-Holstein-Sonderburg-Glücksburg, Prince of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece,
+        data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Peter_of_Greece_and_Denmark ;
+    :hasFather data:Prince_George_of_Greece_and_Denmark ;
+    :hasMother data:Marie_Bonaparte ;
+    :hasParent data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark,
+        data:Prince_Peter_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Peter_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Peter_of_Greece_and_Denmark ;
+    :isChildOf data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Peter_of_Greece_and_Denmark ;
+    :isSonOf data:Marie_Bonaparte,
+        data:Prince_George_of_Greece_and_Denmark .
+

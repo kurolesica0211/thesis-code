@@ -1,0 +1,237 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Isabelle_dOrléans_1 a :Person,
+        :Woman ;
+    rdfs:label "Princess Isabelle d’Orléans"^^xsd:string ;
+    data:posIndicesFull "313:331"^^xsd:string ;
+    data:posIndicesPart "1028:1036"^^xsd:string,
+        "1057:1065"^^xsd:string,
+        "1089:1097"^^xsd:string ;
+    data:wdtLink wdt:Q273237 ;
+    :alsoKnownAs "Isabelle Françoise Hélène Marie d'Orléans"^^xsd:string,
+        "Isabelle d’Orléans"^^xsd:string,
+        "Princess Isabelle Françoise Hélène Marie d'Orléans"^^xsd:string ;
+    :hasRelation data:Princess_Isabelle_dOrléans_1 ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Isabelle_dOrléans_1 ;
+    :isBloodrelationOf data:Princess_Isabelle_dOrléans_1 ;
+    :isSiblingOf data:Princess_Isabelle_dOrléans_1 ;
+    :isSisterOf data:Princess_Isabelle_dOrléans_1 .
+
+data:Carlos_I_of_Portugal a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Carlos I of Portugal"^^xsd:string ;
+    data:posIndicesFull "138:158"^^xsd:string ;
+    data:posIndicesPart "1137:1143"^^xsd:string,
+        "1274:1280"^^xsd:string,
+        "1349:1357"^^xsd:string,
+        "1670:1676"^^xsd:string,
+        "178:186"^^xsd:string,
+        "2090:2098"^^xsd:string,
+        "2310:2318"^^xsd:string,
+        "2454:2462"^^xsd:string,
+        "2504:2512"^^xsd:string,
+        "2852:2860"^^xsd:string,
+        "791:797"^^xsd:string,
+        "815:823"^^xsd:string,
+        "865:873"^^xsd:string,
+        "980:986"^^xsd:string ;
+    data:wdtLink wdt:Q158874 ;
+    :alsoKnownAs "Carlos I, King of Portugal"^^xsd:string,
+        "Carlos de Bragança"^^xsd:string,
+        "Carlos the Diplomat"^^xsd:string,
+        "Carlos the Martyr"^^xsd:string,
+        "King of Portugal Carlos Ferdinand-Louis-Marie-Francois d'Assise"^^xsd:string,
+        "King of Portugal Carlos I"^^xsd:string,
+        "King of Portugal Charles I"^^xsd:string ;
+    :hasBrother data:Carlos_I_of_Portugal ;
+    :hasChild data:Manuel_II_of_Portugal ;
+    :hasRelation data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal,
+        data:Manuel_II_of_Portugal,
+        data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:male ;
+    :hasSon data:Manuel_II_of_Portugal ;
+    :isAncestorOf data:Manuel_II_of_Portugal ;
+    :isBloodrelationOf data:Carlos_I_of_Portugal ;
+    :isBrotherOf data:Carlos_I_of_Portugal ;
+    :isFatherOf data:Manuel_II_of_Portugal ;
+    :isParentOf data:Manuel_II_of_Portugal ;
+    :isSiblingOf data:Carlos_I_of_Portugal ;
+    :isUncleOf data:Manuel_II_of_Portugal .
+
+data:Prince_Philippe-_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Philippe, Count of Paris"^^xsd:string ;
+    data:posIndicesFull "261:292"^^xsd:string ;
+    data:posIndicesPart "1763:1769"^^xsd:string,
+        "2020:2026"^^xsd:string,
+        "407:413"^^xsd:string,
+        "424:432"^^xsd:string,
+        "526:532"^^xsd:string,
+        "680:688"^^xsd:string,
+        "799:805"^^xsd:string ;
+    data:wdtLink wdt:Q354477 ;
+    :alsoKnownAs "Louis-Philippe Albert d'Orléans"^^xsd:string,
+        "Louis-Philippe-Albert d' Orléans"^^xsd:string ;
+    :hasBrother data:Prince_Philippe-_Count_of_Paris ;
+    :hasChild data:Amélie_of_Orléans ;
+    :hasDaughter data:Amélie_of_Orléans ;
+    :hasRelation data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal,
+        data:Manuel_II_of_Portugal,
+        data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:male ;
+    :isAncestorOf data:Amélie_of_Orléans,
+        data:Manuel_II_of_Portugal ;
+    :isBloodrelationOf data:Prince_Philippe-_Count_of_Paris ;
+    :isBrotherOf data:Prince_Philippe-_Count_of_Paris ;
+    :isFatherOf data:Amélie_of_Orléans ;
+    :isParentOf data:Amélie_of_Orléans ;
+    :isSiblingOf data:Prince_Philippe-_Count_of_Paris ;
+    :isUncleOf data:Amélie_of_Orléans .
+
+data:Princess_María_Isabel_of_Orléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess María Isabel of Orléans"^^xsd:string ;
+    data:posIndicesFull "307:321"^^xsd:string ;
+    data:posIndicesPart "1028:1036"^^xsd:string,
+        "1057:1065"^^xsd:string,
+        "1089:1097"^^xsd:string,
+        "442:449"^^xsd:string,
+        "617:624"^^xsd:string ;
+    data:wdtLink wdt:Q242879 ;
+    :alsoKnownAs "Infanta Maria Isabel of Orléans"^^xsd:string,
+        "Maria Isabella"^^xsd:string,
+        "Princess Maria Isabel of Orléans, Infanta of Spain"^^xsd:string,
+        "Princess Marie Isabelle of Orleans"^^xsd:string ;
+    :hasChild data:Amélie_of_Orléans ;
+    :hasDaughter data:Amélie_of_Orléans ;
+    :hasRelation data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal,
+        data:Manuel_II_of_Portugal,
+        data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_María_Isabel_of_Orléans ;
+    :isAncestorOf data:Amélie_of_Orléans,
+        data:Manuel_II_of_Portugal ;
+    :isAuntOf data:Amélie_of_Orléans ;
+    :isBloodrelationOf data:Princess_María_Isabel_of_Orléans ;
+    :isMotherOf data:Amélie_of_Orléans ;
+    :isParentOf data:Amélie_of_Orléans ;
+    :isSiblingOf data:Princess_María_Isabel_of_Orléans ;
+    :isSisterOf data:Princess_María_Isabel_of_Orléans .
+
+data:Manuel_II_of_Portugal a :Man,
+        :Person ;
+    rdfs:label "Manuel II of Portugal"^^xsd:string ;
+    data:posIndicesFull "1935:1944"^^xsd:string,
+        "2134:2143"^^xsd:string ;
+    data:posIndicesPart "2061:2067"^^xsd:string,
+        "2090:2098"^^xsd:string,
+        "2310:2318"^^xsd:string,
+        "2454:2462"^^xsd:string,
+        "2504:2512"^^xsd:string,
+        "2852:2860"^^xsd:string ;
+    data:wdtLink wdt:Q154308 ;
+    :alsoKnownAs "Manuel II"^^xsd:string,
+        "Manuel the Patriot"^^xsd:string,
+        "Manuel the Unfortunate"^^xsd:string ;
+    :hasAncestor data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal,
+        data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasBrother data:Manuel_II_of_Portugal ;
+    :hasFather data:Carlos_I_of_Portugal ;
+    :hasMother data:Amélie_of_Orléans ;
+    :hasParent data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal ;
+    :hasRelation data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal,
+        data:Manuel_II_of_Portugal,
+        data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Manuel_II_of_Portugal ;
+    :isBrotherOf data:Manuel_II_of_Portugal ;
+    :isChildOf data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal ;
+    :isSiblingOf data:Manuel_II_of_Portugal ;
+    :isSonOf data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal .
+
+data:Amélie_of_Orléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Amélie of Orléans"^^xsd:string ;
+    data:posIndicesFull "0:17"^^xsd:string,
+        "27:39"^^xsd:string,
+        "706:718"^^xsd:string ;
+    data:posIndicesPart "1126:1132"^^xsd:string,
+        "1310:1316"^^xsd:string,
+        "1359:1365"^^xsd:string,
+        "1596:1602"^^xsd:string,
+        "1856:1862"^^xsd:string,
+        "2298:2304"^^xsd:string,
+        "2572:2578"^^xsd:string,
+        "352:359"^^xsd:string,
+        "371:377"^^xsd:string,
+        "442:449"^^xsd:string,
+        "776:782"^^xsd:string ;
+    data:wdtLink wdt:Q236965 ;
+    :alsoKnownAs "Amelie of Orleans"^^xsd:string,
+        "Maria Amélia"^^xsd:string,
+        "Marie Amelie d'Orleans"^^xsd:string,
+        "Marie Amelie of Orleans"^^xsd:string,
+        "Marie Amélie d'Orléans"^^xsd:string,
+        "Marie Amélie of Orléans"^^xsd:string ;
+    :hasAncestor data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasChild data:Manuel_II_of_Portugal ;
+    :hasFather data:Prince_Philippe-_Count_of_Paris ;
+    :hasMother data:Princess_María_Isabel_of_Orléans ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasRelation data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal,
+        data:Manuel_II_of_Portugal,
+        data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Amélie_of_Orléans ;
+    :hasSon data:Manuel_II_of_Portugal ;
+    :isAncestorOf data:Manuel_II_of_Portugal ;
+    :isAuntOf data:Manuel_II_of_Portugal ;
+    :isBloodrelationOf data:Amélie_of_Orléans ;
+    :isChildOf data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :isDaughterOf data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :isMotherOf data:Manuel_II_of_Portugal ;
+    :isParentOf data:Manuel_II_of_Portugal ;
+    :isSiblingOf data:Amélie_of_Orléans ;
+    :isSisterOf data:Amélie_of_Orléans .
+

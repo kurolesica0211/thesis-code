@@ -7,10 +7,28 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Henrik-_Prince_Consort_of_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Countess_Athena_of_Monpezat a :Person ;
+    rdfs:label "Countess Athena of Monpezat" ;
+    data:posIndicesFull "1578:1604",
+        "1578:1626",
+        "1858:1885",
+        "21:48" ;
+    data:posIndicesPart "1376:1382",
+        "345:351",
+        "430:436",
+        "889:895" ;
+    data:wdtLink wdt:Q2036974 ;
+    :alsoKnownAs "Athena Marguerite Francoise Marie of Monpezat",
+        "Athena Marguerite Francoise Marie, Princess of Denmark",
+        "Countess Athena Marguerite Francoise Marie of Monpezat",
+        "Princess Athena Marguerite Francoise Marie of Denmark",
+        "Princess Athena Marguerite Francoise Marie of Denmark, Countess of Monpezat",
+        "Princess Athena of Denmark",
+        "Princess Athena of Denmark, Countess of Monpezat" ;
+    :hasParent data:Princess_Marie_of_Denmark ;
+    :hasSex data:female .
+
+data:Henrik-_Prince_Consort_of_Denmark a :Person ;
     rdfs:label "Henrik, Prince Consort of Denmark" ;
     data:posIndicesFull "1354:1360",
         "303:309",
@@ -29,10 +47,7 @@ data:Henrik-_Prince_Consort_of_Denmark a :Ancestor,
         "Prince Henrik of Denmark" ;
     :hasSex data:male .
 
-data:Margrethe_II_of_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Margrethe_II_of_Denmark a :Person ;
     rdfs:label "Margrethe II of Denmark" ;
     data:posIndicesFull "1686:1698",
         "279:291",
@@ -49,36 +64,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Countess_Athena_of_Monpezat a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Countess Athena of Monpezat" ;
-    data:posIndicesFull "1578:1604",
-        "1578:1626",
-        "1858:1885",
-        "21:48" ;
-    data:posIndicesPart "1376:1382",
-        "345:351",
-        "430:436",
-        "889:895" ;
-    data:wdtLink wdt:Q2036974 ;
-    :alsoKnownAs "Athena Marguerite Francoise Marie of Monpezat",
-        "Athena Marguerite Francoise Marie, Princess of Denmark",
-        "Countess Athena Marguerite Francoise Marie of Monpezat",
-        "Princess Athena Marguerite Francoise Marie of Denmark",
-        "Princess Athena Marguerite Francoise Marie of Denmark, Countess of Monpezat",
-        "Princess Athena of Denmark",
-        "Princess Athena of Denmark, Countess of Monpezat" ;
-    :hasMother data:Princess_Marie_of_Denmark ;
-    :hasParent data:Princess_Marie_of_Denmark ;
-    :hasSex data:female ;
-    :isChildOf data:Princess_Marie_of_Denmark ;
-    :isDaughterOf data:Princess_Marie_of_Denmark .
-
-data:Princess_Marie_of_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Marie_of_Denmark a :Person ;
     rdfs:label "Princess Marie of Denmark" ;
     data:posIndicesFull "212:237" ;
     data:posIndicesPart "1741:1749",
@@ -92,9 +78,9 @@ data:Princess_Marie_of_Denmark a :Ancestor,
         "Princess Marie Agathe Odile of Denmark",
         "Princess Marie of Denmark, Countess of Monpezat",
         "Princess Marie, Countess of Monpezat" ;
-    :hasChild data:Countess_Athena_of_Monpezat ;
-    :hasDaughter data:Countess_Athena_of_Monpezat ;
-    :hasSex data:female ;
-    :isMotherOf data:Countess_Athena_of_Monpezat ;
-    :isParentOf data:Countess_Athena_of_Monpezat .
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

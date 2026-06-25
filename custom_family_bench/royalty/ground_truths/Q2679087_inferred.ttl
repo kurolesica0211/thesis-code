@@ -1,0 +1,103 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Archduchess Maria Cristina, Hereditary Grand Duchess of Tuscany"^^xsd:string ;
+    data:posIndicesFull "2115:2162"^^xsd:string ;
+    data:posIndicesPart "2711:2716"^^xsd:string,
+        "2725:2732"^^xsd:string,
+        "2814:2819"^^xsd:string,
+        "2828:2835"^^xsd:string ;
+    data:wdtLink wdt:Q450684 ;
+    :alsoKnownAs "Princess Maria Cristina of Bourbon-Two Sicilies"^^xsd:string ;
+    :hasChild data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :hasRelation data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany,
+        data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :hasSex data:female ;
+    :hasSister data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasSon data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isAncestorOf data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isAuntOf data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isBloodrelationOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isMotherOf data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isParentOf data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isSiblingOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isSisterOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany .
+
+data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany a :Man,
+        :Person ;
+    rdfs:label "Archduke Gottfried of Austria, Hereditary Grand Duke of Tuscany"^^xsd:string ;
+    data:posIndicesFull "0:29"^^xsd:string ;
+    data:posIndicesPart "1012:1017"^^xsd:string,
+        "1018:1022"^^xsd:string,
+        "1048:1055"^^xsd:string,
+        "1137:1142"^^xsd:string,
+        "1143:1147"^^xsd:string,
+        "1151:1158"^^xsd:string,
+        "1274:1279"^^xsd:string,
+        "1289:1296"^^xsd:string,
+        "1342:1347"^^xsd:string,
+        "1348:1352"^^xsd:string,
+        "1356:1363"^^xsd:string,
+        "1534:1539"^^xsd:string,
+        "1540:1544"^^xsd:string,
+        "1548:1555"^^xsd:string,
+        "1663:1668"^^xsd:string,
+        "1749:1754"^^xsd:string,
+        "1878:1885"^^xsd:string,
+        "1992:2001"^^xsd:string,
+        "2020:2027"^^xsd:string,
+        "2066:2074"^^xsd:string,
+        "2094:2101"^^xsd:string,
+        "2164:2173"^^xsd:string,
+        "2341:2350"^^xsd:string,
+        "2711:2716"^^xsd:string,
+        "2717:2721"^^xsd:string,
+        "2725:2732"^^xsd:string,
+        "2814:2819"^^xsd:string,
+        "2820:2824"^^xsd:string,
+        "2828:2835"^^xsd:string,
+        "2904:2913"^^xsd:string,
+        "432:437"^^xsd:string,
+        "438:442"^^xsd:string,
+        "446:453"^^xsd:string,
+        "525:532"^^xsd:string,
+        "748:755"^^xsd:string,
+        "793:800"^^xsd:string,
+        "806:811"^^xsd:string,
+        "917:922"^^xsd:string,
+        "923:927"^^xsd:string ;
+    data:wdtLink wdt:Q2679087 ;
+    :alsoKnownAs "Archduke Gottfried of Austria"^^xsd:string,
+        "Archduke Gottfried of Austria-Tuscany"^^xsd:string ;
+    :hasAncestor data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasBrother data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :hasMother data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasParent data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :hasRelation data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany,
+        data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isBrotherOf data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isChildOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
+    :isSiblingOf data:Archduke_Gottfried_of_Austria-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isSonOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany .
+

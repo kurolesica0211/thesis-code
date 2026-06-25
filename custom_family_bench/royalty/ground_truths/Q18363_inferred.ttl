@@ -1,0 +1,398 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Alfonso_XII_of_Spain a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alfonso XII of Spain"^^xsd:string ;
+    data:posIndicesFull "2150:2161"^^xsd:string,
+        "2150:2170"^^xsd:string,
+        "438:449"^^xsd:string ;
+    data:posIndicesPart "10120:10127"^^xsd:string,
+        "10540:10547"^^xsd:string,
+        "10782:10787"^^xsd:string,
+        "10806:10813"^^xsd:string,
+        "10872:10877"^^xsd:string,
+        "11276:11283"^^xsd:string,
+        "11406:11411"^^xsd:string,
+        "11818:11823"^^xsd:string,
+        "11833:11840"^^xsd:string,
+        "11870:11875"^^xsd:string,
+        "11978:11983"^^xsd:string,
+        "12766:12771"^^xsd:string,
+        "13059:13066"^^xsd:string,
+        "13148:13155"^^xsd:string,
+        "13261:13268"^^xsd:string,
+        "13354:13361"^^xsd:string,
+        "13648:13655"^^xsd:string,
+        "13712:13719"^^xsd:string,
+        "13927:13934"^^xsd:string,
+        "14098:14105"^^xsd:string,
+        "14462:14469"^^xsd:string,
+        "14688:14695"^^xsd:string,
+        "14744:14751"^^xsd:string,
+        "1772:1777"^^xsd:string,
+        "2355:2360"^^xsd:string,
+        "2495:2502"^^xsd:string,
+        "2560:2567"^^xsd:string,
+        "2689:2694"^^xsd:string,
+        "2696:2703"^^xsd:string,
+        "2877:2884"^^xsd:string,
+        "3069:3076"^^xsd:string,
+        "3467:3474"^^xsd:string,
+        "3953:3960"^^xsd:string,
+        "4056:4063"^^xsd:string,
+        "4345:4352"^^xsd:string,
+        "4530:4537"^^xsd:string,
+        "4563:4570"^^xsd:string,
+        "4769:4774"^^xsd:string,
+        "4793:4800"^^xsd:string,
+        "479:486"^^xsd:string,
+        "4971:4976"^^xsd:string,
+        "5111:5116"^^xsd:string,
+        "5172:5179"^^xsd:string,
+        "5229:5234"^^xsd:string,
+        "5471:5476"^^xsd:string,
+        "5624:5629"^^xsd:string,
+        "5837:5844"^^xsd:string,
+        "5874:5881"^^xsd:string,
+        "5988:5993"^^xsd:string,
+        "6082:6089"^^xsd:string,
+        "6275:6282"^^xsd:string,
+        "6522:6527"^^xsd:string,
+        "6545:6552"^^xsd:string,
+        "6693:6700"^^xsd:string,
+        "6810:6817"^^xsd:string,
+        "6859:6864"^^xsd:string,
+        "7091:7096"^^xsd:string,
+        "7522:7529"^^xsd:string,
+        "9379:9386"^^xsd:string,
+        "9677:9684"^^xsd:string ;
+    data:wdtLink wdt:Q32347 ;
+    :alsoKnownAs "Alfonso XII"^^xsd:string ;
+    :hasBrother data:Alfonso_XII_of_Spain ;
+    :hasChild data:Alfonso_XIII ;
+    :hasRelation data:Alfonso-_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSon data:Alfonso_XIII ;
+    :isAncestorOf data:Alfonso-_Prince_of_Asturias,
+        data:Alfonso_XIII ;
+    :isBloodrelationOf data:Alfonso_XII_of_Spain ;
+    :isBrotherOf data:Alfonso_XII_of_Spain ;
+    :isFatherOf data:Alfonso_XIII ;
+    :isParentOf data:Alfonso_XIII ;
+    :isSiblingOf data:Alfonso_XII_of_Spain ;
+    :isUncleOf data:Alfonso_XIII .
+
+data:Maria_Christina_of_Austria a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Maria Christina of Austria"^^xsd:string ;
+    data:posIndicesFull "2247:2273"^^xsd:string,
+        "497:523"^^xsd:string ;
+    data:posIndicesPart "11542:11547"^^xsd:string,
+        "11613:11618"^^xsd:string,
+        "3484:3489"^^xsd:string,
+        "3490:3499"^^xsd:string,
+        "3768:3773"^^xsd:string,
+        "3774:3783"^^xsd:string,
+        "3933:3938"^^xsd:string,
+        "3939:3948"^^xsd:string ;
+    data:wdtLink wdt:Q538125 ;
+    :alsoKnownAs "Archduchess Maria Christina Henriette Desideria Felicitas Raineria of Austria"^^xsd:string,
+        "Maria Cristina de Habsburgo"^^xsd:string,
+        "María Cristina de Borbón"^^xsd:string ;
+    :hasChild data:Alfonso_XIII ;
+    :hasRelation data:Alfonso-_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Maria_Christina_of_Austria ;
+    :hasSon data:Alfonso_XIII ;
+    :isAncestorOf data:Alfonso-_Prince_of_Asturias,
+        data:Alfonso_XIII ;
+    :isAuntOf data:Alfonso_XIII ;
+    :isBloodrelationOf data:Maria_Christina_of_Austria ;
+    :isMotherOf data:Alfonso_XIII ;
+    :isParentOf data:Alfonso_XIII ;
+    :isSiblingOf data:Maria_Christina_of_Austria ;
+    :isSisterOf data:Maria_Christina_of_Austria .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Beatrice of the United Kingdom"^^xsd:string ;
+    data:posIndicesFull "3212:3229"^^xsd:string,
+        "3881:3898"^^xsd:string ;
+    data:posIndicesPart "3599:3607"^^xsd:string,
+        "4235:4243"^^xsd:string ;
+    data:wdtLink wdt:Q158140 ;
+    :alsoKnownAs "Beatrice Mary Victoria Feodore"^^xsd:string,
+        "Princess Beatrice"^^xsd:string,
+        "Princess Beatrice Mary Victoria Feodore of the United Kingdom"^^xsd:string,
+        "Princess Beatrice of Battenberg"^^xsd:string,
+        "Princess Henry of Battenberg"^^xsd:string,
+        "The Princess Beatrice"^^xsd:string ;
+    :hasChild data:Victoria_Eugenie_of_Battenberg ;
+    :hasDaughter data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso-_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isAncestorOf data:Alfonso-_Prince_of_Asturias,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isAuntOf data:Victoria_Eugenie_of_Battenberg ;
+    :isBloodrelationOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isMotherOf data:Victoria_Eugenie_of_Battenberg ;
+    :isParentOf data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isSisterOf data:Princess_Beatrice_of_the_United_Kingdom .
+
+data:Victoria_Eugenie_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Victoria Eugenie of Battenberg"^^xsd:string ;
+    data:posIndicesFull "13080:13119"^^xsd:string,
+        "13089:13119"^^xsd:string,
+        "13121:13124"^^xsd:string,
+        "3126:3165"^^xsd:string,
+        "3135:3165"^^xsd:string,
+        "754:793"^^xsd:string,
+        "763:793"^^xsd:string ;
+    data:posIndicesPart "3270:3278"^^xsd:string,
+        "3334:3342"^^xsd:string,
+        "3421:3429"^^xsd:string,
+        "3663:3671"^^xsd:string,
+        "3920:3928"^^xsd:string,
+        "4068:4076"^^xsd:string,
+        "4201:4209"^^xsd:string,
+        "4357:4365"^^xsd:string,
+        "4482:4490"^^xsd:string,
+        "5053:5061"^^xsd:string,
+        "5062:5069"^^xsd:string ;
+    data:wdtLink wdt:Q160001 ;
+    :alsoKnownAs "Ena"^^xsd:string,
+        "Princess Ena"^^xsd:string,
+        "Princess Victoria Eugenie of Battenberg"^^xsd:string,
+        "Queen Victoria Eugenie of Spain"^^xsd:string,
+        "Victoria Eugenie Julia Ena of Battenberg"^^xsd:string,
+        "Victoria Eugenie, Queen of Spain"^^xsd:string ;
+    :hasAncestor data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasChild data:Alfonso-_Prince_of_Asturias ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasParent data:Princess_Beatrice_of_the_United_Kingdom ;
+    :hasRelation data:Alfonso-_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Victoria_Eugenie_of_Battenberg ;
+    :hasSon data:Alfonso-_Prince_of_Asturias ;
+    :isAncestorOf data:Alfonso-_Prince_of_Asturias ;
+    :isAuntOf data:Alfonso-_Prince_of_Asturias ;
+    :isBloodrelationOf data:Victoria_Eugenie_of_Battenberg ;
+    :isChildOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isDaughterOf data:Princess_Beatrice_of_the_United_Kingdom ;
+    :isMotherOf data:Alfonso-_Prince_of_Asturias ;
+    :isParentOf data:Alfonso-_Prince_of_Asturias ;
+    :isSiblingOf data:Victoria_Eugenie_of_Battenberg ;
+    :isSisterOf data:Victoria_Eugenie_of_Battenberg .
+
+data:Alfonso-_Prince_of_Asturias a :Man,
+        :Person ;
+    rdfs:label "Alfonso, Prince of Asturias"^^xsd:string ;
+    data:posIndicesFull "4443:4470"^^xsd:string ;
+    data:posIndicesPart "10120:10127"^^xsd:string,
+        "10540:10547"^^xsd:string,
+        "10806:10813"^^xsd:string,
+        "11276:11283"^^xsd:string,
+        "11833:11840"^^xsd:string,
+        "13059:13066"^^xsd:string,
+        "13148:13155"^^xsd:string,
+        "13261:13268"^^xsd:string,
+        "13354:13361"^^xsd:string,
+        "13648:13655"^^xsd:string,
+        "13712:13719"^^xsd:string,
+        "13927:13934"^^xsd:string,
+        "14098:14105"^^xsd:string,
+        "14462:14469"^^xsd:string,
+        "14688:14695"^^xsd:string,
+        "14744:14751"^^xsd:string,
+        "4530:4537"^^xsd:string,
+        "4563:4570"^^xsd:string,
+        "4793:4800"^^xsd:string,
+        "5172:5179"^^xsd:string,
+        "5837:5844"^^xsd:string,
+        "5874:5881"^^xsd:string,
+        "6082:6089"^^xsd:string,
+        "6275:6282"^^xsd:string,
+        "6545:6552"^^xsd:string,
+        "6693:6700"^^xsd:string,
+        "6810:6817"^^xsd:string,
+        "7522:7529"^^xsd:string,
+        "9379:9386"^^xsd:string,
+        "9677:9684"^^xsd:string ;
+    data:wdtLink wdt:Q518846 ;
+    :alsoKnownAs "Alfons de Borbo i de Battenberg"^^xsd:string,
+        "Alfons de Borbó i de Battenberg"^^xsd:string,
+        "Alfonso Pius de Borbón y Battenberg, Infante de España"^^xsd:string,
+        "Alfonso de Borbon y Battenberg"^^xsd:string,
+        "Alfonso de Borbón y Battenberg"^^xsd:string,
+        "Alfonso, Count of Covadonga"^^xsd:string,
+        "Alphonse de Bourbon"^^xsd:string,
+        "Infante Alfonso, Count of Covadonga"^^xsd:string ;
+    :hasAncestor data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasBrother data:Alfonso-_Prince_of_Asturias ;
+    :hasFather data:Alfonso_XIII ;
+    :hasMother data:Victoria_Eugenie_of_Battenberg ;
+    :hasParent data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasRelation data:Alfonso-_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Alfonso-_Prince_of_Asturias ;
+    :isBrotherOf data:Alfonso-_Prince_of_Asturias ;
+    :isChildOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Alfonso-_Prince_of_Asturias ;
+    :isSonOf data:Alfonso_XIII,
+        data:Victoria_Eugenie_of_Battenberg .
+
+data:Alfonso_XIII a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alfonso XIII"^^xsd:string ;
+    data:posIndicesFull "0:12"^^xsd:string,
+        "11320:11332"^^xsd:string,
+        "12057:12069"^^xsd:string,
+        "12200:12212"^^xsd:string,
+        "12356:12368"^^xsd:string,
+        "12493:12505"^^xsd:string,
+        "12794:12806"^^xsd:string,
+        "1579:1591"^^xsd:string,
+        "2053:2065"^^xsd:string,
+        "2150:2161"^^xsd:string,
+        "2150:2170"^^xsd:string,
+        "253:264"^^xsd:string,
+        "438:449"^^xsd:string,
+        "5859:5870"^^xsd:string,
+        "606:618"^^xsd:string,
+        "7341:7353"^^xsd:string,
+        "7747:7759"^^xsd:string,
+        "7955:7967"^^xsd:string,
+        "8044:8056"^^xsd:string,
+        "8265:8277"^^xsd:string,
+        "8417:8429"^^xsd:string,
+        "973:985"^^xsd:string ;
+    data:posIndicesPart "10120:10127"^^xsd:string,
+        "10540:10547"^^xsd:string,
+        "10806:10813"^^xsd:string,
+        "11276:11283"^^xsd:string,
+        "11833:11840"^^xsd:string,
+        "13059:13066"^^xsd:string,
+        "13148:13155"^^xsd:string,
+        "13261:13268"^^xsd:string,
+        "13354:13361"^^xsd:string,
+        "13648:13655"^^xsd:string,
+        "13712:13719"^^xsd:string,
+        "13927:13934"^^xsd:string,
+        "14098:14105"^^xsd:string,
+        "14462:14469"^^xsd:string,
+        "14688:14695"^^xsd:string,
+        "14744:14751"^^xsd:string,
+        "2495:2502"^^xsd:string,
+        "2560:2567"^^xsd:string,
+        "2696:2703"^^xsd:string,
+        "2877:2884"^^xsd:string,
+        "3069:3076"^^xsd:string,
+        "3467:3474"^^xsd:string,
+        "3953:3960"^^xsd:string,
+        "4056:4063"^^xsd:string,
+        "4345:4352"^^xsd:string,
+        "4530:4537"^^xsd:string,
+        "4563:4570"^^xsd:string,
+        "4793:4800"^^xsd:string,
+        "479:486"^^xsd:string,
+        "5172:5179"^^xsd:string,
+        "5874:5881"^^xsd:string,
+        "6082:6089"^^xsd:string,
+        "6275:6282"^^xsd:string,
+        "6545:6552"^^xsd:string,
+        "6693:6700"^^xsd:string,
+        "6810:6817"^^xsd:string,
+        "7522:7529"^^xsd:string,
+        "9379:9386"^^xsd:string,
+        "9677:9684"^^xsd:string ;
+    data:wdtLink wdt:Q18363 ;
+    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena"^^xsd:string,
+        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena"^^xsd:string,
+        "Alfonso XIII of Spain"^^xsd:string,
+        "Don Alfonso de Borbon y Habsburgo"^^xsd:string,
+        "Don Alfonso de Borbón y Habsburgo"^^xsd:string,
+        "The African"^^xsd:string ;
+    :hasAncestor data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasBrother data:Alfonso_XIII ;
+    :hasChild data:Alfonso-_Prince_of_Asturias ;
+    :hasFather data:Alfonso_XII_of_Spain ;
+    :hasMother data:Maria_Christina_of_Austria ;
+    :hasParent data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :hasRelation data:Alfonso-_Prince_of_Asturias,
+        data:Alfonso_XIII,
+        data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria,
+        data:Princess_Beatrice_of_the_United_Kingdom,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSon data:Alfonso-_Prince_of_Asturias ;
+    :isAncestorOf data:Alfonso-_Prince_of_Asturias ;
+    :isBloodrelationOf data:Alfonso_XIII ;
+    :isBrotherOf data:Alfonso_XIII ;
+    :isChildOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isFatherOf data:Alfonso-_Prince_of_Asturias ;
+    :isParentOf data:Alfonso-_Prince_of_Asturias ;
+    :isSiblingOf data:Alfonso_XIII ;
+    :isSonOf data:Alfonso_XII_of_Spain,
+        data:Maria_Christina_of_Austria ;
+    :isUncleOf data:Alfonso-_Prince_of_Asturias .
+

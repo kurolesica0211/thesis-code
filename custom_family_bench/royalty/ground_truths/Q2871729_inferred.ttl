@@ -1,0 +1,387 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "876:891"^^xsd:string,
+        "892:908"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasRelation data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isBloodrelationOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:female a :Female .
+
+data:Thomas_Anson-_Viscount_Anson a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Thomas Anson, Viscount Anson"^^xsd:string ;
+    data:posIndicesFull "296:324"^^xsd:string ;
+    data:posIndicesPart "1276:1282"^^xsd:string,
+        "1298:1303"^^xsd:string,
+        "1376:1384"^^xsd:string,
+        "1385:1390"^^xsd:string,
+        "1420:1425"^^xsd:string,
+        "1505:1510"^^xsd:string ;
+    data:wdtLink wdt:Q75390868 ;
+    :alsoKnownAs "Thomas William Arnold Anson, Viscount Anson"^^xsd:string ;
+    :hasBrother data:Thomas_Anson-_Viscount_Anson ;
+    :hasChild data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :hasDaughter data:Lady_Elizabeth_Shakerley ;
+    :hasRelation data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasSex data:male ;
+    :hasSon data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isAncestorOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Thomas_Anson-_Viscount_Anson ;
+    :isBrotherOf data:Thomas_Anson-_Viscount_Anson ;
+    :isFatherOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isParentOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isSiblingOf data:Thomas_Anson-_Viscount_Anson ;
+    :isUncleOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield .
+
+data:Thomas_Anson-_6th_Earl_of_Lichfield a :Man,
+        :Person ;
+    rdfs:label "Thomas Anson, 6th Earl of Lichfield"^^xsd:string ;
+    data:posIndicesFull "296:308"^^xsd:string ;
+    data:posIndicesPart "1276:1282"^^xsd:string,
+        "1298:1303"^^xsd:string,
+        "1385:1390"^^xsd:string,
+        "1420:1425"^^xsd:string,
+        "1505:1510"^^xsd:string,
+        "823:827"^^xsd:string ;
+    data:wdtLink wdt:Q10382174 ;
+    :alsoKnownAs "Thomas Anson"^^xsd:string,
+        "Thomas William Robert Hugh Anson"^^xsd:string,
+        "Thomas William Robert Hugh Anson, 6th Earl of Lichfield"^^xsd:string ;
+    :hasAncestor data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasBrother data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :hasFather data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :hasParent data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isBrotherOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isChildOf data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isSiblingOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isSonOf data:Patrick_Anson-_5th_Earl_of_Lichfield .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Fenella Hepburn-Stuart-Forbes-Trefusis"^^xsd:string ;
+    data:posIndicesFull "14:32"^^xsd:string,
+        "655:693"^^xsd:string ;
+    data:wdtLink wdt:Q75381423 ;
+    :alsoKnownAs "Fenella Bowes-Lyon"^^xsd:string,
+        "Hon. Fenella Bowes-Lyon"^^xsd:string,
+        "Hon. Fenella Hepburn-Stuart-Forbes-Trefusis"^^xsd:string ;
+    :hasChild data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasDaughter data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :hasSex data:female ;
+    :hasSister data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isAncestorOf data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isAuntOf data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isBloodrelationOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isMotherOf data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isParentOf data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isSiblingOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSisterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:John_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "John Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "603:626"^^xsd:string ;
+    data:posIndicesPart "806:811"^^xsd:string,
+        "812:816"^^xsd:string ;
+    data:wdtLink wdt:Q75411 ;
+    :alsoKnownAs "Hon. John Bowes-Lyon"^^xsd:string,
+        "Hon. John Herbert \"Jock\" Bowes-Lyon"^^xsd:string,
+        "Hon. John Herbert Bowes-Lyon"^^xsd:string,
+        "Jock Bowes-Lyon"^^xsd:string,
+        "John Herbert Bowes-Lyon"^^xsd:string ;
+    :hasBrother data:John_Bowes-Lyon ;
+    :hasChild data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasDaughter data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasRelation data:John_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :hasSex data:male ;
+    :isAncestorOf data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:John_Bowes-Lyon ;
+    :isBrotherOf data:John_Bowes-Lyon ;
+    :isFatherOf data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isParentOf data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isSiblingOf data:John_Bowes-Lyon ;
+    :isUncleOf data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark .
+
+data:Katherine_Bowes-Lyon a :Person,
+        :Woman ;
+    rdfs:label "Katherine Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "971:991"^^xsd:string ;
+    data:posIndicesPart "1136:1145"^^xsd:string ;
+    data:wdtLink wdt:Q75248488 ;
+    :alsoKnownAs "Katherine Juliet Bowes-Lyon"^^xsd:string ;
+    :hasAncestor data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasFather data:John_Bowes-Lyon ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasParent data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isAuntOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isChildOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :isDaughterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :isSiblingOf data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isSisterOf data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark .
+
+data:Lady_Elizabeth_Shakerley a :Person,
+        :Woman ;
+    rdfs:label "Lady Elizabeth Shakerley"^^xsd:string ;
+    data:posIndicesFull "390:414"^^xsd:string,
+        "395:414"^^xsd:string ;
+    data:wdtLink wdt:Q75332807 ;
+    :alsoKnownAs "Elizabeth Anson"^^xsd:string,
+        "Elizabeth Georgiana Anson"^^xsd:string,
+        "Elizabeth Georgiana Shakerley"^^xsd:string,
+        "Elizabeth Shakerley"^^xsd:string,
+        "Lady Elizabeth Anson"^^xsd:string,
+        "Lady Elizabeth Georgiana Anson"^^xsd:string,
+        "Lady Elizabeth Georgiana Shakerley"^^xsd:string ;
+    :hasAncestor data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasBrother data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :hasFather data:Thomas_Anson-_Viscount_Anson ;
+    :hasMother data:Princess_Anne_of_Denmark ;
+    :hasParent data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Elizabeth_Shakerley ;
+    :isAuntOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isChildOf data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :isDaughterOf data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :isSiblingOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isSisterOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield .
+
+data:Patrick_Anson-_5th_Earl_of_Lichfield a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Patrick Anson, 5th Earl of Lichfield"^^xsd:string ;
+    data:posIndicesFull "348:361"^^xsd:string,
+        "348:384"^^xsd:string ;
+    data:posIndicesPart "1298:1303"^^xsd:string,
+        "1385:1390"^^xsd:string,
+        "1420:1425"^^xsd:string,
+        "1505:1510"^^xsd:string,
+        "823:827"^^xsd:string ;
+    data:wdtLink wdt:Q246026 ;
+    :alsoKnownAs "Patrick Anson"^^xsd:string,
+        "Patrick Lichfield"^^xsd:string,
+        "Thomas Patrick John Anson"^^xsd:string,
+        "Thomas Patrick John Anson, 5th Earl of Lichfield"^^xsd:string ;
+    :hasAncestor data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasBrother data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :hasChild data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :hasFather data:Thomas_Anson-_Viscount_Anson ;
+    :hasMother data:Princess_Anne_of_Denmark ;
+    :hasParent data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :hasSex data:male ;
+    :hasSister data:Lady_Elizabeth_Shakerley ;
+    :hasSon data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isAncestorOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isBrotherOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isChildOf data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :isFatherOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isParentOf data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isSiblingOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isSonOf data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_Viscount_Anson ;
+    :isUncleOf data:Thomas_Anson-_6th_Earl_of_Lichfield .
+
+data:Princess_Anne_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Anne of Denmark"^^xsd:string ;
+    data:posIndicesFull "0:32"^^xsd:string,
+        "113:137"^^xsd:string,
+        "1159:1168"^^xsd:string,
+        "1592:1616"^^xsd:string,
+        "548:563"^^xsd:string ;
+    data:posIndicesPart "1244:1248"^^xsd:string,
+        "1392:1396"^^xsd:string,
+        "1625:1629"^^xsd:string,
+        "1743:1750"^^xsd:string,
+        "1781:1788"^^xsd:string,
+        "461:469"^^xsd:string,
+        "473:480"^^xsd:string,
+        "523:530"^^xsd:string,
+        "767:771"^^xsd:string,
+        "910:914"^^xsd:string ;
+    data:wdtLink wdt:Q2871729 ;
+    :alsoKnownAs "Anne Anson"^^xsd:string,
+        "Anne Anson, Viscountess Anson"^^xsd:string,
+        "Anne Bowes-Lyon"^^xsd:string,
+        "Anne Ferelith Fenella Anson"^^xsd:string,
+        "Anne Ferelith Fenella Anson, Viscountess Anson"^^xsd:string,
+        "Anne Ferelith Fenella Bowes-Lyon"^^xsd:string,
+        "Princess Anne Ferelith Fenella of Denmark"^^xsd:string ;
+    :hasAncestor data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasChild data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :hasDaughter data:Lady_Elizabeth_Shakerley ;
+    :hasFather data:John_Bowes-Lyon ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasParent data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Katherine_Bowes-Lyon,
+        data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Princess_Anne_of_Denmark,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :hasSex data:female ;
+    :hasSister data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasSon data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isAncestorOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield,
+        data:Thomas_Anson-_6th_Earl_of_Lichfield ;
+    :isAuntOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isBloodrelationOf data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isChildOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :isDaughterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :isMotherOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isParentOf data:Lady_Elizabeth_Shakerley,
+        data:Patrick_Anson-_5th_Earl_of_Lichfield ;
+    :isSiblingOf data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :isSisterOf data:Katherine_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark .
+

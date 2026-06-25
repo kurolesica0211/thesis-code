@@ -2,35 +2,15 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Franz_Joseph_of_Austria a :Man,
-        :Person .
-
-data:Wilhelm_of_Prussia a :Man,
-        :Person ;
-    :hasBirthYear 1906 ;
-    :hasBrother data:Louis_Ferdinand ;
-    :hasDeathYear 1940 ;
-    :hasFather data:Crown_Prince_Wilhelm ;
-    :hasMarriageYear 1933 ;
-    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
-    :hasRelation data:Dorothea_von_Salviati .
-
-data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Crown_Prince_Wilhelm a :Ancestor,
+data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Wilhelm_II .
+    :isFatherOf data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg .
 
-data:Dorothea_von_Salviati a :Person,
-        :Woman .
-
-data:Louis_Ferdinand a :Man,
-        :Person .
-
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person .
+data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,
+        :Person ;
+    :hasBirthYear 1966 ;
+    :hasDeathYear 2010 ;
+    :isSonOf data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :knownAs "Leonhard \"Leo\" Löwenstein"^^xsd:string .
 

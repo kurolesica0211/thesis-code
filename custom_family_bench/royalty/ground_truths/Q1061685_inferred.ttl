@@ -1,0 +1,151 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Juliana_of_the_Netherlands a :Person,
+        :Woman ;
+    rdfs:label "Juliana of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "134:141"^^xsd:string ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Juliana der Nederlanden"^^xsd:string,
+        "Julijana"^^xsd:string,
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Princess Juliana of the Netherlands"^^xsd:string,
+        "Queen Juliana"^^xsd:string,
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Juliana of the Netherlands"^^xsd:string ;
+    :hasRelation data:Juliana_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Juliana_of_the_Netherlands ;
+    :isBloodrelationOf data:Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Juliana_of_the_Netherlands ;
+    :isSisterOf data:Juliana_of_the_Netherlands .
+
+data:Queen_Máxima_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Máxima of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "239:245"^^xsd:string,
+        "511:517"^^xsd:string ;
+    data:posIndicesPart "625:630"^^xsd:string ;
+    data:wdtLink wdt:Q460960 ;
+    :alsoKnownAs "H.M. Queen Máxima of the Netherlands"^^xsd:string,
+        "Maxima Zorreguieta"^^xsd:string,
+        "Máxima"^^xsd:string,
+        "Máxima Zorreguieta"^^xsd:string,
+        "Máxima of the Netherlands"^^xsd:string ;
+    :hasChild data:Princess_Alexia_of_the_Netherlands ;
+    :hasDaughter data:Princess_Alexia_of_the_Netherlands ;
+    :hasRelation data:Princess_Alexia_of_the_Netherlands,
+        data:Queen_Máxima_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Máxima_of_the_Netherlands ;
+    :isAncestorOf data:Princess_Alexia_of_the_Netherlands ;
+    :isAuntOf data:Princess_Alexia_of_the_Netherlands ;
+    :isBloodrelationOf data:Queen_Máxima_of_the_Netherlands ;
+    :isMotherOf data:Princess_Alexia_of_the_Netherlands ;
+    :isParentOf data:Princess_Alexia_of_the_Netherlands ;
+    :isSiblingOf data:Queen_Máxima_of_the_Netherlands ;
+    :isSisterOf data:Queen_Máxima_of_the_Netherlands .
+
+data:William_Alexander_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "William Alexander of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "207:228"^^xsd:string ;
+    data:posIndicesPart "463:472"^^xsd:string ;
+    data:wdtLink wdt:Q154952 ;
+    :alsoKnownAs "King Willem-Alexander"^^xsd:string,
+        "King Willem-Alexander of the Netherlands"^^xsd:string,
+        "Prince Willem-Alexander Claus George Ferdinand of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg"^^xsd:string,
+        "Prince Willem-Alexander of Amsberg"^^xsd:string,
+        "Prince Willem-Alexander of the Netherlands, Prince of Orange-Nassau, Jonkheer van Amsberg"^^xsd:string,
+        "Prince William-Alexander of the Netherlands"^^xsd:string,
+        "W.A. van Buren"^^xsd:string,
+        "Wilem van Amsberg"^^xsd:string,
+        "Willem IV of the Netherlands"^^xsd:string,
+        "Willem-Alexander Claus George Ferdinand, Prince of Orange"^^xsd:string,
+        "Willem-Alexander Prins van Oranje-Nassau Koning der Nederlanden"^^xsd:string,
+        "Willem-Alexander van Amsberg"^^xsd:string,
+        "Willem-Alexander van Oranje-Nassau"^^xsd:string,
+        "Willem-Alexander, Prince of Orange"^^xsd:string,
+        "ZM Koning Willem-Alexander"^^xsd:string ;
+    :hasBrother data:William_Alexander_of_the_Netherlands ;
+    :hasChild data:Princess_Alexia_of_the_Netherlands ;
+    :hasDaughter data:Princess_Alexia_of_the_Netherlands ;
+    :hasRelation data:Princess_Alexia_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Alexia_of_the_Netherlands ;
+    :isBloodrelationOf data:William_Alexander_of_the_Netherlands ;
+    :isBrotherOf data:William_Alexander_of_the_Netherlands ;
+    :isFatherOf data:Princess_Alexia_of_the_Netherlands ;
+    :isParentOf data:Princess_Alexia_of_the_Netherlands ;
+    :isSiblingOf data:William_Alexander_of_the_Netherlands ;
+    :isUncleOf data:Princess_Alexia_of_the_Netherlands .
+
+data:Princess_Alexia_of_the_Netherlands a :Person,
+        :Woman ;
+    rdfs:label "Princess Alexia of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "127:160"^^xsd:string,
+        "1474:1508"^^xsd:string,
+        "1474:1535"^^xsd:string,
+        "1483:1508"^^xsd:string,
+        "64:125"^^xsd:string,
+        "64:98"^^xsd:string,
+        "73:98"^^xsd:string ;
+    data:posIndicesPart "1159:1165"^^xsd:string,
+        "1348:1356"^^xsd:string,
+        "1357:1363"^^xsd:string,
+        "1582:1590"^^xsd:string,
+        "247:255"^^xsd:string,
+        "256:262"^^xsd:string,
+        "364:372"^^xsd:string,
+        "373:379"^^xsd:string,
+        "852:860"^^xsd:string,
+        "861:867"^^xsd:string,
+        "964:970"^^xsd:string ;
+    data:wdtLink wdt:Q1061685 ;
+    :alsoKnownAs "Alexia Juliana Marcela Laurentien"^^xsd:string,
+        "Alexia Juliana Marcela Laurentien of the Netherlands"^^xsd:string,
+        "Alexia of the Netherlands"^^xsd:string,
+        "Alexia van Oranje-Nassau"^^xsd:string,
+        "Princess Alexia Juliana Marcela Laurentien of the Netherlands"^^xsd:string,
+        "Princess Alexia of the Netherlands, Princess of Orange-Nassau"^^xsd:string ;
+    :hasAncestor data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasFather data:William_Alexander_of_the_Netherlands ;
+    :hasMother data:Queen_Máxima_of_the_Netherlands ;
+    :hasParent data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasRelation data:Princess_Alexia_of_the_Netherlands,
+        data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Alexia_of_the_Netherlands ;
+    :isBloodrelationOf data:Princess_Alexia_of_the_Netherlands ;
+    :isChildOf data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isDaughterOf data:Queen_Máxima_of_the_Netherlands,
+        data:William_Alexander_of_the_Netherlands ;
+    :isSiblingOf data:Princess_Alexia_of_the_Netherlands ;
+    :isSisterOf data:Princess_Alexia_of_the_Netherlands .
+

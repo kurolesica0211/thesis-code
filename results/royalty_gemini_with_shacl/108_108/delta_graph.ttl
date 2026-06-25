@@ -2,27 +2,18 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Hans_Veit a :Man,
+data:Hans_Veit_of_Torring_Jettenbach a :Man,
         :Person ;
-    :hasFather data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach ;
-    :hasMother data:Princess_Elizabeth_of_Greece_and_Denmark .
+    :isSonOf data:Count_Carl_Theodor_of_Torring_Jettenbach,
+        data:Princess_Elizabeth_of_Greece_and_Denmark .
 
-data:Count_Carl_Theodor_of_T%C3%B6rring-Jettenbach a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Count_Hans_Veit_zu_Toerring-Jettenbach ;
-    :hasMother data:Duchess_Sophie_in_Bavaria .
-
-data:Count_Hans_Veit_zu_Toerring-Jettenbach a :Ancestor,
+data:Count_Hans_Veit_zu_Torring_Jettenbach a :Ancestor,
         :Man,
         :Person .
 
 data:Duchess_Sophie_in_Bavaria a :Ancestor,
         :Person,
         :Woman .
-
-data:Female a :Female,
-        :Sex .
 
 data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
         :Person,
@@ -40,8 +31,8 @@ data:Princess_Elizabeth_of_Greece_and_Denmark a :Ancestor,
     :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
     :hasMarriageYear 1934 ;
     :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-    :hasSex data:Female ;
-    :isSisterOf data:Princess_Marina,
+    :hasRelation data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :hasSister data:Princess_Marina,
         data:Princess_Olga .
 
 data:Princess_Marina a :Person,
@@ -49,4 +40,10 @@ data:Princess_Marina a :Person,
 
 data:Princess_Olga a :Person,
         :Woman .
+
+data:Count_Carl_Theodor_of_Torring_Jettenbach a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Count_Hans_Veit_zu_Torring_Jettenbach ;
+    :hasMother data:Duchess_Sophie_in_Bavaria .
 

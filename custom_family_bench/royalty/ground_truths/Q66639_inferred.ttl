@@ -1,0 +1,76 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Countess Adelaide of Lippe-Biesterfeld"^^xsd:string ;
+    data:posIndicesFull "245:283"^^xsd:string ;
+    data:wdtLink wdt:Q2085981 ;
+    :hasChild data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasDaughter data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasRelation data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasSex data:female ;
+    :hasSister data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isAuntOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isMotherOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isParentOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isSiblingOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isSisterOf data:Countess_Adelaide_of_Lippe-Biesterfeld .
+
+data:Princess_Feodora_of_Saxe-Meiningen a :Person,
+        :Woman ;
+    rdfs:label "Princess Feodora of Saxe-Meiningen"^^xsd:string ;
+    data:posIndicesFull "0:16"^^xsd:string,
+        "0:34"^^xsd:string ;
+    data:posIndicesPart "1037:1045"^^xsd:string,
+        "1361:1365"^^xsd:string,
+        "1366:1375"^^xsd:string,
+        "1569:1578"^^xsd:string,
+        "1580:1587"^^xsd:string,
+        "1658:1666"^^xsd:string,
+        "1770:1777"^^xsd:string,
+        "1908:1915"^^xsd:string,
+        "2042:2049"^^xsd:string,
+        "2194:2201"^^xsd:string,
+        "2243:2250"^^xsd:string,
+        "381:385"^^xsd:string,
+        "474:481"^^xsd:string,
+        "588:592"^^xsd:string,
+        "681:688"^^xsd:string,
+        "721:725"^^xsd:string,
+        "726:735"^^xsd:string ;
+    data:wdtLink wdt:Q66639 ;
+    :alsoKnownAs "Princess Feodora"^^xsd:string ;
+    :hasAncestor data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasParent data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Countess_Adelaide_of_Lippe-Biesterfeld,
+        data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isBloodrelationOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isChildOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isSisterOf data:Princess_Feodora_of_Saxe-Meiningen .
+

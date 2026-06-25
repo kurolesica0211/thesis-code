@@ -2,33 +2,34 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Stephan_Prince_of_Lippe a :Ancestor,
-        :Man ;
-    :hasBirthYear 1959 ;
-    :hasFather data:Armin_Prince_of_Lippe ;
-    :hasMother data:Traute_Becker ;
-    :hasRelation data:Princess_Maria ;
-    :isFatherOf data:Child_1,
-        data:Child_2,
-        data:Child_3,
-        data:Child_4,
-        data:Child_5 .
+data:Daisy_Isadora_Louise_Knatchbull a :Person,
+        :Woman ;
+    :hasBirthYear 1992 ;
+    :hasFather data:Philip_Knatchbull ;
+    :hasMother data:Atalanta_Cowan .
 
-data:Armin_Prince_of_Lippe a :Ancestor,
-        :Man .
+data:Frederick_Freddy_Knatchbull a :Man,
+        :Person ;
+    :hasBirthYear 2003 ;
+    :hasFather data:Philip_Knatchbull ;
+    :hasMother data:Wendy_Leach ;
+    :knownAs "Freddy"^^xsd:string .
 
-data:Child_1 a :Man .
+data:Giovanni_Damiani a :Man,
+        :Person .
 
-data:Child_2 a :Man .
+data:Atalanta_Cowan a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1962 .
 
-data:Child_3 a :Man .
+data:Wendy_Leach a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1966 .
 
-data:Child_4 a :Woman .
-
-data:Child_5 a :Woman .
-
-data:Princess_Maria a :Woman .
-
-data:Traute_Becker a :Ancestor,
-        :Woman .
+data:Philip_Knatchbull a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1961 .
 

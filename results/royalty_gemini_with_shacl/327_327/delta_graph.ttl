@@ -2,40 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Felipe_de_Marichalar a :Man ;
-    :hasBirthYear 1998 ;
-    :hasFather data:Jaime_de_Marichalar ;
-    :hasMother data:Elena .
+data:Kira_Georgievna_Romanova a :Woman ;
+    :hasFather data:George_Mikhailovich_of_Russia ;
+    :hasMother data:Victoria_Romanovna .
 
-data:Victoria_de_Marichalar a :Woman ;
-    :hasBirthYear 2000 ;
-    :hasFather data:Jaime_de_Marichalar ;
-    :hasMother data:Elena .
-
-data:Cristina a :Woman ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Sofia .
-
-data:Felipe_VI a :Man ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Sofia .
-
-data:Elena a :Ancestor,
-        :Woman ;
-    :hasBirthYear 1963 ;
-    :hasBrother data:Felipe_VI ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMarriageYear 1995 ;
-    :hasMother data:Sofia ;
-    :hasSister data:Cristina .
-
-data:Jaime_de_Marichalar a :Ancestor,
-        :Man ;
-    :hasDeathYear 2009 .
-
-data:Juan_Carlos_I a :Ancestor,
+data:Franz_Wilhelm_of_Prussia a :Ancestor,
         :Man .
 
-data:Sofia a :Ancestor,
+data:George_Mikhailovich_of_Russia a :Ancestor,
+        :Man ;
+    :hasFather data:Franz_Wilhelm_of_Prussia ;
+    :hasMother data:Maria_Vladimirovna_of_Russia .
+
+data:Leonida_Bagration-Mukhrani a :Ancestor,
         :Woman .
+
+data:Maria_Vladimirovna_of_Russia a :Ancestor,
+        :Woman ;
+    :hasBirthYear 1953 ;
+    :hasFather data:Vladimir_Kirillovich_of_Russia ;
+    :hasMarriageYear 1976 ;
+    :hasMother data:Leonida_Bagration-Mukhrani .
+
+data:Victoria_Romanovna a :Ancestor,
+        :Woman .
+
+data:Vladimir_Kirillovich_of_Russia a :Ancestor,
+        :Man ;
+    :hasDeathYear 1992 .
 

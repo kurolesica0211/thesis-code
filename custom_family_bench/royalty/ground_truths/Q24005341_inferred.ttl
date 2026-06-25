@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Tatiana of Sayn-Wittgenstein-Berleburg"^^xsd:string ;
+    data:posIndicesFull "220:267"^^xsd:string ;
+    data:wdtLink wdt:Q4164797 ;
+    :alsoKnownAs "Tatiana Louise Ursula Therese Elsa Prinzessin zu Sayn-Wittgenstein-Berleburg"^^xsd:string ;
+    :hasChild data:Princess_Mafalda_of_Hesse_and_by_Rhine ;
+    :hasDaughter data:Princess_Mafalda_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Princess_Mafalda_of_Hesse_and_by_Rhine,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isAncestorOf data:Princess_Mafalda_of_Hesse_and_by_Rhine ;
+    :isAuntOf data:Princess_Mafalda_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isMotherOf data:Princess_Mafalda_of_Hesse_and_by_Rhine ;
+    :isParentOf data:Princess_Mafalda_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg .
+
+data:Princess_Mafalda_of_Hesse_and_by_Rhine a :Person,
+        :Woman ;
+    rdfs:label "Princess Mafalda of Hesse and by Rhine"^^xsd:string ;
+    data:wdtLink wdt:Q24005341 ;
+    :alsoKnownAs "Princess Mafalda Margarethe of Hesse and by Rhine"^^xsd:string,
+        "Princess Mafalda Margarethe of Hesse and by Rhine, Princess of Hesse-Kassel"^^xsd:string ;
+    :hasAncestor data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasParent data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Princess_Mafalda_of_Hesse_and_by_Rhine,
+        data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Mafalda_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Princess_Mafalda_of_Hesse_and_by_Rhine ;
+    :isChildOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isDaughterOf data:Princess_Tatiana_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Princess_Mafalda_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Princess_Mafalda_of_Hesse_and_by_Rhine .
+

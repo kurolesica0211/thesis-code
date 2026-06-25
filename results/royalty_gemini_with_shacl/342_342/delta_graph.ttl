@@ -2,74 +2,80 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Isabella_Murat a :Woman ;
-    :hasMother data:Pierre_Murat .
-
-data:Louis_Philippe_I a :Man .
-
-data:Aimone_of_Savoy-Aosta a :Man .
-
-data:Alexandra_of_Greece a :Woman .
-
-data:Christian_IX_of_Denmark a :Ancestor,
+data:Prince_Adalbert a :Ancestor,
         :Man ;
-    :isFatherOf data:George_I_of_Greece .
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria .
 
-data:Marina_Karella a :Woman .
+data:Prince_August_Wilhelm a :Ancestor,
+        :Man ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria .
 
-data:Olga_Constantinovna_of_Russia a :Ancestor,
+data:Prince_Eitel_Friedrich a :Ancestor,
+        :Man ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria .
+
+data:Prince_Joachim a :Ancestor,
+        :Man ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria .
+
+data:Prince_Oskar a :Ancestor,
+        :Man ;
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria .
+
+data:Prince_Wilhelm_of_Prussia_son a :Ancestor,
+        :Man ;
+    :hasDeathYear 1940 ;
+    :hasMother data:Cecilie_of_Mecklenburg_Schwerin .
+
+data:Princess_Helena a :Woman .
+
+data:Princess_Viktoria_Luise a :Ancestor,
         :Woman ;
-    :isMotherOf data:Christopher_of_Greece .
+    :hasFather data:Wilhelm_II ;
+    :hasMother data:Augusta_Victoria .
 
-data:Olga_of_Greece a :Woman ;
-    :hasRelation data:Aimone_of_Savoy-Aosta .
+data:Wilhelm_Crown_Prince a :Man ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1951 ;
+    :hasFather data:Wilhelm_II ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Augusta_Victoria .
 
-data:Pierre_Murat a :Ancestor,
+data:Anastasia_Mikhailovna a :Ancestor,
         :Woman .
 
-data:George_I_of_Greece a :Ancestor,
-        :Man ;
-    :hasFather data:Christian_IX_of_Denmark ;
-    :isFatherOf data:Christopher_of_Greece .
-
-data:Isabelle_dOrleans a :Ancestor,
+data:Cecilie_of_Mecklenburg_Schwerin a :Ancestor,
         :Woman ;
-    :isMotherOf data:Francoise_dOrleans,
-        data:Henri_dOrleans .
+    :hasFather data:Frederick_Francis_III ;
+    :hasMother data:Anastasia_Mikhailovna .
 
-data:Jean_dOrleans a :Ancestor,
+data:Frederick_Francis_III a :Ancestor,
+        :Man .
+
+data:Frederick_III a :Ancestor,
         :Man ;
-    :isFatherOf data:Francoise_dOrleans,
-        data:Henri_dOrleans .
+    :hasFather data:Wilhelm_I .
 
-data:Michael_of_Greece a :Man ;
-    :hasFather data:Christopher_of_Greece ;
-    :hasMother data:Francoise_dOrleans ;
-    :hasRelation data:Marina_Karella .
+data:Queen_Victoria a :Ancestor,
+        :Woman .
 
-data:Francoise_dOrleans a :Ancestor,
+data:Victoria_Crown_Princess a :Ancestor,
         :Woman ;
-    :alsoKnownAs "Françoise Isabelle Louise Marie"^^xsd:string ;
-    :hasBirthYear 1902 ;
-    :hasBrother data:Henri_dOrleans ;
-    :hasDeathYear 1953 ;
-    :hasFather data:Jean_dOrleans ;
-    :hasMarriageYear 1929 ;
-    :hasMother data:Isabelle_dOrleans ;
-    :hasRelation data:Christopher_of_Greece ;
-    :isMotherOf data:Alexandra_of_Greece,
-        data:Michael_of_Greece,
-        data:Olga_of_Greece .
+    :hasMother data:Queen_Victoria .
 
-data:Henri_dOrleans a :Man ;
-    :hasFather data:Jean_dOrleans ;
-    :hasMother data:Isabelle_dOrleans .
+data:Wilhelm_I a :Ancestor,
+        :Man .
 
-data:Christopher_of_Greece a :Ancestor,
+data:Augusta_Victoria a :Ancestor,
+        :Woman .
+
+data:Wilhelm_II a :Ancestor,
         :Man ;
-    :hasBirthYear 1888 ;
-    :hasDeathYear 1940 ;
-    :hasFather data:George_I_of_Greece ;
-    :hasMother data:Olga_Constantinovna_of_Russia ;
-    :isFatherOf data:Michael_of_Greece .
+    :hasFather data:Frederick_III ;
+    :hasMother data:Victoria_Crown_Princess .
 

@@ -7,15 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Sarah_Troughton a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Sarah_Troughton a :Person ;
     rdfs:label "Sarah Troughton" ;
     data:posIndicesFull "5:25" ;
     data:posIndicesPart "1042:1051",
@@ -30,16 +22,16 @@ data:Sarah_Troughton a :Person,
     :alsoKnownAs "Sarah Colman",
         "Sarah Rose Colman",
         "Sarah Rose Troughton" ;
-    :hasFather data:Timothy_Colman ;
     :hasParent data:Timothy_Colman ;
-    :hasSex data:female ;
-    :isChildOf data:Timothy_Colman ;
-    :isDaughterOf data:Timothy_Colman .
+    :hasSex data:female .
 
-data:Timothy_Colman a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Timothy_Colman a :Person ;
     rdfs:label "Timothy Colman" ;
     data:posIndicesFull "146:160" ;
     data:posIndicesPart "296:302",
@@ -49,9 +41,9 @@ data:Timothy_Colman a :Ancestor,
     :alsoKnownAs "Sir Timothy James Alan Colman",
         "Σερ Τιμόθι Κόλμαν",
         "Τιμόθι Τζέιμς Άλαν Κόλμαν" ;
-    :hasChild data:Sarah_Troughton ;
-    :hasDaughter data:Sarah_Troughton ;
-    :hasSex data:male ;
-    :isFatherOf data:Sarah_Troughton ;
-    :isParentOf data:Sarah_Troughton .
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

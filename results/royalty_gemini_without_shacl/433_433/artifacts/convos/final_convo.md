@@ -69,28 +69,35 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Alexandrine Irene of Prussia (7 April 1915 – 2 October 1980) was the elder daughter and fifth child of Wilhelm, German Crown Prince, and Cecilie of Mecklenburg-Schwerin.
-Her grandparents were Wilhelm II, German Emperor and his wife Augusta Victoria of Schleswig-Holstein, and Frederick Francis III of Mecklenburg-Schwerin and Grand Duchess Anastasia Mikhailovna of Russia.
-Alexandrine was a member of the House of Hohenzollern.
-She was a great-great-granddaughter of Queen Victoria.
-Life
+Bernhard, Prince of Saxe-Meiningen (German: Bernhard, Prinz von Sachsen-Meiningen; 30 June 1901 – 4 October 1984) was the head of the House of Saxe-Meiningen from 1946 until his death.
+Prince of Saxe-Meiningen
 
-Alexandrine was born at the Kronprinzenpalais in Berlin.
-She followed older brothers Wilhelm, Louis Ferdinand, Hubertus, and Frederick.
-Alexandrine's only sister, Cecilie, was born in 1917.
-It became clear shortly after Alexandrine's birth that she had Down syndrome.
-Unlike other disabled royal children, Alexandrine was not hidden away.
-As a teenager, Alexandrine attended the Trüpersche Sonderschule, a school dedicated to the education of children with special needs.
-Alexandrine celebrated her confirmation along with her sister Cecilie in October 1934.
-Alexandrine lived most of her later life in Bavaria, first in Pöcking and later near Lake Starnberg, where she was visited there regularly by her family, particularly her brother Louis Ferdinand.
-Alexandrine died on 2 October 1980.
-She was buried near her parents and brother Frederick at Hohenzollern Castle.
+Bernhard was born in Köln the third son of Prince Frederick Johann of Saxe-Meiningen and Countess Adelaide of Lippe-Biesterfeld.
+His father was the second son of Georg II, Duke of Saxe-Meiningen and his mother a daughter of Count Ernst of Lippe-Biesterfeld.
+After the death of his older brother Prince Georg in 1946 his nephew Prince Frederick Alfred renounced his succession rights and so Bernhard succeeded to the headship of the house of Saxe-Meiningen and the nominal title of Duke of Saxe-Meiningen (as Bernhard IV).
+As his first marriage was morganatic his second son Prince Frederick Konrad succeeded him as head of the ducal house following his death in Bad Krozingen.
+Bernhard and his first wife were declared guilty of a Nazi conspiracy against Austria in 1933; he was sentenced to six weeks in prison, while she was placed under house arrest.
+Family
+
+Bernhard was married morganatically to Margot Grössler (1911–1998), from Wrocław, daughter of Friedrich Grössler, a merchant, and Erika Wägner, in Eichenhof
+They had two children, both of whom had no succession rights:
+
+
+Bernhard married secondly in Ziegenberg über Bad Nauheim on 11 August 1948 to Baroness Vera Schäffer von Bernstein (1914–1994), daughter of Baron Friedrich "Fritz" Schäffer von Bernstein (1868–1958) and Emma Carola, née Passavant (1884–1971).
+They had three children, including a son, Konrad, with full rights to the succession to the house of Saxe-Meiningen:
+
+
+Ancestry
+
+References
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -106,39 +113,9 @@ She was buried near her parents and brother Frederick at Hohenzollern Castle.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -153,6 +130,23 @@ She was buried near her parents and brother Frederick at Hohenzollern Castle.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -170,6 +164,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -237,29 +246,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -268,6 +269,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -280,6 +289,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -288,17 +299,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -326,6 +339,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -341,222 +438,317 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b3c5449e-0371-41ed-b3cd-37a8befc03d5)
- Call ID: b3c5449e-0371-41ed-b3cd-37a8befc03d5
+  AssignClass (34443729-a792-4569-951f-c0bb64fceb75)
+ Call ID: 34443729-a792-4569-951f-c0bb64fceb75
   Args:
+    type: :Man
+    source: Bernhard_Prince_of_Saxe-Meiningen
+  AssignClass (32bcfc9c-13c7-49b4-9bfd-a202b9c1eda1)
+ Call ID: 32bcfc9c-13c7-49b4-9bfd-a202b9c1eda1
+  Args:
+    source: Bernhard_Prince_of_Saxe-Meiningen
     type: :Person
-    source: Alexandrine
-  AssignClass (dd0d8425-4f26-47c6-9392-b40da6fb32ab)
- Call ID: dd0d8425-4f26-47c6-9392-b40da6fb32ab
+  AddLiteral (b51098ea-1365-473a-9962-9a2e87ef3e3b)
+ Call ID: b51098ea-1365-473a-9962-9a2e87ef3e3b
   Args:
-    type: :Woman
-    source: Alexandrine
-  AddLiteral (9060a58a-5991-452b-95b8-a18f0e6b5efd)
- Call ID: 9060a58a-5991-452b-95b8-a18f0e6b5efd
-  Args:
-    source: Alexandrine
-    literal_type: xsd:integer
+    source: Bernhard_Prince_of_Saxe-Meiningen
+    literal_value: 1901
     relation: :hasBirthYear
-    literal_value: 1915
-  AddLiteral (d74c11d4-d3a3-44c5-a447-23c9e6d28766)
- Call ID: d74c11d4-d3a3-44c5-a447-23c9e6d28766
-  Args:
-    literal_value: 1980
-    relation: :hasDeathYear
-    source: Alexandrine
     literal_type: xsd:integer
-  AssignClass (4f39d76c-9cdf-4709-9dff-aee5bb494533)
- Call ID: 4f39d76c-9cdf-4709-9dff-aee5bb494533
+  AddLiteral (7768d73a-3c51-4676-9478-6f9202718d9c)
+ Call ID: 7768d73a-3c51-4676-9478-6f9202718d9c
   Args:
-    type: :Person
-    source: Wilhelm_German_Crown_Prince
-  AssignClass (a93e7c91-d9f2-41bd-9e8a-cbd88d856a67)
- Call ID: a93e7c91-d9f2-41bd-9e8a-cbd88d856a67
+    relation: :hasDeathYear
+    source: Bernhard_Prince_of_Saxe-Meiningen
+    literal_value: 1984
+    literal_type: xsd:integer
+  AssignClass (0f36ac31-ced4-4639-a454-31b99ebb7e18)
+ Call ID: 0f36ac31-ced4-4639-a454-31b99ebb7e18
   Args:
+    source: Prince_Frederick_Johann_of_Saxe-Meiningen
     type: :Man
-    source: Wilhelm_German_Crown_Prince
-  AssignClass (202a7e53-2dbd-4a75-a880-29408224866d)
- Call ID: 202a7e53-2dbd-4a75-a880-29408224866d
+  AssignClass (b45fba44-5189-4c1d-b453-5502b9ac5d8f)
+ Call ID: b45fba44-5189-4c1d-b453-5502b9ac5d8f
+  Args:
+    source: Prince_Frederick_Johann_of_Saxe-Meiningen
+    type: :Person
+  AssignClass (82c216ed-83e6-4303-968f-9cf518907835)
+ Call ID: 82c216ed-83e6-4303-968f-9cf518907835
+  Args:
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
+    type: :Woman
+  AssignClass (861c4a94-a7d8-4b1c-8e0f-786608419f56)
+ Call ID: 861c4a94-a7d8-4b1c-8e0f-786608419f56
   Args:
     type: :Person
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AssignClass (596c33e5-8011-465b-86bc-35a6d583f49d)
- Call ID: 596c33e5-8011-465b-86bc-35a6d583f49d
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
+  AddTriple (c25ac882-6736-4700-843e-feaaeb16ffe1)
+ Call ID: c25ac882-6736-4700-843e-feaaeb16ffe1
   Args:
-    type: :Woman
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddTriple (dc2e365d-d139-4bc2-9137-494081ec6bcd)
- Call ID: dc2e365d-d139-4bc2-9137-494081ec6bcd
-  Args:
-    target: Wilhelm_German_Crown_Prince
+    source: Bernhard_Prince_of_Saxe-Meiningen
+    target: Prince_Frederick_Johann_of_Saxe-Meiningen
     relation: :hasFather
-    source: Alexandrine
-  AddTriple (09e786a1-57c4-472e-98eb-23603978063a)
- Call ID: 09e786a1-57c4-472e-98eb-23603978063a
+  AddTriple (2fff8cc9-9cd8-426d-ac2c-b05727aa1b12)
+ Call ID: 2fff8cc9-9cd8-426d-ac2c-b05727aa1b12
   Args:
-    target: Cecilie_of_Mecklenburg-Schwerin
+    target: Countess_Adelaide_of_Lippe-Biesterfeld
+    source: Bernhard_Prince_of_Saxe-Meiningen
     relation: :hasMother
-    source: Alexandrine
-  AssignClass (20eb150a-62b0-4883-a4ad-015a15ccb2f2)
- Call ID: 20eb150a-62b0-4883-a4ad-015a15ccb2f2
+  AssignClass (a0fd6bb3-7f1d-455f-8e1d-cd7bc3230a78)
+ Call ID: a0fd6bb3-7f1d-455f-8e1d-cd7bc3230a78
   Args:
+    source: Georg_II_Duke_of_Saxe-Meiningen
+    type: :Man
+  AssignClass (4c5b48fe-d27e-4bed-a647-1b90fae1dde3)
+ Call ID: 4c5b48fe-d27e-4bed-a647-1b90fae1dde3
+  Args:
+    source: Georg_II_Duke_of_Saxe-Meiningen
     type: :Person
-    source: Wilhelm_II_German_Emperor
-  AssignClass (276a86f1-69d2-4585-a2b4-428b23924d6e)
- Call ID: 276a86f1-69d2-4585-a2b4-428b23924d6e
+  AddTriple (d60f000d-e8c9-4b74-8d29-58aa27344fab)
+ Call ID: d60f000d-e8c9-4b74-8d29-58aa27344fab
+  Args:
+    relation: :hasFather
+    source: Prince_Frederick_Johann_of_Saxe-Meiningen
+    target: Georg_II_Duke_of_Saxe-Meiningen
+  AssignClass (013b577c-6323-4be2-a8a6-c73e918a8e65)
+ Call ID: 013b577c-6323-4be2-a8a6-c73e918a8e65
   Args:
     type: :Man
-    source: Wilhelm_II_German_Emperor
-  AssignClass (da60610d-e156-43f5-a3e6-1e92d5cc1188)
- Call ID: da60610d-e156-43f5-a3e6-1e92d5cc1188
+    source: Count_Ernst_of_Lippe-Biesterfeld
+  AssignClass (ee175a5d-16c4-4a56-a6c1-b843fe3cd3af)
+ Call ID: ee175a5d-16c4-4a56-a6c1-b843fe3cd3af
+  Args:
+    source: Count_Ernst_of_Lippe-Biesterfeld
+    type: :Person
+  AddTriple (b87441e0-c542-4c5f-9b0f-48446b6e513e)
+ Call ID: b87441e0-c542-4c5f-9b0f-48446b6e513e
+  Args:
+    target: Count_Ernst_of_Lippe-Biesterfeld
+    source: Countess_Adelaide_of_Lippe-Biesterfeld
+    relation: :hasFather
+  AssignClass (8799cc5d-b748-4365-9111-ba82a3722851)
+ Call ID: 8799cc5d-b748-4365-9111-ba82a3722851
+  Args:
+    type: :Man
+    source: Prince_Georg
+  AssignClass (e052185c-b254-41d1-8ddb-d54185cf5794)
+ Call ID: e052185c-b254-41d1-8ddb-d54185cf5794
+  Args:
+    source: Prince_Georg
+    type: :Person
+  AddTriple (70000096-9785-4874-84e5-2281aa0e3a28)
+ Call ID: 70000096-9785-4874-84e5-2281aa0e3a28
+  Args:
+    relation: :isBrotherOf
+    target: Prince_Georg
+    source: Bernhard_Prince_of_Saxe-Meiningen
+  AssignClass (f42f63b2-be32-4391-916c-977bf6dc5036)
+ Call ID: f42f63b2-be32-4391-916c-977bf6dc5036
+  Args:
+    type: :Man
+    source: Prince_Frederick_Alfred
+  AssignClass (7289a790-501f-4228-9297-41919a8cdd53)
+ Call ID: 7289a790-501f-4228-9297-41919a8cdd53
   Args:
     type: :Person
-    source: Augusta_Victoria_of_Schleswig-Holstein
-  AssignClass (dfa21419-0035-484b-8a1d-2fe510938fb6)
- Call ID: dfa21419-0035-484b-8a1d-2fe510938fb6
+    source: Prince_Frederick_Alfred
+  AddTriple (26909ae3-4c9c-4b92-ba81-07a280f1ac4d)
+ Call ID: 26909ae3-4c9c-4b92-ba81-07a280f1ac4d
+  Args:
+    source: Prince_Frederick_Alfred
+    target: Prince_Georg
+    relation: :hasFather
+  AssignClass (beecade6-f339-43ac-afef-16d1c6183252)
+ Call ID: beecade6-f339-43ac-afef-16d1c6183252
+  Args:
+    source: Margot_Grössler
+    type: :Woman
+  AssignClass (c5ce82b9-868f-453d-a851-c0ed55088b65)
+ Call ID: c5ce82b9-868f-453d-a851-c0ed55088b65
+  Args:
+    source: Margot_Grössler
+    type: :Person
+  AddLiteral (0b052ca9-2678-4e1f-8f6b-15cf3b2fecdf)
+ Call ID: 0b052ca9-2678-4e1f-8f6b-15cf3b2fecdf
+  Args:
+    source: Margot_Grössler
+    literal_value: 1911
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (81304a1c-edfc-4943-8c2d-8ec527280a33)
+ Call ID: 81304a1c-edfc-4943-8c2d-8ec527280a33
+  Args:
+    relation: :hasDeathYear
+    source: Margot_Grössler
+    literal_value: 1998
+    literal_type: xsd:integer
+  AssignClass (1cd6b6eb-6deb-43f2-ba90-bf5a29da2241)
+ Call ID: 1cd6b6eb-6deb-43f2-ba90-bf5a29da2241
+  Args:
+    source: Friedrich_Grössler
+    type: :Man
+  AssignClass (fb8848a5-9ae3-45a0-bbe9-4ec460456be6)
+ Call ID: fb8848a5-9ae3-45a0-bbe9-4ec460456be6
+  Args:
+    source: Friedrich_Grössler
+    type: :Person
+  AssignClass (4ed69c87-6f91-42d7-af3e-504a8f1c3e7b)
+ Call ID: 4ed69c87-6f91-42d7-af3e-504a8f1c3e7b
+  Args:
+    source: Erika_Wägner
+    type: :Woman
+  AssignClass (f52a37d3-5e52-435e-9850-7cfc4be76251)
+ Call ID: f52a37d3-5e52-435e-9850-7cfc4be76251
+  Args:
+    type: :Person
+    source: Erika_Wägner
+  AddTriple (35968e43-7e5d-455a-a475-65b4ac599897)
+ Call ID: 35968e43-7e5d-455a-a475-65b4ac599897
+  Args:
+    relation: :hasFather
+    source: Margot_Grössler
+    target: Friedrich_Grössler
+  AddTriple (30f8ba12-1645-46eb-b234-1a0a21bcff41)
+ Call ID: 30f8ba12-1645-46eb-b234-1a0a21bcff41
+  Args:
+    relation: :hasMother
+    source: Margot_Grössler
+    target: Erika_Wägner
+  AssignClass (2a44dbd7-cd98-4642-93b5-9918fcd0bec5)
+ Call ID: 2a44dbd7-cd98-4642-93b5-9918fcd0bec5
+  Args:
+    source: Prince_Frederick_Konrad
+    type: :Man
+  AssignClass (54df6c5b-0edc-4984-9d9d-62355adcf49a)
+ Call ID: 54df6c5b-0edc-4984-9d9d-62355adcf49a
+  Args:
+    source: Prince_Frederick_Konrad
+    type: :Person
+  AddTriple (73006197-1bb9-4bb2-a396-48d8d016fea9)
+ Call ID: 73006197-1bb9-4bb2-a396-48d8d016fea9
+  Args:
+    relation: :hasFather
+    target: Bernhard_Prince_of_Saxe-Meiningen
+    source: Prince_Frederick_Konrad
+  AddTriple (0626a4d4-d143-4e47-820f-900202a260b6)
+ Call ID: 0626a4d4-d143-4e47-820f-900202a260b6
+  Args:
+    relation: :hasMother
+    source: Prince_Frederick_Konrad
+    target: Margot_Grössler
+  AssignClass (f1d7af2e-fef7-483e-8790-21b8b376c24a)
+ Call ID: f1d7af2e-fef7-483e-8790-21b8b376c24a
   Args:
     type: :Woman
-    source: Augusta_Victoria_of_Schleswig-Holstein
-  AssignClass (39d99502-feff-442a-97d2-fbad3749f06c)
- Call ID: 39d99502-feff-442a-97d2-fbad3749f06c
+    source: Baroness_Vera_Schäffer_von_Bernstein
+  AssignClass (cf5c4b90-e4a1-483f-a2ea-862d5763ecf3)
+ Call ID: cf5c4b90-e4a1-483f-a2ea-862d5763ecf3
   Args:
     type: :Person
-    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
-  AssignClass (2740cc5d-40b3-412e-b590-416f35991922)
- Call ID: 2740cc5d-40b3-412e-b590-416f35991922
+    source: Baroness_Vera_Schäffer_von_Bernstein
+  AddLiteral (1785fc07-4ff0-4b6e-bbcb-5b24e9b63c28)
+ Call ID: 1785fc07-4ff0-4b6e-bbcb-5b24e9b63c28
   Args:
+    literal_type: xsd:integer
+    literal_value: 1914
+    source: Baroness_Vera_Schäffer_von_Bernstein
+    relation: :hasBirthYear
+  AddLiteral (d40c35cb-285e-473f-8d0a-8cf54e248684)
+ Call ID: d40c35cb-285e-473f-8d0a-8cf54e248684
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1994
+    source: Baroness_Vera_Schäffer_von_Bernstein
+    literal_type: xsd:integer
+  AddLiteral (4ca7d58d-0707-4285-98b0-d4356ef60bdc)
+ Call ID: 4ca7d58d-0707-4285-98b0-d4356ef60bdc
+  Args:
+    source: Baroness_Vera_Schäffer_von_Bernstein
+    literal_value: 1948
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AssignClass (1f5fd41c-c401-4071-84a0-ee2c5d59ea44)
+ Call ID: 1f5fd41c-c401-4071-84a0-ee2c5d59ea44
+  Args:
+    source: Baron_Friedrich_Fritz_Schäffer_von_Bernstein
     type: :Man
-    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
-  AssignClass (f13abc45-3a69-49f2-bee5-51ee7a02f4a3)
- Call ID: f13abc45-3a69-49f2-bee5-51ee7a02f4a3
+  AssignClass (bb5b0dc6-b8e7-4106-82fb-19f330764664)
+ Call ID: bb5b0dc6-b8e7-4106-82fb-19f330764664
   Args:
+    source: Baron_Friedrich_Fritz_Schäffer_von_Bernstein
     type: :Person
-    source: Grand_Duchess_Anastasia_Mikhailovna_of_Russia
-  AssignClass (77975503-9896-4f74-b775-e162eab1c056)
- Call ID: 77975503-9896-4f74-b775-e162eab1c056
+  AddLiteral (7b13aad1-adc7-434b-9444-c57aa872e1f7)
+ Call ID: 7b13aad1-adc7-434b-9444-c57aa872e1f7
+  Args:
+    literal_value: 1868
+    source: Baron_Friedrich_Fritz_Schäffer_von_Bernstein
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (befda9fc-8710-42e0-bd28-91179f9f1956)
+ Call ID: befda9fc-8710-42e0-bd28-91179f9f1956
+  Args:
+    relation: :hasDeathYear
+    source: Baron_Friedrich_Fritz_Schäffer_von_Bernstein
+    literal_value: 1958
+    literal_type: xsd:integer
+  AssignClass (d93fe217-8564-4e7d-96e0-cdab581a0d70)
+ Call ID: d93fe217-8564-4e7d-96e0-cdab581a0d70
   Args:
     type: :Woman
-    source: Grand_Duchess_Anastasia_Mikhailovna_of_Russia
-  AddTriple (963a2baf-41dc-4b15-9344-fc0bb27a46d9)
- Call ID: 963a2baf-41dc-4b15-9344-fc0bb27a46d9
+    source: Emma_Carola_Passavant
+  AssignClass (43e017d4-b9d9-47a0-800f-34d201f5a8cf)
+ Call ID: 43e017d4-b9d9-47a0-800f-34d201f5a8cf
   Args:
-    relation: :hasParent
-    target: Wilhelm_II_German_Emperor
-    source: Wilhelm_German_Crown_Prince
-  AddTriple (4218291d-f646-412e-b019-f4bdeb6822a6)
- Call ID: 4218291d-f646-412e-b019-f4bdeb6822a6
-  Args:
-    source: Wilhelm_German_Crown_Prince
-    target: Augusta_Victoria_of_Schleswig-Holstein
-    relation: :hasParent
-  AddTriple (01639456-d926-4598-a4b7-0f61e15c02af)
- Call ID: 01639456-d926-4598-a4b7-0f61e15c02af
-  Args:
-    target: Frederick_Francis_III_of_Mecklenburg-Schwerin
-    relation: :hasParent
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AddTriple (6f941f43-b582-413b-b04b-72d04c9ab312)
- Call ID: 6f941f43-b582-413b-b04b-72d04c9ab312
-  Args:
-    relation: :hasParent
-    target: Grand_Duchess_Anastasia_Mikhailovna_of_Russia
-    source: Cecilie_of_Mecklenburg-Schwerin
-  AssignClass (87d484f7-76a7-4a8f-92a1-7d4fd52a6492)
- Call ID: 87d484f7-76a7-4a8f-92a1-7d4fd52a6492
-  Args:
+    source: Emma_Carola_Passavant
     type: :Person
-    source: Wilhelm_brother
-  AssignClass (f14b48f5-39cb-44d0-9056-5cbcd4e02fd5)
- Call ID: f14b48f5-39cb-44d0-9056-5cbcd4e02fd5
+  AddLiteral (ae9a130d-1652-4bb7-ba1a-306c3890e8c0)
+ Call ID: ae9a130d-1652-4bb7-ba1a-306c3890e8c0
+  Args:
+    relation: :hasBirthYear
+    source: Emma_Carola_Passavant
+    literal_value: 1884
+    literal_type: xsd:integer
+  AddLiteral (d0d73e9e-77a9-4952-9e46-99974bd67cb5)
+ Call ID: d0d73e9e-77a9-4952-9e46-99974bd67cb5
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1971
+    source: Emma_Carola_Passavant
+    literal_type: xsd:integer
+  AddTriple (e9dfa7b8-1981-491a-8868-73698dd7d39a)
+ Call ID: e9dfa7b8-1981-491a-8868-73698dd7d39a
+  Args:
+    target: Baron_Friedrich_Fritz_Schäffer_von_Bernstein
+    source: Baroness_Vera_Schäffer_von_Bernstein
+    relation: :hasFather
+  AddTriple (0118209b-9e34-4d60-8d63-ca7d19317063)
+ Call ID: 0118209b-9e34-4d60-8d63-ca7d19317063
+  Args:
+    source: Baroness_Vera_Schäffer_von_Bernstein
+    target: Emma_Carola_Passavant
+    relation: :hasMother
+  AssignClass (381b1dd3-5b6e-43c4-8032-d3a127d0a5ec)
+ Call ID: 381b1dd3-5b6e-43c4-8032-d3a127d0a5ec
   Args:
     type: :Man
-    source: Wilhelm_brother
-  AssignClass (20d21eb4-8f8c-47ef-afb5-ae98a2ff05f6)
- Call ID: 20d21eb4-8f8c-47ef-afb5-ae98a2ff05f6
+    source: Konrad_Saxe-Meiningen
+  AssignClass (1066a7cf-5a8a-46cd-82f9-e9ec7e95940d)
+ Call ID: 1066a7cf-5a8a-46cd-82f9-e9ec7e95940d
   Args:
+    source: Konrad_Saxe-Meiningen
     type: :Person
-    source: Louis_Ferdinand
-  AssignClass (46c8bfb5-e55e-47bd-88a2-044251cb9810)
- Call ID: 46c8bfb5-e55e-47bd-88a2-044251cb9810
+  AddTriple (254661c7-ff55-4d80-ac5d-0385acf5ab3e)
+ Call ID: 254661c7-ff55-4d80-ac5d-0385acf5ab3e
   Args:
-    type: :Man
-    source: Louis_Ferdinand
-  AssignClass (9c6329f8-a423-4ebe-9d19-f115457846d9)
- Call ID: 9c6329f8-a423-4ebe-9d19-f115457846d9
+    relation: :hasFather
+    target: Bernhard_Prince_of_Saxe-Meiningen
+    source: Konrad_Saxe-Meiningen
+  AddTriple (e6372bd4-c60e-4088-9d2d-a4fefc9dd60b)
+ Call ID: e6372bd4-c60e-4088-9d2d-a4fefc9dd60b
   Args:
-    type: :Person
-    source: Hubertus
-  AssignClass (f5efafcf-17b9-4869-9fe8-441a97d08b1f)
- Call ID: f5efafcf-17b9-4869-9fe8-441a97d08b1f
-  Args:
-    type: :Man
-    source: Hubertus
-  AssignClass (8ad8eb8e-acd0-4dc9-bfce-b97c22c31c2e)
- Call ID: 8ad8eb8e-acd0-4dc9-bfce-b97c22c31c2e
-  Args:
-    type: :Person
-    source: Frederick_brother
-  AssignClass (3769409d-398d-4558-a6d0-14e8b9ab431d)
- Call ID: 3769409d-398d-4558-a6d0-14e8b9ab431d
-  Args:
-    type: :Man
-    source: Frederick_brother
-  AssignClass (b4777f71-2474-4685-8c5a-d25b59153043)
- Call ID: b4777f71-2474-4685-8c5a-d25b59153043
-  Args:
-    type: :Person
-    source: Cecilie_sister
-  AssignClass (ab218237-3df8-4816-82cd-d4449f0e7b7a)
- Call ID: ab218237-3df8-4816-82cd-d4449f0e7b7a
-  Args:
-    type: :Woman
-    source: Cecilie_sister
-  AddTriple (f9b64d8f-f877-4acf-ae0d-9709659542fc)
- Call ID: f9b64d8f-f877-4acf-ae0d-9709659542fc
-  Args:
-    source: Alexandrine
-    relation: :hasBrother
-    target: Wilhelm_brother
-  AddTriple (d98a7749-118e-431b-b3f0-243ffde4ed26)
- Call ID: d98a7749-118e-431b-b3f0-243ffde4ed26
-  Args:
-    relation: :hasBrother
-    target: Louis_Ferdinand
-    source: Alexandrine
-  AddTriple (ca452dee-ba96-4ab7-b3b9-68a3c2e7aa88)
- Call ID: ca452dee-ba96-4ab7-b3b9-68a3c2e7aa88
-  Args:
-    source: Alexandrine
-    relation: :hasBrother
-    target: Hubertus
-  AddTriple (7af7e69f-97c9-4e25-b340-ff14e0132376)
- Call ID: 7af7e69f-97c9-4e25-b340-ff14e0132376
-  Args:
-    source: Alexandrine
-    target: Frederick_brother
-    relation: :hasBrother
-  AddTriple (36b395ec-29bb-4c5e-a6fa-88bb77209ddb)
- Call ID: 36b395ec-29bb-4c5e-a6fa-88bb77209ddb
-  Args:
-    source: Alexandrine
-    relation: :hasSister
-    target: Cecilie_sister
-  AssignClass (6c1dc857-79d7-4c84-8b7f-c11757dc4895)
- Call ID: 6c1dc857-79d7-4c84-8b7f-c11757dc4895
-  Args:
-    type: :Person
-    source: Queen_Victoria
-  AssignClass (e45d54e8-afdd-4e8a-90ea-1407ac1a27ad)
- Call ID: e45d54e8-afdd-4e8a-90ea-1407ac1a27ad
-  Args:
-    type: :Woman
-    source: Queen_Victoria
-  AddTriple (01a0d5fa-cb6c-4650-8c0c-b6a91ed4a5d0)
- Call ID: 01a0d5fa-cb6c-4650-8c0c-b6a91ed4a5d0
-  Args:
-    source: Alexandrine
-    target: Queen_Victoria
-    relation: :hasAncestor
-  Finish (8e94a841-6bc3-4eac-9a26-0895101ee252)
- Call ID: 8e94a841-6bc3-4eac-9a26-0895101ee252
+    relation: :hasMother
+    target: Baroness_Vera_Schäffer_von_Bernstein
+    source: Konrad_Saxe-Meiningen
+  Finish (f8376ec6-4c0a-46a1-9f9f-01f614cec9c8)
+ Call ID: f8376ec6-4c0a-46a1-9f9f-01f614cec9c8
   Args:

@@ -9,17 +9,19 @@ data:Princess_Ariane a :Person,
         :Woman ;
     :hasBirthYear 2007 ;
     :hasFather data:King_Willem-Alexander ;
-    :hasMother data:Queen_M%C3%A1xima .
+    :hasMother data:Queen_Maxima .
 
-data:Princess_Beatrix a :Person .
+data:Princess_Beatrix a :Person,
+        :Woman .
 
-data:Princess_Margriet a :Person .
+data:Princess_Margriet a :Person,
+        :Woman .
 
 data:King_Willem-Alexander a :Ancestor,
         :Man,
         :Person .
 
-data:Queen_M%C3%A1xima a :Ancestor,
+data:Queen_Maxima a :Ancestor,
         :Person,
         :Woman .
 

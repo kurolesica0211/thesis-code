@@ -2,22 +2,110 @@
     "translation": [],
     "final": [
         {
-            "iteration": 2,
+            "iteration": 13,
             "metadata": [
                 {
-                    "input_tokens": 9493,
-                    "output_tokens": 1155,
-                    "total_tokens": 10648,
+                    "input_tokens": 16405,
+                    "output_tokens": 37,
+                    "total_tokens": 16442,
                     "input_token_details": {
-                        "cache_read": 9488
+                        "cache_read": 16400
                     }
                 },
                 {
-                    "input_tokens": 12025,
-                    "output_tokens": 52,
-                    "total_tokens": 12077,
+                    "input_tokens": 16523,
+                    "output_tokens": 60,
+                    "total_tokens": 16583,
                     "input_token_details": {
-                        "cache_read": 9488
+                        "cache_read": 16400
+                    }
+                },
+                {
+                    "input_tokens": 16701,
+                    "output_tokens": 60,
+                    "total_tokens": 16761,
+                    "input_token_details": {
+                        "cache_read": 16400
+                    }
+                },
+                {
+                    "input_tokens": 16891,
+                    "output_tokens": 36,
+                    "total_tokens": 16927,
+                    "input_token_details": {
+                        "cache_read": 16400
+                    }
+                },
+                {
+                    "input_tokens": 17079,
+                    "output_tokens": 58,
+                    "total_tokens": 17137,
+                    "input_token_details": {
+                        "cache_read": 16400
+                    }
+                },
+                {
+                    "input_tokens": 17311,
+                    "output_tokens": 32,
+                    "total_tokens": 17343,
+                    "input_token_details": {
+                        "cache_read": 16400
+                    }
+                },
+                {
+                    "input_tokens": 17535,
+                    "output_tokens": 54,
+                    "total_tokens": 17589,
+                    "input_token_details": {
+                        "cache_read": 16400
+                    }
+                },
+                {
+                    "input_tokens": 17799,
+                    "output_tokens": 29,
+                    "total_tokens": 17828,
+                    "input_token_details": {
+                        "cache_read": 16400
+                    }
+                },
+                {
+                    "input_tokens": 18053,
+                    "output_tokens": 60,
+                    "total_tokens": 18113,
+                    "input_token_details": {
+                        "cache_read": 16400
+                    }
+                },
+                {
+                    "input_tokens": 18350,
+                    "output_tokens": 32,
+                    "total_tokens": 18382,
+                    "input_token_details": {
+                        "cache_read": 16400
+                    }
+                },
+                {
+                    "input_tokens": 18637,
+                    "output_tokens": 54,
+                    "total_tokens": 18691,
+                    "input_token_details": {
+                        "cache_read": 16400
+                    }
+                },
+                {
+                    "input_tokens": 18964,
+                    "output_tokens": 46,
+                    "total_tokens": 19010,
+                    "input_token_details": {
+                        "cache_read": 16400
+                    }
+                },
+                {
+                    "input_tokens": 19298,
+                    "output_tokens": 8,
+                    "total_tokens": 19306,
+                    "input_token_details": {
+                        "cache_read": 16400
                     }
                 }
             ]

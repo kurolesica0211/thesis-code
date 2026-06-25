@@ -1,0 +1,408 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Matthew-Kumar a :Man,
+        :Person ;
+    :hasBrother data:Matthew-Kumar ;
+    :hasRelation data:Matthew-Kumar ;
+    :isBloodrelationOf data:Matthew-Kumar ;
+    :isBrotherOf data:Matthew-Kumar ;
+    :isSiblingOf data:Matthew-Kumar .
+
+data:Robert-Warren-Miller a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Robert-Warren-Miller ;
+    :hasChild data:Marie-Chantal ;
+    :hasDaughter data:Marie-Chantal ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-II,
+        data:Maria-Olympia,
+        data:Marie-Chantal,
+        data:Pavlos,
+        data:Prince-Aristidis-Stavros,
+        data:Princess-Alexia,
+        data:Princess-Theodora,
+        data:Robert-Warren-Miller ;
+    :isAncestorOf data:Maria-Olympia,
+        data:Marie-Chantal ;
+    :isBloodrelationOf data:Robert-Warren-Miller ;
+    :isBrotherOf data:Robert-Warren-Miller ;
+    :isFatherOf data:Marie-Chantal ;
+    :isParentOf data:Marie-Chantal ;
+    :isSiblingOf data:Robert-Warren-Miller ;
+    :isUncleOf data:Marie-Chantal .
+
+data:Anne-Marie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Pavlos ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-II,
+        data:Maria-Olympia,
+        data:Marie-Chantal,
+        data:Pavlos,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon,
+        data:Princess-Alexia,
+        data:Princess-Theodora,
+        data:Robert-Warren-Miller ;
+    :hasSister data:Anne-Marie ;
+    :hasSon data:Pavlos ;
+    :isAncestorOf data:Maria-Olympia,
+        data:Pavlos ;
+    :isAuntOf data:Pavlos ;
+    :isBloodrelationOf data:Anne-Marie ;
+    :isMotherOf data:Pavlos ;
+    :isParentOf data:Pavlos ;
+    :isSiblingOf data:Anne-Marie ;
+    :isSisterOf data:Anne-Marie .
+
+data:Constantine-II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine-II ;
+    :hasChild data:Pavlos ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-II,
+        data:Maria-Olympia,
+        data:Marie-Chantal,
+        data:Pavlos,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon,
+        data:Princess-Alexia,
+        data:Princess-Theodora,
+        data:Robert-Warren-Miller ;
+    :hasSon data:Pavlos ;
+    :isAncestorOf data:Maria-Olympia,
+        data:Pavlos ;
+    :isBloodrelationOf data:Constantine-II ;
+    :isBrotherOf data:Constantine-II ;
+    :isFatherOf data:Pavlos ;
+    :isParentOf data:Pavlos ;
+    :isSiblingOf data:Constantine-II ;
+    :isUncleOf data:Pavlos .
+
+data:Princess-Alexia a :Person,
+        :Woman ;
+    :hasBrother data:Pavlos ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-II,
+        data:Maria-Olympia,
+        data:Marie-Chantal,
+        data:Pavlos,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon,
+        data:Princess-Alexia,
+        data:Princess-Theodora,
+        data:Robert-Warren-Miller ;
+    :hasSister data:Princess-Alexia,
+        data:Princess-Theodora ;
+    :isAuntOf data:Maria-Olympia ;
+    :isBloodrelationOf data:Pavlos,
+        data:Princess-Alexia,
+        data:Princess-Theodora ;
+    :isSiblingOf data:Pavlos,
+        data:Princess-Alexia,
+        data:Princess-Theodora ;
+    :isSisterOf data:Pavlos,
+        data:Princess-Alexia,
+        data:Princess-Theodora .
+
+data:Princess-Theodora a :Person,
+        :Woman ;
+    :hasBrother data:Pavlos ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-II,
+        data:Maria-Olympia,
+        data:Marie-Chantal,
+        data:Pavlos,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon,
+        data:Princess-Alexia,
+        data:Princess-Theodora,
+        data:Robert-Warren-Miller ;
+    :hasSister data:Princess-Alexia,
+        data:Princess-Theodora ;
+    :isAuntOf data:Maria-Olympia ;
+    :isBloodrelationOf data:Pavlos,
+        data:Princess-Alexia,
+        data:Princess-Theodora ;
+    :isSiblingOf data:Pavlos,
+        data:Princess-Alexia,
+        data:Princess-Theodora ;
+    :isSisterOf data:Pavlos,
+        data:Princess-Alexia,
+        data:Princess-Theodora .
+
+data:Marie-Chantal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Robert-Warren-Miller ;
+    :hasChild data:Maria-Olympia ;
+    :hasDaughter data:Maria-Olympia ;
+    :hasFather data:Robert-Warren-Miller ;
+    :hasParent data:Robert-Warren-Miller ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-II,
+        data:Maria-Olympia,
+        data:Marie-Chantal,
+        data:Pavlos,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon,
+        data:Princess-Alexia,
+        data:Princess-Theodora,
+        data:Robert-Warren-Miller ;
+    :hasSister data:Marie-Chantal ;
+    :isAncestorOf data:Maria-Olympia ;
+    :isAuntOf data:Maria-Olympia ;
+    :isBloodrelationOf data:Marie-Chantal ;
+    :isChildOf data:Robert-Warren-Miller ;
+    :isDaughterOf data:Robert-Warren-Miller ;
+    :isMotherOf data:Maria-Olympia ;
+    :isParentOf data:Maria-Olympia ;
+    :isSiblingOf data:Marie-Chantal ;
+    :isSisterOf data:Marie-Chantal .
+
+data:Prince-Achileas-Andreas a :Man,
+        :Person ;
+    :hasBrother data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-II,
+        data:Maria-Olympia,
+        data:Marie-Chantal,
+        data:Pavlos,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon,
+        data:Princess-Alexia,
+        data:Princess-Theodora ;
+    :hasSister data:Maria-Olympia ;
+    :isBloodrelationOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :isBrotherOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :isSiblingOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon .
+
+data:Prince-Constantine-Alexios a :Man,
+        :Person ;
+    :hasBrother data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-II,
+        data:Maria-Olympia,
+        data:Marie-Chantal,
+        data:Pavlos,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon,
+        data:Princess-Alexia,
+        data:Princess-Theodora ;
+    :hasSister data:Maria-Olympia ;
+    :isBloodrelationOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :isBrotherOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :isSiblingOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon .
+
+data:Prince-Odysseas-Kimon a :Man,
+        :Person ;
+    :hasBrother data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-II,
+        data:Maria-Olympia,
+        data:Marie-Chantal,
+        data:Pavlos,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon,
+        data:Princess-Alexia,
+        data:Princess-Theodora ;
+    :hasSister data:Maria-Olympia ;
+    :isBloodrelationOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :isBrotherOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :isSiblingOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon .
+
+data:Prince-Aristidis-Stavros a :Man,
+        :Person ;
+    :hasBrother data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-II,
+        data:Maria-Olympia,
+        data:Marie-Chantal,
+        data:Pavlos,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon,
+        data:Princess-Alexia,
+        data:Princess-Theodora,
+        data:Robert-Warren-Miller ;
+    :hasSister data:Maria-Olympia ;
+    :isBloodrelationOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :isBrotherOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :isSiblingOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon .
+
+data:Pavlos a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine-II ;
+    :hasBrother data:Pavlos ;
+    :hasChild data:Maria-Olympia ;
+    :hasDaughter data:Maria-Olympia ;
+    :hasFather data:Constantine-II ;
+    :hasMother data:Anne-Marie ;
+    :hasParent data:Anne-Marie,
+        data:Constantine-II ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-II,
+        data:Maria-Olympia,
+        data:Marie-Chantal,
+        data:Pavlos,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon,
+        data:Princess-Alexia,
+        data:Princess-Theodora,
+        data:Robert-Warren-Miller ;
+    :hasSister data:Princess-Alexia,
+        data:Princess-Theodora ;
+    :isAncestorOf data:Maria-Olympia ;
+    :isBloodrelationOf data:Pavlos,
+        data:Princess-Alexia,
+        data:Princess-Theodora ;
+    :isBrotherOf data:Pavlos,
+        data:Princess-Alexia,
+        data:Princess-Theodora ;
+    :isChildOf data:Anne-Marie,
+        data:Constantine-II ;
+    :isFatherOf data:Maria-Olympia ;
+    :isParentOf data:Maria-Olympia ;
+    :isSiblingOf data:Pavlos,
+        data:Princess-Alexia,
+        data:Princess-Theodora ;
+    :isSonOf data:Anne-Marie,
+        data:Constantine-II ;
+    :isUncleOf data:Maria-Olympia .
+
+data:Maria-Olympia a :Person,
+        :Woman ;
+    :alsoKnownAs "Olympia"^^xsd:string ;
+    :hasAncestor data:Anne-Marie,
+        data:Constantine-II,
+        data:Marie-Chantal,
+        data:Pavlos,
+        data:Robert-Warren-Miller ;
+    :hasBirthYear 1996 ;
+    :hasBrother data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :hasFather data:Pavlos ;
+    :hasMother data:Marie-Chantal ;
+    :hasParent data:Marie-Chantal,
+        data:Pavlos ;
+    :hasRelation data:Anne-Marie,
+        data:Constantine-II,
+        data:Maria-Olympia,
+        data:Marie-Chantal,
+        data:Pavlos,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon,
+        data:Princess-Alexia,
+        data:Princess-Theodora,
+        data:Robert-Warren-Miller ;
+    :hasSister data:Maria-Olympia ;
+    :isBloodrelationOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :isChildOf data:Marie-Chantal,
+        data:Pavlos ;
+    :isDaughterOf data:Marie-Chantal,
+        data:Pavlos ;
+    :isSiblingOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon ;
+    :isSisterOf data:Maria-Olympia,
+        data:Prince-Achileas-Andreas,
+        data:Prince-Aristidis-Stavros,
+        data:Prince-Constantine-Alexios,
+        data:Prince-Odysseas-Kimon .
+

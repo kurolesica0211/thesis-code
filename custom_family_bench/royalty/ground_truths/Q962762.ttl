@@ -7,15 +7,21 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:Felipe_VI_of_Spain a :Person ;
+    rdfs:label "Felipe VI of Spain" ;
+    data:posIndicesFull "158:167",
+        "158:176" ;
+    data:posIndicesPart "300:305",
+        "645:650",
+        "774:779" ;
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia",
+        "Felipe VI",
+        "Philip John Paul Alphonse of All Saints of Bourbon",
+        "Philip VI of Spain" ;
+    :hasSex data:male .
 
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Isabelle_dOrléans_1 a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Isabelle_dOrléans_1 a :Person ;
     rdfs:label "Princess Isabelle d’Orléans" ;
     data:posIndicesFull "208:226" ;
     data:posIndicesPart "485:493" ;
@@ -25,24 +31,20 @@ data:Princess_Isabelle_dOrléans_1 a :Person,
         "Princess Isabelle Françoise Hélène Marie d'Orléans" ;
     :hasSex data:female .
 
-data:Princess_Louise_of_Orléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Louise_of_Orléans a :Person ;
     rdfs:label "Princess Louise of Orléans" ;
     data:wdtLink wdt:Q962762 ;
     :alsoKnownAs "Princess Louise of Orleans" ;
-    :hasMother data:Princess_María_Isabel_of_Orléans ;
     :hasParent data:Princess_María_Isabel_of_Orléans ;
-    :hasSex data:female ;
-    :isAuntOf data:Princess_Isabelle_dOrléans_1 ;
-    :isChildOf data:Princess_María_Isabel_of_Orléans ;
-    :isDaughterOf data:Princess_María_Isabel_of_Orléans .
+    :hasSex data:female .
 
-data:Princess_María_Isabel_of_Orléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_María_Isabel_of_Orléans a :Person ;
     rdfs:label "Princess María Isabel of Orléans" ;
     data:posIndicesFull "202:216" ;
     data:posIndicesPart "462:467",
@@ -52,9 +54,9 @@ data:Princess_María_Isabel_of_Orléans a :Ancestor,
         "Maria Isabella",
         "Princess Maria Isabel of Orléans, Infanta of Spain",
         "Princess Marie Isabelle of Orleans" ;
-    :hasChild data:Princess_Louise_of_Orléans ;
-    :hasDaughter data:Princess_Louise_of_Orléans ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Louise_of_Orléans ;
-    :isParentOf data:Princess_Louise_of_Orléans .
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

@@ -70,6 +70,10 @@ Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
 Oskar Michael Hans Karl Prinz von Preussen (born 6 May 1959) is a member of the House of Hohenzollern, the former ruling house of Germany.
+Life
+
+The second son of Wilhelm-Karl Prince of Prussia and of his wife Armgard von Veltheim, Prince Oskar's great-grandfather was Wilhelm II, the last German Emperor and King of Prussia.
+In 1995 Prince Oskar took a Ph.D. in history from the Free University of Berlin with his thesis about relations between the Emperor Wilhelm II and the United States.
 In 1999 Prince Oskar was appointed Herrenmeister (Grand Master) of the Order of Saint John (Bailiwick of Brandenburg), following his father Prince Wilhelm-Karl of Prussia and his grandfather Prince Oskar of Prussia who both previously served as Herrenmeister.
 
 
@@ -81,6 +85,8 @@ On June 25, 2021, Prinz Oskar welcomed President Frank-Walter Steinmeier to the 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -96,39 +102,9 @@ On June 25, 2021, Prinz Oskar welcomed President Frank-Walter Steinmeier to the 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -143,6 +119,23 @@ On June 25, 2021, Prinz Oskar welcomed President Frank-Walter Steinmeier to the 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -160,6 +153,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -227,29 +235,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -258,6 +258,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -270,6 +278,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -278,17 +288,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -316,6 +328,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -331,65 +427,214 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (485cefcb-9a00-4edf-b263-8a17d2c87538)
- Call ID: 485cefcb-9a00-4edf-b263-8a17d2c87538
-  Args:
-    source: Oskar_Michael_Hans_Karl_Prinz_von_Preussen
-    type: :Person
-  AssignClass (5097f892-ecb0-477d-9117-42e7c83791b6)
- Call ID: 5097f892-ecb0-477d-9117-42e7c83791b6
+  AssignClass (4a0e44ff-da49-485f-b1c8-71cd23e52d84)
+ Call ID: 4a0e44ff-da49-485f-b1c8-71cd23e52d84
   Args:
     source: Oskar_Michael_Hans_Karl_Prinz_von_Preussen
     type: :Man
-  AddLiteral (f631b481-b8f5-4a96-b243-5df0f4d0713c)
- Call ID: f631b481-b8f5-4a96-b243-5df0f4d0713c
+  AssignClass (882e8d32-0c81-43ea-93ff-60a18f737e77)
+ Call ID: 882e8d32-0c81-43ea-93ff-60a18f737e77
+  Args:
+    type: :Person
+    source: Oskar_Michael_Hans_Karl_Prinz_von_Preussen
+  AddLiteral (115e8eef-63d8-4a4a-87a8-f7ae939c488f)
+ Call ID: 115e8eef-63d8-4a4a-87a8-f7ae939c488f
   Args:
     literal_value: 1959
-    source: Oskar_Michael_Hans_Karl_Prinz_von_Preussen
-    relation: :hasBirthYear
     literal_type: xsd:integer
-  AssignClass (f3f86bc2-3aa0-4edc-abb7-56c1eb3cfdd8)
- Call ID: f3f86bc2-3aa0-4edc-abb7-56c1eb3cfdd8
-  Args:
-    type: :Person
-    source: Wilhelm-Karl_of_Prussia
-  AssignClass (210acf23-8c45-47b5-9c41-0d85524a9cd1)
- Call ID: 210acf23-8c45-47b5-9c41-0d85524a9cd1
-  Args:
-    source: Wilhelm-Karl_of_Prussia
-    type: :Man
-  AssignClass (c7b83767-28b1-445c-af3f-7aec8a4799f8)
- Call ID: c7b83767-28b1-445c-af3f-7aec8a4799f8
-  Args:
-    source: Wilhelm-Karl_of_Prussia
-    type: :Ancestor
-  AddTriple (777990dd-61a8-4af8-a253-a4dcd5e21f74)
- Call ID: 777990dd-61a8-4af8-a253-a4dcd5e21f74
-  Args:
-    relation: :isSonOf
-    target: Wilhelm-Karl_of_Prussia
+    relation: :hasBirthYear
     source: Oskar_Michael_Hans_Karl_Prinz_von_Preussen
-  AssignClass (204cae35-d5f6-45a5-ab1a-982c22248c1e)
- Call ID: 204cae35-d5f6-45a5-ab1a-982c22248c1e
+  AddTriple (0365e105-22fd-4048-8c41-aee004d2eb0b)
+ Call ID: 0365e105-22fd-4048-8c41-aee004d2eb0b
+  Args:
+    target: :Male
+    source: Oskar_Michael_Hans_Karl_Prinz_von_Preussen
+    relation: :hasSex
+  AssignClass (a157ae2c-85b6-47c2-9315-3448496700cd)
+ Call ID: a157ae2c-85b6-47c2-9315-3448496700cd
+  Args:
+    source: Wilhelm-Karl_Prince_of_Prussia
+    type: :Man
+  AssignClass (49bb20dd-9ffe-42f0-8134-2677d8cca64f)
+ Call ID: 49bb20dd-9ffe-42f0-8134-2677d8cca64f
+  Args:
+    source: Wilhelm-Karl_Prince_of_Prussia
+    type: :Person
+  AssignClass (8f1da659-d99c-450b-a557-95f2b2e174ff)
+ Call ID: 8f1da659-d99c-450b-a557-95f2b2e174ff
+  Args:
+    type: :Woman
+    source: Armgard_von_Veltheim
+  AssignClass (f0f3b0f7-61b5-4712-871e-2061e1c91704)
+ Call ID: f0f3b0f7-61b5-4712-871e-2061e1c91704
+  Args:
+    source: Armgard_von_Veltheim
+    type: :Person
+  AddTriple (f1d49057-3c9a-457c-b1de-e8bb8dc1a599)
+ Call ID: f1d49057-3c9a-457c-b1de-e8bb8dc1a599
+  Args:
+    target: :Wilhelm-Karl_Prince_of_Prussia
+    source: Oskar_Michael_Hans_Karl_Prinz_von_Preussen
+    relation: :hasFather
+  AddTriple (ab43275b-e767-435f-9abc-fba98d93dba1)
+ Call ID: ab43275b-e767-435f-9abc-fba98d93dba1
+  Args:
+    target: :Armgard_von_Veltheim
+    source: Oskar_Michael_Hans_Karl_Prinz_von_Preussen
+    relation: :hasMother
+  AssignClass (cdb3382c-3df3-42ca-bfdc-d164b2225963)
+ Call ID: cdb3382c-3df3-42ca-bfdc-d164b2225963
+  Args:
+    source: Wilhelm_II
+    type: :Man
+  AssignClass (ed7ac913-4d88-4396-8fb8-a8bdbf2b5d14)
+ Call ID: ed7ac913-4d88-4396-8fb8-a8bdbf2b5d14
   Args:
     type: :Person
-    source: Oskar_of_Prussia
-  AssignClass (04ee978b-5d5e-4ac1-a659-9bd356a2e228)
- Call ID: 04ee978b-5d5e-4ac1-a659-9bd356a2e228
+    source: Wilhelm_II
+  AddTriple (155bd9b6-112c-47b9-b1f2-2ef922ab20eb)
+ Call ID: 155bd9b6-112c-47b9-b1f2-2ef922ab20eb
+  Args:
+    source: Oskar_Michael_Hans_Karl_Prinz_von_Preussen
+    relation: :hasAncestor
+    target: :Wilhelm_II
+  AssignClass (9cf04ef8-59a8-4852-bcb8-11eb3d4a6099)
+ Call ID: 9cf04ef8-59a8-4852-bcb8-11eb3d4a6099
   Args:
     type: :Man
     source: Oskar_of_Prussia
-  AssignClass (7e9965e8-56a3-48a4-9437-78e78ae20b77)
- Call ID: 7e9965e8-56a3-48a4-9437-78e78ae20b77
+  AssignClass (7c3f487a-899f-4d84-b653-a689ee840dba)
+ Call ID: 7c3f487a-899f-4d84-b653-a689ee840dba
   Args:
     source: Oskar_of_Prussia
-    type: :Ancestor
-  AddTriple (ac96eed6-9761-45d5-ad79-b9555bbbada2)
- Call ID: ac96eed6-9761-45d5-ad79-b9555bbbada2
+    type: :Person
+  AddTriple (2acda2e3-3f6d-4a2f-ae03-a5b5c6e05c52)
+ Call ID: 2acda2e3-3f6d-4a2f-ae03-a5b5c6e05c52
   Args:
-    source: Wilhelm-Karl_of_Prussia
-    relation: :isSonOf
-    target: Oskar_of_Prussia
-  Finish (2f970a0f-c7d0-4e87-a0f6-a7624ba6549e)
- Call ID: 2f970a0f-c7d0-4e87-a0f6-a7624ba6549e
+    target: :Oskar_of_Prussia
+    relation: :hasFather
+    source: Wilhelm-Karl_Prince_of_Prussia
+  Finish (5c85bc3b-74d8-4e6d-8667-eb23039ab702)
+ Call ID: 5c85bc3b-74d8-4e6d-8667-eb23039ab702
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Oskar_Michael_Hans_Karl_Prinz_von_Preussen a :Man,
+          :Person ;
+      :hasAncestor data:Wilhelm_II ;
+      :hasBirthYear 1959 ;
+      :hasFather data:Wilhelm-Karl_Prince_of_Prussia ;
+      :hasMother data:Armgard_von_Veltheim ;
+      :hasSex data:Male .
+
+  data:Armgard_von_Veltheim a :Person,
+          :Woman .
+
+  data:Oskar_of_Prussia a :Man,
+          :Person .
+
+  data:Wilhelm-Karl_Prince_of_Prussia a :Man,
+          :Person ;
+      :hasFather data:Oskar_of_Prussia .
+
+  data:Wilhelm_II a :Man,
+          :Person .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Male']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (c42ba353-f12d-4cc1-9f3c-30f94388e5c8)
+ Call ID: c42ba353-f12d-4cc1-9f3c-30f94388e5c8
+  Args:
+    type: :Sex
+    source: :Male
+  Finish (770f2b7c-9ad9-4b63-805b-aff495ebbc79)
+ Call ID: 770f2b7c-9ad9-4b63-805b-aff495ebbc79
   Args:

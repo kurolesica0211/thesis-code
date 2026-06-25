@@ -85,41 +85,22 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Thomas Patrick John Anson, 5th Earl of Lichfield (25 April 1939 – 11 November 2005), was an English photographer from the Anson family.
-He inherited the Earldom of Lichfield in 1960 from his paternal grandfather.
-In his professional practice he was known as Patrick Lichfield.
-Biography
+Princess Isabel Alfonsa of Bourbon-Two Sicilies, Infanta of Spain, (Isabel Alfonsa María Teresa Antonia Cristina Mercedes Carolina Adelaida Rafaela de Borbón-Dos Sicilias y Borbón; 16 October 1904 – 18 July 1985) was a member of the House of Bourbon-Two Sicilies and a princess of Bourbon-Two Sicilies by birth.
+Family
 
-Thomas Patrick John Anson was born on 25 April 1939.
-He was the only son of Lieutenant-Colonel Thomas William Arnold Anson, Viscount Anson (1913–1958), the eldest son and heir apparent of Thomas Edward Anson, 4th Earl of Lichfield (1883–1960).
-His mother was born Anne Bowes-Lyon (1917–1980), a niece of Queen Elizabeth the Queen Mother.
-His parents divorced in 1948, and his mother subsequently became Princess Anne of Denmark after her remarriage to Prince Georg of Denmark in 1950.
-He had one sister, Lady Elizabeth Georgiana Anson (1941–2020), who married Sir Geoffrey Adam Shakerley, 6th Baronet.
-Lichfield was educated at two boarding independent schools: Wellesley House School in the coastal town of Broadstairs in Kent, and Harrow School in Harrow on the Hill in north-west London, followed by the Royal Military Academy Sandhurst.
-His father died in 1958, leaving Patrick to succeed as 5th Earl of Lichfield when his grandfather died in 1960.
-Lichfield joined the Grenadier Guards in 1959.
-He was selected to take the official photographs of the wedding of the Prince and Princess of Wales in 1981, and subsequently became one of the UK's best-known photographers.
-He was chosen by Queen Elizabeth II and the Duke of Edinburgh to take official pictures of her Golden Jubilee in 2002.
-He also cameoed in the British sitcom Keeping Up Appearances, appearing in the episode "Sea Fever" as a passenger on the Queen Elizabeth 2.
-Lichfield resided in an apartment at the former family seat of Shugborough Hall, near Cannock Chase in Staffordshire.
-Marriage and children
+Isabel Alfonsa was the third child of Prince Carlos of Bourbon-Two Sicilies and his first wife María de las Mercedes, Princess of Asturias.
+Isabel Alfonsa's maternal grandparents were Alfonso XII of Spain and Maria Christina of Austria.
+Marriage and issue
 
-On 8 March 1975 Lichfield married Lady Leonora Grosvenor, elder daughter of Robert Grosvenor, 5th Duke of Westminster and Hon.
-The Countess of Lichfield has not remarried and has retained her title.
-She and the Earl had one son and two daughters together:
-
-
-Lichfield's most recent partner was the biographer Lady Annunziata Asquith, daughter of Julian Asquith, 2nd Earl of Oxford and Asquith.
-Death
-
-On 10 November 2005, Lichfield suffered a major stroke and died the following day at the John Radcliffe Hospital in Oxford.
-Lichfield's apartment at Shugborough now houses an exhibition of his work, together with a recreation of his studio.
+Isabel Alfonsa married her first cousin once removed Count Jan Kanty Zamoyski, seventh child and third son of Count Andrzej Zamoyski and his wife Princess Maria Carolina of Bourbon-Two Sicilies, on 9 March 1929 in Madrid.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -135,39 +116,9 @@ Lichfield's apartment at Shugborough now houses an exhibition of his work, toget
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -182,6 +133,23 @@ Lichfield's apartment at Shugborough now houses an exhibition of his work, toget
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -199,6 +167,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -266,29 +249,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -297,6 +272,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -309,6 +292,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -317,17 +302,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -355,6 +342,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -370,331 +441,109 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (70fa90ed-efda-41b6-bb18-193decf5d1c8)
- Call ID: 70fa90ed-efda-41b6-bb18-193decf5d1c8
+  AssignClass (781b7114-5b1d-4665-b5df-3d517d15a359)
+ Call ID: 781b7114-5b1d-4665-b5df-3d517d15a359
   Args:
-    type: :Man
-    source: Thomas_Patrick_John_Anson
-  AssignClass (319fd2c5-65a4-477e-8588-c927d2724cfe)
- Call ID: 319fd2c5-65a4-477e-8588-c927d2724cfe
-  Args:
-    source: Thomas_Patrick_John_Anson
-    type: :Person
-  AddLiteral (e25db4bc-ded4-4f31-a7cb-b8f98e88018d)
- Call ID: e25db4bc-ded4-4f31-a7cb-b8f98e88018d
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1939
-    relation: :hasBirthYear
-    source: Thomas_Patrick_John_Anson
-  AddLiteral (596e910f-338a-4d82-93bd-b33cea7afa53)
- Call ID: 596e910f-338a-4d82-93bd-b33cea7afa53
-  Args:
-    relation: :hasDeathYear
-    source: Thomas_Patrick_John_Anson
-    literal_type: xsd:integer
-    literal_value: 2005
-  AddLiteral (fa2fc5f5-eeb4-4da6-9a73-fbd46b1ab48a)
- Call ID: fa2fc5f5-eeb4-4da6-9a73-fbd46b1ab48a
-  Args:
-    literal_value: Patrick Lichfield
-    literal_type: xsd:string
-    relation: :knownAs
-    source: Thomas_Patrick_John_Anson
-  AssignClass (d8c394f7-5b25-481b-b71c-e80ccf6d17a6)
- Call ID: d8c394f7-5b25-481b-b71c-e80ccf6d17a6
-  Args:
-    type: :Man
-    source: Thomas_William_Arnold_Anson
-  AssignClass (8f01d619-1592-4547-81e1-86090ff78936)
- Call ID: 8f01d619-1592-4547-81e1-86090ff78936
-  Args:
-    type: :Person
-    source: Thomas_William_Arnold_Anson
-  AddLiteral (0d437fb8-061d-4288-8d74-a3743abef45e)
- Call ID: 0d437fb8-061d-4288-8d74-a3743abef45e
-  Args:
-    relation: :hasBirthYear
-    source: Thomas_William_Arnold_Anson
-    literal_type: xsd:integer
-    literal_value: 1913
-  AddLiteral (8f19daab-4981-4d45-9a68-5d12c865e3ab)
- Call ID: 8f19daab-4981-4d45-9a68-5d12c865e3ab
-  Args:
-    relation: :hasDeathYear
-    source: Thomas_William_Arnold_Anson
-    literal_value: 1958
-    literal_type: xsd:integer
-  AddTriple (24d3e6c0-4268-4409-98ea-b47f2114dd0d)
- Call ID: 24d3e6c0-4268-4409-98ea-b47f2114dd0d
-  Args:
-    source: Thomas_Patrick_John_Anson
-    target: Thomas_William_Arnold_Anson
-    relation: :hasFather
-  AssignClass (9d17d6f3-4a35-4370-9ff5-5cb033558ba3)
- Call ID: 9d17d6f3-4a35-4370-9ff5-5cb033558ba3
-  Args:
-    source: Thomas_Edward_Anson
-    type: :Man
-  AssignClass (73f56291-3317-426d-8d32-23ab4f477e2e)
- Call ID: 73f56291-3317-426d-8d32-23ab4f477e2e
-  Args:
-    type: :Person
-    source: Thomas_Edward_Anson
-  AddLiteral (0873096f-e43e-4f68-8643-9186425fe473)
- Call ID: 0873096f-e43e-4f68-8643-9186425fe473
-  Args:
-    literal_value: 1883
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Thomas_Edward_Anson
-  AddLiteral (5ddb7b8c-66ef-43d3-b8a2-660b474305c9)
- Call ID: 5ddb7b8c-66ef-43d3-b8a2-660b474305c9
-  Args:
-    source: Thomas_Edward_Anson
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1960
-  AddTriple (f0955eca-0a2d-49a8-96cc-2c2e53ed3912)
- Call ID: f0955eca-0a2d-49a8-96cc-2c2e53ed3912
-  Args:
-    relation: :hasFather
-    target: Thomas_Edward_Anson
-    source: Thomas_William_Arnold_Anson
-  AssignClass (48683615-8488-4b75-9e25-2db7f818edb4)
- Call ID: 48683615-8488-4b75-9e25-2db7f818edb4
-  Args:
-    source: Anne_Bowes-Lyon
-    type: :Person
-  AssignClass (85cf7507-a96c-4d3a-ab89-1e73fc570a45)
- Call ID: 85cf7507-a96c-4d3a-ab89-1e73fc570a45
-  Args:
+    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
     type: :Woman
-    source: Anne_Bowes-Lyon
-  AddLiteral (f11fd91a-1e65-4b37-b154-750e2d94be63)
- Call ID: f11fd91a-1e65-4b37-b154-750e2d94be63
+  AssignClass (6c844c63-1605-454c-ab2b-6031ae83d314)
+ Call ID: 6c844c63-1605-454c-ab2b-6031ae83d314
   Args:
-    literal_type: xsd:integer
-    literal_value: 1917
+    source: :Prince_Carlos_of_Bourbon_Two_Sicilies
+    type: :Man
+  AssignClass (67960426-53f2-4cfe-939d-42f9e10ff3da)
+ Call ID: 67960426-53f2-4cfe-939d-42f9e10ff3da
+  Args:
+    source: :Maria_de_las_Mercedes_Princess_of_Asturias
+    type: :Woman
+  AssignClass (31df20a1-72d1-4cdd-b0c1-bb29fd06626b)
+ Call ID: 31df20a1-72d1-4cdd-b0c1-bb29fd06626b
+  Args:
+    source: :Alfonso_XII_of_Spain
+    type: :Man
+  AssignClass (daa5343d-9bcc-4f13-a6be-d1e290a6819f)
+ Call ID: daa5343d-9bcc-4f13-a6be-d1e290a6819f
+  Args:
+    source: :Maria_Christina_of_Austria
+    type: :Woman
+  AssignClass (92361360-1fc8-46cf-874d-4aecf7f5c4cf)
+ Call ID: 92361360-1fc8-46cf-874d-4aecf7f5c4cf
+  Args:
+    source: :Jan_Kanty_Zamoyski
+    type: :Man
+  AssignClass (f821dfd1-b139-4c9e-8130-fbe62cd33d4c)
+ Call ID: f821dfd1-b139-4c9e-8130-fbe62cd33d4c
+  Args:
+    source: :Andrzej_Zamoyski
+    type: :Man
+  AssignClass (dcd00033-f8e1-488c-ada2-84692dd7cafa)
+ Call ID: dcd00033-f8e1-488c-ada2-84692dd7cafa
+  Args:
+    source: :Maria_Carolina_of_Bourbon_Two_Sicilies
+    type: :Woman
+  AddLiteral (d49f02b1-dc95-4dc4-b504-c1d8416975c4)
+ Call ID: d49f02b1-dc95-4dc4-b504-c1d8416975c4
+  Args:
     relation: :hasBirthYear
-    source: Anne_Bowes-Lyon
-  AddLiteral (42b85bdf-4cf7-41fc-a782-d82f2b9cc410)
- Call ID: 42b85bdf-4cf7-41fc-a782-d82f2b9cc410
-  Args:
-    source: Anne_Bowes-Lyon
-    relation: :hasDeathYear
-    literal_value: 1980
+    literal_value: 1904
+    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
     literal_type: xsd:integer
-  AddTriple (f984bcaa-d925-4fc6-97be-07828eb082e3)
- Call ID: f984bcaa-d925-4fc6-97be-07828eb082e3
+  AddLiteral (36d9c231-5ca4-4019-a2b5-3cbc7d06f225)
+ Call ID: 36d9c231-5ca4-4019-a2b5-3cbc7d06f225
   Args:
-    target: Anne_Bowes-Lyon
+    literal_type: xsd:integer
+    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
+    relation: :hasDeathYear
+    literal_value: 1985
+  AddTriple (8d0fc501-2911-4b36-a1f5-7b07e57fde26)
+ Call ID: 8d0fc501-2911-4b36-a1f5-7b07e57fde26
+  Args:
+    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
+    relation: :hasFather
+    target: :Prince_Carlos_of_Bourbon_Two_Sicilies
+  AddTriple (eb38de50-ebc9-40df-affe-cbaabbaaee76)
+ Call ID: eb38de50-ebc9-40df-affe-cbaabbaaee76
+  Args:
     relation: :hasMother
-    source: Thomas_Patrick_John_Anson
-  AssignClass (a94f126b-4c01-4c50-8ef1-4ddc35568bb2)
- Call ID: a94f126b-4c01-4c50-8ef1-4ddc35568bb2
+    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
+    target: :Maria_de_las_Mercedes_Princess_of_Asturias
+  AddTriple (10b16070-b24a-48e0-82f2-784863b9a7c6)
+ Call ID: 10b16070-b24a-48e0-82f2-784863b9a7c6
   Args:
-    source: Elizabeth_Georgiana_Anson
-    type: :Person
-  AssignClass (a7c4f75e-36e1-4ed3-9b39-be0952670b94)
- Call ID: a7c4f75e-36e1-4ed3-9b39-be0952670b94
-  Args:
-    source: Elizabeth_Georgiana_Anson
-    type: :Woman
-  AddLiteral (8d2ce16e-5f91-4ab5-8a76-311179d59905)
- Call ID: 8d2ce16e-5f91-4ab5-8a76-311179d59905
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1941
-    relation: :hasBirthYear
-    source: Elizabeth_Georgiana_Anson
-  AddLiteral (a7233bba-9e2f-4a3d-bdae-b548141fa129)
- Call ID: a7233bba-9e2f-4a3d-bdae-b548141fa129
-  Args:
-    relation: :hasDeathYear
-    source: Elizabeth_Georgiana_Anson
-    literal_type: xsd:integer
-    literal_value: 2020
-  AddTriple (075fdf34-5a66-4dec-800a-def281c6e6b8)
- Call ID: 075fdf34-5a66-4dec-800a-def281c6e6b8
-  Args:
-    source: Thomas_Patrick_John_Anson
-    relation: :hasSister
-    target: Elizabeth_Georgiana_Anson
-  AddTriple (8c52d5f4-7e65-4463-98d7-f4cbc465fe83)
- Call ID: 8c52d5f4-7e65-4463-98d7-f4cbc465fe83
-  Args:
-    source: Elizabeth_Georgiana_Anson
+    target: :Alfonso_XII_of_Spain
+    source: :Maria_de_las_Mercedes_Princess_of_Asturias
     relation: :hasFather
-    target: Thomas_William_Arnold_Anson
-  AddTriple (38cd341f-10ae-44d0-a70c-772b5cfe6bf9)
- Call ID: 38cd341f-10ae-44d0-a70c-772b5cfe6bf9
+  AddTriple (a133850e-fde6-4fd6-85df-cfdc4ca70fed)
+ Call ID: a133850e-fde6-4fd6-85df-cfdc4ca70fed
   Args:
-    source: Elizabeth_Georgiana_Anson
     relation: :hasMother
-    target: Anne_Bowes-Lyon
-  AssignClass (4f0bf516-dd3e-4146-adbe-28a77c79cd36)
- Call ID: 4f0bf516-dd3e-4146-adbe-28a77c79cd36
+    source: :Maria_de_las_Mercedes_Princess_of_Asturias
+    target: :Maria_Christina_of_Austria
+  AddTriple (37126175-ef1a-422e-bf0a-df7d7b5b043b)
+ Call ID: 37126175-ef1a-422e-bf0a-df7d7b5b043b
   Args:
-    type: :Person
-    source: Leonora_Grosvenor
-  AssignClass (ecbce984-ba64-40b0-a770-8efcc21408f2)
- Call ID: ecbce984-ba64-40b0-a770-8efcc21408f2
+    target: :Andrzej_Zamoyski
+    source: :Jan_Kanty_Zamoyski
+    relation: :hasFather
+  AddTriple (7d3f4e05-0770-42a3-90de-893505f7f442)
+ Call ID: 7d3f4e05-0770-42a3-90de-893505f7f442
   Args:
-    source: Leonora_Grosvenor
-    type: :Woman
-  AddLiteral (b72cdbbe-6fd5-4173-9742-db8bf8bc6f74)
- Call ID: b72cdbbe-6fd5-4173-9742-db8bf8bc6f74
+    target: :Maria_Carolina_of_Bourbon_Two_Sicilies
+    relation: :hasMother
+    source: :Jan_Kanty_Zamoyski
+  AddLiteral (a6345ca5-a4b6-4492-ac73-2f6ebd624b6c)
+ Call ID: a6345ca5-a4b6-4492-ac73-2f6ebd624b6c
   Args:
-    source: Thomas_Patrick_John_Anson
+    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
+    literal_type: xsd:integer
+    literal_value: 1929
     relation: :hasMarriageYear
-    literal_value: 1975
-    literal_type: xsd:integer
-  AddTriple (f12b8a19-aa4d-4a83-ac90-8f5a026e4ae1)
- Call ID: f12b8a19-aa4d-4a83-ac90-8f5a026e4ae1
+  AddTriple (20758e5d-80a1-46b4-becb-59910720764b)
+ Call ID: 20758e5d-80a1-46b4-becb-59910720764b
   Args:
-    source: Thomas_Patrick_John_Anson
-    target: Leonora_Grosvenor
+    target: :Jan_Kanty_Zamoyski
+    source: :Isabel_Alfonsa_of_Bourbon_Two_Sicilies
     relation: :hasRelation
-  AssignClass (21da6c25-0610-4a28-8e4b-d4af88b802c2)
- Call ID: 21da6c25-0610-4a28-8e4b-d4af88b802c2
-  Args:
-    source: Robert_Grosvenor
-    type: :Man
-  AssignClass (b941000c-a787-4e0f-bcfa-3e6158bf1fa8)
- Call ID: b941000c-a787-4e0f-bcfa-3e6158bf1fa8
-  Args:
-    source: Robert_Grosvenor
-    type: :Person
-  AddTriple (e33e41a5-6f7a-422c-9222-593fc0b223ba)
- Call ID: e33e41a5-6f7a-422c-9222-593fc0b223ba
-  Args:
-    relation: :hasFather
-    target: Robert_Grosvenor
-    source: Leonora_Grosvenor
-  AssignClass (2fed4067-6436-4f4c-ab81-bcb81a729b41)
- Call ID: 2fed4067-6436-4f4c-ab81-bcb81a729b41
-  Args:
-    type: :Person
-    source: Annunziata_Asquith
-  AssignClass (73b826f6-ab48-4443-91a4-02e72913f553)
- Call ID: 73b826f6-ab48-4443-91a4-02e72913f553
-  Args:
-    source: Annunziata_Asquith
-    type: :Woman
-  AddTriple (00c45421-8ef6-4886-9014-1711c6356bfe)
- Call ID: 00c45421-8ef6-4886-9014-1711c6356bfe
-  Args:
-    relation: :hasRelation
-    target: Annunziata_Asquith
-    source: Thomas_Patrick_John_Anson
-  AssignClass (efe165b0-e1df-4aa4-8e5d-9cff4527c54a)
- Call ID: efe165b0-e1df-4aa4-8e5d-9cff4527c54a
-  Args:
-    type: :Man
-    source: Julian_Asquith
-  AssignClass (75c9dade-dee8-4f42-96ea-3deb7eee0a15)
- Call ID: 75c9dade-dee8-4f42-96ea-3deb7eee0a15
-  Args:
-    type: :Person
-    source: Julian_Asquith
-  AddTriple (304f288f-bd93-4c54-a05b-a261c3eadc97)
- Call ID: 304f288f-bd93-4c54-a05b-a261c3eadc97
-  Args:
-    target: Julian_Asquith
-    relation: :hasFather
-    source: Annunziata_Asquith
-  Finish (54d4977e-7565-490e-90e8-6eaae7969616)
- Call ID: 54d4977e-7565-490e-90e8-6eaae7969616
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -771,56 +620,41 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Thomas_Patrick_John_Anson a :Man,
-          :Person ;
-      :hasBirthYear 1939 ;
-      :hasDeathYear 2005 ;
-      :hasFather data:Thomas_William_Arnold_Anson ;
-      :hasMarriageYear 1975 ;
-      :hasMother data:Anne_Bowes-Lyon ;
-      :hasRelation data:Annunziata_Asquith,
-          data:Leonora_Grosvenor ;
-      :hasSister data:Elizabeth_Georgiana_Anson ;
-      :knownAs "Patrick Lichfield"^^xsd:string .
+  data:Isabel_Alfonsa_of_Bourbon_Two_Sicilies a :Woman ;
+      :hasBirthYear 1904 ;
+      :hasDeathYear 1985 ;
+      :hasFather data:Prince_Carlos_of_Bourbon_Two_Sicilies ;
+      :hasMarriageYear 1929 ;
+      :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+      :hasRelation data:Jan_Kanty_Zamoyski .
 
-  data:Annunziata_Asquith a :Person,
-          :Woman ;
-      :hasFather data:Julian_Asquith .
+  data:Alfonso_XII_of_Spain a :Man .
 
-  data:Elizabeth_Georgiana_Anson a :Person,
-          :Woman ;
-      :hasBirthYear 1941 ;
-      :hasDeathYear 2020 ;
-      :hasFather data:Thomas_William_Arnold_Anson ;
-      :hasMother data:Anne_Bowes-Lyon .
+  data:Andrzej_Zamoyski a :Man .
 
-  data:Julian_Asquith a :Man,
-          :Person .
+  data:Jan_Kanty_Zamoyski a :Man ;
+      :hasFather data:Andrzej_Zamoyski ;
+      :hasMother data:Maria_Carolina_of_Bourbon_Two_Sicilies .
 
-  data:Leonora_Grosvenor a :Person,
-          :Woman ;
-      :hasFather data:Robert_Grosvenor .
+  data:Maria_Carolina_of_Bourbon_Two_Sicilies a :Woman .
 
-  data:Robert_Grosvenor a :Man,
-          :Person .
+  data:Maria_Christina_of_Austria a :Woman .
 
-  data:Thomas_Edward_Anson a :Man,
-          :Person ;
-      :hasBirthYear 1883 ;
-      :hasDeathYear 1960 .
+  data:Maria_de_las_Mercedes_Princess_of_Asturias a :Woman ;
+      :hasFather data:Alfonso_XII_of_Spain ;
+      :hasMother data:Maria_Christina_of_Austria .
 
-  data:Anne_Bowes-Lyon a :Person,
-          :Woman ;
-      :hasBirthYear 1917 ;
-      :hasDeathYear 1980 .
-
-  data:Thomas_William_Arnold_Anson a :Man,
-          :Person ;
-      :hasBirthYear 1913 ;
-      :hasDeathYear 1958 ;
-      :hasFather data:Thomas_Edward_Anson .
+  data:Prince_Carlos_of_Bourbon_Two_Sicilies a :Man .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (a7c9ba8f-4bee-4362-9a31-7d4dc8bda313)
+ Call ID: a7c9ba8f-4bee-4362-9a31-7d4dc8bda313
+  Args:
 
 ================================= Tool Message =================================
 
@@ -830,182 +664,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (12b237ad-143f-4ad9-9325-409f6254795f)
- Call ID: 12b237ad-143f-4ad9-9325-409f6254795f
+  ValidateShacl (bbfe1284-99b2-49ac-a46a-221f41559357)
+ Call ID: bbfe1284-99b2-49ac-a46a-221f41559357
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:21
+Total violations:18
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Thomas_William_Arnold_Anson' for the property 'hasFather' on node 'Thomas_Patrick_John_Anson' is missing the required ':Man' or ':Ancestor' class.
+      The node Andrzej_Zamoyski is assigned as the father of Jan_Kanty_Zamoyski, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Thomas_William_Arnold_Anson', class: ':Man')
+      AssignClass(Andrzej_Zamoyski, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Thomas_Edward_Anson' for the property 'hasFather' on node 'Thomas_William_Arnold_Anson' is missing the required ':Man' or ':Ancestor' class.
+      The node Maria_Carolina_of_Bourbon_Two_Sicilies is assigned as the mother of Jan_Kanty_Zamoyski, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Thomas_Edward_Anson', class: ':Man')
+      AssignClass(Maria_Carolina_of_Bourbon_Two_Sicilies, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Anne_Bowes-Lyon' for the property 'hasMother' on node 'Thomas_Patrick_John_Anson' is missing the required ':Woman' or ':Ancestor' class.
+      The node Prince_Carlos_of_Bourbon_Two_Sicilies is assigned as the father of Isabel_Alfonsa_of_Bourbon_Two_Sicilies, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Anne_Bowes-Lyon', class: ':Woman')
+      AssignClass(Prince_Carlos_of_Bourbon_Two_Sicilies, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Thomas_William_Arnold_Anson' for the property 'hasFather' on node 'Thomas_Patrick_John_Anson' is missing the required ':Man' or ':Ancestor' class.
+      The node Andrzej_Zamoyski is assigned as the father of Jan_Kanty_Zamoyski, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Thomas_William_Arnold_Anson', class: ':Man')
+      AssignClass(Andrzej_Zamoyski, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Robert_Grosvenor' for the property 'hasFather' on node 'Leonora_Grosvenor' is missing the required ':Man' or ':Ancestor' class.
+      The node Alfonso_XII_of_Spain is assigned as the father of Maria_de_las_Mercedes_Princess_of_Asturias, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Robert_Grosvenor', class: ':Man')
+      AssignClass(Alfonso_XII_of_Spain, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Julian_Asquith' for the property 'hasFather' on node 'Annunziata_Asquith' is missing the required ':Man' or ':Ancestor' class.
+      The node Maria_de_las_Mercedes_Princess_of_Asturias is assigned as the mother of Isabel_Alfonsa_of_Bourbon_Two_Sicilies, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Julian_Asquith', class: ':Man')
+      AssignClass(Maria_de_las_Mercedes_Princess_of_Asturias, :Ancestor)
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Thomas_Edward_Anson' for the property 'hasFather' on node 'Thomas_William_Arnold_Anson' is missing the required ':Man' or ':Ancestor' class.
+      The node Maria_Carolina_of_Bourbon_Two_Sicilies is assigned as the mother of Jan_Kanty_Zamoyski, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Thomas_Edward_Anson', class: ':Man')
+      AssignClass(Maria_Carolina_of_Bourbon_Two_Sicilies, :Ancestor)
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Thomas_William_Arnold_Anson' for the property 'hasFather' on node 'Elizabeth_Georgiana_Anson' is missing the required ':Man' or ':Ancestor' class.
+      The node Maria_Christina_of_Austria is assigned as the mother of Maria_de_las_Mercedes_Princess_of_Asturias, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Thomas_William_Arnold_Anson', class: ':Man')
+      AssignClass(Maria_Christina_of_Austria, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Anne_Bowes-Lyon' for the property 'hasMother' on node 'Thomas_Patrick_John_Anson' is missing the required ':Woman' or ':Ancestor' class.
+      The node Prince_Carlos_of_Bourbon_Two_Sicilies is assigned as the father of Isabel_Alfonsa_of_Bourbon_Two_Sicilies, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Anne_Bowes-Lyon', class: ':Woman')
+      AssignClass(Prince_Carlos_of_Bourbon_Two_Sicilies, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Anne_Bowes-Lyon' for the property 'hasMother' on node 'Elizabeth_Georgiana_Anson' is missing the required ':Woman' or ':Ancestor' class.
+      The node Andrzej_Zamoyski is assigned as the father of Jan_Kanty_Zamoyski, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Anne_Bowes-Lyon', class: ':Woman')
+      AssignClass(Andrzej_Zamoyski, :Ancestor)
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Thomas_William_Arnold_Anson' for the property 'hasFather' on node 'Thomas_Patrick_John_Anson' is missing the required ':Man' or ':Ancestor' class.
+      The node Alfonso_XII_of_Spain is assigned as the father of Maria_de_las_Mercedes_Princess_of_Asturias, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Thomas_William_Arnold_Anson', class: ':Man')
+      AssignClass(Alfonso_XII_of_Spain, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Robert_Grosvenor' for the property 'hasFather' on node 'Leonora_Grosvenor' is missing the required ':Man' or ':Ancestor' class.
+      The node Maria_de_las_Mercedes_Princess_of_Asturias is assigned as the mother of Isabel_Alfonsa_of_Bourbon_Two_Sicilies, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Robert_Grosvenor', class: ':Man')
+      AssignClass(Maria_de_las_Mercedes_Princess_of_Asturias, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Julian_Asquith' for the property 'hasFather' on node 'Annunziata_Asquith' is missing the required ':Man' or ':Ancestor' class.
+      The node Maria_Carolina_of_Bourbon_Two_Sicilies is assigned as the mother of Jan_Kanty_Zamoyski, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Julian_Asquith', class: ':Man')
+      AssignClass(Maria_Carolina_of_Bourbon_Two_Sicilies, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Thomas_Edward_Anson' for the property 'hasFather' on node 'Thomas_William_Arnold_Anson' is missing the required ':Man' or ':Ancestor' class.
+      The node Maria_Christina_of_Austria is assigned as the mother of Maria_de_las_Mercedes_Princess_of_Asturias, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Thomas_Edward_Anson', class: ':Man')
+      AssignClass(Maria_Christina_of_Austria, :Ancestor)
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Thomas_William_Arnold_Anson' for the property 'hasFather' on node 'Elizabeth_Georgiana_Anson' is missing the required ':Man' or ':Ancestor' class.
+      The node Prince_Carlos_of_Bourbon_Two_Sicilies is assigned as the father of Isabel_Alfonsa_of_Bourbon_Two_Sicilies, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Thomas_William_Arnold_Anson', class: ':Man')
+      AssignClass(Prince_Carlos_of_Bourbon_Two_Sicilies, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Anne_Bowes-Lyon' for the property 'hasMother' on node 'Thomas_Patrick_John_Anson' is missing the required ':Woman' or ':Ancestor' class.
+      The node Alfonso_XII_of_Spain is assigned as the father of Maria_de_las_Mercedes_Princess_of_Asturias, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Anne_Bowes-Lyon', class: ':Woman')
+      AssignClass(Alfonso_XII_of_Spain, :Ancestor)
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Anne_Bowes-Lyon' for the property 'hasMother' on node 'Elizabeth_Georgiana_Anson' is missing the required ':Woman' or ':Ancestor' class.
+      The node Maria_de_las_Mercedes_Princess_of_Asturias is assigned as the mother of Isabel_Alfonsa_of_Bourbon_Two_Sicilies, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Anne_Bowes-Lyon', class: ':Woman')
+      AssignClass(Maria_de_las_Mercedes_Princess_of_Asturias, :Ancestor)
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Thomas_William_Arnold_Anson' for the property 'hasFather' on node 'Elizabeth_Georgiana_Anson' is missing the required ':Man' or ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Thomas_William_Arnold_Anson', class: ':Man')
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Robert_Grosvenor' for the property 'hasFather' on node 'Leonora_Grosvenor' is missing the required ':Man' or ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Robert_Grosvenor', class: ':Man')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Julian_Asquith' for the property 'hasFather' on node 'Annunziata_Asquith' is missing the required ':Man' or ':Ancestor' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Julian_Asquith', class: ':Man')
-
-
-  Violation [21]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Anne_Bowes-Lyon' for the property 'hasMother' on node 'Elizabeth_Georgiana_Anson' is missing the required ':Woman' or ':Ancestor' class.
+      The node Maria_Christina_of_Austria is assigned as the mother of Maria_de_las_Mercedes_Princess_of_Asturias, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Anne_Bowes-Lyon', class: ':Woman')
+      AssignClass(Maria_Christina_of_Austria, :Ancestor)
 
 
 
@@ -1014,34 +824,40 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (af5901ae-16f0-40f3-b902-e10e15a467c6)
- Call ID: af5901ae-16f0-40f3-b902-e10e15a467c6
+  AssignClass (4528a1d2-7f85-42ea-a045-623272d22838)
+ Call ID: 4528a1d2-7f85-42ea-a045-623272d22838
   Args:
-    source: Thomas_William_Arnold_Anson
+    source: :Andrzej_Zamoyski
     type: :Ancestor
-  AssignClass (d3087564-a7f9-4c89-9275-3c1f49426fb9)
- Call ID: d3087564-a7f9-4c89-9275-3c1f49426fb9
+  AssignClass (ac66719e-bea4-4788-b305-5cc43e8a5969)
+ Call ID: ac66719e-bea4-4788-b305-5cc43e8a5969
   Args:
+    source: :Maria_Carolina_of_Bourbon_Two_Sicilies
     type: :Ancestor
-    source: Thomas_Edward_Anson
-  AssignClass (6981f6b8-b193-4299-86ee-504bbb76a198)
- Call ID: 6981f6b8-b193-4299-86ee-504bbb76a198
-  Args:
-    source: Anne_Bowes-Lyon
-    type: :Ancestor
-  AssignClass (e25cfb96-f2ec-4ea0-ac15-15f8b19e3270)
- Call ID: e25cfb96-f2ec-4ea0-ac15-15f8b19e3270
-  Args:
-    source: Robert_Grosvenor
-    type: :Ancestor
-  AssignClass (ae1675d4-7dd4-4ce6-b0e0-c0f43a033694)
- Call ID: ae1675d4-7dd4-4ce6-b0e0-c0f43a033694
+  AssignClass (7a7478f9-b085-40c6-86bf-3a93e5f58b7b)
+ Call ID: 7a7478f9-b085-40c6-86bf-3a93e5f58b7b
   Args:
     type: :Ancestor
-    source: Julian_Asquith
-  ValidateShacl (52cc6089-e68e-4aae-a901-3d5a4717836d)
- Call ID: 52cc6089-e68e-4aae-a901-3d5a4717836d
+    source: :Prince_Carlos_of_Bourbon_Two_Sicilies
+  AssignClass (8e05bfee-79c6-4587-9222-6d7ea74d6b70)
+ Call ID: 8e05bfee-79c6-4587-9222-6d7ea74d6b70
   Args:
+    type: :Ancestor
+    source: :Alfonso_XII_of_Spain
+  AssignClass (98d68155-09cd-42ce-93c8-50e56d629949)
+ Call ID: 98d68155-09cd-42ce-93c8-50e56d629949
+  Args:
+    source: :Maria_de_las_Mercedes_Princess_of_Asturias
+    type: :Ancestor
+  AssignClass (d91eeccd-256a-44a8-8202-8f94f2acf42a)
+ Call ID: d91eeccd-256a-44a8-8202-8f94f2acf42a
+  Args:
+    type: :Ancestor
+    source: :Maria_Christina_of_Austria
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1066,61 +882,47 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Thomas_Patrick_John_Anson a :Man,
-          :Person ;
-      :hasBirthYear 1939 ;
-      :hasDeathYear 2005 ;
-      :hasFather data:Thomas_William_Arnold_Anson ;
-      :hasMarriageYear 1975 ;
-      :hasMother data:Anne_Bowes-Lyon ;
-      :hasRelation data:Annunziata_Asquith,
-          data:Leonora_Grosvenor ;
-      :hasSister data:Elizabeth_Georgiana_Anson ;
-      :knownAs "Patrick Lichfield"^^xsd:string .
+  data:Isabel_Alfonsa_of_Bourbon_Two_Sicilies a :Woman ;
+      :hasBirthYear 1904 ;
+      :hasDeathYear 1985 ;
+      :hasFather data:Prince_Carlos_of_Bourbon_Two_Sicilies ;
+      :hasMarriageYear 1929 ;
+      :hasMother data:Maria_de_las_Mercedes_Princess_of_Asturias ;
+      :hasRelation data:Jan_Kanty_Zamoyski .
 
-  data:Annunziata_Asquith a :Person,
+  data:Alfonso_XII_of_Spain a :Ancestor,
+          :Man .
+
+  data:Andrzej_Zamoyski a :Ancestor,
+          :Man .
+
+  data:Jan_Kanty_Zamoyski a :Man ;
+      :hasFather data:Andrzej_Zamoyski ;
+      :hasMother data:Maria_Carolina_of_Bourbon_Two_Sicilies .
+
+  data:Maria_Carolina_of_Bourbon_Two_Sicilies a :Ancestor,
+          :Woman .
+
+  data:Maria_Christina_of_Austria a :Ancestor,
+          :Woman .
+
+  data:Maria_de_las_Mercedes_Princess_of_Asturias a :Ancestor,
           :Woman ;
-      :hasFather data:Julian_Asquith .
+      :hasFather data:Alfonso_XII_of_Spain ;
+      :hasMother data:Maria_Christina_of_Austria .
 
-  data:Elizabeth_Georgiana_Anson a :Person,
-          :Woman ;
-      :hasBirthYear 1941 ;
-      :hasDeathYear 2020 ;
-      :hasFather data:Thomas_William_Arnold_Anson ;
-      :hasMother data:Anne_Bowes-Lyon .
-
-  data:Julian_Asquith a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Leonora_Grosvenor a :Person,
-          :Woman ;
-      :hasFather data:Robert_Grosvenor .
-
-  data:Robert_Grosvenor a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Thomas_Edward_Anson a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1883 ;
-      :hasDeathYear 1960 .
-
-  data:Anne_Bowes-Lyon a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1917 ;
-      :hasDeathYear 1980 .
-
-  data:Thomas_William_Arnold_Anson a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1913 ;
-      :hasDeathYear 1958 ;
-      :hasFather data:Thomas_Edward_Anson .
+  data:Prince_Carlos_of_Bourbon_Two_Sicilies a :Ancestor,
+          :Man .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (32c17b21-c2f7-42e3-919c-f64c919d91e5)
+ Call ID: 32c17b21-c2f7-42e3-919c-f64c919d91e5
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1130,6 +932,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (d666f35b-bbaf-4159-966d-8a87f942b90e)
- Call ID: d666f35b-bbaf-4159-966d-8a87f942b90e
+  Finish (b318898d-1d8a-4efd-8b61-d8a1d041627c)
+ Call ID: b318898d-1d8a-4efd-8b61-d8a1d041627c
   Args:

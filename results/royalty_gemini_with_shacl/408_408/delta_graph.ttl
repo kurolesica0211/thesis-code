@@ -2,38 +2,36 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:King_Charles_III a :Man,
-        :Person .
-
-data:Lady_Louise_Mountbatten-Windsor a :Person,
+data:MargaretRhodes a :Person,
         :Woman ;
-    :alsoKnownAs "Lady Louise Windsor"^^xsd:string ;
-    :hasBirthYear 2003 ;
-    :hasBrother data:James ;
-    :hasFather data:Prince_Edward_Duke_of_Edinburgh ;
-    :hasMother data:Sophie_Duchess_of_Edinburgh ;
-    :knownAs "Lady Louise Mountbatten-Windsor"^^xsd:string .
+    :formerlyKnownAs "Margaret Elphinstone"^^xsd:string ;
+    :hasBirthYear 1925 ;
+    :hasDeathYear 2016 ;
+    :hasFather data:LordElphinstone16th ;
+    :hasMarriageYear 1950 ;
+    :hasMother data:LadyMaryBowesLyon ;
+    :hasRelation data:DenysGravenorRhodes .
 
-data:James a :Man,
-        :Person ;
-    :hasFather data:Prince_Edward_Duke_of_Edinburgh ;
-    :hasMother data:Sophie_Duchess_of_Edinburgh .
-
-data:Prince_Philip a :Ancestor,
-        :Man,
-        :Person .
-
-data:Queen_Elizabeth_II a :Ancestor,
-        :Person,
+data:PrincessMargaretCountessOfSnowdon a :Person,
         :Woman .
 
-data:Prince_Edward_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Prince_Philip ;
-    :hasMother data:Queen_Elizabeth_II .
+data:QueenElizabethII a :Person,
+        :Woman .
 
-data:Sophie_Duchess_of_Edinburgh a :Ancestor,
+data:DenysGravenorRhodes a :Man,
+        :Person ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 1981 .
+
+data:LadyMaryBowesLyon a :Ancestor,
         :Person,
+        :Woman ;
+    :isSisterOf data:QueenElizabethTheQueenMother .
+
+data:LordElphinstone16th a :Ancestor,
+        :Man,
+        :Person .
+
+data:QueenElizabethTheQueenMother a :Person,
         :Woman .
 

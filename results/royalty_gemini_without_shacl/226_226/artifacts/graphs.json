@@ -4,13 +4,20 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:Prince_Carlo_Duke_of_Castro ;\n    :hasMother data:Camilla_Crociani ;\n    :hasSister data:Maria_Carolina_of_Bourbon-Two_Sicilies .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Gerald_David_Lascelles a :Man ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 1998 ;\n    :hasFather data:Henry_Lascelles%2C_6th_Earl_of_Harewood ;\n    :hasMarriageYear 1978 ;\n    :hasMother data:Mary%2C_Princess_Royal ;\n    :hasRelation data:Elizabeth_Colvin .\n\ndata:Gerald_Lascelles :hasRelation data:Edward_VIII .\n\ndata:Edward_VIII a :Man .\n\ndata:Elizabeth_Colvin a :Woman ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2006 .\n\ndata:Henry_Lascelles%2C_6th_Earl_of_Harewood a :Man .\n\ndata:King_George_V a :Man .\n\ndata:Mary%2C_Princess_Royal a :Woman ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Queen_Mary a :Woman .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 1,
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Gerald_David_Lascelles a :Man ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 1998 ;\n    :hasFather data:Henry_Lascelles%2C_6th_Earl_of_Harewood ;\n    :hasMarriageYear 1978 ;\n    :hasMother data:Mary%2C_Princess_Royal ;\n    :hasRelation data:Elizabeth_Colvin .\n\ndata:Gerald_Lascelles a :Man ;\n    :hasRelation data:Edward_VIII .\n\ndata:Edward_VIII a :Man .\n\ndata:Elizabeth_Colvin a :Woman ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2006 .\n\ndata:Henry_Lascelles%2C_6th_Earl_of_Harewood a :Man .\n\ndata:King_George_V a :Man .\n\ndata:Mary%2C_Princess_Royal a :Woman ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Queen_Mary a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,\n        :Woman ;\n    :hasBirthYear 2005 ;\n    :hasFather data:Prince_Carlo_Duke_of_Castro ;\n    :hasMother data:Camilla_Crociani ;\n    :hasSister data:Maria_Carolina_of_Bourbon-Two_Sicilies .\n\ndata:Camilla_Crociani a :Person,\n        :Woman .\n\ndata:Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,\n        :Woman .\n\ndata:Prince_Carlo_Duke_of_Castro a :Man,\n        :Person .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Gerald_David_Lascelles a :Man ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 1998 ;\n    :hasFather data:Henry_Lascelles%2C_6th_Earl_of_Harewood ;\n    :hasMarriageYear 1978 ;\n    :hasMother data:Mary%2C_Princess_Royal ;\n    :hasRelation data:Elizabeth_Colvin .\n\ndata:Gerald_Lascelles a :Man ;\n    :hasRelation data:Edward_VIII .\n\ndata:Edward_VIII a :Man .\n\ndata:Elizabeth_Colvin a :Woman ;\n    :hasBirthYear 1924 ;\n    :hasDeathYear 2006 .\n\ndata:Henry_Lascelles%2C_6th_Earl_of_Harewood a :Man .\n\ndata:King_George_V a :Man .\n\ndata:Mary%2C_Princess_Royal a :Woman ;\n    :hasFather data:King_George_V ;\n    :hasMother data:Queen_Mary .\n\ndata:Queen_Mary a :Woman .\n\n"
     }
 ]

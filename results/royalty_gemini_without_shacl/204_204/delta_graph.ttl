@@ -2,25 +2,28 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Beatriz_of_Spain a :Person,
+data:Pieter_van_Vollenhoven a :Man,
+        :Person .
+
+data:Queen_Wilhelmina a :Person,
         :Woman ;
-    :hasBirthYear 1909 ;
-    :hasDeathYear 2002 ;
-    :hasFather data:Alfonso_XIII_of_Spain ;
-    :hasMarriageYear 1935 ;
-    :hasMother data:Victoria_Eugenie_of_Battenberg ;
-    :hasRelation data:Alessandro_Torlonia ;
-    :isAuntOf data:Juan_Carlos_I .
+    :isMotherOf data:Queen_Juliana .
 
-data:Alessandro_Torlonia a :Man,
+data:King_Willem-Alexander a :Man,
         :Person .
 
-data:Alfonso_XIII_of_Spain a :Man,
-        :Person .
+data:Prince_Bernhard a :Man,
+        :Person ;
+    :isFatherOf data:Princess_Margriet .
 
-data:Juan_Carlos_I a :Man,
-        :Person .
+data:Princess_Margriet a :Person,
+        :Woman ;
+    :hasBirthYear 1943 ;
+    :hasFather data:Prince_Bernhard ;
+    :hasMother data:Queen_Juliana ;
+    :isAuntOf data:King_Willem-Alexander .
 
-data:Victoria_Eugenie_of_Battenberg a :Person,
-        :Woman .
+data:Queen_Juliana a :Person,
+        :Woman ;
+    :isMotherOf data:Princess_Margriet .
 

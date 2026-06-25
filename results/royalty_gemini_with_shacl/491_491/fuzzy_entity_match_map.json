@@ -1,79 +1,86 @@
 {
   "run_directory": "results/royalty_gemini_with_shacl",
   "task_directory": "results/royalty_gemini_with_shacl/491_491",
-  "text_file": "Q962762.txt",
-  "text_key": "Q962762",
-  "article": "https://en.wikipedia.org/wiki/Princess_Louise_of_Orl%C3%A9ans",
-  "article_key": "Princess Louise of Orléans",
+  "text_file": "Q946985.txt",
+  "text_key": "Q946985",
+  "article": "https://en.wikipedia.org/wiki/Gonzalo,_Duke_of_Aquitaine",
+  "article_key": "Gonzalo, Duke of Aquitaine",
   "main_entity": {
-    "uri": "http://example.com/data#Princess_Louise_of_Orléans",
-    "qid": "Q962762",
-    "label": "Princess Louise of Orléans"
+    "uri": "http://example.com/data#Prince_Gonzalo_de_Bourbon",
+    "qid": "Q946985",
+    "label": "Prince Gonzalo de Bourbon"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Princess_Louise_of_Orléans",
-      "qid": "Q962762",
-      "label": "Princess Louise of Orléans",
+      "uri": "http://example.com/data#Prince_Gonzalo_de_Bourbon",
+      "qid": "Q946985",
+      "label": "Prince Gonzalo de Bourbon",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Princess_Isabelle_dOrléans_1",
-      "qid": "Q273237",
-      "label": "Princess Isabelle d’Orléans",
+      "uri": "http://example.com/data#Emmanuelle_de_Dampierre",
+      "qid": "Q3052995",
+      "label": "Emmanuelle de Dampierre",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
-      "uri": "http://example.com/data#Princess_María_Isabel_of_Orléans",
-      "qid": "Q242879",
-      "label": "Princess María Isabel of Orléans",
+      "uri": "http://example.com/data#Infante_Jaime-_Duke_of_Segovia",
+      "qid": "Q703780",
+      "label": "Infante Jaime, Duke of Segovia",
       "distance": 1,
-      "gender": "female"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Alfonso_XIII",
+      "qid": "Q18363",
+      "label": "Alfonso XIII",
+      "distance": 2,
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Princess_Louise_Francoise_Marie_Laure_of_Orleans",
-      "extracted_local_name": "Princess_Louise_Francoise_Marie_Laure_of_Orleans",
-      "embedding_text": "Princess Louise Francoise Marie Laure of Orleans",
+      "extracted_uri": "http://example.org/data/AlfonsoXIII",
+      "extracted_local_name": "AlfonsoXIII",
+      "embedding_text": "Alfonso XIII",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Alfonso_XIII",
+      "ground_truth_qid": "Q18363",
+      "ground_truth_label": "Alfonso XIII",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Alfonso XIII",
+      "best_candidate_label": "Alfonso XIII",
+      "best_candidate_qid": "Q18363",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/EmmanuelleDeDampierre",
+      "extracted_local_name": "EmmanuelleDeDampierre",
+      "embedding_text": "Emmanuelle De Dampierre",
       "extracted_gender": "female",
       "matched": true,
-      "score": 0.8125,
-      "ground_truth_uri": "http://example.com/data#Princess_Isabelle_dOrléans_1",
-      "ground_truth_qid": "Q273237",
-      "ground_truth_label": "Princess Isabelle d’Orléans",
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Emmanuelle_de_Dampierre",
+      "ground_truth_qid": "Q3052995",
+      "ground_truth_label": "Emmanuelle de Dampierre",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Princess Isabelle Françoise Hélène Marie d'Orléans",
-      "best_candidate_label": "Princess Isabelle d’Orléans",
-      "best_candidate_qid": "Q273237",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.8125
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Emmanuelle de Dampierre",
+      "best_candidate_label": "Emmanuelle de Dampierre",
+      "best_candidate_qid": "Q3052995",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/Princess_Marie_Isabelle_dOrleans",
-      "extracted_local_name": "Princess_Marie_Isabelle_dOrleans",
-      "embedding_text": "Princess Marie Isabelle d Orleans",
-      "extracted_gender": "female",
-      "matched": true,
-      "score": 0.5531914893617021,
-      "ground_truth_uri": "http://example.com/data#Princess_María_Isabel_of_Orléans",
-      "ground_truth_qid": "Q242879",
-      "ground_truth_label": "Princess María Isabel of Orléans",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
-      "best_candidate_match_text": "Maria Isabella",
-      "best_candidate_label": "Princess María Isabel of Orléans",
-      "best_candidate_qid": "Q242879",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.5531914893617021
-    },
-    {
-      "extracted_uri": "http://example.org/data/Antoine_Duke_of_Montpensier",
-      "extracted_local_name": "Antoine_Duke_of_Montpensier",
-      "embedding_text": "Antoine Duke of Montpensier",
+      "extracted_uri": "http://example.org/data/AlfonsoBrother",
+      "extracted_local_name": "AlfonsoBrother",
+      "embedding_text": "Alfonso Brother",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -82,34 +89,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Don Alfonso de Borbon y Habsburgo",
+      "best_candidate_label": "Alfonso XIII",
+      "best_candidate_qid": "Q18363",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.5416666666666666
     },
     {
-      "extracted_uri": "http://example.org/data/Infanta_Luisa_Fernanda_of_Spain",
-      "extracted_local_name": "Infanta_Luisa_Fernanda_of_Spain",
-      "embedding_text": "Infanta Luisa Fernanda of Spain",
-      "extracted_gender": "female",
-      "matched": false,
-      "score": null,
-      "ground_truth_uri": null,
-      "ground_truth_qid": null,
-      "ground_truth_label": null,
-      "ground_truth_distance": null,
-      "ground_truth_gender": null,
-      "best_candidate_match_text": "Maria Isabella",
-      "best_candidate_label": "Princess María Isabel of Orléans",
-      "best_candidate_qid": "Q242879",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.35555555555555557
-    },
-    {
-      "extracted_uri": "http://example.org/data/Infante_Carlos_Prince_of_Bourbon_Two_Sicilies",
-      "extracted_local_name": "Infante_Carlos_Prince_of_Bourbon_Two_Sicilies",
-      "embedding_text": "Infante Carlos Prince of Bourbon Two Sicilies",
+      "extracted_uri": "http://example.org/data/Gonzalo",
+      "extracted_local_name": "Gonzalo",
+      "embedding_text": "Gonzalo",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -118,16 +107,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Prince Gonzalo de Bourbon",
+      "best_candidate_label": "Prince Gonzalo de Bourbon",
+      "best_candidate_qid": "Q946985",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.4375
     },
     {
-      "extracted_uri": "http://example.org/data/King_Felipe_VI_of_Spain",
-      "extracted_local_name": "King_Felipe_VI_of_Spain",
-      "embedding_text": "King Felipe VI of Spain",
+      "extracted_uri": "http://example.org/data/Jaime",
+      "extracted_local_name": "Jaime",
+      "embedding_text": "Jaime",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -136,16 +125,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Infante Jaime- Duke of Segovia",
+      "best_candidate_label": "Infante Jaime, Duke of Segovia",
+      "best_candidate_qid": "Q703780",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.2857142857142857
     },
     {
-      "extracted_uri": "http://example.org/data/Maria_de_las_Mercedes_Princess_of_Asturias",
-      "extracted_local_name": "Maria_de_las_Mercedes_Princess_of_Asturias",
-      "embedding_text": "Maria de las Mercedes Princess of Asturias",
+      "extracted_uri": "http://example.org/data/VictoriaEugenie",
+      "extracted_local_name": "VictoriaEugenie",
+      "embedding_text": "Victoria Eugenie",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -154,16 +143,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Princess Isabelle d’Orléans",
-      "best_candidate_label": "Princess Isabelle d’Orléans",
-      "best_candidate_qid": "Q273237",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.34782608695652173
+      "best_candidate_match_text": "Prince Gonzalo de Bourbon",
+      "best_candidate_label": "Prince Gonzalo de Bourbon",
+      "best_candidate_qid": "Q946985",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.34146341463414637
     }
   ],
   "summary": {
-    "entities_total": 7,
+    "entities_total": 6,
     "entities_matched": 2,
-    "entities_unmatched": 5
+    "entities_unmatched": 4
   }
 }

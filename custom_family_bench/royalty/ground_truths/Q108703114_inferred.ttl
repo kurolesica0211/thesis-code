@@ -1,0 +1,436 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Edoardo_Mapelli_Mozzi a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Edoardo Mapelli Mozzi"^^xsd:string ;
+    data:posIndicesFull "23:44"^^xsd:string,
+        "3929:3950"^^xsd:string,
+        "418:439"^^xsd:string,
+        "8601:8622"^^xsd:string ;
+    data:posIndicesPart "3973:3980"^^xsd:string,
+        "3981:3986"^^xsd:string,
+        "4093:4100"^^xsd:string,
+        "4101:4106"^^xsd:string,
+        "4264:4271"^^xsd:string,
+        "4298:4305"^^xsd:string,
+        "4306:4311"^^xsd:string,
+        "4439:4446"^^xsd:string,
+        "4447:4452"^^xsd:string,
+        "4589:4596"^^xsd:string,
+        "4597:4602"^^xsd:string ;
+    data:wdtLink wdt:Q68688016 ;
+    :alsoKnownAs "Count Edoardo Alessandro Mapelli Mozzi"^^xsd:string,
+        "Count Edoardo Mapelli Mozzi"^^xsd:string,
+        "Edoardo Alessandro Mapelli Mozzi"^^xsd:string ;
+    :hasBrother data:Edoardo_Mapelli_Mozzi ;
+    :hasChild data:Sienna_Mapelli_Mozzi ;
+    :hasDaughter data:Sienna_Mapelli_Mozzi ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York,
+        data:Sarah_Ferguson,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:male ;
+    :isAncestorOf data:Sienna_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Edoardo_Mapelli_Mozzi ;
+    :isBrotherOf data:Edoardo_Mapelli_Mozzi ;
+    :isFatherOf data:Sienna_Mapelli_Mozzi ;
+    :isParentOf data:Sienna_Mapelli_Mozzi ;
+    :isSiblingOf data:Edoardo_Mapelli_Mozzi ;
+    :isUncleOf data:Sienna_Mapelli_Mozzi .
+
+data:Elizabeth_II a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "2790:2808"^^xsd:string,
+        "2796:2808"^^xsd:string,
+        "3286:3304"^^xsd:string,
+        "3292:3304"^^xsd:string,
+        "5601:5619"^^xsd:string,
+        "5607:5619"^^xsd:string,
+        "689:707"^^xsd:string,
+        "695:707"^^xsd:string ;
+    data:posIndicesPart "5871:5880"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasChild data:Andrew_Mountbatten-Windsor ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Elizabeth_II,
+        data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :hasSon data:Andrew_Mountbatten-Windsor ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York,
+        data:Sienna_Mapelli_Mozzi ;
+    :isAuntOf data:Andrew_Mountbatten-Windsor ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isMotherOf data:Andrew_Mountbatten-Windsor ;
+    :isParentOf data:Andrew_Mountbatten-Windsor ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "2745:2758"^^xsd:string,
+        "2745:2777"^^xsd:string,
+        "712:725"^^xsd:string,
+        "712:744"^^xsd:string,
+        "8140:8153"^^xsd:string ;
+    data:posIndicesPart "2467:2473"^^xsd:string,
+        "6509:6515"^^xsd:string,
+        "6568:6574"^^xsd:string,
+        "7638:7642"^^xsd:string,
+        "7646:7655"^^xsd:string,
+        "7915:7921"^^xsd:string,
+        "7927:7933"^^xsd:string,
+        "8479:8483"^^xsd:string ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip"^^xsd:string,
+        "H.R.H. The Duke Of Edinburgh"^^xsd:string,
+        "Lieutenant Philip Mountbatten"^^xsd:string,
+        "Philip Edinburgh"^^xsd:string,
+        "Philip Mountbatten"^^xsd:string,
+        "Philip Mountbatten; Prince Philip of Greece and Denmark"^^xsd:string,
+        "Philip of Greece and Denmark"^^xsd:string,
+        "Prince Philip"^^xsd:string,
+        "Prince Philip of Greece and Denmark"^^xsd:string,
+        "The Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasChild data:Andrew_Mountbatten-Windsor ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:male ;
+    :hasSon data:Andrew_Mountbatten-Windsor ;
+    :isAncestorOf data:Andrew_Mountbatten-Windsor,
+        data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York,
+        data:Sienna_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isFatherOf data:Andrew_Mountbatten-Windsor ;
+    :isParentOf data:Andrew_Mountbatten-Windsor ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isUncleOf data:Andrew_Mountbatten-Windsor .
+
+data:Sarah_Ferguson a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Sarah Ferguson"^^xsd:string ;
+    data:posIndicesFull "193:207"^^xsd:string ;
+    data:wdtLink wdt:Q55720 ;
+    :alsoKnownAs "Fergie"^^xsd:string,
+        "Sarah Margaret Ferguson"^^xsd:string,
+        "Sarah Margaret Mountbatten-Windsor"^^xsd:string,
+        "Sarah Mountbatten-Windsor"^^xsd:string ;
+    :hasChild data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :hasDaughter data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York,
+        data:Sarah_Ferguson,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:female ;
+    :hasSister data:Sarah_Ferguson ;
+    :isAncestorOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York,
+        data:Sienna_Mapelli_Mozzi ;
+    :isAuntOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isBloodrelationOf data:Sarah_Ferguson ;
+    :isMotherOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isParentOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isSiblingOf data:Sarah_Ferguson ;
+    :isSisterOf data:Sarah_Ferguson .
+
+data:Sienna_Mapelli_Mozzi a :Person,
+        :Woman ;
+    rdfs:label "Sienna Mapelli Mozzi"^^xsd:string ;
+    data:posIndicesFull "5413:5443"^^xsd:string ;
+    data:posIndicesPart "5527:5533"^^xsd:string ;
+    data:wdtLink wdt:Q108703114 ;
+    :alsoKnownAs "Sienna Elizabeth Mapelli Mozzi"^^xsd:string ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Beatrice_of_York,
+        data:Sarah_Ferguson ;
+    :hasFather data:Edoardo_Mapelli_Mozzi ;
+    :hasMother data:Princess_Beatrice_of_York ;
+    :hasParent data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York,
+        data:Sarah_Ferguson,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:female ;
+    :hasSister data:Sienna_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Sienna_Mapelli_Mozzi ;
+    :isChildOf data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :isDaughterOf data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice_of_York ;
+    :isSiblingOf data:Sienna_Mapelli_Mozzi ;
+    :isSisterOf data:Sienna_Mapelli_Mozzi .
+
+data:Princess_Eugenie_of_York a :Person,
+        :Woman ;
+    rdfs:label "Princess Eugenie of York"^^xsd:string ;
+    data:posIndicesFull "845:861"^^xsd:string ;
+    data:posIndicesPart "1104:1111"^^xsd:string,
+        "2097:2101"^^xsd:string,
+        "2192:2196"^^xsd:string,
+        "2869:2873"^^xsd:string,
+        "6683:6687"^^xsd:string,
+        "6746:6753"^^xsd:string,
+        "7191:7195"^^xsd:string,
+        "7451:7455"^^xsd:string,
+        "7696:7700"^^xsd:string,
+        "8487:8491"^^xsd:string ;
+    data:wdtLink wdt:Q165709 ;
+    :alsoKnownAs "Eugenie Victoria Helena"^^xsd:string,
+        "Eugenie Victoria Helena Mountbatten-Windsor"^^xsd:string,
+        "Her Royal Highness Princess Eugenie of York"^^xsd:string,
+        "Princess Eugenie"^^xsd:string,
+        "Princess Eugenie Victoria Helena of York"^^xsd:string,
+        "Princess Eugenie, Mrs Brooksbank"^^xsd:string,
+        "Princess Eugenie, Mrs Jack Brooksbank"^^xsd:string ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Sarah_Ferguson ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMother data:Sarah_Ferguson ;
+    :hasParent data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York,
+        data:Sarah_Ferguson,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isAuntOf data:Sienna_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isChildOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isDaughterOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isSiblingOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isSisterOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York .
+
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Andrew Mountbatten-Windsor"^^xsd:string ;
+    data:posIndicesFull "162:188"^^xsd:string ;
+    data:posIndicesPart "1284:1291"^^xsd:string,
+        "1483:1490"^^xsd:string,
+        "4378:4385"^^xsd:string,
+        "4539:4545"^^xsd:string,
+        "4689:4696"^^xsd:string,
+        "4845:4851"^^xsd:string,
+        "4986:4992"^^xsd:string ;
+    data:wdtLink wdt:Q153330 ;
+    :alsoKnownAs "Andrew Albert Christian Edward"^^xsd:string,
+        "Andrew Albert Christian Edward Mountbatten-Windsor"^^xsd:string,
+        "Baron Killyleagh"^^xsd:string,
+        "Earl of Inverness"^^xsd:string,
+        "Prince Andrew"^^xsd:string,
+        "Prince Andrew of the United Kingdom"^^xsd:string,
+        "Prince Andrew, Duke of York"^^xsd:string,
+        "Randy Andy"^^xsd:string ;
+    :hasAncestor data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasBrother data:Andrew_Mountbatten-Windsor ;
+    :hasChild data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :hasDaughter data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :hasFather data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Elizabeth_II ;
+    :hasParent data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York,
+        data:Sarah_Ferguson,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York,
+        data:Sienna_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor ;
+    :isChildOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isFatherOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isParentOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor ;
+    :isSonOf data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isUncleOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York .
+
+data:Princess_Beatrice_of_York a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Beatrice of York"^^xsd:string ;
+    data:posIndicesFull "0:17"^^xsd:string,
+        "0:44"^^xsd:string,
+        "2222:2235"^^xsd:string,
+        "3174:3191"^^xsd:string,
+        "5108:5121"^^xsd:string,
+        "7018:7031"^^xsd:string,
+        "8382:8399"^^xsd:string,
+        "8382:8407"^^xsd:string,
+        "8578:8595"^^xsd:string,
+        "8578:8622"^^xsd:string ;
+    data:posIndicesPart "1113:1121"^^xsd:string,
+        "1208:1216"^^xsd:string,
+        "1301:1309"^^xsd:string,
+        "1423:1431"^^xsd:string,
+        "1531:1539"^^xsd:string,
+        "1719:1727"^^xsd:string,
+        "1789:1797"^^xsd:string,
+        "2061:2069"^^xsd:string,
+        "2097:2101"^^xsd:string,
+        "2192:2196"^^xsd:string,
+        "2363:2371"^^xsd:string,
+        "242:250"^^xsd:string,
+        "2542:2550"^^xsd:string,
+        "2732:2740"^^xsd:string,
+        "2869:2873"^^xsd:string,
+        "2882:2890"^^xsd:string,
+        "3029:3037"^^xsd:string,
+        "3306:3314"^^xsd:string,
+        "3526:3534"^^xsd:string,
+        "3619:3627"^^xsd:string,
+        "3796:3804"^^xsd:string,
+        "401:409"^^xsd:string,
+        "4387:4395"^^xsd:string,
+        "4426:4434"^^xsd:string,
+        "4572:4580"^^xsd:string,
+        "5000:5008"^^xsd:string,
+        "5257:5265"^^xsd:string,
+        "538:546"^^xsd:string,
+        "5658:5666"^^xsd:string,
+        "5818:5826"^^xsd:string,
+        "6007:6015"^^xsd:string,
+        "6103:6111"^^xsd:string,
+        "6328:6336"^^xsd:string,
+        "6525:6533"^^xsd:string,
+        "652:656"^^xsd:string,
+        "6651:6659"^^xsd:string,
+        "6683:6687"^^xsd:string,
+        "6982:6990"^^xsd:string,
+        "7191:7195"^^xsd:string,
+        "7234:7242"^^xsd:string,
+        "7451:7455"^^xsd:string,
+        "746:754"^^xsd:string,
+        "7477:7485"^^xsd:string,
+        "7696:7700"^^xsd:string,
+        "7963:7971"^^xsd:string,
+        "8173:8181"^^xsd:string,
+        "881:889"^^xsd:string ;
+    data:wdtLink wdt:Q165657 ;
+    :alsoKnownAs "Bea York"^^xsd:string,
+        "Beatrice Elizabeth Mary Mountbatten-Windsor, Princess of York"^^xsd:string,
+        "Beatrice York"^^xsd:string,
+        "H.R.H. Princess Beatrice of York"^^xsd:string,
+        "Princess Beatrice"^^xsd:string,
+        "Princess Beatrice Elizabeth Mary of York"^^xsd:string,
+        "Princess Beatrice Elizabeth Mary, Mrs Mapelli Mozzi"^^xsd:string,
+        "Princess Beatrice Elizabeth Mary, Mrs. Mapelli Mozzi"^^xsd:string,
+        "Princess Beatrice, Mrs Edoardo Mapelli Mozzi"^^xsd:string,
+        "Princess Beatrice, Mrs Mapelli Mozzi"^^xsd:string,
+        "Princess Beatrice, Mrs. Edoardo Mapelli Mozzi"^^xsd:string,
+        "Princess Beatrice, Mrs. Mapelli Mozzi"^^xsd:string ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Sarah_Ferguson ;
+    :hasChild data:Sienna_Mapelli_Mozzi ;
+    :hasDaughter data:Sienna_Mapelli_Mozzi ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMother data:Sarah_Ferguson ;
+    :hasParent data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Elizabeth_II,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York,
+        data:Sarah_Ferguson,
+        data:Sienna_Mapelli_Mozzi ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isAncestorOf data:Sienna_Mapelli_Mozzi ;
+    :isAuntOf data:Sienna_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isChildOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isDaughterOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isMotherOf data:Sienna_Mapelli_Mozzi ;
+    :isParentOf data:Sienna_Mapelli_Mozzi ;
+    :isSiblingOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York ;
+    :isSisterOf data:Princess_Beatrice_of_York,
+        data:Princess_Eugenie_of_York .
+

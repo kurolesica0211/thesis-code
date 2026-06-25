@@ -2,34 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Juan_Carlos_I a :Man ;
-    :hasSex data:Male .
+data:George_William_of_Hanover a :Man,
+        :Person ;
+    :hasBirthYear 1880 ;
+    :hasDeathYear 1912 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMother data:Princess_Thyra_of_Denmark .
 
-data:Leonor a :Woman ;
-    :hasBirthYear 2005 ;
-    :hasFather data:Felipe_VI ;
-    :hasMother data:Letizia ;
-    :hasSex data:Female ;
-    :isSisterOf data:Sofia_infanta .
+data:Prince_Ernest_Augustus_the_younger a :Man,
+        :Person ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMarriageYear 1913 ;
+    :hasRelation data:Princess_Victoria_Louise_of_Prussia .
 
-data:Sofia a :Woman ;
-    :hasSex data:Female .
+data:Christian_IX_of_Denmark a :Man,
+        :Person .
 
-data:Sofia_infanta a :Woman ;
-    :hasFather data:Felipe_VI ;
-    :hasMother data:Letizia ;
-    :hasSex data:Female ;
-    :isSisterOf data:Leonor .
+data:George_III_of_the_United_Kingdom a :Man,
+        :Person .
 
-data:Felipe_VI a :Man ;
-    :hasFather data:Juan_Carlos_I ;
-    :hasMother data:Sofia ;
-    :hasSex data:Male .
+data:George_V_of_Hanover a :Man,
+        :Person ;
+    :hasFather data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale .
 
-data:Letizia a :Woman ;
-    :hasSex data:Female .
+data:Prince_Ernest_Augustus_Duke_of_Cumberland_and_Teviotdale a :Man,
+        :Person ;
+    :hasFather data:George_III_of_the_United_Kingdom .
 
-data:Male a :Sex .
+data:Princess_Thyra_of_Denmark a :Person,
+        :Woman ;
+    :hasFather data:Christian_IX_of_Denmark .
 
-data:Female a :Sex .
+data:Princess_Victoria_Louise_of_Prussia a :Person,
+        :Woman .
+
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Man,
+        :Person ;
+    :hasFather data:George_V_of_Hanover .
 

@@ -85,24 +85,32 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Georg, Prince of Saxe-Meiningen (11 October 1892 – 6 January 1946) was the head of the house of Saxe-Meiningen from 1941 until his death.
-He was born in Kassel as the eldest son of Prince Frederick Johann of Saxe-Meiningen (1861-1914) and Countess Adelaide of Lippe-Biesterfeld (1870–1948).
-His father was a son of Georg II, Duke of Saxe-Meiningen and his mother a daughter of Count Ernst of Lippe-Biesterfeld.
-Georg studied law at the Universities of Munich and Jena.
-Georg suspended his studies to serve in World War I and saw action as a captain in a cavalry regiment.
-After the death of his uncle Ernst on 29 December 1941, Georg succeeded to the headship of the house of Saxe-Meiningen and assumed the title of Duke of Saxe-Meiningen and style Georg III.
-Georg and his family were expropriated without compensation in 1945.
-Georg, who served as a major in the Wehrmacht died in the Russian prisoner of war camp near Cherepovets (Tscherepowetz in German) in Northern Russia.
-His heir was his second and only surviving son Prince Frederick Alfred who renounced the succession, being a monk in 1953, allowing it to pass to his uncle Bernhard.
+Anton-Günther, Duke of Oldenburg (Anton-Günther Friedrich August Wilhelm Josias von Holstein-Gottorp, Erbgroßherzog von Oldenburg, Prinz von Lübeck; 16 January 1923 – 20 September 2014) was the head of the Grand Ducal Family of Oldenburg.
+Life
+
+He was born in Lensahn the son of Hereditary Grand Duke Nikolaus of Oldenburg (1897–1970) and his first wife Princess Helena of Waldeck and Pyrmont (1899–1948).
+Duke Anton-Günther was a grandson of Frederick Augustus II, the last Grand Duke of Oldenburg, and through his mother a grandson of Friedrich, the last Prince of Waldeck and Pyrmont.
+He studied for a Diploma in Forestry and succeeded as head of the Grand Ducal Family of Oldenburg upon the death of his father, the Hereditary Grand Duke, on 3 April 1970.
+The ancestral home of the House of Oldenburg is Oldenburg castle, nowadays a museum owned by the state.
+Private seats of the Duke of Oldenburg are Rastede Palace near Oldenburg and Güldenstein Manor, Harmsdorf, in Schleswig-Holstein.
+Eutin Castle in Schleswig-Holstein is a museum owned by a family foundation set up by Duke Anton-Günther.
+According to his obituary issued by the family his ancestral titles (however not all part of his official German surname) were: HRH The Duke of Oldenburg, Heir in Norway, Duke of Schleswig, Holstein, Stormarn, Dithmarschen and Oldenburg, Prince of Lübeck and Birkenfeld, Lord of Jever and Knyphausen.
 Marriage and children
 
-He was married in Freiburg im Breisgau on 22 February 1919 to Countess Klara Marie von Korff genannt Schmising-Kerssenbrock (Darmstadt, 31 May 1895
+Duke Anton-Günther was married to Princess Ameli of Löwenstein-Wertheim-Freudenberg (1923-2016) at Kreuzwertheim on 7 August 1951.
+They have two children:
+
+
+The Duke and the Duchess lived at Güldenstein Manor, Harmsdorf, Schleswig Holstein.
+The Duke also owned Eutin Castle and Rastede Castle.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -118,39 +126,9 @@ He was married in Freiburg im Breisgau on 22 February 1919 to Countess Klara Mar
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -165,6 +143,23 @@ He was married in Freiburg im Breisgau on 22 February 1919 to Countess Klara Mar
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -182,6 +177,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -249,29 +259,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,6 +282,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -292,6 +302,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -300,17 +312,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -338,6 +352,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -353,115 +451,136 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8e5d2df8-e0fd-43d9-85ac-dfec116185fc)
- Call ID: 8e5d2df8-e0fd-43d9-85ac-dfec116185fc
+  AssignClass (e722711e-b30c-4c0c-92f0-ef6beb19017e)
+ Call ID: e722711e-b30c-4c0c-92f0-ef6beb19017e
   Args:
     type: :Man
-    source: Georg_Prince_of_Saxe-Meiningen
-  AssignClass (d198f541-c11a-43fb-8cad-2a3d6b052bec)
- Call ID: d198f541-c11a-43fb-8cad-2a3d6b052bec
+    source: :Anton-Günther_Duke_of_Oldenburg
+  AssignClass (b27c0b47-bcf1-4926-9aca-cdc0f10be4d6)
+ Call ID: b27c0b47-bcf1-4926-9aca-cdc0f10be4d6
   Args:
+    source: :Nikolaus_of_Oldenburg
     type: :Man
-    source: Prince_Frederick_Johann_of_Saxe-Meiningen
-  AssignClass (d73ef0f0-a9f3-4475-b51c-cc0894446413)
- Call ID: d73ef0f0-a9f3-4475-b51c-cc0894446413
+  AssignClass (6dd13a45-a66a-4905-9c24-f5a04e01c1ac)
+ Call ID: 6dd13a45-a66a-4905-9c24-f5a04e01c1ac
   Args:
+    source: :Helena_of_Waldeck_and_Pyrmont
     type: :Woman
-    source: Countess_Adelaide_of_Lippe-Biesterfeld
-  AssignClass (7840c0d1-d9ae-4381-a9b5-6f8443fb481f)
- Call ID: 7840c0d1-d9ae-4381-a9b5-6f8443fb481f
+  AssignClass (af7450e4-173a-4505-ade6-62cf0122fc37)
+ Call ID: af7450e4-173a-4505-ade6-62cf0122fc37
+  Args:
+    source: :Frederick_Augustus_II_of_Oldenburg
+    type: :Man
+  AssignClass (dd334200-ec60-4acc-aca0-199d7d2f5951)
+ Call ID: dd334200-ec60-4acc-aca0-199d7d2f5951
   Args:
     type: :Man
-    source: Georg_II_Duke_of_Saxe-Meiningen
-  AssignClass (ab8d6b02-5b8b-4106-abe0-7aad25a5f3b7)
- Call ID: ab8d6b02-5b8b-4106-abe0-7aad25a5f3b7
+    source: :Friedrich_of_Waldeck_and_Pyrmont
+  AssignClass (57568df6-b34f-4462-a99f-0bdbd6946386)
+ Call ID: 57568df6-b34f-4462-a99f-0bdbd6946386
   Args:
-    type: :Man
-    source: Count_Ernst_of_Lippe-Biesterfeld
-  AssignClass (7bb561e2-1cf1-43b2-ac87-6a4e28f80a02)
- Call ID: 7bb561e2-1cf1-43b2-ac87-6a4e28f80a02
-  Args:
-    type: :Man
-    source: Prince_Frederick_Alfred
-  AssignClass (8438d157-7a3d-42b2-84a9-098eca15d2d4)
- Call ID: 8438d157-7a3d-42b2-84a9-098eca15d2d4
-  Args:
-    type: :Man
-    source: Bernhard
-  AssignClass (dfe87234-db54-4de7-932b-3a08d55038e5)
- Call ID: dfe87234-db54-4de7-932b-3a08d55038e5
-  Args:
+    source: :Ameli_of_Löwenstein-Wertheim-Freudenberg
     type: :Woman
-    source: Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock
-  AddLiteral (0cf26293-e643-4636-a77f-14f39b901a4e)
- Call ID: 0cf26293-e643-4636-a77f-14f39b901a4e
+  AddLiteral (0ecf3471-a777-4059-87f4-ca8092007b48)
+ Call ID: 0ecf3471-a777-4059-87f4-ca8092007b48
   Args:
+    literal_value: 1923
     literal_type: xsd:integer
-    source: Georg_Prince_of_Saxe-Meiningen
-    literal_value: 1892
+    source: :Anton-Günther_Duke_of_Oldenburg
     relation: :hasBirthYear
-  AddLiteral (432afc89-ad44-457a-9ecd-db13080c2252)
- Call ID: 432afc89-ad44-457a-9ecd-db13080c2252
+  AddLiteral (9c36bbeb-ba7f-4808-935a-8c358e28e0c5)
+ Call ID: 9c36bbeb-ba7f-4808-935a-8c358e28e0c5
   Args:
+    literal_type: xsd:integer
+    source: :Anton-Günther_Duke_of_Oldenburg
+    literal_value: 2014
     relation: :hasDeathYear
-    literal_value: 1946
-    source: Georg_Prince_of_Saxe-Meiningen
+  AddLiteral (ae88d635-a156-4e65-a050-a97e1ca3fd17)
+ Call ID: ae88d635-a156-4e65-a050-a97e1ca3fd17
+  Args:
+    relation: :hasBirthYear
+    source: :Nikolaus_of_Oldenburg
     literal_type: xsd:integer
-  AddTriple (ae10f81a-2bfc-40d0-a121-af8d0d62d6a0)
- Call ID: ae10f81a-2bfc-40d0-a121-af8d0d62d6a0
+    literal_value: 1897
+  AddLiteral (c5e86228-b7b6-44e6-ac00-18dec5a375f4)
+ Call ID: c5e86228-b7b6-44e6-ac00-18dec5a375f4
   Args:
-    target: Prince_Frederick_Johann_of_Saxe-Meiningen
+    literal_value: 1970
+    source: :Nikolaus_of_Oldenburg
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddLiteral (d2f0922b-ad62-4fae-bd24-c64ae2778957)
+ Call ID: d2f0922b-ad62-4fae-bd24-c64ae2778957
+  Args:
+    literal_type: xsd:integer
+    source: :Helena_of_Waldeck_and_Pyrmont
+    literal_value: 1899
+    relation: :hasBirthYear
+  AddLiteral (e9522e45-7b4d-4e4b-9b6a-d30fa44efc96)
+ Call ID: e9522e45-7b4d-4e4b-9b6a-d30fa44efc96
+  Args:
+    literal_value: 1948
+    source: :Helena_of_Waldeck_and_Pyrmont
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddLiteral (fb479176-3744-4ad8-b528-aac84e91280d)
+ Call ID: fb479176-3744-4ad8-b528-aac84e91280d
+  Args:
+    source: :Ameli_of_Löwenstein-Wertheim-Freudenberg
+    literal_type: xsd:integer
+    literal_value: 1923
+    relation: :hasBirthYear
+  AddLiteral (310061a8-4c94-4a6d-98f3-dc3fb8c84c2f)
+ Call ID: 310061a8-4c94-4a6d-98f3-dc3fb8c84c2f
+  Args:
+    literal_value: 2016
+    source: :Ameli_of_Löwenstein-Wertheim-Freudenberg
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddTriple (630515db-6288-4f56-be56-f7d4a6680fe6)
+ Call ID: 630515db-6288-4f56-be56-f7d4a6680fe6
+  Args:
     relation: :hasFather
-    source: Georg_Prince_of_Saxe-Meiningen
-  AddTriple (d286ab9d-220f-4484-bbff-21ed3350ba4b)
- Call ID: d286ab9d-220f-4484-bbff-21ed3350ba4b
+    target: :Nikolaus_of_Oldenburg
+    source: :Anton-Günther_Duke_of_Oldenburg
+  AddTriple (acdc9055-43bc-46a2-b23b-f797f34f96ca)
+ Call ID: acdc9055-43bc-46a2-b23b-f797f34f96ca
   Args:
-    source: Georg_Prince_of_Saxe-Meiningen
     relation: :hasMother
-    target: Countess_Adelaide_of_Lippe-Biesterfeld
-  AddTriple (bc2e902a-3458-42f9-832d-586c34cba80a)
- Call ID: bc2e902a-3458-42f9-832d-586c34cba80a
+    target: :Helena_of_Waldeck_and_Pyrmont
+    source: :Anton-Günther_Duke_of_Oldenburg
+  AddTriple (fbf4656d-55f5-4ec7-8a05-50d0d7970390)
+ Call ID: fbf4656d-55f5-4ec7-8a05-50d0d7970390
   Args:
-    target: Georg_II_Duke_of_Saxe-Meiningen
-    relation: :hasFather
-    source: Prince_Frederick_Johann_of_Saxe-Meiningen
-  AddTriple (212212d8-fbfa-4b3d-9b4a-8025bda9c3b8)
- Call ID: 212212d8-fbfa-4b3d-9b4a-8025bda9c3b8
-  Args:
-    source: Countess_Adelaide_of_Lippe-Biesterfeld
-    relation: :hasFather
-    target: Count_Ernst_of_Lippe-Biesterfeld
-  AddTriple (7d375696-8930-4edb-98bc-6bce99d9d4ae)
- Call ID: 7d375696-8930-4edb-98bc-6bce99d9d4ae
-  Args:
-    source: Georg_Prince_of_Saxe-Meiningen
-    relation: :hasSon
-    target: Prince_Frederick_Alfred
-  AddTriple (9d667658-1322-481b-99f8-816b046d9e38)
- Call ID: 9d667658-1322-481b-99f8-816b046d9e38
-  Args:
-    relation: :hasFather
-    source: Prince_Frederick_Alfred
-    target: Georg_Prince_of_Saxe-Meiningen
-  AddTriple (7dfe1219-e071-4974-8557-86c2e91438f8)
- Call ID: 7dfe1219-e071-4974-8557-86c2e91438f8
-  Args:
-    target: Bernhard
-    relation: :hasRelation
-    source: Georg_Prince_of_Saxe-Meiningen
-  AddTriple (72f26326-4c22-4e4e-9424-6cb70f48a3af)
- Call ID: 72f26326-4c22-4e4e-9424-6cb70f48a3af
-  Args:
-    target: Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock
-    relation: :hasRelation
-    source: Georg_Prince_of_Saxe-Meiningen
-  AddLiteral (87f9a129-adf9-444a-86fb-3a9a05ddcf15)
- Call ID: 87f9a129-adf9-444a-86fb-3a9a05ddcf15
-  Args:
-    literal_value: 1919
-    source: Georg_Prince_of_Saxe-Meiningen
     relation: :hasMarriageYear
+    target: :Ameli_of_Löwenstein-Wertheim-Freudenberg
+    source: :Anton-Günther_Duke_of_Oldenburg
+  AddLiteral (130f89d6-7501-4565-9d21-2713e4cb2ba1)
+ Call ID: 130f89d6-7501-4565-9d21-2713e4cb2ba1
+  Args:
+    source: :Anton-Günther_Duke_of_Oldenburg
     literal_type: xsd:integer
+    literal_value: 1951
+    relation: :hasMarriageYear
+  AddTriple (15195bdc-2ae7-4ce9-8845-c2c188e728d9)
+ Call ID: 15195bdc-2ae7-4ce9-8845-c2c188e728d9
+  Args:
+    target: :Frederick_Augustus_II_of_Oldenburg
+    relation: :hasAncestor
+    source: :Anton-Günther_Duke_of_Oldenburg
+  AddTriple (e0b419a2-3183-4430-b57d-ddd2222c8ae9)
+ Call ID: e0b419a2-3183-4430-b57d-ddd2222c8ae9
+  Args:
+    source: :Anton-Günther_Duke_of_Oldenburg
+    relation: :hasAncestor
+    target: :Friedrich_of_Waldeck_and_Pyrmont
+  Finish (01c52371-0697-42ce-9226-1f15765b90d0)
+ Call ID: 01c52371-0697-42ce-9226-1f15765b90d0
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -542,167 +661,146 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Bernhard a :Man .
+  data:Anton-G%C3%BCnther_Duke_of_Oldenburg a :Man ;
+      :hasAncestor data:Frederick_Augustus_II_of_Oldenburg,
+          data:Friedrich_of_Waldeck_and_Pyrmont ;
+      :hasBirthYear 1923 ;
+      :hasDeathYear 2014 ;
+      :hasFather data:Nikolaus_of_Oldenburg ;
+      :hasMarriageYear data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg,
+          1951 ;
+      :hasMother data:Helena_of_Waldeck_and_Pyrmont .
 
-  data:Count_Ernst_of_Lippe-Biesterfeld a :Man .
+  data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Woman ;
+      :hasBirthYear 1923 ;
+      :hasDeathYear 2016 .
 
-  data:Countess_Adelaide_of_Lippe-Biesterfeld a :Woman ;
-      :hasFather data:Count_Ernst_of_Lippe-Biesterfeld .
+  data:Frederick_Augustus_II_of_Oldenburg a :Man .
 
-  data:Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock a :Woman .
+  data:Friedrich_of_Waldeck_and_Pyrmont a :Man .
 
-  data:Georg_II_Duke_of_Saxe-Meiningen a :Man .
+  data:Helena_of_Waldeck_and_Pyrmont a :Woman ;
+      :hasBirthYear 1899 ;
+      :hasDeathYear 1948 .
 
-  data:Georg_Prince_of_Saxe-Meiningen a :Man ;
-      :hasBirthYear 1892 ;
-      :hasDeathYear 1946 ;
-      :hasFather data:Prince_Frederick_Johann_of_Saxe-Meiningen ;
-      :hasMarriageYear 1919 ;
-      :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-      :hasRelation data:Bernhard,
-          data:Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock ;
-      :hasSon data:Prince_Frederick_Alfred .
-
-  data:Prince_Frederick_Alfred a :Man ;
-      :hasFather data:Georg_Prince_of_Saxe-Meiningen .
-
-  data:Prince_Frederick_Johann_of_Saxe-Meiningen a :Man ;
-      :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+  data:Nikolaus_of_Oldenburg a :Man ;
+      :hasBirthYear 1897 ;
+      :hasDeathYear 1970 .
 
 
+
+================================= Tool Message =================================
+
+You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (94d953e2-48c1-40ff-a6ca-54ae49053645)
- Call ID: 94d953e2-48c1-40ff-a6ca-54ae49053645
+  ValidateShacl (df77579a-c86b-488d-bc01-68aacb435671)
+ Call ID: df77579a-c86b-488d-bc01-68aacb435671
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:15
+Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Georg_Prince_of_Saxe-Meiningen, acting as the father for Prince_Frederick_Alfred, is not assigned the required class :Ancestor.
+      The node Friedrich_of_Waldeck_and_Pyrmont is used as an ancestor but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Georg_Prince_of_Saxe-Meiningen, :Ancestor)
+      AssignClass(node: "Friedrich_of_Waldeck_and_Pyrmont", class: ":Ancestor")
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Prince_Frederick_Johann_of_Saxe-Meiningen, acting as the father for Georg_Prince_of_Saxe-Meiningen, is not assigned the required class :Ancestor.
+      The node Frederick_Augustus_II_of_Oldenburg is used as an ancestor but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Frederick_Johann_of_Saxe-Meiningen, :Ancestor)
+      AssignClass(node: "Frederick_Augustus_II_of_Oldenburg", class: ":Ancestor")
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Georg_II_Duke_of_Saxe-Meiningen, acting as the father for Prince_Frederick_Johann_of_Saxe-Meiningen, is not assigned the required class :Ancestor.
+      The father node Nikolaus_of_Oldenburg is missing the mandatory :Ancestor class required by the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Georg_II_Duke_of_Saxe-Meiningen, :Ancestor)
+      AssignClass(node: "Nikolaus_of_Oldenburg", class: ":Ancestor")
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Countess_Adelaide_of_Lippe-Biesterfeld, acting as the mother for Georg_Prince_of_Saxe-Meiningen, is not assigned the required class :Ancestor.
+      The mother node Helena_of_Waldeck_and_Pyrmont is missing the mandatory :Ancestor class required by the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Adelaide_of_Lippe-Biesterfeld, :Ancestor)
+      AssignClass(node: "Helena_of_Waldeck_and_Pyrmont", class: ":Ancestor")
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Prince_Frederick_Johann_of_Saxe-Meiningen, acting as the father for Georg_Prince_of_Saxe-Meiningen, is not assigned the required class :Ancestor.
+      The node Friedrich_of_Waldeck_and_Pyrmont is used as an ancestor but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Frederick_Johann_of_Saxe-Meiningen, :Ancestor)
+      AssignClass(node: "Friedrich_of_Waldeck_and_Pyrmont", class: ":Ancestor")
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Georg_II_Duke_of_Saxe-Meiningen, acting as the father for Prince_Frederick_Johann_of_Saxe-Meiningen, is not assigned the required class :Ancestor.
+      The node Frederick_Augustus_II_of_Oldenburg is used as an ancestor but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Georg_II_Duke_of_Saxe-Meiningen, :Ancestor)
+      AssignClass(node: "Frederick_Augustus_II_of_Oldenburg", class: ":Ancestor")
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Georg_Prince_of_Saxe-Meiningen, acting as the father for Prince_Frederick_Alfred, is not assigned the required class :Ancestor.
+      The father node Nikolaus_of_Oldenburg is missing the mandatory :Ancestor class required by the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Georg_Prince_of_Saxe-Meiningen, :Ancestor)
+      AssignClass(node: "Nikolaus_of_Oldenburg", class: ":Ancestor")
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Count_Ernst_of_Lippe-Biesterfeld, acting as the father for Countess_Adelaide_of_Lippe-Biesterfeld, is not assigned the required class :Ancestor.
+      The mother node Helena_of_Waldeck_and_Pyrmont is missing the mandatory :Ancestor class required by the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Count_Ernst_of_Lippe-Biesterfeld, :Ancestor)
+      AssignClass(node: "Helena_of_Waldeck_and_Pyrmont", class: ":Ancestor")
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Countess_Adelaide_of_Lippe-Biesterfeld, acting as the mother for Georg_Prince_of_Saxe-Meiningen, is not assigned the required class :Ancestor.
+      The node Friedrich_of_Waldeck_and_Pyrmont is used as an ancestor but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Adelaide_of_Lippe-Biesterfeld, :Ancestor)
+      AssignClass(node: "Friedrich_of_Waldeck_and_Pyrmont", class: ":Ancestor")
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Prince_Frederick_Johann_of_Saxe-Meiningen, acting as the father for Georg_Prince_of_Saxe-Meiningen, is not assigned the required class :Ancestor.
+      The node Frederick_Augustus_II_of_Oldenburg is used as an ancestor but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Frederick_Johann_of_Saxe-Meiningen, :Ancestor)
+      AssignClass(node: "Frederick_Augustus_II_of_Oldenburg", class: ":Ancestor")
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Georg_II_Duke_of_Saxe-Meiningen, acting as the father for Prince_Frederick_Johann_of_Saxe-Meiningen, is not assigned the required class :Ancestor.
+      The father node Nikolaus_of_Oldenburg is missing the mandatory :Ancestor class required by the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Georg_II_Duke_of_Saxe-Meiningen, :Ancestor)
+      AssignClass(node: "Nikolaus_of_Oldenburg", class: ":Ancestor")
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Georg_Prince_of_Saxe-Meiningen, acting as the father for Prince_Frederick_Alfred, is not assigned the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Georg_Prince_of_Saxe-Meiningen, :Ancestor)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Count_Ernst_of_Lippe-Biesterfeld, acting as the father for Countess_Adelaide_of_Lippe-Biesterfeld, is not assigned the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Count_Ernst_of_Lippe-Biesterfeld, :Ancestor)
-
-
-  Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Countess_Adelaide_of_Lippe-Biesterfeld, acting as the mother for Georg_Prince_of_Saxe-Meiningen, is not assigned the required class :Ancestor.
+      The mother node Helena_of_Waldeck_and_Pyrmont is missing the mandatory :Ancestor class required by the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Adelaide_of_Lippe-Biesterfeld, :Ancestor)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Count_Ernst_of_Lippe-Biesterfeld, acting as the father for Countess_Adelaide_of_Lippe-Biesterfeld, is not assigned the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Count_Ernst_of_Lippe-Biesterfeld, :Ancestor)
+      AssignClass(node: "Helena_of_Waldeck_and_Pyrmont", class: ":Ancestor")
 
 
 
@@ -711,31 +809,139 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (116ee571-8eac-4174-b6de-8c8e17211f5e)
- Call ID: 116ee571-8eac-4174-b6de-8c8e17211f5e
+  AssignClass (f914ad9a-8078-450c-8338-baa9b8878a64)
+ Call ID: f914ad9a-8078-450c-8338-baa9b8878a64
   Args:
-    source: Georg_Prince_of_Saxe-Meiningen
+    source: :Friedrich_of_Waldeck_and_Pyrmont
     type: :Ancestor
-  AssignClass (e21d35aa-130e-43b1-a96a-5aa741bc7a5d)
- Call ID: e21d35aa-130e-43b1-a96a-5aa741bc7a5d
+  AssignClass (2f194470-4e04-4550-b019-d47dbf391231)
+ Call ID: 2f194470-4e04-4550-b019-d47dbf391231
   Args:
-    source: Prince_Frederick_Johann_of_Saxe-Meiningen
+    source: :Frederick_Augustus_II_of_Oldenburg
     type: :Ancestor
-  AssignClass (24ee7310-ce3a-461f-b10f-434cf31eda3b)
- Call ID: 24ee7310-ce3a-461f-b10f-434cf31eda3b
+  AssignClass (985ea962-5977-469f-ad46-eb9f842f0961)
+ Call ID: 985ea962-5977-469f-ad46-eb9f842f0961
   Args:
+    source: :Nikolaus_of_Oldenburg
     type: :Ancestor
-    source: Georg_II_Duke_of_Saxe-Meiningen
-  AssignClass (26802a8c-273b-4b55-891e-e304fdc02675)
- Call ID: 26802a8c-273b-4b55-891e-e304fdc02675
+  AssignClass (36279e49-9a73-4ecd-9d43-9c8dabbd93ce)
+ Call ID: 36279e49-9a73-4ecd-9d43-9c8dabbd93ce
   Args:
-    source: Countess_Adelaide_of_Lippe-Biesterfeld
+    source: :Helena_of_Waldeck_and_Pyrmont
     type: :Ancestor
-  AssignClass (9944c80c-2828-4e5e-be19-f922cb55f27b)
- Call ID: 9944c80c-2828-4e5e-be19-f922cb55f27b
+  AssignClass (500dcc82-ee5b-4185-bc42-10b48ed27548)
+ Call ID: 500dcc82-ee5b-4185-bc42-10b48ed27548
   Args:
-    source: Count_Ernst_of_Lippe-Biesterfeld
-    type: :Ancestor
+    source: :Anton-Günther_Duke_of_Oldenburg
+    type: :Person
+  AssignClass (7ee5128c-0073-432d-9f81-f9e91f45bf49)
+ Call ID: 7ee5128c-0073-432d-9f81-f9e91f45bf49
+  Args:
+    source: :Nikolaus_of_Oldenburg
+    type: :Person
+  AssignClass (83513874-193d-4b23-826e-4221b6454752)
+ Call ID: 83513874-193d-4b23-826e-4221b6454752
+  Args:
+    source: :Helena_of_Waldeck_and_Pyrmont
+    type: :Person
+  AssignClass (5f3ebd14-bdea-499a-9588-f31ebea83afc)
+ Call ID: 5f3ebd14-bdea-499a-9588-f31ebea83afc
+  Args:
+    source: :Frederick_Augustus_II_of_Oldenburg
+    type: :Person
+  AssignClass (1bfc33a4-b068-4b09-9ee0-62db4171e98a)
+ Call ID: 1bfc33a4-b068-4b09-9ee0-62db4171e98a
+  Args:
+    source: :Friedrich_of_Waldeck_and_Pyrmont
+    type: :Person
+  AssignClass (ff726025-e626-4b0b-a5d6-262de56a9568)
+ Call ID: ff726025-e626-4b0b-a5d6-262de56a9568
+  Args:
+    source: :Ameli_of_Löwenstein-Wertheim-Freudenberg
+    type: :Person
+  AddTriple (72f238ac-8cab-4581-93e4-e4470c4b2b28)
+ Call ID: 72f238ac-8cab-4581-93e4-e4470c4b2b28
+  Args:
+    target: :Male
+    source: :Anton-Günther_Duke_of_Oldenburg
+    relation: :hasSex
+  AddTriple (1e140fe5-c74e-4300-bde5-d4f24d1e5ff8)
+ Call ID: 1e140fe5-c74e-4300-bde5-d4f24d1e5ff8
+  Args:
+    relation: :hasSex
+    source: :Nikolaus_of_Oldenburg
+    target: :Male
+  AddTriple (107bfec0-da60-4139-bca1-d1eed097ce33)
+ Call ID: 107bfec0-da60-4139-bca1-d1eed097ce33
+  Args:
+    relation: :hasSex
+    source: :Helena_of_Waldeck_and_Pyrmont
+    target: :Female
+  AddTriple (fa5774f5-4514-4bd9-852f-3c95d12c0b00)
+ Call ID: fa5774f5-4514-4bd9-852f-3c95d12c0b00
+  Args:
+    target: :Male
+    source: :Frederick_Augustus_II_of_Oldenburg
+    relation: :hasSex
+  AddTriple (2267605f-c3b9-4cd4-afd1-cc8d959b0626)
+ Call ID: 2267605f-c3b9-4cd4-afd1-cc8d959b0626
+  Args:
+    target: :Male
+    source: :Friedrich_of_Waldeck_and_Pyrmont
+    relation: :hasSex
+  AddTriple (0fd00a6d-58fb-479a-a86e-b85715a9ee32)
+ Call ID: 0fd00a6d-58fb-479a-a86e-b85715a9ee32
+  Args:
+    target: :Female
+    source: :Ameli_of_Löwenstein-Wertheim-Freudenberg
+    relation: :hasSex
+  ValidateShacl (359a2805-36c5-4b7c-a463-77cf2a4f394b)
+ Call ID: 359a2805-36c5-4b7c-a463-77cf2a4f394b
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -760,37 +966,535 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Bernhard a :Man .
+  data:Anton-G%C3%BCnther_Duke_of_Oldenburg a :Man,
+          :Person ;
+      :hasAncestor data:Frederick_Augustus_II_of_Oldenburg,
+          data:Friedrich_of_Waldeck_and_Pyrmont ;
+      :hasBirthYear 1923 ;
+      :hasDeathYear 2014 ;
+      :hasFather data:Nikolaus_of_Oldenburg ;
+      :hasMarriageYear data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg,
+          1951 ;
+      :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+      :hasSex data:Male .
 
-  data:Count_Ernst_of_Lippe-Biesterfeld a :Ancestor,
-          :Man .
-
-  data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+  data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Person,
           :Woman ;
-      :hasFather data:Count_Ernst_of_Lippe-Biesterfeld .
+      :hasBirthYear 1923 ;
+      :hasDeathYear 2016 ;
+      :hasSex data:Female .
 
-  data:Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock a :Woman .
+  data:Frederick_Augustus_II_of_Oldenburg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
 
-  data:Georg_II_Duke_of_Saxe-Meiningen a :Ancestor,
-          :Man .
+  data:Friedrich_of_Waldeck_and_Pyrmont a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
 
-  data:Georg_Prince_of_Saxe-Meiningen a :Ancestor,
-          :Man ;
-      :hasBirthYear 1892 ;
-      :hasDeathYear 1946 ;
-      :hasFather data:Prince_Frederick_Johann_of_Saxe-Meiningen ;
-      :hasMarriageYear 1919 ;
-      :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-      :hasRelation data:Bernhard,
-          data:Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock ;
-      :hasSon data:Prince_Frederick_Alfred .
+  data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1899 ;
+      :hasDeathYear 1948 ;
+      :hasSex data:Female .
 
-  data:Prince_Frederick_Alfred a :Man ;
-      :hasFather data:Georg_Prince_of_Saxe-Meiningen .
+  data:Nikolaus_of_Oldenburg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1897 ;
+      :hasDeathYear 1970 ;
+      :hasSex data:Male .
 
-  data:Prince_Frederick_Johann_of_Saxe-Meiningen a :Ancestor,
-          :Man ;
-      :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:60
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Frederick_Augustus_II_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [2]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Anton-G%C3%BCnther_Duke_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [3]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Friedrich_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [4]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Nikolaus_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [5]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Frederick_Augustus_II_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [6]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Anton-G%C3%BCnther_Duke_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [7]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Friedrich_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [8]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Nikolaus_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [9]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Friedrich_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [10]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Frederick_Augustus_II_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Anton-G%C3%BCnther_Duke_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [13]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Helena_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [14]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Nikolaus_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Friedrich_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Frederick_Augustus_II_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Anton-G%C3%BCnther_Duke_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Helena_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Nikolaus_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [21]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Friedrich_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [22]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Frederick_Augustus_II_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [23]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [24]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Anton-G%C3%BCnther_Duke_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [25]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Helena_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [26]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Nikolaus_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Frederick_Augustus_II_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [28]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Friedrich_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [29]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Helena_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [30]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Nikolaus_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [31]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Frederick_Augustus_II_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [32]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Friedrich_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [33]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Helena_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [34]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Nikolaus_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [35]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Frederick_Augustus_II_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [36]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Friedrich_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [37]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Helena_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [38]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Nikolaus_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [39]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Nikolaus_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [40]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Friedrich_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [41]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Frederick_Augustus_II_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [42]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Anton-G%C3%BCnther_Duke_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [43]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Helena_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [44]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [45]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Nikolaus_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [46]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Friedrich_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [47]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Frederick_Augustus_II_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [48]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Anton-G%C3%BCnther_Duke_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [49]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Helena_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [50]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [51]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Nikolaus_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [52]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Friedrich_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [53]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Frederick_Augustus_II_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [54]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property ':hasSex' on node 'Anton-G%C3%BCnther_Duke_of_Oldenburg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [55]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Helena_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [56]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [57]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Helena_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [58]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [59]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Helena_of_Waldeck_and_Pyrmont' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [60]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property ':hasSex' on node 'Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg' does not belong to the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
 
 
 
@@ -798,8 +1502,209 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (e39f3395-b3c6-49e1-9215-0f5c9808bda0)
- Call ID: e39f3395-b3c6-49e1-9215-0f5c9808bda0
+  AssignClass (2577d4be-a8b7-43a1-aeb3-068cda60d7fb)
+ Call ID: 2577d4be-a8b7-43a1-aeb3-068cda60d7fb
+  Args:
+    type: :Sex
+    source: :Male
+  AssignClass (3b44e5c6-a7e1-4942-9ea3-d87bf9ad8155)
+ Call ID: 3b44e5c6-a7e1-4942-9ea3-d87bf9ad8155
+  Args:
+    source: :Female
+    type: :Sex
+  RemoveTriple (4528834b-c865-48a1-b31e-cb0214c7cc32)
+ Call ID: 4528834b-c865-48a1-b31e-cb0214c7cc32
+  Args:
+    source: :Anton-Günther_Duke_of_Oldenburg
+    relation: :hasSex
+    target: :Male
+  RemoveTriple (99e4c1dc-e4dc-45b9-bb5a-a90590e3552a)
+ Call ID: 99e4c1dc-e4dc-45b9-bb5a-a90590e3552a
+  Args:
+    target: :Male
+    relation: :hasSex
+    source: :Nikolaus_of_Oldenburg
+  RemoveTriple (f507fe69-5d30-464f-8a3b-00e4ec9a5525)
+ Call ID: f507fe69-5d30-464f-8a3b-00e4ec9a5525
+  Args:
+    source: :Helena_of_Waldeck_and_Pyrmont
+    relation: :hasSex
+    target: :Female
+  RemoveTriple (f57200bb-a437-41ce-a185-483ae44c6914)
+ Call ID: f57200bb-a437-41ce-a185-483ae44c6914
+  Args:
+    source: :Frederick_Augustus_II_of_Oldenburg
+    target: :Male
+    relation: :hasSex
+  RemoveTriple (c23b226e-5d56-4d14-923e-5064086d0f39)
+ Call ID: c23b226e-5d56-4d14-923e-5064086d0f39
+  Args:
+    source: :Friedrich_of_Waldeck_and_Pyrmont
+    target: :Male
+    relation: :hasSex
+  RemoveTriple (f1310bc9-9868-4979-b509-825cb616ad9c)
+ Call ID: f1310bc9-9868-4979-b509-825cb616ad9c
+  Args:
+    source: :Ameli_of_Löwenstein-Wertheim-Freudenberg
+    target: :Female
+    relation: :hasSex
+  AddTriple (2dbddbdf-d32f-49a5-8ca8-3c2ddaafb216)
+ Call ID: 2dbddbdf-d32f-49a5-8ca8-3c2ddaafb216
+  Args:
+    relation: :hasSex
+    target: :Male
+    source: :Anton-Günther_Duke_of_Oldenburg
+  AddTriple (519c3a0e-0f2a-4ee4-9c16-eea860c41d8e)
+ Call ID: 519c3a0e-0f2a-4ee4-9c16-eea860c41d8e
+  Args:
+    relation: :hasSex
+    target: :Male
+    source: :Nikolaus_of_Oldenburg
+  AddTriple (31ccfa91-a031-49aa-9e70-eb2c9633ddc8)
+ Call ID: 31ccfa91-a031-49aa-9e70-eb2c9633ddc8
+  Args:
+    target: :Female
+    relation: :hasSex
+    source: :Helena_of_Waldeck_and_Pyrmont
+  AddTriple (a72be30c-0a6b-4e80-9612-910bc3644aee)
+ Call ID: a72be30c-0a6b-4e80-9612-910bc3644aee
+  Args:
+    relation: :hasSex
+    target: :Male
+    source: :Frederick_Augustus_II_of_Oldenburg
+  AddTriple (ae254c3f-b024-4b70-9ae0-a64ad9f45975)
+ Call ID: ae254c3f-b024-4b70-9ae0-a64ad9f45975
+  Args:
+    target: :Male
+    relation: :hasSex
+    source: :Friedrich_of_Waldeck_and_Pyrmont
+  AddTriple (620b5fd7-c698-477c-9a22-b0eca1da8811)
+ Call ID: 620b5fd7-c698-477c-9a22-b0eca1da8811
+  Args:
+    target: :Female
+    relation: :hasSex
+    source: :Ameli_of_Löwenstein-Wertheim-Freudenberg
+  Finish (c1336d93-421e-4f4d-98cb-d9916c44555e)
+ Call ID: c1336d93-421e-4f4d-98cb-d9916c44555e
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Anton-G%C3%BCnther_Duke_of_Oldenburg a :Man,
+          :Person ;
+      :hasAncestor data:Frederick_Augustus_II_of_Oldenburg,
+          data:Friedrich_of_Waldeck_and_Pyrmont ;
+      :hasBirthYear 1923 ;
+      :hasDeathYear 2014 ;
+      :hasFather data:Nikolaus_of_Oldenburg ;
+      :hasMarriageYear data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg,
+          1951 ;
+      :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+      :hasSex data:Male .
+
+  data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Person,
+          :Woman ;
+      :hasBirthYear 1923 ;
+      :hasDeathYear 2016 ;
+      :hasSex data:Female .
+
+  data:Frederick_Augustus_II_of_Oldenburg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Friedrich_of_Waldeck_and_Pyrmont a :Ancestor,
+          :Man,
+          :Person ;
+      :hasSex data:Male .
+
+  data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1899 ;
+      :hasDeathYear 1948 ;
+      :hasSex data:Female .
+
+  data:Nikolaus_of_Oldenburg a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1897 ;
+      :hasDeathYear 1970 ;
+      :hasSex data:Male .
+
+  data:Female a :Sex .
+
+  data:Male a :Sex .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (8a3c727f-d559-4de0-ad67-8bee5dcb6dd0)
+ Call ID: 8a3c727f-d559-4de0-ad67-8bee5dcb6dd0
   Args:
 
 ================================= Tool Message =================================
@@ -810,6 +1715,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ab436ea7-9839-4230-beb2-e97dbe7c3324)
- Call ID: ab436ea7-9839-4230-beb2-e97dbe7c3324
+  Finish (a4c6bfb1-7ef4-4a73-b6e2-dbe27519e246)
+ Call ID: a4c6bfb1-7ef4-4a73-b6e2-dbe27519e246
   Args:

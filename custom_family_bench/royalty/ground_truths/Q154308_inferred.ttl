@@ -1,0 +1,144 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Amélie_of_Orléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Amélie of Orléans"^^xsd:string ;
+    data:posIndicesFull "955:972"^^xsd:string ;
+    data:posIndicesPart "2199:2205"^^xsd:string,
+        "2227:2233"^^xsd:string,
+        "2452:2458"^^xsd:string ;
+    data:wdtLink wdt:Q236965 ;
+    :alsoKnownAs "Amelie of Orleans"^^xsd:string,
+        "Maria Amélia"^^xsd:string,
+        "Marie Amelie d'Orleans"^^xsd:string,
+        "Marie Amelie of Orleans"^^xsd:string,
+        "Marie Amélie d'Orléans"^^xsd:string,
+        "Marie Amélie of Orléans"^^xsd:string ;
+    :hasChild data:Manuel_II_of_Portugal ;
+    :hasRelation data:Amélie_of_Orléans,
+        data:Manuel_II_of_Portugal ;
+    :hasSex data:female ;
+    :hasSister data:Amélie_of_Orléans ;
+    :hasSon data:Manuel_II_of_Portugal ;
+    :isAncestorOf data:Manuel_II_of_Portugal ;
+    :isAuntOf data:Manuel_II_of_Portugal ;
+    :isBloodrelationOf data:Amélie_of_Orléans ;
+    :isMotherOf data:Manuel_II_of_Portugal ;
+    :isParentOf data:Manuel_II_of_Portugal ;
+    :isSiblingOf data:Amélie_of_Orléans ;
+    :isSisterOf data:Amélie_of_Orléans .
+
+data:Manuel_II_of_Portugal a :Man,
+        :Person ;
+    rdfs:label "Manuel II of Portugal"^^xsd:string ;
+    data:posIndicesFull "1013:1022"^^xsd:string,
+        "2291:2300"^^xsd:string,
+        "2986:2995"^^xsd:string,
+        "3425:3434"^^xsd:string,
+        "4:13"^^xsd:string,
+        "6798:6807"^^xsd:string,
+        "7390:7399"^^xsd:string,
+        "7629:7638"^^xsd:string,
+        "8144:8153"^^xsd:string,
+        "9807:9816"^^xsd:string ;
+    data:posIndicesPart "10180:10186"^^xsd:string,
+        "10398:10404"^^xsd:string,
+        "10506:10512"^^xsd:string,
+        "10642:10650"^^xsd:string,
+        "10785:10791"^^xsd:string,
+        "10811:10817"^^xsd:string,
+        "11087:11093"^^xsd:string,
+        "11249:11257"^^xsd:string,
+        "11349:11355"^^xsd:string,
+        "11361:11369"^^xsd:string,
+        "11435:11441"^^xsd:string,
+        "1161:1167"^^xsd:string,
+        "11630:11636"^^xsd:string,
+        "11664:11672"^^xsd:string,
+        "11922:11928"^^xsd:string,
+        "11968:11974"^^xsd:string,
+        "12113:12119"^^xsd:string,
+        "1313:1319"^^xsd:string,
+        "1407:1413"^^xsd:string,
+        "1526:1532"^^xsd:string,
+        "1678:1684"^^xsd:string,
+        "1765:1771"^^xsd:string,
+        "192:198"^^xsd:string,
+        "2083:2089"^^xsd:string,
+        "2166:2172"^^xsd:string,
+        "2382:2388"^^xsd:string,
+        "2544:2552"^^xsd:string,
+        "2766:2772"^^xsd:string,
+        "282:288"^^xsd:string,
+        "2955:2961"^^xsd:string,
+        "3254:3262"^^xsd:string,
+        "3697:3703"^^xsd:string,
+        "3930:3936"^^xsd:string,
+        "395:401"^^xsd:string,
+        "4108:4114"^^xsd:string,
+        "435:441"^^xsd:string,
+        "4481:4487"^^xsd:string,
+        "4653:4659"^^xsd:string,
+        "4685:4693"^^xsd:string,
+        "4735:4743"^^xsd:string,
+        "5028:5034"^^xsd:string,
+        "5082:5088"^^xsd:string,
+        "5304:5312"^^xsd:string,
+        "5327:5333"^^xsd:string,
+        "5356:5364"^^xsd:string,
+        "5420:5426"^^xsd:string,
+        "5618:5624"^^xsd:string,
+        "5781:5787"^^xsd:string,
+        "6095:6103"^^xsd:string,
+        "6201:6207"^^xsd:string,
+        "622:630"^^xsd:string,
+        "6300:6306"^^xsd:string,
+        "648:654"^^xsd:string,
+        "6532:6538"^^xsd:string,
+        "6610:6618"^^xsd:string,
+        "6669:6677"^^xsd:string,
+        "708:714"^^xsd:string,
+        "7338:7346"^^xsd:string,
+        "7679:7685"^^xsd:string,
+        "774:780"^^xsd:string,
+        "7913:7921"^^xsd:string,
+        "8398:8404"^^xsd:string,
+        "8792:8798"^^xsd:string,
+        "8998:9004"^^xsd:string,
+        "9222:9228"^^xsd:string,
+        "9661:9667"^^xsd:string ;
+    data:wdtLink wdt:Q154308 ;
+    :alsoKnownAs "Manuel II"^^xsd:string,
+        "Manuel the Patriot"^^xsd:string,
+        "Manuel the Unfortunate"^^xsd:string ;
+    :hasAncestor data:Amélie_of_Orléans ;
+    :hasBrother data:Manuel_II_of_Portugal ;
+    :hasMother data:Amélie_of_Orléans ;
+    :hasParent data:Amélie_of_Orléans ;
+    :hasRelation data:Amélie_of_Orléans,
+        data:Manuel_II_of_Portugal ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Manuel_II_of_Portugal ;
+    :isBrotherOf data:Manuel_II_of_Portugal ;
+    :isChildOf data:Amélie_of_Orléans ;
+    :isSiblingOf data:Manuel_II_of_Portugal ;
+    :isSonOf data:Amélie_of_Orléans .
+

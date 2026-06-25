@@ -2,57 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Constantine_II_of_Greece a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Paul_I_of_Greece ;
-    :hasMother data:Frederica_of_Hanover .
+data:Armin_Prince a :Man ;
+    :hasFather data:Leopold_IV_Prince_of_Lippe .
 
-data:Irene_of_Greece a :Person,
-        :Woman ;
-    :hasFather data:Paul_I_of_Greece ;
-    :hasMother data:Frederica_of_Hanover .
+data:Bernhard_of_Biesterfeld_nephew a :Man ;
+    :hasFather data:Bernhard_brother_of_Leopold .
 
-data:Sophia_of_Greece a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Paul_I_of_Greece ;
-    :hasMother data:Frederica_of_Hanover .
+data:Chlodwig_Prince a :Man ;
+    :hasFather data:Leopold_IV_Prince_of_Lippe .
 
-data:Constantine_I_of_Greece a :Ancestor,
-        :Man,
-        :Person .
+data:Ernst_Hereditary_Prince a :Man ;
+    :hasFather data:Leopold_IV_Prince_of_Lippe .
 
-data:Ernest_Augustus_of_Brunswick a :Ancestor,
-        :Man,
-        :Person .
+data:Bertha_of_Hesse-Philippsthal-Barchfeld a :Woman ;
+    :hasBirthYear 1874 ;
+    :hasDeathYear 1919 .
 
-data:Viktoria_Luise_of_Prussia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Wilhelm_II .
+data:Ernest_Count_of_Lippe-Biesterfeld a :Man .
 
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person .
+data:Julius_Prince_of_Lippe a :Man .
 
-data:Sophia_of_Prussia a :Ancestor,
-        :Person,
-        :Woman .
+data:Karoline_of_Wartensleben a :Woman .
 
-data:Frederica_of_Hanover a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1917 ;
-    :hasDeathYear 1981 ;
-    :hasFather data:Ernest_Augustus_of_Brunswick ;
-    :hasMother data:Sophia_of_Prussia,
-        data:Viktoria_Luise_of_Prussia ;
-    :knownAs "Friederike Luise"^^xsd:string .
+data:Bernhard_brother_of_Leopold a :Man .
 
-data:Paul_I_of_Greece a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Constantine_I_of_Greece ;
-    :hasMother data:Sophia_of_Prussia .
+data:Leopold_IV_Prince_of_Lippe a :Man ;
+    :hasBirthYear 1871 ;
+    :hasBrother data:Bernhard_brother_of_Leopold,
+        data:Julius_Prince_of_Lippe ;
+    :hasDeathYear 1949 ;
+    :hasFather data:Ernest_Count_of_Lippe-Biesterfeld ;
+    :hasMarriageYear 1901 ;
+    :hasMother data:Karoline_of_Wartensleben ;
+    :hasRelation data:Bertha_of_Hesse-Philippsthal-Barchfeld .
 

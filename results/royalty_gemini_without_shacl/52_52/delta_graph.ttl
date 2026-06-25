@@ -2,28 +2,24 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Constantine_II a :Man,
-        :Person ;
-    :hasBirthYear 1940 ;
-    :hasDeathYear 2023 ;
+data:Irene_of_Greece a :Person,
+        :Woman ;
     :hasFather data:Paul_of_Greece ;
-    :hasMarriageYear 1964 ;
     :hasMother data:Frederica_of_Greece ;
-    :hasRelation data:Anne-Marie_of_Denmark ;
-    :hasSister data:Irene_of_Greece,
-        data:Sofia_of_Greece .
+    :isSisterOf data:Constantine_II .
+
+data:Sofia_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMother data:Frederica_of_Greece ;
+    :isSisterOf data:Constantine_II .
 
 data:Anne-Marie_of_Denmark a :Person,
         :Woman ;
-    :hasMother data:Frederik_IX_of_Denmark .
+    :hasFather data:Frederik_IX_of_Denmark .
 
 data:Ernest_Augustus_Duke_of_Brunswick a :Man,
         :Person .
-
-data:Frederica_of_Greece a :Person,
-        :Woman ;
-    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
-    :hasMother data:Victoria_Louise_of_Prussia .
 
 data:Frederik_IX_of_Denmark a :Man,
         :Person .
@@ -31,21 +27,24 @@ data:Frederik_IX_of_Denmark a :Man,
 data:George_II_of_Greece a :Man,
         :Person .
 
-data:Irene_of_Greece a :Person,
-        :Woman .
-
-data:Paul_of_Greece a :Man,
-        :Person ;
-    :hasBrother data:George_II_of_Greece ;
-    :hasFather data:Constantine_I_of_Greece .
-
-data:Sofia_of_Greece a :Person,
-        :Woman .
-
 data:Victoria_Louise_of_Prussia a :Person,
         :Woman .
 
-data:Constantine_I_of_Greece a :Man,
+data:Constantine_II a :Man,
         :Person ;
-    :hasFather data:Constantine_I_of_Greece .
+    :hasBirthYear 1940 ;
+    :hasDeathYear 2023 ;
+    :hasFather data:Paul_of_Greece ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Frederica_of_Greece ;
+    :hasRelation data:Anne-Marie_of_Denmark .
+
+data:Frederica_of_Greece a :Person,
+        :Woman ;
+    :hasFather data:Ernest_Augustus_Duke_of_Brunswick ;
+    :hasMother data:Victoria_Louise_of_Prussia .
+
+data:Paul_of_Greece a :Man,
+        :Person ;
+    :isBrotherOf data:George_II_of_Greece .
 

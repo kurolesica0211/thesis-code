@@ -1,0 +1,135 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Prince_François_dOrléans a :Man,
+        :Person ;
+    rdfs:label "Prince François d’Orléans"^^xsd:string ;
+    data:posIndicesFull "891:910"^^xsd:string ;
+    data:wdtLink wdt:Q2740253 ;
+    :alsoKnownAs "François Henri Louis Marie d'Orléans"^^xsd:string,
+        "François d’Orléans"^^xsd:string,
+        "Prince François Henri Louis Marie d'Orléans"^^xsd:string ;
+    :hasBrother data:Prince_François_dOrléans ;
+    :hasRelation data:Prince_François_dOrléans ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_François_dOrléans ;
+    :isBrotherOf data:Prince_François_dOrléans ;
+    :isSiblingOf data:Prince_François_dOrléans .
+
+data:Prince_Jean_dOrléans_1 a :Man,
+        :Person ;
+    rdfs:label "Prince Jean d’Orléans"^^xsd:string ;
+    data:posIndicesFull "807:833"^^xsd:string ;
+    data:posIndicesPart "1124:1128"^^xsd:string,
+        "835:839"^^xsd:string,
+        "855:861"^^xsd:string ;
+    data:wdtLink wdt:Q578791 ;
+    :alsoKnownAs "Jean Pierre Clément Marie d’Orléans"^^xsd:string,
+        "Jean d’Orléans"^^xsd:string,
+        "Prince Jean Pierre Clément Marie d’Orléans"^^xsd:string,
+        "Prince Jean, Duke of Guise"^^xsd:string ;
+    :hasBrother data:Prince_Jean_dOrléans_1 ;
+    :hasRelation data:Prince_Jean_dOrléans_1 ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Jean_dOrléans_1 ;
+    :isBrotherOf data:Prince_Jean_dOrléans_1 ;
+    :isSiblingOf data:Prince_Jean_dOrléans_1 .
+
+data:Prince_Philippe-_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Philippe, Count of Paris"^^xsd:string ;
+    data:posIndicesFull "317:348"^^xsd:string ;
+    data:posIndicesPart "746:751"^^xsd:string,
+        "855:861"^^xsd:string,
+        "943:951"^^xsd:string ;
+    data:wdtLink wdt:Q354477 ;
+    :alsoKnownAs "Louis-Philippe Albert d'Orléans"^^xsd:string,
+        "Louis-Philippe-Albert d' Orléans"^^xsd:string ;
+    :hasBrother data:Prince_Philippe-_Count_of_Paris ;
+    :hasChild data:Princess_Isabelle_dOrléans ;
+    :hasDaughter data:Princess_Isabelle_dOrléans ;
+    :hasRelation data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_Isabelle_dOrléans ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Isabelle_dOrléans ;
+    :isBloodrelationOf data:Prince_Philippe-_Count_of_Paris ;
+    :isBrotherOf data:Prince_Philippe-_Count_of_Paris ;
+    :isFatherOf data:Princess_Isabelle_dOrléans ;
+    :isParentOf data:Princess_Isabelle_dOrléans ;
+    :isSiblingOf data:Prince_Philippe-_Count_of_Paris ;
+    :isUncleOf data:Princess_Isabelle_dOrléans .
+
+data:Princess_María_Isabel_of_Orléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess María Isabel of Orléans"^^xsd:string ;
+    data:posIndicesFull "361:373"^^xsd:string ;
+    data:posIndicesPart "1167:1175"^^xsd:string,
+        "955:962"^^xsd:string,
+        "972:979"^^xsd:string ;
+    data:wdtLink wdt:Q242879 ;
+    :alsoKnownAs "Infanta Maria Isabel of Orléans"^^xsd:string,
+        "Maria Isabella"^^xsd:string,
+        "Princess Maria Isabel of Orléans, Infanta of Spain"^^xsd:string,
+        "Princess Marie Isabelle of Orleans"^^xsd:string ;
+    :hasChild data:Princess_Isabelle_dOrléans ;
+    :hasDaughter data:Princess_Isabelle_dOrléans ;
+    :hasRelation data:Princess_Isabelle_dOrléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_María_Isabel_of_Orléans ;
+    :isAncestorOf data:Princess_Isabelle_dOrléans ;
+    :isAuntOf data:Princess_Isabelle_dOrléans ;
+    :isBloodrelationOf data:Princess_María_Isabel_of_Orléans ;
+    :isMotherOf data:Princess_Isabelle_dOrléans ;
+    :isParentOf data:Princess_Isabelle_dOrléans ;
+    :isSiblingOf data:Princess_María_Isabel_of_Orléans ;
+    :isSisterOf data:Princess_María_Isabel_of_Orléans .
+
+data:Princess_Isabelle_dOrléans a :Person,
+        :Woman ;
+    rdfs:label "Princess Isabelle d’Orléans"^^xsd:string ;
+    data:posIndicesFull "0:28"^^xsd:string ;
+    data:posIndicesPart "1167:1175"^^xsd:string,
+        "1176:1184"^^xsd:string,
+        "207:215"^^xsd:string,
+        "422:430"^^xsd:string,
+        "773:781"^^xsd:string ;
+    data:wdtLink wdt:Q261322 ;
+    :alsoKnownAs "Princess Isabelle of Orleans"^^xsd:string ;
+    :hasAncestor data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasFather data:Prince_Philippe-_Count_of_Paris ;
+    :hasMother data:Princess_María_Isabel_of_Orléans ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasRelation data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_Isabelle_dOrléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Isabelle_dOrléans ;
+    :isBloodrelationOf data:Princess_Isabelle_dOrléans ;
+    :isChildOf data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :isDaughterOf data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :isSiblingOf data:Princess_Isabelle_dOrléans ;
+    :isSisterOf data:Princess_Isabelle_dOrléans .
+

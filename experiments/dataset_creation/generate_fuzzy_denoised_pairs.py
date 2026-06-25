@@ -33,6 +33,8 @@ METADATA_PREDICATES = {
     DATA_NS.posIndices,
 }
 
+SEX_DEFINITION_RESOURCES = (DATA_NS.female, DATA_NS.male)
+
 
 @dataclass(frozen=True)
 class TextRow:
@@ -64,7 +66,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--graph",
         type=Path,
-        default=Path("custom_family_bench/royalty/ground_truth_inferred.ttl"),
+        default=Path("experiments/dataset_creation/ground_truth.ttl"),
         help="Ground-truth Turtle graph with labels, aliases, and relations.",
     )
     parser.add_argument(
@@ -208,7 +210,7 @@ def primary_label(graph: Graph, entity: URIRef, fallback_label: str | None = Non
     return None
 
 
-def build_candidate_closure(graph: Graph, start_entity: URIRef, max_depth: int = 2) -> set[URIRef]:
+def build_candidate_closure(graph: Graph, start_entity: URIRef, max_depth: int = 3) -> set[URIRef]:
     candidates: set[URIRef] = {start_entity}
     frontier: set[URIRef] = {start_entity}
     visited: set[URIRef] = {start_entity}
@@ -476,6 +478,10 @@ def create_output_graph(
         for pos_index in sorted(mentions_part.get(entity, set())):
             output.add((entity, DATA_NS.posIndicesPart, Literal(pos_index)))
 
+    for sex_resource in SEX_DEFINITION_RESOURCES:
+        for subject, predicate, obj in source_graph.triples((sex_resource, None, None)):
+            output.add((subject, predicate, obj))
+
     for subject, predicate, obj in source_graph:
         if predicate in METADATA_PREDICATES:
             continue
@@ -522,7 +528,7 @@ def process_text_row(
 
     candidate_entities = {
         entity
-        for entity in build_candidate_closure(graph, main_entity, max_depth=2)
+        for entity in build_candidate_closure(graph, main_entity, max_depth=3)
         if graph.value(entity, DATA_NS.wdtLink) is not None
     }
 

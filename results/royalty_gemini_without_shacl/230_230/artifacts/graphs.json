@@ -4,13 +4,104 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceJohn a :Man ;\n    :alsoKnownAs \"John Charles Francis\"^^xsd:string ;\n    :hasBirthYear 1905 ;\n    :hasBrother data:PrinceAlbert,\n        data:PrinceEdward,\n        data:PrinceGeorge,\n        data:PrinceHenry ;\n    :hasDeathYear 1919 ;\n    :hasFather data:KingGeorgeV ;\n    :hasMother data:QueenMary ;\n    :hasSister data:PrincessMary ;\n    :knownAs \"Johnnie\"^^xsd:string .\n\ndata:EdwardVII a :Man .\n\ndata:KingGeorgeV a :Man ;\n    :hasFather data:EdwardVII .\n\ndata:PrinceAlbert a :Man .\n\ndata:PrinceEdward a :Man .\n\ndata:PrinceGeorge a :Man .\n\ndata:PrinceHenry a :Man .\n\ndata:PrincessMary a :Woman .\n\ndata:QueenMary a :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n\ndata:Peter_Phillips a :Man .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 1,
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 4,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Mark_Phillips a :Man .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 5,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Mark_Phillips a :Man .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 ;\n    :hasMother data:Anne_Princess_Royal .\n\ndata:Anne_Princess_Royal a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 6,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 ;\n    :hasFather data:Mark_Phillips ;\n    :hasMother data:Anne_Princess_Royal .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Mark_Phillips a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 7,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 ;\n    :hasFather data:Mark_Phillips ;\n    :hasMother data:Anne_Princess_Royal .\n\ndata:Zara_Tindall a :Woman .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Mark_Phillips a :Man .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 8,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 ;\n    :hasFather data:Mark_Phillips ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasSister data:Zara_Tindall .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Mark_Phillips a :Man .\n\ndata:Zara_Tindall a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 9,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Autumn_Kelly a :Woman .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 ;\n    :hasFather data:Mark_Phillips ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasSister data:Zara_Tindall .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Mark_Phillips a :Man .\n\ndata:Zara_Tindall a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 10,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Autumn_Kelly a :Woman .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 ;\n    :hasFather data:Mark_Phillips ;\n    :hasMarriageYear 2008 ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasSister data:Zara_Tindall .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Mark_Phillips a :Man .\n\ndata:Zara_Tindall a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 11,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Autumn_Kelly a :Woman .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 ;\n    :hasFather data:Mark_Phillips ;\n    :hasMarriageYear 2008 ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasSister data:Zara_Tindall .\n\ndata:Savannah_Phillips a :Woman .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Mark_Phillips a :Man .\n\ndata:Zara_Tindall a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 12,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Autumn_Kelly a :Woman .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 ;\n    :hasDaughter data:Savannah_Phillips ;\n    :hasFather data:Mark_Phillips ;\n    :hasMarriageYear 2008 ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasSister data:Zara_Tindall .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Mark_Phillips a :Man .\n\ndata:Savannah_Phillips a :Woman .\n\ndata:Zara_Tindall a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 13,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Autumn_Kelly a :Woman .\n\ndata:Isla_Phillips a :Woman .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 ;\n    :hasDaughter data:Savannah_Phillips ;\n    :hasFather data:Mark_Phillips ;\n    :hasMarriageYear 2008 ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasSister data:Zara_Tindall .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Mark_Phillips a :Man .\n\ndata:Savannah_Phillips a :Woman .\n\ndata:Zara_Tindall a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 14,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Autumn_Kelly a :Woman .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 ;\n    :hasDaughter data:Isla_Phillips,\n        data:Savannah_Phillips ;\n    :hasFather data:Mark_Phillips ;\n    :hasMarriageYear 2008 ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasSister data:Zara_Tindall .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Isla_Phillips a :Woman .\n\ndata:Mark_Phillips a :Man .\n\ndata:Savannah_Phillips a :Woman .\n\ndata:Zara_Tindall a :Woman .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 15,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:PrinceJohn a :Man ;\n    :alsoKnownAs \"John Charles Francis\"^^xsd:string ;\n    :hasBirthYear 1905 ;\n    :hasBrother data:PrinceAlbert,\n        data:PrinceEdward,\n        data:PrinceGeorge,\n        data:PrinceHenry ;\n    :hasDeathYear 1919 ;\n    :hasFather data:KingGeorgeV ;\n    :hasMother data:QueenMary ;\n    :hasSister data:PrincessMary ;\n    :knownAs \"Johnnie\"^^xsd:string .\n\ndata:EdwardVII a :Man .\n\ndata:KingGeorgeV a :Man ;\n    :hasFather data:EdwardVII .\n\ndata:PrinceAlbert a :Man .\n\ndata:PrinceEdward a :Man .\n\ndata:PrinceGeorge a :Man .\n\ndata:PrinceHenry a :Man .\n\ndata:PrincessMary a :Woman .\n\ndata:QueenMary a :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Autumn_Kelly a :Woman .\n\ndata:Peter_Phillips a :Man ;\n    :hasBirthYear 1977 ;\n    :hasDaughter data:Isla_Phillips,\n        data:Savannah_Phillips ;\n    :hasFather data:Mark_Phillips ;\n    :hasMarriageYear 2008 ;\n    :hasMother data:Anne_Princess_Royal ;\n    :hasSister data:Zara_Tindall .\n\ndata:Anne_Princess_Royal a :Woman .\n\ndata:Isla_Phillips a :Woman .\n\ndata:Mark_Phillips a :Man .\n\ndata:Savannah_Phillips a :Woman .\n\ndata:Zara_Tindall a :Woman .\n\n"
     }
 ]

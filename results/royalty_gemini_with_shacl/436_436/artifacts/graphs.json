@@ -4,13 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Michael_Albemarle_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasDeathYear 2023 ;\n    :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;\n    :hasMother data:Elizabeth_Margaret_Cator .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Person,\n        :Woman .\n\ndata:Elizabeth_Margaret_Cator a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1959 .\n\ndata:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anthony_Edward_Weatherall a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Isobel_Weatherall .\n\ndata:Simon_Patrick_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Michael_Bowes-Lyon ;\n    :hasMother data:Isobel_Weatherall .\n\ndata:Michael_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :hasDeathYear 2016 .\n\ndata:Isobel_Weatherall a :Ancestor,\n        :Person,\n        :Woman .\n\n"
     },
     {
         "graph_type": "validation_graph",
         "iteration": 2,
         "source": "validate_shacl",
-        "tool_call_id": "169ff351-d312-4ab6-97b0-f1f4e4c5a68e",
+        "tool_call_id": "8c9ac05d-e3ed-4812-b043-223132ab2e80",
         "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n"
     },
     {
@@ -18,6 +18,6 @@
         "iteration": 3,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Michael_Albemarle_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasDeathYear 2023 ;\n    :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;\n    :hasMother data:Elizabeth_Margaret_Cator .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Person,\n        :Woman .\n\ndata:Elizabeth_Margaret_Cator a :Ancestor,\n        :Person,\n        :Woman ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1959 .\n\ndata:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Anthony_Edward_Weatherall a :Ancestor,\n        :Man,\n        :Person ;\n    :isFatherOf data:Isobel_Weatherall .\n\ndata:Simon_Patrick_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1986 ;\n    :hasFather data:Michael_Bowes-Lyon ;\n    :hasMother data:Isobel_Weatherall .\n\ndata:Michael_Bowes-Lyon a :Ancestor,\n        :Man,\n        :Person ;\n    :hasDeathYear 2016 .\n\ndata:Isobel_Weatherall a :Ancestor,\n        :Person,\n        :Woman .\n\n"
     }
 ]

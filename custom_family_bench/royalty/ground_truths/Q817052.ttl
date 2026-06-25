@@ -7,104 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Constantine_II_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Constantine II of Greece" ;
-    data:posIndicesFull "2363:2377",
-        "2363:2387" ;
-    data:wdtLink wdt:Q151773 ;
-    :alsoKnownAs "Constantine 2 of Greece",
-        "Constantine Glucksburg",
-        "Constantine II",
-        "Constantino de Grecia",
-        "King Constantine",
-        "Konstantinos 2",
-        "Konstantinos II",
-        "Konstantinos II of Greece",
-        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
-        "Konstantínos 2",
-        "Konstantínos II" ;
-    :hasSex data:male .
-
-data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg" ;
-    data:posIndicesFull "3766:3816",
-        "607:657" ;
-    data:posIndicesPart "1081:1087",
-        "1265:1271",
-        "1811:1817",
-        "2823:2829",
-        "4208:4217" ;
-    data:wdtLink wdt:Q62492 ;
-    :alsoKnownAs "Richard Casimir Karl August Robert Konstantin zu Sayn-Wittgenstein-Berleburg",
-        "Richard Prince zu Sayn-Wittgenstein-Berleburg" ;
-    :hasSex data:male .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Alexandrine of Mecklenburg-Schwerin" ;
-    data:posIndicesFull "1189:1217",
-        "1753:1781" ;
-    data:wdtLink wdt:Q57264 ;
-    :alsoKnownAs "Alexandrine Auguste of Mecklenburg-Schwerin",
-        "Alexandrine, Queen of Denmark",
-        "Duchess Alexandrine Auguste of Mecklenburg-Schwerin",
-        "Duchess Alexandrine of Mecklenburg-Schwerin",
-        "Queen Alexandrine of Denmark" ;
-    :hasChild data:Frederik_IX_of_Denmark ;
-    :hasSex data:female ;
-    :hasSon data:Frederik_IX_of_Denmark ;
-    :isMotherOf data:Frederik_IX_of_Denmark ;
-    :isParentOf data:Frederik_IX_of_Denmark .
-
-data:Christian_X_of_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Christian X of Denmark" ;
-    data:posIndicesFull "1173:1184",
-        "1737:1748",
-        "2584:2595" ;
-    data:posIndicesPart "1404:1411",
-        "2287:2294",
-        "2756:2763",
-        "3944:3951",
-        "4282:4289",
-        "4374:4383",
-        "4808:4815",
-        "4828:4835",
-        "5762:5769",
-        "6264:6271",
-        "6408:6415",
-        "6482:6489",
-        "6643:6650",
-        "6687:6694" ;
-    data:wdtLink wdt:Q156617 ;
-    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm",
-        "Christian X" ;
-    :hasChild data:Frederik_IX_of_Denmark ;
-    :hasSex data:male ;
-    :hasSon data:Frederik_IX_of_Denmark ;
-    :isFatherOf data:Frederik_IX_of_Denmark ;
-    :isParentOf data:Frederik_IX_of_Denmark .
-
-data:Frederik_X_of_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Frederik_X_of_Denmark a :Person ;
     rdfs:label "Frederik X of Denmark" ;
     data:posIndicesFull "5541:5551" ;
     data:posIndicesPart "6264:6271",
@@ -120,47 +23,10 @@ data:Frederik_X_of_Denmark a :Ancestor,
         "Frederik X",
         "Frederik of Denmark",
         "Frederik of Denmark, Count of Monpezat" ;
-    :hasMother data:Margrethe_II_of_Denmark ;
     :hasParent data:Margrethe_II_of_Denmark ;
-    :hasSex data:male ;
-    :isChildOf data:Margrethe_II_of_Denmark ;
-    :isSonOf data:Margrethe_II_of_Denmark .
+    :hasSex data:male .
 
-data:Ingrid_of_Sweden a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Ingrid of Sweden" ;
-    data:posIndicesFull "264:276",
-        "4636:4648" ;
-    data:posIndicesPart "1116:1122",
-        "1288:1294",
-        "1877:1883",
-        "2093:2099" ;
-    data:wdtLink wdt:Q163010 ;
-    :alsoKnownAs "Ingrid Victoria Sofia Louise Margareta",
-        "Ingrid of Sweden",
-        "Ingrid, Queen of Denmark",
-        "Princess Ingrid of Sweden",
-        "Queen Ingrid" ;
-    :hasChild data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :hasDaughter data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :hasSex data:female ;
-    :isMotherOf data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isParentOf data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece .
-
-data:Princess_Benedikte_of_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Benedikte_of_Denmark a :Person ;
     rdfs:label "Princess Benedikte of Denmark" ;
     data:posIndicesFull "109:141",
         "21:50",
@@ -221,33 +87,18 @@ data:Princess_Benedikte_of_Denmark a :Ancestor,
     :alsoKnownAs "Benedikte Astrid Ingeborg Ingrid",
         "Benedikte Astrid Ingeborg Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
         "Princess Benedikte of Denmark, Princess of Sayn-Wittgenstein-Berleburg" ;
-    :hasFather data:Frederik_IX_of_Denmark ;
-    :hasMother data:Ingrid_of_Sweden ;
     :hasParent data:Frederik_IX_of_Denmark,
         data:Ingrid_of_Sweden ;
-    :hasSex data:female ;
-    :hasSister data:Margrethe_II_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isAuntOf data:Frederik_X_of_Denmark ;
-    :isChildOf data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :isDaughterOf data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :isSiblingOf data:Margrethe_II_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isSisterOf data:Margrethe_II_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece .
+    :hasSex data:female .
 
-data:Queen_Anne-Marie_of_Greece a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Queen_Anne-Marie_of_Greece a :Person ;
     rdfs:label "Queen Anne-Marie of Greece" ;
     data:posIndicesFull "461:487" ;
     data:posIndicesPart "2189:2194",
         "2278:2283",
         "2318:2322",
         "2323:2328",
+        "2381:2387",
         "3276:3280",
         "3281:3286" ;
     data:wdtLink wdt:Q564889 ;
@@ -255,27 +106,67 @@ data:Queen_Anne-Marie_of_Greece a :Ancestor,
         "Anne-Marie Dagmar Ingrid",
         "Anne-Marie of the Hellenes (née Princess Anne-Marie of Denmark)",
         "Princess Anne-Marie of Denmark" ;
-    :hasFather data:Frederik_IX_of_Denmark ;
-    :hasMother data:Ingrid_of_Sweden ;
     :hasParent data:Frederik_IX_of_Denmark,
         data:Ingrid_of_Sweden ;
-    :hasSex data:female ;
-    :hasSister data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark ;
-    :isAuntOf data:Frederik_X_of_Denmark ;
-    :isChildOf data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :isDaughterOf data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :isSiblingOf data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark ;
-    :isSisterOf data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark .
+    :hasSex data:female .
 
-data:Margrethe_II_of_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Richard-_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Person ;
+    rdfs:label "Richard, 6th Prince of Sayn-Wittgenstein-Berleburg" ;
+    data:posIndicesFull "3766:3816",
+        "607:657" ;
+    data:posIndicesPart "1081:1087",
+        "1265:1271",
+        "1811:1817",
+        "2823:2829",
+        "4208:4217" ;
+    data:wdtLink wdt:Q62492 ;
+    :alsoKnownAs "Richard Casimir Karl August Robert Konstantin zu Sayn-Wittgenstein-Berleburg",
+        "Richard Prince zu Sayn-Wittgenstein-Berleburg" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alexandrine_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Alexandrine of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "1189:1217",
+        "1753:1781" ;
+    data:wdtLink wdt:Q57264 ;
+    :alsoKnownAs "Alexandrine Auguste of Mecklenburg-Schwerin",
+        "Alexandrine, Queen of Denmark",
+        "Duchess Alexandrine Auguste of Mecklenburg-Schwerin",
+        "Duchess Alexandrine of Mecklenburg-Schwerin",
+        "Queen Alexandrine of Denmark" ;
+    :hasSex data:female .
+
+data:Christian_X_of_Denmark a :Person ;
+    rdfs:label "Christian X of Denmark" ;
+    data:posIndicesFull "1173:1184",
+        "1737:1748",
+        "2584:2595" ;
+    data:posIndicesPart "1404:1411",
+        "2287:2294",
+        "2756:2763",
+        "3944:3951",
+        "4282:4289",
+        "4374:4383",
+        "4808:4815",
+        "4828:4835",
+        "5762:5769",
+        "6264:6271",
+        "6408:6415",
+        "6482:6489",
+        "6643:6650",
+        "6687:6694" ;
+    data:wdtLink wdt:Q156617 ;
+    :alsoKnownAs "Christian Carl Frederik Albert Alexander Vilhelm",
+        "Christian X" ;
+    :hasSex data:male .
+
+data:Margrethe_II_of_Denmark a :Person ;
     rdfs:label "Margrethe II of Denmark" ;
     data:posIndicesFull "322:334",
         "322:345",
@@ -304,30 +195,11 @@ data:Margrethe_II_of_Denmark a :Ancestor,
     data:wdtLink wdt:Q102139 ;
     :alsoKnownAs "Ingahild Grathmer",
         "Margrethe II" ;
-    :hasChild data:Frederik_X_of_Denmark ;
-    :hasFather data:Frederik_IX_of_Denmark ;
-    :hasMother data:Ingrid_of_Sweden ;
     :hasParent data:Frederik_IX_of_Denmark,
         data:Ingrid_of_Sweden ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :hasSon data:Frederik_X_of_Denmark ;
-    :isChildOf data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :isDaughterOf data:Frederik_IX_of_Denmark,
-        data:Ingrid_of_Sweden ;
-    :isMotherOf data:Frederik_X_of_Denmark ;
-    :isParentOf data:Frederik_X_of_Denmark ;
-    :isSiblingOf data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isSisterOf data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece .
+    :hasSex data:female .
 
-data:Frederik_IX_of_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Frederik_IX_of_Denmark a :Person ;
     rdfs:label "Frederik IX of Denmark" ;
     data:posIndicesFull "248:259",
         "2652:2663",
@@ -360,25 +232,27 @@ data:Frederik_IX_of_Denmark a :Ancestor,
         "Frederik IX",
         "King Frederick IX of Denmark",
         "King Frederik IX of Denmark" ;
-    :hasChild data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :hasDaughter data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :hasFather data:Christian_X_of_Denmark ;
-    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
     :hasParent data:Alexandrine_of_Mecklenburg-Schwerin,
         data:Christian_X_of_Denmark ;
-    :hasSex data:male ;
-    :isChildOf data:Alexandrine_of_Mecklenburg-Schwerin,
-        data:Christian_X_of_Denmark ;
-    :isFatherOf data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isParentOf data:Margrethe_II_of_Denmark,
-        data:Princess_Benedikte_of_Denmark,
-        data:Queen_Anne-Marie_of_Greece ;
-    :isSonOf data:Alexandrine_of_Mecklenburg-Schwerin,
-        data:Christian_X_of_Denmark .
+    :hasSex data:male .
+
+data:Ingrid_of_Sweden a :Person ;
+    rdfs:label "Ingrid of Sweden" ;
+    data:posIndicesFull "264:276",
+        "4636:4648" ;
+    data:posIndicesPart "1116:1122",
+        "1288:1294",
+        "1877:1883",
+        "2093:2099" ;
+    data:wdtLink wdt:Q163010 ;
+    :alsoKnownAs "Ingrid Victoria Sofia Louise Margareta",
+        "Ingrid of Sweden",
+        "Ingrid, Queen of Denmark",
+        "Princess Ingrid of Sweden",
+        "Queen Ingrid" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

@@ -1,0 +1,756 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Marie_Christine-_Princess_Michael_of_Kent a :Person,
+        :Woman ;
+    rdfs:label "Marie Christine, Princess Michael of Kent"^^xsd:string ;
+    data:posIndicesFull "0:22"^^xsd:string,
+        "3351:3375"^^xsd:string,
+        "3758:3780"^^xsd:string,
+        "7056:7080"^^xsd:string,
+        "7286:7310"^^xsd:string,
+        "9810:9832"^^xsd:string ;
+    data:posIndicesPart "1020:1028"^^xsd:string,
+        "1140:1147"^^xsd:string,
+        "1505:1513"^^xsd:string,
+        "1814:1821"^^xsd:string,
+        "1945:1952"^^xsd:string,
+        "1998:2006"^^xsd:string,
+        "2084:2091"^^xsd:string,
+        "2232:2239"^^xsd:string,
+        "2488:2495"^^xsd:string,
+        "2755:2759"^^xsd:string,
+        "2886:2893"^^xsd:string,
+        "3190:3198"^^xsd:string,
+        "3498:3505"^^xsd:string,
+        "3573:3580"^^xsd:string,
+        "367:374"^^xsd:string,
+        "3921:3928"^^xsd:string,
+        "3946:3951"^^xsd:string,
+        "3952:3961"^^xsd:string,
+        "4172:4177"^^xsd:string,
+        "4178:4187"^^xsd:string,
+        "4241:4246"^^xsd:string,
+        "4247:4256"^^xsd:string,
+        "4352:4359"^^xsd:string,
+        "4456:4463"^^xsd:string,
+        "4468:4473"^^xsd:string,
+        "4474:4483"^^xsd:string,
+        "4631:4638"^^xsd:string,
+        "4717:4724"^^xsd:string,
+        "4818:4825"^^xsd:string,
+        "4995:5002"^^xsd:string,
+        "5463:5470"^^xsd:string,
+        "554:561"^^xsd:string,
+        "5707:5714"^^xsd:string,
+        "5924:5931"^^xsd:string,
+        "6148:6155"^^xsd:string,
+        "6243:6250"^^xsd:string,
+        "6333:6340"^^xsd:string,
+        "6344:6348"^^xsd:string,
+        "6457:6464"^^xsd:string,
+        "6604:6611"^^xsd:string,
+        "698:705"^^xsd:string,
+        "7394:7401"^^xsd:string,
+        "7490:7497"^^xsd:string,
+        "7873:7880"^^xsd:string,
+        "8012:8019"^^xsd:string,
+        "8373:8380"^^xsd:string,
+        "8435:8442"^^xsd:string,
+        "8552:8559"^^xsd:string,
+        "8721:8728"^^xsd:string,
+        "8880:8887"^^xsd:string,
+        "9020:9027"^^xsd:string,
+        "9105:9112"^^xsd:string,
+        "9247:9254"^^xsd:string,
+        "9466:9473"^^xsd:string,
+        "954:961"^^xsd:string,
+        "9938:9945"^^xsd:string ;
+    data:wdtLink wdt:Q93535 ;
+    :alsoKnownAs "Marie Christine von Reibnitz"^^xsd:string,
+        "Marie-Christine Agnes Hedwig Ida Baronin von Reibnitz"^^xsd:string,
+        "Princess Michael of Kent"^^xsd:string ;
+    :hasRelation data:Marie_Christine-_Princess_Michael_of_Kent ;
+    :hasSex data:female ;
+    :hasSister data:Marie_Christine-_Princess_Michael_of_Kent ;
+    :isBloodrelationOf data:Marie_Christine-_Princess_Michael_of_Kent ;
+    :isSiblingOf data:Marie_Christine-_Princess_Michael_of_Kent ;
+    :isSisterOf data:Marie_Christine-_Princess_Michael_of_Kent .
+
+data:male a :Male .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Elena Vladimirovna of Russia"^^xsd:string ;
+    data:posIndicesFull "1093:1135"^^xsd:string,
+        "5268:5310"^^xsd:string ;
+    data:posIndicesPart "3823:3829"^^xsd:string,
+        "4860:4865"^^xsd:string,
+        "4880:4885"^^xsd:string,
+        "4930:4935"^^xsd:string,
+        "4961:4966"^^xsd:string,
+        "4987:4993"^^xsd:string,
+        "5054:5060"^^xsd:string,
+        "5526:5538"^^xsd:string,
+        "5540:5545"^^xsd:string,
+        "5546:5553"^^xsd:string,
+        "5557:5563"^^xsd:string,
+        "5625:5631"^^xsd:string,
+        "5672:5677"^^xsd:string,
+        "5773:5779"^^xsd:string,
+        "5980:5986"^^xsd:string,
+        "6140:6146"^^xsd:string,
+        "8930:8936"^^xsd:string,
+        "9136:9142"^^xsd:string,
+        "9381:9387"^^xsd:string ;
+    data:wdtLink wdt:Q232483 ;
+    :hasChild data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isMotherOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Nicholas of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "1051:1088"^^xsd:string,
+        "5225:5262"^^xsd:string ;
+    data:posIndicesPart "1321:1327"^^xsd:string,
+        "1517:1523"^^xsd:string,
+        "2280:2286"^^xsd:string,
+        "2348:2354"^^xsd:string,
+        "2447:2453"^^xsd:string,
+        "3566:3572"^^xsd:string,
+        "7045:7051"^^xsd:string,
+        "7275:7281"^^xsd:string,
+        "7866:7872"^^xsd:string,
+        "8366:8372"^^xsd:string,
+        "9459:9465"^^xsd:string,
+        "9682:9688"^^xsd:string ;
+    data:wdtLink wdt:Q170160 ;
+    :alsoKnownAs "Prince Nikolaos of Greece and Denmark"^^xsd:string ;
+    :hasBrother data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isAncestorOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Marina of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "221:258"^^xsd:string ;
+    data:posIndicesPart "1020:1028"^^xsd:string,
+        "1029:1035"^^xsd:string,
+        "1505:1513"^^xsd:string,
+        "1517:1523"^^xsd:string,
+        "1998:2006"^^xsd:string,
+        "3190:3198"^^xsd:string,
+        "9219:9225"^^xsd:string ;
+    data:wdtLink wdt:Q170184 ;
+    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent"^^xsd:string,
+        "Princess Marina of Greece and Denmark, The Duchess of Kent"^^xsd:string,
+        "Princess Marina, The Duchess Of Kent"^^xsd:string ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isAncestorOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isAuntOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isBloodrelationOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isParentOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isSiblingOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Edward_VIII a :Man,
+        :Person ;
+    rdfs:label "Edward VIII"^^xsd:string ;
+    data:posIndicesFull "300:311"^^xsd:string,
+        "3145:3158"^^xsd:string,
+        "911:928"^^xsd:string,
+        "917:928"^^xsd:string ;
+    data:wdtLink wdt:Q590227 ;
+    :alsoKnownAs "David Windsor"^^xsd:string,
+        "Duke of Windsor"^^xsd:string,
+        "Edward Albert Christian George Andrew Patrick David"^^xsd:string,
+        "Edward Albert Christian George Andrew Patrick David Windsor"^^xsd:string,
+        "Edward VIII Edward VIII of the United Kingdom"^^xsd:string,
+        "Edward VIII Edward VIII, King of the United Kingdom"^^xsd:string,
+        "Edward VIII of the United Kingdom"^^xsd:string,
+        "Edward Windsor"^^xsd:string,
+        "Edward, Duke of Windsor"^^xsd:string,
+        "Edward, Prince of Wales"^^xsd:string,
+        "King Edward VIII"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward, Duke of Windsor"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent .
+
+data:George_VI a :Man,
+        :Person ;
+    rdfs:label "George VI"^^xsd:string ;
+    data:posIndicesFull "316:325"^^xsd:string,
+        "933:942"^^xsd:string ;
+    data:wdtLink wdt:Q280856 ;
+    :alsoKnownAs "Albert Frederick Arthur George"^^xsd:string,
+        "Albert Frederick Arthur George Windsor"^^xsd:string,
+        "Albert Windsor"^^xsd:string,
+        "Bertie"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "H.M. King George VI"^^xsd:string,
+        "Industrial Prince"^^xsd:string,
+        "King George VI"^^xsd:string,
+        "Prince Albert Frederick Arthur George of Cornwall and York"^^xsd:string,
+        "Prince Albert Frederick Arthur George of Wales"^^xsd:string,
+        "Prince Albert Frederick Arthur George of York"^^xsd:string,
+        "Prince Albert Frederick Arthur George, Duke of York"^^xsd:string,
+        "Prince Albert of Cornwall and York"^^xsd:string,
+        "Prince Albert of Wales"^^xsd:string,
+        "Prince Albert of York"^^xsd:string,
+        "Prince Albert, Duke of York"^^xsd:string,
+        "The Prince Albert Frederick Arthur George of the United Kingdom"^^xsd:string,
+        "The Prince Albert Frederick Arthur George, Duke of York"^^xsd:string,
+        "The Prince Albert of the United Kingdom"^^xsd:string,
+        "The Prince Albert, Duke of York"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent .
+
+data:Prince_Henry-_Duke_of_Gloucester a :Man,
+        :Person ;
+    rdfs:label "Prince Henry, Duke of Gloucester"^^xsd:string ;
+    data:posIndicesFull "1573:1585"^^xsd:string,
+        "1573:1605"^^xsd:string ;
+    data:posIndicesPart "2280:2286"^^xsd:string,
+        "2348:2354"^^xsd:string,
+        "2447:2453"^^xsd:string,
+        "3566:3572"^^xsd:string,
+        "5678:5682"^^xsd:string,
+        "7045:7051"^^xsd:string,
+        "7275:7281"^^xsd:string,
+        "7866:7872"^^xsd:string,
+        "8366:8372"^^xsd:string,
+        "9459:9465"^^xsd:string,
+        "9682:9688"^^xsd:string ;
+    data:wdtLink wdt:Q117174 ;
+    :alsoKnownAs "Henry Gloucester"^^xsd:string,
+        "Henry William Frederick Albert"^^xsd:string,
+        "Henry Windsor"^^xsd:string,
+        "Prince Henry"^^xsd:string,
+        "Prince Henry William Frederick Albert, Duke of Gloucester"^^xsd:string,
+        "Prince Henry of Cornwall and York"^^xsd:string,
+        "Prince Henry of Wales"^^xsd:string,
+        "Prince Henry of York"^^xsd:string,
+        "The Prince Henry"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent .
+
+data:Prince_John_of_the_United_Kingdom a :Man,
+        :Person ;
+    rdfs:label "Prince John of the United Kingdom"^^xsd:string ;
+    data:posIndicesFull "7712:7721"^^xsd:string ;
+    data:posIndicesPart "7866:7872"^^xsd:string,
+        "8366:8372"^^xsd:string,
+        "9459:9465"^^xsd:string,
+        "9682:9688"^^xsd:string ;
+    data:wdtLink wdt:Q310488 ;
+    :alsoKnownAs "Prince John"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isChildOf data:George_V ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent .
+
+data:Prince_Edward-_Duke_of_Kent a :Man,
+        :Person ;
+    rdfs:label "Prince Edward, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "1441:1457"^^xsd:string,
+        "1445:1457"^^xsd:string,
+        "203:215"^^xsd:string,
+        "3145:3158"^^xsd:string,
+        "3145:3172"^^xsd:string,
+        "3160:3172"^^xsd:string,
+        "817:829"^^xsd:string ;
+    data:posIndicesPart "2280:2286"^^xsd:string,
+        "2348:2354"^^xsd:string,
+        "2447:2453"^^xsd:string,
+        "2755:2759"^^xsd:string,
+        "3566:3572"^^xsd:string,
+        "411:417"^^xsd:string,
+        "426:430"^^xsd:string,
+        "5678:5682"^^xsd:string,
+        "6344:6348"^^xsd:string,
+        "7045:7051"^^xsd:string,
+        "7275:7281"^^xsd:string,
+        "7866:7872"^^xsd:string,
+        "8366:8372"^^xsd:string,
+        "9459:9465"^^xsd:string,
+        "9682:9688"^^xsd:string ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent"^^xsd:string,
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent"^^xsd:string,
+        "Edward Kent"^^xsd:string,
+        "His Royal Highness The Duke of Kent"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward of Kent"^^xsd:string,
+        "The Duke of Kent"^^xsd:string ;
+    :hasAncestor data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasFather data:Prince_George-_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isBrotherOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isChildOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isSonOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Prince_Michael_of_Kent a :Man,
+        :Person ;
+    rdfs:label "Prince Michael of Kent"^^xsd:string ;
+    data:posIndicesFull "0:22"^^xsd:string,
+        "24:55"^^xsd:string,
+        "3351:3375"^^xsd:string,
+        "3758:3780"^^xsd:string,
+        "7056:7080"^^xsd:string,
+        "7286:7310"^^xsd:string,
+        "9810:9832"^^xsd:string ;
+    data:posIndicesPart "1140:1147"^^xsd:string,
+        "1321:1327"^^xsd:string,
+        "1814:1821"^^xsd:string,
+        "1945:1952"^^xsd:string,
+        "2084:2091"^^xsd:string,
+        "2232:2239"^^xsd:string,
+        "2280:2286"^^xsd:string,
+        "2348:2354"^^xsd:string,
+        "2447:2453"^^xsd:string,
+        "2488:2495"^^xsd:string,
+        "2755:2759"^^xsd:string,
+        "2886:2893"^^xsd:string,
+        "3498:3505"^^xsd:string,
+        "3566:3572"^^xsd:string,
+        "3573:3580"^^xsd:string,
+        "367:374"^^xsd:string,
+        "3921:3928"^^xsd:string,
+        "411:417"^^xsd:string,
+        "4352:4359"^^xsd:string,
+        "4456:4463"^^xsd:string,
+        "4631:4638"^^xsd:string,
+        "4717:4724"^^xsd:string,
+        "4818:4825"^^xsd:string,
+        "4995:5002"^^xsd:string,
+        "5463:5470"^^xsd:string,
+        "554:561"^^xsd:string,
+        "5707:5714"^^xsd:string,
+        "5924:5931"^^xsd:string,
+        "6148:6155"^^xsd:string,
+        "6243:6250"^^xsd:string,
+        "6333:6340"^^xsd:string,
+        "6344:6348"^^xsd:string,
+        "6457:6464"^^xsd:string,
+        "6604:6611"^^xsd:string,
+        "698:705"^^xsd:string,
+        "7394:7401"^^xsd:string,
+        "7490:7497"^^xsd:string,
+        "7866:7872"^^xsd:string,
+        "7873:7880"^^xsd:string,
+        "8012:8019"^^xsd:string,
+        "8366:8372"^^xsd:string,
+        "8373:8380"^^xsd:string,
+        "8435:8442"^^xsd:string,
+        "8552:8559"^^xsd:string,
+        "8721:8728"^^xsd:string,
+        "8880:8887"^^xsd:string,
+        "9020:9027"^^xsd:string,
+        "9105:9112"^^xsd:string,
+        "9247:9254"^^xsd:string,
+        "9459:9465"^^xsd:string,
+        "9466:9473"^^xsd:string,
+        "954:961"^^xsd:string,
+        "9938:9945"^^xsd:string ;
+    data:wdtLink wdt:Q313752 ;
+    :alsoKnownAs "Michael George Charles Franklin"^^xsd:string,
+        "Prince Michael George Charles Franklin of Kent"^^xsd:string ;
+    :hasAncestor data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasFather data:Prince_George-_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:George_V,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isBrotherOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isChildOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isSonOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark .
+
+data:George_V a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George V"^^xsd:string ;
+    data:posIndicesFull "280:288"^^xsd:string,
+        "2838:2846"^^xsd:string,
+        "5215:5223"^^xsd:string,
+        "857:870"^^xsd:string,
+        "862:870"^^xsd:string ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert"^^xsd:string,
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha"^^xsd:string,
+        "George Frederick Ernest Albert Windsor"^^xsd:string,
+        "George Saxe-Coburg-Gotha"^^xsd:string,
+        "George V (King of Great Britain)"^^xsd:string,
+        "George V of the United Kingdom"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "King George V"^^xsd:string ;
+    :hasBrother data:George_V ;
+    :hasChild data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Prince_Michael_of_Kent ;
+    :hasSex data:male ;
+    :hasSon data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isAncestorOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Prince_Michael_of_Kent ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isFatherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isParentOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isSiblingOf data:George_V ;
+    :isUncleOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom .
+
+data:Prince_George-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince George, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "188:215"^^xsd:string,
+        "195:215"^^xsd:string,
+        "802:829"^^xsd:string,
+        "809:829"^^xsd:string ;
+    data:posIndicesPart "1321:1327"^^xsd:string,
+        "2280:2286"^^xsd:string,
+        "2348:2354"^^xsd:string,
+        "2447:2453"^^xsd:string,
+        "2755:2759"^^xsd:string,
+        "3566:3572"^^xsd:string,
+        "411:417"^^xsd:string,
+        "426:430"^^xsd:string,
+        "5678:5682"^^xsd:string,
+        "6344:6348"^^xsd:string,
+        "7045:7051"^^xsd:string,
+        "7275:7281"^^xsd:string,
+        "7866:7872"^^xsd:string,
+        "8366:8372"^^xsd:string,
+        "9459:9465"^^xsd:string,
+        "9682:9688"^^xsd:string ;
+    data:wdtLink wdt:Q160770 ;
+    :alsoKnownAs "George Edward Alexander Edmund of Wales"^^xsd:string,
+        "George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "George Kent"^^xsd:string,
+        "George of Wales"^^xsd:string,
+        "George, Duke of Kent"^^xsd:string,
+        "Prince George Edward Alexander Edmund of Wales"^^xsd:string,
+        "Prince George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "Prince George of Wales"^^xsd:string,
+        "The Prince George Edward Alexander Edmund of the United Kingdom"^^xsd:string,
+        "The Prince George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "The Prince George of the United Kingdom"^^xsd:string,
+        "The Prince George, Duke of Kent"^^xsd:string ;
+    :hasAncestor data:George_V ;
+    :hasBrother data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :hasChild data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasFather data:George_V ;
+    :hasParent data:George_V ;
+    :hasRelation data:Edward_VIII,
+        data:George_V,
+        data:George_VI,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom,
+        data:Prince_Michael_of_Kent ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isAncestorOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isBloodrelationOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isBrotherOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isChildOf data:George_V ;
+    :isFatherOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isParentOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI,
+        data:Prince_George-_Duke_of_Kent,
+        data:Prince_Henry-_Duke_of_Gloucester,
+        data:Prince_John_of_the_United_Kingdom ;
+    :isSonOf data:George_V ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_Michael_of_Kent .
+

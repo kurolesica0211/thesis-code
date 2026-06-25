@@ -69,44 +69,147 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Infante Juan, Count of Barcelona (Juan Carlos Teresa Silverio Alfonso de Borbón y Battenberg; 20 June 1913 – 1 April 1993), was a claimant to the Spanish throne as Juan III.
-He was the third son and designated heir of King Alfonso XIII and Victoria Eugenie of Battenberg.
-Juan's son Juan Carlos I became King of Spain when Spain's constitutional monarchy was restored in 1975.
+Prince Michael of Kent (Michael George Charles Franklin; born 4 July 1942) is a member of the British royal family who is 53rd in line to the British throne as of 2026.
+The younger son of Prince George, Duke of Kent, and Princess Marina of Greece and Denmark, he is a grandson of George V, nephew of Edward VIII and George VI, and first cousin of Queen Elizabeth II.
+Michael's mother was also a first cousin of Prince Philip, Duke of Edinburgh, consort of Queen Elizabeth II, making him both a second cousin and first cousin once removed to Charles III.
+Michael occasionally represented Elizabeth II at some functions in Commonwealth realms outside the United Kingdom during her reign.
 Early life
 
-Infante Juan was born at the Palace of San Ildefonso.
-Owing to the renunciations in 1933 of his brothers Alfonso, Prince of Asturias, and Infante Jaime, Duke of Segovia, Infante Juan became first in line to the defunct Spanish throne.
-He thus received the title Prince of Asturias while serving with the Royal Navy in Bombay.
-He married Princess María de las Mercedes of Bourbon-Two Sicilies (1910–2000), known in Spain as Doña María de las Mercedes de Borbón-Dos Sicilias y Orleans, in Rome on 12 October 1935.
-Children
+Michael was born at 7:35 pm on 4 July 1942 at Coppins, Iver, Buckinghamshire.
+He was the third child of Prince George, Duke of Kent, who was the fourth son of King George V and Queen Mary and a younger brother of kings Edward VIII and George VI.
+At birth, Michael was seventh in line to the British throne.
+His mother was Princess Marina, a daughter of Prince Nicholas of Greece and Denmark and Grand Duchess Elena Vladimirovna of Russia.
+At Michael's baptism on 4 August in the Private Chapel of Windsor Castle, his godparents were his paternal uncle the King; Queen Wilhelmina of the Netherlands (for whom her son-in-law Prince Bernhard stood proxy); King Haakon VII of Norway (his great-uncle); US President Franklin D. Roosevelt (for whom the Duke of Kent stood proxy); Frederica of Hanover, Hereditary Princess of Greece (his first cousin once removed, who was absent); Prince Henry, Duke of Gloucester (his paternal uncle, who was absent); the Dowager Marchioness of Milford Haven (his paternal first cousin twice removed); and Lady Patricia Ramsay (his paternal first cousin twice removed).
+Seven weeks after Michael's birth, his father was killed in a plane crash near Dunbeath, Caithness, Scotland, on 25 August 1942.
+At the age of five, Michael was a page boy at the wedding of his cousins Princess Elizabeth and Lieutenant Philip Mountbatten.
+Education and military service
 
-They had four children:
+Michael was educated at Sunningdale School and Eton College and is fluent in French as well as  having a "working knowledge" of German and Italian.
+Michael was commissioned into the 11th Hussars (Prince Albert's Own) in 1963.
+He later served in The Royal Hussars (Prince of Wales's Own) after the amalgamation between the 11th Hussars and the 10th Royal Hussars (Prince of Wales's Own) in 1969.
+In 1994, Michael was made Honorary Commodore (later Honorary Rear Admiral and then Vice Admiral) of the Royal Naval Reserve, and in 2002, he was made Honorary Air Commodore of RAF Benson (promoted to Honorary Air Marshal in 2012).
+He is also Colonel-in-Chief of the Essex and Kent Scottish Regiment in Canada.
+Activities and patronages
+
+As the third child of George V's fourth son, it was not expected that Michael, as the only second son in the extended royal family, would undertake many engagements on behalf of the royal family.
+He has, however, never received a parliamentary annuity or an allowance from the British Privy Purse, unlike both his elder brother, Prince Edward, Duke of Kent, and his sister, Princess Alexandra, who both carry out official royal duties.
+Michael represented the Queen at state funerals in India, Cyprus and Swaziland and, with his wife, Princess Michael of Kent, represented the Queen at the independence celebrations in Belize, and at the coronation of King Mswati III of Swaziland.
+Michael supports a large number of charities and organisations.
+The Prince Michael Road Safety Award was created in 1987 to give public recognition to those improving road safety throughout Great Britain and later the world in general.
+Michael also set up the Prince Michael of Kent Foundation in 2004 to support projects in Russia, including heritage and cultural restoration.
+Marriage and personal life
+
+On 30 June 1978, Michael married Baroness Marie-Christine von Reibnitz in a civil ceremony at the City Hall (Wiener Rathaus) in Vienna, Austria.
+As a Roman Catholic divorcée, previously married to banker Thomas Troubridge, with a Church annulment granted in May 1978, Marie-Christine required papal dispensation for a Catholic ceremony.
+Marie-Christine has named Lord Mountbatten as their matchmaker.
+Under the terms of the Act of Settlement 1701, Michael forfeited his place in the line of succession to the throne through his marriage to a Catholic.
+Michael and Marie-Christine have two children, both brought up as members of the Church of England and therefore in the line of succession to the throne since birth:
+In 2014, Michael was successfully treated for prostate cancer.
+Personal interests
+
+Commercial
+
+Michael manages his own consultancy business, and undertakes business throughout the world.
+Masonic
+
+Michael is an active Freemason.
+He is the Grand Master of the Grand Lodge of Mark Master Masons, and Provincial Grand Master of the Provincial Grand Lodge of Middlesex.
+Russia
+
+Michael speaks fluent Russian and has a strong interest in Russia, where he is a well-known figure (he is a former recipient of the Order of Friendship).
+Tsar Nicholas II was a first cousin of three of his grandparents: George V, Prince Nicholas of Greece and Denmark, and Grand Duchess Elena Vladimirovna of Russia.
+When the bodies of the Tsar and some of his family were recovered in 1991, the remains were later identified by DNA using, among others, a sample from Michael for recognition.
+He is also the second cousin of Maria Vladimirovna, Grand Duchess of Russia, who is a claimant to the headship of the Imperial Family of Russia.
+They share the same great-grandfather, Grand Duke Vladimir Alexandrovich.
+Michael is the patron of organisations which have close ties with Russia, including the Russo-British Chamber of Commerce and the St Gregory's Foundation.
+In his capacity as patron of Children's Fire and Burns Trust, Michael has led fundraising rallies in 1999 and 2003 in Russia to raise money for the charity.
+He also led another rally in 2005 and raised money for the Royal Marsden Hospital and Britain's Charities Aid Foundation Russia.
+Michael served as the Patron of the Russo-British Chamber of Commerce (RBCC).
+On 4 March 2022, Michael returned the Order of Friendship due to the Russian invasion of Ukraine.
+Finland
+
+Michael of Kent made a visit to Finland in 2017, during which he visited Helsinki, Espoo, Porvoo, Pori, and Tampere.
+Sport
+
+Michael was a part of the Royal Military Academy Sandhurst rowing crew that won the Maiden Fours at Bedford in 1961.
+Media scrutiny
+
+In 2002, both Michael and his wife were the subject of criticism over the rent paid on their accommodation at Kensington Palace following scrutiny by the House of Commons Public Accounts committee on the cost of royal palaces and whether they were value for money.
+When it was claimed that the couple paid a rent of only £69 per week for the use of their apartments at Kensington Palace, Buckingham Palace announced that "The Queen is paying the rent for Prince and Princess Michael of Kent's apartment at a commercial rate of £120,000 annually, from her own private funds.
+This rent payment by The Queen is in recognition of the Royal engagements and work for various charities which Prince and Princess Michael of Kent have undertaken at their own expense, and without any public funding.
+"
 
 
-They lived in Cannes and Rome, and, with the outbreak of World War II, they moved to Lausanne to live with his mother, Victoria Eugenie.
-Together with their children Pilar and Juan Carlos, they took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
-On this trip, Juan Carlos met the hosts' 15-year-old daughter, Sofia, his future wife, for the first time.
-Claim to the Spanish throne
+In 2003, Michael's judgment was questioned as he developed a close working relationship with businessman Michael Wynne-Parker, who had a history of financial misconduct, bans from serving as a director, and had been described by a judge as having "the modus operandi of a crook".
+Wynne-Parker had organised and accompanied the prince on official trips to Estonia, helping arrange meetings with politicians and business figures, which raised concerns about credibility and vetting.
+Prince Michael denied receiving "any fees or expenses or been paid in any way" by Wynne-Parker and added that he was not aware of his reputation.
+Michael has been scrutinized for financial assistance given to him by exiled Russian oligarch Boris Berezovsky through offshore companies, with a reported total of £320,000 in payments over the period 2002–2008.
+In an interview with The Sunday Times, Berezovsky stated, "There is nothing underhand or improper about the financial assistance I have given Prince Michael.
+"
 
-In 1931, Juan was subject to dynastic negotiations between the Alfonsists and the Carlists, concluded in the so-called Pact of Territet, which was never implemented.
-Juan became heir apparent to the defunct Spanish throne after the renunciations of his two older brothers, Alfonso and Jaime, in 1933.
-To assert his claim to the throne, following his father's death (in 1941) he used the title of Count of Barcelona, a sovereign title associated with the Spanish crown.
-Spain runs the risk of being dragged into a new fratricidal conflict and of finding itself totally isolated from the world.
-When General Franco declared Spain a monarchy in 1947, he characterized it as a "restoration".
-However, Franco was afraid that Juan would roll back the Spanish State because he favoured constitutional monarchy, which would restore parliamentary democracy.
-As a result, in 1969, Franco passed over Juan in favour of Juan's son, Juan Carlos, who Franco believed would be more likely to continue the dictatorship after his death.
-Juan Carlos later surprised many by his support of democratising Spain.
-Franco and Juan did not have a good relationship, with the latter constantly pressing Franco to restore the monarchy.
-Relations soured further when Juan called Franco an "illegitimate usurper".
-Juan formally renounced his rights to the Spanish throne eight years after being displaced as recognised heir to the throne by Franco, and two years after his son, Juan Carlos, had become king.
-In return, his son officially granted him the title of Count of Barcelona, which he had claimed for so long.
-After his death in 1993, he was buried with honours due a king, under the name Juan III (his title if he had become king) in the Royal Crypt of the monastery of San Lorenzo de El Escorial, near Madrid.
+
+In May 2021, reports were published stating that Michael was "selling access" to Vladimir Putin's political representatives.
+Footage from a Zoom call was released of Michael, alongside Simon Isaacs, 4th Marquess of Reading, interacting with undercover reporters posing as business executives seeking to make contacts with the Kremlin.
+Michael was being offered £143,000 for a proposal and £36,000 a month by the faux businessmen, which he expressed satisfaction with.
+The Marquess claimed that Michael was the Queen's "unofficial ambassador to Russia" and had direct access to Putin.
+He later stated that he had "overpromised", while Michael said that he had not had contact with Putin since 2003.
+In a 2019 interview, Michael stated that he visited Russia twice a year as part of his work for the Russo-British Chamber of Commerce.
+Marina Litvinenko denounced Michael's actions, saying that it demonstrated that he did not "care about human rights, democracy, about the people who are dying in Russia or what he did to your own citizens on UK soil".
+I'd love to know what Prince Michael thinks he is doing by making the UK's values and standards look optional.
+"
+
+
+Titles, styles, honours and arms
+
+Titles
+
+Official
+
+As a child of a younger son of a British sovereign, he is styled as a British prince with the prefix His Royal Highness and a territorial designation deriving from his father's dukedom: "His Royal Highness Prince Michael of Kent".
+Other titles
+
+Honours
+
+Foreign
+
+Wear of orders, decorations, and medals
+
+The ribbons worn regularly by Michael in undress uniform are as follows:
+
+
+Honorary military appointments
+
+Fellowships
+
+Memberships
+
+Honorary academic degrees and awards
+
+Degrees and appointments
+
+Awards
+
+Arms
+
+Issue
+
+Ancestry
+
+See also
+
+Notes
+
+References
+
+External links
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +225,9 @@ After his death in 1993, he was buried with honours due a king, under the name J
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +242,23 @@ After his death in 1993, he was buried with honours due a king, under the name J
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +276,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +358,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +381,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +401,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +411,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +451,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,196 +550,102 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (586e7bd9-6697-4fc2-b0e9-111bb64c550e)
- Call ID: 586e7bd9-6697-4fc2-b0e9-111bb64c550e
+  AssignClass (888420e7-a56a-462f-aedd-d8d8abbee7c4)
+ Call ID: 888420e7-a56a-462f-aedd-d8d8abbee7c4
   Args:
     type: :Man
-    source: Juan_Count_of_Barcelona
-  AssignClass (f8e44dfd-0815-49ea-b64b-df985aeebdc5)
- Call ID: f8e44dfd-0815-49ea-b64b-df985aeebdc5
+    source: Prince_Michael_of_Kent
+  AssignClass (2a62afcb-525f-420d-a7aa-d40580b81a08)
+ Call ID: 2a62afcb-525f-420d-a7aa-d40580b81a08
   Args:
-    type: :Person
-    source: Juan_Count_of_Barcelona
-  AssignClass (93fee2b4-38ee-42ce-b248-884770451c9e)
- Call ID: 93fee2b4-38ee-42ce-b248-884770451c9e
-  Args:
-    source: Alfonso_XIII
+    source: Prince_George_Duke_of_Kent
     type: :Man
-  AssignClass (4fc72c46-be0e-4b3e-b1f9-907a71aaa79e)
- Call ID: 4fc72c46-be0e-4b3e-b1f9-907a71aaa79e
-  Args:
-    type: :Person
-    source: Alfonso_XIII
-  AssignClass (4feebfef-8554-41d2-bef5-f54b9bf56c23)
- Call ID: 4feebfef-8554-41d2-bef5-f54b9bf56c23
+  AssignClass (bc37c713-939d-418b-9cfa-b7c27938186b)
+ Call ID: bc37c713-939d-418b-9cfa-b7c27938186b
   Args:
     type: :Woman
-    source: Victoria_Eugenie_of_Battenberg
-  AssignClass (aed40055-41e2-46dd-93bf-3167f891cc4f)
- Call ID: aed40055-41e2-46dd-93bf-3167f891cc4f
+    source: Princess_Marina_of_Greece_and_Denmark
+  AssignClass (3f1577f8-971d-418a-81cb-e9ecf38a1bce)
+ Call ID: 3f1577f8-971d-418a-81cb-e9ecf38a1bce
   Args:
-    type: :Person
-    source: Victoria_Eugenie_of_Battenberg
-  AssignClass (806b72c7-50a7-4f0b-9d10-613835b0c9d2)
- Call ID: 806b72c7-50a7-4f0b-9d10-613835b0c9d2
-  Args:
-    source: Juan_Carlos_I
+    source: George_V
     type: :Man
-  AssignClass (d40b03d4-0c1a-4a9f-b022-69b484602d42)
- Call ID: d40b03d4-0c1a-4a9f-b022-69b484602d42
+  AssignClass (21603fb3-fdce-47c4-9fac-6a53143eb911)
+ Call ID: 21603fb3-fdce-47c4-9fac-6a53143eb911
   Args:
-    source: Juan_Carlos_I
-    type: :Person
-  AssignClass (87972862-2124-4b00-808f-5567648534c8)
- Call ID: 87972862-2124-4b00-808f-5567648534c8
+    source: Queen_Mary
+    type: :Woman
+  AssignClass (fc191767-b96d-4324-8797-8abde624dd5c)
+ Call ID: fc191767-b96d-4324-8797-8abde624dd5c
   Args:
     type: :Man
-    source: Alfonso_Prince_of_Asturias
-  AssignClass (e8bb580c-f023-4430-8a21-3e32d373446c)
- Call ID: e8bb580c-f023-4430-8a21-3e32d373446c
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AssignClass (5bac74d2-cb49-4e07-bf1d-f5277ab34406)
+ Call ID: 5bac74d2-cb49-4e07-bf1d-f5277ab34406
   Args:
-    source: Alfonso_Prince_of_Asturias
-    type: :Person
-  AssignClass (be10304d-d1aa-4980-9caa-fe6b0a8a854c)
- Call ID: be10304d-d1aa-4980-9caa-fe6b0a8a854c
-  Args:
-    type: :Man
-    source: Jaime_Duke_of_Segovia
-  AssignClass (24bcb010-f340-4fcb-bdff-4105baf45f70)
- Call ID: 24bcb010-f340-4fcb-bdff-4105baf45f70
-  Args:
-    type: :Person
-    source: Jaime_Duke_of_Segovia
-  AssignClass (4207090e-2557-4cc8-8b83-98a8e12b4abd)
- Call ID: 4207090e-2557-4cc8-8b83-98a8e12b4abd
-  Args:
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
     type: :Woman
-    source: Maria_de_las_Mercedes
-  AssignClass (3970092a-ca3d-41c5-bec1-45d0c43c748a)
- Call ID: 3970092a-ca3d-41c5-bec1-45d0c43c748a
+  AssignClass (5cbad2f2-6876-4658-917c-951f98de784a)
+ Call ID: 5cbad2f2-6876-4658-917c-951f98de784a
   Args:
-    source: Maria_de_las_Mercedes
-    type: :Person
-  AssignClass (6c060f91-82a1-402c-8720-9d570de9b946)
- Call ID: 6c060f91-82a1-402c-8720-9d570de9b946
-  Args:
+    source: Baroness_Marie_Christine_von_Reibnitz
     type: :Woman
-    source: Pilar
-  AssignClass (995e0078-c4d0-48c9-985f-ba40028eef49)
- Call ID: 995e0078-c4d0-48c9-985f-ba40028eef49
+  AddLiteral (98c436a3-526d-49b4-b7dd-e8517a55ba6a)
+ Call ID: 98c436a3-526d-49b4-b7dd-e8517a55ba6a
   Args:
-    type: :Person
-    source: Pilar
-  AssignClass (7c270d3e-3cf1-4f04-87ce-c64e032ca7bc)
- Call ID: 7c270d3e-3cf1-4f04-87ce-c64e032ca7bc
-  Args:
-    source: Frederica
-    type: :Woman
-  AssignClass (6de10ec1-9fdf-42ce-85ca-db5d3f39ef34)
- Call ID: 6de10ec1-9fdf-42ce-85ca-db5d3f39ef34
-  Args:
-    type: :Person
-    source: Frederica
-  AssignClass (0c412fd8-ae37-4e5e-b677-b30ba5324b6d)
- Call ID: 0c412fd8-ae37-4e5e-b677-b30ba5324b6d
-  Args:
-    source: Paul_of_Greece
-    type: :Man
-  AssignClass (86af1c6d-4d35-42ea-b2a1-857a610b1ec1)
- Call ID: 86af1c6d-4d35-42ea-b2a1-857a610b1ec1
-  Args:
-    type: :Person
-    source: Paul_of_Greece
-  AssignClass (76b9b8de-f23d-4d49-8c25-d7443fb780f1)
- Call ID: 76b9b8de-f23d-4d49-8c25-d7443fb780f1
-  Args:
-    source: Sofia
-    type: :Woman
-  AssignClass (f1ba0b57-46c8-4c03-abfb-36b514678602)
- Call ID: f1ba0b57-46c8-4c03-abfb-36b514678602
-  Args:
-    source: Sofia
-    type: :Person
-  AddLiteral (dcb98a10-dc6c-40a7-9800-52e0df125441)
- Call ID: dcb98a10-dc6c-40a7-9800-52e0df125441
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1913
+    literal_value: 1942
+    source: Prince_Michael_of_Kent
     relation: :hasBirthYear
-    source: Juan_Count_of_Barcelona
-  AddLiteral (6e34a653-30f8-4f5b-b8c8-e9ac4409f70b)
- Call ID: 6e34a653-30f8-4f5b-b8c8-e9ac4409f70b
-  Args:
-    literal_value: 1993
-    relation: :hasDeathYear
     literal_type: xsd:integer
-    source: Juan_Count_of_Barcelona
-  AddTriple (6b612e94-d5eb-42b6-b85d-4a07d89feec8)
- Call ID: 6b612e94-d5eb-42b6-b85d-4a07d89feec8
+  AddTriple (7c7df0f5-4cb9-475a-b5d8-ec897c6c5e04)
+ Call ID: 7c7df0f5-4cb9-475a-b5d8-ec897c6c5e04
   Args:
+    target: Prince_George_Duke_of_Kent
     relation: :hasFather
-    target: Alfonso_XIII
-    source: Juan_Count_of_Barcelona
-  AddTriple (793c52e6-d432-46e2-8e9e-1610b20ff9d4)
- Call ID: 793c52e6-d432-46e2-8e9e-1610b20ff9d4
+    source: Prince_Michael_of_Kent
+  AddTriple (fa4398e1-6a23-4c45-80d0-8f5f3e8bf225)
+ Call ID: fa4398e1-6a23-4c45-80d0-8f5f3e8bf225
   Args:
-    source: Juan_Count_of_Barcelona
-    target: Victoria_Eugenie_of_Battenberg
+    source: Prince_Michael_of_Kent
     relation: :hasMother
-  AddTriple (9a91f3c1-4a01-4a1c-8636-3bac300d411a)
- Call ID: 9a91f3c1-4a01-4a1c-8636-3bac300d411a
+    target: Princess_Marina_of_Greece_and_Denmark
+  AddTriple (10d2f27f-e243-44d6-9146-c822f5ecc270)
+ Call ID: 10d2f27f-e243-44d6-9146-c822f5ecc270
   Args:
-    source: Juan_Carlos_I
+    target: George_V
     relation: :hasFather
-    target: Juan_Count_of_Barcelona
-  AddTriple (71878b24-e58f-4c8a-8f65-679c6c27d0c7)
- Call ID: 71878b24-e58f-4c8a-8f65-679c6c27d0c7
+    source: Prince_George_Duke_of_Kent
+  AddTriple (52ea0541-0d82-4545-a13d-f160c01ae85c)
+ Call ID: 52ea0541-0d82-4545-a13d-f160c01ae85c
   Args:
-    relation: :hasFather
-    target: Alfonso_XIII
-    source: Juan_Count_of_Barcelona
-  AddTriple (071979a8-b517-43d6-aafe-4d0b07727ae6)
- Call ID: 071979a8-b517-43d6-aafe-4d0b07727ae6
-  Args:
-    relation: :isBrotherOf
-    target: Alfonso_Prince_of_Asturias
-    source: Juan_Count_of_Barcelona
-  AddTriple (9425df9f-9b7e-40a4-8ad1-ef0108cdb832)
- Call ID: 9425df9f-9b7e-40a4-8ad1-ef0108cdb832
-  Args:
-    relation: :isBrotherOf
-    target: Jaime_Duke_of_Segovia
-    source: Juan_Count_of_Barcelona
-  AddTriple (e5354029-1394-435f-8a3d-3495cde04909)
- Call ID: e5354029-1394-435f-8a3d-3495cde04909
-  Args:
-    source: Juan_Count_of_Barcelona
-    target: Maria_de_las_Mercedes
     relation: :hasMother
-  AddTriple (4b863812-f08e-46c8-89f0-1eee291d016c)
- Call ID: 4b863812-f08e-46c8-89f0-1eee291d016c
+    source: Prince_George_Duke_of_Kent
+    target: Queen_Mary
+  AddTriple (4031bd98-f028-493f-acb8-470162fb2f3e)
+ Call ID: 4031bd98-f028-493f-acb8-470162fb2f3e
   Args:
-    source: Juan_Count_of_Barcelona
-    target: Pilar
-    relation: :hasChild
-  AddTriple (1c933452-48fc-409d-bcad-94f9c7632af0)
- Call ID: 1c933452-48fc-409d-bcad-94f9c7632af0
-  Args:
-    source: Juan_Count_of_Barcelona
-    target: Juan_Carlos_I
-    relation: :hasChild
-  AddTriple (c7313c80-656e-482d-b2a1-b4d3f2744940)
- Call ID: c7313c80-656e-482d-b2a1-b4d3f2744940
-  Args:
-    source: Sofia
+    source: Princess_Marina_of_Greece_and_Denmark
     relation: :hasFather
-    target: Paul_of_Greece
-  AddTriple (ffa53b18-16d5-461c-bb19-d762f0792ab7)
- Call ID: ffa53b18-16d5-461c-bb19-d762f0792ab7
+    target: Prince_Nicholas_of_Greece_and_Denmark
+  AddTriple (bd745a53-3000-4644-8870-c7cd9d4f3312)
+ Call ID: bd745a53-3000-4644-8870-c7cd9d4f3312
   Args:
-    target: Frederica
+    source: Princess_Marina_of_Greece_and_Denmark
     relation: :hasMother
-    source: Sofia
-  Finish (c6f4175b-aec3-4f4c-81dd-9e9682166122)
- Call ID: c6f4175b-aec3-4f4c-81dd-9e9682166122
+    target: Grand_Duchess_Elena_Vladimirovna_of_Russia
+  AddLiteral (107df030-55c9-45f1-9ca1-0c477bf1bb42)
+ Call ID: 107df030-55c9-45f1-9ca1-0c477bf1bb42
+  Args:
+    literal_value: 1978
+    source: Prince_Michael_of_Kent
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AddTriple (3251d71b-850e-4d7d-8183-0084a7e74b90)
+ Call ID: 3251d71b-850e-4d7d-8183-0084a7e74b90
+  Args:
+    target: Baroness_Marie_Christine_von_Reibnitz
+    relation: :hasRelation
+    source: Prince_Michael_of_Kent
+  Finish (2a693748-1cc1-4469-9737-9804350090ba)
+ Call ID: 2a693748-1cc1-4469-9737-9804350090ba
   Args:

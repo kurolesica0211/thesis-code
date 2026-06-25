@@ -2,38 +2,22 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Beatrix a :Ancestor,
-        :Woman ;
-    :hasBirthYear "1938"^^xsd:positiveInteger ;
-    :hasFather data:Bernhard ;
-    :hasMarriageYear "1966"^^xsd:positiveInteger ;
-    :hasMother data:Juliana ;
-    :hasRelation data:Claus_von_Amsberg ;
-    :hasSon data:Willem-Alexander ;
-    :isSisterOf data:Irene,
-        data:Margriet .
+data:Luiz_Philippe_of_Orleans-Braganza a :Man,
+        :Person ;
+    :hasBirthYear 1969 ;
+    :hasFather data:Eudes_of_Orleans-Braganza ;
+    :hasMother data:Ana_Maria_de_Moraes_Barros .
 
-data:Bernhard a :Ancestor,
-        :Man .
-
-data:Irene a :Woman ;
-    :hasMother data:Juliana .
-
-data:Margriet a :Woman ;
-    :hasMother data:Juliana .
-
-data:Wilhelmina a :Ancestor,
+data:Ana_Maria_de_Moraes_Barros a :Ancestor,
+        :Person,
         :Woman .
 
-data:Willem-Alexander a :Man ;
-    :hasFather data:Claus_von_Amsberg ;
-    :hasMother data:Beatrix .
+data:Eudes_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Pedro_Henrique_of_Orleans-Braganza .
 
-data:Claus_von_Amsberg a :Ancestor,
-        :Man ;
-    :hasDeathYear "2002"^^xsd:positiveInteger .
-
-data:Juliana a :Ancestor,
-        :Woman ;
-    :hasMother data:Wilhelmina .
+data:Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
+        :Man,
+        :Person .
 

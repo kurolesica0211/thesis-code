@@ -2,40 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Katharine_Duchess_of_Kent a :Person,
-        :Woman ;
-    :hasDeathYear 2025 ;
-    :hasSex data:Female .
+data:Elizabeth_II a :Person,
+        :Woman .
 
-data:Prince_Michael_of_Kent a :Man,
+data:Patrick a :Man,
         :Person ;
-    :isBrotherOf data:Prince_Edward_Duke_of_Kent .
+    :isSonOf data:Katharine_Duchess_of_Kent,
+        data:Prince_Edward_Duke_of_Kent .
 
-data:Female a :Sex .
+data:Edward_VIII a :Man,
+        :Person .
 
 data:George_V a :Ancestor,
         :Man,
+        :Person .
+
+data:George_VI a :Man,
         :Person .
 
 data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
         :Person,
         :Woman .
 
-data:Male a :Sex .
-
-data:Prince_Edward_Duke_of_Kent a :Man,
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man,
         :Person ;
     :hasBirthYear 1935 ;
     :hasFather data:Prince_George_Duke_of_Kent ;
     :hasMarriageYear 1961 ;
     :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasSex data:Male .
+    :hasRelation data:Katharine_Duchess_of_Kent ;
+    :isSiblingOf data:Prince_Michael_of_Kent .
 
 data:Prince_George_Duke_of_Kent a :Ancestor,
         :Man,
         :Person ;
     :hasFather data:George_V ;
-    :hasMother data:Queen_Mary .
+    :hasMother data:Queen_Mary ;
+    :isSiblingOf data:Edward_VIII,
+        data:George_VI .
+
+data:Prince_Michael_of_Kent a :Man,
+        :Person .
 
 data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
         :Man,
@@ -50,4 +58,9 @@ data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
 data:Queen_Mary a :Ancestor,
         :Person,
         :Woman .
+
+data:Katharine_Duchess_of_Kent a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasDeathYear 2025 .
 

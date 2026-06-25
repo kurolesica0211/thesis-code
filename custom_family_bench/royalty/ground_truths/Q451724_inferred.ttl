@@ -1,0 +1,71 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Isabelle_of_Orléans-Braganza a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Isabelle of Orléans-Braganza"^^xsd:string ;
+    data:posIndicesFull "702:730"^^xsd:string,
+        "912:940"^^xsd:string ;
+    data:wdtLink wdt:Q261284 ;
+    :alsoKnownAs "Isabelle of Orleans-Braganza"^^xsd:string ;
+    :hasChild data:Duchess_Diane-_Duchess_of_Württemberg ;
+    :hasDaughter data:Duchess_Diane-_Duchess_of_Württemberg ;
+    :hasRelation data:Duchess_Diane-_Duchess_of_Württemberg,
+        data:Isabelle_of_Orléans-Braganza ;
+    :hasSex data:female ;
+    :hasSister data:Isabelle_of_Orléans-Braganza ;
+    :isAncestorOf data:Duchess_Diane-_Duchess_of_Württemberg ;
+    :isAuntOf data:Duchess_Diane-_Duchess_of_Württemberg ;
+    :isBloodrelationOf data:Isabelle_of_Orléans-Braganza ;
+    :isMotherOf data:Duchess_Diane-_Duchess_of_Württemberg ;
+    :isParentOf data:Duchess_Diane-_Duchess_of_Württemberg ;
+    :isSiblingOf data:Isabelle_of_Orléans-Braganza ;
+    :isSisterOf data:Isabelle_of_Orléans-Braganza .
+
+data:Duchess_Diane-_Duchess_of_Württemberg a :Person,
+        :Woman ;
+    rdfs:label "Duchess Diane, Duchess of Württemberg"^^xsd:string ;
+    data:wdtLink wdt:Q451724 ;
+    :alsoKnownAs "Crown Princess Diane of Württemberg"^^xsd:string,
+        "Diane Françoise Marie d'Orléans"^^xsd:string,
+        "Diane Françoise Marie d'Orléans von Württemberg"^^xsd:string,
+        "Diane Françoise Marie von Württemberg"^^xsd:string,
+        "Diane d'Orléans"^^xsd:string,
+        "Diane d'Orléans von Württemberg"^^xsd:string,
+        "Diane von Württemberg"^^xsd:string,
+        "Diane, Crown Princess of Württemberg"^^xsd:string,
+        "Duchess Diane, Dowager Duchess of Württemberg"^^xsd:string,
+        "Duchess Diane, The Dowager Duchess of Württemberg"^^xsd:string,
+        "Duchess Diane, The Duchess of Württemberg"^^xsd:string,
+        "Princess Diane Françoise Marie d'Orléans"^^xsd:string,
+        "Princess Diane d'Orléans"^^xsd:string ;
+    :hasAncestor data:Isabelle_of_Orléans-Braganza ;
+    :hasMother data:Isabelle_of_Orléans-Braganza ;
+    :hasParent data:Isabelle_of_Orléans-Braganza ;
+    :hasRelation data:Duchess_Diane-_Duchess_of_Württemberg,
+        data:Isabelle_of_Orléans-Braganza ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Diane-_Duchess_of_Württemberg ;
+    :isBloodrelationOf data:Duchess_Diane-_Duchess_of_Württemberg ;
+    :isChildOf data:Isabelle_of_Orléans-Braganza ;
+    :isDaughterOf data:Isabelle_of_Orléans-Braganza ;
+    :isSiblingOf data:Duchess_Diane-_Duchess_of_Württemberg ;
+    :isSisterOf data:Duchess_Diane-_Duchess_of_Württemberg .
+

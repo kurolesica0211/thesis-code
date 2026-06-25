@@ -7,99 +7,22 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Princess_Maria_Cristina_of_Savoy-Aosta a :Person ;
+    rdfs:label "Princess Maria Cristina of Savoy-Aosta" ;
+    data:wdtLink wdt:Q7244716 ;
+    :alsoKnownAs "Maria Cristina di Savoia-Aosta",
+        "Maria Cristina di Savoia-Aoste, Principessa di Savoia" ;
+    :hasParent data:Prince_Amedeo-_3rd_Duke_of_Aosta,
+        data:Princess_Anne_of_Orléans ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Emanuele Filiberto, 2nd Duke of Aosta" ;
-    data:posIndicesFull "298:342",
-        "305:323" ;
-    data:posIndicesPart "1566:1570",
-        "1914:1918",
-        "1922:1927",
-        "2051:2055",
-        "2059:2064",
-        "2199:2203",
-        "2207:2212",
-        "2483:2487",
-        "2534:2540",
-        "2648:2652",
-        "2656:2661",
-        "2846:2851",
-        "3072:3076",
-        "3080:3085",
-        "3412:3418",
-        "3742:3747",
-        "549:553",
-        "818:822" ;
-    data:wdtLink wdt:Q445106 ;
-    :alsoKnownAs "Emanuele Filiberto" ;
-    :hasChild data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
-    :isFatherOf data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
-    :isParentOf data:Prince_Amedeo-_3rd_Duke_of_Aosta .
-
-data:Prince_Jean_dOrléans_1 a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Jean d’Orléans" ;
-    data:posIndicesFull "3303:3329" ;
-    data:posIndicesPart "3412:3418" ;
-    data:wdtLink wdt:Q578791 ;
-    :alsoKnownAs "Jean Pierre Clément Marie d’Orléans",
-        "Jean d’Orléans",
-        "Prince Jean Pierre Clément Marie d’Orléans",
-        "Prince Jean, Duke of Guise" ;
-    :hasChild data:Princess_Anne_of_Orléans ;
-    :hasDaughter data:Princess_Anne_of_Orléans ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Anne_of_Orléans ;
-    :isParentOf data:Princess_Anne_of_Orléans .
-
-data:Princess_Isabelle_dOrléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Isabelle d’Orléans" ;
-    data:posIndicesFull "3335:3363" ;
-    data:wdtLink wdt:Q261322 ;
-    :alsoKnownAs "Princess Isabelle of Orleans" ;
-    :hasChild data:Princess_Anne_of_Orléans ;
-    :hasDaughter data:Princess_Anne_of_Orléans ;
-    :hasSex data:female ;
-    :isAuntOf data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
-    :isMotherOf data:Princess_Anne_of_Orléans ;
-    :isParentOf data:Princess_Anne_of_Orléans .
-
-data:Princess_Maria_Cristina_of_Savoy-Aosta a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Maria Cristina of Savoy-Aosta" ;
-    data:wdtLink wdt:Q7244716 ;
-    :alsoKnownAs "Maria Cristina di Savoia-Aosta",
-        "Maria Cristina di Savoia-Aoste, Principessa di Savoia" ;
-    :hasFather data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
-    :hasMother data:Princess_Anne_of_Orléans ;
-    :hasParent data:Prince_Amedeo-_3rd_Duke_of_Aosta,
-        data:Princess_Anne_of_Orléans ;
-    :hasSex data:female ;
-    :isChildOf data:Prince_Amedeo-_3rd_Duke_of_Aosta,
-        data:Princess_Anne_of_Orléans ;
-    :isDaughterOf data:Prince_Amedeo-_3rd_Duke_of_Aosta,
-        data:Princess_Anne_of_Orléans .
-
-data:Prince_Amedeo-_3rd_Duke_of_Aosta a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Amedeo-_3rd_Duke_of_Aosta a :Person ;
     rdfs:label "Prince Amedeo, 3rd Duke of Aosta" ;
     data:posIndicesFull "0:32" ;
     data:posIndicesPart "1145:1151",
@@ -141,20 +64,47 @@ data:Prince_Amedeo-_3rd_Duke_of_Aosta a :Ancestor,
         "969:975" ;
     data:wdtLink wdt:Q431121 ;
     :alsoKnownAs "Amedeo di Savoia-Aosta" ;
-    :hasChild data:Princess_Maria_Cristina_of_Savoy-Aosta ;
-    :hasDaughter data:Princess_Maria_Cristina_of_Savoy-Aosta ;
-    :hasFather data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
     :hasParent data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
-    :isFatherOf data:Princess_Maria_Cristina_of_Savoy-Aosta ;
-    :isParentOf data:Princess_Maria_Cristina_of_Savoy-Aosta ;
-    :isSonOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta .
+    :hasSex data:male .
 
-data:Princess_Anne_of_Orléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta a :Person ;
+    rdfs:label "Prince Emanuele Filiberto, 2nd Duke of Aosta" ;
+    data:posIndicesFull "298:342",
+        "305:323" ;
+    data:posIndicesPart "1566:1570",
+        "1914:1918",
+        "1922:1927",
+        "2051:2055",
+        "2059:2064",
+        "2199:2203",
+        "2207:2212",
+        "2483:2487",
+        "2534:2540",
+        "2648:2652",
+        "2656:2661",
+        "2846:2851",
+        "3072:3076",
+        "3080:3085",
+        "3412:3418",
+        "3742:3747",
+        "549:553",
+        "818:822" ;
+    data:wdtLink wdt:Q445106 ;
+    :alsoKnownAs "Emanuele Filiberto" ;
+    :hasSex data:male .
+
+data:Prince_Jean_dOrléans_1 a :Person ;
+    rdfs:label "Prince Jean d’Orléans" ;
+    data:posIndicesFull "3303:3329" ;
+    data:posIndicesPart "3412:3418" ;
+    data:wdtLink wdt:Q578791 ;
+    :alsoKnownAs "Jean Pierre Clément Marie d’Orléans",
+        "Jean d’Orléans",
+        "Prince Jean Pierre Clément Marie d’Orléans",
+        "Prince Jean, Duke of Guise" ;
+    :hasSex data:male .
+
+data:Princess_Anne_of_Orléans a :Person ;
     rdfs:label "Princess Anne of Orléans" ;
     data:posIndicesFull "3253:3277" ;
     data:wdtLink wdt:Q2278538 ;
@@ -165,17 +115,30 @@ data:Princess_Anne_of_Orléans a :Ancestor,
         "Princess Anne, Duchess of Aosta",
         "Princess Anne, The Dowager Duchess of Aosta",
         "Princess Anne, The Duchess of Aosta" ;
-    :hasChild data:Princess_Maria_Cristina_of_Savoy-Aosta ;
-    :hasDaughter data:Princess_Maria_Cristina_of_Savoy-Aosta ;
-    :hasFather data:Prince_Jean_dOrléans_1 ;
-    :hasMother data:Princess_Isabelle_dOrléans ;
     :hasParent data:Prince_Jean_dOrléans_1,
         data:Princess_Isabelle_dOrléans ;
-    :hasSex data:female ;
-    :isChildOf data:Prince_Jean_dOrléans_1,
-        data:Princess_Isabelle_dOrléans ;
-    :isDaughterOf data:Prince_Jean_dOrléans_1,
-        data:Princess_Isabelle_dOrléans ;
-    :isMotherOf data:Princess_Maria_Cristina_of_Savoy-Aosta ;
-    :isParentOf data:Princess_Maria_Cristina_of_Savoy-Aosta .
+    :hasSex data:female .
+
+data:Princess_Isabelle_dOrléans a :Person ;
+    rdfs:label "Princess Isabelle d’Orléans" ;
+    data:posIndicesFull "3335:3363" ;
+    data:wdtLink wdt:Q261322 ;
+    :alsoKnownAs "Princess Isabelle of Orleans" ;
+    :hasParent data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female .
+
+data:Princess_María_Isabel_of_Orléans a :Person ;
+    rdfs:label "Princess María Isabel of Orléans" ;
+    data:posIndicesFull "463:497",
+        "472:486" ;
+    data:wdtLink wdt:Q242879 ;
+    :alsoKnownAs "Infanta Maria Isabel of Orléans",
+        "Maria Isabella",
+        "Princess Maria Isabel of Orléans, Infanta of Spain",
+        "Princess Marie Isabelle of Orleans" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

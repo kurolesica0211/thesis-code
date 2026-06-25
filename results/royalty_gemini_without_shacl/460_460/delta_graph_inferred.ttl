@@ -1,0 +1,246 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:Cecilie a :Person,
+        :Woman ;
+    :hasRelation data:Cecilie,
+        data:GeorgDonatus,
+        data:Louis,
+        data:MargaretCampbellGeddes ;
+    :hasSister data:Cecilie ;
+    :isBloodrelationOf data:Cecilie ;
+    :isSiblingOf data:Cecilie ;
+    :isSisterOf data:Cecilie .
+
+data:MargaretCampbellGeddes a :Person,
+        :Woman ;
+    :hasRelation data:Cecilie,
+        data:GeorgDonatus,
+        data:Louis,
+        data:MargaretCampbellGeddes ;
+    :hasSister data:MargaretCampbellGeddes ;
+    :isBloodrelationOf data:MargaretCampbellGeddes ;
+    :isSiblingOf data:MargaretCampbellGeddes ;
+    :isSisterOf data:MargaretCampbellGeddes .
+
+data:GeorgDonatus a :Man,
+        :Person ;
+    :hasBrother data:GeorgDonatus,
+        data:Louis ;
+    :hasRelation data:Cecilie,
+        data:GeorgDonatus,
+        data:Louis,
+        data:MargaretCampbellGeddes ;
+    :isBloodrelationOf data:GeorgDonatus,
+        data:Louis ;
+    :isBrotherOf data:GeorgDonatus,
+        data:Louis ;
+    :isSiblingOf data:GeorgDonatus,
+        data:Louis .
+
+data:Louis a :Man,
+        :Person ;
+    :hasBrother data:GeorgDonatus,
+        data:Louis ;
+    :hasDeathYear 1968 ;
+    :hasRelation data:Cecilie,
+        data:GeorgDonatus,
+        data:Louis,
+        data:MargaretCampbellGeddes ;
+    :isBloodrelationOf data:GeorgDonatus,
+        data:Louis ;
+    :isBrotherOf data:GeorgDonatus,
+        data:Louis ;
+    :isSiblingOf data:GeorgDonatus,
+        data:Louis .
+
+data:FrederickII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FrederickII ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:HubertusVonFaberCastell,
+        data:MaryOfGreatBritain,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :isAncestorOf data:Donatus,
+        data:FloriaFranziska ;
+    :isBloodrelationOf data:FrederickII ;
+    :isBrotherOf data:FrederickII ;
+    :isSiblingOf data:FrederickII .
+
+data:MaryOfGreatBritain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:HubertusVonFaberCastell,
+        data:MaryOfGreatBritain,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSister data:MaryOfGreatBritain ;
+    :isAncestorOf data:Donatus,
+        data:FloriaFranziska ;
+    :isBloodrelationOf data:MaryOfGreatBritain ;
+    :isSiblingOf data:MaryOfGreatBritain ;
+    :isSisterOf data:MaryOfGreatBritain .
+
+data:HubertusVonFaberCastell a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:HubertusVonFaberCastell ;
+    :hasChild data:FloriaFranziska ;
+    :hasDaughter data:FloriaFranziska ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:HubertusVonFaberCastell,
+        data:MaryOfGreatBritain,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :isAncestorOf data:FloriaFranziska ;
+    :isBloodrelationOf data:HubertusVonFaberCastell ;
+    :isBrotherOf data:HubertusVonFaberCastell ;
+    :isFatherOf data:FloriaFranziska ;
+    :isParentOf data:FloriaFranziska ;
+    :isSiblingOf data:HubertusVonFaberCastell ;
+    :isUncleOf data:FloriaFranziska .
+
+data:Tatiana a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1940 ;
+    :hasChild data:Donatus ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:HubertusVonFaberCastell,
+        data:MaryOfGreatBritain,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSister data:Tatiana ;
+    :hasSon data:Donatus ;
+    :isAncestorOf data:Donatus ;
+    :isAuntOf data:Donatus ;
+    :isBloodrelationOf data:Tatiana ;
+    :isMotherOf data:Donatus ;
+    :isParentOf data:Donatus ;
+    :isSiblingOf data:Tatiana ;
+    :isSisterOf data:Tatiana .
+
+data:Philipp a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Philipp ;
+    :hasChild data:Moritz ;
+    :hasDeathYear 1980 ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:HubertusVonFaberCastell,
+        data:MaryOfGreatBritain,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSon data:Moritz ;
+    :isAncestorOf data:Donatus,
+        data:Moritz ;
+    :isBloodrelationOf data:Philipp ;
+    :isBrotherOf data:Philipp ;
+    :isFatherOf data:Moritz ;
+    :isParentOf data:Moritz ;
+    :isSiblingOf data:Philipp ;
+    :isUncleOf data:Moritz .
+
+data:FloriaFranziska a :Person,
+        :Woman ;
+    :hasAncestor data:FrederickII,
+        data:HubertusVonFaberCastell,
+        data:MaryOfGreatBritain ;
+    :hasBirthYear 1974 ;
+    :hasFather data:HubertusVonFaberCastell ;
+    :hasParent data:HubertusVonFaberCastell ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:HubertusVonFaberCastell,
+        data:MaryOfGreatBritain,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSister data:FloriaFranziska ;
+    :isBloodrelationOf data:FloriaFranziska ;
+    :isChildOf data:HubertusVonFaberCastell ;
+    :isDaughterOf data:HubertusVonFaberCastell ;
+    :isSiblingOf data:FloriaFranziska ;
+    :isSisterOf data:FloriaFranziska .
+
+data:Moritz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Philipp ;
+    :hasBrother data:Moritz ;
+    :hasChild data:Donatus ;
+    :hasFather data:Philipp ;
+    :hasParent data:Philipp ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:HubertusVonFaberCastell,
+        data:MaryOfGreatBritain,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSon data:Donatus ;
+    :isAncestorOf data:Donatus ;
+    :isBloodrelationOf data:Moritz ;
+    :isBrotherOf data:Moritz ;
+    :isChildOf data:Philipp ;
+    :isFatherOf data:Donatus ;
+    :isParentOf data:Donatus ;
+    :isSiblingOf data:Moritz ;
+    :isSonOf data:Philipp ;
+    :isUncleOf data:Donatus .
+
+data:Donatus a :Man,
+        :Person ;
+    :hasAncestor data:FrederickII,
+        data:MaryOfGreatBritain,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasBirthYear 1966 ;
+    :hasBrother data:Donatus ;
+    :hasFather data:Moritz ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Tatiana ;
+    :hasParent data:Moritz,
+        data:Tatiana ;
+    :hasRelation data:Donatus,
+        data:FloriaFranziska,
+        data:FrederickII,
+        data:HubertusVonFaberCastell,
+        data:MaryOfGreatBritain,
+        data:Moritz,
+        data:Philipp,
+        data:Tatiana ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Donatus ;
+    :isBrotherOf data:Donatus ;
+    :isChildOf data:Moritz,
+        data:Tatiana ;
+    :isSiblingOf data:Donatus ;
+    :isSonOf data:Moritz,
+        data:Tatiana .
+

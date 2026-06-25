@@ -85,21 +85,22 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Wittekind Adolf Heinrich Georg-Wilhelm, Prince of Waldeck and Pyrmont (Wittekind Adolf Heinrich Georg-Wilhelm Fürst zu Waldeck und Pyrmont; 9 March 1936 – 16 December 2024), was a member of the German nobility who from 1967 to 2024 was head of the House of Waldeck and Pyrmont.
-Biography
+Prince Frederick George William Christopher of Prussia (German: Friedrich Georg Wilhelm Christoph Prinz von Preußen; 19 December 1911 – 20 April 1966), also known as Friedrich von Preussen in the United Kingdom, was the fourth son of Crown Prince Wilhelm of Germany and Duchess Cecilie of Mecklenburg-Schwerin.
+Marriage and issue
 
-Born in Arolsen (now Bad Arolsen) in Hesse, Germany, Wittekind was the only son of Josias Georg Wilhelm Adolf, Hereditary Prince of Waldeck and Pyrmont (1896−1967), an SS officer later found guilty of war crimes, and Duchess Altburg Marie Mathilde von Oldenburg (1903–2001), daughter of Frederick Augustus II, Grand Duke of Oldenburg.
-He was the great-nephew of Emma of Waldeck and Pyrmont (later Queen of the Netherlands and Grand Duchess of Luxembourg) and thus a second cousin of Queen Beatrix of the Netherlands, whom he welcomed to Arolsen Castle in both 2008, on the 150th anniversary of Queen Emma's birth, and 2016, to celebrate his own 80th birthday.
-Wittekind became head of the House of Waldeck and Pyrmont on his father's death in 1967.
-Marriage and family
+Prince Frederick married Lady Brigid Guinness on 30 July 1945 at Little Hadham.
+British naturalisation in 1947
 
-On 19 May 1988, in Frohnleiten, Wittekind married Countess Cecilia von Goëss-Saurau (born 1956), with whom he had three sons, including Carl-Anton, who succeeded him as Prince of Waldeck and Pyrmont.
+He renounced his German citizenship in 1947.
+He was naturalised as a British citizen in October 1947 under the name Friedrich von Preussen (having also been known during residence in the UK as "George Mansfield").
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +116,9 @@ On 19 May 1988, in Frohnleiten, Wittekind married Countess Cecilia von Goëss-Sa
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +133,23 @@ On 19 May 1988, in Frohnleiten, Wittekind married Countess Cecilia von Goëss-Sa
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +167,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +249,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +272,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +292,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +302,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +342,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,193 +441,113 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c19edcec-3f86-49ca-b8df-662fa096447b)
- Call ID: c19edcec-3f86-49ca-b8df-662fa096447b
+  AssignClass (36f17020-649c-4ed2-a2fb-abaa9d7aed7a)
+ Call ID: 36f17020-649c-4ed2-a2fb-abaa9d7aed7a
   Args:
+    source: :Prince_Frederick_of_Prussia
     type: :Man
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-  AssignClass (778eb078-c8d8-4961-afb7-5ba56bc30101)
- Call ID: 778eb078-c8d8-4961-afb7-5ba56bc30101
+  AssignClass (9337573e-38d4-4d95-8a63-39a47f43ba53)
+ Call ID: 9337573e-38d4-4d95-8a63-39a47f43ba53
   Args:
+    source: :Prince_Frederick_of_Prussia
     type: :Person
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-  AddLiteral (92d97b59-8ac9-4718-be30-a0aeb57cfa3c)
- Call ID: 92d97b59-8ac9-4718-be30-a0aeb57cfa3c
+  AssignClass (4ec41893-7cd4-4e16-9647-40c6f0d9b29a)
+ Call ID: 4ec41893-7cd4-4e16-9647-40c6f0d9b29a
   Args:
-    literal_value: 1936
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-  AddLiteral (c8065fbe-4e7e-45c5-ba34-f582abba1682)
- Call ID: c8065fbe-4e7e-45c5-ba34-f582abba1682
+    source: :Male
+    type: :Sex
+  AddTriple (f4d65f03-e32d-4916-8e40-0083405e0dbd)
+ Call ID: f4d65f03-e32d-4916-8e40-0083405e0dbd
   Args:
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 2024
-  AssignClass (947a4fe8-5530-481d-803b-062bce3329ac)
- Call ID: 947a4fe8-5530-481d-803b-062bce3329ac
+    target: :Male
+    source: :Prince_Frederick_of_Prussia
+    relation: :hasSex
+  AddLiteral (fe0ea328-b5df-4d72-9e8f-7a0f74796fbf)
+ Call ID: fe0ea328-b5df-4d72-9e8f-7a0f74796fbf
   Args:
-    type: :Man
-    source: Josias_Georg_Wilhelm_Adolf
-  AssignClass (e050cce9-24de-44f4-8e30-b418d30c1a5b)
- Call ID: e050cce9-24de-44f4-8e30-b418d30c1a5b
-  Args:
-    type: :Person
-    source: Josias_Georg_Wilhelm_Adolf
-  AddLiteral (65d8106d-1e16-40ad-835a-84c0c94a0545)
- Call ID: 65d8106d-1e16-40ad-835a-84c0c94a0545
-  Args:
-    literal_value: 1896
+    source: :Prince_Frederick_of_Prussia
     relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Josias_Georg_Wilhelm_Adolf
-  AddLiteral (811e4ea8-6b46-435b-b109-c0c512abc416)
- Call ID: 811e4ea8-6b46-435b-b109-c0c512abc416
+    literal_value: 1911
+  AddLiteral (e2135e67-4f96-4f68-b3ba-ae4bf8078249)
+ Call ID: e2135e67-4f96-4f68-b3ba-ae4bf8078249
   Args:
-    literal_value: 1967
-    relation: :hasDeathYear
+    literal_value: 1966
     literal_type: xsd:integer
-    source: Josias_Georg_Wilhelm_Adolf
-  AssignClass (bb733966-8ca2-468d-9f49-a866ee4f5e23)
- Call ID: bb733966-8ca2-468d-9f49-a866ee4f5e23
+    relation: :hasDeathYear
+    source: :Prince_Frederick_of_Prussia
+  AddLiteral (089726fd-d8ef-4497-8358-8177b4a76049)
+ Call ID: 089726fd-d8ef-4497-8358-8177b4a76049
   Args:
+    source: :Prince_Frederick_of_Prussia
+    relation: :alsoKnownAs
+    literal_value: Friedrich von Preussen
+    literal_type: xsd:string
+  AddLiteral (a92cfd08-285f-458f-b051-093b450c5c91)
+ Call ID: a92cfd08-285f-458f-b051-093b450c5c91
+  Args:
+    relation: :alsoKnownAs
+    source: :Prince_Frederick_of_Prussia
+    literal_value: George Mansfield
+    literal_type: xsd:string
+  AssignClass (d3be9086-b225-4396-a9a8-50dfc044e18b)
+ Call ID: d3be9086-b225-4396-a9a8-50dfc044e18b
+  Args:
+    source: :Crown_Prince_Wilhelm_of_Germany
+    type: :Man
+  AssignClass (d6289c8f-194a-4288-ba39-10ed95031a15)
+ Call ID: d6289c8f-194a-4288-ba39-10ed95031a15
+  Args:
+    source: :Crown_Prince_Wilhelm_of_Germany
+    type: :Person
+  AssignClass (b6206150-f9d7-43d6-8d09-6f4aad7e96e7)
+ Call ID: b6206150-f9d7-43d6-8d09-6f4aad7e96e7
+  Args:
+    source: :Duchess_Cecilie_of_Mecklenburg-Schwerin
     type: :Woman
-    source: Altburg_Marie_Mathilde_von_Oldenburg
-  AssignClass (65bd5949-7c5a-467b-82b6-7fe5ac60bc15)
- Call ID: 65bd5949-7c5a-467b-82b6-7fe5ac60bc15
+  AssignClass (24c40281-4065-40b9-b402-9afb3ef8827b)
+ Call ID: 24c40281-4065-40b9-b402-9afb3ef8827b
   Args:
+    source: :Duchess_Cecilie_of_Mecklenburg-Schwerin
     type: :Person
-    source: Altburg_Marie_Mathilde_von_Oldenburg
-  AddLiteral (98ea4c87-8417-4e55-866e-66850fd36948)
- Call ID: 98ea4c87-8417-4e55-866e-66850fd36948
+  AddTriple (5a083e9a-e29c-4516-81ec-74094a75b91b)
+ Call ID: 5a083e9a-e29c-4516-81ec-74094a75b91b
   Args:
-    source: Altburg_Marie_Mathilde_von_Oldenburg
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1903
-  AddLiteral (d8ff0d2b-63b3-45c5-b073-08339fc682b4)
- Call ID: d8ff0d2b-63b3-45c5-b073-08339fc682b4
-  Args:
-    source: Altburg_Marie_Mathilde_von_Oldenburg
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 2001
-  AddTriple (64ad9618-5e70-4d4f-911e-17a2c6dea01f)
- Call ID: 64ad9618-5e70-4d4f-911e-17a2c6dea01f
-  Args:
-    target: Josias_Georg_Wilhelm_Adolf
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
+    target: :Crown_Prince_Wilhelm_of_Germany
     relation: :hasFather
-  AddTriple (420ccaa1-2447-47ba-b57b-85e6fca5ef83)
- Call ID: 420ccaa1-2447-47ba-b57b-85e6fca5ef83
+    source: :Prince_Frederick_of_Prussia
+  AddTriple (b85e22d4-e3ad-4245-8908-0cfaee06a9a9)
+ Call ID: b85e22d4-e3ad-4245-8908-0cfaee06a9a9
   Args:
     relation: :hasMother
-    target: Altburg_Marie_Mathilde_von_Oldenburg
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-  AssignClass (7d1cf6b8-684f-4ead-a4ec-58dda76bf044)
- Call ID: 7d1cf6b8-684f-4ead-a4ec-58dda76bf044
+    source: :Prince_Frederick_of_Prussia
+    target: :Duchess_Cecilie_of_Mecklenburg-Schwerin
+  AssignClass (1a3bc6ca-e20e-4aa0-8e48-5cb95d8defea)
+ Call ID: 1a3bc6ca-e20e-4aa0-8e48-5cb95d8defea
   Args:
-    type: :Man
-    source: Frederick_Augustus_II
-  AssignClass (b57f006f-ca61-4fd5-8e9b-5d9d815aaacf)
- Call ID: b57f006f-ca61-4fd5-8e9b-5d9d815aaacf
-  Args:
-    type: :Person
-    source: Frederick_Augustus_II
-  AddTriple (f6cfcc36-871a-4afc-a989-d8754984b773)
- Call ID: f6cfcc36-871a-4afc-a989-d8754984b773
-  Args:
-    relation: :hasFather
-    target: Frederick_August_II
-    source: Altburg_Marie_Mathilde_von_Oldenburg
-  AssignClass (2e73bcac-4060-47d0-b306-1764ccf805d8)
- Call ID: 2e73bcac-4060-47d0-b306-1764ccf805d8
-  Args:
+    source: :Lady_Brigid_Guinness
     type: :Woman
-    source: Cecilia_von_Goess-Saurau
-  AssignClass (7190a201-7500-4dd3-84b1-b9132d3b1eb5)
- Call ID: 7190a201-7500-4dd3-84b1-b9132d3b1eb5
+  AssignClass (3a01c851-b380-41e3-a436-e826b4746683)
+ Call ID: 3a01c851-b380-41e3-a436-e826b4746683
   Args:
+    source: :Lady_Brigid_Guinness
     type: :Person
-    source: Cecilia_von_Goess-Saurau
-  AddLiteral (8e48b15a-a4aa-46fd-86bb-c8ea90b23059)
- Call ID: 8e48b15a-a4aa-46fd-86bb-c8ea90b23059
+  AddTriple (705a045c-aab2-4a66-9128-f0bc29afc5c3)
+ Call ID: 705a045c-aab2-4a66-9128-f0bc29afc5c3
   Args:
-    source: Cecilia_von_Goess-Saurau
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1956
-  AddLiteral (a911acf5-3220-48c6-9bc1-5e1c16d1dc1e)
- Call ID: a911acf5-3220-48c6-9bc1-5e1c16d1dc1e
-  Args:
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1988
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-  AddTriple (25b1201d-b1ed-4a2b-b27f-77af6848c377)
- Call ID: 25b1201d-b1ed-4a2b-b27f-77af6848c377
-  Args:
-    target: Cecilia_von_Goess-Saurau
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
+    target: :Lady_Brigid_Guinness
+    source: :Prince_Frederick_of_Prussia
     relation: :hasRelation
-  AssignClass (67374b55-0ffa-40eb-876f-c1e823af4037)
- Call ID: 67374b55-0ffa-40eb-876f-c1e823af4037
+  AddLiteral (5d0a966b-30eb-462e-89ed-d4ad9e542e06)
+ Call ID: 5d0a966b-30eb-462e-89ed-d4ad9e542e06
   Args:
-    type: :Man
-    source: Carl-Anton
-  AssignClass (43ad1215-3a8e-4c1e-8bbd-3883d29729f7)
- Call ID: 43ad1215-3a8e-4c1e-8bbd-3883d29729f7
+    source: :Prince_Frederick_of_Prussia
+    relation: :hasMarriageYear
+    literal_value: 1945
+    literal_type: xsd:integer
+  Finish (431f9e9b-550a-4cc4-afc0-3194ec87a568)
+ Call ID: 431f9e9b-550a-4cc4-afc0-3194ec87a568
   Args:
-    type: :Person
-    source: Carl-Anton
-  AddTriple (2053b679-d81d-44b0-a844-27fb648bbf9c)
- Call ID: 2053b679-d81d-44b0-a844-27fb648bbf9c
-  Args:
-    target: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-    source: Carl-Anton
-    relation: :hasFather
-  AddTriple (8fc2a9ae-dbf7-4708-95fe-6f401b592a73)
- Call ID: 8fc2a9ae-dbf7-4708-95fe-6f401b592a73
-  Args:
-    relation: :hasMother
-    target: Cecilia_von_Goess-Saurau
-    source: Carl-Anton
-  Finish (15f46aea-6410-4c72-9459-66bdc0bcedaf)
- Call ID: 15f46aea-6410-4c72-9459-66bdc0bcedaf
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -613,37 +624,28 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Carl-Anton a :Man,
+  data:Prince_Frederick_of_Prussia a :Man,
           :Person ;
-      :hasFather data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
-      :hasMother data:Cecilia_von_Goess-Saurau .
+      :alsoKnownAs "Friedrich von Preussen"^^xsd:string,
+          "George Mansfield"^^xsd:string ;
+      :hasBirthYear 1911 ;
+      :hasDeathYear 1966 ;
+      :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
+      :hasMarriageYear 1945 ;
+      :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+      :hasRelation data:Lady_Brigid_Guinness ;
+      :hasSex data:Male .
 
-  data:Frederick_Augustus_II a :Man,
+  data:Crown_Prince_Wilhelm_of_Germany a :Man,
           :Person .
 
-  data:Altburg_Marie_Mathilde_von_Oldenburg a :Person,
-          :Woman ;
-      :hasBirthYear 1903 ;
-      :hasDeathYear 2001 ;
-      :hasFather data:Frederick_August_II .
+  data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Person,
+          :Woman .
 
-  data:Josias_Georg_Wilhelm_Adolf a :Man,
-          :Person ;
-      :hasBirthYear 1896 ;
-      :hasDeathYear 1967 .
+  data:Lady_Brigid_Guinness a :Person,
+          :Woman .
 
-  data:Wittekind_Adolf_Heinrich_Georg-Wilhelm a :Man,
-          :Person ;
-      :hasBirthYear 1936 ;
-      :hasDeathYear 2024 ;
-      :hasFather data:Josias_Georg_Wilhelm_Adolf ;
-      :hasMarriageYear 1988 ;
-      :hasMother data:Altburg_Marie_Mathilde_von_Oldenburg ;
-      :hasRelation data:Cecilia_von_Goess-Saurau .
-
-  data:Cecilia_von_Goess-Saurau a :Person,
-          :Woman ;
-      :hasBirthYear 1956 .
+  data:Male a :Sex .
 
 
 
@@ -655,158 +657,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (c39dc497-0916-49a1-8032-a3e02f89dfe8)
- Call ID: c39dc497-0916-49a1-8032-a3e02f89dfe8
+  ValidateShacl (f618233f-b33e-4acd-b03b-cc86008bf4f0)
+ Call ID: f618233f-b33e-4acd-b03b-cc86008bf4f0
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:18
+Total violations:6
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Wittekind_Adolf_Heinrich_Georg-Wilhelm' is assigned as the father of 'Carl-Anton', but it is missing the required class ':Ancestor' or ':Man'.
+      The node 'Crown_Prince_Wilhelm_of_Germany' is assigned as the father of 'Prince_Frederick_of_Prussia' via 'hasFather', but the node is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wittekind_Adolf_Heinrich_Georg-Wilhelm', class=':Ancestor')
+      AssignClass(node='Crown_Prince_Wilhelm_of_Germany', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Josias_Georg_Wilhelm_Adolf' is assigned as the father of 'Wittekind_Adolf_Heinrich_Georg-Wilhelm', but it is missing the required class ':Ancestor' or ':Man'.
+      The node 'Duchess_Cecilie_of_Mecklenburg-Schwerin' is assigned as the mother of 'Prince_Frederick_of_Prussia' via 'hasMother', but the node is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Josias_Georg_Wilhelm_Adolf', class=':Ancestor')
+      AssignClass(node='Duchess_Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Cecilia_von_Goess-Saurau' is assigned as the mother of 'Carl-Anton', but it is missing the required class ':Ancestor' or ':Woman'.
+      The node 'Crown_Prince_Wilhelm_of_Germany' is assigned as the father of 'Prince_Frederick_of_Prussia' via 'hasFather', but the node is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilia_von_Goess-Saurau', class=':Ancestor')
+      AssignClass(node='Crown_Prince_Wilhelm_of_Germany', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Altburg_Marie_Mathilde_von_Oldenburg' is assigned as the mother of 'Wittekind_Adolf_Heinrich_Georg-Wilhelm', but it is missing the required class ':Ancestor' or ':Woman'.
+      The node 'Duchess_Cecilie_of_Mecklenburg-Schwerin' is assigned as the mother of 'Prince_Frederick_of_Prussia' via 'hasMother', but the node is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Altburg_Marie_Mathilde_von_Oldenburg', class=':Ancestor')
+      AssignClass(node='Duchess_Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Frederick_August_II' is assigned as the father of 'Altburg_Marie_Mathilde_von_Oldenburg', but it is missing the required class ':Ancestor' or ':Man'.
+      The node 'Crown_Prince_Wilhelm_of_Germany' is assigned as the father of 'Prince_Frederick_of_Prussia' via 'hasFather', but the node is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_August_II', class=':Ancestor')
+      AssignClass(node='Crown_Prince_Wilhelm_of_Germany', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Frederick_August_II' is assigned as the father of 'Altburg_Marie_Mathilde_von_Oldenburg', but it is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_August_II', class=':Man')
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Wittekind_Adolf_Heinrich_Georg-Wilhelm' is assigned as the father of 'Carl-Anton', but it is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wittekind_Adolf_Heinrich_Georg-Wilhelm', class=':Man')
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Josias_Georg_Wilhelm_Adolf' is assigned as the father of 'Wittekind_Adolf_Heinrich_Georg-Wilhelm', but it is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Josias_Georg_Wilhelm_Adolf', class=':Man')
-
-
-  Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Cecilia_von_Goess-Saurau' is assigned as the mother of 'Carl-Anton', but it is missing the required class ':Ancestor' or ':Woman'.
+      The node 'Duchess_Cecilie_of_Mecklenburg-Schwerin' is assigned as the mother of 'Prince_Frederick_of_Prussia' via 'hasMother', but the node is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilia_von_Goess-Saurau', class=':Woman')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Altburg_Marie_Mathilde_von_Oldenburg' is assigned as the mother of 'Wittekind_Adolf_Heinrich_Georg-Wilhelm', but it is missing the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Altburg_Marie_Mathilde_von_Oldenburg', class=':Woman')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Frederick_August_II' is assigned as the father of 'Altburg_Marie_Mathilde_von_Oldenburg', but it is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_August_II', class=':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Frederick_August_II' is assigned as the father of 'Altburg_Marie_Mathilde_von_Oldenburg', but it is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_August_II', class=':Man')
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Wittekind_Adolf_Heinrich_Georg-Wilhelm' is assigned as the father of 'Carl-Anton', but it is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Wittekind_Adolf_Heinrich_Georg-Wilhelm', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Josias_Georg_Wilhelm_Adolf' is assigned as the father of 'Wittekind_Adolf_Heinrich_Georg-Wilhelm', but it is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Josias_Georg_Wilhelm_Adolf', class=':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Cecilia_von_Goess-Saurau' is assigned as the mother of 'Carl-Anton', but it is missing the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Cecilia_von_Goess-Saurau', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Altburg_Marie_Mathilde_von_Oldenburg' is assigned as the mother of 'Wittekind_Adolf_Heinrich_Georg-Wilhelm', but it is missing the required class ':Ancestor' or ':Woman'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Altburg_Marie_Mathilde_von_Oldenburg', class=':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Frederick_August_II' is assigned as the father of 'Altburg_Marie_Mathilde_von_Oldenburg', but it is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_August_II', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Frederick_August_II' is assigned as the father of 'Altburg_Marie_Mathilde_von_Oldenburg', but it is missing the required class ':Ancestor' or ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_August_II', class=':Man')
+      AssignClass(node='Duchess_Cecilie_of_Mecklenburg-Schwerin', class=':Ancestor')
 
 
 
@@ -815,46 +721,19 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (0de1e9c5-b61b-4a01-a6d6-1f9cc7ee6862)
- Call ID: 0de1e9c5-b61b-4a01-a6d6-1f9cc7ee6862
+  AssignClass (6ac9f5cc-5af7-4d3d-9d3c-911afc6d9633)
+ Call ID: 6ac9f5cc-5af7-4d3d-9d3c-911afc6d9633
+  Args:
+    source: :Crown_Prince_Wilhelm_of_Germany
+    type: :Ancestor
+  AssignClass (a35347f4-c521-4aa4-887c-937916dce839)
+ Call ID: a35347f4-c521-4aa4-887c-937916dce839
   Args:
     type: :Ancestor
-    source: Wittekind_Adolf_Heinrich_Georg-Wilhelm
-  AssignClass (bd9f6e45-c8aa-4e5c-a30b-7b3158a719ff)
- Call ID: bd9f6e45-c8aa-4e5c-a30b-7b3158a719ff
+    source: :Duchess_Cecilie_of_Mecklenburg-Schwerin
+  ValidateShacl (930682e7-9ae9-4660-a51d-a5245f1da3b6)
+ Call ID: 930682e7-9ae9-4660-a51d-a5245f1da3b6
   Args:
-    type: :Ancestor
-    source: Josias_Georg_Wilhelm_Adolf
-  AssignClass (2a489c13-5518-4484-84aa-6c09850c766d)
- Call ID: 2a489c13-5518-4484-84aa-6c09850c766d
-  Args:
-    type: :Ancestor
-    source: Cecilia_von_Goess-Saurau
-  AssignClass (5590203b-6afc-4652-84fe-c6db9827bb5a)
- Call ID: 5590203b-6afc-4652-84fe-c6db9827bb5a
-  Args:
-    type: :Ancestor
-    source: Altburg_Marie_Mathilde_von_Oldenburg
-  AssignClass (ba47514a-a55f-494a-90ab-511b512f9c9e)
- Call ID: ba47514a-a55f-494a-90ab-511b512f9c9e
-  Args:
-    type: :Ancestor
-    source: Frederick_August_II
-  Finish (99c03502-54dd-4692-b9e6-d1840b624a24)
- Call ID: 99c03502-54dd-4692-b9e6-d1840b624a24
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -867,170 +746,32 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Carl-Anton a :Man,
+  data:Prince_Frederick_of_Prussia a :Man,
           :Person ;
-      :hasFather data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
-      :hasMother data:Cecilia_von_Goess-Saurau .
+      :alsoKnownAs "Friedrich von Preussen"^^xsd:string,
+          "George Mansfield"^^xsd:string ;
+      :hasBirthYear 1911 ;
+      :hasDeathYear 1966 ;
+      :hasFather data:Crown_Prince_Wilhelm_of_Germany ;
+      :hasMarriageYear 1945 ;
+      :hasMother data:Duchess_Cecilie_of_Mecklenburg-Schwerin ;
+      :hasRelation data:Lady_Brigid_Guinness ;
+      :hasSex data:Male .
 
-  data:Frederick_Augustus_II a :Man,
+  data:Crown_Prince_Wilhelm_of_Germany a :Ancestor,
+          :Man,
           :Person .
 
-  data:Altburg_Marie_Mathilde_von_Oldenburg a :Ancestor,
+  data:Duchess_Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
           :Person,
-          :Woman ;
-      :hasBirthYear 1903 ;
-      :hasDeathYear 2001 ;
-      :hasFather data:Frederick_August_II .
+          :Woman .
 
-  data:Frederick_August_II a :Ancestor .
+  data:Lady_Brigid_Guinness a :Person,
+          :Woman .
 
-  data:Josias_Georg_Wilhelm_Adolf a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1896 ;
-      :hasDeathYear 1967 .
-
-  data:Wittekind_Adolf_Heinrich_Georg-Wilhelm a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1936 ;
-      :hasDeathYear 2024 ;
-      :hasFather data:Josias_Georg_Wilhelm_Adolf ;
-      :hasMarriageYear 1988 ;
-      :hasMother data:Altburg_Marie_Mathilde_von_Oldenburg ;
-      :hasRelation data:Cecilia_von_Goess-Saurau .
-
-  data:Cecilia_von_Goess-Saurau a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1956 .
+  data:Male a :Sex .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (0a3d25c8-85d3-46a5-9a15-012271c8b3ef)
- Call ID: 0a3d25c8-85d3-46a5-9a15-012271c8b3ef
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:4
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Frederick_August_II', which is set as the father of 'Altburg_Marie_Mathilde_von_Oldenburg', lacks the required ':Man' class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_August_II', class=':Man')
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'Frederick_August_II' is missing the ':Man' class, which is a mandatory requirement for any entity linked via the 'hasFather' property.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_August_II', class=':Man')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value node 'Frederick_August_II' does not satisfy the class constraint for the 'hasFather' property because it is not explicitly typed as ':Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_August_II', class=':Man')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The entity 'Frederick_August_II' is currently invalid as a father because it lacks the mandatory ':Man' classification.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Frederick_August_II', class=':Man')
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (7837b99a-40a4-45f3-9b04-cfb87366ebdd)
- Call ID: 7837b99a-40a4-45f3-9b04-cfb87366ebdd
-  Args:
-    type: :Man
-    source: Frederick_August_II
-  Finish (fd8867b3-cadc-4349-8b95-3682696ddd48)
- Call ID: fd8867b3-cadc-4349-8b95-3682696ddd48
-  Args:
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Carl-Anton a :Man,
-          :Person ;
-      :hasFather data:Wittekind_Adolf_Heinrich_Georg-Wilhelm ;
-      :hasMother data:Cecilia_von_Goess-Saurau .
-
-  data:Frederick_Augustus_II a :Man,
-          :Person .
-
-  data:Altburg_Marie_Mathilde_von_Oldenburg a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1903 ;
-      :hasDeathYear 2001 ;
-      :hasFather data:Frederick_August_II .
-
-  data:Frederick_August_II a :Ancestor,
-          :Man .
-
-  data:Josias_Georg_Wilhelm_Adolf a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1896 ;
-      :hasDeathYear 1967 .
-
-  data:Wittekind_Adolf_Heinrich_Georg-Wilhelm a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1936 ;
-      :hasDeathYear 2024 ;
-      :hasFather data:Josias_Georg_Wilhelm_Adolf ;
-      :hasMarriageYear 1988 ;
-      :hasMother data:Altburg_Marie_Mathilde_von_Oldenburg ;
-      :hasRelation data:Cecilia_von_Goess-Saurau .
-
-  data:Cecilia_von_Goess-Saurau a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1956 .
-
-
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (02f338c7-9119-4489-b9a4-30dd42bc072d)
- Call ID: 02f338c7-9119-4489-b9a4-30dd42bc072d
-  Args:
 
 ================================= Tool Message =================================
 
@@ -1040,6 +781,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (c258095c-2bcb-4d2f-a282-877011e1b165)
- Call ID: c258095c-2bcb-4d2f-a282-877011e1b165
+  Finish (94928141-084c-431b-a7cf-cc4f2531bb06)
+ Call ID: 94928141-084c-431b-a7cf-cc4f2531bb06
   Args:

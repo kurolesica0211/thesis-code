@@ -2,27 +2,26 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Nicholas_Charles_Edward_Jonathan_Windsor a :Man,
+data:Lady_Gabriella_Marina_Alexandra_Ophelia_Kingston a :Person,
+        :Woman ;
+    :alsoKnownAs data:Lady_Gabriella_Marina_Alexandra_Ophelia_Windsor ;
+    :hasBirthYear 1981 ;
+    :hasFather data:Prince_Michael_of_Kent ;
+    :hasMarriageYear 2019 ;
+    :hasMother data:Princess_Michael_of_Kent ;
+    :hasRelation data:Thomas_Henry_Robin_Kingston .
+
+data:Lady_Gabriella_Marina_Alexandra_Ophelia_Windsor a :Person,
+        :Woman .
+
+data:Prince_Michael_of_Kent a :Man,
+        :Person .
+
+data:Princess_Michael_of_Kent a :Person,
+        :Woman .
+
+data:Thomas_Henry_Robin_Kingston a :Man,
         :Person ;
-    :hasBirthYear 1970 ;
-    :hasBrother data:Earl_of_St_Andrews ;
-    :hasFather data:Prince_Edward_Duke_of_Kent ;
-    :hasMother data:Katharine_Duchess_of_Kent ;
-    :hasRelation data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski ;
-    :hasSister data:Lady_Helen_Taylor .
-
-data:Earl_of_St_Andrews a :Man,
-        :Person .
-
-data:Katharine_Duchess_of_Kent a :Person,
-        :Woman .
-
-data:Lady_Helen_Taylor a :Person,
-        :Woman .
-
-data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski a :Person,
-        :Woman .
-
-data:Prince_Edward_Duke_of_Kent a :Man,
-        :Person .
+    :hasBirthYear 1978 ;
+    :hasDeathYear 2024 .
 

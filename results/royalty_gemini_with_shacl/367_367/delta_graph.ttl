@@ -2,33 +2,67 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Frederick_III_German_Emperor a :Ancestor,
+data:Alexandra_of_Hanover a :Person,
+        :Woman ;
+    :hasAncestor data:Charlotte_of_Mecklenburg-Strelitz,
+        data:George_III_of_the_United_Kingdom ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1963 ;
+    :hasFather data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMarriageYear 1904 ;
+    :hasMother data:Thyra_of_Denmark .
+
+data:Frederick_Francis_IV_Grand_Duke_of_Mecklenburg-Schwerin a :Ancestor,
         :Man,
         :Person ;
-    :isFatherOf data:Margaret_of_Prussia .
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia .
 
-data:Prince_Frederick_Charles_of_Hesse a :Man,
-        :Person .
-
-data:Queen_Victoria a :Ancestor,
+data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
         :Person,
         :Woman .
 
-data:Victoria_Princess_Royal a :Ancestor,
+data:Charlotte_of_Mecklenburg-Strelitz a :Ancestor,
         :Person,
         :Woman ;
-    :hasMother data:Queen_Victoria ;
-    :isMotherOf data:Margaret_of_Prussia .
+    :hasBirthYear 1744 ;
+    :hasDeathYear 1818 .
 
-data:Wilhelm_II a :Man,
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1818 ;
+    :hasDeathYear 1906 .
+
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1845 ;
+    :hasDeathYear 1923 .
+
+data:Frederick_Francis_III_Grand_Duke_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
         :Person .
 
-data:Margaret_of_Prussia a :Person,
+data:George_III_of_the_United_Kingdom a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1738 ;
+    :hasDeathYear 1820 .
+
+data:Louise_of_Hesse-Kassel a :Ancestor,
+        :Person,
         :Woman ;
-    :hasBirthYear 1872 ;
-    :hasDeathYear 1954 ;
-    :hasFather data:Frederick_III_German_Emperor ;
-    :hasMother data:Victoria_Princess_Royal ;
-    :hasRelation data:Prince_Frederick_Charles_of_Hesse ;
-    :isSisterOf data:Wilhelm_II .
+    :hasBirthYear 1817 ;
+    :hasDeathYear 1898 .
+
+data:Thyra_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1853 ;
+    :hasDeathYear 1933 ;
+    :hasFather data:Christian_IX_of_Denmark ;
+    :hasMother data:Louise_of_Hesse-Kassel .
 

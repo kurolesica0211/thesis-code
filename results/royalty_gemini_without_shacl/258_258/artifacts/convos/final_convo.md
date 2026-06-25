@@ -69,63 +69,74 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Duke of CalabriaThe Duchess of Calabria
+Prince Luís of Orléans-Braganza (26 January 1878 – 26 March 1920), nicknamed "the Perfect Prince", was the second son of Isabel, Princess Imperial of Brazil and Prince Gaston, Count of Eu, and patriarch of the Vassouras branch of the House of Orléans-Braganza.
+In 1908, the year he married, his older brother Pedro renounced his claim to succeed his mother in her claim to the imperial throne, leaving Dom Luís as her heir.
+Childhood
+
+Luís was born at Petrópolis on 26 January 1878, to Prince Gaston d'Orléans, Count of Eu, and Isabel, Princess Imperial of Brazil.
+His name in full was Luís Maria Filipe Pedro de Alcântara Gastão Miguel Rafael Gonzaga.
+While on a trip to Europe with his family, an earthquake occurred on 23 February 1887, and while his older brother Pedro appeared very nervous and cried, Luís simply stood calm and showed no emotions.
+Although Pedro was gentle and likeable, he did not like to study and was often clumsy, while Luís had a strong will, was active and apparently intelligent.
+Gaston affirmed in another letter, written in March 1890, that "Baby Pedro  always notable for laziness and ineptness," while "Luís does the identical course work all by himself with admirable distinction and capacity."
+Luís was always impelled to action thanks to his restless spirit that would take him in his childhood to sports and as an adult to politics.
+When the coup that replaced the monarchy with the republic occurred on 15 November 1889, Isabel preferred to send her children to Petrópolis, where later Luís would remember that "locked up in the palace, they had left us during two long days in the most complete ignorance of what was happening out there" until they were sent back to their parents and then left for forced exile.
+In 1890, fifteen-year-old Pedro, thirteen-year-old Luís, and their younger brother Antônio (nicknamed "Totó"), moved along with their parents to the outskirts of Versailles.
+Luís's older brother, Pedro, reached the age of majority in 1893, but he had no capacity or desire to assume the monarchist cause.
+Luís and his brother Antônio followed their older brother at the same military school.
+Meanwhile, Luís was ambitious and active, eager to make his mark on the world.
+Luís was seen by his parents as the only member of the Imperial family capable of helping the monarchist movement in Brazil.
+However, Luís was prevented from disembarking and was not allowed to set foot on his native land by the republican government.
+Luís became engaged to his cousin Maria Pia of Bourbon-Two Sicilies, a granddaughter of a brother of Luís's maternal grandmother, Teresa Cristina.
+I Prince Pedro de Alcântara Luís Filipe Maria Gastão Miguel Gabriel Rafael Gonzaga of Orléans and Braganza, having maturely reflected, have resolved to renounce the right that, by the Constitution of the Empire of Brazil, promulgated on March 25, 1824, accords to me the Crown of that nation.
+Cannes October 30, 1908 signed: Pedro de Alcântara of Orléans-Braganza
 
 
-Prince Pedro of Bourbon-Two Sicilies, Duke of Calabria, Grandee of Spain (Spanish: Pedro Juan María Alejo Saturnino de Todos los Santos; born 16 October 1968), is the only son of Infante Carlos, Duke of Calabria, and Princess Anne of Orléans.
-Claim
+This renunciation was followed by a letter from Isabel to royalists in Brazil:
 
-He is the only son of Infante Carlos, Duke of Calabria (1938–2015), and his wife, Princess Anne of Orléans.
-The other claimant is Prince Carlo, Duke of Castro.
-He is also a grandee of Spain, as the son of an infante of Spain.
-On 14 December 1900, Prince Carlos, next oldest brother to the childless Prince Ferdinand, head of the House of Bourbon-Two Sicilies and immediate heir of their father, claimant to the former throne of the Two Sicilies, signed a private agreement purporting to renounce the "future succession" to the former crown before his marriage to María de las Mercedes, Princess of Asturias, heiress presumptive to the throne of Spain.
-This document, known as the Act of Cannes, was signed in purported obedience to the 1759 Pragmatic Sanction signed by Charles III of Spain where it was established that the thrones of Spain and Naples should never be united in the person of the same monarch, separating them forever to preserve the European balance of power.
-The Act of Cannes states:
+November 9, 1908,  Eu
 
+Most Excellent Gentlemen Members of the Monarchist Directory,
 
-Before Us, Don Alfonso de Borbón, Count of Caserta... Head of the Royal House and Dynasty of the Two Sicilies...
-His Royal Highness Prince Don Carlos, our beloved Son, appears and declares that, preparing to marry HRH Infanta María de las Mercedes, Princess of Asturias, and assuming by such marriage the nationality and quality of Spanish Prince, undertakes to renounce by this Act and solemnly renounces, for himself and for his heirs and successors, all the right and reason to the eventual succession to the Crown of the Two Sicilies and to all the assets of the Royal House that are in Italy and elsewhere, and this according to our Laws, constitutions and Family customs, in execution of the Pragmatic Sanction of King Charles III, our Augustus ancestor, of October 6, 1759, the prescriptions of which he freely and spontaneously declares to subscribe and obey.
-He also declares, in particular, to renounce for himself, his heirs and successors to the assets and values existing in Italy, Vienna and Munich and destined by His Majesty King Francis II (may God have welcomed his soul), to the foundation of a majorat for the Head of the Dynasty and of the Family of the Two Sicilies and for the constitution of an endowment fund in favor of the Royal Princesses and granddaughters of our August Father King Ferdinand (may God have welcomed his soul), of marriageable age; but preserving his rights to the part of the assets that were bequeathed to him by his late uncle King Francis II, in the event that the Italian Government, which improperly retains them, makes the due restitution and the same everything that may arrive to him by other testamentary legacies.
-— Cannes, 14 December 1900
+With all my heart I thank you for the congratulations upon the marriages of my dear children Pedro and Luís.
+Luís' took place in Cannes on day 4 with the brilliance that is desired for so solemn an act in the life of my successor to the Throne of Brazil.
+Before the marriage of Luís he signed his resignation to the crown of Brazil, and here I send it to you, while keeping here an identical copy.
+Luís will engage actively in everything with respect to the monarchy and any good for our land.
+I give you all my friendship and confidence,
 
-Supporters of the other claimant to the headship of the House of Bourbon-Two Sicilies, sometimes referred to as the Castrist faction, argue that because Prince Carlos signed this agreement, he relinquished all of his rights and those of his descendants to both the headship of the family and the Sacred Military Constantinian Order of Saint George, and so the rights currently fall on Prince Carlo, Duke of Castro.
-However, supporters of Pedro, also known as the legitimists, argue that the Act of Cannes was subject to a condition that never arose and its terms would have only applied if the wife of Prince Carlos had inherited the throne of Spain, and he had become king of the Two Sicilies, which never happened and was furthermore highly unlikely at the time the document was created.
-In due course, Prince Carlos inherited his share of properties of the royal family in Italy, despite the purported renunciation, with no objection by his brothers and sisters.
-Marriage and issue
-
-Pedro married Sofía Landaluce y Melgarejo (born 23
-November 1973 in Madrid), daughter of José Manuel Landaluce y Domínguez and his wife María de las Nieves Blanca Melgarejo y González (granddaughter of the Dukes of San Fernando de Quiroga), on 30 March 2001 at Real Club de la Puerta de Hierro in Madrid.
-Pedro and Sofía have seven children:
+The marriage of Luís and Maria Pia was celebrated on 4 November at Cannes, and that of Pedro and Elizabeth ten days later at Versailles.
+From the union of Luís and Maria Pia three children were born: Pedro Henrique, who became the direct successor to Princess Isabel and Head of the Imperial House of Brazil after her death in 1921; Luís Gastão, and Pia Maria.
+Isabel did not take long to reveal her opinion about her grandchildren and wrote in a letter in 1914: "I am sending enclosed a photograph of myself with my grandchildren by Luís.
+"
 
 
-Honours
+Political activity
 
-Dynastic
+With the renunciation of the throne by his brother, Luís could finally collaborate effectively with the Brazilian monarchic movement, assuming clearly his position as heir to the throne (after his mother) and trying to assume the leadership of the restoration campaign.
+Luís defended ideas that were well ahead of his time and the necessity to guarantee worthy conditions of subsistence for the Brazilian workers would only be observed thirty years later during the dictatorship of Getúlio Vargas.
+The progressive vision of Luís made him a target for accusations of being a "socialist" and a "radical" when, in reality, his intent was to hinder the work force from adhering to socialism, communism, or even anarchism.
+The start of World War I in August 1914 and the invasion of France by Germany made it possible for Luís to once more prove his idealism and activism as, in his own words, he was a "soldier heart and soul".
+Luís joined the army while Antônio served as an air force pilot.
+While fighting in the trenches of Flanders in 1915 Luís contracted an aggressive type of bone rheumatism that left him very weak and incapable of walking.
+As a consequence of his actions in the conflict and for his bravery, Luís received several decorations: Military medal of the Yser, from King Albert I of Belgium; Legion of Honour, in the degree of knight, and the Cross of War from the French government; the British War Medal, the Victory Medal and Star from the Great Britain.
+As his mother lived until 1921, her successor in pretense to the throne of Brazil was her grandson, Pedro Henrique, Luís's son.
+"He died, unexpectedly, in Cannes, D. Luiz de Orléans e Bragança, died in exile where he was purging the crime of being Pedro II grandson.
+Their presence would shame our phrygian cap..."
 
+— Revista do Brasil
 
+Legacy
 
-
-National
-
-Other activities
-
-Arms
-
-Ancestors
-
-Notes
-
-References
-
-Bibliography
-
-External links
+Prince Luís is largely unknown to Brazilians today.
+The authors dedicated the work to His Imperial Highness the Sire Dom Luiz de Orléans-Braganza.
+The Municipality of Pimenta Bueno, in the State of Rondônia (Brazil), honored Dom Luís and the entire Brazilian imperial family in 2010 by renaming one of its streets "Príncipe Dom Luiz de Órleans e Bragança".
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -141,39 +152,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -188,6 +169,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -205,6 +203,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -272,29 +285,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -303,6 +308,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -315,6 +328,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -323,17 +338,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -361,6 +378,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -376,125 +477,206 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b91b539c-b9a6-43e2-b7e5-43e9047c8bd5)
- Call ID: b91b539c-b9a6-43e2-b7e5-43e9047c8bd5
+  AssignClass (e375131c-f89d-4c57-b29b-a1bddf6ff86a)
+ Call ID: e375131c-f89d-4c57-b29b-a1bddf6ff86a
   Args:
-    source: Prince_Pedro
+    source: :Luis_de_Orleans-Braganza
     type: :Man
-  AssignClass (774fdc36-0b41-47a1-a956-c84bb4068d2a)
- Call ID: 774fdc36-0b41-47a1-a956-c84bb4068d2a
-  Args:
-    source: Prince_Pedro
-    type: :Person
-  AssignClass (d0d539de-ef3f-44bf-844f-fa494f4461e9)
- Call ID: d0d539de-ef3f-44bf-844f-fa494f4461e9
-  Args:
-    source: Infante_Carlos
-    type: :Man
-  AssignClass (5f84d9e2-2f6d-4e1b-833c-9b64033040cd)
- Call ID: 5f84d9e2-2f6d-4e1b-833c-9b64033040cd
-  Args:
-    source: Infante_Carlos
-    type: :Person
-  AssignClass (9cb7650e-9616-484e-b963-608cc44f994c)
- Call ID: 9cb7650e-9616-484e-b963-608cc44f994c
-  Args:
-    type: :Woman
-    source: Princess_Anne_of_Orleans
-  AssignClass (f4b3f66a-0a5f-40cf-8344-9374bc2083c5)
- Call ID: f4b3f66a-0a5f-40cf-8344-9374bc2083c5
+  AssignClass (fb36bb46-bdc7-4d7d-a73b-d93e86a25caa)
+ Call ID: fb36bb46-bdc7-4d7d-a73b-d93e86a25caa
   Args:
     type: :Person
-    source: Princess_Anne_of_Orleans
-  AssignClass (f2064a13-691f-4b8b-a0a5-82c848fa73b3)
- Call ID: f2064a13-691f-4b8b-a0a5-82c848fa73b3
+    source: :Luis_de_Orleans-Braganza
+  AddLiteral (37bae3dd-1847-444a-adf7-12b1ff862201)
+ Call ID: 37bae3dd-1847-444a-adf7-12b1ff862201
   Args:
-    source: Sofia_Landaluce_y_Melgarejo
-    type: :Woman
-  AssignClass (bbbf906e-0fbf-43a9-9fa1-196a67a5e18e)
- Call ID: bbbf906e-0fbf-43a9-9fa1-196a67a5e18e
-  Args:
-    type: :Person
-    source: Sofia_Landaluce_y_Melgarejo
-  AssignClass (7d546578-a6f8-47a3-b1a3-0f7cf2d4c5fb)
- Call ID: 7d546578-a6f8-47a3-b1a3-0f7cf2d4c5fb
-  Args:
-    type: :Man
-    source: Jose_Manuel_Landaluce_y_Dominguez
-  AssignClass (5e2c70ef-7ca4-472f-a186-11b2315c0392)
- Call ID: 5e2c70ef-7ca4-472f-a186-11b2315c0392
-  Args:
-    source: Jose_Manuel_Landaluce_y_Dominguez
-    type: :Person
-  AssignClass (eadfd4c9-575c-4bd0-a30e-deae36557a91)
- Call ID: eadfd4c9-575c-4bd0-a30e-deae36557a91
-  Args:
-    type: :Woman
-    source: Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez
-  AssignClass (f109d9a8-7861-499c-9d03-8d5b4532fab6)
- Call ID: f109d9a8-7861-499c-9d03-8d5b4532fab6
-  Args:
-    type: :Person
-    source: Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez
-  AddTriple (1a97b1e1-a1b4-4b17-9c08-e7a7f645b26c)
- Call ID: 1a97b1e1-a1b4-4b17-9c08-e7a7f645b26c
-  Args:
-    relation: :hasFather
-    source: Prince_Pedro
-    target: Infante_Carlos
-  AddTriple (77b77342-e200-4715-beab-0a6c420af400)
- Call ID: 77b77342-e200-4715-beab-0a6c420af400
-  Args:
-    relation: :hasMother
-    target: Princess_Anne_of_Orleans
-    source: Prince_Pedro
-  AddTriple (30768709-0a08-4cb9-ac61-c0a5241e4b9b)
- Call ID: 30768709-0a08-4cb9-ac61-c0a5241e4b9b
-  Args:
-    relation: :hasFather
-    source: Sofia_Landaluce_y_Melgarejo
-    target: Jose_Manuel_Landaluce_y_Dominguez
-  AddTriple (7e4c0067-ea18-48f4-9781-02557829a3ce)
- Call ID: 7e4c0067-ea18-48f4-9781-02557829a3ce
-  Args:
-    target: Maria_de_las_Nieves_Blanca_Melgarejo_y_Gonzalez
-    source: Sofia_Landaluce_y_Melgarejo
-    relation: :hasMother
-  AddLiteral (dc8d0995-0639-40f0-86e4-3e246596ce8c)
- Call ID: dc8d0995-0639-40f0-86e4-3e246596ce8c
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1968
-    source: Prince_Pedro
+    literal_value: 1878
     relation: :hasBirthYear
-  AddLiteral (9636d555-4681-4d07-95c1-2dfdede39a85)
- Call ID: 9636d555-4681-4d07-95c1-2dfdede39a85
-  Args:
-    relation: :hasBirthYear
-    source: Infante_Carlos
-    literal_value: 1938
     literal_type: xsd:integer
-  AddLiteral (5b5c447a-ff05-41a2-9266-9d46da03f46a)
- Call ID: 5b5c447a-ff05-41a2-9266-9d46da03f46a
+    source: :Luis_de_Orleans-Braganza
+  AddLiteral (c8c0adee-8dea-45f4-afb9-1bf1c4df2642)
+ Call ID: c8c0adee-8dea-45f4-afb9-1bf1c4df2642
   Args:
     literal_type: xsd:integer
-    literal_value: 2015
-    source: Infante_Carlos
     relation: :hasDeathYear
-  AddLiteral (134b0a80-991f-437d-9558-c9bc34cc4d58)
- Call ID: 134b0a80-991f-437d-9558-c9bc34cc4d58
+    source: :Luis_de_Orleans-Braganza
+    literal_value: 1920
+  AddLiteral (285cb717-07b0-48af-94f5-52979b777213)
+ Call ID: 285cb717-07b0-48af-94f5-52979b777213
   Args:
-    literal_value: 1973
+    source: :Luis_de_Orleans-Braganza
+    literal_type: xsd:string
+    relation: :knownAs
+    literal_value: the Perfect Prince
+  AssignClass (24534077-d4f0-4778-8dee-f107e622303f)
+ Call ID: 24534077-d4f0-4778-8dee-f107e622303f
+  Args:
+    source: :Isabel_Princess_Imperial_of_Brazil
+    type: :Woman
+  AssignClass (83d79503-e15e-4953-9dac-750f3a71b2c1)
+ Call ID: 83d79503-e15e-4953-9dac-750f3a71b2c1
+  Args:
+    source: :Isabel_Princess_Imperial_of_Brazil
+    type: :Person
+  AssignClass (7ae395f4-da14-47d5-9123-b17708656eba)
+ Call ID: 7ae395f4-da14-47d5-9123-b17708656eba
+  Args:
+    source: :Gaston_Count_of_Eu
+    type: :Man
+  AssignClass (f16495f6-0bc4-49d7-9111-25853c74b8d5)
+ Call ID: f16495f6-0bc4-49d7-9111-25853c74b8d5
+  Args:
+    source: :Gaston_Count_of_Eu
+    type: :Person
+  AddTriple (7cbdb106-b919-448d-8d39-84b2bed8f64b)
+ Call ID: 7cbdb106-b919-448d-8d39-84b2bed8f64b
+  Args:
+    relation: :hasFather
+    source: :Luis_de_Orleans-Braganza
+    target: :Gaston_Count_of_Eu
+  AddTriple (4a31073e-48b0-4796-b812-4c54a210210b)
+ Call ID: 4a31073e-48b0-4796-b812-4c54a210210b
+  Args:
+    target: :Isabel_Princess_Imperial_of_Brazil
+    source: :Luis_de_Orleans-Braganza
+    relation: :hasMother
+  AssignClass (1ef90c56-56cd-4095-b2da-0213cf08771a)
+ Call ID: 1ef90c56-56cd-4095-b2da-0213cf08771a
+  Args:
+    source: :Pedro_of_Orleans-Braganza
+    type: :Man
+  AssignClass (3d022c06-be20-4634-9d9c-8657aefd659d)
+ Call ID: 3d022c06-be20-4634-9d9c-8657aefd659d
+  Args:
+    source: :Pedro_of_Orleans-Braganza
+    type: :Person
+  AddTriple (19421a2e-42d6-4bef-8ce2-980132d69087)
+ Call ID: 19421a2e-42d6-4bef-8ce2-980132d69087
+  Args:
+    target: :Luis_de_Orleans-Braganza
+    relation: :isBrotherOf
+    source: :Pedro_of_Orleans-Braganza
+  AssignClass (23f0d780-5db0-49f7-87ae-bb234fa86b28)
+ Call ID: 23f0d780-5db0-49f7-87ae-bb234fa86b28
+  Args:
+    source: :Antonio_of_Orleans-Braganza
+    type: :Man
+  AssignClass (1275aa90-0574-4d84-b3fd-ca76b90d8486)
+ Call ID: 1275aa90-0574-4d84-b3fd-ca76b90d8486
+  Args:
+    type: :Person
+    source: :Antonio_of_Orleans-Braganza
+  AddTriple (42ba1d07-5a7c-4219-8a57-496327db0e66)
+ Call ID: 42ba1d07-5a7c-4219-8a57-496327db0e66
+  Args:
+    source: :Antonio_of_Orleans-Braganza
+    relation: :isBrotherOf
+    target: :Luis_de_Orleans-Braganza
+  AssignClass (bd0f8450-d97e-42a7-87d6-826b9cfd3279)
+ Call ID: bd0f8450-d97e-42a7-87d6-826b9cfd3279
+  Args:
+    source: :Maria_Pia_of_Bourbon-Two_Sicilies
+    type: :Woman
+  AssignClass (9ba234e8-8044-4eb5-b3fd-b1d4ff3b7cbd)
+ Call ID: 9ba234e8-8044-4eb5-b3fd-b1d4ff3b7cbd
+  Args:
+    source: :Maria_Pia_of_Bourbon-Two_Sicilies
+    type: :Person
+  AddTriple (3c7fb8f2-e37d-4c27-be87-e9f6683e8b18)
+ Call ID: 3c7fb8f2-e37d-4c27-be87-e9f6683e8b18
+  Args:
+    source: :Luis_de_Orleans-Braganza
+    relation: :hasRelation
+    target: :Maria_Pia_of_Bourbon-Two_Sicilies
+  AddLiteral (74883c73-3627-492f-a677-e494aac9c51a)
+ Call ID: 74883c73-3627-492f-a677-e494aac9c51a
+  Args:
     literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Sofia_Landaluce_y_Melgarejo
-  AddLiteral (415dcb8e-d553-469d-b49e-5f2c878071f4)
- Call ID: 415dcb8e-d553-469d-b49e-5f2c878071f4
-  Args:
-    source: Prince_Pedro
     relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 2001
-  Finish (b558decb-5d03-4c4e-be63-0be24d98108f)
- Call ID: b558decb-5d03-4c4e-be63-0be24d98108f
+    source: :Luis_de_Orleans-Braganza
+    literal_value: 1908
+  AssignClass (08bf1499-71f9-4c70-b070-1d596ec4f80c)
+ Call ID: 08bf1499-71f9-4c70-b070-1d596ec4f80c
+  Args:
+    type: :Man
+    source: :Pedro_Henrique_of_Orleans-Braganza
+  AssignClass (00575613-557b-49c4-b0db-bd1b6b131552)
+ Call ID: 00575613-557b-49c4-b0db-bd1b6b131552
+  Args:
+    type: :Person
+    source: :Pedro_Henrique_of_Orleans-Braganza
+  AddTriple (7e80ace0-fa00-490b-a011-ad8490d324ca)
+ Call ID: 7e80ace0-fa00-490b-a011-ad8490d324ca
+  Args:
+    relation: :hasFather
+    source: :Pedro_Henrique_of_Orleans-Braganza
+    target: :Luis_de_Orleans-Braganza
+  AddTriple (963cdbbb-39ea-4b80-ad50-42c75aff2622)
+ Call ID: 963cdbbb-39ea-4b80-ad50-42c75aff2622
+  Args:
+    target: :Maria_Pia_of_Bourbon-Two_Sicilies
+    source: :Pedro_Henrique_of_Orleans-Braganza
+    relation: :hasMother
+  AssignClass (6cfbfb17-4714-4c83-a6c3-9fd21782109d)
+ Call ID: 6cfbfb17-4714-4c83-a6c3-9fd21782109d
+  Args:
+    source: :Luis_Gastao_of_Orleans-Braganza
+    type: :Man
+  AssignClass (6f7a75e9-80f9-4cb2-b0b2-dc4b8632b078)
+ Call ID: 6f7a75e9-80f9-4cb2-b0b2-dc4b8632b078
+  Args:
+    type: :Person
+    source: :Luis_Gastao_of_Orleans-Braganza
+  AddTriple (cd809f3a-34a7-4dec-badb-96cc7bda2a6c)
+ Call ID: cd809f3a-34a7-4dec-badb-96cc7bda2a6c
+  Args:
+    relation: :hasFather
+    source: :Luis_Gastao_of_Orleans-Braganza
+    target: :Luis_de_Orleans-Braganza
+  AddTriple (d9e6cb17-6011-46c2-9279-b13f1951ad4e)
+ Call ID: d9e6cb17-6011-46c2-9279-b13f1951ad4e
+  Args:
+    target: :Maria_Pia_of_Bourbon-Two_Sicilies
+    relation: :hasMother
+    source: :Luis_Gastao_of_Orleans-Braganza
+  AssignClass (a113c124-2be9-472c-bbf7-320018e5d5c0)
+ Call ID: a113c124-2be9-472c-bbf7-320018e5d5c0
+  Args:
+    source: :Pia_Maria_of_Orleans-Braganza
+    type: :Woman
+  AssignClass (cd7d1652-a941-4d42-9963-2d685c3ecf45)
+ Call ID: cd7d1652-a941-4d42-9963-2d685c3ecf45
+  Args:
+    type: :Person
+    source: :Pia_Maria_of_Orleans-Braganza
+  AddTriple (48413ec8-62e6-4757-be06-33fbe4106451)
+ Call ID: 48413ec8-62e6-4757-be06-33fbe4106451
+  Args:
+    target: :Luis_de_Orleans-Braganza
+    source: :Pia_Maria_of_Orleans-Braganza
+    relation: :hasFather
+  AddTriple (f0768a6a-fbbc-4312-8688-fad4d3b67723)
+ Call ID: f0768a6a-fbbc-4312-8688-fad4d3b67723
+  Args:
+    relation: :hasMother
+    source: :Pia_Maria_of_Orleans-Braganza
+    target: :Maria_Pia_of_Bourbon-Two_Sicilies
+  AssignClass (b66ca08d-3350-441f-b336-a7dbe9604699)
+ Call ID: b66ca08d-3350-441f-b336-a7dbe9604699
+  Args:
+    source: :Teresa_Cristina_of_the_Two_Sicilies
+    type: :Woman
+  AssignClass (a4748f31-d1bd-48d3-9c70-1872ffd7fc33)
+ Call ID: a4748f31-d1bd-48d3-9c70-1872ffd7fc33
+  Args:
+    type: :Person
+    source: :Teresa_Cristina_of_the_Two_Sicilies
+  AddTriple (c9a9a5fd-4ed4-4806-bc2b-ce97dbd91de2)
+ Call ID: c9a9a5fd-4ed4-4806-bc2b-ce97dbd91de2
+  Args:
+    target: :Teresa_Cristina_of_the_Two_Sicilies
+    relation: :hasMother
+    source: :Isabel_Princess_Imperial_of_Brazil
+  Finish (84b45718-781d-4f0c-8fa7-76799501a28a)
+ Call ID: 84b45718-781d-4f0c-8fa7-76799501a28a
   Args:

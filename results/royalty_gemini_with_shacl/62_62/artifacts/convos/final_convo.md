@@ -87,15 +87,10 @@ Please update the Knowledge Graph based on the provided data.
 ### Input Text:
 Paul (Greek: Παύλος, romanized: Pavlos; 14 December 1901 – 6 March 1964) was King of Greece from 1 April 1947 until his death on 6 March 1964.
 Paul was born in Athens as the third son of Crown Prince Constantine and Crown Princess Sophia of Greece.
-In London, Paul had an affair with his first cousin and his first love, Princess Nina Georgievna of Russia, who would eventually reject his marriage proposal.
 At the 1936 Berlin Olympic Games, Paul successfully proposed to Frederica of Hanover, whom he had been seeing regularly for the past year.
-However, Paul's engagement to a German princess received a mixed reaction in Greece, especially since Adolf Hitler attempted to include Nazi swastika flags at their wedding ceremony.
-Paul was forced out of Greece with his family during World War II when Greece fell to the Axis Powers.
-When George died in 1947, Paul succeeded his brother and became the King of Greece.
 Though Paul successfully secured money from the Marshall Plan to fund recovery and infrastructure projects, he was criticised for limiting democracy when the new 1952 Greek constitution gave extensive powers to the monarch.
 He was succeeded by his only son, who became Constantine II.
 Paul had three children: Queen Sofía of Spain, Constantine II of Greece, and Princess Irene.
-Paul was also a first cousin of Prince Philip, Duke of Edinburgh.
 Early life
 
 Paul was born on 14 December  1901 at the Tatoi Palace in Attica north of Athens, the third son of Crown Prince Constantine and his wife, Princess Sophia of Prussia.
@@ -163,20 +158,15 @@ Tatoi told the press that George and the royal family would be taking an officia
 George and Elisabeth left the country first, followed by Paul and other members of the royal family on 19 December 1923, residing in Bucharest.
 Two months after Venizelos' government was proclaimed, the Kingdom of Greece was replaced by the Second Hellenic Republic on 25 March 1924, Greece's national independence day.
 Two and a half weeks later, the democratically conducted 1924 Greek republic referendum occurred, confirming the abolition of the monarchy and officially removing George as Greece's head of state and Paul as the Crown Prince of Greece.
-The Greek royal family became stateless, however, Paul was granted a Danish passport from his cousin, Christian X of Denmark.
 In Bucharest, where the royal family remained, Paul was welcomed by his sister, Princess Helen, who was unhappily married to the future Carol II of Romania.
 Not too long after arriving in Romania, Paul departed to stay with his mother and sisters, Princess Irene and Princess Katherine, at the Viva Bobolina in Fiesole.
 According to historian Stelios Hourmouzios, Henry Drummond Wolff, and according to historian Ricardo Mateos Sáinz de Medrano, Alphonse d'Orléans, helped Paul become hired as an apprentice mechanic for Armstrong Siddeley.
 Paul's family discovered an affair between him and Princess Nina Georgievna of Russia, but he claimed that he had fallen in love.
 Nina was the elder daughter of Paul's aunt, Maria, and Grand Duke George Mikhailovich of Russia, making her Paul's first cousin.
 However, Nina rejected his later marriage proposal, choosing instead to marry Prince Paul Aleksandrovich Chavchavadze in 1922.
-This was because Paul's brother, Alexander, had married a commoner Aspasia Manos and the birth of their child took years to be legitimized.
 Paul became pressured as the responsibility of continuing the family's lineage increased due to George and Elisabeth's sterility.
 In Spring 1930 Paul met Captain Frederick Wessel, a wealthy annuitant of Danish origin.
-The yacht travelled along the French and Italian coastline for three weeks, before landing in Corfu on 2 August 1930.
-Paul and the rest of the group traveled around the Greek islands for the next month and a half, arriving through the Gulf of Patras on 5 August, Corinth on 7 August, the port of Phalerum in Athens in Vouliagmeni on 19 August, through Chalki, Euboea, Skiathos and Skyros by 25 August, Kymi on 26 August, through Andros, Syros, Santorini and Crete by 29 August, and then finally in Navarino and Argostoli by 12 September.
 While illegally travelling through Greece, Paul visited his former residences, Mon Repos, the former royal palace in Athens, and Tatoi.
-Paul soon became closer to his three sisters and established a home with Helen, who had bought the Bobolina villa after divorcing Carol II of Romania.
 Restoration of the monarchy
 
 The Second Hellenic Republic had tired most Greeks out, with, in only eleven years, 23 governments, 13 coup d'états and one dictatorship.
@@ -202,6 +192,7 @@ The next year, Frederica met Paul in Florence while studying at the American Col
 Frederica stayed with Paul's sisters during this time.
 Paul's sisters were highly supportive of the relationship and attempted to encourage it, before Paul wrote to Frederica's parents, Victoria Louise and Ernest Augustus, Duke of Brunswick, and asked for their consent to marry her.
 However, Ernest Augustus declined because of Frederica's young age.
+Mateos Sáinz de Medrano describes Paul as having been "highly disappointed" at Ernest Augustus's response, but he did not give up on finding a spouse.
 Although it is reported that Paul was looking for a Greek commoner to marry, he searched and found Frederica during his trip to Germany for the 1936 Berlin Olympic Games.
 He went to the Königinvilla in Gmunden and asked Frederica's parents again if he could marry her, to which they finally agreed.
 Paul and Frederica's engagement was soon announced to the public.
@@ -371,6 +362,8 @@ On 9 January 1938, Paul married Princess Frederica of Hanover, his first cousin 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -386,39 +379,9 @@ On 9 January 1938, Paul married Princess Frederica of Hanover, his first cousin 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -433,6 +396,23 @@ On 9 January 1938, Paul married Princess Frederica of Hanover, his first cousin 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -450,6 +430,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -517,29 +512,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -548,6 +535,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -560,6 +555,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -568,17 +565,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -606,6 +605,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -621,279 +704,216 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (780938cd-dfd9-4438-8f74-0eef3fda9010)
- Call ID: 780938cd-dfd9-4438-8f74-0eef3fda9010
+  AssignClass (eaaabed0-6eec-4ee2-849c-a282933ac5f7)
+ Call ID: eaaabed0-6eec-4ee2-849c-a282933ac5f7
   Args:
-    source: Paul
     type: :Man
-  AddLiteral (eb14d013-a232-4b91-8aaf-828edd5d1b26)
- Call ID: eb14d013-a232-4b91-8aaf-828edd5d1b26
+    source: Paul_of_Greece
+  AssignClass (8c460392-b805-430e-8231-0550fe4d15ef)
+ Call ID: 8c460392-b805-430e-8231-0550fe4d15ef
   Args:
+    source: Paul_of_Greece
+    type: :Person
+  AddLiteral (ee0bc5c8-3f88-415a-be09-1e7b596c7055)
+ Call ID: ee0bc5c8-3f88-415a-be09-1e7b596c7055
+  Args:
+    literal_type: xsd:integer
     relation: :hasBirthYear
+    source: Paul_of_Greece
     literal_value: 1901
-    source: Paul
-    literal_type: xsd:integer
-  AddLiteral (e9a4f62c-a628-4d3c-9bc0-1ec4085b59b3)
- Call ID: e9a4f62c-a628-4d3c-9bc0-1ec4085b59b3
+  AddLiteral (e764ce30-0202-4331-ba51-e6d5517601b0)
+ Call ID: e764ce30-0202-4331-ba51-e6d5517601b0
   Args:
-    literal_type: xsd:integer
-    source: Paul
     literal_value: 1964
+    source: Paul_of_Greece
     relation: :hasDeathYear
-  AssignClass (87823f8e-56e2-4461-ad7e-7c67f48ece5d)
- Call ID: 87823f8e-56e2-4461-ad7e-7c67f48ece5d
+    literal_type: xsd:integer
+  AssignClass (22eddae7-c179-4670-9420-0b1701860770)
+ Call ID: 22eddae7-c179-4670-9420-0b1701860770
   Args:
     type: :Man
-    source: Constantine_I
-  AssignClass (8b74f3db-ddc5-40e1-a97e-02a9c026d9d4)
- Call ID: 8b74f3db-ddc5-40e1-a97e-02a9c026d9d4
+    source: Constantine_I_of_Greece
+  AssignClass (2f1e7e5a-2a75-4480-8b36-117d7eb732d4)
+ Call ID: 2f1e7e5a-2a75-4480-8b36-117d7eb732d4
+  Args:
+    source: Constantine_I_of_Greece
+    type: :Person
+  AssignClass (b796ebbc-87fe-4bfc-9492-5ee55e5110e5)
+ Call ID: b796ebbc-87fe-4bfc-9492-5ee55e5110e5
   Args:
     type: :Woman
     source: Sophia_of_Prussia
-  AddTriple (eb758248-64fe-42f8-b569-7f17767fcff9)
- Call ID: eb758248-64fe-42f8-b569-7f17767fcff9
+  AssignClass (53a7a9cc-5f20-443d-b8f1-2e90cde46b02)
+ Call ID: 53a7a9cc-5f20-443d-b8f1-2e90cde46b02
   Args:
-    target: Constantine_I
+    type: :Person
+    source: Sophia_of_Prussia
+  AddTriple (3456c15b-613a-4aa3-b2fc-90ebb26b627f)
+ Call ID: 3456c15b-613a-4aa3-b2fc-90ebb26b627f
+  Args:
+    source: Paul_of_Greece
+    target: Constantine_I_of_Greece
     relation: :hasFather
-    source: Paul
-  AddTriple (97c93a7f-b23e-4997-aefc-01d9c66b60a6)
- Call ID: 97c93a7f-b23e-4997-aefc-01d9c66b60a6
+  AddTriple (de9012fd-cb73-4f53-8d17-90b542721ccc)
+ Call ID: de9012fd-cb73-4f53-8d17-90b542721ccc
   Args:
-    target: Sophia_of_Prussia
+    source: Paul_of_Greece
     relation: :hasMother
-    source: Paul
-  AssignClass (9ccdc12d-4f5e-4b21-9b28-ec2638803b90)
- Call ID: 9ccdc12d-4f5e-4b21-9b28-ec2638803b90
-  Args:
-    source: George_II
-    type: :Man
-  AddTriple (2efc72be-7e73-4607-a38a-b6b20d75446f)
- Call ID: 2efc72be-7e73-4607-a38a-b6b20d75446f
-  Args:
-    source: Paul
-    target: George_II
-    relation: :hasBrother
-  AssignClass (afa54047-11b2-4f0f-acf0-7cdb13973c9b)
- Call ID: afa54047-11b2-4f0f-acf0-7cdb13973c9b
-  Args:
-    type: :Man
-    source: Alexander_of_Greece
-  AddTriple (5b8c5967-5e55-4aa0-98b6-4dd90f51aec4)
- Call ID: 5b8c5967-5e55-4aa0-98b6-4dd90f51aec4
-  Args:
-    relation: :hasBrother
-    target: Alexander_of_Greece
-    source: Paul
-  AssignClass (06fd08ac-b132-4e03-93ec-9ddedcb7033f)
- Call ID: 06fd08ac-b132-4e03-93ec-9ddedcb7033f
+    target: Sophia_of_Prussia
+  AssignClass (db360132-2c28-4b5a-809e-1868973ca7de)
+ Call ID: db360132-2c28-4b5a-809e-1868973ca7de
   Args:
     type: :Woman
     source: Frederica_of_Hanover
-  AddTriple (3ea5fa0e-469b-44f2-b6bf-f24adc972cc8)
- Call ID: 3ea5fa0e-469b-44f2-b6bf-f24adc972cc8
+  AssignClass (3e18d2dc-ee3a-4acc-b9a0-1f2c835051a9)
+ Call ID: 3e18d2dc-ee3a-4acc-b9a0-1f2c835051a9
   Args:
-    source: Paul
-    relation: :hasRelation
+    source: Frederica_of_Hanover
+    type: :Person
+  AddTriple (1ef56eed-9856-4329-a70f-675c48469925)
+ Call ID: 1ef56eed-9856-4329-a70f-675c48469925
+  Args:
     target: Frederica_of_Hanover
-  AddLiteral (1705913a-c0f4-4ca1-bd4d-41cec2883f8f)
- Call ID: 1705913a-c0f4-4ca1-bd4d-41cec2883f8f
+    relation: :hasRelation
+    source: Paul_of_Greece
+  AddLiteral (fd8c5282-7031-4298-9f19-2cd122f0f1d1)
+ Call ID: fd8c5282-7031-4298-9f19-2cd122f0f1d1
   Args:
     literal_type: xsd:integer
-    source: Paul
-    literal_value: 1938
     relation: :hasMarriageYear
-  AssignClass (96220eee-12b7-4e8f-8bd1-0b4a4f6dc084)
- Call ID: 96220eee-12b7-4e8f-8bd1-0b4a4f6dc084
+    literal_value: 1938
+    source: Paul_of_Greece
+  AssignClass (f186dfed-d526-4756-a809-cfea5988e198)
+ Call ID: f186dfed-d526-4756-a809-cfea5988e198
+  Args:
+    source: Constantine_II_of_Greece
+    type: :Man
+  AssignClass (030eda25-14d2-4635-a6fb-ce53cac260ed)
+ Call ID: 030eda25-14d2-4635-a6fb-ce53cac260ed
+  Args:
+    source: Constantine_II_of_Greece
+    type: :Person
+  AddTriple (532a4730-6e55-4a82-af6e-8c757312da20)
+ Call ID: 532a4730-6e55-4a82-af6e-8c757312da20
+  Args:
+    target: Paul_of_Greece
+    relation: :isSonOf
+    source: Constantine_II_of_Greece
+  AssignClass (d6e55742-660d-4e94-bcdc-c9e6797464b1)
+ Call ID: d6e55742-660d-4e94-bcdc-c9e6797464b1
+  Args:
+    type: :Woman
+    source: Sofia_of_Spain
+  AssignClass (788b3f46-635f-45bb-b4d5-d12c5139890e)
+ Call ID: 788b3f46-635f-45bb-b4d5-d12c5139890e
+  Args:
+    type: :Person
+    source: Sofia_of_Spain
+  AddTriple (d0280819-bd11-45ba-aaf8-4144bcbb515c)
+ Call ID: d0280819-bd11-45ba-aaf8-4144bcbb515c
   Args:
     source: Sofia_of_Spain
-    type: :Woman
-  AssignClass (14ccda4f-923f-43d2-b382-9a77ab54d477)
- Call ID: 14ccda4f-923f-43d2-b382-9a77ab54d477
+    relation: :isDaughterOf
+    target: Paul_of_Greece
+  AssignClass (a8bc4883-262f-4bb8-bb91-9b03b661eb74)
+ Call ID: a8bc4883-262f-4bb8-bb91-9b03b661eb74
   Args:
-    type: :Man
-    source: Constantine_II
-  AssignClass (9ca10eb5-6516-4166-8a9f-478eab6f9064)
- Call ID: 9ca10eb5-6516-4166-8a9f-478eab6f9064
-  Args:
-    type: :Woman
     source: Irene_of_Greece
-  AddTriple (2c1192bd-4e66-4e80-ba40-496739fba124)
- Call ID: 2c1192bd-4e66-4e80-ba40-496739fba124
-  Args:
-    source: Paul
-    target: Sofia_of_Spain
-    relation: :hasDaughter
-  AddTriple (a86843be-1f24-4ec3-837f-383f4796d881)
- Call ID: a86843be-1f24-4ec3-837f-383f4796d881
-  Args:
-    source: Paul
-    relation: :hasSon
-    target: Constantine_II
-  AddTriple (9f98b498-4c9f-4013-862d-439500d0888a)
- Call ID: 9f98b498-4c9f-4013-862d-439500d0888a
-  Args:
-    source: Paul
-    target: Irene_of_Greece
-    relation: :hasDaughter
-  AssignClass (9684f0c2-e97f-42b6-8939-d13d8aef8381)
- Call ID: 9684f0c2-e97f-42b6-8939-d13d8aef8381
-  Args:
-    source: Nina_Georgievna
     type: :Woman
-  AddTriple (d27587bc-394f-4a08-90f0-75de8c4276a1)
- Call ID: d27587bc-394f-4a08-90f0-75de8c4276a1
+  AssignClass (6df41511-4af1-42f7-8767-10c2ede0ddfa)
+ Call ID: 6df41511-4af1-42f7-8767-10c2ede0ddfa
   Args:
-    target: Nina_Georgievna
-    relation: :hasRelation
-    source: Paul
-  AssignClass (c2a3ff4f-d297-4ddb-96a6-5482226c9604)
- Call ID: c2a3ff4f-d297-4ddb-96a6-5482226c9604
+    source: Irene_of_Greece
+    type: :Person
+  AddTriple (6608aaae-28b6-480d-aa55-da26c95af42e)
+ Call ID: 6608aaae-28b6-480d-aa55-da26c95af42e
   Args:
-    type: :Man
-    source: Prince_Philip
-  AddTriple (cded25cf-aa2f-427c-8716-0caf4f648969)
- Call ID: cded25cf-aa2f-427c-8716-0caf4f648969
-  Args:
-    source: Paul
-    target: Prince_Philip
-    relation: :hasRelation
-  AssignClass (42323d36-073f-4b0d-a73b-f3d245f28c93)
- Call ID: 42323d36-073f-4b0d-a73b-f3d245f28c93
+    source: Irene_of_Greece
+    relation: :isDaughterOf
+    target: Paul_of_Greece
+  AssignClass (6d71ce43-a1f2-467d-9012-d97ee610cfa2)
+ Call ID: 6d71ce43-a1f2-467d-9012-d97ee610cfa2
   Args:
     source: George_I_of_Greece
     type: :Man
-  AddTriple (4493be79-2636-42c7-b329-4d4b6dc98af8)
- Call ID: 4493be79-2636-42c7-b329-4d4b6dc98af8
+  AssignClass (e553cfa4-121c-44d1-ba69-48529bb85030)
+ Call ID: e553cfa4-121c-44d1-ba69-48529bb85030
   Args:
-    target: George_I_of_Greece
+    type: :Person
+    source: George_I_of_Greece
+  AddTriple (52e5669b-4e90-4780-88b5-62ce5a4056e8)
+ Call ID: 52e5669b-4e90-4780-88b5-62ce5a4056e8
+  Args:
+    source: Constantine_I_of_Greece
     relation: :hasFather
-    source: Constantine_I
-  AssignClass (30df3af2-77bc-4152-82e2-5207d23052ac)
- Call ID: 30df3af2-77bc-4152-82e2-5207d23052ac
+    target: George_I_of_Greece
+  AssignClass (8e1b2fad-0c68-4278-bfb3-532502e35c03)
+ Call ID: 8e1b2fad-0c68-4278-bfb3-532502e35c03
   Args:
-    source: Olga_Constantinovna
+    type: :Man
+    source: Alexander_of_Greece
+  AssignClass (a13cbb98-913b-4194-a74d-4973f1d171f5)
+ Call ID: a13cbb98-913b-4194-a74d-4973f1d171f5
+  Args:
+    source: Alexander_of_Greece
+    type: :Person
+  AddTriple (fd570774-18bd-4049-bbfb-dacf1f8ead42)
+ Call ID: fd570774-18bd-4049-bbfb-dacf1f8ead42
+  Args:
+    target: Paul_of_Greece
+    relation: :isBrotherOf
+    source: Alexander_of_Greece
+  AssignClass (ba3b2c11-34b8-4c6a-87fa-51dbeacb4439)
+ Call ID: ba3b2c11-34b8-4c6a-87fa-51dbeacb4439
+  Args:
+    source: George_II_of_Greece
+    type: :Man
+  AssignClass (f2af572f-21c7-44be-91d7-e2431dd3df71)
+ Call ID: f2af572f-21c7-44be-91d7-e2431dd3df71
+  Args:
+    type: :Person
+    source: George_II_of_Greece
+  AddTriple (e484ab11-f253-4d94-9b30-17db340013ff)
+ Call ID: e484ab11-f253-4d94-9b30-17db340013ff
+  Args:
+    source: George_II_of_Greece
+    target: Paul_of_Greece
+    relation: :isBrotherOf
+  AssignClass (d99ff075-3aa7-421e-aa58-b2745ce67469)
+ Call ID: d99ff075-3aa7-421e-aa58-b2745ce67469
+  Args:
     type: :Woman
-  AddTriple (1798064d-5a2a-490e-97c1-b16fc12aa464)
- Call ID: 1798064d-5a2a-490e-97c1-b16fc12aa464
+    source: Helen_of_Greece
+  AssignClass (104515b1-3e28-47d8-981d-294931d65825)
+ Call ID: 104515b1-3e28-47d8-981d-294931d65825
   Args:
-    source: Constantine_I
-    target: Olga_Constantinovna
-    relation: :hasMother
-  AssignClass (ba4eb018-b134-4a03-a20a-22ac68a77855)
- Call ID: ba4eb018-b134-4a03-a20a-22ac68a77855
-  Args:
-    source: Margaret_of_Prussia
-    type: :Woman
-  AddTriple (48b8f8ac-4cca-4270-9f50-ce7758ba9af4)
- Call ID: 48b8f8ac-4cca-4270-9f50-ce7758ba9af4
-  Args:
-    relation: :hasSister
-    target: Margaret_of_Prussia
-    source: Sophia_of_Prussia
-  AssignClass (123fbf72-53e8-4c37-9323-7780ddc93321)
- Call ID: 123fbf72-53e8-4c37-9323-7780ddc93321
+    type: :Person
+    source: Helen_of_Greece
+  AddTriple (d2aba645-2bf6-4554-9a2f-483b90f185de)
+ Call ID: d2aba645-2bf6-4554-9a2f-483b90f185de
   Args:
     source: Helen_of_Greece
+    target: Paul_of_Greece
+    relation: :isSisterOf
+  AssignClass (2cd277de-2218-4620-95bc-da902188b415)
+ Call ID: 2cd277de-2218-4620-95bc-da902188b415
+  Args:
+    source: Princess_Katherine
     type: :Woman
-  AssignClass (f679b1cf-416a-4c32-b988-b3ed438f05c6)
- Call ID: f679b1cf-416a-4c32-b988-b3ed438f05c6
+  AssignClass (e46dee2d-5b73-4bb2-a30e-e220d4a0e5e0)
+ Call ID: e46dee2d-5b73-4bb2-a30e-e220d4a0e5e0
   Args:
-    type: :Woman
-    source: Katherine_of_Greece
-  AddTriple (38df3dc3-e363-4fc5-8d47-d29765b7109b)
- Call ID: 38df3dc3-e363-4fc5-8d47-d29765b7109b
+    source: Princess_Katherine
+    type: :Person
+  AddTriple (d50ea9a3-f9f6-4f99-be73-591f52df3b21)
+ Call ID: d50ea9a3-f9f6-4f99-be73-591f52df3b21
   Args:
-    relation: :hasSister
-    target: Helen_of_Greece
-    source: Paul
-  AddTriple (ce2d4861-b4af-4cf0-a58a-233b4ee63dc5)
- Call ID: ce2d4861-b4af-4cf0-a58a-233b4ee63dc5
+    relation: :isSisterOf
+    target: Paul_of_Greece
+    source: Princess_Katherine
+  Finish (a63ceed3-6834-43aa-b31f-512f311869d7)
+ Call ID: a63ceed3-6834-43aa-b31f-512f311869d7
   Args:
-    relation: :hasSister
-    target: Katherine_of_Greece
-    source: Paul
-  AssignClass (7eb34e3a-ee0b-482e-81bf-50ffbacc95f8)
- Call ID: 7eb34e3a-ee0b-482e-81bf-50ffbacc95f8
-  Args:
-    source: Maria_of_Russia
-    type: :Woman
-  AddTriple (d0203f26-665b-4971-a894-16050f429f39)
- Call ID: d0203f26-665b-4971-a894-16050f429f39
-  Args:
-    source: Nina_Georgievna
-    relation: :hasMother
-    target: Maria_of_Russia
-  AssignClass (cba21f54-5870-4ae0-aa93-5d7c01945125)
- Call ID: cba21f54-5870-4ae0-aa93-5d7c01945125
-  Args:
-    type: :Man
-    source: George_Mikhailovich
-  AddTriple (c9f51239-fab7-4923-b4c1-d2b88ec0b9d9)
- Call ID: c9f51239-fab7-4923-b4c1-d2b88ec0b9d9
-  Args:
-    source: Nina_Georgievna
-    target: George_Mikhailovich
-    relation: :hasFather
-  AssignClass (1fd24f46-9783-43e3-b401-bf2307728320)
- Call ID: 1fd24f46-9783-43e3-b401-bf2307728320
-  Args:
-    source: Alice_of_Battenberg
-    type: :Woman
-  AddTriple (7bd4809a-d997-4739-bacf-19243dc4c456)
- Call ID: 7bd4809a-d997-4739-bacf-19243dc4c456
-  Args:
-    target: Alice_of_Battenberg
-    relation: :hasMother
-    source: Prince_Philip
-  AssignClass (75429789-6977-439d-9f3d-de4ae5e3de40)
- Call ID: 75429789-6977-439d-9f3d-de4ae5e3de40
-  Args:
-    type: :Woman
-    source: Victoria_Louise
-  AddTriple (b7137fab-233a-4bfc-aeb8-753a0b43f22f)
- Call ID: b7137fab-233a-4bfc-aeb8-753a0b43f22f
-  Args:
-    target: Victoria_Louise
-    relation: :hasMother
-    source: Frederica_of_Hanover
-  AssignClass (527bf045-52c2-4810-a2b0-6d99e1b0cb49)
- Call ID: 527bf045-52c2-4810-a2b0-6d99e1b0cb49
-  Args:
-    type: :Man
-    source: Ernest_Augustus_of_Brunswick
-  AddTriple (1892b106-10b8-4cb5-a39c-b404f4e7daf7)
- Call ID: 1892b106-10b8-4cb5-a39c-b404f4e7daf7
-  Args:
-    relation: :hasFather
-    target: Ernest_Augustus_of_Brunswick
-    source: Frederica_of_Hanover
-  Finish (2dbec21e-2254-4e77-850e-ffeff994ce19)
- Call ID: 2dbec21e-2254-4e77-850e-ffeff994ce19
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1050,70 +1070,55 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Paul a :Man ;
+  data:Alexander_of_Greece a :Man,
+          :Person ;
+      :isBrotherOf data:Paul_of_Greece .
+
+  data:Constantine_II_of_Greece a :Man,
+          :Person ;
+      :isSonOf data:Paul_of_Greece .
+
+  data:George_II_of_Greece a :Man,
+          :Person ;
+      :isBrotherOf data:Paul_of_Greece .
+
+  data:Helen_of_Greece a :Person,
+          :Woman ;
+      :isSisterOf data:Paul_of_Greece .
+
+  data:Irene_of_Greece a :Person,
+          :Woman ;
+      :isDaughterOf data:Paul_of_Greece .
+
+  data:Princess_Katherine a :Person,
+          :Woman ;
+      :isSisterOf data:Paul_of_Greece .
+
+  data:Sofia_of_Spain a :Person,
+          :Woman ;
+      :isDaughterOf data:Paul_of_Greece .
+
+  data:Constantine_I_of_Greece a :Man,
+          :Person ;
+      :hasFather data:George_I_of_Greece .
+
+  data:Frederica_of_Hanover a :Person,
+          :Woman .
+
+  data:George_I_of_Greece a :Man,
+          :Person .
+
+  data:Sophia_of_Prussia a :Person,
+          :Woman .
+
+  data:Paul_of_Greece a :Man,
+          :Person ;
       :hasBirthYear 1901 ;
-      :hasBrother data:Alexander_of_Greece,
-          data:George_II ;
-      :hasDaughter data:Irene_of_Greece,
-          data:Sofia_of_Spain ;
       :hasDeathYear 1964 ;
-      :hasFather data:Constantine_I ;
+      :hasFather data:Constantine_I_of_Greece ;
       :hasMarriageYear 1938 ;
       :hasMother data:Sophia_of_Prussia ;
-      :hasRelation data:Frederica_of_Hanover,
-          data:Nina_Georgievna,
-          data:Prince_Philip ;
-      :hasSister data:Helen_of_Greece,
-          data:Katherine_of_Greece ;
-      :hasSon data:Constantine_II .
-
-  data:Alexander_of_Greece a :Man .
-
-  data:Alice_of_Battenberg a :Woman .
-
-  data:Constantine_I a :Man ;
-      :hasFather data:George_I_of_Greece ;
-      :hasMother data:Olga_Constantinovna .
-
-  data:Constantine_II a :Man .
-
-  data:Ernest_Augustus_of_Brunswick a :Man .
-
-  data:Frederica_of_Hanover a :Woman ;
-      :hasFather data:Ernest_Augustus_of_Brunswick ;
-      :hasMother data:Victoria_Louise .
-
-  data:George_II a :Man .
-
-  data:George_I_of_Greece a :Man .
-
-  data:George_Mikhailovich a :Man .
-
-  data:Helen_of_Greece a :Woman .
-
-  data:Irene_of_Greece a :Woman .
-
-  data:Katherine_of_Greece a :Woman .
-
-  data:Margaret_of_Prussia a :Woman .
-
-  data:Maria_of_Russia a :Woman .
-
-  data:Nina_Georgievna a :Woman ;
-      :hasFather data:George_Mikhailovich ;
-      :hasMother data:Maria_of_Russia .
-
-  data:Olga_Constantinovna a :Woman .
-
-  data:Prince_Philip a :Man ;
-      :hasMother data:Alice_of_Battenberg .
-
-  data:Sofia_of_Spain a :Woman .
-
-  data:Sophia_of_Prussia a :Woman ;
-      :hasSister data:Margaret_of_Prussia .
-
-  data:Victoria_Louise a :Woman .
+      :hasRelation data:Frederica_of_Hanover .
 
 
 
@@ -1125,230 +1130,158 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (f464d150-4af0-475a-bb15-530cfba30750)
- Call ID: f464d150-4af0-475a-bb15-530cfba30750
+  ValidateShacl (33f50164-3ca7-4696-ac9d-2e74e9626a9f)
+ Call ID: 33f50164-3ca7-4696-ac9d-2e74e9626a9f
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:27
+Total violations:18
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value George_I_of_Greece for property hasFather of node Constantine_I is not classified as an Ancestor.
+      The node Paul_of_Greece is used as an ancestor for Constantine_II_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(George_I_of_Greece, :Ancestor)
+      AssignClass(node='Paul_of_Greece', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Constantine_I for property hasFather of node Paul is not classified as an Ancestor.
+      The node Constantine_I_of_Greece is used as a father for Paul_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Constantine_I, :Ancestor)
+      AssignClass(node='Constantine_I_of_Greece', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Alice_of_Battenberg for property hasMother of node Prince_Philip is not classified as an Ancestor.
+      The node George_I_of_Greece is used as a father for Constantine_I_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alice_of_Battenberg, :Ancestor)
+      AssignClass(node='George_I_of_Greece', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Olga_Constantinovna for property hasMother of node Constantine_I is not classified as an Ancestor.
+      The node Sophia_of_Prussia is used as a mother for Paul_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Olga_Constantinovna, :Ancestor)
+      AssignClass(node='Sophia_of_Prussia', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value Sophia_of_Prussia for property hasMother of node Paul is not classified as an Ancestor.
+      The node Paul_of_Greece is used as an ancestor for Constantine_II_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophia_of_Prussia, :Ancestor)
+      AssignClass(node='Paul_of_Greece', class=':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value George_I_of_Greece for property hasFather of node Constantine_I is not classified as an Ancestor.
+      The node Constantine_I_of_Greece is used as a father for Paul_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(George_I_of_Greece, :Ancestor)
+      AssignClass(node='Constantine_I_of_Greece', class=':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Constantine_I for property hasFather of node Paul is not classified as an Ancestor.
+      The node George_I_of_Greece is used as a father for Constantine_I_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Constantine_I, :Ancestor)
+      AssignClass(node='George_I_of_Greece', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value George_Mikhailovich for property hasFather of node Nina_Georgievna is not classified as an Ancestor.
+      The node Sophia_of_Prussia is used as a mother for Paul_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(George_Mikhailovich, :Ancestor)
+      AssignClass(node='Sophia_of_Prussia', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value Ernest_Augustus_of_Brunswick for property hasFather of node Frederica_of_Hanover is not classified as an Ancestor.
+      The node Paul_of_Greece is used as an ancestor for Sofia_of_Spain, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_of_Brunswick, :Ancestor)
+      AssignClass(node='Paul_of_Greece', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value Alice_of_Battenberg for property hasMother of node Prince_Philip is not classified as an Ancestor.
+      The node Paul_of_Greece is used as an ancestor for Irene_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Alice_of_Battenberg, :Ancestor)
+      AssignClass(node='Paul_of_Greece', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value Olga_Constantinovna for property hasMother of node Constantine_I is not classified as an Ancestor.
+      The node Paul_of_Greece is used as an ancestor for Constantine_II_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Olga_Constantinovna, :Ancestor)
+      AssignClass(node='Paul_of_Greece', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Sophia_of_Prussia for property hasMother of node Paul is not classified as an Ancestor.
+      The node Constantine_I_of_Greece is used as a father for Paul_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophia_of_Prussia, :Ancestor)
+      AssignClass(node='Constantine_I_of_Greece', class=':Ancestor')
 
 
   Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Maria_of_Russia for property hasMother of node Nina_Georgievna is not classified as an Ancestor.
+      The node George_I_of_Greece is used as a father for Constantine_I_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_of_Russia, :Ancestor)
+      AssignClass(node='George_I_of_Greece', class=':Ancestor')
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Victoria_Louise for property hasMother of node Frederica_of_Hanover is not classified as an Ancestor.
+      The node Sophia_of_Prussia is used as a mother for Paul_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Louise, :Ancestor)
+      AssignClass(node='Sophia_of_Prussia', class=':Ancestor')
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value George_I_of_Greece for property hasFather of node Constantine_I is not classified as an Ancestor.
+      The node Paul_of_Greece is used as an ancestor for Sofia_of_Spain, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(George_I_of_Greece, :Ancestor)
+      AssignClass(node='Paul_of_Greece', class=':Ancestor')
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value Constantine_I for property hasFather of node Paul is not classified as an Ancestor.
+      The node Paul_of_Greece is used as an ancestor for Irene_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Constantine_I, :Ancestor)
+      AssignClass(node='Paul_of_Greece', class=':Ancestor')
 
 
   Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value George_Mikhailovich for property hasFather of node Nina_Georgievna is not classified as an Ancestor.
+      The node Paul_of_Greece is used as an ancestor for Irene_of_Greece, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(George_Mikhailovich, :Ancestor)
+      AssignClass(node='Paul_of_Greece', class=':Ancestor')
 
 
   Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The value Ernest_Augustus_of_Brunswick for property hasFather of node Frederica_of_Hanover is not classified as an Ancestor.
+      The node Paul_of_Greece is used as an ancestor for Sofia_of_Spain, but it is not assigned the required ':Ancestor' class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_of_Brunswick, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Alice_of_Battenberg for property hasMother of node Prince_Philip is not classified as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Alice_of_Battenberg, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Olga_Constantinovna for property hasMother of node Constantine_I is not classified as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Olga_Constantinovna, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Sophia_of_Prussia for property hasMother of node Paul is not classified as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Sophia_of_Prussia, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Maria_of_Russia for property hasMother of node Nina_Georgievna is not classified as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_of_Russia, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Victoria_Louise for property hasMother of node Frederica_of_Hanover is not classified as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Louise, :Ancestor)
-
-
-  Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value George_Mikhailovich for property hasFather of node Nina_Georgievna is not classified as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(George_Mikhailovich, :Ancestor)
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value Ernest_Augustus_of_Brunswick for property hasFather of node Frederica_of_Hanover is not classified as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Ernest_Augustus_of_Brunswick, :Ancestor)
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Maria_of_Russia for property hasMother of node Nina_Georgievna is not classified as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_of_Russia, :Ancestor)
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value Victoria_Louise for property hasMother of node Frederica_of_Hanover is not classified as an Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Victoria_Louise, :Ancestor)
+      AssignClass(node='Paul_of_Greece', class=':Ancestor')
 
 
 
@@ -1357,66 +1290,39 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (6e9183ba-34cb-4762-8add-43a4e745a35a)
- Call ID: 6e9183ba-34cb-4762-8add-43a4e745a35a
+  AssignClass (176030dc-aa5c-44a7-a678-12e330a00fa3)
+ Call ID: 176030dc-aa5c-44a7-a678-12e330a00fa3
   Args:
+    source: Paul_of_Greece
     type: :Ancestor
+  AssignClass (e06e2fe6-14fd-4bb3-9924-f3c327855687)
+ Call ID: e06e2fe6-14fd-4bb3-9924-f3c327855687
+  Args:
+    source: Constantine_I_of_Greece
+    type: :Ancestor
+  AssignClass (b867c7c6-764f-476a-904b-f6eb3e744d93)
+ Call ID: b867c7c6-764f-476a-904b-f6eb3e744d93
+  Args:
     source: George_I_of_Greece
-  AssignClass (6c2db50a-b8fd-4450-a6de-672d5d5f7fcd)
- Call ID: 6c2db50a-b8fd-4450-a6de-672d5d5f7fcd
-  Args:
     type: :Ancestor
-    source: Constantine_I
-  AssignClass (23ad5eda-5d8f-4153-9077-2a6dd4c7ed75)
- Call ID: 23ad5eda-5d8f-4153-9077-2a6dd4c7ed75
+  AssignClass (4f1639c3-21a7-4739-a37f-8f02dcf1a9e8)
+ Call ID: 4f1639c3-21a7-4739-a37f-8f02dcf1a9e8
   Args:
-    type: :Ancestor
-    source: Alice_of_Battenberg
-  AssignClass (634097db-67aa-45fd-81b9-ff3ff276a638)
- Call ID: 634097db-67aa-45fd-81b9-ff3ff276a638
-  Args:
-    source: Olga_Constantinovna
-    type: :Ancestor
-  AssignClass (805567ff-dba1-4610-8eeb-41de053405fd)
- Call ID: 805567ff-dba1-4610-8eeb-41de053405fd
-  Args:
-    type: :Ancestor
     source: Sophia_of_Prussia
-  AssignClass (e1a8190c-50a2-4ac8-91c5-026ab285b6ad)
- Call ID: e1a8190c-50a2-4ac8-91c5-026ab285b6ad
-  Args:
-    source: George_Mikhailovich
     type: :Ancestor
-  AssignClass (a1d70220-f32d-472e-b723-948c9dd2c821)
- Call ID: a1d70220-f32d-472e-b723-948c9dd2c821
+  AssignClass (a750949f-c0e5-459d-9bdb-71fa1eaf3a6c)
+ Call ID: a750949f-c0e5-459d-9bdb-71fa1eaf3a6c
   Args:
-    source: Ernest_Augustus_of_Brunswick
-    type: :Ancestor
-  AssignClass (e2370afe-7e4b-4e95-bbd5-25bfd60ea5fd)
- Call ID: e2370afe-7e4b-4e95-bbd5-25bfd60ea5fd
+    source: Paul_of_Greece
+    type: :Sex
+  UnassignClass (5db14464-f524-4920-8084-d647df4c9f91)
+ Call ID: 5db14464-f524-4920-8084-d647df4c9f91
   Args:
-    type: :Ancestor
-    source: Maria_of_Russia
-  AssignClass (ae9fd1e4-cbc7-44c8-87d4-9e3eabe99acc)
- Call ID: ae9fd1e4-cbc7-44c8-87d4-9e3eabe99acc
+    source: Paul_of_Greece
+    type: :Sex
+  ValidateShacl (2dd2f945-dca9-4ea3-928b-20255644bcee)
+ Call ID: 2dd2f945-dca9-4ea3-928b-20255644bcee
   Args:
-    type: :Ancestor
-    source: Victoria_Louise
-  ValidateShacl (6e797a29-8586-452d-b8ea-e2c9358052d7)
- Call ID: 6e797a29-8586-452d-b8ea-e2c9358052d7
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1445,79 +1351,59 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Paul a :Man ;
-      :hasBirthYear 1901 ;
-      :hasBrother data:Alexander_of_Greece,
-          data:George_II ;
-      :hasDaughter data:Irene_of_Greece,
-          data:Sofia_of_Spain ;
-      :hasDeathYear 1964 ;
-      :hasFather data:Constantine_I ;
-      :hasMarriageYear 1938 ;
-      :hasMother data:Sophia_of_Prussia ;
-      :hasRelation data:Frederica_of_Hanover,
-          data:Nina_Georgievna,
-          data:Prince_Philip ;
-      :hasSister data:Helen_of_Greece,
-          data:Katherine_of_Greece ;
-      :hasSon data:Constantine_II .
+  data:Alexander_of_Greece a :Man,
+          :Person ;
+      :isBrotherOf data:Paul_of_Greece .
 
-  data:Alexander_of_Greece a :Man .
+  data:Constantine_II_of_Greece a :Man,
+          :Person ;
+      :isSonOf data:Paul_of_Greece .
 
-  data:Alice_of_Battenberg a :Ancestor,
+  data:George_II_of_Greece a :Man,
+          :Person ;
+      :isBrotherOf data:Paul_of_Greece .
+
+  data:Helen_of_Greece a :Person,
+          :Woman ;
+      :isSisterOf data:Paul_of_Greece .
+
+  data:Irene_of_Greece a :Person,
+          :Woman ;
+      :isDaughterOf data:Paul_of_Greece .
+
+  data:Princess_Katherine a :Person,
+          :Woman ;
+      :isSisterOf data:Paul_of_Greece .
+
+  data:Sofia_of_Spain a :Person,
+          :Woman ;
+      :isDaughterOf data:Paul_of_Greece .
+
+  data:Constantine_I_of_Greece a :Ancestor,
+          :Man,
+          :Person ;
+      :hasFather data:George_I_of_Greece .
+
+  data:Frederica_of_Hanover a :Person,
           :Woman .
-
-  data:Constantine_I a :Ancestor,
-          :Man ;
-      :hasFather data:George_I_of_Greece ;
-      :hasMother data:Olga_Constantinovna .
-
-  data:Constantine_II a :Man .
-
-  data:Ernest_Augustus_of_Brunswick a :Ancestor,
-          :Man .
-
-  data:Frederica_of_Hanover a :Woman ;
-      :hasFather data:Ernest_Augustus_of_Brunswick ;
-      :hasMother data:Victoria_Louise .
-
-  data:George_II a :Man .
 
   data:George_I_of_Greece a :Ancestor,
-          :Man .
-
-  data:George_Mikhailovich a :Ancestor,
-          :Man .
-
-  data:Helen_of_Greece a :Woman .
-
-  data:Irene_of_Greece a :Woman .
-
-  data:Katherine_of_Greece a :Woman .
-
-  data:Margaret_of_Prussia a :Woman .
-
-  data:Maria_of_Russia a :Ancestor,
-          :Woman .
-
-  data:Nina_Georgievna a :Woman ;
-      :hasFather data:George_Mikhailovich ;
-      :hasMother data:Maria_of_Russia .
-
-  data:Olga_Constantinovna a :Ancestor,
-          :Woman .
-
-  data:Prince_Philip a :Man ;
-      :hasMother data:Alice_of_Battenberg .
-
-  data:Sofia_of_Spain a :Woman .
+          :Man,
+          :Person .
 
   data:Sophia_of_Prussia a :Ancestor,
-          :Woman ;
-      :hasSister data:Margaret_of_Prussia .
-
-  data:Victoria_Louise a :Ancestor,
+          :Person,
           :Woman .
+
+  data:Paul_of_Greece a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1901 ;
+      :hasDeathYear 1964 ;
+      :hasFather data:Constantine_I_of_Greece ;
+      :hasMarriageYear 1938 ;
+      :hasMother data:Sophia_of_Prussia ;
+      :hasRelation data:Frederica_of_Hanover .
 
 
 
@@ -1529,6 +1415,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (18b10871-b803-4cd6-b864-854d307c5b40)
- Call ID: 18b10871-b803-4cd6-b864-854d307c5b40
+  Finish (efb00ec2-b663-43d1-9b60-6b7a8ba8cf27)
+ Call ID: efb00ec2-b663-43d1-9b60-6b7a8ba8cf27
   Args:

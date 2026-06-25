@@ -7,28 +7,20 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este a :Person ;
+    rdfs:label "Prince Amedeo, Hereditary Archduke of Austria-Este" ;
+    data:wdtLink wdt:Q2071496 ;
+    :alsoKnownAs "Amedeo Marie de Belgique, Prince de Belgique" ;
+    :hasParent data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasSex data:male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Amedeo, Hereditary Archduke of Austria-Este" ;
-    data:wdtLink wdt:Q2071496 ;
-    :alsoKnownAs "Amedeo Marie de Belgique, Prince de Belgique" ;
-    :hasMother data:Princess_Astrid-_Archduchess_of_Austria-Este ;
-    :hasParent data:Princess_Astrid-_Archduchess_of_Austria-Este ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Astrid-_Archduchess_of_Austria-Este ;
-    :isSonOf data:Princess_Astrid-_Archduchess_of_Austria-Este .
-
-data:Princess_Astrid-_Archduchess_of_Austria-Este a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Astrid-_Archduchess_of_Austria-Este a :Person ;
     rdfs:label "Princess Astrid, Archduchess of Austria-Este" ;
     data:posIndicesFull "279:296" ;
     data:posIndicesPart "341:349",
@@ -41,9 +33,9 @@ data:Princess_Astrid-_Archduchess_of_Austria-Este a :Ancestor,
         "983:989" ;
     data:wdtLink wdt:Q170194 ;
     :alsoKnownAs "Astrid of Belgium" ;
-    :hasChild data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este ;
-    :isMotherOf data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este ;
-    :isParentOf data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

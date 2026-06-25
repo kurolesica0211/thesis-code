@@ -1,0 +1,148 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mary_Donaldson a :Woman ;
+    :hasRelation data:Frederik_IX,
+        data:Frederik_X,
+        data:Henrik,
+        data:Joachim,
+        data:Margrethe_II,
+        data:Mary_Donaldson ;
+    :hasSister data:Mary_Donaldson ;
+    :isBloodrelationOf data:Mary_Donaldson ;
+    :isSiblingOf data:Mary_Donaldson ;
+    :isSisterOf data:Mary_Donaldson .
+
+data:Frederik_IX a :Ancestor,
+        :Man ;
+    :hasBrother data:Frederik_IX ;
+    :hasChild data:Margrethe_II ;
+    :hasDaughter data:Margrethe_II ;
+    :hasRelation data:Frederik_IX,
+        data:Frederik_X,
+        data:Henrik,
+        data:Joachim,
+        data:Margrethe_II,
+        data:Mary_Donaldson ;
+    :isAncestorOf data:Frederik_X,
+        data:Joachim,
+        data:Margrethe_II ;
+    :isBloodrelationOf data:Frederik_IX ;
+    :isBrotherOf data:Frederik_IX ;
+    :isFatherOf data:Margrethe_II ;
+    :isParentOf data:Margrethe_II ;
+    :isSiblingOf data:Frederik_IX ;
+    :isUncleOf data:Margrethe_II .
+
+data:Henrik a :Ancestor,
+        :Man ;
+    :hasBrother data:Henrik ;
+    :hasChild data:Frederik_X,
+        data:Joachim ;
+    :hasRelation data:Frederik_IX,
+        data:Frederik_X,
+        data:Henrik,
+        data:Joachim,
+        data:Margrethe_II,
+        data:Mary_Donaldson ;
+    :hasSon data:Frederik_X,
+        data:Joachim ;
+    :isAncestorOf data:Frederik_X,
+        data:Joachim ;
+    :isBloodrelationOf data:Henrik ;
+    :isBrotherOf data:Henrik ;
+    :isFatherOf data:Frederik_X,
+        data:Joachim ;
+    :isParentOf data:Frederik_X,
+        data:Joachim ;
+    :isSiblingOf data:Henrik ;
+    :isUncleOf data:Frederik_X,
+        data:Joachim .
+
+data:Margrethe_II a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Frederik_IX ;
+    :hasChild data:Frederik_X,
+        data:Joachim ;
+    :hasFather data:Frederik_IX ;
+    :hasParent data:Frederik_IX ;
+    :hasRelation data:Frederik_IX,
+        data:Frederik_X,
+        data:Henrik,
+        data:Joachim,
+        data:Margrethe_II,
+        data:Mary_Donaldson ;
+    :hasSister data:Margrethe_II ;
+    :hasSon data:Frederik_X,
+        data:Joachim ;
+    :isAncestorOf data:Frederik_X,
+        data:Joachim ;
+    :isAuntOf data:Frederik_X,
+        data:Joachim ;
+    :isBloodrelationOf data:Margrethe_II ;
+    :isChildOf data:Frederik_IX ;
+    :isDaughterOf data:Frederik_IX ;
+    :isMotherOf data:Frederik_X,
+        data:Joachim ;
+    :isParentOf data:Frederik_X,
+        data:Joachim ;
+    :isSiblingOf data:Margrethe_II ;
+    :isSisterOf data:Margrethe_II .
+
+data:Frederik_X a :Man ;
+    :hasAncestor data:Frederik_IX,
+        data:Henrik,
+        data:Margrethe_II ;
+    :hasBirthYear 1968 ;
+    :hasBrother data:Frederik_X,
+        data:Joachim ;
+    :hasFather data:Henrik ;
+    :hasMarriageYear 2003 ;
+    :hasMother data:Margrethe_II ;
+    :hasParent data:Henrik,
+        data:Margrethe_II ;
+    :hasRelation data:Frederik_IX,
+        data:Frederik_X,
+        data:Henrik,
+        data:Joachim,
+        data:Margrethe_II,
+        data:Mary_Donaldson ;
+    :isBloodrelationOf data:Frederik_X,
+        data:Joachim ;
+    :isBrotherOf data:Frederik_X,
+        data:Joachim ;
+    :isChildOf data:Henrik,
+        data:Margrethe_II ;
+    :isSiblingOf data:Frederik_X,
+        data:Joachim ;
+    :isSonOf data:Henrik,
+        data:Margrethe_II .
+
+data:Joachim a :Man ;
+    :hasAncestor data:Frederik_IX,
+        data:Henrik,
+        data:Margrethe_II ;
+    :hasBrother data:Frederik_X,
+        data:Joachim ;
+    :hasFather data:Henrik ;
+    :hasMother data:Margrethe_II ;
+    :hasParent data:Henrik,
+        data:Margrethe_II ;
+    :hasRelation data:Frederik_IX,
+        data:Frederik_X,
+        data:Henrik,
+        data:Joachim,
+        data:Margrethe_II,
+        data:Mary_Donaldson ;
+    :isBloodrelationOf data:Frederik_X,
+        data:Joachim ;
+    :isBrotherOf data:Frederik_X,
+        data:Joachim ;
+    :isChildOf data:Henrik,
+        data:Margrethe_II ;
+    :isSiblingOf data:Frederik_X,
+        data:Joachim ;
+    :isSonOf data:Henrik,
+        data:Margrethe_II .
+

@@ -2,28 +2,54 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Athena a :Woman ;
-    :isDaughterOf data:Joachim,
-        data:MarieCavallier .
+data:Athena_of_Monpezat a :Person,
+        :Woman ;
+    :isChildOf data:Joachim_of_Denmark,
+        data:Marie_Cavallier .
 
-data:Henrik a :Man ;
-    :isSonOf data:Joachim,
-        data:MarieCavallier .
+data:Benedikte_of_Denmark a :Person,
+        :Woman ;
+    :isSisterOf data:Margrethe_II .
 
-data:AlexandraManley a :Woman .
+data:Christina_of_Sweden a :Person,
+        :Woman .
 
-data:FrederikX a :Man .
+data:Frederik_IX a :Man,
+        :Person .
 
-data:MargretheII a :Woman .
+data:Harald_V a :Man,
+        :Person .
 
-data:Joachim a :Man ;
+data:Henrik_of_Monpezat a :Man,
+        :Person ;
+    :isChildOf data:Joachim_of_Denmark,
+        data:Marie_Cavallier .
+
+data:Ingrid_of_Denmark a :Person,
+        :Woman .
+
+data:Jean_Baptiste_de_Laborde_de_Monpezat a :Man,
+        :Person .
+
+data:Alexandra_Christina_Manley a :Person,
+        :Woman .
+
+data:Frederik_X a :Man,
+        :Person .
+
+data:Joachim_of_Denmark a :Man,
+        :Person ;
     :hasBirthYear 1969 ;
     :hasMarriageYear 1995,
         2007 ;
-    :hasRelation data:AlexandraManley,
-        data:MarieCavallier ;
-    :isBrotherOf data:FrederikX ;
-    :isSonOf data:MargretheII .
+    :hasRelation data:Alexandra_Christina_Manley,
+        data:Marie_Cavallier ;
+    :isChildOf data:Margrethe_II ;
+    :isSiblingOf data:Frederik_X .
 
-data:MarieCavallier a :Woman .
+data:Margrethe_II a :Person,
+        :Woman .
+
+data:Marie_Cavallier a :Person,
+        :Woman .
 

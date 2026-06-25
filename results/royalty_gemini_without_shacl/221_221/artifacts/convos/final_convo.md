@@ -69,55 +69,36 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Queen Anne-Marie
+Anne Ferelith Fenella Bowes-Lyon (4 December 1917 – 26 September 1980), later styled Viscountess Anson and later Princess Anne of Denmark, was a British noblewoman and member of the Danish royal family by marriage, and a first cousin of Elizabeth II.
+Born into the Bowes-Lyon family, she married Thomas Anson, Viscount Anson, and had two children, Patrick Anson, 5th Earl of Lichfield, and Lady Elizabeth Shakerley, before divorcing Anson in 1948.
+She became a princess of Denmark by her second marriage to Prince Georg of Denmark in 1950.
+Family
 
+Anne Bowes-Lyon was born in Washington, D.C., in 1917.
+John Herbert Bowes-Lyon and her mother was the Hon.
+Fenella Hepburn-Stuart-Forbes-Trefusis, daughter of Charles Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton.
+Anne's paternal grandfather was Claude Bowes-Lyon, 14th
+Earl of Strathmore and Kinghorne.
+She was a niece of Queen Elizabeth the Queen Mother.
+Anne had three younger sisters, two of whom were Nerissa and Katherine Bowes-Lyon, who were institutionalized in 1941 for severe intellectual disability.
+Apart from early deceased Patricia (1916–1917), Nerissa (1919–1986) and Katherine (1926–2014), Anne also had one younger sister, Diana Cinderella Somervell (1923–1986).
+Marriages
 
-Queen Sofía of Spain
+Anne married Lieutenant-Colonel Thomas William Arnold Anson (1913–1958) on 28 April 1938.
+As her husband held the courtesy title of Viscount Anson, Anne was styled Viscountess Anson upon their marriage.
+On 16 September 1950, at Glamis Castle, Anne, Viscountess Anson subsequently married Prince Georg of Denmark, upon which she became Her Highness Princess Anne of Denmark.
+Death
 
-
-Marina, consort of Prince Michael
-
-
-Princess Theodora of Greece and Denmark (Greek: Θεοδώρα Ντε Γκρες, romanized: Theodora de Grèce; born 9 June 1983), also known under her stage name Theodora Greece, is a British-Greek actress and member of the Greek and Danish royal families.
-She is the fourth child and younger daughter of deposed King Constantine II of Greece and Queen Anne-Marie of Greece.
-Theodora made her television debut in 2011 as Alison Montgomery in the American soap opera The Bold and the Beautiful.
-Biography
-
-Early life
-
-Theodora was born on 9 June 1983 at St Mary's Hospital, London.
-She is the younger daughter and fourth of the five children of the deposed Greek king Constantine II and his wife, Anne-Marie of Denmark.
-Education
-
-Theodora attended Woldingham School, an all-girls boarding school in Surrey, England, between 1994 and 2001.
-After a gap year spent at St Philip's College in Alice Springs, Australia, Theodora attended Brown University where she received her Bachelor of Arts on 28 May 2006 in Theatre Arts, having also attended Northeastern University in Boston.
-Career
-
-In April 2010, Theodora moved to Los Angeles to pursue an acting career, appearing in supporting roles under the stage name Theodora Greece.
-Personal life
-
-On 16 November 2018, it was announced that Princess Theodora was engaged to American attorney Matthew Jeremiah Kumar.
-On 28 September 2024, Theodora married Kumar in a Greek Orthodox ceremony officiated by Metropolitan Dorotheos II of Syros at the Metropolitan Cathedral of Athens.
-Guests included 250 friends and relatives, including members of European royal families, such as the bride's aunt, Queen Sofia of Spain, and Infanta Cristina of Spain, Infanta Elena of Spain, Princess Alexandra of Sayn-Wittgenstein-Berleburg, Count Michael Ahlefeldt-Laurvig-Bille, Princess Benedikte of Denmark, Crown Prince Alexander of Yugoslavia, Crown Princess Katherine of Serbia, and Prince Christian of Hanover.
-Two of her brothers, Crown Prince Pavlos and Prince Philippos, and her nephew Prince Achileas-Andreas, served as groomsmen.
-Her nieces, Princess Maria-Olympia and Arrietta Morales y de Grecia, served as bridesmaids.
-For the ceremony, Theodora wore a custom gown by Celia Kritharioti, an Irish lace veil that once belonged to her great-grandmother Princess Margaret of Connaught, and a Cartier diamond tiara that was given to Princess Margaret of Connaught by Abbas II of Egypt.
-The veil and tiara have been worn by all of Queen Ingrid of Denmark's female descendants.
-Οn 20 December 2024, Theodora, along with the other members of the former royal family acquired Greek citizenship, under the surname Theodora de Grèce.
-The family was deprived of citizenship in 1994 when the former King Constantine refused to acquire a surname, as required by law for all Greek citizens.
-Filmography
-
-Ancestry
-
-Her paternal grandparents were King Paul of Greece and Frederica of Hanover.
-Her maternal grandparents are Frederik IX of Denmark and Ingrid of Sweden.
-As an agnatic descendant of Christian IX of Denmark Theodora is a Danish princess, and because King Christian's second son, Prince William of Denmark, was elected "George I, King of the Hellenes" in 1863, her father (George's great-grandson) inherited the throne of Greece in 1964.
+Anne died in 1980, aged 62, in London of a heart attack.
+She is buried alongside her second husband, Prince George of Denmark, at Bernstorffpark, Gentofte, Denmark.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -133,39 +114,9 @@ As an agnatic descendant of Christian IX of Denmark Theodora is a Danish princes
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -180,6 +131,23 @@ As an agnatic descendant of Christian IX of Denmark Theodora is a Danish princes
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -197,6 +165,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,29 +247,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -295,6 +270,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -307,6 +290,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -315,17 +300,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -353,6 +340,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -368,197 +439,248 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2c5397ec-24fd-460a-bc20-e9c2cf14bc56)
- Call ID: 2c5397ec-24fd-460a-bc20-e9c2cf14bc56
+  AssignClass (5db75eca-b207-424b-a3de-dce2ae660ea5)
+ Call ID: 5db75eca-b207-424b-a3de-dce2ae660ea5
   Args:
-    source: Princess_Theodora_of_Greece_and_Denmark
-    type: :Person
-  AssignClass (b7af2238-8ee7-47ae-b82e-027b7ead13b1)
- Call ID: b7af2238-8ee7-47ae-b82e-027b7ead13b1
-  Args:
-    source: Princess_Theodora_of_Greece_and_Denmark
+    source: :Anne_Bowes-Lyon
     type: :Woman
-  AddLiteral (4321a121-dcd7-4dcd-80f2-587fc327d4a7)
- Call ID: 4321a121-dcd7-4dcd-80f2-587fc327d4a7
-  Args:
-    literal_value: Theodora Greece
-    literal_type: xsd:string
-    source: Princess_Theodora_of_Greece_and_Denmark
-    relation: :knownAs
-  AddLiteral (093d5b65-c658-401c-bc6c-ce37584dae12)
- Call ID: 093d5b65-c658-401c-bc6c-ce37584dae12
-  Args:
-    relation: :alsoKnownAs
-    literal_value: Theodora de Grèce
-    source: Princess_Theodora_of_Greece_and_Denmark
-    literal_type: xsd:string
-  AssignClass (de493ea4-c7b0-4a51-8fd7-42d1dcb343ae)
- Call ID: de493ea4-c7b0-4a51-8fd7-42d1dcb343ae
+  AssignClass (a4f28b95-7ac5-4a1d-a4d3-ed7da4f899fe)
+ Call ID: a4f28b95-7ac5-4a1d-a4d3-ed7da4f899fe
   Args:
     type: :Person
-    source: Constantine_II_of_Greece
-  AssignClass (1bb0ea54-df6b-489d-a8f7-76122b73e415)
- Call ID: 1bb0ea54-df6b-489d-a8f7-76122b73e415
+    source: :Anne_Bowes-Lyon
+  AddLiteral (f07824f2-07a4-4d92-b535-27a866c66264)
+ Call ID: f07824f2-07a4-4d92-b535-27a866c66264
   Args:
-    source: Constantine_II_of_Greece
-    type: :Man
-  AssignClass (fa0104f5-21a5-4522-9736-726edd2ee8eb)
- Call ID: fa0104f5-21a5-4522-9736-726edd2ee8eb
-  Args:
-    type: :Person
-    source: Anne-Marie_of_Denmark
-  AssignClass (22dcff43-8154-4aee-b539-7b5dab941bd9)
- Call ID: 22dcff43-8154-4aee-b539-7b5dab941bd9
-  Args:
-    type: :Woman
-    source: Anne-Marie_of_Denmark
-  AddTriple (f79271e1-46ea-481f-8e35-e7699c2b42a6)
- Call ID: f79271e1-46ea-481f-8e35-e7699c2b42a6
-  Args:
-    source: Princess_Theodora_of_Greece_and_Denmark
-    relation: :hasFather
-    target: Constantine_II_of_Greece
-  AddTriple (d2bef5fd-3d2c-43ec-abbc-47ec16008aa1)
- Call ID: d2bef5fd-3d2c-43ec-abbc-47ec16008aa1
-  Args:
-    relation: :hasMother
-    target: Anne-Marie_of_Denmark
-    source: Princess_Theodora_of_Greece_and_Denmark
-  AssignClass (29a500f8-9b7d-4c54-b132-44ef35dd4c2c)
- Call ID: 29a500f8-9b7d-4c54-b132-44ef35dd4c2c
-  Args:
-    type: :Person
-    source: Matthew_Jeremiah_Kumar
-  AssignClass (999f2a91-ec58-4ccf-a1d4-fbab7bf2b227)
- Call ID: 999f2a91-ec58-4ccf-a1d4-fbab7bf2b227
-  Args:
-    type: :Man
-    source: Matthew_Jeremiah_Kumar
-  AddTriple (c1fcfc8a-06d9-4ef4-861c-7919a9334017)
- Call ID: c1fcfc8a-06d9-4ef4-861c-7919a9334017
-  Args:
-    source: Princess_Theodora_of_Greece_and_Denmark
-    target: Matthew_Jeremiah_Kumar
-    relation: :hasRelation
-  AddLiteral (96d149f5-5c3b-4893-a4f6-e4b28a0d14ca)
- Call ID: 96d149f5-5c3b-4893-a4f6-e4b28a0d14ca
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 2024
-    source: Princess_Theodora_of_Greece_and_Denmark
+    source: :Anne_Bowes-Lyon
+    literal_value: 1917
+    relation: :hasBirthYear
     literal_type: xsd:integer
-  AssignClass (53b4e3d0-4535-4061-97cd-8338e08e0d95)
- Call ID: 53b4e3d0-4535-4061-97cd-8338e08e0d95
+  AddLiteral (20cc3ad5-2764-4eea-9e28-cd1be462d8d5)
+ Call ID: 20cc3ad5-2764-4eea-9e28-cd1be462d8d5
   Args:
-    source: Queen_Sofia_of_Spain
-    type: :Person
-  AssignClass (e5bfd6e4-a6f2-47ea-9fcc-fe9de2986da0)
- Call ID: e5bfd6e4-a6f2-47ea-9fcc-fe9de2986da0
+    relation: :hasDeathYear
+    source: :Anne_Bowes-Lyon
+    literal_value: 1980
+    literal_type: xsd:integer
+  AssignClass (62f5df74-1d14-422e-9f57-e323cc8d241b)
+ Call ID: 62f5df74-1d14-422e-9f57-e323cc8d241b
   Args:
-    type: :Woman
-    source: Queen_Sofia_of_Spain
-  AddTriple (1b817e7b-804d-413d-a6c2-52fc018d294c)
- Call ID: 1b817e7b-804d-413d-a6c2-52fc018d294c
-  Args:
-    relation: :isAuntOf
-    target: Princess_Theodora_of_Greece_and_Denmark
-    source: Queen_Sofia_of_Spain
-  AssignClass (8e45b075-9bed-4de3-bc92-8f8d09b75809)
- Call ID: 8e45b075-9bed-4de3-bc92-8f8d09b75809
-  Args:
-    type: :Person
-    source: Paul_of_Greece
-  AssignClass (151faa68-ca76-4926-aa2e-aa40ff0c681a)
- Call ID: 151faa68-ca76-4926-aa2e-aa40ff0c681a
-  Args:
-    source: Paul_of_Greece
+    source: :John_Herbert_Bowes-Lyon
     type: :Man
-  AssignClass (7ae6b476-ef05-4993-8177-d314d18087f5)
- Call ID: 7ae6b476-ef05-4993-8177-d314d18087f5
+  AssignClass (86dc0d14-95d1-4a0c-9aba-38a65910ad51)
+ Call ID: 86dc0d14-95d1-4a0c-9aba-38a65910ad51
   Args:
-    source: Frederica_of_Hanover
+    source: :John_Herbert_Bowes-Lyon
     type: :Person
-  AssignClass (aa53dcb7-7e81-4339-aa0d-9e729866bf56)
- Call ID: aa53dcb7-7e81-4339-aa0d-9e729866bf56
+  AddTriple (a49ac354-24c6-4ce0-b813-c29df07ab21a)
+ Call ID: a49ac354-24c6-4ce0-b813-c29df07ab21a
   Args:
-    source: Frederica_of_Hanover
-    type: :Woman
-  AddTriple (e06cd732-0be4-47ac-9f3d-29361470effa)
- Call ID: e06cd732-0be4-47ac-9f3d-29361470effa
-  Args:
-    source: Constantine_II_of_Greece
+    target: :John_Herbert_Bowes-Lyon
+    source: :Anne_Bowes-Lyon
     relation: :hasFather
-    target: Paul_of_Greece
-  AddTriple (2ce45310-fb78-4fa4-a16a-3d4f54fc6f16)
- Call ID: 2ce45310-fb78-4fa4-a16a-3d4f54fc6f16
+  AssignClass (8a0629d0-9276-4e52-b023-dbd861493d65)
+ Call ID: 8a0629d0-9276-4e52-b023-dbd861493d65
   Args:
-    source: Constantine_II_of_Greece
-    relation: :hasMother
-    target: Frederica_of_Hanover
-  AssignClass (89fc838f-641a-40fa-8aea-3c285d94abf0)
- Call ID: 89fc838f-641a-40fa-8aea-3c285d94abf0
-  Args:
-    source: Frederik_IX_of_Denmark
-    type: :Person
-  AssignClass (cd834320-7abf-4ee8-91ee-2d252e9fc58c)
- Call ID: cd834320-7abf-4ee8-91ee-2d252e9fc58c
-  Args:
-    type: :Man
-    source: Frederik_IX_of_Denmark
-  AssignClass (98777b5a-0b11-48a5-834f-1f7a9c05ec4a)
- Call ID: 98777b5a-0b11-48a5-834f-1f7a9c05ec4a
-  Args:
-    source: Ingrid_of_Sweden
-    type: :Person
-  AssignClass (c3eaad2c-6b6c-4616-a945-2d124878acd2)
- Call ID: c3eaad2c-6b6c-4616-a945-2d124878acd2
-  Args:
-    source: Ingrid_of_Sweden
     type: :Woman
-  AddTriple (70e9a4e4-d38f-40cd-9073-9fe4c54ca812)
- Call ID: 70e9a4e4-d38f-40cd-9073-9fe4c54ca812
+    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
+  AssignClass (30ad1135-6970-47fa-bdd8-9cf17e719295)
+ Call ID: 30ad1135-6970-47fa-bdd8-9cf17e719295
   Args:
-    source: Anne-Marie_of_Denmark
-    target: Frederik_IX_of_Denmark
-    relation: :hasFather
-  AddTriple (b438c3a9-e9c3-4873-956b-2a022761a176)
- Call ID: b438c3a9-e9c3-4873-956b-2a022761a176
+    type: :Person
+    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
+  AddTriple (7eeca52e-befc-409e-806b-505f3c23494e)
+ Call ID: 7eeca52e-befc-409e-806b-505f3c23494e
   Args:
-    target: Ingrid_of_Sweden
+    target: :Fenella_Hepburn-Stuart-Forbes-Trefusis
+    source: :Anne_Bowes-Lyon
     relation: :hasMother
-    source: Anne-Marie_of_Denmark
-  AssignClass (84d70935-0ed0-4ad0-8dc6-f126c9dcbae7)
- Call ID: 84d70935-0ed0-4ad0-8dc6-f126c9dcbae7
+  AssignClass (86a2ca27-3630-4080-9556-b7169360de36)
+ Call ID: 86a2ca27-3630-4080-9556-b7169360de36
   Args:
-    source: Crown_Prince_Pavlos
-    type: :Person
-  AssignClass (29cc2b01-7463-41f9-b5e2-5760dec60760)
- Call ID: 29cc2b01-7463-41f9-b5e2-5760dec60760
-  Args:
-    source: Crown_Prince_Pavlos
+    source: :Charles_Hepburn-Stuart-Forbes-Trefusis
     type: :Man
-  AssignClass (27a32367-3d45-4880-9dd0-e1b5a35df5e3)
- Call ID: 27a32367-3d45-4880-9dd0-e1b5a35df5e3
+  AssignClass (2430cbbe-65b7-440b-b07b-6c4035ebdde4)
+ Call ID: 2430cbbe-65b7-440b-b07b-6c4035ebdde4
   Args:
     type: :Person
-    source: Prince_Philippos
-  AssignClass (5f2eeff1-ed7a-4858-a604-0a216cd2c1fd)
- Call ID: 5f2eeff1-ed7a-4858-a604-0a216cd2c1fd
+    source: :Charles_Hepburn-Stuart-Forbes-Trefusis
+  AddTriple (c73275a6-8d64-461e-85ea-26a331d679e0)
+ Call ID: c73275a6-8d64-461e-85ea-26a331d679e0
   Args:
+    target: :Charles_Hepburn-Stuart-Forbes-Trefusis
+    source: :Fenella_Hepburn-Stuart-Forbes-Trefusis
+    relation: :hasFather
+  AssignClass (69ed0ef6-cbb6-43c3-a5a9-58c51d435070)
+ Call ID: 69ed0ef6-cbb6-43c3-a5a9-58c51d435070
+  Args:
+    source: :Claude_Bowes-Lyon
     type: :Man
-    source: Prince_Philippos
-  AddTriple (6fcfa526-9cab-4df0-95fd-c65a6c93fc62)
- Call ID: 6fcfa526-9cab-4df0-95fd-c65a6c93fc62
+  AssignClass (85c8bbe6-b761-4537-b986-11ea54de16f1)
+ Call ID: 85c8bbe6-b761-4537-b986-11ea54de16f1
   Args:
-    source: Princess_Theodora_of_Greece_and_Denmark
-    relation: :hasBrother
-    target: Crown_Prince_Pavlos
-  AddTriple (f94c5bfd-e9d0-456b-bce1-fb9d0d4189c3)
- Call ID: f94c5bfd-e9d0-456b-bce1-fb9d0d4189c3
+    type: :Person
+    source: :Claude_Bowes-Lyon
+  AddTriple (6369bef2-bedc-4daa-8c74-9378d97455de)
+ Call ID: 6369bef2-bedc-4daa-8c74-9378d97455de
   Args:
-    source: Princess_Theodora_of_Greece_and_Denmark
-    target: Prince_Philippos
-    relation: :hasBrother
-  Finish (1ec1d85c-8e5d-4c29-bd1f-ed4868a6b554)
- Call ID: 1ec1d85c-8e5d-4c29-bd1f-ed4868a6b554
+    source: :John_Herbert_Bowes-Lyon
+    target: :Claude_Bowes-Lyon
+    relation: :hasFather
+  AssignClass (4d695e83-ebaa-4158-835c-709e10083094)
+ Call ID: 4d695e83-ebaa-4158-835c-709e10083094
+  Args:
+    source: :Thomas_Anson
+    type: :Man
+  AssignClass (6bdfed77-4938-4061-bb72-55fe34dfceb1)
+ Call ID: 6bdfed77-4938-4061-bb72-55fe34dfceb1
+  Args:
+    type: :Person
+    source: :Thomas_Anson
+  AddLiteral (fa0bf73f-43dc-462c-ae02-b97f19c0c30e)
+ Call ID: fa0bf73f-43dc-462c-ae02-b97f19c0c30e
+  Args:
+    literal_type: xsd:integer
+    source: :Anne_Bowes-Lyon
+    literal_value: 1938
+    relation: :hasMarriageYear
+  AddTriple (ae350aa1-c188-4471-aa83-b935fe9ad81b)
+ Call ID: ae350aa1-c188-4471-aa83-b935fe9ad81b
+  Args:
+    source: :Anne_Bowes-Lyon
+    target: :Thomas_Anson
+    relation: :hasRelation
+  AssignClass (e5988ccc-5381-412e-a782-e00114b3fd01)
+ Call ID: e5988ccc-5381-412e-a782-e00114b3fd01
+  Args:
+    source: :Patrick_Anson
+    type: :Man
+  AssignClass (7dd89762-7dc8-4847-ac33-f7b2aeab61a9)
+ Call ID: 7dd89762-7dc8-4847-ac33-f7b2aeab61a9
+  Args:
+    type: :Person
+    source: :Patrick_Anson
+  AddTriple (308e847b-8e11-4f54-9c6e-ec9c355fd37c)
+ Call ID: 308e847b-8e11-4f54-9c6e-ec9c355fd37c
+  Args:
+    source: :Patrick_Anson
+    target: :Anne_Bowes-Lyon
+    relation: :isChildOf
+  AddTriple (239322d1-1eaf-4aa5-aff1-5d5425e3334c)
+ Call ID: 239322d1-1eaf-4aa5-aff1-5d5425e3334c
+  Args:
+    relation: :isChildOf
+    target: :Thomas_Anson
+    source: :Patrick_Anson
+  AssignClass (6c57ff0c-b3f9-46f0-87ba-8fd144710815)
+ Call ID: 6c57ff0c-b3f9-46f0-87ba-8fd144710815
+  Args:
+    type: :Woman
+    source: :Elizabeth_Shakerley
+  AssignClass (a4b6991b-810e-46b2-8e2d-aa64d23a9341)
+ Call ID: a4b6991b-810e-46b2-8e2d-aa64d23a9341
+  Args:
+    source: :Elizabeth_Shakerley
+    type: :Person
+  AddTriple (54dc12cb-b144-47d3-b87d-8e0d875f39f7)
+ Call ID: 54dc12cb-b144-47d3-b87d-8e0d875f39f7
+  Args:
+    relation: :isChildOf
+    source: :Elizabeth_Shakerley
+    target: :Anne_Bowes-Lyon
+  AddTriple (62099b7c-7e46-434d-8ce5-c8ee22b14929)
+ Call ID: 62099b7c-7e46-434d-8ce5-c8ee22b14929
+  Args:
+    relation: :isChildOf
+    source: :Elizabeth_Shakerley
+    target: :Thomas_Anson
+  AssignClass (de7dc971-8949-448b-bf6a-8c7d31935967)
+ Call ID: de7dc971-8949-448b-bf6a-8c7d31935967
+  Args:
+    source: :Prince_Georg_of_Denmark
+    type: :Man
+  AssignClass (ff724e07-d151-41f5-9d99-ea22a9a4c5e7)
+ Call ID: ff724e07-d151-41f5-9d99-ea22a9a4c5e7
+  Args:
+    source: :Prince_Georg_of_Denmark
+    type: :Person
+  AddLiteral (8dfae77a-9fc8-486d-ad0b-09ae852599f8)
+ Call ID: 8dfae77a-9fc8-486d-ad0b-09ae852599f8
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1950
+    source: :Anne_Bowes-Lyon
+  AddTriple (a51abecb-fbee-40a1-8e77-4e5349596737)
+ Call ID: a51abecb-fbee-40a1-8e77-4e5349596737
+  Args:
+    relation: :hasRelation
+    target: :Prince_Georg_of_Denmark
+    source: :Anne_Bowes-Lyon
+  AssignClass (0c571128-520e-45c5-91fb-8288d4eb48e6)
+ Call ID: 0c571128-520e-45c5-91fb-8288d4eb48e6
+  Args:
+    source: :Patricia_Bowes-Lyon
+    type: :Woman
+  AssignClass (da818fbf-0004-4245-a4e2-aebcf57f91fe)
+ Call ID: da818fbf-0004-4245-a4e2-aebcf57f91fe
+  Args:
+    source: :Patricia_Bowes-Lyon
+    type: :Person
+  AddTriple (cfc99f02-cbf3-48ca-ba7f-b88be95855e1)
+ Call ID: cfc99f02-cbf3-48ca-ba7f-b88be95855e1
+  Args:
+    relation: :isSiblingOf
+    target: :Patricia_Bowes-Lyon
+    source: :Anne_Bowes-Lyon
+  AssignClass (4a114b95-56a2-4db8-bb65-56171306bddb)
+ Call ID: 4a114b95-56a2-4db8-bb65-56171306bddb
+  Args:
+    type: :Woman
+    source: :Nerissa_Bowes-Lyon
+  AssignClass (bb525be6-9843-47bb-8d24-b7ffeef8b199)
+ Call ID: bb525be6-9843-47bb-8d24-b7ffeef8b199
+  Args:
+    type: :Person
+    source: :Nerissa_Bowes-Lyon
+  AddTriple (2b3dd9a0-5f04-45da-9b15-17a3b9bf6f73)
+ Call ID: 2b3dd9a0-5f04-45da-9b15-17a3b9bf6f73
+  Args:
+    source: :Anne_Bowes-Lyon
+    target: :Nerissa_Bowes-Lyon
+    relation: :isSiblingOf
+  AssignClass (5f63f4f1-9cf8-46c7-8991-df56c4af8e86)
+ Call ID: 5f63f4f1-9cf8-46c7-8991-df56c4af8e86
+  Args:
+    type: :Woman
+    source: :Katherine_Bowes-Lyon
+  AssignClass (ccc2c743-ff57-4f0d-8e04-53302ec3fa1e)
+ Call ID: ccc2c743-ff57-4f0d-8e04-53302ec3fa1e
+  Args:
+    type: :Person
+    source: :Katherine_Bowes-Lyon
+  AddTriple (b15bb26d-481f-4571-8d94-ec215be1057d)
+ Call ID: b15bb26d-481f-4571-8d94-ec215be1057d
+  Args:
+    source: :Anne_Bowes-Lyon
+    target: :Katherine_Bowes-Lyon
+    relation: :isSiblingOf
+  AssignClass (64eeeada-5cd9-4501-8fd8-2aa55a61613f)
+ Call ID: 64eeeada-5cd9-4501-8fd8-2aa55a61613f
+  Args:
+    type: :Woman
+    source: :Diana_Cinderella_Somervell
+  AssignClass (057a00bc-4316-4747-bc0b-f742ee6c2f6e)
+ Call ID: 057a00bc-4316-4747-bc0b-f742ee6c2f6e
+  Args:
+    type: :Person
+    source: :Diana_Cinderella_Somervell
+  AddTriple (8f6d4db9-e8ff-4de7-95e5-20bcfc230fdd)
+ Call ID: 8f6d4db9-e8ff-4de7-95e5-20bcfc230fdd
+  Args:
+    relation: :isSiblingOf
+    source: :Anne_Bowes-Lyon
+    target: :Diana_Cinderella_Somervell
+  Finish (47b66c15-a81c-4ec3-aec7-63c25c068d43)
+ Call ID: 47b66c15-a81c-4ec3-aec7-63c25c068d43
   Args:

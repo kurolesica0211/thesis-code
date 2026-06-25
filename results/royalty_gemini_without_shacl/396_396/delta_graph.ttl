@@ -2,24 +2,29 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_William_of_Gloucester a :Man ;
-    :hasBirthYear 1941 ;
-    :hasBrother data:Prince_Richard ;
-    :hasDeathYear 1972 ;
-    :hasFather data:Prince_Henry_Duke_of_Gloucester ;
-    :hasMother data:Princess_Alice_Duchess_of_Gloucester .
+data:Princess_Christina_of_Hesse a :Woman ;
+    :hasBirthYear 1933 ;
+    :hasDeathYear 2011 ;
+    :hasFather data:Prince_Christoph_of_Hesse ;
+    :hasMarriageYear data:Prince_Andrew_of_Yugoslavia,
+        data:Robert_van_Eyck,
+        1956,
+        1962 ;
+    :hasMother data:Princess_Sophie_of_Greece_and_Denmark .
 
-data:George_V a :Man .
+data:Prince_Andrew_of_Yugoslavia a :Man .
 
-data:Prince_Richard a :Man ;
-    :isSonOf data:Prince_Henry_Duke_of_Gloucester,
-        data:Princess_Alice_Duchess_of_Gloucester .
+data:Prince_Christoph_of_Hesse a :Man ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1943 .
 
-data:Queen_Mary a :Woman .
+data:Prince_George_William_of_Hanover a :Man .
 
-data:Prince_Henry_Duke_of_Gloucester a :Man ;
-    :hasParent data:George_V,
-        data:Queen_Mary .
+data:Princess_Sophie_of_Greece_and_Denmark a :Woman ;
+    :hasBirthYear 1914 ;
+    :hasDeathYear 2001 ;
+    :hasMarriageYear data:Prince_George_William_of_Hanover,
+        1946 .
 
-data:Princess_Alice_Duchess_of_Gloucester a :Woman .
+data:Robert_van_Eyck a :Man .
 

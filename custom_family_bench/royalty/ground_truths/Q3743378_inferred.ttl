@@ -1,0 +1,500 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Prince_George-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince George, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "685:712"^^xsd:string,
+        "692:712"^^xsd:string ;
+    data:posIndicesPart "1212:1218"^^xsd:string,
+        "1233:1239"^^xsd:string,
+        "1247:1251"^^xsd:string,
+        "1976:1980"^^xsd:string,
+        "892:898"^^xsd:string ;
+    data:wdtLink wdt:Q160770 ;
+    :alsoKnownAs "George Edward Alexander Edmund of Wales"^^xsd:string,
+        "George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "George Kent"^^xsd:string,
+        "George of Wales"^^xsd:string,
+        "George, Duke of Kent"^^xsd:string,
+        "Prince George Edward Alexander Edmund of Wales"^^xsd:string,
+        "Prince George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "Prince George of Wales"^^xsd:string,
+        "The Prince George Edward Alexander Edmund of the United Kingdom"^^xsd:string,
+        "The Prince George Edward Alexander Edmund, Duke of Kent"^^xsd:string,
+        "The Prince George of the United Kingdom"^^xsd:string,
+        "The Prince George, Duke of Kent"^^xsd:string ;
+    :hasBrother data:Prince_George-_Duke_of_Kent ;
+    :hasChild data:Prince_Edward-_Duke_of_Kent ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor,
+        data:Marina_Windsor,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Edward-_Duke_of_Kent ;
+    :isAncestorOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor,
+        data:Marina_Windsor,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :isBloodrelationOf data:Prince_George-_Duke_of_Kent ;
+    :isBrotherOf data:Prince_George-_Duke_of_Kent ;
+    :isFatherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isParentOf data:Prince_Edward-_Duke_of_Kent ;
+    :isSiblingOf data:Prince_George-_Duke_of_Kent ;
+    :isUncleOf data:Prince_Edward-_Duke_of_Kent .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Marina of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "718:755"^^xsd:string ;
+    data:wdtLink wdt:Q170184 ;
+    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent"^^xsd:string,
+        "Princess Marina of Greece and Denmark, The Duchess of Kent"^^xsd:string,
+        "Princess Marina, The Duchess Of Kent"^^xsd:string ;
+    :hasChild data:Prince_Edward-_Duke_of_Kent ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor,
+        data:Marina_Windsor,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Edward-_Duke_of_Kent ;
+    :isAncestorOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor,
+        data:Marina_Windsor,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :isAuntOf data:Prince_Edward-_Duke_of_Kent ;
+    :isBloodrelationOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isParentOf data:Prince_Edward-_Duke_of_Kent ;
+    :isSiblingOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Katharine-_Duchess_of_Kent a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Katharine, Duchess of Kent"^^xsd:string ;
+    data:posIndicesFull "945:971"^^xsd:string ;
+    data:posIndicesPart "1965:1972"^^xsd:string,
+        "1976:1980"^^xsd:string,
+        "2105:2112"^^xsd:string ;
+    data:wdtLink wdt:Q236678 ;
+    :alsoKnownAs "Katharine Kent"^^xsd:string,
+        "Katharine Lucy Mary Worsley"^^xsd:string,
+        "Katharine Lucy Mary, Duchess of Kent"^^xsd:string,
+        "Katharine Worsley"^^xsd:string ;
+    :hasChild data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:George_Windsor-_Earl_of_St_Andrews,
+        data:Katharine-_Duchess_of_Kent,
+        data:Lord_Nicholas_Windsor,
+        data:Marina_Windsor ;
+    :hasSex data:female ;
+    :hasSister data:Katharine-_Duchess_of_Kent ;
+    :hasSon data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isAncestorOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor,
+        data:Marina_Windsor ;
+    :isAuntOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isBloodrelationOf data:Katharine-_Duchess_of_Kent ;
+    :isMotherOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isParentOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isSiblingOf data:Katharine-_Duchess_of_Kent ;
+    :isSisterOf data:Katharine-_Duchess_of_Kent .
+
+data:Sylvana_Windsor-_Countess_of_St_Andrews a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Sylvana Windsor, Countess of St Andrews"^^xsd:string ;
+    data:posIndicesFull "490:507"^^xsd:string ;
+    data:posIndicesPart "1796:1803"^^xsd:string ;
+    data:wdtLink wdt:Q763241 ;
+    :alsoKnownAs "Dr Sylvana Tomaselli"^^xsd:string,
+        "Sylvana Palma Tomaselli"^^xsd:string,
+        "Sylvana Tomaselli"^^xsd:string,
+        "Sylvana Windsor"^^xsd:string ;
+    :hasChild data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :hasDaughter data:Amelia_Windsor,
+        data:Marina_Windsor ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasSex data:female ;
+    :hasSister data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasSon data:Edward_Windsor-_Lord_Downpatrick ;
+    :isAncestorOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isAuntOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isBloodrelationOf data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isMotherOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isParentOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isSiblingOf data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isSisterOf data:Sylvana_Windsor-_Countess_of_St_Andrews .
+
+data:Lord_Nicholas_Windsor a :Man,
+        :Person ;
+    rdfs:label "Lord Nicholas Windsor"^^xsd:string ;
+    data:posIndicesFull "2318:2339"^^xsd:string,
+        "2323:2339"^^xsd:string ;
+    data:wdtLink wdt:Q1217757 ;
+    :alsoKnownAs "Lord Nicholas Charles Edward Jonathan Windsor"^^xsd:string,
+        "Nicholas Charles Edward Jonathan Windsor"^^xsd:string,
+        "Nicholas Windsor"^^xsd:string ;
+    :hasAncestor data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasBrother data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasFather data:Prince_Edward-_Duke_of_Kent ;
+    :hasMother data:Katharine-_Duchess_of_Kent ;
+    :hasParent data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasRelation data:George_Windsor-_Earl_of_St_Andrews,
+        data:Katharine-_Duchess_of_Kent,
+        data:Lord_Nicholas_Windsor,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isBrotherOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isChildOf data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :isSiblingOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isSonOf data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :isUncleOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor .
+
+data:Prince_Edward-_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Edward, Duke of Kent"^^xsd:string ;
+    data:posIndicesFull "176:189"^^xsd:string,
+        "176:203"^^xsd:string,
+        "191:203"^^xsd:string,
+        "2055:2068"^^xsd:string,
+        "535:548"^^xsd:string,
+        "535:562"^^xsd:string,
+        "550:562"^^xsd:string,
+        "700:712"^^xsd:string ;
+    data:posIndicesPart "1212:1218"^^xsd:string,
+        "1233:1239"^^xsd:string,
+        "1247:1251"^^xsd:string ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent"^^xsd:string,
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent"^^xsd:string,
+        "Edward Kent"^^xsd:string,
+        "His Royal Highness The Duke of Kent"^^xsd:string,
+        "Prince Edward"^^xsd:string,
+        "Prince Edward of Kent"^^xsd:string,
+        "The Duke of Kent"^^xsd:string ;
+    :hasAncestor data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
+    :hasChild data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasFather data:Prince_George-_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasParent data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor,
+        data:Marina_Windsor,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isAncestorOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor,
+        data:Marina_Windsor ;
+    :isBloodrelationOf data:Prince_Edward-_Duke_of_Kent ;
+    :isBrotherOf data:Prince_Edward-_Duke_of_Kent ;
+    :isChildOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isFatherOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isParentOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isSiblingOf data:Prince_Edward-_Duke_of_Kent ;
+    :isSonOf data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :isUncleOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor .
+
+data:Amelia_Windsor a :Person,
+        :Woman ;
+    rdfs:label "Amelia Windsor"^^xsd:string ;
+    data:posIndicesFull "0:49"^^xsd:string,
+        "298:347"^^xsd:string ;
+    data:posIndicesPart "1027:1033"^^xsd:string,
+        "1271:1277"^^xsd:string,
+        "1326:1332"^^xsd:string,
+        "1458:1464"^^xsd:string,
+        "1545:1551"^^xsd:string,
+        "1622:1628"^^xsd:string,
+        "1764:1770"^^xsd:string,
+        "2482:2488"^^xsd:string,
+        "2528:2534"^^xsd:string,
+        "2699:2705"^^xsd:string,
+        "2812:2818"^^xsd:string,
+        "2889:2895"^^xsd:string ;
+    data:wdtLink wdt:Q3743378 ;
+    :alsoKnownAs "Lady Amelia Sophia Theodora Mary Margaret Windsor"^^xsd:string,
+        "Mel Windsor"^^xsd:string,
+        "The Lady Amelia Sophia Theodora Mary Margaret Windsor"^^xsd:string ;
+    :hasAncestor data:George_Windsor-_Earl_of_St_Andrews,
+        data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasBrother data:Edward_Windsor-_Lord_Downpatrick ;
+    :hasFather data:George_Windsor-_Earl_of_St_Andrews ;
+    :hasMother data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasParent data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:George_Windsor-_Earl_of_St_Andrews,
+        data:Katharine-_Duchess_of_Kent,
+        data:Marina_Windsor,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasSex data:female ;
+    :hasSister data:Amelia_Windsor,
+        data:Marina_Windsor ;
+    :isBloodrelationOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isChildOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isDaughterOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isSiblingOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isSisterOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor .
+
+data:Edward_Windsor-_Lord_Downpatrick a :Man,
+        :Person ;
+    rdfs:label "Edward Windsor, Lord Downpatrick"^^xsd:string ;
+    data:posIndicesFull "1119:1151"^^xsd:string,
+        "1135:1151"^^xsd:string ;
+    data:wdtLink wdt:Q3736843 ;
+    :alsoKnownAs "Eddy Downpatrick"^^xsd:string,
+        "Edward Downpatrick"^^xsd:string,
+        "Edward Edmund Maximilian George Windsor, Baron Downpatrick"^^xsd:string,
+        "Lord Downpatrick"^^xsd:string ;
+    :hasAncestor data:George_Windsor-_Earl_of_St_Andrews,
+        data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasBrother data:Edward_Windsor-_Lord_Downpatrick ;
+    :hasFather data:George_Windsor-_Earl_of_St_Andrews ;
+    :hasMother data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasParent data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:George_Windsor-_Earl_of_St_Andrews,
+        data:Katharine-_Duchess_of_Kent,
+        data:Marina_Windsor,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasSex data:male ;
+    :hasSister data:Amelia_Windsor,
+        data:Marina_Windsor ;
+    :isBloodrelationOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isBrotherOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isChildOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isSiblingOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isSonOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews .
+
+data:Marina_Windsor a :Person,
+        :Woman ;
+    rdfs:label "Marina Windsor"^^xsd:string ;
+    data:posIndicesFull "1162:1176"^^xsd:string ;
+    data:wdtLink wdt:Q3743334 ;
+    :alsoKnownAs "Lady Marina Charlotte Alexandra Katharine Helen Windsor"^^xsd:string,
+        "Lady Marina Charlotte Windsor"^^xsd:string,
+        "Lady Marina-Charlotte Alexandra Katherine Helen Windsor"^^xsd:string,
+        "Lady Marina-Charlotte Windsor"^^xsd:string,
+        "Marina Charlotte Windsor"^^xsd:string,
+        "Marina-Charlotte Windsor"^^xsd:string ;
+    :hasAncestor data:George_Windsor-_Earl_of_St_Andrews,
+        data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasBrother data:Edward_Windsor-_Lord_Downpatrick ;
+    :hasFather data:George_Windsor-_Earl_of_St_Andrews ;
+    :hasMother data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasParent data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:George_Windsor-_Earl_of_St_Andrews,
+        data:Katharine-_Duchess_of_Kent,
+        data:Marina_Windsor,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :hasSex data:female ;
+    :hasSister data:Amelia_Windsor,
+        data:Marina_Windsor ;
+    :isBloodrelationOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isChildOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isDaughterOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Sylvana_Windsor-_Countess_of_St_Andrews ;
+    :isSiblingOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isSisterOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor .
+
+data:George_Windsor-_Earl_of_St_Andrews a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George Windsor, Earl of St Andrews"^^xsd:string ;
+    data:posIndicesFull "440:454"^^xsd:string,
+        "440:474"^^xsd:string ;
+    data:posIndicesPart "1785:1789"^^xsd:string,
+        "1796:1803"^^xsd:string,
+        "776:782"^^xsd:string,
+        "892:898"^^xsd:string ;
+    data:wdtLink wdt:Q1009513 ;
+    :alsoKnownAs "George Philip Nicholas Windsor"^^xsd:string,
+        "George Philip Nicholas Windsor, Earl of St Andrews"^^xsd:string,
+        "George Philip Nicholas Windsor, Earl of St. Andrews"^^xsd:string,
+        "George St Andrews"^^xsd:string,
+        "George St. Andrews"^^xsd:string,
+        "George Windsor"^^xsd:string ;
+    :hasAncestor data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasBrother data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :hasChild data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :hasDaughter data:Amelia_Windsor,
+        data:Marina_Windsor ;
+    :hasFather data:Prince_Edward-_Duke_of_Kent ;
+    :hasMother data:Katharine-_Duchess_of_Kent ;
+    :hasParent data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :hasRelation data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:George_Windsor-_Earl_of_St_Andrews,
+        data:Katharine-_Duchess_of_Kent,
+        data:Lord_Nicholas_Windsor,
+        data:Marina_Windsor,
+        data:Prince_Edward-_Duke_of_Kent,
+        data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Edward_Windsor-_Lord_Downpatrick ;
+    :isAncestorOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isBloodrelationOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isBrotherOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isChildOf data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :isFatherOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isParentOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor ;
+    :isSiblingOf data:George_Windsor-_Earl_of_St_Andrews,
+        data:Lord_Nicholas_Windsor ;
+    :isSonOf data:Katharine-_Duchess_of_Kent,
+        data:Prince_Edward-_Duke_of_Kent ;
+    :isUncleOf data:Amelia_Windsor,
+        data:Edward_Windsor-_Lord_Downpatrick,
+        data:Marina_Windsor .
+

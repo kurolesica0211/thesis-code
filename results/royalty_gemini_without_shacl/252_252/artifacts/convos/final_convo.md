@@ -69,26 +69,39 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Beatrix*
+Michael Fergus Bowes-Lyon, 18th and 5th Earl of Strathmore and Kinghorne (7 June 1957 – 27 February 2016), styled Lord Glamis between 1972 and 1987, also known as Mikey Strathmore, was a British Conservative politician, Scots Guards officer and stockbroker.
+Early life and education
+
+Strathmore was born on 7 June 1957 in Windsor, the only son of Fergus Bowes-Lyon, later 17th Earl of Strathmore and Kinghorne, and his wife, Mary Pamela McCorquodale.
+His paternal grandfather, Lieutenant-Colonel The Honourable Michael Bowes-Lyon, was an elder brother of Queen Elizabeth the Queen Mother, thus making Michael a first cousin once removed of Queen Elizabeth II and Princess Margaret.
+Career
+
+After Sandhurst, Strathmore was commissioned in the Scots Guards in 1980.
+In 1987, Strathmore succeeded his father as 18th Earl of Strathmore and Kinghorne and inherited Holwick Hall in Teesdale, County Durham, and Glamis Castle, the Queen Mother's girlhood home, in Angus.
+After resigning his ministerial post, Strathmore sat on the board of Polypipe from 1994 until it was acquired by IMI plc in 1999.
+He also served as president of Boys' Brigade from 1994 to 1999 and as patron of the Friends of the Bowes Museum in County Durham, a position he inherited from the Queen Mother.
+Personal life
+
+Strathmore was married three times.
+On 14 November 1984, Lord Glamis, as he was then, married Isobel Charlotte Weatherall (born c. 1962), great-granddaughter of Henry Keswick and sister of Percy Weatherall, at St James's Church, Piccadilly, with the Queen Mother in attendance.
+Strathmore and Weatherall were separated in 2003 and divorced in 2005.
+On 24 November 2005, Strathmore married Damaris Stuart-William, a clinical psychologist.
+They had one son:
 
 
-Princess Margriet*Pieter van Vollenhoven*
-
-
-Count Claus-Casimir of Orange-Nassau, Jonkheer van Amsberg (Claus-Casimir Bernhard Marius Max; born 21 March 2004), is the second child of Prince Constantijn and Princess Laurentien of the Netherlands and their only son.
-Claus-Casimir's godparents are King Willem-Alexander, Prince Maurits of Orange-Nassau, van Vollenhoven, Ed P. Spanjaard, and Countess Tatiana Razumovsky von Wigstein.
-Claus-Casimir grew up in Brussels before moving to The Hague in 2015.
-After attending high school at Vrijzinnig Christelijk Lyceum (VCL) in The Hague, Claus-Casimir moved to Scotland in 2020 to attend Gordonstoun School, leaving in 2022.
-Titles and styles
-
-By royal decree of 11 May 2001 (nr. 227), it was determined that the children born from the marriage of Prince Constantijn and Princess Laurentien of the Netherlands would bear the title Count/Countess of Orange‐Nassau and the honorific Jonkheer/Jonkvrouwe van Amsberg with the surname Van Oranje-Nassau van Amsberg.
-Upon the abdication of Queen Beatrix on 30 April 2013, the children of Prince Constantijn and Princess Laurentien ceased to be members of the Royal House, although they continue to be members of the royal family and in the line of succession to the Dutch throne.
+On 4 August 2012, Strathmore married Karen Baxter (née Orrock), who survived him.
+As a hobby, he restored old automobiles and lorries, often featuring in the Strathmore Vintage Vehicle Rally.
+In 2002, as the head of the Bowes-Lyon family, he walked behind the Queen Mother's coffin during her funeral procession and attended the private service of committal in the King George VI Memorial Chapel.
+Strathmore died of colorectal cancer on 27 February 2016 in London, aged 58.
+A memorial service was held at the Church of St Mary the Virgin in Middleton-in-Teesdale, near his County Durham properties, on 12 May and another, attended by Prince Charles, was held at St Martin-in-the-Fields in London on 8 June.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -104,39 +117,9 @@ Upon the abdication of Queen Beatrix on 30 April 2013, the children of Prince Co
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -151,6 +134,23 @@ Upon the abdication of Queen Beatrix on 30 April 2013, the children of Prince Co
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -168,6 +168,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -235,29 +250,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -266,6 +273,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -278,6 +293,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -286,17 +303,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -324,6 +343,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -339,55 +442,170 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (814d9971-2060-48f9-baa2-94fc4aa77ee1)
- Call ID: 814d9971-2060-48f9-baa2-94fc4aa77ee1
-  Args:
-    type: :Woman
-    source: :Beatrix
-  AssignClass (d64cb739-31e8-49f6-8d44-dfda89b4255c)
- Call ID: d64cb739-31e8-49f6-8d44-dfda89b4255c
-  Args:
-    type: :Woman
-    source: :Margriet
-  AssignClass (ad523299-ca80-4040-84bb-2a0b30569922)
- Call ID: ad523299-ca80-4040-84bb-2a0b30569922
+  AssignClass (a36c6a18-ccf4-44f1-ac59-d6d5f88e919d)
+ Call ID: a36c6a18-ccf4-44f1-ac59-d6d5f88e919d
   Args:
     type: :Man
-    source: :PieterVanVollenhoven
-  AssignClass (b102ff61-ce3c-4db3-a8d2-40ebf5aefb51)
- Call ID: b102ff61-ce3c-4db3-a8d2-40ebf5aefb51
+    source: Michael_Fergus_Bowes-Lyon
+  AssignClass (d8921871-cb23-4004-88a2-93f26aec5f89)
+ Call ID: d8921871-cb23-4004-88a2-93f26aec5f89
   Args:
-    source: :ClausCasimir
-    type: :Man
-  AssignClass (f7bb6bbd-fe09-448b-8348-3531d2e037dc)
- Call ID: f7bb6bbd-fe09-448b-8348-3531d2e037dc
-  Args:
-    source: :Constantijn
-    type: :Man
-  AssignClass (bf895a65-1b00-4258-b4f7-16536f30b898)
- Call ID: bf895a65-1b00-4258-b4f7-16536f30b898
-  Args:
-    type: :Woman
-    source: :Laurentien
-  AddLiteral (9038c58b-2051-4d8b-bb6f-b74eb65883df)
- Call ID: 9038c58b-2051-4d8b-bb6f-b74eb65883df
+    type: :Person
+    source: Michael_Fergus_Bowes-Lyon
+  AddLiteral (2705033a-a51b-414e-9f3d-c891993ae2f6)
+ Call ID: 2705033a-a51b-414e-9f3d-c891993ae2f6
   Args:
     literal_type: xsd:integer
-    source: :ClausCasimir
-    literal_value: 2004
     relation: :hasBirthYear
-  AddTriple (ba084a53-2eda-4a94-ad95-a351bb4011f5)
- Call ID: ba084a53-2eda-4a94-ad95-a351bb4011f5
+    literal_value: 1957
+    source: Michael_Fergus_Bowes-Lyon
+  AddLiteral (374a5630-2ac2-4e36-8ac7-42435b739f02)
+ Call ID: 374a5630-2ac2-4e36-8ac7-42435b739f02
   Args:
-    source: :ClausCasimir
-    target: :Constantijn
+    source: Michael_Fergus_Bowes-Lyon
+    relation: :hasDeathYear
+    literal_value: 2016
+    literal_type: xsd:integer
+  AddLiteral (18f20e12-97ce-4a35-bd46-f680d5044354)
+ Call ID: 18f20e12-97ce-4a35-bd46-f680d5044354
+  Args:
+    literal_type: xsd:string
+    relation: :alsoKnownAs
+    literal_value: Mikey Strathmore
+    source: Michael_Fergus_Bowes-Lyon
+  AssignClass (3366cc38-d6e8-40bc-8ec1-bb955987c1a4)
+ Call ID: 3366cc38-d6e8-40bc-8ec1-bb955987c1a4
+  Args:
+    type: :Man
+    source: Fergus_Bowes-Lyon
+  AssignClass (b3dccb99-1db2-4eae-8590-853ff46f5c44)
+ Call ID: b3dccb99-1db2-4eae-8590-853ff46f5c44
+  Args:
+    source: Fergus_Bowes-Lyon
+    type: :Person
+  AddTriple (b2d73964-18d5-4c1d-9a8e-c5b78e56a787)
+ Call ID: b2d73964-18d5-4c1d-9a8e-c5b78e56a787
+  Args:
+    source: Michael_Fergus_Bowes-Lyon
+    target: Fergus_Bowes-Lyon
     relation: :hasFather
-  AddTriple (548cd2b7-e544-4080-af51-bf69653d56a1)
- Call ID: 548cd2b7-e544-4080-af51-bf69653d56a1
+  AssignClass (d564154d-633e-4dd6-ab39-68b8e51a3104)
+ Call ID: d564154d-633e-4dd6-ab39-68b8e51a3104
   Args:
-    source: :ClausCasimir
-    target: :Laurentien
+    source: Mary_Pamela_McCorquodale
+    type: :Woman
+  AssignClass (4f2a947f-4a6e-4eef-8430-6381bf7ad0c4)
+ Call ID: 4f2a947f-4a6e-4eef-8430-6381bf7ad0c4
+  Args:
+    source: Mary_Pamela_McCorquodale
+    type: :Person
+  AddTriple (b850ebbf-8c10-42a5-8f13-59b1e9aa5331)
+ Call ID: b850ebbf-8c10-42a5-8f13-59b1e9aa5331
+  Args:
+    source: Michael_Fergus_Bowes-Lyon
     relation: :hasMother
-  Finish (6865da6a-f5ae-4830-9354-b93c67a7ef29)
- Call ID: 6865da6a-f5ae-4830-9354-b93c67a7ef29
+    target: Mary_Pamela_McCorquodale
+  AssignClass (0cbe6f39-00ff-49a4-8279-a1f0bf329d81)
+ Call ID: 0cbe6f39-00ff-49a4-8279-a1f0bf329d81
+  Args:
+    type: :Man
+    source: Michael_Bowes-Lyon_grandfather
+  AssignClass (505f8d19-5a0f-452c-ab14-7c22ec685c44)
+ Call ID: 505f8d19-5a0f-452c-ab14-7c22ec685c44
+  Args:
+    type: :Person
+    source: Michael_Bowes-Lyon_grandfather
+  AddTriple (dd634f34-f6f8-422e-8fba-0876c67d289e)
+ Call ID: dd634f34-f6f8-422e-8fba-0876c67d289e
+  Args:
+    relation: :hasFather
+    target: Michael_Bowes-Lyon_grandfather
+    source: Fergus_Bowes-Lyon
+  AssignClass (649c437e-c130-4276-a408-97ee28025637)
+ Call ID: 649c437e-c130-4276-a408-97ee28025637
+  Args:
+    source: Isobel_Charlotte_Weatherall
+    type: :Woman
+  AssignClass (c9109f73-928e-4a5e-99d6-e746c37fb808)
+ Call ID: c9109f73-928e-4a5e-99d6-e746c37fb808
+  Args:
+    type: :Person
+    source: Isobel_Charlotte_Weatherall
+  AddLiteral (556dda95-96e0-48a4-8a79-9ffffcf76c47)
+ Call ID: 556dda95-96e0-48a4-8a79-9ffffcf76c47
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1984
+    relation: :hasMarriageYear
+    source: Michael_Fergus_Bowes-Lyon
+  AddTriple (e2202377-54bb-47f4-aec7-d9750d6858a7)
+ Call ID: e2202377-54bb-47f4-aec7-d9750d6858a7
+  Args:
+    source: Michael_Fergus_Bowes-Lyon
+    relation: :hasRelation
+    target: Isobel_Charlotte_Weatherall
+  AssignClass (b88a39ca-d6b2-4d97-b9da-bad372b0c06f)
+ Call ID: b88a39ca-d6b2-4d97-b9da-bad372b0c06f
+  Args:
+    type: :Woman
+    source: Damaris_Stuart-William
+  AssignClass (d0dfb699-c7e5-4630-86ab-bdc28f133da1)
+ Call ID: d0dfb699-c7e5-4630-86ab-bdc28f133da1
+  Args:
+    type: :Person
+    source: Damaris_Stuart-William
+  AddLiteral (843a2fae-37e9-43d6-8314-dd276b385277)
+ Call ID: 843a2fae-37e9-43d6-8314-dd276b385277
+  Args:
+    source: Michael_Fergus_Bowes-Lyon
+    literal_value: 2005
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AddTriple (5a58f23b-52b7-45e9-a7fe-4a2b2d18e126)
+ Call ID: 5a58f23b-52b7-45e9-a7fe-4a2b2d18e126
+  Args:
+    source: Michael_Fergus_Bowes-Lyon
+    relation: :hasRelation
+    target: Damaris_Stuart-William
+  AssignClass (39e74f52-6100-4a74-adee-0eede5848cc8)
+ Call ID: 39e74f52-6100-4a74-adee-0eede5848cc8
+  Args:
+    type: :Woman
+    source: Karen_Baxter
+  AssignClass (8d3a316b-bfb7-41e3-aa1e-6d3321b9ab16)
+ Call ID: 8d3a316b-bfb7-41e3-aa1e-6d3321b9ab16
+  Args:
+    type: :Person
+    source: Karen_Baxter
+  AddLiteral (65a69d67-0b74-4fac-8d75-cbdbb00eb37f)
+ Call ID: 65a69d67-0b74-4fac-8d75-cbdbb00eb37f
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 2012
+    literal_type: xsd:integer
+    source: Michael_Fergus_Bowes-Lyon
+  AddTriple (e8af9a6a-a1be-41ae-9f46-aaf09e809d2e)
+ Call ID: e8af9a6a-a1be-41ae-9f46-aaf09e809d2e
+  Args:
+    target: Karen_Baxter
+    relation: :hasRelation
+    source: Michael_Fergus_Bowes-Lyon
+  AssignClass (8951cd24-c4e4-4bfb-923f-7840625b6fae)
+ Call ID: 8951cd24-c4e4-4bfb-923f-7840625b6fae
+  Args:
+    source: Percy_Weatherall
+    type: :Man
+  AssignClass (a00a5c9b-e7b8-429d-bb74-11254877897a)
+ Call ID: a00a5c9b-e7b8-429d-bb74-11254877897a
+  Args:
+    source: Percy_Weatherall
+    type: :Person
+  AddTriple (e7be1737-7cab-4ce5-ad41-7474cf127d2e)
+ Call ID: e7be1737-7cab-4ce5-ad41-7474cf127d2e
+  Args:
+    target: Percy_Weatherall
+    relation: :isSiblingOf
+    source: Isobel_Charlotte_Weatherall
+  Finish (e246e25e-b3c6-4b62-b662-89fbae9d30cb)
+ Call ID: e246e25e-b3c6-4b62-b662-89fbae9d30cb
   Args:

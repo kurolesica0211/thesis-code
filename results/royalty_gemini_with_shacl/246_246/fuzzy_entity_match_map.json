@@ -1,50 +1,50 @@
 {
   "run_directory": "results/royalty_gemini_with_shacl",
   "task_directory": "results/royalty_gemini_with_shacl/246_246",
-  "text_file": "Q3272681.txt",
-  "text_key": "Q3272681",
-  "article": "https://en.wikipedia.org/wiki/Lady_Cosima_Windsor",
-  "article_key": "Lady Cosima Windsor",
+  "text_file": "Q3270399.txt",
+  "text_key": "Q3270399",
+  "article": "https://en.wikipedia.org/wiki/Xan_Windsor",
+  "article_key": "Xan Windsor",
   "main_entity": {
-    "uri": "http://example.com/data#Lady_Cosima_Windsor",
-    "qid": "Q3272681",
-    "label": "Lady Cosima Windsor"
+    "uri": "http://example.com/data#Xan_Windsor-_Lord_Culloden",
+    "qid": "Q3270399",
+    "label": "Xan Windsor, Lord Culloden"
   },
   "candidate_entities": [
     {
-      "uri": "http://example.com/data#Lady_Cosima_Windsor",
-      "qid": "Q3272681",
-      "label": "Lady Cosima Windsor",
+      "uri": "http://example.com/data#Xan_Windsor-_Lord_Culloden",
+      "qid": "Q3270399",
+      "label": "Xan Windsor, Lord Culloden",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Alexander_Windsor-_Earl_of_Ulster",
       "qid": "Q621866",
       "label": "Alexander Windsor, Earl of Ulster",
       "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Claire_Booth",
       "qid": "Q45962",
       "label": "Claire Booth",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Birgitte-_Duchess_of_Gloucester",
       "qid": "Q241584",
       "label": "Birgitte, Duchess of Gloucester",
       "distance": 2,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_Richard-_Duke_of_Gloucester",
       "qid": "Q170294",
       "label": "Prince Richard, Duke of Gloucester",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     }
   ],
   "entities": [
@@ -59,11 +59,11 @@
       "ground_truth_qid": "Q621866",
       "ground_truth_label": "Alexander Windsor, Earl of Ulster",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Alexander Patrick Gregers Richard Windsor",
       "best_candidate_label": "Alexander Windsor, Earl of Ulster",
       "best_candidate_qid": "Q621866",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -77,11 +77,11 @@
       "ground_truth_qid": "Q45962",
       "ground_truth_label": "Claire Booth",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Claire Booth",
       "best_candidate_label": "Claire Booth",
       "best_candidate_qid": "Q45962",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -95,11 +95,11 @@
       "ground_truth_qid": "Q170294",
       "ground_truth_label": "Prince Richard, Duke of Gloucester",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Prince Richard- Duke of Gloucester",
       "best_candidate_label": "Prince Richard, Duke of Gloucester",
       "best_candidate_qid": "Q170294",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9866666666666667
     },
     {
@@ -113,17 +113,35 @@
       "ground_truth_qid": "Q241584",
       "ground_truth_label": "Birgitte, Duchess of Gloucester",
       "ground_truth_distance": 2,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Birgitte- Duchess of Gloucester",
       "best_candidate_label": "Birgitte, Duchess of Gloucester",
       "best_candidate_qid": "Q241584",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.9848484848484849
+    },
+    {
+      "extracted_uri": "http://example.org/data/Charles_III",
+      "extracted_local_name": "Charles_III",
+      "embedding_text": "Charles III",
+      "extracted_gender": "male",
+      "matched": false,
+      "score": null,
+      "ground_truth_uri": null,
+      "ground_truth_qid": null,
+      "ground_truth_label": null,
+      "ground_truth_distance": null,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Xan Richard Anders Windsor",
+      "best_candidate_label": "Xan Windsor, Lord Culloden",
+      "best_candidate_qid": "Q3270399",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.43243243243243246
     }
   ],
   "summary": {
-    "entities_total": 4,
+    "entities_total": 5,
     "entities_matched": 4,
-    "entities_unmatched": 0
+    "entities_unmatched": 1
   }
 }

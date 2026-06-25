@@ -1,0 +1,136 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Prince_Alexander-_Prince_of_Orange a :Man,
+        :Person ;
+    rdfs:label "Prince Alexander, Prince of Orange"^^xsd:string ;
+    data:posIndicesFull "0:27"^^xsd:string,
+        "385:420"^^xsd:string ;
+    data:posIndicesPart "1048:1057"^^xsd:string,
+        "1300:1306"^^xsd:string,
+        "1307:1316"^^xsd:string,
+        "1442:1448"^^xsd:string,
+        "1495:1501"^^xsd:string,
+        "1505:1511"^^xsd:string,
+        "249:258"^^xsd:string,
+        "309:318"^^xsd:string,
+        "543:549"^^xsd:string,
+        "687:693"^^xsd:string,
+        "803:809"^^xsd:string,
+        "813:819"^^xsd:string,
+        "821:830"^^xsd:string ;
+    data:wdtLink wdt:Q1938760 ;
+    :alsoKnownAs "Alexander, Prince of Orange"^^xsd:string,
+        "Prince Alexander of the Netherlands"^^xsd:string,
+        "Prince Alexander of the Netherlands, The Prince of Orange"^^xsd:string,
+        "Prince Alexander of the Netherlands, The Prince of Orange, Prince of Orange-Nassau"^^xsd:string,
+        "Prince Alexander, The Prince of Orange, Prince of Orange-Nassau"^^xsd:string ;
+    :hasAncestor data:William_III_of_the_Netherlands ;
+    :hasBrother data:Prince_Alexander-_Prince_of_Orange ;
+    :hasFather data:William_III_of_the_Netherlands ;
+    :hasParent data:William_III_of_the_Netherlands ;
+    :hasRelation data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:male ;
+    :hasSister data:Wilhelmina_of_the_Netherlands ;
+    :isBloodrelationOf data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands ;
+    :isChildOf data:William_III_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands ;
+    :isSonOf data:William_III_of_the_Netherlands .
+
+data:Wilhelmina_of_the_Netherlands a :Person,
+        :Woman ;
+    rdfs:label "Wilhelmina of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "985:1001"^^xsd:string,
+        "991:1001"^^xsd:string ;
+    data:posIndicesPart "1361:1372"^^xsd:string,
+        "1456:1467"^^xsd:string ;
+    data:wdtLink wdt:Q150747 ;
+    :alsoKnownAs "Princess Wilhelmina of The Netherlands"^^xsd:string,
+        "Princess Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Wilhelmina"^^xsd:string,
+        "Queen Wilhelmina of the Netherlands"^^xsd:string,
+        "Wilhelmina"^^xsd:string,
+        "Wilhelmina I"^^xsd:string,
+        "Wilhelmina Koningin der Nederlanden"^^xsd:string ;
+    :hasAncestor data:William_III_of_the_Netherlands ;
+    :hasBrother data:Prince_Alexander-_Prince_of_Orange ;
+    :hasFather data:William_III_of_the_Netherlands ;
+    :hasParent data:William_III_of_the_Netherlands ;
+    :hasRelation data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Wilhelmina_of_the_Netherlands ;
+    :isBloodrelationOf data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands ;
+    :isChildOf data:William_III_of_the_Netherlands ;
+    :isDaughterOf data:William_III_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands ;
+    :isSisterOf data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands .
+
+data:William_III_of_the_Netherlands a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "William III of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "1093:1104"^^xsd:string,
+        "135:170"^^xsd:string,
+        "140:151"^^xsd:string,
+        "140:170"^^xsd:string,
+        "493:504"^^xsd:string ;
+    data:posIndicesPart "1361:1372"^^xsd:string,
+        "1456:1467"^^xsd:string,
+        "605:612"^^xsd:string,
+        "694:701"^^xsd:string ;
+    data:wdtLink wdt:Q125649 ;
+    :alsoKnownAs "King William III of the Netherlands"^^xsd:string,
+        "Prince William of Orange"^^xsd:string,
+        "Willem III"^^xsd:string,
+        "Willem III der Nederlanden"^^xsd:string,
+        "Willem III of the Netherlands"^^xsd:string,
+        "William III"^^xsd:string,
+        "Z.M. den Koning"^^xsd:string ;
+    :hasBrother data:William_III_of_the_Netherlands ;
+    :hasChild data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasDaughter data:Wilhelmina_of_the_Netherlands ;
+    :hasRelation data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands,
+        data:William_III_of_the_Netherlands ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Alexander-_Prince_of_Orange ;
+    :isAncestorOf data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands ;
+    :isBloodrelationOf data:William_III_of_the_Netherlands ;
+    :isBrotherOf data:William_III_of_the_Netherlands ;
+    :isFatherOf data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands ;
+    :isParentOf data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands ;
+    :isSiblingOf data:William_III_of_the_Netherlands ;
+    :isUncleOf data:Prince_Alexander-_Prince_of_Orange,
+        data:Wilhelmina_of_the_Netherlands .
+

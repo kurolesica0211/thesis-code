@@ -16,14 +16,14 @@
       "qid": "Q14924803",
       "label": "Beatrix von Storch",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
     {
-      "extracted_uri": "http://example.org/data/Beatrix_von_Storch",
-      "extracted_local_name": "Beatrix_von_Storch",
-      "embedding_text": "Beatrix von Storch",
+      "extracted_uri": "http://example.org/data/BeatrixVonStorch",
+      "extracted_local_name": "BeatrixVonStorch",
+      "embedding_text": "Beatrix Von Storch",
       "extracted_gender": "female",
       "matched": true,
       "score": 1.0,
@@ -31,17 +31,17 @@
       "ground_truth_qid": "Q14924803",
       "ground_truth_label": "Beatrix von Storch",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Beatrix von Storch",
       "best_candidate_label": "Beatrix von Storch",
       "best_candidate_qid": "Q14924803",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/Antje_Liete_Kr%C3%BCger-Franke",
-      "extracted_local_name": "Antje_Liete_Kr%C3%BCger-Franke",
-      "embedding_text": "Antje Liete Krüger-Franke",
+      "extracted_uri": "http://example.org/data/AntjeLieteKrugerFranke",
+      "extracted_local_name": "AntjeLieteKrugerFranke",
+      "embedding_text": "Antje Liete Kruger Franke",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -53,13 +53,13 @@
       "best_candidate_match_text": "Beatrice Amelie Ehrengard Eilika von Holstein-Gottorp, Herzogin von Oldenburg",
       "best_candidate_label": "Beatrix von Storch",
       "best_candidate_qid": "Q14924803",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.2549019607843137
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.27450980392156865
     },
     {
-      "extracted_uri": "http://example.org/data/Berndt_Detlev_von_Storch",
-      "extracted_local_name": "Berndt_Detlev_von_Storch",
-      "embedding_text": "Berndt Detlev von Storch",
+      "extracted_uri": "http://example.org/data/BerndtDetlevVonStorch",
+      "extracted_local_name": "BerndtDetlevVonStorch",
+      "embedding_text": "Berndt Detlev Von Storch",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -75,9 +75,9 @@
       "best_candidate_score": null
     },
     {
-      "extracted_uri": "http://example.org/data/Sven_von_Storch",
-      "extracted_local_name": "Sven_von_Storch",
-      "embedding_text": "Sven von Storch",
+      "extracted_uri": "http://example.org/data/SvenVonStorch",
+      "extracted_local_name": "SvenVonStorch",
+      "embedding_text": "Sven Von Storch",
       "extracted_gender": "male",
       "matched": false,
       "score": null,

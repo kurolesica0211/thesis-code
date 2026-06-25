@@ -85,25 +85,23 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Maria Cristina of Bourbon-Two Sicilies (Full Italian name: Maria Cristina Carolina Pia Carmela Giuseppa Antonia Anna Luitgarda Speranza Lucia Caterina Apollonia Cecilia Agata di Borbone; 10 April 1877 – 4 October 1947) was the titular Grand Duchess of Tuscany from 28 February 1942 to 4 October 1947 as wife of Archduke Peter Ferdinand of Austria, Prince of Tuscany, the titular Grand Duke.
-Family
+Robert Jeremy Hugh Lascelles (born 14 February 1955) is a British music industry executive and occasional musician.
+Life
 
-Born into the Sicilian line of an ancient House of Bourbon, Princess Maria Cristina was the fifth child and second eldest daughter of Prince Alfonso of Bourbon-Two Sicilies, Count of Caserta and his wife, Princess Maria Antonietta of Bourbon-Two Sicilies.
-Marriage and issue
-
-Maria Cristina married Archduke Peter Ferdinand of Austria, Prince of Tuscany, fourth child and third son of Ferdinand IV, Grand Duke of Tuscany and his wife Princess Alice of Bourbon-Parma, on 8 November 1900 in Cannes.
-Maria Cristina and Peter Ferdinand had four children:
-
-
-Death
-
-Archduchess Maria Christina died in Landkreis Starnberg, Bavaria, on 4 October 1947, at the age of 70.
+Lascelles is the third child of George Lascelles, 7th Earl of Harewood, and Marion Stein, who later married Jeremy Thorpe.
+He is a great-grandson of King George V.
+This included playing percussion for the Global Village Trucking Company, for whom his older brother James Lascelles played keyboards.
+Lascelles stood down as CEO of Chrysalis Music in March 2012 and was subsequently named as a visiting professor at Leeds College of Music (LCoM), a role which commenced in October 2012.
+Lascelles was elected to the council of the BPI in 2003 and from 2004-2007 he served on the board of AIM as Vice-Chairman.
+Lascelles thinks himself very fortunate to have worked for 50 odd years at what he considers his hobby.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -119,39 +117,9 @@ Archduchess Maria Christina died in Landkreis Starnberg, Bavaria, on 4 October 1
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -166,6 +134,23 @@ Archduchess Maria Christina died in Landkreis Starnberg, Bavaria, on 4 October 1
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -183,6 +168,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -250,29 +250,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -281,6 +273,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -293,6 +293,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -301,17 +303,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -339,6 +343,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -354,136 +442,94 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e0d172bb-821a-42e4-89dd-8f83cf1cc023)
- Call ID: e0d172bb-821a-42e4-89dd-8f83cf1cc023
+  AssignClass (e1a3927e-190c-47ba-a116-7b1bbc5b1655)
+ Call ID: e1a3927e-190c-47ba-a116-7b1bbc5b1655
   Args:
-    type: :Woman
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AssignClass (3cefec23-09a7-4e01-b744-e76d720bafa3)
- Call ID: 3cefec23-09a7-4e01-b744-e76d720bafa3
+    source: Robert_Jeremy_Hugh_Lascelles
+    type: :Man
+  AssignClass (670e8a4d-a5cc-4e18-b34d-da94acd34c8d)
+ Call ID: 670e8a4d-a5cc-4e18-b34d-da94acd34c8d
   Args:
+    source: Robert_Jeremy_Hugh_Lascelles
     type: :Person
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AssignClass (ebb20f2f-bd12-435d-82d1-7821bc0f3e5d)
- Call ID: ebb20f2f-bd12-435d-82d1-7821bc0f3e5d
-  Args:
-    type: :Man
-    source: Peter_Ferdinand_of_Austria
-  AssignClass (f66ed3aa-a932-4134-a931-c7e93848ae71)
- Call ID: f66ed3aa-a932-4134-a931-c7e93848ae71
-  Args:
-    type: :Person
-    source: Peter_Ferdinand_of_Austria
-  AssignClass (ac0ea21f-2ee7-42f9-b974-2b2d7b436fd8)
- Call ID: ac0ea21f-2ee7-42f9-b974-2b2d7b436fd8
-  Args:
-    type: :Man
-    source: Alfonso_of_Bourbon-Two_Sicilies
-  AssignClass (d47dd0f0-9e9d-4b84-91c4-1782e0d9e529)
- Call ID: d47dd0f0-9e9d-4b84-91c4-1782e0d9e529
-  Args:
-    type: :Ancestor
-    source: Alfonso_of_Bourbon-Two_Sicilies
-  AssignClass (4d3c9d87-16b2-499f-93e1-76155cba846f)
- Call ID: 4d3c9d87-16b2-499f-93e1-76155cba846f
-  Args:
-    type: :Woman
-    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (f68cc664-66fd-498b-8284-a02c05703fc4)
- Call ID: f68cc664-66fd-498b-8284-a02c05703fc4
-  Args:
-    type: :Ancestor
-    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (7b51a2ce-5fba-4281-9030-99a13a4f713e)
- Call ID: 7b51a2ce-5fba-4281-9030-99a13a4f713e
-  Args:
-    type: :Man
-    source: Ferdinand_IV_of_Tuscany
-  AssignClass (4ca4a23d-4494-4458-a8aa-a927bc3446b1)
- Call ID: 4ca4a23d-4494-4458-a8aa-a927bc3446b1
-  Args:
-    type: :Ancestor
-    source: Ferdinand_IV_of_Tuscany
-  AssignClass (60264e0a-fe10-4954-933b-cb5b924c8465)
- Call ID: 60264e0a-fe10-4954-933b-cb5b924c8465
-  Args:
-    type: :Woman
-    source: Alice_of_Bourbon-Parma
-  AssignClass (3d3cdce7-bcf7-430a-982d-751e40a4be86)
- Call ID: 3d3cdce7-bcf7-430a-982d-751e40a4be86
-  Args:
-    type: :Ancestor
-    source: Alice_of_Bourbon-Parma
-  AddLiteral (a5ccae43-cf29-4125-8c13-518947c283d1)
- Call ID: a5ccae43-cf29-4125-8c13-518947c283d1
+  AddLiteral (2efc1aa0-c6bc-4013-94df-4a0f4d379809)
+ Call ID: 2efc1aa0-c6bc-4013-94df-4a0f4d379809
   Args:
     literal_type: xsd:integer
+    source: Robert_Jeremy_Hugh_Lascelles
     relation: :hasBirthYear
-    literal_value: 1877
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AddLiteral (68cb70a5-440d-4bdc-b3cc-9f201333930f)
- Call ID: 68cb70a5-440d-4bdc-b3cc-9f201333930f
+    literal_value: 1955
+  AssignClass (fdcee888-303f-46d2-a281-cef3b851d37f)
+ Call ID: fdcee888-303f-46d2-a281-cef3b851d37f
   Args:
-    literal_type: xsd:integer
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-    literal_value: 1947
-    relation: :hasDeathYear
-  AddLiteral (d3459277-6808-4224-91c7-802ed1b4afe7)
- Call ID: d3459277-6808-4224-91c7-802ed1b4afe7
+    source: George_Lascelles_7th_Earl_of_Harewood
+    type: :Man
+  AssignClass (61904d3f-1125-49a6-b253-6d4d5656f776)
+ Call ID: 61904d3f-1125-49a6-b253-6d4d5656f776
   Args:
-    relation: :hasMarriageYear
-    literal_value: 1900
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-    literal_type: xsd:integer
-  AddTriple (5cd967dc-9546-4d63-93ed-2d61b4a6d7d6)
- Call ID: 5cd967dc-9546-4d63-93ed-2d61b4a6d7d6
+    source: George_Lascelles_7th_Earl_of_Harewood
+    type: :Person
+  AssignClass (b25d337f-2401-411d-bf28-67c8d6aaaf9a)
+ Call ID: b25d337f-2401-411d-bf28-67c8d6aaaf9a
   Args:
+    source: Marion_Stein
+    type: :Woman
+  AssignClass (d00cc4ef-9599-43fb-b9bd-56da1656305a)
+ Call ID: d00cc4ef-9599-43fb-b9bd-56da1656305a
+  Args:
+    source: Marion_Stein
+    type: :Person
+  AddTriple (ded9c2a0-48b1-4a46-9ae5-7e65d9d714b3)
+ Call ID: ded9c2a0-48b1-4a46-9ae5-7e65d9d714b3
+  Args:
+    source: Robert_Jeremy_Hugh_Lascelles
+    target: George_Lascelles_7th_Earl_of_Harewood
     relation: :hasFather
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-    target: Alfonso_of_Bourbon-Two_Sicilies
-  AddTriple (05258257-2823-43d0-bc59-cf384a681820)
- Call ID: 05258257-2823-43d0-bc59-cf384a681820
+  AddTriple (a131f9cf-6af4-475e-816b-73a8bb286a21)
+ Call ID: a131f9cf-6af4-475e-816b-73a8bb286a21
   Args:
-    target: Maria_Antonietta_of_Bourbon-Two_Sicilies
     relation: :hasMother
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-  AddTriple (7afc3a9a-199c-4650-84b6-687520fd34d9)
- Call ID: 7afc3a9a-199c-4650-84b6-687520fd34d9
+    target: Marion_Stein
+    source: Robert_Jeremy_Hugh_Lascelles
+  AssignClass (11a13b8b-8cd2-4551-bbbf-697268acdf1b)
+ Call ID: 11a13b8b-8cd2-4551-bbbf-697268acdf1b
   Args:
-    relation: :hasFather
-    source: Peter_Ferdinand_of_Austria
-    target: Ferdinand_IV_of_Tuscany
-  AddTriple (01f00c69-e4bd-42ad-bdae-138fbaa62637)
- Call ID: 01f00c69-e4bd-42ad-bdae-138fbaa62637
+    source: Jeremy_Thorpe
+    type: :Man
+  AssignClass (ac12b7db-875b-464d-9a63-1d471983d2da)
+ Call ID: ac12b7db-875b-464d-9a63-1d471983d2da
   Args:
-    target: Alice_of_Bourbon-Parma
-    source: Peter_Ferdinand_of_Austria
-    relation: :hasMother
-  AddTriple (d54a2ccf-0cb3-4f30-a719-8b5cf1c78538)
- Call ID: d54a2ccf-0cb3-4f30-a719-8b5cf1c78538
+    source: Jeremy_Thorpe
+    type: :Person
+  AssignClass (7ee19e92-74d7-4b53-be78-df696b8d0e70)
+ Call ID: 7ee19e92-74d7-4b53-be78-df696b8d0e70
   Args:
-    relation: :hasRelation
-    source: Maria_Cristina_of_Bourbon-Two_Sicilies
-    target: Peter_Ferdinand_of_Austria
-  Finish (67b21cd6-6c8f-4329-812f-84fd1d8f4f9d)
- Call ID: 67b21cd6-6c8f-4329-812f-84fd1d8f4f9d
+    source: King_George_V
+    type: :Man
+  AssignClass (9fdb10b5-7519-4bf6-93f3-eb5198079c1f)
+ Call ID: 9fdb10b5-7519-4bf6-93f3-eb5198079c1f
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: King_George_V
+    type: :Person
+  AssignClass (a1ce1c45-c6c5-440e-8c31-9d43e0945a7a)
+ Call ID: a1ce1c45-c6c5-440e-8c31-9d43e0945a7a
+  Args:
+    source: James_Lascelles
+    type: :Man
+  AssignClass (cb4ea464-f3e5-4379-b08b-5bf0ad4a0307)
+ Call ID: cb4ea464-f3e5-4379-b08b-5bf0ad4a0307
+  Args:
+    source: James_Lascelles
+    type: :Person
+  AddTriple (7b89124c-14ae-4c30-a150-5854e1b1ed08)
+ Call ID: 7b89124c-14ae-4c30-a150-5854e1b1ed08
+  Args:
+    target: Robert_Jeremy_Hugh_Lascelles
+    source: James_Lascelles
+    relation: :isBrotherOf
+  Finish (21b02b1b-75c0-4dfa-adf8-c753c0e87cd8)
+ Call ID: 21b02b1b-75c0-4dfa-adf8-c753c0e87cd8
+  Args:
 
 ================================= Tool Message =================================
 
@@ -552,31 +598,27 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Maria_Cristina_of_Bourbon-Two_Sicilies a :Person,
-          :Woman ;
-      :hasBirthYear 1877 ;
-      :hasDeathYear 1947 ;
-      :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
-      :hasMarriageYear 1900 ;
-      :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-      :hasRelation data:Peter_Ferdinand_of_Austria .
-
-  data:Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Man .
-
-  data:Alice_of_Bourbon-Parma a :Ancestor,
-          :Woman .
-
-  data:Ferdinand_IV_of_Tuscany a :Ancestor,
-          :Man .
-
-  data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
-          :Woman .
-
-  data:Peter_Ferdinand_of_Austria a :Man,
+  data:James_Lascelles a :Man,
           :Person ;
-      :hasFather data:Ferdinand_IV_of_Tuscany ;
-      :hasMother data:Alice_of_Bourbon-Parma .
+      :isBrotherOf data:Robert_Jeremy_Hugh_Lascelles .
+
+  data:Jeremy_Thorpe a :Man,
+          :Person .
+
+  data:King_George_V a :Man,
+          :Person .
+
+  data:George_Lascelles_7th_Earl_of_Harewood a :Man,
+          :Person .
+
+  data:Marion_Stein a :Person,
+          :Woman .
+
+  data:Robert_Jeremy_Hugh_Lascelles a :Man,
+          :Person ;
+      :hasBirthYear 1955 ;
+      :hasFather data:George_Lascelles_7th_Earl_of_Harewood ;
+      :hasMother data:Marion_Stein .
 
 
 
@@ -588,8 +630,131 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (62fd1a07-1ece-4b8d-bfd4-9a5703ad5423)
- Call ID: 62fd1a07-1ece-4b8d-bfd4-9a5703ad5423
+  ValidateShacl (d954729d-3e3b-424b-9a81-3321dba129b3)
+ Call ID: d954729d-3e3b-424b-9a81-3321dba129b3
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:6
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person 'George_Lascelles_7th_Earl_of_Harewood' is assigned as the father of 'Robert_Jeremy_Hugh_Lascelles', but the system does not recognize the father as an 'Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='George_Lascelles_7th_Earl_of_Harewood', class=':Ancestor')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person 'Marion_Stein' is assigned as the mother of 'Robert_Jeremy_Hugh_Lascelles', but the system does not recognize the mother as an 'Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Marion_Stein', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father 'George_Lascelles_7th_Earl_of_Harewood' is missing the required classification as an 'Ancestor' to satisfy the family relationship validation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='George_Lascelles_7th_Earl_of_Harewood', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother 'Marion_Stein' is missing the required classification as an 'Ancestor' to satisfy the family relationship validation.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Marion_Stein', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The father 'George_Lascelles_7th_Earl_of_Harewood' lacks the 'Ancestor' class, which is a mandatory requirement for entities linked via the 'hasFather' property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='George_Lascelles_7th_Earl_of_Harewood', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The mother 'Marion_Stein' lacks the 'Ancestor' class, which is a mandatory requirement for entities linked via the 'hasMother' property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Marion_Stein', class=':Ancestor')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (44e2e2ac-45aa-4247-8b7d-72db0727e148)
+ Call ID: 44e2e2ac-45aa-4247-8b7d-72db0727e148
+  Args:
+    source: George_Lascelles_7th_Earl_of_Harewood
+    type: :Ancestor
+  AssignClass (d5e4be36-91f8-4bd0-af7f-04b1fabeaf18)
+ Call ID: d5e4be36-91f8-4bd0-af7f-04b1fabeaf18
+  Args:
+    source: Marion_Stein
+    type: :Ancestor
+  Finish (fc7ab083-f381-40ff-9ef3-8d9ae58c5119)
+ Call ID: fc7ab083-f381-40ff-9ef3-8d9ae58c5119
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:James_Lascelles a :Man,
+          :Person ;
+      :isBrotherOf data:Robert_Jeremy_Hugh_Lascelles .
+
+  data:Jeremy_Thorpe a :Man,
+          :Person .
+
+  data:King_George_V a :Man,
+          :Person .
+
+  data:George_Lascelles_7th_Earl_of_Harewood a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Marion_Stein a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Robert_Jeremy_Hugh_Lascelles a :Man,
+          :Person ;
+      :hasBirthYear 1955 ;
+      :hasFather data:George_Lascelles_7th_Earl_of_Harewood ;
+      :hasMother data:Marion_Stein .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (13756e09-7157-4a00-89ac-c0ebf60f6f35)
+ Call ID: 13756e09-7157-4a00-89ac-c0ebf60f6f35
   Args:
 
 ================================= Tool Message =================================
@@ -600,6 +765,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (8416624f-c8fe-44c7-975e-56c2356147f9)
- Call ID: 8416624f-c8fe-44c7-975e-56c2356147f9
+  Finish (fda2a579-80a3-4184-a571-f7458f563317)
+ Call ID: fda2a579-80a3-4184-a571-f7458f563317
   Args:

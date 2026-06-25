@@ -69,25 +69,32 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Duke Christian Louis of Mecklenburg (German: Christian-Ludwig Herzog zu Mecklenburg; 29 September 1912 – 18 July 1996) was the second son of the last reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV.
+Mary Frances Elphinstone, Lady Elphinstone GCVO (née Bowes-Lyon; 30 August 1883 – 8 February 1961), was a British aristocrat.
+She was an elder sister of Queen Elizabeth the Queen Mother and an aunt and godmother of Queen Elizabeth II.
 Early life
 
-Born in Schloss Ludwigslust, as a member of an elder, Mecklenburg-Schwerin line of an ancient House of Mecklenburg, he was the second child of the reigning Grand Duke of Mecklenburg-Schwerin, Frederick Francis IV, and his wife, Princess Alexandra of Hanover, third child and second daughter of Ernest Augustus, Crown Prince of Hanover and Princess Thyra of Denmark.
-After the abolition of the monarchy, in 1919 the family went at the invitation of Queen Alexandrine, consort of Christian X of Denmark and sister of the Grand Duke, into exile in Denmark, where they lived for a year in Sorgenfri Palace.
-Later, the family returned to Mecklenburg and lived in Gelbensande, and from 1921 the family settled at Ludwigslust Castle.
-After the war
+Lady Elphinstone was born The Honourable Mary Frances Bowes-Lyon on 30 August 1883 in Angus, Scotland, to Claude Bowes-Lyon, 14th
+She was an elder sister of Elizabeth Bowes-Lyon known as Queen Elizabeth of the United Kingdom (later the Queen Mother).
+Personal life
 
-When the war ended, Ludwigslust was first occupied by the British, but soon was transferred to the Soviet occupation, so that Christian Louis initially went with his family to Glücksburg Castle in Schleswig-Holstein.
-Together with his sister Thyra, he took part in the ship tour organized by Queen Frederica and her husband King Paul of Greece in 1954, which became known as the “Cruise of the Kings” and was attended by over 100 royals from all over Europe.
-Marriage and family
+Lady Mary married Sidney Elphinstone, 16th Lord Elphinstone (1869–1955) on 24 July 1910 in Westminster.
+Lord Elphinstone inherited extensive estates, some of which had been in the family since the reign of King David II of Scotland.
+He served as a governor of the Bank of Scotland, Lord Clerk Register of Scotland and Keeper of the Signet and Lord High Commissioner of the Church of Scotland.
+The couple had five children:
 
-On 5 July 1954 in Glücksburg, Christian Louis married in a civil wedding Princess Barbara of Prussia (1920–1994), the daughter of Prince Sigismund of Prussia and his wife, Princess Charlotte of Saxe-Altenburg.
+
+In 1937, Lady Elphinstone attended her sister and brother-in-law's coronation whereby she sat behind her niece Princess Elizabeth, who would be the future queen, in the royal box.
+She was one of the leading guests in the wedding of Princess Elizabeth and Philip Mountbatten in 1947.
+Lord Elphinstone died at their home Carberry Tower, Musselburgh, on 28 November 1955.
+Lady Elphinstone, who served as president of the Midlothian branch of the British Red Cross, died on 8 February 1961, aged 77, also at Carberry Tower in Inveresk, Scotland.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -103,39 +110,9 @@ On 5 July 1954 in Glücksburg, Christian Louis married in a civil wedding Prince
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -150,6 +127,23 @@ On 5 July 1954 in Glücksburg, Christian Louis married in a civil wedding Prince
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -167,6 +161,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -234,29 +243,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,6 +266,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -277,6 +286,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -285,17 +296,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -323,6 +336,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -338,120 +435,115 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (836d9a43-18bd-4d97-b13c-8e41a0914b62)
- Call ID: 836d9a43-18bd-4d97-b13c-8e41a0914b62
-  Args:
-    source: :ChristianLouisOfMecklenburg
-    type: :Man
-  AssignClass (e4644896-2a6a-4f99-9287-001510b50169)
- Call ID: e4644896-2a6a-4f99-9287-001510b50169
-  Args:
-    type: :Man
-    source: :FrederickFrancisIV
-  AssignClass (ae24b9c4-4d5a-4ba9-95d8-e02a8dfb8d46)
- Call ID: ae24b9c4-4d5a-4ba9-95d8-e02a8dfb8d46
-  Args:
-    source: :AlexandraOfHanover
-    type: :Woman
-  AssignClass (6df0a238-d4cd-4066-826b-73ee0583bf02)
- Call ID: 6df0a238-d4cd-4066-826b-73ee0583bf02
-  Args:
-    type: :Man
-    source: :ErnestAugustusCrownPrinceOfHanover
-  AssignClass (f2e0c8db-149f-48ad-b721-1ef3797de5a0)
- Call ID: f2e0c8db-149f-48ad-b721-1ef3797de5a0
+  AssignClass (ca75101d-e8b3-484f-b007-3a85fbb966b0)
+ Call ID: ca75101d-e8b3-484f-b007-3a85fbb966b0
   Args:
     type: :Woman
-    source: :ThyraOfDenmark
-  AssignClass (198e1c3a-0fcc-49ca-ad32-48830dc2af3d)
- Call ID: 198e1c3a-0fcc-49ca-ad32-48830dc2af3d
+    source: Mary_Frances_Elphinstone
+  AssignClass (b49aac4c-dfb2-49b7-aad4-78e6d530a8f5)
+ Call ID: b49aac4c-dfb2-49b7-aad4-78e6d530a8f5
   Args:
-    source: :ThyraOfMecklenburg
-    type: :Woman
-  AssignClass (53b3c50c-9431-41d2-b1c4-cb44e120227f)
- Call ID: 53b3c50c-9431-41d2-b1c4-cb44e120227f
+    source: Mary_Frances_Elphinstone
+    type: :Person
+  AddLiteral (8e9af9f1-2726-4759-9762-1b95fef4dda2)
+ Call ID: 8e9af9f1-2726-4759-9762-1b95fef4dda2
   Args:
-    type: :Woman
-    source: :BarbaraOfPrussia
-  AssignClass (9e3c9507-8d0a-4c7b-ae74-5c58adfd5381)
- Call ID: 9e3c9507-8d0a-4c7b-ae74-5c58adfd5381
-  Args:
-    source: :SigismundOfPrussia
-    type: :Man
-  AssignClass (c892fabc-7bf7-4299-b21d-53876ac69b7f)
- Call ID: c892fabc-7bf7-4299-b21d-53876ac69b7f
-  Args:
-    type: :Woman
-    source: :CharlotteOfSaxeAltenburg
-  AddLiteral (745dd70f-0495-49b0-922e-852751bc567c)
- Call ID: 745dd70f-0495-49b0-922e-852751bc567c
-  Args:
+    literal_type: xsd:integer
+    literal_value: 1883
     relation: :hasBirthYear
-    literal_value: 1912
-    source: :ChristianLouisOfMecklenburg
-    literal_type: xsd:integer
-  AddLiteral (aa944752-f0ee-49ab-b8f3-dc474185acbf)
- Call ID: aa944752-f0ee-49ab-b8f3-dc474185acbf
+    source: Mary_Frances_Elphinstone
+  AddLiteral (99ab52e5-14a7-40eb-ae23-d0fbc4ece57c)
+ Call ID: 99ab52e5-14a7-40eb-ae23-d0fbc4ece57c
   Args:
+    literal_value: 1961
     literal_type: xsd:integer
-    source: :ChristianLouisOfMecklenburg
-    literal_value: 1996
     relation: :hasDeathYear
-  AddTriple (98cb8877-18e6-4f61-a2d2-7d09449cb07e)
- Call ID: 98cb8877-18e6-4f61-a2d2-7d09449cb07e
+    source: Mary_Frances_Elphinstone
+  AssignClass (044752a6-cebd-4db7-bd28-15b3717a837b)
+ Call ID: 044752a6-cebd-4db7-bd28-15b3717a837b
   Args:
-    source: :ChristianLouisOfMecklenburg
-    target: :FrederickFrancisIV
-    relation: :hasFather
-  AddTriple (a0d5f11a-5075-495d-86d3-ac616b4b6296)
- Call ID: a0d5f11a-5075-495d-86d3-ac616b4b6296
+    type: :Woman
+    source: Elizabeth_Bowes-Lyon
+  AssignClass (48fe20d6-b24d-4f3f-9dee-0c841d5451ee)
+ Call ID: 48fe20d6-b24d-4f3f-9dee-0c841d5451ee
   Args:
-    source: :ChristianLouisOfMecklenburg
-    relation: :hasMother
-    target: :AlexandraOfHanover
-  AddTriple (3239c238-7144-4934-876a-83c00fb597dc)
- Call ID: 3239c238-7144-4934-876a-83c00fb597dc
+    source: Elizabeth_Bowes-Lyon
+    type: :Person
+  AddTriple (49baae79-5d6c-4de4-85bc-7b74e94cb1eb)
+ Call ID: 49baae79-5d6c-4de4-85bc-7b74e94cb1eb
   Args:
-    target: :ErnestAugustusCrownPrinceOfHanover
-    relation: :hasFather
-    source: :AlexandraOfHanover
-  AddTriple (84698a59-9721-49ce-8849-21ebb19e6940)
- Call ID: 84698a59-9721-49ce-8849-21ebb19e6940
+    source: Mary_Frances_Elphinstone
+    relation: :isSisterOf
+    target: Elizabeth_Bowes-Lyon
+  AssignClass (51e89122-762f-4ae7-b17c-deea4f2128d1)
+ Call ID: 51e89122-762f-4ae7-b17c-deea4f2128d1
   Args:
-    source: :AlexandraOfHanover
-    relation: :hasMother
-    target: :ThyraOfDenmark
-  AddTriple (ce30aa7b-7631-49e3-8c94-5864abb2db76)
- Call ID: ce30aa7b-7631-49e3-8c94-5864abb2db76
+    type: :Woman
+    source: Queen_Elizabeth_II
+  AssignClass (1cc2f67e-a3f5-44f0-b267-b3ed861ff99b)
+ Call ID: 1cc2f67e-a3f5-44f0-b267-b3ed861ff99b
   Args:
-    source: :ChristianLouisOfMecklenburg
-    relation: :hasSister
-    target: :ThyraOfMecklenburg
-  AddTriple (bb42d420-a24c-42c3-b0e0-f703e35f5dbd)
- Call ID: bb42d420-a24c-42c3-b0e0-f703e35f5dbd
+    source: Queen_Elizabeth_II
+    type: :Person
+  AddTriple (b1658366-ac9c-4631-a04e-7b4a47033b95)
+ Call ID: b1658366-ac9c-4631-a04e-7b4a47033b95
   Args:
-    source: :BarbaraOfPrussia
-    target: :SigismundOfPrussia
-    relation: :hasFather
-  AddTriple (66bf79e5-bd16-41e5-89f8-e9a5f74dc85f)
- Call ID: 66bf79e5-bd16-41e5-89f8-e9a5f74dc85f
+    target: Queen_Elizabeth_II
+    source: Mary_Frances_Elphinstone
+    relation: :isAuntOf
+  AssignClass (e760b3fd-4843-48eb-af53-22e752186f2b)
+ Call ID: e760b3fd-4843-48eb-af53-22e752186f2b
   Args:
-    source: :BarbaraOfPrussia
-    target: :CharlotteOfSaxeAltenburg
-    relation: :hasMother
-  AddLiteral (6eb23ace-cc59-4ad9-8871-baa5df55b2ad)
- Call ID: 6eb23ace-cc59-4ad9-8871-baa5df55b2ad
+    source: Claude_Bowes-Lyon
+    type: :Man
+  AssignClass (e37b8ea8-144c-409a-aa95-83a32ce8608b)
+ Call ID: e37b8ea8-144c-409a-aa95-83a32ce8608b
   Args:
-    literal_value: 1954
-    relation: :hasMarriageYear
+    type: :Person
+    source: Claude_Bowes-Lyon
+  AddTriple (c369b19e-e051-4e18-b0a5-fccdf6b6deae)
+ Call ID: c369b19e-e051-4e18-b0a5-fccdf6b6deae
+  Args:
+    relation: :isFatherOf
+    source: Claude_Bowes-Lyon
+    target: Mary_Frances_Elphinstone
+  AssignClass (7c937ccc-d12e-4158-a8fd-4d9c8fed91d3)
+ Call ID: 7c937ccc-d12e-4158-a8fd-4d9c8fed91d3
+  Args:
+    source: Sidney_Elphinstone
+    type: :Man
+  AssignClass (feef0133-ae5f-4981-8d5e-6118233da0b5)
+ Call ID: feef0133-ae5f-4981-8d5e-6118233da0b5
+  Args:
+    type: :Person
+    source: Sidney_Elphinstone
+  AddLiteral (7bf97905-c0b9-45b1-aef7-44d0fc36a45f)
+ Call ID: 7bf97905-c0b9-45b1-aef7-44d0fc36a45f
+  Args:
     literal_type: xsd:integer
-    source: :ChristianLouisOfMecklenburg
-  AddTriple (908f5996-63d4-4a0c-8ef7-f22c001bdd5e)
- Call ID: 908f5996-63d4-4a0c-8ef7-f22c001bdd5e
+    literal_value: 1869
+    source: Sidney_Elphinstone
+    relation: :hasBirthYear
+  AddLiteral (98fbc38c-6ebd-4e99-8b87-0059c85a0bc9)
+ Call ID: 98fbc38c-6ebd-4e99-8b87-0059c85a0bc9
   Args:
+    literal_value: 1955
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Sidney_Elphinstone
+  AddLiteral (d90c1c31-cf87-43f7-bd62-6a140bb126ce)
+ Call ID: d90c1c31-cf87-43f7-bd62-6a140bb126ce
+  Args:
+    literal_value: 1910
+    literal_type: xsd:integer
+    source: Mary_Frances_Elphinstone
+    relation: :hasMarriageYear
+  AddTriple (39d27261-d0d8-4209-a1e1-84b73854d8ef)
+ Call ID: 39d27261-d0d8-4209-a1e1-84b73854d8ef
+  Args:
+    target: Sidney_Elphinstone
     relation: :hasRelation
-    target: :BarbaraOfPrussia
-    source: :ChristianLouisOfMecklenburg
-  Finish (52b4ab02-3302-4e59-9c63-e83d69853081)
- Call ID: 52b4ab02-3302-4e59-9c63-e83d69853081
+    source: Mary_Frances_Elphinstone
+  Finish (5c9efa3d-c12a-4eab-9495-a5b4c7a7488e)
+ Call ID: 5c9efa3d-c12a-4eab-9495-a5b4c7a7488e
   Args:

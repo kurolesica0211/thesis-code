@@ -2,37 +2,34 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:King_Felipe_VI_of_Spain a :Man,
+data:Gonzalo a :Man,
         :Person ;
-    :hasAncestor data:Princess_Louise_Francoise_Marie_Laure_of_Orleans .
+    :alsoKnownAs "Gonzalve Victor Alphonse Joseph Boniface Antoine Marie Toussaint de Bourbon"^^xsd:string ;
+    :hasAncestor data:AlfonsoXIII,
+        data:VictoriaEugenie ;
+    :hasBirthYear 1937 ;
+    :hasDeathYear 2000 ;
+    :hasFather data:Jaime ;
+    :hasMother data:EmmanuelleDeDampierre ;
+    :isSiblingOf data:AlfonsoBrother ;
+    :knownAs "Gonzalo Víctor Alfonso José Bonifacio Antonio María y Todos los Santos de Borbón y Dampierre"^^xsd:string .
 
-data:Antoine_Duke_of_Montpensier a :Ancestor,
+data:AlfonsoBrother a :Man,
+        :Person .
+
+data:AlfonsoXIII a :Ancestor,
         :Man,
         :Person .
 
-data:Infanta_Luisa_Fernanda_of_Spain a :Ancestor,
+data:EmmanuelleDeDampierre a :Ancestor,
         :Person,
         :Woman .
 
-data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies a :Man,
-        :Person ;
-    :hasRelation data:Maria_de_las_Mercedes_Princess_of_Asturias .
+data:Jaime a :Ancestor,
+        :Man,
+        :Person .
 
-data:Maria_de_las_Mercedes_Princess_of_Asturias a :Person,
+data:VictoriaEugenie a :Ancestor,
+        :Person,
         :Woman .
-
-data:Princess_Louise_Francoise_Marie_Laure_of_Orleans a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1882 ;
-    :hasDeathYear 1958 ;
-    :hasMarriageYear 1907 ;
-    :hasMother data:Princess_Marie_Isabelle_dOrleans ;
-    :hasRelation data:Infante_Carlos_Prince_of_Bourbon_Two_Sicilies .
-
-data:Princess_Marie_Isabelle_dOrleans a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasFather data:Antoine_Duke_of_Montpensier ;
-    :hasMother data:Infanta_Luisa_Fernanda_of_Spain .
 

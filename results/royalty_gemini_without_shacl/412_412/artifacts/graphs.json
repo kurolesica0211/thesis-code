@@ -4,13 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso a :Man,\n        :Person ;\n    :alsoKnownAs \"Alfonsito\"^^xsd:string ;\n    :hasAncestor data:Alfonso_XIII ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Juan_Count_of_Barcelona ;\n    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;\n    :isBrotherOf data:Juan_Carlos_I ;\n    :isSonOf data:Juan_Count_of_Barcelona,\n        data:Maria_Mercedes_of_Bourbon_Two_Sicilies .\n\ndata:Alfonso_XIII a :Man,\n        :Person .\n\ndata:Juan_Carlos_I a :Man,\n        :Person ;\n    :isSonOf data:Juan_Count_of_Barcelona,\n        data:Maria_Mercedes_of_Bourbon_Two_Sicilies .\n\ndata:Juan_Count_of_Barcelona a :Man,\n        :Person .\n\ndata:Maria_Mercedes_of_Bourbon_Two_Sicilies a :Person,\n        :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,\n        :Person ;\n    :hasBirthYear 1966 ;\n    :hasDeathYear 2010 ;\n    :hasFather data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;\n    :knownAs \"Leonhard \\\"Leo\\\" L\u00f6wenstein\"^^xsd:string .\n\ndata:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,\n        :Person .\n\n"
     },
     {
         "graph_type": "data_graph",
         "iteration": 1,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Alfonso a :Man,\n        :Person ;\n    :alsoKnownAs \"Alfonsito\"^^xsd:string ;\n    :hasAncestor data:Alfonso_XIII ;\n    :hasBirthYear 1941 ;\n    :hasDeathYear 1956 ;\n    :hasFather data:Juan_Count_of_Barcelona ;\n    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;\n    :isBrotherOf data:Juan_Carlos_I ;\n    :isSonOf data:Juan_Count_of_Barcelona,\n        data:Maria_Mercedes_of_Bourbon_Two_Sicilies .\n\ndata:Alfonso_XIII a :Man,\n        :Person .\n\ndata:Juan_Carlos_I a :Man,\n        :Person ;\n    :isSonOf data:Juan_Count_of_Barcelona,\n        data:Maria_Mercedes_of_Bourbon_Two_Sicilies .\n\ndata:Juan_Count_of_Barcelona a :Man,\n        :Person .\n\ndata:Maria_Mercedes_of_Bourbon_Two_Sicilies a :Person,\n        :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,\n        :Person ;\n    :hasBirthYear 1966 ;\n    :hasDeathYear 2010 ;\n    :hasFather data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;\n    :knownAs \"Leonhard \\\"Leo\\\" L\u00f6wenstein\"^^xsd:string .\n\ndata:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,\n        :Person .\n\n"
     }
 ]

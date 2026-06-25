@@ -2,29 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Marie_Alexandra_of_Baden a :Woman ;
-    :hasFather data:Maximilian_of_Baden ;
-    :hasMother data:Marie_Louise_of_Hanover .
+data:Feodora_of_Saxe-Meiningen a :Person,
+        :Woman ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Friedrich_Johann_of_Saxe-Meiningen ;
+    :hasMarriageYear 1910 ;
+    :hasMother data:Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach ;
+    :knownAs "Grand Duchess of Saxe-Weimar-Eisenach"^^xsd:string .
 
-data:Marie_Louise_of_Hanover a :Woman .
+data:Frederick_William_of_Prussia a :Man,
+        :Person ;
+    :hasRelation data:Agatha_of_Hohenlohe-Schillingsf%C3%BCrst .
 
-data:Maximilian_of_Baden a :Man .
+data:Wilhelm_II a :Man,
+        :Person .
 
-data:Philipp_of_Hesse a :Man ;
-    :hasFather data:Frederick_Charles_of_Hesse ;
-    :hasMother data:Margaret_of_Prussia ;
-    :isBrotherOf data:Wolfgang_of_Hesse .
+data:Adelaide_of_Lippe-Biesterfeld a :Person,
+        :Woman ;
+    :hasFather data:Ernst_of_Lippe-Biesterfeld .
 
-data:Wolfgang_of_Hesse a :Man ;
-    :hasBirthYear 1896 ;
-    :hasDeathYear 1989 ;
-    :hasFather data:Frederick_Charles_of_Hesse ;
-    :hasMarriageYear 1924 ;
-    :hasMother data:Margaret_of_Prussia ;
-    :hasRelation data:Marie_Alexandra_of_Baden ;
-    :isBrotherOf data:Philipp_of_Hesse .
+data:Agatha_of_Hohenlohe-Schillingsf%C3%BCrst a :Person,
+        :Woman .
 
-data:Frederick_Charles_of_Hesse a :Man .
+data:Caroline_Reuss_Elder_Line a :Person,
+        :Woman .
 
-data:Margaret_of_Prussia a :Woman .
+data:Ellen_Franz a :Person,
+        :Woman .
+
+data:Ernst_of_Lippe-Biesterfeld a :Man,
+        :Person .
+
+data:Friedrich_Johann_of_Saxe-Meiningen a :Man,
+        :Person ;
+    :hasFather data:Georg_II_of_Saxe-Meiningen .
+
+data:Georg_II_of_Saxe-Meiningen a :Man,
+        :Person ;
+    :hasRelation data:Ellen_Franz .
+
+data:Wilhelm_Ernst_of_Saxe-Weimar-Eisenach a :Man,
+        :Person ;
+    :hasRelation data:Caroline_Reuss_Elder_Line .
 

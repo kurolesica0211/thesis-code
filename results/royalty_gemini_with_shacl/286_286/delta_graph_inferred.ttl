@@ -1,0 +1,391 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Bertrand a :Man ;
+    :hasBrother data:Prince_Bertrand ;
+    :hasRelation data:Prince_Bertrand ;
+    :isBloodrelationOf data:Prince_Bertrand ;
+    :isBrotherOf data:Prince_Bertrand ;
+    :isSiblingOf data:Prince_Bertrand .
+
+data:Antoine_13th_Prince_of_Ligne a :Ancestor,
+        :Man ;
+    :hasBrother data:Antoine_13th_Prince_of_Ligne ;
+    :hasChild data:Princess_Christine_of_Ligne ;
+    :hasDaughter data:Princess_Christine_of_Ligne ;
+    :hasRelation data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Prince_Pedro_Luiz,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Amelia,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isAncestorOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Antoine_13th_Prince_of_Ligne ;
+    :isBrotherOf data:Antoine_13th_Prince_of_Ligne ;
+    :isFatherOf data:Princess_Christine_of_Ligne ;
+    :isParentOf data:Princess_Christine_of_Ligne ;
+    :isSiblingOf data:Antoine_13th_Prince_of_Ligne ;
+    :isUncleOf data:Princess_Christine_of_Ligne .
+
+data:Prince_Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+    :hasChild data:Prince_Antonio ;
+    :hasRelation data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Prince_Pedro_Luiz,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Amelia,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasSon data:Prince_Antonio ;
+    :isAncestorOf data:Prince_Antonio,
+        data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+    :isBrotherOf data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+    :isFatherOf data:Prince_Antonio ;
+    :isParentOf data:Prince_Antonio ;
+    :isSiblingOf data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+    :isUncleOf data:Prince_Antonio .
+
+data:Princess_Alix_of_Luxembourg a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Christine_of_Ligne ;
+    :hasDaughter data:Princess_Christine_of_Ligne ;
+    :hasRelation data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Prince_Pedro_Luiz,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Amelia,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasSister data:Princess_Alix_of_Luxembourg ;
+    :isAncestorOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isAuntOf data:Princess_Christine_of_Ligne ;
+    :isBloodrelationOf data:Princess_Alix_of_Luxembourg ;
+    :isMotherOf data:Princess_Christine_of_Ligne ;
+    :isParentOf data:Princess_Christine_of_Ligne ;
+    :isSiblingOf data:Princess_Alix_of_Luxembourg ;
+    :isSisterOf data:Princess_Alix_of_Luxembourg .
+
+data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
+        :Woman ;
+    :hasChild data:Prince_Antonio ;
+    :hasRelation data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Prince_Pedro_Luiz,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Amelia,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasSister data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasSon data:Prince_Antonio ;
+    :isAncestorOf data:Prince_Antonio,
+        data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isAuntOf data:Prince_Antonio ;
+    :isBloodrelationOf data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isMotherOf data:Prince_Antonio ;
+    :isParentOf data:Prince_Antonio ;
+    :isSiblingOf data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isSisterOf data:Princess_Maria_Elisabeth_of_Bavaria .
+
+data:Prince_Pedro_Luiz a :Man ;
+    :hasAncestor data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasBrother data:Prince_Pedro_Luiz,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasFather data:Prince_Antonio ;
+    :hasMother data:Princess_Christine_of_Ligne ;
+    :hasParent data:Prince_Antonio,
+        data:Princess_Christine_of_Ligne ;
+    :hasRelation data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Prince_Pedro_Luiz,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Amelia,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasSister data:Princess_Amelia,
+        data:Princess_Maria_Gabriela ;
+    :isBloodrelationOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isBrotherOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isChildOf data:Prince_Antonio,
+        data:Princess_Christine_of_Ligne ;
+    :isSiblingOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isSonOf data:Prince_Antonio,
+        data:Princess_Christine_of_Ligne .
+
+data:Princess_Amelia a :Woman ;
+    :hasAncestor data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasBrother data:Prince_Pedro_Luiz,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasFather data:Prince_Antonio ;
+    :hasMother data:Princess_Christine_of_Ligne ;
+    :hasParent data:Prince_Antonio,
+        data:Princess_Christine_of_Ligne ;
+    :hasRelation data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Prince_Pedro_Luiz,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Amelia,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasSister data:Princess_Amelia,
+        data:Princess_Maria_Gabriela ;
+    :isBloodrelationOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isChildOf data:Prince_Antonio,
+        data:Princess_Christine_of_Ligne ;
+    :isDaughterOf data:Prince_Antonio,
+        data:Princess_Christine_of_Ligne ;
+    :isSiblingOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isSisterOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza .
+
+data:Princess_Maria_Gabriela a :Woman ;
+    :hasAncestor data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasBrother data:Prince_Pedro_Luiz,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasFather data:Prince_Antonio ;
+    :hasMother data:Princess_Christine_of_Ligne ;
+    :hasParent data:Prince_Antonio,
+        data:Princess_Christine_of_Ligne ;
+    :hasRelation data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Prince_Pedro_Luiz,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Amelia,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasSister data:Princess_Amelia,
+        data:Princess_Maria_Gabriela ;
+    :isBloodrelationOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isChildOf data:Prince_Antonio,
+        data:Princess_Christine_of_Ligne ;
+    :isDaughterOf data:Prince_Antonio,
+        data:Princess_Christine_of_Ligne ;
+    :isSiblingOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isSisterOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza .
+
+data:Rafael_of_Orleans-Braganza a :Man ;
+    :hasAncestor data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasBirthYear 1986 ;
+    :hasBrother data:Prince_Pedro_Luiz,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasFather data:Prince_Antonio ;
+    :hasMother data:Princess_Christine_of_Ligne ;
+    :hasParent data:Prince_Antonio,
+        data:Princess_Christine_of_Ligne ;
+    :hasRelation data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Prince_Pedro_Luiz,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Amelia,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasSister data:Princess_Amelia,
+        data:Princess_Maria_Gabriela ;
+    :isBloodrelationOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isBrotherOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isChildOf data:Prince_Antonio,
+        data:Princess_Christine_of_Ligne ;
+    :isSiblingOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isSonOf data:Prince_Antonio,
+        data:Princess_Christine_of_Ligne .
+
+data:Prince_Antonio a :Ancestor,
+        :Man ;
+    :hasAncestor data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasBrother data:Prince_Antonio ;
+    :hasChild data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasDaughter data:Princess_Amelia,
+        data:Princess_Maria_Gabriela ;
+    :hasDeathYear 2024 ;
+    :hasFather data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
+    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasParent data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :hasRelation data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Prince_Pedro_Luiz,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Amelia,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasSon data:Prince_Pedro_Luiz,
+        data:Rafael_of_Orleans-Braganza ;
+    :isAncestorOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Prince_Antonio ;
+    :isBrotherOf data:Prince_Antonio ;
+    :isChildOf data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isFatherOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isParentOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isSiblingOf data:Prince_Antonio ;
+    :isSonOf data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Princess_Maria_Elisabeth_of_Bavaria ;
+    :isUncleOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza .
+
+data:Princess_Christine_of_Ligne a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Antoine_13th_Prince_of_Ligne,
+        data:Princess_Alix_of_Luxembourg ;
+    :hasChild data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasDaughter data:Princess_Amelia,
+        data:Princess_Maria_Gabriela ;
+    :hasFather data:Antoine_13th_Prince_of_Ligne ;
+    :hasMother data:Princess_Alix_of_Luxembourg ;
+    :hasParent data:Antoine_13th_Prince_of_Ligne,
+        data:Princess_Alix_of_Luxembourg ;
+    :hasRelation data:Antoine_13th_Prince_of_Ligne,
+        data:Prince_Antonio,
+        data:Prince_Pedro_Henrique_of_Orleans-Braganza,
+        data:Prince_Pedro_Luiz,
+        data:Princess_Alix_of_Luxembourg,
+        data:Princess_Amelia,
+        data:Princess_Christine_of_Ligne,
+        data:Princess_Maria_Elisabeth_of_Bavaria,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :hasSister data:Princess_Christine_of_Ligne ;
+    :hasSon data:Prince_Pedro_Luiz,
+        data:Rafael_of_Orleans-Braganza ;
+    :isAncestorOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isAuntOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isBloodrelationOf data:Princess_Christine_of_Ligne ;
+    :isChildOf data:Antoine_13th_Prince_of_Ligne,
+        data:Princess_Alix_of_Luxembourg ;
+    :isDaughterOf data:Antoine_13th_Prince_of_Ligne,
+        data:Princess_Alix_of_Luxembourg ;
+    :isMotherOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isParentOf data:Prince_Pedro_Luiz,
+        data:Princess_Amelia,
+        data:Princess_Maria_Gabriela,
+        data:Rafael_of_Orleans-Braganza ;
+    :isSiblingOf data:Princess_Christine_of_Ligne ;
+    :isSisterOf data:Princess_Christine_of_Ligne .
+

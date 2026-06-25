@@ -69,51 +69,140 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Duke Henry of Mecklenburg-Schwerin (German: Heinrich Wladimir Albrecht Ernst; Dutch: Hendrik Vladimir Albrecht Ernst; 19 April 1876 – 3 July 1934) was Prince of the Netherlands from 7 February 1901 until his death in 1934 as the husband of Queen Wilhelmina.
-Biography
+Grand Duke Andrei Vladimirovich of Russia (Russian: Андре́й Влади́мирович; 14 May  1879 – 30 October 1956) was the youngest son of Grand Duke Vladimir Alexandrovich of Russia, and thus a grandson of Emperor Alexander II and the first cousin of Nicholas II, the last Russian emperor.
+In 1900, he began an affair with the famous ballerina Mathilde Kschessinska, becoming the third grand duke to fall for her.
+Grand Duke Andrei followed a military career and graduated from the  Alexandrovskaya Military Law academy in Saint Petersburg in 1905.
+He took part in World War I, but was away from real combat, spending most of the conflict at Russia's General Staff headquarters or in idle time in ceremonial positions in Saint Petersburg.
+In February 1917, shortly before the fall of the Russian monarchy, Grand Duke Andrei left Saint Petersburg to join his mother in Kislovodsk in the northern Caucasus.
+After the October Revolution of November 1917, he was briefly arrested along with his brother, Grand Duke Boris, but they escaped.
+He departed revolutionary Russia in March 1920, being the last grand duke to leave for exile.
+In 1921, he married his longtime mistress, Mathilde Kschessinska (1872-1971), and recognized her son Vladimir (or "Vova") as his own.
+After World War II, Grand Duke Andrei lived in reduced circumstances.
+At his death at age 77, he was the last surviving Russian grand duke born in Imperial Russia.
+Early life
 
-Henry of Mecklenburg-Schwerin was born on 19 April 1876 in Schwerin.
-He was the youngest son of Frederick Francis II, Grand Duke of Mecklenburg-Schwerin, and his third wife, Princess Marie of Schwarzburg-Rudolstadt.
-On 6 February 1901, Henry was created a Prince of the Netherlands and the next day, 7 February, married Queen Wilhelmina in The Hague.
-Their only child together, Princess Juliana, was born in 1909.
-Henry also fathered at least one illegitimate child, Pim Lier by his mistress Willemina Martina Wenneker (1887–1973).
-Born in 1918, Lier eventually rose to prominence in post-war Dutch politics as chairman of the extreme-right Centre Party.
-The birth of a son out of wedlock was likely symptomatic of the duke's increasingly strained relationship with his wife.
-Henry attended and even presided over the festivities, but Wilhelmina stayed away and stated that she was prevented from attending by her personal religious conviction that the type of event should not take place on a Sunday.
-Henry became the 279th Knight Grand Cross of the Portuguese Order of the Tower and Sword, and in 1924, he was appointed as the 1,157th Knight of the Spanish Order of the Golden Fleece.
-He died in The Hague, Netherlands, on 3 July 1934, aged 58.
-Scouting
+Grand Duke Andrei Vladimirovich of Russia was born on 14 May  1879 in Tsarskoye Selo, at his parents country residence, the Vladimir Villa.
+He was the youngest of the four Vladimirovich sons; a sister followed him a few years later, and the eldest of his brothers died in early childhood.
+His father, Grand Duke Vladimir Alexandrovich, a brother of Tsar Alexander III of Russia, was a renowned patron of the arts.
+Andrei's mother, Grand Duchess, Maria Pavlovna, née a Duchess of Mecklenburg-Schwerin, was one of the greatest hostesses of Russian society.
+Both parents doted on their four surviving children: Andrei, his two eldest brothers, Kirill and Boris, and their younger sister, Grand Duchess Elena.
+Raised by British nannies, English was Andrei's first language.
+Grand Duke Andrei grew up in opulence.
+The family's main residence was the Vladimir Palace in Saint Petersburg, but as his father preferred country life, they spent the greater part of the year at the Vladimir Villa, a mansion in Tsarskoye Selo, returning to Saint Petersburg during the winter.
+Following Romanov tradition, Andrei was destined to follow a military career.
+While his eldest brother, Kirill, chose the Imperial navy, Andrei and his brother Boris joined the infantry.
+Andrei began his military service in August 1898 as lieutenant in the Guards Horse-Artillery Brigade.
+In spite of his appointments, Grand Duke Andrei did not have much interest in his military career.
+Relationship with Kschessinska
 
-Henry successfully merged the two Dutch Boy Scout organisations Nederlandse Padvinders Organisatie (NPO, Netherlands Pathfinder Organisation) and the Nederlandse Padvinders Bond (NPB, Netherlands Pathfinder Federation) on 11 December 1915 to form De Nederlandse Padvinders (NPV, The Netherlands Pathfinders).
-Extramarital relationships
+Grand Duke Andrei was tall, shy and good looking.
+He was a good friend of his cousin Grand Duke Michael Alexandrovich, who was a year older.
+In February 1900, Grand Duke Andrei was invited by his brothers, Grand Dukes Kirill and Boris, to a dinner party at the house of Mathilde Kschessinska.
+Grand Duke Andrei sat next to his hostess during the dinner, but accidentally spilt a glass of red wine on her.
+Mathilde, attracted to the young grand duke, seven years her junior, took the incident as good omen.
+She subsequently began a long time affair with Grand Duke Sergei Mikhailovich of Russia, Nicholas and Andrei's first cousin once removed.
+As she was not in love with Sergei, but enjoyed his company and protection, Mathilde pursued a relationship with Grand Duke Andrei, the third Romanov to become involved with her.
+Grand Duke Sergei tolerated their affair, remaining a close and loyal friend to the famous ballerina, but the relationship between the two grand dukes grew tense.
+Both grand dukes were at first convinced they were the child's father.
+After the Revolution, Kschessinska and Grand Duke Andrei maintained that Andrei was the father.
+The child, who became known within the family by his nickname, Vova, received the name and patronymic Vladimir Sergeievich.
+Grand Duke Sergei was devoted to the child, looking after mother and son until his exile and subsequent execution following the fall of the Russian monarchy.
+The question of Vladimir's paternity remains unresolved.
+However, most sources attribute the paternity to Grand Duke Andrei Vladimirovich, whom the child resembled.
+A Russian Grand Duke
 
-Prince Henry was known to have had numerous extra-marital affairs.
-It is rumored that he fathered between three and ten illegitimate children; however, firm proof remains elusive, except for Albrecht Willem Lier, known as the above-noted Pim Lier (22 July 1918 – 9 April 2015).
-During her widowhood, Queen Wilhelmina paid monthly allowances to three known ex-mistresses: Julia Cervey in Geneva (ƒ200 per month), Wilhelmine Steiner in Zurich (ƒ500 per month), and Mien Lier-Wenneker (1887–1973), in The Hague (ƒ500 per month).
-Mien Abbo-Wenneker (later Lier-Wenneker), gave birth to a total of six children; the older two, sisters Christina Margaretha Abbo and Edith Abbo (later Sheep-Abbo) were ostensibly the daughters of Mien's first husband, Dhr.
-Abbo, but strongly rumored to have been fathered by Prince Henry.
-In 1919, Mien married Lieutenant Jan Derk Lier, a former aide-de-camp to Prince Henry.
-A grant of one hundred thousand guilders was arranged for Lt. Lier from the State by police chief François van 't Sant, whom Queen Wilhelmina engaged to verify the facts of her husband's extramarital relationships and children.
-The male parent of the remaining three children was not verified as being either Prince Henry or Lt. Lier.
-Subsequent to their birth, no additional allowance was settled on the family; in fact, the monthly allowance of one thousand guilders to Lt. Jan Derk Lier was halved by van't Sant after a short period, although the allowance to his wife continued.
-Honours and awards
+In 1903, Grand Duke Andrei purchased his own palace.
+As upkeep of the mansion was expensive, it was sold to Grand Duke Andrei for 400 thousand rubles.
+Grand Duke Andrei seldom lived there.
+Grand Duke Andrei could neither openly live together with Mathilda nor did there exist the possibility of contracting a morganatic marriage with her.
+The couple always had to travel with his Aide-de-camp, Feodor Von Kube, and when Grand Duke Andrei was invited to events, Mathilda could not join him.
+As a member of the Russian Imperial family, Grand Duke Andrei took some duties of representation.
+In 1911, he visited Ferdinand I of Bulgaria for a second time as a representative of Russia, and he was appointed senator in that year.
+In the summer of 1912, Grand Duke Andrei fell ill with bronchitis.
+Fearing the onset of tuberculosis, he was sent to recuperate in the Crimea, staying in a palace owned by his cousin Grand Duke Nikolai Nikolayevich.
+Upon his return to Russia, Andrei Vladimirovich took part in the 300th anniversary celebrations of the Romanov dynasty.
+Villa Alam was completely remodeled and Andrei and Mathilde returned there in the spring of 1914, hoping to stay there every spring.
+War and revolution
 
-Ancestry
+With the outbreak of World War I, Grand Duke Andrei joined the staff at the headquarters of the Northwestern front fighting against Germany.
+By 1916, Grand Duke Andrei joined other members of his family in political intrigues against the Empress who was in charge of the government in Saint Petersburg while Nicholas II was away at Russia's war military headquarters.
+In December 1916, the Assassination of Rasputin, in which Grand Duke Dmitri Pavlovich and Prince Felix Yusupov took part, divided the Romanov family further.
+Grand Duke Andrei joined many of his relatives in asking for clemency for the culprits.
+As Andrei's ambitious mother intrigued against Empress Alexandra, Nicholas II ordered the Grand Duchess to leave Saint Petersburg for a time.
+After a short personal interview with Nicholas II, on 16 January 1917, Grand Duke Andrei left for Kislovodsk, a spa resort town in the Caucasus.
+Andrei Vladimirovich and his mother were in Kislovodsk when Nicholas II was forced to abdicate at the outbreak of the February Revolution.
+The diaries of Grand Duke Andrei, written while he was in the army in the North-Eastern Front (1914–1915) and in Petrograd (1916–1917), have survived at the State Archives of the Russian Federation.
+In July 1917, Mathilde and her son escaped the disturbance in Saint Petersburg, joining Andrei in Kislovodsk.
+However, they could not live together as Grand Duchess Maria Pavlovna was reluctant to acknowledge their presence.
+Andrei found separate living arrangements for them while he settled in a different villa with his brother Grand Duke Boris, who arrived in September.
+During the period of the provisional government Grand Duke Andrei, his brother and mother lived mostly undisturbed in Kislovodsk, protected by local Cossacks.
+Seventeen of the 52 Romanovs living in Russia were executed during the red terror.
+Escaping the Bolsheviks
 
-See also
+The Bolsheviks arrested Grand Duke Andrei and his brother Boris on the night of 7 August 1918, after a systematic search of their villa.
+Likely to be rearrested, the two grand dukes escaped to the surrounding mountains with Andrei's aide-de-camp, Colonel Von Kube, on 26 August 1918.
+They lived in hiding for almost five weeks, moving from village to village under protection of the Kabarda tribes, sheltered by Colonel Andrei Shkuro and his band of loyal Cossacks.
+On the evening of 23 September, Grand Duke Andrei, his brother Boris and Colonel Von Kube returned to the city on horseback, accompanied by Kabardian nobles who had protected them.
+During their time hiding in the mountains, Andrei allowed his beard to become overgrown.
+However, Grand Duchess Maria Pavlovna was determined to remain in Russia hoping that the White movement would prevail and Andrei's brother, Grand Duke Kirill Vladimirovich, would be installed as Tsar.
+It was suggested that Grand Duke Andrei should join the White army of General Anton Denikin, but the grand duchess opposed the idea, stating that members of the Romanov family should not take part in Russia's civil war.
+Against his mother's wishes, Grand Duke Boris left with his future wife, Zinaida Rashevskaya, in March 1919.
+On 29 March, Admiral Edward Hobart Seymour, commander of the British fleet in the Black Sea, offered to take Grand Duke Andrei and his mother to Constantinople, but Grand Duchess Maria Pavlovna again flatly refused.
+By Christmas, the Red army was to retake Kislovodsk and Grand Duke Andrei, with his mother and their entourage, decided to go to Novorossiysk, on the eastern coast of the Black Sea, where General Peter Wrangel had kept the Reds away.
+One day before their departure from Kislovodsk, Von Kube, Andrei's faithful adjutant, died of typhus.
+Grand Duke Andrei and his mother were the last Romanovs to leave Russia for exile.
+Exile
 
-References
+Once in Venice, Grand Duke Andrei accompanied his mother via train to Cannes, on the French Riviera.
+Grand Duchess Maria Pavlovna died a few months later in September 1920.
+During her illness in Contrexéville, Grand Duke Andrei was reunited for the first time in exile with his three siblings.
+At his mother's death the last obstacle for Grand Duke Andrei to marry Mathilde Kchessinska was lifted.
+Andrei asked permission to marry Kchessinska from his brother Grand Duke Kirill and from Empress Maria Feodorovna, widow of Tsar Alexander III, the senior members of the Romanov family; both gave their consent.
+Grand Duke Andrei also claimed paternity of Kchessinska's son, Prince Vladimir Romanovsky-Krasinsky (30 June 1902 – 23 April 1974).
+In 1924, Grand Duke Andrei's eldest brother, Kirill, proclaimed himself Tsar in exile.
+Grand Duke Andrei supported his brother's claim.
+Grand Duke Kirill granted to Mathilde and her son the titles of Princess and Prince Romanovsky-Krasinsky, with the treatment of Serene Highness.
+During their first years in exile, Grand Duke Andrei and his wife were in better economic circumstances than many of the other Romanovs.
+Tsar Nicholas II made his relatives sell their properties abroad, repatriating their fortune to Russia during the war, but Grand Duke Andrei was able to keep Villa Alam in Cap-d'Ail because the property was under Mathilda's name.
+To have cash flow and maintain his standard of living, Andrei sold the jewel collection that he inherited from his mother, and he mortgaged Villa Alam.
+They traveled frequently to Paris, and Grand Duke Andrei was also active in philanthropic work, raising funds for Russian refugees.
+In 1928, Grand Duke Andrei became one of the few members of the Romanov family to believe the claim of Anna Anderson, the best known of several impostors who claimed to be the youngest daughter of Tsar Nicholas II, Grand Duchess Anastasia.
+Anderson was on the eve of her first trip to the United States when Grand Duke Andrei visited her once in January 1928.
+Although he had not been particularly close to Nicholas II and his family, Grand Duke Andrei had met the real Anastasia in family events through the years and while in service as aide-de-camp to the Tsar.
+Grand Duke Kirill protested his brother's support of Anderson and discouraged his intervention in the case.
+In later years, Grand Duke Andrei recanted his opinion.
+Grand Duke Andrei and his wife liked to gamble.
+Last years
 
-External links
+During the 1930s, Mathilde's ballet school prospered, allowing Grand Duke Andrei and his family to have a comfortable, yet modest life.
+Andrei Vladimirovich also kept in touch with his Romanov relatives, particularly his brothers and many of his cousins, such as Grand Duke Dmitri Pavlovich, Grand Duchess Maria Pavlovna, Jr. and Prince Gabriel Constantinovich.
+His relationship with his sister, Grand Duchess Elena Vladimirovna of Russia, became strained as she never truly accepted Mathilde as a member of the family.
+At the outbreak of World War II, under the threat of a German bombing of Paris, Grand Duke Andrei and his family moved to Le Vésinet.
+Following the German invasion of France, they fled by train to Grand Duke Boris's Villa in Biarritz.
+Prince Vladimir Romanovsky-Krasinsky (who took a Westernized version of his mother's Polish name, Krzesińska, hyphenated with the adjective version of his father's name) was spoiled by his parents and never had an independent life.
+Vladimir was arrested by the Gestapo and held in a camp for Russian emigrants in Compiègne.
+Grand Duke Andrei visited German Police Headquarters multiple times and asked for help from Russian émigrés to get his son released, but neither group would help him.
+Vladimir was finally freed after 119 days in detention.
+During the war years the two other surviving grand dukes died; Grand Duke Dmitri Pavlovich in 1942 and Grand Duke Boris in 1943.
+With the death of his brother Boris, Andrei became the last surviving Grand Duke of the Romanov dynasty who had been born in Imperial Russia.
+Grand Duke Andrei's last years were marked by increasingly frail health and straitened financial circumstances.
+To balance his finances, he relied partially on economic aid from his nephew, Grand Duke Vladimir Kirillovich.
+In 1954, Grand Duke Andrei became a godfather of Grand Duke Vladimir's only child, Grand Duchess Maria Vladimirovna of Russia, the current claimant to the headship of the Romanov family.
+Despite poor health, Grand Duke Andrei lived to be 77 years old, an age reached by few in the Romanov family.
+He surpassed the longevity record held by his great-uncle, Grand Duke Michael Nikolaevich, by almost six months.
+On the morning of 31 October 1956, Grand Duke Andrei worked in his study.
+Prince Vladimir Romanovsky-Krasinsky died unmarried and childless in France in 1974, three years after his mother.
+Portrayal
 
-2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
-3 title granted by Royal Decree to descendants of Princess Irene
+Actor Grigory Dobrygin portrayed Grand Duke Andrei Vladimirovich in Matilda, a Russian biopic from director Alexei Uchitel released in 2017.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -129,39 +218,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -176,6 +235,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -193,6 +269,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,29 +351,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -291,6 +374,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -303,6 +394,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -311,17 +404,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -349,6 +444,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -364,294 +543,33 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8dd4cffc-58ee-4516-aae4-5291cd0f215f)
- Call ID: 8dd4cffc-58ee-4516-aae4-5291cd0f215f
+  AssignClass (a9349ca2-8daf-4466-8a34-bc8999b9fe87)
+ Call ID: a9349ca2-8daf-4466-8a34-bc8999b9fe87
   Args:
-    source: Henry_of_Mecklenburg-Schwerin
+    source: :Grand_Duke_Andrei_Vladimirovich_of_Russia
     type: :Man
-  AssignClass (43f6a498-0f4a-45f0-8590-ec5be986c838)
- Call ID: 43f6a498-0f4a-45f0-8590-ec5be986c838
-  Args:
-    type: :Man
-    source: Frederick_Francis_II
-  AssignClass (4890810d-8352-4e0e-a98a-afbe1fae6e82)
- Call ID: 4890810d-8352-4e0e-a98a-afbe1fae6e82
-  Args:
-    source: Marie_of_Schwarzburg-Rudolstadt
-    type: :Woman
-  AssignClass (dd967145-0ec7-44a7-a962-c11f751042c6)
- Call ID: dd967145-0ec7-44a7-a962-c11f751042c6
-  Args:
-    type: :Woman
-    source: Queen_Wilhelmina
-  AssignClass (ae04aab0-063e-4840-a402-7176c362b30e)
- Call ID: ae04aab0-063e-4840-a402-7176c362b30e
-  Args:
-    type: :Woman
-    source: Princess_Juliana
-  AssignClass (1ff2e1c6-85ee-4966-ba51-5606a4095e49)
- Call ID: 1ff2e1c6-85ee-4966-ba51-5606a4095e49
-  Args:
-    source: Pim_Lier
-    type: :Man
-  AssignClass (32fae5fc-4593-4335-b4ed-3921424c4330)
- Call ID: 32fae5fc-4593-4335-b4ed-3921424c4330
-  Args:
-    source: Willemina_Martina_Wenneker
-    type: :Woman
-  AssignClass (aca303ff-1542-4ad9-86a1-74a7cbc605dd)
- Call ID: aca303ff-1542-4ad9-86a1-74a7cbc605dd
-  Args:
-    source: Jan_Derk_Lier
-    type: :Man
-  AddLiteral (dfcf5fa7-ec9d-475d-bbc1-fb4fee2a0dbf)
- Call ID: dfcf5fa7-ec9d-475d-bbc1-fb4fee2a0dbf
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+
+  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddLiteral (b6f18312-66f1-4944-aec3-0842d3df735f)
+ Call ID: b6f18312-66f1-4944-aec3-0842d3df735f
   Args:
     relation: :hasBirthYear
+    source: :Grand_Duke_Andrei_Vladimirovich_of_Russia
     literal_type: xsd:integer
-    source: Henry_of_Mecklenburg-Schwerin
-    literal_value: 1876
-  AddLiteral (93b373e3-8d3e-4103-a865-6b10f1772dab)
- Call ID: 93b373e3-8d3e-4103-a865-6b10f1772dab
-  Args:
-    literal_value: 1934
-    source: Henry_of_Mecklenburg-Schwerin
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-  AddTriple (60d8833f-390e-4e0c-85dc-2f110e9a076a)
- Call ID: 60d8833f-390e-4e0c-85dc-2f110e9a076a
-  Args:
-    source: Henry_of_Mecklenburg-Schwerin
-    relation: :hasFather
-    target: Frederick_Francis_II
-  AddTriple (ea37e859-4549-40bd-abdc-011a1f1f6ee2)
- Call ID: ea37e859-4549-40bd-abdc-011a1f1f6ee2
-  Args:
-    source: Henry_of_Mecklenburg-Schwerin
-    target: Marie_of_Schwarzburg-Rudolstadt
-    relation: :hasMother
-  AddTriple (f06b5bfc-0057-4c36-a7ec-71b6c1e53566)
- Call ID: f06b5bfc-0057-4c36-a7ec-71b6c1e53566
-  Args:
-    relation: :isFatherOf
-    target: Princess_Juliana
-    source: Henry_of_Mecklenburg-Schwerin
-  AddTriple (09be4994-f8f8-4a88-8b7e-af30372062b7)
- Call ID: 09be4994-f8f8-4a88-8b7e-af30372062b7
-  Args:
-    source: Queen_Wilhelmina
-    target: Princess_Juliana
-    relation: :isMotherOf
-  AddTriple (1d856d7a-7419-45de-878d-89efddf6b4b0)
- Call ID: 1d856d7a-7419-45de-878d-89efddf6b4b0
-  Args:
-    source: Henry_of_Mecklenburg-Schwerin
-    target: Pim_Lier
-    relation: :isFatherOf
-  AddTriple (0e3eb461-47a8-4198-9b69-26ef25739031)
- Call ID: 0e3eb461-47a8-4198-9b69-26ef25739031
-  Args:
-    source: Willemina_Martina_Wenneker
-    relation: :isMotherOf
-    target: Pim_Lier
-  AddLiteral (57873235-5d4b-45af-bcfc-e81cb9594389)
- Call ID: 57873235-5d4b-45af-bcfc-e81cb9594389
-  Args:
-    literal_type: xsd:string
-    source: Henry_of_Mecklenburg-Schwerin
-    literal_value: Heinrich Wladimir Albrecht Ernst
-    relation: :knownAs
-  AddLiteral (fce70475-5cad-4f8b-8eb8-34dd65bfd6ed)
- Call ID: fce70475-5cad-4f8b-8eb8-34dd65bfd6ed
-  Args:
-    relation: :knownAs
-    source: Henry_of_Mecklenburg-Schwerin
-    literal_value: Hendrik Vladimir Albrecht Ernst
-    literal_type: xsd:string
-  AddLiteral (94f8d580-b924-4c76-8cda-2209c8afea6f)
- Call ID: 94f8d580-b924-4c76-8cda-2209c8afea6f
-  Args:
-    source: Pim_Lier
-    literal_value: Albrecht Willem Lier
-    literal_type: xsd:string
-    relation: :knownAs
-  AddLiteral (0b570959-1b3e-4280-891c-9e6a7e53135a)
- Call ID: 0b570959-1b3e-4280-891c-9e6a7e53135a
-  Args:
-    relation: :knownAs
-    literal_type: xsd:string
-    source: Willemina_Martina_Wenneker
-    literal_value: Mien Lier-Wenneker
-  AddLiteral (c74a16e7-6214-4722-8a5e-429dec9f2ba3)
- Call ID: c74a16e7-6214-4722-8a5e-429dec9f2ba3
-  Args:
-    literal_value: Mien Abbo-Wenneker
-    source: Willemina_Martina_Wenneker
-    literal_type: xsd:string
-    relation: :formerlyKnownAs
-  AddTriple (a01a5660-6ed9-4d01-92df-d2a0bae1e4d8)
- Call ID: a01a5660-6ed9-4d01-92df-d2a0bae1e4d8
-  Args:
-    source: Henry_of_Mecklenburg-Schwerin
-    relation: :hasSex
-    target: :Male
-  AddTriple (5b253b01-8b29-4121-b2af-f4354fa0ba98)
- Call ID: 5b253b01-8b29-4121-b2af-f4354fa0ba98
-  Args:
-    source: Frederick_Francis_II
-    target: :Male
-    relation: :hasSex
-  AddTriple (407d577c-26de-46f5-8399-496d62a16fd4)
- Call ID: 407d577c-26de-46f5-8399-496d62a16fd4
-  Args:
-    target: :Female
-    relation: :hasSex
-    source: Marie_of_Schwarzburg-Rudolstadt
-  AddTriple (8d400800-8e75-4451-8904-d87a5ba97dd5)
- Call ID: 8d400800-8e75-4451-8904-d87a5ba97dd5
-  Args:
-    source: Queen_Wilhelmina
-    relation: :hasSex
-    target: :Female
-  AddTriple (c54aec51-3732-43d4-8af8-a3533dae8307)
- Call ID: c54aec51-3732-43d4-8af8-a3533dae8307
-  Args:
-    source: Princess_Juliana
-    target: :Female
-    relation: :hasSex
-  AddTriple (99fc3803-6726-44ca-a3f3-2be4b0416083)
- Call ID: 99fc3803-6726-44ca-a3f3-2be4b0416083
-  Args:
-    target: :Male
-    relation: :hasSex
-    source: Pim_Lier
-  AddTriple (19821280-cbd8-42f3-af4b-1e25bce98c39)
- Call ID: 19821280-cbd8-42f3-af4b-1e25bce98c39
-  Args:
-    relation: :hasSex
-    target: :Female
-    source: Willemina_Martina_Wenneker
-  AddTriple (28d940be-ca7a-4f6e-91d9-4358cef82eeb)
- Call ID: 28d940be-ca7a-4f6e-91d9-4358cef82eeb
-  Args:
-    source: Jan_Derk_Lier
-    relation: :hasSex
-    target: :Male
-  Finish (107749f5-bb34-45cc-80dc-eb887c07a746)
- Call ID: 107749f5-bb34-45cc-80dc-eb887c07a746
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    literal_value: 1879
 
 ================================= Tool Message =================================
 
@@ -660,77 +578,322 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Henry_of_Mecklenburg-Schwerin a :Man ;
-      :hasBirthYear 1876 ;
-      :hasDeathYear 1934 ;
-      :hasFather data:Frederick_Francis_II ;
-      :hasMother data:Marie_of_Schwarzburg-Rudolstadt ;
-      :hasSex data:Male ;
-      :isFatherOf data:Pim_Lier,
-          data:Princess_Juliana ;
-      :knownAs "Heinrich Wladimir Albrecht Ernst"^^xsd:string,
-          "Hendrik Vladimir Albrecht Ernst"^^xsd:string .
-
-  data:Jan_Derk_Lier a :Man ;
-      :hasSex data:Male .
-
-  data:Queen_Wilhelmina a :Woman ;
-      :hasSex data:Female ;
-      :isMotherOf data:Princess_Juliana .
-
-  data:Willemina_Martina_Wenneker a :Woman ;
-      :formerlyKnownAs "Mien Abbo-Wenneker"^^xsd:string ;
-      :hasSex data:Female ;
-      :isMotherOf data:Pim_Lier ;
-      :knownAs "Mien Lier-Wenneker"^^xsd:string .
-
-  data:Frederick_Francis_II a :Man ;
-      :hasSex data:Male .
-
-  data:Marie_of_Schwarzburg-Rudolstadt a :Woman ;
-      :hasSex data:Female .
-
-  data:Pim_Lier a :Man ;
-      :hasSex data:Male ;
-      :knownAs "Albrecht Willem Lier"^^xsd:string .
-
-  data:Princess_Juliana a :Woman ;
-      :hasSex data:Female .
+  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;
+      :hasBirthYear 1879 .
 
 
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male', 'Female']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  AssignClass (d202aae2-c569-4ba8-b090-2f1890afabc6)
- Call ID: d202aae2-c569-4ba8-b090-2f1890afabc6
+  AddLiteral (f8b26662-807a-4479-8b6e-f5ac39584620)
+ Call ID: f8b26662-807a-4479-8b6e-f5ac39584620
   Args:
-    type: :Sex
-    source: Male
-  AssignClass (2127adfb-6a07-4cd0-8e4c-cbe12dda2e5a)
- Call ID: 2127adfb-6a07-4cd0-8e4c-cbe12dda2e5a
+    literal_value: 1956
+    source: :Grand_Duke_Andrei_Vladimirovich_of_Russia
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1956 .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (2b3787ab-0e7e-4d87-a123-ed4a2cb1bcda)
+ Call ID: 2b3787ab-0e7e-4d87-a123-ed4a2cb1bcda
   Args:
-    type: :Sex
-    source: Female
-  Finish (4c1a9681-b3d0-4685-99ab-a9b6633b26e2)
- Call ID: 4c1a9681-b3d0-4685-99ab-a9b6633b26e2
+    type: :Man
+    source: :Grand_Duke_Vladimir_Alexandrovich_of_Russia
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1956 .
+
+  data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (c2880a3c-4364-4bd9-9506-a36d62e28df6)
+ Call ID: c2880a3c-4364-4bd9-9506-a36d62e28df6
+  Args:
+    relation: :hasFather
+    target: :Grand_Duke_Vladimir_Alexandrovich_of_Russia
+    source: :Grand_Duke_Andrei_Vladimirovich_of_Russia
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1956 ;
+      :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia .
+
+  data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (914a6383-ab37-416d-a859-302a5f50a23a)
+ Call ID: 914a6383-ab37-416d-a859-302a5f50a23a
+  Args:
+    source: :Grand_Duchess_Maria_Pavlovna
+    type: :Woman
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Grand_Duchess_Maria_Pavlovna a :Woman .
+
+  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1956 ;
+      :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia .
+
+  data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (0fa595e1-4d23-4646-b2a8-08021607b94f)
+ Call ID: 0fa595e1-4d23-4646-b2a8-08021607b94f
+  Args:
+    target: :Grand_Duchess_Maria_Pavlovna
+    relation: :hasMother
+    source: :Grand_Duke_Andrei_Vladimirovich_of_Russia
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1956 ;
+      :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+      :hasMother data:Grand_Duchess_Maria_Pavlovna .
+
+  data:Grand_Duchess_Maria_Pavlovna a :Woman .
+
+  data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (2adcb605-f2fa-44ea-8ed1-9d88e89ede24)
+ Call ID: 2adcb605-f2fa-44ea-8ed1-9d88e89ede24
+  Args:
+    source: :Mathilde_Kschessinska
+    type: :Woman
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1956 ;
+      :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+      :hasMother data:Grand_Duchess_Maria_Pavlovna .
+
+  data:Mathilde_Kschessinska a :Woman .
+
+  data:Grand_Duchess_Maria_Pavlovna a :Woman .
+
+  data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddLiteral (a8ac5e22-683f-4dbf-9041-dd230f5876d0)
+ Call ID: a8ac5e22-683f-4dbf-9041-dd230f5876d0
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 1921
+    source: :Grand_Duke_Andrei_Vladimirovich_of_Russia
+    literal_type: xsd:integer
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1956 ;
+      :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+      :hasMarriageYear 1921 ;
+      :hasMother data:Grand_Duchess_Maria_Pavlovna .
+
+  data:Mathilde_Kschessinska a :Woman .
+
+  data:Grand_Duchess_Maria_Pavlovna a :Woman .
+
+  data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (a39e06c3-9712-4158-915f-af5a06c13325)
+ Call ID: a39e06c3-9712-4158-915f-af5a06c13325
+  Args:
+    type: :Man
+    source: :Prince_Vladimir_Romanovsky-Krasinsky
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1956 ;
+      :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+      :hasMarriageYear 1921 ;
+      :hasMother data:Grand_Duchess_Maria_Pavlovna .
+
+  data:Mathilde_Kschessinska a :Woman .
+
+  data:Prince_Vladimir_Romanovsky-Krasinsky a :Man .
+
+  data:Grand_Duchess_Maria_Pavlovna a :Woman .
+
+  data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (c6815df6-96cf-44bc-832f-7b53aa9cc3c2)
+ Call ID: c6815df6-96cf-44bc-832f-7b53aa9cc3c2
+  Args:
+    relation: :hasSon
+    source: :Grand_Duke_Andrei_Vladimirovich_of_Russia
+    target: :Prince_Vladimir_Romanovsky-Krasinsky
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1956 ;
+      :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+      :hasMarriageYear 1921 ;
+      :hasMother data:Grand_Duchess_Maria_Pavlovna ;
+      :hasSon data:Prince_Vladimir_Romanovsky-Krasinsky .
+
+  data:Mathilde_Kschessinska a :Woman .
+
+  data:Grand_Duchess_Maria_Pavlovna a :Woman .
+
+  data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .
+
+  data:Prince_Vladimir_Romanovsky-Krasinsky a :Man .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (fc43faf3-9dd8-401b-b6fb-def5abe0c1e8)
+ Call ID: fc43faf3-9dd8-401b-b6fb-def5abe0c1e8
+  Args:
+    target: :Mathilde_Kschessinska
+    relation: :hasMother
+    source: :Prince_Vladimir_Romanovsky-Krasinsky
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Grand_Duke_Andrei_Vladimirovich_of_Russia a :Man ;
+      :hasBirthYear 1879 ;
+      :hasDeathYear 1956 ;
+      :hasFather data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+      :hasMarriageYear 1921 ;
+      :hasMother data:Grand_Duchess_Maria_Pavlovna ;
+      :hasSon data:Prince_Vladimir_Romanovsky-Krasinsky .
+
+  data:Grand_Duchess_Maria_Pavlovna a :Woman .
+
+  data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man .
+
+  data:Mathilde_Kschessinska a :Woman .
+
+  data:Prince_Vladimir_Romanovsky-Krasinsky a :Man ;
+      :hasMother data:Mathilde_Kschessinska .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (ea4a6c75-ecfe-42a6-aec1-eeff3b0e8306)
+ Call ID: ea4a6c75-ecfe-42a6-aec1-eeff3b0e8306
   Args:

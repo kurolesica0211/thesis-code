@@ -69,17 +69,50 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Kira Auguste Viktoria Friederike of Prussia (27 June 1943 – 10 January 2004) was the fourth child and second daughter of Louis Ferdinand, Prince of Prussia and Grand Duchess Kira Kirillovna of Russia.
-Princess Kira was born in Cadienen, East Prussia (today Kadyny, Poland).
-They had one daughter, Kira-Marina Liepsner (born 22 January 1977), who married Andreas Felix Paul von Bismarck (31 January 1979 – 31 October 2019)
-Kira-Marina and Andreas had two daughters, Princess Kira’s granddaughters.
-When her father died in 1994, Princess Kira took his seat on the board of the Kissinger Sommer classical music festival.
+Prince Wilhelm Friedrich Franz Joseph Christian Olaf of Prussia (4 July 1906 – 26 May 1940) was the eldest child of Wilhelm, German Crown Prince, and Duchess Cecilie of Mecklenburg-Schwerin.
+At his birth, he was second in line to the German throne and was expected to succeed to the throne after the deaths of his grandfather, Emperor Wilhelm II, and his father, Crown Prince Wilhelm, although both outlived him.
+In any case, the German monarchy was abolished in 1918 when he was twelve.
+He later enlisted to serve in the Wehrmacht and died in active service during the German invasion of France in 1940.
+Early life and childhood
+
+Wilhelm was born on 4 July 1906 at the Hohenzollern family's private summer residence, Marmorpalais, or Marble Palace, near Potsdam, where his parents were residing until their own home, Schloss Cecilienhof, could be completed.
+His father was Crown Prince Wilhelm, the eldest son and heir to the German Emperor, Wilhelm II.
+His mother was Duchess Cecilie of Mecklenburg-Schwerin.
+Emperor Franz Joseph of Austria was one of the Prince's godfathers.
+The selection of a nanny for Wilhelm and his younger brother, Louis Ferdinand (born in 1907) caused considerable distress within the family.
+On his tenth birthday in 1916, Wilhelm was made a lieutenant in the 1st Guards Regiment, and was given the Order of the Black Eagle by his grandfather.
+Two years later, when he was twelve, the German monarchy was abolished.
+Wilhelm and his family remained in Germany, though his grandfather, the former Emperor, went into exile in the Netherlands.
+The former Crown Prince and his family remained in Potsdam, where Wilhelm and his younger brothers attended the local gymnasium.
+After graduating from secondary school, Wilhelm went on to study at the Universities of Königsberg, Munich and Bonn.
+In 1926, while a student at the University of Bonn, Wilhelm joined the Borussia Corps, a student organization of which his father, grandfather, and other members of the Prussian royal family were members.
+Marriage and children
+
+While a student at Bonn, Wilhelm fell in love with a fellow student, Dorothea von Salviati (10 September 1907 – 7 May 1972).
+Wilhelm's grandfather did not approve of the marriage of the heir apparent in line to the German throne to a member of the minor nobility.
+Wilhelm told his grandson, "Remember, there is every possible form of horse.
+However, Wilhelm was determined to marry Dorothea.
+Wilhelm and Dorothea married on 3 June 1933 in Bonn.
+In 1940, the ex-Emperor recognized the marriage as dynastic and the girls were accorded the style of Princesses of Prussia (although their father was not restored to his former place in the putative line of succession, his renunciation of his rights remaining valid):
+
+
+Military services
+
+During the Weimar Republic, Wilhelm inadvertently caused a public scandal by attending Army manoeuvres in the uniform of the old Imperial First Foot Guards without first seeking government approval.
+The Oster conspiracy of 1938 sought to restore Wilhelm to the throne.
+At the beginning of World War II, Wilhelm was among a number of princes from the former German monarchies who enlisted to serve in the Wehrmacht, the unified armed forces of Germany.
+Death and reaction
+
+In May 1940, Wilhelm took part in the invasion of France.
+Shortly after Wilhelm's death, a decree known as the Prinzenerlaß, or Prince's Decree, was issued, barring all members of the former German royal houses from service in the Wehrmacht.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -95,39 +128,9 @@ When her father died in 1994, Princess Kira took his seat on the board of the Ki
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -142,6 +145,23 @@ When her father died in 1994, Princess Kira took his seat on the board of the Ki
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -159,6 +179,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -226,29 +261,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -257,6 +284,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -269,6 +304,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -277,17 +314,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -315,6 +354,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -330,108 +453,129 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9cd51b5f-6c6c-4eb1-95b4-e5beb3f8383f)
- Call ID: 9cd51b5f-6c6c-4eb1-95b4-e5beb3f8383f
+  AssignClass (53e6f3c2-0281-44a5-bcd0-33c7ee0155dc)
+ Call ID: 53e6f3c2-0281-44a5-bcd0-33c7ee0155dc
   Args:
-    source: Princess_Kira_Auguste_Viktoria_Friederike_of_Prussia
-    type: :Person
-  AssignClass (b5180b09-473a-47b1-9690-5db52a2bef2a)
- Call ID: b5180b09-473a-47b1-9690-5db52a2bef2a
-  Args:
-    source: Princess_Kira_Auguste_Viktoria_Friederike_of_Prussia
-    type: :Woman
-  AssignClass (28997b3c-7a71-460f-8071-3fac9ae11f3d)
- Call ID: 28997b3c-7a71-460f-8071-3fac9ae11f3d
-  Args:
-    type: :Person
-    source: Louis_Ferdinand_Prince_of_Prussia
-  AssignClass (8e562bd5-1520-458b-92f4-efc722cfda27)
- Call ID: 8e562bd5-1520-458b-92f4-efc722cfda27
-  Args:
-    source: Louis_Ferdinand_Prince_of_Prussia
     type: :Man
-  AssignClass (74c9fc6c-d99b-4b6d-bbb8-8620b6c22c0f)
- Call ID: 74c9fc6c-d99b-4b6d-bbb8-8620b6c22c0f
+    source: :Wilhelm_of_Prussia
+  AssignClass (53894366-f7da-44fd-b2d9-d3b51ca74b52)
+ Call ID: 53894366-f7da-44fd-b2d9-d3b51ca74b52
+  Args:
+    source: :Wilhelm_of_Prussia
+    type: :Person
+  AddLiteral (69a69cf9-3234-4688-a99a-a143c2cdab53)
+ Call ID: 69a69cf9-3234-4688-a99a-a143c2cdab53
+  Args:
+    literal_value: 1906
+    source: :Wilhelm_of_Prussia
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (6649595b-1d6d-4a77-a41c-cff5a9b89b11)
+ Call ID: 6649595b-1d6d-4a77-a41c-cff5a9b89b11
+  Args:
+    literal_value: 1940
+    source: :Wilhelm_of_Prussia
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AssignClass (ee8cf307-309d-48c3-9673-1985861e0f04)
+ Call ID: ee8cf307-309d-48c3-9673-1985861e0f04
+  Args:
+    type: :Man
+    source: :Crown_Prince_Wilhelm
+  AssignClass (4b7a9fd4-fc19-42e2-9cf0-b23ced875e38)
+ Call ID: 4b7a9fd4-fc19-42e2-9cf0-b23ced875e38
   Args:
     type: :Person
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
-  AssignClass (14267941-8d9d-42db-abcc-1f858bbc9607)
- Call ID: 14267941-8d9d-42db-abcc-1f858bbc9607
+    source: :Crown_Prince_Wilhelm
+  AssignClass (0a5a507c-17ef-4a14-9537-d387fb3c733c)
+ Call ID: 0a5a507c-17ef-4a14-9537-d387fb3c733c
   Args:
-    source: Grand_Duchess_Kira_Kirillovna_of_Russia
+    source: :Cecilie_of_Mecklenburg-Schwerin
     type: :Woman
-  AddTriple (e48d56b8-1c2b-4664-a5c5-bfffe43294f1)
- Call ID: e48d56b8-1c2b-4664-a5c5-bfffe43294f1
+  AssignClass (342f58e0-4db4-43e3-aa71-610ba9aabd37)
+ Call ID: 342f58e0-4db4-43e3-aa71-610ba9aabd37
   Args:
-    target: Louis_Ferdinand_Prince_of_Prussia
-    source: Princess_Kira_Auguste_Viktoria_Friederike_of_Prussia
+    source: :Cecilie_of_Mecklenburg-Schwerin
+    type: :Person
+  AddTriple (0ed65fdd-cc0a-4c50-b218-45f38484701e)
+ Call ID: 0ed65fdd-cc0a-4c50-b218-45f38484701e
+  Args:
+    source: :Wilhelm_of_Prussia
     relation: :hasFather
-  AddTriple (bee01380-3f7a-4e89-8d52-a95f90370362)
- Call ID: bee01380-3f7a-4e89-8d52-a95f90370362
+    target: :Crown_Prince_Wilhelm
+  AddTriple (4b334d17-a86c-4e2e-9231-c0ce40508407)
+ Call ID: 4b334d17-a86c-4e2e-9231-c0ce40508407
   Args:
-    target: Grand_Duchess_Kira_Kirillovna_of_Russia
-    source: Princess_Kira_Auguste_Viktoria_Friederike_of_Prussia
     relation: :hasMother
-  AddLiteral (19c32263-8b7b-4c7e-bf39-232b9d5a4071)
- Call ID: 19c32263-8b7b-4c7e-bf39-232b9d5a4071
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1943
-    literal_type: xsd:string
-    source: Princess_Kira_Auguste_Viktoria_Friederike_of_Prussia
-  AddLiteral (489c1dce-f734-4727-80dd-9636315e9f5c)
- Call ID: 489c1dce-f734-4727-80dd-9636315e9f5c
-  Args:
-    literal_value: 2004
-    source: Princess_Kira_Auguste_Viktoria_Friederike_of_Prussia
-    literal_type: xsd:string
-    relation: :hasDeathYear
-  AssignClass (8b93f5c5-4d24-44e0-a13e-8e03443785dd)
- Call ID: 8b93f5c5-4d24-44e0-a13e-8e03443785dd
-  Args:
-    type: :Person
-    source: Kira-Marina_Liepsner
-  AssignClass (30952927-0fd0-40c6-a52e-9f794be00157)
- Call ID: 30952927-0fd0-40c6-a52e-9f794be00157
-  Args:
-    source: Kira-Marina_Liepsner
-    type: :Woman
-  AddTriple (94cfead5-461c-4201-a983-564ce71ccfd8)
- Call ID: 94cfead5-461c-4201-a983-564ce71ccfd8
-  Args:
-    relation: :hasDaughter
-    source: Princess_Kira_Auguste_Viktoria_Friederike_of_Prussia
-    target: Kira-Marina_Liepsner
-  AssignClass (fdec76c4-9a67-4a33-810d-82afa30518e0)
- Call ID: fdec76c4-9a67-4a33-810d-82afa30518e0
-  Args:
-    source: Andreas_Felix_Paul_von_Bismarck
-    type: :Person
-  AssignClass (d1278968-fd07-4044-8f48-8a34af1ee638)
- Call ID: d1278968-fd07-4044-8f48-8a34af1ee638
+    source: :Wilhelm_of_Prussia
+    target: :Cecilie_of_Mecklenburg-Schwerin
+  AssignClass (07e69ef9-629c-4600-a46c-bece5d958616)
+ Call ID: 07e69ef9-629c-4600-a46c-bece5d958616
   Args:
     type: :Man
-    source: Andreas_Felix_Paul_von_Bismarck
-  AddLiteral (c464132c-9375-44cd-b7a6-38f4be086400)
- Call ID: c464132c-9375-44cd-b7a6-38f4be086400
+    source: :Wilhelm_II
+  AssignClass (6bd7cdb3-41df-4d5a-b77a-6bf74399e4f4)
+ Call ID: 6bd7cdb3-41df-4d5a-b77a-6bf74399e4f4
   Args:
-    literal_type: xsd:string
-    source: Andreas_Felix_Paul_von_Bismarck
-    literal_value: 1979
-    relation: :hasBirthYear
-  AddLiteral (e36d4286-90db-4c43-8d47-591f6b474985)
- Call ID: e36d4286-90db-4c43-8d47-591f6b474985
+    source: :Wilhelm_II
+    type: :Person
+  AddTriple (d12dd018-4604-44be-9cd0-bd600d8d8919)
+ Call ID: d12dd018-4604-44be-9cd0-bd600d8d8919
   Args:
-    literal_value: 2019
-    source: Andreas_Felix_Paul_von_Bismarck
-    literal_type: xsd:string
-    relation: :hasDeathYear
-  AddTriple (935e909f-cb7e-4e05-998f-a69fc07feabd)
- Call ID: 935e909f-cb7e-4e05-998f-a69fc07feabd
+    source: :Crown_Prince_Wilhelm
+    relation: :hasFather
+    target: :Wilhelm_II
+  AssignClass (3dd94b20-29d4-4c79-aa35-31c8a36d1914)
+ Call ID: 3dd94b20-29d4-4c79-aa35-31c8a36d1914
   Args:
-    relation: :hasSon
-    source: Kira-Marina_Liepsner
-    target: Andreas_Felix_Paul_von_Bismarck
-  Finish (afa12005-f7f1-4f34-bd1e-20c7a89084b4)
- Call ID: afa12005-f7f1-4f34-bd1e-20c7a89084b4
+    source: :Louis_Ferdinand
+    type: :Man
+  AssignClass (8d9ee381-2079-4d87-8a77-2994e383f57f)
+ Call ID: 8d9ee381-2079-4d87-8a77-2994e383f57f
+  Args:
+    type: :Person
+    source: :Louis_Ferdinand
+  AddTriple (65d5ccfc-9187-482c-a756-1958831d060a)
+ Call ID: 65d5ccfc-9187-482c-a756-1958831d060a
+  Args:
+    target: :Wilhelm_of_Prussia
+    source: :Louis_Ferdinand
+    relation: :isBrotherOf
+  AddTriple (28f2fa1c-0c0b-42ff-b611-fad2d03e31b5)
+ Call ID: 28f2fa1c-0c0b-42ff-b611-fad2d03e31b5
+  Args:
+    target: :Crown_Prince_Wilhelm
+    relation: :hasFather
+    source: :Louis_Ferdinand
+  AddTriple (c579ee78-a651-434a-a30e-a228f02cd24a)
+ Call ID: c579ee78-a651-434a-a30e-a228f02cd24a
+  Args:
+    target: :Cecilie_of_Mecklenburg-Schwerin
+    relation: :hasMother
+    source: :Louis_Ferdinand
+  AssignClass (275b8c8f-cddc-40ee-b668-5a8353f8ff23)
+ Call ID: 275b8c8f-cddc-40ee-b668-5a8353f8ff23
+  Args:
+    type: :Woman
+    source: :Dorothea_von_Salviati
+  AssignClass (248c9e8d-447c-445b-ba16-0181662c933a)
+ Call ID: 248c9e8d-447c-445b-ba16-0181662c933a
+  Args:
+    source: :Dorothea_von_Salviati
+    type: :Person
+  AddLiteral (dfd3c225-6df8-456a-b72b-9f6c725cc65a)
+ Call ID: dfd3c225-6df8-456a-b72b-9f6c725cc65a
+  Args:
+    literal_value: 1933
+    source: :Wilhelm_of_Prussia
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AddTriple (40bb852e-cb4d-4bbe-8de4-e9c20f420586)
+ Call ID: 40bb852e-cb4d-4bbe-8de4-e9c20f420586
+  Args:
+    target: :Dorothea_von_Salviati
+    relation: :hasRelation
+    source: :Wilhelm_of_Prussia
+  Finish (14d90163-2ee4-41a9-9943-d903350953ea)
+ Call ID: 14d90163-2ee4-41a9-9943-d903350953ea
   Args:

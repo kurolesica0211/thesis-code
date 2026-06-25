@@ -85,87 +85,26 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-King Juan Carlos IQueen Sofía
+King Albert IIQueen Paola
 
 
-The Duchess of Soria and HernaniThe Duke of Soria and Hernani
+Amedeo of Austria-Este (Habsburg-Lorraine)
+Birth and family
 
+Amedeo was born on 21 February 1986 at the Saint-Luc University Hospital in Woluwe-Saint-Lambert, Belgium, as the first child and elder son of Lorenz, Archduke of Austria-Este, and Princess Astrid of Belgium.
+Amedeo himself is godfather to his cousin, Princess Elisabeth, Duchess of Brabant.
+The couple's wedding was celebrated on 5 July 2014 in Rome's Basilica of Santa Maria in Trastevere, in the presence of the royal family (with the exception of his great-aunt Queen Fabiola), as well as members of the cadet branches of the House of Habsburg-Lorraine, including the bridegroom's grandmother, Margherita of Savoy, Dowager Archduchess of Austria-Este, and members of other dynasties, including Princess Margaretha of Luxembourg and her husband Prince Nikolaus of Liechtenstein, Princess Beatrice of York and Jean-Christophe, Prince Napoléon.
+Titles and styles
 
-The Dowager Duchess of Calabria
-
-
-The Duchess of Montpensier
-
-
-The Count of ÉvreuxThe Countess of Évreux
-
-
-Princess Béatrice
-
-
-The Duke of OrléansThe Duchess of Orléans
-
-
-The Dowager Countess of La Marche
-
-
-The Countess of Schönborn-Buchheim
-
-
-Princess Hélène, Countess of Limburg Stirum
-
-
-The Dowager Duchess of Calabria
-
-
-The Dowager Duchess of Württemberg
-
-
-Princess Claude, Mrs. Gandolfi
-
-
-Princess Chantal, Baroness of Sambucy de Sorgue
-
-
-The Duke of CalabriaThe Duchess of Calabria
-
-
-Princess Anne of Bourbon-Two Sicilies, Dowager Duchess of Calabria (Anne Marguerite Brigitte Marie; born 4 December 1938), born Princess Anne  of Orléans, is the widow of Infante Carlos, Duke of Calabria.
-She is the third daughter and fifth child of Henri, Count of Paris, Orléanist claimant to the defunct French throne, and his wife Princess Isabelle of Orléans-Braganza.
-Biography
-
-Princess Anne of Orléans was born on 4 December 1938 at Woluwe-Saint-Pierre, Belgium, to Henri, Count of Paris, claimant to the French throne, and Princess Isabelle of Orléans-Braganza.
-At the time, the family was residing at Manoir d'Anjou, a 15-hectare estate in the Belgian town.
-Since her marriage, Princess Anne has accompanied her husband, and now son, on official engagements on behalf of the Sacred Military Constantinian Order of Saint George.
-Due to the close friendship and familial relationship between her husband and King Juan Carlos, Princess Anne and her husband were viewed as extended members of the Spanish royal family.
-The Duchess of Calabria occasionally undertakes official engagements on behalf of the Spanish monarchy.
-Marriage and issue
-
-Princess Anne became romantically involved with Prince Carlos, Duke of Noto, son and heir of Infante Alfonso, Duke of Calabria, whom she had known since childhood, at the wedding of the future King Juan Carlos I of Spain and Princess Sophia of Greece and Denmark in Athens in 1962.
-The Count of Paris initially withheld his consent to the match as he supported the claim of Prince Ranieri, Duke of Castro to the defunct throne of the Kingdom of the Two Sicilies.
-Eventually, after years of waiting and the death of Prince Carlos's father, the Count of Paris relented and the engagement was announced.
-The 250 guests received one of two different invitations from either the bride's parents or the groom's; the former referred to the bride's marriage to "HRH Prince Carlos of Bourbon," while the latter announced the wedding of "Princess Anne of France" to the "Duke of Calabria.
-The following day, on 12 May, the religious marriage was held at the Chapelle royale de Dreux, the traditional marriage and burial place of the House of Orléans.
-The Duke and Duchess of Calabria made their home in Spain.
-They remained married for 50 years until the Duke's death on 5 October 2015.
-Anne was titled HRH
-The Dowager Duchess of Calabria only after the death of her mother-in-law, Infanta Alicia, Duchess of Calabria, in 2017; from 2015 to 2017 she was officially addressed as HRH Infanta Anne, Duchess of Calabria.
-The Duke and Duchess of Calabria had five children:
-
-
-Honours
-
-Arms
-
-Ancestors
-
-References
+All the children of Princess Astrid and Archduke Lorenz bear the title of "Prince(ss) of Belgium", with the style of "Royal Highness", by Belgian Royal Decree of 2 December 1991, which is distinct from their traditional Austro-Hungarian titles.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -181,39 +120,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -228,6 +137,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -245,6 +171,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -312,29 +253,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -343,6 +276,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -355,6 +296,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -363,17 +306,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -401,6 +346,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -416,73 +445,212 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c99a9b03-aae9-4901-9395-6058d05b6aa1)
- Call ID: c99a9b03-aae9-4901-9395-6058d05b6aa1
-  Args:
-    source: Princess_Anne_of_Bourbon-Two_Sicilies
-    type: :Woman
-  AssignClass (d041af5f-06a0-445f-9d79-7695d3c49e52)
- Call ID: d041af5f-06a0-445f-9d79-7695d3c49e52
+  AssignClass (1b65bf13-9748-4055-8b08-7d8da640c42b)
+ Call ID: 1b65bf13-9748-4055-8b08-7d8da640c42b
   Args:
     type: :Man
-    source: Henri_Count_of_Paris
-  AssignClass (b823d5d3-a5f2-436e-bd5c-bce347486e2e)
- Call ID: b823d5d3-a5f2-436e-bd5c-bce347486e2e
+    source: :Amedeo_of_Austria-Este
+  AssignClass (8d6578b6-339f-41f6-89cd-e732eb519895)
+ Call ID: 8d6578b6-339f-41f6-89cd-e732eb519895
   Args:
-    source: Princess_Isabelle_of_Orléans-Braganza
-    type: :Woman
-  AssignClass (ed5318da-0857-4102-8b6d-a1afc24606d8)
- Call ID: ed5318da-0857-4102-8b6d-a1afc24606d8
+    source: :Amedeo_of_Austria-Este
+    type: :Person
+  AddLiteral (7eb2f55a-07be-4dba-9242-363ec95cafb9)
+ Call ID: 7eb2f55a-07be-4dba-9242-363ec95cafb9
   Args:
-    source: Infante_Carlos_Duke_of_Calabria
-    type: :Man
-  AssignClass (6d9c807b-add5-4337-90bc-3df220be6bd2)
- Call ID: 6d9c807b-add5-4337-90bc-3df220be6bd2
-  Args:
-    source: Infanta_Alicia_Duchess_of_Calabria
-    type: :Woman
-  AddLiteral (1f2ccfe1-c3ec-4c6c-86e8-557ddcada1ec)
- Call ID: 1f2ccfe1-c3ec-4c6c-86e8-557ddcada1ec
-  Args:
-    literal_value: 1938
-    source: Princess_Anne_of_Bourbon-Two_Sicilies
     literal_type: xsd:integer
+    literal_value: 1986
+    source: :Amedeo_of_Austria-Este
     relation: :hasBirthYear
-  AddTriple (3141a5d3-2ac0-4d29-9d70-196ca45d0475)
- Call ID: 3141a5d3-2ac0-4d29-9d70-196ca45d0475
+  AssignClass (dd2314a6-5a83-49d7-97f2-4acdea95c5a1)
+ Call ID: dd2314a6-5a83-49d7-97f2-4acdea95c5a1
   Args:
-    source: Princess_Anne_of_Bourbon-Two_Sicilies
-    target: Henri_Count_of_Paris
+    source: :Lorenz_Archduke_of_Austria-Este
+    type: :Man
+  AssignClass (a0e50e70-123a-49f2-b655-de4160fed179)
+ Call ID: a0e50e70-123a-49f2-b655-de4160fed179
+  Args:
+    type: :Person
+    source: :Lorenz_Archduke_of_Austria-Este
+  AssignClass (063045c0-6dd3-4ae4-b030-355e98a6c13f)
+ Call ID: 063045c0-6dd3-4ae4-b030-355e98a6c13f
+  Args:
+    type: :Woman
+    source: :Princess_Astrid_of_Belgium
+  AssignClass (3e1e4a8f-1d7d-45d7-a887-91c3c442a7d4)
+ Call ID: 3e1e4a8f-1d7d-45d7-a887-91c3c442a7d4
+  Args:
+    source: :Princess_Astrid_of_Belgium
+    type: :Person
+  AddTriple (0ad26a03-90ca-4225-9397-5c2e727693f5)
+ Call ID: 0ad26a03-90ca-4225-9397-5c2e727693f5
+  Args:
+    source: :Amedeo_of_Austria-Este
     relation: :hasFather
-  AddTriple (2dbd0e2b-c6fe-4102-8af6-4ea47129105b)
- Call ID: 2dbd0e2b-c6fe-4102-8af6-4ea47129105b
+    target: :Lorenz_Archduke_of_Austria-Este
+  AddTriple (135bb76e-8c74-4b15-bd80-77d6d17d21ee)
+ Call ID: 135bb76e-8c74-4b15-bd80-77d6d17d21ee
   Args:
-    source: Princess_Anne_of_Bourbon-Two_Sicilies
-    target: Princess_Isabelle_of_Orléans-Braganza
+    source: :Amedeo_of_Austria-Este
     relation: :hasMother
-  AddTriple (e72d36a6-b24c-48b6-9a09-fca01657c726)
- Call ID: e72d36a6-b24c-48b6-9a09-fca01657c726
+    target: :Princess_Astrid_of_Belgium
+  AssignClass (24804d60-9dc2-4f76-84fd-fb538052609e)
+ Call ID: 24804d60-9dc2-4f76-84fd-fb538052609e
   Args:
-    target: Infanta_Alicia_Duchess_of_Calabria
-    relation: :hasMother
-    source: Infante_Carlos_Duke_of_Calabria
-  AddLiteral (7e7aba0e-3202-4a7e-9301-16b8b6904503)
- Call ID: 7e7aba0e-3202-4a7e-9301-16b8b6904503
+    source: :Princess_Elisabeth_Duchess_of_Brabant
+    type: :Woman
+  AssignClass (f57f70c8-4103-46f0-8e58-533b1066907c)
+ Call ID: f57f70c8-4103-46f0-8e58-533b1066907c
   Args:
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: Infante_Carlos_Duke_of_Calabria
-    literal_value: 2015
-  AddLiteral (398d10cf-782e-42c9-9a1f-564cdf0b265f)
- Call ID: 398d10cf-782e-42c9-9a1f-564cdf0b265f
+    type: :Person
+    source: :Princess_Elisabeth_Duchess_of_Brabant
+  AssignClass (5d39d597-5e04-4fe4-a933-acfa3fe3ffdb)
+ Call ID: 5d39d597-5e04-4fe4-a933-acfa3fe3ffdb
   Args:
-    relation: :hasDeathYear
-    literal_value: 2017
-    source: Infanta_Alicia_Duchess_of_Calabria
-    literal_type: xsd:integer
-  Finish (cefcd528-f2c1-4d5f-9bab-c1739f433928)
- Call ID: cefcd528-f2c1-4d5f-9bab-c1739f433928
+    source: :King_Albert_II
+    type: :Man
+  AssignClass (02df5031-3b83-492c-aee5-08446cc0b18d)
+ Call ID: 02df5031-3b83-492c-aee5-08446cc0b18d
   Args:
+    type: :Person
+    source: :King_Albert_II
+  AssignClass (566f46cc-9302-4c02-9c6f-549e93260cb7)
+ Call ID: 566f46cc-9302-4c02-9c6f-549e93260cb7
+  Args:
+    source: :Queen_Paola
+    type: :Woman
+  AssignClass (c9e83634-8f53-4e1c-93fe-de70e1b85083)
+ Call ID: c9e83634-8f53-4e1c-93fe-de70e1b85083
+  Args:
+    type: :Person
+    source: :Queen_Paola
+  AssignClass (e36fccc3-4e6a-412b-a83c-f14ea5aebaf5)
+ Call ID: e36fccc3-4e6a-412b-a83c-f14ea5aebaf5
+  Args:
+    type: :Woman
+    source: :Queen_Fabiola
+  AssignClass (d216e004-bc71-436c-8702-5bd0046f3a0a)
+ Call ID: d216e004-bc71-436c-8702-5bd0046f3a0a
+  Args:
+    type: :Person
+    source: :Queen_Fabiola
+  AssignClass (15dc8ca6-5d94-4390-bfdb-cc6fd02224f6)
+ Call ID: 15dc8ca6-5d94-4390-bfdb-cc6fd02224f6
+  Args:
+    source: :Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este
+    type: :Woman
+  AssignClass (b2e31445-6c8c-494a-abf3-0837870f019a)
+ Call ID: b2e31445-6c8c-494a-abf3-0837870f019a
+  Args:
+    type: :Person
+    source: :Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este
+  AssignClass (e5a02c56-8ff2-45a7-869e-1a1c050ef6d4)
+ Call ID: e5a02c56-8ff2-45a7-869e-1a1c050ef6d4
+  Args:
+    type: :Woman
+    source: :Princess_Margaretha_of_Luxembourg
+  AssignClass (4a58386c-73f8-4502-9eb5-6c2a1c649f47)
+ Call ID: 4a58386c-73f8-4502-9eb5-6c2a1c649f47
+  Args:
+    type: :Person
+    source: :Princess_Margaretha_of_Luxembourg
+  AssignClass (ef05bf70-65c1-45d5-967a-88cb3587bf92)
+ Call ID: ef05bf70-65c1-45d5-967a-88cb3587bf92
+  Args:
+    type: :Man
+    source: :Prince_Nikolaus_of_Liechtenstein
+  AssignClass (ce8bd586-a041-44cf-8801-841235de8470)
+ Call ID: ce8bd586-a041-44cf-8801-841235de8470
+  Args:
+    source: :Prince_Nikolaus_of_Liechtenstein
+    type: :Person
+  AssignClass (8ae67735-a7cb-4be1-92b8-f20fc9e06152)
+ Call ID: 8ae67735-a7cb-4be1-92b8-f20fc9e06152
+  Args:
+    source: :Princess_Beatrice_of_York
+    type: :Woman
+  AssignClass (dd463f6a-8b35-499c-82cd-b08e554a47cd)
+ Call ID: dd463f6a-8b35-499c-82cd-b08e554a47cd
+  Args:
+    source: :Princess_Beatrice_of_York
+    type: :Person
+  AssignClass (a0a18608-10d0-41ef-8487-f9acce83c817)
+ Call ID: a0a18608-10d0-41ef-8487-f9acce83c817
+  Args:
+    type: :Man
+    source: :Jean-Christophe_Prince_Napoléon
+  AssignClass (e80db4cb-80c3-469e-87e3-07ccb8f82aef)
+ Call ID: e80db4cb-80c3-469e-87e3-07ccb8f82aef
+  Args:
+    type: :Person
+    source: :Jean-Christophe_Prince_Napoléon
+  Finish (bdeb9cea-096f-44ca-a97e-d0b705606141)
+ Call ID: bdeb9cea-096f-44ca-a97e-d0b705606141
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -531,21 +699,44 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Infante_Carlos_Duke_of_Calabria a :Man ;
-      :hasDeathYear 2015 ;
-      :hasMother data:Infanta_Alicia_Duchess_of_Calabria .
+  data:Amedeo_of_Austria-Este a :Man,
+          :Person ;
+      :hasBirthYear 1986 ;
+      :hasFather data:Lorenz_Archduke_of_Austria-Este ;
+      :hasMother data:Princess_Astrid_of_Belgium .
 
-  data:Princess_Anne_of_Bourbon-Two_Sicilies a :Woman ;
-      :hasBirthYear 1938 ;
-      :hasFather data:Henri_Count_of_Paris ;
-      :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .
+  data:Jean-Christophe_Prince_Napol%C3%A9on a :Man,
+          :Person .
 
-  data:Henri_Count_of_Paris a :Man .
+  data:King_Albert_II a :Man,
+          :Person .
 
-  data:Infanta_Alicia_Duchess_of_Calabria a :Woman ;
-      :hasDeathYear 2017 .
+  data:Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este a :Person,
+          :Woman .
 
-  data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Woman .
+  data:Prince_Nikolaus_of_Liechtenstein a :Man,
+          :Person .
+
+  data:Princess_Beatrice_of_York a :Person,
+          :Woman .
+
+  data:Princess_Elisabeth_Duchess_of_Brabant a :Person,
+          :Woman .
+
+  data:Princess_Margaretha_of_Luxembourg a :Person,
+          :Woman .
+
+  data:Queen_Fabiola a :Person,
+          :Woman .
+
+  data:Queen_Paola a :Person,
+          :Woman .
+
+  data:Lorenz_Archduke_of_Austria-Este a :Man,
+          :Person .
+
+  data:Princess_Astrid_of_Belgium a :Person,
+          :Woman .
 
 
 
@@ -557,86 +748,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (c033abfa-a891-4d06-bfd1-a1e8afda2ef9)
- Call ID: c033abfa-a891-4d06-bfd1-a1e8afda2ef9
+  ValidateShacl (2f52bc8c-3efa-4a79-866e-675f66dbd36a)
+ Call ID: 2f52bc8c-3efa-4a79-866e-675f66dbd36a
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:9
+Total violations:6
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Infanta_Alicia_Duchess_of_Calabria is not recognized as an :Ancestor or :Woman, which is required for the hasMother property of Infante_Carlos_Duke_of_Calabria.
+      The node Lorenz_Archduke_of_Austria-Este is linked via hasFather but lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Infanta_Alicia_Duchess_of_Calabria, :Woman)
+      AssignClass(node='Lorenz_Archduke_of_Austria-Este', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Henri_Count_of_Paris is not recognized as an :Ancestor or :Man, which is required for the hasFather property of Princess_Anne_of_Bourbon-Two_Sicilies.
+      The node Princess_Astrid_of_Belgium is linked via hasMother but lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Henri_Count_of_Paris, :Man)
+      AssignClass(node='Princess_Astrid_of_Belgium', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Infanta_Alicia_Duchess_of_Calabria is missing the required :Ancestor or :Woman class for the hasMother relation.
+      The node Lorenz_Archduke_of_Austria-Este is linked via hasFather but lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Infanta_Alicia_Duchess_of_Calabria, :Ancestor)
+      AssignClass(node='Lorenz_Archduke_of_Austria-Este', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Isabelle_of_Orl%C3%A9ans-Braganza is not recognized as an :Ancestor or :Woman, required for the hasMother property of Princess_Anne_of_Bourbon-Two_Sicilies.
+      The node Princess_Astrid_of_Belgium is linked via hasMother but lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Isabelle_of_Orl%C3%A9ans-Braganza, :Woman)
+      AssignClass(node='Princess_Astrid_of_Belgium', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Henri_Count_of_Paris is missing the required :Ancestor or :Man class for the hasFather relation.
+      The node Lorenz_Archduke_of_Austria-Este is linked via hasFather but lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Henri_Count_of_Paris, :Ancestor)
+      AssignClass(node='Lorenz_Archduke_of_Austria-Este', class=':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Infanta_Alicia_Duchess_of_Calabria is still failing class validation for the mother of Infante_Carlos_Duke_of_Calabria.
+      The node Princess_Astrid_of_Belgium is linked via hasMother but lacks the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Infanta_Alicia_Duchess_of_Calabria, :Woman)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Princess_Isabelle_of_Orl%C3%A9ans-Braganza is missing the required :Ancestor or :Woman class for the hasMother relation.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Isabelle_of_Orl%C3%A9ans-Braganza, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Henri_Count_of_Paris is still failing class validation for the father of Princess_Anne_of_Bourbon-Two_Sicilies.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Henri_Count_of_Paris, :Man)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Princess_Isabelle_of_Orl%C3%A9ans-Braganza is still failing class validation for the mother of Princess_Anne_of_Bourbon-Two_Sicilies.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Isabelle_of_Orl%C3%A9ans-Braganza, :Woman)
+      AssignClass(node='Princess_Astrid_of_Belgium', class=':Ancestor')
 
 
 
@@ -645,28 +812,19 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (2073f689-c60c-4e82-8113-50bd17c41629)
- Call ID: 2073f689-c60c-4e82-8113-50bd17c41629
+  AssignClass (6e5576e9-4a49-4c1e-84a3-a5ed5953cb48)
+ Call ID: 6e5576e9-4a49-4c1e-84a3-a5ed5953cb48
   Args:
     type: :Ancestor
-    source: Infanta_Alicia_Duchess_of_Calabria
-  AssignClass (93929d7d-28d6-44c0-95b7-31911183d855)
- Call ID: 93929d7d-28d6-44c0-95b7-31911183d855
+    source: :Lorenz_Archduke_of_Austria-Este
+  AssignClass (039f5542-2d89-459b-ad82-02d11acafdc9)
+ Call ID: 039f5542-2d89-459b-ad82-02d11acafdc9
   Args:
-    source: Henri_Count_of_Paris
+    source: :Princess_Astrid_of_Belgium
     type: :Ancestor
-  AssignClass (142e5bc1-c464-4fba-b3ed-a50c8e44907f)
- Call ID: 142e5bc1-c464-4fba-b3ed-a50c8e44907f
+  ValidateShacl (55ba50ea-93eb-4af8-acc1-1ed71d246e2a)
+ Call ID: 55ba50ea-93eb-4af8-acc1-1ed71d246e2a
   Args:
-    type: :Ancestor
-    source: Princess_Isabelle_of_Orléans-Braganza
-  ValidateShacl (283c27bb-72ca-4996-b24a-0e2d116e65f3)
- Call ID: 283c27bb-72ca-4996-b24a-0e2d116e65f3
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -679,23 +837,45 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Infante_Carlos_Duke_of_Calabria a :Man ;
-      :hasDeathYear 2015 ;
-      :hasMother data:Infanta_Alicia_Duchess_of_Calabria .
+  data:Amedeo_of_Austria-Este a :Man,
+          :Person ;
+      :hasBirthYear 1986 ;
+      :hasFather data:Lorenz_Archduke_of_Austria-Este ;
+      :hasMother data:Princess_Astrid_of_Belgium .
 
-  data:Princess_Anne_of_Bourbon-Two_Sicilies a :Woman ;
-      :hasBirthYear 1938 ;
-      :hasFather data:Henri_Count_of_Paris ;
-      :hasMother data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza .
+  data:Jean-Christophe_Prince_Napol%C3%A9on a :Man,
+          :Person .
 
-  data:Henri_Count_of_Paris a :Ancestor,
-          :Man .
+  data:King_Albert_II a :Man,
+          :Person .
 
-  data:Infanta_Alicia_Duchess_of_Calabria a :Ancestor,
-          :Woman ;
-      :hasDeathYear 2017 .
+  data:Margherita_of_Savoy_Dowager_Archduchess_of_Austria-Este a :Person,
+          :Woman .
 
-  data:Princess_Isabelle_of_Orl%C3%A9ans-Braganza a :Ancestor,
+  data:Prince_Nikolaus_of_Liechtenstein a :Man,
+          :Person .
+
+  data:Princess_Beatrice_of_York a :Person,
+          :Woman .
+
+  data:Princess_Elisabeth_Duchess_of_Brabant a :Person,
+          :Woman .
+
+  data:Princess_Margaretha_of_Luxembourg a :Person,
+          :Woman .
+
+  data:Queen_Fabiola a :Person,
+          :Woman .
+
+  data:Queen_Paola a :Person,
+          :Woman .
+
+  data:Lorenz_Archduke_of_Austria-Este a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Princess_Astrid_of_Belgium a :Ancestor,
+          :Person,
           :Woman .
 
 
@@ -708,6 +888,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (595079be-b6c6-44a4-8c49-c97939cc22fc)
- Call ID: 595079be-b6c6-44a4-8c49-c97939cc22fc
+  Finish (f19adc37-d298-4eeb-8b9b-581d56a43010)
+ Call ID: f19adc37-d298-4eeb-8b9b-581d56a43010
   Args:

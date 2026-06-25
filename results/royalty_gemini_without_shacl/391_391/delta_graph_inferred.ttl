@@ -1,0 +1,193 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Charles_Prince_of_Wales a :Man,
+        :Person ;
+    :hasBrother data:Charles_Prince_of_Wales ;
+    :hasRelation data:Charles_Prince_of_Wales ;
+    :isBloodrelationOf data:Charles_Prince_of_Wales ;
+    :isBrotherOf data:Charles_Prince_of_Wales ;
+    :isSiblingOf data:Charles_Prince_of_Wales .
+
+data:Prince_Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasBrother data:Prince_Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip_Duke_of_Edinburgh ;
+    :isSiblingOf data:Prince_Philip_Duke_of_Edinburgh .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :hasRelation data:Queen_Elizabeth_II ;
+    :hasSister data:Queen_Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth_II ;
+    :isSisterOf data:Queen_Elizabeth_II .
+
+data:The_Honourable_Amanda_Knatchbull a :Person,
+        :Woman ;
+    :hasRelation data:The_Honourable_Amanda_Knatchbull ;
+    :hasSister data:The_Honourable_Amanda_Knatchbull ;
+    :isBloodrelationOf data:The_Honourable_Amanda_Knatchbull ;
+    :isSiblingOf data:The_Honourable_Amanda_Knatchbull ;
+    :isSisterOf data:The_Honourable_Amanda_Knatchbull .
+
+data:Charles_Vincent_Ellingworth a :Man,
+        :Person ;
+    :hasBrother data:Charles_Vincent_Ellingworth ;
+    :hasRelation data:2nd_Countess_Mountbatten_of_Burma,
+        data:7th_Baron_Brabourne,
+        data:Charles_Vincent_Ellingworth,
+        data:Lady_Amanda_Patricia_Victoria_Ellingworth,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Victoria ;
+    :isBloodrelationOf data:Charles_Vincent_Ellingworth ;
+    :isBrotherOf data:Charles_Vincent_Ellingworth ;
+    :isSiblingOf data:Charles_Vincent_Ellingworth .
+
+data:2nd_Countess_Mountbatten_of_Burma a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :hasDaughter data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :hasRelation data:2nd_Countess_Mountbatten_of_Burma,
+        data:7th_Baron_Brabourne,
+        data:Charles_Vincent_Ellingworth,
+        data:Lady_Amanda_Patricia_Victoria_Ellingworth,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Victoria ;
+    :hasSister data:2nd_Countess_Mountbatten_of_Burma ;
+    :isAncestorOf data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :isAuntOf data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :isBloodrelationOf data:2nd_Countess_Mountbatten_of_Burma ;
+    :isMotherOf data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :isParentOf data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :isSiblingOf data:2nd_Countess_Mountbatten_of_Burma ;
+    :isSisterOf data:2nd_Countess_Mountbatten_of_Burma .
+
+data:7th_Baron_Brabourne a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:7th_Baron_Brabourne ;
+    :hasChild data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :hasDaughter data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :hasRelation data:2nd_Countess_Mountbatten_of_Burma,
+        data:7th_Baron_Brabourne,
+        data:Charles_Vincent_Ellingworth,
+        data:Lady_Amanda_Patricia_Victoria_Ellingworth,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Victoria ;
+    :isAncestorOf data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :isBloodrelationOf data:7th_Baron_Brabourne ;
+    :isBrotherOf data:7th_Baron_Brabourne ;
+    :isFatherOf data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :isParentOf data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :isSiblingOf data:7th_Baron_Brabourne ;
+    :isUncleOf data:Lady_Amanda_Patricia_Victoria_Ellingworth .
+
+data:Queen_Victoria a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Alice ;
+    :hasDaughter data:Princess_Alice ;
+    :hasRelation data:2nd_Countess_Mountbatten_of_Burma,
+        data:7th_Baron_Brabourne,
+        data:Charles_Vincent_Ellingworth,
+        data:Lady_Amanda_Patricia_Victoria_Ellingworth,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Lady_Amanda_Patricia_Victoria_Ellingworth,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice ;
+    :isAuntOf data:Princess_Alice ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isMotherOf data:Princess_Alice ;
+    :isParentOf data:Princess_Alice ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Princess_Alice,
+        data:Queen_Victoria ;
+    :hasBrother data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasDeathYear 1979 ;
+    :hasMother data:Princess_Alice ;
+    :hasParent data:Princess_Alice ;
+    :hasRelation data:2nd_Countess_Mountbatten_of_Burma,
+        data:7th_Baron_Brabourne,
+        data:Charles_Vincent_Ellingworth,
+        data:Lady_Amanda_Patricia_Victoria_Ellingworth,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Victoria ;
+    :isAncestorOf data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :isBloodrelationOf data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :isBrotherOf data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :isChildOf data:Princess_Alice ;
+    :isSiblingOf data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :isSonOf data:Princess_Alice .
+
+data:Princess_Alice a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Queen_Victoria ;
+    :hasChild data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :hasMother data:Queen_Victoria ;
+    :hasParent data:Queen_Victoria ;
+    :hasRelation data:2nd_Countess_Mountbatten_of_Burma,
+        data:7th_Baron_Brabourne,
+        data:Charles_Vincent_Ellingworth,
+        data:Lady_Amanda_Patricia_Victoria_Ellingworth,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Victoria ;
+    :hasSister data:Princess_Alice ;
+    :hasSon data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :isAncestorOf data:Lady_Amanda_Patricia_Victoria_Ellingworth,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :isAuntOf data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :isBloodrelationOf data:Princess_Alice ;
+    :isChildOf data:Queen_Victoria ;
+    :isDaughterOf data:Queen_Victoria ;
+    :isMotherOf data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :isParentOf data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma ;
+    :isSiblingOf data:Princess_Alice ;
+    :isSisterOf data:Princess_Alice .
+
+data:Lady_Amanda_Patricia_Victoria_Ellingworth a :Person,
+        :Woman ;
+    :hasAncestor data:2nd_Countess_Mountbatten_of_Burma,
+        data:7th_Baron_Brabourne,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Victoria ;
+    :hasBirthYear 1957 ;
+    :hasFather data:7th_Baron_Brabourne ;
+    :hasMarriageYear 1987 ;
+    :hasMother data:2nd_Countess_Mountbatten_of_Burma ;
+    :hasParent data:2nd_Countess_Mountbatten_of_Burma,
+        data:7th_Baron_Brabourne ;
+    :hasRelation data:2nd_Countess_Mountbatten_of_Burma,
+        data:7th_Baron_Brabourne,
+        data:Charles_Vincent_Ellingworth,
+        data:Lady_Amanda_Patricia_Victoria_Ellingworth,
+        data:Louis_Mountbatten_1st_Earl_Mountbatten_of_Burma,
+        data:Princess_Alice,
+        data:Queen_Victoria ;
+    :hasSister data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :isBloodrelationOf data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :isChildOf data:2nd_Countess_Mountbatten_of_Burma,
+        data:7th_Baron_Brabourne ;
+    :isDaughterOf data:2nd_Countess_Mountbatten_of_Burma,
+        data:7th_Baron_Brabourne ;
+    :isSiblingOf data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :isSisterOf data:Lady_Amanda_Patricia_Victoria_Ellingworth ;
+    :knownAs data:The_Honourable_Amanda_Knatchbull .
+

@@ -7,10 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Alexandra_of_Yugoslavia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Alexandra_of_Yugoslavia a :Person ;
     rdfs:label "Alexandra of Yugoslavia" ;
     data:posIndicesFull "3352:3371",
         "756:779" ;
@@ -22,17 +19,10 @@ data:Alexandra_of_Yugoslavia a :Ancestor,
     :alsoKnownAs "Alexandra Oldenburg Karadjordjevic",
         "Alexandra of Greece",
         "Alexandra of Greece, Queen of Yugoslavia" ;
+    :hasParent data:Alexander_of_Greece ;
     :hasSex data:female .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Alexander_of_Serbia_1 a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Alexander_of_Serbia_1 a :Person ;
     rdfs:label "Prince Alexander of Serbia" ;
     data:posIndicesFull "749:779" ;
     data:posIndicesPart "1641:1647",
@@ -51,18 +41,10 @@ data:Prince_Alexander_of_Serbia_1 a :Man,
         "Alexander Karageorgievich, Prince of Yugoslavia",
         "Prince Alexander of Yugoslavia",
         "Prince Alexander of Yugoslavia (born 1982)" ;
-    :hasBrother data:Prince_Peter_of_Serbia ;
-    :hasMother data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
     :hasParent data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Peter_of_Serbia ;
-    :isChildOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
-    :isSiblingOf data:Prince_Peter_of_Serbia ;
-    :isSonOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe .
+    :hasSex data:male .
 
-data:Prince_Peter_of_Serbia a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Peter_of_Serbia a :Person ;
     rdfs:label "Prince Peter of Serbia" ;
     data:posIndicesFull "171:189",
         "228:250",
@@ -105,19 +87,25 @@ data:Prince_Peter_of_Serbia a :Man,
         "Peter Karageorgievich, Prince of Yugoslavia",
         "Peter Karađorđević",
         "Prince Peter of Yugoslavia" ;
-    :hasBrother data:Prince_Alexander_of_Serbia_1 ;
-    :hasMother data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
     :hasParent data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Alexander_of_Serbia_1 ;
-    :isChildOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
-    :isSiblingOf data:Prince_Alexander_of_Serbia_1 ;
-    :isSonOf data:Princess_Maria_da_Glória-_Duchess_of_Segorbe .
+    :hasSex data:male .
 
-data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alexander_of_Greece a :Person ;
+    rdfs:label "Alexander of Greece" ;
+    data:posIndicesFull "3352:3371" ;
+    data:wdtLink wdt:Q151742 ;
+    :alsoKnownAs "Alexander I of Greece",
+        "King Alexander I of Greece",
+        "King Alexander of Greece" ;
+    :hasSex data:male .
+
+data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Person ;
     rdfs:label "Princess Maria da Glória, Duchess of Segorbe" ;
     data:posIndicesFull "2505:2520",
         "694:709" ;
@@ -127,13 +115,9 @@ data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Ancestor,
     data:wdtLink wdt:Q2312463 ;
     :alsoKnownAs "Dona Maria da Glória de Orléans-Bragança e Borbon",
         "Maria da Gloria" ;
-    :hasChild data:Prince_Alexander_of_Serbia_1,
-        data:Prince_Peter_of_Serbia ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Alexander_of_Serbia_1,
-        data:Prince_Peter_of_Serbia ;
-    :isMotherOf data:Prince_Alexander_of_Serbia_1,
-        data:Prince_Peter_of_Serbia ;
-    :isParentOf data:Prince_Alexander_of_Serbia_1,
-        data:Prince_Peter_of_Serbia .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

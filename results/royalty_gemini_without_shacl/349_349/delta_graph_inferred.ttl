@@ -1,0 +1,121 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:CountessNadejdaMikhailovnaDeTorby a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:CountessNadejdaMikhailovnaDeTorby,
+        data:GeorgeMountbatten,
+        data:HenryMountbatten,
+        data:PrinceGeorgeOfBattenberg,
+        data:SarahGeorginaWalker,
+        data:TatianaMountbatten ;
+    :hasSister data:CountessNadejdaMikhailovnaDeTorby ;
+    :isAncestorOf data:TatianaMountbatten ;
+    :isBloodrelationOf data:CountessNadejdaMikhailovnaDeTorby ;
+    :isSiblingOf data:CountessNadejdaMikhailovnaDeTorby ;
+    :isSisterOf data:CountessNadejdaMikhailovnaDeTorby .
+
+data:PrinceGeorgeOfBattenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceGeorgeOfBattenberg ;
+    :hasRelation data:CountessNadejdaMikhailovnaDeTorby,
+        data:GeorgeMountbatten,
+        data:HenryMountbatten,
+        data:PrinceGeorgeOfBattenberg,
+        data:SarahGeorginaWalker,
+        data:TatianaMountbatten ;
+    :isAncestorOf data:TatianaMountbatten ;
+    :isBloodrelationOf data:PrinceGeorgeOfBattenberg ;
+    :isBrotherOf data:PrinceGeorgeOfBattenberg ;
+    :isSiblingOf data:PrinceGeorgeOfBattenberg .
+
+data:HenryMountbatten a :Man,
+        :Person ;
+    :hasBrother data:HenryMountbatten ;
+    :hasRelation data:CountessNadejdaMikhailovnaDeTorby,
+        data:GeorgeMountbatten,
+        data:HenryMountbatten,
+        data:PrinceGeorgeOfBattenberg,
+        data:SarahGeorginaWalker,
+        data:TatianaMountbatten ;
+    :hasSister data:TatianaMountbatten ;
+    :isBloodrelationOf data:HenryMountbatten,
+        data:TatianaMountbatten ;
+    :isBrotherOf data:HenryMountbatten,
+        data:TatianaMountbatten ;
+    :isSiblingOf data:HenryMountbatten,
+        data:TatianaMountbatten .
+
+data:GeorgeMountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeMountbatten ;
+    :hasChild data:TatianaMountbatten ;
+    :hasDaughter data:TatianaMountbatten ;
+    :hasRelation data:CountessNadejdaMikhailovnaDeTorby,
+        data:GeorgeMountbatten,
+        data:HenryMountbatten,
+        data:PrinceGeorgeOfBattenberg,
+        data:SarahGeorginaWalker,
+        data:TatianaMountbatten ;
+    :isAncestorOf data:TatianaMountbatten ;
+    :isBloodrelationOf data:GeorgeMountbatten ;
+    :isBrotherOf data:GeorgeMountbatten ;
+    :isFatherOf data:TatianaMountbatten ;
+    :isParentOf data:TatianaMountbatten ;
+    :isSiblingOf data:GeorgeMountbatten ;
+    :isUncleOf data:TatianaMountbatten .
+
+data:SarahGeorginaWalker a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:TatianaMountbatten ;
+    :hasDaughter data:TatianaMountbatten ;
+    :hasRelation data:CountessNadejdaMikhailovnaDeTorby,
+        data:GeorgeMountbatten,
+        data:HenryMountbatten,
+        data:PrinceGeorgeOfBattenberg,
+        data:SarahGeorginaWalker,
+        data:TatianaMountbatten ;
+    :hasSister data:SarahGeorginaWalker ;
+    :isAncestorOf data:TatianaMountbatten ;
+    :isAuntOf data:TatianaMountbatten ;
+    :isBloodrelationOf data:SarahGeorginaWalker ;
+    :isMotherOf data:TatianaMountbatten ;
+    :isParentOf data:TatianaMountbatten ;
+    :isSiblingOf data:SarahGeorginaWalker ;
+    :isSisterOf data:SarahGeorginaWalker .
+
+data:TatianaMountbatten a :Person,
+        :Woman ;
+    :hasAncestor data:CountessNadejdaMikhailovnaDeTorby,
+        data:GeorgeMountbatten,
+        data:PrinceGeorgeOfBattenberg,
+        data:SarahGeorginaWalker ;
+    :hasBirthYear "1990-04-16"^^xsd:date ;
+    :hasBrother data:HenryMountbatten ;
+    :hasFather data:GeorgeMountbatten ;
+    :hasMother data:SarahGeorginaWalker ;
+    :hasParent data:GeorgeMountbatten,
+        data:SarahGeorginaWalker ;
+    :hasRelation data:CountessNadejdaMikhailovnaDeTorby,
+        data:GeorgeMountbatten,
+        data:HenryMountbatten,
+        data:PrinceGeorgeOfBattenberg,
+        data:SarahGeorginaWalker,
+        data:TatianaMountbatten ;
+    :hasSister data:TatianaMountbatten ;
+    :isBloodrelationOf data:HenryMountbatten,
+        data:TatianaMountbatten ;
+    :isChildOf data:GeorgeMountbatten,
+        data:SarahGeorginaWalker ;
+    :isDaughterOf data:GeorgeMountbatten,
+        data:SarahGeorginaWalker ;
+    :isSiblingOf data:HenryMountbatten,
+        data:TatianaMountbatten ;
+    :isSisterOf data:HenryMountbatten,
+        data:TatianaMountbatten .
+

@@ -108,6 +108,8 @@ Lilibet will use titles in formal settings but not in everyday conversations.
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -123,39 +125,9 @@ Lilibet will use titles in formal settings but not in everyday conversations.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -170,6 +142,23 @@ Lilibet will use titles in formal settings but not in everyday conversations.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -187,6 +176,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -254,29 +258,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -285,6 +281,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -297,6 +301,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -305,17 +311,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -343,6 +351,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -358,128 +450,117 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (5a9be841-6807-486b-a38b-f40ca026a88b)
- Call ID: 5a9be841-6807-486b-a38b-f40ca026a88b
-  Args:
-    source: Lilibet_Diana_Mountbatten-Windsor
-    type: :Person
-  AssignClass (ce372686-ea3b-4780-8146-883fbd91d5f8)
- Call ID: ce372686-ea3b-4780-8146-883fbd91d5f8
-  Args:
-    source: Lilibet_Diana_Mountbatten-Windsor
-    type: :Woman
-  AssignClass (374291e2-c9d3-4f66-b013-e58c412a9a21)
- Call ID: 374291e2-c9d3-4f66-b013-e58c412a9a21
-  Args:
-    type: :Person
-    source: Prince_Harry
-  AssignClass (80190860-b2e6-4ffe-ac2e-43df57553be7)
- Call ID: 80190860-b2e6-4ffe-ac2e-43df57553be7
-  Args:
-    source: Prince_Harry
-    type: :Man
-  AssignClass (5f9d2468-474c-4c38-8dc0-93d42766663c)
- Call ID: 5f9d2468-474c-4c38-8dc0-93d42766663c
-  Args:
-    source: Meghan_Duchess_of_Sussex
-    type: :Person
-  AssignClass (62decf0d-d331-4aa3-8483-3071d06db465)
- Call ID: 62decf0d-d331-4aa3-8483-3071d06db465
-  Args:
-    source: Meghan_Duchess_of_Sussex
-    type: :Woman
-  AssignClass (3c1d12c7-d06c-4089-9667-248e67dd2818)
- Call ID: 3c1d12c7-d06c-4089-9667-248e67dd2818
-  Args:
-    type: :Person
-    source: King_Charles_III
-  AssignClass (f470d46f-4f49-4e95-955e-da4c2dedb503)
- Call ID: f470d46f-4f49-4e95-955e-da4c2dedb503
-  Args:
-    type: :Man
-    source: King_Charles_III
-  AssignClass (c5987e2e-d9fe-4a5d-b468-ca75d13db1eb)
- Call ID: c5987e2e-d9fe-4a5d-b468-ca75d13db1eb
-  Args:
-    source: Prince_Archie
-    type: :Person
-  AssignClass (d57acf7f-07aa-4e7c-87d0-08db8e13b037)
- Call ID: d57acf7f-07aa-4e7c-87d0-08db8e13b037
-  Args:
-    type: :Man
-    source: Prince_Archie
-  AssignClass (ced2faf7-f560-4763-8d43-098a403239c8)
- Call ID: ced2faf7-f560-4763-8d43-098a403239c8
-  Args:
-    source: Queen_Elizabeth_II
-    type: :Person
-  AssignClass (79266dce-4a23-41d7-8cea-6d6d777fd7b5)
- Call ID: 79266dce-4a23-41d7-8cea-6d6d777fd7b5
-  Args:
-    source: Queen_Elizabeth_II
-    type: :Woman
-  AssignClass (b139d456-4e8e-4582-9837-ff6e78ac8b14)
- Call ID: b139d456-4e8e-4582-9837-ff6e78ac8b14
-  Args:
-    type: :Person
-    source: Diana_Princess_of_Wales
-  AssignClass (c9d44f01-c522-4b87-a2c7-56f076592e27)
- Call ID: c9d44f01-c522-4b87-a2c7-56f076592e27
+  AssignClass (9543df8e-1474-4707-adfb-c7c77fb899c5)
+ Call ID: 9543df8e-1474-4707-adfb-c7c77fb899c5
   Args:
     type: :Woman
-    source: Diana_Princess_of_Wales
-  AddTriple (c1d97072-ceb1-4a32-82c0-f6e04732db7d)
- Call ID: c1d97072-ceb1-4a32-82c0-f6e04732db7d
+    source: Princess_Lilibet_of_Sussex
+  AssignClass (e6fed28c-316e-44a8-8288-8cc1e5aec7a3)
+ Call ID: e6fed28c-316e-44a8-8288-8cc1e5aec7a3
   Args:
-    source: Lilibet_Diana_Mountbatten-Windsor
-    relation: :hasFather
-    target: Prince_Harry
-  AddTriple (11d5ccb1-2bd2-42c2-80b4-a14c1b7b4f0a)
- Call ID: 11d5ccb1-2bd2-42c2-80b4-a14c1b7b4f0a
+    source: Princess_Lilibet_of_Sussex
+    type: :Person
+  AddLiteral (864b9ea9-1349-459d-bb39-597f5700e30d)
+ Call ID: 864b9ea9-1349-459d-bb39-597f5700e30d
   Args:
-    relation: :hasMother
-    source: Lilibet_Diana_Mountbatten-Windsor
-    target: Meghan_Duchess_of_Sussex
-  AddTriple (a26d7767-b633-4d43-b945-1b14dd46c896)
- Call ID: a26d7767-b633-4d43-b945-1b14dd46c896
-  Args:
-    relation: :hasBrother
-    source: Lilibet_Diana_Mountbatten-Windsor
-    target: Prince_Archie
-  AddTriple (31a773a0-d0ed-407a-aeee-89d8d3ea3669)
- Call ID: 31a773a0-d0ed-407a-aeee-89d8d3ea3669
-  Args:
-    target: King_Charles_III
-    source: Prince_Harry
-    relation: :hasFather
-  AddLiteral (ce7be417-2e1a-478c-aea3-1309be7d4f8d)
- Call ID: ce7be417-2e1a-478c-aea3-1309be7d4f8d
+    relation: :knownAs
+    source: Princess_Lilibet_of_Sussex
+    literal_value: Lilibet Diana Mountbatten-Windsor
+    literal_type: xsd:string
+  AddLiteral (ce6f9855-b27a-4f4f-9972-dcf58b4bbac2)
+ Call ID: ce6f9855-b27a-4f4f-9972-dcf58b4bbac2
   Args:
     literal_type: xsd:integer
     literal_value: 2021
+    source: Princess_Lilibet_of_Sussex
     relation: :hasBirthYear
-    source: Lilibet_Diana_Mountbatten-Windsor
-  AddLiteral (574f3c37-0c06-4eb3-a2db-57190937c3a7)
- Call ID: 574f3c37-0c06-4eb3-a2db-57190937c3a7
+  AssignClass (75d48cea-e85c-4d9c-a883-e7f50662a197)
+ Call ID: 75d48cea-e85c-4d9c-a883-e7f50662a197
   Args:
-    literal_type: xsd:string
-    literal_value: Princess Lilibet of Sussex
-    relation: :knownAs
-    source: Lilibet_Diana_Mountbatten-Windsor
-  AddLiteral (0ba678f3-bce0-4519-ade2-a799b9057cdb)
- Call ID: 0ba678f3-bce0-4519-ade2-a799b9057cdb
+    source: Prince_Harry
+    type: :Man
+  AssignClass (ced99e49-3500-4443-ad63-06076e947dc0)
+ Call ID: ced99e49-3500-4443-ad63-06076e947dc0
   Args:
-    literal_value: Lilibet Diana Mountbatten-Windsor
-    source: Lilibet_Diana_Mountbatten-Windsor
-    relation: :alsoKnownAs
-    literal_type: xsd:string
-  Finish (62baa8b0-3090-4acb-872d-8308d7c5f23c)
- Call ID: 62baa8b0-3090-4acb-872d-8308d7c5f23c
+    type: :Person
+    source: Prince_Harry
+  AssignClass (dea5dad7-75ae-497e-b4f1-2550a4f10f74)
+ Call ID: dea5dad7-75ae-497e-b4f1-2550a4f10f74
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Meghan_Duchess_of_Sussex
+    type: :Woman
+  AssignClass (e4cddacd-c4df-4d15-8a04-218f3f9632dd)
+ Call ID: e4cddacd-c4df-4d15-8a04-218f3f9632dd
+  Args:
+    type: :Person
+    source: Meghan_Duchess_of_Sussex
+  AddTriple (4a1e2b9c-e2f6-478f-86c0-2da4ec315d01)
+ Call ID: 4a1e2b9c-e2f6-478f-86c0-2da4ec315d01
+  Args:
+    target: Prince_Harry
+    relation: :hasFather
+    source: Princess_Lilibet_of_Sussex
+  AddTriple (5c55dd6b-45c1-4ea9-8e2b-7b4918e946e9)
+ Call ID: 5c55dd6b-45c1-4ea9-8e2b-7b4918e946e9
+  Args:
+    source: Princess_Lilibet_of_Sussex
+    relation: :hasMother
+    target: Meghan_Duchess_of_Sussex
+  AssignClass (bfd9eb99-d77d-415b-ac9b-2f5a6d7df10b)
+ Call ID: bfd9eb99-d77d-415b-ac9b-2f5a6d7df10b
+  Args:
+    source: King_Charles_III
+    type: :Man
+  AssignClass (02604384-1333-4220-8ab9-b44ba6bffc88)
+ Call ID: 02604384-1333-4220-8ab9-b44ba6bffc88
+  Args:
+    source: King_Charles_III
+    type: :Person
+  AddTriple (e3bd3764-156f-4918-8146-c598bb6e0459)
+ Call ID: e3bd3764-156f-4918-8146-c598bb6e0459
+  Args:
+    target: King_Charles_III
+    relation: :hasFather
+    source: Prince_Harry
+  AssignClass (3b77c6f2-8df4-41ff-886a-0b489926a3b7)
+ Call ID: 3b77c6f2-8df4-41ff-886a-0b489926a3b7
+  Args:
+    type: :Man
+    source: Prince_Archie
+  AssignClass (8996eb4b-7161-49cc-89c8-32298a3569b1)
+ Call ID: 8996eb4b-7161-49cc-89c8-32298a3569b1
+  Args:
+    source: Prince_Archie
+    type: :Person
+  AddTriple (994ba162-8764-423c-8f4b-de04d8fc4f76)
+ Call ID: 994ba162-8764-423c-8f4b-de04d8fc4f76
+  Args:
+    relation: :isSiblingOf
+    target: Prince_Archie
+    source: Princess_Lilibet_of_Sussex
+  AssignClass (84b8790f-1c86-4b17-b509-655bc0008b5e)
+ Call ID: 84b8790f-1c86-4b17-b509-655bc0008b5e
+  Args:
+    type: :Woman
+    source: Queen_Elizabeth_II
+  AssignClass (b5bcf389-d601-4ed9-b88e-cf4c3fa8fef4)
+ Call ID: b5bcf389-d601-4ed9-b88e-cf4c3fa8fef4
+  Args:
+    type: :Person
+    source: Queen_Elizabeth_II
+  AssignClass (601eed93-7140-45ae-8f0b-607eb6fd8e54)
+ Call ID: 601eed93-7140-45ae-8f0b-607eb6fd8e54
+  Args:
+    source: Diana_Princess_of_Wales
+    type: :Woman
+  AssignClass (1eafe05b-d4d0-43c7-bf26-7dc0e50f24d7)
+ Call ID: 1eafe05b-d4d0-43c7-bf26-7dc0e50f24d7
+  Args:
+    type: :Person
+    source: Diana_Princess_of_Wales
+  Finish (e80d145e-1131-41a7-9e68-ccb9d3bd53b0)
+ Call ID: e80d145e-1131-41a7-9e68-ccb9d3bd53b0
+  Args:
 
 ================================= Tool Message =================================
 
@@ -567,14 +648,13 @@ The final data graph after all the edits:
   data:Diana_Princess_of_Wales a :Person,
           :Woman .
 
-  data:Lilibet_Diana_Mountbatten-Windsor a :Person,
+  data:Princess_Lilibet_of_Sussex a :Person,
           :Woman ;
-      :alsoKnownAs "Lilibet Diana Mountbatten-Windsor"^^xsd:string ;
       :hasBirthYear 2021 ;
-      :hasBrother data:Prince_Archie ;
       :hasFather data:Prince_Harry ;
       :hasMother data:Meghan_Duchess_of_Sussex ;
-      :knownAs "Princess Lilibet of Sussex"^^xsd:string .
+      :isSiblingOf data:Prince_Archie ;
+      :knownAs "Lilibet Diana Mountbatten-Windsor"^^xsd:string .
 
   data:Queen_Elizabeth_II a :Person,
           :Woman .
@@ -602,8 +682,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (d296a205-de7c-4f4e-92de-630e468bd0fb)
- Call ID: d296a205-de7c-4f4e-92de-630e468bd0fb
+  ValidateShacl (13b17909-6c79-434a-b63f-4399cc4da672)
+ Call ID: 13b17909-6c79-434a-b63f-4399cc4da672
   Args:
 
 ================================= Tool Message =================================
@@ -615,73 +695,73 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity King_Charles_III is assigned as the father of Prince_Harry, but it lacks the required class :Ancestor.
+      The node King_Charles_III is assigned as the father of Prince_Harry, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node :King_Charles_III.
+      AssignClass('King_Charles_III', ':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity King_Charles_III is assigned as the father of Prince_Harry, but it lacks the required class :Ancestor.
+      The node King_Charles_III is assigned as the father of Prince_Harry, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node :King_Charles_III.
+      AssignClass('King_Charles_III', ':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Prince_Harry is assigned as the father of Lilibet_Diana_Mountbatten-Windsor, but it lacks the required class :Ancestor.
+      The node Prince_Harry is assigned as the father of Princess_Lilibet_of_Sussex, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node :Prince_Harry.
+      AssignClass('Prince_Harry', ':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Meghan_Duchess_of_Sussex is assigned as the mother of Lilibet_Diana_Mountbatten-Windsor, but it lacks the required class :Ancestor.
+      The node Meghan_Duchess_of_Sussex is assigned as the mother of Princess_Lilibet_of_Sussex, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node :Meghan_Duchess_of_Sussex.
+      AssignClass('Meghan_Duchess_of_Sussex', ':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity King_Charles_III is assigned as the father of Prince_Harry, but it lacks the required class :Ancestor.
+      The node King_Charles_III is assigned as the father of Prince_Harry, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node :King_Charles_III.
+      AssignClass('King_Charles_III', ':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Prince_Harry is assigned as the father of Lilibet_Diana_Mountbatten-Windsor, but it lacks the required class :Ancestor.
+      The node Prince_Harry is assigned as the father of Princess_Lilibet_of_Sussex, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node :Prince_Harry.
+      AssignClass('Prince_Harry', ':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Meghan_Duchess_of_Sussex is assigned as the mother of Lilibet_Diana_Mountbatten-Windsor, but it lacks the required class :Ancestor.
+      The node Meghan_Duchess_of_Sussex is assigned as the mother of Princess_Lilibet_of_Sussex, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node :Meghan_Duchess_of_Sussex.
+      AssignClass('Meghan_Duchess_of_Sussex', ':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Prince_Harry is assigned as the father of Lilibet_Diana_Mountbatten-Windsor, but it lacks the required class :Ancestor.
+      The node Prince_Harry is assigned as the father of Princess_Lilibet_of_Sussex, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node :Prince_Harry.
+      AssignClass('Prince_Harry', ':Ancestor')
 
 
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Meghan_Duchess_of_Sussex is assigned as the mother of Lilibet_Diana_Mountbatten-Windsor, but it lacks the required class :Ancestor.
+      The node Meghan_Duchess_of_Sussex is assigned as the mother of Princess_Lilibet_of_Sussex, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to assign the class :Ancestor to the node :Meghan_Duchess_of_Sussex.
+      AssignClass('Meghan_Duchess_of_Sussex', ':Ancestor')
 
 
 
@@ -690,21 +770,21 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (194e3e4d-697d-40a7-a62c-d41815ada55f)
- Call ID: 194e3e4d-697d-40a7-a62c-d41815ada55f
+  AssignClass (3227a612-482b-462f-81b7-4de20deed679)
+ Call ID: 3227a612-482b-462f-81b7-4de20deed679
   Args:
+    type: :Ancestor
     source: King_Charles_III
-    type: :Ancestor
-  AssignClass (ca7672af-f5aa-4524-817d-7ca2de1ab5dd)
- Call ID: ca7672af-f5aa-4524-817d-7ca2de1ab5dd
+  AssignClass (7b38aa8a-7fb1-440c-9bad-a20ae27493c9)
+ Call ID: 7b38aa8a-7fb1-440c-9bad-a20ae27493c9
   Args:
-    type: :Ancestor
     source: Prince_Harry
-  AssignClass (c37deda3-46e3-40e2-a5ce-0f5d92b37e6a)
- Call ID: c37deda3-46e3-40e2-a5ce-0f5d92b37e6a
-  Args:
     type: :Ancestor
+  AssignClass (9079d06d-029a-40a7-ac19-baa7e378b9bc)
+ Call ID: 9079d06d-029a-40a7-ac19-baa7e378b9bc
+  Args:
     source: Meghan_Duchess_of_Sussex
+    type: :Ancestor
 
 ================================= Tool Message =================================
 
@@ -724,14 +804,13 @@ The final data graph after all the edits:
   data:Diana_Princess_of_Wales a :Person,
           :Woman .
 
-  data:Lilibet_Diana_Mountbatten-Windsor a :Person,
+  data:Princess_Lilibet_of_Sussex a :Person,
           :Woman ;
-      :alsoKnownAs "Lilibet Diana Mountbatten-Windsor"^^xsd:string ;
       :hasBirthYear 2021 ;
-      :hasBrother data:Prince_Archie ;
       :hasFather data:Prince_Harry ;
       :hasMother data:Meghan_Duchess_of_Sussex ;
-      :knownAs "Princess Lilibet of Sussex"^^xsd:string .
+      :isSiblingOf data:Prince_Archie ;
+      :knownAs "Lilibet Diana Mountbatten-Windsor"^^xsd:string .
 
   data:Queen_Elizabeth_II a :Person,
           :Woman .
@@ -758,8 +837,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (e7ecf261-20d4-4715-8714-84f3ae24edbd)
- Call ID: e7ecf261-20d4-4715-8714-84f3ae24edbd
+  ValidateShacl (5c66a196-a33b-4dee-8f4e-4ec78f201bcd)
+ Call ID: 5c66a196-a33b-4dee-8f4e-4ec78f201bcd
   Args:
 
 ================================= Tool Message =================================
@@ -770,6 +849,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (74ab5e53-1c3e-4a44-94c3-d363e4da0fdc)
- Call ID: 74ab5e53-1c3e-4a44-94c3-d363e4da0fdc
+  Finish (b6294f28-eda0-4d00-a37f-3fb59a8c9f64)
+ Call ID: b6294f28-eda0-4d00-a37f-3fb59a8c9f64
   Args:

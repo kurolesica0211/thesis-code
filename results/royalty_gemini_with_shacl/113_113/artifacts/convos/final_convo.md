@@ -108,6 +108,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -123,39 +125,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -170,6 +142,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -187,6 +176,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -254,29 +258,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -285,6 +281,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -297,6 +301,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -305,17 +311,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -343,6 +351,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -358,121 +450,140 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (1340a738-8c1c-4fa8-aea1-022c6aff9b98)
- Call ID: 1340a738-8c1c-4fa8-aea1-022c6aff9b98
+  AssignClass (8afc31d4-0ed0-4ad4-b93a-dd540f9e3504)
+ Call ID: 8afc31d4-0ed0-4ad4-b93a-dd540f9e3504
   Args:
     type: :Man
-    source: Prince_Ranieri_Maria_Gaetano
-  AssignClass (4d8723c6-5a75-4999-9e64-c00fe852770a)
- Call ID: 4d8723c6-5a75-4999-9e64-c00fe852770a
+    source: :Prince_Ranieri_Maria_Gaetano
+  AssignClass (f7edb634-08d3-4bd4-9050-41d298cf5b27)
+ Call ID: f7edb634-08d3-4bd4-9050-41d298cf5b27
   Args:
     type: :Person
-    source: Prince_Ranieri_Maria_Gaetano
-  AddLiteral (2e5d13a3-0b76-49e4-a230-f7b0d888fef8)
- Call ID: 2e5d13a3-0b76-49e4-a230-f7b0d888fef8
+    source: :Prince_Ranieri_Maria_Gaetano
+  AddLiteral (73941a86-1035-42ce-a39d-33544870aa27)
+ Call ID: 73941a86-1035-42ce-a39d-33544870aa27
   Args:
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Prince_Ranieri_Maria_Gaetano
     literal_value: 1883
-    literal_type: xsd:integer
-  AddLiteral (5eb33820-c63c-43de-8083-4851c7c5b858)
- Call ID: 5eb33820-c63c-43de-8083-4851c7c5b858
+    source: :Prince_Ranieri_Maria_Gaetano
+  AddLiteral (4b5dc03c-8b6d-4bd2-8589-15066ce70513)
+ Call ID: 4b5dc03c-8b6d-4bd2-8589-15066ce70513
   Args:
-    literal_type: xsd:integer
+    source: :Prince_Ranieri_Maria_Gaetano
     literal_value: 1973
-    source: Prince_Ranieri_Maria_Gaetano
     relation: :hasDeathYear
-  AssignClass (fc6d6786-4518-4307-9511-38af846b9aa6)
- Call ID: fc6d6786-4518-4307-9511-38af846b9aa6
-  Args:
-    type: :Man
-    source: Prince_Alfonso_Count_of_Caserta
-  AssignClass (c9afc270-93f3-4fa0-a903-a8374601dc62)
- Call ID: c9afc270-93f3-4fa0-a903-a8374601dc62
-  Args:
-    type: :Person
-    source: Prince_Alfonso_Count_of_Caserta
-  AssignClass (0fd664f1-4386-4013-9507-14f2d7d7e381)
- Call ID: 0fd664f1-4386-4013-9507-14f2d7d7e381
-  Args:
-    type: :Woman
-    source: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (dcbb2cd1-31ee-4988-a433-5911d64a1f72)
- Call ID: dcbb2cd1-31ee-4988-a433-5911d64a1f72
-  Args:
-    type: :Person
-    source: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AddLiteral (656319c3-0f9a-4301-963b-02ef848b9a66)
- Call ID: 656319c3-0f9a-4301-963b-02ef848b9a66
-  Args:
-    source: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
-    relation: :hasDeathYear
-    literal_value: 1938
     literal_type: xsd:integer
-  AddTriple (911cf7e8-dfa9-4fa7-a314-eda1b3eda24e)
- Call ID: 911cf7e8-dfa9-4fa7-a314-eda1b3eda24e
+  AssignClass (c7345b19-3e81-4ba6-b765-f1e7dedca07e)
+ Call ID: c7345b19-3e81-4ba6-b765-f1e7dedca07e
   Args:
-    source: Prince_Ranieri_Maria_Gaetano
-    relation: :hasFather
-    target: Prince_Alfonso_Count_of_Caserta
-  AddTriple (ddf3293f-dde7-457f-8412-da7da9c0d185)
- Call ID: ddf3293f-dde7-457f-8412-da7da9c0d185
-  Args:
-    target: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
-    source: Prince_Ranieri_Maria_Gaetano
-    relation: :hasMother
-  AssignClass (e41ef1ce-721b-4557-909e-08446f88f673)
- Call ID: e41ef1ce-721b-4557-909e-08446f88f673
-  Args:
+    source: :Prince_Alfonso_Count_of_Caserta
     type: :Man
-    source: Prince_Ferdinand_Pius_Duke_of_Calabria
-  AssignClass (d06035fd-e4a8-4127-88b7-5644003c40a3)
- Call ID: d06035fd-e4a8-4127-88b7-5644003c40a3
+  AssignClass (1ba03965-6ae2-409a-84d1-02e73fc41d69)
+ Call ID: 1ba03965-6ae2-409a-84d1-02e73fc41d69
   Args:
-    source: Prince_Ferdinand_Pius_Duke_of_Calabria
+    source: :Prince_Alfonso_Count_of_Caserta
     type: :Person
-  AddTriple (1f9a9962-c4e5-4b45-ab9d-322529a12647)
- Call ID: 1f9a9962-c4e5-4b45-ab9d-322529a12647
+  AssignClass (81d2f1d3-06d8-4a42-a3b6-ef61c1999bca)
+ Call ID: 81d2f1d3-06d8-4a42-a3b6-ef61c1999bca
   Args:
-    source: Prince_Ranieri_Maria_Gaetano
-    relation: :hasBrother
-    target: Prince_Ferdinand_Pius_Duke_of_Calabria
-  AssignClass (dafc7927-bed8-4901-b53f-d6cc0b699903)
- Call ID: dafc7927-bed8-4901-b53f-d6cc0b699903
-  Args:
-    source: Countess_Maria_Carolina_Zamoyska
+    source: :Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
     type: :Woman
-  AssignClass (031b5e57-0820-41d2-8837-fb8ae0f22721)
- Call ID: 031b5e57-0820-41d2-8837-fb8ae0f22721
+  AssignClass (c1501b89-f590-4d7a-a8e0-21c27861f58d)
+ Call ID: c1501b89-f590-4d7a-a8e0-21c27861f58d
   Args:
     type: :Person
-    source: Countess_Maria_Carolina_Zamoyska
-  AddLiteral (72bb0024-8a80-43e6-aaaf-33350389411e)
- Call ID: 72bb0024-8a80-43e6-aaaf-33350389411e
+    source: :Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
+  AddLiteral (1c2724cc-06ab-410a-a370-a5d4fe7f7c3b)
+ Call ID: 1c2724cc-06ab-410a-a370-a5d4fe7f7c3b
+  Args:
+    source: :Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
+    literal_value: 1938
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddTriple (7111212a-be9f-4449-94be-3a17a95a084e)
+ Call ID: 7111212a-be9f-4449-94be-3a17a95a084e
+  Args:
+    source: :Prince_Ranieri_Maria_Gaetano
+    relation: :hasFather
+    target: :Prince_Alfonso_Count_of_Caserta
+  AddTriple (c15bd7da-6105-476d-b4ca-eea7cf566065)
+ Call ID: c15bd7da-6105-476d-b4ca-eea7cf566065
+  Args:
+    source: :Prince_Ranieri_Maria_Gaetano
+    target: :Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
+    relation: :hasMother
+  AssignClass (ea599302-f6a0-4ca8-b180-24ac120d6b5e)
+ Call ID: ea599302-f6a0-4ca8-b180-24ac120d6b5e
+  Args:
+    source: :Prince_Ferdinand_Pius_Duke_of_Calabria
+    type: :Man
+  AssignClass (26c9c92f-4c6c-42dd-bab0-ecbe4f2d42a1)
+ Call ID: 26c9c92f-4c6c-42dd-bab0-ecbe4f2d42a1
+  Args:
+    source: :Prince_Ferdinand_Pius_Duke_of_Calabria
+    type: :Person
+  AddTriple (c1e42236-b48c-49c9-8ddf-e19f1f8f045e)
+ Call ID: c1e42236-b48c-49c9-8ddf-e19f1f8f045e
+  Args:
+    source: :Prince_Ranieri_Maria_Gaetano
+    relation: :isSiblingOf
+    target: :Prince_Ferdinand_Pius_Duke_of_Calabria
+  AssignClass (3c5f4a54-14d4-45ca-90d0-eae27b08d942)
+ Call ID: 3c5f4a54-14d4-45ca-90d0-eae27b08d942
+  Args:
+    source: :Countess_Maria_Carolina_Zamoyska
+    type: :Woman
+  AssignClass (7daeeff2-b8e4-4464-8cb4-262c13b857db)
+ Call ID: 7daeeff2-b8e4-4464-8cb4-262c13b857db
+  Args:
+    type: :Person
+    source: :Countess_Maria_Carolina_Zamoyska
+  AddLiteral (5c702455-5109-4ac7-8520-6c5a04e1fee6)
+ Call ID: 5c702455-5109-4ac7-8520-6c5a04e1fee6
+  Args:
+    literal_value: 1896
+    source: :Countess_Maria_Carolina_Zamoyska
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AddLiteral (4621af48-e25c-4f22-8dd6-66009e5c69c8)
+ Call ID: 4621af48-e25c-4f22-8dd6-66009e5c69c8
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: :Countess_Maria_Carolina_Zamoyska
+    literal_value: 1968
+  AddTriple (b0262fa9-8200-4cd8-a4fa-57753d9f4fbb)
+ Call ID: b0262fa9-8200-4cd8-a4fa-57753d9f4fbb
+  Args:
+    relation: :hasRelation
+    target: :Countess_Maria_Carolina_Zamoyska
+    source: :Prince_Ranieri_Maria_Gaetano
+  AddLiteral (4253d582-d26b-425b-8773-19fd0c8c1e96)
+ Call ID: 4253d582-d26b-425b-8773-19fd0c8c1e96
   Args:
     literal_type: xsd:integer
     relation: :hasMarriageYear
-    source: Prince_Ranieri_Maria_Gaetano
+    source: :Prince_Ranieri_Maria_Gaetano
     literal_value: 1923
-  AddTriple (d0aceb22-caf3-43ec-a3f0-bef2f2520ba7)
- Call ID: d0aceb22-caf3-43ec-a3f0-bef2f2520ba7
+  AssignClass (2c3f1117-8281-4fe8-a250-3c9c57a95c40)
+ Call ID: 2c3f1117-8281-4fe8-a250-3c9c57a95c40
   Args:
-    target: Countess_Maria_Carolina_Zamoyska
-    source: Prince_Ranieri_Maria_Gaetano
-    relation: :hasRelation
-  AssignClass (8c89eee7-ddeb-4053-8490-a28d86c49134)
- Call ID: 8c89eee7-ddeb-4053-8490-a28d86c49134
-  Args:
-    source: Infante_Alfonso_Duke_of_Calabria
+    source: :Infante_Alfonso_Duke_of_Calabria
     type: :Man
-  AssignClass (9d270800-5ac1-4784-92f8-f85efaf0adb4)
- Call ID: 9d270800-5ac1-4784-92f8-f85efaf0adb4
+  AssignClass (2f7816db-a004-45c4-bea2-9f8c33df01b9)
+ Call ID: 2f7816db-a004-45c4-bea2-9f8c33df01b9
   Args:
+    source: :Infante_Alfonso_Duke_of_Calabria
     type: :Person
-    source: Infante_Alfonso_Duke_of_Calabria
-  Finish (7d813e42-fafe-4fe5-aedf-331fa84591be)
- Call ID: 7d813e42-fafe-4fe5-aedf-331fa84591be
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -563,15 +674,17 @@ The final data graph after all the edits:
   data:Prince_Ranieri_Maria_Gaetano a :Man,
           :Person ;
       :hasBirthYear 1883 ;
-      :hasBrother data:Prince_Ferdinand_Pius_Duke_of_Calabria ;
       :hasDeathYear 1973 ;
       :hasFather data:Prince_Alfonso_Count_of_Caserta ;
       :hasMarriageYear 1923 ;
       :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-      :hasRelation data:Countess_Maria_Carolina_Zamoyska .
+      :hasRelation data:Countess_Maria_Carolina_Zamoyska ;
+      :isSiblingOf data:Prince_Ferdinand_Pius_Duke_of_Calabria .
 
   data:Countess_Maria_Carolina_Zamoyska a :Person,
-          :Woman .
+          :Woman ;
+      :hasBirthYear 1896 ;
+      :hasDeathYear 1968 .
 
   data:Prince_Alfonso_Count_of_Caserta a :Man,
           :Person .
@@ -585,6 +698,14 @@ The final data graph after all the edits:
 
 
 
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (4e4c9046-7dd0-48f8-9eb0-b49c5b082d43)
+ Call ID: 4e4c9046-7dd0-48f8-9eb0-b49c5b082d43
+  Args:
+
 ================================= Tool Message =================================
 
 You have not used SHACL validation even once, though you should! Check your work with the SHACL tool!
@@ -593,8 +714,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (f97670d4-ba67-4a75-9ddd-c0daca4e1532)
- Call ID: f97670d4-ba67-4a75-9ddd-c0daca4e1532
+  ValidateShacl (3f779c63-2df6-40ca-8423-75269415722e)
+ Call ID: 3f779c63-2df6-40ca-8423-75269415722e
   Args:
 
 ================================= Tool Message =================================
@@ -606,49 +727,49 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Alfonso_Count_of_Caserta, identified as the father of Prince_Ranieri_Maria_Gaetano, is missing the mandatory class :Ancestor required by the hasFather relationship.
+      The node Prince_Alfonso_Count_of_Caserta, used as the value for the hasFather property of Prince_Ranieri_Maria_Gaetano, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Alfonso_Count_of_Caserta', class=':Ancestor')
+      AssignClass(Prince_Alfonso_Count_of_Caserta, :Ancestor)
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies, identified as the mother of Prince_Ranieri_Maria_Gaetano, is missing the mandatory class :Ancestor required by the hasMother relationship.
+      The node Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies, used as the value for the hasMother property of Prince_Ranieri_Maria_Gaetano, is not assigned the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies', class=':Ancestor')
+      AssignClass(Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies, :Ancestor)
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Alfonso_Count_of_Caserta is missing the necessary classification as an :Ancestor in the context of the hasFather relationship.
+      The node Prince_Alfonso_Count_of_Caserta is missing the :Ancestor class, which is required for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Alfonso_Count_of_Caserta', class=':Ancestor')
+      AssignClass(Prince_Alfonso_Count_of_Caserta, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies is missing the necessary classification as an :Ancestor in the context of the hasMother relationship.
+      The node Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies is missing the :Ancestor class, which is required for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies', class=':Ancestor')
+      AssignClass(Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Alfonso_Count_of_Caserta is missing the necessary classification as an :Ancestor in the context of the hasFather relationship.
+      The node Prince_Alfonso_Count_of_Caserta is missing the :Ancestor class, which is required for the hasFather relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Alfonso_Count_of_Caserta', class=':Ancestor')
+      AssignClass(Prince_Alfonso_Count_of_Caserta, :Ancestor)
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies is missing the necessary classification as an :Ancestor in the context of the hasMother relationship.
+      The node Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies is missing the :Ancestor class, which is required for the hasMother relationship.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies', class=':Ancestor')
+      AssignClass(Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies, :Ancestor)
 
 
 
@@ -657,15 +778,15 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (05df34c3-7ee8-48cc-af0b-abac55084960)
- Call ID: 05df34c3-7ee8-48cc-af0b-abac55084960
+  AssignClass (17fa24ab-9b05-4838-8217-86047dd0df4b)
+ Call ID: 17fa24ab-9b05-4838-8217-86047dd0df4b
   Args:
+    source: :Prince_Alfonso_Count_of_Caserta
     type: :Ancestor
-    source: Prince_Alfonso_Count_of_Caserta
-  AssignClass (66961d75-2ea9-4659-b5cf-802ab9f2f976)
- Call ID: 66961d75-2ea9-4659-b5cf-802ab9f2f976
+  AssignClass (85d8db21-2806-4335-9ab5-a422e63304a6)
+ Call ID: 85d8db21-2806-4335-9ab5-a422e63304a6
   Args:
-    source: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
+    source: :Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
     type: :Ancestor
 
 ================================= Tool Message =================================
@@ -685,15 +806,17 @@ The final data graph after all the edits:
   data:Prince_Ranieri_Maria_Gaetano a :Man,
           :Person ;
       :hasBirthYear 1883 ;
-      :hasBrother data:Prince_Ferdinand_Pius_Duke_of_Calabria ;
       :hasDeathYear 1973 ;
       :hasFather data:Prince_Alfonso_Count_of_Caserta ;
       :hasMarriageYear 1923 ;
       :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-      :hasRelation data:Countess_Maria_Carolina_Zamoyska .
+      :hasRelation data:Countess_Maria_Carolina_Zamoyska ;
+      :isSiblingOf data:Prince_Ferdinand_Pius_Duke_of_Calabria .
 
   data:Countess_Maria_Carolina_Zamoyska a :Person,
-          :Woman .
+          :Woman ;
+      :hasBirthYear 1896 ;
+      :hasDeathYear 1968 .
 
   data:Prince_Alfonso_Count_of_Caserta a :Ancestor,
           :Man,
@@ -713,8 +836,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (7bfee8bd-b142-49f5-a164-cffc9b753885)
- Call ID: 7bfee8bd-b142-49f5-a164-cffc9b753885
+  ValidateShacl (ffd71f41-3338-486f-9fae-6e4a0dc17277)
+ Call ID: ffd71f41-3338-486f-9fae-6e4a0dc17277
   Args:
 
 ================================= Tool Message =================================
@@ -725,6 +848,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (8a0d88df-5d21-417b-a093-0c6626238f32)
- Call ID: 8a0d88df-5d21-417b-a093-0c6626238f32
+  Finish (bf1067a0-15aa-418e-a483-6c04e3a285da)
+ Call ID: bf1067a0-15aa-418e-a483-6c04e3a285da
   Args:

@@ -85,31 +85,52 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-George Ivar Louis Mountbatten, 4th Marquess of Milford Haven (born 6 June 1961), styled Earl of Medina before 1970, is a British hereditary peer and businessman.
-Biography
+Patricia Edwina Victoria Knatchbull, 2nd
+Countess Mountbatten of Burma, Baroness Brabourne, CBE, MSC, CD (née Mountbatten; 14 February 1924 – 13 June 2017), was a British peeress and third cousin of Queen Elizabeth II.
+Earl Mountbatten of Burma (formerly Prince Louis of Battenberg) and of heiress Edwina Ashley.
+She was the elder sister of Lady Pamela Hicks, the first cousin of Prince Philip, Duke of Edinburgh, and the last surviving baptismal sponsor to her first cousin once removed King Charles III.
+Lady Mountbatten succeeded her father as Countess Mountbatten of Burma when he was assassinated in 1979, as his peerages had been created with special remainder to his daughters and their heirs male.
+Early life
 
-Family
-
-Born on 6 June 1961, Lord Milford Haven is the elder son of the 3rd Marquess of Milford Haven and Janet Mercedes Bryce, the older brother of Lord Ivar Mountbatten, and a descendant of Queen Victoria, Catherine the Great, Alexander Pushkin, and Abram Gannibal.
-Upon the death of his father on 14 April 1970, he became the 4th Marquess of Milford Haven and head of the Mountbatten family.
-Lord Milford Haven married, first, Sarah Georgina Walker (born London, Middlesex, 17 November 1961/2), in London on 8 March 1989.
-She is the daughter of Jean Maureen (née Hatton) and George Alfred Walker.
-Lord Milford Haven and Walker had two children:
+Patricia Mountbatten was born in the St George Hanover Square parish of London in 1924, exactly two years after her father proposed to her mother in India.
+Her middle names were Edwina, after her mother, and Victoria, after her grandmother the eldest daughter of princess alice of United Kingdom
 
 
-The couple divorced on 27 February 1996.
-In June 2016, Walker married Michael Spencer, Lord Spencer of Alresford.
-Lord Milford Haven subsequently married Clare Husted Steel at Coatue Point in Nantucket, Massachusetts, on 20 August 1997.
-Career
+Marriage and children
 
-In 2000, Lord Milford Haven founded uSwitch, a website to help consumers compare and change suppliers of various services.
-Lord Milford Haven won the Queen's Cup with the Broncos team in 1988 and he reached the final in 2006.
+On 26 October 1946, she married John Knatchbull, 7th Baron Brabourne (9 November 1924 – 23 September 2005), at the time an aide to her father in the Far East.
+They had met after Patricia, having served in the Women's Royal Naval Service, was commissioned in 1945 as a third officer and was serving in the Supreme Allied Headquarters, South East Asia.
+The wedding took place at Romsey Abbey in the presence of members of the royal family.
+Her bridesmaids were Princess Elizabeth, Princess Margaret, Lady Pamela Mountbatten (the bride's younger sister), and Princess Alexandra, daughter of the Duke and Duchess of Kent.
+As Lady Brabourne during her father's lifetime, her immediate family became closely involved in the consideration of a future consort for her first cousin once removed, Charles, Prince of Wales.
+In early 1974, Lord Mountbatten began corresponding with the eldest son of Queen Elizabeth II and Prince Philip about a potential marriage to Lady Brabourne's daughter, Amanda.
+Charles wrote to Lady Brabourne (who was also his godmother), about his interest in her daughter, to which she replied approvingly, though suggesting that a courtship was premature.
+Amanda Knatchbull declined the marriage proposal of Charles in 1980, following the assassination of her maternal grandfather.
+Activities
+
+Patricia was educated in Malta, England, and at the Hewitt School in New York City.
+In 1973 she was appointed Deputy Lieutenant for the County of Kent; she was also a serving magistrate and was involved with numerous service organisations including SOS Children's Villages UK, of which she was a Patron; the Order of St John, of which she was a Dame; and the Countess Mountbatten's Own Legion of Frontiersmen of the Commonwealth, of which she was a Patron.
+On 15 June 1974, she succeeded her distant cousin (first cousin twice removed)
+Lady Patricia Ramsay, formerly HRH Princess Patricia of Connaught, as Colonel-in-Chief of Princess Patricia's Canadian Light Infantry, for whom the regiment was named when Princess Patricia's father, the Duke of Connaught, was Governor General of Canada during the First World War.
+Despite her succeeding to an earldom in her own right as Countess Mountbatten of Burma on the death of her father in 1979, she preferred that the officers and men of her regiment address her as Lady Patricia.
+On 28 August 2007, the Governor General of Canada presented her with the Canadian Meritorious Service Cross for her services as Colonel-in-Chief of Princess Patricia's Light Infantry.
+Patricia was in the boat which was blown up by the IRA off the shores of Mullaghmore, County Sligo, in August 1979, killing her 14-year-old son Nicholas; her father; her mother-in-law, the Dowager Baroness Brabourne; and 15-year-old Paul Maxwell, a boat-boy from County Fermanagh.
+Following the incident the Countess became Patron and, later, President of The Compassionate Friends, a self-help charitable organisation of bereaved parents in the UK.
+In June 2012, at the time of Queen Elizabeth II's first visit to the Republic of Ireland, Countess Mountbatten said the Queen had her full support for meeting Martin McGuinness, who had been a high-ranking member of the IRA.
+Death and funeral
+
+Countess Mountbatten died at her home in Mersham, Kent, on 13 June 2017, aged 93.
+Her funeral service took place on 27 June at St Paul's Church, Knightsbridge, and was attended by the Queen Elizabeth II, Prince Philip, Duke of Edinburgh, and other senior members of the royal family.
+Her casket was borne by a party of pall bearers from Princess Patricia's Canadian Light Infantry, who were in London on public duties.
+She was buried in the Knatchbull family plot in Mersham churchyard.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -125,39 +146,9 @@ Lord Milford Haven won the Queen's Cup with the Broncos team in 1988 and he reac
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -172,6 +163,23 @@ Lord Milford Haven won the Queen's Cup with the Broncos team in 1988 and he reac
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -189,6 +197,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -256,29 +279,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -287,6 +302,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -299,6 +322,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -307,17 +332,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -345,6 +372,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -360,278 +471,136 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (35a6b71e-237b-4419-8401-b7b71ee89548)
- Call ID: 35a6b71e-237b-4419-8401-b7b71ee89548
+  AssignClass (fb632f2c-2165-4b4a-9976-81e30b36f33e)
+ Call ID: fb632f2c-2165-4b4a-9976-81e30b36f33e
   Args:
-    source: :George_Ivar_Louis_Mountbatten
-    type: :Man
-  AssignClass (b62d1d6e-c0fc-4fea-ab49-8a38b197f910)
- Call ID: b62d1d6e-c0fc-4fea-ab49-8a38b197f910
+    type: :Woman
+    source: Patricia_Mountbatten
+  AssignClass (92cb14e6-5f36-44c8-88ff-235a1dc3954a)
+ Call ID: 92cb14e6-5f36-44c8-88ff-235a1dc3954a
   Args:
-    source: :George_Ivar_Louis_Mountbatten
     type: :Person
-  AddLiteral (093500d8-5d36-4a12-aaa0-7d47128252d5)
- Call ID: 093500d8-5d36-4a12-aaa0-7d47128252d5
+    source: Patricia_Mountbatten
+  AddLiteral (d606f7d2-20d6-44f2-be25-c3e95ec68b57)
+ Call ID: d606f7d2-20d6-44f2-be25-c3e95ec68b57
   Args:
-    literal_value: 1961
-    source: :George_Ivar_Louis_Mountbatten
-    relation: :hasBirthYear
     literal_type: xsd:integer
-  AddTriple (ca411f18-475d-4a4b-a967-6158a76969a9)
- Call ID: ca411f18-475d-4a4b-a967-6158a76969a9
+    relation: :hasBirthYear
+    literal_value: 1924
+    source: Patricia_Mountbatten
+  AddLiteral (0dd1706a-4839-4f55-a9c9-806ea17c3905)
+ Call ID: 0dd1706a-4839-4f55-a9c9-806ea17c3905
   Args:
-    relation: :hasSex
-    target: :Male
-    source: :George_Ivar_Louis_Mountbatten
-  AssignClass (0846fbf4-2d1c-400e-b39b-239d6726ab50)
- Call ID: 0846fbf4-2d1c-400e-b39b-239d6726ab50
+    source: Patricia_Mountbatten
+    literal_value: 2017
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AssignClass (7498ae7c-186b-4f72-af39-0e7b8bb1e53e)
+ Call ID: 7498ae7c-186b-4f72-af39-0e7b8bb1e53e
   Args:
-    source: :Male
-    type: :Male
-  AssignClass (b17237fd-9a40-408a-949f-66520395b628)
- Call ID: b17237fd-9a40-408a-949f-66520395b628
-  Args:
-    type: :Sex
-    source: :Male
-  AssignClass (d4df81dd-c25d-4114-bd5f-91c3fec399fa)
- Call ID: d4df81dd-c25d-4114-bd5f-91c3fec399fa
-  Args:
-    source: :Female
-    type: :Female
-  AssignClass (45c3330a-801c-4a0a-a02e-0343512dc82b)
- Call ID: 45c3330a-801c-4a0a-a02e-0343512dc82b
-  Args:
-    type: :Sex
-    source: :Female
-  AddTriple (8eb37b41-513c-46e7-bbf7-da77948f8566)
- Call ID: 8eb37b41-513c-46e7-bbf7-da77948f8566
-  Args:
-    source: :George_Ivar_Louis_Mountbatten
-    target: :3rd_Marquess_of_Milford_Haven
-    relation: :hasFather
-  AssignClass (fe494212-d999-49e1-a3d3-93c9e52c6c01)
- Call ID: fe494212-d999-49e1-a3d3-93c9e52c6c01
-  Args:
-    source: :3rd_Marquess_of_Milford_Haven
+    source: Earl_Mountbatten_of_Burma
     type: :Man
-  AssignClass (d4f3decc-fd23-4e9e-a8f5-6cedb00e67a5)
- Call ID: d4f3decc-fd23-4e9e-a8f5-6cedb00e67a5
+  AssignClass (a25410cb-94f5-4063-abf5-6c7f63c0bc8b)
+ Call ID: a25410cb-94f5-4063-abf5-6c7f63c0bc8b
   Args:
-    source: :3rd_Marquess_of_Milford_Haven
     type: :Person
-  AddTriple (b2655e15-12fa-4ac5-8946-0c4522062dc5)
- Call ID: b2655e15-12fa-4ac5-8946-0c4522062dc5
+    source: Earl_Mountbatten_of_Burma
+  AssignClass (1f7ad356-ee0d-493f-84c4-85ff629524e0)
+ Call ID: 1f7ad356-ee0d-493f-84c4-85ff629524e0
   Args:
-    relation: :hasMother
-    target: :Janet_Mercedes_Bryce
-    source: :George_Ivar_Louis_Mountbatten
-  AssignClass (aa2f4703-942f-45f3-b1da-45d1938a95a2)
- Call ID: aa2f4703-942f-45f3-b1da-45d1938a95a2
-  Args:
-    source: :Janet_Mercedes_Bryce
+    source: Edwina_Ashley
     type: :Woman
-  AssignClass (b4cb229b-d109-41c8-8963-0bf8ef253c44)
- Call ID: b4cb229b-d109-41c8-8963-0bf8ef253c44
+  AssignClass (ba07b951-2b37-46c2-9d48-87aa61f8f62c)
+ Call ID: ba07b951-2b37-46c2-9d48-87aa61f8f62c
   Args:
     type: :Person
-    source: :Janet_Mercedes_Bryce
-  AddTriple (599dc574-5990-45be-ac13-bc552af3edcf)
- Call ID: 599dc574-5990-45be-ac13-bc552af3edcf
+    source: Edwina_Ashley
+  AddTriple (22a7d031-ebdd-42f4-a2ed-d20e59a0b760)
+ Call ID: 22a7d031-ebdd-42f4-a2ed-d20e59a0b760
   Args:
-    source: :George_Ivar_Louis_Mountbatten
-    relation: :hasBrother
-    target: :Lord_Ivar_Mountbatten
-  AssignClass (73208036-9df5-43c8-8826-12e78017c87c)
- Call ID: 73208036-9df5-43c8-8826-12e78017c87c
+    relation: :isFatherOf
+    target: Patricia_Mountbatten
+    source: Earl_Mountbatten_of_Burma
+  AddTriple (4bfbc54d-8658-49ea-b0c3-32918e1b0ef8)
+ Call ID: 4bfbc54d-8658-49ea-b0c3-32918e1b0ef8
+  Args:
+    target: Patricia_Mountbatten
+    source: Edwina_Ashley
+    relation: :isMotherOf
+  AssignClass (990a8b27-b250-491c-b5ab-70b5077abb7a)
+ Call ID: 990a8b27-b250-491c-b5ab-70b5077abb7a
+  Args:
+    source: Lady_Pamela_Hicks
+    type: :Woman
+  AssignClass (003b58fe-c3e2-4c23-b6f7-42cf68d9374d)
+ Call ID: 003b58fe-c3e2-4c23-b6f7-42cf68d9374d
+  Args:
+    source: Lady_Pamela_Hicks
+    type: :Person
+  AddTriple (2a5d8b55-bff4-4c01-885f-afd1d4886bc3)
+ Call ID: 2a5d8b55-bff4-4c01-885f-afd1d4886bc3
+  Args:
+    source: Lady_Pamela_Hicks
+    target: Patricia_Mountbatten
+    relation: :isSisterOf
+  AssignClass (cb52f00f-6fdd-4fd1-94cf-ccdbf2875f16)
+ Call ID: cb52f00f-6fdd-4fd1-94cf-ccdbf2875f16
   Args:
     type: :Man
-    source: :Lord_Ivar_Mountbatten
-  AssignClass (46a34838-4edd-4689-acab-2a01bf3f6e4f)
- Call ID: 46a34838-4edd-4689-acab-2a01bf3f6e4f
+    source: John_Knatchbull
+  AssignClass (580b43c7-bb1e-4de3-9f1c-cd6d977beb5b)
+ Call ID: 580b43c7-bb1e-4de3-9f1c-cd6d977beb5b
   Args:
-    source: :Lord_Ivar_Mountbatten
     type: :Person
-  AddTriple (53dadfe3-d70f-4677-913b-cdf5c6a25ecb)
- Call ID: 53dadfe3-d70f-4677-913b-cdf5c6a25ecb
+    source: John_Knatchbull
+  AddLiteral (a8a3d313-1aab-4c9c-a0b9-d10a3f548a03)
+ Call ID: a8a3d313-1aab-4c9c-a0b9-d10a3f548a03
   Args:
-    relation: :hasSex
-    target: :Male
-    source: :Lord_Ivar_Mountbatten
-  AddTriple (2ffca8ff-5f14-43a3-ad98-43b12cab4a99)
- Call ID: 2ffca8ff-5f14-43a3-ad98-43b12cab4a99
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: :3rd_Marquess_of_Milford_Haven
-  AddTriple (82ca79cd-66c2-49a4-9f2d-d4e708b8eac9)
- Call ID: 82ca79cd-66c2-49a4-9f2d-d4e708b8eac9
-  Args:
-    source: :Janet_Mercedes_Bryce
-    target: :Female
-    relation: :hasSex
-  AddTriple (5041c63f-fc2b-472c-a310-23e449e52dba)
- Call ID: 5041c63f-fc2b-472c-a310-23e449e52dba
-  Args:
+    literal_type: xsd:integer
+    literal_value: 1946
     relation: :hasMarriageYear
-    target: :1989
-    source: :George_Ivar_Louis_Mountbatten
-  AddTriple (07c8b33b-187e-46f4-8d2a-b152cb714a7f)
- Call ID: 07c8b33b-187e-46f4-8d2a-b152cb714a7f
-  Args:
-    relation: :hasMarriageYear
-    target: :1997
-    source: :George_Ivar_Louis_Mountbatten
-  AddTriple (50bfbc45-e0e8-49e8-8f71-c45ec3d3ac59)
- Call ID: 50bfbc45-e0e8-49e8-8f71-c45ec3d3ac59
+    source: Patricia_Mountbatten
+  AddTriple (a20c7b0f-b217-4bbe-9b8d-6e8703713516)
+ Call ID: a20c7b0f-b217-4bbe-9b8d-6e8703713516
   Args:
     relation: :hasRelation
-    target: :Sarah_Georgina_Walker
-    source: :George_Ivar_Louis_Mountbatten
-  AssignClass (833b1164-f60c-47ef-ae86-40154c3a4df8)
- Call ID: 833b1164-f60c-47ef-ae86-40154c3a4df8
+    source: Patricia_Mountbatten
+    target: John_Knatchbull
+  AssignClass (34af3354-d3c2-4b70-8eea-b85e00f95b3d)
+ Call ID: 34af3354-d3c2-4b70-8eea-b85e00f95b3d
   Args:
-    type: :Woman
-    source: :Sarah_Georgina_Walker
-  AssignClass (0f7dc9b7-d049-4842-a125-c3b33e286775)
- Call ID: 0f7dc9b7-d049-4842-a125-c3b33e286775
-  Args:
-    source: :Sarah_Georgina_Walker
-    type: :Person
-  AddTriple (8aa255cd-409f-4569-918b-1a681c68dd12)
- Call ID: 8aa255cd-409f-4569-918b-1a681c68dd12
-  Args:
-    source: :Sarah_Georgina_Walker
-    relation: :hasSex
-    target: :Female
-  AddTriple (1579b895-7489-4558-b6da-0a0d842cf571)
- Call ID: 1579b895-7489-4558-b6da-0a0d842cf571
-  Args:
-    source: :George_Ivar_Louis_Mountbatten
-    target: :Clare_Husted_Steel
-    relation: :hasRelation
-  AssignClass (2ba7936e-4e27-43db-b787-9001eeebb4ad)
- Call ID: 2ba7936e-4e27-43db-b787-9001eeebb4ad
-  Args:
-    source: :Clare_Husted_Steel
-    type: :Woman
-  AssignClass (00e52396-27bb-416b-9f8a-059a759991fb)
- Call ID: 00e52396-27bb-416b-9f8a-059a759991fb
-  Args:
-    type: :Person
-    source: :Clare_Husted_Steel
-  AddTriple (ef19db3d-7650-406f-84f8-ae525601a6ec)
- Call ID: ef19db3d-7650-406f-84f8-ae525601a6ec
-  Args:
-    source: :Clare_Husted_Steel
-    target: :Female
-    relation: :hasSex
-  AddTriple (8d3b8e29-4a38-4b7e-9ad6-c1e4abd6eb66)
- Call ID: 8d3b8e29-4a38-4b7e-9ad6-c1e4abd6eb66
-  Args:
-    target: :Jean_Maureen_Hatton
-    relation: :hasMother
-    source: :Sarah_Georgina_Walker
-  AssignClass (24a383c7-37cc-4473-83d3-0db507dfec36)
- Call ID: 24a383c7-37cc-4473-83d3-0db507dfec36
-  Args:
-    source: :Jean_Maureen_Hatton
-    type: :Woman
-  AssignClass (bbb32cf2-3520-48b5-bab8-dc2e95f1ef12)
- Call ID: bbb32cf2-3520-48b5-bab8-dc2e95f1ef12
-  Args:
-    source: :Jean_Maureen_Hatton
-    type: :Person
-  AddTriple (75a87f60-3353-4445-923e-18d315221448)
- Call ID: 75a87f60-3353-4445-923e-18d315221448
-  Args:
-    source: :Jean_Maureen_Hatton
-    relation: :hasSex
-    target: :Female
-  AddTriple (b6a675d5-bbfd-4fbd-80fe-e20c5a6a30c7)
- Call ID: b6a675d5-bbfd-4fbd-80fe-e20c5a6a30c7
-  Args:
-    target: :George_Alfred_Walker
-    relation: :hasFather
-    source: :Sarah_Georgina_Walker
-  AssignClass (dade7c85-7573-45f2-891a-118e870eff02)
- Call ID: dade7c85-7573-45f2-891a-118e870eff02
-  Args:
-    source: :George_Alfred_Walker
+    source: Nicholas_Knatchbull
     type: :Man
-  AssignClass (0e74715f-31de-4a48-bb1a-4779b286edc7)
- Call ID: 0e74715f-31de-4a48-bb1a-4779b286edc7
+  AssignClass (e2ad1a41-429f-4c3e-ba32-6b965dbbf958)
+ Call ID: e2ad1a41-429f-4c3e-ba32-6b965dbbf958
   Args:
     type: :Person
-    source: :George_Alfred_Walker
-  AddTriple (ddc72bce-d6d0-49d0-94cd-bd65c82b5c18)
- Call ID: ddc72bce-d6d0-49d0-94cd-bd65c82b5c18
+    source: Nicholas_Knatchbull
+  AddTriple (97604755-4f5d-4506-94b8-0a27658798b4)
+ Call ID: 97604755-4f5d-4506-94b8-0a27658798b4
   Args:
-    source: :George_Alfred_Walker
-    target: :Male
-    relation: :hasSex
-  Finish (cc276e95-ea7d-4396-802b-40de35eb3d77)
- Call ID: cc276e95-ea7d-4396-802b-40de35eb3d77
+    relation: :isSonOf
+    source: Nicholas_Knatchbull
+    target: Patricia_Mountbatten
+  AssignClass (000ee729-7e2a-42bb-ac68-18d793e9bf96)
+ Call ID: 000ee729-7e2a-42bb-ac68-18d793e9bf96
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    type: :Woman
+    source: Amanda_Knatchbull
+  AssignClass (85170f38-8dc1-49df-9a1d-dc9a47940d35)
+ Call ID: 85170f38-8dc1-49df-9a1d-dc9a47940d35
+  Args:
+    source: Amanda_Knatchbull
+    type: :Person
+  AddTriple (5c738a0f-15cf-4a44-bb02-8472cdc9fdc6)
+ Call ID: 5c738a0f-15cf-4a44-bb02-8472cdc9fdc6
+  Args:
+    target: Patricia_Mountbatten
+    source: Amanda_Knatchbull
+    relation: :isDaughterOf
+  Finish (9fe282c7-09da-4081-a593-5d98e98d5a54)
+ Call ID: 9fe282c7-09da-4081-a593-5d98e98d5a54
+  Args:
 
 ================================= Tool Message =================================
 
@@ -728,53 +697,35 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:George_Ivar_Louis_Mountbatten a :Man,
-          :Person ;
-      :hasBirthYear 1961 ;
-      :hasBrother data:Lord_Ivar_Mountbatten ;
-      :hasFather data:3rd_Marquess_of_Milford_Haven ;
-      :hasMarriageYear data:1989,
-          data:1997 ;
-      :hasMother data:Janet_Mercedes_Bryce ;
-      :hasRelation data:Clare_Husted_Steel,
-          data:Sarah_Georgina_Walker ;
-      :hasSex data:Male .
-
-  data:3rd_Marquess_of_Milford_Haven a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Clare_Husted_Steel a :Person,
+  data:Amanda_Knatchbull a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :isDaughterOf data:Patricia_Mountbatten .
 
-  data:George_Alfred_Walker a :Man,
+  data:Earl_Mountbatten_of_Burma a :Man,
           :Person ;
-      :hasSex data:Male .
+      :isFatherOf data:Patricia_Mountbatten .
 
-  data:Janet_Mercedes_Bryce a :Person,
+  data:Edwina_Ashley a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :isMotherOf data:Patricia_Mountbatten .
 
-  data:Jean_Maureen_Hatton a :Person,
+  data:Lady_Pamela_Hicks a :Person,
           :Woman ;
-      :hasSex data:Female .
+      :isSisterOf data:Patricia_Mountbatten .
 
-  data:Lord_Ivar_Mountbatten a :Man,
+  data:Nicholas_Knatchbull a :Man,
           :Person ;
-      :hasSex data:Male .
+      :isSonOf data:Patricia_Mountbatten .
 
-  data:Sarah_Georgina_Walker a :Person,
+  data:John_Knatchbull a :Man,
+          :Person .
+
+  data:Patricia_Mountbatten a :Person,
           :Woman ;
-      :hasFather data:George_Alfred_Walker ;
-      :hasMother data:Jean_Maureen_Hatton ;
-      :hasSex data:Female .
-
-  data:Female a :Female,
-          :Sex .
-
-  data:Male a :Male,
-          :Sex .
+      :hasBirthYear 1924 ;
+      :hasDeathYear 2017 ;
+      :hasMarriageYear 1946 ;
+      :hasRelation data:John_Knatchbull .
 
 
 
@@ -786,110 +737,78 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (92ec04b2-0997-4083-bd21-821dc82532a0)
- Call ID: 92ec04b2-0997-4083-bd21-821dc82532a0
+  ValidateShacl (f2801711-1f12-4aa0-8d86-366be1085f70)
+ Call ID: f2801711-1f12-4aa0-8d86-366be1085f70
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:12
+Total violations:8
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 3rd_Marquess_of_Milford_Haven referenced by George_Ivar_Louis_Mountbatten via hasFather is missing the required :Ancestor or :Man class.
+      The node Nicholas_Knatchbull has a property :isSonOf pointing to Patricia_Mountbatten, but Patricia_Mountbatten is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass 3rd_Marquess_of_Milford_Haven :Ancestor
+      AssignClass(node='Patricia_Mountbatten', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Janet_Mercedes_Bryce referenced by George_Ivar_Louis_Mountbatten via hasMother is missing the required :Ancestor or :Woman class.
+      The node Nicholas_Knatchbull has a property :isSonOf pointing to Patricia_Mountbatten, but Patricia_Mountbatten is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Janet_Mercedes_Bryce :Ancestor
+      AssignClass(node='Patricia_Mountbatten', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node George_Alfred_Walker referenced by Sarah_Georgina_Walker via hasFather is missing the required :Ancestor or :Man class.
+      The node Amanda_Knatchbull has a property :isDaughterOf pointing to Patricia_Mountbatten, but Patricia_Mountbatten is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass George_Alfred_Walker :Ancestor
+      AssignClass(node='Patricia_Mountbatten', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 3rd_Marquess_of_Milford_Haven referenced by George_Ivar_Louis_Mountbatten via hasFather is missing the required :Ancestor or :Man class.
+      The node Nicholas_Knatchbull has a property :isSonOf pointing to Patricia_Mountbatten, but Patricia_Mountbatten is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass 3rd_Marquess_of_Milford_Haven :Man
+      AssignClass(node='Patricia_Mountbatten', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Jean_Maureen_Hatton referenced by Sarah_Georgina_Walker via hasMother is missing the required :Ancestor or :Woman class.
+      The node Amanda_Knatchbull has a property :isDaughterOf pointing to Patricia_Mountbatten, but Patricia_Mountbatten is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Jean_Maureen_Hatton :Ancestor
+      AssignClass(node='Patricia_Mountbatten', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node Janet_Mercedes_Bryce referenced by George_Ivar_Louis_Mountbatten via hasMother is missing the required :Ancestor or :Woman class.
+      The node Amanda_Knatchbull has a property :isDaughterOf pointing to Patricia_Mountbatten, but Patricia_Mountbatten is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass Janet_Mercedes_Bryce :Woman
+      AssignClass(node='Patricia_Mountbatten', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node George_Alfred_Walker referenced by Sarah_Georgina_Walker via hasFather is missing the required :Ancestor or :Man class.
+      The node Earl_Mountbatten_of_Burma is used as a subject for the :isFatherOf relationship but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass George_Alfred_Walker :Man
+      AssignClass(node='Earl_Mountbatten_of_Burma', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The node 3rd_Marquess_of_Milford_Haven referenced by George_Ivar_Louis_Mountbatten via hasFather is missing the required :Ancestor or :Man class.
+      The node Edwina_Ashley is used as a subject for the :isMotherOf relationship but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass 3rd_Marquess_of_Milford_Haven :Ancestor
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Jean_Maureen_Hatton referenced by Sarah_Georgina_Walker via hasMother is missing the required :Ancestor or :Woman class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass Jean_Maureen_Hatton :Woman
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Janet_Mercedes_Bryce referenced by George_Ivar_Louis_Mountbatten via hasMother is missing the required :Ancestor or :Woman class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass Janet_Mercedes_Bryce :Ancestor
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node George_Alfred_Walker referenced by Sarah_Georgina_Walker via hasFather is missing the required :Ancestor or :Man class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass George_Alfred_Walker :Ancestor
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Jean_Maureen_Hatton referenced by Sarah_Georgina_Walker via hasMother is missing the required :Ancestor or :Woman class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass Jean_Maureen_Hatton :Ancestor
+      AssignClass(node='Edwina_Ashley', class=':Ancestor')
 
 
 
@@ -898,33 +817,21 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (60fe6e88-4fa3-4507-81c3-a33cabefb097)
- Call ID: 60fe6e88-4fa3-4507-81c3-a33cabefb097
+  AssignClass (ef826a38-f5bf-4ef4-8e35-a06c3fd8cedf)
+ Call ID: ef826a38-f5bf-4ef4-8e35-a06c3fd8cedf
+  Args:
+    source: Patricia_Mountbatten
+    type: :Ancestor
+  AssignClass (36e02bc5-e5dd-4bf1-b5c0-4ebd86305656)
+ Call ID: 36e02bc5-e5dd-4bf1-b5c0-4ebd86305656
+  Args:
+    source: Earl_Mountbatten_of_Burma
+    type: :Ancestor
+  AssignClass (8c7db850-2546-4566-887a-0be5dcedc341)
+ Call ID: 8c7db850-2546-4566-887a-0be5dcedc341
   Args:
     type: :Ancestor
-    source: :3rd_Marquess_of_Milford_Haven
-  AssignClass (fc8ba9a6-96c9-4b7e-9a22-c5823761c5af)
- Call ID: fc8ba9a6-96c9-4b7e-9a22-c5823761c5af
-  Args:
-    type: :Ancestor
-    source: :Janet_Mercedes_Bryce
-  AssignClass (9ec1e0ce-7131-411c-9e02-22010725b39d)
- Call ID: 9ec1e0ce-7131-411c-9e02-22010725b39d
-  Args:
-    type: :Ancestor
-    source: :George_Alfred_Walker
-  AssignClass (6ae920dd-d570-4275-a1df-9778ee4e382c)
- Call ID: 6ae920dd-d570-4275-a1df-9778ee4e382c
-  Args:
-    type: :Ancestor
-    source: :Jean_Maureen_Hatton
-  ValidateShacl (86a9a330-325f-456b-905c-7ac7a450eea1)
- Call ID: 86a9a330-325f-456b-905c-7ac7a450eea1
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: Edwina_Ashley
 
 ================================= Tool Message =================================
 
@@ -941,59 +848,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:George_Ivar_Louis_Mountbatten a :Man,
-          :Person ;
-      :hasBirthYear 1961 ;
-      :hasBrother data:Lord_Ivar_Mountbatten ;
-      :hasFather data:3rd_Marquess_of_Milford_Haven ;
-      :hasMarriageYear data:1989,
-          data:1997 ;
-      :hasMother data:Janet_Mercedes_Bryce ;
-      :hasRelation data:Clare_Husted_Steel,
-          data:Sarah_Georgina_Walker ;
-      :hasSex data:Male .
+  data:Amanda_Knatchbull a :Person,
+          :Woman ;
+      :isDaughterOf data:Patricia_Mountbatten .
 
-  data:3rd_Marquess_of_Milford_Haven a :Ancestor,
+  data:Earl_Mountbatten_of_Burma a :Ancestor,
           :Man,
           :Person ;
-      :hasSex data:Male .
+      :isFatherOf data:Patricia_Mountbatten .
 
-  data:Clare_Husted_Steel a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:George_Alfred_Walker a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Janet_Mercedes_Bryce a :Ancestor,
+  data:Edwina_Ashley a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex data:Female .
+      :isMotherOf data:Patricia_Mountbatten .
 
-  data:Jean_Maureen_Hatton a :Ancestor,
+  data:Lady_Pamela_Hicks a :Person,
+          :Woman ;
+      :isSisterOf data:Patricia_Mountbatten .
+
+  data:Nicholas_Knatchbull a :Man,
+          :Person ;
+      :isSonOf data:Patricia_Mountbatten .
+
+  data:John_Knatchbull a :Man,
+          :Person .
+
+  data:Patricia_Mountbatten a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex data:Female .
-
-  data:Lord_Ivar_Mountbatten a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Sarah_Georgina_Walker a :Person,
-          :Woman ;
-      :hasFather data:George_Alfred_Walker ;
-      :hasMother data:Jean_Maureen_Hatton ;
-      :hasSex data:Female .
-
-  data:Female a :Female,
-          :Sex .
-
-  data:Male a :Male,
-          :Sex .
+      :hasBirthYear 1924 ;
+      :hasDeathYear 2017 ;
+      :hasMarriageYear 1946 ;
+      :hasRelation data:John_Knatchbull .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (655ba214-dac8-422e-8c71-308e2d334f3f)
+ Call ID: 655ba214-dac8-422e-8c71-308e2d334f3f
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1003,421 +899,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (e78a7a5c-a4d0-4707-8226-d9d62633ef51)
- Call ID: e78a7a5c-a4d0-4707-8226-d9d62633ef51
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1989', '1997']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  UnassignClass (f61b3b14-43d6-4fe5-b9a1-b334c721e496)
- Call ID: f61b3b14-43d6-4fe5-b9a1-b334c721e496
-  Args:
-    type: :Man
-    source: :George_Ivar_Louis_Mountbatten
-  UnassignClass (3178a731-2599-4c35-8a0c-c83631bd9ab7)
- Call ID: 3178a731-2599-4c35-8a0c-c83631bd9ab7
-  Args:
-    type: :Person
-    source: :George_Ivar_Louis_Mountbatten
-  RemoveLiteral (b9514444-f798-47cc-a541-2b30573febd6)
- Call ID: b9514444-f798-47cc-a541-2b30573febd6
-  Args:
-    source: :George_Ivar_Louis_Mountbatten
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1989
-  RemoveLiteral (ec2800ae-a9c3-4ef8-847c-2c6a304a4074)
- Call ID: ec2800ae-a9c3-4ef8-847c-2c6a304a4074
-  Args:
-    literal_value: 1997
-    relation: :hasMarriageYear
-    source: :George_Ivar_Louis_Mountbatten
-    literal_type: xsd:integer
-  AddLiteral (72b4a024-d72d-4240-92bb-62eafe5c2f0b)
- Call ID: 72b4a024-d72d-4240-92bb-62eafe5c2f0b
-  Args:
-    source: :George_Ivar_Louis_Mountbatten
-    literal_type: xsd:string
-    relation: :hasMarriageYear
-    literal_value: 1989
-  AddLiteral (fa288239-3bf3-4530-b256-9e34f9bbc479)
- Call ID: fa288239-3bf3-4530-b256-9e34f9bbc479
-  Args:
-    literal_type: xsd:string
-    source: :George_Ivar_Louis_Mountbatten
-    literal_value: 1997
-    relation: :hasMarriageYear
-  AssignClass (75251d76-2b4e-47c2-afa4-89054a36de5f)
- Call ID: 75251d76-2b4e-47c2-afa4-89054a36de5f
-  Args:
-    source: :George_Ivar_Louis_Mountbatten
-    type: :Man
-  AssignClass (18afd201-b556-4864-9ca3-6d2881467ae3)
- Call ID: 18afd201-b556-4864-9ca3-6d2881467ae3
-  Args:
-    source: :George_Ivar_Louis_Mountbatten
-    type: :Person
-  Finish (3cc9efd8-7ac8-4665-a58d-116796dd1a34)
- Call ID: 3cc9efd8-7ac8-4665-a58d-116796dd1a34
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:George_Ivar_Louis_Mountbatten a :Man,
-          :Person ;
-      :hasBirthYear 1961 ;
-      :hasBrother data:Lord_Ivar_Mountbatten ;
-      :hasFather data:3rd_Marquess_of_Milford_Haven ;
-      :hasMarriageYear data:1989,
-          data:1997,
-          "1989"^^xsd:string,
-          "1997"^^xsd:string ;
-      :hasMother data:Janet_Mercedes_Bryce ;
-      :hasRelation data:Clare_Husted_Steel,
-          data:Sarah_Georgina_Walker ;
-      :hasSex data:Male .
-
-  data:3rd_Marquess_of_Milford_Haven a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Clare_Husted_Steel a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:George_Alfred_Walker a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Janet_Mercedes_Bryce a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Jean_Maureen_Hatton a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Lord_Ivar_Mountbatten a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Sarah_Georgina_Walker a :Person,
-          :Woman ;
-      :hasFather data:George_Alfred_Walker ;
-      :hasMother data:Jean_Maureen_Hatton ;
-      :hasSex data:Female .
-
-  data:Female a :Female,
-          :Sex .
-
-  data:Male a :Male,
-          :Sex .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1989', '1997']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (4ce568fc-42b1-4af0-89b0-e195f51fd43c)
- Call ID: 4ce568fc-42b1-4af0-89b0-e195f51fd43c
-  Args:
-    literal_type: xsd:integer
-    source: :George_Ivar_Louis_Mountbatten
-    relation: :hasMarriageYear
-    literal_value: 1989
-  RemoveLiteral (5772e6f7-cf58-4fe8-bb5a-6fe5faeb8f86)
- Call ID: 5772e6f7-cf58-4fe8-bb5a-6fe5faeb8f86
-  Args:
-    relation: :hasMarriageYear
-    source: :George_Ivar_Louis_Mountbatten
-    literal_value: 1997
-    literal_type: xsd:integer
-  Finish (724fb0fb-2928-4d39-ac59-903d59317e12)
- Call ID: 724fb0fb-2928-4d39-ac59-903d59317e12
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:George_Ivar_Louis_Mountbatten a :Man,
-          :Person ;
-      :hasBirthYear 1961 ;
-      :hasBrother data:Lord_Ivar_Mountbatten ;
-      :hasFather data:3rd_Marquess_of_Milford_Haven ;
-      :hasMarriageYear data:1989,
-          data:1997,
-          "1989"^^xsd:string,
-          "1997"^^xsd:string ;
-      :hasMother data:Janet_Mercedes_Bryce ;
-      :hasRelation data:Clare_Husted_Steel,
-          data:Sarah_Georgina_Walker ;
-      :hasSex data:Male .
-
-  data:3rd_Marquess_of_Milford_Haven a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Clare_Husted_Steel a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:George_Alfred_Walker a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Janet_Mercedes_Bryce a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Jean_Maureen_Hatton a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Lord_Ivar_Mountbatten a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Sarah_Georgina_Walker a :Person,
-          :Woman ;
-      :hasFather data:George_Alfred_Walker ;
-      :hasMother data:Jean_Maureen_Hatton ;
-      :hasSex data:Female .
-
-  data:Female a :Female,
-          :Sex .
-
-  data:Male a :Male,
-          :Sex .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1989', '1997']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (93853a91-475c-4893-8026-d8f52f8b6781)
- Call ID: 93853a91-475c-4893-8026-d8f52f8b6781
-  Args:
-    literal_value: 1989
-    source: :George_Ivar_Louis_Mountbatten
-    relation: :hasMarriageYear
-    literal_type: xsd:string
-  RemoveLiteral (80d9ff23-c235-437b-a81f-e018c9bf4728)
- Call ID: 80d9ff23-c235-437b-a81f-e018c9bf4728
-  Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:string
-    literal_value: 1997
-    source: :George_Ivar_Louis_Mountbatten
-  Finish (59a4c389-95d4-4663-9d69-aa2d639c6264)
- Call ID: 59a4c389-95d4-4663-9d69-aa2d639c6264
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:George_Ivar_Louis_Mountbatten a :Man,
-          :Person ;
-      :hasBirthYear 1961 ;
-      :hasBrother data:Lord_Ivar_Mountbatten ;
-      :hasFather data:3rd_Marquess_of_Milford_Haven ;
-      :hasMarriageYear data:1989,
-          data:1997 ;
-      :hasMother data:Janet_Mercedes_Bryce ;
-      :hasRelation data:Clare_Husted_Steel,
-          data:Sarah_Georgina_Walker ;
-      :hasSex data:Male .
-
-  data:3rd_Marquess_of_Milford_Haven a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Clare_Husted_Steel a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:George_Alfred_Walker a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Janet_Mercedes_Bryce a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Jean_Maureen_Hatton a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Lord_Ivar_Mountbatten a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Sarah_Georgina_Walker a :Person,
-          :Woman ;
-      :hasFather data:George_Alfred_Walker ;
-      :hasMother data:Jean_Maureen_Hatton ;
-      :hasSex data:Female .
-
-  data:Female a :Female,
-          :Sex .
-
-  data:Male a :Male,
-          :Sex .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1989', '1997']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (2c1ae4da-99ba-4f7d-939b-512806c67f35)
- Call ID: 2c1ae4da-99ba-4f7d-939b-512806c67f35
-  Args:
-    source: :George_Ivar_Louis_Mountbatten
-    target: :1989
-    relation: :hasMarriageYear
-  RemoveTriple (94a8d8ef-327d-4422-8210-5403c189328a)
- Call ID: 94a8d8ef-327d-4422-8210-5403c189328a
-  Args:
-    relation: :hasMarriageYear
-    target: :1997
-    source: :George_Ivar_Louis_Mountbatten
-  Finish (63eb525c-0dc1-4619-8470-76c20e1e0e5b)
- Call ID: 63eb525c-0dc1-4619-8470-76c20e1e0e5b
+  Finish (9be968d5-c117-42a7-b6aa-53db94189ac5)
+ Call ID: 9be968d5-c117-42a7-b6aa-53db94189ac5
   Args:

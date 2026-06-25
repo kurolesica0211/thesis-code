@@ -1,0 +1,222 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Edoardo_Mapelli_Mozzi a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Edoardo_Mapelli_Mozzi ;
+    :hasChild data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :hasDaughter data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Athena_Elizabeth_Rose,
+        data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Eugenie,
+        data:Sarah_Ferguson,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isAncestorOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Edoardo_Mapelli_Mozzi ;
+    :isBrotherOf data:Edoardo_Mapelli_Mozzi ;
+    :isFatherOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isParentOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isSiblingOf data:Edoardo_Mapelli_Mozzi ;
+    :isUncleOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi .
+
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Andrew_Mountbatten-Windsor ;
+    :hasChild data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :hasDaughter data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Athena_Elizabeth_Rose,
+        data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Eugenie,
+        data:Sarah_Ferguson,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isAncestorOf data:Athena_Elizabeth_Rose,
+        data:Beatrice_Elizabeth_Mary,
+        data:Eugenie,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Andrew_Mountbatten-Windsor ;
+    :isBrotherOf data:Andrew_Mountbatten-Windsor ;
+    :isFatherOf data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :isParentOf data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :isSiblingOf data:Andrew_Mountbatten-Windsor ;
+    :isUncleOf data:Beatrice_Elizabeth_Mary,
+        data:Eugenie .
+
+data:Sarah_Ferguson a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :hasDaughter data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Athena_Elizabeth_Rose,
+        data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Eugenie,
+        data:Sarah_Ferguson,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :hasSister data:Sarah_Ferguson ;
+    :isAncestorOf data:Athena_Elizabeth_Rose,
+        data:Beatrice_Elizabeth_Mary,
+        data:Eugenie,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isAuntOf data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :isBloodrelationOf data:Sarah_Ferguson ;
+    :isMotherOf data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :isParentOf data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :isSiblingOf data:Sarah_Ferguson ;
+    :isSisterOf data:Sarah_Ferguson .
+
+data:Eugenie a :Person,
+        :Woman ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMother data:Sarah_Ferguson ;
+    :hasParent data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Athena_Elizabeth_Rose,
+        data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Eugenie,
+        data:Sarah_Ferguson,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :hasSister data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :isAuntOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :isChildOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isDaughterOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isSiblingOf data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :isSisterOf data:Beatrice_Elizabeth_Mary,
+        data:Eugenie .
+
+data:Athena_Elizabeth_Rose a :Person,
+        :Woman ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Sarah_Ferguson ;
+    :hasFather data:Edoardo_Mapelli_Mozzi ;
+    :hasMother data:Beatrice_Elizabeth_Mary ;
+    :hasParent data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Athena_Elizabeth_Rose,
+        data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Eugenie,
+        data:Sarah_Ferguson,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :hasSister data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isChildOf data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi ;
+    :isDaughterOf data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi ;
+    :isSiblingOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isSisterOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi .
+
+data:Sienna_Elizabeth_Mapelli_Mozzi a :Person,
+        :Woman ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Sarah_Ferguson ;
+    :hasFather data:Edoardo_Mapelli_Mozzi ;
+    :hasMother data:Beatrice_Elizabeth_Mary ;
+    :hasParent data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Athena_Elizabeth_Rose,
+        data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Eugenie,
+        data:Sarah_Ferguson,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :hasSister data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isChildOf data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi ;
+    :isDaughterOf data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi ;
+    :isSiblingOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isSisterOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi .
+
+data:Beatrice_Elizabeth_Mary a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasBirthYear 1988 ;
+    :hasChild data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :hasDaughter data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMarriageYear 2020 ;
+    :hasMother data:Sarah_Ferguson ;
+    :hasParent data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :hasRelation data:Andrew_Mountbatten-Windsor,
+        data:Athena_Elizabeth_Rose,
+        data:Beatrice_Elizabeth_Mary,
+        data:Edoardo_Mapelli_Mozzi,
+        data:Eugenie,
+        data:Sarah_Ferguson,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :hasSister data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :isAncestorOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isAuntOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isBloodrelationOf data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :isChildOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isDaughterOf data:Andrew_Mountbatten-Windsor,
+        data:Sarah_Ferguson ;
+    :isMotherOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isParentOf data:Athena_Elizabeth_Rose,
+        data:Sienna_Elizabeth_Mapelli_Mozzi ;
+    :isSiblingOf data:Beatrice_Elizabeth_Mary,
+        data:Eugenie ;
+    :isSisterOf data:Beatrice_Elizabeth_Mary,
+        data:Eugenie .
+

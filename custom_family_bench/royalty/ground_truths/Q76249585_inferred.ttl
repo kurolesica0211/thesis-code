@@ -1,0 +1,175 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Sophie_Winkleman a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Sophie Winkleman"^^xsd:string ;
+    data:posIndicesFull "1142:1158"^^xsd:string,
+        "264:280"^^xsd:string ;
+    data:posIndicesPart "1405:1411"^^xsd:string ;
+    data:wdtLink wdt:Q2631078 ;
+    :alsoKnownAs "Lady Frederick Windsor"^^xsd:string,
+        "Sophie Lara Windsor"^^xsd:string,
+        "Sophie Windsor"^^xsd:string ;
+    :hasChild data:Maud_Windsor ;
+    :hasDaughter data:Maud_Windsor ;
+    :hasRelation data:Maud_Windsor,
+        data:Sophie_Winkleman ;
+    :hasSex data:female ;
+    :hasSister data:Sophie_Winkleman ;
+    :isAncestorOf data:Maud_Windsor ;
+    :isAuntOf data:Maud_Windsor ;
+    :isBloodrelationOf data:Sophie_Winkleman ;
+    :isMotherOf data:Maud_Windsor ;
+    :isParentOf data:Maud_Windsor ;
+    :isSiblingOf data:Sophie_Winkleman ;
+    :isSisterOf data:Sophie_Winkleman .
+
+data:Marie_Christine-_Princess_Michael_of_Kent a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Marie Christine, Princess Michael of Kent"^^xsd:string ;
+    data:posIndicesFull "144:168"^^xsd:string ;
+    data:posIndicesPart "1223:1231"^^xsd:string,
+        "1308:1316"^^xsd:string,
+        "359:366"^^xsd:string ;
+    data:wdtLink wdt:Q93535 ;
+    :alsoKnownAs "Marie Christine von Reibnitz"^^xsd:string,
+        "Marie-Christine Agnes Hedwig Ida Baronin von Reibnitz"^^xsd:string,
+        "Princess Michael of Kent"^^xsd:string ;
+    :hasChild data:Lord_Frederick_Windsor ;
+    :hasRelation data:Lord_Frederick_Windsor,
+        data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Maud_Windsor ;
+    :hasSex data:female ;
+    :hasSister data:Marie_Christine-_Princess_Michael_of_Kent ;
+    :hasSon data:Lord_Frederick_Windsor ;
+    :isAncestorOf data:Lord_Frederick_Windsor,
+        data:Maud_Windsor ;
+    :isAuntOf data:Lord_Frederick_Windsor ;
+    :isBloodrelationOf data:Marie_Christine-_Princess_Michael_of_Kent ;
+    :isMotherOf data:Lord_Frederick_Windsor ;
+    :isParentOf data:Lord_Frederick_Windsor ;
+    :isSiblingOf data:Marie_Christine-_Princess_Michael_of_Kent ;
+    :isSisterOf data:Marie_Christine-_Princess_Michael_of_Kent .
+
+data:Prince_Michael_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Michael of Kent"^^xsd:string ;
+    data:posIndicesFull "144:168"^^xsd:string ;
+    data:posIndicesPart "2043:2049"^^xsd:string,
+        "2251:2257"^^xsd:string,
+        "359:366"^^xsd:string,
+        "619:625"^^xsd:string ;
+    data:wdtLink wdt:Q313752 ;
+    :alsoKnownAs "Michael George Charles Franklin"^^xsd:string,
+        "Prince Michael George Charles Franklin of Kent"^^xsd:string ;
+    :hasBrother data:Prince_Michael_of_Kent ;
+    :hasChild data:Lord_Frederick_Windsor ;
+    :hasRelation data:Lord_Frederick_Windsor,
+        data:Maud_Windsor,
+        data:Prince_Michael_of_Kent ;
+    :hasSex data:male ;
+    :hasSon data:Lord_Frederick_Windsor ;
+    :isAncestorOf data:Lord_Frederick_Windsor,
+        data:Maud_Windsor ;
+    :isBloodrelationOf data:Prince_Michael_of_Kent ;
+    :isBrotherOf data:Prince_Michael_of_Kent ;
+    :isFatherOf data:Lord_Frederick_Windsor ;
+    :isParentOf data:Lord_Frederick_Windsor ;
+    :isSiblingOf data:Prince_Michael_of_Kent ;
+    :isUncleOf data:Lord_Frederick_Windsor .
+
+data:Maud_Windsor a :Person,
+        :Woman ;
+    rdfs:label "Maud Windsor"^^xsd:string ;
+    data:wdtLink wdt:Q76249585 ;
+    :alsoKnownAs "Maud Elizabeth Daphne Marina Windsor"^^xsd:string ;
+    :hasAncestor data:Lord_Frederick_Windsor,
+        data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent,
+        data:Sophie_Winkleman ;
+    :hasFather data:Lord_Frederick_Windsor ;
+    :hasMother data:Sophie_Winkleman ;
+    :hasParent data:Lord_Frederick_Windsor,
+        data:Sophie_Winkleman ;
+    :hasRelation data:Lord_Frederick_Windsor,
+        data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Maud_Windsor,
+        data:Prince_Michael_of_Kent,
+        data:Sophie_Winkleman ;
+    :hasSex data:female ;
+    :hasSister data:Maud_Windsor ;
+    :isBloodrelationOf data:Maud_Windsor ;
+    :isChildOf data:Lord_Frederick_Windsor,
+        data:Sophie_Winkleman ;
+    :isDaughterOf data:Lord_Frederick_Windsor,
+        data:Sophie_Winkleman ;
+    :isSiblingOf data:Maud_Windsor ;
+    :isSisterOf data:Maud_Windsor .
+
+data:Lord_Frederick_Windsor a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Lord Frederick Windsor"^^xsd:string ;
+    data:posIndicesFull "0:49"^^xsd:string ;
+    data:posIndicesPart "1102:1111"^^xsd:string,
+        "1391:1400"^^xsd:string,
+        "1603:1612"^^xsd:string,
+        "1832:1841"^^xsd:string,
+        "1994:2003"^^xsd:string,
+        "2436:2440"^^xsd:string,
+        "2481:2485"^^xsd:string,
+        "2486:2495"^^xsd:string,
+        "349:358"^^xsd:string,
+        "386:393"^^xsd:string,
+        "761:770"^^xsd:string,
+        "871:880"^^xsd:string ;
+    data:wdtLink wdt:Q3735133 ;
+    :alsoKnownAs "Freddie Windsor"^^xsd:string,
+        "Frederick Windsor"^^xsd:string,
+        "Lord Frederick Michael George David Louis Windsor"^^xsd:string ;
+    :hasAncestor data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasBrother data:Lord_Frederick_Windsor ;
+    :hasChild data:Maud_Windsor ;
+    :hasDaughter data:Maud_Windsor ;
+    :hasFather data:Prince_Michael_of_Kent ;
+    :hasMother data:Marie_Christine-_Princess_Michael_of_Kent ;
+    :hasParent data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasRelation data:Lord_Frederick_Windsor,
+        data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Maud_Windsor,
+        data:Prince_Michael_of_Kent ;
+    :hasSex data:male ;
+    :isAncestorOf data:Maud_Windsor ;
+    :isBloodrelationOf data:Lord_Frederick_Windsor ;
+    :isBrotherOf data:Lord_Frederick_Windsor ;
+    :isChildOf data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isFatherOf data:Maud_Windsor ;
+    :isParentOf data:Maud_Windsor ;
+    :isSiblingOf data:Lord_Frederick_Windsor ;
+    :isSonOf data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isUncleOf data:Maud_Windsor .
+

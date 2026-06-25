@@ -85,27 +85,18 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lady Gabriella Marina Alexandra Ophelia Kingston (née Windsor; born 23 April 1981) is a British writer and editor.
-She is a member of the British royal family as the only daughter of Prince and Princess Michael of Kent.
-Early life and education
+Princess Inés of Bourbon-Two Sicilies, Duchess of Syracuse, GE (born 18 February 1940) is a Spanish princess, the youngest child of Infante Alfonso, heir to the throne of the Two Sicilies, and Infanta Alicia.
+Early life
 
-Lady Gabriella Marina Alexandra Ophelia Windsor was born on 23 April 1981 at St Mary's Hospital, London, the second child and only daughter of Prince and Princess Michael of Kent.
-Gabriella was baptised on 8 June at the Chapel Royal, St James's Palace, London.
-Her godparents were Constantine II of Greece; Mariano Hugo, Prince of Windisch-Graetz; Marina Ogilvy; Princess Antonia, Marchioness of Douro; and Lady Elizabeth Shakerley.
-In May 2004, Gabriella graduated from Brown University in Providence, Rhode Island, with a BA degree in Comparative Literature and Hispanic studies.
-Career
-
-Gabriella works as a writer and contributing editor, and contributes to The London Magazine among other publications.
-Gabriella undertook a research project with El Colegio del Cuerpo in Colombia and later worked for the brand company Branding Latin America as an arts and travel director.
-In 2024, she helped Catherine, Princess of Wales, plan the annual Together at Christmas carol service at Westminster Abbey.
-Gabriella's engagement to Thomas Henry Robin Kingston (22 June 1978 – 25 February 2024), a Dean Close School alumnus and University of Bristol graduate, was announced by Buckingham Palace on 19 September 2018.
-Their wedding took place at St George's Chapel, Windsor Castle, on 18 May 2019, and was attended by Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
+The last of three children and the second daughter of Infante Alfonso de Borbón-Dos Sicilias y de Borbón (1901–1964) and Princess Alicia of Bourbon-Parma (1917–2017), she was born during her parents' exile from republican Spain in Lausanne, Switzerland.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -121,39 +112,9 @@ Their wedding took place at St George's Chapel, Windsor Castle, on 18 May 2019, 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -168,6 +129,23 @@ Their wedding took place at St George's Chapel, Windsor Castle, on 18 May 2019, 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -185,6 +163,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -252,29 +245,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -283,6 +268,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -295,6 +288,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -303,17 +298,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -341,6 +338,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -356,92 +437,86 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2374a29d-dabd-4b39-991b-9c67a5e65d2e)
- Call ID: 2374a29d-dabd-4b39-991b-9c67a5e65d2e
+  AssignClass (b59171a0-1dbf-4bff-b323-e0077cdcdfbe)
+ Call ID: b59171a0-1dbf-4bff-b323-e0077cdcdfbe
   Args:
-    type: :Person
-    source: Gabriella_Kingston
-  AssignClass (725985fa-7a80-4ef3-ba3a-fbfc7fec1584)
- Call ID: 725985fa-7a80-4ef3-ba3a-fbfc7fec1584
-  Args:
+    source: Inés_of_Bourbon-Two_Sicilies
     type: :Woman
-    source: Gabriella_Kingston
-  AddLiteral (3864c372-a6ed-4b62-9171-484f8df51d09)
- Call ID: 3864c372-a6ed-4b62-9171-484f8df51d09
+  AssignClass (4962d24b-5a08-40ec-bdb1-19f96a8c87f1)
+ Call ID: 4962d24b-5a08-40ec-bdb1-19f96a8c87f1
   Args:
-    source: Gabriella_Kingston
+    source: Inés_of_Bourbon-Two_Sicilies
+    type: :Person
+  AddLiteral (005bcfcd-7d1b-4edc-94d4-4bd439ae2ee7)
+ Call ID: 005bcfcd-7d1b-4edc-94d4-4bd439ae2ee7
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1940
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1981
-  AssignClass (94a13532-e6eb-414b-b090-677182f526e2)
- Call ID: 94a13532-e6eb-414b-b090-677182f526e2
-  Args:
-    type: :Person
-    source: Prince_Michael_of_Kent
-  AssignClass (d18d2ea3-8b8e-4f53-ae29-c1e8c66ae108)
- Call ID: d18d2ea3-8b8e-4f53-ae29-c1e8c66ae108
+    source: Inés_of_Bourbon-Two_Sicilies
+  AssignClass (3c5c2ab6-66b7-4a92-af5d-9c85b614fca3)
+ Call ID: 3c5c2ab6-66b7-4a92-af5d-9c85b614fca3
   Args:
     type: :Man
-    source: Prince_Michael_of_Kent
-  AssignClass (88a32e4a-22b6-4049-a11b-0436fa1ce91e)
- Call ID: 88a32e4a-22b6-4049-a11b-0436fa1ce91e
+    source: Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón
+  AssignClass (289bc5b3-3c03-4012-afd3-975939272659)
+ Call ID: 289bc5b3-3c03-4012-afd3-975939272659
   Args:
+    source: Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón
     type: :Person
-    source: Princess_Michael_of_Kent
-  AssignClass (300cff41-3f3f-43ef-94ce-e975051517a2)
- Call ID: 300cff41-3f3f-43ef-94ce-e975051517a2
+  AddLiteral (41a1edac-433f-4b34-9211-646e37a26193)
+ Call ID: 41a1edac-433f-4b34-9211-646e37a26193
+  Args:
+    source: Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón
+    relation: :hasBirthYear
+    literal_value: 1901
+    literal_type: xsd:integer
+  AddLiteral (e5a175c0-b021-4ef5-83e1-507fc10b6245)
+ Call ID: e5a175c0-b021-4ef5-83e1-507fc10b6245
+  Args:
+    literal_value: 1964
+    literal_type: xsd:integer
+    source: Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón
+    relation: :hasDeathYear
+  AssignClass (1d3c1da7-4314-4c91-892e-8696825a5fe8)
+ Call ID: 1d3c1da7-4314-4c91-892e-8696825a5fe8
   Args:
     type: :Woman
-    source: Princess_Michael_of_Kent
-  AddTriple (5da2df81-ba80-448c-9867-68eb9ef61860)
- Call ID: 5da2df81-ba80-448c-9867-68eb9ef61860
+    source: Alicia_of_Bourbon-Parma
+  AssignClass (7ec3cacd-7c52-46bc-90eb-39dafbe6cdf6)
+ Call ID: 7ec3cacd-7c52-46bc-90eb-39dafbe6cdf6
   Args:
-    source: Gabriella_Kingston
-    relation: :hasFather
-    target: Prince_Michael_of_Kent
-  AddTriple (3fdd0dae-5687-4363-a848-39988edb21e2)
- Call ID: 3fdd0dae-5687-4363-a848-39988edb21e2
-  Args:
-    relation: :hasMother
-    source: Gabriella_Kingston
-    target: Princess_Michael_of_Kent
-  AssignClass (5ba61ab9-3f6b-45ba-85e8-f2db02e9af8e)
- Call ID: 5ba61ab9-3f6b-45ba-85e8-f2db02e9af8e
-  Args:
-    source: Thomas_Henry_Robin_Kingston
+    source: Alicia_of_Bourbon-Parma
     type: :Person
-  AssignClass (4c1ff2d5-6b2f-46af-9f43-3ce6ba6d09c5)
- Call ID: 4c1ff2d5-6b2f-46af-9f43-3ce6ba6d09c5
+  AddLiteral (11c5ed7b-4ba9-4e1a-971f-b2e8c3aa8389)
+ Call ID: 11c5ed7b-4ba9-4e1a-971f-b2e8c3aa8389
   Args:
-    type: :Man
-    source: Thomas_Henry_Robin_Kingston
-  AddLiteral (2ae884cb-fefa-4d7e-bef8-0dfa247561f9)
- Call ID: 2ae884cb-fefa-4d7e-bef8-0dfa247561f9
-  Args:
-    literal_value: 2024
+    source: Alicia_of_Bourbon-Parma
+    relation: :hasBirthYear
+    literal_value: 1917
     literal_type: xsd:integer
+  AddLiteral (114bcd22-bf85-4c24-9bee-16ffcb062db0)
+ Call ID: 114bcd22-bf85-4c24-9bee-16ffcb062db0
+  Args:
     relation: :hasDeathYear
-    source: Thomas_Henry_Robin_Kingston
-  AddLiteral (9684132b-a6a9-49a2-a579-ec38160e6f66)
- Call ID: 9684132b-a6a9-49a2-a579-ec38160e6f66
-  Args:
-    literal_value: 2019
+    source: Alicia_of_Bourbon-Parma
+    literal_value: 2017
     literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: Gabriella_Kingston
-  AddTriple (8358fdb2-51a3-4257-81fc-3b7cf07abdd8)
- Call ID: 8358fdb2-51a3-4257-81fc-3b7cf07abdd8
+  AddTriple (804bc038-1b9c-4e68-be69-5c411e1404bb)
+ Call ID: 804bc038-1b9c-4e68-be69-5c411e1404bb
   Args:
-    target: Thomas_Henry_Robin_Kingston
-    source: Gabriella_Kingston
-    relation: :hasRelation
-  Finish (93635d18-acf9-42f1-9508-167bc74a7ba9)
- Call ID: 93635d18-acf9-42f1-9508-167bc74a7ba9
+    source: Inés_of_Bourbon-Two_Sicilies
+    relation: :hasFather
+    target: Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón
+  AddTriple (1ce97b05-a8dc-429a-b400-e60e36a83821)
+ Call ID: 1ce97b05-a8dc-429a-b400-e60e36a83821
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    target: Alicia_of_Bourbon-Parma
+    relation: :hasMother
+    source: Inés_of_Bourbon-Two_Sicilies
+  Finish (df39ab9a-0853-4359-85ab-539570bf1314)
+ Call ID: df39ab9a-0853-4359-85ab-539570bf1314
+  Args:
 
 ================================= Tool Message =================================
 
@@ -498,23 +573,21 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Gabriella_Kingston a :Person,
+  data:In%C3%A9s_of_Bourbon-Two_Sicilies a :Person,
           :Woman ;
-      :hasBirthYear 1981 ;
-      :hasFather data:Prince_Michael_of_Kent ;
-      :hasMarriageYear 2019 ;
-      :hasMother data:Princess_Michael_of_Kent ;
-      :hasRelation data:Thomas_Henry_Robin_Kingston .
+      :hasBirthYear 1940 ;
+      :hasFather data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;
+      :hasMother data:Alicia_of_Bourbon-Parma .
 
-  data:Prince_Michael_of_Kent a :Man,
-          :Person .
-
-  data:Princess_Michael_of_Kent a :Person,
-          :Woman .
-
-  data:Thomas_Henry_Robin_Kingston a :Man,
+  data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n a :Man,
           :Person ;
-      :hasDeathYear 2024 .
+      :hasBirthYear 1901 ;
+      :hasDeathYear 1964 .
+
+  data:Alicia_of_Bourbon-Parma a :Person,
+          :Woman ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 2017 .
 
 
 
@@ -526,8 +599,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (befa6eaa-7ad0-4b15-b34f-750f1547c278)
- Call ID: befa6eaa-7ad0-4b15-b34f-750f1547c278
+  ValidateShacl (dab74bac-90a1-4b0d-80cf-2b1dc639c22b)
+ Call ID: dab74bac-90a1-4b0d-80cf-2b1dc639c22b
   Args:
 
 ================================= Tool Message =================================
@@ -539,49 +612,49 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Michael_of_Kent used in the hasFather relationship for Gabriella_Kingston does not belong to the required class :Ancestor.
+      The node 'Inés_of_Bourbon-Two_Sicilies' has a 'hasFather' relationship with 'Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón', but the value node is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Michael_of_Kent', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to the node 'Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón'.
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Michael_of_Kent used in the hasMother relationship for Gabriella_Kingston does not belong to the required class :Ancestor.
+      The node 'Inés_of_Bourbon-Two_Sicilies' has a 'hasMother' relationship with 'Alicia_of_Bourbon-Parma', but the value node is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Michael_of_Kent', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to the node 'Alicia_of_Bourbon-Parma'.
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Prince_Michael_of_Kent is missing the :Ancestor classification, which is mandatory for being a valid value for the hasFather property.
+      The node 'Inés_of_Bourbon-Two_Sicilies' has a 'hasFather' relationship with 'Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón', but the value node is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Michael_of_Kent', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to the node 'Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón'.
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Princess_Michael_of_Kent is missing the :Ancestor classification, which is mandatory for being a valid value for the hasMother property.
+      The node 'Inés_of_Bourbon-Two_Sicilies' has a 'hasMother' relationship with 'Alicia_of_Bourbon-Parma', but the value node is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Michael_of_Kent', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to the node 'Alicia_of_Bourbon-Parma'.
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity Prince_Michael_of_Kent must be explicitly classified as an :Ancestor to satisfy the range constraints of the hasFather property.
+      The node 'Inés_of_Bourbon-Two_Sicilies' has a 'hasFather' relationship with 'Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón', but the value node is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Prince_Michael_of_Kent', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to the node 'Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón'.
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity Princess_Michael_of_Kent must be explicitly classified as an :Ancestor to satisfy the range constraints of the hasMother property.
+      The node 'Inés_of_Bourbon-Two_Sicilies' has a 'hasMother' relationship with 'Alicia_of_Bourbon-Parma', but the value node is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Michael_of_Kent', class=':Ancestor')
+      Use 'AssignClass' to add ':Ancestor' to the node 'Alicia_of_Bourbon-Parma'.
 
 
 
@@ -590,18 +663,18 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (1508a636-55ea-4441-bb67-bff41e570071)
- Call ID: 1508a636-55ea-4441-bb67-bff41e570071
+  AssignClass (1abf3d6d-0c76-4376-ab7c-f532fd4af1cc)
+ Call ID: 1abf3d6d-0c76-4376-ab7c-f532fd4af1cc
   Args:
     type: :Ancestor
-    source: Prince_Michael_of_Kent
-  AssignClass (87362e33-2000-45e6-b517-cc69141ffded)
- Call ID: 87362e33-2000-45e6-b517-cc69141ffded
+    source: Alfonso_de_Borbón-Dos_Sicilias_y_de_Borbón
+  AssignClass (ce11bf57-05ce-4c1a-8bef-b222f83203a2)
+ Call ID: ce11bf57-05ce-4c1a-8bef-b222f83203a2
   Args:
+    source: Alicia_of_Bourbon-Parma
     type: :Ancestor
-    source: Princess_Michael_of_Kent
-  ValidateShacl (b82e4121-9e15-45b8-9586-8c95f341f0bb)
- Call ID: b82e4121-9e15-45b8-9586-8c95f341f0bb
+  Finish (ca3d2fb0-bd36-4f3f-9450-73436b427cce)
+ Call ID: ca3d2fb0-bd36-4f3f-9450-73436b427cce
   Args:
 
 ================================= Tool Message =================================
@@ -615,27 +688,37 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Gabriella_Kingston a :Person,
+  data:In%C3%A9s_of_Bourbon-Two_Sicilies a :Person,
           :Woman ;
-      :hasBirthYear 1981 ;
-      :hasFather data:Prince_Michael_of_Kent ;
-      :hasMarriageYear 2019 ;
-      :hasMother data:Princess_Michael_of_Kent ;
-      :hasRelation data:Thomas_Henry_Robin_Kingston .
+      :hasBirthYear 1940 ;
+      :hasFather data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;
+      :hasMother data:Alicia_of_Bourbon-Parma .
 
-  data:Prince_Michael_of_Kent a :Ancestor,
+  data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n a :Ancestor,
           :Man,
-          :Person .
-
-  data:Princess_Michael_of_Kent a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Thomas_Henry_Robin_Kingston a :Man,
           :Person ;
-      :hasDeathYear 2024 .
+      :hasBirthYear 1901 ;
+      :hasDeathYear 1964 .
+
+  data:Alicia_of_Bourbon-Parma a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 2017 .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (49084690-5b46-436e-b46d-f407fea14234)
+ Call ID: 49084690-5b46-436e-b46d-f407fea14234
+  Args:
 
 ================================= Tool Message =================================
 
@@ -645,6 +728,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (85b2ccb7-b67d-4cd7-ac20-460c16b37a03)
- Call ID: 85b2ccb7-b67d-4cd7-ac20-460c16b37a03
+  Finish (7902a580-e709-4aad-892d-2b36c79b31bd)
+ Call ID: 7902a580-e709-4aad-892d-2b36c79b31bd
   Args:

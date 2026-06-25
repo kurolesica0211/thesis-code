@@ -190,7 +190,6 @@ Her only child, Prince Michael, named in honor to Michael the Brave, the first u
 The ordeal significantly weakened Helen, and the doctors forbade her from having a second pregnancy.
 Once Helen had recovered, in December 1921 the couple moved to Bucharest, in a large villa at the Șoseaua Kiseleff.
 Despite their significantly different points of interest, Carol and Helen managed, for some time, to lead a bourgeois and happy existence.
-While the crown prince engaged in reading and his stamp collections, she spent her time engaged in horseback riding or on the decoration of their residences.
 The crown princess was very involved in social work and founded a nursing school in the capital.
 Reunion with family
 
@@ -198,7 +197,6 @@ In the meantime, the political situation was deteriorating in Greece.
 The Hellenic Kingdom endured a period of unrest during the Greco-Turkish War, and by 1919 the health of King Constantine I was deteriorating once again.
 Worried about the future of her father, Helen asked for her husband's permission to return to Greece.
 But while Carol left Greece in February to attend the betrothal of his sister Maria to King Alexander I of Yugoslavia, Helen remained with her parents until April, when she returned to Romania, bringing her sister Irene.
-By that time, the crown prince had resumed his affair with his former mistress, the actress Mirella Marcovici.
 In June 1922, Carol and Helen went to Belgrade with the whole Romanian royal family to attend the wedding of Alexander I and Maria.
 Back in Bucharest, the crown princess then resumed her role as wife of the heir to the throne.
 Like many women of her rank, Helen was also interested in social works.
@@ -208,19 +206,16 @@ Devastated by these events, Helen immediately went to Italy to be with her paren
 Shortly after the coronation of King Ferdinand I and Queen Marie of Romania in Alba Iulia on 15 October 1922, Helen left for Palermo, where she remained until the death of her father, on 11 January 1923.
 Bored by the absence of his wife, Carol finally invited his mother-in-law to stay in Bucharest.
 Increasingly irritated by the invasive presence of his wife's family, Carol also was hurt by Helen's attitude because she refused to fulfil her marital duties.
-Jealous, the crown prince suspected that his wife had begun an affair with the charming Prince Amedeo of Savoy, Duke of Aosta, a regular guest of the Greek royal couple in Sicily.
 It was due to these circumstances that Helen and Carol began their separation, though the crown princess saved appearances by devoting more time to the education of her son, Prince Michael.
 Abandonment of Crown Prince Carol
 
 In the summer of 1924, Carol met Elena Lupescu (better known under the name of "Magda" Lupescu), with whom he began an affair in or around 14 February 1925.
-This was not the first extramarital relationship of the crown prince since his marriage.
 However, for Carol, this time there was a serious bond, a fact that would soon worry not only Helen (always of a conciliatory and tolerant disposition with her husband's infidelities) but also the rest of the Romanian royal family, which feared that Lupescu could turn into a new Zizi Lambrino.
 In November 1925, Carol was sent to the United Kingdom to represent the royal family at the funeral of the Dowager Queen Alexandra.
 Refusing to return to Bucharest, Carol finally officially renounced the throne and prerogatives as crown prince on 28 December 1925.
 In Romania, Helen was distraught by Carol's attitude, especially as Queen Marie made her partly responsible for the failure of her marriage.
 The crown princess wrote to her husband to convince him to return.
 She also attempted to convince politicians to delay Carol's exclusion to the royal succession and proposed to her in-laws that she herself take a trip to meet with her husband.
-However, the Prime Minister Ion Brătianu, who despised the crown prince because of his sympathy to the National Peasants' Party, categorically opposed.
 The head of government even accelerated the exclusion procedures by summoning both Houses of the Parliament to register the act of renunciation and appoint little Prince Michael as the new heir to the throne.
 On 4 January 1926, the Romanian Parliament ratified the acceptance of Carol's renunciation and a royal ordinance was issued giving Helen the title princess of Romania; in addition, she was included in the Civil list, a privilege previously reserved to the sovereign and the heir to the throne.
 After King Ferdinand I was diagnosed with cancer, a Regency Council was also formed during Michael's minority with Prince Nicholas as the Head, assisted by Patriarch Miron and the magistrate Gheorghe Buzdugan, replaced after his death in 1929 by Constantine Sărățeanu.
@@ -238,7 +233,6 @@ Anxious to preserve the rights of her son and probably convinced by Prime Minist
 Helen also distanced herself from her mother-in-law, who complained of being separated from the young king and criticized more openly the Greek entourage of the Princess.
 After the Regency Council failed to govern the country, Carol appeared increasingly as a providential man who could solve the problems of Romania.
 Still, his supporters (as Prime Minister Iuliu Maniu, leader of the National Peasants' Party) continued to demand his separation from Magda Lupescu and his reconciliation with Helen, which he refused.
-Thanks to his many supporters in the country, the prince finally organized his return to Bucharest on the night of 6–7 June 1930.
 Joyfully welcomed by the population and the political class, he then proclaimed himself king under the name of Carol II.
 Impossible reconciliation with Carol II
 
@@ -269,9 +263,7 @@ After her death on 13 January 1932, Helen bought her house in Fiesole, Tuscany, 
 In this large house, that she renamed Villa Sparta, the princess received the visit of her sisters Irene and Katherine and her brother Paul, who remained with Helen on long stays.
 Despite the distance, the friction between Helen and Carol II continued.
 In September 1932, a visit from Michael and his mother to the United Kingdom was used by Helen as an opportunity for a new, very public conflict, which soon made the headlines of the international press, just as Helen wanted.
-The king wanted the crown prince not to wear shorts in public, and that he not be photographed in the company of his mother.
 Helen was incensed at the second stipulation and, as was her wont, took the trouble to aggravate the situation by defying the first stipulation as well.
-After seeing the spectacle of the crown prince in shorts published in the newspapers, the king demanded that the heir to the throne be brought back to Bucharest.
 Helen now decided to grant an interview to the Daily Mail "in the hope," she said, "that public opinion would help to preserve her parental rights".
 Despite these events, Helen chose to return to Romania for Michael's birthday and threatened to go to the International Court of Justice if Carol II did not allow her to see their son.
 Back in Bucharest, the princess tried, without much success, to get the government involved in a case against the king.
@@ -281,7 +273,6 @@ After only a month in the country, Carol II imposed a new separation agreement (
 Despite the tensions, Prince Michael was able to see his mother every year in Florence for two months.
 In Fiesole, the life of Helen and her sisters was relatively retired, even though they were frequently visited by the Italian House of Savoy, which had always been welcoming to the Greek royal family during its exile.
 In 1935, they took advantage of the presence in Florence of Princess Frederica of Hanover to arrange an encounter between her and their brother.
-Their good efforts paid off and Frederica quickly fell in love with the Diadochos.
 However, the princess' parents were reluctant to approve this relationship and it was not until 1937 that Paul and Frederica were finally allowed to get engaged.
 In the meantime, the Greek monarchy was restored and George II once again became King of Greece, but his wife Elisabeth, who filed for divorce on 6 July 1935, remained in Romania.
 Queen Mother of Romania
@@ -314,7 +305,6 @@ During an official speech on 1 January 1943, the sovereign publicly condemned th
 In retaliation, Antonescu tightened his control over Michael I and his mother, and threatened the royal family with the abolition of the monarchy if any further provocation were to occur.
 Over the next few months, the suspicious death of Tsar Boris III of Bulgaria (28 August 1943) and the successive arrests of princesses Mafalda of Savoy (23 September 1943) and Irene of Greece (October 1943) after the overthrow of Mussolini by King Victor Emmanuel III of Italy (25 July 1943), proved to Michael I and his mother just how dangerous opposition to the Axis powers was.
 On 23 August 1944 Michael I organized a coup d'état against the Conducător, who was imprisoned.
-In retaliation against this betrayal, the Luftflotte bombed Bucharest and Casa Nouă, the main residence of the sovereign and his mother since 1940, which was largely destroyed (24 August 1944).
 However, the Allies did not immediately recognize the reversal of Romania and the Soviets entered the capital on 31 August 1944.
 Visiting Sinaia at the time of the royal coup d'état, Helen found her son the next day at Craiova.
 Back in Bucharest on 10 September 1944, the king and his mother moved into the residence of Princess Elizabeth, whose relations with Helen remained tense despite their reconciliation in 1940.
@@ -328,7 +318,6 @@ On 6 March 1945 Michael I finally called Petru Groza, leader of the Ploughmen's 
 Satisfied with this appointment, the Soviet authorities were more conciliatory with Romania.
 A few months later, on 19 July 1945, Michael I was decorated with the Order of Victory, one of the most prestigious Soviet military orders.
 After the Potsdam Conference and the reaffirmation by the Allies of the need to establish democratically elected governments in Europe, Michael I demanded the resignation of Petru Groza, who refused.
-Faced with this insubordination, the sovereign began a "royal strike" on 23 August 1945 during which he refused to countersign the acts of the government.
 The resistance of the monarch, however, was not supported by the West, who after the Moscow Conference of 25 December 1945, asked Romania to allow two opposition figures to enter the government.
 Disgusted by all these betrayals, Helen, in turn, encouraged fewer meetings with Soviet officials and worried every day for the life of her son.
 In their palace, they had no access to running water for three hours a day and the electricity was off most of the day.
@@ -337,6 +326,7 @@ She then reunited with her sister Irene, weakened after her deportation to Austr
 Under these conditions, the queen mother considered exile with more determination but she was concerned that they did not possess any foreign resources, because her son refused to save money outside of Romania.
 As guests to the marriage of Princess Elizabeth of the United Kingdom with Prince Philip of Greece and Denmark (Helen's first cousin) on 20 November 1947, Michael I and his mother were provided with an opportunity to travel together abroad.
 During this stay, the king fell in love with Princess Anne of Bourbon-Parma, with whom he became engaged much to Helen's delight.
+This trip was also an opportunity for the queen mother to place two small paintings of El Greco from the royal collections in a Swiss bank.
 Abolition of the Romanian monarchy and Michael
 I's wedding
 
@@ -361,7 +351,7 @@ Being a Roman Catholic, Princess Anne had to obtain a papal dispensation to marr
 However, the Vatican had been extremely reluctant to grant consent because, for dynastic reasons, the couple's children would have to be raised in Michael
 After Prince René of Bourbon-Parma, father of the bride, failed in his negotiations with the Vatican, Helen decided to go to Rome with Princess Margaret of Denmark (Anne's mother) to meet Pope Pius XII.
 Under these circumstances, Princess Anne had no choice but to override the pontifical will and abandon a Catholic marriage.
-In doing so, she incurred the wrath of her uncle, Prince Xavier of Bourbon-Parma, who forbade the members of his family to attend the royal wedding under threat of being excluded from the House of Bourbon-Parma.
+Once again, the queen mother tried to mediate, this time with Anne's family, but without success.
 Helen had better luck with her own family.
 Her brother, King Paul I of Greece, offered to organize Michael's wedding in Athens, despite official protests from the Romanian government.
 Celebrated in the throne room of the Royal Palace, the wedding brought together most of the members of the Greek dynasty but no representative of the Houses of Bourbon-Parma or Hohenzollern-Sigmaringen.
@@ -379,6 +369,7 @@ Despite her sometimes stormy relationship with her sister-in-law, Queen Frederic
 Despite this, Helen's life was not solely devoted to her family.
 From 1968 to 1973, Helen had a romantic relationship with the twice-widower King Gustaf VI Adolf of Sweden, with whom she shared a love of art and plants.
 In 1956 Helen consented for Arthur Gould Lee to publish her biography.
+Despite still being deprived of income by the Romanian authorities, the queen mother economically supported her son, and also helped him to find jobs, first as a pilot in Switzerland, then as a broker on Wall Street.
 Helen also supported the studies of her eldest granddaughter Margareta, and even welcomed her at Villa Sparta for a year before she entered a British university.
 To do this, Helen was forced to sell her assets one by one and in the early 1970s, she hardly had anything left.
 In 1973, she mortgaged her residence and three years later, she sold the two Greco paintings that she had brought with her from Romania in 1947.
@@ -389,7 +380,6 @@ She then moved to a small apartment in Lausanne, located 45 minutes from the res
 Helen, queen mother of Romania, died one year later on 28 November 1982, aged 86.
 Eleven years after her death, in March 1993, the State of Israel gave Helen the title of Righteous Among the Nations in recognition for her actions during World War II towards Romanian Jews, several thousands of whom she managed to save from 1941 to 1944.
 In January 2018, it was announced that the remains of King Carol II would be moved to the new Archdiocesan and Royal Cathedral, along with those of Queen Mother Helen.
-In addition, the remains of Prince Mircea would also be moved to the new cathedral.
 Queen Mother Helen of Romania was reburied at the New Episcopal and Royal Cathedral in Curtea de Argeș on 19 October 2019.
 Archives
 
@@ -400,6 +390,8 @@ Queen Helen's correspondence with the Romanian diplomat George I. Duca between 1
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -415,39 +407,9 @@ Queen Helen's correspondence with the Romanian diplomat George I. Duca between 1
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -462,6 +424,23 @@ Queen Helen's correspondence with the Romanian diplomat George I. Duca between 1
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -479,6 +458,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -546,29 +540,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -577,6 +563,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -589,6 +583,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -597,17 +593,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -635,6 +633,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -650,307 +732,132 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f7762afc-5a9e-4d8a-8976-2ca4c6a091de)
- Call ID: f7762afc-5a9e-4d8a-8976-2ca4c6a091de
+  AssignClass (1c7138c1-39a3-4e35-98f6-d2d765d86062)
+ Call ID: 1c7138c1-39a3-4e35-98f6-d2d765d86062
   Args:
-    source: Helen_of_Greece_and_Denmark
+    source: :Helen_of_Greece_and_Denmark
     type: :Woman
-  AssignClass (721ef1d6-ea0a-44d2-94cc-ba0e6cb6695f)
- Call ID: 721ef1d6-ea0a-44d2-94cc-ba0e6cb6695f
+  AssignClass (090dbf6e-059f-4d03-a80a-5becdf4f5bb3)
+ Call ID: 090dbf6e-059f-4d03-a80a-5becdf4f5bb3
   Args:
-    source: Helen_of_Greece_and_Denmark
+    source: :Helen_of_Greece_and_Denmark
     type: :Person
-  AddLiteral (cb90bd79-457d-448c-81d9-1d590e654a8c)
- Call ID: cb90bd79-457d-448c-81d9-1d590e654a8c
+  AddLiteral (7f8fd617-3da9-4bb8-90a4-b25b8a871bd2)
+ Call ID: 7f8fd617-3da9-4bb8-90a4-b25b8a871bd2
   Args:
-    literal_type: xsd:integer
-    literal_value: 1896
+    source: :Helen_of_Greece_and_Denmark
     relation: :hasBirthYear
-    source: Helen_of_Greece_and_Denmark
-  AddLiteral (16126c6f-7b43-4e36-be9b-9ed9c8409d1c)
- Call ID: 16126c6f-7b43-4e36-be9b-9ed9c8409d1c
+    literal_value: 1896
+    literal_type: xsd:integer
+  AddLiteral (4c352d0e-d975-47aa-803c-ef27496dbbf1)
+ Call ID: 4c352d0e-d975-47aa-803c-ef27496dbbf1
   Args:
+    source: :Helen_of_Greece_and_Denmark
     relation: :hasDeathYear
-    source: Helen_of_Greece_and_Denmark
     literal_type: xsd:integer
     literal_value: 1982
-  AssignClass (b119b908-6f28-4d1d-b18a-c9569a6f16ed)
- Call ID: b119b908-6f28-4d1d-b18a-c9569a6f16ed
+  AssignClass (a270cec1-8b31-46d8-bc99-8c3520dff64a)
+ Call ID: a270cec1-8b31-46d8-bc99-8c3520dff64a
   Args:
-    source: Constantine_I_of_Greece
+    source: :Constantine_I_of_Greece
     type: :Man
-  AssignClass (4fd5e2b3-649e-4da7-b70f-b08a41a83e10)
- Call ID: 4fd5e2b3-649e-4da7-b70f-b08a41a83e10
+  AssignClass (5d286cbd-44f3-4fde-802e-e5eb65a3619e)
+ Call ID: 5d286cbd-44f3-4fde-802e-e5eb65a3619e
   Args:
+    source: :Constantine_I_of_Greece
     type: :Person
-    source: Constantine_I_of_Greece
-  AssignClass (ef1da639-7499-48c8-9b4b-a5596fd208db)
- Call ID: ef1da639-7499-48c8-9b4b-a5596fd208db
+  AssignClass (a7be4b82-03e6-418b-a3a9-40edb129004e)
+ Call ID: a7be4b82-03e6-418b-a3a9-40edb129004e
   Args:
-    source: Sophia_of_Prussia
+    source: :Sophia_of_Prussia
     type: :Woman
-  AssignClass (41c6c460-1231-4657-b594-9ed3474be646)
- Call ID: 41c6c460-1231-4657-b594-9ed3474be646
+  AssignClass (2c269067-1fb2-4bc9-a6f6-ad0359370b46)
+ Call ID: 2c269067-1fb2-4bc9-a6f6-ad0359370b46
   Args:
+    source: :Sophia_of_Prussia
     type: :Person
-    source: Sophia_of_Prussia
-  AddTriple (572a0b0c-aae2-4d35-ab46-dc5054b20477)
- Call ID: 572a0b0c-aae2-4d35-ab46-dc5054b20477
+  AddTriple (e8856b7b-2ffb-413d-a706-195c04787959)
+ Call ID: e8856b7b-2ffb-413d-a706-195c04787959
   Args:
-    source: Helen_of_Greece_and_Denmark
+    source: :Helen_of_Greece_and_Denmark
+    target: :Constantine_I_of_Greece
     relation: :hasFather
-    target: Constantine_I_of_Greece
-  AddTriple (f43223f5-bbf9-4c39-862c-7da0c7ec8944)
- Call ID: f43223f5-bbf9-4c39-862c-7da0c7ec8944
+  AddTriple (cdb90fa2-d321-4b07-b595-b3cd216491e7)
+ Call ID: cdb90fa2-d321-4b07-b595-b3cd216491e7
   Args:
-    source: Helen_of_Greece_and_Denmark
+    source: :Helen_of_Greece_and_Denmark
     relation: :hasMother
-    target: Sophia_of_Prussia
-  AssignClass (51e36912-a295-4e47-92f2-f1b0f068e63e)
- Call ID: 51e36912-a295-4e47-92f2-f1b0f068e63e
+    target: :Sophia_of_Prussia
+  AssignClass (b9f087ea-449b-4df5-9a0a-de1b9edb0777)
+ Call ID: b9f087ea-449b-4df5-9a0a-de1b9edb0777
   Args:
+    source: :Michael_I_of_Romania
     type: :Man
-    source: Michael_I_of_Romania
-  AssignClass (a6c1847c-d083-443b-ac61-aa8baa73e985)
- Call ID: a6c1847c-d083-443b-ac61-aa8baa73e985
+  AssignClass (daf34b15-3e61-4622-a5ad-b85f579df37a)
+ Call ID: daf34b15-3e61-4622-a5ad-b85f579df37a
   Args:
+    source: :Michael_I_of_Romania
     type: :Person
-    source: Michael_I_of_Romania
-  AddTriple (f0d8957f-74a3-4c1c-9f16-faecbf98561a)
- Call ID: f0d8957f-74a3-4c1c-9f16-faecbf98561a
+  AddTriple (b9525ddb-dbd0-4480-9a07-8016f4079484)
+ Call ID: b9525ddb-dbd0-4480-9a07-8016f4079484
   Args:
-    target: Michael_I_of_Romania
-    source: Helen_of_Greece_and_Denmark
-    relation: :isMotherOf
-  AssignClass (a64cc948-b4ff-4bd2-aa23-166ab8305a6a)
- Call ID: a64cc948-b4ff-4bd2-aa23-166ab8305a6a
+    target: :Michael_I_of_Romania
+    relation: :hasSon
+    source: :Helen_of_Greece_and_Denmark
+  AddTriple (433e70dd-80e1-4d26-9015-696321b41ddd)
+ Call ID: 433e70dd-80e1-4d26-9015-696321b41ddd
   Args:
-    source: Carol_II_of_Romania
+    source: :Constantine_I_of_Greece
+    relation: :hasSon
+    target: :Alexander_I_of_Greece
+  AssignClass (979aacad-0a22-4052-b752-c6554b8c4213)
+ Call ID: 979aacad-0a22-4052-b752-c6554b8c4213
+  Args:
+    source: :Alexander_I_of_Greece
     type: :Man
-  AssignClass (e141a918-7f33-4178-acd3-a5c33ea03839)
- Call ID: e141a918-7f33-4178-acd3-a5c33ea03839
+  AssignClass (5d57e188-4e97-458a-bb0f-91aeb35b7827)
+ Call ID: 5d57e188-4e97-458a-bb0f-91aeb35b7827
   Args:
+    source: :Alexander_I_of_Greece
     type: :Person
-    source: Carol_II_of_Romania
-  AddTriple (50592ff3-3fb4-421e-b79a-1d0636de4e20)
- Call ID: 50592ff3-3fb4-421e-b79a-1d0636de4e20
+  AddTriple (6bb8d56d-c60b-41a1-a8f0-10281d28d72a)
+ Call ID: 6bb8d56d-c60b-41a1-a8f0-10281d28d72a
   Args:
-    target: Michael_I_of_Romania
-    source: Carol_II_of_Romania
-    relation: :isFatherOf
-  AssignClass (303cff18-81f8-4b0e-9e9a-c61b34e073e2)
- Call ID: 303cff18-81f8-4b0e-9e9a-c61b34e073e2
-  Args:
-    type: :Man
-    source: Alexander_I_of_Greece
-  AssignClass (b7cb9f71-adab-4bbf-838f-b533b7296c2b)
- Call ID: b7cb9f71-adab-4bbf-838f-b533b7296c2b
-  Args:
-    source: Alexander_I_of_Greece
-    type: :Person
-  AddTriple (b56cdc64-f437-4289-94e2-b75ca02c5630)
- Call ID: b56cdc64-f437-4289-94e2-b75ca02c5630
-  Args:
-    target: Alexander_I_of_Greece
-    relation: :hasBrother
-    source: Helen_of_Greece_and_Denmark
-  AssignClass (c718eb7e-80a0-4f53-acd2-d663a056a6ad)
- Call ID: c718eb7e-80a0-4f53-acd2-d663a056a6ad
-  Args:
-    type: :Man
-    source: George_I_of_Greece
-  AssignClass (01d83a43-4d70-4dd4-bd0e-515ef71e76dc)
- Call ID: 01d83a43-4d70-4dd4-bd0e-515ef71e76dc
-  Args:
-    source: George_I_of_Greece
-    type: :Person
-  AddTriple (d26fc815-0c64-4cfb-8fc7-3456c714d8ef)
- Call ID: d26fc815-0c64-4cfb-8fc7-3456c714d8ef
-  Args:
-    target: Constantine_I_of_Greece
-    relation: :isFatherOf
-    source: George_I_of_Greece
-  AssignClass (2ef0cebd-76ee-4301-8b2a-c82857bcef91)
- Call ID: 2ef0cebd-76ee-4301-8b2a-c82857bcef91
-  Args:
-    type: :Woman
-    source: Irene_of_Greece_and_Denmark
-  AssignClass (7403991d-c27f-480b-aaec-92526b20d49d)
- Call ID: 7403991d-c27f-480b-aaec-92526b20d49d
-  Args:
-    type: :Person
-    source: Irene_of_Greece_and_Denmark
-  AddTriple (05e3c6a7-f6e8-4b44-a8e9-b9a7d875318b)
- Call ID: 05e3c6a7-f6e8-4b44-a8e9-b9a7d875318b
-  Args:
+    target: :Helen_of_Greece_and_Denmark
     relation: :hasSister
-    source: Helen_of_Greece_and_Denmark
-    target: Irene_of_Greece_and_Denmark
-  AssignClass (661bab64-225a-407d-bf0b-17ec367ef14d)
- Call ID: 661bab64-225a-407d-bf0b-17ec367ef14d
+    source: :Alexander_I_of_Greece
+  AddTriple (9663d13f-eea5-4283-a676-964d33694eb6)
+ Call ID: 9663d13f-eea5-4283-a676-964d33694eb6
   Args:
-    source: Katherine_of_Greece_and_Denmark
-    type: :Woman
-  AssignClass (a26e24f9-97c3-4860-b32b-27bdafe0f6f0)
- Call ID: a26e24f9-97c3-4860-b32b-27bdafe0f6f0
+    source: :Michael_I_of_Romania
+    target: :Carol_II_of_Romania
+    relation: :hasFather
+  AddTriple (177e8c8e-ef64-4955-891a-ce75f3143935)
+ Call ID: 177e8c8e-ef64-4955-891a-ce75f3143935
   Args:
-    source: Katherine_of_Greece_and_Denmark
-    type: :Person
-  AddTriple (16506d2e-6f8a-4a76-9e04-d787cdc68fbb)
- Call ID: 16506d2e-6f8a-4a76-9e04-d787cdc68fbb
-  Args:
-    target: Katherine_of_Greece_and_Denmark
-    relation: :hasSister
-    source: Helen_of_Greece_and_Denmark
-  AssignClass (736d7dcf-f3f9-41eb-803d-326c9f1fb208)
- Call ID: 736d7dcf-f3f9-41eb-803d-326c9f1fb208
-  Args:
-    type: :Man
-    source: George_II_of_Greece
-  AssignClass (c7df71ad-be03-456f-a00f-b948f6f46646)
- Call ID: c7df71ad-be03-456f-a00f-b948f6f46646
-  Args:
-    type: :Person
-    source: George_II_of_Greece
-  AddTriple (ab3fe3c0-8823-4a54-b579-a4e6e1938550)
- Call ID: ab3fe3c0-8823-4a54-b579-a4e6e1938550
-  Args:
-    relation: :hasBrother
-    source: Helen_of_Greece_and_Denmark
-    target: George_II_of_Greece
-  AssignClass (242f18b9-820a-4bb7-a694-5c4d549bdac7)
- Call ID: 242f18b9-820a-4bb7-a694-5c4d549bdac7
-  Args:
-    type: :Man
-    source: Paul_of_Greece
-  AssignClass (bce68c5e-369b-47b0-8e9c-fa608fc981aa)
- Call ID: bce68c5e-369b-47b0-8e9c-fa608fc981aa
-  Args:
-    type: :Person
-    source: Paul_of_Greece
-  AddTriple (35127439-d301-4149-987f-71a5aa4d6cc6)
- Call ID: 35127439-d301-4149-987f-71a5aa4d6cc6
-  Args:
-    relation: :hasBrother
-    source: Helen_of_Greece_and_Denmark
-    target: Paul_of_Greece
-  AssignClass (d6d97d40-1de1-4aa7-9ed7-5de12b55839f)
- Call ID: d6d97d40-1de1-4aa7-9ed7-5de12b55839f
-  Args:
-    source: Nicolae_of_Romania
-    type: :Man
-  AssignClass (72b17736-bd1f-4b26-9e0f-2d4576f952da)
- Call ID: 72b17736-bd1f-4b26-9e0f-2d4576f952da
-  Args:
-    type: :Person
-    source: Nicolae_of_Romania
-  AddTriple (3c7cce6e-ea92-4a00-be02-2000c53c2631)
- Call ID: 3c7cce6e-ea92-4a00-be02-2000c53c2631
-  Args:
-    relation: :isUncleOf
-    source: Nicolae_of_Romania
-    target: Michael_I_of_Romania
-  AssignClass (3df56683-0857-4380-ae92-bcdbec192543)
- Call ID: 3df56683-0857-4380-ae92-bcdbec192543
-  Args:
-    source: Maria_of_Romania
-    type: :Woman
-  AssignClass (9b934441-5cfe-4713-a46b-efbc027446a8)
- Call ID: 9b934441-5cfe-4713-a46b-efbc027446a8
-  Args:
-    type: :Person
-    source: Maria_of_Romania
-  AddTriple (ffe39f0b-ff8a-4806-88b0-cc43675819ea)
- Call ID: ffe39f0b-ff8a-4806-88b0-cc43675819ea
-  Args:
-    source: Elisabeth_of_Romania
+    target: :Helen_of_Greece_and_Denmark
     relation: :hasMother
-    target: Maria_of_Romania
-  AddTriple (7858607f-f47c-4963-8cd4-56ad3d89b30f)
- Call ID: 7858607f-f47c-4963-8cd4-56ad3d89b30f
+    source: :Michael_I_of_Romania
+  AssignClass (a2603611-400a-4f18-a8f6-2efa190c8359)
+ Call ID: a2603611-400a-4f18-a8f6-2efa190c8359
   Args:
-    relation: :hasMother
-    source: Carol_II_of_Romania
-    target: Maria_of_Romania
-  Finish (37ae9ab7-89c6-493c-a15e-11bcc61706fb)
- Call ID: 37ae9ab7-89c6-493c-a15e-11bcc61706fb
+    source: :Carol_II_of_Romania
+    type: :Man
+  AssignClass (ae3e6aa3-804a-4c2a-bd62-d7941f19ae6d)
+ Call ID: ae3e6aa3-804a-4c2a-bd62-d7941f19ae6d
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Carol_II_of_Romania
+    type: :Person
+  AddLiteral (42eabb11-8761-48f8-962d-c79b41f5db5d)
+ Call ID: 42eabb11-8761-48f8-962d-c79b41f5db5d
+  Args:
+    source: :Helen_of_Greece_and_Denmark
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 1921
+  Finish (ad04ddc2-88d7-4d7b-a767-7473ed845c00)
+ Call ID: ad04ddc2-88d7-4d7b-a767-7473ed845c00
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1043,60 +950,33 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Carol_II_of_Romania a :Man,
-          :Person ;
-      :hasMother data:Maria_of_Romania ;
-      :isFatherOf data:Michael_I_of_Romania .
-
-  data:Elisabeth_of_Romania :hasMother data:Maria_of_Romania .
-
-  data:George_I_of_Greece a :Man,
-          :Person ;
-      :isFatherOf data:Constantine_I_of_Greece .
-
-  data:Helen_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :hasBirthYear 1896 ;
-      :hasBrother data:Alexander_I_of_Greece,
-          data:George_II_of_Greece,
-          data:Paul_of_Greece ;
-      :hasDeathYear 1982 ;
-      :hasFather data:Constantine_I_of_Greece ;
-      :hasMother data:Sophia_of_Prussia ;
-      :hasSister data:Irene_of_Greece_and_Denmark,
-          data:Katherine_of_Greece_and_Denmark ;
-      :isMotherOf data:Michael_I_of_Romania .
-
-  data:Nicolae_of_Romania a :Man,
-          :Person ;
-      :isUncleOf data:Michael_I_of_Romania .
-
   data:Alexander_I_of_Greece a :Man,
+          :Person ;
+      :hasSister data:Helen_of_Greece_and_Denmark .
+
+  data:Carol_II_of_Romania a :Man,
           :Person .
 
-  data:George_II_of_Greece a :Man,
-          :Person .
+  data:Constantine_I_of_Greece a :Man,
+          :Person ;
+      :hasSon data:Alexander_I_of_Greece .
 
-  data:Irene_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Katherine_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Paul_of_Greece a :Man,
-          :Person .
+  data:Michael_I_of_Romania a :Man,
+          :Person ;
+      :hasFather data:Carol_II_of_Romania ;
+      :hasMother data:Helen_of_Greece_and_Denmark .
 
   data:Sophia_of_Prussia a :Person,
           :Woman .
 
-  data:Constantine_I_of_Greece a :Man,
-          :Person .
-
-  data:Maria_of_Romania a :Person,
-          :Woman .
-
-  data:Michael_I_of_Romania a :Man,
-          :Person .
+  data:Helen_of_Greece_and_Denmark a :Person,
+          :Woman ;
+      :hasBirthYear 1896 ;
+      :hasDeathYear 1982 ;
+      :hasFather data:Constantine_I_of_Greece ;
+      :hasMarriageYear 1921 ;
+      :hasMother data:Sophia_of_Prussia ;
+      :hasSon data:Michael_I_of_Romania .
 
 
 
@@ -1108,8 +988,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (ea3fcc61-49f9-4a27-8a85-2f51f8cb92b7)
- Call ID: ea3fcc61-49f9-4a27-8a85-2f51f8cb92b7
+  ValidateShacl (92d34e16-2cdd-4c00-9c83-9154be053a8d)
+ Call ID: 92d34e16-2cdd-4c00-9c83-9154be053a8d
   Args:
 
 ================================= Tool Message =================================
@@ -1119,99 +999,99 @@ Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Maria_of_Romania for property hasMother on node Carol_II_of_Romania is missing the required :Ancestor class.
+      The value Carol_II_of_Romania is missing the required class :Ancestor to satisfy the :hasFather property constraint for Michael_I_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_of_Romania', class=':Ancestor')
+      AssignClass(node: 'Carol_II_of_Romania', class: ':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Constantine_I_of_Greece for property hasFather on node Helen_of_Greece_and_Denmark is missing the required :Ancestor class.
+      The value Helen_of_Greece_and_Denmark is missing the required class :Ancestor to satisfy the :hasMother property constraint for Michael_I_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Constantine_I_of_Greece', class=':Ancestor')
+      AssignClass(node: 'Helen_of_Greece_and_Denmark', class: ':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Maria_of_Romania for property hasMother on node Carol_II_of_Romania is missing the required :Ancestor class.
+      The value Carol_II_of_Romania is missing the required class :Ancestor to satisfy the :hasFather property constraint for Michael_I_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_of_Romania', class=':Ancestor')
+      AssignClass(node: 'Carol_II_of_Romania', class: ':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Sophia_of_Prussia for property hasMother on node Helen_of_Greece_and_Denmark is missing the required :Ancestor class.
+      The value Constantine_I_of_Greece is missing the required class :Ancestor to satisfy the :hasFather property constraint for Helen_of_Greece_and_Denmark.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sophia_of_Prussia', class=':Ancestor')
+      AssignClass(node: 'Constantine_I_of_Greece', class: ':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Helen_of_Greece_and_Denmark acts as a subject for isMotherOf but lacks the required :Ancestor class.
+      The value Helen_of_Greece_and_Denmark is missing the required class :Ancestor to satisfy the :hasMother property constraint for Michael_I_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Helen_of_Greece_and_Denmark', class=':Ancestor')
+      AssignClass(node: 'Helen_of_Greece_and_Denmark', class: ':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Constantine_I_of_Greece for property hasFather on node Helen_of_Greece_and_Denmark is missing the required :Ancestor class.
+      The value Sophia_of_Prussia is missing the required class :Ancestor to satisfy the :hasMother property constraint for Helen_of_Greece_and_Denmark.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Constantine_I_of_Greece', class=':Ancestor')
+      AssignClass(node: 'Sophia_of_Prussia', class: ':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Maria_of_Romania for property hasMother on node Carol_II_of_Romania is missing the required :Ancestor class.
+      The value Carol_II_of_Romania is missing the required class :Ancestor to satisfy the :hasFather property constraint for Michael_I_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_of_Romania', class=':Ancestor')
+      AssignClass(node: 'Carol_II_of_Romania', class: ':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Sophia_of_Prussia for property hasMother on node Helen_of_Greece_and_Denmark is missing the required :Ancestor class.
+      The value Constantine_I_of_Greece is missing the required class :Ancestor to satisfy the :hasFather property constraint for Helen_of_Greece_and_Denmark.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sophia_of_Prussia', class=':Ancestor')
+      AssignClass(node: 'Constantine_I_of_Greece', class: ':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node Carol_II_of_Romania acts as a subject for isFatherOf but lacks the required :Ancestor class.
+      The value Helen_of_Greece_and_Denmark is missing the required class :Ancestor to satisfy the :hasMother property constraint for Michael_I_of_Romania.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Carol_II_of_Romania', class=':Ancestor')
+      AssignClass(node: 'Helen_of_Greece_and_Denmark', class: ':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node George_I_of_Greece acts as a subject for isFatherOf but lacks the required :Ancestor class.
+      The value Sophia_of_Prussia is missing the required class :Ancestor to satisfy the :hasMother property constraint for Helen_of_Greece_and_Denmark.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='George_I_of_Greece', class=':Ancestor')
+      AssignClass(node: 'Sophia_of_Prussia', class: ':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value Constantine_I_of_Greece for property hasFather on node Helen_of_Greece_and_Denmark is missing the required :Ancestor class.
+      The value Constantine_I_of_Greece is missing the required class :Ancestor to satisfy the :hasFather property constraint for Helen_of_Greece_and_Denmark.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Constantine_I_of_Greece', class=':Ancestor')
+      AssignClass(node: 'Constantine_I_of_Greece', class: ':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value Sophia_of_Prussia for property hasMother on node Helen_of_Greece_and_Denmark is missing the required :Ancestor class.
+      The value Sophia_of_Prussia is missing the required class :Ancestor to satisfy the :hasMother property constraint for Helen_of_Greece_and_Denmark.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Sophia_of_Prussia', class=':Ancestor')
+      AssignClass(node: 'Sophia_of_Prussia', class: ':Ancestor')
 
 
 
@@ -1220,44 +1100,26 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (d0d10bc2-e38d-4cf3-8a25-8ade0d7f4cef)
- Call ID: d0d10bc2-e38d-4cf3-8a25-8ade0d7f4cef
+  AssignClass (177e232f-ef49-4453-8470-dfa3f03f11e7)
+ Call ID: 177e232f-ef49-4453-8470-dfa3f03f11e7
+  Args:
+    source: :Carol_II_of_Romania
+    type: :Ancestor
+  AssignClass (78be8577-e970-4730-aab0-c9b5eaf20c1d)
+ Call ID: 78be8577-e970-4730-aab0-c9b5eaf20c1d
+  Args:
+    source: :Helen_of_Greece_and_Denmark
+    type: :Ancestor
+  AssignClass (1269203f-f259-4e65-b37c-f6ee9ea8cb05)
+ Call ID: 1269203f-f259-4e65-b37c-f6ee9ea8cb05
+  Args:
+    source: :Constantine_I_of_Greece
+    type: :Ancestor
+  AssignClass (fb7f0147-eb72-4a11-9b69-ba8f0ca4b30a)
+ Call ID: fb7f0147-eb72-4a11-9b69-ba8f0ca4b30a
   Args:
     type: :Ancestor
-    source: Maria_of_Romania
-  AssignClass (38d8fb73-1b84-4eff-9cd8-7bba24315b7c)
- Call ID: 38d8fb73-1b84-4eff-9cd8-7bba24315b7c
-  Args:
-    type: :Ancestor
-    source: Constantine_I_of_Greece
-  AssignClass (321289af-7057-4997-a47f-55d7e8a41697)
- Call ID: 321289af-7057-4997-a47f-55d7e8a41697
-  Args:
-    source: Sophia_of_Prussia
-    type: :Ancestor
-  AssignClass (1210f543-c124-49bc-be00-8611ae2ad247)
- Call ID: 1210f543-c124-49bc-be00-8611ae2ad247
-  Args:
-    source: Helen_of_Greece_and_Denmark
-    type: :Ancestor
-  AssignClass (5062cf3c-4f4d-467f-b2fb-ad6b19d8f665)
- Call ID: 5062cf3c-4f4d-467f-b2fb-ad6b19d8f665
-  Args:
-    type: :Ancestor
-    source: Carol_II_of_Romania
-  AssignClass (baafefc3-f3e2-4f31-8743-330a74170951)
- Call ID: baafefc3-f3e2-4f31-8743-330a74170951
-  Args:
-    source: George_I_of_Greece
-    type: :Ancestor
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Sophia_of_Prussia
 
 ================================= Tool Message =================================
 
@@ -1278,66 +1140,37 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+  data:Alexander_I_of_Greece a :Man,
+          :Person ;
+      :hasSister data:Helen_of_Greece_and_Denmark .
+
   data:Carol_II_of_Romania a :Ancestor,
           :Man,
-          :Person ;
-      :hasMother data:Maria_of_Romania ;
-      :isFatherOf data:Michael_I_of_Romania .
+          :Person .
 
-  data:Elisabeth_of_Romania :hasMother data:Maria_of_Romania .
-
-  data:George_I_of_Greece a :Ancestor,
+  data:Constantine_I_of_Greece a :Ancestor,
           :Man,
           :Person ;
-      :isFatherOf data:Constantine_I_of_Greece .
+      :hasSon data:Alexander_I_of_Greece .
 
-  data:Helen_of_Greece_and_Denmark a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1896 ;
-      :hasBrother data:Alexander_I_of_Greece,
-          data:George_II_of_Greece,
-          data:Paul_of_Greece ;
-      :hasDeathYear 1982 ;
-      :hasFather data:Constantine_I_of_Greece ;
-      :hasMother data:Sophia_of_Prussia ;
-      :hasSister data:Irene_of_Greece_and_Denmark,
-          data:Katherine_of_Greece_and_Denmark ;
-      :isMotherOf data:Michael_I_of_Romania .
-
-  data:Nicolae_of_Romania a :Man,
+  data:Michael_I_of_Romania a :Man,
           :Person ;
-      :isUncleOf data:Michael_I_of_Romania .
-
-  data:Alexander_I_of_Greece a :Man,
-          :Person .
-
-  data:George_II_of_Greece a :Man,
-          :Person .
-
-  data:Irene_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Katherine_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Paul_of_Greece a :Man,
-          :Person .
+      :hasFather data:Carol_II_of_Romania ;
+      :hasMother data:Helen_of_Greece_and_Denmark .
 
   data:Sophia_of_Prussia a :Ancestor,
           :Person,
           :Woman .
 
-  data:Constantine_I_of_Greece a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Maria_of_Romania a :Ancestor,
+  data:Helen_of_Greece_and_Denmark a :Ancestor,
           :Person,
-          :Woman .
-
-  data:Michael_I_of_Romania a :Man,
-          :Person .
+          :Woman ;
+      :hasBirthYear 1896 ;
+      :hasDeathYear 1982 ;
+      :hasFather data:Constantine_I_of_Greece ;
+      :hasMarriageYear 1921 ;
+      :hasMother data:Sophia_of_Prussia ;
+      :hasSon data:Michael_I_of_Romania .
 
 
 
@@ -1345,8 +1178,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  ValidateShacl (fdbc37e4-7ce0-4106-b803-dd328ac52cc4)
- Call ID: fdbc37e4-7ce0-4106-b803-dd328ac52cc4
+  ValidateShacl (60fab2f8-0b39-40dd-8a07-a7309dc41341)
+ Call ID: 60fab2f8-0b39-40dd-8a07-a7309dc41341
   Args:
 
 ================================= Tool Message =================================
@@ -1357,135 +1190,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (9f85968f-d891-4926-be1b-57e537b7180c)
- Call ID: 9f85968f-d891-4926-be1b-57e537b7180c
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Elisabeth_of_Romania']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (ac958d09-a930-40a6-8fc9-d7fde9589830)
- Call ID: ac958d09-a930-40a6-8fc9-d7fde9589830
-  Args:
-    source: Elisabeth_of_Romania
-    type: :Woman
-  AssignClass (6b43ce69-d140-4df6-8636-9ed6eca729ca)
- Call ID: 6b43ce69-d140-4df6-8636-9ed6eca729ca
-  Args:
-    source: Elisabeth_of_Romania
-    type: :Person
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Carol_II_of_Romania a :Ancestor,
-          :Man,
-          :Person ;
-      :hasMother data:Maria_of_Romania ;
-      :isFatherOf data:Michael_I_of_Romania .
-
-  data:Elisabeth_of_Romania a :Person,
-          :Woman ;
-      :hasMother data:Maria_of_Romania .
-
-  data:George_I_of_Greece a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:Constantine_I_of_Greece .
-
-  data:Helen_of_Greece_and_Denmark a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasBirthYear 1896 ;
-      :hasBrother data:Alexander_I_of_Greece,
-          data:George_II_of_Greece,
-          data:Paul_of_Greece ;
-      :hasDeathYear 1982 ;
-      :hasFather data:Constantine_I_of_Greece ;
-      :hasMother data:Sophia_of_Prussia ;
-      :hasSister data:Irene_of_Greece_and_Denmark,
-          data:Katherine_of_Greece_and_Denmark ;
-      :isMotherOf data:Michael_I_of_Romania .
-
-  data:Nicolae_of_Romania a :Man,
-          :Person ;
-      :isUncleOf data:Michael_I_of_Romania .
-
-  data:Alexander_I_of_Greece a :Man,
-          :Person .
-
-  data:George_II_of_Greece a :Man,
-          :Person .
-
-  data:Irene_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Katherine_of_Greece_and_Denmark a :Person,
-          :Woman .
-
-  data:Paul_of_Greece a :Man,
-          :Person .
-
-  data:Sophia_of_Prussia a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Constantine_I_of_Greece a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Maria_of_Romania a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Michael_I_of_Romania a :Man,
-          :Person .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (6a87b429-0489-4eb2-b283-97049eb134b0)
- Call ID: 6a87b429-0489-4eb2-b283-97049eb134b0
-  Args:
-
-================================= Tool Message =================================
-
-SHACL validation has not produced any violations.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (3e0bbcfa-4a0b-43b1-bca8-dd8e5d719996)
- Call ID: 3e0bbcfa-4a0b-43b1-bca8-dd8e5d719996
+  Finish (978d24e0-4776-4931-9392-49d958f2c51a)
+ Call ID: 978d24e0-4776-4931-9392-49d958f2c51a
   Args:

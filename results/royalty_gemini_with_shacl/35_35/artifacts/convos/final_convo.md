@@ -89,6 +89,8 @@ Louis Alphonse de Bourbon, Duke of Anjou (Spanish: Luis Alfonso Gonzalo Víctor 
 His claim is based on his descent from Louis XIV (r. 1643–1715) through his grandson Philip V of Spain.
 The rival Orleanist pretenders argue that this, as well as being born a Spanish citizen, makes Louis Alphonse ineligible for the throne.
 Louis Alphonse is patrilineally the senior great-grandson of King Alfonso XIII of Spain.
+His grandfather Infante Jaime, Duke of Segovia, renounced his rights to the Spanish throne for himself and his descendants owing to his deafness.
+Since the death of his father in 1989, he has used the courtesy title of Duke of Anjou.
 Early life
 
 Birth
@@ -96,6 +98,7 @@ Birth
 Louis Alphonse was born in Madrid, the second son of Alfonso de Borbón, Duke of Anjou and Cádiz, and of his wife María del Carmen Martínez-Bordiú y Franco, eldest granddaughter of Francisco Franco.
 Alfonso was at that time the dauphin (using "Duke of Bourbon" as title of pretence) according to those who supported the claim of his father, Infante Jaime, Duke of Segovia to the French throne.
 On 20 March 1975, Jaime died, and Alfonso then asserted his claim to be Head of the House of Bourbon and Legitimist claimant to the throne of France.
+As such, he took the title "Duke of Anjou".
 Childhood
 
 Louis Alphonse's parents separated in 1982, and their Catholic marriage was annulled in 1986.
@@ -134,13 +137,20 @@ French Legitimists recognize her as Eugénie, Madame Royale,: 47  the style comm
 
 
 The couple had twin sons, Louis and Alphonse, on 28 May 2010 in New York City.
+Their father has conferred upon them the historic French titles of, respectively, Duke of Burgundy (duc de Bourgogne) and Duke of Berry (duc de Berry).
 In Spain, the twins are Don Luis and Don Alfonso de Borbón y Vargas.:
+47 
+
+
+Their fourth child, Henri, was born on 1 February 2019 in New York and was granted the title of Duke of Touraine (duc de Touraine) by his father.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -156,39 +166,9 @@ In Spain, the twins are Don Luis and Don Alfonso de Borbón y Vargas.:
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -203,6 +183,23 @@ In Spain, the twins are Don Luis and Don Alfonso de Borbón y Vargas.:
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -220,6 +217,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -287,29 +299,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -318,6 +322,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -330,6 +342,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -338,17 +352,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -376,6 +392,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -391,174 +491,148 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (78b7fe79-e6d5-4dcd-adfb-e2ef5fc88038)
- Call ID: 78b7fe79-e6d5-4dcd-adfb-e2ef5fc88038
+  AssignClass (3ccbc977-a5ac-424f-981d-b439dfa89cd9)
+ Call ID: 3ccbc977-a5ac-424f-981d-b439dfa89cd9
   Args:
-    source: Louis_Alphonse_de_Bourbon
     type: :Man
-  AssignClass (e7e9f262-4692-4562-8d2d-9aaf6d3e10b6)
- Call ID: e7e9f262-4692-4562-8d2d-9aaf6d3e10b6
-  Args:
     source: Louis_Alphonse_de_Bourbon
-    type: :Person
-  AddLiteral (dd2796ef-aeb2-4043-8841-58d0a721d4f1)
- Call ID: dd2796ef-aeb2-4043-8841-58d0a721d4f1
+  AssignClass (91df499e-f904-4973-8dcf-035649783f88)
+ Call ID: 91df499e-f904-4973-8dcf-035649783f88
   Args:
+    type: :Man
+    source: Alfonso_de_Borbon
+  AssignClass (caa69e9d-8b84-41ba-b25b-b6e8eac9bb38)
+ Call ID: caa69e9d-8b84-41ba-b25b-b6e8eac9bb38
+  Args:
+    type: :Woman
+    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
+  AssignClass (6299ad2d-1fe3-48e3-ba3e-7bca288314ca)
+ Call ID: 6299ad2d-1fe3-48e3-ba3e-7bca288314ca
+  Args:
+    type: :Man
+    source: Francisco
+  AssignClass (f8c737b3-d512-4f8a-8271-60f8bd59ea31)
+ Call ID: f8c737b3-d512-4f8a-8271-60f8bd59ea31
+  Args:
+    source: Maria_Margarita_Vargas_Santaella
+    type: :Woman
+  AssignClass (0009b4d8-5a4c-49ee-9f48-53ccc2f1cefc)
+ Call ID: 0009b4d8-5a4c-49ee-9f48-53ccc2f1cefc
+  Args:
+    type: :Woman
+    source: Eugenie
+  AssignClass (913cd1b5-6656-438a-b4bc-ac4e63ba6952)
+ Call ID: 913cd1b5-6656-438a-b4bc-ac4e63ba6952
+  Args:
+    type: :Man
+    source: Louis
+  AssignClass (b50856ba-99fc-4535-bfbc-56038504e226)
+ Call ID: b50856ba-99fc-4535-bfbc-56038504e226
+  Args:
+    source: Alphonse
+    type: :Man
+  AssignClass (1747c741-a247-4681-94d5-925457dd2a42)
+ Call ID: 1747c741-a247-4681-94d5-925457dd2a42
+  Args:
+    type: :Man
+    source: Henri
+  AddLiteral (eb9c2b86-60a6-4202-bc4d-54871af5fb60)
+ Call ID: eb9c2b86-60a6-4202-bc4d-54871af5fb60
+  Args:
+    literal_type: xsd:integer
     source: Louis_Alphonse_de_Bourbon
     relation: :hasBirthYear
     literal_value: 1974
-    literal_type: xsd:integer
-  AssignClass (d233f9cd-89a7-47a1-b5fa-b9b15088f8c0)
- Call ID: d233f9cd-89a7-47a1-b5fa-b9b15088f8c0
+  AddTriple (87a4e555-9fb5-47f0-9123-57d9d2a532d2)
+ Call ID: 87a4e555-9fb5-47f0-9123-57d9d2a532d2
   Args:
-    type: :Man
-    source: Alfonso_de_Borbon
-  AssignClass (681b4711-8318-4153-a421-5bd5051af9ed)
- Call ID: 681b4711-8318-4153-a421-5bd5051af9ed
-  Args:
-    type: :Person
-    source: Alfonso_de_Borbon
-  AssignClass (54669cc5-f5fd-4ef1-8d10-73ce52f0427d)
- Call ID: 54669cc5-f5fd-4ef1-8d10-73ce52f0427d
-  Args:
-    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-    type: :Woman
-  AssignClass (5444b821-5b0f-479f-94a9-fa99fa65fae7)
- Call ID: 5444b821-5b0f-479f-94a9-fa99fa65fae7
-  Args:
-    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-    type: :Person
-  AddTriple (b87ff707-7c7b-40d4-b538-d96b60d4fbd2)
- Call ID: b87ff707-7c7b-40d4-b538-d96b60d4fbd2
-  Args:
-    relation: :hasFather
-    source: Louis_Alphonse_de_Bourbon
     target: Alfonso_de_Borbon
-  AddTriple (9a2c0976-8cea-441d-8c3b-d903cd65423a)
- Call ID: 9a2c0976-8cea-441d-8c3b-d903cd65423a
-  Args:
-    relation: :hasMother
     source: Louis_Alphonse_de_Bourbon
+    relation: :hasFather
+  AddTriple (389004f7-9f1c-4fc5-946a-7e4c70880c75)
+ Call ID: 389004f7-9f1c-4fc5-946a-7e4c70880c75
+  Args:
+    source: Louis_Alphonse_de_Bourbon
+    relation: :hasMother
     target: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-  AssignClass (3185f60f-b3d1-4f91-88eb-d2b63bfc60b6)
- Call ID: 3185f60f-b3d1-4f91-88eb-d2b63bfc60b6
+  AddTriple (e49ce13b-c381-4f14-8e3a-15a9c012e91a)
+ Call ID: e49ce13b-c381-4f14-8e3a-15a9c012e91a
   Args:
-    type: :Man
-    source: Francisco_de_Borbon
-  AssignClass (9bcf0c9a-9636-4dcf-b020-75509f5e5f2c)
- Call ID: 9bcf0c9a-9636-4dcf-b020-75509f5e5f2c
-  Args:
-    source: Francisco_de_Borbon
-    type: :Person
-  AddTriple (79079d79-64de-4373-bb23-f7a67a3c78d3)
- Call ID: 79079d79-64de-4373-bb23-f7a67a3c78d3
-  Args:
+    target: Francisco
+    source: Louis_Alphonse_de_Bourbon
     relation: :hasBrother
-    target: Francisco_de_Borbon
-    source: Louis_Alphonse_de_Bourbon
-  AddTriple (126e7064-9fc8-4b5e-8fc4-d698e0d2bc63)
- Call ID: 126e7064-9fc8-4b5e-8fc4-d698e0d2bc63
+  AddTriple (c863c174-1536-4180-88e3-9f23f8eca26b)
+ Call ID: c863c174-1536-4180-88e3-9f23f8eca26b
   Args:
-    source: Francisco_de_Borbon
+    relation: :hasFather
+    source: Francisco
+    target: Alfonso_de_Borbon
+  AddTriple (775a4fde-e8f2-46c8-a015-3c11f7f36e22)
+ Call ID: 775a4fde-e8f2-46c8-a015-3c11f7f36e22
+  Args:
+    target: Maria_del_Carmen_Martinez-Bordiu_y_Franco
+    source: Francisco
+    relation: :hasMother
+  AddTriple (d83bf838-146a-404f-be44-d07ed24732c6)
+ Call ID: d83bf838-146a-404f-be44-d07ed24732c6
+  Args:
     target: Alfonso_de_Borbon
     relation: :hasFather
-  AddTriple (851e7bb6-2b68-424e-a9f5-2fe84cccc597)
- Call ID: 851e7bb6-2b68-424e-a9f5-2fe84cccc597
-  Args:
-    relation: :hasMother
-    source: Francisco_de_Borbon
-    target: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-  AssignClass (2dd91434-7640-4852-97c1-8941a339442b)
- Call ID: 2dd91434-7640-4852-97c1-8941a339442b
-  Args:
-    type: :Woman
-    source: Maria_Margarita_Vargas_Santaella
-  AssignClass (6c690cfd-6a99-4ddd-a010-50b7bbc8de78)
- Call ID: 6c690cfd-6a99-4ddd-a010-50b7bbc8de78
-  Args:
-    type: :Person
-    source: Maria_Margarita_Vargas_Santaella
-  AssignClass (76aab33d-1d38-4b52-85ae-cebda8e48e3f)
- Call ID: 76aab33d-1d38-4b52-85ae-cebda8e48e3f
-  Args:
-    type: :Woman
-    source: Eugenie_de_Borbon_y_Vargas
-  AssignClass (878287ef-779a-4aff-a440-988fee08ac61)
- Call ID: 878287ef-779a-4aff-a440-988fee08ac61
-  Args:
-    source: Eugenie_de_Borbon_y_Vargas
-    type: :Person
-  AddTriple (f17c6894-95fe-4f7b-8573-d72628ff5c46)
- Call ID: f17c6894-95fe-4f7b-8573-d72628ff5c46
-  Args:
-    source: Eugenie_de_Borbon_y_Vargas
-    target: Louis_Alphonse_de_Bourbon
-    relation: :hasFather
-  AddTriple (deb1b5a3-2851-442f-a663-c9dbe4bcf953)
- Call ID: deb1b5a3-2851-442f-a663-c9dbe4bcf953
-  Args:
-    target: Maria_Margarita_Vargas_Santaella
-    source: Eugenie_de_Borbon_y_Vargas
-    relation: :hasMother
-  AssignClass (f3b94310-965b-4fce-8c39-32089ea6d1fb)
- Call ID: f3b94310-965b-4fce-8c39-32089ea6d1fb
-  Args:
-    type: :Man
-    source: Luis_de_Borbon_y_Vargas
-  AssignClass (4c669f6a-9b98-4f6b-a156-c76473a9ac8b)
- Call ID: 4c669f6a-9b98-4f6b-a156-c76473a9ac8b
-  Args:
-    source: Luis_de_Borbon_y_Vargas
-    type: :Person
-  AddTriple (47185b52-ed50-4562-80b6-9684fc444746)
- Call ID: 47185b52-ed50-4562-80b6-9684fc444746
-  Args:
-    relation: :hasFather
-    target: Louis_Alphonse_de_Bourbon
-    source: Luis_de_Borbon_y_Vargas
-  AddTriple (fb88262e-6e18-4501-9abd-b6633e78efa6)
- Call ID: fb88262e-6e18-4501-9abd-b6633e78efa6
-  Args:
-    target: Maria_Margarita_Vargas_Santaella
-    source: Luis_de_Borbon_y_Vargas
-    relation: :hasMother
-  AssignClass (3a6e9b5b-df8d-443f-9162-d15e4476caa7)
- Call ID: 3a6e9b5b-df8d-443f-9162-d15e4476caa7
-  Args:
-    type: :Man
-    source: Alphonse_de_Borbon_y_Vargas
-  AssignClass (0cccc6b5-257c-4e8d-9a47-e605f851113a)
- Call ID: 0cccc6b5-257c-4e8d-9a47-e605f851113a
-  Args:
-    type: :Person
-    source: Alphonse_de_Borbon_y_Vargas
-  AddTriple (b69a35a1-65bd-4bd3-a205-69d490d4c872)
- Call ID: b69a35a1-65bd-4bd3-a205-69d490d4c872
+    source: Louis_Alphonse_de_Bourbon
+  AddTriple (d6cd3dc3-c39f-4e77-acc7-8093d259ea10)
+ Call ID: d6cd3dc3-c39f-4e77-acc7-8093d259ea10
   Args:
     target: Louis_Alphonse_de_Bourbon
-    source: Alphonse_de_Borbon_y_Vargas
+    source: Eugenie
     relation: :hasFather
-  AddTriple (10b6a5b2-ab02-403d-80e6-8c769696c52b)
- Call ID: 10b6a5b2-ab02-403d-80e6-8c769696c52b
+  AddTriple (2f2aee3f-8388-4233-baae-bb59f678db2d)
+ Call ID: 2f2aee3f-8388-4233-baae-bb59f678db2d
   Args:
+    source: Eugenie
     relation: :hasMother
-    source: Alphonse_de_Borbon_y_Vargas
     target: Maria_Margarita_Vargas_Santaella
-  Finish (8ba1667b-72b9-416b-9c63-881c21980fc8)
- Call ID: 8ba1667b-72b9-416b-9c63-881c21980fc8
+  AddTriple (039675f2-5a32-4c30-b2be-3ed17443b207)
+ Call ID: 039675f2-5a32-4c30-b2be-3ed17443b207
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    relation: :hasFather
+    source: Louis
+    target: Louis_Alphonse_de_Bourbon
+  AddTriple (62949105-a186-4d2c-859d-fc1c635fa18a)
+ Call ID: 62949105-a186-4d2c-859d-fc1c635fa18a
+  Args:
+    target: Maria_Margarita_Vargas_Santaella
+    source: Louis
+    relation: :hasMother
+  AddTriple (fa95d8ff-78f0-4526-b611-b94737e6e84b)
+ Call ID: fa95d8ff-78f0-4526-b611-b94737e6e84b
+  Args:
+    target: Louis_Alphonse_de_Bourbon
+    source: Alphonse
+    relation: :hasFather
+  AddTriple (42263578-027a-49ea-a6c0-33ff15402a47)
+ Call ID: 42263578-027a-49ea-a6c0-33ff15402a47
+  Args:
+    source: Alphonse
+    relation: :hasMother
+    target: Maria_Margarita_Vargas_Santaella
+  AddTriple (049b7d4b-feb4-4ebb-a82f-f557b1e8c1fe)
+ Call ID: 049b7d4b-feb4-4ebb-a82f-f557b1e8c1fe
+  Args:
+    relation: :hasFather
+    source: Henri
+    target: Louis_Alphonse_de_Bourbon
+  AddTriple (2f3a0c14-823c-4aa5-8098-ee6b84bfc445)
+ Call ID: 2f3a0c14-823c-4aa5-8098-ee6b84bfc445
+  Args:
+    target: Maria_Margarita_Vargas_Santaella
+    source: Henri,target:
+    relation: :hasMother
+  AddTriple (04fbdff1-637f-49da-a4de-beb805c73448)
+ Call ID: 04fbdff1-637f-49da-a4de-beb805c73448
+  Args:
+    target: Maria_Margarita_Vargas_Santaella
+    source: Henri,target:
+    relation: :hasMother
 
 ================================= Tool Message =================================
 
@@ -663,43 +737,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alphonse_de_Borbon_y_Vargas a :Man,
-          :Person ;
+  data:Alphonse a :Man ;
       :hasFather data:Louis_Alphonse_de_Bourbon ;
       :hasMother data:Maria_Margarita_Vargas_Santaella .
 
-  data:Eugenie_de_Borbon_y_Vargas a :Person,
-          :Woman ;
+  data:Eugenie a :Woman ;
       :hasFather data:Louis_Alphonse_de_Bourbon ;
       :hasMother data:Maria_Margarita_Vargas_Santaella .
 
-  data:Luis_de_Borbon_y_Vargas a :Man,
-          :Person ;
+  data:Henri a :Man ;
+      :hasFather data:Louis_Alphonse_de_Bourbon .
+
+  data:Henri%2Ctarget :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+  data:Louis a :Man ;
       :hasFather data:Louis_Alphonse_de_Bourbon ;
       :hasMother data:Maria_Margarita_Vargas_Santaella .
 
-  data:Francisco_de_Borbon a :Man,
-          :Person ;
+  data:Francisco a :Man ;
       :hasFather data:Alfonso_de_Borbon ;
       :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
 
-  data:Alfonso_de_Borbon a :Man,
-          :Person .
+  data:Alfonso_de_Borbon a :Man .
 
-  data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Person,
-          :Woman .
+  data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Woman .
 
-  data:Louis_Alphonse_de_Bourbon a :Man,
-          :Person ;
+  data:Louis_Alphonse_de_Bourbon a :Man ;
       :hasBirthYear 1974 ;
-      :hasBrother data:Francisco_de_Borbon ;
+      :hasBrother data:Francisco ;
       :hasFather data:Alfonso_de_Borbon ;
       :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
 
-  data:Maria_Margarita_Vargas_Santaella a :Person,
-          :Woman .
+  data:Maria_Margarita_Vargas_Santaella a :Woman .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (98efb62f-bca3-4983-bd6a-0e6951255485)
+ Call ID: 98efb62f-bca3-4983-bd6a-0e6951255485
+  Args:
 
 ================================= Tool Message =================================
 
@@ -709,254 +788,278 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (e92b3bd0-f279-4173-a859-25f353ea816c)
- Call ID: e92b3bd0-f279-4173-a859-25f353ea816c
+  ValidateShacl (0442dff8-aba8-4641-9d43-4cbaf097c8b1)
+ Call ID: 0442dff8-aba8-4641-9d43-4cbaf097c8b1
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:30
+Total violations:33
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Alfonso_de_Borbon' for the 'hasFather' property of 'Louis_Alphonse_de_Bourbon' is missing the mandatory class ':Man'.
+      The node Alfonso_de_Borbon, which is the value of the hasFather property for Francisco, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alfonso_de_Borbon', class=':Man')
+      AssignClass(node: 'Alfonso_de_Borbon', class: ':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Alfonso_de_Borbon' for the 'hasFather' property of 'Francisco_de_Borbon' is missing the mandatory class ':Man'.
+      The node Alfonso_de_Borbon, which is the value of the hasFather property for Louis_Alphonse_de_Bourbon, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alfonso_de_Borbon', class=':Man')
+      AssignClass(node: 'Alfonso_de_Borbon', class: ':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Louis_Alphonse_de_Bourbon' for the 'hasFather' property of 'Luis_de_Borbon_y_Vargas' is missing the mandatory class ':Man'.
+      The node Louis_Alphonse_de_Bourbon, which is the value of the hasFather property for Alphonse, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Alphonse_de_Bourbon', class=':Man')
+      AssignClass(node: 'Louis_Alphonse_de_Bourbon', class: ':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Louis_Alphonse_de_Bourbon' for the 'hasFather' property of 'Alphonse_de_Borbon_y_Vargas' is missing the mandatory class ':Man'.
+      The node Louis_Alphonse_de_Bourbon, which is the value of the hasFather property for Louis, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Alphonse_de_Bourbon', class=':Man')
+      AssignClass(node: 'Louis_Alphonse_de_Bourbon', class: ':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' for the 'hasMother' property of 'Louis_Alphonse_de_Bourbon' is missing the mandatory class ':Woman'.
+      The node Louis_Alphonse_de_Bourbon, which is the value of the hasFather property for Henri, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_del_Carmen_Martinez-Bordiu_y_Franco', class=':Woman')
+      AssignClass(node: 'Louis_Alphonse_de_Bourbon', class: ':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' for the 'hasMother' property of 'Francisco_de_Borbon' is missing the mandatory class ':Woman'.
+      The node Maria_del_Carmen_Martinez-Bordiu_y_Franco, which is the value of the hasMother property for Francisco, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_del_Carmen_Martinez-Bordiu_y_Franco', class=':Woman')
+      AssignClass(node: 'Maria_del_Carmen_Martinez-Bordiu_y_Franco', class: ':Ancestor')
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Margarita_Vargas_Santaella' for the 'hasMother' property of 'Luis_de_Borbon_y_Vargas' is missing the mandatory class ':Woman'.
+      The node Maria_del_Carmen_Martinez-Bordiu_y_Franco, which is the value of the hasMother property for Louis_Alphonse_de_Bourbon, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Margarita_Vargas_Santaella', class=':Woman')
+      AssignClass(node: 'Maria_del_Carmen_Martinez-Bordiu_y_Franco', class: ':Ancestor')
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Margarita_Vargas_Santaella' for the 'hasMother' property of 'Alphonse_de_Borbon_y_Vargas' is missing the mandatory class ':Woman'.
+      The node Maria_Margarita_Vargas_Santaella, which is the value of the hasMother property for Alphonse, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Margarita_Vargas_Santaella', class=':Woman')
+      AssignClass(node: 'Maria_Margarita_Vargas_Santaella', class: ':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Alfonso_de_Borbon' for the 'hasFather' property of 'Louis_Alphonse_de_Bourbon' is missing the mandatory class ':Man'.
+      The node Maria_Margarita_Vargas_Santaella, which is the value of the hasMother property for Louis, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alfonso_de_Borbon', class=':Man')
+      AssignClass(node: 'Maria_Margarita_Vargas_Santaella', class: ':Ancestor')
 
 
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Alfonso_de_Borbon' for the 'hasFather' property of 'Francisco_de_Borbon' is missing the mandatory class ':Man'.
+      The node Alfonso_de_Borbon, which is the value of the hasFather property for Francisco, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alfonso_de_Borbon', class=':Man')
+      AssignClass(node: 'Alfonso_de_Borbon', class: ':Ancestor')
 
 
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Louis_Alphonse_de_Bourbon' for the 'hasFather' property of 'Eugenie_de_Borbon_y_Vargas' is missing the mandatory class ':Man'.
+      The node Alfonso_de_Borbon, which is the value of the hasFather property for Louis_Alphonse_de_Bourbon, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Alphonse_de_Bourbon', class=':Man')
+      AssignClass(node: 'Alfonso_de_Borbon', class: ':Ancestor')
 
 
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Louis_Alphonse_de_Bourbon' for the 'hasFather' property of 'Luis_de_Borbon_y_Vargas' is missing the mandatory class ':Man'.
+      The node Louis_Alphonse_de_Bourbon, which is the value of the hasFather property for Louis, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Alphonse_de_Bourbon', class=':Man')
+      AssignClass(node: 'Louis_Alphonse_de_Bourbon', class: ':Ancestor')
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Louis_Alphonse_de_Bourbon' for the 'hasFather' property of 'Alphonse_de_Borbon_y_Vargas' is missing the mandatory class ':Man'.
+      The node Louis_Alphonse_de_Bourbon, which is the value of the hasFather property for Alphonse, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Alphonse_de_Bourbon', class=':Man')
+      AssignClass(node: 'Louis_Alphonse_de_Bourbon', class: ':Ancestor')
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' for the 'hasMother' property of 'Louis_Alphonse_de_Bourbon' is missing the mandatory class ':Woman'.
+      The node Louis_Alphonse_de_Bourbon, which is the value of the hasFather property for Henri, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_del_Carmen_Martinez-Bordiu_y_Franco', class=':Woman')
+      AssignClass(node: 'Louis_Alphonse_de_Bourbon', class: ':Ancestor')
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' for the 'hasMother' property of 'Francisco_de_Borbon' is missing the mandatory class ':Woman'.
+      The node Louis_Alphonse_de_Bourbon, which is the value of the hasFather property for Eugenie, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_del_Carmen_Martinez-Bordiu_y_Franco', class=':Woman')
+      AssignClass(node: 'Louis_Alphonse_de_Bourbon', class: ':Ancestor')
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Margarita_Vargas_Santaella' for the 'hasMother' property of 'Eugenie_de_Borbon_y_Vargas' is missing the mandatory class ':Woman'.
+      The node Maria_del_Carmen_Martinez-Bordiu_y_Franco, which is the value of the hasMother property for Francisco, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Margarita_Vargas_Santaella', class=':Woman')
+      AssignClass(node: 'Maria_del_Carmen_Martinez-Bordiu_y_Franco', class: ':Ancestor')
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Margarita_Vargas_Santaella' for the 'hasMother' property of 'Luis_de_Borbon_y_Vargas' is missing the mandatory class ':Woman'.
+      The node Maria_del_Carmen_Martinez-Bordiu_y_Franco, which is the value of the hasMother property for Louis_Alphonse_de_Bourbon, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Margarita_Vargas_Santaella', class=':Woman')
+      AssignClass(node: 'Maria_del_Carmen_Martinez-Bordiu_y_Franco', class: ':Ancestor')
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Margarita_Vargas_Santaella' for the 'hasMother' property of 'Alphonse_de_Borbon_y_Vargas' is missing the mandatory class ':Woman'.
+      The node Maria_Margarita_Vargas_Santaella, which is the value of the hasMother property for Louis, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Margarita_Vargas_Santaella', class=':Woman')
+      AssignClass(node: 'Maria_Margarita_Vargas_Santaella', class: ':Ancestor')
 
 
   Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Alfonso_de_Borbon' for the 'hasFather' property of 'Louis_Alphonse_de_Bourbon' is missing the mandatory class ':Man'.
+      The node Maria_Margarita_Vargas_Santaella, which is the value of the hasMother property for Alphonse, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alfonso_de_Borbon', class=':Man')
+      AssignClass(node: 'Maria_Margarita_Vargas_Santaella', class: ':Ancestor')
 
 
   Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Alfonso_de_Borbon' for the 'hasFather' property of 'Francisco_de_Borbon' is missing the mandatory class ':Man'.
+      The node Maria_Margarita_Vargas_Santaella, which is the value of the hasMother property for Eugenie, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Alfonso_de_Borbon', class=':Man')
+      AssignClass(node: 'Maria_Margarita_Vargas_Santaella', class: ':Ancestor')
 
 
   Violation [21]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Louis_Alphonse_de_Bourbon' for the 'hasFather' property of 'Eugenie_de_Borbon_y_Vargas' is missing the mandatory class ':Man'.
+      The node Alfonso_de_Borbon, which is the value of the hasFather property for Francisco, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Alphonse_de_Bourbon', class=':Man')
+      AssignClass(node: 'Alfonso_de_Borbon', class: ':Ancestor')
 
 
   Violation [22]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Louis_Alphonse_de_Bourbon' for the 'hasFather' property of 'Luis_de_Borbon_y_Vargas' is missing the mandatory class ':Man'.
+      The node Alfonso_de_Borbon, which is the value of the hasFather property for Louis_Alphonse_de_Bourbon, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Alphonse_de_Bourbon', class=':Man')
+      AssignClass(node: 'Alfonso_de_Borbon', class: ':Ancestor')
 
 
   Violation [23]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Louis_Alphonse_de_Bourbon' for the 'hasFather' property of 'Alphonse_de_Borbon_y_Vargas' is missing the mandatory class ':Man'.
+      The node Louis_Alphonse_de_Bourbon, which is the value of the hasFather property for Louis, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Alphonse_de_Bourbon', class=':Man')
+      AssignClass(node: 'Louis_Alphonse_de_Bourbon', class: ':Ancestor')
 
 
   Violation [24]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' for the 'hasMother' property of 'Louis_Alphonse_de_Bourbon' is missing the mandatory class ':Woman'.
+      The node Louis_Alphonse_de_Bourbon, which is the value of the hasFather property for Alphonse, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_del_Carmen_Martinez-Bordiu_y_Franco', class=':Woman')
+      AssignClass(node: 'Louis_Alphonse_de_Bourbon', class: ':Ancestor')
 
 
   Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Maria_del_Carmen_Martinez-Bordiu_y_Franco' for the 'hasMother' property of 'Francisco_de_Borbon' is missing the mandatory class ':Woman'.
+      The node Louis_Alphonse_de_Bourbon, which is the value of the hasFather property for Henri, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_del_Carmen_Martinez-Bordiu_y_Franco', class=':Woman')
+      AssignClass(node: 'Louis_Alphonse_de_Bourbon', class: ':Ancestor')
 
 
   Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Margarita_Vargas_Santaella' for the 'hasMother' property of 'Eugenie_de_Borbon_y_Vargas' is missing the mandatory class ':Woman'.
+      The node Louis_Alphonse_de_Bourbon, which is the value of the hasFather property for Eugenie, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Margarita_Vargas_Santaella', class=':Woman')
+      AssignClass(node: 'Louis_Alphonse_de_Bourbon', class: ':Ancestor')
 
 
   Violation [27]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Margarita_Vargas_Santaella' for the 'hasMother' property of 'Luis_de_Borbon_y_Vargas' is missing the mandatory class ':Woman'.
+      The node Maria_del_Carmen_Martinez-Bordiu_y_Franco, which is the value of the hasMother property for Francisco, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Margarita_Vargas_Santaella', class=':Woman')
+      AssignClass(node: 'Maria_del_Carmen_Martinez-Bordiu_y_Franco', class: ':Ancestor')
 
 
   Violation [28]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Margarita_Vargas_Santaella' for the 'hasMother' property of 'Alphonse_de_Borbon_y_Vargas' is missing the mandatory class ':Woman'.
+      The node Maria_del_Carmen_Martinez-Bordiu_y_Franco, which is the value of the hasMother property for Louis_Alphonse_de_Bourbon, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Margarita_Vargas_Santaella', class=':Woman')
+      AssignClass(node: 'Maria_del_Carmen_Martinez-Bordiu_y_Franco', class: ':Ancestor')
 
 
   Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Louis_Alphonse_de_Bourbon' for the 'hasFather' property of 'Eugenie_de_Borbon_y_Vargas' is missing the mandatory class ':Man'.
+      The node Maria_Margarita_Vargas_Santaella, which is the value of the hasMother property for Louis, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Alphonse_de_Bourbon', class=':Man')
+      AssignClass(node: 'Maria_Margarita_Vargas_Santaella', class: ':Ancestor')
 
 
   Violation [30]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node 'Maria_Margarita_Vargas_Santaella' for the 'hasMother' property of 'Eugenie_de_Borbon_y_Vargas' is missing the mandatory class ':Woman'.
+      The node Maria_Margarita_Vargas_Santaella, which is the value of the hasMother property for Alphonse, is not classified as an Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Maria_Margarita_Vargas_Santaella', class=':Woman')
+      AssignClass(node: 'Maria_Margarita_Vargas_Santaella', class: ':Ancestor')
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Margarita_Vargas_Santaella, which is the value of the hasMother property for Eugenie, is not classified as an Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Maria_Margarita_Vargas_Santaella', class: ':Ancestor')
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Louis_Alphonse_de_Bourbon, which is the value of the hasFather property for Eugenie, is not classified as an Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Louis_Alphonse_de_Bourbon', class: ':Ancestor')
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Maria_Margarita_Vargas_Santaella, which is the value of the hasMother property for Eugenie, is not classified as an Ancestor.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node: 'Maria_Margarita_Vargas_Santaella', class: ':Ancestor')
 
 
 
@@ -965,28 +1068,28 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (00cfcb92-aa81-498f-9185-11a15dd87282)
- Call ID: 00cfcb92-aa81-498f-9185-11a15dd87282
+  AssignClass (3651776b-ac5d-4af8-bb12-ff93e20e3136)
+ Call ID: 3651776b-ac5d-4af8-bb12-ff93e20e3136
   Args:
-    type: :Ancestor
     source: Alfonso_de_Borbon
-  AssignClass (cd66f686-4db3-4d96-ab49-d08bff2ecbc5)
- Call ID: cd66f686-4db3-4d96-ab49-d08bff2ecbc5
-  Args:
     type: :Ancestor
-    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
-  AssignClass (2a51d4f4-bc48-491d-a486-058a6aab37a0)
- Call ID: 2a51d4f4-bc48-491d-a486-058a6aab37a0
+  AssignClass (5f8e2adb-c455-4491-8362-2271f66718f6)
+ Call ID: 5f8e2adb-c455-4491-8362-2271f66718f6
   Args:
     type: :Ancestor
     source: Louis_Alphonse_de_Bourbon
-  AssignClass (c04fdb1e-5a16-4b5e-ab98-a1f6d03a78d4)
- Call ID: c04fdb1e-5a16-4b5e-ab98-a1f6d03a78d4
+  AssignClass (7ea63c14-c280-40db-8900-3b15cf4ce6eb)
+ Call ID: 7ea63c14-c280-40db-8900-3b15cf4ce6eb
+  Args:
+    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
+    type: :Ancestor
+  AssignClass (877a25d3-82dd-4869-89b3-b925a7400c02)
+ Call ID: 877a25d3-82dd-4869-89b3-b925a7400c02
   Args:
     type: :Ancestor
     source: Maria_Margarita_Vargas_Santaella
-  ValidateShacl (2f7a5ff6-6855-4967-9ec6-857166a43c74)
- Call ID: 2f7a5ff6-6855-4967-9ec6-857166a43c74
+  ValidateShacl (e85c5d08-71b8-4c3c-986d-a46bf680175c)
+ Call ID: e85c5d08-71b8-4c3c-986d-a46bf680175c
   Args:
 
 ================================= Tool Message =================================
@@ -1008,44 +1111,41 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alphonse_de_Borbon_y_Vargas a :Man,
-          :Person ;
+  data:Alphonse a :Man ;
       :hasFather data:Louis_Alphonse_de_Bourbon ;
       :hasMother data:Maria_Margarita_Vargas_Santaella .
 
-  data:Eugenie_de_Borbon_y_Vargas a :Person,
-          :Woman ;
+  data:Eugenie a :Woman ;
       :hasFather data:Louis_Alphonse_de_Bourbon ;
       :hasMother data:Maria_Margarita_Vargas_Santaella .
 
-  data:Luis_de_Borbon_y_Vargas a :Man,
-          :Person ;
+  data:Henri a :Man ;
+      :hasFather data:Louis_Alphonse_de_Bourbon .
+
+  data:Henri%2Ctarget :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+  data:Louis a :Man ;
       :hasFather data:Louis_Alphonse_de_Bourbon ;
       :hasMother data:Maria_Margarita_Vargas_Santaella .
 
-  data:Francisco_de_Borbon a :Man,
-          :Person ;
+  data:Francisco a :Man ;
       :hasFather data:Alfonso_de_Borbon ;
       :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
 
   data:Alfonso_de_Borbon a :Ancestor,
-          :Man,
-          :Person .
+          :Man .
 
   data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Ancestor,
-          :Person,
           :Woman .
 
   data:Louis_Alphonse_de_Bourbon a :Ancestor,
-          :Man,
-          :Person ;
+          :Man ;
       :hasBirthYear 1974 ;
-      :hasBrother data:Francisco_de_Borbon ;
+      :hasBrother data:Francisco ;
       :hasFather data:Alfonso_de_Borbon ;
       :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
 
   data:Maria_Margarita_Vargas_Santaella a :Ancestor,
-          :Person,
           :Woman .
 
 
@@ -1058,6 +1158,105 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (06242399-b342-4bf8-a380-e7bb8882da0d)
- Call ID: 06242399-b342-4bf8-a380-e7bb8882da0d
+  Finish (476c34b0-5ff2-4e95-af48-0d1e88294b8f)
+ Call ID: 476c34b0-5ff2-4e95-af48-0d1e88294b8f
+  Args:
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Henri%2Ctarget']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (09938619-1e81-43eb-8155-dcfb2c721358)
+ Call ID: 09938619-1e81-43eb-8155-dcfb2c721358
+  Args:
+    source: Henri%2Ctarget
+    target: Maria_Margarita_Vargas_Santaella
+    relation: :hasMother
+  AddTriple (f082cf71-0328-41c7-9fdd-edc8058fe1ce)
+ Call ID: f082cf71-0328-41c7-9fdd-edc8058fe1ce
+  Args:
+    source: Henri
+    target: Maria_Margarita_Vargas_Santaella
+    relation: :hasMother
+  ValidateShacl (f2207f17-0333-4f45-bad3-2f2b29be026e)
+ Call ID: f2207f17-0333-4f45-bad3-2f2b29be026e
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Alphonse a :Man ;
+      :hasFather data:Louis_Alphonse_de_Bourbon ;
+      :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+  data:Eugenie a :Woman ;
+      :hasFather data:Louis_Alphonse_de_Bourbon ;
+      :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+  data:Henri a :Man ;
+      :hasFather data:Louis_Alphonse_de_Bourbon ;
+      :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+  data:Louis a :Man ;
+      :hasFather data:Louis_Alphonse_de_Bourbon ;
+      :hasMother data:Maria_Margarita_Vargas_Santaella .
+
+  data:Francisco a :Man ;
+      :hasFather data:Alfonso_de_Borbon ;
+      :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+
+  data:Alfonso_de_Borbon a :Ancestor,
+          :Man .
+
+  data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Ancestor,
+          :Woman .
+
+  data:Louis_Alphonse_de_Bourbon a :Ancestor,
+          :Man ;
+      :hasBirthYear 1974 ;
+      :hasBrother data:Francisco ;
+      :hasFather data:Alfonso_de_Borbon ;
+      :hasMother data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
+
+  data:Maria_Margarita_Vargas_Santaella a :Ancestor,
+          :Woman .
+
+
+
+================================= Tool Message =================================
+
+SHACL validation has not produced any violations.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (f8e5edc0-4c5a-42f7-b909-96e62665025f)
+ Call ID: f8e5edc0-4c5a-42f7-b909-96e62665025f
   Args:

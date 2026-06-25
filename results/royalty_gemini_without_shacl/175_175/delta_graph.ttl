@@ -2,39 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elisabeta-Karina a :Woman ;
-    :isDaughterOf data:Alexander_Nixon,
-        data:Princess_Elena .
+data:FelipeVI a :Man,
+        :Person ;
+    :isBloodrelationOf data:Alexia .
 
-data:Prince_Nicholas a :Man ;
-    :isSonOf data:Princess_Elena,
-        data:Robin_Medforth-Mills .
+data:Maria-Olympia a :Person,
+        :Woman ;
+    :isChildOf data:Pavlos .
 
-data:Alexander_Nixon a :Man ;
-    :hasBirthYear 1964 .
+data:Sofia a :Person,
+        :Woman ;
+    :isAuntOf data:Alexia .
 
-data:Crown_Princess_Margareta a :Woman .
+data:Theodora a :Person,
+        :Woman ;
+    :isSisterOf data:Alexia .
 
-data:King_Michael_I a :Man .
+data:Anne-Marie a :Person,
+        :Woman ;
+    :hasMother data:Ingrid .
 
-data:Princess_Irina a :Woman .
+data:CarlosJavierMoralesQuintana a :Man,
+        :Person .
 
-data:Princess_Maria a :Woman .
+data:ConstantineII a :Man,
+        :Person .
 
-data:Princess_Sophie a :Woman .
+data:Ingrid a :Person,
+        :Woman .
 
-data:Queen_Anne a :Woman .
+data:Pavlos a :Man,
+        :Person ;
+    :isBrotherOf data:Alexia .
 
-data:Robin_Medforth-Mills a :Man ;
-    :hasBirthYear 1942 ;
-    :hasDeathYear 2002 .
-
-data:Princess_Elena a :Woman ;
-    :hasBirthYear 1950 ;
-    :isDaughterOf data:King_Michael_I,
-        data:Queen_Anne ;
-    :isSisterOf data:Crown_Princess_Margareta,
-        data:Princess_Irina,
-        data:Princess_Maria,
-        data:Princess_Sophie .
+data:Alexia a :Person,
+        :Woman ;
+    :hasBirthYear 1965 ;
+    :hasFather data:ConstantineII ;
+    :hasMarriageYear 1999 ;
+    :hasMother data:Anne-Marie ;
+    :hasRelation data:CarlosJavierMoralesQuintana .
 

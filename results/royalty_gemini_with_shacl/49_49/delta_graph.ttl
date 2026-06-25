@@ -2,17 +2,9 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Frederik_IX a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1899 ;
-    :hasBrother data:Knud ;
-    :hasDaughter data:Margrethe_II ;
-    :hasDeathYear 1972 ;
-    :hasFather data:Christian_X ;
-    :hasMarriageYear 1935 ;
-    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
-    :hasRelation data:Ingrid_of_Sweden .
+data:Margrethe_II a :Person,
+        :Woman ;
+    :isDaughterOf data:Frederik_IX .
 
 data:Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
         :Person,
@@ -24,6 +16,10 @@ data:Anastasia_Mikhailovna_of_Russia a :Ancestor,
         :Person,
         :Woman .
 
+data:Christian_IX a :Ancestor,
+        :Man,
+        :Person .
+
 data:Christian_X a :Ancestor,
         :Man,
         :Person ;
@@ -34,24 +30,39 @@ data:Frederick_Francis_III a :Ancestor,
         :Man,
         :Person .
 
+data:Frederik_IX a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Christian_IX ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1972 ;
+    :hasFather data:Christian_X ;
+    :hasMarriageYear 1935 ;
+    :hasMother data:Alexandrine_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Ingrid_of_Sweden ;
+    :isSiblingOf data:Knud .
+
 data:Frederik_VIII a :Ancestor,
         :Man,
         :Person .
 
-data:Knud a :Ancestor,
+data:Gustaf_VI_Adolf a :Ancestor,
         :Man,
+        :Person .
+
+data:Ingrid_of_Sweden a :Person,
+        :Woman ;
+    :hasFather data:Gustaf_VI_Adolf ;
+    :hasMother data:Margaret_of_Connaught .
+
+data:Knud a :Man,
         :Person .
 
 data:Louise_of_Sweden a :Ancestor,
         :Person,
         :Woman .
 
-data:Margrethe_II a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasMother data:Ingrid_of_Sweden .
-
-data:Ingrid_of_Sweden a :Ancestor,
+data:Margaret_of_Connaught a :Ancestor,
         :Person,
         :Woman .
 

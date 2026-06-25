@@ -69,22 +69,33 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Ferdinand of Bourbon-Two Sicilies, Duke of Castro (Ferdinando Maria Andrea Alfonso Marcus; 28 May 1926 – 20 March 2008) was a claimant to the headship of the former Royal House of the Two Sicilies.
+Queen Margrethe II
+
+
+Count Henrik of Monpezat (born Prince Henrik of Denmark; 4 May 2009) is a member of the Danish royal family.
+He is the third and youngest son of Prince Joachim and the only son of his second wife, Princess Marie.
+He is a grandson of Queen Margrethe II and Prince Henrik and a nephew of King Frederik X. Henrik is eighth in the line of succession to the Danish throne.
 Biography
 
-Ferdinand was born in Podzamcze, the son of Prince Ranieri, Duke of Castro, and his wife Countess Maria Carolina Zamoyska.
-Marriage and children
+Henrik was born a prince of Denmark on 4 May 2009 at Rigshospitalet, the Copenhagen University Hospital in Copenhagen.
+At his christening, he received the names Henrik Carl Joachim Alain.
+His godparents are his paternal aunt, Queen Mary of Denmark; his maternal uncles, Charles Cavallier and Benjamin Grandet; his mother's lady-in-waiting, Britt Davidsen Siesbye; as well as a family friend, Christian Scherfig.
+On Ascension Day, Thursday 18 May 2023, Count Henrik was confirmed in Frederikskirken – The Danish Church in Paris.
+The confirmation took place at 11:00, administered by the royal Chaplain-in-Ordinary, bishop Henrik Wigh-Poulsen, with the assistance of Frederikskirken's minister, Malene Bendtsen.
+Titles and styles
 
-Ferdinand was married in Giez on 23 July 1949 to Chantal de Chevron-Villette (1925–2005), and they had three children:
-
-
-As the marriage was initially considered morganatic, Ferdinand’s children were considered ineligible for the throne of Two-Scillies.
+Henrik was styled as "His Highness Prince Henrik of Denmark, Count of Monpezat" until 1 January 2023.
+In September 2022, Queen Margrethe II decided to restrict the titles Prince and Princess to the direct line of succession to the throne.
+He is known as "His Excellency Count Henrik of Monpezat".
+He and Prince Joachim's other children maintain their places in the order of succession.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -100,39 +111,9 @@ As the marriage was initially considered morganatic, Ferdinand’s children were
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -147,6 +128,23 @@ As the marriage was initially considered morganatic, Ferdinand’s children were
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -164,6 +162,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -231,29 +244,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -262,6 +267,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -274,6 +287,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -282,17 +297,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -320,6 +337,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -335,99 +436,81 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (468881c0-3188-425c-b48f-73113940f44d)
- Call ID: 468881c0-3188-425c-b48f-73113940f44d
-  Args:
-    type: :Man
-    source: Ferdinand_of_Bourbon-Two_Sicilies
-  AssignClass (8c1e5fa3-6ebe-417e-a246-a9cc1e15f2f4)
- Call ID: 8c1e5fa3-6ebe-417e-a246-a9cc1e15f2f4
-  Args:
-    source: Ferdinand_of_Bourbon-Two_Sicilies
-    type: :Person
-  AssignClass (0a7f60f8-41da-453d-935d-c3680447505f)
- Call ID: 0a7f60f8-41da-453d-935d-c3680447505f
-  Args:
-    type: :Man
-    source: Ranieri_of_Bourbon-Two_Sicilies
-  AssignClass (dfbfd252-a03c-4577-aa9f-f415ab5656d2)
- Call ID: dfbfd252-a03c-4577-aa9f-f415ab5656d2
-  Args:
-    source: Ranieri_of_Bourbon-Two_Sicilies
-    type: :Person
-  AssignClass (12a3025b-236c-4a48-8915-ed9b21ad84b9)
- Call ID: 12a3025b-236c-4a48-8915-ed9b21ad84b9
+  AssignClass (2f9cdb29-ac8f-438e-91ee-5c77148d0a91)
+ Call ID: 2f9cdb29-ac8f-438e-91ee-5c77148d0a91
   Args:
     type: :Woman
-    source: Maria_Carolina_Zamoyska
-  AssignClass (8abba2c2-5571-4e91-a1ce-dcfa7c9bc59e)
- Call ID: 8abba2c2-5571-4e91-a1ce-dcfa7c9bc59e
+    source: :Queen_Margrethe_II
+  AssignClass (479128b6-2248-4235-a5cd-2b293d65392a)
+ Call ID: 479128b6-2248-4235-a5cd-2b293d65392a
   Args:
-    source: Maria_Carolina_Zamoyska
-    type: :Person
-  AssignClass (c1ecdfc9-ec80-4f7f-91c3-8deea83391e1)
- Call ID: c1ecdfc9-ec80-4f7f-91c3-8deea83391e1
+    type: :Man
+    source: :Count_Henrik_of_Monpezat
+  AssignClass (6072653f-7dca-48d0-85b5-ed029b987b90)
+ Call ID: 6072653f-7dca-48d0-85b5-ed029b987b90
+  Args:
+    type: :Man
+    source: :Prince_Joachim
+  AssignClass (e9022cd5-07d7-438a-ad1e-45f770ff14b7)
+ Call ID: e9022cd5-07d7-438a-ad1e-45f770ff14b7
   Args:
     type: :Woman
-    source: Chantal_de_Chevron-Villette
-  AssignClass (7f9cfc55-c302-465c-aa11-cd9ed741ce68)
- Call ID: 7f9cfc55-c302-465c-aa11-cd9ed741ce68
+    source: :Princess_Marie
+  AssignClass (deeb2e61-1313-4cff-868f-b1183c61aa4c)
+ Call ID: deeb2e61-1313-4cff-868f-b1183c61aa4c
   Args:
-    type: :Person
-    source: Chantal_de_Chevron-Villette
-  AddLiteral (2fc6b7e4-5862-455d-874f-3668d6557bfd)
- Call ID: 2fc6b7e4-5862-455d-874f-3668d6557bfd
+    source: :Prince_Henrik_of_Denmark_Consort
+    type: :Man
+  AssignClass (dd2051ba-4c03-4c8f-9fc2-da2bbd0bac20)
+ Call ID: dd2051ba-4c03-4c8f-9fc2-da2bbd0bac20
   Args:
+    type: :Man
+    source: :King_Frederik_X
+  AddLiteral (e803fa58-aab9-4f85-bca4-bd84e6951e95)
+ Call ID: e803fa58-aab9-4f85-bca4-bd84e6951e95
+  Args:
+    literal_type: xsd:integer
+    literal_value: 2009
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1926
-    source: Ferdinand_of_Bourbon-Two_Sicilies
-  AddLiteral (564c5f35-19c1-471a-a36f-4a7cac8bcb83)
- Call ID: 564c5f35-19c1-471a-a36f-4a7cac8bcb83
+    source: :Count_Henrik_of_Monpezat
+  AddTriple (de7dd552-d09a-4f89-abfa-6286c11e3daa)
+ Call ID: de7dd552-d09a-4f89-abfa-6286c11e3daa
   Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: Ferdinand_of_Bourbon-Two_Sicilies
-    literal_value: 2008
-  AddTriple (498d3616-a983-4d82-b506-42a62c5bb628)
- Call ID: 498d3616-a983-4d82-b506-42a62c5bb628
-  Args:
+    source: :Count_Henrik_of_Monpezat
     relation: :hasFather
-    target: Ranieri_of_Bourbon-Two_Sicilies
-    source: Ferdinand_of_Bourbon-Two_Sicilies
-  AddTriple (07636cc3-a7e7-4861-a73b-ed8025b06a8d)
- Call ID: 07636cc3-a7e7-4861-a73b-ed8025b06a8d
+    target: :Prince_Joachim
+  AddTriple (ff1a6ef7-a9f5-4591-a3f8-ff5daddcbe7d)
+ Call ID: ff1a6ef7-a9f5-4591-a3f8-ff5daddcbe7d
   Args:
     relation: :hasMother
-    target: Maria_Carolina_Zamoyska
-    source: Ferdinand_of_Bourbon-Two_Sicilies
-  AddLiteral (4351535a-a4c7-4607-b71b-66c3d430ab2e)
- Call ID: 4351535a-a4c7-4607-b71b-66c3d430ab2e
+    target: :Princess_Marie
+    source: :Count_Henrik_of_Monpezat
+  AddTriple (608e56ca-8e50-4b90-b2b1-bf1e60ba8d4d)
+ Call ID: 608e56ca-8e50-4b90-b2b1-bf1e60ba8d4d
   Args:
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 1949
-    source: Ferdinand_of_Bourbon-Two_Sicilies
-  AddTriple (60d82864-ad2c-454e-bb09-4d4d3120f92e)
- Call ID: 60d82864-ad2c-454e-bb09-4d4d3120f92e
+    relation: :hasParent
+    target: :Queen_Margrethe_II
+    source: :Count_Henrik_of_Monpezat
+  AddTriple (05029f43-5f96-4a17-a5e6-fc88410f002d)
+ Call ID: 05029f43-5f96-4a17-a5e6-fc88410f002d
   Args:
-    source: Ferdinand_of_Bourbon-Two_Sicilies
-    target: Chantal_de_Chevron-Villette
-    relation: :hasRelation
-  AddLiteral (ba7a2af5-7c4a-4065-9ac4-c61a20eb9e32)
- Call ID: ba7a2af5-7c4a-4065-9ac4-c61a20eb9e32
+    source: :Count_Henrik_of_Monpezat
+    relation: :hasParent
+    target: :Prince_Henrik_of_Denmark_Consort
+  AddLiteral (c3b3bfdf-05c9-453a-9906-253846cebe98)
+ Call ID: c3b3bfdf-05c9-453a-9906-253846cebe98
   Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Chantal_de_Chevron-Villette
-    literal_value: 1925
-  AddLiteral (ecdb0518-c757-4c12-b094-e6928d5efdab)
- Call ID: ecdb0518-c757-4c12-b094-e6928d5efdab
+    relation: :knownAs
+    literal_value: His Excellency Count Henrik of Monpezat
+    source: :Count_Henrik_of_Monpezat
+    literal_type: xsd:string
+  AddLiteral (65ddb427-feea-48b6-b4e7-72d20c06b7e4)
+ Call ID: 65ddb427-feea-48b6-b4e7-72d20c06b7e4
   Args:
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 2005
-    source: Chantal_de_Chevron-Villette
-  Finish (2b8fea0f-77e4-4716-b654-75703222ef4f)
- Call ID: 2b8fea0f-77e4-4716-b654-75703222ef4f
+    literal_value: His Highness Prince Henrik of Denmark, Count of Monpezat
+    relation: :formerlyKnownAs
+    source: :Count_Henrik_of_Monpezat
+    literal_type: xsd:string
+  Finish (3d038d55-899f-440a-a6f7-d8483634798d)
+ Call ID: 3d038d55-899f-440a-a6f7-d8483634798d
   Args:

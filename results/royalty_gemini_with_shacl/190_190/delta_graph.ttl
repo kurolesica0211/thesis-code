@@ -2,53 +2,61 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans a :Person,
-        :Woman ;
-    :alsoKnownAs "Princesse Hélène Louise Henriette d'Orléans"^^xsd:string ;
-    :hasBirthYear 1871 ;
-    :hasBrother data:Philippe_Duke_of_Orl%C3%A9ans ;
-    :hasDeathYear 1951 ;
-    :hasFather data:Philippe_Count_of_Paris ;
-    :hasMarriageYear 1895,
-        1936 ;
-    :hasMother data:Maria_Isabel_of_Spain ;
-    :hasRelation data:Emanuele_Filiberto_of_Savoy_2nd_Duke_of_Aosta,
-        data:Otto_Campini ;
-    :hasSex data:Female ;
-    :hasSister data:Am%C3%A9lie_of_Orl%C3%A9ans,
-        data:Isabelle_Duchess_of_Guise .
-
-data:Am%C3%A9lie_of_Orl%C3%A9ans a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Emanuele_Filiberto_of_Savoy_2nd_Duke_of_Aosta a :Man,
+data:Granville_James_Leveson-Gower a :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasBirthYear 1918 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:William_Leveson-Gower ;
+    :hasMarriageYear 1958 ;
+    :hasMother data:Lady_Rose_Bowes-Lyon ;
+    :hasRelation data:Doon_Aileen_Plunket ;
+    :hasSex data:Male_Sex .
 
-data:Isabelle_Duchess_of_Guise a :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Maria_Isabel_of_Spain a :Ancestor,
+data:Aileen_Sibell_Mary_Guinness a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasFather data:Edward_Guinness ;
+    :hasSex data:Female_Sex .
 
-data:Otto_Campini a :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Philippe_Count_of_Paris a :Ancestor,
+data:Brindsley_Sheridan_Bushe_Plunket a :Ancestor,
         :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasFather data:William_Plunket ;
+    :hasSex data:Male_Sex .
 
-data:Philippe_Duke_of_Orl%C3%A9ans a :Man,
+data:Claude_Bowes-Lyon a :Ancestor,
+        :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasSex data:Male_Sex .
 
-data:Female a :Sex .
+data:Doon_Aileen_Plunket a :Person,
+        :Woman ;
+    :hasFather data:Brindsley_Sheridan_Bushe_Plunket ;
+    :hasMother data:Aileen_Sibell_Mary_Guinness ;
+    :hasSex data:Female_Sex .
 
-data:Male a :Sex .
+data:Edward_Guinness a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male_Sex .
+
+data:Lady_Rose_Bowes-Lyon a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Claude_Bowes-Lyon ;
+    :hasSex data:Female_Sex .
+
+data:William_Leveson-Gower a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male_Sex .
+
+data:William_Plunket a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male_Sex .
+
+data:Female_Sex a :Female .
+
+data:Male_Sex a :Male .
 

@@ -2,48 +2,59 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Michael_of_Greece_and_Denmark a :Man,
+data:Aimone_4th_Duke_of_Aosta a :Man,
         :Person ;
-    :hasBirthYear 1939 ;
-    :hasDeathYear 2024 ;
-    :hasFather data:Prince_Christopher_of_Greece_and_Denmark ;
-    :hasMarriageYear 1965 ;
-    :hasMother data:Princess_Francoise_dOrleans ;
-    :hasRelation data:Marina_Karella ;
-    :hasSex data:Male .
+    :isBrotherOf data:Amedeo_3rd_Duke_of_Aosta .
 
-data:Elli_Chalikiopoulos a :Ancestor,
+data:Amadeo_I_of_Spain a :Ancestor,
+        :Man,
+        :Person .
+
+data:Amedeo_3rd_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1942 ;
+    :hasFather data:Emanuele_Filiberto_2nd_Duke_of_Aosta ;
+    :hasMarriageYear 1927 ;
+    :hasMother data:H%C3%A9l%C3%A8ne_Princess_of_Orl%C3%A9ans ;
+    :hasRelation data:Anne_of_Orl%C3%A9ans_Princess .
+
+data:Anne_of_Orl%C3%A9ans_Princess a :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1986 ;
+    :hasFather data:Jean_Duke_of_Guise_Prince ;
+    :hasMother data:Isabelle_of_Orl%C3%A9ans_Princess .
 
-data:Jean_dOrleans_Duke_of_Guise a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
+data:Emanuele_Filiberto_2nd_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Amadeo_I_of_Spain ;
+    :hasMother data:Maria_Vittoria_Princess .
 
-data:King_George_I_of_Greece a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
-
-data:Marina_Karella a :Woman ;
-    :hasFather data:Theodoros_Karellas ;
-    :hasMother data:Elli_Chalikiopoulos ;
-    :hasSex data:Female .
-
-data:Prince_Christopher_of_Greece_and_Denmark a :Ancestor,
-        :Man ;
-    :hasFather data:King_George_I_of_Greece ;
-    :hasSex data:Male .
-
-data:Princess_Francoise_dOrleans a :Ancestor,
+data:H%C3%A9l%C3%A8ne_Princess_of_Orl%C3%A9ans a :Ancestor,
+        :Person,
         :Woman ;
-    :hasFather data:Jean_dOrleans_Duke_of_Guise ;
-    :hasSex data:Female .
+    :hasFather data:Philippe_of_Orl%C3%A9ans_Prince ;
+    :hasMother data:Marie_Isabelle_of_Orl%C3%A9ans_Princess .
 
-data:Theodoros_Karellas a :Ancestor,
-        :Man ;
-    :hasSex data:Male .
+data:Isabelle_of_Orl%C3%A9ans_Princess a :Ancestor,
+        :Person,
+        :Woman .
 
-data:Female a :Sex .
+data:Jean_Duke_of_Guise_Prince a :Ancestor,
+        :Man,
+        :Person .
 
-data:Male a :Sex .
+data:Maria_Vittoria_Princess a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Marie_Isabelle_of_Orl%C3%A9ans_Princess a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Philippe_of_Orl%C3%A9ans_Prince a :Ancestor,
+        :Man,
+        :Person .
 

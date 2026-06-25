@@ -85,25 +85,30 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Heinrich Prinz von Hannover (born 29 April 1961) is a German publisher.
+Dame Sarah Rose Troughton (née Colman; born 3
 Early life
 
-Heinrich is the youngest child of Ernest Augustus, Hereditary Prince of Brunswick, and his first wife Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg.
-He was born in Hanover, Lower Saxony, Germany.
-His eldest brother, Prince Ernest Augustus of Hanover, is the present head of the House of Hanover.
-Professional life
+Troughton was born in Paddington in 1953.
+She is the eldest of the five children of Sir Timothy Colman, a past Lord Lieutenant of Norfolk, and Lady Mary Cecilia Bowes-Lyon, a granddaughter of Claude Bowes-Lyon, 14th
+Her ancestor Jeremiah Colman (1777–1851) made a fortune from Colman's mustard, a business which eventually grew into Reckitt & Colman, of which her father was a director until 1989.
+Public life
 
-Heinrich founded, owns and manages the publishing company MatrixMedia Verlag in Göttingen.
-The company publishes history books, mostly on the local history of the state of Lower Saxony, of which the predecessor states were the Kingdom of Hanover and the Duchy of Brunswick, and the history of the House of Welf.
+From 1990 to 2000, Troughton was lady-in-waiting to the Duchess of Kent.
+As Lord Lieutenant, Troughton's public duties include overseeing arrangements for visits to Wiltshire by members of the Royal Family and escorting royal visitors; representing the King at events and presenting awards and medals on his behalf; liaising with the Wiltshire units of the Royal Navy, Army and Royal Air Force; leading the local magistracy as chairman of the Lord Chancellor's Advisory Committee on Justices of the Peace; and advising on nominations for national honours.
+In January 2013, Troughton was appointed a Commander of the Order of St John by the Queen, and advanced to Dame of Grace of the order in 2021.
+A BBC News article described Troughton as one of Camilla's longstanding personal friends.
+Troughton was appointed a Dame Commander of the Royal Victorian Order in the 2025 New Year Honours.
 Personal life
 
-Heinrich was in a relationship with cabaret artist Désirée Nick for 17 years.
+In 1977 she married Peter Troughton (born 1948), a member of HM Diplomatic Service, and the eldest son of Sir Charles Troughton, chairman of W H Smith.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -119,39 +124,9 @@ Heinrich was in a relationship with cabaret artist Désirée Nick for 17 years.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -166,6 +141,23 @@ Heinrich was in a relationship with cabaret artist Désirée Nick for 17 years.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -183,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -250,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -281,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -293,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -301,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -339,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -354,100 +449,227 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d94df39f-4f12-41f2-ab4a-339306ca96b1)
- Call ID: d94df39f-4f12-41f2-ab4a-339306ca96b1
-  Args:
-    source: Heinrich_Prinz_von_Hannover
-    type: :Man
-  AssignClass (19896042-7da2-4bc1-91a5-5146184e5fc6)
- Call ID: 19896042-7da2-4bc1-91a5-5146184e5fc6
-  Args:
-    source: Heinrich_Prinz_von_Hannover
-    type: :Person
-  AssignClass (3870e50c-bb8b-4086-9336-71f7479df371)
- Call ID: 3870e50c-bb8b-4086-9336-71f7479df371
-  Args:
-    type: :Ancestor
-    source: Ernest_Augustus_Hereditary_Prince_of_Brunswick
-  AssignClass (42fff7ee-7c5e-4908-9a76-7d0450523321)
- Call ID: 42fff7ee-7c5e-4908-9a76-7d0450523321
-  Args:
-    source: Ernest_Augustus_Hereditary_Prince_of_Brunswick
-    type: :Man
-  AssignClass (3f33e94e-5dfc-4b3b-b494-af8d8bb0ce36)
- Call ID: 3f33e94e-5dfc-4b3b-b494-af8d8bb0ce36
-  Args:
-    type: :Person
-    source: Ernest_Augustus_Hereditary_Prince_of_Brunswick
-  AssignClass (49c85b16-3d11-4a45-8744-7f1d05b26891)
- Call ID: 49c85b16-3d11-4a45-8744-7f1d05b26891
-  Args:
-    type: :Ancestor
-    source: Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg
-  AssignClass (7257ce4b-c779-41b5-8496-51a177061390)
- Call ID: 7257ce4b-c779-41b5-8496-51a177061390
-  Args:
-    source: Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg
-    type: :Woman
-  AssignClass (a257fd12-f003-4b5a-9043-a1d19973c0f8)
- Call ID: a257fd12-f003-4b5a-9043-a1d19973c0f8
-  Args:
-    type: :Person
-    source: Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg
-  AssignClass (6f714fb5-a119-491a-a2e5-00cdc89e48de)
- Call ID: 6f714fb5-a119-491a-a2e5-00cdc89e48de
-  Args:
-    type: :Man
-    source: Prince_Ernest_Augustus_of_Hanover
-  AssignClass (d38b9949-f1db-4037-af00-7d634d17e571)
- Call ID: d38b9949-f1db-4037-af00-7d634d17e571
-  Args:
-    source: Prince_Ernest_Augustus_of_Hanover
-    type: :Person
-  AssignClass (23d85c8c-5086-4684-a9d9-fa894254134f)
- Call ID: 23d85c8c-5086-4684-a9d9-fa894254134f
+  AssignClass (33b249cf-c755-4037-99bb-00674eaeb758)
+ Call ID: 33b249cf-c755-4037-99bb-00674eaeb758
   Args:
     type: :Woman
-    source: Désirée_Nick
-  AssignClass (e9453f2d-c86d-4e26-814e-5d5644f452cf)
- Call ID: e9453f2d-c86d-4e26-814e-5d5644f452cf
+    source: :Sarah_Troughton
+  AssignClass (79495022-075e-47d6-bb64-7ea6743a5eff)
+ Call ID: 79495022-075e-47d6-bb64-7ea6743a5eff
   Args:
+    source: :Sarah_Troughton
     type: :Person
-    source: Désirée_Nick
-  AddLiteral (666cc38e-525e-4ccd-bde1-91a3cea29530)
- Call ID: 666cc38e-525e-4ccd-bde1-91a3cea29530
+  AddLiteral (4b601553-88c2-4ca2-9142-e8d2252f07b8)
+ Call ID: 4b601553-88c2-4ca2-9142-e8d2252f07b8
   Args:
-    literal_value: 1961
-    source: Heinrich_Prinz_von_Hannover
-    literal_type: xsd:string
+    literal_value: 1953
+    source: :Sarah_Troughton
+    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddTriple (f3286d31-0666-46b7-8a0b-46a13fdbed09)
- Call ID: f3286d31-0666-46b7-8a0b-46a13fdbed09
+  AssignClass (ae1bb907-8ea6-44db-81d0-eea02712b15b)
+ Call ID: ae1bb907-8ea6-44db-81d0-eea02712b15b
   Args:
-    target: Ernest_Augustus_Hereditary_Prince_of_Brunswick
+    type: :Man
+    source: :Timothy_Colman
+  AssignClass (988e26ae-abeb-476b-a9e7-c9f3663c251e)
+ Call ID: 988e26ae-abeb-476b-a9e7-c9f3663c251e
+  Args:
+    source: :Timothy_Colman
+    type: :Person
+  AssignClass (9a469d8f-f378-41e7-bbef-66d5f4a31691)
+ Call ID: 9a469d8f-f378-41e7-bbef-66d5f4a31691
+  Args:
+    type: :Ancestor
+    source: :Timothy_Colman
+  AssignClass (3fe52d28-bf35-4e02-99e3-58acc104c271)
+ Call ID: 3fe52d28-bf35-4e02-99e3-58acc104c271
+  Args:
+    type: :Woman
+    source: :Mary_Cecilia_Bowes-Lyon
+  AssignClass (91c826ed-ffa8-4233-bb0d-60d328565790)
+ Call ID: 91c826ed-ffa8-4233-bb0d-60d328565790
+  Args:
+    type: :Person
+    source: :Mary_Cecilia_Bowes-Lyon
+  AssignClass (7ca4192f-dbf1-4ab9-b874-475daef9839e)
+ Call ID: 7ca4192f-dbf1-4ab9-b874-475daef9839e
+  Args:
+    type: :Ancestor
+    source: :Mary_Cecilia_Bowes-Lyon
+  AddTriple (4f4968b4-9b3c-45bd-9525-ec8430ddda99)
+ Call ID: 4f4968b4-9b3c-45bd-9525-ec8430ddda99
+  Args:
     relation: :hasFather
-    source: Heinrich_Prinz_von_Hannover
-  AddTriple (e9d299d6-e5a3-43b2-ac7a-c7d6b5721c5a)
- Call ID: e9d299d6-e5a3-43b2-ac7a-c7d6b5721c5a
+    source: :Sarah_Troughton
+    target: :Timothy_Colman
+  AddTriple (5adb02bb-7604-4e59-ae36-1be6bd9a24f6)
+ Call ID: 5adb02bb-7604-4e59-ae36-1be6bd9a24f6
   Args:
     relation: :hasMother
-    source: Heinrich_Prinz_von_Hannover
-    target: Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg
-  AddTriple (9aeaf58b-6156-443b-8673-15e0742c6a0a)
- Call ID: 9aeaf58b-6156-443b-8673-15e0742c6a0a
+    source: :Sarah_Troughton
+    target: :Mary_Cecilia_Bowes-Lyon
+  AssignClass (ab662ddf-1412-43d3-954a-d043a187886c)
+ Call ID: ab662ddf-1412-43d3-954a-d043a187886c
   Args:
-    relation: :hasBrother
-    source: Heinrich_Prinz_von_Hannover
-    target: Prince_Ernest_Augustus_of_Hanover
-  AddTriple (e2f48171-1f42-4482-9fd9-52fe2b9188f5)
- Call ID: e2f48171-1f42-4482-9fd9-52fe2b9188f5
+    source: :Claude_Bowes-Lyon
+    type: :Man
+  AssignClass (ab0db520-22a7-4e0b-9c05-18c82d300dcf)
+ Call ID: ab0db520-22a7-4e0b-9c05-18c82d300dcf
   Args:
+    source: :Claude_Bowes-Lyon
+    type: :Person
+  AssignClass (dbe56cc4-fcb4-475d-a11c-19c255ed1b09)
+ Call ID: dbe56cc4-fcb4-475d-a11c-19c255ed1b09
+  Args:
+    type: :Ancestor
+    source: :Claude_Bowes-Lyon
+  AddTriple (ed14a7a4-1b12-45e1-9ba5-872c7bdea021)
+ Call ID: ed14a7a4-1b12-45e1-9ba5-872c7bdea021
+  Args:
+    target: :Mary_Cecilia_Bowes-Lyon
+    source: :Claude_Bowes-Lyon
+    relation: :isAncestorOf
+  AssignClass (e69c7d5b-0c4c-4839-ae3a-84d9538656e0)
+ Call ID: e69c7d5b-0c4c-4839-ae3a-84d9538656e0
+  Args:
+    type: :Man
+    source: :Jeremiah_Colman
+  AssignClass (31ecd40e-fcdc-4caa-a869-25ec1b93d1f4)
+ Call ID: 31ecd40e-fcdc-4caa-a869-25ec1b93d1f4
+  Args:
+    source: :Jeremiah_Colman
+    type: :Person
+  AssignClass (6300bf92-4ef3-4e9a-8503-cf60cba39a16)
+ Call ID: 6300bf92-4ef3-4e9a-8503-cf60cba39a16
+  Args:
+    type: :Ancestor
+    source: :Jeremiah_Colman
+  AddLiteral (7cce9c49-de9a-41e8-b272-8d47a36b4df6)
+ Call ID: 7cce9c49-de9a-41e8-b272-8d47a36b4df6
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: :Jeremiah_Colman
+    literal_value: 1777
+  AddLiteral (7635eeb8-f0d8-48e3-ad4a-a74a9264f7e9)
+ Call ID: 7635eeb8-f0d8-48e3-ad4a-a74a9264f7e9
+  Args:
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1851
+    source: :Jeremiah_Colman
+  AddTriple (f50f5d66-5713-410b-b45d-8d23cf5a4694)
+ Call ID: f50f5d66-5713-410b-b45d-8d23cf5a4694
+  Args:
+    source: :Jeremiah_Colman
+    target: :Sarah_Troughton
+    relation: :isAncestorOf
+  AssignClass (764e0ed4-85dc-4307-bf62-63e24d7719cd)
+ Call ID: 764e0ed4-85dc-4307-bf62-63e24d7719cd
+  Args:
+    type: :Man
+    source: :Peter_Troughton
+  AssignClass (a1ef1563-04ca-430a-af3a-f838240b7cad)
+ Call ID: a1ef1563-04ca-430a-af3a-f838240b7cad
+  Args:
+    type: :Person
+    source: :Peter_Troughton
+  AddLiteral (f0d549c3-2789-44f1-9f54-3a0005411cf3)
+ Call ID: f0d549c3-2789-44f1-9f54-3a0005411cf3
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1948
+    source: :Peter_Troughton
+  AddLiteral (169a89f7-4dcd-4266-b741-9dd173fdda90)
+ Call ID: 169a89f7-4dcd-4266-b741-9dd173fdda90
+  Args:
+    source: :Sarah_Troughton
+    literal_value: 1977
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AddTriple (4d2619b5-6727-4151-9755-1ad757b1dbd1)
+ Call ID: 4d2619b5-6727-4151-9755-1ad757b1dbd1
+  Args:
+    target: :Peter_Troughton
+    source: :Sarah_Troughton
     relation: :hasRelation
-    source: Heinrich_Prinz_von_Hannover
-    target: Désirée_Nick
-  Finish (92b77a5e-2707-4bb1-8e78-50729a2a7267)
- Call ID: 92b77a5e-2707-4bb1-8e78-50729a2a7267
+  AssignClass (1037e758-4e39-4953-a16c-d5cf5d18b8ca)
+ Call ID: 1037e758-4e39-4953-a16c-d5cf5d18b8ca
   Args:
+    type: :Man
+    source: :Charles_Troughton
+  AssignClass (6379ea98-740f-47ae-baaf-cb75cbcf9c1d)
+ Call ID: 6379ea98-740f-47ae-baaf-cb75cbcf9c1d
+  Args:
+    source: :Charles_Troughton
+    type: :Person
+  AssignClass (cf7ed746-0e23-4501-b0d6-918dfd524bf9)
+ Call ID: cf7ed746-0e23-4501-b0d6-918dfd524bf9
+  Args:
+    source: :Charles_Troughton
+    type: :Ancestor
+  AddTriple (0c4fc4c0-974d-45d3-97c0-e08ac255fc67)
+ Call ID: 0c4fc4c0-974d-45d3-97c0-e08ac255fc67
+  Args:
+    relation: :hasFather
+    target: :Charles_Troughton
+    source: :Peter_Troughton
+  Finish (9acea92a-2c0c-4ef6-a025-acb5991b630b)
+ Call ID: 9acea92a-2c0c-4ef6-a025-acb5991b630b
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -520,25 +742,40 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Heinrich_Prinz_von_Hannover a :Man,
+  data:Claude_Bowes-Lyon a :Ancestor,
+          :Man,
           :Person ;
-      :hasBirthYear "1961"^^xsd:string ;
-      :hasBrother data:Prince_Ernest_Augustus_of_Hanover ;
-      :hasFather data:Ernest_Augustus_Hereditary_Prince_of_Brunswick ;
-      :hasMother data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg ;
-      :hasRelation data:D%C3%A9sir%C3%A9e_Nick .
+      :isAncestorOf data:Mary_Cecilia_Bowes-Lyon .
 
-  data:D%C3%A9sir%C3%A9e_Nick a :Person,
-          :Woman .
+  data:Jeremiah_Colman a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1777 ;
+      :hasDeathYear 1851 ;
+      :isAncestorOf data:Sarah_Troughton .
 
-  data:Ernest_Augustus_Hereditary_Prince_of_Brunswick a :Ancestor,
+  data:Charles_Troughton a :Ancestor,
           :Man,
           :Person .
 
-  data:Prince_Ernest_Augustus_of_Hanover a :Man,
+  data:Peter_Troughton a :Man,
+          :Person ;
+      :hasBirthYear 1948 ;
+      :hasFather data:Charles_Troughton .
+
+  data:Sarah_Troughton a :Person,
+          :Woman ;
+      :hasBirthYear 1953 ;
+      :hasFather data:Timothy_Colman ;
+      :hasMarriageYear 1977 ;
+      :hasMother data:Mary_Cecilia_Bowes-Lyon ;
+      :hasRelation data:Peter_Troughton .
+
+  data:Timothy_Colman a :Ancestor,
+          :Man,
           :Person .
 
-  data:Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Gl%C3%BCcksburg a :Ancestor,
+  data:Mary_Cecilia_Bowes-Lyon a :Ancestor,
           :Person,
           :Woman .
 
@@ -552,8 +789,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (3c13c4b1-9a2e-4ec0-af85-c6675032b222)
- Call ID: 3c13c4b1-9a2e-4ec0-af85-c6675032b222
+  ValidateShacl (b9f1802b-2ea7-4723-b272-a3f067badf13)
+ Call ID: b9f1802b-2ea7-4723-b272-a3f067badf13
   Args:
 
 ================================= Tool Message =================================
@@ -564,6 +801,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (a3fe9e12-1cc2-4557-9692-546d7b67cd80)
- Call ID: a3fe9e12-1cc2-4557-9692-546d7b67cd80
+  Finish (e78c31a6-8aca-4770-af8d-bf5ceab661e2)
+ Call ID: e78c31a6-8aca-4770-af8d-bf5ceab661e2
   Args:

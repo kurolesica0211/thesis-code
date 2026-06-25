@@ -2,32 +2,34 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Andreas_Felix_Paul_von_Bismarck a :Man,
+data:Louis_Ferdinand a :Man,
         :Person ;
-    :hasBirthYear 1979 ;
-    :hasDeathYear 2019 ;
-    :hasMother data:Kira-Marina_Liepsner .
+    :hasBirthYear 1907 ;
+    :isBrotherOf data:Wilhelm_of_Prussia .
 
-data:Grand_Duchess_Kira_Kirillovna_of_Russia a :Ancestor,
+data:Cecilie_of_Mecklenburg-Schwerin a :Ancestor,
         :Person,
         :Woman .
 
-data:Louis_Ferdinand_of_Prussia a :Ancestor,
+data:Crown_Prince_Wilhelm a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Wilhelm_II .
+
+data:Dorothea_von_Salviati a :Person,
+        :Woman ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1972 .
+
+data:Wilhelm_II a :Ancestor,
         :Man,
         :Person .
 
-data:Princess_Kira_of_Prussia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1943 ;
-    :hasDaughter data:Kira-Marina_Liepsner ;
-    :hasDeathYear 2004 ;
-    :hasFather data:Louis_Ferdinand_of_Prussia ;
-    :hasMother data:Grand_Duchess_Kira_Kirillovna_of_Russia .
-
-data:Kira-Marina_Liepsner a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1977 ;
-    :hasMother data:Princess_Kira_of_Prussia .
+data:Wilhelm_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1906 ;
+    :hasDeathYear 1940 ;
+    :hasFather data:Crown_Prince_Wilhelm ;
+    :hasMother data:Cecilie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Dorothea_von_Salviati .
 

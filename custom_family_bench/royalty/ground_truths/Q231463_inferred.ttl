@@ -1,0 +1,363 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Grand_Duke_Vladimir_Alexandrovich_of_Russia a :Man,
+        :Person ;
+    rdfs:label "Grand Duke Vladimir Alexandrovich of Russia"^^xsd:string ;
+    data:posIndicesFull "3163:3206"^^xsd:string,
+        "405:448"^^xsd:string,
+        "793:836"^^xsd:string ;
+    data:posIndicesPart "10123:10128"^^xsd:string,
+        "10369:10374"^^xsd:string,
+        "10407:10412"^^xsd:string,
+        "10751:10757"^^xsd:string,
+        "10899:10905"^^xsd:string,
+        "11630:11636"^^xsd:string,
+        "11973:11978"^^xsd:string,
+        "11994:11999"^^xsd:string,
+        "12050:12056"^^xsd:string,
+        "12117:12123"^^xsd:string,
+        "12235:12241"^^xsd:string,
+        "12337:12345"^^xsd:string,
+        "12409:12414"^^xsd:string,
+        "12444:12450"^^xsd:string,
+        "12862:12870"^^xsd:string,
+        "12952:12958"^^xsd:string,
+        "13074:13079"^^xsd:string,
+        "13089:13094"^^xsd:string,
+        "13420:13426"^^xsd:string,
+        "14037:14045"^^xsd:string,
+        "14222:14230"^^xsd:string,
+        "14434:14442"^^xsd:string,
+        "14496:14501"^^xsd:string,
+        "14575:14580"^^xsd:string,
+        "14696:14704"^^xsd:string,
+        "14881:14886"^^xsd:string,
+        "15140:15145"^^xsd:string,
+        "1677:1685"^^xsd:string,
+        "1918:1923"^^xsd:string,
+        "2263:2269"^^xsd:string,
+        "2903:2908"^^xsd:string,
+        "3007:3012"^^xsd:string,
+        "3372:3380"^^xsd:string,
+        "3392:3400"^^xsd:string,
+        "3467:3475"^^xsd:string,
+        "3485:3490"^^xsd:string,
+        "3521:3527"^^xsd:string,
+        "3799:3807"^^xsd:string,
+        "3866:3872"^^xsd:string,
+        "4023:4031"^^xsd:string,
+        "4131:4139"^^xsd:string,
+        "4405:4413"^^xsd:string,
+        "4570:4578"^^xsd:string,
+        "4666:4671"^^xsd:string,
+        "4879:4884"^^xsd:string,
+        "5027:5032"^^xsd:string,
+        "5097:5102"^^xsd:string,
+        "5230:5235"^^xsd:string,
+        "5384:5389"^^xsd:string,
+        "5437:5442"^^xsd:string,
+        "5836:5841"^^xsd:string,
+        "5854:5867"^^xsd:string,
+        "5871:5877"^^xsd:string,
+        "5920:5925"^^xsd:string,
+        "5958:5964"^^xsd:string,
+        "6016:6021"^^xsd:string,
+        "6103:6108"^^xsd:string,
+        "6319:6325"^^xsd:string,
+        "6391:6396"^^xsd:string,
+        "6688:6693"^^xsd:string,
+        "6707:6720"^^xsd:string,
+        "6724:6730"^^xsd:string,
+        "6799:6807"^^xsd:string,
+        "6956:6961"^^xsd:string,
+        "7028:7036"^^xsd:string,
+        "7133:7138"^^xsd:string,
+        "7318:7323"^^xsd:string,
+        "7412:7418"^^xsd:string,
+        "7439:7447"^^xsd:string,
+        "7633:7638"^^xsd:string,
+        "7758:7766"^^xsd:string,
+        "8231:8236"^^xsd:string,
+        "8764:8770"^^xsd:string,
+        "9249:9255"^^xsd:string,
+        "926:934"^^xsd:string,
+        "9329:9334"^^xsd:string,
+        "9483:9491"^^xsd:string,
+        "9558:9563"^^xsd:string,
+        "9894:9899"^^xsd:string,
+        "9948:9956"^^xsd:string ;
+    data:wdtLink wdt:Q312819 ;
+    :hasBrother data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasRelation data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isBrotherOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia ;
+    :isSiblingOf data:Grand_Duke_Vladimir_Alexandrovich_of_Russia .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Marina of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "15227:15264"^^xsd:string ;
+    data:posIndicesPart "15299:15305"^^xsd:string,
+        "15330:15336"^^xsd:string,
+        "15368:15374"^^xsd:string ;
+    data:wdtLink wdt:Q170184 ;
+    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent"^^xsd:string,
+        "Princess Marina of Greece and Denmark, The Duchess of Kent"^^xsd:string,
+        "Princess Marina, The Duchess Of Kent"^^xsd:string ;
+    :hasRelation data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Marina_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Marina_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Marina_of_Greece_and_Denmark .
+
+data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha a :Person,
+        :Woman ;
+    rdfs:label "Princess Victoria Melita of Saxe-Coburg and Gotha"^^xsd:string ;
+    data:posIndicesFull "10413:10417"^^xsd:string,
+        "11979:11983"^^xsd:string,
+        "12000:12004"^^xsd:string,
+        "12654:12659"^^xsd:string,
+        "13080:13084"^^xsd:string,
+        "14581:14585"^^xsd:string,
+        "14642:14657"^^xsd:string,
+        "14887:14891"^^xsd:string,
+        "223:227"^^xsd:string,
+        "2909:2914"^^xsd:string,
+        "2967:2971"^^xsd:string,
+        "3013:3017"^^xsd:string,
+        "3169:3173"^^xsd:string,
+        "3535:3539"^^xsd:string,
+        "3675:3679"^^xsd:string,
+        "411:415"^^xsd:string,
+        "4672:4676"^^xsd:string,
+        "4885:4889"^^xsd:string,
+        "5842:5846"^^xsd:string,
+        "6109:6113"^^xsd:string,
+        "621:625"^^xsd:string,
+        "6694:6698"^^xsd:string,
+        "6962:6966"^^xsd:string,
+        "7639:7644"^^xsd:string,
+        "799:803"^^xsd:string,
+        "8237:8241"^^xsd:string,
+        "8476:8480"^^xsd:string,
+        "9564:9568"^^xsd:string,
+        "9900:9904"^^xsd:string ;
+    data:posIndicesPart "10773:10781"^^xsd:string,
+        "13882:13890"^^xsd:string,
+        "1553:1561"^^xsd:string,
+        "2518:2526"^^xsd:string,
+        "5500:5508"^^xsd:string ;
+    data:wdtLink wdt:Q164500 ;
+    :alsoKnownAs "Ducky"^^xsd:string,
+        "Grand Duchess Victoria Feodorovna of Russia"^^xsd:string,
+        "Princess Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Feodorovna of Russia"^^xsd:string,
+        "Victoria Melita"^^xsd:string,
+        "Victoria Melita of Edinburgh"^^xsd:string,
+        "Victoria Melita of Saxe-Coburg-Gotha"^^xsd:string,
+        "Victoria Melita, Grand Duchess of Hesse and the Rhine"^^xsd:string ;
+    :hasRelation data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isBloodrelationOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSiblingOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha ;
+    :isSisterOf data:Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Frederick Francis II"^^xsd:string ;
+    data:posIndicesFull "2939:2959"^^xsd:string,
+        "2939:2995"^^xsd:string ;
+    data:wdtLink wdt:Q57976 ;
+    :alsoKnownAs "Frederick Francis II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II, Grand Duke of Mecklenburg-Schwerin"^^xsd:string,
+        "Friedrich Franz II."^^xsd:string ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:male ;
+    :isAncestorOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isFatherOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isUncleOf data:Duchess_Marie_of_Mecklenburg-Schwerin .
+
+data:Princess_Augusta_Reuss_of_Köstritz a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Augusta Reuss of Köstritz"^^xsd:string ;
+    data:posIndicesFull "291:325"^^xsd:string,
+        "3062:3096"^^xsd:string ;
+    data:posIndicesPart "10773:10781"^^xsd:string,
+        "13882:13890"^^xsd:string,
+        "1553:1561"^^xsd:string,
+        "2518:2526"^^xsd:string,
+        "4857:4865"^^xsd:string,
+        "5704:5712"^^xsd:string ;
+    data:wdtLink wdt:Q63095 ;
+    :hasChild data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :hasDaughter data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isAncestorOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isAuntOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isMotherOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isSisterOf data:Princess_Augusta_Reuss_of_Köstritz .
+
+data:Duchess_Marie_of_Mecklenburg-Schwerin a :Person,
+        :Woman ;
+    rdfs:label "Duchess Marie of Mecklenburg-Schwerin"^^xsd:string ;
+    data:posIndicesFull "0:38"^^xsd:string,
+        "118:155"^^xsd:string,
+        "126:155"^^xsd:string,
+        "14:38"^^xsd:string ;
+    data:posIndicesPart "10129:10136"^^xsd:string,
+        "10222:10227"^^xsd:string,
+        "10299:10304"^^xsd:string,
+        "10375:10382"^^xsd:string,
+        "10465:10470"^^xsd:string,
+        "10610:10615"^^xsd:string,
+        "10677:10682"^^xsd:string,
+        "10719:10724"^^xsd:string,
+        "11130:11135"^^xsd:string,
+        "11347:11352"^^xsd:string,
+        "11424:11429"^^xsd:string,
+        "11482:11487"^^xsd:string,
+        "11566:11571"^^xsd:string,
+        "12058:12063"^^xsd:string,
+        "1220:1225"^^xsd:string,
+        "12415:12422"^^xsd:string,
+        "12780:12785"^^xsd:string,
+        "13095:13102"^^xsd:string,
+        "13222:13227"^^xsd:string,
+        "13438:13445"^^xsd:string,
+        "13773:13778"^^xsd:string,
+        "14502:14509"^^xsd:string,
+        "14545:14550"^^xsd:string,
+        "14719:14726"^^xsd:string,
+        "1506:1511"^^xsd:string,
+        "15146:15153"^^xsd:string,
+        "15174:15179"^^xsd:string,
+        "15206:15211"^^xsd:string,
+        "15288:15293"^^xsd:string,
+        "15402:15407"^^xsd:string,
+        "1567:1572"^^xsd:string,
+        "15694:15699"^^xsd:string,
+        "15701:15706"^^xsd:string,
+        "1651:1656"^^xsd:string,
+        "1713:1718"^^xsd:string,
+        "1924:1931"^^xsd:string,
+        "2025:2030"^^xsd:string,
+        "2149:2154"^^xsd:string,
+        "2375:2380"^^xsd:string,
+        "250:261"^^xsd:string,
+        "2544:2549"^^xsd:string,
+        "2569:2574"^^xsd:string,
+        "2618:2623"^^xsd:string,
+        "262:270"^^xsd:string,
+        "2680:2685"^^xsd:string,
+        "2761:2766"^^xsd:string,
+        "2840:2845"^^xsd:string,
+        "2888:2895"^^xsd:string,
+        "2924:2935"^^xsd:string,
+        "3021:3032"^^xsd:string,
+        "3033:3041"^^xsd:string,
+        "3149:3154"^^xsd:string,
+        "3382:3387"^^xsd:string,
+        "3491:3498"^^xsd:string,
+        "3740:3745"^^xsd:string,
+        "3789:3794"^^xsd:string,
+        "4013:4018"^^xsd:string,
+        "4057:4062"^^xsd:string,
+        "4197:4202"^^xsd:string,
+        "4434:4439"^^xsd:string,
+        "4506:4511"^^xsd:string,
+        "4585:4590"^^xsd:string,
+        "4723:4728"^^xsd:string,
+        "4733:4738"^^xsd:string,
+        "5103:5110"^^xsd:string,
+        "5283:5288"^^xsd:string,
+        "5412:5417"^^xsd:string,
+        "542:547"^^xsd:string,
+        "5443:5450"^^xsd:string,
+        "5755:5760"^^xsd:string,
+        "5812:5817"^^xsd:string,
+        "5879:5884"^^xsd:string,
+        "5926:5933"^^xsd:string,
+        "6022:6029"^^xsd:string,
+        "6050:6055"^^xsd:string,
+        "6236:6241"^^xsd:string,
+        "6336:6341"^^xsd:string,
+        "6397:6404"^^xsd:string,
+        "6524:6529"^^xsd:string,
+        "6732:6737"^^xsd:string,
+        "717:722"^^xsd:string,
+        "7324:7331"^^xsd:string,
+        "7420:7425"^^xsd:string,
+        "7508:7513"^^xsd:string,
+        "7734:7739"^^xsd:string,
+        "7965:7970"^^xsd:string,
+        "8030:8035"^^xsd:string,
+        "8509:8514"^^xsd:string,
+        "8610:8615"^^xsd:string,
+        "8647:8652"^^xsd:string,
+        "8888:8893"^^xsd:string,
+        "8956:8961"^^xsd:string,
+        "9335:9342"^^xsd:string,
+        "9493:9498"^^xsd:string,
+        "9837:9842"^^xsd:string ;
+    data:wdtLink wdt:Q231463 ;
+    :alsoKnownAs "Grand Duchess Maria Pavlovna of Russia"^^xsd:string,
+        "Maria Pavlovna of Russia"^^xsd:string,
+        "Maria Pavlovna the Elder"^^xsd:string,
+        "Marie of Mecklenburg-Schwerin"^^xsd:string ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasRelation data:Duchess_Marie_of_Mecklenburg-Schwerin,
+        data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isDaughterOf data:Frederick_Francis_II,
+        data:Princess_Augusta_Reuss_of_Köstritz ;
+    :isSiblingOf data:Duchess_Marie_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Duchess_Marie_of_Mecklenburg-Schwerin .
+

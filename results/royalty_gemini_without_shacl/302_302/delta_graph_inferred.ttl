@@ -1,0 +1,275 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrincessElizabethCountessOfToerringJettenbach a :Person,
+        :Woman ;
+    :hasRelation data:PrincessElizabethCountessOfToerringJettenbach ;
+    :hasSister data:PrincessElizabethCountessOfToerringJettenbach ;
+    :isAuntOf data:PrinceNikolaOfYugoslavia ;
+    :isBloodrelationOf data:PrincessElizabethCountessOfToerringJettenbach ;
+    :isSiblingOf data:PrincessElizabethCountessOfToerringJettenbach ;
+    :isSisterOf data:PrincessElizabethCountessOfToerringJettenbach .
+
+data:PrincessMarinaDuchessOfKent a :Person,
+        :Woman ;
+    :hasRelation data:PrincessMarinaDuchessOfKent ;
+    :hasSister data:PrincessMarinaDuchessOfKent ;
+    :isAuntOf data:PrinceNikolaOfYugoslavia ;
+    :isBloodrelationOf data:PrincessMarinaDuchessOfKent ;
+    :isSiblingOf data:PrincessMarinaDuchessOfKent ;
+    :isSisterOf data:PrincessMarinaDuchessOfKent .
+
+data:ArsenKaradjordjevic a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ArsenKaradjordjevic ;
+    :hasChild data:PrincePaulOfYugoslavia ;
+    :hasRelation data:ArsenKaradjordjevic,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceAlexander,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato,
+        data:PrincessElizabeth,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSon data:PrincePaulOfYugoslavia ;
+    :isAncestorOf data:PrinceNikolaOfYugoslavia,
+        data:PrincePaulOfYugoslavia ;
+    :isBloodrelationOf data:ArsenKaradjordjevic ;
+    :isBrotherOf data:ArsenKaradjordjevic ;
+    :isFatherOf data:PrincePaulOfYugoslavia ;
+    :isParentOf data:PrincePaulOfYugoslavia ;
+    :isSiblingOf data:ArsenKaradjordjevic ;
+    :isUncleOf data:PrincePaulOfYugoslavia .
+
+data:GrandDuchessElenaVladimirovnaOfRussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasDaughter data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasRelation data:ArsenKaradjordjevic,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceAlexander,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato,
+        data:PrincessElizabeth,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSister data:GrandDuchessElenaVladimirovnaOfRussia ;
+    :isAncestorOf data:PrinceNikolaOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :isAuntOf data:PrincessOlgaOfGreeceAndDenmark ;
+    :isBloodrelationOf data:GrandDuchessElenaVladimirovnaOfRussia ;
+    :isMotherOf data:PrincessOlgaOfGreeceAndDenmark ;
+    :isParentOf data:PrincessOlgaOfGreeceAndDenmark ;
+    :isSiblingOf data:GrandDuchessElenaVladimirovnaOfRussia ;
+    :isSisterOf data:GrandDuchessElenaVladimirovnaOfRussia .
+
+data:PrinceNicholasOfGreeceAndDenmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceNicholasOfGreeceAndDenmark ;
+    :hasChild data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasDaughter data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasRelation data:ArsenKaradjordjevic,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceAlexander,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato,
+        data:PrincessElizabeth,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :isAncestorOf data:PrinceNikolaOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :isBloodrelationOf data:PrinceNicholasOfGreeceAndDenmark ;
+    :isBrotherOf data:PrinceNicholasOfGreeceAndDenmark ;
+    :isFatherOf data:PrincessOlgaOfGreeceAndDenmark ;
+    :isParentOf data:PrincessOlgaOfGreeceAndDenmark ;
+    :isSiblingOf data:PrinceNicholasOfGreeceAndDenmark ;
+    :isUncleOf data:PrincessOlgaOfGreeceAndDenmark .
+
+data:PrincessAuroraPavlovnaDemidovaDiSanDonato a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincePaulOfYugoslavia ;
+    :hasRelation data:ArsenKaradjordjevic,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceAlexander,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato,
+        data:PrincessElizabeth,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSister data:PrincessAuroraPavlovnaDemidovaDiSanDonato ;
+    :hasSon data:PrincePaulOfYugoslavia ;
+    :isAncestorOf data:PrinceNikolaOfYugoslavia,
+        data:PrincePaulOfYugoslavia ;
+    :isAuntOf data:PrincePaulOfYugoslavia ;
+    :isBloodrelationOf data:PrincessAuroraPavlovnaDemidovaDiSanDonato ;
+    :isMotherOf data:PrincePaulOfYugoslavia ;
+    :isParentOf data:PrincePaulOfYugoslavia ;
+    :isSiblingOf data:PrincessAuroraPavlovnaDemidovaDiSanDonato ;
+    :isSisterOf data:PrincessAuroraPavlovnaDemidovaDiSanDonato .
+
+data:PrinceAlexander a :Man,
+        :Person ;
+    :hasBrother data:PrinceAlexander,
+        data:PrinceNikolaOfYugoslavia ;
+    :hasRelation data:ArsenKaradjordjevic,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceAlexander,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato,
+        data:PrincessElizabeth,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSister data:PrincessElizabeth ;
+    :isBloodrelationOf data:PrinceAlexander,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincessElizabeth ;
+    :isBrotherOf data:PrinceAlexander,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincessElizabeth ;
+    :isSiblingOf data:PrinceAlexander,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincessElizabeth .
+
+data:PrincessElizabeth a :Person,
+        :Woman ;
+    :hasBrother data:PrinceAlexander,
+        data:PrinceNikolaOfYugoslavia ;
+    :hasRelation data:ArsenKaradjordjevic,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceAlexander,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato,
+        data:PrincessElizabeth,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSister data:PrincessElizabeth ;
+    :isBloodrelationOf data:PrinceAlexander,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincessElizabeth ;
+    :isSiblingOf data:PrinceAlexander,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincessElizabeth ;
+    :isSisterOf data:PrinceAlexander,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincessElizabeth .
+
+data:PrincePaulOfYugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:ArsenKaradjordjevic,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato ;
+    :hasBrother data:PrincePaulOfYugoslavia ;
+    :hasChild data:PrinceNikolaOfYugoslavia ;
+    :hasFather data:ArsenKaradjordjevic ;
+    :hasMother data:PrincessAuroraPavlovnaDemidovaDiSanDonato ;
+    :hasParent data:ArsenKaradjordjevic,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato ;
+    :hasRelation data:ArsenKaradjordjevic,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceAlexander,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato,
+        data:PrincessElizabeth,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSon data:PrinceNikolaOfYugoslavia ;
+    :isAncestorOf data:PrinceNikolaOfYugoslavia ;
+    :isBloodrelationOf data:PrincePaulOfYugoslavia ;
+    :isBrotherOf data:PrincePaulOfYugoslavia ;
+    :isChildOf data:ArsenKaradjordjevic,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato ;
+    :isFatherOf data:PrinceNikolaOfYugoslavia ;
+    :isParentOf data:PrinceNikolaOfYugoslavia ;
+    :isSiblingOf data:PrincePaulOfYugoslavia ;
+    :isSonOf data:ArsenKaradjordjevic,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato ;
+    :isUncleOf data:PrinceNikolaOfYugoslavia .
+
+data:PrincessOlgaOfGreeceAndDenmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceNicholasOfGreeceAndDenmark ;
+    :hasChild data:PrinceNikolaOfYugoslavia ;
+    :hasFather data:PrinceNicholasOfGreeceAndDenmark ;
+    :hasMother data:GrandDuchessElenaVladimirovnaOfRussia ;
+    :hasParent data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceNicholasOfGreeceAndDenmark ;
+    :hasRelation data:ArsenKaradjordjevic,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceAlexander,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato,
+        data:PrincessElizabeth,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSister data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSon data:PrinceNikolaOfYugoslavia ;
+    :isAncestorOf data:PrinceNikolaOfYugoslavia ;
+    :isAuntOf data:PrinceNikolaOfYugoslavia ;
+    :isBloodrelationOf data:PrincessOlgaOfGreeceAndDenmark ;
+    :isChildOf data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceNicholasOfGreeceAndDenmark ;
+    :isDaughterOf data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceNicholasOfGreeceAndDenmark ;
+    :isMotherOf data:PrinceNikolaOfYugoslavia ;
+    :isParentOf data:PrinceNikolaOfYugoslavia ;
+    :isSiblingOf data:PrincessOlgaOfGreeceAndDenmark ;
+    :isSisterOf data:PrincessOlgaOfGreeceAndDenmark .
+
+data:PrinceNikolaOfYugoslavia a :Man,
+        :Person ;
+    :alsoKnownAs "Nikola Karađorđević"^^xsd:string,
+        "Prince Nicholas"^^xsd:string ;
+    :hasAncestor data:ArsenKaradjordjevic,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasBirthYear 1928 ;
+    :hasBrother data:PrinceAlexander,
+        data:PrinceNikolaOfYugoslavia ;
+    :hasDeathYear 1954 ;
+    :hasFather data:PrincePaulOfYugoslavia ;
+    :hasMother data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasParent data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasRelation data:ArsenKaradjordjevic,
+        data:GrandDuchessElenaVladimirovnaOfRussia,
+        data:PrinceAlexander,
+        data:PrinceNicholasOfGreeceAndDenmark,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincePaulOfYugoslavia,
+        data:PrincessAuroraPavlovnaDemidovaDiSanDonato,
+        data:PrincessElizabeth,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :hasSister data:PrincessElizabeth ;
+    :isBloodrelationOf data:PrinceAlexander,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincessElizabeth ;
+    :isBrotherOf data:PrinceAlexander,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincessElizabeth ;
+    :isChildOf data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :isSiblingOf data:PrinceAlexander,
+        data:PrinceNikolaOfYugoslavia,
+        data:PrincessElizabeth ;
+    :isSonOf data:PrincePaulOfYugoslavia,
+        data:PrincessOlgaOfGreeceAndDenmark ;
+    :knownAs "Nicky"^^xsd:string .
+

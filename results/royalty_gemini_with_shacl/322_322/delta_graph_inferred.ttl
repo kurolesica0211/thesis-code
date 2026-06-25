@@ -1,0 +1,528 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Borwin_Duke_of_Mecklenburg a :Man,
+        :Person ;
+    :hasBrother data:Borwin_Duke_of_Mecklenburg ;
+    :hasRelation data:Borwin_Duke_of_Mecklenburg ;
+    :isBloodrelationOf data:Borwin_Duke_of_Mecklenburg ;
+    :isBrotherOf data:Borwin_Duke_of_Mecklenburg ;
+    :isSiblingOf data:Borwin_Duke_of_Mecklenburg .
+
+data:Louis_IV_Grand_Duke_of_Hesse_and_by_Rhine a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Louis_IV_Grand_Duke_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Louis_IV_Grand_Duke_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Louis_IV_Grand_Duke_of_Hesse_and_by_Rhine ;
+    :isBrotherOf data:Louis_IV_Grand_Duke_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Louis_IV_Grand_Duke_of_Hesse_and_by_Rhine .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine ;
+    :hasDaughter data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine,
+        data:Queen_Victoria ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine ;
+    :isAuntOf data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isMotherOf data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine ;
+    :isParentOf data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Queen_Victoria ;
+    :hasMother data:Queen_Victoria ;
+    :hasParent data:Queen_Victoria ;
+    :hasRelation data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine,
+        data:Queen_Victoria ;
+    :hasSister data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine ;
+    :isBloodrelationOf data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine ;
+    :isChildOf data:Queen_Victoria ;
+    :isDaughterOf data:Queen_Victoria ;
+    :isSiblingOf data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine ;
+    :isSisterOf data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine .
+
+data:Sigismund_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Sigismund_of_Prussia ;
+    :hasChild data:Barbara_of_Prussia ;
+    :hasDaughter data:Barbara_of_Prussia ;
+    :hasRelation data:Barbara_of_Prussia,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Sigismund_of_Prussia ;
+    :isAncestorOf data:Barbara_of_Prussia,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isBloodrelationOf data:Sigismund_of_Prussia ;
+    :isBrotherOf data:Sigismund_of_Prussia ;
+    :isFatherOf data:Barbara_of_Prussia ;
+    :isParentOf data:Barbara_of_Prussia ;
+    :isSiblingOf data:Sigismund_of_Prussia ;
+    :isUncleOf data:Barbara_of_Prussia .
+
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasChild data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasSon data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isBloodrelationOf data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isUncleOf data:Christian_Louis_of_Mecklenburg-Schwerin .
+
+data:Ernst_II_of_Saxe-Altenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernst_II_of_Saxe-Altenburg ;
+    :hasChild data:Charlotte_of_Saxe-Altenburg ;
+    :hasDaughter data:Charlotte_of_Saxe-Altenburg ;
+    :hasRelation data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Ernst_II_of_Saxe-Altenburg ;
+    :isAncestorOf data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isBloodrelationOf data:Ernst_II_of_Saxe-Altenburg ;
+    :isBrotherOf data:Ernst_II_of_Saxe-Altenburg ;
+    :isFatherOf data:Charlotte_of_Saxe-Altenburg ;
+    :isParentOf data:Charlotte_of_Saxe-Altenburg ;
+    :isSiblingOf data:Ernst_II_of_Saxe-Altenburg ;
+    :isUncleOf data:Charlotte_of_Saxe-Altenburg .
+
+data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasBrother data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasDeathYear 2001 ;
+    :hasRelation data:Alexandra_of_Hanover_and_Cumberland,
+        data:Christian_IX_of_Denmark,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Louise_of_Hesse-Kassel,
+        data:Thyra_of_Denmark ;
+    :isBloodrelationOf data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isUncleOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg .
+
+data:Louise_of_Hesse-Kassel a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Thyra_of_Denmark ;
+    :hasDaughter data:Thyra_of_Denmark ;
+    :hasRelation data:Alexandra_of_Hanover_and_Cumberland,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Louise_of_Hesse-Kassel,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Louise_of_Hesse-Kassel ;
+    :isAncestorOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Thyra_of_Denmark ;
+    :isAuntOf data:Thyra_of_Denmark ;
+    :isBloodrelationOf data:Louise_of_Hesse-Kassel ;
+    :isMotherOf data:Thyra_of_Denmark ;
+    :isParentOf data:Thyra_of_Denmark ;
+    :isSiblingOf data:Louise_of_Hesse-Kassel ;
+    :isSisterOf data:Louise_of_Hesse-Kassel .
+
+data:Charlotte_of_Saxe-Altenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Ernst_II_of_Saxe-Altenburg ;
+    :hasChild data:Barbara_of_Prussia ;
+    :hasDaughter data:Barbara_of_Prussia ;
+    :hasFather data:Ernst_II_of_Saxe-Altenburg ;
+    :hasParent data:Ernst_II_of_Saxe-Altenburg ;
+    :hasRelation data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Ernst_II_of_Saxe-Altenburg ;
+    :hasSister data:Charlotte_of_Saxe-Altenburg ;
+    :isAncestorOf data:Barbara_of_Prussia,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isAuntOf data:Barbara_of_Prussia ;
+    :isBloodrelationOf data:Charlotte_of_Saxe-Altenburg ;
+    :isChildOf data:Ernst_II_of_Saxe-Altenburg ;
+    :isDaughterOf data:Ernst_II_of_Saxe-Altenburg ;
+    :isMotherOf data:Barbara_of_Prussia ;
+    :isParentOf data:Barbara_of_Prussia ;
+    :isSiblingOf data:Charlotte_of_Saxe-Altenburg ;
+    :isSisterOf data:Charlotte_of_Saxe-Altenburg .
+
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasChild data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :hasDaughter data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :hasRelation data:Alexandra_of_Hanover_and_Cumberland,
+        data:Christian_IX_of_Denmark,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Thyra_of_Denmark ;
+    :isAncestorOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Thyra_of_Denmark ;
+    :isBloodrelationOf data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isBrotherOf data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isFatherOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :isParentOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :isSiblingOf data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isUncleOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark .
+
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasChild data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :hasDaughter data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :hasRelation data:Alexandra_of_Hanover_and_Cumberland,
+        data:Christian_IX_of_Denmark,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Thyra_of_Denmark ;
+    :isAncestorOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Thyra_of_Denmark ;
+    :isBloodrelationOf data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isBrotherOf data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isFatherOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :isParentOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :isSiblingOf data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :isUncleOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark .
+
+data:Barbara_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Charlotte_of_Saxe-Altenburg,
+        data:Ernst_II_of_Saxe-Altenburg,
+        data:Sigismund_of_Prussia ;
+    :hasBirthYear 1920 ;
+    :hasChild data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :hasDaughter data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :hasDeathYear 1994 ;
+    :hasFather data:Sigismund_of_Prussia ;
+    :hasMother data:Charlotte_of_Saxe-Altenburg ;
+    :hasParent data:Charlotte_of_Saxe-Altenburg,
+        data:Sigismund_of_Prussia ;
+    :hasRelation data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Ernst_II_of_Saxe-Altenburg,
+        data:Sigismund_of_Prussia ;
+    :hasSister data:Barbara_of_Prussia ;
+    :isAncestorOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isAuntOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isBloodrelationOf data:Barbara_of_Prussia ;
+    :isChildOf data:Charlotte_of_Saxe-Altenburg,
+        data:Sigismund_of_Prussia ;
+    :isDaughterOf data:Charlotte_of_Saxe-Altenburg,
+        data:Sigismund_of_Prussia ;
+    :isMotherOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isParentOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isSiblingOf data:Barbara_of_Prussia ;
+    :isSisterOf data:Barbara_of_Prussia .
+
+data:Alexandra_of_Hanover_and_Cumberland a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Louise_of_Hesse-Kassel,
+        data:Thyra_of_Denmark ;
+    :hasChild data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :hasFather data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMother data:Thyra_of_Denmark ;
+    :hasParent data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :hasRelation data:Alexandra_of_Hanover_and_Cumberland,
+        data:Christian_IX_of_Denmark,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Louise_of_Hesse-Kassel,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :hasSon data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :isAncestorOf data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isAuntOf data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :isChildOf data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isDaughterOf data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Thyra_of_Denmark ;
+    :isMotherOf data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :isParentOf data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :isSisterOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark .
+
+data:Thyra_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Louise_of_Hesse-Kassel ;
+    :hasChild data:Alexandra_of_Hanover_and_Cumberland ;
+    :hasDaughter data:Alexandra_of_Hanover_and_Cumberland ;
+    :hasFather data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover ;
+    :hasMother data:Louise_of_Hesse-Kassel ;
+    :hasParent data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Louise_of_Hesse-Kassel ;
+    :hasRelation data:Alexandra_of_Hanover_and_Cumberland,
+        data:Christian_IX_of_Denmark,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Louise_of_Hesse-Kassel,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :isAncestorOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isAuntOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :isBloodrelationOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :isChildOf data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Louise_of_Hesse-Kassel ;
+    :isDaughterOf data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Louise_of_Hesse-Kassel ;
+    :isMotherOf data:Alexandra_of_Hanover_and_Cumberland ;
+    :isParentOf data:Alexandra_of_Hanover_and_Cumberland ;
+    :isSiblingOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark ;
+    :isSisterOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Thyra_of_Denmark .
+
+data:Donata_of_Mecklenburg a :Person,
+        :Woman ;
+    :hasAncestor data:Alexandra_of_Hanover_and_Cumberland,
+        data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Christian_IX_of_Denmark,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Ernst_II_of_Saxe-Altenburg,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Louise_of_Hesse-Kassel,
+        data:Sigismund_of_Prussia,
+        data:Thyra_of_Denmark ;
+    :hasBirthYear 1956 ;
+    :hasFather data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :hasMother data:Barbara_of_Prussia ;
+    :hasParent data:Barbara_of_Prussia,
+        data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandra_of_Hanover_and_Cumberland,
+        data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Christian_IX_of_Denmark,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Ernst_II_of_Saxe-Altenburg,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Louise_of_Hesse-Kassel,
+        data:Sigismund_of_Prussia,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isBloodrelationOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isChildOf data:Barbara_of_Prussia,
+        data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :isDaughterOf data:Barbara_of_Prussia,
+        data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isSisterOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg .
+
+data:Edwina_of_Mecklenburg a :Person,
+        :Woman ;
+    :hasAncestor data:Alexandra_of_Hanover_and_Cumberland,
+        data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Christian_IX_of_Denmark,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Ernst_II_of_Saxe-Altenburg,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Louise_of_Hesse-Kassel,
+        data:Sigismund_of_Prussia,
+        data:Thyra_of_Denmark ;
+    :hasBirthYear 1960 ;
+    :hasFather data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :hasMother data:Barbara_of_Prussia ;
+    :hasParent data:Barbara_of_Prussia,
+        data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandra_of_Hanover_and_Cumberland,
+        data:Barbara_of_Prussia,
+        data:Charlotte_of_Saxe-Altenburg,
+        data:Christian_IX_of_Denmark,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Ernst_II_of_Saxe-Altenburg,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Louise_of_Hesse-Kassel,
+        data:Sigismund_of_Prussia,
+        data:Thyra_of_Denmark ;
+    :hasSister data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isBloodrelationOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isChildOf data:Barbara_of_Prussia,
+        data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :isDaughterOf data:Barbara_of_Prussia,
+        data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :isSiblingOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isSisterOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg .
+
+data:Christian_Louis_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Alexandra_of_Hanover_and_Cumberland,
+        data:Christian_IX_of_Denmark,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Louise_of_Hesse-Kassel,
+        data:Thyra_of_Denmark ;
+    :hasBrother data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :hasChild data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :hasDaughter data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :hasFather data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasMother data:Alexandra_of_Hanover_and_Cumberland ;
+    :hasParent data:Alexandra_of_Hanover_and_Cumberland,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasRelation data:Alexandra_of_Hanover_and_Cumberland,
+        data:Christian_IX_of_Denmark,
+        data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg,
+        data:Ernest_Augustus_Crown_Prince_of_Hanover,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin,
+        data:Louise_of_Hesse-Kassel,
+        data:Thyra_of_Denmark ;
+    :isAncestorOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isBloodrelationOf data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isBrotherOf data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isChildOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isFatherOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isParentOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg ;
+    :isSiblingOf data:Christian_Louis_of_Mecklenburg-Schwerin,
+        data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin ;
+    :isSonOf data:Alexandra_of_Hanover_and_Cumberland,
+        data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :isUncleOf data:Donata_of_Mecklenburg,
+        data:Edwina_of_Mecklenburg .
+

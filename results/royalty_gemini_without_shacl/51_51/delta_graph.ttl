@@ -2,32 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Anne a :Woman ;
+data:Peter_Phillips a :Man,
+        :Person ;
+    :isChildOf data:Anne_Princess_Royal,
+        data:Mark_Phillips .
+
+data:Zara_Tindall a :Person,
+        :Woman ;
+    :isChildOf data:Anne_Princess_Royal,
+        data:Mark_Phillips .
+
+data:King_Charles_III a :Man,
+        :Person .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Timothy_Laurence a :Man,
+        :Person .
+
+data:Anne_Princess_Royal a :Person,
+        :Woman ;
     :hasBirthYear 1950 ;
-    :hasBrother data:CharlesIII ;
-    :hasChild data:PeterPhillips,
-        data:ZaraTindall ;
-    :hasFather data:Philip ;
-    :hasMarriageYear 1973,
-        1992 ;
-    :hasMother data:ElizabethII ;
-    :hasRelation data:MarkPhillips,
-        data:TimothyLaurence .
+    :hasFather data:Prince_Philip ;
+    :hasMother data:Queen_Elizabeth_II ;
+    :hasRelation data:Mark_Phillips,
+        data:Timothy_Laurence ;
+    :isSisterOf data:King_Charles_III .
 
-data:CharlesIII a :Man .
-
-data:ElizabethII a :Woman .
-
-data:MarkPhillips a :Man ;
-    :hasChild data:PeterPhillips,
-        data:ZaraTindall ;
-    :hasDeathYear 1992 .
-
-data:Philip a :Man .
-
-data:TimothyLaurence a :Man .
-
-data:PeterPhillips a :Man .
-
-data:ZaraTindall a :Woman .
+data:Mark_Phillips a :Man,
+        :Person .
 

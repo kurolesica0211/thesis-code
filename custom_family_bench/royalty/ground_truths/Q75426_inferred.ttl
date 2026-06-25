@@ -1,0 +1,130 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:George_V a :Man,
+        :Person ;
+    rdfs:label "George V"^^xsd:string ;
+    data:posIndicesFull "245:258"^^xsd:string,
+        "250:258"^^xsd:string ;
+    data:posIndicesPart "1590:1596"^^xsd:string ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert"^^xsd:string,
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha"^^xsd:string,
+        "George Frederick Ernest Albert Windsor"^^xsd:string,
+        "George Saxe-Coburg-Gotha"^^xsd:string,
+        "George V (King of Great Britain)"^^xsd:string,
+        "George V of the United Kingdom"^^xsd:string,
+        "George Windsor"^^xsd:string,
+        "King George V"^^xsd:string ;
+    :hasBrother data:George_V ;
+    :hasRelation data:George_V ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_V ;
+    :isBrotherOf data:George_V ;
+    :isSiblingOf data:George_V .
+
+data:Marie_Christine-_Princess_Michael_of_Kent a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Marie Christine, Princess Michael of Kent"^^xsd:string ;
+    data:posIndicesFull "194:218"^^xsd:string,
+        "499:523"^^xsd:string ;
+    data:posIndicesPart "1256:1264"^^xsd:string,
+        "708:716"^^xsd:string ;
+    data:wdtLink wdt:Q93535 ;
+    :alsoKnownAs "Marie Christine von Reibnitz"^^xsd:string,
+        "Marie-Christine Agnes Hedwig Ida Baronin von Reibnitz"^^xsd:string,
+        "Princess Michael of Kent"^^xsd:string ;
+    :hasChild data:Lady_Gabriella_Windsor ;
+    :hasDaughter data:Lady_Gabriella_Windsor ;
+    :hasRelation data:Lady_Gabriella_Windsor,
+        data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasSex data:female ;
+    :hasSister data:Marie_Christine-_Princess_Michael_of_Kent ;
+    :isAncestorOf data:Lady_Gabriella_Windsor ;
+    :isAuntOf data:Lady_Gabriella_Windsor ;
+    :isBloodrelationOf data:Marie_Christine-_Princess_Michael_of_Kent ;
+    :isMotherOf data:Lady_Gabriella_Windsor ;
+    :isParentOf data:Lady_Gabriella_Windsor ;
+    :isSiblingOf data:Marie_Christine-_Princess_Michael_of_Kent ;
+    :isSisterOf data:Marie_Christine-_Princess_Michael_of_Kent .
+
+data:Prince_Michael_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Michael of Kent"^^xsd:string ;
+    data:posIndicesFull "194:218"^^xsd:string,
+        "499:523"^^xsd:string ;
+    data:posIndicesPart "1682:1688"^^xsd:string,
+        "666:672"^^xsd:string ;
+    data:wdtLink wdt:Q313752 ;
+    :alsoKnownAs "Michael George Charles Franklin"^^xsd:string,
+        "Prince Michael George Charles Franklin of Kent"^^xsd:string ;
+    :hasBrother data:Prince_Michael_of_Kent ;
+    :hasChild data:Lady_Gabriella_Windsor ;
+    :hasDaughter data:Lady_Gabriella_Windsor ;
+    :hasRelation data:Lady_Gabriella_Windsor,
+        data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasSex data:male ;
+    :isAncestorOf data:Lady_Gabriella_Windsor ;
+    :isBloodrelationOf data:Prince_Michael_of_Kent ;
+    :isBrotherOf data:Prince_Michael_of_Kent ;
+    :isFatherOf data:Lady_Gabriella_Windsor ;
+    :isParentOf data:Lady_Gabriella_Windsor ;
+    :isSiblingOf data:Prince_Michael_of_Kent ;
+    :isUncleOf data:Lady_Gabriella_Windsor .
+
+data:Lady_Gabriella_Windsor a :Person,
+        :Woman ;
+    rdfs:label "Lady Gabriella Windsor"^^xsd:string ;
+    data:posIndicesFull "0:48"^^xsd:string,
+        "345:392"^^xsd:string ;
+    data:posIndicesPart "1053:1062"^^xsd:string,
+        "1349:1358"^^xsd:string,
+        "1607:1614"^^xsd:string,
+        "525:534"^^xsd:string,
+        "752:756"^^xsd:string,
+        "791:800"^^xsd:string,
+        "935:944"^^xsd:string ;
+    data:wdtLink wdt:Q75426 ;
+    :alsoKnownAs "Ella Kingston"^^xsd:string,
+        "Ella Windsor"^^xsd:string,
+        "Lady Gabriella Marina Alexandra Ophelia Kingston"^^xsd:string,
+        "Lady Gabriella Marina Alexandra Ophelia Windsor"^^xsd:string ;
+    :hasAncestor data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasFather data:Prince_Michael_of_Kent ;
+    :hasMother data:Marie_Christine-_Princess_Michael_of_Kent ;
+    :hasParent data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasRelation data:Lady_Gabriella_Windsor,
+        data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :hasSex data:female ;
+    :hasSister data:Lady_Gabriella_Windsor ;
+    :isBloodrelationOf data:Lady_Gabriella_Windsor ;
+    :isChildOf data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isDaughterOf data:Marie_Christine-_Princess_Michael_of_Kent,
+        data:Prince_Michael_of_Kent ;
+    :isSiblingOf data:Lady_Gabriella_Windsor ;
+    :isSisterOf data:Lady_Gabriella_Windsor .
+

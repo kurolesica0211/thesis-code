@@ -2,41 +2,45 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Damaris_Stuart-William a :Person,
-        :Woman .
-
-data:Isobel_Charlotte_Weatherall a :Person,
-        :Woman .
-
-data:Karen_Baxter a :Person,
-        :Woman .
-
-data:Michael_Fergus_Bowes-Lyon a :Man,
+data:GeorgeMountbatten a :Man,
         :Person ;
-    :alsoKnownAs "Mikey Strathmore"^^xsd:string ;
-    :hasBirthYear 1957 ;
-    :hasDeathYear 2016 ;
-    :hasFather data:Fergus_Bowes-Lyon ;
-    :hasMarriageYear 1984,
-        2005,
-        2012 ;
-    :hasMother data:Mary_Pamela_McCorquodale ;
-    :hasSister data:Diana_Bowes-Lyon,
-        data:Elizabeth_Bowes-Lyon_sister .
+    :hasBirthYear 1892 ;
+    :hasDeathYear 1938 ;
+    :hasFather data:LouisMountbatten1stMarquess ;
+    :hasMarriageYear 1916 ;
+    :hasMother data:VictoriaOfHesse ;
+    :hasRelation data:NadejdaMikhailovnaDeTorby ;
+    :isSiblingOf data:LouisMountbatten1stEarl,
+        data:PrincessAlice,
+        data:QueenLouiseOfSweden .
 
-data:Diana_Bowes-Lyon a :Person,
-        :Woman .
-
-data:Elizabeth_Bowes-Lyon_sister a :Person,
-        :Woman .
-
-data:Fergus_Bowes-Lyon a :Man,
+data:PrincePhilip a :Man,
         :Person ;
-    :hasFather data:Michael_Bowes-Lyon_grandfather .
+    :hasMother data:PrincessAlice .
 
-data:Mary_Pamela_McCorquodale a :Person,
-        :Woman .
-
-data:Michael_Bowes-Lyon_grandfather a :Man,
+data:LouisMountbatten1stEarl a :Man,
         :Person .
+
+data:LouisMountbatten1stMarquess a :Man,
+        :Person .
+
+data:MichaelMikhailovichRomanov a :Man,
+        :Person .
+
+data:NadejdaMikhailovnaDeTorby a :Person,
+        :Woman ;
+    :hasFather data:MichaelMikhailovichRomanov ;
+    :hasMother data:SophieVonMerenberg .
+
+data:QueenLouiseOfSweden a :Person,
+        :Woman .
+
+data:SophieVonMerenberg a :Person,
+        :Woman .
+
+data:VictoriaOfHesse a :Person,
+        :Woman .
+
+data:PrincessAlice a :Person,
+        :Woman .
 

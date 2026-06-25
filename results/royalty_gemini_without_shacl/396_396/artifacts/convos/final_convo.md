@@ -69,70 +69,47 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince William of Gloucester (William Henry Andrew Frederick; 18 December 1941 – 28 August 1972) was a member of the British royal family.
-The elder son of Prince Henry, Duke of Gloucester, and Princess Alice, Duchess of Gloucester, he was a grandson of George V, nephew of Edward VIII and George VI, and first cousin of Elizabeth II.
-He was the most recent descendant of George III to be diagnosed with porphyria, a condition thought to have caused George III’s mental breakdown, and in William’s case, it was most likely hereditary.
-William died in 1972, aged 30, in an air crash while piloting his plane during a competition.
-Early life
+Princess Christina Margarethe of Hesse (German: Christina Margarethe Prinzessin von Hessen; 10 January 1933 – 22 November 2011) was a German princess.
+Family background and early life
 
-William was born on 18 December 1941 at the Lady Carnarvon Nursing Home in Hadley Common, Hertfordshire, the eldest son of Prince Henry, Duke of Gloucester, and Alice, Duchess of Gloucester.
-His father was the third son of King George V and Queen Mary, and his mother was the third daughter of the 7th Duke of Buccleuch and Lady Margaret Bridgeman.
-His godparents were King George VI (his paternal uncle), Queen Mary (his paternal grandmother), Princess Helena Victoria (his paternal first cousin twice-removed), Lady Margaret Hawkins (his maternal aunt), Major Lord William Montagu Douglas Scott (his maternal uncle) and John Vereker, 6th Viscount Gort, who was unable to attend.
-At the time of William's birth, and for months afterwards, Henry was away on military duties, some involving considerable risk.
-This prompted George VI to write to his sister-in-law, assuring her that, should anything happen to his brother, he would become Prince William's guardian.
-In 1947, William served as a page boy at the wedding of his cousin Princess Elizabeth to Philip, Duke of Edinburgh.
-The other page boy was Prince Michael of Kent.
-William spent his early childhood at Barnwell Manor in Northamptonshire and later in Canberra, Australia, where his father served as Governor-General from 1945 to 1947.
-After returning to England, he was educated at Wellesley House School, a prep school in Broadstairs, Kent, then at Eton College, where he was noted in the Eton College Chronicle for his performance in junior cricket and awarded house colours for football.
-Career
+Born in Germany on 10 January 1933 at Friedrichshof Castle near Kronberg im Taunus, Princess Christina ("Krista") of Hesse was the eldest child of Prince Christoph of Hesse (1901–1943) and Princess Sophie of Greece and Denmark (1914–2001)
+Her father, Prince Christoph of Hesse, was a nephew of Germany's last emperor Wilhelm II.
+Her mother, Princess Sophie of Greece and Denmark, was a grand-daughter of King George I of Greece and a sister of Prince Philip, Duke of Edinburgh.
+Christina belonged by birth to the senior line of the House of Hesse, a junior branch of which reigned as grand dukes of Hesse and by Rhine within the German Empire until 1918.
+Christina's paternal grandmother, Princess Margaret of Prussia, was a daughter of Queen Victoria's eldest daughter Victoria, and as such a sister of Kaiser Wilhelm II.
 
-After returning to Britain, William took a position with Lazards, a merchant bank.
-He was the second member of the British royal family to work in the civil service or diplomatic service (the first was his uncle, Prince George, Duke of Kent, in the 1920s).
-By 1970, the health of his father, the Duke of Gloucester, had deteriorated following further strokes.
-William had no choice but to resign from the diplomatic service and return to Britain in order to manage his father's estate and, as he put it, take on the full-time role of a royal prince.
-Apart from taking over many engagements his father could no longer perform, William took particular interest in St John Ambulance, where he became increasingly active.
-William occasionally served as Counsellor of State during the Queen's absence.
-Personal life
 
-William was consistently described by friends as adventurous (almost to the point of recklessness), warm, tender and extremely generous.
-Regarding his family, William considered himself extremely lucky compared to other members of the royal family.
-William acknowledged his father couldn't have been very happy as a young man, as a result of the strict upbringing he had received, and expressed gratitude for the freedom he had given him throughout his life.
-Relationships
+Prince Christoph, a member of the Schutzstaffel (SS), held important positions in Germany's Nazi regime.
+On 7 October 1943, when Christina was ten years old, her father was killed in an airplane crash in the Apennine Mountains near Forlì, Italy.
+His widow married Prince George William of Hanover in 1946.
+From her mother's two marriages, Christina had four siblings and three half-siblings: Princess Dorothea of Hesse (1934–2025), Prince Karl of Hesse (1937–2022), Prince Rainer of Hesse (born 1939), Princess Clarissa of Hesse (born 1944), Prince Welf of Hanover (1947–1981), Prince Georg of Hanover (born 1949) and Princess Friederike of Hanover (born 1954).
+Her childhood homes included her paternal grandmother's palace of Friedrichshof in Taunus, a family castle at Panker in Holstein, and her parents' residence in Berlin-Dahlem.
+Christina participated in the 1953 coronation of her aunt at Westminster Abbey, walking in the procession led by her maternal grandmother, Princess Alice.
+Christina and her cousin Princess Beatrix of Hohenlohe-Langenburg spent the winter of 1955-1956 living in London, where Christina studied the restoration of paintings under Anthony Blunt.
+It was reported that the princesses' closest friend in England was Prince Andrew of Yugoslavia.
+First marriage
 
-Former Hungarian model and stewardess Zsuzsi Starkloff (1936–2020, born Zsuzsana Maria Lehel in a Jewish-Hungarian family) had a relationship with William.
-They first met in 1968 in Japan, where Starkloff worked, having previously divorced American pilot Edward Starkloff.
-The relationship was further explored in the 2015 Channel 4 TV documentary, The Other Prince William.
-Despite the reported reluctance of senior members of the royal family to take William's relationship with Starkloff seriously, marriage standards within the royal family were no longer as strict as they had been.
-Princess Margaret, while not encouraging William, did sympathise with him in this regard and advised him to "wait a bit" and to "see how everything looks" once he returned to Britain.
-William's intentions regarding his relationship with Starkloff are unclear.
-In the early 1970s, William began a relationship with divorcee Nicole Sieff (née Moschietto), daughter of a Monte Carlo restaurateur, who had two sons from her marriage to Jonathan Sieff, grandson of Israel Sieff, Baron Sieff.
-Health
+Princess Christina of Hesse married Prince Andrew of Yugoslavia, the youngest son of Alexander I of Yugoslavia and Princess Maria of Romania, on 2 August 1956, at Friedrichshof Castle.
+They had two children:
 
-Shortly before transferring to Tokyo in August 1968, William was examined by a Royal Air Force doctor, Headly Bellringer, at the request of his mother.
-Although aware of the theory of the royal family's history of porphyria then being advanced by Ida Macalpine and Richard Hunter, Bellringer stated he "tried not to let it influence him...with all the symptoms, I was left with little option but to diagnose the Prince's condition as porphyria."
-A reliable diagnosis of porphyria in a member of the British royal family lent weight to the theory – first advanced by Professor Ida Macalpine in the late 1960s – that porphyria was the underlying cause of the ill-health of both Mary, Queen of Scots (an ancestor of both of William's parents) and George III.
-Death
 
-A licensed pilot and President of the British Light Aviation Centre, William owned several aircraft and competed in amateur air show races.
-William and Mitchell were killed.
-William was buried in the Royal Burial Ground, Frogmore.
-The comprehensive school in Oundle, which he opened in 1971, was renamed Prince William School in his memory.
-William was the heir apparent of his father's peerages, Duke of Gloucester, Earl of Ulster, and Baron Culloden.
-Upon his death, his younger brother Prince Richard became heir apparent, and succeeded to these peerages in 1974.
-William was the first grandchild of King George V and Queen Mary to die.
-Honours and arms
+Soon after their marriage, Princess Christina and her first husband had purchased The Hollands, a commercial farm at Langton Green in Kent, England, which did not prove a profitable venture.
+Moving to London, Prince Andrew supported his family by working for an import/export business and, later, as a bank executive.
+In 1961 Christina left her husband to live with an abstract artist from the Netherlands, Robert Floris van Eyck.
+Second marriage
 
-Honours
-
-Arms
-
-For his 21st birthday, in 1962, Prince William was granted the use of the Royal Arms, differenced with a label argent of five points, the outer pair and central point bearing lions gules, the inner pair crosses gules.
+Following her divorce, Christina married Robert van Eyck on 3 December 1962 in London.
+Her first husband Prince Andrew also married for the second time, this time to another cousin, Princess Kira Melita zu Leiningen (1930–2006).
+Christina and Robert van Eyck separated in 1985, and divorced 3 February 1986.
+In addition to Germany and England, Princess Christina of Hesse had lived in Saint-Paul-de-Vence, France, and in Gersau, Switzerland.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -148,39 +125,9 @@ For his 21st birthday, in 1962, Prince William was granted the use of the Royal 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -195,6 +142,23 @@ For his 21st birthday, in 1962, Prince William was granted the use of the Royal 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -212,6 +176,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -279,29 +258,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -310,6 +281,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -322,6 +301,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -330,17 +311,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -368,6 +351,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -383,92 +450,129 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a649838c-5653-4214-a1e8-7566d2971ea6)
- Call ID: a649838c-5653-4214-a1e8-7566d2971ea6
-  Args:
-    type: :Man
-    source: :Prince_William_of_Gloucester
-  AssignClass (cde45c87-1688-47d3-9a14-e06f40b0576f)
- Call ID: cde45c87-1688-47d3-9a14-e06f40b0576f
-  Args:
-    source: :Prince_Henry_Duke_of_Gloucester
-    type: :Man
-  AssignClass (b4bd4477-2a78-4dd9-a25d-d49287d55517)
- Call ID: b4bd4477-2a78-4dd9-a25d-d49287d55517
+  AssignClass (3c590bfd-a688-47a2-9a54-33d14665a859)
+ Call ID: 3c590bfd-a688-47a2-9a54-33d14665a859
   Args:
     type: :Woman
-    source: :Princess_Alice_Duchess_of_Gloucester
-  AssignClass (497c4792-0c97-4b67-974d-2595b853fc7a)
- Call ID: 497c4792-0c97-4b67-974d-2595b853fc7a
+    source: Princess_Christina_of_Hesse
+  AddLiteral (5ab3d4e8-5b06-4abd-9d1d-409102d75d71)
+ Call ID: 5ab3d4e8-5b06-4abd-9d1d-409102d75d71
   Args:
-    source: :George_V
-    type: :Man
-  AssignClass (76aa0eb2-e18f-4e96-af8c-210d8f49d76b)
- Call ID: 76aa0eb2-e18f-4e96-af8c-210d8f49d76b
-  Args:
-    source: :Queen_Mary
-    type: :Woman
-  AssignClass (789ba02c-ce4c-4aac-9e8b-0cc8ef6c8549)
- Call ID: 789ba02c-ce4c-4aac-9e8b-0cc8ef6c8549
-  Args:
-    type: :Man
-    source: :Prince_Richard
-  AddLiteral (927377cc-579a-45d9-b170-380eceff277d)
- Call ID: 927377cc-579a-45d9-b170-380eceff277d
-  Args:
-    literal_value: 1941
-    source: :Prince_William_of_Gloucester
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (311984da-6956-48fd-af0e-e219261780b3)
- Call ID: 311984da-6956-48fd-af0e-e219261780b3
-  Args:
-    literal_value: 1972
-    source: :Prince_William_of_Gloucester
+    source: Princess_Christina_of_Hesse
+    literal_value: 1933
     literal_type: xsd:integer
+  AddLiteral (dae3b480-2d9b-4518-9946-849548089881)
+ Call ID: dae3b480-2d9b-4518-9946-849548089881
+  Args:
+    literal_type: xsd:integer
+    literal_value: 2011
+    source: Princess_Christina_of_Hesse
     relation: :hasDeathYear
-  AddTriple (e1873705-8033-418d-bef1-f91d17a67b36)
- Call ID: e1873705-8033-418d-bef1-f91d17a67b36
+  AssignClass (e42a8072-1e4e-478f-bff4-ea2e7e827952)
+ Call ID: e42a8072-1e4e-478f-bff4-ea2e7e827952
   Args:
+    source: Prince_Christoph_of_Hesse
+    type: :Man
+  AddLiteral (c9d6e34b-031a-4fb8-859a-d7c2b1d2169b)
+ Call ID: c9d6e34b-031a-4fb8-859a-d7c2b1d2169b
+  Args:
+    literal_type: xsd:integer
+    source: Prince_Christoph_of_Hesse
+    relation: :hasBirthYear
+    literal_value: 1901
+  AddLiteral (022d64f5-a0dd-4157-8cfd-6f3cb5d96a2f)
+ Call ID: 022d64f5-a0dd-4157-8cfd-6f3cb5d96a2f
+  Args:
+    literal_type: xsd:integer
+    source: Prince_Christoph_of_Hesse
+    relation: :hasDeathYear
+    literal_value: 1943
+  AssignClass (c14ac4b3-d403-445f-9dd7-7d3e1c2d62da)
+ Call ID: c14ac4b3-d403-445f-9dd7-7d3e1c2d62da
+  Args:
+    type: :Woman
+    source: Princess_Sophie_of_Greece_and_Denmark
+  AddLiteral (3adc6f27-2233-447b-ae3e-e38c6ffec135)
+ Call ID: 3adc6f27-2233-447b-ae3e-e38c6ffec135
+  Args:
+    literal_value: 1914
+    source: Princess_Sophie_of_Greece_and_Denmark
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (27d387cb-db59-45ef-b476-7e661e607560)
+ Call ID: 27d387cb-db59-45ef-b476-7e661e607560
+  Args:
+    literal_value: 2001
+    source: Princess_Sophie_of_Greece_and_Denmark
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddTriple (fad53493-6102-4e5e-824d-8a15afbf76d6)
+ Call ID: fad53493-6102-4e5e-824d-8a15afbf76d6
+  Args:
+    source: Princess_Christina_of_Hesse
     relation: :hasFather
-    target: :Prince_Henry_Duke_of_Gloucester
-    source: :Prince_William_of_Gloucester
-  AddTriple (9a6f38f0-08af-4b28-98bd-a4d062c17882)
- Call ID: 9a6f38f0-08af-4b28-98bd-a4d062c17882
+    target: Prince_Christoph_of_Hesse
+  AddTriple (bc3c9480-70ae-4bb8-a7d0-0069dd9f0bb1)
+ Call ID: bc3c9480-70ae-4bb8-a7d0-0069dd9f0bb1
   Args:
-    source: :Prince_William_of_Gloucester
-    target: :Princess_Alice_Duchess_of_Gloucester
     relation: :hasMother
-  AddTriple (7007edec-0175-4c07-8c32-2e20be85283a)
- Call ID: 7007edec-0175-4c07-8c32-2e20be85283a
+    source: Princess_Christina_of_Hesse
+    target: Princess_Sophie_of_Greece_and_Denmark
+  AssignClass (b8429cdf-983f-4b9b-99ca-02e28a29e1c1)
+ Call ID: b8429cdf-983f-4b9b-99ca-02e28a29e1c1
   Args:
-    target: :George_V
-    relation: :hasParent
-    source: :Prince_Henry_Duke_of_Gloucester
-  AddTriple (d1f27fa5-e9c5-453b-8738-1d367f056e76)
- Call ID: d1f27fa5-e9c5-453b-8738-1d367f056e76
+    source: Prince_George_William_of_Hanover
+    type: :Man
+  AddTriple (57e4e490-a7cf-485a-9a25-02fa872840e8)
+ Call ID: 57e4e490-a7cf-485a-9a25-02fa872840e8
   Args:
-    source: :Prince_Henry_Duke_of_Gloucester
-    target: :Queen_Mary
-    relation: :hasParent
-  AddTriple (877a7081-7503-4cfa-bdb8-7d6655e213d8)
- Call ID: 877a7081-7503-4cfa-bdb8-7d6655e213d8
+    target: Prince_George_William_of_Hanover
+    source: Princess_Sophie_of_Greece_and_Denmark
+    relation: :hasMarriageYear
+  AddLiteral (9a0d2613-ad44-4db8-b941-10f4a88ac952)
+ Call ID: 9a0d2613-ad44-4db8-b941-10f4a88ac952
   Args:
-    target: :Prince_Richard
-    relation: :hasBrother
-    source: :Prince_William_of_Gloucester
-  AddTriple (5cba9dd0-d7c0-46d1-9f07-a5d531e8e3b2)
- Call ID: 5cba9dd0-d7c0-46d1-9f07-a5d531e8e3b2
+    literal_value: 1946
+    source: Princess_Sophie_of_Greece_and_Denmark
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+  AssignClass (c2c821a7-4d34-46f3-b621-39aac470f5bf)
+ Call ID: c2c821a7-4d34-46f3-b621-39aac470f5bf
   Args:
-    target: :Prince_Henry_Duke_of_Gloucester
-    relation: :isSonOf
-    source: :Prince_Richard
-  AddTriple (5fea49ba-f277-412f-84e7-6fce5b752837)
- Call ID: 5fea49ba-f277-412f-84e7-6fce5b752837
+    type: :Man
+    source: Prince_Andrew_of_Yugoslavia
+  AddTriple (5a4f0091-6587-458b-b8e6-f50511c2a2f3)
+ Call ID: 5a4f0091-6587-458b-b8e6-f50511c2a2f3
   Args:
-    source: :Prince_Richard
-    target: :Princess_Alice_Duchess_of_Gloucester
-    relation: :isSonOf
-  Finish (6eb22202-47eb-41d2-9817-7bf4bdb14f0a)
- Call ID: 6eb22202-47eb-41d2-9817-7bf4bdb14f0a
+    target: Prince_Andrew_of_Yugoslavia
+    relation: :hasMarriageYear
+    source: Princess_Christina_of_Hesse
+  AddLiteral (daf24191-d0e7-49ec-878c-339ed1ad2991)
+ Call ID: daf24191-d0e7-49ec-878c-339ed1ad2991
+  Args:
+    relation: :hasMarriageYear
+    source: Princess_Christina_of_Hesse
+    literal_value: 1956
+    literal_type: xsd:integer
+  AssignClass (5cf4e1a2-a73e-48d2-b571-f4bfef76495a)
+ Call ID: 5cf4e1a2-a73e-48d2-b571-f4bfef76495a
+  Args:
+    type: :Man
+    source: Robert_van_Eyck
+  AddTriple (f8b6daed-5205-4eca-ac9f-8fea8038e547)
+ Call ID: f8b6daed-5205-4eca-ac9f-8fea8038e547
+  Args:
+    relation: :hasMarriageYear
+    source: Princess_Christina_of_Hesse
+    target: Robert_van_Eyck
+  AddLiteral (59e00b3c-dfa9-49d7-b4dd-3c5a3cb223e1)
+ Call ID: 59e00b3c-dfa9-49d7-b4dd-3c5a3cb223e1
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1962
+    source: Princess_Christina_of_Hesse
+    relation: :hasMarriageYear
+  Finish (a6f9884c-fc3d-433e-8a49-ef8d182229a3)
+ Call ID: a6f9884c-fc3d-433e-8a49-ef8d182229a3
   Args:

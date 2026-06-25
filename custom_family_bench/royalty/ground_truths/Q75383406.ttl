@@ -7,51 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Charles_Wellesley-_9th_Duke_of_Wellington a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Charles Wellesley, 9th Duke of Wellington" ;
-    data:posIndicesFull "193:229" ;
-    data:posIndicesPart "315:324",
-        "480:489",
-        "600:609" ;
-    data:wdtLink wdt:Q2960441 ;
-    :alsoKnownAs "Arthur Charles Valerian Wellesley, 9th Duke of Wellington",
-        "Arthur Charles Valerian Wellesley, Marquess of Douro, 10th Duke of Ciudad Rodrigo, Grandee of Spain",
-        "Charles Wellesley, Marquess of Douro",
-        "The Lord Douro" ;
-    :hasChild data:Lady_Mary_Wellesley ;
-    :hasDaughter data:Lady_Mary_Wellesley ;
-    :hasSex data:male ;
-    :isFatherOf data:Lady_Mary_Wellesley ;
-    :isParentOf data:Lady_Mary_Wellesley .
-
-data:Princess_Antonia_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Antonia of Prussia" ;
-    data:posIndicesFull "234:261" ;
-    data:posIndicesPart "288:296" ;
-    data:wdtLink wdt:Q7244552 ;
-    :alsoKnownAs "Princess Antonia Elizabeth Brigid Luise of Prussia",
-        "Princess Antonia of Prussia, The Duchess of Wellington" ;
-    :hasChild data:Lady_Mary_Wellesley ;
-    :hasDaughter data:Lady_Mary_Wellesley ;
-    :hasSex data:female ;
-    :isMotherOf data:Lady_Mary_Wellesley ;
-    :isParentOf data:Lady_Mary_Wellesley .
-
-data:Lady_Mary_Wellesley a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Lady_Mary_Wellesley a :Person ;
     rdfs:label "Lady Mary Wellesley" ;
     data:posIndicesFull "0:25",
         "153:172",
@@ -66,13 +22,39 @@ data:Lady_Mary_Wellesley a :Person,
         "Mary Louise Wellesley",
         "Mary Luise Wellesley",
         "Mary Wellesley" ;
-    :hasFather data:Charles_Wellesley-_9th_Duke_of_Wellington ;
-    :hasMother data:Princess_Antonia_of_Prussia ;
     :hasParent data:Charles_Wellesley-_9th_Duke_of_Wellington,
         data:Princess_Antonia_of_Prussia ;
-    :hasSex data:female ;
-    :isChildOf data:Charles_Wellesley-_9th_Duke_of_Wellington,
-        data:Princess_Antonia_of_Prussia ;
-    :isDaughterOf data:Charles_Wellesley-_9th_Duke_of_Wellington,
-        data:Princess_Antonia_of_Prussia .
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Charles_Wellesley-_9th_Duke_of_Wellington a :Person ;
+    rdfs:label "Charles Wellesley, 9th Duke of Wellington" ;
+    data:posIndicesFull "193:229" ;
+    data:posIndicesPart "315:324",
+        "480:489",
+        "600:609" ;
+    data:wdtLink wdt:Q2960441 ;
+    :alsoKnownAs "Arthur Charles Valerian Wellesley, 9th Duke of Wellington",
+        "Arthur Charles Valerian Wellesley, Marquess of Douro, 10th Duke of Ciudad Rodrigo, Grandee of Spain",
+        "Charles Wellesley, Marquess of Douro",
+        "The Lord Douro" ;
+    :hasSex data:male .
+
+data:Princess_Antonia_of_Prussia a :Person ;
+    rdfs:label "Princess Antonia of Prussia" ;
+    data:posIndicesFull "234:261" ;
+    data:posIndicesPart "288:296" ;
+    data:wdtLink wdt:Q7244552 ;
+    :alsoKnownAs "Princess Antonia Elizabeth Brigid Luise of Prussia",
+        "Princess Antonia of Prussia, The Duchess of Wellington" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

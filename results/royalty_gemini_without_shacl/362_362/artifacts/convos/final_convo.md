@@ -69,44 +69,26 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Philipp, Prince and Landgrave of Hesse (6 November 1896 – 25 October 1980) was head of the Electoral House of Hesse from 1940 to 1980.
-Philipp was a grandson of Frederick III, German Emperor, and a great-grandson of Queen Victoria, as well as the son-in-law of Victor Emmanuel III of Italy.
-Early life
+Don Alessandro Torlonia, 5th Prince of Civitella-Cesi (7 December 1911 – 1 May/12 May 1986) was an Italian banking heir and a member of the House of Torlonia.
+About
 
-Philipp was born at Schloss Rumpenheim in Offenbach, the third son of Prince Frederick Charles of Hesse and of his wife Princess Margaret of Prussia (sister of the German Emperor Wilhelm II).
-He held the rank of lieutenant (Leutnant, an extremely low rank considering his aristocratic background) and was mostly responsible for the procurement of munitions.
-In 1916, Philipp's oldest brother Friedrich Wilhelm died (in World War I) and Philipp became second in line to succeed his uncle as Head of the Electoral House of Hesse.
-It was intended that Philipp would eventually succeed his father as Head of the House of Hesse, while his (younger) twin brother Wolfgang would be heir to the Finnish throne.
-He made several visits to Greece where his aunt, Princess Sophie of Prussia was the wife of King Constantine I. In 1922, he left university without completing a degree and took a job at the Kaiser-Friedrich-Museum in Berlin.
+Born in Rome on 7 December 1911, Torlonia was the son of Marino Torlonia, 4th Prince di Civitella-Cesi and his American wife, Mary Elsie Moore.
+Don Alessandro's youngest sister was Donna Marina Torlonia di Civitella-Cesi, grandmother of the American actress Brooke Shields.
+In 1941, when his mother was dying in New York City, Torlonia took a high speed boat from Portugal and was arrested in error by FBI, thinking he was an enemy of the state and taken to Ellis Island.
+Not to be confused with his cousin with the same name, Alessandro Torlonia (1925–2017), Prince of Fucino and Prince assistant to the papal throne, head of another branch of the family.
+In the 1980s, this cousin Torlonia held the title as the "richest man in Rome", as he was the heir to a banking fortune and owner of the famous Torlonia Collection of ancient art.
+He died in the Palazzo Nuñez-Torlonia, Rome, in 1986.
 Marriage and children
 
-He married Princess Mafalda of Savoy, daughter of King Victor Emmanuel III of Italy, on 23 September 1925 at the Castello di Racconigi near Turin.
-The couple had four children:
-
-
-The family lived mostly at Villa Polissena (named after Queen Polyxena), part of Villa Savoia, the King of Italy's estate on the outskirts of Rome.
-On his return to Germany in October 1930, he joined the National Socialist German Workers' Party.
-Through his party membership, Philipp became a particularly close friend of Hermann Göring, the future head of the German Air Force (Luftwaffe).
-Following the appointment of Adolf Hitler as the German Chancellor on 30 January 1933, Philipp was appointed Oberpräsident (Governor) of Hesse-Nassau on 7 June 1933 by Prussian Minister-President Göring, who also named him to the Prussian State Council in July.
-For this purpose, the Reich Chancellery established a special account for him at the German Embassy in Rome, over which Prince Philipp could freely dispose.
-In 1940/41, German art purchases in Italy increased to such an extent that the Fascist government prohibited the sale of art treasures to foreigners in September 1941.
-As governor of Hesse-Nassau, Philipp was associated with the Aktion T4 euthanasia programme.
-As the war progressed, the attitude of the National Socialist authorities towards members of the German princely houses changed.
-In late April 1943, Philipp was ordered to report to Hitler's headquarters, where he stayed for most of the next four months.
-On 25 January 1944, his political disgrace became public when he was dismissed from his office as Oberpräsident of Hesse-Nassau.
-Philipp's wife Mafalda was arrested and placed under military custody in Rome.
-In August 1944, the factory was bombed by the Allies.
-Mafalda was seriously injured and died several days later following a belated operation by camp medical staff.
-After only ten days, he was transferred to Tyrol to Hotel "Bachmann" along with about 140 other prominent prisoners (for example Kurt Schuschnigg, Bogislaw von Bonin, Hjalmar Schacht, Martin Niemöller, Georg Thomas, and Alexander von Falkenhausen), freed by the Wehrmacht on 30 April 1945 (SS-Obergruppenführer Karl Wolff received a telephone call from the SS guards and ordered them to hand over the prisoners to the German army officers Hauptmann Wichard von Alvensleben and Hauptmann Gebhard von Alvensleben), and was then arrested by U.S. troops on 4 May 1945 in Niederdorf in the Italian Dolomites due to his role in the Nazi Party.
-On 28 May 1940, Philipp succeeded his father as Head of the Electoral House of Hesse.
-In 1968, upon the death of his distant agnatic relative, Louis, Prince of Hesse and by Rhine (who was also his second cousin as Philipp's mother and Louis' father were grandchildren of Queen Victoria), Philipp succeeded as head of the entire House of Hesse, including grand ducal Hesse (Hesse and by Rhine/Hesse-Darmstadt).
-Louis had nominally adopted Philipp's son Moritz, who at that time inherited the Hessian and by-Rhine properties, including remarkable cultural collections: for the first time since the division of Hesse into branches after the death of Philip the Magnanimous in 1567, all sovereign branches of the house of Hesse were reunited again.
+On 14 January 1935, Don Alessandro morganatically married in Rome the Infanta Beatriz of Spain (1909–2002), a daughter of King Alfonso XIII of Spain and of Princess Victoria Eugenie of Battenberg.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +104,9 @@ Louis had nominally adopted Philipp's son Moritz, who at that time inherited the
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +121,23 @@ Louis had nominally adopted Philipp's son Moritz, who at that time inherited the
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +155,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +237,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +260,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +280,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +290,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +330,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,187 +429,133 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (09593b50-d42d-4105-a8cd-0d13eaa6545d)
- Call ID: 09593b50-d42d-4105-a8cd-0d13eaa6545d
+  AssignClass (fced4dd9-c0cf-4987-b5d6-b7f4fc0b0175)
+ Call ID: fced4dd9-c0cf-4987-b5d6-b7f4fc0b0175
   Args:
-    source: Philipp_of_Hesse
     type: :Man
-  AssignClass (24e75576-1fc9-4a30-9eb6-5e40caea99e3)
- Call ID: 24e75576-1fc9-4a30-9eb6-5e40caea99e3
+    source: Alessandro_Torlonia_1911
+  AssignClass (4459bddb-e5b2-4100-b470-4776d4340592)
+ Call ID: 4459bddb-e5b2-4100-b470-4776d4340592
   Args:
+    source: Alessandro_Torlonia_1911
     type: :Person
-    source: Philipp_of_Hesse
-  AddLiteral (0084ded6-f26e-40ae-82b9-835530794c7d)
- Call ID: 0084ded6-f26e-40ae-82b9-835530794c7d
+  AddLiteral (3f9d4959-a234-4fdc-a3fb-a5060febf012)
+ Call ID: 3f9d4959-a234-4fdc-a3fb-a5060febf012
   Args:
-    relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Philipp_of_Hesse
-    literal_value: 1896
-  AddLiteral (022bfaf0-d522-446a-9375-1688f1dda264)
- Call ID: 022bfaf0-d522-446a-9375-1688f1dda264
+    relation: :hasBirthYear
+    source: Alessandro_Torlonia_1911
+    literal_value: 1911
+  AddLiteral (7ab774d7-26d6-45ed-857a-a1e565bada37)
+ Call ID: 7ab774d7-26d6-45ed-857a-a1e565bada37
   Args:
     relation: :hasDeathYear
     literal_type: xsd:integer
-    source: Philipp_of_Hesse
-    literal_value: 1980
-  AssignClass (04d5dd25-f94c-40e4-8c26-329951046339)
- Call ID: 04d5dd25-f94c-40e4-8c26-329951046339
+    source: Alessandro_Torlonia_1911
+    literal_value: 1986
+  AssignClass (c3f1a504-c768-4321-bb15-5c90321af2f2)
+ Call ID: c3f1a504-c768-4321-bb15-5c90321af2f2
   Args:
     type: :Man
-    source: Frederick_Charles_of_Hesse
-  AssignClass (04d52c57-362c-4636-b6e4-34981e8800e6)
- Call ID: 04d52c57-362c-4636-b6e4-34981e8800e6
+    source: Marino_Torlonia
+  AssignClass (05319856-2658-41c8-8208-e1709d068f37)
+ Call ID: 05319856-2658-41c8-8208-e1709d068f37
   Args:
+    source: Marino_Torlonia
     type: :Person
-    source: Frederick_Charles_of_Hesse
-  AddTriple (279ae965-a595-403f-9c73-7699d91a5647)
- Call ID: 279ae965-a595-403f-9c73-7699d91a5647
+  AssignClass (2ef4a5e6-d6df-4916-9d9e-68241401b41c)
+ Call ID: 2ef4a5e6-d6df-4916-9d9e-68241401b41c
   Args:
-    source: Philipp_of_Hesse
-    relation: :hasFather
-    target: Frederick_Charles_of_Hesse
-  AssignClass (0adf728f-21f5-4fd2-95fe-3dd30b7f1da0)
- Call ID: 0adf728f-21f5-4fd2-95fe-3dd30b7f1da0
-  Args:
+    source: Mary_Elsie_Moore
     type: :Woman
-    source: Margaret_of_Prussia
-  AssignClass (9bfd9a4d-79ac-4714-9f19-be759a70b1ff)
- Call ID: 9bfd9a4d-79ac-4714-9f19-be759a70b1ff
+  AssignClass (f37de950-e68d-4e54-9e23-28c4bb9d4f20)
+ Call ID: f37de950-e68d-4e54-9e23-28c4bb9d4f20
   Args:
-    source: Margaret_of_Prussia
     type: :Person
-  AddTriple (3361adb6-e7fa-48b6-85a3-e96c8c4473d5)
- Call ID: 3361adb6-e7fa-48b6-85a3-e96c8c4473d5
+    source: Mary_Elsie_Moore
+  AddTriple (a7b63d99-f816-4714-beac-ab6f6f90d22c)
+ Call ID: a7b63d99-f816-4714-beac-ab6f6f90d22c
+  Args:
+    relation: :hasFather
+    source: Alessandro_Torlonia_1911
+    target: Marino_Torlonia
+  AddTriple (4512adc5-f3b7-4084-b0e2-2ba1c9ce1aaf)
+ Call ID: 4512adc5-f3b7-4084-b0e2-2ba1c9ce1aaf
   Args:
     relation: :hasMother
-    target: Margaret_of_Prussia
-    source: Philipp_of_Hesse
-  AssignClass (b5563a4d-52c4-4e98-ab80-b58c6c310551)
- Call ID: b5563a4d-52c4-4e98-ab80-b58c6c310551
+    target: Mary_Elsie_Moore
+    source: Alessandro_Torlonia_1911
+  AssignClass (28c652b9-b26a-4af6-9b92-0a6c94110d8d)
+ Call ID: 28c652b9-b26a-4af6-9b92-0a6c94110d8d
   Args:
-    source: Friedrich_Wilhelm_of_Hesse
-    type: :Man
-  AssignClass (3a3b3c0f-f29a-4e44-8a4c-af7ae3be1c47)
- Call ID: 3a3b3c0f-f29a-4e44-8a4c-af7ae3be1c47
-  Args:
-    source: Friedrich_Wilhelm_of_Hesse
-    type: :Person
-  AddTriple (7b7ce656-d9a8-47ef-8b65-f4498188ccab)
- Call ID: 7b7ce656-d9a8-47ef-8b65-f4498188ccab
-  Args:
-    source: Friedrich_Wilhelm_of_Hesse
-    relation: :isBrotherOf
-    target: Philipp_of_Hesse
-  AssignClass (a387173d-42f9-4d8e-a0c6-5ca8944cb536)
- Call ID: a387173d-42f9-4d8e-a0c6-5ca8944cb536
-  Args:
-    source: Wolfgang_of_Hesse
-    type: :Man
-  AssignClass (afa9f17d-bc0b-4328-9ccd-529932b589f6)
- Call ID: afa9f17d-bc0b-4328-9ccd-529932b589f6
-  Args:
-    type: :Person
-    source: Wolfgang_of_Hesse
-  AddTriple (aedefb69-3fa6-459e-ba35-f060e86b134d)
- Call ID: aedefb69-3fa6-459e-ba35-f060e86b134d
-  Args:
-    source: Wolfgang_of_Hesse
-    relation: :isBrotherOf
-    target: Philipp_of_Hesse
-  AssignClass (2d16e288-f7cb-4431-aac3-8207b8c8f9fd)
- Call ID: 2d16e288-f7cb-4431-aac3-8207b8c8f9fd
-  Args:
+    source: Marina_Torlonia
     type: :Woman
-    source: Mafalda_of_Savoy
-  AssignClass (3f8a5525-0185-4189-8160-cdb20d15bc50)
- Call ID: 3f8a5525-0185-4189-8160-cdb20d15bc50
+  AssignClass (b064302c-36f4-4871-8cf9-5872ed660aa8)
+ Call ID: b064302c-36f4-4871-8cf9-5872ed660aa8
   Args:
-    source: Mafalda_of_Savoy
     type: :Person
-  AddTriple (a2d79cbe-6f7d-4269-8cbe-3841d237d7f5)
- Call ID: a2d79cbe-6f7d-4269-8cbe-3841d237d7f5
+    source: Marina_Torlonia
+  AddTriple (4d24cf2e-01cb-459c-97b4-9e3c4da9fef7)
+ Call ID: 4d24cf2e-01cb-459c-97b4-9e3c4da9fef7
   Args:
-    source: Philipp_of_Hesse
-    relation: :hasRelation
-    target: Mafalda_of_Savoy
-  AddLiteral (16addf6f-1656-4c9f-8fe4-b69b7a11a144)
- Call ID: 16addf6f-1656-4c9f-8fe4-b69b7a11a144
+    relation: :hasSister
+    target: Marina_Torlonia
+    source: Alessandro_Torlonia_1911
+  AssignClass (8bf3ff55-ec3c-4794-9e6c-7fbbca1ce777)
+ Call ID: 8bf3ff55-ec3c-4794-9e6c-7fbbca1ce777
   Args:
-    relation: :hasMarriageYear
+    source: Beatriz_of_Spain
+    type: :Woman
+  AssignClass (90faac02-1f7a-4774-90a8-21ea55955af7)
+ Call ID: 90faac02-1f7a-4774-90a8-21ea55955af7
+  Args:
+    type: :Person
+    source: Beatriz_of_Spain
+  AddLiteral (16fd6812-d5fc-4061-acca-f15b6d365c71)
+ Call ID: 16fd6812-d5fc-4061-acca-f15b6d365c71
+  Args:
     literal_type: xsd:integer
-    source: Philipp_of_Hesse
-    literal_value: 1925
-  AssignClass (66aa6c1b-a80d-4099-adda-347940c03821)
- Call ID: 66aa6c1b-a80d-4099-adda-347940c03821
+    relation: :hasMarriageYear
+    literal_value: 1935
+    source: Alessandro_Torlonia_1911
+  AddTriple (02947344-c4b4-429d-b4e6-de64997087c9)
+ Call ID: 02947344-c4b4-429d-b4e6-de64997087c9
   Args:
-    source: Victor_Emmanuel_III_of_Italy
-    type: :Man
-  AssignClass (d7080793-b0f9-4ee8-8f7f-ee83fcdd7265)
- Call ID: d7080793-b0f9-4ee8-8f7f-ee83fcdd7265
-  Args:
-    source: Victor_Emmanuel_III_of_Italy
-    type: :Person
-  AddTriple (566d7c36-1b60-4f4d-bb2c-3793952e6c9e)
- Call ID: 566d7c36-1b60-4f4d-bb2c-3793952e6c9e
-  Args:
-    source: Victor_Emmanuel_III_of_Italy
-    relation: :isFatherOf
-    target: Mafalda_of_Savoy
-  AssignClass (9d288ea1-f497-4c68-95da-38154d8a5de6)
- Call ID: 9d288ea1-f497-4c68-95da-38154d8a5de6
-  Args:
-    type: :Man
-    source: Moritz_of_Hesse
-  AssignClass (05570de6-8ae7-4107-a412-90c4aa24fb77)
- Call ID: 05570de6-8ae7-4107-a412-90c4aa24fb77
-  Args:
-    type: :Person
-    source: Moritz_of_Hesse
-  AddTriple (dd8d5d36-aa20-42af-8fe6-64eea5585c1d)
- Call ID: dd8d5d36-aa20-42af-8fe6-64eea5585c1d
-  Args:
-    source: Moritz_of_Hesse
-    relation: :isSonOf
-    target: Philipp_of_Hesse
-  AddTriple (deea6cb4-352c-4fbd-a67d-7effb90667ce)
- Call ID: deea6cb4-352c-4fbd-a67d-7effb90667ce
-  Args:
-    relation: :isSonOf
-    target: Mafalda_of_Savoy
-    source: Moritz_of_Hesse
-  AssignClass (3e71b8b3-2a47-49fe-9453-39b1d2f22c87)
- Call ID: 3e71b8b3-2a47-49fe-9453-39b1d2f22c87
-  Args:
-    type: :Woman
-    source: Sophie_of_Prussia
-  AssignClass (4a37d8ee-65be-4445-a72a-e877f51cd126)
- Call ID: 4a37d8ee-65be-4445-a72a-e877f51cd126
-  Args:
-    source: Sophie_of_Prussia
-    type: :Person
-  AddTriple (0f620fd2-3803-4398-a2d6-403960af0748)
- Call ID: 0f620fd2-3803-4398-a2d6-403960af0748
-  Args:
-    source: Sophie_of_Prussia
-    relation: :isAuntOf
-    target: Philipp_of_Hesse
-  AssignClass (e81225a4-5c95-43bb-8989-31209e1e79a0)
- Call ID: e81225a4-5c95-43bb-8989-31209e1e79a0
-  Args:
-    source: Constantine_I_of_Greece
-    type: :Man
-  AssignClass (fea7532e-69e5-422b-9c25-ff9e7811fc16)
- Call ID: fea7532e-69e5-422b-9c25-ff9e7811fc16
-  Args:
-    source: Constantine_I_of_Greece
-    type: :Person
-  AddTriple (8bc9defd-294c-499d-832e-4701f872437e)
- Call ID: 8bc9defd-294c-499d-832e-4701f872437e
-  Args:
-    source: Sophie_of_Prussia
+    source: Alessandro_Torlonia_1911
+    target: Beatriz_of_Spain
     relation: :hasRelation
-    target: Constantine_I_of_Greece
-  Finish (4c67e960-2e7d-4d6c-80dc-8b6ada536bd8)
- Call ID: 4c67e960-2e7d-4d6c-80dc-8b6ada536bd8
+  AssignClass (7ae44c6f-06bc-449c-ad1f-7a7e8348b771)
+ Call ID: 7ae44c6f-06bc-449c-ad1f-7a7e8348b771
+  Args:
+    source: Alfonso_XIII_of_Spain
+    type: :Man
+  AssignClass (69c0eb79-9765-47fd-8e4a-125525979611)
+ Call ID: 69c0eb79-9765-47fd-8e4a-125525979611
+  Args:
+    type: :Person
+    source: Alfonso_XIII_of_Spain
+  AssignClass (1c2ae805-ddfd-4009-b406-2882133a34b1)
+ Call ID: 1c2ae805-ddfd-4009-b406-2882133a34b1
+  Args:
+    source: Victoria_Eugenie_of_Battenberg
+    type: :Woman
+  AssignClass (5f49780d-60b8-41c2-a7f3-8921e1404ec6)
+ Call ID: 5f49780d-60b8-41c2-a7f3-8921e1404ec6
+  Args:
+    type: :Person
+    source: Victoria_Eugenie_of_Battenberg
+  AddTriple (4e8d39e7-b9f4-4e14-9259-4f4f2fa9907b)
+ Call ID: 4e8d39e7-b9f4-4e14-9259-4f4f2fa9907b
+  Args:
+    relation: :hasFather
+    source: Beatriz_of_Spain
+    target: Alfonso_XIII_of_Spain
+  AddTriple (a83ff057-0617-4477-80fe-5327ced25d5a)
+ Call ID: a83ff057-0617-4477-80fe-5327ced25d5a
+  Args:
+    source: Beatriz_of_Spain
+    target: Victoria_Eugenie_of_Battenberg
+    relation: :hasMother
+  Finish (c885f6b7-bee6-442c-87ee-040807caea42)
+ Call ID: c885f6b7-bee6-442c-87ee-040807caea42
   Args:

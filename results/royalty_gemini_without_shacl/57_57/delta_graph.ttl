@@ -2,56 +2,52 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:AntonyArmstrongJones a :Man,
-        :Person .
-
-data:CeciliaBowesLyon a :Ancestor,
-        :Person,
+data:CeciliaBowesLyon a :Person,
         :Woman .
 
-data:ClaudeBowesLyon a :Ancestor,
-        :Man,
+data:ClaudeBowesLyon a :Man,
         :Person .
 
 data:David a :Man,
-        :Person .
-
-data:KingGeorgeV a :Ancestor,
-        :Man,
-        :Person .
-
-data:KingGeorgeVI a :Ancestor,
-        :Man,
         :Person ;
-    :hasFather data:KingGeorgeV ;
-    :hasMother data:QueenMary .
+    :hasFather data:AntonyArmstrongJones .
 
-data:PrincessMargaret a :Person,
+data:ElizabethII a :Person,
         :Woman ;
-    :hasBirthYear 1930 ;
-    :hasChild data:David,
-        data:Sarah ;
-    :hasDeathYear 2002 ;
-    :hasFather data:KingGeorgeVI ;
-    :hasMarriageYear 1960 ;
-    :hasMother data:QueenElizabethTheQueenMother ;
-    :isSisterOf data:QueenElizabethII ;
-    :knownAs "Margaret Rose"^^xsd:string .
+    :hasSister data:Margaret .
 
-data:QueenElizabethII a :Person,
-        :Woman ;
-    :isSisterOf data:PrincessMargaret .
-
-data:QueenElizabethTheQueenMother a :Ancestor,
-        :Person,
+data:ElizabethQueenMother a :Person,
         :Woman ;
     :hasFather data:ClaudeBowesLyon ;
     :hasMother data:CeciliaBowesLyon .
 
-data:QueenMary a :Ancestor,
-        :Person,
+data:GeorgeV a :Man,
+        :Person .
+
+data:GeorgeVI a :Man,
+        :Person ;
+    :hasFather data:GeorgeV ;
+    :hasMother data:QueenMary .
+
+data:Margaret a :Person,
+        :Woman ;
+    :hasBirthYear 1930 ;
+    :hasDaughter data:Sarah ;
+    :hasDeathYear 2002 ;
+    :hasFather data:GeorgeVI ;
+    :hasMarriageYear 1960 ;
+    :hasMother data:ElizabethQueenMother ;
+    :hasRelation data:AntonyArmstrongJones ;
+    :hasSister data:ElizabethII ;
+    :hasSon data:David .
+
+data:QueenMary a :Person,
         :Woman .
 
 data:Sarah a :Person,
-        :Woman .
+        :Woman ;
+    :hasFather data:AntonyArmstrongJones .
+
+data:AntonyArmstrongJones a :Man,
+        :Person .
 

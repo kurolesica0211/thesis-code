@@ -1,0 +1,913 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Constantine_II_of_Greece a :Man,
+        :Person ;
+    rdfs:label "Constantine II of Greece"^^xsd:string ;
+    data:posIndicesFull "231:247"^^xsd:string,
+        "24934:24948"^^xsd:string,
+        "4979:4995"^^xsd:string ;
+    data:posIndicesPart "10036:10047"^^xsd:string,
+        "10070:10081"^^xsd:string,
+        "10157:10163"^^xsd:string,
+        "1022:1033"^^xsd:string,
+        "1037:1043"^^xsd:string,
+        "10391:10402"^^xsd:string,
+        "10620:10631"^^xsd:string,
+        "10644:10650"^^xsd:string,
+        "10687:10693"^^xsd:string,
+        "10947:10958"^^xsd:string,
+        "11051:11057"^^xsd:string,
+        "11249:11260"^^xsd:string,
+        "11385:11396"^^xsd:string,
+        "11441:11452"^^xsd:string,
+        "11632:11638"^^xsd:string,
+        "12060:12066"^^xsd:string,
+        "12676:12682"^^xsd:string,
+        "12770:12776"^^xsd:string,
+        "12917:12928"^^xsd:string,
+        "12990:13001"^^xsd:string,
+        "13205:13211"^^xsd:string,
+        "13350:13356"^^xsd:string,
+        "13454:13465"^^xsd:string,
+        "13694:13700"^^xsd:string,
+        "13779:13790"^^xsd:string,
+        "14305:14311"^^xsd:string,
+        "14353:14364"^^xsd:string,
+        "15627:15633"^^xsd:string,
+        "18225:18231"^^xsd:string,
+        "18894:18900"^^xsd:string,
+        "19051:19057"^^xsd:string,
+        "19901:19907"^^xsd:string,
+        "20324:20330"^^xsd:string,
+        "20741:20747"^^xsd:string,
+        "21947:21953"^^xsd:string,
+        "23257:23263"^^xsd:string,
+        "23326:23332"^^xsd:string,
+        "23561:23572"^^xsd:string,
+        "23642:23648"^^xsd:string,
+        "25008:25014"^^xsd:string,
+        "25052:25058"^^xsd:string,
+        "25186:25192"^^xsd:string,
+        "2521:2527"^^xsd:string,
+        "25329:25335"^^xsd:string,
+        "25346:25352"^^xsd:string,
+        "25877:25883"^^xsd:string,
+        "27102:27108"^^xsd:string,
+        "27232:27238"^^xsd:string,
+        "27775:27781"^^xsd:string,
+        "2892:2898"^^xsd:string,
+        "2994:3005"^^xsd:string,
+        "29967:29973"^^xsd:string,
+        "30251:30257"^^xsd:string,
+        "30601:30607"^^xsd:string,
+        "30745:30751"^^xsd:string,
+        "31084:31090"^^xsd:string,
+        "31267:31273"^^xsd:string,
+        "31344:31350"^^xsd:string,
+        "31636:31642"^^xsd:string,
+        "32218:32224"^^xsd:string,
+        "32408:32414"^^xsd:string,
+        "32876:32882"^^xsd:string,
+        "32939:32945"^^xsd:string,
+        "33147:33153"^^xsd:string,
+        "33201:33207"^^xsd:string,
+        "33901:33907"^^xsd:string,
+        "34895:34906"^^xsd:string,
+        "3502:3508"^^xsd:string,
+        "35201:35207"^^xsd:string,
+        "36072:36078"^^xsd:string,
+        "3805:3811"^^xsd:string,
+        "3886:3892"^^xsd:string,
+        "4003:4009"^^xsd:string,
+        "428:439"^^xsd:string,
+        "4313:4319"^^xsd:string,
+        "4696:4702"^^xsd:string,
+        "5372:5378"^^xsd:string,
+        "5398:5404"^^xsd:string,
+        "5615:5621"^^xsd:string,
+        "586:592"^^xsd:string,
+        "6112:6123"^^xsd:string,
+        "6143:6149"^^xsd:string,
+        "6164:6175"^^xsd:string,
+        "6190:6196"^^xsd:string,
+        "6343:6354"^^xsd:string,
+        "6496:6502"^^xsd:string,
+        "6615:6621"^^xsd:string,
+        "6738:6749"^^xsd:string,
+        "6789:6800"^^xsd:string,
+        "700:706"^^xsd:string,
+        "7150:7161"^^xsd:string,
+        "7234:7245"^^xsd:string,
+        "7354:7360"^^xsd:string,
+        "7648:7659"^^xsd:string,
+        "7761:7772"^^xsd:string,
+        "7995:8001"^^xsd:string,
+        "8027:8038"^^xsd:string,
+        "8096:8107"^^xsd:string,
+        "841:847"^^xsd:string,
+        "8701:8707"^^xsd:string,
+        "8775:8786"^^xsd:string,
+        "8893:8899"^^xsd:string,
+        "8996:9002"^^xsd:string ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece"^^xsd:string,
+        "Constantine Glucksburg"^^xsd:string,
+        "Constantine II"^^xsd:string,
+        "Constantino de Grecia"^^xsd:string,
+        "King Constantine"^^xsd:string,
+        "Konstantinos 2"^^xsd:string,
+        "Konstantinos II"^^xsd:string,
+        "Konstantinos II of Greece"^^xsd:string,
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes"^^xsd:string,
+        "Konstantínos 2"^^xsd:string,
+        "Konstantínos II"^^xsd:string ;
+    :hasBrother data:Constantine_II_of_Greece ;
+    :hasRelation data:Constantine_II_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_II_of_Greece ;
+    :isBrotherOf data:Constantine_II_of_Greece ;
+    :isSiblingOf data:Constantine_II_of_Greece .
+
+data:male a :Male .
+
+data:Prince_Christopher_of_Greece_and_Denmark a :Man,
+        :Person ;
+    rdfs:label "Prince Christopher of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "20222:20228"^^xsd:string ;
+    data:posIndicesPart "20324:20330"^^xsd:string,
+        "20741:20747"^^xsd:string,
+        "21947:21953"^^xsd:string,
+        "23257:23263"^^xsd:string,
+        "23326:23332"^^xsd:string,
+        "23642:23648"^^xsd:string,
+        "24615:24621"^^xsd:string,
+        "25008:25014"^^xsd:string,
+        "25052:25058"^^xsd:string,
+        "25186:25192"^^xsd:string,
+        "25329:25335"^^xsd:string,
+        "25346:25352"^^xsd:string,
+        "25877:25883"^^xsd:string,
+        "27102:27108"^^xsd:string,
+        "27232:27238"^^xsd:string,
+        "27775:27781"^^xsd:string,
+        "29967:29973"^^xsd:string,
+        "30251:30257"^^xsd:string,
+        "30601:30607"^^xsd:string,
+        "30745:30751"^^xsd:string,
+        "31084:31090"^^xsd:string,
+        "31267:31273"^^xsd:string,
+        "31344:31350"^^xsd:string,
+        "31636:31642"^^xsd:string,
+        "32218:32224"^^xsd:string,
+        "32408:32414"^^xsd:string,
+        "32876:32882"^^xsd:string,
+        "32939:32945"^^xsd:string,
+        "33147:33153"^^xsd:string,
+        "33201:33207"^^xsd:string,
+        "33901:33907"^^xsd:string,
+        "34930:34936"^^xsd:string,
+        "35201:35207"^^xsd:string,
+        "36072:36078"^^xsd:string ;
+    data:wdtLink wdt:Q447757 ;
+    :alsoKnownAs "Christo"^^xsd:string,
+        "Prince Christophoros of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:George_II_of_Greece .
+
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "1136:1159"^^xsd:string,
+        "1141:1149"^^xsd:string,
+        "1141:1159"^^xsd:string,
+        "17384:17391"^^xsd:string,
+        "24471:24478"^^xsd:string,
+        "2699:2707"^^xsd:string,
+        "3180:3188"^^xsd:string,
+        "4778:4786"^^xsd:string,
+        "5830:5837"^^xsd:string,
+        "6307:6314"^^xsd:string ;
+    data:posIndicesPart "10026:10032"^^xsd:string,
+        "10157:10163"^^xsd:string,
+        "10554:10560"^^xsd:string,
+        "10644:10650"^^xsd:string,
+        "10668:10674"^^xsd:string,
+        "10687:10693"^^xsd:string,
+        "10788:10794"^^xsd:string,
+        "10844:10850"^^xsd:string,
+        "11051:11057"^^xsd:string,
+        "11566:11572"^^xsd:string,
+        "11632:11638"^^xsd:string,
+        "11883:11889"^^xsd:string,
+        "12060:12066"^^xsd:string,
+        "1207:1213"^^xsd:string,
+        "12229:12235"^^xsd:string,
+        "12409:12415"^^xsd:string,
+        "12520:12526"^^xsd:string,
+        "12601:12607"^^xsd:string,
+        "12676:12682"^^xsd:string,
+        "12770:12776"^^xsd:string,
+        "13110:13116"^^xsd:string,
+        "13133:13139"^^xsd:string,
+        "13205:13211"^^xsd:string,
+        "13227:13233"^^xsd:string,
+        "13271:13277"^^xsd:string,
+        "13350:13356"^^xsd:string,
+        "13551:13557"^^xsd:string,
+        "1359:1365"^^xsd:string,
+        "13646:13652"^^xsd:string,
+        "13694:13700"^^xsd:string,
+        "13909:13915"^^xsd:string,
+        "14027:14033"^^xsd:string,
+        "14305:14311"^^xsd:string,
+        "14345:14351"^^xsd:string,
+        "14451:14457"^^xsd:string,
+        "14555:14561"^^xsd:string,
+        "1476:1482"^^xsd:string,
+        "14772:14778"^^xsd:string,
+        "14917:14923"^^xsd:string,
+        "15228:15234"^^xsd:string,
+        "15254:15260"^^xsd:string,
+        "15307:15313"^^xsd:string,
+        "15407:15413"^^xsd:string,
+        "15627:15633"^^xsd:string,
+        "15648:15654"^^xsd:string,
+        "15754:15760"^^xsd:string,
+        "15941:15947"^^xsd:string,
+        "16156:16162"^^xsd:string,
+        "16334:16340"^^xsd:string,
+        "16515:16521"^^xsd:string,
+        "16571:16577"^^xsd:string,
+        "16731:16737"^^xsd:string,
+        "16859:16865"^^xsd:string,
+        "17001:17007"^^xsd:string,
+        "1712:1718"^^xsd:string,
+        "17190:17196"^^xsd:string,
+        "17407:17413"^^xsd:string,
+        "17461:17467"^^xsd:string,
+        "17636:17642"^^xsd:string,
+        "17711:17717"^^xsd:string,
+        "17915:17921"^^xsd:string,
+        "17970:17976"^^xsd:string,
+        "18061:18067"^^xsd:string,
+        "18186:18192"^^xsd:string,
+        "18225:18231"^^xsd:string,
+        "18356:18362"^^xsd:string,
+        "18554:18560"^^xsd:string,
+        "18619:18625"^^xsd:string,
+        "18659:18665"^^xsd:string,
+        "18852:18858"^^xsd:string,
+        "18894:18900"^^xsd:string,
+        "19051:19057"^^xsd:string,
+        "19143:19149"^^xsd:string,
+        "19243:19249"^^xsd:string,
+        "19324:19330"^^xsd:string,
+        "1939:1945"^^xsd:string,
+        "19552:19558"^^xsd:string,
+        "19581:19587"^^xsd:string,
+        "19782:19788"^^xsd:string,
+        "19901:19907"^^xsd:string,
+        "19961:19967"^^xsd:string,
+        "20066:20072"^^xsd:string,
+        "20324:20330"^^xsd:string,
+        "20349:20355"^^xsd:string,
+        "20441:20447"^^xsd:string,
+        "20492:20498"^^xsd:string,
+        "20563:20569"^^xsd:string,
+        "20634:20640"^^xsd:string,
+        "20741:20747"^^xsd:string,
+        "20846:20852"^^xsd:string,
+        "20925:20931"^^xsd:string,
+        "21073:21079"^^xsd:string,
+        "21307:21313"^^xsd:string,
+        "21450:21456"^^xsd:string,
+        "21589:21595"^^xsd:string,
+        "21753:21759"^^xsd:string,
+        "21827:21833"^^xsd:string,
+        "21947:21953"^^xsd:string,
+        "21997:22003"^^xsd:string,
+        "2208:2214"^^xsd:string,
+        "22248:22254"^^xsd:string,
+        "22437:22443"^^xsd:string,
+        "22543:22549"^^xsd:string,
+        "22689:22695"^^xsd:string,
+        "22928:22934"^^xsd:string,
+        "23022:23028"^^xsd:string,
+        "23257:23263"^^xsd:string,
+        "23326:23332"^^xsd:string,
+        "23394:23400"^^xsd:string,
+        "23642:23648"^^xsd:string,
+        "2367:2373"^^xsd:string,
+        "23838:23844"^^xsd:string,
+        "23975:23981"^^xsd:string,
+        "24483:24489"^^xsd:string,
+        "24583:24589"^^xsd:string,
+        "24722:24728"^^xsd:string,
+        "25008:25014"^^xsd:string,
+        "25027:25033"^^xsd:string,
+        "25052:25058"^^xsd:string,
+        "25186:25192"^^xsd:string,
+        "25218:25224"^^xsd:string,
+        "2521:2527"^^xsd:string,
+        "25329:25335"^^xsd:string,
+        "25346:25352"^^xsd:string,
+        "25395:25401"^^xsd:string,
+        "25630:25636"^^xsd:string,
+        "25650:25656"^^xsd:string,
+        "25822:25828"^^xsd:string,
+        "25877:25883"^^xsd:string,
+        "26064:26070"^^xsd:string,
+        "26173:26179"^^xsd:string,
+        "26304:26310"^^xsd:string,
+        "26339:26345"^^xsd:string,
+        "26506:26512"^^xsd:string,
+        "26636:26642"^^xsd:string,
+        "26891:26897"^^xsd:string,
+        "26907:26913"^^xsd:string,
+        "27102:27108"^^xsd:string,
+        "27232:27238"^^xsd:string,
+        "27531:27537"^^xsd:string,
+        "27625:27631"^^xsd:string,
+        "27730:27736"^^xsd:string,
+        "27775:27781"^^xsd:string,
+        "27787:27793"^^xsd:string,
+        "27929:27935"^^xsd:string,
+        "28102:28108"^^xsd:string,
+        "28273:28279"^^xsd:string,
+        "28417:28423"^^xsd:string,
+        "28596:28602"^^xsd:string,
+        "28649:28655"^^xsd:string,
+        "28827:28833"^^xsd:string,
+        "2892:2898"^^xsd:string,
+        "28960:28966"^^xsd:string,
+        "29041:29047"^^xsd:string,
+        "29275:29281"^^xsd:string,
+        "29630:29636"^^xsd:string,
+        "2964:2970"^^xsd:string,
+        "29723:29729"^^xsd:string,
+        "29885:29891"^^xsd:string,
+        "29967:29973"^^xsd:string,
+        "30020:30026"^^xsd:string,
+        "30098:30104"^^xsd:string,
+        "30251:30257"^^xsd:string,
+        "30554:30560"^^xsd:string,
+        "30601:30607"^^xsd:string,
+        "30655:30661"^^xsd:string,
+        "30745:30751"^^xsd:string,
+        "30923:30929"^^xsd:string,
+        "31084:31090"^^xsd:string,
+        "31196:31202"^^xsd:string,
+        "31267:31273"^^xsd:string,
+        "31344:31350"^^xsd:string,
+        "31429:31435"^^xsd:string,
+        "31636:31642"^^xsd:string,
+        "31785:31791"^^xsd:string,
+        "31910:31916"^^xsd:string,
+        "32039:32045"^^xsd:string,
+        "32218:32224"^^xsd:string,
+        "32322:32328"^^xsd:string,
+        "32408:32414"^^xsd:string,
+        "32446:32452"^^xsd:string,
+        "32622:32628"^^xsd:string,
+        "32743:32749"^^xsd:string,
+        "3286:3292"^^xsd:string,
+        "32876:32882"^^xsd:string,
+        "32939:32945"^^xsd:string,
+        "33015:33021"^^xsd:string,
+        "33129:33135"^^xsd:string,
+        "33147:33153"^^xsd:string,
+        "33172:33178"^^xsd:string,
+        "33201:33207"^^xsd:string,
+        "33392:33398"^^xsd:string,
+        "33575:33581"^^xsd:string,
+        "33625:33631"^^xsd:string,
+        "33901:33907"^^xsd:string,
+        "34027:34033"^^xsd:string,
+        "34153:34159"^^xsd:string,
+        "34393:34399"^^xsd:string,
+        "34480:34486"^^xsd:string,
+        "3455:3461"^^xsd:string,
+        "34628:34634"^^xsd:string,
+        "34782:34788"^^xsd:string,
+        "34878:34884"^^xsd:string,
+        "35025:35031"^^xsd:string,
+        "3502:3508"^^xsd:string,
+        "35201:35207"^^xsd:string,
+        "35270:35276"^^xsd:string,
+        "35544:35550"^^xsd:string,
+        "35685:35691"^^xsd:string,
+        "35915:35921"^^xsd:string,
+        "36030:36036"^^xsd:string,
+        "36072:36078"^^xsd:string,
+        "3663:3669"^^xsd:string,
+        "3805:3811"^^xsd:string,
+        "3886:3892"^^xsd:string,
+        "3954:3960"^^xsd:string,
+        "4003:4009"^^xsd:string,
+        "4169:4175"^^xsd:string,
+        "4294:4300"^^xsd:string,
+        "4313:4319"^^xsd:string,
+        "4357:4363"^^xsd:string,
+        "4434:4440"^^xsd:string,
+        "4588:4594"^^xsd:string,
+        "4696:4702"^^xsd:string,
+        "4910:4916"^^xsd:string,
+        "4999:5005"^^xsd:string,
+        "5038:5044"^^xsd:string,
+        "5098:5104"^^xsd:string,
+        "5156:5162"^^xsd:string,
+        "5372:5378"^^xsd:string,
+        "5398:5404"^^xsd:string,
+        "5527:5533"^^xsd:string,
+        "5615:5621"^^xsd:string,
+        "5665:5671"^^xsd:string,
+        "5883:5889"^^xsd:string,
+        "6143:6149"^^xsd:string,
+        "6496:6502"^^xsd:string,
+        "6615:6621"^^xsd:string,
+        "6875:6881"^^xsd:string,
+        "7133:7139"^^xsd:string,
+        "7354:7360"^^xsd:string,
+        "7396:7402"^^xsd:string,
+        "7558:7564"^^xsd:string,
+        "7581:7587"^^xsd:string,
+        "7673:7679"^^xsd:string,
+        "7882:7888"^^xsd:string,
+        "7995:8001"^^xsd:string,
+        "8043:8049"^^xsd:string,
+        "8180:8186"^^xsd:string,
+        "8426:8432"^^xsd:string,
+        "8487:8493"^^xsd:string,
+        "8701:8707"^^xsd:string,
+        "8893:8899"^^xsd:string,
+        "8996:9002"^^xsd:string,
+        "9102:9108"^^xsd:string,
+        "9199:9205"^^xsd:string,
+        "9278:9284"^^xsd:string,
+        "9374:9380"^^xsd:string,
+        "9393:9399"^^xsd:string,
+        "9534:9540"^^xsd:string,
+        "9613:9619"^^xsd:string,
+        "9678:9684"^^xsd:string,
+        "9776:9782"^^xsd:string,
+        "9882:9888"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasChild data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :hasSon data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isAncestorOf data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isFatherOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isParentOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSiblingOf data:George_I_of_Greece ;
+    :isUncleOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark .
+
+data:Princess_Margaret_of_Prussia a :Person,
+        :Woman ;
+    rdfs:label "Princess Margaret of Prussia"^^xsd:string ;
+    data:posIndicesFull "10465:10469"^^xsd:string,
+        "1284:1288"^^xsd:string,
+        "14893:14897"^^xsd:string,
+        "15534:15539"^^xsd:string,
+        "1814:1818"^^xsd:string,
+        "19112:19116"^^xsd:string,
+        "21711:21717"^^xsd:string,
+        "22145:22149"^^xsd:string,
+        "22305:22309"^^xsd:string,
+        "27300:27304"^^xsd:string,
+        "27445:27449"^^xsd:string,
+        "28475:28479"^^xsd:string,
+        "3301:3305"^^xsd:string,
+        "33719:33723"^^xsd:string,
+        "9703:9707"^^xsd:string ;
+    data:posIndicesPart "11293:11301"^^xsd:string,
+        "21879:21886"^^xsd:string,
+        "34326:34334"^^xsd:string,
+        "6931:6939"^^xsd:string ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Margaret of Prussia"^^xsd:string,
+        "Margaret of Prussia, Queen consort-elect of Finland"^^xsd:string,
+        "Margaret of Prussia, Queen-elect of Finland"^^xsd:string,
+        "Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Margarethe of Prussia"^^xsd:string,
+        "Mossy"^^xsd:string,
+        "Princess Frederick Charles of Hesse"^^xsd:string,
+        "Princess Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe of Prussia"^^xsd:string ;
+    :hasAncestor data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :isAuntOf data:George_II_of_Greece ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+
+data:Wilhelm_II a :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "17384:17394"^^xsd:string,
+        "17384:17395"^^xsd:string,
+        "24471:24481"^^xsd:string,
+        "24471:24482"^^xsd:string,
+        "5830:5840"^^xsd:string,
+        "6307:6317"^^xsd:string,
+        "6307:6318"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasAncestor data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isBrotherOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSonOf data:Victoria-_Princess_Royal ;
+    :isUncleOf data:George_II_of_Greece .
+
+data:Victoria-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Victoria, Princess Royal"^^xsd:string ;
+    data:posIndicesFull "21851:21868"^^xsd:string ;
+    data:posIndicesPart "22317:22322"^^xsd:string,
+        "22466:22471"^^xsd:string,
+        "23785:23790"^^xsd:string,
+        "24234:24242"^^xsd:string,
+        "27465:27470"^^xsd:string,
+        "28380:28385"^^xsd:string,
+        "28776:28781"^^xsd:string,
+        "33284:33289"^^xsd:string,
+        "34326:34334"^^xsd:string,
+        "34730:34735"^^xsd:string,
+        "35597:35602"^^xsd:string ;
+    data:wdtLink wdt:Q116728 ;
+    :alsoKnownAs "Empress Frederick"^^xsd:string,
+        "Empress Frederick of Germany"^^xsd:string,
+        "Empress Friedrich"^^xsd:string,
+        "Empress Victoria of Germany"^^xsd:string,
+        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise of the United Kingdom"^^xsd:string,
+        "Princess Victoria of the United Kingdom"^^xsd:string,
+        "Victoria Adelaide Mary Louisa"^^xsd:string,
+        "Victoria Adelaide Mary Louise"^^xsd:string,
+        "Victoria, Crown Princess of Prussia"^^xsd:string,
+        "Victoria, Empress Frederick of Germany"^^xsd:string,
+        "Victoria, Empress consort of Germany"^^xsd:string,
+        "Victoria, Empress of Germany"^^xsd:string,
+        "Victoria, German Empress"^^xsd:string,
+        "Victoria, Queen of Prussia and Empress of Germany"^^xsd:string ;
+    :hasChild data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :hasDaughter data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Victoria-_Princess_Royal ;
+    :hasSon data:Wilhelm_II ;
+    :isAncestorOf data:George_II_of_Greece,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isAuntOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Victoria-_Princess_Royal ;
+    :isMotherOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isParentOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Victoria-_Princess_Royal ;
+    :isSisterOf data:Victoria-_Princess_Royal .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Constantine I of Greece"^^xsd:string ;
+    data:posIndicesFull "231:249"^^xsd:string,
+        "231:259"^^xsd:string,
+        "236:249"^^xsd:string,
+        "236:259"^^xsd:string ;
+    data:posIndicesPart "10036:10047"^^xsd:string,
+        "10070:10081"^^xsd:string,
+        "10157:10163"^^xsd:string,
+        "1022:1033"^^xsd:string,
+        "1037:1043"^^xsd:string,
+        "10391:10402"^^xsd:string,
+        "10620:10631"^^xsd:string,
+        "10644:10650"^^xsd:string,
+        "10687:10693"^^xsd:string,
+        "10947:10958"^^xsd:string,
+        "11051:11057"^^xsd:string,
+        "11249:11260"^^xsd:string,
+        "11385:11396"^^xsd:string,
+        "11441:11452"^^xsd:string,
+        "11632:11638"^^xsd:string,
+        "12060:12066"^^xsd:string,
+        "12676:12682"^^xsd:string,
+        "12770:12776"^^xsd:string,
+        "12917:12928"^^xsd:string,
+        "12990:13001"^^xsd:string,
+        "13205:13211"^^xsd:string,
+        "13350:13356"^^xsd:string,
+        "13454:13465"^^xsd:string,
+        "13694:13700"^^xsd:string,
+        "13779:13790"^^xsd:string,
+        "14305:14311"^^xsd:string,
+        "14353:14364"^^xsd:string,
+        "15627:15633"^^xsd:string,
+        "18225:18231"^^xsd:string,
+        "18894:18900"^^xsd:string,
+        "19051:19057"^^xsd:string,
+        "19901:19907"^^xsd:string,
+        "20324:20330"^^xsd:string,
+        "20741:20747"^^xsd:string,
+        "21947:21953"^^xsd:string,
+        "23257:23263"^^xsd:string,
+        "23326:23332"^^xsd:string,
+        "23561:23572"^^xsd:string,
+        "23642:23648"^^xsd:string,
+        "25008:25014"^^xsd:string,
+        "25052:25058"^^xsd:string,
+        "25186:25192"^^xsd:string,
+        "2521:2527"^^xsd:string,
+        "25329:25335"^^xsd:string,
+        "25346:25352"^^xsd:string,
+        "25877:25883"^^xsd:string,
+        "27102:27108"^^xsd:string,
+        "27232:27238"^^xsd:string,
+        "27775:27781"^^xsd:string,
+        "2892:2898"^^xsd:string,
+        "2994:3005"^^xsd:string,
+        "29967:29973"^^xsd:string,
+        "30251:30257"^^xsd:string,
+        "30601:30607"^^xsd:string,
+        "30745:30751"^^xsd:string,
+        "31084:31090"^^xsd:string,
+        "31267:31273"^^xsd:string,
+        "31344:31350"^^xsd:string,
+        "31636:31642"^^xsd:string,
+        "32218:32224"^^xsd:string,
+        "32408:32414"^^xsd:string,
+        "32876:32882"^^xsd:string,
+        "32939:32945"^^xsd:string,
+        "33147:33153"^^xsd:string,
+        "33201:33207"^^xsd:string,
+        "33901:33907"^^xsd:string,
+        "34895:34906"^^xsd:string,
+        "3502:3508"^^xsd:string,
+        "35201:35207"^^xsd:string,
+        "36072:36078"^^xsd:string,
+        "3805:3811"^^xsd:string,
+        "3886:3892"^^xsd:string,
+        "4003:4009"^^xsd:string,
+        "428:439"^^xsd:string,
+        "4313:4319"^^xsd:string,
+        "4696:4702"^^xsd:string,
+        "4863:4874"^^xsd:string,
+        "4910:4916"^^xsd:string,
+        "5038:5044"^^xsd:string,
+        "5372:5378"^^xsd:string,
+        "5398:5404"^^xsd:string,
+        "5615:5621"^^xsd:string,
+        "586:592"^^xsd:string,
+        "6112:6123"^^xsd:string,
+        "6143:6149"^^xsd:string,
+        "6164:6175"^^xsd:string,
+        "6190:6196"^^xsd:string,
+        "6343:6354"^^xsd:string,
+        "6496:6502"^^xsd:string,
+        "6615:6621"^^xsd:string,
+        "6738:6749"^^xsd:string,
+        "6789:6800"^^xsd:string,
+        "700:706"^^xsd:string,
+        "7150:7161"^^xsd:string,
+        "7234:7245"^^xsd:string,
+        "7354:7360"^^xsd:string,
+        "7648:7659"^^xsd:string,
+        "7761:7772"^^xsd:string,
+        "7995:8001"^^xsd:string,
+        "8027:8038"^^xsd:string,
+        "8096:8107"^^xsd:string,
+        "841:847"^^xsd:string,
+        "8701:8707"^^xsd:string,
+        "8775:8786"^^xsd:string,
+        "8893:8899"^^xsd:string,
+        "8996:9002"^^xsd:string ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I"^^xsd:string,
+        "Constantine Oldenburg I"^^xsd:string,
+        "King Constantine I"^^xsd:string,
+        "King Constantine I of Greece"^^xsd:string,
+        "Konstantinos I of Greece"^^xsd:string ;
+    :hasAncestor data:George_I_of_Greece ;
+    :hasBrother data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :hasChild data:George_II_of_Greece ;
+    :hasFather data:George_I_of_Greece ;
+    :hasParent data:George_I_of_Greece ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSon data:George_II_of_Greece ;
+    :isAncestorOf data:George_II_of_Greece ;
+    :isBloodrelationOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isBrotherOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isChildOf data:George_I_of_Greece ;
+    :isFatherOf data:George_II_of_Greece ;
+    :isParentOf data:George_II_of_Greece ;
+    :isSiblingOf data:Constantine_I_of_Greece,
+        data:Prince_Christopher_of_Greece_and_Denmark ;
+    :isSonOf data:George_I_of_Greece ;
+    :isUncleOf data:George_II_of_Greece .
+
+data:George_II_of_Greece a :Man,
+        :Person ;
+    rdfs:label "George II of Greece"^^xsd:string ;
+    data:wdtLink wdt:Q152935 ;
+    :alsoKnownAs "King George II of Greece"^^xsd:string ;
+    :hasAncestor data:Constantine_I_of_Greece,
+        data:George_I_of_Greece,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal ;
+    :hasBrother data:George_II_of_Greece ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:George_I_of_Greece,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_II_of_Greece ;
+    :isBrotherOf data:George_II_of_Greece ;
+    :isChildOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isSiblingOf data:George_II_of_Greece ;
+    :isSonOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Sophia of Prussia"^^xsd:string ;
+    data:posIndicesFull "1068:1085"^^xsd:string,
+        "273:290"^^xsd:string ;
+    data:posIndicesPart "11401:11407"^^xsd:string,
+        "13069:13075"^^xsd:string,
+        "16985:16991"^^xsd:string,
+        "21879:21886"^^xsd:string,
+        "9216:9222"^^xsd:string ;
+    data:wdtLink wdt:Q155822 ;
+    :alsoKnownAs "Queen Sophia of Greece"^^xsd:string,
+        "Queen Sophia, Queen Consort of Greece"^^xsd:string ;
+    :hasAncestor data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:George_II_of_Greece ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:George_II_of_Greece,
+        data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia ;
+    :hasSon data:George_II_of_Greece ;
+    :isAncestorOf data:George_II_of_Greece ;
+    :isAuntOf data:George_II_of_Greece ;
+    :isBloodrelationOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Victoria-_Princess_Royal ;
+    :isMotherOf data:George_II_of_Greece ;
+    :isParentOf data:George_II_of_Greece ;
+    :isSiblingOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Princess_Margaret_of_Prussia,
+        data:Sophia_of_Prussia,
+        data:Wilhelm_II .
+

@@ -2,49 +2,55 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Cecilie_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :hasBirthYear 1911 ;
-    :hasDaughter data:Johanna_of_Hesse ;
-    :hasDeathYear 1937 ;
-    :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-    :hasMarriageYear 1931 ;
-    :hasMother data:Princess_Alice_of_Battenberg ;
-    :hasRelation data:Prince_Georg_Donatus ;
-    :hasSon data:Alexander_of_Hesse,
-        data:Ludwig_of_Hesse ;
-    :isSiblingOf data:Margarita,
-        data:Prince_Philip_of_Greece_and_Denmark,
-        data:Sophie,
-        data:Theodora .
+data:Auguste_Viktoria a :Woman .
 
-data:Alexander_of_Hesse a :Man,
-        :Person .
+data:Cecilie_of_Mecklenburg-Schwerin a :Woman ;
+    :hasBirthYear 1886 ;
+    :hasBrother data:Frederick_Francis_IV_of_Mecklenburg-Schwerin ;
+    :hasChild data:Frederick_son_of_Cecilie,
+        data:Hubertus_son_of_Cecilie,
+        data:Louis_Ferdinand_son_of_Cecilie,
+        data:Wilhelm_son_of_Cecilie ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Frederick_Francis_III_of_Mecklenburg-Schwerin ;
+    :hasMarriageYear 1905 ;
+    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
+    :hasRelation data:Wilhelm_German_Crown_Prince ;
+    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin .
 
-data:Johanna_of_Hesse a :Person,
-        :Woman .
+data:Alexandrine_of_Mecklenburg-Schwerin a :Woman .
 
-data:Ludwig_of_Hesse a :Man,
-        :Person .
+data:Anastasia_Mikhailovna_of_Russia a :Woman ;
+    :hasFather data:Michael_Nikolaevich_of_Russia .
 
-data:Margarita a :Person,
-        :Woman .
+data:Cyril_Vladimirovich_of_Russia a :Man .
 
-data:Prince_Andrew_of_Greece_and_Denmark a :Man,
-        :Person .
+data:Dorothea_von_Salviati a :Woman .
 
-data:Prince_Georg_Donatus a :Man,
-        :Person .
+data:Frederick_Francis_III_of_Mecklenburg-Schwerin a :Man .
 
-data:Prince_Philip_of_Greece_and_Denmark a :Man,
-        :Person .
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Man .
 
-data:Princess_Alice_of_Battenberg a :Person,
-        :Woman .
+data:Frederick_son_of_Cecilie a :Man ;
+    :hasChild data:Victoria_Marina_of_Prussia .
 
-data:Sophie a :Person,
-        :Woman .
+data:Hubertus_son_of_Cecilie a :Man .
 
-data:Theodora a :Person,
-        :Woman .
+data:Kira_Kirillovna_of_Russia a :Woman ;
+    :hasFather data:Cyril_Vladimirovich_of_Russia .
+
+data:Louis_Ferdinand_son_of_Cecilie a :Man ;
+    :hasRelation data:Kira_Kirillovna_of_Russia .
+
+data:Michael_Nikolaevich_of_Russia a :Man .
+
+data:Victoria_Marina_of_Prussia a :Woman .
+
+data:Wilhelm_German_Crown_Prince a :Man ;
+    :hasFather data:Wilhelm_II_German_Emperor .
+
+data:Wilhelm_II_German_Emperor a :Man .
+
+data:Wilhelm_son_of_Cecilie a :Man ;
+    :hasRelation data:Dorothea_von_Salviati .
 

@@ -7,15 +7,25 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:Manuel_II_of_Portugal a :Person ;
+    rdfs:label "Manuel II of Portugal" ;
+    data:posIndicesFull "1935:1944",
+        "2134:2143" ;
+    data:posIndicesPart "2061:2067",
+        "2090:2098",
+        "2310:2318",
+        "2454:2462",
+        "2504:2512",
+        "2852:2860" ;
+    data:wdtLink wdt:Q154308 ;
+    :alsoKnownAs "Manuel II",
+        "Manuel the Patriot",
+        "Manuel the Unfortunate" ;
+    :hasParent data:Amélie_of_Orléans,
+        data:Carlos_I_of_Portugal ;
+    :hasSex data:male .
 
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Isabelle_dOrléans_1 a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Isabelle_dOrléans_1 a :Person ;
     rdfs:label "Princess Isabelle d’Orléans" ;
     data:posIndicesFull "313:331" ;
     data:posIndicesPart "1028:1036",
@@ -27,10 +37,40 @@ data:Princess_Isabelle_dOrléans_1 a :Person,
         "Princess Isabelle Françoise Hélène Marie d'Orléans" ;
     :hasSex data:female .
 
-data:Carlos_I_of_Portugal a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Amélie_of_Orléans a :Person ;
+    rdfs:label "Amélie of Orléans" ;
+    data:posIndicesFull "0:17",
+        "27:39",
+        "706:718" ;
+    data:posIndicesPart "1126:1132",
+        "1310:1316",
+        "1359:1365",
+        "1596:1602",
+        "1856:1862",
+        "2298:2304",
+        "2572:2578",
+        "352:359",
+        "371:377",
+        "442:449",
+        "776:782" ;
+    data:wdtLink wdt:Q236965 ;
+    :alsoKnownAs "Amelie of Orleans",
+        "Maria Amélia",
+        "Marie Amelie d'Orleans",
+        "Marie Amelie of Orleans",
+        "Marie Amélie d'Orléans",
+        "Marie Amélie of Orléans" ;
+    :hasParent data:Prince_Philippe-_Count_of_Paris,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female .
+
+data:Carlos_I_of_Portugal a :Person ;
     rdfs:label "Carlos I of Portugal" ;
     data:posIndicesFull "138:158" ;
     data:posIndicesPart "1137:1143",
@@ -55,16 +95,9 @@ data:Carlos_I_of_Portugal a :Ancestor,
         "King of Portugal Carlos Ferdinand-Louis-Marie-Francois d'Assise",
         "King of Portugal Carlos I",
         "King of Portugal Charles I" ;
-    :hasChild data:Manuel_II_of_Portugal ;
-    :hasSex data:male ;
-    :hasSon data:Manuel_II_of_Portugal ;
-    :isFatherOf data:Manuel_II_of_Portugal ;
-    :isParentOf data:Manuel_II_of_Portugal .
+    :hasSex data:male .
 
-data:Prince_Philippe-_Count_of_Paris a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Philippe-_Count_of_Paris a :Person ;
     rdfs:label "Prince Philippe, Count of Paris" ;
     data:posIndicesFull "261:292" ;
     data:posIndicesPart "1763:1769",
@@ -77,16 +110,9 @@ data:Prince_Philippe-_Count_of_Paris a :Ancestor,
     data:wdtLink wdt:Q354477 ;
     :alsoKnownAs "Louis-Philippe Albert d'Orléans",
         "Louis-Philippe-Albert d' Orléans" ;
-    :hasChild data:Amélie_of_Orléans ;
-    :hasDaughter data:Amélie_of_Orléans ;
-    :hasSex data:male ;
-    :isFatherOf data:Amélie_of_Orléans ;
-    :isParentOf data:Amélie_of_Orléans .
+    :hasSex data:male .
 
-data:Princess_María_Isabel_of_Orléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_María_Isabel_of_Orléans a :Person ;
     rdfs:label "Princess María Isabel of Orléans" ;
     data:posIndicesFull "307:321" ;
     data:posIndicesPart "1028:1036",
@@ -99,76 +125,9 @@ data:Princess_María_Isabel_of_Orléans a :Ancestor,
         "Maria Isabella",
         "Princess Maria Isabel of Orléans, Infanta of Spain",
         "Princess Marie Isabelle of Orleans" ;
-    :hasChild data:Amélie_of_Orléans ;
-    :hasDaughter data:Amélie_of_Orléans ;
-    :hasSex data:female ;
-    :isMotherOf data:Amélie_of_Orléans ;
-    :isParentOf data:Amélie_of_Orléans .
+    :hasSex data:female .
 
-data:Manuel_II_of_Portugal a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Manuel II of Portugal" ;
-    data:posIndicesFull "1935:1944",
-        "2134:2143" ;
-    data:posIndicesPart "2061:2067",
-        "2090:2098",
-        "2310:2318",
-        "2454:2462",
-        "2504:2512",
-        "2852:2860" ;
-    data:wdtLink wdt:Q154308 ;
-    :alsoKnownAs "Manuel II",
-        "Manuel the Patriot",
-        "Manuel the Unfortunate" ;
-    :hasFather data:Carlos_I_of_Portugal ;
-    :hasMother data:Amélie_of_Orléans ;
-    :hasParent data:Amélie_of_Orléans,
-        data:Carlos_I_of_Portugal ;
-    :hasSex data:male ;
-    :isChildOf data:Amélie_of_Orléans,
-        data:Carlos_I_of_Portugal ;
-    :isSonOf data:Amélie_of_Orléans,
-        data:Carlos_I_of_Portugal .
+data:female a :Female .
 
-data:Amélie_of_Orléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Amélie of Orléans" ;
-    data:posIndicesFull "0:17",
-        "27:39",
-        "706:718" ;
-    data:posIndicesPart "1126:1132",
-        "1310:1316",
-        "1359:1365",
-        "1596:1602",
-        "1856:1862",
-        "2298:2304",
-        "2572:2578",
-        "352:359",
-        "371:377",
-        "442:449",
-        "776:782" ;
-    data:wdtLink wdt:Q236965 ;
-    :alsoKnownAs "Amelie of Orleans",
-        "Maria Amélia",
-        "Marie Amelie d'Orleans",
-        "Marie Amelie of Orleans",
-        "Marie Amélie d'Orléans",
-        "Marie Amélie of Orléans" ;
-    :hasChild data:Manuel_II_of_Portugal ;
-    :hasFather data:Prince_Philippe-_Count_of_Paris ;
-    :hasMother data:Princess_María_Isabel_of_Orléans ;
-    :hasParent data:Prince_Philippe-_Count_of_Paris,
-        data:Princess_María_Isabel_of_Orléans ;
-    :hasSex data:female ;
-    :hasSon data:Manuel_II_of_Portugal ;
-    :isAuntOf data:Princess_Isabelle_dOrléans_1 ;
-    :isChildOf data:Prince_Philippe-_Count_of_Paris,
-        data:Princess_María_Isabel_of_Orléans ;
-    :isDaughterOf data:Prince_Philippe-_Count_of_Paris,
-        data:Princess_María_Isabel_of_Orléans ;
-    :isMotherOf data:Manuel_II_of_Portugal ;
-    :isParentOf data:Manuel_II_of_Portugal .
+data:male a :Male .
 

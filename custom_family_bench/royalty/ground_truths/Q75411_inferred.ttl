@@ -1,0 +1,173 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "186:206"^^xsd:string,
+        "219:234"^^xsd:string,
+        "235:251"^^xsd:string,
+        "273:288"^^xsd:string ;
+    data:posIndicesPart "1388:1397"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasChild data:Elizabeth_II ;
+    :hasDaughter data:Elizabeth_II ;
+    :hasRelation data:Elizabeth_II,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isAncestorOf data:Elizabeth_II ;
+    :isAuntOf data:Elizabeth_II ;
+    :isBloodrelationOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isMotherOf data:Elizabeth_II ;
+    :isParentOf data:Elizabeth_II ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:Elizabeth_II a :Person,
+        :Woman ;
+    rdfs:label "Elizabeth II"^^xsd:string ;
+    data:posIndicesFull "273:291"^^xsd:string,
+        "279:291"^^xsd:string ;
+    data:posIndicesPart "1388:1397"^^xsd:string ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary"^^xsd:string,
+        "Elizabeth Alexandra Mary Windsor"^^xsd:string,
+        "Queen Elizabeth II"^^xsd:string ;
+    :hasAncestor data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasRelation data:Elizabeth_II,
+        data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Elizabeth_II ;
+    :isBloodrelationOf data:Elizabeth_II ;
+    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Elizabeth_II ;
+    :isSisterOf data:Elizabeth_II .
+
+data:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Fenella Hepburn-Stuart-Forbes-Trefusis"^^xsd:string ;
+    data:posIndicesFull "653:691"^^xsd:string ;
+    data:posIndicesPart "1318:1325"^^xsd:string,
+        "1326:1334"^^xsd:string ;
+    data:wdtLink wdt:Q75381423 ;
+    :alsoKnownAs "Fenella Bowes-Lyon"^^xsd:string,
+        "Hon. Fenella Bowes-Lyon"^^xsd:string,
+        "Hon. Fenella Hepburn-Stuart-Forbes-Trefusis"^^xsd:string ;
+    :hasChild data:Princess_Anne_of_Denmark ;
+    :hasDaughter data:Princess_Anne_of_Denmark ;
+    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isAncestorOf data:Princess_Anne_of_Denmark ;
+    :isAuntOf data:Princess_Anne_of_Denmark ;
+    :isBloodrelationOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isMotherOf data:Princess_Anne_of_Denmark ;
+    :isParentOf data:Princess_Anne_of_Denmark ;
+    :isSiblingOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :isSisterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis .
+
+data:John_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "John Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "0:23"^^xsd:string,
+        "399:414"^^xsd:string ;
+    data:posIndicesPart "1112:1117"^^xsd:string,
+        "1118:1122"^^xsd:string,
+        "1298:1303"^^xsd:string,
+        "1304:1308"^^xsd:string,
+        "634:639"^^xsd:string,
+        "640:644"^^xsd:string,
+        "885:890"^^xsd:string,
+        "891:895"^^xsd:string ;
+    data:wdtLink wdt:Q75411 ;
+    :alsoKnownAs "Hon. John Bowes-Lyon"^^xsd:string,
+        "Hon. John Herbert \"Jock\" Bowes-Lyon"^^xsd:string,
+        "Hon. John Herbert Bowes-Lyon"^^xsd:string,
+        "Jock Bowes-Lyon"^^xsd:string,
+        "John Herbert Bowes-Lyon"^^xsd:string ;
+    :hasBrother data:John_Bowes-Lyon ;
+    :hasChild data:Princess_Anne_of_Denmark ;
+    :hasDaughter data:Princess_Anne_of_Denmark ;
+    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Anne_of_Denmark ;
+    :isBloodrelationOf data:John_Bowes-Lyon ;
+    :isBrotherOf data:John_Bowes-Lyon ;
+    :isFatherOf data:Princess_Anne_of_Denmark ;
+    :isParentOf data:Princess_Anne_of_Denmark ;
+    :isSiblingOf data:John_Bowes-Lyon ;
+    :isUncleOf data:Princess_Anne_of_Denmark .
+
+data:Princess_Anne_of_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Anne of Denmark"^^xsd:string ;
+    data:posIndicesFull "1068:1076"^^xsd:string ;
+    data:posIndicesPart "1379:1387"^^xsd:string ;
+    data:wdtLink wdt:Q2871729 ;
+    :alsoKnownAs "Anne Anson"^^xsd:string,
+        "Anne Anson, Viscountess Anson"^^xsd:string,
+        "Anne Bowes-Lyon"^^xsd:string,
+        "Anne Ferelith Fenella Anson"^^xsd:string,
+        "Anne Ferelith Fenella Anson, Viscountess Anson"^^xsd:string,
+        "Anne Ferelith Fenella Bowes-Lyon"^^xsd:string,
+        "Princess Anne Ferelith Fenella of Denmark"^^xsd:string ;
+    :hasAncestor data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasFather data:John_Bowes-Lyon ;
+    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis ;
+    :hasParent data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :hasRelation data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon,
+        data:Princess_Anne_of_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Anne_of_Denmark ;
+    :isBloodrelationOf data:Princess_Anne_of_Denmark ;
+    :isChildOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :isDaughterOf data:Fenella_Hepburn-Stuart-Forbes-Trefusis,
+        data:John_Bowes-Lyon ;
+    :isSiblingOf data:Princess_Anne_of_Denmark ;
+    :isSisterOf data:Princess_Anne_of_Denmark .
+

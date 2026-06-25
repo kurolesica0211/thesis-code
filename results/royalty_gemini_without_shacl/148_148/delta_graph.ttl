@@ -2,35 +2,31 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexandra_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :alsoKnownAs "Aline"^^xsd:string ;
-    :hasBirthYear 1870 ;
-    :hasChild data:Dmitri_Pavlovich,
-        data:Maria_Pavlovna ;
-    :hasDeathYear 1891 ;
-    :hasFather data:George_I_of_Greece ;
-    :hasMarriageYear 1889 ;
-    :hasMother data:Olga_Constantinovna_of_Russia ;
-    :hasRelation data:Paul_Alexandrovich_of_Russia ;
-    :knownAs "Alexandra"^^xsd:string .
+data:Karl_of_Leiningen a :Man ;
+    :hasBirthYear 1928 ;
+    :hasDeathYear 1990 ;
+    :hasFather data:Karl_6th_Prince_of_Leiningen ;
+    :hasMarriageYear 1956 ;
+    :hasMother data:Maria_Kirillovna_of_Russia ;
+    :hasRelation data:Marie_Louise_of_Bulgaria .
 
-data:George_I_of_Greece a :Ancestor,
-        :Man,
-        :Person .
+data:Boris_III_of_Bulgaria a :Man .
 
-data:Olga_Constantinovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman .
+data:Giovanna_of_Italy a :Woman .
 
-data:Paul_Alexandrovich_of_Russia a :Man,
-        :Person ;
-    :hasChild data:Dmitri_Pavlovich,
-        data:Maria_Pavlovna .
+data:Karl_6th_Prince_of_Leiningen a :Man ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1946 .
 
-data:Dmitri_Pavlovich a :Man,
-        :Person .
+data:Kirill_Vladimirovich_of_Russia a :Man .
 
-data:Maria_Pavlovna a :Person,
-        :Woman .
+data:Maria_Kirillovna_of_Russia a :Woman ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Victoria_Melita_of_Edinburgh .
+
+data:Marie_Louise_of_Bulgaria a :Woman ;
+    :hasFather data:Boris_III_of_Bulgaria ;
+    :hasMother data:Giovanna_of_Italy .
+
+data:Victoria_Melita_of_Edinburgh a :Woman .
 

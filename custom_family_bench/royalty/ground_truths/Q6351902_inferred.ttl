@@ -1,0 +1,88 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Princess_Feodora_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Feodora of Saxe-Meiningen"^^xsd:string ;
+    data:posIndicesFull "269:285"^^xsd:string,
+        "269:303"^^xsd:string ;
+    data:posIndicesPart "1330:1338"^^xsd:string,
+        "1362:1370"^^xsd:string,
+        "1916:1924"^^xsd:string,
+        "2215:2223"^^xsd:string,
+        "409:417"^^xsd:string,
+        "916:924"^^xsd:string ;
+    data:wdtLink wdt:Q66639 ;
+    :alsoKnownAs "Princess Feodora"^^xsd:string ;
+    :hasChild data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :hasDaughter data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :hasRelation data:Princess_Feodora_of_Saxe-Meiningen,
+        data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isAncestorOf data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :isAuntOf data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :isBloodrelationOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isMotherOf data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :isParentOf data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :isSiblingOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isSisterOf data:Princess_Feodora_of_Saxe-Meiningen .
+
+data:Princess_Sophie_of_Saxe-Weimar-Eisenach a :Person,
+        :Woman ;
+    rdfs:label "Princess Sophie of Saxe-Weimar-Eisenach"^^xsd:string ;
+    data:posIndicesFull "0:46"^^xsd:string ;
+    data:posIndicesPart "1064:1070"^^xsd:string,
+        "1330:1338"^^xsd:string,
+        "1362:1370"^^xsd:string,
+        "1411:1417"^^xsd:string,
+        "151:157"^^xsd:string,
+        "1668:1674"^^xsd:string,
+        "1796:1802"^^xsd:string,
+        "1916:1924"^^xsd:string,
+        "1925:1931"^^xsd:string,
+        "2083:2089"^^xsd:string,
+        "2215:2223"^^xsd:string,
+        "2240:2246"^^xsd:string,
+        "227:231"^^xsd:string,
+        "232:238"^^xsd:string,
+        "239:247"^^xsd:string,
+        "353:359"^^xsd:string,
+        "409:417"^^xsd:string,
+        "520:526"^^xsd:string,
+        "630:636"^^xsd:string,
+        "688:694"^^xsd:string,
+        "916:924"^^xsd:string ;
+    data:wdtLink wdt:Q6351902 ;
+    :alsoKnownAs "Princess Sophie Louise of Saxe-Weimar-Eisenach"^^xsd:string,
+        "Sophie Luise Prinzessin von Sachsen-Weimar-Eisenach"^^xsd:string ;
+    :hasAncestor data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasMother data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasParent data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasRelation data:Princess_Feodora_of_Saxe-Meiningen,
+        data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :isBloodrelationOf data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :isChildOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isDaughterOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isSiblingOf data:Princess_Sophie_of_Saxe-Weimar-Eisenach ;
+    :isSisterOf data:Princess_Sophie_of_Saxe-Weimar-Eisenach .
+

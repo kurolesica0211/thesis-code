@@ -69,23 +69,21 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Gabriele of Bourbon-Two Sicilies (Gabriele Maria Giuseppe Carlo Ignazio Antonio Alfonso Pietro Giovanni Gerardo di Majella et Omni Sancti; 11 January 1897 – 22 October 1975) was a prince of the deposed dynasty which ruled the Kingdom of the Two Sicilies.
+Prince Philip of Bourbon-Two Sicilies (Filippo Maria Alfonso Antonio Ferdinando Francesco di Paola Lodovico Enrico Alberto Taddeo Francesco Saverio Uberto; 10 December 1885 – 9 March 1949) was a member of the House of Bourbon-Two Sicilies and a Prince of Bourbon-Two Sicilies.
 Family
 
-Gabriel was the twelfth child and youngest son of Prince Alfonso, Count of Caserta, and his wife, Princess Maria Antonietta of Bourbon-Two Sicilies.
+Prince Philip was the tenth child of Prince Alfonso of Bourbon-Two Sicilies, Count of Caserta, and his wife, Princess Maria Antonietta of Bourbon-Two Sicilies.
 Marriage and issue
 
-Gabriel married firstly Princess Malgorzata Izabella Czartoryska, daughter of Prince Adam Ludwik Czartoryski and Countess Maria Ludwika Krasińska, on 25 August 1927 in Paris.
-The couple had one child before Malgorzata died in Cannes on 8 March 1929:
-
-
-Gabriel married, secondly, Princess Cecylia Lubomirska, daughter of Prince Kasimierz Lubomirski and Countess Maria Theresia Granow-Wodicka, on 15 September 1932 in Kraków.
+Philip married firstly to Princess Marie Louise of Orléans, eldest daughter and child of Prince Emmanuel, Duke of Vendôme and his wife Princess Henriette of Belgium, on 12 January 1916 in Neuilly-sur-Seine.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -101,39 +99,9 @@ Gabriel married, secondly, Princess Cecylia Lubomirska, daughter of Prince Kasim
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -148,6 +116,23 @@ Gabriel married, secondly, Princess Cecylia Lubomirska, daughter of Prince Kasim
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -165,6 +150,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -232,29 +232,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -263,6 +255,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -275,6 +275,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -283,17 +285,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -321,6 +325,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -336,179 +424,117 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e6e35022-84e1-414b-9685-8184ff807fa3)
- Call ID: e6e35022-84e1-414b-9685-8184ff807fa3
+  AssignClass (a025de49-52ea-41ab-86f3-02e83878e6ab)
+ Call ID: a025de49-52ea-41ab-86f3-02e83878e6ab
   Args:
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
     type: :Man
-  AssignClass (a513bd26-146a-4555-be22-10732257572e)
- Call ID: a513bd26-146a-4555-be22-10732257572e
+  AssignClass (33ba342d-9526-4d41-b9db-d0f0ead5489f)
+ Call ID: 33ba342d-9526-4d41-b9db-d0f0ead5489f
   Args:
     type: :Person
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
-  AddLiteral (1ed2c7b6-c7ff-4e8a-b3c9-d5e63796edd0)
- Call ID: 1ed2c7b6-c7ff-4e8a-b3c9-d5e63796edd0
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
+  AddLiteral (4c0c4ea3-1eae-48fa-bca0-4dcd409d67fb)
+ Call ID: 4c0c4ea3-1eae-48fa-bca0-4dcd409d67fb
   Args:
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
+    literal_type: xsd:integer
+    literal_value: 1885
     relation: :hasBirthYear
-    literal_value: 1897
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
-    literal_type: xsd:integer
-  AddLiteral (16c248b0-3b77-4cc8-9d05-08939e7f61a9)
- Call ID: 16c248b0-3b77-4cc8-9d05-08939e7f61a9
+  AddLiteral (9b8d45ee-ad8a-499b-a260-24cce4ee4018)
+ Call ID: 9b8d45ee-ad8a-499b-a260-24cce4ee4018
   Args:
+    literal_value: 1949
     relation: :hasDeathYear
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
-    literal_value: 1975
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
     literal_type: xsd:integer
-  AssignClass (5752f010-6216-4eb9-b2c7-d88904683782)
- Call ID: 5752f010-6216-4eb9-b2c7-d88904683782
+  AssignClass (d1f097d5-14ac-46dc-bfd0-dd3c4c277857)
+ Call ID: d1f097d5-14ac-46dc-bfd0-dd3c4c277857
   Args:
-    source: Prince_Alfonso_Count_of_Caserta
     type: :Man
-  AssignClass (5ec67ba9-5547-4a92-ba1a-106c62c23d96)
- Call ID: 5ec67ba9-5547-4a92-ba1a-106c62c23d96
+    source: Prince_Alfonso_of_Bourbon-Two_Sicilies
+  AssignClass (52d92fc3-bca9-47f2-9417-03ecb62d6a69)
+ Call ID: 52d92fc3-bca9-47f2-9417-03ecb62d6a69
   Args:
+    source: Prince_Alfonso_of_Bourbon-Two_Sicilies
     type: :Person
-    source: Prince_Alfonso_Count_of_Caserta
-  AssignClass (ac1dc5bd-4c98-4298-b46e-c1ba80edc9e3)
- Call ID: ac1dc5bd-4c98-4298-b46e-c1ba80edc9e3
+  AssignClass (37c5e362-b62e-4c00-baf0-cb837d7b6259)
+ Call ID: 37c5e362-b62e-4c00-baf0-cb837d7b6259
   Args:
     source: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
     type: :Woman
-  AssignClass (4c966dde-1db8-43d8-942f-78f324d06757)
- Call ID: 4c966dde-1db8-43d8-942f-78f324d06757
+  AssignClass (5398ae13-9e90-4b94-b735-938774703e99)
+ Call ID: 5398ae13-9e90-4b94-b735-938774703e99
   Args:
-    source: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
     type: :Person
-  AddTriple (12d6c129-e5b7-469d-a90b-4d0d646adeb4)
- Call ID: 12d6c129-e5b7-469d-a90b-4d0d646adeb4
+    source: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
+  AddTriple (8a996b72-c801-481b-8b78-9708de6bc590)
+ Call ID: 8a996b72-c801-481b-8b78-9708de6bc590
   Args:
+    target: Prince_Alfonso_of_Bourbon-Two_Sicilies
     relation: :hasFather
-    target: Prince_Alfonso_Count_of_Caserta
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
-  AddTriple (3e3621e3-080a-4139-b5b2-bf7598dd4d9a)
- Call ID: 3e3621e3-080a-4139-b5b2-bf7598dd4d9a
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
+  AddTriple (0b8a2b43-83f0-432e-9e0a-230e7df14a0e)
+ Call ID: 0b8a2b43-83f0-432e-9e0a-230e7df14a0e
   Args:
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
+    relation: :hasMother
     target: Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies
-    relation: :hasMother
-  AssignClass (79135acb-cb20-4ac3-997f-b67fc8e1c861)
- Call ID: 79135acb-cb20-4ac3-997f-b67fc8e1c861
-  Args:
-    source: Princess_Malgorzata_Izabella_Czartoryska
-    type: :Woman
-  AssignClass (0fa4d375-4e1e-4d24-8abb-47553ee93467)
- Call ID: 0fa4d375-4e1e-4d24-8abb-47553ee93467
-  Args:
-    source: Princess_Malgorzata_Izabella_Czartoryska
-    type: :Person
-  AssignClass (c7464631-2d21-45d7-b6a6-cd3d2ee86d8f)
- Call ID: c7464631-2d21-45d7-b6a6-cd3d2ee86d8f
-  Args:
-    type: :Man
-    source: Prince_Adam_Ludwik_Czartoryski
-  AssignClass (2fff2ed9-5687-408f-b4b4-2cf98bb58c57)
- Call ID: 2fff2ed9-5687-408f-b4b4-2cf98bb58c57
-  Args:
-    source: Prince_Adam_Ludwik_Czartoryski
-    type: :Person
-  AssignClass (05fc6520-91bf-49b1-afd3-b1bdfdae7d64)
- Call ID: 05fc6520-91bf-49b1-afd3-b1bdfdae7d64
-  Args:
-    source: Countess_Maria_Ludwika_Krasinska
-    type: :Woman
-  AssignClass (9e5eaa7a-6d7b-49e4-92ba-15ef09ba7c3a)
- Call ID: 9e5eaa7a-6d7b-49e4-92ba-15ef09ba7c3a
-  Args:
-    type: :Person
-    source: Countess_Maria_Ludwika_Krasinska
-  AddTriple (98912396-d7b8-45a4-b749-9879bd21f7f2)
- Call ID: 98912396-d7b8-45a4-b749-9879bd21f7f2
-  Args:
-    relation: :hasFather
-    target: Prince_Adam_Ludwik_Czartoryski
-    source: Princess_Malgorzata_Izabella_Czartoryska
-  AddTriple (1746bde9-fa86-476b-866f-ee95750d4df5)
- Call ID: 1746bde9-fa86-476b-866f-ee95750d4df5
-  Args:
-    source: Princess_Malgorzata_Izabella_Czartoryska
-    target: Countess_Maria_Ludwika_Krasinska
-    relation: :hasMother
-  AddLiteral (86f92ba4-03e4-48fe-b2f4-5b7454051cbd)
- Call ID: 86f92ba4-03e4-48fe-b2f4-5b7454051cbd
-  Args:
-    literal_type: xsd:integer
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
-    literal_value: 1927
-    relation: :hasMarriageYear
-  AddTriple (eedcbba0-1ee8-47da-8014-ee560df5995f)
- Call ID: eedcbba0-1ee8-47da-8014-ee560df5995f
-  Args:
-    target: Princess_Malgorzata_Izabella_Czartoryska
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
-    relation: :hasRelation
-  AddLiteral (797b2bcc-bd7b-429c-9f1d-f04b21975d55)
- Call ID: 797b2bcc-bd7b-429c-9f1d-f04b21975d55
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1929
-    source: Princess_Malgorzata_Izabella_Czartoryska
-    relation: :hasDeathYear
-  AssignClass (3ecf4efb-1630-4b7a-b2b3-ea3182fa1d34)
- Call ID: 3ecf4efb-1630-4b7a-b2b3-ea3182fa1d34
-  Args:
-    source: Princess_Cecylia_Lubomirska
-    type: :Woman
-  AssignClass (2c61f17f-1beb-4340-9af2-ac5ec2a51bef)
- Call ID: 2c61f17f-1beb-4340-9af2-ac5ec2a51bef
-  Args:
-    type: :Person
-    source: Princess_Cecylia_Lubomirska
-  AssignClass (c6d40f65-cb73-4165-baa6-82826ff66b9a)
- Call ID: c6d40f65-cb73-4165-baa6-82826ff66b9a
-  Args:
-    type: :Man
-    source: Prince_Kasimierz_Lubomirski
-  AssignClass (40edf764-0900-4d18-af78-4c9d4878149a)
- Call ID: 40edf764-0900-4d18-af78-4c9d4878149a
-  Args:
-    type: :Person
-    source: Prince_Kasimierz_Lubomirski
-  AssignClass (2d51e7c9-ed92-4af3-8053-51ea900e33b6)
- Call ID: 2d51e7c9-ed92-4af3-8053-51ea900e33b6
+  AssignClass (085ff1fa-e5dc-4da2-b689-35e92ad9c80f)
+ Call ID: 085ff1fa-e5dc-4da2-b689-35e92ad9c80f
   Args:
     type: :Woman
-    source: Countess_Maria_Theresia_Granow-Wodicka
-  AssignClass (fdb5209a-5b15-4053-9521-e230ddbf62cb)
- Call ID: fdb5209a-5b15-4053-9521-e230ddbf62cb
+    source: Princess_Marie_Louise_of_Orléans
+  AssignClass (8176fd1d-de13-4414-b2a4-984f694b8f59)
+ Call ID: 8176fd1d-de13-4414-b2a4-984f694b8f59
   Args:
-    source: Countess_Maria_Theresia_Granow-Wodicka
+    source: Princess_Marie_Louise_of_Orléans
     type: :Person
-  AddTriple (05395020-14fa-495d-b855-2a944c092a72)
- Call ID: 05395020-14fa-495d-b855-2a944c092a72
-  Args:
-    relation: :hasFather
-    target: Prince_Kasimierz_Lubomirski
-    source: Princess_Cecylia_Lubomirska
-  AddTriple (a355338c-9387-4e46-abd4-d12531759359)
- Call ID: a355338c-9387-4e46-abd4-d12531759359
-  Args:
-    relation: :hasMother
-    source: Princess_Cecylia_Lubomirska
-    target: Countess_Maria_Theresia_Granow-Wodicka
-  AddLiteral (9831e227-f9f8-46e0-a17d-b665b0bf9819)
- Call ID: 9831e227-f9f8-46e0-a17d-b665b0bf9819
+  AddLiteral (5020b4e0-2c1c-4b03-aa8f-1229051c53d6)
+ Call ID: 5020b4e0-2c1c-4b03-aa8f-1229051c53d6
   Args:
     relation: :hasMarriageYear
+    literal_value: 1916
     literal_type: xsd:integer
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
-    literal_value: 1932
-  AddTriple (22af39e9-26f4-4104-95a5-ebe77f97109d)
- Call ID: 22af39e9-26f4-4104-95a5-ebe77f97109d
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
+  AddTriple (e92516aa-c1c0-4d99-8b31-a2db0abecc8f)
+ Call ID: e92516aa-c1c0-4d99-8b31-a2db0abecc8f
   Args:
-    source: Prince_Gabriele_of_Bourbon-Two_Sicilies
-    target: Princess_Cecylia_Lubomirska
+    source: Prince_Philip_of_Bourbon-Two_Sicilies
     relation: :hasRelation
-  Finish (d8924afe-dd9e-4986-8873-5a41a8793412)
- Call ID: d8924afe-dd9e-4986-8873-5a41a8793412
+    target: Princess_Marie_Louise_of_Orléans
+  AssignClass (c8c582e6-82c8-4411-ada6-4d8d4f8d2f26)
+ Call ID: c8c582e6-82c8-4411-ada6-4d8d4f8d2f26
+  Args:
+    source: Prince_Emmanuel_Duke_of_Vendôme
+    type: :Man
+  AssignClass (2450399f-56ab-455a-b785-8301009b3827)
+ Call ID: 2450399f-56ab-455a-b785-8301009b3827
+  Args:
+    type: :Person
+    source: Prince_Emmanuel_Duke_of_Vendôme
+  AssignClass (adc8197f-bee6-42da-a3aa-40c850f2f4c2)
+ Call ID: adc8197f-bee6-42da-a3aa-40c850f2f4c2
+  Args:
+    type: :Woman
+    source: Princess_Henriette_of_Belgium
+  AssignClass (c048fdd2-e9d3-44e9-a63c-9fa9a1f1f13e)
+ Call ID: c048fdd2-e9d3-44e9-a63c-9fa9a1f1f13e
+  Args:
+    type: :Person
+    source: Princess_Henriette_of_Belgium
+  AddTriple (a90c48b9-d20e-4ad9-8744-65c0ed251b95)
+ Call ID: a90c48b9-d20e-4ad9-8744-65c0ed251b95
+  Args:
+    relation: :hasFather
+    target: Prince_Emmanuel_Duke_of_Vendôme
+    source: Princess_Marie_Louise_of_Orléans
+  AddTriple (99331121-f645-41e0-892b-b6e819467846)
+ Call ID: 99331121-f645-41e0-892b-b6e819467846
+  Args:
+    source: Princess_Marie_Louise_of_Orléans
+    target: Princess_Henriette_of_Belgium
+    relation: :hasMother
+  Finish (fe228535-371b-429b-9cbb-091be7657e4f)
+ Call ID: fe228535-371b-429b-9cbb-091be7657e4f
   Args:

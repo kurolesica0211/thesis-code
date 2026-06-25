@@ -7,32 +7,41 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Princess_Margaret_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Margaret of Prussia" ;
-    data:posIndicesFull "14193:14198",
-        "14974:14979" ;
-    data:posIndicesPart "15921:15929",
-        "16695:16703",
-        "16985:16993",
-        "17144:17152" ;
-    data:wdtLink wdt:Q61338 ;
-    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
-        "Margaret of Prussia",
-        "Margaret of Prussia, Queen consort-elect of Finland",
-        "Margaret of Prussia, Queen-elect of Finland",
-        "Margarethe Beatrice Feodora of Prussia",
-        "Margarethe of Prussia",
-        "Mossy",
-        "Princess Frederick Charles of Hesse",
-        "Princess Margaret Beatrice Feodora of Prussia",
-        "Princess Margarethe Beatrice Feodora of Prussia",
-        "Princess Margarethe of Prussia" ;
-    :hasSex data:female ;
-    :isAuntOf data:Alexander_of_Greece,
-        data:George_II_of_Greece .
+data:George_II_of_Greece a :Person ;
+    rdfs:label "George II of Greece" ;
+    data:posIndicesFull "10004:10023",
+        "8697:8721",
+        "8702:8721" ;
+    data:posIndicesPart "11594:11600",
+        "11875:11881",
+        "13652:13658",
+        "13845:13851",
+        "16457:16463",
+        "8896:8902",
+        "8963:8969" ;
+    data:wdtLink wdt:Q152935 ;
+    :alsoKnownAs "King George II of Greece" ;
+    :hasParent data:Constantine_I_of_Greece ;
+    :hasSex data:male .
+
+data:Prince_Alexander_of_Serbia_1 a :Person ;
+    rdfs:label "Prince Alexander of Serbia" ;
+    data:posIndicesFull "15513:15543" ;
+    data:posIndicesPart "15969:15975",
+        "16223:16229",
+        "16237:16243",
+        "16255:16261",
+        "16262:16271",
+        "16541:16547",
+        "16717:16723" ;
+    data:wdtLink wdt:Q3268153 ;
+    :alsoKnownAs "Alexander Karageorgevitch",
+        "Alexander Karageorgievich, Prince of Yugoslavia",
+        "Prince Alexander of Yugoslavia",
+        "Prince Alexander of Yugoslavia (born 1982)" ;
+    :hasParent data:Alexander-_Crown_Prince_of_Serbia,
+        data:Princess_Maria_da_Glória-_Duchess_of_Segorbe ;
+    :hasSex data:male .
 
 data:posIndicesFull a owl:AnnotationProperty .
 
@@ -40,563 +49,295 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Constantine_II_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Constantine II of Greece" ;
-    data:posIndicesFull "17390:17406",
-        "17395:17409",
-        "3560:3576",
-        "4178:4194",
-        "5317:5333",
-        "5721:5737",
-        "7913:7929",
-        "8563:8579" ;
-    data:posIndicesPart "14701:14707",
-        "14894:14900",
-        "17002:17008",
-        "17506:17512",
-        "4780:4786",
-        "5237:5243",
-        "6022:6028",
-        "6375:6381",
-        "6416:6422",
-        "7316:7322",
-        "7552:7558",
-        "9349:9355",
-        "9867:9873",
-        "9934:9940" ;
-    data:wdtLink wdt:Q151773 ;
-    :alsoKnownAs "Constantine 2 of Greece",
-        "Constantine Glucksburg",
-        "Constantine II",
-        "Constantino de Grecia",
-        "King Constantine",
-        "Konstantinos 2",
-        "Konstantinos II",
-        "Konstantinos II of Greece",
-        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
-        "Konstantínos 2",
-        "Konstantínos II" ;
-    :hasSex data:male .
-
-data:Aspasia_Manos a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Aspasia Manos" ;
-    data:posIndicesFull "317:330",
-        "3344:3357" ;
-    data:posIndicesPart "10299:10306",
-        "1276:1283",
-        "17153:17160",
-        "3861:3868",
-        "4341:4348",
-        "4970:4977",
-        "5392:5399",
-        "5939:5946",
-        "6041:6048",
-        "6917:6924",
-        "7189:7196",
-        "8769:8776" ;
-    data:wdtLink wdt:Q240442 ;
-    :alsoKnownAs "Aspasia Manou",
-        "Princess Aspasia of Greece and Denmark" ;
-    :hasChild data:Alexandra_of_Yugoslavia ;
-    :hasDaughter data:Alexandra_of_Yugoslavia ;
-    :hasSex data:female ;
-    :isMotherOf data:Alexandra_of_Yugoslavia ;
-    :isParentOf data:Alexandra_of_Yugoslavia .
-
-data:Peter_II_of_Yugoslavia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Peter II of Yugoslavia" ;
-    data:posIndicesFull "10134:10156",
-        "1748:1770" ;
-    data:posIndicesPart "10356:10366",
-        "10368:10373",
-        "10479:10489",
-        "10585:10590",
-        "10833:10838",
-        "11338:11348",
-        "11389:11399",
-        "11532:11542",
-        "11718:11728",
-        "12099:12104",
-        "12273:12278",
-        "12700:12710",
-        "12977:12982",
-        "13092:13102",
-        "13279:13289",
-        "13542:13552",
-        "13681:13691",
-        "13693:13698",
-        "14106:14111",
-        "14518:14523",
-        "14754:14759",
-        "15357:15362",
-        "15441:15451",
-        "15584:15589",
-        "15958:15963",
-        "15996:16006",
-        "16057:16062",
-        "16187:16192",
-        "16309:16314",
-        "17040:17050",
-        "17279:17284",
-        "17700:17705",
-        "1870:1875",
-        "1935:1940",
-        "2178:2188",
-        "2323:2333",
-        "2476:2481",
-        "2669:2674" ;
-    data:wdtLink wdt:Q223183 ;
-    :alsoKnownAs "Petar II Karađorđević" ;
-    :hasChild data:Alexander-_Crown_Prince_of_Serbia ;
-    :hasSex data:male ;
-    :hasSon data:Alexander-_Crown_Prince_of_Serbia ;
-    :isFatherOf data:Alexander-_Crown_Prince_of_Serbia ;
-    :isParentOf data:Alexander-_Crown_Prince_of_Serbia .
-
-data:Prince_Alexander_of_Serbia_1 a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Alexander of Serbia" ;
-    data:posIndicesFull "16562:16592" ;
-    data:posIndicesPart "17018:17024",
-        "17272:17278",
-        "17286:17292",
-        "17304:17310",
-        "17311:17320",
-        "17590:17596",
-        "17766:17772" ;
-    data:wdtLink wdt:Q3268153 ;
-    :alsoKnownAs "Alexander Karageorgevitch",
-        "Alexander Karageorgievich, Prince of Yugoslavia",
-        "Prince Alexander of Yugoslavia",
-        "Prince Alexander of Yugoslavia (born 1982)" ;
-    :hasFather data:Alexander-_Crown_Prince_of_Serbia ;
-    :hasParent data:Alexander-_Crown_Prince_of_Serbia ;
-    :hasSex data:male ;
-    :isChildOf data:Alexander-_Crown_Prince_of_Serbia ;
-    :isSonOf data:Alexander-_Crown_Prince_of_Serbia .
-
-data:Princess_Alexandra_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Alexandra of Greece and Denmark" ;
-    data:posIndicesFull "104:144",
-        "113:144",
-        "648:688",
-        "657:688" ;
-    data:posIndicesPart "10058:10067",
-        "10098:10106",
-        "10290:10298",
-        "10695:10704",
-        "10846:10854",
-        "1111:1120",
-        "11401:11410",
-        "12141:12150",
-        "12323:12332",
-        "1249:1257",
-        "12683:12692",
-        "13706:13715",
-        "13850:13859",
-        "13950:13959",
-        "1430:1439",
-        "14528:14537",
-        "14576:14585",
-        "14701:14707",
-        "14894:14900",
-        "15005:15014",
-        "15080:15089",
-        "15297:15306",
-        "15637:15646",
-        "15727:15736",
-        "15921:15929",
-        "1598:1604",
-        "16025:16034",
-        "16252:16261",
-        "16439:16448",
-        "16695:16703",
-        "16906:16915",
-        "16985:16993",
-        "17002:17008",
-        "1709:1718",
-        "17125:17134",
-        "17144:17152",
-        "17182:17191",
-        "17432:17441",
-        "17506:17512",
-        "17550:17559",
-        "1856:1865",
-        "2113:2122",
-        "2338:2347",
-        "2587:2596",
-        "2687:2696",
-        "2808:2814",
-        "2977:2986",
-        "3178:3184",
-        "4327:4336",
-        "4705:4713",
-        "4768:4776",
-        "4780:4786",
-        "4791:4798",
-        "4806:4815",
-        "5225:5233",
-        "5237:5243",
-        "5248:5255",
-        "5419:5427",
-        "5431:5437",
-        "5442:5449",
-        "5582:5591",
-        "5632:5638",
-        "5858:5867",
-        "5951:5960",
-        "6022:6028",
-        "6147:6156",
-        "6260:6268",
-        "6314:6322",
-        "6375:6381",
-        "6416:6422",
-        "6557:6566",
-        "6653:6662",
-        "6777:6785",
-        "6986:6995",
-        "7316:7322",
-        "7407:7416",
-        "7512:7521",
-        "7552:7558",
-        "7718:7726",
-        "773:779",
-        "8100:8108",
-        "8215:8224",
-        "8360:8369",
-        "8405:8413",
-        "8834:8842",
-        "9011:9020",
-        "9200:9209",
-        "9349:9355",
-        "9413:9422",
-        "9616:9625",
-        "983:991",
-        "9848:9856",
-        "9867:9873",
-        "9934:9940",
-        "9985:9994" ;
-    data:wdtLink wdt:Q232728 ;
-    :alsoKnownAs "Alexandra Georgievna of Russia",
-        "Alexandra of Greece and Denmark",
-        "Grand Duchess Alexandra Georgievna, Grand Duchess Pavlovna of Russia" ;
-    :hasBrother data:Constantine_I_of_Greece ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Maria_of_Greece_and_Denmark ;
-    :isAuntOf data:Alexander_of_Greece,
-        data:George_II_of_Greece ;
-    :isSiblingOf data:Constantine_I_of_Greece,
-        data:Princess_Maria_of_Greece_and_Denmark ;
-    :isSisterOf data:Constantine_I_of_Greece,
-        data:Princess_Maria_of_Greece_and_Denmark .
-
-data:Princess_Maria_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Maria of Greece and Denmark" ;
-    data:posIndicesFull "10747:10756" ;
-    data:posIndicesPart "14701:14707",
-        "14894:14900",
-        "15921:15929",
-        "16695:16703",
-        "16704:16709",
-        "16985:16993",
-        "17002:17008",
-        "17144:17152",
-        "17506:17512",
-        "17741:17746" ;
-    data:wdtLink wdt:Q232732 ;
-    :alsoKnownAs "Grand Duchess Maria Georgievna, Grand Duchess Georgievna of Russia",
-        "Grand Duchess Maria Georgievna, Grand Duchess Georgievna of Russia, Princess of Greece and Denmark",
-        "Grand Duchess Maria Georgievna, The Grand Duchess Georgievna of Russia",
-        "Grand Duchess Maria Georgievna, The Grand Duchess Georgievna of Russia, Princess of Greece and Denmark",
-        "Laci Marie",
-        "The Princess Maria of Greece and Denmark" ;
-    :hasBrother data:Constantine_I_of_Greece ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Alexandra_of_Greece_and_Denmark ;
-    :isAuntOf data:Alexander_of_Greece,
-        data:George_II_of_Greece ;
-    :isSiblingOf data:Constantine_I_of_Greece,
-        data:Princess_Alexandra_of_Greece_and_Denmark ;
-    :isSisterOf data:Constantine_I_of_Greece,
-        data:Princess_Alexandra_of_Greece_and_Denmark .
-
-data:George_II_of_Greece a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George II of Greece" ;
-    data:posIndicesFull "10975:10994",
-        "9668:9692",
-        "9673:9692" ;
-    data:posIndicesPart "12565:12571",
-        "12846:12852",
-        "14701:14707",
-        "14894:14900",
-        "17002:17008",
-        "17506:17512",
-        "9867:9873",
-        "9934:9940" ;
-    data:wdtLink wdt:Q152935 ;
-    :alsoKnownAs "King George II of Greece" ;
-    :hasBrother data:Alexander_of_Greece ;
-    :hasFather data:Constantine_I_of_Greece ;
-    :hasParent data:Constantine_I_of_Greece ;
-    :hasSex data:male ;
-    :isBrotherOf data:Alexander_of_Greece ;
-    :isChildOf data:Constantine_I_of_Greece ;
-    :isSiblingOf data:Alexander_of_Greece ;
-    :isSonOf data:Constantine_I_of_Greece ;
-    :isUncleOf data:Alexandra_of_Yugoslavia,
-        data:Constantine_II_of_Greece .
-
-data:Alexander-_Crown_Prince_of_Serbia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alexander-_Crown_Prince_of_Serbia a :Person ;
     rdfs:label "Alexander, Crown Prince of Serbia" ;
-    data:posIndicesFull "16556:16592" ;
-    data:posIndicesPart "17018:17024",
-        "17272:17278",
-        "17286:17292",
-        "17304:17310",
-        "17311:17320",
-        "17590:17596",
-        "17766:17772" ;
+    data:posIndicesFull "15507:15543" ;
+    data:posIndicesPart "15969:15975",
+        "16223:16229",
+        "16237:16243",
+        "16255:16261",
+        "16262:16271",
+        "16541:16547",
+        "16717:16723" ;
     data:wdtLink wdt:Q815126 ;
     :alsoKnownAs "Aleksandar Karađorđević",
         "Alexander Karageorgievich, Crown Prince of Yugoslavia",
         "Crown Prince Alexander Karađorđević",
         "Crown Prince Alexander of Yugoslavia" ;
-    :hasChild data:Prince_Alexander_of_Serbia_1 ;
-    :hasFather data:Peter_II_of_Yugoslavia ;
-    :hasMother data:Alexandra_of_Yugoslavia ;
     :hasParent data:Alexandra_of_Yugoslavia,
         data:Peter_II_of_Yugoslavia ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Alexander_of_Serbia_1 ;
-    :isChildOf data:Alexandra_of_Yugoslavia,
-        data:Peter_II_of_Yugoslavia ;
-    :isFatherOf data:Prince_Alexander_of_Serbia_1 ;
-    :isParentOf data:Prince_Alexander_of_Serbia_1 ;
-    :isSonOf data:Alexandra_of_Yugoslavia,
-        data:Peter_II_of_Yugoslavia .
+    :hasSex data:male .
 
-data:Alexandra_of_Yugoslavia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Alexandra of Yugoslavia" ;
-    data:posIndicesFull "113:132",
-        "12400:12423",
-        "12428:12447",
-        "16569:16592",
-        "272:291",
-        "657:676" ;
-    data:posIndicesPart "10058:10067",
-        "10356:10366",
-        "10479:10489",
-        "10695:10704",
-        "1111:1120",
-        "11338:11348",
-        "11389:11399",
-        "11401:11410",
-        "11532:11542",
-        "11718:11728",
-        "12141:12150",
-        "12683:12692",
-        "12700:12710",
-        "13092:13102",
-        "13279:13289",
-        "13542:13552",
-        "13681:13691",
-        "13706:13715",
-        "13850:13859",
-        "13950:13959",
-        "1430:1439",
-        "14528:14537",
-        "14576:14585",
-        "15005:15014",
-        "15080:15089",
-        "15297:15306",
-        "15441:15451",
-        "15637:15646",
-        "15727:15736",
-        "15996:16006",
-        "16025:16034",
-        "16252:16261",
-        "16439:16448",
-        "16906:16915",
-        "17040:17050",
-        "1709:1718",
-        "17125:17134",
-        "17182:17191",
-        "17432:17441",
-        "17550:17559",
-        "1856:1865",
-        "2113:2122",
-        "2178:2188",
-        "2323:2333",
-        "2338:2347",
-        "2587:2596",
-        "2687:2696",
-        "2977:2986",
-        "4327:4336",
-        "4806:4815",
-        "5582:5591",
-        "5858:5867",
-        "5951:5960",
-        "6147:6156",
-        "6557:6566",
-        "6653:6662",
-        "6986:6995",
-        "7407:7416",
-        "7512:7521",
-        "8215:8224",
-        "8360:8369",
-        "9011:9020",
-        "9200:9209",
-        "9413:9422",
-        "9616:9625",
-        "9985:9994" ;
-    data:wdtLink wdt:Q167423 ;
-    :alsoKnownAs "Alexandra Oldenburg Karadjordjevic",
-        "Alexandra of Greece",
-        "Alexandra of Greece, Queen of Yugoslavia" ;
-    :hasChild data:Alexander-_Crown_Prince_of_Serbia ;
-    :hasFather data:Alexander_of_Greece ;
-    :hasMother data:Aspasia_Manos ;
-    :hasParent data:Alexander_of_Greece,
-        data:Aspasia_Manos ;
-    :hasSex data:female ;
-    :hasSon data:Alexander-_Crown_Prince_of_Serbia ;
-    :isChildOf data:Alexander_of_Greece,
-        data:Aspasia_Manos ;
-    :isDaughterOf data:Alexander_of_Greece,
-        data:Aspasia_Manos ;
-    :isMotherOf data:Alexander-_Crown_Prince_of_Serbia ;
-    :isParentOf data:Alexander-_Crown_Prince_of_Serbia .
-
-data:Alexander_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alexander_of_Greece a :Person ;
     rdfs:label "Alexander of Greece" ;
     data:posIndicesFull "113:132",
-        "12428:12447",
+        "11457:11476",
         "267:291",
         "272:291",
         "657:676" ;
-    data:posIndicesPart "14303:14312",
-        "14701:14707",
-        "14894:14900",
-        "15823:15832",
-        "1598:1604",
-        "17002:17008",
-        "17311:17320",
-        "17506:17512",
-        "2151:2160",
-        "2808:2814",
-        "3013:3022",
-        "3178:3184",
-        "3601:3610",
-        "3983:3992",
-        "4780:4786",
-        "5237:5243",
-        "5431:5437",
-        "5632:5638",
-        "6022:6028",
-        "6375:6381",
-        "6416:6422",
-        "7316:7322",
-        "7552:7558",
+    data:posIndicesPart "13254:13263",
+        "13652:13658",
+        "13845:13851",
+        "1411:1417",
+        "14774:14783",
+        "16262:16271",
+        "16457:16463",
+        "1964:1973",
+        "2621:2627",
+        "2826:2835",
+        "2991:2997",
+        "3414:3423",
+        "3796:3805",
+        "4593:4599",
+        "5050:5056",
+        "5244:5250",
+        "5445:5451",
+        "5835:5841",
+        "6188:6194",
+        "6229:6235",
+        "6985:6991",
+        "7221:7227",
         "773:779",
-        "8620:8629",
-        "9349:9355",
-        "9867:9873",
-        "9934:9940" ;
+        "7882:7891",
+        "8378:8384",
+        "8896:8902",
+        "8963:8969" ;
     data:wdtLink wdt:Q151742 ;
     :alsoKnownAs "Alexander I of Greece",
         "King Alexander I of Greece",
         "King Alexander of Greece" ;
-    :hasBrother data:George_II_of_Greece ;
-    :hasChild data:Alexandra_of_Yugoslavia ;
-    :hasDaughter data:Alexandra_of_Yugoslavia ;
-    :hasFather data:Constantine_I_of_Greece ;
     :hasParent data:Constantine_I_of_Greece ;
-    :hasSex data:male ;
-    :isBrotherOf data:George_II_of_Greece ;
-    :isChildOf data:Constantine_I_of_Greece ;
-    :isFatherOf data:Alexandra_of_Yugoslavia ;
-    :isParentOf data:Alexandra_of_Yugoslavia ;
-    :isSiblingOf data:George_II_of_Greece ;
-    :isSonOf data:Constantine_I_of_Greece ;
-    :isUncleOf data:Constantine_II_of_Greece .
+    :hasSex data:male .
 
-data:Constantine_I_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alexandra_of_Yugoslavia a :Person ;
+    rdfs:label "Alexandra of Yugoslavia" ;
+    data:posIndicesFull "113:132",
+        "11429:11452",
+        "11457:11476",
+        "15520:15543",
+        "272:291",
+        "657:676" ;
+    data:posIndicesPart "10367:10377",
+        "10418:10428",
+        "10430:10439",
+        "10561:10571",
+        "10747:10757",
+        "11170:11179",
+        "11712:11721",
+        "11729:11739",
+        "12121:12131",
+        "12308:12318",
+        "1243:1252",
+        "12571:12581",
+        "12710:12720",
+        "12735:12744",
+        "12879:12888",
+        "12979:12988",
+        "13479:13488",
+        "13527:13536",
+        "13956:13965",
+        "14031:14040",
+        "14248:14257",
+        "14392:14402",
+        "14588:14597",
+        "14678:14687",
+        "14947:14957",
+        "14976:14985",
+        "15203:15212",
+        "1522:1531",
+        "15390:15399",
+        "15857:15866",
+        "15991:16001",
+        "16076:16085",
+        "16133:16142",
+        "16383:16392",
+        "16501:16510",
+        "1669:1678",
+        "1926:1935",
+        "1991:2001",
+        "2136:2146",
+        "2151:2160",
+        "2400:2409",
+        "2500:2509",
+        "2790:2799",
+        "4140:4149",
+        "4619:4628",
+        "5395:5404",
+        "5671:5680",
+        "5764:5773",
+        "5960:5969",
+        "6370:6379",
+        "6466:6475",
+        "6655:6664",
+        "7076:7085",
+        "7181:7190",
+        "7550:7559",
+        "7695:7704",
+        "8040:8049",
+        "8229:8238",
+        "8442:8451",
+        "8645:8654",
+        "9014:9023",
+        "9087:9096",
+        "924:933",
+        "9385:9395",
+        "9508:9518",
+        "9724:9733" ;
+    data:wdtLink wdt:Q167423 ;
+    :alsoKnownAs "Alexandra Oldenburg Karadjordjevic",
+        "Alexandra of Greece",
+        "Alexandra of Greece, Queen of Yugoslavia" ;
+    :hasParent data:Alexander_of_Greece,
+        data:Aspasia_Manos ;
+    :hasSex data:female .
+
+data:Aspasia_Manos a :Person ;
+    rdfs:label "Aspasia Manos" ;
+    data:posIndicesFull "3157:3170",
+        "317:330" ;
+    data:posIndicesPart "1089:1096",
+        "16104:16111",
+        "3674:3681",
+        "4154:4161",
+        "4783:4790",
+        "5205:5212",
+        "5752:5759",
+        "5854:5861",
+        "6586:6593",
+        "6858:6865",
+        "8031:8038",
+        "9328:9335" ;
+    data:wdtLink wdt:Q240442 ;
+    :alsoKnownAs "Aspasia Manou",
+        "Princess Aspasia of Greece and Denmark" ;
+    :hasSex data:female .
+
+data:George_I_of_Greece a :Person ;
+    rdfs:label "George I of Greece" ;
+    data:posIndicesFull "7955:7963" ;
+    data:posIndicesPart "11594:11600",
+        "11875:11881",
+        "13652:13658",
+        "13845:13851",
+        "16457:16463",
+        "8378:8384",
+        "8896:8902",
+        "8963:8969",
+        "9971:9977" ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I",
+        "George I of the Hellens",
+        "George I, King of Greece",
+        "George I, King of the Hellenes",
+        "King George I of Greece",
+        "King George I of the Hellens",
+        "Vilhelm" ;
+    :hasSex data:male .
+
+data:Olga_Constantinovna_of_Russia a :Person ;
+    rdfs:label "Olga Constantinovna of Russia" ;
+    data:posIndicesFull "15945:15959" ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece",
+        "Queen Olga of Greece" ;
+    :hasSex data:female .
+
+data:Peter_II_of_Yugoslavia a :Person ;
+    rdfs:label "Peter II of Yugoslavia" ;
+    data:posIndicesFull "1561:1583",
+        "9163:9185" ;
+    data:posIndicesPart "10367:10377",
+        "10418:10428",
+        "10561:10571",
+        "10747:10757",
+        "11128:11133",
+        "11302:11307",
+        "11729:11739",
+        "12006:12011",
+        "12121:12131",
+        "12308:12318",
+        "12571:12581",
+        "12710:12720",
+        "12722:12727",
+        "13135:13140",
+        "13469:13474",
+        "13705:13710",
+        "14308:14313",
+        "14392:14402",
+        "14535:14540",
+        "14909:14914",
+        "14947:14957",
+        "15008:15013",
+        "15138:15143",
+        "15260:15265",
+        "15991:16001",
+        "16230:16235",
+        "16651:16656",
+        "1683:1688",
+        "1748:1753",
+        "1991:2001",
+        "2136:2146",
+        "2289:2294",
+        "2482:2487",
+        "9385:9395",
+        "9397:9402",
+        "9508:9518",
+        "9614:9619",
+        "9862:9867" ;
+    data:wdtLink wdt:Q223183 ;
+    :alsoKnownAs "Petar II Karađorđević" ;
+    :hasSex data:male .
+
+data:Princess_Maria_da_Glória-_Duchess_of_Segorbe a :Person ;
+    rdfs:label "Princess Maria da Glória, Duchess of Segorbe" ;
+    data:posIndicesFull "15655:15670" ;
+    data:posIndicesPart "15936:15944",
+        "16095:16103",
+        "16692:16697" ;
+    data:wdtLink wdt:Q2312463 ;
+    :alsoKnownAs "Dona Maria da Glória de Orléans-Bragança e Borbon",
+        "Maria da Gloria" ;
+    :hasSex data:female .
+
+data:Constantine_I_of_Greece a :Person ;
     rdfs:label "Constantine I of Greece" ;
-    data:posIndicesFull "3560:3578",
-        "3565:3578",
-        "4178:4196",
-        "4183:4196",
-        "5317:5335",
-        "5322:5335",
-        "5721:5739",
-        "5726:5739",
-        "7913:7931",
-        "7918:7931",
-        "8563:8581",
-        "8568:8581" ;
-    data:posIndicesPart "14701:14707",
-        "14894:14900",
-        "17002:17008",
-        "17506:17512",
-        "4780:4786",
-        "5237:5243",
-        "6022:6028",
-        "6375:6381",
-        "6416:6422",
-        "7316:7322",
-        "7552:7558",
-        "9349:9355",
-        "9867:9873",
-        "9934:9940" ;
+    data:posIndicesFull "3373:3391",
+        "3378:3391",
+        "3991:4009",
+        "3996:4009",
+        "5130:5148",
+        "5135:5148",
+        "5534:5552",
+        "5539:5552",
+        "7374:7392",
+        "7379:7392",
+        "7825:7843",
+        "7830:7843" ;
+    data:posIndicesPart "13652:13658",
+        "13845:13851",
+        "16346:16357",
+        "16457:16463",
+        "4593:4599",
+        "5050:5056",
+        "5835:5841",
+        "6188:6194",
+        "6229:6235",
+        "6985:6991",
+        "7221:7227",
+        "8378:8384",
+        "8896:8902",
+        "8963:8969" ;
     data:wdtLink wdt:Q152099 ;
     :alsoKnownAs "Constantine I",
         "Constantine Oldenburg I",
         "King Constantine I",
         "King Constantine I of Greece",
         "Konstantinos I of Greece" ;
-    :hasChild data:Alexander_of_Greece,
-        data:George_II_of_Greece ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Alexandra_of_Greece_and_Denmark,
-        data:Princess_Maria_of_Greece_and_Denmark ;
-    :hasSon data:Alexander_of_Greece,
-        data:George_II_of_Greece ;
-    :isBrotherOf data:Princess_Alexandra_of_Greece_and_Denmark,
-        data:Princess_Maria_of_Greece_and_Denmark ;
-    :isFatherOf data:Alexander_of_Greece,
-        data:George_II_of_Greece ;
-    :isParentOf data:Alexander_of_Greece,
-        data:George_II_of_Greece ;
-    :isSiblingOf data:Princess_Alexandra_of_Greece_and_Denmark,
-        data:Princess_Maria_of_Greece_and_Denmark .
+    :hasParent data:George_I_of_Greece,
+        data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

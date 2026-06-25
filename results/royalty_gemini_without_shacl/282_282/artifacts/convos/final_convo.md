@@ -69,35 +69,23 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Louis of Wales (/ˈluːi/ LOO-ee; Louis Arthur Charles; born 23 April 2018) is a member of the British royal family.
-He is the third and youngest child of William, Prince of Wales, and Catherine, Princess of Wales, and a grandson of King Charles III and Diana, Princess of Wales.
-Infancy
+Fergus Michael Claude Bowes-Lyon, 17th and 4th Earl of Strathmore and Kinghorne (31 December 1928 – 19 August 1987) was a British landowner and peer.
+He was a nephew of Queen Elizabeth the Queen Mother, thus a first cousin of Queen Elizabeth II.
+Early life and family
 
-Louis was born at 11:01 am on 23 April 2018 at St Mary's Hospital, London, during the reign of his paternal great-grandmother, Queen Elizabeth II.
-He is the third child and second son of Prince William and Catherine (then known as Duke and Duchess of Cambridge).
-He has an elder brother and sister, Prince George and Princess Charlotte.
-On 27 April, his name was announced as Louis Arthur Charles, honouring his paternal grandfather, Charles, Prince of Wales (later King Charles  III) and his 3rd-great-uncle Louis, Earl Mountbatten of Burma.
-Louis was christened on 9 July by the archbishop of Canterbury, Justin Welby, in the Chapel Royal at St James's Palace.
-Upbringing
-
-Louis and his family lived at Kensington Palace and Anmer Hall in Norfolk during his early childhood.
-Louis accompanied his siblings and parents to Elizabeth II's Platinum Jubilee celebrations in June 2022.
-Elizabeth II died on 8 September 2022 and Louis's grandfather became king.
-Accordingly, Louis became fourth in line to the throne.
-Title and style
-
-Louis is a British prince with the official style and title "His Royal Highness Prince Louis of Wales".
-Before his father was created Prince of Wales on 9 September 2022, Louis was styled "His Royal Highness Prince Louis of Cambridge".
-Succession
-
-Louis is fourth in the line of succession to the British throne, behind his father and his two elder siblings.
-Following the implementation of the Perth Agreement, which replaced male-preference primogeniture with absolute primogeniture, he is the first British prince to be ranked behind an elder sister in the line of succession.
+Born on 31 December 1928, Strathmore was the eldest son of Michael Claude Hamilton Bowes-Lyon and Elizabeth Margaret Cator (1899–1959).
+His paternal grandparents were the 14th Earl and Countess of Strathmore and Kinghorne, and his maternal grandfather was John Cator, Conservative MP for Huntingdon.
+In 1953, during the coronation of his cousin, Queen Elizabeth II, he was one of many servicemen lining the processional route.
+Strathmore, then Captain Fergus Bowes-Lyon, married Mary Pamela McCorquodale (31 May 1932 – 28 April 2025) at St Margaret's, Westminster, on 10 April 1956 in a ceremony attended by his cousin, the Queen.
+He was succeeded by his son, Michael.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -113,39 +101,9 @@ Following the implementation of the Perth Agreement, which replaced male-prefere
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -160,6 +118,23 @@ Following the implementation of the Perth Agreement, which replaced male-prefere
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -177,6 +152,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -244,29 +234,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -275,6 +257,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -287,6 +277,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -295,17 +287,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -333,6 +327,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -348,131 +426,145 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9c0b6ca5-484d-4ee8-8979-0aadb47bf55c)
- Call ID: 9c0b6ca5-484d-4ee8-8979-0aadb47bf55c
+  AssignClass (68df2683-88bf-4542-96e3-21ecc22b8f48)
+ Call ID: 68df2683-88bf-4542-96e3-21ecc22b8f48
   Args:
+    source: Fergus_Michael_Claude_Bowes-Lyon
     type: :Man
-    source: :Prince_Louis_of_Wales
-  AssignClass (be057752-1705-4b50-96cb-d64439a6defb)
- Call ID: be057752-1705-4b50-96cb-d64439a6defb
-  Args:
-    source: :Prince_Louis_of_Wales
-    type: :Person
-  AssignClass (a584c58a-5691-4129-b345-751acc07b83c)
- Call ID: a584c58a-5691-4129-b345-751acc07b83c
-  Args:
-    source: :Prince_William
-    type: :Man
-  AssignClass (6e862cfb-020c-4c68-92ae-3f84deb81b5d)
- Call ID: 6e862cfb-020c-4c68-92ae-3f84deb81b5d
+  AssignClass (a3a89004-855a-43c3-98a8-005c2391dc60)
+ Call ID: a3a89004-855a-43c3-98a8-005c2391dc60
   Args:
     type: :Person
-    source: :Prince_William
-  AssignClass (9734cc8e-4509-4874-a0c3-e78fe841b056)
- Call ID: 9734cc8e-4509-4874-a0c3-e78fe841b056
+    source: Fergus_Michael_Claude_Bowes-Lyon
+  AddLiteral (dbb15c49-129e-4e3d-bafa-0eeab2b03d8b)
+ Call ID: dbb15c49-129e-4e3d-bafa-0eeab2b03d8b
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1928
+    source: Fergus_Michael_Claude_Bowes-Lyon
+    literal_type: xsd:integer
+  AddLiteral (2a046e85-7dd6-409f-86e6-a2beb1b60ee4)
+ Call ID: 2a046e85-7dd6-409f-86e6-a2beb1b60ee4
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1987
+    source: Fergus_Michael_Claude_Bowes-Lyon
+    literal_type: xsd:integer
+  AssignClass (9655483b-610d-4c84-b337-6b3344dea095)
+ Call ID: 9655483b-610d-4c84-b337-6b3344dea095
+  Args:
+    type: :Man
+    source: Michael_Claude_Hamilton_Bowes-Lyon
+  AssignClass (eacc0906-c700-47b6-9c3d-bc94c71ddf7d)
+ Call ID: eacc0906-c700-47b6-9c3d-bc94c71ddf7d
+  Args:
+    type: :Person
+    source: Michael_Claude_Hamilton_Bowes-Lyon
+  AssignClass (ec3f0636-32d0-499b-8e88-d84d763930d4)
+ Call ID: ec3f0636-32d0-499b-8e88-d84d763930d4
   Args:
     type: :Woman
-    source: :Catherine_Princess_of_Wales
-  AssignClass (42833881-cd55-4909-ae67-3f9fd2b28f43)
- Call ID: 42833881-cd55-4909-ae67-3f9fd2b28f43
+    source: Elizabeth_Margaret_Cator
+  AssignClass (b5457131-c48f-4171-8275-b8a91fc6669f)
+ Call ID: b5457131-c48f-4171-8275-b8a91fc6669f
   Args:
+    source: Elizabeth_Margaret_Cator
     type: :Person
-    source: :Catherine_Princess_of_Wales
-  AssignClass (473683b2-3ced-49a4-b705-d43e24bcd4d5)
- Call ID: 473683b2-3ced-49a4-b705-d43e24bcd4d5
+  AddLiteral (2499afcb-2f45-4afe-ba2d-a5392525b8eb)
+ Call ID: 2499afcb-2f45-4afe-ba2d-a5392525b8eb
   Args:
-    source: :King_Charles_III
-    type: :Man
-  AssignClass (f028f157-93ba-4f87-bd03-1ec09eef32a0)
- Call ID: f028f157-93ba-4f87-bd03-1ec09eef32a0
-  Args:
-    type: :Person
-    source: :King_Charles_III
-  AssignClass (1e760ab5-6b87-4794-8ebf-156b38d8bdd1)
- Call ID: 1e760ab5-6b87-4794-8ebf-156b38d8bdd1
-  Args:
-    type: :Woman
-    source: :Diana_Princess_of_Wales
-  AssignClass (2465af45-a49c-439f-8871-8c081b73b3b7)
- Call ID: 2465af45-a49c-439f-8871-8c081b73b3b7
-  Args:
-    type: :Person
-    source: :Diana_Princess_of_Wales
-  AssignClass (e02bf39d-06f0-4610-a067-0c7f359d65ba)
- Call ID: e02bf39d-06f0-4610-a067-0c7f359d65ba
-  Args:
-    type: :Man
-    source: :Prince_George
-  AssignClass (13b71ffe-1fee-4cfa-ba55-7862581d2e33)
- Call ID: 13b71ffe-1fee-4cfa-ba55-7862581d2e33
-  Args:
-    source: :Prince_George
-    type: :Person
-  AssignClass (a5eb6359-0e97-43cf-9a15-1245b296ebc2)
- Call ID: a5eb6359-0e97-43cf-9a15-1245b296ebc2
-  Args:
-    type: :Woman
-    source: :Princess_Charlotte
-  AssignClass (a59f5d06-ac60-4904-bd13-3fd88766b022)
- Call ID: a59f5d06-ac60-4904-bd13-3fd88766b022
-  Args:
-    type: :Person
-    source: :Princess_Charlotte
-  AddLiteral (7fe6c330-b943-45f0-8557-bae1b1f11a18)
- Call ID: 7fe6c330-b943-45f0-8557-bae1b1f11a18
+    source: Elizabeth_Margaret_Cator
+    literal_value: 1899
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddLiteral (1fb140fe-6c5f-4c22-a2bb-0aaca0138dc3)
+ Call ID: 1fb140fe-6c5f-4c22-a2bb-0aaca0138dc3
   Args:
     literal_type: xsd:integer
+    literal_value: 1959
+    relation: :hasDeathYear
+    source: Elizabeth_Margaret_Cator
+  AddTriple (88f6e71b-651c-4c0a-9b86-d4dadc728e7d)
+ Call ID: 88f6e71b-651c-4c0a-9b86-d4dadc728e7d
+  Args:
+    target: Michael_Claude_Hamilton_Bowes-Lyon
+    relation: :hasFather
+    source: Fergus_Michael_Claude_Bowes-Lyon
+  AddTriple (1e197d4d-0af4-4550-bd83-bd125bdb0f96)
+ Call ID: 1e197d4d-0af4-4550-bd83-bd125bdb0f96
+  Args:
+    target: Elizabeth_Margaret_Cator
+    relation: :hasMother
+    source: Fergus_Michael_Claude_Bowes-Lyon
+  AssignClass (096fbbf2-6fd9-4997-a3ff-f8a1ca0697e2)
+ Call ID: 096fbbf2-6fd9-4997-a3ff-f8a1ca0697e2
+  Args:
+    type: :Man
+    source: John_Cator
+  AssignClass (ed3bc281-a6e7-4607-91fb-959f0d24fbbf)
+ Call ID: ed3bc281-a6e7-4607-91fb-959f0d24fbbf
+  Args:
+    source: John_Cator
+    type: :Person
+  AddTriple (2b69957c-db4e-4ae8-9da8-8f2dc2d20727)
+ Call ID: 2b69957c-db4e-4ae8-9da8-8f2dc2d20727
+  Args:
+    source: Elizabeth_Margaret_Cator
+    relation: :hasFather
+    target: John_Cator
+  AssignClass (a9e3506e-c0a9-4087-aa5f-fc9d38613eb6)
+ Call ID: a9e3506e-c0a9-4087-aa5f-fc9d38613eb6
+  Args:
+    source: Mary_Pamela_McCorquodale
+    type: :Woman
+  AssignClass (b75f0a4a-3575-4187-83b1-20b0420d1b55)
+ Call ID: b75f0a4a-3575-4187-83b1-20b0420d1b55
+  Args:
+    source: Mary_Pamela_McCorquodale
+    type: :Person
+  AddLiteral (c10699b0-6b58-49b6-be98-2bb0e7557a77)
+ Call ID: c10699b0-6b58-49b6-be98-2bb0e7557a77
+  Args:
+    source: Mary_Pamela_McCorquodale
+    literal_value: 1932
     relation: :hasBirthYear
-    source: :Prince_Louis_of_Wales
-    literal_value: 2018
-  AddTriple (5f4d9e34-8ca4-4a7e-be83-ce2c8fbbe5ec)
- Call ID: 5f4d9e34-8ca4-4a7e-be83-ce2c8fbbe5ec
+    literal_type: xsd:integer
+  AddLiteral (fec4b061-f62b-452e-87a0-f680c05fc527)
+ Call ID: fec4b061-f62b-452e-87a0-f680c05fc527
   Args:
-    source: :Prince_Louis_of_Wales
-    target: :Prince_William
+    literal_value: 2025
+    relation: :hasDeathYear
+    source: Mary_Pamela_McCorquodale
+    literal_type: xsd:integer
+  AddLiteral (6dd5bbba-b52e-4bad-b147-941a72e1a5f3)
+ Call ID: 6dd5bbba-b52e-4bad-b147-941a72e1a5f3
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1956
+    relation: :hasMarriageYear
+    source: Fergus_Michael_Claude_Bowes-Lyon
+  AddTriple (ed17e8e8-4b4f-4d5d-9ba1-b3d8a471bb1f)
+ Call ID: ed17e8e8-4b4f-4d5d-9ba1-b3d8a471bb1f
+  Args:
+    target: Mary_Pamela_McCorquodale
+    source: Fergus_Michael_Claude_Bowes-Lyon
+    relation: :hasRelation
+  AssignClass (3f01a0cf-099c-40f2-ac33-e7007f4e4b2d)
+ Call ID: 3f01a0cf-099c-40f2-ac33-e7007f4e4b2d
+  Args:
+    source: Michael_Bowes-Lyon
+    type: :Man
+  AssignClass (997fbf6f-b973-4fc9-a5bf-d1863bc6cf14)
+ Call ID: 997fbf6f-b973-4fc9-a5bf-d1863bc6cf14
+  Args:
+    source: Michael_Bowes-Lyon
+    type: :Person
+  AddTriple (d41074bb-26bb-4213-84aa-763d484ddab2)
+ Call ID: d41074bb-26bb-4213-84aa-763d484ddab2
+  Args:
+    target: Fergus_Michael_Claude_Bowes-Lyon
     relation: :hasFather
-  AddTriple (63914fdb-c59c-4aef-b2d7-292ec40a9f3d)
- Call ID: 63914fdb-c59c-4aef-b2d7-292ec40a9f3d
-  Args:
-    source: :Prince_Louis_of_Wales
-    relation: :hasMother
-    target: :Catherine_Princess_of_Wales
-  AddTriple (2f935f44-d4ad-47fe-85c9-d8d5c0111de3)
- Call ID: 2f935f44-d4ad-47fe-85c9-d8d5c0111de3
-  Args:
-    target: :King_Charles_III
-    relation: :hasFather
-    source: :Prince_William
-  AddTriple (a7192a8f-bf71-4d43-a026-7000ba693fd7)
- Call ID: a7192a8f-bf71-4d43-a026-7000ba693fd7
-  Args:
-    target: :Diana_Princess_of_Wales
-    relation: :hasMother
-    source: :Prince_William
-  AddTriple (f8aa5d35-126c-4839-b260-4823c3177369)
- Call ID: f8aa5d35-126c-4839-b260-4823c3177369
-  Args:
-    source: :Prince_Louis_of_Wales
-    target: :Prince_George
-    relation: :hasBrother
-  AddTriple (9ef5eced-7c0d-4027-a445-75e69c069bba)
- Call ID: 9ef5eced-7c0d-4027-a445-75e69c069bba
-  Args:
-    source: :Prince_Louis_of_Wales
-    target: :Princess_Charlotte
-    relation: :hasSister
-  AddTriple (82cbe362-382e-42a4-9dfb-3b0f56bba835)
- Call ID: 82cbe362-382e-42a4-9dfb-3b0f56bba835
-  Args:
-    target: :Prince_Louis_of_Wales
-    relation: :isBrotherOf
-    source: :Prince_George
-  AddTriple (ff0798f8-56ac-421e-86a4-75b94e604547)
- Call ID: ff0798f8-56ac-421e-86a4-75b94e604547
-  Args:
-    source: :Princess_Charlotte
-    relation: :isSisterOf
-    target: :Prince_Louis_of_Wales
-  Finish (b61df2ab-e4a6-41eb-a728-53247fee8143)
- Call ID: b61df2ab-e4a6-41eb-a728-53247fee8143
+    source: Michael_Bowes-Lyon
+  Finish (d5209e9f-83d6-41c3-991b-eb4c7df8a0ef)
+ Call ID: d5209e9f-83d6-41c3-991b-eb4c7df8a0ef
   Args:

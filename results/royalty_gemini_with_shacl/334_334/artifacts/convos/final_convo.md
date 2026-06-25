@@ -85,72 +85,17 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Alexandrine of Mecklenburg-Schwerin (Alexandrine Auguste; 24 December 1879 – 28 December 1952) was Queen of Denmark from 1912 to 1947, as well as Queen of Iceland from 1918 to 1944 as the wife of King Christian X.
-
-
-Alexandrine was the daughter of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin, and Grand Duchess Anastasia Mikhailovna of Russia.
-She was brought up with simplicity, and her early life was peripatetic, spending summers in Mecklenburg and the rest of the year in the south of France.
-She married Prince Christian of Denmark in 1898.
-Alexandrine became crown princess in 1906 and queen consort of Denmark in 1912.
-Early life
-
-Birth and family
-
-Alexandrine was born a Duchess of Mecklenburg-Schwerin on Christmas Eve of 1879, in the city of Schwerin, the capital of the vast Grand Duchy of Mecklenburg-Schwerin in Northern Germany.
-Her father was Frederick Francis, Hereditary Grand Duke of Mecklenburg-Schwerin; who was the eldest son of and heir to the reigning Grand Duke Frederick Francis II.
-Her mother was Grand Duchess Anastasia Mikhailovna of Russia, who was a granddaughter of Emperor Nicholas I of Russia.
-Alexandrine was her parents' first child, and was born eleven months after their wedding in St. Petersburg.
-She was born in the Neustadt Palace (New Town Palace) in Schwerin, which was her parents' residence in the city at the time.
-Duchess Alexandrine had two younger siblings: her only brother was Duke Frederick Francis, who in 1897 succeeded their father as Grand Duke of Mecklenburg-Schwerin, and her only sister was Duchess Cecilie, who in 1906 married the German Crown Prince Wilhelm of Prussia, eldest son of German Emperor William II.
-She was also a paternal first cousin of Juliana of the Netherlands.
-Her mother was the paternal aunt of Princess Irina Alexandrovna of Russia, the wife of Felix Yusupov, one of the murderers of Rasputin.
-Childhood and early adulthood
-
-After their father's succession as Grand Duke upon the death of his father on 15 April 1883, Alexandrine grew up with her brother and sister at the Castle in Schwerin, at the royal residences of Ludwigslust Palace and the Gelbensande hunting lodge, only a few kilometres from the Baltic Sea coast.
-The wet, damp, and cold Northern European climate of Mecklenburg was not good for his health, and as a result, Alexandrine spent a large amount of time with her family away from Mecklenburg, by the Lake Geneva, and in Palermo, Baden-Baden and Cannes in the south of France, where the family owned a large estate, the Villa Wenden.
-Cannes was favoured at the time by European royalty, including some whom Alexandrine personally met, such as Empress Eugénie of France and her future husband's uncle, Edward VII of the United Kingdom.
-First years in Denmark
-
-Engagement and marriage
-
-It was also in Cannes during the winter visit of 1897 that Duchess Alexandrine met her future husband, Prince Christian of Denmark, the eldest son of Crown Prince Frederik and Crown Princess Louise of Denmark.
-The two young royals were engaged in Schwerin on 24 March 1897.
-In April 1897, shortly after the engagement was announced, her father the Grand Duke died suddenly at the age of just 46 years.
-The wedding of Duchess Alexandrine and Prince Christian was celebrated on 26 April 1898 in Cannes, when she was 18 years old.
-They had two children:
-
-
-Early years in Denmark
-
-Upon their arrival in Denmark, the couple were given Christian VIII's Palace at the Amalienborg palace complex in central Copenhagen as their principal residence and Sorgenfri Palace in Kongens Lyngby north of Copenhagen as a summer residence.
-On 29 January 1906, her husband's grandfather King Christian IX died, and Christian's father ascended the throne as King Frederik VIII.
-Christian himself became crown prince, and Alexandrine became crown princess.
-Alexandrine's husband acceded to the throne as Christian X, and Alexandrine became queen consort of Denmark.
-The revolution in Russia brought much heartbreak for Alexandrine as three of her uncles, Nicholas, George and Sergey, were killed by the Bolsheviks.
-Her rejection of Major General Kurt Himer, Chief of Staff to General Kaupisch on 9 April 1940 became a symbol for her loyalty toward Denmark before her birth country Germany and was diplomatically obliged to receive the German General commander at her castle.
-Then, after a pause, she added: "I am a German, that's right, but today I'm ashamed of it."
-When General Himer asked for an audience with the monarch, Christian was persuaded to receive him by his daughter-in-law as he would any other, which was supported by Alexandrine.
-He asked to do so alone, but Alexandrine told him she would interrupt them.
-"
-
-
-It was reported, that although Alexandrine was seen as shy and disliked official ceremonies, she had a "sharp" intelligence, and she was, together with her daughter-in-law, Ingrid of Sweden, a true support of the monarch and a driving force for the resistance toward the occupation within the royal house.
-It was also reported, that in contrast to the monarch himself and the Crown Prince, the Queen and the Crown Princess never lost their calm when the nation was attacked.
-Her first years in Denmark were afflicted by the prevailing anti-German attitude of the Danes, but she won them over.
-Kaj Munk is quoted to describe the public appreciation of her during World War II with his comment: "Protect our Queen, the only German we would like to keep!"
-
-
-Later life
-
-In 1947, she was widowed; she became the first queen dowager of Denmark to opt not to use that title.
-In her later years, Alexandrine spent most of her widowhood at Marselisborg Castle in Jutland.
-Queen Alexandrine died on 28 December 1952 in her sleep, four days after her birthday.
+Albrecht Willem "Pim" Lier (22 July 1918 – 9 April 2015) was a Dutch lawyer and jurist.
+He became well known in 1979 when he was revealed to be the illegitimate son of Prince Henry, the husband of Queen Wilhelmina, by his mistress, Willemina Martina Wenneker (1887–1973).
+This made him a paternal half-brother of Queen Juliana and the half-uncle of Queen Beatrix.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -166,39 +111,9 @@ Queen Alexandrine died on 28 December 1952 in her sleep, four days after her bir
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -213,6 +128,23 @@ Queen Alexandrine died on 28 December 1952 in her sleep, four days after her bir
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -230,6 +162,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -297,29 +244,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -328,6 +267,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -340,6 +287,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -348,17 +297,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -386,6 +337,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -401,194 +436,128 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e5ab15e7-0436-4425-b347-fec31d1e7ac4)
- Call ID: e5ab15e7-0436-4425-b347-fec31d1e7ac4
+  AssignClass (1d8253ae-9993-4f18-bcf3-8cbdf5c77d86)
+ Call ID: 1d8253ae-9993-4f18-bcf3-8cbdf5c77d86
   Args:
-    source: :Alexandrine_of_Mecklenburg-Schwerin
-    type: :Woman
-  AssignClass (0800edcb-e1f5-4ddd-8880-6b009f8e68c9)
- Call ID: 0800edcb-e1f5-4ddd-8880-6b009f8e68c9
+    source: :AlbrechtWillemLier
+    type: :Man
+  AssignClass (6336e9a7-ece5-4510-97c4-dcf59d8a87a0)
+ Call ID: 6336e9a7-ece5-4510-97c4-dcf59d8a87a0
   Args:
-    source: :Alexandrine_of_Mecklenburg-Schwerin
+    source: :AlbrechtWillemLier
     type: :Person
-  AssignClass (f10a6cbf-391c-477d-8175-eb3ed86784aa)
- Call ID: f10a6cbf-391c-477d-8175-eb3ed86784aa
+  AddLiteral (d50e0ed1-c464-4ada-9cd5-d10414ec26bd)
+ Call ID: d50e0ed1-c464-4ada-9cd5-d10414ec26bd
   Args:
-    type: :Sex
-    source: :Female
-  AddTriple (22791860-9a11-4add-bdb0-4cbdc7b011e4)
- Call ID: 22791860-9a11-4add-bdb0-4cbdc7b011e4
-  Args:
-    target: :Female
-    relation: :hasSex
-    source: :Alexandrine_of_Mecklenburg-Schwerin
-  AddLiteral (6436c082-6c74-4c26-badd-a6fd362a7aa8)
- Call ID: 6436c082-6c74-4c26-badd-a6fd362a7aa8
-  Args:
-    source: :Alexandrine_of_Mecklenburg-Schwerin
     relation: :hasBirthYear
-    literal_value: 1879
+    literal_value: 1918
     literal_type: xsd:integer
-  AddLiteral (ad0efc59-cdbb-49a6-a5e6-87447b0afd59)
- Call ID: ad0efc59-cdbb-49a6-a5e6-87447b0afd59
+    source: :AlbrechtWillemLier
+  AddLiteral (13581765-66ee-4e65-9680-f320f24ddfff)
+ Call ID: 13581765-66ee-4e65-9680-f320f24ddfff
   Args:
+    source: :AlbrechtWillemLier
     literal_type: xsd:integer
-    source: :Alexandrine_of_Mecklenburg-Schwerin
+    literal_value: 2015
     relation: :hasDeathYear
-    literal_value: 1952
-  AssignClass (5d7b97df-d0c5-4801-9bf4-71da9a717fe0)
- Call ID: 5d7b97df-d0c5-4801-9bf4-71da9a717fe0
+  AddLiteral (0cf0aa09-2d2c-4448-b063-180062803728)
+ Call ID: 0cf0aa09-2d2c-4448-b063-180062803728
   Args:
-    source: :Frederick_Francis_III
+    relation: :alsoKnownAs
+    literal_value: Pim
+    literal_type: xsd:string
+    source: :AlbrechtWillemLier
+  AssignClass (3e10103a-8ebc-4494-9c78-df1914954d5b)
+ Call ID: 3e10103a-8ebc-4494-9c78-df1914954d5b
+  Args:
+    source: :PrinceHenry
     type: :Man
-  AssignClass (5e5e3713-18f7-4f39-8d87-d4fa5f44e99d)
- Call ID: 5e5e3713-18f7-4f39-8d87-d4fa5f44e99d
+  AssignClass (76472d6c-2650-4379-be91-4dac918d6f34)
+ Call ID: 76472d6c-2650-4379-be91-4dac918d6f34
   Args:
-    source: :Frederick_Francis_III
+    source: :PrinceHenry
     type: :Person
-  AssignClass (090785b6-8274-4494-a0d8-69a8c40cd3d2)
- Call ID: 090785b6-8274-4494-a0d8-69a8c40cd3d2
+  AssignClass (725d6126-68c9-48da-8bbc-6a5205bae40d)
+ Call ID: 725d6126-68c9-48da-8bbc-6a5205bae40d
   Args:
-    type: :Sex
-    source: :Male
-  AddTriple (ab710c1e-9d1c-4165-954d-6362a9afedcd)
- Call ID: ab710c1e-9d1c-4165-954d-6362a9afedcd
-  Args:
-    target: :Male
-    source: :Frederick_Francis_III
-    relation: :hasSex
-  AddTriple (aac6dbf3-49de-4a72-ba2f-19d7e85f4326)
- Call ID: aac6dbf3-49de-4a72-ba2f-19d7e85f4326
-  Args:
-    source: :Alexandrine_of_Mecklenburg-Schwerin
-    relation: :hasFather
-    target: :Frederick_Francis_III
-  AssignClass (3767e21f-745a-4b0a-ad22-5734da70f751)
- Call ID: 3767e21f-745a-4b0a-ad22-5734da70f751
-  Args:
+    source: :QueenWilhelmina
     type: :Woman
-    source: :Anastasia_Mikhailovna
-  AssignClass (a9bdf980-c7ea-4f0b-8e4c-dcbfba80f249)
- Call ID: a9bdf980-c7ea-4f0b-8e4c-dcbfba80f249
+  AssignClass (284cecb3-06e8-4bf9-899e-0d91191de8e7)
+ Call ID: 284cecb3-06e8-4bf9-899e-0d91191de8e7
   Args:
+    source: :QueenWilhelmina
     type: :Person
-    source: :Anastasia_Mikhailovna
-  AddTriple (47446f3d-0ba0-44ce-bd2f-4b247e79abbc)
- Call ID: 47446f3d-0ba0-44ce-bd2f-4b247e79abbc
+  AssignClass (d33e4219-e0ab-406f-a8e3-aeb3da4ab3fd)
+ Call ID: d33e4219-e0ab-406f-a8e3-aeb3da4ab3fd
   Args:
-    source: :Anastasia_Mikhailovna
-    relation: :hasSex
-    target: :Female
-  AddTriple (f8739247-a7e9-4fc6-a8be-783abd54283e)
- Call ID: f8739247-a7e9-4fc6-a8be-783abd54283e
+    source: :WilleminaMartinaWenneker
+    type: :Woman
+  AssignClass (5d1e1a9b-f094-47a2-b9f1-c7f71f3ea0c8)
+ Call ID: 5d1e1a9b-f094-47a2-b9f1-c7f71f3ea0c8
   Args:
-    target: :Anastasia_Mikhailovna
-    source: :Alexandrine_of_Mecklenburg-Schwerin
-    relation: :hasMother
-  AssignClass (f951c1f7-cfa4-4d5c-9ff6-d234fe80c9a8)
- Call ID: f951c1f7-cfa4-4d5c-9ff6-d234fe80c9a8
-  Args:
-    source: :Christian_X
-    type: :Man
-  AssignClass (49a6b5fa-5a4a-4727-8771-3366eaeecb98)
- Call ID: 49a6b5fa-5a4a-4727-8771-3366eaeecb98
-  Args:
+    source: :WilleminaMartinaWenneker
     type: :Person
-    source: :Christian_X
-  AddTriple (6b3b2e29-8ecc-4771-8f39-b90cd3aaa6a6)
- Call ID: 6b3b2e29-8ecc-4771-8f39-b90cd3aaa6a6
+  AddLiteral (e5827476-637e-4977-88c3-371ceef5c7b7)
+ Call ID: e5827476-637e-4977-88c3-371ceef5c7b7
   Args:
-    target: :Male
-    source: :Christian_X
-    relation: :hasSex
-  AddLiteral (5c63f0d0-4094-4b8a-a0f6-953bef8c872b)
- Call ID: 5c63f0d0-4094-4b8a-a0f6-953bef8c872b
+    relation: :hasBirthYear
+    literal_value: 1887
+    literal_type: xsd:integer
+    source: :WilleminaMartinaWenneker
+  AddLiteral (58631d90-e258-43a1-8627-520d81674ee1)
+ Call ID: 58631d90-e258-43a1-8627-520d81674ee1
   Args:
     literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1898
-    source: :Alexandrine_of_Mecklenburg-Schwerin
-  AddTriple (6eaa612a-5c3a-47f7-9f0b-2b72a578aaac)
- Call ID: 6eaa612a-5c3a-47f7-9f0b-2b72a578aaac
+    source: :WilleminaMartinaWenneker
+    relation: :hasDeathYear
+    literal_value: 1973
+  AddTriple (2cf4882c-f6c8-4cbc-850d-ce5d64980bcd)
+ Call ID: 2cf4882c-f6c8-4cbc-850d-ce5d64980bcd
   Args:
-    relation: :hasRelation
-    source: :Alexandrine_of_Mecklenburg-Schwerin
-    target: :Christian_X
-  AssignClass (aad0b09b-9712-43e7-bbaf-57a11fa04725)
- Call ID: aad0b09b-9712-43e7-bbaf-57a11fa04725
+    source: :AlbrechtWillemLier
+    relation: :hasFather
+    target: :PrinceHenry
+  AddTriple (38e53c82-5e73-4644-b713-a5c6992e497b)
+ Call ID: 38e53c82-5e73-4644-b713-a5c6992e497b
   Args:
-    type: :Man
-    source: :Duke_Frederick_Francis
-  AssignClass (caf29cf5-c4c5-4cff-ba28-04c28edc8410)
- Call ID: caf29cf5-c4c5-4cff-ba28-04c28edc8410
+    source: :AlbrechtWillemLier
+    relation: :hasMother
+    target: :WilleminaMartinaWenneker
+  AssignClass (082a624c-4076-43fd-b03e-99135f9a44fb)
+ Call ID: 082a624c-4076-43fd-b03e-99135f9a44fb
   Args:
-    source: :Duke_Frederick_Francis
-    type: :Person
-  AddTriple (dfd52bf9-9e91-4c79-ad41-af4b29f3f0f8)
- Call ID: dfd52bf9-9e91-4c79-ad41-af4b29f3f0f8
-  Args:
-    relation: :hasSex
-    source: :Duke_Frederick_Francis
-    target: :Male
-  AddTriple (25162a67-67b6-4db4-8136-9aa3e35cf5d8)
- Call ID: 25162a67-67b6-4db4-8136-9aa3e35cf5d8
-  Args:
-    relation: :hasBrother
-    source: :Alexandrine_of_Mecklenburg-Schwerin
-    target: :Duke_Frederick_Francis
-  AssignClass (7dc9b246-37e8-47dd-a4ca-23fe1ea983a5)
- Call ID: 7dc9b246-37e8-47dd-a4ca-23fe1ea983a5
-  Args:
+    source: :QueenJuliana
     type: :Woman
-    source: :Duchess_Cecilie
-  AssignClass (efe8027d-deff-4ff5-9e37-5620276f856b)
- Call ID: efe8027d-deff-4ff5-9e37-5620276f856b
+  AssignClass (dac86dae-f3a6-4fab-94ca-1e7759cac43d)
+ Call ID: dac86dae-f3a6-4fab-94ca-1e7759cac43d
   Args:
-    source: :Duchess_Cecilie
+    source: :QueenJuliana
     type: :Person
-  AddTriple (1aad66a1-59e0-41b9-8426-ec4ace5737f0)
- Call ID: 1aad66a1-59e0-41b9-8426-ec4ace5737f0
+  AddTriple (e64b1d43-1a23-4db4-930f-0ee4f31b3ce8)
+ Call ID: e64b1d43-1a23-4db4-930f-0ee4f31b3ce8
   Args:
-    target: :Female
-    relation: :hasSex
-    source: :Duchess_Cecilie
-  AddTriple (b676865a-c74e-4a2e-b047-a54cdf87ea2e)
- Call ID: b676865a-c74e-4a2e-b047-a54cdf87ea2e
+    source: :AlbrechtWillemLier
+    relation: :isBrotherOf
+    target: :QueenJuliana
+  AssignClass (17f0f77d-15f1-42dc-8242-562b2495f27f)
+ Call ID: 17f0f77d-15f1-42dc-8242-562b2495f27f
   Args:
-    target: :Duchess_Cecilie
-    source: :Alexandrine_of_Mecklenburg-Schwerin
-    relation: :hasSister
-  Finish (7efd1065-ab8c-4a33-a909-de246ba0a0a7)
- Call ID: 7efd1065-ab8c-4a33-a909-de246ba0a0a7
+    source: :QueenBeatrix
+    type: :Woman
+  AssignClass (b704d0e0-593c-4a26-9f07-29fa630e8945)
+ Call ID: b704d0e0-593c-4a26-9f07-29fa630e8945
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :QueenBeatrix
+    type: :Person
+  AddTriple (d37593ea-2c8a-4403-a233-a270ed2d7888)
+ Call ID: d37593ea-2c8a-4403-a233-a270ed2d7888
+  Args:
+    relation: :isUncleOf
+    source: :AlbrechtWillemLier
+    target: :QueenBeatrix
+  Finish (a90ec7a2-14d2-41df-a0c3-9fea5891120e)
+ Call ID: a90ec7a2-14d2-41df-a0c3-9fea5891120e
+  Args:
 
 ================================= Tool Message =================================
 
@@ -677,41 +646,32 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
-          :Woman ;
-      :hasBirthYear 1879 ;
-      :hasBrother data:Duke_Frederick_Francis ;
-      :hasDeathYear 1952 ;
-      :hasFather data:Frederick_Francis_III ;
-      :hasMarriageYear 1898 ;
-      :hasMother data:Anastasia_Mikhailovna ;
-      :hasRelation data:Christian_X ;
-      :hasSex data:Female ;
-      :hasSister data:Duchess_Cecilie .
-
-  data:Anastasia_Mikhailovna a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Christian_X a :Man,
+  data:AlbrechtWillemLier a :Man,
           :Person ;
-      :hasSex data:Male .
+      :alsoKnownAs "Pim"^^xsd:string ;
+      :hasBirthYear 1918 ;
+      :hasDeathYear 2015 ;
+      :hasFather data:PrinceHenry ;
+      :hasMother data:WilleminaMartinaWenneker ;
+      :isBrotherOf data:QueenJuliana ;
+      :isUncleOf data:QueenBeatrix .
 
-  data:Duchess_Cecilie a :Person,
+  data:QueenWilhelmina a :Person,
+          :Woman .
+
+  data:PrinceHenry a :Man,
+          :Person .
+
+  data:QueenBeatrix a :Person,
+          :Woman .
+
+  data:QueenJuliana a :Person,
+          :Woman .
+
+  data:WilleminaMartinaWenneker a :Person,
           :Woman ;
-      :hasSex data:Female .
-
-  data:Duke_Frederick_Francis a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Frederick_Francis_III a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
+      :hasBirthYear 1887 ;
+      :hasDeathYear 1973 .
 
 
 
@@ -723,8 +683,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (b3ea9e67-60de-474d-ad25-a302f40d2f0e)
- Call ID: b3ea9e67-60de-474d-ad25-a302f40d2f0e
+  ValidateShacl (8390578d-9238-4c81-b6bb-375961a82627)
+ Call ID: 8390578d-9238-4c81-b6bb-375961a82627
   Args:
 
 ================================= Tool Message =================================
@@ -736,49 +696,49 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Frederick_Francis_III' is assigned as the father of 'Alexandrine_of_Mecklenburg-Schwerin', but it lacks the required ':Ancestor' class.
+      The node PrinceHenry is assigned as the father of AlbrechtWillemLier but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to the node 'Frederick_Francis_III'.
+      Use AssignClass to add the :Ancestor class to the node PrinceHenry.
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Anastasia_Mikhailovna' is assigned as the mother of 'Alexandrine_of_Mecklenburg-Schwerin', but it lacks the required ':Ancestor' class.
+      The node WilleminaMartinaWenneker is assigned as the mother of AlbrechtWillemLier but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to the node 'Anastasia_Mikhailovna'.
+      Use AssignClass to add the :Ancestor class to the node WilleminaMartinaWenneker.
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Frederick_Francis_III' is missing the ':Ancestor' class, which is a requirement for any node linked via the 'hasFather' property.
+      The node PrinceHenry is assigned as the father of AlbrechtWillemLier but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to the node 'Frederick_Francis_III'.
+      Use AssignClass to add the :Ancestor class to the node PrinceHenry.
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Anastasia_Mikhailovna' is missing the ':Ancestor' class, which is a requirement for any node linked via the 'hasMother' property.
+      The node WilleminaMartinaWenneker is assigned as the mother of AlbrechtWillemLier but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to the node 'Anastasia_Mikhailovna'.
+      Use AssignClass to add the :Ancestor class to the node WilleminaMartinaWenneker.
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The entity 'Frederick_Francis_III' is missing the ':Ancestor' classification required for the 'hasFather' relationship.
+      The node PrinceHenry is assigned as the father of AlbrechtWillemLier but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to the node 'Frederick_Francis_III'.
+      Use AssignClass to add the :Ancestor class to the node PrinceHenry.
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The entity 'Anastasia_Mikhailovna' is missing the ':Ancestor' classification required for the 'hasMother' relationship.
+      The node WilleminaMartinaWenneker is assigned as the mother of AlbrechtWillemLier but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to add ':Ancestor' to the node 'Anastasia_Mikhailovna'.
+      Use AssignClass to add the :Ancestor class to the node WilleminaMartinaWenneker.
 
 
 
@@ -787,19 +747,16 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (b212e7bd-6d88-4391-9b3a-de612105b091)
- Call ID: b212e7bd-6d88-4391-9b3a-de612105b091
+  AssignClass (ff36c4ac-8d20-472e-8c2c-f4839fa02867)
+ Call ID: ff36c4ac-8d20-472e-8c2c-f4839fa02867
+  Args:
+    source: :PrinceHenry
+    type: :Ancestor
+  AssignClass (67517db3-dee8-46ff-b811-03677b9fa3f6)
+ Call ID: 67517db3-dee8-46ff-b811-03677b9fa3f6
   Args:
     type: :Ancestor
-    source: :Frederick_Francis_III
-  AssignClass (df41b39b-7936-4587-9412-0483b8cf4a1d)
- Call ID: df41b39b-7936-4587-9412-0483b8cf4a1d
-  Args:
-    type: :Ancestor
-    source: :Anastasia_Mikhailovna
-  ValidateShacl (8af789e4-c10f-4ea3-a694-4c05d1f16e63)
- Call ID: 8af789e4-c10f-4ea3-a694-4c05d1f16e63
-  Args:
+    source: :WilleminaMartinaWenneker
 
 ================================= Tool Message =================================
 
@@ -812,45 +769,44 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Alexandrine_of_Mecklenburg-Schwerin a :Person,
-          :Woman ;
-      :hasBirthYear 1879 ;
-      :hasBrother data:Duke_Frederick_Francis ;
-      :hasDeathYear 1952 ;
-      :hasFather data:Frederick_Francis_III ;
-      :hasMarriageYear 1898 ;
-      :hasMother data:Anastasia_Mikhailovna ;
-      :hasRelation data:Christian_X ;
-      :hasSex data:Female ;
-      :hasSister data:Duchess_Cecilie .
+  data:AlbrechtWillemLier a :Man,
+          :Person ;
+      :alsoKnownAs "Pim"^^xsd:string ;
+      :hasBirthYear 1918 ;
+      :hasDeathYear 2015 ;
+      :hasFather data:PrinceHenry ;
+      :hasMother data:WilleminaMartinaWenneker ;
+      :isBrotherOf data:QueenJuliana ;
+      :isUncleOf data:QueenBeatrix .
 
-  data:Anastasia_Mikhailovna a :Ancestor,
+  data:QueenWilhelmina a :Person,
+          :Woman .
+
+  data:PrinceHenry a :Ancestor,
+          :Man,
+          :Person .
+
+  data:QueenBeatrix a :Person,
+          :Woman .
+
+  data:QueenJuliana a :Person,
+          :Woman .
+
+  data:WilleminaMartinaWenneker a :Ancestor,
           :Person,
           :Woman ;
-      :hasSex data:Female .
-
-  data:Christian_X a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Duchess_Cecilie a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Duke_Frederick_Francis a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Frederick_Francis_III a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
+      :hasBirthYear 1887 ;
+      :hasDeathYear 1973 .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (e20701ec-1548-44ca-9253-f70947c2a1a1)
+ Call ID: e20701ec-1548-44ca-9253-f70947c2a1a1
+  Args:
 
 ================================= Tool Message =================================
 
@@ -860,6 +816,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (5f349b6e-b93c-4b31-b034-326f45af3ef2)
- Call ID: 5f349b6e-b93c-4b31-b034-326f45af3ef2
+  Finish (4e09f0be-d7e5-4a2d-af56-0d1809dc5179)
+ Call ID: 4e09f0be-d7e5-4a2d-af56-0d1809dc5179
   Args:

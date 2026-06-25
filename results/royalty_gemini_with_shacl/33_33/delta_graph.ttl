@@ -4,37 +4,27 @@
 
 data:Nicholas_Windsor a :Man,
         :Person ;
-    :hasBirthYear "1970"^^xsd:int ;
+    :hasBirthYear "1970"^^xsd:positiveInteger ;
     :hasBrother data:Earl_of_St_Andrews ;
     :hasFather data:Prince_Edward_Duke_of_Kent ;
     :hasMother data:Katharine_Duchess_of_Kent ;
     :hasRelation data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski ;
-    :hasSex data:Male ;
     :hasSister data:Lady_Helen_Taylor .
 
 data:Earl_of_St_Andrews a :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
 data:Katharine_Duchess_of_Kent a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female .
+        :Woman .
 
 data:Lady_Helen_Taylor a :Person,
-        :Woman ;
-    :hasSex data:Female .
+        :Woman .
 
 data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski a :Person,
-        :Woman ;
-    :hasSex data:Female .
+        :Woman .
 
 data:Prince_Edward_Duke_of_Kent a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+        :Person .
 

@@ -2,62 +2,80 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charles_III a :Man,
+data:Alexia a :Person,
+        :Woman ;
+    :isSisterOf data:Pavlos .
+
+data:Anne-Marie a :Person,
+        :Woman ;
+    :isMotherOf data:Pavlos .
+
+data:Charles-III a :Man,
         :Person .
 
-data:Matthew_Kumar a :Man,
+data:Constantine-II a :Man,
+        :Person ;
+    :isFatherOf data:Pavlos .
+
+data:Harry a :Man,
         :Person .
 
-data:Pia_Getty a :Person,
+data:Isabel-Getty a :Person,
         :Woman .
 
-data:Prince_Michael_of_Greece_and_Denmark a :Man,
-        :Person .
-
-data:Princess_Alexia_of_Greece_and_Denmark a :Person,
-        :Woman .
-
-data:Princess_Maria-Olympia_of_Greece_and_Denmark a :Person,
+data:Maria-Olympia a :Person,
         :Woman ;
     :hasBirthYear 1996 ;
-    :hasBrother data:Prince_Achileas-Andreas,
-        data:Prince_Aristidis-Stavros,
-        data:Prince_Constantine-Alexios,
-        data:Prince_Odysseas_Kimon ;
-    :hasFather data:Pavlos_Crown_Prince_of_Greece ;
-    :hasMother data:Marie-Chantal_Miller ;
+    :isChildOf data:Marie-Chantal,
+        data:Pavlos ;
+    :isSiblingOf data:Achileas-Andreas,
+        data:Aristidis-Stavros,
+        data:Constantine-Alexios,
+        data:Odysseas-Kimon ;
     :knownAs "Olympia"^^xsd:string .
 
-data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+data:Marina a :Person,
         :Woman .
 
-data:Anne-Marie_of_Denmark a :Person,
-        :Woman .
-
-data:Constantine_II_of_Greece a :Man,
+data:Matthew-Kumar a :Man,
         :Person .
 
-data:Marie-Chantal_Miller a :Person,
+data:Michael a :Man,
+        :Person .
+
+data:Pia-Getty a :Person,
         :Woman ;
-    :hasFather data:Robert_Warren_Miller .
+    :isSisterOf data:Marie-Chantal .
 
-data:Pavlos_Crown_Prince_of_Greece a :Man,
+data:Robert-Warren-Miller a :Man,
         :Person ;
-    :hasFather data:Constantine_II_of_Greece ;
-    :hasMother data:Anne-Marie_of_Denmark .
+    :isFatherOf data:Marie-Chantal .
 
-data:Prince_Achileas-Andreas a :Man,
+data:Sofia a :Person,
+        :Woman .
+
+data:Talita a :Person,
+        :Woman .
+
+data:Theodora a :Person,
+        :Woman ;
+    :isSisterOf data:Pavlos .
+
+data:Achileas-Andreas a :Man,
         :Person .
 
-data:Prince_Aristidis-Stavros a :Man,
+data:Aristidis-Stavros a :Man,
         :Person .
 
-data:Prince_Constantine-Alexios a :Man,
+data:Constantine-Alexios a :Man,
         :Person .
 
-data:Prince_Odysseas_Kimon a :Man,
+data:Odysseas-Kimon a :Man,
         :Person .
 
-data:Robert_Warren_Miller a :Man,
+data:Marie-Chantal a :Person,
+        :Woman .
+
+data:Pavlos a :Man,
         :Person .
 

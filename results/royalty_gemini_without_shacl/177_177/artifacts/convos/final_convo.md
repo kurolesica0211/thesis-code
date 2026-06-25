@@ -69,21 +69,36 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Klaus Felix von Amsberg (German: Klaus Felix Friedrich Leopold Gabriel Archim Julius August von Amsberg; 1 September 1890 – 19 December 1953) was a member of the German Niederer Adel (lower nobility) and father of Prince Claus of the Netherlands.
-Early life
+Princess Elisabeth of Denmark (Elisabeth Caroline-Mathilde Alexandrine Helena Olga Thyra Feodora Estrid Margrethe Désirée; 8 May 1935 – 19 June 2018) was a member of the Danish royal family.
+The only daughter and eldest child of Knud, Hereditary Prince of Denmark, and Princess Caroline-Mathilde of Denmark, she was a granddaughter of Christian X, niece of Frederik IX, and first cousin of Margrethe II.
+In addition to undertaking occasionally royal duties, she was a career diplomat with the Ministry of Foreign Affairs of Denmark.
+Early life and education
 
-He was born at Rehna, Mecklenburg-Schwerin, German Empire (now Mecklenburg-Vorpommern, Germany), the first child of Wilhelm von Amsberg (1856–1929), by his marriage to Elise von Vieregg (1866–1951), member of an old aristocratic family.
-Claus was from 1917 the steward of an estate after a failed venture in Africa as a planter.
-Marriage
+Elisabeth was born on 8 May 1935 in Copenhagen to Prince Knud and Princess Caroline-Mathilde of Denmark.
+Her father was the second son of Christian X.
+The family resided at Sorgenfri Palace in Kongens Lyngby, where she was raised with her two younger brothers Prince Ingolf and Prince Christian.
+During the 1938-39 Mørkefjord expedition, paleontologist Eigil Nielsen named the Princess Elisabeth Alps in northeastern Greenland after her.
+Elisabeth began her education privately at Sorgenfri.
+In 1953, when  succession to the Danish throne switched from agnatic primogeniture to male-preference primogeniture, Elisabeth gained succession rights and became seventh in line to the throne.
+She was titled of Prinsesse til Danmark (literally translated as "Princess to Denmark", reserved for members of the Royal Family in the line of succession) with the style of Highness.
+She was the only one of her siblings to retain her title and succession rights, as her younger brothers married commoners without the permission of their uncle, Frederik IX.
+Career
 
-Claus married on 4 September 1924 at Hitzacker to Baroness Gösta von dem Bussche-Haddenhausen (26 January 1902 –
-13 June 1996), daughter of Baron Georg von dem Bussche-Haddenhausen (1869–1923) and Baroness Gabriele von dem Bussche-Ippenburg (1877–1973).
+In 1956, Elisabeth began her career with the Danish Ministry of Foreign Affairs.
+She was posted to the Embassy of Denmark, Washington, D.C. from 1973 to 1976 and again from 1981 to 1985.
+In addition to her diplomatic career, Elisabeth occasionally undertook royal duties on behalf of her uncle and later cousin.
+Personal life and death
+
+Elisabeth never married nor had children.
+After a long period of ill health, Elisabeth died on 19 June 2018, at the age of 83.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -99,39 +114,9 @@ Claus married on 4 September 1924 at Hitzacker to Baroness Gösta von dem Bussch
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -146,6 +131,23 @@ Claus married on 4 September 1924 at Hitzacker to Baroness Gösta von dem Bussch
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -163,6 +165,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -230,29 +247,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -261,6 +270,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -273,6 +290,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -281,17 +300,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -319,6 +340,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -334,240 +439,130 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (08fb98e8-5411-4e78-b16d-393eff97d51d)
- Call ID: 08fb98e8-5411-4e78-b16d-393eff97d51d
+  AssignClass (6bf6bc64-e01b-4389-ac0e-4c01da610b8a)
+ Call ID: 6bf6bc64-e01b-4389-ac0e-4c01da610b8a
   Args:
-    type: :Man
-    source: Klaus_Felix_von_Amsberg
-  AssignClass (e3a12000-46fa-40ba-9119-4fecbbce2fdb)
- Call ID: e3a12000-46fa-40ba-9119-4fecbbce2fdb
-  Args:
-    source: Klaus_Felix_von_Amsberg
-    type: :Person
-  AssignClass (2fe9f69a-9bbd-45d0-90b9-eaee0e52be17)
- Call ID: 2fe9f69a-9bbd-45d0-90b9-eaee0e52be17
-  Args:
-    type: :Ancestor
-    source: Klaus_Felix_von_Amsberg
-  AddLiteral (8fa31847-92e9-4acd-8219-11dd62cf70aa)
- Call ID: 8fa31847-92e9-4acd-8219-11dd62cf70aa
-  Args:
-    literal_type: xsd:integer
-    source: Klaus_Felix_von_Amsberg
-    literal_value: 1890
-    relation: :hasBirthYear
-  AddLiteral (737ddd7b-0c9e-4182-b690-3c3747053bae)
- Call ID: 737ddd7b-0c9e-4182-b690-3c3747053bae
-  Args:
-    literal_value: 1953
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    source: Klaus_Felix_von_Amsberg
-  AddLiteral (f5b95df8-30f8-4a6c-ac87-89b6ae729c8b)
- Call ID: f5b95df8-30f8-4a6c-ac87-89b6ae729c8b
-  Args:
-    source: Klaus_Felix_von_Amsberg
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-    literal_value: Klaus Felix Friedrich Leopold Gabriel Archim Julius August von Amsberg
-  AssignClass (1f1f2000-1ae5-4578-9cac-b5bb131f26f2)
- Call ID: 1f1f2000-1ae5-4578-9cac-b5bb131f26f2
-  Args:
-    source: Wilhelm_von_Amsberg
-    type: :Man
-  AssignClass (03847dcd-cd9e-4a5a-86ff-376b45d39b59)
- Call ID: 03847dcd-cd9e-4a5a-86ff-376b45d39b59
-  Args:
-    type: :Person
-    source: Wilhelm_von_Amsberg
-  AssignClass (545d876b-f478-40c1-8485-fa84b351d78f)
- Call ID: 545d876b-f478-40c1-8485-fa84b351d78f
-  Args:
-    source: Wilhelm_von_Amsberg
-    type: :Ancestor
-  AddLiteral (893ae494-8245-4ed7-93be-a32243cd129f)
- Call ID: 893ae494-8245-4ed7-93be-a32243cd129f
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1856
-    source: Wilhelm_von_Amsberg
-    literal_type: xsd:integer
-  AddLiteral (1665508e-1cf5-40dd-9e1b-89dd78ad5c80)
- Call ID: 1665508e-1cf5-40dd-9e1b-89dd78ad5c80
-  Args:
-    literal_type: xsd:integer
-    source: Wilhelm_von_Amsberg
-    literal_value: 1929
-    relation: :hasDeathYear
-  AssignClass (ca127eb0-e7ba-43c3-8ba3-c08bdb395b03)
- Call ID: ca127eb0-e7ba-43c3-8ba3-c08bdb395b03
-  Args:
-    source: Elise_von_Vieregg
+    source: PrincessElisabethOfDenmark
     type: :Woman
-  AssignClass (ae7a7216-7a02-4f3f-8146-a73357abf4a8)
- Call ID: ae7a7216-7a02-4f3f-8146-a73357abf4a8
+  AssignClass (33b2665f-622e-4235-8e8c-dd3bbc4e837d)
+ Call ID: 33b2665f-622e-4235-8e8c-dd3bbc4e837d
   Args:
-    source: Elise_von_Vieregg
+    source: PrincessElisabethOfDenmark
     type: :Person
-  AssignClass (b484650b-feca-481c-b35e-feade84833ea)
- Call ID: b484650b-feca-481c-b35e-feade84833ea
+  AddLiteral (94742dc4-3678-4e79-a773-aa22194ace8b)
+ Call ID: 94742dc4-3678-4e79-a773-aa22194ace8b
   Args:
-    source: Elise_von_Vieregg
-    type: :Ancestor
-  AddLiteral (2d90ac42-7afb-4bfc-bb05-be23d9ade08d)
- Call ID: 2d90ac42-7afb-4bfc-bb05-be23d9ade08d
-  Args:
-    literal_value: 1866
+    literal_type: xsd:integer
+    literal_value: 1935
     relation: :hasBirthYear
-    literal_type: xsd:integer
-    source: Elise_von_Vieregg
-  AddLiteral (4c129b60-d6e3-4f12-b423-66f0932214d1)
- Call ID: 4c129b60-d6e3-4f12-b423-66f0932214d1
+    source: PrincessElisabethOfDenmark
+  AddLiteral (b076c88f-bb44-46b4-a087-9a9bce03dba4)
+ Call ID: b076c88f-bb44-46b4-a087-9a9bce03dba4
   Args:
+    literal_type: xsd:integer
+    literal_value: 2018
     relation: :hasDeathYear
-    literal_value: 1951
-    source: Elise_von_Vieregg
-    literal_type: xsd:integer
-  AddTriple (fe7e2b9c-9cc5-4d81-86ba-602e55366d8b)
- Call ID: fe7e2b9c-9cc5-4d81-86ba-602e55366d8b
+    source: PrincessElisabethOfDenmark
+  AssignClass (15d71d2b-f3ee-4b63-9762-eb1eec88b35f)
+ Call ID: 15d71d2b-f3ee-4b63-9762-eb1eec88b35f
   Args:
+    source: KnudHereditaryPrinceOfDenmark
+    type: :Man
+  AssignClass (38bd050b-93fe-4e17-bd39-37da87f6a6c4)
+ Call ID: 38bd050b-93fe-4e17-bd39-37da87f6a6c4
+  Args:
+    source: KnudHereditaryPrinceOfDenmark
+    type: :Person
+  AssignClass (5ec7742a-991b-4633-9099-88a98199d44e)
+ Call ID: 5ec7742a-991b-4633-9099-88a98199d44e
+  Args:
+    source: PrincessCarolineMathildeOfDenmark
+    type: :Woman
+  AssignClass (a6f06ec0-5f91-44c9-b145-91dde3060709)
+ Call ID: a6f06ec0-5f91-44c9-b145-91dde3060709
+  Args:
+    type: :Person
+    source: PrincessCarolineMathildeOfDenmark
+  AddTriple (04ca5ad2-b944-4857-a992-b63e53a1a9ad)
+ Call ID: 04ca5ad2-b944-4857-a992-b63e53a1a9ad
+  Args:
+    target: KnudHereditaryPrinceOfDenmark
     relation: :hasFather
-    target: Wilhelm_von_Amsberg
-    source: Klaus_Felix_von_Amsberg
-  AddTriple (57e9536f-20ab-4556-875f-2537eec4be77)
- Call ID: 57e9536f-20ab-4556-875f-2537eec4be77
+    source: PrincessElisabethOfDenmark
+  AddTriple (e14058cd-7b73-4b44-9133-43756118e926)
+ Call ID: e14058cd-7b73-4b44-9133-43756118e926
   Args:
+    source: PrincessElisabethOfDenmark
     relation: :hasMother
-    source: Klaus_Felix_von_Amsberg
-    target: Elise_von_Vieregg
-  AssignClass (65cd6c5a-2faf-420a-8744-73fe83ae2e13)
- Call ID: 65cd6c5a-2faf-420a-8744-73fe83ae2e13
+    target: PrincessCarolineMathildeOfDenmark
+  AssignClass (22f8e40c-f9b1-4c94-9db2-392a62585cd4)
+ Call ID: 22f8e40c-f9b1-4c94-9db2-392a62585cd4
   Args:
-    source: Prince_Claus_of_the_Netherlands
+    source: ChristianX
     type: :Man
-  AssignClass (526a5783-283b-41ba-9bc3-0f2acef83620)
- Call ID: 526a5783-283b-41ba-9bc3-0f2acef83620
+  AssignClass (21fb213d-48fb-45e4-9ead-b8c94e716ee3)
+ Call ID: 21fb213d-48fb-45e4-9ead-b8c94e716ee3
   Args:
+    source: ChristianX
     type: :Person
-    source: Prince_Claus_of_the_Netherlands
-  AddTriple (e3c1d4ca-efed-4a3a-8512-38ccb9da3270)
- Call ID: e3c1d4ca-efed-4a3a-8512-38ccb9da3270
+  AddTriple (7f759191-8e12-4095-81bc-e08a0d1161eb)
+ Call ID: 7f759191-8e12-4095-81bc-e08a0d1161eb
   Args:
-    source: Klaus_Felix_von_Amsberg
-    target: Prince_Claus_of_the_Netherlands
-    relation: :isFatherOf
-  AssignClass (43bdaa2a-fecf-4129-9d63-2eed3239a11f)
- Call ID: 43bdaa2a-fecf-4129-9d63-2eed3239a11f
-  Args:
-    source: Gosta_von_dem_Bussche-Haddenhausen
-    type: :Woman
-  AssignClass (e5ff9d3e-e10b-4744-9767-51da3e40cc7d)
- Call ID: e5ff9d3e-e10b-4744-9767-51da3e40cc7d
-  Args:
-    type: :Person
-    source: Gosta_von_dem_Bussche-Haddenhausen
-  AssignClass (ff4a3f60-f4d6-4e32-9b4a-da7c40c196c8)
- Call ID: ff4a3f60-f4d6-4e32-9b4a-da7c40c196c8
-  Args:
-    type: :Ancestor
-    source: Gosta_von_dem_Bussche-Haddenhausen
-  AddLiteral (56635d2b-0b4b-4c59-8f26-68131d6bbd88)
- Call ID: 56635d2b-0b4b-4c59-8f26-68131d6bbd88
-  Args:
-    literal_type: xsd:integer
-    source: Gosta_von_dem_Bussche-Haddenhausen
-    literal_value: 1902
-    relation: :hasBirthYear
-  AddLiteral (a3b16264-b668-4320-b37f-38bbef652ead)
- Call ID: a3b16264-b668-4320-b37f-38bbef652ead
-  Args:
-    source: Gosta_von_dem_Bussche-Haddenhausen
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    literal_value: 1996
-  AddLiteral (84d4d98e-8e7a-4936-adc5-3557e4dcbd2a)
- Call ID: 84d4d98e-8e7a-4936-adc5-3557e4dcbd2a
-  Args:
-    source: Klaus_Felix_von_Amsberg
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1924
-  AddTriple (95406625-81c5-4d54-ae33-ca2c2530932e)
- Call ID: 95406625-81c5-4d54-ae33-ca2c2530932e
-  Args:
-    relation: :hasRelation
-    source: Klaus_Felix_von_Amsberg
-    target: Gosta_von_dem_Bussche-Haddenhausen
-  AssignClass (e9f98954-d5b1-41df-98f6-89102625ace9)
- Call ID: e9f98954-d5b1-41df-98f6-89102625ace9
-  Args:
-    source: Georg_von_dem_Bussche-Haddenhausen
-    type: :Man
-  AssignClass (7d5d8c9b-df64-42c6-851f-c7727a83db3e)
- Call ID: 7d5d8c9b-df64-42c6-851f-c7727a83db3e
-  Args:
-    type: :Person
-    source: Georg_von_dem_Bussche-Haddenhausen
-  AssignClass (d4d5ded7-d3bf-43aa-9627-38603d3be615)
- Call ID: d4d5ded7-d3bf-43aa-9627-38603d3be615
-  Args:
-    type: :Ancestor
-    source: Georg_von_dem_Bussche-Haddenhausen
-  AddLiteral (2400fec1-ceeb-4b35-8e82-afd21cb52b72)
- Call ID: 2400fec1-ceeb-4b35-8e82-afd21cb52b72
-  Args:
-    literal_type: xsd:integer
-    source: Georg_von_dem_Bussche-Haddenhausen
-    literal_value: 1869
-    relation: :hasBirthYear
-  AddLiteral (1187870c-185c-4249-a45a-e42c642fae2f)
- Call ID: 1187870c-185c-4249-a45a-e42c642fae2f
-  Args:
-    relation: :hasDeathYear
-    literal_value: 1923
-    source: Georg_von_dem_Bussche-Haddenhausen
-    literal_type: xsd:integer
-  AssignClass (0e41452a-0a6b-40b0-8f09-1e865720d015)
- Call ID: 0e41452a-0a6b-40b0-8f09-1e865720d015
-  Args:
-    source: Gabriele_von_dem_Bussche-Ippenburg
-    type: :Woman
-  AssignClass (020cd941-28c5-4fc6-b17a-2289e8359dbb)
- Call ID: 020cd941-28c5-4fc6-b17a-2289e8359dbb
-  Args:
-    source: Gabriele_von_dem_Bussche-Ippenburg
-    type: :Person
-  AssignClass (0b78cc34-7bac-41fb-ac83-b82ffcfc5c1e)
- Call ID: 0b78cc34-7bac-41fb-ac83-b82ffcfc5c1e
-  Args:
-    type: :Ancestor
-    source: Gabriele_von_dem_Bussche-Ippenburg
-  AddLiteral (2928b7be-2c6a-49ad-8b1c-bf86d980e307)
- Call ID: 2928b7be-2c6a-49ad-8b1c-bf86d980e307
-  Args:
-    literal_type: xsd:integer
-    source: Gabriele_von_dem_Bussche-Ippenburg
-    literal_value: 1877
-    relation: :hasBirthYear
-  AddLiteral (01170919-7c17-4bed-9ca6-929d38cbb408)
- Call ID: 01170919-7c17-4bed-9ca6-929d38cbb408
-  Args:
-    relation: :hasDeathYear
-    literal_value: 1973
-    source: Gabriele_von_dem_Bussche-Ippenburg
-    literal_type: xsd:integer
-  AddTriple (70f114c9-aef5-423e-b223-93463aacf7e1)
- Call ID: 70f114c9-aef5-423e-b223-93463aacf7e1
-  Args:
+    source: KnudHereditaryPrinceOfDenmark
     relation: :hasFather
-    target: Georg_von_dem_Bussche-Haddenhausen
-    source: Gosta_von_dem_Bussche-Haddenhausen
-  AddTriple (ddc45c90-3b15-4c1e-aaf2-6f72f88f2863)
- Call ID: ddc45c90-3b15-4c1e-aaf2-6f72f88f2863
+    target: ChristianX
+  AssignClass (3926ada5-8a81-4607-a4f7-7c27ad4dcbe2)
+ Call ID: 3926ada5-8a81-4607-a4f7-7c27ad4dcbe2
   Args:
-    target: Gabriele_von_dem_Bussche-Ippenburg
-    source: Gosta_von_dem_Bussche-Haddenhausen
-    relation: :hasMother
-  Finish (9efed486-ff1d-40d8-8659-e51b60159e24)
- Call ID: 9efed486-ff1d-40d8-8659-e51b60159e24
+    type: :Man
+    source: PrinceIngolf
+  AssignClass (d27c33c3-df1a-4390-9623-44f72ff8a3e3)
+ Call ID: d27c33c3-df1a-4390-9623-44f72ff8a3e3
+  Args:
+    source: PrinceIngolf
+    type: :Person
+  AssignClass (00f99f75-d141-44a5-b16f-6858358a8b67)
+ Call ID: 00f99f75-d141-44a5-b16f-6858358a8b67
+  Args:
+    type: :Man
+    source: PrinceChristian
+  AssignClass (389c45d0-cff8-481e-90c3-bd21dde1e727)
+ Call ID: 389c45d0-cff8-481e-90c3-bd21dde1e727
+  Args:
+    source: PrinceChristian
+    type: :Person
+  AddTriple (19716898-9eb7-4376-b40d-0413997fdcf9)
+ Call ID: 19716898-9eb7-4376-b40d-0413997fdcf9
+  Args:
+    target: PrinceIngolf
+    relation: :isSiblingOf
+    source: PrincessElisabethOfDenmark
+  AddTriple (380e9d31-0f42-4f5f-be22-4884da7a5e63)
+ Call ID: 380e9d31-0f42-4f5f-be22-4884da7a5e63
+  Args:
+    target: PrinceChristian
+    relation: :isSiblingOf
+    source: PrincessElisabethOfDenmark
+  AssignClass (dee4ee1b-36bd-406b-beea-754102067551)
+ Call ID: dee4ee1b-36bd-406b-beea-754102067551
+  Args:
+    source: FrederikIX
+    type: :Man
+  AssignClass (a0365fef-5447-47b9-83f5-0ef1ffc1ba40)
+ Call ID: a0365fef-5447-47b9-83f5-0ef1ffc1ba40
+  Args:
+    type: :Person
+    source: FrederikIX
+  AssignClass (386c8fa8-c02d-4afb-8923-142c5d26a375)
+ Call ID: 386c8fa8-c02d-4afb-8923-142c5d26a375
+  Args:
+    source: MargretheII
+    type: :Woman
+  AssignClass (89f1e799-207c-4aa1-b872-d59d27c2644f)
+ Call ID: 89f1e799-207c-4aa1-b872-d59d27c2644f
+  Args:
+    type: :Person
+    source: MargretheII
+  Finish (abd7384c-55fb-4da6-a208-93d3a8ea70de)
+ Call ID: abd7384c-55fb-4da6-a208-93d3a8ea70de
   Args:

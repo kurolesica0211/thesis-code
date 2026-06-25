@@ -7,133 +7,27 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:John_Elphinstone-_17th_Lord_Elphinstone a :Person ;
+    rdfs:label "John Elphinstone, 17th Lord Elphinstone" ;
+    data:wdtLink wdt:Q6231704 ;
+    :hasParent data:Mary_Elphinstone-_Lady_Elphinstone,
+        data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
+    :hasSex data:male .
 
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Margaret_Rhodes a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Margaret_Rhodes a :Person ;
     rdfs:label "Margaret Rhodes" ;
     data:posIndicesFull "408:428" ;
+    data:posIndicesPart "782:790" ;
     data:wdtLink wdt:Q6759834 ;
     :alsoKnownAs "Hon Margaret Elphinstone",
         "Hon Margaret Rhodes",
         "Hon. Margaret Elphinstone",
         "Hon. Margaret Rhodes",
         "Margaret Elphinstone" ;
-    :hasBrother data:John_Elphinstone-_17th_Lord_Elphinstone ;
-    :hasFather data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
     :hasParent data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
-    :hasSex data:female ;
-    :isChildOf data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
-    :isDaughterOf data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
-    :isSiblingOf data:John_Elphinstone-_17th_Lord_Elphinstone ;
-    :isSisterOf data:John_Elphinstone-_17th_Lord_Elphinstone .
+    :hasSex data:female .
 
-data:Mary_Elphinstone-_Lady_Elphinstone a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Mary Elphinstone, Lady Elphinstone" ;
-    data:posIndicesFull "278:298" ;
-    data:posIndicesPart "1115:1126",
-        "1185:1196",
-        "322:333",
-        "498:509",
-        "521:532",
-        "548:559",
-        "576:580",
-        "818:829" ;
-    data:wdtLink wdt:Q6779476 ;
-    :alsoKnownAs "Lady Mary Bowes-Lyon",
-        "Lady Mary Frances Bowes-Lyon",
-        "Mary Frances Elphinstone, Lady Elphinstone" ;
-    :hasChild data:John_Elphinstone-_17th_Lord_Elphinstone ;
-    :hasSex data:female ;
-    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSon data:John_Elphinstone-_17th_Lord_Elphinstone ;
-    :isAuntOf data:Elizabeth_II,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isMotherOf data:John_Elphinstone-_17th_Lord_Elphinstone ;
-    :isParentOf data:John_Elphinstone-_17th_Lord_Elphinstone ;
-    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
-
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "195:213",
-        "201:213",
-        "750:768",
-        "756:768" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isSiblingOf data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isSisterOf data:Princess_Margaret-_Countess_of_Snowdon .
-
-data:Princess_Margaret-_Countess_of_Snowdon a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Margaret, Countess of Snowdon" ;
-    data:posIndicesFull "773:811" ;
-    data:wdtLink wdt:Q153815 ;
-    :alsoKnownAs "Margaret Rose",
-        "Margaret Windsor",
-        "Margaret York" ;
-    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :hasSister data:Elizabeth_II ;
-    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isSiblingOf data:Elizabeth_II ;
-    :isSisterOf data:Elizabeth_II .
-
-data:Sidney_Elphinstone-_16th_Lord_Elphinstone a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Sidney Elphinstone, 16th Lord Elphinstone" ;
-    data:posIndicesFull "231:272" ;
-    data:posIndicesPart "1115:1126",
-        "1185:1196",
-        "322:333",
-        "498:509",
-        "516:520",
-        "521:532",
-        "548:559",
-        "813:817",
-        "818:829" ;
-    data:wdtLink wdt:Q3960165 ;
-    :alsoKnownAs "Sidney Herbert Elphinstone, 16th Lord Elphinstone" ;
-    :hasChild data:John_Elphinstone-_17th_Lord_Elphinstone,
-        data:Margaret_Rhodes ;
-    :hasDaughter data:Margaret_Rhodes ;
-    :hasSex data:male ;
-    :hasSon data:John_Elphinstone-_17th_Lord_Elphinstone ;
-    :isFatherOf data:John_Elphinstone-_17th_Lord_Elphinstone,
-        data:Margaret_Rhodes ;
-    :isParentOf data:John_Elphinstone-_17th_Lord_Elphinstone,
-        data:Margaret_Rhodes .
-
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
     rdfs:label "Queen Elizabeth, The Queen Mother" ;
     data:posIndicesFull "195:210",
         "695:710",
@@ -154,35 +48,48 @@ data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
         "Queen-Empress Elizabeth",
         "The Queen Mother",
         "The Queen Mum" ;
-    :hasChild data:Elizabeth_II,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :hasDaughter data:Elizabeth_II,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :hasSex data:female ;
-    :hasSister data:Mary_Elphinstone-_Lady_Elphinstone ;
-    :isAuntOf data:John_Elphinstone-_17th_Lord_Elphinstone ;
-    :isMotherOf data:Elizabeth_II,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isParentOf data:Elizabeth_II,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isSiblingOf data:Mary_Elphinstone-_Lady_Elphinstone ;
-    :isSisterOf data:Mary_Elphinstone-_Lady_Elphinstone .
+    :hasSex data:female .
 
-data:John_Elphinstone-_17th_Lord_Elphinstone a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "John Elphinstone, 17th Lord Elphinstone" ;
-    data:wdtLink wdt:Q6231704 ;
-    :hasFather data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
-    :hasMother data:Mary_Elphinstone-_Lady_Elphinstone ;
-    :hasParent data:Mary_Elphinstone-_Lady_Elphinstone,
-        data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
-    :hasSex data:male ;
-    :hasSister data:Margaret_Rhodes ;
-    :isBrotherOf data:Margaret_Rhodes ;
-    :isChildOf data:Mary_Elphinstone-_Lady_Elphinstone,
-        data:Sidney_Elphinstone-_16th_Lord_Elphinstone ;
-    :isSiblingOf data:Margaret_Rhodes ;
-    :isSonOf data:Mary_Elphinstone-_Lady_Elphinstone,
-        data:Sidney_Elphinstone-_16th_Lord_Elphinstone .
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Mary_Elphinstone-_Lady_Elphinstone a :Person ;
+    rdfs:label "Mary Elphinstone, Lady Elphinstone" ;
+    data:posIndicesFull "278:298" ;
+    data:posIndicesPart "1115:1126",
+        "1185:1196",
+        "322:333",
+        "498:509",
+        "521:532",
+        "548:559",
+        "576:580",
+        "818:829" ;
+    data:wdtLink wdt:Q6779476 ;
+    :alsoKnownAs "Lady Mary Bowes-Lyon",
+        "Lady Mary Frances Bowes-Lyon",
+        "Mary Frances Elphinstone, Lady Elphinstone" ;
+    :hasSex data:female .
+
+data:Sidney_Elphinstone-_16th_Lord_Elphinstone a :Person ;
+    rdfs:label "Sidney Elphinstone, 16th Lord Elphinstone" ;
+    data:posIndicesFull "231:272" ;
+    data:posIndicesPart "1115:1126",
+        "1185:1196",
+        "322:333",
+        "498:509",
+        "516:520",
+        "521:532",
+        "548:559",
+        "813:817",
+        "818:829" ;
+    data:wdtLink wdt:Q3960165 ;
+    :alsoKnownAs "Sidney Herbert Elphinstone, 16th Lord Elphinstone" ;
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

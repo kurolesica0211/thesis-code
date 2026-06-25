@@ -1,0 +1,235 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Female a :Female,
+        :Sex .
+
+data:Male a :Male,
+        :Sex .
+
+data:King_Constantine_II_of_Greece a :Man ;
+    :hasBrother data:King_Constantine_II_of_Greece ;
+    :hasRelation data:King_Constantine_II_of_Greece ;
+    :isBloodrelationOf data:King_Constantine_II_of_Greece ;
+    :isBrotherOf data:King_Constantine_II_of_Greece ;
+    :isSiblingOf data:King_Constantine_II_of_Greece .
+
+data:King_Frederik_X_of_Denmark a :Man ;
+    :hasBrother data:King_Frederik_X_of_Denmark ;
+    :hasRelation data:King_Frederik_X_of_Denmark ;
+    :isBloodrelationOf data:King_Frederik_X_of_Denmark ;
+    :isBrotherOf data:King_Frederik_X_of_Denmark ;
+    :isSiblingOf data:King_Frederik_X_of_Denmark .
+
+data:Queen_Margrethe_II_of_Denmark a :Woman ;
+    :hasRelation data:Queen_Margrethe_II_of_Denmark ;
+    :hasSister data:Queen_Margrethe_II_of_Denmark ;
+    :isBloodrelationOf data:Queen_Margrethe_II_of_Denmark ;
+    :isSiblingOf data:Queen_Margrethe_II_of_Denmark ;
+    :isSisterOf data:Queen_Margrethe_II_of_Denmark .
+
+data:Heinrich-Wilhelm_Johannsmann a :Ancestor,
+        :Man ;
+    :hasBrother data:Heinrich-Wilhelm_Johannsmann ;
+    :hasChild data:Alexander_Johannsmann ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:Male ;
+    :hasSon data:Alexander_Johannsmann ;
+    :isAncestorOf data:Alexander_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isBloodrelationOf data:Heinrich-Wilhelm_Johannsmann ;
+    :isBrotherOf data:Heinrich-Wilhelm_Johannsmann ;
+    :isFatherOf data:Alexander_Johannsmann ;
+    :isParentOf data:Alexander_Johannsmann ;
+    :isSiblingOf data:Heinrich-Wilhelm_Johannsmann ;
+    :isUncleOf data:Alexander_Johannsmann .
+
+data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasChild data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasDaughter data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isBrotherOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isFatherOf data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isParentOf data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :isUncleOf data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Princess_Benedikte_of_Denmark a :Ancestor,
+        :Woman ;
+    :hasChild data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasDaughter data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:Female ;
+    :hasSister data:Princess_Benedikte_of_Denmark ;
+    :isAncestorOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isAuntOf data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isBloodrelationOf data:Princess_Benedikte_of_Denmark ;
+    :isMotherOf data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isParentOf data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Princess_Benedikte_of_Denmark ;
+    :isSisterOf data:Princess_Benedikte_of_Denmark .
+
+data:Alexander_Johannsmann a :Ancestor,
+        :Man ;
+    :hasAncestor data:Heinrich-Wilhelm_Johannsmann ;
+    :hasBirthYear 1977 ;
+    :hasBrother data:Alexander_Johannsmann ;
+    :hasChild data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :hasDaughter data:Louisa_Margareta_Benedikte_Hanna ;
+    :hasFather data:Heinrich-Wilhelm_Johannsmann ;
+    :hasParent data:Heinrich-Wilhelm_Johannsmann ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:Male ;
+    :hasSon data:Konstantin_Gustav_Heinrich_Richard ;
+    :isAncestorOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isBloodrelationOf data:Alexander_Johannsmann ;
+    :isBrotherOf data:Alexander_Johannsmann ;
+    :isChildOf data:Heinrich-Wilhelm_Johannsmann ;
+    :isFatherOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isParentOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isSiblingOf data:Alexander_Johannsmann ;
+    :isSonOf data:Heinrich-Wilhelm_Johannsmann ;
+    :isUncleOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna .
+
+data:Konstantin_Gustav_Heinrich_Richard a :Man ;
+    :hasAncestor data:Alexander_Johannsmann,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBirthYear 2010 ;
+    :hasBrother data:Konstantin_Gustav_Heinrich_Richard ;
+    :hasFather data:Alexander_Johannsmann ;
+    :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasParent data:Alexander_Johannsmann,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:Male ;
+    :hasSister data:Louisa_Margareta_Benedikte_Hanna ;
+    :isBloodrelationOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isBrotherOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isChildOf data:Alexander_Johannsmann,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isSonOf data:Alexander_Johannsmann,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Louisa_Margareta_Benedikte_Hanna a :Woman ;
+    :hasAncestor data:Alexander_Johannsmann,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasBirthYear 2015 ;
+    :hasBrother data:Konstantin_Gustav_Heinrich_Richard ;
+    :hasFather data:Alexander_Johannsmann ;
+    :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasParent data:Alexander_Johannsmann,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:Female ;
+    :hasSister data:Louisa_Margareta_Benedikte_Hanna ;
+    :isBloodrelationOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isChildOf data:Alexander_Johannsmann,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isDaughterOf data:Alexander_Johannsmann,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSiblingOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isSisterOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna .
+
+data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasBirthYear 1975 ;
+    :hasChild data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :hasDaughter data:Louisa_Margareta_Benedikte_Hanna ;
+    :hasFather data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Princess_Benedikte_of_Denmark ;
+    :hasParent data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :hasRelation data:Alexander_Johannsmann,
+        data:Heinrich-Wilhelm_Johannsmann,
+        data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna,
+        data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark,
+        data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSex data:Female ;
+    :hasSister data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :hasSon data:Konstantin_Gustav_Heinrich_Richard ;
+    :isAncestorOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isAuntOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isBloodrelationOf data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isChildOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :isDaughterOf data:Prince_Richard_of_Sayn-Wittgenstein-Berleburg,
+        data:Princess_Benedikte_of_Denmark ;
+    :isMotherOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isParentOf data:Konstantin_Gustav_Heinrich_Richard,
+        data:Louisa_Margareta_Benedikte_Hanna ;
+    :isSiblingOf data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg ;
+    :isSisterOf data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
+

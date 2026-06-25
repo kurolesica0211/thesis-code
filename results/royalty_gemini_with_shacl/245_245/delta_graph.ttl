@@ -2,23 +2,64 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Windsor a :Man,
-        :Person ;
-    :alsoKnownAs "Alex Ulster"^^xsd:string ;
-    :hasBirthYear 1974 ;
-    :hasFather data:Prince_Richard_Duke_of_Gloucester ;
-    :hasMarriageYear 2002 ;
-    :hasMother data:Birgitte_Duchess_of_Gloucester ;
-    :hasRelation data:Claire_Booth .
+data:India_Hicks a :Person,
+        :Woman ;
+    :isChildOf data:David_Nightingale_Hicks,
+        data:Pamela_Hicks .
 
-data:Birgitte_Duchess_of_Gloucester a :Ancestor,
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
+
+data:Baron_Mount_Temple a :Ancestor,
+        :Man,
+        :Person .
+
+data:David_Nightingale_Hicks a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1929 ;
+    :hasDeathYear 1998 ;
+    :hasFather data:Herbert_Hicks ;
+    :hasMother data:Iris_Elsie_Platten .
+
+data:Edwina_Ashley a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Baron_Mount_Temple .
+
+data:Herbert_Hicks a :Ancestor,
+        :Man,
+        :Person .
+
+data:Iris_Elsie_Platten a :Ancestor,
         :Person,
         :Woman .
 
-data:Claire_Booth a :Person,
+data:Louis_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Princess_Victoria_of_Hesse .
+
+data:Pamela_Hicks a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1929 ;
+    :hasFather data:Louis_Mountbatten ;
+    :hasMother data:Edwina_Ashley ;
+    :isSisterOf data:Patricia_Mountbatten .
+
+data:Patricia_Mountbatten a :Person,
         :Woman .
 
-data:Prince_Richard_Duke_of_Gloucester a :Ancestor,
+data:Prince_Louis_of_Battenberg a :Ancestor,
         :Man,
         :Person .
+
+data:Princess_Victoria_of_Hesse a :Ancestor,
+        :Person,
+        :Woman .
 

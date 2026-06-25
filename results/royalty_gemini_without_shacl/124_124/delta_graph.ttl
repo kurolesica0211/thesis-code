@@ -2,15 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Amedeo_of_Austria-Este a :Man,
-        :Person ;
-    :hasBirthYear 1986 ;
-    :hasFather data:Lorenz_Archduke_of_Austria-Este ;
-    :hasMother data:Princess_Astrid_of_Belgium .
-
-data:Lorenz_Archduke_of_Austria-Este a :Man,
+data:Fabrizio_Prince_Ruffo_di_Calabria_Santapau a :Man,
         :Person .
 
-data:Princess_Astrid_of_Belgium a :Person,
+data:Jos%C3%A9phine_Charlotte_of_Luxembourg a :Person,
         :Woman .
+
+data:Astrid_of_Sweden a :Person,
+        :Woman ;
+    :hasDeathYear 1935 .
+
+data:King_Albert_II a :Man,
+        :Person ;
+    :hasFather data:King_Leopold_III ;
+    :hasMother data:Astrid_of_Sweden .
+
+data:King_Leopold_III a :Man,
+        :Person .
+
+data:King_Philippe a :Man,
+        :Person ;
+    :isBrotherOf data:Princess_Astrid_of_Belgium .
+
+data:Prince_Lorenz_of_Belgium a :Man,
+        :Person ;
+    :hasFather data:Robert_Archduke_of_Austria_Este ;
+    :hasMother data:Princess_Margherita_of_Savoy_Aosta .
+
+data:Princess_Astrid_of_Belgium a :Person,
+        :Woman ;
+    :hasBirthYear 1962 ;
+    :hasFather data:King_Albert_II ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Queen_Paola ;
+    :hasRelation data:Prince_Lorenz_of_Belgium ;
+    :isSisterOf data:King_Philippe .
+
+data:Princess_Margherita_of_Savoy_Aosta a :Person,
+        :Woman ;
+    :hasDeathYear 2022 .
+
+data:Queen_Paola a :Person,
+        :Woman .
+
+data:Robert_Archduke_of_Austria_Este a :Man,
+        :Person ;
+    :hasDeathYear 1996 .
 

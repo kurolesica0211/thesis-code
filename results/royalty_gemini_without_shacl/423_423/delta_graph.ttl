@@ -2,49 +2,55 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,
+data:Wilhelm_Victor_of_Prussia a :Man,
+        :Person ;
+    :hasAncestor data:Wilhelm_II ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Adalbert_of_Prussia ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:Adelheid_of_Saxe-Meiningen ;
+    :hasRelation data:Marie_Antoinette_of_Hoyos-Stichsenstein ;
+    :hasSister data:Viktoria_Marina .
+
+data:Adalbert_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1948 .
+
+data:Adelheid_of_Saxe-Meiningen a :Person,
         :Woman ;
-    :hasBirthYear 2003 ;
-    :hasFather data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
-    :hasMother data:Camilla_Crociani ;
-    :hasSister data:Maria_Chiara_of_Bourbon-Two_Sicilies ;
-    :isBloodrelationOf data:Jean-Christophe_Prince_Napoleon .
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1971 .
 
-data:Prince_Laurent_of_Belgium a :Man,
+data:Friedrich_Count_of_Hoyos-Stichsenstein a :Man,
         :Person ;
-    :hasBrother data:King_Philippe_of_Belgium .
+    :hasBirthYear 1876 ;
+    :hasDeathYear 1951 .
 
-data:Prince_Leopold_of_Nassau a :Man,
+data:Kirby_William_Patterson a :Man,
         :Person ;
-    :hasFather data:Prince_Guillaume_of_Luxembourg .
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1984 .
 
-data:Jean-Christophe_Prince_Napoleon a :Person .
-
-data:King_Philippe_of_Belgium a :Man,
-        :Person .
-
-data:Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
+data:Marie_Antoinette_of_Hoyos-Stichsenstein a :Person,
         :Woman ;
-    :hasFather data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
-    :hasMother data:Camilla_Crociani .
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Friedrich_Count_of_Hoyos-Stichsenstein ;
+    :hasMother data:Wilhelmine_von_Wuthenau-Hohenthurm .
 
-data:Prince_Ferdinand a :Ancestor,
-        :Man,
+data:Viktoria_Marina a :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1981 ;
+    :hasRelation data:Kirby_William_Patterson .
+
+data:Wilhelm_II a :Man,
         :Person .
 
-data:Prince_Guillaume_of_Luxembourg a :Ancestor,
-        :Man,
-        :Person .
-
-data:Princess_Beatrice_of_Bourbon-Two_Sicilies a :Person,
-        :Woman .
-
-data:Camilla_Crociani a :Person,
-        :Woman .
-
-data:Prince_Carlo_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Prince_Ferdinand ;
-    :hasSister data:Princess_Beatrice_of_Bourbon-Two_Sicilies .
+data:Wilhelmine_von_Wuthenau-Hohenthurm a :Person,
+        :Woman ;
+    :hasBirthYear 1895 ;
+    :hasDeathYear 1983 .
 

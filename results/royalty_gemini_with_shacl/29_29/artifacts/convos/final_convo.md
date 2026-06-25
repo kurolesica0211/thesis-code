@@ -95,6 +95,7 @@ They have two sons, August and Ernest Brooksbank.
 Early life
 
 Eugenie was born at 7:58 pm on 23 March 1990 at the Portland Hospital in London, where she was delivered by caesarean section, to the then Duke and Duchess of York.
+She is the sixth grandchild of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
 She was baptised Eugenie Victoria Helena at St Mary Magdalene Church, Sandringham, by Peter Nott, Bishop of Norwich, on 23 December, becoming the first royal baby to have a public christening and the only one of the Queen's grandchildren not to be baptised in the Lily Font.
 Eugenie's parents divorced when she was six years old.
 The Duke and Duchess of York agreed to joint custody of their two children.
@@ -111,6 +112,7 @@ In the Channel 5 documentary Beatrice and Eugenie: Pampered Princesses, royal co
 In January 2022, reports emerged that Eugenie lost her taxpayer-funded police security in 2011, reportedly following an intervention by her uncle, Charles III (then Prince of Wales).
 During her gap year, Eugenie's taxpayer‐funded security reportedly cost more than £100,000.
 Charles considered the expense excessive, as Eugenie and Beatrice were unlikely to take on major royal duties.
+The move is said to have angered the Duke, who argued to the Queen that his daughters should be treated as full members of the royal family.
 In July 2023, Eugenie joined the advisory board of Goals House, a community dedicated to advancing the United Nations’ Sustainable Development Goals.
 Marriage and family
 
@@ -119,6 +121,7 @@ The couple had been dating for seven years, having been introduced by friends du
 The wedding took place at St George's Chapel, Windsor Castle, on 12 October 2018.
 Eugenie's wedding dress was designed by the British fashion designer Peter Pilotto and the Belgian Christopher de Vos of British-based label Peter Pilotto, and was created to display the surgical scar on her back.
 Their first child, August Philip Hawke Brooksbank, was born on 9 February 2021 at the Portland Hospital in London, and was delivered by caesarean section due to his mother's childhood scoliosis operation.
+He is named in part after his great-grandfather Prince Philip, Duke of Edinburgh.
 August was christened at the Royal Chapel of All Saints, Windsor Great Park, on 21 November 2021, in a joint ceremony with his second cousin, Lucas Tindall.
 Eugenie gave birth to a second son, Ernest George Ronnie Brooksbank, on 30 May 2023.
 He is named after his great-great-great-grandfather George V. Ernest was born 13th in line to the throne and is now 14th.
@@ -134,7 +137,6 @@ Eugenie became patron of the RNOH Charity in March 2019.
 In January 2013, Eugenie and her sister promoted Britain overseas in Germany.
 In 2016, Eugenie, together with her mother and sister, collaborated with the British contemporary artist Teddy McDonald on a painting titled Royal Love.
 Eugenie and her sister became Patrons of the Teenage Cancer Trust in June 2016.
-She is also Patron of the Coronet Theatre, the European School of Osteopathy, the Tate Young Patrons, and, alongside her mother, the Elephant Family, of which her uncle and aunt, King Charles III and Queen Camilla, are joint presidents.
 In 2016, Eugenie visited a safe house run by The Salvation Army and met with victims of sexual abuse and modern slavery.
 In 2017, Eugenie became the ambassador for the Artemis Council of the New Museum, a by-invitation membership initiative focused on supporting female artists.
 In July 2018, in her capacity as co-founder and director of the Anti-Slavery Collective, Eugenie spoke at the NEXUS Global Summit at the UN headquarters in New York to discuss efforts to end modern slavery.
@@ -155,6 +157,8 @@ Since her marriage, she has been styled "Her Royal Highness Princess Eugenie, Mr
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -170,39 +174,9 @@ Since her marriage, she has been styled "Her Royal Highness Princess Eugenie, Mr
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -217,6 +191,23 @@ Since her marriage, she has been styled "Her Royal Highness Princess Eugenie, Mr
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -234,6 +225,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -301,29 +307,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -332,6 +330,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -344,6 +350,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -352,17 +360,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -390,6 +400,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -405,287 +499,169 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a7c35e8a-ea43-415b-9bbb-1452e9ae63ee)
- Call ID: a7c35e8a-ea43-415b-9bbb-1452e9ae63ee
+  AssignClass (2365819c-7c7b-4788-8682-cd6f7a627431)
+ Call ID: 2365819c-7c7b-4788-8682-cd6f7a627431
   Args:
-    source: Eugenie_Victoria_Helena
-    type: :Person
-  AssignClass (6d56b383-e344-4cb6-98c3-620ba3108e4e)
- Call ID: 6d56b383-e344-4cb6-98c3-620ba3108e4e
-  Args:
-    source: Eugenie_Victoria_Helena
+    source: :Eugenie
     type: :Woman
-  AssignClass (7a57f745-1580-49aa-b85e-a9bd78a53e61)
- Call ID: 7a57f745-1580-49aa-b85e-a9bd78a53e61
+  AssignClass (814219f9-8ba0-4418-aa92-8eb123bddcb7)
+ Call ID: 814219f9-8ba0-4418-aa92-8eb123bddcb7
   Args:
-    source: Andrew_Mountbatten-Windsor
+    source: :Eugenie
     type: :Person
-  AssignClass (2ff63b64-87fc-440f-a3cc-7279c8e96495)
- Call ID: 2ff63b64-87fc-440f-a3cc-7279c8e96495
+  AddLiteral (c0493600-0c63-4427-aa3a-16691b4ebbdc)
+ Call ID: c0493600-0c63-4427-aa3a-16691b4ebbdc
   Args:
-    source: Andrew_Mountbatten-Windsor
-    type: :Man
-  AssignClass (9495b920-e124-496b-b241-1ef7b562b327)
- Call ID: 9495b920-e124-496b-b241-1ef7b562b327
-  Args:
-    type: :Ancestor
-    source: Andrew_Mountbatten-Windsor
-  AssignClass (0f617425-3e74-4481-9224-094b50f5f96d)
- Call ID: 0f617425-3e74-4481-9224-094b50f5f96d
-  Args:
-    source: Sarah_Ferguson
-    type: :Person
-  AssignClass (f06f89ae-1f76-480e-8d66-93b43fe5b546)
- Call ID: f06f89ae-1f76-480e-8d66-93b43fe5b546
-  Args:
-    type: :Woman
-    source: Sarah_Ferguson
-  AssignClass (1edd5d35-86b4-4a7f-9419-ba166c7c5338)
- Call ID: 1edd5d35-86b4-4a7f-9419-ba166c7c5338
-  Args:
-    source: Sarah_Ferguson
-    type: :Ancestor
-  AssignClass (144535b1-5017-48ed-ad01-434bb1504d56)
- Call ID: 144535b1-5017-48ed-ad01-434bb1504d56
-  Args:
-    type: :Person
-    source: Jack_Brooksbank
-  AssignClass (3a6638bb-8d39-4538-b7ae-1ba395396da5)
- Call ID: 3a6638bb-8d39-4538-b7ae-1ba395396da5
-  Args:
-    source: Jack_Brooksbank
-    type: :Man
-  AssignClass (f83b3cce-0011-47ee-a8d8-c8b9c60dca51)
- Call ID: f83b3cce-0011-47ee-a8d8-c8b9c60dca51
-  Args:
-    source: August_Brooksbank
-    type: :Person
-  AssignClass (7886279c-ff98-43d5-962d-d9d28a4b60aa)
- Call ID: 7886279c-ff98-43d5-962d-d9d28a4b60aa
-  Args:
-    type: :Man
-    source: August_Brooksbank
-  AssignClass (74037cc2-f1bd-4d13-9038-88fa3a381f03)
- Call ID: 74037cc2-f1bd-4d13-9038-88fa3a381f03
-  Args:
-    source: Ernest_Brooksbank
-    type: :Person
-  AssignClass (90a6fa2d-0a28-4511-9b3e-16f709e7fa7e)
- Call ID: 90a6fa2d-0a28-4511-9b3e-16f709e7fa7e
-  Args:
-    type: :Man
-    source: Ernest_Brooksbank
-  AssignClass (275db74d-054b-4b32-b314-9a97171abee0)
- Call ID: 275db74d-054b-4b32-b314-9a97171abee0
-  Args:
-    source: Beatrice
-    type: :Person
-  AssignClass (f69911b1-da0f-4c12-8e7e-c907655db9e2)
- Call ID: f69911b1-da0f-4c12-8e7e-c907655db9e2
-  Args:
-    type: :Woman
-    source: Beatrice
-  AssignClass (d75b0487-c57b-4b38-b06c-6f912442ceb9)
- Call ID: d75b0487-c57b-4b38-b06c-6f912442ceb9
-  Args:
-    type: :Person
-    source: Charles_III
-  AssignClass (8911b0e1-43fc-4ac1-8267-bee448058fce)
- Call ID: 8911b0e1-43fc-4ac1-8267-bee448058fce
-  Args:
-    source: Charles_III
-    type: :Man
-  AssignClass (b0d16fb3-031d-4bfa-bcf8-f85bdd9dc242)
- Call ID: b0d16fb3-031d-4bfa-bcf8-f85bdd9dc242
-  Args:
-    type: :Female
-    source: Female_Sex
-  AssignClass (293b6e91-95a1-4825-93bb-037c24cb9ff4)
- Call ID: 293b6e91-95a1-4825-93bb-037c24cb9ff4
-  Args:
-    source: Male_Sex
-    type: :Male
-  AddTriple (d76341db-2ca2-48fa-998a-0c392b3ed989)
- Call ID: d76341db-2ca2-48fa-998a-0c392b3ed989
-  Args:
-    source: Eugenie_Victoria_Helena
-    relation: :hasSex
-    target: Female_Sex
-  AddTriple (34b47ac3-fdce-4c8e-8dc0-3b849041d771)
- Call ID: 34b47ac3-fdce-4c8e-8dc0-3b849041d771
-  Args:
-    relation: :hasSex
-    target: Female_Sex
-    source: Sarah_Ferguson
-  AddTriple (84adb649-a746-4234-8c8d-062ce0d07708)
- Call ID: 84adb649-a746-4234-8c8d-062ce0d07708
-  Args:
-    target: Female_Sex
-    relation: :hasSex
-    source: Beatrice
-  AddTriple (0223c9b9-916c-4e22-9bc9-0f6bc6fcd15f)
- Call ID: 0223c9b9-916c-4e22-9bc9-0f6bc6fcd15f
-  Args:
-    source: Andrew_Mountbatten-Windsor
-    target: Male_Sex
-    relation: :hasSex
-  AddTriple (dd1c4107-ee6a-4e97-9412-9546cc063cdc)
- Call ID: dd1c4107-ee6a-4e97-9412-9546cc063cdc
-  Args:
-    source: Jack_Brooksbank
-    target: Male_Sex
-    relation: :hasSex
-  AddTriple (d0afab57-64e6-44cd-897a-ee15186d91cc)
- Call ID: d0afab57-64e6-44cd-897a-ee15186d91cc
-  Args:
-    source: August_Brooksbank
-    target: Male_Sex
-    relation: :hasSex
-  AddTriple (18e15a1f-51af-4ebb-97b2-2d73e5b93397)
- Call ID: 18e15a1f-51af-4ebb-97b2-2d73e5b93397
-  Args:
-    source: Ernest_Brooksbank
-    relation: :hasSex
-    target: Male_Sex
-  AddTriple (76791cbe-01b7-4e46-81bf-06dca4898ad0)
- Call ID: 76791cbe-01b7-4e46-81bf-06dca4898ad0
-  Args:
-    target: Male_Sex
-    relation: :hasSex
-    source: Charles_III
-  AddTriple (0b21c226-9a77-43fe-8361-d083b65e015d)
- Call ID: 0b21c226-9a77-43fe-8361-d083b65e015d
-  Args:
-    relation: :hasFather
-    target: Andrew_Mountbatten-Windsor
-    source: Eugenie_Victoria_Helena
-  AddTriple (5ce8974e-a1a5-4b7f-a960-3c8671872837)
- Call ID: 5ce8974e-a1a5-4b7f-a960-3c8671872837
-  Args:
-    source: Eugenie_Victoria_Helena
-    relation: :hasMother
-    target: Sarah_Ferguson
-  AddTriple (dd6efe4b-9403-4178-a80d-56a21fcdf595)
- Call ID: dd6efe4b-9403-4178-a80d-56a21fcdf595
-  Args:
-    target: Andrew_Mountbatten-Windsor
-    relation: :hasFather
-    source: Beatrice
-  AddTriple (fb62cf91-39a3-4723-b105-767724b5c0be)
- Call ID: fb62cf91-39a3-4723-b105-767724b5c0be
-  Args:
-    source: Beatrice
-    relation: :hasMother
-    target: Sarah_Ferguson
-  AddTriple (92ca91bd-55f1-4457-99e0-511a3386a8a4)
- Call ID: 92ca91bd-55f1-4457-99e0-511a3386a8a4
-  Args:
-    relation: :hasSon
-    target: August_Brooksbank
-    source: Eugenie_Victoria_Helena
-  AddTriple (0032ab16-bb60-4944-b192-cb72deabb981)
- Call ID: 0032ab16-bb60-4944-b192-cb72deabb981
-  Args:
-    relation: :hasSon
-    target: Ernest_Brooksbank
-    source: Eugenie_Victoria_Helena
-  AddTriple (333644dd-4bc6-4ab1-bd55-b2579183b9bf)
- Call ID: 333644dd-4bc6-4ab1-bd55-b2579183b9bf
-  Args:
-    source: August_Brooksbank
-    relation: :hasFather
-    target: Jack_Brooksbank
-  AddTriple (97f27563-b977-4163-bb60-0b5f45eabef0)
- Call ID: 97f27563-b977-4163-bb60-0b5f45eabef0
-  Args:
-    source: Ernest_Brooksbank
-    relation: :hasFather
-    target: Jack_Brooksbank
-  AddTriple (ab53d110-8edf-4470-b547-a7672af6c4f4)
- Call ID: ab53d110-8edf-4470-b547-a7672af6c4f4
-  Args:
-    source: Eugenie_Victoria_Helena
-    relation: :hasSister
-    target: Beatrice
-  AddLiteral (a0f28f2f-f5a3-46bb-869c-48b962a36eef)
- Call ID: a0f28f2f-f5a3-46bb-869c-48b962a36eef
-  Args:
-    relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Eugenie_Victoria_Helena
     literal_value: 1990
-  AddLiteral (0ca71864-4254-4911-b3dc-7fb7962ced5a)
- Call ID: 0ca71864-4254-4911-b3dc-7fb7962ced5a
+    relation: :hasBirthYear
+    source: :Eugenie
+  AssignClass (2e966b4c-56c1-4abd-81bd-1cca5337163e)
+ Call ID: 2e966b4c-56c1-4abd-81bd-1cca5337163e
   Args:
+    source: :Andrew_Mountbatten-Windsor
+    type: :Man
+  AssignClass (6791f2cc-6a66-40ed-8213-ef94c0861562)
+ Call ID: 6791f2cc-6a66-40ed-8213-ef94c0861562
+  Args:
+    source: :Andrew_Mountbatten-Windsor
+    type: :Person
+  AssignClass (3a5a4807-6928-4a08-bdcc-de05dfabe440)
+ Call ID: 3a5a4807-6928-4a08-bdcc-de05dfabe440
+  Args:
+    source: :Sarah_Ferguson
+    type: :Woman
+  AssignClass (1cd2abda-12f7-454b-a4ed-f1dc7fd3cf86)
+ Call ID: 1cd2abda-12f7-454b-a4ed-f1dc7fd3cf86
+  Args:
+    source: :Sarah_Ferguson
+    type: :Person
+  AddTriple (35a4aba5-0602-4dc2-b146-8f65623dd2b4)
+ Call ID: 35a4aba5-0602-4dc2-b146-8f65623dd2b4
+  Args:
+    relation: :hasFather
+    target: :Andrew_Mountbatten-Windsor
+    source: :Eugenie
+  AddTriple (823c854a-79d6-4a29-a2b3-2748440eaa2b)
+ Call ID: 823c854a-79d6-4a29-a2b3-2748440eaa2b
+  Args:
+    relation: :hasMother
+    target: :Sarah_Ferguson
+    source: :Eugenie
+  AssignClass (18d15ca9-f5e2-42d9-8f0c-496a7989a9c8)
+ Call ID: 18d15ca9-f5e2-42d9-8f0c-496a7989a9c8
+  Args:
+    source: :Jack_Brooksbank
+    type: :Man
+  AssignClass (6d157581-c706-437e-b4b5-f1a458736729)
+ Call ID: 6d157581-c706-437e-b4b5-f1a458736729
+  Args:
+    source: :Jack_Brooksbank
+    type: :Person
+  AddTriple (2f984ac1-9196-48be-b2b6-5b6f11f4fe7a)
+ Call ID: 2f984ac1-9196-48be-b2b6-5b6f11f4fe7a
+  Args:
+    target: :Jack_Brooksbank
+    source: :Eugenie
+    relation: :hasRelation
+  AddLiteral (31cfc7a4-c1f9-4bee-b06e-0ee92e415353)
+ Call ID: 31cfc7a4-c1f9-4bee-b06e-0ee92e415353
+  Args:
+    source: :Eugenie
     relation: :hasMarriageYear
-    source: Eugenie_Victoria_Helena
     literal_value: 2018
     literal_type: xsd:integer
-  AddLiteral (b0cb0af7-36ee-4304-8e46-ebdb72f037a0)
- Call ID: b0cb0af7-36ee-4304-8e46-ebdb72f037a0
+  AssignClass (5a171d58-8fed-4547-b877-6812872af25f)
+ Call ID: 5a171d58-8fed-4547-b877-6812872af25f
   Args:
-    literal_type: xsd:string
-    literal_value: Eugenie Victoria Helena
-    source: Eugenie_Victoria_Helena
-    relation: :knownAs
-  AddLiteral (0c09276e-874d-44b5-8233-9665407a944d)
- Call ID: 0c09276e-874d-44b5-8233-9665407a944d
+    source: :August_Brooksbank
+    type: :Man
+  AssignClass (0976dc98-596d-4e23-8b3a-73d858bb5034)
+ Call ID: 0976dc98-596d-4e23-8b3a-73d858bb5034
   Args:
-    literal_value: Princess Eugenie, Mrs Jack Brooksbank
-    source: Eugenie_Victoria_Helena
-    literal_type: xsd:string
-    relation: :alsoKnownAs
-  Finish (adf94378-274c-4ef3-9bb9-f9e155f81750)
- Call ID: adf94378-274c-4ef3-9bb9-f9e155f81750
+    source: :August_Brooksbank
+    type: :Person
+  AssignClass (ce12ece7-13d4-4cfd-828a-04975023dde7)
+ Call ID: ce12ece7-13d4-4cfd-828a-04975023dde7
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :Ernest_Brooksbank
+    type: :Man
+  AssignClass (360887d5-3482-4462-8018-318d9065735b)
+ Call ID: 360887d5-3482-4462-8018-318d9065735b
+  Args:
+    source: :Ernest_Brooksbank
+    type: :Person
+  AddTriple (bec29d22-d132-4e76-8a68-f29881f765f1)
+ Call ID: bec29d22-d132-4e76-8a68-f29881f765f1
+  Args:
+    source: :Eugenie
+    target: :August_Brooksbank
+    relation: :hasChild
+  AddTriple (b0c7748a-dce5-415e-bb61-86aed09cf89f)
+ Call ID: b0c7748a-dce5-415e-bb61-86aed09cf89f
+  Args:
+    target: :Ernest_Brooksbank
+    source: :Eugenie
+    relation: :hasChild
+  AddTriple (17be364e-3cf9-4525-ae24-148b95e4d6a0)
+ Call ID: 17be364e-3cf9-4525-ae24-148b95e4d6a0
+  Args:
+    target: :August_Brooksbank
+    source: :Jack_Brooksbank
+    relation: :hasChild
+  AddTriple (c0c5b1ed-add0-496c-8dd7-a11d187fe413)
+ Call ID: c0c5b1ed-add0-496c-8dd7-a11d187fe413
+  Args:
+    relation: :hasChild
+    source: :Jack_Brooksbank
+    target: :Ernest_Brooksbank
+  AssignClass (c7aaeb92-d95a-4fbb-a7d4-6bec51ccbfcb)
+ Call ID: c7aaeb92-d95a-4fbb-a7d4-6bec51ccbfcb
+  Args:
+    source: :Beatrice
+    type: :Woman
+  AssignClass (9ae258d3-c5a9-4663-bf99-476347141622)
+ Call ID: 9ae258d3-c5a9-4663-bf99-476347141622
+  Args:
+    source: :Beatrice
+    type: :Person
+  AddTriple (b0c35764-b6b7-4dff-bf0b-1762dc219988)
+ Call ID: b0c35764-b6b7-4dff-bf0b-1762dc219988
+  Args:
+    relation: :hasSister
+    target: :Beatrice
+    source: :Eugenie
+  AssignClass (207c2b0f-5921-4a5b-82ef-1d690d14d429)
+ Call ID: 207c2b0f-5921-4a5b-82ef-1d690d14d429
+  Args:
+    source: :Charles_III
+    type: :Man
+  AssignClass (1cf6c5d1-2045-4b85-acd0-d7072521800c)
+ Call ID: 1cf6c5d1-2045-4b85-acd0-d7072521800c
+  Args:
+    source: :Charles_III
+    type: :Person
+  AddTriple (ff262db4-d963-452f-84fb-dbe3f73e09ca)
+ Call ID: ff262db4-d963-452f-84fb-dbe3f73e09ca
+  Args:
+    relation: :isFatherOf
+    target: :Eugenie
+    source: :Charles_III
+  RemoveTriple (9962d372-b56f-4f69-b0e6-e22f4b180915)
+ Call ID: 9962d372-b56f-4f69-b0e6-e22f4b180915
+  Args:
+    source: :Charles_III
+    target: :Eugenie
+    relation: :isFatherOf
+  AddTriple (f9dd1467-6362-44a6-acd4-0572755c2e0f)
+ Call ID: f9dd1467-6362-44a6-acd4-0572755c2e0f
+  Args:
+    relation: :hasRelation
+    target: :Charles_III
+    source: :Eugenie
+  Finish (e39044dd-18fc-414d-adb8-047f79dbf3fb)
+ Call ID: e39044dd-18fc-414d-adb8-047f79dbf3fb
+  Args:
 
 ================================= Tool Message =================================
 
@@ -806,56 +782,40 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Charles_III a :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
-
-  data:Eugenie_Victoria_Helena a :Person,
+  data:Eugenie a :Person,
           :Woman ;
-      :alsoKnownAs "Princess Eugenie, Mrs Jack Brooksbank"^^xsd:string ;
       :hasBirthYear 1990 ;
+      :hasChild data:August_Brooksbank,
+          data:Ernest_Brooksbank ;
       :hasFather data:Andrew_Mountbatten-Windsor ;
       :hasMarriageYear 2018 ;
       :hasMother data:Sarah_Ferguson ;
-      :hasSex data:Female_Sex ;
-      :hasSister data:Beatrice ;
-      :hasSon data:August_Brooksbank,
-          data:Ernest_Brooksbank ;
-      :knownAs "Eugenie Victoria Helena"^^xsd:string .
+      :hasRelation data:Charles_III,
+          data:Jack_Brooksbank ;
+      :hasSister data:Beatrice .
 
-  data:August_Brooksbank a :Man,
-          :Person ;
-      :hasFather data:Jack_Brooksbank ;
-      :hasSex data:Male_Sex .
+  data:Andrew_Mountbatten-Windsor a :Man,
+          :Person .
 
   data:Beatrice a :Person,
-          :Woman ;
-      :hasFather data:Andrew_Mountbatten-Windsor ;
-      :hasMother data:Sarah_Ferguson ;
-      :hasSex data:Female_Sex .
+          :Woman .
 
-  data:Ernest_Brooksbank a :Man,
-          :Person ;
-      :hasFather data:Jack_Brooksbank ;
-      :hasSex data:Male_Sex .
-
-  data:Andrew_Mountbatten-Windsor a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
+  data:Charles_III a :Man,
+          :Person .
 
   data:Jack_Brooksbank a :Man,
           :Person ;
-      :hasSex data:Male_Sex .
+      :hasChild data:August_Brooksbank,
+          data:Ernest_Brooksbank .
 
-  data:Sarah_Ferguson a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female_Sex .
+  data:Sarah_Ferguson a :Person,
+          :Woman .
 
-  data:Female_Sex a :Female .
+  data:August_Brooksbank a :Man,
+          :Person .
 
-  data:Male_Sex a :Male .
+  data:Ernest_Brooksbank a :Man,
+          :Person .
 
 
 
@@ -867,8 +827,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (9f37ff92-f423-4c08-a253-e42faf5c8354)
- Call ID: 9f37ff92-f423-4c08-a253-e42faf5c8354
+  ValidateShacl (9549b686-d479-49ba-b3c6-0f77c37f1587)
+ Call ID: 9549b686-d479-49ba-b3c6-0f77c37f1587
   Args:
 
 ================================= Tool Message =================================
@@ -880,49 +840,49 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Jack_Brooksbank' is used as the value for 'hasFather' on 'August_Brooksbank', but it is not assigned the required class ':Ancestor' or ':Man'.
+      The node 'Andrew_Mountbatten-Windsor' is assigned as the father of 'Eugenie', but it does not have the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Jack_Brooksbank', class=':Man')
+      AssignClass(node='Andrew_Mountbatten-Windsor', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Jack_Brooksbank' is used as the value for 'hasFather' on 'Ernest_Brooksbank', but it is not assigned the required class ':Ancestor' or ':Man'.
+      The node 'Sarah_Ferguson' is assigned as the mother of 'Eugenie', but it does not have the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Jack_Brooksbank', class=':Man')
+      AssignClass(node='Sarah_Ferguson', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Jack_Brooksbank' is used as the value for 'hasFather' on 'Ernest_Brooksbank', but it is not assigned the required class ':Ancestor' or ':Man'.
+      The node 'Andrew_Mountbatten-Windsor' is assigned as the father of 'Eugenie', but it does not have the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Jack_Brooksbank', class=':Man')
+      AssignClass(node='Andrew_Mountbatten-Windsor', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Jack_Brooksbank' is used as the value for 'hasFather' on 'August_Brooksbank', but it is not assigned the required class ':Ancestor' or ':Man'.
+      The node 'Sarah_Ferguson' is assigned as the mother of 'Eugenie', but it does not have the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Jack_Brooksbank', class=':Man')
+      AssignClass(node='Sarah_Ferguson', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'Jack_Brooksbank' is used as the value for 'hasFather' on 'Ernest_Brooksbank', but it is not assigned the required class ':Ancestor' or ':Man'.
+      The node 'Andrew_Mountbatten-Windsor' is assigned as the father of 'Eugenie', but it does not have the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Jack_Brooksbank', class=':Man')
+      AssignClass(node='Andrew_Mountbatten-Windsor', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'Jack_Brooksbank' is used as the value for 'hasFather' on 'August_Brooksbank', but it is not assigned the required class ':Ancestor' or ':Man'.
+      The node 'Sarah_Ferguson' is assigned as the mother of 'Eugenie', but it does not have the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Jack_Brooksbank', class=':Man')
+      AssignClass(node='Sarah_Ferguson', class=':Ancestor')
 
 
 
@@ -931,14 +891,23 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (7a5aac55-c508-4d35-9797-0841864e4777)
- Call ID: 7a5aac55-c508-4d35-9797-0841864e4777
+  AssignClass (6f60425c-3640-4d90-8f30-0cc10427af93)
+ Call ID: 6f60425c-3640-4d90-8f30-0cc10427af93
   Args:
-    source: Jack_Brooksbank
     type: :Ancestor
-  ValidateShacl (762cdb13-9009-4477-b49b-9bf1ca61061a)
- Call ID: 762cdb13-9009-4477-b49b-9bf1ca61061a
+    source: :Andrew_Mountbatten-Windsor
+  AssignClass (a6b6635f-d435-4a73-af40-47833e52f4bd)
+ Call ID: a6b6635f-d435-4a73-af40-47833e52f4bd
   Args:
+    type: :Ancestor
+    source: :Sarah_Ferguson
+  Finish (f6be4e8d-cc12-405e-aeb2-86a4f0a3de7f)
+ Call ID: f6be4e8d-cc12-405e-aeb2-86a4f0a3de7f
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -947,59 +916,56 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Charles_III a :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
-
-  data:Eugenie_Victoria_Helena a :Person,
+  data:Eugenie a :Person,
           :Woman ;
-      :alsoKnownAs "Princess Eugenie, Mrs Jack Brooksbank"^^xsd:string ;
       :hasBirthYear 1990 ;
+      :hasChild data:August_Brooksbank,
+          data:Ernest_Brooksbank ;
       :hasFather data:Andrew_Mountbatten-Windsor ;
       :hasMarriageYear 2018 ;
       :hasMother data:Sarah_Ferguson ;
-      :hasSex data:Female_Sex ;
-      :hasSister data:Beatrice ;
-      :hasSon data:August_Brooksbank,
-          data:Ernest_Brooksbank ;
-      :knownAs "Eugenie Victoria Helena"^^xsd:string .
-
-  data:August_Brooksbank a :Man,
-          :Person ;
-      :hasFather data:Jack_Brooksbank ;
-      :hasSex data:Male_Sex .
-
-  data:Beatrice a :Person,
-          :Woman ;
-      :hasFather data:Andrew_Mountbatten-Windsor ;
-      :hasMother data:Sarah_Ferguson ;
-      :hasSex data:Female_Sex .
-
-  data:Ernest_Brooksbank a :Man,
-          :Person ;
-      :hasFather data:Jack_Brooksbank ;
-      :hasSex data:Male_Sex .
+      :hasRelation data:Charles_III,
+          data:Jack_Brooksbank ;
+      :hasSister data:Beatrice .
 
   data:Andrew_Mountbatten-Windsor a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex data:Male_Sex .
+          :Person .
 
-  data:Jack_Brooksbank a :Ancestor,
-          :Man,
+  data:Beatrice a :Person,
+          :Woman .
+
+  data:Charles_III a :Man,
+          :Person .
+
+  data:Jack_Brooksbank a :Man,
           :Person ;
-      :hasSex data:Male_Sex .
+      :hasChild data:August_Brooksbank,
+          data:Ernest_Brooksbank .
 
   data:Sarah_Ferguson a :Ancestor,
           :Person,
-          :Woman ;
-      :hasSex data:Female_Sex .
+          :Woman .
 
-  data:Female_Sex a :Female .
+  data:August_Brooksbank a :Man,
+          :Person .
 
-  data:Male_Sex a :Male .
+  data:Ernest_Brooksbank a :Man,
+          :Person .
 
 
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (505da9dc-0757-4637-a9ad-f8c91f5e8aa6)
+ Call ID: 505da9dc-0757-4637-a9ad-f8c91f5e8aa6
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1009,6 +975,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (fba22d0c-f40e-4e09-b71d-5dc80fedff66)
- Call ID: fba22d0c-f40e-4e09-b71d-5dc80fedff66
+  Finish (57acd362-3535-4cf5-9b31-1ae32971988b)
+ Call ID: 57acd362-3535-4cf5-9b31-1ae32971988b
   Args:

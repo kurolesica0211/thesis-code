@@ -1,0 +1,654 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:QueenVictoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Christoph,
+        data:FriedrichWilhelm,
+        data:MargaretOfPrussia,
+        data:Maximilian,
+        data:Philipp,
+        data:QueenVictoria,
+        data:Viktoria,
+        data:Wolfgang ;
+    :hasSister data:QueenVictoria ;
+    :isAncestorOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:MargaretOfPrussia,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBloodrelationOf data:QueenVictoria ;
+    :isSiblingOf data:QueenVictoria ;
+    :isSisterOf data:QueenVictoria .
+
+data:FrederickIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FrederickIII ;
+    :hasChild data:MargaretOfPrussia ;
+    :hasDaughter data:MargaretOfPrussia ;
+    :hasRelation data:Christoph,
+        data:FrederickIII,
+        data:FriedrichWilhelm,
+        data:MargaretOfPrussia,
+        data:Maximilian,
+        data:Philipp,
+        data:Viktoria,
+        data:Wolfgang ;
+    :isAncestorOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:MargaretOfPrussia,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBloodrelationOf data:FrederickIII ;
+    :isBrotherOf data:FrederickIII ;
+    :isFatherOf data:MargaretOfPrussia ;
+    :isParentOf data:MargaretOfPrussia ;
+    :isSiblingOf data:FrederickIII ;
+    :isUncleOf data:MargaretOfPrussia .
+
+data:VictoriaPrincessRoyal a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MargaretOfPrussia ;
+    :hasDaughter data:MargaretOfPrussia ;
+    :hasRelation data:Christoph,
+        data:FriedrichWilhelm,
+        data:MargaretOfPrussia,
+        data:Maximilian,
+        data:Philipp,
+        data:VictoriaPrincessRoyal,
+        data:Viktoria,
+        data:Wolfgang ;
+    :hasSister data:VictoriaPrincessRoyal ;
+    :isAncestorOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:MargaretOfPrussia,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isAuntOf data:MargaretOfPrussia ;
+    :isBloodrelationOf data:VictoriaPrincessRoyal ;
+    :isMotherOf data:MargaretOfPrussia ;
+    :isParentOf data:MargaretOfPrussia ;
+    :isSiblingOf data:VictoriaPrincessRoyal ;
+    :isSisterOf data:VictoriaPrincessRoyal .
+
+data:Charlotte a :Person,
+        :Woman ;
+    :hasBrother data:Henry,
+        data:WilhelmII ;
+    :hasRelation data:Charlotte,
+        data:Christoph,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Philipp,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :hasSister data:Charlotte,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria ;
+    :isAuntOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isSisterOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII .
+
+data:Henry a :Man,
+        :Person ;
+    :hasBrother data:Henry,
+        data:WilhelmII ;
+    :hasRelation data:Charlotte,
+        data:Christoph,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Philipp,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :hasSister data:Charlotte,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isBrotherOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isUncleOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang .
+
+data:Sophie a :Person,
+        :Woman ;
+    :hasBrother data:Henry,
+        data:WilhelmII ;
+    :hasRelation data:Charlotte,
+        data:Christoph,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Philipp,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :hasSister data:Charlotte,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria ;
+    :isAuntOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isSisterOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII .
+
+data:WilhelmII a :Man,
+        :Person ;
+    :hasBrother data:Henry,
+        data:WilhelmII ;
+    :hasRelation data:Charlotte,
+        data:Christoph,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Philipp,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :hasSister data:Charlotte,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isBrotherOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isUncleOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang .
+
+data:Viktoria a :Person,
+        :Woman ;
+    :hasBrother data:Henry,
+        data:WilhelmII ;
+    :hasRelation data:Charlotte,
+        data:Christoph,
+        data:FrederickIII,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Philipp,
+        data:QueenVictoria,
+        data:Sophie,
+        data:VictoriaPrincessRoyal,
+        data:Viktoria,
+        data:WilhelmII ;
+    :hasSister data:Charlotte,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria ;
+    :isAuntOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isSisterOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII .
+
+data:FrederickCharlesOfHesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FrederickCharlesOfHesse ;
+    :hasChild data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :hasRelation data:Christoph,
+        data:FrederickCharlesOfHesse,
+        data:FriedrichWilhelm,
+        data:MargaretOfPrussia,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :hasSon data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isAncestorOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBloodrelationOf data:FrederickCharlesOfHesse ;
+    :isBrotherOf data:FrederickCharlesOfHesse ;
+    :isFatherOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isParentOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isSiblingOf data:FrederickCharlesOfHesse ;
+    :isUncleOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang .
+
+data:FriedrichWilhelm a :Man,
+        :Person ;
+    :hasAncestor data:FrederickCharlesOfHesse,
+        data:FrederickIII,
+        data:MargaretOfPrussia,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal ;
+    :hasBrother data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :hasFather data:FrederickCharlesOfHesse ;
+    :hasMother data:MargaretOfPrussia ;
+    :hasParent data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia ;
+    :hasRelation data:Christoph,
+        data:FrederickCharlesOfHesse,
+        data:FrederickIII,
+        data:FriedrichWilhelm,
+        data:MargaretOfPrussia,
+        data:Maximilian,
+        data:Philipp,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal,
+        data:Wolfgang ;
+    :isBloodrelationOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBrotherOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isChildOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia ;
+    :isSiblingOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isSonOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia .
+
+data:Maximilian a :Man,
+        :Person ;
+    :hasAncestor data:FrederickCharlesOfHesse,
+        data:FrederickIII,
+        data:MargaretOfPrussia,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal ;
+    :hasBrother data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :hasFather data:FrederickCharlesOfHesse ;
+    :hasMother data:MargaretOfPrussia ;
+    :hasParent data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia ;
+    :hasRelation data:Christoph,
+        data:FrederickCharlesOfHesse,
+        data:FrederickIII,
+        data:FriedrichWilhelm,
+        data:MargaretOfPrussia,
+        data:Maximilian,
+        data:Philipp,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal,
+        data:Wolfgang ;
+    :isBloodrelationOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBrotherOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isChildOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia ;
+    :isSiblingOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isSonOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia .
+
+data:Wolfgang a :Man,
+        :Person ;
+    :hasAncestor data:FrederickCharlesOfHesse,
+        data:FrederickIII,
+        data:MargaretOfPrussia,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal ;
+    :hasBrother data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :hasFather data:FrederickCharlesOfHesse ;
+    :hasMother data:MargaretOfPrussia ;
+    :hasParent data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia ;
+    :hasRelation data:Christoph,
+        data:FrederickCharlesOfHesse,
+        data:FrederickIII,
+        data:FriedrichWilhelm,
+        data:MargaretOfPrussia,
+        data:Maximilian,
+        data:Philipp,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal,
+        data:Wolfgang ;
+    :isBloodrelationOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBrotherOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isChildOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia ;
+    :isSiblingOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isSonOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia .
+
+data:Christoph a :Man,
+        :Person ;
+    :hasAncestor data:FrederickCharlesOfHesse,
+        data:FrederickIII,
+        data:MargaretOfPrussia,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal ;
+    :hasBrother data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :hasFather data:FrederickCharlesOfHesse ;
+    :hasMother data:MargaretOfPrussia ;
+    :hasParent data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia ;
+    :hasRelation data:Charlotte,
+        data:Christoph,
+        data:FrederickCharlesOfHesse,
+        data:FrederickIII,
+        data:FriedrichWilhelm,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Maximilian,
+        data:Philipp,
+        data:QueenVictoria,
+        data:Sophie,
+        data:VictoriaPrincessRoyal,
+        data:Viktoria,
+        data:WilhelmII,
+        data:Wolfgang ;
+    :isBloodrelationOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBrotherOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isChildOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia ;
+    :isSiblingOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isSonOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia .
+
+data:Philipp a :Man,
+        :Person ;
+    :hasAncestor data:FrederickCharlesOfHesse,
+        data:FrederickIII,
+        data:MargaretOfPrussia,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal ;
+    :hasBrother data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :hasFather data:FrederickCharlesOfHesse ;
+    :hasMother data:MargaretOfPrussia ;
+    :hasParent data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia ;
+    :hasRelation data:Charlotte,
+        data:Christoph,
+        data:FrederickCharlesOfHesse,
+        data:FrederickIII,
+        data:FriedrichWilhelm,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Maximilian,
+        data:Philipp,
+        data:QueenVictoria,
+        data:Sophie,
+        data:VictoriaPrincessRoyal,
+        data:Viktoria,
+        data:WilhelmII,
+        data:Wolfgang ;
+    :isBloodrelationOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBrotherOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isChildOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia ;
+    :isSiblingOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isSonOf data:FrederickCharlesOfHesse,
+        data:MargaretOfPrussia .
+
+data:MargaretOfPrussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:FrederickIII,
+        data:QueenVictoria,
+        data:VictoriaPrincessRoyal ;
+    :hasBirthYear 1872 ;
+    :hasBrother data:Henry,
+        data:WilhelmII ;
+    :hasChild data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :hasDeathYear 1954 ;
+    :hasFather data:FrederickIII ;
+    :hasMother data:VictoriaPrincessRoyal ;
+    :hasParent data:FrederickIII,
+        data:VictoriaPrincessRoyal ;
+    :hasRelation data:Charlotte,
+        data:Christoph,
+        data:FrederickCharlesOfHesse,
+        data:FrederickIII,
+        data:FriedrichWilhelm,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Maximilian,
+        data:Philipp,
+        data:QueenVictoria,
+        data:Sophie,
+        data:VictoriaPrincessRoyal,
+        data:Viktoria,
+        data:WilhelmII,
+        data:Wolfgang ;
+    :hasSister data:Charlotte,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria ;
+    :hasSon data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isAncestorOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isAuntOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isChildOf data:FrederickIII,
+        data:VictoriaPrincessRoyal ;
+    :isDaughterOf data:FrederickIII,
+        data:VictoriaPrincessRoyal ;
+    :isMotherOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isParentOf data:Christoph,
+        data:FriedrichWilhelm,
+        data:Maximilian,
+        data:Philipp,
+        data:Wolfgang ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII ;
+    :isSisterOf data:Charlotte,
+        data:Henry,
+        data:MargaretOfPrussia,
+        data:Sophie,
+        data:Viktoria,
+        data:WilhelmII .
+

@@ -85,49 +85,35 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Beatrix*
+The Duke of Castro  The Duchess of Castro
 
 
-Princess Margriet*Pieter van Vollenhoven*
+Princess Béatrice Marie Caroline Louise Françoise of Bourbon-Two Sicilies (born 16 June 1950 in Saint-Raphaël, Var, France) is the eldest daughter of Prince Ferdinand, Duke of Castro, Castro-line claimant to the headship of the House of Bourbon-Two Sicilies, and his wife, Chantal de Chevron-Villette.
+Her younger brother, Prince Carlo, Duke of Castro, is the current Castro-line claimant to the headship of the House of Bourbon-Two Sicilies.
+Marriage and issue
+
+Béatrice married Charles Napoléon Bonaparte, eldest son of Louis, Prince Napoléon and his wife, Alix de Foresta, on 19 December 1978 in Paris, France.
+Charles was the great-great-grandnephew of Napoleon I of France, founder of the Imperial House of France.
+Béatrice and Charles had two children:
 
 
-Prince Maurits Willem Pieter Hendrik of Orange-Nassau, van Vollenhoven (born 17 April 1968) is a member of the Dutch royal family as the eldest son of Princess Margriet of the Netherlands and Pieter van Vollenhoven.
-Life and career
+Title, styles and honours
 
-Maurits was born on 17 April 1968.
-His godparents are Princess Christina of the Netherlands, Prince Alois-Konstantin of Lowenstein-Wertheim-Rosenberg, Jhr. G. Krayenhof, and The Dutch Merchant Fleet.
-Van Vollenhoven has three brothers: Bernhard, Pieter-Christiaan, Floris.
-In 1987, van Vollenhoven performed military service with the Royal Netherlands Marine Corps and the Royal Netherlands Navy.
-From September 2001 to May 2006, the prince worked for Philips (Domestic Appliances and Personal Care) in Amersfoort, where he was in charge of part of the Philishave portfolio.
-In May 2006, van Vollenhoven started his own business, The Source, which focuses on innovative concepts for products, services and systems for both business and government.
-Since 1 May 2013, Maurits is Aide-de-camp to King Willem-Alexander and promoted to the rank of Commander (Dutch: Kapitein-lieutenant ter Zee) in the Royal Netherlands Navy.
-Maurits works for Sunrock, a company which invests in solar parks and green energy.
-The prince criticised the solar energy policy of the municipality of Amsterdam and opened up about other topics.
-Marriage and family
+Title and styles
 
-In 1989, van Vollenhoven met Marilène (Marie-Helène) van den Broek b. 4 February 1970, the youngest daughter of Hans van den Broek and Josee van Schendel.
-He was the first grandchild of Queen Juliana and Prince Bernhard of the Netherlands who married.
-Together, the couple has three children:
-
-
-By Royal Decree of 26 May 1998, the children of van Vollenhoven bear the surname "van Lippe-Biesterfeld van Vollenhoven", without titles.
-Upon the abdication of Queen Beatrix, which took place on 30 April 2013, it was confirmed that the children of Princess Margriet and Pieter van Vollenhoven would no longer be eligible to succeed to the throne, and that they would also cease to be members of the Royal House according to The Membership of the Royal House Act.
-Titles and styles
+Honours
 
 Ancestry
 
 References
-
-External links
-
-2 gave up the title "Prince of the Netherlands, but still held the title "Prince of Orange-Nassau"
-3 title granted by Royal Decree to descendants of Princess Irene
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -143,39 +129,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -190,6 +146,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -207,6 +180,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -274,29 +262,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -305,6 +285,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -317,6 +305,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -325,17 +315,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -363,6 +355,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -378,186 +454,129 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d1e7303e-1f9d-4815-9af3-f420437cc170)
- Call ID: d1e7303e-1f9d-4815-9af3-f420437cc170
-  Args:
-    type: :Man
-    source: Maurits_van_Vollenhoven
-  AssignClass (bbaf60b6-7db1-4a4d-95d3-e69fc608b1b9)
- Call ID: bbaf60b6-7db1-4a4d-95d3-e69fc608b1b9
-  Args:
-    source: Maurits_van_Vollenhoven
-    type: :Person
-  AssignClass (b4f24f4c-edaf-4fa5-b644-c03ae206f170)
- Call ID: b4f24f4c-edaf-4fa5-b644-c03ae206f170
+  AssignClass (d1b71164-5e17-4586-9903-47e7cd24d30c)
+ Call ID: d1b71164-5e17-4586-9903-47e7cd24d30c
   Args:
     type: :Woman
-    source: Margriet_of_the_Netherlands
-  AssignClass (e3a3a0c6-2af5-4dd0-bd19-4167df26aafc)
- Call ID: e3a3a0c6-2af5-4dd0-bd19-4167df26aafc
+    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
+  AssignClass (33a796ee-d8b4-4b08-8829-3c010cac36d5)
+ Call ID: 33a796ee-d8b4-4b08-8829-3c010cac36d5
   Args:
-    source: Margriet_of_the_Netherlands
+    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
     type: :Person
-  AssignClass (5925e666-458a-4f08-b8a0-6ab26ba00240)
- Call ID: 5925e666-458a-4f08-b8a0-6ab26ba00240
-  Args:
-    source: Pieter_van_Vollenhoven
-    type: :Man
-  AssignClass (c2eb3586-adf2-4541-961c-06bed59aacbd)
- Call ID: c2eb3586-adf2-4541-961c-06bed59aacbd
-  Args:
-    type: :Person
-    source: Pieter_van_Vollenhoven
-  AssignClass (c8442501-ab06-4e39-816e-8af36b97722e)
- Call ID: c8442501-ab06-4e39-816e-8af36b97722e
-  Args:
-    type: :Man
-    source: Bernhard_van_Vollenhoven
-  AssignClass (c27a50ab-21dd-4392-9015-ba4856002b92)
- Call ID: c27a50ab-21dd-4392-9015-ba4856002b92
-  Args:
-    type: :Person
-    source: Bernhard_van_Vollenhoven
-  AssignClass (253f2f20-38d2-44a7-8ae3-bf77ed6f6860)
- Call ID: 253f2f20-38d2-44a7-8ae3-bf77ed6f6860
-  Args:
-    source: Pieter-Christiaan_van_Vollenhoven
-    type: :Man
-  AssignClass (bca2328d-0917-47fe-89bb-a52bd560e14e)
- Call ID: bca2328d-0917-47fe-89bb-a52bd560e14e
-  Args:
-    source: Pieter-Christiaan_van_Vollenhoven
-    type: :Person
-  AssignClass (e418aebc-b4f1-4e45-ab1d-67ccb8162315)
- Call ID: e418aebc-b4f1-4e45-ab1d-67ccb8162315
-  Args:
-    type: :Man
-    source: Floris_van_Vollenhoven
-  AssignClass (2bfe993c-260b-46d0-89a8-c505de4e6381)
- Call ID: 2bfe993c-260b-46d0-89a8-c505de4e6381
-  Args:
-    source: Floris_van_Vollenhoven
-    type: :Person
-  AssignClass (3c20d9dc-b168-4228-b41e-9733060891d1)
- Call ID: 3c20d9dc-b168-4228-b41e-9733060891d1
-  Args:
-    type: :Woman
-    source: Marilene_van_den_Broek
-  AssignClass (adbbef24-3b56-446b-821a-f221716c641b)
- Call ID: adbbef24-3b56-446b-821a-f221716c641b
-  Args:
-    source: Marilene_van_den_Broek
-    type: :Person
-  AssignClass (bb2d154b-5fc8-40cc-8b31-8e5e8bc204b3)
- Call ID: bb2d154b-5fc8-40cc-8b31-8e5e8bc204b3
-  Args:
-    type: :Man
-    source: Hans_van_den_Broek
-  AssignClass (8ca5fbe1-f26d-4378-8ef2-6f0f16618c4c)
- Call ID: 8ca5fbe1-f26d-4378-8ef2-6f0f16618c4c
-  Args:
-    type: :Person
-    source: Hans_van_den_Broek
-  AssignClass (42b6e386-78f7-4a83-9f5c-d3a27a4dc61f)
- Call ID: 42b6e386-78f7-4a83-9f5c-d3a27a4dc61f
-  Args:
-    source: Josee_van_Schendel
-    type: :Woman
-  AssignClass (bd028e66-f082-4f08-a083-9ead3483e73d)
- Call ID: bd028e66-f082-4f08-a083-9ead3483e73d
-  Args:
-    type: :Person
-    source: Josee_van_Schendel
-  AddTriple (61a9f74f-0cd7-4f81-a7eb-91b561535e75)
- Call ID: 61a9f74f-0cd7-4f81-a7eb-91b561535e75
-  Args:
-    target: Pieter_van_Vollenhoven
-    source: Maurits_van_Vollenhoven
-    relation: :hasFather
-  AddTriple (977665fd-4da7-4945-a37b-08bf0bf381f6)
- Call ID: 977665fd-4da7-4945-a37b-08bf0bf381f6
-  Args:
-    relation: :hasMother
-    source: Maurits_van_Vollenhoven
-    target: Margriet_of_the_Netherlands
-  AddTriple (2b4c09e0-4c19-46b7-892f-46f0528744cf)
- Call ID: 2b4c09e0-4c19-46b7-892f-46f0528744cf
-  Args:
-    target: Bernhard_van_Vollenhoven
-    source: Maurits_van_Vollenhoven
-    relation: :hasBrother
-  AddTriple (50c260a0-0756-4132-b23b-b4e3f9801234)
- Call ID: 50c260a0-0756-4132-b23b-b4e3f9801234
-  Args:
-    relation: :hasBrother
-    target: Pieter-Christiaan_van_Vollenhoven
-    source: Maurits_van_Vollenhoven
-  AddTriple (032c8146-499b-42c9-9f79-fb464776f02c)
- Call ID: 032c8146-499b-42c9-9f79-fb464776f02c
-  Args:
-    relation: :hasBrother
-    source: Maurits_van_Vollenhoven
-    target: Floris_van_Vollenhoven
-  AddLiteral (482be472-7256-4f30-95d9-38e4be93858b)
- Call ID: 482be472-7256-4f30-95d9-38e4be93858b
-  Args:
-    source: Maurits_van_Vollenhoven
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1968
-  AddTriple (d7f9e177-b941-4a26-8984-28934f052478)
- Call ID: d7f9e177-b941-4a26-8984-28934f052478
-  Args:
-    source: Marilene_van_den_Broek
-    target: Hans_van_den_Broek
-    relation: :hasFather
-  AddTriple (178b9626-0b24-4fa1-a538-0670b87b217c)
- Call ID: 178b9626-0b24-4fa1-a538-0670b87b217c
-  Args:
-    source: Marilene_van_den_Broek
-    target: Josee_van_Schendel
-    relation: :hasMother
-  AddLiteral (2d272776-509c-4a44-b9a0-9b4eaece028f)
- Call ID: 2d272776-509c-4a44-b9a0-9b4eaece028f
+  AddLiteral (bf74c169-5304-48a2-88de-a55c6bc125fe)
+ Call ID: bf74c169-5304-48a2-88de-a55c6bc125fe
   Args:
     literal_type: xsd:integer
-    source: Marilene_van_den_Broek
-    literal_value: 1970
+    literal_value: 1950
+    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
     relation: :hasBirthYear
-  AddLiteral (a3a1ccaf-1aa0-44b9-976c-f18cef319ea6)
- Call ID: a3a1ccaf-1aa0-44b9-976c-f18cef319ea6
+  AssignClass (5d9175f0-12c2-4af2-ac4a-72e4deb92402)
+ Call ID: 5d9175f0-12c2-4af2-ac4a-72e4deb92402
   Args:
-    literal_value: 1989
+    type: :Man
+    source: Prince_Ferdinand_Duke_of_Castro
+  AssignClass (9251391f-9816-476a-9738-07904d6c9c43)
+ Call ID: 9251391f-9816-476a-9738-07904d6c9c43
+  Args:
+    type: :Person
+    source: Prince_Ferdinand_Duke_of_Castro
+  AssignClass (f9315436-716f-487e-b350-784b1ac42287)
+ Call ID: f9315436-716f-487e-b350-784b1ac42287
+  Args:
+    type: :Woman
+    source: Chantal_de_Chevron-Villette
+  AssignClass (93225559-46fd-490e-b087-82767b47bbc3)
+ Call ID: 93225559-46fd-490e-b087-82767b47bbc3
+  Args:
+    type: :Person
+    source: Chantal_de_Chevron-Villette
+  AddTriple (f2a7038f-5561-44ed-a093-192752926d21)
+ Call ID: f2a7038f-5561-44ed-a093-192752926d21
+  Args:
+    relation: :isDaughterOf
+    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
+    target: Prince_Ferdinand_Duke_of_Castro
+  AddTriple (1741f35c-c7e7-47ee-9aed-c613c504f4ed)
+ Call ID: 1741f35c-c7e7-47ee-9aed-c613c504f4ed
+  Args:
+    relation: :isDaughterOf
+    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
+    target: Chantal_de_Chevron-Villette
+  AssignClass (0890c0e2-a981-4c25-a90d-4ee9165526b9)
+ Call ID: 0890c0e2-a981-4c25-a90d-4ee9165526b9
+  Args:
+    type: :Man
+    source: Prince_Carlo_Duke_of_Castro
+  AssignClass (5a4d7202-c8ef-4865-b9ca-3bdb780f5c6b)
+ Call ID: 5a4d7202-c8ef-4865-b9ca-3bdb780f5c6b
+  Args:
+    type: :Person
+    source: Prince_Carlo_Duke_of_Castro
+  AddTriple (c836e32e-3015-4b9a-b812-4e36791862c2)
+ Call ID: c836e32e-3015-4b9a-b812-4e36791862c2
+  Args:
+    target: Prince_Carlo_Duke_of_Castro
+    relation: :isSiblingOf
+    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
+  AssignClass (6510e859-4489-4f9e-8d4c-51206b509b78)
+ Call ID: 6510e859-4489-4f9e-8d4c-51206b509b78
+  Args:
+    source: Charles_Napoléon_Bonaparte
+    type: :Man
+  AssignClass (ebfc969d-a626-4c72-b466-ce2d14d68b8e)
+ Call ID: ebfc969d-a626-4c72-b466-ce2d14d68b8e
+  Args:
+    source: Charles_Napoléon_Bonaparte
+    type: :Person
+  AddTriple (98390f51-9efe-4c86-88d6-19bdf9085801)
+ Call ID: 98390f51-9efe-4c86-88d6-19bdf9085801
+  Args:
+    relation: :hasRelation
+    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
+    target: Charles_Napoléon_Bonaparte
+  AddLiteral (1e9560da-4c38-46b2-9d4a-f65113ccdf9a)
+ Call ID: 1e9560da-4c38-46b2-9d4a-f65113ccdf9a
+  Args:
     relation: :hasMarriageYear
+    source: Princess_Béatrice_of_Bourbon-Two_Sicilies
+    literal_value: 1978
     literal_type: xsd:integer
-    source: Maurits_van_Vollenhoven
-  Finish (1a3436bf-80c6-48d4-9728-56fe8748bc2b)
- Call ID: 1a3436bf-80c6-48d4-9728-56fe8748bc2b
+  AssignClass (1ff18dd8-5bef-4241-b584-b25e365a8a26)
+ Call ID: 1ff18dd8-5bef-4241-b584-b25e365a8a26
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    type: :Man
+    source: Louis_Prince_Napoléon
+  AssignClass (aa2e4199-a052-4020-a9b5-0b5e8173ca3c)
+ Call ID: aa2e4199-a052-4020-a9b5-0b5e8173ca3c
+  Args:
+    source: Louis_Prince_Napoléon
+    type: :Person
+  AssignClass (23bdba5c-e83a-4107-b50d-1f60b4af9f24)
+ Call ID: 23bdba5c-e83a-4107-b50d-1f60b4af9f24
+  Args:
+    source: Alix_de_Foresta
+    type: :Woman
+  AssignClass (30b48f7a-b116-459f-9356-74de8f76cd8f)
+ Call ID: 30b48f7a-b116-459f-9356-74de8f76cd8f
+  Args:
+    type: :Person
+    source: Alix_de_Foresta
+  AddTriple (4e627e74-0498-4eca-ae97-4fb913828107)
+ Call ID: 4e627e74-0498-4eca-ae97-4fb913828107
+  Args:
+    target: Louis_Prince_Napoléon
+    relation: :isSonOf
+    source: Charles_Napoléon_Bonaparte
+  AddTriple (e6dee6b6-aa2e-44e7-ac93-de3f8b637b17)
+ Call ID: e6dee6b6-aa2e-44e7-ac93-de3f8b637b17
+  Args:
+    source: Charles_Napoléon_Bonaparte
+    relation: :isSonOf
+    target: Alix_de_Foresta
+  Finish (ece0fbdd-904f-4904-a919-5f713009eb78)
+ Call ID: ece0fbdd-904f-4904-a919-5f713009eb78
+  Args:
 
 ================================= Tool Message =================================
 
@@ -650,41 +669,33 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Marilene_van_den_Broek a :Person,
+  data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,
           :Woman ;
-      :hasBirthYear 1970 ;
-      :hasFather data:Hans_van_den_Broek ;
-      :hasMother data:Josee_van_Schendel .
+      :hasBirthYear 1950 ;
+      :hasMarriageYear 1978 ;
+      :hasRelation data:Charles_Napol%C3%A9on_Bonaparte ;
+      :isDaughterOf data:Chantal_de_Chevron-Villette,
+          data:Prince_Ferdinand_Duke_of_Castro ;
+      :isSiblingOf data:Prince_Carlo_Duke_of_Castro .
 
-  data:Maurits_van_Vollenhoven a :Man,
+  data:Alix_de_Foresta a :Person,
+          :Woman .
+
+  data:Chantal_de_Chevron-Villette a :Person,
+          :Woman .
+
+  data:Charles_Napol%C3%A9on_Bonaparte a :Man,
           :Person ;
-      :hasBirthYear 1968 ;
-      :hasBrother data:Bernhard_van_Vollenhoven,
-          data:Floris_van_Vollenhoven,
-          data:Pieter-Christiaan_van_Vollenhoven ;
-      :hasFather data:Pieter_van_Vollenhoven ;
-      :hasMarriageYear 1989 ;
-      :hasMother data:Margriet_of_the_Netherlands .
+      :isSonOf data:Alix_de_Foresta,
+          data:Louis_Prince_Napol%C3%A9on .
 
-  data:Bernhard_van_Vollenhoven a :Man,
+  data:Louis_Prince_Napol%C3%A9on a :Man,
           :Person .
 
-  data:Floris_van_Vollenhoven a :Man,
+  data:Prince_Carlo_Duke_of_Castro a :Man,
           :Person .
 
-  data:Hans_van_den_Broek a :Man,
-          :Person .
-
-  data:Josee_van_Schendel a :Person,
-          :Woman .
-
-  data:Margriet_of_the_Netherlands a :Person,
-          :Woman .
-
-  data:Pieter-Christiaan_van_Vollenhoven a :Man,
-          :Person .
-
-  data:Pieter_van_Vollenhoven a :Man,
+  data:Prince_Ferdinand_Duke_of_Castro a :Man,
           :Person .
 
 
@@ -697,8 +708,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (e5deefe1-cd34-483f-9a8c-1a03eebbdf44)
- Call ID: e5deefe1-cd34-483f-9a8c-1a03eebbdf44
+  ValidateShacl (d17b7dc0-c47d-443b-a2a2-7adf4b5e2304)
+ Call ID: d17b7dc0-c47d-443b-a2a2-7adf4b5e2304
   Args:
 
 ================================= Tool Message =================================
@@ -708,99 +719,99 @@ Total violations:12
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Maurits_van_Vollenhoven' has a 'hasFather' relationship to 'Pieter_van_Vollenhoven', but the target node is missing the mandatory class ':Ancestor'.
+      The node 'Louis_Prince_Napol%C3%A9on' is identified as an ancestor of 'Charles_Napol%C3%A9on_Bonaparte', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Pieter_van_Vollenhoven', class: ':Ancestor')
+      AssignClass(node='Louis_Prince_Napol%C3%A9on', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Maurits_van_Vollenhoven' has a 'hasMother' relationship to 'Margriet_of_the_Netherlands', but the target node is missing the mandatory class ':Ancestor'.
+      The node 'Alix_de_Foresta' is identified as an ancestor of 'Charles_Napol%C3%A9on_Bonaparte', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Margriet_of_the_Netherlands', class: ':Ancestor')
+      AssignClass(node='Alix_de_Foresta', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Marilene_van_den_Broek' has a 'hasFather' relationship to 'Hans_van_den_Broek', but the target node is missing the mandatory class ':Ancestor'.
+      The node 'Louis_Prince_Napol%C3%A9on' is identified as an ancestor of 'Charles_Napol%C3%A9on_Bonaparte', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Hans_van_den_Broek', class: ':Ancestor')
+      AssignClass(node='Louis_Prince_Napol%C3%A9on', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Maurits_van_Vollenhoven' has a 'hasFather' relationship to 'Pieter_van_Vollenhoven', but the target node is missing the mandatory class ':Ancestor'.
+      The node 'Alix_de_Foresta' is identified as an ancestor of 'Charles_Napol%C3%A9on_Bonaparte', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Pieter_van_Vollenhoven', class: ':Ancestor')
+      AssignClass(node='Alix_de_Foresta', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Marilene_van_den_Broek' has a 'hasMother' relationship to 'Josee_van_Schendel', but the target node is missing the mandatory class ':Ancestor'.
+      The node 'Chantal_de_Chevron-Villette' is identified as an ancestor of 'Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Josee_van_Schendel', class: ':Ancestor')
+      AssignClass(node='Chantal_de_Chevron-Villette', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Maurits_van_Vollenhoven' has a 'hasMother' relationship to 'Margriet_of_the_Netherlands', but the target node is missing the mandatory class ':Ancestor'.
+      The node 'Prince_Ferdinand_Duke_of_Castro' is identified as an ancestor of 'Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Margriet_of_the_Netherlands', class: ':Ancestor')
+      AssignClass(node='Prince_Ferdinand_Duke_of_Castro', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Marilene_van_den_Broek' has a 'hasFather' relationship to 'Hans_van_den_Broek', but the target node is missing the mandatory class ':Ancestor'.
+      The node 'Louis_Prince_Napol%C3%A9on' is identified as an ancestor of 'Charles_Napol%C3%A9on_Bonaparte', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Hans_van_den_Broek', class: ':Ancestor')
+      AssignClass(node='Louis_Prince_Napol%C3%A9on', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Maurits_van_Vollenhoven' has a 'hasFather' relationship to 'Pieter_van_Vollenhoven', but the target node is missing the mandatory class ':Ancestor'.
+      The node 'Alix_de_Foresta' is identified as an ancestor of 'Charles_Napol%C3%A9on_Bonaparte', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Pieter_van_Vollenhoven', class: ':Ancestor')
+      AssignClass(node='Alix_de_Foresta', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Marilene_van_den_Broek' has a 'hasMother' relationship to 'Josee_van_Schendel', but the target node is missing the mandatory class ':Ancestor'.
+      The node 'Chantal_de_Chevron-Villette' is identified as an ancestor of 'Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Josee_van_Schendel', class: ':Ancestor')
+      AssignClass(node='Chantal_de_Chevron-Villette', class=':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Maurits_van_Vollenhoven' has a 'hasMother' relationship to 'Margriet_of_the_Netherlands', but the target node is missing the mandatory class ':Ancestor'.
+      The node 'Prince_Ferdinand_Duke_of_Castro' is identified as an ancestor of 'Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Margriet_of_the_Netherlands', class: ':Ancestor')
+      AssignClass(node='Prince_Ferdinand_Duke_of_Castro', class=':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Marilene_van_den_Broek' has a 'hasFather' relationship to 'Hans_van_den_Broek', but the target node is missing the mandatory class ':Ancestor'.
+      The node 'Chantal_de_Chevron-Villette' is identified as an ancestor of 'Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Hans_van_den_Broek', class: ':Ancestor')
+      AssignClass(node='Chantal_de_Chevron-Villette', class=':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'Marilene_van_den_Broek' has a 'hasMother' relationship to 'Josee_van_Schendel', but the target node is missing the mandatory class ':Ancestor'.
+      The node 'Prince_Ferdinand_Duke_of_Castro' is identified as an ancestor of 'Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies', but it lacks the required ':Ancestor' class assignment.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node: 'Josee_van_Schendel', class: ':Ancestor')
+      AssignClass(node='Prince_Ferdinand_Duke_of_Castro', class=':Ancestor')
 
 
 
@@ -809,26 +820,29 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (b960d2e7-c99c-4ca3-8c45-71faf60272bb)
- Call ID: b960d2e7-c99c-4ca3-8c45-71faf60272bb
+  AssignClass (fa665e9c-93a5-4029-ae92-59ab4f1f5466)
+ Call ID: fa665e9c-93a5-4029-ae92-59ab4f1f5466
   Args:
-    source: Pieter_van_Vollenhoven
+    source: Louis_Prince_Napoléon
     type: :Ancestor
-  AssignClass (b89c6b41-5695-49db-80e7-9f34766bdfae)
- Call ID: b89c6b41-5695-49db-80e7-9f34766bdfae
+  AssignClass (87f40f71-e651-47d6-9ff9-1105a187fe0b)
+ Call ID: 87f40f71-e651-47d6-9ff9-1105a187fe0b
   Args:
     type: :Ancestor
-    source: Margriet_of_the_Netherlands
-  AssignClass (6f165c55-415f-457c-93d6-6d4aeef6c10b)
- Call ID: 6f165c55-415f-457c-93d6-6d4aeef6c10b
+    source: Alix_de_Foresta
+  AssignClass (45dbbf22-bb57-41f1-b390-1ef1c157daad)
+ Call ID: 45dbbf22-bb57-41f1-b390-1ef1c157daad
   Args:
-    source: Hans_van_den_Broek
+    source: Chantal_de_Chevron-Villette
     type: :Ancestor
-  AssignClass (8becf817-a6a7-4c32-9336-806914dc2902)
- Call ID: 8becf817-a6a7-4c32-9336-806914dc2902
+  AssignClass (b4b38375-ab10-40fa-be9c-5b894445f418)
+ Call ID: b4b38375-ab10-40fa-be9c-5b894445f418
   Args:
-    source: Josee_van_Schendel
+    source: Prince_Ferdinand_Duke_of_Castro
     type: :Ancestor
+  ValidateShacl (1323cdb6-9f25-4c59-ad19-18105796a4a4)
+ Call ID: 1323cdb6-9f25-4c59-ad19-18105796a4a4
+  Args:
 
 ================================= Tool Message =================================
 
@@ -849,56 +863,40 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Marilene_van_den_Broek a :Person,
+  data:Princess_B%C3%A9atrice_of_Bourbon-Two_Sicilies a :Person,
           :Woman ;
-      :hasBirthYear 1970 ;
-      :hasFather data:Hans_van_den_Broek ;
-      :hasMother data:Josee_van_Schendel .
+      :hasBirthYear 1950 ;
+      :hasMarriageYear 1978 ;
+      :hasRelation data:Charles_Napol%C3%A9on_Bonaparte ;
+      :isDaughterOf data:Chantal_de_Chevron-Villette,
+          data:Prince_Ferdinand_Duke_of_Castro ;
+      :isSiblingOf data:Prince_Carlo_Duke_of_Castro .
 
-  data:Maurits_van_Vollenhoven a :Man,
+  data:Alix_de_Foresta a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Chantal_de_Chevron-Villette a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Charles_Napol%C3%A9on_Bonaparte a :Man,
           :Person ;
-      :hasBirthYear 1968 ;
-      :hasBrother data:Bernhard_van_Vollenhoven,
-          data:Floris_van_Vollenhoven,
-          data:Pieter-Christiaan_van_Vollenhoven ;
-      :hasFather data:Pieter_van_Vollenhoven ;
-      :hasMarriageYear 1989 ;
-      :hasMother data:Margriet_of_the_Netherlands .
+      :isSonOf data:Alix_de_Foresta,
+          data:Louis_Prince_Napol%C3%A9on .
 
-  data:Bernhard_van_Vollenhoven a :Man,
-          :Person .
-
-  data:Floris_van_Vollenhoven a :Man,
-          :Person .
-
-  data:Hans_van_den_Broek a :Ancestor,
+  data:Louis_Prince_Napol%C3%A9on a :Ancestor,
           :Man,
           :Person .
 
-  data:Josee_van_Schendel a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Margriet_of_the_Netherlands a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Pieter-Christiaan_van_Vollenhoven a :Man,
+  data:Prince_Carlo_Duke_of_Castro a :Man,
           :Person .
 
-  data:Pieter_van_Vollenhoven a :Ancestor,
+  data:Prince_Ferdinand_Duke_of_Castro a :Ancestor,
           :Man,
           :Person .
 
 
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (57998086-3864-4bc9-a909-7dd7e1b74b34)
- Call ID: 57998086-3864-4bc9-a909-7dd7e1b74b34
-  Args:
 
 ================================= Tool Message =================================
 
@@ -908,6 +906,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ea76210e-117f-456d-a981-e45db743589e)
- Call ID: ea76210e-117f-456d-a981-e45db743589e
+  Finish (fe95f466-5dc5-43db-9232-791c099d3478)
+ Call ID: fe95f466-5dc5-43db-9232-791c099d3478
   Args:

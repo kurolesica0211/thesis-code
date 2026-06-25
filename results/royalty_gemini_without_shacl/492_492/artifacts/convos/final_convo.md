@@ -69,31 +69,29 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Bernhard Prinz und Markgraf von Baden (born 27 May 1970), styled Margrave of Baden and Duke of Zähringen, is the head of the House of Baden since 29 December 2022 following the death of his father, Maximilian.
-Early life and family
+Philipp, Prince of Hohenlohe-Langenburg (Philipp Gottfried Alexander; born 20 January 1970), is the head of the House of Hohenlohe-Langenburg, since the death of his father in 2004.
+Early life and ancestry
 
-Bernhard was born at Schloss Salem in Salem, Baden-Württemberg, on 27 May 1970.
-He is the eldest son of Maximilian, Margrave of Baden, and Archduchess Valerie of Austria (born 1941) and was styled as the heir of his father, Hereditary Prince of Baden.
-His paternal grandparents were Berthold, Margrave of Baden, and Princess Theodora of Greece and Denmark, who was a sister of Prince Philip, Duke of Edinburgh.
-His maternal grandparents were Archduke Hubert Salvator of Austria and Princess Rosemary of Salm-Salm.
-Prince Bernhard manages the family estates, including Staufenberg Castle, and the margravial wineries dedicated to preserving the grape variety Müller-Thurgau.
-Bernhard has close relations with the British royal family, and his granduncle, Prince Philip, Duke of Edinburgh, often came to Germany to shoot with the Baden family.
-On 17 April 2021, Bernhard was one of only thirty mourners at Prince Philip's ceremonial funeral at St George's Chapel, Windsor Castle.
-Bernhard, along with his cousins Philipp, Prince of Hohenlohe-Langenburg, and Donatus, Landgrave of Hesse, was chosen to represent the families of the Duke's late sisters who had been prevented from attending his wedding in 1947.
-Bernhard and his wife and siblings later attended a service of thanksgiving for Prince Philip's life at Westminster Abbey on 29 March 2022.
-On 29 December 2022, his father, Maximilian, died and Bernhard became head of the former grand ducal house of Baden.
-Though royal and noble titles were abolished in Germany in 1919 when the Weimar Republic was proclaimed, he is sometimes styled and titled His Royal Highness The Margrave of Baden, Duke of Zähringen, by courtesy.
-Prior to this, he was styled and titled His Grand Ducal Highness Hereditary Prince of Baden.
-On 24 April 2025 the Margrave attended the funeral of Andreas, Prince of Saxe-Coburg and Gotha as the representative of Charles III.
-Marriage and children
+He was born in Crailsheim, West Germany, the middle child and only son of Kraft, Prince of Hohenlohe-Langenburg (1935–2004) and his first wife, Princess Charlotte of Croÿ (b. 1938).
+Paternally, he is a grandson of Princess Margarita of Greece and Denmark, and a grandnephew of Prince Philip, Duke of Edinburgh, whose funeral he attended.
+Anne, Princess Royal is one of his godmothers.
+Maternally, he is the grandson of Prince Alexander of Croy (1912–2002) and his Scottish wife, Anna Elspeth Campbell (1917–1986), granddaughter of Archibald Campbell, 6th of Glendaruel.
+He sought public support from (then) Charles, Prince of Wales, the current King Charles III, and from former vice chancellor and foreign minister Joschka Fischer of the Green Party, who both attended a conference at Langenburg Castle in 2013.
+Together with Fischer he founded the Langenburg Forum for Sustainability which cooperates with Charles' International Sustainability Unit
 
-Bernhard married Stephanie Anne Kaul (born 27 June 1966), daughter of Christian Kaul and Hannelore Scheel, in a civil ceremony on 22 June 2001 and a religious ceremony the following day at Schloss Salem.
+
+Langenburg castle is partially open to the public, including the state rooms and a museum of classic cars.
+Marriage and issue
+
+He married Saskia Binder (b. 15 January 1973 in Munich), daughter of former Deutsche Bank Munich director Hans Peter Binder, on 6 September 2003 in a civil ceremony at Langenburg.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -109,39 +107,9 @@ Bernhard married Stephanie Anne Kaul (born 27 June 1966), daughter of Christian 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -156,6 +124,23 @@ Bernhard married Stephanie Anne Kaul (born 27 June 1966), daughter of Christian 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -173,6 +158,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -240,29 +240,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,6 +263,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -283,6 +283,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -291,17 +293,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -329,6 +333,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -344,139 +432,534 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2177ae9c-c0c6-42cc-a125-9924ee4a098e)
- Call ID: 2177ae9c-c0c6-42cc-a125-9924ee4a098e
+  AssignClass (03c32970-abcf-48b1-9945-7fc80c18039a)
+ Call ID: 03c32970-abcf-48b1-9945-7fc80c18039a
   Args:
+    source: Philipp_Prince_of_Hohenlohe-Langenburg
     type: :Man
-    source: Bernhard
-  AssignClass (15ae6094-2c28-400d-a8c1-4894ecd372fa)
- Call ID: 15ae6094-2c28-400d-a8c1-4894ecd372fa
+  AddLiteral (524c360a-3812-4fe9-a5af-2e247189bf5d)
+ Call ID: 524c360a-3812-4fe9-a5af-2e247189bf5d
   Args:
-    type: :Man
-    source: Maximilian
-  AssignClass (2c703c05-013c-4ef5-9a11-40e812371913)
- Call ID: 2c703c05-013c-4ef5-9a11-40e812371913
-  Args:
-    type: :Woman
-    source: Valerie
-  AssignClass (d23d325c-7e48-4746-9578-7ab52af452f9)
- Call ID: d23d325c-7e48-4746-9578-7ab52af452f9
-  Args:
-    type: :Man
-    source: Berthold
-  AssignClass (3a216c1d-4507-472c-93cf-12be6a669870)
- Call ID: 3a216c1d-4507-472c-93cf-12be6a669870
-  Args:
-    type: :Woman
-    source: Theodora
-  AssignClass (04643d39-1319-43ab-b708-fda6a026c340)
- Call ID: 04643d39-1319-43ab-b708-fda6a026c340
-  Args:
-    source: HubertSalvator
-    type: :Man
-  AssignClass (a144d2cc-17f3-47de-9e38-bbf4149bb027)
- Call ID: a144d2cc-17f3-47de-9e38-bbf4149bb027
-  Args:
-    type: :Woman
-    source: Rosemary
-  AssignClass (9c0134a7-f56f-462e-9268-f3ef0511d7ff)
- Call ID: 9c0134a7-f56f-462e-9268-f3ef0511d7ff
-  Args:
-    type: :Woman
-    source: StephanieAnneKaul
-  AssignClass (1dee6913-7ab8-41ab-97ee-d6ac398ea6f8)
- Call ID: 1dee6913-7ab8-41ab-97ee-d6ac398ea6f8
-  Args:
-    source: ChristianKaul
-    type: :Man
-  AssignClass (24a6f7a0-75cb-40e4-9e95-f88981f75a04)
- Call ID: 24a6f7a0-75cb-40e4-9e95-f88981f75a04
-  Args:
-    type: :Woman
-    source: HanneloreScheel
-  AddLiteral (d1e1d78f-aceb-4831-8977-4302e77664ef)
- Call ID: d1e1d78f-aceb-4831-8977-4302e77664ef
-  Args:
+    source: Philipp_Prince_of_Hohenlohe-Langenburg
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Bernhard
     literal_value: 1970
-    literal_type: xsd:integer
-  AddLiteral (c71e50ca-201c-4792-9779-f08424efffb9)
- Call ID: c71e50ca-201c-4792-9779-f08424efffb9
+  AssignClass (240c1059-57c0-4d9b-b280-d8075d469439)
+ Call ID: 240c1059-57c0-4d9b-b280-d8075d469439
   Args:
-    literal_value: 1941
-    source: Valerie
-    literal_type: xsd:integer
+    source: Kraft_Prince_of_Hohenlohe-Langenburg
+    type: :Man
+  AddLiteral (9617d1b4-6ef0-44e5-896b-92de49a4a91b)
+ Call ID: 9617d1b4-6ef0-44e5-896b-92de49a4a91b
+  Args:
+    source: Kraft_Prince_of_Hohenlohe-Langenburg
     relation: :hasBirthYear
-  AddLiteral (332e1d27-fcc4-4f46-9d06-7fdbbdc3e168)
- Call ID: 332e1d27-fcc4-4f46-9d06-7fdbbdc3e168
-  Args:
-    literal_value: 1966
-    source: StephanieAnneKaul
     literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (62b8e49a-6bf2-47cb-8c8d-2102a61506d5)
- Call ID: 62b8e49a-6bf2-47cb-8c8d-2102a61506d5
+    literal_value: 1935
+  AddLiteral (2412b344-1cfb-4c4f-8464-04d5c2aa5faa)
+ Call ID: 2412b344-1cfb-4c4f-8464-04d5c2aa5faa
   Args:
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    source: Maximilian
-    literal_value: 2022
-    literal_type: xsd:integer
-  AddLiteral (a30293b4-0747-4d78-9372-fccf7df09aa5)
- Call ID: a30293b4-0747-4d78-9372-fccf7df09aa5
+    literal_value: 2004
+    source: Kraft_Prince_of_Hohenlohe-Langenburg
+  AssignClass (c75b28eb-9b02-44e5-9791-fb0d5f2b28c4)
+ Call ID: c75b28eb-9b02-44e5-9791-fb0d5f2b28c4
   Args:
+    source: Princess_Charlotte_of_Croy
+    type: :Woman
+  AddLiteral (efcbe93b-ce2a-4299-8952-b710e0bf9c86)
+ Call ID: efcbe93b-ce2a-4299-8952-b710e0bf9c86
+  Args:
+    source: Princess_Charlotte_of_Croy
+    literal_value: 1938
+    relation: :hasBirthYear
     literal_type: xsd:integer
-    literal_value: 2001
-    source: Bernhard
+  AddTriple (bc498a56-4e5d-49ed-a836-683175675c79)
+ Call ID: bc498a56-4e5d-49ed-a836-683175675c79
+  Args:
+    relation: :hasFather
+    target: Kraft_Prince_of_Hohenlohe-Langenburg
+    source: Philipp_Prince_of_Hohenlohe-Langenburg
+  AddTriple (62818477-6808-4538-bfdd-6b679b460741)
+ Call ID: 62818477-6808-4538-bfdd-6b679b460741
+  Args:
+    relation: :hasMother
+    target: Princess_Charlotte_of_Croy
+    source: Philipp_Prince_of_Hohenlohe-Langenburg
+  AssignClass (1962d157-a1f8-4302-872f-ab19800e0a37)
+ Call ID: 1962d157-a1f8-4302-872f-ab19800e0a37
+  Args:
+    source: Princess_Margarita_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (b30f99e1-8df6-4f69-bb6a-f453a6990831)
+ Call ID: b30f99e1-8df6-4f69-bb6a-f453a6990831
+  Args:
+    source: Prince_Alexander_of_Croy
+    type: :Man
+  AddLiteral (62edfc62-ee67-435d-a664-86137c5c195e)
+ Call ID: 62edfc62-ee67-435d-a664-86137c5c195e
+  Args:
+    literal_value: 1912
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Prince_Alexander_of_Croy
+  AddLiteral (b32bba00-1abe-4b4c-8997-7ce107456453)
+ Call ID: b32bba00-1abe-4b4c-8997-7ce107456453
+  Args:
+    source: Prince_Alexander_of_Croy
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 2002
+  AssignClass (66151a71-c4ee-4597-a6ab-409a6d7c6d33)
+ Call ID: 66151a71-c4ee-4597-a6ab-409a6d7c6d33
+  Args:
+    source: Anna_Elspeth_Campbell
+    type: :Woman
+  AddLiteral (1815b075-44d9-4af8-936b-eedbd16b0131)
+ Call ID: 1815b075-44d9-4af8-936b-eedbd16b0131
+  Args:
+    source: Anna_Elspeth_Campbell
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1917
+  AddLiteral (38b533f3-05d4-48c1-b617-13b6054e8135)
+ Call ID: 38b533f3-05d4-48c1-b617-13b6054e8135
+  Args:
+    source: Anna_Elspeth_Campbell
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1986
+  AssignClass (a6f7e1e7-4890-46a5-b716-9cf21c56b6b1)
+ Call ID: a6f7e1e7-4890-46a5-b716-9cf21c56b6b1
+  Args:
+    source: Saskia_Binder
+    type: :Woman
+  AddLiteral (796d8f0a-eb56-4dbd-a101-ebb22e7efb65)
+ Call ID: 796d8f0a-eb56-4dbd-a101-ebb22e7efb65
+  Args:
+    source: Saskia_Binder
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1973
+  AddTriple (6bbdbad2-8e38-44a5-940d-5261567eacd4)
+ Call ID: 6bbdbad2-8e38-44a5-940d-5261567eacd4
+  Args:
+    source: Philipp_Prince_of_Hohenlohe-Langenburg
+    target: 2003
     relation: :hasMarriageYear
-  AddTriple (81fb46aa-c125-4dae-8df2-46e3241e438e)
- Call ID: 81fb46aa-c125-4dae-8df2-46e3241e438e
+  AddTriple (de0da711-28c4-423c-9b71-c238d11882d9)
+ Call ID: de0da711-28c4-423c-9b71-c238d11882d9
+  Args:
+    target: Saskia_Binder
+    source: Philipp_Prince_of_Hohenlohe-Langenburg
+    relation: :hasRelation
+  AddTriple (4c4af038-c749-4306-99a6-1403776f5a87)
+ Call ID: 4c4af038-c749-4306-99a6-1403776f5a87
   Args:
     relation: :hasFather
-    source: Bernhard
-    target: Maximilian
-  AddTriple (147daa8d-dd9a-4902-84d8-17ec710cc656)
- Call ID: 147daa8d-dd9a-4902-84d8-17ec710cc656
+    target: Hans_Peter_Binder
+    source: Saskia_Binder
+  AssignClass (cbbe2c48-42c4-4b0e-b677-66b6f513299d)
+ Call ID: cbbe2c48-42c4-4b0e-b677-66b6f513299d
   Args:
-    relation: :hasMother
-    target: Valerie
-    source: Bernhard
-  AddTriple (31137e57-6b90-4337-885d-698a5a1851c6)
- Call ID: 31137e57-6b90-4337-885d-698a5a1851c6
+    source: Hans_Peter_Binder
+    type: :Man
+  Finish (41feefcd-f9e0-41e0-afe6-4dde24c2b1ca)
+ Call ID: 41feefcd-f9e0-41e0-afe6-4dde24c2b1ca
   Args:
-    source: Maximilian
-    target: Berthold
-    relation: :hasFather
-  AddTriple (5ca435a2-3565-401e-a54f-875c9b1c1747)
- Call ID: 5ca435a2-3565-401e-a54f-875c9b1c1747
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Anna_Elspeth_Campbell a :Woman ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1986 .
+
+  data:Philipp_Prince_of_Hohenlohe-Langenburg a :Man ;
+      :hasBirthYear 1970 ;
+      :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;
+      :hasMarriageYear data:2003 ;
+      :hasMother data:Princess_Charlotte_of_Croy ;
+      :hasRelation data:Saskia_Binder .
+
+  data:Prince_Alexander_of_Croy a :Man ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 2002 .
+
+  data:Princess_Margarita_of_Greece_and_Denmark a :Woman .
+
+  data:Hans_Peter_Binder a :Man .
+
+  data:Kraft_Prince_of_Hohenlohe-Langenburg a :Man ;
+      :hasBirthYear 1935 ;
+      :hasDeathYear 2004 .
+
+  data:Princess_Charlotte_of_Croy a :Woman ;
+      :hasBirthYear 1938 .
+
+  data:Saskia_Binder a :Woman ;
+      :hasBirthYear 1973 ;
+      :hasFather data:Hans_Peter_Binder .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['2003']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveLiteral (857888eb-46f5-4056-b962-bcc16c0e857c)
+ Call ID: 857888eb-46f5-4056-b962-bcc16c0e857c
   Args:
-    target: Theodora
-    source: Maximilian
-    relation: :hasMother
-  AddTriple (352e596e-a4ee-413f-be24-79f7a64ec6a0)
- Call ID: 352e596e-a4ee-413f-be24-79f7a64ec6a0
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: Philipp_Prince_of_Hohenlohe-Langenburg
+    literal_value: 2003
+  AddLiteral (a2136e89-0b79-447e-a0b9-f9d824511869)
+ Call ID: a2136e89-0b79-447e-a0b9-f9d824511869
   Args:
-    relation: :hasFather
-    target: HubertSalvator
-    source: Valerie
-  AddTriple (47f71690-ec60-463b-acfa-d5a14034f8c0)
- Call ID: 47f71690-ec60-463b-acfa-d5a14034f8c0
+    relation: :hasMarriageYear
+    literal_value: 2003
+    source: Philipp_Prince_of_Hohenlohe-Langenburg
+    literal_type: xsd:integer
+  Finish (d94b33ea-5c71-4dd1-a982-cbfb564b478d)
+ Call ID: d94b33ea-5c71-4dd1-a982-cbfb564b478d
   Args:
-    relation: :hasMother
-    source: Valerie
-    target: Rosemary
-  AddTriple (dcae82d2-3c80-4195-ac00-ed0e58b403ae)
- Call ID: dcae82d2-3c80-4195-ac00-ed0e58b403ae
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Anna_Elspeth_Campbell a :Woman ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1986 .
+
+  data:Philipp_Prince_of_Hohenlohe-Langenburg a :Man ;
+      :hasBirthYear 1970 ;
+      :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;
+      :hasMarriageYear data:2003,
+          2003 ;
+      :hasMother data:Princess_Charlotte_of_Croy ;
+      :hasRelation data:Saskia_Binder .
+
+  data:Prince_Alexander_of_Croy a :Man ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 2002 .
+
+  data:Princess_Margarita_of_Greece_and_Denmark a :Woman .
+
+  data:Hans_Peter_Binder a :Man .
+
+  data:Kraft_Prince_of_Hohenlohe-Langenburg a :Man ;
+      :hasBirthYear 1935 ;
+      :hasDeathYear 2004 .
+
+  data:Princess_Charlotte_of_Croy a :Woman ;
+      :hasBirthYear 1938 .
+
+  data:Saskia_Binder a :Woman ;
+      :hasBirthYear 1973 ;
+      :hasFather data:Hans_Peter_Binder .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['2003']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveLiteral (58a7922b-112b-41b9-acbc-616684f58247)
+ Call ID: 58a7922b-112b-41b9-acbc-616684f58247
   Args:
-    target: ChristianKaul
-    source: StephanieAnneKaul
-    relation: :hasFather
-  AddTriple (d4f0fbd7-2c8a-414f-bd81-4d7fa993f162)
- Call ID: d4f0fbd7-2c8a-414f-bd81-4d7fa993f162
+    literal_value: 2003
+    source: Philipp_Prince_of_Hohenlohe-Langenburg
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AddLiteral (2a4d5145-0ad6-4e85-9a5d-6975b49f6961)
+ Call ID: 2a4d5145-0ad6-4e85-9a5d-6975b49f6961
   Args:
-    source: StephanieAnneKaul
-    target: HanneloreScheel
-    relation: :hasMother
-  Finish (729cd4eb-4dd5-47c4-b634-65fd6b169628)
- Call ID: 729cd4eb-4dd5-47c4-b634-65fd6b169628
+    relation: :hasMarriageYear
+    literal_type: xsd:string
+    literal_value: 2003
+    source: Philipp_Prince_of_Hohenlohe-Langenburg
+  Finish (ce4cdaed-af1a-492c-87f6-fabc346e5916)
+ Call ID: ce4cdaed-af1a-492c-87f6-fabc346e5916
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Anna_Elspeth_Campbell a :Woman ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1986 .
+
+  data:Philipp_Prince_of_Hohenlohe-Langenburg a :Man ;
+      :hasBirthYear 1970 ;
+      :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;
+      :hasMarriageYear data:2003,
+          "2003"^^xsd:string ;
+      :hasMother data:Princess_Charlotte_of_Croy ;
+      :hasRelation data:Saskia_Binder .
+
+  data:Prince_Alexander_of_Croy a :Man ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 2002 .
+
+  data:Princess_Margarita_of_Greece_and_Denmark a :Woman .
+
+  data:Hans_Peter_Binder a :Man .
+
+  data:Kraft_Prince_of_Hohenlohe-Langenburg a :Man ;
+      :hasBirthYear 1935 ;
+      :hasDeathYear 2004 .
+
+  data:Princess_Charlotte_of_Croy a :Woman ;
+      :hasBirthYear 1938 .
+
+  data:Saskia_Binder a :Woman ;
+      :hasBirthYear 1973 ;
+      :hasFather data:Hans_Peter_Binder .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['2003']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveLiteral (4496ee63-6da3-44cd-90f4-95646cc7757e)
+ Call ID: 4496ee63-6da3-44cd-90f4-95646cc7757e
+  Args:
+    literal_type: xsd:string
+    relation: :hasMarriageYear
+    source: Philipp_Prince_of_Hohenlohe-Langenburg
+    literal_value: 2003
+  Finish (0a791628-1a76-4e91-9419-792b7c6bf219)
+ Call ID: 0a791628-1a76-4e91-9419-792b7c6bf219
+  Args:
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Anna_Elspeth_Campbell a :Woman ;
+      :hasBirthYear 1917 ;
+      :hasDeathYear 1986 .
+
+  data:Philipp_Prince_of_Hohenlohe-Langenburg a :Man ;
+      :hasBirthYear 1970 ;
+      :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;
+      :hasMarriageYear data:2003 ;
+      :hasMother data:Princess_Charlotte_of_Croy ;
+      :hasRelation data:Saskia_Binder .
+
+  data:Prince_Alexander_of_Croy a :Man ;
+      :hasBirthYear 1912 ;
+      :hasDeathYear 2002 .
+
+  data:Princess_Margarita_of_Greece_and_Denmark a :Woman .
+
+  data:Hans_Peter_Binder a :Man .
+
+  data:Kraft_Prince_of_Hohenlohe-Langenburg a :Man ;
+      :hasBirthYear 1935 ;
+      :hasDeathYear 2004 .
+
+  data:Princess_Charlotte_of_Croy a :Woman ;
+      :hasBirthYear 1938 .
+
+  data:Saskia_Binder a :Woman ;
+      :hasBirthYear 1973 ;
+      :hasFather data:Hans_Peter_Binder .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['2003']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (adc61dfc-aa79-4f7f-9ac8-5983cad76c8a)
+ Call ID: adc61dfc-aa79-4f7f-9ac8-5983cad76c8a
+  Args:
+    target: 2003
+    relation: :hasMarriageYear
+    source: Philipp_Prince_of_Hohenlohe-Langenburg
+  Finish (d8ad11ba-7800-4b3e-be7a-3a3d8e1792df)
+ Call ID: d8ad11ba-7800-4b3e-be7a-3a3d8e1792df
   Args:

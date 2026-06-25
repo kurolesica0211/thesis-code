@@ -7,60 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alessandro Torlonia, 5th Prince of Civitella-Cesi" ;
-    data:posIndicesFull "1006:1055" ;
-    data:posIndicesPart "1400:1406",
-        "1520:1526",
-        "1599:1605" ;
-    data:wdtLink wdt:Q4716439 ;
-    :alsoKnownAs "Alessandro Torlonia, 5th Principe di Civitella-Cessi" ;
-    :hasChild data:Olimpia_Torlonia ;
-    :hasDaughter data:Olimpia_Torlonia ;
-    :hasSex data:male ;
-    :isFatherOf data:Olimpia_Torlonia ;
-    :isParentOf data:Olimpia_Torlonia .
-
-data:Infanta_Beatriz_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Infanta Beatriz of Spain" ;
-    data:posIndicesFull "1060:1084" ;
-    data:wdtLink wdt:Q269493 ;
-    :alsoKnownAs "Infanta Beatriz, Princess of Civitella-Cesi",
-        "Infanta Doña. Beatriz Isabel Federica Alfonsa Eugénie Cristina Maria Teresia Bienvenida Ladislàa of Spain" ;
-    :hasChild data:Olimpia_Torlonia ;
-    :hasDaughter data:Olimpia_Torlonia ;
-    :hasSex data:female ;
-    :isMotherOf data:Olimpia_Torlonia ;
-    :isParentOf data:Olimpia_Torlonia .
-
-data:Paul-Annick_Weiller a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Paul-Annick Weiller" ;
-    data:posIndicesFull "858:876" ;
-    data:wdtLink wdt:Q75393705 ;
-    :hasChild data:Princess_Sibilla_of_Luxembourg ;
-    :hasDaughter data:Princess_Sibilla_of_Luxembourg ;
-    :hasSex data:male ;
-    :isFatherOf data:Princess_Sibilla_of_Luxembourg ;
-    :isParentOf data:Princess_Sibilla_of_Luxembourg .
-
-data:Princess_Sibilla_of_Luxembourg a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Sibilla_of_Luxembourg a :Person ;
     rdfs:label "Princess Sibilla of Luxembourg" ;
     data:posIndicesFull "1300:1307",
         "606:613",
@@ -70,35 +17,50 @@ data:Princess_Sibilla_of_Luxembourg a :Person,
     data:wdtLink wdt:Q2001499 ;
     :alsoKnownAs "Sibilla",
         "Sibilla Sandra Weiller" ;
-    :hasFather data:Paul-Annick_Weiller ;
-    :hasMother data:Olimpia_Torlonia ;
     :hasParent data:Olimpia_Torlonia,
         data:Paul-Annick_Weiller ;
-    :hasSex data:female ;
-    :isChildOf data:Olimpia_Torlonia,
-        data:Paul-Annick_Weiller ;
-    :isDaughterOf data:Olimpia_Torlonia,
-        data:Paul-Annick_Weiller .
+    :hasSex data:female .
 
-data:Olimpia_Torlonia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi a :Person ;
+    rdfs:label "Alessandro Torlonia, 5th Prince of Civitella-Cesi" ;
+    data:posIndicesFull "1006:1055" ;
+    data:posIndicesPart "1400:1406",
+        "1520:1526",
+        "1599:1605" ;
+    data:wdtLink wdt:Q4716439 ;
+    :alsoKnownAs "Alessandro Torlonia, 5th Principe di Civitella-Cessi" ;
+    :hasSex data:male .
+
+data:Infanta_Beatriz_of_Spain a :Person ;
+    rdfs:label "Infanta Beatriz of Spain" ;
+    data:posIndicesFull "1060:1084" ;
+    data:wdtLink wdt:Q269493 ;
+    :alsoKnownAs "Infanta Beatriz, Princess of Civitella-Cesi",
+        "Infanta Doña. Beatriz Isabel Federica Alfonsa Eugénie Cristina Maria Teresia Bienvenida Ladislàa of Spain" ;
+    :hasSex data:female .
+
+data:Olimpia_Torlonia a :Person ;
     rdfs:label "Olimpia Torlonia" ;
     data:posIndicesFull "958:974" ;
     data:wdtLink wdt:Q6049946 ;
     :alsoKnownAs "Olympia Torlonia" ;
-    :hasChild data:Princess_Sibilla_of_Luxembourg ;
-    :hasDaughter data:Princess_Sibilla_of_Luxembourg ;
-    :hasFather data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi ;
-    :hasMother data:Infanta_Beatriz_of_Spain ;
     :hasParent data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
         data:Infanta_Beatriz_of_Spain ;
-    :hasSex data:female ;
-    :isChildOf data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
-        data:Infanta_Beatriz_of_Spain ;
-    :isDaughterOf data:Alessandro_Torlonia-_5th_Prince_of_Civitella-Cesi,
-        data:Infanta_Beatriz_of_Spain ;
-    :isMotherOf data:Princess_Sibilla_of_Luxembourg ;
-    :isParentOf data:Princess_Sibilla_of_Luxembourg .
+    :hasSex data:female .
+
+data:Paul-Annick_Weiller a :Person ;
+    rdfs:label "Paul-Annick Weiller" ;
+    data:posIndicesFull "858:876" ;
+    data:wdtLink wdt:Q75393705 ;
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

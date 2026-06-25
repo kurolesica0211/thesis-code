@@ -119,6 +119,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -134,39 +136,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -181,6 +153,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -198,6 +187,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -265,29 +269,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -296,6 +292,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -308,6 +312,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -316,17 +322,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -354,6 +362,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -369,76 +461,91 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c718f541-1583-4ef1-af08-5add7503223e)
- Call ID: c718f541-1583-4ef1-af08-5add7503223e
+  AssignClass (3a2d19be-7518-4f15-ba82-570c0270e70b)
+ Call ID: 3a2d19be-7518-4f15-ba82-570c0270e70b
   Args:
     type: :Woman
-    source: :Princess_Alexia
-  AssignClass (9be06647-736d-40ca-aef3-bd2481d0077a)
- Call ID: 9be06647-736d-40ca-aef3-bd2481d0077a
+    source: :Princess_Beatrix
+  AssignClass (e1c0767d-a366-4611-9599-7b2b46480426)
+ Call ID: e1c0767d-a366-4611-9599-7b2b46480426
   Args:
-    source: :Princess_Alexia
-    type: :Person
-  AssignClass (8d95cc6c-636a-493c-833f-4ec75c94cf79)
- Call ID: 8d95cc6c-636a-493c-833f-4ec75c94cf79
+    type: :Woman
+    source: :Princess_Margriet
+  AssignClass (976e3273-b208-4cc9-b3c0-3a03aee2b558)
+ Call ID: 976e3273-b208-4cc9-b3c0-3a03aee2b558
   Args:
-    source: :King_Willem-Alexander
+    source: :Pieter_van_Vollenhoven
     type: :Man
-  AssignClass (a745c5e8-e092-427a-9d16-d8e6f2f8998f)
- Call ID: a745c5e8-e092-427a-9d16-d8e6f2f8998f
+  AssignClass (fe292bd9-bf36-4887-9023-d0f81cc5a1b8)
+ Call ID: fe292bd9-bf36-4887-9023-d0f81cc5a1b8
   Args:
-    type: :Person
+    type: :Woman
+    source: :Princess_Alexia
+  AssignClass (513a575c-1839-45b7-932d-225128517bde)
+ Call ID: 513a575c-1839-45b7-932d-225128517bde
+  Args:
+    type: :Man
     source: :King_Willem-Alexander
-  AssignClass (6899b1d9-2bd5-480a-9d04-2bc9bb3342b6)
- Call ID: 6899b1d9-2bd5-480a-9d04-2bc9bb3342b6
+  AssignClass (35934bf6-b78e-416c-8b1b-dca8549ef0f3)
+ Call ID: 35934bf6-b78e-416c-8b1b-dca8549ef0f3
   Args:
     type: :Woman
     source: :Queen_Maxima
-  AssignClass (e46de326-eff3-4389-8f4c-b7c76e152646)
- Call ID: e46de326-eff3-4389-8f4c-b7c76e152646
+  AssignClass (e51640d5-d1d1-44d4-8ee7-6465a6f8e49e)
+ Call ID: e51640d5-d1d1-44d4-8ee7-6465a6f8e49e
   Args:
-    source: :Queen_Maxima
-    type: :Person
-  AddLiteral (c51da43d-f989-49a3-a144-a1d511a609e7)
- Call ID: c51da43d-f989-49a3-a144-a1d511a609e7
+    source: :Prince_Friso
+    type: :Man
+  AssignClass (7a583653-8c30-4761-90aa-11dd3dab9545)
+ Call ID: 7a583653-8c30-4761-90aa-11dd3dab9545
   Args:
-    source: :Princess_Alexia
+    type: :Man
+    source: :Juan_Zorreguieta
+  AssignClass (121a15f3-5139-468e-aa2e-4d1676261717)
+ Call ID: 121a15f3-5139-468e-aa2e-4d1676261717
+  Args:
+    type: :Woman
+    source: :Queen_Mathilde_of_Belgium
+  AssignClass (1b090a7d-56ac-481e-a644-91b2009d244e)
+ Call ID: 1b090a7d-56ac-481e-a644-91b2009d244e
+  Args:
+    type: :Woman
+    source: :Alexandra_Jankovich_de_Jeszenice
+  AssignClass (94cf2c1e-479f-495b-ae6c-d5b434f3b9c8)
+ Call ID: 94cf2c1e-479f-495b-ae6c-d5b434f3b9c8
+  Args:
+    type: :Man
+    source: :Frans_Ferdinand_de_Beaufort
+  AddLiteral (34921e2e-b16b-49c6-93b0-af7896085732)
+ Call ID: 34921e2e-b16b-49c6-93b0-af7896085732
+  Args:
     relation: :hasBirthYear
+    source: :Princess_Alexia
     literal_value: 2005
     literal_type: xsd:integer
-  AddTriple (0c64f9f7-8bfa-457f-99e8-a6d649d9fa37)
- Call ID: 0c64f9f7-8bfa-457f-99e8-a6d649d9fa37
+  AddTriple (2872e91b-43d0-4f65-9cb9-c904cfa6bbc9)
+ Call ID: 2872e91b-43d0-4f65-9cb9-c904cfa6bbc9
   Args:
+    relation: :hasFather
     source: :Princess_Alexia
     target: :King_Willem-Alexander
-    relation: :hasFather
-  AddTriple (73aa8692-0e60-4710-8fa8-c6e12477bda6)
- Call ID: 73aa8692-0e60-4710-8fa8-c6e12477bda6
+  AddTriple (2624463c-83f5-4d40-9c29-eee5c1c75b22)
+ Call ID: 2624463c-83f5-4d40-9c29-eee5c1c75b22
   Args:
-    target: :Queen_Maxima
+    source: :Princess_Alexia
     relation: :hasMother
-    source: :Princess_Alexia
-  AddTriple (30936387-3d0a-4b5c-990a-31dc2390c76e)
- Call ID: 30936387-3d0a-4b5c-990a-31dc2390c76e
+    target: :Queen_Maxima
+  Finish (9a659079-7e06-438c-8e61-03225903c1ea)
+ Call ID: 9a659079-7e06-438c-8e61-03225903c1ea
   Args:
-    relation: :hasSex
-    target: :Female
-    source: :Princess_Alexia
-  AddTriple (3b7efbad-f9aa-433f-a312-cdcb8a935962)
- Call ID: 3b7efbad-f9aa-433f-a312-cdcb8a935962
-  Args:
-    source: :King_Willem-Alexander
-    target: :Male
-    relation: :hasSex
-  AddTriple (4419ee6b-bf02-443b-b3bc-7a8e4816c565)
- Call ID: 4419ee6b-bf02-443b-b3bc-7a8e4816c565
-  Args:
-    source: :Queen_Maxima
-    relation: :hasSex
-    target: :Female
-  Finish (5e571053-eb0e-49ed-bac5-f2d3b591be65)
- Call ID: 5e571053-eb0e-49ed-bac5-f2d3b591be65
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -491,20 +598,30 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Princess_Alexia a :Person,
-          :Woman ;
+  data:Alexandra_Jankovich_de_Jeszenice a :Woman .
+
+  data:Frans_Ferdinand_de_Beaufort a :Man .
+
+  data:Juan_Zorreguieta a :Man .
+
+  data:Pieter_van_Vollenhoven a :Man .
+
+  data:Prince_Friso a :Man .
+
+  data:Princess_Alexia a :Woman ;
       :hasBirthYear 2005 ;
       :hasFather data:King_Willem-Alexander ;
-      :hasMother data:Queen_Maxima ;
-      :hasSex data:Female .
+      :hasMother data:Queen_Maxima .
 
-  data:King_Willem-Alexander a :Man,
-          :Person ;
-      :hasSex data:Male .
+  data:Princess_Beatrix a :Woman .
 
-  data:Queen_Maxima a :Person,
-          :Woman ;
-      :hasSex data:Female .
+  data:Princess_Margriet a :Woman .
+
+  data:Queen_Mathilde_of_Belgium a :Woman .
+
+  data:King_Willem-Alexander a :Man .
+
+  data:Queen_Maxima a :Woman .
 
 
 
@@ -516,254 +633,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (8bd66e72-ffce-4215-93b5-5d05a1f2e959)
- Call ID: 8bd66e72-ffce-4215-93b5-5d05a1f2e959
+  ValidateShacl (aa1aa7dd-c957-48be-b9fc-6264520408e1)
+ Call ID: aa1aa7dd-c957-48be-b9fc-6264520408e1
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:30
+Total violations:6
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'King_Willem-Alexander' is not classified as a ':Sex'.
+      The node King_Willem-Alexander is assigned as the father of Princess_Alexia, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='King_Willem-Alexander', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'King_Willem-Alexander' is not classified as a ':Sex'.
+      The node Queen_Maxima is assigned as the mother of Princess_Alexia, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Queen_Maxima', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Queen_Maxima' is not classified as a ':Sex'.
+      The node King_Willem-Alexander is assigned as the father of Princess_Alexia, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='King_Willem-Alexander', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'King_Willem-Alexander' is not classified as a ':Sex'.
+      The node Queen_Maxima is assigned as the mother of Princess_Alexia, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
+      AssignClass(node='Queen_Maxima', class=':Ancestor')
 
 
   Violation [5]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Alexia' is not classified as a ':Sex'.
+      The node King_Willem-Alexander is assigned as the father of Princess_Alexia, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='King_Willem-Alexander', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'King_Willem-Alexander' for the property 'hasFather' of 'Princess_Alexia' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Willem-Alexander', class=':Ancestor')
-
-
-  Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Queen_Maxima' for the property 'hasMother' of 'Princess_Alexia' is not classified as an ':Ancestor'.
+      The node Queen_Maxima is assigned as the mother of Princess_Alexia, but it lacks the required class :Ancestor.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Queen_Maxima', class=':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Queen_Maxima' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'King_Willem-Alexander' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Alexia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Queen_Maxima' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'King_Willem-Alexander' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Alexia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Queen_Maxima' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'King_Willem-Alexander' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Alexia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'King_Willem-Alexander' for the property 'hasFather' of 'Princess_Alexia' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Willem-Alexander', class=':Ancestor')
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Queen_Maxima' for the property 'hasMother' of 'Princess_Alexia' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Maxima', class=':Ancestor')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Queen_Maxima' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'King_Willem-Alexander' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Alexia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Queen_Maxima' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'King_Willem-Alexander' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Alexia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'King_Willem-Alexander' for the property 'hasFather' of 'Princess_Alexia' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_Willem-Alexander', class=':Ancestor')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Queen_Maxima' for the property 'hasMother' of 'Princess_Alexia' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Maxima', class=':Ancestor')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Queen_Maxima' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Alexia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Queen_Maxima' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Female' for the property 'hasSex' of node 'Princess_Alexia' is not classified as a ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
 
 
 
@@ -772,37 +697,19 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (7ac79084-7d02-444f-9289-84c7c8e440ba)
- Call ID: 7ac79084-7d02-444f-9289-84c7c8e440ba
-  Args:
-    type: :Sex
-    source: :Female
-  AssignClass (b69f6ad8-3925-44e5-939e-9f6ff99de19f)
- Call ID: b69f6ad8-3925-44e5-939e-9f6ff99de19f
-  Args:
-    type: :Sex
-    source: :Male
-  AssignClass (040dc1cc-1c67-40ac-a0d2-2fee369dba3b)
- Call ID: 040dc1cc-1c67-40ac-a0d2-2fee369dba3b
+  AssignClass (ff11dd22-42de-4f20-9d5d-b7835f96617f)
+ Call ID: ff11dd22-42de-4f20-9d5d-b7835f96617f
   Args:
     type: :Ancestor
     source: :King_Willem-Alexander
-  AssignClass (e9a750f8-7b13-4731-bcdd-2e06935f8f86)
- Call ID: e9a750f8-7b13-4731-bcdd-2e06935f8f86
+  AssignClass (f3b12494-d0cb-4e06-9ba5-5aff2b20a73f)
+ Call ID: f3b12494-d0cb-4e06-9ba5-5aff2b20a73f
   Args:
-    type: :Ancestor
     source: :Queen_Maxima
-  Finish (cd39e24a-5557-47ad-aa3c-617034235c56)
- Call ID: cd39e24a-5557-47ad-aa3c-617034235c56
+    type: :Ancestor
+  ValidateShacl (0a61c916-b22e-4a49-9e87-c11ee91e454c)
+ Call ID: 0a61c916-b22e-4a49-9e87-c11ee91e454c
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -815,40 +722,34 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Princess_Alexia a :Person,
-          :Woman ;
+  data:Alexandra_Jankovich_de_Jeszenice a :Woman .
+
+  data:Frans_Ferdinand_de_Beaufort a :Man .
+
+  data:Juan_Zorreguieta a :Man .
+
+  data:Pieter_van_Vollenhoven a :Man .
+
+  data:Prince_Friso a :Man .
+
+  data:Princess_Alexia a :Woman ;
       :hasBirthYear 2005 ;
       :hasFather data:King_Willem-Alexander ;
-      :hasMother data:Queen_Maxima ;
-      :hasSex data:Female .
+      :hasMother data:Queen_Maxima .
+
+  data:Princess_Beatrix a :Woman .
+
+  data:Princess_Margriet a :Woman .
+
+  data:Queen_Mathilde_of_Belgium a :Woman .
 
   data:King_Willem-Alexander a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Male a :Sex .
+          :Man .
 
   data:Queen_Maxima a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Female a :Sex .
+          :Woman .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (8e5c624d-6537-4d3f-94d0-09550c35b2fb)
- Call ID: 8e5c624d-6537-4d3f-94d0-09550c35b2fb
-  Args:
 
 ================================= Tool Message =================================
 
@@ -858,6 +759,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (ecd004f4-9976-4964-bea1-191cd94dca6f)
- Call ID: ecd004f4-9976-4964-bea1-191cd94dca6f
+  Finish (ee610e97-001b-4b51-a474-4d2dbbf55544)
+ Call ID: ee610e97-001b-4b51-a474-4d2dbbf55544
   Args:

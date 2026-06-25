@@ -1,0 +1,93 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Duchess_Marie_of_Mecklenburg-Strelitz a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Duchess Marie of Mecklenburg-Strelitz"^^xsd:string ;
+    data:posIndicesFull "438:475"^^xsd:string ;
+    data:wdtLink wdt:Q69425 ;
+    :alsoKnownAs "Marie Herzogin zu Mecklenburg"^^xsd:string ;
+    :hasChild data:Prince_Ernst_August_of_Lippe ;
+    :hasRelation data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Prince_Ernst_August_of_Lippe ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Marie_of_Mecklenburg-Strelitz ;
+    :hasSon data:Prince_Ernst_August_of_Lippe ;
+    :isAncestorOf data:Prince_Ernst_August_of_Lippe ;
+    :isAuntOf data:Prince_Ernst_August_of_Lippe ;
+    :isBloodrelationOf data:Duchess_Marie_of_Mecklenburg-Strelitz ;
+    :isMotherOf data:Prince_Ernst_August_of_Lippe ;
+    :isParentOf data:Prince_Ernst_August_of_Lippe ;
+    :isSiblingOf data:Duchess_Marie_of_Mecklenburg-Strelitz ;
+    :isSisterOf data:Duchess_Marie_of_Mecklenburg-Strelitz .
+
+data:Prince_Ernst_August_of_Lippe a :Man,
+        :Person ;
+    rdfs:label "Prince Ernst August of Lippe"^^xsd:string ;
+    data:posIndicesFull "0:28"^^xsd:string ;
+    data:posIndicesPart "1031:1037"^^xsd:string,
+        "1100:1105"^^xsd:string,
+        "1187:1193"^^xsd:string,
+        "1203:1209"^^xsd:string,
+        "1297:1303"^^xsd:string,
+        "1304:1309"^^xsd:string,
+        "1342:1348"^^xsd:string,
+        "1438:1444"^^xsd:string,
+        "1520:1526"^^xsd:string,
+        "1554:1560"^^xsd:string,
+        "1561:1566"^^xsd:string,
+        "1567:1573"^^xsd:string,
+        "1684:1689"^^xsd:string,
+        "1690:1696"^^xsd:string,
+        "1722:1728"^^xsd:string,
+        "1772:1778"^^xsd:string,
+        "1934:1940"^^xsd:string,
+        "1944:1949"^^xsd:string,
+        "1972:1978"^^xsd:string,
+        "1979:1984"^^xsd:string,
+        "1985:1991"^^xsd:string,
+        "2079:2084"^^xsd:string,
+        "207:213"^^xsd:string,
+        "214:219"^^xsd:string,
+        "220:226"^^xsd:string,
+        "2268:2273"^^xsd:string,
+        "301:307"^^xsd:string,
+        "315:320"^^xsd:string,
+        "324:329"^^xsd:string,
+        "350:355"^^xsd:string,
+        "366:371"^^xsd:string,
+        "643:649"^^xsd:string,
+        "754:759"^^xsd:string,
+        "760:766"^^xsd:string,
+        "979:984"^^xsd:string ;
+    data:wdtLink wdt:Q2295856 ;
+    :hasAncestor data:Duchess_Marie_of_Mecklenburg-Strelitz ;
+    :hasBrother data:Prince_Ernst_August_of_Lippe ;
+    :hasMother data:Duchess_Marie_of_Mecklenburg-Strelitz ;
+    :hasParent data:Duchess_Marie_of_Mecklenburg-Strelitz ;
+    :hasRelation data:Duchess_Marie_of_Mecklenburg-Strelitz,
+        data:Prince_Ernst_August_of_Lippe ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Ernst_August_of_Lippe ;
+    :isBrotherOf data:Prince_Ernst_August_of_Lippe ;
+    :isChildOf data:Duchess_Marie_of_Mecklenburg-Strelitz ;
+    :isSiblingOf data:Prince_Ernst_August_of_Lippe ;
+    :isSonOf data:Duchess_Marie_of_Mecklenburg-Strelitz .
+

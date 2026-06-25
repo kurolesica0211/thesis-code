@@ -1,0 +1,217 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Count_Hans_Veit_zu_Torring_Jettenbach a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Count_Hans_Veit_zu_Torring_Jettenbach ;
+    :hasChild data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :hasRelation data:Count_Carl_Theodor_of_Torring_Jettenbach,
+        data:Count_Hans_Veit_zu_Torring_Jettenbach,
+        data:Hans_Veit_of_Torring_Jettenbach ;
+    :hasSon data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :isAncestorOf data:Count_Carl_Theodor_of_Torring_Jettenbach,
+        data:Hans_Veit_of_Torring_Jettenbach ;
+    :isBloodrelationOf data:Count_Hans_Veit_zu_Torring_Jettenbach ;
+    :isBrotherOf data:Count_Hans_Veit_zu_Torring_Jettenbach ;
+    :isFatherOf data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :isParentOf data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :isSiblingOf data:Count_Hans_Veit_zu_Torring_Jettenbach ;
+    :isUncleOf data:Count_Carl_Theodor_of_Torring_Jettenbach .
+
+data:Duchess_Sophie_in_Bavaria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :hasRelation data:Count_Carl_Theodor_of_Torring_Jettenbach,
+        data:Duchess_Sophie_in_Bavaria,
+        data:Hans_Veit_of_Torring_Jettenbach ;
+    :hasSister data:Duchess_Sophie_in_Bavaria ;
+    :hasSon data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :isAncestorOf data:Count_Carl_Theodor_of_Torring_Jettenbach,
+        data:Hans_Veit_of_Torring_Jettenbach ;
+    :isAuntOf data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :isBloodrelationOf data:Duchess_Sophie_in_Bavaria ;
+    :isMotherOf data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :isParentOf data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :isSiblingOf data:Duchess_Sophie_in_Bavaria ;
+    :isSisterOf data:Duchess_Sophie_in_Bavaria .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Hans_Veit_of_Torring_Jettenbach,
+        data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:Hans_Veit_of_Torring_Jettenbach,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isMotherOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasRelation data:Hans_Veit_of_Torring_Jettenbach,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga ;
+    :isAncestorOf data:Hans_Veit_of_Torring_Jettenbach,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Elizabeth_of_Greece_and_Denmark .
+
+data:Princess_Marina a :Person,
+        :Woman ;
+    :hasRelation data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga ;
+    :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga ;
+    :isAuntOf data:Hans_Veit_of_Torring_Jettenbach ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga ;
+    :isSiblingOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga ;
+    :isSisterOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga .
+
+data:Princess_Olga a :Person,
+        :Woman ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga ;
+    :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga ;
+    :isAuntOf data:Hans_Veit_of_Torring_Jettenbach ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga ;
+    :isSiblingOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga ;
+    :isSisterOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga .
+
+data:Count_Carl_Theodor_of_Torring_Jettenbach a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Count_Hans_Veit_zu_Torring_Jettenbach,
+        data:Duchess_Sophie_in_Bavaria ;
+    :hasBrother data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :hasChild data:Hans_Veit_of_Torring_Jettenbach ;
+    :hasFather data:Count_Hans_Veit_zu_Torring_Jettenbach ;
+    :hasMother data:Duchess_Sophie_in_Bavaria ;
+    :hasParent data:Count_Hans_Veit_zu_Torring_Jettenbach,
+        data:Duchess_Sophie_in_Bavaria ;
+    :hasRelation data:Count_Carl_Theodor_of_Torring_Jettenbach,
+        data:Count_Hans_Veit_zu_Torring_Jettenbach,
+        data:Duchess_Sophie_in_Bavaria,
+        data:Hans_Veit_of_Torring_Jettenbach,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasSon data:Hans_Veit_of_Torring_Jettenbach ;
+    :isAncestorOf data:Hans_Veit_of_Torring_Jettenbach ;
+    :isBloodrelationOf data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :isBrotherOf data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :isChildOf data:Count_Hans_Veit_zu_Torring_Jettenbach,
+        data:Duchess_Sophie_in_Bavaria ;
+    :isFatherOf data:Hans_Veit_of_Torring_Jettenbach ;
+    :isParentOf data:Hans_Veit_of_Torring_Jettenbach ;
+    :isSiblingOf data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :isSonOf data:Count_Hans_Veit_zu_Torring_Jettenbach,
+        data:Duchess_Sophie_in_Bavaria ;
+    :isUncleOf data:Hans_Veit_of_Torring_Jettenbach .
+
+data:Hans_Veit_of_Torring_Jettenbach a :Man,
+        :Person ;
+    :hasAncestor data:Count_Carl_Theodor_of_Torring_Jettenbach,
+        data:Count_Hans_Veit_zu_Torring_Jettenbach,
+        data:Duchess_Sophie_in_Bavaria,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasBrother data:Hans_Veit_of_Torring_Jettenbach ;
+    :hasFather data:Count_Carl_Theodor_of_Torring_Jettenbach ;
+    :hasMother data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasParent data:Count_Carl_Theodor_of_Torring_Jettenbach,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :hasRelation data:Count_Carl_Theodor_of_Torring_Jettenbach,
+        data:Count_Hans_Veit_zu_Torring_Jettenbach,
+        data:Duchess_Sophie_in_Bavaria,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Hans_Veit_of_Torring_Jettenbach,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Hans_Veit_of_Torring_Jettenbach ;
+    :isBrotherOf data:Hans_Veit_of_Torring_Jettenbach ;
+    :isChildOf data:Count_Carl_Theodor_of_Torring_Jettenbach,
+        data:Princess_Elizabeth_of_Greece_and_Denmark ;
+    :isSiblingOf data:Hans_Veit_of_Torring_Jettenbach ;
+    :isSonOf data:Count_Carl_Theodor_of_Torring_Jettenbach,
+        data:Princess_Elizabeth_of_Greece_and_Denmark .
+
+data:Princess_Elizabeth_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasBirthYear 1904 ;
+    :hasChild data:Hans_Veit_of_Torring_Jettenbach ;
+    :hasDeathYear 1955 ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMarriageYear 1934 ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Count_Carl_Theodor_of_Torring_Jettenbach,
+        data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Hans_Veit_of_Torring_Jettenbach,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga ;
+    :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga ;
+    :hasSon data:Hans_Veit_of_Torring_Jettenbach ;
+    :isAncestorOf data:Hans_Veit_of_Torring_Jettenbach ;
+    :isAuntOf data:Hans_Veit_of_Torring_Jettenbach ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isMotherOf data:Hans_Veit_of_Torring_Jettenbach ;
+    :isParentOf data:Hans_Veit_of_Torring_Jettenbach ;
+    :isSiblingOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga ;
+    :isSisterOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina,
+        data:Princess_Olga .
+

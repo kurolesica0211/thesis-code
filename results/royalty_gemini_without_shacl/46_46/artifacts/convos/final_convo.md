@@ -74,6 +74,7 @@ She is the daughter of Anne, Princess Royal, and Captain Mark Phillips, and the 
 At birth she was sixth in the line of succession to the British throne during the reign of her maternal grandmother, Queen Elizabeth II, and as of 2026 is 22nd.
 Tindall won the individual eventing world title at Aachen in 2006 and was later named BBC Sports Personality of the Year.
 She married former rugby union player Mike Tindall in 2011, and the couple have three children.
+The following year she carried the Olympic flame at Cheltenham Racecourse on her horse Toytown, and went on to win a team silver medal in eventing at the 2012 London Summer Olympics, presented to her by her mother.
 Early life and education
 
 Zara Anne Elizabeth Phillips was born at 8:15 pm on 15 May 1981 at St Mary's Hospital, London.
@@ -86,6 +87,7 @@ Equestrianism
 After leaving university, Phillips began to pursue an equestrian career, following in the footsteps of her parents.
 Phillips missed the 2004 Summer Olympics in Athens after her horse was injured during training.
 Riding Toytown, Phillips won individual and team gold medals at the 2005 European Eventing Championship at Blenheim.
+Following her success in Germany, she was voted BBC Sports Personality of the Year, an award previously won by her mother in 1971.
 The British Olympic Association selected Phillips and Toytown for the 2008 Olympic Games in Hong Kong; however, Toytown sustained an injury during training and she withdrew from the team.
 On 25 October 2008, Phillips fell from her horse, Tsunami II, at the 15th fence of a cross‐country event in Pau, France, breaking her right collarbone.
 In July 2010, Musto launched a range of equestrian clothing designed by Phillips, named ZP176 after her team number when she first represented Great Britain.
@@ -109,9 +111,11 @@ Personal life
 Phillips met rugby union player Mike Tindall, who was then playing for the England national team, during the squad's Rugby World Cup-winning campaign in Australia in 2003.
 As required at the time by the Royal Marriages Act 1772, the Queen gave her consent to the marriage at a meeting of the Privy Council on 10 May 2011.
 A celebration was held on the royal yacht Britannia prior to the wedding.
+A reception followed at the Palace of Holyroodhouse.
 The Tindalls lived in Cheltenham, Gloucestershire, before moving to Aston Farm, a seven-bedroom property adjoining the Princess Royal's Gatcombe Park estate.
 Their first child, Mia Grace, was born on 17 January 2014 at Gloucestershire Royal Hospital and was 16th, later 23rd in the line of succession.
 A second daughter, Lena Elizabeth, was born on 18 June 2018 at Stroud Maternity Hospital and was 19th, later 24th, in the line of succession.
+Their son, Lucas Philip, was born on 21 March 2021 at the family home on the Gatcombe Park estate and was 22nd, later 25th, in the line of succession.
 Tindall is a godmother to Prince George of Wales, the son of her cousin William, Prince of Wales.
 In December 2000, before her marriage, Phillips was involved in a serious car crash near Bourton-on-the-Water, escaping injury after overturning her Land Rover.
 
@@ -120,6 +124,8 @@ In December 2000, before her marriage, Phillips was involved in a serious car cr
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -135,39 +141,9 @@ In December 2000, before her marriage, Phillips was involved in a serious car cr
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -182,6 +158,23 @@ In December 2000, before her marriage, Phillips was involved in a serious car cr
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -199,6 +192,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -266,29 +274,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -297,6 +297,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -309,6 +317,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -317,17 +327,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -355,6 +367,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -370,152 +466,510 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (62232b6e-2e2c-44f8-9856-8069d4b13ffd)
- Call ID: 62232b6e-2e2c-44f8-9856-8069d4b13ffd
+  AssignClass (677b6074-0151-45df-8224-656b35ace7c8)
+ Call ID: 677b6074-0151-45df-8224-656b35ace7c8
   Args:
+    source: Zara_Tindall
     type: :Woman
-    source: :ZaraTindall
-  AssignClass (f232df3d-923e-4f8b-9374-4f7e40867b3f)
- Call ID: f232df3d-923e-4f8b-9374-4f7e40867b3f
+  AssignClass (5aaa89af-7d97-45a9-a29c-a2e4fb875805)
+ Call ID: 5aaa89af-7d97-45a9-a29c-a2e4fb875805
   Args:
     type: :Person
-    source: :ZaraTindall
-  AssignClass (65022786-0c2a-4503-9823-5dc319b7af5a)
- Call ID: 65022786-0c2a-4503-9823-5dc319b7af5a
+    source: Zara_Tindall
+  AddLiteral (92a7b3e0-99bf-4e12-a333-a62aeb0b16fe)
+ Call ID: 92a7b3e0-99bf-4e12-a333-a62aeb0b16fe
   Args:
-    source: :AnnePrincessRoyal
-    type: :Woman
-  AssignClass (a5f1dc1d-2861-4344-a7e7-bddd79ac14f3)
- Call ID: a5f1dc1d-2861-4344-a7e7-bddd79ac14f3
-  Args:
-    source: :AnnePrincessRoyal
-    type: :Person
-  AssignClass (6bc4eb54-8f5d-4108-a5e9-61df27a9be87)
- Call ID: 6bc4eb54-8f5d-4108-a5e9-61df27a9be87
-  Args:
-    type: :Man
-    source: :MarkPhillips
-  AssignClass (5cb9e161-4256-44f8-badc-bffdf62bf054)
- Call ID: 5cb9e161-4256-44f8-badc-bffdf62bf054
-  Args:
-    source: :MarkPhillips
-    type: :Person
-  AssignClass (af9941df-33fb-44bf-93be-b626fef42210)
- Call ID: af9941df-33fb-44bf-93be-b626fef42210
-  Args:
-    type: :Man
-    source: :MikeTindall
-  AssignClass (1aab437a-78c9-429f-a2d1-bf518ae00618)
- Call ID: 1aab437a-78c9-429f-a2d1-bf518ae00618
-  Args:
-    type: :Person
-    source: :MikeTindall
-  AssignClass (7e2cf8e2-69fe-4fab-8ee7-2689d4b09c6b)
- Call ID: 7e2cf8e2-69fe-4fab-8ee7-2689d4b09c6b
-  Args:
-    source: :PeterPhillips
-    type: :Man
-  AssignClass (13cf28dc-7f41-4d5f-8a0c-628051866ce5)
- Call ID: 13cf28dc-7f41-4d5f-8a0c-628051866ce5
-  Args:
-    type: :Person
-    source: :PeterPhillips
-  AssignClass (6c0171d9-b504-41a6-89de-509c5fdb4695)
- Call ID: 6c0171d9-b504-41a6-89de-509c5fdb4695
-  Args:
-    source: :MiaGraceTindall
-    type: :Woman
-  AssignClass (5f53fcd1-7c7c-4f0a-ad57-eaa26ba18fcc)
- Call ID: 5f53fcd1-7c7c-4f0a-ad57-eaa26ba18fcc
-  Args:
-    source: :MiaGraceTindall
-    type: :Person
-  AssignClass (92db6fba-b343-4978-a41c-9e54fb87db0e)
- Call ID: 92db6fba-b343-4978-a41c-9e54fb87db0e
-  Args:
-    type: :Woman
-    source: :LenaElizabethTindall
-  AssignClass (3ec9141a-325f-4710-b45a-6f9ca926d576)
- Call ID: 3ec9141a-325f-4710-b45a-6f9ca926d576
-  Args:
-    type: :Person
-    source: :LenaElizabethTindall
-  AddLiteral (9e54724d-9dfa-42d9-aaf5-3a094d334c85)
- Call ID: 9e54724d-9dfa-42d9-aaf5-3a094d334c85
-  Args:
-    literal_type: xsd:integer
     relation: :hasBirthYear
-    source: :ZaraTindall
+    source: Zara_Tindall
     literal_value: 1981
-  AddTriple (50d159db-6b10-407c-a1cf-53dfde3836e1)
- Call ID: 50d159db-6b10-407c-a1cf-53dfde3836e1
+    literal_type: xsd:integer
+  AddTriple (3be9f03e-b567-4390-8552-266cec415517)
+ Call ID: 3be9f03e-b567-4390-8552-266cec415517
+  Args:
+    source: Zara_Tindall
+    target: Anne_Princess_Royal
+    relation: :hasMother
+  AssignClass (1206f07c-3af9-44a4-b55e-fcb5407c3381)
+ Call ID: 1206f07c-3af9-44a4-b55e-fcb5407c3381
+  Args:
+    type: :Woman
+    source: Anne_Princess_Royal
+  AssignClass (496c09fb-3817-4f93-97ed-faafcc7c50d4)
+ Call ID: 496c09fb-3817-4f93-97ed-faafcc7c50d4
+  Args:
+    source: Anne_Princess_Royal
+    type: :Person
+  AddTriple (d6c7bcf8-7eda-4dab-bd40-93f2dff5edb7)
+ Call ID: d6c7bcf8-7eda-4dab-bd40-93f2dff5edb7
+  Args:
+    target: Mark_Phillips
+    relation: :hasFather
+    source: Zara_Tindall
+  AssignClass (26239fa8-da26-41b7-b0bc-5c27cacc1511)
+ Call ID: 26239fa8-da26-41b7-b0bc-5c27cacc1511
+  Args:
+    source: Mark_Phillips
+    type: :Man
+  AssignClass (182e2480-237b-4226-b2b7-62ab34e13c68)
+ Call ID: 182e2480-237b-4226-b2b7-62ab34e13c68
+  Args:
+    type: :Person
+    source: Mark_Phillips
+  AddTriple (dd84abec-be0b-4074-a679-8c7d801a4451)
+ Call ID: dd84abec-be0b-4074-a679-8c7d801a4451
+  Args:
+    source: Zara_Tindall
+    target: Peter_Phillips
+    relation: :hasBrother
+  AssignClass (8bb3cf82-4e81-4292-aa00-f722e4093d58)
+ Call ID: 8bb3cf82-4e81-4292-aa00-f722e4093d58
+  Args:
+    source: Peter_Phillips
+    type: :Man
+  AssignClass (353e9a0d-1b9d-460d-9373-0ad4318d5c15)
+ Call ID: 353e9a0d-1b9d-460d-9373-0ad4318d5c15
+  Args:
+    type: :Person
+    source: Peter_Phillips
+  AddTriple (b74247b4-8ad7-49d8-b4f7-38bd2c3215e6)
+ Call ID: b74247b4-8ad7-49d8-b4f7-38bd2c3215e6
+  Args:
+    source: Peter_Phillips
+    target: Mark_Phillips
+    relation: :hasFather
+  AddTriple (95a8078f-9ba9-41b1-92c5-33912afb75d6)
+ Call ID: 95a8078f-9ba9-41b1-92c5-33912afb75d6
+  Args:
+    source: Peter_Phillips
+    target: Anne_Princess_Royal
+    relation: :hasMother
+  AddTriple (406bd042-3974-489e-92bf-6da0e6047b3a)
+ Call ID: 406bd042-3974-489e-92bf-6da0e6047b3a
+  Args:
+    source: Felicity_Wade
+    relation: :hasMother
+    target: Heather_Tonkin
+  AddTriple (05c86a9b-2e17-4474-bd67-300ded6154e9)
+ Call ID: 05c86a9b-2e17-4474-bd67-300ded6154e9
+  Args:
+    source: Felicity_Wade
+    relation: :hasFather
+    target: Mark_Phillips
+  AssignClass (664a5f7c-8091-4834-94fb-515e3f17cf51)
+ Call ID: 664a5f7c-8091-4834-94fb-515e3f17cf51
+  Args:
+    type: :Woman
+    source: Felicity_Wade
+  AssignClass (18e93df6-df8f-4283-871b-7fac1446afda)
+ Call ID: 18e93df6-df8f-4283-871b-7fac1446afda
+  Args:
+    type: :Person
+    source: Felicity_Wade
+  AddTriple (a9c55c47-a16f-41b6-bf29-a979beab83ff)
+ Call ID: a9c55c47-a16f-41b6-bf29-a979beab83ff
+  Args:
+    source: Stephanie_Phillips
+    target: Sandy_Pflueger
+    relation: :hasMother
+  AddTriple (a3e7c5a6-e435-42b3-b92e-bc7ff72fd640)
+ Call ID: a3e7c5a6-e435-42b3-b92e-bc7ff72fd640
+  Args:
+    source: Stephanie_Phillips
+    target: Mark_Phillips
+    relation: :hasFather
+  AssignClass (3fc092b2-19f7-4b2c-a233-fec956739b31)
+ Call ID: 3fc092b2-19f7-4b2c-a233-fec956739b31
+  Args:
+    source: Stephanie_Phillips
+    type: :Woman
+  AssignClass (fcd0c874-9c5a-46c1-aeb5-396f1e34e5f2)
+ Call ID: fcd0c874-9c5a-46c1-aeb5-396f1e34e5f2
+  Args:
+    type: :Person
+    source: Stephanie_Phillips
+  AddTriple (0814914a-bca9-446c-b7ec-c6f6e490ea70)
+ Call ID: 0814914a-bca9-446c-b7ec-c6f6e490ea70
   Args:
     relation: :hasMother
-    source: :ZaraTindall
-    target: :AnnePrincessRoyal
-  AddTriple (df373f73-6fab-4f8e-aa3d-28c8e532a4ad)
- Call ID: df373f73-6fab-4f8e-aa3d-28c8e532a4ad
+    target: Queen_Elizabeth_II
+    source: Zara_Tindall
+  AddTriple (e5ac90d0-9e74-4521-ac25-814bda8ab1c1)
+ Call ID: e5ac90d0-9e74-4521-ac25-814bda8ab1c1
   Args:
-    relation: :hasFather
-    source: :ZaraTindall
-    target: :MarkPhillips
-  AddLiteral (80fb71f3-cedc-482d-91b0-4027ff32f0af)
- Call ID: 80fb71f3-cedc-482d-91b0-4027ff32f0af
+    source: Anne_Princess_Royal
+    relation: :hasMother
+    target: Queen_Elizabeth_II
+  AssignClass (87306807-12d5-425a-8e1e-46b5b7734bcc)
+ Call ID: 87306807-12d5-425a-8e1e-46b5b7734bcc
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (d9e2eed9-a65e-4102-9fda-4f7f4331282b)
+ Call ID: d9e2eed9-a65e-4102-9fda-4f7f4331282b
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Person
+  AddLiteral (76500ae2-17e5-48bf-9d9e-9ce8cdf7444f)
+ Call ID: 76500ae2-17e5-48bf-9d9e-9ce8cdf7444f
   Args:
     literal_type: xsd:integer
     relation: :hasMarriageYear
-    source: :ZaraTindall
+    source: Zara_Tindall
     literal_value: 2011
-  AddTriple (eee5ce5a-17f2-4760-a740-907ff0c52cbc)
- Call ID: eee5ce5a-17f2-4760-a740-907ff0c52cbc
+  AddTriple (9fd5d9b5-49a8-44fd-b86b-cc94af0c966d)
+ Call ID: 9fd5d9b5-49a8-44fd-b86b-cc94af0c966d
   Args:
+    source: Zara_Tindall
     relation: :hasRelation
-    source: :ZaraTindall
-    target: :MikeTindall
-  AddTriple (881150e6-001d-4486-9fd0-a5af953d1c59)
- Call ID: 881150e6-001d-4486-9fd0-a5af953d1c59
+    target: Mike_Tindall
+  AssignClass (de82987e-4483-45a5-9ec7-546fa40fd5be)
+ Call ID: de82987e-4483-45a5-9ec7-546fa40fd5be
   Args:
-    relation: :hasBrother
-    source: :ZaraTindall
-    target: :PeterPhillips
-  AddTriple (e716c89d-04f6-4f81-823c-b34c94d098a8)
- Call ID: e716c89d-04f6-4f81-823c-b34c94d098a8
+    type: :Man
+    source: Mike_Tindall
+  AssignClass (0ac2fd57-87fd-4515-b49a-8da7a1518e09)
+ Call ID: 0ac2fd57-87fd-4515-b49a-8da7a1518e09
   Args:
-    relation: :hasChild
-    source: :ZaraTindall
-    target: :MiaGraceTindall
-  AddTriple (db5f755c-7602-44dd-82ff-2c694bf84a24)
- Call ID: db5f755c-7602-44dd-82ff-2c694bf84a24
+    source: Mike_Tindall
+    type: :Person
+  AddTriple (1b4de65c-6381-4e38-b214-a7633c9d280b)
+ Call ID: 1b4de65c-6381-4e38-b214-a7633c9d280b
   Args:
-    relation: :hasChild
-    source: :ZaraTindall
-    target: :LenaElizabethTindall
-  AddTriple (a7f37763-91e7-440e-ba31-a6074f9a9403)
- Call ID: a7f37763-91e7-440e-ba31-a6074f9a9403
-  Args:
-    target: :MikeTindall
+    target: Mike_Tindall
     relation: :hasFather
-    source: :MiaGraceTindall
-  AddTriple (6a03fba0-391d-4308-ae60-c8cf37727567)
- Call ID: 6a03fba0-391d-4308-ae60-c8cf37727567
+    source: Mia_Grace_Tindall
+  AddTriple (32097128-8460-44bb-b728-a4e717ddb2e6)
+ Call ID: 32097128-8460-44bb-b728-a4e717ddb2e6
   Args:
-    source: :LenaElizabethTindall
+    source: Mia_Grace_Tindall
+    target: Zara_Tindall
+    relation: :hasMother
+  AssignClass (aab292c1-a78a-42f4-961e-415f5459bf07)
+ Call ID: aab292c1-a78a-42f4-961e-415f5459bf07
+  Args:
+    source: Mia_Grace_Tindall
+    type: :Woman
+  AssignClass (cbcb0946-7ea2-41a2-8682-1542e9a439f6)
+ Call ID: cbcb0946-7ea2-41a2-8682-1542e9a439f6
+  Args:
+    type: :Person
+    source: Mia_Grace_Tindall
+  AddTriple (204f510a-13c3-406b-aaf3-2cb4aa5aa96b)
+ Call ID: 204f510a-13c3-406b-aaf3-2cb4aa5aa96b
+  Args:
     relation: :hasFather
-    target: :MikeTindall
-  AddLiteral (a3b2960b-d77a-4a52-be7f-e49c7070b624)
- Call ID: a3b2960b-d77a-4a52-be7f-e49c7070b624
+    target: Mike_Tindall
+    source: Lena_Elizabeth_Tindall
+  AddTriple (8a89fd6f-e56a-4e65-9c0d-c98f37e89224)
+ Call ID: 8a89fd6f-e56a-4e65-9c0d-c98f37e89224
   Args:
-    literal_value: Zara Phillips
-    source: :ZaraTindall
-    relation: :formerlyKnownAs
-    literal_type: xsd:string
-  AddLiteral (b9e84813-62ce-457a-8124-bf3bdc12c407)
- Call ID: b9e84813-62ce-457a-8124-bf3bdc12c407
+    relation: :hasMother
+    target: Zara_Tindall
+    source: Lena_Elizabeth_Tindall
+  AssignClass (51550098-ce95-4551-bb04-43137b6dc5c2)
+ Call ID: 51550098-ce95-4551-bb04-43137b6dc5c2
   Args:
-    literal_type: xsd:string
-    relation: :knownAs
-    source: :ZaraTindall
-    literal_value: Zara Tindall
-  Finish (ac8d2954-d14d-4e57-9566-00d5b6d14aca)
- Call ID: ac8d2954-d14d-4e57-9566-00d5b6d14aca
+    type: :Woman
+    source: Lena_Elizabeth_Tindall
+  AssignClass (840ae5eb-6246-4077-9d3e-5df9417efc43)
+ Call ID: 840ae5eb-6246-4077-9d3e-5df9417efc43
+  Args:
+    source: Lena_Elizabeth_Tindall
+    type: :Person
+  AddTriple (ebd3be8c-c5ec-4fe6-9dd7-8c55b351acc6)
+ Call ID: ebd3be8c-c5ec-4fe6-9dd7-8c55b351acc6
+  Args:
+    target: Mike_Tindall
+    relation: :hasFather
+    source: Lucas_Philip_Tindall
+  AddTriple (a86e4f76-4242-44ae-a078-525234a462cc)
+ Call ID: a86e4f76-4242-44ae-a078-525234a462cc
+  Args:
+    target: Zara_Tindall
+    relation: :hasMother
+    source: Lucas_Philip_Tindall
+  AssignClass (14f23f03-6cfc-464d-bc6b-76ff421c93eb)
+ Call ID: 14f23f03-6cfc-464d-bc6b-76ff421c93eb
+  Args:
+    type: :Man
+    source: Lucas_Philip_Tindall
+  AssignClass (94bc9003-b344-4bbe-9e8c-b413989930e3)
+ Call ID: 94bc9003-b344-4bbe-9e8c-b413989930e3
+  Args:
+    source: Lucas_Philip_Tindall
+    type: :Person
+  Finish (3a92887a-effa-467e-85e7-929969715013)
+ Call ID: 3a92887a-effa-467e-85e7-929969715013
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Felicity_Wade a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Heather_Tonkin .
+
+  data:Lena_Elizabeth_Tindall a :Person,
+          :Woman ;
+      :hasFather data:Mike_Tindall ;
+      :hasMother data:Zara_Tindall .
+
+  data:Lucas_Philip_Tindall a :Man,
+          :Person ;
+      :hasFather data:Mike_Tindall ;
+      :hasMother data:Zara_Tindall .
+
+  data:Mia_Grace_Tindall a :Person,
+          :Woman ;
+      :hasFather data:Mike_Tindall ;
+      :hasMother data:Zara_Tindall .
+
+  data:Stephanie_Phillips a :Person,
+          :Woman ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Sandy_Pflueger .
+
+  data:Peter_Phillips a :Man,
+          :Person ;
+      :hasFather data:Mark_Phillips ;
+      :hasMother data:Anne_Princess_Royal .
+
+  data:Anne_Princess_Royal a :Person,
+          :Woman ;
+      :hasMother data:Queen_Elizabeth_II .
+
+  data:Queen_Elizabeth_II a :Person,
+          :Woman .
+
+  data:Zara_Tindall a :Person,
+          :Woman ;
+      :hasBirthYear 1981 ;
+      :hasBrother data:Peter_Phillips ;
+      :hasFather data:Mark_Phillips ;
+      :hasMarriageYear 2011 ;
+      :hasMother data:Anne_Princess_Royal,
+          data:Queen_Elizabeth_II ;
+      :hasRelation data:Mike_Tindall .
+
+  data:Mark_Phillips a :Man,
+          :Person .
+
+  data:Mike_Tindall a :Man,
+          :Person .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Heather_Tonkin', 'Sandy_Pflueger']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (78bfdb0c-de91-4036-99d8-5cc41e991941)
+ Call ID: 78bfdb0c-de91-4036-99d8-5cc41e991941
+  Args:
+    source: Heather_Tonkin
+    type: :Woman
+  AssignClass (8e7c6c1e-516d-4215-8e9d-0e4d2f913604)
+ Call ID: 8e7c6c1e-516d-4215-8e9d-0e4d2f913604
+  Args:
+    type: :Person
+    source: Heather_Tonkin
+  AssignClass (378223a0-1d33-4e35-b319-2d46310782eb)
+ Call ID: 378223a0-1d33-4e35-b319-2d46310782eb
+  Args:
+    source: Sandy_Pflueger
+    type: :Woman
+  AssignClass (77745922-5658-43a0-a353-a84e7160ca64)
+ Call ID: 77745922-5658-43a0-a353-a84e7160ca64
+  Args:
+    type: :Person
+    source: Sandy_Pflueger
+  Finish (bf4936ea-3359-4d2f-8f22-16a565dac579)
+ Call ID: bf4936ea-3359-4d2f-8f22-16a565dac579
   Args:

@@ -2,43 +2,41 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Ana_Luna_Medina_y_Orleans_Braganza a :Person,
+data:Maria_Immaculata_of_Bourbon-Two_Sicilies a :Person,
         :Woman ;
-    :hasMother data:Maria_da_Gloria .
+    :hasBirthYear 1874 ;
+    :hasDeathYear 1947 ;
+    :hasFather data:Alfonso_of_Bourbon-Two_Sicilies ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Johann_Georg_of_Saxony .
 
-data:Peter_Karageorgevitch a :Man,
+data:Alfonso_of_Bourbon-Two_Sicilies a :Man,
+        :Person .
+
+data:Ferdinand_II_of_Portugal a :Man,
+        :Person .
+
+data:Frederick_Augustus_III_of_Saxony a :Man,
+        :Person .
+
+data:George_of_Saxony a :Man,
+        :Person .
+
+data:Johann_Georg_of_Saxony a :Man,
         :Person ;
-    :alsoKnownAs "Prince Peter of Serbia and Yugoslavia"^^xsd:string ;
-    :formerlyKnownAs "Hereditary Prince"^^xsd:string ;
-    :hasBirthYear 1980 ;
-    :hasBrother data:Alexander_Jr_Karageorgevitch,
-        data:Philip_Karageorgevitch ;
-    :hasDaughter data:Dolores_Luna_Noor ;
-    :hasFather data:Alexander_Yugoslavia ;
-    :hasMother data:Maria_da_Gloria .
+    :hasBrother data:Frederick_Augustus_III_of_Saxony ;
+    :hasFather data:George_of_Saxony ;
+    :hasMother data:Maria_Anna_of_Portugal .
 
-data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,
+data:Maria_Anna_of_Portugal a :Person,
         :Woman ;
-    :hasMother data:Maria_da_Gloria .
+    :hasFather data:Ferdinand_II_of_Portugal ;
+    :hasMother data:Maria_II_of_Portugal .
 
-data:Alexander_Jr_Karageorgevitch a :Man,
-        :Person .
+data:Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person,
+        :Woman .
 
-data:Alexander_Yugoslavia a :Man,
-        :Person .
-
-data:Dolores_Luna_Noor a :Person,
-        :Woman ;
-    :hasBirthYear 2017 ;
-    :hasMother data:Lauren_Estelle_Jones .
-
-data:Lauren_Estelle_Jones a :Person,
-        :Woman ;
-    :hasBirthYear 1984 .
-
-data:Philip_Karageorgevitch a :Man,
-        :Person .
-
-data:Maria_da_Gloria a :Person,
+data:Maria_II_of_Portugal a :Person,
         :Woman .
 

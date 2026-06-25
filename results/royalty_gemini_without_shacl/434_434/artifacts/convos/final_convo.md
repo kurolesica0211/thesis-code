@@ -69,40 +69,27 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Simon Patrick Bowes-Lyon, 19th and 6th Earl of Strathmore and Kinghorne (born 18 June 1986), styled as Lord Glamis until 2016, is a Scottish peer and landowner, the owner of estates based at Glamis Castle.
-The eldest son of Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne, and his first wife, Isobel Weatherall, he is a second cousin once removed of King Charles III, whose maternal grandmother was a Bowes-Lyon.
-In 2021, Strathmore pleaded guilty to sexually assaulting a woman at his ancestral home, Glamis Castle, and as a result served five months in prison.
-Biography
+Heinrich Prinz von Hannover (born 29 April 1961) is a German publisher.
+Early life
 
-Simon Patrick Bowes-Lyon was born on 18 June 1986 into the Bowes-Lyon family.
-His father, Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne, was a politician, soldier, and businessman, as well as a hereditary peer.
-His mother is Isobel Weatherall, daughter of Captain Anthony Edward Weatherall.
-Strathmore is a great-great-nephew of Queen Elizabeth the Queen Mother and thus a second cousin once removed of King Charles III and third cousin of his son, Prince William.
-On his father's death on 27 February 2016, the then-Lord Glamis succeeded as 19th Earl.
-In 2017 Strathmore decided to renovate Glamis House, a property on his estate and a childhood home of the Queen Mother, for use as a self-catering holiday home.
-From 2016 to 2018, he was a director of Ark Hill Wind Farm Ltd. Strathmore is the chieftain of the Strathmore Highland Games, which takes place annually in the grounds of Glamis Castle.
-COVID-19 violation
+Heinrich is the youngest child of Ernest Augustus, Hereditary Prince of Brunswick, and his first wife Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg.
+He was born in Hanover, Lower Saxony, Germany.
+His eldest brother, Prince Ernest Augustus of Hanover, is the present head of the House of Hanover.
+Professional life
 
-In June 2020, Durham Police contacted the Earl for violating the COVID-19-related travel restrictions then in place.
-A report said Strathmore travelled 200 miles (320 km) to Holwick Lodge, Middleton-in-Teesdale, and that his butler was spotted buying newspapers.
-Sexual assault conviction
+Heinrich founded, owns and manages the publishing company MatrixMedia Verlag in Göttingen.
+The company publishes history books, mostly on the local history of the state of Lower Saxony, of which the predecessor states were the Kingdom of Hanover and the Duchy of Brunswick, and the history of the House of Welf.
+Personal life
 
-In 2021, Strathmore was charged with sexual assault after admitting to attacking a 26-year-old woman at his Scottish home, Glamis Castle, in early 2020.
-On 12 January 2021, Strathmore was granted bail and placed on the Violent and Sex Offender Register (ViSOR) by Sheriff Alistair Carmichael at Dundee Sheriff Court.
-The Times reported calls for Strathmore to be removed as the Chieftain of the annual Strathmore Highland Games and as the President of the Angus Ball.
-Drink driving conviction
-
-On 10 November 2023, the Earl was convicted of drink driving at Perth Sheriff Court.
-The Earl gave a reading of 55 mcg per 100 ml of breath; the legal limit is 22 mcg, therefore, he was 2.5 times over the legal limit.
-Titles and styles
-
-In addition to the Earldom of Strathmore and Kinghorne, Strathmore holds the following subsidiary titles: 17th Viscount Lyon, 19th Lord Lyon and Glamis, 26th Lord Glamis, 17th Lord Glamis, Tannadyce, Sidlaw and Strathdichtie, and 7th Baron Bowes, of Streatlam Castle.
+Heinrich was in a relationship with cabaret artist Désirée Nick for 17 years.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -118,39 +105,9 @@ In addition to the Earldom of Strathmore and Kinghorne, Strathmore holds the fol
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -165,6 +122,23 @@ In addition to the Earldom of Strathmore and Kinghorne, Strathmore holds the fol
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -182,6 +156,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -249,29 +238,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,6 +261,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -292,6 +281,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -300,17 +291,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -338,6 +331,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -353,180 +430,51 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e75c31a5-9d53-4e23-a95d-81d456083782)
- Call ID: e75c31a5-9d53-4e23-a95d-81d456083782
+  AssignClass (69ba8c7a-b997-40fe-a801-83706ada04b9)
+ Call ID: 69ba8c7a-b997-40fe-a801-83706ada04b9
+  Args:
+    source: Heinrich_Prinz_von_Hannover
+    type: :Man
+  AssignClass (1df393bc-be36-4c04-a196-49ac2adccd9e)
+ Call ID: 1df393bc-be36-4c04-a196-49ac2adccd9e
   Args:
     type: :Man
-    source: Simon_Patrick_Bowes-Lyon
-  AssignClass (792e30a7-30e0-41dc-8793-ffcb97e96358)
- Call ID: 792e30a7-30e0-41dc-8793-ffcb97e96358
+    source: Ernest_Augustus_Hereditary_Prince_of_Brunswick
+  AssignClass (8f06d8af-bdfa-47cb-9670-26dc25d6df59)
+ Call ID: 8f06d8af-bdfa-47cb-9670-26dc25d6df59
   Args:
-    type: :Man
-    source: Michael_Bowes-Lyon
-  AssignClass (ea719331-784f-4dc3-8c5a-708d4ecd8416)
- Call ID: ea719331-784f-4dc3-8c5a-708d4ecd8416
-  Args:
+    source: Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg
     type: :Woman
-    source: Isobel_Weatherall
-  AssignClass (fda4d55d-b439-406c-94b1-a0fa23efccb0)
- Call ID: fda4d55d-b439-406c-94b1-a0fa23efccb0
+  AssignClass (cd0a6a3b-9394-41b4-bbf7-9cd6092ae986)
+ Call ID: cd0a6a3b-9394-41b4-bbf7-9cd6092ae986
   Args:
     type: :Man
-    source: Anthony_Edward_Weatherall
-  AddLiteral (fe9552d7-80db-4606-9e93-a7242a89722f)
- Call ID: fe9552d7-80db-4606-9e93-a7242a89722f
+    source: Prince_Ernest_Augustus_of_Hanover
+  AddLiteral (6fb0d54e-47f5-434b-90e1-f7712a20d395)
+ Call ID: 6fb0d54e-47f5-434b-90e1-f7712a20d395
   Args:
+    source: Heinrich_Prinz_von_Hannover
     relation: :hasBirthYear
-    literal_value: 1986
     literal_type: xsd:integer
-    source: Simon_Patrick_Bowes-Lyon
-  AddTriple (c34906cd-fa3a-43dc-b4fe-81782985aa0a)
- Call ID: c34906cd-fa3a-43dc-b4fe-81782985aa0a
+    literal_value: 1961
+  AddTriple (be203ce5-d33a-4f13-af40-9ae0b62dbeb1)
+ Call ID: be203ce5-d33a-4f13-af40-9ae0b62dbeb1
   Args:
-    source: Simon_Patrick_Bowes-Lyon
-    target: Michael_Bowes-Lyon
     relation: :hasFather
-  AddTriple (e94cca56-4797-4e24-a76a-993906ea1a8a)
- Call ID: e94cca56-4797-4e24-a76a-993906ea1a8a
+    source: Heinrich_Prinz_von_Hannover
+    target: Ernest_Augustus_Hereditary_Prince_of_Brunswick
+  AddTriple (cd64fc82-b4cd-4982-ba7d-a4726123c579)
+ Call ID: cd64fc82-b4cd-4982-ba7d-a4726123c579
   Args:
-    target: Isobel_Weatherall
+    target: Princess_Ortrud_of_Schleswig-Holstein-Sonderburg-Glücksburg
     relation: :hasMother
-    source: Simon_Patrick_Bowes-Lyon
-  AddTriple (ed464112-b1a2-4031-8dcf-ad92b5841d98)
- Call ID: ed464112-b1a2-4031-8dcf-ad92b5841d98
+    source: Heinrich_Prinz_von_Hannover
+  AddTriple (f7d70be3-be14-4f29-8bbe-582aa7654b6c)
+ Call ID: f7d70be3-be14-4f29-8bbe-582aa7654b6c
   Args:
-    source: Isobel_Weatherall
-    relation: :hasFather
-    target: Anthony_Edward_Weatherall
-  AddTriple (ed05f26e-af28-4f86-b6e3-78d7d0d72f8a)
- Call ID: ed05f26e-af28-4f86-b6e3-78d7d0d72f8a
-  Args:
-    source: Simon_Patrick_Bowes-Lyon
-    relation: :hasSex
-    target: :Male
-  AddTriple (bed54a6d-9d0a-45f6-9818-3769bd8d5271)
- Call ID: bed54a6d-9d0a-45f6-9818-3769bd8d5271
-  Args:
-    source: Michael_Bowes-Lyon
-    relation: :hasSex
-    target: :Male
-  AddTriple (ef9712b9-a488-4aca-9a72-4518fe0aaea1)
- Call ID: ef9712b9-a488-4aca-9a72-4518fe0aaea1
-  Args:
-    source: Isobel_Weatherall
-    relation: :hasSex
-    target: :Female
-  AddTriple (cc9daf42-3981-4404-8c05-f15f85066371)
- Call ID: cc9daf42-3981-4404-8c05-f15f85066371
-  Args:
-    source: Anthony_Edward_Weatherall
-    target: :Male
-    relation: :hasSex
-  Finish (005383f1-684e-4204-a2a1-62ca4864cc1b)
- Call ID: 005383f1-684e-4204-a2a1-62ca4864cc1b
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Simon_Patrick_Bowes-Lyon a :Man ;
-      :hasBirthYear 1986 ;
-      :hasFather data:Michael_Bowes-Lyon ;
-      :hasMother data:Isobel_Weatherall ;
-      :hasSex data:Male .
-
-  data:Anthony_Edward_Weatherall a :Man ;
-      :hasSex data:Male .
-
-  data:Isobel_Weatherall a :Woman ;
-      :hasFather data:Anthony_Edward_Weatherall ;
-      :hasSex data:Female .
-
-  data:Michael_Bowes-Lyon a :Man ;
-      :hasSex data:Male .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male', 'Female']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (4016b977-50a1-46e8-a22f-98bf1df0ed6f)
- Call ID: 4016b977-50a1-46e8-a22f-98bf1df0ed6f
-  Args:
-    type: :Sex
-    source: Male
-  AssignClass (84744bcc-8d11-40e8-b1b5-019e5c63b7da)
- Call ID: 84744bcc-8d11-40e8-b1b5-019e5c63b7da
-  Args:
-    source: Female
-    type: :Sex
-  Finish (c42524ad-d8c0-4c75-9dea-f937227f36ef)
- Call ID: c42524ad-d8c0-4c75-9dea-f937227f36ef
+    target: Prince_Ernest_Augustus_of_Hanover
+    source: Heinrich_Prinz_von_Hannover
+    relation: :hasBrother
+  Finish (2b16cff4-0967-4d0e-b080-f06f46624aed)
+ Call ID: 2b16cff4-0967-4d0e-b080-f06f46624aed
   Args:

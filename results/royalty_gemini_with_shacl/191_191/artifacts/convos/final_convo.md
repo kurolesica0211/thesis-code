@@ -85,29 +85,65 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Isabelle of Orléans (Isabelle Marie Laure Mercédès Ferdinande; 7 May 1878 – 21 April 1961) was a member of the French Orleanist royal family and by marriage Duchess of Guise.
-Biography
+Princess Hélène of Orléans (French: Princesse Hélène Louise Henriette d'Orléans; 13 June 1871 – 21 January 1951) was a member of the deposed Orléans royal family of France and, by marriage to the head of a cadet branch of the Italian royal family, the Duchess of Aosta.
+Family
 
-Early life
+Hélène was the third of eight children born to Prince Philippe, Count of Paris, and Infanta Maria Isabel of Spain.
+Her father was a grandson of Louis Philippe I, King of the French, and had been heir-apparent to the throne from 1842 until the exile of the dynasty in 1848.
+Repatriating to France at the end of June 1871, the family took up residence in Paris at the Hotel Fould on the Rue du Faubourg Saint-Honoré, as guests of their uncle, Henri, Duke of Aumale, whose wealth and properties in France had not been confiscated in 1852, unlike those of the other Orléans princes.
+On 21 December 1872 the National Assembly enacted a law of restitution, authorising restoration of approximately 40 million of the eighty million francs worth of property which had formerly belonged to the House of Orléans, although the actual re-acquisition of that wealth would take several years.
+Meanwhile, a close friend of the Count and Countess of Paris, Maria Brignole Sale De Ferrari, placed at their disposal the ground floor and gardens of the Hôtel Matignon on the rue de Varenne in Paris.
+Along the adjacent rue de Babylone the Duchess had a two-story town house built to accommodate the Orléans children, their governesses and tutors, which served as Hélène's home from 1876 until her father was again exiled.
+In 1883 the last legitimate prince in the male-line of Louis XV, Henri, Count of Chambord, died childless leaving, in the eyes of French royalists excepting recalcitrant legitimists, the Count of Paris as heir to the Bourbon crown of France.
+However, celebrations in Paris in the spring of 1886 prior to the marriage in Lisbon of Hélène's eldest sister Amélie to Carlos of Braganza-Coburg, Prince Royal of Portugal, evoked such clear expressions of monarchist support for the House of Orléans that on 22 July the French Republic took the precaution of banishing the heads of France's former ruling dynasties, the Orléans and Bonapartes, from the country.
+Nearly all of the Orléans promptly left France, with Hélène and her parents going on to visit Tunbridge Wells in England and then travelling to Scotland before taking up residence in October at Sheen House in East Sheen, England.
+Potential matches
 
-Isabelle was born at the Château d'Eu in Eu, France, the third daughter and fifth (fourth surviving) child of Prince Philippe, Count of Paris and Infanta Maria Isabel of Spain.
-Marriage and issue
+Most of Hélène's siblings had married well, including Amélie, Queen of Portugal, Philippe, Duke of Orléans (who married Archduchess Maria Dorothea of Austria) and Isabelle, Duchess of Guise, and Hélène's parents had hopes that she would marry an heir to a throne.
+Those hopes were fanned by the fact that Hélène was considered a great beauty for the day, and one contemporary source stated that she was "the personification of womanly health and beauty, distinguished as a graceful athlete and charming linguist".
+Relationship with the Duke of Clarence
 
-As a young woman, Isabelle had many suitors, chief among them being the future Albert I of Belgium.
-Albert, however, was forced to end the courtship under pressure from his uncle King Leopold II, who feared that a marriage to the daughter of an exiled pretender to the French throne would result in backlash from the republican government in Paris.
-On 30 October 1899, Isabelle married her first cousin Prince Jean, Duke of Guise.
-Jean was the son of prince Robert, Duke of Chartres and Françoise d'Orléans.
-Upon the death of her brother, Philippe of Orléans, Duke of Orléans, claimant to the throne of France as "Philip VIII", the Duke of Guise became, at least for his Orleanist supporters, titular king of France as "Jean III".
-The couple had four children:
+Prince Albert Victor, Duke of Clarence and Avondale ("Eddy") was the eldest son of the future Edward VII and grandson of then reigning Queen Victoria.
+During the spring and summer of 1890, Eddy and Hélène were allowed to become acquainted at the homes of Clarence's sister Princess Louise, Duchess of Fife in Sheen and in Scotland, and, with the encouragement of their mothers, Hélène and Eddy fell in love.
+On 29 August, Clarence obtained permission to meet alone with his grandmother at Balmoral Castle in Scotland, and brought Hélène with him.
+Marriage to a Catholic would have entailed constitutional forfeiture of Eddy's claim to the British throne, pursuant to the Act of Settlement, but Hélène offered to become an Anglican.
+When Queen Victoria expressed surprise at Hélène's offer, Hélène wept and insisted that her willingness to do so was for the sake of love.
+This included her expectation that Hélène's father would not consent to his daughter's change of faith.
+Hélène's father refused to countenance the marriage, was adamant she could not convert and informed the Queen of his decision.
+He granted permission, nonetheless, for Hélène to personally beseech Pope Leo XIII for a dispensation to marry Clarence, but the Pope confirmed her father's verdict and the courtship ended.
+Clarence never got over his feelings for Hélène and their relationship is commemorated at his tomb at Windsor Castle by a bead wreath with the single word "HELENE" written upon it.
+Queen Victoria wrote to her grandson recommending another of her grandchildren, Princess Margaret of Prussia, as an alternative, but nothing came of that suggestion, and Clarence told his grandmother that his love for another cousin, Alix of Hesse (a match for which the Queen had long hoped) had gone unrequited.
+An engagement to Princess Mary of Teck was later arranged, but Clarence died before their wedding could take place.
+Although acknowledging his parents' desires for a French alliance in his diary, the future Tsar Nicholas II of Russia (a first cousin of Clarence) never pursued their choice, Hélène, as he was already in love with the aforementioned Alix of Hesse and secured their permission to marry her in 1894.
+In 1892, while travelling in Egypt with her brother Philippe, Hélène met Ernst Gunther, Duke of Schleswig-Holstein, who decided that he would marry her, to the fury of his sister, the German Empress Augusta Victoria.
+German diplomatic pressure put an end to Ernst Gunther's hopes, which were probably fruitless in any event as Hélène showed no interest in his advances.
+In the meantime, he met his future wife, Countess Sophie Chotek, and never considered Hélène again.
+Marriage and children
+
+On 25 June 1895, at the Church of St. Raphael in Kingston upon Thames, Hélène married Prince Emanuele Filiberto of Savoy, 2nd Duke of Aosta (1869–1931).
+The wedding was attended by Crown Prince Victor Emmanuel of Italy, the Prince and Princess of Wales and others of the British royal family.
+The couple had two sons:
 
 
-Princess Isabelle died in Larache, Morocco, on 21 April 1962 at age 82.
+Widowed in 1931, Princess Hélène was married for a second time in 1936 to Colonel Otto Campini.
+Avocations
+
+In 1892 Hélène travelled with her brother Philippe to Egypt and Palestine, the first of many trips outside of Europe.
+After the breakdown of both her health and her marriage, Hélène began frequent trips to Africa which lasted up to ten months at a time.
+In 1913-1914 Hélène undertook a round-the-world trip which she recorded in another travel book.
+War-time nurse
+
+When the Italo-Turkish War broke out, Hélène trained as a nurse and went aboard the hospital ship Memfi, where she cared for wounded soldiers and those suffering from disease.
+During World War I, Hélène became the head of the Italian Red Cross nurses and spent much of her time on or near the front lines.
+For her service, Hélène was awarded the Italian Silver Medal for bravery, the Romanian Regina Maria Cross, the French Croix de Guerre, and the Insignia of a Dame Grand Cross of the Order of the British Empire.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -123,39 +159,9 @@ Princess Isabelle died in Larache, Morocco, on 21 April 1962 at age 82.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -170,6 +176,23 @@ Princess Isabelle died in Larache, Morocco, on 21 April 1962 at age 82.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -187,6 +210,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -254,29 +292,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -285,6 +315,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -297,6 +335,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -305,17 +345,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -343,6 +385,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -358,169 +484,180 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0c39a209-9b16-4f14-a51c-d7745ff68bf3)
- Call ID: 0c39a209-9b16-4f14-a51c-d7745ff68bf3
+  AssignClass (8ea1b69c-6769-41be-ab0a-38e6fbbeafeb)
+ Call ID: 8ea1b69c-6769-41be-ab0a-38e6fbbeafeb
   Args:
-    source: Isabelle_of_Orléans
-    type: :Person
-  AssignClass (a891baf6-efcc-43f7-b18f-222dc1e4a425)
- Call ID: a891baf6-efcc-43f7-b18f-222dc1e4a425
-  Args:
+    source: Hélène_of_Orléans
     type: :Woman
-    source: Isabelle_of_Orléans
-  AddLiteral (69282e04-d9d3-419c-9cd7-fb4824942686)
- Call ID: 69282e04-d9d3-419c-9cd7-fb4824942686
+  AssignClass (c243f0f7-11d1-42d6-8166-344b5f60490a)
+ Call ID: c243f0f7-11d1-42d6-8166-344b5f60490a
   Args:
-    source: Isabelle_of_Orléans
-    literal_value: Isabelle Marie Laure Mercédès Ferdinande
-    relation: :knownAs
+    source: Hélène_of_Orléans
+    type: :Person
+  AddLiteral (9bb820b0-1263-46b8-94f3-c2577f647ee9)
+ Call ID: 9bb820b0-1263-46b8-94f3-c2577f647ee9
+  Args:
+    relation: :alsoKnownAs
+    source: Hélène_of_Orléans
+    literal_value: Princesse Hélène Louise Henriette d'Orléans
     literal_type: xsd:string
-  AddLiteral (cfda3b9d-30a1-4ac9-9a96-a27a0218b213)
- Call ID: cfda3b9d-30a1-4ac9-9a96-a27a0218b213
+  AddLiteral (57381176-aa07-4975-9b9a-27c338b1b8c2)
+ Call ID: 57381176-aa07-4975-9b9a-27c338b1b8c2
   Args:
-    literal_value: 1878
-    source: Isabelle_of_Orléans
+    source: Hélène_of_Orléans
+    literal_value: 1871
     literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (f7ecfeae-c963-44d5-b830-c9e19f28f8fc)
- Call ID: f7ecfeae-c963-44d5-b830-c9e19f28f8fc
+  AddLiteral (fadae377-55a2-4817-a322-c9ddfa7fac68)
+ Call ID: fadae377-55a2-4817-a322-c9ddfa7fac68
   Args:
     relation: :hasDeathYear
+    source: Hélène_of_Orléans
+    literal_value: 1951
     literal_type: xsd:integer
-    source: Isabelle_of_Orléans
-    literal_value: 1962
-  AssignClass (8cf3301f-bfd3-480a-8374-fc5dcd05d2e1)
- Call ID: 8cf3301f-bfd3-480a-8374-fc5dcd05d2e1
+  AssignClass (38b637c1-bd6d-42a8-9c03-11b9eef8f83f)
+ Call ID: 38b637c1-bd6d-42a8-9c03-11b9eef8f83f
   Args:
-    type: :Person
     source: Philippe_Count_of_Paris
-  AssignClass (76080e55-36fc-41f0-aa91-a406f9f39356)
- Call ID: 76080e55-36fc-41f0-aa91-a406f9f39356
-  Args:
     type: :Man
-    source: Philippe_Count_of_Paris
-  AssignClass (024a5a9d-17ea-4286-a0e6-9151e31e33f9)
- Call ID: 024a5a9d-17ea-4286-a0e6-9151e31e33f9
+  AssignClass (e99d6dc6-2edb-4389-8d4f-95366a7eab14)
+ Call ID: e99d6dc6-2edb-4389-8d4f-95366a7eab14
   Args:
+    source: Philippe_Count_of_Paris
     type: :Person
-    source: Maria_Isabel_of_Spain
-  AssignClass (97b19acd-1b25-4361-b3d6-dac7fefd558a)
- Call ID: 97b19acd-1b25-4361-b3d6-dac7fefd558a
+  AssignClass (34dc00d8-c69f-4314-b189-2636500415f0)
+ Call ID: 34dc00d8-c69f-4314-b189-2636500415f0
+  Args:
+    source: Philippe_Count_of_Paris
+    type: :Ancestor
+  AssignClass (09e49725-c146-4251-b853-ba70f1173e29)
+ Call ID: 09e49725-c146-4251-b853-ba70f1173e29
   Args:
     source: Maria_Isabel_of_Spain
     type: :Woman
-  AddTriple (416081b5-97d7-4fd6-a64e-d572149467be)
- Call ID: 416081b5-97d7-4fd6-a64e-d572149467be
+  AssignClass (212d28a0-2c1f-4c72-9c19-7bf85554a824)
+ Call ID: 212d28a0-2c1f-4c72-9c19-7bf85554a824
   Args:
-    source: Isabelle_of_Orléans
-    target: Philippe_Count_of_Paris
-    relation: :hasFather
-  AddTriple (99cf4e1b-3e2c-4cf4-9d45-55fd29a738f5)
- Call ID: 99cf4e1b-3e2c-4cf4-9d45-55fd29a738f5
-  Args:
-    target: Maria_Isabel_of_Spain
-    source: Isabelle_of_Orléans
-    relation: :hasMother
-  AssignClass (484477e5-1441-49b0-b0a5-cb3cea06c83f)
- Call ID: 484477e5-1441-49b0-b0a5-cb3cea06c83f
-  Args:
+    source: Maria_Isabel_of_Spain
     type: :Person
-    source: Jean_Duke_of_Guise
-  AssignClass (381f6b67-4abd-4e4d-8913-ebb167df65db)
- Call ID: 381f6b67-4abd-4e4d-8913-ebb167df65db
+  AssignClass (f405c375-e980-4845-8322-b3290e897411)
+ Call ID: f405c375-e980-4845-8322-b3290e897411
   Args:
-    source: Jean_Duke_of_Guise
+    source: Maria_Isabel_of_Spain
+    type: :Ancestor
+  AddTriple (7d7069dd-8c6c-476e-8be2-03776876f839)
+ Call ID: 7d7069dd-8c6c-476e-8be2-03776876f839
+  Args:
+    source: Hélène_of_Orléans
+    relation: :hasFather
+    target: Philippe_Count_of_Paris
+  AddTriple (9896e6cc-e34f-4dd9-b8d6-eb7667090972)
+ Call ID: 9896e6cc-e34f-4dd9-b8d6-eb7667090972
+  Args:
+    relation: :hasMother
+    target: Maria_Isabel_of_Spain
+    source: Hélène_of_Orléans
+  AssignClass (619b24f4-5a84-4bcc-aac8-2ba47bcd9b57)
+ Call ID: 619b24f4-5a84-4bcc-aac8-2ba47bcd9b57
+  Args:
+    source: Amélie_of_Orléans
+    type: :Woman
+  AssignClass (5389b16a-9b00-408a-a060-9dbe0d417e0e)
+ Call ID: 5389b16a-9b00-408a-a060-9dbe0d417e0e
+  Args:
+    source: Amélie_of_Orléans
+    type: :Person
+  AddTriple (632d0446-cdbc-4d9e-a812-96f5825d4b7b)
+ Call ID: 632d0446-cdbc-4d9e-a812-96f5825d4b7b
+  Args:
+    relation: :isSisterOf
+    target: Hélène_of_Orléans
+    source: Amélie_of_Orléans
+  AssignClass (8cc9ddf4-6c83-4286-a463-d57178de4c9a)
+ Call ID: 8cc9ddf4-6c83-4286-a463-d57178de4c9a
+  Args:
+    source: Philippe_Duke_of_Orléans
     type: :Man
-  AddTriple (cfd02a92-94fe-4d9b-ab22-b0dd2baa6520)
- Call ID: cfd02a92-94fe-4d9b-ab22-b0dd2baa6520
+  AssignClass (2a741feb-3a9c-49d4-9409-dabc7335fdbb)
+ Call ID: 2a741feb-3a9c-49d4-9409-dabc7335fdbb
   Args:
-    target: Jean_Duke_of_Guise
+    source: Philippe_Duke_of_Orléans
+    type: :Person
+  AddTriple (d77ebeec-ca7a-4cb9-b7ba-1fc1097e2191)
+ Call ID: d77ebeec-ca7a-4cb9-b7ba-1fc1097e2191
+  Args:
+    source: Philippe_Duke_of_Orléans
+    relation: :isBrotherOf
+    target: Hélène_of_Orléans
+  AssignClass (4ae011c3-39f7-41d7-8c62-4be2cf4bfd76)
+ Call ID: 4ae011c3-39f7-41d7-8c62-4be2cf4bfd76
+  Args:
     source: Isabelle_of_Orléans
-    relation: :hasRelation
-  AddLiteral (ea0cb55d-e794-42e2-8ee4-af53862d90c8)
- Call ID: ea0cb55d-e794-42e2-8ee4-af53862d90c8
+    type: :Woman
+  AssignClass (75005b13-eca4-48a1-8e48-c8216ed8373a)
+ Call ID: 75005b13-eca4-48a1-8e48-c8216ed8373a
   Args:
+    source: Isabelle_of_Orléans
+    type: :Person
+  AddTriple (eaaa815f-146e-4bfb-bd79-d6aec291b2f3)
+ Call ID: eaaa815f-146e-4bfb-bd79-d6aec291b2f3
+  Args:
+    target: Hélène_of_Orléans
+    relation: :isSisterOf
+    source: Isabelle_of_Orléans
+  AssignClass (ca1249fe-ebc7-4baa-87fd-ed69ca7ed622)
+ Call ID: ca1249fe-ebc7-4baa-87fd-ed69ca7ed622
+  Args:
+    source: Emanuele_Filiberto_of_Savoy
+    type: :Man
+  AssignClass (ee7c67b8-d44f-45dd-9e5d-2a442b0b8774)
+ Call ID: ee7c67b8-d44f-45dd-9e5d-2a442b0b8774
+  Args:
+    source: Emanuele_Filiberto_of_Savoy
+    type: :Person
+  AddLiteral (2db6d8ef-4ed3-4992-bede-96a8d8fe3c91)
+ Call ID: 2db6d8ef-4ed3-4992-bede-96a8d8fe3c91
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 1895
+    source: Hélène_of_Orléans
+  AddTriple (0b7c93e0-eda4-4b8f-93ed-7100c72ea6a2)
+ Call ID: 0b7c93e0-eda4-4b8f-93ed-7100c72ea6a2
+  Args:
+    relation: :hasRelation
+    target: Emanuele_Filiberto_of_Savoy
+    source: Hélène_of_Orléans
+  AssignClass (75a2aac9-df6a-45e8-9614-d852097f402b)
+ Call ID: 75a2aac9-df6a-45e8-9614-d852097f402b
+  Args:
+    source: Otto_Campini
+    type: :Man
+  AssignClass (df4cc20d-6a67-4693-ac4e-c7e8b4da1d5f)
+ Call ID: df4cc20d-6a67-4693-ac4e-c7e8b4da1d5f
+  Args:
+    source: Otto_Campini
+    type: :Person
+  AddLiteral (122f2075-4c7c-4863-a4b5-8083e2487f77)
+ Call ID: 122f2075-4c7c-4863-a4b5-8083e2487f77
+  Args:
+    source: Hélène_of_Orléans
+    literal_value: 1936
     literal_type: xsd:integer
     relation: :hasMarriageYear
-    literal_value: 1899
-    source: Isabelle_of_Orléans
-  AssignClass (5a2aa7f8-fbbe-47ab-a8ef-876a40b3aead)
- Call ID: 5a2aa7f8-fbbe-47ab-a8ef-876a40b3aead
+  AddTriple (0e105aec-c2a1-43fd-9680-49eea313f1de)
+ Call ID: 0e105aec-c2a1-43fd-9680-49eea313f1de
   Args:
-    type: :Person
-    source: Robert_Duke_of_Chartres
-  AssignClass (058c87f7-ee5f-4c24-b0e7-3771a6ac7227)
- Call ID: 058c87f7-ee5f-4c24-b0e7-3771a6ac7227
+    source: Hélène_of_Orléans
+    relation: :hasRelation
+    target: Otto_Campini
+  Finish (bde6d563-c1ae-4fda-a899-7252a51e2f6c)
+ Call ID: bde6d563-c1ae-4fda-a899-7252a51e2f6c
   Args:
-    type: :Man
-    source: Robert_Duke_of_Chartres
-  AssignClass (4ab9f3c6-b582-468a-ab19-647082df7c81)
- Call ID: 4ab9f3c6-b582-468a-ab19-647082df7c81
-  Args:
-    source: Françoise_dOrléans
-    type: :Person
-  AssignClass (72ee5e97-b104-4bfa-9e4a-c8f642987a6a)
- Call ID: 72ee5e97-b104-4bfa-9e4a-c8f642987a6a
-  Args:
-    type: :Woman
-    source: Françoise_dOrléans
-  AddTriple (57c33063-b8a1-43c7-a518-66ee74f53d7d)
- Call ID: 57c33063-b8a1-43c7-a518-66ee74f53d7d
-  Args:
-    relation: :hasFather
-    source: Jean_Duke_of_Guise
-    target: Robert_Duke_of_Chartres
-  AddTriple (f460efdb-f652-4563-b604-7c2e2c7d8703)
- Call ID: f460efdb-f652-4563-b604-7c2e2c7d8703
-  Args:
-    relation: :hasMother
-    target: Françoise_dOrléans
-    source: Jean_Duke_of_Guise
-  AssignClass (8bc679a9-a2dd-40be-9820-0f2a7a1b0fe6)
- Call ID: 8bc679a9-a2dd-40be-9820-0f2a7a1b0fe6
-  Args:
-    source: Philippe_of_Orléans_Duke_of_Orléans
-    type: :Person
-  AssignClass (ff110eb7-bea5-45d1-b29e-6e42e5b8748b)
- Call ID: ff110eb7-bea5-45d1-b29e-6e42e5b8748b
-  Args:
-    type: :Man
-    source: Philippe_of_Orléans_Duke_of_Orléans
-  AddTriple (bed2fc57-87a3-4cad-a58f-3a5142ade56d)
- Call ID: bed2fc57-87a3-4cad-a58f-3a5142ade56d
-  Args:
-    relation: :hasBrother
-    source: Isabelle_of_Orléans
-    target: Philippe_of_Orléans_Duke_of_Orléans
-  AssignClass (d367113f-6e2b-40f7-aeb5-4d5e04ea94a0)
- Call ID: d367113f-6e2b-40f7-aeb5-4d5e04ea94a0
-  Args:
-    source: Albert_I_of_Belgium
-    type: :Person
-  AssignClass (db1b4aa7-5aeb-4e87-8cee-e70c148379bf)
- Call ID: db1b4aa7-5aeb-4e87-8cee-e70c148379bf
-  Args:
-    type: :Man
-    source: Albert_I_of_Belgium
-  AssignClass (e6afc844-6cbb-497b-9053-32be293d4966)
- Call ID: e6afc844-6cbb-497b-9053-32be293d4966
-  Args:
-    source: Leopold_II
-    type: :Person
-  AssignClass (a32b6f3a-00ca-43a8-9f9e-8244305b36ec)
- Call ID: a32b6f3a-00ca-43a8-9f9e-8244305b36ec
-  Args:
-    source: Leopold_II
-    type: :Man
-  AddTriple (1ffbe3dc-518d-4474-87a6-520fe56cd5ce)
- Call ID: 1ffbe3dc-518d-4474-87a6-520fe56cd5ce
-  Args:
-    source: Leopold_II
-    target: Albert_I_of_Belgium
-    relation: :hasFather
-  Finish (3a39f92d-4629-4a92-8633-909a51ccae65)
- Call ID: 3a39f92d-4629-4a92-8633-909a51ccae65
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -641,43 +778,43 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+  data:Am%C3%A9lie_of_Orl%C3%A9ans a :Person,
+          :Woman ;
+      :isSisterOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans .
+
   data:Isabelle_of_Orl%C3%A9ans a :Person,
           :Woman ;
-      :hasBirthYear 1878 ;
-      :hasBrother data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
-      :hasDeathYear 1962 ;
+      :isSisterOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans .
+
+  data:Philippe_Duke_of_Orl%C3%A9ans a :Man,
+          :Person ;
+      :isBrotherOf data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans .
+
+  data:Emanuele_Filiberto_of_Savoy a :Man,
+          :Person .
+
+  data:Maria_Isabel_of_Spain a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Otto_Campini a :Man,
+          :Person .
+
+  data:Philippe_Count_of_Paris a :Ancestor,
+          :Man,
+          :Person .
+
+  data:H%C3%A9l%C3%A8ne_of_Orl%C3%A9ans a :Person,
+          :Woman ;
+      :alsoKnownAs "Princesse Hélène Louise Henriette d'Orléans"^^xsd:string ;
+      :hasBirthYear 1871 ;
+      :hasDeathYear 1951 ;
       :hasFather data:Philippe_Count_of_Paris ;
-      :hasMarriageYear 1899 ;
+      :hasMarriageYear 1895,
+          1936 ;
       :hasMother data:Maria_Isabel_of_Spain ;
-      :hasRelation data:Jean_Duke_of_Guise ;
-      :knownAs "Isabelle Marie Laure Mercédès Ferdinande"^^xsd:string .
-
-  data:Leopold_II a :Man,
-          :Person ;
-      :hasFather data:Albert_I_of_Belgium .
-
-  data:Albert_I_of_Belgium a :Man,
-          :Person .
-
-  data:Fran%C3%A7oise_dOrl%C3%A9ans a :Person,
-          :Woman .
-
-  data:Jean_Duke_of_Guise a :Man,
-          :Person ;
-      :hasFather data:Robert_Duke_of_Chartres ;
-      :hasMother data:Fran%C3%A7oise_dOrl%C3%A9ans .
-
-  data:Maria_Isabel_of_Spain a :Person,
-          :Woman .
-
-  data:Philippe_Count_of_Paris a :Man,
-          :Person .
-
-  data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans a :Man,
-          :Person .
-
-  data:Robert_Duke_of_Chartres a :Man,
-          :Person .
+      :hasRelation data:Emanuele_Filiberto_of_Savoy,
+          data:Otto_Campini .
 
 
 
@@ -689,268 +826,9 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (b7b7c42f-fbad-4a08-904a-00e7293ed3b1)
- Call ID: b7b7c42f-fbad-4a08-904a-00e7293ed3b1
+  ValidateShacl (5e08547d-d54b-4dfb-8ddf-40d8520731a0)
+ Call ID: 5e08547d-d54b-4dfb-8ddf-40d8520731a0
   Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:15
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Albert_I_of_Belgium, set as the father of Leopold_II, does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Albert_I_of_Belgium, :Man)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Robert_Duke_of_Chartres, set as the father of Jean_Duke_of_Guise, does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Robert_Duke_of_Chartres, :Man)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Françoise_dOrléans, set as the mother of Jean_Duke_of_Guise, does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Françoise_dOrléans, :Woman)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Albert_I_of_Belgium, set as the father of Leopold_II, lacks the required classification.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Albert_I_of_Belgium, :Man)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Robert_Duke_of_Chartres, set as the father of Jean_Duke_of_Guise, lacks the required classification.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Robert_Duke_of_Chartres, :Man)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Philippe_Count_of_Paris, set as the father of Isabelle_of_Orléans, does not belong to the required classes :Ancestor or :Man.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philippe_Count_of_Paris, :Man)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Françoise_dOrléans, set as the mother of Jean_Duke_of_Guise, lacks the required classification.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Françoise_dOrléans, :Woman)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Maria_Isabel_of_Spain, set as the mother of Isabelle_of_Orléans, does not belong to the required classes :Ancestor or :Woman.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Isabel_of_Spain, :Woman)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Albert_I_of_Belgium, set as the father of Leopold_II, is missing the mandatory :Man class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Albert_I_of_Belgium, :Man)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Robert_Duke_of_Chartres, set as the father of Jean_Duke_of_Guise, is missing the mandatory :Man class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Robert_Duke_of_Chartres, :Man)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Philippe_Count_of_Paris, set as the father of Isabelle_of_Orléans, is missing the mandatory :Man class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philippe_Count_of_Paris, :Man)
-
-
-  Violation [12]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Françoise_dOrléans, set as the mother of Jean_Duke_of_Guise, is missing the mandatory :Woman class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Françoise_dOrléans, :Woman)
-
-
-  Violation [13]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Maria_Isabel_of_Spain, set as the mother of Isabelle_of_Orléans, is missing the mandatory :Woman class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Isabel_of_Spain, :Woman)
-
-
-  Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Philippe_Count_of_Paris, set as the father of Isabelle_of_Orléans, lacks the necessary class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philippe_Count_of_Paris, :Man)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Maria_Isabel_of_Spain, set as the mother of Isabelle_of_Orléans, lacks the necessary class assignment.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Maria_Isabel_of_Spain, :Woman)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (937df3a3-5c6c-4b20-bd3f-e7986820420d)
- Call ID: 937df3a3-5c6c-4b20-bd3f-e7986820420d
-  Args:
-    type: :Ancestor
-    source: Philippe_Count_of_Paris
-  AssignClass (9b623760-2154-4bc6-bd01-6ffd292976d1)
- Call ID: 9b623760-2154-4bc6-bd01-6ffd292976d1
-  Args:
-    source: Maria_Isabel_of_Spain
-    type: :Ancestor
-  AssignClass (ab1ecd46-2b3a-4fe3-9534-64b4212c5402)
- Call ID: ab1ecd46-2b3a-4fe3-9534-64b4212c5402
-  Args:
-    type: :Ancestor
-    source: Robert_Duke_of_Chartres
-  AssignClass (1c4613a1-30fe-463c-9749-4bd75d4aa5f2)
- Call ID: 1c4613a1-30fe-463c-9749-4bd75d4aa5f2
-  Args:
-    source: Françoise_dOrléans
-    type: :Ancestor
-  RemoveTriple (ee145fb3-d444-4b27-8150-baf4974cb5de)
- Call ID: ee145fb3-d444-4b27-8150-baf4974cb5de
-  Args:
-    source: Leopold_II
-    target: Albert_I_of_Belgium
-    relation: :hasFather
-  AddTriple (a11eb18a-70ee-4652-bb61-81c8452e6e3d)
- Call ID: a11eb18a-70ee-4652-bb61-81c8452e6e3d
-  Args:
-    relation: :hasFather
-    target: Leopold_II
-    source: Albert_I_of_Belgium
-  RemoveTriple (af92d48d-7d56-4954-a470-22627bd972c1)
- Call ID: af92d48d-7d56-4954-a470-22627bd972c1
-  Args:
-    source: Albert_I_of_Belgium
-    target: Leopold_II
-    relation: :hasFather
-  AddTriple (56a3997b-b24e-4c00-b800-e8251c2bef5f)
- Call ID: 56a3997b-b24e-4c00-b800-e8251c2bef5f
-  Args:
-    relation: :isUncleOf
-    target: Albert_I_of_Belgium
-    source: Leopold_II
-  ValidateShacl (ca0e1ba2-8a25-49f9-a6ea-887cbc3092ff)
- Call ID: ca0e1ba2-8a25-49f9-a6ea-887cbc3092ff
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Isabelle_of_Orl%C3%A9ans a :Person,
-          :Woman ;
-      :hasBirthYear 1878 ;
-      :hasBrother data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans ;
-      :hasDeathYear 1962 ;
-      :hasFather data:Philippe_Count_of_Paris ;
-      :hasMarriageYear 1899 ;
-      :hasMother data:Maria_Isabel_of_Spain ;
-      :hasRelation data:Jean_Duke_of_Guise ;
-      :knownAs "Isabelle Marie Laure Mercédès Ferdinande"^^xsd:string .
-
-  data:Leopold_II a :Man,
-          :Person ;
-      :isUncleOf data:Albert_I_of_Belgium .
-
-  data:Albert_I_of_Belgium a :Man,
-          :Person .
-
-  data:Fran%C3%A7oise_dOrl%C3%A9ans a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Jean_Duke_of_Guise a :Man,
-          :Person ;
-      :hasFather data:Robert_Duke_of_Chartres ;
-      :hasMother data:Fran%C3%A7oise_dOrl%C3%A9ans .
-
-  data:Maria_Isabel_of_Spain a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Philippe_Count_of_Paris a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Philippe_of_Orl%C3%A9ans_Duke_of_Orl%C3%A9ans a :Man,
-          :Person .
-
-  data:Robert_Duke_of_Chartres a :Ancestor,
-          :Man,
-          :Person .
-
-
 
 ================================= Tool Message =================================
 
@@ -960,6 +838,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (c6d3a4ca-394d-4d3d-b80a-7281b1b0b937)
- Call ID: c6d3a4ca-394d-4d3d-b80a-7281b1b0b937
+  Finish (9f730714-9440-4cad-84b3-fa17a053a09c)
+ Call ID: 9f730714-9440-4cad-84b3-fa17a053a09c
   Args:

@@ -1,0 +1,105 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Archduke_Leopold_Franz_of_Austria a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Archduke Leopold Franz of Austria"^^xsd:string ;
+    data:posIndicesFull "646:679"^^xsd:string ;
+    data:wdtLink wdt:Q3198365 ;
+    :alsoKnownAs "Leopold Franz Erzherzog von Österreich"^^xsd:string ;
+    :hasBrother data:Archduke_Leopold_Franz_of_Austria ;
+    :hasChild data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :hasRelation data:Archduke_Leopold_Franz_of_Austria,
+        data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany,
+        data:Laetitia_dArenberg ;
+    :hasSex data:male ;
+    :hasSon data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isAncestorOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isBloodrelationOf data:Archduke_Leopold_Franz_of_Austria ;
+    :isBrotherOf data:Archduke_Leopold_Franz_of_Austria ;
+    :isFatherOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isParentOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isSiblingOf data:Archduke_Leopold_Franz_of_Austria ;
+    :isUncleOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany .
+
+data:Laetitia_dArenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Laetitia d'Arenberg"^^xsd:string ;
+    data:posIndicesFull "516:535"^^xsd:string ;
+    data:wdtLink wdt:Q6408488 ;
+    :alsoKnownAs "Laetitia Marie Madelaine Susanne Valentine de Belzunce-d'Arenberg"^^xsd:string ;
+    :hasChild data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :hasRelation data:Archduke_Leopold_Franz_of_Austria,
+        data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany,
+        data:Laetitia_dArenberg ;
+    :hasSex data:female ;
+    :hasSister data:Laetitia_dArenberg ;
+    :hasSon data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isAncestorOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isAuntOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isBloodrelationOf data:Laetitia_dArenberg ;
+    :isMotherOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isParentOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isSiblingOf data:Laetitia_dArenberg ;
+    :isSisterOf data:Laetitia_dArenberg .
+
+data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany a :Man,
+        :Person ;
+    rdfs:label "Archduke Sigismund, Hereditary Grand Duke of Tuscany"^^xsd:string ;
+    data:posIndicesFull "0:41"^^xsd:string ;
+    data:posIndicesPart "1060:1069"^^xsd:string,
+        "283:291"^^xsd:string,
+        "315:323"^^xsd:string,
+        "389:394"^^xsd:string,
+        "404:411"^^xsd:string,
+        "451:456"^^xsd:string,
+        "457:461"^^xsd:string,
+        "465:472"^^xsd:string,
+        "732:737"^^xsd:string,
+        "764:773"^^xsd:string,
+        "924:933"^^xsd:string ;
+    data:wdtLink wdt:Q2019524 ;
+    :alsoKnownAs "Archduke Sigismund Otto of Austria"^^xsd:string,
+        "Archduke Sigismund Otto, Grand Duke of Tuscany"^^xsd:string,
+        "Archduke Sigismund of Austria"^^xsd:string,
+        "Archduke Sigismund, Grand Duke of Tuscany"^^xsd:string,
+        "Sigismund Otto Erzherzog von Österreich"^^xsd:string,
+        "Sigismund Otto of Austria"^^xsd:string,
+        "Sigismund of Austria"^^xsd:string ;
+    :hasAncestor data:Archduke_Leopold_Franz_of_Austria,
+        data:Laetitia_dArenberg ;
+    :hasBrother data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :hasFather data:Archduke_Leopold_Franz_of_Austria ;
+    :hasMother data:Laetitia_dArenberg ;
+    :hasParent data:Archduke_Leopold_Franz_of_Austria,
+        data:Laetitia_dArenberg ;
+    :hasRelation data:Archduke_Leopold_Franz_of_Austria,
+        data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany,
+        data:Laetitia_dArenberg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isBrotherOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isChildOf data:Archduke_Leopold_Franz_of_Austria,
+        data:Laetitia_dArenberg ;
+    :isSiblingOf data:Archduke_Sigismund-_Hereditary_Grand_Duke_of_Tuscany ;
+    :isSonOf data:Archduke_Leopold_Franz_of_Austria,
+        data:Laetitia_dArenberg .
+

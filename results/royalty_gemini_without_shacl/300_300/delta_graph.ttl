@@ -2,50 +2,47 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Amalia_Maria_Brigid_Womack_von_Preussen a :Person,
-        :Woman ;
-    :hasBirthYear "2020"^^xsd:string ;
-    :hasFather data:Philip_Womack ;
-    :hasMother data:Tatiana_von_Preussen .
-
-data:Arthur_Frederick_Richard_Womack_von_Preussen a :Man,
+data:Aimone_son_of_Amedeo a :Man,
         :Person ;
-    :hasBirthYear "2015"^^xsd:string ;
-    :hasFather data:Philip_Womack ;
-    :hasMother data:Tatiana_von_Preussen .
+    :hasFather data:Amedeo_of_Savoy-Aosta .
 
-data:Xenia_Alexandra_Selena_Womack_von_Preussen a :Person,
-        :Woman ;
-    :hasBirthYear "2020"^^xsd:string ;
-    :hasFather data:Philip_Womack ;
-    :hasMother data:Tatiana_von_Preussen .
-
-data:Alexandra_Blahova a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Lady_Brigid_Guinness a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Prince_Andreas_of_Prussia a :Ancestor,
-        :Man,
+data:Emanuele_Filiberto_Prince_of_Venice a :Man,
         :Person ;
-    :hasFather data:Prince_Frederick_of_Prussia ;
-    :hasMother data:Lady_Brigid_Guinness .
+    :hasFather data:Vittorio_Emanuele_Prince_of_Naples .
 
-data:Prince_Frederick_of_Prussia a :Ancestor,
-        :Man,
+data:Maria_Gabriella_of_Savoy a :Person,
+        :Woman ;
+    :hasFather data:Umberto_II .
+
+data:Aimone_Duke_of_Aosta a :Man,
         :Person .
 
-data:Tatiana_von_Preussen a :Person,
-        :Woman ;
-    :hasBirthYear "1980"^^xsd:string ;
-    :hasFather data:Prince_Andreas_of_Prussia ;
-    :hasMarriageYear "2014"^^xsd:string ;
-    :hasMother data:Alexandra_Blahova ;
-    :hasRelation data:Philip_Womack .
+data:Amedeo_of_Savoy-Aosta a :Man,
+        :Person ;
+    :hasDeathYear 2021 ;
+    :hasFather data:Aimone_Duke_of_Aosta ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Irene_of_Greece_and_Denmark ;
+    :hasRelation data:Princess_Claude_of_Orleans .
 
-data:Philip_Womack a :Man,
+data:Henri_comte_de_Paris a :Man,
+        :Person .
+
+data:Irene_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Isabelle_of_Orleans-Braganza a :Person,
+        :Woman .
+
+data:Princess_Claude_of_Orleans a :Person,
+        :Woman ;
+    :hasFather data:Henri_comte_de_Paris ;
+    :hasMother data:Isabelle_of_Orleans-Braganza .
+
+data:Vittorio_Emanuele_Prince_of_Naples a :Man,
+        :Person ;
+    :hasFather data:Umberto_II .
+
+data:Umberto_II a :Man,
         :Person .
 

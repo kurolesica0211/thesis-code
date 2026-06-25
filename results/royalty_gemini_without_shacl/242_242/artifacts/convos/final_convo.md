@@ -69,99 +69,27 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Crown PrinceThe Crown Princess
+Princess Marie Alexandra of Baden (Marie Alexandra Thyra Victoria Louise Carola Hilda; 1 August 1902 – 29 January 1944) was a Hessian princess by marriage.
+Family
 
+She was the only daughter and elder child of Prince Maximilian of Baden (1867–1929) and Princess Marie Louise of Hanover and Cumberland.
+Her paternal grandparents were Prince Wilhelm of Baden (1829–97) and Princess Maria Maximilianovna of Leuchtenberg (1841–1914), a daughter of Maximilian, Duke of Leuchtenberg (1817–52) and Grand Duchess Maria Nikolaevna (1819–1876).
+Princess Marie-Louise of Hanover (1879–1948) was a daughter of Ernest Augustus, Crown Prince of Hanover, claimant of the annexed Kingdom of Hanover.
+Marriage
 
-Princess Tomislav
+On 17 September 1924, she married her fourth cousin Prince Wolfgang of Hesse (1896–1989).
+Death
 
-
-Princess Alexander
-
-
-Princess Elizabeth
-
-
-Filip Karađorđević (Serbian Cyrillic: Филип Карађорђевић; born 15 January 1982), sometimes referred to in English as Prince Philip Karageorgevitch and unofficially titled Philip, Hereditary Prince of Serbia and Yugoslavia (Serbian Cyrillic: Филип, принц наследник од Србије и Југославије, Filip, princ naslednik od Srbije i Jugoslavije), is a Serbian business manager, a member of the House of Karađorđević, and heir apparent to Crown Prince Alexander.
-In 2020, he moved to his homeland Serbia and took a more active role in public life, often travelling across Serbia, Kosovo, Montenegro, and Bosnia.
-In 2022, he became the hereditary prince, following his elder brother's renunciation.
-Early life and education
-
-Prince Philip was born on 15 January 1982 in Vienna, Virginia, as the second son and second child of the last Crown Prince of the former Kingdom of Yugoslavia, Alexander, and his first wife, Princess Maria da Gloria of Orléans-Braganza, the eldest daughter of Pedro Gastão of Orléans-Braganza, a claimant to the defunct Brazilian throne, and Princess Maria de la Esperanza of Bourbon-Two Sicilies (1914–2005), a maternal aunt of King Juan Carlos I of Spain.
-Philip is the fraternal twin of Alexander.
-His godparents are Queen Sofía of Spain, King Constantine II of Greece (both first cousins of his paternal grandmother), and Princess Anne, Duchess of Calabria (first cousin of his mother).
-Philip lived in Virginia until 1984.
-Philip's parents divorced in 1985.
-After the divorce, his father remarried Katherine Clairy Batis later that year, while his mother remarried Ignacio, Duke of Segorbe, member of the House of Medinaceli, later that year.
-Philip has two younger half-sisters through his mother, Sol María de la Blanca Medina y Orléans-Braganza, 54th Countess of Ampurias (b. 1986) and Ana Luna Medina y Orléans-Braganza, 17th Countess of Ricla (b. 1988).
-Together with his twin brother, Philip was educated in London and Canterbury.
-In June 2000, Philip completed sixth form at The King's School, Canterbury, obtaining three A levels and ten GCSEs.
-In 1991, Philip, with his father and brothers, briefly visited Belgrade, Yugoslavia.
-In February 2001, the Parliament of FR Yugoslavia passed legislation conferring citizenship on members of the Karađorđević family, making Philip eligible for Yugoslav citizenship.
-In July 2001, his father and step-mother moved to Belgrade, Serbia, FR Yugoslavia.
-After the dissolution of FR Yugoslavia (later renamed Serbia and Montenegro), Philip obtained citizenship of Serbia.
-Personal life
-
-After completing his studies, Philip started to work for financial institutions in the City of London.
-Most recently, Philip has been working with a renowned global asset manager in London.
-Philip lived and worked in London until 2020, when he relocated to Serbia and started to work remotely following the COVID-19 pandemic in Europe.
-Philip completed the 2010 Athens Marathon, the 2011 Belgrade Half-marathon, and the 2014 London Marathon.
-Marriage and children
-
-On 24 July 2017, his parents announced his engagement to Danica Marinković.
-Philip married Danica Marinković on 7 October 2017 at the Cathedral Church of Saint Michael the Archangel in Belgrade, Serbia.
-Their witnesses were Victoria, the Crown Princess of Sweden and his brother Peter.
-His two godmothers, Queen Sofía of Spain and Princess Anne, Duchess of Calabria, attended the wedding.
-It was the first royal wedding in Serbia since the 1922 wedding of his great-grandfather King Alexander I and Princess Maria of Romania.
-Several members of royal families also attended, including Prince Guillaume of Luxembourg with his wife, Prince Amyn Aga Khan, Princess Jeet Nabha Khemka, and guests of the Karađorđević Royal Family and the Marinković family, including the president of the National Assembly of Serbia Maja Gojković among others.
-Princess Danica gave birth to their son, Prince Stefan, in Belgrade on 25 February 2018 at 10:30 am.
-Stefan is the first male child born to the royal family on Serbian soil for 90 years, the last such birth being that of Prince Tomislav in Belgrade in 1928.
-On 5 November 2023 in Belgrade, Philip and Danica welcomed their second child, a daughter.
-They named her Princess Marija.
-Public life
-
-Prince Philip attended the reburial of his grandparents, King Peter II and Queen Alexandra, great-grandmother Queen Maria, and granduncle Prince Andrew in the Royal Family Mausoleum at Oplenac on 26 May 2013.
-The Serbian Royal Regalia were placed over King Peter's coffin, having Philip placed the Royal Orb and Sceptre near the Karađorđević Crown.
-On 17 July 2015, Prince Philip and his brothers attended their father's 70th birthday celebration in Royal Compound, Belgrade.
-Prince in Serbia (2020–2022)
-Philip used to live in London with his family, a wife and a son, but as of July 2020, they relocated and currently live in Belgrade, Serbia.
-With his relocation to Serbia, Philip fulfilled the promise he gave to Serbian Patriarch Irinej to do so.
-In January 2020, Prince Philip voiced support for the clerical protests in Montenegro.
-On 22 November 2020, Philip and his wife, Princess Danica, were the only members of the House of Karađorđević who attended the funeral service of Patriarch Irinej at the Church of Saint Sava.
-Prince Philip and his wife were also the only members of the House of Karađorđević who attended the enthronement of newly elected Patriarch Porfirije  on 19 February 2021 in St. Michael's Cathedral in Belgrade.
-In April 2021, before Easter, Philip visited Kosovo to support the Serbian community there.
-On 13 September 2021, Philip and his wife, Princess Danica, attended Holy Liturgy led by Patriarch Porfirije in the Jasenovac Monastery in Croatia and visited the Jasenovac concentration camp and Stone Flower sculpture, becoming the first members of the House of Karađorđević who visited this memorial site from World War II.
-In December 2021, Philip voiced support for the environmental protests in Serbia.
-In February 2022, Philip and his wife travelled to Han Pijesak, Bosnia and Herzegovina.
-Devastated by time, the summer house will be rebuilt and renovated as Prince Philip has agreed with local authorities and the Government of Republika Srpska to fund it.
-Furthermore, on 10 February, Prince Philip and his wife met with Milorad Dodik, a Serb member of the Presidency of Bosnia and Herzegovina.
-On 21 March 2022, Philip and his wife signed the People's initiative to ban the exploitation of lithium and boron in Serbia.
-Hereditary Prince (2022–present)
-
-On 27 April 2022, his elder brother Prince Peter renounced the title of a hereditary prince – for himself and his descendants.
-Philip became the Hereditary Prince of Serbia and Yugoslavia, heir apparent to his father, Alexander.
-The ceremony took place at Casa de Pilatos in Seville, Spain, in the presence of his mother, Princess Maria da Gloria, his stepfather Duke Ignacio, his wife Princess Danica, his half-sister Countess Sol, Ljubodrag Grujić, a member of the Crown Council, Chancellor of the Orders and the Herald of the House of Karađorđević and Nikola Stanković, Chief of Staff of the Crown Prince.
-His father, Crown Prince Alexander, did not attend the event.
-The Crown Prince was dissatisfied with Peter's renunciation.
-A grandson of King Alexander I of Yugoslavia, Prince Michael, supported the act.
-On 5 May 2022, Philip and his wife attended mass at the Cathedral of Saint-Louis des Invalides in Paris in honour of Napoleon I and soldiers of the Grande Armée who died for France, by invitation from his cousin Jean-Christophe, Prince Napoléon, a descendant of Napoleon, and his wife, Princess Olympia.
-Afterwards, they travelled to Mileševa Monastery in southwest Serbia and Pljevlja, Montenegro, attending the Holy Liturgy in Mileševa led by Patriarch Porfirije and Metropolitan Joanikije II of Montenegro and the Littoral.
-In the first week of June 2022, Philip and his family travelled to Kosovo, visiting Gazimestan, Gračanica Monastery, Prizren (Church of the Holy Saviour and Monastery of the Holy Archangels), Priština (St. Nicholas Church), and Visoki Dečani Monastery.
-Furthermore, Prince Philip gave a copy of Prince Peter's renunciation paper to the library of Visoki Dečani Monastery.
-On 11 September 2022, Philip and his wife attended a march from Loznica to the top of Gučevo mountain in honour of soldiers fallen in the Battle of the Drina in September 1914.
-In May 2023, Philip and his wife attended the Serbia Against Violence protests in Belgrade, following the Belgrade school shooting and a mass murder near Mladenovac and Smederevo.
-Arms
-
-Ancestry
-
-Philip is a member of the House of Karađorđević.
-Through his father, Philip descends from kings Nicholas I of Montenegro, Ferdinand I of Romania, Christian IX of Denmark, and Alexander of Greece, and furthermore from emperors Nicholas I of Russia and Frederick III of the Germans and Queen Victoria of the United Kingdom of Great Britain and Ireland.
-Through his mother, Philip descends from the Emperor Pedro II of Brazil, and kings Louis Philippe I of France and Francis I of the Two Sicilies, and furthermore from Francis I, Holy Roman Emperor and his Empress Maria Theresa, and king Charles III of Spain.
+Princess Marie Alexandra was killed in an attack by the U.S. Army Air Forces during an air-raid on Frankfurt am Main on 29–30 January 1944 during World War II.
+She and seven other women, who were aid workers, were killed when the cellar, in which they had taken refuge, collapsed under the weight of the building, rendering Marie Alexandra's body barely recognisable.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -177,39 +105,9 @@ Through his mother, Philip descends from the Emperor Pedro II of Brazil, and kin
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -224,6 +122,23 @@ Through his mother, Philip descends from the Emperor Pedro II of Brazil, and kin
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -241,6 +156,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -308,29 +238,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -339,6 +261,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -351,6 +281,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -359,17 +291,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -397,6 +331,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -412,115 +430,218 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (bd5fab73-4766-46c2-95c2-8ebaa367805a)
- Call ID: bd5fab73-4766-46c2-95c2-8ebaa367805a
+  AssignClass (194c514e-be8f-4b88-b2a1-2ce584123e98)
+ Call ID: 194c514e-be8f-4b88-b2a1-2ce584123e98
   Args:
-    source: FilipKarađorđević
-    type: :Man
-  AssignClass (ef3e3e2e-ccc0-426f-a718-54b51fa58aa2)
- Call ID: ef3e3e2e-ccc0-426f-a718-54b51fa58aa2
+    source: Princess_Marie_Alexandra_of_Baden
+    type: :Woman
+  AssignClass (14b28081-d15b-4ec7-8158-41b8d55fb4f8)
+ Call ID: 14b28081-d15b-4ec7-8158-41b8d55fb4f8
   Args:
-    source: AlexanderKarađorđević
     type: :Man
-  AssignClass (634e7bf2-c4b7-4a61-8252-851d10dd8119)
- Call ID: 634e7bf2-c4b7-4a61-8252-851d10dd8119
+    source: Prince_Maximilian_of_Baden
+  AssignClass (adfe43b3-f163-4977-a3e7-d344d49931dd)
+ Call ID: adfe43b3-f163-4977-a3e7-d344d49931dd
   Args:
     type: :Woman
-    source: MariaDaGloria
-  AssignClass (f77f9d08-52f5-4ac1-8311-17e54b644696)
- Call ID: f77f9d08-52f5-4ac1-8311-17e54b644696
+    source: Princess_Marie_Louise_of_Hanover_and_Cumberland
+  AssignClass (439787c3-e2ec-476e-a5fc-231e966b4e93)
+ Call ID: 439787c3-e2ec-476e-a5fc-231e966b4e93
   Args:
-    source: DanicaMarinković
-    type: :Woman
-  AssignClass (e750136b-e33f-4b69-902f-349a61d93ff8)
- Call ID: e750136b-e33f-4b69-902f-349a61d93ff8
-  Args:
-    source: StefanKarađorđević
+    source: Prince_Wilhelm_of_Baden
     type: :Man
-  AssignClass (2592e4ed-cd54-4af3-b66c-f3843705ae1a)
- Call ID: 2592e4ed-cd54-4af3-b66c-f3843705ae1a
+  AssignClass (274d4068-a530-4e7a-a9e8-ab1db2a0a115)
+ Call ID: 274d4068-a530-4e7a-a9e8-ab1db2a0a115
+  Args:
+    source: Princess_Maria_Maximilianovna_of_Leuchtenberg
+    type: :Woman
+  AssignClass (20908605-fe0a-451c-a1a8-13265b8c7df5)
+ Call ID: 20908605-fe0a-451c-a1a8-13265b8c7df5
+  Args:
+    source: Maximilian_Duke_of_Leuchtenberg
+    type: :Man
+  AssignClass (050bc219-56de-496a-a421-282def3357c1)
+ Call ID: 050bc219-56de-496a-a421-282def3357c1
   Args:
     type: :Woman
-    source: MarijaKarađorđević
-  AssignClass (4a6c47dc-2907-4e50-b87b-506306a2d7a5)
- Call ID: 4a6c47dc-2907-4e50-b87b-506306a2d7a5
+    source: Grand_Duchess_Maria_Nikolaevna
+  AssignClass (225f596e-c21a-463f-b12e-3a8d4408105b)
+ Call ID: 225f596e-c21a-463f-b12e-3a8d4408105b
   Args:
-    source: PeterKarađorđević
+    source: Ernest_Augustus_Crown_Prince_of_Hanover
     type: :Man
-  AddLiteral (48ac5852-1b0f-4a9a-8f75-7a897fbd9803)
- Call ID: 48ac5852-1b0f-4a9a-8f75-7a897fbd9803
+  AssignClass (4cc7641c-6ece-4473-b768-124c69b3252c)
+ Call ID: 4cc7641c-6ece-4473-b768-124c69b3252c
   Args:
+    type: :Man
+    source: Prince_Wolfgang_of_Hesse
+  AddLiteral (129628ca-5085-463a-9a6d-6bca6fde1cb4)
+ Call ID: 129628ca-5085-463a-9a6d-6bca6fde1cb4
+  Args:
+    source: Princess_Marie_Alexandra_of_Baden
     literal_type: xsd:integer
-    literal_value: 1982
-    source: FilipKarađorđević
     relation: :hasBirthYear
-  AddTriple (b5762f80-9ab4-4c5f-bde1-aaeccc9b8840)
- Call ID: b5762f80-9ab4-4c5f-bde1-aaeccc9b8840
+    literal_value: 1902
+  AddLiteral (1db62370-123d-4cbb-8095-a2ae60afb7f8)
+ Call ID: 1db62370-123d-4cbb-8095-a2ae60afb7f8
   Args:
-    relation: :hasFather
-    target: AlexanderKarađorđević
-    source: FilipKarađorđević
-  AddTriple (e328cfb3-c51d-49af-ac34-49d952d961b0)
- Call ID: e328cfb3-c51d-49af-ac34-49d952d961b0
-  Args:
-    relation: :hasMother
-    target: MariaDaGloria
-    source: FilipKarađorđević
-  AddTriple (fb17d0e2-096c-4408-8dcd-e43c05530bd9)
- Call ID: fb17d0e2-096c-4408-8dcd-e43c05530bd9
-  Args:
-    target: PeterKarađorđević
-    source: FilipKarađorđević
-    relation: :hasBrother
-  AddTriple (9e160128-6d80-4df9-9121-ec0dd8050da3)
- Call ID: 9e160128-6d80-4df9-9121-ec0dd8050da3
-  Args:
-    relation: :hasFather
-    source: PeterKarađorđević
-    target: AlexanderKarađorđević
-  AddTriple (b1044648-96d7-4db8-b303-c7e47131bed2)
- Call ID: b1044648-96d7-4db8-b303-c7e47131bed2
-  Args:
-    target: MariaDaGloria
-    source: PeterKarađorđević
-    relation: :hasMother
-  AddTriple (7a997012-7a67-4ba0-9b0c-db624e95b73b)
- Call ID: 7a997012-7a67-4ba0-9b0c-db624e95b73b
-  Args:
-    source: StefanKarađorđević
-    target: FilipKarađorđević
-    relation: :hasFather
-  AddTriple (ddde9f95-8d88-41d6-9540-545f60fcb356)
- Call ID: ddde9f95-8d88-41d6-9540-545f60fcb356
-  Args:
-    relation: :hasMother
-    source: StefanKarađorđević
-    target: DanicaMarinković
-  AddTriple (f684f39a-bde2-4a87-9ba6-dc8d401e6bf7)
- Call ID: f684f39a-bde2-4a87-9ba6-dc8d401e6bf7
-  Args:
-    relation: :hasFather
-    source: MarijaKarađorđević
-    target: FilipKarađorđević
-  AddTriple (8fd1d04e-337a-431e-8f66-62846277d4b5)
- Call ID: 8fd1d04e-337a-431e-8f66-62846277d4b5
-  Args:
-    target: DanicaMarinković
-    source: MarijaKarađorđević
-    relation: :hasMother
-  AddLiteral (0330f10e-5668-4144-b631-e6276dc002b3)
- Call ID: 0330f10e-5668-4144-b631-e6276dc002b3
-  Args:
-    literal_value: 2017
+    source: Princess_Marie_Alexandra_of_Baden
     literal_type: xsd:integer
-    source: FilipKarađorđević
-    relation: :hasMarriageYear
-  AddTriple (0910f90e-b1e5-4442-b7aa-3fdfa24ed3b5)
- Call ID: 0910f90e-b1e5-4442-b7aa-3fdfa24ed3b5
+    relation: :hasDeathYear
+    literal_value: 1944
+  AddLiteral (4483cdb1-ccaa-40e6-a746-c64704cb4f71)
+ Call ID: 4483cdb1-ccaa-40e6-a746-c64704cb4f71
   Args:
-    source: FilipKarađorđević
-    target: DanicaMarinković
+    literal_value: 1867
+    relation: :hasBirthYear
+    source: Prince_Maximilian_of_Baden
+    literal_type: xsd:integer
+  AddLiteral (51a5eb02-8c13-4ae5-b32f-674d5fafe676)
+ Call ID: 51a5eb02-8c13-4ae5-b32f-674d5fafe676
+  Args:
+    source: Prince_Maximilian_of_Baden
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    literal_value: 1929
+  AddLiteral (1928c715-95e4-4d1a-a3d8-d02eabcea57f)
+ Call ID: 1928c715-95e4-4d1a-a3d8-d02eabcea57f
+  Args:
+    literal_value: 1879
+    relation: :hasBirthYear
+    source: Princess_Marie_Louise_of_Hanover_and_Cumberland
+    literal_type: xsd:integer
+  AddLiteral (b4f8a50e-3160-43c4-af27-3ab28afb15f4)
+ Call ID: b4f8a50e-3160-43c4-af27-3ab28afb15f4
+  Args:
+    relation: :hasDeathYear
+    source: Princess_Marie_Louise_of_Hanover_and_Cumberland
+    literal_type: xsd:integer
+    literal_value: 1948
+  AddLiteral (92a5389d-b93d-4f2a-a5d2-d36bdbec5a0d)
+ Call ID: 92a5389d-b93d-4f2a-a5d2-d36bdbec5a0d
+  Args:
+    relation: :hasBirthYear
+    source: Prince_Wilhelm_of_Baden
+    literal_type: xsd:integer
+    literal_value: 1829
+  AddLiteral (5d79a137-8dc5-4da6-9354-85aec910d094)
+ Call ID: 5d79a137-8dc5-4da6-9354-85aec910d094
+  Args:
+    literal_value: 1897
+    literal_type: xsd:integer
+    source: Prince_Wilhelm_of_Baden
+    relation: :hasDeathYear
+  AddLiteral (6770b2b8-8404-4fdb-894b-31f2848ddcf3)
+ Call ID: 6770b2b8-8404-4fdb-894b-31f2848ddcf3
+  Args:
+    literal_value: 1841
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Princess_Maria_Maximilianovna_of_Leuchtenberg
+  AddLiteral (2f17d641-fe0b-420a-bc1d-94f6ca129a5f)
+ Call ID: 2f17d641-fe0b-420a-bc1d-94f6ca129a5f
+  Args:
+    literal_value: 1914
+    relation: :hasDeathYear
+    source: Princess_Maria_Maximilianovna_of_Leuchtenberg
+    literal_type: xsd:integer
+  AddLiteral (3ca69b82-bf90-478b-aadd-273474d503ed)
+ Call ID: 3ca69b82-bf90-478b-aadd-273474d503ed
+  Args:
+    literal_value: 1817
+    relation: :hasBirthYear
+    source: Maximilian_Duke_of_Leuchtenberg
+    literal_type: xsd:integer
+  AddLiteral (65375dc6-28b3-403f-ba47-cd30c1da82a8)
+ Call ID: 65375dc6-28b3-403f-ba47-cd30c1da82a8
+  Args:
+    literal_value: 1852
+    source: Maximilian_Duke_of_Leuchtenberg
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddLiteral (6d2407f7-be0b-4e9a-baf0-b337dca9c231)
+ Call ID: 6d2407f7-be0b-4e9a-baf0-b337dca9c231
+  Args:
+    relation: :hasBirthYear
+    source: Grand_Duchess_Maria_Nikolaevna
+    literal_type: xsd:integer
+    literal_value: 1819
+  AddLiteral (aa337dd7-9694-4131-bbc6-bebe6b111e41)
+ Call ID: aa337dd7-9694-4131-bbc6-bebe6b111e41
+  Args:
+    literal_value: 1876
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    source: Grand_Duchess_Maria_Nikolaevna
+  AddLiteral (c8840e94-5d5d-4947-85e1-c5b1ab62d3ee)
+ Call ID: c8840e94-5d5d-4947-85e1-c5b1ab62d3ee
+  Args:
+    literal_value: 1896
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Prince_Wolfgang_of_Hesse
+  AddLiteral (1e94b14a-0ae7-4531-8232-d51dd53642f1)
+ Call ID: 1e94b14a-0ae7-4531-8232-d51dd53642f1
+  Args:
+    literal_value: 1989
+    relation: :hasDeathYear
+    source: Prince_Wolfgang_of_Hesse
+    literal_type: xsd:integer
+  AddLiteral (ffc431d8-df07-4ab7-ad1d-df3435f1847f)
+ Call ID: ffc431d8-df07-4ab7-ad1d-df3435f1847f
+  Args:
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    source: Princess_Marie_Alexandra_of_Baden
+    literal_value: 1924
+  AddTriple (d04783d0-8576-46b8-9c51-014c3ce57745)
+ Call ID: d04783d0-8576-46b8-9c51-014c3ce57745
+  Args:
+    target: Prince_Maximilian_of_Baden
+    source: Princess_Marie_Alexandra_of_Baden
+    relation: :hasFather
+  AddTriple (df5c43e4-13f4-43d2-89c1-c6aa2132eaad)
+ Call ID: df5c43e4-13f4-43d2-89c1-c6aa2132eaad
+  Args:
+    target: Princess_Marie_Louise_of_Hanover_and_Cumberland
+    source: Princess_Marie_Alexandra_of_Baden
+    relation: :hasMother
+  AddTriple (b1a44268-4e6d-4f49-ab21-136b02cd6f4f)
+ Call ID: b1a44268-4e6d-4f49-ab21-136b02cd6f4f
+  Args:
+    target: Prince_Wilhelm_of_Baden
+    relation: :hasFather
+    source: Princess_Marie_Alexandra_of_Baden
+  AddTriple (8032044f-3b89-42c0-a309-b64ed74eddb7)
+ Call ID: 8032044f-3b89-42c0-a309-b64ed74eddb7
+  Args:
+    target: Princess_Maria_Maximilianovna_of_Leuchtenberg
+    source: Princess_Marie_Alexandra_of_Baden
+    relation: :hasMother
+  AddTriple (bfb3282b-a3bc-4f6e-9d17-936b0f486910)
+ Call ID: bfb3282b-a3bc-4f6e-9d17-936b0f486910
+  Args:
+    source: Princess_Maria_Maximilianovna_of_Leuchtenberg
+    relation: :hasFather
+    target: Maximilian_Duke_of_Leuchtenberg
+  AddTriple (a3f846b6-4430-4b9d-8256-488e0fca329c)
+ Call ID: a3f846b6-4430-4b9d-8256-488e0fca329c
+  Args:
+    target: Grand_Duchess_Maria_Nikolaevna
+    relation: :hasMother
+    source: Princess_Maria_Maximilianovna_of_Leuchtenberg
+  AddTriple (2d68688f-168f-4d9f-8cfd-6d7c091b76bd)
+ Call ID: 2d68688f-168f-4d9f-8cfd-6d7c091b76bd
+  Args:
+    target: Ernest_Augustus_Crown_Prince_of_Hanover
+    source: Princess_Marie_Louise_of_Hanover_and_Cumberland
+    relation: :hasFather
+  AddTriple (1601ba79-673d-40f4-9700-2bbe07f1c945)
+ Call ID: 1601ba79-673d-40f4-9700-2bbe07f1c945
+  Args:
     relation: :hasRelation
-  Finish (6d075e08-afbc-419f-9215-a1ac6f8a5cfd)
- Call ID: 6d075e08-afbc-419f-9215-a1ac6f8a5cfd
+    source: Princess_Marie_Alexandra_of_Baden
+    target: Prince_Wolfgang_of_Hesse
+  Finish (f2f34ba1-7733-433f-b5d8-58769b804932)
+ Call ID: f2f34ba1-7733-433f-b5d8-58769b804932
   Args:

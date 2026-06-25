@@ -2,30 +2,68 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_Beatrice_of_Bourbon-Two_Sicilies a :Person,
-        :Woman ;
-    :isSisterOf data:Prince_Carlo_of_Bourbon-Two_Sicilies .
+data:KirbyWilliamPatterson a :Man,
+        :Person ;
+    :hasBirthYear 1907 ;
+    :hasDeathYear 1984 ;
+    :hasSex data:Male .
 
-data:Princess_Maria_Carolina_of_Bourbon-Two_Sicilies a :Person,
-        :Woman ;
-    :hasBirthYear 2003 ;
-    :hasFather data:Prince_Carlo_of_Bourbon-Two_Sicilies ;
-    :hasMother data:Camilla_Crociani ;
-    :hasSister data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies .
+data:PrinceWilhelmVictorOfPrussia a :Man,
+        :Person ;
+    :hasBirthYear 1919 ;
+    :hasDeathYear 1989 ;
+    :hasFather data:PrinceAdalbertOfPrussia ;
+    :hasMarriageYear 1944 ;
+    :hasMother data:PrincessAdelheidOfSaxeMeiningen ;
+    :hasRelation data:MarieAntoinetteCountessOfHoyosStichsenstein ;
+    :hasSex data:Male ;
+    :isSiblingOf data:PrincessViktoriaMarina .
 
-data:Camilla_Crociani a :Ancestor,
+data:CountessWilhelmineVonWuthenauHohenthurm a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasBirthYear 1895 ;
+    :hasDeathYear 1983 ;
+    :hasSex data:Female .
 
-data:Prince_Ferdinand_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Man,
-        :Person .
-
-data:Princess_Maria_Chiara_of_Bourbon-Two_Sicilies a :Person,
-        :Woman .
-
-data:Prince_Carlo_of_Bourbon-Two_Sicilies a :Ancestor,
+data:FriedrichCountOfHoyosStichsenstein a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Prince_Ferdinand_of_Bourbon-Two_Sicilies .
+    :hasBirthYear 1876 ;
+    :hasDeathYear 1951 ;
+    :hasSex data:Male .
+
+data:MarieAntoinetteCountessOfHoyosStichsenstein a :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:FriedrichCountOfHoyosStichsenstein ;
+    :hasMother data:CountessWilhelmineVonWuthenauHohenthurm ;
+    :hasSex data:Female .
+
+data:PrincessViktoriaMarina a :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasDeathYear 1981 ;
+    :hasFather data:PrinceAdalbertOfPrussia ;
+    :hasMother data:PrincessAdelheidOfSaxeMeiningen ;
+    :hasSex data:Female .
+
+data:PrinceAdalbertOfPrussia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1884 ;
+    :hasDeathYear 1948 ;
+    :hasSex data:Male .
+
+data:PrincessAdelheidOfSaxeMeiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1971 ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

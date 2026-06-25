@@ -2,19 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Fernando_Sanz_y_Martinez_de_Arizala a :Man,
-        :Person ;
-    :hasBirthYear 1881 ;
-    :hasDeathYear 1925 ;
-    :hasFather data:Alfonso_XII_of_Spain ;
-    :hasMother data:Elena_Sanz ;
-    :knownAs "Fernand"^^xsd:string .
+data:Princess_Irene_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasBirthYear 1939 ;
+    :hasFather data:Prince_Bernhard ;
+    :hasMarriageYear 1964 ;
+    :hasMother data:Queen_Juliana_of_the_Netherlands ;
+    :hasRelation data:Prince_Carlos_Hugo_of_Bourbon-Parma ;
+    :isSisterOf data:Princess_Beatrix_of_the_Netherlands,
+        data:Princess_Christina,
+        data:Princess_Margriet .
 
-data:Alfonso_XII_of_Spain a :Ancestor,
-        :Man,
-        :Person .
-
-data:Elena_Sanz a :Ancestor,
+data:Armgard_of_Sierstorpff-Cramm a :Ancestor,
         :Person,
         :Woman .
+
+data:Jorge_Guillermo a :Man,
+        :Person .
+
+data:Prince_Bernhard a :Ancestor,
+        :Man,
+        :Person ;
+    :hasMother data:Armgard_of_Sierstorpff-Cramm .
+
+data:Prince_Carlos_Hugo_of_Bourbon-Parma a :Man,
+        :Person ;
+    :hasFather data:Xavier_Duke_of_Parma .
+
+data:Princess_Beatrix_of_the_Netherlands a :Person,
+        :Woman .
+
+data:Princess_Christina a :Person,
+        :Woman ;
+    :hasRelation data:Jorge_Guillermo .
+
+data:Princess_Margriet a :Person,
+        :Woman .
+
+data:Queen_Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Xavier_Duke_of_Parma a :Ancestor,
+        :Man,
+        :Person .
 

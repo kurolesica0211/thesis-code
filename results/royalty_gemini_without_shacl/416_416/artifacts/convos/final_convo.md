@@ -69,59 +69,29 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Philippe, Duke of Orléans (French: Louis Philippe Robert; 6 February 1869 – 28 March 1926) was the Orléanist pretender to the throne of France from 1894 to 1926 as Philippe VIII.
-Early life
-
-Philippe was born at York House, Twickenham, near London, the son of Philippe, Count of Paris, by his wife (and first cousin), Princess Isabelle of Orléans.
-He was baptised with the names Louis-Philippe-Robert, and was called Philippe.
-His family lived in the United Kingdom from the abdication and banishment of his great-grandfather Louis Philippe I, King of the French, in 1848, and returned to France in 1871 following the fall of the Second French Empire.
-However, they again took refuge in England in 1886, when the French Republic exiled them following the wedding in Paris of Philippe's sister Amélie of Orléans to Crown Prince Carlos of Portugal.
-Returning therefore to France in 1871 with his parents, Philippe was educated at home at the Château d'Eu and at the Collège Stanislas de Paris.
-In 1880 Philippe's father granted him the title Duc d'Orléans.
-Military career
-
-Philippe began his military education at the École spéciale militaire de Saint-Cyr.
-In October 1889, Philippe went to Switzerland to complete a course in military theory.
-While there he fathered a son, Philippe Debien, by Nina, an actress working in the casino at Lausanne.
-Drawn to explore the "unknown", Philippe asked Prince George, Duke of Cambridge, to send him to a military post in the Himalayas.
-While in the East, he undertook a hunting and exploratory expedition in Nepal with his cousin Prince Henri of Orléans, went mountain-climbing in Tibet, and visited Afghanistan, Ceylon, and the Persian Gulf, before being posted back to Britain.
-Prior to his imprisonment in France, Philippe had been unofficially engaged to his first cousin Princess Marguerite of Orléans, but the engagement was cancelled when Philippe's involvement with the Australian opera singer Nellie Melba was revealed.
-Armstrong filed for divorce from Melba on the grounds of adultery, naming Philippe as co-respondent; the case was eventually dropped.
-In September 1890, Philippe accompanied his father on a two-month trip to the United States and Canada.
-On 12 November 1890, while in Philadelphia, Philippe joined the Pennsylvania Commandery of the Military Order of the Loyal Legion of the United States (MOLLUS) - a military society composed of officers who had served the Union in the American Civil War and their descendants - by right of his father's service in the Union Army.
-In December 1890, Philippe applied unsuccessfully to serve in the Russian Army.
-In March 1894, Philippe went to Egypt and Palestine with his sister Hélène, Duchess of Aosta.
-Claimant to the defunct throne
-
-Upon the death of his father on 8 September 1894, Philippe became the Orléanist claimant to the defunct French throne.
-He was known to monarchists as Philippe VIII.
-In October 1895, Philippe was named as co-respondent in the divorce case of Woolston v. Woolston.
-Unlike his great grandfather, Louis Philippe I, Philippe claimed grand mastership of the Order of the Holy Spirit as intrinsic to his dynastic claim to the throne, and sometimes wore the breast star of the order.
-On 5 November 1896, in Vienna, Philippe married Archduchess Maria Dorothea of Austria (1867–1932), a daughter of Archduke Joseph Karl of Austria, Palatine of Hungary, and granddaughter of Princess Clémentine of Orléans, as well as a niece of Marie Henriette of Austria, Queen Consort of the Belgians.
-While travelling in Geneva in 1898, Philippe narrowly missed being assassinated by Luigi Lucheni, an anarchist, who vowed to kill the next member of a royal family that he saw.
-He explored parts of the northeastern coast of Greenland, Denmark, in 1905 during his Duke of Orléans Arctic Expedition on ship Belgica.
-Philippe continued to reside in the United Kingdom until 1912, when he moved his primary residence to Belgium.
-In 1914, Philippe and his wife Maria Dorothea were legally separated.
-At the outbreak of the First World War, Philippe again tried unsuccessfully to join the French army.
-In 1926, Philippe died of pneumonia at the Palais d'Orléans in Palermo, Sicily, Italy.
-Having no legitimate issue, he was succeeded as pretender to the defunct throne of France by his cousin and brother in law, Jean, Duke of Guise.
-Publications
-
-Philippe wrote a number of works based on his many travels: 
+Prince Hubertus Karl Wilhelm of Prussia (30 September 1909 – 8 April 1950) was the third son of Crown Prince Wilhelm of Germany and Duchess Cecilie of Mecklenburg-Schwerin, and member of the princely House of Hohenzollern.
+One year later he was dismissed from the army by Hitler's Prinzenerlaß, following the death of his elder brother Prince Wilhelm of Prussia, who was wounded in France in May 1940 and later died in a field hospital in Belgium.
+They divorced a little over a year later in early 1943 (the same year she would later give birth to Hubertus' first cousin Ernest Augustus of Hanover's illegitimate son), and on 5 June of that year, he married again to Princess Magdalena Reuss of Köstritz (20 August 1920 – 10 October 2009).
+They had two daughters:
 
 
-He also published a collection of the papers of his father and of the Henri, comte de Chambord:
-Honours
+Prince Hubertus died of appendicitis on 8 April 1950 at Windhoek, South West Africa.
+Ancestry
 
-In popular culture
+References
 
-Duke Philippe of Orleans briefly appears in an urban fantasy novel for children, The Master Key (1901) by L. Frank Baum.
+
+
+
+This article about a member of the German nobility is a stub.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -137,39 +107,9 @@ Duke Philippe of Orleans briefly appears in an urban fantasy novel for children,
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -184,6 +124,23 @@ Duke Philippe of Orleans briefly appears in an urban fantasy novel for children,
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -201,6 +158,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -268,29 +240,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -299,6 +263,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -311,6 +283,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -319,17 +293,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -357,6 +333,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -372,213 +432,109 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (93248aae-c3bb-4ff4-82b8-f3ac26ce740e)
- Call ID: 93248aae-c3bb-4ff4-82b8-f3ac26ce740e
+  AssignClass (85b09b5a-2f83-4646-8248-855e760a1933)
+ Call ID: 85b09b5a-2f83-4646-8248-855e760a1933
+  Args:
+    source: Prince_Hubertus_of_Prussia
+    type: :Man
+  AssignClass (8c0f1767-18e7-42b0-8642-31b83bf4e441)
+ Call ID: 8c0f1767-18e7-42b0-8642-31b83bf4e441
+  Args:
+    source: Prince_Hubertus_of_Prussia
+    type: :Person
+  AddLiteral (d227d608-c159-4209-a834-62c09c5d923e)
+ Call ID: d227d608-c159-4209-a834-62c09c5d923e
+  Args:
+    literal_value: 1909
+    literal_type: xsd:integer
+    source: Prince_Hubertus_of_Prussia
+    relation: :hasBirthYear
+  AddLiteral (6bfed604-a97f-4f5b-81ef-fac21bbefd2b)
+ Call ID: 6bfed604-a97f-4f5b-81ef-fac21bbefd2b
+  Args:
+    relation: :hasDeathYear
+    source: Prince_Hubertus_of_Prussia
+    literal_type: xsd:integer
+    literal_value: 1950
+  AssignClass (97d28ea4-e8cf-4793-93a7-655165be5640)
+ Call ID: 97d28ea4-e8cf-4793-93a7-655165be5640
   Args:
     type: :Man
-    source: Philippe_Duke_of_Orleans
-  AssignClass (9ecb4502-6d17-4633-be4d-02e1d4b05913)
- Call ID: 9ecb4502-6d17-4633-be4d-02e1d4b05913
+    source: Crown_Prince_Wilhelm_of_Germany
+  AssignClass (0b989e40-15ff-40d0-903a-cd9326d4cfbd)
+ Call ID: 0b989e40-15ff-40d0-903a-cd9326d4cfbd
   Args:
     type: :Person
-    source: Philippe_Duke_of_Orleans
-  AddLiteral (aad96a7b-5512-47b6-837f-d1a7f40874a1)
- Call ID: aad96a7b-5512-47b6-837f-d1a7f40874a1
+    source: Crown_Prince_Wilhelm_of_Germany
+  AssignClass (c152dd0e-5424-4c6c-92e9-b49019ffdffc)
+ Call ID: c152dd0e-5424-4c6c-92e9-b49019ffdffc
   Args:
-    literal_value: 1869
-    source: Philippe_Duke_of_Orleans
+    type: :Woman
+    source: Duchess_Cecilie_of_Mecklenburg-Schwerin
+  AssignClass (6d2995be-9a4f-45c9-b51b-77c63a91d964)
+ Call ID: 6d2995be-9a4f-45c9-b51b-77c63a91d964
+  Args:
+    type: :Person
+    source: Duchess_Cecilie_of_Mecklenburg-Schwerin
+  AddTriple (ca9cf489-27c6-442e-9df2-2431f6641fe0)
+ Call ID: ca9cf489-27c6-442e-9df2-2431f6641fe0
+  Args:
+    target: Crown_Prince_Wilhelm_of_Germany
+    relation: :hasFather
+    source: Prince_Hubertus_of_Prussia
+  AddTriple (27c9428b-3b0c-44d4-82c3-6fe5c481870f)
+ Call ID: 27c9428b-3b0c-44d4-82c3-6fe5c481870f
+  Args:
+    target: Duchess_Cecilie_of_Mecklenburg-Schwerin
+    relation: :hasMother
+    source: Prince_Hubertus_of_Prussia
+  AssignClass (cfc3faca-fab7-48e1-9efb-65aeed9a5b03)
+ Call ID: cfc3faca-fab7-48e1-9efb-65aeed9a5b03
+  Args:
+    source: Prince_Wilhelm_of_Prussia
+    type: :Man
+  AssignClass (0784d2f6-9834-4c6a-b122-6da6fedcae35)
+ Call ID: 0784d2f6-9834-4c6a-b122-6da6fedcae35
+  Args:
+    type: :Person
+    source: Prince_Wilhelm_of_Prussia
+  AddTriple (fe6db271-8faa-4334-9602-014a7e73b3a2)
+ Call ID: fe6db271-8faa-4334-9602-014a7e73b3a2
+  Args:
+    target: Prince_Wilhelm_of_Prussia
+    source: Prince_Hubertus_of_Prussia
+    relation: :hasBrother
+  AssignClass (25695215-290f-4b6b-88c5-cfa1f87c3640)
+ Call ID: 25695215-290f-4b6b-88c5-cfa1f87c3640
+  Args:
+    source: Princess_Magdalena_Reuss_of_Köstritz
+    type: :Woman
+  AssignClass (3e1b5017-3aa0-45f8-9e4b-e64dde738e10)
+ Call ID: 3e1b5017-3aa0-45f8-9e4b-e64dde738e10
+  Args:
+    source: Princess_Magdalena_Reuss_of_Köstritz
+    type: :Person
+  AddLiteral (77b87740-e23a-42c9-b1a1-178215028890)
+ Call ID: 77b87740-e23a-42c9-b1a1-178215028890
+  Args:
+    literal_value: 1920
+    source: Princess_Magdalena_Reuss_of_Köstritz
     relation: :hasBirthYear
     literal_type: xsd:integer
-  AddLiteral (605fc61f-bd93-498b-897f-cf913c90ce6e)
- Call ID: 605fc61f-bd93-498b-897f-cf913c90ce6e
+  AddLiteral (3ae8f6ff-e40b-405c-a385-3af526db61bc)
+ Call ID: 3ae8f6ff-e40b-405c-a385-3af526db61bc
   Args:
-    literal_value: 1926
-    source: Philippe_Duke_of_Orleans
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_type: xsd:integer
-  AssignClass (945b2470-8712-47d3-9007-9887ecf79e83)
- Call ID: 945b2470-8712-47d3-9007-9887ecf79e83
-  Args:
-    type: :Man
-    source: Philippe_Count_of_Paris
-  AssignClass (bb68dbde-572d-44a0-969a-2594bbaf44e4)
- Call ID: bb68dbde-572d-44a0-969a-2594bbaf44e4
-  Args:
-    type: :Person
-    source: Philippe_Count_of_Paris
-  AddTriple (10cd3972-c062-472d-9ae7-f66876abe798)
- Call ID: 10cd3972-c062-472d-9ae7-f66876abe798
-  Args:
-    relation: :hasFather
-    source: Philippe_Duke_of_Orleans
-    target: Philippe_Count_of_Paris
-  AssignClass (c92594e5-26d5-4001-8756-3a7f49b3837a)
- Call ID: c92594e5-26d5-4001-8756-3a7f49b3837a
-  Args:
-    type: :Woman
-    source: Isabelle_of_Orleans
-  AssignClass (2d27034f-7167-4b07-a427-4b0a3ab6dd61)
- Call ID: 2d27034f-7167-4b07-a427-4b0a3ab6dd61
-  Args:
-    source: Isabelle_of_Orleans
-    type: :Person
-  AddTriple (5840fbfa-4505-4a13-843f-1ded444d9132)
- Call ID: 5840fbfa-4505-4a13-843f-1ded444d9132
-  Args:
-    target: Isabelle_of_Orleans
-    source: Philippe_Duke_of_Orleans
-    relation: :hasMother
-  AddTriple (7869efea-6d8c-4ded-bc92-101b507526ec)
- Call ID: 7869efea-6d8c-4ded-bc92-101b507526ec
-  Args:
-    target: Louis_Philippe_I
-    relation: :hasFather
-    source: Philippe_Count_of_Paris
-  AssignClass (2efe78da-a295-45db-8849-c5f1eaa57415)
- Call ID: 2efe78da-a295-45db-8849-c5f1eaa57415
-  Args:
-    source: Louis_Philippe_I
-    type: :Man
-  AssignClass (7c27dfef-6060-42af-be51-25c793b5df60)
- Call ID: 7c27dfef-6060-42af-be51-25c793b5df60
-  Args:
-    type: :Person
-    source: Louis_Philippe_I
-  AssignClass (45b2e9fc-f6b3-4d54-bc00-6ab0fe464e70)
- Call ID: 45b2e9fc-f6b3-4d54-bc00-6ab0fe464e70
-  Args:
-    type: :Woman
-    source: Amelie_of_Orleans
-  AssignClass (70b5d6bd-c1c5-4985-918e-8d72f0e5f91f)
- Call ID: 70b5d6bd-c1c5-4985-918e-8d72f0e5f91f
-  Args:
-    source: Amelie_of_Orleans
-    type: :Person
-  AddTriple (00eb4e19-946f-426e-b257-3c3a807115b7)
- Call ID: 00eb4e19-946f-426e-b257-3c3a807115b7
-  Args:
-    target: Amelie_of_Orleans
-    relation: :hasSister
-    source: Philippe_Duke_of_Orleans
-  AssignClass (63d3309a-855a-4882-81e7-d82a92765095)
- Call ID: 63d3309a-855a-4882-81e7-d82a92765095
-  Args:
-    type: :Man
-    source: Philippe_Debien
-  AssignClass (08e361f3-5fef-4d06-a3ef-2727053c7dc8)
- Call ID: 08e361f3-5fef-4d06-a3ef-2727053c7dc8
-  Args:
-    source: Philippe_Debien
-    type: :Person
-  AddTriple (ad1fcb26-0f27-4fcf-8b37-22536b35b289)
- Call ID: ad1fcb26-0f27-4fcf-8b37-22536b35b289
-  Args:
-    target: Philippe_Debien
-    source: Philippe_Duke_of_Orleans
-    relation: :hasSon
-  AssignClass (1a9499c6-019a-456a-8d12-2babd454f549)
- Call ID: 1a9499c6-019a-456a-8d12-2babd454f549
-  Args:
-    type: :Woman
-    source: Nina
-  AssignClass (e0a8a3cb-59c1-4641-a873-f8dedc187463)
- Call ID: e0a8a3cb-59c1-4641-a873-f8dedc187463
-  Args:
-    type: :Person
-    source: Nina
-  AddTriple (3e6deb1c-c2e1-495d-8d65-307da45f1a94)
- Call ID: 3e6deb1c-c2e1-495d-8d65-307da45f1a94
-  Args:
-    source: Philippe_Debien
-    relation: :hasMother
-    target: Nina
-  AssignClass (91537f3b-a318-4c7b-b140-10ce2610ef9b)
- Call ID: 91537f3b-a318-4c7b-b140-10ce2610ef9b
-  Args:
-    source: Helene_Duchess_of_Aosta
-    type: :Woman
-  AssignClass (b226f598-86d1-4385-a306-1b50a2fe940e)
- Call ID: b226f598-86d1-4385-a306-1b50a2fe940e
-  Args:
-    source: Helene_Duchess_of_Aosta
-    type: :Person
-  AddTriple (83f7159b-5591-4cd1-bc3d-255a5cc2fdb6)
- Call ID: 83f7159b-5591-4cd1-bc3d-255a5cc2fdb6
-  Args:
-    target: Helene_Duchess_of_Aosta
-    relation: :hasSister
-    source: Philippe_Duke_of_Orleans
-  AssignClass (9323b1dd-0643-4935-a73c-b2c904bfd659)
- Call ID: 9323b1dd-0643-4935-a73c-b2c904bfd659
-  Args:
-    source: Maria_Dorothea_of_Austria
-    type: :Woman
-  AssignClass (7a1b64c7-3f99-4109-8a58-9416b6055aec)
- Call ID: 7a1b64c7-3f99-4109-8a58-9416b6055aec
-  Args:
-    source: Maria_Dorothea_of_Austria
-    type: :Person
-  AddLiteral (302a270d-795f-49a2-a3f3-60e5af78bdee)
- Call ID: 302a270d-795f-49a2-a3f3-60e5af78bdee
+    source: Princess_Magdalena_Reuss_of_Köstritz
+    literal_value: 2009
+  AddLiteral (a8a9fb2a-c033-48a3-b54d-533f8155f946)
+ Call ID: a8a9fb2a-c033-48a3-b54d-533f8155f946
   Args:
     literal_type: xsd:integer
+    source: Prince_Hubertus_of_Prussia
     relation: :hasMarriageYear
-    source: Philippe_Duke_of_Orleans
-    literal_value: 1896
-  AddTriple (7a148b25-5436-49eb-9484-21ecbc6fb7fd)
- Call ID: 7a148b25-5436-49eb-9484-21ecbc6fb7fd
-  Args:
-    relation: :hasRelation
-    source: Philippe_Duke_of_Orleans
-    target: Maria_Dorothea_of_Austria
-  AssignClass (7d8ccfa2-0b3f-4bf4-b7f6-2b5009c233d7)
- Call ID: 7d8ccfa2-0b3f-4bf4-b7f6-2b5009c233d7
-  Args:
-    type: :Man
-    source: Joseph_Karl_of_Austria
-  AssignClass (43a48dca-9969-4cef-9b99-8ec176fc2f87)
- Call ID: 43a48dca-9969-4cef-9b99-8ec176fc2f87
-  Args:
-    source: Joseph_Karl_of_Austria
-    type: :Person
-  AddTriple (8bb56aa4-4121-4c71-93c9-77aa182bf630)
- Call ID: 8bb56aa4-4121-4c71-93c9-77aa182bf630
-  Args:
-    target: Joseph_Karl_of_Austria
-    source: Maria_Dorothea_of_Austria
-    relation: :hasFather
-  AssignClass (4a9117da-04bf-4c70-999f-0c2bfe546664)
- Call ID: 4a9117da-04bf-4c70-999f-0c2bfe546664
-  Args:
-    source: Clementine_of_Orleans
-    type: :Woman
-  AssignClass (716a9aac-0c79-49bc-a5a6-44e8a20e11e9)
- Call ID: 716a9aac-0c79-49bc-a5a6-44e8a20e11e9
-  Args:
-    source: Clementine_of_Orleans
-    type: :Person
-  AddTriple (4552f195-255d-4ff6-9431-c2ca86827d64)
- Call ID: 4552f195-255d-4ff6-9431-c2ca86827d64
-  Args:
-    target: Clementine_of_Orleans
-    source: Maria_Dorothea_of_Austria
-    relation: :hasMother
-  AssignClass (1ddc1ec7-dede-43b6-a02a-d2a3a1a1b792)
- Call ID: 1ddc1ec7-dede-43b6-a02a-d2a3a1a1b792
-  Args:
-    type: :Man
-    source: Jean_Duke_of_Guise
-  AssignClass (4dd733c9-39a7-4cb9-a984-c46b9fcea001)
- Call ID: 4dd733c9-39a7-4cb9-a984-c46b9fcea001
-  Args:
-    source: Jean_Duke_of_Guise
-    type: :Person
-  AddTriple (fe860ec3-1625-4437-b63d-4615d7108827)
- Call ID: fe860ec3-1625-4437-b63d-4615d7108827
-  Args:
-    target: Jean_Duke_of_Guise
-    source: Philippe_Duke_of_Orleans
-    relation: :isSiblingOf
-  Finish (3d67998e-399c-42b2-84a6-646d19db1ccc)
- Call ID: 3d67998e-399c-42b2-84a6-646d19db1ccc
+    literal_value: 1943
+  Finish (7f468660-d0ca-4b97-8417-54b8de4bb935)
+ Call ID: 7f468660-d0ca-4b97-8417-54b8de4bb935
   Args:

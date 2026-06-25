@@ -1,0 +1,64 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Male a :Male,
+        :Sex .
+
+data:Elizabeth_Margaret_Cator a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Michael_Albemarle_Bowes-Lyon ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Michael_Albemarle_Bowes-Lyon,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasSister data:Elizabeth_Margaret_Cator ;
+    :hasSon data:Michael_Albemarle_Bowes-Lyon ;
+    :isAncestorOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isAuntOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isBloodrelationOf data:Elizabeth_Margaret_Cator ;
+    :isMotherOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isParentOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isSiblingOf data:Elizabeth_Margaret_Cator ;
+    :isSisterOf data:Elizabeth_Margaret_Cator .
+
+data:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasChild data:Michael_Albemarle_Bowes-Lyon ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Michael_Albemarle_Bowes-Lyon,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasSon data:Michael_Albemarle_Bowes-Lyon ;
+    :isAncestorOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isBloodrelationOf data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isFatherOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isParentOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isSiblingOf data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isUncleOf data:Michael_Albemarle_Bowes-Lyon .
+
+data:Michael_Albemarle_Bowes-Lyon a :Man,
+        :Person ;
+    :hasAncestor data:Elizabeth_Margaret_Cator,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:Michael_Albemarle_Bowes-Lyon ;
+    :hasDeathYear 2023 ;
+    :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasMother data:Elizabeth_Margaret_Cator ;
+    :hasParent data:Elizabeth_Margaret_Cator,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasRelation data:Elizabeth_Margaret_Cator,
+        data:Michael_Albemarle_Bowes-Lyon,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isBrotherOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isChildOf data:Elizabeth_Margaret_Cator,
+        data:Michael_Claude_Hamilton_Bowes-Lyon ;
+    :isSiblingOf data:Michael_Albemarle_Bowes-Lyon ;
+    :isSonOf data:Elizabeth_Margaret_Cator,
+        data:Michael_Claude_Hamilton_Bowes-Lyon .
+

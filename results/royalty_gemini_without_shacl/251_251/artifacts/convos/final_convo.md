@@ -69,40 +69,39 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Michael Fergus Bowes-Lyon, 18th and 5th Earl of Strathmore and Kinghorne (7 June 1957 – 27 February 2016), styled Lord Glamis between 1972 and 1987, also known as Mikey Strathmore, was a British Conservative politician, Scots Guards officer and stockbroker.
-He was a first cousin once removed of Queen Elizabeth II, and second cousin of King Charles III.
-Early life and education
+Captain George Louis Victor Henry Serge Mountbatten, 2nd Marquess of Milford Haven (6 November 1892 – 8 April 1938), born Prince George of Battenberg, styled Earl of Medina between 1917 and 1921, was a Royal Navy officer and the elder son of Louis Mountbatten, 1st Marquess of Milford Haven (Prince Louis of Battenberg), and Princess Victoria of Hesse and by Rhine.
+Biography
 
-Strathmore was born on 7 June 1957 in Windsor, the only son of Fergus Bowes-Lyon, later 17th Earl of Strathmore and Kinghorne, and his wife, Mary Pamela McCorquodale.
-His paternal grandfather, Lieutenant-Colonel The Honourable Michael Bowes-Lyon, was an elder brother of Queen Elizabeth the Queen Mother, thus making Michael a first cousin once removed of Queen Elizabeth II and Princess Margaret.
-He served as the Queen Mother's page of honour from 1971 to 1973 and often stayed with her at the Castle of Mey and the Royal Lodge, Windsor.
-He was raised in Humbie, East Lothian, with his two sisters, Elizabeth and Diana.
-Career
+George was born 6 November 1892 in Darmstadt in the Grand Duchy of Hesse, then ruled by his maternal uncle Ernest Louis, Grand Duke of Hesse.
+From birth, he was a prince of the Hessian royal family, albeit of a morganatic branch.
+His siblings were Princess Alice (mother of Prince Philip, Duke of Edinburgh, to whom he was a mentor in Philip's adolescence), Queen Louise of Sweden and Louis Mountbatten, 1st
+Earl Mountbatten of Burma (who assumed the role of Philip's mentor after George's death).
+George followed his father into the Royal Navy, and after passing out from the Royal Naval College at Dartmouth, was promoted to sub-lieutenant on 15 January 1913.
+In 1917, his father and several of his relations relinquished their German names, styles and titles in exchange for British peerages at the behest of George V. Accordingly, Prince George dropped the style of Serene Highness and his surname was anglicised to "Mountbatten."
+When his father was created Marquess of Milford Haven in late 1917, George received the courtesy title of Earl of Medina, succeeding to his father's peerage after his death in September 1921.
+Lord Milford Haven, as George was now known, remained in the Royal Navy after the war; he was promoted to lieutenant-commander on 15 February 1922 and to commander on 31 December 1926.
+An accomplished mathematician, the Marquess "could work out complicated gunnery problems in his head" and "read books on calculus casually on trains".
+Marriage and issue
 
-After Sandhurst, Strathmore was commissioned in the Scots Guards in 1980.
-In 1987, Strathmore succeeded his father as 18th Earl of Strathmore and Kinghorne and inherited Holwick Hall in Teesdale, County Durham, and Glamis Castle, the Queen Mother's girlhood home, in Angus.
-After resigning his ministerial post, Strathmore sat on the board of Polypipe from 1994 until it was acquired by IMI plc in 1999.
-He also served as president of Boys' Brigade from 1994 to 1999 and as patron of the Friends of the Bowes Museum in County Durham, a position he inherited from the Queen Mother.
-Personal life
-
-Strathmore was married three times.
-On 14 November 1984, Lord Glamis, as he was then, married Isobel Charlotte Weatherall (born c. 1962), great-granddaughter of Henry Keswick and sister of Percy Weatherall, at St James's Church, Piccadilly, with the Queen Mother in attendance.
-Strathmore and Weatherall were separated in 2003 and divorced in 2005.
-On 24 November 2005, Strathmore married Damaris Stuart-William, a clinical psychologist.
-They had one son:
+Prince George of Battenberg, as he then was known, married Countess Nadejda Mikhailovna de Torby (daughter of Russian Grand Duke Michael Mikhailovich Romanov and his morganatic wife, Countess Sophie von Merenberg) on 15 November 1916 at the Russian Embassy, Welbeck Street, London.
+They lived at Lynden Manor at Holyport in Berkshire and had two children:
 
 
-On 4 August 2012, Strathmore married Karen Baxter (née Orrock), who survived him.
-As a hobby, he restored old automobiles and lorries, often featuring in the Strathmore Vintage Vehicle Rally.
-In 2002, as the head of the Bowes-Lyon family, he walked behind the Queen Mother's coffin during her funeral procession and attended the private service of committal in the King George VI Memorial Chapel.
-Strathmore died of colorectal cancer on 27 February 2016 in London, aged 58.
-A memorial service was held at the Church of St Mary the Virgin in Middleton-in-Teesdale, near his County Durham properties, on 12 May and another, attended by Prince Charles, was held at St Martin-in-the-Fields in London on 8 June.
+Death
+
+Lord Milford Haven died in London on 8 April 1938 of bone marrow cancer, aged 45.
+His funeral took place at St Michael's Church, Bray, Berkshire, and he was buried in Bray Parish Cemetery.
+Legacy to the British Museum
+
+Lord Milford Haven left a collection of pornography, including artificial sex organs, to the British Museum.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -118,39 +117,9 @@ A memorial service was held at the Church of St Mary the Virgin in Middleton-in-
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -165,6 +134,23 @@ A memorial service was held at the Church of St Mary the Virgin in Middleton-in-
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -182,6 +168,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -249,29 +250,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -280,6 +273,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -292,6 +293,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -300,17 +303,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -338,6 +343,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -353,168 +442,181 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (39c0291a-4664-41d3-a144-a7ef348fa659)
- Call ID: 39c0291a-4664-41d3-a144-a7ef348fa659
+  AssignClass (d7e37dee-f35c-42df-bd04-891dcf12bed4)
+ Call ID: d7e37dee-f35c-42df-bd04-891dcf12bed4
   Args:
+    source: GeorgeMountbatten
     type: :Man
-    source: :Michael_Fergus_Bowes-Lyon
-  AssignClass (1fa5a1dc-770d-40cb-afd6-adb708feafab)
- Call ID: 1fa5a1dc-770d-40cb-afd6-adb708feafab
+  AssignClass (2a1bbaee-5189-4ac1-b881-d8151114edf7)
+ Call ID: 2a1bbaee-5189-4ac1-b881-d8151114edf7
   Args:
+    source: GeorgeMountbatten
     type: :Person
-    source: :Michael_Fergus_Bowes-Lyon
-  AddLiteral (bcb19799-bcaf-44c9-a0e0-b87d6a6afff8)
- Call ID: bcb19799-bcaf-44c9-a0e0-b87d6a6afff8
+  AddLiteral (b06af16d-509f-481e-94b1-db3772908c63)
+ Call ID: b06af16d-509f-481e-94b1-db3772908c63
   Args:
-    literal_value: Mikey Strathmore
-    relation: :alsoKnownAs
-    literal_type: xsd:string
-    source: :Michael_Fergus_Bowes-Lyon
-  AddLiteral (520f7b38-775b-479d-881d-d74a3a8fadb7)
- Call ID: 520f7b38-775b-479d-881d-d74a3a8fadb7
-  Args:
-    source: :Michael_Fergus_Bowes-Lyon
-    literal_type: xsd:integer
-    literal_value: 1957
+    literal_value: 1892
+    source: GeorgeMountbatten
     relation: :hasBirthYear
-  AddLiteral (2f130778-ce38-48bf-b409-599853644149)
- Call ID: 2f130778-ce38-48bf-b409-599853644149
+    literal_type: xsd:integer
+  AddLiteral (300d0d5f-d82b-4a7c-80c4-77218d0bda18)
+ Call ID: 300d0d5f-d82b-4a7c-80c4-77218d0bda18
   Args:
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_value: 2016
-    source: :Michael_Fergus_Bowes-Lyon
-    literal_type: xsd:integer
-  AssignClass (18de7c3b-7e50-4d9a-b3ef-977b06355981)
- Call ID: 18de7c3b-7e50-4d9a-b3ef-977b06355981
+    source: GeorgeMountbatten
+    literal_value: 1938
+  AssignClass (49858bda-3c45-4231-a142-ac6660839865)
+ Call ID: 49858bda-3c45-4231-a142-ac6660839865
   Args:
+    source: LouisMountbatten1stMarquess
     type: :Man
-    source: :Fergus_Bowes-Lyon
-  AssignClass (57d7caa6-3eea-442f-b7fa-59a0b66b93a1)
- Call ID: 57d7caa6-3eea-442f-b7fa-59a0b66b93a1
+  AssignClass (9c89932b-939a-45b7-ba11-baecb3dc5f0a)
+ Call ID: 9c89932b-939a-45b7-ba11-baecb3dc5f0a
   Args:
+    source: LouisMountbatten1stMarquess
     type: :Person
-    source: :Fergus_Bowes-Lyon
-  AddTriple (96927cfc-5ec6-48c1-98cc-b058c95f1a2d)
- Call ID: 96927cfc-5ec6-48c1-98cc-b058c95f1a2d
+  AssignClass (27c61463-0dcf-451c-8a4d-d578e30f5d67)
+ Call ID: 27c61463-0dcf-451c-8a4d-d578e30f5d67
+  Args:
+    source: VictoriaOfHesse
+    type: :Woman
+  AssignClass (f4bee4c2-2948-4622-adfd-b8bd43ea51ee)
+ Call ID: f4bee4c2-2948-4622-adfd-b8bd43ea51ee
+  Args:
+    source: VictoriaOfHesse
+    type: :Person
+  AddTriple (a3e1c3a5-9096-4398-9c2b-3d96d4e89d8d)
+ Call ID: a3e1c3a5-9096-4398-9c2b-3d96d4e89d8d
   Args:
     relation: :hasFather
-    target: :Fergus_Bowes-Lyon
-    source: :Michael_Fergus_Bowes-Lyon
-  AssignClass (ad04982e-40c4-4ab1-aaba-401f13d05405)
- Call ID: ad04982e-40c4-4ab1-aaba-401f13d05405
+    source: GeorgeMountbatten
+    target: LouisMountbatten1stMarquess
+  AddTriple (2fa5230d-ff52-4c97-9eea-18df0dd625de)
+ Call ID: 2fa5230d-ff52-4c97-9eea-18df0dd625de
   Args:
-    type: :Woman
-    source: :Mary_Pamela_McCorquodale
-  AssignClass (686dcf97-83fd-4c4a-a2c8-4779f39b461c)
- Call ID: 686dcf97-83fd-4c4a-a2c8-4779f39b461c
-  Args:
-    type: :Person
-    source: :Mary_Pamela_McCorquodale
-  AddTriple (4d51aac2-19bc-4c54-a227-efa3271526ea)
- Call ID: 4d51aac2-19bc-4c54-a227-efa3271526ea
-  Args:
-    source: :Michael_Fergus_Bowes-Lyon
-    target: :Mary_Pamela_McCorquodale
+    target: VictoriaOfHesse
     relation: :hasMother
-  AssignClass (40506aeb-6068-4788-b1bd-236e3898ab35)
- Call ID: 40506aeb-6068-4788-b1bd-236e3898ab35
+    source: GeorgeMountbatten
+  AssignClass (4777146f-e3ac-4caa-b753-dccf69997a54)
+ Call ID: 4777146f-e3ac-4caa-b753-dccf69997a54
   Args:
+    source: PrincessAlice
     type: :Woman
-    source: :Elizabeth_Bowes-Lyon_sister
-  AssignClass (51486875-12ad-4244-b1a3-e90e794a8b76)
- Call ID: 51486875-12ad-4244-b1a3-e90e794a8b76
+  AssignClass (9d199091-7444-44a9-838b-0cb4da3d86df)
+ Call ID: 9d199091-7444-44a9-838b-0cb4da3d86df
   Args:
+    source: PrincessAlice
     type: :Person
-    source: :Elizabeth_Bowes-Lyon_sister
-  AddTriple (2b88c486-5605-4c6e-bf7c-92e63e805fb6)
- Call ID: 2b88c486-5605-4c6e-bf7c-92e63e805fb6
+  AssignClass (fa64801e-3e29-4bcc-b45c-7f5a1b80c6b7)
+ Call ID: fa64801e-3e29-4bcc-b45c-7f5a1b80c6b7
   Args:
-    target: :Elizabeth_Bowes-Lyon_sister
-    source: :Michael_Fergus_Bowes-Lyon
-    relation: :hasSister
-  AssignClass (2a5b117b-554a-4e69-b764-c4fcf371b4c3)
- Call ID: 2a5b117b-554a-4e69-b764-c4fcf371b4c3
-  Args:
+    source: QueenLouiseOfSweden
     type: :Woman
-    source: :Diana_Bowes-Lyon
-  AssignClass (910d84dd-71b0-456c-9c75-49554e90b8a0)
- Call ID: 910d84dd-71b0-456c-9c75-49554e90b8a0
+  AssignClass (c0eca95d-cd5a-459c-99b3-233a3ba24e92)
+ Call ID: c0eca95d-cd5a-459c-99b3-233a3ba24e92
   Args:
+    source: QueenLouiseOfSweden
     type: :Person
-    source: :Diana_Bowes-Lyon
-  AddTriple (33d8473b-57a4-4336-9fc0-8f0ce6991bec)
- Call ID: 33d8473b-57a4-4336-9fc0-8f0ce6991bec
+  AssignClass (34ff47d9-f782-489d-9cd8-1f5611fe12ea)
+ Call ID: 34ff47d9-f782-489d-9cd8-1f5611fe12ea
   Args:
-    target: :Diana_Bowes-Lyon
-    source: :Michael_Fergus_Bowes-Lyon
-    relation: :hasSister
-  AssignClass (1aaad8cd-041e-47d3-afcd-83a92834f5d2)
- Call ID: 1aaad8cd-041e-47d3-afcd-83a92834f5d2
-  Args:
+    source: LouisMountbatten1stEarl
     type: :Man
-    source: :Michael_Bowes-Lyon_grandfather
-  AssignClass (867f681f-8c0d-4af4-bc96-25c43d20251f)
- Call ID: 867f681f-8c0d-4af4-bc96-25c43d20251f
+  AssignClass (cf8dd914-8e21-48e0-b996-b0eb278d5cdb)
+ Call ID: cf8dd914-8e21-48e0-b996-b0eb278d5cdb
   Args:
+    source: LouisMountbatten1stEarl
     type: :Person
-    source: :Michael_Bowes-Lyon_grandfather
-  AddTriple (9126ea10-e38b-4343-9e8c-6ca43fd0f90e)
- Call ID: 9126ea10-e38b-4343-9e8c-6ca43fd0f90e
+  AddTriple (72d01d21-12ec-4e14-b54d-bc66385d5969)
+ Call ID: 72d01d21-12ec-4e14-b54d-bc66385d5969
   Args:
+    target: PrincessAlice
+    relation: :isSiblingOf
+    source: GeorgeMountbatten
+  AddTriple (6b8ee68a-82c5-454b-9c09-be67e0f159a6)
+ Call ID: 6b8ee68a-82c5-454b-9c09-be67e0f159a6
+  Args:
+    relation: :isSiblingOf
+    source: GeorgeMountbatten
+    target: QueenLouiseOfSweden
+  AddTriple (2b0ce662-1e9c-4d19-8f53-3aa7ede8b953)
+ Call ID: 2b0ce662-1e9c-4d19-8f53-3aa7ede8b953
+  Args:
+    relation: :isSiblingOf
+    source: GeorgeMountbatten
+    target: LouisMountbatten1stEarl
+  AssignClass (5bd3fd1a-3d38-42d2-adda-499faaa5be2b)
+ Call ID: 5bd3fd1a-3d38-42d2-adda-499faaa5be2b
+  Args:
+    source: NadejdaMikhailovnaDeTorby
+    type: :Woman
+  AssignClass (72b165b9-ff8d-473f-bc72-d4446050e53a)
+ Call ID: 72b165b9-ff8d-473f-bc72-d4446050e53a
+  Args:
+    source: NadejdaMikhailovnaDeTorby
+    type: :Person
+  AddLiteral (de7e673b-1e5f-44f2-a727-5a8a2e6c687f)
+ Call ID: de7e673b-1e5f-44f2-a727-5a8a2e6c687f
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1916
+    source: GeorgeMountbatten
+  AddTriple (737a764c-22c8-4c77-9446-04848164bd89)
+ Call ID: 737a764c-22c8-4c77-9446-04848164bd89
+  Args:
+    target: NadejdaMikhailovnaDeTorby
+    relation: :hasRelation
+    source: GeorgeMountbatten
+  AssignClass (a886fb6c-f2cd-4db9-aaf9-9295e0d844c0)
+ Call ID: a886fb6c-f2cd-4db9-aaf9-9295e0d844c0
+  Args:
+    source: MichaelMikhailovichRomanov
+    type: :Man
+  AssignClass (aabd29f5-61e2-4260-b270-be8c3e592220)
+ Call ID: aabd29f5-61e2-4260-b270-be8c3e592220
+  Args:
+    source: MichaelMikhailovichRomanov
+    type: :Person
+  AssignClass (06fdf093-b4fa-4da4-9aba-f2ed013ba96f)
+ Call ID: 06fdf093-b4fa-4da4-9aba-f2ed013ba96f
+  Args:
+    source: SophieVonMerenberg
+    type: :Woman
+  AssignClass (28d2a711-424e-44a6-b0f4-d9fe55175eae)
+ Call ID: 28d2a711-424e-44a6-b0f4-d9fe55175eae
+  Args:
+    source: SophieVonMerenberg
+    type: :Person
+  AddTriple (cce0f7be-1f30-410f-a873-ec1979c51b58)
+ Call ID: cce0f7be-1f30-410f-a873-ec1979c51b58
+  Args:
+    source: NadejdaMikhailovnaDeTorby
     relation: :hasFather
-    source: :Fergus_Bowes-Lyon
-    target: :Michael_Bowes-Lyon_grandfather
-  AssignClass (e617c73e-293a-4aee-8761-0cb06a61cf4d)
- Call ID: e617c73e-293a-4aee-8761-0cb06a61cf4d
+    target: MichaelMikhailovichRomanov
+  AddTriple (e519b39e-ca16-4552-b87e-87d5b171e05e)
+ Call ID: e519b39e-ca16-4552-b87e-87d5b171e05e
   Args:
-    type: :Woman
-    source: :Isobel_Charlotte_Weatherall
-  AssignClass (4b9a5614-3d5e-4e52-907a-b36ddbfe0dfe)
- Call ID: 4b9a5614-3d5e-4e52-907a-b36ddbfe0dfe
+    source: NadejdaMikhailovnaDeTorby
+    relation: :hasMother
+    target: SophieVonMerenberg
+  AssignClass (0b8a2192-6da0-47c3-83aa-e6be4275678c)
+ Call ID: 0b8a2192-6da0-47c3-83aa-e6be4275678c
   Args:
+    source: PrincePhilip
+    type: :Man
+  AssignClass (69fec9fb-b766-4b33-943b-0762ce6fb901)
+ Call ID: 69fec9fb-b766-4b33-943b-0762ce6fb901
+  Args:
+    source: PrincePhilip
     type: :Person
-    source: :Isobel_Charlotte_Weatherall
-  AddLiteral (9e8227da-3c73-453c-b982-da207a5749b3)
- Call ID: 9e8227da-3c73-453c-b982-da207a5749b3
+  AddTriple (c1160a45-36a0-498a-a9b1-9d63d94f4791)
+ Call ID: c1160a45-36a0-498a-a9b1-9d63d94f4791
   Args:
-    source: :Michael_Fergus_Bowes-Lyon
-    literal_type: xsd:integer
-    literal_value: 1984
-    relation: :hasMarriageYear
-  AssignClass (0cde29c7-ce74-42e2-8d93-1174f8edbaeb)
- Call ID: 0cde29c7-ce74-42e2-8d93-1174f8edbaeb
-  Args:
-    type: :Woman
-    source: :Damaris_Stuart-William
-  AssignClass (4d29d3f5-6cda-44c6-8275-ba55cbe5d7d4)
- Call ID: 4d29d3f5-6cda-44c6-8275-ba55cbe5d7d4
-  Args:
-    type: :Person
-    source: :Damaris_Stuart-William
-  AddLiteral (ef509bf9-937b-4be6-b13b-75cb0bb97b5c)
- Call ID: ef509bf9-937b-4be6-b13b-75cb0bb97b5c
-  Args:
-    literal_type: xsd:integer
-    source: :Michael_Fergus_Bowes-Lyon
-    literal_value: 2005
-    relation: :hasMarriageYear
-  AssignClass (9a8c2767-20bc-4d1a-8095-994bd844705b)
- Call ID: 9a8c2767-20bc-4d1a-8095-994bd844705b
-  Args:
-    type: :Woman
-    source: :Karen_Baxter
-  AssignClass (8728fe4b-5109-4514-90c4-2e3c4d4f9773)
- Call ID: 8728fe4b-5109-4514-90c4-2e3c4d4f9773
-  Args:
-    type: :Person
-    source: :Karen_Baxter
-  AddLiteral (64d33016-c33f-4038-9117-c159d198a059)
- Call ID: 64d33016-c33f-4038-9117-c159d198a059
-  Args:
-    source: :Michael_Fergus_Bowes-Lyon
-    literal_type: xsd:integer
-    literal_value: 2012
-    relation: :hasMarriageYear
-  Finish (0acb0931-e209-4133-a655-605ec50919ec)
- Call ID: 0acb0931-e209-4133-a655-605ec50919ec
+    source: PrincePhilip
+    relation: :hasMother
+    target: PrincessAlice
+  Finish (39315c70-1d01-4496-a1d3-70b8eba0788d)
+ Call ID: 39315c70-1d01-4496-a1d3-70b8eba0788d
   Args:

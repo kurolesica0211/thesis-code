@@ -69,30 +69,46 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lady Davina Elizabeth Alice Benedikte Windsor (born 19 November 1977) is a member of the British royal family, and is the elder daughter of the Duke and Duchess of Gloucester.
-She was known as Lady Davina Lewis between 2004 and 2018, during her marriage to Gary Lewis.
-Early life and education
+Archduke Gottfried of Austria (German: Gottfried Maria Joseph Peter Ferdinand Hubert Anton Rupert Leopold Heinrich Ignaz Alfons, Erzherzog von Österreich, Prinz von Toskana; 14 March 1902 – 21 January 1984), also styled as Gottfried Erzherzog von Österreich, was an Archduke of Austria and claimant to the defunct throne of the Grand Duchy of Tuscany.
+Biography
 
-Davina Elizabeth Alice Benedikte Windsor was born on 19 November 1977 at St Mary's Hospital, London, the second child of Prince Richard, Duke of Gloucester and Birgitte, Duchess of Gloucester.
-Her godparents are Captain Mark Phillips, the Duke of Buccleuch, Elisabeth, Lady Camoys, Susan Wigley, Roger Wellesley Smith and Caroline, Baroness Rosenørn-Lehn.
-Lady Davina grew up in Kensington Palace.
-Marriage and children
+On 20 December 1866, Goffredo's grandfather, Ferdinando IV, the last Grand Duke of Tuscany, and his children were readmitted to the imperial family.
+The House of Tuscany ceased to exist as a sovereign branch and merged with the Austrian imperial house.
+Ferdinand was able to maintain his fons honorum vita natural durante, while his children became only imperial princes (archdukes of Austria) and no longer princes/princesses of Tuscany.
+The Grand Magistry of the Order of St Stephen died out with the death of Ferdinand IV.
+In fact, after the death of Grand Duke Ferdinand IV in 1908, Emperor Franz Joseph I forbade the acceptance of the title of Grand Duke or Prince or Princess of Tuscany: none of Ferdinand IV's children born after 1866 accepted the title of Prince or Grand Duke of Tuscany.
+They were also unable to legitimately take possession of the extinct dynastic orders, previously conferred by the Grand Dukes of Tuscany.
+While his grandfather had kept the title of Grand Duke of Tuscany after the abolition of the dukedom in 1860, he had abdicated it in favor of the Austrian Emperor in 1870.
+Peter Ferdinand, Goffredo's father, never  claimed the title of Grand Duke of Tuscany.
+The former Prime Minister of Saxony and later Imperial and Household Minister Beust declared: "The Tuscan Grand Ducal family has lost its sovereign rights as a result of political events.
+The Grand Dukes Leopold and Ferdinand and their more famous brothers are therefore from now on to be considered only as Archdukes of Austria and to be treated in accordance with the Statute of the High Noble Family of 3 February 1839.
+"
 
-On 31 July 2004, Davina married Gary Christie Lewis (born 15 August 1970), a Māori.
-Lewis is also the first person of known Māori descent to marry a member of the royal family, or to marry the daughter of a British prince.
-The wedding took place on 31 July 2004 at the private chapel of Kensington Palace, Davina's childhood home.
-Apart from the Duke and Duchess of Gloucester and the bride's siblings, no other members of the royal family were present at the wedding; only close friends and family were involved.
-Davina and her former husband have a daughter, Senna Kowhai, who was born on 22 June 2010 and a son, Tāne Mahuta, who was born 25 May 2012.
-Davina was also stepmother to Lewis's son from a previous relationship, Ari (born 1992).
-Davina does not carry out official functions but does attend family events including royal weddings.
-Davina and Gary Lewis were invited to attend the Queen's reception for members of the New Zealand All Blacks at Buckingham Palace in 2005.
-She and her then husband also attended Prince William's wedding in 2011.
+
+Family
+
+Gottfried was born in Linz, Austria-Hungary, the eldest child and son  of Archduke Peter Ferdinand of Austria and his wife Princess Maria Cristina of Bourbon-Two Sicilies.
+Gottfried was raised with his three siblings in Salzburg and Vienna until the end of World War I in 1918, when his family emigrated to Lucerne, Switzerland.
+Marriage and issue
+
+Gottfried married Princess Dorothea of Bavaria, fifth child and fourth daughter of Prince Franz of Bavaria and his wife Princess Isabella Antonie of Croÿ, on 2 August 1938 civilly and religiously on 3 August 1938 in Sárvár, Kingdom of Hungary.
+Around 1970, in violation of the decree of Emperor Franz Joseph I of 1866 and ignoring the abdication of his grandfather last Grand Duke of Tuscany Ferdinand IV signed in Lindau on Lake Constance in 1870, he assumed the title of Grand Duke of Tuscany without the permission of the head of the imperial and royal house.
+Gottfried and Dorothea had issue:
+
+
+Honours
+
+Ancestry
+
+References
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -108,39 +124,9 @@ She and her then husband also attended Prince William's wedding in 2011.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -155,6 +141,23 @@ She and her then husband also attended Prince William's wedding in 2011.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -172,6 +175,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -239,29 +257,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -270,6 +280,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -282,6 +300,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -290,17 +310,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -328,6 +350,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -343,145 +449,133 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b165eaba-81eb-4b08-96de-221302a5aa53)
- Call ID: b165eaba-81eb-4b08-96de-221302a5aa53
+  AssignClass (7ab7b129-d973-4641-905e-0077ad95268f)
+ Call ID: 7ab7b129-d973-4641-905e-0077ad95268f
   Args:
-    type: :Woman
-    source: :Davina_Windsor
-  AssignClass (e5004f73-f000-46f3-9401-8271bb20156f)
- Call ID: e5004f73-f000-46f3-9401-8271bb20156f
+    source: :Gottfried
+    type: :Man
+  AssignClass (628010cb-2c4a-492a-948b-870c79b5cec3)
+ Call ID: 628010cb-2c4a-492a-948b-870c79b5cec3
   Args:
-    source: :Davina_Windsor
     type: :Person
-  AddLiteral (234c4cad-2f0f-4b35-bf7e-192e1173d67d)
- Call ID: 234c4cad-2f0f-4b35-bf7e-192e1173d67d
+    source: :Gottfried
+  AddLiteral (5a05d016-21da-4fc1-bff3-439d692dbc10)
+ Call ID: 5a05d016-21da-4fc1-bff3-439d692dbc10
   Args:
-    source: :Davina_Windsor
-    literal_value: 1977-11-19
     relation: :hasBirthYear
-    literal_type: xsd:string
-  AssignClass (c7d58f73-4687-46cf-95a2-0efa78de8637)
- Call ID: c7d58f73-4687-46cf-95a2-0efa78de8637
+    literal_value: 1902
+    source: :Gottfried
+    literal_type: xsd:integer
+  AddLiteral (ffc9f10c-755a-4de1-b2d0-0bccd47bd5db)
+ Call ID: ffc9f10c-755a-4de1-b2d0-0bccd47bd5db
   Args:
-    source: :Prince_Richard_Duke_of_Gloucester
+    literal_value: 1984
+    relation: :hasDeathYear
+    source: :Gottfried
+    literal_type: xsd:integer
+  AssignClass (de4d2617-3502-479d-8180-dd094ff10842)
+ Call ID: de4d2617-3502-479d-8180-dd094ff10842
+  Args:
+    source: :Ferdinando_IV
     type: :Man
-  AssignClass (2d2b85d6-8dc7-4305-bf6e-a615b06ec8d8)
- Call ID: 2d2b85d6-8dc7-4305-bf6e-a615b06ec8d8
+  AssignClass (83a1ea43-bb19-4062-ba4e-658579b82d27)
+ Call ID: 83a1ea43-bb19-4062-ba4e-658579b82d27
   Args:
-    source: :Prince_Richard_Duke_of_Gloucester
     type: :Person
-  AssignClass (5bde699f-e645-4e05-82a5-60f72ea6480a)
- Call ID: 5bde699f-e645-4e05-82a5-60f72ea6480a
+    source: :Ferdinando_IV
+  AssignClass (8ac1c03e-a377-4771-9043-39b1ca8f007a)
+ Call ID: 8ac1c03e-a377-4771-9043-39b1ca8f007a
   Args:
-    source: :Birgitte_Duchess_of_Gloucester
+    type: :Man
+    source: :Peter_Ferdinand
+  AssignClass (45303aca-dda8-47e5-a58c-cde2e7ccb171)
+ Call ID: 45303aca-dda8-47e5-a58c-cde2e7ccb171
+  Args:
+    type: :Person
+    source: :Peter_Ferdinand
+  AssignClass (c64576ca-df52-4ee5-a0ff-0b76d1496eed)
+ Call ID: c64576ca-df52-4ee5-a0ff-0b76d1496eed
+  Args:
+    source: :Maria_Cristina
     type: :Woman
-  AssignClass (8ea1e65b-3707-4bc3-bbd3-5536dbb82d4e)
- Call ID: 8ea1e65b-3707-4bc3-bbd3-5536dbb82d4e
+  AssignClass (9bc2825b-5118-4fba-b238-3dcdfc520e67)
+ Call ID: 9bc2825b-5118-4fba-b238-3dcdfc520e67
   Args:
-    source: :Birgitte_Duchess_of_Gloucester
     type: :Person
-  AddTriple (eef9ee33-1844-4a44-a7d2-899157c7ccc9)
- Call ID: eef9ee33-1844-4a44-a7d2-899157c7ccc9
+    source: :Maria_Cristina
+  AddTriple (804ac8cb-f0e5-4bbb-ac2a-f0e29d523fda)
+ Call ID: 804ac8cb-f0e5-4bbb-ac2a-f0e29d523fda
   Args:
+    source: :Gottfried
+    target: :Peter_Ferdinand
     relation: :hasFather
-    target: :Prince_Richard_Duke_of_Gloucester
-    source: :Davina_Windsor
-  AddTriple (f7e4324f-beb7-43b7-9fae-0682194b1c37)
- Call ID: f7e4324f-beb7-43b7-9fae-0682194b1c37
+  AddTriple (00704c30-1b8d-48ab-87d1-3b669e384047)
+ Call ID: 00704c30-1b8d-48ab-87d1-3b669e384047
   Args:
-    target: :Birgitte_Duchess_of_Gloucester
-    source: :Davina_Windsor
     relation: :hasMother
-  AssignClass (02994d39-43dd-4467-9b57-7abd90bb819c)
- Call ID: 02994d39-43dd-4467-9b57-7abd90bb819c
+    target: :Maria_Cristina
+    source: :Gottfried
+  AddTriple (1b0d914c-e333-4826-bd82-2169f92715df)
+ Call ID: 1b0d914c-e333-4826-bd82-2169f92715df
   Args:
-    source: :Gary_Lewis
-    type: :Man
-  AssignClass (443ef42f-486c-4005-a635-52818e34f38d)
- Call ID: 443ef42f-486c-4005-a635-52818e34f38d
+    target: :Ferdinando_IV
+    relation: :hasFather
+    source: :Peter_Ferdinand
+  AssignClass (50913d47-6c66-4eda-b246-73d373458b81)
+ Call ID: 50913d47-6c66-4eda-b246-73d373458b81
   Args:
-    type: :Person
-    source: :Gary_Lewis
-  AddTriple (214ea86d-1cbd-485b-8c39-b603862a8b17)
- Call ID: 214ea86d-1cbd-485b-8c39-b603862a8b17
-  Args:
-    source: :Davina_Windsor
-    target: :Gary_Lewis
-    relation: :hasRelation
-  AddLiteral (1f55d823-46e1-4e12-9e99-52c6620f6c20)
- Call ID: 1f55d823-46e1-4e12-9e99-52c6620f6c20
-  Args:
-    source: :Davina_Windsor
-    relation: :hasMarriageYear
-    literal_value: 2004
-    literal_type: xsd:string
-  AddLiteral (0abd1b08-408e-4da5-9a67-15922606896f)
- Call ID: 0abd1b08-408e-4da5-9a67-15922606896f
-  Args:
-    literal_value: Lady Davina Lewis
-    relation: :formerlyKnownAs
-    literal_type: xsd:string
-    source: :Davina_Windsor
-  AssignClass (16a99d72-20fa-4d63-90d9-df234b084a39)
- Call ID: 16a99d72-20fa-4d63-90d9-df234b084a39
-  Args:
+    source: :Dorothea
     type: :Woman
-    source: :Senna_Kowhai
-  AssignClass (dd648bda-419c-410c-a63b-d29c2ac34973)
- Call ID: dd648bda-419c-410c-a63b-d29c2ac34973
+  AssignClass (d881c6cd-8193-4727-95ce-5f45a747e2fd)
+ Call ID: d881c6cd-8193-4727-95ce-5f45a747e2fd
   Args:
-    source: :Senna_Kowhai
+    source: :Dorothea
     type: :Person
-  AddTriple (9a9f378f-8f2c-41f4-887d-0dc9cae42849)
- Call ID: 9a9f378f-8f2c-41f4-887d-0dc9cae42849
-  Args:
-    source: :Senna_Kowhai
-    target: :Davina_Windsor
-    relation: :isDaughterOf
-  AddTriple (5dad8a84-4587-4a49-a546-82d0fd973207)
- Call ID: 5dad8a84-4587-4a49-a546-82d0fd973207
-  Args:
-    relation: :isDaughterOf
-    source: :Senna_Kowhai
-    target: :Gary_Lewis
-  AssignClass (37a0fab0-9f5a-4a99-a328-73afca1aa293)
- Call ID: 37a0fab0-9f5a-4a99-a328-73afca1aa293
+  AssignClass (8dd8696d-a7e9-4bea-a666-fdb205e32d28)
+ Call ID: 8dd8696d-a7e9-4bea-a666-fdb205e32d28
   Args:
     type: :Man
-    source: :Tane_Mahuta
-  AssignClass (79001e1f-4c11-4b97-8b6a-bb51058918a9)
- Call ID: 79001e1f-4c11-4b97-8b6a-bb51058918a9
+    source: :Franz_of_Bavaria
+  AssignClass (72e758cd-97cc-490e-bfd5-64ae0b397951)
+ Call ID: 72e758cd-97cc-490e-bfd5-64ae0b397951
   Args:
-    source: :Tane_Mahuta
     type: :Person
-  AddTriple (086e9baf-bf76-4e85-9d11-0705c171e46f)
- Call ID: 086e9baf-bf76-4e85-9d11-0705c171e46f
+    source: :Franz_of_Bavaria
+  AssignClass (e386174a-0ff8-4021-92e3-a32f8a487343)
+ Call ID: e386174a-0ff8-4021-92e3-a32f8a487343
   Args:
-    relation: :isSonOf
-    source: :Tane_Mahuta
-    target: :Davina_Windsor
-  AddTriple (8a6c3ee7-1cb9-4423-9d91-1b1f852f1ca9)
- Call ID: 8a6c3ee7-1cb9-4423-9d91-1b1f852f1ca9
+    source: :Isabella_Antonie
+    type: :Woman
+  AssignClass (0aef2ead-b7af-4be3-b833-aa48fbbf019d)
+ Call ID: 0aef2ead-b7af-4be3-b833-aa48fbbf019d
   Args:
-    relation: :isSonOf
-    target: :Gary_Lewis
-    source: :Tane_Mahuta
-  AssignClass (54597fa1-b242-43a3-9821-674124bfc979)
- Call ID: 54597fa1-b242-43a3-9821-674124bfc979
-  Args:
-    source: :Ari
-    type: :Man
-  AssignClass (19f3a330-66c2-44be-9deb-f961fa0264fe)
- Call ID: 19f3a330-66c2-44be-9deb-f961fa0264fe
-  Args:
-    source: :Ari
     type: :Person
-  AddTriple (927fd954-df13-4f50-af40-b90d3082d6c3)
- Call ID: 927fd954-df13-4f50-af40-b90d3082d6c3
+    source: :Isabella_Antonie
+  AddTriple (509e37d1-0e84-448a-bdbb-dcbe72795f77)
+ Call ID: 509e37d1-0e84-448a-bdbb-dcbe72795f77
   Args:
-    source: :Ari
-    target: :Gary_Lewis
-    relation: :isSonOf
-  Finish (14f652b9-b968-4512-bbb0-f93a0fa06f31)
- Call ID: 14f652b9-b968-4512-bbb0-f93a0fa06f31
+    source: :Dorothea
+    relation: :hasFather
+    target: :Franz_of_Bavaria
+  AddTriple (2c2a89c8-2545-4f74-8532-0d0322a2d360)
+ Call ID: 2c2a89c8-2545-4f74-8532-0d0322a2d360
+  Args:
+    source: :Dorothea
+    relation: :hasMother
+    target: :Isabella_Antonie
+  AddTriple (c89ad5e3-da40-4cdb-b714-38c8f8d2a80e)
+ Call ID: c89ad5e3-da40-4cdb-b714-38c8f8d2a80e
+  Args:
+    source: :Gottfried
+    relation: :hasRelation
+    target: :Dorothea
+  AddLiteral (8b369ba6-4b0d-454b-a5b3-e0abf1056f40)
+ Call ID: 8b369ba6-4b0d-454b-a5b3-e0abf1056f40
+  Args:
+    literal_value: 1938
+    relation: :hasMarriageYear
+    source: :Gottfried
+    literal_type: xsd:integer
+  Finish (49540067-8546-4dd3-98a4-09e468db8c35)
+ Call ID: 49540067-8546-4dd3-98a4-09e468db8c35
   Args:

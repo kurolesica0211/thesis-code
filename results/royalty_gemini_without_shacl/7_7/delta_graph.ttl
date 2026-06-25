@@ -2,48 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:FinnianAnson a :Man,
+data:Finnian_Anson a :Man,
         :Person ;
     :hasBirthYear 2014 ;
-    :hasFather data:ThomasWilliamRobertHughAnson_6thEarlOfLichfield ;
-    :hasMother data:LadyHenriettaConyngham .
+    :hasFather data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .
 
-data:ThomasAnson_1stViscountAnson a :Man,
-        :Person ;
-    :isFatherOf data:ThomasAnson_2ndViscountAnson .
-
-data:ThomasOssianPatrickWolfeAnson_ViscountAnson a :Man,
-        :Person ;
-    :hasBirthYear 2011 ;
-    :hasFather data:ThomasWilliamRobertHughAnson_6thEarlOfLichfield ;
-    :hasMother data:LadyHenriettaConyngham .
-
-data:LadyLeonoraMaryGrosvenor a :Person,
-        :Woman .
-
-data:PatrickAnson_5thEarlOfLichfield a :Man,
-        :Person ;
-    :hasDeathYear 2005 ;
-    :hasFather data:ThomasWilliamArnoldAnson_ViscountAnson ;
-    :knownAs "Patrick Lichfield"^^xsd:string .
-
-data:ThomasAnson_2ndViscountAnson a :Man,
+data:Thomas_Anson_2nd_Viscount_Anson a :Man,
         :Person ;
     :hasBirthYear 1795 ;
     :hasDeathYear 1854 ;
-    :knownAs "1st Earl of Lichfield"^^xsd:string .
+    :hasFather data:Thomas_Anson_1st_Viscount_Anson .
 
-data:ThomasWilliamArnoldAnson_ViscountAnson a :Man,
+data:Thomas_Ossian_Patrick_Wolfe_Anson_Viscount_Anson a :Man,
         :Person ;
-    :hasBirthYear 1913 ;
-    :hasDeathYear 1958 .
+    :hasBirthYear 2011 ;
+    :hasFather data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield .
 
-data:LadyHenriettaConyngham a :Person,
+data:Lady_Henrietta_Conyngham a :Person,
         :Woman .
 
-data:ThomasWilliamRobertHughAnson_6thEarlOfLichfield a :Man,
+data:Lady_Leonora_Mary_Grosvenor a :Person,
+        :Woman .
+
+data:Patrick_Anson_5th_Earl_of_Lichfield a :Man,
+        :Person ;
+    :hasFather data:Thomas_William_Arnold_Anson_Viscount_Anson .
+
+data:Thomas_Anson_1st_Viscount_Anson a :Man,
+        :Person .
+
+data:Thomas_William_Arnold_Anson_Viscount_Anson a :Man,
+        :Person ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1958,
+        1960 .
+
+data:Thomas_William_Robert_Hugh_Anson_6th_Earl_of_Lichfield a :Man,
         :Person ;
     :hasBirthYear 1978 ;
-    :hasFather data:PatrickAnson_5thEarlOfLichfield ;
-    :hasMother data:LadyLeonoraMaryGrosvenor .
+    :hasFather data:Patrick_Anson_5th_Earl_of_Lichfield ;
+    :hasMarriageYear 2009 ;
+    :hasMother data:Lady_Leonora_Mary_Grosvenor ;
+    :hasRelation data:Lady_Henrietta_Conyngham .
 

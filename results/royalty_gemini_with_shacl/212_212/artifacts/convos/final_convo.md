@@ -85,38 +85,27 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Ferdinand Pius (Ferdinando Pio Maria), Duke of Calabria and Castro (25 July 1869, Rome – 7 January 1960, Lindau), was head of the House of Bourbon-Two Sicilies and pretender to the throne of the extinct Kingdom of the Two Sicilies from 1934 to 1960.
-Family
+Duke Paul Frederick of Mecklenburg (German: Herzog Paul Friedrich zu Mecklenburg; given names: Paul Frederick Charles Alexander Michael Hugh; 12 May 1882 – 21 May 1904) was a member of the House of Mecklenburg-Schwerin and a German soldier and sailor.
+He was styled His Highness Duke Paul Frederick of Mecklenburg.
+German soldier and sailor
 
-Ferdinand was the eldest child of Prince Alfonso, Count of Caserta and his wife Princess Maria Antonietta of Bourbon-Two Sicilies.
-He was a grandson of Ferdinand II of the Two Sicilies and an older brother of Prince Carlos of Bourbon-Two Sicilies, Maria Immaculata, Princess Johann Georg of Saxony, Maria Cristina, Archduchess Peter Ferdinand of Austria, Maria di Grazia, Princess Imperial of Brazil, Prince Ranieri, Duke of Castro, Prince Philip of Bourbon-Two Sicilies, and Prince Gabriel of Bourbon-Two Sicilies.
-Marriage
+Duke Paul Frederick Charles Alexander Michael Hugh of Mecklenburg was born in Schwerin, the eldest child of Duke Paul Frederick of Mecklenburg and his Austrian wife, Princess Marie of Windisch-Graetz.
+Duke Paul Frederick was a grandson of Frederick Francis II, Grand Duke of Mecklenburg.
+Shortly after his birth he became the youngest soldier in the world when he was admitted as a soldier into the German Imperial Army and assigned to the 15th Mecklenburg Dragoons by Emperor William I. Duke Paul Frederick and his siblings were raised as Roman Catholics and were brought up in Venice, where his family became friends with Cardinal Sarto (later Pope Pius X), who was a regular visitor to the family.
+On 21 April 1884 Duke Paul Frederick's place in the line of succession to the throne of Mecklenburg-Schwerin was superseded by his uncles after his father renounced his own and his descendants' rights of succession.
+However, in the event of his uncles' families becoming extinct, Duke Paul Frederick's line could succeed, as long as the successor converted from Roman Catholicism to Protestantism.
+Despite being put into the Army shortly after his birth, Duke Paul Frederick eventually pursued a career in the German Imperial Navy.
+Death
 
-Ferdinand married Princess Maria Ludwiga Theresia of Bavaria, daughter of King Ludwig III of Bavaria on 31 May 1897.
-They had six children:
-
-
-Ferdinand and Maria lived for many years at Villa Amsee, Lindau.
-Disputed succession
-
-Following Ferdinand's death, the headship of the House of Bourbon-Two Sicilies was claimed by both his nephew Infante Alfonso, Duke of Calabria, and his brother Prince Ranieri, Duke of Castro, and remains disputed between their descendants.
-The basis of Alfonso’s claim was that his late father, Prince Carlos of Bourbon-Two Sicilies (1870–1949), had been Ferdinand's next oldest brother.
-But Henri, Count of Paris, upheld the claim of Ferdinand's younger brother, Prince Ranieri, Duke of Castro (1883–1973), contending that Carlos had renounced his rights of succession for himself and his descendants in 1901 when he married the Spanish heiress presumptive María de las Mercedes, Princess of Asturias.
-The Count of Paris was well aware that his own claim to the French throne depended on the validity of the renunciation in 1713 of Philip V of Spain, in favor of the junior House of Orléans.
-In 1900, Prince Carlos had executed the Act of Cannes, in anticipation of his marriage to María de las Mercedes, and in 1901 he became a Spanish subject and accepted the title of Infante.
-The position of Ranieri was that by so doing Carlos had renounced any claim to the throne of the Two Sicilies.
-But Alfonso had a different interpretation, which was that the Act of Cannes would have taken effect only if Mercedes and Carlos had succeeded to the Spanish throne.
-He also argued that the Act of Cannes was invalid under the succession rules of the house of Two Sicilies.
-Military service
-
-Ferdinand initially served in the Spanish Army, and after leaving service held the honorary rank of Comandante of the General Staff of the Spanish Army.
-Feld-Artillerie-Regiment "Prinz Ferdinand von Bourbon, Herzog von Calabrien"), which was renamed in honor of him.
+Duke Paul Frederick of Mecklenburg died unmarried in Kiel at the age of 22.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -132,39 +121,9 @@ Feld-Artillerie-Regiment "Prinz Ferdinand von Bourbon, Herzog von Calabrien"), w
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -179,6 +138,23 @@ Feld-Artillerie-Regiment "Prinz Ferdinand von Bourbon, Herzog von Calabrien"), w
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -196,6 +172,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -263,29 +254,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -294,6 +277,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -306,6 +297,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -314,17 +307,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -352,6 +347,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -367,150 +446,85 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (14419f9b-a46b-4e82-af94-20322c2950b2)
- Call ID: 14419f9b-a46b-4e82-af94-20322c2950b2
+  AssignClass (45b82519-a985-4314-a74f-faa4537a9be2)
+ Call ID: 45b82519-a985-4314-a74f-faa4537a9be2
   Args:
+    source: Duke_Paul_Frederick_of_Mecklenburg
     type: :Man
-    source: :FerdinandPius
-  AssignClass (26f4cbb1-efa9-4a68-bdaf-1d4fc86b7b04)
- Call ID: 26f4cbb1-efa9-4a68-bdaf-1d4fc86b7b04
+  AssignClass (82bf17d5-3bb7-4f77-bce1-db587d035a47)
+ Call ID: 82bf17d5-3bb7-4f77-bce1-db587d035a47
   Args:
-    type: :Ancestor
-    source: :FerdinandPius
-  AddLiteral (6bb08352-7d9a-4a70-a86f-e96c390eb462)
- Call ID: 6bb08352-7d9a-4a70-a86f-e96c390eb462
+    source: Duke_Paul_Frederick_of_Mecklenburg_Senior
+    type: :Man
+  AssignClass (805fd421-1222-4637-9933-6c9f4efeeb1f)
+ Call ID: 805fd421-1222-4637-9933-6c9f4efeeb1f
   Args:
-    literal_type: xsd:string
-    source: :FerdinandPius
-    relation: :alsoKnownAs
-    literal_value: Ferdinando Pio Maria
-  AddLiteral (05b71bdc-fee7-4592-8199-67412e0528bf)
- Call ID: 05b71bdc-fee7-4592-8199-67412e0528bf
+    source: Princess_Marie_of_Windisch-Graetz
+    type: :Woman
+  AssignClass (f3cf6e75-47cb-4d21-a544-90921c6f16c5)
+ Call ID: f3cf6e75-47cb-4d21-a544-90921c6f16c5
+  Args:
+    source: Frederick_Francis_II_Grand_Duke_of_Mecklenburg
+    type: :Man
+  AddLiteral (bc7e30ea-2697-4c78-827f-185e30907ffd)
+ Call ID: bc7e30ea-2697-4c78-827f-185e30907ffd
   Args:
     literal_type: xsd:integer
-    source: :FerdinandPius
+    source: Duke_Paul_Frederick_of_Mecklenburg
     relation: :hasBirthYear
-    literal_value: 1869
-  AddLiteral (945b0390-30df-42af-933a-57a518bc3f22)
- Call ID: 945b0390-30df-42af-933a-57a518bc3f22
+    literal_value: 1882
+  AddLiteral (0a756679-1910-4e7f-a273-de0405f7e3f8)
+ Call ID: 0a756679-1910-4e7f-a273-de0405f7e3f8
   Args:
-    literal_value: 1960
+    literal_value: 1904
     relation: :hasDeathYear
-    source: :FerdinandPius
     literal_type: xsd:integer
-  AssignClass (6e29796a-dddc-4e0f-8cfb-9bb105a0455a)
- Call ID: 6e29796a-dddc-4e0f-8cfb-9bb105a0455a
+    source: Duke_Paul_Frederick_of_Mecklenburg
+  AddTriple (a7b2b983-101c-4358-a4b2-ad230448e081)
+ Call ID: a7b2b983-101c-4358-a4b2-ad230448e081
   Args:
-    type: :Man
-    source: :AlfonsoCountOfCaserta
-  AssignClass (042121bf-5fb0-4a22-a472-521fc40d090d)
- Call ID: 042121bf-5fb0-4a22-a472-521fc40d090d
-  Args:
-    type: :Ancestor
-    source: :AlfonsoCountOfCaserta
-  AssignClass (20be90d5-1132-4c98-9e25-7e7aefa89fbf)
- Call ID: 20be90d5-1132-4c98-9e25-7e7aefa89fbf
-  Args:
-    type: :Woman
-    source: :MariaAntonietta
-  AssignClass (975f590f-936f-4e1a-8604-82cb085f096d)
- Call ID: 975f590f-936f-4e1a-8604-82cb085f096d
-  Args:
-    type: :Ancestor
-    source: :MariaAntonietta
-  AddTriple (fc35a26e-96c3-4d61-8ba7-219c1ff02894)
- Call ID: fc35a26e-96c3-4d61-8ba7-219c1ff02894
-  Args:
+    source: Duke_Paul_Frederick_of_Mecklenburg
     relation: :hasFather
-    target: :AlfonsoCountOfCaserta
-    source: :FerdinandPius
-  AddTriple (48eb094f-1106-4ccc-b47f-a71fcf3d76ff)
- Call ID: 48eb094f-1106-4ccc-b47f-a71fcf3d76ff
+    target: Duke_Paul_Frederick_of_Mecklenburg_Senior
+  AddTriple (6bafc451-0e40-4665-8cda-b4cd1050935e)
+ Call ID: 6bafc451-0e40-4665-8cda-b4cd1050935e
   Args:
+    source: Duke_Paul_Frederick_of_Mecklenburg
     relation: :hasMother
-    source: :FerdinandPius
-    target: :MariaAntonietta
-  AssignClass (da8b53f6-0736-40d1-a893-558c0c0c226e)
- Call ID: da8b53f6-0736-40d1-a893-558c0c0c226e
+    target: Princess_Marie_of_Windisch-Graetz
+  AddTriple (3db8f8b3-ebaf-4106-9045-30954c99eb24)
+ Call ID: 3db8f8b3-ebaf-4106-9045-30954c99eb24
   Args:
-    type: :Man
-    source: :FerdinandII
-  AssignClass (7b8c6b0e-756b-42a6-b2c9-8d2c85f8b501)
- Call ID: 7b8c6b0e-756b-42a6-b2c9-8d2c85f8b501
-  Args:
-    type: :Ancestor
-    source: :FerdinandII
-  AddTriple (e02c4a07-9293-4f31-b65a-4068e39eb16f)
- Call ID: e02c4a07-9293-4f31-b65a-4068e39eb16f
-  Args:
-    target: :FerdinandII
-    source: :AlfonsoCountOfCaserta
+    source: Duke_Paul_Frederick_of_Mecklenburg
     relation: :hasFather
-  AssignClass (983f4aa9-1a08-4848-8d88-ede380e26f99)
- Call ID: 983f4aa9-1a08-4848-8d88-ede380e26f99
+    target: Frederick_Francis_II_Grand_Duke_of_Mecklenburg
+  AddTriple (3096a5c6-1e7c-4a01-adb0-a60ada601b69)
+ Call ID: 3096a5c6-1e7c-4a01-adb0-a60ada601b69
   Args:
-    type: :Woman
-    source: :MariaLudwigaTheresia
-  AddTriple (c88149a4-5578-4cea-b9d4-fd1ac49dbb2f)
- Call ID: c88149a4-5578-4cea-b9d4-fd1ac49dbb2f
+    target: :Male
+    relation: :hasSex
+    source: Duke_Paul_Frederick_of_Mecklenburg
+  AddTriple (413caa95-3e13-4e01-989e-d9685673c156)
+ Call ID: 413caa95-3e13-4e01-989e-d9685673c156
   Args:
-    relation: :hasRelation
-    target: :MariaLudwigaTheresia
-    source: :FerdinandPius
-  AddLiteral (878bce1c-6e2c-4b8d-9865-c09980ec3dc9)
- Call ID: 878bce1c-6e2c-4b8d-9865-c09980ec3dc9
+    source: Duke_Paul_Frederick_of_Mecklenburg_Senior
+    relation: :hasSex
+    target: :Male
+  AddTriple (315644a5-cdd1-403c-aad2-38617ff56a4d)
+ Call ID: 315644a5-cdd1-403c-aad2-38617ff56a4d
   Args:
-    literal_value: 1897
-    relation: :hasMarriageYear
-    source: :FerdinandPius
-    literal_type: xsd:integer
-  AssignClass (e7541440-ed01-4049-9596-badcc714ecee)
- Call ID: e7541440-ed01-4049-9596-badcc714ecee
+    target: :Female
+    relation: :hasSex
+    source: Princess_Marie_of_Windisch-Graetz
+  AddTriple (b7b6ffd7-0485-43d1-801d-7f453983e027)
+ Call ID: b7b6ffd7-0485-43d1-801d-7f453983e027
   Args:
-    type: :Man
-    source: :LudwigIII
-  AssignClass (2c9b6bc1-8d70-484a-9df6-a7feaac0c54e)
- Call ID: 2c9b6bc1-8d70-484a-9df6-a7feaac0c54e
+    target: :Male
+    source: Frederick_Francis_II_Grand_Duke_of_Mecklenburg
+    relation: :hasSex
+  Finish (11518163-90be-4b12-899c-e4dfb8bc727a)
+ Call ID: 11518163-90be-4b12-899c-e4dfb8bc727a
   Args:
-    type: :Ancestor
-    source: :LudwigIII
-  AddTriple (d032d6c8-cec2-41fa-809f-01dc353a0dec)
- Call ID: d032d6c8-cec2-41fa-809f-01dc353a0dec
-  Args:
-    relation: :hasFather
-    source: :MariaLudwigaTheresia
-    target: :LudwigIII
-  Finish (fe303f9b-caa3-45ee-bf2a-6b08387e443c)
- Call ID: fe303f9b-caa3-45ee-bf2a-6b08387e443c
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -567,31 +581,22 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:FerdinandPius a :Ancestor,
-          :Man ;
-      :alsoKnownAs "Ferdinando Pio Maria"^^xsd:string ;
-      :hasBirthYear 1869 ;
-      :hasDeathYear 1960 ;
-      :hasFather data:AlfonsoCountOfCaserta ;
-      :hasMarriageYear 1897 ;
-      :hasMother data:MariaAntonietta ;
-      :hasRelation data:MariaLudwigaTheresia .
+  data:Duke_Paul_Frederick_of_Mecklenburg a :Man ;
+      :hasBirthYear 1882 ;
+      :hasDeathYear 1904 ;
+      :hasFather data:Duke_Paul_Frederick_of_Mecklenburg_Senior,
+          data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg ;
+      :hasMother data:Princess_Marie_of_Windisch-Graetz ;
+      :hasSex data:Male .
 
-  data:AlfonsoCountOfCaserta a :Ancestor,
-          :Man ;
-      :hasFather data:FerdinandII .
+  data:Duke_Paul_Frederick_of_Mecklenburg_Senior a :Man ;
+      :hasSex data:Male .
 
-  data:FerdinandII a :Ancestor,
-          :Man .
+  data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg a :Man ;
+      :hasSex data:Male .
 
-  data:LudwigIII a :Ancestor,
-          :Man .
-
-  data:MariaAntonietta a :Ancestor,
-          :Woman .
-
-  data:MariaLudwigaTheresia a :Woman ;
-      :hasFather data:LudwigIII .
+  data:Princess_Marie_of_Windisch-Graetz a :Woman ;
+      :hasSex data:Female .
 
 
 
@@ -603,8 +608,851 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (1f032c3c-61fd-46c5-aa7e-867f24130a61)
- Call ID: 1f032c3c-61fd-46c5-aa7e-867f24130a61
+  ValidateShacl (77f44a98-bc10-4d2e-8781-3ce34c2caf31)
+ Call ID: 77f44a98-bc10-4d2e-8781-3ce34c2caf31
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:44
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of the node 'Duke_Paul_Frederick_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [2]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of the node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [3]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' of the node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Duke_Paul_Frederick_of_Mecklenburg' has a 'hasFather' relationship to 'Duke_Paul_Frederick_of_Mecklenburg_Senior', but the value node is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Duke_Paul_Frederick_of_Mecklenburg_Senior', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node 'Duke_Paul_Frederick_of_Mecklenburg' has a 'hasFather' relationship to 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg', but the value node is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_II_Grand_Duke_of_Mecklenburg', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: More than 1 values on data:Duke_Paul_Frederick_of_Mecklenburg->:hasFather
+    LLM-provided explanation of the violation:
+      The node 'Duke_Paul_Frederick_of_Mecklenburg' has more than one 'hasFather' relationship, violating the functional property constraint.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(subject='Duke_Paul_Frederick_of_Mecklenburg', predicate=':hasFather', object='Frederick_Francis_II_Grand_Duke_of_Mecklenburg')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node 'Duke_Paul_Frederick_of_Mecklenburg' has a 'hasMother' relationship to 'Princess_Marie_of_Windisch-Graetz', but the value node is not assigned the required class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Marie_of_Windisch-Graetz', class=':Ancestor')
+
+
+  Violation [8]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg' is missing the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [9]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [10]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for 'hasSex' on 'Princess_Marie_of_Windisch-Graetz' is missing the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg' is missing the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [13]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [14]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' for 'hasFather' is missing class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Duke_Paul_Frederick_of_Mecklenburg_Senior', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' for 'hasFather' is missing class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_II_Grand_Duke_of_Mecklenburg', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: More than 1 values on data:Duke_Paul_Frederick_of_Mecklenburg->:hasFather
+    LLM-provided explanation of the violation:
+      The node 'Duke_Paul_Frederick_of_Mecklenburg' has duplicate 'hasFather' relations.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(subject='Duke_Paul_Frederick_of_Mecklenburg', predicate=':hasFather', object='Frederick_Francis_II_Grand_Duke_of_Mecklenburg')
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value node 'Princess_Marie_of_Windisch-Graetz' for 'hasMother' is missing class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Marie_of_Windisch-Graetz', class=':Ancestor')
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for 'hasSex' on 'Princess_Marie_of_Windisch-Graetz' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [21]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [22]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [23]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for 'hasSex' on 'Princess_Marie_of_Windisch-Graetz' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [24]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [25]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [26]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for 'hasSex' on 'Princess_Marie_of_Windisch-Graetz' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [28]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [29]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [30]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      Value node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' for 'hasFather' is missing class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Duke_Paul_Frederick_of_Mecklenburg_Senior', class=':Ancestor')
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      Value node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' for 'hasFather' is missing class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Frederick_Francis_II_Grand_Duke_of_Mecklenburg', class=':Ancestor')
+
+
+  Violation [33]:
+    SHACL message: More than 1 values on data:Duke_Paul_Frederick_of_Mecklenburg->:hasFather
+    LLM-provided explanation of the violation:
+      Node 'Duke_Paul_Frederick_of_Mecklenburg' has duplicate 'hasFather' relations.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(subject='Duke_Paul_Frederick_of_Mecklenburg', predicate=':hasFather', object='Frederick_Francis_II_Grand_Duke_of_Mecklenburg')
+
+
+  Violation [34]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      Value node 'Princess_Marie_of_Windisch-Graetz' for 'hasMother' is missing class ':Ancestor'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Marie_of_Windisch-Graetz', class=':Ancestor')
+
+
+  Violation [35]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for 'hasSex' on 'Princess_Marie_of_Windisch-Graetz' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [36]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [37]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [38]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [39]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for 'hasSex' on 'Princess_Marie_of_Windisch-Graetz' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [40]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [41]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [42]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for 'hasSex' on 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [43]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for 'hasSex' on 'Princess_Marie_of_Windisch-Graetz' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [44]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for 'hasSex' on 'Princess_Marie_of_Windisch-Graetz' is missing class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (0418f23d-32cd-45d5-ada1-d57043718b50)
+ Call ID: 0418f23d-32cd-45d5-ada1-d57043718b50
+  Args:
+    relation: :hasFather
+    source: Duke_Paul_Frederick_of_Mecklenburg
+    target: Frederick_Francis_II_Grand_Duke_of_Mecklenburg
+  AssignClass (5dca9b71-9e0f-4005-9965-465fa3c13382)
+ Call ID: 5dca9b71-9e0f-4005-9965-465fa3c13382
+  Args:
+    type: :Ancestor
+    source: Duke_Paul_Frederick_of_Mecklenburg_Senior
+  AssignClass (5c007bb3-2b9d-438b-9cc1-74603ff60e74)
+ Call ID: 5c007bb3-2b9d-438b-9cc1-74603ff60e74
+  Args:
+    source: Princess_Marie_of_Windisch-Graetz
+    type: :Ancestor
+  AssignClass (9c41d42f-3ca3-4827-87b9-3aeb1e212584)
+ Call ID: 9c41d42f-3ca3-4827-87b9-3aeb1e212584
+  Args:
+    type: :Ancestor
+    source: Frederick_Francis_II_Grand_Duke_of_Mecklenburg
+  Finish (b8528f57-7025-4203-8d9f-e401ba83ca49)
+ Call ID: b8528f57-7025-4203-8d9f-e401ba83ca49
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Duke_Paul_Frederick_of_Mecklenburg a :Man ;
+      :hasBirthYear 1882 ;
+      :hasDeathYear 1904 ;
+      :hasFather data:Duke_Paul_Frederick_of_Mecklenburg_Senior ;
+      :hasMother data:Princess_Marie_of_Windisch-Graetz ;
+      :hasSex data:Male .
+
+  data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
+
+  data:Duke_Paul_Frederick_of_Mecklenburg_Senior a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
+
+  data:Princess_Marie_of_Windisch-Graetz a :Ancestor,
+          :Woman ;
+      :hasSex data:Female .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (81e2fa53-43f5-4df2-be47-9092d5151830)
+ Call ID: 81e2fa53-43f5-4df2-be47-9092d5151830
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:41
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [2]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [3]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [4]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [5]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [6]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [7]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [8]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [9]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Princess_Marie_of_Windisch-Graetz' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [10]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [13]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Princess_Marie_of_Windisch-Graetz' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [14]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [15]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [16]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Princess_Marie_of_Windisch-Graetz' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Princess_Marie_of_Windisch-Graetz' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [21]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [22]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Princess_Marie_of_Windisch-Graetz' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [23]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [24]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [25]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Princess_Marie_of_Windisch-Graetz' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [26]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [27]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [28]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [29]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [30]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Princess_Marie_of_Windisch-Graetz' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [31]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [32]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [33]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [34]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Princess_Marie_of_Windisch-Graetz' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [35]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [36]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [37]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Frederick_Francis_II_Grand_Duke_of_Mecklenburg' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [38]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Princess_Marie_of_Windisch-Graetz' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [39]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Duke_Paul_Frederick_of_Mecklenburg_Senior' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [40]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Princess_Marie_of_Windisch-Graetz' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+  Violation [41]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Princess_Marie_of_Windisch-Graetz' is missing the required class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (12f1031a-4082-451a-a49c-f84652c76a56)
+ Call ID: 12f1031a-4082-451a-a49c-f84652c76a56
+  Args:
+    source: Male
+    type: :Sex
+  AssignClass (4fedbb77-38b7-44d8-8f51-fd1b622afac7)
+ Call ID: 4fedbb77-38b7-44d8-8f51-fd1b622afac7
+  Args:
+    source: Female
+    type: :Sex
+  Finish (0a366739-0269-4a6c-be90-4662a87f20ca)
+ Call ID: 0a366739-0269-4a6c-be90-4662a87f20ca
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Duke_Paul_Frederick_of_Mecklenburg a :Man ;
+      :hasBirthYear 1882 ;
+      :hasDeathYear 1904 ;
+      :hasFather data:Duke_Paul_Frederick_of_Mecklenburg_Senior ;
+      :hasMother data:Princess_Marie_of_Windisch-Graetz ;
+      :hasSex data:Male .
+
+  data:Frederick_Francis_II_Grand_Duke_of_Mecklenburg a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
+
+  data:Duke_Paul_Frederick_of_Mecklenburg_Senior a :Ancestor,
+          :Man ;
+      :hasSex data:Male .
+
+  data:Female a :Sex .
+
+  data:Princess_Marie_of_Windisch-Graetz a :Ancestor,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Male a :Sex .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (23e02ec8-7c6c-403b-80ff-e282ac41ae44)
+ Call ID: 23e02ec8-7c6c-403b-80ff-e282ac41ae44
   Args:
 
 ================================= Tool Message =================================
@@ -615,6 +1463,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (56cb51f2-acd3-4261-ac79-d0efd985b3a8)
- Call ID: 56cb51f2-acd3-4261-ac79-d0efd985b3a8
+  Finish (522d57cf-d232-4689-9194-c018816e8d4b)
+ Call ID: 522d57cf-d232-4689-9194-c018816e8d4b
   Args:

@@ -69,63 +69,33 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Beatrix*
+Lady Davina Elizabeth Alice Benedikte Windsor (born 19 November 1977) is a member of the British royal family, and is the elder daughter of the Duke and Duchess of Gloucester.
+She was known as Lady Davina Lewis between 2004 and 2018, during her marriage to Gary Lewis.
+Early life and education
 
+Davina Elizabeth Alice Benedikte Windsor was born on 19 November 1977 at St Mary's Hospital, London, the second child of Prince Richard, Duke of Gloucester and Birgitte, Duchess of Gloucester.
+Her godparents are Captain Mark Phillips, the Duke of Buccleuch, Elisabeth, Lady Camoys, Susan Wigley, Roger Wellesley Smith and Caroline, Baroness Rosenørn-Lehn.
+Lady Davina grew up in Kensington Palace.
+Marriage and children
 
-Princess Margriet*Pieter van Vollenhoven*
-
-
-Princess Margriet of the Netherlands (Margriet Francisca; born 19 January 1943) is the third daughter of Queen Juliana and Prince Bernhard.
-As an aunt of the reigning monarch, King Willem-Alexander, she is a member of the Dutch Royal House and currently eighth and last in the line of succession to the throne.
-Princess Margriet has often represented the monarch at official or semi-official events.
-Birth and Canada
-
-Margriet was born to Princess Juliana of the Netherlands and Prince Bernhard of Lippe-Biesterfeld.
-Her mother was heir presumptive to Queen Wilhelmina.
-The Dutch royal family went into exile when the Netherlands was occupied by Nazi Germany in 1940, and went to live in Canada.
-Margriet was born in Ottawa Civic Hospital, Ottawa.
-Thus, the child would be eligible to succeed to the throne of the Netherlands.
-This would have applied if the child had been male, and therefore heir apparent to Juliana, or if her two older sisters died without eligible children.
-That was not necessary, as Canada follows jus soli, while the Netherlands follows jus sanguinis.
-Princess Margriet was named after the marguerite, the flower worn during the war as a symbol of the resistance to Nazi Germany.
-Her godparents included US President Franklin D. Roosevelt, Queen Mary (Queen dowager of the United Kingdom), Märtha, Crown Princess of Norway, and Martine Roell (lady-in-waiting to Princess Juliana in Canada).
-Princess Margriet has continued to visit Canada over the years in an official capacity, as recently as 2017 (Stratford, Ontario and Goderich, Ontario) and 2022 (Ottawa).
-After the war
-
-It was not until August 1945, when the Netherlands had been liberated, that Princess Margriet first set foot on Dutch soil.
-Princess Juliana and Prince Bernhard returned to Soestdijk Palace in Baarn, where the family had lived before the war.
-While she was studying at Leiden University, Princess Margriet met her future husband, Pieter van Vollenhoven.
-It was decreed that any children from the marriage would be titled Prince/Princess of Orange-Nassau, van Vollenhoven, with the style of Highness, titles that would not be held by their descendants.
-Together, they had four sons:
-
-
-The Princess and her husband took up residence in the right wing of Het Loo Palace in Apeldoorn.
-Interests and activities
-
-Princess Margriet is particularly interested in health care and cultural causes.
-From 1987 to 2011 she was vice-president of the Dutch Red Cross, who set up the Princess Margriet Fund in her honour.
-From 1984 to 2007, Princess Margriet was president of the European Cultural Foundation, who set up the Princess Margriet Award for Cultural Diversity in acknowledgement of her work.
-Titles and styles
-
-National honours
-
-Foreign honours
-
-Ancestry
-
-Notes
-
-References
-
-External links
-
-2 also Princess of Lippe-Biesterfeld
+On 31 July 2004, Davina married Gary Christie Lewis (born 15 August 1970), a Māori.
+Lewis is also the first person of known Māori descent to marry a member of the royal family, or to marry the daughter of a British prince.
+As she is a legitimate descendant in the male line of George V and in line to the British throne, the Royal Marriages Act 1772 required that Royal Assent to the wedding be obtained in advance for the marriage to be legal and the descendants thereof to inherit rights of succession to the thrones of the Commonwealth realms, including that of New Zealand.
+The wedding took place on 31 July 2004 at the private chapel of Kensington Palace, Davina's childhood home.
+Apart from the Duke and Duchess of Gloucester and the bride's siblings, no other members of the royal family were present at the wedding; only close friends and family were involved.
+Davina and her former husband have a daughter, Senna Kowhai, who was born on 22 June 2010 and a son, Tāne Mahuta, who was born 25 May 2012.
+Davina was also stepmother to Lewis's son from a previous relationship, Ari (born 1992).
+Davina does not carry out official functions but does attend family events including royal weddings.
+Davina and Gary Lewis were invited to attend the Queen's reception for members of the New Zealand All Blacks at Buckingham Palace in 2005.
+She and her then husband also attended Prince William's wedding in 2011.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -141,39 +111,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -188,6 +128,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -205,6 +162,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -272,29 +244,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -303,6 +267,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -315,6 +287,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -323,17 +297,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -361,6 +337,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -376,209 +436,159 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (70b4719a-a7b3-4271-a0cf-82c6c5c97ff0)
- Call ID: 70b4719a-a7b3-4271-a0cf-82c6c5c97ff0
+  AssignClass (f4471e31-c583-4307-883b-75797dd7cff6)
+ Call ID: f4471e31-c583-4307-883b-75797dd7cff6
   Args:
     type: :Woman
-    source: Princess_Margriet_of_the_Netherlands
-  AssignClass (2a355f67-0fc0-45cb-91ed-325977e05b21)
- Call ID: 2a355f67-0fc0-45cb-91ed-325977e05b21
+    source: Lady_Davina_Windsor
+  AssignClass (c208252e-56bd-4585-85aa-c9294cbf58e1)
+ Call ID: c208252e-56bd-4585-85aa-c9294cbf58e1
   Args:
     type: :Person
-    source: Princess_Margriet_of_the_Netherlands
-  AssignClass (a30b2b3d-4673-4170-ae98-06e967507e78)
- Call ID: a30b2b3d-4673-4170-ae98-06e967507e78
+    source: Lady_Davina_Windsor
+  AddLiteral (e9caa955-b682-44fc-8607-8891975de45e)
+ Call ID: e9caa955-b682-44fc-8607-8891975de45e
   Args:
+    source: Lady_Davina_Windsor
+    relation: :hasBirthYear
+    literal_value: 1977
+    literal_type: xsd:integer
+  AddLiteral (7188bafd-5e8b-4c81-a519-07e4faad30a1)
+ Call ID: 7188bafd-5e8b-4c81-a519-07e4faad30a1
+  Args:
+    literal_value: Lady Davina Lewis
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+    source: Lady_Davina_Windsor
+  AssignClass (94a270ea-7c0d-4c30-b64d-6442b8bad883)
+ Call ID: 94a270ea-7c0d-4c30-b64d-6442b8bad883
+  Args:
+    type: :Man
+    source: Prince_Richard_Duke_of_Gloucester
+  AssignClass (6a1bde81-2808-4064-80b4-00e97e8f29b8)
+ Call ID: 6a1bde81-2808-4064-80b4-00e97e8f29b8
+  Args:
+    source: Prince_Richard_Duke_of_Gloucester
+    type: :Person
+  AssignClass (a0f74782-5f34-44d5-84c6-e2d23f7a737b)
+ Call ID: a0f74782-5f34-44d5-84c6-e2d23f7a737b
+  Args:
+    source: Birgitte_Duchess_of_Gloucester
     type: :Woman
-    source: Queen_Juliana
-  AssignClass (0550f0ff-4259-447a-98f1-7e327f61f4b0)
- Call ID: 0550f0ff-4259-447a-98f1-7e327f61f4b0
-  Args:
-    type: :Ancestor
-    source: Queen_Juliana
-  AssignClass (09b72516-0174-40ee-abea-602c14fa45a4)
- Call ID: 09b72516-0174-40ee-abea-602c14fa45a4
-  Args:
-    type: :Man
-    source: Prince_Bernhard
-  AssignClass (0737198c-33de-46a4-81e2-69879ff220f6)
- Call ID: 0737198c-33de-46a4-81e2-69879ff220f6
-  Args:
-    type: :Ancestor
-    source: Prince_Bernhard
-  AssignClass (4de867c1-3f0f-45ff-a713-26e3f4cdaec8)
- Call ID: 4de867c1-3f0f-45ff-a713-26e3f4cdaec8
-  Args:
-    type: :Man
-    source: Pieter_van_Vollenhoven
-  AssignClass (dd801070-b83a-4b9e-9a34-daa60452d641)
- Call ID: dd801070-b83a-4b9e-9a34-daa60452d641
+  AssignClass (dfff597b-d8b6-47c0-a126-2288add4f918)
+ Call ID: dfff597b-d8b6-47c0-a126-2288add4f918
   Args:
     type: :Person
-    source: Pieter_van_Vollenhoven
-  AddTriple (06780ff5-c353-4920-9d3f-5d38b2112db4)
- Call ID: 06780ff5-c353-4920-9d3f-5d38b2112db4
+    source: Birgitte_Duchess_of_Gloucester
+  AddTriple (439f54ca-4809-4e29-8c21-17c73b9f2709)
+ Call ID: 439f54ca-4809-4e29-8c21-17c73b9f2709
   Args:
-    target: Queen_Juliana
-    source: Princess_Margriet_of_the_Netherlands
-    relation: :isDaughterOf
-  AddTriple (ba23d5fd-5988-435a-8d7d-0067690edf7e)
- Call ID: ba23d5fd-5988-435a-8d7d-0067690edf7e
-  Args:
+    target: Prince_Richard_Duke_of_Gloucester
     relation: :hasFather
-    source: Princess_Margriet_of_the_Netherlands
-    target: Prince_Bernhard
-  AddLiteral (71b05833-9fd3-44a4-8b85-947578cc0319)
- Call ID: 71b05833-9fd3-44a4-8b85-947578cc0319
+    source: Lady_Davina_Windsor
+  AddTriple (273b2c90-f027-4bdf-a357-f485e1074a56)
+ Call ID: 273b2c90-f027-4bdf-a357-f485e1074a56
   Args:
-    literal_value: 1943
-    source: Princess_Margriet_of_the_Netherlands
+    target: Birgitte_Duchess_of_Gloucester
+    relation: :hasMother
+    source: Lady_Davina_Windsor
+  AssignClass (7179c997-8e54-42f0-96f4-a671c9d11a05)
+ Call ID: 7179c997-8e54-42f0-96f4-a671c9d11a05
+  Args:
+    type: :Man
+    source: Gary_Christie_Lewis
+  AssignClass (c555b4da-7bad-4b1e-a851-e0c7f959d641)
+ Call ID: c555b4da-7bad-4b1e-a851-e0c7f959d641
+  Args:
+    type: :Person
+    source: Gary_Christie_Lewis
+  AddLiteral (c2a74324-3c5f-4e10-8e07-208550282beb)
+ Call ID: c2a74324-3c5f-4e10-8e07-208550282beb
+  Args:
+    source: Gary_Christie_Lewis
+    relation: :hasBirthYear
+    literal_value: 1970
+    literal_type: xsd:integer
+  AddLiteral (6b2080c9-32e4-46ef-b3c9-8bb48cdcc640)
+ Call ID: 6b2080c9-32e4-46ef-b3c9-8bb48cdcc640
+  Args:
+    literal_type: xsd:integer
+    literal_value: 2004
+    relation: :hasMarriageYear
+    source: Lady_Davina_Windsor
+  AddTriple (fa761181-dc4a-42ef-a8a6-0861f2612202)
+ Call ID: fa761181-dc4a-42ef-a8a6-0861f2612202
+  Args:
+    source: Lady_Davina_Windsor
+    target: Gary_Christie_Lewis
+    relation: :hasRelation
+  AssignClass (f77aa6f4-467b-4171-a919-9cca1b3c65d7)
+ Call ID: f77aa6f4-467b-4171-a919-9cca1b3c65d7
+  Args:
+    type: :Woman
+    source: Senna_Kowhai
+  AssignClass (e6ee1edc-9c27-455c-b2ce-9193e3d5aefc)
+ Call ID: e6ee1edc-9c27-455c-b2ce-9193e3d5aefc
+  Args:
+    source: Senna_Kowhai
+    type: :Person
+  AddTriple (f0f7913f-1e14-4441-bc07-e086fbf4a229)
+ Call ID: f0f7913f-1e14-4441-bc07-e086fbf4a229
+  Args:
+    source: Senna_Kowhai
+    target: Lady_Davina_Windsor
+    relation: :isDaughterOf
+  AddTriple (b436cf7d-af56-47fa-9509-593853389a49)
+ Call ID: b436cf7d-af56-47fa-9509-593853389a49
+  Args:
+    target: Gary_Christie_Lewis
+    relation: :isDaughterOf
+    source: Senna_Kowhai
+  AssignClass (c96e46e2-d793-4c8d-88b6-f1d8a5c56310)
+ Call ID: c96e46e2-d793-4c8d-88b6-f1d8a5c56310
+  Args:
+    source: Tane_Mahuta
+    type: :Man
+  AssignClass (ec66ed75-374e-416b-940c-0450fdd58ee5)
+ Call ID: ec66ed75-374e-416b-940c-0450fdd58ee5
+  Args:
+    type: :Person
+    source: Tane_Mahuta
+  AddTriple (e77738c3-96a4-4af8-9125-f35d71914eb3)
+ Call ID: e77738c3-96a4-4af8-9125-f35d71914eb3
+  Args:
+    source: Tane_Mahuta
+    relation: :isSonOf
+    target: Lady_Davina_Windsor
+  AddTriple (fbc498f6-9fd5-48e8-ac27-37df8848f121)
+ Call ID: fbc498f6-9fd5-48e8-ac27-37df8848f121
+  Args:
+    target: Gary_Christie_Lewis
+    relation: :isSonOf
+    source: Tane_Mahuta
+  AssignClass (a7a4b18f-032a-4b9d-ade7-243d874fa255)
+ Call ID: a7a4b18f-032a-4b9d-ade7-243d874fa255
+  Args:
+    source: Ari
+    type: :Man
+  AssignClass (d2ff02fe-d9ff-407b-821b-f53d7832bfb4)
+ Call ID: d2ff02fe-d9ff-407b-821b-f53d7832bfb4
+  Args:
+    type: :Person
+    source: Ari
+  AddLiteral (3fd5e7ae-02b4-4166-b774-c1c919025351)
+ Call ID: 3fd5e7ae-02b4-4166-b774-c1c919025351
+  Args:
     literal_type: xsd:integer
     relation: :hasBirthYear
-  AddTriple (4d2e9654-fcda-4c36-a727-65c4582c3408)
- Call ID: 4d2e9654-fcda-4c36-a727-65c4582c3408
+    literal_value: 1992
+    source: Ari
+  AddTriple (986a7c6a-302e-43d2-aa74-b5c1e19df02e)
+ Call ID: 986a7c6a-302e-43d2-aa74-b5c1e19df02e
   Args:
-    relation: :hasSex
-    target: :Female
-    source: Princess_Margriet_of_the_Netherlands
-  AddTriple (ae3652a2-70ac-439e-9df6-cb7d78322f1c)
- Call ID: ae3652a2-70ac-439e-9df6-cb7d78322f1c
-  Args:
-    target: :Female
-    source: Queen_Juliana
-    relation: :hasSex
-  AddTriple (79b64dd9-2a8e-43c9-99ac-b7db2dfba072)
- Call ID: 79b64dd9-2a8e-43c9-99ac-b7db2dfba072
-  Args:
-    relation: :hasSex
-    source: Prince_Bernhard
-    target: :Male
-  AddTriple (348caa21-9f4c-4d22-905e-de46cd7af722)
- Call ID: 348caa21-9f4c-4d22-905e-de46cd7af722
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: Pieter_van_Vollenhoven
-  Finish (67ffa0fd-61e3-43ad-b5a0-975e05f64603)
- Call ID: 67ffa0fd-61e3-43ad-b5a0-975e05f64603
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Pieter_van_Vollenhoven a :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Princess_Margriet_of_the_Netherlands a :Person,
-          :Woman ;
-      :hasBirthYear 1943 ;
-      :hasFather data:Prince_Bernhard ;
-      :hasSex data:Female ;
-      :isDaughterOf data:Queen_Juliana .
-
-  data:Prince_Bernhard a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Queen_Juliana a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male', 'Female']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (ecd6cb3f-7d1a-4393-97b3-9733f9bc5554)
- Call ID: ecd6cb3f-7d1a-4393-97b3-9733f9bc5554
-  Args:
-    type: :Sex
-    source: Male
-  AssignClass (6e2744bc-da0b-428e-98d2-070c8de903cf)
- Call ID: 6e2744bc-da0b-428e-98d2-070c8de903cf
-  Args:
-    type: :Sex
-    source: Female
-  Finish (525249d6-9fea-4a40-8294-369328de11fd)
- Call ID: 525249d6-9fea-4a40-8294-369328de11fd
+    relation: :isSonOf
+    target: Gary_Christie_Lewis
+    source: Ari
+  Finish (5cf82543-28e8-4730-a18c-c6744859525b)
+ Call ID: 5cf82543-28e8-4730-a18c-c6744859525b
   Args:

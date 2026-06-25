@@ -2,20 +2,47 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Edward_Edmund_Maximilian_George_Windsor a :Man,
+data:Daniel_Chatto a :Man,
         :Person ;
-    :hasBirthYear 1988 ;
-    :hasFather data:George_Windsor_Earl_of_St_Andrews ;
-    :hasMother data:Sylvana_Countess_of_St_Andrews ;
-    :knownAs "Eddy Downpatrick"^^xsd:string .
+    :hasFather data:Tom_Chatto ;
+    :hasMother data:Ros_Chatto .
 
-data:George_Windsor_Earl_of_St_Andrews a :Man,
+data:Jasper_Cable-Alexander a :Man,
         :Person ;
-    :hasFather data:Prince_Edward_Duke_of_Kent .
+    :hasFather data:Antony_Armstrong-Jones .
 
-data:Prince_Edward_Duke_of_Kent a :Man,
-        :Person .
+data:Lady_Frances_Armstrong-Jones a :Person,
+        :Woman ;
+    :hasFather data:Antony_Armstrong-Jones .
 
-data:Sylvana_Countess_of_St_Andrews a :Person,
+data:Polly_Fry a :Person,
+        :Woman ;
+    :hasFather data:Antony_Armstrong-Jones .
+
+data:Sarah_Chatto a :Person,
+        :Woman ;
+    :hasBirthYear 1964 ;
+    :hasBrother data:David_Armstrong-Jones ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret .
+
+data:David_Armstrong-Jones a :Man,
+        :Person ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret .
+
+data:Ros_Chatto a :Person,
+        :Woman ;
+    :hasDeathYear 2012 .
+
+data:Tom_Chatto a :Man,
+        :Person ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1982 .
+
+data:Princess_Margaret a :Person,
         :Woman .
+
+data:Antony_Armstrong-Jones a :Man,
+        :Person .
 

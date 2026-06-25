@@ -2,50 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Athena a :Person,
-        :Woman ;
-    :hasFather data:Joachim ;
-    :hasMother data:Marie_Cavallier .
-
-data:Felix a :Man,
+data:Bruno_Alejandro_Gomez-Acebo_Borbon a :Man,
         :Person ;
-    :hasFather data:Joachim ;
-    :hasMother data:Alexandra .
+    :isSonOf data:Infanta_Pilar .
 
-data:Frederik_X a :Man,
+data:Infanta_Pilar a :Ancestor,
+        :Person,
+        :Woman ;
+    :alsoKnownAs "Pilar de Borbón"^^xsd:string ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasDeathYear 2020 ;
+    :hasFather data:Juan_Count_of_Barcelona ;
+    :hasMother data:Maria_Mercedes_of_the_Two_Sicilies ;
+    :hasSon data:Bruno_Alejandro_Gomez-Acebo_Borbon ;
+    :isSisterOf data:Juan_Carlos_I .
+
+data:Juan_Count_of_Barcelona a :Ancestor,
+        :Man,
         :Person .
 
-data:Henrik_HalfSibling a :Man,
-        :Person ;
-    :hasFather data:Joachim ;
-    :hasMother data:Marie_Cavallier .
-
-data:Henrik_Prince a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSon data:Joachim .
-
-data:Margrethe_II a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSon data:Joachim .
-
-data:Nikolai a :Man,
-        :Person ;
-    :hasBirthYear 1999 ;
-    :hasFather data:Joachim ;
-    :hasMother data:Alexandra ;
-    :knownAs "Count Nikolai of Monpezat"^^xsd:string .
-
-data:Alexandra a :Ancestor,
+data:Maria_Mercedes_of_the_Two_Sicilies a :Ancestor,
         :Person,
         :Woman .
 
-data:Marie_Cavallier a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Joachim a :Ancestor,
-        :Man,
+data:Juan_Carlos_I a :Man,
         :Person .
 

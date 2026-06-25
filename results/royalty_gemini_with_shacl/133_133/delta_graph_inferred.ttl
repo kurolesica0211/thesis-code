@@ -1,0 +1,124 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Florence_Pearson a :Person,
+        :Woman ;
+    :hasRelation data:Anne_Topping,
+        data:Bernard_Topping,
+        data:Florence_Pearson,
+        data:Granville_George_Fergus_Leveson-Gower,
+        data:Granville_Leveson-Gower_5th_Earl_Granville,
+        data:Rose_Leveson-Gower ;
+    :hasSister data:Florence_Pearson ;
+    :isBloodrelationOf data:Florence_Pearson ;
+    :isSiblingOf data:Florence_Pearson ;
+    :isSisterOf data:Florence_Pearson .
+
+data:Bernard_Topping a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Bernard_Topping ;
+    :hasChild data:Anne_Topping ;
+    :hasDaughter data:Anne_Topping ;
+    :hasRelation data:Anne_Topping,
+        data:Bernard_Topping,
+        data:Florence_Pearson,
+        data:Granville_George_Fergus_Leveson-Gower,
+        data:Granville_Leveson-Gower_5th_Earl_Granville,
+        data:Rose_Leveson-Gower ;
+    :isAncestorOf data:Anne_Topping ;
+    :isBloodrelationOf data:Bernard_Topping ;
+    :isBrotherOf data:Bernard_Topping ;
+    :isFatherOf data:Anne_Topping ;
+    :isParentOf data:Anne_Topping ;
+    :isSiblingOf data:Bernard_Topping ;
+    :isUncleOf data:Anne_Topping .
+
+data:Anne_Topping a :Person,
+        :Woman ;
+    :hasAncestor data:Bernard_Topping ;
+    :hasFather data:Bernard_Topping ;
+    :hasParent data:Bernard_Topping ;
+    :hasRelation data:Anne_Topping,
+        data:Bernard_Topping,
+        data:Florence_Pearson,
+        data:Granville_George_Fergus_Leveson-Gower,
+        data:Granville_Leveson-Gower_5th_Earl_Granville,
+        data:Rose_Leveson-Gower ;
+    :hasSister data:Anne_Topping ;
+    :isBloodrelationOf data:Anne_Topping ;
+    :isChildOf data:Bernard_Topping ;
+    :isDaughterOf data:Bernard_Topping ;
+    :isSiblingOf data:Anne_Topping ;
+    :isSisterOf data:Anne_Topping .
+
+data:Rose_Leveson-Gower a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :hasRelation data:Anne_Topping,
+        data:Bernard_Topping,
+        data:Florence_Pearson,
+        data:Granville_George_Fergus_Leveson-Gower,
+        data:Granville_Leveson-Gower_5th_Earl_Granville,
+        data:Rose_Leveson-Gower ;
+    :hasSister data:Rose_Leveson-Gower ;
+    :hasSon data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :isAncestorOf data:Granville_George_Fergus_Leveson-Gower,
+        data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :isAuntOf data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :isBloodrelationOf data:Rose_Leveson-Gower ;
+    :isMotherOf data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :isParentOf data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :isSiblingOf data:Rose_Leveson-Gower ;
+    :isSisterOf data:Rose_Leveson-Gower .
+
+data:Granville_George_Fergus_Leveson-Gower a :Man,
+        :Person ;
+    :formerlyKnownAs "Lord Leveson"^^xsd:string ;
+    :hasAncestor data:Granville_Leveson-Gower_5th_Earl_Granville,
+        data:Rose_Leveson-Gower ;
+    :hasBirthYear 1959 ;
+    :hasBrother data:Granville_George_Fergus_Leveson-Gower ;
+    :hasFather data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :hasMarriageYear 1997,
+        2016 ;
+    :hasParent data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :hasRelation data:Anne_Topping,
+        data:Bernard_Topping,
+        data:Florence_Pearson,
+        data:Granville_George_Fergus_Leveson-Gower,
+        data:Granville_Leveson-Gower_5th_Earl_Granville,
+        data:Rose_Leveson-Gower ;
+    :isBloodrelationOf data:Granville_George_Fergus_Leveson-Gower ;
+    :isBrotherOf data:Granville_George_Fergus_Leveson-Gower ;
+    :isChildOf data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :isSiblingOf data:Granville_George_Fergus_Leveson-Gower ;
+    :isSonOf data:Granville_Leveson-Gower_5th_Earl_Granville .
+
+data:Granville_Leveson-Gower_5th_Earl_Granville a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Rose_Leveson-Gower ;
+    :hasBrother data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :hasChild data:Granville_George_Fergus_Leveson-Gower ;
+    :hasMother data:Rose_Leveson-Gower ;
+    :hasParent data:Rose_Leveson-Gower ;
+    :hasRelation data:Anne_Topping,
+        data:Bernard_Topping,
+        data:Florence_Pearson,
+        data:Granville_George_Fergus_Leveson-Gower,
+        data:Granville_Leveson-Gower_5th_Earl_Granville,
+        data:Rose_Leveson-Gower ;
+    :hasSon data:Granville_George_Fergus_Leveson-Gower ;
+    :isAncestorOf data:Granville_George_Fergus_Leveson-Gower ;
+    :isBloodrelationOf data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :isBrotherOf data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :isChildOf data:Rose_Leveson-Gower ;
+    :isFatherOf data:Granville_George_Fergus_Leveson-Gower ;
+    :isParentOf data:Granville_George_Fergus_Leveson-Gower ;
+    :isSiblingOf data:Granville_Leveson-Gower_5th_Earl_Granville ;
+    :isSonOf data:Rose_Leveson-Gower ;
+    :isUncleOf data:Granville_George_Fergus_Leveson-Gower .
+

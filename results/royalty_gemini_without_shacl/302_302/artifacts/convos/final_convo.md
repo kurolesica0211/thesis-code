@@ -69,37 +69,27 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Tomislav of Yugoslavia (Serbian: Томислав Карађорђевић, Tomislav Karađorđević; 19 January 1928 – 12 July 2000) was a member of the House of Karađorđević, the second son of King Alexander I and Queen Maria of Yugoslavia.
-He was a younger brother of King Peter II of Yugoslavia and a former nephew-in-law to Queen Elizabeth II and Prince Philip.
-Early life and education
+Prince Nikola of Yugoslavia (29 June 1928 – 12 April 1954), also known in Britain as Prince Nicholas and in Serbia as Nikola Karađorđević (Serbian Cyrillic: Никола Карађорђевић), was the younger son of Prince Paul of Yugoslavia by his wife Princess Olga of Greece and Denmark.
+Biography
 
-Prince Tomislav was born on 19 January 1928, on Epiphany according to the Julian calendar used by the Serbian Orthodox Church, at 1 am, as the second son of the sovereign of the then Kingdom of Serbs, Croats and Slovenes (later the Kingdom of Yugoslavia), Alexander I and Queen Maria, the second daughter of King Ferdinand of Romania and his wife Queen Marie.
-The Prince was named after Tomislav of Croatia, the King of medieval Croatia.
-At the beginning of February 1928, a delegation was sent from Županjac (present-day Tomislavgrad) headed by the parish priest Šimun Ančić who handed Alexander the resolution in which the population of the Srez of Županjac asks him to change the name of the srez to Tomislavgrad, in honour of his son and Tomislav of Croatia.
-Not long after, Alexander granted them their petition but dropped Tomislav of Croatia from his decree.
-Events in Yugoslavia
+Prince Nikola was born into the House of Karađorđević, the dynasty that ruled Serbia and later the Kingdom of Yugoslavia.
+Known as "Nicky", he was educated in England at Oxford University and was a frequent social escort to Princess Margaret, sister of Queen Elizabeth II.
+Prince Nikola died unmarried in 1954, survived by his parents, Prince Paul and Princess Olga of Yugoslavia; older brother Prince Alexander and younger sister, Princess Elizabeth; also his maternal grandmother, Grand Duchess Elena Vladimirovna of Russia (Princess Nicholas of Greece and Denmark) and his maternal aunts, Princess Elizabeth, Countess of Toerring-Jettenbach, and Princess Marina, Duchess of Kent.
+Death
 
-In 1934 when he was only six, Prince Tomislav's father, Alexander I, was assassinated and his elder brother Peter succeeded to the throne as King Peter II of Yugoslavia.
-As he was still only 11, because of his young age, a regency was established, headed by their father's cousin Prince Paul of Yugoslavia.
-After initially declaring neutrality, on 25 March 1941, although King Peter and his advisors were opposed to Nazi Germany, the Regent, Prince Paul, under immense German pressure signed the Tripartite Pact originally signed by Germany, Italy, and Japan.
-Postponing Operation Barbarossa, Germany simultaneously attacked Yugoslavia and Greece.
-Within a week, Germany, Bulgaria, Hungary and Italy invaded Yugoslavia and the government was forced to surrender on 17 April.
-Yugoslavia was divided to satisfy Italian, Bulgarian, Hungarian and German demands and puppet Croat, Montenegrin and Serb states proclaimed.
-However, in 1944, the Tito–Šubašić agreement recognised the Democratic Federal Yugoslavia as a provisional government, with the status of the monarchy to be decided at a later date.
-The Federal People's Republic of Yugoslavia was internationally recognized as Yugoslavia while Peter II became a pretender.
-Life in exile
-
-After Cambridge, and not being able to return to Yugoslavia following the abolition of the monarchy, Prince Tomislav remained in the UK and devoted himself to fruit growing.
-Marriage and issue
-
-He was married on 5 June 1957, in Salem, Baden-Württemberg, West Germany, to Princess Margarita of Baden, niece of Prince Philip, Duke of Edinburgh.
-Tomislav and Margarita were divorced in 1981.
+Nikola died in a road accident at Datchet, now in Berkshire, England, some five miles from the home of his aunt, the Duchess of Kent.
+He was
+driving himself alone towards London, on his way to a meeting with Princess Margaret the same evening, to attend a full-dress rehearsal of a play being performed by a group of young socialites.
+He was a paternal grandson of Arsen Karađorđević, Prince of Serbia and Princess Aurora Pavlovna Demidova di San Donato.
+He was a maternal grandson of Prince Nicholas of Greece and Denmark and Grand Duchess Elena Vladimirovna of Russia.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +105,9 @@ Tomislav and Margarita were divorced in 1981.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +122,23 @@ Tomislav and Margarita were divorced in 1981.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +156,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +238,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +261,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +281,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +291,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +331,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,165 +430,211 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (fb3a08b9-cde3-4127-b349-36599bf4b3dd)
- Call ID: fb3a08b9-cde3-4127-b349-36599bf4b3dd
+  AssignClass (44f4768c-342a-4f72-ba8b-9b0ba0ca7554)
+ Call ID: 44f4768c-342a-4f72-ba8b-9b0ba0ca7554
   Args:
     type: :Man
-    source: :Prince_Tomislav_of_Yugoslavia
-  AssignClass (4e1023d3-7bcd-4a58-b9af-eac14d465886)
- Call ID: 4e1023d3-7bcd-4a58-b9af-eac14d465886
+    source: :PrinceNikolaOfYugoslavia
+  AssignClass (2945e2ed-98ce-4c76-8a15-9c1082bcb9b7)
+ Call ID: 2945e2ed-98ce-4c76-8a15-9c1082bcb9b7
   Args:
     type: :Person
-    source: :Prince_Tomislav_of_Yugoslavia
-  AssignClass (55656fcf-fe0f-4eeb-9e8d-80de0673242f)
- Call ID: 55656fcf-fe0f-4eeb-9e8d-80de0673242f
-  Args:
-    type: :Man
-    source: :King_Alexander_I
-  AssignClass (2740ae19-74c9-4aba-8546-2f4290ee4f6f)
- Call ID: 2740ae19-74c9-4aba-8546-2f4290ee4f6f
-  Args:
-    type: :Ancestor
-    source: :King_Alexander_I
-  AssignClass (4af417ee-dee9-434f-a0f9-af69362e313e)
- Call ID: 4af417ee-dee9-434f-a0f9-af69362e313e
-  Args:
-    source: :King_Alexander_I
-    type: :Person
-  AssignClass (f2d53c0c-301d-4711-b3e0-8d457b8b5d35)
- Call ID: f2d53c0c-301d-4711-b3e0-8d457b8b5d35
-  Args:
-    source: :Queen_Maria_of_Yugoslavia
-    type: :Woman
-  AssignClass (5c2f6b48-9929-40b6-9c30-18ad138a971a)
- Call ID: 5c2f6b48-9929-40b6-9c30-18ad138a971a
-  Args:
-    source: :Queen_Maria_of_Yugoslavia
-    type: :Ancestor
-  AssignClass (16d00890-56d5-4ec9-970a-2facfcfd0f77)
- Call ID: 16d00890-56d5-4ec9-970a-2facfcfd0f77
-  Args:
-    source: :Queen_Maria_of_Yugoslavia
-    type: :Person
-  AssignClass (44bc3572-48fd-4ef0-91c6-454e440f8d65)
- Call ID: 44bc3572-48fd-4ef0-91c6-454e440f8d65
-  Args:
-    type: :Man
-    source: :King_Peter_II_of_Yugoslavia
-  AssignClass (5bef2c8a-1175-48cf-be36-97156177bb49)
- Call ID: 5bef2c8a-1175-48cf-be36-97156177bb49
-  Args:
-    type: :Person
-    source: :King_Peter_II_of_Yugoslavia
-  AssignClass (df69e90a-edfd-45a7-bb20-e2e0b17fb58c)
- Call ID: df69e90a-edfd-45a7-bb20-e2e0b17fb58c
-  Args:
-    source: :King_Ferdinand_of_Romania
-    type: :Man
-  AssignClass (bb5f6b81-76cd-4698-85cc-d88a1a60bfbd)
- Call ID: bb5f6b81-76cd-4698-85cc-d88a1a60bfbd
-  Args:
-    type: :Ancestor
-    source: :King_Ferdinand_of_Romania
-  AssignClass (b84d23ac-feb0-4568-a547-cc123e1c6408)
- Call ID: b84d23ac-feb0-4568-a547-cc123e1c6408
-  Args:
-    source: :King_Ferdinand_of_Romania
-    type: :Person
-  AssignClass (b91acf6f-db70-42bc-8462-3a972c90cac2)
- Call ID: b91acf6f-db70-42bc-8462-3a972c90cac2
-  Args:
-    source: :Queen_Marie_of_Romania
-    type: :Woman
-  AssignClass (d11fdcb3-52bb-4113-bcbb-6ba89e8d20a3)
- Call ID: d11fdcb3-52bb-4113-bcbb-6ba89e8d20a3
-  Args:
-    type: :Ancestor
-    source: :Queen_Marie_of_Romania
-  AssignClass (786d7271-80fe-4785-abde-d358db14f34b)
- Call ID: 786d7271-80fe-4785-abde-d358db14f34b
-  Args:
-    source: :Queen_Marie_of_Romania
-    type: :Person
-  AssignClass (a1865547-7539-4fae-8dc3-19f5ca991dcd)
- Call ID: a1865547-7539-4fae-8dc3-19f5ca991dcd
-  Args:
-    type: :Woman
-    source: :Princess_Margarita_of_Baden
-  AssignClass (2ea69ea3-05e6-49ab-9656-065fd62c30ae)
- Call ID: 2ea69ea3-05e6-49ab-9656-065fd62c30ae
-  Args:
-    type: :Person
-    source: :Princess_Margarita_of_Baden
-  AddLiteral (06dd2362-21e3-4843-93ae-b723f4c8994d)
- Call ID: 06dd2362-21e3-4843-93ae-b723f4c8994d
+    source: :PrinceNikolaOfYugoslavia
+  AddLiteral (69f5de5a-4eaa-49e2-98b4-b22adad2b373)
+ Call ID: 69f5de5a-4eaa-49e2-98b4-b22adad2b373
   Args:
     literal_value: 1928
-    source: :Prince_Tomislav_of_Yugoslavia
+    source: :PrinceNikolaOfYugoslavia
     relation: :hasBirthYear
     literal_type: xsd:integer
-  AddLiteral (f2c81f9d-1cc2-4a06-b25d-538a2f814f5d)
- Call ID: f2c81f9d-1cc2-4a06-b25d-538a2f814f5d
+  AddLiteral (0803bd50-4078-4285-95d5-d7f00b4223d5)
+ Call ID: 0803bd50-4078-4285-95d5-d7f00b4223d5
   Args:
-    literal_value: 2000
+    source: :PrinceNikolaOfYugoslavia
     relation: :hasDeathYear
-    source: :Prince_Tomislav_of_Yugoslavia
     literal_type: xsd:integer
-  AddTriple (6185a3fe-d737-4f7d-add6-07e459027a04)
- Call ID: 6185a3fe-d737-4f7d-add6-07e459027a04
+    literal_value: 1954
+  AddLiteral (8bf7f95c-7c68-450f-aa3b-ebc0edea07cf)
+ Call ID: 8bf7f95c-7c68-450f-aa3b-ebc0edea07cf
   Args:
-    target: :King_Alexander_I
-    source: :Prince_Tomislav_of_Yugoslavia
+    literal_value: Prince Nicholas
+    source: :PrinceNikolaOfYugoslavia
+    relation: :alsoKnownAs
+    literal_type: xsd:string
+  AddLiteral (81007363-e7a9-43f7-bbf3-61d78fceeba4)
+ Call ID: 81007363-e7a9-43f7-bbf3-61d78fceeba4
+  Args:
+    literal_value: Nikola Karađorđević
+    source: :PrinceNikolaOfYugoslavia
+    literal_type: xsd:string
+    relation: :alsoKnownAs
+  AddLiteral (566f0a91-c0b2-46a5-84aa-e02e7b5ee77d)
+ Call ID: 566f0a91-c0b2-46a5-84aa-e02e7b5ee77d
+  Args:
+    literal_value: Nicky
+    source: :PrinceNikolaOfYugoslavia
+    literal_type: xsd:string
+    relation: :knownAs
+  AssignClass (27a4016d-1bf0-47b5-8c23-ae375dff7ac8)
+ Call ID: 27a4016d-1bf0-47b5-8c23-ae375dff7ac8
+  Args:
+    type: :Man
+    source: :PrincePaulOfYugoslavia
+  AssignClass (053c7e42-6c2f-4d03-ae65-b9c96edb43a5)
+ Call ID: 053c7e42-6c2f-4d03-ae65-b9c96edb43a5
+  Args:
+    type: :Person
+    source: :PrincePaulOfYugoslavia
+  AddTriple (28918bee-5226-4797-8283-bb75f2dc0e58)
+ Call ID: 28918bee-5226-4797-8283-bb75f2dc0e58
+  Args:
     relation: :hasFather
-  AddTriple (0c1a4635-2504-429d-b9f2-bf13446ccad4)
- Call ID: 0c1a4635-2504-429d-b9f2-bf13446ccad4
+    source: :PrinceNikolaOfYugoslavia
+    target: :PrincePaulOfYugoslavia
+  AssignClass (f5e057a3-b06f-4d0d-acda-0104eda9ee6e)
+ Call ID: f5e057a3-b06f-4d0d-acda-0104eda9ee6e
   Args:
-    source: :Prince_Tomislav_of_Yugoslavia
+    source: :PrincessOlgaOfGreeceAndDenmark
+    type: :Woman
+  AssignClass (7433d6cf-4931-49c5-8113-bd29b6d661dc)
+ Call ID: 7433d6cf-4931-49c5-8113-bd29b6d661dc
+  Args:
+    source: :PrincessOlgaOfGreeceAndDenmark
+    type: :Person
+  AddTriple (af67fb0b-1702-4928-915b-f1ef299b41ce)
+ Call ID: af67fb0b-1702-4928-915b-f1ef299b41ce
+  Args:
     relation: :hasMother
-    target: :Queen_Maria_of_Yugoslavia
-  AddTriple (80b78b48-e967-471a-bbf0-bf9f9141362a)
- Call ID: 80b78b48-e967-471a-bbf0-bf9f9141362a
+    source: :PrinceNikolaOfYugoslavia
+    target: :PrincessOlgaOfGreeceAndDenmark
+  AssignClass (1e02bc19-cf0f-4842-a461-069c91d84df0)
+ Call ID: 1e02bc19-cf0f-4842-a461-069c91d84df0
   Args:
+    source: :PrinceAlexander
+    type: :Man
+  AssignClass (6dc9b90d-7cdd-4937-8272-7254daf6a233)
+ Call ID: 6dc9b90d-7cdd-4937-8272-7254daf6a233
+  Args:
+    type: :Person
+    source: :PrinceAlexander
+  AddTriple (6ec5131d-c866-422c-854d-2bf18162c31f)
+ Call ID: 6ec5131d-c866-422c-854d-2bf18162c31f
+  Args:
+    source: :PrinceNikolaOfYugoslavia
     relation: :hasBrother
-    source: :Prince_Tomislav_of_Yugoslavia
-    target: :King_Peter_II_of_Yugoslavia
-  AddTriple (b5c17105-516c-4dfe-8fe0-f56179dde4bc)
- Call ID: b5c17105-516c-4dfe-8fe0-f56179dde4bc
+    target: :PrinceAlexander
+  AssignClass (5dc63351-811e-4e20-a436-4d0f7a20d2ba)
+ Call ID: 5dc63351-811e-4e20-a436-4d0f7a20d2ba
   Args:
-    source: :King_Peter_II_of_Yugoslavia
-    relation: :hasFather
-    target: :King_Alexander_I
-  AddTriple (c7a854c9-d5ca-4918-8b4c-8e209479fd31)
- Call ID: c7a854c9-d5ca-4918-8b4c-8e209479fd31
+    source: :PrincessElizabeth
+    type: :Woman
+  AssignClass (069c705d-4507-43c9-9d2f-cf1162d38598)
+ Call ID: 069c705d-4507-43c9-9d2f-cf1162d38598
   Args:
-    target: :Queen_Maria_of_Yugoslavia
-    source: :King_Peter_II_of_Yugoslavia
+    type: :Person
+    source: :PrincessElizabeth
+  AddTriple (f390ac96-abe7-449a-864c-e20fbfab13ac)
+ Call ID: f390ac96-abe7-449a-864c-e20fbfab13ac
+  Args:
+    source: :PrinceNikolaOfYugoslavia
+    relation: :hasSister
+    target: :PrincessElizabeth
+  AssignClass (7ffc9235-f56d-4dee-b95e-102c3dbaa44e)
+ Call ID: 7ffc9235-f56d-4dee-b95e-102c3dbaa44e
+  Args:
+    source: :GrandDuchessElenaVladimirovnaOfRussia
+    type: :Woman
+  AssignClass (9b4336da-6968-4be6-b07e-696256f688bf)
+ Call ID: 9b4336da-6968-4be6-b07e-696256f688bf
+  Args:
+    source: :GrandDuchessElenaVladimirovnaOfRussia
+    type: :Person
+  AddTriple (a94f1c6a-76ce-426f-8d8e-5ed6a9e1a54f)
+ Call ID: a94f1c6a-76ce-426f-8d8e-5ed6a9e1a54f
+  Args:
+    source: :PrincessOlgaOfGreeceAndDenmark
     relation: :hasMother
-  AddTriple (e90d0bb8-c707-4a9b-a9c3-4dad9b5cdf7f)
- Call ID: e90d0bb8-c707-4a9b-a9c3-4dad9b5cdf7f
+    target: :GrandDuchessElenaVladimirovnaOfRussia
+  AssignClass (ac697d31-f012-44af-9d37-a5debcbbf21d)
+ Call ID: ac697d31-f012-44af-9d37-a5debcbbf21d
   Args:
+    source: :PrincessElizabethCountessOfToerringJettenbach
+    type: :Woman
+  AssignClass (c8d3c6af-3511-4853-a2ce-82e87e61f4b6)
+ Call ID: c8d3c6af-3511-4853-a2ce-82e87e61f4b6
+  Args:
+    type: :Person
+    source: :PrincessElizabethCountessOfToerringJettenbach
+  AddTriple (a4c8d130-c5e5-40dc-a377-f9fd3a47cc63)
+ Call ID: a4c8d130-c5e5-40dc-a377-f9fd3a47cc63
+  Args:
+    relation: :isAuntOf
+    source: :PrincessElizabethCountessOfToerringJettenbach
+    target: :PrinceNikolaOfYugoslavia
+  AssignClass (90f31230-7e88-4acd-8ffe-4decb4fd460b)
+ Call ID: 90f31230-7e88-4acd-8ffe-4decb4fd460b
+  Args:
+    source: :PrincessMarinaDuchessOfKent
+    type: :Woman
+  AssignClass (cecf5c4d-8ae4-4b93-aaff-f9352632f7a8)
+ Call ID: cecf5c4d-8ae4-4b93-aaff-f9352632f7a8
+  Args:
+    source: :PrincessMarinaDuchessOfKent
+    type: :Person
+  AddTriple (7451c9d3-4bfb-4e41-a862-f5d20da24286)
+ Call ID: 7451c9d3-4bfb-4e41-a862-f5d20da24286
+  Args:
+    target: :PrinceNikolaOfYugoslavia
+    relation: :isAuntOf
+    source: :PrincessMarinaDuchessOfKent
+  AssignClass (e710eef8-3529-4364-8e4f-a174ff12e5f9)
+ Call ID: e710eef8-3529-4364-8e4f-a174ff12e5f9
+  Args:
+    source: :ArsenKaradjordjevic
+    type: :Man
+  AssignClass (3244125c-de96-4ef3-b0f1-cc4dc4be3e7e)
+ Call ID: 3244125c-de96-4ef3-b0f1-cc4dc4be3e7e
+  Args:
+    source: :ArsenKaradjordjevic
+    type: :Person
+  AddTriple (0e071d3c-1d5a-49e4-b570-432afdef7a40)
+ Call ID: 0e071d3c-1d5a-49e4-b570-432afdef7a40
+  Args:
+    target: :ArsenKaradjordjevic
+    source: :PrincePaulOfYugoslavia
     relation: :hasFather
-    source: :Queen_Maria_of_Yugoslavia
-    target: :King_Ferdinand_of_Romania
-  AddTriple (5ac0accb-de19-464c-acb5-91d197a0d633)
- Call ID: 5ac0accb-de19-464c-acb5-91d197a0d633
+  AssignClass (013d56e7-eb6c-48c5-a533-2ea2975afa7c)
+ Call ID: 013d56e7-eb6c-48c5-a533-2ea2975afa7c
   Args:
-    target: :Queen_Marie_of_Romania
+    type: :Woman
+    source: :PrincessAuroraPavlovnaDemidovaDiSanDonato
+  AssignClass (f75ce90d-a20a-4a24-8322-32a3dd34a463)
+ Call ID: f75ce90d-a20a-4a24-8322-32a3dd34a463
+  Args:
+    type: :Person
+    source: :PrincessAuroraPavlovnaDemidovaDiSanDonato
+  AddTriple (d2d4b3e3-7b41-465d-919c-53391290abb5)
+ Call ID: d2d4b3e3-7b41-465d-919c-53391290abb5
+  Args:
+    target: :PrincessAuroraPavlovnaDemidovaDiSanDonato
+    source: :PrincePaulOfYugoslavia
     relation: :hasMother
-    source: :Queen_Maria_of_Yugoslavia
-  AddLiteral (68008c5f-14b9-4c58-a778-bc023965e1c6)
- Call ID: 68008c5f-14b9-4c58-a778-bc023965e1c6
+  AssignClass (04869794-6af4-429b-b91b-feafc7225747)
+ Call ID: 04869794-6af4-429b-b91b-feafc7225747
   Args:
-    literal_value: 1957
-    literal_type: xsd:integer
-    relation: :hasMarriageYear
-    source: :Prince_Tomislav_of_Yugoslavia
-  AddTriple (c91ba105-3927-4b98-abb2-81af8bd7b0ff)
- Call ID: c91ba105-3927-4b98-abb2-81af8bd7b0ff
+    type: :Man
+    source: :PrinceNicholasOfGreeceAndDenmark
+  AssignClass (f0458e94-2f19-41fd-bdee-e14d7d63ff56)
+ Call ID: f0458e94-2f19-41fd-bdee-e14d7d63ff56
   Args:
-    relation: :hasRelation
-    source: :Prince_Tomislav_of_Yugoslavia
-    target: :Princess_Margarita_of_Baden
-  Finish (0f2ea2f7-8d94-4219-9163-48199009e944)
- Call ID: 0f2ea2f7-8d94-4219-9163-48199009e944
+    source: :PrinceNicholasOfGreeceAndDenmark
+    type: :Person
+  AddTriple (0e915544-36e5-42f5-8406-7c948a059627)
+ Call ID: 0e915544-36e5-42f5-8406-7c948a059627
+  Args:
+    source: :PrincessOlgaOfGreeceAndDenmark
+    relation: :hasFather
+    target: :PrinceNicholasOfGreeceAndDenmark
+  Finish (86615607-b1e5-4e5a-a065-8f51f008164c)
+ Call ID: 86615607-b1e5-4e5a-a065-8f51f008164c
   Args:

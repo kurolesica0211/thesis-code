@@ -1,0 +1,352 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Prince_Aimone-_6th_Duke_of_Aosta a :Man,
+        :Person ;
+    rdfs:label "Prince Aimone, 6th Duke of Aosta"^^xsd:string ;
+    data:posIndicesFull "3569:3597"^^xsd:string ;
+    data:wdtLink wdt:Q2031618 ;
+    :alsoKnownAs "Aimone di Savoia-Aoste"^^xsd:string,
+        "Prince Aimone of Savoy-Aosta"^^xsd:string,
+        "Prince Aimone of Savoy-Aosta, The 6th Duke of Aosta"^^xsd:string,
+        "Prince Aimone of Savoy-Aosta, The Duke of Aosta"^^xsd:string,
+        "Prince Aimone, Duke of Aosta"^^xsd:string,
+        "Prince Aimone, The 6th Duke of Aosta"^^xsd:string,
+        "Prince Aimone, The Duke of Aosta"^^xsd:string ;
+    :hasBrother data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :hasRelation data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Aimone-_6th_Duke_of_Aosta .
+
+data:male a :Male .
+
+data:Constantine_I_of_Greece a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Constantine I of Greece"^^xsd:string ;
+    data:posIndicesFull "1954:1972"^^xsd:string,
+        "1959:1972"^^xsd:string ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I"^^xsd:string,
+        "Constantine Oldenburg I"^^xsd:string,
+        "King Constantine I"^^xsd:string,
+        "King Constantine I of Greece"^^xsd:string,
+        "Konstantinos I of Greece"^^xsd:string ;
+    :hasBrother data:Constantine_I_of_Greece ;
+    :hasChild data:Princess_Irene-_Duchess_of_Aosta ;
+    :hasDaughter data:Princess_Irene-_Duchess_of_Aosta ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Princess_Irene-_Duchess_of_Aosta ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Irene-_Duchess_of_Aosta ;
+    :isBloodrelationOf data:Constantine_I_of_Greece ;
+    :isBrotherOf data:Constantine_I_of_Greece ;
+    :isFatherOf data:Princess_Irene-_Duchess_of_Aosta ;
+    :isParentOf data:Princess_Irene-_Duchess_of_Aosta ;
+    :isSiblingOf data:Constantine_I_of_Greece ;
+    :isUncleOf data:Princess_Irene-_Duchess_of_Aosta .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Sophia of Prussia"^^xsd:string ;
+    data:posIndicesFull "1986:2003"^^xsd:string ;
+    data:wdtLink wdt:Q155822 ;
+    :alsoKnownAs "Queen Sophia of Greece"^^xsd:string,
+        "Queen Sophia, Queen Consort of Greece"^^xsd:string ;
+    :hasChild data:Princess_Irene-_Duchess_of_Aosta ;
+    :hasDaughter data:Princess_Irene-_Duchess_of_Aosta ;
+    :hasRelation data:Princess_Irene-_Duchess_of_Aosta,
+        data:Sophia_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Sophia_of_Prussia ;
+    :isAncestorOf data:Princess_Irene-_Duchess_of_Aosta ;
+    :isAuntOf data:Princess_Irene-_Duchess_of_Aosta ;
+    :isBloodrelationOf data:Sophia_of_Prussia ;
+    :isMotherOf data:Princess_Irene-_Duchess_of_Aosta ;
+    :isParentOf data:Princess_Irene-_Duchess_of_Aosta ;
+    :isSiblingOf data:Sophia_of_Prussia ;
+    :isSisterOf data:Sophia_of_Prussia .
+
+data:Princess_María_Isabel_of_Orléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess María Isabel of Orléans"^^xsd:string ;
+    data:posIndicesFull "1162:1196"^^xsd:string,
+        "1171:1185"^^xsd:string ;
+    data:posIndicesPart "1977:1985"^^xsd:string ;
+    data:wdtLink wdt:Q242879 ;
+    :alsoKnownAs "Infanta Maria Isabel of Orléans"^^xsd:string,
+        "Maria Isabella"^^xsd:string,
+        "Princess Maria Isabel of Orléans, Infanta of Spain"^^xsd:string,
+        "Princess Marie Isabelle of Orleans"^^xsd:string ;
+    :hasChild data:Princess_Hélène_of_Orléans ;
+    :hasDaughter data:Princess_Hélène_of_Orléans ;
+    :hasRelation data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_María_Isabel_of_Orléans ;
+    :isAncestorOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans ;
+    :isAuntOf data:Princess_Hélène_of_Orléans ;
+    :isBloodrelationOf data:Princess_María_Isabel_of_Orléans ;
+    :isMotherOf data:Princess_Hélène_of_Orléans ;
+    :isParentOf data:Princess_Hélène_of_Orléans ;
+    :isSiblingOf data:Princess_María_Isabel_of_Orléans ;
+    :isSisterOf data:Princess_María_Isabel_of_Orléans .
+
+data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Emanuele Filiberto, 2nd Duke of Aosta"^^xsd:string ;
+    data:posIndicesFull "231:249"^^xsd:string,
+        "901:919"^^xsd:string ;
+    data:posIndicesPart "1371:1377"^^xsd:string,
+        "1462:1468"^^xsd:string,
+        "1483:1487"^^xsd:string,
+        "1543:1549"^^xsd:string,
+        "1642:1648"^^xsd:string,
+        "2023:2029"^^xsd:string,
+        "2038:2042"^^xsd:string,
+        "2046:2051"^^xsd:string,
+        "2248:2252"^^xsd:string,
+        "2667:2673"^^xsd:string,
+        "2984:2990"^^xsd:string,
+        "3021:3025"^^xsd:string,
+        "3029:3034"^^xsd:string,
+        "3437:3443"^^xsd:string,
+        "3498:3503"^^xsd:string,
+        "352:356"^^xsd:string,
+        "3534:3540"^^xsd:string,
+        "360:365"^^xsd:string,
+        "417:423"^^xsd:string ;
+    data:wdtLink wdt:Q445106 ;
+    :alsoKnownAs "Emanuele Filiberto"^^xsd:string ;
+    :hasBrother data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :hasChild data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :hasRelation data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isAncestorOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isBloodrelationOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :isFatherOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isParentOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :isUncleOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta .
+
+data:Princess_Irene-_Duchess_of_Aosta a :Person,
+        :Woman ;
+    rdfs:label "Princess Irene, Duchess of Aosta"^^xsd:string ;
+    data:posIndicesFull "1904:1940"^^xsd:string ;
+    data:posIndicesPart "2046:2051"^^xsd:string,
+        "3029:3034"^^xsd:string,
+        "3498:3503"^^xsd:string ;
+    data:wdtLink wdt:Q236770 ;
+    :alsoKnownAs "Princess Irene of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :hasRelation data:Constantine_I_of_Greece,
+        data:Princess_Irene-_Duchess_of_Aosta,
+        data:Sophia_of_Prussia ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Irene-_Duchess_of_Aosta ;
+    :isBloodrelationOf data:Princess_Irene-_Duchess_of_Aosta ;
+    :isChildOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isDaughterOf data:Constantine_I_of_Greece,
+        data:Sophia_of_Prussia ;
+    :isSiblingOf data:Princess_Irene-_Duchess_of_Aosta ;
+    :isSisterOf data:Princess_Irene-_Duchess_of_Aosta .
+
+data:Princess_Hélène_of_Orléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Hélène of Orléans"^^xsd:string ;
+    data:posIndicesFull "1092:1118"^^xsd:string ;
+    data:posIndicesPart "1977:1985"^^xsd:string ;
+    data:wdtLink wdt:Q260525 ;
+    :alsoKnownAs "Elena D'Aosta"^^xsd:string,
+        "H.R.H. Elena di Francia"^^xsd:string,
+        "Hélène Louise Henriette d'Orléans"^^xsd:string,
+        "Princess Helene of Orleans"^^xsd:string ;
+    :hasAncestor data:Princess_María_Isabel_of_Orléans ;
+    :hasChild data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :hasMother data:Princess_María_Isabel_of_Orléans ;
+    :hasParent data:Princess_María_Isabel_of_Orléans ;
+    :hasRelation data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Hélène_of_Orléans ;
+    :hasSon data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isAncestorOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isAuntOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isBloodrelationOf data:Princess_Hélène_of_Orléans ;
+    :isChildOf data:Princess_María_Isabel_of_Orléans ;
+    :isDaughterOf data:Princess_María_Isabel_of_Orléans ;
+    :isMotherOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isParentOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isSiblingOf data:Princess_Hélène_of_Orléans ;
+    :isSisterOf data:Princess_Hélène_of_Orléans .
+
+data:Prince_Aimone-_4th_Duke_of_Aosta a :Man,
+        :Person ;
+    rdfs:label "Prince Aimone, 4th Duke of Aosta"^^xsd:string ;
+    data:posIndicesFull "0:32"^^xsd:string,
+        "3569:3597"^^xsd:string ;
+    data:posIndicesPart "1294:1300"^^xsd:string,
+        "1371:1377"^^xsd:string,
+        "1378:1384"^^xsd:string,
+        "1462:1468"^^xsd:string,
+        "1483:1487"^^xsd:string,
+        "1543:1549"^^xsd:string,
+        "1550:1556"^^xsd:string,
+        "1642:1648"^^xsd:string,
+        "1649:1655"^^xsd:string,
+        "2023:2029"^^xsd:string,
+        "2038:2042"^^xsd:string,
+        "2046:2051"^^xsd:string,
+        "2067:2073"^^xsd:string,
+        "2236:2242"^^xsd:string,
+        "2248:2252"^^xsd:string,
+        "224:230"^^xsd:string,
+        "2375:2381"^^xsd:string,
+        "2401:2407"^^xsd:string,
+        "251:255"^^xsd:string,
+        "2542:2548"^^xsd:string,
+        "259:264"^^xsd:string,
+        "2667:2673"^^xsd:string,
+        "2674:2680"^^xsd:string,
+        "2894:2900"^^xsd:string,
+        "291:295"^^xsd:string,
+        "2984:2990"^^xsd:string,
+        "2991:2997"^^xsd:string,
+        "3021:3025"^^xsd:string,
+        "3029:3034"^^xsd:string,
+        "3194:3200"^^xsd:string,
+        "3437:3443"^^xsd:string,
+        "3444:3450"^^xsd:string,
+        "3498:3503"^^xsd:string,
+        "352:356"^^xsd:string,
+        "3534:3540"^^xsd:string,
+        "360:365"^^xsd:string,
+        "417:423"^^xsd:string,
+        "511:517"^^xsd:string,
+        "702:708"^^xsd:string,
+        "788:794"^^xsd:string,
+        "795:801"^^xsd:string,
+        "852:857"^^xsd:string,
+        "894:900"^^xsd:string,
+        "921:925"^^xsd:string,
+        "929:934"^^xsd:string,
+        "950:956"^^xsd:string,
+        "969:973"^^xsd:string,
+        "977:982"^^xsd:string ;
+    data:wdtLink wdt:Q169902 ;
+    :alsoKnownAs "Aimoe di Savoia-Aoste, Principe di Savoia"^^xsd:string,
+        "Prince Aimone, Duke of Aosta"^^xsd:string ;
+    :hasAncestor data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasBrother data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :hasFather data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :hasMother data:Princess_Hélène_of_Orléans ;
+    :hasParent data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans ;
+    :hasRelation data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isChildOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans ;
+    :isSiblingOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isSonOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans .
+
+data:Prince_Amedeo-_3rd_Duke_of_Aosta a :Man,
+        :Person ;
+    rdfs:label "Prince Amedeo, 3rd Duke of Aosta"^^xsd:string ;
+    data:posIndicesFull "3093:3125"^^xsd:string ;
+    data:posIndicesPart "3437:3443"^^xsd:string,
+        "3498:3503"^^xsd:string,
+        "3534:3540"^^xsd:string,
+        "3541:3547"^^xsd:string ;
+    data:wdtLink wdt:Q431121 ;
+    :alsoKnownAs "Amedeo di Savoia-Aosta"^^xsd:string ;
+    :hasAncestor data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasBrother data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :hasFather data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :hasMother data:Princess_Hélène_of_Orléans ;
+    :hasParent data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans ;
+    :hasRelation data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isChildOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans ;
+    :isSiblingOf data:Prince_Aimone-_4th_Duke_of_Aosta,
+        data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isSonOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta,
+        data:Princess_Hélène_of_Orléans .
+

@@ -69,127 +69,70 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Henri d'Orléans (Henri Robert Ferdinand Marie d'Orléans; 5 July 1908 – 19 June 1999), was the Orléanist pretender to the defunct throne of France as Henry VI from 1940 until his death in 1999.
-Henri was the direct descendant of Philippe I, Duke of Orléans, son of Louis XIII.
-He was also a descendant of Louis XIV through a female line, from his legitimized daughter Françoise Marie de Bourbon, as well as the great-great-grandson, by four different lines of descent, of Louis Philippe I.
-The son of Jean, Duke of Guise, Henri was forbidden to enter France for much of his life.
-Henri worked to restore the French monarchy in a parliamentary form, and discussed the topic with Charles de Gaulle.
-Upon his death in 1999, his son Henri succeeded him as Head of the House of Orléans.
-Here, Henri rose at 4 am daily, accompanying his father to oversee livestock management and crop production on their scattered lands, later in the day being tutored by European governesses and his mother: He acquired fluency in French, Arabic, English, German, Italian and Spanish.
-Being rebuffed by France, Belgium and the United Kingdom, Prince Jean finally took his family back to Morocco and farming.
-In 1921, Henri's governesses were replaced with a series of preceptors, all coming from France.
-In 1923, the abbé Thomas took over Henri's instruction and, being less traditional in his approach, awakened in his charge a hitherto undetected thirst for knowledge.
-Using the wedding of the prince's sister that year in France as an opportunity, Thomas obtained permission to take Henri to the Parisian banlieues of Meudon and Issy-les-Moulineaux, then working class slums in which the abbé would volunteer to serve the needy daily, bringing Henri into close contact with day laborers.
-After a year Thomas, whose health suffered in Morocco, was replaced as Henri's preceptor by abbé Dartein, who accompanied the family to France in 1924, preparing the prince for his collegiate matriculation while they occupied an apartment near his parents in Paris.
-Henri began a two-year study of mathematics and the sciences at the Catholic University of Louvain in 1924, studying the law for the two years following.
-From across the border in France came scholars and veterans of renown to coach Henri for his future role as a royalist leader, including jurist Ernest Perrot, military strategist Général Henri de Gondrecourt and the diplomat Charles Benoist, a member of the Académie des Sciences Morales et Politiques who would serve as his advisor from 1930.
-Dauphin in pretence
+Henri Philippe Pierre Marie d'Orléans (14 June 1933 – 21 January 2019) was the Orléanist pretender to the defunct French throne as Henry VII.
+Henri was a retired military officer as well as an author and painter.
+Early life
 
-In 1926, Henri became the Dauphin of France in pretence when his father became the Orléanist claimant to the defunct throne upon the death of his maternal uncle, Philippe, Duke of Orleans.
-In 1939, after being refused admission to both the French and the British armed forces, Henri was allowed to join the French Foreign Legion.
-Orléanist pretender
+He was the first son of Henri, Count of Paris (1908–1999), and his wife Princess Isabelle of Orléans-Braganza, and was born in Woluwe-Saint-Pierre, Belgium, a law in 1886 having permanently exiled from France the heads of its formerly reigning dynasties and their eldest sons.
+Despite the ban, while living in Belgium Henri occasionally accompanied his mother on brief visits to France and, later, to his mother's relatives in Brazil.
+While his father sought to play a role in the French resistance, Henri, in 1940 a child of 7, remained at Larache with his mother, siblings, grandmother and father's sisters' families during the Nazi occupation of France, sharing a small desert home that lacked electricity.
+Advised by Henri Giraud's Moroccan command that the Orléans had become unwelcome in the protectorate following the assassination of Vichy regime collaborater François Darlan by the monarchist Fernand Bonnier de La Chapelle, the family relocated to Pamplona in Spain until 1947, when they took up residence at the Quinta do Anjinho, an estate near Sintra, on the Portuguese Riviera.
+During that year, President Vincent Auriol allowed Henri and his brother François to visit France, and in 1948 he was allowed to enroll in a lycée in Bordeaux.
+The law of exile was abrogated in 1950, allowing Henri to repatriate with his parents.
+Later that year, his parents purchased an estate near Paris, the Manoir du Cœur-Volant in Louveciennes, which became Henri's first home in France.
+Henri studied at the Institut d'Études Politiques de Paris (Sciences Po), obtaining his bac in 1957, and on 30 June of that year, his father conferred upon him, as the heir apparent of his house, the title of "Count of Clermont", by which he was generally known during his father's lifetime.
+Career
 
-World War II
-
-Henri became pretender to the defunct French throne on 25 August 1940 when his father died.
-Henri was a "gentlemen farmer" in Morocco in the course of 1942.
-In mid-November 1942, after Admiral François Darlan's armistice with the Allied invaders of North Africa, Vichy intelligence official Henri d'Astier de la Vigerie attempted to promote a royalist coup (d'Astier had previously conspired with the Allies to aid the invasion).
-He proposed that Henri would appear to head a French government composed of all political tendencies, and maintain "neutrality until the day comes when the French nation can freely decide for itself."
-Ridgeway was taken aback by the proposal, but was unaware that d'Astier's colleagues, Abbé Cordier and Master-Sergeant Sabatier (a French instructor at an OSS-SOE camp in Algiers), had secretly brought Henri from Morocco to d'Astier's apartment in Algiers.
-Post war
-
-In 1947, Henri and his family took up residence at the Quinta do Anjinho, an estate in Sintra, on the Portuguese Riviera.
-In 1950, after the law of exile was rescinded, Henri returned to France.
-During his tenure as pretender to the defunct throne, Henri used the majority of his family's great wealth, selling off family jewels, paintings, furniture and properties to support his political cause and large family, as well as establishments in Belgium, North Africa, Brazil, Portugal and France.
-Political activity
-
-Unlike his father, Henri devoted his life to politics.
-During World War II, Henri was initially sympathetic to Vichy France.
-Laval offered Henri the unglamorous position of Minister of Food, which he declined.
-In Algeria, Henri attempted to convince the French military governor not to oppose an Anglo-American military landing.
-Henri had correctly predicted such a thing occurring, but at the time he was laughed at by the officers.
-Henri also tried to mediate between Charles de Gaulle and Henri Giraud, when the two men were competing for control of Free France.
-Between 1940 and 1941, the Gaullist camp offered Henri an invitation to go to London, which he declined.
-Henri feared that if he accepted the offer, he would have become an émigré, like the Bourbons who returned to France after Napoleon's defeat.
-Henri was staunchly opposed to the idea of siding with one political party, wishing instead to pursue a path of unity and not contribute to France's "infernal divisiveness."
-"
+From October 1959 to April 1962, Henri worked at the Secretariat-General for National Defence and Security as a member of the French Foreign Legion.
+Returning to civilian life in 1967, Henri and his family briefly occupied the Blanche Neige pavilion on the grounds of his father's Cœur-Volant estate before renting an apartment of their own in the 15th arrondissement of Paris.
+Henri wrote several books, including:
 
 
-In 1948, Henri began publishing a monthly bulletin, which soon possessed 30,000 subscribers.
-In 1950, the French Parliament abrogated the Law of Exile, permitting Henri to return.
-So we have to make do with Henri, who strikes a royal enough pose, I guess.
-In 1954, Henri met Charles de Gaulle and continued their relationship through correspondence.
-In 1958, Henri gave his support to de Gaulle, who was called back from his self-imposed exile to save the French Republic from insurrection in Paris.
-Thereafter, Henri became a frequent visitor to the Élysée Palace, where de Gaulle waited for Henri "by the staircase or outside, reserved a special armchair for him and lit his cigarette."
-There, they frequently discussed French history together, with Henri noting that de Gaulle loved to pronounce the word 'king'.
-In 1960, de Gaulle told Henri that "Monseigneur, I believe deeply in the value of the monarchy, and I am certain as well that this regime is the one best suited to our poor country."
-The following year, de Gaulle dispatched Henri on a tour to Libya, Ethiopia, Iran, and Lebanon, with the purpose of explaining France's Algeria policy, serving as de Gaulle's special representative, or "pro-consul."
-During this time, Henri befriended Hassan II of Morocco and Habib Bourguiba.
-In 1962, de Gaulle informed Henri in strict confidence that he had arranged the French presidential election so that the head of the royal house could succeed him as president of the Republic.
-However, by 1964, de Gaulle changed his mind and told Henri of his decision to run for re-election, which he won.
-By 1968, Henri ceased publication of his paper over his increasing disagreements with the Gaullists.
-The Countess of Paris remarked that "Under de Gaulle, Henri came two fingers close to becoming king.
-"
+Henri was also a painter and launched his own brand of perfume.
+Marriages and children
+
+Henri met Duchess Marie Therese of Württemberg (born 1934), like himself a descendant of King Louis-Philippe, at a ball given by the Thurn and Taxis family in Munich.
+Five children were born from this union:
 
 
-Following de Gaulle's death in 1970, his son Philippe de Gaulle told Henri, "Monseigneur, my father often told me that if circumstances had been different, he would have been happy to be your faithful and loyal servant."
-In 1979, Henri published his book Mémoires d'exil et de combats, which revealed to the public that de Gaulle had asked Henri to prepare himself for the 1965 presidential elections in France.
-In a latter interview, Henri stated "At all times de Gaulle desired restoration, I am convinced of it.
-However, Henri also noted that "It was difficult to get anywhere without de Gaulle, He agreed to favor my ascension to the highest point, but he didn't understand that it was necessary to give me the means of getting there.
-"
+In 1984, Henri and Marie-Thérèse were divorced.
+On 31 October 1984 Henri entered a civil marriage with Micaëla Anna María Cousiño y Quiñones de León (1938–2022), daughter of Luis Cousiño y Sebire and his wife, Antonia Maria Quiñones de Léon y Bañuelos, 4th Marquesa de San Carlos, and who had previously been divorced from Jean-Robert Bœuf.
+For remarrying without consent, Henri's father initially declared him disinherited, substituting the non-dynastic title Comte de Mortain for his son's Clermont countship (the latter once held in appanage by a son of Louis IX of France, who became ancestor of the Bourbon-Orléans line).
+Henri, though, refused all mail addressed to him as "Mortain".
+On 27 February 1984 Marie-Thérèse, the former Countess of Clermont, was granted the title Duchess of Montpensier by her father-in-law.
+On 11 February 1989 Henri was informed, by a hand-delivered letter written by his former wife, of the engagement of their eldest child Marie, to Prince Gundakar of Liechtenstein, a cousin of the ruler of that principality, the wedding date being set for 29 July 1989.
+Although Henri acknowledged, in a 12 May 1989 Point de Vue interview, that it had been three years since he had seen Marie, he and his second wife, Micaëla Cousiño, had been welcomed for the first time to the home of his mother, the Countess of Paris, that day: Henri further acknowledged to the press that, Marie having written to invite him to her wedding, he looked forward to conducting her to the altar, rumours to the contrary notwithstanding.
+At the engagement party held the next day at the Palais Pallavicini, the Vienna home of the fiancé's parents, photographs were taken, and would later be published, showing Henri speaking cordially with his daughter, sons, former wife and future son-in-law.
+However, it was on this occasion that Henri learned that he would not be escorting Marie to her bridegroom during the wedding.
+Meanwhile, Marie-Thérèse had sent out invitations to the wedding in her name alone, omitting not only mention of Marie's father, but also of her grandfather, Monseigneur the Count of Paris who, until then, had largely sided with the Duchess of Montpensier in family matters and had consented to his granddaughter's choice of a spouse.
+Henri and his father refused to attend the wedding but Marie proceeded to marry civilly at Dreux's city hall on 22 July 1989, and religiously at the castle of her mother's brother in Germany, on 29 July 1989.
+All but two of Henri's eight siblings also boycotted the ceremonies, but his sister Diane (wife of Montpensier's brother) hosted, and Henri's mother, Madame the Countess of Paris, was a guest at the religious wedding.
+Tensions lessened after several years, and on 7 March 1991 Henri's father reinstated him as heir apparent and Count of Clermont, simultaneously giving Micaëla the title "Princesse de Joinville".
+In 1980, Henri joined the Grand Orient de France where he became Grand Master of the regular Masonic Lodge "Lys de France" No 1297.
+Head of house
 
+Until he succeeded his father as royal claimant, Henri and his second wife occupied an apartment in Paris.
+On 19 June 1999, Henri's father died and he became the new head of the House of Orléans.
+He took the traditional title, Count of Paris, adding an ancient one, Duke of France, not borne by his Orléans or Bourbon forebears, but used a thousand years ago by his ancestors, before Hugh Capet took the title of king.
+His wife assumed the title "Duchess of France", deferring to the continued use of "Countess of Paris" by Henri's widowed mother until her death on 5 July 2003, whereupon Micaela assumed that title.
+After his father's death, Henri annulled his father's decision to deprive his brothers Michel (Count of Évreux) and Thibaut (the late Count of La Marche) of their succession rights because Michel married a French noblewoman without permission and because Thibaut married a commoner.
+He also bestowed titles upon the sons of his brother Prince Jacques, Duke of Orléans: Prince Charles-Louis d'Orléans, Duke of Chartres (born 1972), and Prince Foulques d'Orléans, Duke of Aumale and Count of Eu (born 1974).
+Henri recognised his disabled eldest son François as his dynastic heir-apparent, with the title Count of Clermont, declaring that François would exercise his prerogatives as head of the dynasty under the "regency" of his younger brother Prince Jean, Duke of Vendôme.
+In 2009, Henri obtained an annulment of his marriage to Marie-Thérèse of Württemberg from the Holy See.
+As Count of Paris, Henri took part in some European royal events attending, for instance, the 2011 marriage of Albert II of Monaco.
+Legal cases
 
-Henri stated that he believes de Gaulle never forgave him for refusing to join the Free French in London, and also noted that "De Gaulle was not my friend...De Gaulle and I shared some common ideals and I agreed with him on the essentials of his approach to politics...
-"
-
-
-In 1988, Henri produced a scandal among his monarchist supporters when he supported the re-election of François Mitterrand, a socialist.
-Political beliefs
-
-In his college years, Henri spent many nights listening to the French monarchist writer Charles Maurras.
-But during his adult life, Henri considered himself a centrist and never allied with any political party.
-On Action Française, Henri stated that it had many talented leaders, but he ultimately regarded it as "a Rightist party with extreme Right sympathies."
-In Henri's view, "no one should be in a position to claim a monopoly on the monarchist idea.
-"
-
-
-Henri befriended politicians on both the left and right, and declined to run for Parliament, despite de Gaulle's suggestion that he should do so.
-Some rightist critics of Henri regarded him as "the Crown Prince of the Republic" or "a dyed-in-the-wool socialist, if not a Jacobin."
-"
-
-
-Henri was a critic of primogeniture and favored elective monarchy over hereditary.
-Marriage and family life
-
-On 8 April 1931, he married Princess Isabelle of Orléans-Braganza.
-The wedding was celebrated in Palermo Cathedral in Sicily, the same church where their common ancestors, Louis Philippe of France and his Queen Maria Amalia, married in 1809.
-In 1984, Henri declared that his son, Henri of Orléans, had lost his rights of inheritance because he had divorced his first wife and married a second time, outside of the Roman Catholic Church.
-Henri gave his son the lesser-valued title comte de Mortain in place of comte de Clermont, and removed him from the line of succession.
-After a couple of years, Henri reinstated his son with his previous titles, including reestablishing him as heir apparent and gave his new wife, Micaela Cousiño Quinones de Leon, the title "princesse de Joinville".
-Henri deprived his sons Thibaut and Michel of their rights of succession to the defunct throne, because one married a commoner and the other wed a noblewoman whose father had been compromised during the Vichy regime.
-His decision was later annulled by his son and successor, Henri.
-Death
-
-Henri, Count of Paris, died of prostate cancer at Cherisy, near Dreux, France, aged 90 on 19 June 1999.
-Incidentally, his grandson Prince Eudes, Duke of Angoulême married on the very same day.
-Issue
-
-Henri, Count of Paris, and his wife Isabelle had eleven children:
-
-
-Ancestry
-
-References
-
-Further reading
-
-External links
+Prior to succeeding his father as royal claimant, Henri launched an unsuccessful court case (1987–1989) in which he challenged the right of his rival paternal 10th cousin Louis-Alphonse, Duke of Anjou, to use the undifferenced royal arms of France and the Anjou title.
+The French courts dismissed the case on the grounds that Henri failed to prove that he had demonstrated a right to the hereditaments in questions, noting also that the court lacked jurisdiction in a dispute over dynastic claims of France's former royal family.
+In 2000 bailiffs pursued Henri for US$143,000 back rent after he fled the Villa Boileau, a 17th-century Paris house he had occupied.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -205,39 +148,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -252,6 +165,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -269,6 +199,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -336,29 +281,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -367,6 +304,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -379,6 +324,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -387,17 +334,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -425,6 +374,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -440,232 +473,362 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (f94029ed-39c9-4be6-af42-5e15d5dfecc6)
- Call ID: f94029ed-39c9-4be6-af42-5e15d5dfecc6
+  AssignClass (fce65458-921d-41fb-b123-ae59b2d15fa4)
+ Call ID: fce65458-921d-41fb-b123-ae59b2d15fa4
   Args:
-    source: Henri_d_Orleans
     type: :Man
-  AssignClass (1b799f75-2b74-4b23-8179-ca0effa2dede)
- Call ID: 1b799f75-2b74-4b23-8179-ca0effa2dede
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+  AssignClass (9833b5b3-55ad-499f-b29f-d0b5dd4b7cd9)
+ Call ID: 9833b5b3-55ad-499f-b29f-d0b5dd4b7cd9
+  Args:
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    type: :Person
+  AddLiteral (57637065-3cf0-464e-88c6-e0f43a4325a9)
+ Call ID: 57637065-3cf0-464e-88c6-e0f43a4325a9
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1933
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    relation: :hasBirthYear
+  AddLiteral (d78d2605-0641-4200-84ae-967bbcea47bf)
+ Call ID: d78d2605-0641-4200-84ae-967bbcea47bf
+  Args:
+    literal_value: 2019
+    literal_type: xsd:integer
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    relation: :hasDeathYear
+  AssignClass (96c7810f-5bdc-43a6-b211-be4643a5effa)
+ Call ID: 96c7810f-5bdc-43a6-b211-be4643a5effa
+  Args:
+    source: Henri_Count_of_Paris
+    type: :Man
+  AssignClass (1f6681ed-975f-431a-8a92-eca4b471aa47)
+ Call ID: 1f6681ed-975f-431a-8a92-eca4b471aa47
   Args:
     type: :Person
-    source: Henri_d_Orleans
-  AssignClass (7b0a0eae-3e57-4ec9-896a-6a9baa7604a4)
- Call ID: 7b0a0eae-3e57-4ec9-896a-6a9baa7604a4
-  Args:
-    source: Henri_d_Orleans
-    type: :Ancestor
-  AddLiteral (47c685af-f6d6-48d8-9858-bc8b2621ab5b)
- Call ID: 47c685af-f6d6-48d8-9858-bc8b2621ab5b
+    source: Henri_Count_of_Paris
+  AddLiteral (eb120171-2f2c-4945-a12f-0c2b711ac255)
+ Call ID: eb120171-2f2c-4945-a12f-0c2b711ac255
   Args:
     literal_value: 1908
-    source: Henri_d_Orleans
+    literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_type: xsd:integer
-  AddLiteral (90b3c3aa-122e-40ba-a3b5-b83d5108bf73)
- Call ID: 90b3c3aa-122e-40ba-a3b5-b83d5108bf73
+    source: Henri_Count_of_Paris
+  AddLiteral (9bebe967-56e3-481d-b4d1-2c84626f1080)
+ Call ID: 9bebe967-56e3-481d-b4d1-2c84626f1080
   Args:
-    literal_value: 1999
     relation: :hasDeathYear
-    source: Henri_d_Orleans
+    source: Henri_Count_of_Paris
+    literal_value: 1999
     literal_type: xsd:integer
-  AssignClass (597413af-12f9-4b13-9d25-87bedaa2d5fc)
- Call ID: 597413af-12f9-4b13-9d25-87bedaa2d5fc
+  AssignClass (7b3c30b4-ced4-46e7-a295-e236da1cb9dd)
+ Call ID: 7b3c30b4-ced4-46e7-a295-e236da1cb9dd
   Args:
-    source: Jean_Duke_of_Guise
-    type: :Man
-  AssignClass (10cc0065-1340-4a4f-b492-3f4685434b43)
- Call ID: 10cc0065-1340-4a4f-b492-3f4685434b43
+    source: Princess_Isabelle_of_Orleans_Braganza
+    type: :Woman
+  AssignClass (85fee414-e319-47fd-9b37-2b3dbe44c4ae)
+ Call ID: 85fee414-e319-47fd-9b37-2b3dbe44c4ae
   Args:
-    source: Jean_Duke_of_Guise
+    source: Princess_Isabelle_of_Orleans_Braganza
     type: :Person
-  AssignClass (53f6e085-fc31-48a4-9acd-30ab0b11fdcc)
- Call ID: 53f6e085-fc31-48a4-9acd-30ab0b11fdcc
+  AddTriple (2f4f81a7-0527-44f9-9ae9-31ba07184634)
+ Call ID: 2f4f81a7-0527-44f9-9ae9-31ba07184634
   Args:
-    type: :Ancestor
-    source: Jean_Duke_of_Guise
-  AddTriple (3f38f298-44bb-41c9-8544-7dd5d349b663)
- Call ID: 3f38f298-44bb-41c9-8544-7dd5d349b663
-  Args:
-    target: Jean_Duke_of_Guise
-    source: Henri_d_Orleans
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    target: Henri_Count_of_Paris
     relation: :hasFather
-  AssignClass (076c335e-6dbd-49fd-8349-72d894c4b100)
- Call ID: 076c335e-6dbd-49fd-8349-72d894c4b100
+  AddTriple (fb0a593f-ba81-4479-9582-bd4ada7fe622)
+ Call ID: fb0a593f-ba81-4479-9582-bd4ada7fe622
+  Args:
+    relation: :hasMother
+    target: Princess_Isabelle_of_Orleans_Braganza
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+  AssignClass (e88a33cf-7698-479c-8b23-57b2b228505b)
+ Call ID: e88a33cf-7698-479c-8b23-57b2b228505b
+  Args:
+    type: :Man
+    source: Francois_brother_of_Henri
+  AssignClass (ac5ffe4d-d61f-4da4-a10e-cb00a7bd74e8)
+ Call ID: ac5ffe4d-d61f-4da4-a10e-cb00a7bd74e8
+  Args:
+    type: :Person
+    source: Francois_brother_of_Henri
+  AddTriple (36a0adeb-a775-4af2-bd22-a395c825a533)
+ Call ID: 36a0adeb-a775-4af2-bd22-a395c825a533
+  Args:
+    relation: :isBrotherOf
+    source: Francois_brother_of_Henri
+    target: Henri_Philippe_Pierre_Marie_dOrleans
+  AssignClass (097b30a0-bbd6-4c75-9bcf-da6ffea39b81)
+ Call ID: 097b30a0-bbd6-4c75-9bcf-da6ffea39b81
   Args:
     type: :Woman
-    source: Isabelle_of_Orleans_Braganza
-  AssignClass (283cb884-ff39-4976-b11b-cc1ea069d920)
- Call ID: 283cb884-ff39-4976-b11b-cc1ea069d920
+    source: Duchess_Marie_Therese_of_Wurttemberg
+  AssignClass (441c803e-4467-4453-80c4-b0609ca18f56)
+ Call ID: 441c803e-4467-4453-80c4-b0609ca18f56
   Args:
+    source: Duchess_Marie_Therese_of_Wurttemberg
     type: :Person
-    source: Isabelle_of_Orleans_Braganza
-  AddTriple (96f077a5-f3a6-4cc3-80df-36a61f7e8e86)
- Call ID: 96f077a5-f3a6-4cc3-80df-36a61f7e8e86
+  AddLiteral (ac3518a5-687d-4e06-8c44-3be1e3b26be6)
+ Call ID: ac3518a5-687d-4e06-8c44-3be1e3b26be6
   Args:
-    source: Henri_d_Orleans
-    relation: :hasMother
-    target: Isabelle_of_Orleans_Braganza
-  AddLiteral (a9243ad4-e8b1-454d-8028-a91f7ef47d33)
- Call ID: a9243ad4-e8b1-454d-8028-a91f7ef47d33
+    literal_type: xsd:integer
+    literal_value: 1934
+    source: Duchess_Marie_Therese_of_Wurttemberg
+    relation: :hasBirthYear
+  AddTriple (e7472332-dac9-44b0-bf13-690092853f10)
+ Call ID: e7472332-dac9-44b0-bf13-690092853f10
+  Args:
+    relation: :hasRelation
+    target: Duchess_Marie_Therese_of_Wurttemberg
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+  AddLiteral (104a871c-7582-49f9-835b-42858b18efba)
+ Call ID: 104a871c-7582-49f9-835b-42858b18efba
   Args:
     relation: :hasMarriageYear
-    source: Henri_d_Orleans
+    source: Henri_Philippe_Pierre_Marie_dOrleans
     literal_type: xsd:integer
-    literal_value: 1931
-  AssignClass (fefecc0b-134a-40ee-941e-2273dc7606da)
- Call ID: fefecc0b-134a-40ee-941e-2273dc7606da
+    literal_value: 1984
+  AssignClass (d0f7ed5d-afe6-4873-a86c-1d536665d6ce)
+ Call ID: d0f7ed5d-afe6-4873-a86c-1d536665d6ce
   Args:
-    type: :Man
-    source: Henri_of_Orleans_son
-  AssignClass (1bcdd12c-53c6-4e4b-8081-146c111851a6)
- Call ID: 1bcdd12c-53c6-4e4b-8081-146c111851a6
+    source: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    type: :Woman
+  AssignClass (b21a4347-468f-4a59-a77b-01f696eace15)
+ Call ID: b21a4347-468f-4a59-a77b-01f696eace15
   Args:
-    source: Henri_of_Orleans_son
     type: :Person
-  AssignClass (a5576d99-a7ed-4df5-aad4-668323619fea)
- Call ID: a5576d99-a7ed-4df5-aad4-668323619fea
+    source: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+  AddLiteral (be8adf31-8869-40ba-85ae-344eb951872f)
+ Call ID: be8adf31-8869-40ba-85ae-344eb951872f
   Args:
-    type: :Ancestor
-    source: Henri_of_Orleans_son
-  AddTriple (068c3072-9ee5-4f4f-b42a-2453d4557822)
- Call ID: 068c3072-9ee5-4f4f-b42a-2453d4557822
+    source: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    relation: :hasBirthYear
+    literal_value: 1938
+    literal_type: xsd:integer
+  AddLiteral (05194fe1-202d-4273-be5c-872385eae1b4)
+ Call ID: 05194fe1-202d-4273-be5c-872385eae1b4
   Args:
-    source: Henri_of_Orleans_son
-    relation: :hasFather
-    target: Henri_d_Orleans
-  AssignClass (bd9f8f3b-5d72-4232-967d-9d3a77431499)
- Call ID: bd9f8f3b-5d72-4232-967d-9d3a77431499
+    relation: :hasDeathYear
+    source: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    literal_type: xsd:integer
+    literal_value: 2022
+  AddTriple (cf14bcc0-75e8-432f-8945-71b7d3525f03)
+ Call ID: cf14bcc0-75e8-432f-8945-71b7d3525f03
   Args:
-    type: :Man
-    source: Thibaut
-  AssignClass (56cfa7af-2e22-4139-8068-ff361e1a1d02)
- Call ID: 56cfa7af-2e22-4139-8068-ff361e1a1d02
-  Args:
-    source: Thibaut
-    type: :Person
-  AddTriple (631ad515-6960-4c12-9365-32325115db04)
- Call ID: 631ad515-6960-4c12-9365-32325115db04
-  Args:
-    relation: :hasFather
-    source: Thibaut
-    target: Henri_d_Orleans
-  AssignClass (51cd1688-f545-4341-8b0d-4710fbb2ea27)
- Call ID: 51cd1688-f545-4341-8b0d-4710fbb2ea27
-  Args:
-    type: :Man
-    source: Michel
-  AssignClass (474d77ec-94c7-4d24-ad51-94f33bdbcb13)
- Call ID: 474d77ec-94c7-4d24-ad51-94f33bdbcb13
-  Args:
-    source: Michel
-    type: :Person
-  AddTriple (44eca576-01be-44ff-9c22-7f0b9e05cb0e)
- Call ID: 44eca576-01be-44ff-9c22-7f0b9e05cb0e
-  Args:
-    target: Henri_d_Orleans
-    source: Michel
-    relation: :hasFather
-  AssignClass (3c22a4be-58ee-4d2d-922d-74ed3892eb14)
- Call ID: 3c22a4be-58ee-4d2d-922d-74ed3892eb14
-  Args:
-    type: :Man
-    source: Philippe_I_Duke_of_Orleans
-  AssignClass (3c519a1c-ca0a-4d5f-9faf-5a39922afb1a)
- Call ID: 3c519a1c-ca0a-4d5f-9faf-5a39922afb1a
-  Args:
-    source: Philippe_I_Duke_of_Orleans
-    type: :Ancestor
-  AddTriple (0fce429b-2b36-477b-ac75-5c11d28ae6db)
- Call ID: 0fce429b-2b36-477b-ac75-5c11d28ae6db
-  Args:
-    target: Philippe_I_Duke_of_Orleans
-    source: Henri_d_Orleans
-    relation: :hasAncestor
-  AssignClass (3761c662-fc6e-4f06-b7d1-906ded604101)
- Call ID: 3761c662-fc6e-4f06-b7d1-906ded604101
-  Args:
-    source: Louis_XIII
-    type: :Man
-  AssignClass (80de5fea-9ea9-49b6-9651-538a1bd78e25)
- Call ID: 80de5fea-9ea9-49b6-9651-538a1bd78e25
-  Args:
-    type: :Ancestor
-    source: Louis_XIII
-  AddTriple (11ef0bd4-57f9-4b22-9502-e893014c2f55)
- Call ID: 11ef0bd4-57f9-4b22-9502-e893014c2f55
-  Args:
-    source: Philippe_I_Duke_of_Orleans
-    relation: :hasFather
-    target: Louis_XIII
-  AssignClass (13817edb-e538-4759-a318-590683374930)
- Call ID: 13817edb-e538-4759-a318-590683374930
-  Args:
-    type: :Man
-    source: Louis_XIV
-  AssignClass (a162f6ff-48a4-4bfc-97c0-408d7f37c9bc)
- Call ID: a162f6ff-48a4-4bfc-97c0-408d7f37c9bc
-  Args:
-    source: Louis_XIV
-    type: :Ancestor
-  AssignClass (a693b1d7-c7e0-441b-a2b4-b0b9c6413b88)
- Call ID: a693b1d7-c7e0-441b-a2b4-b0b9c6413b88
+    target: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    source: Henri_Philippe_Pierre_Marie_dOrleans
+    relation: :hasRelation
+  AssignClass (d6a663d2-2cf4-44c0-af81-c818230a88a8)
+ Call ID: d6a663d2-2cf4-44c0-af81-c818230a88a8
   Args:
     type: :Woman
-    source: Francoise_Marie_de_Bourbon
-  AssignClass (910be1e3-c6b8-4b6f-a10f-97e25fa750dd)
- Call ID: 910be1e3-c6b8-4b6f-a10f-97e25fa750dd
+    source: Marie_daughter_of_Henri
+  AssignClass (5d512bce-a002-45fc-9d12-7217f2097a9d)
+ Call ID: 5d512bce-a002-45fc-9d12-7217f2097a9d
   Args:
-    type: :Ancestor
-    source: Francoise_Marie_de_Bourbon
-  AddTriple (c3557ed8-1f0b-4bc8-a131-f71dce048d89)
- Call ID: c3557ed8-1f0b-4bc8-a131-f71dce048d89
+    source: Marie_daughter_of_Henri
+    type: :Person
+  AddTriple (a01e179a-c51f-4d1c-ad7d-ceee91357969)
+ Call ID: a01e179a-c51f-4d1c-ad7d-ceee91357969
   Args:
-    source: Francoise_Marie_de_Bourbon
     relation: :hasFather
-    target: Louis_XIV
-  AddTriple (c9436291-5f5d-4be9-934c-8576b1a3e394)
- Call ID: c9436291-5f5d-4be9-934c-8576b1a3e394
+    target: Henri_Philippe_Pierre_Marie_dOrleans
+    source: Marie_daughter_of_Henri
+  AddTriple (8830c520-4b0e-43ed-93d4-d1ce568c446f)
+ Call ID: 8830c520-4b0e-43ed-93d4-d1ce568c446f
   Args:
-    relation: :hasAncestor
-    source: Henri_d_Orleans
-    target: Francoise_Marie_de_Bourbon
-  AssignClass (3591409a-b22b-4788-8dc6-e5ecede59535)
- Call ID: 3591409a-b22b-4788-8dc6-e5ecede59535
+    source: Marie_daughter_of_Henri
+    target: Duchess_Marie_Therese_of_Wurttemberg
+    relation: :hasMother
+  AssignClass (46e9a9a4-ba41-47dc-95e7-9e6d9dc1be1f)
+ Call ID: 46e9a9a4-ba41-47dc-95e7-9e6d9dc1be1f
+  Args:
+    source: Prince_Gundakar_of_Liechtenstein
+    type: :Man
+  AssignClass (0812b6bb-6226-4131-bfd2-f53423a896eb)
+ Call ID: 0812b6bb-6226-4131-bfd2-f53423a896eb
+  Args:
+    source: Prince_Gundakar_of_Liechtenstein
+    type: :Person
+  AddTriple (8ac11242-55a7-4831-8cb3-dd224fe3ed8d)
+ Call ID: 8ac11242-55a7-4831-8cb3-dd224fe3ed8d
+  Args:
+    relation: :hasRelation
+    target: Prince_Gundakar_of_Liechtenstein
+    source: Marie_daughter_of_Henri
+  AssignClass (a6e2c4c4-874b-468a-a726-6b00464b479e)
+ Call ID: a6e2c4c4-874b-468a-a726-6b00464b479e
+  Args:
+    source: Michel_Count_of_Evreux
+    type: :Man
+  AssignClass (3b7aed80-2b6b-4151-a582-94265e7e1f38)
+ Call ID: 3b7aed80-2b6b-4151-a582-94265e7e1f38
+  Args:
+    source: Michel_Count_of_Evreux
+    type: :Person
+  AddTriple (b1df7d32-f3b7-4d0f-81c5-b58396177f94)
+ Call ID: b1df7d32-f3b7-4d0f-81c5-b58396177f94
+  Args:
+    source: Michel_Count_of_Evreux
+    target: Henri_Philippe_Pierre_Marie_dOrleans
+    relation: :isBrotherOf
+  AssignClass (60efe796-6012-423c-8116-b80fa6abfcb2)
+ Call ID: 60efe796-6012-423c-8116-b80fa6abfcb2
   Args:
     type: :Man
-    source: Louis_Philippe_I
-  AssignClass (4a5198c3-9db8-4c38-81d1-748da9b74c46)
- Call ID: 4a5198c3-9db8-4c38-81d1-748da9b74c46
-  Args:
-    source: Louis_Philippe_I
-    type: :Ancestor
-  AddTriple (2d5aa32e-38ac-4b92-a0a7-263d88b4163d)
- Call ID: 2d5aa32e-38ac-4b92-a0a7-263d88b4163d
-  Args:
-    target: Louis_Philippe_I
-    relation: :hasAncestor
-    source: Henri_d_Orleans
-  AssignClass (69b6c515-bedf-450b-bca7-9276c30c594e)
- Call ID: 69b6c515-bedf-450b-bca7-9276c30c594e
-  Args:
-    type: :Man
-    source: Philippe_Duke_of_Orleans_maternal_uncle
-  AssignClass (f7fe88cf-6c9b-452c-93fa-3bc0f2e97d64)
- Call ID: f7fe88cf-6c9b-452c-93fa-3bc0f2e97d64
-  Args:
-    source: Philippe_Duke_of_Orleans_maternal_uncle
-    type: :Ancestor
-  AssignClass (83883fd0-c69d-40fa-a49e-c1e7f20d5bdc)
- Call ID: 83883fd0-c69d-40fa-a49e-c1e7f20d5bdc
-  Args:
-    type: :Man
-    source: Eudes_Duke_of_Angouleme
-  AssignClass (5bd47560-0b7d-4823-8608-d7564935f93f)
- Call ID: 5bd47560-0b7d-4823-8608-d7564935f93f
+    source: Thibaut_Count_of_La_Marche
+  AssignClass (2f20e7cd-c9a4-4e63-862d-768172194b0b)
+ Call ID: 2f20e7cd-c9a4-4e63-862d-768172194b0b
   Args:
     type: :Person
-    source: Eudes_Duke_of_Angouleme
-  Finish (a9d48c67-deb9-4819-8415-a96101e78d30)
- Call ID: a9d48c67-deb9-4819-8415-a96101e78d30
+    source: Thibaut_Count_of_La_Marche
+  AddTriple (53604879-ee08-4be8-95a3-2ca843ff8b55)
+ Call ID: 53604879-ee08-4be8-95a3-2ca843ff8b55
+  Args:
+    source: Thibaut_Count_of_La_Marche
+    target: Henri_Philippe_Pierre_Marie_dOrleans
+    relation: :isBrotherOf
+  AssignClass (86badb4d-8bc4-44e0-b360-a8e59ea8903a)
+ Call ID: 86badb4d-8bc4-44e0-b360-a8e59ea8903a
+  Args:
+    type: :Man
+    source: Jacques_Duke_of_Orleans
+  AssignClass (b947e0b8-c69a-4438-98ec-1ad86c7ed6db)
+ Call ID: b947e0b8-c69a-4438-98ec-1ad86c7ed6db
+  Args:
+    source: Jacques_Duke_of_Orleans
+    type: :Person
+  AddTriple (c4d539b8-b259-464e-bf26-2042b139b411)
+ Call ID: c4d539b8-b259-464e-bf26-2042b139b411
+  Args:
+    source: Jacques_Duke_of_Orleans
+    target: Henri_Philippe_Pierre_Marie_dOrleans
+    relation: :isBrotherOf
+  AssignClass (5a83284f-5d71-4082-93ba-f62114a5e017)
+ Call ID: 5a83284f-5d71-4082-93ba-f62114a5e017
+  Args:
+    type: :Man
+    source: Charles_Louis_dOrleans
+  AssignClass (790cbead-a8fa-4601-9bd0-028b1ef5fa62)
+ Call ID: 790cbead-a8fa-4601-9bd0-028b1ef5fa62
+  Args:
+    source: Charles_Louis_dOrleans
+    type: :Person
+  AddTriple (33d58578-58b4-4b49-ac6f-7ea2aec6592d)
+ Call ID: 33d58578-58b4-4b49-ac6f-7ea2aec6592d
+  Args:
+    relation: :hasFather
+    target: Jacques_Duke_of_Orleans
+    source: Charles_Louis_dOrleans
+  AssignClass (f761d5ac-c486-4749-9cd4-4b17151c4c41)
+ Call ID: f761d5ac-c486-4749-9cd4-4b17151c4c41
+  Args:
+    type: :Man
+    source: Foulques_dOrleans
+  AssignClass (698c8f65-87c8-451d-9107-f1807a3f8566)
+ Call ID: 698c8f65-87c8-451d-9107-f1807a3f8566
+  Args:
+    source: Foulques_dOrleans
+    type: :Person
+  AddTriple (582874d2-f90e-4731-9635-60be9b1be744)
+ Call ID: 582874d2-f90e-4731-9635-60be9b1be744
+  Args:
+    source: Foulques_dOrleans
+    target: Jacques_Duke_of_Orleans
+    relation: :hasFather
+  AssignClass (a3285312-19c4-4817-9199-aff1b8573fe4)
+ Call ID: a3285312-19c4-4817-9199-aff1b8573fe4
+  Args:
+    source: Francois_son_of_Henri
+    type: :Man
+  AssignClass (e0c49e28-80bf-44c1-a5dd-2d812a8b27ed)
+ Call ID: e0c49e28-80bf-44c1-a5dd-2d812a8b27ed
+  Args:
+    source: Francois_son_of_Henri
+    type: :Person
+  AddTriple (0bbe9dc4-7090-4f9f-bacc-dbf3c6b0fcd6)
+ Call ID: 0bbe9dc4-7090-4f9f-bacc-dbf3c6b0fcd6
+  Args:
+    relation: :hasFather
+    source: Francois_son_of_Henri
+    target: Henri_Philippe_Pierre_Marie_dOrleans
+  AddTriple (edad0064-9025-4343-831d-3b90fc43e02b)
+ Call ID: edad0064-9025-4343-831d-3b90fc43e02b
+  Args:
+    source: Francois_son_of_Henri
+    target: Duchess_Marie_Therese_of_Wurttemberg
+    relation: :hasMother
+  AssignClass (e4f096fa-8820-4e25-b3ea-3125bec0a602)
+ Call ID: e4f096fa-8820-4e25-b3ea-3125bec0a602
+  Args:
+    type: :Man
+    source: Jean_Duke_of_Vendome
+  AssignClass (3c5f0216-8528-495b-b862-1de92e22f782)
+ Call ID: 3c5f0216-8528-495b-b862-1de92e22f782
+  Args:
+    type: :Person
+    source: Jean_Duke_of_Vendome
+  AddTriple (f0ae8e17-04b3-4ae2-94b9-a3284cb43c74)
+ Call ID: f0ae8e17-04b3-4ae2-94b9-a3284cb43c74
+  Args:
+    source: Jean_Duke_of_Vendome
+    target: Henri_Philippe_Pierre_Marie_dOrleans
+    relation: :hasFather
+  AddTriple (512b7955-7b0c-4fa4-833e-0f441de1aac9)
+ Call ID: 512b7955-7b0c-4fa4-833e-0f441de1aac9
+  Args:
+    relation: :hasMother
+    source: Jean_Duke_of_Vendome
+    target: Duchess_Marie_Therese_of_Wurttemberg
+  AssignClass (f6738786-d015-4515-bca6-29a56a1dcb89)
+ Call ID: f6738786-d015-4515-bca6-29a56a1dcb89
+  Args:
+    source: Diane_sister_of_Henri
+    type: :Woman
+  AssignClass (3517ac67-91b1-4e7e-915f-6b67d905f0e3)
+ Call ID: 3517ac67-91b1-4e7e-915f-6b67d905f0e3
+  Args:
+    source: Diane_sister_of_Henri
+    type: :Person
+  AddTriple (686bd135-3115-42b8-a3ed-547c66ae254a)
+ Call ID: 686bd135-3115-42b8-a3ed-547c66ae254a
+  Args:
+    relation: :isSisterOf
+    target: Henri_Philippe_Pierre_Marie_dOrleans
+    source: Diane_sister_of_Henri
+  AssignClass (e7ee717f-5c4f-44cd-9d6f-39df4ee48dcc)
+ Call ID: e7ee717f-5c4f-44cd-9d6f-39df4ee48dcc
+  Args:
+    source: Luis_Cousino_y_Sebire
+    type: :Man
+  AssignClass (af9dffc0-c43e-4b4d-a692-30402682ff3e)
+ Call ID: af9dffc0-c43e-4b4d-a692-30402682ff3e
+  Args:
+    type: :Person
+    source: Luis_Cousino_y_Sebire
+  AssignClass (8955c783-53f5-4fb7-a605-8a2b63480018)
+ Call ID: 8955c783-53f5-4fb7-a605-8a2b63480018
+  Args:
+    source: Antonia_Maria_Quinones_de_Leon_y_Banuelos
+    type: :Woman
+  AssignClass (19b7cd26-4323-474b-9258-ece05e23787d)
+ Call ID: 19b7cd26-4323-474b-9258-ece05e23787d
+  Args:
+    type: :Person
+    source: Antonia_Maria_Quinones_de_Leon_y_Banuelos
+  AddTriple (fbe45096-4e7c-43be-8a4c-3f8fc3233182)
+ Call ID: fbe45096-4e7c-43be-8a4c-3f8fc3233182
+  Args:
+    source: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    target: Luis_Cousino_y_Sebire
+    relation: :hasFather
+  AddTriple (bce3843a-46a5-4226-b23e-a51dd4d5b388)
+ Call ID: bce3843a-46a5-4226-b23e-a51dd4d5b388
+  Args:
+    relation: :hasMother
+    target: Antonia_Maria_Quinones_de_Leon_y_Banuelos
+    source: Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+  Finish (c5cc5ecc-2b98-46ce-b3f3-440c966d5c6a)
+ Call ID: c5cc5ecc-2b98-46ce-b3f3-440c966d5c6a
   Args:

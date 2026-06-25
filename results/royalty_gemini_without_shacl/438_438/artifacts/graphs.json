@@ -4,13 +4,20 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Katherine_Juliet_Bowes-Lyon a :Woman ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:John_Herbert_Bowes-Lyon ;\n    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .\n\ndata:Nerissa_Jane_Irene_Bowes-Lyon a :Woman ;\n    :hasBirthYear 1919 ;\n    :hasDeathYear 1986 ;\n    :hasFather data:John_Herbert_Bowes-Lyon ;\n    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .\n\ndata:Cecilia_Bowes-Lyon a :Woman .\n\ndata:Claude_Bowes-Lyon a :Man .\n\ndata:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman .\n\ndata:John_Herbert_Bowes-Lyon a :Man ;\n    :hasFather data:Claude_Bowes-Lyon ;\n    :hasMother data:Cecilia_Bowes-Lyon .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Michael_Albemarle_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasDeathYear 2023 ;\n    :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;\n    :hasMother data:Elizabeth_Margaret_Cator ;\n    :hasSex data:Male .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Person,\n        :Woman .\n\ndata:Elizabeth_Margaret_Cator a :Person,\n        :Woman ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1959 .\n\ndata:Michael_Claude_Hamilton_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 1,
+        "iteration": 2,
+        "source": "post_edits",
+        "tool_call_id": null,
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Michael_Albemarle_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasDeathYear 2023 ;\n    :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;\n    :hasMother data:Elizabeth_Margaret_Cator ;\n    :hasSex data:Male .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Person,\n        :Woman .\n\ndata:Elizabeth_Margaret_Cator a :Person,\n        :Woman ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1959 .\n\ndata:Male a :Sex .\n\ndata:Michael_Claude_Hamilton_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 .\n\n"
+    },
+    {
+        "graph_type": "data_graph",
+        "iteration": 3,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Katherine_Juliet_Bowes-Lyon a :Woman ;\n    :hasBirthYear 1926 ;\n    :hasDeathYear 2014 ;\n    :hasFather data:John_Herbert_Bowes-Lyon ;\n    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .\n\ndata:Nerissa_Jane_Irene_Bowes-Lyon a :Woman ;\n    :hasBirthYear 1919 ;\n    :hasDeathYear 1986 ;\n    :hasFather data:John_Herbert_Bowes-Lyon ;\n    :hasMother data:Fenella_Hepburn-Stuart-Forbes-Trefusis .\n\ndata:Cecilia_Bowes-Lyon a :Woman .\n\ndata:Claude_Bowes-Lyon a :Man .\n\ndata:Fenella_Hepburn-Stuart-Forbes-Trefusis a :Woman .\n\ndata:John_Herbert_Bowes-Lyon a :Man ;\n    :hasFather data:Claude_Bowes-Lyon ;\n    :hasMother data:Cecilia_Bowes-Lyon .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Michael_Albemarle_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1940 ;\n    :hasDeathYear 2023 ;\n    :hasFather data:Michael_Claude_Hamilton_Bowes-Lyon ;\n    :hasMother data:Elizabeth_Margaret_Cator ;\n    :hasSex data:Male .\n\ndata:Princess_Margaret a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_II a :Person,\n        :Woman .\n\ndata:Queen_Elizabeth_The_Queen_Mother a :Person,\n        :Woman .\n\ndata:Elizabeth_Margaret_Cator a :Person,\n        :Woman ;\n    :hasBirthYear 1899 ;\n    :hasDeathYear 1959 .\n\ndata:Male a :Sex .\n\ndata:Michael_Claude_Hamilton_Bowes-Lyon a :Man,\n        :Person ;\n    :hasBirthYear 1893 ;\n    :hasDeathYear 1953 .\n\n"
     }
 ]

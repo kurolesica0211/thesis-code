@@ -2,50 +2,69 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Philipp_Prince_of_Hohenlohe-Langenburg a :Man,
+data:Prince_Nicolas a :Man,
         :Person ;
-    :hasBirthYear 1970 ;
-    :hasFather data:Kraft_Prince_of_Hohenlohe-Langenburg ;
-    :hasMarriageYear 2003 ;
-    :hasMother data:Princess_Charlotte_of_Croy ;
-    :hasRelation data:Saskia_Binder .
+    :isBrotherOf data:Carol_II .
 
-data:Anna_Elspeth_Campbell a :Ancestor,
-        :Person,
+data:Princess_Elena_Granddaughter a :Person,
         :Woman ;
-    :hasBirthYear 1917 ;
-    :hasDeathYear 1986 ;
-    :hasFather data:Archibald_Campbell_6th_of_Glendaruel .
+    :isDaughterOf data:Michael_I .
 
-data:Archibald_Campbell_6th_of_Glendaruel a :Ancestor,
+data:Princess_Elisabeth a :Person,
+        :Woman ;
+    :isSisterOf data:Carol_II .
+
+data:Princess_Ileana a :Person,
+        :Woman ;
+    :isSisterOf data:Carol_II .
+
+data:Princess_Irina a :Person,
+        :Woman ;
+    :isDaughterOf data:Michael_I .
+
+data:Princess_Margareta a :Person,
+        :Woman ;
+    :isDaughterOf data:Michael_I .
+
+data:Princess_Maria a :Person,
+        :Woman ;
+    :isDaughterOf data:Michael_I .
+
+data:Princess_Sophie a :Person,
+        :Woman ;
+    :isDaughterOf data:Michael_I .
+
+data:Anne_of_Bourbon-Parma a :Person,
+        :Woman .
+
+data:Constantine_I_of_Greece a :Ancestor,
         :Man,
         :Person .
 
-data:Hans_Peter_Binder a :Ancestor,
+data:Elena_of_Romania a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Constantine_I_of_Greece .
+
+data:Ferdinand_I a :Ancestor,
         :Man,
         :Person .
 
-data:Kraft_Prince_of_Hohenlohe-Langenburg a :Ancestor,
+data:Male a :Sex .
+
+data:Carol_II a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear 1935 ;
-    :hasDeathYear 2004 .
+    :hasFather data:Ferdinand_I .
 
-data:Prince_Alexander_of_Croy a :Ancestor,
+data:Michael_I a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear 1912 ;
-    :hasDeathYear 2002 .
-
-data:Princess_Charlotte_of_Croy a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1938 ;
-    :hasFather data:Prince_Alexander_of_Croy ;
-    :hasMother data:Anna_Elspeth_Campbell .
-
-data:Saskia_Binder a :Person,
-        :Woman ;
-    :hasBirthYear 1973 ;
-    :hasFather data:Hans_Peter_Binder .
+    :hasBirthYear 1921 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Carol_II ;
+    :hasMarriageYear 1948 ;
+    :hasMother data:Elena_of_Romania ;
+    :hasRelation data:Anne_of_Bourbon-Parma ;
+    :hasSex data:Male .
 

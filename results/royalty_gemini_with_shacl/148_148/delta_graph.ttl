@@ -2,34 +2,63 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexandra_of_Greece_and_Denmark a :Person,
-        :Woman ;
-    :alsoKnownAs "Alexandra Georgievna"^^xsd:string ;
-    :hasBirthYear 1870 ;
-    :hasChild data:Dmitri_Pavlovich_of_Russia,
-        data:Maria_Pavlovna_of_Russia ;
-    :hasDeathYear 1891 ;
-    :hasFather data:George_I_of_Greece ;
-    :hasMarriageYear 1889 ;
-    :hasMother data:Olga_Constantinovna_of_Russia ;
-    :knownAs "Aline"^^xsd:string .
+data:Emperor_Alexander_II_of_Russia a :Man,
+        :Person .
 
-data:Paul_Alexandrovich_of_Russia a :Man,
+data:Karl_of_Leiningen a :Man,
         :Person ;
-    :hasChild data:Dmitri_Pavlovich_of_Russia,
-        data:Maria_Pavlovna_of_Russia .
+    :hasBirthYear 1928 ;
+    :hasDeathYear 1990 ;
+    :hasFather data:Karl_6th_Prince_of_Leiningen ;
+    :hasMarriageYear 1956,
+        1968 ;
+    :hasMother data:Maria_Kirillovna_of_Russia ;
+    :hasSex data:Male .
 
-data:George_I_of_Greece a :Ancestor,
+data:Marie_Louise_of_Bulgaria a :Person,
+        :Woman ;
+    :hasFather data:Boris_III_of_Bulgaria ;
+    :hasMother data:Giovanna_of_Italy ;
+    :hasSex data:Female .
+
+data:Queen_Victoria_of_the_United_Kingdom a :Person,
+        :Woman .
+
+data:Boris_III_of_Bulgaria a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :hasSex data:Male .
 
-data:Olga_Constantinovna_of_Russia a :Ancestor,
+data:Giovanna_of_Italy a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasSex data:Female .
 
-data:Dmitri_Pavlovich_of_Russia a :Man,
-        :Person .
+data:Karl_6th_Prince_of_Leiningen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1946 ;
+    :hasSex data:Male .
 
-data:Maria_Pavlovna_of_Russia a :Person,
-        :Woman .
+data:Kirill_Vladimirovich_of_Russia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
+
+data:Maria_Kirillovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Kirill_Vladimirovich_of_Russia ;
+    :hasMother data:Victoria_Melita_of_Edinburgh ;
+    :hasSex data:Female .
+
+data:Victoria_Melita_of_Edinburgh a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 

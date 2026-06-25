@@ -1,0 +1,496 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Prince_Claus-_Prince_Consort_of_the_Netherlands a :Man,
+        :Person ;
+    rdfs:label "Prince Claus, Prince Consort of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "4959:4976"^^xsd:string,
+        "5822:5839"^^xsd:string,
+        "6049:6066"^^xsd:string,
+        "6120:6173"^^xsd:string,
+        "6206:6223"^^xsd:string,
+        "836:853"^^xsd:string ;
+    data:posIndicesPart "10087:10093"^^xsd:string,
+        "10495:10506"^^xsd:string,
+        "10948:10959"^^xsd:string,
+        "1185:1196"^^xsd:string,
+        "1688:1699"^^xsd:string,
+        "2405:2416"^^xsd:string,
+        "2687:2698"^^xsd:string,
+        "3759:3770"^^xsd:string,
+        "3811:3822"^^xsd:string,
+        "4072:4083"^^xsd:string,
+        "4586:4597"^^xsd:string,
+        "4741:4752"^^xsd:string,
+        "4798:4809"^^xsd:string,
+        "5028:5034"^^xsd:string,
+        "5035:5040"^^xsd:string,
+        "5178:5183"^^xsd:string,
+        "5193:5198"^^xsd:string,
+        "5341:5347"^^xsd:string,
+        "5348:5353"^^xsd:string,
+        "5449:5455"^^xsd:string,
+        "5456:5461"^^xsd:string,
+        "5855:5860"^^xsd:string,
+        "6923:6929"^^xsd:string,
+        "6930:6935"^^xsd:string,
+        "7027:7032"^^xsd:string,
+        "7757:7768"^^xsd:string,
+        "8292:8298"^^xsd:string,
+        "8768:8779"^^xsd:string,
+        "9229:9235"^^xsd:string,
+        "9236:9241"^^xsd:string ;
+    data:wdtLink wdt:Q159609 ;
+    :alsoKnownAs "Claus van Amsberg"^^xsd:string,
+        "Claus von Amsberg"^^xsd:string,
+        "Claus, Prince Consort of the Netherlands"^^xsd:string,
+        "Klaus von Amsberg"^^xsd:string,
+        "Klaus-Georg Wilhelm Otto Friedrich Gerd von Amsberg"^^xsd:string,
+        "Prince Claus of the Netherlands, Jonkheer van Amsberg"^^xsd:string ;
+    :hasBrother data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasRelation data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isBrotherOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Claus-_Prince_Consort_of_the_Netherlands .
+
+data:female a :Female .
+
+data:Armgard_of_Sierstorpff-Cramm a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Armgard of Sierstorpff-Cramm"^^xsd:string ;
+    data:posIndicesFull "1776:1812"^^xsd:string ;
+    data:posIndicesPart "2251:2258"^^xsd:string,
+        "6645:6656"^^xsd:string ;
+    data:wdtLink wdt:Q2802589 ;
+    :alsoKnownAs "Armgard Kunigunde Alharda Agnes Oda von Cramm"^^xsd:string,
+        "Armgard von Cramm"^^xsd:string,
+        "Baroness Armgard of Sierstorpff-Cramm"^^xsd:string,
+        "Baroness Armgard von Cramm"^^xsd:string,
+        "Countess Bodo von Oeynhausen"^^xsd:string,
+        "Princess Bernhard of Lippe-Biesterfeld"^^xsd:string ;
+    :hasChild data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Beatrix_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Princess_Christina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Armgard_of_Sierstorpff-Cramm ;
+    :hasSon data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isAuntOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBloodrelationOf data:Armgard_of_Sierstorpff-Cramm ;
+    :isMotherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isParentOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Armgard_of_Sierstorpff-Cramm ;
+    :isSisterOf data:Armgard_of_Sierstorpff-Cramm .
+
+data:Prince_Bernhard_of_Lippe a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Bernhard of Lippe"^^xsd:string ;
+    data:posIndicesFull "1776:1800"^^xsd:string,
+        "1783:1812"^^xsd:string ;
+    data:posIndicesPart "10087:10093"^^xsd:string,
+        "11403:11408"^^xsd:string,
+        "11517:11522"^^xsd:string,
+        "2272:2277"^^xsd:string,
+        "2568:2576"^^xsd:string,
+        "5028:5034"^^xsd:string,
+        "5341:5347"^^xsd:string,
+        "5449:5455"^^xsd:string,
+        "6923:6929"^^xsd:string,
+        "8292:8298"^^xsd:string,
+        "9229:9235"^^xsd:string ;
+    data:wdtLink wdt:Q649601 ;
+    :alsoKnownAs "Bernhard Prinz zur Lippe"^^xsd:string,
+        "Bernhard of Lippe-Biesterfeld"^^xsd:string,
+        "Bernhard zur Lippe"^^xsd:string,
+        "Prince Bernhard of Lippe (1872–1934)"^^xsd:string,
+        "Prince Bernhard of Lippe-Biesterfeld (1872–1934)"^^xsd:string ;
+    :hasBrother data:Prince_Bernhard_of_Lippe ;
+    :hasChild data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Princess_Christina_of_the_Netherlands ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isBloodrelationOf data:Prince_Bernhard_of_Lippe ;
+    :isBrotherOf data:Prince_Bernhard_of_Lippe ;
+    :isFatherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isParentOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Prince_Bernhard_of_Lippe ;
+    :isUncleOf data:Prince_Bernhard_of_Lippe-Biesterfeld .
+
+data:Wilhelmina_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Wilhelmina of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "1611:1621"^^xsd:string,
+        "2211:2227"^^xsd:string,
+        "2211:2246"^^xsd:string,
+        "2217:2227"^^xsd:string,
+        "2217:2246"^^xsd:string,
+        "2602:2618"^^xsd:string,
+        "2608:2618"^^xsd:string,
+        "4045:4055"^^xsd:string,
+        "535:551"^^xsd:string,
+        "541:551"^^xsd:string,
+        "81:91"^^xsd:string ;
+    data:posIndicesPart "10495:10506"^^xsd:string,
+        "10948:10959"^^xsd:string,
+        "1185:1196"^^xsd:string,
+        "2405:2416"^^xsd:string,
+        "2687:2698"^^xsd:string,
+        "3759:3770"^^xsd:string,
+        "3811:3822"^^xsd:string,
+        "4586:4597"^^xsd:string,
+        "4741:4752"^^xsd:string,
+        "4798:4809"^^xsd:string,
+        "7757:7768"^^xsd:string,
+        "775:786"^^xsd:string,
+        "8768:8779"^^xsd:string ;
+    data:wdtLink wdt:Q150747 ;
+    :alsoKnownAs "Princess Wilhelmina of The Netherlands"^^xsd:string,
+        "Princess Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Wilhelmina"^^xsd:string,
+        "Queen Wilhelmina of the Netherlands"^^xsd:string,
+        "Wilhelmina"^^xsd:string,
+        "Wilhelmina I"^^xsd:string,
+        "Wilhelmina Koningin der Nederlanden"^^xsd:string ;
+    :hasChild data:Juliana_of_the_Netherlands ;
+    :hasDaughter data:Juliana_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Wilhelmina_of_the_Netherlands ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isAuntOf data:Juliana_of_the_Netherlands ;
+    :isBloodrelationOf data:Wilhelmina_of_the_Netherlands ;
+    :isMotherOf data:Juliana_of_the_Netherlands ;
+    :isParentOf data:Juliana_of_the_Netherlands ;
+    :isSiblingOf data:Wilhelmina_of_the_Netherlands ;
+    :isSisterOf data:Wilhelmina_of_the_Netherlands .
+
+data:Juliana_of_the_Netherlands a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Juliana of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "1723:1758"^^xsd:string,
+        "1732:1739"^^xsd:string,
+        "1732:1758"^^xsd:string,
+        "2521:2528"^^xsd:string,
+        "2765:2772"^^xsd:string,
+        "3162:3169"^^xsd:string,
+        "3250:3257"^^xsd:string,
+        "3344:3351"^^xsd:string,
+        "618:631"^^xsd:string,
+        "624:631"^^xsd:string,
+        "7247:7260"^^xsd:string,
+        "7253:7260"^^xsd:string,
+        "7506:7513"^^xsd:string,
+        "7662:7669"^^xsd:string ;
+    data:posIndicesPart "10495:10506"^^xsd:string,
+        "10948:10959"^^xsd:string,
+        "1185:1196"^^xsd:string,
+        "2405:2416"^^xsd:string,
+        "2687:2698"^^xsd:string,
+        "3759:3770"^^xsd:string,
+        "3811:3822"^^xsd:string,
+        "4072:4083"^^xsd:string,
+        "4586:4597"^^xsd:string,
+        "4741:4752"^^xsd:string,
+        "4798:4809"^^xsd:string,
+        "775:786"^^xsd:string,
+        "8768:8779"^^xsd:string ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina"^^xsd:string,
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Juliana der Nederlanden"^^xsd:string,
+        "Julijana"^^xsd:string,
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Princess Juliana of the Netherlands"^^xsd:string,
+        "Queen Juliana"^^xsd:string,
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands"^^xsd:string,
+        "Queen Juliana of the Netherlands"^^xsd:string ;
+    :hasAncestor data:Wilhelmina_of_the_Netherlands ;
+    :hasChild data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :hasMother data:Wilhelmina_of_the_Netherlands ;
+    :hasParent data:Wilhelmina_of_the_Netherlands ;
+    :hasRelation data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Juliana_of_the_Netherlands ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isAuntOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isBloodrelationOf data:Juliana_of_the_Netherlands ;
+    :isChildOf data:Wilhelmina_of_the_Netherlands ;
+    :isDaughterOf data:Wilhelmina_of_the_Netherlands ;
+    :isMotherOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isSiblingOf data:Juliana_of_the_Netherlands ;
+    :isSisterOf data:Juliana_of_the_Netherlands .
+
+data:Beatrix_of_the_Netherlands a :Person,
+        :Woman ;
+    rdfs:label "Beatrix of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "11327:11362"^^xsd:string,
+        "11336:11362"^^xsd:string,
+        "1603:1629"^^xsd:string,
+        "73:99"^^xsd:string,
+        "8905:8918"^^xsd:string ;
+    data:posIndicesPart "10205:10212"^^xsd:string,
+        "10328:10335"^^xsd:string,
+        "10435:10442"^^xsd:string,
+        "10495:10506"^^xsd:string,
+        "10613:10620"^^xsd:string,
+        "10767:10774"^^xsd:string,
+        "10890:10897"^^xsd:string,
+        "10948:10959"^^xsd:string,
+        "11046:11053"^^xsd:string,
+        "11056:11063"^^xsd:string,
+        "1185:1196"^^xsd:string,
+        "1410:1417"^^xsd:string,
+        "1516:1523"^^xsd:string,
+        "1814:1821"^^xsd:string,
+        "1975:1982"^^xsd:string,
+        "2147:2154"^^xsd:string,
+        "2296:2303"^^xsd:string,
+        "2405:2416"^^xsd:string,
+        "2464:2471"^^xsd:string,
+        "2687:2698"^^xsd:string,
+        "3516:3523"^^xsd:string,
+        "3602:3609"^^xsd:string,
+        "3759:3770"^^xsd:string,
+        "3811:3822"^^xsd:string,
+        "3841:3848"^^xsd:string,
+        "4072:4083"^^xsd:string,
+        "4112:4119"^^xsd:string,
+        "4225:4232"^^xsd:string,
+        "4394:4401"^^xsd:string,
+        "4502:4509"^^xsd:string,
+        "4586:4597"^^xsd:string,
+        "472:479"^^xsd:string,
+        "4741:4752"^^xsd:string,
+        "4798:4809"^^xsd:string,
+        "4911:4918"^^xsd:string,
+        "5437:5444"^^xsd:string,
+        "5605:5612"^^xsd:string,
+        "5658:5665"^^xsd:string,
+        "5791:5798"^^xsd:string,
+        "5865:5872"^^xsd:string,
+        "6190:6197"^^xsd:string,
+        "642:649"^^xsd:string,
+        "6734:6741"^^xsd:string,
+        "6807:6814"^^xsd:string,
+        "7015:7022"^^xsd:string,
+        "7149:7156"^^xsd:string,
+        "7368:7375"^^xsd:string,
+        "7382:7389"^^xsd:string,
+        "7587:7594"^^xsd:string,
+        "7685:7692"^^xsd:string,
+        "7757:7768"^^xsd:string,
+        "775:786"^^xsd:string,
+        "7777:7784"^^xsd:string,
+        "8067:8074"^^xsd:string,
+        "820:827"^^xsd:string,
+        "8347:8354"^^xsd:string,
+        "8559:8566"^^xsd:string,
+        "8768:8779"^^xsd:string,
+        "9065:9072"^^xsd:string,
+        "9290:9297"^^xsd:string,
+        "9402:9409"^^xsd:string,
+        "952:959"^^xsd:string,
+        "9544:9551"^^xsd:string,
+        "9662:9669"^^xsd:string,
+        "9803:9810"^^xsd:string,
+        "984:991"^^xsd:string,
+        "9937:9944"^^xsd:string ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau"^^xsd:string,
+        "Beatrix Wilhelmina Armgard"^^xsd:string,
+        "Beatrix der Nederlanden"^^xsd:string,
+        "Beatrix of Orange"^^xsd:string,
+        "Beatrix van Oranje"^^xsd:string,
+        "Princess Beatrix of Orange-Nassau"^^xsd:string,
+        "Princess Beatrix of the Netherlands"^^xsd:string,
+        "Queen Beatrix"^^xsd:string ;
+    :hasAncestor data:Armgard_of_Sierstorpff-Cramm,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isBloodrelationOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands .
+
+data:Princess_Christina_of_the_Netherlands a :Person,
+        :Woman ;
+    rdfs:label "Princess Christina of the Netherlands"^^xsd:string ;
+    data:posIndicesFull "6333:6370"^^xsd:string,
+        "6342:6370"^^xsd:string ;
+    data:posIndicesPart "10495:10506"^^xsd:string,
+        "10758:10766"^^xsd:string,
+        "10948:10959"^^xsd:string,
+        "10961:10969"^^xsd:string,
+        "11155:11163"^^xsd:string,
+        "11364:11372"^^xsd:string,
+        "11391:11399"^^xsd:string,
+        "11505:11513"^^xsd:string,
+        "7757:7768"^^xsd:string,
+        "8768:8779"^^xsd:string ;
+    data:wdtLink wdt:Q435324 ;
+    :alsoKnownAs "Christina of the Netherlands"^^xsd:string,
+        "Christina van Lippe-Biesterfeld"^^xsd:string,
+        "Christina van Oranje"^^xsd:string,
+        "Maria Christina of the Netherlands"^^xsd:string,
+        "Maria Christina van Oranje-Nassau"^^xsd:string,
+        "Princess Maria Christina of the Netherlands"^^xsd:string,
+        "Princess Marijke"^^xsd:string ;
+    :hasAncestor data:Armgard_of_Sierstorpff-Cramm,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasMother data:Juliana_of_the_Netherlands ;
+    :hasParent data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Beatrix_of_the_Netherlands,
+        data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Princess_Christina_of_the_Netherlands,
+        data:Wilhelmina_of_the_Netherlands ;
+    :hasSex data:female ;
+    :hasSister data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isBloodrelationOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isChildOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isDaughterOf data:Juliana_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSiblingOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isSisterOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands .
+
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Bernhard of Lippe-Biesterfeld"^^xsd:string ;
+    data:posIndicesFull "1776:1812"^^xsd:string,
+        "1783:1812"^^xsd:string ;
+    data:posIndicesPart "10087:10093"^^xsd:string,
+        "11403:11408"^^xsd:string,
+        "11409:11420"^^xsd:string,
+        "11517:11522"^^xsd:string,
+        "11523:11534"^^xsd:string,
+        "2272:2277"^^xsd:string,
+        "2278:2289"^^xsd:string,
+        "2568:2576"^^xsd:string,
+        "5028:5034"^^xsd:string,
+        "5341:5347"^^xsd:string,
+        "5449:5455"^^xsd:string,
+        "6923:6929"^^xsd:string,
+        "8292:8298"^^xsd:string,
+        "9229:9235"^^xsd:string ;
+    data:wdtLink wdt:Q57304 ;
+    :alsoKnownAs "B. van Lippe Biesterfeld"^^xsd:string,
+        "Bernhard of Lippe-Biesterfeld"^^xsd:string,
+        "Bernhard zur Lippe-Biesterfeld"^^xsd:string,
+        "Bernhard, Prince Consort of the Netherlands"^^xsd:string,
+        "Prince Bernhard of the Netherlands"^^xsd:string,
+        "Prince Bernhard, Prince Consort of the Netherlands"^^xsd:string,
+        "Z.K.H. Prins Bernhard"^^xsd:string ;
+    :hasAncestor data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasBrother data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :hasChild data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :hasDaughter data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :hasFather data:Prince_Bernhard_of_Lippe ;
+    :hasMother data:Armgard_of_Sierstorpff-Cramm ;
+    :hasParent data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :hasRelation data:Armgard_of_Sierstorpff-Cramm,
+        data:Beatrix_of_the_Netherlands,
+        data:Prince_Bernhard_of_Lippe,
+        data:Prince_Bernhard_of_Lippe-Biesterfeld,
+        data:Princess_Christina_of_the_Netherlands ;
+    :hasSex data:male ;
+    :isAncestorOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isBloodrelationOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isChildOf data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :isFatherOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isParentOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands ;
+    :isSiblingOf data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+    :isSonOf data:Armgard_of_Sierstorpff-Cramm,
+        data:Prince_Bernhard_of_Lippe ;
+    :isUncleOf data:Beatrix_of_the_Netherlands,
+        data:Princess_Christina_of_the_Netherlands .
+

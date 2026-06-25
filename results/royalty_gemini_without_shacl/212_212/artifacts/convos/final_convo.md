@@ -69,38 +69,27 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Ferdinand Pius (Ferdinando Pio Maria), Duke of Calabria and Castro (25 July 1869, Rome – 7 January 1960, Lindau), was head of the House of Bourbon-Two Sicilies and pretender to the throne of the extinct Kingdom of the Two Sicilies from 1934 to 1960.
-Family
+Duke Paul Frederick of Mecklenburg (German: Herzog Paul Friedrich zu Mecklenburg; given names: Paul Frederick Charles Alexander Michael Hugh; 12 May 1882 – 21 May 1904) was a member of the House of Mecklenburg-Schwerin and a German soldier and sailor.
+He was styled His Highness Duke Paul Frederick of Mecklenburg.
+German soldier and sailor
 
-Ferdinand was the eldest child of Prince Alfonso, Count of Caserta and his wife Princess Maria Antonietta of Bourbon-Two Sicilies.
-He was a grandson of Ferdinand II of the Two Sicilies and an older brother of Prince Carlos of Bourbon-Two Sicilies, Maria Immaculata, Princess Johann Georg of Saxony, Maria Cristina, Archduchess Peter Ferdinand of Austria, Maria di Grazia, Princess Imperial of Brazil, Prince Ranieri, Duke of Castro, Prince Philip of Bourbon-Two Sicilies, and Prince Gabriel of Bourbon-Two Sicilies.
-Marriage
+Duke Paul Frederick Charles Alexander Michael Hugh of Mecklenburg was born in Schwerin, the eldest child of Duke Paul Frederick of Mecklenburg and his Austrian wife, Princess Marie of Windisch-Graetz.
+Duke Paul Frederick was a grandson of Frederick Francis II, Grand Duke of Mecklenburg.
+Shortly after his birth he became the youngest soldier in the world when he was admitted as a soldier into the German Imperial Army and assigned to the 15th Mecklenburg Dragoons by Emperor William I. Duke Paul Frederick and his siblings were raised as Roman Catholics and were brought up in Venice, where his family became friends with Cardinal Sarto (later Pope Pius X), who was a regular visitor to the family.
+On 21 April 1884 Duke Paul Frederick's place in the line of succession to the throne of Mecklenburg-Schwerin was superseded by his uncles after his father renounced his own and his descendants' rights of succession.
+However, in the event of his uncles' families becoming extinct, Duke Paul Frederick's line could succeed, as long as the successor converted from Roman Catholicism to Protestantism.
+Despite being put into the Army shortly after his birth, Duke Paul Frederick eventually pursued a career in the German Imperial Navy.
+Death
 
-Ferdinand married Princess Maria Ludwiga Theresia of Bavaria, daughter of King Ludwig III of Bavaria on 31 May 1897.
-They had six children:
-
-
-Ferdinand and Maria lived for many years at Villa Amsee, Lindau.
-Disputed succession
-
-Following Ferdinand's death, the headship of the House of Bourbon-Two Sicilies was claimed by both his nephew Infante Alfonso, Duke of Calabria, and his brother Prince Ranieri, Duke of Castro, and remains disputed between their descendants.
-The basis of Alfonso’s claim was that his late father, Prince Carlos of Bourbon-Two Sicilies (1870–1949), had been Ferdinand's next oldest brother.
-But Henri, Count of Paris, upheld the claim of Ferdinand's younger brother, Prince Ranieri, Duke of Castro (1883–1973), contending that Carlos had renounced his rights of succession for himself and his descendants in 1901 when he married the Spanish heiress presumptive María de las Mercedes, Princess of Asturias.
-The Count of Paris was well aware that his own claim to the French throne depended on the validity of the renunciation in 1713 of Philip V of Spain, in favor of the junior House of Orléans.
-In 1900, Prince Carlos had executed the Act of Cannes, in anticipation of his marriage to María de las Mercedes, and in 1901 he became a Spanish subject and accepted the title of Infante.
-The position of Ranieri was that by so doing Carlos had renounced any claim to the throne of the Two Sicilies.
-But Alfonso had a different interpretation, which was that the Act of Cannes would have taken effect only if Mercedes and Carlos had succeeded to the Spanish throne.
-He also argued that the Act of Cannes was invalid under the succession rules of the house of Two Sicilies.
-Military service
-
-Ferdinand initially served in the Spanish Army, and after leaving service held the honorary rank of Comandante of the General Staff of the Spanish Army.
-Feld-Artillerie-Regiment "Prinz Ferdinand von Bourbon, Herzog von Calabrien"), which was renamed in honor of him.
+Duke Paul Frederick of Mecklenburg died unmarried in Kiel at the age of 22.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -116,39 +105,9 @@ Feld-Artillerie-Regiment "Prinz Ferdinand von Bourbon, Herzog von Calabrien"), w
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -163,6 +122,23 @@ Feld-Artillerie-Regiment "Prinz Ferdinand von Bourbon, Herzog von Calabrien"), w
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -180,6 +156,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -247,29 +238,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -278,6 +261,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -290,6 +281,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -298,17 +291,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -336,6 +331,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -351,172 +430,85 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (b444fac3-1e7a-4a98-8de7-6c36733f55c2)
- Call ID: b444fac3-1e7a-4a98-8de7-6c36733f55c2
+  AssignClass (e922fcb0-d846-4af1-8cfd-172a27deba6f)
+ Call ID: e922fcb0-d846-4af1-8cfd-172a27deba6f
   Args:
+    source: Duke_Paul_Frederick_of_Mecklenburg_1882
     type: :Man
-    source: Ferdinand_Pius
-  AssignClass (11411c1b-2937-495f-bce7-b454666ad5f7)
- Call ID: 11411c1b-2937-495f-bce7-b454666ad5f7
+  AssignClass (5ffe256d-def6-45e9-8c66-a7b438194af5)
+ Call ID: 5ffe256d-def6-45e9-8c66-a7b438194af5
   Args:
-    type: :Man
-    source: Alfonso_Count_of_Caserta
-  AssignClass (18cf878c-7217-4325-bd8b-7be25048c608)
- Call ID: 18cf878c-7217-4325-bd8b-7be25048c608
+    type: :Person
+    source: Duke_Paul_Frederick_of_Mecklenburg_1882
+  AddLiteral (affabc17-c736-4744-97c6-0aa20c529d0d)
+ Call ID: affabc17-c736-4744-97c6-0aa20c529d0d
   Args:
-    type: :Woman
-    source: Maria_Antonietta
-  AssignClass (89204a6a-bc80-4311-a780-117a608cf16b)
- Call ID: 89204a6a-bc80-4311-a780-117a608cf16b
-  Args:
-    source: Ferdinand_II_of_the_Two_Sicilies
-    type: :Man
-  AssignClass (55b2f7c9-447e-485d-8474-bcdff6e8ccc4)
- Call ID: 55b2f7c9-447e-485d-8474-bcdff6e8ccc4
-  Args:
-    source: Carlos_of_Bourbon-Two_Sicilies
-    type: :Man
-  AssignClass (7962291b-6621-4b2d-bba9-86dd3aa0b4a2)
- Call ID: 7962291b-6621-4b2d-bba9-86dd3aa0b4a2
-  Args:
-    type: :Woman
-    source: Maria_Immaculata
-  AssignClass (655d15e3-8527-4b00-996e-df9c1c230969)
- Call ID: 655d15e3-8527-4b00-996e-df9c1c230969
-  Args:
-    source: Maria_Cristina
-    type: :Woman
-  AssignClass (69abfb09-3bf8-4d8e-b464-68c7333a212e)
- Call ID: 69abfb09-3bf8-4d8e-b464-68c7333a212e
-  Args:
-    source: Maria_di_Grazia
-    type: :Woman
-  AssignClass (aa8e6aa3-e0f2-4131-9353-374762fbec3f)
- Call ID: aa8e6aa3-e0f2-4131-9353-374762fbec3f
-  Args:
-    type: :Man
-    source: Ranieri_Duke_of_Castro
-  AssignClass (dfbd37a6-a47d-4f3e-b21b-be646042f9bc)
- Call ID: dfbd37a6-a47d-4f3e-b21b-be646042f9bc
-  Args:
-    type: :Man
-    source: Philip_of_Bourbon-Two_Sicilies
-  AssignClass (0feaeb18-e4a0-4c6b-9b34-02e5924a34e4)
- Call ID: 0feaeb18-e4a0-4c6b-9b34-02e5924a34e4
-  Args:
-    type: :Man
-    source: Gabriel_of_Bourbon-Two_Sicilies
-  AssignClass (cfa8d831-a0d8-4a6f-819f-d38990d58a5d)
- Call ID: cfa8d831-a0d8-4a6f-819f-d38990d58a5d
-  Args:
-    source: Maria_Ludwiga_Theresia_of_Bavaria
-    type: :Woman
-  AssignClass (db58f21e-3a20-482b-b58e-43fe3134a9fa)
- Call ID: db58f21e-3a20-482b-b58e-43fe3134a9fa
-  Args:
-    type: :Man
-    source: Ludwig_III_of_Bavaria
-  AddLiteral (a34ec53b-a9f1-4442-9a27-226069bc0880)
- Call ID: a34ec53b-a9f1-4442-9a27-226069bc0880
-  Args:
-    relation: :knownAs
-    source: Ferdinand_Pius
-    literal_value: Ferdinand Pius
-    literal_type: xsd:string
-  AddLiteral (c4697bf1-cf34-4d32-baed-7d0ead4e2dfa)
- Call ID: c4697bf1-cf34-4d32-baed-7d0ead4e2dfa
-  Args:
-    source: Ferdinand_Pius
     relation: :alsoKnownAs
     literal_type: xsd:string
-    literal_value: Ferdinando Pio Maria
-  AddLiteral (7208e6da-d51e-4c3c-bf10-f1d22ee9348e)
- Call ID: 7208e6da-d51e-4c3c-bf10-f1d22ee9348e
+    source: Duke_Paul_Frederick_of_Mecklenburg_1882
+    literal_value: Paul Frederick Charles Alexander Michael Hugh
+  AddLiteral (c6a6c7c9-5674-45df-adfa-b99dc61565cb)
+ Call ID: c6a6c7c9-5674-45df-adfa-b99dc61565cb
   Args:
-    source: Ferdinand_Pius
     relation: :hasBirthYear
     literal_type: xsd:integer
-    literal_value: 1869
-  AddLiteral (9b4ade2d-2880-4f8e-8540-b0c9c8eb53db)
- Call ID: 9b4ade2d-2880-4f8e-8540-b0c9c8eb53db
+    source: Duke_Paul_Frederick_of_Mecklenburg_1882
+    literal_value: 1882
+  AddLiteral (bc4dd404-d9f8-4bb0-85c2-a6c8796c5c8d)
+ Call ID: bc4dd404-d9f8-4bb0-85c2-a6c8796c5c8d
   Args:
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    source: Ferdinand_Pius
-    literal_value: 1960
-    literal_type: xsd:integer
-  AddTriple (2d103519-c7ff-4c7b-98b4-24f23af25c12)
- Call ID: 2d103519-c7ff-4c7b-98b4-24f23af25c12
+    literal_value: 1904
+    source: Duke_Paul_Frederick_of_Mecklenburg_1882
+  AssignClass (31365e8d-5215-49ff-9c3c-39d5d917b476)
+ Call ID: 31365e8d-5215-49ff-9c3c-39d5d917b476
   Args:
-    target: Alfonso_Count_of_Caserta
-    source: Ferdinand_Pius
+    source: Duke_Paul_Frederick_of_Mecklenburg_Senior
+    type: :Man
+  AssignClass (07a071bb-8994-4b2b-b491-dd06cda60ec9)
+ Call ID: 07a071bb-8994-4b2b-b491-dd06cda60ec9
+  Args:
+    type: :Person
+    source: Duke_Paul_Frederick_of_Mecklenburg_Senior
+  AssignClass (c9deaa88-8692-4f38-bf84-b548021b694e)
+ Call ID: c9deaa88-8692-4f38-bf84-b548021b694e
+  Args:
+    source: Princess_Marie_of_Windisch-Graetz
+    type: :Woman
+  AssignClass (0269066f-6034-43cc-82a8-7111de0dba90)
+ Call ID: 0269066f-6034-43cc-82a8-7111de0dba90
+  Args:
+    type: :Person
+    source: Princess_Marie_of_Windisch-Graetz
+  AddTriple (f1315a2d-f70a-47a8-b36b-b6eab537522c)
+ Call ID: f1315a2d-f70a-47a8-b36b-b6eab537522c
+  Args:
     relation: :hasFather
-  AddTriple (6a43baee-9cb3-461a-917f-a3f8aa84fb9a)
- Call ID: 6a43baee-9cb3-461a-917f-a3f8aa84fb9a
+    source: Duke_Paul_Frederick_of_Mecklenburg_1882
+    target: Duke_Paul_Frederick_of_Mecklenburg_Senior
+  AddTriple (7700f00b-c360-48f9-bfa2-5e7f67470bea)
+ Call ID: 7700f00b-c360-48f9-bfa2-5e7f67470bea
   Args:
-    target: Maria_Antonietta
+    source: Duke_Paul_Frederick_of_Mecklenburg_1882
     relation: :hasMother
-    source: Ferdinand_Pius
-  AddTriple (4d02c310-2384-40f8-8f52-b3fe768603d0)
- Call ID: 4d02c310-2384-40f8-8f52-b3fe768603d0
+    target: Princess_Marie_of_Windisch-Graetz
+  AssignClass (c9c5078f-e8d3-49c9-963c-0c5c6b728ac3)
+ Call ID: c9c5078f-e8d3-49c9-963c-0c5c6b728ac3
   Args:
-    target: Ferdinand_II_of_the_Two_Sicilies
-    source: Alfonso_Count_of_Caserta
-    relation: :hasFather
-  AddTriple (0e284936-3424-462e-a628-511cdcd9ecdb)
- Call ID: 0e284936-3424-462e-a628-511cdcd9ecdb
+    type: :Man
+    source: Frederick_Francis_II_Grand_Duke_of_Mecklenburg
+  AssignClass (0f70064f-a698-4354-b090-f1298ab2ca96)
+ Call ID: 0f70064f-a698-4354-b090-f1298ab2ca96
   Args:
-    source: Ferdinand_Pius
-    relation: :hasBrother
-    target: Carlos_of_Bourbon-Two_Sicilies
-  AddTriple (af861a7f-7e07-4ff1-ada4-bedd103c7472)
- Call ID: af861a7f-7e07-4ff1-ada4-bedd103c7472
+    type: :Person
+    source: Frederick_Francis_II_Grand_Duke_of_Mecklenburg
+  AddTriple (4153a603-86ec-46ae-a14e-fd5c650f49e6)
+ Call ID: 4153a603-86ec-46ae-a14e-fd5c650f49e6
   Args:
-    target: Maria_Immaculata
-    relation: :hasSister
-    source: Ferdinand_Pius
-  AddTriple (fda3b874-9c8b-4b25-bc18-05109c84f605)
- Call ID: fda3b874-9c8b-4b25-bc18-05109c84f605
-  Args:
-    target: Maria_Cristina
-    source: Ferdinand_Pius
-    relation: :hasSister
-  AddTriple (5b09e9d5-dc8e-4b15-a810-f71d1e9cc273)
- Call ID: 5b09e9d5-dc8e-4b15-a810-f71d1e9cc273
-  Args:
-    source: Ferdinand_Pius
-    relation: :hasSister
-    target: Maria_di_Grazia
-  AddTriple (ee9430a2-7038-49dc-95c2-815eca8eb4f2)
- Call ID: ee9430a2-7038-49dc-95c2-815eca8eb4f2
-  Args:
-    source: Ferdinand_Pius
-    relation: :hasBrother
-    target: Ranieri_Duke_of_Castro
-  AddTriple (4e8477ce-eaea-4d17-bdd0-9eb5b7469108)
- Call ID: 4e8477ce-eaea-4d17-bdd0-9eb5b7469108
-  Args:
-    target: Philip_of_Bourbon-Two_Sicilies
-    source: Ferdinand_Pius
-    relation: :hasBrother
-  AddTriple (e1f5825f-4c7a-4bac-a44b-e12c8cc7ce92)
- Call ID: e1f5825f-4c7a-4bac-a44b-e12c8cc7ce92
-  Args:
-    relation: :hasBrother
-    source: Ferdinand_Pius
-    target: Gabriel_of_Bourbon-Two_Sicilies
-  AddTriple (02190ff5-4dc6-4786-92dd-e736adb604a1)
- Call ID: 02190ff5-4dc6-4786-92dd-e736adb604a1
-  Args:
-    target: Ludwig_III_of_Bavaria
-    relation: :hasFather
-    source: Maria_Ludwiga_Theresia_of_Bavaria
-  AddLiteral (c21b6320-3f6a-41dc-866d-db97e4b8d1ce)
- Call ID: c21b6320-3f6a-41dc-866d-db97e4b8d1ce
-  Args:
-    relation: :hasMarriageYear
-    source: Ferdinand_Pius
-    literal_value: 1897
-    literal_type: xsd:integer
-  Finish (382253c3-3364-4db4-91af-dd676d741020)
- Call ID: 382253c3-3364-4db4-91af-dd676d741020
+    source: Duke_Paul_Frederick_of_Mecklenburg_1882
+    relation: :hasAncestor
+    target: Frederick_Francis_II_Grand_Duke_of_Mecklenburg
+  Finish (d7ccd5e7-8f66-4123-adc1-93e3525c8d38)
+ Call ID: d7ccd5e7-8f66-4123-adc1-93e3525c8d38
   Args:

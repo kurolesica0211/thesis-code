@@ -2,40 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Michael_I_of_Romania a :Ancestor,
-        :Man,
+data:Michael_I_of_Romania a :Man,
         :Person ;
     :hasFather data:Carol_II_of_Romania ;
     :hasMother data:Helen_of_Greece_and_Denmark .
 
 data:Alexander_I_of_Greece a :Man,
-        :Person .
-
-data:Carol_II_of_Romania a :Ancestor,
-        :Man,
-        :Person .
-
-data:Constantine_I_of_Greece a :Ancestor,
-        :Man,
         :Person ;
-    :hasFather data:George_I_of_Greece .
+    :hasFather data:Constantine_I_of_Greece ;
+    :hasMother data:Sophia_of_Prussia .
 
-data:George_II_of_Greece a :Man,
-        :Person .
+data:Carol_II_of_Romania a :Man,
+        :Person ;
+    :hasMother data:Marie_of_Romania .
 
-data:George_I_of_Greece a :Ancestor,
-        :Man,
+data:George_I_of_Greece a :Man,
         :Person .
 
 data:Helen_of_Greece_and_Denmark a :Person,
         :Woman ;
-    :hasBirthYear 1896 ;
+    :hasBirthYear "1896-05-02"^^xsd:date ;
     :hasBrother data:Alexander_I_of_Greece,
-        data:George_II_of_Greece,
-        data:Paul_of_Greece_and_Denmark ;
-    :hasDeathYear 1982 ;
+        data:Paul_of_Greece ;
+    :hasDeathYear "1982-11-28"^^xsd:date ;
     :hasFather data:Constantine_I_of_Greece ;
-    :hasMarriageYear 1921 ;
     :hasMother data:Sophia_of_Prussia ;
     :hasSister data:Irene_of_Greece_and_Denmark,
         data:Katherine_of_Greece_and_Denmark .
@@ -46,10 +36,16 @@ data:Irene_of_Greece_and_Denmark a :Person,
 data:Katherine_of_Greece_and_Denmark a :Person,
         :Woman .
 
-data:Paul_of_Greece_and_Denmark a :Man,
+data:Marie_of_Romania a :Person,
+        :Woman .
+
+data:Paul_of_Greece a :Man,
         :Person .
 
-data:Sophia_of_Prussia a :Ancestor,
-        :Person,
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    :hasFather data:George_I_of_Greece .
+
+data:Sophia_of_Prussia a :Person,
         :Woman .
 

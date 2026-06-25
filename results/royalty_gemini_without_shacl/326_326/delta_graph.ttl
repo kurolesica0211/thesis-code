@@ -2,41 +2,52 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Do%C3%B1a_Mar%C3%ADa_del_Carmen_de_Ulloa_y_Suelves a :Woman ;
-    :hasBirthYear 1953 .
+data:Francoise_Marie_de_Bourbon a :Person,
+        :Woman ;
+    :isDaughterOf data:Louis_XIV .
 
-data:King_Alfonso_XII a :Man .
+data:Henri_son_of_Henri a :Man,
+        :Person ;
+    :isSonOf data:Henri_dOrleans .
 
-data:King_Alfonso_XIII a :Man .
+data:Michel a :Man,
+        :Person ;
+    :isSonOf data:Henri_dOrleans .
 
-data:Prince_Jorge_de_Bagration a :Man ;
-    :isBrotherOf data:Prince_Don_Bagrat_de_Bagration_y_de_Baviera .
+data:Philippe_Duke_of_Orleans_maternal_uncle a :Man,
+        :Person .
 
-data:Princess_Mariam a :Woman ;
-    :hasBirthYear 1947 ;
-    :hasFather data:Prince_Irakli_Bagration-Mukhrani ;
-    :isSisterOf data:Prince_Don_Bagrat_de_Bagration_y_de_Baviera .
+data:Thibaut a :Man,
+        :Person ;
+    :isSonOf data:Henri_dOrleans .
 
-data:1976 a :DomainEntity .
+data:Isabelle_of_Orleans_Braganza a :Person,
+        :Woman .
 
-data:Infanta_Do%C3%B1a_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n a :Woman ;
-    :hasBirthYear 1911 ;
-    :hasDeathYear 1953 .
+data:Jean_Duke_of_Guise a :Man,
+        :Person .
 
-data:Prince_Bagrat_Bagration-Moukhransky a :Person .
+data:Louis_Philippe_I a :Man,
+        :Person .
 
-data:Prince_Bagrat_Bagrationi-Mukhraneli a :Person .
+data:Louis_XIII a :Man,
+        :Person .
 
-data:Prince_Don_Bagrat_de_Bagration_y_de_Baviera a :Man ;
-    :alsoKnownAs data:Prince_Bagrat_Bagration-Moukhransky,
-        data:Prince_Bagrat_Bagrationi-Mukhraneli ;
-    :hasBirthYear 1949 ;
-    :hasDeathYear 2017 ;
-    :hasFather data:Prince_Irakli_Bagration-Mukhrani ;
-    :hasMarriageYear data:1976 ;
-    :hasMother data:Infanta_Do%C3%B1a_Mar%C3%ADa_de_las_Mercedes_de_Baviera_y_Borb%C3%B3n .
+data:Philippe_I_Duke_of_Orleans a :Man,
+        :Person ;
+    :isSonOf data:Louis_XIII .
 
-data:Prince_Irakli_Bagration-Mukhrani a :Man ;
-    :hasBirthYear 1909 ;
-    :hasDeathYear 1977 .
+data:Louis_XIV a :Man,
+        :Person .
+
+data:Henri_dOrleans a :Man,
+        :Person ;
+    :hasAncestor data:Louis_Philippe_I,
+        data:Louis_XIV,
+        data:Philippe_I_Duke_of_Orleans ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1999 ;
+    :hasMarriageYear 1931 ;
+    :hasRelation data:Isabelle_of_Orleans_Braganza ;
+    :isSonOf data:Jean_Duke_of_Guise .
 

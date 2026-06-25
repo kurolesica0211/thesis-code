@@ -206,6 +206,7 @@ Sports
 
 Felipe is a huge fan of sports and has attended hundreds of sports events since 1976, when he accompanied his father to a match between Real Madrid and Atlético de Madrid at the 1976 Copa del Generalísimo final.
 As King of Spain, most of the sports have a tournament in his honor, Copa del Rey (English: King's Cup), which he normally attends and delivers the trophy to the winner.
+Also, since the reign of Alfonso XIII (1886–1931), the King exercises high patronage over the sports federations.
 If he cannot attend, it is common for him to be replaced by a member of the royal family, such as Leonor, Princess of Asturias and Infanta Sofía in the UEFA Women's Euro 2022 or Queen Letizia in the 2023 FIFA Women's World Cup final.
 2017 terrorist attacks
 
@@ -267,7 +268,6 @@ From there, they proceeded to Horse Guards Parade, where they were officially re
 In the afternoon Felipe went to the Parliament of the United Kingdom where he addressed a few words at the joint session and held an informal meeting with the leader of the Labour opposition, Jeremy Corbyn.
 In the evening, the State Dinner, hosted by Queen Elizabeth and Prince Philip in honor of the King and Queen of Spain, took place in the Gala Hall of Buckingham Palace.
 On Thursday the 13th, there was a Spanish-British business meeting (UK-SPAIN Business Forum) at Mansion House, with the presence of the Mayor of the City of London, Andrew Parmley, and an important business delegation from both countries.
-Later, the party visited Westminster Abbey accompanied by Prince Harry.
 Thursday's day was completed with a gala dinner offered by the Mayor of London in honor of the King and Queen, at Guildhall.
 On Friday the 14th, Felipe and Letizia were officially bid farewell by Elizabeth and Philip, at the gates of Buckingham Palace.
 Subsequently, Felipe and Letizia moved to the Francis Crick Institute, a biomedical research center that houses the largest individual biomedical laboratory in Europe.
@@ -306,6 +306,8 @@ As heir to the Spanish throne, Felipe's arms were the Spanish coat of arms with 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -321,39 +323,9 @@ As heir to the Spanish throne, Felipe's arms were the Spanish coat of arms with 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -368,6 +340,23 @@ As heir to the Spanish throne, Felipe's arms were the Spanish coat of arms with 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -385,6 +374,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -452,29 +456,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -483,6 +479,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -495,6 +499,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -503,17 +509,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -541,6 +549,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -556,100 +648,136 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (97446093-3194-44ff-a6f9-c0a062476ed1)
- Call ID: 97446093-3194-44ff-a6f9-c0a062476ed1
+  AssignClass (b8d29ce9-aea0-4e0c-badc-a6e23b6de1d7)
+ Call ID: b8d29ce9-aea0-4e0c-badc-a6e23b6de1d7
   Args:
+    source: Juan_Carlos_I
     type: :Man
-    source: Juan Carlos I
-  AssignClass (385f8c38-1d26-45ee-be5a-c075f003b874)
- Call ID: 385f8c38-1d26-45ee-be5a-c075f003b874
+  AssignClass (fc6e6856-ec8e-47eb-9692-a9a9096723e8)
+ Call ID: fc6e6856-ec8e-47eb-9692-a9a9096723e8
   Args:
-    source: Sofía
+    source: Juan_Carlos_I
+    type: :Person
+  AssignClass (f3688ce9-07d9-4eec-ac4d-f7880667718d)
+ Call ID: f3688ce9-07d9-4eec-ac4d-f7880667718d
+  Args:
+    source: Sofia_of_Spain
     type: :Woman
-  AssignClass (96496dd3-b10a-4057-9474-167106dae1ce)
- Call ID: 96496dd3-b10a-4057-9474-167106dae1ce
+  AssignClass (758784ba-0afa-49df-92a1-baec60cb7df1)
+ Call ID: 758784ba-0afa-49df-92a1-baec60cb7df1
   Args:
-    source: Felipe VI
+    source: Sofia_of_Spain
+    type: :Person
+  AssignClass (b11e0103-7d84-44a7-9a1d-b98369f3c5bc)
+ Call ID: b11e0103-7d84-44a7-9a1d-b98369f3c5bc
+  Args:
+    source: Felipe_VI
     type: :Man
-  AssignClass (e825ee47-9f07-4037-8368-9adab018bf6b)
- Call ID: e825ee47-9f07-4037-8368-9adab018bf6b
+  AssignClass (d3ba012a-1f1e-4be3-803f-322958a882b5)
+ Call ID: d3ba012a-1f1e-4be3-803f-322958a882b5
+  Args:
+    type: :Person
+    source: Felipe_VI
+  AssignClass (68fd07f9-f1d4-41c4-8354-bf72a9787375)
+ Call ID: 68fd07f9-f1d4-41c4-8354-bf72a9787375
   Args:
     type: :Woman
-    source: Letizia Ortiz Rocasolano
-  AssignClass (ef15b76f-3992-4588-ae92-587284d6e6c5)
- Call ID: ef15b76f-3992-4588-ae92-587284d6e6c5
+    source: Letizia_Ortiz_Rocasolano
+  AssignClass (5379fdeb-e3c7-49b1-b5ef-6e43d03719c1)
+ Call ID: 5379fdeb-e3c7-49b1-b5ef-6e43d03719c1
+  Args:
+    source: Letizia_Ortiz_Rocasolano
+    type: :Person
+  AssignClass (cedea658-ca09-4bde-82d6-0594268a45dd)
+ Call ID: cedea658-ca09-4bde-82d6-0594268a45dd
   Args:
     type: :Woman
-    source: Leonor
-  AssignClass (99fa6db7-3f02-4a58-8311-fdd9b086d486)
- Call ID: 99fa6db7-3f02-4a58-8311-fdd9b086d486
+    source: Leonor_Princess_of_Asturias
+  AssignClass (20cfadb3-1f9e-4428-abf4-b07854415a9e)
+ Call ID: 20cfadb3-1f9e-4428-abf4-b07854415a9e
   Args:
-    source: Sofía (daughter)
+    type: :Person
+    source: Leonor_Princess_of_Asturias
+  AssignClass (053545a3-2650-42a0-a16e-76388e34ae22)
+ Call ID: 053545a3-2650-42a0-a16e-76388e34ae22
+  Args:
+    source: Infanta_Sofia
     type: :Woman
-  AddTriple (d6e661a4-6b7d-4342-ac63-a758b35494bd)
- Call ID: d6e661a4-6b7d-4342-ac63-a758b35494bd
+  AssignClass (37b7d77f-86d9-4f51-8bf5-f514ad49d126)
+ Call ID: 37b7d77f-86d9-4f51-8bf5-f514ad49d126
   Args:
-    target: Juan Carlos I
+    source: Infanta_Sofia
+    type: :Person
+  AddTriple (13e7f630-3d5d-4fd8-a178-f36f42fe6526)
+ Call ID: 13e7f630-3d5d-4fd8-a178-f36f42fe6526
+  Args:
+    source: Felipe_VI
     relation: :hasFather
-    source: Felipe VI
-  AddTriple (fed8309e-3679-4be4-ad03-7155f6b07fe3)
- Call ID: fed8309e-3679-4be4-ad03-7155f6b07fe3
+    target: Juan_Carlos_I
+  AddTriple (cad1c7d7-a246-44ed-a0a4-c38805c1bf8c)
+ Call ID: cad1c7d7-a246-44ed-a0a4-c38805c1bf8c
   Args:
-    target: Sofía
+    source: Felipe_VI
+    target: Sofia_of_Spain
     relation: :hasMother
-    source: Felipe VI
-  AddTriple (36e98eb3-89c9-4a06-b213-6fc0e45d7e0f)
- Call ID: 36e98eb3-89c9-4a06-b213-6fc0e45d7e0f
+  AddTriple (7f60d877-7515-4e15-b092-b029fd51df56)
+ Call ID: 7f60d877-7515-4e15-b092-b029fd51df56
   Args:
-    source: Leonor
-    target: Felipe VI
+    source: Leonor_Princess_of_Asturias
     relation: :hasFather
-  AddTriple (495d58e0-7514-405e-b70c-a2d06c7775cc)
- Call ID: 495d58e0-7514-405e-b70c-a2d06c7775cc
+    target: Felipe_VI
+  AddTriple (1e839d30-e104-4cfd-810d-c5c95d89a7fa)
+ Call ID: 1e839d30-e104-4cfd-810d-c5c95d89a7fa
   Args:
-    source: Leonor
+    source: Leonor_Princess_of_Asturias
     relation: :hasMother
-    target: Letizia Ortiz Rocasolano
-  AddTriple (fe87072b-1803-4b28-a1d0-7e7c1dbde7ff)
- Call ID: fe87072b-1803-4b28-a1d0-7e7c1dbde7ff
+    target: Letizia_Ortiz_Rocasolano
+  AddTriple (2cabf513-7aca-4ff4-8ba2-8a61d8335306)
+ Call ID: 2cabf513-7aca-4ff4-8ba2-8a61d8335306
   Args:
+    target: Felipe_VI
     relation: :hasFather
-    target: Felipe VI
-    source: Sofía (daughter)
-  AddTriple (781d8a0e-9d3e-43ad-90b3-bcd8a84c3247)
- Call ID: 781d8a0e-9d3e-43ad-90b3-bcd8a84c3247
+    source: Infanta_Sofia
+  AddTriple (34638efc-1e63-4922-bd58-3756757b113d)
+ Call ID: 34638efc-1e63-4922-bd58-3756757b113d
   Args:
-    source: Sofía (daughter)
-    target: Letizia Ortiz Rocasolano
     relation: :hasMother
-  AddLiteral (ff184f37-2e8e-421d-afb0-ad6964d785c7)
- Call ID: ff184f37-2e8e-421d-afb0-ad6964d785c7
+    target: Letizia_Ortiz_Rocasolano
+    source: Infanta_Sofia
+  AddLiteral (47e292e7-bc4b-4755-83ac-8b91df9b16a9)
+ Call ID: 47e292e7-bc4b-4755-83ac-8b91df9b16a9
   Args:
-    literal_type: xsd:integer
+    source: Felipe_VI
     relation: :hasBirthYear
-    literal_value: 1968
-    source: Felipe VI
-  AddLiteral (a409f75d-6bfd-4c28-85d6-bd79c65ffa6d)
- Call ID: a409f75d-6bfd-4c28-85d6-bd79c65ffa6d
-  Args:
-    source: Felipe VI
-    literal_value: 2004
-    relation: :hasMarriageYear
     literal_type: xsd:integer
-  AddLiteral (6b821717-3ab9-4657-a167-e94168dd2eeb)
- Call ID: 6b821717-3ab9-4657-a167-e94168dd2eeb
+    literal_value: 1968
+  AddLiteral (195843ad-71a1-42b4-858b-ea605bd70f9d)
+ Call ID: 195843ad-71a1-42b4-858b-ea605bd70f9d
   Args:
-    source: Leonor
+    relation: :hasBirthYear
     literal_value: 2005
     literal_type: xsd:integer
-    relation: :hasBirthYear
-  AddLiteral (f9531e8b-c491-4854-8314-a148b7074436)
- Call ID: f9531e8b-c491-4854-8314-a148b7074436
+    source: Leonor_Princess_of_Asturias
+  AddLiteral (245e2ef2-c55e-4a81-837d-207450b98b65)
+ Call ID: 245e2ef2-c55e-4a81-837d-207450b98b65
   Args:
+    relation: :hasBirthYear
     literal_value: 2007
     literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Sofía (daughter)
-  Finish (b36202ad-8611-4bd0-a6b8-2aa6233ab56a)
- Call ID: b36202ad-8611-4bd0-a6b8-2aa6233ab56a
+    source: Infanta_Sofia
+  AddLiteral (072af224-c6fc-4bad-9f91-31ec62d9b829)
+ Call ID: 072af224-c6fc-4bad-9f91-31ec62d9b829
+  Args:
+    source: Felipe_VI
+    relation: :hasMarriageYear
+    literal_type: xsd:integer
+    literal_value: 2004
+  AddTriple (539d313f-ea1d-4031-abdf-c9c8f2b50638)
+ Call ID: 539d313f-ea1d-4031-abdf-c9c8f2b50638
+  Args:
+    source: Felipe_VI
+    target: Letizia_Ortiz_Rocasolano
+    relation: :hasRelation
+  Finish (d0c48997-ed0f-4dd6-a7b0-fc61cb172a6b)
+ Call ID: d0c48997-ed0f-4dd6-a7b0-fc61cb172a6b
   Args:

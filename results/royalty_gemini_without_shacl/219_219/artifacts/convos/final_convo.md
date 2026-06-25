@@ -69,55 +69,25 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Zara Anne Elizabeth Tindall (née Phillips; born 15 May 1981) is a British equestrian, Olympian, and member of the British royal family.
-She is the daughter of Anne, Princess Royal, and Captain Mark Phillips, and the eldest niece of King Charles III.
-Tindall won the individual eventing world title at Aachen in 2006 and was later named BBC Sports Personality of the Year.
-She married former rugby union player Mike Tindall in 2011, and the couple have three children.
-Early life and education
+Adélaïde de Clermont-Tonnerre (born 20 March 1976) is a French journalist and author.
+Biography
 
-Zara Anne Elizabeth Phillips was born at 8:15 pm on 15 May 1981 at St Mary's Hospital, London.
-Her first name was suggested by her uncle, Charles, the then Prince of Wales.
-Her godparents are her maternal uncle, Andrew Mountbatten-Windsor; the Countess of Lichfield; Helen, Lady Stewart, the wife of Sir Jackie Stewart; Andrew Parker Bowles; and Hugh Thomas.
-She has an elder brother, Peter, and two younger half-sisters, Felicity Wade (née Tonkin), from her father's affair with Heather Tonkin; and Stephanie Phillips, from his second marriage to Sandy Pflueger.
-Phillips attended Beaudesert Park School in Stroud, Gloucestershire, and Port Regis School in Shaftesbury, Dorset, before following other members of the royal family in attending Gordonstoun School in Moray, Scotland.
-Equestrianism
+Adélaïde de Clermont-Tonnerre was born in Neuilly-sur-Seine, France on 20 March 1976, a descendant of Princess Isabelle d'Orléans.
+Clermont-Tonnerre attended the Ecole Normale Supérieure though she didn't complete.
+Clermont-Tonnerre then became a columnist and journalist, currently working as the section editor on Point de Vue.
 
-After leaving university, Phillips began to pursue an equestrian career, following in the footsteps of her parents.
-Phillips missed the 2004 Summer Olympics in Athens after her horse was injured during training.
-Riding Toytown, Phillips won individual and team gold medals at the 2005 European Eventing Championship at Blenheim.
-The British Olympic Association selected Phillips and Toytown for the 2008 Olympic Games in Hong Kong; however, Toytown sustained an injury during training and she withdrew from the team.
-On 25 October 2008, Phillips fell from her horse, Tsunami II, at the 15th fence of a cross‐country event in Pau, France, breaking her right collarbone.
-In July 2010, Musto launched a range of equestrian clothing designed by Phillips, named ZP176 after her team number when she first represented Great Britain.
-Phillips competed at the 2012 London Olympic Games on High Kingdom, winning a silver medal in the team event.
-She stopped using her maiden name in March 2016 and competed as Zara Tindall for the first time during her unsuccessful attempt to qualify for the 2016 Rio Olympic Games.
-In 2017, Tindall finished third at the Kentucky Three-Day Event on High Kingdom, who retired from competition in 2018.
-Charity work
 
-Tindall frequently supports and attends events for a range of charitable causes, particularly those connected with spinal injuries, equestrianism, and children's welfare.
-Tindall has appeared at events for The Caudwell Charitable Trust, which supports children with special needs, disabilities, and serious illnesses.
-The following year, she became patron of the Mark Davies Injured Riders Fund.
-In 2013, she visited Stroud Maternity Ward to mark its 60th anniversary, and in 2014 she lent her support to the #bringbackourgirls campaign.
-In April 2020, Tindall participated in the Equestrian Relief initiative to help provide additional personal protective equipment for National Health Service workers.
-Other activities
+Works
 
-In June 2015, Tindall launched an equestrian-themed jewellery collection, named "Zara Phillips Collection", in collaboration with Australian designer John Calleija.
-On 17 September 2022, during the period of official mourning for Queen Elizabeth II, Tindall joined her brother and six cousins to mount a 15-minute vigil around the coffin of the Queen, as it lay in state at Westminster Hall.
-On 19 September, with her husband Mike and daughter Mia, she joined other family members at the state funeral.
-Personal life
-
-Phillips met rugby union player Mike Tindall, who was then playing for the England national team, during the squad's Rugby World Cup-winning campaign in Australia in 2003.
-As required at the time by the Royal Marriages Act 1772, the Queen gave her consent to the marriage at a meeting of the Privy Council on 10 May 2011.
-A celebration was held on the royal yacht Britannia prior to the wedding.
-The Tindalls lived in Cheltenham, Gloucestershire, before moving to Aston Farm, a seven-bedroom property adjoining the Princess Royal's Gatcombe Park estate.
-Their first child, Mia Grace, was born on 17 January 2014 at Gloucestershire Royal Hospital and was 16th, later 23rd in the line of succession.
-Tindall is a godmother to Prince George of Wales, the son of her cousin William, Prince of Wales.
-In December 2000, before her marriage, Phillips was involved in a serious car crash near Bourton-on-the-Water, escaping injury after overturning her Land Rover.
+Sources
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -133,39 +103,9 @@ In December 2000, before her marriage, Phillips was involved in a serious car cr
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -180,6 +120,23 @@ In December 2000, before her marriage, Phillips was involved in a serious car cr
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -197,6 +154,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -264,29 +236,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -295,6 +259,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -307,6 +279,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -315,17 +289,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -353,6 +329,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -368,148 +428,151 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (41b28bf7-03c3-4187-9eb9-cbcc6d9596d9)
- Call ID: 41b28bf7-03c3-4187-9eb9-cbcc6d9596d9
+  AssignClass (bf3d610e-1a21-4b17-9fb3-67d6fb44dc3d)
+ Call ID: bf3d610e-1a21-4b17-9fb3-67d6fb44dc3d
+  Args:
+    source: :Adélaïde_de_Clermont-Tonnerre
+    type: :Person
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+
+  data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (1c9a200b-358b-4f57-a750-4b541a96e201)
+ Call ID: 1c9a200b-358b-4f57-a750-4b541a96e201
   Args:
     type: :Woman
-    source: Zara_Tindall
-  AssignClass (aaf971f5-22c0-45d1-a0db-b46eca4076b8)
- Call ID: aaf971f5-22c0-45d1-a0db-b46eca4076b8
+    source: :Adélaïde_de_Clermont-Tonnerre
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+
+  data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,
+          :Woman .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddLiteral (e585e3cb-f8f0-45c5-8a9d-42714d39090c)
+ Call ID: e585e3cb-f8f0-45c5-8a9d-42714d39090c
   Args:
-    type: :Person
-    source: Zara_Tindall
-  AddLiteral (abb950be-8d33-4565-a699-02bee08b0998)
- Call ID: abb950be-8d33-4565-a699-02bee08b0998
-  Args:
-    literal_value: 1981
+    source: :Adélaïde_de_Clermont-Tonnerre
     relation: :hasBirthYear
-    source: Zara_Tindall
     literal_type: xsd:integer
-  AssignClass (997d9abf-4803-43fe-ad68-32c0d16d0e32)
- Call ID: 997d9abf-4803-43fe-ad68-32c0d16d0e32
+    literal_value: 1976
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,
+          :Woman ;
+      :hasBirthYear 1976 .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (39407eac-4102-4529-89a2-172a05e39da3)
+ Call ID: 39407eac-4102-4529-89a2-172a05e39da3
   Args:
-    type: :Woman
-    source: Anne_Princess_Royal
-  AssignClass (1eaa23c2-8e38-43ba-a5b7-b25633149060)
- Call ID: 1eaa23c2-8e38-43ba-a5b7-b25633149060
+    source: :Princess_Isabelle_d'Orléans
+    type: :Person
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,
+          :Woman ;
+      :hasBirthYear 1976 .
+
+  data:Princess_Isabelle_d%27Orl%C3%A9ans a :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (a560fc76-399e-4ae0-abf9-ed9d31b20ad4)
+ Call ID: a560fc76-399e-4ae0-abf9-ed9d31b20ad4
   Args:
+    source: :Princess_Isabelle_d'Orléans
     type: :Ancestor
-    source: Anne_Princess_Royal
-  AssignClass (b77c903a-a9fb-4ef5-b4ad-87c6570f207c)
- Call ID: b77c903a-a9fb-4ef5-b4ad-87c6570f207c
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,
+          :Woman ;
+      :hasBirthYear 1976 .
+
+  data:Princess_Isabelle_d%27Orl%C3%A9ans a :Ancestor,
+          :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AddTriple (8a6eb4c0-a240-4ce7-b165-d8640a50c083)
+ Call ID: 8a6eb4c0-a240-4ce7-b165-d8640a50c083
   Args:
-    source: Captain_Mark_Phillips
-    type: :Man
-  AssignClass (2c586668-d6d1-49f3-8de2-f2ece6513a39)
- Call ID: 2c586668-d6d1-49f3-8de2-f2ece6513a39
-  Args:
-    type: :Ancestor
-    source: Captain_Mark_Phillips
-  AddTriple (e8cf80fa-e28f-43c2-abc5-79ec62b30a8d)
- Call ID: e8cf80fa-e28f-43c2-abc5-79ec62b30a8d
-  Args:
-    relation: :hasMother
-    target: Anne_Princess_Royal
-    source: Zara_Tindall
-  AddTriple (a7c0c138-92f5-4188-84d2-0344c1fe5a4d)
- Call ID: a7c0c138-92f5-4188-84d2-0344c1fe5a4d
-  Args:
-    source: Zara_Tindall
-    target: Captain_Mark_Phillips
-    relation: :hasFather
-  AssignClass (3517c253-c983-4080-8373-ea74b92b01b3)
- Call ID: 3517c253-c983-4080-8373-ea74b92b01b3
-  Args:
-    source: Mike_Tindall
-    type: :Man
-  AssignClass (fe93d04f-dac1-49ba-a0d4-735f6a9be8f4)
- Call ID: fe93d04f-dac1-49ba-a0d4-735f6a9be8f4
-  Args:
-    source: Mike_Tindall
-    type: :Person
-  AddLiteral (0f6ecd48-f5d4-4f01-a274-703f5550cb27)
- Call ID: 0f6ecd48-f5d4-4f01-a274-703f5550cb27
-  Args:
-    relation: :hasMarriageYear
-    literal_value: 2011
-    literal_type: xsd:integer
-    source: Zara_Tindall
-  AddTriple (f9e4c72f-9c11-41c3-bdd3-2b16049409ba)
- Call ID: f9e4c72f-9c11-41c3-bdd3-2b16049409ba
-  Args:
-    relation: :hasRelation
-    target: Mike_Tindall
-    source: Zara_Tindall
-  AssignClass (1f50dedd-8a50-490c-8369-f9ac173d00f9)
- Call ID: 1f50dedd-8a50-490c-8369-f9ac173d00f9
-  Args:
-    type: :Man
-    source: Peter_Phillips
-  AssignClass (727105c0-9771-4704-a193-282b3430c7ce)
- Call ID: 727105c0-9771-4704-a193-282b3430c7ce
-  Args:
-    source: Peter_Phillips
-    type: :Person
-  AddTriple (7e1ed664-a5bb-4023-b27e-0096e4ffe6dc)
- Call ID: 7e1ed664-a5bb-4023-b27e-0096e4ffe6dc
-  Args:
-    source: Zara_Tindall
-    relation: :hasBrother
-    target: Peter_Phillips
-  AssignClass (247b8b81-7046-4669-92c0-71f5fe9e7202)
- Call ID: 247b8b81-7046-4669-92c0-71f5fe9e7202
-  Args:
-    source: Felicity_Wade
-    type: :Woman
-  AssignClass (3ea19d12-03d6-40d4-b585-9f974b0108cd)
- Call ID: 3ea19d12-03d6-40d4-b585-9f974b0108cd
-  Args:
-    type: :Person
-    source: Felicity_Wade
-  AddTriple (c279dc94-b809-4dbd-a938-c2fc69975b08)
- Call ID: c279dc94-b809-4dbd-a938-c2fc69975b08
-  Args:
-    source: Felicity_Wade
-    relation: :hasFather
-    target: Captain_Mark_Phillips
-  AssignClass (04aa7604-5bd6-442e-859b-380f990be353)
- Call ID: 04aa7604-5bd6-442e-859b-380f990be353
-  Args:
-    type: :Woman
-    source: Stephanie_Phillips
-  AssignClass (c62ae65f-bede-4f48-b670-4440258546e6)
- Call ID: c62ae65f-bede-4f48-b670-4440258546e6
-  Args:
-    source: Stephanie_Phillips
-    type: :Person
-  AddTriple (502a6cab-7ba5-4a86-b89b-02e8de8ec6a6)
- Call ID: 502a6cab-7ba5-4a86-b89b-02e8de8ec6a6
-  Args:
-    source: Stephanie_Phillips
-    target: Captain_Mark_Phillips
-    relation: :hasFather
-  AssignClass (9f1617f7-6198-4f10-afc6-10463bc2383b)
- Call ID: 9f1617f7-6198-4f10-afc6-10463bc2383b
-  Args:
-    source: Mia_Grace_Tindall
-    type: :Woman
-  AssignClass (16cb7c64-abdb-4c63-be81-30e29f962c22)
- Call ID: 16cb7c64-abdb-4c63-be81-30e29f962c22
-  Args:
-    type: :Person
-    source: Mia_Grace_Tindall
-  AddTriple (93c65064-2e64-481f-8748-62b96191487d)
- Call ID: 93c65064-2e64-481f-8748-62b96191487d
-  Args:
-    source: Mia_Grace_Tindall
-    relation: :hasMother
-    target: Zara_Tindall
-  AddTriple (b7fd963d-5f97-4a69-95a0-d91a8a5b8157)
- Call ID: b7fd963d-5f97-4a69-95a0-d91a8a5b8157
-  Args:
-    relation: :hasFather
-    target: Mike_Tindall
-    source: Mia_Grace_Tindall
-  Finish (efda8b21-f478-4b0d-86e6-dbec91fb5aff)
- Call ID: efda8b21-f478-4b0d-86e6-dbec91fb5aff
+    relation: :hasAncestor
+    source: :Adélaïde_de_Clermont-Tonnerre
+    target: :Princess_Isabelle_d'Orléans
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Ad%C3%A9la%C3%AFde_de_Clermont-Tonnerre a :Person,
+          :Woman ;
+      :hasAncestor data:Princess_Isabelle_d%27Orl%C3%A9ans ;
+      :hasBirthYear 1976 .
+
+  data:Princess_Isabelle_d%27Orl%C3%A9ans a :Ancestor,
+          :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (8ed9b18f-b825-4a7c-851c-729242eb6847)
+ Call ID: 8ed9b18f-b825-4a7c-851c-729242eb6847
   Args:

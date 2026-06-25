@@ -7,15 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Filippo_of_the_Two_Sicilies a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Filippo_of_the_Two_Sicilies a :Person ;
     rdfs:label "Prince Filippo of the Two Sicilies" ;
     data:posIndicesFull "0:37" ;
     data:posIndicesPart "285:291",
@@ -26,24 +18,24 @@ data:Prince_Filippo_of_the_Two_Sicilies a :Man,
     data:wdtLink wdt:Q3745365 ;
     :alsoKnownAs "Filippo di Borbone-Due Sicilie",
         "Prince Philip of Bourbon-Two Sicilies" ;
-    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
     :hasParent data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :isSonOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+    :hasSex data:male .
 
-data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person ;
     rdfs:label "Princess Maria Antonietta of Bourbon-Two Sicilies" ;
     data:posIndicesFull "394:443" ;
     data:posIndicesPart "491:499",
         "600:608" ;
     data:wdtLink wdt:Q255400 ;
-    :hasChild data:Prince_Filippo_of_the_Two_Sicilies ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Filippo_of_the_Two_Sicilies ;
-    :isMotherOf data:Prince_Filippo_of_the_Two_Sicilies ;
-    :isParentOf data:Prince_Filippo_of_the_Two_Sicilies .
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

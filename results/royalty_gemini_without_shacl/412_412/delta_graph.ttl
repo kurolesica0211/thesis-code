@@ -2,29 +2,13 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alfonso a :Man,
+data:Carl-Friedrich_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,
         :Person ;
-    :alsoKnownAs "Alfonsito"^^xsd:string ;
-    :hasAncestor data:Alfonso_XIII ;
-    :hasBirthYear 1941 ;
-    :hasDeathYear 1956 ;
-    :hasFather data:Juan_Count_of_Barcelona ;
-    :hasMother data:Maria_Mercedes_of_Bourbon_Two_Sicilies ;
-    :isBrotherOf data:Juan_Carlos_I ;
-    :isSonOf data:Juan_Count_of_Barcelona,
-        data:Maria_Mercedes_of_Bourbon_Two_Sicilies .
+    :hasBirthYear 1966 ;
+    :hasDeathYear 2010 ;
+    :hasFather data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg ;
+    :knownAs "Leonhard \"Leo\" Löwenstein"^^xsd:string .
 
-data:Alfonso_XIII a :Man,
+data:Alois-Konstantin_L%C3%B6wenstein-Wertheim-Rosenberg a :Man,
         :Person .
-
-data:Juan_Carlos_I a :Man,
-        :Person ;
-    :isSonOf data:Juan_Count_of_Barcelona,
-        data:Maria_Mercedes_of_Bourbon_Two_Sicilies .
-
-data:Juan_Count_of_Barcelona a :Man,
-        :Person .
-
-data:Maria_Mercedes_of_Bourbon_Two_Sicilies a :Person,
-        :Woman .
 

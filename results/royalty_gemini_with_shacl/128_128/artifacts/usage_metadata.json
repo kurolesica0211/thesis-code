@@ -2,11 +2,11 @@
     "translation": [
         {
             "iteration": 2,
-            "shacl_tool_call_id": "48e9a264-1fdf-42e7-99e1-08510f23960e",
+            "shacl_tool_call_id": "ebf1379b-1257-47c0-8afa-b9ddfbd0a97b",
             "metadata": {
-                "input_tokens": 2484,
-                "output_tokens": 473,
-                "total_tokens": 2957,
+                "input_tokens": 12307,
+                "output_tokens": 1707,
+                "total_tokens": 14014,
                 "input_token_details": {
                     "cache_read": 0
                 }
@@ -15,46 +15,78 @@
     ],
     "final": [
         {
-            "iteration": 5,
+            "iteration": 9,
             "metadata": [
                 {
-                    "input_tokens": 9241,
-                    "output_tokens": 464,
-                    "total_tokens": 9705,
+                    "input_tokens": 11961,
+                    "output_tokens": 1046,
+                    "total_tokens": 13007,
                     "input_token_details": {
-                        "cache_read": 9236
+                        "cache_read": 11956
                     }
                 },
                 {
-                    "input_tokens": 10288,
+                    "input_tokens": 14173,
                     "output_tokens": 10,
-                    "total_tokens": 10298,
+                    "total_tokens": 14183,
                     "input_token_details": {
-                        "cache_read": 9236
+                        "cache_read": 11956
                     }
                 },
                 {
-                    "input_tokens": 10964,
-                    "output_tokens": 62,
-                    "total_tokens": 11026,
+                    "input_tokens": 17156,
+                    "output_tokens": 234,
+                    "total_tokens": 17390,
                     "input_token_details": {
-                        "cache_read": 9236
+                        "cache_read": 11956
                     }
                 },
                 {
-                    "input_tokens": 11327,
-                    "output_tokens": 10,
-                    "total_tokens": 11337,
-                    "input_token_details": {
-                        "cache_read": 9236
-                    }
-                },
-                {
-                    "input_tokens": 11359,
+                    "input_tokens": 18137,
                     "output_tokens": 8,
-                    "total_tokens": 11367,
+                    "total_tokens": 18145,
                     "input_token_details": {
-                        "cache_read": 9236
+                        "cache_read": 11956
+                    }
+                },
+                {
+                    "input_tokens": 18326,
+                    "output_tokens": 124,
+                    "total_tokens": 18450,
+                    "input_token_details": {
+                        "cache_read": 11956
+                    }
+                },
+                {
+                    "input_tokens": 19233,
+                    "output_tokens": 182,
+                    "total_tokens": 19415,
+                    "input_token_details": {
+                        "cache_read": 11956
+                    }
+                },
+                {
+                    "input_tokens": 20224,
+                    "output_tokens": 124,
+                    "total_tokens": 20348,
+                    "input_token_details": {
+                        "cache_read": 11956
+                    }
+                },
+                {
+                    "input_tokens": 21131,
+                    "output_tokens": 200,
+                    "total_tokens": 21331,
+                    "input_token_details": {
+                        "cache_read": 11956
+                    }
+                },
+                {
+                    "input_tokens": 22185,
+                    "output_tokens": 54,
+                    "total_tokens": 22239,
+                    "input_token_details": {
+                        "cache_read": 11956
                     }
                 }
             ]

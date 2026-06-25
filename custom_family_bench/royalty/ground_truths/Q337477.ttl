@@ -7,113 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Alfonso_XIII a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Alfonso XIII" ;
-    data:posIndicesFull "1465:1477",
-        "1465:1486" ;
-    data:wdtLink wdt:Q18363 ;
-    :alsoKnownAs "Alfonso Leon Fernando Maria Jaime Isidro Pascual Antonio de Borbon y Austria-Lorena",
-        "Alfonso León Fernando María Jaime Isidro Pascual Antonio de Borbón y Austria-Lorena",
-        "Alfonso XIII of Spain",
-        "Don Alfonso de Borbon y Habsburgo",
-        "Don Alfonso de Borbón y Habsburgo",
-        "The African" ;
-    :hasSex data:male .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Irene_Mountbatten-_Marchioness_of_Carisbrooke a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Irene Mountbatten, Marchioness of Carisbrooke" ;
-    data:posIndicesFull "3195:3208" ;
-    data:posIndicesPart "3386:3397",
-        "3425:3436",
-        "3549:3560",
-        "3628:3639",
-        "3761:3772",
-        "3924:3935",
-        "3992:4003",
-        "4018:4029",
-        "4187:4198",
-        "4331:4342",
-        "4554:4565" ;
-    data:wdtLink wdt:Q6069164 ;
-    :alsoKnownAs "Irene Denison" ;
-    :hasChild data:Iris_Mountbatten ;
-    :hasDaughter data:Iris_Mountbatten ;
-    :hasSex data:female ;
-    :isMotherOf data:Iris_Mountbatten ;
-    :isParentOf data:Iris_Mountbatten .
-
-data:Prince_Henry_of_Battenberg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Henry of Battenberg" ;
-    data:posIndicesFull "459:485",
-        "466:485",
-        "705:731",
-        "712:731" ;
-    data:posIndicesPart "1170:1176",
-        "1241:1247",
-        "2621:2631",
-        "2668:2674",
-        "2691:2701",
-        "2836:2846",
-        "2857:2863",
-        "3702:3707",
-        "4435:4445",
-        "690:696" ;
-    data:wdtLink wdt:Q444347 ;
-    :alsoKnownAs "Heinrich Moritz von Battenberg",
-        "Henry Maurice Battenberg",
-        "Henry of Battenberg",
-        "Prince Henry Maurice of Battenberg" ;
-    :hasChild data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
-    :hasSex data:male ;
-    :hasSon data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
-    :isFatherOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
-    :isParentOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke .
-
-data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Beatrice of the United Kingdom" ;
-    data:posIndicesFull "459:485",
-        "585:602",
-        "585:624",
-        "705:731" ;
-    data:posIndicesPart "1127:1133",
-        "1134:1141",
-        "1336:1344",
-        "1520:1528",
-        "2679:2687" ;
-    data:wdtLink wdt:Q158140 ;
-    :alsoKnownAs "Beatrice Mary Victoria Feodore",
-        "Princess Beatrice",
-        "Princess Beatrice Mary Victoria Feodore of the United Kingdom",
-        "Princess Beatrice of Battenberg",
-        "Princess Henry of Battenberg",
-        "The Princess Beatrice" ;
-    :hasChild data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
-    :hasSex data:female ;
-    :hasSon data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
-    :isMotherOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
-    :isParentOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke .
-
-data:Iris_Mountbatten a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Iris_Mountbatten a :Person ;
     rdfs:label "Iris Mountbatten" ;
     data:posIndicesFull "1786:1801" ;
     data:posIndicesPart "2801:2812",
@@ -122,20 +16,17 @@ data:Iris_Mountbatten a :Person,
     :alsoKnownAs "Iris Victoria Beatrice Grace Mountbatten",
         "Lady Iris Kemp",
         "Lady Iris Victoria Beatrice Grace Mountbatten" ;
-    :hasFather data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke ;
-    :hasMother data:Irene_Mountbatten-_Marchioness_of_Carisbrooke ;
     :hasParent data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
         data:Irene_Mountbatten-_Marchioness_of_Carisbrooke ;
-    :hasSex data:female ;
-    :isChildOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
-        data:Irene_Mountbatten-_Marchioness_of_Carisbrooke ;
-    :isDaughterOf data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke,
-        data:Irene_Mountbatten-_Marchioness_of_Carisbrooke .
+    :hasSex data:female .
 
-data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke a :Person ;
     rdfs:label "Alexander Mountbatten, 1st Marquess of Carisbrooke" ;
     data:posIndicesFull "0:28",
         "1279:1309",
@@ -173,17 +64,72 @@ data:Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke a :Ancestor,
     data:wdtLink wdt:Q337477 ;
     :alsoKnownAs "Alexander Albert Mountbatten",
         "Prince Alexander of Battenberg" ;
-    :hasChild data:Iris_Mountbatten ;
-    :hasDaughter data:Iris_Mountbatten ;
-    :hasFather data:Prince_Henry_of_Battenberg ;
-    :hasMother data:Princess_Beatrice_of_the_United_Kingdom ;
     :hasParent data:Prince_Henry_of_Battenberg,
         data:Princess_Beatrice_of_the_United_Kingdom ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Henry_of_Battenberg,
-        data:Princess_Beatrice_of_the_United_Kingdom ;
-    :isFatherOf data:Iris_Mountbatten ;
-    :isParentOf data:Iris_Mountbatten ;
-    :isSonOf data:Prince_Henry_of_Battenberg,
-        data:Princess_Beatrice_of_the_United_Kingdom .
+    :hasSex data:male .
+
+data:Irene_Mountbatten-_Marchioness_of_Carisbrooke a :Person ;
+    rdfs:label "Irene Mountbatten, Marchioness of Carisbrooke" ;
+    data:posIndicesFull "3195:3208" ;
+    data:posIndicesPart "3386:3397",
+        "3425:3436",
+        "3549:3560",
+        "3628:3639",
+        "3761:3772",
+        "3924:3935",
+        "3992:4003",
+        "4018:4029",
+        "4187:4198",
+        "4331:4342",
+        "4554:4565" ;
+    data:wdtLink wdt:Q6069164 ;
+    :alsoKnownAs "Irene Denison" ;
+    :hasSex data:female .
+
+data:Prince_Henry_of_Battenberg a :Person ;
+    rdfs:label "Prince Henry of Battenberg" ;
+    data:posIndicesFull "459:485",
+        "466:485",
+        "705:731",
+        "712:731" ;
+    data:posIndicesPart "1170:1176",
+        "1241:1247",
+        "2621:2631",
+        "2668:2674",
+        "2691:2701",
+        "2836:2846",
+        "2857:2863",
+        "3702:3707",
+        "4435:4445",
+        "690:696" ;
+    data:wdtLink wdt:Q444347 ;
+    :alsoKnownAs "Heinrich Moritz von Battenberg",
+        "Henry Maurice Battenberg",
+        "Henry of Battenberg",
+        "Prince Henry Maurice of Battenberg" ;
+    :hasSex data:male .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Person ;
+    rdfs:label "Princess Beatrice of the United Kingdom" ;
+    data:posIndicesFull "459:485",
+        "585:602",
+        "585:624",
+        "705:731" ;
+    data:posIndicesPart "1127:1133",
+        "1134:1141",
+        "1336:1344",
+        "1520:1528",
+        "2679:2687" ;
+    data:wdtLink wdt:Q158140 ;
+    :alsoKnownAs "Beatrice Mary Victoria Feodore",
+        "Princess Beatrice",
+        "Princess Beatrice Mary Victoria Feodore of the United Kingdom",
+        "Princess Beatrice of Battenberg",
+        "Princess Henry of Battenberg",
+        "The Princess Beatrice" ;
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

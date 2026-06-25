@@ -2,27 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Lady_Helen_Marina_Lucy_Taylor a :Person,
-        :Woman ;
-    :hasAncestor data:King_George_V ;
-    :hasBirthYear "1964-04-28"^^xsd:date ;
-    :hasFather data:Prince_Edward_Duke_of_Kent ;
-    :hasMother data:Katharine_Duchess_of_Kent ;
-    :hasRelation data:Timothy_Verner_Taylor .
+data:Ivar_Mountbatten a :Man,
+        :Person ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:George_Mountbatten ;
+    :hasFather data:David_Mountbatten ;
+    :hasMother data:Janet_Mercedes_Bryce .
 
-data:Katharine_Duchess_of_Kent a :Ancestor,
+data:James_Coyle a :Man,
+        :Person .
+
+data:Lady_Louise_Windsor a :Person,
+        :Woman ;
+    :hasBirthYear 2003 ;
+    :hasFather data:Prince_Edward ;
+    :hasMother data:Sophie .
+
+data:Penelope_Anne_Vere_Thompson a :Person,
+        :Woman ;
+    :hasBirthYear 1966 ;
+    :hasFather data:Colin_Graham_Thompson ;
+    :hasMother data:Rosemary_Vere_Edwardes .
+
+data:Colin_Graham_Thompson a :Ancestor,
+        :Man,
+        :Person .
+
+data:David_Mountbatten a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Prince_George_of_Battenberg .
+
+data:George_Mountbatten a :Man,
+        :Person .
+
+data:Janet_Mercedes_Bryce a :Ancestor,
         :Person,
         :Woman .
 
-data:King_George_V a :Ancestor,
+data:Prince_Edward a :Ancestor,
         :Man,
         :Person .
 
-data:Prince_Edward_Duke_of_Kent a :Ancestor,
+data:Prince_George_of_Battenberg a :Ancestor,
         :Man,
         :Person .
 
-data:Timothy_Verner_Taylor a :Man,
-        :Person ;
-    :hasBirthYear "1963-08-08"^^xsd:date .
+data:Rosemary_Vere_Edwardes a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Sophie a :Ancestor,
+        :Person,
+        :Woman .
 

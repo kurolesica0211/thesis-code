@@ -1,0 +1,421 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:Sophia_of_Prussia ;
+    :hasSister data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Sophia_of_Prussia ;
+    :isSisterOf data:Sophia_of_Prussia .
+
+data:Constantine_II a :Man,
+        :Person ;
+    :hasBrother data:Constantine_II ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Felipe_VI,
+        data:King_Paul,
+        data:Princess_Irene,
+        data:Princess_Victoria_Louise_of_Prussia,
+        data:Queen_Sophia_of_Greece,
+        data:Sof%C3%ADa ;
+    :hasSister data:Princess_Irene,
+        data:Sof%C3%ADa ;
+    :isBloodrelationOf data:Constantine_II,
+        data:Princess_Irene,
+        data:Sof%C3%ADa ;
+    :isBrotherOf data:Constantine_II,
+        data:Princess_Irene,
+        data:Sof%C3%ADa ;
+    :isSiblingOf data:Constantine_II,
+        data:Princess_Irene,
+        data:Sof%C3%ADa ;
+    :isUncleOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI .
+
+data:Princess_Irene a :Person,
+        :Woman ;
+    :hasBrother data:Constantine_II ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Felipe_VI,
+        data:King_Paul,
+        data:Princess_Irene,
+        data:Princess_Victoria_Louise_of_Prussia,
+        data:Queen_Sophia_of_Greece,
+        data:Sof%C3%ADa ;
+    :hasSister data:Princess_Irene,
+        data:Sof%C3%ADa ;
+    :isAuntOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isBloodrelationOf data:Constantine_II,
+        data:Princess_Irene,
+        data:Sof%C3%ADa ;
+    :isSiblingOf data:Constantine_II,
+        data:Princess_Irene,
+        data:Sof%C3%ADa ;
+    :isSisterOf data:Constantine_II,
+        data:Princess_Irene,
+        data:Sof%C3%ADa .
+
+data:Constantine_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Constantine_I ;
+    :hasChild data:King_Paul ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:King_Paul,
+        data:Princess_Irene,
+        data:Sof%C3%ADa ;
+    :hasSon data:King_Paul ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:King_Paul,
+        data:Sof%C3%ADa ;
+    :isBloodrelationOf data:Constantine_I ;
+    :isBrotherOf data:Constantine_I ;
+    :isFatherOf data:King_Paul ;
+    :isParentOf data:King_Paul ;
+    :isSiblingOf data:Constantine_I ;
+    :isUncleOf data:King_Paul .
+
+data:Princess_Victoria_Louise_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Queen_Frederica ;
+    :hasDaughter data:Queen_Frederica ;
+    :hasRelation data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Princess_Irene,
+        data:Princess_Victoria_Louise_of_Prussia,
+        data:Queen_Frederica,
+        data:Sof%C3%ADa ;
+    :hasSister data:Princess_Victoria_Louise_of_Prussia ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Queen_Frederica,
+        data:Sof%C3%ADa ;
+    :isAuntOf data:Queen_Frederica ;
+    :isBloodrelationOf data:Princess_Victoria_Louise_of_Prussia ;
+    :isMotherOf data:Queen_Frederica ;
+    :isParentOf data:Queen_Frederica ;
+    :isSiblingOf data:Princess_Victoria_Louise_of_Prussia ;
+    :isSisterOf data:Princess_Victoria_Louise_of_Prussia .
+
+data:Queen_Sophia_of_Greece a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:King_Paul ;
+    :hasRelation data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:King_Paul,
+        data:Princess_Irene,
+        data:Queen_Sophia_of_Greece,
+        data:Sof%C3%ADa ;
+    :hasSister data:Queen_Sophia_of_Greece ;
+    :hasSon data:King_Paul ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:King_Paul,
+        data:Sof%C3%ADa ;
+    :isAuntOf data:King_Paul ;
+    :isBloodrelationOf data:Queen_Sophia_of_Greece ;
+    :isMotherOf data:King_Paul ;
+    :isParentOf data:King_Paul ;
+    :isSiblingOf data:Queen_Sophia_of_Greece ;
+    :isSisterOf data:Queen_Sophia_of_Greece .
+
+data:Juan_Carlos_I a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Juan_Carlos_I ;
+    :hasChild data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :hasDaughter data:Cristina,
+        data:Elena ;
+    :hasRelation data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :hasSon data:Felipe_VI ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isBloodrelationOf data:Juan_Carlos_I ;
+    :isBrotherOf data:Juan_Carlos_I ;
+    :isFatherOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isParentOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSiblingOf data:Juan_Carlos_I ;
+    :isUncleOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI .
+
+data:Queen_Frederica a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Princess_Victoria_Louise_of_Prussia ;
+    :hasChild data:Sof%C3%ADa ;
+    :hasDaughter data:Sof%C3%ADa ;
+    :hasMother data:Princess_Victoria_Louise_of_Prussia ;
+    :hasParent data:Princess_Victoria_Louise_of_Prussia ;
+    :hasRelation data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Princess_Victoria_Louise_of_Prussia,
+        data:Queen_Frederica,
+        data:Sof%C3%ADa ;
+    :hasSister data:Queen_Frederica ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Sof%C3%ADa ;
+    :isAuntOf data:Sof%C3%ADa ;
+    :isBloodrelationOf data:Queen_Frederica ;
+    :isChildOf data:Princess_Victoria_Louise_of_Prussia ;
+    :isDaughterOf data:Princess_Victoria_Louise_of_Prussia ;
+    :isMotherOf data:Sof%C3%ADa ;
+    :isParentOf data:Sof%C3%ADa ;
+    :isSiblingOf data:Queen_Frederica ;
+    :isSisterOf data:Queen_Frederica .
+
+data:King_Paul a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Constantine_I,
+        data:Queen_Sophia_of_Greece ;
+    :hasBrother data:King_Paul ;
+    :hasChild data:Sof%C3%ADa ;
+    :hasDaughter data:Sof%C3%ADa ;
+    :hasFather data:Constantine_I ;
+    :hasMother data:Queen_Sophia_of_Greece ;
+    :hasParent data:Constantine_I,
+        data:Queen_Sophia_of_Greece ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:King_Paul,
+        data:Princess_Irene,
+        data:Queen_Sophia_of_Greece,
+        data:Sof%C3%ADa ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Sof%C3%ADa ;
+    :isBloodrelationOf data:King_Paul ;
+    :isBrotherOf data:King_Paul ;
+    :isChildOf data:Constantine_I,
+        data:Queen_Sophia_of_Greece ;
+    :isFatherOf data:Sof%C3%ADa ;
+    :isParentOf data:Sof%C3%ADa ;
+    :isSiblingOf data:King_Paul ;
+    :isSonOf data:Constantine_I,
+        data:Queen_Sophia_of_Greece ;
+    :isUncleOf data:Sof%C3%ADa .
+
+data:Cristina a :Person,
+        :Woman ;
+    :hasAncestor data:Constantine_I,
+        data:Juan_Carlos_I,
+        data:King_Paul,
+        data:Princess_Victoria_Louise_of_Prussia,
+        data:Queen_Frederica,
+        data:Queen_Sophia_of_Greece,
+        data:Sof%C3%ADa ;
+    :hasBrother data:Felipe_VI ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sof%C3%ADa ;
+    :hasParent data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :hasRelation data:Constantine_I,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Juan_Carlos_I,
+        data:King_Paul,
+        data:Princess_Victoria_Louise_of_Prussia,
+        data:Queen_Frederica,
+        data:Queen_Sophia_of_Greece,
+        data:Sof%C3%ADa ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :isDaughterOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSisterOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI .
+
+data:Elena a :Person,
+        :Woman ;
+    :hasAncestor data:Constantine_I,
+        data:Juan_Carlos_I,
+        data:King_Paul,
+        data:Princess_Victoria_Louise_of_Prussia,
+        data:Queen_Frederica,
+        data:Queen_Sophia_of_Greece,
+        data:Sof%C3%ADa ;
+    :hasBrother data:Felipe_VI ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sof%C3%ADa ;
+    :hasParent data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :hasRelation data:Constantine_I,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Juan_Carlos_I,
+        data:King_Paul,
+        data:Princess_Victoria_Louise_of_Prussia,
+        data:Queen_Frederica,
+        data:Queen_Sophia_of_Greece,
+        data:Sof%C3%ADa ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :isDaughterOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSisterOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI .
+
+data:Felipe_VI a :Man,
+        :Person ;
+    :hasAncestor data:Constantine_I,
+        data:Juan_Carlos_I,
+        data:King_Paul,
+        data:Princess_Victoria_Louise_of_Prussia,
+        data:Queen_Frederica,
+        data:Queen_Sophia_of_Greece,
+        data:Sof%C3%ADa ;
+    :hasBrother data:Felipe_VI ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sof%C3%ADa ;
+    :hasParent data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Juan_Carlos_I,
+        data:King_Paul,
+        data:Princess_Irene,
+        data:Princess_Victoria_Louise_of_Prussia,
+        data:Queen_Frederica,
+        data:Queen_Sophia_of_Greece,
+        data:Sof%C3%ADa ;
+    :hasSister data:Cristina,
+        data:Elena ;
+    :isBloodrelationOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isBrotherOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isChildOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa ;
+    :isSiblingOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSonOf data:Juan_Carlos_I,
+        data:Sof%C3%ADa .
+
+data:Sof%C3%ADa a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Constantine_I,
+        data:King_Paul,
+        data:Princess_Victoria_Louise_of_Prussia,
+        data:Queen_Frederica,
+        data:Queen_Sophia_of_Greece ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:Constantine_II ;
+    :hasChild data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :hasDaughter data:Cristina,
+        data:Elena ;
+    :hasFather data:King_Paul ;
+    :hasMarriageYear 1962 ;
+    :hasMother data:Queen_Frederica ;
+    :hasParent data:King_Paul,
+        data:Queen_Frederica ;
+    :hasRelation data:Constantine_I,
+        data:Constantine_II,
+        data:Cristina,
+        data:Elena,
+        data:Felipe_VI,
+        data:Juan_Carlos_I,
+        data:King_Paul,
+        data:Princess_Irene,
+        data:Princess_Victoria_Louise_of_Prussia,
+        data:Queen_Frederica,
+        data:Queen_Sophia_of_Greece,
+        data:Sof%C3%ADa ;
+    :hasSister data:Princess_Irene,
+        data:Sof%C3%ADa ;
+    :hasSon data:Felipe_VI ;
+    :isAncestorOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isAuntOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isBloodrelationOf data:Constantine_II,
+        data:Princess_Irene,
+        data:Sof%C3%ADa ;
+    :isChildOf data:King_Paul,
+        data:Queen_Frederica ;
+    :isDaughterOf data:King_Paul,
+        data:Queen_Frederica ;
+    :isMotherOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isParentOf data:Cristina,
+        data:Elena,
+        data:Felipe_VI ;
+    :isSiblingOf data:Constantine_II,
+        data:Princess_Irene,
+        data:Sof%C3%ADa ;
+    :isSisterOf data:Constantine_II,
+        data:Princess_Irene,
+        data:Sof%C3%ADa .
+

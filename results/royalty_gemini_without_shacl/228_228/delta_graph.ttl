@@ -2,83 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charles_Louis_dOrleans a :Man,
-        :Person ;
-    :hasFather data:Jacques_of_Orleans .
-
-data:Foulques_dOrleans a :Man,
-        :Person ;
-    :hasFather data:Jacques_of_Orleans .
-
-data:Francois_of_Orleans_son a :Man,
-        :Person ;
-    :isSonOf data:Henri_Philippe_Pierre_Marie_dOrleans .
-
-data:Jean_Robert_Boeuf a :Man,
-        :Person .
-
-data:Jean_of_Orleans a :Man,
-        :Person ;
-    :isSonOf data:Henri_Philippe_Pierre_Marie_dOrleans .
-
-data:Marie_of_Orleans a :Person,
+data:Alice_of_Hesse a :Person,
         :Woman ;
-    :isDaughterOf data:Duchess_Marie_Therese_of_Wurttemberg,
-        data:Henri_Philippe_Pierre_Marie_dOrleans .
+    :isAuntOf data:Waldemar_of_Prussia .
 
-data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Person,
-        :Woman ;
-    :hasBirthYear 1938 ;
-    :hasDeathYear 2022 ;
-    :hasFather data:Luis_Cousino_y_Sebire ;
-    :hasMother data:Antonia_Maria_Quinones_de_Leon_y_Banuelos .
-
-data:Prince_Gundakar_of_Liechtenstein a :Man,
-        :Person .
-
-data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Person,
+data:Marie_of_Hesse a :Person,
         :Woman .
 
-data:Diane_of_Orleans a :Person,
+data:Frederick_III a :Man,
+        :Person .
+
+data:Heinrich a :Man,
+        :Person .
+
+data:Sigismund_of_Prussia a :Man,
+        :Person .
+
+data:Victoria_Empress a :Person,
         :Woman .
 
-data:Duchess_Marie_Therese_of_Wurttemberg a :Person,
-        :Woman ;
-    :hasBirthYear 1934 .
-
-data:Francois_of_Orleans_brother a :Man,
-        :Person .
-
-data:Henri_Count_of_Paris a :Man,
-        :Person ;
-    :hasBirthYear 1908 ;
-    :hasDeathYear 1999 .
-
-data:Luis_Cousino_y_Sebire a :Man,
-        :Person .
-
-data:Michel_of_Orleans a :Man,
-        :Person .
-
-data:Princess_Isabelle_of_Orleans_Braganza a :Person,
+data:Victoria_Queen a :Person,
         :Woman .
 
-data:Thibaut_of_Orleans a :Man,
+data:Waldemar_of_Prussia a :Man,
+        :Person ;
+    :alsoKnownAs "Joachim Friedrich Ernst Waldemar"^^xsd:string ;
+    :hasAncestor data:Victoria_Queen,
+        data:William_I ;
+    :hasBirthYear 1868 ;
+    :hasDeathYear 1879 ;
+    :hasFather data:Frederick_III ;
+    :hasMother data:Victoria_Empress ;
+    :isSiblingOf data:Heinrich,
+        data:Sigismund_of_Prussia,
+        data:Wilhelm .
+
+data:Wilhelm a :Man,
         :Person .
 
-data:Henri_Philippe_Pierre_Marie_dOrleans a :Man,
-        :Person ;
-    :hasBirthYear 1933 ;
-    :hasBrother data:Francois_of_Orleans_brother,
-        data:Jacques_of_Orleans,
-        data:Michel_of_Orleans,
-        data:Thibaut_of_Orleans ;
-    :hasDeathYear 2019 ;
-    :hasFather data:Henri_Count_of_Paris ;
-    :hasMarriageYear 1984 ;
-    :hasMother data:Princess_Isabelle_of_Orleans_Braganza ;
-    :hasSister data:Diane_of_Orleans .
-
-data:Jacques_of_Orleans a :Man,
+data:William_I a :Man,
         :Person .
 

@@ -1,0 +1,1167 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Aspasia_Manos a :Ancestor,
+        :Woman ;
+    :hasChild data:Alexandra ;
+    :hasDaughter data:Alexandra ;
+    :hasRelation data:Alexander_I,
+        data:Alexandra,
+        data:Aspasia_Manos ;
+    :hasSister data:Aspasia_Manos ;
+    :isAncestorOf data:Alexandra ;
+    :isAuntOf data:Alexandra ;
+    :isBloodrelationOf data:Aspasia_Manos ;
+    :isMotherOf data:Alexandra ;
+    :isParentOf data:Alexandra ;
+    :isSiblingOf data:Aspasia_Manos ;
+    :isSisterOf data:Aspasia_Manos .
+
+data:George_I a :Ancestor,
+        :Man ;
+    :hasBrother data:George_I ;
+    :hasChild data:Constantine_I ;
+    :hasRelation data:Constantine_I,
+        data:George_I,
+        data:Irene,
+        data:Olga,
+        data:Sophia_of_Prussia,
+        data:William_II ;
+    :hasSon data:Constantine_I ;
+    :isAncestorOf data:Constantine_I ;
+    :isBloodrelationOf data:George_I ;
+    :isBrotherOf data:George_I ;
+    :isFatherOf data:Constantine_I ;
+    :isParentOf data:Constantine_I ;
+    :isSiblingOf data:George_I ;
+    :isUncleOf data:Constantine_I .
+
+data:Olga a :Ancestor,
+        :Woman ;
+    :hasChild data:Constantine_I ;
+    :hasRelation data:Constantine_I,
+        data:George_I,
+        data:Irene,
+        data:Olga,
+        data:Sophia_of_Prussia,
+        data:William_II ;
+    :hasSister data:Olga ;
+    :hasSon data:Constantine_I ;
+    :isAncestorOf data:Constantine_I ;
+    :isAuntOf data:Constantine_I ;
+    :isBloodrelationOf data:Olga ;
+    :isMotherOf data:Constantine_I ;
+    :isParentOf data:Constantine_I ;
+    :isSiblingOf data:Olga ;
+    :isSisterOf data:Olga .
+
+data:Constantine_I a :Man ;
+    :hasAncestor data:George_I,
+        data:Olga ;
+    :hasBrother data:Constantine_I ;
+    :hasFather data:George_I ;
+    :hasMother data:Olga ;
+    :hasParent data:George_I,
+        data:Olga ;
+    :hasRelation data:Constantine_I,
+        data:George_I,
+        data:Irene,
+        data:Olga,
+        data:Sophia_of_Prussia,
+        data:William_II ;
+    :isBloodrelationOf data:Constantine_I ;
+    :isBrotherOf data:Constantine_I ;
+    :isChildOf data:George_I,
+        data:Olga ;
+    :isSiblingOf data:Constantine_I ;
+    :isSonOf data:George_I,
+        data:Olga .
+
+data:Prince_Albert a :Ancestor,
+        :Man ;
+    :hasBrother data:Prince_Albert ;
+    :hasChild data:Victoria_Princess_Royal ;
+    :hasDaughter data:Victoria_Princess_Royal ;
+    :hasRelation data:Alexander_I,
+        data:Alexandra,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Prince_Albert,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_II ;
+    :isAncestorOf data:Alexander_I,
+        data:Alexandra,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Prince_Albert ;
+    :isBrotherOf data:Prince_Albert ;
+    :isFatherOf data:Victoria_Princess_Royal ;
+    :isParentOf data:Victoria_Princess_Royal ;
+    :isSiblingOf data:Prince_Albert ;
+    :isUncleOf data:Victoria_Princess_Royal .
+
+data:Queen_Victoria a :Ancestor,
+        :Woman ;
+    :hasChild data:Victoria_Princess_Royal ;
+    :hasDaughter data:Victoria_Princess_Royal ;
+    :hasRelation data:Alexander_I,
+        data:Alexandra,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_II ;
+    :hasSister data:Queen_Victoria ;
+    :isAncestorOf data:Alexander_I,
+        data:Alexandra,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal ;
+    :isAuntOf data:Victoria_Princess_Royal ;
+    :isBloodrelationOf data:Queen_Victoria ;
+    :isMotherOf data:Victoria_Princess_Royal ;
+    :isParentOf data:Victoria_Princess_Royal ;
+    :isSiblingOf data:Queen_Victoria ;
+    :isSisterOf data:Queen_Victoria .
+
+data:William_I a :Ancestor,
+        :Man ;
+    :hasBrother data:William_I ;
+    :hasChild data:Frederick_III ;
+    :hasRelation data:Alexander_I,
+        data:Alexandra,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Sophia_of_Prussia,
+        data:William_I,
+        data:William_II ;
+    :hasSon data:Frederick_III ;
+    :isAncestorOf data:Alexander_I,
+        data:Alexandra,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:William_I ;
+    :isBrotherOf data:William_I ;
+    :isFatherOf data:Frederick_III ;
+    :isParentOf data:Frederick_III ;
+    :isSiblingOf data:William_I ;
+    :isUncleOf data:Frederick_III .
+
+data:Frederick_III a :Ancestor,
+        :Man ;
+    :hasAncestor data:William_I ;
+    :hasBrother data:Frederick_III ;
+    :hasChild data:Sophia_of_Prussia ;
+    :hasDaughter data:Sophia_of_Prussia ;
+    :hasFather data:William_I ;
+    :hasParent data:William_I ;
+    :hasRelation data:Alexander_I,
+        data:Alexandra,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Sophia_of_Prussia,
+        data:William_I,
+        data:William_II ;
+    :isAncestorOf data:Alexander_I,
+        data:Alexandra,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Frederick_III ;
+    :isBrotherOf data:Frederick_III ;
+    :isChildOf data:William_I ;
+    :isFatherOf data:Sophia_of_Prussia ;
+    :isParentOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Frederick_III ;
+    :isSonOf data:William_I ;
+    :isUncleOf data:Sophia_of_Prussia .
+
+data:Alexandra a :Woman ;
+    :hasAncestor data:Alexander_I,
+        data:Aspasia_Manos,
+        data:Frederick_III,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasFather data:Alexander_I ;
+    :hasMother data:Aspasia_Manos ;
+    :hasParent data:Alexander_I,
+        data:Aspasia_Manos ;
+    :hasRelation data:Alexander_I,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Frederick_III,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasSister data:Alexandra ;
+    :isBloodrelationOf data:Alexandra ;
+    :isChildOf data:Alexander_I,
+        data:Aspasia_Manos ;
+    :isDaughterOf data:Alexander_I,
+        data:Aspasia_Manos ;
+    :isSiblingOf data:Alexandra ;
+    :isSisterOf data:Alexandra .
+
+data:Charlotte a :Woman ;
+    :hasBrother data:Henry,
+        data:Sigismund,
+        data:Waldemar,
+        data:William_II ;
+    :hasRelation data:Charlotte,
+        data:Henry,
+        data:Irene,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :hasSister data:Charlotte,
+        data:Margaret,
+        data:Sophia_of_Prussia,
+        data:Viktoria ;
+    :isAuntOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isSisterOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II .
+
+data:Henry a :Man ;
+    :hasBrother data:Henry,
+        data:Sigismund,
+        data:Waldemar,
+        data:William_II ;
+    :hasRelation data:Charlotte,
+        data:Henry,
+        data:Irene,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :hasSister data:Charlotte,
+        data:Margaret,
+        data:Sophia_of_Prussia,
+        data:Viktoria ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isBrotherOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isUncleOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul .
+
+data:Margaret a :Woman ;
+    :hasBrother data:Henry,
+        data:Sigismund,
+        data:Waldemar,
+        data:William_II ;
+    :hasRelation data:Charlotte,
+        data:Henry,
+        data:Irene,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :hasSister data:Charlotte,
+        data:Margaret,
+        data:Sophia_of_Prussia,
+        data:Viktoria ;
+    :isAuntOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isSisterOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II .
+
+data:Sigismund a :Man ;
+    :hasBrother data:Henry,
+        data:Sigismund,
+        data:Waldemar,
+        data:William_II ;
+    :hasRelation data:Charlotte,
+        data:Henry,
+        data:Irene,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :hasSister data:Charlotte,
+        data:Margaret,
+        data:Sophia_of_Prussia,
+        data:Viktoria ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isBrotherOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isUncleOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul .
+
+data:Viktoria a :Woman ;
+    :hasBrother data:Henry,
+        data:Sigismund,
+        data:Waldemar,
+        data:William_II ;
+    :hasRelation data:Charlotte,
+        data:Henry,
+        data:Irene,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :hasSister data:Charlotte,
+        data:Margaret,
+        data:Sophia_of_Prussia,
+        data:Viktoria ;
+    :isAuntOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isSisterOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II .
+
+data:Waldemar a :Man ;
+    :hasBrother data:Henry,
+        data:Sigismund,
+        data:Waldemar,
+        data:William_II ;
+    :hasRelation data:Charlotte,
+        data:Henry,
+        data:Irene,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :hasSister data:Charlotte,
+        data:Margaret,
+        data:Sophia_of_Prussia,
+        data:Viktoria ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isBrotherOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isUncleOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul .
+
+data:Victoria_Princess_Royal a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasChild data:Sophia_of_Prussia ;
+    :hasDaughter data:Sophia_of_Prussia ;
+    :hasFather data:Prince_Albert ;
+    :hasMother data:Queen_Victoria ;
+    :hasParent data:Prince_Albert,
+        data:Queen_Victoria ;
+    :hasRelation data:Alexander_I,
+        data:Alexandra,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_II ;
+    :hasSister data:Victoria_Princess_Royal ;
+    :isAncestorOf data:Alexander_I,
+        data:Alexandra,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Sophia_of_Prussia ;
+    :isAuntOf data:Sophia_of_Prussia ;
+    :isBloodrelationOf data:Victoria_Princess_Royal ;
+    :isChildOf data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isDaughterOf data:Prince_Albert,
+        data:Queen_Victoria ;
+    :isMotherOf data:Sophia_of_Prussia ;
+    :isParentOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Victoria_Princess_Royal ;
+    :isSisterOf data:Victoria_Princess_Royal .
+
+data:William_II a :Man ;
+    :hasBrother data:Henry,
+        data:Sigismund,
+        data:Waldemar,
+        data:William_II ;
+    :hasRelation data:Charlotte,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George_I,
+        data:Henry,
+        data:Irene,
+        data:Margaret,
+        data:Olga,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_I,
+        data:William_II ;
+    :hasSister data:Charlotte,
+        data:Margaret,
+        data:Sophia_of_Prussia,
+        data:Viktoria ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isBrotherOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isUncleOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul .
+
+data:George_II a :Man ;
+    :hasAncestor data:Frederick_III,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasBrother data:Alexander_I,
+        data:George_II,
+        data:Paul ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria ;
+    :isBloodrelationOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isBrotherOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isSonOf data:Sophia_of_Prussia ;
+    :isUncleOf data:Alexandra .
+
+data:Helen a :Woman ;
+    :hasAncestor data:Frederick_III,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasBrother data:Alexander_I,
+        data:George_II,
+        data:Paul ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria ;
+    :isAuntOf data:Alexandra ;
+    :isBloodrelationOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isDaughterOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isSisterOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul .
+
+data:Katherine a :Woman ;
+    :hasAncestor data:Frederick_III,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasBrother data:Alexander_I,
+        data:George_II,
+        data:Paul ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria ;
+    :isAuntOf data:Alexandra ;
+    :isBloodrelationOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isDaughterOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isSisterOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul .
+
+data:Maria a :Woman ;
+    :hasAncestor data:Frederick_III,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasBrother data:Alexander_I,
+        data:George_II,
+        data:Paul ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria ;
+    :isAuntOf data:Alexandra ;
+    :isBloodrelationOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isDaughterOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isSisterOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul .
+
+data:Paul a :Man ;
+    :hasAncestor data:Frederick_III,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasBrother data:Alexander_I,
+        data:George_II,
+        data:Paul ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria ;
+    :isBloodrelationOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isBrotherOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isSonOf data:Sophia_of_Prussia ;
+    :isUncleOf data:Alexandra .
+
+data:Alexander_I a :Ancestor,
+        :Man ;
+    :hasAncestor data:Frederick_III,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasBrother data:Alexander_I,
+        data:George_II,
+        data:Paul ;
+    :hasChild data:Alexandra ;
+    :hasDaughter data:Alexandra ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I,
+        data:Alexandra,
+        data:Aspasia_Manos,
+        data:Frederick_III,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria ;
+    :isAncestorOf data:Alexandra ;
+    :isBloodrelationOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isBrotherOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isFatherOf data:Alexandra ;
+    :isParentOf data:Alexandra ;
+    :isSiblingOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isSonOf data:Sophia_of_Prussia ;
+    :isUncleOf data:Alexandra .
+
+data:Irene a :Woman ;
+    :hasAncestor data:Frederick_III,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasBrother data:Alexander_I,
+        data:George_II,
+        data:Paul ;
+    :hasMother data:Sophia_of_Prussia ;
+    :hasParent data:Sophia_of_Prussia ;
+    :hasRelation data:Alexander_I,
+        data:Charlotte,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George_I,
+        data:George_II,
+        data:Helen,
+        data:Henry,
+        data:Irene,
+        data:Katherine,
+        data:Margaret,
+        data:Maria,
+        data:Olga,
+        data:Paul,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_I,
+        data:William_II ;
+    :hasSister data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria ;
+    :isAuntOf data:Alexandra ;
+    :isBloodrelationOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isChildOf data:Sophia_of_Prussia ;
+    :isDaughterOf data:Sophia_of_Prussia ;
+    :isSiblingOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isSisterOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul .
+
+data:Sophia_of_Prussia a :Ancestor,
+        :Woman ;
+    :hasAncestor data:Frederick_III,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Victoria_Princess_Royal,
+        data:William_I ;
+    :hasBirthYear 1870 ;
+    :hasBrother data:Henry,
+        data:Sigismund,
+        data:Waldemar,
+        data:William_II ;
+    :hasChild data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :hasDaughter data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria ;
+    :hasDeathYear 1932 ;
+    :hasFather data:Frederick_III ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Victoria_Princess_Royal ;
+    :hasParent data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :hasRelation data:Alexander_I,
+        data:Alexandra,
+        data:Charlotte,
+        data:Constantine_I,
+        data:Frederick_III,
+        data:George_I,
+        data:George_II,
+        data:Helen,
+        data:Henry,
+        data:Irene,
+        data:Katherine,
+        data:Margaret,
+        data:Maria,
+        data:Olga,
+        data:Paul,
+        data:Prince_Albert,
+        data:Queen_Victoria,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Victoria_Princess_Royal,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_I,
+        data:William_II ;
+    :hasSister data:Charlotte,
+        data:Margaret,
+        data:Sophia_of_Prussia,
+        data:Viktoria ;
+    :hasSon data:Alexander_I,
+        data:George_II,
+        data:Paul ;
+    :isAncestorOf data:Alexander_I,
+        data:Alexandra,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isAuntOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isBloodrelationOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isChildOf data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :isDaughterOf data:Frederick_III,
+        data:Victoria_Princess_Royal ;
+    :isMotherOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isParentOf data:Alexander_I,
+        data:George_II,
+        data:Helen,
+        data:Irene,
+        data:Katherine,
+        data:Maria,
+        data:Paul ;
+    :isSiblingOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II ;
+    :isSisterOf data:Charlotte,
+        data:Henry,
+        data:Margaret,
+        data:Sigismund,
+        data:Sophia_of_Prussia,
+        data:Viktoria,
+        data:Waldemar,
+        data:William_II .
+

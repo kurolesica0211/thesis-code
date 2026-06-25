@@ -7,85 +7,14 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Frederica_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Frederica of Hanover" ;
-    data:posIndicesFull "194:203" ;
-    data:wdtLink wdt:Q61351 ;
-    :alsoKnownAs "Fredericka",
-        "Friederike Luise von Griechenland",
-        "Princess Fredericka" ;
-    :hasSex data:female .
-
-data:Prince_Sigismund_of_Prussia_1 a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Sigismund of Prussia" ;
-    data:posIndicesFull "1210:1237" ;
-    data:wdtLink wdt:Q2800847 ;
-    :alsoKnownAs "Franz Friedrich Sigismund",
-        "Prince Francis Frederick Sigismund of Prussia" ;
-    :hasBrother data:Prince_Waldemar_of_Prussia_1 ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Waldemar_of_Prussia_1 ;
-    :isSiblingOf data:Prince_Waldemar_of_Prussia_1 ;
-    :isUncleOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Joachim_of_Prussia,
-        data:Prince_Sigismund_of_Prussia,
-        data:Prince_Waldemar_of_Prussia .
-
-data:Prince_Waldemar_of_Prussia_1 a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Waldemar of Prussia" ;
-    data:posIndicesFull "0:26" ;
-    data:posIndicesPart "230:236",
-        "237:245",
-        "361:369",
-        "432:440",
-        "595:603",
-        "746:754",
-        "824:832",
-        "996:1004" ;
-    data:wdtLink wdt:Q3026877 ;
-    :alsoKnownAs "Joachim Friedrich Ernst Waldemar Prinz von Preußen",
-        "Prince Joachim Friedrich Ernst Waldemar of Prussia",
-        "Waldemar Prinz von Preßen" ;
-    :hasBrother data:Prince_Sigismund_of_Prussia_1 ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Sigismund_of_Prussia_1 ;
-    :isSiblingOf data:Prince_Sigismund_of_Prussia_1 ;
-    :isUncleOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Joachim_of_Prussia,
-        data:Prince_Sigismund_of_Prussia,
-        data:Prince_Waldemar_of_Prussia .
-
-data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_August_Wilhelm_of_Prussia a :Person ;
     rdfs:label "Prince August Wilhelm of Prussia" ;
     data:posIndicesFull "941:945" ;
     data:wdtLink wdt:Q58777 ;
     :alsoKnownAs "Auwi" ;
-    :hasBrother data:Prince_Joachim_of_Prussia ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Joachim_of_Prussia ;
-    :isSiblingOf data:Prince_Joachim_of_Prussia ;
-    :isUncleOf data:Frederica_of_Hanover .
+    :hasSex data:male .
 
-data:Prince_Joachim_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Joachim_of_Prussia a :Person ;
     rdfs:label "Prince Joachim of Prussia" ;
     data:posIndicesFull "28:35" ;
     data:posIndicesPart "230:236" ;
@@ -93,29 +22,26 @@ data:Prince_Joachim_of_Prussia a :Ancestor,
     :alsoKnownAs "Joachim",
         "Joachim Franz Hubert",
         "Prince Joachim Franz Humbert of Prussia" ;
-    :hasBrother data:Prince_August_Wilhelm_of_Prussia ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isUncleOf data:Frederica_of_Hanover .
+    :hasSex data:male .
 
-data:Prince_Sigismund_of_Prussia a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Sigismund_of_Prussia a :Person ;
     rdfs:label "Prince Sigismund of Prussia" ;
     data:posIndicesFull "1210:1237" ;
     data:wdtLink wdt:Q64704 ;
     :alsoKnownAs "Prince William Victor Charles Augustus Henry Sigismund of Prussia",
         "Sigismund Prinz von Preußen",
         "Wilhelm Viktor Karl August Heinrich Sigismund Prinz von Preußen" ;
-    :hasBrother data:Prince_Waldemar_of_Prussia ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Waldemar_of_Prussia ;
-    :isSiblingOf data:Prince_Waldemar_of_Prussia .
+    :hasSex data:male .
 
-data:Prince_Waldemar_of_Prussia a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Sigismund_of_Prussia_1 a :Person ;
+    rdfs:label "Prince Sigismund of Prussia" ;
+    data:posIndicesFull "1210:1237" ;
+    data:wdtLink wdt:Q2800847 ;
+    :alsoKnownAs "Franz Friedrich Sigismund",
+        "Prince Francis Frederick Sigismund of Prussia" ;
+    :hasSex data:male .
+
+data:Prince_Waldemar_of_Prussia a :Person ;
     rdfs:label "Prince Waldemar of Prussia" ;
     data:posIndicesFull "0:26" ;
     data:posIndicesPart "230:236",
@@ -130,8 +56,32 @@ data:Prince_Waldemar_of_Prussia a :Man,
     :alsoKnownAs "Prince Waldemar William Louis Frederick Victor of Prussia",
         "Waldemar Prinz von Preußen",
         "Waldemar Wilhelm Ludwig Friedrich Viktor Heinrich Prinz von Preußen" ;
-    :hasBrother data:Prince_Sigismund_of_Prussia ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Sigismund_of_Prussia ;
-    :isSiblingOf data:Prince_Sigismund_of_Prussia .
+    :hasSex data:male .
+
+data:Prince_Waldemar_of_Prussia_1 a :Person ;
+    rdfs:label "Prince Waldemar of Prussia" ;
+    data:posIndicesFull "0:26" ;
+    data:posIndicesPart "230:236",
+        "237:245",
+        "361:369",
+        "432:440",
+        "595:603",
+        "746:754",
+        "824:832",
+        "996:1004" ;
+    data:wdtLink wdt:Q3026877 ;
+    :alsoKnownAs "Joachim Friedrich Ernst Waldemar Prinz von Preußen",
+        "Prince Joachim Friedrich Ernst Waldemar of Prussia",
+        "Waldemar Prinz von Preßen" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
 

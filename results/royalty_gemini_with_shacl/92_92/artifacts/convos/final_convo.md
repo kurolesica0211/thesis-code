@@ -180,6 +180,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -195,39 +197,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -242,6 +214,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -259,6 +248,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -326,29 +330,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -357,6 +353,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -369,6 +373,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -377,17 +383,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -415,6 +423,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -430,130 +522,200 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (332ca02a-a9da-4631-a078-0f966a29eaf9)
- Call ID: 332ca02a-a9da-4631-a078-0f966a29eaf9
+  AssignClass (41649e8b-ac72-4c3c-a695-9b1c9f682d0c)
+ Call ID: 41649e8b-ac72-4c3c-a695-9b1c9f682d0c
   Args:
+    source: Richard_of_Gloucester
     type: :Man
-    source: Prince_Richard_Duke_of_Gloucester
-  AssignClass (5fb541de-e8fc-47e5-bc23-28b5fe3df7a6)
- Call ID: 5fb541de-e8fc-47e5-bc23-28b5fe3df7a6
+  AssignClass (9a83a781-60e5-41e6-a30f-2550d3659cb5)
+ Call ID: 9a83a781-60e5-41e6-a30f-2550d3659cb5
+  Args:
+    source: Richard_of_Gloucester
+    type: :Person
+  AddLiteral (7bf4ae0e-31c5-4be6-9ff1-847d60579574)
+ Call ID: 7bf4ae0e-31c5-4be6-9ff1-847d60579574
+  Args:
+    source: Richard_of_Gloucester
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    literal_value: 1944
+  AssignClass (07e6f829-c877-4532-bbf3-697d8f9d456a)
+ Call ID: 07e6f829-c877-4532-bbf3-697d8f9d456a
   Args:
     source: Prince_Henry_Duke_of_Gloucester
     type: :Man
-  AssignClass (bbf6d4be-1034-4734-8fcf-f03338eaf031)
- Call ID: bbf6d4be-1034-4734-8fcf-f03338eaf031
+  AssignClass (1272434e-1390-48a5-b808-3586614ca441)
+ Call ID: 1272434e-1390-48a5-b808-3586614ca441
+  Args:
+    source: Prince_Henry_Duke_of_Gloucester
+    type: :Person
+  AssignClass (f59758ee-e283-4a40-be26-4f5bc220c63a)
+ Call ID: f59758ee-e283-4a40-be26-4f5bc220c63a
   Args:
     source: Princess_Alice_Duchess_of_Gloucester
     type: :Woman
-  AssignClass (14a425db-d0f0-43a0-9b18-70f0407aea5a)
- Call ID: 14a425db-d0f0-43a0-9b18-70f0407aea5a
+  AssignClass (0cf0c1b4-bd5e-4626-a50f-ba3d19061510)
+ Call ID: 0cf0c1b4-bd5e-4626-a50f-ba3d19061510
   Args:
-    type: :Man
-    source: George_V
-  AssignClass (436a1f44-52cf-4bc9-b1fe-7b7a18c30dcf)
- Call ID: 436a1f44-52cf-4bc9-b1fe-7b7a18c30dcf
+    source: Princess_Alice_Duchess_of_Gloucester
+    type: :Person
+  AddTriple (baa453ec-07af-4875-bce7-fa49694f84f2)
+ Call ID: baa453ec-07af-4875-bce7-fa49694f84f2
   Args:
-    source: Queen_Mary
-    type: :Woman
-  AssignClass (fd808d28-bfda-4d46-a9a1-31b557712b9a)
- Call ID: fd808d28-bfda-4d46-a9a1-31b557712b9a
+    relation: :hasFather
+    target: Prince_Henry_Duke_of_Gloucester
+    source: Richard_of_Gloucester
+  AddTriple (94fe312f-3991-4911-ba6d-2f232e157061)
+ Call ID: 94fe312f-3991-4911-ba6d-2f232e157061
   Args:
-    source: John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch
-    type: :Man
-  AssignClass (72a4c476-e0a2-4d3a-b910-14079fde01ec)
- Call ID: 72a4c476-e0a2-4d3a-b910-14079fde01ec
-  Args:
-    source: Lady_Margaret_Bridgeman
-    type: :Woman
-  AssignClass (b5db1fc1-c9e2-4900-9cce-4d4c932e270e)
- Call ID: b5db1fc1-c9e2-4900-9cce-4d4c932e270e
+    relation: :hasMother
+    target: Princess_Alice_Duchess_of_Gloucester
+    source: Richard_of_Gloucester
+  AssignClass (3e09c3c1-6444-48ca-80c7-5b152d799e35)
+ Call ID: 3e09c3c1-6444-48ca-80c7-5b152d799e35
   Args:
     source: Prince_William_of_Gloucester
     type: :Man
-  AssignClass (97ed82d9-dbf0-4e95-9920-c7e0f6b38d45)
- Call ID: 97ed82d9-dbf0-4e95-9920-c7e0f6b38d45
+  AssignClass (9985e78a-caf5-4751-92ab-fc07591af331)
+ Call ID: 9985e78a-caf5-4751-92ab-fc07591af331
   Args:
-    type: :Woman
-    source: Birgitte_van_Deurs_Henriksen
-  AddLiteral (aedf1ccf-2f7d-4514-b25a-f6a15e6bbd05)
- Call ID: aedf1ccf-2f7d-4514-b25a-f6a15e6bbd05
+    source: Prince_William_of_Gloucester
+    type: :Person
+  AddTriple (b9270ea3-35d0-4e64-993b-71b603fe4973)
+ Call ID: b9270ea3-35d0-4e64-993b-71b603fe4973
   Args:
-    literal_value: 1944
+    source: Richard_of_Gloucester
+    relation: :isSiblingOf
+    target: Prince_William_of_Gloucester
+  AddLiteral (085ffa14-1dcb-4d47-87f7-9f7ae26c893e)
+ Call ID: 085ffa14-1dcb-4d47-87f7-9f7ae26c893e
+  Args:
+    literal_value: 1972
+    relation: :hasDeathYear
     literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Prince_Richard_Duke_of_Gloucester
-  AddTriple (eae82f0b-80a6-4a47-b088-8e51e8fdcfd6)
- Call ID: eae82f0b-80a6-4a47-b088-8e51e8fdcfd6
+    source: Prince_William_of_Gloucester
+  AssignClass (10e4addb-3585-4a75-bd54-66bac0bd8265)
+ Call ID: 10e4addb-3585-4a75-bd54-66bac0bd8265
   Args:
-    relation: :hasFather
-    source: Prince_Richard_Duke_of_Gloucester
-    target: Prince_Henry_Duke_of_Gloucester
-  AddTriple (e44c577a-4dae-421e-be47-aa111fbe3446)
- Call ID: e44c577a-4dae-421e-be47-aa111fbe3446
+    source: George_V
+    type: :Man
+  AssignClass (013a8f15-0928-43ed-8c45-5f258cf9293b)
+ Call ID: 013a8f15-0928-43ed-8c45-5f258cf9293b
   Args:
-    source: Prince_Richard_Duke_of_Gloucester
-    relation: :hasMother
-    target: Princess_Alice_Duchess_of_Gloucester
-  AddTriple (6e2f598b-83de-45a0-b08e-0f35f5ab1e52)
- Call ID: 6e2f598b-83de-45a0-b08e-0f35f5ab1e52
+    source: George_V
+    type: :Person
+  AssignClass (d0cd6b1e-88af-459a-b385-f686615050fa)
+ Call ID: d0cd6b1e-88af-459a-b385-f686615050fa
   Args:
-    target: George_V
+    source: Queen_Mary
+    type: :Woman
+  AssignClass (1584d5af-e684-46a9-9ae4-df9b08f71959)
+ Call ID: 1584d5af-e684-46a9-9ae4-df9b08f71959
+  Args:
+    source: Queen_Mary
+    type: :Person
+  AddTriple (e679d5c7-31ef-4fe6-a99e-c5f84ae67d64)
+ Call ID: e679d5c7-31ef-4fe6-a99e-c5f84ae67d64
+  Args:
     source: Prince_Henry_Duke_of_Gloucester
     relation: :hasFather
-  AddTriple (09f89b48-5b3f-4b33-94bb-8859a9fc7d53)
- Call ID: 09f89b48-5b3f-4b33-94bb-8859a9fc7d53
+    target: George_V
+  AddTriple (49b369f4-5e4c-413b-bd82-5b341a3e1a43)
+ Call ID: 49b369f4-5e4c-413b-bd82-5b341a3e1a43
   Args:
     source: Prince_Henry_Duke_of_Gloucester
     relation: :hasMother
     target: Queen_Mary
-  AddTriple (9b02df52-4c72-4014-b2b2-395b0a6a3174)
- Call ID: 9b02df52-4c72-4014-b2b2-395b0a6a3174
+  AssignClass (887a9f46-b208-45d1-a5bd-db15d78f4f14)
+ Call ID: 887a9f46-b208-45d1-a5bd-db15d78f4f14
   Args:
-    target: John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch
+    source: John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch
+    type: :Man
+  AssignClass (11f8fa70-78c6-468f-ae6b-37a81c7532b0)
+ Call ID: 11f8fa70-78c6-468f-ae6b-37a81c7532b0
+  Args:
+    source: John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch
+    type: :Person
+  AssignClass (7bb05654-8812-4853-a907-84dc22a8116c)
+ Call ID: 7bb05654-8812-4853-a907-84dc22a8116c
+  Args:
+    source: Lady_Margaret_Bridgeman
+    type: :Woman
+  AssignClass (916d90a5-2503-4e3b-b230-9c2812996fef)
+ Call ID: 916d90a5-2503-4e3b-b230-9c2812996fef
+  Args:
+    source: Lady_Margaret_Bridgeman
+    type: :Person
+  AddTriple (9378bb02-585f-410a-b1a5-278ff7132ccb)
+ Call ID: 9378bb02-585f-410a-b1a5-278ff7132ccb
+  Args:
     relation: :hasFather
+    target: John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch
     source: Princess_Alice_Duchess_of_Gloucester
-  AddTriple (69e673f2-2afb-47c5-9351-708d2418313c)
- Call ID: 69e673f2-2afb-47c5-9351-708d2418313c
+  AddTriple (a72e59fd-16e8-4718-885b-4d8dbdcfafe1)
+ Call ID: a72e59fd-16e8-4718-885b-4d8dbdcfafe1
   Args:
+    target: Lady_Margaret_Bridgeman
     relation: :hasMother
     source: Princess_Alice_Duchess_of_Gloucester
-    target: Lady_Margaret_Bridgeman
-  AddTriple (92e50e46-befe-4c23-ad7a-618c4ee648b5)
- Call ID: 92e50e46-befe-4c23-ad7a-618c4ee648b5
+  AssignClass (037e245c-a0a6-4069-9264-c6dd23815163)
+ Call ID: 037e245c-a0a6-4069-9264-c6dd23815163
   Args:
-    target: Prince_William_of_Gloucester
-    source: Prince_Richard_Duke_of_Gloucester
-    relation: :hasBrother
-  AddTriple (c31fc1aa-61a8-48ec-b7ee-751b2c7111ae)
- Call ID: c31fc1aa-61a8-48ec-b7ee-751b2c7111ae
+    source: Birgitte_van_Deurs_Henriksen
+    type: :Woman
+  AssignClass (64bc54e5-65a4-4137-8f5b-0a975e8f58ff)
+ Call ID: 64bc54e5-65a4-4137-8f5b-0a975e8f58ff
   Args:
+    source: Birgitte_van_Deurs_Henriksen
+    type: :Person
+  AddLiteral (84361750-7cd0-4176-942e-1da7d3430e5f)
+ Call ID: 84361750-7cd0-4176-942e-1da7d3430e5f
+  Args:
+    literal_type: xsd:integer
+    source: Richard_of_Gloucester
+    literal_value: 1972
     relation: :hasMarriageYear
-    source: Prince_Richard_Duke_of_Gloucester
+  AddTriple (36e9d30f-d64f-4b37-a87c-af6729f3b290)
+ Call ID: 36e9d30f-d64f-4b37-a87c-af6729f3b290
+  Args:
+    source: Richard_of_Gloucester
+    relation: :hasRelation
     target: Birgitte_van_Deurs_Henriksen
-  AddLiteral (7b43081b-67a9-4c57-ae77-a257d3fec7d5)
- Call ID: 7b43081b-67a9-4c57-ae77-a257d3fec7d5
+  Finish (9bea7554-a141-40f2-ab65-29a338737c1d)
+ Call ID: 9bea7554-a141-40f2-ab65-29a338737c1d
   Args:
-    source: Prince_Richard_Duke_of_Gloucester
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-    literal_value: 1972
-  AddLiteral (659d2ba8-8678-4678-a478-fc5826f20daf)
- Call ID: 659d2ba8-8678-4678-a478-fc5826f20daf
-  Args:
-    literal_value: 1972
-    relation: :hasDeathYear
-    source: Prince_William_of_Gloucester
-    literal_type: xsd:integer
-  AddLiteral (78fd8806-841f-4f0d-b470-aef42175f82c)
- Call ID: 78fd8806-841f-4f0d-b470-aef42175f82c
-  Args:
-    source: Prince_Henry_Duke_of_Gloucester
-    relation: :hasDeathYear
-    literal_type: xsd:integer
-    literal_value: 1974
-  Finish (a679c301-9a56-44dd-847a-3804607353fb)
- Call ID: a679c301-9a56-44dd-847a-3804607353fb
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -642,35 +804,43 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Richard_Duke_of_Gloucester a :Man ;
+  data:Richard_of_Gloucester a :Man,
+          :Person ;
       :hasBirthYear 1944 ;
-      :hasBrother data:Prince_William_of_Gloucester ;
       :hasFather data:Prince_Henry_Duke_of_Gloucester ;
-      :hasMarriageYear data:Birgitte_van_Deurs_Henriksen,
-          1972 ;
-      :hasMother data:Princess_Alice_Duchess_of_Gloucester .
+      :hasMarriageYear 1972 ;
+      :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
+      :hasRelation data:Birgitte_van_Deurs_Henriksen ;
+      :isSiblingOf data:Prince_William_of_Gloucester .
 
-  data:Birgitte_van_Deurs_Henriksen a :Woman .
+  data:Birgitte_van_Deurs_Henriksen a :Person,
+          :Woman .
 
-  data:George_V a :Man .
+  data:George_V a :Man,
+          :Person .
 
-  data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch a :Man .
+  data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch a :Man,
+          :Person .
 
-  data:Lady_Margaret_Bridgeman a :Woman .
+  data:Lady_Margaret_Bridgeman a :Person,
+          :Woman .
 
-  data:Prince_Henry_Duke_of_Gloucester a :Man ;
-      :hasDeathYear 1974 ;
+  data:Prince_Henry_Duke_of_Gloucester a :Man,
+          :Person ;
       :hasFather data:George_V ;
       :hasMother data:Queen_Mary .
 
-  data:Prince_William_of_Gloucester a :Man ;
+  data:Prince_William_of_Gloucester a :Man,
+          :Person ;
       :hasDeathYear 1972 .
 
-  data:Princess_Alice_Duchess_of_Gloucester a :Woman ;
+  data:Princess_Alice_Duchess_of_Gloucester a :Person,
+          :Woman ;
       :hasFather data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch ;
       :hasMother data:Lady_Margaret_Bridgeman .
 
-  data:Queen_Mary a :Woman .
+  data:Queen_Mary a :Person,
+          :Woman .
 
 
 
@@ -682,8 +852,8 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (b1661c31-0fbf-4cf7-af01-d0c4eb0de25a)
- Call ID: b1661c31-0fbf-4cf7-af01-d0c4eb0de25a
+  ValidateShacl (e5c0f5a5-205f-46c0-9666-c29bc0a43c0d)
+ Call ID: e5c0f5a5-205f-46c0-9666-c29bc0a43c0d
   Args:
 
 ================================= Tool Message =================================
@@ -695,7 +865,7 @@ Violations:
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Henry_Duke_of_Gloucester lacks the required class :Ancestor for the property :hasFather.
+      The value Prince_Henry_Duke_of_Gloucester is missing the required class :Ancestor for the property :hasFather of Richard_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Prince_Henry_Duke_of_Gloucester', class=':Ancestor')
 
@@ -703,7 +873,7 @@ Violations:
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node George_V lacks the required class :Ancestor for the property :hasFather.
+      The value George_V is missing the required class :Ancestor for the property :hasFather of Prince_Henry_Duke_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='George_V', class=':Ancestor')
 
@@ -711,7 +881,7 @@ Violations:
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Princess_Alice_Duchess_of_Gloucester lacks the required class :Ancestor for the property :hasMother.
+      The value Princess_Alice_Duchess_of_Gloucester is missing the required class :Ancestor for the property :hasMother of Richard_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Princess_Alice_Duchess_of_Gloucester', class=':Ancestor')
 
@@ -719,7 +889,7 @@ Violations:
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Queen_Mary lacks the required class :Ancestor for the property :hasMother.
+      The value Queen_Mary is missing the required class :Ancestor for the property :hasMother of Prince_Henry_Duke_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Queen_Mary', class=':Ancestor')
 
@@ -727,7 +897,7 @@ Violations:
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch lacks the required class :Ancestor for the property :hasFather.
+      The value John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class :Ancestor for the property :hasFather of Princess_Alice_Duchess_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch', class=':Ancestor')
 
@@ -735,7 +905,7 @@ Violations:
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node George_V lacks the required class :Ancestor for the property :hasFather.
+      The value George_V is missing the required class :Ancestor for the property :hasFather of Prince_Henry_Duke_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='George_V', class=':Ancestor')
 
@@ -743,7 +913,7 @@ Violations:
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Henry_Duke_of_Gloucester lacks the required class :Ancestor for the property :hasFather.
+      The value Prince_Henry_Duke_of_Gloucester is missing the required class :Ancestor for the property :hasFather of Richard_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Prince_Henry_Duke_of_Gloucester', class=':Ancestor')
 
@@ -751,7 +921,7 @@ Violations:
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Lady_Margaret_Bridgeman lacks the required class :Ancestor for the property :hasMother.
+      The value Lady_Margaret_Bridgeman is missing the required class :Ancestor for the property :hasMother of Princess_Alice_Duchess_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Lady_Margaret_Bridgeman', class=':Ancestor')
 
@@ -759,7 +929,7 @@ Violations:
   Violation [9]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Queen_Mary lacks the required class :Ancestor for the property :hasMother.
+      The value Queen_Mary is missing the required class :Ancestor for the property :hasMother of Prince_Henry_Duke_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Queen_Mary', class=':Ancestor')
 
@@ -767,7 +937,7 @@ Violations:
   Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Princess_Alice_Duchess_of_Gloucester lacks the required class :Ancestor for the property :hasMother.
+      The value Princess_Alice_Duchess_of_Gloucester is missing the required class :Ancestor for the property :hasMother of Richard_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Princess_Alice_Duchess_of_Gloucester', class=':Ancestor')
 
@@ -775,7 +945,7 @@ Violations:
   Violation [11]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch lacks the required class :Ancestor for the property :hasFather.
+      The value John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class :Ancestor for the property :hasFather of Princess_Alice_Duchess_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch', class=':Ancestor')
 
@@ -783,7 +953,7 @@ Violations:
   Violation [12]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node George_V lacks the required class :Ancestor for the property :hasFather.
+      The value George_V is missing the required class :Ancestor for the property :hasFather of Prince_Henry_Duke_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='George_V', class=':Ancestor')
 
@@ -791,7 +961,7 @@ Violations:
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node Prince_Henry_Duke_of_Gloucester lacks the required class :Ancestor for the property :hasFather.
+      The value Prince_Henry_Duke_of_Gloucester is missing the required class :Ancestor for the property :hasFather of Richard_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Prince_Henry_Duke_of_Gloucester', class=':Ancestor')
 
@@ -799,7 +969,7 @@ Violations:
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Lady_Margaret_Bridgeman lacks the required class :Ancestor for the property :hasMother.
+      The value Lady_Margaret_Bridgeman is missing the required class :Ancestor for the property :hasMother of Princess_Alice_Duchess_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Lady_Margaret_Bridgeman', class=':Ancestor')
 
@@ -807,7 +977,7 @@ Violations:
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Queen_Mary lacks the required class :Ancestor for the property :hasMother.
+      The value Queen_Mary is missing the required class :Ancestor for the property :hasMother of Prince_Henry_Duke_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Queen_Mary', class=':Ancestor')
 
@@ -815,7 +985,7 @@ Violations:
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Princess_Alice_Duchess_of_Gloucester lacks the required class :Ancestor for the property :hasMother.
+      The value Princess_Alice_Duchess_of_Gloucester is missing the required class :Ancestor for the property :hasMother of Richard_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Princess_Alice_Duchess_of_Gloucester', class=':Ancestor')
 
@@ -823,7 +993,7 @@ Violations:
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value node John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch lacks the required class :Ancestor for the property :hasFather.
+      The value John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class :Ancestor for the property :hasFather of Princess_Alice_Duchess_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch', class=':Ancestor')
 
@@ -831,7 +1001,7 @@ Violations:
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value node Lady_Margaret_Bridgeman lacks the required class :Ancestor for the property :hasMother.
+      The value Lady_Margaret_Bridgeman is missing the required class :Ancestor for the property :hasMother of Princess_Alice_Duchess_of_Gloucester.
     LLM-provided instruction on how to handle the violation:
       AssignClass(node='Lady_Margaret_Bridgeman', class=':Ancestor')
 
@@ -842,225 +1012,36 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (f806992b-c556-4253-92e1-675bc4b98039)
- Call ID: f806992b-c556-4253-92e1-675bc4b98039
+  AssignClass (4097ea23-19a0-4f28-b130-de7fa8290d02)
+ Call ID: 4097ea23-19a0-4f28-b130-de7fa8290d02
   Args:
     type: :Ancestor
     source: Prince_Henry_Duke_of_Gloucester
-  AssignClass (cc0fb048-ae17-45e2-b36b-32e1945fe8cd)
- Call ID: cc0fb048-ae17-45e2-b36b-32e1945fe8cd
+  AssignClass (d9869f1d-0b28-4633-972e-b319901e1dfd)
+ Call ID: d9869f1d-0b28-4633-972e-b319901e1dfd
   Args:
+    type: :Ancestor
     source: George_V
-    type: :Ancestor
-  AssignClass (c108ee69-a7ca-4157-9f89-6dd9598ba7d8)
- Call ID: c108ee69-a7ca-4157-9f89-6dd9598ba7d8
+  AssignClass (19a1833b-d90d-40dc-9949-8e328cb74c19)
+ Call ID: 19a1833b-d90d-40dc-9949-8e328cb74c19
   Args:
+    type: :Ancestor
     source: Princess_Alice_Duchess_of_Gloucester
-    type: :Ancestor
-  AssignClass (a20d14e2-c8b6-4d14-ae22-2f11d014af51)
- Call ID: a20d14e2-c8b6-4d14-ae22-2f11d014af51
+  AssignClass (59013ba7-f136-45db-a5b1-801e03953b85)
+ Call ID: 59013ba7-f136-45db-a5b1-801e03953b85
   Args:
-    type: :Ancestor
     source: Queen_Mary
-  AssignClass (6e84c205-8b9c-411d-8c01-cd4ba1eaacb8)
- Call ID: 6e84c205-8b9c-411d-8c01-cd4ba1eaacb8
-  Args:
     type: :Ancestor
+  AssignClass (c4b0019e-d87f-4d4c-9bf9-ce4f3b7ec46d)
+ Call ID: c4b0019e-d87f-4d4c-9bf9-ce4f3b7ec46d
+  Args:
     source: John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch
-  AssignClass (3ffceed2-6b42-4b90-a163-9916ac188009)
- Call ID: 3ffceed2-6b42-4b90-a163-9916ac188009
+    type: :Ancestor
+  AssignClass (6e058f34-f5a9-4cdd-8015-51625aa58ab8)
+ Call ID: 6e058f34-f5a9-4cdd-8015-51625aa58ab8
   Args:
     type: :Ancestor
     source: Lady_Margaret_Bridgeman
-  AssignClass (7a38c9ab-70a3-42d5-ad5f-14698cc9e1f9)
- Call ID: 7a38c9ab-70a3-42d5-ad5f-14698cc9e1f9
-  Args:
-    source: Prince_Richard_Duke_of_Gloucester
-    type: :Person
-  AssignClass (be91097b-b2f9-4e10-9afe-b16c0c5be24b)
- Call ID: be91097b-b2f9-4e10-9afe-b16c0c5be24b
-  Args:
-    type: :Person
-    source: Prince_Henry_Duke_of_Gloucester
-  AssignClass (3dcaf6c1-d850-4d50-b98f-d46bb8e2e5df)
- Call ID: 3dcaf6c1-d850-4d50-b98f-d46bb8e2e5df
-  Args:
-    type: :Person
-    source: Princess_Alice_Duchess_of_Gloucester
-  AssignClass (ee8192e2-bc9d-4348-8247-bd680bf1d0c6)
- Call ID: ee8192e2-bc9d-4348-8247-bd680bf1d0c6
-  Args:
-    source: George_V
-    type: :Person
-  AssignClass (c9c450e9-f03d-4e10-abad-db884ce8691d)
- Call ID: c9c450e9-f03d-4e10-abad-db884ce8691d
-  Args:
-    source: Queen_Mary
-    type: :Person
-  AssignClass (b98e5f92-fc30-4027-bf6d-8cb633ff41d3)
- Call ID: b98e5f92-fc30-4027-bf6d-8cb633ff41d3
-  Args:
-    source: John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch
-    type: :Person
-  AssignClass (5c20323e-a329-4cd3-b1d4-983b2a57d033)
- Call ID: 5c20323e-a329-4cd3-b1d4-983b2a57d033
-  Args:
-    type: :Person
-    source: Lady_Margaret_Bridgeman
-  AssignClass (c48eeaa3-8a1d-4b81-a62c-038998095cfd)
- Call ID: c48eeaa3-8a1d-4b81-a62c-038998095cfd
-  Args:
-    type: :Person
-    source: Prince_William_of_Gloucester
-  AssignClass (52cc05eb-2247-4622-b353-3e2a0e0d0525)
- Call ID: 52cc05eb-2247-4622-b353-3e2a0e0d0525
-  Args:
-    type: :Man
-    source: Prince_William_of_Gloucester
-  AssignClass (22d2cd46-e736-429c-9ef2-491eb87b484e)
- Call ID: 22d2cd46-e736-429c-9ef2-491eb87b484e
-  Args:
-    type: :Person
-    source: Birgitte_van_Deurs_Henriksen
-  AddLiteral (0f7dea72-44aa-443e-ad77-d77b95e55f0c)
- Call ID: 0f7dea72-44aa-443e-ad77-d77b95e55f0c
-  Args:
-    source: Prince_Richard_Duke_of_Gloucester
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Male
-  AddLiteral (eef186e9-3c0a-4ac1-a9db-7c536db532c8)
- Call ID: eef186e9-3c0a-4ac1-a9db-7c536db532c8
-  Args:
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-    source: Prince_Henry_Duke_of_Gloucester
-  AddLiteral (d053fb5f-a10e-41e9-be2d-ba2948ed16ed)
- Call ID: d053fb5f-a10e-41e9-be2d-ba2948ed16ed
-  Args:
-    source: Princess_Alice_Duchess_of_Gloucester
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Female
-  AddLiteral (f3e597f3-73f9-489a-82c8-aeb988820251)
- Call ID: f3e597f3-73f9-489a-82c8-aeb988820251
-  Args:
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-    source: George_V
-  AddLiteral (510b9d17-b8d6-4959-a67a-1894c70a7a74)
- Call ID: 510b9d17-b8d6-4959-a67a-1894c70a7a74
-  Args:
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-    source: Queen_Mary
-  AddLiteral (9cf75a4c-d005-447c-9a9e-43d4f5c6c369)
- Call ID: 9cf75a4c-d005-447c-9a9e-43d4f5c6c369
-  Args:
-    source: John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch
-    relation: :hasSex
-    literal_value: Male
-    literal_type: xsd:string
-  AddLiteral (69049caa-2239-4d32-ae36-5476dde0b3e5)
- Call ID: 69049caa-2239-4d32-ae36-5476dde0b3e5
-  Args:
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-    source: Lady_Margaret_Bridgeman
-  AddLiteral (0d347acd-5b1c-4ff4-9ba5-1bbcc5cf09ea)
- Call ID: 0d347acd-5b1c-4ff4-9ba5-1bbcc5cf09ea
-  Args:
-    source: Prince_William_of_Gloucester
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Male
-  AddLiteral (43e1e161-fef2-4903-b6eb-9f43bebacaea)
- Call ID: 43e1e161-fef2-4903-b6eb-9f43bebacaea
-  Args:
-    source: Birgitte_van_Deurs_Henriksen
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Female
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1089,59 +1070,49 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Prince_Richard_Duke_of_Gloucester a :Man,
+  data:Richard_of_Gloucester a :Man,
           :Person ;
       :hasBirthYear 1944 ;
-      :hasBrother data:Prince_William_of_Gloucester ;
       :hasFather data:Prince_Henry_Duke_of_Gloucester ;
-      :hasMarriageYear data:Birgitte_van_Deurs_Henriksen,
-          1972 ;
+      :hasMarriageYear 1972 ;
       :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
-      :hasSex "Male"^^xsd:string .
+      :hasRelation data:Birgitte_van_Deurs_Henriksen ;
+      :isSiblingOf data:Prince_William_of_Gloucester .
 
   data:Birgitte_van_Deurs_Henriksen a :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+          :Woman .
 
   data:George_V a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
+          :Person .
 
   data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch a :Ancestor,
           :Man,
-          :Person ;
-      :hasSex "Male"^^xsd:string .
+          :Person .
 
   data:Lady_Margaret_Bridgeman a :Ancestor,
           :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+          :Woman .
 
   data:Prince_Henry_Duke_of_Gloucester a :Ancestor,
           :Man,
           :Person ;
-      :hasDeathYear 1974 ;
       :hasFather data:George_V ;
-      :hasMother data:Queen_Mary ;
-      :hasSex "Male"^^xsd:string .
+      :hasMother data:Queen_Mary .
 
   data:Prince_William_of_Gloucester a :Man,
           :Person ;
-      :hasDeathYear 1972 ;
-      :hasSex "Male"^^xsd:string .
+      :hasDeathYear 1972 .
 
   data:Princess_Alice_Duchess_of_Gloucester a :Ancestor,
           :Person,
           :Woman ;
       :hasFather data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch ;
-      :hasMother data:Lady_Margaret_Bridgeman ;
-      :hasSex "Female"^^xsd:string .
+      :hasMother data:Lady_Margaret_Bridgeman .
 
   data:Queen_Mary a :Ancestor,
           :Person,
-          :Woman ;
-      :hasSex "Female"^^xsd:string .
+          :Woman .
 
 
 
@@ -1149,1031 +1120,8 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  Finish (14963144-f416-4057-9331-5138ca00e4c1)
- Call ID: 14963144-f416-4057-9331-5138ca00e4c1
-  Args:
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (589b1ffc-f187-4ed1-acc8-fc3449669368)
- Call ID: 589b1ffc-f187-4ed1-acc8-fc3449669368
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:90
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Queen_Mary is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Princess_Alice_Duchess_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Lady_Margaret_Bridgeman is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Henry_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity George_V is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Queen_Mary is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Princess_Alice_Duchess_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Lady_Margaret_Bridgeman is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Henry_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity George_V is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Queen_Mary is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Princess_Alice_Duchess_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Lady_Margaret_Bridgeman is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Henry_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity George_V is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_William_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Richard_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Henry_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity George_V is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_William_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Richard_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Henry_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity George_V is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_William_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Princess_Alice_Duchess_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Lady_Margaret_Bridgeman is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Henry_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Queen_Mary is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity George_V is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Richard_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Birgitte_van_Deurs_Henriksen is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_William_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Princess_Alice_Duchess_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Lady_Margaret_Bridgeman is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Henry_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Queen_Mary is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity George_V is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Richard_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Birgitte_van_Deurs_Henriksen is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_William_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Princess_Alice_Duchess_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Lady_Margaret_Bridgeman is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Henry_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [51]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Queen_Mary is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [52]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity George_V is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Richard_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Birgitte_van_Deurs_Henriksen is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_William_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Princess_Alice_Duchess_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Lady_Margaret_Bridgeman is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Henry_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Queen_Mary is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity George_V is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Richard_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Birgitte_van_Deurs_Henriksen is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_William_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Princess_Alice_Duchess_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Lady_Margaret_Bridgeman is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Henry_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Queen_Mary is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity George_V is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [71]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Richard_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [72]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Birgitte_van_Deurs_Henriksen is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_William_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Princess_Alice_Duchess_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Lady_Margaret_Bridgeman is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Henry_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Queen_Mary is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [79]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity George_V is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [80]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Prince_Richard_Duke_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [81]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [82]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Birgitte_van_Deurs_Henriksen is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [83]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Queen_Mary is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [84]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Birgitte_van_Deurs_Henriksen is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [85]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Princess_Alice_Duchess_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [86]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Lady_Margaret_Bridgeman is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [87]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Queen_Mary is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [88]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Birgitte_van_Deurs_Henriksen is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [89]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Princess_Alice_Duchess_of_Gloucester is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-  Violation [90]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The entity Lady_Margaret_Bridgeman is missing the required class assignment for its sex value.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Female, :Sex)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (225b1889-ced8-489d-8d67-bf510e85192a)
- Call ID: 225b1889-ced8-489d-8d67-bf510e85192a
-  Args:
-    type: :Sex
-    source: Male
-  AssignClass (afea3dfe-8d7f-41fe-b7b1-c6368feb304a)
- Call ID: afea3dfe-8d7f-41fe-b7b1-c6368feb304a
-  Args:
-    source: Female
-    type: :Sex
-  AddTriple (04b7699c-dda8-4224-b722-f02d12717959)
- Call ID: 04b7699c-dda8-4224-b722-f02d12717959
-  Args:
-    relation: :hasSex
-    target: Male
-    source: Prince_Richard_Duke_of_Gloucester
-  AddTriple (d4a2c831-87c2-4939-b663-da48b2c50256)
- Call ID: d4a2c831-87c2-4939-b663-da48b2c50256
-  Args:
-    target: Male
-    source: Prince_Henry_Duke_of_Gloucester
-    relation: :hasSex
-  AddTriple (f5e5e648-689a-4625-944b-69f4e0f02bf3)
- Call ID: f5e5e648-689a-4625-944b-69f4e0f02bf3
-  Args:
-    source: Princess_Alice_Duchess_of_Gloucester
-    target: Female
-    relation: :hasSex
-  AddTriple (21baba27-9de8-4f5d-a323-4e5a7536d481)
- Call ID: 21baba27-9de8-4f5d-a323-4e5a7536d481
-  Args:
-    relation: :hasSex
-    target: Male
-    source: George_V
-  AddTriple (5f7713a6-13c5-4f89-a8e5-5040e8c43888)
- Call ID: 5f7713a6-13c5-4f89-a8e5-5040e8c43888
-  Args:
-    relation: :hasSex
-    target: Female
-    source: Queen_Mary
-  AddTriple (ee6f8796-a93b-4780-965f-0696cedf906d)
- Call ID: ee6f8796-a93b-4780-965f-0696cedf906d
-  Args:
-    target: Male
-    source: John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch
-    relation: :hasSex
-  AddTriple (004efb6a-fab2-4b07-959c-6cc1738b8fbb)
- Call ID: 004efb6a-fab2-4b07-959c-6cc1738b8fbb
-  Args:
-    target: Female
-    source: Lady_Margaret_Bridgeman
-    relation: :hasSex
-  AddTriple (b93b0d51-9120-4c5b-aeb5-29004008ad19)
- Call ID: b93b0d51-9120-4c5b-aeb5-29004008ad19
-  Args:
-    relation: :hasSex
-    source: Prince_William_of_Gloucester
-    target: Male
-  AddTriple (a45187aa-f44a-40dc-8cb0-ca73e01f30fb)
- Call ID: a45187aa-f44a-40dc-8cb0-ca73e01f30fb
-  Args:
-    target: Female
-    source: Birgitte_van_Deurs_Henriksen
-    relation: :hasSex
-  RemoveLiteral (d14a5107-69dc-4369-bf7b-6bcd1263eef2)
- Call ID: d14a5107-69dc-4369-bf7b-6bcd1263eef2
-  Args:
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-    source: Prince_Richard_Duke_of_Gloucester
-  RemoveLiteral (fe23dac2-8aca-46e8-8186-41524843e674)
- Call ID: fe23dac2-8aca-46e8-8186-41524843e674
-  Args:
-    source: Prince_Henry_Duke_of_Gloucester
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Male
-  RemoveLiteral (1c715aae-5069-4239-85d5-aed62952095c)
- Call ID: 1c715aae-5069-4239-85d5-aed62952095c
-  Args:
-    source: Princess_Alice_Duchess_of_Gloucester
-    literal_value: Female
-    literal_type: xsd:string
-    relation: :hasSex
-  RemoveLiteral (eba9656a-2115-4f47-a86e-4812b199b97b)
- Call ID: eba9656a-2115-4f47-a86e-4812b199b97b
-  Args:
-    relation: :hasSex
-    literal_type: xsd:string
-    literal_value: Male
-    source: George_V
-  RemoveLiteral (2cde8f16-990b-494f-9ba3-4153dd9b6505)
- Call ID: 2cde8f16-990b-494f-9ba3-4153dd9b6505
-  Args:
-    source: Queen_Mary
-    literal_value: Female
-    literal_type: xsd:string
-    relation: :hasSex
-  RemoveLiteral (22c0f7c9-44df-4ad7-a1f8-27a36b081685)
- Call ID: 22c0f7c9-44df-4ad7-a1f8-27a36b081685
-  Args:
-    source: John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-  RemoveLiteral (f8ca3010-a9e6-4f2d-8ab2-f51e16676e87)
- Call ID: f8ca3010-a9e6-4f2d-8ab2-f51e16676e87
-  Args:
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-    source: Lady_Margaret_Bridgeman
-  RemoveLiteral (f3fa6c45-969a-46c9-8945-4d821ff1464a)
- Call ID: f3fa6c45-969a-46c9-8945-4d821ff1464a
-  Args:
-    source: Prince_William_of_Gloucester
-    literal_type: xsd:string
-    literal_value: Male
-    relation: :hasSex
-  RemoveLiteral (2b09c72f-d2e5-40d4-bf4b-963add4d2e0e)
- Call ID: 2b09c72f-d2e5-40d4-bf4b-963add4d2e0e
-  Args:
-    source: Birgitte_van_Deurs_Henriksen
-    relation: :hasSex
-    literal_value: Female
-    literal_type: xsd:string
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Prince_Richard_Duke_of_Gloucester a :Man,
-          :Person ;
-      :hasBirthYear 1944 ;
-      :hasBrother data:Prince_William_of_Gloucester ;
-      :hasFather data:Prince_Henry_Duke_of_Gloucester ;
-      :hasMarriageYear data:Birgitte_van_Deurs_Henriksen,
-          1972 ;
-      :hasMother data:Princess_Alice_Duchess_of_Gloucester ;
-      :hasSex data:Male .
-
-  data:Birgitte_van_Deurs_Henriksen a :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:George_V a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch a :Ancestor,
-          :Man,
-          :Person ;
-      :hasSex data:Male .
-
-  data:Lady_Margaret_Bridgeman a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Prince_Henry_Duke_of_Gloucester a :Ancestor,
-          :Man,
-          :Person ;
-      :hasDeathYear 1974 ;
-      :hasFather data:George_V ;
-      :hasMother data:Queen_Mary ;
-      :hasSex data:Male .
-
-  data:Prince_William_of_Gloucester a :Man,
-          :Person ;
-      :hasDeathYear 1972 ;
-      :hasSex data:Male .
-
-  data:Princess_Alice_Duchess_of_Gloucester a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:John_Montagu_Douglas_Scott_7th_Duke_of_Buccleuch ;
-      :hasMother data:Lady_Margaret_Bridgeman ;
-      :hasSex data:Female .
-
-  data:Queen_Mary a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Female a :Sex .
-
-  data:Male a :Sex .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (e381d89a-60be-4891-a8c1-dcdc8636bd35)
- Call ID: e381d89a-60be-4891-a8c1-dcdc8636bd35
+  ValidateShacl (57b8e314-f986-4102-aef2-f2da4f5042a8)
+ Call ID: 57b8e314-f986-4102-aef2-f2da4f5042a8
   Args:
 
 ================================= Tool Message =================================
@@ -2184,6 +1132,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (69d1baa3-18ee-44c8-bf06-359a9b23e01e)
- Call ID: 69d1baa3-18ee-44c8-bf06-359a9b23e01e
+  Finish (8a7cdd82-1966-47c1-8c76-3b510241827c)
+ Call ID: 8a7cdd82-1966-47c1-8c76-3b510241827c
   Args:

@@ -1,0 +1,592 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:QueenElizabethII a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:KingCharlesIII ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:QueenElizabethII ;
+    :hasSon data:KingCharlesIII ;
+    :isAncestorOf data:KingCharlesIII ;
+    :isAuntOf data:KingCharlesIII ;
+    :isBloodrelationOf data:QueenElizabethII ;
+    :isMotherOf data:KingCharlesIII ;
+    :isParentOf data:KingCharlesIII ;
+    :isSiblingOf data:QueenElizabethII ;
+    :isSisterOf data:QueenElizabethII .
+
+data:PrinceAndrewOfGreeceAndDenmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasChild data:PrincePhilip ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:PrincePhilip ;
+    :isAncestorOf data:KingCharlesIII,
+        data:PrincePhilip ;
+    :isBloodrelationOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isBrotherOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isFatherOf data:PrincePhilip ;
+    :isParentOf data:PrincePhilip ;
+    :isSiblingOf data:PrinceAndrewOfGreeceAndDenmark ;
+    :isUncleOf data:PrincePhilip .
+
+data:PrinceLouisOfBattenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceLouisOfBattenberg ;
+    :hasChild data:PrincessAliceOfBattenberg ;
+    :hasDaughter data:PrincessAliceOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :isAncestorOf data:Cecilie,
+        data:KingCharlesIII,
+        data:Margarita,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:PrinceLouisOfBattenberg ;
+    :isBrotherOf data:PrinceLouisOfBattenberg ;
+    :isFatherOf data:PrincessAliceOfBattenberg ;
+    :isParentOf data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:PrinceLouisOfBattenberg ;
+    :isUncleOf data:PrincessAliceOfBattenberg .
+
+data:PrincessVictoriaOfHesseAndByRhine a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessAliceOfBattenberg ;
+    :hasDaughter data:PrincessAliceOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:PrincessVictoriaOfHesseAndByRhine ;
+    :isAncestorOf data:Cecilie,
+        data:KingCharlesIII,
+        data:Margarita,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:PrincessAliceOfBattenberg ;
+    :isBloodrelationOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isMotherOf data:PrincessAliceOfBattenberg ;
+    :isParentOf data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:PrincessVictoriaOfHesseAndByRhine ;
+    :isSisterOf data:PrincessVictoriaOfHesseAndByRhine .
+
+data:George a :Man,
+        :Person ;
+    :hasBrother data:George,
+        data:Louis ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :isBloodrelationOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :isBrotherOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :isUncleOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora .
+
+data:Louis a :Man,
+        :Person ;
+    :hasBrother data:George,
+        data:Louis ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :isBloodrelationOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :isBrotherOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :isUncleOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora .
+
+data:Louise a :Person,
+        :Woman ;
+    :hasBrother data:George,
+        data:Louis ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :isAuntOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :isSisterOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg .
+
+data:KingCharlesIII a :Man,
+        :Person ;
+    :hasAncestor data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII ;
+    :hasBrother data:KingCharlesIII ;
+    :hasFather data:PrincePhilip ;
+    :hasMother data:QueenElizabethII ;
+    :hasParent data:PrincePhilip,
+        data:QueenElizabethII ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:KingCharlesIII ;
+    :isBrotherOf data:KingCharlesIII ;
+    :isChildOf data:PrincePhilip,
+        data:QueenElizabethII ;
+    :isSiblingOf data:KingCharlesIII ;
+    :isSonOf data:PrincePhilip,
+        data:QueenElizabethII .
+
+data:Cecilie a :Person,
+        :Woman ;
+    :hasAncestor data:PrinceLouisOfBattenberg,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasBrother data:PrincePhilip ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :hasParent data:PrincessAliceOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:KingCharlesIII ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:PrincessAliceOfBattenberg ;
+    :isDaughterOf data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora .
+
+data:Margarita a :Person,
+        :Woman ;
+    :hasAncestor data:PrinceLouisOfBattenberg,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasBrother data:PrincePhilip ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :hasParent data:PrincessAliceOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:KingCharlesIII ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:PrincessAliceOfBattenberg ;
+    :isDaughterOf data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora .
+
+data:Sophie a :Person,
+        :Woman ;
+    :hasAncestor data:PrinceLouisOfBattenberg,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasBrother data:PrincePhilip ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :hasParent data:PrincessAliceOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:KingCharlesIII ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:PrincessAliceOfBattenberg ;
+    :isDaughterOf data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora .
+
+data:Theodora a :Person,
+        :Woman ;
+    :hasAncestor data:PrinceLouisOfBattenberg,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasBrother data:PrincePhilip ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :hasParent data:PrincessAliceOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:KingCharlesIII ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:PrincessAliceOfBattenberg ;
+    :isDaughterOf data:PrincessAliceOfBattenberg ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isSisterOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora .
+
+data:PrincePhilip a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasBrother data:PrincePhilip ;
+    :hasChild data:KingCharlesIII ;
+    :hasFather data:PrinceAndrewOfGreeceAndDenmark ;
+    :hasMother data:PrincessAliceOfBattenberg ;
+    :hasParent data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasSon data:KingCharlesIII ;
+    :isAncestorOf data:KingCharlesIII ;
+    :isBloodrelationOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isBrotherOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isChildOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isFatherOf data:KingCharlesIII ;
+    :isParentOf data:KingCharlesIII ;
+    :isSiblingOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isSonOf data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrincessAliceOfBattenberg ;
+    :isUncleOf data:KingCharlesIII .
+
+data:PrincessAliceOfBattenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasBirthYear 1885 ;
+    :hasBrother data:George,
+        data:Louis ;
+    :hasChild data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :hasDaughter data:Cecilie,
+        data:Margarita,
+        data:Sophie,
+        data:Theodora ;
+    :hasDeathYear 1969 ;
+    :hasFather data:PrinceLouisOfBattenberg ;
+    :hasMarriageYear 1903 ;
+    :hasMother data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasParent data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :hasRelation data:Cecilie,
+        data:George,
+        data:KingCharlesIII,
+        data:Louis,
+        data:Louise,
+        data:Margarita,
+        data:PrinceAndrewOfGreeceAndDenmark,
+        data:PrinceLouisOfBattenberg,
+        data:PrincePhilip,
+        data:PrincessAliceOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine,
+        data:QueenElizabethII,
+        data:Sophie,
+        data:Theodora ;
+    :hasSister data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :hasSon data:PrincePhilip ;
+    :isAncestorOf data:Cecilie,
+        data:KingCharlesIII,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isAuntOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isBloodrelationOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :isChildOf data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :isDaughterOf data:PrinceLouisOfBattenberg,
+        data:PrincessVictoriaOfHesseAndByRhine ;
+    :isMotherOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isParentOf data:Cecilie,
+        data:Margarita,
+        data:PrincePhilip,
+        data:Sophie,
+        data:Theodora ;
+    :isSiblingOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg ;
+    :isSisterOf data:George,
+        data:Louis,
+        data:Louise,
+        data:PrincessAliceOfBattenberg .
+

@@ -1,0 +1,189 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:FrederickFrancisIV a :Man,
+        :Person ;
+    :hasBrother data:FrederickFrancisIV ;
+    :hasRelation data:AugustaReussOfKostritz,
+        data:FrederickFrancisII,
+        data:FrederickFrancisIV,
+        data:HenryLXIIIReussOfKostritz,
+        data:HugoOfWindischGraetz,
+        data:LouiseOfMecklenburgSchwerin,
+        data:MarieOfWindischGraetz,
+        data:PaulFrederickOfMecklenburg ;
+    :isBloodrelationOf data:FrederickFrancisIV ;
+    :isBrotherOf data:FrederickFrancisIV ;
+    :isSiblingOf data:FrederickFrancisIV .
+
+data:FrederickFrancisII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:FrederickFrancisII ;
+    :hasChild data:PaulFrederickOfMecklenburg ;
+    :hasRelation data:AugustaReussOfKostritz,
+        data:FrederickFrancisII,
+        data:FrederickFrancisIV,
+        data:HenryLXIIIReussOfKostritz,
+        data:HugoOfWindischGraetz,
+        data:LouiseOfMecklenburgSchwerin,
+        data:MarieOfWindischGraetz,
+        data:PaulFrederickOfMecklenburg ;
+    :hasSon data:PaulFrederickOfMecklenburg ;
+    :isAncestorOf data:PaulFrederickOfMecklenburg ;
+    :isBloodrelationOf data:FrederickFrancisII ;
+    :isBrotherOf data:FrederickFrancisII ;
+    :isFatherOf data:PaulFrederickOfMecklenburg ;
+    :isParentOf data:PaulFrederickOfMecklenburg ;
+    :isSiblingOf data:FrederickFrancisII ;
+    :isUncleOf data:PaulFrederickOfMecklenburg .
+
+data:HugoOfWindischGraetz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:HugoOfWindischGraetz ;
+    :hasChild data:MarieOfWindischGraetz ;
+    :hasDaughter data:MarieOfWindischGraetz ;
+    :hasRelation data:AugustaReussOfKostritz,
+        data:FrederickFrancisII,
+        data:FrederickFrancisIV,
+        data:HenryLXIIIReussOfKostritz,
+        data:HugoOfWindischGraetz,
+        data:LouiseOfMecklenburgSchwerin,
+        data:MarieOfWindischGraetz,
+        data:PaulFrederickOfMecklenburg ;
+    :isAncestorOf data:MarieOfWindischGraetz ;
+    :isBloodrelationOf data:HugoOfWindischGraetz ;
+    :isBrotherOf data:HugoOfWindischGraetz ;
+    :isFatherOf data:MarieOfWindischGraetz ;
+    :isParentOf data:MarieOfWindischGraetz ;
+    :isSiblingOf data:HugoOfWindischGraetz ;
+    :isUncleOf data:MarieOfWindischGraetz .
+
+data:LouiseOfMecklenburgSchwerin a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MarieOfWindischGraetz ;
+    :hasDaughter data:MarieOfWindischGraetz ;
+    :hasRelation data:AugustaReussOfKostritz,
+        data:FrederickFrancisII,
+        data:FrederickFrancisIV,
+        data:HenryLXIIIReussOfKostritz,
+        data:HugoOfWindischGraetz,
+        data:LouiseOfMecklenburgSchwerin,
+        data:MarieOfWindischGraetz,
+        data:PaulFrederickOfMecklenburg ;
+    :hasSister data:LouiseOfMecklenburgSchwerin ;
+    :isAncestorOf data:MarieOfWindischGraetz ;
+    :isAuntOf data:MarieOfWindischGraetz ;
+    :isBloodrelationOf data:LouiseOfMecklenburgSchwerin ;
+    :isMotherOf data:MarieOfWindischGraetz ;
+    :isParentOf data:MarieOfWindischGraetz ;
+    :isSiblingOf data:LouiseOfMecklenburgSchwerin ;
+    :isSisterOf data:LouiseOfMecklenburgSchwerin .
+
+data:HenryLXIIIReussOfKostritz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:HenryLXIIIReussOfKostritz ;
+    :hasChild data:AugustaReussOfKostritz ;
+    :hasDaughter data:AugustaReussOfKostritz ;
+    :hasRelation data:AugustaReussOfKostritz,
+        data:FrederickFrancisII,
+        data:FrederickFrancisIV,
+        data:HenryLXIIIReussOfKostritz,
+        data:HugoOfWindischGraetz,
+        data:LouiseOfMecklenburgSchwerin,
+        data:MarieOfWindischGraetz,
+        data:PaulFrederickOfMecklenburg ;
+    :isAncestorOf data:AugustaReussOfKostritz,
+        data:PaulFrederickOfMecklenburg ;
+    :isBloodrelationOf data:HenryLXIIIReussOfKostritz ;
+    :isBrotherOf data:HenryLXIIIReussOfKostritz ;
+    :isFatherOf data:AugustaReussOfKostritz ;
+    :isParentOf data:AugustaReussOfKostritz ;
+    :isSiblingOf data:HenryLXIIIReussOfKostritz ;
+    :isUncleOf data:AugustaReussOfKostritz .
+
+data:AugustaReussOfKostritz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:HenryLXIIIReussOfKostritz ;
+    :hasChild data:PaulFrederickOfMecklenburg ;
+    :hasFather data:HenryLXIIIReussOfKostritz ;
+    :hasParent data:HenryLXIIIReussOfKostritz ;
+    :hasRelation data:AugustaReussOfKostritz,
+        data:FrederickFrancisII,
+        data:FrederickFrancisIV,
+        data:HenryLXIIIReussOfKostritz,
+        data:HugoOfWindischGraetz,
+        data:LouiseOfMecklenburgSchwerin,
+        data:MarieOfWindischGraetz,
+        data:PaulFrederickOfMecklenburg ;
+    :hasSister data:AugustaReussOfKostritz ;
+    :hasSon data:PaulFrederickOfMecklenburg ;
+    :isAncestorOf data:PaulFrederickOfMecklenburg ;
+    :isAuntOf data:PaulFrederickOfMecklenburg ;
+    :isBloodrelationOf data:AugustaReussOfKostritz ;
+    :isChildOf data:HenryLXIIIReussOfKostritz ;
+    :isDaughterOf data:HenryLXIIIReussOfKostritz ;
+    :isMotherOf data:PaulFrederickOfMecklenburg ;
+    :isParentOf data:PaulFrederickOfMecklenburg ;
+    :isSiblingOf data:AugustaReussOfKostritz ;
+    :isSisterOf data:AugustaReussOfKostritz .
+
+data:MarieOfWindischGraetz a :Person,
+        :Woman ;
+    :hasAncestor data:HugoOfWindischGraetz,
+        data:LouiseOfMecklenburgSchwerin ;
+    :hasFather data:HugoOfWindischGraetz ;
+    :hasMother data:LouiseOfMecklenburgSchwerin ;
+    :hasParent data:HugoOfWindischGraetz,
+        data:LouiseOfMecklenburgSchwerin ;
+    :hasRelation data:AugustaReussOfKostritz,
+        data:FrederickFrancisII,
+        data:FrederickFrancisIV,
+        data:HenryLXIIIReussOfKostritz,
+        data:HugoOfWindischGraetz,
+        data:LouiseOfMecklenburgSchwerin,
+        data:MarieOfWindischGraetz,
+        data:PaulFrederickOfMecklenburg ;
+    :hasSister data:MarieOfWindischGraetz ;
+    :isBloodrelationOf data:MarieOfWindischGraetz ;
+    :isChildOf data:HugoOfWindischGraetz,
+        data:LouiseOfMecklenburgSchwerin ;
+    :isDaughterOf data:HugoOfWindischGraetz,
+        data:LouiseOfMecklenburgSchwerin ;
+    :isSiblingOf data:MarieOfWindischGraetz ;
+    :isSisterOf data:MarieOfWindischGraetz .
+
+data:PaulFrederickOfMecklenburg a :Man,
+        :Person ;
+    :hasAncestor data:AugustaReussOfKostritz,
+        data:FrederickFrancisII,
+        data:HenryLXIIIReussOfKostritz ;
+    :hasBirthYear 1852 ;
+    :hasBrother data:PaulFrederickOfMecklenburg ;
+    :hasDeathYear 1923 ;
+    :hasFather data:FrederickFrancisII ;
+    :hasMarriageYear 1881 ;
+    :hasMother data:AugustaReussOfKostritz ;
+    :hasParent data:AugustaReussOfKostritz,
+        data:FrederickFrancisII ;
+    :hasRelation data:AugustaReussOfKostritz,
+        data:FrederickFrancisII,
+        data:FrederickFrancisIV,
+        data:HenryLXIIIReussOfKostritz,
+        data:HugoOfWindischGraetz,
+        data:LouiseOfMecklenburgSchwerin,
+        data:MarieOfWindischGraetz,
+        data:PaulFrederickOfMecklenburg ;
+    :isBloodrelationOf data:PaulFrederickOfMecklenburg ;
+    :isBrotherOf data:PaulFrederickOfMecklenburg ;
+    :isChildOf data:AugustaReussOfKostritz,
+        data:FrederickFrancisII ;
+    :isSiblingOf data:PaulFrederickOfMecklenburg ;
+    :isSonOf data:AugustaReussOfKostritz,
+        data:FrederickFrancisII .
+

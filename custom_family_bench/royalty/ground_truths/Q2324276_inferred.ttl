@@ -1,0 +1,102 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Chantal-_Duchess_of_Castro a :Person,
+        :Woman ;
+    rdfs:label "Princess Chantal, Duchess of Castro"^^xsd:string ;
+    data:posIndicesFull "411:438"^^xsd:string ;
+    data:wdtLink wdt:Q3666240 ;
+    :alsoKnownAs "Chantal Françoise Marie Camille de Chevron-Villette"^^xsd:string,
+        "Chantal de Chevron-Villette"^^xsd:string ;
+    :hasRelation data:Princess_Chantal-_Duchess_of_Castro ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Chantal-_Duchess_of_Castro ;
+    :isBloodrelationOf data:Princess_Chantal-_Duchess_of_Castro ;
+    :isSiblingOf data:Princess_Chantal-_Duchess_of_Castro ;
+    :isSisterOf data:Princess_Chantal-_Duchess_of_Castro .
+
+data:Countess_Maria_Carolina_Zamoyska a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Countess Maria Carolina Zamoyska"^^xsd:string ;
+    data:posIndicesFull "305:337"^^xsd:string ;
+    data:wdtLink wdt:Q3847184 ;
+    :hasChild data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasSex data:female ;
+    :hasSister data:Countess_Maria_Carolina_Zamoyska ;
+    :hasSon data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isAncestorOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isAuntOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isBloodrelationOf data:Countess_Maria_Carolina_Zamoyska ;
+    :isMotherOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isParentOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isSiblingOf data:Countess_Maria_Carolina_Zamoyska ;
+    :isSisterOf data:Countess_Maria_Carolina_Zamoyska .
+
+data:Prince_Ranieri-_Duke_of_Castro a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Ranieri, Duke of Castro"^^xsd:string ;
+    data:posIndicesFull "260:290"^^xsd:string ;
+    data:wdtLink wdt:Q1943652 ;
+    :hasBrother data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasChild data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isAncestorOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isBloodrelationOf data:Prince_Ranieri-_Duke_of_Castro ;
+    :isBrotherOf data:Prince_Ranieri-_Duke_of_Castro ;
+    :isFatherOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isParentOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isSiblingOf data:Prince_Ranieri-_Duke_of_Castro ;
+    :isUncleOf data:Prince_Ferdinando-_Duke_of_Castro .
+
+data:Prince_Ferdinando-_Duke_of_Castro a :Man,
+        :Person ;
+    rdfs:label "Prince Ferdinando, Duke of Castro"^^xsd:string ;
+    data:posIndicesFull "58:74"^^xsd:string,
+        "58:96"^^xsd:string ;
+    data:wdtLink wdt:Q2324276 ;
+    :alsoKnownAs "Ferdinando Maria"^^xsd:string,
+        "Ferdinando Maria Andrea Alfonso Marcus"^^xsd:string ;
+    :hasAncestor data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasBrother data:Prince_Ferdinando-_Duke_of_Castro ;
+    :hasFather data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasMother data:Countess_Maria_Carolina_Zamoyska ;
+    :hasParent data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasRelation data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ferdinando-_Duke_of_Castro,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isBrotherOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isChildOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ranieri-_Duke_of_Castro ;
+    :isSiblingOf data:Prince_Ferdinando-_Duke_of_Castro ;
+    :isSonOf data:Countess_Maria_Carolina_Zamoyska,
+        data:Prince_Ranieri-_Duke_of_Castro .
+

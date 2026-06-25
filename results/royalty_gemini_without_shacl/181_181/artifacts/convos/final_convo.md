@@ -69,19 +69,28 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Maria Immaculata Cristina Pia Isabella of Bourbon-Two Sicilies (Full Italian name: Maria Immacolata Speranza Pia Teresa Cristina Filomena Lucia Anna Isabella Cecilia Apollonia Barbara Agnese Zenobia, Principessa di Borbone delle
-Due Sicilie,) (30 October 1874 – 28 November 1947) was the fourth child and eldest daughter of Prince Alfonso of Bourbon-Two Sicilies, Count of Caserta, and his wife Princess Maria Antonietta of Bourbon-Two Sicilies.
-Marriage
+Prince Karl Adolf Andreas Prinz von Hesse (German: Karl Adolf Andreas Prinz Von Hessen; 26 March 1937 – 23 March 2022) was a member of the German electoral House of Hesse-Kassel.
+He was a first cousin of King Charles III of the United Kingdom through his uncle Prince Philip.
+Early life and ancestry
 
-Maria Immaculata married Prince Johann Georg of Saxony, sixth child and second-eldest son of George of Saxony and his wife Maria Anna of Portugal, on 30 October 1906 in Cannes.
-Her mother-in-law, Maria Anna, was the daughter of Maria II of Portugal and her husband Ferdinand II of Portugal.
-The couple did not have children, but Maria Immaculata cared for the children of her brother-in-law Frederick Augustus III of Saxony.
+Born on 26  March 1937 in Berlin, into an elder line of the House of Hesse, a house directly descended from the House of Brabant, Karl Adolf Andreas was the eldest son of Prince Christoph of Hesse and his wife, Princess Sophie of Greece and Denmark, youngest sister of Prince Philip, Duke of Edinburgh.
+In 1946, his mother was married again to Prince George William of Hanover, maternal grandson of Wilhelm II.
+Orphaned by his father at an early age, Karl was later adopted by one of his paternal uncles, Prince Wolfgang of Hesse, in 1952.
+Related to most European dynasties, Karl participated in the major events of the gotha.
+In 1954, he and his family were invited to take part in the Cruise of the Kings, organized by King Paul of Greece and his wife Queen Frederica.
+Karl briefly discussed his mother's childhood and her ties to the Nazi regime in a documentary in 2015 about his uncle, Prince Philip:
+Death
+
+Prince Karl of Hesse died in Munich, at the age of 84 years, on March 23, 2022.
+}} Media related to Karl Adolf Andreas of Hesse at Wikimedia Commons
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -97,39 +106,9 @@ The couple did not have children, but Maria Immaculata cared for the children of
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -144,6 +123,23 @@ The couple did not have children, but Maria Immaculata cared for the children of
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -161,6 +157,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -228,29 +239,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -259,6 +262,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -271,6 +282,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -279,17 +292,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -317,6 +332,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -332,185 +431,147 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (12d23385-5c38-4eea-99bf-220c280c8ae5)
- Call ID: 12d23385-5c38-4eea-99bf-220c280c8ae5
+  AssignClass (edbb221f-d263-4caf-825e-64672619a605)
+ Call ID: edbb221f-d263-4caf-825e-64672619a605
   Args:
-    type: :Woman
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-  AssignClass (75601a23-090e-4cd5-ba4d-dd24dc04d88a)
- Call ID: 75601a23-090e-4cd5-ba4d-dd24dc04d88a
+    type: :Man
+    source: :KarlAdolfAndreasOfHesse
+  AssignClass (895ff726-f668-45ca-becf-d6d6601e0ac7)
+ Call ID: 895ff726-f668-45ca-becf-d6d6601e0ac7
   Args:
     type: :Person
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-  AddLiteral (c427b8e6-d720-41e4-997f-2e18f40669b2)
- Call ID: c427b8e6-d720-41e4-997f-2e18f40669b2
+    source: :KarlAdolfAndreasOfHesse
+  AddLiteral (17c0adbe-43aa-44c8-b28b-fb1f5e501acd)
+ Call ID: 17c0adbe-43aa-44c8-b28b-fb1f5e501acd
   Args:
+    source: :KarlAdolfAndreasOfHesse
+    literal_value: 1937
     literal_type: xsd:integer
     relation: :hasBirthYear
-    literal_value: 1874
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-  AddLiteral (5536c176-d230-4ed0-8f52-10d0924cd0ea)
- Call ID: 5536c176-d230-4ed0-8f52-10d0924cd0ea
+  AddLiteral (d224fd82-a314-4aa4-823b-1bc4ccc98260)
+ Call ID: d224fd82-a314-4aa4-823b-1bc4ccc98260
   Args:
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-    literal_value: 1947
+    literal_value: 2022
+    literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_type: xsd:integer
-  AssignClass (3b24db7b-ea36-4e7c-b58a-1d94d1836a2d)
- Call ID: 3b24db7b-ea36-4e7c-b58a-1d94d1836a2d
+    source: :KarlAdolfAndreasOfHesse
+  AssignClass (a6e0e23d-e722-4f8d-aa1b-1b66025e3770)
+ Call ID: a6e0e23d-e722-4f8d-aa1b-1b66025e3770
   Args:
+    source: :PrinceChristophOfHesse
     type: :Man
-    source: Alfonso_of_Bourbon-Two_Sicilies
-  AssignClass (7234e855-5020-4c87-9b46-64f81fd62571)
- Call ID: 7234e855-5020-4c87-9b46-64f81fd62571
+  AssignClass (20912adb-a074-4e9e-a92f-596ae91e104c)
+ Call ID: 20912adb-a074-4e9e-a92f-596ae91e104c
   Args:
     type: :Person
-    source: Alfonso_of_Bourbon-Two_Sicilies
-  AssignClass (217628f8-51a5-4376-9d20-4302aed060b1)
- Call ID: 217628f8-51a5-4376-9d20-4302aed060b1
+    source: :PrinceChristophOfHesse
+  AssignClass (55117533-bcb3-44ae-8bae-daa1007c4532)
+ Call ID: 55117533-bcb3-44ae-8bae-daa1007c4532
   Args:
-    type: :Ancestor
-    source: Alfonso_of_Bourbon-Two_Sicilies
-  AssignClass (b88fe6f0-4634-41ad-a5ae-d9ebb2449d35)
- Call ID: b88fe6f0-4634-41ad-a5ae-d9ebb2449d35
-  Args:
+    source: :PrincessSophieOfGreeceAndDenmark
     type: :Woman
-    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (43e29ded-2840-46f5-bf54-aeea2fc86d70)
- Call ID: 43e29ded-2840-46f5-bf54-aeea2fc86d70
+  AssignClass (c59bbaa0-2502-45d0-9fe8-95b619b2859b)
+ Call ID: c59bbaa0-2502-45d0-9fe8-95b619b2859b
   Args:
     type: :Person
-    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (40145c6b-9b94-455e-aa47-10fc00ac5909)
- Call ID: 40145c6b-9b94-455e-aa47-10fc00ac5909
+    source: :PrincessSophieOfGreeceAndDenmark
+  AddTriple (31c844e9-f3e5-4a46-a897-d8ff7b9443db)
+ Call ID: 31c844e9-f3e5-4a46-a897-d8ff7b9443db
   Args:
-    type: :Ancestor
-    source: Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AddTriple (29abc5cc-53e6-4e3c-a467-64db9824af28)
- Call ID: 29abc5cc-53e6-4e3c-a467-64db9824af28
-  Args:
+    source: :KarlAdolfAndreasOfHesse
     relation: :hasFather
-    target: Alfonso_of_Bourbon-Two_Sicilies
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-  AddTriple (3eeb617c-c47d-434a-872c-57117f51eb20)
- Call ID: 3eeb617c-c47d-434a-872c-57117f51eb20
+    target: :PrinceChristophOfHesse
+  AddTriple (5e446d11-982a-45bf-81dc-c57ed3d20b98)
+ Call ID: 5e446d11-982a-45bf-81dc-c57ed3d20b98
   Args:
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
+    source: :KarlAdolfAndreasOfHesse
+    target: :PrincessSophieOfGreeceAndDenmark
     relation: :hasMother
-    target: Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (f5c527de-11e2-4434-b34f-22615a1d4f44)
- Call ID: f5c527de-11e2-4434-b34f-22615a1d4f44
+  AssignClass (2bf9d775-508f-442d-a2e3-018bd236e731)
+ Call ID: 2bf9d775-508f-442d-a2e3-018bd236e731
+  Args:
+    source: :PrincePhilipDukeOfEdinburgh
+    type: :Man
+  AssignClass (09d723d6-f721-4f0e-8dce-5fe20b20ecbf)
+ Call ID: 09d723d6-f721-4f0e-8dce-5fe20b20ecbf
+  Args:
+    type: :Person
+    source: :PrincePhilipDukeOfEdinburgh
+  AddTriple (3a1c6264-6a05-45b0-b429-6c9c1826d7dc)
+ Call ID: 3a1c6264-6a05-45b0-b429-6c9c1826d7dc
+  Args:
+    relation: :isSisterOf
+    target: :PrincePhilipDukeOfEdinburgh
+    source: :PrincessSophieOfGreeceAndDenmark
+  AssignClass (a158b0c2-9f9a-4ea3-aa29-157f721e8801)
+ Call ID: a158b0c2-9f9a-4ea3-aa29-157f721e8801
   Args:
     type: :Man
-    source: Johann_Georg_of_Saxony
-  AssignClass (85d4f6db-fb72-4794-a60e-c6457e41da74)
- Call ID: 85d4f6db-fb72-4794-a60e-c6457e41da74
+    source: :PrinceWolfgangOfHesse
+  AssignClass (ed7fb145-d8ee-4e64-bb04-19d34383273a)
+ Call ID: ed7fb145-d8ee-4e64-bb04-19d34383273a
   Args:
+    source: :PrinceWolfgangOfHesse
     type: :Person
-    source: Johann_Georg_of_Saxony
-  AddLiteral (77622478-6760-48a2-a4df-c66a1b04c818)
- Call ID: 77622478-6760-48a2-a4df-c66a1b04c818
+  AddTriple (23d1b632-3735-42c1-8870-66f9d3782492)
+ Call ID: 23d1b632-3735-42c1-8870-66f9d3782492
   Args:
+    target: :PrinceChristophOfHesse
+    relation: :isBrotherOf
+    source: :PrinceWolfgangOfHesse
+  AssignClass (dee5f83c-2b65-4db5-afb2-79a41171eecd)
+ Call ID: dee5f83c-2b65-4db5-afb2-79a41171eecd
+  Args:
+    source: :PrinceGeorgeWilliamOfHanover
+    type: :Man
+  AssignClass (92bd2844-567a-44f0-8be3-a595f2c82fdb)
+ Call ID: 92bd2844-567a-44f0-8be3-a595f2c82fdb
+  Args:
+    source: :PrinceGeorgeWilliamOfHanover
+    type: :Person
+  AddLiteral (13b829e0-582c-4733-b9a9-fa2791176e52)
+ Call ID: 13b829e0-582c-4733-b9a9-fa2791176e52
+  Args:
+    literal_value: 1946
+    literal_type: xsd:integer
     relation: :hasMarriageYear
-    literal_type: xsd:integer
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-    literal_value: 1906
-  AddTriple (0f3fa85e-0da6-411d-816a-21ac18423d61)
- Call ID: 0f3fa85e-0da6-411d-816a-21ac18423d61
+    source: :PrincessSophieOfGreeceAndDenmark
+  AddTriple (03b76e99-e6b2-455f-a85b-93b1ce62f8b0)
+ Call ID: 03b76e99-e6b2-455f-a85b-93b1ce62f8b0
   Args:
+    target: :PrinceGeorgeWilliamOfHanover
     relation: :hasRelation
-    target: Johann_Georg_of_Saxony
-    source: Maria_Immaculata_of_Bourbon-Two_Sicilies
-  AssignClass (664ad7a9-fd0d-4a77-8854-8095a33b7b56)
- Call ID: 664ad7a9-fd0d-4a77-8854-8095a33b7b56
+    source: :PrincessSophieOfGreeceAndDenmark
+  AssignClass (33e1aec7-3876-49e2-9898-ead3aaad66e9)
+ Call ID: 33e1aec7-3876-49e2-9898-ead3aaad66e9
   Args:
     type: :Man
-    source: George_of_Saxony
-  AssignClass (e4494824-7c0a-4ab2-bf0e-96dcfdba7ca4)
- Call ID: e4494824-7c0a-4ab2-bf0e-96dcfdba7ca4
+    source: :KingPaulOfGreece
+  AssignClass (104545c7-7a86-4f19-a478-73fbe90c016d)
+ Call ID: 104545c7-7a86-4f19-a478-73fbe90c016d
   Args:
     type: :Person
-    source: George_of_Saxony
-  AssignClass (4cceacbd-9932-4843-a9b5-3ece8eb28eae)
- Call ID: 4cceacbd-9932-4843-a9b5-3ece8eb28eae
+    source: :KingPaulOfGreece
+  AssignClass (614506fd-01a8-4c81-913f-66ecd718212a)
+ Call ID: 614506fd-01a8-4c81-913f-66ecd718212a
   Args:
     type: :Woman
-    source: Maria_Anna_of_Portugal
-  AssignClass (13278e03-9f5a-439d-869b-c9f54597770f)
- Call ID: 13278e03-9f5a-439d-869b-c9f54597770f
+    source: :QueenFrederica
+  AssignClass (58df755c-f3f4-4001-bcf8-c70c9837aac3)
+ Call ID: 58df755c-f3f4-4001-bcf8-c70c9837aac3
   Args:
     type: :Person
-    source: Maria_Anna_of_Portugal
-  AddTriple (b6e6134f-0b33-479d-a38f-cd1ca3018d0a)
- Call ID: b6e6134f-0b33-479d-a38f-cd1ca3018d0a
+    source: :QueenFrederica
+  AssignClass (49a747cb-64f5-42be-a85c-100329ec1e1d)
+ Call ID: 49a747cb-64f5-42be-a85c-100329ec1e1d
   Args:
-    relation: :hasFather
-    target: George_of_Saxony
-    source: Johann_Georg_of_Saxony
-  AddTriple (f360496a-7696-452a-b0cc-8b70f01bafc3)
- Call ID: f360496a-7696-452a-b0cc-8b70f01bafc3
-  Args:
-    source: Johann_Georg_of_Saxony
-    target: Maria_Anna_of_Portugal
-    relation: :hasMother
-  AssignClass (9fcb0172-94cf-492a-9e23-b5de4962a391)
- Call ID: 9fcb0172-94cf-492a-9e23-b5de4962a391
-  Args:
-    type: :Woman
-    source: Maria_II_of_Portugal
-  AssignClass (25b8bbb9-ffab-44d8-882f-48e67b86c495)
- Call ID: 25b8bbb9-ffab-44d8-882f-48e67b86c495
-  Args:
-    type: :Person
-    source: Maria_II_of_Portugal
-  AssignClass (76db8187-a64a-4ecf-9f4d-7aed295ef204)
- Call ID: 76db8187-a64a-4ecf-9f4d-7aed295ef204
-  Args:
-    type: :Ancestor
-    source: Maria_II_of_Portugal
-  AssignClass (40cb81c9-5067-4302-8e7d-8cec53e9d078)
- Call ID: 40cb81c9-5067-4302-8e7d-8cec53e9d078
-  Args:
+    source: :KingCharlesIII
     type: :Man
-    source: Ferdinand_II_of_Portugal
-  AssignClass (4744be50-a6c8-409f-9e6d-f1db023d5e86)
- Call ID: 4744be50-a6c8-409f-9e6d-f1db023d5e86
+  AssignClass (5ee4df64-ca5a-45aa-8d99-1ed75df39ff4)
+ Call ID: 5ee4df64-ca5a-45aa-8d99-1ed75df39ff4
   Args:
+    source: :KingCharlesIII
     type: :Person
-    source: Ferdinand_II_of_Portugal
-  AssignClass (c51efe5d-09b3-4199-8222-6e93e6b09638)
- Call ID: c51efe5d-09b3-4199-8222-6e93e6b09638
-  Args:
-    type: :Ancestor
-    source: Ferdinand_II_of_Portugal
-  AddTriple (a0e614c8-7b48-4456-a6a7-dc5712269a80)
- Call ID: a0e614c8-7b48-4456-a6a7-dc5712269a80
-  Args:
-    source: Maria_Anna_of_Portugal
-    target: Maria_II_of_Portugal
-    relation: :hasMother
-  AddTriple (1a97cccd-aafe-4b3c-9b97-c575c93853a4)
- Call ID: 1a97cccd-aafe-4b3c-9b97-c575c93853a4
-  Args:
-    target: Ferdinand_II_of_Portugal
-    relation: :hasFather
-    source: Maria_Anna_of_Portugal
-  AssignClass (8df0c386-2e64-4740-98ed-a2727733f140)
- Call ID: 8df0c386-2e64-4740-98ed-a2727733f140
-  Args:
-    type: :Man
-    source: Frederick_Augustus_III_of_Saxony
-  AssignClass (60c18bad-c5a5-437c-9aa7-22f105f9a2cf)
- Call ID: 60c18bad-c5a5-437c-9aa7-22f105f9a2cf
-  Args:
-    type: :Person
-    source: Frederick_Augustus_III_of_Saxony
-  AddTriple (d98e650a-5a9c-4f5d-90fb-59d60a9d76d3)
- Call ID: d98e650a-5a9c-4f5d-90fb-59d60a9d76d3
-  Args:
-    source: Johann_Georg_of_Saxony
-    target: Frederick_Augustus_III_of_Saxony
-    relation: :hasBrother
-  Finish (87648140-6894-4c33-b250-7085d4f114d6)
- Call ID: 87648140-6894-4c33-b250-7085d4f114d6
+  Finish (cbdcc5ad-421f-47f2-9ea1-d166b0c5cb74)
+ Call ID: cbdcc5ad-421f-47f2-9ea1-d166b0c5cb74
   Args:

@@ -2,52 +2,71 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Georg_Friedrich_Prinz_von_Preussen a :Man,
+data:Leopold_IV_Prince_of_Lippe a :Man,
         :Person ;
-    :hasAncestor data:Prince_Louis_Ferdinand_of_Prussia,
-        data:Wilhelm_II ;
-    :hasBirthYear 1976 ;
-    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;
-    :hasMarriageYear 2011 ;
-    :hasMother data:Donata_of_Castell-R%C3%BCdenhausen ;
-    :hasRelation data:Sophie_of_Isenburg ;
-    :hasSon data:Carl_Friedrich_Franz_Alexander,
-        data:Heinrich_Albert_Johann_Georg,
-        data:Louis_Ferdinand_Christian_Albrecht .
+    :hasSex data:Male .
 
-data:Carl_Friedrich_Franz_Alexander a :Man,
+data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
         :Person ;
-    :hasMother data:Sophie_of_Isenburg .
+    :hasBirthYear 1911 ;
+    :hasChild data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Prince_Bernhard_of_Lippe ;
+    :hasMarriageYear 1937 ;
+    :hasMother data:Baroness_Armgard_von_Sierstorpff-Cramm ;
+    :hasRelation data:Queen_Juliana_of_the_Netherlands ;
+    :hasSex data:Male .
 
-data:Donata_of_Castell-R%C3%BCdenhausen a :Ancestor,
+data:Baroness_Armgard_von_Sierstorpff-Cramm a :Ancestor,
         :Person,
         :Woman ;
-    :hasBirthYear 1950 ;
-    :hasDeathYear 2015 .
+    :hasSex data:Female .
 
-data:Heinrich_Albert_Johann_Georg a :Man,
-        :Person ;
-    :hasMother data:Sophie_of_Isenburg .
-
-data:Louis_Ferdinand_Christian_Albrecht a :Man,
-        :Person ;
-    :hasMother data:Sophie_of_Isenburg .
-
-data:Louis_Ferdinand_Prinz_von_Preussen a :Ancestor,
+data:Ernest_Count_of_Lippe-Biesterfeld a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear 1944 ;
-    :hasDeathYear 1977 .
+    :hasSex data:Male .
 
-data:Prince_Louis_Ferdinand_of_Prussia a :Ancestor,
+data:Prince_Bernhard_of_Lippe a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :hasFather data:Ernest_Count_of_Lippe-Biesterfeld ;
+    :hasSex data:Male .
 
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person .
+data:Queen_Juliana_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasChild data:Princess_Christina_of_the_Netherlands,
+        data:Princess_Irene_of_the_Netherlands,
+        data:Princess_Margriet_of_the_Netherlands,
+        data:Queen_Beatrix_of_the_Netherlands ;
+    :hasMother data:Queen_Wilhelmina_of_the_Netherlands ;
+    :hasSex data:Female .
 
-data:Sophie_of_Isenburg a :Ancestor,
+data:Queen_Wilhelmina_of_the_Netherlands a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasSex data:Female .
+
+data:Princess_Christina_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Princess_Irene_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Princess_Margriet_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Queen_Beatrix_of_the_Netherlands a :Person,
+        :Woman ;
+    :hasSex data:Female .
+
+data:Male a :Sex .
+
+data:Female a :Sex .
 

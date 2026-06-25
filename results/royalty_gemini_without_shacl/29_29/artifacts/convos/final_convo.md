@@ -79,6 +79,7 @@ They have two sons, August and Ernest Brooksbank.
 Early life
 
 Eugenie was born at 7:58 pm on 23 March 1990 at the Portland Hospital in London, where she was delivered by caesarean section, to the then Duke and Duchess of York.
+She is the sixth grandchild of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
 She was baptised Eugenie Victoria Helena at St Mary Magdalene Church, Sandringham, by Peter Nott, Bishop of Norwich, on 23 December, becoming the first royal baby to have a public christening and the only one of the Queen's grandchildren not to be baptised in the Lily Font.
 Eugenie's parents divorced when she was six years old.
 The Duke and Duchess of York agreed to joint custody of their two children.
@@ -95,6 +96,7 @@ In the Channel 5 documentary Beatrice and Eugenie: Pampered Princesses, royal co
 In January 2022, reports emerged that Eugenie lost her taxpayer-funded police security in 2011, reportedly following an intervention by her uncle, Charles III (then Prince of Wales).
 During her gap year, Eugenie's taxpayer‐funded security reportedly cost more than £100,000.
 Charles considered the expense excessive, as Eugenie and Beatrice were unlikely to take on major royal duties.
+The move is said to have angered the Duke, who argued to the Queen that his daughters should be treated as full members of the royal family.
 In July 2023, Eugenie joined the advisory board of Goals House, a community dedicated to advancing the United Nations’ Sustainable Development Goals.
 Marriage and family
 
@@ -103,6 +105,7 @@ The couple had been dating for seven years, having been introduced by friends du
 The wedding took place at St George's Chapel, Windsor Castle, on 12 October 2018.
 Eugenie's wedding dress was designed by the British fashion designer Peter Pilotto and the Belgian Christopher de Vos of British-based label Peter Pilotto, and was created to display the surgical scar on her back.
 Their first child, August Philip Hawke Brooksbank, was born on 9 February 2021 at the Portland Hospital in London, and was delivered by caesarean section due to his mother's childhood scoliosis operation.
+He is named in part after his great-grandfather Prince Philip, Duke of Edinburgh.
 August was christened at the Royal Chapel of All Saints, Windsor Great Park, on 21 November 2021, in a joint ceremony with his second cousin, Lucas Tindall.
 Eugenie gave birth to a second son, Ernest George Ronnie Brooksbank, on 30 May 2023.
 He is named after his great-great-great-grandfather George V. Ernest was born 13th in line to the throne and is now 14th.
@@ -118,7 +121,6 @@ Eugenie became patron of the RNOH Charity in March 2019.
 In January 2013, Eugenie and her sister promoted Britain overseas in Germany.
 In 2016, Eugenie, together with her mother and sister, collaborated with the British contemporary artist Teddy McDonald on a painting titled Royal Love.
 Eugenie and her sister became Patrons of the Teenage Cancer Trust in June 2016.
-She is also Patron of the Coronet Theatre, the European School of Osteopathy, the Tate Young Patrons, and, alongside her mother, the Elephant Family, of which her uncle and aunt, King Charles III and Queen Camilla, are joint presidents.
 In 2016, Eugenie visited a safe house run by The Salvation Army and met with victims of sexual abuse and modern slavery.
 In 2017, Eugenie became the ambassador for the Artemis Council of the New Museum, a by-invitation membership initiative focused on supporting female artists.
 In July 2018, in her capacity as co-founder and director of the Anti-Slavery Collective, Eugenie spoke at the NEXUS Global Summit at the UN headquarters in New York to discuss efforts to end modern slavery.
@@ -139,6 +141,8 @@ Since her marriage, she has been styled "Her Royal Highness Princess Eugenie, Mr
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -154,39 +158,9 @@ Since her marriage, she has been styled "Her Royal Highness Princess Eugenie, Mr
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -201,6 +175,23 @@ Since her marriage, she has been styled "Her Royal Highness Princess Eugenie, Mr
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -218,6 +209,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -285,29 +291,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -316,6 +314,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -328,6 +334,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -336,17 +344,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -374,6 +384,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -389,154 +483,160 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0cd762e8-f6d5-4383-8bd4-2456458c124b)
- Call ID: 0cd762e8-f6d5-4383-8bd4-2456458c124b
+  AssignClass (b1b6813c-2666-4363-b0e5-d0f59a675355)
+ Call ID: b1b6813c-2666-4363-b0e5-d0f59a675355
   Args:
+    source: :Eugenie_Victoria_Helena
+    type: :Person
+  AssignClass (0349b31f-22da-4314-ae57-c69eabdc4787)
+ Call ID: 0349b31f-22da-4314-ae57-c69eabdc4787
+  Args:
+    source: :Eugenie_Victoria_Helena
     type: :Woman
-    source: Princess_Eugenie
-  AssignClass (f35df1a7-7d23-4ec2-a26d-2664c4de09cd)
- Call ID: f35df1a7-7d23-4ec2-a26d-2664c4de09cd
+  AssignClass (90a5225c-8b1a-4536-8c12-c61e7156232a)
+ Call ID: 90a5225c-8b1a-4536-8c12-c61e7156232a
   Args:
+    source: :Andrew_Mountbatten-Windsor
     type: :Person
-    source: Princess_Eugenie
-  AssignClass (85f1b831-11de-4a8b-8254-2b2bdf76bc68)
- Call ID: 85f1b831-11de-4a8b-8254-2b2bdf76bc68
+  AssignClass (ca9baffc-cb07-4d87-aaa2-ce23a0a837b4)
+ Call ID: ca9baffc-cb07-4d87-aaa2-ce23a0a837b4
   Args:
+    source: :Andrew_Mountbatten-Windsor
     type: :Man
-    source: Jack_Brooksbank
-  AssignClass (bc543b7d-607f-4594-8fb4-21f78b4a3b66)
- Call ID: bc543b7d-607f-4594-8fb4-21f78b4a3b66
+  AssignClass (a798e60e-66b7-45a4-99d9-d3e1a5eba380)
+ Call ID: a798e60e-66b7-45a4-99d9-d3e1a5eba380
   Args:
+    source: :Sarah_Ferguson
     type: :Person
-    source: Jack_Brooksbank
-  AssignClass (170df92d-55d0-4d87-ba53-fb316d13c1a5)
- Call ID: 170df92d-55d0-4d87-ba53-fb316d13c1a5
+  AssignClass (8dec8bf8-7948-441c-973b-98e7de92ab8e)
+ Call ID: 8dec8bf8-7948-441c-973b-98e7de92ab8e
   Args:
-    type: :Man
-    source: Andrew_Mountbatten-Windsor
-  AssignClass (7947cf66-c08c-4ac3-9d50-2b4a8b75fbae)
- Call ID: 7947cf66-c08c-4ac3-9d50-2b4a8b75fbae
-  Args:
-    type: :Person
-    source: Andrew_Mountbatten-Windsor
-  AssignClass (f8c3c3d1-1173-45de-95aa-a2c8b1e43ffe)
- Call ID: f8c3c3d1-1173-45de-95aa-a2c8b1e43ffe
-  Args:
+    source: :Sarah_Ferguson
     type: :Woman
-    source: Sarah_Ferguson
-  AssignClass (1c8c525d-9674-4b8f-a518-5b3e9536a15e)
- Call ID: 1c8c525d-9674-4b8f-a518-5b3e9536a15e
+  AssignClass (e3aa726d-5e19-4667-b5f6-b4a5172440b7)
+ Call ID: e3aa726d-5e19-4667-b5f6-b4a5172440b7
   Args:
+    source: :Jack_Brooksbank
     type: :Person
-    source: Sarah_Ferguson
-  AssignClass (fe5ae9e2-96df-4c38-adb8-5d73b22e3360)
- Call ID: fe5ae9e2-96df-4c38-adb8-5d73b22e3360
+  AssignClass (11334ff8-3742-4100-8f7d-5a7d14a4bf6d)
+ Call ID: 11334ff8-3742-4100-8f7d-5a7d14a4bf6d
   Args:
+    source: :Jack_Brooksbank
     type: :Man
-    source: King_Charles_III
-  AssignClass (66efb0b0-e585-457a-a4b2-8a907619d240)
- Call ID: 66efb0b0-e585-457a-a4b2-8a907619d240
+  AssignClass (e94cd22d-e004-416a-9d3b-f8775fcb0c5b)
+ Call ID: e94cd22d-e004-416a-9d3b-f8775fcb0c5b
   Args:
+    source: :August_Brooksbank
     type: :Person
-    source: King_Charles_III
-  AssignClass (e6de9f44-4472-4b64-aee1-0b9abeac6562)
- Call ID: e6de9f44-4472-4b64-aee1-0b9abeac6562
+  AssignClass (d5f04584-4109-4adb-bb55-ae7407405088)
+ Call ID: d5f04584-4109-4adb-bb55-ae7407405088
   Args:
+    source: :August_Brooksbank
     type: :Man
-    source: August_Brooksbank
-  AssignClass (189936da-3dc1-4504-870d-399dde8bf777)
- Call ID: 189936da-3dc1-4504-870d-399dde8bf777
+  AssignClass (c0bcae1f-7459-4a79-886c-c5b00f6597ef)
+ Call ID: c0bcae1f-7459-4a79-886c-c5b00f6597ef
   Args:
+    source: :Ernest_Brooksbank
     type: :Person
-    source: August_Brooksbank
-  AssignClass (74a323b3-0dcb-4ef2-9787-2a5155029268)
- Call ID: 74a323b3-0dcb-4ef2-9787-2a5155029268
+  AssignClass (035c775a-518f-4d5d-b1c5-2bd8007c89ca)
+ Call ID: 035c775a-518f-4d5d-b1c5-2bd8007c89ca
   Args:
+    source: :Ernest_Brooksbank
     type: :Man
-    source: Ernest_Brooksbank
-  AssignClass (6d1c6a4f-5842-4ba5-88aa-77c2b160f0f6)
- Call ID: 6d1c6a4f-5842-4ba5-88aa-77c2b160f0f6
+  AssignClass (08c99164-6e88-4f88-86e6-f9ad855e9c85)
+ Call ID: 08c99164-6e88-4f88-86e6-f9ad855e9c85
   Args:
+    source: :Beatrice
     type: :Person
-    source: Ernest_Brooksbank
-  AssignClass (36ec0ff6-e137-464b-861e-a0a5b1761d7f)
- Call ID: 36ec0ff6-e137-464b-861e-a0a5b1761d7f
+  AssignClass (75afb1e1-54b5-44b5-bd31-b66716053147)
+ Call ID: 75afb1e1-54b5-44b5-bd31-b66716053147
   Args:
+    source: :Beatrice
     type: :Woman
-    source: Beatrice
-  AssignClass (5c23eecf-5827-4196-a645-92d48330c63f)
- Call ID: 5c23eecf-5827-4196-a645-92d48330c63f
+  AssignClass (de00b004-9c1b-43be-975d-1a8ab1f4c62f)
+ Call ID: de00b004-9c1b-43be-975d-1a8ab1f4c62f
   Args:
+    source: :Charles_III
     type: :Person
-    source: Beatrice
-  AddLiteral (8fbf3f12-d0c5-4bd4-800f-aca5a167fa3a)
- Call ID: 8fbf3f12-d0c5-4bd4-800f-aca5a167fa3a
+  AssignClass (47599b78-7a73-4ea4-9c86-dacd818a85d7)
+ Call ID: 47599b78-7a73-4ea4-9c86-dacd818a85d7
   Args:
+    source: :Charles_III
+    type: :Man
+  AddLiteral (15cab8fa-a532-496e-b5c9-dcd6a47558ab)
+ Call ID: 15cab8fa-a532-496e-b5c9-dcd6a47558ab
+  Args:
+    literal_value: 1990
     literal_type: xsd:integer
     relation: :hasBirthYear
-    source: Princess_Eugenie
-    literal_value: 1990
-  AddTriple (b46af7e0-41bb-4707-a882-4813b89ec5b5)
- Call ID: b46af7e0-41bb-4707-a882-4813b89ec5b5
+    source: :Eugenie_Victoria_Helena
+  AddTriple (d693c24c-e88a-444b-ab3e-4a937a6aa0ef)
+ Call ID: d693c24c-e88a-444b-ab3e-4a937a6aa0ef
   Args:
-    source: Princess_Eugenie
-    target: Andrew_Mountbatten-Windsor
+    target: :Andrew_Mountbatten-Windsor
+    source: :Eugenie_Victoria_Helena
     relation: :hasFather
-  AddTriple (90b28846-763f-4e2c-a604-1aa621885fdd)
- Call ID: 90b28846-763f-4e2c-a604-1aa621885fdd
+  AddTriple (8e4f4521-b54c-45d3-a014-9e45b8981b01)
+ Call ID: 8e4f4521-b54c-45d3-a014-9e45b8981b01
   Args:
     relation: :hasMother
-    target: Sarah_Ferguson
-    source: Princess_Eugenie
-  AddTriple (ab85e973-e0a3-4a17-a07a-6d6db19d73cc)
- Call ID: ab85e973-e0a3-4a17-a07a-6d6db19d73cc
+    source: :Eugenie_Victoria_Helena
+    target: :Sarah_Ferguson
+  AddTriple (5be79947-a0bd-438a-b480-c659fe2fbd2d)
+ Call ID: 5be79947-a0bd-438a-b480-c659fe2fbd2d
   Args:
+    target: :Jack_Brooksbank
+    source: :August_Brooksbank
     relation: :hasFather
-    target: Jack_Brooksbank
-    source: August_Brooksbank
-  AddTriple (f62b9000-17cf-49e4-a28f-12114c8e1641)
- Call ID: f62b9000-17cf-49e4-a28f-12114c8e1641
+  AddTriple (031b2367-900a-4a31-85d4-6b7a01a0cf77)
+ Call ID: 031b2367-900a-4a31-85d4-6b7a01a0cf77
   Args:
     relation: :hasMother
-    target: Princess_Eugenie
-    source: August_Brooksbank
-  AddTriple (c04aec6a-8b47-492f-abfa-d84f4da287bc)
- Call ID: c04aec6a-8b47-492f-abfa-d84f4da287bc
+    source: :August_Brooksbank
+    target: :Eugenie_Victoria_Helena
+  AddTriple (7faf5a13-2099-4172-bd43-d6c5703b68c3)
+ Call ID: 7faf5a13-2099-4172-bd43-d6c5703b68c3
   Args:
-    target: Jack_Brooksbank
+    target: :Jack_Brooksbank
     relation: :hasFather
-    source: Ernest_Brooksbank
-  AddTriple (b6d3b3af-fd54-4ec7-bd4e-0402bfb12620)
- Call ID: b6d3b3af-fd54-4ec7-bd4e-0402bfb12620
+    source: :Ernest_Brooksbank
+  AddTriple (d53396dc-2898-4e75-8259-87c3b589d4a0)
+ Call ID: d53396dc-2898-4e75-8259-87c3b589d4a0
   Args:
-    source: Ernest_Brooksbank
+    source: :Ernest_Brooksbank
     relation: :hasMother
-    target: Princess_Eugenie
-  AddTriple (b87db215-f847-45c0-a75e-6010df1cf521)
- Call ID: b87db215-f847-45c0-a75e-6010df1cf521
+    target: :Eugenie_Victoria_Helena
+  AddTriple (9d47f290-5505-4766-a722-373f09aa4d12)
+ Call ID: 9d47f290-5505-4766-a722-373f09aa4d12
   Args:
-    source: Princess_Eugenie
+    target: :Beatrice
     relation: :hasSister
-    target: Beatrice
-  AddLiteral (12302e74-2d1f-4ffa-86b9-5f58a1aad9f4)
- Call ID: 12302e74-2d1f-4ffa-86b9-5f58a1aad9f4
+    source: :Eugenie_Victoria_Helena
+  AddTriple (8a6eda4a-6c80-45d2-89f1-3467d998bd6d)
+ Call ID: 8a6eda4a-6c80-45d2-89f1-3467d998bd6d
   Args:
-    literal_value: 2018
-    source: Princess_Eugenie
+    relation: :hasFather
+    source: :Beatrice
+    target: :Andrew_Mountbatten-Windsor
+  AddTriple (dc7c901d-cff7-473d-8f81-440b4575c77e)
+ Call ID: dc7c901d-cff7-473d-8f81-440b4575c77e
+  Args:
+    target: :Sarah_Ferguson
+    relation: :hasMother
+    source: :Beatrice
+  AddLiteral (18b0d9e0-a61b-4fd3-9195-e995a1b44d78)
+ Call ID: 18b0d9e0-a61b-4fd3-9195-e995a1b44d78
+  Args:
+    source: :Eugenie_Victoria_Helena
     relation: :hasMarriageYear
     literal_type: xsd:integer
-  AddTriple (64bc47f7-5582-485f-a317-ae82bf7ada2c)
- Call ID: 64bc47f7-5582-485f-a317-ae82bf7ada2c
+    literal_value: 2018
+  AddTriple (d736a515-46b1-446c-a861-4375735a3817)
+ Call ID: d736a515-46b1-446c-a861-4375735a3817
   Args:
-    source: Princess_Eugenie
-    target: Jack_Brooksbank
+    source: :Eugenie_Victoria_Helena
     relation: :hasRelation
-  AddTriple (1f913baf-33e2-4795-a2c6-79bbace6f18f)
- Call ID: 1f913baf-33e2-4795-a2c6-79bbace6f18f
-  Args:
-    target: Princess_Eugenie
-    relation: :hasRelation
-    source: King_Charles_III
-  Finish (a2b73748-e052-4dba-a11e-4f8ba92b8571)
- Call ID: a2b73748-e052-4dba-a11e-4f8ba92b8571
+    target: :Jack_Brooksbank
+  Finish (02a2f537-c1aa-4d39-9010-d67155ce643c)
+ Call ID: 02a2f537-c1aa-4d39-9010-d67155ce643c
   Args:

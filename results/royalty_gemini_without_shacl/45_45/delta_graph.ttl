@@ -2,49 +2,71 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Elena_of_Romania_daughter a :Person,
+data:Constantine_I_of_Greece a :Man,
+        :Person ;
+    :isFatherOf data:Elena_of_Romania .
+
+data:Ferdinand_I a :Man,
+        :Person ;
+    :isFatherOf data:Carol_II .
+
+data:Nicholas_Medforth-Mills a :Man,
+        :Person ;
+    :isSonOf data:Princess_Elena .
+
+data:Prince_Nicolae a :Man,
+        :Person ;
+    :isBrotherOf data:Carol_II .
+
+data:Princess_Elisabeth a :Person,
+        :Woman ;
+    :isSisterOf data:Michael_I .
+
+data:Princess_Ileana a :Person,
+        :Woman ;
+    :isSisterOf data:Michael_I .
+
+data:Princess_Irina a :Person,
         :Woman ;
     :isDaughterOf data:Michael_I .
 
-data:Irina_of_Romania a :Person,
+data:Princess_Margareta a :Person,
         :Woman ;
     :isDaughterOf data:Michael_I .
 
-data:Margareta_of_Romania a :Person,
+data:Princess_Maria a :Person,
         :Woman ;
     :isDaughterOf data:Michael_I .
 
-data:Maria_of_Romania a :Person,
+data:Princess_Sophie a :Person,
         :Woman ;
     :isDaughterOf data:Michael_I .
 
-data:Sophie_of_Romania a :Person,
-        :Woman ;
-    :isDaughterOf data:Michael_I .
+data:Alexander_Nixon a :Man,
+        :Person .
 
 data:Anne_of_Bourbon-Parma a :Person,
         :Woman .
 
+data:Princess_Elena a :Person,
+        :Woman ;
+    :hasRelation data:Alexander_Nixon ;
+    :isDaughterOf data:Michael_I .
+
 data:Carol_II a :Man,
         :Person ;
-    :hasFather data:Ferdinand_I .
-
-data:Constantine_I_of_Greece a :Man,
-        :Person .
+    :hasMarriageYear 1921 ;
+    :hasRelation data:Elena_of_Romania ;
+    :isFatherOf data:Michael_I .
 
 data:Elena_of_Romania a :Person,
         :Woman ;
-    :hasFather data:Constantine_I_of_Greece .
-
-data:Ferdinand_I a :Man,
-        :Person .
+    :isMotherOf data:Michael_I .
 
 data:Michael_I a :Man,
         :Person ;
     :hasBirthYear 1921 ;
     :hasDeathYear 2017 ;
-    :hasFather data:Carol_II ;
     :hasMarriageYear 1948 ;
-    :hasMother data:Elena_of_Romania ;
     :hasRelation data:Anne_of_Bourbon-Parma .
 

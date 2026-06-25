@@ -1,0 +1,348 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alexis_Pantchoulidzew a :Man,
+        :Person ;
+    :hasBrother data:Alexis_Pantchoulidzew ;
+    :hasRelation data:Alexis_Pantchoulidzew,
+        data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage,
+        data:Bodo_von_Oeynhausen_Count,
+        data:Erich_von_Oeynhausen_Count,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Hedwig_of_Sierstorpff-Driburg,
+        data:Karoline_von_Wartensleben_Countess,
+        data:Therese_von_Lenthe ;
+    :isBloodrelationOf data:Alexis_Pantchoulidzew ;
+    :isBrotherOf data:Alexis_Pantchoulidzew ;
+    :isSiblingOf data:Alexis_Pantchoulidzew .
+
+data:Erich_von_Oeynhausen_Count a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Erich_von_Oeynhausen_Count ;
+    :hasChild data:Bodo_von_Oeynhausen_Count ;
+    :hasRelation data:Alexis_Pantchoulidzew,
+        data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage,
+        data:Bodo_von_Oeynhausen_Count,
+        data:Erich_von_Oeynhausen_Count,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Hedwig_of_Sierstorpff-Driburg,
+        data:Karoline_von_Wartensleben_Countess,
+        data:Therese_von_Lenthe ;
+    :hasSon data:Bodo_von_Oeynhausen_Count ;
+    :isAncestorOf data:Bodo_von_Oeynhausen_Count ;
+    :isBloodrelationOf data:Erich_von_Oeynhausen_Count ;
+    :isBrotherOf data:Erich_von_Oeynhausen_Count ;
+    :isFatherOf data:Bodo_von_Oeynhausen_Count ;
+    :isParentOf data:Bodo_von_Oeynhausen_Count ;
+    :isSiblingOf data:Erich_von_Oeynhausen_Count ;
+    :isUncleOf data:Bodo_von_Oeynhausen_Count .
+
+data:Ernest_II_Count_of_Lippe-Biesterfeld a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Ernest_II_Count_of_Lippe-Biesterfeld ;
+    :hasChild data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :hasRelation data:Alexis_Pantchoulidzew,
+        data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage,
+        data:Bodo_von_Oeynhausen_Count,
+        data:Erich_von_Oeynhausen_Count,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Hedwig_of_Sierstorpff-Driburg,
+        data:Karoline_von_Wartensleben_Countess,
+        data:Therese_von_Lenthe ;
+    :hasSon data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :isAncestorOf data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :isBloodrelationOf data:Ernest_II_Count_of_Lippe-Biesterfeld ;
+    :isBrotherOf data:Ernest_II_Count_of_Lippe-Biesterfeld ;
+    :isFatherOf data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :isParentOf data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :isSiblingOf data:Ernest_II_Count_of_Lippe-Biesterfeld ;
+    :isUncleOf data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage .
+
+data:Karoline_von_Wartensleben_Countess a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :hasRelation data:Alexis_Pantchoulidzew,
+        data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage,
+        data:Bodo_von_Oeynhausen_Count,
+        data:Erich_von_Oeynhausen_Count,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Hedwig_of_Sierstorpff-Driburg,
+        data:Karoline_von_Wartensleben_Countess,
+        data:Therese_von_Lenthe ;
+    :hasSister data:Karoline_von_Wartensleben_Countess ;
+    :hasSon data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :isAncestorOf data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :isAuntOf data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :isBloodrelationOf data:Karoline_von_Wartensleben_Countess ;
+    :isMotherOf data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :isParentOf data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :isSiblingOf data:Karoline_von_Wartensleben_Countess ;
+    :isSisterOf data:Karoline_von_Wartensleben_Countess .
+
+data:Therese_von_Lenthe a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Bodo_von_Oeynhausen_Count ;
+    :hasRelation data:Alexis_Pantchoulidzew,
+        data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage,
+        data:Bodo_von_Oeynhausen_Count,
+        data:Erich_von_Oeynhausen_Count,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Hedwig_of_Sierstorpff-Driburg,
+        data:Karoline_von_Wartensleben_Countess,
+        data:Therese_von_Lenthe ;
+    :hasSister data:Therese_von_Lenthe ;
+    :hasSon data:Bodo_von_Oeynhausen_Count ;
+    :isAncestorOf data:Bodo_von_Oeynhausen_Count ;
+    :isAuntOf data:Bodo_von_Oeynhausen_Count ;
+    :isBloodrelationOf data:Therese_von_Lenthe ;
+    :isMotherOf data:Bodo_von_Oeynhausen_Count ;
+    :isParentOf data:Bodo_von_Oeynhausen_Count ;
+    :isSiblingOf data:Therese_von_Lenthe ;
+    :isSisterOf data:Therese_von_Lenthe .
+
+data:Aschwin_of_Sierstorpff-Cramm a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Aschwin_of_Sierstorpff-Cramm ;
+    :hasChild data:Armgard_von_Cramm ;
+    :hasDaughter data:Armgard_von_Cramm ;
+    :hasRelation data:Alexis_Pantchoulidzew,
+        data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage,
+        data:Bodo_von_Oeynhausen_Count,
+        data:Erich_von_Oeynhausen_Count,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Hedwig_of_Sierstorpff-Driburg,
+        data:Karoline_von_Wartensleben_Countess,
+        data:Therese_von_Lenthe ;
+    :isAncestorOf data:Armgard_von_Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :isBloodrelationOf data:Aschwin_of_Sierstorpff-Cramm ;
+    :isBrotherOf data:Aschwin_of_Sierstorpff-Cramm ;
+    :isFatherOf data:Armgard_von_Cramm ;
+    :isParentOf data:Armgard_von_Cramm ;
+    :isSiblingOf data:Aschwin_of_Sierstorpff-Cramm ;
+    :isUncleOf data:Armgard_von_Cramm .
+
+data:Hedwig_of_Sierstorpff-Driburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Armgard_von_Cramm ;
+    :hasDaughter data:Armgard_von_Cramm ;
+    :hasRelation data:Alexis_Pantchoulidzew,
+        data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage,
+        data:Bodo_von_Oeynhausen_Count,
+        data:Erich_von_Oeynhausen_Count,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Hedwig_of_Sierstorpff-Driburg,
+        data:Karoline_von_Wartensleben_Countess,
+        data:Therese_von_Lenthe ;
+    :hasSister data:Hedwig_of_Sierstorpff-Driburg ;
+    :isAncestorOf data:Armgard_von_Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :isAuntOf data:Armgard_von_Cramm ;
+    :isBloodrelationOf data:Hedwig_of_Sierstorpff-Driburg ;
+    :isMotherOf data:Armgard_von_Cramm ;
+    :isParentOf data:Armgard_von_Cramm ;
+    :isSiblingOf data:Hedwig_of_Sierstorpff-Driburg ;
+    :isSisterOf data:Hedwig_of_Sierstorpff-Driburg .
+
+data:Aschwin_son_of_Armgard a :Man,
+        :Person ;
+    :hasAncestor data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_of_Sierstorpff-Driburg ;
+    :hasBrother data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :hasMother data:Armgard_von_Cramm ;
+    :hasParent data:Armgard_von_Cramm ;
+    :hasRelation data:Alexis_Pantchoulidzew,
+        data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage,
+        data:Bodo_von_Oeynhausen_Count,
+        data:Erich_von_Oeynhausen_Count,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Hedwig_of_Sierstorpff-Driburg,
+        data:Karoline_von_Wartensleben_Countess,
+        data:Therese_von_Lenthe ;
+    :isBloodrelationOf data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :isBrotherOf data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :isChildOf data:Armgard_von_Cramm ;
+    :isSiblingOf data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :isSonOf data:Armgard_von_Cramm .
+
+data:Bernhard_of_Lippe-Biesterfeld_Prince a :Man,
+        :Person ;
+    :hasAncestor data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_of_Sierstorpff-Driburg ;
+    :hasBrother data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :hasMother data:Armgard_von_Cramm ;
+    :hasParent data:Armgard_von_Cramm ;
+    :hasRelation data:Alexis_Pantchoulidzew,
+        data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage,
+        data:Bodo_von_Oeynhausen_Count,
+        data:Erich_von_Oeynhausen_Count,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Hedwig_of_Sierstorpff-Driburg,
+        data:Karoline_von_Wartensleben_Countess,
+        data:Therese_von_Lenthe ;
+    :isBloodrelationOf data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :isBrotherOf data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :isChildOf data:Armgard_von_Cramm ;
+    :isSiblingOf data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :isSonOf data:Armgard_von_Cramm .
+
+data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage a :Man,
+        :Person ;
+    :hasAncestor data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Karoline_von_Wartensleben_Countess ;
+    :hasBrother data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :hasFather data:Ernest_II_Count_of_Lippe-Biesterfeld ;
+    :hasMother data:Karoline_von_Wartensleben_Countess ;
+    :hasParent data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Karoline_von_Wartensleben_Countess ;
+    :hasRelation data:Alexis_Pantchoulidzew,
+        data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage,
+        data:Bodo_von_Oeynhausen_Count,
+        data:Erich_von_Oeynhausen_Count,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Hedwig_of_Sierstorpff-Driburg,
+        data:Karoline_von_Wartensleben_Countess,
+        data:Therese_von_Lenthe ;
+    :isBloodrelationOf data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :isBrotherOf data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :isChildOf data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Karoline_von_Wartensleben_Countess ;
+    :isSiblingOf data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage ;
+    :isSonOf data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Karoline_von_Wartensleben_Countess .
+
+data:Bodo_von_Oeynhausen_Count a :Man,
+        :Person ;
+    :hasAncestor data:Erich_von_Oeynhausen_Count,
+        data:Therese_von_Lenthe ;
+    :hasBrother data:Bodo_von_Oeynhausen_Count ;
+    :hasFather data:Erich_von_Oeynhausen_Count ;
+    :hasMother data:Therese_von_Lenthe ;
+    :hasParent data:Erich_von_Oeynhausen_Count,
+        data:Therese_von_Lenthe ;
+    :hasRelation data:Alexis_Pantchoulidzew,
+        data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage,
+        data:Bodo_von_Oeynhausen_Count,
+        data:Erich_von_Oeynhausen_Count,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Hedwig_of_Sierstorpff-Driburg,
+        data:Karoline_von_Wartensleben_Countess,
+        data:Therese_von_Lenthe ;
+    :isBloodrelationOf data:Bodo_von_Oeynhausen_Count ;
+    :isBrotherOf data:Bodo_von_Oeynhausen_Count ;
+    :isChildOf data:Erich_von_Oeynhausen_Count,
+        data:Therese_von_Lenthe ;
+    :isSiblingOf data:Bodo_von_Oeynhausen_Count ;
+    :isSonOf data:Erich_von_Oeynhausen_Count,
+        data:Therese_von_Lenthe .
+
+data:Armgard_von_Cramm a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_of_Sierstorpff-Driburg ;
+    :hasBirthYear 1883 ;
+    :hasChild data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :hasDeathYear 1971 ;
+    :hasFather data:Aschwin_of_Sierstorpff-Cramm ;
+    :hasMarriageYear 1905,
+        1909 ;
+    :hasMother data:Hedwig_of_Sierstorpff-Driburg ;
+    :hasParent data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_of_Sierstorpff-Driburg ;
+    :hasRelation data:Alexis_Pantchoulidzew,
+        data:Armgard_von_Cramm,
+        data:Aschwin_of_Sierstorpff-Cramm,
+        data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince_SecondMarriage,
+        data:Bodo_von_Oeynhausen_Count,
+        data:Erich_von_Oeynhausen_Count,
+        data:Ernest_II_Count_of_Lippe-Biesterfeld,
+        data:Hedwig_of_Sierstorpff-Driburg,
+        data:Karoline_von_Wartensleben_Countess,
+        data:Therese_von_Lenthe ;
+    :hasSister data:Armgard_von_Cramm ;
+    :hasSon data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :isAncestorOf data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :isAuntOf data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :isBloodrelationOf data:Armgard_von_Cramm ;
+    :isChildOf data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_of_Sierstorpff-Driburg ;
+    :isDaughterOf data:Aschwin_of_Sierstorpff-Cramm,
+        data:Hedwig_of_Sierstorpff-Driburg ;
+    :isMotherOf data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :isParentOf data:Aschwin_son_of_Armgard,
+        data:Bernhard_of_Lippe-Biesterfeld_Prince ;
+    :isSiblingOf data:Armgard_von_Cramm ;
+    :isSisterOf data:Armgard_von_Cramm ;
+    :knownAs "Armgard von Cramm"^^xsd:string .
+

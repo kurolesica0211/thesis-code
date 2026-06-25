@@ -69,38 +69,38 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lady Sarah Frances Elizabeth Chatto (née Armstrong-Jones; born 1
-She is the only daughter of Princess Margaret, Countess of Snowdon, and Antony Armstrong-Jones, 1st Earl of Snowdon.
-She and her brother, David Armstrong-Jones, 2nd Earl of Snowdon, are the only maternal first cousins of King Charles III.
+Lord Frederick Michael George David Louis Windsor (born 6 April 1979) is a member of the British royal family.
+He is the only son of Prince and Princess Michael of Kent, and is 54th in the line of succession to the British throne.
+He is married to British actress Sophie Winkleman and is a financial analyst by profession.
+As a great-grandchild of King George V and Queen Mary, he is a second cousin of King Charles III.
 Early life and education
 
-Lady Sarah Frances Elizabeth Armstrong-Jones was born at 8:20 am on 1 May 1964 at Kensington Palace in London.
-She is the second child and only daughter of Princess Margaret and Antony Armstrong-Jones, 1st Earl of Snowdon.
-Sarah is a godmother to Prince Harry, Duke of Sussex, Lady Rose Gilman, and Lady Louise Windsor.
-She also has half-siblings on her father's side: Polly Fry (born 1960), Lady Frances Armstrong-Jones (born 1979), and Jasper Cable-Alexander (born 1998).
-Sarah and her brother, David, then Viscount Linley, grew up in the nursery of Kensington Palace, Apartment 10.
-Their parents' marriage was fractious; the couple formally separated when Sarah was 12 and divorced when she was 14.
-Holidays were given to the royal estates at Sandringham and Balmoral, where Sarah did landscape painting.
-Sarah was a bridesmaid at the wedding of her cousin Charles, Prince of Wales, and Lady Diana Spencer.
-The film's producer, her relative John Knatchbull, 7th Baron Brabourne (son-in-law of Louis Mountbatten, 1st Earl Mountbatten of Burma), gave her a job as an intern assisting the wardrobe department and studying wood gilding under her father's cousin Thomas Messel.
-Professional life
+Frederick Michael George David Louis Windsor was born on 6 April 1979 at St Mary's Hospital, London, and was christened on 11 July at the Chapel Royal, St James's Palace, Westminster.
+A first cousin once removed of Queen Elizabeth II and a first cousin twice removed of Prince Philip, Duke of Edinburgh, he is therefore both a second cousin and a second cousin once removed of King Charles III and his siblings.
+Frederick and his sister, Lady Gabriella, were brought up in the Church of England.
+Career
 
-Chatto has been exhibiting her work, always under the name Sarah Armstrong-Jones, at The Redfern Gallery since 1995.
-Chatto does not undertake public duties and is not considered a "working royal".
-However, it has been reported that she was close to her aunt Queen Elizabeth II.
-Chatto is frequently seen attending public events such as jubilees and funerals, as well as semi-private royal family events, such as the Sandringham Christmas service, with her sons.
-Marriage and children
+After graduating, Frederick worked as a fashion model, appearing in a campaign for Burberry and for the designer Tomasz Starzewski, and also as a music journalist, notably for Tatler magazine.
+Personal life
 
-Sarah met Daniel Chatto during her years in India with her father in the 1980s.
-Chatto was working on another British film, Heat and Dust.
-He is from a theatrical family, the son of actor Tom Chatto (1920–1982) and the theatrical agent Ros Chatto (born Rosalind Joan Thompson; died 2012).
-Her bridesmaids were half-sister Lady Frances, Zara Phillips (daughter of her first cousin Princess Anne), and Tara Noble-Singh, a family friend.
+On St Valentine's Day, 14 February 2009, Frederick became engaged to the actress Sophie Winkleman.
+She was baptised at St James's Palace in December 2013 and has Princess Eugenie among her godparents.
+Maud served as a bridesmaid at the wedding of Princess Eugenie and Jack Brooksbank in 2018.
+On 20 January 2016, it was announced Frederick and Sophie had become parents to a second daughter, Isabella Alexandra May, who was born on 16 January 2016 at Chelsea and Westminster Hospital in London.
+From September 2016 until its closure in 2023, Frederick was president of the charity Soldier On!, which supported vulnerable, disadvantaged, or socially isolated people through archaeology and heritage projects as well as personal development workshops.
+On 21 February 2017, Frederick was inducted into the Grand Order of Water Rats charitable fraternity.
+Titles and styles
+
+Under letters patent issued in 1917 and still in force today, Frederick's father is entitled to the dignity of prince and the style His Royal Highness as the son of a son of George V. Although these letters do not bestow these royal dignities beyond grandchildren of monarchs (except in the case of the children of the Prince of Wales, as modified by Elizabeth II), they allow the children of sons of sons of a British monarch to be styled as the children of a duke, with the honorific courtesy style of Lord or Lady before their given names.
+Since Lord Frederick is not a peer in his own right, his style is not hereditary and his children are not entitled to any distinctions, including the prefix The Honourable.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -116,39 +116,9 @@ Her bridesmaids were half-sister Lady Frances, Zara Phillips (daughter of her fi
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -163,6 +133,23 @@ Her bridesmaids were half-sister Lady Frances, Zara Phillips (daughter of her fi
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -180,6 +167,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -247,29 +249,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -278,6 +272,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -290,6 +292,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -298,17 +302,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -336,6 +342,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -351,194 +441,148 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (e131c972-0b58-4d19-a6a6-c59feb18a20f)
- Call ID: e131c972-0b58-4d19-a6a6-c59feb18a20f
+  AssignClass (a212346a-0ac1-4848-a8a8-feb6c221155a)
+ Call ID: a212346a-0ac1-4848-a8a8-feb6c221155a
   Args:
-    source: Sarah_Chatto
-    type: :Woman
-  AssignClass (e93530b2-e0b6-40ce-859e-8bfb47b84728)
- Call ID: e93530b2-e0b6-40ce-859e-8bfb47b84728
-  Args:
-    source: Sarah_Chatto
-    type: :Person
-  AddLiteral (d7ddac3c-3451-4147-a660-4abfd9e8d9ee)
- Call ID: d7ddac3c-3451-4147-a660-4abfd9e8d9ee
-  Args:
-    source: Sarah_Chatto
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    literal_value: 1964
-  AssignClass (2aeb4023-71f8-4967-b36d-37cfb95235e4)
- Call ID: 2aeb4023-71f8-4967-b36d-37cfb95235e4
-  Args:
-    source: Princess_Margaret
-    type: :Woman
-  AssignClass (199d85be-0705-4d87-b841-1e8bd75975f9)
- Call ID: 199d85be-0705-4d87-b841-1e8bd75975f9
-  Args:
-    type: :Person
-    source: Princess_Margaret
-  AssignClass (26dbf719-575f-4091-b4b7-3fcfb1a422f4)
- Call ID: 26dbf719-575f-4091-b4b7-3fcfb1a422f4
-  Args:
-    source: Antony_Armstrong-Jones
+    source: :Lord_Frederick_Windsor
     type: :Man
-  AssignClass (9ef80a30-3957-41a3-a558-ca1c6a7917dd)
- Call ID: 9ef80a30-3957-41a3-a558-ca1c6a7917dd
+  AssignClass (7ea3db2e-d821-406c-8d55-3aca340363de)
+ Call ID: 7ea3db2e-d821-406c-8d55-3aca340363de
+  Args:
+    source: :Lord_Frederick_Windsor
+    type: :Person
+  AddLiteral (47ffe69b-0325-46ab-84be-6a9261e2d776)
+ Call ID: 47ffe69b-0325-46ab-84be-6a9261e2d776
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1979
+    source: :Lord_Frederick_Windsor
+    literal_type: xsd:integer
+  AssignClass (ca6c85e8-3a83-42d8-8aa4-09a76230bd80)
+ Call ID: ca6c85e8-3a83-42d8-8aa4-09a76230bd80
+  Args:
+    type: :Man
+    source: :Prince_Michael_of_Kent
+  AssignClass (835e4824-50cd-4240-b295-af08afd68e18)
+ Call ID: 835e4824-50cd-4240-b295-af08afd68e18
   Args:
     type: :Person
-    source: Antony_Armstrong-Jones
-  AddTriple (2ab8505a-a60e-442d-b189-436cf863217a)
- Call ID: 2ab8505a-a60e-442d-b189-436cf863217a
+    source: :Prince_Michael_of_Kent
+  AssignClass (8061e39a-08c6-49f8-bb0a-de7dac8bdc43)
+ Call ID: 8061e39a-08c6-49f8-bb0a-de7dac8bdc43
+  Args:
+    type: :Woman
+    source: :Princess_Michael_of_Kent
+  AssignClass (dece96bd-9ee1-4a66-9ac5-c5e5dc424a1f)
+ Call ID: dece96bd-9ee1-4a66-9ac5-c5e5dc424a1f
+  Args:
+    source: :Princess_Michael_of_Kent
+    type: :Person
+  AddTriple (351c4575-e4fa-444c-a3f5-3520ba79058f)
+ Call ID: 351c4575-e4fa-444c-a3f5-3520ba79058f
+  Args:
+    relation: :hasFather
+    source: :Lord_Frederick_Windsor
+    target: :Prince_Michael_of_Kent
+  AddTriple (4790a59c-291e-41b4-896c-015cadeec00e)
+ Call ID: 4790a59c-291e-41b4-896c-015cadeec00e
   Args:
     relation: :hasMother
-    source: Sarah_Chatto
-    target: Princess_Margaret
-  AddTriple (5275f1b1-dc0b-474b-bd44-19686ba192d2)
- Call ID: 5275f1b1-dc0b-474b-bd44-19686ba192d2
+    target: :Princess_Michael_of_Kent
+    source: :Lord_Frederick_Windsor
+  AssignClass (1b87e45a-46f1-4a12-9422-b72a84cc9a2f)
+ Call ID: 1b87e45a-46f1-4a12-9422-b72a84cc9a2f
   Args:
-    target: Antony_Armstrong-Jones
-    source: Sarah_Chatto
-    relation: :hasFather
-  AssignClass (d3119898-aa9a-4a53-a774-97f19ef93410)
- Call ID: d3119898-aa9a-4a53-a774-97f19ef93410
+    source: :Sophie_Winkleman
+    type: :Woman
+  AssignClass (d7d9edf4-c75e-4682-97c4-8bba6dc39809)
+ Call ID: d7d9edf4-c75e-4682-97c4-8bba6dc39809
   Args:
-    source: David_Armstrong-Jones
-    type: :Man
-  AssignClass (7c6d82b9-d95d-45dc-8cdb-3ec090920d6b)
- Call ID: 7c6d82b9-d95d-45dc-8cdb-3ec090920d6b
+    source: :Sophie_Winkleman
+    type: :Person
+  AddLiteral (45f37116-5c22-4db1-8bff-b3e1890882e7)
+ Call ID: 45f37116-5c22-4db1-8bff-b3e1890882e7
+  Args:
+    literal_type: xsd:integer
+    source: :Lord_Frederick_Windsor
+    literal_value: 2009
+    relation: :hasMarriageYear
+  AddTriple (0e430ece-99fb-4064-8b87-10bc702ffd26)
+ Call ID: 0e430ece-99fb-4064-8b87-10bc702ffd26
+  Args:
+    relation: :hasRelation
+    target: :Sophie_Winkleman
+    source: :Lord_Frederick_Windsor
+  AssignClass (36343847-462d-4a03-ba96-298fd4573617)
+ Call ID: 36343847-462d-4a03-ba96-298fd4573617
+  Args:
+    source: :Lady_Gabriella
+    type: :Woman
+  AssignClass (60ea282a-281e-40c7-a858-7ac9751ca1dd)
+ Call ID: 60ea282a-281e-40c7-a858-7ac9751ca1dd
   Args:
     type: :Person
-    source: David_Armstrong-Jones
-  AddTriple (ea5d1bd8-8e99-44ed-8a7f-beffee25c669)
- Call ID: ea5d1bd8-8e99-44ed-8a7f-beffee25c669
+    source: :Lady_Gabriella
+  AddTriple (2e8c6d8f-86c8-4e4f-945a-ab952e8b9e73)
+ Call ID: 2e8c6d8f-86c8-4e4f-945a-ab952e8b9e73
   Args:
     relation: :isSiblingOf
-    source: Sarah_Chatto
-    target: David_Armstrong-Jones
-  AddTriple (698d7c78-c2fb-43cb-b609-2fff599f4588)
- Call ID: 698d7c78-c2fb-43cb-b609-2fff599f4588
+    target: :Lady_Gabriella
+    source: :Lord_Frederick_Windsor
+  AssignClass (8f8e1c75-dca9-4814-beb3-814b22daf315)
+ Call ID: 8f8e1c75-dca9-4814-beb3-814b22daf315
   Args:
-    relation: :hasMother
-    source: David_Armstrong-Jones
-    target: Princess_Margaret
-  AddTriple (51825efe-e6c4-4e24-8914-802f30c424f6)
- Call ID: 51825efe-e6c4-4e24-8914-802f30c424f6
-  Args:
-    relation: :hasFather
-    source: David_Armstrong-Jones
-    target: Antony_Armstrong-Jones
-  AssignClass (eef596ec-70b6-43ed-9f3b-ed964e64aaa1)
- Call ID: eef596ec-70b6-43ed-9f3b-ed964e64aaa1
-  Args:
-    source: Daniel_Chatto
-    type: :Man
-  AssignClass (87359a49-1074-44b1-a853-893800a3b7c2)
- Call ID: 87359a49-1074-44b1-a853-893800a3b7c2
-  Args:
-    type: :Person
-    source: Daniel_Chatto
-  AssignClass (bb700964-356a-4d09-b2c8-955fdd3dcd0d)
- Call ID: bb700964-356a-4d09-b2c8-955fdd3dcd0d
-  Args:
-    source: Tom_Chatto
-    type: :Man
-  AssignClass (3ae2f3b3-6776-43ce-af0b-54e65f41a905)
- Call ID: 3ae2f3b3-6776-43ce-af0b-54e65f41a905
-  Args:
-    source: Tom_Chatto
-    type: :Person
-  AddLiteral (6ccef47c-2432-466a-b612-036d34ff05a6)
- Call ID: 6ccef47c-2432-466a-b612-036d34ff05a6
-  Args:
-    literal_value: 1920
-    relation: :hasBirthYear
-    source: Tom_Chatto
-    literal_type: xsd:integer
-  AddLiteral (6c0c52ca-3e27-411c-aa47-2c9a2dfd02a1)
- Call ID: 6c0c52ca-3e27-411c-aa47-2c9a2dfd02a1
-  Args:
-    literal_type: xsd:integer
-    source: Tom_Chatto
-    literal_value: 1982
-    relation: :hasDeathYear
-  AssignClass (9ab083c1-5279-4197-a166-47355dca9b79)
- Call ID: 9ab083c1-5279-4197-a166-47355dca9b79
-  Args:
+    source: :Isabella_Alexandra_May
     type: :Woman
-    source: Ros_Chatto
-  AssignClass (a926c83a-5a8a-446b-b247-58e3f8ee5e87)
- Call ID: a926c83a-5a8a-446b-b247-58e3f8ee5e87
+  AssignClass (426de005-5514-400c-94b1-bc6caced244e)
+ Call ID: 426de005-5514-400c-94b1-bc6caced244e
   Args:
-    source: Ros_Chatto
+    source: :Isabella_Alexandra_May
     type: :Person
-  AddLiteral (16e69957-f6f1-44ad-9fa8-5257c3b50853)
- Call ID: 16e69957-f6f1-44ad-9fa8-5257c3b50853
+  AddTriple (9346273d-3520-45a7-9012-ff007a7f8887)
+ Call ID: 9346273d-3520-45a7-9012-ff007a7f8887
   Args:
-    literal_type: xsd:integer
-    source: Ros_Chatto
-    relation: :hasDeathYear
-    literal_value: 2012
-  AddTriple (241910b9-c679-41f0-9079-f98d8965951f)
- Call ID: 241910b9-c679-41f0-9079-f98d8965951f
+    relation: :isDaughterOf
+    target: :Lord_Frederick_Windsor
+    source: :Isabella_Alexandra_May
+  AddTriple (5aa41b6e-3c2d-4347-85f2-63a088b8acd8)
+ Call ID: 5aa41b6e-3c2d-4347-85f2-63a088b8acd8
   Args:
-    target: Tom_Chatto
-    source: Daniel_Chatto
-    relation: :hasFather
-  AddTriple (1cc7bba7-f84e-43fd-a931-e3ca7932d8b1)
- Call ID: 1cc7bba7-f84e-43fd-a931-e3ca7932d8b1
+    source: :Isabella_Alexandra_May
+    target: :Sophie_Winkleman
+    relation: :isDaughterOf
+  AssignClass (10ab657c-5949-43b2-b509-db87d75b75ae)
+ Call ID: 10ab657c-5949-43b2-b509-db87d75b75ae
   Args:
-    source: Daniel_Chatto
-    target: Ros_Chatto
-    relation: :hasMother
-  AssignClass (aaae88b8-c9dd-44ac-8f5d-3a9ed2d191e9)
- Call ID: aaae88b8-c9dd-44ac-8f5d-3a9ed2d191e9
-  Args:
-    source: Polly_Fry
-    type: :Woman
-  AssignClass (8a5ccd07-b7d3-4fda-81a6-0ee69865e6de)
- Call ID: 8a5ccd07-b7d3-4fda-81a6-0ee69865e6de
-  Args:
-    type: :Person
-    source: Polly_Fry
-  AddTriple (8cbe145a-e464-4f4f-b618-8f39fe4ebde0)
- Call ID: 8cbe145a-e464-4f4f-b618-8f39fe4ebde0
-  Args:
-    relation: :hasFather
-    target: Antony_Armstrong-Jones
-    source: Polly_Fry
-  AssignClass (2056edc5-e940-4b28-a755-798cb4ab5047)
- Call ID: 2056edc5-e940-4b28-a755-798cb4ab5047
-  Args:
-    source: Frances_Armstrong-Jones
-    type: :Woman
-  AssignClass (23ea29f1-1254-4e41-add6-42001e2fb572)
- Call ID: 23ea29f1-1254-4e41-add6-42001e2fb572
-  Args:
-    type: :Person
-    source: Frances_Armstrong-Jones
-  AddTriple (d736afde-07b5-4084-b1b1-58f12289c46d)
- Call ID: d736afde-07b5-4084-b1b1-58f12289c46d
-  Args:
-    relation: :hasFather
-    source: Frances_Armstrong-Jones
-    target: Antony_Armstrong-Jones
-  AssignClass (59f5998e-2773-4867-8b71-c0bb7a5e64e6)
- Call ID: 59f5998e-2773-4867-8b71-c0bb7a5e64e6
-  Args:
-    source: Jasper_Cable-Alexander
     type: :Man
-  AssignClass (06e8d307-d89b-4977-abb4-9dbca399fef9)
- Call ID: 06e8d307-d89b-4977-abb4-9dbca399fef9
+    source: :King_George_V
+  AssignClass (a2c8ac04-a83a-4352-a7a4-8356e849a5d5)
+ Call ID: a2c8ac04-a83a-4352-a7a4-8356e849a5d5
   Args:
-    source: Jasper_Cable-Alexander
     type: :Person
-  AddTriple (0823e18e-7f88-42b0-ae7a-61f5b00d4973)
- Call ID: 0823e18e-7f88-42b0-ae7a-61f5b00d4973
+    source: :King_George_V
+  AssignClass (2018537a-abf2-4942-b290-a3772dabd9e7)
+ Call ID: 2018537a-abf2-4942-b290-a3772dabd9e7
   Args:
-    relation: :hasFather
-    source: Jasper_Cable-Alexander
-    target: Antony_Armstrong-Jones
-  Finish (4192aaad-a9e7-4f75-a83e-d02bd9067cb3)
- Call ID: 4192aaad-a9e7-4f75-a83e-d02bd9067cb3
+    source: :Queen_Mary
+    type: :Woman
+  AssignClass (a99f1b78-3d4c-4a3c-841b-5b22b81cfd17)
+ Call ID: a99f1b78-3d4c-4a3c-841b-5b22b81cfd17
+  Args:
+    source: :Queen_Mary
+    type: :Person
+  AddTriple (2c7232d2-de50-43f5-b4a8-9ccd147b171c)
+ Call ID: 2c7232d2-de50-43f5-b4a8-9ccd147b171c
+  Args:
+    target: :Lord_Frederick_Windsor
+    source: :King_George_V
+    relation: :isAncestorOf
+  AddTriple (e9cde61b-cb90-4f01-9c90-640e68b3cf41)
+ Call ID: e9cde61b-cb90-4f01-9c90-640e68b3cf41
+  Args:
+    relation: :isAncestorOf
+    target: :Lord_Frederick_Windsor
+    source: :Queen_Mary
+  Finish (bb30f81c-1313-4712-9c2b-db7324be802f)
+ Call ID: bb30f81c-1313-4712-9c2b-db7324be802f
   Args:

@@ -2,41 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Oskar_Prince_of_Prussia a :Man ;
-    :hasBirthYear 1888 ;
-    :hasBrother data:Crown_Prince_Wilhelm,
-        data:Prince_Adalbert,
-        data:Prince_August_Wilhelm,
-        data:Prince_Eitel_Friedrich,
-        data:Prince_Joachim ;
-    :hasDeathYear 1958 ;
-    :hasFather data:Wilhelm_II ;
-    :hasMarriageYear data:Ina-Marie_von_Bassewitz,
-        1914 ;
-    :hasMother data:Augusta_Victoria_of_Schleswig-Holstein ;
-    :hasSister data:Princess_Viktoria_Luise ;
-    :hasSon data:Oskar_the_younger,
-        data:Wilhelm_Karl .
+data:Frederick_III_German_Emperor a :Man,
+        :Person .
 
-data:Augusta_Victoria_of_Schleswig-Holstein a :Woman .
+data:King_Constantine_I_of_Greece a :Man,
+        :Person .
 
-data:Crown_Prince_Wilhelm a :Man .
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
+        :Person .
 
-data:Ina-Marie_von_Bassewitz a :Woman .
+data:Moritz_of_Hesse a :Man,
+        :Person ;
+    :hasFather data:Philipp_Prince_and_Landgrave_of_Hesse ;
+    :hasMother data:Princess_Mafalda_of_Savoy .
 
-data:Oskar_the_younger a :Man .
+data:Princess_Sophie_of_Prussia a :Person,
+        :Woman ;
+    :hasSister data:Wilhelm_II_German_Emperor .
 
-data:Prince_Adalbert a :Man .
+data:Queen_Victoria a :Person,
+        :Woman .
 
-data:Prince_August_Wilhelm a :Man .
+data:Friedrich_Wilhelm_of_Hesse a :Man,
+        :Person .
 
-data:Prince_Eitel_Friedrich a :Man .
+data:Philipp_Prince_and_Landgrave_of_Hesse a :Man,
+        :Person ;
+    :hasBirthYear 1896 ;
+    :hasBrother data:Friedrich_Wilhelm_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasDeathYear 1980 ;
+    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1925 ;
+    :hasMother data:Princess_Margaret_of_Prussia .
 
-data:Prince_Joachim a :Man .
+data:Prince_Frederick_Charles_of_Hesse a :Man,
+        :Person .
 
-data:Princess_Viktoria_Luise a :Woman .
+data:Princess_Mafalda_of_Savoy a :Person,
+        :Woman ;
+    :hasFather data:Victor_Emmanuel_III_of_Italy .
 
-data:Wilhelm_II a :Man .
+data:Princess_Margaret_of_Prussia a :Person,
+        :Woman ;
+    :hasSister data:Wilhelm_II_German_Emperor .
 
-data:Wilhelm_Karl a :Man .
+data:Victor_Emmanuel_III_of_Italy a :Man,
+        :Person .
+
+data:Wolfgang_of_Hesse a :Man,
+        :Person .
+
+data:Wilhelm_II_German_Emperor a :Man,
+        :Person .
 

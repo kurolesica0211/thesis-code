@@ -2,37 +2,33 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:LouisOfHesseAndByRhine a :Man ;
-    :isUncleOf data:Moritz .
+data:Prince_Friedrich_of_Hesse_and_by_Rhine a :Man,
+        :Person .
 
-data:MargaretCampbellGeddes a :Woman .
+data:Prince_Henry_youngest_brother a :Man,
+        :Person ;
+    :isBrotherOf data:Prince_Waldemar_of_Prussia .
 
-data:Elisabeth a :Woman .
+data:Tsarevich_Alexei_Nikolaevich_of_Russia a :Man,
+        :Person .
 
-data:GustavAlbrecht a :Ancestor,
-        :Man .
+data:Prince_Henry_of_Prussia a :Ancestor,
+        :Man,
+        :Person .
 
-data:Heinrich a :Man .
+data:Prince_Waldemar_of_Prussia a :Man,
+        :Person ;
+    :hasBirthYear 1889 ;
+    :hasDeathYear 1945 ;
+    :hasFather data:Prince_Henry_of_Prussia ;
+    :hasMarriageYear 1919 ;
+    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+    :hasRelation data:Princess_Calixta_of_Lippe .
 
-data:MafaldaOfSavoy a :Ancestor,
+data:Princess_Calixta_of_Lippe a :Person,
         :Woman .
 
-data:Moritz a :Man ;
-    :alsoKnownAs "Moritz Friedrich Karl Emanuel Humbert Prinz und Landgraf von Hessen"^^xsd:string ;
-    :hasBirthYear 1926 ;
-    :hasBrother data:Heinrich,
-        data:Otto ;
-    :hasDeathYear 2013 ;
-    :hasFather data:Philip ;
-    :hasMarriageYear data:TatianaOfSaynWittgensteinBerleburg ;
-    :hasMother data:MafaldaOfSavoy ;
-    :hasSister data:Elisabeth .
-
-data:Otto a :Man .
-
-data:Philip a :Ancestor,
-        :Man .
-
-data:TatianaOfSaynWittgensteinBerleburg a :Woman ;
-    :hasFather data:GustavAlbrecht .
+data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
+        :Person,
+        :Woman .
 

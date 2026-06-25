@@ -2,27 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Roger_de_Vilmorin a :Man,
-        :Person ;
-    :hasBirthYear 1905 ;
-    :hasBrother data:Olivier ;
-    :hasDeathYear 1980 ;
-    :hasFather data:Alfonso_XIII_of_Spain,
-        data:Philippe_de_Vilmorin ;
-    :hasMother data:M%C3%A9lanie_de_Gaufridy_de_Dortan ;
-    :hasSex "Male"^^xsd:string .
-
-data:Alfonso_XIII_of_Spain a :Man,
-        :Person .
-
-data:M%C3%A9lanie_de_Gaufridy_de_Dortan a :Person,
+data:Elizabeth_II a :Person,
         :Woman ;
-    :hasBirthYear 1876 ;
-    :hasDeathYear 1937 .
+    :hasBirthYear 1926 ;
+    :hasChild data:Andrew,
+        data:Anne,
+        data:Charles_III,
+        data:Edward ;
+    :hasDeathYear 2022 ;
+    :hasFather data:George_VI ;
+    :hasMarriageYear 1947 ;
+    :hasMother data:Elizabeth_the_Queen_Mother ;
+    :hasRelation data:Philip_Mountbatten ;
+    :isSiblingOf data:Princess_Margaret .
 
-data:Olivier a :Man,
+data:Andrew a :Man,
         :Person .
 
-data:Philippe_de_Vilmorin a :Man,
+data:Anne a :Person,
+        :Woman .
+
+data:Charles_III a :Man,
         :Person .
+
+data:Claude_Bowes-Lyon a :Man,
+        :Person .
+
+data:Edward a :Man,
+        :Person .
+
+data:Edward_VIII a :Man,
+        :Person .
+
+data:Elizabeth_the_Queen_Mother a :Person,
+        :Woman ;
+    :hasFather data:Claude_Bowes-Lyon .
+
+data:George_V a :Man,
+        :Person .
+
+data:George_VI a :Man,
+        :Person ;
+    :hasFather data:George_V ;
+    :hasMother data:Queen_Mary ;
+    :isBrotherOf data:Edward_VIII .
+
+data:Philip_Mountbatten a :Man,
+        :Person .
+
+data:Princess_Margaret a :Person,
+        :Woman .
+
+data:Queen_Mary a :Person,
+        :Woman .
 

@@ -1,0 +1,204 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ZinaidaSergeievnaRachevskaya a :Person,
+        :Woman ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:JeanBorisLacroix,
+        data:JeanneAumontLacroix,
+        data:KirillVladimirovich,
+        data:MariaPavlovna,
+        data:VladimirAlexandrovich,
+        data:ZinaidaSergeievnaRachevskaya ;
+    :hasSister data:ZinaidaSergeievnaRachevskaya ;
+    :isBloodrelationOf data:ZinaidaSergeievnaRachevskaya ;
+    :isSiblingOf data:ZinaidaSergeievnaRachevskaya ;
+    :isSisterOf data:ZinaidaSergeievnaRachevskaya .
+
+data:JeanneAumontLacroix a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:JeanBorisLacroix ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:JeanBorisLacroix,
+        data:JeanneAumontLacroix,
+        data:KirillVladimirovich,
+        data:MariaPavlovna,
+        data:VladimirAlexandrovich,
+        data:ZinaidaSergeievnaRachevskaya ;
+    :hasSister data:JeanneAumontLacroix ;
+    :hasSon data:JeanBorisLacroix ;
+    :isAncestorOf data:JeanBorisLacroix ;
+    :isAuntOf data:JeanBorisLacroix ;
+    :isBloodrelationOf data:JeanneAumontLacroix ;
+    :isMotherOf data:JeanBorisLacroix ;
+    :isParentOf data:JeanBorisLacroix ;
+    :isSiblingOf data:JeanneAumontLacroix ;
+    :isSisterOf data:JeanneAumontLacroix .
+
+data:MariaPavlovna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:BorisVladimirovich ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:JeanBorisLacroix,
+        data:JeanneAumontLacroix,
+        data:KirillVladimirovich,
+        data:MariaPavlovna,
+        data:VladimirAlexandrovich,
+        data:ZinaidaSergeievnaRachevskaya ;
+    :hasSister data:MariaPavlovna ;
+    :hasSon data:BorisVladimirovich ;
+    :isAncestorOf data:BorisVladimirovich,
+        data:JeanBorisLacroix ;
+    :isAuntOf data:BorisVladimirovich ;
+    :isBloodrelationOf data:MariaPavlovna ;
+    :isMotherOf data:BorisVladimirovich ;
+    :isParentOf data:BorisVladimirovich ;
+    :isSiblingOf data:MariaPavlovna ;
+    :isSisterOf data:MariaPavlovna .
+
+data:VladimirAlexandrovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:VladimirAlexandrovich ;
+    :hasChild data:BorisVladimirovich ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:JeanBorisLacroix,
+        data:JeanneAumontLacroix,
+        data:KirillVladimirovich,
+        data:MariaPavlovna,
+        data:VladimirAlexandrovich,
+        data:ZinaidaSergeievnaRachevskaya ;
+    :hasSon data:BorisVladimirovich ;
+    :isAncestorOf data:BorisVladimirovich,
+        data:JeanBorisLacroix ;
+    :isBloodrelationOf data:VladimirAlexandrovich ;
+    :isBrotherOf data:VladimirAlexandrovich ;
+    :isFatherOf data:BorisVladimirovich ;
+    :isParentOf data:BorisVladimirovich ;
+    :isSiblingOf data:VladimirAlexandrovich ;
+    :isUncleOf data:BorisVladimirovich .
+
+data:AndreiVladimirovich a :Man,
+        :Person ;
+    :hasBrother data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:JeanBorisLacroix,
+        data:JeanneAumontLacroix,
+        data:KirillVladimirovich,
+        data:MariaPavlovna,
+        data:VladimirAlexandrovich,
+        data:ZinaidaSergeievnaRachevskaya ;
+    :isBloodrelationOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :isBrotherOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :isSiblingOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :isUncleOf data:JeanBorisLacroix .
+
+data:KirillVladimirovich a :Man,
+        :Person ;
+    :hasBrother data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:JeanBorisLacroix,
+        data:JeanneAumontLacroix,
+        data:KirillVladimirovich,
+        data:MariaPavlovna,
+        data:VladimirAlexandrovich,
+        data:ZinaidaSergeievnaRachevskaya ;
+    :isBloodrelationOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :isBrotherOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :isSiblingOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :isUncleOf data:JeanBorisLacroix .
+
+data:JeanBorisLacroix a :Man,
+        :Person ;
+    :hasAncestor data:BorisVladimirovich,
+        data:JeanneAumontLacroix,
+        data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasBrother data:JeanBorisLacroix ;
+    :hasFather data:BorisVladimirovich ;
+    :hasMother data:JeanneAumontLacroix ;
+    :hasParent data:BorisVladimirovich,
+        data:JeanneAumontLacroix ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:JeanBorisLacroix,
+        data:JeanneAumontLacroix,
+        data:KirillVladimirovich,
+        data:MariaPavlovna,
+        data:VladimirAlexandrovich,
+        data:ZinaidaSergeievnaRachevskaya ;
+    :isBloodrelationOf data:JeanBorisLacroix ;
+    :isBrotherOf data:JeanBorisLacroix ;
+    :isChildOf data:BorisVladimirovich,
+        data:JeanneAumontLacroix ;
+    :isSiblingOf data:JeanBorisLacroix ;
+    :isSonOf data:BorisVladimirovich,
+        data:JeanneAumontLacroix .
+
+data:BorisVladimirovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasBirthYear 1877 ;
+    :hasBrother data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :hasChild data:JeanBorisLacroix ;
+    :hasDeathYear 1943 ;
+    :hasFather data:VladimirAlexandrovich ;
+    :hasMother data:MariaPavlovna ;
+    :hasParent data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :hasRelation data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:JeanBorisLacroix,
+        data:JeanneAumontLacroix,
+        data:KirillVladimirovich,
+        data:MariaPavlovna,
+        data:VladimirAlexandrovich,
+        data:ZinaidaSergeievnaRachevskaya ;
+    :hasSon data:JeanBorisLacroix ;
+    :isAncestorOf data:JeanBorisLacroix ;
+    :isBloodrelationOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :isBrotherOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :isChildOf data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :isFatherOf data:JeanBorisLacroix ;
+    :isParentOf data:JeanBorisLacroix ;
+    :isSiblingOf data:AndreiVladimirovich,
+        data:BorisVladimirovich,
+        data:KirillVladimirovich ;
+    :isSonOf data:MariaPavlovna,
+        data:VladimirAlexandrovich ;
+    :isUncleOf data:JeanBorisLacroix .
+

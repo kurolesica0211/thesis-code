@@ -2,49 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charles_Spencer a :Man ;
-    :isBrotherOf data:Diana_Spencer .
+data:Claus-Casimir a :Man ;
+    :hasBirthYear 2004 ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien_Brinkhorst .
 
-data:Prince_George a :Man ;
-    :hasFather data:William ;
-    :hasMother data:Catherine_Middleton .
+data:Eloise a :Woman ;
+    :hasBirthYear 2002 ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien_Brinkhorst .
 
-data:Prince_Harry a :Man ;
-    :hasFather data:Charles_III ;
-    :hasMother data:Diana_Spencer .
+data:Johan_Friso a :Man ;
+    :hasBirthYear 1968 ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Claus_von_Amsberg ;
+    :hasMother data:Beatrix .
 
-data:Prince_Louis a :Man ;
-    :hasFather data:William ;
-    :hasMother data:Catherine_Middleton .
+data:Leonore a :Woman ;
+    :hasBirthYear 2006 ;
+    :hasFather data:Constantijn ;
+    :hasMother data:Laurentien_Brinkhorst .
 
-data:Prince_Philip a :Ancestor,
+data:Margriet a :Woman .
+
+data:Pieter_van_Vollenhoven a :Man .
+
+data:Willem-Alexander a :Man ;
+    :hasBirthYear 1967 ;
+    :hasFather data:Claus_von_Amsberg ;
+    :hasMother data:Beatrix .
+
+data:Beatrix a :Ancestor,
+        :Woman .
+
+data:Claus_von_Amsberg a :Ancestor,
         :Man .
 
-data:Princess_Charlotte a :Woman ;
-    :hasFather data:William ;
-    :hasMother data:Catherine_Middleton .
-
-data:Queen_Elizabeth_II a :Ancestor,
-        :Woman .
-
-data:Charles_III a :Ancestor,
+data:Constantijn a :Ancestor,
         :Man ;
-    :hasFather data:Prince_Philip .
+    :hasBirthYear 1969 ;
+    :hasFather data:Claus_von_Amsberg ;
+    :hasMother data:Beatrix .
 
-data:Catherine_Middleton a :Ancestor,
+data:Laurentien_Brinkhorst a :Ancestor,
         :Woman .
-
-data:Diana_Spencer a :Ancestor,
-        :Woman .
-
-data:William a :Ancestor,
-        :Man ;
-    :hasAncestor data:Queen_Elizabeth_II ;
-    :hasBirthYear 1982 ;
-    :hasBrother data:Prince_Harry ;
-    :hasChild data:Prince_George,
-        data:Prince_Louis,
-        data:Princess_Charlotte ;
-    :hasFather data:Charles_III ;
-    :hasMother data:Diana_Spencer .
 

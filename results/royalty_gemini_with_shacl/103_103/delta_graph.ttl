@@ -2,17 +2,16 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_Charlotte_of_Wales a :Person,
-        :Woman ;
+data:Princess_Charlotte_of_Wales a :Woman ;
     :hasBirthYear 2015 ;
-    :hasBrother data:Prince_George,
-        data:Prince_Louis ;
     :hasFather data:William_Prince_of_Wales ;
     :hasMother data:Catherine_Princess_of_Wales ;
-    :knownAs "Charlotte Cambridge"^^xsd:string .
+    :hasParent data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales ;
+    :isSiblingOf data:Prince_George,
+        data:Prince_Louis .
 
-data:Catherine_Princess_of_Wales a :Ancestor,
-        :Woman .
+data:Queen_Elizabeth_II a :Woman .
 
 data:Diana_Princess_of_Wales a :Ancestor,
         :Woman .
@@ -20,11 +19,16 @@ data:Diana_Princess_of_Wales a :Ancestor,
 data:King_Charles_III a :Ancestor,
         :Man .
 
-data:Prince_George a :Man,
-        :Person .
+data:Prince_George a :Man ;
+    :hasParent data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales .
 
-data:Prince_Louis a :Man,
-        :Person .
+data:Prince_Louis a :Man ;
+    :hasParent data:Catherine_Princess_of_Wales,
+        data:William_Prince_of_Wales .
+
+data:Catherine_Princess_of_Wales a :Ancestor,
+        :Woman .
 
 data:William_Prince_of_Wales a :Ancestor,
         :Man ;

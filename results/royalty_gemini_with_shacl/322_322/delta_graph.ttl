@@ -2,88 +2,93 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:JeanRobertBoeuf a :Man,
+data:Borwin_Duke_of_Mecklenburg a :Man,
         :Person .
 
-data:MarieDOrleans a :Person,
+data:Edwina_of_Mecklenburg a :Person,
         :Woman ;
-    :hasFather data:HenriPhilippePierreMariedOrleans ;
-    :hasMother data:MarieThereseOfWurttemberg .
+    :hasBirthYear 1960 ;
+    :isDaughterOf data:Barbara_of_Prussia,
+        data:Christian_Louis_of_Mecklenburg-Schwerin ;
+    :isSisterOf data:Donata_of_Mecklenburg .
 
-data:MicaelaAnnaMariaCousinoYQuinonesDeLeon a :Person,
-        :Woman ;
-    :hasBirthYear 1938 ;
-    :hasDeathYear 2022 ;
-    :hasFather data:LuisCousinoYSebire ;
-    :hasMother data:AntoniaMariaQuinonesDeLeonYBanuelos .
-
-data:PrinceCharlesLouisDOrleans a :Man,
-        :Person ;
-    :hasBirthYear 1972 ;
-    :hasFather data:PrinceJacquesDOrleans .
-
-data:PrinceFoulquesDOrleans a :Man,
-        :Person ;
-    :hasBirthYear 1974 ;
-    :hasFather data:PrinceJacquesDOrleans .
-
-data:PrinceGundakarOfLiechtenstein a :Man,
-        :Person .
-
-data:AntoniaMariaQuinonesDeLeonYBanuelos a :Ancestor,
-        :Person,
-        :Woman .
-
-data:DianeDOrleans a :Person,
-        :Woman .
-
-data:FrancoisDOrleans a :Man,
-        :Person .
-
-data:HenriCountOfParis a :Ancestor,
+data:Ernest_Augustus_Crown_Prince_of_Hanover a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear 1908 ;
-    :hasDeathYear 1999 .
+    :isFatherOf data:Alexandra_of_Hanover_and_Cumberland .
 
-data:HenriPhilippePierreMariedOrleans a :Ancestor,
+data:Ernst_II_of_Saxe-Altenburg a :Ancestor,
         :Man,
         :Person ;
-    :hasBirthYear 1933 ;
-    :hasBrother data:FrancoisDOrleans,
-        data:MichelDOrleans,
-        data:PrinceJacquesDOrleans,
-        data:ThibautDOrleans ;
-    :hasDeathYear 2019 ;
-    :hasFather data:HenriCountOfParis ;
-    :hasMarriageYear 1984 ;
-    :hasMother data:PrincessIsabelleOfOrleansBraganza ;
-    :hasSister data:DianeDOrleans ;
-    :hasSon data:PrinceJeanDOrleans .
+    :isFatherOf data:Charlotte_of_Saxe-Altenburg .
 
-data:LuisCousinoYSebire a :Ancestor,
+data:Frederick_Francis_IV_of_Mecklenburg-Schwerin a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Christian_Louis_of_Mecklenburg-Schwerin .
+
+data:Friedrich_Franz_Hereditary_Grand_Duke_of_Mecklenburg-Schwerin a :Man,
+        :Person ;
+    :hasDeathYear 2001 ;
+    :isBrotherOf data:Christian_Louis_of_Mecklenburg-Schwerin .
+
+data:Louis_IV_Grand_Duke_of_Hesse_and_by_Rhine a :Ancestor,
         :Man,
         :Person .
 
-data:MarieThereseOfWurttemberg a :Ancestor,
+data:Louise_of_Hesse-Kassel a :Ancestor,
         :Person,
         :Woman ;
-    :hasBirthYear 1934 .
+    :isMotherOf data:Thyra_of_Denmark .
 
-data:MichelDOrleans a :Man,
-        :Person .
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine .
 
-data:PrinceJeanDOrleans a :Man,
-        :Person .
+data:Sigismund_of_Prussia a :Ancestor,
+        :Man,
+        :Person ;
+    :isFatherOf data:Barbara_of_Prussia .
 
-data:PrincessIsabelleOfOrleansBraganza a :Ancestor,
+data:Alice_Grand_Duchess_of_Hesse_and_by_Rhine a :Ancestor,
         :Person,
         :Woman .
 
-data:ThibautDOrleans a :Man,
+data:Charlotte_of_Saxe-Altenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :isMotherOf data:Barbara_of_Prussia .
+
+data:Donata_of_Mecklenburg a :Person,
+        :Woman ;
+    :hasBirthYear 1956 ;
+    :isDaughterOf data:Barbara_of_Prussia,
+        data:Christian_Louis_of_Mecklenburg-Schwerin .
+
+data:Thyra_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :isDaughterOf data:Christian_IX_of_Denmark ;
+    :isMotherOf data:Alexandra_of_Hanover_and_Cumberland .
+
+data:Alexandra_of_Hanover_and_Cumberland a :Ancestor,
+        :Person,
+        :Woman ;
+    :isDaughterOf data:Christian_IX_of_Denmark ;
+    :isMotherOf data:Christian_Louis_of_Mecklenburg-Schwerin .
+
+data:Christian_IX_of_Denmark a :Ancestor,
+        :Man,
         :Person .
 
-data:PrinceJacquesDOrleans a :Ancestor,
+data:Barbara_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1920 ;
+    :hasDeathYear 1994 .
+
+data:Christian_Louis_of_Mecklenburg-Schwerin a :Ancestor,
         :Man,
         :Person .
 

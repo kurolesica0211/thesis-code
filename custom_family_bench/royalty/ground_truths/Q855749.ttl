@@ -7,67 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Beatrix_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Beatrix of the Netherlands" ;
-    data:posIndicesFull "2230:2243" ;
-    data:posIndicesPart "3998:4005",
-        "4519:4530",
-        "4754:4765" ;
-    data:wdtLink wdt:Q29574 ;
-    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
-        "Beatrix Wilhelmina Armgard",
-        "Beatrix der Nederlanden",
-        "Beatrix of Orange",
-        "Beatrix van Oranje",
-        "Princess Beatrix of Orange-Nassau",
-        "Princess Beatrix of the Netherlands",
-        "Queen Beatrix" ;
-    :hasChild data:William_Alexander_of_the_Netherlands ;
-    :hasSex data:female ;
-    :hasSon data:William_Alexander_of_the_Netherlands ;
-    :isMotherOf data:William_Alexander_of_the_Netherlands ;
-    :isParentOf data:William_Alexander_of_the_Netherlands .
-
-data:Queen_Máxima_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Máxima of the Netherlands" ;
-    data:posIndicesFull "627:633",
-        "943:949" ;
-    data:posIndicesPart "1059:1070",
-        "1104:1115",
-        "1416:1427",
-        "2176:2187",
-        "4519:4530",
-        "4754:4765",
-        "4935:4940",
-        "5304:5309",
-        "5421:5426" ;
-    data:wdtLink wdt:Q460960 ;
-    :alsoKnownAs "H.M. Queen Máxima of the Netherlands",
-        "Maxima Zorreguieta",
-        "Máxima",
-        "Máxima Zorreguieta",
-        "Máxima of the Netherlands" ;
-    :hasChild data:Catharina-Amalia-_Princess_of_Orange ;
-    :hasDaughter data:Catharina-Amalia-_Princess_of_Orange ;
-    :hasSex data:female ;
-    :isMotherOf data:Catharina-Amalia-_Princess_of_Orange ;
-    :isParentOf data:Catharina-Amalia-_Princess_of_Orange .
-
-data:Catharina-Amalia-_Princess_of_Orange a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Catharina-Amalia-_Princess_of_Orange a :Person ;
     rdfs:label "Catharina-Amalia, Princess of Orange" ;
     data:posIndicesFull "1866:1891",
         "323:363",
@@ -158,20 +98,72 @@ data:Catharina-Amalia-_Princess_of_Orange a :Person,
         "Princess Catharina-Amalia of Orange-Nassau",
         "Princess Catharina-Amalia of the Netherlands",
         "Princess Catharina-Amalia of the Netherlands, Princess of Orange-Nassau" ;
-    :hasFather data:William_Alexander_of_the_Netherlands ;
-    :hasMother data:Queen_Máxima_of_the_Netherlands ;
     :hasParent data:Queen_Máxima_of_the_Netherlands,
         data:William_Alexander_of_the_Netherlands ;
-    :hasSex data:female ;
-    :isChildOf data:Queen_Máxima_of_the_Netherlands,
-        data:William_Alexander_of_the_Netherlands ;
-    :isDaughterOf data:Queen_Máxima_of_the_Netherlands,
-        data:William_Alexander_of_the_Netherlands .
+    :hasSex data:female .
 
-data:William_Alexander_of_the_Netherlands a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Beatrix_of_the_Netherlands a :Person ;
+    rdfs:label "Beatrix of the Netherlands" ;
+    data:posIndicesFull "2230:2243" ;
+    data:posIndicesPart "3998:4005",
+        "4519:4530",
+        "4754:4765" ;
+    data:wdtLink wdt:Q29574 ;
+    :alsoKnownAs "Beatrix Koningin der Nederlanden, Prinses van Oranje-Nassau",
+        "Beatrix Wilhelmina Armgard",
+        "Beatrix der Nederlanden",
+        "Beatrix of Orange",
+        "Beatrix van Oranje",
+        "Princess Beatrix of Orange-Nassau",
+        "Princess Beatrix of the Netherlands",
+        "Queen Beatrix" ;
+    :hasParent data:Juliana_of_the_Netherlands ;
+    :hasSex data:female .
+
+data:Juliana_of_the_Netherlands a :Person ;
+    rdfs:label "Juliana of the Netherlands" ;
+    data:posIndicesFull "4935:4948",
+        "4941:4948" ;
+    data:wdtLink wdt:Q154946 ;
+    :alsoKnownAs "Juliana I of the Netherlands",
+        "Juliana Louise Emma Marie Wilhelmina",
+        "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Juliana der Nederlanden",
+        "Julijana",
+        "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Princess Juliana of the Netherlands",
+        "Queen Juliana",
+        "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+        "Queen Juliana of the Netherlands" ;
+    :hasSex data:female .
+
+data:Queen_Máxima_of_the_Netherlands a :Person ;
+    rdfs:label "Queen Máxima of the Netherlands" ;
+    data:posIndicesFull "627:633",
+        "943:949" ;
+    data:posIndicesPart "1059:1070",
+        "1104:1115",
+        "1416:1427",
+        "2176:2187",
+        "4519:4530",
+        "4754:4765",
+        "5304:5309",
+        "5421:5426" ;
+    data:wdtLink wdt:Q460960 ;
+    :alsoKnownAs "H.M. Queen Máxima of the Netherlands",
+        "Maxima Zorreguieta",
+        "Máxima",
+        "Máxima Zorreguieta",
+        "Máxima of the Netherlands" ;
+    :hasSex data:female .
+
+data:William_Alexander_of_the_Netherlands a :Person ;
     rdfs:label "William Alexander of the Netherlands" ;
     data:posIndicesFull "3032:3053",
         "595:616",
@@ -199,13 +191,10 @@ data:William_Alexander_of_the_Netherlands a :Ancestor,
         "Willem-Alexander van Oranje-Nassau",
         "Willem-Alexander, Prince of Orange",
         "ZM Koning Willem-Alexander" ;
-    :hasChild data:Catharina-Amalia-_Princess_of_Orange ;
-    :hasDaughter data:Catharina-Amalia-_Princess_of_Orange ;
-    :hasMother data:Beatrix_of_the_Netherlands ;
     :hasParent data:Beatrix_of_the_Netherlands ;
-    :hasSex data:male ;
-    :isChildOf data:Beatrix_of_the_Netherlands ;
-    :isFatherOf data:Catharina-Amalia-_Princess_of_Orange ;
-    :isParentOf data:Catharina-Amalia-_Princess_of_Orange ;
-    :isSonOf data:Beatrix_of_the_Netherlands .
+    :hasSex data:male .
+
+data:male a :Male .
+
+data:female a :Female .
 

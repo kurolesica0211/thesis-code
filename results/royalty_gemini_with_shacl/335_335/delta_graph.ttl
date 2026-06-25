@@ -2,50 +2,70 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alicia a :Woman ;
-    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld .
+data:Ingolf_of_Rosenborg a :Man,
+        :Person ;
+    :hasBirthYear 1940 ;
+    :hasBrother data:Christian_of_Rosenborg ;
+    :hasFather data:Knud_of_Denmark ;
+    :hasMarriageYear 1968 ;
+    :hasRelation data:Inge_Terney,
+        data:Sussie_Hjorhoy_Pedersen ;
+    :hasSex data:Male ;
+    :hasSister data:Elisabeth_of_Denmark .
 
-data:Beatrix_of_the_Netherlands a :Woman ;
-    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
-        data:Juliana_of_the_Netherlands .
+data:Leopold_Rosanes_af_Rosenborg a :Man,
+        :Person ;
+    :hasFather data:Christian_of_Rosenborg .
 
-data:Christina_of_the_Netherlands a :Woman ;
-    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
-        data:Juliana_of_the_Netherlands .
+data:Christian_X_of_Denmark a :Ancestor,
+        :Man,
+        :Person .
 
-data:Irene_of_the_Netherlands a :Woman ;
-    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
-        data:Juliana_of_the_Netherlands .
-
-data:Jonathan_Aitken a :Man ;
-    :isSonOf data:Bernhard_of_Lippe-Biesterfeld .
-
-data:Margriet_of_the_Netherlands a :Woman ;
-    :isDaughterOf data:Bernhard_of_Lippe-Biesterfeld,
-        data:Juliana_of_the_Netherlands .
-
-data:Armgard_von_Sierstorpff-Cramm a :Ancestor,
+data:Elisabeth_of_Denmark a :Person,
         :Woman .
 
-data:Ernest_Count_of_Lippe-Biesterfeld a :Ancestor,
-        :Man .
+data:Frederick_Walter_Pedersen a :Ancestor,
+        :Man,
+        :Person .
 
-data:Leopold_IV_Prince_of_Lippe a :Man .
+data:Frederik_IX_of_Denmark a :Man,
+        :Person .
 
-data:Prince_Bernhard_of_Lippe a :Ancestor,
-        :Man .
+data:Georg_Terney a :Ancestor,
+        :Man,
+        :Person .
 
-data:Juliana_of_the_Netherlands a :Ancestor,
+data:Inge_Terney a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 1996 ;
+    :hasFather data:Georg_Terney ;
+    :hasMother data:Jenny_Kamilla_Hansen .
+
+data:Jenny_Kamilla_Hansen a :Ancestor,
+        :Person,
         :Woman .
 
-data:Bernhard_of_Lippe-Biesterfeld a :Ancestor,
-        :Man ;
-    :hasAncestor data:Ernest_Count_of_Lippe-Biesterfeld ;
-    :hasBirthYear 1911 ;
-    :hasDeathYear 2004 ;
-    :hasFather data:Prince_Bernhard_of_Lippe ;
-    :hasMarriageYear 1937 ;
-    :hasMother data:Armgard_von_Sierstorpff-Cramm ;
-    :hasRelation data:Juliana_of_the_Netherlands ;
-    :isBloodrelationOf data:Leopold_IV_Prince_of_Lippe .
+data:Knud_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederik_IX_of_Denmark ;
+    :hasFather data:Christian_X_of_Denmark .
+
+data:Male a :Male,
+        :Sex .
+
+data:Ruth_Hjorhoy a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Sussie_Hjorhoy_Pedersen a :Person,
+        :Woman ;
+    :hasBirthYear 1950 ;
+    :hasFather data:Frederick_Walter_Pedersen ;
+    :hasMother data:Ruth_Hjorhoy .
+
+data:Christian_of_Rosenborg a :Ancestor,
+        :Man,
+        :Person .
 

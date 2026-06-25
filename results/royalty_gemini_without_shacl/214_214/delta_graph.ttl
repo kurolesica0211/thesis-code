@@ -2,35 +2,22 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_Charlotte_of_Prussia a :Woman ;
-    :hasBirthYear 1860 ;
-    :hasDeathYear 1919 ;
-    :isDaughterOf data:Prince_Frederick_Wilhelm_of_Prussia,
-        data:Princess_Victoria_Princess_Royal .
+data:Marina_consort_of_Prince_Michael a :Woman .
 
-data:Wilhelm_II a :Man ;
-    :hasBirthYear 1859 ;
-    :hasDeathYear 1941 ;
-    :isSonOf data:Prince_Frederick_Wilhelm_of_Prussia,
-        data:Princess_Victoria_Princess_Royal .
+data:Prince_Constantine-Alexios_of_Greece_and_Denmark a :Man ;
+    :hasBirthYear 1998 ;
+    :hasFather data:Constantine_II,
+        data:Crown_Prince_Pavlos ;
+    :hasMother data:Anne-Marie_of_Denmark,
+        data:Crown_Princess_Marie-Chantal .
 
-data:Queen_Victoria a :Woman ;
-    :hasBirthYear 1819 ;
-    :hasDeathYear 1901 ;
-    :hasMarriageYear 1840 ;
-    :hasRelation data:Prince_Albert .
+data:Queen_Sofia_of_Spain a :Woman .
 
-data:Prince_Albert a :Man ;
-    :hasBirthYear 1819 ;
-    :hasDeathYear 1861 .
+data:Anne-Marie_of_Denmark a :Woman .
 
-data:Princess_Victoria_Princess_Royal a :Woman ;
-    :hasBirthYear 1840 ;
-    :hasDeathYear 1901 ;
-    :hasRelation data:Prince_Frederick_Wilhelm_of_Prussia ;
-    :isDaughterOf data:Prince_Albert,
-        data:Queen_Victoria ;
-    :knownAs "Vicky"^^xsd:string .
+data:Constantine_II a :Man .
 
-data:Prince_Frederick_Wilhelm_of_Prussia a :Man .
+data:Crown_Prince_Pavlos a :Man .
+
+data:Crown_Princess_Marie-Chantal a :Woman .
 

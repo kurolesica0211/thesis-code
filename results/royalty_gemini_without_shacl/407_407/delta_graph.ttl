@@ -2,30 +2,24 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Mary_Frances_Elphinstone a :Person,
-        :Woman ;
-    :hasBirthYear 1883 ;
-    :hasDeathYear 1961 ;
-    :hasFather data:Claude_Bowes-Lyon ;
-    :hasMarriageYear 1910 ;
-    :hasRelation data:Sidney_Elphinstone ;
-    :isAuntOf data:Queen_Elizabeth_II ;
-    :isSisterOf data:Queen_Elizabeth_the_Queen_Mother ;
-    :knownAs data:Lady_Elphinstone .
+data:Juan_Carlos_I_of_Spain a :Man .
 
-data:Claude_Bowes-Lyon a :Man,
-        :Person .
+data:Marco_Alfonso_Torlonia a :Man ;
+    :hasBirthYear 1937 ;
+    :hasDeathYear 2014 ;
+    :hasFather data:Alessandro_Torlonia ;
+    :hasMother data:Beatriz_of_Spain ;
+    :hasSister data:Olimpia .
 
-data:Lady_Elphinstone a :Person .
+data:Alessandro_Torlonia a :Man .
 
-data:Queen_Elizabeth_II a :Person,
-        :Woman .
+data:Alfonso_XIII_of_Spain a :Man .
 
-data:Queen_Elizabeth_the_Queen_Mother a :Person,
-        :Woman .
+data:Beatriz_of_Spain a :Woman ;
+    :hasFather data:Alfonso_XIII_of_Spain .
 
-data:Sidney_Elphinstone a :Man,
-        :Person ;
-    :hasBirthYear 1869 ;
-    :hasDeathYear 1955 .
+data:Olimpia a :Woman ;
+    :hasChild data:Sibilla_of_Luxembourg .
+
+data:Sibilla_of_Luxembourg a :Woman .
 

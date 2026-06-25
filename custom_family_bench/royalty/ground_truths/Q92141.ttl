@@ -7,44 +7,61 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Oskar_of_Prussia a :Person ;
+    rdfs:label "Oskar of Prussia" ;
+    data:posIndicesFull "134:157",
+        "141:157",
+        "275:298",
+        "282:298" ;
+    data:wdtLink wdt:Q100307 ;
+    :alsoKnownAs "Prince Oscar of Prussia" ;
+    :hasParent data:Armgard_Else_Helene_von_Veltheim,
+        data:Prince_Wilhelm-Karl_of_Prussia ;
+    :hasSex data:male .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Armgard_Else_Helene_von_Veltheim a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Armgard_Else_Helene_von_Veltheim a :Person ;
     rdfs:label "Armgard Else Helene von Veltheim" ;
     data:posIndicesFull "790:822" ;
     data:wdtLink wdt:Q75383555 ;
-    :hasChild data:Oskar_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Oskar_of_Prussia ;
-    :isMotherOf data:Oskar_of_Prussia ;
-    :isParentOf data:Oskar_of_Prussia .
+    :hasSex data:female .
 
-data:Countess_Ina_Marie_von_Bassewitz a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Countess_Ina_Marie_von_Bassewitz a :Person ;
     rdfs:label "Countess Ina Marie von Bassewitz" ;
     data:posIndicesFull "303:335" ;
     data:wdtLink wdt:Q772541 ;
     :alsoKnownAs "Countess Ina-Marie Helene Adele Elise von Bassewitz",
         "Ina Marie Bassewitz" ;
-    :hasChild data:Prince_Wilhelm-Karl_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Wilhelm-Karl_of_Prussia ;
-    :isMotherOf data:Prince_Wilhelm-Karl_of_Prussia ;
-    :isParentOf data:Prince_Wilhelm-Karl_of_Prussia .
+    :hasSex data:female .
 
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Oskar_of_Prussia a :Person ;
+    rdfs:label "Prince Oskar of Prussia" ;
+    data:posIndicesFull "134:157",
+        "141:157",
+        "275:298",
+        "282:298" ;
+    data:wdtLink wdt:Q61242 ;
+    :alsoKnownAs "Oskar Karl Gustav Adolf of Prussia",
+        "Oskar of Prussia",
+        "Prince Oskar Karl Gustav Adolf of Prussia" ;
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:male .
+
+data:Prince_Wilhelm-Karl_of_Prussia a :Person ;
+    rdfs:label "Prince Wilhelm-Karl of Prussia" ;
+    data:wdtLink wdt:Q92141 ;
+    :alsoKnownAs "Prince Wilhelm Karl of Prussia",
+        "Wilhelm-Karl of Prussia" ;
+    :hasParent data:Countess_Ina_Marie_von_Bassewitz,
+        data:Prince_Oskar_of_Prussia ;
+    :hasSex data:male .
+
+data:Wilhelm_II a :Person ;
     rdfs:label "Wilhelm II" ;
     data:posIndicesFull "194:204" ;
     data:posIndicesPart "242:249",
@@ -63,74 +80,9 @@ data:Wilhelm_II a :Ancestor,
         "Wilhelm II, German Emperor",
         "Wilhelm II.",
         "William II" ;
-    :hasChild data:Prince_Oskar_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Oskar_of_Prussia ;
-    :isFatherOf data:Prince_Oskar_of_Prussia ;
-    :isParentOf data:Prince_Oskar_of_Prussia .
+    :hasSex data:male .
 
-data:Oskar_of_Prussia a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Oskar of Prussia" ;
-    data:posIndicesFull "134:157",
-        "141:157",
-        "275:298",
-        "282:298" ;
-    data:wdtLink wdt:Q100307 ;
-    :alsoKnownAs "Prince Oscar of Prussia" ;
-    :hasFather data:Prince_Wilhelm-Karl_of_Prussia ;
-    :hasMother data:Armgard_Else_Helene_von_Veltheim ;
-    :hasParent data:Armgard_Else_Helene_von_Veltheim,
-        data:Prince_Wilhelm-Karl_of_Prussia ;
-    :hasSex data:male ;
-    :isChildOf data:Armgard_Else_Helene_von_Veltheim,
-        data:Prince_Wilhelm-Karl_of_Prussia ;
-    :isSonOf data:Armgard_Else_Helene_von_Veltheim,
-        data:Prince_Wilhelm-Karl_of_Prussia .
+data:female a :Female .
 
-data:Prince_Oskar_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Oskar of Prussia" ;
-    data:posIndicesFull "134:157",
-        "141:157",
-        "275:298",
-        "282:298" ;
-    data:wdtLink wdt:Q61242 ;
-    :alsoKnownAs "Oskar Karl Gustav Adolf of Prussia",
-        "Oskar of Prussia",
-        "Prince Oskar Karl Gustav Adolf of Prussia" ;
-    :hasChild data:Prince_Wilhelm-Karl_of_Prussia ;
-    :hasFather data:Wilhelm_II ;
-    :hasParent data:Wilhelm_II ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Wilhelm-Karl_of_Prussia ;
-    :isChildOf data:Wilhelm_II ;
-    :isFatherOf data:Prince_Wilhelm-Karl_of_Prussia ;
-    :isParentOf data:Prince_Wilhelm-Karl_of_Prussia ;
-    :isSonOf data:Wilhelm_II .
-
-data:Prince_Wilhelm-Karl_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Wilhelm-Karl of Prussia" ;
-    data:wdtLink wdt:Q92141 ;
-    :alsoKnownAs "Prince Wilhelm Karl of Prussia",
-        "Wilhelm-Karl of Prussia" ;
-    :hasChild data:Oskar_of_Prussia ;
-    :hasFather data:Prince_Oskar_of_Prussia ;
-    :hasMother data:Countess_Ina_Marie_von_Bassewitz ;
-    :hasParent data:Countess_Ina_Marie_von_Bassewitz,
-        data:Prince_Oskar_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Oskar_of_Prussia ;
-    :isChildOf data:Countess_Ina_Marie_von_Bassewitz,
-        data:Prince_Oskar_of_Prussia ;
-    :isFatherOf data:Oskar_of_Prussia ;
-    :isParentOf data:Oskar_of_Prussia ;
-    :isSonOf data:Countess_Ina_Marie_von_Bassewitz,
-        data:Prince_Oskar_of_Prussia .
+data:male a :Male .
 

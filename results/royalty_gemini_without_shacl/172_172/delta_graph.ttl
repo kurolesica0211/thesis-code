@@ -2,19 +2,56 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:PrincessIreneOfGreeceAndDenmark a :Woman ;
-    :hasBirthYear 1942 ;
-    :hasDeathYear 2026 ;
-    :hasFather data:KingPaulOfGreece ;
-    :hasMother data:QueenFredericaOfGreece ;
-    :isSisterOf data:KingConstantineIIOfGreece,
-        data:QueenSofiaOfSpain .
+data:Charles_Stanhope a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Charles_II .
 
-data:KingConstantineIIOfGreece a :Man .
+data:Lady_Sarah_Chatto a :Person,
+        :Woman .
 
-data:KingPaulOfGreece a :Man .
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
 
-data:QueenFredericaOfGreece a :Woman .
+data:Antony_Armstrong-Jones a :Ancestor,
+        :Man,
+        :Person .
 
-data:QueenSofiaOfSpain a :Woman .
+data:Charles_II a :Ancestor,
+        :Man,
+        :Person .
+
+data:David_Armstrong-Jones a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Antony_Armstrong-Jones ;
+    :hasMother data:Princess_Margaret .
+
+data:King_George_VI a :Ancestor,
+        :Man,
+        :Person .
+
+data:Lady_Margarita_Armstrong-Jones a :Person,
+        :Woman ;
+    :hasBirthYear 2002 ;
+    :hasFather data:David_Armstrong-Jones,
+        data:Viscount_Linley_brother ;
+    :hasMother data:Serena_Stanhope .
+
+data:Princess_Margaret a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:King_George_VI ;
+    :hasMother data:Queen_Elizabeth_The_Queen_Mother .
+
+data:Queen_Elizabeth_The_Queen_Mother a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Serena_Stanhope a :Person,
+        :Woman .
+
+data:Viscount_Linley_brother a :Man,
+        :Person ;
+    :hasSister data:Lady_Margarita_Armstrong-Jones .
 

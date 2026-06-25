@@ -85,63 +85,33 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Beatrix*
+Lady Davina Elizabeth Alice Benedikte Windsor (born 19 November 1977) is a member of the British royal family, and is the elder daughter of the Duke and Duchess of Gloucester.
+She was known as Lady Davina Lewis between 2004 and 2018, during her marriage to Gary Lewis.
+Early life and education
 
+Davina Elizabeth Alice Benedikte Windsor was born on 19 November 1977 at St Mary's Hospital, London, the second child of Prince Richard, Duke of Gloucester and Birgitte, Duchess of Gloucester.
+Her godparents are Captain Mark Phillips, the Duke of Buccleuch, Elisabeth, Lady Camoys, Susan Wigley, Roger Wellesley Smith and Caroline, Baroness Rosenørn-Lehn.
+Lady Davina grew up in Kensington Palace.
+Marriage and children
 
-Princess Margriet*Pieter van Vollenhoven*
-
-
-Princess Margriet of the Netherlands (Margriet Francisca; born 19 January 1943) is the third daughter of Queen Juliana and Prince Bernhard.
-As an aunt of the reigning monarch, King Willem-Alexander, she is a member of the Dutch Royal House and currently eighth and last in the line of succession to the throne.
-Princess Margriet has often represented the monarch at official or semi-official events.
-Birth and Canada
-
-Margriet was born to Princess Juliana of the Netherlands and Prince Bernhard of Lippe-Biesterfeld.
-Her mother was heir presumptive to Queen Wilhelmina.
-The Dutch royal family went into exile when the Netherlands was occupied by Nazi Germany in 1940, and went to live in Canada.
-Margriet was born in Ottawa Civic Hospital, Ottawa.
-Thus, the child would be eligible to succeed to the throne of the Netherlands.
-This would have applied if the child had been male, and therefore heir apparent to Juliana, or if her two older sisters died without eligible children.
-That was not necessary, as Canada follows jus soli, while the Netherlands follows jus sanguinis.
-Princess Margriet was named after the marguerite, the flower worn during the war as a symbol of the resistance to Nazi Germany.
-Her godparents included US President Franklin D. Roosevelt, Queen Mary (Queen dowager of the United Kingdom), Märtha, Crown Princess of Norway, and Martine Roell (lady-in-waiting to Princess Juliana in Canada).
-Princess Margriet has continued to visit Canada over the years in an official capacity, as recently as 2017 (Stratford, Ontario and Goderich, Ontario) and 2022 (Ottawa).
-After the war
-
-It was not until August 1945, when the Netherlands had been liberated, that Princess Margriet first set foot on Dutch soil.
-Princess Juliana and Prince Bernhard returned to Soestdijk Palace in Baarn, where the family had lived before the war.
-While she was studying at Leiden University, Princess Margriet met her future husband, Pieter van Vollenhoven.
-It was decreed that any children from the marriage would be titled Prince/Princess of Orange-Nassau, van Vollenhoven, with the style of Highness, titles that would not be held by their descendants.
-Together, they had four sons:
-
-
-The Princess and her husband took up residence in the right wing of Het Loo Palace in Apeldoorn.
-Interests and activities
-
-Princess Margriet is particularly interested in health care and cultural causes.
-From 1987 to 2011 she was vice-president of the Dutch Red Cross, who set up the Princess Margriet Fund in her honour.
-From 1984 to 2007, Princess Margriet was president of the European Cultural Foundation, who set up the Princess Margriet Award for Cultural Diversity in acknowledgement of her work.
-Titles and styles
-
-National honours
-
-Foreign honours
-
-Ancestry
-
-Notes
-
-References
-
-External links
-
-2 also Princess of Lippe-Biesterfeld
+On 31 July 2004, Davina married Gary Christie Lewis (born 15 August 1970), a Māori.
+Lewis is also the first person of known Māori descent to marry a member of the royal family, or to marry the daughter of a British prince.
+As she is a legitimate descendant in the male line of George V and in line to the British throne, the Royal Marriages Act 1772 required that Royal Assent to the wedding be obtained in advance for the marriage to be legal and the descendants thereof to inherit rights of succession to the thrones of the Commonwealth realms, including that of New Zealand.
+The wedding took place on 31 July 2004 at the private chapel of Kensington Palace, Davina's childhood home.
+Apart from the Duke and Duchess of Gloucester and the bride's siblings, no other members of the royal family were present at the wedding; only close friends and family were involved.
+Davina and her former husband have a daughter, Senna Kowhai, who was born on 22 June 2010 and a son, Tāne Mahuta, who was born 25 May 2012.
+Davina was also stepmother to Lewis's son from a previous relationship, Ari (born 1992).
+Davina does not carry out official functions but does attend family events including royal weddings.
+Davina and Gary Lewis were invited to attend the Queen's reception for members of the New Zealand All Blacks at Buckingham Palace in 2005.
+She and her then husband also attended Prince William's wedding in 2011.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -157,39 +127,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -204,6 +144,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -221,6 +178,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -288,29 +260,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -319,6 +283,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -331,6 +303,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -339,17 +313,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -377,6 +353,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -392,73 +452,201 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (56fd4131-9e21-4ac9-a575-7078720bd52f)
- Call ID: 56fd4131-9e21-4ac9-a575-7078720bd52f
-  Args:
-    source: :PrincessMargriet
-    type: :Woman
-  AssignClass (5beb803c-6f01-4abb-b297-463663e445be)
- Call ID: 5beb803c-6f01-4abb-b297-463663e445be
-  Args:
-    source: :PrincessMargriet
-    type: :Person
-  AssignClass (c78912a7-33fe-44bb-b154-7ae98b0daf83)
- Call ID: c78912a7-33fe-44bb-b154-7ae98b0daf83
+  AssignClass (4a1defd0-7410-4e82-8c27-dd4944751daa)
+ Call ID: 4a1defd0-7410-4e82-8c27-dd4944751daa
   Args:
     type: :Woman
-    source: :QueenJuliana
-  AssignClass (80756b02-397e-4c5d-9177-51737260c603)
- Call ID: 80756b02-397e-4c5d-9177-51737260c603
+    source: Lady_Davina_Windsor
+  AssignClass (a79ed015-70b5-4867-b880-42d832903106)
+ Call ID: a79ed015-70b5-4867-b880-42d832903106
   Args:
-    source: :QueenJuliana
+    source: Lady_Davina_Windsor
     type: :Person
-  AssignClass (3c847cd5-9527-49c6-9eac-89f40ac5355f)
- Call ID: 3c847cd5-9527-49c6-9eac-89f40ac5355f
+  AssignClass (e824c932-175e-4daf-8185-a7839a9a6cc3)
+ Call ID: e824c932-175e-4daf-8185-a7839a9a6cc3
   Args:
-    source: :PrinceBernhard
+    source: Prince_Richard_Duke_of_Gloucester
     type: :Man
-  AssignClass (53f535aa-183a-4de0-95fd-075c6f26bef2)
- Call ID: 53f535aa-183a-4de0-95fd-075c6f26bef2
+  AssignClass (1ccd140d-fe56-46b5-a36a-4e17b14fad32)
+ Call ID: 1ccd140d-fe56-46b5-a36a-4e17b14fad32
   Args:
     type: :Person
-    source: :PrinceBernhard
-  AssignClass (528996df-873c-4f8a-b578-bb3e63f547a4)
- Call ID: 528996df-873c-4f8a-b578-bb3e63f547a4
+    source: Prince_Richard_Duke_of_Gloucester
+  AssignClass (f740a021-bd28-4e89-815b-13e5f08049a0)
+ Call ID: f740a021-bd28-4e89-815b-13e5f08049a0
   Args:
-    source: :PieterVanVollenhoven
+    source: Birgitte_Duchess_of_Gloucester
+    type: :Woman
+  AssignClass (cc4cf142-b56d-4c8e-85c1-76eed330d84c)
+ Call ID: cc4cf142-b56d-4c8e-85c1-76eed330d84c
+  Args:
+    source: Birgitte_Duchess_of_Gloucester
+    type: :Person
+  AssignClass (f8dff165-6e56-4c67-ba6c-f090eec00a2a)
+ Call ID: f8dff165-6e56-4c67-ba6c-f090eec00a2a
+  Args:
     type: :Man
-  AssignClass (f0149719-a588-48ef-a144-a6fc21e4d8ec)
- Call ID: f0149719-a588-48ef-a144-a6fc21e4d8ec
+    source: Gary_Christie_Lewis
+  AssignClass (9c98d1c0-f8e3-4be5-81e4-f08de73822a2)
+ Call ID: 9c98d1c0-f8e3-4be5-81e4-f08de73822a2
+  Args:
+    source: Gary_Christie_Lewis
+    type: :Person
+  AssignClass (a2bdb31d-daa7-418d-b7f9-43095a98ee22)
+ Call ID: a2bdb31d-daa7-418d-b7f9-43095a98ee22
+  Args:
+    type: :Woman
+    source: Senna_Kowhai
+  AssignClass (3fa58465-04d2-45e2-9de6-f6568b6a633a)
+ Call ID: 3fa58465-04d2-45e2-9de6-f6568b6a633a
+  Args:
+    source: Senna_Kowhai
+    type: :Person
+  AssignClass (c664c6e0-39d5-408f-838b-90c3d03f6888)
+ Call ID: c664c6e0-39d5-408f-838b-90c3d03f6888
+  Args:
+    type: :Man
+    source: Tane_Mahuta
+  AssignClass (a5f90da5-2807-4a73-8160-e0cf3cc16af5)
+ Call ID: a5f90da5-2807-4a73-8160-e0cf3cc16af5
   Args:
     type: :Person
-    source: :PieterVanVollenhoven
-  AddTriple (26622857-130c-4fff-8547-504199fcd412)
- Call ID: 26622857-130c-4fff-8547-504199fcd412
+    source: Tane_Mahuta
+  AssignClass (ba6a9f6f-d2e5-4886-9fb0-a3a66457cf5d)
+ Call ID: ba6a9f6f-d2e5-4886-9fb0-a3a66457cf5d
   Args:
-    target: :QueenJuliana
-    relation: :hasMother
-    source: :PrincessMargriet
-  AddTriple (c4c9afde-f1ae-4af3-8d78-db36aa673134)
- Call ID: c4c9afde-f1ae-4af3-8d78-db36aa673134
+    source: Ari
+    type: :Man
+  AssignClass (50ab1529-ba93-4b35-91fc-b78ab726c98c)
+ Call ID: 50ab1529-ba93-4b35-91fc-b78ab726c98c
   Args:
-    target: :PrinceBernhard
+    source: Ari
+    type: :Person
+  AddLiteral (e78fd772-e66c-428f-ae6d-057159960733)
+ Call ID: e78fd772-e66c-428f-ae6d-057159960733
+  Args:
+    literal_value: 1977
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: Lady_Davina_Windsor
+  AddLiteral (67f90690-7dfe-4f82-b047-2285a11a6dca)
+ Call ID: 67f90690-7dfe-4f82-b047-2285a11a6dca
+  Args:
+    literal_type: xsd:string
+    literal_value: Lady Davina Lewis
+    source: Lady_Davina_Windsor
+    relation: :formerlyKnownAs
+  AddTriple (73c55fea-80b5-4ee3-8b43-5c006e86a0d6)
+ Call ID: 73c55fea-80b5-4ee3-8b43-5c006e86a0d6
+  Args:
+    source: Lady_Davina_Windsor
     relation: :hasFather
-    source: :PrincessMargriet
-  AddTriple (777cd408-b98c-48d7-9b4a-cc2e22c39b6c)
- Call ID: 777cd408-b98c-48d7-9b4a-cc2e22c39b6c
+    target: Prince_Richard_Duke_of_Gloucester
+  AddTriple (5d5c79c2-fefd-48f9-9441-19dc3ad18574)
+ Call ID: 5d5c79c2-fefd-48f9-9441-19dc3ad18574
   Args:
-    source: :QueenJuliana
-    relation: :isMotherOf
-    target: :PrincessMargriet
-  AddTriple (fb34a0f3-b254-42ba-b53c-66b4368a73ee)
- Call ID: fb34a0f3-b254-42ba-b53c-66b4368a73ee
+    source: Lady_Davina_Windsor
+    relation: :hasMother
+    target: Birgitte_Duchess_of_Gloucester
+  AddTriple (2e63b9fd-66eb-4201-8de3-609ac9ee33eb)
+ Call ID: 2e63b9fd-66eb-4201-8de3-609ac9ee33eb
   Args:
-    target: :PrincessMargriet
-    relation: :isFatherOf
-    source: :PrinceBernhard
-  Finish (e16d5b93-2c9b-4723-a8c1-25d50b1f980a)
- Call ID: e16d5b93-2c9b-4723-a8c1-25d50b1f980a
+    source: Gary_Christie_Lewis
+    target: Ari
+    relation: :hasFather
+  AddTriple (d685c0a2-c235-4fbc-a5c8-86acd9e86253)
+ Call ID: d685c0a2-c235-4fbc-a5c8-86acd9e86253
   Args:
+    source: Senna_Kowhai
+    relation: :hasMother
+    target: Lady_Davina_Windsor
+  AddTriple (8bab0ab2-1ed2-4c8b-b5a9-9c94d0993069)
+ Call ID: 8bab0ab2-1ed2-4c8b-b5a9-9c94d0993069
+  Args:
+    target: Gary_Christie_Lewis
+    relation: :hasFather
+    source: Senna_Kowhai
+  AddTriple (812d2876-7c7d-43b4-b1b4-b42bf324ea9d)
+ Call ID: 812d2876-7c7d-43b4-b1b4-b42bf324ea9d
+  Args:
+    source: Tane_Mahuta
+    relation: :hasMother
+    target: Lady_Davina_Windsor
+  AddTriple (8ecca277-7b2d-4133-afe3-ffd4415486bd)
+ Call ID: 8ecca277-7b2d-4133-afe3-ffd4415486bd
+  Args:
+    source: Tane_Mahuta
+    target: Gary_Christie_Lewis
+    relation: :hasFather
+  AddLiteral (1ca5dac1-938a-406c-88ed-dd4d3da38321)
+ Call ID: 1ca5dac1-938a-406c-88ed-dd4d3da38321
+  Args:
+    relation: :hasBirthYear
+    source: Gary_Christie_Lewis
+    literal_type: xsd:integer
+    literal_value: 1970
+  AddLiteral (b09b6756-9005-44f3-b0e9-c3bd785ed2c1)
+ Call ID: b09b6756-9005-44f3-b0e9-c3bd785ed2c1
+  Args:
+    relation: :hasMarriageYear
+    source: Lady_Davina_Windsor
+    literal_value: 2004
+    literal_type: xsd:integer
+  Finish (0f932016-b500-4818-95b9-b6e6b532e470)
+ Call ID: 0f932016-b500-4818-95b9-b6e6b532e470
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -509,22 +697,39 @@ Look at the messages below to see the final data graph after all the edits.
 The final data graph after all the edits:
   @prefix : <http://example.com/family_TBOX.ttl#> .
   @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:PieterVanVollenhoven a :Man,
+  data:Senna_Kowhai a :Person,
+          :Woman ;
+      :hasFather data:Gary_Christie_Lewis ;
+      :hasMother data:Lady_Davina_Windsor .
+
+  data:Tane_Mahuta a :Man,
+          :Person ;
+      :hasFather data:Gary_Christie_Lewis ;
+      :hasMother data:Lady_Davina_Windsor .
+
+  data:Ari a :Man,
           :Person .
 
-  data:PrinceBernhard a :Man,
+  data:Birgitte_Duchess_of_Gloucester a :Person,
+          :Woman .
+
+  data:Prince_Richard_Duke_of_Gloucester a :Man,
+          :Person .
+
+  data:Gary_Christie_Lewis a :Man,
           :Person ;
-      :isFatherOf data:PrincessMargriet .
+      :hasBirthYear 1970 ;
+      :hasFather data:Ari .
 
-  data:QueenJuliana a :Person,
+  data:Lady_Davina_Windsor a :Person,
           :Woman ;
-      :isMotherOf data:PrincessMargriet .
-
-  data:PrincessMargriet a :Person,
-          :Woman ;
-      :hasFather data:PrinceBernhard ;
-      :hasMother data:QueenJuliana .
+      :formerlyKnownAs "Lady Davina Lewis"^^xsd:string ;
+      :hasBirthYear 1977 ;
+      :hasFather data:Prince_Richard_Duke_of_Gloucester ;
+      :hasMarriageYear 2004 ;
+      :hasMother data:Birgitte_Duchess_of_Gloucester .
 
 
 
@@ -536,78 +741,182 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (db2c3b21-18e6-4fd5-8699-45191631de0b)
- Call ID: db2c3b21-18e6-4fd5-8699-45191631de0b
+  ValidateShacl (5510d1a5-23b8-4b22-9170-b14416c2c31d)
+ Call ID: 5510d1a5-23b8-4b22-9170-b14416c2c31d
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:8
+Total violations:21
 Violations:
 
   Violation [1]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'PrinceBernhard' used for the 'hasFather' property of 'PrincessMargriet' does not have the required ':Ancestor' class assignment.
+      The entity Gary_Christie_Lewis linked to Tane_Mahuta via hasFather is not categorized as an Ancestor or Man.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add ':Ancestor' to 'PrinceBernhard'.
+      AssignClass(node:Gary_Christie_Lewis, class:Man)
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'QueenJuliana' used for the 'hasMother' property of 'PrincessMargriet' does not have the required ':Ancestor' class assignment.
+      The entity Ari linked to Gary_Christie_Lewis via hasFather is not categorized as an Ancestor or Man.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add ':Ancestor' to 'QueenJuliana'.
+      AssignClass(node:Ari, class:Man)
 
 
   Violation [3]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'QueenJuliana' is the subject of an 'isMotherOf' relation but lacks the mandatory ':Ancestor' class.
+      The entity Lady_Davina_Windsor linked to Tane_Mahuta via hasMother is not categorized as an Ancestor or Woman.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add ':Ancestor' to 'QueenJuliana'.
+      AssignClass(node:Lady_Davina_Windsor, class:Woman)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'PrinceBernhard' used for the 'hasFather' property of 'PrincessMargriet' is missing the required ':Ancestor' class assignment.
+      The entity Prince_Richard_Duke_of_Gloucester linked to Lady_Davina_Windsor via hasFather is not categorized as an Ancestor or Man.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add ':Ancestor' to 'PrinceBernhard'.
+      AssignClass(node:Prince_Richard_Duke_of_Gloucester, class:Man)
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'QueenJuliana' used for the 'hasMother' property of 'PrincessMargriet' is missing the required ':Ancestor' class assignment.
+      The entity Gary_Christie_Lewis linked to Senna_Kowhai via hasFather is not categorized as an Ancestor or Man.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add ':Ancestor' to 'QueenJuliana'.
+      AssignClass(node:Gary_Christie_Lewis, class:Man)
 
 
   Violation [6]:
-    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'PrinceBernhard' is the subject of an 'isFatherOf' relation but lacks the mandatory ':Ancestor' class.
+      The entity Gary_Christie_Lewis linked to Tane_Mahuta via hasFather is not categorized as an Ancestor or Man.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add ':Ancestor' to 'PrinceBernhard'.
+      AssignClass(node:Gary_Christie_Lewis, class:Man)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'PrinceBernhard' does not currently hold the ':Ancestor' class, which is required for the 'hasFather' relationship.
+      The entity Ari linked to Gary_Christie_Lewis via hasFather is not categorized as an Ancestor or Man.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add ':Ancestor' to 'PrinceBernhard'.
+      AssignClass(node:Ari, class:Man)
 
 
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'QueenJuliana' does not currently hold the ':Ancestor' class, which is required for the 'hasMother' relationship.
+      The entity Birgitte_Duchess_of_Gloucester linked to Lady_Davina_Windsor via hasMother is not categorized as an Ancestor or Woman.
     LLM-provided instruction on how to handle the violation:
-      Use AssignClass to add ':Ancestor' to 'QueenJuliana'.
+      AssignClass(node:Birgitte_Duchess_of_Gloucester, class:Woman)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Lady_Davina_Windsor linked to Senna_Kowhai via hasMother is not categorized as an Ancestor or Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node:Lady_Davina_Windsor, class:Woman)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Lady_Davina_Windsor linked to Tane_Mahuta via hasMother is not categorized as an Ancestor or Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node:Lady_Davina_Windsor, class:Woman)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Prince_Richard_Duke_of_Gloucester linked to Lady_Davina_Windsor via hasFather is not categorized as an Ancestor or Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node:Prince_Richard_Duke_of_Gloucester, class:Man)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Gary_Christie_Lewis linked to Senna_Kowhai via hasFather is not categorized as an Ancestor or Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node:Gary_Christie_Lewis, class:Man)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Gary_Christie_Lewis linked to Tane_Mahuta via hasFather is not categorized as an Ancestor or Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node:Gary_Christie_Lewis, class:Man)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Ari linked to Gary_Christie_Lewis via hasFather is not categorized as an Ancestor or Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node:Ari, class:Man)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Birgitte_Duchess_of_Gloucester linked to Lady_Davina_Windsor via hasMother is not categorized as an Ancestor or Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node:Birgitte_Duchess_of_Gloucester, class:Woman)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Lady_Davina_Windsor linked to Senna_Kowhai via hasMother is not categorized as an Ancestor or Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node:Lady_Davina_Windsor, class:Woman)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Lady_Davina_Windsor linked to Tane_Mahuta via hasMother is not categorized as an Ancestor or Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node:Lady_Davina_Windsor, class:Woman)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Prince_Richard_Duke_of_Gloucester linked to Lady_Davina_Windsor via hasFather is not categorized as an Ancestor or Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node:Prince_Richard_Duke_of_Gloucester, class:Man)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The entity Gary_Christie_Lewis linked to Senna_Kowhai via hasFather is not categorized as an Ancestor or Man.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node:Gary_Christie_Lewis, class:Man)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Birgitte_Duchess_of_Gloucester linked to Lady_Davina_Windsor via hasMother is not categorized as an Ancestor or Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node:Birgitte_Duchess_of_Gloucester, class:Woman)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The entity Lady_Davina_Windsor linked to Senna_Kowhai via hasMother is not categorized as an Ancestor or Woman.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node:Lady_Davina_Windsor, class:Woman)
 
 
 
@@ -616,19 +925,46 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (b1f74f96-73e5-4ca0-975b-66b3d84b5d3c)
- Call ID: b1f74f96-73e5-4ca0-975b-66b3d84b5d3c
+  AssignClass (1f510f85-a87b-404d-903e-e96f01d5244c)
+ Call ID: 1f510f85-a87b-404d-903e-e96f01d5244c
   Args:
     type: :Ancestor
-    source: :PrinceBernhard
-  AssignClass (46d68a12-0f22-4eb3-bbf0-9ff337fa3fa3)
- Call ID: 46d68a12-0f22-4eb3-bbf0-9ff337fa3fa3
+    source: Lady_Davina_Windsor
+  AssignClass (6cd246f8-419a-40d3-bab3-498448c47a01)
+ Call ID: 6cd246f8-419a-40d3-bab3-498448c47a01
+  Args:
+    source: Gary_Christie_Lewis
+    type: :Ancestor
+  AssignClass (4e67c809-bef8-43f8-b75f-332545670be8)
+ Call ID: 4e67c809-bef8-43f8-b75f-332545670be8
   Args:
     type: :Ancestor
-    source: :QueenJuliana
-  ValidateShacl (0495fb51-117c-4b28-9a38-6346ace77a35)
- Call ID: 0495fb51-117c-4b28-9a38-6346ace77a35
+    source: Prince_Richard_Duke_of_Gloucester
+  AssignClass (faf9b310-cc9b-4d54-93b0-963e828fd405)
+ Call ID: faf9b310-cc9b-4d54-93b0-963e828fd405
   Args:
+    type: :Ancestor
+    source: Birgitte_Duchess_of_Gloucester
+  AssignClass (46f3dee1-6497-46f3-8255-0621eecbf107)
+ Call ID: 46f3dee1-6497-46f3-8255-0621eecbf107
+  Args:
+    source: Ari
+    type: :Ancestor
+  Finish (9c388f04-ab14-4ead-b94e-f9eee507d549)
+ Call ID: 9c388f04-ab14-4ead-b94e-f9eee507d549
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -639,26 +975,58 @@ Look at the messages below to see the final data graph after all the edits.
 The final data graph after all the edits:
   @prefix : <http://example.com/family_TBOX.ttl#> .
   @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:PieterVanVollenhoven a :Man,
+  data:Senna_Kowhai a :Person,
+          :Woman ;
+      :hasFather data:Gary_Christie_Lewis ;
+      :hasMother data:Lady_Davina_Windsor .
+
+  data:Tane_Mahuta a :Man,
+          :Person ;
+      :hasFather data:Gary_Christie_Lewis ;
+      :hasMother data:Lady_Davina_Windsor .
+
+  data:Ari a :Ancestor,
+          :Man,
           :Person .
 
-  data:PrinceBernhard a :Ancestor,
+  data:Birgitte_Duchess_of_Gloucester a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Prince_Richard_Duke_of_Gloucester a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Gary_Christie_Lewis a :Ancestor,
           :Man,
           :Person ;
-      :isFatherOf data:PrincessMargriet .
+      :hasBirthYear 1970 ;
+      :hasFather data:Ari .
 
-  data:QueenJuliana a :Ancestor,
+  data:Lady_Davina_Windsor a :Ancestor,
           :Person,
           :Woman ;
-      :isMotherOf data:PrincessMargriet .
+      :formerlyKnownAs "Lady Davina Lewis"^^xsd:string ;
+      :hasBirthYear 1977 ;
+      :hasFather data:Prince_Richard_Duke_of_Gloucester ;
+      :hasMarriageYear 2004 ;
+      :hasMother data:Birgitte_Duchess_of_Gloucester .
 
-  data:PrincessMargriet a :Person,
-          :Woman ;
-      :hasFather data:PrinceBernhard ;
-      :hasMother data:QueenJuliana .
 
 
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (2a9ba4a1-3804-474e-8cea-4af7fad0bb8c)
+ Call ID: 2a9ba4a1-3804-474e-8cea-4af7fad0bb8c
+  Args:
 
 ================================= Tool Message =================================
 
@@ -668,6 +1036,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (954afa70-f77b-48b2-a31e-e3c08f694fe5)
- Call ID: 954afa70-f77b-48b2-a31e-e3c08f694fe5
+  Finish (06f5e7d0-6ca2-454a-844a-37b0e4546c6b)
+ Call ID: 06f5e7d0-6ca2-454a-844a-37b0e4546c6b
   Args:

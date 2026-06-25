@@ -1,0 +1,138 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Person,
+        :Woman ;
+    rdfs:label "Queen Elizabeth, The Queen Mother"^^xsd:string ;
+    data:posIndicesFull "436:451"^^xsd:string,
+        "452:468"^^xsd:string ;
+    data:posIndicesPart "666:671"^^xsd:string ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Elizabeth Angela Marguerite, Duchess of York"^^xsd:string,
+        "Elizabeth Bowes-Lyon"^^xsd:string,
+        "Elizabeth, Duchess of York"^^xsd:string,
+        "Elizabeth, Queen Consort of the British Empire"^^xsd:string,
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Hon. Elizabeth Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon"^^xsd:string,
+        "Lady Elizabeth Bowes-Lyon"^^xsd:string,
+        "Queen Elizabeth"^^xsd:string,
+        "Queen Elizabeth Angela Marguerite"^^xsd:string,
+        "Queen-Empress Elizabeth"^^xsd:string,
+        "The Queen Mother"^^xsd:string,
+        "The Queen Mum"^^xsd:string ;
+    :hasRelation data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isBloodrelationOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSiblingOf data:Queen_Elizabeth-_The_Queen_Mother ;
+    :isSisterOf data:Queen_Elizabeth-_The_Queen_Mother .
+
+data:David_Bowes-Lyon a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "David Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "214:234"^^xsd:string,
+        "218:234"^^xsd:string ;
+    data:posIndicesPart "478:483"^^xsd:string,
+        "484:488"^^xsd:string,
+        "606:611"^^xsd:string,
+        "612:616"^^xsd:string,
+        "761:766"^^xsd:string,
+        "767:771"^^xsd:string ;
+    data:wdtLink wdt:Q5231604 ;
+    :alsoKnownAs "Hon. Sir David Bowes-Lyon"^^xsd:string,
+        "Sir David Bowes-Lyon"^^xsd:string ;
+    :hasBrother data:David_Bowes-Lyon ;
+    :hasChild data:Simon_Bowes-Lyon ;
+    :hasRelation data:David_Bowes-Lyon,
+        data:Rachel_Spender-Clay,
+        data:Simon_Bowes-Lyon ;
+    :hasSex data:male ;
+    :hasSon data:Simon_Bowes-Lyon ;
+    :isAncestorOf data:Simon_Bowes-Lyon ;
+    :isBloodrelationOf data:David_Bowes-Lyon ;
+    :isBrotherOf data:David_Bowes-Lyon ;
+    :isFatherOf data:Simon_Bowes-Lyon ;
+    :isParentOf data:Simon_Bowes-Lyon ;
+    :isSiblingOf data:David_Bowes-Lyon ;
+    :isUncleOf data:Simon_Bowes-Lyon .
+
+data:Rachel_Spender-Clay a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Rachel Spender-Clay"^^xsd:string ;
+    data:posIndicesFull "251:278"^^xsd:string ;
+    data:posIndicesPart "331:338"^^xsd:string,
+        "339:343"^^xsd:string ;
+    data:wdtLink wdt:Q75240077 ;
+    :alsoKnownAs "Rachel Pauline Spender Clay"^^xsd:string,
+        "Rachel Pauline Spender-Clay"^^xsd:string ;
+    :hasChild data:Simon_Bowes-Lyon ;
+    :hasRelation data:David_Bowes-Lyon,
+        data:Rachel_Spender-Clay,
+        data:Simon_Bowes-Lyon ;
+    :hasSex data:female ;
+    :hasSister data:Rachel_Spender-Clay ;
+    :hasSon data:Simon_Bowes-Lyon ;
+    :isAncestorOf data:Simon_Bowes-Lyon ;
+    :isAuntOf data:Simon_Bowes-Lyon ;
+    :isBloodrelationOf data:Rachel_Spender-Clay ;
+    :isMotherOf data:Simon_Bowes-Lyon ;
+    :isParentOf data:Simon_Bowes-Lyon ;
+    :isSiblingOf data:Rachel_Spender-Clay ;
+    :isSisterOf data:Rachel_Spender-Clay .
+
+data:Simon_Bowes-Lyon a :Man,
+        :Person ;
+    rdfs:label "Simon Bowes-Lyon"^^xsd:string ;
+    data:posIndicesFull "0:30"^^xsd:string,
+        "4:30"^^xsd:string ;
+    data:posIndicesPart "165:170"^^xsd:string,
+        "171:175"^^xsd:string,
+        "478:483"^^xsd:string,
+        "484:488"^^xsd:string,
+        "606:611"^^xsd:string,
+        "612:616"^^xsd:string,
+        "761:766"^^xsd:string,
+        "767:771"^^xsd:string ;
+    data:wdtLink wdt:Q11801765 ;
+    :alsoKnownAs "Simon Alexander Bowes-Lyon"^^xsd:string,
+        "Sir Simon Alexander Bowes-Lyon"^^xsd:string,
+        "Sir Simon Bowes-Lyon"^^xsd:string ;
+    :hasAncestor data:David_Bowes-Lyon,
+        data:Rachel_Spender-Clay ;
+    :hasBrother data:Simon_Bowes-Lyon ;
+    :hasFather data:David_Bowes-Lyon ;
+    :hasMother data:Rachel_Spender-Clay ;
+    :hasParent data:David_Bowes-Lyon,
+        data:Rachel_Spender-Clay ;
+    :hasRelation data:David_Bowes-Lyon,
+        data:Rachel_Spender-Clay,
+        data:Simon_Bowes-Lyon ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Simon_Bowes-Lyon ;
+    :isBrotherOf data:Simon_Bowes-Lyon ;
+    :isChildOf data:David_Bowes-Lyon,
+        data:Rachel_Spender-Clay ;
+    :isSiblingOf data:Simon_Bowes-Lyon ;
+    :isSonOf data:David_Bowes-Lyon,
+        data:Rachel_Spender-Clay .
+

@@ -85,38 +85,19 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Ferdinand Pius (Ferdinando Pio Maria), Duke of Calabria and Castro (25 July 1869, Rome – 7 January 1960, Lindau), was head of the House of Bourbon-Two Sicilies and pretender to the throne of the extinct Kingdom of the Two Sicilies from 1934 to 1960.
-Family
+Princess Anne of Orléans (Anne Hélène Marie; 5 August 1906 – 19 March 1986) was a member of the House of Orléans and the Duchess of Aosta by marriage.
+She was the daughter of Prince Jean, Duke of Guise, and Princess Isabelle of Orléans.
+Marriage and issue
 
-Ferdinand was the eldest child of Prince Alfonso, Count of Caserta and his wife Princess Maria Antonietta of Bourbon-Two Sicilies.
-He was a grandson of Ferdinand II of the Two Sicilies and an older brother of Prince Carlos of Bourbon-Two Sicilies, Maria Immaculata, Princess Johann Georg of Saxony, Maria Cristina, Archduchess Peter Ferdinand of Austria, Maria di Grazia, Princess Imperial of Brazil, Prince Ranieri, Duke of Castro, Prince Philip of Bourbon-Two Sicilies, and Prince Gabriel of Bourbon-Two Sicilies.
-Marriage
-
-Ferdinand married Princess Maria Ludwiga Theresia of Bavaria, daughter of King Ludwig III of Bavaria on 31 May 1897.
-They had six children:
-
-
-Ferdinand and Maria lived for many years at Villa Amsee, Lindau.
-Disputed succession
-
-Following Ferdinand's death, the headship of the House of Bourbon-Two Sicilies was claimed by both his nephew Infante Alfonso, Duke of Calabria, and his brother Prince Ranieri, Duke of Castro, and remains disputed between their descendants.
-The basis of Alfonso’s claim was that his late father, Prince Carlos of Bourbon-Two Sicilies (1870–1949), had been Ferdinand's next oldest brother.
-But Henri, Count of Paris, upheld the claim of Ferdinand's younger brother, Prince Ranieri, Duke of Castro (1883–1973), contending that Carlos had renounced his rights of succession for himself and his descendants in 1901 when he married the Spanish heiress presumptive María de las Mercedes, Princess of Asturias.
-The Count of Paris was well aware that his own claim to the French throne depended on the validity of the renunciation in 1713 of Philip V of Spain, in favor of the junior House of Orléans.
-In 1900, Prince Carlos had executed the Act of Cannes, in anticipation of his marriage to María de las Mercedes, and in 1901 he became a Spanish subject and accepted the title of Infante.
-The position of Ranieri was that by so doing Carlos had renounced any claim to the throne of the Two Sicilies.
-But Alfonso had a different interpretation, which was that the Act of Cannes would have taken effect only if Mercedes and Carlos had succeeded to the Spanish throne.
-He also argued that the Act of Cannes was invalid under the succession rules of the house of Two Sicilies.
-Military service
-
-Ferdinand initially served in the Spanish Army, and after leaving service held the honorary rank of Comandante of the General Staff of the Spanish Army.
-Feld-Artillerie-Regiment "Prinz Ferdinand von Bourbon, Herzog von Calabrien"), which was renamed in honor of him.
+She married at Naples, Italy, on 5 November 1927, her first cousin Prince Amedeo of Savoy, Duke of Aosta (1898–1942).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -132,39 +113,9 @@ Feld-Artillerie-Regiment "Prinz Ferdinand von Bourbon, Herzog von Calabrien"), w
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -179,6 +130,23 @@ Feld-Artillerie-Regiment "Prinz Ferdinand von Bourbon, Herzog von Calabrien"), w
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -196,6 +164,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -263,29 +246,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -294,6 +269,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -306,6 +289,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -314,17 +299,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -352,6 +339,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -367,445 +438,102 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a36a2246-9c55-4f1e-83e2-1e1625ff8926)
- Call ID: a36a2246-9c55-4f1e-83e2-1e1625ff8926
+  AssignClass (ad706b1a-f240-445e-96a3-c6728db12ac4)
+ Call ID: ad706b1a-f240-445e-96a3-c6728db12ac4
   Args:
-    type: :Man
-    source: Prince_Ferdinand_Pius
-  AssignClass (39811b46-ff79-4109-aa91-41a0143dc7ce)
- Call ID: 39811b46-ff79-4109-aa91-41a0143dc7ce
-  Args:
+    source: Anne_of_Orléans
     type: :Person
-    source: Prince_Ferdinand_Pius
-  AddLiteral (763245e2-a198-4b2b-bea7-e39264e0ded5)
- Call ID: 763245e2-a198-4b2b-bea7-e39264e0ded5
+  AssignClass (0b67c42e-cb13-4847-a490-02f6583f5c2d)
+ Call ID: 0b67c42e-cb13-4847-a490-02f6583f5c2d
   Args:
-    literal_type: xsd:string
-    literal_value: Male
-    source: Prince_Ferdinand_Pius
-    relation: :hasSex
-  AddLiteral (df313bc6-032b-40c4-bd8a-090ced291586)
- Call ID: df313bc6-032b-40c4-bd8a-090ced291586
+    source: Anne_of_Orléans
+    type: :Woman
+  AddLiteral (c213c2c3-9e7e-46e1-a0e4-3fc5753d0b58)
+ Call ID: c213c2c3-9e7e-46e1-a0e4-3fc5753d0b58
   Args:
-    source: Prince_Ferdinand_Pius
-    literal_type: xsd:integer
-    literal_value: 1869
+    source: Anne_of_Orléans
     relation: :hasBirthYear
-  AddLiteral (edfc441a-127a-4402-9b6a-8817cb8ff290)
- Call ID: edfc441a-127a-4402-9b6a-8817cb8ff290
+    literal_type: xsd:integer
+    literal_value: 1906
+  AddLiteral (7ad62730-c727-4985-a68e-1960167173f2)
+ Call ID: 7ad62730-c727-4985-a68e-1960167173f2
+  Args:
+    source: Anne_of_Orléans
+    relation: :hasDeathYear
+    literal_value: 1986
+    literal_type: xsd:integer
+  AssignClass (33ae1984-c81d-4216-98bb-8c2685a71a66)
+ Call ID: 33ae1984-c81d-4216-98bb-8c2685a71a66
+  Args:
+    source: Jean_Duke_of_Guise
+    type: :Person
+  AssignClass (bd9d408d-0c55-45ae-ba69-7c118288b15e)
+ Call ID: bd9d408d-0c55-45ae-ba69-7c118288b15e
+  Args:
+    source: Jean_Duke_of_Guise
+    type: :Man
+  AssignClass (ee274d4e-68a1-453f-a186-1d356abb2650)
+ Call ID: ee274d4e-68a1-453f-a186-1d356abb2650
+  Args:
+    source: Isabelle_of_Orléans
+    type: :Person
+  AssignClass (57e46039-7e63-4ada-a08a-a2cf6281d54a)
+ Call ID: 57e46039-7e63-4ada-a08a-a2cf6281d54a
+  Args:
+    source: Isabelle_of_Orléans
+    type: :Woman
+  AddTriple (9a705041-214f-47f6-9af8-f437ceda4584)
+ Call ID: 9a705041-214f-47f6-9af8-f437ceda4584
+  Args:
+    source: Anne_of_Orléans
+    relation: :hasFather
+    target: Jean_Duke_of_Guise
+  AddTriple (93d8cdd9-4cbb-4d7a-867a-af9d673c6701)
+ Call ID: 93d8cdd9-4cbb-4d7a-867a-af9d673c6701
+  Args:
+    target: Isabelle_of_Orléans
+    source: Anne_of_Orléans
+    relation: :hasMother
+  AssignClass (ffd023f2-1b35-4dc4-8919-bf9bd464b34b)
+ Call ID: ffd023f2-1b35-4dc4-8919-bf9bd464b34b
+  Args:
+    source: Amedeo_of_Savoy_Duke_of_Aosta
+    type: :Person
+  AssignClass (263fe98b-a1fd-46e5-b056-d9b9fbaaa03f)
+ Call ID: 263fe98b-a1fd-46e5-b056-d9b9fbaaa03f
+  Args:
+    source: Amedeo_of_Savoy_Duke_of_Aosta
+    type: :Man
+  AddLiteral (1630d95c-217b-48b1-bc1f-0fba102cc22a)
+ Call ID: 1630d95c-217b-48b1-bc1f-0fba102cc22a
+  Args:
+    literal_value: 1898
+    literal_type: xsd:integer
+    source: Amedeo_of_Savoy_Duke_of_Aosta
+    relation: :hasBirthYear
+  AddLiteral (f4a92b4a-4765-4e56-99cd-300c5530acab)
+ Call ID: f4a92b4a-4765-4e56-99cd-300c5530acab
   Args:
     relation: :hasDeathYear
-    literal_value: 1960
+    source: Amedeo_of_Savoy_Duke_of_Aosta
+    literal_value: 1942
     literal_type: xsd:integer
-    source: Prince_Ferdinand_Pius
-  AssignClass (8819f83c-a197-463f-86ce-a5162c28a4e5)
- Call ID: 8819f83c-a197-463f-86ce-a5162c28a4e5
+  AddLiteral (c0664c35-9405-4587-b560-ae80f1470259)
+ Call ID: c0664c35-9405-4587-b560-ae80f1470259
   Args:
-    type: :Man
-    source: Prince_Alfonso_Count_of_Caserta
-  AssignClass (f724b806-cfc2-4404-a0ee-93cf1a1e141c)
- Call ID: f724b806-cfc2-4404-a0ee-93cf1a1e141c
-  Args:
-    type: :Person
-    source: Prince_Alfonso_Count_of_Caserta
-  AssignClass (6b3de6ec-ef86-4b02-8137-08762ede2397)
- Call ID: 6b3de6ec-ef86-4b02-8137-08762ede2397
-  Args:
-    type: :Woman
-    source: Princess_Maria_Antonietta
-  AssignClass (74a62ae9-ad41-4a35-bf4f-1bee506a3cad)
- Call ID: 74a62ae9-ad41-4a35-bf4f-1bee506a3cad
-  Args:
-    type: :Person
-    source: Princess_Maria_Antonietta
-  AddTriple (436ea49c-27bf-46f9-88f2-e6a9d4eb7b34)
- Call ID: 436ea49c-27bf-46f9-88f2-e6a9d4eb7b34
-  Args:
-    source: Prince_Ferdinand_Pius
-    target: Prince_Alfonso_Count_of_Caserta
-    relation: :hasFather
-  AddTriple (4dcd1ffb-18e0-48df-b264-21e1d4fb58f7)
- Call ID: 4dcd1ffb-18e0-48df-b264-21e1d4fb58f7
-  Args:
-    relation: :hasMother
-    source: Prince_Ferdinand_Pius
-    target: Princess_Maria_Antonietta
-  AssignClass (5f40d45e-05ec-49e9-94bf-229f77e53fbc)
- Call ID: 5f40d45e-05ec-49e9-94bf-229f77e53fbc
-  Args:
-    type: :Man
-    source: Ferdinand_II_of_the_Two_Sicilies
-  AssignClass (b6bba988-24e1-47da-bcf8-a3093b03775f)
- Call ID: b6bba988-24e1-47da-bcf8-a3093b03775f
-  Args:
-    type: :Person
-    source: Ferdinand_II_of_the_Two_Sicilies
-  AddTriple (7b14d411-8ed4-4774-91ac-2f7a7187362b)
- Call ID: 7b14d411-8ed4-4774-91ac-2f7a7187362b
-  Args:
-    relation: :hasAncestor
-    target: Ferdinand_II_of_the_Two_Sicilies
-    source: Prince_Ferdinand_Pius
-  AssignClass (8ab50217-0d35-4d72-a0e8-db142c688c50)
- Call ID: 8ab50217-0d35-4d72-a0e8-db142c688c50
-  Args:
-    type: :Man
-    source: Prince_Carlos_of_Bourbon-Two_Sicilies
-  AssignClass (0caf70d9-2823-4d11-a566-09d4802a7122)
- Call ID: 0caf70d9-2823-4d11-a566-09d4802a7122
-  Args:
-    type: :Person
-    source: Prince_Carlos_of_Bourbon-Two_Sicilies
-  AddTriple (738e601f-285f-4b93-bc26-f411319f40c9)
- Call ID: 738e601f-285f-4b93-bc26-f411319f40c9
-  Args:
-    relation: :hasBrother
-    target: Prince_Carlos_of_Bourbon-Two_Sicilies
-    source: Prince_Ferdinand_Pius
-  AssignClass (6605dfcb-89c7-4dd1-aa76-2b8b4205f176)
- Call ID: 6605dfcb-89c7-4dd1-aa76-2b8b4205f176
-  Args:
-    type: :Woman
-    source: Maria_Immaculata
-  AssignClass (3489865c-df81-48de-b548-a82613693b0d)
- Call ID: 3489865c-df81-48de-b548-a82613693b0d
-  Args:
-    type: :Person
-    source: Maria_Immaculata
-  AddTriple (b7708e2b-2c81-4a95-b038-9691ae697fe7)
- Call ID: b7708e2b-2c81-4a95-b038-9691ae697fe7
-  Args:
-    source: Prince_Ferdinand_Pius
-    target: Maria_Immaculata
-    relation: :hasSister
-  AssignClass (a03a4a98-2f46-435b-bc8c-f5bd04d90fee)
- Call ID: a03a4a98-2f46-435b-bc8c-f5bd04d90fee
-  Args:
-    type: :Woman
-    source: Princess_Johann_Georg_of_Saxony
-  AssignClass (085e20ed-ae43-4fab-a88a-1d6159555187)
- Call ID: 085e20ed-ae43-4fab-a88a-1d6159555187
-  Args:
-    type: :Person
-    source: Princess_Johann_Georg_of_Saxony
-  AddTriple (5a16905b-7bb5-4c83-9cff-8032a1031ec2)
- Call ID: 5a16905b-7bb5-4c83-9cff-8032a1031ec2
-  Args:
-    relation: :hasSister
-    target: Princess_Johann_Georg_of_Saxony
-    source: Prince_Ferdinand_Pius
-  AssignClass (f7770b62-26d1-471a-a1d3-c398c52a74da)
- Call ID: f7770b62-26d1-471a-a1d3-c398c52a74da
-  Args:
-    type: :Woman
-    source: Maria_Cristina
-  AssignClass (bd51d115-60fb-4b5a-befd-aba0ea9840d7)
- Call ID: bd51d115-60fb-4b5a-befd-aba0ea9840d7
-  Args:
-    type: :Person
-    source: Maria_Cristina
-  AddTriple (aa643d03-3a76-4130-ac5a-bbd42598d0a8)
- Call ID: aa643d03-3a76-4130-ac5a-bbd42598d0a8
-  Args:
-    relation: :hasSister
-    source: Prince_Ferdinand_Pius
-    target: Maria_Cristina
-  AssignClass (1e7ec991-609e-48df-b7cb-26c157ddb28a)
- Call ID: 1e7ec991-609e-48df-b7cb-26c157ddb28a
-  Args:
-    type: :Woman
-    source: Archduchess_Peter_Ferdinand_of_Austria
-  AssignClass (df390981-0472-42d1-b7c4-d2071e08f0ca)
- Call ID: df390981-0472-42d1-b7c4-d2071e08f0ca
-  Args:
-    type: :Person
-    source: Archduchess_Peter_Ferdinand_of_Austria
-  AddTriple (da53c4c4-d628-4aa3-87ff-84a9fef3060a)
- Call ID: da53c4c4-d628-4aa3-87ff-84a9fef3060a
-  Args:
-    relation: :hasSister
-    target: Archduchess_Peter_Ferdinand_of_Austria
-    source: Prince_Ferdinand_Pius
-  AssignClass (410c4971-9838-48b1-b429-a319bca67ed9)
- Call ID: 410c4971-9838-48b1-b429-a319bca67ed9
-  Args:
-    type: :Woman
-    source: Maria_di_Grazia
-  AssignClass (6dc833e6-3587-4d70-a356-0bcaa63aeedc)
- Call ID: 6dc833e6-3587-4d70-a356-0bcaa63aeedc
-  Args:
-    type: :Person
-    source: Maria_di_Grazia
-  AddTriple (7fba752c-ea57-45ff-a107-3d9d8804a441)
- Call ID: 7fba752c-ea57-45ff-a107-3d9d8804a441
-  Args:
-    relation: :hasSister
-    source: Prince_Ferdinand_Pius
-    target: Maria_di_Grazia
-  AssignClass (7521a987-98fc-4fd1-9f69-29b9c82783e8)
- Call ID: 7521a987-98fc-4fd1-9f69-29b9c82783e8
-  Args:
-    type: :Woman
-    source: Princess_Imperial_of_Brazil
-  AssignClass (2aae18a3-cef6-451e-a7c2-315a2632788c)
- Call ID: 2aae18a3-cef6-451e-a7c2-315a2632788c
-  Args:
-    type: :Person
-    source: Princess_Imperial_of_Brazil
-  AddTriple (dfe38763-7b84-4cf8-9327-341e9f7b2899)
- Call ID: dfe38763-7b84-4cf8-9327-341e9f7b2899
-  Args:
-    relation: :hasSister
-    target: Princess_Imperial_of_Brazil
-    source: Prince_Ferdinand_Pius
-  AssignClass (3d4df2a0-c73b-406b-ae39-c9101c7478fa)
- Call ID: 3d4df2a0-c73b-406b-ae39-c9101c7478fa
-  Args:
-    type: :Man
-    source: Prince_Ranieri_Duke_of_Castro
-  AssignClass (5b28afa0-c756-49ea-a064-ecd65ae9ff5b)
- Call ID: 5b28afa0-c756-49ea-a064-ecd65ae9ff5b
-  Args:
-    type: :Person
-    source: Prince_Ranieri_Duke_of_Castro
-  AddTriple (a8e42ba0-97ed-47c1-9a6a-9e3240fd7241)
- Call ID: a8e42ba0-97ed-47c1-9a6a-9e3240fd7241
-  Args:
-    relation: :hasBrother
-    source: Prince_Ferdinand_Pius
-    target: Prince_Ranieri_Duke_of_Castro
-  AssignClass (db2360ae-f038-492f-b1f2-c17fb80ed8a2)
- Call ID: db2360ae-f038-492f-b1f2-c17fb80ed8a2
-  Args:
-    type: :Man
-    source: Prince_Philip_of_Bourbon-Two_Sicilies
-  AssignClass (e5470f46-a8f1-41b4-bdb8-80e4234f94f6)
- Call ID: e5470f46-a8f1-41b4-bdb8-80e4234f94f6
-  Args:
-    type: :Person
-    source: Prince_Philip_of_Bourbon-Two_Sicilies
-  AddTriple (a69fda12-ed83-4762-9dff-933289caf24d)
- Call ID: a69fda12-ed83-4762-9dff-933289caf24d
-  Args:
-    source: Prince_Ferdinand_Pius
-    target: Prince_Philip_of_Bourbon-Two_Sicilies
-    relation: :hasBrother
-  AssignClass (99eeefc1-5a25-4260-a0b0-19a5889f4379)
- Call ID: 99eeefc1-5a25-4260-a0b0-19a5889f4379
-  Args:
-    type: :Man
-    source: Prince_Gabriel_of_Bourbon-Two_Sicilies
-  AssignClass (f80e7cbd-21ea-4d1f-ae2a-78d2b432f929)
- Call ID: f80e7cbd-21ea-4d1f-ae2a-78d2b432f929
-  Args:
-    type: :Person
-    source: Prince_Gabriel_of_Bourbon-Two_Sicilies
-  AddTriple (1ef04544-f084-4266-9c9d-22916c7034ed)
- Call ID: 1ef04544-f084-4266-9c9d-22916c7034ed
-  Args:
-    target: Prince_Gabriel_of_Bourbon-Two_Sicilies
-    source: Prince_Ferdinand_Pius
-    relation: :hasBrother
-  AssignClass (a77d962c-b3e3-4d4e-b74e-eadf36703849)
- Call ID: a77d962c-b3e3-4d4e-b74e-eadf36703849
-  Args:
-    type: :Woman
-    source: Princess_Maria_Ludwiga_Theresia_of_Bavaria
-  AssignClass (ffa4e66e-6bf1-40b3-9007-cf25513a8622)
- Call ID: ffa4e66e-6bf1-40b3-9007-cf25513a8622
-  Args:
-    type: :Person
-    source: Princess_Maria_Ludwiga_Theresia_of_Bavaria
-  AddLiteral (f69c9f21-c097-4fb8-8149-f7ed3e08c87c)
- Call ID: f69c9f21-c097-4fb8-8149-f7ed3e08c87c
-  Args:
-    source: Prince_Ferdinand_Pius
-    literal_value: 1897
-    literal_type: xsd:integer
     relation: :hasMarriageYear
-  AddTriple (de66d3f0-e9a4-4e72-b1e1-d2d180bd1210)
- Call ID: de66d3f0-e9a4-4e72-b1e1-d2d180bd1210
+    source: Anne_of_Orléans
+    literal_type: xsd:integer
+    literal_value: 1927
+  AddTriple (8e6e45fd-8bb8-495d-97c1-7028455e2af2)
+ Call ID: 8e6e45fd-8bb8-495d-97c1-7028455e2af2
   Args:
-    target: Princess_Maria_Ludwiga_Theresia_of_Bavaria
-    source: Prince_Ferdinand_Pius
+    source: Anne_of_Orléans
     relation: :hasRelation
-  AssignClass (1f58ac34-aefd-4f65-b6a3-ec707f9b1d14)
- Call ID: 1f58ac34-aefd-4f65-b6a3-ec707f9b1d14
+    target: Amedeo_of_Savoy_Duke_of_Aosta
+  Finish (257ac470-e9e3-4851-987f-e98e0f9290a2)
+ Call ID: 257ac470-e9e3-4851-987f-e98e0f9290a2
   Args:
-    type: :Man
-    source: King_Ludwig_III_of_Bavaria
-  AssignClass (3194192e-5a72-446c-8fff-ed9f19fbdb31)
- Call ID: 3194192e-5a72-446c-8fff-ed9f19fbdb31
-  Args:
-    type: :Person
-    source: King_Ludwig_III_of_Bavaria
-  AddTriple (4f7e2508-1845-4861-8995-01e5dfbdea59)
- Call ID: 4f7e2508-1845-4861-8995-01e5dfbdea59
-  Args:
-    relation: :hasFather
-    target: King_Ludwig_III_of_Bavaria
-    source: Princess_Maria_Ludwiga_Theresia_of_Bavaria
-  AssignClass (84c6142f-db3d-44f7-84e1-44411610da25)
- Call ID: 84c6142f-db3d-44f7-84e1-44411610da25
-  Args:
-    type: :Man
-    source: Infante_Alfonso_Duke_of_Calabria
-  AssignClass (e55a819f-7889-4a64-aa79-4cf4ec00ba2b)
- Call ID: e55a819f-7889-4a64-aa79-4cf4ec00ba2b
-  Args:
-    type: :Person
-    source: Infante_Alfonso_Duke_of_Calabria
-  Finish (8216d407-54c5-4cb6-aaaa-ebab7d5e9fc6)
- Call ID: 8216d407-54c5-4cb6-aaaa-ebab7d5e9fc6
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -874,75 +602,25 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Infante_Alfonso_Duke_of_Calabria a :Man,
-          :Person .
-
-  data:Prince_Ferdinand_Pius a :Man,
-          :Person ;
-      :hasAncestor data:Ferdinand_II_of_the_Two_Sicilies ;
-      :hasBirthYear 1869 ;
-      :hasBrother data:Prince_Carlos_of_Bourbon-Two_Sicilies,
-          data:Prince_Gabriel_of_Bourbon-Two_Sicilies,
-          data:Prince_Philip_of_Bourbon-Two_Sicilies,
-          data:Prince_Ranieri_Duke_of_Castro ;
-      :hasDeathYear 1960 ;
-      :hasFather data:Prince_Alfonso_Count_of_Caserta ;
-      :hasMarriageYear 1897 ;
-      :hasMother data:Princess_Maria_Antonietta ;
-      :hasRelation data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
-      :hasSex "Male"^^xsd:string ;
-      :hasSister data:Archduchess_Peter_Ferdinand_of_Austria,
-          data:Maria_Cristina,
-          data:Maria_Immaculata,
-          data:Maria_di_Grazia,
-          data:Princess_Imperial_of_Brazil,
-          data:Princess_Johann_Georg_of_Saxony .
-
-  data:Archduchess_Peter_Ferdinand_of_Austria a :Person,
-          :Woman .
-
-  data:Ferdinand_II_of_the_Two_Sicilies a :Man,
-          :Person .
-
-  data:King_Ludwig_III_of_Bavaria a :Man,
-          :Person .
-
-  data:Maria_Cristina a :Person,
-          :Woman .
-
-  data:Maria_Immaculata a :Person,
-          :Woman .
-
-  data:Maria_di_Grazia a :Person,
-          :Woman .
-
-  data:Prince_Alfonso_Count_of_Caserta a :Man,
-          :Person .
-
-  data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man,
-          :Person .
-
-  data:Prince_Gabriel_of_Bourbon-Two_Sicilies a :Man,
-          :Person .
-
-  data:Prince_Philip_of_Bourbon-Two_Sicilies a :Man,
-          :Person .
-
-  data:Prince_Ranieri_Duke_of_Castro a :Man,
-          :Person .
-
-  data:Princess_Imperial_of_Brazil a :Person,
-          :Woman .
-
-  data:Princess_Johann_Georg_of_Saxony a :Person,
-          :Woman .
-
-  data:Princess_Maria_Antonietta a :Person,
-          :Woman .
-
-  data:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Person,
+  data:Anne_of_Orl%C3%A9ans a :Person,
           :Woman ;
-      :hasFather data:King_Ludwig_III_of_Bavaria .
+      :hasBirthYear 1906 ;
+      :hasDeathYear 1986 ;
+      :hasFather data:Jean_Duke_of_Guise ;
+      :hasMarriageYear 1927 ;
+      :hasMother data:Isabelle_of_Orl%C3%A9ans ;
+      :hasRelation data:Amedeo_of_Savoy_Duke_of_Aosta .
+
+  data:Amedeo_of_Savoy_Duke_of_Aosta a :Man,
+          :Person ;
+      :hasBirthYear 1898 ;
+      :hasDeathYear 1942 .
+
+  data:Isabelle_of_Orl%C3%A9ans a :Person,
+          :Woman .
+
+  data:Jean_Duke_of_Guise a :Man,
+          :Person .
 
 
 
@@ -954,174 +632,291 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (e48c6dad-e2d8-458a-9c4d-3a5bf00c2e83)
- Call ID: e48c6dad-e2d8-458a-9c4d-3a5bf00c2e83
+  ValidateShacl (dc05d3b0-7310-4b9d-9fc8-2a2512c65a28)
+ Call ID: dc05d3b0-7310-4b9d-9fc8-2a2512c65a28
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:20
+Total violations:6
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Prince_Ferdinand_Pius' is not classified as a ':Sex' entity.
+      The node Jean_Duke_of_Guise is assigned as the father of Anne_of_Orléans, but it lacks the required :Ancestor class membership.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Jean_Duke_of_Guise', class=':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Ferdinand_II_of_the_Two_Sicilies' for the property 'hasAncestor' on node 'Prince_Ferdinand_Pius' is not classified as an ':Ancestor'.
+      The node Isabelle_of_Orléans is assigned as the mother of Anne_of_Orléans, but it lacks the required :Ancestor class membership.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Ferdinand_II_of_the_Two_Sicilies', ':Ancestor')
+      AssignClass(node='Isabelle_of_Orléans', class=':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Prince_Alfonso_Count_of_Caserta' for 'hasFather' on 'Prince_Ferdinand_Pius' is not classified as an ':Ancestor'.
+      The node Jean_Duke_of_Guise is assigned as the father of Anne_of_Orléans, but it lacks the required :Ancestor class membership.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Alfonso_Count_of_Caserta', ':Ancestor')
+      AssignClass(node='Jean_Duke_of_Guise', class=':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Princess_Maria_Antonietta' for 'hasMother' on 'Prince_Ferdinand_Pius' is not classified as an ':Ancestor'.
+      The node Isabelle_of_Orléans is assigned as the mother of Anne_of_Orléans, but it lacks the required :Ancestor class membership.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Maria_Antonietta', ':Ancestor')
+      AssignClass(node='Isabelle_of_Orléans', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Jean_Duke_of_Guise is assigned as the father of Anne_of_Orléans, but it lacks the required :Ancestor class membership.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Jean_Duke_of_Guise', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Isabelle_of_Orléans is assigned as the mother of Anne_of_Orléans, but it lacks the required :Ancestor class membership.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Isabelle_of_Orléans', class=':Ancestor')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (536a6304-f476-44dc-9aae-e289bc7ecdfc)
+ Call ID: 536a6304-f476-44dc-9aae-e289bc7ecdfc
+  Args:
+    source: Jean_Duke_of_Guise
+    type: :Ancestor
+  AssignClass (32252dc7-f3ea-4977-ae47-0e8cee46b048)
+ Call ID: 32252dc7-f3ea-4977-ae47-0e8cee46b048
+  Args:
+    source: Isabelle_of_Orléans
+    type: :Ancestor
+  AssignClass (b4af3cba-e38c-4440-990e-233b9cbf607d)
+ Call ID: b4af3cba-e38c-4440-990e-233b9cbf607d
+  Args:
+    source: Anne_of_Orléans
+    type: :Person
+  AssignClass (80d920ca-ecab-4cb2-a4f4-c70addd31b2b)
+ Call ID: 80d920ca-ecab-4cb2-a4f4-c70addd31b2b
+  Args:
+    source: Amedeo_of_Savoy_Duke_of_Aosta
+    type: :Person
+  AddTriple (a0dd296e-2793-4eb1-84a0-c70039a12b66)
+ Call ID: a0dd296e-2793-4eb1-84a0-c70039a12b66
+  Args:
+    relation: :hasSex
+    source: Anne_of_Orléans
+    target: :Female
+  AddTriple (a20174db-40bb-4643-9826-2d494c832c03)
+ Call ID: a20174db-40bb-4643-9826-2d494c832c03
+  Args:
+    target: :Male
+    source: Amedeo_of_Savoy_Duke_of_Aosta
+    relation: :hasSex
+  ValidateShacl (59080b07-c811-40cd-a5a1-6b5d09378075)
+ Call ID: 59080b07-c811-40cd-a5a1-6b5d09378075
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Anne_of_Orl%C3%A9ans a :Person,
+          :Woman ;
+      :hasBirthYear 1906 ;
+      :hasDeathYear 1986 ;
+      :hasFather data:Jean_Duke_of_Guise ;
+      :hasMarriageYear 1927 ;
+      :hasMother data:Isabelle_of_Orl%C3%A9ans ;
+      :hasRelation data:Amedeo_of_Savoy_Duke_of_Aosta ;
+      :hasSex data:Female .
+
+  data:Amedeo_of_Savoy_Duke_of_Aosta a :Man,
+          :Person ;
+      :hasBirthYear 1898 ;
+      :hasDeathYear 1942 ;
+      :hasSex data:Male .
+
+  data:Isabelle_of_Orl%C3%A9ans a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Jean_Duke_of_Guise a :Ancestor,
+          :Man,
+          :Person .
+
+
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:16
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Amedeo_of_Savoy_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [2]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Amedeo_of_Savoy_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [3]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Amedeo_of_Savoy_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [4]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Female' for the property 'hasSex' on node 'Anne_of_Orl%C3%A9ans' is not correctly typed as an instance of the class ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [5]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Prince_Ferdinand_Pius' is missing the required ':Sex' class.
+      The value 'Male' for the property 'hasSex' on node 'Amedeo_of_Savoy_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [6]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Ferdinand_Pius' does not have the required ':Sex' class.
+      The value 'Female' for the property 'hasSex' on node 'Anne_of_Orl%C3%A9ans' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Ferdinand_II_of_the_Two_Sicilies' for 'hasAncestor' on 'Prince_Ferdinand_Pius' is not classified as an ':Ancestor'.
+      The value 'Male' for the property 'hasSex' on node 'Amedeo_of_Savoy_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Ferdinand_II_of_the_Two_Sicilies', ':Ancestor')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'King_Ludwig_III_of_Bavaria' for 'hasFather' on 'Princess_Maria_Ludwiga_Theresia_of_Bavaria' is not classified as an ':Ancestor'.
+      The value 'Female' for the property 'hasSex' on node 'Anne_of_Orl%C3%A9ans' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Ludwig_III_of_Bavaria', ':Ancestor')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Prince_Alfonso_Count_of_Caserta' for 'hasFather' on 'Prince_Ferdinand_Pius' is not classified as an ':Ancestor'.
+      The value 'Male' for the property 'hasSex' on node 'Amedeo_of_Savoy_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Alfonso_Count_of_Caserta', ':Ancestor')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Princess_Maria_Antonietta' for 'hasMother' on 'Prince_Ferdinand_Pius' is not classified as an ':Ancestor'.
+      The value 'Female' for the property 'hasSex' on node 'Anne_of_Orl%C3%A9ans' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Maria_Antonietta', ':Ancestor')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [11]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Ferdinand_Pius' is missing the required ':Sex' class.
+      The value 'Male' for the property 'hasSex' on node 'Amedeo_of_Savoy_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [12]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Ferdinand_Pius' is missing the required ':Sex' class.
+      The value 'Female' for the property 'hasSex' on node 'Anne_of_Orl%C3%A9ans' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [13]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Ferdinand_Pius' is missing the required ':Sex' class.
+      The value 'Male' for the property 'hasSex' on node 'Amedeo_of_Savoy_Duke_of_Aosta' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node='Male', class=':Sex')
 
 
   Violation [14]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Ferdinand_II_of_the_Two_Sicilies' for 'hasAncestor' on 'Prince_Ferdinand_Pius' is not classified as an ':Ancestor'.
+      The value 'Female' for the property 'hasSex' on node 'Anne_of_Orl%C3%A9ans' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Ferdinand_II_of_the_Two_Sicilies', ':Ancestor')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'King_Ludwig_III_of_Bavaria' for 'hasFather' on 'Princess_Maria_Ludwiga_Theresia_of_Bavaria' is not classified as an ':Ancestor'.
+      The value 'Female' for the property 'hasSex' on node 'Anne_of_Orl%C3%A9ans' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Ludwig_III_of_Bavaria', ':Ancestor')
+      AssignClass(node='Female', class=':Sex')
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Alfonso_Count_of_Caserta' for 'hasFather' on 'Prince_Ferdinand_Pius' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Alfonso_Count_of_Caserta', ':Ancestor')
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Maria_Antonietta' for 'hasMother' on 'Prince_Ferdinand_Pius' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Princess_Maria_Antonietta', ':Ancestor')
-
-
-  Violation [18]:
     SHACL message: Value does not have class :Sex
     LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Ferdinand_Pius' is missing the required ':Sex' class.
+      The value 'Female' for the property 'hasSex' on node 'Anne_of_Orl%C3%A9ans' is not correctly typed as an instance of the class ':Sex'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for 'hasSex' on 'Prince_Ferdinand_Pius' is missing the required ':Sex' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'King_Ludwig_III_of_Bavaria' for 'hasFather' on 'Princess_Maria_Ludwiga_Theresia_of_Bavaria' is not classified as an ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Ludwig_III_of_Bavaria', ':Ancestor')
+      AssignClass(node='Female', class=':Sex')
 
 
 
@@ -1130,227 +925,18 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (55387d0d-ce72-4267-84f0-837d771fea8f)
- Call ID: 55387d0d-ce72-4267-84f0-837d771fea8f
+  AssignClass (2bc999b4-87f3-47b4-9cd4-5556087b97b0)
+ Call ID: 2bc999b4-87f3-47b4-9cd4-5556087b97b0
   Args:
-    source: Male
+    source: :Female
     type: :Sex
-  AssignClass (1f88dfd6-92a7-42bd-9125-c6884e8e6f96)
- Call ID: 1f88dfd6-92a7-42bd-9125-c6884e8e6f96
+  AssignClass (ce94503e-d5fc-41f9-8f9b-d99d5f3f98b4)
+ Call ID: ce94503e-d5fc-41f9-8f9b-d99d5f3f98b4
   Args:
-    source: Ferdinand_II_of_the_Two_Sicilies
-    type: :Ancestor
-  AssignClass (9712d783-205a-418f-b50c-1cf28c3c6e4a)
- Call ID: 9712d783-205a-418f-b50c-1cf28c3c6e4a
-  Args:
-    type: :Ancestor
-    source: Prince_Alfonso_Count_of_Caserta
-  AssignClass (6e945ff8-c9ae-4297-9ab4-e51ccb19e7bf)
- Call ID: 6e945ff8-c9ae-4297-9ab4-e51ccb19e7bf
-  Args:
-    type: :Ancestor
-    source: Princess_Maria_Antonietta
-  AssignClass (6d5d5498-e059-4312-8343-101a4457bd23)
- Call ID: 6d5d5498-e059-4312-8343-101a4457bd23
-  Args:
-    type: :Ancestor
-    source: King_Ludwig_III_of_Bavaria
-  ValidateShacl (f38c806f-dfde-4f0a-8cc3-c5b1b732299e)
- Call ID: f38c806f-dfde-4f0a-8cc3-c5b1b732299e
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Infante_Alfonso_Duke_of_Calabria a :Man,
-          :Person .
-
-  data:Male a :Sex .
-
-  data:Prince_Ferdinand_Pius a :Man,
-          :Person ;
-      :hasAncestor data:Ferdinand_II_of_the_Two_Sicilies ;
-      :hasBirthYear 1869 ;
-      :hasBrother data:Prince_Carlos_of_Bourbon-Two_Sicilies,
-          data:Prince_Gabriel_of_Bourbon-Two_Sicilies,
-          data:Prince_Philip_of_Bourbon-Two_Sicilies,
-          data:Prince_Ranieri_Duke_of_Castro ;
-      :hasDeathYear 1960 ;
-      :hasFather data:Prince_Alfonso_Count_of_Caserta ;
-      :hasMarriageYear 1897 ;
-      :hasMother data:Princess_Maria_Antonietta ;
-      :hasRelation data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
-      :hasSex "Male"^^xsd:string ;
-      :hasSister data:Archduchess_Peter_Ferdinand_of_Austria,
-          data:Maria_Cristina,
-          data:Maria_Immaculata,
-          data:Maria_di_Grazia,
-          data:Princess_Imperial_of_Brazil,
-          data:Princess_Johann_Georg_of_Saxony .
-
-  data:Archduchess_Peter_Ferdinand_of_Austria a :Person,
-          :Woman .
-
-  data:Ferdinand_II_of_the_Two_Sicilies a :Ancestor,
-          :Man,
-          :Person .
-
-  data:King_Ludwig_III_of_Bavaria a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Maria_Cristina a :Person,
-          :Woman .
-
-  data:Maria_Immaculata a :Person,
-          :Woman .
-
-  data:Maria_di_Grazia a :Person,
-          :Woman .
-
-  data:Prince_Alfonso_Count_of_Caserta a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man,
-          :Person .
-
-  data:Prince_Gabriel_of_Bourbon-Two_Sicilies a :Man,
-          :Person .
-
-  data:Prince_Philip_of_Bourbon-Two_Sicilies a :Man,
-          :Person .
-
-  data:Prince_Ranieri_Duke_of_Castro a :Man,
-          :Person .
-
-  data:Princess_Imperial_of_Brazil a :Person,
-          :Woman .
-
-  data:Princess_Johann_Georg_of_Saxony a :Person,
-          :Woman .
-
-  data:Princess_Maria_Antonietta a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Person,
-          :Woman ;
-      :hasFather data:King_Ludwig_III_of_Bavaria .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:8
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Prince_Ferdinand_Pius' is not recognized as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Prince_Ferdinand_Pius' is not recognized as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Prince_Ferdinand_Pius' is not recognized as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Prince_Ferdinand_Pius' is not recognized as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Prince_Ferdinand_Pius' is not recognized as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Prince_Ferdinand_Pius' is not recognized as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Prince_Ferdinand_Pius' is not recognized as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on the node 'Prince_Ferdinand_Pius' is not recognized as a member of the class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      Use 'AssignClass' to assign the class ':Sex' to the node 'Male'.
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveLiteral (c65636fa-7872-411b-a1de-c2b8cd350136)
- Call ID: c65636fa-7872-411b-a1de-c2b8cd350136
-  Args:
-    literal_value: Male
-    relation: :hasSex
-    literal_type: xsd:string
-    source: Prince_Ferdinand_Pius
-  AddTriple (5b098be8-84f8-4ac6-a659-c8320d5d8083)
- Call ID: 5b098be8-84f8-4ac6-a659-c8320d5d8083
-  Args:
-    relation: :hasSex
-    source: Prince_Ferdinand_Pius
-    target: Male
-  ValidateShacl (7973bcc3-fa39-4afc-a26c-a391456650fd)
- Call ID: 7973bcc3-fa39-4afc-a26c-a391456650fd
+    source: :Male
+    type: :Sex
+  ValidateShacl (f8964f87-560a-4927-b3c6-2400dbd55ceb)
+ Call ID: f8964f87-560a-4927-b3c6-2400dbd55ceb
   Args:
 
 ================================= Tool Message =================================
@@ -1364,81 +950,33 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Infante_Alfonso_Duke_of_Calabria a :Man,
-          :Person .
+  data:Anne_of_Orl%C3%A9ans a :Person,
+          :Woman ;
+      :hasBirthYear 1906 ;
+      :hasDeathYear 1986 ;
+      :hasFather data:Jean_Duke_of_Guise ;
+      :hasMarriageYear 1927 ;
+      :hasMother data:Isabelle_of_Orl%C3%A9ans ;
+      :hasRelation data:Amedeo_of_Savoy_Duke_of_Aosta ;
+      :hasSex data:Female .
 
-  data:Prince_Ferdinand_Pius a :Man,
+  data:Amedeo_of_Savoy_Duke_of_Aosta a :Man,
           :Person ;
-      :hasAncestor data:Ferdinand_II_of_the_Two_Sicilies ;
-      :hasBirthYear 1869 ;
-      :hasBrother data:Prince_Carlos_of_Bourbon-Two_Sicilies,
-          data:Prince_Gabriel_of_Bourbon-Two_Sicilies,
-          data:Prince_Philip_of_Bourbon-Two_Sicilies,
-          data:Prince_Ranieri_Duke_of_Castro ;
-      :hasDeathYear 1960 ;
-      :hasFather data:Prince_Alfonso_Count_of_Caserta ;
-      :hasMarriageYear 1897 ;
-      :hasMother data:Princess_Maria_Antonietta ;
-      :hasRelation data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
-      :hasSex data:Male ;
-      :hasSister data:Archduchess_Peter_Ferdinand_of_Austria,
-          data:Maria_Cristina,
-          data:Maria_Immaculata,
-          data:Maria_di_Grazia,
-          data:Princess_Imperial_of_Brazil,
-          data:Princess_Johann_Georg_of_Saxony .
+      :hasBirthYear 1898 ;
+      :hasDeathYear 1942 ;
+      :hasSex data:Male .
 
-  data:Archduchess_Peter_Ferdinand_of_Austria a :Person,
+  data:Female a :Sex .
+
+  data:Isabelle_of_Orl%C3%A9ans a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Ferdinand_II_of_the_Two_Sicilies a :Ancestor,
-          :Man,
-          :Person .
-
-  data:King_Ludwig_III_of_Bavaria a :Ancestor,
+  data:Jean_Duke_of_Guise a :Ancestor,
           :Man,
           :Person .
 
   data:Male a :Sex .
-
-  data:Maria_Cristina a :Person,
-          :Woman .
-
-  data:Maria_Immaculata a :Person,
-          :Woman .
-
-  data:Maria_di_Grazia a :Person,
-          :Woman .
-
-  data:Prince_Alfonso_Count_of_Caserta a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man,
-          :Person .
-
-  data:Prince_Gabriel_of_Bourbon-Two_Sicilies a :Man,
-          :Person .
-
-  data:Prince_Philip_of_Bourbon-Two_Sicilies a :Man,
-          :Person .
-
-  data:Prince_Ranieri_Duke_of_Castro a :Man,
-          :Person .
-
-  data:Princess_Imperial_of_Brazil a :Person,
-          :Woman .
-
-  data:Princess_Johann_Georg_of_Saxony a :Person,
-          :Woman .
-
-  data:Princess_Maria_Antonietta a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Person,
-          :Woman ;
-      :hasFather data:King_Ludwig_III_of_Bavaria .
 
 
 
@@ -1450,6 +988,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (21061fb8-932b-424c-9298-dfdb9c75acf5)
- Call ID: 21061fb8-932b-424c-9298-dfdb9c75acf5
+  Finish (7bfda4f9-9688-475d-bd47-92f5b40a7538)
+ Call ID: 7bfda4f9-9688-475d-bd47-92f5b40a7538
   Args:

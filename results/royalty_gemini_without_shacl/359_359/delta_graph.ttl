@@ -2,60 +2,47 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Adolf_of_Schaumburg-Lippe a :Man .
+data:Alfonso_Duke_of_Anjou a :Man,
+        :Person ;
+    :hasBirthYear 1936 ;
+    :hasBrother data:Gonzalo_de_Borbon ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Jaime_Duke_of_Segovia ;
+    :hasMarriageYear 1972 ;
+    :hasMother data:Emanuela_de_Dampierre ;
+    :hasRelation data:Maria_del_Carmen_Martinez-Bordiu_y_Franco .
 
-data:Alexander_Zoubkoff a :Man .
+data:Alfonso_XIII_of_Spain a :Ancestor,
+        :Man .
 
-data:Charlotte_of_Prussia a :Woman ;
-    :hasFather data:Frederick_III_German_Emperor ;
-    :hasMother data:Victoria_Princess_Royal .
+data:Carmen_Franco_y_Polo a :Ancestor,
+        :Woman .
 
-data:Henry_of_Prussia a :Man ;
-    :hasFather data:Frederick_III_German_Emperor ;
-    :hasMother data:Victoria_Princess_Royal .
+data:Cristobal_Martinez-Bordiu a :Ancestor,
+        :Man .
 
-data:Margaret_of_Prussia a :Woman ;
-    :hasFather data:Frederick_III_German_Emperor ;
-    :hasMother data:Victoria_Princess_Royal .
+data:Gonzalo_de_Borbon a :Man,
+        :Person ;
+    :hasFather data:Jaime_Duke_of_Segovia ;
+    :hasMother data:Emanuela_de_Dampierre .
 
-data:Sigismund_of_Prussia a :Man ;
-    :hasFather data:Frederick_III_German_Emperor ;
-    :hasMother data:Victoria_Princess_Royal .
+data:Maria_del_Carmen_Martinez-Bordiu_y_Franco a :Person,
+        :Woman ;
+    :hasFather data:Cristobal_Martinez-Bordiu ;
+    :hasMother data:Carmen_Franco_y_Polo .
 
-data:Sophie_of_Prussia a :Woman ;
-    :hasFather data:Frederick_III_German_Emperor ;
-    :hasMother data:Victoria_Princess_Royal .
+data:Roger_Duke_of_San_Lorenzo a :Ancestor,
+        :Man .
 
-data:Viktoria_of_Prussia a :Woman ;
-    :alsoKnownAs "Friederike Amalia Wilhelmine Viktoria"^^xsd:string ;
-    :hasBirthYear 1866 ;
-    :hasDeathYear 1929 ;
-    :hasFather data:Frederick_III_German_Emperor ;
-    :hasMarriageYear 1890,
-        1927 ;
-    :hasMother data:Victoria_Princess_Royal .
+data:Vittoria_Ruspoli a :Ancestor,
+        :Woman .
 
-data:Waldemar_of_Prussia a :Man ;
-    :hasFather data:Frederick_III_German_Emperor ;
-    :hasMother data:Victoria_Princess_Royal .
+data:Emanuela_de_Dampierre a :Ancestor,
+        :Woman ;
+    :hasFather data:Roger_Duke_of_San_Lorenzo ;
+    :hasMother data:Vittoria_Ruspoli .
 
-data:Wilhelm_II_German_Emperor a :Man ;
-    :hasFather data:Frederick_III_German_Emperor ;
-    :hasMother data:Victoria_Princess_Royal .
-
-data:Augusta_of_Saxe-Weimar a :Woman .
-
-data:Prince_Albert a :Man .
-
-data:Queen_Victoria a :Woman .
-
-data:Wilhelm_I_German_Emperor a :Man .
-
-data:Frederick_III_German_Emperor a :Man ;
-    :hasFather data:Wilhelm_I_German_Emperor ;
-    :hasMother data:Augusta_of_Saxe-Weimar .
-
-data:Victoria_Princess_Royal a :Woman ;
-    :hasFather data:Prince_Albert ;
-    :hasMother data:Queen_Victoria .
+data:Jaime_Duke_of_Segovia a :Ancestor,
+        :Man ;
+    :hasFather data:Alfonso_XIII_of_Spain .
 

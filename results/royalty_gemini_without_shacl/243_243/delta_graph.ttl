@@ -2,31 +2,37 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Alexander_Karageorgevitch a :Man,
-        :Person ;
-    :alsoKnownAs "Prince Aleksandar III Karađorđević"^^xsd:string,
-        "Prince Alexander of Serbia and Yugoslavia"^^xsd:string ;
-    :hasBirthYear 1982 ;
-    :hasFather data:Alexander_Sr_Yugoslavia ;
-    :hasMother data:Maria_da_Gloria_Orleans_Braganza .
-
-data:Ana_Luna_Medina_y_Orleans_Braganza a :Person,
+data:Marija_Karadordevic a :Person,
         :Woman ;
-    :hasMother data:Maria_da_Gloria_Orleans_Braganza .
+    :hasFather data:Filip_Karadordevic ;
+    :hasMother data:Danica_Marinkovic .
 
-data:Ignacio_19th_Duke_of_Segorbe a :Man,
+data:Stefan_Karadordevic a :Man,
+        :Person ;
+    :hasFather data:Filip_Karadordevic ;
+    :hasMother data:Danica_Marinkovic .
+
+data:Alexander_Karadordevic a :Man,
         :Person .
 
-data:Katherine_Clairy_Batis a :Person,
+data:Male a :Sex .
+
+data:Maria_da_Gloria a :Person,
         :Woman .
 
-data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,
-        :Woman ;
-    :hasMother data:Maria_da_Gloria_Orleans_Braganza .
-
-data:Alexander_Sr_Yugoslavia a :Man,
+data:Peter_Karadordevic a :Man,
         :Person .
 
-data:Maria_da_Gloria_Orleans_Braganza a :Person,
+data:Filip_Karadordevic a :Man,
+        :Person ;
+    :hasBirthYear 1982 ;
+    :hasFather data:Alexander_Karadordevic ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasRelation data:Danica_Marinkovic ;
+    :hasSex data:Male ;
+    :isSiblingOf data:Peter_Karadordevic .
+
+data:Danica_Marinkovic a :Person,
         :Woman .
 

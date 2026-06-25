@@ -4,20 +4,13 @@
         "iteration": 1,
         "source": "post_edits",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:James_Edward_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1953 ;\n    :hasFather data:7th_Earl_of_Harewood ;\n    :hasMother data:Marion ;\n    :hasSex data:Male ;\n    :isBloodrelationOf data:King_Charles_III .\n\ndata:7th_Earl_of_Harewood a :Man,\n        :Person .\n\ndata:King_Charles_III a :Person .\n\ndata:Marion a :Person,\n        :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena_of_Monpezat a :Person,\n        :Woman ;\n    :hasBirthYear 2012 ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Princess_Marie_of_Denmark ;\n    :isSiblingOf data:Felix,\n        data:Henrik,\n        data:Nikolai ;\n    :knownAs \"Athena Marguerite Fran\u00e7oise Marie\"^^xsd:string .\n\ndata:King_Frederik_X a :Man,\n        :Person .\n\ndata:Felix a :Man,\n        :Person .\n\ndata:Henrik a :Man,\n        :Person .\n\ndata:Nikolai a :Man,\n        :Person .\n\ndata:Prince_Henrik a :Man,\n        :Person .\n\ndata:Prince_Joachim a :Man,\n        :Person ;\n    :hasParent data:Prince_Henrik,\n        data:Queen_Margrethe_II .\n\ndata:Princess_Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Queen_Margrethe_II a :Person,\n        :Woman .\n\n"
     },
     {
         "graph_type": "data_graph",
-        "iteration": 2,
-        "source": "post_edits",
-        "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:James_Edward_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1953 ;\n    :hasFather data:7th_Earl_of_Harewood ;\n    :hasMother data:Marion ;\n    :hasSex data:Male ;\n    :isBloodrelationOf data:King_Charles_III .\n\ndata:7th_Earl_of_Harewood a :Man,\n        :Person .\n\ndata:King_Charles_III a :Person .\n\ndata:Male a :Sex .\n\ndata:Marion a :Person,\n        :Woman .\n\n"
-    },
-    {
-        "graph_type": "data_graph",
-        "iteration": 2,
+        "iteration": 1,
         "source": "final_data_graph",
         "tool_call_id": null,
-        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:James_Edward_Lascelles a :Man,\n        :Person ;\n    :hasBirthYear 1953 ;\n    :hasFather data:7th_Earl_of_Harewood ;\n    :hasMother data:Marion ;\n    :hasSex data:Male ;\n    :isBloodrelationOf data:King_Charles_III .\n\ndata:7th_Earl_of_Harewood a :Man,\n        :Person .\n\ndata:King_Charles_III a :Person .\n\ndata:Male a :Sex .\n\ndata:Marion a :Person,\n        :Woman .\n\n"
+        "graph": "@prefix : <http://example.com/family_TBOX.ttl#> .\n@prefix data: <http://example.org/data/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\ndata:Athena_of_Monpezat a :Person,\n        :Woman ;\n    :hasBirthYear 2012 ;\n    :hasFather data:Prince_Joachim ;\n    :hasMother data:Princess_Marie_of_Denmark ;\n    :isSiblingOf data:Felix,\n        data:Henrik,\n        data:Nikolai ;\n    :knownAs \"Athena Marguerite Fran\u00e7oise Marie\"^^xsd:string .\n\ndata:King_Frederik_X a :Man,\n        :Person .\n\ndata:Felix a :Man,\n        :Person .\n\ndata:Henrik a :Man,\n        :Person .\n\ndata:Nikolai a :Man,\n        :Person .\n\ndata:Prince_Henrik a :Man,\n        :Person .\n\ndata:Prince_Joachim a :Man,\n        :Person ;\n    :hasParent data:Prince_Henrik,\n        data:Queen_Margrethe_II .\n\ndata:Princess_Marie_of_Denmark a :Person,\n        :Woman .\n\ndata:Queen_Margrethe_II a :Person,\n        :Woman .\n\n"
     }
 ]

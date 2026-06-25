@@ -96,6 +96,8 @@ Under the stage name Achi Miller, he had a minor role in the 2023 film No Hard F
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -111,39 +113,9 @@ Under the stage name Achi Miller, he had a minor role in the 2023 film No Hard F
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -158,6 +130,23 @@ Under the stage name Achi Miller, he had a minor role in the 2023 film No Hard F
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -175,6 +164,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -242,29 +246,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -273,6 +269,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -285,6 +289,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -293,17 +299,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -331,6 +339,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -346,160 +438,110 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (171b4776-554c-4a79-b838-5daa041605e0)
- Call ID: 171b4776-554c-4a79-b838-5daa041605e0
+  AssignClass (878e2275-e4ba-430f-90fa-8047b3a1c682)
+ Call ID: 878e2275-e4ba-430f-90fa-8047b3a1c682
+  Args:
+    type: :Woman
+    source: Anne-Marie_of_Denmark
+  AssignClass (ad594bb5-683f-41cb-a855-ae760fd6c2a4)
+ Call ID: ad594bb5-683f-41cb-a855-ae760fd6c2a4
+  Args:
+    type: :Woman
+    source: Sofia_of_Spain
+  AssignClass (55078dd8-b4ba-4c37-b456-36eb4c2cc4aa)
+ Call ID: 55078dd8-b4ba-4c37-b456-36eb4c2cc4aa
+  Args:
+    source: Marina
+    type: :Woman
+  AssignClass (5d8771c8-66f8-402f-9ff0-a97ad32a0f8d)
+ Call ID: 5d8771c8-66f8-402f-9ff0-a97ad32a0f8d
+  Args:
+    type: :Man
+    source: Prince_Michael
+  AssignClass (c611d65d-9500-4c4f-8d77-adea2b74ca8b)
+ Call ID: c611d65d-9500-4c4f-8d77-adea2b74ca8b
   Args:
     type: :Man
     source: Achileas-Andreas_of_Greece_and_Denmark
-  AssignClass (9a6f1216-4a6b-4e99-bbce-625bcd44adc5)
- Call ID: 9a6f1216-4a6b-4e99-bbce-625bcd44adc5
+  AssignClass (a22d8117-b6ee-47ee-82d3-8846260136cd)
+ Call ID: a22d8117-b6ee-47ee-82d3-8846260136cd
   Args:
-    type: :Person
-    source: Achileas-Andreas_of_Greece_and_Denmark
-  AddLiteral (f76353fd-a773-433c-91ca-b4f649d856f3)
- Call ID: f76353fd-a773-433c-91ca-b4f649d856f3
+    source: Crown_Prince_Pavlos_of_Greece
+    type: :Man
+  AssignClass (95060041-4561-4e4a-9a61-340b56a12777)
+ Call ID: 95060041-4561-4e4a-9a61-340b56a12777
   Args:
-    literal_type: xsd:string
-    relation: :knownAs
+    type: :Woman
+    source: Marie-Chantal_Miller
+  AssignClass (443574d4-6769-4144-b73a-34a367b1c986)
+ Call ID: 443574d4-6769-4144-b73a-34a367b1c986
+  Args:
+    source: Constantine_II_of_Greece
+    type: :Man
+  AssignClass (e9cbc450-2066-4ded-a5f9-7b7ee46dba0d)
+ Call ID: e9cbc450-2066-4ded-a5f9-7b7ee46dba0d
+  Args:
+    source: Princess_Theodora_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (26fb954f-a87b-4992-a967-1851326f88cf)
+ Call ID: 26fb954f-a87b-4992-a967-1851326f88cf
+  Args:
+    source: Matthew_Kumar
+    type: :Man
+  AssignClass (2ac715df-fcef-451e-80d9-4c62ef5829a2)
+ Call ID: 2ac715df-fcef-451e-80d9-4c62ef5829a2
+  Args:
+    type: :Woman
+    source: Isabella_Massenet
+  AssignClass (c51dc61d-8da2-4d07-9c75-1c111e1f095f)
+ Call ID: c51dc61d-8da2-4d07-9c75-1c111e1f095f
+  Args:
+    source: Natalie_Massenet
+    type: :Woman
+  AddLiteral (5c3461e5-5957-493a-a328-4f373851ced2)
+ Call ID: 5c3461e5-5957-493a-a328-4f373851ced2
+  Args:
     literal_value: Achi Miller
     source: Achileas-Andreas_of_Greece_and_Denmark
-  AddLiteral (bd6d4dad-f30f-4e65-8693-69079bc39131)
- Call ID: bd6d4dad-f30f-4e65-8693-69079bc39131
+    literal_type: xsd:string
+    relation: :knownAs
+  AddLiteral (7750dfca-e921-4566-9438-2801845be7e7)
+ Call ID: 7750dfca-e921-4566-9438-2801845be7e7
   Args:
     literal_type: xsd:integer
     relation: :hasBirthYear
     source: Achileas-Andreas_of_Greece_and_Denmark
     literal_value: 2000
-  AssignClass (f535d85e-c0df-46cf-9b73-f96371c8a8e1)
- Call ID: f535d85e-c0df-46cf-9b73-f96371c8a8e1
+  AddTriple (33673114-54d7-48bc-9fe1-9e7f36983637)
+ Call ID: 33673114-54d7-48bc-9fe1-9e7f36983637
   Args:
-    type: :Man
-    source: Pavlos_of_Greece
-  AssignClass (583b7d87-de52-45ee-b1ef-c4e1b8b9a3d8)
- Call ID: 583b7d87-de52-45ee-b1ef-c4e1b8b9a3d8
-  Args:
-    source: Pavlos_of_Greece
-    type: :Person
-  AddTriple (bf2fbd71-848b-4c76-a439-1b5b01ad5368)
- Call ID: bf2fbd71-848b-4c76-a439-1b5b01ad5368
-  Args:
-    target: Pavlos_of_Greece
+    source: Achileas-Andreas_of_Greece_and_Denmark
+    target: Crown_Prince_Pavlos_of_Greece
     relation: :hasFather
-    source: Achileas-Andreas_of_Greece_and_Denmark
-  AssignClass (a44bbada-65fd-4a4b-9b97-352c58b14419)
- Call ID: a44bbada-65fd-4a4b-9b97-352c58b14419
+  AddTriple (557137b4-5f12-4819-bcd6-cd5bda1af908)
+ Call ID: 557137b4-5f12-4819-bcd6-cd5bda1af908
   Args:
-    source: Marie-Chantal_Miller
-    type: :Woman
-  AssignClass (c6e9ba2b-82a9-4c2c-a9d5-c1f29b9efbf8)
- Call ID: c6e9ba2b-82a9-4c2c-a9d5-c1f29b9efbf8
-  Args:
-    type: :Person
-    source: Marie-Chantal_Miller
-  AddTriple (61311704-e88c-4534-9c1f-38db799b3941)
- Call ID: 61311704-e88c-4534-9c1f-38db799b3941
-  Args:
-    source: Achileas-Andreas_of_Greece_and_Denmark
     target: Marie-Chantal_Miller
     relation: :hasMother
-  AssignClass (dfd8a274-fc6c-4029-99d1-b15d21d6ecee)
- Call ID: dfd8a274-fc6c-4029-99d1-b15d21d6ecee
+    source: Achileas-Andreas_of_Greece_and_Denmark
+  AddTriple (a343b001-d5b0-4733-8294-69f318030cde)
+ Call ID: a343b001-d5b0-4733-8294-69f318030cde
   Args:
-    source: Constantine_II_of_Greece
-    type: :Man
-  AssignClass (78e7d6c5-671d-41d0-8e98-857106c582a4)
- Call ID: 78e7d6c5-671d-41d0-8e98-857106c582a4
-  Args:
-    type: :Person
-    source: Constantine_II_of_Greece
-  AddTriple (aa2ce01b-f63b-4405-b4a3-963297cb5757)
- Call ID: aa2ce01b-f63b-4405-b4a3-963297cb5757
-  Args:
-    source: Pavlos_of_Greece
     target: Constantine_II_of_Greece
     relation: :hasFather
-  AssignClass (38020480-cb51-40c2-baf9-c3cecd039268)
- Call ID: 38020480-cb51-40c2-baf9-c3cecd039268
+    source: Achileas-Andreas_of_Greece_and_Denmark
+  AddTriple (896f9d6c-6e11-4a8d-8cd4-d6ef8a6a3236)
+ Call ID: 896f9d6c-6e11-4a8d-8cd4-d6ef8a6a3236
   Args:
-    type: :Woman
-    source: Anne-Marie_of_Denmark
-  AssignClass (66880653-d03f-4bf2-a1a2-e2f8194321db)
- Call ID: 66880653-d03f-4bf2-a1a2-e2f8194321db
-  Args:
-    source: Anne-Marie_of_Denmark
-    type: :Person
-  AddTriple (049584f1-4b82-43e2-82f9-82cacf433b40)
- Call ID: 049584f1-4b82-43e2-82f9-82cacf433b40
-  Args:
-    target: Anne-Marie_of_Denmark
     relation: :hasMother
-    source: Pavlos_of_Greece
-  AssignClass (21eaede7-6a46-4e90-8d51-116911ec8c14)
- Call ID: 21eaede7-6a46-4e90-8d51-116911ec8c14
-  Args:
-    source: Theodora_of_Greece_and_Denmark
-    type: :Woman
-  AssignClass (f28fe8d2-3ec2-4caf-afeb-4899309ae465)
- Call ID: f28fe8d2-3ec2-4caf-afeb-4899309ae465
-  Args:
-    source: Theodora_of_Greece_and_Denmark
-    type: :Person
-  AssignClass (b3d6b8a9-c19d-4a91-8421-50eb8fa4f89f)
- Call ID: b3d6b8a9-c19d-4a91-8421-50eb8fa4f89f
-  Args:
-    type: :Man
-    source: Matthew_Kumar
-  AssignClass (1de8e1f2-69b3-4026-97ba-0193f29e0912)
- Call ID: 1de8e1f2-69b3-4026-97ba-0193f29e0912
-  Args:
-    type: :Person
-    source: Matthew_Kumar
-  AssignClass (49f89b68-eaef-4256-b4f4-754f3ab084dd)
- Call ID: 49f89b68-eaef-4256-b4f4-754f3ab084dd
+    target: Anne-Marie_of_Denmark
+    source: Achileas-Andreas_of_Greece_and_Denmark
+  AddTriple (e77e8890-c926-4275-aff4-67bc357b6a3e)
+ Call ID: e77e8890-c926-4275-aff4-67bc357b6a3e
   Args:
     source: Isabella_Massenet
-    type: :Woman
-  AssignClass (5f2679ff-56dc-4334-934e-15c100b9c034)
- Call ID: 5f2679ff-56dc-4334-934e-15c100b9c034
-  Args:
-    type: :Person
-    source: Isabella_Massenet
-  AssignClass (cc5c7ab3-389a-4324-bd58-c9e63cebc92f)
- Call ID: cc5c7ab3-389a-4324-bd58-c9e63cebc92f
-  Args:
-    source: Natalie_Massenet
-    type: :Woman
-  AssignClass (d34fcf13-d2f4-4f25-b0c8-4cc18e0db3da)
- Call ID: d34fcf13-d2f4-4f25-b0c8-4cc18e0db3da
-  Args:
-    source: Natalie_Massenet
-    type: :Person
-  AddTriple (f79f209c-85bd-45d6-a9b1-5295f7e88a4b)
- Call ID: f79f209c-85bd-45d6-a9b1-5295f7e88a4b
-  Args:
     relation: :hasMother
     target: Natalie_Massenet
-    source: Isabella_Massenet
-  AssignClass (1b8e670c-442f-4b3f-a0be-fdbd173828af)
- Call ID: 1b8e670c-442f-4b3f-a0be-fdbd173828af
-  Args:
-    source: Sofia_of_Spain
-    type: :Woman
-  AssignClass (2319c221-cc28-4ae5-8109-c92481f78ac0)
- Call ID: 2319c221-cc28-4ae5-8109-c92481f78ac0
-  Args:
-    type: :Person
-    source: Sofia_of_Spain
-  AssignClass (929b3a3e-a6f7-42f4-85dd-870e6d145a46)
- Call ID: 929b3a3e-a6f7-42f4-85dd-870e6d145a46
-  Args:
-    source: Marina_consort_of_Prince_Michael
-    type: :Woman
-  AssignClass (024d3552-486a-45b8-ad7a-b890649454bc)
- Call ID: 024d3552-486a-45b8-ad7a-b890649454bc
-  Args:
-    type: :Person
-    source: Marina_consort_of_Prince_Michael
-  Finish (3d7497e4-4fe0-41c4-acf7-5f6657fe122a)
- Call ID: 3d7497e4-4fe0-41c4-acf7-5f6657fe122a
+  Finish (1906d5c8-f740-454b-99de-6f99feeb4973)
+ Call ID: 1906d5c8-f740-454b-99de-6f99feeb4973
   Args:

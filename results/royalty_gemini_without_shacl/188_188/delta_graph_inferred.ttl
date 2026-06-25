@@ -1,0 +1,133 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlfonsoXIIOfSpain a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlfonsoXIIOfSpain ;
+    :hasChild data:MariaTeresaOfSpain ;
+    :hasDaughter data:MariaTeresaOfSpain ;
+    :hasRelation data:AlfonsoXIIOfSpain,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLaPazOfSpain,
+        data:MariaTeresaOfSpain,
+        data:PrinceFerdinandOfBavaria,
+        data:PrinceLudwigFerdinandOfBavaria ;
+    :isAncestorOf data:MariaTeresaOfSpain ;
+    :isBloodrelationOf data:AlfonsoXIIOfSpain ;
+    :isBrotherOf data:AlfonsoXIIOfSpain ;
+    :isFatherOf data:MariaTeresaOfSpain ;
+    :isParentOf data:MariaTeresaOfSpain ;
+    :isSiblingOf data:AlfonsoXIIOfSpain ;
+    :isUncleOf data:MariaTeresaOfSpain .
+
+data:MariaChristinaOfAustria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:MariaTeresaOfSpain ;
+    :hasDaughter data:MariaTeresaOfSpain ;
+    :hasRelation data:AlfonsoXIIOfSpain,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLaPazOfSpain,
+        data:MariaTeresaOfSpain,
+        data:PrinceFerdinandOfBavaria,
+        data:PrinceLudwigFerdinandOfBavaria ;
+    :hasSister data:MariaChristinaOfAustria ;
+    :isAncestorOf data:MariaTeresaOfSpain ;
+    :isAuntOf data:MariaTeresaOfSpain ;
+    :isBloodrelationOf data:MariaChristinaOfAustria ;
+    :isMotherOf data:MariaTeresaOfSpain ;
+    :isParentOf data:MariaTeresaOfSpain ;
+    :isSiblingOf data:MariaChristinaOfAustria ;
+    :isSisterOf data:MariaChristinaOfAustria .
+
+data:MariaDeLaPazOfSpain a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrinceFerdinandOfBavaria ;
+    :hasRelation data:AlfonsoXIIOfSpain,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLaPazOfSpain,
+        data:MariaTeresaOfSpain,
+        data:PrinceFerdinandOfBavaria,
+        data:PrinceLudwigFerdinandOfBavaria ;
+    :hasSister data:MariaDeLaPazOfSpain ;
+    :hasSon data:PrinceFerdinandOfBavaria ;
+    :isAncestorOf data:PrinceFerdinandOfBavaria ;
+    :isAuntOf data:PrinceFerdinandOfBavaria ;
+    :isBloodrelationOf data:MariaDeLaPazOfSpain ;
+    :isMotherOf data:PrinceFerdinandOfBavaria ;
+    :isParentOf data:PrinceFerdinandOfBavaria ;
+    :isSiblingOf data:MariaDeLaPazOfSpain ;
+    :isSisterOf data:MariaDeLaPazOfSpain .
+
+data:PrinceLudwigFerdinandOfBavaria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceLudwigFerdinandOfBavaria ;
+    :hasChild data:PrinceFerdinandOfBavaria ;
+    :hasRelation data:AlfonsoXIIOfSpain,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLaPazOfSpain,
+        data:MariaTeresaOfSpain,
+        data:PrinceFerdinandOfBavaria,
+        data:PrinceLudwigFerdinandOfBavaria ;
+    :hasSon data:PrinceFerdinandOfBavaria ;
+    :isAncestorOf data:PrinceFerdinandOfBavaria ;
+    :isBloodrelationOf data:PrinceLudwigFerdinandOfBavaria ;
+    :isBrotherOf data:PrinceLudwigFerdinandOfBavaria ;
+    :isFatherOf data:PrinceFerdinandOfBavaria ;
+    :isParentOf data:PrinceFerdinandOfBavaria ;
+    :isSiblingOf data:PrinceLudwigFerdinandOfBavaria ;
+    :isUncleOf data:PrinceFerdinandOfBavaria .
+
+data:MariaTeresaOfSpain a :Person,
+        :Woman ;
+    :hasAncestor data:AlfonsoXIIOfSpain,
+        data:MariaChristinaOfAustria ;
+    :hasBirthYear 1882 ;
+    :hasDeathYear 1912 ;
+    :hasFather data:AlfonsoXIIOfSpain ;
+    :hasMarriageYear 1906 ;
+    :hasMother data:MariaChristinaOfAustria ;
+    :hasParent data:AlfonsoXIIOfSpain,
+        data:MariaChristinaOfAustria ;
+    :hasRelation data:AlfonsoXIIOfSpain,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLaPazOfSpain,
+        data:MariaTeresaOfSpain,
+        data:PrinceFerdinandOfBavaria,
+        data:PrinceLudwigFerdinandOfBavaria ;
+    :hasSister data:MariaTeresaOfSpain ;
+    :isBloodrelationOf data:MariaTeresaOfSpain ;
+    :isChildOf data:AlfonsoXIIOfSpain,
+        data:MariaChristinaOfAustria ;
+    :isDaughterOf data:AlfonsoXIIOfSpain,
+        data:MariaChristinaOfAustria ;
+    :isSiblingOf data:MariaTeresaOfSpain ;
+    :isSisterOf data:MariaTeresaOfSpain .
+
+data:PrinceFerdinandOfBavaria a :Man,
+        :Person ;
+    :hasAncestor data:MariaDeLaPazOfSpain,
+        data:PrinceLudwigFerdinandOfBavaria ;
+    :hasBrother data:PrinceFerdinandOfBavaria ;
+    :hasFather data:PrinceLudwigFerdinandOfBavaria ;
+    :hasMother data:MariaDeLaPazOfSpain ;
+    :hasParent data:MariaDeLaPazOfSpain,
+        data:PrinceLudwigFerdinandOfBavaria ;
+    :hasRelation data:AlfonsoXIIOfSpain,
+        data:MariaChristinaOfAustria,
+        data:MariaDeLaPazOfSpain,
+        data:MariaTeresaOfSpain,
+        data:PrinceFerdinandOfBavaria,
+        data:PrinceLudwigFerdinandOfBavaria ;
+    :isBloodrelationOf data:PrinceFerdinandOfBavaria ;
+    :isBrotherOf data:PrinceFerdinandOfBavaria ;
+    :isChildOf data:MariaDeLaPazOfSpain,
+        data:PrinceLudwigFerdinandOfBavaria ;
+    :isSiblingOf data:PrinceFerdinandOfBavaria ;
+    :isSonOf data:MariaDeLaPazOfSpain,
+        data:PrinceLudwigFerdinandOfBavaria .
+

@@ -2,33 +2,55 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Wilhelm_Karl_Prinz_von_Preussen a :Man,
+data:Otto_d%27Ambrosio a :Man,
         :Person ;
-    :hasBirthYear 1922 ;
-    :hasDeathYear 2007 ;
-    :hasFather data:Prince_Oskar_of_Prussia ;
-    :hasMarriageYear 1952 ;
-    :hasMother data:Ina_Marie_von_Bassewitz ;
-    :hasRelation data:Armgard_Else_Helene_von_Veltheim .
+    :hasFather data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+    :hasMother data:Eleonore_von_Habsburg-Lothringen .
 
-data:Armgard_Else_Helene_von_Veltheim a :Person,
+data:Charles_I_of_Austria a :Ancestor,
+        :Man,
+        :Person .
+
+data:Eleonore_von_Habsburg-Lothringen a :Ancestor,
+        :Person,
         :Woman ;
-    :hasFather data:Friedrich_von_Veltheim ;
-    :hasMother data:Ottonie_von_Alvensleben .
+    :hasBirthYear 1994 ;
+    :hasFather data:Karl_von_Habsburg ;
+    :hasMarriageYear 2020 ;
+    :hasMother data:Francesca_von_Thyssen-Bornemisza ;
+    :hasRelation data:J%C3%A9r%C3%B4me_d%27Ambrosio ;
+    :isSiblingOf data:Ferdinand_Habsburg .
 
-data:Friedrich_von_Veltheim a :Ancestor,
+data:Ferdinand_Habsburg a :Man,
+        :Person ;
+    :hasFather data:Karl_von_Habsburg ;
+    :hasMother data:Francesca_von_Thyssen-Bornemisza .
+
+data:Otto_von_Habsburg a :Ancestor,
         :Man,
-        :Person .
+        :Person ;
+    :hasFather data:Charles_I_of_Austria ;
+    :hasMother data:Zita_of_Bourbon-Parma .
 
-data:Ina_Marie_von_Bassewitz a :Ancestor,
+data:Regina_von_Saxe-Meiningen a :Ancestor,
         :Person,
         :Woman .
 
-data:Ottonie_von_Alvensleben a :Ancestor,
+data:Zita_of_Bourbon-Parma a :Ancestor,
         :Person,
         :Woman .
 
-data:Prince_Oskar_of_Prussia a :Ancestor,
+data:Francesca_von_Thyssen-Bornemisza a :Ancestor,
+        :Person,
+        :Woman .
+
+data:J%C3%A9r%C3%B4me_d%27Ambrosio a :Ancestor,
         :Man,
         :Person .
+
+data:Karl_von_Habsburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMother data:Regina_von_Saxe-Meiningen .
 

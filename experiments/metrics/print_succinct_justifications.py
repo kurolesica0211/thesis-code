@@ -9,7 +9,7 @@ except ImportError:
     def tqdm(iterable, **kwargs):
         return iterable
 
-from experiments.metrics.ontology_conformance import (
+from ontology_conformance import (
     DEFAULT_JAR_CLASSPATH,
     DEFAULT_TBOX_PATH,
     compute_explanations,
@@ -47,7 +47,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--explanation-limit",
         type=int,
-        default=5000,
+        default=100,
         help="Maximum number of explanations per ontology.",
     )
     parser.add_argument(

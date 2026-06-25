@@ -7,16 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau a :Person ;
     rdfs:label "Franz Ulrich, 11th Prince Kinsky of Wchinitz and Tettau" ;
     data:posIndicesFull "0:55" ;
     data:posIndicesPart "1029:1035",
@@ -40,16 +31,18 @@ data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau a :Ancestor,
         "981:986",
         "987:993" ;
     data:wdtLink wdt:Q321787 ;
-    :hasFather data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
     :hasParent data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
-    :hasSex data:male ;
-    :isChildOf data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
-    :isSonOf data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau .
+    :hasSex data:male .
 
-data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau a :Person ;
     rdfs:label "Ulrich, 10th Prince Kinsky of Wchinitz and Tettau" ;
     data:posIndicesFull "400:449",
         "6:55" ;
@@ -68,9 +61,7 @@ data:Ulrich-_10th_Prince_Kinsky_of_Wchinitz_and_Tettau a :Ancestor,
         "857:863",
         "987:993" ;
     data:wdtLink wdt:Q7879786 ;
-    :hasChild data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
-    :hasSex data:male ;
-    :hasSon data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
-    :isFatherOf data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau ;
-    :isParentOf data:Franz_Ulrich-_11th_Prince_Kinsky_of_Wchinitz_and_Tettau .
+    :hasSex data:male .
+
+data:male a :Male .
 

@@ -2,35 +2,49 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Bernhard a :Man .
+data:Anton-G%C3%BCnther_Duke_of_Oldenburg a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Augustus_II_of_Oldenburg,
+        data:Friedrich_of_Waldeck_and_Pyrmont ;
+    :hasBirthYear 1923 ;
+    :hasDeathYear 2014 ;
+    :hasFather data:Nikolaus_of_Oldenburg ;
+    :hasMarriageYear data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg,
+        1951 ;
+    :hasMother data:Helena_of_Waldeck_and_Pyrmont ;
+    :hasSex data:Male .
 
-data:Count_Ernst_of_Lippe-Biesterfeld a :Ancestor,
-        :Man .
-
-data:Countess_Adelaide_of_Lippe-Biesterfeld a :Ancestor,
+data:Ameli_of_L%C3%B6wenstein-Wertheim-Freudenberg a :Person,
         :Woman ;
-    :hasFather data:Count_Ernst_of_Lippe-Biesterfeld .
+    :hasBirthYear 1923 ;
+    :hasDeathYear 2016 ;
+    :hasSex data:Female .
 
-data:Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock a :Woman .
+data:Frederick_Augustus_II_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Georg_II_Duke_of_Saxe-Meiningen a :Ancestor,
-        :Man .
+data:Friedrich_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Man,
+        :Person ;
+    :hasSex data:Male .
 
-data:Georg_Prince_of_Saxe-Meiningen a :Ancestor,
-        :Man ;
-    :hasBirthYear 1892 ;
-    :hasDeathYear 1946 ;
-    :hasFather data:Prince_Frederick_Johann_of_Saxe-Meiningen ;
-    :hasMarriageYear 1919 ;
-    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
-    :hasRelation data:Bernhard,
-        data:Countess_Klara_Marie_von_Korff_genannt_Schmising-Kerssenbrock ;
-    :hasSon data:Prince_Frederick_Alfred .
+data:Helena_of_Waldeck_and_Pyrmont a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1948 ;
+    :hasSex data:Female .
 
-data:Prince_Frederick_Alfred a :Man ;
-    :hasFather data:Georg_Prince_of_Saxe-Meiningen .
+data:Nikolaus_of_Oldenburg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1897 ;
+    :hasDeathYear 1970 ;
+    :hasSex data:Male .
 
-data:Prince_Frederick_Johann_of_Saxe-Meiningen a :Ancestor,
-        :Man ;
-    :hasFather data:Georg_II_Duke_of_Saxe-Meiningen .
+data:Female a :Sex .
+
+data:Male a :Sex .
 

@@ -4,12 +4,17 @@
 
 data:Ferdinand_Habsburg-Lothringen a :Man,
         :Person ;
+    :alsoKnownAs "Zvonimir"^^xsd:string ;
     :hasBirthYear 1997 ;
     :hasFather data:Karl_von_Habsburg ;
     :hasMother data:Francesca_von_Thyssen-Bornemisza ;
-    :hasSex data:Male ;
     :hasSister data:Eleonore_von_Habsburg,
-        data:Gloria_von_Habsburg .
+        data:Gloria_von_Habsburg ;
+    :knownAs "Ferdinand Zvonimir Maria Balthus Keith Michael Otto Antal Bahnam Leonhard"^^xsd:string .
+
+data:Georg_von_Habsburg a :Man,
+        :Person ;
+    :isBrotherOf data:Karl_von_Habsburg .
 
 data:Eleonore_von_Habsburg a :Person,
         :Woman .
@@ -28,16 +33,14 @@ data:Gloria_von_Habsburg a :Person,
 data:Hans_Heinrich_Thyssen-Bornemisza a :Man,
         :Person .
 
-data:Karl_von_Habsburg a :Man,
-        :Person ;
-    :hasFather data:Otto_von_Habsburg ;
-    :hasMother data:Regina_of_Saxe-Meiningen .
-
-data:Male a :Sex .
-
 data:Otto_von_Habsburg a :Man,
         :Person .
 
 data:Regina_of_Saxe-Meiningen a :Person,
         :Woman .
+
+data:Karl_von_Habsburg a :Man,
+        :Person ;
+    :hasFather data:Otto_von_Habsburg ;
+    :hasMother data:Regina_of_Saxe-Meiningen .
 

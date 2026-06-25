@@ -7,10 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg a :Person ;
     rdfs:label "Alois-Konstantin, 9th Prince of Löwenstein-Wertheim-Rosenberg" ;
     data:posIndicesFull "369:426" ;
     data:posIndicesPart "572:582",
@@ -19,17 +16,19 @@ data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg a :Ancestor,
     :alsoKnownAs "Alois-Konstantin, Prince of Löwenstein-Wertheim-Rosenberg" ;
     :hasSex data:male .
 
-data:Nicodemus-_Hereditary_Prince_of_Löwenstein-Wertheim-Rosenberg a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Nicodemus-_Hereditary_Prince_of_Löwenstein-Wertheim-Rosenberg a :Person ;
     rdfs:label "Nicodemus, Hereditary Prince of Löwenstein-Wertheim-Rosenberg" ;
     data:wdtLink wdt:Q7028910 ;
     :alsoKnownAs "Nicodemus Prinz zu Löwenstein-Wertheim-Rosenberg" ;
     :hasSex data:male .
+
+data:female a :Female .
 
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
 

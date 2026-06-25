@@ -2,33 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Cecilie_of_Mecklenburg-Schwerin a :Woman ;
-    :hasBirthYear 1886 ;
-    :hasBrother data:Frederick_Francis_IV ;
-    :hasDeathYear 1954 ;
-    :hasFather data:Frederick_Francis_III ;
-    :hasMarriageYear 1905 ;
-    :hasMother data:Anastasia_Mikhailovna_of_Russia ;
-    :hasRelation data:Wilhelm_German_Crown_Prince ;
-    :hasSister data:Alexandrine_of_Mecklenburg-Schwerin .
+data:ElizabethFeodorovna a :Person,
+        :Woman ;
+    :hasMother data:SergeiAlexandrovich .
 
-data:Alexandrine_of_Mecklenburg-Schwerin a :Woman ;
-    :hasFather data:Frederick_Francis_III ;
-    :hasMother data:Anastasia_Mikhailovna_of_Russia .
+data:LennartBernadotte a :Man,
+        :Person ;
+    :hasFather data:WilhelmSweden ;
+    :hasMother data:MariaPavlovna .
 
-data:Frederick_Francis_IV a :Man ;
-    :hasFather data:Frederick_Francis_III ;
-    :hasMother data:Anastasia_Mikhailovna_of_Russia .
+data:RomanSergeievichPutyatin a :Man,
+        :Person ;
+    :hasFather data:SergeiPutyatin ;
+    :hasMother data:MariaPavlovna .
 
-data:Michael_Nikolaevich_of_Russia a :Man .
+data:AlexandraGeorgievna a :Person,
+        :Woman ;
+    :hasMother data:DmitriPavlovich .
 
-data:Wilhelm_German_Crown_Prince a :Man ;
-    :hasFather data:Wilhelm_II_German_Emperor .
+data:DmitriPavlovich a :Man,
+        :Person ;
+    :hasFather data:PaulAlexandrovich ;
+    :isBrotherOf data:MariaPavlovna .
 
-data:Wilhelm_II_German_Emperor a :Man .
+data:SergeiAlexandrovich a :Man,
+        :Person ;
+    :hasFather data:PaulAlexandrovich ;
+    :isBrotherOf data:PaulAlexandrovich .
 
-data:Anastasia_Mikhailovna_of_Russia a :Woman ;
-    :hasFather data:Michael_Nikolaevich_of_Russia .
+data:SergeiPutyatin a :Man,
+        :Person .
 
-data:Frederick_Francis_III a :Man .
+data:WilhelmSweden a :Man,
+        :Person .
+
+data:MariaPavlovna a :Person,
+        :Woman ;
+    :hasBirthYear 1890 ;
+    :hasDeathYear 1958 ;
+    :hasFather data:PaulAlexandrovich ;
+    :hasMarriageYear 1908,
+        1917 ;
+    :hasMother data:AlexandraGeorgievna ;
+    :knownAs "Maria Pavlovna the Younger"^^xsd:string .
+
+data:PaulAlexandrovich a :Man,
+        :Person .
 

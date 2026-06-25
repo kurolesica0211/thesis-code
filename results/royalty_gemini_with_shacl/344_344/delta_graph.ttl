@@ -2,37 +2,68 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Frederick_Francis_IV a :Man,
-        :Person ;
-    :hasSex data:Male ;
-    :isSonOf data:Frederick_Francis_III .
-
-data:Anastasia_Mikhailovna_of_Russia a :Person,
+data:Alexandra_of_Greece a :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasParent data:Michael_of_Greece_and_Denmark .
 
-data:Augusta_Reuss_of_K%C3%B6stritz a :Ancestor,
+data:Isabella_Murat a :Person,
+        :Woman ;
+    :hasRelation data:Pierre_Murat .
+
+data:Olga_of_Greece a :Person,
+        :Woman ;
+    :hasParent data:Michael_of_Greece_and_Denmark ;
+    :hasRelation data:Aimone_of_Savoy-Aosta .
+
+data:Aimone_of_Savoy-Aosta a :Man,
+        :Person .
+
+data:Fran%C3%A7oise_dOrl%C3%A9ans a :Ancestor,
         :Person,
         :Woman ;
-    :hasSex data:Female .
+    :hasBirthYear 1902 ;
+    :hasBrother data:Henri_Count_of_Paris ;
+    :hasDeathYear 1953 ;
+    :hasFather data:Jean_dOrl%C3%A9ans ;
+    :hasMarriageYear 1929 ;
+    :hasMother data:Isabelle_ofOrl%C3%A9ans ;
+    :hasRelation data:Christopher_of_Greece_and_Denmark .
 
-data:Frederick_Francis_II a :Ancestor,
+data:George_I_of_Greece a :Ancestor,
+        :Man,
+        :Person .
+
+data:Henri_Count_of_Paris a :Man,
+        :Person .
+
+data:Isabelle_ofOrl%C3%A9ans a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Jean_dOrl%C3%A9ans a :Ancestor,
+        :Man,
+        :Person .
+
+data:Marina_Karella a :Person,
+        :Woman .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Pierre_Murat a :Man,
+        :Person .
+
+data:Christopher_of_Greece_and_Denmark a :Ancestor,
         :Man,
         :Person ;
-    :hasSex data:Male .
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia .
 
-data:Frederick_Francis_III a :Ancestor,
+data:Michael_of_Greece_and_Denmark a :Ancestor,
         :Man,
         :Person ;
-    :alsoKnownAs "Friedrich Franz Paul Nikolaus Ernst Heinrich"^^xsd:string ;
-    :hasBirthYear 1851 ;
-    :hasDeathYear 1897 ;
-    :hasFather data:Frederick_Francis_II ;
-    :hasMother data:Augusta_Reuss_of_K%C3%B6stritz ;
-    :hasRelation data:Anastasia_Mikhailovna_of_Russia ;
-    :hasSex data:Male .
-
-data:Female a :Sex .
-
-data:Male a :Sex .
+    :hasFather data:Christopher_of_Greece_and_Denmark ;
+    :hasMother data:Fran%C3%A7oise_dOrl%C3%A9ans ;
+    :hasRelation data:Marina_Karella .
 

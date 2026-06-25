@@ -1,0 +1,63 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;
+    :hasChild data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :hasDeathYear 1964 ;
+    :hasRelation data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma,
+        data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;
+    :isBrotherOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;
+    :isFatherOf data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;
+    :isUncleOf data:In%C3%A9s_of_Bourbon-Two_Sicilies .
+
+data:Alicia_of_Bourbon-Parma a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1917 ;
+    :hasChild data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :hasDaughter data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :hasDeathYear 2017 ;
+    :hasRelation data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma,
+        data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :hasSister data:Alicia_of_Bourbon-Parma ;
+    :isAncestorOf data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Alicia_of_Bourbon-Parma ;
+    :isMotherOf data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Alicia_of_Bourbon-Parma ;
+    :isSisterOf data:Alicia_of_Bourbon-Parma .
+
+data:In%C3%A9s_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasAncestor data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma ;
+    :hasBirthYear 1940 ;
+    :hasFather data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n ;
+    :hasMother data:Alicia_of_Bourbon-Parma ;
+    :hasParent data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma ;
+    :hasRelation data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma,
+        data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :hasSister data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma ;
+    :isDaughterOf data:Alfonso_de_Borb%C3%B3n-Dos_Sicilias_y_de_Borb%C3%B3n,
+        data:Alicia_of_Bourbon-Parma ;
+    :isSiblingOf data:In%C3%A9s_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:In%C3%A9s_of_Bourbon-Two_Sicilies .
+

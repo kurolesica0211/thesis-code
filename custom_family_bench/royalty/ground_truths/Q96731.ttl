@@ -7,80 +7,26 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Philip, Duke of Edinburgh" ;
-    data:posIndicesFull "1137:1150",
-        "1521:1534",
-        "610:623",
-        "610:642",
-        "987:1000",
-        "987:1019" ;
-    data:posIndicesPart "1253:1259",
-        "1362:1366",
-        "1879:1883",
-        "1987:1993",
-        "2067:2073",
-        "747:753" ;
-    data:wdtLink wdt:Q80976 ;
-    :alsoKnownAs "H.R.H. Prince Philip",
-        "H.R.H. The Duke Of Edinburgh",
-        "Lieutenant Philip Mountbatten",
-        "Philip Edinburgh",
-        "Philip Mountbatten",
-        "Philip Mountbatten; Prince Philip of Greece and Denmark",
-        "Philip of Greece and Denmark",
-        "Prince Philip",
-        "Prince Philip of Greece and Denmark",
-        "The Prince Philip, Duke of Edinburgh" ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :isBrotherOf data:Princess_Theodora_of_Greece_and_Denmark_1 ;
-    :isSiblingOf data:Princess_Theodora_of_Greece_and_Denmark_1 .
-
-data:Princess_Theodora_of_Greece_and_Denmark_1 a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Theodora of Greece and Denmark" ;
-    data:posIndicesFull "549:588" ;
-    data:posIndicesPart "715:723" ;
-    data:wdtLink wdt:Q255382 ;
-    :alsoKnownAs "Princess Theodora, Margravine of Baden",
-        "Theodora, Margravine of Baden" ;
-    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
-    :hasSex data:female ;
-    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
-    :isSisterOf data:Prince_Philip-_Duke_of_Edinburgh .
-
-data:Prince_Bernhard-_Margrave_of_Baden a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Bernhard-_Margrave_of_Baden a :Person ;
     rdfs:label "Prince Bernhard, Margrave of Baden" ;
     data:posIndicesFull "0:37" ;
     data:posIndicesPart "1061:1066",
         "1093:1101",
+        "1137:1143",
         "1211:1219",
         "1253:1259",
         "1441:1449",
-        "1635:1643",
-        "1691:1696",
-        "1860:1868",
-        "1872:1877",
-        "1987:1993",
-        "1997:2002",
-        "2025:2033",
-        "2067:2073",
-        "2160:2168",
+        "1521:1527",
+        "1837:1845",
+        "1893:1898",
+        "2062:2070",
+        "2074:2079",
+        "2189:2195",
+        "2199:2204",
+        "2227:2235",
+        "2269:2275",
         "233:241",
+        "2362:2370",
         "278:283",
         "349:357",
         "361:366",
@@ -88,36 +34,66 @@ data:Prince_Bernhard-_Margrave_of_Baden a :Man,
         "478:483",
         "526:534",
         "538:543",
+        "610:616",
         "747:753",
         "754:762",
-        "907:915" ;
+        "907:915",
+        "987:993" ;
     data:wdtLink wdt:Q96731 ;
     :alsoKnownAs "Bernhard Max Erbprinz von Baden",
         "Bernhard Prinz und Markgraf von Baden" ;
-    :hasMother data:Princess_Valerie-_Margravine_of_Baden ;
     :hasParent data:Princess_Valerie-_Margravine_of_Baden ;
-    :hasSex data:male ;
-    :isChildOf data:Princess_Valerie-_Margravine_of_Baden ;
-    :isSonOf data:Princess_Valerie-_Margravine_of_Baden .
+    :hasSex data:male .
 
-data:Princess_Valerie-_Margravine_of_Baden a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Theodora_of_Greece_and_Denmark_1 a :Person ;
+    rdfs:label "Princess Theodora of Greece and Denmark" ;
+    data:posIndicesFull "549:588" ;
+    data:posIndicesPart "715:723" ;
+    data:wdtLink wdt:Q255382 ;
+    :alsoKnownAs "Princess Theodora, Margravine of Baden",
+        "Theodora, Margravine of Baden" ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Alice_of_Battenberg a :Person ;
+    rdfs:label "Princess Alice of Battenberg" ;
+    data:posIndicesFull "1537:1541",
+        "1708:1714",
+        "216:220" ;
+    data:posIndicesPart "715:723" ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice",
+        "Alice of Battenberg",
+        "Alice, Princess Andrew of Greece and Denmark",
+        "Mother Superior Alice-Elizabeth",
+        "Princess Alice of Greece and Denmark",
+        "Princess Andrew of Greece and Denmark",
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg",
+        "Victoria Alice Elizabeth Julia Marie",
+        "Victoria Alice Elizabeth Julia Marie of Battenberg" ;
+    :hasSex data:female .
+
+data:Princess_Valerie-_Margravine_of_Baden a :Person ;
     rdfs:label "Princess Valerie, Margravine of Baden" ;
     data:posIndicesFull "372:402" ;
     data:posIndicesPart "1061:1066",
-        "1691:1696",
-        "1872:1877",
-        "1997:2002",
+        "1893:1898",
+        "2074:2079",
+        "2199:2204",
         "538:543",
         "715:723" ;
     data:wdtLink wdt:Q6425396 ;
     :alsoKnownAs "Archduchess Valerie of Austria",
         "Valerie Isabella Erzherzogin von Österreich" ;
-    :hasChild data:Prince_Bernhard-_Margrave_of_Baden ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Bernhard-_Margrave_of_Baden ;
-    :isMotherOf data:Prince_Bernhard-_Margrave_of_Baden ;
-    :isParentOf data:Prince_Bernhard-_Margrave_of_Baden .
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:female a :Female .
 

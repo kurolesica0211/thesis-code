@@ -85,140 +85,28 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Mary, Princess Royal (Victoria Alexandra Alice Mary; 25 April 1897 – 28 March 1965), was a member of the British royal family.
-She was the only daughter of King George V and Queen Mary, the sister of kings Edward VIII and George VI, and the aunt of Queen Elizabeth II.
-In 1922, she married Henry Lascelles, Viscount Lascelles (later the 6th Earl of Harewood), and they had two sons, George Lascelles, 7th Earl of Harewood, and Gerald David Lascelles.
-Mary was granted the title Princess Royal in 1932.
-Early life and education
+Prince Aschwin of Lippe-Biesterfeld (13 June 1914 – 14 May 1988) was an expert in Chinese painting and Indian sculpture and curator at the Metropolitan Museum of Art in New York.
+He was the younger brother of Prince Bernhard of Lippe-Biesterfeld.
+Life and career
 
-Mary was born at 3:30 pm on 25 April 1897 at York Cottage on the Sandringham Estate in Norfolk, during the reign of her great-grandmother Queen Victoria.
-She was the third child and only daughter of the Duke and Duchess of York, later King George V and Queen Mary.
-Her father was the only surviving son of the Prince and Princess of Wales, later King Edward VII and Queen Alexandra, and her mother was the eldest child and only daughter of the Duke and Duchess of Teck.
-She was named Victoria Alexandra Alice Mary after her paternal great-grandmother Queen Victoria; her paternal grandmother, Alexandra, Princess of Wales; her maternal grandmother, Mary Adelaide, Duchess of Teck; and her great-aunt, Alice, Grand Duchess of Hesse and by Rhine, with whom she shared a birthday.
-She was known by the last of her given names, Mary.
-At the time of her birth she was fifth in the line of succession to the British throne after her grandfather, father, and elder brothers Edward (later Edward VIII) and Albert (later George VI), and moved down the line following the births of her younger brothers Henry, George, and John.
-She was baptised at St Mary Magdalene's Church near Sandringham on 7 June by William Dalrymple Maclagan, Archbishop of York.
-Her godparents were the Queen (her great-grandmother), the King of the Hellenes (her paternal great-uncle), the Dowager Empress of Russia (her paternal great-aunt), the Prince and Princess of Wales (her paternal grandparents), the Duchess of Teck (her maternal grandmother), Princess Victoria of Wales (her paternal aunt), and Prince Francis of Teck (her maternal uncle).
-Her grandfather succeeded to the throne in 1901 when Mary was three years old.
-Mary was educated by governesses, although she shared some lessons with her brothers Edward, Albert, and Henry.
-Charity work
-
-During World War I, Mary visited hospitals and welfare organisations with her mother, assisting with schemes that provided comfort to British servicemen and support to their families.
-One such initiative was Princess Mary's Christmas Gift Fund, through which gifts worth £100,000 were distributed to serving soldiers and sailors for Christmas 1914, the equivalent of £9.55 million in 2023.
-She took an active role in promoting the Girl Guide movement, the Voluntary Aid Detachments, and the Women's Land Army.
-In 1918, she was appointed colonel-in-chief of the Royal Scots, an honour bestowed by her father, the King.
-On 20 November 1918, she became the first member of the royal family to visit France following the Armistice.
-She visited centres associated with Queen Alexandra's Imperial Military Nursing Service and Voluntary Aid Detachment Units, as well as hospitals treating wounded soldiers.
-While visiting Ypres she recognised two soldiers from the Royal Scots; the regiment was stationed nearby, and a march‐past of its 17th battalion was arranged.
-Mary's public duties reflected her interest in nursing, the Girl Guide movement, and the Women's Services.
-In the period leading up to her marriage, girls and women across the British Empire named Mary or its variants (including Marie, May, and Miriam) formed "The Marys of the Empire," and contributed to a wedding present fund.
-In July 2013, it was reported that British Pathé had identified newsreel film from 1927 showing the ancestors of Catherine Middleton, as Lord Mayors of Leeds, hosting Mary at the Young Women's Christian Association in Hunslet.
-In 1921, Mary became the first patron of the Not Forgotten Association, a role she held until her death in 1965.
-In the 1920s, Mary was a patron of the Leeds Triennial Musical Festival.
-By the 1940s, she was attending opening nights and many of the festival's performances, as was her son, George, and his wife, the Countess of Harewood, née Marion Stein, a former concert pianist.
-George was a noted music critic whose career included serving as artistic director of the Leeds Triennial Musical Festival.
-In 1931, Mary was appointed patron of the Yorkshire Ladies Council of Education.
-In July 1927, it was reported that, at a garden party at Headingley Cricket Ground, Mary was served tea alongside dignitaries who included members of the Middleton family; Olive Middleton, great-grandmother of Catherine, Princess of Wales, was among them.
-Mary and her son, George, were patrons of the Yorkshire Symphony Orchestra which performed soirées at their home, Harewood House.
-Among those attending was the orchestra's co-founder, Richard Noël Middleton, who was on friendly terms with Mary.
-Middleton's wife, Olive, served on Mary's fundraising committee for the Leeds General Infirmary.
-The committee's vice-presidents included Mary's sister-in-law, the Hon.
-Mrs Edward Lascelles, who served alongside Olive and her relative Jessie Beatrice Kitson.
-In 1936, Mary became patron of the Leeds Infirmary.
-Marriage and family
-
-On 28 February 1922, Mary married Henry, Viscount Lascelles, the elder son of the 5th Earl of Harewood and his wife, Lady Florence Bridgeman, daughter of the 3rd Earl of Bradford of Weston Park.
-Mary was 24 years old, while the groom was 39.
-The ceremony was the first royal wedding to be covered in fashion magazines, including Vogue.
-Mary's gown was designed by Messrs Raville and featured emblems of Britain and India.
-It was also the first royal occasion in which Lady Elizabeth Bowes-Lyon, a friend of Mary, participated as one of the bridesmaids.
-She later married Mary's brother, Albert, and became queen consort of the United Kingdom upon his accession in 1936.
-Mary and Henry had two sons:
-
-
-Family homes and interests
-
-Mary and her husband had homes in London (first Chesterfield House in South Audley Street, and later 32 Green Street, Mayfair) and in Yorkshire (first Goldsborough Hall, and later Harewood House).
-London
-
-Prior to their marriage, Henry had purchased a palatial London townhouse, Chesterfield House in South Audley Street, for £140,000.
-In 1931, King George V and Queen Mary purchased 32 Green Street, Mayfair, as a London home for their daughter, rendering Chesterfield House surplus to the couple's needs.
-Mary and Henry vacated Chesterfield House in early 1932.
-Queen Mary reportedly expressed an interest in purchasing 32 Green Street as a London home for her daughter in 1931, and consent was obtained from the property's owner, Hugh Grosvenor, 2nd Duke of Westminster, with the proviso that the Grosvenor Estates could maintain the right to repurchase the house at a future date if its use as a royal residence ceased.
-Following the outbreak World War II, Mary was granted the use of a grace‐and‐favour apartment at St James's Palace, which remained her official London residence for the rest of her life.
-While at Goldsborough Hall, Mary commissioned internal alterations by the architect Sydney Kitson to suit the upbringing of her two children, and she instigated the development of formal beech‐hedge‐lined borders extending from the south terrace for a quarter of a mile down an avenue of lime trees.
-The limes were planted by her relatives as they visited the hall throughout the 1920s, including her father, King George, and her mother, Queen Mary.
-After becoming Countess of Harewood upon the death of her father‐in‐law, Mary moved to Harewood House and took a keen interest in the interior decoration and renovation of the Lascelles family seat.
-In farming pursuits, she became an expert in cattle breeding and served on the board of trustees of the Royal Agricultural Society of England, of which her husband had been president.
-In December 2012, some of Mary's belongings were sold in "Harewood: Collecting in the Royal Tradition", an auction organised by Christie's.
-In the first half of the 20th century, Mary occasionally rode with the Bramham Moor Hunt – Henry was Master of the Hunt – and she entertained many horse-racing enthusiasts at Harewood house parties for the race meetings at Wetherby and York.
-Princess Royal
-
-On 6 October 1929, Henry succeeded his father as 6th Earl of Harewood, having previously been created a Knight of the Garter upon his marriage.
-On 1 January 1932, George V declared that Mary should bear the title Princess Royal, succeeding her aunt Princess Louise, Duchess of Fife, who had died a year earlier.
-Mary was particularly close to her eldest brother, the Prince of Wales, known as David to his family, who became Edward VIII upon the death of their father in 1936.
-After the abdication crisis, Mary and Henry went to stay with the former Edward VIII, by then created Duke of Windsor, at Enzesfeld Castle near Vienna.
-Later, in November 1947, she allegedly declined to attend the wedding of her niece, Princess Elizabeth, to Lieutenant Philip Mountbatten as the Duke of Windsor had not been invited.
-In March 1953, she cut short her tour of the West Indies and, before returning to London, made a surprise diversion to New York, where she met the Duke and Duchess of Windsor.
-She posed for photographs with them before she and the duke boarded the ship on which they travelled to visit their ailing mother, Queen Mary.
-At the outbreak of World War II, Mary became chief controller and later controller commandant of the Auxiliary Territorial Service, renamed the Women's Royal Army Corps in 1949.
-After the death in 1942 of her younger brother, the Duke of Kent, she became president of Papworth Hospital.
-Mary became air chief commandant of Princess Mary's Royal Air Force Nursing Service in 1950, and received the honorary rank of general in the British Army in 1956.
-Also, in 1949, the 10th Gurkha Rifles were renamed the 10th Princess Mary's Own Gurkha Rifles in her honour.
-After Henry's death in 1947, Mary lived at Harewood House with her elder son and his family.
-She attended the coronation of Queen Elizabeth II in June 1953, and later represented the Queen at the independence celebrations of Trinidad and Tobago in 1962, and Zambia in 1964.
-One of her last official engagements was to represent the Queen at the funeral of Queen Louise of Sweden in early March 1965.
-Mary visited her brother, the Duke of Windsor, at the London Clinic in March 1965, while he recovered from recent eye surgery.
-She also met his wife, the Duchess of Windsor, one of the few meetings between the Duchess and her husband's immediate family.
-Death and legacy
-
-Mary suffered a fatal heart attack on 28 March 1965 during a walk with her elder son, George, and his children in the grounds of the Harewood House estate.
-She was buried next to Henry in the Lascelles family vault at All Saints' Church, Harewood, after a private family funeral at York Minster.
-Six British monarchs reigned during Mary's lifetime: Victoria (her great-grandmother), Edward VII (her grandfather), George V (her father), Edward VIII and George VI (her brothers), and Elizabeth II (her niece).
-She is typically remembered as an uncontroversial figure within the royal family.
-Mary was portrayed by Kate Phillips in Downton Abbey (2019).
-During the British Mandate of Palestine, a major street in Jerusalem next to the Old City was called Princess Mary Street.
-After the creation of Israel, it was renamed Queen Shlomzion street.
-Titles, styles, honours and arms
-
-Titles and styles
-
-Mary was known as Princess Mary of York at birth.
-Mary was not styled Her Royal Highness from birth, only gaining that style in 1898 by letters patent granted by her great-grandmother, Queen Victoria.
-After Victoria's death in January 1901, Mary was known as Princess Mary of Cornwall and York, until her father's creation as Prince of Wales in November of that year, when she assumed the title Princess Mary of Wales.
-Upon her father's accession as George V in 1910, Mary assumed the style of "Her Royal Highness The Princess Mary".
-In 1922, Mary married Henry, Viscount Lascelles and began using the title "Her Royal Highness The Princess Mary, Viscountess Lascelles".
-When her husband succeeded as Earl of Harewood in 1929, Mary became known as "Her Royal Highness The Princess Mary, Countess of Harewood".
-In 1932, her father granted her the title Princess Royal, which had previously belonged to her aunt Louise until her death the year before.
-For the rest of her life, Mary was known as "Her Royal Highness The Princess Royal".
-Honours
-
-British, British Empire and Commonwealth
-
-Foreign
-
-Freedom of the City
-
-Academic
-
-Memberships
-
-Honorary military appointments
-
-British
-
-Military ranks
-
-Arms
-
-In 1931, Mary was awarded her own personal arms, being the royal arms, differenced by a label argent of three points, each bearing a cross gules.
-}} Media related to Mary, Princess Royal and Countess of Harewood at Wikimedia Commons
+Aschwin was the second and last child of Prince Bernhard of Lippe and Baroness Armgard of Sierstorpff-Cramm.
+He was born with the title of count of Biesterfeld and grew up with his elder brother Bernhard at their parents' estate, Castle Reckenwalde (now Wojnowo, Lubusz Voivodeship, Poland).
+When Adolf Hitler came to power, Aschwin openly supported the Nazis and became a Wehrmacht officer.
+During the war, Aschwin continued his education in East Asian art.
+On 11 September 1951, Prince Aschwin married Simone Arnoux (1915-2001) in London.
+She was previously married to German aristocrat Gottfried Adam Vollrat von Watzdorf, from whom she had two children (Stephan von Watzdorf, born 1942, and Thilo von Watzdorf, born 1944), but none with Prince Aschwin.
+After the birth of Prince Constantijn of the Netherlands on 11 October 1969, Prince Aschwin became one of his godfathers.
+Although Bernhard cut off communications with Nazi supporters, including his brother, their relationships resumed after the war.
+In the 1970s, Bernhard persuaded Aschwin, who was suffering from Parkinson's disease, to return to the Netherlands, where he died in 1988, aged 73.
+}} Media related to Aschwin of Lippe-Biesterfeld at Wikimedia Commons
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -234,39 +122,9 @@ In 1931, Mary was awarded her own personal arms, being the royal arms, differenc
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -281,6 +139,23 @@ In 1931, Mary was awarded her own personal arms, being the royal arms, differenc
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -298,6 +173,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -365,29 +255,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -396,6 +278,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -408,6 +298,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -416,17 +308,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -454,6 +348,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -469,211 +447,168 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (583226aa-a580-4349-bfa5-2eb467037677)
- Call ID: 583226aa-a580-4349-bfa5-2eb467037677
-  Args:
-    source: Mary_Princess_Royal
-    type: :Woman
-  AssignClass (e6536346-e0a0-4f45-89e3-66f34ea1165f)
- Call ID: e6536346-e0a0-4f45-89e3-66f34ea1165f
+  AssignClass (7b69db7a-3c82-4ef1-afa8-d96b623e340b)
+ Call ID: 7b69db7a-3c82-4ef1-afa8-d96b623e340b
   Args:
     type: :Man
-    source: King_George_V
-  AssignClass (80b908b9-5e12-4e1e-a3aa-56308d484a11)
- Call ID: 80b908b9-5e12-4e1e-a3aa-56308d484a11
+    source: Prince_Aschwin_of_Lippe-Biesterfeld
+  AssignClass (4de4e97f-0960-4ec8-807e-3336d1fbbbe9)
+ Call ID: 4de4e97f-0960-4ec8-807e-3336d1fbbbe9
   Args:
-    source: Queen_Mary
-    type: :Woman
-  AssignClass (b9fc643a-a6c5-49ba-8a3c-760b6ffa45cb)
- Call ID: b9fc643a-a6c5-49ba-8a3c-760b6ffa45cb
+    source: Prince_Aschwin_of_Lippe-Biesterfeld
+    type: :Person
+  AddLiteral (fcff409e-b46e-4f20-a4c6-242058f0674e)
+ Call ID: fcff409e-b46e-4f20-a4c6-242058f0674e
   Args:
-    type: :Man
-    source: Henry_Lascelles
-  AssignClass (c400432e-df17-4a03-bca0-8e8d1d6fabb1)
- Call ID: c400432e-df17-4a03-bca0-8e8d1d6fabb1
-  Args:
-    source: George_Lascelles
-    type: :Man
-  AssignClass (ee17dfed-54a0-4c46-bec8-a3da149d09dd)
- Call ID: ee17dfed-54a0-4c46-bec8-a3da149d09dd
-  Args:
-    type: :Man
-    source: Gerald_David_Lascelles
-  AssignClass (3140be50-d6a6-47cb-9d12-84b25d8774e5)
- Call ID: 3140be50-d6a6-47cb-9d12-84b25d8774e5
-  Args:
-    source: Edward_VIII
-    type: :Man
-  AssignClass (f012c5db-6831-4a1d-b247-fd6d12da1906)
- Call ID: f012c5db-6831-4a1d-b247-fd6d12da1906
-  Args:
-    type: :Man
-    source: George_VI
-  AssignClass (8f264eaf-aebd-464a-b8ae-d9515039700d)
- Call ID: 8f264eaf-aebd-464a-b8ae-d9515039700d
-  Args:
-    type: :Woman
-    source: Queen_Elizabeth_II
-  AddLiteral (38e155ad-c7ad-447a-b395-850288bb2648)
- Call ID: 38e155ad-c7ad-447a-b395-850288bb2648
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1897
     relation: :hasBirthYear
-    source: Mary_Princess_Royal
-  AddLiteral (469ffc00-470a-47d1-8141-164d44675783)
- Call ID: 469ffc00-470a-47d1-8141-164d44675783
-  Args:
+    literal_value: 1914
     literal_type: xsd:integer
-    source: Mary_Princess_Royal
+    source: Prince_Aschwin_of_Lippe-Biesterfeld
+  AddLiteral (7bb6b057-639f-4222-914f-8d2562b47598)
+ Call ID: 7bb6b057-639f-4222-914f-8d2562b47598
+  Args:
+    literal_value: 1988
     relation: :hasDeathYear
-    literal_value: 1965
-  AddTriple (067aeca7-5f2a-462f-9234-6f2c01acc909)
- Call ID: 067aeca7-5f2a-462f-9234-6f2c01acc909
-  Args:
-    target: King_George_V
-    source: Mary_Princess_Royal
-    relation: :hasFather
-  AddTriple (ebd05550-d603-4954-a7c5-e292eb24a022)
- Call ID: ebd05550-d603-4954-a7c5-e292eb24a022
-  Args:
-    target: Queen_Mary
-    source: Mary_Princess_Royal
-    relation: :hasMother
-  AddTriple (cc258ffc-0ebd-4512-8e60-957d17b762e0)
- Call ID: cc258ffc-0ebd-4512-8e60-957d17b762e0
-  Args:
-    target: Edward_VIII
-    relation: :hasBrother
-    source: Mary_Princess_Royal
-  AddTriple (8fa0a511-69f5-4537-b37a-38a72ec55f90)
- Call ID: 8fa0a511-69f5-4537-b37a-38a72ec55f90
-  Args:
-    relation: :hasBrother
-    source: Mary_Princess_Royal
-    target: George_VI
-  AddTriple (1ba9113a-7be6-4597-afd9-86e8b9624d54)
- Call ID: 1ba9113a-7be6-4597-afd9-86e8b9624d54
-  Args:
-    source: Mary_Princess_Royal
-    relation: :isSisterOf
-    target: Edward_VIII
-  AddTriple (032e0e6a-5e8f-41aa-af2f-c456a5d85014)
- Call ID: 032e0e6a-5e8f-41aa-af2f-c456a5d85014
-  Args:
-    target: George_VI
-    source: Mary_Princess_Royal
-    relation: :isSisterOf
-  AddTriple (d1999c55-2bbe-4bc3-9dfc-8e181d60d8e7)
- Call ID: d1999c55-2bbe-4bc3-9dfc-8e181d60d8e7
-  Args:
-    target: George_Lascelles
-    source: Mary_Princess_Royal
-    relation: :hasChild
-  AddTriple (db54ff20-3006-41cb-9f0c-1665278338e5)
- Call ID: db54ff20-3006-41cb-9f0c-1665278338e5
-  Args:
-    relation: :hasChild
-    source: Mary_Princess_Royal
-    target: Gerald_David_Lascelles
-  AddTriple (6a055f25-d836-4395-b7ad-335742e5ddcf)
- Call ID: 6a055f25-d836-4395-b7ad-335742e5ddcf
-  Args:
-    relation: :hasChild
-    source: Henry_Lascelles
-    target: George_Lascelles
-  AddTriple (c2ca5542-d3c0-45a0-9472-ce57dcda709d)
- Call ID: c2ca5542-d3c0-45a0-9472-ce57dcda709d
-  Args:
-    target: Gerald_David_Lascelles
-    relation: :hasChild
-    source: Henry_Lascelles
-  AddLiteral (5f52f7f6-e6c1-4de7-b5c8-14f876a51743)
- Call ID: 5f52f7f6-e6c1-4de7-b5c8-14f876a51743
-  Args:
-    literal_value: 1922
-    relation: :hasMarriageYear
-    source: Mary_Princess_Royal
     literal_type: xsd:integer
-  AddLiteral (3118f881-8eb0-4e27-8bf8-1d6ec5f5757e)
- Call ID: 3118f881-8eb0-4e27-8bf8-1d6ec5f5757e
+    source: Prince_Aschwin_of_Lippe-Biesterfeld
+  AddTriple (12bab805-2e17-4680-ae20-ecc1110069a3)
+ Call ID: 12bab805-2e17-4680-ae20-ecc1110069a3
   Args:
-    literal_type: xsd:string
-    relation: :knownAs
-    source: Mary_Princess_Royal
-    literal_value: Mary
-  AddTriple (dbcf74d1-24a0-47dd-bba0-34dc4dd774cd)
- Call ID: dbcf74d1-24a0-47dd-bba0-34dc4dd774cd
-  Args:
-    target: :Female
     relation: :hasSex
-    source: Mary_Princess_Royal
-  AddTriple (e65b9563-6807-45c0-95c4-160a12474f63)
- Call ID: e65b9563-6807-45c0-95c4-160a12474f63
-  Args:
+    source: Prince_Aschwin_of_Lippe-Biesterfeld
     target: :Male
-    relation: :hasSex
-    source: King_George_V
-  AddTriple (b6a2f06c-7d3a-4d5a-81d5-0598990374e2)
- Call ID: b6a2f06c-7d3a-4d5a-81d5-0598990374e2
+  AssignClass (b0ec153d-7aef-4206-8694-ae3c689ffdea)
+ Call ID: b0ec153d-7aef-4206-8694-ae3c689ffdea
   Args:
-    source: Queen_Mary
-    relation: :hasSex
-    target: :Female
-  AddTriple (38aedbe1-df1b-490a-a2c2-4caecdee68d9)
- Call ID: 38aedbe1-df1b-490a-a2c2-4caecdee68d9
+    type: :Man
+    source: Prince_Bernhard_of_Lippe-Biesterfeld
+  AssignClass (ae8af7ae-4ec8-4475-90f4-fa08d6e96505)
+ Call ID: ae8af7ae-4ec8-4475-90f4-fa08d6e96505
   Args:
-    source: Henry_Lascelles
-    relation: :hasSex
-    target: :Male
-  AddTriple (32698af3-9d02-49b7-9537-c676713606ad)
- Call ID: 32698af3-9d02-49b7-9537-c676713606ad
+    source: Prince_Bernhard_of_Lippe-Biesterfeld
+    type: :Person
+  AddTriple (06197de9-9f17-4f38-892f-a5ff790481d7)
+ Call ID: 06197de9-9f17-4f38-892f-a5ff790481d7
   Args:
-    target: :Male
-    source: George_Lascelles
-    relation: :hasSex
-  AddTriple (83bfb8c5-c87b-4bdd-950d-9dda7022abe9)
- Call ID: 83bfb8c5-c87b-4bdd-950d-9dda7022abe9
+    source: Prince_Aschwin_of_Lippe-Biesterfeld
+    target: :Prince_Bernhard_of_Lippe-Biesterfeld
+    relation: :hasBrother
+  AssignClass (54b99edc-b099-42aa-9291-a9d6aeb11042)
+ Call ID: 54b99edc-b099-42aa-9291-a9d6aeb11042
   Args:
-    target: :Male
-    source: Gerald_David_Lascelles
-    relation: :hasSex
-  AddTriple (41b85629-c55d-45e9-891c-e2427cd62c75)
- Call ID: 41b85629-c55d-45e9-891c-e2427cd62c75
+    type: :Man
+    source: Prince_Bernhard_of_Lippe
+  AssignClass (b908a7cc-2e2c-4a06-8312-b7c6ffe4e30a)
+ Call ID: b908a7cc-2e2c-4a06-8312-b7c6ffe4e30a
   Args:
-    relation: :hasSex
-    source: Edward_VIII
-    target: :Male
-  AddTriple (1e556c0a-4b93-45c4-aa86-720cd650f881)
- Call ID: 1e556c0a-4b93-45c4-aa86-720cd650f881
+    source: Prince_Bernhard_of_Lippe
+    type: :Person
+  AssignClass (3df862bc-1bda-44b8-a6c3-f45e1087425d)
+ Call ID: 3df862bc-1bda-44b8-a6c3-f45e1087425d
   Args:
-    relation: :hasSex
-    source: George_VI
-    target: :Male
-  AddTriple (379b7b9e-9cb5-49c9-aab2-c24fd08a9bac)
- Call ID: 379b7b9e-9cb5-49c9-aab2-c24fd08a9bac
+    source: Baroness_Armgard_of_Sierstorpff-Cramm
+    type: :Woman
+  AssignClass (33255d1d-66b6-4d33-9efc-2d72a4836831)
+ Call ID: 33255d1d-66b6-4d33-9efc-2d72a4836831
   Args:
-    relation: :hasSex
-    source: Queen_Elizabeth_II
-    target: :Female
-  ValidateShacl (6f31ba10-ec88-4344-84b2-3c492146a9f5)
- Call ID: 6f31ba10-ec88-4344-84b2-3c492146a9f5
+    source: Baroness_Armgard_of_Sierstorpff-Cramm
+    type: :Person
+  AddTriple (a1876ce4-e03d-4412-b5a6-fe68c9523b26)
+ Call ID: a1876ce4-e03d-4412-b5a6-fe68c9523b26
   Args:
-  Finish (8078251c-7998-45db-b7e9-8704d63f7ad9)
- Call ID: 8078251c-7998-45db-b7e9-8704d63f7ad9
+    relation: :hasFather
+    source: Prince_Aschwin_of_Lippe-Biesterfeld
+    target: :Prince_Bernhard_of_Lippe
+  AddTriple (9ce9d041-d3c1-4949-8ac3-58f4fcb28b56)
+ Call ID: 9ce9d041-d3c1-4949-8ac3-58f4fcb28b56
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    relation: :hasMother
+    target: :Baroness_Armgard_of_Sierstorpff-Cramm
+    source: Prince_Aschwin_of_Lippe-Biesterfeld
+  AssignClass (57a2ab09-32e7-4a8a-9dde-6b4c440592ec)
+ Call ID: 57a2ab09-32e7-4a8a-9dde-6b4c440592ec
+  Args:
+    type: :Woman
+    source: Simone_Arnoux
+  AssignClass (78d62787-e871-45c7-ac43-d0048eea4403)
+ Call ID: 78d62787-e871-45c7-ac43-d0048eea4403
+  Args:
+    type: :Person
+    source: Simone_Arnoux
+  AddTriple (1ff3face-9ec0-4cd7-ae8d-781bfa3923c3)
+ Call ID: 1ff3face-9ec0-4cd7-ae8d-781bfa3923c3
+  Args:
+    source: Prince_Aschwin_of_Lippe-Biesterfeld
+    target: :Simone_Arnoux
+    relation: :hasRelation
+  AddLiteral (992b4523-445f-4fab-a471-2f0c4773ee3a)
+ Call ID: 992b4523-445f-4fab-a471-2f0c4773ee3a
+  Args:
+    relation: :hasMarriageYear
+    literal_value: 1951
+    source: Prince_Aschwin_of_Lippe-Biesterfeld
+    literal_type: xsd:integer
+  AssignClass (206d8f71-5da5-4535-9c4d-21377c5b4b4c)
+ Call ID: 206d8f71-5da5-4535-9c4d-21377c5b4b4c
+  Args:
+    source: Gottfried_Adam_Vollrat_von_Watzdorf
+    type: :Man
+  AssignClass (9a81e421-ade6-46d0-abee-37814a234d91)
+ Call ID: 9a81e421-ade6-46d0-abee-37814a234d91
+  Args:
+    type: :Person
+    source: Gottfried_Adam_Vollrat_von_Watzdorf
+  AddTriple (f4ac24d3-5750-40ac-8969-401680ffe799)
+ Call ID: f4ac24d3-5750-40ac-8969-401680ffe799
+  Args:
+    relation: :hasRelation
+    source: Simone_Arnoux
+    target: :Gottfried_Adam_Vollrat_von_Watzdorf
+  AssignClass (b0b8ba40-e5b6-451e-a78c-c73c0f43e49c)
+ Call ID: b0b8ba40-e5b6-451e-a78c-c73c0f43e49c
+  Args:
+    source: Stephan_von_Watzdorf
+    type: :Man
+  AssignClass (baec001c-9964-4f4f-b8e5-53622c7c2deb)
+ Call ID: baec001c-9964-4f4f-b8e5-53622c7c2deb
+  Args:
+    source: Stephan_von_Watzdorf
+    type: :Person
+  AssignClass (c94a7712-91ec-4a53-9e72-b88fd15f5581)
+ Call ID: c94a7712-91ec-4a53-9e72-b88fd15f5581
+  Args:
+    type: :Man
+    source: Thilo_von_Watzdorf
+  AssignClass (09d8f07a-e386-4e72-ab0e-850c30a3b51b)
+ Call ID: 09d8f07a-e386-4e72-ab0e-850c30a3b51b
+  Args:
+    source: Thilo_von_Watzdorf
+    type: :Person
+  AddTriple (12c5ccbf-f0a4-41cf-ba1e-9de36fa46d5d)
+ Call ID: 12c5ccbf-f0a4-41cf-ba1e-9de36fa46d5d
+  Args:
+    source: Stephan_von_Watzdorf
+    target: :Simone_Arnoux
+    relation: :isChildOf
+  AddTriple (832e5cf0-2470-4e17-a80c-41aceb67e702)
+ Call ID: 832e5cf0-2470-4e17-a80c-41aceb67e702
+  Args:
+    relation: :isChildOf
+    target: :Simone_Arnoux
+    source: Thilo_von_Watzdorf
+  AssignClass (2e09dbe2-d6cd-45da-8028-fc7db8c5a382)
+ Call ID: 2e09dbe2-d6cd-45da-8028-fc7db8c5a382
+  Args:
+    type: :Man
+    source: Prince_Constantijn_of_the_Netherlands
+  AssignClass (4faf3d3d-ae5b-4e29-adb6-c09bc617a513)
+ Call ID: 4faf3d3d-ae5b-4e29-adb6-c09bc617a513
+  Args:
+    type: :Person
+    source: Prince_Constantijn_of_the_Netherlands
+  Finish (1637f022-d53a-4785-9c8b-23802fe52722)
+ Call ID: 1637f022-d53a-4785-9c8b-23802fe52722
+  Args:
 
 ================================= Tool Message =================================
 
@@ -794,678 +729,43 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Henry_Lascelles a :Man ;
-      :hasChild data:George_Lascelles,
-          data:Gerald_David_Lascelles ;
+  data:Prince_Aschwin_of_Lippe-Biesterfeld a :Man,
+          :Person ;
+      :hasBirthYear 1914 ;
+      :hasBrother data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+      :hasDeathYear 1988 ;
+      :hasFather data:Prince_Bernhard_of_Lippe ;
+      :hasMarriageYear 1951 ;
+      :hasMother data:Baroness_Armgard_of_Sierstorpff-Cramm ;
+      :hasRelation data:Simone_Arnoux ;
       :hasSex data:Male .
 
-  data:Mary_Princess_Royal a :Woman ;
-      :hasBirthYear 1897 ;
-      :hasBrother data:Edward_VIII,
-          data:George_VI ;
-      :hasChild data:George_Lascelles,
-          data:Gerald_David_Lascelles ;
-      :hasDeathYear 1965 ;
-      :hasFather data:King_George_V ;
-      :hasMarriageYear 1922 ;
-      :hasMother data:Queen_Mary ;
-      :hasSex data:Female ;
-      :isSisterOf data:Edward_VIII,
-          data:George_VI ;
-      :knownAs "Mary"^^xsd:string .
+  data:Prince_Constantijn_of_the_Netherlands a :Man,
+          :Person .
 
-  data:Queen_Elizabeth_II a :Woman ;
-      :hasSex data:Female .
+  data:Stephan_von_Watzdorf a :Man,
+          :Person ;
+      :isChildOf data:Simone_Arnoux .
 
-  data:King_George_V a :Man ;
-      :hasSex data:Male .
+  data:Thilo_von_Watzdorf a :Man,
+          :Person ;
+      :isChildOf data:Simone_Arnoux .
 
-  data:Queen_Mary a :Woman ;
-      :hasSex data:Female .
+  data:Baroness_Armgard_of_Sierstorpff-Cramm a :Person,
+          :Woman .
 
-  data:Edward_VIII a :Man ;
-      :hasSex data:Male .
+  data:Gottfried_Adam_Vollrat_von_Watzdorf a :Man,
+          :Person .
 
-  data:George_Lascelles a :Man ;
-      :hasSex data:Male .
+  data:Prince_Bernhard_of_Lippe a :Man,
+          :Person .
 
-  data:George_VI a :Man ;
-      :hasSex data:Male .
+  data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
+          :Person .
 
-  data:Gerald_David_Lascelles a :Man ;
-      :hasSex data:Male .
-
-
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:78
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_VI' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [2]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Gerald_David_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [3]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Henry_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [4]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Edward_VIII' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_VI' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Gerald_David_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Henry_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [10]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Edward_VIII' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_VI' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Gerald_David_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [15]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Mary' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [16]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Edward_VIII' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [17]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [18]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Henry_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [19]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Elizabeth_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Mary_Princess_Royal' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'King_George_V' is missing the required class ':Ancestor' or ':Man' for the property 'hasFather' on 'Mary_Princess_Royal'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_George_V', class=':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Queen_Mary' is missing the required class ':Ancestor' or ':Woman' for the property 'hasMother' on 'Mary_Princess_Royal'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Mary', class=':Ancestor')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_VI' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Gerald_David_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Mary' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [27]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Edward_VIII' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [28]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [29]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Henry_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [30]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Elizabeth_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [31]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Mary_Princess_Royal' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [32]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [33]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_VI' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [34]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Gerald_David_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [35]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Mary' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Edward_VIII' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Henry_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [39]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Elizabeth_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [40]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Mary_Princess_Royal' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [41]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [42]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_VI' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [43]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Gerald_David_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [44]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Mary' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [45]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Edward_VIII' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [46]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [47]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Henry_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [48]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Elizabeth_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [49]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Mary_Princess_Royal' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [50]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [51]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'King_George_V' is missing the required class ':Ancestor' or ':Man' for the property 'hasFather' on 'Mary_Princess_Royal'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_George_V', class=':Ancestor')
-
-
-  Violation [52]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Queen_Mary' is missing the required class ':Ancestor' or ':Woman' for the property 'hasMother' on 'Mary_Princess_Royal'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Mary', class=':Ancestor')
-
-
-  Violation [53]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_VI' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [54]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Gerald_David_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [55]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Mary' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [56]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Edward_VIII' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [57]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [58]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Henry_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [59]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Elizabeth_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [60]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Mary_Princess_Royal' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [61]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [62]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_VI' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [63]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Gerald_David_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [64]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Mary' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [65]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Edward_VIII' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [66]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'George_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [67]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'Henry_Lascelles' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [68]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Elizabeth_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [69]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Mary_Princess_Royal' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [70]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Male' for the property 'hasSex' on node 'King_George_V' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Male', class=':Sex')
-
-
-  Violation [71]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'King_George_V' is missing the required class ':Ancestor' or ':Man' for the property 'hasFather' on 'Mary_Princess_Royal'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='King_George_V', class=':Ancestor')
-
-
-  Violation [72]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Queen_Mary' is missing the required class ':Ancestor' or ':Woman' for the property 'hasMother' on 'Mary_Princess_Royal'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Mary', class=':Ancestor')
-
-
-  Violation [73]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Elizabeth_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [74]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Mary_Princess_Royal' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [75]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Mary' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [76]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Elizabeth_II' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [77]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Mary_Princess_Royal' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [78]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value node 'Female' for the property 'hasSex' on node 'Queen_Mary' is missing the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
+  data:Simone_Arnoux a :Person,
+          :Woman ;
+      :hasRelation data:Gottfried_Adam_Vollrat_von_Watzdorf .
 
 
 
@@ -1477,29 +777,214 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  AssignClass (73dfd41b-d5a1-4bb8-99a1-551354bb2e54)
- Call ID: 73dfd41b-d5a1-4bb8-99a1-551354bb2e54
+  ValidateShacl (f2426b09-930f-4056-9d39-36bfff7efb1b)
+ Call ID: f2426b09-930f-4056-9d39-36bfff7efb1b
   Args:
-    source: Male
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:20
+Violations:
+
+  Violation [1]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is not classified as a ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Prince_Bernhard_of_Lippe' for the property 'hasFather' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Bernhard_of_Lippe', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Baroness_Armgard_of_Sierstorpff-Cramm' for the property 'hasMother' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Baroness_Armgard_of_Sierstorpff-Cramm', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is not classified as a ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [5]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value 'Simone_Arnoux' for the property 'isChildOf' on node 'Thilo_von_Watzdorf' is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Simone_Arnoux', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value 'Simone_Arnoux' for the property 'isChildOf' on node 'Stephan_von_Watzdorf' is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Simone_Arnoux', class=':Ancestor')
+
+
+  Violation [7]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is not classified as a ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Prince_Bernhard_of_Lippe' for the property 'hasFather' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Bernhard_of_Lippe', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Baroness_Armgard_of_Sierstorpff-Cramm' for the property 'hasMother' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Baroness_Armgard_of_Sierstorpff-Cramm', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is not classified as a ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [11]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value 'Simone_Arnoux' for the property 'isChildOf' on node 'Stephan_von_Watzdorf' is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Simone_Arnoux', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value 'Simone_Arnoux' for the property 'isChildOf' on node 'Thilo_von_Watzdorf' is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Simone_Arnoux', class=':Ancestor')
+
+
+  Violation [13]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is not classified as a ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [14]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is not classified as a ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The value 'Prince_Bernhard_of_Lippe' for the property 'hasFather' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Bernhard_of_Lippe', class=':Ancestor')
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The value 'Baroness_Armgard_of_Sierstorpff-Cramm' for the property 'hasMother' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Baroness_Armgard_of_Sierstorpff-Cramm', class=':Ancestor')
+
+
+  Violation [17]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is not classified as a ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+  Violation [18]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value 'Simone_Arnoux' for the property 'isChildOf' on node 'Stephan_von_Watzdorf' is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Simone_Arnoux', class=':Ancestor')
+
+
+  Violation [19]:
+    SHACL message: Value does not have class :Ancestor
+    LLM-provided explanation of the violation:
+      The value 'Simone_Arnoux' for the property 'isChildOf' on node 'Thilo_von_Watzdorf' is missing the mandatory ':Ancestor' class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Simone_Arnoux', class=':Ancestor')
+
+
+  Violation [20]:
+    SHACL message: Value does not have class :Sex
+    LLM-provided explanation of the violation:
+      The value 'Male' for the property 'hasSex' on node 'Prince_Aschwin_of_Lippe-Biesterfeld' is not classified as a ':Sex'.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Male', class=':Sex')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (903ed3bf-c256-4e74-af84-dcb35d686cc9)
+ Call ID: 903ed3bf-c256-4e74-af84-dcb35d686cc9
+  Args:
     type: :Sex
-  AssignClass (a2da344c-4c1b-4426-a11d-088a171cd42f)
- Call ID: a2da344c-4c1b-4426-a11d-088a171cd42f
+    source: :Male
+  AssignClass (bb40cd7e-ec93-410d-ac1d-a7e977e65e06)
+ Call ID: bb40cd7e-ec93-410d-ac1d-a7e977e65e06
   Args:
-    source: Female
     type: :Sex
-  AssignClass (ddf38a9c-4a94-4172-9772-81453f04757c)
- Call ID: ddf38a9c-4a94-4172-9772-81453f04757c
+    source: :Female
+  AssignClass (b1e4f156-a8ad-4a36-a5e0-a579112f4078)
+ Call ID: b1e4f156-a8ad-4a36-a5e0-a579112f4078
   Args:
+    source: Prince_Bernhard_of_Lippe
     type: :Ancestor
-    source: King_George_V
-  AssignClass (4b2c99aa-26ca-4e8a-bc74-9cb9d974f5e3)
- Call ID: 4b2c99aa-26ca-4e8a-bc74-9cb9d974f5e3
+  AssignClass (2e2cdb2d-91e8-4ee6-94f7-65ddaf1ca1b3)
+ Call ID: 2e2cdb2d-91e8-4ee6-94f7-65ddaf1ca1b3
   Args:
-    source: Queen_Mary
+    source: Baroness_Armgard_of_Sierstorpff-Cramm
     type: :Ancestor
-  ValidateShacl (50b9d7dd-a4c1-4fbe-a49b-cb92eb1f2190)
- Call ID: 50b9d7dd-a4c1-4fbe-a49b-cb92eb1f2190
+  AssignClass (a2eef1aa-0ae7-493a-9b91-66a4d5f52905)
+ Call ID: a2eef1aa-0ae7-493a-9b91-66a4d5f52905
   Args:
+    source: Simone_Arnoux
+    type: :Ancestor
+  Finish (6e667546-ee2b-448f-a124-8244f12eae1f)
+ Call ID: 6e667546-ee2b-448f-a124-8244f12eae1f
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1520,54 +1005,64 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Henry_Lascelles a :Man ;
-      :hasChild data:George_Lascelles,
-          data:Gerald_David_Lascelles ;
-      :hasSex data:Male .
-
-  data:Mary_Princess_Royal a :Woman ;
-      :hasBirthYear 1897 ;
-      :hasBrother data:Edward_VIII,
-          data:George_VI ;
-      :hasChild data:George_Lascelles,
-          data:Gerald_David_Lascelles ;
-      :hasDeathYear 1965 ;
-      :hasFather data:King_George_V ;
-      :hasMarriageYear 1922 ;
-      :hasMother data:Queen_Mary ;
-      :hasSex data:Female ;
-      :isSisterOf data:Edward_VIII,
-          data:George_VI ;
-      :knownAs "Mary"^^xsd:string .
-
-  data:Queen_Elizabeth_II a :Woman ;
-      :hasSex data:Female .
-
-  data:King_George_V a :Ancestor,
-          :Man ;
-      :hasSex data:Male .
-
-  data:Queen_Mary a :Ancestor,
-          :Woman ;
-      :hasSex data:Female .
-
-  data:Edward_VIII a :Man ;
-      :hasSex data:Male .
-
-  data:George_Lascelles a :Man ;
-      :hasSex data:Male .
-
-  data:George_VI a :Man ;
-      :hasSex data:Male .
-
-  data:Gerald_David_Lascelles a :Man ;
-      :hasSex data:Male .
-
   data:Female a :Sex .
+
+  data:Prince_Aschwin_of_Lippe-Biesterfeld a :Man,
+          :Person ;
+      :hasBirthYear 1914 ;
+      :hasBrother data:Prince_Bernhard_of_Lippe-Biesterfeld ;
+      :hasDeathYear 1988 ;
+      :hasFather data:Prince_Bernhard_of_Lippe ;
+      :hasMarriageYear 1951 ;
+      :hasMother data:Baroness_Armgard_of_Sierstorpff-Cramm ;
+      :hasRelation data:Simone_Arnoux ;
+      :hasSex data:Male .
+
+  data:Prince_Constantijn_of_the_Netherlands a :Man,
+          :Person .
+
+  data:Stephan_von_Watzdorf a :Man,
+          :Person ;
+      :isChildOf data:Simone_Arnoux .
+
+  data:Thilo_von_Watzdorf a :Man,
+          :Person ;
+      :isChildOf data:Simone_Arnoux .
+
+  data:Baroness_Armgard_of_Sierstorpff-Cramm a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Gottfried_Adam_Vollrat_von_Watzdorf a :Man,
+          :Person .
 
   data:Male a :Sex .
 
+  data:Prince_Bernhard_of_Lippe a :Ancestor,
+          :Man,
+          :Person .
 
+  data:Prince_Bernhard_of_Lippe-Biesterfeld a :Man,
+          :Person .
+
+  data:Simone_Arnoux a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasRelation data:Gottfried_Adam_Vollrat_von_Watzdorf .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (6ec786bd-91a9-496e-871f-a97263eada12)
+ Call ID: 6ec786bd-91a9-496e-871f-a97263eada12
+  Args:
 
 ================================= Tool Message =================================
 
@@ -1577,6 +1072,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (3054611e-1f46-4436-98a9-81487869f3bc)
- Call ID: 3054611e-1f46-4436-98a9-81487869f3bc
+  Finish (56f570d0-536f-4a26-a7ce-3c413ebcf385)
+ Call ID: 56f570d0-536f-4a26-a7ce-3c413ebcf385
   Args:

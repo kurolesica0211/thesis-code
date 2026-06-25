@@ -69,29 +69,71 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-James Robert Bruce Ogilvy (born 29 February 1964) is a British landscape designer, and the founder and editor of the magazine Luxury Briefing.
-He is a member of the extended British royal family as the elder child and only son of Princess Alexandra of Kent and Sir Angus Ogilvy.
-Early life and family
+Prince William of Gloucester (William Henry Andrew Frederick; 18 December 1941 – 28 August 1972) was a member of the British royal family.
+The elder son of Prince Henry, Duke of Gloucester, and Princess Alice, Duchess of Gloucester, he was a grandson of George V, nephew of Edward VIII and George VI, and first cousin of Elizabeth II.
+He was the most recent descendant of George III to be diagnosed with porphyria, a condition thought to have caused George III’s mental breakdown, and in William’s case, it was most likely hereditary.
+William died in 1972, aged 30, in an air crash while piloting his plane during a competition.
+Early life
 
-James Robert Bruce Ogilvy was born on Leap Year Day in 1964, making him a leapling.
-He was the first of four children born to royalty within a space of nine weeks in 1964, the others being Prince Edward, Lady Helen Windsor and Lady Sarah Armstrong-Jones.
-Ogilvy was baptised by Michael Ramsey, Archbishop of Canterbury, with Queen Elizabeth II among his seven godparents.
-His education began in the "palace school" with his cousins Prince Edward, Lady Helen Windsor and Lady Sarah Armstrong-Jones.
-Subsequently, Ogilvy attended Gibbs pre-prep and Heatherdown Preparatory School (with Prince Edward).
-After that, Ogilvy and Prince Edward went separate ways, the prince to Gordonstoun and Cambridge, and Ogilvy to Eton College and the University of St Andrews.
-Ogilvy is also a professional photographer and landscape designer.
-Ogilvy had several leg wounds and required 30 stitches.
-Ancestry
+William was born on 18 December 1941 at the Lady Carnarvon Nursing Home in Hadley Common, Hertfordshire, the eldest son of Prince Henry, Duke of Gloucester, and Alice, Duchess of Gloucester.
+His father was the third son of King George V and Queen Mary, and his mother was the third daughter of the 7th Duke of Buccleuch and Lady Margaret Bridgeman.
+His godparents were King George VI (his paternal uncle), Queen Mary (his paternal grandmother), Princess Helena Victoria (his paternal first cousin twice-removed), Lady Margaret Hawkins (his maternal aunt), Major Lord William Montagu Douglas Scott (his maternal uncle) and John Vereker, 6th Viscount Gort, who was unable to attend.
+At the time of William's birth, and for months afterwards, Henry was away on military duties, some involving considerable risk.
+This prompted George VI to write to his sister-in-law, assuring her that, should anything happen to his brother, he would become Prince William's guardian.
+In 1947, William served as a page boy at the wedding of his cousin Princess Elizabeth to Philip, Duke of Edinburgh.
+The other page boy was Prince Michael of Kent.
+William spent his early childhood at Barnwell Manor in Northamptonshire and later in Canberra, Australia, where his father served as Governor-General from 1945 to 1947.
+Career
 
-His maternal grandparents were Prince George, Duke of Kent, the fourth son of King George V; and Princess Marina of Greece and Denmark.
-Princess Marina was the daughter of Prince Nicholas of Greece and Denmark and Grand Duchess Elena Vladimirovna of Russia (later known as Princess Nicholas of Greece and Denmark).
-He has a younger sister, Marina Ogilvy.
+After returning to Britain, William took a position with Lazards, a merchant bank.
+He was the second member of the British royal family to work in the civil service or diplomatic service (the first was his uncle, Prince George, Duke of Kent, in the 1920s).
+By 1970, the health of his father, the Duke of Gloucester, had deteriorated following further strokes.
+William had no choice but to resign from the diplomatic service and return to Britain in order to manage his father's estate and, as he put it, take on the full-time role of a royal prince.
+Apart from taking over many engagements his father could no longer perform, William took particular interest in St John Ambulance, where he became increasingly active.
+William occasionally served as Counsellor of State during the Queen's absence.
+Personal life
+
+William was consistently described by friends as adventurous (almost to the point of recklessness), warm, tender and extremely generous.
+Regarding his family, William considered himself extremely lucky compared to other members of the royal family.
+William acknowledged his father couldn't have been very happy as a young man, as a result of the strict upbringing he had received, and expressed gratitude for the freedom he had given him throughout his life.
+Relationships
+
+Former Hungarian model and stewardess Zsuzsi Starkloff (1936–2020, born Zsuzsana Maria Lehel in a Jewish-Hungarian family) had a relationship with William.
+They first met in 1968 in Japan, where Starkloff worked, having previously divorced American pilot Edward Starkloff.
+The relationship was further explored in the 2015 Channel 4 TV documentary, The Other Prince William.
+Despite the reported reluctance of senior members of the royal family to take William's relationship with Starkloff seriously, marriage standards within the royal family were no longer as strict as they had been.
+Princess Margaret, while not encouraging William, did sympathise with him in this regard and advised him to "wait a bit" and to "see how everything looks" once he returned to Britain.
+William's intentions regarding his relationship with Starkloff are unclear.
+In the early 1970s, William began a relationship with divorcee Nicole Sieff (née Moschietto), daughter of a Monte Carlo restaurateur, who had two sons from her marriage to Jonathan Sieff, grandson of Israel Sieff, Baron Sieff.
+Health
+
+Shortly before transferring to Tokyo in August 1968, William was examined by a Royal Air Force doctor, Headly Bellringer, at the request of his mother.
+Although aware of the theory of the royal family's history of porphyria then being advanced by Ida Macalpine and Richard Hunter, Bellringer stated he "tried not to let it influence him...with all the symptoms, I was left with little option but to diagnose the Prince's condition as porphyria."
+A reliable diagnosis of porphyria in a member of the British royal family lent weight to the theory – first advanced by Professor Ida Macalpine in the late 1960s – that porphyria was the underlying cause of the ill-health of both Mary, Queen of Scots (an ancestor of both of William's parents) and George III.
+Death
+
+A licensed pilot and President of the British Light Aviation Centre, William owned several aircraft and competed in amateur air show races.
+William and Mitchell were killed.
+William was buried in the Royal Burial Ground, Frogmore.
+The comprehensive school in Oundle, which he opened in 1971, was renamed Prince William School in his memory.
+William was the heir apparent of his father's peerages, Duke of Gloucester, Earl of Ulster, and Baron Culloden.
+Upon his death, his younger brother Prince Richard became heir apparent, and succeeded to these peerages in 1974.
+William was the first grandchild of King George V and Queen Mary to die.
+Honours and arms
+
+Honours
+
+Arms
+
+For his 21st birthday, in 1962, Prince William was granted the use of the Royal Arms, differenced with a label argent of five points, the outer pair and central point bearing lions gules, the inner pair crosses gules.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -107,39 +149,9 @@ He has a younger sister, Marina Ogilvy.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -154,6 +166,23 @@ He has a younger sister, Marina Ogilvy.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -171,6 +200,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -238,29 +282,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,6 +305,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -281,6 +325,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -289,17 +335,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -327,6 +375,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -342,118 +474,110 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8de2ac76-7800-4394-ab37-2458a204fa0e)
- Call ID: 8de2ac76-7800-4394-ab37-2458a204fa0e
+  AssignClass (173df14e-b57b-4fd9-bd70-8a05905a46e0)
+ Call ID: 173df14e-b57b-4fd9-bd70-8a05905a46e0
   Args:
-    source: James_Robert_Bruce_Ogilvy
+    source: Prince_William_of_Gloucester
     type: :Man
-  AssignClass (5fc14f08-e434-4e24-995d-ce67f8e8249f)
- Call ID: 5fc14f08-e434-4e24-995d-ce67f8e8249f
+  AssignClass (ce81e1e2-0f82-467f-a6c3-b7770a6528f8)
+ Call ID: ce81e1e2-0f82-467f-a6c3-b7770a6528f8
   Args:
-    source: Princess_Alexandra_of_Kent
-    type: :Woman
-  AssignClass (dd91187c-8293-4cb9-899b-20c72e5e2b14)
- Call ID: dd91187c-8293-4cb9-899b-20c72e5e2b14
+    type: :Person
+    source: Prince_William_of_Gloucester
+  AddLiteral (39cd255a-d829-47e5-96d8-ad134b3f8562)
+ Call ID: 39cd255a-d829-47e5-96d8-ad134b3f8562
   Args:
-    source: Sir_Angus_Ogilvy
-    type: :Man
-  AssignClass (c12fb845-8cd9-4e28-8507-475940524aeb)
- Call ID: c12fb845-8cd9-4e28-8507-475940524aeb
-  Args:
-    type: :Man
-    source: Prince_George_Duke_of_Kent
-  AssignClass (2e9613a0-2d5e-4ec1-b6ba-78d17eb72a43)
- Call ID: 2e9613a0-2d5e-4ec1-b6ba-78d17eb72a43
-  Args:
-    source: King_George_V
-    type: :Man
-  AssignClass (f83120ee-c970-47e7-bc05-b379651108d5)
- Call ID: f83120ee-c970-47e7-bc05-b379651108d5
-  Args:
-    type: :Woman
-    source: Princess_Marina_of_Greece_and_Denmark
-  AssignClass (1985eb1d-b9e3-4c77-8a04-1d6aeb6c9ad2)
- Call ID: 1985eb1d-b9e3-4c77-8a04-1d6aeb6c9ad2
-  Args:
-    source: Prince_Nicholas_of_Greece_and_Denmark
-    type: :Man
-  AssignClass (e263190b-3303-4252-ac7c-4237bca5bd7e)
- Call ID: e263190b-3303-4252-ac7c-4237bca5bd7e
-  Args:
-    type: :Woman
-    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
-  AssignClass (dbda0b94-f2f3-4cf1-9775-5de0cafd8ee0)
- Call ID: dbda0b94-f2f3-4cf1-9775-5de0cafd8ee0
-  Args:
-    type: :Woman
-    source: Marina_Ogilvy
-  AddLiteral (b1f3a0d1-2059-4e69-a877-cd6d1d38be18)
- Call ID: b1f3a0d1-2059-4e69-a877-cd6d1d38be18
-  Args:
-    relation: :hasBirthYear
+    literal_value: 1941
     literal_type: xsd:integer
-    literal_value: 1964
-    source: James_Robert_Bruce_Ogilvy
-  AddTriple (eb8304ed-2fd5-4d9f-a6e5-1c28b5a0f38f)
- Call ID: eb8304ed-2fd5-4d9f-a6e5-1c28b5a0f38f
+    relation: :hasBirthYear
+    source: Prince_William_of_Gloucester
+  AddLiteral (528450a0-bd4b-4d34-a040-ccd2b671e0fc)
+ Call ID: 528450a0-bd4b-4d34-a040-ccd2b671e0fc
   Args:
+    literal_value: 1972
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Prince_William_of_Gloucester
+  AssignClass (ea2ca783-befb-4a16-9496-3ba5e46df943)
+ Call ID: ea2ca783-befb-4a16-9496-3ba5e46df943
+  Args:
+    source: Prince_Henry_Duke_of_Gloucester
+    type: :Man
+  AssignClass (d4a5aa66-696e-4878-9ee0-39f5b75d7f14)
+ Call ID: d4a5aa66-696e-4878-9ee0-39f5b75d7f14
+  Args:
+    source: Prince_Henry_Duke_of_Gloucester
+    type: :Person
+  AssignClass (552888e2-dc1b-4178-a0ad-ec17db0c1ea4)
+ Call ID: 552888e2-dc1b-4178-a0ad-ec17db0c1ea4
+  Args:
+    source: Princess_Alice_Duchess_of_Gloucester
+    type: :Woman
+  AssignClass (44ffb9ce-6789-4278-9a81-a4aafb60f9a2)
+ Call ID: 44ffb9ce-6789-4278-9a81-a4aafb60f9a2
+  Args:
+    type: :Person
+    source: Princess_Alice_Duchess_of_Gloucester
+  AddTriple (f310c10d-a83f-4050-86b0-cb41efbf943f)
+ Call ID: f310c10d-a83f-4050-86b0-cb41efbf943f
+  Args:
+    source: Prince_William_of_Gloucester
+    relation: :hasFather
+    target: Prince_Henry_Duke_of_Gloucester
+  AddTriple (531aae86-4dbf-4ba0-9a0a-f08f13c747a1)
+ Call ID: 531aae86-4dbf-4ba0-9a0a-f08f13c747a1
+  Args:
+    source: Prince_William_of_Gloucester
+    target: Princess_Alice_Duchess_of_Gloucester
     relation: :hasMother
-    source: James_Robert_Bruce_Ogilvy
-    target: Princess_Alexandra_of_Kent
-  AddTriple (5e89dbc3-7557-4fb2-9b1e-f2e717bde05c)
- Call ID: 5e89dbc3-7557-4fb2-9b1e-f2e717bde05c
+  AssignClass (fcb0d81a-f56c-49ba-9045-aee07d456e88)
+ Call ID: fcb0d81a-f56c-49ba-9045-aee07d456e88
+  Args:
+    type: :Man
+    source: George_V
+  AssignClass (a9023347-d365-40e2-9644-5d7c32033c60)
+ Call ID: a9023347-d365-40e2-9644-5d7c32033c60
+  Args:
+    type: :Person
+    source: George_V
+  AssignClass (ba497ed9-e4b1-4d3c-b53d-ad3a1354c96c)
+ Call ID: ba497ed9-e4b1-4d3c-b53d-ad3a1354c96c
+  Args:
+    source: Queen_Mary
+    type: :Woman
+  AssignClass (05d8d845-0921-43c1-b2d2-feeacda86596)
+ Call ID: 05d8d845-0921-43c1-b2d2-feeacda86596
+  Args:
+    source: Queen_Mary
+    type: :Person
+  AddTriple (ffab8ad9-d519-4eba-ac80-8cf17b4063b8)
+ Call ID: ffab8ad9-d519-4eba-ac80-8cf17b4063b8
   Args:
     relation: :hasFather
-    source: James_Robert_Bruce_Ogilvy
-    target: Sir_Angus_Ogilvy
-  AddTriple (3b26899b-11a8-46dd-a4db-89ce95889852)
- Call ID: 3b26899b-11a8-46dd-a4db-89ce95889852
+    target: George_V
+    source: Prince_Henry_Duke_of_Gloucester
+  AddTriple (0b937872-73f5-4141-ba55-e5648e377556)
+ Call ID: 0b937872-73f5-4141-ba55-e5648e377556
   Args:
-    target: Princess_Marina_of_Greece_and_Denmark
-    source: Princess_Alexandra_of_Kent
+    source: Prince_Henry_Duke_of_Gloucester
     relation: :hasMother
-  AddTriple (858796d6-4b0a-4f07-8979-f6eb797c1a65)
- Call ID: 858796d6-4b0a-4f07-8979-f6eb797c1a65
+    target: Queen_Mary
+  AssignClass (454037e5-76b3-4016-972a-a5c3df2fdfd7)
+ Call ID: 454037e5-76b3-4016-972a-a5c3df2fdfd7
   Args:
-    relation: :hasFather
-    source: Princess_Alexandra_of_Kent
-    target: Prince_George_Duke_of_Kent
-  AddTriple (a4234e6a-6fe9-4567-bc3f-d0c78129de41)
- Call ID: a4234e6a-6fe9-4567-bc3f-d0c78129de41
+    type: :Man
+    source: Prince_Richard
+  AssignClass (04cad1c4-9fd1-4aa7-b334-9f3a56acc075)
+ Call ID: 04cad1c4-9fd1-4aa7-b334-9f3a56acc075
   Args:
-    relation: :hasFather
-    source: Prince_George_Duke_of_Kent
-    target: King_George_V
-  AddTriple (2f4e4e1e-aad7-4e2b-8da0-f0c29ff8a6f1)
- Call ID: 2f4e4e1e-aad7-4e2b-8da0-f0c29ff8a6f1
+    type: :Person
+    source: Prince_Richard
+  AddTriple (1c6c288e-9c76-4cef-82c0-041856edc265)
+ Call ID: 1c6c288e-9c76-4cef-82c0-041856edc265
   Args:
-    target: Grand_Duchess_Elena_Vladimirovna_of_Russia
-    source: Princess_Marina_of_Greece_and_Denmark
-    relation: :hasMother
-  AddTriple (1f6af89e-3d93-47ab-b923-51f56fc0280c)
- Call ID: 1f6af89e-3d93-47ab-b923-51f56fc0280c
-  Args:
-    source: Princess_Marina_of_Greece_and_Denmark
-    target: Prince_Nicholas_of_Greece_and_Denmark
-    relation: :hasFather
-  AddTriple (c2fbcd29-4380-4e4c-be8b-290abc918ac0)
- Call ID: c2fbcd29-4380-4e4c-be8b-290abc918ac0
-  Args:
-    source: James_Robert_Bruce_Ogilvy
-    target: Marina_Ogilvy
-    relation: :hasSister
-  AddTriple (6a97b9a0-68f8-4c59-a8ea-c1687010bda8)
- Call ID: 6a97b9a0-68f8-4c59-a8ea-c1687010bda8
-  Args:
-    target: Princess_Alexandra_of_Kent
-    source: Marina_Ogilvy
-    relation: :hasMother
-  AddTriple (580825f8-7a61-48bf-9459-e1853f9c2891)
- Call ID: 580825f8-7a61-48bf-9459-e1853f9c2891
-  Args:
-    relation: :hasFather
-    target: Sir_Angus_Ogilvy
-    source: Marina_Ogilvy
-  Finish (5fe3ebf9-35bc-43d6-a2df-8275ca3f7a77)
- Call ID: 5fe3ebf9-35bc-43d6-a2df-8275ca3f7a77
+    target: Prince_Richard
+    relation: :isBrotherOf
+    source: Prince_William_of_Gloucester
+  Finish (a1974d17-8c1c-4e6a-b00e-f233c010b025)
+ Call ID: a1974d17-8c1c-4e6a-b00e-f233c010b025
   Args:

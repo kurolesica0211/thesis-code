@@ -69,23 +69,27 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-The Duke of Castro  The Duchess of Castro
+Paul Dmitrievich Romanovsky-Ilyinsky (January 27, 1928 – February 10, 2004) was a three-time mayor of Palm Beach, Florida, and the only child of Grand Duke Dmitri Pavlovich of Russia and his morganatic wife, Cincinnati heiress Audrey Emery.
+He was a great-grandson of Tsar Alexander II of Russia and, following the death of Grand Duke Vladimir Kirillovich in 1992, the heir-male of the Ilyinsky claim of the House of Romanov (a position now held by his elder son), a first cousin once removed of Nicholas II, first cousin of Prince Lennart of Sweden, Duke of Småland and the second cousin of Charles III.
+Early life
 
+Prince Paul Romanovsky-Ilyinsky was born on 27 January 1928 at his parents' home, 26 Manchester Square, London.
+His father, Grand Duke Dmitri, as a direct consequence of his involvement in the murder of Grigori Rasputin in 1916, had been sent to the Persian front, which ultimately saved his life, as many of his Imperial relatives were executed by the Bolsheviks during the October Revolution .
+Dmitri, who was working as a champagne salesman, married Cincinnati heiress Audrey Emery in 1926.
+Grand Duke Cyril Vladimirovich of Russia, Dmitri's cousin and the self-proclaimed emperor in exile, elevated Grand Duke Dmitri's wife and their descendants to Russian princely (Russian: knyaz) rank (rank of nobility, not royalty).
+Any children the couple would have would be known as Romanovsky-Ilyinsky, the latter half of the surname derived from Dmitri's former property in Russia, Ilinskoe.
+Ilynskiy's parents were divorced in 1937, and Ilyinsky was raised by his mother, who mostly lived in France.
+Dmitri Pavlovich's health had always been somewhat frail, and in the 1930s, his chronic tuberculosis became acute, leading to his death in 1942.
+Education and career
 
-Princess Béatrice Marie Caroline Louise Françoise of Bourbon-Two Sicilies (born 16 June 1950 in Saint-Raphaël, Var, France) is the eldest daughter of Prince Ferdinand, Duke of Castro, Castro-line claimant to the headship of the House of Bourbon-Two Sicilies, and his wife, Chantal de Chevron-Villette.
-Her younger brother, Prince Carlo, Duke of Castro, is the current Castro-line claimant to the headship of the House of Bourbon-Two Sicilies.
-Marriage and issue
+Ilyinsky, who was a U.S. citizen, attended Woodberry Forest School in Virginia and the Royal Military Academy Sandhurst, England, before joining the U.S. Marine Corps.
+Ilyinsky lived in Cincinnati for about 20 years, serving on the board of the company founded by his mother's family, Emery Industries, and working as an author and photographer.
+Ilyinsky died at his home in Palm Beach, Florida, on February 10, 2004.
+Personal life
 
-Béatrice married Charles Napoléon Bonaparte, eldest son of Louis, Prince Napoléon and his wife, Alix de Foresta, on 19 December 1978 in Paris, France.
-Charles was the great-great-grandnephew of Napoleon I of France, founder of the Imperial House of France.
-Béatrice and Charles had two children:
+Ilyinsky was married twice; he married his first wife, Mary Evelyn Prince in 1948 (annulment in 1951), and married his second wife, Angelica Philippa Kauffmann in 1953.
+Ilyinsky had four children:
 
-
-Title, styles and honours
-
-Title and styles
-
-Honours
 
 Ancestry
 
@@ -96,6 +100,8 @@ References
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -111,39 +117,9 @@ References
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -158,6 +134,23 @@ References
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -175,6 +168,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -242,29 +250,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -273,6 +273,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -285,6 +293,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -293,17 +303,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -331,6 +343,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -346,168 +442,277 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (59d3aa66-a63e-43a9-bb8e-62bfc74e1e7b)
- Call ID: 59d3aa66-a63e-43a9-bb8e-62bfc74e1e7b
+  AssignClass (d69e28d9-d604-4d25-9d85-db5c2d49448a)
+ Call ID: d69e28d9-d604-4d25-9d85-db5c2d49448a
   Args:
-    source: Béatrice_of_Bourbon-Two_Sicilies
+    type: :Man
+    source: :Paul_Dmitrievich_Romanovsky-Ilyinsky
+  AssignClass (9da637bc-a0b9-493a-93a7-4ca2ccea8fd8)
+ Call ID: 9da637bc-a0b9-493a-93a7-4ca2ccea8fd8
+  Args:
     type: :Person
-  AssignClass (7772f2ba-efa4-4c12-a34d-1b014e82e40a)
- Call ID: 7772f2ba-efa4-4c12-a34d-1b014e82e40a
+    source: :Paul_Dmitrievich_Romanovsky-Ilyinsky
+  AddLiteral (9f405c1f-c5c8-4918-8b3d-1218e76b001a)
+ Call ID: 9f405c1f-c5c8-4918-8b3d-1218e76b001a
   Args:
-    source: Béatrice_of_Bourbon-Two_Sicilies
-    type: :Woman
-  AddLiteral (3fac8030-83eb-44af-a312-c4d0519f2f27)
- Call ID: 3fac8030-83eb-44af-a312-c4d0519f2f27
-  Args:
-    literal_type: xsd:integer
-    source: Béatrice_of_Bourbon-Two_Sicilies
     relation: :hasBirthYear
-    literal_value: 1950
-  AssignClass (f7d05ce3-2ba5-4232-b5bd-3c0871113717)
- Call ID: f7d05ce3-2ba5-4232-b5bd-3c0871113717
+    source: :Paul_Dmitrievich_Romanovsky-Ilyinsky
+    literal_value: 1928
+    literal_type: xsd:integer
+  AddLiteral (801383c3-15b6-40ec-a1a8-6df1593d4581)
+ Call ID: 801383c3-15b6-40ec-a1a8-6df1593d4581
   Args:
-    source: Ferdinand_Duke_of_Castro
-    type: :Person
-  AssignClass (2c319d91-5703-4f68-befe-3c53f156830c)
- Call ID: 2c319d91-5703-4f68-befe-3c53f156830c
+    relation: :hasDeathYear
+    source: :Paul_Dmitrievich_Romanovsky-Ilyinsky
+    literal_value: 2004
+    literal_type: xsd:integer
+  AssignClass (1f984a5c-146b-4e86-8a8a-a6029f3336e3)
+ Call ID: 1f984a5c-146b-4e86-8a8a-a6029f3336e3
   Args:
-    source: Ferdinand_Duke_of_Castro
+    source: :Dmitri_Pavlovich_of_Russia
     type: :Man
-  AssignClass (9d3f9f1f-9b2a-4b7d-a8c5-99e21c108c3e)
- Call ID: 9d3f9f1f-9b2a-4b7d-a8c5-99e21c108c3e
+  AssignClass (023ab939-1a14-4e52-8fa9-213a9ca733ec)
+ Call ID: 023ab939-1a14-4e52-8fa9-213a9ca733ec
   Args:
-    source: Ferdinand_Duke_of_Castro
-    type: :Ancestor
-  AssignClass (4dd3ddbd-7621-46af-bbb3-21645ed23141)
- Call ID: 4dd3ddbd-7621-46af-bbb3-21645ed23141
-  Args:
-    source: Chantal_de_Chevron-Villette
+    source: :Dmitri_Pavlovich_of_Russia
     type: :Person
-  AssignClass (94e45373-c265-4622-b30a-593b4e48fee6)
- Call ID: 94e45373-c265-4622-b30a-593b4e48fee6
+  AssignClass (75e5bfce-c61f-4c05-856d-6ab7e2fb9c49)
+ Call ID: 75e5bfce-c61f-4c05-856d-6ab7e2fb9c49
   Args:
+    source: :Audrey_Emery
     type: :Woman
-    source: Chantal_de_Chevron-Villette
-  AssignClass (6ba983cc-e65f-4215-8ee6-9a82853f0b5b)
- Call ID: 6ba983cc-e65f-4215-8ee6-9a82853f0b5b
+  AssignClass (fabb1f19-87f1-46b6-9f68-abba686ba732)
+ Call ID: fabb1f19-87f1-46b6-9f68-abba686ba732
   Args:
-    source: Chantal_de_Chevron-Villette
-    type: :Ancestor
-  AddTriple (36022fc3-1daf-4e63-beec-3c0aecc53728)
- Call ID: 36022fc3-1daf-4e63-beec-3c0aecc53728
-  Args:
-    target: Ferdinand_Duke_of_Castro
-    source: Béatrice_of_Bourbon-Two_Sicilies
-    relation: :hasFather
-  AddTriple (1f874878-5f8d-41ea-b4dc-f47c34223240)
- Call ID: 1f874878-5f8d-41ea-b4dc-f47c34223240
-  Args:
-    target: Chantal_de_Chevron-Villette
-    source: Béatrice_of_Bourbon-Two_Sicilies
-    relation: :hasMother
-  AssignClass (60dd317c-6f86-4abe-a0ba-baa3e27dded7)
- Call ID: 60dd317c-6f86-4abe-a0ba-baa3e27dded7
-  Args:
+    source: :Audrey_Emery
     type: :Person
-    source: Carlo_Duke_of_Castro
-  AssignClass (ade1a0b4-bf5f-4d48-bf0f-5cb2e94dc17a)
- Call ID: ade1a0b4-bf5f-4d48-bf0f-5cb2e94dc17a
+  AddTriple (64be21d8-342b-410a-a403-642a42d36b83)
+ Call ID: 64be21d8-342b-410a-a403-642a42d36b83
   Args:
-    source: Carlo_Duke_of_Castro
-    type: :Man
-  AddTriple (44fbaca5-8fc0-47cb-be8f-f62870197b20)
- Call ID: 44fbaca5-8fc0-47cb-be8f-f62870197b20
-  Args:
-    target: Carlo_Duke_of_Castro
-    source: Béatrice_of_Bourbon-Two_Sicilies
-    relation: :hasBrother
-  AddTriple (ff5b84a7-1688-4c72-a683-6c5b1ff1cdd9)
- Call ID: ff5b84a7-1688-4c72-a683-6c5b1ff1cdd9
-  Args:
-    target: Ferdinand_Duke_of_Castro
-    source: Carlo_Duke_of_Castro
+    source: :Paul_Dmitrievich_Romanovsky-Ilyinsky
     relation: :hasFather
-  AddTriple (5392376c-ff0c-4236-b170-68dc26c50095)
- Call ID: 5392376c-ff0c-4236-b170-68dc26c50095
+    target: :Dmitri_Pavlovich_of_Russia
+  AddTriple (22e48881-646d-4cec-83e4-a7270c22bed7)
+ Call ID: 22e48881-646d-4cec-83e4-a7270c22bed7
   Args:
-    target: Chantal_de_Chevron-Villette
-    source: Carlo_Duke_of_Castro
     relation: :hasMother
-  AssignClass (f9a4d02f-2a4b-4d6f-b90e-90d5e0242c02)
- Call ID: f9a4d02f-2a4b-4d6f-b90e-90d5e0242c02
+    source: :Paul_Dmitrievich_Romanovsky-Ilyinsky
+    target: :Audrey_Emery
+  AddTriple (c800d68b-6a66-4051-8162-0ce226747e62)
+ Call ID: c800d68b-6a66-4051-8162-0ce226747e62
   Args:
-    source: Charles_Napoléon_Bonaparte
+    relation: :hasSex
+    source: :Paul_Dmitrievich_Romanovsky-Ilyinsky
+    target: :Male
+  AddTriple (a751e3ab-6632-4235-b365-0fcd39cb0719)
+ Call ID: a751e3ab-6632-4235-b365-0fcd39cb0719
+  Args:
+    target: :Male
+    source: :Dmitri_Pavlovich_of_Russia
+    relation: :hasSex
+  AddTriple (48e906f4-e6ab-4a41-aaec-268bf75e1784)
+ Call ID: 48e906f4-e6ab-4a41-aaec-268bf75e1784
+  Args:
+    source: :Audrey_Emery
+    relation: :hasSex
+    target: :Female
+  AssignClass (b0f2809c-83d9-4bd2-9662-7f2d51197a3f)
+ Call ID: b0f2809c-83d9-4bd2-9662-7f2d51197a3f
+  Args:
+    source: :Mary_Evelyn_Prince
+    type: :Woman
+  AssignClass (cf182caa-2664-49f4-a659-e803c2ce2d26)
+ Call ID: cf182caa-2664-49f4-a659-e803c2ce2d26
+  Args:
+    source: :Mary_Evelyn_Prince
     type: :Person
-  AssignClass (19935dc7-a05c-416c-92b1-0c971cfd2559)
- Call ID: 19935dc7-a05c-416c-92b1-0c971cfd2559
+  AddTriple (9511e7fb-8745-4e8b-ad1d-a906728a8ba8)
+ Call ID: 9511e7fb-8745-4e8b-ad1d-a906728a8ba8
   Args:
-    source: Charles_Napoléon_Bonaparte
-    type: :Man
-  AddLiteral (c5bee8a1-23f0-4c9c-ae27-3413b9824ada)
- Call ID: c5bee8a1-23f0-4c9c-ae27-3413b9824ada
+    target: :Female
+    relation: :hasSex
+    source: :Mary_Evelyn_Prince
+  AddLiteral (55d9f01c-f8b9-43a0-989e-37db4a9998c6)
+ Call ID: 55d9f01c-f8b9-43a0-989e-37db4a9998c6
   Args:
     relation: :hasMarriageYear
-    source: Béatrice_of_Bourbon-Two_Sicilies
-    literal_value: 1978
+    source: :Paul_Dmitrievich_Romanovsky-Ilyinsky
     literal_type: xsd:integer
-  AddTriple (287c5304-4387-46ae-af46-fdef4379872c)
- Call ID: 287c5304-4387-46ae-af46-fdef4379872c
+    literal_value: 1948
+  AssignClass (27e096eb-b4db-4cd1-9279-f6c27645334c)
+ Call ID: 27e096eb-b4db-4cd1-9279-f6c27645334c
   Args:
-    target: Charles_Napoléon_Bonaparte
-    relation: :hasRelation
-    source: Béatrice_of_Bourbon-Two_Sicilies
-  AssignClass (504b8c13-01d8-457e-815f-c584cb86d77a)
- Call ID: 504b8c13-01d8-457e-815f-c584cb86d77a
-  Args:
-    type: :Person
-    source: Louis_Prince_Napoléon
-  AssignClass (9b998efa-5155-4db0-8288-d13f4d4b1399)
- Call ID: 9b998efa-5155-4db0-8288-d13f4d4b1399
-  Args:
-    type: :Man
-    source: Louis_Prince_Napoléon
-  AssignClass (c92ac324-0f2d-4490-9718-fa9a6933facf)
- Call ID: c92ac324-0f2d-4490-9718-fa9a6933facf
-  Args:
-    source: Louis_Prince_Napoléon
-    type: :Ancestor
-  AssignClass (6922d233-8b04-438a-bbb3-40e2765c46be)
- Call ID: 6922d233-8b04-438a-bbb3-40e2765c46be
-  Args:
-    type: :Person
-    source: Alix_de_Foresta
-  AssignClass (19f48ad7-f187-489c-bea1-dfe0da71383d)
- Call ID: 19f48ad7-f187-489c-bea1-dfe0da71383d
-  Args:
+    source: :Angelica_Philippa_Kauffmann
     type: :Woman
-    source: Alix_de_Foresta
-  AssignClass (71dc6f7d-b015-4fb2-b0f4-6b2b234f774a)
- Call ID: 71dc6f7d-b015-4fb2-b0f4-6b2b234f774a
-  Args:
-    type: :Ancestor
-    source: Alix_de_Foresta
-  AddTriple (15b64d3e-25df-4b73-8633-8ae5b5e0f07e)
- Call ID: 15b64d3e-25df-4b73-8633-8ae5b5e0f07e
-  Args:
-    source: Charles_Napoléon_Bonaparte
-    relation: :hasFather
-    target: Louis_Prince_Napoléon
-  AddTriple (21994cef-3663-4a17-b9f7-8d005f5c6c5b)
- Call ID: 21994cef-3663-4a17-b9f7-8d005f5c6c5b
-  Args:
-    source: Charles_Napoléon_Bonaparte
-    relation: :hasMother
-    target: Alix_de_Foresta
-  AssignClass (842af3ca-a5ad-408d-926f-e0ef3b4c8b2f)
- Call ID: 842af3ca-a5ad-408d-926f-e0ef3b4c8b2f
+  AssignClass (91799a48-8646-4ebb-8705-c5ad598187fc)
+ Call ID: 91799a48-8646-4ebb-8705-c5ad598187fc
   Args:
     type: :Person
-    source: Napoleon_I_of_France
-  AssignClass (1daba7c3-c7b1-4861-bed6-cda12a9e1721)
- Call ID: 1daba7c3-c7b1-4861-bed6-cda12a9e1721
+    source: :Angelica_Philippa_Kauffmann
+  AddTriple (8e801d65-776e-4733-8774-26d90ef418ca)
+ Call ID: 8e801d65-776e-4733-8774-26d90ef418ca
   Args:
-    source: Napoleon_I_of_France
-    type: :Man
-  Finish (d4149430-219f-4ca6-ad8b-e69a485cff0c)
- Call ID: d4149430-219f-4ca6-ad8b-e69a485cff0c
+    relation: :hasSex
+    source: :Angelica_Philippa_Kauffmann
+    target: :Female
+  AddLiteral (cd3dbfa0-51dc-4e0a-a56e-0ae24ddfe396)
+ Call ID: cd3dbfa0-51dc-4e0a-a56e-0ae24ddfe396
+  Args:
+    relation: :hasMarriageYear
+    source: :Paul_Dmitrievich_Romanovsky-Ilyinsky
+    literal_value: 1953
+    literal_type: xsd:integer
+  Finish (488393f0-1e48-4cd5-9f79-a660dc6f09f6)
+ Call ID: 488393f0-1e48-4cd5-9f79-a660dc6f09f6
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Angelica_Philippa_Kauffmann a :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Mary_Evelyn_Prince a :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Paul_Dmitrievich_Romanovsky-Ilyinsky a :Man,
+          :Person ;
+      :hasBirthYear 1928 ;
+      :hasDeathYear 2004 ;
+      :hasFather data:Dmitri_Pavlovich_of_Russia ;
+      :hasMarriageYear 1948,
+          1953 ;
+      :hasMother data:Audrey_Emery ;
+      :hasSex data:Male .
+
+  data:Audrey_Emery a :Person,
+          :Woman ;
+      :hasSex data:Female .
+
+  data:Dmitri_Pavlovich_of_Russia a :Man,
+          :Person ;
+      :hasSex data:Male .
+
+
+
+================================= Tool Message =================================
+
+### Validation Error: Missing Node Types
+Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
+
+**Classless Nodes:**
+['Female', 'Male']
+
+### Required Correction
+According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
+
+Please perform the following steps:
+1. Review the input text and ontology to determine the most appropriate class for each node listed above.
+2. Use the `AssignClass` tool for each node to assign its correct type.
+3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+
+Proceed with the necessary tool calls now.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (88cd36ff-5847-4c2b-9dba-6e20a855d117)
+ Call ID: 88cd36ff-5847-4c2b-9dba-6e20a855d117
+  Args:
+    source: :Male
+    type: :Male
+  AssignClass (10d13d17-ea92-456d-b75b-39cdc8022798)
+ Call ID: 10d13d17-ea92-456d-b75b-39cdc8022798
+  Args:
+    source: :Female
+    type: :Female
+  Finish (e21b2684-7aea-4625-a5b0-acf768418257)
+ Call ID: e21b2684-7aea-4625-a5b0-acf768418257
   Args:

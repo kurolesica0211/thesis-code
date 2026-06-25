@@ -1,80 +1,90 @@
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Felicity_Wade a :Person,
+data:Charles_Louis_dOrleans_Duke_of_Chartres a :Man,
+        :Person ;
+    :hasBirthYear 1972 ;
+    :hasFather data:Jacques_Duke_of_Orleans .
+
+data:Foulques_dOrleans_Duke_of_Aumale a :Man,
+        :Person ;
+    :hasBirthYear 1974 ;
+    :hasFather data:Jacques_Duke_of_Orleans .
+
+data:Francois_of_Orleans_son_of_Henri a :Man,
+        :Person ;
+    :hasBrother data:Jean_Duke_of_Vendome ;
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasMother data:Duchess_Marie_Therese_of_Wurttemberg .
+
+data:Marie_of_Orleans a :Person,
         :Woman ;
-    :hasFather data:Mark_Phillips ;
-    :hasMother data:Heather_Tonkin .
+    :hasFather data:Henri_Philippe_Pierre_Marie_dOrleans ;
+    :hasMother data:Duchess_Marie_Therese_of_Wurttemberg ;
+    :hasRelation data:Prince_Gundakar_of_Liechtenstein .
 
-data:Harriet_Sperling a :Person,
+data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Ancestor,
+        :Person,
         :Woman .
 
-data:Isla_Elizabeth a :Person,
-        :Woman ;
-    :hasFather data:Peter_Mark_Andrew_Phillips ;
-    :hasMother data:Autumn_Kelly .
-
-data:Lindsay_Wallace a :Person,
+data:Diane_dOrleans a :Person,
         :Woman .
 
-data:Prince_Philip_Duke_of_Edinburgh a :Ancestor,
+data:Henri_Count_of_Paris a :Ancestor,
         :Man,
         :Person ;
-    :isFatherOf data:Anne_Princess_Royal,
-        data:King_Charles_III .
+    :hasBirthYear 1908 ;
+    :hasDeathYear 1999 .
 
-data:Queen_Camilla a :Person,
-        :Woman .
-
-data:Queen_Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman ;
-    :isMotherOf data:Anne_Princess_Royal .
-
-data:Savannah_Anne_Kathleen a :Person,
-        :Woman ;
-    :hasFather data:Peter_Mark_Andrew_Phillips ;
-    :hasMother data:Autumn_Kelly .
-
-data:Stephanie_Phillips a :Person,
-        :Woman ;
-    :hasFather data:Mark_Phillips ;
-    :hasMother data:Sandy_Pflueger .
-
-data:William_Prince_of_Wales a :Man,
+data:Jean_Duke_of_Vendome a :Man,
         :Person .
 
-data:Zara_Tindall a :Person,
-        :Woman ;
-    :hasFather data:Mark_Phillips ;
-    :hasMother data:Anne_Princess_Royal .
-
-data:Heather_Tonkin a :Ancestor,
-        :Person,
-        :Woman .
-
-data:King_Charles_III a :Man,
+data:Luis_Cousino_y_Sebire a :Ancestor,
+        :Man,
         :Person .
 
-data:Sandy_Pflueger a :Ancestor,
+data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasDeathYear 2022 ;
+    :hasFather data:Luis_Cousino_y_Sebire ;
+    :hasMarriageYear 1984 ;
+    :hasMother data:Antonia_Maria_Quinones_de_Leon_y_Banuelos .
+
+data:Michel_Count_of_Evreux a :Man,
+        :Person .
+
+data:Prince_Gundakar_of_Liechtenstein a :Man,
+        :Person .
+
+data:Princess_Isabelle_of_Orleans_Braganza a :Ancestor,
         :Person,
         :Woman .
 
-data:Autumn_Kelly a :Ancestor,
-        :Person,
-        :Woman .
+data:Thibaut_Count_of_La_Marche a :Man,
+        :Person .
 
-data:Peter_Mark_Andrew_Phillips a :Ancestor,
+data:Henri_Philippe_Pierre_Marie_dOrleans a :Ancestor,
         :Man,
         :Person ;
-    :hasFather data:Mark_Phillips ;
-    :hasMother data:Anne_Princess_Royal .
+    :hasBirthYear 1933 ;
+    :hasBrother data:Jacques_Duke_of_Orleans,
+        data:Michel_Count_of_Evreux,
+        data:Thibaut_Count_of_La_Marche ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Henri_Count_of_Paris ;
+    :hasMother data:Princess_Isabelle_of_Orleans_Braganza ;
+    :hasRelation data:Duchess_Marie_Therese_of_Wurttemberg,
+        data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon ;
+    :hasSister data:Diane_dOrleans .
 
-data:Anne_Princess_Royal a :Ancestor,
+data:Duchess_Marie_Therese_of_Wurttemberg a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasBirthYear 1934 .
 
-data:Mark_Phillips a :Ancestor,
+data:Jacques_Duke_of_Orleans a :Ancestor,
         :Man,
         :Person .
 

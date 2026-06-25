@@ -85,182 +85,132 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Grand Duchess Maria Pavlovna of Russia (Russian: Великая Княгиня Мария Павловна; 18 April  1890 – 13 December 1958), known as Maria Pavlovna the Younger, was a granddaughter of Alexander II of Russia.
-She was a paternal first cousin of Nicholas II (Russia's last Tsar) and Marie of Edinburgh (consort of Ferdinand I of Romania) and maternal first cousin of George II, Alexander, and Paul (all kings of Greece), Helen of Greece and Denmark, (second wife of Carol II of Romania), and Prince Philip, Duke of Edinburgh (consort of Elizabeth II).
-She was also both the first grandchild of George I of Greece and the first great-grandchild of his father Christian IX of Denmark.
-Her early life was marked by the death of her mother and her father's banishment from Russia when he remarried a commoner in 1902.
-Grand Duchess Maria and her younger brother Dmitri, to whom she remained very close throughout her life, were raised in Moscow by their paternal uncle Grand Duke Sergei Alexandrovich and his wife Grand Duchess Elizabeth Feodorovna of Russia, a granddaughter of Queen Victoria.
-In 1908, Maria Pavlovna married Prince Wilhelm, Duke of Södermanland.
-The couple had one son, Prince Lennart, Duke of Småland, later Count Bernadotte af Wisborg.
-During World War I, Grand Duchess Maria Pavlovna served as a nurse until the fall of the Russian monarchy in February 1917.
-In September 1917, during the period of the Russian Provisional Government, she married Prince Sergei Putyatin.
-They had a son, Prince Roman Sergeievich Putyatin, who died in infancy.
-The couple escaped revolutionary Russia through Ukraine in July 1918.
-In exile, Grand Duchess Maria Pavlovna lived briefly in Bucharest and London, then she settled in Paris in 1920.
-In 1942, Grand Duchess Maria Pavlovna moved to Argentina where she spent the years of World War II.
+Princess Olga of Greece and Denmark (Greek: Όλγα; 11 June 1903 – 16 October 1997) was a Greek and Danish princess who married Prince Paul, Regent of the Kingdom of Yugoslavia.
+After her marriage, she was known as Princess Paul of Yugoslavia.
+Princess Olga was a daughter of Prince Nicholas of Greece and Denmark and Grand Duchess Elena Vladimirovna of Russia, and a granddaughter of King George I of Greece.
+After a brief engagement in 1922 to Crown Prince Frederik of Denmark, she married Prince Paul of Yugoslavia in 1923.
+In 1934, after the assassination of King Alexander I, Prince Paul was appointed regent of Yugoslavia on behalf of King Peter II, and Princess Olga became the senior lady of the court and acted as first lady of Yugoslavia, working side by side with her husband on representation duties.
+In 1941, during the Second World War, Prince Paul was forcibly removed from power after signing the Tripartite Pact, which took Yugoslavia into the Axis with Germany and Italy.
+Paul, Olga, and their three children were arrested and given as prisoners to the British.
+The couple and their children eventually settled in Paris, France, where Paul died in 1976.
+Having become a widow, Olga spent more and more time in the United Kingdom, the adopted country of her sister, Marina.
+Struck by Alzheimer's disease at the end of her life, Olga died in Paris in 1997.
+Biography
+
 Early life
 
-Grand Duchess Maria Pavlovna was born 18 April  1890 in Saint Petersburg.
-She was the first child and only daughter of Grand Duke Paul Alexandrovich of Russia and his first wife, Grand Duchess Alexandra Georgievna of Russia, born Princess Alexandra of Greece and Denmark.
-The baby was named after her late paternal grandmother, the Empress Maria Alexandrovna, and her paternal aunt, maternal grandaunt, and godmother, the Empress Maria Feodorovna, and was known by the nickname "Marisha" Maria was not yet two years old when her mother died from complications after giving birth to Maria's younger brother, Grand Duke Dmitri Pavlovich of Russia in 1891.
-Grand Duke Paul was so distraught by the unexpected death of his young wife that he neglected his two small children, who were left in the care of his elder brother, Grand Duke Sergei Alexandrovich, who had no children of his own.
-Once he recovered emotionally, Grand Duke Paul took the two children away with him.
-A commander of the Imperial horse Guards, Grand Duke Paul loved his children, but as was customary at the time, he refrained from showing them spontaneous affection.
-Maria and her brother were raised by governesses and tutors, but they adored their father who visited them twice a day.
-The children spent Christmases and later some summer holidays with Grand Duke Sergei and his wife Grand Duchess Elisabeth Feodorovna.
-Maria Pavlovna's childhood was spent in splendor.
-Until she was age 6, Maria spoke Russian badly as all of her governesses and the immediate family spoke English.
-Growing up without a mother and with a frequently absent father, Grand Duchess Maria and her brother Dimitri became very close, relying on each other for affection and companionship.
-Education
+Childhood
 
-In 1895, Grand Duke Paul began an affair with Olga Valerianova von Pistolkors, a married woman.
-As they had married by defying Nicholas II's opposition, the tsar forbade them to return to Russia.
-Left fatherless, 12-year-old Maria and 11-year-old Dmitri moved to Moscow placed under the custody of their uncle Grand Duke Sergei and his wife Grand Duchess Elisabeth Feodorovna, a sister of the Tsarina Alexandra.
-Maria and Dimitri resented their aunt and uncle, blaming them for the forced separation from their real father, who had abandoned them.
-Grand Duke Sergei was strict and demanding, but devoted and affectionate toward the children.
-Maria Pavlovna also commented that she could not entirely disagree with those who thought Grand Duke Sergei heartless, self-centered and cruel.
-Maria had a somewhat strained relationship with her aunt.
-Grand Duchess Elisabeth Feodorovna found it difficult to relate to the children, and she was cold and distant toward them.
-The teenage Maria was described by her maternal aunt Grand Duchess Maria Georgievna of Russia as "full of life and very jolly, but inclined to be self-willed and selfish, and rather difficult to deal with.
-"
+A granddaughter of King George I of Greece, Princess Olga was born at Tatoi Palace, the second home of the Greek royal family, in 1903 to Prince Nicholas of Greece and Denmark (1872–1938) and his wife Grand Duchess Elena Vladimirovna of Russia (1882–1957).
+As was the Greek tradition, she was then named after her paternal grandmother, Queen Olga.
+She grew up alongside her parents and younger sisters, Princesses Elizabeth (1904–1955) and Marina (1906–1968), at the Nicholas Palace, the current seat of the Italian Embassy in Athens.
+Olga was brought up in relative simplicity and her early education was overseen by an English Norland nurse by the name of Miss Fox.
+Once a year, Olga and her family travelled to Russia, where they were regularly received by their Romanov cousins.
+The princess and her sisters thus had the opportunity to play with the daughters of Tsar Nicholas II, who were roughly the same age as them.
+After the fallout between King Constantine I and his prime minister Eleftherios Venizelos over whether Greece should enter the conflict, a virtual civil war shook the Hellenic kingdom, which was partially occupied by the Allies from 1915.
+Finally, on 10 June 1917, King Constantine was forced to leave power by the ultimatum of the French High Commissioner Charles Jonnart and he went into exile with his wife and children in German-speaking Switzerland.
+Described as the "evil genius behind the monarchy" by the Venizelists, Prince Nicolas was quickly forced to leave Athens in turn and join his brother abroad.
+Olga and her family then settled in St. Moritz, when Greece fell into a financial crisis for the first time during her lifetime.
+The restoration of Constantine I in 1920 allowed Olga to return to her native country for a brief period, but the king's final abdication in 1922 forced the young princess and her relatives to resume their life in exile.
+The princess then settled successively in Sanremo, Paris and London, where she lived with members of her family.
+Broken engagement
 
+Considered, along with her sister Marina, to be "one of the most beautiful young women of her time", Princess Olga had, according to biographer Ricardo Mateos Sainz de Medrano, a "discreet, romantic and fragile personality".
+Prior to her departure into exile, she was linked to the future Frederik IX of Denmark and the engagement of the pair was announced publicly in 1922.
+However, the awkwardness of the Danish prince, who held the hand of one of Olga's sisters instead of hers during the official presentation of the young couple to the Athenian crowd, lastingly humiliated the future bride.
+Shortly after the event, Olga decided to return her ring to the heir to the Danish throne and called off their engagement.
+After moving to the UK, Olga's love life was the subject of much speculation.
+Public rumors and claims circulated about her romantic relationships and she was linked to the Prince of Wales (later Edward VIII) for some time.
+Neither Edward nor Olga confirmed the rumors.
+A frequent guest of the British upper class, the Greek princess met Prince Paul of Yugoslavia, a grandson of Alexander Karađorđević, Prince of Serbia, at a ball given by her cousin Lady Zia Wernher.
+Immediately impressed by the beauty of Olga, Paul sought to win the favor of the princess, but she was rather indifferent to him.
+However, other encounters followed, notably at Buckingham Palace, and Prince Paul finally managed to catch her attention.
+In Yugoslavia
 
-Grand Duke Sergei, who served as Governor General of Moscow, was a polarizing figure.
-The bomber had refrained from an earlier attack because he saw that Grand Duchess Elisabeth, 15-year-old Maria, and her younger brother Dmitri were in the carriage, and he did not want to kill women and children.
-After the assassination of their uncle, both children were emotionally distraught, particularly Dmitri.
-Grand Duke Paul claimed the custody of his children, but the tsar made Elisabeth their guardian.
-Grand Duke Paul was allowed to visit them, but not to return to Russia permanently.
-After her husband's assassination, Grand Duchess Elisabeth Feodorovna regretted treating the children poorly, and she became closer to them.
-First marriage
+Marriage and settlement in Yugoslavia
 
-During the next two years, Maria's aunt turned toward religion and charity work.
-Planning to retire from court and to form a religious order, Grand Duchess Elisabeth decided to find a husband for her niece, along with the help of her cousin, Crown Princess Margaret of Sweden.
-Shortly after Easter 1907, Prince Wilhelm, Duke of Södermanland, the second son of King Gustav V of Sweden and Victoria of Baden, visited St Petersburg, and he was introduced to the 16-year-old Maria Pavlovna.
-The prince was tall, thin, dark and distinguished looking "with beautiful grey eyes", Maria recalled.
-He stayed for dinner, and the following day, Maria was told that he wished to marry her.
-Pressed by her aunt to give a speedy answer, Maria agreed to the prince's proposal and found herself engaged to a man she had known for only few hours.
-Maria Pavlovna wrote later that she felt her aunt had rushed her into the marriage.
-"Then we will be able to travel together," she wrote to Wilhelm after their engagement.
-"
+Once Olga and Paul's engagement was announced on 26 July 1923, the young princess' trousseau was purchased and prepared in Paris.
+However, it was in Belgrade, in the prince's homeland, that the wedding was organized the following October.
+Now Princess of Yugoslavia, Olga began learning Serbo-Croatian, which she quickly mastered though with a heavy Greek accent.
+Dividing her life between the White Palace in Belgrade, a magnificent chalet in the Bohinj valley and a villa on Rumunska Ulica (now Užička Ulica), Olga benefited from the fortune that her husband partly inherited from his maternal family.
+However, accustomed to a less provincial lifestyle, the princess found her daily life more monotonous and boring.
+Her relationship with King Alexander I of Yugoslavia and his wife were not warm.
+Olga, however, received regular visits from her sisters and other family members.
+She gave birth to three children between 1924 and 1936, Prince Alexander (1924–2016), Prince Nikola (1928–1954), and Princess Elizabeth (born 1936), and spent a lot of time caring for them while her husband devoted himself to his art collections.
+Regency of Paul
 
+On 9 October 1934 King Alexander I of Yugoslavia was assassinated during an official visit to Marseille by a Macedonian nationalist member of IMRO.
+His successor, the young Peter II was eleven years old, and a Council of Regency was set up under the leadership of Prince Paul.
+Although she had never aspired to a political life, Olga's husband had no choice but to accept the responsibility that fell to him and took control of state affairs.
+Having become in essence the "first lady" of Yugoslavia, Olga had to more than ever represent her country alongside her husband.
+In the tense context of the late 1930s, the strongly-Anglophile Prince Paul gradually committed his country to a policy of alliance with the Axis powers.
+It would seem, moreover, that the family ties between Olga and various members of the German upper class who embraced the Nazi ideology (including her cousin, Prince Philip of Hesse) had an effect on the political development of Prince Paul.
+In 1938, Olga left Yugoslavia for a long time to look after several elderly relatives.
+She stayed in Athens to witness the final days of her father, Prince Nicolas, and to take care of her mother, the Grand Duchess Elena Vladimirovna.
+A few months later, the princess travelled to Paris, where she reunited with her father-in-law, Prince Arsen of Yugoslavia, who died shortly afterward.
+Second World War
 
-The marriage had positive political and diplomatic implications for both Russia and Sweden, and Tsar Nicholas II gave his consent.
-Grand Duke Paul was not consulted.
-Contemporary newspaper reports suggest that Maria Pavlovna brought a large fortune to the marriage; as a Granddaughter of Tsar Alexander II, she was entitled to an annuity of 50,000 roubles prior to reaching the age of majority, and 100,000 roubles (approximately £10,500 in 1908) per year thereafter .
-As a Russian Grand Duchess, she also was reported to have received a dowry of 1,000,000 roubles upon her marriage, as well as a share in the estimated 8,000,000 rouble fortune left by her father upon his death.
-From Peterhof, Maria Pavlovna went to Grand Duchess Elisabeth's rural estate Ilinskoe, near Moscow, where Wilhelm joined them for a month before he left on a cruise to the United States.
-Maria imagined herself in love: "It’s lovely to have somebody, even far away, who love you more than anything and whom you love more than everybody on earth“, she wrote to him.
-In October, Wilhelm returned to Russia joining Grand Duchess Maria and her brother Dimitri who introduced the Swedish prince to their father, Grand Duke Paul, who was permitted to come back to Russia for his daughter's wedding set to take place after she turned age 18 the next April.
-At Wilhelm's departure, Maria wrote to him: " I love you, so much with every day, every hour more and more.
-In her book of memoirs, written more than 20 years later, the grand duchess made different claims: "I was using Wilhelm, in a sense, only to obtain my freedom".
-As the wedding day approached, she began to have doubts and wished to break off the engagement, but Princess Irene of Hesse, who was visiting her sister Grand Duchess Elisabeth Feodorovna, persuaded her otherwise.
-Soon Maria Pavlovna was  again looking forward with enthusiasm to a new life.
-Swedish princess
+After the outbreak of the Second World War, Prince Paul signed a treaty of alliance on 25 March 1941 and brought his country into the Axis camp.
+Paul, Olga and their three children were then arrested and handed over to the British, who deported them to Greece (where they were welcomed by King George II) then to Egypt (under the pretext of intrigue).
+Olga and her family were next sent to Kenya, where they arrived after three days of travel, on 28 April 1941.
+Condemned to inactivity, Olga therefore devoted her days to maintaining the residence, learning to cook and supervising the education of her children, while her husband sank into melancholy and depression.
+In September 1942, the death of Prince George, Duke of Kent, in an air crash left his wife, Princess Marina, inconsolable and the British government had to allow Olga to stay in the United Kingdom to keep her sister's company.
+Olga took advantage of her stay in Britain to plead her husband's cause to the government but without much success.
+Back in Kenya in January 1943, the princess found her husband severely affected by depression.
+As Paul's condition did not improve, the British government finally allowed Olga's family to settle in South Africa in June 1943.
+Olga and her family were finally allowed to return to Europe in 1948.
+Later life
 
-After a honeymoon in Germany, Italy and France, the newlyweds went to Sweden, where an official ceremonial reception awaited them with the state flags of Russia and Sweden waving in Stockholm.
-The couple set up their home in the Swedish countryside in the province of Södermanland.
-Maria added Swedish to the other five languages she spoke, and she became popular in her new country.
-Maria Pavlovna, known in Sweden as the Duchess of Södermanland, was pregnant by the fall, but she quickly realized that she had little in common with her husband.
-He was Prince Lennart, Duke of Småland, later Count of Wisborg (1909–2004)
-In the autumn of 1910, Maria Pavlovna moved with her husband and their son to Oak Hill, a house she had built for herself outside Stockholm.
-Maria went hunting, attended horse races, practiced winter sports and even played field hockey on her sister-in-law, Crown Princess Margaret's team.
-Maria occasionally played with her son, who remembered sitting on her lap when they slid down a flight of steps on a large silver tray.
-However, life at the Swedish court had as many restrictions on Maria Pavlovna as she had had in Russia.
-Her husband Wilhelm, as a naval officer, had little time to spend with her.
-Maria had an opportunity to meet other men.
-King Vajiravudh and the Duke of Montpensier began to court her, and she enjoyed the flirtation.
-He was devastated by her decision, begging her to give their marriage another chance, "but since he blamed most of our failure on me, we did not make any progress" Maria wrote.
-In 1913, they were reunited when she went to Russia to attend the celebrations for the 300-year anniversary of the Romanov family.
-When she returned to Stockholm, doctors alleged (falsely as it turned out) that Maria Pavlovna had a serious kidney ailment, and she was sent to Capri to recuperate in the winter 1913–1914.
-Decades later, she described the horror she had felt toward the Swedish royal family because of their unlimited support of Munthe as the main reason she fled them and filed for divorce from Prince Wilhelm.
-My God!"
+Return to Europe
 
-Relatives in both Russia and Sweden viewed a divorce as unavoidable, and on 13 March 1914, her marriage officially was dissolved, an action then confirmed by an edict issued by Nicholas II on 15 July 1914.
-Maria left her son behind in Sweden under his father's custody.
-In Paris, Grand Duchess Maria re-established ties with her father, who had provided her with three half-siblings.
-Maria Pavlovna studied at a painting school, and then traveled to Italy and Greece.
-In the spring 1914, age 24, Maria Pavlovna returned to Russia.
-She lived near her younger brother Dmitri, to whom she was intensely attached.
-Troubled by her strong need for him, Dmitri distanced himself somewhat from his sister, hurting her terribly.
-World War I, revolution and second marriage
+In 1948, Paul, Olga and their three children were finally granted permission to leave South Africa, but Yugoslavia had adopted a communist regime in 1945 and they could not return to their country.
+Olga also made frequent trips to London and Florence, where Paul owned Villa di Pratolino located not far from thumb|upright=1.2|Villa Sparta.
+In Tuscany, Olga had the pleasure of reuniting with her cousin and friend Helen, Queen Mother of Romania, while in the United Kingdom she was always welcomed by her sister Marina, Duchess of Kent, and the rest of the British royal family.
+In 1954, Olga and Paul's second son, Nikola, was killed in a car accident in England.
+In 1957, Olga's mother Elena Vladimirovna died in Athens, Greece.
+Final years
 
-At the outbreak of the war, Grand Duchess Maria Pavlovna trained as a nurse.
-With Princess Helen of Serbia, the grand duchess was sent to the northern front, at Instenburg in East Prussia, under command of General Paul von Rennenkampf.
-For bravery under airplane fire, she was awarded the George Medal.
-Maria Pavlovna was at Pskov when she learned that Dmitri had participated in the murder of Grigori Rasputin on 17 December 1916; she was stunned.
-Maria signed a letter along with other members of the Imperial family, begging Nicholas II to reverse his decision to exile Dmitri to the Persian front.
-Two months later, the February Revolution erupted, and Tsar Nicholas II, Maria's first cousin, abdicated.
-Maria Pavlovna left Pskov for Petrograd joining her father and his family at Tsarkoe Selo.
-Earlier in the war, she had been reacquainted with Prince Sergei Mikhailovich Putyatin (1893–1966), the son of Prince Mikhail Sergeyevich Putyatin (1861–1938), palace commandant at Tsarskoye Selo, the tsar's country residence.
-In the summer, they became engaged, and in love for the first time, Maria Pavlovna married Putyatin in the Pavlovsk Palace on 19 September  1917.
-The couple spent the early months of their married life in Petrograd, living at first in Dmitri's palace.
-The successful Bolshevik coup of November 1917 surprised Maria Pavlovna and her husband in Moscow, where they had traveled to remove some of Maria's jewels from the state bank.
-Later, Serge's parents retrieved Maria's diamonds.
-In the spring 1918, the couple moved to a cottage in Tsarkoe Selo to be closer to Grand Duke Paul, who was under house arrest.
-There, the grand duchess tended a vegetable garden and kept a goat.
-On 8 July 1918, she gave birth to a son, Prince Roman Sergeievich Putyatin (1918–1919).
-The same day of Prince Roman's baptism on 18 July 1918, but they did not know it, Maria's half-brother Prince Vladimir Paley and her aunt Grand Duchess Elizabeth were murdered by the Bolsheviks.
-With the situation quickly deteriorating in Russia for the Romanovs under the Bolshevik regime, Maria Pavlovna decided to leave for exile, leaving her baby under the care of her in-laws.
-With her husband and her brother-in-law Prince Alexander Putyatin (1897–1954), Grand Duchess Maria Pavlovna left Tsarkoie Selo in late July.
-Without traveling documents and fearing to be arrested at any stop, Maria Pavlovna, her husband and brother-in-law made their way by train during two nights and a day.
-She had concealed, inside a bar of soap, a Swedish document identifying her as a former royal princess of that country.
-After reaching Kishinev, Moldavia, they received an invitation from Queen Marie of Romania, Maria's first cousin, who had used Joseph W. Boyle to track them and bring them to safety.
-Ill with influenza, the grand duchess arrived in Romania, beginning her life in exile.
-Exile
+Widowed in 1976, Olga stayed for longer periods in Great Britain.
+With her sister Marina's death in 1968, she was accommodated at Kensington Palace, with Princess Alice, Countess of Athlone, and after the latter's death, directly at Clarence House with Queen Elizabeth
+The Greek princess then acquired the reputation of being a demanding guest.
+As she aged, Olga's health began to deteriorate.
+However, she continued to attend the great events of European royalty, such as the weddings of Crown Prince Alexander of Yugoslavia in 1972, her nephew Prince Michael of Kent in 1978, and Prince Charles and Lady Diana Spencer in 1981.
+At the wedding of the Yugoslav pretender, it was also Princess Olga who accompanied him to the altar, as the prince's mother and grandmother were not able to attend the ceremony due to health issues.
+Illness and death
 
-In December 1918, Grand Duchess Maria Pavlovna and her second husband arrived in Bucharest staying at a local hotel.
-In January 1919, they were given private apartments at the Cotroceni Palace as guests of the Romanian Queen Maria.
-Tragic news came from Russia.
-The following month, Maria Pavlovna learned that her father Grand Duke Paul Alexandrovich had been assassinated by the Bolsheviks along with three of his cousins.
-A couple of weeks later, she received the news that her aunt Grand Duchess Elizabeth Feodorovna and half-brother Prince Vladimir Paley had been murdered with several other Romanov relatives in the summer 1918.
-Maria Pavlovna's parents-in-law arrived in Bucharest with her son Roman, but once she obtained a traveling visa, Maria Pavlovna left with Putyatin for Paris, finding a house in Passy.
-For the first time in her life, the 28-year-old grand duchess was forced to face everyday problems.
-Her first years of exile were financed by the sale of the jewels she had had smuggled to Sweden before escaping Russia.
-While in Paris in 1919, the grand duchess received a letter from her husband's parents telling her that one-year-old Roman had died of an intestinal disorder on 29 July.
-Maria Pavlovna was reunited with her brother Dmitri in London.
-She rented a small apartment with her husband to be close to her brother, but relations between Dmitri and Putyatin soon soured.
-In the spring 1920, Maria Pavlovna returned to Paris to meet with her stepmother Princess Olga Paley and Maria's two half-sisters.
-Her brother Dmitri followed her to Paris.
-Missing her son Lennart, who had been left in Sweden, Maria and Dimitri went to meet him in Copenhagen in the early summer of 1921.
-In Paris, Grand Duchess Maria opened a quality embroidering and sewing textile shop named Kitmir.
-Through her brother, Maria Pavlovna met Coco Chanel in the autumn 1921.
-The grand duchess was helped by her mother-in-law Princess Sophia Putyatina (1866–1940), and she employed Russians refugees in order to help them.
-However, Kitmir was plagued by organizational problems, resulting in the dissipation of Maria's money from the sale of her jewels and leaving her heavily in debt.
-After her divorce, Maria Pavlovna continued to work in Paris, but she moved to Boulogne, the south west suburb of Paris, where many Russians had taken residence.
-In 1928, as embroidery began to be out of fashion, Maria Pavlovva sold her workshop to Maison Hurel.
-Having suffered a defeat, but not surrendering, the grand duchess moved to London in the spring 1928 where she started selling Prince Igor, her own perfume, following in the footsteps of Chanel No. 5 and Patou's perfume Joy.
-Failings in advertising and distribution made that Prince Igor was not a success.
-Undeterred, Grand Duchess Maria Pavlovna emigrated to the United States hoping for a new start.
-In the United States
+Affected by Alzheimer's disease at the end of her life, Princess Olga was hospitalized for a long time in Meudon.
+However, with Olga being heavily affected by the disease, the project of her daughter caused a scandal.
+Prince Alexander brought a complaint against his sister Elizabeth before the French courts for damage to the image of their mother and claimed, in her name, $107,000 in damages.
+Princess Olga died in Paris on 16 October 1997.
+On 28 September 2012, the remains of Princess Olga, her husband and their son Nikola were exhumed and then transported to Belgrade, Serbia.
+On 4 October, an official ceremony was held at St. Michael's Cathedral in Belgrade by Irinej, Serbian Patriarch.
+The children and grandchildren of the couple, as well as Crown Prince Alexander and his wife Princess Katherine, and Serbian President Tomislav Nikolić and his government participated in the event.
+Notes and references
 
-Grand Duchess Maria Pavlovna's arrival in New York City was greeted by the press with great enthusiasm and curiosity.
-In May 1929, Grand Duchess Maria Pavlovna started working for the New York department store Bergdorf Goodman.
-Her book of memoirs was translated from Russian to English and published in two volumes: the first was titled The Education of a Princess, and the second was A Princess in Exile.
-The success of her books improved Maria Pavlovna's finances.
-Grand Duchess Maria Pavlovna always had an interest in photography, and in 1935, she was sent by Hearst to Germany as a photojournalist.
-While living in New York, Maria Pavlovna collected Russian books and surrounded herself with a group of friends that included her half-sister Princess Natalia Paley, the photographer Horst P. Horst, Valentina Sanina, founder of the fashion house Valentina, and Sanina's husband George Schlee.
-In 1937, Maria Pavlovna visited her son Lennart and his family in Mainau.
-They bonded over their shared interest in photography, and she got along with his wife, even though the grand duchess had been disappointed when her son renounced his royal status in order to marry a commoner in 1932.
-Maria Pavlovna, who had little maternal feelings, took no interest in her two grand daughters: Birgitta, then age 4, and Marie Louise, age two.
-Because of Lennart, the King of Sweden, who sympathized with Maria Pavlovna, arranged a Swedish diplomatic passport for her to replace her old Nansen passport.
-Last years
+Notes
 
-In Argentina, Maria Pavlovna rented a small house with a garden in the Barrio Norte in Buenos Aires and devoted her spare time to painting, even managing to sell several of her works.
-The cosmetic line did not take off, but Grand Duchess Maria Pavlovna remained in South America.
-There was a large Russian émigré community in Buenos Aires, and she became close friends with the family of Prince Meshchersky, Prince Michel Aleksandrovich Gorchakov (1905–1996) and his wife Princess Olga, née Orlova-Davydova (1904–1991).
-During weekends, she went to Los Leones, a huge property owned by Prince Karl von Auersperg (1895–1980) and his wife, Countess Henriette von Meran  (1904–2000), member of a morganatic branch of the House of Habsburg.
-In 1942, she received news of the death of her brother Dmitri in Davos, Switzerland.
-In 1947, Maria Pavlovna's son Lennart came from Germany on a business visit that lasted several months.
-Maria told Lennart that she had felt lonely all of her life due to her rootless childhood.
-Two years later, Maria Pavlovna returned to Europe, where, at the home of her son on the island of Mainau in Germany, she re-encountered her first husband Prince Wilhelm of Sweden for the first time in many years.
-During the 1950s, Grand Duchess Maria Pavlovna stayed with friends or appeared unexpectedly in Mainau in the house of her son Lennart with her camera, easel and paints.
-She is buried in a side altar of the palace church in Mainau, next to her brother Grand Duke Dmitri.
+References
+
+Bibliography
+
+Biographies of the princess
+
+About the princess and her family
+
+Memoirs by family members
+
+External links
+
+@media screen{html.skin-theme-clientpref-night .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sister-inline-image img{filter:invert(1)brightness(55%)contrast(250%)hue-rotate(180deg)
+}} Media related to Princess Olga of Greece and Denmark at Wikimedia Commons
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -276,39 +226,9 @@ She is buried in a side altar of the palace church in Mainau, next to her brothe
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -323,6 +243,23 @@ She is buried in a side altar of the palace church in Mainau, next to her brothe
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -340,6 +277,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -407,29 +359,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -438,6 +382,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -450,6 +402,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -458,17 +412,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -496,6 +452,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -511,218 +551,184 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (108a8204-9995-4523-b2b9-93987f4c6da1)
- Call ID: 108a8204-9995-4523-b2b9-93987f4c6da1
+  AssignClass (0c002b24-082d-49f3-a2c7-18d155a98aeb)
+ Call ID: 0c002b24-082d-49f3-a2c7-18d155a98aeb
   Args:
+    source: Princess_Olga_of_Greece_and_Denmark
     type: :Woman
-    source: MariaPavlovnaOfRussia
-  AssignClass (99103d93-3e73-44fc-acc6-a39f1b63bcd4)
- Call ID: 99103d93-3e73-44fc-acc6-a39f1b63bcd4
+  AssignClass (5606c09c-7679-45f9-adf3-8504632b0392)
+ Call ID: 5606c09c-7679-45f9-adf3-8504632b0392
   Args:
-    source: MariaPavlovnaOfRussia
     type: :Person
-  AddLiteral (d8db86a3-b229-48ed-949f-e068532e0603)
- Call ID: d8db86a3-b229-48ed-949f-e068532e0603
+    source: Princess_Olga_of_Greece_and_Denmark
+  AddLiteral (0801906b-bc83-4aa9-9bb0-d9fbe8652166)
+ Call ID: 0801906b-bc83-4aa9-9bb0-d9fbe8652166
   Args:
-    literal_value: Maria Pavlovna the Younger
-    literal_type: xsd:string
-    relation: :knownAs
-    source: MariaPavlovnaOfRussia
-  AddLiteral (8c634a73-0a94-4263-a098-52aa00431dfa)
- Call ID: 8c634a73-0a94-4263-a098-52aa00431dfa
-  Args:
-    source: MariaPavlovnaOfRussia
     relation: :hasBirthYear
     literal_type: xsd:integer
-    literal_value: 1890
-  AddLiteral (88e8541c-904d-4832-bf82-59b44bf9ebe0)
- Call ID: 88e8541c-904d-4832-bf82-59b44bf9ebe0
+    literal_value: 1903
+    source: Princess_Olga_of_Greece_and_Denmark
+  AddLiteral (66553936-e717-47cc-8bb1-73b54ce3d250)
+ Call ID: 66553936-e717-47cc-8bb1-73b54ce3d250
   Args:
+    source: Princess_Olga_of_Greece_and_Denmark
+    literal_value: 1997
     literal_type: xsd:integer
-    literal_value: 1958
-    source: MariaPavlovnaOfRussia
     relation: :hasDeathYear
-  AddTriple (b50b643d-6816-43d2-9724-0999149b60dd)
- Call ID: b50b643d-6816-43d2-9724-0999149b60dd
+  AssignClass (3c1e3d61-cf04-4eac-9c0e-d7e8f9bdd375)
+ Call ID: 3c1e3d61-cf04-4eac-9c0e-d7e8f9bdd375
   Args:
-    relation: :hasSex
-    target: :Female
-    source: MariaPavlovnaOfRussia
-  AssignClass (3fa82598-cd30-4795-b0df-e59665ae1035)
- Call ID: 3fa82598-cd30-4795-b0df-e59665ae1035
+    source: Prince_Paul_of_Yugoslavia
+    type: :Man
+  AssignClass (552b4fe3-53ff-4c0c-94e9-bae7fb86d97a)
+ Call ID: 552b4fe3-53ff-4c0c-94e9-bae7fb86d97a
+  Args:
+    source: Prince_Paul_of_Yugoslavia
+    type: :Person
+  AddLiteral (92f2acdc-bb7b-45b3-a734-67119a8ace69)
+ Call ID: 92f2acdc-bb7b-45b3-a734-67119a8ace69
+  Args:
+    source: Princess_Olga_of_Greece_and_Denmark
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    literal_value: 1923
+  AddTriple (61fd833b-73f7-436c-8404-8e4b9e2d8a19)
+ Call ID: 61fd833b-73f7-436c-8404-8e4b9e2d8a19
+  Args:
+    relation: :hasRelation
+    target: Prince_Paul_of_Yugoslavia
+    source: Princess_Olga_of_Greece_and_Denmark
+  AssignClass (6f5cfb35-d5c9-4ab6-a96a-b7a3f3148aad)
+ Call ID: 6f5cfb35-d5c9-4ab6-a96a-b7a3f3148aad
   Args:
     type: :Man
-    source: PaulAlexandrovichOfRussia
-  AssignClass (81c77390-b6c3-4557-a4b5-fcc8155b2b40)
- Call ID: 81c77390-b6c3-4557-a4b5-fcc8155b2b40
-  Args:
-    type: :Ancestor
-    source: PaulAlexandrovichOfRussia
-  AssignClass (aa55ea7e-e5a1-45fb-b689-fd4b98995a17)
- Call ID: aa55ea7e-e5a1-45fb-b689-fd4b98995a17
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AssignClass (7c2bc3a7-3818-4c11-ae60-667729d0f1e7)
+ Call ID: 7c2bc3a7-3818-4c11-ae60-667729d0f1e7
   Args:
     type: :Person
-    source: PaulAlexandrovichOfRussia
-  AssignClass (e5f9e50d-7f2b-43d3-949c-de3bb2c28667)
- Call ID: e5f9e50d-7f2b-43d3-949c-de3bb2c28667
+    source: Prince_Nicholas_of_Greece_and_Denmark
+  AssignClass (2a37bb7c-37d5-4b4c-bf46-f7f2ade8e1ce)
+ Call ID: 2a37bb7c-37d5-4b4c-bf46-f7f2ade8e1ce
+  Args:
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
+    type: :Woman
+  AssignClass (a852c43e-9328-4be5-b290-2738d0d4f9ab)
+ Call ID: a852c43e-9328-4be5-b290-2738d0d4f9ab
+  Args:
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
+    type: :Person
+  AddTriple (7af3fa13-7188-41f3-849f-0c716dba41da)
+ Call ID: 7af3fa13-7188-41f3-849f-0c716dba41da
+  Args:
+    relation: :hasFather
+    target: Prince_Nicholas_of_Greece_and_Denmark
+    source: Princess_Olga_of_Greece_and_Denmark
+  AddTriple (7ac42bf4-cb9c-4736-981d-dfb489c37b07)
+ Call ID: 7ac42bf4-cb9c-4736-981d-dfb489c37b07
+  Args:
+    source: Princess_Olga_of_Greece_and_Denmark
+    target: Grand_Duchess_Elena_Vladimirovna_of_Russia
+    relation: :hasMother
+  AssignClass (6026c7ab-ddfc-40a5-a9f1-072b607e1164)
+ Call ID: 6026c7ab-ddfc-40a5-a9f1-072b607e1164
+  Args:
+    type: :Man
+    source: King_George_I_of_Greece
+  AssignClass (fdee161b-4511-49b9-bc68-ed91a485501a)
+ Call ID: fdee161b-4511-49b9-bc68-ed91a485501a
+  Args:
+    type: :Person
+    source: King_George_I_of_Greece
+  AddTriple (3fa66b3f-9c49-4042-8b97-e43b6f6f3085)
+ Call ID: 3fa66b3f-9c49-4042-8b97-e43b6f6f3085
+  Args:
+    source: Princess_Olga_of_Greece_and_Denmark
+    target: King_George_I_of_Greece
+    relation: :hasAncestor
+  AssignClass (0f4feb02-326c-4788-940e-b8ea3ee1f54e)
+ Call ID: 0f4feb02-326c-4788-940e-b8ea3ee1f54e
+  Args:
+    source: Princess_Elizabeth_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (1decfd1d-346b-4ce6-b01b-19a37f799f9f)
+ Call ID: 1decfd1d-346b-4ce6-b01b-19a37f799f9f
+  Args:
+    type: :Person
+    source: Princess_Elizabeth_of_Greece_and_Denmark
+  AssignClass (1ad62c21-d9c4-40af-8e8d-206bcdeaf848)
+ Call ID: 1ad62c21-d9c4-40af-8e8d-206bcdeaf848
+  Args:
+    source: Princess_Marina_of_Greece_and_Denmark
+    type: :Woman
+  AssignClass (3088ab1a-6d6f-4aaf-b82d-f7965357d315)
+ Call ID: 3088ab1a-6d6f-4aaf-b82d-f7965357d315
+  Args:
+    source: Princess_Marina_of_Greece_and_Denmark
+    type: :Person
+  AddTriple (12102d75-848e-4fc9-809e-1e1f85326148)
+ Call ID: 12102d75-848e-4fc9-809e-1e1f85326148
+  Args:
+    target: Princess_Elizabeth_of_Greece_and_Denmark
+    source: Princess_Olga_of_Greece_and_Denmark
+    relation: :hasSister
+  AddTriple (839fb502-8002-482f-b646-2d5bb40c91b6)
+ Call ID: 839fb502-8002-482f-b646-2d5bb40c91b6
+  Args:
+    source: Princess_Olga_of_Greece_and_Denmark
+    target: Princess_Marina_of_Greece_and_Denmark
+    relation: :hasSister
+  AssignClass (70b24144-3ea9-4810-a490-51cf4a43201e)
+ Call ID: 70b24144-3ea9-4810-a490-51cf4a43201e
+  Args:
+    source: Prince_Alexander_of_Yugoslavia
+    type: :Man
+  AssignClass (4c3adfff-07f5-4b1e-999c-c2de422be934)
+ Call ID: 4c3adfff-07f5-4b1e-999c-c2de422be934
+  Args:
+    type: :Person
+    source: Prince_Alexander_of_Yugoslavia
+  AssignClass (38cac10b-dfd2-4eda-bd32-81ca060b328d)
+ Call ID: 38cac10b-dfd2-4eda-bd32-81ca060b328d
+  Args:
+    type: :Man
+    source: Prince_Nikola_of_Yugoslavia
+  AssignClass (f78db549-15be-49e5-b999-f7b6900eac0a)
+ Call ID: f78db549-15be-49e5-b999-f7b6900eac0a
+  Args:
+    source: Prince_Nikola_of_Yugoslavia
+    type: :Person
+  AssignClass (fa27b63f-ec14-4478-a87a-edf1831354f7)
+ Call ID: fa27b63f-ec14-4478-a87a-edf1831354f7
   Args:
     type: :Woman
-    source: AlexandraGeorgievnaOfRussia
-  AssignClass (fbb1f68e-f1c3-420f-bd79-d833e2fcef97)
- Call ID: fbb1f68e-f1c3-420f-bd79-d833e2fcef97
+    source: Princess_Elizabeth_of_Yugoslavia
+  AssignClass (9545da2f-99f1-494c-8259-c76be4462071)
+ Call ID: 9545da2f-99f1-494c-8259-c76be4462071
   Args:
-    source: AlexandraGeorgievnaOfRussia
-    type: :Ancestor
-  AssignClass (f96789cd-dc3b-43aa-a455-f52a6f7a9218)
- Call ID: f96789cd-dc3b-43aa-a455-f52a6f7a9218
-  Args:
-    source: AlexandraGeorgievnaOfRussia
+    source: Princess_Elizabeth_of_Yugoslavia
     type: :Person
-  AddTriple (79b24593-5f36-463c-91a6-477a22d384b8)
- Call ID: 79b24593-5f36-463c-91a6-477a22d384b8
+  AddTriple (26e26b20-5ffc-49b7-ad87-4faad0e430e2)
+ Call ID: 26e26b20-5ffc-49b7-ad87-4faad0e430e2
   Args:
-    source: MariaPavlovnaOfRussia
-    target: :PaulAlexandrovichOfRussia
-    relation: :hasFather
-  AddTriple (cf9e2c14-804e-4485-902d-2fc732549121)
- Call ID: cf9e2c14-804e-4485-902d-2fc732549121
-  Args:
-    target: :AlexandraGeorgievnaOfRussia
-    source: MariaPavlovnaOfRussia
-    relation: :hasMother
-  AssignClass (16aa253e-a933-4b7b-80cf-f51ba989a253)
- Call ID: 16aa253e-a933-4b7b-80cf-f51ba989a253
-  Args:
-    type: :Man
-    source: DmitriPavlovichOfRussia
-  AssignClass (7f918eb3-672f-4a61-8aa2-8385fda30f75)
- Call ID: 7f918eb3-672f-4a61-8aa2-8385fda30f75
-  Args:
-    source: DmitriPavlovichOfRussia
-    type: :Person
-  AddTriple (35d1dd0e-1507-48ac-b88e-1b7da1cdbe59)
- Call ID: 35d1dd0e-1507-48ac-b88e-1b7da1cdbe59
-  Args:
-    source: MariaPavlovnaOfRussia
-    target: :DmitriPavlovichOfRussia
-    relation: :hasBrother
-  AddTriple (8649728e-7389-412e-9594-45a553290e61)
- Call ID: 8649728e-7389-412e-9594-45a553290e61
-  Args:
-    relation: :hasFather
-    target: :PaulAlexandrovichOfRussia
-    source: DmitriPavlovichOfRussia
-  AddTriple (6d68e318-4449-41ee-9cfc-32499024a6ef)
- Call ID: 6d68e318-4449-41ee-9cfc-32499024a6ef
-  Args:
-    target: :AlexandraGeorgievnaOfRussia
-    source: DmitriPavlovichOfRussia
-    relation: :hasMother
-  AssignClass (a92e35ed-8e86-4566-8a8c-2c45e82f1f89)
- Call ID: a92e35ed-8e86-4566-8a8c-2c45e82f1f89
-  Args:
-    source: WilhelmDukeOfSödermanland
-    type: :Man
-  AssignClass (cf99c336-6fc0-4ae0-aaab-da2cad86bf43)
- Call ID: cf99c336-6fc0-4ae0-aaab-da2cad86bf43
-  Args:
-    source: WilhelmDukeOfSödermanland
-    type: :Person
-  AddTriple (7fbb1613-7a02-4ae2-b2e9-b65798bc45ac)
- Call ID: 7fbb1613-7a02-4ae2-b2e9-b65798bc45ac
-  Args:
-    source: MariaPavlovnaOfRussia
-    target: :WilhelmDukeOfSödermanland
-    relation: :hasMarriageYear
-  AddLiteral (8ac0e168-36cc-4744-9923-93e49d95258b)
- Call ID: 8ac0e168-36cc-4744-9923-93e49d95258b
-  Args:
-    relation: :hasMarriageYear
-    source: MariaPavlovnaOfRussia
-    literal_value: 1908
-    literal_type: xsd:integer
-  AssignClass (4f87a474-dbac-4dd4-a796-5e444a5addc6)
- Call ID: 4f87a474-dbac-4dd4-a796-5e444a5addc6
-  Args:
-    source: LennartDukeOfSmåland
-    type: :Man
-  AssignClass (5ca2f853-509f-4bcb-be69-c559b93a0da4)
- Call ID: 5ca2f853-509f-4bcb-be69-c559b93a0da4
-  Args:
-    type: :Person
-    source: LennartDukeOfSmåland
-  AddTriple (175d2484-02b4-4def-a8c4-e216a1b4253f)
- Call ID: 175d2484-02b4-4def-a8c4-e216a1b4253f
-  Args:
-    source: MariaPavlovnaOfRussia
-    target: :LennartDukeOfSmåland
+    source: Princess_Olga_of_Greece_and_Denmark
+    target: Prince_Alexander_of_Yugoslavia
     relation: :hasSon
-  AddTriple (d33d6293-82d8-4ff5-91c6-f97f207ac1ec)
- Call ID: d33d6293-82d8-4ff5-91c6-f97f207ac1ec
+  AddTriple (7db35a3e-4159-4471-85f1-e99386ad12f5)
+ Call ID: 7db35a3e-4159-4471-85f1-e99386ad12f5
   Args:
-    target: :WilhelmDukeOfSödermanland
-    source: LennartDukeOfSmåland
-    relation: :hasFather
-  AssignClass (1cb10363-0519-41f2-9750-8398b8d1c6e2)
- Call ID: 1cb10363-0519-41f2-9750-8398b8d1c6e2
-  Args:
-    type: :Man
-    source: SergeiPutyatin
-  AssignClass (28126861-3303-40ef-98eb-b79dfac01d8e)
- Call ID: 28126861-3303-40ef-98eb-b79dfac01d8e
-  Args:
-    type: :Person
-    source: SergeiPutyatin
-  AddLiteral (2b75c9a6-e157-4abb-b1f6-085cf32f1df8)
- Call ID: 2b75c9a6-e157-4abb-b1f6-085cf32f1df8
-  Args:
-    relation: :hasMarriageYear
-    source: MariaPavlovnaOfRussia
-    literal_value: 1917
-    literal_type: xsd:integer
-  AddTriple (a75c5617-8678-454f-b16d-3d1a0eca72ce)
- Call ID: a75c5617-8678-454f-b16d-3d1a0eca72ce
-  Args:
-    source: MariaPavlovnaOfRussia
-    target: :SergeiPutyatin
-    relation: :hasRelation
-  AssignClass (0a0574c5-6165-4530-87fd-c18835ea2363)
- Call ID: 0a0574c5-6165-4530-87fd-c18835ea2363
-  Args:
-    source: RomanSergeievichPutyatin
-    type: :Man
-  AssignClass (cb909dd3-578d-4510-9d36-695e4283ffc8)
- Call ID: cb909dd3-578d-4510-9d36-695e4283ffc8
-  Args:
-    source: RomanSergeievichPutyatin
-    type: :Person
-  AddTriple (0ce61842-a06d-47e1-88ca-9156063aae2e)
- Call ID: 0ce61842-a06d-47e1-88ca-9156063aae2e
-  Args:
+    source: Princess_Olga_of_Greece_and_Denmark
+    target: Prince_Nikola_of_Yugoslavia
     relation: :hasSon
-    source: MariaPavlovnaOfRussia
-    target: :RomanSergeievichPutyatin
-  AddTriple (163df25a-1475-4a42-a5e4-656f92147a23)
- Call ID: 163df25a-1475-4a42-a5e4-656f92147a23
+  AddTriple (13fd92c3-178f-471d-847d-58417c3ce383)
+ Call ID: 13fd92c3-178f-471d-847d-58417c3ce383
   Args:
-    relation: :hasFather
-    source: RomanSergeievichPutyatin
-    target: :SergeiPutyatin
-  Finish (ebb6a49b-36e9-4360-b23d-5c44695e9e1a)
- Call ID: ebb6a49b-36e9-4360-b23d-5c44695e9e1a
+    source: Princess_Olga_of_Greece_and_Denmark
+    target: Princess_Elizabeth_of_Yugoslavia
+    relation: :hasDaughter
+  Finish (7d0a18c3-f20f-4fad-bfbd-5a5f4fbf297a)
+ Call ID: 7d0a18c3-f20f-4fad-bfbd-5a5f4fbf297a
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -855,48 +861,47 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:MariaPavlovnaOfRussia a :Person,
+  data:Princess_Olga_of_Greece_and_Denmark a :Person,
           :Woman ;
-      :hasBirthYear 1890 ;
-      :hasBrother data:DmitriPavlovichOfRussia ;
-      :hasDeathYear 1958 ;
-      :hasFather data:PaulAlexandrovichOfRussia ;
-      :hasMarriageYear data:WilhelmDukeOfS%C3%B6dermanland,
-          1908,
-          1917 ;
-      :hasMother data:AlexandraGeorgievnaOfRussia ;
-      :hasRelation data:SergeiPutyatin ;
-      :hasSex data:Female ;
-      :hasSon data:LennartDukeOfSm%C3%A5land,
-          data:RomanSergeievichPutyatin ;
-      :knownAs "Maria Pavlovna the Younger"^^xsd:string .
+      :hasAncestor data:King_George_I_of_Greece ;
+      :hasBirthYear 1903 ;
+      :hasDaughter data:Princess_Elizabeth_of_Yugoslavia ;
+      :hasDeathYear 1997 ;
+      :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+      :hasMarriageYear 1923 ;
+      :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+      :hasRelation data:Prince_Paul_of_Yugoslavia ;
+      :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark,
+          data:Princess_Marina_of_Greece_and_Denmark ;
+      :hasSon data:Prince_Alexander_of_Yugoslavia,
+          data:Prince_Nikola_of_Yugoslavia .
 
-  data:DmitriPavlovichOfRussia a :Man,
-          :Person ;
-      :hasFather data:PaulAlexandrovichOfRussia ;
-      :hasMother data:AlexandraGeorgievnaOfRussia .
-
-  data:LennartDukeOfSm%C3%A5land a :Man,
-          :Person ;
-      :hasFather data:WilhelmDukeOfS%C3%B6dermanland .
-
-  data:RomanSergeievichPutyatin a :Man,
-          :Person ;
-      :hasFather data:SergeiPutyatin .
-
-  data:AlexandraGeorgievnaOfRussia a :Ancestor,
-          :Person,
+  data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person,
           :Woman .
 
-  data:PaulAlexandrovichOfRussia a :Ancestor,
-          :Man,
+  data:King_George_I_of_Greece a :Man,
           :Person .
 
-  data:SergeiPutyatin a :Man,
+  data:Prince_Alexander_of_Yugoslavia a :Man,
           :Person .
 
-  data:WilhelmDukeOfS%C3%B6dermanland a :Man,
+  data:Prince_Nicholas_of_Greece_and_Denmark a :Man,
           :Person .
+
+  data:Prince_Nikola_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Prince_Paul_of_Yugoslavia a :Man,
+          :Person .
+
+  data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
+          :Woman .
+
+  data:Princess_Elizabeth_of_Yugoslavia a :Person,
+          :Woman .
+
+  data:Princess_Marina_of_Greece_and_Denmark a :Person,
+          :Woman .
 
 
 
@@ -908,126 +913,86 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (3e4d3977-a446-43ee-97ae-ae1426d146c0)
- Call ID: 3e4d3977-a446-43ee-97ae-ae1426d146c0
+  ValidateShacl (7d88bb08-22a6-482d-b845-5d61ece64629)
+ Call ID: 7d88bb08-22a6-482d-b845-5d61ece64629
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:14
+Total violations:9
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'LennartDukeOfSmåland' has a 'hasFather' relationship with 'WilhelmDukeOfSödermanland', but the target node is not assigned the required ':Ancestor' or ':Man' class.
+      The node King_George_I_of_Greece is linked via hasAncestor but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='WilhelmDukeOfSödermanland', class=':Man')
+      AssignClass(node='King_George_I_of_Greece', class=':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'RomanSergeievichPutyatin' has a 'hasFather' relationship with 'SergeiPutyatin', but the target node is not assigned the required ':Ancestor' or ':Man' class.
+      The node Prince_Nicholas_of_Greece_and_Denmark is linked via hasFather but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='SergeiPutyatin', class=':Man')
+      AssignClass(node='Prince_Nicholas_of_Greece_and_Denmark', class=':Ancestor')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'MariaPavlovnaOfRussia' has a 'hasSex' relationship with 'Female', but the value 'Female' is not assigned the required ':Sex' class.
+      The node Grand_Duchess_Elena_Vladimirovna_of_Russia is linked via hasMother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Grand_Duchess_Elena_Vladimirovna_of_Russia', class=':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'RomanSergeievichPutyatin' has a 'hasFather' relationship with 'SergeiPutyatin', but the target node is not assigned the required ':Ancestor' or ':Man' class.
+      The node King_George_I_of_Greece is linked via hasAncestor but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='SergeiPutyatin', class=':Man')
+      AssignClass(node='King_George_I_of_Greece', class=':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'LennartDukeOfSmåland' has a 'hasFather' relationship with 'WilhelmDukeOfSödermanland', but the target node is not assigned the required ':Ancestor' or ':Man' class.
+      The node Prince_Nicholas_of_Greece_and_Denmark is linked via hasFather but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='WilhelmDukeOfSödermanland', class=':Man')
+      AssignClass(node='Prince_Nicholas_of_Greece_and_Denmark', class=':Ancestor')
 
 
   Violation [6]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'MariaPavlovnaOfRussia' has a 'hasSex' relationship with 'Female', but the value 'Female' is not assigned the required ':Sex' class.
+      The node Grand_Duchess_Elena_Vladimirovna_of_Russia is linked via hasMother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Grand_Duchess_Elena_Vladimirovna_of_Russia', class=':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value does not have class :Ancestor
     LLM-provided explanation of the violation:
-      The node 'MariaPavlovnaOfRussia' has a 'hasSex' relationship with 'Female', but the value 'Female' is not assigned the required ':Sex' class.
+      The node King_George_I_of_Greece is linked via hasAncestor but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='King_George_I_of_Greece', class=':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 'MariaPavlovnaOfRussia' has a 'hasSex' relationship with 'Female', but the value 'Female' is not assigned the required ':Sex' class.
+      The node Prince_Nicholas_of_Greece_and_Denmark is linked via hasFather but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Prince_Nicholas_of_Greece_and_Denmark', class=':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The node 'RomanSergeievichPutyatin' has a 'hasFather' relationship with 'SergeiPutyatin', but the target node is not assigned the required ':Ancestor' or ':Man' class.
+      The node Grand_Duchess_Elena_Vladimirovna_of_Russia is linked via hasMother but lacks the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='SergeiPutyatin', class=':Man')
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 'LennartDukeOfSmåland' has a 'hasFather' relationship with 'WilhelmDukeOfSödermanland', but the target node is not assigned the required ':Ancestor' or ':Man' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='WilhelmDukeOfSödermanland', class=':Man')
-
-
-  Violation [11]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The node 'MariaPavlovnaOfRussia' has a 'hasSex' relationship with 'Female', but the value 'Female' is not assigned the required ':Sex' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The node 'MariaPavlovnaOfRussia' has a 'hasSex' relationship with 'Female', but the value 'Female' is not assigned the required ':Sex' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The node 'MariaPavlovnaOfRussia' has a 'hasSex' relationship with 'Female', but the value 'Female' is not assigned the required ':Sex' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The node 'MariaPavlovnaOfRussia' has a 'hasSex' relationship with 'Female', but the value 'Female' is not assigned the required ':Sex' class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Female', class=':Sex')
+      AssignClass(node='Grand_Duchess_Elena_Vladimirovna_of_Russia', class=':Ancestor')
 
 
 
@@ -1036,24 +1001,21 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (0dddf5ab-fb6b-445e-b330-2c584280ca3f)
- Call ID: 0dddf5ab-fb6b-445e-b330-2c584280ca3f
+  AssignClass (e586deac-02c7-4867-b3e6-4eca5959ba7f)
+ Call ID: e586deac-02c7-4867-b3e6-4eca5959ba7f
   Args:
-    source: WilhelmDukeOfSödermanland
-    type: :Man
-  AssignClass (a7afe1b9-ce3c-4915-aa27-73f4435790d7)
- Call ID: a7afe1b9-ce3c-4915-aa27-73f4435790d7
+    source: King_George_I_of_Greece
+    type: :Ancestor
+  AssignClass (c504de4d-c6e1-4bca-8d1c-e9294483b387)
+ Call ID: c504de4d-c6e1-4bca-8d1c-e9294483b387
   Args:
-    source: SergeiPutyatin
-    type: :Man
-  AssignClass (f0d49838-32b1-4039-a3c8-fcc3a3b1269d)
- Call ID: f0d49838-32b1-4039-a3c8-fcc3a3b1269d
+    source: Prince_Nicholas_of_Greece_and_Denmark
+    type: :Ancestor
+  AssignClass (a8505988-9670-4b9c-8418-a22d0e4d476a)
+ Call ID: a8505988-9670-4b9c-8418-a22d0e4d476a
   Args:
-    type: :Sex
-    source: Female
-  ValidateShacl (2db01d93-b5c3-4a55-9ad5-ca206d01aa25)
- Call ID: 2db01d93-b5c3-4a55-9ad5-ca206d01aa25
-  Args:
+    source: Grand_Duchess_Elena_Vladimirovna_of_Russia
+    type: :Ancestor
 
 ================================= Tool Message =================================
 
@@ -1070,106 +1032,50 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:MariaPavlovnaOfRussia a :Person,
+  data:Princess_Olga_of_Greece_and_Denmark a :Person,
           :Woman ;
-      :hasBirthYear 1890 ;
-      :hasBrother data:DmitriPavlovichOfRussia ;
-      :hasDeathYear 1958 ;
-      :hasFather data:PaulAlexandrovichOfRussia ;
-      :hasMarriageYear data:WilhelmDukeOfS%C3%B6dermanland,
-          1908,
-          1917 ;
-      :hasMother data:AlexandraGeorgievnaOfRussia ;
-      :hasRelation data:SergeiPutyatin ;
-      :hasSex data:Female ;
-      :hasSon data:LennartDukeOfSm%C3%A5land,
-          data:RomanSergeievichPutyatin ;
-      :knownAs "Maria Pavlovna the Younger"^^xsd:string .
+      :hasAncestor data:King_George_I_of_Greece ;
+      :hasBirthYear 1903 ;
+      :hasDaughter data:Princess_Elizabeth_of_Yugoslavia ;
+      :hasDeathYear 1997 ;
+      :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+      :hasMarriageYear 1923 ;
+      :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+      :hasRelation data:Prince_Paul_of_Yugoslavia ;
+      :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark,
+          data:Princess_Marina_of_Greece_and_Denmark ;
+      :hasSon data:Prince_Alexander_of_Yugoslavia,
+          data:Prince_Nikola_of_Yugoslavia .
 
-  data:DmitriPavlovichOfRussia a :Man,
-          :Person ;
-      :hasFather data:PaulAlexandrovichOfRussia ;
-      :hasMother data:AlexandraGeorgievnaOfRussia .
-
-  data:Female a :Sex .
-
-  data:LennartDukeOfSm%C3%A5land a :Man,
-          :Person ;
-      :hasFather data:WilhelmDukeOfS%C3%B6dermanland .
-
-  data:RomanSergeievichPutyatin a :Man,
-          :Person ;
-      :hasFather data:SergeiPutyatin .
-
-  data:AlexandraGeorgievnaOfRussia a :Ancestor,
+  data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
           :Person,
           :Woman .
 
-  data:PaulAlexandrovichOfRussia a :Ancestor,
+  data:King_George_I_of_Greece a :Ancestor,
           :Man,
           :Person .
 
-  data:SergeiPutyatin a :Man,
+  data:Prince_Alexander_of_Yugoslavia a :Man,
           :Person .
 
-  data:WilhelmDukeOfS%C3%B6dermanland a :Man,
+  data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+          :Man,
           :Person .
 
+  data:Prince_Nikola_of_Yugoslavia a :Man,
+          :Person .
 
+  data:Prince_Paul_of_Yugoslavia a :Man,
+          :Person .
 
-================================= Tool Message =================================
+  data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
+          :Woman .
 
-VALIDATION RESULTS
-Total violations:6
-Violations:
+  data:Princess_Elizabeth_of_Yugoslavia a :Person,
+          :Woman .
 
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'LennartDukeOfSmåland' has a father 'WilhelmDukeOfSödermanland' who is not correctly classified as an 'Ancestor' or 'Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='WilhelmDukeOfSödermanland', class=':Ancestor')
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'RomanSergeievichPutyatin' has a father 'SergeiPutyatin' who is not correctly classified as an 'Ancestor' or 'Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='SergeiPutyatin', class=':Ancestor')
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'RomanSergeievichPutyatin' has a father 'SergeiPutyatin' who is not correctly classified as an 'Ancestor' or 'Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='SergeiPutyatin', class=':Man')
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'LennartDukeOfSmåland' has a father 'WilhelmDukeOfSödermanland' who is not correctly classified as an 'Ancestor' or 'Man'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='WilhelmDukeOfSödermanland', class=':Man')
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'RomanSergeievichPutyatin' has a father 'SergeiPutyatin' that requires formal classification to satisfy the ancestor relationship constraints.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='SergeiPutyatin', class=':Ancestor')
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The person 'LennartDukeOfSmåland' has a father 'WilhelmDukeOfSödermanland' that requires formal classification to satisfy the ancestor relationship constraints.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='WilhelmDukeOfSödermanland', class=':Ancestor')
-
+  data:Princess_Marina_of_Greece_and_Denmark a :Person,
+          :Woman .
 
 
 
@@ -1177,79 +1083,9 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (6d3aa947-2465-4bd2-8180-41817d2a5187)
- Call ID: 6d3aa947-2465-4bd2-8180-41817d2a5187
+  ValidateShacl (3e2a4065-e84d-4b4a-811e-38d8b6fe1000)
+ Call ID: 3e2a4065-e84d-4b4a-811e-38d8b6fe1000
   Args:
-    type: :Ancestor
-    source: WilhelmDukeOfSödermanland
-  AssignClass (e7c4701e-cfba-49dd-9c8c-50d42d7b6065)
- Call ID: e7c4701e-cfba-49dd-9c8c-50d42d7b6065
-  Args:
-    type: :Ancestor
-    source: SergeiPutyatin
-  ValidateShacl (a497743d-b940-43a7-93b6-ae3154b1b53b)
- Call ID: a497743d-b940-43a7-93b6-ae3154b1b53b
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:MariaPavlovnaOfRussia a :Person,
-          :Woman ;
-      :hasBirthYear 1890 ;
-      :hasBrother data:DmitriPavlovichOfRussia ;
-      :hasDeathYear 1958 ;
-      :hasFather data:PaulAlexandrovichOfRussia ;
-      :hasMarriageYear data:WilhelmDukeOfS%C3%B6dermanland,
-          1908,
-          1917 ;
-      :hasMother data:AlexandraGeorgievnaOfRussia ;
-      :hasRelation data:SergeiPutyatin ;
-      :hasSex data:Female ;
-      :hasSon data:LennartDukeOfSm%C3%A5land,
-          data:RomanSergeievichPutyatin ;
-      :knownAs "Maria Pavlovna the Younger"^^xsd:string .
-
-  data:DmitriPavlovichOfRussia a :Man,
-          :Person ;
-      :hasFather data:PaulAlexandrovichOfRussia ;
-      :hasMother data:AlexandraGeorgievnaOfRussia .
-
-  data:Female a :Sex .
-
-  data:LennartDukeOfSm%C3%A5land a :Man,
-          :Person ;
-      :hasFather data:WilhelmDukeOfS%C3%B6dermanland .
-
-  data:RomanSergeievichPutyatin a :Man,
-          :Person ;
-      :hasFather data:SergeiPutyatin .
-
-  data:AlexandraGeorgievnaOfRussia a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:PaulAlexandrovichOfRussia a :Ancestor,
-          :Man,
-          :Person .
-
-  data:SergeiPutyatin a :Ancestor,
-          :Man,
-          :Person .
-
-  data:WilhelmDukeOfS%C3%B6dermanland a :Ancestor,
-          :Man,
-          :Person .
-
-
 
 ================================= Tool Message =================================
 
@@ -1259,6 +1095,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (2376b0aa-240f-4f45-9917-5fbc4db42bff)
- Call ID: 2376b0aa-240f-4f45-9917-5fbc4db42bff
+  Finish (236c446b-6131-4264-a58e-24a230a53ce2)
+ Call ID: 236c446b-6131-4264-a58e-24a230a53ce2
   Args:

@@ -2,50 +2,48 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:MariaPavlovnaOfRussia a :Person,
+data:Princess_Olga_of_Greece_and_Denmark a :Person,
         :Woman ;
-    :hasBirthYear 1890 ;
-    :hasBrother data:DmitriPavlovichOfRussia ;
-    :hasDeathYear 1958 ;
-    :hasFather data:PaulAlexandrovichOfRussia ;
-    :hasMarriageYear data:WilhelmDukeOfS%C3%B6dermanland,
-        1908,
-        1917 ;
-    :hasMother data:AlexandraGeorgievnaOfRussia ;
-    :hasRelation data:SergeiPutyatin ;
-    :hasSex data:Female ;
-    :hasSon data:LennartDukeOfSm%C3%A5land,
-        data:RomanSergeievichPutyatin ;
-    :knownAs "Maria Pavlovna the Younger"^^xsd:string .
+    :hasAncestor data:King_George_I_of_Greece ;
+    :hasBirthYear 1903 ;
+    :hasDaughter data:Princess_Elizabeth_of_Yugoslavia ;
+    :hasDeathYear 1997 ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMarriageYear 1923 ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasRelation data:Prince_Paul_of_Yugoslavia ;
+    :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Nikola_of_Yugoslavia .
 
-data:DmitriPavlovichOfRussia a :Man,
-        :Person ;
-    :hasFather data:PaulAlexandrovichOfRussia ;
-    :hasMother data:AlexandraGeorgievnaOfRussia .
-
-data:Female a :Sex .
-
-data:LennartDukeOfSm%C3%A5land a :Man,
-        :Person ;
-    :hasFather data:WilhelmDukeOfS%C3%B6dermanland .
-
-data:RomanSergeievichPutyatin a :Man,
-        :Person ;
-    :hasFather data:SergeiPutyatin .
-
-data:AlexandraGeorgievnaOfRussia a :Ancestor,
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
         :Person,
         :Woman .
 
-data:PaulAlexandrovichOfRussia a :Ancestor,
+data:King_George_I_of_Greece a :Ancestor,
         :Man,
         :Person .
 
-data:SergeiPutyatin a :Ancestor,
+data:Prince_Alexander_of_Yugoslavia a :Man,
+        :Person .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
         :Man,
         :Person .
 
-data:WilhelmDukeOfS%C3%B6dermanland a :Ancestor,
-        :Man,
+data:Prince_Nikola_of_Yugoslavia a :Man,
         :Person .
+
+data:Prince_Paul_of_Yugoslavia a :Man,
+        :Person .
+
+data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
+        :Woman .
+
+data:Princess_Elizabeth_of_Yugoslavia a :Person,
+        :Woman .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person,
+        :Woman .
 

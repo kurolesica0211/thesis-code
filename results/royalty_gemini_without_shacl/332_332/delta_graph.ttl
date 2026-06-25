@@ -2,27 +2,34 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Albrecht_Willem_Lier a :Man,
+data:Lennart_Bernadotte a :Man,
         :Person ;
-    :alsoKnownAs "Pim"^^xsd:string ;
-    :hasBirthYear 1918 ;
-    :hasDeathYear 2015 ;
-    :hasFather data:Prince_Henry ;
-    :hasMother data:Willemina_Martina_Wenneker ;
-    :isBrotherOf data:Queen_Juliana ;
-    :isUncleOf data:Queen_Beatrix .
+    :hasAncestor data:George_I,
+        data:Gustaf_V ;
+    :hasBirthYear 1909 ;
+    :hasDeathYear 2004 ;
+    :hasFather data:Prince_Wilhelm ;
+    :hasMarriageYear 1932,
+        1972 ;
+    :hasMother data:Maria_Pavlovna ;
+    :hasRelation data:Karin_Emma_Louise_Nissvandt,
+        data:Sonja_Anita_Maria_Haunz .
 
-data:Prince_Henry a :Man,
+data:George_I a :Man,
         :Person .
 
-data:Queen_Beatrix a :Person,
+data:Gustaf_V a :Man,
+        :Person .
+
+data:Karin_Emma_Louise_Nissvandt a :Person,
         :Woman .
 
-data:Queen_Juliana a :Person,
+data:Maria_Pavlovna a :Person,
         :Woman .
 
-data:Willemina_Martina_Wenneker a :Person,
-        :Woman ;
-    :hasBirthYear 1887 ;
-    :hasDeathYear 1973 .
+data:Prince_Wilhelm a :Man,
+        :Person .
+
+data:Sonja_Anita_Maria_Haunz a :Person,
+        :Woman .
 

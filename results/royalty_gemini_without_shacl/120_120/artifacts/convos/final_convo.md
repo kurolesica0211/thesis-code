@@ -83,6 +83,8 @@ On 11 September 1999 in London, Sigismund married Elyssa Edmonstone (born 11 Sep
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -98,39 +100,9 @@ On 11 September 1999 in London, Sigismund married Elyssa Edmonstone (born 11 Sep
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -145,6 +117,23 @@ On 11 September 1999 in London, Sigismund married Elyssa Edmonstone (born 11 Sep
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -162,6 +151,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -229,29 +233,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,6 +256,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -272,6 +276,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -280,17 +286,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -318,6 +326,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -333,195 +425,165 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c8b912b5-b7b9-4103-833c-2137416b5f69)
- Call ID: c8b912b5-b7b9-4103-833c-2137416b5f69
+  AssignClass (1a567794-e837-4302-b0ea-d226976a2d4a)
+ Call ID: 1a567794-e837-4302-b0ea-d226976a2d4a
   Args:
-    source: Sigismund
     type: :Man
-  AssignClass (12de831e-511b-46d2-9680-bdb7afe8b144)
- Call ID: 12de831e-511b-46d2-9680-bdb7afe8b144
+    source: :Sigismund
+  AssignClass (6253531c-81df-49bd-84b1-0a180b6d00f6)
+ Call ID: 6253531c-81df-49bd-84b1-0a180b6d00f6
   Args:
+    source: :Sigismund
     type: :Person
-    source: Sigismund
-  AddLiteral (85dee3a0-7563-478f-95a5-c6158a8bfc5f)
- Call ID: 85dee3a0-7563-478f-95a5-c6158a8bfc5f
+  AddLiteral (4c21c5ee-a220-40a8-8748-9be6c39c736c)
+ Call ID: 4c21c5ee-a220-40a8-8748-9be6c39c736c
   Args:
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: :Sigismund
     literal_value: 1966
-    source: Sigismund
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-  AssignClass (19686847-4ee3-4f21-8913-932080c96094)
- Call ID: 19686847-4ee3-4f21-8913-932080c96094
+  AssignClass (c6859b13-6fdb-48e8-9a71-96516de8bf5f)
+ Call ID: c6859b13-6fdb-48e8-9a71-96516de8bf5f
   Args:
-    source: Leopoldo_Franz
     type: :Man
-  AssignClass (aca7d097-7ccc-4514-81aa-558c5062fd3b)
- Call ID: aca7d097-7ccc-4514-81aa-558c5062fd3b
+    source: :LeopoldoFranz
+  AssignClass (feec3cd8-4398-407b-b3f1-5c3ffc7ad235)
+ Call ID: feec3cd8-4398-407b-b3f1-5c3ffc7ad235
   Args:
-    source: Leopoldo_Franz
-    type: :Ancestor
-  AssignClass (eca7bc4a-dc34-4a59-972e-2ae3705a74c1)
- Call ID: eca7bc4a-dc34-4a59-972e-2ae3705a74c1
-  Args:
-    source: Leopoldo_Franz
     type: :Person
-  AddTriple (dcba122b-3a69-47e1-aa16-f6110969617d)
- Call ID: dcba122b-3a69-47e1-aa16-f6110969617d
+    source: :LeopoldoFranz
+  AddTriple (0a3831de-95d2-4b3e-86c6-14cf97b77b8f)
+ Call ID: 0a3831de-95d2-4b3e-86c6-14cf97b77b8f
   Args:
-    target: Leopoldo_Franz
+    source: :Sigismund
     relation: :hasFather
-    source: Sigismund
-  AssignClass (207d556f-2066-4840-bcc6-c18f6dacd583)
- Call ID: 207d556f-2066-4840-bcc6-c18f6dacd583
+    target: :LeopoldoFranz
+  AssignClass (f57dbb29-5b5e-4f2e-a92d-4d4d4df3d595)
+ Call ID: f57dbb29-5b5e-4f2e-a92d-4d4d4df3d595
   Args:
+    source: :Gottfried
     type: :Man
-    source: Gottfried_of_Austria
-  AssignClass (5a22c335-f852-401c-8c7a-302654aa5c4a)
- Call ID: 5a22c335-f852-401c-8c7a-302654aa5c4a
+  AssignClass (9451cfff-ea4f-46d4-8041-084c68e87bef)
+ Call ID: 9451cfff-ea4f-46d4-8041-084c68e87bef
   Args:
-    type: :Ancestor
-    source: Gottfried_of_Austria
-  AssignClass (aa71c584-5039-4feb-b28f-1c41cf2c576a)
- Call ID: aa71c584-5039-4feb-b28f-1c41cf2c576a
-  Args:
-    source: Gottfried_of_Austria
     type: :Person
-  AddTriple (72ee1c73-6c62-41cb-b5f2-4f9d24b28b13)
- Call ID: 72ee1c73-6c62-41cb-b5f2-4f9d24b28b13
+    source: :Gottfried
+  AddTriple (063485cb-82fd-4cd9-b38b-22d1ac535fad)
+ Call ID: 063485cb-82fd-4cd9-b38b-22d1ac535fad
   Args:
-    target: Gottfried_of_Austria
-    source: Leopoldo_Franz
+    target: :Gottfried
     relation: :hasFather
-  AssignClass (8a67d940-14a1-4e7b-8882-e94fec2b8fe0)
- Call ID: 8a67d940-14a1-4e7b-8882-e94fec2b8fe0
+    source: :LeopoldoFranz
+  AssignClass (adf058f5-a1bd-4fbb-bf5d-db4d703a68b7)
+ Call ID: adf058f5-a1bd-4fbb-bf5d-db4d703a68b7
   Args:
-    source: Ferdinand_IV
     type: :Man
-  AssignClass (c6d8e11b-a6da-48f0-84a8-aef65b30721b)
- Call ID: c6d8e11b-a6da-48f0-84a8-aef65b30721b
+    source: :FerdinandIV
+  AssignClass (a08519d3-4fc4-401c-9e68-7301af51be7c)
+ Call ID: a08519d3-4fc4-401c-9e68-7301af51be7c
   Args:
-    source: Ferdinand_IV
-    type: :Ancestor
-  AssignClass (3c439235-9eb9-41a3-9f0a-cc2d1670369c)
- Call ID: 3c439235-9eb9-41a3-9f0a-cc2d1670369c
-  Args:
-    source: Ferdinand_IV
+    source: :FerdinandIV
     type: :Person
-  AddTriple (3e402a22-534c-4768-89a5-7f22b6faebf1)
- Call ID: 3e402a22-534c-4768-89a5-7f22b6faebf1
+  AddTriple (fb8e452a-f152-4790-9cd8-d1d6d3888533)
+ Call ID: fb8e452a-f152-4790-9cd8-d1d6d3888533
   Args:
-    target: Ferdinand_IV
-    source: Leopoldo_Franz
+    source: :LeopoldoFranz
     relation: :hasAncestor
-  AssignClass (505f228f-30d1-4e3d-9d96-8015927d16cc)
- Call ID: 505f228f-30d1-4e3d-9d96-8015927d16cc
+    target: :FerdinandIV
+  AssignClass (fa99a447-0ef9-4a64-8cc8-175ab669c09c)
+ Call ID: fa99a447-0ef9-4a64-8cc8-175ab669c09c
   Args:
     type: :Woman
-    source: Laetitia_d_Arenberg
-  AssignClass (f8cb2c4a-cc00-453d-ac68-59dc36611cc6)
- Call ID: f8cb2c4a-cc00-453d-ac68-59dc36611cc6
+    source: :LaetitiaDArenberg
+  AssignClass (2a4649b2-e3e5-4789-98c1-3ef77d686e80)
+ Call ID: 2a4649b2-e3e5-4789-98c1-3ef77d686e80
   Args:
     type: :Person
-    source: Laetitia_d_Arenberg
-  AddTriple (11ec59d8-e7d2-4d7d-bbcb-a0a84ac13846)
- Call ID: 11ec59d8-e7d2-4d7d-bbcb-a0a84ac13846
+    source: :LaetitiaDArenberg
+  AddTriple (661058f7-651f-422c-8ae9-15bd18786205)
+ Call ID: 661058f7-651f-422c-8ae9-15bd18786205
   Args:
-    target: Laetitia_d_Arenberg
+    target: :LaetitiaDArenberg
+    source: :Sigismund
     relation: :hasMother
-    source: Sigismund
-  AssignClass (6d0e328a-5851-4d93-b940-456cc51e9729)
- Call ID: 6d0e328a-5851-4d93-b940-456cc51e9729
+  AssignClass (c5f08fbf-096e-4806-b2d6-bfa5556f2ab3)
+ Call ID: c5f08fbf-096e-4806-b2d6-bfa5556f2ab3
   Args:
-    source: Elyssa_Edmonstone
+    source: :ElyssaEdmonstone
     type: :Woman
-  AssignClass (2ebadad8-3b53-4e8c-bfa9-1c2bf78c6617)
- Call ID: 2ebadad8-3b53-4e8c-bfa9-1c2bf78c6617
+  AssignClass (4d481cc8-8576-4ee6-8aaf-f8c35278fbbe)
+ Call ID: 4d481cc8-8576-4ee6-8aaf-f8c35278fbbe
   Args:
-    source: Elyssa_Edmonstone
     type: :Person
-  AddLiteral (150f771e-4538-4e04-b828-4f4810981579)
- Call ID: 150f771e-4538-4e04-b828-4f4810981579
+    source: :ElyssaEdmonstone
+  AddLiteral (bcf1ca63-612f-47f1-99a7-d2cb3a7ce34b)
+ Call ID: bcf1ca63-612f-47f1-99a7-d2cb3a7ce34b
   Args:
+    literal_value: 1973
+    source: :ElyssaEdmonstone
     relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Elyssa_Edmonstone
-    literal_value: 1973
-  AddTriple (77dd1898-6de8-4bb1-af09-701cfdec59c7)
- Call ID: 77dd1898-6de8-4bb1-af09-701cfdec59c7
+  AddTriple (a42d5690-14cf-4fb0-8410-eb1fd590af51)
+ Call ID: a42d5690-14cf-4fb0-8410-eb1fd590af51
   Args:
+    source: :Sigismund
     relation: :hasRelation
-    source: Sigismund
-    target: Elyssa_Edmonstone
-  AddLiteral (6f2ccbd9-ea83-4ab5-b8f7-126cf72367cd)
- Call ID: 6f2ccbd9-ea83-4ab5-b8f7-126cf72367cd
+    target: :ElyssaEdmonstone
+  AddLiteral (efa01878-f3a9-42bb-a677-57a20e3ec917)
+ Call ID: efa01878-f3a9-42bb-a677-57a20e3ec917
   Args:
-    literal_value: 1999
     literal_type: xsd:integer
-    source: Sigismund
     relation: :hasMarriageYear
-  AssignClass (de69c2bc-31e4-4c10-b482-8d0d10160070)
- Call ID: de69c2bc-31e4-4c10-b482-8d0d10160070
+    source: :Sigismund
+    literal_value: 1999
+  AssignClass (f7cde4d2-b4a2-47a2-81e2-c89a244338ea)
+ Call ID: f7cde4d2-b4a2-47a2-81e2-c89a244338ea
   Args:
+    source: :ArchibaldBruceEdmonstone
     type: :Man
-    source: Archibald_Bruce_Edmonstone
-  AssignClass (c8aed5c6-5237-47dd-8b94-13ac554f2e74)
- Call ID: c8aed5c6-5237-47dd-8b94-13ac554f2e74
+  AssignClass (d62032cf-4270-47cc-88d1-b9c409b4a75b)
+ Call ID: d62032cf-4270-47cc-88d1-b9c409b4a75b
   Args:
-    type: :Ancestor
-    source: Archibald_Bruce_Edmonstone
-  AssignClass (691475c4-6ba9-4f8f-a100-b595d981f2bb)
- Call ID: 691475c4-6ba9-4f8f-a100-b595d981f2bb
-  Args:
-    source: Archibald_Bruce_Edmonstone
     type: :Person
-  AddTriple (5cc23c01-fc26-4e72-8690-6ebd593b60bb)
- Call ID: 5cc23c01-fc26-4e72-8690-6ebd593b60bb
+    source: :ArchibaldBruceEdmonstone
+  AddTriple (f653a241-b8be-4b9f-9802-5b6a61754619)
+ Call ID: f653a241-b8be-4b9f-9802-5b6a61754619
   Args:
-    source: Elyssa_Edmonstone
     relation: :hasFather
-    target: Archibald_Bruce_Edmonstone
-  AssignClass (d962302d-c42b-4b67-aa39-58efc0f3162a)
- Call ID: d962302d-c42b-4b67-aa39-58efc0f3162a
+    source: :ElyssaEdmonstone
+    target: :ArchibaldBruceEdmonstone
+  AssignClass (b1a1560d-c072-479c-878f-e54863f07b22)
+ Call ID: b1a1560d-c072-479c-878f-e54863f07b22
   Args:
     type: :Woman
-    source: Julieta_Isabel_Deakin
-  AssignClass (fbe03830-633b-4ff5-85f0-a41adfcf1f25)
- Call ID: fbe03830-633b-4ff5-85f0-a41adfcf1f25
+    source: :JulietaIsabelDeakin
+  AssignClass (ddf4998e-eed3-4739-8a48-2c6605ed3c01)
+ Call ID: ddf4998e-eed3-4739-8a48-2c6605ed3c01
   Args:
-    source: Julieta_Isabel_Deakin
-    type: :Ancestor
-  AssignClass (d83e01bf-9e19-4ea4-bbdb-5e541069d636)
- Call ID: d83e01bf-9e19-4ea4-bbdb-5e541069d636
-  Args:
+    source: :JulietaIsabelDeakin
     type: :Person
-    source: Julieta_Isabel_Deakin
-  AddTriple (a5c009ce-5da0-4110-92a4-0a0a1328bbaf)
- Call ID: a5c009ce-5da0-4110-92a4-0a0a1328bbaf
+  AddTriple (8290568a-d333-475e-8058-c240fa0362de)
+ Call ID: 8290568a-d333-475e-8058-c240fa0362de
   Args:
-    target: Julieta_Isabel_Deakin
-    source: Elyssa_Edmonstone
+    target: :JulietaIsabelDeakin
     relation: :hasMother
-  AssignClass (8457fabe-ccd3-4d80-a43a-f9fa42764b35)
- Call ID: 8457fabe-ccd3-4d80-a43a-f9fa42764b35
+    source: :ElyssaEdmonstone
+  AssignClass (021216c4-713c-4404-b092-1d7ebb2292b7)
+ Call ID: 021216c4-713c-4404-b092-1d7ebb2292b7
   Args:
+    source: :PeterDeakin
     type: :Man
-    source: Peter_Deakin
-  AssignClass (2d0e1882-6b7b-4a0f-af1e-5387e7aed02d)
- Call ID: 2d0e1882-6b7b-4a0f-af1e-5387e7aed02d
-  Args:
-    source: Peter_Deakin
-    type: :Ancestor
-  AssignClass (8f70ceef-92e3-4e60-ae5c-8f7be0b78207)
- Call ID: 8f70ceef-92e3-4e60-ae5c-8f7be0b78207
+  AssignClass (f5c921ed-9de0-4282-920e-0c4714c76dce)
+ Call ID: f5c921ed-9de0-4282-920e-0c4714c76dce
   Args:
     type: :Person
-    source: Peter_Deakin
-  AddTriple (0d856129-73da-42e6-bc06-78054871b702)
- Call ID: 0d856129-73da-42e6-bc06-78054871b702
+    source: :PeterDeakin
+  AddTriple (13be8e3e-2846-4256-9dcb-f8de5d0c170e)
+ Call ID: 13be8e3e-2846-4256-9dcb-f8de5d0c170e
   Args:
-    target: Peter_Deakin
-    source: Julieta_Isabel_Deakin
+    target: :PeterDeakin
+    source: :JulietaIsabelDeakin
     relation: :hasFather
-  Finish (04be2693-e54b-47ca-a829-d6bad997aac5)
- Call ID: 04be2693-e54b-47ca-a829-d6bad997aac5
+  Finish (25452f3c-ef2e-475b-9040-5383d2f9faef)
+ Call ID: 25452f3c-ef2e-475b-9040-5383d2f9faef
   Args:

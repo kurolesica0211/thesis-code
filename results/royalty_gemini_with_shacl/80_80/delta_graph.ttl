@@ -2,47 +2,49 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Amedeo_of_Savoy_Duke_of_Aosta a :Man,
-        :Person ;
-    :hasFather data:Aimone_Duke_of_Aosta ;
-    :hasMarriageYear 1964 .
-
-data:Claude_of_Orl%C3%A9ans a :Person,
+data:Claude_of_Orleans a :Person,
         :Woman ;
-    :hasBirthYear "1943-12-11"^^xsd:date ;
-    :hasBrother data:Henri_Count_of_Paris_the_younger ;
+    :hasBirthYear 1943 ;
+    :hasBrother data:Henri_Count_of_Paris_Jr ;
     :hasFather data:Henri_Count_of_Paris ;
-    :hasMother data:Isabelle_of_Orl%C3%A9ans-Braganza ;
+    :hasMarriageYear 1964,
+        1982,
+        2006 ;
+    :hasMother data:Isabelle_of_Orleans_Braganza ;
+    :hasRelation data:Amedeo_of_Savoy_Duke_of_Aosta,
+        data:Enrico_Gandolfi,
+        data:Luigi_Arnaldo_La_Cagnina ;
     :hasSister data:Anne_Duchess_of_Calabria,
-        data:Diane_Duchess_of_W%C3%BCrttemberg .
-
-data:Enrico_Gandolfi a :Man,
-        :Person .
-
-data:Luigi_Arnaldo_La_Cagnina a :Man,
-        :Person .
-
-data:Silvia_Patern%C3%B2_di_Spedalotto a :Person,
-        :Woman .
+        data:Diane_Duchess_of_Wurttemberg .
 
 data:Aimone_Duke_of_Aosta a :Ancestor,
         :Man,
         :Person .
 
+data:Amedeo_of_Savoy_Duke_of_Aosta a :Man,
+        :Person ;
+    :hasFather data:Aimone_Duke_of_Aosta .
+
 data:Anne_Duchess_of_Calabria a :Person,
         :Woman .
 
-data:Diane_Duchess_of_W%C3%BCrttemberg a :Person,
+data:Diane_Duchess_of_Wurttemberg a :Person,
         :Woman .
+
+data:Enrico_Gandolfi a :Man,
+        :Person .
 
 data:Henri_Count_of_Paris a :Ancestor,
         :Man,
         :Person .
 
-data:Henri_Count_of_Paris_the_younger a :Man,
+data:Henri_Count_of_Paris_Jr a :Man,
         :Person .
 
-data:Isabelle_of_Orl%C3%A9ans-Braganza a :Ancestor,
+data:Isabelle_of_Orleans_Braganza a :Ancestor,
         :Person,
         :Woman .
+
+data:Luigi_Arnaldo_La_Cagnina a :Man,
+        :Person .
 

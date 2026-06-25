@@ -1,0 +1,279 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Ann-KathrinJohannsmann a :Person,
+        :Woman ;
+    :hasRelation data:Ann-KathrinJohannsmann ;
+    :hasSister data:Ann-KathrinJohannsmann ;
+    :isBloodrelationOf data:Ann-KathrinJohannsmann ;
+    :isSiblingOf data:Ann-KathrinJohannsmann ;
+    :isSisterOf data:Ann-KathrinJohannsmann .
+
+data:KingConstantineII a :Man,
+        :Person ;
+    :hasBrother data:KingConstantineII ;
+    :hasRelation data:KingConstantineII ;
+    :isBloodrelationOf data:KingConstantineII ;
+    :isBrotherOf data:KingConstantineII ;
+    :isSiblingOf data:KingConstantineII .
+
+data:KingFrederikX a :Man,
+        :Person ;
+    :hasBrother data:KingFrederikX ;
+    :hasRelation data:KingFrederikX ;
+    :isBloodrelationOf data:KingFrederikX ;
+    :isBrotherOf data:KingFrederikX ;
+    :isSiblingOf data:KingFrederikX .
+
+data:PrinceGustav a :Man,
+        :Person ;
+    :hasBrother data:PrinceGustav ;
+    :hasRelation data:PrinceGustav ;
+    :isBloodrelationOf data:PrinceGustav ;
+    :isBrotherOf data:PrinceGustav ;
+    :isSiblingOf data:PrinceGustav .
+
+data:QueenMargretheII a :Person,
+        :Woman ;
+    :hasRelation data:QueenMargretheII ;
+    :hasSister data:QueenMargretheII ;
+    :isBloodrelationOf data:QueenMargretheII ;
+    :isSiblingOf data:QueenMargretheII ;
+    :isSisterOf data:QueenMargretheII .
+
+data:Alexandra a :Person,
+        :Woman ;
+    :hasRelation data:AlexanderJohannsmann,
+        data:Alexandra,
+        data:Heinrich-WilhelmJohannsmann,
+        data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna,
+        data:PrinceRichard,
+        data:PrincessBenedikte,
+        data:PrincessNathalie ;
+    :hasSister data:Alexandra,
+        data:PrincessNathalie ;
+    :isAuntOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isBloodrelationOf data:Alexandra,
+        data:PrincessNathalie ;
+    :isSiblingOf data:Alexandra,
+        data:PrincessNathalie ;
+    :isSisterOf data:Alexandra,
+        data:PrincessNathalie .
+
+data:Heinrich-WilhelmJohannsmann a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Heinrich-WilhelmJohannsmann ;
+    :hasChild data:AlexanderJohannsmann ;
+    :hasRelation data:AlexanderJohannsmann,
+        data:Alexandra,
+        data:Heinrich-WilhelmJohannsmann,
+        data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna,
+        data:PrinceRichard,
+        data:PrincessBenedikte,
+        data:PrincessNathalie ;
+    :hasSon data:AlexanderJohannsmann ;
+    :isAncestorOf data:AlexanderJohannsmann,
+        data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isBloodrelationOf data:Heinrich-WilhelmJohannsmann ;
+    :isBrotherOf data:Heinrich-WilhelmJohannsmann ;
+    :isFatherOf data:AlexanderJohannsmann ;
+    :isParentOf data:AlexanderJohannsmann ;
+    :isSiblingOf data:Heinrich-WilhelmJohannsmann ;
+    :isUncleOf data:AlexanderJohannsmann .
+
+data:PrinceRichard a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceRichard ;
+    :hasChild data:PrincessNathalie ;
+    :hasDaughter data:PrincessNathalie ;
+    :hasRelation data:AlexanderJohannsmann,
+        data:Alexandra,
+        data:Heinrich-WilhelmJohannsmann,
+        data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna,
+        data:PrinceRichard,
+        data:PrincessBenedikte,
+        data:PrincessNathalie ;
+    :isAncestorOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna,
+        data:PrincessNathalie ;
+    :isBloodrelationOf data:PrinceRichard ;
+    :isBrotherOf data:PrinceRichard ;
+    :isFatherOf data:PrincessNathalie ;
+    :isParentOf data:PrincessNathalie ;
+    :isSiblingOf data:PrinceRichard ;
+    :isUncleOf data:PrincessNathalie .
+
+data:PrincessBenedikte a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:PrincessNathalie ;
+    :hasDaughter data:PrincessNathalie ;
+    :hasRelation data:AlexanderJohannsmann,
+        data:Alexandra,
+        data:Heinrich-WilhelmJohannsmann,
+        data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna,
+        data:PrinceRichard,
+        data:PrincessBenedikte,
+        data:PrincessNathalie ;
+    :hasSister data:PrincessBenedikte ;
+    :isAncestorOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna,
+        data:PrincessNathalie ;
+    :isAuntOf data:PrincessNathalie ;
+    :isBloodrelationOf data:PrincessBenedikte ;
+    :isMotherOf data:PrincessNathalie ;
+    :isParentOf data:PrincessNathalie ;
+    :isSiblingOf data:PrincessBenedikte ;
+    :isSisterOf data:PrincessBenedikte .
+
+data:AlexanderJohannsmann a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Heinrich-WilhelmJohannsmann ;
+    :hasBirthYear 1977 ;
+    :hasBrother data:AlexanderJohannsmann ;
+    :hasChild data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :hasDaughter data:LouisaMargaretaBenedikteHanna ;
+    :hasFather data:Heinrich-WilhelmJohannsmann ;
+    :hasParent data:Heinrich-WilhelmJohannsmann ;
+    :hasRelation data:AlexanderJohannsmann,
+        data:Alexandra,
+        data:Heinrich-WilhelmJohannsmann,
+        data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna,
+        data:PrinceRichard,
+        data:PrincessBenedikte,
+        data:PrincessNathalie ;
+    :hasSon data:KonstantinGustavHeinrichRichard ;
+    :isAncestorOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isBloodrelationOf data:AlexanderJohannsmann ;
+    :isBrotherOf data:AlexanderJohannsmann ;
+    :isChildOf data:Heinrich-WilhelmJohannsmann ;
+    :isFatherOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isParentOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isSiblingOf data:AlexanderJohannsmann ;
+    :isSonOf data:Heinrich-WilhelmJohannsmann ;
+    :isUncleOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna .
+
+data:KonstantinGustavHeinrichRichard a :Man,
+        :Person ;
+    :hasAncestor data:AlexanderJohannsmann,
+        data:Heinrich-WilhelmJohannsmann,
+        data:PrinceRichard,
+        data:PrincessBenedikte,
+        data:PrincessNathalie ;
+    :hasBrother data:KonstantinGustavHeinrichRichard ;
+    :hasFather data:AlexanderJohannsmann ;
+    :hasMother data:PrincessNathalie ;
+    :hasParent data:AlexanderJohannsmann,
+        data:PrincessNathalie ;
+    :hasRelation data:AlexanderJohannsmann,
+        data:Alexandra,
+        data:Heinrich-WilhelmJohannsmann,
+        data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna,
+        data:PrinceRichard,
+        data:PrincessBenedikte,
+        data:PrincessNathalie ;
+    :hasSister data:LouisaMargaretaBenedikteHanna ;
+    :isBloodrelationOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isBrotherOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isChildOf data:AlexanderJohannsmann,
+        data:PrincessNathalie ;
+    :isSiblingOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isSonOf data:AlexanderJohannsmann,
+        data:PrincessNathalie .
+
+data:LouisaMargaretaBenedikteHanna a :Person,
+        :Woman ;
+    :hasAncestor data:AlexanderJohannsmann,
+        data:Heinrich-WilhelmJohannsmann,
+        data:PrinceRichard,
+        data:PrincessBenedikte,
+        data:PrincessNathalie ;
+    :hasBrother data:KonstantinGustavHeinrichRichard ;
+    :hasFather data:AlexanderJohannsmann ;
+    :hasMother data:PrincessNathalie ;
+    :hasParent data:AlexanderJohannsmann,
+        data:PrincessNathalie ;
+    :hasRelation data:AlexanderJohannsmann,
+        data:Alexandra,
+        data:Heinrich-WilhelmJohannsmann,
+        data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna,
+        data:PrinceRichard,
+        data:PrincessBenedikte,
+        data:PrincessNathalie ;
+    :hasSister data:LouisaMargaretaBenedikteHanna ;
+    :isBloodrelationOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isChildOf data:AlexanderJohannsmann,
+        data:PrincessNathalie ;
+    :isDaughterOf data:AlexanderJohannsmann,
+        data:PrincessNathalie ;
+    :isSiblingOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isSisterOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna .
+
+data:PrincessNathalie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:PrinceRichard,
+        data:PrincessBenedikte ;
+    :hasBirthYear 1975 ;
+    :hasChild data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :hasDaughter data:LouisaMargaretaBenedikteHanna ;
+    :hasFather data:PrinceRichard ;
+    :hasMarriageYear 2010 ;
+    :hasMother data:PrincessBenedikte ;
+    :hasParent data:PrinceRichard,
+        data:PrincessBenedikte ;
+    :hasRelation data:AlexanderJohannsmann,
+        data:Alexandra,
+        data:Heinrich-WilhelmJohannsmann,
+        data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna,
+        data:PrinceRichard,
+        data:PrincessBenedikte,
+        data:PrincessNathalie ;
+    :hasSister data:Alexandra,
+        data:PrincessNathalie ;
+    :hasSon data:KonstantinGustavHeinrichRichard ;
+    :isAncestorOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isAuntOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isBloodrelationOf data:Alexandra,
+        data:PrincessNathalie ;
+    :isChildOf data:PrinceRichard,
+        data:PrincessBenedikte ;
+    :isDaughterOf data:PrinceRichard,
+        data:PrincessBenedikte ;
+    :isMotherOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isParentOf data:KonstantinGustavHeinrichRichard,
+        data:LouisaMargaretaBenedikteHanna ;
+    :isSiblingOf data:Alexandra,
+        data:PrincessNathalie ;
+    :isSisterOf data:Alexandra,
+        data:PrincessNathalie .
+

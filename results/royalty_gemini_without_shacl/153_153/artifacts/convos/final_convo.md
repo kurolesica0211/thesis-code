@@ -69,38 +69,32 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Maurice of Battenberg (Maurice Victor Donald; 3 October 1891 – 27 October 1914) was a member of the Hessian princely Battenberg family and the extended British royal family, and the youngest grandchild of Queen Victoria.
-He was styled as Prince Maurice throughout his life and died before the Battenberg family anglicised their surname to Mountbatten in 1917, meaning he was never known by that name.
-Early life
-
-Maurice was born on 3 October 1891.
-His father was Prince Henry of Battenberg, the son of Prince Alexander of Hesse and by Rhine and Julie Therese née Countess of Hauke.
-His mother was Princess Henry of Battenberg (née Princess Beatrice of the United Kingdom), the fifth daughter and the youngest child of Queen Victoria and Albert, Prince Consort.
-As he was the child of a morganatic marriage, Prince Henry of Battenberg took his style of Prince of Battenberg from his mother, Countess Julia Hauke, who was created Princess of Battenberg in her own right.
-As such, Maurice was styled as His Serene Highness Prince Maurice of Battenberg from birth.
-In the United Kingdom, he was styled His Highness Prince Maurice of Battenberg under a royal warrant passed by Queen Victoria in 1886.
-His godparents were the Duchess of Connaught and Strathearn (represented by Queen Victoria), the Princess of Leiningen (represented by Princess Christian of Schleswig-Holstein), the Duke of Clarence and Avondale (represented by Sir Henry Ponsonby), Prince Francis Joseph of Battenberg (represented by Sir Fleetwood Edwards) and the Hereditary Grand Duke of Hesse.
-The youngest of his four siblings, Maurice most resembled his father, who died when he was only four, the same age his mother was when her own father died.
-His elder sister Victoria Eugenie of Battenberg married Alfonso XIII of Spain and was Queen Consort of Spain between 1906 and 1931.
-Later life
-
-Maurice attended Wellington College and was a member of Benson House.
-Maurice was made a Freemason in the Old Wellingtonian Lodge No. 3404 (the Lodge of the Old Wellingtonians) on 21 June 1912 and was installed Master of the Twelve Brothers Lodge, No. 785 Southampton on 22 April 1914.
-After attending the Royal Military College, Sandhurst, Maurice was commissioned as a second lieutenant in the King's Royal Rifle Corps on 4 March 1911.
-Poor  Maurice was killed outright just on top of the ridge.
-"
+Princess María de las Mercedes of Bourbon-Two Sicilies (.mw-parser-output .IPA-label-small{font-size:85%}.mw-parser-output .references .IPA-label-small,.mw-parser-output .infobox .IPA-label-small,.mw-parser-output .navbox .IPA-label-small{font-size:100%}Spanish: ; María de las Mercedes Cristina Genara Isabel Luisa Carolina Victoria y Todos los Santos de Borbón y Orléans; 23 December 1910 – 2 January 2000) was a member of the Spanish royal family and the mother of King Juan Carlos I.
 
 
-Word of the Maurice's death was passed to Brigadier-General Fanshawe, commander of the 6th Infantry Brigade.
-He said, "By the death of H.H. Prince Maurice of Battenberg the Army loses a most gallant and valuable officer.
-His mother, Princess Beatrice, declined the offer of Lord Kitchener to have her son's body repatriated.
-The battalion war diary notes that his funeral took place on 31 October 1914 and records that, "Denison, Gough, the Sgt Major, Sgt O'Leary and a few others went down to poor Maurice's funeral in Ypres".
+The daughter of Prince Carlos of Bourbon-Two Sicilies and Princess Louise of Orléans, she married Infante Juan, Count of Barcelona, claimant to the Spanish throne.
+Biography
+
+María was born in Madrid, daughter of Prince Carlos of Bourbon-Two Sicilies, Infante of Spain, a grandson of King Ferdinand II of the Two Sicilies, and his second wife, Princess Louise of Orléans, daughter of Prince Philippe, Count of Paris, a pretender to the French throne.
+She was granted, at birth, the rank and precedence of an infanta of Spain, although not the actual use of the title, her own being Princess of Bourbon-Two Sicilies.
+When the Second Spanish Republic forced them into exile, they lived in Cannes and later in Paris, where she studied art at the Louvre.
+On 14 January 1935, she attended the wedding, in Rome, of Infanta Beatriz of Spain, daughter of King Alfonso XIII, to Alessandro Torlonia, 5th Prince of Civitella-Cesi.
+There she met the brother of the bride, her third cousin and future husband, the Infante Juan, fourth son and designated heir of Alfonso XIII.
+When her husband took up Count of Barcelona as a title of pretence on 8 March 1941, María became the Countess of Barcelona.
+They lived in Cannes and Rome, and, with the outbreak of World War II, they moved to Lausanne to live with Queen Victoria Eugenie, the mother of Infante Juan.
+In 1953, the Countess represented the Spanish Royal Family at the coronation of Queen Elizabeth II.
+In 1976, one year after the monarchy was restored in Spain in the person of her son, Juan Carlos, they returned to Spain.
+She mediated between her son and her husband, estranged since Juan Carlos had been designated heir by Franco.
+In 1977, Juan renounced his rights in favour of their son, who officially allowed him to retain the title of Count of Barcelona.
+In 1995, her granddaughter Infanta Elena married in Seville in part because the Countess' love for the city.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -116,39 +110,9 @@ The battalion war diary notes that his funeral took place on 31 October 1914 and
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -163,6 +127,23 @@ The battalion war diary notes that his funeral took place on 31 October 1914 and
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -180,6 +161,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -247,29 +243,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -278,6 +266,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -290,6 +286,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -298,17 +296,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -336,6 +336,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -351,114 +435,194 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (0c919821-26a0-495b-83de-4456bff891b4)
- Call ID: 0c919821-26a0-495b-83de-4456bff891b4
-  Args:
-    type: :Man
-    source: Prince_Maurice_of_Battenberg
-  AssignClass (be7125c1-ce35-416e-9bb6-0e24ce5126b8)
- Call ID: be7125c1-ce35-416e-9bb6-0e24ce5126b8
-  Args:
-    type: :Man
-    source: Prince_Henry_of_Battenberg
-  AssignClass (86a76c5a-c8ce-4f4e-8b7b-49ac3489730a)
- Call ID: 86a76c5a-c8ce-4f4e-8b7b-49ac3489730a
+  AssignClass (dd018914-3d78-46aa-8caf-bc2eac995ba5)
+ Call ID: dd018914-3d78-46aa-8caf-bc2eac995ba5
   Args:
     type: :Woman
-    source: Princess_Beatrice_of_the_United_Kingdom
-  AssignClass (db41d175-ee3c-4403-be79-ad53f044d082)
- Call ID: db41d175-ee3c-4403-be79-ad53f044d082
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+  AssignClass (7a05260e-244b-40ec-b835-93eadfd75fb5)
+ Call ID: 7a05260e-244b-40ec-b835-93eadfd75fb5
   Args:
-    type: :Man
-    source: Prince_Alexander_of_Hesse_and_by_Rhine
-  AssignClass (3b92edb9-fdfb-4cdb-b140-3375ebe821a8)
- Call ID: 3b92edb9-fdfb-4cdb-b140-3375ebe821a8
-  Args:
-    type: :Woman
-    source: Julie_Therese_Countess_of_Hauke
-  AssignClass (a5557df4-68ce-4b29-a630-ad4a2ce8dcf1)
- Call ID: a5557df4-68ce-4b29-a630-ad4a2ce8dcf1
-  Args:
-    type: :Woman
-    source: Queen_Victoria
-  AssignClass (03124922-4ae0-4e11-9af1-402df6cd2f83)
- Call ID: 03124922-4ae0-4e11-9af1-402df6cd2f83
-  Args:
-    type: :Man
-    source: Albert_Prince_Consort
-  AssignClass (35eae301-2ce6-4c15-8b88-33aea31a9bc5)
- Call ID: 35eae301-2ce6-4c15-8b88-33aea31a9bc5
-  Args:
-    type: :Woman
-    source: Victoria_Eugenie_of_Battenberg
-  AddLiteral (d7b52459-c3f7-4d57-90f8-e9f9b5ffab23)
- Call ID: d7b52459-c3f7-4d57-90f8-e9f9b5ffab23
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+    type: :Person
+  AddLiteral (b26d9d8c-a681-419c-95fb-1c5ce04367cc)
+ Call ID: b26d9d8c-a681-419c-95fb-1c5ce04367cc
   Args:
     relation: :hasBirthYear
-    source: Prince_Maurice_of_Battenberg
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
     literal_type: xsd:integer
-    literal_value: 1891
-  AddLiteral (75936fe2-4508-4859-aa30-f05605b020aa)
- Call ID: 75936fe2-4508-4859-aa30-f05605b020aa
+    literal_value: 1910
+  AddLiteral (30b3cc1e-b5f9-48f4-b871-fe4413fb3b0d)
+ Call ID: 30b3cc1e-b5f9-48f4-b871-fe4413fb3b0d
   Args:
-    literal_value: 1914
-    literal_type: xsd:integer
-    source: Prince_Maurice_of_Battenberg
     relation: :hasDeathYear
-  AddTriple (02ef2dd9-3d40-4b64-841f-85a2f444f928)
- Call ID: 02ef2dd9-3d40-4b64-841f-85a2f444f928
+    literal_value: 2000
+    literal_type: xsd:integer
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+  AssignClass (271e826e-2d35-4729-972d-fbcad1786401)
+ Call ID: 271e826e-2d35-4729-972d-fbcad1786401
   Args:
-    relation: :hasFather
-    source: Prince_Maurice_of_Battenberg
-    target: Prince_Henry_of_Battenberg
-  AddTriple (7be6b727-cd06-442d-ac80-51f40df4731e)
- Call ID: 7be6b727-cd06-442d-ac80-51f40df4731e
+    type: :Man
+    source: Juan_Carlos_I
+  AssignClass (b4319d97-8726-405a-8660-5d1fd67ce0ad)
+ Call ID: b4319d97-8726-405a-8660-5d1fd67ce0ad
   Args:
-    relation: :hasMother
-    target: Princess_Beatrice_of_the_United_Kingdom
-    source: Prince_Maurice_of_Battenberg
-  AddTriple (4e74b6cd-4343-4baf-8605-6ccee9cc6795)
- Call ID: 4e74b6cd-4343-4baf-8605-6ccee9cc6795
+    type: :Person
+    source: Juan_Carlos_I
+  AddTriple (2ec508a0-a611-405d-a3c1-f3be86546c0b)
+ Call ID: 2ec508a0-a611-405d-a3c1-f3be86546c0b
   Args:
-    relation: :hasFather
-    source: Prince_Henry_of_Battenberg
-    target: Prince_Alexander_of_Hesse_and_by_Rhine
-  AddTriple (8b6b1923-5ea5-49c8-8647-2e55ee358c94)
- Call ID: 8b6b1923-5ea5-49c8-8647-2e55ee358c94
+    target: Juan_Carlos_I
+    relation: :isMotherOf
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+  AssignClass (a7c46425-6bd4-4b8e-b8e3-8bee5c6adc60)
+ Call ID: a7c46425-6bd4-4b8e-b8e3-8bee5c6adc60
   Args:
-    relation: :hasMother
-    source: Prince_Henry_of_Battenberg
-    target: Julie_Therese_Countess_of_Hauke
-  AddTriple (34649440-2796-4a1b-999c-4300c12d441f)
- Call ID: 34649440-2796-4a1b-999c-4300c12d441f
+    type: :Man
+    source: Carlos_of_Bourbon-Two_Sicilies
+  AssignClass (142faed7-97df-45d3-86b9-9e2e92f288e4)
+ Call ID: 142faed7-97df-45d3-86b9-9e2e92f288e4
   Args:
-    source: Princess_Beatrice_of_the_United_Kingdom
-    target: Albert_Prince_Consort
-    relation: :hasFather
-  AddTriple (6332dfeb-ad1f-42cb-92e7-ccce05ecdf6c)
- Call ID: 6332dfeb-ad1f-42cb-92e7-ccce05ecdf6c
+    type: :Person
+    source: Carlos_of_Bourbon-Two_Sicilies
+  AssignClass (f6f2d1d8-dd27-4176-954a-eaae608d1557)
+ Call ID: f6f2d1d8-dd27-4176-954a-eaae608d1557
   Args:
-    source: Princess_Beatrice_of_the_United_Kingdom
-    target: Queen_Victoria
-    relation: :hasMother
-  AddTriple (204c2295-9621-4046-ab11-6aa0ed03aae3)
- Call ID: 204c2295-9621-4046-ab11-6aa0ed03aae3
+    source: Louise_of_Orleans
+    type: :Woman
+  AssignClass (65a36423-0f28-462b-93c1-cd9a64805dc5)
+ Call ID: 65a36423-0f28-462b-93c1-cd9a64805dc5
   Args:
-    relation: :isSisterOf
-    target: Prince_Maurice_of_Battenberg
-    source: Victoria_Eugenie_of_Battenberg
-  AddTriple (0551eeff-92e1-4b8e-aae4-2447c09958ab)
- Call ID: 0551eeff-92e1-4b8e-aae4-2447c09958ab
+    source: Louise_of_Orleans
+    type: :Person
+  AddTriple (83b0a716-f769-4f89-a764-805dfcd74e61)
+ Call ID: 83b0a716-f769-4f89-a764-805dfcd74e61
   Args:
-    target: Prince_Henry_of_Battenberg
-    source: Victoria_Eugenie_of_Battenberg
-    relation: :hasFather
-  AddTriple (79811b00-8db9-4838-84e8-cab2f30fd8c4)
- Call ID: 79811b00-8db9-4838-84e8-cab2f30fd8c4
+    relation: :isFatherOf
+    source: Carlos_of_Bourbon-Two_Sicilies
+    target: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+  AddTriple (92b289f7-697e-4101-919c-a4ea76d9f0f1)
+ Call ID: 92b289f7-697e-4101-919c-a4ea76d9f0f1
   Args:
-    relation: :hasMother
-    source: Victoria_Eugenie_of_Battenberg
-    target: Princess_Beatrice_of_the_United_Kingdom
-  Finish (3749f8a8-8894-40b2-859a-d4a6dcc95376)
- Call ID: 3749f8a8-8894-40b2-859a-d4a6dcc95376
+    target: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+    source: Louise_of_Orleans
+    relation: :isMotherOf
+  AssignClass (ae6e5ad6-49c8-4b48-b135-251a382e73db)
+ Call ID: ae6e5ad6-49c8-4b48-b135-251a382e73db
+  Args:
+    type: :Man
+    source: Juan_Count_of_Barcelona
+  AssignClass (c85552f7-0a4b-436f-b0ab-00fc70dc2032)
+ Call ID: c85552f7-0a4b-436f-b0ab-00fc70dc2032
+  Args:
+    source: Juan_Count_of_Barcelona
+    type: :Person
+  AddTriple (cdf4b12e-fdb2-448d-8e12-a14123e0974d)
+ Call ID: cdf4b12e-fdb2-448d-8e12-a14123e0974d
+  Args:
+    target: Juan_Count_of_Barcelona
+    relation: :hasRelation
+    source: Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies
+  AssignClass (0388a589-7fac-4bb2-b5a2-0f3187ceb003)
+ Call ID: 0388a589-7fac-4bb2-b5a2-0f3187ceb003
+  Args:
+    source: Ferdinand_II_of_the_Two_Sicilies
+    type: :Man
+  AssignClass (573212bf-cdcd-41aa-93ea-3cb97a9c869d)
+ Call ID: 573212bf-cdcd-41aa-93ea-3cb97a9c869d
+  Args:
+    type: :Person
+    source: Ferdinand_II_of_the_Two_Sicilies
+  AssignClass (ff308571-8607-4c4d-8e94-f2dd9867a801)
+ Call ID: ff308571-8607-4c4d-8e94-f2dd9867a801
+  Args:
+    source: Philippe_Count_of_Paris
+    type: :Man
+  AssignClass (02a8579e-af03-4906-aed6-673a0d36a3b9)
+ Call ID: 02a8579e-af03-4906-aed6-673a0d36a3b9
+  Args:
+    source: Philippe_Count_of_Paris
+    type: :Person
+  AddTriple (faa3b02f-481a-4889-9914-e5ec536ee346)
+ Call ID: faa3b02f-481a-4889-9914-e5ec536ee346
+  Args:
+    target: Louise_of_Orleans
+    source: Philippe_Count_of_Paris
+    relation: :isFatherOf
+  AssignClass (56d07382-c856-4ab3-a95a-b5d6c233e08a)
+ Call ID: 56d07382-c856-4ab3-a95a-b5d6c233e08a
+  Args:
+    source: Beatriz_of_Spain
+    type: :Woman
+  AssignClass (8fc336ca-d0c7-4280-8d0d-7850354aef37)
+ Call ID: 8fc336ca-d0c7-4280-8d0d-7850354aef37
+  Args:
+    source: Beatriz_of_Spain
+    type: :Person
+  AssignClass (9dde311d-2ab6-4697-bf3f-0781461e3318)
+ Call ID: 9dde311d-2ab6-4697-bf3f-0781461e3318
+  Args:
+    source: Alfonso_XIII
+    type: :Man
+  AssignClass (8be73efe-49fc-4661-8d1e-da5cfd4eb504)
+ Call ID: 8be73efe-49fc-4661-8d1e-da5cfd4eb504
+  Args:
+    type: :Person
+    source: Alfonso_XIII
+  AddTriple (064f6211-6c3f-4f88-86a1-8612ba2d705d)
+ Call ID: 064f6211-6c3f-4f88-86a1-8612ba2d705d
+  Args:
+    relation: :isFatherOf
+    source: Alfonso_XIII
+    target: Beatriz_of_Spain
+  AddTriple (819224e3-353a-4e27-927b-c15e4648108a)
+ Call ID: 819224e3-353a-4e27-927b-c15e4648108a
+  Args:
+    target: Juan_Count_of_Barcelona
+    relation: :isFatherOf
+    source: Alfonso_XIII
+  AssignClass (d6d549b6-5a4d-4b77-b468-866b72965c7a)
+ Call ID: d6d549b6-5a4d-4b77-b468-866b72965c7a
+  Args:
+    source: Alessandro_Torlonia
+    type: :Man
+  AssignClass (d4a2bace-3274-44b1-903b-f09bd8002ae2)
+ Call ID: d4a2bace-3274-44b1-903b-f09bd8002ae2
+  Args:
+    type: :Person
+    source: Alessandro_Torlonia
+  AssignClass (a19af1be-5391-48a7-8cf7-3d1e19e8c473)
+ Call ID: a19af1be-5391-48a7-8cf7-3d1e19e8c473
+  Args:
+    type: :Woman
+    source: Victoria_Eugenie
+  AssignClass (5f792014-3c63-49f3-8804-a0d385f8bda2)
+ Call ID: 5f792014-3c63-49f3-8804-a0d385f8bda2
+  Args:
+    source: Victoria_Eugenie
+    type: :Person
+  AddTriple (28217c28-5173-4082-ab2c-b019976ac782)
+ Call ID: 28217c28-5173-4082-ab2c-b019976ac782
+  Args:
+    relation: :isMotherOf
+    source: Victoria_Eugenie
+    target: Juan_Count_of_Barcelona
+  AssignClass (b3aa0031-dc60-4cd6-be6b-087d7d9bea72)
+ Call ID: b3aa0031-dc60-4cd6-be6b-087d7d9bea72
+  Args:
+    type: :Woman
+    source: Elena
+  AssignClass (8fd73578-dc29-4ba5-bc61-2914855ed69a)
+ Call ID: 8fd73578-dc29-4ba5-bc61-2914855ed69a
+  Args:
+    type: :Person
+    source: Elena
+  AddTriple (33716072-5638-4f61-a178-327ec78f952c)
+ Call ID: 33716072-5638-4f61-a178-327ec78f952c
+  Args:
+    source: Juan_Carlos_I
+    relation: :isFatherOf
+    target: Elena
+  Finish (6bc7d546-4f9c-4d71-837f-862528dcadff)
+ Call ID: 6bc7d546-4f9c-4d71-837f-862528dcadff
   Args:

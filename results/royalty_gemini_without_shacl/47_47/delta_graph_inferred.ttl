@@ -1,0 +1,78 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:BeatrixVonStorch a :Person,
+        :Woman ;
+    :hasBirthYear 1971 ;
+    :hasMarriageYear 2010 ;
+    :hasRelation data:AntjeLieteKrugerFranke,
+        data:BeatrixVonStorch,
+        data:BerndtDetlevVonStorch,
+        data:SvenVonStorch ;
+    :hasSister data:BeatrixVonStorch ;
+    :isBloodrelationOf data:BeatrixVonStorch ;
+    :isSiblingOf data:BeatrixVonStorch ;
+    :isSisterOf data:BeatrixVonStorch .
+
+data:AntjeLieteKrugerFranke a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1938 ;
+    :hasChild data:SvenVonStorch ;
+    :hasRelation data:AntjeLieteKrugerFranke,
+        data:BeatrixVonStorch,
+        data:BerndtDetlevVonStorch,
+        data:SvenVonStorch ;
+    :hasSister data:AntjeLieteKrugerFranke ;
+    :hasSon data:SvenVonStorch ;
+    :isAncestorOf data:SvenVonStorch ;
+    :isAuntOf data:SvenVonStorch ;
+    :isBloodrelationOf data:AntjeLieteKrugerFranke ;
+    :isMotherOf data:SvenVonStorch ;
+    :isParentOf data:SvenVonStorch ;
+    :isSiblingOf data:AntjeLieteKrugerFranke ;
+    :isSisterOf data:AntjeLieteKrugerFranke .
+
+data:BerndtDetlevVonStorch a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1930 ;
+    :hasBrother data:BerndtDetlevVonStorch ;
+    :hasChild data:SvenVonStorch ;
+    :hasDeathYear 2004 ;
+    :hasRelation data:AntjeLieteKrugerFranke,
+        data:BeatrixVonStorch,
+        data:BerndtDetlevVonStorch,
+        data:SvenVonStorch ;
+    :hasSon data:SvenVonStorch ;
+    :isAncestorOf data:SvenVonStorch ;
+    :isBloodrelationOf data:BerndtDetlevVonStorch ;
+    :isBrotherOf data:BerndtDetlevVonStorch ;
+    :isFatherOf data:SvenVonStorch ;
+    :isParentOf data:SvenVonStorch ;
+    :isSiblingOf data:BerndtDetlevVonStorch ;
+    :isUncleOf data:SvenVonStorch .
+
+data:SvenVonStorch a :Man,
+        :Person ;
+    :hasAncestor data:AntjeLieteKrugerFranke,
+        data:BerndtDetlevVonStorch ;
+    :hasBirthYear 1970 ;
+    :hasBrother data:SvenVonStorch ;
+    :hasFather data:BerndtDetlevVonStorch ;
+    :hasMother data:AntjeLieteKrugerFranke ;
+    :hasParent data:AntjeLieteKrugerFranke,
+        data:BerndtDetlevVonStorch ;
+    :hasRelation data:AntjeLieteKrugerFranke,
+        data:BeatrixVonStorch,
+        data:BerndtDetlevVonStorch,
+        data:SvenVonStorch ;
+    :isBloodrelationOf data:SvenVonStorch ;
+    :isBrotherOf data:SvenVonStorch ;
+    :isChildOf data:AntjeLieteKrugerFranke,
+        data:BerndtDetlevVonStorch ;
+    :isSiblingOf data:SvenVonStorch ;
+    :isSonOf data:AntjeLieteKrugerFranke,
+        data:BerndtDetlevVonStorch .
+

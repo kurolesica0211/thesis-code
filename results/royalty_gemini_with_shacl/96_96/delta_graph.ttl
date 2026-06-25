@@ -10,36 +10,34 @@ data:Patrick_Bowes-Lyon a :Man,
     :hasMarriageYear 1908 ;
     :hasMother data:Cecilia_Cavendish-Bentinck ;
     :hasRelation data:Lady_Dorothy_Beatrix_Godolphin_Osborne ;
-    :hasSex data:Male ;
-    :hasSister data:Lady_Elizabeth_Bowes-Lyon .
+    :hasSister data:Queen_Elizabeth_the_Queen_Mother ;
+    :isUncleOf data:Princess_Margaret,
+        data:Queen_Elizabeth_II .
 
 data:Cecilia_Cavendish-Bentinck a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female .
+        :Woman .
 
 data:Claude_Lord_Glamis a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
 data:George_10th_Duke_of_Leeds a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male .
+        :Person .
 
 data:Lady_Dorothy_Beatrix_Godolphin_Osborne a :Person,
         :Woman ;
     :hasBirthYear 1888 ;
     :hasDeathYear 1946 ;
-    :hasFather data:George_10th_Duke_of_Leeds ;
-    :hasSex data:Female .
+    :hasFather data:George_10th_Duke_of_Leeds .
 
-data:Lady_Elizabeth_Bowes-Lyon a :Person,
-        :Woman ;
-    :hasSex data:Female .
+data:Princess_Margaret a :Person,
+        :Woman .
 
-data:Female a :Sex .
+data:Queen_Elizabeth_II a :Person,
+        :Woman .
 
-data:Male a :Sex .
+data:Queen_Elizabeth_the_Queen_Mother a :Person,
+        :Woman .
 

@@ -2,53 +2,80 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Bertrand a :Man,
-        :Person .
+data:Princess_Urraca_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :hasBirthYear 1913 ;
+    :hasDeathYear 1999 ;
+    :hasFather data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Princess_Maria_Ludwiga_Theresia_of_Bavaria ;
+    :isSiblingOf data:Prince_Ruggiero_Maria,
+        data:Princess_Barbara_Maria,
+        data:Princess_Lucia,
+        data:Princess_Maria_Antonietta,
+        data:Princess_Maria_Cristina .
 
-data:Rafael_of_Orl%C3%A9ans-Braganza a :Man,
-        :Person ;
-    :hasBirthYear 1986 ;
-    :hasBrother data:Prince_Pedro_Luiz ;
-    :hasFather data:Prince_Ant%C3%B4nio ;
-    :hasMother data:Princess_Christine_of_Ligne ;
-    :hasSister data:Princess_Am%C3%A9lia,
-        data:Princess_Maria_Gabriela .
-
-data:Antoine_13th_Prince_of_Ligne a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Ant%C3%B4nio a :Ancestor,
-        :Man,
-        :Person ;
-    :hasDeathYear 2024 ;
-    :hasFather data:Prince_Pedro_Henrique_of_Orl%C3%A9ans-Braganza ;
-    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria .
-
-data:Prince_Pedro_Henrique_of_Orl%C3%A9ans-Braganza a :Ancestor,
-        :Man,
-        :Person .
-
-data:Prince_Pedro_Luiz a :Man,
-        :Person .
-
-data:Princess_Alix_of_Luxembourg a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Princess_Am%C3%A9lia a :Person,
-        :Woman .
-
-data:Princess_Christine_of_Ligne a :Ancestor,
+data:Archduchess_Maria_Theresa_of_Austria-Este a :Ancestor,
         :Person,
         :Woman ;
-    :hasFather data:Antoine_13th_Prince_of_Ligne ;
-    :hasMother data:Princess_Alix_of_Luxembourg .
+    :hasBirthYear 1849 ;
+    :hasDeathYear 1919 .
 
-data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
+data:King_Ludwig_III_of_Bavaria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1845 ;
+    :hasDeathYear 1921 .
+
+data:Prince_Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1841 ;
+    :hasDeathYear 1934 .
+
+data:Prince_Ferdinand_Pius_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1869 ;
+    :hasDeathYear 1960 ;
+    :hasFather data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Prince_Ruggiero_Maria a :Man,
+        :Person ;
+    :hasBirthYear 1901 ;
+    :hasDeathYear 1914 .
+
+data:Princess_Barbara_Maria a :Person,
+        :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1927 .
+
+data:Princess_Lucia a :Person,
+        :Woman ;
+    :hasBirthYear 1908 ;
+    :hasDeathYear 2001 .
+
+data:Princess_Maria_Antonietta a :Person,
+        :Woman ;
+    :hasBirthYear 1898 ;
+    :hasDeathYear 1957 .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
         :Person,
-        :Woman .
+        :Woman ;
+    :hasBirthYear 1851 ;
+    :hasDeathYear 1938 .
 
-data:Princess_Maria_Gabriela a :Person,
-        :Woman .
+data:Princess_Maria_Cristina a :Person,
+        :Woman ;
+    :hasBirthYear 1899 ;
+    :hasDeathYear 1985 .
+
+data:Princess_Maria_Ludwiga_Theresia_of_Bavaria a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1954 ;
+    :hasFather data:King_Ludwig_III_of_Bavaria ;
+    :hasMother data:Archduchess_Maria_Theresa_of_Austria-Este .
 

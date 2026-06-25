@@ -1,0 +1,151 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:KingCharlesIII a :Man,
+        :Person ;
+    :hasBrother data:KingCharlesIII ;
+    :hasRelation data:KingCharlesIII ;
+    :isBloodrelationOf data:KingCharlesIII ;
+    :isBrotherOf data:KingCharlesIII ;
+    :isSiblingOf data:KingCharlesIII .
+
+data:KingPaulOfGreece a :Man,
+        :Person ;
+    :hasBrother data:KingPaulOfGreece ;
+    :hasRelation data:KingPaulOfGreece ;
+    :isBloodrelationOf data:KingPaulOfGreece ;
+    :isBrotherOf data:KingPaulOfGreece ;
+    :isSiblingOf data:KingPaulOfGreece .
+
+data:QueenFrederica a :Person,
+        :Woman ;
+    :hasRelation data:QueenFrederica ;
+    :hasSister data:QueenFrederica ;
+    :isBloodrelationOf data:QueenFrederica ;
+    :isSiblingOf data:QueenFrederica ;
+    :isSisterOf data:QueenFrederica .
+
+data:PrinceGeorgeWilliamOfHanover a :Man,
+        :Person ;
+    :hasBrother data:PrinceGeorgeWilliamOfHanover ;
+    :hasRelation data:KarlAdolfAndreasOfHesse,
+        data:PrinceChristophOfHesse,
+        data:PrinceGeorgeWilliamOfHanover,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrinceWolfgangOfHesse,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :isBloodrelationOf data:PrinceGeorgeWilliamOfHanover ;
+    :isBrotherOf data:PrinceGeorgeWilliamOfHanover ;
+    :isSiblingOf data:PrinceGeorgeWilliamOfHanover .
+
+data:PrincePhilipDukeOfEdinburgh a :Man,
+        :Person ;
+    :hasBrother data:PrincePhilipDukeOfEdinburgh ;
+    :hasRelation data:KarlAdolfAndreasOfHesse,
+        data:PrinceChristophOfHesse,
+        data:PrinceGeorgeWilliamOfHanover,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrinceWolfgangOfHesse,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :hasSister data:PrincessSophieOfGreeceAndDenmark ;
+    :isBloodrelationOf data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :isBrotherOf data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :isSiblingOf data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :isUncleOf data:KarlAdolfAndreasOfHesse .
+
+data:PrinceWolfgangOfHesse a :Man,
+        :Person ;
+    :hasBrother data:PrinceChristophOfHesse,
+        data:PrinceWolfgangOfHesse ;
+    :hasRelation data:KarlAdolfAndreasOfHesse,
+        data:PrinceChristophOfHesse,
+        data:PrinceGeorgeWilliamOfHanover,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrinceWolfgangOfHesse,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :isBloodrelationOf data:PrinceChristophOfHesse,
+        data:PrinceWolfgangOfHesse ;
+    :isBrotherOf data:PrinceChristophOfHesse,
+        data:PrinceWolfgangOfHesse ;
+    :isSiblingOf data:PrinceChristophOfHesse,
+        data:PrinceWolfgangOfHesse ;
+    :isUncleOf data:KarlAdolfAndreasOfHesse .
+
+data:PrinceChristophOfHesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:PrinceChristophOfHesse,
+        data:PrinceWolfgangOfHesse ;
+    :hasChild data:KarlAdolfAndreasOfHesse ;
+    :hasRelation data:KarlAdolfAndreasOfHesse,
+        data:PrinceChristophOfHesse,
+        data:PrinceGeorgeWilliamOfHanover,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrinceWolfgangOfHesse,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :hasSon data:KarlAdolfAndreasOfHesse ;
+    :isAncestorOf data:KarlAdolfAndreasOfHesse ;
+    :isBloodrelationOf data:PrinceChristophOfHesse,
+        data:PrinceWolfgangOfHesse ;
+    :isBrotherOf data:PrinceChristophOfHesse,
+        data:PrinceWolfgangOfHesse ;
+    :isFatherOf data:KarlAdolfAndreasOfHesse ;
+    :isParentOf data:KarlAdolfAndreasOfHesse ;
+    :isSiblingOf data:PrinceChristophOfHesse,
+        data:PrinceWolfgangOfHesse ;
+    :isUncleOf data:KarlAdolfAndreasOfHesse .
+
+data:PrincessSophieOfGreeceAndDenmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBrother data:PrincePhilipDukeOfEdinburgh ;
+    :hasChild data:KarlAdolfAndreasOfHesse ;
+    :hasMarriageYear 1946 ;
+    :hasRelation data:KarlAdolfAndreasOfHesse,
+        data:PrinceChristophOfHesse,
+        data:PrinceGeorgeWilliamOfHanover,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrinceWolfgangOfHesse,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :hasSister data:PrincessSophieOfGreeceAndDenmark ;
+    :hasSon data:KarlAdolfAndreasOfHesse ;
+    :isAncestorOf data:KarlAdolfAndreasOfHesse ;
+    :isAuntOf data:KarlAdolfAndreasOfHesse ;
+    :isBloodrelationOf data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :isMotherOf data:KarlAdolfAndreasOfHesse ;
+    :isParentOf data:KarlAdolfAndreasOfHesse ;
+    :isSiblingOf data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :isSisterOf data:PrincePhilipDukeOfEdinburgh,
+        data:PrincessSophieOfGreeceAndDenmark .
+
+data:KarlAdolfAndreasOfHesse a :Man,
+        :Person ;
+    :hasAncestor data:PrinceChristophOfHesse,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :hasBirthYear 1937 ;
+    :hasBrother data:KarlAdolfAndreasOfHesse ;
+    :hasDeathYear 2022 ;
+    :hasFather data:PrinceChristophOfHesse ;
+    :hasMother data:PrincessSophieOfGreeceAndDenmark ;
+    :hasParent data:PrinceChristophOfHesse,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :hasRelation data:KarlAdolfAndreasOfHesse,
+        data:PrinceChristophOfHesse,
+        data:PrinceGeorgeWilliamOfHanover,
+        data:PrincePhilipDukeOfEdinburgh,
+        data:PrinceWolfgangOfHesse,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :isBloodrelationOf data:KarlAdolfAndreasOfHesse ;
+    :isBrotherOf data:KarlAdolfAndreasOfHesse ;
+    :isChildOf data:PrinceChristophOfHesse,
+        data:PrincessSophieOfGreeceAndDenmark ;
+    :isSiblingOf data:KarlAdolfAndreasOfHesse ;
+    :isSonOf data:PrinceChristophOfHesse,
+        data:PrincessSophieOfGreeceAndDenmark .
+

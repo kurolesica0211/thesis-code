@@ -7,30 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Peter-_Duke_of_Schleswig-Holstein a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Peter, Duke of Schleswig-Holstein" ;
-    data:posIndicesFull "154:187",
-        "696:729" ;
-    data:posIndicesPart "1006:1015",
-        "1016:1024",
-        "1187:1196" ;
-    data:wdtLink wdt:Q739253 ;
-    :alsoKnownAs "Friedrich Ernst Peter Herzog zu Schleswig-Holstein-Sonderburg-Glücksburg" ;
-    :hasSex data:male .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Marie_Alix-_Duchess_of_Schleswig-Holstein a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Marie_Alix-_Duchess_of_Schleswig-Holstein a :Person ;
     rdfs:label "Marie Alix, Duchess of Schleswig-Holstein" ;
     data:posIndicesFull "0:39",
         "1054:1093" ;
@@ -50,16 +27,27 @@ data:Marie_Alix-_Duchess_of_Schleswig-Holstein a :Ancestor,
     data:wdtLink wdt:Q6490795 ;
     :alsoKnownAs "Marie-Alix Prinzessin zu Schaumburg-Lippe",
         "Princess Marie Alix of Schaumburg-Lippe" ;
-    :hasFather data:Prince_Stefan_of_Schaumburg-Lippe ;
     :hasParent data:Prince_Stefan_of_Schaumburg-Lippe ;
-    :hasSex data:female ;
-    :isChildOf data:Prince_Stefan_of_Schaumburg-Lippe ;
-    :isDaughterOf data:Prince_Stefan_of_Schaumburg-Lippe .
+    :hasSex data:female .
 
-data:Prince_Stefan_of_Schaumburg-Lippe a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Peter-_Duke_of_Schleswig-Holstein a :Person ;
+    rdfs:label "Peter, Duke of Schleswig-Holstein" ;
+    data:posIndicesFull "154:187",
+        "696:729" ;
+    data:posIndicesPart "1006:1015",
+        "1016:1024",
+        "1187:1196" ;
+    data:wdtLink wdt:Q739253 ;
+    :alsoKnownAs "Friedrich Ernst Peter Herzog zu Schleswig-Holstein-Sonderburg-Glücksburg" ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Stefan_of_Schaumburg-Lippe a :Person ;
     rdfs:label "Prince Stefan of Schaumburg-Lippe" ;
     data:posIndicesFull "262:295" ;
     data:posIndicesPart "434:444",
@@ -69,9 +57,9 @@ data:Prince_Stefan_of_Schaumburg-Lippe a :Ancestor,
         "576:581" ;
     data:wdtLink wdt:Q15882344 ;
     :alsoKnownAs "Stephan Alexander Viktor Prinz zu Schaumburg-Lippe" ;
-    :hasChild data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
-    :hasDaughter data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
-    :hasSex data:male ;
-    :isFatherOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein ;
-    :isParentOf data:Marie_Alix-_Duchess_of_Schleswig-Holstein .
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

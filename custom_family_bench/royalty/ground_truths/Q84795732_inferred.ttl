@@ -1,0 +1,1071 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Ian_Malcolm a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Ian Malcolm"^^xsd:string ;
+    data:posIndicesFull "14293:14304"^^xsd:string ;
+    data:posIndicesPart "15100:15107"^^xsd:string,
+        "15322:15329"^^xsd:string,
+        "16179:16186"^^xsd:string,
+        "16229:16236"^^xsd:string,
+        "28537:28540"^^xsd:string,
+        "28542:28549"^^xsd:string,
+        "28635:28638"^^xsd:string,
+        "28640:28647"^^xsd:string ;
+    data:wdtLink wdt:Q3147302 ;
+    :alsoKnownAs "Ian Zachary Malcolm"^^xsd:string,
+        "Sir Ian Zachary Malcolm"^^xsd:string,
+        "Sir Ian Zachary Malcolm, 17th of Poltalloch"^^xsd:string ;
+    :hasBrother data:Ian_Malcolm ;
+    :hasChild data:Mary_Malcolm ;
+    :hasDaughter data:Mary_Malcolm ;
+    :hasRelation data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry,
+        data:Mary_Malcolm ;
+    :hasSex data:male ;
+    :isAncestorOf data:Mary_Malcolm ;
+    :isBloodrelationOf data:Ian_Malcolm ;
+    :isBrotherOf data:Ian_Malcolm ;
+    :isFatherOf data:Mary_Malcolm ;
+    :isParentOf data:Mary_Malcolm ;
+    :isSiblingOf data:Ian_Malcolm ;
+    :isUncleOf data:Mary_Malcolm .
+
+data:Lillie_Langtry a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Lillie Langtry"^^xsd:string ;
+    data:posIndicesFull "10084:10097"^^xsd:string,
+        "10188:10202"^^xsd:string,
+        "11751:11765"^^xsd:string,
+        "14733:14747"^^xsd:string,
+        "15165:15179"^^xsd:string,
+        "156:167"^^xsd:string,
+        "16088:16102"^^xsd:string,
+        "17712:17723"^^xsd:string,
+        "20809:20823"^^xsd:string,
+        "20899:20913"^^xsd:string,
+        "21217:21231"^^xsd:string,
+        "21293:21307"^^xsd:string,
+        "21794:21805"^^xsd:string,
+        "22201:22215"^^xsd:string,
+        "22588:22599"^^xsd:string,
+        "22699:22713"^^xsd:string,
+        "22867:22878"^^xsd:string,
+        "22900:22913"^^xsd:string,
+        "23038:23052"^^xsd:string,
+        "23324:23338"^^xsd:string,
+        "25814:25828"^^xsd:string,
+        "25893:25907"^^xsd:string,
+        "26070:26084"^^xsd:string,
+        "26200:26214"^^xsd:string,
+        "26693:26705"^^xsd:string,
+        "26781:26793"^^xsd:string,
+        "26925:26939"^^xsd:string,
+        "27023:27034"^^xsd:string,
+        "27384:27396"^^xsd:string,
+        "27511:27522"^^xsd:string,
+        "28034:28048"^^xsd:string,
+        "28386:28398"^^xsd:string,
+        "28406:28417"^^xsd:string,
+        "30624:30638"^^xsd:string,
+        "30647:30661"^^xsd:string,
+        "31189:31203"^^xsd:string,
+        "31310:31321"^^xsd:string,
+        "31481:31495"^^xsd:string,
+        "31572:31586"^^xsd:string,
+        "3218:3228"^^xsd:string,
+        "32335:32349"^^xsd:string,
+        "32465:32476"^^xsd:string,
+        "32804:32817"^^xsd:string,
+        "32933:32947"^^xsd:string,
+        "33048:33062"^^xsd:string,
+        "34356:34370"^^xsd:string,
+        "34563:34577"^^xsd:string,
+        "3707:3718"^^xsd:string,
+        "3729:3740"^^xsd:string,
+        "3822:3833"^^xsd:string,
+        "4404:4418"^^xsd:string,
+        "4743:4754"^^xsd:string,
+        "4761:4773"^^xsd:string,
+        "5678:5690"^^xsd:string,
+        "6115:6127"^^xsd:string,
+        "6436:6448"^^xsd:string,
+        "6570:6582"^^xsd:string,
+        "6687:6699"^^xsd:string,
+        "705:719"^^xsd:string,
+        "8144:8158"^^xsd:string,
+        "8572:8586"^^xsd:string ;
+    data:posIndicesPart "10648:10654"^^xsd:string,
+        "10681:10687"^^xsd:string,
+        "10789:10796"^^xsd:string,
+        "11137:11144"^^xsd:string,
+        "11260:11267"^^xsd:string,
+        "11367:11373"^^xsd:string,
+        "1155:1162"^^xsd:string,
+        "11847:11853"^^xsd:string,
+        "12071:12077"^^xsd:string,
+        "12159:12165"^^xsd:string,
+        "12475:12481"^^xsd:string,
+        "12807:12813"^^xsd:string,
+        "1288:1294"^^xsd:string,
+        "12919:12925"^^xsd:string,
+        "13267:13273"^^xsd:string,
+        "13335:13341"^^xsd:string,
+        "13750:13757"^^xsd:string,
+        "13894:13901"^^xsd:string,
+        "1440:1446"^^xsd:string,
+        "14832:14839"^^xsd:string,
+        "1575:1581"^^xsd:string,
+        "16330:16337"^^xsd:string,
+        "1635:1641"^^xsd:string,
+        "16422:16429"^^xsd:string,
+        "16578:16585"^^xsd:string,
+        "16693:16700"^^xsd:string,
+        "17018:17025"^^xsd:string,
+        "1714:1720"^^xsd:string,
+        "17200:17207"^^xsd:string,
+        "17294:17301"^^xsd:string,
+        "17564:17571"^^xsd:string,
+        "17895:17902"^^xsd:string,
+        "18019:18026"^^xsd:string,
+        "18210:18217"^^xsd:string,
+        "18401:18408"^^xsd:string,
+        "18461:18468"^^xsd:string,
+        "18687:18694"^^xsd:string,
+        "18750:18757"^^xsd:string,
+        "18838:18845"^^xsd:string,
+        "18932:18939"^^xsd:string,
+        "19167:19174"^^xsd:string,
+        "19313:19320"^^xsd:string,
+        "1934:1940"^^xsd:string,
+        "19425:19432"^^xsd:string,
+        "19537:19544"^^xsd:string,
+        "19637:19644"^^xsd:string,
+        "19898:19905"^^xsd:string,
+        "20003:20010"^^xsd:string,
+        "2010:2016"^^xsd:string,
+        "20170:20177"^^xsd:string,
+        "20283:20290"^^xsd:string,
+        "20434:20441"^^xsd:string,
+        "20477:20484"^^xsd:string,
+        "2099:2105"^^xsd:string,
+        "21069:21076"^^xsd:string,
+        "21275:21281"^^xsd:string,
+        "21658:21664"^^xsd:string,
+        "21693:21699"^^xsd:string,
+        "2209:2216"^^xsd:string,
+        "22299:22305"^^xsd:string,
+        "2307:2313"^^xsd:string,
+        "232:239"^^xsd:string,
+        "2333:2339"^^xsd:string,
+        "23405:23411"^^xsd:string,
+        "23599:23606"^^xsd:string,
+        "23646:23653"^^xsd:string,
+        "23812:23819"^^xsd:string,
+        "23964:23971"^^xsd:string,
+        "24099:24106"^^xsd:string,
+        "2431:2438"^^xsd:string,
+        "24505:24512"^^xsd:string,
+        "24587:24594"^^xsd:string,
+        "24736:24743"^^xsd:string,
+        "24853:24860"^^xsd:string,
+        "2492:2498"^^xsd:string,
+        "25063:25070"^^xsd:string,
+        "25194:25201"^^xsd:string,
+        "25263:25270"^^xsd:string,
+        "25326:25333"^^xsd:string,
+        "25443:25450"^^xsd:string,
+        "25545:25552"^^xsd:string,
+        "25640:25647"^^xsd:string,
+        "25738:25745"^^xsd:string,
+        "2633:2639"^^xsd:string,
+        "26537:26544"^^xsd:string,
+        "2743:2750"^^xsd:string,
+        "27775:27782"^^xsd:string,
+        "28753:28760"^^xsd:string,
+        "29009:29016"^^xsd:string,
+        "29288:29295"^^xsd:string,
+        "29588:29595"^^xsd:string,
+        "29597:29604"^^xsd:string,
+        "29759:29766"^^xsd:string,
+        "29835:29841"^^xsd:string,
+        "29982:29989"^^xsd:string,
+        "30035:30042"^^xsd:string,
+        "30269:30276"^^xsd:string,
+        "30395:30402"^^xsd:string,
+        "30808:30815"^^xsd:string,
+        "30977:30984"^^xsd:string,
+        "3097:3104"^^xsd:string,
+        "31096:31103"^^xsd:string,
+        "31717:31724"^^xsd:string,
+        "31922:31929"^^xsd:string,
+        "32064:32071"^^xsd:string,
+        "32131:32138"^^xsd:string,
+        "33195:33202"^^xsd:string,
+        "33294:33301"^^xsd:string,
+        "33588:33595"^^xsd:string,
+        "33750:33757"^^xsd:string,
+        "33842:33849"^^xsd:string,
+        "33980:33987"^^xsd:string,
+        "3398:3404"^^xsd:string,
+        "34163:34170"^^xsd:string,
+        "34707:34714"^^xsd:string,
+        "34835:34842"^^xsd:string,
+        "34880:34887"^^xsd:string,
+        "3516:3522"^^xsd:string,
+        "4101:4107"^^xsd:string,
+        "4377:4383"^^xsd:string,
+        "4525:4532"^^xsd:string,
+        "4643:4650"^^xsd:string,
+        "4879:4886"^^xsd:string,
+        "5093:5099"^^xsd:string,
+        "5277:5283"^^xsd:string,
+        "5455:5461"^^xsd:string,
+        "5846:5853"^^xsd:string,
+        "638:645"^^xsd:string,
+        "6813:6820"^^xsd:string,
+        "7046:7053"^^xsd:string,
+        "7221:7228"^^xsd:string,
+        "7403:7410"^^xsd:string,
+        "7558:7565"^^xsd:string,
+        "7815:7822"^^xsd:string,
+        "810:817"^^xsd:string,
+        "8176:8182"^^xsd:string,
+        "8297:8304"^^xsd:string,
+        "8670:8677"^^xsd:string,
+        "8777:8784"^^xsd:string,
+        "8919:8926"^^xsd:string,
+        "9114:9121"^^xsd:string,
+        "9176:9183"^^xsd:string,
+        "9374:9381"^^xsd:string,
+        "940:947"^^xsd:string,
+        "9457:9464"^^xsd:string,
+        "9652:9659"^^xsd:string,
+        "9868:9875"^^xsd:string ;
+    data:wdtLink wdt:Q297743 ;
+    :alsoKnownAs "Emilie Charlotte Langtry"^^xsd:string,
+        "Emilie Charlotte Le Breton"^^xsd:string,
+        "Emilie Charlotte Le Breton De Bathe"^^xsd:string,
+        "Emilie Charlotte Le Breton Langtry"^^xsd:string,
+        "Emily Charlotte le Breton"^^xsd:string,
+        "Jersey Lilly"^^xsd:string,
+        "Jersey Lily"^^xsd:string,
+        "Lilly Langtry"^^xsd:string,
+        "Lily Langtry"^^xsd:string,
+        "Mrs. Langtry"^^xsd:string ;
+    :hasChild data:Jeanne_Marie_Langtry ;
+    :hasDaughter data:Jeanne_Marie_Langtry ;
+    :hasRelation data:Jeanne_Marie_Langtry,
+        data:Lillie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Mary_Malcolm ;
+    :hasSex data:female ;
+    :hasSister data:Lillie_Langtry ;
+    :isAncestorOf data:Jeanne_Marie_Langtry,
+        data:Mary_Malcolm ;
+    :isAuntOf data:Jeanne_Marie_Langtry ;
+    :isBloodrelationOf data:Lillie_Langtry ;
+    :isMotherOf data:Jeanne_Marie_Langtry ;
+    :isParentOf data:Jeanne_Marie_Langtry ;
+    :isSiblingOf data:Lillie_Langtry ;
+    :isSisterOf data:Lillie_Langtry .
+
+data:Prince_Philip-_Duke_of_Edinburgh a :Man,
+        :Person ;
+    rdfs:label "Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    data:posIndicesFull "14960:14973"^^xsd:string,
+        "15929:15947"^^xsd:string ;
+    data:posIndicesPart "15217:15223"^^xsd:string,
+        "15738:15744"^^xsd:string,
+        "16874:16880"^^xsd:string,
+        "20675:20681"^^xsd:string,
+        "23146:23152"^^xsd:string,
+        "24779:24785"^^xsd:string,
+        "26589:26595"^^xsd:string,
+        "31410:31416"^^xsd:string,
+        "32172:32178"^^xsd:string,
+        "32955:32961"^^xsd:string,
+        "33337:33343"^^xsd:string,
+        "33649:33655"^^xsd:string ;
+    data:wdtLink wdt:Q80976 ;
+    :alsoKnownAs "H.R.H. Prince Philip"^^xsd:string,
+        "H.R.H. The Duke Of Edinburgh"^^xsd:string,
+        "Lieutenant Philip Mountbatten"^^xsd:string,
+        "Philip Edinburgh"^^xsd:string,
+        "Philip Mountbatten"^^xsd:string,
+        "Philip Mountbatten; Prince Philip of Greece and Denmark"^^xsd:string,
+        "Philip of Greece and Denmark"^^xsd:string,
+        "Prince Philip"^^xsd:string,
+        "Prince Philip of Greece and Denmark"^^xsd:string,
+        "The Prince Philip, Duke of Edinburgh"^^xsd:string ;
+    :hasAncestor data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg ;
+    :hasBrother data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasMother data:Princess_Alice_of_Battenberg ;
+    :hasParent data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBrotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isChildOf data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSonOf data:Princess_Alice_of_Battenberg .
+
+data:Mary_Malcolm a :Person,
+        :Woman ;
+    rdfs:label "Mary Malcolm"^^xsd:string ;
+    data:posIndicesFull "14376:14388"^^xsd:string,
+        "14541:14553"^^xsd:string,
+        "14669:14681"^^xsd:string,
+        "15635:15647"^^xsd:string,
+        "28693:28705"^^xsd:string ;
+    data:posIndicesPart "15100:15107"^^xsd:string,
+        "15322:15329"^^xsd:string,
+        "16179:16186"^^xsd:string,
+        "16229:16236"^^xsd:string,
+        "16272:16276"^^xsd:string,
+        "28542:28549"^^xsd:string,
+        "28640:28647"^^xsd:string ;
+    data:wdtLink wdt:Q16018831 ;
+    :alsoKnownAs "Helen Mary Malcolm"^^xsd:string ;
+    :hasAncestor data:Edward_Langtry,
+        data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry,
+        data:Lillie_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasFather data:Ian_Malcolm ;
+    :hasMother data:Jeanne_Marie_Langtry ;
+    :hasParent data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry ;
+    :hasRelation data:Edward_Langtry,
+        data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry,
+        data:Lillie_Langtry,
+        data:Mary_Malcolm,
+        data:Prince_Louis_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Mary_Malcolm ;
+    :isBloodrelationOf data:Mary_Malcolm ;
+    :isChildOf data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry ;
+    :isDaughterOf data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry ;
+    :isSiblingOf data:Mary_Malcolm ;
+    :isSisterOf data:Mary_Malcolm .
+
+data:Louise_Mountbatten a :Person,
+        :Woman ;
+    rdfs:label "Louise Mountbatten"^^xsd:string ;
+    data:posIndicesFull "1127:1153"^^xsd:string,
+        "1134:1153"^^xsd:string,
+        "11790:11816"^^xsd:string,
+        "11797:11816"^^xsd:string,
+        "12291:12317"^^xsd:string,
+        "12298:12317"^^xsd:string,
+        "13588:13605"^^xsd:string,
+        "14917:14943"^^xsd:string,
+        "14924:14943"^^xsd:string,
+        "15430:15456"^^xsd:string,
+        "15437:15456"^^xsd:string,
+        "15599:15616"^^xsd:string,
+        "15831:15857"^^xsd:string,
+        "15838:15857"^^xsd:string ;
+    data:posIndicesPart "13938:13949"^^xsd:string ;
+    data:wdtLink wdt:Q115477 ;
+    :alsoKnownAs "Countess of Gripsholm"^^xsd:string,
+        "Lady Louise Alexandra Marie Irene Mountbatten"^^xsd:string,
+        "Lady Louise Mountbatten"^^xsd:string,
+        "Louise Alexandra Marie Irene Mountbatten"^^xsd:string,
+        "Louise Alexandra Marie Irene of Battenberg"^^xsd:string,
+        "Louise of Battenberg"^^xsd:string,
+        "Louise of Sweden"^^xsd:string,
+        "Mrs Olsson"^^xsd:string,
+        "Princess Louise Alexandra Marie Irene of Battenberg"^^xsd:string,
+        "Princess Louise of Battenberg"^^xsd:string,
+        "Queen Louise of Sweden"^^xsd:string ;
+    :hasAncestor data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasFather data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasParent data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasRelation data:Edward_Langtry,
+        data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Jeanne_Marie_Langtry,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isAuntOf data:Mary_Malcolm,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isDaughterOf data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isSiblingOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma a :Man,
+        :Person ;
+    rdfs:label "Louis Mountbatten, 1st Earl Mountbatten of Burma"^^xsd:string ;
+    data:posIndicesFull "1127:1153"^^xsd:string,
+        "11790:11816"^^xsd:string,
+        "12291:12317"^^xsd:string,
+        "13584:13605"^^xsd:string,
+        "13588:13605"^^xsd:string,
+        "14917:14943"^^xsd:string,
+        "15430:15456"^^xsd:string,
+        "15599:15616"^^xsd:string,
+        "15831:15857"^^xsd:string ;
+    data:posIndicesPart "12396:12401"^^xsd:string,
+        "12493:12498"^^xsd:string,
+        "13140:13145"^^xsd:string,
+        "13172:13177"^^xsd:string,
+        "13479:13484"^^xsd:string,
+        "13692:13697"^^xsd:string,
+        "13921:13926"^^xsd:string,
+        "13933:13937"^^xsd:string,
+        "13938:13949"^^xsd:string,
+        "13953:13958"^^xsd:string,
+        "28845:28850"^^xsd:string,
+        "5785:5789"^^xsd:string ;
+    data:wdtLink wdt:Q157068 ;
+    :alsoKnownAs "Adm. Louis Francis Albert Victor Nicholas George Mountbatten"^^xsd:string,
+        "Lord Louis Mountbatten"^^xsd:string,
+        "Lord Mountbatten"^^xsd:string,
+        "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma"^^xsd:string,
+        "Louis Mountbatten"^^xsd:string,
+        "Prince Louis of Battenberg"^^xsd:string,
+        "The Earl Mountbatten of Burma"^^xsd:string ;
+    :hasAncestor data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasFather data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasParent data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasRelation data:Edward_Langtry,
+        data:Jeanne_Marie_Langtry,
+        data:Lillie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSister data:Jeanne_Marie_Langtry,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isBrotherOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isSiblingOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSonOf data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:Mary_Malcolm,
+        data:Prince_Philip-_Duke_of_Edinburgh .
+
+data:Edward_Langtry a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Edward Langtry"^^xsd:string ;
+    data:posIndicesFull "10380:10394"^^xsd:string,
+        "10554:10568"^^xsd:string,
+        "12215:12229"^^xsd:string,
+        "12620:12634"^^xsd:string,
+        "2126:2140"^^xsd:string,
+        "24228:24242"^^xsd:string ;
+    data:posIndicesPart "10789:10796"^^xsd:string,
+        "11137:11144"^^xsd:string,
+        "11260:11267"^^xsd:string,
+        "12698:12704"^^xsd:string,
+        "13750:13757"^^xsd:string,
+        "13894:13901"^^xsd:string,
+        "14584:14590"^^xsd:string,
+        "14752:14758"^^xsd:string,
+        "14832:14839"^^xsd:string,
+        "14844:14850"^^xsd:string,
+        "15087:15093"^^xsd:string,
+        "15240:15246"^^xsd:string,
+        "15721:15727"^^xsd:string,
+        "16330:16337"^^xsd:string,
+        "16422:16429"^^xsd:string,
+        "16578:16585"^^xsd:string,
+        "16693:16700"^^xsd:string,
+        "17018:17025"^^xsd:string,
+        "17200:17207"^^xsd:string,
+        "17294:17301"^^xsd:string,
+        "17564:17571"^^xsd:string,
+        "17895:17902"^^xsd:string,
+        "18019:18026"^^xsd:string,
+        "18210:18217"^^xsd:string,
+        "18401:18408"^^xsd:string,
+        "18461:18468"^^xsd:string,
+        "18687:18694"^^xsd:string,
+        "18750:18757"^^xsd:string,
+        "18838:18845"^^xsd:string,
+        "18932:18939"^^xsd:string,
+        "19167:19174"^^xsd:string,
+        "19313:19320"^^xsd:string,
+        "19425:19432"^^xsd:string,
+        "19537:19544"^^xsd:string,
+        "19637:19644"^^xsd:string,
+        "19898:19905"^^xsd:string,
+        "20003:20010"^^xsd:string,
+        "20028:20034"^^xsd:string,
+        "20170:20177"^^xsd:string,
+        "20283:20290"^^xsd:string,
+        "20434:20441"^^xsd:string,
+        "20477:20484"^^xsd:string,
+        "21069:21076"^^xsd:string,
+        "2209:2216"^^xsd:string,
+        "2344:2350"^^xsd:string,
+        "23599:23606"^^xsd:string,
+        "23646:23653"^^xsd:string,
+        "23812:23819"^^xsd:string,
+        "23964:23971"^^xsd:string,
+        "24099:24106"^^xsd:string,
+        "24175:24181"^^xsd:string,
+        "2431:2438"^^xsd:string,
+        "24337:24343"^^xsd:string,
+        "24505:24512"^^xsd:string,
+        "24587:24594"^^xsd:string,
+        "24736:24743"^^xsd:string,
+        "24853:24860"^^xsd:string,
+        "25063:25070"^^xsd:string,
+        "25194:25201"^^xsd:string,
+        "25263:25270"^^xsd:string,
+        "25326:25333"^^xsd:string,
+        "25443:25450"^^xsd:string,
+        "25545:25552"^^xsd:string,
+        "25640:25647"^^xsd:string,
+        "25738:25745"^^xsd:string,
+        "26537:26544"^^xsd:string,
+        "2743:2750"^^xsd:string,
+        "27775:27782"^^xsd:string,
+        "28193:28199"^^xsd:string,
+        "28753:28760"^^xsd:string,
+        "29009:29016"^^xsd:string,
+        "29288:29295"^^xsd:string,
+        "29588:29595"^^xsd:string,
+        "29597:29604"^^xsd:string,
+        "29759:29766"^^xsd:string,
+        "29982:29989"^^xsd:string,
+        "30015:30021"^^xsd:string,
+        "30035:30042"^^xsd:string,
+        "30269:30276"^^xsd:string,
+        "30395:30402"^^xsd:string,
+        "30808:30815"^^xsd:string,
+        "30977:30984"^^xsd:string,
+        "3097:3104"^^xsd:string,
+        "31096:31103"^^xsd:string,
+        "31230:31237"^^xsd:string,
+        "3128:3135"^^xsd:string,
+        "31561:31567"^^xsd:string,
+        "31717:31724"^^xsd:string,
+        "31922:31929"^^xsd:string,
+        "32064:32071"^^xsd:string,
+        "32131:32138"^^xsd:string,
+        "32535:32542"^^xsd:string,
+        "32593:32600"^^xsd:string,
+        "33195:33202"^^xsd:string,
+        "33294:33301"^^xsd:string,
+        "33588:33595"^^xsd:string,
+        "33750:33757"^^xsd:string,
+        "33842:33849"^^xsd:string,
+        "33980:33987"^^xsd:string,
+        "34163:34170"^^xsd:string,
+        "34272:34279"^^xsd:string,
+        "34305:34312"^^xsd:string,
+        "34707:34714"^^xsd:string,
+        "34835:34842"^^xsd:string,
+        "34880:34887"^^xsd:string,
+        "3837:3844"^^xsd:string,
+        "3866:3873"^^xsd:string,
+        "4178:4184"^^xsd:string,
+        "4225:4231"^^xsd:string,
+        "4525:4532"^^xsd:string,
+        "4643:4650"^^xsd:string,
+        "4879:4886"^^xsd:string,
+        "5761:5767"^^xsd:string,
+        "5846:5853"^^xsd:string,
+        "6813:6820"^^xsd:string,
+        "7046:7053"^^xsd:string,
+        "7221:7228"^^xsd:string,
+        "7403:7410"^^xsd:string,
+        "7558:7565"^^xsd:string,
+        "7815:7822"^^xsd:string,
+        "8040:8046"^^xsd:string,
+        "8133:8139"^^xsd:string,
+        "8297:8304"^^xsd:string,
+        "8644:8650"^^xsd:string,
+        "8670:8677"^^xsd:string,
+        "8777:8784"^^xsd:string,
+        "8919:8926"^^xsd:string,
+        "9114:9121"^^xsd:string,
+        "9176:9183"^^xsd:string,
+        "9244:9250"^^xsd:string,
+        "9374:9381"^^xsd:string,
+        "9457:9464"^^xsd:string,
+        "9652:9659"^^xsd:string,
+        "9868:9875"^^xsd:string,
+        "9945:9952"^^xsd:string ;
+    data:wdtLink wdt:Q63196804 ;
+    :hasBrother data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasChild data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasDaughter data:Jeanne_Marie_Langtry,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Edward_Langtry,
+        data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Mary_Malcolm,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSon data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isAncestorOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Mary_Malcolm,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isBrotherOf data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isFatherOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isParentOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Prince_Louis_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Louis of Battenberg"^^xsd:string ;
+    data:posIndicesFull "1127:1153"^^xsd:string,
+        "1134:1153"^^xsd:string,
+        "11790:11816"^^xsd:string,
+        "11797:11816"^^xsd:string,
+        "12291:12317"^^xsd:string,
+        "12298:12317"^^xsd:string,
+        "14917:14943"^^xsd:string,
+        "14924:14943"^^xsd:string,
+        "15430:15456"^^xsd:string,
+        "15437:15456"^^xsd:string,
+        "15831:15857"^^xsd:string,
+        "15838:15857"^^xsd:string ;
+    data:posIndicesPart "10029:10035"^^xsd:string,
+        "10211:10217"^^xsd:string,
+        "10273:10279"^^xsd:string,
+        "10326:10332"^^xsd:string,
+        "10476:10482"^^xsd:string,
+        "10582:10588"^^xsd:string,
+        "10707:10713"^^xsd:string,
+        "11028:11034"^^xsd:string,
+        "11066:11072"^^xsd:string,
+        "11417:11423"^^xsd:string,
+        "11587:11593"^^xsd:string,
+        "11618:11624"^^xsd:string,
+        "12372:12378"^^xsd:string,
+        "12389:12395"^^xsd:string,
+        "12396:12401"^^xsd:string,
+        "12486:12492"^^xsd:string,
+        "12493:12498"^^xsd:string,
+        "12568:12574"^^xsd:string,
+        "12882:12888"^^xsd:string,
+        "13053:13059"^^xsd:string,
+        "13089:13095"^^xsd:string,
+        "13140:13145"^^xsd:string,
+        "13146:13156"^^xsd:string,
+        "13172:13177"^^xsd:string,
+        "13356:13366"^^xsd:string,
+        "13479:13484"^^xsd:string,
+        "13692:13697"^^xsd:string,
+        "13698:13708"^^xsd:string,
+        "13914:13920"^^xsd:string,
+        "13921:13926"^^xsd:string,
+        "14159:14165"^^xsd:string,
+        "15217:15223"^^xsd:string,
+        "15738:15744"^^xsd:string,
+        "16874:16880"^^xsd:string,
+        "20675:20681"^^xsd:string,
+        "23146:23152"^^xsd:string,
+        "24779:24785"^^xsd:string,
+        "26589:26595"^^xsd:string,
+        "28845:28850"^^xsd:string,
+        "31410:31416"^^xsd:string,
+        "32955:32961"^^xsd:string,
+        "33337:33343"^^xsd:string,
+        "33649:33655"^^xsd:string,
+        "3496:3502"^^xsd:string,
+        "5738:5744"^^xsd:string,
+        "6915:6921"^^xsd:string,
+        "7864:7870"^^xsd:string,
+        "8048:8054"^^xsd:string,
+        "8336:8342"^^xsd:string,
+        "8389:8395"^^xsd:string,
+        "9146:9152"^^xsd:string,
+        "9237:9243"^^xsd:string,
+        "9696:9702"^^xsd:string ;
+    data:wdtLink wdt:Q57468 ;
+    :alsoKnownAs "Count Alexander of Battenberg"^^xsd:string,
+        "Count Louis of Battenberg"^^xsd:string,
+        "Louis Alexander Mountbatten, 1st Marquess of Milford Haven"^^xsd:string,
+        "Louis Alexander of Battenberg"^^xsd:string,
+        "Louis Milford Haven"^^xsd:string,
+        "Louis Mountbatten, 1st Marquess of Milford Haven"^^xsd:string,
+        "Louis of Battenberg"^^xsd:string,
+        "Prince Louis Alexander of Battenberg"^^xsd:string,
+        "Sir Louis Alexander Mountbatten"^^xsd:string,
+        "Sir Louis Mountbatten"^^xsd:string ;
+    :hasBrother data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasChild data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasDaughter data:Jeanne_Marie_Langtry,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasRelation data:Edward_Langtry,
+        data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Mary_Malcolm,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:male ;
+    :hasSon data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :isAncestorOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Mary_Malcolm,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :isBloodrelationOf data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isBrotherOf data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isFatherOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isParentOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSiblingOf data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isUncleOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Princess_Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Alice of Battenberg"^^xsd:string ;
+    data:posIndicesFull "1256:1260"^^xsd:string,
+        "13396:13400"^^xsd:string,
+        "17493:17497"^^xsd:string,
+        "19259:19264"^^xsd:string,
+        "20241:20246"^^xsd:string,
+        "2054:2058"^^xsd:string,
+        "21454:21458"^^xsd:string,
+        "21609:21615"^^xsd:string,
+        "2249:2254"^^xsd:string,
+        "22515:22519"^^xsd:string,
+        "2284:2289"^^xsd:string,
+        "24408:24414"^^xsd:string,
+        "24879:24884"^^xsd:string,
+        "25589:25593"^^xsd:string,
+        "2598:2603"^^xsd:string,
+        "2666:2671"^^xsd:string,
+        "27182:27186"^^xsd:string,
+        "27748:27753"^^xsd:string,
+        "27982:27986"^^xsd:string,
+        "28825:28829"^^xsd:string,
+        "29709:29713"^^xsd:string,
+        "3148:3152"^^xsd:string,
+        "31691:31696"^^xsd:string,
+        "31891:31896"^^xsd:string,
+        "32004:32009"^^xsd:string,
+        "34205:34210"^^xsd:string,
+        "4603:4607"^^xsd:string,
+        "535:539"^^xsd:string,
+        "553:557"^^xsd:string,
+        "6206:6210"^^xsd:string,
+        "7251:7255"^^xsd:string ;
+    data:posIndicesPart "13146:13156"^^xsd:string,
+        "13356:13366"^^xsd:string,
+        "13698:13708"^^xsd:string,
+        "26600:26608"^^xsd:string,
+        "34449:34457"^^xsd:string,
+        "9707:9715"^^xsd:string ;
+    data:wdtLink wdt:Q116062 ;
+    :alsoKnownAs "Alice"^^xsd:string,
+        "Alice of Battenberg"^^xsd:string,
+        "Alice, Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Mother Superior Alice-Elizabeth"^^xsd:string,
+        "Princess Alice of Greece and Denmark"^^xsd:string,
+        "Princess Andrew of Greece and Denmark"^^xsd:string,
+        "Princess Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie"^^xsd:string,
+        "Victoria Alice Elizabeth Julia Marie of Battenberg"^^xsd:string ;
+    :hasAncestor data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasChild data:Prince_Philip-_Duke_of_Edinburgh ;
+    :hasFather data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasParent data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasRelation data:Edward_Langtry,
+        data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Prince_Louis_of_Battenberg,
+        data:Prince_Philip-_Duke_of_Edinburgh,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Jeanne_Marie_Langtry,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSon data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAncestorOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isAuntOf data:Mary_Malcolm,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isDaughterOf data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isMotherOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isParentOf data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isSiblingOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+
+data:Jeanne_Marie_Langtry a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Jeanne Marie Langtry"^^xsd:string ;
+    data:posIndicesFull "14236:14256"^^xsd:string,
+        "15019:15039"^^xsd:string,
+        "24952:24972"^^xsd:string ;
+    data:posIndicesPart "14336:14342"^^xsd:string,
+        "14343:14348"^^xsd:string,
+        "14699:14705"^^xsd:string,
+        "14706:14711"^^xsd:string,
+        "14832:14839"^^xsd:string,
+        "15264:15270"^^xsd:string,
+        "15271:15276"^^xsd:string,
+        "15756:15762"^^xsd:string,
+        "15763:15768"^^xsd:string,
+        "16139:16145"^^xsd:string,
+        "16146:16151"^^xsd:string,
+        "16330:16337"^^xsd:string,
+        "16422:16429"^^xsd:string,
+        "16578:16585"^^xsd:string,
+        "16693:16700"^^xsd:string,
+        "17018:17025"^^xsd:string,
+        "17200:17207"^^xsd:string,
+        "17294:17301"^^xsd:string,
+        "17564:17571"^^xsd:string,
+        "17895:17902"^^xsd:string,
+        "18019:18026"^^xsd:string,
+        "18210:18217"^^xsd:string,
+        "18401:18408"^^xsd:string,
+        "18461:18468"^^xsd:string,
+        "18687:18694"^^xsd:string,
+        "18750:18757"^^xsd:string,
+        "18838:18845"^^xsd:string,
+        "18892:18897"^^xsd:string,
+        "18932:18939"^^xsd:string,
+        "19167:19174"^^xsd:string,
+        "19313:19320"^^xsd:string,
+        "19425:19432"^^xsd:string,
+        "19537:19544"^^xsd:string,
+        "19637:19644"^^xsd:string,
+        "19898:19905"^^xsd:string,
+        "20003:20010"^^xsd:string,
+        "20170:20177"^^xsd:string,
+        "20283:20290"^^xsd:string,
+        "20434:20441"^^xsd:string,
+        "20477:20484"^^xsd:string,
+        "21069:21076"^^xsd:string,
+        "23599:23606"^^xsd:string,
+        "23646:23653"^^xsd:string,
+        "23812:23819"^^xsd:string,
+        "23964:23971"^^xsd:string,
+        "24099:24106"^^xsd:string,
+        "24505:24512"^^xsd:string,
+        "24587:24594"^^xsd:string,
+        "24736:24743"^^xsd:string,
+        "25063:25070"^^xsd:string,
+        "25194:25201"^^xsd:string,
+        "25263:25270"^^xsd:string,
+        "25326:25333"^^xsd:string,
+        "25443:25450"^^xsd:string,
+        "25521:25526"^^xsd:string,
+        "25545:25552"^^xsd:string,
+        "25640:25647"^^xsd:string,
+        "25738:25745"^^xsd:string,
+        "26537:26544"^^xsd:string,
+        "27775:27782"^^xsd:string,
+        "28753:28760"^^xsd:string,
+        "29009:29016"^^xsd:string,
+        "29288:29295"^^xsd:string,
+        "29588:29595"^^xsd:string,
+        "29597:29604"^^xsd:string,
+        "29759:29766"^^xsd:string,
+        "29982:29989"^^xsd:string,
+        "30035:30042"^^xsd:string,
+        "30269:30276"^^xsd:string,
+        "30395:30402"^^xsd:string,
+        "30808:30815"^^xsd:string,
+        "30977:30984"^^xsd:string,
+        "31096:31103"^^xsd:string,
+        "31230:31237"^^xsd:string,
+        "31717:31724"^^xsd:string,
+        "31922:31929"^^xsd:string,
+        "32064:32071"^^xsd:string,
+        "32131:32138"^^xsd:string,
+        "32535:32542"^^xsd:string,
+        "32593:32600"^^xsd:string,
+        "33195:33202"^^xsd:string,
+        "33294:33301"^^xsd:string,
+        "33588:33595"^^xsd:string,
+        "33750:33757"^^xsd:string,
+        "33842:33849"^^xsd:string,
+        "33980:33987"^^xsd:string,
+        "34163:34170"^^xsd:string,
+        "34272:34279"^^xsd:string,
+        "34305:34312"^^xsd:string,
+        "34707:34714"^^xsd:string,
+        "34835:34842"^^xsd:string,
+        "34880:34887"^^xsd:string ;
+    data:wdtLink wdt:Q84795732 ;
+    :alsoKnownAs "Jeanne Langtry"^^xsd:string,
+        "Jeanne Marie Malcolm"^^xsd:string ;
+    :hasAncestor data:Edward_Langtry,
+        data:Lillie_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasBrother data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma ;
+    :hasChild data:Mary_Malcolm ;
+    :hasDaughter data:Mary_Malcolm ;
+    :hasFather data:Edward_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasMother data:Lillie_Langtry ;
+    :hasParent data:Edward_Langtry,
+        data:Lillie_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :hasRelation data:Edward_Langtry,
+        data:Ian_Malcolm,
+        data:Jeanne_Marie_Langtry,
+        data:Lillie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Mary_Malcolm,
+        data:Prince_Louis_of_Battenberg,
+        data:Princess_Alice_of_Battenberg ;
+    :hasSex data:female ;
+    :hasSister data:Jeanne_Marie_Langtry,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isAncestorOf data:Mary_Malcolm ;
+    :isAuntOf data:Mary_Malcolm,
+        data:Prince_Philip-_Duke_of_Edinburgh ;
+    :isBloodrelationOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isChildOf data:Edward_Langtry,
+        data:Lillie_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isDaughterOf data:Edward_Langtry,
+        data:Lillie_Langtry,
+        data:Prince_Louis_of_Battenberg ;
+    :isMotherOf data:Mary_Malcolm ;
+    :isParentOf data:Mary_Malcolm ;
+    :isSiblingOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg ;
+    :isSisterOf data:Jeanne_Marie_Langtry,
+        data:Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma,
+        data:Louise_Mountbatten,
+        data:Princess_Alice_of_Battenberg .
+

@@ -1,0 +1,175 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias a :Person,
+        :Woman ;
+    :hasRelation data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias ;
+    :hasSister data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias ;
+    :isBloodrelationOf data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias ;
+    :isSiblingOf data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias ;
+    :isSisterOf data:Mar%C3%ADa_de_las_Mercedes_Princess_of_Asturias .
+
+data:Prince_Ferdinand_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasBrother data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_of_Bourbon-Two_Sicilies .
+
+data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta ;
+    :hasChild data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_of_Bourbon-Two_Sicilies ;
+    :hasSon data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta ;
+    :isBrotherOf data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta ;
+    :isFatherOf data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta ;
+    :isUncleOf data:Prince_Carlos_of_Bourbon-Two_Sicilies .
+
+data:Infante_Carlos_Duke_of_Calabria a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1938 ;
+    :hasBrother data:Infante_Carlos_Duke_of_Calabria ;
+    :hasChild data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :hasDeathYear 2015 ;
+    :hasRelation data:Infante_Carlos_Duke_of_Calabria,
+        data:Prince_Pedro_of_Bourbon-Two_Sicilies,
+        data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasSon data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isBrotherOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isFatherOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Infante_Carlos_Duke_of_Calabria ;
+    :isUncleOf data:Prince_Pedro_of_Bourbon-Two_Sicilies .
+
+data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez ;
+    :hasChild data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :hasDaughter data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :hasRelation data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez,
+        data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez,
+        data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :isAncestorOf data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :isBloodrelationOf data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez ;
+    :isBrotherOf data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez ;
+    :isFatherOf data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :isParentOf data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :isSiblingOf data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez ;
+    :isUncleOf data:Sof%C3%ADa_Landaluce_y_Melgarejo .
+
+data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :hasDaughter data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :hasRelation data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez,
+        data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez,
+        data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :hasSister data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez ;
+    :isAncestorOf data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :isAuntOf data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :isBloodrelationOf data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez ;
+    :isMotherOf data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :isParentOf data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :isSiblingOf data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez ;
+    :isSisterOf data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez .
+
+data:Princess_Anne_of_Orl%C3%A9ans a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Infante_Carlos_Duke_of_Calabria,
+        data:Prince_Pedro_of_Bourbon-Two_Sicilies,
+        data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasSister data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasSon data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isAuntOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isMotherOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isParentOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isSisterOf data:Princess_Anne_of_Orl%C3%A9ans .
+
+data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasAncestor data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta ;
+    :hasBrother data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta ;
+    :hasParent data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta ;
+    :hasRelation data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta,
+        data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isBloodrelationOf data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta ;
+    :isSiblingOf data:Prince_Carlos_of_Bourbon-Two_Sicilies,
+        data:Prince_Ferdinand_of_Bourbon-Two_Sicilies ;
+    :isSonOf data:Don_Alfonso_de_Borb%C3%B3n_Count_of_Caserta .
+
+data:Prince_Pedro_of_Bourbon-Two_Sicilies a :Man,
+        :Person ;
+    :hasAncestor data:Infante_Carlos_Duke_of_Calabria,
+        data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasBirthYear 1968 ;
+    :hasBrother data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :hasFather data:Infante_Carlos_Duke_of_Calabria ;
+    :hasMarriageYear 2001 ;
+    :hasMother data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasParent data:Infante_Carlos_Duke_of_Calabria,
+        data:Princess_Anne_of_Orl%C3%A9ans ;
+    :hasRelation data:Infante_Carlos_Duke_of_Calabria,
+        data:Prince_Pedro_of_Bourbon-Two_Sicilies,
+        data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isBloodrelationOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isBrotherOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isChildOf data:Infante_Carlos_Duke_of_Calabria,
+        data:Princess_Anne_of_Orl%C3%A9ans ;
+    :isSiblingOf data:Prince_Pedro_of_Bourbon-Two_Sicilies ;
+    :isSonOf data:Infante_Carlos_Duke_of_Calabria,
+        data:Princess_Anne_of_Orl%C3%A9ans .
+
+data:Sof%C3%ADa_Landaluce_y_Melgarejo a :Person,
+        :Woman ;
+    :hasAncestor data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez,
+        data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez ;
+    :hasBirthYear 1973 ;
+    :hasFather data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez ;
+    :hasMother data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez ;
+    :hasParent data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez,
+        data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez ;
+    :hasRelation data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez,
+        data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez,
+        data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :hasSister data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :isBloodrelationOf data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :isChildOf data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez,
+        data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez ;
+    :isDaughterOf data:Jos%C3%A9_Manuel_Landaluce_y_Dom%C3%ADnguez,
+        data:Mar%C3%ADa_de_las_Nieves_Blanca_Melgarejo_y_Gonz%C3%A1lez ;
+    :isSiblingOf data:Sof%C3%ADa_Landaluce_y_Melgarejo ;
+    :isSisterOf data:Sof%C3%ADa_Landaluce_y_Melgarejo .
+

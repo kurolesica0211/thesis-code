@@ -69,14 +69,68 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Georg von Habsburg (born 16 December 1964) is a Hungarian diplomat.
-He married Duchess Eilika of Oldenburg (born 22 August 1972 in Bad Segeberg), the elder daughter of Duke Johann of Oldenburg (younger son of Nikolaus, Hereditary Grand Duke of Oldenburg, and his wife Princess Helena of Waldeck and Pyrmont) and Countess Ilka of Ortenburg, on 18 October 1997 in Budapest, Hungary.
+Peter Mark Andrew Phillips (born 15 November 1977) is a British businessman and member of the British royal family.
+He is the son of Anne, Princess Royal, and Mark Phillips, and a nephew of King Charles III.
+Born during the reign of his maternal grandmother Queen Elizabeth II, Phillips was fifth in the line of succession to the British throne; as of 2026, he is 19th.
+Phillips attended the University of Exeter and later worked for Jaguar Racing.
+In 2008, he married Canadian management consultant Autumn Kelly at St George's Chapel, Windsor Castle; they have two children.
+Early life and education
+
+Peter Mark Andrew Phillips was born at 10:46 am on 15 November 1977 at St Mary's Hospital, London.
+He was the first child of Princess Anne and Mark Phillips, who had married in 1973, and the first grandchild of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.
+He was baptised on 22 December by the Archbishop of Canterbury Donald Coggan in the Music Room of Buckingham Palace.
+His godparents were his maternal uncle, Prince Charles; Geoffrey Tiarks; Captain Hamish Lochore; Lady Cecil Cameron of Lochiel and Jane Holderness-Roddam.
+Phillips was fifth in line to the throne at birth and remained so until the birth of his cousin William, Prince of Wales in 1982.
+His parents were said to have refused offers from his grandmother Queen Elizabeth II that would have led to his being born in the peerage.
+Phillips was the first legitimate grandchild of a monarch in more than 500 years to be born without a title or courtesy title.
+Phillips has a younger sister, Zara Tindall (née Phillips; born 1981), and two younger half-sisters, Felicity Wade (née Tonkin; born 1985), the daughter of Mark Phillips and his former mistress Heather Tonkin; and Stephanie Phillips (born 1997), the daughter from his father's second marriage to Sandy Pflueger.
+Phillips went to Port Regis Prep School in Shaftesbury, Dorset before following some of his family by attending Gordonstoun School in Moray, Scotland.
+Phillips represented Scotland at rugby union at youth and junior level in the mid-1990s.
+Career
+
+After his graduation in 2000, Phillips worked for Jaguar as corporate hospitality manager and then for Williams racing team, where he was sponsorship accounts manager.
+He left Williams in September 2005, for a job as a manager at the Royal Bank of Scotland in Edinburgh.
+In the year leading up to June 2016, Phillips was responsible for organising the "Patron's Lunch", in celebration of the Queen's 90th birthday.
+In January 2020, Phillips appeared in an advertisement for Chinese company Bright Food.
+In the video, he uses his status as a "British royal family member" to promote the company's milk, while surrounded by luxury.
+Royal funeral participation
+
+On 17 September 2022, during the period of official mourning for Queen Elizabeth II, Phillips joined his sister and six cousins to mount a 15-minute vigil around the coffin of their grandmother as it lay in state at Westminster Hall.
+On 19 September 2022, he joined the Queen's children and other senior members of the royal family in walking behind the cortege in the state funeral procession.
+Personal life
+
+Relationships
+
+Elizabeth Iorio and Tara Swain
+
+Phillips dated Elizabeth Iorio, a cod liver oil heiress from the United States, for two years.
+Autumn Kelly
+
+In 2003, Phillips met Autumn Kelly, a Canadian management consultant, at the Formula 1 Canadian Grand Prix in Montreal.
+If she had been Roman Catholic at the time of the marriage, Phillips would have lost his place in the line of the succession to the throne because of since-repealed terms of the Act of Settlement 1701.
+Shortly before their wedding, the couple were interviewed and photographed by Hello! magazine, and were reported to have been paid £500,000, resulting in some concern in royal circles.
+The couple lived in Hong Kong after Phillips changed positions within the Royal Bank of Scotland and became head of their sponsorships activities in the region.
+Their first child, and the Queen's first great-grandchild, a daughter named Savannah Anne Kathleen, was born on 29 December 2010 at Gloucestershire Royal Hospital.
+The Queen was present for the baby's baptism, which took place on 23 April 2011 at Church of the Holy Cross in Avening, Gloucestershire, near Gatcombe Park, the home of Phillips' mother.
+Savannah was born 12th in the line to the throne and is now 20th.
+On 29 March 2012, the couple's second daughter, Isla Elizabeth, was born at Gloucestershire Royal Hospital.
+She was born 13th in the line to the throne and is now 21st.
+On 11 February 2020, Phillips and his wife confirmed that they had separated in 2019 and announced they were planning to divorce.
+Lindsay Wallace
+
+After his divorce, Phillips began a relationship with Lindsay Wallace in 2021, with whom he made his official debut as a couple at the Epsom Derby in June 2022.
+Harriet Sperling
+
+By June 2024, Phillips had introduced his partner, NHS paediatric nurse and freelance writer Harriet Sperling (née Sanders; born 1980), to King Charles III and Queen Camilla.
+According to the BBC, Sperling is a distant relation of Prince Richard, Duke of Gloucester through her father Rupert Sanders (1946–2023).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -92,39 +146,9 @@ He married Duchess Eilika of Oldenburg (born 22 August 1972 in Bad Segeberg), th
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -139,6 +163,23 @@ He married Duchess Eilika of Oldenburg (born 22 August 1972 in Bad Segeberg), th
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -156,6 +197,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -223,29 +279,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -254,6 +302,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -266,6 +322,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -274,17 +332,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -312,6 +372,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -327,131 +471,262 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (34481a24-1238-4e4a-9b05-92026f19dfbf)
- Call ID: 34481a24-1238-4e4a-9b05-92026f19dfbf
+  AssignClass (d278e707-38cc-4b9f-9120-2be9aac8352b)
+ Call ID: d278e707-38cc-4b9f-9120-2be9aac8352b
   Args:
-    source: Georg_von_Habsburg
     type: :Man
-  AssignClass (0290fe49-6a89-488c-89f6-2588c24e6bf3)
- Call ID: 0290fe49-6a89-488c-89f6-2588c24e6bf3
+    source: Peter_Phillips
+  AssignClass (231ea12e-b523-4f16-8149-1950de7275ef)
+ Call ID: 231ea12e-b523-4f16-8149-1950de7275ef
   Args:
     type: :Person
-    source: Georg_von_Habsburg
-  AddLiteral (2cc126c7-f8fe-4746-a834-cc97c36f15e7)
- Call ID: 2cc126c7-f8fe-4746-a834-cc97c36f15e7
+    source: Peter_Phillips
+  AddLiteral (71d26a52-29d3-460c-95de-8911a5ec41ed)
+ Call ID: 71d26a52-29d3-460c-95de-8911a5ec41ed
   Args:
-    source: Georg_von_Habsburg
-    literal_value: 1964
-    literal_type: xsd:integer
+    literal_value: 1977
     relation: :hasBirthYear
-  AssignClass (aedf5da5-10ca-449a-a903-112d42737ce1)
- Call ID: aedf5da5-10ca-449a-a903-112d42737ce1
+    source: Peter_Phillips
+    literal_type: xsd:integer
+  AssignClass (1cd3fbf5-5738-4ca0-a1c2-3ddae690bdf9)
+ Call ID: 1cd3fbf5-5738-4ca0-a1c2-3ddae690bdf9
   Args:
     type: :Woman
-    source: Eilika_of_Oldenburg
-  AssignClass (d3e8b17a-4bd9-4726-a2f0-93e6d000d3bd)
- Call ID: d3e8b17a-4bd9-4726-a2f0-93e6d000d3bd
+    source: Anne_Princess_Royal
+  AssignClass (bc960e69-06f6-46f9-8ae6-1fcc0131f53c)
+ Call ID: bc960e69-06f6-46f9-8ae6-1fcc0131f53c
   Args:
-    source: Eilika_of_Oldenburg
+    source: Anne_Princess_Royal
     type: :Person
-  AddLiteral (bb601a98-e8e5-41bc-a1d7-1ca5ee1c6177)
- Call ID: bb601a98-e8e5-41bc-a1d7-1ca5ee1c6177
+  AssignClass (1fb09818-b9f2-406b-a6eb-903aaf4245d7)
+ Call ID: 1fb09818-b9f2-406b-a6eb-903aaf4245d7
   Args:
-    relation: :hasBirthYear
-    literal_value: 1972
-    source: Eilika_of_Oldenburg
-    literal_type: xsd:integer
-  AddLiteral (aa714d17-83ac-477f-a7f0-fbe604444921)
- Call ID: aa714d17-83ac-477f-a7f0-fbe604444921
+    type: :Man
+    source: Mark_Phillips
+  AssignClass (73c23bb7-9fbd-4d43-a58f-03d78cdab95d)
+ Call ID: 73c23bb7-9fbd-4d43-a58f-03d78cdab95d
+  Args:
+    source: Mark_Phillips
+    type: :Person
+  AddTriple (eba470e5-5a4e-4cbd-8dbb-0d07a45e59e7)
+ Call ID: eba470e5-5a4e-4cbd-8dbb-0d07a45e59e7
+  Args:
+    relation: :hasFather
+    source: Peter_Phillips
+    target: Mark_Phillips
+  AddTriple (f5b8e993-673e-4d23-8e3c-343f8797cd0a)
+ Call ID: f5b8e993-673e-4d23-8e3c-343f8797cd0a
+  Args:
+    source: Peter_Phillips
+    relation: :hasMother
+    target: Anne_Princess_Royal
+  AssignClass (4f873abe-c0dd-47db-8aaa-d30cece6658c)
+ Call ID: 4f873abe-c0dd-47db-8aaa-d30cece6658c
+  Args:
+    source: Charles_III
+    type: :Man
+  AssignClass (acdb5994-dc54-4e94-bcd0-61cfc1b4af93)
+ Call ID: acdb5994-dc54-4e94-bcd0-61cfc1b4af93
+  Args:
+    type: :Person
+    source: Charles_III
+  AddTriple (69ef5197-84de-428e-ab33-8a3a58ca623e)
+ Call ID: 69ef5197-84de-428e-ab33-8a3a58ca623e
+  Args:
+    target: Charles_III
+    source: Anne_Princess_Royal
+    relation: :isSisterOf
+  AssignClass (5a3df5fe-1198-47f0-a27a-7153468cb772)
+ Call ID: 5a3df5fe-1198-47f0-a27a-7153468cb772
+  Args:
+    type: :Woman
+    source: Elizabeth_II
+  AssignClass (e8561db7-1b5e-4d47-84b4-09a4e7008346)
+ Call ID: e8561db7-1b5e-4d47-84b4-09a4e7008346
+  Args:
+    source: Elizabeth_II
+    type: :Person
+  AddTriple (ee05ea9b-cffe-4fe0-be62-b1db67f90ea9)
+ Call ID: ee05ea9b-cffe-4fe0-be62-b1db67f90ea9
+  Args:
+    target: Anne_Princess_Royal
+    relation: :isMotherOf
+    source: Elizabeth_II
+  AssignClass (b3cf11c9-6b48-4b11-97b0-73968f976732)
+ Call ID: b3cf11c9-6b48-4b11-97b0-73968f976732
+  Args:
+    source: Prince_Philip
+    type: :Man
+  AssignClass (a32e0e7d-98b2-4c01-9b34-d06e7fa9317c)
+ Call ID: a32e0e7d-98b2-4c01-9b34-d06e7fa9317c
+  Args:
+    source: Prince_Philip
+    type: :Person
+  AddTriple (2e6e5ba6-7f04-41be-b7e4-9848b29f24cc)
+ Call ID: 2e6e5ba6-7f04-41be-b7e4-9848b29f24cc
+  Args:
+    target: Anne_Princess_Royal
+    relation: :isFatherOf
+    source: Prince_Philip
+  AssignClass (f2d6f290-738f-44b5-b5ee-6d4d185cd1c2)
+ Call ID: f2d6f290-738f-44b5-b5ee-6d4d185cd1c2
+  Args:
+    source: Zara_Tindall
+    type: :Woman
+  AssignClass (385f0a8c-1a8e-49e4-abb3-cf5c834fdcd5)
+ Call ID: 385f0a8c-1a8e-49e4-abb3-cf5c834fdcd5
+  Args:
+    source: Zara_Tindall
+    type: :Person
+  AddTriple (d3d7a2ac-2c26-478e-91a9-5cfb64d6e5a3)
+ Call ID: d3d7a2ac-2c26-478e-91a9-5cfb64d6e5a3
+  Args:
+    source: Peter_Phillips
+    relation: :isSiblingOf
+    target: Zara_Tindall
+  AddTriple (da4ddc19-a7a5-4d71-a023-11d1878f94dd)
+ Call ID: da4ddc19-a7a5-4d71-a023-11d1878f94dd
+  Args:
+    target: Anne_Princess_Royal
+    relation: :hasMother
+    source: Zara_Tindall
+  AddTriple (8d3c5df0-1416-42b6-9eca-61b85fe179e5)
+ Call ID: 8d3c5df0-1416-42b6-9eca-61b85fe179e5
+  Args:
+    relation: :hasFather
+    source: Zara_Tindall
+    target: Mark_Phillips
+  AssignClass (a9bc1a21-5fcb-4a8c-bb6d-f63b5cf2c47f)
+ Call ID: a9bc1a21-5fcb-4a8c-bb6d-f63b5cf2c47f
+  Args:
+    source: Felicity_Wade
+    type: :Woman
+  AssignClass (19d50688-a256-49df-b63e-24a6d6202ceb)
+ Call ID: 19d50688-a256-49df-b63e-24a6d6202ceb
+  Args:
+    type: :Person
+    source: Felicity_Wade
+  AddTriple (bfa98b47-bbe6-47f7-965b-0fd06bc9fcd1)
+ Call ID: bfa98b47-bbe6-47f7-965b-0fd06bc9fcd1
+  Args:
+    target: Mark_Phillips
+    source: Felicity_Wade
+    relation: :hasFather
+  AssignClass (f2f7d3a3-0799-49c7-935b-2eb94bd38e9d)
+ Call ID: f2f7d3a3-0799-49c7-935b-2eb94bd38e9d
+  Args:
+    type: :Woman
+    source: Stephanie_Phillips
+  AssignClass (60f343b0-9d79-4e95-b672-4acba8c983aa)
+ Call ID: 60f343b0-9d79-4e95-b672-4acba8c983aa
+  Args:
+    type: :Person
+    source: Stephanie_Phillips
+  AddTriple (0d503093-e473-48c5-9e77-84bdc8000013)
+ Call ID: 0d503093-e473-48c5-9e77-84bdc8000013
+  Args:
+    target: Mark_Phillips
+    relation: :hasFather
+    source: Stephanie_Phillips
+  AssignClass (6c47312a-368b-4988-9454-d16bcc39acb9)
+ Call ID: 6c47312a-368b-4988-9454-d16bcc39acb9
+  Args:
+    source: Autumn_Kelly
+    type: :Woman
+  AssignClass (e53c3335-92e2-4065-9fca-802f7c2e2ae5)
+ Call ID: e53c3335-92e2-4065-9fca-802f7c2e2ae5
+  Args:
+    source: Autumn_Kelly
+    type: :Person
+  AddTriple (7d7a1e14-ddc5-4279-9666-7fed8f139520)
+ Call ID: 7d7a1e14-ddc5-4279-9666-7fed8f139520
+  Args:
+    target: Autumn_Kelly
+    relation: :hasRelation
+    source: Peter_Phillips
+  AddLiteral (de718a3d-3861-451c-ab9c-e69099162fb5)
+ Call ID: de718a3d-3861-451c-ab9c-e69099162fb5
   Args:
     literal_type: xsd:integer
-    source: Georg_von_Habsburg
-    literal_value: 1997
+    literal_value: 2008
     relation: :hasMarriageYear
-  AssignClass (d010f40b-6c2f-4e27-9ba5-14a29f7cf12e)
- Call ID: d010f40b-6c2f-4e27-9ba5-14a29f7cf12e
+    source: Peter_Phillips
+  AssignClass (2d50f50c-7baa-4029-b423-f7db1f3c8e9e)
+ Call ID: 2d50f50c-7baa-4029-b423-f7db1f3c8e9e
   Args:
-    type: :Man
-    source: Johann_of_Oldenburg
-  AssignClass (816cfac5-5d21-428f-b41b-0d6a766dddba)
- Call ID: 816cfac5-5d21-428f-b41b-0d6a766dddba
-  Args:
-    source: Johann_of_Oldenburg
-    type: :Person
-  AssignClass (bfcea186-8c4a-4a99-83bd-fbdd859a8146)
- Call ID: bfcea186-8c4a-4a99-83bd-fbdd859a8146
-  Args:
-    type: :Ancestor
-    source: Johann_of_Oldenburg
-  AssignClass (80bfe960-ac48-4a7d-87a8-b2fc8058030a)
- Call ID: 80bfe960-ac48-4a7d-87a8-b2fc8058030a
-  Args:
-    source: Ilka_of_Ortenburg
     type: :Woman
-  AssignClass (7b6f4bc4-97ef-4e2a-a03b-ef8fb3e1af4c)
- Call ID: 7b6f4bc4-97ef-4e2a-a03b-ef8fb3e1af4c
+    source: Savannah_Phillips
+  AssignClass (20c33248-1153-4c16-a314-4af673452a19)
+ Call ID: 20c33248-1153-4c16-a314-4af673452a19
   Args:
-    source: Ilka_of_Ortenburg
+    source: Savannah_Phillips
     type: :Person
-  AssignClass (24cf9189-740e-43d9-8841-797b95376486)
- Call ID: 24cf9189-740e-43d9-8841-797b95376486
-  Args:
-    type: :Ancestor
-    source: Ilka_of_Ortenburg
-  AddTriple (8dab6eb3-405f-4818-bc5b-315adce3f751)
- Call ID: 8dab6eb3-405f-4818-bc5b-315adce3f751
-  Args:
-    source: Eilika_of_Oldenburg
-    target: Johann_of_Oldenburg
-    relation: :hasFather
-  AddTriple (72e8ca9f-1313-458e-b8c4-c0472f63471e)
- Call ID: 72e8ca9f-1313-458e-b8c4-c0472f63471e
-  Args:
-    target: Ilka_of_Ortenburg
-    relation: :hasMother
-    source: Eilika_of_Oldenburg
-  AssignClass (caf12273-60ca-49c5-9b47-397a474dde98)
- Call ID: caf12273-60ca-49c5-9b47-397a474dde98
-  Args:
-    source: Nikolaus_of_Oldenburg
-    type: :Man
-  AssignClass (f6b764b8-d2ae-4315-b3dd-9d3ffbe8516c)
- Call ID: f6b764b8-d2ae-4315-b3dd-9d3ffbe8516c
-  Args:
-    type: :Person
-    source: Nikolaus_of_Oldenburg
-  AssignClass (49d20a77-8d9c-4a7b-8518-8cb22124d687)
- Call ID: 49d20a77-8d9c-4a7b-8518-8cb22124d687
-  Args:
-    source: Nikolaus_of_Oldenburg
-    type: :Ancestor
-  AssignClass (769567ea-975b-45db-8e36-9ff899629a30)
- Call ID: 769567ea-975b-45db-8e36-9ff899629a30
-  Args:
-    source: Helena_of_Waldeck_and_Pyrmont
-    type: :Woman
-  AssignClass (40dce595-f513-40c5-92be-2a1e77deb0f8)
- Call ID: 40dce595-f513-40c5-92be-2a1e77deb0f8
-  Args:
-    type: :Person
-    source: Helena_of_Waldeck_and_Pyrmont
-  AssignClass (91beb405-f268-4e45-9ba0-9df6e681b0f9)
- Call ID: 91beb405-f268-4e45-9ba0-9df6e681b0f9
-  Args:
-    type: :Ancestor
-    source: Helena_of_Waldeck_and_Pyrmont
-  AddTriple (ad8cd2e9-a6a8-44e4-9f97-34a88f4dc25e)
- Call ID: ad8cd2e9-a6a8-44e4-9f97-34a88f4dc25e
+  AddTriple (1791a3f3-2fe2-4ffd-92d8-5e9c6a133563)
+ Call ID: 1791a3f3-2fe2-4ffd-92d8-5e9c6a133563
   Args:
     relation: :hasFather
-    target: Nikolaus_of_Oldenburg
-    source: Johann_of_Oldenburg
-  AddTriple (61e3f167-cec1-43ff-b77d-527dd3f00c01)
- Call ID: 61e3f167-cec1-43ff-b77d-527dd3f00c01
+    source: Savannah_Phillips
+    target: Peter_Phillips
+  AddTriple (fa4f5c44-1fa4-40cc-9a14-7696408fbc39)
+ Call ID: fa4f5c44-1fa4-40cc-9a14-7696408fbc39
   Args:
-    source: Johann_of_Oldenburg
     relation: :hasMother
-    target: Helena_of_Waldeck_and_Pyrmont
-  Finish (781b685d-737a-43eb-998d-92ba23cf0291)
- Call ID: 781b685d-737a-43eb-998d-92ba23cf0291
+    source: Savannah_Phillips
+    target: Autumn_Kelly
+  AssignClass (7cb55e90-961a-49fd-8194-5ad912431cbd)
+ Call ID: 7cb55e90-961a-49fd-8194-5ad912431cbd
+  Args:
+    type: :Woman
+    source: Isla_Phillips
+  AssignClass (dd07fd1d-eb7b-42c3-a9c0-257a2504fad2)
+ Call ID: dd07fd1d-eb7b-42c3-a9c0-257a2504fad2
+  Args:
+    source: Isla_Phillips
+    type: :Person
+  AddTriple (95b88dd6-c590-4550-8142-bcbddc743c99)
+ Call ID: 95b88dd6-c590-4550-8142-bcbddc743c99
+  Args:
+    target: Peter_Phillips
+    relation: :hasFather
+    source: Isla_Phillips
+  AddTriple (f8db68d9-9543-461e-af58-6c4d61728660)
+ Call ID: f8db68d9-9543-461e-af58-6c4d61728660
+  Args:
+    source: Isla_Phillips
+    relation: :hasMother
+    target: Autumn_Kelly
+  AssignClass (f946b1e3-01eb-494a-914c-d5f7a786447d)
+ Call ID: f946b1e3-01eb-494a-914c-d5f7a786447d
+  Args:
+    type: :Woman
+    source: Lindsay_Wallace
+  AssignClass (d6838040-36ff-4926-b24b-e80927d5d6cd)
+ Call ID: d6838040-36ff-4926-b24b-e80927d5d6cd
+  Args:
+    type: :Person
+    source: Lindsay_Wallace
+  AddTriple (e969b9b9-404b-4793-9b65-e2cf6a33046a)
+ Call ID: e969b9b9-404b-4793-9b65-e2cf6a33046a
+  Args:
+    target: Lindsay_Wallace
+    source: Peter_Phillips
+    relation: :hasRelation
+  AssignClass (f4a25b83-db18-475e-909b-955e69a6afa9)
+ Call ID: f4a25b83-db18-475e-909b-955e69a6afa9
+  Args:
+    type: :Woman
+    source: Harriet_Sperling
+  AssignClass (9fd0ba65-a60c-4b45-a22b-7e5433c7d78d)
+ Call ID: 9fd0ba65-a60c-4b45-a22b-7e5433c7d78d
+  Args:
+    source: Harriet_Sperling
+    type: :Person
+  AddTriple (8eb938c7-1429-46ec-979a-036d8cf5c5e4)
+ Call ID: 8eb938c7-1429-46ec-979a-036d8cf5c5e4
+  Args:
+    relation: :hasRelation
+    source: Peter_Phillips
+    target: Harriet_Sperling
+  Finish (1cf7b109-233d-4b62-9ebd-fe911ed6090c)
+ Call ID: 1cf7b109-233d-4b62-9ebd-fe911ed6090c
   Args:

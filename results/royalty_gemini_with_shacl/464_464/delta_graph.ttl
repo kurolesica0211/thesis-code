@@ -2,32 +2,29 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:King_Ludwig_III_of_Bavaria a :Man,
-        :Person .
-
-data:Pedro_Carlos_Orleans-Braganza a :Man,
-        :Person .
-
-data:Prince_Luiz_of_Orleans-Braganza a :Man,
+data:Nicholas_Windsor a :Man,
         :Person ;
-    :hasBirthYear 1938 ;
-    :hasDeathYear 2022 ;
-    :hasFather data:Prince_Pedro_Henrique_of_Orleans-Braganza ;
-    :hasMother data:Princess_Maria_Elisabeth_of_Bavaria .
+    :hasBirthYear 1970 ;
+    :hasBrother data:Earl_of_St_Andrews ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent ;
+    :hasRelation data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski ;
+    :hasSister data:Lady_Helen_Taylor .
 
-data:Princess_Isabel a :Person,
-        :Woman ;
-    :isDaughterOf data:Emperor_Pedro_II .
-
-data:Emperor_Pedro_II a :Ancestor,
-        :Man,
+data:Earl_of_St_Andrews a :Man,
         :Person .
 
-data:Prince_Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
-        :Man,
-        :Person .
-
-data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
+data:Katharine_Duchess_of_Kent a :Ancestor,
         :Person,
         :Woman .
+
+data:Lady_Helen_Taylor a :Person,
+        :Woman .
+
+data:Paola_Doimi_de_Lupis_Frankopan_Subic_Zrinski a :Person,
+        :Woman .
+
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person .
 

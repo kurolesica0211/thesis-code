@@ -1,27 +1,34 @@
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:MarcoAlfonsoTorlonia a :Man,
-        :Person ;
-    :hasFather data:AlessandroTorlonia ;
-    :hasMother data:BeatrizOfSpain ;
-    :hasSister data:OlimpiaTorlonia ;
-    :isUncleOf data:SibillaOfLuxembourg .
+data:Wolfgang_of_Hesse a :Man ;
+    :alsoKnownAs "Wolfgang Moritz Prinz von Hessen"^^xsd:string ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasRelation data:Marie_Alexandra_of_Baden ;
+    :isSiblingOf data:Philipp_of_Hesse .
 
-data:AlessandroTorlonia a :Man,
-        :Person .
+data:Frederick_Charles_of_Hesse a :Man ;
+    :hasBirthYear 1868 ;
+    :hasDeathYear 1940 .
 
-data:AlfonsoXIIIOfSpain a :Man,
-        :Person .
+data:Margaret_of_Prussia a :Woman ;
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1954 .
 
-data:BeatrizOfSpain a :Person,
-        :Woman ;
-    :hasFather data:AlfonsoXIIIOfSpain .
+data:Marie_Alexandra_of_Baden a :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1944 ;
+    :hasFather data:Maximilian_of_Baden ;
+    :hasMother data:Marie_Louise_of_Hanover .
 
-data:OlimpiaTorlonia a :Person,
-        :Woman ;
-    :hasChild data:SibillaOfLuxembourg .
+data:Marie_Louise_of_Hanover a :Woman .
 
-data:SibillaOfLuxembourg a :Person,
-        :Woman .
+data:Maximilian_of_Baden a :Man .
+
+data:Philipp_of_Hesse a :Man .
 

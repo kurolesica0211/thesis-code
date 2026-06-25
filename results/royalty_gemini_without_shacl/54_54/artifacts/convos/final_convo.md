@@ -73,6 +73,7 @@ Prince Harry, Duke of Sussex (Henry Charles Albert David; born 15 September 1984
 He is the younger son of King Charles III and Diana, Princess of Wales, and is fifth in the line of succession to the British throne.
 Harry was educated at Wetherby School, Ludgrove School, and Eton College, before completing officer training at the Royal Military Academy Sandhurst.
 He was commissioned as a cornet in the Blues and Royals and served briefly alongside his elder brother, William, Prince of Wales.
+He was deployed twice on active service in Afghanistan: for ten weeks in Helmand Province during 2007–2008, and for twenty weeks with the Army Air Corps in 2012–2013.
 Inspired by the Warrior Games in the United States, Harry founded the Invictus Games in 2014 and remains actively involved as its patron.
 In 2016, together with his brother William and sister-in-law Catherine, Princess of Wales, he co-founded the mental health awareness initiative Heads Together.
 In 2018, Harry was created Duke of Sussex ahead of his wedding to American actress Meghan Markle.
@@ -117,6 +118,7 @@ Sandhurst; Blues and Royals; deployment to Afghanistan
 Harry passed the Regular Commissions Board (RCB) in September 2004 and entered the Royal Military Academy Sandhurst on 8 May 2005, where he was known as Officer Cadet Wales and joined Alamein Company.
 In 2006, it was announced that Harry's unit was scheduled to be deployed to Iraq the following year.
 In April 2006, the Ministry of Defence stated that Harry would be shielded from the front line if his unit went to war, with a spokeswoman noting that he was expected to "undertake the fullest range of deployments", but that his role required monitoring because "his overt presence might attract additional attention" that could endanger him or those he commanded.
+Defence Secretary John Reid argued that he should be allowed to serve on the front line.
 Harry agreed, saying, "If they said 'no, you can't go front line'
 Harry completed the Troop Leaders' Course in October 2006 and rejoined his regiment in Windsor, where he was put in charge of a troop of 11 soldiers and four Scimitar reconnaissance vehicles.
 On 22 February 2007, the Ministry of Defence and Clarence House jointly announced that Harry would be deployed with his regiment to Iraq as part of the 1st Mechanised Brigade of the 3rd Mechanised Division – a move supported by Harry, who had said he would leave the army if ordered to remain in safety while his regiment went to war.
@@ -138,10 +140,13 @@ Harry was awarded his Apache Flying Badge on 14 April 2011.
 In June 2011, Clarence House announced that Harry would be available for deployment in current operations in Afghanistan as an Apache helicopter pilot.
 The final decision rested with the Ministry of Defence's senior commanders, principally the Chief of the Defence Staff, in consultation with the wishes of Harry, the Prince of Wales, and the Queen.
 In October 2011, Harry was transferred to a United States military base in California to complete his helicopter gunship training.
+This final phase included live-fire training and "environmental and judgment training" at naval and air force facilities in California and Arizona.
 While training in Southern California, Harry also spent time in San Diego.
 On 7 September 2012, Harry arrived at Camp Bastion in southern Afghanistan as part of the 100-strong 662 Squadron, 3 Regiment, Army Air Corps, to begin a four-month combat tour as a co-pilot and gunner for an Apache helicopter.
+On 10 September, within days of his arrival, it was reported that the Taliban had threatened his life.
 On 18 September, Harry was moved to a safe location after a Taliban attack on Camp Bastion that killed two US marines.
 Defence Secretary Philip Hammond stated that "additional security arrangements" had been put in place because Harry could be a potential target, but added that he would face "the same risk as any other Apache pilot" while in combat.
+He came and went, and you never would have known he was there" and, "The only thing special we did for him was we had a place identified as a safe house in case the base came under attack."
 On 21 January 2013, it was announced that Harry was returning from a 20-week deployment in Afghanistan.
 Harry compared operating the Apache's weapons systems in Afghanistan to playing video games.
 Harry later revealed in his 2023 memoir Spare that he flew on six missions that resulted in him killing 25 Taliban members, writing that he felt he had been trained not to view them as "people" but as "chess pieces" removed from the board.
@@ -163,6 +168,7 @@ Secondment to Australian Defence Force
 On 17 March 2015, Kensington Palace announced that Harry would leave the Armed Forces in June.
 On 6 April 2015, Harry reported for duty to Australia's Chief of the Defence Force, Air Chief Marshal Mark Binskin, at the Royal Military College, Duntroon, in Canberra.
 Harry flew to Darwin later that day to begin his month-long secondment to the ADF's 1st Brigade.
+He also joined SASR for live-fire shooting exercises with numerous Special Forces weapons at a variety of ranges.
 Harry completed an insertion-training exercise using a rigid-hull inflatable boat.
 He also spent time flying over Sydney as co-pilot of an Army Black Hawk helicopter and participated in counter-terrorism training in Sydney Harbour with Royal Australian Navy clearance divers.
 Harry's attachment with the ADF ended on 8 May 2015, and on 19 June 2015 he resigned his short service commission.
@@ -198,6 +204,7 @@ The Duke and Duchess initially lived at Nottingham Cottage in London, within the
 The couple considered settling in the 21-room Apartment 1 at Kensington Palace, but instead moved to Frogmore Cottage in the Home Park of Windsor Castle, which Queen Elizabeth II had recently gifted to them.
 The Crown Estate refurbished the cottage at a cost of £2.4 million, paid from the Sovereign Grant, with the Duke later reimbursing expenses beyond restoration and ordinary maintenance, part of which was offset against rental payments due at the time.
 On 6 May 2019, the Duke and Duchess's son, Archie, was born.
+Their office was moved to Buckingham Palace and officially closed on 31 March 2020 when the Sussexes ceased "undertaking official engagements in support of the Queen".
 The following month, the Duchess suffered a miscarriage.
 The Duke and Duchess have owned a Labrador named Pula and two Beagles named Guy and Mamma Mia.
 In 2017, Harry stated that he had "five or six" godchildren, some of whom later attended his wedding.
@@ -206,8 +213,10 @@ Health
 In May 1988, Harry underwent a surgery for a minor hernia.
 In his memoir Spare, Harry states that he took cocaine at the age of 17.
 In 2002, it was reported that, with Charles's encouragement, Harry had visited a drug-rehabilitation unit to speak with recovering drug addicts after it emerged that he had been smoking cannabis and drinking at his father's Highgrove House and at a local pub in the summer of 2001.
+He adds in the memoir that he smoked cannabis at Eton and in the gardens Kensington Palace, though he later told a court that "he never smoked in  father's house".
 In 2017, during an appearance on Bryony Gordon's podcast Mad World, Harry said that, with the support of his brother, he had sought counselling years after his mother's death.
 He stated that he had struggled with aggression, experienced anxiety during royal engagements, and had been "very close to a complete breakdown on numerous occasions".
+He also said that what he experienced after his mother's death "was very much" post-traumatic stress disorder (PTSD).
 In his mental-health documentary, The Me You Can't See which premiered in 2021, Harry said that he had undergone four years of therapy to address his mental-health difficulties, having been encouraged to do so by his future wife after they began dating.
 In his 2023 memoir, Harry described himself as an agoraphobe.
 Political views
@@ -239,14 +248,15 @@ Public life
 At the age of 21, Harry was appointed a Counsellor of State and began his duties in that capacity.
 The Queen granted Harry and William their own royal household on 6 January 2009.
 Previously, William and Harry's affairs had been handled by their father's office at Clarence House in central London.
+The new household released a statement announcing they had established their own office at nearby St James's Palace to look after their public, military and charitable activities.
 In March 2012, Harry led an official visit to Belize as part of the Queen's Diamond Jubilee celebrations.
 Harry also played tambourine and took part in the music video for the song "Sing", which was released in May 2012 to commemorate the Diamond Jubilee.
-It included engagements in Washington, DC, Colorado, New York, New Jersey, and Connecticut.
 In Italy, Harry attended commemorations of the 70th anniversary of the Monte Cassino battles, in which Polish, Commonwealth and British troops fought.
 He opened the Field of Remembrance at Westminster Abbey on 6 November 2014, a task usually performed by Prince Philip.
 Before reporting for duty to the Australian Defence Force (ADF), Harry visited the Australian War Memorial in Canberra on 6 April 2015.
 In October 2015, Harry carried out a day of engagements in the US.
 Harry, as patron of Sentebale, travelled to Lesotho to attend the opening of the Mamohato Children's Centre in November 2015.
+He visited Cape Town, where he presented the insignia of the Order of the Companions of Honour to the Archbishop on behalf of the Queen.
 Harry also played the Sentebale Royal Salute Polo Cup, at Val de Vie Estate in Cape Town, fundraising for Sentebale.
 Also in that month, Harry became a patron of Walk of America, a campaign which brings together a number of veterans who will take part in a 1,000-mile expedition across the US in mid-2018.
 The Prince was appointed the president of The Queen's Commonwealth Trust, which focuses on projects involving children and welfare of prisoners, in April.
@@ -272,10 +282,12 @@ In April 2021, Harry returned to the UK to attend the funeral of his grandfather
 Meghan did not attend due to her pregnancy.
 On 8 September, while Harry and Meghan were in London preparing to attend a charity event, Queen Elizabeth II died at Balmoral Castle in Scotland, and they remained in the United Kingdom for her funeral.
 Harry and Meghan visited Nigeria in May 2024 to honour the work of the Invictus Games.
+In August that year, the couple visited Colombia at the invitation of the country's vice-president, Francia Márquez.
 Harry visited the Superhumans Center in Lviv, Ukraine, in April 2025 after an invitation from its chief executive.
 On 3 November 2025, Harry's office announced that he would travel to Toronto, Canada, for a series of events ahead of Remembrance Day.
 He and Meghan visited Jordan in February 2026 with the Director-General of the World Health Organization (WHO) Tedros Adhanom Ghebreyesus.
 In April 2026, Harry and Meghan undertook a four‐day visit to Australia.
+Australian police later announced that they would be conducting an operation to ensure safety during parts of the couple's tour.
 Later that month, Harry made another visit to Kyiv, where he used a speech at the Kyiv Security Forum to urge the U.S. to take a stronger role in supporting Ukraine and said to Russian President Vladimir Putin that "there is still a moment – now – to stop this war."
 In response to the remarks, U.S. president Donald Trump stated, "I know one thing, Prince Harry is not speaking for the UK, that's for sure".
 
@@ -291,6 +303,7 @@ Mr Justice Swift also reacted to the Duke's legal team sending a copy of the rul
 In July 2022, Mr Justice Swift granted permission for part of Harry's claim to proceed for a judicial review.
 Harry filed a lawsuit against the Home Office and the Metropolitan Police in August 2022, challenging the decision by RAVEC from January 2022 which stated that State security could not be made available to private individuals even if they wished to pay for it themselves.
 In February 2023, a High Court judge ruled that the second case should be thrown out; however, the decision was later appealed by Harry's legal team.
+He lost the legal challenge in May 2023, meaning that he will not be allowed to make private payments for police protection.
 In June 2023, a Freedom of Information request revealed that Harry's legal fight with the Home Office had cost £502,236, with £492,000 covered by the state and the remaining £10,000 covered by Harry.
 In February 2024, the High Court ruled against Harry in his case against the Home Office and upheld the decision by RAVEC, stating that there had been no unlawfulness in the decision-making process for his security arrangements.
 It was also revealed that during the proceedings Harry had leaked information via email to "a partner of Schillings" and to Johnny Mercer, for which he apologised to the court.
@@ -298,7 +311,6 @@ In December 2025, it was announced that, for the first time since April 2019, RA
 Civilian career and investments
 
 In summer 2019, before announcing their decision to step back in January 2020, Harry and his wife were involved in talks with Jeffrey Katzenberg, the founder of the now-defunct streaming platform Quibi, over a possible role in the service without gaining personal profits, but they eventually decided against joining the project.
-In September 2019, it was reported that the couple had hired New York-based PR firm Sunshine Sachs, which had been working with them on intermittent projects since 2017.
 Between 2019 and 2020, Harry and Meghan contributed to the book Finding Freedom through a third-party source.
 Despite initially denying their involvement with the book, their contributions to the book became apparent during Meghan's court case against Associated Newspapers who were trying to use the book in their defense.
 In June 2020, they signed with the Harry Walker Agency, owned by media company Endeavor, to conduct paid public speaking engagements.
@@ -343,6 +355,8 @@ In June 2020, the Duke and Duchess backed the Stop Hate for Profit campaign and 
 In April 2021, Harry and Meghan were announced as campaign chairs for Vax Live: The Concert to Reunite the World, an event organised by Global Citizen to increase access to COVID-19 vaccinations.
 Later that month, he narrated "Hope Starts Here", a special video rereleased by African Parks to mark the Earth Day in which he urged organisations and communities to preserve biodiversity and paid tribute to his grandfather Prince Philip for his efforts as a conservationist.
 Like his mother, Harry has worked with the HALO Trust, an organisation that removes debris—particularly landmines—left behind by war.
+In April 2017, he hosted the Landmine Free 2025 reception at Kensington Palace, during which the UK government announced an increase in its financial support for de-mining efforts.
+In September 2019, he walked through a de-mining site in Angola, the same country visited by his mother 22 years earlier.
 In June 2021, after ten members of the trust were killed by an armed group at a mine clearance camp in Afghanistan, Harry issued a statement saying the attack "was nothing less than an act of barbarism".
 In the same month and ahead of the 2021 G20 Rome summit, Harry and his wife penned an open letter together with the Director-General of the World Health Organization, Tedros Adhanom Ghebreyesus, asking the G20 leaders to expedite efforts for the global distribution of COVID-19 vaccines.
 In April 2022 and in a video featuring Rhys Darby and Dave Fane on Māori Television, Harry launched an eco-travel campaign through his non-profit Travalyst, encouraging people to travel sustainably.
@@ -351,12 +365,14 @@ In the following month, he and Meghan joined a coalition of public figures, scie
 Sport
 
 Harry has enjoyed playing sports, such as competitive polo, skiing, and motocross.
+Like his brother and father, he has participated in polo matches to raise money for charitable causes.
 Harry is also a keen Rugby football fan and supported England's bid to host rugby union's 2015 Rugby World Cup, and presented the trophy at rugby league's 2019 Challenge Cup finals.
 In 2004 Harry trained as a Rugby Development Officer for the Rugby Football Union and coached students in schools to encourage them to learn the sport.
 He had served as the RFU's vice-royal patron since 2010, supporting the Queen as patron.
 In 2012 Harry launched Coach Core alongside his brother and sister-in-law, the Duke and Duchess of Cambridge.
 In January 2017, Harry visited the Running Charity and its partner Depaul UK to highlight the role of sport in helping homeless and vulnerable people.
 In June 2019, the Duke was present at the launch of Made by Sport, a charity coalition set to raise money to boost sport in disadvantaged communities.
+In his statement, he lent his support to the charity by arguing that its role in bringing sport into the life of disadvantaged people would save "hundreds of millions of pounds" towards treating the issues among young people.
 Sussex Royal and Archewell
 
 In June 2019, it was announced that the Duke and Duchess of Sussex would split from The Royal Foundation and establish their own charity foundation by the end of 2019.
@@ -391,6 +407,7 @@ Royal aides suggested Clarence House would contact the Press Complaints Commissi
 St James's Palace confirmed that Harry was in the photographs, saying that he was essentially a victim whose privacy had been invaded and contacted the PCC upon hearing that a number of British newspapers were considering publishing the photographs.
 At a 2014 event in England, Foo Fighters drummer Taylor Hawkins was slapped by Harry after he had told him "I can't wake up, so tired", with Harry subsequently stating "You awake now?"
 Hawkins added "I got slapped in the face by the prince.
+But in the moment, I was like, 'You fucking slapped me, dude.'
 "
 
 
@@ -446,6 +463,8 @@ In July 2023, the judge ruled that part of Harry's case involving allegations of
 In May 2024, Mr Justice Fancourt refused Harry the permission to include claims against Rupert Murdoch, expand his case's scope back to 1994 and 1995 to cover allegations involving his mother or to add new allegations from 2016 involving his then-girlfriend Meghan.
 In October 2024, the judge announced that the two sides should either settle or go to trial in January 2025 and refused to let Harry's team include allegations that bugs were placed in rooms and cars, and trackers placed on vehicles as "no particulars whatsoever of such allegations" were provided.
 In January 2025, the two parties settled with NGN paying more than £10 million in pay outs and legal fees in the settlements involving both Harry and former Labour deputy leader Tom Watson.
+NGN made a "full and unequivocal apology" for "serious intrusion" by The Sun between 1996 and 2011, for "phone hacking, surveillance and misuse of private information by journalists and private investigators instructed by them at the News of the World" and the intrusion into the life of his mother, and admitted "incidents of unlawful activity" were carried out by private investigators working for the newspaper, but "not by journalists".
+The BBC reported on the "scrapped case", highlighting NGN's statement which said that the settlement agreement "drew a line under the past" and that they rejected the claims that would have been made in court about a corporate cover-up.
 Lawyers for the Mirror denied accessing Harry's voicemail messages and other allegations, but admitted to instructing "private investigators to unlawfully obtain private information" about Harry on a single occasion that involved him visiting Chinawhite.
 In January 2023, a High Court judge ruled that Harry's lawsuit against Mirror Group Newspapers (MGN) as well as other similar lawsuits against the publisher would go to trial in May 2023.
 At the beginning of trial, MGN apologised for one instance of unlawful information gathering against Harry and added that his legal challenge "warrants compensation".
@@ -459,6 +478,7 @@ Other cases
 
 In October 2013, Jo Brand appeared on Have I Got News for You and while talking about Prince George's christening she said: "George's godparents include Hugh van Cutsem ...
 I presume that's a nickname as in Hugh van cuts 'em and Harry then snorts 'em."
+Representatives of Kensington Palace contacted the BBC after the programme aired, pointing out the error and the implications of the joke.
 The BBC wrote to Kensington Palace apologising for the "factual inaccuracy" as George's godfather was William van Cutsem, but it did not apologise for the comment itself as it was part of the show's "irreverent humor".
 In February 2014, a judge sentenced the convicted criminal Ashraf Islam to three years in prison, as he had plotted to murder Harry and had given it "considerable thought" due to his belief that Harry had "a moral guilt" since he was in the army.
 In June 2019, two members of the neo-Nazi group Sonnenkrieg Division were jailed for eighteen months and four years, respectively, for sharing propaganda posters among which was one that labelled Harry as a "race traitor" with a gun pointed at his head.
@@ -470,7 +490,6 @@ In April 2020, the Duke and Duchess announced that they would no longer cooperat
 In June 2020, it was reported that Harry's lawyers had issued a 'letter before action', threatening to sue the Sun and Dan Wootton, based on the allegations that they had paid money to associates of palace officials to secure their stories.
 It was alleged that the Sun had made two payments amounting to £4,000 to the partner of a royal official in relation to stories published in June and July 2019 which detailed the nannying and god-parenting arrangements for Harry and Meghan's son Archie.
 Wootton has been credited with breaking the story about Megxit and Harry and Meghan's initial plans for moving to Canada in the Sun on 8 January 2020, which prompted the couple to issue an announcement within hours, confirming their plans for stepping back from their royal duties.
-Sources close to the couple later spoke to The New York Times, stating that they "felt forced to disclose their plans prematurely" as they learned about the Sun's intentions to publish the story.
 "
 
 
@@ -530,7 +549,7 @@ In August 2018, the Royal Canadian Legion granted him the 2018 Founders Award fo
 In July 2021, Harry and Meghan were among people who were selected by UK-based charity Population Matters to receive the Change Champions Award for their decision to have only two children and help with maintaining a smaller and more sustainable population.
 In February 2022, Harry and Meghan were selected to receive the NAACP's President's Award for their work on causes related to social justice and equity.
 Harry was inducted into the Living Legends of Aviation in January 2024.
-In October 2025, he and his wife received the Humanitarians of the Year award at Project Healthy Minds' annual gala in New York City in recognition of their commitment to mental health support.
+He received the Pat Tillman Award for Service during the 2024 ESPY Awards ceremony, recognising his service in the British Armed Forces and work with the Invictus Games, despite Tillman's mother believing that the award should have gone to "more fitting" recipients.
 Arms
 
 Ancestry
@@ -547,6 +566,8 @@ In June 2013, BritainsDNA announced that genealogical DNA tests on two of Harry 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -562,39 +583,9 @@ In June 2013, BritainsDNA announced that genealogical DNA tests on two of Harry 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -609,6 +600,23 @@ In June 2013, BritainsDNA announced that genealogical DNA tests on two of Harry 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -626,6 +634,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -693,29 +716,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -724,6 +739,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -736,6 +759,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -744,17 +769,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -782,6 +809,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -797,152 +908,176 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (6bebb8f8-cebf-44ae-bf74-4b3608ee017a)
- Call ID: 6bebb8f8-cebf-44ae-bf74-4b3608ee017a
+  AssignClass (a5c530f8-4445-4343-84b9-86c193adce0f)
+ Call ID: a5c530f8-4445-4343-84b9-86c193adce0f
   Args:
+    source: Prince_Harry
     type: :Man
-    source: :Prince_Harry
-  AssignClass (58790d1c-a4e1-42ec-820e-2893dedcd74d)
- Call ID: 58790d1c-a4e1-42ec-820e-2893dedcd74d
+  AssignClass (6f89e744-98c5-4f56-8f8a-0638eabcdfe0)
+ Call ID: 6f89e744-98c5-4f56-8f8a-0638eabcdfe0
   Args:
+    source: Prince_Harry
     type: :Person
-    source: :Prince_Harry
-  AssignClass (66b47f25-53fc-44c5-9ef7-4ece041a1bde)
- Call ID: 66b47f25-53fc-44c5-9ef7-4ece041a1bde
+  AddLiteral (37d21a45-e9b1-4732-83b8-9f6a09191498)
+ Call ID: 37d21a45-e9b1-4732-83b8-9f6a09191498
   Args:
-    type: :Man
-    source: :King_Charles_III
-  AssignClass (5ed25f2a-88df-42ef-8eab-839dfc31512f)
- Call ID: 5ed25f2a-88df-42ef-8eab-839dfc31512f
-  Args:
-    type: :Person
-    source: :King_Charles_III
-  AssignClass (91177547-834e-4582-9508-ed1caeac2fb1)
- Call ID: 91177547-834e-4582-9508-ed1caeac2fb1
-  Args:
-    type: :Woman
-    source: :Diana_Princess_of_Wales
-  AssignClass (687e627b-9a2d-42e1-a226-01b54f433eb0)
- Call ID: 687e627b-9a2d-42e1-a226-01b54f433eb0
-  Args:
-    type: :Person
-    source: :Diana_Princess_of_Wales
-  AssignClass (f6fa44b4-6de0-4af7-881d-d235279e36fa)
- Call ID: f6fa44b4-6de0-4af7-881d-d235279e36fa
-  Args:
-    type: :Man
-    source: :William_Prince_of_Wales
-  AssignClass (de42c7a8-35b8-4bc7-b7d2-75a8c554126f)
- Call ID: de42c7a8-35b8-4bc7-b7d2-75a8c554126f
-  Args:
-    type: :Person
-    source: :William_Prince_of_Wales
-  AssignClass (e44c4c6b-8214-4d75-8344-e7bd2db4bede)
- Call ID: e44c4c6b-8214-4d75-8344-e7bd2db4bede
-  Args:
-    type: :Woman
-    source: :Meghan_Markle
-  AssignClass (d7deaef8-a9cd-43b8-b226-196ffbf125ed)
- Call ID: d7deaef8-a9cd-43b8-b226-196ffbf125ed
-  Args:
-    type: :Person
-    source: :Meghan_Markle
-  AssignClass (0c164cc9-3cee-4356-a5ee-34d373dbd0a6)
- Call ID: 0c164cc9-3cee-4356-a5ee-34d373dbd0a6
-  Args:
-    type: :Man
-    source: :Archie
-  AssignClass (2b348da2-8bfe-4b07-b973-b240ce2dae29)
- Call ID: 2b348da2-8bfe-4b07-b973-b240ce2dae29
-  Args:
-    type: :Person
-    source: :Archie
-  AssignClass (9d34cce3-a09b-4d23-afb8-a68d854a6f09)
- Call ID: 9d34cce3-a09b-4d23-afb8-a68d854a6f09
-  Args:
-    type: :Woman
-    source: :Lilibet
-  AssignClass (ae7f174e-950d-4744-9fb4-d9d80f34b8a6)
- Call ID: ae7f174e-950d-4744-9fb4-d9d80f34b8a6
-  Args:
-    type: :Person
-    source: :Lilibet
-  AddLiteral (80160657-cc02-4b19-9ceb-f7d59b5df113)
- Call ID: 80160657-cc02-4b19-9ceb-f7d59b5df113
-  Args:
-    relation: :knownAs
-    literal_value: Henry Charles Albert David
-    literal_type: xsd:string
-    source: :Prince_Harry
-  AddLiteral (6c00f0d0-de33-4816-b99d-91dbb54adce5)
- Call ID: 6c00f0d0-de33-4816-b99d-91dbb54adce5
-  Args:
-    source: :Prince_Harry
-    literal_value: Harry
-    literal_type: xsd:string
-    relation: :knownAs
-  AddLiteral (a5d65f08-f5cd-4de0-9fe8-58a0f480669d)
- Call ID: a5d65f08-f5cd-4de0-9fe8-58a0f480669d
-  Args:
-    source: :Prince_Harry
+    source: Prince_Harry
+    relation: :hasBirthYear
     literal_type: xsd:integer
     literal_value: 1984
-    relation: :hasBirthYear
-  AddTriple (70e504a8-e4ee-4afc-9dc2-a800d7f085f2)
- Call ID: 70e504a8-e4ee-4afc-9dc2-a800d7f085f2
+  AssignClass (7a765cd8-db70-4785-a2f5-13e1b7d8af51)
+ Call ID: 7a765cd8-db70-4785-a2f5-13e1b7d8af51
   Args:
-    source: :Prince_Harry
+    source: King_Charles_III
+    type: :Man
+  AssignClass (65ae3aa2-5d18-43d3-aec9-05d14b410732)
+ Call ID: 65ae3aa2-5d18-43d3-aec9-05d14b410732
+  Args:
+    type: :Person
+    source: King_Charles_III
+  AssignClass (660b6f9b-a065-4741-8e14-d8fdeaf76841)
+ Call ID: 660b6f9b-a065-4741-8e14-d8fdeaf76841
+  Args:
+    source: Diana_Princess_of_Wales
+    type: :Woman
+  AssignClass (30e3dc03-0c61-44c7-80aa-fd9158ca6200)
+ Call ID: 30e3dc03-0c61-44c7-80aa-fd9158ca6200
+  Args:
+    type: :Person
+    source: Diana_Princess_of_Wales
+  AddTriple (9e51420d-046f-4065-994f-6ee02d507efd)
+ Call ID: 9e51420d-046f-4065-994f-6ee02d507efd
+  Args:
     relation: :hasFather
-    target: :King_Charles_III
-  AddTriple (12dccfad-2aac-4fc8-ad45-0837ec109b4e)
- Call ID: 12dccfad-2aac-4fc8-ad45-0837ec109b4e
+    source: Prince_Harry
+    target: King_Charles_III
+  AddTriple (1243139d-f258-4165-b137-8fbcc4806489)
+ Call ID: 1243139d-f258-4165-b137-8fbcc4806489
   Args:
-    source: :Prince_Harry
+    source: Prince_Harry
     relation: :hasMother
-    target: :Diana_Princess_of_Wales
-  AddTriple (51b077a1-a667-469f-84c3-4726692064c9)
- Call ID: 51b077a1-a667-469f-84c3-4726692064c9
+    target: Diana_Princess_of_Wales
+  AssignClass (d0050bd0-e620-4443-a759-2be32b1ab0aa)
+ Call ID: d0050bd0-e620-4443-a759-2be32b1ab0aa
   Args:
-    source: :Prince_Harry
-    relation: :hasBrother
-    target: :William_Prince_of_Wales
-  AddTriple (5eb68753-7862-4d87-8d3f-0e8e1026319e)
- Call ID: 5eb68753-7862-4d87-8d3f-0e8e1026319e
+    type: :Man
+    source: William_Prince_of_Wales
+  AssignClass (646e92a6-d84a-4950-b889-6e3ac6ed3b8d)
+ Call ID: 646e92a6-d84a-4950-b889-6e3ac6ed3b8d
   Args:
-    source: :Prince_Harry
-    relation: :hasMarriageYear
-    target: :Meghan_Markle
-  AddLiteral (13cdaadc-d5ae-4526-bddf-86c9f3318e1b)
- Call ID: 13cdaadc-d5ae-4526-bddf-86c9f3318e1b
+    source: William_Prince_of_Wales
+    type: :Person
+  AddTriple (f67194e2-c0f6-4d68-9203-bfddd8896de5)
+ Call ID: f67194e2-c0f6-4d68-9203-bfddd8896de5
   Args:
-    relation: :hasMarriageYear
-    source: :Prince_Harry
+    relation: :isBrotherOf
+    source: Prince_Harry
+    target: William_Prince_of_Wales
+  AddTriple (82d8eb01-629f-4b1b-bf3e-f37619295aa2)
+ Call ID: 82d8eb01-629f-4b1b-bf3e-f37619295aa2
+  Args:
+    target: Prince_Harry
+    relation: :isBrotherOf
+    source: William_Prince_of_Wales
+  AssignClass (4ab1e793-28d1-449e-bf2e-847a2ac89fcd)
+ Call ID: 4ab1e793-28d1-449e-bf2e-847a2ac89fcd
+  Args:
+    type: :Woman
+    source: Meghan_Markle
+  AssignClass (eafb23c8-9674-4c5d-bff8-5c407e5877c2)
+ Call ID: eafb23c8-9674-4c5d-bff8-5c407e5877c2
+  Args:
+    source: Meghan_Markle
+    type: :Person
+  AddTriple (fb910f22-ce0d-4a9b-8de0-77171e6b6220)
+ Call ID: fb910f22-ce0d-4a9b-8de0-77171e6b6220
+  Args:
+    target: Meghan_Markle
+    relation: :hasRelation
+    source: Prince_Harry
+  AddLiteral (2cb0db7d-6c45-4f81-b8ee-9029b0c00cd6)
+ Call ID: 2cb0db7d-6c45-4f81-b8ee-9029b0c00cd6
+  Args:
     literal_value: 2018
+    relation: :hasMarriageYear
+    source: Prince_Harry
     literal_type: xsd:integer
-  AddTriple (1d6143d4-1d8d-48e6-9e27-8e2820a3f9ad)
- Call ID: 1d6143d4-1d8d-48e6-9e27-8e2820a3f9ad
+  AssignClass (e2928f8e-dd9b-4fda-b313-fc7eef80e34a)
+ Call ID: e2928f8e-dd9b-4fda-b313-fc7eef80e34a
   Args:
-    source: :Prince_Harry
-    relation: :hasChild
-    target: :Archie
-  AddTriple (305201b8-1634-4b75-b0f8-9b134a830c04)
- Call ID: 305201b8-1634-4b75-b0f8-9b134a830c04
+    source: Archie_Sussex
+    type: :Man
+  AssignClass (2de01354-cd4f-46d7-9f74-6a225713134b)
+ Call ID: 2de01354-cd4f-46d7-9f74-6a225713134b
   Args:
-    source: :Archie
-    target: :Meghan_Markle
-    relation: :hasMother
-  AddTriple (c200f07b-9589-4c4c-b8e5-1a5ebd4b788c)
- Call ID: c200f07b-9589-4c4c-b8e5-1a5ebd4b788c
+    type: :Person
+    source: Archie_Sussex
+  AddTriple (17fa5dad-ca50-47cd-9dc6-7d810980e8f3)
+ Call ID: 17fa5dad-ca50-47cd-9dc6-7d810980e8f3
   Args:
-    source: :Prince_Harry
-    target: :Lilibet
-    relation: :hasChild
-  AddTriple (1e39b47e-73c3-4759-b05a-63bda4fd1132)
- Call ID: 1e39b47e-73c3-4759-b05a-63bda4fd1132
+    target: Prince_Harry
+    source: Archie_Sussex
+    relation: :hasFather
+  AddTriple (d4cd8cab-8893-460c-a12b-ad4a7b419a8e)
+ Call ID: d4cd8cab-8893-460c-a12b-ad4a7b419a8e
   Args:
     relation: :hasMother
-    target: :Meghan_Markle
-    source: :Lilibet
-  Finish (ba491f5b-c08e-4d72-874b-21ae161dec5c)
- Call ID: ba491f5b-c08e-4d72-874b-21ae161dec5c
+    source: Archie_Sussex
+    target: Meghan_Markle
+  AssignClass (958607d0-52ac-46db-be3b-8ee4c9f34cde)
+ Call ID: 958607d0-52ac-46db-be3b-8ee4c9f34cde
+  Args:
+    source: Lilibet_Sussex
+    type: :Woman
+  AssignClass (3069f519-a200-4611-bba5-107e97697dfe)
+ Call ID: 3069f519-a200-4611-bba5-107e97697dfe
+  Args:
+    source: Lilibet_Sussex
+    type: :Person
+  AddTriple (fd27b469-596d-40ad-8204-6522a9e68628)
+ Call ID: fd27b469-596d-40ad-8204-6522a9e68628
+  Args:
+    relation: :hasFather
+    source: Lilibet_Sussex
+    target: Prince_Harry
+  AddTriple (dfdad3ff-c3b1-4b74-bb47-cb1aef89bfeb)
+ Call ID: dfdad3ff-c3b1-4b74-bb47-cb1aef89bfeb
+  Args:
+    target: Meghan_Markle
+    relation: :hasMother
+    source: Lilibet_Sussex
+  AssignClass (8fa10f0b-544c-4d04-b992-02530406b06c)
+ Call ID: 8fa10f0b-544c-4d04-b992-02530406b06c
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (aa76c3dd-a85a-4660-b48b-954d86141aa9)
+ Call ID: aa76c3dd-a85a-4660-b48b-954d86141aa9
+  Args:
+    type: :Person
+    source: Queen_Elizabeth_II
+  AddTriple (bbd0d125-f2db-4670-bbf0-0142305c8f36)
+ Call ID: bbd0d125-f2db-4670-bbf0-0142305c8f36
+  Args:
+    target: Queen_Elizabeth_II
+    source: King_Charles_III
+    relation: :hasMother
+  AssignClass (db5e6ff8-dd4b-4125-aa4f-c272e24651e2)
+ Call ID: db5e6ff8-dd4b-4125-aa4f-c272e24651e2
+  Args:
+    source: Prince_Philip_Duke_of_Edinburgh
+    type: :Man
+  AssignClass (299c5c92-1f58-47da-a95c-2ce834f36ef8)
+ Call ID: 299c5c92-1f58-47da-a95c-2ce834f36ef8
+  Args:
+    source: Prince_Philip_Duke_of_Edinburgh
+    type: :Person
+  AddTriple (3466cd11-194e-42ab-9051-8243d1d64664)
+ Call ID: 3466cd11-194e-42ab-9051-8243d1d64664
+  Args:
+    relation: :hasFather
+    source: King_Charles_III
+    target: Prince_Philip_Duke_of_Edinburgh
+  Finish (ad911461-8e43-4898-92cd-b159f6642f0e)
+ Call ID: ad911461-8e43-4898-92cd-b159f6642f0e
   Args:

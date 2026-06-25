@@ -2,35 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Lady_Margarita_Armstrong-Jones a :Person,
-        :Woman ;
-    :hasBirthYear 2002 ;
-    :hasFather data:David_Armstrong-Jones ;
-    :hasMother data:Serena_Stanhope ;
-    :knownAs data:Margarita_Elizabeth_Rose_Alleyne_Armstrong-Jones .
-
-data:Lady_Sarah_Chatto a :Person,
-        :Woman ;
-    :isSisterOf data:David_Armstrong-Jones .
-
-data:Antony_Armstrong-Jones a :Man,
-        :Person .
-
-data:Charles_Stanhope a :Man,
-        :Person .
-
-data:Margarita_Elizabeth_Rose_Alleyne_Armstrong-Jones a :Person,
-        :Woman .
-
-data:Princess_Margaret a :Person,
-        :Woman .
-
-data:Serena_Stanhope a :Person,
-        :Woman ;
-    :hasFather data:Charles_Stanhope .
-
-data:David_Armstrong-Jones a :Man,
+data:Enrico_Eugenio a :Man,
         :Person ;
-    :hasFather data:Antony_Armstrong-Jones ;
-    :hasMother data:Princess_Margaret .
+    :hasChild data:Step_son_of_Maria_Cristina .
+
+data:Maria_Cristina_of_Spain a :Person,
+        :Woman ;
+    :hasBirthYear 1911 ;
+    :hasDeathYear 1996 ;
+    :isAuntOf data:Juan_Carlos_I ;
+    :isDaughterOf data:Alfonso_XIII_of_Spain,
+        data:Victoria_Eugenie_of_Battenberg ;
+    :isSiblingOf data:Alfonso_son_of_Alfonso_XIII,
+        data:Beatriz_of_Spain,
+        data:Gonzalo_son_of_Alfonso_XIII .
+
+data:Noemi_Rosa_de_Alcorta_y_Garcia_Mansilla a :Person,
+        :Woman ;
+    :hasChild data:Step_son_of_Maria_Cristina .
+
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person .
+
+data:Alfonso_son_of_Alfonso_XIII a :Man,
+        :Person .
+
+data:Beatriz_of_Spain a :Person,
+        :Woman .
+
+data:Gonzalo_son_of_Alfonso_XIII a :Man,
+        :Person .
+
+data:Juan_Carlos_I a :Man,
+        :Person .
+
+data:Victoria_Eugenie_of_Battenberg a :Person,
+        :Woman .
+
+data:Step_son_of_Maria_Cristina a :Man,
+        :Person .
 

@@ -2,29 +2,43 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Don_Marco_Alfonso_Torlonia a :Man ;
-    :hasBirthYear "1937"^^xsd:string ;
-    :hasDeathYear "2014"^^xsd:string ;
-    :hasFather data:Alessandro_Torlonia ;
-    :hasMother data:Infanta_Beatriz_of_Spain ;
-    :hasSister data:Olimpia ;
-    :isUncleOf data:Princess_Sibilla_of_Luxembourg .
+data:Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :hasBirthYear 1896 ;
+    :hasDeathYear 1989 ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1924 ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasRelation data:Marie_Alexandra_of_Baden ;
+    :isSiblingOf data:Philipp_of_Hesse .
 
-data:King_Juan_Carlos_I_of_Spain a :Man .
+data:Frederick_Charles_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1868 ;
+    :hasDeathYear 1940 .
 
-data:Alessandro_Torlonia a :Ancestor,
-        :Man .
-
-data:Infanta_Beatriz_of_Spain a :Ancestor,
+data:Margaret_of_Prussia a :Ancestor,
+        :Person,
         :Woman ;
-    :hasFather data:King_Alfonso_XIII_of_Spain .
+    :hasBirthYear 1872 ;
+    :hasDeathYear 1954 .
 
-data:King_Alfonso_XIII_of_Spain a :Ancestor,
-        :Man .
+data:Marie_Alexandra_of_Baden a :Person,
+        :Woman ;
+    :hasBirthYear 1902 ;
+    :hasDeathYear 1944 ;
+    :hasFather data:Maximilian_of_Baden ;
+    :hasMother data:Marie_Louise_of_Hanover .
 
-data:Princess_Sibilla_of_Luxembourg a :Woman ;
-    :hasMother data:Olimpia .
-
-data:Olimpia a :Ancestor,
+data:Marie_Louise_of_Hanover a :Ancestor,
+        :Person,
         :Woman .
+
+data:Maximilian_of_Baden a :Ancestor,
+        :Man,
+        :Person .
+
+data:Philipp_of_Hesse a :Man,
+        :Person .
 

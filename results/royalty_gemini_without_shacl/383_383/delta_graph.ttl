@@ -2,32 +2,83 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Friedrich_Gunther_of_Schwarzburg a :Man,
+data:Alexis_Fruchaud a :Man,
         :Person ;
-    :hasFather data:Sizzo_of_Schwarzburg ;
-    :hasSister data:Marie_Antoinette_of_Schwarzburg .
+    :hasFather data:Jean_Henri_Fruchaud ;
+    :hasMother data:Tatiana_Radziwill .
 
-data:Sophie_Louise_of_Saxe-Weimar-Eisenach a :Person,
+data:Fabiola_Fruchaud a :Person,
         :Woman ;
-    :hasBirthYear 1911 ;
-    :hasDeathYear 1988 ;
-    :hasFather data:William_Ernest_of_Saxe-Weimar-Eisenach ;
-    :hasMarriageYear 1938 ;
-    :hasMother data:Feodora_of_Saxe-Meiningen .
+    :hasFather data:Jean_Henri_Fruchaud ;
+    :hasMother data:Tatiana_Radziwill .
 
-data:Feodora_of_Saxe-Meiningen a :Ancestor,
-        :Person,
-        :Woman .
+data:Lida_Lacey_Bloodgood a :Person,
+        :Woman ;
+    :hasMother data:Lida_Fleitmann_Bloodgood .
 
-data:Marie_Antoinette_of_Schwarzburg a :Person,
-        :Woman .
-
-data:Sizzo_of_Schwarzburg a :Ancestor,
-        :Man,
-        :Person ;
-    :hasDeathYear 1926 .
-
-data:William_Ernest_of_Saxe-Weimar-Eisenach a :Ancestor,
-        :Man,
+data:Raimondo_della_Torre_e_Tasso a :Man,
         :Person .
+
+data:Dominik_Rainer_Radziwill a :Man,
+        :Person ;
+    :hasFather data:Hieronim_Mikolaj_Radziwill ;
+    :hasMother data:Renata_of_Austria .
+
+data:Eugenie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasFather data:George_of_Greece_and_Denmark ;
+    :hasMother data:Marie_Bonaparte .
+
+data:Eunice_McCooey a :Person,
+        :Woman .
+
+data:George_I_of_Greece a :Man,
+        :Person .
+
+data:George_Radziwill a :Man,
+        :Person .
+
+data:George_of_Greece_and_Denmark a :Man,
+        :Person ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMother data:Olga_Constantinovna_of_Russia .
+
+data:Henri_Fruchaud a :Man,
+        :Person .
+
+data:Hieronim_Mikolaj_Radziwill a :Man,
+        :Person .
+
+data:Lida_Fleitmann_Bloodgood a :Person,
+        :Woman .
+
+data:Marie_Bonaparte a :Person,
+        :Woman ;
+    :hasFather data:Roland_Napoleon_Bonaparte ;
+    :hasMother data:Marie_Felix_Blanc .
+
+data:Marie_Felix_Blanc a :Person,
+        :Woman .
+
+data:Olga_Constantinovna_of_Russia a :Person,
+        :Woman .
+
+data:Renata_of_Austria a :Person,
+        :Woman .
+
+data:Roland_Napoleon_Bonaparte a :Man,
+        :Person .
+
+data:Jean_Henri_Fruchaud a :Man,
+        :Person ;
+    :hasFather data:Henri_Fruchaud ;
+    :hasMother data:Eunice_McCooey .
+
+data:Tatiana_Radziwill a :Person,
+        :Woman ;
+    :hasBirthYear 1939 ;
+    :hasBrother data:George_Radziwill ;
+    :hasDeathYear 2025 ;
+    :hasFather data:Dominik_Rainer_Radziwill ;
+    :hasMother data:Eugenie_of_Greece_and_Denmark .
 

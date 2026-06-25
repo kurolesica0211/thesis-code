@@ -2,24 +2,55 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:David_Chavchavadze a :Man,
-        :Person ;
-    :hasBirthYear 1924 ;
-    :hasDeathYear 2014 ;
-    :hasFather data:Prince_Paul_Chavchavadze ;
-    :hasMother data:Princess_Nina_Georgievna_of_Russia .
-
-data:Paul_George_Olkhovsky a :Man,
-        :Person ;
-    :hasBirthYear 1960 .
-
-data:Prince_Paul_Chavchavadze a :Man,
-        :Person ;
-    :hasBirthYear 1899 ;
-    :hasDeathYear 1971 .
-
-data:Princess_Nina_Georgievna_of_Russia a :Person,
+data:Adelaide_of_Saxe-Meiningen a :Person,
         :Woman ;
-    :hasBirthYear 1901 ;
-    :hasDeathYear 1974 .
+    :alsoKnownAs "Adelaide Erna Caroline Marie Elisabeth"^^xsd:string,
+        "Adelheid"^^xsd:string ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1971 ;
+    :hasFather data:Prince_Frederick_John_of_Saxe-Meiningen ;
+    :hasMarriageYear 1914 ;
+    :hasMother data:Countess_Adelaide_of_Lippe-Biesterfeld ;
+    :hasRelation data:Prince_Adalbert_of_Prussia ;
+    :isSiblingOf data:Prince_Bernard,
+        data:Prince_George .
+
+data:Prince_Henry_of_Bavaria a :Man,
+        :Person ;
+    :hasFather data:Ludwig_III_of_Bavaria .
+
+data:Countess_Adelaide_of_Lippe-Biesterfeld a :Person,
+        :Woman ;
+    :hasFather data:Ernst_Count_of_Lippe-Biesterfeld .
+
+data:Ernst_Count_of_Lippe-Biesterfeld a :Man,
+        :Person .
+
+data:Feodora_of_Hohenlohe-Langenburg a :Person,
+        :Woman .
+
+data:George_II_of_Saxe-Meiningen a :Man,
+        :Person .
+
+data:Kaiser_William_II_of_Germany a :Man,
+        :Person .
+
+data:Ludwig_III_of_Bavaria a :Man,
+        :Person .
+
+data:Prince_Adalbert_of_Prussia a :Man,
+        :Person ;
+    :hasFather data:Kaiser_William_II_of_Germany .
+
+data:Prince_Bernard a :Man,
+        :Person .
+
+data:Prince_Frederick_John_of_Saxe-Meiningen a :Man,
+        :Person ;
+    :hasDeathYear 1914 ;
+    :hasFather data:George_II_of_Saxe-Meiningen ;
+    :hasMother data:Feodora_of_Hohenlohe-Langenburg .
+
+data:Prince_George a :Man,
+        :Person .
 

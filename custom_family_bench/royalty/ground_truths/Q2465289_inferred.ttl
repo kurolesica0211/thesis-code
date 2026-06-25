@@ -1,0 +1,63 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Maria Antonietta of Bourbon-Two Sicilies"^^xsd:string ;
+    data:posIndicesFull "404:453"^^xsd:string ;
+    data:posIndicesPart "465:470"^^xsd:string,
+        "588:593"^^xsd:string,
+        "661:666"^^xsd:string,
+        "693:698"^^xsd:string,
+        "794:799"^^xsd:string ;
+    data:wdtLink wdt:Q255400 ;
+    :hasChild data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
+    :hasDaughter data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
+    :hasRelation data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isAncestorOf data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
+    :isAuntOf data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
+    :isBloodrelationOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isMotherOf data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
+    :isParentOf data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
+    :isSiblingOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSisterOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+
+data:Princess_Maria_Immacolata_of_the_Two_Sicilies a :Person,
+        :Woman ;
+    rdfs:label "Princess Maria Immacolata of the Two Sicilies"^^xsd:string ;
+    data:wdtLink wdt:Q2465289 ;
+    :alsoKnownAs "Maria Immacolata di Borbone-Due Sicilie"^^xsd:string,
+        "Maria Immaculee di Borbone, Principessa di Borbone delle Due Sicilie"^^xsd:string ;
+    :hasAncestor data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasParent data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies,
+        data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
+    :isBloodrelationOf data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
+    :isChildOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isDaughterOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
+    :isSiblingOf data:Princess_Maria_Immacolata_of_the_Two_Sicilies ;
+    :isSisterOf data:Princess_Maria_Immacolata_of_the_Two_Sicilies .
+

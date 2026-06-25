@@ -69,29 +69,27 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Ludwig Rudolf of Hanover, of Great Britain and Ireland, Duke of Brunswick and Lüneburg (German: Ludwig Rudolf Georg Wilhelm Philipp Friedrich Wolrad Maximilian Prinz von Hannover) (21 November 1955 – 29 November 1988) was a member of the House of Hanover and a music producer.
-Early life and career
+Marina Victoria Alexandra Ogilvy (born 31 July 1966) is the younger child and only daughter of Sir Angus Ogilvy and Princess Alexandra of Kent.
+Early life
 
-Ludwig Rudolf was born in Hanover, Lower Saxony, Germany, the third child and second son of Ernst August, Prince of Hanover, Hereditary Prince of Brunswick (1914–1987) and his wife, Princess Ortrud of Schleswig-Holstein-Sonderburg-Glücksburg (1925–1980).
-Ludwig Rudolf was a great-great-great-great-grandson of George III of the United Kingdom and a great-grandson of Wilhelm II, German Emperor.
-Ludwig Rudolf had trained to become a music producer in Los Angeles and London.
-Marriage and death
+Marina was born at Thatched House Lodge in Richmond Park, London, the home of her parents, on 31 July 1966.
+She was named after her maternal grandmother, Princess Marina of Greece and Denmark, who was also a first cousin of Prince Philip, Duke of Edinburgh.
+She has an elder brother, James Ogilvy, who was born in 1964.
+Marina was educated at St Mary's School, Wantage.
+Marriage and children
 
-Having obtained the consent of Elizabeth II by Order in Council on 15 September 1987 pursuant to the Royal Marriages Act 1772, Ludwig Rudolf, a Lutheran, married the Roman Catholic Countess Isabella Maria von Thurn und Valsassina-Como-Vercelli (born September 8 1962 in Gmunden, Upper Austria), a former fashion model at her father's ancestral Austrian estate, Bleiburg Castle, Carinthia on 4 October 1987.
-She was the daughter of Count Ariprand von Thurn und Valsassina-Como-Vercelli (1925–1996), whose family, an Austrian branch of the Della Torre dynasty, ruled Milan in the 13th and 14th century, and his wife, Princess Maria Perpetua Euphemia von Auersperg (born 1929).
-In the early hours of 29 November 1988, after the couple had entertained guests at their home, Königinvilla (The Queen's Villa) in Gmunden, a house left to them by Ludwig Rudolf's elder brother Ernst August, the prince went to the bedroom where his wife had retired before midnight, and found Isabella sprawled fully dressed across their bed.
-Ludwig Rudolf, who had been investigated previously on suspicion of illegal drug purchases, placed a call to his brother, Ernst August, in London, imploring him to take care of the couple's 10-month-old son.
-As authorities removed Isabella's body and investigated the scene, discovering syringes, cocaine and heroin, Ludwig Rudolf slipped away.
-Hours later, the prince was found in his car near his family's hunting lodge several miles away, on Lake Traun.
-Ludwig Rudolf and Isabelle were interred on 2 December 1988 at Grünau
-Custody of their infant son Otto Heinrich was awarded, contrary to the expressed wishes of Ludwig Rudolf, to the child's maternal grandparents.
-He grew up at their castle, Schloss Bleiburg, in Austria, and then studied art at Braunschweig University of Art in Brunswick (Braunschweig).
+In November 1989, Marina announced that she was pregnant by her boyfriend Paul Julian Mowatt (born in Hendon, 28 November 1962), a freelance photographer.
+Marina's parents denied her allegations and said that they loved her, had not cut her off and that she was welcome at home any time.
+Marina married Mowatt in Richmond Park, Surrey, on 2 February 1990, wearing a red velvet bolero with gold trim, with a black dress underneath, and a black hat.
+They had two children: Zenouska May Mowatt (born 26 May 1990), and Christian Alexander Mowatt (born 4 June 1993) and divorced in October 1997.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -107,39 +105,9 @@ He grew up at their castle, Schloss Bleiburg, in Austria, and then studied art a
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -154,6 +122,23 @@ He grew up at their castle, Schloss Bleiburg, in Austria, and then studied art a
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -171,6 +156,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -238,29 +238,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -269,6 +261,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -281,6 +281,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -289,17 +291,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -327,6 +331,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -342,162 +430,166 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ceab77d0-0b0c-46f5-a3eb-67a791fd03f9)
- Call ID: ceab77d0-0b0c-46f5-a3eb-67a791fd03f9
+  AssignClass (9d25f68b-b739-4a24-ada7-ed954943d0c5)
+ Call ID: 9d25f68b-b739-4a24-ada7-ed954943d0c5
   Args:
-    source: Ludwig_Rudolf_of_Hanover
-    type: :Man
-  AssignClass (d9ddc48f-b79e-4082-a2bf-6d4eb6c2e09f)
- Call ID: d9ddc48f-b79e-4082-a2bf-6d4eb6c2e09f
+    type: :Woman
+    source: Marina_Victoria_Alexandra_Ogilvy
+  AssignClass (0c4444c3-a25b-449e-83a7-96a405cb1bf4)
+ Call ID: 0c4444c3-a25b-449e-83a7-96a405cb1bf4
   Args:
-    source: Ludwig_Rudolf_of_Hanover
+    source: Marina_Victoria_Alexandra_Ogilvy
     type: :Person
-  AddLiteral (381f4611-60bd-448e-adb4-95544377688b)
- Call ID: 381f4611-60bd-448e-adb4-95544377688b
+  AddLiteral (04c1a5a6-0e02-4828-9aaa-c1d9025822fc)
+ Call ID: 04c1a5a6-0e02-4828-9aaa-c1d9025822fc
   Args:
-    literal_value: 1955
-    source: Ludwig_Rudolf_of_Hanover
+    literal_value: 1966
+    source: Marina_Victoria_Alexandra_Ogilvy
     literal_type: xsd:integer
     relation: :hasBirthYear
-  AddLiteral (89ce906e-4a9c-418d-8d87-4761b5ba217a)
- Call ID: 89ce906e-4a9c-418d-8d87-4761b5ba217a
+  AssignClass (893c8697-d831-4235-9cc4-b29ef4b57f15)
+ Call ID: 893c8697-d831-4235-9cc4-b29ef4b57f15
   Args:
-    literal_value: 1988
-    literal_type: xsd:integer
-    source: Ludwig_Rudolf_of_Hanover
-    relation: :hasDeathYear
-  AssignClass (196479fa-19aa-447f-b8d3-2af7862c1a8f)
- Call ID: 196479fa-19aa-447f-b8d3-2af7862c1a8f
-  Args:
-    source: Ernst_August_Prince_of_Hanover
     type: :Man
-  AssignClass (9afbca47-4aab-4438-a6bb-89ca8dd4fa4a)
- Call ID: 9afbca47-4aab-4438-a6bb-89ca8dd4fa4a
+    source: Sir_Angus_Ogilvy
+  AssignClass (33be5e91-5b80-4ad1-8e19-9ac7214b4ab0)
+ Call ID: 33be5e91-5b80-4ad1-8e19-9ac7214b4ab0
   Args:
-    source: Ernst_August_Prince_of_Hanover
+    source: Sir_Angus_Ogilvy
     type: :Person
-  AssignClass (d0f31258-6f83-4895-8d66-0bf3d712c933)
- Call ID: d0f31258-6f83-4895-8d66-0bf3d712c933
+  AssignClass (2309c887-1e2c-40a2-b680-709e8b10cc73)
+ Call ID: 2309c887-1e2c-40a2-b680-709e8b10cc73
   Args:
+    source: Princess_Alexandra_of_Kent
     type: :Woman
-    source: Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg
-  AssignClass (700e9cda-322e-44ab-a0e3-0efff2ac464d)
- Call ID: 700e9cda-322e-44ab-a0e3-0efff2ac464d
+  AssignClass (9d7605ee-667d-41bd-93c7-e98bdad78441)
+ Call ID: 9d7605ee-667d-41bd-93c7-e98bdad78441
   Args:
     type: :Person
-    source: Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg
-  AddTriple (feda88c9-17f5-4b1f-a469-57f28050561b)
- Call ID: feda88c9-17f5-4b1f-a469-57f28050561b
+    source: Princess_Alexandra_of_Kent
+  AddTriple (be9a77a4-da72-4f62-86f8-255f33091c6c)
+ Call ID: be9a77a4-da72-4f62-86f8-255f33091c6c
   Args:
-    target: Ernst_August_Prince_of_Hanover
     relation: :hasFather
-    source: Ludwig_Rudolf_of_Hanover
-  AddTriple (d52116b0-b891-4654-b6e2-8963ef6e738b)
- Call ID: d52116b0-b891-4654-b6e2-8963ef6e738b
+    source: Marina_Victoria_Alexandra_Ogilvy
+    target: Sir_Angus_Ogilvy
+  AddTriple (b7432ac0-8999-44a7-999a-acad45b9402a)
+ Call ID: b7432ac0-8999-44a7-999a-acad45b9402a
   Args:
-    target: Ortrud_of_Schleswig_Holstein_Sonderburg_Glucksburg
+    source: Marina_Victoria_Alexandra_Ogilvy
+    target: Princess_Alexandra_of_Kent
     relation: :hasMother
-    source: Ludwig_Rudolf_of_Hanover
-  AssignClass (87eea553-604f-453b-844d-d7af5441028d)
- Call ID: 87eea553-604f-453b-844d-d7af5441028d
-  Args:
-    type: :Woman
-    source: Isabella_Maria_von_Thurn_und_Valsassina_Como_Vercelli
-  AssignClass (4289e854-dfe9-4026-9c90-60cacac90bc1)
- Call ID: 4289e854-dfe9-4026-9c90-60cacac90bc1
-  Args:
-    type: :Person
-    source: Isabella_Maria_von_Thurn_und_Valsassina_Como_Vercelli
-  AddLiteral (8226a196-601c-49ef-bdd4-613ef7433d37)
- Call ID: 8226a196-601c-49ef-bdd4-613ef7433d37
-  Args:
-    literal_value: 1962
-    literal_type: xsd:integer
-    source: Isabella_Maria_von_Thurn_und_Valsassina_Como_Vercelli
-    relation: :hasBirthYear
-  AddLiteral (fe9ccb07-6cf3-4b16-b4f7-e44f7d3f2045)
- Call ID: fe9ccb07-6cf3-4b16-b4f7-e44f7d3f2045
-  Args:
-    literal_value: 1987
-    literal_type: xsd:integer
-    source: Ludwig_Rudolf_of_Hanover
-    relation: :hasMarriageYear
-  AddTriple (4e1e3b47-21fe-48f3-af43-e043da1048fb)
- Call ID: 4e1e3b47-21fe-48f3-af43-e043da1048fb
-  Args:
-    target: Isabella_Maria_von_Thurn_und_Valsassina_Como_Vercelli
-    source: Ludwig_Rudolf_of_Hanover
-    relation: :hasRelation
-  AssignClass (f83f338c-8fc3-4eb2-b8d1-e2f6695abef8)
- Call ID: f83f338c-8fc3-4eb2-b8d1-e2f6695abef8
-  Args:
-    source: Ariprand_von_Thurn_und_Valsassina_Como_Vercelli
-    type: :Man
-  AssignClass (5fabe31c-a805-4889-b736-61a00b6beed2)
- Call ID: 5fabe31c-a805-4889-b736-61a00b6beed2
-  Args:
-    type: :Person
-    source: Ariprand_von_Thurn_und_Valsassina_Como_Vercelli
-  AssignClass (2ddb62e4-e770-44cf-b3f7-be79e33a5e97)
- Call ID: 2ddb62e4-e770-44cf-b3f7-be79e33a5e97
-  Args:
-    source: Maria_Perpetua_Euphemia_von_Auersperg
-    type: :Woman
-  AssignClass (c94ec00d-66b1-456e-b81f-f6b71108f67a)
- Call ID: c94ec00d-66b1-456e-b81f-f6b71108f67a
-  Args:
-    source: Maria_Perpetua_Euphemia_von_Auersperg
-    type: :Person
-  AddTriple (dd7023de-7cab-42a9-a6c1-de0368cb64d0)
- Call ID: dd7023de-7cab-42a9-a6c1-de0368cb64d0
-  Args:
-    source: Isabella_Maria_von_Thurn_und_Valsassina_Como_Vercelli
-    relation: :hasFather
-    target: Ariprand_von_Thurn_und_Valsassina_Como_Vercelli
-  AddTriple (52c0fd2d-ee77-44d0-be94-89f388026f77)
- Call ID: 52c0fd2d-ee77-44d0-be94-89f388026f77
-  Args:
-    relation: :hasMother
-    source: Isabella_Maria_von_Thurn_und_Valsassina_Como_Vercelli
-    target: Maria_Perpetua_Euphemia_von_Auersperg
-  AssignClass (8ff01ae9-4855-4293-b6bf-3f8c1571ebd6)
- Call ID: 8ff01ae9-4855-4293-b6bf-3f8c1571ebd6
+  AssignClass (11873ad3-003b-4c61-911e-6c7614d02940)
+ Call ID: 11873ad3-003b-4c61-911e-6c7614d02940
   Args:
     type: :Man
-    source: Ernst_August_Brother
-  AssignClass (6786842d-c63c-4609-919a-5d96e0c91643)
- Call ID: 6786842d-c63c-4609-919a-5d96e0c91643
+    source: James_Ogilvy
+  AssignClass (9d536478-2c5c-431e-be3d-10d505d97a01)
+ Call ID: 9d536478-2c5c-431e-be3d-10d505d97a01
   Args:
     type: :Person
-    source: Ernst_August_Brother
-  AddTriple (7e09e036-aae1-4dbb-8ee0-480feb86a257)
- Call ID: 7e09e036-aae1-4dbb-8ee0-480feb86a257
+    source: James_Ogilvy
+  AddTriple (78283295-6a35-4867-856a-abe4808fb03d)
+ Call ID: 78283295-6a35-4867-856a-abe4808fb03d
   Args:
-    target: Ernst_August_Brother
-    source: Ludwig_Rudolf_of_Hanover
     relation: :hasBrother
-  AssignClass (e7a381a6-d1c6-4ded-ab69-2b707d77b2d0)
- Call ID: e7a381a6-d1c6-4ded-ab69-2b707d77b2d0
+    source: Marina_Victoria_Alexandra_Ogilvy
+    target: James_Ogilvy
+  AddLiteral (fc7eda4c-994e-4cac-890b-7b771c9bce6a)
+ Call ID: fc7eda4c-994e-4cac-890b-7b771c9bce6a
+  Args:
+    source: James_Ogilvy
+    literal_value: 1964
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+  AssignClass (494057e7-d0bc-48eb-98fc-f66201407b63)
+ Call ID: 494057e7-d0bc-48eb-98fc-f66201407b63
+  Args:
+    source: Paul_Julian_Mowatt
+    type: :Man
+  AssignClass (ee977dcc-717f-42f4-894a-084d8b1e1bd3)
+ Call ID: ee977dcc-717f-42f4-894a-084d8b1e1bd3
+  Args:
+    type: :Person
+    source: Paul_Julian_Mowatt
+  AddLiteral (3fc597c1-f782-48b9-85c2-fb2ff7086da5)
+ Call ID: 3fc597c1-f782-48b9-85c2-fb2ff7086da5
+  Args:
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    literal_value: 1962
+    source: Paul_Julian_Mowatt
+  AddTriple (8196708a-5921-4222-9a71-7881f309db59)
+ Call ID: 8196708a-5921-4222-9a71-7881f309db59
+  Args:
+    target: Paul_Julian_Mowatt
+    source: Marina_Victoria_Alexandra_Ogilvy
+    relation: :hasRelation
+  AddLiteral (eb59e55e-e348-45d3-9e05-5bf73e258610)
+ Call ID: eb59e55e-e348-45d3-9e05-5bf73e258610
+  Args:
+    source: Marina_Victoria_Alexandra_Ogilvy
+    literal_value: 1990
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+  AssignClass (7881ffa6-cab9-42eb-a840-554788816569)
+ Call ID: 7881ffa6-cab9-42eb-a840-554788816569
+  Args:
+    source: Zenouska_May_Mowatt
+    type: :Woman
+  AssignClass (ff81b105-2c31-46f5-9d50-f38848035122)
+ Call ID: ff81b105-2c31-46f5-9d50-f38848035122
+  Args:
+    type: :Person
+    source: Zenouska_May_Mowatt
+  AssignClass (7a140c8c-445e-4a7b-95e0-edb43f6c84bd)
+ Call ID: 7a140c8c-445e-4a7b-95e0-edb43f6c84bd
   Args:
     type: :Man
-    source: Otto_Heinrich
-  AssignClass (d0404c07-0fb4-42af-95ca-8c7bb5e515fd)
- Call ID: d0404c07-0fb4-42af-95ca-8c7bb5e515fd
+    source: Christian_Alexander_Mowatt
+  AssignClass (d9e66c78-0c89-497c-878c-10b9bf94b8b3)
+ Call ID: d9e66c78-0c89-497c-878c-10b9bf94b8b3
   Args:
-    source: Otto_Heinrich
     type: :Person
-  AddTriple (4061e41b-284a-40c4-8d7d-1d57740b29cb)
- Call ID: 4061e41b-284a-40c4-8d7d-1d57740b29cb
+    source: Christian_Alexander_Mowatt
+  AddTriple (7c313029-0b0d-43c2-9379-6d929ce06fa9)
+ Call ID: 7c313029-0b0d-43c2-9379-6d929ce06fa9
   Args:
-    target: Ludwig_Rudolf_of_Hanover
-    source: Otto_Heinrich
-    relation: :hasFather
-  AddTriple (3e6f2b11-ebc4-4e48-b7b8-a0955b26e961)
- Call ID: 3e6f2b11-ebc4-4e48-b7b8-a0955b26e961
+    relation: :hasChild
+    source: Marina_Victoria_Alexandra_Ogilvy
+    target: Zenouska_May_Mowatt
+  AddTriple (bc5e163f-1d0f-4b91-8ef9-c854b6d4d43b)
+ Call ID: bc5e163f-1d0f-4b91-8ef9-c854b6d4d43b
   Args:
-    target: Isabella_Maria_von_Thurn_und_Valsassina_Como_Vercelli
-    source: Otto_Heinrich
-    relation: :hasMother
-  Finish (ef26b54b-0640-443f-9424-163d751d9a6e)
- Call ID: ef26b54b-0640-443f-9424-163d751d9a6e
+    relation: :hasChild
+    target: Christian_Alexander_Mowatt
+    source: Marina_Victoria_Alexandra_Ogilvy
+  AddTriple (ca1cc68c-a527-4a66-87ab-87830977e177)
+ Call ID: ca1cc68c-a527-4a66-87ab-87830977e177
+  Args:
+    target: Zenouska_May_Mowatt
+    source: Paul_Julian_Mowatt
+    relation: :hasChild
+  AddTriple (4408f750-bfc9-4731-bd68-588e60791bec)
+ Call ID: 4408f750-bfc9-4731-bd68-588e60791bec
+  Args:
+    relation: :hasChild
+    target: Christian_Alexander_Mowatt
+    source: Paul_Julian_Mowatt
+  AddLiteral (694b980a-a892-447a-9d72-5edeb3aa7bb3)
+ Call ID: 694b980a-a892-447a-9d72-5edeb3aa7bb3
+  Args:
+    relation: :hasBirthYear
+    literal_value: 1990
+    source: Zenouska_May_Mowatt
+    literal_type: xsd:integer
+  AddLiteral (520605fd-8577-4093-bc47-3bd5bf41c8fa)
+ Call ID: 520605fd-8577-4093-bc47-3bd5bf41c8fa
+  Args:
+    relation: :hasBirthYear
+    source: Christian_Alexander_Mowatt
+    literal_value: 1993
+    literal_type: xsd:integer
+  Finish (c7e6117b-8177-4dd7-97bb-28421bb1e2f2)
+ Call ID: c7e6117b-8177-4dd7-97bb-28421bb1e2f2
   Args:

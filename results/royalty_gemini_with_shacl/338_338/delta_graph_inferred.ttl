@@ -1,0 +1,102 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Anne_Dorte_of_Rosenborg a :Person,
+        :Woman ;
+    :hasBirthYear 1947 ;
+    :hasDeathYear 2014 ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg,
+        data:Caroline-Mathilde_of_Denmark,
+        data:Christian_of_Rosenborg,
+        data:Ingolf_of_Denmark,
+        data:Knud_of_Denmark ;
+    :hasSister data:Anne_Dorte_of_Rosenborg ;
+    :isBloodrelationOf data:Anne_Dorte_of_Rosenborg ;
+    :isSiblingOf data:Anne_Dorte_of_Rosenborg ;
+    :isSisterOf data:Anne_Dorte_of_Rosenborg .
+
+data:Ingolf_of_Denmark a :Man,
+        :Person ;
+    :hasBrother data:Christian_of_Rosenborg,
+        data:Ingolf_of_Denmark ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg,
+        data:Caroline-Mathilde_of_Denmark,
+        data:Christian_of_Rosenborg,
+        data:Ingolf_of_Denmark,
+        data:Knud_of_Denmark ;
+    :isBloodrelationOf data:Christian_of_Rosenborg,
+        data:Ingolf_of_Denmark ;
+    :isBrotherOf data:Christian_of_Rosenborg,
+        data:Ingolf_of_Denmark ;
+    :isSiblingOf data:Christian_of_Rosenborg,
+        data:Ingolf_of_Denmark .
+
+data:Caroline-Mathilde_of_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Christian_of_Rosenborg ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg,
+        data:Caroline-Mathilde_of_Denmark,
+        data:Christian_of_Rosenborg,
+        data:Ingolf_of_Denmark,
+        data:Knud_of_Denmark ;
+    :hasSister data:Caroline-Mathilde_of_Denmark ;
+    :hasSon data:Christian_of_Rosenborg ;
+    :isAncestorOf data:Christian_of_Rosenborg ;
+    :isAuntOf data:Christian_of_Rosenborg ;
+    :isBloodrelationOf data:Caroline-Mathilde_of_Denmark ;
+    :isMotherOf data:Christian_of_Rosenborg ;
+    :isParentOf data:Christian_of_Rosenborg ;
+    :isSiblingOf data:Caroline-Mathilde_of_Denmark ;
+    :isSisterOf data:Caroline-Mathilde_of_Denmark .
+
+data:Knud_of_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Knud_of_Denmark ;
+    :hasChild data:Christian_of_Rosenborg ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg,
+        data:Caroline-Mathilde_of_Denmark,
+        data:Christian_of_Rosenborg,
+        data:Ingolf_of_Denmark,
+        data:Knud_of_Denmark ;
+    :hasSon data:Christian_of_Rosenborg ;
+    :isAncestorOf data:Christian_of_Rosenborg ;
+    :isBloodrelationOf data:Knud_of_Denmark ;
+    :isBrotherOf data:Knud_of_Denmark ;
+    :isFatherOf data:Christian_of_Rosenborg ;
+    :isParentOf data:Christian_of_Rosenborg ;
+    :isSiblingOf data:Knud_of_Denmark ;
+    :isUncleOf data:Christian_of_Rosenborg .
+
+data:Christian_of_Rosenborg a :Man,
+        :Person ;
+    :hasAncestor data:Caroline-Mathilde_of_Denmark,
+        data:Knud_of_Denmark ;
+    :hasBirthYear 1942 ;
+    :hasBrother data:Christian_of_Rosenborg,
+        data:Ingolf_of_Denmark ;
+    :hasDeathYear 2013 ;
+    :hasFather data:Knud_of_Denmark ;
+    :hasMarriageYear 1971 ;
+    :hasMother data:Caroline-Mathilde_of_Denmark ;
+    :hasParent data:Caroline-Mathilde_of_Denmark,
+        data:Knud_of_Denmark ;
+    :hasRelation data:Anne_Dorte_of_Rosenborg,
+        data:Caroline-Mathilde_of_Denmark,
+        data:Christian_of_Rosenborg,
+        data:Ingolf_of_Denmark,
+        data:Knud_of_Denmark ;
+    :isBloodrelationOf data:Christian_of_Rosenborg,
+        data:Ingolf_of_Denmark ;
+    :isBrotherOf data:Christian_of_Rosenborg,
+        data:Ingolf_of_Denmark ;
+    :isChildOf data:Caroline-Mathilde_of_Denmark,
+        data:Knud_of_Denmark ;
+    :isSiblingOf data:Christian_of_Rosenborg,
+        data:Ingolf_of_Denmark ;
+    :isSonOf data:Caroline-Mathilde_of_Denmark,
+        data:Knud_of_Denmark ;
+    :knownAs "Christian Frederik Franz Knud Harald Carl Oluf Gustav Georg Erik"^^xsd:string .
+

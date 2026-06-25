@@ -2,28 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:David_Michael_Mountbatten a :Man,
+data:Prince_Francois_of_Orleans a :Man,
         :Person ;
-    :hasBirthYear 1919 ;
-    :hasDeathYear 1970 ;
-    :hasFather data:George_Mountbatten ;
-    :hasMother data:Nadejda_Mikhailovna_of_Torby .
+    :hasBirthYear 1961 ;
+    :hasDeathYear 2017 ;
+    :hasFather data:Prince_Henri_Count_of_Paris ;
+    :hasMother data:Duchess_Marie_Therese_of_Wurttemberg ;
+    :hasSister data:Princess_Blanche ;
+    :knownAs "Prince François of Orléans, Count of Clermont"^^xsd:string .
 
-data:George_Mountbatten a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Prince_Louis_of_Battenberg ;
-    :hasMother data:Princess_Victoria_of_Hesse_and_by_Rhine .
-
-data:Nadejda_Mikhailovna_of_Torby a :Ancestor,
+data:Paternal_Grandmother a :Ancestor,
         :Person,
         :Woman .
 
-data:Prince_Louis_of_Battenberg a :Ancestor,
-        :Man,
-        :Person .
+data:Princess_Blanche a :Person,
+        :Woman ;
+    :hasFather data:Prince_Henri_Count_of_Paris ;
+    :hasMother data:Duchess_Marie_Therese_of_Wurttemberg .
 
-data:Princess_Victoria_of_Hesse_and_by_Rhine a :Ancestor,
+data:Duchess_Marie_Therese_of_Wurttemberg a :Ancestor,
         :Person,
         :Woman .
+
+data:Prince_Henri_Count_of_Paris a :Ancestor,
+        :Man,
+        :Person ;
+    :hasMother data:Paternal_Grandmother .
 

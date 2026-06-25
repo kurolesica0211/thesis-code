@@ -1,0 +1,81 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:PrinceErnestAugustusOfHanover a :Man,
+        :Person ;
+    :hasBrother data:HeinrichPrinzVonHannover,
+        data:PrinceErnestAugustusOfHanover ;
+    :hasRelation data:ErnestAugustusHereditaryPrinceOfBrunswick,
+        data:HeinrichPrinzVonHannover,
+        data:PrinceErnestAugustusOfHanover,
+        data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg ;
+    :isBloodrelationOf data:HeinrichPrinzVonHannover,
+        data:PrinceErnestAugustusOfHanover ;
+    :isBrotherOf data:HeinrichPrinzVonHannover,
+        data:PrinceErnestAugustusOfHanover ;
+    :isSiblingOf data:HeinrichPrinzVonHannover,
+        data:PrinceErnestAugustusOfHanover .
+
+data:ErnestAugustusHereditaryPrinceOfBrunswick a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:ErnestAugustusHereditaryPrinceOfBrunswick ;
+    :hasChild data:HeinrichPrinzVonHannover ;
+    :hasRelation data:ErnestAugustusHereditaryPrinceOfBrunswick,
+        data:HeinrichPrinzVonHannover,
+        data:PrinceErnestAugustusOfHanover,
+        data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg ;
+    :hasSon data:HeinrichPrinzVonHannover ;
+    :isAncestorOf data:HeinrichPrinzVonHannover ;
+    :isBloodrelationOf data:ErnestAugustusHereditaryPrinceOfBrunswick ;
+    :isBrotherOf data:ErnestAugustusHereditaryPrinceOfBrunswick ;
+    :isFatherOf data:HeinrichPrinzVonHannover ;
+    :isParentOf data:HeinrichPrinzVonHannover ;
+    :isSiblingOf data:ErnestAugustusHereditaryPrinceOfBrunswick ;
+    :isUncleOf data:HeinrichPrinzVonHannover .
+
+data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:HeinrichPrinzVonHannover ;
+    :hasRelation data:ErnestAugustusHereditaryPrinceOfBrunswick,
+        data:HeinrichPrinzVonHannover,
+        data:PrinceErnestAugustusOfHanover,
+        data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg ;
+    :hasSister data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg ;
+    :hasSon data:HeinrichPrinzVonHannover ;
+    :isAncestorOf data:HeinrichPrinzVonHannover ;
+    :isAuntOf data:HeinrichPrinzVonHannover ;
+    :isBloodrelationOf data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg ;
+    :isMotherOf data:HeinrichPrinzVonHannover ;
+    :isParentOf data:HeinrichPrinzVonHannover ;
+    :isSiblingOf data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg ;
+    :isSisterOf data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg .
+
+data:HeinrichPrinzVonHannover a :Man,
+        :Person ;
+    :hasAncestor data:ErnestAugustusHereditaryPrinceOfBrunswick,
+        data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg ;
+    :hasBirthYear 1961 ;
+    :hasBrother data:HeinrichPrinzVonHannover,
+        data:PrinceErnestAugustusOfHanover ;
+    :hasFather data:ErnestAugustusHereditaryPrinceOfBrunswick ;
+    :hasMother data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg ;
+    :hasParent data:ErnestAugustusHereditaryPrinceOfBrunswick,
+        data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg ;
+    :hasRelation data:ErnestAugustusHereditaryPrinceOfBrunswick,
+        data:HeinrichPrinzVonHannover,
+        data:PrinceErnestAugustusOfHanover,
+        data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg ;
+    :isBloodrelationOf data:HeinrichPrinzVonHannover,
+        data:PrinceErnestAugustusOfHanover ;
+    :isBrotherOf data:HeinrichPrinzVonHannover,
+        data:PrinceErnestAugustusOfHanover ;
+    :isChildOf data:ErnestAugustusHereditaryPrinceOfBrunswick,
+        data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg ;
+    :isSiblingOf data:HeinrichPrinzVonHannover,
+        data:PrinceErnestAugustusOfHanover ;
+    :isSonOf data:ErnestAugustusHereditaryPrinceOfBrunswick,
+        data:PrincessOrtrudOfSchleswigHolsteinSonderburgGl%C3%BCcksburg .
+

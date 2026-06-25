@@ -2,34 +2,57 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Andrew_Mountbatten-Windsor a :Ancestor,
-        :Man .
-
-data:Athena_Elizabeth_Rose a :Woman ;
+data:Athena_Elizabeth_Rose a :Person,
+        :Woman ;
     :hasFather data:Edoardo_Mapelli_Mozzi ;
-    :hasMother data:Beatrice_York .
+    :hasMother data:Princess_Beatrice .
 
-data:Eugenie_York a :Woman ;
-    :isSisterOf data:Beatrice_York .
+data:King_Charles_III a :Man,
+        :Person .
 
-data:Sarah_Ferguson a :Ancestor,
+data:Paolo_Mapelli_Mozzi a :Man,
+        :Person .
+
+data:Prince_Philip a :Man,
+        :Person .
+
+data:Princess_Eugenie a :Person,
+        :Woman ;
+    :hasFather data:Andrew_Mountbatten-Windsor ;
+    :hasMother data:Sarah_Ferguson ;
+    :isSisterOf data:Princess_Beatrice .
+
+data:Queen_Elizabeth_II a :Person,
         :Woman .
 
-data:Sienna_Elizabeth_Mapelli_Mozzi a :Woman ;
+data:Sienna_Elizabeth_Mapelli_Mozzi a :Person,
+        :Woman ;
     :hasFather data:Edoardo_Mapelli_Mozzi ;
-    :hasMother data:Beatrice_York .
+    :hasMother data:Princess_Beatrice .
 
-data:Beatrice_York a :Ancestor,
+data:Alex_Mapelli-Mozzi a :Ancestor,
+        :Man,
+        :Person .
+
+data:Andrew_Mountbatten-Windsor a :Ancestor,
+        :Man,
+        :Person .
+
+data:Sarah_Ferguson a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Edoardo_Mapelli_Mozzi a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Alex_Mapelli-Mozzi .
+
+data:Princess_Beatrice a :Ancestor,
+        :Person,
         :Woman ;
     :hasBirthYear 1988 ;
-    :hasDaughter data:Athena_Elizabeth_Rose,
-        data:Sienna_Elizabeth_Mapelli_Mozzi ;
     :hasFather data:Andrew_Mountbatten-Windsor ;
     :hasMarriageYear 2020 ;
     :hasMother data:Sarah_Ferguson ;
-    :hasRelation data:Edoardo_Mapelli_Mozzi ;
-    :hasSister data:Eugenie_York .
-
-data:Edoardo_Mapelli_Mozzi a :Ancestor,
-        :Man .
+    :hasRelation data:Edoardo_Mapelli_Mozzi .
 

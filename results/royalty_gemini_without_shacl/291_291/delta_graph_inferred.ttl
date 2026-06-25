@@ -1,0 +1,211 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:HermanJud a :Man,
+        :Person ;
+    :hasBrother data:HermanJud ;
+    :hasRelation data:HermanJud,
+        data:MariaGeorgievna,
+        data:NancyHelenMarieLeeds,
+        data:NinaGeorgievna,
+        data:WilliamBatemanLeedsJr,
+        data:XeniaGeorgievna ;
+    :isBloodrelationOf data:HermanJud ;
+    :isBrotherOf data:HermanJud ;
+    :isSiblingOf data:HermanJud .
+
+data:NicholasMikhailovich a :Man,
+        :Person ;
+    :hasBrother data:GeorgeMihailovich,
+        data:NicholasMikhailovich ;
+    :hasRelation data:GeorgeMihailovich,
+        data:NancyHelenMarieLeeds,
+        data:NicholasMikhailovich,
+        data:NinaGeorgievna,
+        data:WilliamBatemanLeedsJr,
+        data:XeniaGeorgievna ;
+    :isBloodrelationOf data:GeorgeMihailovich,
+        data:NicholasMikhailovich ;
+    :isBrotherOf data:GeorgeMihailovich,
+        data:NicholasMikhailovich ;
+    :isSiblingOf data:GeorgeMihailovich,
+        data:NicholasMikhailovich ;
+    :isUncleOf data:NinaGeorgievna,
+        data:XeniaGeorgievna .
+
+data:WilliamBatemanLeedsJr a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:WilliamBatemanLeedsJr ;
+    :hasChild data:NancyHelenMarieLeeds ;
+    :hasDaughter data:NancyHelenMarieLeeds ;
+    :hasRelation data:GeorgeMihailovich,
+        data:HermanJud,
+        data:MariaGeorgievna,
+        data:NancyHelenMarieLeeds,
+        data:NicholasMikhailovich,
+        data:NinaGeorgievna,
+        data:WilliamBatemanLeedsJr,
+        data:XeniaGeorgievna ;
+    :isAncestorOf data:NancyHelenMarieLeeds ;
+    :isBloodrelationOf data:WilliamBatemanLeedsJr ;
+    :isBrotherOf data:WilliamBatemanLeedsJr ;
+    :isFatherOf data:NancyHelenMarieLeeds ;
+    :isParentOf data:NancyHelenMarieLeeds ;
+    :isSiblingOf data:WilliamBatemanLeedsJr ;
+    :isUncleOf data:NancyHelenMarieLeeds .
+
+data:MariaGeorgievna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :hasDaughter data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :hasRelation data:HermanJud,
+        data:MariaGeorgievna,
+        data:NancyHelenMarieLeeds,
+        data:NinaGeorgievna,
+        data:WilliamBatemanLeedsJr,
+        data:XeniaGeorgievna ;
+    :hasSister data:MariaGeorgievna ;
+    :isAncestorOf data:NancyHelenMarieLeeds,
+        data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isAuntOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isBloodrelationOf data:MariaGeorgievna ;
+    :isMotherOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isParentOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isSiblingOf data:MariaGeorgievna ;
+    :isSisterOf data:MariaGeorgievna .
+
+data:GeorgeMihailovich a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:GeorgeMihailovich,
+        data:NicholasMikhailovich ;
+    :hasChild data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :hasDaughter data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :hasRelation data:GeorgeMihailovich,
+        data:NancyHelenMarieLeeds,
+        data:NicholasMikhailovich,
+        data:NinaGeorgievna,
+        data:WilliamBatemanLeedsJr,
+        data:XeniaGeorgievna ;
+    :isAncestorOf data:NancyHelenMarieLeeds,
+        data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isBloodrelationOf data:GeorgeMihailovich,
+        data:NicholasMikhailovich ;
+    :isBrotherOf data:GeorgeMihailovich,
+        data:NicholasMikhailovich ;
+    :isFatherOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isParentOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isSiblingOf data:GeorgeMihailovich,
+        data:NicholasMikhailovich ;
+    :isUncleOf data:NinaGeorgievna,
+        data:XeniaGeorgievna .
+
+data:NancyHelenMarieLeeds a :Person,
+        :Woman ;
+    :hasAncestor data:GeorgeMihailovich,
+        data:MariaGeorgievna,
+        data:WilliamBatemanLeedsJr,
+        data:XeniaGeorgievna ;
+    :hasFather data:WilliamBatemanLeedsJr ;
+    :hasMother data:XeniaGeorgievna ;
+    :hasParent data:WilliamBatemanLeedsJr,
+        data:XeniaGeorgievna ;
+    :hasRelation data:GeorgeMihailovich,
+        data:HermanJud,
+        data:MariaGeorgievna,
+        data:NancyHelenMarieLeeds,
+        data:NicholasMikhailovich,
+        data:NinaGeorgievna,
+        data:WilliamBatemanLeedsJr,
+        data:XeniaGeorgievna ;
+    :hasSister data:NancyHelenMarieLeeds ;
+    :isBloodrelationOf data:NancyHelenMarieLeeds ;
+    :isChildOf data:WilliamBatemanLeedsJr,
+        data:XeniaGeorgievna ;
+    :isDaughterOf data:WilliamBatemanLeedsJr,
+        data:XeniaGeorgievna ;
+    :isSiblingOf data:NancyHelenMarieLeeds ;
+    :isSisterOf data:NancyHelenMarieLeeds .
+
+data:NinaGeorgievna a :Person,
+        :Woman ;
+    :hasAncestor data:GeorgeMihailovich,
+        data:MariaGeorgievna ;
+    :hasFather data:GeorgeMihailovich ;
+    :hasMother data:MariaGeorgievna ;
+    :hasParent data:GeorgeMihailovich,
+        data:MariaGeorgievna ;
+    :hasRelation data:GeorgeMihailovich,
+        data:HermanJud,
+        data:MariaGeorgievna,
+        data:NancyHelenMarieLeeds,
+        data:NicholasMikhailovich,
+        data:NinaGeorgievna,
+        data:WilliamBatemanLeedsJr,
+        data:XeniaGeorgievna ;
+    :hasSister data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isAuntOf data:NancyHelenMarieLeeds ;
+    :isBloodrelationOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isChildOf data:GeorgeMihailovich,
+        data:MariaGeorgievna ;
+    :isDaughterOf data:GeorgeMihailovich,
+        data:MariaGeorgievna ;
+    :isSiblingOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isSisterOf data:NinaGeorgievna,
+        data:XeniaGeorgievna .
+
+data:XeniaGeorgievna a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:GeorgeMihailovich,
+        data:MariaGeorgievna ;
+    :hasBirthYear 1903 ;
+    :hasChild data:NancyHelenMarieLeeds ;
+    :hasDaughter data:NancyHelenMarieLeeds ;
+    :hasDeathYear 1965 ;
+    :hasFather data:GeorgeMihailovich ;
+    :hasMother data:MariaGeorgievna ;
+    :hasParent data:GeorgeMihailovich,
+        data:MariaGeorgievna ;
+    :hasRelation data:GeorgeMihailovich,
+        data:HermanJud,
+        data:MariaGeorgievna,
+        data:NancyHelenMarieLeeds,
+        data:NicholasMikhailovich,
+        data:NinaGeorgievna,
+        data:WilliamBatemanLeedsJr,
+        data:XeniaGeorgievna ;
+    :hasSister data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isAncestorOf data:NancyHelenMarieLeeds ;
+    :isAuntOf data:NancyHelenMarieLeeds ;
+    :isBloodrelationOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isChildOf data:GeorgeMihailovich,
+        data:MariaGeorgievna ;
+    :isDaughterOf data:GeorgeMihailovich,
+        data:MariaGeorgievna ;
+    :isMotherOf data:NancyHelenMarieLeeds ;
+    :isParentOf data:NancyHelenMarieLeeds ;
+    :isSiblingOf data:NinaGeorgievna,
+        data:XeniaGeorgievna ;
+    :isSisterOf data:NinaGeorgievna,
+        data:XeniaGeorgievna .
+

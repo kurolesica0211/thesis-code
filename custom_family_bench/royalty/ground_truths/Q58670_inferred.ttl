@@ -1,0 +1,500 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Bernhard_III-_Duke_of_Saxe-Meiningen a :Man,
+        :Person ;
+    rdfs:label "Bernhard III, Duke of Saxe-Meiningen"^^xsd:string ;
+    data:posIndicesFull "14661:14673"^^xsd:string,
+        "14661:14697"^^xsd:string,
+        "195:207"^^xsd:string ;
+    data:posIndicesPart "10775:10783"^^xsd:string,
+        "11027:11035"^^xsd:string,
+        "11595:11599"^^xsd:string,
+        "12070:12078"^^xsd:string,
+        "12487:12495"^^xsd:string,
+        "12627:12635"^^xsd:string,
+        "12705:12714"^^xsd:string,
+        "13000:13004"^^xsd:string,
+        "1308:1312"^^xsd:string,
+        "1313:1322"^^xsd:string,
+        "14388:14392"^^xsd:string,
+        "14393:14402"^^xsd:string,
+        "14733:14741"^^xsd:string,
+        "15124:15132"^^xsd:string,
+        "15170:15174"^^xsd:string,
+        "15175:15184"^^xsd:string,
+        "15359:15367"^^xsd:string,
+        "601:605"^^xsd:string,
+        "6971:6979"^^xsd:string,
+        "6983:6987"^^xsd:string,
+        "6988:6997"^^xsd:string,
+        "7027:7031"^^xsd:string,
+        "7032:7041"^^xsd:string,
+        "7279:7287"^^xsd:string,
+        "7448:7456"^^xsd:string,
+        "7573:7581"^^xsd:string,
+        "8115:8119"^^xsd:string,
+        "886:894"^^xsd:string,
+        "898:902"^^xsd:string,
+        "903:912"^^xsd:string,
+        "9607:9615"^^xsd:string,
+        "9739:9747"^^xsd:string,
+        "9798:9806"^^xsd:string ;
+    data:wdtLink wdt:Q61104 ;
+    :alsoKnownAs "Bernhard III"^^xsd:string ;
+    :hasBrother data:Bernhard_III-_Duke_of_Saxe-Meiningen ;
+    :hasRelation data:Bernhard_III-_Duke_of_Saxe-Meiningen ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Bernhard_III-_Duke_of_Saxe-Meiningen ;
+    :isBrotherOf data:Bernhard_III-_Duke_of_Saxe-Meiningen ;
+    :isSiblingOf data:Bernhard_III-_Duke_of_Saxe-Meiningen .
+
+data:Prince_August_Wilhelm_of_Prussia a :Man,
+        :Person ;
+    rdfs:label "Prince August Wilhelm of Prussia"^^xsd:string ;
+    data:posIndicesFull "2295:2299"^^xsd:string ;
+    data:posIndicesPart "10616:10623"^^xsd:string,
+        "10740:10747"^^xsd:string,
+        "11219:11226"^^xsd:string,
+        "11312:11319"^^xsd:string,
+        "12021:12028"^^xsd:string,
+        "12199:12206"^^xsd:string,
+        "12388:12394"^^xsd:string,
+        "12825:12831"^^xsd:string,
+        "12990:12996"^^xsd:string,
+        "13063:13069"^^xsd:string,
+        "2460:2467"^^xsd:string,
+        "2585:2592"^^xsd:string,
+        "2690:2696"^^xsd:string,
+        "2751:2758"^^xsd:string,
+        "2875:2881"^^xsd:string,
+        "2918:2925"^^xsd:string,
+        "3122:3129"^^xsd:string,
+        "4882:4889"^^xsd:string,
+        "5317:5324"^^xsd:string,
+        "5418:5424"^^xsd:string,
+        "5656:5662"^^xsd:string,
+        "5944:5951"^^xsd:string,
+        "6145:6152"^^xsd:string,
+        "6964:6970"^^xsd:string,
+        "7142:7148"^^xsd:string,
+        "7198:7205"^^xsd:string,
+        "7566:7572"^^xsd:string,
+        "8007:8014"^^xsd:string,
+        "8095:8101"^^xsd:string,
+        "8420:8427"^^xsd:string,
+        "8492:8499"^^xsd:string,
+        "8872:8878"^^xsd:string,
+        "8961:8968"^^xsd:string,
+        "9707:9714"^^xsd:string ;
+    data:wdtLink wdt:Q58777 ;
+    :alsoKnownAs "Auwi"^^xsd:string ;
+    :hasAncestor data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasBrother data:Prince_August_Wilhelm_of_Prussia ;
+    :hasFather data:Wilhelm_II ;
+    :hasParent data:Wilhelm_II ;
+    :hasRelation data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isBrotherOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isChildOf data:Wilhelm_II ;
+    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isSonOf data:Wilhelm_II .
+
+data:Princess_Charlotte_of_Prussia a :Person,
+        :Woman ;
+    rdfs:label "Princess Charlotte of Prussia"^^xsd:string ;
+    data:posIndicesFull "0:29"^^xsd:string,
+        "2245:2274"^^xsd:string,
+        "2254:2274"^^xsd:string,
+        "9:29"^^xsd:string ;
+    data:posIndicesPart "10084:10093"^^xsd:string,
+        "10225:10234"^^xsd:string,
+        "10361:10370"^^xsd:string,
+        "10595:10604"^^xsd:string,
+        "1063:1071"^^xsd:string,
+        "10761:10770"^^xsd:string,
+        "1112:1121"^^xsd:string,
+        "11433:11442"^^xsd:string,
+        "1179:1188"^^xsd:string,
+        "11870:11879"^^xsd:string,
+        "12176:12185"^^xsd:string,
+        "12343:12352"^^xsd:string,
+        "12444:12453"^^xsd:string,
+        "12585:12593"^^xsd:string,
+        "13220:13229"^^xsd:string,
+        "13357:13366"^^xsd:string,
+        "13588:13597"^^xsd:string,
+        "13662:13671"^^xsd:string,
+        "13874:13883"^^xsd:string,
+        "13925:13934"^^xsd:string,
+        "14099:14108"^^xsd:string,
+        "1417:1426"^^xsd:string,
+        "14240:14249"^^xsd:string,
+        "14425:14434"^^xsd:string,
+        "14767:14776"^^xsd:string,
+        "14888:14897"^^xsd:string,
+        "15206:15215"^^xsd:string,
+        "15503:15512"^^xsd:string,
+        "15852:15861"^^xsd:string,
+        "16013:16022"^^xsd:string,
+        "16162:16171"^^xsd:string,
+        "16239:16248"^^xsd:string,
+        "16582:16591"^^xsd:string,
+        "1664:1673"^^xsd:string,
+        "16704:16713"^^xsd:string,
+        "17041:17050"^^xsd:string,
+        "17099:17107"^^xsd:string,
+        "17370:17379"^^xsd:string,
+        "17602:17611"^^xsd:string,
+        "1807:1814"^^xsd:string,
+        "2381:2390"^^xsd:string,
+        "2460:2467"^^xsd:string,
+        "2469:2478"^^xsd:string,
+        "2585:2592"^^xsd:string,
+        "2654:2663"^^xsd:string,
+        "2762:2771"^^xsd:string,
+        "2891:2900"^^xsd:string,
+        "3048:3057"^^xsd:string,
+        "3134:3143"^^xsd:string,
+        "338:345"^^xsd:string,
+        "3473:3482"^^xsd:string,
+        "3649:3658"^^xsd:string,
+        "3726:3734"^^xsd:string,
+        "3762:3771"^^xsd:string,
+        "3870:3879"^^xsd:string,
+        "4002:4011"^^xsd:string,
+        "4107:4116"^^xsd:string,
+        "412:419"^^xsd:string,
+        "4191:4199"^^xsd:string,
+        "4227:4236"^^xsd:string,
+        "4356:4364"^^xsd:string,
+        "4608:4617"^^xsd:string,
+        "4665:4673"^^xsd:string,
+        "4713:4722"^^xsd:string,
+        "4810:4818"^^xsd:string,
+        "4891:4900"^^xsd:string,
+        "501:510"^^xsd:string,
+        "5126:5135"^^xsd:string,
+        "5231:5240"^^xsd:string,
+        "5429:5437"^^xsd:string,
+        "5443:5452"^^xsd:string,
+        "5667:5675"^^xsd:string,
+        "5677:5686"^^xsd:string,
+        "5850:5858"^^xsd:string,
+        "5872:5881"^^xsd:string,
+        "5914:5923"^^xsd:string,
+        "5987:5996"^^xsd:string,
+        "6232:6241"^^xsd:string,
+        "624:632"^^xsd:string,
+        "6319:6328"^^xsd:string,
+        "633:642"^^xsd:string,
+        "6407:6415"^^xsd:string,
+        "6536:6545"^^xsd:string,
+        "6754:6763"^^xsd:string,
+        "6918:6927"^^xsd:string,
+        "7110:7119"^^xsd:string,
+        "7241:7250"^^xsd:string,
+        "7357:7366"^^xsd:string,
+        "737:746"^^xsd:string,
+        "7418:7427"^^xsd:string,
+        "7705:7714"^^xsd:string,
+        "7804:7813"^^xsd:string,
+        "7980:7988"^^xsd:string,
+        "8007:8014"^^xsd:string,
+        "8062:8071"^^xsd:string,
+        "8350:8358"^^xsd:string,
+        "8420:8427"^^xsd:string,
+        "8540:8549"^^xsd:string,
+        "8700:8708"^^xsd:string,
+        "8747:8756"^^xsd:string,
+        "8783:8791"^^xsd:string,
+        "8825:8833"^^xsd:string,
+        "8883:8891"^^xsd:string,
+        "8970:8979"^^xsd:string,
+        "9134:9143"^^xsd:string,
+        "9253:9262"^^xsd:string,
+        "9593:9602"^^xsd:string,
+        "9643:9652"^^xsd:string,
+        "9725:9734"^^xsd:string,
+        "980:988"^^xsd:string,
+        "9834:9843"^^xsd:string,
+        "989:998"^^xsd:string,
+        "9995:10004"^^xsd:string ;
+    data:wdtLink wdt:Q58670 ;
+    :alsoKnownAs "Charlotte of Prussia"^^xsd:string,
+        "Duchess Charlotte, Duchess Consort of Saxe-Meiningen"^^xsd:string,
+        "Princess Victoria Elizabeth Augusta Charlotte of Prussia"^^xsd:string,
+        "Victoria Elizabeth Augusta Charlotte of Prussia"^^xsd:string ;
+    :hasAncestor data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasRelation data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia ;
+    :isAuntOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II .
+
+data:Princess_Margaret_of_Prussia a :Person,
+        :Woman ;
+    rdfs:label "Princess Margaret of Prussia"^^xsd:string ;
+    data:posIndicesFull "10295:10299"^^xsd:string,
+        "10976:10980"^^xsd:string,
+        "15650:15654"^^xsd:string,
+        "3558:3562"^^xsd:string,
+        "8567:8571"^^xsd:string ;
+    data:posIndicesPart "12585:12593"^^xsd:string,
+        "17099:17107"^^xsd:string,
+        "3726:3734"^^xsd:string,
+        "4191:4199"^^xsd:string,
+        "4356:4364"^^xsd:string,
+        "4665:4673"^^xsd:string,
+        "4810:4818"^^xsd:string,
+        "5017:5025"^^xsd:string,
+        "5429:5437"^^xsd:string,
+        "5667:5675"^^xsd:string,
+        "5850:5858"^^xsd:string,
+        "6407:6415"^^xsd:string,
+        "7980:7988"^^xsd:string,
+        "8007:8014"^^xsd:string,
+        "8350:8358"^^xsd:string,
+        "8420:8427"^^xsd:string,
+        "8700:8708"^^xsd:string,
+        "8783:8791"^^xsd:string,
+        "8825:8833"^^xsd:string,
+        "8883:8891"^^xsd:string ;
+    data:wdtLink wdt:Q61338 ;
+    :alsoKnownAs "Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Margaret of Prussia"^^xsd:string,
+        "Margaret of Prussia, Queen consort-elect of Finland"^^xsd:string,
+        "Margaret of Prussia, Queen-elect of Finland"^^xsd:string,
+        "Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Margarethe of Prussia"^^xsd:string,
+        "Mossy"^^xsd:string,
+        "Princess Frederick Charles of Hesse"^^xsd:string,
+        "Princess Margaret Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe Beatrice Feodora of Prussia"^^xsd:string,
+        "Princess Margarethe of Prussia"^^xsd:string ;
+    :hasAncestor data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasRelation data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia ;
+    :isAuntOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isDaughterOf data:Victoria-_Princess_Royal ;
+    :isSiblingOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isSisterOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II .
+
+data:Victoria-_Princess_Royal a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Victoria, Princess Royal"^^xsd:string ;
+    data:posIndicesFull "1628:1645"^^xsd:string,
+        "1828:1852"^^xsd:string,
+        "475:499"^^xsd:string ;
+    data:posIndicesPart "1063:1071"^^xsd:string,
+        "10678:10686"^^xsd:string,
+        "11293:11298"^^xsd:string,
+        "11767:11772"^^xsd:string,
+        "12306:12311"^^xsd:string,
+        "12585:12593"^^xsd:string,
+        "15636:15641"^^xsd:string,
+        "15740:15745"^^xsd:string,
+        "1584:1589"^^xsd:string,
+        "17099:17107"^^xsd:string,
+        "17445:17453"^^xsd:string,
+        "2047:2055"^^xsd:string,
+        "2150:2158"^^xsd:string,
+        "2337:2345"^^xsd:string,
+        "2538:2543"^^xsd:string,
+        "2842:2850"^^xsd:string,
+        "2989:2997"^^xsd:string,
+        "3339:3344"^^xsd:string,
+        "3611:3619"^^xsd:string,
+        "3726:3734"^^xsd:string,
+        "4191:4199"^^xsd:string,
+        "4356:4364"^^xsd:string,
+        "4525:4533"^^xsd:string,
+        "4665:4673"^^xsd:string,
+        "4810:4818"^^xsd:string,
+        "5429:5437"^^xsd:string,
+        "5667:5675"^^xsd:string,
+        "5807:5815"^^xsd:string,
+        "5850:5858"^^xsd:string,
+        "624:632"^^xsd:string,
+        "6407:6415"^^xsd:string,
+        "7980:7988"^^xsd:string,
+        "8350:8358"^^xsd:string,
+        "8700:8708"^^xsd:string,
+        "8783:8791"^^xsd:string,
+        "8825:8833"^^xsd:string,
+        "8883:8891"^^xsd:string,
+        "8940:8948"^^xsd:string,
+        "9389:9394"^^xsd:string,
+        "980:988"^^xsd:string ;
+    data:wdtLink wdt:Q116728 ;
+    :alsoKnownAs "Empress Frederick"^^xsd:string,
+        "Empress Frederick of Germany"^^xsd:string,
+        "Empress Friedrich"^^xsd:string,
+        "Empress Victoria of Germany"^^xsd:string,
+        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise"^^xsd:string,
+        "Princess Victoria Adelaide Mary Louise of the United Kingdom"^^xsd:string,
+        "Princess Victoria of the United Kingdom"^^xsd:string,
+        "Victoria Adelaide Mary Louisa"^^xsd:string,
+        "Victoria Adelaide Mary Louise"^^xsd:string,
+        "Victoria, Crown Princess of Prussia"^^xsd:string,
+        "Victoria, Empress Frederick of Germany"^^xsd:string,
+        "Victoria, Empress consort of Germany"^^xsd:string,
+        "Victoria, Empress of Germany"^^xsd:string,
+        "Victoria, German Empress"^^xsd:string,
+        "Victoria, Queen of Prussia and Empress of Germany"^^xsd:string ;
+    :hasChild data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :hasDaughter data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia ;
+    :hasRelation data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:female ;
+    :hasSister data:Victoria-_Princess_Royal ;
+    :hasSon data:Wilhelm_II ;
+    :isAncestorOf data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isAuntOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isBloodrelationOf data:Victoria-_Princess_Royal ;
+    :isMotherOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isParentOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isSiblingOf data:Victoria-_Princess_Royal ;
+    :isSisterOf data:Victoria-_Princess_Royal .
+
+data:Wilhelm_II a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Wilhelm II"^^xsd:string ;
+    data:posIndicesFull "10349:10359"^^xsd:string,
+        "1233:1243"^^xsd:string ;
+    data:posIndicesPart "10616:10623"^^xsd:string,
+        "10740:10747"^^xsd:string,
+        "11219:11226"^^xsd:string,
+        "11312:11319"^^xsd:string,
+        "12021:12028"^^xsd:string,
+        "12199:12206"^^xsd:string,
+        "2015:2022"^^xsd:string,
+        "2751:2758"^^xsd:string,
+        "2918:2925"^^xsd:string,
+        "3122:3129"^^xsd:string,
+        "4882:4889"^^xsd:string,
+        "5317:5324"^^xsd:string,
+        "5944:5951"^^xsd:string,
+        "6145:6152"^^xsd:string,
+        "7198:7205"^^xsd:string,
+        "8492:8499"^^xsd:string,
+        "8961:8968"^^xsd:string,
+        "9707:9714"^^xsd:string ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam"^^xsd:string,
+        "Frederick William Victor Albert of Prussia"^^xsd:string,
+        "Friedrich Wilhelm Emperor William II"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern"^^xsd:string,
+        "Friedrich Wilhelm Viktor Albrecht von Preußen"^^xsd:string,
+        "German Emperor Wilhelm II"^^xsd:string,
+        "Kaiser Wilhelm II"^^xsd:string,
+        "Wilhelm II of Germany"^^xsd:string,
+        "Wilhelm II, German Emperor"^^xsd:string,
+        "Wilhelm II."^^xsd:string,
+        "William II"^^xsd:string ;
+    :hasAncestor data:Victoria-_Princess_Royal ;
+    :hasBrother data:Wilhelm_II ;
+    :hasChild data:Prince_August_Wilhelm_of_Prussia ;
+    :hasMother data:Victoria-_Princess_Royal ;
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasRelation data:Prince_August_Wilhelm_of_Prussia,
+        data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Victoria-_Princess_Royal,
+        data:Wilhelm_II ;
+    :hasSex data:male ;
+    :hasSister data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia ;
+    :hasSon data:Prince_August_Wilhelm_of_Prussia ;
+    :isAncestorOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isBloodrelationOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isBrotherOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isChildOf data:Victoria-_Princess_Royal ;
+    :isFatherOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isParentOf data:Prince_August_Wilhelm_of_Prussia ;
+    :isSiblingOf data:Princess_Charlotte_of_Prussia,
+        data:Princess_Margaret_of_Prussia,
+        data:Wilhelm_II ;
+    :isSonOf data:Victoria-_Princess_Royal ;
+    :isUncleOf data:Prince_August_Wilhelm_of_Prussia .
+

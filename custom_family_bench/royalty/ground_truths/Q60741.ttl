@@ -7,38 +7,54 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Prince_Philip-_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Philip, Duke of Edinburgh" ;
-    data:posIndicesFull "2206:2220" ;
-    data:posIndicesPart "3920:3926",
-        "4417:4423" ;
-    data:wdtLink wdt:Q80976 ;
-    :alsoKnownAs "H.R.H. Prince Philip",
-        "H.R.H. The Duke Of Edinburgh",
-        "Lieutenant Philip Mountbatten",
-        "Philip Edinburgh",
-        "Philip Mountbatten",
-        "Philip Mountbatten; Prince Philip of Greece and Denmark",
-        "Philip of Greece and Denmark",
-        "Prince Philip",
-        "Prince Philip of Greece and Denmark",
-        "The Prince Philip, Duke of Edinburgh" ;
+data:Prince_Philipp-_Landgrave_of_Hesse a :Person ;
+    rdfs:label "Prince Philipp, Landgrave of Hesse" ;
+    data:wdtLink wdt:Q60741 ;
+    :alsoKnownAs "Philipp Prinz von Hessen",
+        "Philipp de Hesse-Kassel",
+        "Philipp von Hessen",
+        "Prince Philipp, Landgrave of Hesse" ;
+    :hasParent data:Prince_Frederick_Charles_of_Hesse,
+        data:Princess_Margaret_of_Prussia ;
     :hasSex data:male .
 
-data:Princess_Mafalda_of_Savoy a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Mafalda_of_Savoy a :Person ;
     rdfs:label "Princess Mafalda of Savoy" ;
     data:posIndicesFull "1265:1290" ;
     data:posIndicesPart "2903:2910",
-        "3021:3028" ;
+        "2967:2974" ;
     data:wdtLink wdt:Q235832 ;
     :alsoKnownAs "Princess Mafalda, Landgravine of Hesse-Kassel" ;
     :hasSex data:female .
+
+data:Sophia_of_Prussia a :Person ;
+    rdfs:label "Sophia of Prussia" ;
+    data:posIndicesFull "1064:1081" ;
+    data:wdtLink wdt:Q155822 ;
+    :alsoKnownAs "Queen Sophia of Greece",
+        "Queen Sophia, Queen Consort of Greece" ;
+    :hasParent data:Frederick_III-_German_Emperor ;
+    :hasSex data:female .
+
+data:Wilhelm_II a :Person ;
+    rdfs:label "Wilhelm II" ;
+    data:posIndicesFull "467:492",
+        "482:492" ;
+    data:posIndicesPart "705:712" ;
+    data:wdtLink wdt:Q2677 ;
+    :alsoKnownAs "Emperor Willlam",
+        "Frederick William Victor Albert of Prussia",
+        "Friedrich Wilhelm Emperor William II",
+        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
+        "Friedrich Wilhelm Viktor Albrecht von Preußen",
+        "German Emperor Wilhelm II",
+        "Kaiser Wilhelm II",
+        "Wilhelm II of Germany",
+        "Wilhelm II, German Emperor",
+        "Wilhelm II.",
+        "William II" ;
+    :hasParent data:Frederick_III-_German_Emperor ;
+    :hasSex data:male .
 
 data:posIndicesFull a owl:AnnotationProperty .
 
@@ -46,25 +62,23 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Frederick_Charles_of_Hesse a :Person ;
     rdfs:label "Prince Frederick Charles of Hesse" ;
     data:posIndicesFull "373:406",
         "380:406" ;
     data:posIndicesPart "1961:1966",
+        "2206:2212",
         "2426:2431",
         "2874:2879",
-        "3849:3854",
-        "3920:3926",
-        "3930:3935",
-        "4107:4112",
-        "4136:4141",
-        "4143:4148",
-        "4162:4167",
-        "4378:4383",
-        "4488:4493",
+        "3795:3800",
+        "3866:3872",
+        "3876:3881",
+        "4053:4058",
+        "4082:4087",
+        "4089:4094",
+        "4108:4113",
+        "4324:4329",
+        "4434:4439",
         "824:829",
         "920:925" ;
     data:wdtLink wdt:Q63679 ;
@@ -72,109 +86,9 @@ data:Prince_Frederick_Charles_of_Hesse a :Ancestor,
         "Frederick Charles Louis Constantine of Hesse",
         "Frederick Charles of Hesse",
         "Prince Frederick Charles Louis Constantine of Hesse" ;
-    :hasChild data:Prince_Philipp-_Landgrave_of_Hesse ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Philipp-_Landgrave_of_Hesse ;
-    :isFatherOf data:Prince_Philipp-_Landgrave_of_Hesse ;
-    :isParentOf data:Prince_Philipp-_Landgrave_of_Hesse .
+    :hasSex data:male .
 
-data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince August Wilhelm of Prussia" ;
-    data:posIndicesFull "1049:1053" ;
-    data:posIndicesPart "2970:2976",
-        "3920:3926" ;
-    data:wdtLink wdt:Q58777 ;
-    :alsoKnownAs "Auwi" ;
-    :hasFather data:Wilhelm_II ;
-    :hasParent data:Wilhelm_II ;
-    :hasSex data:male ;
-    :isChildOf data:Wilhelm_II ;
-    :isSonOf data:Wilhelm_II .
-
-data:Prince_Philipp-_Landgrave_of_Hesse a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Philipp, Landgrave of Hesse" ;
-    data:wdtLink wdt:Q60741 ;
-    :alsoKnownAs "Philipp Prinz von Hessen",
-        "Philipp de Hesse-Kassel",
-        "Philipp von Hessen",
-        "Prince Philipp, Landgrave of Hesse" ;
-    :hasFather data:Prince_Frederick_Charles_of_Hesse ;
-    :hasMother data:Princess_Margaret_of_Prussia ;
-    :hasParent data:Prince_Frederick_Charles_of_Hesse,
-        data:Princess_Margaret_of_Prussia ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Frederick_Charles_of_Hesse,
-        data:Princess_Margaret_of_Prussia ;
-    :isSonOf data:Prince_Frederick_Charles_of_Hesse,
-        data:Princess_Margaret_of_Prussia .
-
-data:Sophia_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Sophia of Prussia" ;
-    data:posIndicesFull "1064:1081" ;
-    data:wdtLink wdt:Q155822 ;
-    :alsoKnownAs "Queen Sophia of Greece",
-        "Queen Sophia, Queen Consort of Greece" ;
-    :hasBrother data:Wilhelm_II ;
-    :hasFather data:Frederick_III-_German_Emperor ;
-    :hasParent data:Frederick_III-_German_Emperor ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Margaret_of_Prussia ;
-    :isAuntOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Prince_Philipp-_Landgrave_of_Hesse ;
-    :isChildOf data:Frederick_III-_German_Emperor ;
-    :isDaughterOf data:Frederick_III-_German_Emperor ;
-    :isSiblingOf data:Princess_Margaret_of_Prussia,
-        data:Wilhelm_II ;
-    :isSisterOf data:Princess_Margaret_of_Prussia,
-        data:Wilhelm_II .
-
-data:Frederick_III-_German_Emperor a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Frederick III, German Emperor" ;
-    data:posIndicesFull "161:190" ;
-    data:posIndicesPart "1656:1662",
-        "1794:1800",
-        "1873:1879",
-        "2171:2177",
-        "2255:2261",
-        "2601:2607",
-        "3550:3556" ;
-    data:wdtLink wdt:Q58600 ;
-    :alsoKnownAs "Frederick III of Germany",
-        "Friedrich III",
-        "Friedrich III of Germany",
-        "Friedrich Wilhelm Nikolaus Karl",
-        "King Frederick III of Prussia",
-        "Kronprinz Friedrich Wilhelm" ;
-    :hasChild data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :hasDaughter data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Wilhelm_II ;
-    :isFatherOf data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :isParentOf data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia,
-        data:Wilhelm_II .
-
-data:Princess_Margaret_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Margaret_of_Prussia a :Person ;
     rdfs:label "Princess Margaret of Prussia" ;
     data:posIndicesFull "1450:1456",
         "2729:2733",
@@ -195,57 +109,29 @@ data:Princess_Margaret_of_Prussia a :Ancestor,
         "Princess Margaret Beatrice Feodora of Prussia",
         "Princess Margarethe Beatrice Feodora of Prussia",
         "Princess Margarethe of Prussia" ;
-    :hasBrother data:Wilhelm_II ;
-    :hasChild data:Prince_Philipp-_Landgrave_of_Hesse ;
-    :hasFather data:Frederick_III-_German_Emperor ;
     :hasParent data:Frederick_III-_German_Emperor ;
-    :hasSex data:female ;
-    :hasSister data:Sophia_of_Prussia ;
-    :hasSon data:Prince_Philipp-_Landgrave_of_Hesse ;
-    :isAuntOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isChildOf data:Frederick_III-_German_Emperor ;
-    :isDaughterOf data:Frederick_III-_German_Emperor ;
-    :isMotherOf data:Prince_Philipp-_Landgrave_of_Hesse ;
-    :isParentOf data:Prince_Philipp-_Landgrave_of_Hesse ;
-    :isSiblingOf data:Sophia_of_Prussia,
-        data:Wilhelm_II ;
-    :isSisterOf data:Sophia_of_Prussia,
-        data:Wilhelm_II .
+    :hasSex data:female .
 
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Wilhelm II" ;
-    data:posIndicesFull "467:492",
-        "482:492" ;
-    data:posIndicesPart "705:712" ;
-    data:wdtLink wdt:Q2677 ;
-    :alsoKnownAs "Emperor Willlam",
-        "Frederick William Victor Albert of Prussia",
-        "Friedrich Wilhelm Emperor William II",
-        "Friedrich Wilhelm Viktor Albert von Hohenzollern",
-        "Friedrich Wilhelm Viktor Albrecht von Preußen",
-        "German Emperor Wilhelm II",
-        "Kaiser Wilhelm II",
-        "Wilhelm II of Germany",
-        "Wilhelm II, German Emperor",
-        "Wilhelm II.",
-        "William II" ;
-    :hasChild data:Prince_August_Wilhelm_of_Prussia ;
-    :hasFather data:Frederick_III-_German_Emperor ;
-    :hasParent data:Frederick_III-_German_Emperor ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :hasSon data:Prince_August_Wilhelm_of_Prussia ;
-    :isBrotherOf data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isChildOf data:Frederick_III-_German_Emperor ;
-    :isFatherOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isParentOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isSiblingOf data:Princess_Margaret_of_Prussia,
-        data:Sophia_of_Prussia ;
-    :isSonOf data:Frederick_III-_German_Emperor ;
-    :isUncleOf data:Prince_Philipp-_Landgrave_of_Hesse .
+data:Frederick_III-_German_Emperor a :Person ;
+    rdfs:label "Frederick III, German Emperor" ;
+    data:posIndicesFull "161:190" ;
+    data:posIndicesPart "1656:1662",
+        "1794:1800",
+        "1873:1879",
+        "2171:2177",
+        "2255:2261",
+        "2601:2607",
+        "3496:3502" ;
+    data:wdtLink wdt:Q58600 ;
+    :alsoKnownAs "Frederick III of Germany",
+        "Friedrich III",
+        "Friedrich III of Germany",
+        "Friedrich Wilhelm Nikolaus Karl",
+        "King Frederick III of Prussia",
+        "Kronprinz Friedrich Wilhelm" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

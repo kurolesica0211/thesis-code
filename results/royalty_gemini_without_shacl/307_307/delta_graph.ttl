@@ -2,35 +2,59 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Paul_Dmitrievich_Romanovsky-Ilyinsky a :Man,
+data:Norton_Louis_Philip_Knatchbull a :Man,
         :Person ;
-    :hasAncestor data:Alexander_II_of_Russia ;
-    :hasBirthYear 1928 ;
-    :hasDeathYear 2004 ;
-    :hasFather data:Dmitri_Pavlovich_of_Russia ;
-    :hasMarriageYear 1948,
-        1953 ;
-    :hasMother data:Audrey_Emery ;
-    :hasRelation data:Angelica_Philippa_Kauffmann,
-        data:Mary_Evelyn_Prince .
+    :formerlyKnownAs "Lord Brabourne"^^xsd:string,
+        "Lord Romsey"^^xsd:string ;
+    :hasBirthYear 1947 ;
+    :hasBrother data:Nicholas_Knatchbull ;
+    :hasFather data:John_Knatchbull ;
+    :hasMarriageYear 1979 ;
+    :hasMother data:Patricia_Knatchbull ;
+    :hasRelation data:Eugenie_Lady_Nuttall,
+        data:Penelope_Meredith_Eastwood .
 
-data:Alexander_II_of_Russia a :Ancestor,
-        :Man,
+data:Doreen_Knatchbull a :Person,
+        :Woman .
+
+data:Edward_Austen_Knight a :Man,
+        :Person ;
+    :isBrotherOf data:Jane_Austen .
+
+data:Eugenie_Lady_Nuttall a :Person,
+        :Woman .
+
+data:Jane_Austen a :Person,
+        :Woman .
+
+data:John_Knatchbull a :Man,
+        :Person ;
+    :hasAncestor data:Edward_Austen_Knight ;
+    :hasMother data:Doreen_Knatchbull .
+
+data:Louis_Mountbatten a :Man,
         :Person .
 
-data:Angelica_Philippa_Kauffmann a :Person,
-        :Woman .
+data:Marian_Elizabeth_Hood a :Person,
+        :Woman ;
+    :hasBirthYear 1926 ;
+    :hasDeathYear 2020 .
 
-data:Dmitri_Pavlovich_of_Russia a :Ancestor,
-        :Man,
+data:Nicholas_Knatchbull a :Man,
+        :Person .
+
+data:Patricia_Knatchbull a :Person,
+        :Woman ;
+    :hasFather data:Louis_Mountbatten .
+
+data:Penelope_Meredith_Eastwood a :Person,
+        :Woman ;
+    :hasBirthYear 1953 ;
+    :hasFather data:Reginald_Wray_Frank_Eastwood ;
+    :hasMother data:Marian_Elizabeth_Hood .
+
+data:Reginald_Wray_Frank_Eastwood a :Man,
         :Person ;
-    :hasMarriageYear 1926 ;
-    :hasRelation data:Audrey_Emery .
-
-data:Mary_Evelyn_Prince a :Person,
-        :Woman .
-
-data:Audrey_Emery a :Ancestor,
-        :Person,
-        :Woman .
+    :hasBirthYear 1912 ;
+    :hasDeathYear 1980 .
 

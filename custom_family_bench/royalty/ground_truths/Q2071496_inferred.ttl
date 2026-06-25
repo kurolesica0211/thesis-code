@@ -1,0 +1,66 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Astrid-_Archduchess_of_Austria-Este a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Astrid, Archduchess of Austria-Este"^^xsd:string ;
+    data:posIndicesFull "279:296"^^xsd:string ;
+    data:posIndicesPart "341:349"^^xsd:string,
+        "716:727"^^xsd:string,
+        "731:738"^^xsd:string,
+        "739:743"^^xsd:string,
+        "787:795"^^xsd:string,
+        "871:879"^^xsd:string,
+        "974:982"^^xsd:string,
+        "983:989"^^xsd:string ;
+    data:wdtLink wdt:Q170194 ;
+    :alsoKnownAs "Astrid of Belgium"^^xsd:string ;
+    :hasChild data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este ;
+    :hasRelation data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este,
+        data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasSon data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este ;
+    :isAncestorOf data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este ;
+    :isAuntOf data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este ;
+    :isBloodrelationOf data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :isMotherOf data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este ;
+    :isParentOf data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este ;
+    :isSiblingOf data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :isSisterOf data:Princess_Astrid-_Archduchess_of_Austria-Este .
+
+data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este a :Man,
+        :Person ;
+    rdfs:label "Prince Amedeo, Hereditary Archduke of Austria-Este"^^xsd:string ;
+    data:wdtLink wdt:Q2071496 ;
+    :alsoKnownAs "Amedeo Marie de Belgique, Prince de Belgique"^^xsd:string ;
+    :hasAncestor data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasBrother data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este ;
+    :hasMother data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasParent data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasRelation data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este,
+        data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este ;
+    :isBrotherOf data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este ;
+    :isChildOf data:Princess_Astrid-_Archduchess_of_Austria-Este ;
+    :isSiblingOf data:Prince_Amedeo-_Hereditary_Archduke_of_Austria-Este ;
+    :isSonOf data:Princess_Astrid-_Archduchess_of_Austria-Este .
+

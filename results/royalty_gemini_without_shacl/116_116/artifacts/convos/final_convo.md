@@ -114,6 +114,8 @@ External links
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -129,39 +131,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -176,6 +148,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -193,6 +182,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -260,29 +264,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -291,6 +287,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -303,6 +307,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -311,17 +317,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -349,6 +357,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -364,392 +456,133 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (a8c67edd-4ffe-489f-abe3-10831a04871c)
- Call ID: a8c67edd-4ffe-489f-abe3-10831a04871c
+  AssignClass (e08e4005-87c1-4998-9af2-bfefb31e7415)
+ Call ID: e08e4005-87c1-4998-9af2-bfefb31e7415
   Args:
     type: :Man
-    source: Bertrand_of_Orleans-Braganza
-  AssignClass (3b86a7da-a54c-4e17-a008-dae23295cc15)
- Call ID: 3b86a7da-a54c-4e17-a008-dae23295cc15
+    source: :Bertrand_of_Orléans-Braganza
+  AssignClass (06f77b8c-8250-45c7-81fd-7c27dd9ee064)
+ Call ID: 06f77b8c-8250-45c7-81fd-7c27dd9ee064
   Args:
+    source: :Bertrand_of_Orléans-Braganza
     type: :Person
-    source: Bertrand_of_Orleans-Braganza
-  AddLiteral (9f88a34b-d187-413e-a949-584ea1a6f70c)
- Call ID: 9f88a34b-d187-413e-a949-584ea1a6f70c
+  AddLiteral (5f41c454-1ae3-43ec-a5ea-df7d1b97de5e)
+ Call ID: 5f41c454-1ae3-43ec-a5ea-df7d1b97de5e
   Args:
-    source: Bertrand_of_Orleans-Braganza
-    literal_value: 1941
-    literal_type: xsd:integer
     relation: :hasBirthYear
-  AddTriple (1b0496b3-aeef-4a04-932d-1bf0fa4eeaa5)
- Call ID: 1b0496b3-aeef-4a04-932d-1bf0fa4eeaa5
-  Args:
-    relation: :hasSex
-    target: :Male
-    source: Bertrand_of_Orleans-Braganza
-  AssignClass (1d543d6d-48c7-4300-a17c-acb5baa5ec78)
- Call ID: 1d543d6d-48c7-4300-a17c-acb5baa5ec78
+    literal_type: xsd:integer
+    literal_value: 1941
+    source: :Bertrand_of_Orléans-Braganza
+  AssignClass (68220c8d-bfea-4f7d-8608-e552e38f2d7a)
+ Call ID: 68220c8d-bfea-4f7d-8608-e552e38f2d7a
   Args:
     type: :Man
-    source: Luiz_of_Orleans-Braganza
-  AssignClass (5ffd853c-1405-4639-8701-b1a40cb2e6f5)
- Call ID: 5ffd853c-1405-4639-8701-b1a40cb2e6f5
+    source: :Luiz_of_Orléans-Braganza
+  AssignClass (4f8efeb2-c324-452c-bc77-c0ce1d421114)
+ Call ID: 4f8efeb2-c324-452c-bc77-c0ce1d421114
   Args:
     type: :Person
-    source: Luiz_of_Orleans-Braganza
-  AddTriple (77567f11-e3fc-4b6e-99a6-477174249295)
- Call ID: 77567f11-e3fc-4b6e-99a6-477174249295
+    source: :Luiz_of_Orléans-Braganza
+  AddTriple (f277adcf-7dfe-45e4-94f1-b7fdccf647f8)
+ Call ID: f277adcf-7dfe-45e4-94f1-b7fdccf647f8
   Args:
-    target: :Bertrand_of_Orleans-Braganza
-    source: Luiz_of_Orleans-Braganza
+    target: :Luiz_of_Orléans-Braganza
+    source: :Bertrand_of_Orléans-Braganza
     relation: :isBrotherOf
-  AssignClass (6b74e208-677a-48c5-a7a9-06d67baf6877)
- Call ID: 6b74e208-677a-48c5-a7a9-06d67baf6877
+  AssignClass (1c53fd38-927a-4a36-9d10-91ba1ef2fa46)
+ Call ID: 1c53fd38-927a-4a36-9d10-91ba1ef2fa46
   Args:
+    source: :Pedro_Carlos
     type: :Man
-    source: Eudes_of_Orleans-Braganza
-  AssignClass (db6c7143-4016-4b89-8018-1c1241bc0856)
- Call ID: db6c7143-4016-4b89-8018-1c1241bc0856
+  AssignClass (1db337b2-2bb8-45dc-b6bf-70afcd00356b)
+ Call ID: 1db337b2-2bb8-45dc-b6bf-70afcd00356b
+  Args:
+    source: :Pedro_Carlos
+    type: :Person
+  AssignClass (82d39bad-effe-4ae6-b544-3c95813a44e6)
+ Call ID: 82d39bad-effe-4ae6-b544-3c95813a44e6
+  Args:
+    type: :Woman
+    source: :Isabel_Princess_Imperial_of_Brazil
+  AssignClass (aee33dfb-a893-413b-adf8-725896237cd6)
+ Call ID: aee33dfb-a893-413b-adf8-725896237cd6
   Args:
     type: :Person
-    source: Eudes_of_Orleans-Braganza
-  AddTriple (deab4ae8-4a54-4b98-8298-e6c63df38ddf)
- Call ID: deab4ae8-4a54-4b98-8298-e6c63df38ddf
+    source: :Isabel_Princess_Imperial_of_Brazil
+  AssignClass (335a8cfd-673a-4f58-a865-b0bd0de46946)
+ Call ID: 335a8cfd-673a-4f58-a865-b0bd0de46946
   Args:
-    target: :Bertrand_of_Orleans-Braganza
-    source: Eudes_of_Orleans-Braganza
-    relation: :isBrotherOf
-  AssignClass (0817d855-77a5-41b0-84d5-e1c49c0934d6)
- Call ID: 0817d855-77a5-41b0-84d5-e1c49c0934d6
-  Args:
+    source: :Emperor_Pedro_II
     type: :Man
-    source: Pedro_Henrique_of_Orleans-Braganza
-  AssignClass (73a4ef5a-8f84-46b2-a0e2-381a60f83687)
- Call ID: 73a4ef5a-8f84-46b2-a0e2-381a60f83687
-  Args:
-    type: :Ancestor
-    source: Pedro_Henrique_of_Orleans-Braganza
-  AssignClass (68d56283-c76a-4918-b9fd-e52aef50be88)
- Call ID: 68d56283-c76a-4918-b9fd-e52aef50be88
+  AssignClass (d5b36485-293a-41b5-9a9e-4f5b0fcfbf94)
+ Call ID: d5b36485-293a-41b5-9a9e-4f5b0fcfbf94
   Args:
     type: :Person
-    source: Pedro_Henrique_of_Orleans-Braganza
-  AddTriple (8f5e52d0-924f-4981-8de0-d82dc6c63301)
- Call ID: 8f5e52d0-924f-4981-8de0-d82dc6c63301
+    source: :Emperor_Pedro_II
+  AddTriple (6e613910-05c6-456a-a73c-73ee57b38459)
+ Call ID: 6e613910-05c6-456a-a73c-73ee57b38459
   Args:
-    target: :Pedro_Henrique_of_Orleans-Braganza
-    source: Bertrand_of_Orleans-Braganza
+    relation: :isDaughterOf
+    source: :Isabel_Princess_Imperial_of_Brazil
+    target: :Emperor_Pedro_II
+  AssignClass (300ca0a9-f819-4281-945d-9d4c4f08ca7e)
+ Call ID: 300ca0a9-f819-4281-945d-9d4c4f08ca7e
+  Args:
+    source: :Pedro_Henrique_of_Orléans-Braganza
+    type: :Man
+  AssignClass (e37c1d97-984e-41b8-816b-999d1037b351)
+ Call ID: e37c1d97-984e-41b8-816b-999d1037b351
+  Args:
+    type: :Person
+    source: :Pedro_Henrique_of_Orléans-Braganza
+  AssignClass (384e1b27-7092-4329-8ae9-cd1bff1bcbbb)
+ Call ID: 384e1b27-7092-4329-8ae9-cd1bff1bcbbb
+  Args:
+    type: :Woman
+    source: :Princess_Maria_Elisabeth_of_Bavaria
+  AssignClass (4e8465bb-ff08-471a-a9b9-696a5dc617cc)
+ Call ID: 4e8465bb-ff08-471a-a9b9-696a5dc617cc
+  Args:
+    source: :Princess_Maria_Elisabeth_of_Bavaria
+    type: :Person
+  AddTriple (a8caf0a1-b7ae-418b-9d1f-2b3d6b9f179e)
+ Call ID: a8caf0a1-b7ae-418b-9d1f-2b3d6b9f179e
+  Args:
     relation: :hasFather
-  AssignClass (0639578e-d66c-48af-9aa3-62e5db000c42)
- Call ID: 0639578e-d66c-48af-9aa3-62e5db000c42
+    target: :Pedro_Henrique_of_Orléans-Braganza
+    source: :Bertrand_of_Orléans-Braganza
+  AddTriple (0f02634a-00aa-4772-8bd3-a5adf60811e1)
+ Call ID: 0f02634a-00aa-4772-8bd3-a5adf60811e1
   Args:
-    type: :Woman
-    source: Princess_Maria_Elisabeth_of_Bavaria
-  AssignClass (a3bb3c21-4da0-4841-8650-a7c129927a72)
- Call ID: a3bb3c21-4da0-4841-8650-a7c129927a72
-  Args:
-    type: :Ancestor
-    source: Princess_Maria_Elisabeth_of_Bavaria
-  AssignClass (0de69b15-c9e3-4f48-add0-5e207a1fc6bb)
- Call ID: 0de69b15-c9e3-4f48-add0-5e207a1fc6bb
-  Args:
-    type: :Person
-    source: Princess_Maria_Elisabeth_of_Bavaria
-  AddTriple (4b9d2a1c-abea-44f0-8371-a03e7708ddc5)
- Call ID: 4b9d2a1c-abea-44f0-8371-a03e7708ddc5
-  Args:
-    relation: :hasMother
-    source: Bertrand_of_Orleans-Braganza
     target: :Princess_Maria_Elisabeth_of_Bavaria
-  AssignClass (fd30570c-797c-4025-88e2-923f7e8b6b27)
- Call ID: fd30570c-797c-4025-88e2-923f7e8b6b27
-  Args:
-    type: :Woman
-    source: Isabel_Princess_Imperial_of_Brazil
-  AssignClass (5ba83b0e-e136-43cb-98d7-9a0bd989e8f9)
- Call ID: 5ba83b0e-e136-43cb-98d7-9a0bd989e8f9
-  Args:
-    type: :Ancestor
-    source: Isabel_Princess_Imperial_of_Brazil
-  AssignClass (5c9c136e-8550-444b-bec8-3aa3feae78a1)
- Call ID: 5c9c136e-8550-444b-bec8-3aa3feae78a1
-  Args:
-    type: :Person
-    source: Isabel_Princess_Imperial_of_Brazil
-  AssignClass (2a024926-ba22-4ca7-a634-b7a8098c5268)
- Call ID: 2a024926-ba22-4ca7-a634-b7a8098c5268
+    source: :Bertrand_of_Orléans-Braganza
+    relation: :hasMother
+  AssignClass (e43af52f-ca4c-41ba-a16c-a5f2a3f96a1e)
+ Call ID: e43af52f-ca4c-41ba-a16c-a5f2a3f96a1e
   Args:
     type: :Man
-    source: Pedro_II_of_Brazil
-  AssignClass (8968696d-0198-424d-a5c9-e469c3ea796f)
- Call ID: 8968696d-0198-424d-a5c9-e469c3ea796f
-  Args:
-    type: :Ancestor
-    source: Pedro_II_of_Brazil
-  AssignClass (12e8dd22-57c7-4ddb-988d-3a23ca23361a)
- Call ID: 12e8dd22-57c7-4ddb-988d-3a23ca23361a
+    source: :Eudes_of_Orléans-Braganza
+  AssignClass (d6e1bde4-dd04-49f9-8927-ef4abc031847)
+ Call ID: d6e1bde4-dd04-49f9-8927-ef4abc031847
   Args:
     type: :Person
-    source: Pedro_II_of_Brazil
-  AddTriple (b0de6325-f6fc-4bb3-99a8-a7537bb9b895)
- Call ID: b0de6325-f6fc-4bb3-99a8-a7537bb9b895
+    source: :Eudes_of_Orléans-Braganza
+  AddTriple (5ab53ea0-8d34-4c0f-9476-1fe4813c1d12)
+ Call ID: 5ab53ea0-8d34-4c0f-9476-1fe4813c1d12
   Args:
-    relation: :isFatherOf
-    target: :Isabel_Princess_Imperial_of_Brazil
-    source: Pedro_II_of_Brazil
-  AssignClass (d724e3d7-4b83-47bb-90b7-621e7aad6980)
- Call ID: d724e3d7-4b83-47bb-90b7-621e7aad6980
+    target: :Eudes_of_Orléans-Braganza
+    source: :Bertrand_of_Orléans-Braganza
+    relation: :isBrotherOf
+  AssignClass (3f774897-b438-44c2-9edb-92886d84a1f8)
+ Call ID: 3f774897-b438-44c2-9edb-92886d84a1f8
   Args:
     type: :Man
-    source: King_Ludwig_III_of_Bavaria
-  AssignClass (82b02acd-1ca0-487a-a590-f0ace450dbdd)
- Call ID: 82b02acd-1ca0-487a-a590-f0ace450dbdd
+    source: :King_Ludwig_III_of_Bavaria
+  AssignClass (b8cda754-8b3e-48a4-b592-ebb8f1873bfa)
+ Call ID: b8cda754-8b3e-48a4-b592-ebb8f1873bfa
   Args:
-    type: :Ancestor
-    source: King_Ludwig_III_of_Bavaria
-  AssignClass (5c4d86ac-656d-4d6e-b8ae-2b616236db08)
- Call ID: 5c4d86ac-656d-4d6e-b8ae-2b616236db08
-  Args:
+    source: :King_Ludwig_III_of_Bavaria
     type: :Person
-    source: King_Ludwig_III_of_Bavaria
-  AddTriple (cf1557a1-a751-47ae-b9bd-3a00c8901e4c)
- Call ID: cf1557a1-a751-47ae-b9bd-3a00c8901e4c
-  Args:
-    relation: :hasAncestor
-    target: :Isabel_Princess_Imperial_of_Brazil
-    source: Bertrand_of_Orleans-Braganza
-  AddTriple (2c655ce4-cc56-48c3-b130-647443eaf6e5)
- Call ID: 2c655ce4-cc56-48c3-b130-647443eaf6e5
-  Args:
-    source: Bertrand_of_Orleans-Braganza
-    target: :King_Ludwig_III_of_Bavaria
-    relation: :hasAncestor
-  AssignClass (d04f994c-999e-47d6-b950-057ea11362d4)
- Call ID: d04f994c-999e-47d6-b950-057ea11362d4
-  Args:
-    type: :Man
-    source: Pedro_Carlos
-  AssignClass (e6e90a5a-610a-4371-ab2f-062c276c9620)
- Call ID: e6e90a5a-610a-4371-ab2f-062c276c9620
-  Args:
-    type: :Person
-    source: Pedro_Carlos
-  AddTriple (6835f93a-f017-4361-8fd4-5a4e9165d9f1)
- Call ID: 6835f93a-f017-4361-8fd4-5a4e9165d9f1
-  Args:
-    target: :Isabel_Princess_Imperial_of_Brazil
-    source: Pedro_Carlos
-    relation: :hasAncestor
-  Finish (3ce90714-288a-44cb-93b2-931425b4a3f5)
- Call ID: 3ce90714-288a-44cb-93b2-931425b4a3f5
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Eudes_of_Orleans-Braganza a :Man,
-          :Person ;
-      :isBrotherOf data:Bertrand_of_Orleans-Braganza .
-
-  data:Luiz_of_Orleans-Braganza a :Man,
-          :Person ;
-      :isBrotherOf data:Bertrand_of_Orleans-Braganza .
-
-  data:Pedro_Carlos a :Man,
-          :Person ;
-      :hasAncestor data:Isabel_Princess_Imperial_of_Brazil .
-
-  data:Pedro_II_of_Brazil a :Ancestor,
-          :Man,
-          :Person ;
-      :isFatherOf data:Isabel_Princess_Imperial_of_Brazil .
-
-  data:King_Ludwig_III_of_Bavaria a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Pedro_Henrique_of_Orleans-Braganza a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Princess_Maria_Elisabeth_of_Bavaria a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Bertrand_of_Orleans-Braganza a :Man,
-          :Person ;
-      :hasAncestor data:Isabel_Princess_Imperial_of_Brazil,
-          data:King_Ludwig_III_of_Bavaria ;
-      :hasBirthYear 1941 ;
-      :hasFather data:Pedro_Henrique_of_Orleans-Braganza ;
-      :hasMother data:Princess_Maria_Elisabeth_of_Bavaria ;
-      :hasSex data:Male .
-
-  data:Isabel_Princess_Imperial_of_Brazil a :Ancestor,
-          :Person,
-          :Woman .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Male']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (e55866e3-c29c-4682-ac47-947e4665f2a6)
- Call ID: e55866e3-c29c-4682-ac47-947e4665f2a6
-  Args:
-    type: :Sex
-    source: :Male
-  Finish (f7e0315c-db04-48cf-995f-09be5fa542ca)
- Call ID: f7e0315c-db04-48cf-995f-09be5fa542ca
+  Finish (b4b8b6f2-fbb6-4175-bb15-eac2aa366028)
+ Call ID: b4b8b6f2-fbb6-4175-bb15-eac2aa366028
   Args:

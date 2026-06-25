@@ -7,125 +7,15 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "1784:1802",
-        "1790:1802" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isAuntOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto ;
-    :isSiblingOf data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isSisterOf data:Princess_Margaret-_Countess_of_Snowdon .
-
-data:Daniel_Chatto a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Daniel Chatto" ;
-    data:posIndicesFull "2021:2034" ;
-    data:posIndicesPart "2091:2097",
-        "2203:2209",
-        "2251:2257" ;
-    data:wdtLink wdt:Q331657 ;
-    :alsoKnownAs "Daniel St George Chatto",
-        "Daniel St. George Chatto" ;
-    :hasChild data:Arthur_Chatto ;
-    :hasSex data:male ;
-    :hasSon data:Arthur_Chatto ;
-    :isFatherOf data:Arthur_Chatto ;
-    :isParentOf data:Arthur_Chatto .
-
-data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Antony Armstrong-Jones, 1st Earl of Snowdon" ;
-    data:posIndicesFull "137:159",
-        "137:180",
-        "508:530",
-        "508:551" ;
-    data:posIndicesPart "1349:1353",
-        "735:744",
-        "745:750" ;
-    data:wdtLink wdt:Q335260 ;
-    :alsoKnownAs "Anthony Charles Robert Armstrong Jones",
-        "Anthony Charles Robert Armstrong-Jones",
-        "Antony Charles Robert Armstrong-Jones, 1st Earl of Snowdon",
-        "Antony Snowdon",
-        "Antony, Earl of Snowdon",
-        "Lord Snowden",
-        "Tony Armstrong-Jones",
-        "Tony Snowdon" ;
-    :hasChild data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto ;
-    :hasDaughter data:Lady_Sarah_Chatto ;
-    :hasSex data:male ;
-    :hasSon data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
-    :isFatherOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto ;
-    :isParentOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto .
-
-data:Arthur_Chatto a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Arthur_Chatto a :Person ;
     rdfs:label "Arthur Chatto" ;
     data:wdtLink wdt:Q3736601 ;
     :alsoKnownAs "Arthur Robert Nathaniel Chatto" ;
-    :hasFather data:Daniel_Chatto ;
-    :hasMother data:Lady_Sarah_Chatto ;
     :hasParent data:Daniel_Chatto,
         data:Lady_Sarah_Chatto ;
-    :hasSex data:male ;
-    :isChildOf data:Daniel_Chatto,
-        data:Lady_Sarah_Chatto ;
-    :isSonOf data:Daniel_Chatto,
-        data:Lady_Sarah_Chatto .
+    :hasSex data:male .
 
-data:Princess_Margaret-_Countess_of_Snowdon a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Margaret, Countess of Snowdon" ;
-    data:posIndicesFull "93:131" ;
-    data:posIndicesPart "2391:2399",
-        "486:494",
-        "495:503" ;
-    data:wdtLink wdt:Q153815 ;
-    :alsoKnownAs "Margaret Rose",
-        "Margaret Windsor",
-        "Margaret York" ;
-    :hasChild data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto ;
-    :hasDaughter data:Lady_Sarah_Chatto ;
-    :hasSex data:female ;
-    :hasSister data:Elizabeth_II ;
-    :hasSon data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
-    :isMotherOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto ;
-    :isParentOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto ;
-    :isSiblingOf data:Elizabeth_II ;
-    :isSisterOf data:Elizabeth_II .
-
-data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon a :Person ;
     rdfs:label "David Armstrong-Jones, 2nd Earl of Snowdon" ;
     data:posIndicesFull "203:245",
         "839:854" ;
@@ -138,24 +28,28 @@ data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon a :Ancestor,
         "David Linley",
         "David Snowdon",
         "Viscount Linley" ;
-    :hasFather data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon ;
-    :hasMother data:Princess_Margaret-_Countess_of_Snowdon ;
     :hasParent data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
         data:Princess_Margaret-_Countess_of_Snowdon ;
-    :hasSex data:male ;
-    :hasSister data:Lady_Sarah_Chatto ;
-    :isBrotherOf data:Lady_Sarah_Chatto ;
-    :isChildOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isSiblingOf data:Lady_Sarah_Chatto ;
-    :isSonOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isUncleOf data:Arthur_Chatto .
+    :hasSex data:male .
 
-data:Lady_Sarah_Chatto a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Daniel_Chatto a :Person ;
+    rdfs:label "Daniel Chatto" ;
+    data:posIndicesFull "2021:2034" ;
+    data:posIndicesPart "2091:2097",
+        "2203:2209",
+        "2251:2257" ;
+    data:wdtLink wdt:Q331657 ;
+    :alsoKnownAs "Daniel St George Chatto",
+        "Daniel St. George Chatto" ;
+    :hasSex data:male .
+
+data:Lady_Sarah_Chatto a :Person ;
     rdfs:label "Lady Sarah Chatto" ;
     data:posIndicesFull "0:35",
         "1584:1605",
@@ -184,20 +78,64 @@ data:Lady_Sarah_Chatto a :Ancestor,
         "Sarah Armstrong-Jones",
         "Sarah Frances Elizabeth Armstrong-Jones",
         "Sarah Frances Elizabeth Chatto" ;
-    :hasBrother data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
-    :hasChild data:Arthur_Chatto ;
-    :hasFather data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon ;
-    :hasMother data:Princess_Margaret-_Countess_of_Snowdon ;
     :hasParent data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
         data:Princess_Margaret-_Countess_of_Snowdon ;
-    :hasSex data:female ;
-    :hasSon data:Arthur_Chatto ;
-    :isChildOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isDaughterOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isMotherOf data:Arthur_Chatto ;
-    :isParentOf data:Arthur_Chatto ;
-    :isSiblingOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
-    :isSisterOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon .
+    :hasSex data:female .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
+    rdfs:label "Queen Elizabeth, The Queen Mother" ;
+    data:posIndicesFull "1784:1799" ;
+    data:wdtLink wdt:Q10633 ;
+    :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
+        "Elizabeth Angela Marguerite, Duchess of York",
+        "Elizabeth Bowes-Lyon",
+        "Elizabeth, Duchess of York",
+        "Elizabeth, Queen Consort of the British Empire",
+        "Hon. Elizabeth Angela Marguerite Bowes-Lyon",
+        "Hon. Elizabeth Bowes-Lyon",
+        "Lady Elizabeth Angela Marguerite Bowes-Lyon",
+        "Lady Elizabeth Bowes-Lyon",
+        "Queen Elizabeth",
+        "Queen Elizabeth Angela Marguerite",
+        "Queen-Empress Elizabeth",
+        "The Queen Mother",
+        "The Queen Mum" ;
+    :hasSex data:female .
+
+data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon a :Person ;
+    rdfs:label "Antony Armstrong-Jones, 1st Earl of Snowdon" ;
+    data:posIndicesFull "137:159",
+        "137:180",
+        "508:530",
+        "508:551" ;
+    data:posIndicesPart "1349:1353",
+        "735:744",
+        "745:750" ;
+    data:wdtLink wdt:Q335260 ;
+    :alsoKnownAs "Anthony Charles Robert Armstrong Jones",
+        "Anthony Charles Robert Armstrong-Jones",
+        "Antony Charles Robert Armstrong-Jones, 1st Earl of Snowdon",
+        "Antony Snowdon",
+        "Antony, Earl of Snowdon",
+        "Lord Snowden",
+        "Tony Armstrong-Jones",
+        "Tony Snowdon" ;
+    :hasSex data:male .
+
+data:Princess_Margaret-_Countess_of_Snowdon a :Person ;
+    rdfs:label "Princess Margaret, Countess of Snowdon" ;
+    data:posIndicesFull "93:131" ;
+    data:posIndicesPart "2391:2399",
+        "486:494",
+        "495:503" ;
+    data:wdtLink wdt:Q153815 ;
+    :alsoKnownAs "Margaret Rose",
+        "Margaret Windsor",
+        "Margaret York" ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

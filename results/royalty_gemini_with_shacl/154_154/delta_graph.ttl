@@ -2,54 +2,46 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Casper_Van_Dien a :Man,
-        :Person .
-
-data:Ellis_Jones a :Man,
-        :Person .
-
-data:India_Riven_Oxenberg a :Person,
+data:Victoria_Eugenie_of_Battenberg a :Person,
         :Woman ;
-    :hasFather data:William_Weitz_Shaffer ;
-    :hasMother data:Catherine_Oxenberg .
+    :hasRelation data:Alfonso_XIII_of_Spain ;
+    :isSisterOf data:Prince_Maurice_of_Battenberg .
 
-data:Robert_Evans a :Man,
-        :Person ;
-    :hasMarriageYear 1998 .
-
-data:Catherine_Oxenberg a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1961 ;
-    :hasFather data:Howard_Oxenberg ;
-    :hasMother data:Princess_Elizabeth_of_Yugoslavia ;
-    :hasSister data:Christina_Oxenberg .
-
-data:Christina_Oxenberg a :Person,
-        :Woman .
-
-data:Howard_Oxenberg a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1919 ;
-    :hasDeathYear 2010 .
-
-data:Prince_Paul_of_Yugoslavia a :Ancestor,
+data:Albert_Prince_Consort a :Ancestor,
         :Man,
         :Person .
 
-data:Princess_Elizabeth_of_Yugoslavia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1936 ;
-    :hasFather data:Prince_Paul_of_Yugoslavia ;
-    :hasMother data:Princess_Olga_of_Greece_and_Denmark .
+data:Alfonso_XIII_of_Spain a :Man,
+        :Person .
 
-data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+data:Julie_Therese_Hauke a :Ancestor,
         :Person,
         :Woman .
 
-data:William_Weitz_Shaffer a :Ancestor,
+data:Prince_Alexander_of_Hesse_and_by_Rhine a :Ancestor,
         :Man,
         :Person .
+
+data:Prince_Henry_of_Battenberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Prince_Alexander_of_Hesse_and_by_Rhine ;
+    :hasMother data:Julie_Therese_Hauke .
+
+data:Prince_Maurice_of_Battenberg a :Man,
+        :Person ;
+    :hasBirthYear 1891 ;
+    :hasDeathYear 1914 ;
+    :hasFather data:Prince_Henry_of_Battenberg ;
+    :hasMother data:Princess_Beatrice_of_the_United_Kingdom .
+
+data:Princess_Beatrice_of_the_United_Kingdom a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Albert_Prince_Consort ;
+    :hasMother data:Queen_Victoria .
+
+data:Queen_Victoria a :Ancestor,
+        :Person,
+        :Woman .
 

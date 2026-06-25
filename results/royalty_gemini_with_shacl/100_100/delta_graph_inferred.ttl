@@ -1,0 +1,320 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Princess_Barbara_of_Liechtenstein a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Dushan_of_Yugoslavia ;
+    :hasRelation data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Barbara_of_Liechtenstein,
+        data:Princess_Helene_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasSister data:Princess_Barbara_of_Liechtenstein ;
+    :hasSon data:Prince_Dushan_of_Yugoslavia ;
+    :isAncestorOf data:Prince_Dushan_of_Yugoslavia ;
+    :isAuntOf data:Prince_Dushan_of_Yugoslavia ;
+    :isBloodrelationOf data:Princess_Barbara_of_Liechtenstein ;
+    :isMotherOf data:Prince_Dushan_of_Yugoslavia ;
+    :isParentOf data:Prince_Dushan_of_Yugoslavia ;
+    :isSiblingOf data:Princess_Barbara_of_Liechtenstein ;
+    :isSisterOf data:Princess_Barbara_of_Liechtenstein .
+
+data:Princess_Maria_Pia_of_Savoy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :hasDaughter data:Princess_Helene_of_Yugoslavia ;
+    :hasRelation data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Barbara_of_Liechtenstein,
+        data:Princess_Helene_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasSister data:Princess_Maria_Pia_of_Savoy ;
+    :hasSon data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia ;
+    :isAncestorOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isAuntOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isBloodrelationOf data:Princess_Maria_Pia_of_Savoy ;
+    :isMotherOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isParentOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isSiblingOf data:Princess_Maria_Pia_of_Savoy ;
+    :isSisterOf data:Princess_Maria_Pia_of_Savoy .
+
+data:Prince_Alexander_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Prince_Alexander_of_Yugoslavia ;
+    :hasChild data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :hasDaughter data:Princess_Helene_of_Yugoslavia ;
+    :hasRelation data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Barbara_of_Liechtenstein,
+        data:Princess_Helene_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasSon data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia ;
+    :isAncestorOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Alexander_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Alexander_of_Yugoslavia ;
+    :isFatherOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isParentOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isSiblingOf data:Prince_Alexander_of_Yugoslavia ;
+    :isUncleOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia .
+
+data:Prince_Dimitri_of_Yugoslavia a :Man,
+        :Person ;
+    :alsoKnownAs "Dimitri Karageorgevich"^^xsd:string,
+        "Dimitrije Karađorđević"^^xsd:string ;
+    :hasAncestor data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasBirthYear 1958 ;
+    :hasBrother data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia ;
+    :hasFather data:Prince_Alexander_of_Yugoslavia ;
+    :hasMother data:Princess_Maria_Pia_of_Savoy ;
+    :hasParent data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasRelation data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Barbara_of_Liechtenstein,
+        data:Princess_Helene_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasSister data:Princess_Helene_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isChildOf data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :isSiblingOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isSonOf data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy .
+
+data:Prince_Dushan_of_Yugoslavia a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Barbara_of_Liechtenstein ;
+    :hasBrother data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia ;
+    :hasFather data:Prince_Alexander_of_Yugoslavia ;
+    :hasMother data:Princess_Barbara_of_Liechtenstein ;
+    :hasParent data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Barbara_of_Liechtenstein ;
+    :hasRelation data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Barbara_of_Liechtenstein,
+        data:Princess_Helene_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasSister data:Princess_Helene_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isChildOf data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Barbara_of_Liechtenstein ;
+    :isSiblingOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isSonOf data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Barbara_of_Liechtenstein .
+
+data:Prince_Michael_of_Yugoslavia a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasBrother data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia ;
+    :hasFather data:Prince_Alexander_of_Yugoslavia ;
+    :hasMother data:Princess_Maria_Pia_of_Savoy ;
+    :hasParent data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasRelation data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Barbara_of_Liechtenstein,
+        data:Princess_Helene_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasSister data:Princess_Helene_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isChildOf data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :isSiblingOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isSonOf data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy .
+
+data:Prince_Serge_of_Yugoslavia a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasBrother data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia ;
+    :hasFather data:Prince_Alexander_of_Yugoslavia ;
+    :hasMother data:Princess_Maria_Pia_of_Savoy ;
+    :hasParent data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasRelation data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Barbara_of_Liechtenstein,
+        data:Princess_Helene_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasSister data:Princess_Helene_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isChildOf data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :isSiblingOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isSonOf data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy .
+
+data:Princess_Helene_of_Yugoslavia a :Person,
+        :Woman ;
+    :hasAncestor data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasBrother data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia ;
+    :hasFather data:Prince_Alexander_of_Yugoslavia ;
+    :hasMother data:Princess_Maria_Pia_of_Savoy ;
+    :hasParent data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasRelation data:Prince_Alexander_of_Yugoslavia,
+        data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Barbara_of_Liechtenstein,
+        data:Princess_Helene_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :hasSister data:Princess_Helene_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isChildOf data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :isDaughterOf data:Prince_Alexander_of_Yugoslavia,
+        data:Princess_Maria_Pia_of_Savoy ;
+    :isSiblingOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia ;
+    :isSisterOf data:Prince_Dimitri_of_Yugoslavia,
+        data:Prince_Dushan_of_Yugoslavia,
+        data:Prince_Michael_of_Yugoslavia,
+        data:Prince_Serge_of_Yugoslavia,
+        data:Princess_Helene_of_Yugoslavia .
+

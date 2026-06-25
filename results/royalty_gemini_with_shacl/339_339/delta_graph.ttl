@@ -2,47 +2,62 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Heinrich_of_Prussia a :Man,
+data:Carl_Friedrich_Franz_Alexander_von_Preussen a :Man,
         :Person ;
-    :alsoKnownAs "Albert Wilhelm Heinrich"^^xsd:string ;
-    :hasBirthYear 1862 ;
-    :hasBrother data:Wilhelm_II ;
-    :hasDeathYear 1929 ;
-    :hasFather data:Frederick_III ;
-    :hasMarriageYear 1888 ;
-    :hasMother data:Victoria_Princess_Royal ;
-    :hasRelation data:Princess_Irene_of_Hesse_and_by_Rhine ;
-    :hasSex data:Male ;
-    :hasSon data:Heinrich_son,
-        data:Waldemar .
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Sophie_of_Isenburg .
 
-data:Frederick_III a :Ancestor,
-        :Man,
-        :Person .
-
-data:Heinrich_son a :Man,
+data:Friedrich_Wilhelm_von_Preussen a :Man,
         :Person ;
-    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine .
+    :isBrotherOf data:Louis_Ferdinand_Prinz_von_Preussen .
 
-data:Male a :Sex .
-
-data:Queen_Victoria a :Ancestor,
-        :Person,
+data:Grand_Duchess_Kira_of_Russia a :Person,
         :Woman .
 
-data:Victoria_Princess_Royal a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasMother data:Queen_Victoria .
-
-data:Waldemar a :Man,
+data:Heinrich_Albert_Johann_Georg_von_Preussen a :Man,
         :Person ;
-    :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine .
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Sophie_of_Isenburg .
+
+data:Louis_Ferdinand_Christian_Albrecht_von_Preussen a :Man,
+        :Person ;
+    :hasFather data:Georg_Friedrich_Prinz_von_Preussen ;
+    :hasMother data:Sophie_of_Isenburg .
+
+data:Michael_von_Preussen a :Man,
+        :Person ;
+    :isBrotherOf data:Louis_Ferdinand_Prinz_von_Preussen .
 
 data:Wilhelm_II a :Man,
         :Person .
 
-data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
+data:2011 a :DomainEntity .
+
+data:Donata_of_Castell-R%C3%BCdenhausen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1950 ;
+    :hasDeathYear 2015 .
+
+data:Male a :Sex .
+
+data:Georg_Friedrich_Prinz_von_Preussen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1976 ;
+    :hasFather data:Louis_Ferdinand_Prinz_von_Preussen ;
+    :hasMarriageYear data:2011 ;
+    :hasMother data:Donata_of_Castell-R%C3%BCdenhausen ;
+    :hasRelation data:Sophie_of_Isenburg ;
+    :hasSex data:Male .
+
+data:Louis_Ferdinand_Prinz_von_Preussen a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1944 ;
+    :hasDeathYear 1977 .
+
+data:Sophie_of_Isenburg a :Ancestor,
         :Person,
         :Woman .
 

@@ -2,40 +2,30 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carl_Duke_of_W%C3%BCrttemberg a :Man,
-        :Person ;
-    :hasSex data:Male ;
+data:Carl_Duke_of_W%C3%BCrttemberg a :Man ;
+    :hasDeathYear 2022 ;
     :isFatherOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg .
 
-data:Duke_Eberhard_of_W%C3%BCrttemberg a :Man,
-        :Person ;
-    :hasMarriageYear 2023 ;
-    :hasRelation data:Gaby_Maier ;
-    :hasSex data:Male .
+data:Erich_Prince_of_Waldburg_zu_Zeil_und_Trauchburg a :Man .
 
-data:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man,
-        :Person ;
+data:Gaby_Maier a :Woman ;
+    :hasMarriageYear data:Duke_Eberhard_of_W%C3%BCrttemberg,
+        2023 .
+
+data:Prince_Wilhelm_of_Wied a :Man .
+
+data:Wilhelm_Herzog_von_W%C3%BCrttemberg a :Man ;
     :hasBirthYear 1994 ;
     :hasFather data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg ;
-    :hasMother data:Princess_Marie_Wilhelmine_of_Wied ;
-    :hasSex data:Male .
+    :hasMother data:Princess_Marie_Wilhelmine_of_Wied .
 
-data:Gaby_Maier a :Person,
-        :Woman ;
-    :hasSex data:Female .
+data:Duke_Eberhard_of_W%C3%BCrttemberg a :Man ;
+    :isBrotherOf data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg .
 
-data:Princess_Marie_Wilhelmine_of_Wied a :Person,
-        :Woman ;
-    :hasBirthYear 1973 ;
-    :hasSex data:Female .
+data:Princess_Marie_Wilhelmine_of_Wied a :Woman ;
+    :hasBirthYear 1973 .
 
-data:Female a :Sex .
-
-data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Man,
-        :Person ;
+data:Friedrich_Hereditary_Duke_of_W%C3%BCrttemberg a :Man ;
     :hasBirthYear 1961 ;
-    :hasDeathYear 2018 ;
-    :hasSex data:Male .
-
-data:Male a :Sex .
+    :hasDeathYear 2018 .
 

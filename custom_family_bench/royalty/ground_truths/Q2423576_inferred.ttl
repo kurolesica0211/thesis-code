@@ -1,0 +1,246 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Robin_Medforth-Mills a :Man,
+        :Person ;
+    rdfs:label "Robin Medforth-Mills"^^xsd:string ;
+    data:posIndicesFull "1617:1637"^^xsd:string,
+        "3887:3907"^^xsd:string,
+        "5127:5147"^^xsd:string ;
+    data:posIndicesPart "5573:5578"^^xsd:string ;
+    data:wdtLink wdt:Q7352653 ;
+    :alsoKnownAs "Dr. Leslie Robin Medforth-Mills"^^xsd:string,
+        "Leslie Robin Medforth-Mills"^^xsd:string ;
+    :hasBrother data:Robin_Medforth-Mills ;
+    :hasRelation data:Robin_Medforth-Mills ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Robin_Medforth-Mills ;
+    :isBrotherOf data:Robin_Medforth-Mills ;
+    :isSiblingOf data:Robin_Medforth-Mills .
+
+data:Queen_Anne_of_Romania a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Queen Anne of Romania"^^xsd:string ;
+    data:posIndicesFull "204:214"^^xsd:string,
+        "204:225"^^xsd:string,
+        "4675:4685"^^xsd:string,
+        "5304:5314"^^xsd:string,
+        "535:545"^^xsd:string ;
+    data:posIndicesPart "1972:1979"^^xsd:string,
+        "2101:2106"^^xsd:string,
+        "2216:2223"^^xsd:string,
+        "2494:2499"^^xsd:string,
+        "2699:2704"^^xsd:string,
+        "327:334"^^xsd:string,
+        "3374:3381"^^xsd:string,
+        "3441:3448"^^xsd:string,
+        "3527:3534"^^xsd:string,
+        "3777:3784"^^xsd:string,
+        "3863:3867"^^xsd:string,
+        "4164:4171"^^xsd:string,
+        "4265:4272"^^xsd:string,
+        "4492:4499"^^xsd:string,
+        "5040:5047"^^xsd:string,
+        "700:705"^^xsd:string,
+        "964:969"^^xsd:string ;
+    data:wdtLink wdt:Q563765 ;
+    :alsoKnownAs "Princess Anne of Bourbon-Parma"^^xsd:string,
+        "Queen Anne"^^xsd:string,
+        "Queen Anne, Queen Consort of Romania"^^xsd:string ;
+    :hasChild data:Princess_Elena_of_Romania ;
+    :hasDaughter data:Princess_Elena_of_Romania ;
+    :hasRelation data:Helen_of_Greece_and_Denmark,
+        data:Michael_I_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female ;
+    :hasSister data:Queen_Anne_of_Romania ;
+    :isAncestorOf data:Princess_Elena_of_Romania ;
+    :isAuntOf data:Princess_Elena_of_Romania ;
+    :isBloodrelationOf data:Queen_Anne_of_Romania ;
+    :isMotherOf data:Princess_Elena_of_Romania ;
+    :isParentOf data:Princess_Elena_of_Romania ;
+    :isSiblingOf data:Queen_Anne_of_Romania ;
+    :isSisterOf data:Queen_Anne_of_Romania .
+
+data:Helen_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Helen of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "632:662"^^xsd:string ;
+    data:posIndicesPart "1019:1026"^^xsd:string,
+        "5284:5290"^^xsd:string,
+        "5446:5452"^^xsd:string,
+        "5457:5464"^^xsd:string,
+        "957:962"^^xsd:string ;
+    data:wdtLink wdt:Q162177 ;
+    :alsoKnownAs "Helen, Queen Mother of Romania"^^xsd:string,
+        "Helen, The Queen Mother of Romania"^^xsd:string,
+        "Queen Elena, The Queen Mother of Romania"^^xsd:string,
+        "Queen Elena, The Queen Mother of Romania, Princess of Greece and Denmark"^^xsd:string,
+        "Queen Helen"^^xsd:string,
+        "Queen Helen, Queen Mother of Romania"^^xsd:string,
+        "Queen Helen, Queen Mother of Romania, Princess of Greece and Denmark"^^xsd:string,
+        "Queen Helen, The Queen Mother of Romania"^^xsd:string,
+        "Queen Helen, The Queen Mother of Romania, Princess of Greece and Denmark"^^xsd:string ;
+    :hasChild data:Michael_I_of_Romania ;
+    :hasRelation data:Helen_of_Greece_and_Denmark,
+        data:Michael_I_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female ;
+    :hasSister data:Helen_of_Greece_and_Denmark ;
+    :hasSon data:Michael_I_of_Romania ;
+    :isAncestorOf data:Michael_I_of_Romania,
+        data:Princess_Elena_of_Romania ;
+    :isAuntOf data:Michael_I_of_Romania ;
+    :isBloodrelationOf data:Helen_of_Greece_and_Denmark ;
+    :isMotherOf data:Michael_I_of_Romania ;
+    :isParentOf data:Michael_I_of_Romania ;
+    :isSiblingOf data:Helen_of_Greece_and_Denmark ;
+    :isSisterOf data:Helen_of_Greece_and_Denmark .
+
+data:Michael_I_of_Romania a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Michael I of Romania"^^xsd:string ;
+    data:posIndicesFull "185:199"^^xsd:string,
+        "190:199"^^xsd:string,
+        "2884:2898"^^xsd:string,
+        "2889:2898"^^xsd:string,
+        "3838:3852"^^xsd:string,
+        "3843:3852"^^xsd:string,
+        "516:530"^^xsd:string,
+        "521:530"^^xsd:string,
+        "5227:5241"^^xsd:string,
+        "5232:5241"^^xsd:string ;
+    data:posIndicesPart "1972:1979"^^xsd:string,
+        "2216:2223"^^xsd:string,
+        "327:334"^^xsd:string,
+        "3374:3381"^^xsd:string,
+        "3441:3448"^^xsd:string,
+        "3527:3534"^^xsd:string,
+        "4164:4171"^^xsd:string,
+        "4265:4272"^^xsd:string,
+        "4423:4430"^^xsd:string,
+        "4492:4499"^^xsd:string,
+        "4644:4651"^^xsd:string,
+        "5040:5047"^^xsd:string ;
+    data:wdtLink wdt:Q930013 ;
+    :alsoKnownAs "King Michael I"^^xsd:string,
+        "King Michael I of Romania"^^xsd:string,
+        "King Michael I of the Romanians"^^xsd:string,
+        "Michael I"^^xsd:string,
+        "Michael I of the Romanians"^^xsd:string ;
+    :hasAncestor data:Helen_of_Greece_and_Denmark ;
+    :hasBrother data:Michael_I_of_Romania ;
+    :hasChild data:Princess_Elena_of_Romania ;
+    :hasDaughter data:Princess_Elena_of_Romania ;
+    :hasMother data:Helen_of_Greece_and_Denmark ;
+    :hasParent data:Helen_of_Greece_and_Denmark ;
+    :hasRelation data:Helen_of_Greece_and_Denmark,
+        data:Michael_I_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Elena_of_Romania ;
+    :isBloodrelationOf data:Michael_I_of_Romania ;
+    :isBrotherOf data:Michael_I_of_Romania ;
+    :isChildOf data:Helen_of_Greece_and_Denmark ;
+    :isFatherOf data:Princess_Elena_of_Romania ;
+    :isParentOf data:Princess_Elena_of_Romania ;
+    :isSiblingOf data:Michael_I_of_Romania ;
+    :isSonOf data:Helen_of_Greece_and_Denmark ;
+    :isUncleOf data:Princess_Elena_of_Romania .
+
+data:Princess_Elena_of_Romania a :Person,
+        :Woman ;
+    rdfs:label "Princess Elena of Romania"^^xsd:string ;
+    data:posIndicesFull "109:134"^^xsd:string ;
+    data:posIndicesPart "1032:1040"^^xsd:string,
+        "1078:1083"^^xsd:string,
+        "1334:1339"^^xsd:string,
+        "1582:1587"^^xsd:string,
+        "1749:1754"^^xsd:string,
+        "1824:1829"^^xsd:string,
+        "1972:1979"^^xsd:string,
+        "2044:2049"^^xsd:string,
+        "2216:2223"^^xsd:string,
+        "227:232"^^xsd:string,
+        "2356:2361"^^xsd:string,
+        "2545:2550"^^xsd:string,
+        "2719:2724"^^xsd:string,
+        "2867:2872"^^xsd:string,
+        "2906:2914"^^xsd:string,
+        "3173:3178"^^xsd:string,
+        "327:334"^^xsd:string,
+        "3374:3381"^^xsd:string,
+        "3441:3448"^^xsd:string,
+        "3458:3463"^^xsd:string,
+        "3480:3488"^^xsd:string,
+        "3503:3511"^^xsd:string,
+        "3527:3534"^^xsd:string,
+        "3740:3745"^^xsd:string,
+        "3777:3784"^^xsd:string,
+        "3993:3998"^^xsd:string,
+        "404:409"^^xsd:string,
+        "4164:4171"^^xsd:string,
+        "4238:4243"^^xsd:string,
+        "4265:4272"^^xsd:string,
+        "4361:4369"^^xsd:string,
+        "4454:4459"^^xsd:string,
+        "4492:4499"^^xsd:string,
+        "4596:4601"^^xsd:string,
+        "4875:4880"^^xsd:string,
+        "5040:5047"^^xsd:string,
+        "5113:5118"^^xsd:string,
+        "5392:5400"^^xsd:string,
+        "5427:5435"^^xsd:string,
+        "5469:5477"^^xsd:string,
+        "5535:5543"^^xsd:string,
+        "5563:5568"^^xsd:string,
+        "5682:5687"^^xsd:string,
+        "5811:5816"^^xsd:string,
+        "745:750"^^xsd:string ;
+    data:wdtLink wdt:Q2423576 ;
+    :alsoKnownAs "Elena de Roumanie"^^xsd:string,
+        "The Princess Elena"^^xsd:string,
+        "The Princess Elena of Romania"^^xsd:string ;
+    :hasAncestor data:Helen_of_Greece_and_Denmark,
+        data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasFather data:Michael_I_of_Romania ;
+    :hasMother data:Queen_Anne_of_Romania ;
+    :hasParent data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasRelation data:Helen_of_Greece_and_Denmark,
+        data:Michael_I_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Elena_of_Romania ;
+    :isBloodrelationOf data:Princess_Elena_of_Romania ;
+    :isChildOf data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :isDaughterOf data:Michael_I_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :isSiblingOf data:Princess_Elena_of_Romania ;
+    :isSisterOf data:Princess_Elena_of_Romania .
+

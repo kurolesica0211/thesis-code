@@ -1,0 +1,95 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:George_I_of_Greece a :Man,
+        :Person ;
+    rdfs:label "George I of Greece"^^xsd:string ;
+    data:posIndicesFull "429:437"^^xsd:string ;
+    data:wdtLink wdt:Q17142 ;
+    :alsoKnownAs "George I"^^xsd:string,
+        "George I of the Hellens"^^xsd:string,
+        "George I, King of Greece"^^xsd:string,
+        "George I, King of the Hellenes"^^xsd:string,
+        "King George I of Greece"^^xsd:string,
+        "King George I of the Hellens"^^xsd:string,
+        "Vilhelm"^^xsd:string ;
+    :hasBrother data:George_I_of_Greece ;
+    :hasRelation data:George_I_of_Greece ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:George_I_of_Greece ;
+    :isBrotherOf data:George_I_of_Greece ;
+    :isSiblingOf data:George_I_of_Greece .
+
+data:Olga_Constantinovna_of_Russia a :Person,
+        :Woman ;
+    rdfs:label "Olga Constantinovna of Russia"^^xsd:string ;
+    data:posIndicesFull "442:462"^^xsd:string,
+        "448:462"^^xsd:string ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece"^^xsd:string,
+        "Queen Olga of Greece"^^xsd:string ;
+    :hasRelation data:Olga_Constantinovna_of_Russia ;
+    :hasSex data:female ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Princess_Eugénie_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Eugénie of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "268:306"^^xsd:string,
+        "277:306"^^xsd:string ;
+    data:wdtLink wdt:Q2379307 ;
+    :alsoKnownAs "Eugénie of Greece and Denmark"^^xsd:string,
+        "Princess Eugenie of Greece and Denmark"^^xsd:string ;
+    :hasChild data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
+    :hasRelation data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino,
+        data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
+    :isAncestorOf data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
+    :isAuntOf data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
+    :isBloodrelationOf data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
+    :isParentOf data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
+    :isSiblingOf data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Eugénie_of_Greece_and_Denmark .
+
+data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino a :Man,
+        :Person ;
+    rdfs:label "Prince Carlo Alessandro, 3rd Duke of Castel Duino"^^xsd:string ;
+    data:wdtLink wdt:Q5041442 ;
+    :alsoKnownAs "Carlo Alessandro della Torre e Tasso, Duke di Castel Duino"^^xsd:string,
+        "Prince Carlo Alessandro della Torre e Tasso, Duke di Castel Duino"^^xsd:string ;
+    :hasAncestor data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
+    :hasMother data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasParent data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasRelation data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino,
+        data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
+    :isBrotherOf data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
+    :isChildOf data:Princess_Eugénie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Carlo_Alessandro-_3rd_Duke_of_Castel_Duino ;
+    :isSonOf data:Princess_Eugénie_of_Greece_and_Denmark .
+

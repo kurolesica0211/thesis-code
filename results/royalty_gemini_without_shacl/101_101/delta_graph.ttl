@@ -2,31 +2,42 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carina_Axelsson a :Woman ;
-    :hasChild data:Prince_Gustav_Albrecht,
-        data:Princess_Mafalda .
+data:Count_Richard_von_Pfeil_und_Klein-Ellguth a :Man ;
+    :hasMother data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg .
 
-data:Gustav a :Man ;
+data:Konstantin_Johannsmann a :Man ;
+    :hasMother data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
+
+data:Prince_Gustav_Albrecht a :Man ;
+    :hasFather data:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Carina_Axelsson .
+
+data:Prince_Vincent_of_Denmark a :Man ;
+    :hasFather data:King_Frederik_X_of_Denmark .
+
+data:Princess_Mafalda a :Woman ;
+    :hasFather data:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasMother data:Carina_Axelsson .
+
+data:King_Frederik_X_of_Denmark a :Man .
+
+data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg a :Man .
+
+data:Princess_Benedikte_of_Denmark a :Woman .
+
+data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man ;
+    :isBrotherOf data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg .
+
+data:Carina_Axelsson a :Woman .
+
+data:Gustav_7th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man ;
     :hasBirthYear 1969 ;
-    :hasChild data:Prince_Gustav_Albrecht,
-        data:Princess_Mafalda ;
-    :hasFather data:Richard%2C_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
+    :hasFather data:Richard_6th_Prince_of_Sayn-Wittgenstein-Berleburg ;
     :hasMother data:Princess_Benedikte_of_Denmark ;
     :hasSister data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg,
         data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg .
 
-data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg a :Man .
-
 data:Princess_Alexandra_of_Sayn-Wittgenstein-Berleburg a :Woman .
 
-data:Princess_Benedikte_of_Denmark a :Woman .
-
 data:Princess_Nathalie_of_Sayn-Wittgenstein-Berleburg a :Woman .
-
-data:Richard%2C_6th_Prince_of_Sayn-Wittgenstein-Berleburg a :Man ;
-    :hasBrother data:Prince_Robin_zu_Sayn-Wittgenstein-Berleburg .
-
-data:Prince_Gustav_Albrecht a :Man .
-
-data:Princess_Mafalda a :Woman .
 

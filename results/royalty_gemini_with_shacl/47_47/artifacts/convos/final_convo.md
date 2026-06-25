@@ -124,6 +124,8 @@ Other prominent members of the AfD quickly sprang to von Storch's defense, inclu
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -139,39 +141,9 @@ Other prominent members of the AfD quickly sprang to von Storch's defense, inclu
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -186,6 +158,23 @@ Other prominent members of the AfD quickly sprang to von Storch's defense, inclu
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -203,6 +192,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -270,29 +274,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -301,6 +297,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -313,6 +317,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -321,17 +327,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -359,6 +367,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -374,102 +466,113 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (2ebf27fc-7d08-4af3-8703-570582423180)
- Call ID: 2ebf27fc-7d08-4af3-8703-570582423180
+  AssignClass (91ed0494-3b20-4b18-bacf-6a2bd8e77e6d)
+ Call ID: 91ed0494-3b20-4b18-bacf-6a2bd8e77e6d
   Args:
     source: :Beatrix_von_Storch
     type: :Woman
-  AssignClass (67950062-556a-413b-833c-7f4b5327bb82)
- Call ID: 67950062-556a-413b-833c-7f4b5327bb82
+  AssignClass (a9d7b61d-8513-446e-881e-725ceb11aec4)
+ Call ID: a9d7b61d-8513-446e-881e-725ceb11aec4
   Args:
     type: :Person
     source: :Beatrix_von_Storch
-  AssignClass (4e1e3995-7330-4fb8-b4a9-0fc6a58feb99)
- Call ID: 4e1e3995-7330-4fb8-b4a9-0fc6a58feb99
+  AddLiteral (fcd39057-cd76-4ff6-8f9d-0897d265d645)
+ Call ID: fcd39057-cd76-4ff6-8f9d-0897d265d645
   Args:
-    source: :Sven_von_Storch
-    type: :Man
-  AssignClass (b0b8f9c5-b469-4840-85c1-f7d7465ba8a8)
- Call ID: b0b8f9c5-b469-4840-85c1-f7d7465ba8a8
-  Args:
-    source: :Sven_von_Storch
-    type: :Person
-  AssignClass (11650807-f35c-4eb3-b416-e5abaa13fc74)
- Call ID: 11650807-f35c-4eb3-b416-e5abaa13fc74
-  Args:
-    type: :Man
-    source: :Berndt_Detlev_von_Storch
-  AssignClass (b5a93fdc-a479-4320-9d63-214b05ea2785)
- Call ID: b5a93fdc-a479-4320-9d63-214b05ea2785
-  Args:
-    source: :Berndt_Detlev_von_Storch
-    type: :Ancestor
-  AssignClass (66396d0a-c8d7-4382-94ef-1c041ea1bf43)
- Call ID: 66396d0a-c8d7-4382-94ef-1c041ea1bf43
-  Args:
-    source: :Antje_Liete_Krüger-Franke
-    type: :Woman
-  AssignClass (72025e00-3d1f-4e8d-8faa-69bf9f7cbbc3)
- Call ID: 72025e00-3d1f-4e8d-8faa-69bf9f7cbbc3
-  Args:
-    source: :Antje_Liete_Krüger-Franke
-    type: :Ancestor
-  AddLiteral (41e261f9-1bcc-4207-b464-e034cea7100d)
- Call ID: 41e261f9-1bcc-4207-b464-e034cea7100d
-  Args:
+    source: :Beatrix_von_Storch
     literal_value: 1971
-    literal_type: xsd:integer
-    source: :Beatrix_von_Storch
     relation: :hasBirthYear
-  AddLiteral (39af2000-4110-4d70-969d-8530dc6f4061)
- Call ID: 39af2000-4110-4d70-969d-8530dc6f4061
-  Args:
     literal_type: xsd:integer
+  AssignClass (af74bc78-be4c-4213-8080-4e3ddce7fb63)
+ Call ID: af74bc78-be4c-4213-8080-4e3ddce7fb63
+  Args:
     source: :Sven_von_Storch
+    type: :Man
+  AssignClass (b87f4104-91b3-479e-b217-3971c0a94d98)
+ Call ID: b87f4104-91b3-479e-b217-3971c0a94d98
+  Args:
+    source: :Sven_von_Storch
+    type: :Person
+  AddLiteral (9aaf4996-c95b-4f64-9279-053624e30e29)
+ Call ID: 9aaf4996-c95b-4f64-9279-053624e30e29
+  Args:
     relation: :hasBirthYear
     literal_value: 1970
-  AddLiteral (85154dc1-4a59-4329-ac0b-615bec17edff)
- Call ID: 85154dc1-4a59-4329-ac0b-615bec17edff
+    source: :Sven_von_Storch
+    literal_type: xsd:integer
+  AddLiteral (c13a3d9b-a6b0-422b-b19f-0b870c6cb242)
+ Call ID: c13a3d9b-a6b0-422b-b19f-0b870c6cb242
   Args:
     literal_type: xsd:integer
+    source: :Beatrix_von_Storch
+    relation: :hasMarriageYear
+    literal_value: 2010
+  AddTriple (7af779f7-572a-4c9e-807d-462e9e9de303)
+ Call ID: 7af779f7-572a-4c9e-807d-462e9e9de303
+  Args:
+    source: :Beatrix_von_Storch
+    relation: :hasRelation
+    target: :Sven_von_Storch
+  AssignClass (ec1ed70b-f589-4621-8634-424921ca995a)
+ Call ID: ec1ed70b-f589-4621-8634-424921ca995a
+  Args:
+    type: :Man
+    source: :Berndt_Detlev_von_Storch
+  AssignClass (ba900023-d082-4291-9c2d-eaaafdcdf542)
+ Call ID: ba900023-d082-4291-9c2d-eaaafdcdf542
+  Args:
+    type: :Person
+    source: :Berndt_Detlev_von_Storch
+  AddLiteral (0b5fcd47-c3d0-4857-b387-238a639683c5)
+ Call ID: 0b5fcd47-c3d0-4857-b387-238a639683c5
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1930
     relation: :hasBirthYear
     source: :Berndt_Detlev_von_Storch
-    literal_value: 1930
-  AddLiteral (de3ac218-3272-4fb4-b0c8-d6e2f30b49d0)
- Call ID: de3ac218-3272-4fb4-b0c8-d6e2f30b49d0
+  AddLiteral (2b46a7b5-beee-40f3-824f-62d31ad524c9)
+ Call ID: 2b46a7b5-beee-40f3-824f-62d31ad524c9
   Args:
-    literal_value: 2004
     source: :Berndt_Detlev_von_Storch
     relation: :hasDeathYear
+    literal_value: 2004
     literal_type: xsd:integer
-  AddLiteral (973cf2e2-3472-4d77-9519-3ef4e73096d8)
- Call ID: 973cf2e2-3472-4d77-9519-3ef4e73096d8
+  AssignClass (d0928fa0-d956-4c26-9983-79ed9f4c8b9c)
+ Call ID: d0928fa0-d956-4c26-9983-79ed9f4c8b9c
+  Args:
+    type: :Woman
+    source: :Antje_Liete_Krüger-Franke
+  AssignClass (49768240-5f4e-4855-87fe-acfc1ad163a2)
+ Call ID: 49768240-5f4e-4855-87fe-acfc1ad163a2
+  Args:
+    type: :Person
+    source: :Antje_Liete_Krüger-Franke
+  AddLiteral (fc0598e4-b36c-487f-8c38-4d586b28ca46)
+ Call ID: fc0598e4-b36c-487f-8c38-4d586b28ca46
   Args:
     literal_type: xsd:integer
     source: :Antje_Liete_Krüger-Franke
-    relation: :hasBirthYear
     literal_value: 1938
-  AddTriple (2f4b6c17-7a88-4c8f-9528-82f0f4737116)
- Call ID: 2f4b6c17-7a88-4c8f-9528-82f0f4737116
-  Args:
-    relation: :hasMarriageYear
-    source: :Beatrix_von_Storch
-    target: :2010
-  AddTriple (4f7368c1-41e1-46ac-9f47-1e6571eff2b6)
- Call ID: 4f7368c1-41e1-46ac-9f47-1e6571eff2b6
+    relation: :hasBirthYear
+  AddTriple (3adbfc69-065d-476f-a60e-d285af19d9fa)
+ Call ID: 3adbfc69-065d-476f-a60e-d285af19d9fa
   Args:
     source: :Sven_von_Storch
     relation: :hasFather
     target: :Berndt_Detlev_von_Storch
-  AddTriple (45fd5df0-ebb9-47bf-b87a-67a22ca063c2)
- Call ID: 45fd5df0-ebb9-47bf-b87a-67a22ca063c2
+  AddTriple (816abe8c-0b28-4a8d-86a2-6acd7ce20b80)
+ Call ID: 816abe8c-0b28-4a8d-86a2-6acd7ce20b80
   Args:
+    source: :Sven_von_Storch
     target: :Antje_Liete_Krüger-Franke
     relation: :hasMother
-    source: :Sven_von_Storch
-  Finish (fdc52f95-2528-42ee-8308-f61516c53e6d)
- Call ID: fdc52f95-2528-42ee-8308-f61516c53e6d
+  Finish (caed8a81-bc98-4b42-9d62-af1bc338522b)
+ Call ID: caed8a81-bc98-4b42-9d62-af1bc338522b
   Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -541,22 +644,23 @@ The final data graph after all the edits:
   data:Beatrix_von_Storch a :Person,
           :Woman ;
       :hasBirthYear 1971 ;
-      :hasMarriageYear data:2010 .
+      :hasMarriageYear 2010 ;
+      :hasRelation data:Sven_von_Storch .
+
+  data:Antje_Liete_Kr%C3%BCger-Franke a :Person,
+          :Woman ;
+      :hasBirthYear 1938 .
+
+  data:Berndt_Detlev_von_Storch a :Man,
+          :Person ;
+      :hasBirthYear 1930 ;
+      :hasDeathYear 2004 .
 
   data:Sven_von_Storch a :Man,
           :Person ;
       :hasBirthYear 1970 ;
       :hasFather data:Berndt_Detlev_von_Storch ;
       :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .
-
-  data:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,
-          :Woman ;
-      :hasBirthYear 1938 .
-
-  data:Berndt_Detlev_von_Storch a :Ancestor,
-          :Man ;
-      :hasBirthYear 1930 ;
-      :hasDeathYear 2004 .
 
 
 
@@ -568,76 +672,63 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (73b9bd78-1152-41d4-974f-b53efd8cbde6)
- Call ID: 73b9bd78-1152-41d4-974f-b53efd8cbde6
+  ValidateShacl (42a7c369-4ba2-4ff2-b94f-7dd06628d251)
+ Call ID: 42a7c369-4ba2-4ff2-b94f-7dd06628d251
   Args:
 
 ================================= Tool Message =================================
 
-SHACL validation has not produced any violations.
+VALIDATION RESULTS
+Total violations:6
+Violations:
 
-================================== Ai Message ==================================
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Berndt_Detlev_von_Storch is referenced as the father of Sven_von_Storch but lacks the required :Ancestor class membership.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Berndt_Detlev_von_Storch', class=':Ancestor')
 
-[]
-Tool Calls:
-  Finish (2dca71c7-6527-4a52-b23c-38575c370144)
- Call ID: 2dca71c7-6527-4a52-b23c-38575c370144
-  Args:
 
-================================= Tool Message =================================
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Antje_Liete_Kr%C3%BCger-Franke is referenced as the mother of Sven_von_Storch but lacks the required :Ancestor class membership.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Antje_Liete_Kr%C3%BCger-Franke', class=':Ancestor')
 
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
 
-**Classless Nodes:**
-['2010']
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Berndt_Detlev_von_Storch is still identified as violating class constraints for the :hasFather property of Sven_von_Storch.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Berndt_Detlev_von_Storch', class=':Man')
 
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
 
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Antje_Liete_Kr%C3%BCger-Franke is still identified as violating class constraints for the :hasMother property of Sven_von_Storch.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Antje_Liete_Kr%C3%BCger-Franke', class=':Woman')
 
-Proceed with the necessary tool calls now.
 
-================================== Ai Message ==================================
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      Multiple redundant or invalid property assertions for :hasFather exist for node Sven_von_Storch.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(subject='Sven_von_Storch', predicate=':hasFather', object='Berndt_Detlev_von_Storch')
 
-[]
-Tool Calls:
-  RemoveTriple (3b286884-fe53-42a9-9a4f-b76b8bb706f3)
- Call ID: 3b286884-fe53-42a9-9a4f-b76b8bb706f3
-  Args:
-    relation: :hasMarriageYear
-    source: :Beatrix_von_Storch
-    target: :2010
 
-================================= Tool Message =================================
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      Multiple redundant or invalid property assertions for :hasMother exist for node Sven_von_Storch.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(subject='Sven_von_Storch', predicate=':hasMother', object='Antje_Liete_Kr%C3%BCger-Franke')
 
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Beatrix_von_Storch a :Person,
-          :Woman ;
-      :hasBirthYear 1971 .
-
-  data:Sven_von_Storch a :Man,
-          :Person ;
-      :hasBirthYear 1970 ;
-      :hasFather data:Berndt_Detlev_von_Storch ;
-      :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .
-
-  data:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,
-          :Woman ;
-      :hasBirthYear 1938 .
-
-  data:Berndt_Detlev_von_Storch a :Ancestor,
-          :Man ;
-      :hasBirthYear 1930 ;
-      :hasDeathYear 2004 .
 
 
 
@@ -645,13 +736,41 @@ The final data graph after all the edits:
 
 []
 Tool Calls:
-  AddLiteral (83567ae7-c0c2-49e2-91ef-50ac2436935a)
- Call ID: 83567ae7-c0c2-49e2-91ef-50ac2436935a
+  AssignClass (01a48f2b-465d-47c7-a0e1-b440f65f37ba)
+ Call ID: 01a48f2b-465d-47c7-a0e1-b440f65f37ba
   Args:
-    literal_value: 2010
-    literal_type: xsd:nonNegativeInteger
-    relation: :hasMarriageYear
-    source: :Beatrix_von_Storch
+    source: :Berndt_Detlev_von_Storch
+    type: :Ancestor
+  AssignClass (f730012a-99f6-4932-a741-0cd92f54cd8e)
+ Call ID: f730012a-99f6-4932-a741-0cd92f54cd8e
+  Args:
+    source: :Antje_Liete_Krüger-Franke
+    type: :Ancestor
+  AssignClass (cf403fea-ac53-4e4b-a571-0b4c1357469a)
+ Call ID: cf403fea-ac53-4e4b-a571-0b4c1357469a
+  Args:
+    source: :Berndt_Detlev_von_Storch
+    type: :Man
+  AssignClass (ff97a054-3bc0-425d-ae21-28981024b953)
+ Call ID: ff97a054-3bc0-425d-ae21-28981024b953
+  Args:
+    source: :Antje_Liete_Krüger-Franke
+    type: :Woman
+  Finish (5c3dedac-980a-48a9-aebf-87c20dbde8a1)
+ Call ID: 5c3dedac-980a-48a9-aebf-87c20dbde8a1
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -663,7 +782,19 @@ The final data graph after all the edits:
   data:Beatrix_von_Storch a :Person,
           :Woman ;
       :hasBirthYear 1971 ;
-      :hasMarriageYear "2010"^^xsd:nonNegativeInteger .
+      :hasMarriageYear 2010 ;
+      :hasRelation data:Sven_von_Storch .
+
+  data:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1938 .
+
+  data:Berndt_Detlev_von_Storch a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1930 ;
+      :hasDeathYear 2004 .
 
   data:Sven_von_Storch a :Man,
           :Person ;
@@ -671,23 +802,18 @@ The final data graph after all the edits:
       :hasFather data:Berndt_Detlev_von_Storch ;
       :hasMother data:Antje_Liete_Kr%C3%BCger-Franke .
 
-  data:Antje_Liete_Kr%C3%BCger-Franke a :Ancestor,
-          :Woman ;
-      :hasBirthYear 1938 .
-
-  data:Berndt_Detlev_von_Storch a :Ancestor,
-          :Man ;
-      :hasBirthYear 1930 ;
-      :hasDeathYear 2004 .
 
 
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
 
 ================================== Ai Message ==================================
 
 []
 Tool Calls:
-  ValidateShacl (5be5c3ca-d858-4e7d-9d54-abcaa0112812)
- Call ID: 5be5c3ca-d858-4e7d-9d54-abcaa0112812
+  ValidateShacl (7e654d8f-1a8c-4bcd-9973-327e295ff5f5)
+ Call ID: 7e654d8f-1a8c-4bcd-9973-327e295ff5f5
   Args:
 
 ================================= Tool Message =================================
@@ -698,6 +824,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (b767204e-8671-4c32-8d63-d8d3a178991b)
- Call ID: b767204e-8671-4c32-8d63-d8d3a178991b
+  Finish (ff38fc7e-0094-4b48-8c73-d2c10929d3ce)
+ Call ID: ff38fc7e-0094-4b48-8c73-d2c10929d3ce
   Args:

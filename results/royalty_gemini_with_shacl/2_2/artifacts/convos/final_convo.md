@@ -109,6 +109,8 @@ From 1 January 2023, Felix is known as "His Excellency Count Felix of Monpezat".
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -124,39 +126,9 @@ From 1 January 2023, Felix is known as "His Excellency Count Felix of Monpezat".
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -171,6 +143,23 @@ From 1 January 2023, Felix is known as "His Excellency Count Felix of Monpezat".
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -188,6 +177,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -255,29 +259,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -286,6 +282,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -298,6 +302,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -306,17 +312,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -344,6 +352,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -359,128 +451,107 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ecd96783-667e-47fa-adf5-0816ed447808)
- Call ID: ecd96783-667e-47fa-adf5-0816ed447808
+  AssignClass (cf316115-40e7-4df4-93e4-f28d56e3643d)
+ Call ID: cf316115-40e7-4df4-93e4-f28d56e3643d
   Args:
-    type: :Person
     source: Queen_Margrethe_II
-  AssignClass (6590006f-96ce-48f8-aa0f-083638b17fdc)
- Call ID: 6590006f-96ce-48f8-aa0f-083638b17fdc
-  Args:
     type: :Woman
-    source: Queen_Margrethe_II
-  AssignClass (839e8d41-68c0-48d8-a9ec-615db57861f5)
- Call ID: 839e8d41-68c0-48d8-a9ec-615db57861f5
-  Args:
-    type: :Person
-    source: Count_Felix_of_Monpezat
-  AssignClass (f733bafd-718b-406f-9b92-a9e3ad98a050)
- Call ID: f733bafd-718b-406f-9b92-a9e3ad98a050
+  AssignClass (048586ec-88af-4ffc-a757-7a75c7876995)
+ Call ID: 048586ec-88af-4ffc-a757-7a75c7876995
   Args:
     type: :Man
     source: Count_Felix_of_Monpezat
-  AssignClass (48d7a6b3-6fe4-4ae5-b758-66d51c99f0d0)
- Call ID: 48d7a6b3-6fe4-4ae5-b758-66d51c99f0d0
-  Args:
-    type: :Person
-    source: Prince_Henrik
-  AssignClass (7934da50-e43d-48a9-8f9b-5309d010727a)
- Call ID: 7934da50-e43d-48a9-8f9b-5309d010727a
+  AssignClass (6c0d3369-0476-4b28-a8e7-c47ce4113e0d)
+ Call ID: 6c0d3369-0476-4b28-a8e7-c47ce4113e0d
   Args:
     type: :Man
     source: Prince_Henrik
-  AssignClass (2e4db57d-387b-43a3-875a-dcafa9442e52)
- Call ID: 2e4db57d-387b-43a3-875a-dcafa9442e52
+  AssignClass (daeb454f-edb7-4cd8-b924-6f02c034e273)
+ Call ID: daeb454f-edb7-4cd8-b924-6f02c034e273
   Args:
-    type: :Person
     source: King_Frederik_X
-  AssignClass (b0f38556-0d1c-40d0-806a-b490b793c68d)
- Call ID: b0f38556-0d1c-40d0-806a-b490b793c68d
-  Args:
     type: :Man
-    source: King_Frederik_X
-  AssignClass (ba0b794b-2e3b-44db-85b2-4df308261d88)
- Call ID: ba0b794b-2e3b-44db-85b2-4df308261d88
-  Args:
-    type: :Person
-    source: Prince_Joachim
-  AssignClass (2c319e4f-1567-4072-8db8-ca3690a89590)
- Call ID: 2c319e4f-1567-4072-8db8-ca3690a89590
+  AssignClass (6543da16-12b0-4d7c-93ac-7cbaecfa0b99)
+ Call ID: 6543da16-12b0-4d7c-93ac-7cbaecfa0b99
   Args:
     type: :Man
     source: Prince_Joachim
-  AssignClass (88ddf900-6651-411b-b7a1-db762f80561e)
- Call ID: 88ddf900-6651-411b-b7a1-db762f80561e
+  AssignClass (0ef2385a-afe7-49da-bf66-024acd09d2b3)
+ Call ID: 0ef2385a-afe7-49da-bf66-024acd09d2b3
   Args:
-    type: :Person
     source: Countess_Alexandra
-  AssignClass (6011e0d2-e265-4cb7-ad7c-69e7ebe39ca0)
- Call ID: 6011e0d2-e265-4cb7-ad7c-69e7ebe39ca0
-  Args:
     type: :Woman
-    source: Countess_Alexandra
-  AssignClass (e2c37152-9876-41ad-8fba-6265debc5262)
- Call ID: e2c37152-9876-41ad-8fba-6265debc5262
+  AssignClass (5fabee9e-f4fc-4e12-9cd5-e15ee2662edf)
+ Call ID: 5fabee9e-f4fc-4e12-9cd5-e15ee2662edf
   Args:
-    type: :Person
     source: Prince_Nikolai
-  AssignClass (79bf3912-ce10-4477-ade5-fa8af0d6c3c5)
- Call ID: 79bf3912-ce10-4477-ade5-fa8af0d6c3c5
-  Args:
     type: :Man
-    source: Prince_Nikolai
-  AddLiteral (36227043-ab00-4dba-bcb8-c3197694c0be)
- Call ID: 36227043-ab00-4dba-bcb8-c3197694c0be
+  AddTriple (15d5251e-f4e7-4e57-84c6-82045d539e8c)
+ Call ID: 15d5251e-f4e7-4e57-84c6-82045d539e8c
   Args:
-    relation: :hasBirthYear
-    literal_type: xsd:string
-    literal_value: 2002-07-22
-    source: Count_Felix_of_Monpezat
-  AddTriple (ab767787-2773-4337-bfff-5cc75fc30f90)
- Call ID: ab767787-2773-4337-bfff-5cc75fc30f90
-  Args:
-    relation: :hasFather
-    source: Count_Felix_of_Monpezat
     target: Prince_Joachim
-  AddTriple (2c766999-7ffd-42c3-b4f3-3558bb954f83)
- Call ID: 2c766999-7ffd-42c3-b4f3-3558bb954f83
+    source: Queen_Margrethe_II
+    relation: :hasChild
+  AddTriple (017e3b75-15d5-4ca6-99ee-9c0273565d9f)
+ Call ID: 017e3b75-15d5-4ca6-99ee-9c0273565d9f
   Args:
-    target: Countess_Alexandra
-    relation: :hasMother
-    source: Count_Felix_of_Monpezat
-  AddTriple (38e25c38-d300-4654-97bd-173731ed2e31)
- Call ID: 38e25c38-d300-4654-97bd-173731ed2e31
+    target: Prince_Joachim
+    source: Prince_Henrik
+    relation: :hasChild
+  AddTriple (31b082e5-e438-440d-b4d8-a9840459eb60)
+ Call ID: 31b082e5-e438-440d-b4d8-a9840459eb60
   Args:
-    source: Count_Felix_of_Monpezat
-    relation: :hasBrother
-    target: Prince_Nikolai
-  AddTriple (1ddae5fd-bbb3-4ab4-bf35-667f045b47a4)
- Call ID: 1ddae5fd-bbb3-4ab4-bf35-667f045b47a4
+    source: Prince_Joachim
+    relation: :isFatherOf
+    target: Count_Felix_of_Monpezat
+  AddTriple (34836c27-6554-4661-a1cc-c5c4a4f70aa7)
+ Call ID: 34836c27-6554-4661-a1cc-c5c4a4f70aa7
   Args:
     target: Count_Felix_of_Monpezat
+    relation: :isMotherOf
+    source: Countess_Alexandra
+  AddTriple (665168f0-933d-4aa6-8f7a-39f0a5ddeede)
+ Call ID: 665168f0-933d-4aa6-8f7a-39f0a5ddeede
+  Args:
+    target: Prince_Nikolai
+    relation: :isFatherOf
+    source: Prince_Joachim
+  AddTriple (ed64ca12-87d9-4b1d-84d4-a5e284347ccb)
+ Call ID: ed64ca12-87d9-4b1d-84d4-a5e284347ccb
+  Args:
+    target: Prince_Nikolai
+    relation: :isMotherOf
+    source: Countess_Alexandra
+  AddTriple (16df410b-a97d-4d7c-96cf-a1947a7c1f39)
+ Call ID: 16df410b-a97d-4d7c-96cf-a1947a7c1f39
+  Args:
+    target: Count_Felix_of_Monpezat
+    source: Prince_Nikolai
+    relation: :isSiblingOf
+  AddLiteral (f6965c0f-a7e0-4f88-ad3b-32310af2651d)
+ Call ID: f6965c0f-a7e0-4f88-ad3b-32310af2651d
+  Args:
+    relation: :hasBirthYear
+    source: Count_Felix_of_Monpezat
+    literal_value: 2002
+    literal_type: xsd:integer
+  AddLiteral (8ae9d35c-0536-4f06-b56a-fac3130e41ad)
+ Call ID: 8ae9d35c-0536-4f06-b56a-fac3130e41ad
+  Args:
+    literal_value: His Excellency Count Felix of Monpezat
     source: Count_Felix_of_Monpezat
     relation: :knownAs
-  AddTriple (be4ee312-ec1c-4763-9d97-13d0b26b1afd)
- Call ID: be4ee312-ec1c-4763-9d97-13d0b26b1afd
+    literal_type: xsd:string
+  AddLiteral (a310c87e-b71e-44b0-8f44-25ae24f2cebe)
+ Call ID: a310c87e-b71e-44b0-8f44-25ae24f2cebe
   Args:
-    target: Prince_Felix_of_Denmark
-    relation: :formerlyKnownAs
+    literal_type: xsd:string
     source: Count_Felix_of_Monpezat
-  Finish (50f9951b-ce3c-48b1-94cc-e2ab52cace4a)
- Call ID: 50f9951b-ce3c-48b1-94cc-e2ab52cace4a
+    relation: :formerlyKnownAs
+    literal_value: His Highness Prince Felix of Denmark
+  Finish (89ac4ed9-cb08-4885-927c-62e92c64ba47)
+ Call ID: 89ac4ed9-cb08-4885-927c-62e92c64ba47
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -553,32 +624,29 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:King_Frederik_X a :Man,
-          :Person .
+  data:Countess_Alexandra a :Woman ;
+      :isMotherOf data:Count_Felix_of_Monpezat,
+          data:Prince_Nikolai .
 
-  data:Prince_Henrik a :Man,
-          :Person .
+  data:King_Frederik_X a :Man .
 
-  data:Queen_Margrethe_II a :Person,
-          :Woman .
+  data:Prince_Henrik a :Man ;
+      :hasChild data:Prince_Joachim .
 
-  data:Count_Felix_of_Monpezat a :Man,
-          :Person ;
-      :formerlyKnownAs data:Prince_Felix_of_Denmark ;
-      :hasBirthYear "2002-07-22"^^xsd:string ;
-      :hasBrother data:Prince_Nikolai ;
-      :hasFather data:Prince_Joachim ;
-      :hasMother data:Countess_Alexandra ;
-      :knownAs data:Count_Felix_of_Monpezat .
+  data:Queen_Margrethe_II a :Woman ;
+      :hasChild data:Prince_Joachim .
 
-  data:Countess_Alexandra a :Person,
-          :Woman .
+  data:Prince_Joachim a :Man ;
+      :isFatherOf data:Count_Felix_of_Monpezat,
+          data:Prince_Nikolai .
 
-  data:Prince_Joachim a :Man,
-          :Person .
+  data:Prince_Nikolai a :Man ;
+      :isSiblingOf data:Count_Felix_of_Monpezat .
 
-  data:Prince_Nikolai a :Man,
-          :Person .
+  data:Count_Felix_of_Monpezat a :Man ;
+      :formerlyKnownAs "His Highness Prince Felix of Denmark"^^xsd:string ;
+      :hasBirthYear 2002 ;
+      :knownAs "His Excellency Count Felix of Monpezat"^^xsd:string .
 
 
 
@@ -590,62 +658,30 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (9991b47f-320f-400b-80f3-0bac0ae92c6f)
- Call ID: 9991b47f-320f-400b-80f3-0bac0ae92c6f
+  ValidateShacl (7702552e-4c26-441d-be50-32b99e3f449b)
+ Call ID: 7702552e-4c26-441d-be50-32b99e3f449b
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:6
+Total violations:2
 Violations:
 
   Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The node Prince_Joachim is assigned as the father of Count_Felix_of_Monpezat, but it lacks the required class :Ancestor.
+      The node Prince_Joachim is used as a subject of the property :isFatherOf, but it is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Joachim, :Ancestor)
+      Use AssignClass to assign the class :Ancestor to the node Prince_Joachim.
 
 
   Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The node Countess_Alexandra is assigned as the mother of Count_Felix_of_Monpezat, but it lacks the required class :Ancestor.
+      The node Countess_Alexandra is used as a subject of the property :isMotherOf, but it is missing the mandatory class :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Alexandra, :Ancestor)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Joachim is used as a value for hasFather, but the system indicates it needs the :Ancestor class to satisfy the :Person-hasFather shape requirements.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Joachim, :Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Countess_Alexandra is used as a value for hasMother, but the system indicates it needs the :Ancestor class to satisfy the :Person-hasMother shape requirements.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Alexandra, :Ancestor)
-
-
-  Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node Prince_Joachim is identified as a violation for the hasFather path because it is missing the mandatory :Ancestor class classification.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Joachim, :Ancestor)
-
-
-  Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node Countess_Alexandra is identified as a violation for the hasMother path because it is missing the mandatory :Ancestor class classification.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Countess_Alexandra, :Ancestor)
+      Use AssignClass to assign the class :Ancestor to the node Countess_Alexandra.
 
 
 
@@ -654,19 +690,16 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (26f2c921-c0e1-48d7-bb9d-eb0504d1cf13)
- Call ID: 26f2c921-c0e1-48d7-bb9d-eb0504d1cf13
+  AssignClass (c49e9cb7-446e-45db-97d4-572bb8ac6a9c)
+ Call ID: c49e9cb7-446e-45db-97d4-572bb8ac6a9c
   Args:
+    type: :Ancestor
     source: Prince_Joachim
-    type: :Ancestor
-  AssignClass (d4e36f11-aff7-47e8-8d7d-a01634d15c83)
- Call ID: d4e36f11-aff7-47e8-8d7d-a01634d15c83
+  AssignClass (b71c35ef-6f81-48cd-bfd8-b5c6db0c9b29)
+ Call ID: b71c35ef-6f81-48cd-bfd8-b5c6db0c9b29
   Args:
-    type: :Ancestor
     source: Countess_Alexandra
-  ValidateShacl (d60d0704-5ed5-4bcf-b9a4-3ce940ef745b)
- Call ID: d60d0704-5ed5-4bcf-b9a4-3ce940ef745b
-  Args:
+    type: :Ancestor
 
 ================================= Tool Message =================================
 
@@ -679,36 +712,41 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:King_Frederik_X a :Man,
-          :Person .
-
-  data:Prince_Henrik a :Man,
-          :Person .
-
-  data:Queen_Margrethe_II a :Person,
-          :Woman .
-
-  data:Count_Felix_of_Monpezat a :Man,
-          :Person ;
-      :formerlyKnownAs data:Prince_Felix_of_Denmark ;
-      :hasBirthYear "2002-07-22"^^xsd:string ;
-      :hasBrother data:Prince_Nikolai ;
-      :hasFather data:Prince_Joachim ;
-      :hasMother data:Countess_Alexandra ;
-      :knownAs data:Count_Felix_of_Monpezat .
-
   data:Countess_Alexandra a :Ancestor,
-          :Person,
-          :Woman .
+          :Woman ;
+      :isMotherOf data:Count_Felix_of_Monpezat,
+          data:Prince_Nikolai .
+
+  data:King_Frederik_X a :Man .
+
+  data:Prince_Henrik a :Man ;
+      :hasChild data:Prince_Joachim .
+
+  data:Queen_Margrethe_II a :Woman ;
+      :hasChild data:Prince_Joachim .
 
   data:Prince_Joachim a :Ancestor,
-          :Man,
-          :Person .
+          :Man ;
+      :isFatherOf data:Count_Felix_of_Monpezat,
+          data:Prince_Nikolai .
 
-  data:Prince_Nikolai a :Man,
-          :Person .
+  data:Prince_Nikolai a :Man ;
+      :isSiblingOf data:Count_Felix_of_Monpezat .
+
+  data:Count_Felix_of_Monpezat a :Man ;
+      :formerlyKnownAs "His Highness Prince Felix of Denmark"^^xsd:string ;
+      :hasBirthYear 2002 ;
+      :knownAs "His Excellency Count Felix of Monpezat"^^xsd:string .
 
 
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (4aa0788c-07e5-4cf3-bb9f-a662b06c246d)
+ Call ID: 4aa0788c-07e5-4cf3-bb9f-a662b06c246d
+  Args:
 
 ================================= Tool Message =================================
 
@@ -718,89 +756,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (1bdd6c0f-eedc-4adc-acf7-e5f4b8c4f8e7)
- Call ID: 1bdd6c0f-eedc-4adc-acf7-e5f4b8c4f8e7
-  Args:
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['Prince_Felix_of_Denmark']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (aba43836-542e-4b6c-892b-a7cf9b0fab26)
- Call ID: aba43836-542e-4b6c-892b-a7cf9b0fab26
-  Args:
-    source: Prince_Felix_of_Denmark
-    type: :Person
-  ValidateShacl (815fc736-0f32-46c0-b5ad-49d69c3f90ca)
- Call ID: 815fc736-0f32-46c0-b5ad-49d69c3f90ca
-  Args:
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:King_Frederik_X a :Man,
-          :Person .
-
-  data:Prince_Henrik a :Man,
-          :Person .
-
-  data:Queen_Margrethe_II a :Person,
-          :Woman .
-
-  data:Count_Felix_of_Monpezat a :Man,
-          :Person ;
-      :formerlyKnownAs data:Prince_Felix_of_Denmark ;
-      :hasBirthYear "2002-07-22"^^xsd:string ;
-      :hasBrother data:Prince_Nikolai ;
-      :hasFather data:Prince_Joachim ;
-      :hasMother data:Countess_Alexandra ;
-      :knownAs data:Count_Felix_of_Monpezat .
-
-  data:Countess_Alexandra a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_Felix_of_Denmark a :Person .
-
-  data:Prince_Joachim a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Nikolai a :Man,
-          :Person .
-
-
-
-================================= Tool Message =================================
-
-SHACL validation has not produced any violations.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  Finish (b21f8116-ceeb-4210-98c2-d17c7bca57f6)
- Call ID: b21f8116-ceeb-4210-98c2-d17c7bca57f6
+  Finish (ecbe8d34-f459-48c1-a8d7-2b2437b95b38)
+ Call ID: ecbe8d34-f459-48c1-a8d7-2b2437b95b38
   Args:

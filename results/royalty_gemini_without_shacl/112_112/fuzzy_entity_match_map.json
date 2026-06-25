@@ -16,21 +16,21 @@
       "qid": "Q1938760",
       "label": "Prince Alexander, Prince of Orange",
       "distance": 0,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Wilhelmina_of_the_Netherlands",
-      "qid": "Q150747",
-      "label": "Wilhelmina of the Netherlands",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#William_III_of_the_Netherlands",
       "qid": "Q125649",
       "label": "William III of the Netherlands",
       "distance": 1,
-      "gender": "male"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Wilhelmina_of_the_Netherlands",
+      "qid": "Q150747",
+      "label": "Wilhelmina of the Netherlands",
+      "distance": 2,
+      "gender": null
     }
   ],
   "entities": [
@@ -44,31 +44,31 @@
       "ground_truth_uri": "http://example.com/data#Wilhelmina_of_the_Netherlands",
       "ground_truth_qid": "Q150747",
       "ground_truth_label": "Wilhelmina of the Netherlands",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Wilhelmina",
       "best_candidate_label": "Wilhelmina of the Netherlands",
       "best_candidate_qid": "Q150747",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
-      "extracted_uri": "http://example.org/data/PrinceWilliam",
-      "extracted_local_name": "PrinceWilliam",
-      "embedding_text": "Prince William",
+      "extracted_uri": "http://example.org/data/William_III",
+      "extracted_local_name": "William_III",
+      "embedding_text": "William III",
       "extracted_gender": "male",
       "matched": true,
-      "score": 0.7916666666666667,
+      "score": 1.0,
       "ground_truth_uri": "http://example.com/data#William_III_of_the_Netherlands",
       "ground_truth_qid": "Q125649",
       "ground_truth_label": "William III of the Netherlands",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Prince William of Orange",
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "William III",
       "best_candidate_label": "William III of the Netherlands",
       "best_candidate_qid": "Q125649",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.7916666666666667
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
     },
     {
       "extracted_uri": "http://example.org/data/Alexander",
@@ -85,7 +85,7 @@
       "best_candidate_match_text": "Alexander, Prince of Orange",
       "best_candidate_label": "Prince Alexander, Prince of Orange",
       "best_candidate_qid": "Q1938760",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.5
     },
     {
@@ -100,11 +100,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Alexander, Prince of Orange",
-      "best_candidate_label": "Prince Alexander, Prince of Orange",
-      "best_candidate_qid": "Q1938760",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.29411764705882354
+      "best_candidate_match_text": "Wilhelmina I",
+      "best_candidate_label": "Wilhelmina of the Netherlands",
+      "best_candidate_qid": "Q150747",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3157894736842105
     },
     {
       "extracted_uri": "http://example.org/data/Sophie",
@@ -118,16 +118,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Wilhelmina",
-      "best_candidate_label": "Wilhelmina of the Netherlands",
-      "best_candidate_qid": "Q150747",
-      "best_candidate_gender": "female",
+      "best_candidate_match_text": "Willem III",
+      "best_candidate_label": "William III of the Netherlands",
+      "best_candidate_qid": "Q125649",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.25
     },
     {
-      "extracted_uri": "http://example.org/data/WilliamIII",
-      "extracted_local_name": "WilliamIII",
-      "embedding_text": "William III",
+      "extracted_uri": "http://example.org/data/William_prince",
+      "extracted_local_name": "William_prince",
+      "embedding_text": "William prince",
       "extracted_gender": "male",
       "matched": false,
       "score": null,
@@ -136,11 +136,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Prince Alexander- Prince of Orange",
+      "best_candidate_match_text": "Alexander, Prince of Orange",
       "best_candidate_label": "Prince Alexander, Prince of Orange",
       "best_candidate_qid": "Q1938760",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.17777777777777778
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.43902439024390244
     }
   ],
   "summary": {

@@ -99,6 +99,8 @@ Baron von dem Bussche-Haddenhausen died on 19 November 1939 in Ramos Mejía, Arg
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -114,39 +116,9 @@ Baron von dem Bussche-Haddenhausen died on 19 November 1939 in Ramos Mejía, Arg
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -161,6 +133,23 @@ Baron von dem Bussche-Haddenhausen died on 19 November 1939 in Ramos Mejía, Arg
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -178,6 +167,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -245,29 +249,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -276,6 +272,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -288,6 +292,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -296,17 +302,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -334,6 +342,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -349,156 +441,207 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (c4f95a78-64a3-4d5d-9f5e-49637f8958e8)
- Call ID: c4f95a78-64a3-4d5d-9f5e-49637f8958e8
+  AssignClass (d68f38db-7f1b-4c53-9d7f-8f50d8b20625)
+ Call ID: d68f38db-7f1b-4c53-9d7f-8f50d8b20625
+  Args:
+    source: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
+    type: :Man
+  AssignClass (50e4185e-d714-4a75-bb14-5ca27b02d7a1)
+ Call ID: 50e4185e-d714-4a75-bb14-5ca27b02d7a1
+  Args:
+    source: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
+    type: :Person
+  AddLiteral (cdcc7961-12d6-4f75-8c3f-4079b9781ff0)
+ Call ID: cdcc7961-12d6-4f75-8c3f-4079b9781ff0
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1867
+    relation: :hasBirthYear
+    source: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
+  AddLiteral (27bf0b25-c933-4e82-9a7c-7a672df65c67)
+ Call ID: 27bf0b25-c933-4e82-9a7c-7a672df65c67
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1939
+    source: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
+    relation: :hasDeathYear
+  AssignClass (d5a1d203-09da-493e-ad1d-9faad7109185)
+ Call ID: d5a1d203-09da-493e-ad1d-9faad7109185
   Args:
     type: :Man
-    source: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
-  AssignClass (4995e042-f21c-4213-9a17-2964f45ed08c)
- Call ID: 4995e042-f21c-4213-9a17-2964f45ed08c
+    source: Julius_von_dem_Bussche-Haddenhausen
+  AssignClass (a1a3c0d1-9afc-4fcc-90e6-3c1c0aa3d2e0)
+ Call ID: a1a3c0d1-9afc-4fcc-90e6-3c1c0aa3d2e0
+  Args:
+    type: :Person
+    source: Julius_von_dem_Bussche-Haddenhausen
+  AddLiteral (eb5a0108-1058-4910-b4d7-82f5dc77b788)
+ Call ID: eb5a0108-1058-4910-b4d7-82f5dc77b788
   Args:
     source: Julius_von_dem_Bussche-Haddenhausen
-    type: :Man
-  AssignClass (19fc39ab-ed7a-4eab-ac1b-22781a0cc982)
- Call ID: 19fc39ab-ed7a-4eab-ac1b-22781a0cc982
+    relation: :hasBirthYear
+    literal_value: 1827
+    literal_type: xsd:integer
+  AddLiteral (271cc9e2-29ee-4530-bf25-8e788f755fb3)
+ Call ID: 271cc9e2-29ee-4530-bf25-8e788f755fb3
   Args:
-    type: :Woman
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+    source: Julius_von_dem_Bussche-Haddenhausen
+    literal_value: 1882
+  AssignClass (6cc11129-41be-4435-9939-20afbd715051)
+ Call ID: 6cc11129-41be-4435-9939-20afbd715051
+  Args:
     source: Mathilde_von_Salviati
-  AssignClass (0a589f78-a2a9-47e9-a143-bbdc58aad755)
- Call ID: 0a589f78-a2a9-47e9-a143-bbdc58aad755
-  Args:
-    source: George_von_dem_Bussche-Haddenhausen
-    type: :Man
-  AssignClass (75b2f26b-a71a-4be6-a262-3272bdf6fb65)
- Call ID: 75b2f26b-a71a-4be6-a262-3272bdf6fb65
-  Args:
-    source: Baroness_Gosta_von_dem_Bussche-Haddenhausen
     type: :Woman
-  AssignClass (a66cb010-b095-4c55-a4ae-0a630f902bfd)
- Call ID: a66cb010-b095-4c55-a4ae-0a630f902bfd
+  AssignClass (2dbdd261-2871-49b2-a042-4d15c8d3bf3f)
+ Call ID: 2dbdd261-2871-49b2-a042-4d15c8d3bf3f
+  Args:
+    type: :Person
+    source: Mathilde_von_Salviati
+  AddLiteral (cc6a6c79-2af6-4e69-be26-bc17c61aab48)
+ Call ID: cc6a6c79-2af6-4e69-be26-bc17c61aab48
+  Args:
+    source: Mathilde_von_Salviati
+    relation: :hasBirthYear
+    literal_value: 1833
+    literal_type: xsd:integer
+  AddLiteral (79fd44e1-60f8-4d37-b188-d849b7923adb)
+ Call ID: 79fd44e1-60f8-4d37-b188-d849b7923adb
+  Args:
+    literal_value: 1892
+    source: Mathilde_von_Salviati
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+  AddTriple (82b7d369-9a9e-40b3-bc8b-3bb6df57673a)
+ Call ID: 82b7d369-9a9e-40b3-bc8b-3bb6df57673a
+  Args:
+    target: Julius_von_dem_Bussche-Haddenhausen
+    source: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
+    relation: :hasFather
+  AddTriple (05e6c251-33dc-405a-92fe-83d7242afdbd)
+ Call ID: 05e6c251-33dc-405a-92fe-83d7242afdbd
+  Args:
+    relation: :hasMother
+    source: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
+    target: Mathilde_von_Salviati
+  AssignClass (8b583468-f5e8-48e4-a3ca-13b0eb626d04)
+ Call ID: 8b583468-f5e8-48e4-a3ca-13b0eb626d04
+  Args:
+    type: :Man
+    source: George_von_dem_Bussche-Haddenhausen
+  AssignClass (828f9abf-e913-4d22-8ccd-b38651c2b452)
+ Call ID: 828f9abf-e913-4d22-8ccd-b38651c2b452
+  Args:
+    type: :Person
+    source: George_von_dem_Bussche-Haddenhausen
+  AddTriple (e6d36d87-e3c0-45b0-93e6-6b813aa811bd)
+ Call ID: e6d36d87-e3c0-45b0-93e6-6b813aa811bd
+  Args:
+    target: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
+    source: George_von_dem_Bussche-Haddenhausen
+    relation: :isBrotherOf
+  AssignClass (93dc0ef6-8a9b-47b6-9fef-73baf8279f1f)
+ Call ID: 93dc0ef6-8a9b-47b6-9fef-73baf8279f1f
+  Args:
+    type: :Woman
+    source: Baroness_Gösta_von_dem_Bussche-Haddenhausen
+  AssignClass (c02f4673-42c0-43f2-9272-3e3dfb529e2c)
+ Call ID: c02f4673-42c0-43f2-9272-3e3dfb529e2c
+  Args:
+    source: Baroness_Gösta_von_dem_Bussche-Haddenhausen
+    type: :Person
+  AddTriple (57f19bce-b786-4611-bcc3-656c531e90dd)
+ Call ID: 57f19bce-b786-4611-bcc3-656c531e90dd
+  Args:
+    target: Baroness_Gösta_von_dem_Bussche-Haddenhausen
+    source: George_von_dem_Bussche-Haddenhausen
+    relation: :isMotherOf
+  AssignClass (9cb45d58-1d7a-4282-a105-5af7fef11689)
+ Call ID: 9cb45d58-1d7a-4282-a105-5af7fef11689
   Args:
     source: Prince_Claus_of_the_Netherlands
     type: :Man
-  AssignClass (60eac7ad-5623-4601-a331-19bdc45ea848)
- Call ID: 60eac7ad-5623-4601-a331-19bdc45ea848
+  AssignClass (df5035af-e1c1-42a6-b5eb-b5b1e2cc9ec7)
+ Call ID: df5035af-e1c1-42a6-b5eb-b5b1e2cc9ec7
   Args:
-    source: Maria_Eleonore_Martinez_de_Hoz
+    source: Prince_Claus_of_the_Netherlands
+    type: :Person
+  AddTriple (c89f6463-8aad-42b0-8847-1621eae2adaa)
+ Call ID: c89f6463-8aad-42b0-8847-1621eae2adaa
+  Args:
+    target: Prince_Claus_of_the_Netherlands
+    source: Baroness_Gösta_von_dem_Bussche-Haddenhausen
+    relation: :isMotherOf
+  AssignClass (9f5fe2c2-b362-4dc6-a4ee-0b352b03e08f)
+ Call ID: 9f5fe2c2-b362-4dc6-a4ee-0b352b03e08f
+  Args:
     type: :Woman
-  AssignClass (9ba7e24f-bdfb-4456-889f-32b70d256448)
- Call ID: 9ba7e24f-bdfb-4456-889f-32b70d256448
+    source: María_Eleonore_Martínez_de_Hoz
+  AssignClass (0bdde593-2110-4e01-b15d-050fbf226b53)
+ Call ID: 0bdde593-2110-4e01-b15d-050fbf226b53
   Args:
-    source: Narciso_Martinez_de_Hoz
-    type: :Man
-  AssignClass (9add3ba0-4cd6-42d7-9e49-9a1826131c90)
- Call ID: 9add3ba0-4cd6-42d7-9e49-9a1826131c90
+    source: María_Eleonore_Martínez_de_Hoz
+    type: :Person
+  AddLiteral (5ded7e2d-c961-406a-9af8-eca428805430)
+ Call ID: 5ded7e2d-c961-406a-9af8-eca428805430
   Args:
-    source: Mathilde_Stegmann
-    type: :Woman
-  AddLiteral (4a65f235-aaa2-4da0-967a-f206038e2b9e)
- Call ID: 4a65f235-aaa2-4da0-967a-f206038e2b9e
-  Args:
-    relation: :hasBirthYear
-    literal_value: 1867
-    literal_type: xsd:integer
-    source: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
-  AddLiteral (db523f95-a792-4a4c-b1c7-e60993368fad)
- Call ID: db523f95-a792-4a4c-b1c7-e60993368fad
-  Args:
-    source: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
-    relation: :hasDeathYear
-    literal_value: 1939
-    literal_type: xsd:integer
-  AddLiteral (4acb3657-ba74-4930-bed4-b2369c5dd6ab)
- Call ID: 4acb3657-ba74-4930-bed4-b2369c5dd6ab
-  Args:
-    relation: :hasBirthYear
-    literal_type: xsd:integer
-    literal_value: 1827
-    source: Julius_von_dem_Bussche-Haddenhausen
-  AddLiteral (1218fecd-b3ee-4568-bca2-4cc6c07006c1)
- Call ID: 1218fecd-b3ee-4568-bca2-4cc6c07006c1
-  Args:
-    literal_value: 1882
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: Julius_von_dem_Bussche-Haddenhausen
-  AddLiteral (6c93e1e1-f66c-4336-9c59-061aa7405b02)
- Call ID: 6c93e1e1-f66c-4336-9c59-061aa7405b02
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1833
-    relation: :hasBirthYear
-    source: Mathilde_von_Salviati
-  AddLiteral (1b329afd-7cf0-4f5e-b03f-d53f178d1f3f)
- Call ID: 1b329afd-7cf0-4f5e-b03f-d53f178d1f3f
-  Args:
-    literal_value: 1892
-    literal_type: xsd:integer
-    relation: :hasDeathYear
-    source: Mathilde_von_Salviati
-  AddLiteral (d4bb118f-6b15-454d-b938-f85a75ff39cf)
- Call ID: d4bb118f-6b15-454d-b938-f85a75ff39cf
-  Args:
-    source: Maria_Eleonore_Martinez_de_Hoz
-    relation: :hasBirthYear
-    literal_type: xsd:integer
     literal_value: 1875
-  AddLiteral (045bc404-4162-4dd4-9edd-5829ac5ec933)
- Call ID: 045bc404-4162-4dd4-9edd-5829ac5ec933
+    relation: :hasBirthYear
+    source: María_Eleonore_Martínez_de_Hoz
+    literal_type: xsd:integer
+  AddLiteral (8a5d57e7-cc25-46c2-9923-010ec32491a2)
+ Call ID: 8a5d57e7-cc25-46c2-9923-010ec32491a2
   Args:
-    source: Maria_Eleonore_Martinez_de_Hoz
     literal_type: xsd:integer
     literal_value: 1957
     relation: :hasDeathYear
-  AddLiteral (4d2743af-e3c1-4ecd-9ae4-a71daf80dc78)
- Call ID: 4d2743af-e3c1-4ecd-9ae4-a71daf80dc78
+    source: María_Eleonore_Martínez_de_Hoz
+  AddLiteral (cfbe8c3a-b4c1-42bd-9b41-ca83d46f6059)
+ Call ID: cfbe8c3a-b4c1-42bd-9b41-ca83d46f6059
   Args:
-    literal_type: xsd:integer
-    literal_value: 1899
     relation: :hasMarriageYear
     source: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
-  AddTriple (ca0cd9fe-d999-4918-8215-4c289b671df8)
- Call ID: ca0cd9fe-d999-4918-8215-4c289b671df8
+    literal_value: 1899
+    literal_type: xsd:integer
+  AddTriple (ba33da83-3366-49c6-aa30-6e4192b3b658)
+ Call ID: ba33da83-3366-49c6-aa30-6e4192b3b658
   Args:
     source: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
-    target: Julius_von_dem_Bussche-Haddenhausen
+    relation: :hasRelation
+    target: María_Eleonore_Martínez_de_Hoz
+  AssignClass (aa6b19f5-73e3-47fd-9cb0-604bb3314275)
+ Call ID: aa6b19f5-73e3-47fd-9cb0-604bb3314275
+  Args:
+    type: :Man
+    source: Narciso_Martínez_de_Hoz
+  AssignClass (5373cf19-21c8-47da-ac84-0b8a6f7b3735)
+ Call ID: 5373cf19-21c8-47da-ac84-0b8a6f7b3735
+  Args:
+    source: Narciso_Martínez_de_Hoz
+    type: :Person
+  AssignClass (8e506656-8061-416e-85ef-1d4cad3a2483)
+ Call ID: 8e506656-8061-416e-85ef-1d4cad3a2483
+  Args:
+    type: :Woman
+    source: Mathilde_Stegmann
+  AssignClass (aa2a4d97-0ae5-4a0f-ab78-618126e53e34)
+ Call ID: aa2a4d97-0ae5-4a0f-ab78-618126e53e34
+  Args:
+    source: Mathilde_Stegmann
+    type: :Person
+  AddTriple (1db5a5ae-19ac-46f3-93c1-093469a43c9a)
+ Call ID: 1db5a5ae-19ac-46f3-93c1-093469a43c9a
+  Args:
+    target: Narciso_Martínez_de_Hoz
+    source: María_Eleonore_Martínez_de_Hoz
     relation: :hasFather
-  AddTriple (3393c69a-0cba-4240-b2a8-820df5be30ea)
- Call ID: 3393c69a-0cba-4240-b2a8-820df5be30ea
+  AddTriple (ac9e7a7c-2c1c-49d5-9159-38df2a063506)
+ Call ID: ac9e7a7c-2c1c-49d5-9159-38df2a063506
   Args:
-    target: Mathilde_von_Salviati
-    source: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
-    relation: :hasMother
-  AddTriple (59172ed4-7486-4344-91a6-5adf7de6dfd1)
- Call ID: 59172ed4-7486-4344-91a6-5adf7de6dfd1
-  Args:
-    relation: :isBrotherOf
-    source: George_von_dem_Bussche-Haddenhausen
-    target: Hilmar_Freiherr_von_dem_Bussche-Haddenhausen
-  AddTriple (c00510ba-65b7-4cec-848f-46b5bacc0a18)
- Call ID: c00510ba-65b7-4cec-848f-46b5bacc0a18
-  Args:
-    relation: :isMotherOf
-    source: George_von_dem_Bussche-Haddenhausen
-    target: Baroness_Gosta_von_dem_Bussche-Haddenhausen
-  AddTriple (1d842156-262c-4e35-9590-6d506e0e253c)
- Call ID: 1d842156-262c-4e35-9590-6d506e0e253c
-  Args:
-    relation: :isMotherOf
-    target: Prince_Claus_of_the_Netherlands
-    source: Baroness_Gosta_von_dem_Bussche-Haddenhausen
-  AddTriple (437097a5-1cd2-4cca-b67b-4a815a4ab140)
- Call ID: 437097a5-1cd2-4cca-b67b-4a815a4ab140
-  Args:
-    relation: :hasFather
-    target: Narciso_Martinez_de_Hoz
-    source: Maria_Eleonore_Martinez_de_Hoz
-  AddTriple (43f562d0-b721-496d-947d-30bb68f710b1)
- Call ID: 43f562d0-b721-496d-947d-30bb68f710b1
-  Args:
-    relation: :hasMother
     target: Mathilde_Stegmann
-    source: Maria_Eleonore_Martinez_de_Hoz
-  Finish (d2467fce-4fcb-41ba-b8eb-59e2a917f709)
- Call ID: d2467fce-4fcb-41ba-b8eb-59e2a917f709
+    relation: :hasMother
+    source: María_Eleonore_Martínez_de_Hoz
+  Finish (fcb84704-ced9-4d10-be97-a8b006041478)
+ Call ID: fcb84704-ced9-4d10-be97-a8b006041478
   Args:

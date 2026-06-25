@@ -1,0 +1,293 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Prince_Radu_Duda a :Man ;
+    :hasBrother data:Prince_Radu_Duda ;
+    :hasRelation data:Prince_Radu_Duda ;
+    :isBloodrelationOf data:Prince_Radu_Duda ;
+    :isBrotherOf data:Prince_Radu_Duda ;
+    :isSiblingOf data:Prince_Radu_Duda .
+
+data:King_Michael_I a :Ancestor,
+        :Man ;
+    :hasBrother data:King_Michael_I ;
+    :hasChild data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :hasDaughter data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :hasRelation data:King_Michael_I,
+        data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isAncestorOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isBloodrelationOf data:King_Michael_I ;
+    :isBrotherOf data:King_Michael_I ;
+    :isFatherOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isParentOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isSiblingOf data:King_Michael_I ;
+    :isUncleOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania .
+
+data:Queen_Anne_of_Romania a :Ancestor,
+        :Woman ;
+    :hasChild data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :hasDaughter data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :hasRelation data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSister data:Queen_Anne_of_Romania ;
+    :isAncestorOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isAuntOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isBloodrelationOf data:Queen_Anne_of_Romania ;
+    :isMotherOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isParentOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isSiblingOf data:Queen_Anne_of_Romania ;
+    :isSisterOf data:Queen_Anne_of_Romania .
+
+data:Margareta_of_Romania a :Woman ;
+    :hasAncestor data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :hasBirthYear 1949 ;
+    :hasFather data:King_Michael_I ;
+    :hasMother data:Queen_Anne_of_Romania ;
+    :hasParent data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :hasRelation data:King_Michael_I,
+        data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSister data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isBloodrelationOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isChildOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :isDaughterOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :isSiblingOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isSisterOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania .
+
+data:Princess_Elena_of_Romania a :Woman ;
+    :hasAncestor data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :hasFather data:King_Michael_I ;
+    :hasMother data:Queen_Anne_of_Romania ;
+    :hasParent data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :hasRelation data:King_Michael_I,
+        data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSister data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isBloodrelationOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isChildOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :isDaughterOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :isSiblingOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isSisterOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania .
+
+data:Princess_Irina_of_Romania a :Woman ;
+    :hasAncestor data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :hasFather data:King_Michael_I ;
+    :hasMother data:Queen_Anne_of_Romania ;
+    :hasParent data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :hasRelation data:King_Michael_I,
+        data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSister data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isBloodrelationOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isChildOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :isDaughterOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :isSiblingOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isSisterOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania .
+
+data:Princess_Maria_of_Romania a :Woman ;
+    :hasAncestor data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :hasFather data:King_Michael_I ;
+    :hasMother data:Queen_Anne_of_Romania ;
+    :hasParent data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :hasRelation data:King_Michael_I,
+        data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSister data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isBloodrelationOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isChildOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :isDaughterOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :isSiblingOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isSisterOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania .
+
+data:Princess_Sophie_of_Romania a :Woman ;
+    :hasAncestor data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :hasFather data:King_Michael_I ;
+    :hasMother data:Queen_Anne_of_Romania ;
+    :hasParent data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :hasRelation data:King_Michael_I,
+        data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania,
+        data:Queen_Anne_of_Romania ;
+    :hasSister data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isBloodrelationOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isChildOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :isDaughterOf data:King_Michael_I,
+        data:Queen_Anne_of_Romania ;
+    :isSiblingOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania ;
+    :isSisterOf data:Margareta_of_Romania,
+        data:Princess_Elena_of_Romania,
+        data:Princess_Irina_of_Romania,
+        data:Princess_Maria_of_Romania,
+        data:Princess_Sophie_of_Romania .
+

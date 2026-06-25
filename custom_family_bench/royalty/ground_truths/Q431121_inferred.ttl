@@ -1,0 +1,231 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Emanuele Filiberto, 2nd Duke of Aosta"^^xsd:string ;
+    data:posIndicesFull "298:342"^^xsd:string,
+        "305:323"^^xsd:string ;
+    data:posIndicesPart "1566:1570"^^xsd:string,
+        "1914:1918"^^xsd:string,
+        "1922:1927"^^xsd:string,
+        "2051:2055"^^xsd:string,
+        "2059:2064"^^xsd:string,
+        "2199:2203"^^xsd:string,
+        "2207:2212"^^xsd:string,
+        "2483:2487"^^xsd:string,
+        "2534:2540"^^xsd:string,
+        "2648:2652"^^xsd:string,
+        "2656:2661"^^xsd:string,
+        "2846:2851"^^xsd:string,
+        "3072:3076"^^xsd:string,
+        "3080:3085"^^xsd:string,
+        "3412:3418"^^xsd:string,
+        "3742:3747"^^xsd:string,
+        "549:553"^^xsd:string,
+        "818:822"^^xsd:string ;
+    data:wdtLink wdt:Q445106 ;
+    :alsoKnownAs "Emanuele Filiberto"^^xsd:string ;
+    :hasBrother data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :hasChild data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :hasRelation data:Prince_Amedeo-_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isAncestorOf data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isBloodrelationOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :isFatherOf data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isParentOf data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :isUncleOf data:Prince_Amedeo-_3rd_Duke_of_Aosta .
+
+data:Prince_Amedeo-_3rd_Duke_of_Aosta a :Man,
+        :Person ;
+    rdfs:label "Prince Amedeo, 3rd Duke of Aosta"^^xsd:string ;
+    data:posIndicesFull "0:32"^^xsd:string ;
+    data:posIndicesPart "1145:1151"^^xsd:string,
+        "1219:1225"^^xsd:string,
+        "1381:1387"^^xsd:string,
+        "1566:1570"^^xsd:string,
+        "1676:1682"^^xsd:string,
+        "1896:1902"^^xsd:string,
+        "1914:1918"^^xsd:string,
+        "1922:1927"^^xsd:string,
+        "2051:2055"^^xsd:string,
+        "2059:2064"^^xsd:string,
+        "2150:2156"^^xsd:string,
+        "2199:2203"^^xsd:string,
+        "2207:2212"^^xsd:string,
+        "2225:2231"^^xsd:string,
+        "2402:2408"^^xsd:string,
+        "2483:2487"^^xsd:string,
+        "2534:2540"^^xsd:string,
+        "259:265"^^xsd:string,
+        "2648:2652"^^xsd:string,
+        "2656:2661"^^xsd:string,
+        "2846:2851"^^xsd:string,
+        "3072:3076"^^xsd:string,
+        "3080:3085"^^xsd:string,
+        "3183:3189"^^xsd:string,
+        "3412:3418"^^xsd:string,
+        "3419:3425"^^xsd:string,
+        "3504:3510"^^xsd:string,
+        "3540:3546"^^xsd:string,
+        "3696:3702"^^xsd:string,
+        "3742:3747"^^xsd:string,
+        "432:438"^^xsd:string,
+        "549:553"^^xsd:string,
+        "565:571"^^xsd:string,
+        "671:677"^^xsd:string,
+        "818:822"^^xsd:string,
+        "897:903"^^xsd:string,
+        "969:975"^^xsd:string ;
+    data:wdtLink wdt:Q431121 ;
+    :alsoKnownAs "Amedeo di Savoia-Aosta"^^xsd:string ;
+    :hasAncestor data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :hasBrother data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :hasFather data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :hasParent data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :hasRelation data:Prince_Amedeo-_3rd_Duke_of_Aosta,
+        data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isChildOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Amedeo-_3rd_Duke_of_Aosta ;
+    :isSonOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta .
+
+data:Prince_Jean_dOrléans_1 a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Jean d’Orléans"^^xsd:string ;
+    data:posIndicesFull "3303:3329"^^xsd:string ;
+    data:posIndicesPart "3412:3418"^^xsd:string ;
+    data:wdtLink wdt:Q578791 ;
+    :alsoKnownAs "Jean Pierre Clément Marie d’Orléans"^^xsd:string,
+        "Jean d’Orléans"^^xsd:string,
+        "Prince Jean Pierre Clément Marie d’Orléans"^^xsd:string,
+        "Prince Jean, Duke of Guise"^^xsd:string ;
+    :hasBrother data:Prince_Jean_dOrléans_1 ;
+    :hasChild data:Princess_Anne_of_Orléans ;
+    :hasDaughter data:Princess_Anne_of_Orléans ;
+    :hasRelation data:Prince_Jean_dOrléans_1,
+        data:Princess_Anne_of_Orléans,
+        data:Princess_Isabelle_dOrléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:male ;
+    :isAncestorOf data:Princess_Anne_of_Orléans ;
+    :isBloodrelationOf data:Prince_Jean_dOrléans_1 ;
+    :isBrotherOf data:Prince_Jean_dOrléans_1 ;
+    :isFatherOf data:Princess_Anne_of_Orléans ;
+    :isParentOf data:Princess_Anne_of_Orléans ;
+    :isSiblingOf data:Prince_Jean_dOrléans_1 ;
+    :isUncleOf data:Princess_Anne_of_Orléans .
+
+data:Princess_María_Isabel_of_Orléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess María Isabel of Orléans"^^xsd:string ;
+    data:posIndicesFull "463:497"^^xsd:string,
+        "472:486"^^xsd:string ;
+    data:wdtLink wdt:Q242879 ;
+    :alsoKnownAs "Infanta Maria Isabel of Orléans"^^xsd:string,
+        "Maria Isabella"^^xsd:string,
+        "Princess Maria Isabel of Orléans, Infanta of Spain"^^xsd:string,
+        "Princess Marie Isabelle of Orleans"^^xsd:string ;
+    :hasChild data:Princess_Isabelle_dOrléans ;
+    :hasDaughter data:Princess_Isabelle_dOrléans ;
+    :hasRelation data:Prince_Jean_dOrléans_1,
+        data:Princess_Anne_of_Orléans,
+        data:Princess_Isabelle_dOrléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_María_Isabel_of_Orléans ;
+    :isAncestorOf data:Princess_Anne_of_Orléans,
+        data:Princess_Isabelle_dOrléans ;
+    :isAuntOf data:Princess_Isabelle_dOrléans ;
+    :isBloodrelationOf data:Princess_María_Isabel_of_Orléans ;
+    :isMotherOf data:Princess_Isabelle_dOrléans ;
+    :isParentOf data:Princess_Isabelle_dOrléans ;
+    :isSiblingOf data:Princess_María_Isabel_of_Orléans ;
+    :isSisterOf data:Princess_María_Isabel_of_Orléans .
+
+data:Princess_Isabelle_dOrléans a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Isabelle d’Orléans"^^xsd:string ;
+    data:posIndicesFull "3335:3363"^^xsd:string ;
+    data:wdtLink wdt:Q261322 ;
+    :alsoKnownAs "Princess Isabelle of Orleans"^^xsd:string ;
+    :hasAncestor data:Princess_María_Isabel_of_Orléans ;
+    :hasChild data:Princess_Anne_of_Orléans ;
+    :hasDaughter data:Princess_Anne_of_Orléans ;
+    :hasMother data:Princess_María_Isabel_of_Orléans ;
+    :hasParent data:Princess_María_Isabel_of_Orléans ;
+    :hasRelation data:Prince_Jean_dOrléans_1,
+        data:Princess_Anne_of_Orléans,
+        data:Princess_Isabelle_dOrléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Isabelle_dOrléans ;
+    :isAncestorOf data:Princess_Anne_of_Orléans ;
+    :isAuntOf data:Princess_Anne_of_Orléans ;
+    :isBloodrelationOf data:Princess_Isabelle_dOrléans ;
+    :isChildOf data:Princess_María_Isabel_of_Orléans ;
+    :isDaughterOf data:Princess_María_Isabel_of_Orléans ;
+    :isMotherOf data:Princess_Anne_of_Orléans ;
+    :isParentOf data:Princess_Anne_of_Orléans ;
+    :isSiblingOf data:Princess_Isabelle_dOrléans ;
+    :isSisterOf data:Princess_Isabelle_dOrléans .
+
+data:Princess_Anne_of_Orléans a :Person,
+        :Woman ;
+    rdfs:label "Princess Anne of Orléans"^^xsd:string ;
+    data:posIndicesFull "3253:3277"^^xsd:string ;
+    data:wdtLink wdt:Q2278538 ;
+    :alsoKnownAs "Anne Hélène Marie d'Orléans"^^xsd:string,
+        "Anne d'Orléans"^^xsd:string,
+        "Princess Anne Hélène Marie d'Orléans"^^xsd:string,
+        "Princess Anne, Dowager Duchess of Aosta"^^xsd:string,
+        "Princess Anne, Duchess of Aosta"^^xsd:string,
+        "Princess Anne, The Dowager Duchess of Aosta"^^xsd:string,
+        "Princess Anne, The Duchess of Aosta"^^xsd:string ;
+    :hasAncestor data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasFather data:Prince_Jean_dOrléans_1 ;
+    :hasMother data:Princess_Isabelle_dOrléans ;
+    :hasParent data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :hasRelation data:Prince_Jean_dOrléans_1,
+        data:Princess_Anne_of_Orléans,
+        data:Princess_Isabelle_dOrléans,
+        data:Princess_María_Isabel_of_Orléans ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Anne_of_Orléans ;
+    :isBloodrelationOf data:Princess_Anne_of_Orléans ;
+    :isChildOf data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :isDaughterOf data:Prince_Jean_dOrléans_1,
+        data:Princess_Isabelle_dOrléans ;
+    :isSiblingOf data:Princess_Anne_of_Orléans ;
+    :isSisterOf data:Princess_Anne_of_Orléans .
+

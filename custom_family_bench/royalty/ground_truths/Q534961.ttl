@@ -7,26 +7,35 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Jaime_de_Borbón-Dos_Sicilias_y_Landaluce_y_Melgarejo a :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Jaime de Borbón-Dos Sicilias y Landaluce y Melgarejo" ;
-    data:posIndicesFull "4017:4021",
-        "4726:4730" ;
-    data:wdtLink wdt:Q75317760 ;
-    :alsoKnownAs "Jaime",
-        "Jaime de Borbón y Landaluce",
-        "Jaime di Borbone-Due Sicilie" ;
-    :hasSex data:male .
-
-data:Princess_Isabelle_dOrléans a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Isabelle_dOrléans a :Person ;
     rdfs:label "Princess Isabelle d’Orléans" ;
     data:posIndicesFull "297:325" ;
     data:wdtLink wdt:Q261322 ;
     :alsoKnownAs "Princess Isabelle of Orleans" ;
+    :hasSex data:female .
+
+data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein a :Person ;
+    rdfs:label "Princess Marie, Princess Gundakar of Liechtenstein" ;
+    data:posIndicesFull "22:37",
+        "3697:3729" ;
+    data:posIndicesPart "2746:2751",
+        "3437:3442",
+        "3937:3942",
+        "4128:4133",
+        "4610:4615",
+        "4665:4670",
+        "4767:4772",
+        "5044:5049",
+        "7204:7209" ;
+    data:wdtLink wdt:Q7244738 ;
+    :alsoKnownAs "Marie Isabelle Marguerite Anne Geneviève d'Orléans",
+        "Marie d'Orléans",
+        "Princess Gundakar of Liechtenstein",
+        "Princess Marie Isabelle Marguerite Anne Geneviève d'Orléans",
+        "Princess Marie d'Orléans",
+        "Princess Marie of Liechtenstein" ;
+    :hasParent data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Prince_Henri_dOrléans_1 ;
     :hasSex data:female .
 
 data:posIndicesFull a owl:AnnotationProperty .
@@ -35,10 +44,7 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Duchess_Marie_Thérèse_of_Württemberg a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Duchess_Marie_Thérèse_of_Württemberg a :Person ;
     rdfs:label "Duchess Marie Thérèse of Württemberg" ;
     data:posIndicesFull "2527:2563" ;
     data:posIndicesPart "2746:2751",
@@ -62,16 +68,9 @@ data:Duchess_Marie_Thérèse_of_Württemberg a :Ancestor,
     data:wdtLink wdt:Q3292297 ;
     :alsoKnownAs "Maria Theresa Herzogin von Württemberg",
         "Princess Maria Theresa of Wurttemberg" ;
-    :hasChild data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
-    :hasDaughter data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
-    :isParentOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein .
+    :hasSex data:female .
 
-data:Isabelle_of_Orléans-Braganza a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Isabelle_of_Orléans-Braganza a :Person ;
     rdfs:label "Isabelle of Orléans-Braganza" ;
     data:posIndicesFull "306:334" ;
     data:posIndicesPart "3339:3346",
@@ -81,16 +80,9 @@ data:Isabelle_of_Orléans-Braganza a :Ancestor,
         "987:994" ;
     data:wdtLink wdt:Q261284 ;
     :alsoKnownAs "Isabelle of Orleans-Braganza" ;
-    :hasChild data:Prince_Henri_dOrléans_1 ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Henri_dOrléans_1 ;
-    :isMotherOf data:Prince_Henri_dOrléans_1 ;
-    :isParentOf data:Prince_Henri_dOrléans_1 .
+    :hasSex data:female .
 
-data:Prince_Henri_dOrléans_1 a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Henri_dOrléans_1 a :Person ;
     rdfs:label "Prince Henri d’Orléans" ;
     data:posIndicesFull "0:37",
         "131:140" ;
@@ -140,45 +132,10 @@ data:Prince_Henri_dOrléans_1 a :Ancestor,
     :alsoKnownAs "Henri Philippe Pierre Marie d'Orléans",
         "Henri VIII",
         "Henri d’Orléans" ;
-    :hasChild data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
-    :hasDaughter data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
-    :hasMother data:Isabelle_of_Orléans-Braganza ;
     :hasParent data:Isabelle_of_Orléans-Braganza ;
-    :hasSex data:male ;
-    :isChildOf data:Isabelle_of_Orléans-Braganza ;
-    :isFatherOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
-    :isParentOf data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein ;
-    :isSonOf data:Isabelle_of_Orléans-Braganza .
+    :hasSex data:male .
 
-data:Princess_Marie-_Princess_Gundakar_of_Liechtenstein a :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Marie, Princess Gundakar of Liechtenstein" ;
-    data:posIndicesFull "22:37",
-        "3697:3729" ;
-    data:posIndicesPart "2746:2751",
-        "3437:3442",
-        "3937:3942",
-        "4128:4133",
-        "4610:4615",
-        "4665:4670",
-        "4767:4772",
-        "5044:5049",
-        "7204:7209" ;
-    data:wdtLink wdt:Q7244738 ;
-    :alsoKnownAs "Marie Isabelle Marguerite Anne Geneviève d'Orléans",
-        "Marie d'Orléans",
-        "Princess Gundakar of Liechtenstein",
-        "Princess Marie Isabelle Marguerite Anne Geneviève d'Orléans",
-        "Princess Marie d'Orléans",
-        "Princess Marie of Liechtenstein" ;
-    :hasFather data:Prince_Henri_dOrléans_1 ;
-    :hasMother data:Duchess_Marie_Thérèse_of_Württemberg ;
-    :hasParent data:Duchess_Marie_Thérèse_of_Württemberg,
-        data:Prince_Henri_dOrléans_1 ;
-    :hasSex data:female ;
-    :isChildOf data:Duchess_Marie_Thérèse_of_Württemberg,
-        data:Prince_Henri_dOrléans_1 ;
-    :isDaughterOf data:Duchess_Marie_Thérèse_of_Württemberg,
-        data:Prince_Henri_dOrléans_1 .
+data:male a :Male .
+
+data:female a :Female .
 

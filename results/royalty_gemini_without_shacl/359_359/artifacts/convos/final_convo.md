@@ -69,147 +69,73 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Viktoria of Prussia (Friederike Amalia Wilhelmine Viktoria; 12 April 1866 – 13 November 1929) was the second daughter of Frederick III, German Emperor and his wife Victoria, Princess Royal, eldest daughter of Queen Victoria.
-Born a member of the Prussian royal house of Hohenzollern, she became Princess Adolf of Schaumburg-Lippe following her first marriage in 1890.
-Raised by her mother in a close, liberal, and anglophile environment, Viktoria fell in love with Alexander of Battenberg, the Prince of Bulgaria, but there was great opposition to the match and the couple never married.
-Following the end of her courtship with Alexander, Viktoria suffered from an eating disorder and was unlucky in her search for a suitable husband.
-Adolf died during the First World War, two years before the German Empire came to an end.
-In 1927, Viktoria caused a royal scandal by marrying a university student 35 years her junior.
-Early life
+Alfonso, Duke of Anjou, Duke of Cádiz, Grandee of Spain (Spanish: Don Alfonso Jaime Marcelino Manuel Víctor María de Borbón y Dampierre; French: Alphonse Jacques Marcellin Emmanuel Victor Marie de Bourbon; 20 April 1936 – 30 January 1989) was a grandson of King Alfonso XIII of Spain, a potential heir to the throne in the event of the restoration of the Spanish monarchy, and the Legitimist claimant to the throne of France.
+Upbringing
 
-Birth and baptism
+Alfonso was born at Sant'Anna Clinic in Rome, the elder son of Infante Jaime, Duke of Segovia, King Alfonso's second of four sons.
+His mother was Donna Emanuela de Dampierre, daughter of Roger, Duke of San Lorenzo and Donna Vittoria Ruspoli
+The Segovias lived in Rome where Jaime's father had maintained a royal court-in-exile since the royal family fled Spain following the 1931 election of republicans and socialists in Spain's major cities.
+Alfonso was baptised by Eugenio Cardinal Pacelli (later Pope Pius XII) at the Palazzo Ruspoli on the Via del Corso in Rome, home of his maternal grandmother, Donna Vittoria Ruspoli dei principi di Poggio Suasa.
+In 1941, Alfonso and his parents followed his English-born grandmother, Queen Victoria Eugenie to Lausanne in Switzerland.
+They lived first at the Hotel Royal, before Alfonso and his younger brother Gonzalo were sent to the Collège Saint-Jean (later Villa St. Jean International School) in Fribourg.
+On 8 December 1946 Alfonso made his first communion with his brother, Gonzalo; on the same day he was confirmed by Pedro Cardinal Segura y Sáenz, Archbishop of Seville.
+Spanish succession rights
 
-Viktoria was born on 12 April 1866 in the New Palace in Potsdam, to Crown Prince Frederick William and Crown Princess Victoria of Prussia.
-Her father was the only son of King Wilhelm I of Prussia and Princess Augusta of Saxe-Weimar; her mother, Victoria ("Vicky"), was the eldest child of Queen Victoria of the United Kingdom and her consort, Prince Albert.
-Viktoria was baptised in the New Palace as Friederike Amalia Wilhelmine Viktoria on 24 May 1866, the birthday of her grandmother Queen Victoria, who was also one of her godparents.
-Other sponsors included her grandfather the King of Prussia, and Princess Marie of Hohenzollern-Sigmaringen.
-Following the birth of Princess Viktoria, Queen Victoria wrote a letter to her daughter Crown Princess Victoria, mentioning that she was happy with her granddaughter being named after her:
+The king's eldest son, Alfonso, Prince of Asturias, had inherited hemophilia from his maternal great-grandmother Queen Victoria, yet had been considered Spain's heir apparent until the republic was established in 1931.
+Next in the line of succession, Infante Don Jaime, deaf and largely mute, was that same day persuaded to renounce his claim (and that of future descendants) alongside his elder brother, thereby assuming the Duke of Segovia title and clearing the way for King Alfonso's third son, Don Juan, Count of Barcelona to take up the monarchist cause on behalf of the banished dynasty.
+There being no need for Segovia to contract a dynastic alliance, Emanuela de Dampierre's noble rather than royal background was looked upon approvingly by the former king and former queen when the couple wed in Rome in 1935, and neither style nor title is attributed to Alfonso de Borbón-Segovia y Dampierre in the 1944 edition of the Almanach de Gotha.
+Following Alfonso XIII's death in Rome in February 1941, Franco wrote Don Juan, acknowledging him as rightful heir to the throne (though without inviting him to occupy it), implicitly confirming that he considered Segovia and his sons excluded from the royal succession.
+The new law allowed Franco or his successor to choose any man "of royal lineage" as king, and Alfonso was mentioned that year as a possible alternative to Don Juan and his son, Juan Carlos, should Franco consider the former too liberal to reign over a Falangist Spain.
+In December 1949, Segovia retracted his renunciation as coerced and claimed that he was the rightful claimant to Spain's crown.
+Relations between Don Juan and Franco continued to deteriorate and in 1952 the latter prevailed upon Segovia to send his elder son to Spain to be educated under his guidance.
+Reluctantly, Alfonso moved from Switzerland to Spain, initially to study law at Deusto University and, in 1955 to attend the elite Centro de Estudios Universitarios (CEU).
+By 1956 Franco was diverting sponsors of some civic events from Juan Carlos, who was also being educated in Spain under the Caudillo's supervision, to Alfonso.
+By 1964, Franco considered Juan Carlos his preferred candidate for the throne over his father, but also considered that if the latter deviated from obedience to Franco or loyalty to his Movimiento Nacional, Alfonso was a suitable alternative.
+Alfonso's strongest supporter in Franco's government was José Solís Ruiz, minister and secretary-general of the Movimiento.
+Anticipating that Franco would soon offer to declare him Spain's next king rather than Don Juan, in June 1969, Juan Carlos warned his father that if he declined Franco's offer, Alfonso would be invited to accept the crown, nevertheless Don Juan refused to consent to being bypassed.
+Asked by Juan Carlos to be chief witness at the ceremony declaring him successor and Prince of Spain, Alfonso immediately agreed to do so and sent some of his supporters to visit his father in Paris to persuade him to express no opposition publicly.
+In return for his full support, Franco later appointed Alfonso Spain's ambassador to Sweden.
+But in June 1972, after he had taken up that post, Alfonso advised Franco's foreign minister Laureano López Rodó that he deemed his support conditional upon his cousin's continued loyalty to Francoist Spain.
+He further hinted that Spain's law of succession should be amended to facilitate Alfonso's replacing or succeeding Juan Carlos as Franco's heir or on the throne, if circumstances called for such a change.
+On 8 March 1972, in the Palace of El Pardo in Madrid, Alfonso married Doña María del Carmen Martínez-Bordiú y Franco, daughter of Don Cristóbal Martínez-Bordiú, 10th Marquis de Villaverde, and of his wife, Doña Carmen Franco y Polo (Franco's only daughter.
+Doña Carmen was granted a title in 1975 becoming the 1st Duchess de Franco after Franco's death).
+The witnesses of the marriage were Franco and Alfonso's mother.
+Alfonso and Carmen separated in 1979, received a civil divorce in 1982 and an ecclesiastical annulment in 1986.
+On 22 November 1972, General Franco awarded Alfonso the Spanish title Duque de Cádiz with the dignity Grandee of Spain, and he received the style of Royal Highness.
+The Cádiz title had been held by Alfonso's great-great-grandfather, the Infante Francisco de Asís.
+French succession rights
 
+Since Alfonso's mother was not born a princess of royal descent, his grandfather Alfonso XIII did not consider young Alfonso in line to the Spanish throne in accordance with the Pragmatic Sanction of 1830.
+Alfonso's father Jaime, however, came to assert that his sons were French dynasts entitled to the style of Royal Highness.
+In Spain up until 1972, Alfonso was generally addressed as Don Alfonso de Borbón y Dampierre.
+Elsewhere he was often addressed as a prince.
+On 25 November 1950, Alfonso received the title Duc de Bourbon (Duke of Bourbon) from his father.
+In 1963, Alfonso engaged the French historian and ardent royalist Hervé Pinoteau as his private secretary.
+Pinoteau remained with him until the duke's death.
+On 20 March 1975, Alfonso's father Jaime died.
+On 3 August 1975, he took the courtesy title Duc d'Anjou (Duke of Anjou).
+On 21 January 1985 (the 192nd anniversary of the death of King Louis XVI) Alfonso was present for the requiem mass at the Chapelle expiatoire in Paris.
+Marriage and children
 
-"I am much pleased & touched that the dear, new baby (& long may she remain the Baby!) is to be called after me", Victoria wrote Vicky, "as I cannot deny that it pained me very much that 4 children were born without one being called after either of your parents.
-Youth and education
+Lawsuit of the Count of Clermont against the Duke of Anjou
 
-Viktoria was her parents' fifth child and second daughter.
-Two months after her birth, on 18 June 1866, Viktoria's nearly two-year-old brother, Sigismund, died of meningitis.
-On 19 June Vicky wrote to her mother Queen Victoria:
+In 1987, his paternal 10th cousin Prince Henri of Orléans, Count of Clermont, eldest son of Henri, Count of Paris, the then Orléanist claimant to the defunct throne of France, initiated a court action against Alfonso for his use of the title Duke of Anjou and the coat-of-arms France Moderne (three fleur-de-lis or); Henri asked the court to fine Alfonso 50,000 French francs for each future violation.
+In 1988, Prince Ferdinand, Duke of Castro and Prince Sixtus Henry of Bourbon-Parma joined Henri's lawsuit in reference to the use of the title Duke of Anjou, but not in respect to the coat-of-arms.
+In 1989, Prince Henri d'Orléans and Prince Sixtus Henry of Bourbon-Parma appealed the judgment in the lawsuit about the use of a title and arms by Alfonso; the original judgment in favour of Alfonso was upheld.
+Career
 
+From 1977 to 1984, Alfonso was President of the Spanish Skiing Federation, and from 1984 to 1987 President of the Spanish Olympic Committee.
+Death
 
-"...I wish you to know all, you are so kind, darling Mama, that you will wish to hear all about the last terrible days, I cannot describe them.
-I am calm now, for Fritz's sake and my little ones', but oh how bitter is this cup..."
-
- Following this event, Viktoria's mother chose to raise her younger children herself, as opposed to leaving them in the care of tutors and governesses as she had with her older children, Wilhelm, Charlotte, and Henry.
-For this reason, Viktoria and her three younger siblings, Waldemar, Sophie, and Margaret, were far closer to their parents.
-Viktoria and her siblings lived at two main residences, the New Palace in Potsdam and the Kronprinzenpalais in Berlin.
-In 1871, Viktoria's grandfather Wilhelm I became German Emperor, and her parents became Crown Prince and Princess of a unified German Empire.
-Still, the Crown Princely couple raised their children away from the Berlin court, which disliked Frederick William and Victoria and their liberal beliefs.
-Much of Viktoria's childhood care and education was based on that of Vicky's British upbringing, and Viktoria and her younger siblings had British nannies and went on many trips to visit their family in Britain.
-Raised in a close environment, less strict than that of her elder siblings' childhood, Viktoria was an active and enthusiastic child.
-She attended weekly dance lessons and enjoyed riding her Shetland pony, a gift from Queen Victoria.
-Young adult years
-
-Alexander of Battenberg
-
-In 1881, Alexander, Prince of Bulgaria, born Prince Alexander of Battenberg, who had been the sovereign of the Principality of Bulgaria since 1879, visited the Prussian court at the behest of Viktoria's mother.
-As her mother and Queen Victoria recommended Alexander as a possible match, 16-year-old Viktoria quickly caught their enthusiasm and by the time of Sandro's next visit the following spring, she had fallen in love with the attractive prince.
-Though her parents wanted the couple to marry, much of Viktoria's Prussian family was opposed.
-Her elder siblings, paternal grandparents Emperor Wilhelm I and Empress Augusta, and German chancellor Otto von Bismarck were opposed to the match.
-Alexander of Battenberg's actions in Bulgaria irritated the Russian tsar, and it was feared that if Viktoria married Alexander, Tsar Alexander III would be offended, even though Alexander of Battenberg and Tsar Alexander III were first cousins.
-Furthermore, Alexander was born of a morganatic marriage, and his position as Prince of Bulgaria was unstable; he had more to gain than Viktoria through marriage to a daughter of the future German emperor.
-By 1888, pushback from Wilhelm I and Bismarck all but forced Viktoria and her parents to give up on the marriage.
-Depression and changing life
-
-
-As Viktoria was losing hope of marrying Sandro, her grandfather Emperor Wilhelm I and her father Crown Prince Frederick William were both ailing, and her sister Sophie was preparing to move to Athens in order to marry the Crown Prince of Greece.
-The Emperor died on 9 March 1888, and Frederick William and Victoria became the new emperor and empress.
-Frederick, however, was dying of throat cancer, and reigned for only 99 days before succumbing to his illness on 15 June.
-Viktoria's eldest brother, now Emperor Wilhelm II, despised his parents and, though Frederick had requested in his will that Wilhelm allow Viktoria to marry Sandro, the new emperor instead wrote to Sandro to definitively end the couple's courtship.
-Sandro returned to Viktoria all the letters and gifts she had sent to him, and wrote her a farewell note.
-Viktoria, now 22, worried she might end up a spinster.
-Not considered an attractive girl – especially by herself – Viktoria tried to improve her appearance by dieting "maniacally" to the point of starving herself.
-Wrote her mother to Queen Victoria in 1889: 
-
-You would indeed make me most happy and do me the greatest favour, if you could induce Moretta not to be so foolish about her food!
-Viktoria likely had some form of disordered eating.
-Subtly pushed out of the Berlin social sphere by Wilhelm, she lived with her mother and younger sister Margaret at Schloss Friedrichshof in Hesse.
-Vicky sent the depressed Viktoria to Britain, to recover and spend time with her British relatives.
-Further suitors
-
-Following the collapse of Viktoria's plans to marry Sandro, her mother (now known as "Empress Frederick") and grandmother, Queen Victoria, continued to look for possible suitors, and enlisted the help of the Duchess of Edinburgh and Princess of Leiningen.
-Though she was not thought of as exceedingly attractive, Viktoria was described as having "immense charm".
-Prince Carl of Sweden, Duke of Västergötland, "refused to consider marrying her"; this news worsened Viktoria's disordered eating.
-Another suitor was Ernest, the future Prince of Hohenlohe-Langenburg; he later married Viktoria's first cousin Alexandra of Saxe-Coburg and Gotha.
-Crown Prince Carlos of Portugal was proposed by Otto von Bismarck, but Viktoria refused to convert to Catholicism.
-Maurice Bourke, a younger son of Richard Bourke, 6th Earl of Mayo, was proposed by Queen Victoria; he was seriously considered.
-As her elder sister, Charlotte, began gossiping about her love life at court, Viktoria became convinced she would never marry, and told her grandmother she was no longer interested in marriage.
-First marriage and adult life
-
-Engagement and wedding
-
-In June 1890, Viktoria, with her mother and sister Margaret, visited their cousin Marie of Nassau, the widowed Princess of Wied.
-Adolf and Viktoria spent time together and, during the same visit, Adolf proposed on 11 June.
-Viktoria's mother had previously considered Adolf as a marriage candidate, but had considered him unworthy of her daughter; she wept at the news of the couple's engagement.
-Although Viktoria said in her memoirs that she had loved Adolf at first sight, she wrote to her mother that she had only married him out of "desperation from fear at withering on the vine."
-When Queen Victoria inspected Adolf, she approved of him, but did not believe that Viktoria was entirely happy, nor did Vicky.
-Furthermore, Adolf held only the style of Serene Highness, while Viktoria was a Royal Highness and the daughter of an Emperor.
-The widowed Empress continued to suggest other suitors, but was thwarted, especially by Wilhelm II, who was highly in favour of the match.
-In the months leading up to the wedding, Viktoria remained depressed.
-The wedding party and the couple's families attended the opera, and the next day Viktoria's mother held a banquet for the guests.
-Viktoria and Adolf married on 19 November 1890 in a Lutheran ceremony, in the chapel of Berlin's Alte Schloss.
-Much of Viktoria's extended family made up the nearly sixty royal guests, as well as the large wedding party.
-Viktoria's brother Wilhelm gave the toast.
-Viktoria wore a wedding gown of "cream satin, brocaded and trimmed with wild roses and silver", and a veil "of tulle interwoven with silver and surmounted with a wreath of orange blossoms and myrtles".
-Viktoria and Adolf had a long honeymoon, during which they travelled throughout Europe and the Mediterranean, stopping in Greece to visit Viktoria's sister Sophie.
-They were forced to cut this final visit short in order to return to Germany for medical care, as Viktoria had suffered an early miscarriage.
-Viktoria and Adolf had a peaceful marriage, and mutually respected one another.
-However, Viktoria did not love her husband, and in the later years of her marriage considered divorcing Adolf to marry one of his nephews.
-Princess Adolf of Schaumburg-Lippe
-
-Adolf purchased from a cloth manufacturer a neoclassical palace that would become the Palais Schaumburg, in Bonn.
-Viktoria was often alone there, as Adolf was busy with his military duties.
-Viktoria lived a quiet life in Bonn, and continued to frequently visit members of her large family.
-Adolf installed tennis courts at their home upon Viktoria's request, and encouraged her love of gardening.
-Soon, however, Viktoria admitted she was bored and unhappy.
-Viktoria and Adolf entered Lippe's capital, Detmold, on 4 May 1895 and remained there until Adolf's term as regent ended.
-During this time, Viktoria enjoyed her new public responsibilities as wife of the principality's regent, and her mental health improved.
-Queen Victoria was upset when, in September 1895, Adolf requested that Viktoria end her visit to her widowed and lonely mother.
-In 1898, Viktoria's mother Vicky was diagnosed with breast cancer, which spread to her spine and weakened her.
-Viktoria was thrown from her carriage in 1901 while out driving in Bonn, but she was not seriously injured.
-That year, between the deaths of Queen Victoria and Vicky, she celebrated her 35th birthday with family at Friedrichshof.
-For Viktoria, who adored her mother's British homeland, the war was doubly stressful.
-Despite being the sister of the Kaiser of Germany, Viktoria was very sympathetic to the British cause.
-In 1915, the 49-year-old "but very wealthy and young looking" Viktoria left Berlin and moved into a "luxuriously furnished" castle in Bonn.
-The war years threw Viktoria's life into chaos:
-Adolf died in July 1916, after nearly thirty years of marriage; in 1917, Viktoria's brother-in-law the King of the Hellenes, who married her sister Queen Sophia of Greece in 1890, was deposed; and in 1918, her brother Wilhelm II was forced to abdicate and the German nobles and royals legally lost their titles under the new Weimar Republic.
-After Adolf's death, Viktoria asked her brother for permission to marry one of Adolf's nephews; Wilhelm refused.
-Following the war, though she did not lose her home, Viktoria's finances began to dwindle.
-Second marriage
-
-In 1927, Viktoria held a party for university students at her castle in Bonn.
-Zoubkoff told Viktoria that he had fled the Russian Revolution and that he had been a baron.
-Infatuated with Zoubkoff, Viktoria provided the young student – 35 years her junior – with lavish gifts; he, in turn, proposed marriage.
-Without asking permission from the former Emperor Wilhelm, Viktoria renounced her titles and married Zoubkoff first at the town hall in Bonn, then in a Greek Orthodox ceremony at which none of her family was in attendance.
-The couple were married on 19 November 1927, which would have been Viktoria and Adolf's 37th wedding anniversary.
-Viktoria was 61, while Alexander was only 27.
-The two had known one another for only two months, and their wedding was a royal and society scandal.
-Soon after the wedding, Alexander Zoubkoff, whom Viktoria called "Sascha", began spending large amounts of Viktoria's dwindling fortune.
-The restaurant advertised with a sign that read: "The Emperor's brother-in-law is serving you here".
-Although she had at first stood by her husband, in 1928, Viktoria separated from him, considering his antics too much.
-Her own financial struggles caught up to her, and Viktoria was forced to auction off nearly all of her belongings.
-Viktoria was forced to move into a single rented room in the suburbs of Bonn.
-That same year Viktoria caused another scandal by filing for divorce from Zoubkoff after less than two years of marriage, on the grounds that his behaviour had resulted in his expulsion from Germany, he was unable to maintain her, and that "conjugal relations did not exist".
-Before they could be divorced, or her siblings could have their marriage annulled, Viktoria came down with a fever and was taken to the Hospital of St Francis, in Bonn, where she was diagnosed with pneumonia.
-In the hours before her death, her brother Wilhelm and sister Margaret attempted to contact her, but were not allowed.
-Viktoria died on 13 November 1929, "penniless, lonely, loveless, and without her family's forgiveness".
-She was buried at Schloss Friedrichshof, the home of her sister Margaret.
-Archives
-
-Viktoria's letters to her sister Margaret are preserved in the Archive of the House of Hesse, which is kept in Fasanerie Palace in Eichenzell, Germany.
+Alfonso died in a skiing accident in Beaver Creek Resort, Eagle County, Colorado, on 30 January 1989, from broken neck by a cable which he collided with as it was being raised to support a banner at the finish line of a course at the FIS Alpine World Ski Championships.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -225,39 +151,9 @@ Viktoria's letters to her sister Margaret are preserved in the Archive of the Ho
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -272,6 +168,23 @@ Viktoria's letters to her sister Margaret are preserved in the Archive of the Ho
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -289,6 +202,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -356,29 +284,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -387,6 +307,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -399,6 +327,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -407,17 +337,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -445,6 +377,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -460,527 +476,193 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (6cdf99c3-52f6-44e6-85f9-6d7bd7830ac6)
- Call ID: 6cdf99c3-52f6-44e6-85f9-6d7bd7830ac6
-  Args:
-    type: :Woman
-    source: Viktoria_of_Prussia
-  AssignClass (2df00efd-8e24-487b-bf46-6abe7fa4f5e6)
- Call ID: 2df00efd-8e24-487b-bf46-6abe7fa4f5e6
+  AssignClass (8b67425c-83ea-49a2-bb9c-45b30ba82b70)
+ Call ID: 8b67425c-83ea-49a2-bb9c-45b30ba82b70
   Args:
     type: :Man
-    source: Frederick_III_German_Emperor
-  AssignClass (5f85dfaf-7f78-41c5-b9ff-15e3394206fe)
- Call ID: 5f85dfaf-7f78-41c5-b9ff-15e3394206fe
+    source: Alfonso_Duke_of_Anjou
+  AssignClass (74428a52-7a14-4c2c-9d11-0e8bda4badd2)
+ Call ID: 74428a52-7a14-4c2c-9d11-0e8bda4badd2
   Args:
-    source: Victoria_Princess_Royal
-    type: :Woman
-  AddTriple (bf198686-8c0c-4e21-9de5-a85b34c331f8)
- Call ID: bf198686-8c0c-4e21-9de5-a85b34c331f8
-  Args:
-    source: Viktoria_of_Prussia
-    target: Frederick_III_German_Emperor
-    relation: :hasFather
-  AddTriple (24409029-984e-493b-addc-ef2cf34f92ef)
- Call ID: 24409029-984e-493b-addc-ef2cf34f92ef
-  Args:
-    source: Viktoria_of_Prussia
-    target: Victoria_Princess_Royal
-    relation: :hasMother
-  AddLiteral (12f312f6-1457-4476-a550-7f34866afcf4)
- Call ID: 12f312f6-1457-4476-a550-7f34866afcf4
+    type: :Person
+    source: Alfonso_Duke_of_Anjou
+  AddLiteral (045dd308-db11-4ca1-94a6-5c8df50c99af)
+ Call ID: 045dd308-db11-4ca1-94a6-5c8df50c99af
   Args:
     literal_type: xsd:integer
-    literal_value: 1866
+    source: Alfonso_Duke_of_Anjou
+    literal_value: 1936
     relation: :hasBirthYear
-    source: Viktoria_of_Prussia
-  AddLiteral (9dc41186-afc6-4ba5-97be-10472621d5cf)
- Call ID: 9dc41186-afc6-4ba5-97be-10472621d5cf
+  AddLiteral (cb97917e-aa1a-4f19-8cc5-a696484e3606)
+ Call ID: cb97917e-aa1a-4f19-8cc5-a696484e3606
   Args:
     relation: :hasDeathYear
-    source: Viktoria_of_Prussia
+    literal_value: 1989
+    source: Alfonso_Duke_of_Anjou
     literal_type: xsd:integer
-    literal_value: 1929
-  AddLiteral (87752dbe-fbf5-4760-9fde-136a54a7b8f1)
- Call ID: 87752dbe-fbf5-4760-9fde-136a54a7b8f1
+  AssignClass (94e99f38-d80a-42b6-8e79-0d5ee7473d0c)
+ Call ID: 94e99f38-d80a-42b6-8e79-0d5ee7473d0c
   Args:
-    literal_type: xsd:string
-    literal_value: Friederike Amalia Wilhelmine Viktoria
-    relation: :alsoKnownAs
-    source: Viktoria_of_Prussia
-  AssignClass (c4ac63b8-b3b5-43ce-9215-4fd180db0467)
- Call ID: c4ac63b8-b3b5-43ce-9215-4fd180db0467
+    source: Jaime_Duke_of_Segovia
+    type: :Man
+  AssignClass (ae85c099-88b8-4de0-8cae-3d968ba1db60)
+ Call ID: ae85c099-88b8-4de0-8cae-3d968ba1db60
   Args:
-    source: Queen_Victoria
+    type: :Ancestor
+    source: Jaime_Duke_of_Segovia
+  AddTriple (d382b32c-89c8-4094-b70c-d794c211941d)
+ Call ID: d382b32c-89c8-4094-b70c-d794c211941d
+  Args:
+    source: Alfonso_Duke_of_Anjou
+    relation: :hasFather
+    target: Jaime_Duke_of_Segovia
+  AssignClass (6b4d9b6f-930f-43db-95a4-0175231f6a40)
+ Call ID: 6b4d9b6f-930f-43db-95a4-0175231f6a40
+  Args:
+    source: Emanuela_de_Dampierre
     type: :Woman
-  AddTriple (84a0bda5-fe94-4307-bda3-70b94ba29c3d)
- Call ID: 84a0bda5-fe94-4307-bda3-70b94ba29c3d
+  AssignClass (a1b227f9-d26e-4370-a938-8021e2f8bacc)
+ Call ID: a1b227f9-d26e-4370-a938-8021e2f8bacc
   Args:
-    source: Victoria_Princess_Royal
+    type: :Ancestor
+    source: Emanuela_de_Dampierre
+  AddTriple (0a08be27-2d1b-4cb5-9513-a20db9cd9ced)
+ Call ID: 0a08be27-2d1b-4cb5-9513-a20db9cd9ced
+  Args:
+    source: Alfonso_Duke_of_Anjou
+    target: Emanuela_de_Dampierre
     relation: :hasMother
-    target: Queen_Victoria
-  AssignClass (9712ec1f-1fb6-414b-957b-f986149a6063)
- Call ID: 9712ec1f-1fb6-414b-957b-f986149a6063
+  AssignClass (902b23c1-1919-4288-8c6a-6abf9c48de32)
+ Call ID: 902b23c1-1919-4288-8c6a-6abf9c48de32
   Args:
-    source: Prince_Albert
     type: :Man
-  AddTriple (0affa68d-5e6d-421c-99dc-8fde83dc6109)
- Call ID: 0affa68d-5e6d-421c-99dc-8fde83dc6109
+    source: Alfonso_XIII_of_Spain
+  AssignClass (d70955d1-89c1-4b6e-b3a8-332e06ff10ea)
+ Call ID: d70955d1-89c1-4b6e-b3a8-332e06ff10ea
   Args:
-    source: Victoria_Princess_Royal
+    source: Alfonso_XIII_of_Spain
+    type: :Ancestor
+  AddTriple (0cf20034-766b-4eee-9539-271a34524249)
+ Call ID: 0cf20034-766b-4eee-9539-271a34524249
+  Args:
+    source: Jaime_Duke_of_Segovia
     relation: :hasFather
-    target: Prince_Albert
-  AssignClass (34e6212e-4fc4-4798-bed1-b5929394ff06)
- Call ID: 34e6212e-4fc4-4798-bed1-b5929394ff06
+    target: Alfonso_XIII_of_Spain
+  AssignClass (48e25142-9e41-4c5c-a69a-8a256897d265)
+ Call ID: 48e25142-9e41-4c5c-a69a-8a256897d265
   Args:
-    source: Wilhelm_I_German_Emperor
     type: :Man
-  AssignClass (97dce797-200d-4c70-b773-4e247c790d3e)
- Call ID: 97dce797-200d-4c70-b773-4e247c790d3e
+    source: Roger_Duke_of_San_Lorenzo
+  AssignClass (a5d38401-c61a-4f01-93f8-9e69d17521e4)
+ Call ID: a5d38401-c61a-4f01-93f8-9e69d17521e4
   Args:
-    source: Augusta_of_Saxe-Weimar
+    type: :Ancestor
+    source: Roger_Duke_of_San_Lorenzo
+  AddTriple (31bfd696-a42b-49f4-ae3c-83e22a91ce15)
+ Call ID: 31bfd696-a42b-49f4-ae3c-83e22a91ce15
+  Args:
+    source: Emanuela_de_Dampierre
+    target: Roger_Duke_of_San_Lorenzo
+    relation: :hasFather
+  AssignClass (cb5e72d0-d973-41a6-8a82-edc30d69d49b)
+ Call ID: cb5e72d0-d973-41a6-8a82-edc30d69d49b
+  Args:
+    source: Vittoria_Ruspoli
     type: :Woman
-  AddTriple (df7707bb-5b55-473e-ae58-47c7f46f193f)
- Call ID: df7707bb-5b55-473e-ae58-47c7f46f193f
+  AssignClass (a64f4f31-6fa6-416e-9541-0c81b794ad85)
+ Call ID: a64f4f31-6fa6-416e-9541-0c81b794ad85
+  Args:
+    type: :Ancestor
+    source: Vittoria_Ruspoli
+  AddTriple (312318f5-c623-4902-99da-2dca922f38cf)
+ Call ID: 312318f5-c623-4902-99da-2dca922f38cf
+  Args:
+    source: Emanuela_de_Dampierre
+    relation: :hasMother
+    target: Vittoria_Ruspoli
+  AssignClass (def63841-294f-4d8a-9e68-d8f5cbf6a434)
+ Call ID: def63841-294f-4d8a-9e68-d8f5cbf6a434
+  Args:
+    type: :Man
+    source: Gonzalo_de_Borbon
+  AssignClass (a2f4888b-573d-4778-b661-cb860791c9b1)
+ Call ID: a2f4888b-573d-4778-b661-cb860791c9b1
+  Args:
+    source: Gonzalo_de_Borbon
+    type: :Person
+  AddTriple (64bb6fbb-4cdc-40a6-82f4-4b0a278b7f56)
+ Call ID: 64bb6fbb-4cdc-40a6-82f4-4b0a278b7f56
+  Args:
+    target: Gonzalo_de_Borbon
+    relation: :hasBrother
+    source: Alfonso_Duke_of_Anjou
+  AddTriple (df2263d7-b79f-44a1-8a46-bd00766e3965)
+ Call ID: df2263d7-b79f-44a1-8a46-bd00766e3965
   Args:
     relation: :hasFather
-    target: Wilhelm_I_German_Emperor
-    source: Frederick_III_German_Emperor
-  AddTriple (23a0b545-9bff-4674-a87c-0230bc0b3c78)
- Call ID: 23a0b545-9bff-4674-a87c-0230bc0b3c78
+    target: Jaime_Duke_of_Segovia
+    source: Gonzalo_de_Borbon
+  AddTriple (78724576-edef-41e8-bd46-3eb14a52990d)
+ Call ID: 78724576-edef-41e8-bd46-3eb14a52990d
   Args:
-    target: Augusta_of_Saxe-Weimar
     relation: :hasMother
-    source: Frederick_III_German_Emperor
-  AssignClass (f1e70f68-3654-4bcf-89a8-2a6913e036f5)
- Call ID: f1e70f68-3654-4bcf-89a8-2a6913e036f5
+    target: Emanuela_de_Dampierre
+    source: Gonzalo_de_Borbon
+  AssignClass (3b74133e-6810-4cd2-b89a-fe754186d352)
+ Call ID: 3b74133e-6810-4cd2-b89a-fe754186d352
   Args:
-    source: Sigismund_of_Prussia
-    type: :Man
-  AddTriple (e518ad3f-8ecb-4010-b10d-f63a9376adfa)
- Call ID: e518ad3f-8ecb-4010-b10d-f63a9376adfa
-  Args:
-    relation: :hasFather
-    target: Frederick_III_German_Emperor
-    source: Sigismund_of_Prussia
-  AddTriple (cf2a52a2-2526-4f11-8837-85f7c3b9b8cb)
- Call ID: cf2a52a2-2526-4f11-8837-85f7c3b9b8cb
-  Args:
-    source: Sigismund_of_Prussia
-    relation: :hasMother
-    target: Victoria_Princess_Royal
-  AssignClass (e00e3441-2a04-4fa3-92ed-3486f6a92dcd)
- Call ID: e00e3441-2a04-4fa3-92ed-3486f6a92dcd
-  Args:
-    source: Waldemar_of_Prussia
-    type: :Man
-  AssignClass (0e210122-02c9-4c87-ae54-3f7caceb1b8a)
- Call ID: 0e210122-02c9-4c87-ae54-3f7caceb1b8a
-  Args:
+    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
     type: :Woman
-    source: Sophie_of_Prussia
-  AssignClass (eaf477bc-06af-4438-af14-c6df62cea445)
- Call ID: eaf477bc-06af-4438-af14-c6df62cea445
+  AssignClass (06da3bfa-0517-4ab1-bb51-8e9ca920d0ff)
+ Call ID: 06da3bfa-0517-4ab1-bb51-8e9ca920d0ff
   Args:
-    type: :Woman
-    source: Margaret_of_Prussia
-  AddTriple (49c2037e-1cb4-4d48-815f-61f7badfd1c4)
- Call ID: 49c2037e-1cb4-4d48-815f-61f7badfd1c4
-  Args:
-    target: Frederick_III_German_Emperor
-    relation: :hasFather
-    source: Waldemar_of_Prussia
-  AddTriple (77cb863d-36a4-4c44-a8ec-eeffeff1094a)
- Call ID: 77cb863d-36a4-4c44-a8ec-eeffeff1094a
-  Args:
-    relation: :hasMother
-    target: Victoria_Princess_Royal
-    source: Waldemar_of_Prussia
-  AddTriple (c4b2a354-9cea-4900-ba8c-5e07a189b985)
- Call ID: c4b2a354-9cea-4900-ba8c-5e07a189b985
-  Args:
-    relation: :hasFather
-    target: Frederick_III_German_Emperor
-    source: Sophie_of_Prussia
-  AddTriple (a372e9bd-f9c3-4d5d-8f14-862ef0f91c44)
- Call ID: a372e9bd-f9c3-4d5d-8f14-862ef0f91c44
-  Args:
-    source: Sophie_of_Prussia
-    target: Victoria_Princess_Royal
-    relation: :hasMother
-  AddTriple (95d985d8-c890-4d90-9d80-15820f7bfee6)
- Call ID: 95d985d8-c890-4d90-9d80-15820f7bfee6
-  Args:
-    source: Margaret_of_Prussia
-    target: Frederick_III_German_Emperor
-    relation: :hasFather
-  AddTriple (b61a618d-e0a4-4901-bc71-9eb23e10c700)
- Call ID: b61a618d-e0a4-4901-bc71-9eb23e10c700
-  Args:
-    source: Margaret_of_Prussia
-    relation: :hasMother
-    target: Victoria_Princess_Royal
-  AssignClass (0ee3a2fa-be4e-417e-b5ac-df66dc6bdb5a)
- Call ID: 0ee3a2fa-be4e-417e-b5ac-df66dc6bdb5a
-  Args:
-    source: Wilhelm_II_German_Emperor
-    type: :Man
-  AssignClass (520ebc8c-f9bb-4878-a21a-458dc891266e)
- Call ID: 520ebc8c-f9bb-4878-a21a-458dc891266e
-  Args:
-    type: :Woman
-    source: Charlotte_of_Prussia
-  AssignClass (2041145b-efa4-4d05-9406-97564aae8a86)
- Call ID: 2041145b-efa4-4d05-9406-97564aae8a86
-  Args:
-    type: :Man
-    source: Henry_of_Prussia
-  AddTriple (fcc48ba3-dd78-4312-8a2e-a8da729b4813)
- Call ID: fcc48ba3-dd78-4312-8a2e-a8da729b4813
-  Args:
-    target: Frederick_III_German_Emperor
-    relation: :hasFather
-    source: Wilhelm_II_German_Emperor
-  AddTriple (8a43d4c4-c33d-49fc-80a0-d5f4e7bf2fc5)
- Call ID: 8a43d4c4-c33d-49fc-80a0-d5f4e7bf2fc5
-  Args:
-    relation: :hasMother
-    target: Victoria_Princess_Royal
-    source: Wilhelm_II_German_Emperor
-  AddTriple (eacb2bc9-13a2-47e1-85db-5044fc941bcc)
- Call ID: eacb2bc9-13a2-47e1-85db-5044fc941bcc
-  Args:
-    target: Frederick_III_German_Emperor
-    relation: :hasFather
-    source: Charlotte_of_Prussia
-  AddTriple (b6e59b45-1f07-4521-83a7-28cc9f97578c)
- Call ID: b6e59b45-1f07-4521-83a7-28cc9f97578c
-  Args:
-    relation: :hasMother
-    target: Victoria_Princess_Royal
-    source: Charlotte_of_Prussia
-  AddTriple (94f1fbf8-2bd8-4713-9ccc-fa2e34208c81)
- Call ID: 94f1fbf8-2bd8-4713-9ccc-fa2e34208c81
-  Args:
-    source: Henry_of_Prussia
-    target: Frederick_III_German_Emperor
-    relation: :hasFather
-  AddTriple (7ba807aa-2463-4acd-afab-f7f23e017693)
- Call ID: 7ba807aa-2463-4acd-afab-f7f23e017693
-  Args:
-    relation: :hasMother
-    target: Victoria_Princess_Royal
-    source: Henry_of_Prussia
-  AssignClass (f30cf592-4309-4aaa-908b-c8ee35847da6)
- Call ID: f30cf592-4309-4aaa-908b-c8ee35847da6
-  Args:
-    type: :Man
-    source: Adolf_of_Schaumburg-Lippe
-  AddTriple (23916fe9-972c-4142-ab36-eccbfce6779b)
- Call ID: 23916fe9-972c-4142-ab36-eccbfce6779b
-  Args:
-    target: 1890
-    relation: :hasMarriageYear
-    source: Viktoria_of_Prussia
-  AddTriple (ab9ca309-1285-42f0-b31e-ca40520bfe0f)
- Call ID: ab9ca309-1285-42f0-b31e-ca40520bfe0f
-  Args:
-    source: Viktoria_of_Prussia
-    relation: :hasMarriageYear
-    target: 1927
-  AssignClass (d335cf39-e546-48a7-8bbd-ee8bbe5da401)
- Call ID: d335cf39-e546-48a7-8bbd-ee8bbe5da401
-  Args:
-    type: :Man
-    source: Alexander_Zoubkoff
-  Finish (6ae4c25f-2a5d-4068-895b-499446636041)
- Call ID: 6ae4c25f-2a5d-4068-895b-499446636041
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Adolf_of_Schaumburg-Lippe a :Man .
-
-  data:Alexander_Zoubkoff a :Man .
-
-  data:Charlotte_of_Prussia a :Woman ;
-      :hasFather data:Frederick_III_German_Emperor ;
-      :hasMother data:Victoria_Princess_Royal .
-
-  data:Henry_of_Prussia a :Man ;
-      :hasFather data:Frederick_III_German_Emperor ;
-      :hasMother data:Victoria_Princess_Royal .
-
-  data:Margaret_of_Prussia a :Woman ;
-      :hasFather data:Frederick_III_German_Emperor ;
-      :hasMother data:Victoria_Princess_Royal .
-
-  data:Sigismund_of_Prussia a :Man ;
-      :hasFather data:Frederick_III_German_Emperor ;
-      :hasMother data:Victoria_Princess_Royal .
-
-  data:Sophie_of_Prussia a :Woman ;
-      :hasFather data:Frederick_III_German_Emperor ;
-      :hasMother data:Victoria_Princess_Royal .
-
-  data:Viktoria_of_Prussia a :Woman ;
-      :alsoKnownAs "Friederike Amalia Wilhelmine Viktoria"^^xsd:string ;
-      :hasBirthYear 1866 ;
-      :hasDeathYear 1929 ;
-      :hasFather data:Frederick_III_German_Emperor ;
-      :hasMarriageYear data:1890,
-          data:1927 ;
-      :hasMother data:Victoria_Princess_Royal .
-
-  data:Waldemar_of_Prussia a :Man ;
-      :hasFather data:Frederick_III_German_Emperor ;
-      :hasMother data:Victoria_Princess_Royal .
-
-  data:Wilhelm_II_German_Emperor a :Man ;
-      :hasFather data:Frederick_III_German_Emperor ;
-      :hasMother data:Victoria_Princess_Royal .
-
-  data:Augusta_of_Saxe-Weimar a :Woman .
-
-  data:Prince_Albert a :Man .
-
-  data:Queen_Victoria a :Woman .
-
-  data:Wilhelm_I_German_Emperor a :Man .
-
-  data:Frederick_III_German_Emperor a :Man ;
-      :hasFather data:Wilhelm_I_German_Emperor ;
-      :hasMother data:Augusta_of_Saxe-Weimar .
-
-  data:Victoria_Princess_Royal a :Woman ;
-      :hasFather data:Prince_Albert ;
-      :hasMother data:Queen_Victoria .
-
-
-
-================================= Tool Message =================================
-
-### Validation Error: Missing Node Types
-Your request to `Finish` has been declined. The following nodes in the Data Graph are missing a class assignment (`rdf:type`):
-
-**Classless Nodes:**
-['1890', '1927']
-
-### Required Correction
-According to the pipeline rules, **every node must have a class assigned to it** to ensure the graph is semantically valid. 
-
-Please perform the following steps:
-1. Review the input text and ontology to determine the most appropriate class for each node listed above.
-2. Use the `AssignClass` tool for each node to assign its correct type.
-3. Once all nodes have been assigned a class, you may attempt to `Finish` again or run `ValidateShacl` to verify the final state.
-
-Proceed with the necessary tool calls now.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  UnassignClass (81d60e18-544f-4329-9669-fbb50bad9e15)
- Call ID: 81d60e18-544f-4329-9669-fbb50bad9e15
-  Args:
-    source: Viktoria_of_Prussia
-    type: :Woman
-  RemoveTriple (6c2f62cb-a2f6-482e-8a27-af9403429502)
- Call ID: 6c2f62cb-a2f6-482e-8a27-af9403429502
-  Args:
-    target: 1890
-    source: Viktoria_of_Prussia
-    relation: :hasMarriageYear
-  RemoveTriple (6c62d800-94a9-4c12-b9e3-e28dd10755f2)
- Call ID: 6c62d800-94a9-4c12-b9e3-e28dd10755f2
-  Args:
-    target: 1927
-    source: Viktoria_of_Prussia
-    relation: :hasMarriageYear
-  AddLiteral (e21516e3-c37c-4653-a4e8-901b210d12b4)
- Call ID: e21516e3-c37c-4653-a4e8-901b210d12b4
+    type: :Person
+    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
+  AddLiteral (00547aec-a423-4ccd-9cf7-88579ea0a9ab)
+ Call ID: 00547aec-a423-4ccd-9cf7-88579ea0a9ab
   Args:
     relation: :hasMarriageYear
-    literal_value: 1890
-    source: Viktoria_of_Prussia
+    literal_value: 1972
+    source: Alfonso_Duke_of_Anjou
     literal_type: xsd:integer
-  AddLiteral (11146713-972e-4bb7-9eec-2bae882be004)
- Call ID: 11146713-972e-4bb7-9eec-2bae882be004
+  AddTriple (a43f5392-6145-4711-86f1-d69ac0eca590)
+ Call ID: a43f5392-6145-4711-86f1-d69ac0eca590
   Args:
-    source: Viktoria_of_Prussia
-    literal_value: 1927
-    relation: :hasMarriageYear
-    literal_type: xsd:integer
-  AssignClass (08e99988-0c76-47d7-b106-81d66dfc4d0c)
- Call ID: 08e99988-0c76-47d7-b106-81d66dfc4d0c
+    relation: :hasRelation
+    target: Maria_del_Carmen_Martinez-Bordiu_y_Franco
+    source: Alfonso_Duke_of_Anjou
+  AssignClass (14197620-bf2a-4cde-8949-b0173de0eee0)
+ Call ID: 14197620-bf2a-4cde-8949-b0173de0eee0
+  Args:
+    source: Cristobal_Martinez-Bordiu
+    type: :Man
+  AssignClass (01748523-409b-4d59-a22b-b4970c749207)
+ Call ID: 01748523-409b-4d59-a22b-b4970c749207
+  Args:
+    source: Cristobal_Martinez-Bordiu
+    type: :Ancestor
+  AddTriple (1e43dd00-f02f-4352-83e5-3d84153babbe)
+ Call ID: 1e43dd00-f02f-4352-83e5-3d84153babbe
+  Args:
+    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
+    relation: :hasFather
+    target: Cristobal_Martinez-Bordiu
+  AssignClass (31b049d9-a56f-4045-bd03-d1463b45c007)
+ Call ID: 31b049d9-a56f-4045-bd03-d1463b45c007
   Args:
     type: :Woman
-    source: Viktoria_of_Prussia
-  Finish (ff49b73a-7dfe-4872-808b-3e2a7532b83c)
- Call ID: ff49b73a-7dfe-4872-808b-3e2a7532b83c
+    source: Carmen_Franco_y_Polo
+  AssignClass (6bc12a9d-6104-40ab-ae36-9d42616d160d)
+ Call ID: 6bc12a9d-6104-40ab-ae36-9d42616d160d
+  Args:
+    type: :Ancestor
+    source: Carmen_Franco_y_Polo
+  AddTriple (4730104d-8884-4516-a04b-4fbbe6b4da99)
+ Call ID: 4730104d-8884-4516-a04b-4fbbe6b4da99
+  Args:
+    source: Maria_del_Carmen_Martinez-Bordiu_y_Franco
+    target: Carmen_Franco_y_Polo
+    relation: :hasMother
+  Finish (04678e61-80aa-4d04-95e6-789f0c93e130)
+ Call ID: 04678e61-80aa-4d04-95e6-789f0c93e130
   Args:

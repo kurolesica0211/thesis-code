@@ -3,5 +3,5 @@
     "done_reason": "llm_finished",
     "artifacts_dir": "results/royalty_gemini_with_shacl/391_391/artifacts",
     "results": "results/royalty_gemini_with_shacl/391_391/final_data_graph.ttl",
-    "iterations": 5
+    "iterations": 6
 }

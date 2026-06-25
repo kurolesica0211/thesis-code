@@ -16,49 +16,35 @@
       "qid": "Q10315513",
       "label": "Iris Mountbatten",
       "distance": 0,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Alexander_Mountbatten-_1st_Marquess_of_Carisbrooke",
       "qid": "Q337477",
       "label": "Alexander Mountbatten, 1st Marquess of Carisbrooke",
       "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Victoria_Eugenie_of_Battenberg",
-      "qid": "Q160001",
-      "label": "Victoria Eugenie of Battenberg",
-      "distance": 1,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Infante_Jaime-_Duke_of_Segovia",
-      "qid": "Q703780",
-      "label": "Infante Jaime, Duke of Segovia",
-      "distance": 2,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Infante_Juan-_Count_of_Barcelona",
-      "qid": "Q313857",
-      "label": "Infante Juan, Count of Barcelona",
-      "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_Henry_of_Battenberg",
       "qid": "Q444347",
       "label": "Prince Henry of Battenberg",
       "distance": 2,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Beatrice_of_the_United_Kingdom",
       "qid": "Q158140",
       "label": "Princess Beatrice of the United Kingdom",
       "distance": 2,
-      "gender": "female"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Victoria_Eugenie_of_Battenberg",
+      "qid": "Q160001",
+      "label": "Victoria Eugenie of Battenberg",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
@@ -73,11 +59,47 @@
       "ground_truth_qid": "Q10315513",
       "ground_truth_label": "Iris Mountbatten",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Iris Mountbatten",
       "best_candidate_label": "Iris Mountbatten",
       "best_candidate_qid": "Q10315513",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Prince_Henry_of_Battenberg",
+      "extracted_local_name": "Prince_Henry_of_Battenberg",
+      "embedding_text": "Prince Henry of Battenberg",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Prince_Henry_of_Battenberg",
+      "ground_truth_qid": "Q444347",
+      "ground_truth_label": "Prince Henry of Battenberg",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Henry of Battenberg",
+      "best_candidate_label": "Prince Henry of Battenberg",
+      "best_candidate_qid": "Q444347",
+      "best_candidate_gender": null,
+      "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Princess_Beatrice",
+      "extracted_local_name": "Princess_Beatrice",
+      "embedding_text": "Princess Beatrice",
+      "extracted_gender": "female",
+      "matched": true,
+      "score": 1.0,
+      "ground_truth_uri": "http://example.com/data#Princess_Beatrice_of_the_United_Kingdom",
+      "ground_truth_qid": "Q158140",
+      "ground_truth_label": "Princess Beatrice of the United Kingdom",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Princess Beatrice",
+      "best_candidate_label": "Princess Beatrice of the United Kingdom",
+      "best_candidate_qid": "Q158140",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -91,11 +113,11 @@
       "ground_truth_qid": "Q337477",
       "ground_truth_label": "Alexander Mountbatten, 1st Marquess of Carisbrooke",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Alexander Albert Mountbatten",
       "best_candidate_label": "Alexander Mountbatten, 1st Marquess of Carisbrooke",
       "best_candidate_qid": "Q337477",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.8571428571428571
     },
     {
@@ -110,11 +132,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Prince Henry Maurice of Battenberg",
-      "best_candidate_label": "Prince Henry of Battenberg",
-      "best_candidate_qid": "Q444347",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.37037037037037035
+      "best_candidate_match_text": "Lady Iris Kemp",
+      "best_candidate_label": "Iris Mountbatten",
+      "best_candidate_qid": "Q10315513",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.47058823529411764
     },
     {
       "extracted_uri": "http://example.org/data/Francis_William_Henry_Fane",
@@ -128,11 +150,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Prince Henry of Battenberg",
-      "best_candidate_label": "Prince Henry of Battenberg",
-      "best_candidate_qid": "Q444347",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.5384615384615384
+      "best_candidate_match_text": "Princess Henry of Battenberg",
+      "best_candidate_label": "Princess Beatrice of the United Kingdom",
+      "best_candidate_qid": "Q158140",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.5555555555555556
     },
     {
       "extracted_uri": "http://example.org/data/Grace_Adelaide_Fane",
@@ -146,11 +168,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Princess Victoria Eugenie of Battenberg",
-      "best_candidate_label": "Victoria Eugenie of Battenberg",
-      "best_candidate_qid": "Q160001",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.4482758620689655
+      "best_candidate_match_text": "Prince Henry Maurice of Battenberg",
+      "best_candidate_label": "Prince Henry of Battenberg",
+      "best_candidate_qid": "Q444347",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.4528301886792453
     },
     {
       "extracted_uri": "http://example.org/data/Helen_Janet_Ballantyne",
@@ -164,11 +186,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Victoria Eugenie Julia Ena of Battenberg",
-      "best_candidate_label": "Victoria Eugenie of Battenberg",
-      "best_candidate_qid": "Q160001",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.3870967741935484
+      "best_candidate_match_text": "Henry of Battenberg",
+      "best_candidate_label": "Prince Henry of Battenberg",
+      "best_candidate_qid": "Q444347",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.43902439024390244
     },
     {
       "extracted_uri": "http://example.org/data/Hugo_William_Cecil_Denison",
@@ -182,16 +204,16 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Infante Juan of Barcelona",
-      "best_candidate_label": "Infante Juan, Count of Barcelona",
-      "best_candidate_qid": "Q313857",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.35294117647058826
+      "best_candidate_match_text": "Victoria Eugenie Julia Ena of Battenberg",
+      "best_candidate_label": "Victoria Eugenie of Battenberg",
+      "best_candidate_qid": "Q160001",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3333333333333333
     },
     {
-      "extracted_uri": "http://example.org/data/Irene_Denison",
-      "extracted_local_name": "Irene_Denison",
-      "embedding_text": "Irene Denison",
+      "extracted_uri": "http://example.org/data/Irene_Frances_Adza_Denison",
+      "extracted_local_name": "Irene_Frances_Adza_Denison",
+      "embedding_text": "Irene Frances Adza Denison",
       "extracted_gender": "female",
       "matched": false,
       "score": null,
@@ -200,11 +222,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Victoria Eugenie of Battenberg",
-      "best_candidate_label": "Victoria Eugenie of Battenberg",
-      "best_candidate_qid": "Q160001",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 0.37209302325581395
+      "best_candidate_match_text": "The Princess Beatrice",
+      "best_candidate_label": "Princess Beatrice of the United Kingdom",
+      "best_candidate_qid": "Q158140",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.425531914893617
     },
     {
       "extracted_uri": "http://example.org/data/Robin_Alexander_Bryan",
@@ -218,11 +240,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Infante Juan of Barcelona",
-      "best_candidate_label": "Infante Juan, Count of Barcelona",
-      "best_candidate_qid": "Q313857",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.391304347826087
+      "best_candidate_match_text": "Princess Victoria Eugenie of Battenberg",
+      "best_candidate_label": "Victoria Eugenie of Battenberg",
+      "best_candidate_qid": "Q160001",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3333333333333333
     },
     {
       "extracted_uri": "http://example.org/data/William_Alexander_Kemp",
@@ -236,11 +258,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Heinrich Moritz von Battenberg",
-      "best_candidate_label": "Prince Henry of Battenberg",
-      "best_candidate_qid": "Q444347",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.2692307692307692
+      "best_candidate_match_text": "Victoria Eugenie of Battenberg",
+      "best_candidate_label": "Victoria Eugenie of Battenberg",
+      "best_candidate_qid": "Q160001",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.34615384615384615
     },
     {
       "extracted_uri": "http://example.org/data/William_Francis_Henry_Denison",
@@ -254,11 +276,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Prince Henry of Battenberg",
-      "best_candidate_label": "Prince Henry of Battenberg",
-      "best_candidate_qid": "Q444347",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.43636363636363634
+      "best_candidate_match_text": "Princess Ena",
+      "best_candidate_label": "Victoria Eugenie of Battenberg",
+      "best_candidate_qid": "Q160001",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.34146341463414637
     },
     {
       "extracted_uri": "http://example.org/data/Zinnia_Rosemary_Denison",
@@ -275,13 +297,13 @@
       "best_candidate_match_text": "Victoria Eugenie of Battenberg",
       "best_candidate_label": "Victoria Eugenie of Battenberg",
       "best_candidate_qid": "Q160001",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.37735849056603776
     }
   ],
   "summary": {
-    "entities_total": 12,
-    "entities_matched": 2,
+    "entities_total": 14,
+    "entities_matched": 4,
     "entities_unmatched": 10
   }
 }

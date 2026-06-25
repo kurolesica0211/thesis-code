@@ -2,91 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Admiral_Pericles_Ioannides a :Man,
-        :Person .
-
-data:King_Constantine_I_of_Greece a :Man,
-        :Person ;
-    :hasFather data:King_George_I_of_Greece ;
-    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia .
-
-data:Male a :Sex .
-
-data:Prince_Andrew_of_Greece a :Man,
-        :Person ;
-    :hasFather data:King_George_I_of_Greece ;
-    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia .
-
-data:Prince_Christopher_of_Greece a :Man,
-        :Person ;
-    :hasFather data:King_George_I_of_Greece ;
-    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia .
-
-data:Prince_George_of_Greece a :Man,
-        :Person ;
-    :hasFather data:King_George_I_of_Greece ;
-    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia .
-
-data:Prince_Nicholas_of_Greece a :Man,
-        :Person ;
-    :hasFather data:King_George_I_of_Greece ;
-    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia .
-
-data:Princess_Alexandra_of_Greece a :Person,
+data:Alexandra_of_Greece_and_Denmark a :Person,
         :Woman ;
-    :hasFather data:King_George_I_of_Greece ;
-    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia .
+    :hasBirthYear 1870 ;
+    :hasChild data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna ;
+    :hasDeathYear 1891 ;
+    :hasFather data:George_I_of_Greece ;
+    :hasMarriageYear 1889 ;
+    :hasMother data:Olga_Constantinovna_of_Russia .
 
-data:Princess_Nina_Georgievna a :Person,
-        :Woman ;
-    :hasFather data:Grand_Duke_George_Mikhailovich_of_Russia ;
-    :hasMother data:Princess_Maria_of_Greece_and_Denmark .
+data:Paul_Alexandrovich_of_Russia a :Man,
+        :Person ;
+    :hasChild data:Dmitri_Pavlovich,
+        data:Maria_Pavlovna .
 
-data:Princess_Olga_of_Greece a :Person,
-        :Woman ;
-    :hasFather data:King_George_I_of_Greece ;
-    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia .
-
-data:Princess_Xenia_Georgievna a :Person,
-        :Woman ;
-    :hasFather data:Grand_Duke_George_Mikhailovich_of_Russia ;
-    :hasMother data:Princess_Maria_of_Greece_and_Denmark .
-
-data:Female a :Sex .
-
-data:Princess_Maria_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1876 ;
-    :hasBrother data:King_Constantine_I_of_Greece,
-        data:Prince_Andrew_of_Greece,
-        data:Prince_Christopher_of_Greece,
-        data:Prince_George_of_Greece,
-        data:Prince_Nicholas_of_Greece ;
-    :hasDaughter data:Princess_Nina_Georgievna,
-        data:Princess_Xenia_Georgievna ;
-    :hasDeathYear 1940 ;
-    :hasFather data:King_George_I_of_Greece ;
-    :hasMarriageYear 1900,
-        1922 ;
-    :hasMother data:Grand_Duchess_Olga_Constantinovna_of_Russia ;
-    :hasSex data:Female ;
-    :hasSister data:Princess_Alexandra_of_Greece,
-        data:Princess_Olga_of_Greece ;
-    :hasSon data:Admiral_Pericles_Ioannides,
-        data:Grand_Duke_George_Mikhailovich_of_Russia .
-
-data:Grand_Duke_George_Mikhailovich_of_Russia a :Ancestor,
+data:George_I_of_Greece a :Ancestor,
         :Man,
         :Person .
 
-data:Grand_Duchess_Olga_Constantinovna_of_Russia a :Ancestor,
+data:Olga_Constantinovna_of_Russia a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female .
+        :Woman .
 
-data:King_George_I_of_Greece a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Dmitri_Pavlovich a :Man,
+        :Person .
+
+data:Maria_Pavlovna a :Person,
+        :Woman .
 

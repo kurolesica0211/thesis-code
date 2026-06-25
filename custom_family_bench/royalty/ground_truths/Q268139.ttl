@@ -7,68 +7,32 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
+data:George_V a :Person ;
+    rdfs:label "George V" ;
+    data:posIndicesFull "993:1001" ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert",
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
+        "George Frederick Ernest Albert Windsor",
+        "George Saxe-Coburg-Gotha",
+        "George V (King of Great Britain)",
+        "George V of the United Kingdom",
+        "George Windsor",
+        "King George V" ;
+    :hasSex data:male .
 
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Birgitte-_Duchess_of_Gloucester a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Birgitte, Duchess of Gloucester" ;
-    data:posIndicesFull "455:486" ;
-    data:posIndicesPart "1071:1078",
-        "1082:1092" ;
-    data:wdtLink wdt:Q241584 ;
-    :alsoKnownAs "Birgitte Eva Henriksen",
-        "Birgitte Eva van Deurs Henriksen" ;
-    :hasChild data:Lady_Davina_Windsor ;
-    :hasDaughter data:Lady_Davina_Windsor ;
-    :hasSex data:female ;
-    :isMotherOf data:Lady_Davina_Windsor ;
-    :isParentOf data:Lady_Davina_Windsor .
-
-data:Prince_Richard-_Duke_of_Gloucester a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Richard, Duke of Gloucester" ;
-    data:posIndicesFull "416:450" ;
-    data:posIndicesPart "1062:1066",
-        "1082:1092",
-        "1738:1744",
-        "534:538",
-        "931:937" ;
-    data:wdtLink wdt:Q170294 ;
-    :alsoKnownAs "Prince Richard Alexander Walter George of Gloucester",
-        "Prince Richard Alexander Walter George, Duke of Gloucester",
-        "Prince Richard of Gloucester",
-        "Richard Alexander Walter George",
-        "Richard Alexander Walter George Windsor, 2nd Duke of Gloucester",
-        "Richard Gloucester",
-        "Richard Windsor" ;
-    :hasChild data:Lady_Davina_Windsor ;
-    :hasDaughter data:Lady_Davina_Windsor ;
-    :hasSex data:male ;
-    :isFatherOf data:Lady_Davina_Windsor ;
-    :isParentOf data:Lady_Davina_Windsor .
-
-data:Lady_Davina_Windsor a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Lady_Davina_Windsor a :Person ;
     rdfs:label "Lady Davina Windsor" ;
     data:posIndicesFull "0:45",
         "193:210",
         "198:210",
         "295:335",
         "5:45" ;
-    data:posIndicesPart "1022:1028",
-        "1230:1236",
-        "1370:1376",
-        "1459:1465",
-        "1560:1566",
+    data:posIndicesPart "1377:1383",
+        "1585:1591",
+        "1725:1731",
+        "1814:1820",
+        "1915:1921",
         "564:568",
         "651:655",
         "656:662",
@@ -81,13 +45,45 @@ data:Lady_Davina_Windsor a :Person,
         "Lady Davina Elizabeth Alice Benedikte Lewis",
         "Lady Davina Elizabeth Alice Benedikte Windsor",
         "Lady Davina Lewis" ;
-    :hasFather data:Prince_Richard-_Duke_of_Gloucester ;
-    :hasMother data:Birgitte-_Duchess_of_Gloucester ;
     :hasParent data:Birgitte-_Duchess_of_Gloucester,
         data:Prince_Richard-_Duke_of_Gloucester ;
-    :hasSex data:female ;
-    :isChildOf data:Birgitte-_Duchess_of_Gloucester,
-        data:Prince_Richard-_Duke_of_Gloucester ;
-    :isDaughterOf data:Birgitte-_Duchess_of_Gloucester,
-        data:Prince_Richard-_Duke_of_Gloucester .
+    :hasSex data:female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Birgitte-_Duchess_of_Gloucester a :Person ;
+    rdfs:label "Birgitte, Duchess of Gloucester" ;
+    data:posIndicesFull "455:486" ;
+    data:posIndicesPart "1426:1433",
+        "1437:1447" ;
+    data:wdtLink wdt:Q241584 ;
+    :alsoKnownAs "Birgitte Eva Henriksen",
+        "Birgitte Eva van Deurs Henriksen" ;
+    :hasSex data:female .
+
+data:Prince_Richard-_Duke_of_Gloucester a :Person ;
+    rdfs:label "Prince Richard, Duke of Gloucester" ;
+    data:posIndicesFull "416:450" ;
+    data:posIndicesPart "1417:1421",
+        "1437:1447",
+        "2093:2099",
+        "534:538",
+        "931:937" ;
+    data:wdtLink wdt:Q170294 ;
+    :alsoKnownAs "Prince Richard Alexander Walter George of Gloucester",
+        "Prince Richard Alexander Walter George, Duke of Gloucester",
+        "Prince Richard of Gloucester",
+        "Richard Alexander Walter George",
+        "Richard Alexander Walter George Windsor, 2nd Duke of Gloucester",
+        "Richard Gloucester",
+        "Richard Windsor" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

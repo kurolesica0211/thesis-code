@@ -2,52 +2,58 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Carlos_Chias_Osorio a :Man,
-        :Person ;
-    :hasBirthYear 1925 .
-
-data:Prince_Adam_Karol_Czartoryski a :Man,
-        :Person ;
-    :hasBirthYear 1940 ;
-    :hasFather data:Prince_Augustyn_Jozef_Czartoryski ;
-    :hasMother data:Princess_Dolores_of_Bourbon-Two_Sicilies .
-
-data:Prince_Ludwik_Piotr_Czartoryski a :Man,
-        :Person ;
-    :hasBirthYear 1945 ;
-    :hasDeathYear 1946 ;
-    :hasFather data:Prince_Augustyn_Jozef_Czartoryski ;
-    :hasMother data:Princess_Dolores_of_Bourbon-Two_Sicilies .
-
-data:Juan_Carlos_I_of_Spain a :Man,
+data:Emperor_Franz_Joseph_I_of_Austria a :Man,
         :Person .
 
-data:Prince_Carlos_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Man,
+data:Emperor_Pedro_II_of_Brazil a :Man,
         :Person .
 
-data:Princess_Louise_of_Orleans a :Ancestor,
+data:Luitpold_Prince_Regent_of_Bavaria a :Man,
+        :Person .
+
+data:Maria_di_Grazia_of_Bourbon-Two_Sicilies a :Person,
+        :Woman ;
+    :alsoKnownAs "Maria Pia"^^xsd:string ;
+    :hasBirthYear 1878 ;
+    :hasDeathYear 1973 ;
+    :hasFather data:Prince_Alfonso_Count_of_Caserta ;
+    :hasMarriageYear 1908 ;
+    :hasMother data:Princess_Antonietta_of_Bourbon-Two_Sicilies ;
+    :hasRelation data:Prince_Luiz_Maria_of_Orl%C3%A9ans-Braganza .
+
+data:Princess_Maria_Pia_of_the_Two_Sicilies a :Person,
+        :Woman .
+
+data:Robert_I_Duke_of_Parma a :Man,
+        :Person .
+
+data:Isabel_Princess_Imperial_of_Brazil a :Ancestor,
         :Person,
         :Woman .
 
-data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman ;
-    :isMotherOf data:Juan_Carlos_I_of_Spain .
+data:King_Ferdinand_II_of_the_Two_Sicilies a :Ancestor,
+        :Man,
+        :Person .
 
-data:Prince_Augustyn_Jozef_Czartoryski a :Ancestor,
+data:King_Francis_II a :Man,
+        :Person .
+
+data:Prince_Alfonso_Count_of_Caserta a :Ancestor,
         :Man,
         :Person ;
-    :hasDeathYear 1946 .
+    :hasBrother data:King_Francis_II ;
+    :hasFather data:King_Ferdinand_II_of_the_Two_Sicilies .
 
-data:Princess_Dolores_of_Bourbon-Two_Sicilies a :Ancestor,
+data:Prince_Gaston_of_Orl%C3%A9ans_Count_of_Eu a :Ancestor,
+        :Man,
+        :Person .
+
+data:Prince_Luiz_Maria_of_Orl%C3%A9ans-Braganza a :Man,
+        :Person ;
+    :hasFather data:Prince_Gaston_of_Orl%C3%A9ans_Count_of_Eu ;
+    :hasMother data:Isabel_Princess_Imperial_of_Brazil .
+
+data:Princess_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
         :Person,
-        :Woman ;
-    :alsoKnownAs "Dola"^^xsd:string ;
-    :hasBirthYear 1909 ;
-    :hasDeathYear 1996 ;
-    :hasFather data:Prince_Carlos_of_Bourbon-Two_Sicilies ;
-    :hasMother data:Princess_Louise_of_Orleans ;
-    :isSisterOf data:Princess_Maria_de_las_Mercedes_of_Bourbon-Two_Sicilies ;
-    :knownAs "Maria de los Dolores Victoria Felipa Luisa Mercedes"^^xsd:string .
+        :Woman .
 

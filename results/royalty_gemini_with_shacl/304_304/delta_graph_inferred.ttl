@@ -1,0 +1,317 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ClausVonAmsberg a :Ancestor,
+        :Man ;
+    :hasBrother data:ClausVonAmsberg ;
+    :hasChild data:PrinceFriso ;
+    :hasRelation data:ClausVonAmsberg,
+        data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:KingWillemAlexander,
+        data:MabelWisseSmit,
+        data:PrinceBernhard,
+        data:PrinceConstantijn,
+        data:PrinceFriso,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasSon data:PrinceFriso ;
+    :isAncestorOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:PrinceFriso ;
+    :isBloodrelationOf data:ClausVonAmsberg ;
+    :isBrotherOf data:ClausVonAmsberg ;
+    :isFatherOf data:PrinceFriso ;
+    :isParentOf data:PrinceFriso ;
+    :isSiblingOf data:ClausVonAmsberg ;
+    :isUncleOf data:PrinceFriso .
+
+data:KingWillemAlexander a :Man ;
+    :hasBrother data:KingWillemAlexander,
+        data:PrinceConstantijn,
+        data:PrinceFriso ;
+    :hasRelation data:ClausVonAmsberg,
+        data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:KingWillemAlexander,
+        data:MabelWisseSmit,
+        data:PrinceBernhard,
+        data:PrinceConstantijn,
+        data:PrinceFriso,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :isBloodrelationOf data:KingWillemAlexander,
+        data:PrinceConstantijn,
+        data:PrinceFriso ;
+    :isBrotherOf data:KingWillemAlexander,
+        data:PrinceConstantijn,
+        data:PrinceFriso ;
+    :isSiblingOf data:KingWillemAlexander,
+        data:PrinceConstantijn,
+        data:PrinceFriso ;
+    :isUncleOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou .
+
+data:PrinceBernhard a :Ancestor,
+        :Man ;
+    :hasBrother data:PrinceBernhard ;
+    :hasChild data:QueenBeatrix ;
+    :hasDaughter data:QueenBeatrix ;
+    :hasRelation data:ClausVonAmsberg,
+        data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:KingWillemAlexander,
+        data:MabelWisseSmit,
+        data:PrinceBernhard,
+        data:PrinceConstantijn,
+        data:PrinceFriso,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :isAncestorOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:PrinceFriso,
+        data:QueenBeatrix ;
+    :isBloodrelationOf data:PrinceBernhard ;
+    :isBrotherOf data:PrinceBernhard ;
+    :isFatherOf data:QueenBeatrix ;
+    :isParentOf data:QueenBeatrix ;
+    :isSiblingOf data:PrinceBernhard ;
+    :isUncleOf data:QueenBeatrix .
+
+data:PrinceConstantijn a :Man ;
+    :hasBrother data:KingWillemAlexander,
+        data:PrinceConstantijn,
+        data:PrinceFriso ;
+    :hasRelation data:ClausVonAmsberg,
+        data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:KingWillemAlexander,
+        data:MabelWisseSmit,
+        data:PrinceBernhard,
+        data:PrinceConstantijn,
+        data:PrinceFriso,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :isBloodrelationOf data:KingWillemAlexander,
+        data:PrinceConstantijn,
+        data:PrinceFriso ;
+    :isBrotherOf data:KingWillemAlexander,
+        data:PrinceConstantijn,
+        data:PrinceFriso ;
+    :isSiblingOf data:KingWillemAlexander,
+        data:PrinceConstantijn,
+        data:PrinceFriso ;
+    :isUncleOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou .
+
+data:QueenJuliana a :Ancestor,
+        :Woman ;
+    :hasChild data:QueenBeatrix ;
+    :hasDaughter data:QueenBeatrix ;
+    :hasRelation data:ClausVonAmsberg,
+        data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:KingWillemAlexander,
+        data:MabelWisseSmit,
+        data:PrinceBernhard,
+        data:PrinceConstantijn,
+        data:PrinceFriso,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasSister data:QueenJuliana ;
+    :isAncestorOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:PrinceFriso,
+        data:QueenBeatrix ;
+    :isAuntOf data:QueenBeatrix ;
+    :isBloodrelationOf data:QueenJuliana ;
+    :isMotherOf data:QueenBeatrix ;
+    :isParentOf data:QueenBeatrix ;
+    :isSiblingOf data:QueenJuliana ;
+    :isSisterOf data:QueenJuliana .
+
+data:MabelWisseSmit a :Ancestor,
+        :Woman ;
+    :hasChild data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :hasDaughter data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :hasRelation data:ClausVonAmsberg,
+        data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:KingWillemAlexander,
+        data:MabelWisseSmit,
+        data:PrinceBernhard,
+        data:PrinceConstantijn,
+        data:PrinceFriso,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasSister data:MabelWisseSmit ;
+    :isAncestorOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :isAuntOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :isBloodrelationOf data:MabelWisseSmit ;
+    :isMotherOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :isParentOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :isSiblingOf data:MabelWisseSmit ;
+    :isSisterOf data:MabelWisseSmit .
+
+data:QueenBeatrix a :Ancestor,
+        :Woman ;
+    :hasAncestor data:PrinceBernhard,
+        data:QueenJuliana ;
+    :hasChild data:PrinceFriso ;
+    :hasFather data:PrinceBernhard ;
+    :hasMother data:QueenJuliana ;
+    :hasParent data:PrinceBernhard,
+        data:QueenJuliana ;
+    :hasRelation data:ClausVonAmsberg,
+        data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:KingWillemAlexander,
+        data:MabelWisseSmit,
+        data:PrinceBernhard,
+        data:PrinceConstantijn,
+        data:PrinceFriso,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasSister data:QueenBeatrix ;
+    :hasSon data:PrinceFriso ;
+    :isAncestorOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:PrinceFriso ;
+    :isAuntOf data:PrinceFriso ;
+    :isBloodrelationOf data:QueenBeatrix ;
+    :isChildOf data:PrinceBernhard,
+        data:QueenJuliana ;
+    :isDaughterOf data:PrinceBernhard,
+        data:QueenJuliana ;
+    :isMotherOf data:PrinceFriso ;
+    :isParentOf data:PrinceFriso ;
+    :isSiblingOf data:QueenBeatrix ;
+    :isSisterOf data:QueenBeatrix .
+
+data:CountessEmmaLuanaNinetteSophie a :Woman ;
+    :hasAncestor data:ClausVonAmsberg,
+        data:MabelWisseSmit,
+        data:PrinceBernhard,
+        data:PrinceFriso,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasFather data:PrinceFriso ;
+    :hasMother data:MabelWisseSmit ;
+    :hasParent data:MabelWisseSmit,
+        data:PrinceFriso ;
+    :hasRelation data:ClausVonAmsberg,
+        data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:KingWillemAlexander,
+        data:MabelWisseSmit,
+        data:PrinceBernhard,
+        data:PrinceConstantijn,
+        data:PrinceFriso,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasSister data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :isBloodrelationOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :isChildOf data:MabelWisseSmit,
+        data:PrinceFriso ;
+    :isDaughterOf data:MabelWisseSmit,
+        data:PrinceFriso ;
+    :isSiblingOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :isSisterOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou .
+
+data:CountessJoannaZariaNicolineMilou a :Woman ;
+    :hasAncestor data:ClausVonAmsberg,
+        data:MabelWisseSmit,
+        data:PrinceBernhard,
+        data:PrinceFriso,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasFather data:PrinceFriso ;
+    :hasMother data:MabelWisseSmit ;
+    :hasParent data:MabelWisseSmit,
+        data:PrinceFriso ;
+    :hasRelation data:ClausVonAmsberg,
+        data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:KingWillemAlexander,
+        data:MabelWisseSmit,
+        data:PrinceBernhard,
+        data:PrinceConstantijn,
+        data:PrinceFriso,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasSister data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :isBloodrelationOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :isChildOf data:MabelWisseSmit,
+        data:PrinceFriso ;
+    :isDaughterOf data:MabelWisseSmit,
+        data:PrinceFriso ;
+    :isSiblingOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :isSisterOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou .
+
+data:PrinceFriso a :Ancestor,
+        :Man ;
+    :hasAncestor data:ClausVonAmsberg,
+        data:PrinceBernhard,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :hasBirthYear 1968 ;
+    :hasBrother data:KingWillemAlexander,
+        data:PrinceConstantijn,
+        data:PrinceFriso ;
+    :hasChild data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :hasDaughter data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :hasDeathYear 2013 ;
+    :hasFather data:ClausVonAmsberg ;
+    :hasMarriageYear 2004 ;
+    :hasMother data:QueenBeatrix ;
+    :hasParent data:ClausVonAmsberg,
+        data:QueenBeatrix ;
+    :hasRelation data:ClausVonAmsberg,
+        data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou,
+        data:KingWillemAlexander,
+        data:MabelWisseSmit,
+        data:PrinceBernhard,
+        data:PrinceConstantijn,
+        data:PrinceFriso,
+        data:QueenBeatrix,
+        data:QueenJuliana ;
+    :isAncestorOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :isBloodrelationOf data:KingWillemAlexander,
+        data:PrinceConstantijn,
+        data:PrinceFriso ;
+    :isBrotherOf data:KingWillemAlexander,
+        data:PrinceConstantijn,
+        data:PrinceFriso ;
+    :isChildOf data:ClausVonAmsberg,
+        data:QueenBeatrix ;
+    :isFatherOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :isParentOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou ;
+    :isSiblingOf data:KingWillemAlexander,
+        data:PrinceConstantijn,
+        data:PrinceFriso ;
+    :isSonOf data:ClausVonAmsberg,
+        data:QueenBeatrix ;
+    :isUncleOf data:CountessEmmaLuanaNinetteSophie,
+        data:CountessJoannaZariaNicolineMilou .
+

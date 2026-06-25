@@ -2,38 +2,50 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Vladimir_Romanovsky-Krasinsky a :Man,
-        :Person ;
-    :hasFather data:Grand_Duke_Andrei_Vladimirovich ;
-    :hasMother data:Mathilde_Kschessinska .
+data:Ana_Luna_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasFather data:Ignacio_Duke_of_Segorbe ;
+    :hasMother data:Maria_da_Gloria .
 
-data:Grand_Duchess_Elena_Vladimirovna a :Person,
+data:Katherine_Clairy_Batis a :Person,
         :Woman .
 
-data:Grand_Duchess_Maria_Pavlovna a :Person,
+data:Marija_Karadjordjevic a :Person,
+        :Woman ;
+    :isDaughterOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic .
+
+data:Sol_Maria_de_la_Blanca_Medina_y_Orleans_Braganza a :Person,
+        :Woman ;
+    :hasFather data:Ignacio_Duke_of_Segorbe ;
+    :hasMother data:Maria_da_Gloria .
+
+data:Stefan_Karadjordjevic a :Man,
+        :Person ;
+    :isSonOf data:Danica_Marinkovic,
+        data:Filip_Karadjordjevic .
+
+data:Alexander_Karadjordjevic a :Man,
+        :Person .
+
+data:Peter_Karadjordjevic a :Man,
+        :Person .
+
+data:Filip_Karadjordjevic a :Man,
+        :Person ;
+    :hasBirthYear 1982 ;
+    :hasFather data:Alexander_Karadjordjevic ;
+    :hasMarriageYear 2017 ;
+    :hasMother data:Maria_da_Gloria ;
+    :hasRelation data:Danica_Marinkovic ;
+    :isBrotherOf data:Peter_Karadjordjevic .
+
+data:Ignacio_Duke_of_Segorbe a :Man,
+        :Person .
+
+data:Danica_Marinkovic a :Person,
         :Woman .
 
-data:Grand_Duke_Andrei_Vladimirovich a :Man,
-        :Person ;
-    :hasBirthYear 1879 ;
-    :hasDeathYear 1956 ;
-    :hasFather data:Grand_Duke_Vladimir_Alexandrovich ;
-    :hasMarriageYear 1921 ;
-    :hasMother data:Grand_Duchess_Maria_Pavlovna ;
-    :hasRelation data:Mathilde_Kschessinska ;
-    :isBrotherOf data:Grand_Duke_Boris_Vladimirovich,
-        data:Grand_Duke_Kirill_Vladimirovich ;
-    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna .
-
-data:Grand_Duke_Boris_Vladimirovich a :Man,
-        :Person .
-
-data:Grand_Duke_Kirill_Vladimirovich a :Man,
-        :Person .
-
-data:Grand_Duke_Vladimir_Alexandrovich a :Man,
-        :Person .
-
-data:Mathilde_Kschessinska a :Person,
+data:Maria_da_Gloria a :Person,
         :Woman .
 

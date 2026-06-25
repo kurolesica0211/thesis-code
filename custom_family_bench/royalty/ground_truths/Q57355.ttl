@@ -7,15 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Georg_Friedrich-_Prince_of_Prussia a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Georg_Friedrich-_Prince_of_Prussia a :Person ;
     rdfs:label "Prince Georg Friedrich, Prince of Prussia" ;
     data:posIndicesFull "58:101" ;
     data:posIndicesPart "1006:1011",
@@ -71,16 +63,18 @@ data:Prince_Georg_Friedrich-_Prince_of_Prussia a :Man,
         "903:912" ;
     data:wdtLink wdt:Q57355 ;
     :alsoKnownAs "Georg Friedrich Ferdinand Prinz von Preußen" ;
-    :hasFather data:Prince_Louis_Ferdinand_of_Prussia ;
     :hasParent data:Prince_Louis_Ferdinand_of_Prussia ;
-    :hasSex data:male ;
-    :isChildOf data:Prince_Louis_Ferdinand_of_Prussia ;
-    :isSonOf data:Prince_Louis_Ferdinand_of_Prussia .
+    :hasSex data:male .
 
-data:Prince_Louis_Ferdinand_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Louis_Ferdinand_of_Prussia a :Person ;
     rdfs:label "Prince Louis Ferdinand of Prussia" ;
     data:posIndicesFull "1869:1902" ;
     data:posIndicesPart "2004:2009",
@@ -98,9 +92,7 @@ data:Prince_Louis_Ferdinand_of_Prussia a :Ancestor,
     data:wdtLink wdt:Q63575 ;
     :alsoKnownAs "Ludwig Ferdinand Oskar Christian Prinz von Preußen",
         "Prince Ludwig Ferdinand Oskar Christian of Prussia" ;
-    :hasChild data:Prince_Georg_Friedrich-_Prince_of_Prussia ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Georg_Friedrich-_Prince_of_Prussia ;
-    :isFatherOf data:Prince_Georg_Friedrich-_Prince_of_Prussia ;
-    :isParentOf data:Prince_Georg_Friedrich-_Prince_of_Prussia .
+    :hasSex data:male .
+
+data:male a :Male .
 

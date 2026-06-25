@@ -2,55 +2,40 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Charles_III a :Man,
-        :Person ;
-    :hasSex data:Male_Sex .
-
-data:Eugenie_Victoria_Helena a :Person,
+data:Eugenie a :Person,
         :Woman ;
-    :alsoKnownAs "Princess Eugenie, Mrs Jack Brooksbank"^^xsd:string ;
     :hasBirthYear 1990 ;
+    :hasChild data:August_Brooksbank,
+        data:Ernest_Brooksbank ;
     :hasFather data:Andrew_Mountbatten-Windsor ;
     :hasMarriageYear 2018 ;
     :hasMother data:Sarah_Ferguson ;
-    :hasSex data:Female_Sex ;
-    :hasSister data:Beatrice ;
-    :hasSon data:August_Brooksbank,
-        data:Ernest_Brooksbank ;
-    :knownAs "Eugenie Victoria Helena"^^xsd:string .
-
-data:August_Brooksbank a :Man,
-        :Person ;
-    :hasFather data:Jack_Brooksbank ;
-    :hasSex data:Male_Sex .
-
-data:Beatrice a :Person,
-        :Woman ;
-    :hasFather data:Andrew_Mountbatten-Windsor ;
-    :hasMother data:Sarah_Ferguson ;
-    :hasSex data:Female_Sex .
-
-data:Ernest_Brooksbank a :Man,
-        :Person ;
-    :hasFather data:Jack_Brooksbank ;
-    :hasSex data:Male_Sex .
+    :hasRelation data:Charles_III,
+        data:Jack_Brooksbank ;
+    :hasSister data:Beatrice .
 
 data:Andrew_Mountbatten-Windsor a :Ancestor,
         :Man,
-        :Person ;
-    :hasSex data:Male_Sex .
+        :Person .
 
-data:Jack_Brooksbank a :Ancestor,
-        :Man,
+data:Beatrice a :Person,
+        :Woman .
+
+data:Charles_III a :Man,
+        :Person .
+
+data:Jack_Brooksbank a :Man,
         :Person ;
-    :hasSex data:Male_Sex .
+    :hasChild data:August_Brooksbank,
+        data:Ernest_Brooksbank .
 
 data:Sarah_Ferguson a :Ancestor,
         :Person,
-        :Woman ;
-    :hasSex data:Female_Sex .
+        :Woman .
 
-data:Female_Sex a :Female .
+data:August_Brooksbank a :Man,
+        :Person .
 
-data:Male_Sex a :Male .
+data:Ernest_Brooksbank a :Man,
+        :Person .
 

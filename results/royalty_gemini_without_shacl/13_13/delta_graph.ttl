@@ -2,32 +2,39 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+data:Anne_Princess_Royal a :Person,
+        :Woman ;
+    :isChildOf data:Queen_Elizabeth_II .
+
+data:Charles_Prince_of_Wales a :Man,
+        :Person ;
+    :isChildOf data:Queen_Elizabeth_II .
+
 data:Edward_VIII a :Man,
         :Person ;
-    :isBrotherOf data:George_VI .
-
-data:Elizabeth_II a :Person,
-        :Woman ;
-    :hasFather data:George_VI ;
-    :hasMother data:Elizabeth_Bowes-Lyon .
+    :isChildOf data:George_V,
+        data:Queen_Mary .
 
 data:Fergus_Bowes-Lyon a :Man,
         :Person ;
-    :hasFather data:Claude_Bowes-Lyon ;
-    :isBrotherOf data:Elizabeth_Bowes-Lyon .
+    :isChildOf data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Bowes-Lyon .
 
-data:Princess_Margaret a :Person,
+data:Margaret a :Person,
         :Woman ;
-    :hasFather data:George_VI ;
-    :hasMother data:Elizabeth_Bowes-Lyon .
+    :isChildOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI .
+
+data:Princess_Mary a :Person,
+        :Woman ;
+    :isChildOf data:George_V,
+        data:Queen_Mary .
+
+data:Female a :Sex .
+
+data:Male a :Sex .
 
 data:Cecilia_Cavendish-Bentinck a :Person,
-        :Woman .
-
-data:George_V a :Man,
-        :Person .
-
-data:Queen_Mary a :Person,
         :Woman .
 
 data:Claude_Bowes-Lyon a :Man,
@@ -37,13 +44,26 @@ data:Elizabeth_Bowes-Lyon a :Person,
         :Woman ;
     :hasBirthYear 1900 ;
     :hasDeathYear 2002 ;
-    :hasFather data:Claude_Bowes-Lyon ;
     :hasMarriageYear 1923 ;
-    :hasMother data:Cecilia_Cavendish-Bentinck ;
-    :hasRelation data:George_VI .
+    :hasRelation data:George_VI ;
+    :hasSex data:Female ;
+    :isChildOf data:Cecilia_Cavendish-Bentinck,
+        data:Claude_Bowes-Lyon .
+
+data:Queen_Elizabeth_II a :Person,
+        :Woman ;
+    :isChildOf data:Elizabeth_Bowes-Lyon,
+        data:George_VI .
+
+data:George_V a :Man,
+        :Person .
 
 data:George_VI a :Man,
         :Person ;
-    :hasFather data:George_V ;
-    :hasMother data:Queen_Mary .
+    :hasSex data:Male ;
+    :isChildOf data:George_V,
+        data:Queen_Mary .
+
+data:Queen_Mary a :Person,
+        :Woman .
 

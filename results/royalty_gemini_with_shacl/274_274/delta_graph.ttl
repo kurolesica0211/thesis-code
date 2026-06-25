@@ -2,27 +2,60 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Philip_of_Bourbon-Two_Sicilies a :Man ;
-    :hasBirthYear "1885"^^xsd:string ;
-    :hasDeathYear "1949"^^xsd:string ;
-    :hasFather data:Prince_Alfonso_of_Bourbon-Two_Sicilies ;
-    :hasMarriageYear "1916"^^xsd:string ;
-    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :hasRelation data:Princess_Marie_Louise_of_Orleans .
+data:Amelia_Windsor a :Person,
+        :Woman ;
+    :hasBirthYear "1995"^^xsd:positiveInteger ;
+    :hasFather data:George_Windsor ;
+    :hasMother data:Sylvana_Tomaselli ;
+    :isSiblingOf data:Edward_Windsor_Lord_Downpatrick,
+        data:Marina_Windsor .
 
-data:Prince_Alfonso_of_Bourbon-Two_Sicilies a :Ancestor,
+data:Nicholas_Windsor a :Man,
+        :Person ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent .
+
+data:Edward_Windsor_Lord_Downpatrick a :Man,
+        :Person .
+
+data:George_V a :Ancestor,
         :Man .
 
-data:Prince_Emmanuel_Duke_of_Vendome a :Ancestor,
+data:George_Windsor a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Prince_Edward_Duke_of_Kent ;
+    :hasMother data:Katharine_Duchess_of_Kent .
+
+data:Marina_Windsor a :Person,
+        :Woman .
+
+data:Mary_of_Teck a :Ancestor,
+        :Woman .
+
+data:Prince_George_Duke_of_Kent a :Ancestor,
+        :Man ;
+    :hasFather data:George_V ;
+    :hasMother data:Mary_of_Teck .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
+        :Woman .
+
+data:Sir_William_Worsley_4th_Baronet a :Ancestor,
         :Man .
 
-data:Princess_Henriette_of_Belgium a :Ancestor,
+data:Sylvana_Tomaselli a :Ancestor,
+        :Person,
         :Woman .
 
-data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Woman .
+data:Katharine_Duchess_of_Kent a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Sir_William_Worsley_4th_Baronet .
 
-data:Princess_Marie_Louise_of_Orleans a :Woman ;
-    :hasFather data:Prince_Emmanuel_Duke_of_Vendome ;
-    :hasMother data:Princess_Henriette_of_Belgium .
+data:Prince_Edward_Duke_of_Kent a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Prince_George_Duke_of_Kent ;
+    :hasMother data:Princess_Marina_of_Greece_and_Denmark .
 

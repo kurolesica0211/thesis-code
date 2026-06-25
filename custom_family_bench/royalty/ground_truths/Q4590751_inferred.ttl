@@ -1,0 +1,284 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Prince_Paul_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Paul of Yugoslavia"^^xsd:string ;
+    data:posIndicesFull "202:227"^^xsd:string,
+        "209:227"^^xsd:string ;
+    data:posIndicesPart "1363:1369"^^xsd:string,
+        "288:294"^^xsd:string,
+        "398:408"^^xsd:string,
+        "561:567"^^xsd:string,
+        "624:630"^^xsd:string,
+        "631:635"^^xsd:string,
+        "657:667"^^xsd:string,
+        "683:689"^^xsd:string ;
+    data:wdtLink wdt:Q313128 ;
+    :alsoKnownAs "Pablo Karagjorgjevich"^^xsd:string,
+        "Paul Karageorgevich"^^xsd:string,
+        "Paul of Yugoslavia"^^xsd:string,
+        "Pavle Karađorđević"^^xsd:string,
+        "Prince of Yugoslavia Paul"^^xsd:string,
+        "Prince of Yugoslavia Pavle"^^xsd:string,
+        "Prince of Yugoslavia Pavle Karađorđević"^^xsd:string ;
+    :hasBrother data:Prince_Paul_of_Yugoslavia ;
+    :hasChild data:Prince_Nikola_of_Yugoslavia ;
+    :hasRelation data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Paul_of_Yugoslavia ;
+    :hasSex data:male ;
+    :hasSon data:Prince_Nikola_of_Yugoslavia ;
+    :isAncestorOf data:Prince_Nikola_of_Yugoslavia ;
+    :isBloodrelationOf data:Prince_Paul_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Paul_of_Yugoslavia ;
+    :isFatherOf data:Prince_Nikola_of_Yugoslavia ;
+    :isParentOf data:Prince_Nikola_of_Yugoslavia ;
+    :isSiblingOf data:Prince_Paul_of_Yugoslavia ;
+    :isUncleOf data:Prince_Nikola_of_Yugoslavia .
+
+data:Olga_Constantinovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Olga Constantinovna of Russia"^^xsd:string ;
+    data:posIndicesFull "249:263"^^xsd:string ;
+    data:posIndicesPart "649:653"^^xsd:string ;
+    data:wdtLink wdt:Q155178 ;
+    :alsoKnownAs "Olga of Greece"^^xsd:string,
+        "Queen Olga of Greece"^^xsd:string ;
+    :hasChild data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Olga_Constantinovna_of_Russia ;
+    :hasSon data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isAncestorOf data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Olga_Constantinovna_of_Russia ;
+    :isMotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isParentOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Olga_Constantinovna_of_Russia ;
+    :isSisterOf data:Olga_Constantinovna_of_Russia .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Grand Duchess Elena Vladimirovna of Russia"^^xsd:string ;
+    data:posIndicesFull "1505:1547"^^xsd:string,
+        "771:813"^^xsd:string ;
+    data:posIndicesPart "1095:1102"^^xsd:string ;
+    data:wdtLink wdt:Q232483 ;
+    :hasChild data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isAncestorOf data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isMotherOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :isSisterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Prince Nicholas of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "1463:1500"^^xsd:string,
+        "815:854"^^xsd:string ;
+    data:posIndicesPart "1363:1369"^^xsd:string ;
+    data:wdtLink wdt:Q170160 ;
+    :alsoKnownAs "Prince Nikolaos of Greece and Denmark"^^xsd:string ;
+    :hasAncestor data:Olga_Constantinovna_of_Russia ;
+    :hasBrother data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasDaughter data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasMother data:Olga_Constantinovna_of_Russia ;
+    :hasParent data:Olga_Constantinovna_of_Russia ;
+    :hasRelation data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isAncestorOf data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isBrotherOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isChildOf data:Olga_Constantinovna_of_Russia ;
+    :isFatherOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isParentOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSonOf data:Olga_Constantinovna_of_Russia ;
+    :isUncleOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Prince_Nikola_of_Yugoslavia a :Man,
+        :Person ;
+    rdfs:label "Prince Nikola of Yugoslavia"^^xsd:string ;
+    data:posIndicesFull "0:27"^^xsd:string,
+        "118:137"^^xsd:string ;
+    data:posIndicesPart "1363:1369"^^xsd:string,
+        "288:294"^^xsd:string,
+        "295:301"^^xsd:string,
+        "398:408"^^xsd:string,
+        "561:567"^^xsd:string,
+        "568:574"^^xsd:string,
+        "624:630"^^xsd:string,
+        "657:667"^^xsd:string,
+        "683:689"^^xsd:string,
+        "978:984"^^xsd:string ;
+    data:wdtLink wdt:Q4590751 ;
+    :alsoKnownAs "Nicholas Karageorgievich, Prince of Yugoslavia"^^xsd:string,
+        "Nikola Karageorgievich"^^xsd:string,
+        "Nikola Karađorđević"^^xsd:string ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasBrother data:Prince_Nikola_of_Yugoslavia ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasParent data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Nikola_of_Yugoslavia ;
+    :isBrotherOf data:Prince_Nikola_of_Yugoslavia ;
+    :isChildOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSiblingOf data:Prince_Nikola_of_Yugoslavia ;
+    :isSonOf data:Prince_Paul_of_Yugoslavia,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Elizabeth_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    rdfs:label "Princess Elizabeth of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "880:931"^^xsd:string ;
+    data:posIndicesPart "1186:1194"^^xsd:string,
+        "1384:1392"^^xsd:string ;
+    data:wdtLink wdt:Q19006 ;
+    :alsoKnownAs "Elizabeth Oldenburg"^^xsd:string,
+        "Elizabeth of Greece and Denmark"^^xsd:string,
+        "Princess Elizabeth, Countess of Toerring-Jettenbach"^^xsd:string ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isAuntOf data:Prince_Nikola_of_Yugoslavia ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isSiblingOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Olga of Greece and Denmark"^^xsd:string ;
+    data:posIndicesFull "202:227"^^xsd:string,
+        "240:275"^^xsd:string,
+        "249:275"^^xsd:string ;
+    data:posIndicesPart "1186:1194"^^xsd:string,
+        "1384:1392"^^xsd:string,
+        "512:520"^^xsd:string,
+        "640:648"^^xsd:string,
+        "649:653"^^xsd:string,
+        "720:728"^^xsd:string,
+        "937:945"^^xsd:string ;
+    data:wdtLink wdt:Q235432 ;
+    :alsoKnownAs "Olga of Greece and Denmark"^^xsd:string,
+        "Princess Paul of Yugoslavia"^^xsd:string ;
+    :hasAncestor data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasChild data:Prince_Nikola_of_Yugoslavia ;
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasRelation data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Olga_Constantinovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark,
+        data:Prince_Nikola_of_Yugoslavia,
+        data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSon data:Prince_Nikola_of_Yugoslavia ;
+    :isAncestorOf data:Prince_Nikola_of_Yugoslavia ;
+    :isAuntOf data:Prince_Nikola_of_Yugoslavia ;
+    :isBloodrelationOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :isMotherOf data:Prince_Nikola_of_Yugoslavia ;
+    :isParentOf data:Prince_Nikola_of_Yugoslavia ;
+    :isSiblingOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark ;
+    :isSisterOf data:Princess_Elizabeth_of_Greece_and_Denmark,
+        data:Princess_Olga_of_Greece_and_Denmark .
+

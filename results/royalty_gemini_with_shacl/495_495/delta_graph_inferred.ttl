@@ -1,0 +1,356 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:1939 a :DomainEntity .
+
+data:Male a :Male,
+        :Sex .
+
+data:Female a :Female,
+        :Sex .
+
+data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1887 ;
+    :hasBrother data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz ;
+    :hasChild data:Heinrich_I_Prinz_Reuss ;
+    :hasDeathYear 1956 ;
+    :hasRelation data:Father_of_Woizlawa,
+        data:Frederick_Francis_II,
+        data:Heinrich_I_Prinz_Reuss,
+        data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Princess_Feodora_of_Leiningen,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasSex data:Male ;
+    :hasSon data:Heinrich_I_Prinz_Reuss ;
+    :isAncestorOf data:Heinrich_I_Prinz_Reuss ;
+    :isBloodrelationOf data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz ;
+    :isBrotherOf data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz ;
+    :isFatherOf data:Heinrich_I_Prinz_Reuss ;
+    :isParentOf data:Heinrich_I_Prinz_Reuss ;
+    :isSiblingOf data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz ;
+    :isUncleOf data:Heinrich_I_Prinz_Reuss .
+
+data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1884 ;
+    :hasChild data:Heinrich_I_Prinz_Reuss ;
+    :hasDeathYear 1968 ;
+    :hasRelation data:Father_of_Woizlawa,
+        data:Frederick_Francis_II,
+        data:Heinrich_I_Prinz_Reuss,
+        data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Princess_Feodora_of_Leiningen,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasSex data:Female ;
+    :hasSister data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz ;
+    :hasSon data:Heinrich_I_Prinz_Reuss ;
+    :isAncestorOf data:Heinrich_I_Prinz_Reuss ;
+    :isAuntOf data:Heinrich_I_Prinz_Reuss ;
+    :isBloodrelationOf data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz ;
+    :isMotherOf data:Heinrich_I_Prinz_Reuss ;
+    :isParentOf data:Heinrich_I_Prinz_Reuss ;
+    :isSiblingOf data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz ;
+    :isSisterOf data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz .
+
+data:Frederick_Francis_II a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1823 ;
+    :hasBrother data:Frederick_Francis_II ;
+    :hasChild data:Father_of_Woizlawa ;
+    :hasDeathYear 1883 ;
+    :hasRelation data:Father_of_Woizlawa,
+        data:Frederick_Francis_II,
+        data:Heinrich_I_Prinz_Reuss,
+        data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Princess_Feodora_of_Leiningen,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasSex data:Male ;
+    :hasSon data:Father_of_Woizlawa ;
+    :isAncestorOf data:Father_of_Woizlawa,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :isBloodrelationOf data:Frederick_Francis_II ;
+    :isBrotherOf data:Frederick_Francis_II ;
+    :isFatherOf data:Father_of_Woizlawa ;
+    :isParentOf data:Father_of_Woizlawa ;
+    :isSiblingOf data:Frederick_Francis_II ;
+    :isUncleOf data:Father_of_Woizlawa .
+
+data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz ;
+    :hasChild data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :hasDaughter data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :hasRelation data:Father_of_Woizlawa,
+        data:Frederick_Francis_II,
+        data:Heinrich_I_Prinz_Reuss,
+        data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Princess_Feodora_of_Leiningen,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :isBloodrelationOf data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz ;
+    :isBrotherOf data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz ;
+    :isFatherOf data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :isParentOf data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :isSiblingOf data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz ;
+    :isUncleOf data:Viktoria_Feodora_Reuss_zu_Schleiz .
+
+data:Princess_Marie_of_Schwarzburg-Rudolstadt a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasBirthYear 1850 ;
+    :hasChild data:Father_of_Woizlawa ;
+    :hasDeathYear 1922 ;
+    :hasRelation data:Father_of_Woizlawa,
+        data:Frederick_Francis_II,
+        data:Heinrich_I_Prinz_Reuss,
+        data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Princess_Feodora_of_Leiningen,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasSex data:Female ;
+    :hasSister data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasSon data:Father_of_Woizlawa ;
+    :isAncestorOf data:Father_of_Woizlawa,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :isAuntOf data:Father_of_Woizlawa ;
+    :isBloodrelationOf data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isMotherOf data:Father_of_Woizlawa ;
+    :isParentOf data:Father_of_Woizlawa ;
+    :isSiblingOf data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isSisterOf data:Princess_Marie_of_Schwarzburg-Rudolstadt .
+
+data:Princess_Feodora_of_Leiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :hasDaughter data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Father_of_Woizlawa,
+        data:Frederick_Francis_II,
+        data:Heinrich_I_Prinz_Reuss,
+        data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Princess_Feodora_of_Leiningen,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasSex data:Female ;
+    :hasSister data:Princess_Feodora_of_Leiningen ;
+    :isAncestorOf data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :isAuntOf data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :isBloodrelationOf data:Princess_Feodora_of_Leiningen ;
+    :isMotherOf data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :isParentOf data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :isSiblingOf data:Princess_Feodora_of_Leiningen ;
+    :isSisterOf data:Princess_Feodora_of_Leiningen .
+
+data:Heinrich_I_Prinz_Reuss a :Man,
+        :Person ;
+    :hasAncestor data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz ;
+    :hasBirthYear 1910 ;
+    :hasBrother data:Heinrich_I_Prinz_Reuss ;
+    :hasDeathYear 1982 ;
+    :hasFather data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz ;
+    :hasMother data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz ;
+    :hasParent data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz ;
+    :hasRelation data:Father_of_Woizlawa,
+        data:Frederick_Francis_II,
+        data:Heinrich_I_Prinz_Reuss,
+        data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Princess_Feodora_of_Leiningen,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasSex data:Male ;
+    :isBloodrelationOf data:Heinrich_I_Prinz_Reuss ;
+    :isBrotherOf data:Heinrich_I_Prinz_Reuss ;
+    :isChildOf data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz ;
+    :isSiblingOf data:Heinrich_I_Prinz_Reuss ;
+    :isSonOf data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz .
+
+data:Princess_Elise_of_Hohenlohe-Langenburg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Princess_Feodora_of_Leiningen ;
+    :hasChild data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :hasDaughter data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :hasMother data:Princess_Feodora_of_Leiningen ;
+    :hasParent data:Princess_Feodora_of_Leiningen ;
+    :hasRelation data:Father_of_Woizlawa,
+        data:Frederick_Francis_II,
+        data:Heinrich_I_Prinz_Reuss,
+        data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Princess_Feodora_of_Leiningen,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasSex data:Female ;
+    :hasSister data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :isAncestorOf data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :isAuntOf data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :isBloodrelationOf data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :isChildOf data:Princess_Feodora_of_Leiningen ;
+    :isDaughterOf data:Princess_Feodora_of_Leiningen ;
+    :isMotherOf data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :isParentOf data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :isSiblingOf data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :isSisterOf data:Princess_Elise_of_Hohenlohe-Langenburg .
+
+data:Father_of_Woizlawa a :Ancestor,
+        :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasBrother data:Father_of_Woizlawa ;
+    :hasChild data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasDaughter data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasFather data:Frederick_Francis_II ;
+    :hasMother data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasParent data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :hasRelation data:Father_of_Woizlawa,
+        data:Frederick_Francis_II,
+        data:Heinrich_I_Prinz_Reuss,
+        data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Princess_Feodora_of_Leiningen,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasSex data:Male ;
+    :isAncestorOf data:Woizlawa_Feodora_Princess_Reuss ;
+    :isBloodrelationOf data:Father_of_Woizlawa ;
+    :isBrotherOf data:Father_of_Woizlawa ;
+    :isChildOf data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isFatherOf data:Woizlawa_Feodora_Princess_Reuss ;
+    :isParentOf data:Woizlawa_Feodora_Princess_Reuss ;
+    :isSiblingOf data:Father_of_Woizlawa ;
+    :isSonOf data:Frederick_Francis_II,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt ;
+    :isUncleOf data:Woizlawa_Feodora_Princess_Reuss .
+
+data:Woizlawa_Feodora_Princess_Reuss a :Person,
+        :Woman ;
+    :hasAncestor data:Father_of_Woizlawa,
+        data:Frederick_Francis_II,
+        data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Princess_Feodora_of_Leiningen,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :hasBirthYear 1918 ;
+    :hasDeathYear 2019 ;
+    :hasFather data:Father_of_Woizlawa ;
+    :hasMarriageYear data:1939 ;
+    :hasMother data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :hasParent data:Father_of_Woizlawa,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :hasRelation data:Father_of_Woizlawa,
+        data:Frederick_Francis_II,
+        data:Heinrich_I_Prinz_Reuss,
+        data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Princess_Feodora_of_Leiningen,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasSex data:Female ;
+    :hasSister data:Woizlawa_Feodora_Princess_Reuss ;
+    :isBloodrelationOf data:Woizlawa_Feodora_Princess_Reuss ;
+    :isChildOf data:Father_of_Woizlawa,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :isDaughterOf data:Father_of_Woizlawa,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :isSiblingOf data:Woizlawa_Feodora_Princess_Reuss ;
+    :isSisterOf data:Woizlawa_Feodora_Princess_Reuss .
+
+data:Viktoria_Feodora_Reuss_zu_Schleiz a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Princess_Feodora_of_Leiningen ;
+    :hasBirthYear 1889 ;
+    :hasChild data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasDaughter data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasDeathYear 1918 ;
+    :hasFather data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz ;
+    :hasMother data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :hasParent data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :hasRelation data:Father_of_Woizlawa,
+        data:Frederick_Francis_II,
+        data:Heinrich_I_Prinz_Reuss,
+        data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Prince_Heinrich_XXXIV_Reuss_of_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg,
+        data:Princess_Feodora_of_Leiningen,
+        data:Princess_Marie_of_Schwarzburg-Rudolstadt,
+        data:Princess_Sophie_Renata_Reuss_of_K%C3%B6stritz,
+        data:Viktoria_Feodora_Reuss_zu_Schleiz,
+        data:Woizlawa_Feodora_Princess_Reuss ;
+    :hasSex data:Female ;
+    :hasSister data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :isAncestorOf data:Woizlawa_Feodora_Princess_Reuss ;
+    :isAuntOf data:Woizlawa_Feodora_Princess_Reuss ;
+    :isBloodrelationOf data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :isChildOf data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :isDaughterOf data:Heinrich_XXVII_Prince_of_Reuss_zu_Schleiz,
+        data:Princess_Elise_of_Hohenlohe-Langenburg ;
+    :isMotherOf data:Woizlawa_Feodora_Princess_Reuss ;
+    :isParentOf data:Woizlawa_Feodora_Princess_Reuss ;
+    :isSiblingOf data:Viktoria_Feodora_Reuss_zu_Schleiz ;
+    :isSisterOf data:Viktoria_Feodora_Reuss_zu_Schleiz .
+

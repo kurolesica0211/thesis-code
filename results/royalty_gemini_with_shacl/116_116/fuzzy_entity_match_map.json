@@ -16,14 +16,14 @@
       "qid": "Q198780",
       "label": "Bertrand de Orléans e Bragança",
       "distance": 0,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Maria_Elisabeth_of_Bavaria",
       "qid": "Q285326",
       "label": "Princess Maria Elisabeth of Bavaria",
       "distance": 1,
-      "gender": "female"
+      "gender": null
     }
   ],
   "entities": [
@@ -38,11 +38,11 @@
       "ground_truth_qid": "Q198780",
       "ground_truth_label": "Bertrand de Orléans e Bragança",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Bertrand of Orleans-Braganza",
       "best_candidate_label": "Bertrand de Orléans e Bragança",
       "best_candidate_qid": "Q198780",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.96875
     },
     {
@@ -56,11 +56,11 @@
       "ground_truth_qid": "Q285326",
       "ground_truth_label": "Princess Maria Elisabeth of Bavaria",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Princess Maria Elisabeth of Bavaria",
       "best_candidate_label": "Princess Maria Elisabeth of Bavaria",
       "best_candidate_qid": "Q285326",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.8846153846153846
     },
     {
@@ -75,11 +75,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Maria Elisabeth Franziska Josepha Therese von Bayern",
+      "best_candidate_label": "Princess Maria Elisabeth of Bavaria",
+      "best_candidate_qid": "Q285326",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.23376623376623376
     },
     {
       "extracted_uri": "http://example.org/data/Isabel_Princess_Imperial_of_Brazil",
@@ -96,7 +96,7 @@
       "best_candidate_match_text": "Maria Isabel da Baviera",
       "best_candidate_label": "Princess Maria Elisabeth of Bavaria",
       "best_candidate_qid": "Q285326",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 0.38596491228070173
     },
     {
@@ -111,11 +111,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": null,
-      "best_candidate_label": null,
-      "best_candidate_qid": null,
+      "best_candidate_match_text": "Maria Elisabeth Franziska Josepha Therese von Bayern",
+      "best_candidate_label": "Princess Maria Elisabeth of Bavaria",
+      "best_candidate_qid": "Q285326",
       "best_candidate_gender": null,
-      "best_candidate_score": null
+      "best_candidate_score": 0.23684210526315788
     },
     {
       "extracted_uri": "http://example.org/data/Pedro_Henrique_of_Orl%C3%A9ans-Braganza",

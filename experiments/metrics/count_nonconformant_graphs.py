@@ -90,6 +90,7 @@ def main() -> None:
         validated_count += 1
         data_graph = load_graph(delta_graph_path)
         if not is_conformant(data_graph, shapes_graph):
+            print(run_dir.stem)
             non_conformant_count += 1
 
     print(non_conformant_count)

@@ -1,0 +1,175 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Gerald_David_Lascelles a :Man,
+        :Person ;
+    rdfs:label "Gerald David Lascelles"^^xsd:string ;
+    data:posIndicesFull "661:677"^^xsd:string ;
+    data:posIndicesPart "1037:1046"^^xsd:string,
+        "1293:1302"^^xsd:string,
+        "1829:1838"^^xsd:string,
+        "1888:1897"^^xsd:string,
+        "1965:1974"^^xsd:string,
+        "893:902"^^xsd:string ;
+    data:wdtLink wdt:Q2962982 ;
+    :alsoKnownAs "Gerald Lascelles"^^xsd:string,
+        "Hon. Gerald David Lascelles"^^xsd:string,
+        "Hon. Gerald Lascelles"^^xsd:string ;
+    :hasBrother data:Gerald_David_Lascelles ;
+    :hasRelation data:Gerald_David_Lascelles ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Gerald_David_Lascelles ;
+    :isBrotherOf data:Gerald_David_Lascelles ;
+    :isSiblingOf data:Gerald_David_Lascelles .
+
+data:Margaret_Messenger a :Person,
+        :Woman ;
+    rdfs:label "Margaret Messenger"^^xsd:string ;
+    data:posIndicesFull "1847:1874"^^xsd:string ;
+    data:wdtLink wdt:Q75381841 ;
+    :alsoKnownAs "Margaret Lascelles, Viscountess Lascelles"^^xsd:string,
+        "Margaret Rosalind Lascelles, Viscountess Lascelles"^^xsd:string,
+        "Margaret Rosalind Messenger"^^xsd:string,
+        "Margaret Rosalind, Viscountess Lascelles"^^xsd:string,
+        "Margaret, Viscountess Lascelles"^^xsd:string ;
+    :hasRelation data:Margaret_Messenger ;
+    :hasSex data:female ;
+    :hasSister data:Margaret_Messenger ;
+    :isBloodrelationOf data:Margaret_Messenger ;
+    :isSiblingOf data:Margaret_Messenger ;
+    :isSisterOf data:Margaret_Messenger .
+
+data:George_Lascelles-_7th_Earl_of_Harewood a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "George Lascelles, 7th Earl of Harewood"^^xsd:string ;
+    data:posIndicesFull "12:28"^^xsd:string,
+        "220:236"^^xsd:string ;
+    data:posIndicesPart "1037:1046"^^xsd:string,
+        "1176:1184"^^xsd:string,
+        "1293:1302"^^xsd:string,
+        "1542:1546"^^xsd:string,
+        "1550:1558"^^xsd:string,
+        "1736:1744"^^xsd:string,
+        "1829:1838"^^xsd:string,
+        "1888:1897"^^xsd:string,
+        "1965:1974"^^xsd:string,
+        "2023:2031"^^xsd:string,
+        "362:366"^^xsd:string,
+        "370:378"^^xsd:string,
+        "452:460"^^xsd:string,
+        "771:777"^^xsd:string,
+        "814:822"^^xsd:string,
+        "893:902"^^xsd:string ;
+    data:wdtLink wdt:Q336609 ;
+    :alsoKnownAs "George Harewood"^^xsd:string,
+        "George Henry Hubert Lascelles, 7th Earl of Harewood"^^xsd:string,
+        "George Henry Hubert Lascelles, Viscount Lascelles"^^xsd:string,
+        "George Lascelles"^^xsd:string,
+        "George Lascelles, Viscount Lascelles"^^xsd:string,
+        "Hon. George Henry Hubert Lascelles"^^xsd:string,
+        "Hon. George Lascelles"^^xsd:string,
+        "Lascelles, George"^^xsd:string ;
+    :hasBrother data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :hasChild data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :hasRelation data:David_Lascelles-_8th_Earl_of_Harewood,
+        data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasSex data:male ;
+    :hasSon data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isAncestorOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isBloodrelationOf data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :isBrotherOf data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :isFatherOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isParentOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isSiblingOf data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :isUncleOf data:David_Lascelles-_8th_Earl_of_Harewood .
+
+data:Marion_Stein a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Marion Stein"^^xsd:string ;
+    data:posIndicesFull "399:411"^^xsd:string ;
+    data:wdtLink wdt:Q2010206 ;
+    :alsoKnownAs "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Lascelles, Countess of Harewood"^^xsd:string,
+        "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Stein"^^xsd:string,
+        "Maria Donata Nanetta Paulina Gustava Erwina Wilhelmine Thorpe"^^xsd:string,
+        "Maria Stein"^^xsd:string,
+        "Marion Harewood"^^xsd:string,
+        "Marion Lascelles, Countess of Harewood"^^xsd:string,
+        "Marion Thorpe"^^xsd:string ;
+    :hasChild data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :hasRelation data:David_Lascelles-_8th_Earl_of_Harewood,
+        data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasSex data:female ;
+    :hasSister data:Marion_Stein ;
+    :hasSon data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isAncestorOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isAuntOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isBloodrelationOf data:Marion_Stein ;
+    :isMotherOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isParentOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isSiblingOf data:Marion_Stein ;
+    :isSisterOf data:Marion_Stein .
+
+data:David_Lascelles-_8th_Earl_of_Harewood a :Man,
+        :Person ;
+    rdfs:label "David Lascelles, 8th Earl of Harewood"^^xsd:string ;
+    data:posIndicesFull "0:50"^^xsd:string ;
+    data:posIndicesPart "1037:1046"^^xsd:string,
+        "1176:1184"^^xsd:string,
+        "1293:1302"^^xsd:string,
+        "1542:1546"^^xsd:string,
+        "1550:1558"^^xsd:string,
+        "1736:1744"^^xsd:string,
+        "1829:1838"^^xsd:string,
+        "1888:1897"^^xsd:string,
+        "1965:1974"^^xsd:string,
+        "2023:2031"^^xsd:string,
+        "208:213"^^xsd:string,
+        "362:366"^^xsd:string,
+        "370:378"^^xsd:string,
+        "452:460"^^xsd:string,
+        "814:822"^^xsd:string,
+        "893:902"^^xsd:string ;
+    data:wdtLink wdt:Q619788 ;
+    :alsoKnownAs "David Harewood"^^xsd:string,
+        "David Henry George Lascelles, 8th Earl of Harewood"^^xsd:string,
+        "David Henry George Lascelles, Viscount Lascelles"^^xsd:string,
+        "David Lascelles, Viscount Lascelles"^^xsd:string ;
+    :hasAncestor data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasBrother data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :hasFather data:George_Lascelles-_7th_Earl_of_Harewood ;
+    :hasMother data:Marion_Stein ;
+    :hasParent data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasRelation data:David_Lascelles-_8th_Earl_of_Harewood,
+        data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isBrotherOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isChildOf data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein ;
+    :isSiblingOf data:David_Lascelles-_8th_Earl_of_Harewood ;
+    :isSonOf data:George_Lascelles-_7th_Earl_of_Harewood,
+        data:Marion_Stein .
+

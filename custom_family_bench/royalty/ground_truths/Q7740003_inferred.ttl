@@ -1,0 +1,59 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Alois-Konstantin, 9th Prince of Löwenstein-Wertheim-Rosenberg"^^xsd:string ;
+    data:posIndicesFull "369:426"^^xsd:string ;
+    data:posIndicesPart "572:582"^^xsd:string,
+        "688:698"^^xsd:string ;
+    data:wdtLink wdt:Q104235 ;
+    :alsoKnownAs "Alois-Konstantin, Prince of Löwenstein-Wertheim-Rosenberg"^^xsd:string ;
+    :hasBrother data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg ;
+    :hasChild data:Leo_Löwenstein ;
+    :hasRelation data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg,
+        data:Leo_Löwenstein ;
+    :hasSex data:male ;
+    :hasSon data:Leo_Löwenstein ;
+    :isAncestorOf data:Leo_Löwenstein ;
+    :isBloodrelationOf data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg ;
+    :isBrotherOf data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg ;
+    :isFatherOf data:Leo_Löwenstein ;
+    :isParentOf data:Leo_Löwenstein ;
+    :isSiblingOf data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg ;
+    :isUncleOf data:Leo_Löwenstein .
+
+data:Leo_Löwenstein a :Man,
+        :Person ;
+    rdfs:label "Leo Löwenstein"^^xsd:string ;
+    data:wdtLink wdt:Q7740003 ;
+    :hasAncestor data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg ;
+    :hasBrother data:Leo_Löwenstein ;
+    :hasFather data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg ;
+    :hasParent data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg ;
+    :hasRelation data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg,
+        data:Leo_Löwenstein ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Leo_Löwenstein ;
+    :isBrotherOf data:Leo_Löwenstein ;
+    :isChildOf data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg ;
+    :isSiblingOf data:Leo_Löwenstein ;
+    :isSonOf data:Alois-Konstantin-_9th_Prince_of_Löwenstein-Wertheim-Rosenberg .
+

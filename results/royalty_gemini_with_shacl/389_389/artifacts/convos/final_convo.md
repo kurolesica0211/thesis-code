@@ -85,38 +85,24 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Lady Amanda Patricia Victoria Ellingworth (née Knatchbull; born 26 June 1957), styled The Honourable Amanda Knatchbull between 1957 and 1979, is a British voluntary sector executive.
-The granddaughter of Admiral of the Fleet Louis Mountbatten, 1st Earl Mountbatten of Burma, she is a descendant of Queen Victoria through her daughter Princess Alice, Mountbatten's grandmother.
-Ancestry
+Michael Claude Hamilton Bowes-Lyon (1 October 1893 – 1 May 1953), known as Mickie Bowes-Lyon, was an elder brother of Queen Elizabeth the Queen Mother and maternal uncle of Queen Elizabeth II.
+Biography
 
-Early life and education
-
-Born as The Honourable Amanda Patricia Victoria Knatchbull, on 26 June 1957, in London, she was the fifth of eight children of the 7th Baron Brabourne and the 2nd Countess Mountbatten of Burma.
-Earl Mountbatten of Burma, who was an uncle of Prince Philip, Duke of Edinburgh and a second cousin once removed of Queen Elizabeth II.
-Ellingworth earned a BA Hons degree from the University of Kent, a CQSW qualification from Goldsmiths College, London, and a Certificate in Mandarin Language from the Beijing Language Institute.
-, Ellingworth worked at a senior level in health services, children's services, adult social care and affordable housing.
-Personal life
-
-Marriage and family
-
-Lady Amanda married novelist and property entrepreneur Charles Vincent Ellingworth on 31 October 1987.
-Relationship with Prince of Wales
-
-Ellingworth's grandfather Lord Mountbatten recommended her as a potential bride for his grandnephew, Charles, Prince of Wales.
-According to his biographer, Jonathan Dimbleby, "In 1974, following his correspondence with Mountbatten on the subject, the Prince had tentatively raised the question of marriage to Amanda with her mother (and his godmother)
-"
-
-
-Mountbatten intended for himself and Lady Amanda to accompany Prince Charles on his planned 1980 tour of India.
-Both fathers disapproved and it was decided he should go alone.
-Before Prince Charles was to depart, Mountbatten was assassinated by the IRA in August 1979.
-When Prince Charles returned, he proposed to Lady Amanda.
+Bowes-Lyon was born on 1 October 1893, the fifth son and eighth child of Claude Bowes-Lyon, Lord Glamis, later 14th
+During World War I, Bowes-Lyon served in France in The Royal Scots (Lothian Regiment).
+After the war, Bowes-Lyon was a justice of the peace and deputy lieutenant of Bedfordshire.
+In 1928, Bowes-Lyon married Elizabeth Margaret Cator (1899–1959), daughter of John Cator, at St George's, Hanover Square.
+Cator had been a bridesmaid at his sister Elizabeth's wedding to Prince Albert, Duke of York, in 1923.
+Bowes-Lyon predeceased him and the earldom was inherited by his eldest son, Fergus, in 1972.
+Bowes-Lyon died on 1 May 1953 at his home in Biggleswade as the result of asthma.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -132,39 +118,9 @@ When Prince Charles returned, he proposed to Lady Amanda.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -179,6 +135,23 @@ When Prince Charles returned, he proposed to Lady Amanda.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -196,6 +169,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -263,29 +251,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -294,6 +274,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -306,6 +294,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -314,17 +304,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -352,6 +344,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -367,217 +443,140 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (ac232202-e412-4fee-816b-297ecd1bb4c2)
- Call ID: ac232202-e412-4fee-816b-297ecd1bb4c2
+  AssignClass (0dca04f0-1bde-4376-ae1e-4f0501ffe445)
+ Call ID: 0dca04f0-1bde-4376-ae1e-4f0501ffe445
   Args:
+    source: :MichaelClaudeHamiltonBowes-Lyon
+    type: :Man
+  AssignClass (e56be024-5139-4afb-914c-a5421623649c)
+ Call ID: e56be024-5139-4afb-914c-a5421623649c
+  Args:
+    source: :MichaelClaudeHamiltonBowes-Lyon
     type: :Person
-    source: Amanda_Patricia_Victoria_Ellingworth
-  AssignClass (9c7bac5f-f292-4451-8505-6f82d785a69f)
- Call ID: 9c7bac5f-f292-4451-8505-6f82d785a69f
+  AddLiteral (da9dfd82-0d0b-447d-b0a0-3f841a5b9214)
+ Call ID: da9dfd82-0d0b-447d-b0a0-3f841a5b9214
   Args:
-    type: :Woman
-    source: Amanda_Patricia_Victoria_Ellingworth
-  AddLiteral (c671e49a-3578-4dd0-9c66-326e0ff7df0e)
- Call ID: c671e49a-3578-4dd0-9c66-326e0ff7df0e
-  Args:
-    source: Amanda_Patricia_Victoria_Ellingworth
     relation: :knownAs
-    literal_value: Amanda Patricia Victoria Ellingworth
+    literal_value: Mickie Bowes-Lyon
     literal_type: xsd:string
-  AddLiteral (27a3d454-b2ea-4399-9d6f-af4433f31bd2)
- Call ID: 27a3d454-b2ea-4399-9d6f-af4433f31bd2
+    source: :MichaelClaudeHamiltonBowes-Lyon
+  AddLiteral (f6557490-d13b-4f40-bec4-544242487bf0)
+ Call ID: f6557490-d13b-4f40-bec4-544242487bf0
   Args:
-    relation: :formerlyKnownAs
-    source: Amanda_Patricia_Victoria_Ellingworth
-    literal_type: xsd:string
-    literal_value: The Honourable Amanda Knatchbull
-  AddLiteral (9aeae18f-4051-44c3-9cf2-4540e92c7fb4)
- Call ID: 9aeae18f-4051-44c3-9cf2-4540e92c7fb4
-  Args:
-    source: Amanda_Patricia_Victoria_Ellingworth
+    source: :MichaelClaudeHamiltonBowes-Lyon
+    literal_type: xsd:integer
+    literal_value: 1893
     relation: :hasBirthYear
-    literal_value: 1957
+  AddLiteral (ef0144b1-0753-4985-8150-d586c07ee500)
+ Call ID: ef0144b1-0753-4985-8150-d586c07ee500
+  Args:
+    relation: :hasDeathYear
+    literal_value: 1953
     literal_type: xsd:integer
-  AssignClass (aafcb7e7-b384-4755-ac8b-473befd2613b)
- Call ID: aafcb7e7-b384-4755-ac8b-473befd2613b
+    source: :MichaelClaudeHamiltonBowes-Lyon
+  AssignClass (5b0f83b8-371d-4069-8c32-e248991bde6a)
+ Call ID: 5b0f83b8-371d-4069-8c32-e248991bde6a
   Args:
-    type: :Person
-    source: Charles_Vincent_Ellingworth
-  AssignClass (5c8d7b62-8478-405b-9d74-b7bf7a531534)
- Call ID: 5c8d7b62-8478-405b-9d74-b7bf7a531534
-  Args:
-    type: :Man
-    source: Charles_Vincent_Ellingworth
-  AddLiteral (9ceaac9d-e0ee-4941-863e-8dac6798cd97)
- Call ID: 9ceaac9d-e0ee-4941-863e-8dac6798cd97
-  Args:
-    literal_value: 1987
-    literal_type: xsd:integer
-    source: Amanda_Patricia_Victoria_Ellingworth
-    relation: :hasMarriageYear
-  AddTriple (67f68c4c-dc59-4aa2-bfdf-a94b8aa04b33)
- Call ID: 67f68c4c-dc59-4aa2-bfdf-a94b8aa04b33
-  Args:
-    source: Amanda_Patricia_Victoria_Ellingworth
-    relation: :hasRelation
-    target: Charles_Vincent_Ellingworth
-  AssignClass (163e680f-4af4-4af9-9020-003780762c12)
- Call ID: 163e680f-4af4-4af9-9020-003780762c12
-  Args:
-    type: :Person
-    source: Louis_Mountbatten
-  AssignClass (2a2f7733-525f-4f70-af8b-d9f4594b19d3)
- Call ID: 2a2f7733-525f-4f70-af8b-d9f4594b19d3
-  Args:
-    type: :Man
-    source: Louis_Mountbatten
-  AddTriple (6b2f3ada-5127-4480-a326-c7384e3986ce)
- Call ID: 6b2f3ada-5127-4480-a326-c7384e3986ce
-  Args:
-    source: Amanda_Patricia_Victoria_Ellingworth
-    relation: :hasAncestor
-    target: Louis_Mountbatten
-  AssignClass (7b04f2eb-af9b-49ce-a231-8eec1e94c823)
- Call ID: 7b04f2eb-af9b-49ce-a231-8eec1e94c823
-  Args:
-    type: :Person
-    source: 7th_Baron_Brabourne
-  AssignClass (b45b6c56-5d05-478f-81fc-93e114d99dbe)
- Call ID: b45b6c56-5d05-478f-81fc-93e114d99dbe
-  Args:
-    type: :Man
-    source: 7th_Baron_Brabourne
-  AssignClass (ea17b2d6-6496-475d-9132-8ed48677c93e)
- Call ID: ea17b2d6-6496-475d-9132-8ed48677c93e
-  Args:
-    type: :Person
-    source: 2nd_Countess_Mountbatten_of_Burma
-  AssignClass (a84e3318-96a1-4f98-ab13-ddaadd5ee92e)
- Call ID: a84e3318-96a1-4f98-ab13-ddaadd5ee92e
-  Args:
+    source: :ElizabethTheQueenMother
     type: :Woman
-    source: 2nd_Countess_Mountbatten_of_Burma
-  AddTriple (1d54eebb-2cec-4d49-b448-bda3f06617d9)
- Call ID: 1d54eebb-2cec-4d49-b448-bda3f06617d9
+  AssignClass (b17562a5-804e-4fca-81fa-33ccc4491728)
+ Call ID: b17562a5-804e-4fca-81fa-33ccc4491728
   Args:
-    relation: :hasFather
-    target: 7th_Baron_Brabourne
-    source: Amanda_Patricia_Victoria_Ellingworth
-  AddTriple (bd3104a0-2f8f-486d-99e8-bb3e248c2d01)
- Call ID: bd3104a0-2f8f-486d-99e8-bb3e248c2d01
-  Args:
-    source: Amanda_Patricia_Victoria_Ellingworth
-    target: 2nd_Countess_Mountbatten_of_Burma
-    relation: :hasMother
-  AssignClass (c6094561-2328-49b5-a157-384f30f805c0)
- Call ID: c6094561-2328-49b5-a157-384f30f805c0
-  Args:
+    source: :ElizabethTheQueenMother
     type: :Person
-    source: Prince_Philip
-  AssignClass (a8832d98-36e7-4b4a-9230-a7254d9ac19a)
- Call ID: a8832d98-36e7-4b4a-9230-a7254d9ac19a
+  AddTriple (6ab24aed-e2f8-4b75-8ebf-77249c4b4950)
+ Call ID: 6ab24aed-e2f8-4b75-8ebf-77249c4b4950
   Args:
-    type: :Man
-    source: Prince_Philip
-  AddTriple (f7673103-cf0b-4550-bebb-856c40e56f28)
- Call ID: f7673103-cf0b-4550-bebb-856c40e56f28
+    relation: :hasSister
+    target: :ElizabethTheQueenMother
+    source: :MichaelClaudeHamiltonBowes-Lyon
+  AssignClass (2a2d87e8-e697-4392-9441-9837fe9f088e)
+ Call ID: 2a2d87e8-e697-4392-9441-9837fe9f088e
   Args:
-    source: Louis_Mountbatten
-    target: Prince_Philip
+    source: :ElizabethII
+    type: :Woman
+  AssignClass (8718e4c7-2060-4ebd-8ef5-81602baafcd6)
+ Call ID: 8718e4c7-2060-4ebd-8ef5-81602baafcd6
+  Args:
+    source: :ElizabethII
+    type: :Person
+  AddTriple (97d59063-fa3f-4a3f-a0f6-07c043345407)
+ Call ID: 97d59063-fa3f-4a3f-a0f6-07c043345407
+  Args:
+    target: :ElizabethII
     relation: :isUncleOf
-  AssignClass (38110819-191e-499c-88b8-f0b5b3b40a07)
- Call ID: 38110819-191e-499c-88b8-f0b5b3b40a07
+    source: :MichaelClaudeHamiltonBowes-Lyon
+  AssignClass (659d3385-93ea-4a68-97e3-6dca25f18c00)
+ Call ID: 659d3385-93ea-4a68-97e3-6dca25f18c00
   Args:
-    type: :Person
-    source: Queen_Elizabeth_II
-  AssignClass (60758844-d6c1-490c-98b0-9d0223222b16)
- Call ID: 60758844-d6c1-490c-98b0-9d0223222b16
-  Args:
-    type: :Woman
-    source: Queen_Elizabeth_II
-  AssignClass (67576f36-aa79-4790-8375-020121e46f91)
- Call ID: 67576f36-aa79-4790-8375-020121e46f91
-  Args:
-    type: :Person
-    source: Queen_Victoria
-  AssignClass (bcf5a016-aa66-4214-8519-e6840110832d)
- Call ID: bcf5a016-aa66-4214-8519-e6840110832d
-  Args:
-    type: :Woman
-    source: Queen_Victoria
-  AssignClass (75a466d3-5fcd-4df2-a2e3-ced180a3b85f)
- Call ID: 75a466d3-5fcd-4df2-a2e3-ced180a3b85f
-  Args:
-    type: :Person
-    source: Princess_Alice
-  AssignClass (8f8a376d-2b10-4389-b997-a751da60e2a6)
- Call ID: 8f8a376d-2b10-4389-b997-a751da60e2a6
-  Args:
-    type: :Woman
-    source: Princess_Alice
-  AddTriple (cc38b292-5cfd-4a61-91be-dcb247a3cf0b)
- Call ID: cc38b292-5cfd-4a61-91be-dcb247a3cf0b
-  Args:
-    relation: :isMotherOf
-    target: Princess_Alice
-    source: Queen_Victoria
-  AddTriple (5fac3f84-cf4e-4fd2-b124-d9245f4a9072)
- Call ID: 5fac3f84-cf4e-4fd2-b124-d9245f4a9072
-  Args:
-    relation: :hasAncestor
-    target: Queen_Victoria
-    source: Amanda_Patricia_Victoria_Ellingworth
-  AddTriple (32bbebfc-d3a9-4963-bd9a-08397a3e64fd)
- Call ID: 32bbebfc-d3a9-4963-bd9a-08397a3e64fd
-  Args:
-    source: Amanda_Patricia_Victoria_Ellingworth
-    relation: :hasAncestor
-    target: Princess_Alice
-  AssignClass (437d7682-de0d-43b6-ac18-f80107b737a8)
- Call ID: 437d7682-de0d-43b6-ac18-f80107b737a8
-  Args:
-    type: :Person
-    source: Charles_Prince_of_Wales
-  AssignClass (c454ea17-4c4d-403f-a744-78bcec082f34)
- Call ID: c454ea17-4c4d-403f-a744-78bcec082f34
-  Args:
+    source: :ClaudeBowesLyon
     type: :Man
-    source: Charles_Prince_of_Wales
-  Finish (4390acf9-b88f-469e-8564-9245ddfda33c)
- Call ID: 4390acf9-b88f-469e-8564-9245ddfda33c
+  AssignClass (2c4d2f19-4f44-4899-87bf-43b9df9f03ff)
+ Call ID: 2c4d2f19-4f44-4899-87bf-43b9df9f03ff
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :ClaudeBowesLyon
+    type: :Person
+  AddTriple (3d8c3ef5-7944-4f9d-9450-a740044892eb)
+ Call ID: 3d8c3ef5-7944-4f9d-9450-a740044892eb
+  Args:
+    source: :MichaelClaudeHamiltonBowes-Lyon
+    relation: :hasFather
+    target: :ClaudeBowesLyon
+  AssignClass (44ad9973-8f00-4139-9511-f63e828aa353)
+ Call ID: 44ad9973-8f00-4139-9511-f63e828aa353
+  Args:
+    source: :ElizabethMargaretCator
+    type: :Woman
+  AssignClass (210b6eae-1f43-4349-9dac-5f6148e68a5c)
+ Call ID: 210b6eae-1f43-4349-9dac-5f6148e68a5c
+  Args:
+    source: :ElizabethMargaretCator
+    type: :Person
+  AddLiteral (d258b2be-f4ca-4376-82c2-9938d7397b83)
+ Call ID: d258b2be-f4ca-4376-82c2-9938d7397b83
+  Args:
+    literal_value: 1928
+    relation: :hasMarriageYear
+    source: :MichaelClaudeHamiltonBowes-Lyon
+    literal_type: xsd:integer
+  AddTriple (22ae2c60-5634-4e52-af75-fffc05a4805b)
+ Call ID: 22ae2c60-5634-4e52-af75-fffc05a4805b
+  Args:
+    source: :MichaelClaudeHamiltonBowes-Lyon
+    relation: :hasRelation
+    target: :ElizabethMargaretCator
+  AssignClass (2686e541-5229-40b1-94be-1c1bfe34878b)
+ Call ID: 2686e541-5229-40b1-94be-1c1bfe34878b
+  Args:
+    source: :JohnCator
+    type: :Man
+  AssignClass (7bb280f7-175d-4285-8c30-6078fa0a8361)
+ Call ID: 7bb280f7-175d-4285-8c30-6078fa0a8361
+  Args:
+    source: :JohnCator
+    type: :Person
+  AddTriple (00eea2fe-2abc-455c-a411-f77e77db4a7e)
+ Call ID: 00eea2fe-2abc-455c-a411-f77e77db4a7e
+  Args:
+    source: :ElizabethMargaretCator
+    relation: :hasFather
+    target: :JohnCator
+  AssignClass (adb59237-f103-405d-8b78-d2d547a4b76c)
+ Call ID: adb59237-f103-405d-8b78-d2d547a4b76c
+  Args:
+    source: :FergusBowesLyon
+    type: :Man
+  AssignClass (8efae548-11f2-4d73-a119-cdd2d75763da)
+ Call ID: 8efae548-11f2-4d73-a119-cdd2d75763da
+  Args:
+    source: :FergusBowesLyon
+    type: :Person
+  AddTriple (646d6a66-5f26-459b-92e4-143f96c809cd)
+ Call ID: 646d6a66-5f26-459b-92e4-143f96c809cd
+  Args:
+    source: :MichaelClaudeHamiltonBowes-Lyon
+    target: :FergusBowesLyon
+    relation: :hasSon
 
 ================================= Tool Message =================================
 
@@ -678,49 +677,46 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Amanda_Patricia_Victoria_Ellingworth a :Person,
-          :Woman ;
-      :formerlyKnownAs "The Honourable Amanda Knatchbull"^^xsd:string ;
-      :hasAncestor data:Louis_Mountbatten,
-          data:Princess_Alice,
-          data:Queen_Victoria ;
-      :hasBirthYear 1957 ;
-      :hasFather data:7th_Baron_Brabourne ;
-      :hasMarriageYear 1987 ;
-      :hasMother data:2nd_Countess_Mountbatten_of_Burma ;
-      :hasRelation data:Charles_Vincent_Ellingworth ;
-      :knownAs "Amanda Patricia Victoria Ellingworth"^^xsd:string .
-
-  data:Charles_Prince_of_Wales a :Man,
-          :Person .
-
-  data:Queen_Elizabeth_II a :Person,
-          :Woman .
-
-  data:2nd_Countess_Mountbatten_of_Burma a :Person,
-          :Woman .
-
-  data:7th_Baron_Brabourne a :Man,
-          :Person .
-
-  data:Charles_Vincent_Ellingworth a :Man,
-          :Person .
-
-  data:Louis_Mountbatten a :Man,
+  data:MichaelClaudeHamiltonBowes-Lyon a :Man,
           :Person ;
-      :isUncleOf data:Prince_Philip .
+      :hasBirthYear 1893 ;
+      :hasDeathYear 1953 ;
+      :hasFather data:ClaudeBowesLyon ;
+      :hasMarriageYear 1928 ;
+      :hasRelation data:ElizabethMargaretCator ;
+      :hasSister data:ElizabethTheQueenMother ;
+      :hasSon data:FergusBowesLyon ;
+      :isUncleOf data:ElizabethII ;
+      :knownAs "Mickie Bowes-Lyon"^^xsd:string .
 
-  data:Prince_Philip a :Man,
+  data:ClaudeBowesLyon a :Man,
           :Person .
 
-  data:Queen_Victoria a :Person,
-          :Woman ;
-      :isMotherOf data:Princess_Alice .
-
-  data:Princess_Alice a :Person,
+  data:ElizabethII a :Person,
           :Woman .
 
+  data:ElizabethMargaretCator a :Person,
+          :Woman ;
+      :hasFather data:JohnCator .
 
+  data:ElizabethTheQueenMother a :Person,
+          :Woman .
+
+  data:FergusBowesLyon a :Man,
+          :Person .
+
+  data:JohnCator a :Man,
+          :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  Finish (b317eaa0-c4e3-451b-bcd9-19ed563d8ba6)
+ Call ID: b317eaa0-c4e3-451b-bcd9-19ed563d8ba6
+  Args:
 
 ================================= Tool Message =================================
 
@@ -730,142 +726,62 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (74e433de-e9b5-4b27-aed1-5e0f88f6c678)
- Call ID: 74e433de-e9b5-4b27-aed1-5e0f88f6c678
+  ValidateShacl (9bdb091f-76de-4d70-9b65-3f9dd8649407)
+ Call ID: 9bdb091f-76de-4d70-9b65-3f9dd8649407
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:16
+Total violations:6
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Louis_Mountbatten is identified as an ancestor of Amanda_Patricia_Victoria_Ellingworth, but it lacks the mandatory class :Ancestor.
+      The person 'ClaudeBowesLyon' assigned as the father of 'MichaelClaudeHamiltonBowes-Lyon' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Mountbatten', class=':Ancestor')
+      AssignClass('ClaudeBowesLyon', ':Ancestor')
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Princess_Alice is identified as an ancestor of Amanda_Patricia_Victoria_Ellingworth, but it lacks the mandatory class :Ancestor.
+      The person 'ClaudeBowesLyon' assigned as the father of 'MichaelClaudeHamiltonBowes-Lyon' is missing the required class ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Alice', class=':Ancestor')
+      AssignClass('ClaudeBowesLyon', ':Man')
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node Queen_Victoria is identified as an ancestor of Amanda_Patricia_Victoria_Ellingworth, but it lacks the mandatory class :Ancestor.
+      The person 'JohnCator' assigned as the father of 'ElizabethMargaretCator' is missing the required class ':Ancestor'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
+      AssignClass('JohnCator', ':Ancestor')
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 7th_Baron_Brabourne is set as the father of Amanda_Patricia_Victoria_Ellingworth, but it does not have the required class :Ancestor.
+      The person 'ClaudeBowesLyon' assigned as the father of 'MichaelClaudeHamiltonBowes-Lyon' is missing the required class ':Man' (redundant confirmation).
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='7th_Baron_Brabourne', class=':Ancestor')
+      AssignClass('ClaudeBowesLyon', ':Man')
 
 
   Violation [5]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 2nd_Countess_Mountbatten_of_Burma is set as the mother of Amanda_Patricia_Victoria_Ellingworth, but it does not have the required class :Ancestor.
+      The person 'JohnCator' assigned as the father of 'ElizabethMargaretCator' is missing the required class ':Man'.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='2nd_Countess_Mountbatten_of_Burma', class=':Ancestor')
+      AssignClass('JohnCator', ':Man')
 
 
   Violation [6]:
-    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
-    LLM-provided explanation of the violation:
-      The node Queen_Victoria is a subject of the :isMotherOf relation but is missing the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
-
-
-  Violation [7]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Louis_Mountbatten is identified as an ancestor of Amanda_Patricia_Victoria_Ellingworth, but it lacks the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Mountbatten', class=':Ancestor')
-
-
-  Violation [8]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Princess_Alice is identified as an ancestor of Amanda_Patricia_Victoria_Ellingworth, but it lacks the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Alice', class=':Ancestor')
-
-
-  Violation [9]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Queen_Victoria is identified as an ancestor of Amanda_Patricia_Victoria_Ellingworth, but it lacks the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
-
-
-  Violation [10]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The node 7th_Baron_Brabourne is set as the father of Amanda_Patricia_Victoria_Ellingworth, but it does not have the required class :Ancestor.
+      The person 'JohnCator' assigned as the father of 'ElizabethMargaretCator' is missing the required class ':Man' (redundant confirmation).
     LLM-provided instruction on how to handle the violation:
-      AssignClass(node='7th_Baron_Brabourne', class=':Ancestor')
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 2nd_Countess_Mountbatten_of_Burma is set as the mother of Amanda_Patricia_Victoria_Ellingworth, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='2nd_Countess_Mountbatten_of_Burma', class=':Ancestor')
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Louis_Mountbatten is identified as an ancestor of Amanda_Patricia_Victoria_Ellingworth, but it lacks the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Louis_Mountbatten', class=':Ancestor')
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Princess_Alice is identified as an ancestor of Amanda_Patricia_Victoria_Ellingworth, but it lacks the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Princess_Alice', class=':Ancestor')
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The node Queen_Victoria is identified as an ancestor of Amanda_Patricia_Victoria_Ellingworth, but it lacks the mandatory class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='Queen_Victoria', class=':Ancestor')
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The node 7th_Baron_Brabourne is set as the father of Amanda_Patricia_Victoria_Ellingworth, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='7th_Baron_Brabourne', class=':Ancestor')
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 2nd_Countess_Mountbatten_of_Burma is set as the mother of Amanda_Patricia_Victoria_Ellingworth, but it does not have the required class :Ancestor.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(node='2nd_Countess_Mountbatten_of_Burma', class=':Ancestor')
+      AssignClass('JohnCator', ':Man')
 
 
 
@@ -874,46 +790,16 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (d43e4d78-6300-4da7-9e21-39bbf2868140)
- Call ID: d43e4d78-6300-4da7-9e21-39bbf2868140
+  AssignClass (8c45d75c-4fbc-4523-b46a-ca7520c43fe2)
+ Call ID: 8c45d75c-4fbc-4523-b46a-ca7520c43fe2
   Args:
     type: :Ancestor
-    source: Louis_Mountbatten
-  AssignClass (2c82ed45-72ef-4912-9f92-ba6877aa464c)
- Call ID: 2c82ed45-72ef-4912-9f92-ba6877aa464c
-  Args:
-    source: Princess_Alice
-    type: :Ancestor
-  AssignClass (dd1a4280-3b04-4e23-90c1-4889c4a56ff8)
- Call ID: dd1a4280-3b04-4e23-90c1-4889c4a56ff8
-  Args:
-    source: Queen_Victoria
-    type: :Ancestor
-  AssignClass (83dbd061-bf39-4e5a-a1c7-c1b40e07c61e)
- Call ID: 83dbd061-bf39-4e5a-a1c7-c1b40e07c61e
+    source: :ClaudeBowesLyon
+  AssignClass (21ec9c58-c310-4a58-bccf-70d822574783)
+ Call ID: 21ec9c58-c310-4a58-bccf-70d822574783
   Args:
     type: :Ancestor
-    source: 7th_Baron_Brabourne
-  AssignClass (10c28fc3-27c8-4616-a6ca-0039a52f5917)
- Call ID: 10c28fc3-27c8-4616-a6ca-0039a52f5917
-  Args:
-    type: :Ancestor
-    source: 2nd_Countess_Mountbatten_of_Burma
-  ValidateShacl (c01162a1-0abb-400a-adcb-cdfec7f8a454)
- Call ID: c01162a1-0abb-400a-adcb-cdfec7f8a454
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    source: :JohnCator
 
 ================================= Tool Message =================================
 
@@ -926,54 +812,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Amanda_Patricia_Victoria_Ellingworth a :Person,
-          :Woman ;
-      :formerlyKnownAs "The Honourable Amanda Knatchbull"^^xsd:string ;
-      :hasAncestor data:Louis_Mountbatten,
-          data:Princess_Alice,
-          data:Queen_Victoria ;
-      :hasBirthYear 1957 ;
-      :hasFather data:7th_Baron_Brabourne ;
-      :hasMarriageYear 1987 ;
-      :hasMother data:2nd_Countess_Mountbatten_of_Burma ;
-      :hasRelation data:Charles_Vincent_Ellingworth ;
-      :knownAs "Amanda Patricia Victoria Ellingworth"^^xsd:string .
-
-  data:Charles_Prince_of_Wales a :Man,
-          :Person .
-
-  data:Queen_Elizabeth_II a :Person,
-          :Woman .
-
-  data:2nd_Countess_Mountbatten_of_Burma a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:7th_Baron_Brabourne a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Charles_Vincent_Ellingworth a :Man,
-          :Person .
-
-  data:Louis_Mountbatten a :Ancestor,
-          :Man,
+  data:MichaelClaudeHamiltonBowes-Lyon a :Man,
           :Person ;
-      :isUncleOf data:Prince_Philip .
+      :hasBirthYear 1893 ;
+      :hasDeathYear 1953 ;
+      :hasFather data:ClaudeBowesLyon ;
+      :hasMarriageYear 1928 ;
+      :hasRelation data:ElizabethMargaretCator ;
+      :hasSister data:ElizabethTheQueenMother ;
+      :hasSon data:FergusBowesLyon ;
+      :isUncleOf data:ElizabethII ;
+      :knownAs "Mickie Bowes-Lyon"^^xsd:string .
 
-  data:Prince_Philip a :Man,
+  data:ClaudeBowesLyon a :Ancestor,
+          :Man,
           :Person .
 
-  data:Queen_Victoria a :Ancestor,
-          :Person,
-          :Woman ;
-      :isMotherOf data:Princess_Alice .
-
-  data:Princess_Alice a :Ancestor,
-          :Person,
+  data:ElizabethII a :Person,
           :Woman .
 
+  data:ElizabethMargaretCator a :Person,
+          :Woman ;
+      :hasFather data:JohnCator .
 
+  data:ElizabethTheQueenMother a :Person,
+          :Woman .
+
+  data:FergusBowesLyon a :Man,
+          :Person .
+
+  data:JohnCator a :Ancestor,
+          :Man,
+          :Person .
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (f42c16d3-2610-4f1d-a81d-722663d8bfa0)
+ Call ID: f42c16d3-2610-4f1d-a81d-722663d8bfa0
+  Args:
 
 ================================= Tool Message =================================
 
@@ -983,6 +863,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (c3fbf46a-43fc-4d2c-b439-34e8037d1935)
- Call ID: c3fbf46a-43fc-4d2c-b439-34e8037d1935
+  Finish (0cce4073-59c2-45d3-9e15-a152433af84c)
+ Call ID: 0cce4073-59c2-45d3-9e15-a152433af84c
   Args:

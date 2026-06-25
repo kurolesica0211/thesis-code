@@ -1,0 +1,92 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Princess_Béatrice_of_the_Two_Sicilies a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Béatrice of the Two Sicilies"^^xsd:string ;
+    data:posIndicesFull "474:515"^^xsd:string ;
+    data:posIndicesPart "1015:1023"^^xsd:string,
+        "689:692"^^xsd:string ;
+    data:wdtLink wdt:Q4925346 ;
+    :alsoKnownAs "Béatrice Marie Caroline Louise Françoise de Bourbon"^^xsd:string,
+        "Princess Beatrice of Bourbon-Two Sicilies"^^xsd:string,
+        "Princess Beatrice of the Two Sicilies"^^xsd:string ;
+    :hasChild data:Jean-Christophe-_Prince_Napoléon ;
+    :hasRelation data:Jean-Christophe-_Prince_Napoléon,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasSon data:Jean-Christophe-_Prince_Napoléon ;
+    :isAncestorOf data:Jean-Christophe-_Prince_Napoléon ;
+    :isAuntOf data:Jean-Christophe-_Prince_Napoléon ;
+    :isBloodrelationOf data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isMotherOf data:Jean-Christophe-_Prince_Napoléon ;
+    :isParentOf data:Jean-Christophe-_Prince_Napoléon ;
+    :isSiblingOf data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isSisterOf data:Princess_Béatrice_of_the_Two_Sicilies .
+
+data:Jean-Christophe-_Prince_Napoléon a :Man,
+        :Person ;
+    rdfs:label "Jean-Christophe, Prince Napoléon"^^xsd:string ;
+    data:posIndicesFull "32:64"^^xsd:string,
+        "91:149"^^xsd:string ;
+    data:posIndicesPart "1099:1105"^^xsd:string,
+        "1362:1368"^^xsd:string,
+        "1369:1377"^^xsd:string,
+        "1459:1465"^^xsd:string,
+        "1466:1474"^^xsd:string,
+        "1476:1480"^^xsd:string,
+        "1481:1491"^^xsd:string,
+        "1514:1520"^^xsd:string,
+        "1521:1529"^^xsd:string,
+        "1611:1615"^^xsd:string,
+        "1616:1626"^^xsd:string,
+        "1843:1847"^^xsd:string,
+        "1848:1858"^^xsd:string,
+        "1991:1995"^^xsd:string,
+        "1996:2006"^^xsd:string,
+        "2151:2155"^^xsd:string,
+        "2156:2166"^^xsd:string,
+        "2193:2199"^^xsd:string,
+        "2242:2250"^^xsd:string,
+        "341:345"^^xsd:string,
+        "346:356"^^xsd:string,
+        "439:445"^^xsd:string,
+        "446:454"^^xsd:string,
+        "538:544"^^xsd:string,
+        "727:731"^^xsd:string,
+        "732:742"^^xsd:string ;
+    data:wdtLink wdt:Q620337 ;
+    :alsoKnownAs "Jean-Christophe Louis Ferdinand Alberic Bonaparte, Prince Napoléon"^^xsd:string,
+        "Jean-Christophe Louis Ferdinand Albéric Napoléon Bonaparte"^^xsd:string,
+        "Jean-Christophe Napoléon"^^xsd:string ;
+    :hasAncestor data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasBrother data:Jean-Christophe-_Prince_Napoléon ;
+    :hasMother data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasParent data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasRelation data:Jean-Christophe-_Prince_Napoléon,
+        data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Jean-Christophe-_Prince_Napoléon ;
+    :isBrotherOf data:Jean-Christophe-_Prince_Napoléon ;
+    :isChildOf data:Princess_Béatrice_of_the_Two_Sicilies ;
+    :isSiblingOf data:Jean-Christophe-_Prince_Napoléon ;
+    :isSonOf data:Princess_Béatrice_of_the_Two_Sicilies .
+

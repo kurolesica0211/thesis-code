@@ -2,53 +2,39 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Princess_Christina_of_the_Netherlands a :Person,
+data:Nancy_Helen_Marie_Leeds a :Person,
         :Woman ;
-    :hasBirthYear 1947 ;
-    :hasDeathYear 2019 ;
-    :hasFather data:Prince_Bernhard_of_Lippe-Biesterfeld ;
-    :hasMother data:Queen_Juliana_of_the_Netherlands ;
-    :hasRelation data:Jorge_Guillermo,
-        data:Prince_Bernhard_Jr ;
-    :isSisterOf data:Princess_Beatrix,
-        data:Princess_Irene,
-        data:Princess_Margriet ;
-    :knownAs "Princess Marijke"^^xsd:string .
+    :isDaughterOf data:William_Bateman_Leeds_Jr,
+        data:Xenia_Georgievna .
 
-data:Jorge_Guillermo a :Man,
+data:Nina_Georgievna a :Person,
+        :Woman ;
+    :isDaughterOf data:George_Mihailovich,
+        data:Maria_Georgievna ;
+    :isSisterOf data:Xenia_Georgievna .
+
+data:Herman_Jud a :Man,
         :Person .
 
-data:Prince_Bernhard_Jr a :Man,
-        :Person .
-
-data:Prince_Bernhard_of_Lippe-Biesterfeld a :Ancestor,
+data:George_Mihailovich a :Ancestor,
         :Man,
-        :Person ;
-    :hasMother data:Princess_Armgard_of_Lippe-Biesterfeld .
-
-data:Prince_Carlos_Hugo_of_Bourbon-Parma a :Man,
         :Person .
 
-data:Princess_Armgard_of_Lippe-Biesterfeld a :Ancestor,
+data:Maria_Georgievna a :Ancestor,
         :Person,
         :Woman .
 
-data:Princess_Beatrix a :Person,
-        :Woman .
+data:William_Bateman_Leeds_Jr a :Ancestor,
+        :Man,
+        :Person .
 
-data:Princess_Irene a :Person,
-        :Woman ;
-    :hasRelation data:Prince_Carlos_Hugo_of_Bourbon-Parma .
-
-data:Princess_Margriet a :Person,
-        :Woman .
-
-data:Queen_Juliana_of_the_Netherlands a :Ancestor,
+data:Xenia_Georgievna a :Ancestor,
         :Person,
         :Woman ;
-    :hasMother data:Queen_Wilhelmina_of_the_Netherlands .
-
-data:Queen_Wilhelmina_of_the_Netherlands a :Ancestor,
-        :Person,
-        :Woman .
+    :hasBirthYear 1903 ;
+    :hasDeathYear 1965 ;
+    :hasRelation data:Herman_Jud,
+        data:William_Bateman_Leeds_Jr ;
+    :isDaughterOf data:George_Mihailovich,
+        data:Maria_Georgievna .
 

@@ -69,44 +69,21 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Urraca of Bourbon-Two Sicilies (Italian: Urraca Maria Isabella Carolina Aldegonda Carmela, Principessa di Borbone delle
-Due Sicilie; 14 July 1913, Nymphenburg Palace, Munich, Kingdom of Bavaria – 3 May 1999, Sigmaringen, Baden-Württemberg, Germany) was a member of the House of Bourbon-Two Sicilies and a Princess of Bourbon-Two Sicilies.
-Early life and family
+Timothy Patrick Bowes-Lyon, 16th and 3rd Earl of Strathmore and Kinghorne (18 March 1918 – 13 September 1972),  was a British nobleman and peer.
+He was a nephew of Queen Elizabeth the Queen Mother, wife of King George VI, thus a first cousin of Queen Elizabeth II and Princess Margaret.
+Biography
 
-Princess Urraca of Bourbon-Two Sicilies was born on 14 July 1913, at Nymphenburg Palace in Munich, Kingdom of Bavaria.
-She was the sixth and youngest child of Prince Ferdinand Pius of Bourbon-Two Sicilies, Duke of Castro (1869–1960) and his wife Princess Maria Ludwiga Theresia of Bavaria (1872–1954).
-Ferdinand Pius was the Head of the House of Bourbon-Two Sicilies and pretender to the defunct throne of the Kingdom of the Two Sicilies from 26 May 1934 to 7 January 1960.
-Urraca had five older siblings, four sisters and one brother: Princess Maria Antonietta (1898–1957), Princess Maria Cristina (1899–1985), Prince Ruggiero Maria, Duke of Noto (1901–1914), Princess Barbara Maria (1902–1927), and Princess Lucia (1908–2001).
-Through her father, Urraca was a granddaughter of Prince Alfonso of Bourbon-Two Sicilies, Count of Caserta (1841–1934) and his wife Princess Maria Antonietta of Bourbon-Two Sicilies (1851–1938).
-Urraca was descended from King Francis I of the Two Sicilies (1777–1830) through her paternal great-grandfathers, King Ferdinand II of the Two Sicilies (1810–1859) and Prince Francis of Bourbon-Two Sicilies, Count of Trapani (1827–1892).
-Through her mother, she was a granddaughter of King Ludwig III of Bavaria (1845– 1921) and his wife Archduchess Maria Theresa of Austria-Este (1849–1919).
-Urraca chose not to celebrate her birthday, stating: "How can a Bourbon celebrate on the day of the Bastille's taking?
-"
-
-
-Adult life
-
-As the daughter of the heir-apparent, then head of the House of Bourbon-Two Sicilies, Urraca regularly represented her family at royal and aristocratic functions and charitable events.
-She attended the funeral of her great-uncle Prince Leopold of Bavaria on 3 October 1930, at St. Michael's Church in Munich.
-Urraca, her mother, and her sister Lucia attended an afternoon dance tea at the Hotel Vier Jahreszeiten and the Hungarian Aid Association's Hungarian Ball in Munich in January 1934.
-On 16 April 1936, Urraca attended the wedding of her first cousin Infante Alfonso of Spain, Prince of Bourbon-Two Sicilies to Princess Alicia of Bourbon-Parma at the Minoritenkirche in Vienna.
-She was a guest of honor at the Austrian Armed Forces' Spring Parade in April 1936, along with Alfonso XIII of Spain, Princess Maria Anna of Bourbon-Parma, and Prince Elias of Bourbon-Parma.
-Urraca attended the Baltic Red Cross Ball and the ball of Countess Adelheid Arco-Valley in the Cherubinsälen of the Hotel Vier Jahreszeiten in February 1938.
-On 23 October 1957, she attended the wedding of her first cousin Princess Marie Gabrielle of Bavaria and Georg, Prince of Waldburg zu Zeil und Trauchburg in Munich.
-On the night of 10 January 1957, Urraca was driving her eldest sister Maria Antonietta to her home in Lindau, Germany, when their automobile collided with a truck that had skid on ice near Winterthur, Switzerland.
-Maria Antonietta was killed in the accident and Urraca was seriously injured.
-Urraca was also an active supporter of Duosicilian historical societies and other royalty and nobility organizations.
-Her first cousin once removed and claimant to the Duosicilian throne, Infante Carlos, Duke of Calabria, was also in attendance.
-In February 1994, Urraca traveled to Gaeta where she participated in a tribute to the centenary of the death of Francis II, King of the Two Sicilies and an observation of the 133rd anniversary of the conclusion of the Siege of Gaeta which marked the victory of the Kingdom of Sardinia over Two Sicilies.
-Death
-
-Urraca died on 3 May 1999, in Sigmaringen, Baden-Württemberg, Germany.
+Born on 18 March 1918 in Teesdale, County Durham, he was the second son and third child of Patrick, Lord Glamis, and Lady Dorothy Osborne (1888–1946).
+His father's youngest sister was the future Queen Elizabeth the Queen Mother.
+He had no sons, so was succeeded by his first cousin, Captain Fergus Bowes-Lyon.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -122,39 +99,9 @@ Urraca died on 3 May 1999, in Sigmaringen, Baden-Württemberg, Germany.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -169,6 +116,23 @@ Urraca died on 3 May 1999, in Sigmaringen, Baden-Württemberg, Germany.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -186,6 +150,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -253,29 +232,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -284,6 +255,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -296,6 +275,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -304,17 +285,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -342,6 +325,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -357,206 +424,77 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8a4c875c-7abd-4a57-83ae-570e19c253aa)
- Call ID: 8a4c875c-7abd-4a57-83ae-570e19c253aa
+  AssignClass (a6b9f8a5-ecea-4b62-ba96-7a43d4ac2da6)
+ Call ID: a6b9f8a5-ecea-4b62-ba96-7a43d4ac2da6
   Args:
-    type: :Person
-    source: :Urraca_of_Bourbon-Two_Sicilies
-  AssignClass (d32f8098-a195-4074-8b07-cad3c1b1b965)
- Call ID: d32f8098-a195-4074-8b07-cad3c1b1b965
+    source: Timothy_Patrick_Bowes-Lyon
+    type: :Man
+  AssignClass (3962d087-861b-4bdc-9798-e48cef677445)
+ Call ID: 3962d087-861b-4bdc-9798-e48cef677445
   Args:
-    source: :Urraca_of_Bourbon-Two_Sicilies
+    source: Patrick_Lord_Glamis
+    type: :Man
+  AssignClass (e12c8c64-16e6-4a1d-8634-50b4df563f8d)
+ Call ID: e12c8c64-16e6-4a1d-8634-50b4df563f8d
+  Args:
     type: :Woman
-  AddLiteral (0be36444-f818-4c15-a2b9-85481a5e2543)
- Call ID: 0be36444-f818-4c15-a2b9-85481a5e2543
+    source: Lady_Dorothy_Osborne
+  AssignClass (37400d8c-86ef-455b-9070-29fc1a2098f0)
+ Call ID: 37400d8c-86ef-455b-9070-29fc1a2098f0
   Args:
-    source: :Urraca_of_Bourbon-Two_Sicilies
-    literal_type: xsd:integer
+    source: Queen_Elizabeth_the_Queen_Mother
+    type: :Woman
+  AssignClass (33fcbd5c-6317-412c-a33e-1e8a73a0adff)
+ Call ID: 33fcbd5c-6317-412c-a33e-1e8a73a0adff
+  Args:
+    source: Captain_Fergus_Bowes-Lyon
+    type: :Man
+  AddLiteral (444b7f02-acef-4a13-bbb0-f50482004091)
+ Call ID: 444b7f02-acef-4a13-bbb0-f50482004091
+  Args:
+    source: Timothy_Patrick_Bowes-Lyon
     relation: :hasBirthYear
-    literal_value: 1913
-  AddLiteral (2e4555ee-de99-4479-9dce-121d94456ee0)
- Call ID: 2e4555ee-de99-4479-9dce-121d94456ee0
+    literal_type: xsd:integer
+    literal_value: 1918
+  AddLiteral (d4e5624f-3269-43f8-a8aa-1d0da2d79865)
+ Call ID: d4e5624f-3269-43f8-a8aa-1d0da2d79865
   Args:
-    source: :Urraca_of_Bourbon-Two_Sicilies
     literal_type: xsd:integer
     relation: :hasDeathYear
-    literal_value: 1999
-  AssignClass (6188a377-3970-45a9-857b-cd2d6b643c22)
- Call ID: 6188a377-3970-45a9-857b-cd2d6b643c22
+    source: Timothy_Patrick_Bowes-Lyon
+    literal_value: 1972
+  AddLiteral (9b41ed7c-952e-4423-ba6a-7a2acc18d05a)
+ Call ID: 9b41ed7c-952e-4423-ba6a-7a2acc18d05a
   Args:
-    source: :Ferdinand_Pius_of_Bourbon-Two_Sicilies
-    type: :Person
-  AssignClass (0a130d56-62f9-4677-b22a-13132089b7dd)
- Call ID: 0a130d56-62f9-4677-b22a-13132089b7dd
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Lady_Dorothy_Osborne
+    literal_value: 1888
+  AddLiteral (c8564443-f018-492c-90e5-8249279a0b08)
+ Call ID: c8564443-f018-492c-90e5-8249279a0b08
   Args:
-    type: :Man
-    source: :Ferdinand_Pius_of_Bourbon-Two_Sicilies
-  AssignClass (9f11a096-ae04-4572-9bdc-34ee6f5b0793)
- Call ID: 9f11a096-ae04-4572-9bdc-34ee6f5b0793
+    source: Lady_Dorothy_Osborne
+    relation: :hasDeathYear
+    literal_type: xsd:integer
+    literal_value: 1946
+  AddTriple (111c4e68-8b30-4a3a-a6f9-2923ee6dfa08)
+ Call ID: 111c4e68-8b30-4a3a-a6f9-2923ee6dfa08
   Args:
-    source: :Maria_Ludwiga_Theresia_of_Bavaria
-    type: :Person
-  AssignClass (ab8850ad-1856-46d9-bf76-ddf4fceba6a9)
- Call ID: ab8850ad-1856-46d9-bf76-ddf4fceba6a9
-  Args:
-    type: :Woman
-    source: :Maria_Ludwiga_Theresia_of_Bavaria
-  AddTriple (d2adadd8-bd82-42e6-8bb6-6d398c5815db)
- Call ID: d2adadd8-bd82-42e6-8bb6-6d398c5815db
-  Args:
-    target: :Ferdinand_Pius_of_Bourbon-Two_Sicilies
-    source: :Urraca_of_Bourbon-Two_Sicilies
+    target: Patrick_Lord_Glamis
+    source: Timothy_Patrick_Bowes-Lyon
     relation: :hasFather
-  AddTriple (f8abc2ee-443b-4944-b5f9-84ee3d7f3e27)
- Call ID: f8abc2ee-443b-4944-b5f9-84ee3d7f3e27
+  AddTriple (d0769e3c-b5b6-410a-9d2e-d8b3eebdcb4b)
+ Call ID: d0769e3c-b5b6-410a-9d2e-d8b3eebdcb4b
   Args:
+    target: Lady_Dorothy_Osborne
     relation: :hasMother
-    source: :Urraca_of_Bourbon-Two_Sicilies
-    target: :Maria_Ludwiga_Theresia_of_Bavaria
-  AssignClass (9180dba3-3cd6-4f86-bdaf-8433d5fb6a91)
- Call ID: 9180dba3-3cd6-4f86-bdaf-8433d5fb6a91
+    source: Timothy_Patrick_Bowes-Lyon
+  AddTriple (4070521a-72c8-4f31-a9f2-0b68adb66b68)
+ Call ID: 4070521a-72c8-4f31-a9f2-0b68adb66b68
   Args:
-    type: :Person
-    source: :Maria_Antonietta_of_Bourbon-Two_Sicilies
-  AssignClass (5481ae4f-f32e-4187-bd97-6b7b3369e9e6)
- Call ID: 5481ae4f-f32e-4187-bd97-6b7b3369e9e6
-  Args:
-    source: :Maria_Antonietta_of_Bourbon-Two_Sicilies
-    type: :Woman
-  AssignClass (7af18917-c0ea-4e7e-8160-c919f95da563)
- Call ID: 7af18917-c0ea-4e7e-8160-c919f95da563
-  Args:
-    type: :Person
-    source: :Maria_Cristina_of_Bourbon-Two_Sicilies
-  AssignClass (88e7481c-670a-4b97-af9f-ad07c3dc5d3c)
- Call ID: 88e7481c-670a-4b97-af9f-ad07c3dc5d3c
-  Args:
-    type: :Woman
-    source: :Maria_Cristina_of_Bourbon-Two_Sicilies
-  AssignClass (4fbdb25b-9125-4aa4-81d1-197cc58e7b58)
- Call ID: 4fbdb25b-9125-4aa4-81d1-197cc58e7b58
-  Args:
-    source: :Ruggiero_Maria_of_Bourbon-Two_Sicilies
-    type: :Person
-  AssignClass (ce0b23fa-75c3-41c6-86d2-e17b7fe06865)
- Call ID: ce0b23fa-75c3-41c6-86d2-e17b7fe06865
-  Args:
-    source: :Ruggiero_Maria_of_Bourbon-Two_Sicilies
-    type: :Man
-  AssignClass (6f1bb285-b7fb-43bd-957d-f7f0d2428f9f)
- Call ID: 6f1bb285-b7fb-43bd-957d-f7f0d2428f9f
-  Args:
-    type: :Person
-    source: :Barbara_Maria_of_Bourbon-Two_Sicilies
-  AssignClass (068b5e5d-e974-46f6-8c5f-7d3d2b0c599d)
- Call ID: 068b5e5d-e974-46f6-8c5f-7d3d2b0c599d
-  Args:
-    type: :Woman
-    source: :Barbara_Maria_of_Bourbon-Two_Sicilies
-  AssignClass (73928c5a-2808-4ec5-911c-105128126de1)
- Call ID: 73928c5a-2808-4ec5-911c-105128126de1
-  Args:
-    type: :Person
-    source: :Lucia_of_Bourbon-Two_Sicilies
-  AssignClass (98fb9cfc-dbee-419a-a39a-70267892db9d)
- Call ID: 98fb9cfc-dbee-419a-a39a-70267892db9d
-  Args:
-    type: :Woman
-    source: :Lucia_of_Bourbon-Two_Sicilies
-  AddTriple (bba83654-31cd-4430-a73a-33ab4965f233)
- Call ID: bba83654-31cd-4430-a73a-33ab4965f233
-  Args:
-    target: :Maria_Antonietta_of_Bourbon-Two_Sicilies
-    source: :Urraca_of_Bourbon-Two_Sicilies
-    relation: :isSiblingOf
-  AddTriple (bdb45e91-190a-4ab8-b984-0cbd879e90ca)
- Call ID: bdb45e91-190a-4ab8-b984-0cbd879e90ca
-  Args:
-    relation: :isSiblingOf
-    target: :Maria_Cristina_of_Bourbon-Two_Sicilies
-    source: :Urraca_of_Bourbon-Two_Sicilies
-  AddTriple (dc2ea984-4aa5-4a45-a109-b5d3a4f21fc8)
- Call ID: dc2ea984-4aa5-4a45-a109-b5d3a4f21fc8
-  Args:
-    relation: :isSiblingOf
-    source: :Urraca_of_Bourbon-Two_Sicilies
-    target: :Ruggiero_Maria_of_Bourbon-Two_Sicilies
-  AddTriple (9e22193a-6850-40e3-9aae-04cdb006cfa6)
- Call ID: 9e22193a-6850-40e3-9aae-04cdb006cfa6
-  Args:
-    relation: :isSiblingOf
-    source: :Urraca_of_Bourbon-Two_Sicilies
-    target: :Barbara_Maria_of_Bourbon-Two_Sicilies
-  AddTriple (fd1723b7-b48d-4dbf-97ca-a6c87572bea0)
- Call ID: fd1723b7-b48d-4dbf-97ca-a6c87572bea0
-  Args:
-    target: :Lucia_of_Bourbon-Two_Sicilies
-    source: :Urraca_of_Bourbon-Two_Sicilies
-    relation: :isSiblingOf
-  AssignClass (1c3feb45-161c-4e52-968e-5e08284656d8)
- Call ID: 1c3feb45-161c-4e52-968e-5e08284656d8
-  Args:
-    source: :Alfonso_of_Bourbon-Two_Sicilies
-    type: :Person
-  AssignClass (73f82651-74a5-4b1f-a7bf-922dc104b620)
- Call ID: 73f82651-74a5-4b1f-a7bf-922dc104b620
-  Args:
-    type: :Man
-    source: :Alfonso_of_Bourbon-Two_Sicilies
-  AssignClass (e664935f-13af-4b44-9937-428f98f57ad5)
- Call ID: e664935f-13af-4b44-9937-428f98f57ad5
-  Args:
-    type: :Person
-    source: :Maria_Antonietta_of_Bourbon-Two_Sicilies_1851
-  AssignClass (988c4be1-941c-4ec4-bae5-e3c36734138b)
- Call ID: 988c4be1-941c-4ec4-bae5-e3c36734138b
-  Args:
-    source: :Maria_Antonietta_of_Bourbon-Two_Sicilies_1851
-    type: :Woman
-  AddTriple (d53aed8f-642e-45ee-8f28-796014eef115)
- Call ID: d53aed8f-642e-45ee-8f28-796014eef115
-  Args:
-    source: :Ferdinand_Pius_of_Bourbon-Two_Sicilies
-    target: :Alfonso_of_Bourbon-Two_Sicilies
-    relation: :hasFather
-  AddTriple (788418b0-4141-4e13-a87a-6880852b2f84)
- Call ID: 788418b0-4141-4e13-a87a-6880852b2f84
-  Args:
-    relation: :hasMother
-    target: :Maria_Antonietta_of_Bourbon-Two_Sicilies_1851
-    source: :Ferdinand_Pius_of_Bourbon-Two_Sicilies
-  AssignClass (9aed7f0d-cc64-41f8-a347-fa06ec62d5ed)
- Call ID: 9aed7f0d-cc64-41f8-a347-fa06ec62d5ed
-  Args:
-    source: :Ludwig_III_of_Bavaria
-    type: :Person
-  AssignClass (7ef86031-8d2f-498e-80cd-0b3965425634)
- Call ID: 7ef86031-8d2f-498e-80cd-0b3965425634
-  Args:
-    type: :Man
-    source: :Ludwig_III_of_Bavaria
-  AssignClass (a391f790-9266-49c5-8c58-680c7b5b5b9b)
- Call ID: a391f790-9266-49c5-8c58-680c7b5b5b9b
-  Args:
-    source: :Maria_Theresa_of_Austria-Este
-    type: :Person
-  AssignClass (0ceb122d-4b5c-4923-b8ef-b89c970869d8)
- Call ID: 0ceb122d-4b5c-4923-b8ef-b89c970869d8
-  Args:
-    source: :Maria_Theresa_of_Austria-Este
-    type: :Woman
-  AddTriple (ee03a040-38ac-4898-937e-f136dcb5fb69)
- Call ID: ee03a040-38ac-4898-937e-f136dcb5fb69
-  Args:
-    target: :Ludwig_III_of_Bavaria
-    source: :Maria_Ludwiga_Theresia_of_Bavaria
-    relation: :hasFather
-  AddTriple (9a47394c-14ad-4711-9d23-29e763ac9077)
- Call ID: 9a47394c-14ad-4711-9d23-29e763ac9077
-  Args:
-    target: :Maria_Theresa_of_Austria-Este
-    source: :Maria_Ludwiga_Theresia_of_Bavaria
-    relation: :hasMother
-  Finish (9bb9da41-691e-48e9-9cc3-e4ca19fc3fd1)
- Call ID: 9bb9da41-691e-48e9-9cc3-e4ca19fc3fd1
+    relation: :hasSister
+    source: Patrick_Lord_Glamis
+    target: Queen_Elizabeth_the_Queen_Mother
+  Finish (52da573e-b7f6-4361-b2f2-db37b0680a75)
+ Call ID: 52da573e-b7f6-4361-b2f2-db37b0680a75
   Args:

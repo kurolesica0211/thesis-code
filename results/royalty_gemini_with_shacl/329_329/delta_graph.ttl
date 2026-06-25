@@ -2,35 +2,32 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:King_Charles_III a :Man,
-        :Person .
+data:Elena a :Woman ;
+    :hasBirthYear 1963 ;
+    :hasBrother data:Felipe_VI ;
+    :hasChild data:Felipe_de_Marichalar,
+        data:Victoria_de_Marichalar ;
+    :hasFather data:Juan_Carlos_I ;
+    :hasMother data:Sofia ;
+    :hasSister data:Cristina .
 
-data:James_Alexander_Philip_Theo_Mountbatten-Windsor a :Man,
-        :Person ;
-    :hasBirthYear 2007 ;
-    :hasFather data:Prince_Edward_Duke_of_Edinburgh ;
-    :hasMother data:Sophie_Duchess_of_Edinburgh ;
-    :hasSister data:Louise .
+data:Jaime_de_Marichalar a :Man ;
+    :hasChild data:Felipe_de_Marichalar,
+        data:Victoria_de_Marichalar .
 
-data:Louise a :Person,
-        :Woman ;
-    :isSisterOf data:James_Alexander_Philip_Theo_Mountbatten-Windsor .
+data:Cristina a :Woman .
 
-data:Prince_Edward_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Prince_Philip_Duke_of_Edinburgh ;
-    :hasMother data:Queen_Elizabeth_II .
+data:Felipe_VI a :Man .
 
-data:Prince_Philip_Duke_of_Edinburgh a :Ancestor,
-        :Man,
-        :Person .
+data:Juan_Carlos_I a :Ancestor,
+        :Man .
 
-data:Queen_Elizabeth_II a :Ancestor,
-        :Person,
+data:Sofia a :Ancestor,
         :Woman .
 
-data:Sophie_Duchess_of_Edinburgh a :Ancestor,
-        :Person,
-        :Woman .
+data:Felipe_de_Marichalar a :Man ;
+    :hasBirthYear 1998 .
+
+data:Victoria_de_Marichalar a :Woman ;
+    :hasBirthYear 2000 .
 

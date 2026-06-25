@@ -69,47 +69,28 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Princess Christina Margarethe of Hesse (German: Christina Margarethe Prinzessin von Hessen; 10 January 1933 – 22 November 2011) was a German princess.
-A first cousin of King Charles III of the United Kingdom, she was the wife, from 1956 to 1962, of Prince Andrew of Yugoslavia, a son of Alexander I of Yugoslavia.
-Family background and early life
+Prince Bernhard of Lippe (Bernhard Kasimir Wilhelm Friedrich Gustav Heinrich Eduard; 26 August 1872 – 19 June 1934) was a member of the Lippe-Biesterfeld line of the House of Lippe.
+He was the father of Prince Bernhard of Lippe-Biesterfeld, the prince consort of Queen Juliana of the Netherlands.
+Biography
 
-Born in Germany on 10 January 1933 at Friedrichshof Castle near Kronberg im Taunus, Princess Christina ("Krista") of Hesse was the eldest child of Prince Christoph of Hesse (1901–1943) and Princess Sophie of Greece and Denmark (1914–2001)
-Her father, Prince Christoph of Hesse, was a nephew of Germany's last emperor Wilhelm II.
-Her mother, Princess Sophie of Greece and Denmark, was a grand-daughter of King George I of Greece and a sister of Prince Philip, Duke of Edinburgh.
-Christina belonged by birth to the senior line of the House of Hesse, a junior branch of which reigned as grand dukes of Hesse and by Rhine within the German Empire until 1918.
-Christina's paternal grandmother, Princess Margaret of Prussia, was a daughter of Queen Victoria's eldest daughter Victoria, and as such a sister of Kaiser Wilhelm II.
-
-
-Prince Christoph, a member of the Schutzstaffel (SS), held important positions in Germany's Nazi regime.
-On 7 October 1943, when Christina was ten years old, her father was killed in an airplane crash in the Apennine Mountains near Forlì, Italy.
-His widow married Prince George William of Hanover in 1946.
-From her mother's two marriages, Christina had four siblings and three half-siblings: Princess Dorothea of Hesse (1934–2025), Prince Karl of Hesse (1937–2022), Prince Rainer of Hesse (born 1939), Princess Clarissa of Hesse (born 1944), Prince Welf of Hanover (1947–1981), Prince Georg of Hanover (born 1949) and Princess Friederike of Hanover (born 1954).
-Her childhood homes included her paternal grandmother's palace of Friedrichshof in Taunus, a family castle at Panker in Holstein, and her parents' residence in Berlin-Dahlem.
-Christina participated in the 1953 coronation of her aunt at Westminster Abbey, walking in the procession led by her maternal grandmother, Princess Alice.
-Christina and her cousin Princess Beatrix of Hohenlohe-Langenburg spent the winter of 1955-1956 living in London, where Christina studied the restoration of paintings under Anthony Blunt.
-It was reported that the princesses' closest friend in England was Prince Andrew of Yugoslavia.
-First marriage
-
-Princess Christina of Hesse married Prince Andrew of Yugoslavia, the youngest son of Alexander I of Yugoslavia and Princess Maria of Romania, on 2 August 1956, at Friedrichshof Castle.
-They had two children:
-
-
-Soon after their marriage, Princess Christina and her first husband had purchased The Hollands, a commercial farm at Langton Green in Kent, England, which did not prove a profitable venture.
-Moving to London, Prince Andrew supported his family by working for an import/export business and, later, as a bank executive.
-In 1961 Christina left her husband to live with an abstract artist from the Netherlands, Robert Floris van Eyck.
-Andrew initiated a divorce, and obtained custody of the couple's two children when dissolution of the marriage became final on 31 May 1962.
-Second marriage
-
-Following her divorce, Christina married Robert van Eyck on 3 December 1962 in London.
-Her first husband Prince Andrew also married for the second time, this time to another cousin, Princess Kira Melita zu Leiningen (1930–2006).
-Christina and Robert van Eyck separated in 1985, and divorced 3 February 1986.
-In addition to Germany and England, Princess Christina of Hesse had lived in Saint-Paul-de-Vence, France, and in Gersau, Switzerland.
+Prince Bernhard of Lippe, born as Count of Lippe-Biesterfeld in Oberkassel on 26 August 1872, was the 2nd son of Ernest II, Count of Lippe-Biesterfeld, regent (1897–1904) of Principality of Lippe, and his wife Countess Karoline von Wartensleben.
+He was a younger brother of Leopold IV, Prince of Lippe, who succeeded as reigning Prince of Lippe in 1905.
+The Lippe-Biesterfeld family had lived at Oberkassel, Bonn, ever since 1770, when count Frederick William (1737–1803) had married Elisabeth Johanna, Edle von Meinertzhagen (1752–1811), who inherited a small manor house at Oberkassel where the couple moved from Biesterfeld in 1770, and which became the home to the family for the following 209 years.
+The manor house and farm at Biesterfeld were demolished around 1820.
+Prince Bernhard acquired the Reckenwalde castle in eastern Brandenburg (today Wojnowo, Poland), the family's new estate, where his children grew up.
+On 4 March 1909, Bernhard entered into a morganatic marriage with Baroness Armgard von Sierstorpff-Cramm, widowed Countess von Oeynhausen.
+Before this marriage, his wife was granted the title Countess of Biesterfeld (Gräfin von Biesterfeld) on 8 February 1909.
+She and her two sons Bernhard and Aschwin were created Princess (Prince) of Lippe-Biesterfeld (Prinzessin (Prinz) zur Lippe-Biesterfeld) on 24 February 1916 with the style Serene Highness, which brought their children into a more senior place in the line of succession, in which they hitherto had been the very last.
+The suffix Biesterfeld was revived to mark the beginning of a new cadet line.
+Bernhard died in Munich, aged 61.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -125,39 +106,9 @@ In addition to Germany and England, Princess Christina of Hesse had lived in Sai
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -172,6 +123,23 @@ In addition to Germany and England, Princess Christina of Hesse had lived in Sai
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -189,6 +157,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -256,29 +239,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -287,6 +262,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -299,6 +282,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -307,17 +292,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -345,6 +332,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -360,158 +431,166 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (49893041-b916-40e8-9fe9-8ba9592224e0)
- Call ID: 49893041-b916-40e8-9fe9-8ba9592224e0
-  Args:
-    type: :Woman
-    source: :Christina_Margarethe_of_Hesse
-  AssignClass (4a1da90c-5e5c-4988-8ec3-91ba0aa39e53)
- Call ID: 4a1da90c-5e5c-4988-8ec3-91ba0aa39e53
-  Args:
-    type: :Person
-    source: :Christina_Margarethe_of_Hesse
-  AddLiteral (a43608bc-06b6-4d13-9fc0-be0d17db9bcb)
- Call ID: a43608bc-06b6-4d13-9fc0-be0d17db9bcb
-  Args:
-    literal_type: xsd:integer
-    source: :Christina_Margarethe_of_Hesse
-    relation: :hasBirthYear
-    literal_value: 1933
-  AddLiteral (db8fdb07-e516-4bd7-988b-7bc9f807e865)
- Call ID: db8fdb07-e516-4bd7-988b-7bc9f807e865
-  Args:
-    literal_type: xsd:integer
-    source: :Christina_Margarethe_of_Hesse
-    relation: :hasDeathYear
-    literal_value: 2011
-  AddLiteral (34646c79-128f-4ebf-8b70-7a634edfe2c4)
- Call ID: 34646c79-128f-4ebf-8b70-7a634edfe2c4
-  Args:
-    source: :Christina_Margarethe_of_Hesse
-    literal_type: xsd:string
-    literal_value: Krista
-    relation: :knownAs
-  AssignClass (b9f01ea9-0fdf-4eca-aed3-e55b8cdef925)
- Call ID: b9f01ea9-0fdf-4eca-aed3-e55b8cdef925
+  AssignClass (af69023d-ed28-4c45-a71d-7593fd8e8e36)
+ Call ID: af69023d-ed28-4c45-a71d-7593fd8e8e36
   Args:
     type: :Man
-    source: :Prince_Christoph_of_Hesse
-  AssignClass (0adeac33-bfd3-45d3-b3c4-aa413102a953)
- Call ID: 0adeac33-bfd3-45d3-b3c4-aa413102a953
+    source: Prince_Bernhard_of_Lippe
+  AssignClass (8b23141f-fff8-4dc3-9768-43d6d44cf682)
+ Call ID: 8b23141f-fff8-4dc3-9768-43d6d44cf682
   Args:
     type: :Person
-    source: :Prince_Christoph_of_Hesse
-  AssignClass (a6d309de-2e13-4151-b3f0-b9189734e422)
- Call ID: a6d309de-2e13-4151-b3f0-b9189734e422
-  Args:
-    type: :Ancestor
-    source: :Prince_Christoph_of_Hesse
-  AddLiteral (e88b4ff3-a6be-4d8e-8926-a7be1937d98c)
- Call ID: e88b4ff3-a6be-4d8e-8926-a7be1937d98c
+    source: Prince_Bernhard_of_Lippe
+  AddLiteral (d5f7d13a-535c-4afd-91b3-a504991c293c)
+ Call ID: d5f7d13a-535c-4afd-91b3-a504991c293c
   Args:
     relation: :hasBirthYear
-    literal_value: 1901
+    literal_value: 1872
+    source: Prince_Bernhard_of_Lippe
     literal_type: xsd:integer
-    source: :Prince_Christoph_of_Hesse
-  AddLiteral (a8977761-b387-4003-acb2-2bfe90f87891)
- Call ID: a8977761-b387-4003-acb2-2bfe90f87891
+  AddLiteral (5afdbcb8-64d3-4cc5-9064-679d2937ab39)
+ Call ID: 5afdbcb8-64d3-4cc5-9064-679d2937ab39
   Args:
-    literal_value: 1943
     relation: :hasDeathYear
-    source: :Prince_Christoph_of_Hesse
+    literal_value: 1934
+    source: Prince_Bernhard_of_Lippe
     literal_type: xsd:integer
-  AssignClass (4fa9fb93-917b-4269-8a8f-9ff59c4f87ad)
- Call ID: 4fa9fb93-917b-4269-8a8f-9ff59c4f87ad
+  AssignClass (15719acb-7e77-4e23-ad8f-a4ada2a617e1)
+ Call ID: 15719acb-7e77-4e23-ad8f-a4ada2a617e1
   Args:
-    type: :Woman
-    source: :Princess_Sophie_of_Greece_and_Denmark
-  AssignClass (a4689acc-b5e8-4765-be2c-017333527587)
- Call ID: a4689acc-b5e8-4765-be2c-017333527587
+    type: :Man
+    source: Prince_Bernhard_of_Lippe-Biesterfeld
+  AssignClass (5a6eeba8-2296-4b41-b23c-fa4bbe63da52)
+ Call ID: 5a6eeba8-2296-4b41-b23c-fa4bbe63da52
   Args:
     type: :Person
-    source: :Princess_Sophie_of_Greece_and_Denmark
-  AssignClass (975d6d73-051f-499d-a73f-400649ac5fbf)
- Call ID: 975d6d73-051f-499d-a73f-400649ac5fbf
+    source: Prince_Bernhard_of_Lippe-Biesterfeld
+  AddTriple (b4c95fb8-51ba-40f2-8950-d3a31088d2c9)
+ Call ID: b4c95fb8-51ba-40f2-8950-d3a31088d2c9
   Args:
-    type: :Ancestor
-    source: :Princess_Sophie_of_Greece_and_Denmark
-  AddLiteral (34c8a5f0-dd8c-4072-8efa-43bfe350df79)
- Call ID: 34c8a5f0-dd8c-4072-8efa-43bfe350df79
-  Args:
-    literal_value: 1914
-    relation: :hasBirthYear
-    source: :Princess_Sophie_of_Greece_and_Denmark
-    literal_type: xsd:integer
-  AddLiteral (c36a058f-fc68-4407-9415-c09996108b41)
- Call ID: c36a058f-fc68-4407-9415-c09996108b41
-  Args:
-    relation: :hasDeathYear
-    literal_value: 2001
-    literal_type: xsd:integer
-    source: :Princess_Sophie_of_Greece_and_Denmark
-  AddTriple (073cac6e-beac-43c0-8f48-1acaf581bf19)
- Call ID: 073cac6e-beac-43c0-8f48-1acaf581bf19
-  Args:
-    target: :Prince_Christoph_of_Hesse
-    source: :Christina_Margarethe_of_Hesse
     relation: :hasFather
-  AddTriple (2b7c60b9-9d2e-4f0e-a6df-4d020d575a37)
- Call ID: 2b7c60b9-9d2e-4f0e-a6df-4d020d575a37
+    target: Prince_Bernhard_of_Lippe
+    source: Prince_Bernhard_of_Lippe-Biesterfeld
+  AssignClass (ca9fc0e8-75f7-42cb-abdd-5d83a18efbf2)
+ Call ID: ca9fc0e8-75f7-42cb-abdd-5d83a18efbf2
   Args:
-    target: :Princess_Sophie_of_Greece_and_Denmark
-    source: :Christina_Margarethe_of_Hesse
+    source: Ernest_II_Count_of_Lippe-Biesterfeld
+    type: :Man
+  AssignClass (5bfbc2c3-d774-48fd-9212-ee726265782a)
+ Call ID: 5bfbc2c3-d774-48fd-9212-ee726265782a
+  Args:
+    type: :Person
+    source: Ernest_II_Count_of_Lippe-Biesterfeld
+  AssignClass (6623f7db-d033-45e3-bd2c-8f2aa026fead)
+ Call ID: 6623f7db-d033-45e3-bd2c-8f2aa026fead
+  Args:
+    type: :Woman
+    source: Countess_Karoline_von_Wartensleben
+  AssignClass (ab8960e4-ed63-4dda-9d95-83e5ecd12af6)
+ Call ID: ab8960e4-ed63-4dda-9d95-83e5ecd12af6
+  Args:
+    source: Countess_Karoline_von_Wartensleben
+    type: :Person
+  AddTriple (d3363357-4a6f-463d-b9f3-8e282e0cc75e)
+ Call ID: d3363357-4a6f-463d-b9f3-8e282e0cc75e
+  Args:
+    source: Prince_Bernhard_of_Lippe
+    target: Ernest_II_Count_of_Lippe-Biesterfeld
+    relation: :hasFather
+  AddTriple (abcfb64c-d75c-48ff-abd1-68653bd34935)
+ Call ID: abcfb64c-d75c-48ff-abd1-68653bd34935
+  Args:
     relation: :hasMother
-  AssignClass (8ddea6c6-d3de-4e78-93f7-883436b11e30)
- Call ID: 8ddea6c6-d3de-4e78-93f7-883436b11e30
+    target: Countess_Karoline_von_Wartensleben
+    source: Prince_Bernhard_of_Lippe
+  AssignClass (b0ef785d-49a7-4f7c-8fae-d05a5dca65f5)
+ Call ID: b0ef785d-49a7-4f7c-8fae-d05a5dca65f5
+  Args:
+    source: Leopold_IV_Prince_of_Lippe
+    type: :Man
+  AssignClass (92d53ad7-eea1-428a-99a7-1d2a99b4ac1a)
+ Call ID: 92d53ad7-eea1-428a-99a7-1d2a99b4ac1a
+  Args:
+    source: Leopold_IV_Prince_of_Lippe
+    type: :Person
+  AddTriple (a7258e2f-3e04-439c-a146-eebffa78dd6e)
+ Call ID: a7258e2f-3e04-439c-a146-eebffa78dd6e
+  Args:
+    source: Prince_Bernhard_of_Lippe
+    target: Leopold_IV_Prince_of_Lippe
+    relation: :hasBrother
+  AssignClass (9907f796-a988-4bdf-8bc7-d5d2cdc35164)
+ Call ID: 9907f796-a988-4bdf-8bc7-d5d2cdc35164
   Args:
     type: :Man
-    source: :Prince_Andrew_of_Yugoslavia
-  AssignClass (cd04a16c-0ef8-4aa1-955d-1cd363aa83a8)
- Call ID: cd04a16c-0ef8-4aa1-955d-1cd363aa83a8
+    source: Frederick_William_Count_of_Lippe-Biesterfeld
+  AssignClass (b6c756f2-b741-4185-a16a-87a6cb4cc8e0)
+ Call ID: b6c756f2-b741-4185-a16a-87a6cb4cc8e0
   Args:
+    source: Frederick_William_Count_of_Lippe-Biesterfeld
     type: :Person
-    source: :Prince_Andrew_of_Yugoslavia
-  AssignClass (f476e75f-6ee0-40de-8495-71c04e7998ae)
- Call ID: f476e75f-6ee0-40de-8495-71c04e7998ae
+  AssignClass (f7de67de-39f1-4715-96c0-cff533e21ef6)
+ Call ID: f7de67de-39f1-4715-96c0-cff533e21ef6
   Args:
-    type: :Ancestor
-    source: :Prince_Andrew_of_Yugoslavia
-  AddTriple (f76ba8e6-0816-45de-bb05-7924548e1a52)
- Call ID: f76ba8e6-0816-45de-bb05-7924548e1a52
+    source: Elisabeth_Johanna_Edle_von_Meinertzhagen
+    type: :Woman
+  AssignClass (3b4459db-7906-4d66-b81b-ff1c832a2c62)
+ Call ID: 3b4459db-7906-4d66-b81b-ff1c832a2c62
   Args:
-    relation: :hasRelation
-    source: :Christina_Margarethe_of_Hesse
-    target: :Prince_Andrew_of_Yugoslavia
-  AddLiteral (79497e6c-7cf9-417e-a412-77c1f8336657)
- Call ID: 79497e6c-7cf9-417e-a412-77c1f8336657
+    source: Elisabeth_Johanna_Edle_von_Meinertzhagen
+    type: :Person
+  AddLiteral (973c52a5-888d-4515-8d3a-44836d68c42b)
+ Call ID: 973c52a5-888d-4515-8d3a-44836d68c42b
   Args:
-    literal_value: 1956
+    source: Frederick_William_Count_of_Lippe-Biesterfeld
+    literal_value: 1770
     relation: :hasMarriageYear
-    source: :Christina_Margarethe_of_Hesse
     literal_type: xsd:integer
-  AssignClass (75596433-ea4b-4885-a0f1-5abcead3cf1c)
- Call ID: 75596433-ea4b-4885-a0f1-5abcead3cf1c
+  AssignClass (c5990ea2-096a-42cb-9700-233d9ef61165)
+ Call ID: c5990ea2-096a-42cb-9700-233d9ef61165
+  Args:
+    source: Baroness_Armgard_von_Sierstorpff-Cramm
+    type: :Woman
+  AssignClass (3ec507d4-b28d-4bae-9581-72666748cc62)
+ Call ID: 3ec507d4-b28d-4bae-9581-72666748cc62
+  Args:
+    source: Baroness_Armgard_von_Sierstorpff-Cramm
+    type: :Person
+  AddLiteral (5273e346-b468-4986-bd74-bde2f3d526bf)
+ Call ID: 5273e346-b468-4986-bd74-bde2f3d526bf
+  Args:
+    literal_type: xsd:integer
+    literal_value: 1909
+    relation: :hasMarriageYear
+    source: Prince_Bernhard_of_Lippe
+  AssignClass (e2746f23-ef17-435b-ae9c-d0f26a0ce4cc)
+ Call ID: e2746f23-ef17-435b-ae9c-d0f26a0ce4cc
   Args:
     type: :Man
-    source: :Robert_van_Eyck
-  AssignClass (c0d7a6c2-c754-447e-98a3-1d49a1dbdee6)
- Call ID: c0d7a6c2-c754-447e-98a3-1d49a1dbdee6
+    source: Aschwin_of_Lippe-Biesterfeld
+  AssignClass (3daa14ac-ba0a-41d7-be1d-dffb6e767f98)
+ Call ID: 3daa14ac-ba0a-41d7-be1d-dffb6e767f98
   Args:
+    source: Aschwin_of_Lippe-Biesterfeld
     type: :Person
-    source: :Robert_van_Eyck
-  AddTriple (a9fed16e-b813-43fd-9864-18f11473a321)
- Call ID: a9fed16e-b813-43fd-9864-18f11473a321
+  AddTriple (cda31496-be22-45b6-8321-24694eb8b549)
+ Call ID: cda31496-be22-45b6-8321-24694eb8b549
   Args:
-    source: :Christina_Margarethe_of_Hesse
-    relation: :hasRelation
-    target: :Robert_van_Eyck
-  AddLiteral (92bef17e-2835-4839-8a4d-3b07ca8d2464)
- Call ID: 92bef17e-2835-4839-8a4d-3b07ca8d2464
+    source: Aschwin_of_Lippe-Biesterfeld
+    relation: :hasFather
+    target: Prince_Bernhard_of_Lippe
+  AddTriple (99715f46-de43-492f-a70b-950f5fd7d405)
+ Call ID: 99715f46-de43-492f-a70b-950f5fd7d405
   Args:
-    relation: :hasMarriageYear
-    literal_value: 1962
-    literal_type: xsd:integer
-    source: :Christina_Margarethe_of_Hesse
-  Finish (f2edf05c-88f1-4bda-8244-347c3d635b64)
- Call ID: f2edf05c-88f1-4bda-8244-347c3d635b64
+    source: Aschwin_of_Lippe-Biesterfeld
+    relation: :hasMother
+    target: Baroness_Armgard_von_Sierstorpff-Cramm
+  AddTriple (95c3cfd4-0787-4dca-b14a-07ffc160a00c)
+ Call ID: 95c3cfd4-0787-4dca-b14a-07ffc160a00c
+  Args:
+    target: Baroness_Armgard_von_Sierstorpff-Cramm
+    relation: :hasMother
+    source: Prince_Bernhard_of_Lippe-Biesterfeld
+  Finish (033f2103-b694-43fa-8936-82b4d3200093)
+ Call ID: 033f2103-b694-43fa-8936-82b4d3200093
   Args:

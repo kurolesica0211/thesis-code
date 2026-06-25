@@ -1,0 +1,124 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:AlfonsoXIII a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:AlfonsoXIII ;
+    :hasRelation data:AlfonsoBrother,
+        data:AlfonsoXIII,
+        data:EmmanuelleDeDampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:VictoriaEugenie ;
+    :isAncestorOf data:Gonzalo ;
+    :isBloodrelationOf data:AlfonsoXIII ;
+    :isBrotherOf data:AlfonsoXIII ;
+    :isSiblingOf data:AlfonsoXIII .
+
+data:VictoriaEugenie a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasRelation data:AlfonsoBrother,
+        data:AlfonsoXIII,
+        data:EmmanuelleDeDampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:VictoriaEugenie ;
+    :hasSister data:VictoriaEugenie ;
+    :isAncestorOf data:Gonzalo ;
+    :isBloodrelationOf data:VictoriaEugenie ;
+    :isSiblingOf data:VictoriaEugenie ;
+    :isSisterOf data:VictoriaEugenie .
+
+data:AlfonsoBrother a :Man,
+        :Person ;
+    :hasBrother data:AlfonsoBrother,
+        data:Gonzalo ;
+    :hasRelation data:AlfonsoBrother,
+        data:AlfonsoXIII,
+        data:EmmanuelleDeDampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:VictoriaEugenie ;
+    :isBloodrelationOf data:AlfonsoBrother,
+        data:Gonzalo ;
+    :isBrotherOf data:AlfonsoBrother,
+        data:Gonzalo ;
+    :isSiblingOf data:AlfonsoBrother,
+        data:Gonzalo .
+
+data:EmmanuelleDeDampierre a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Gonzalo ;
+    :hasRelation data:AlfonsoBrother,
+        data:AlfonsoXIII,
+        data:EmmanuelleDeDampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:VictoriaEugenie ;
+    :hasSister data:EmmanuelleDeDampierre ;
+    :hasSon data:Gonzalo ;
+    :isAncestorOf data:Gonzalo ;
+    :isAuntOf data:Gonzalo ;
+    :isBloodrelationOf data:EmmanuelleDeDampierre ;
+    :isMotherOf data:Gonzalo ;
+    :isParentOf data:Gonzalo ;
+    :isSiblingOf data:EmmanuelleDeDampierre ;
+    :isSisterOf data:EmmanuelleDeDampierre .
+
+data:Jaime a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Jaime ;
+    :hasChild data:Gonzalo ;
+    :hasRelation data:AlfonsoBrother,
+        data:AlfonsoXIII,
+        data:EmmanuelleDeDampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:VictoriaEugenie ;
+    :hasSon data:Gonzalo ;
+    :isAncestorOf data:Gonzalo ;
+    :isBloodrelationOf data:Jaime ;
+    :isBrotherOf data:Jaime ;
+    :isFatherOf data:Gonzalo ;
+    :isParentOf data:Gonzalo ;
+    :isSiblingOf data:Jaime ;
+    :isUncleOf data:Gonzalo .
+
+data:Gonzalo a :Man,
+        :Person ;
+    :alsoKnownAs "Gonzalve Victor Alphonse Joseph Boniface Antoine Marie Toussaint de Bourbon"^^xsd:string ;
+    :hasAncestor data:AlfonsoXIII,
+        data:EmmanuelleDeDampierre,
+        data:Jaime,
+        data:VictoriaEugenie ;
+    :hasBirthYear 1937 ;
+    :hasBrother data:AlfonsoBrother,
+        data:Gonzalo ;
+    :hasDeathYear 2000 ;
+    :hasFather data:Jaime ;
+    :hasMother data:EmmanuelleDeDampierre ;
+    :hasParent data:EmmanuelleDeDampierre,
+        data:Jaime ;
+    :hasRelation data:AlfonsoBrother,
+        data:AlfonsoXIII,
+        data:EmmanuelleDeDampierre,
+        data:Gonzalo,
+        data:Jaime,
+        data:VictoriaEugenie ;
+    :isBloodrelationOf data:AlfonsoBrother,
+        data:Gonzalo ;
+    :isBrotherOf data:AlfonsoBrother,
+        data:Gonzalo ;
+    :isChildOf data:EmmanuelleDeDampierre,
+        data:Jaime ;
+    :isSiblingOf data:AlfonsoBrother,
+        data:Gonzalo ;
+    :isSonOf data:EmmanuelleDeDampierre,
+        data:Jaime ;
+    :knownAs "Gonzalo Víctor Alfonso José Bonifacio Antonio María y Todos los Santos de Borbón y Dampierre"^^xsd:string .
+

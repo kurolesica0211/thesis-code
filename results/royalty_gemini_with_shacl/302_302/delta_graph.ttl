@@ -2,42 +2,55 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_Tomislav a :Man,
+data:Prince_Nikola_of_Yugoslavia a :Man,
         :Person ;
-    :hasBirthYear "1928"^^xsd:nonNegativeInteger ;
-    :hasDeathYear "2000"^^xsd:nonNegativeInteger ;
-    :hasFather data:King_Alexander_I ;
-    :hasMarriageYear "1957"^^xsd:nonNegativeInteger ;
-    :hasMother data:Queen_Maria ;
-    :hasRelation data:Princess_Margarita_of_Baden ;
-    :hasSex data:Male_Sex ;
-    :isBrotherOf data:King_Peter_II .
+    :hasBirthYear 1928 ;
+    :hasBrother data:Prince_Alexander ;
+    :hasDeathYear 1954 ;
+    :hasFather data:Prince_Paul_of_Yugoslavia ;
+    :hasMother data:Princess_Olga_of_Greece_and_Denmark ;
+    :hasSister data:Princess_Elizabeth ;
+    :knownAs "Nicky"^^xsd:string,
+        "Nikola Karađorđević"^^xsd:string,
+        "Prince Nicholas"^^xsd:string .
 
-data:King_Ferdinand_of_Romania a :Ancestor,
+data:Princess_Elizabeth_Countess_of_Toerring-Jettenbach a :Person,
+        :Woman .
+
+data:Princess_Marina_Duchess_of_Kent a :Person,
+        :Woman .
+
+data:Arsen_Kara%C4%91or%C4%91evi%C4%87 a :Ancestor,
         :Man,
         :Person .
 
-data:King_Peter_II a :Man,
-        :Person ;
-    :hasFather data:King_Alexander_I ;
-    :hasMother data:Queen_Maria .
-
-data:Male_Sex a :Sex .
-
-data:Princess_Margarita_of_Baden a :Person,
-        :Woman .
-
-data:Queen_Marie_of_Romania a :Ancestor,
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
         :Person,
         :Woman .
 
-data:King_Alexander_I a :Ancestor,
+data:Prince_Alexander a :Man,
+        :Person .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
         :Man,
         :Person .
 
-data:Queen_Maria a :Ancestor,
+data:Prince_Paul_of_Yugoslavia a :Ancestor,
+        :Man,
+        :Person ;
+    :hasFather data:Arsen_Kara%C4%91or%C4%91evi%C4%87 ;
+    :hasMother data:Princess_Aurora_Pavlovna_Demidova_di_San_Donato .
+
+data:Princess_Aurora_Pavlovna_Demidova_di_San_Donato a :Ancestor,
+        :Person,
+        :Woman .
+
+data:Princess_Elizabeth a :Person,
+        :Woman .
+
+data:Princess_Olga_of_Greece_and_Denmark a :Ancestor,
         :Person,
         :Woman ;
-    :hasFather data:King_Ferdinand_of_Romania ;
-    :hasMother data:Queen_Marie_of_Romania .
+    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia .
 

@@ -7,43 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Juan_Carlos_I_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Juan Carlos I of Spain" ;
-    data:posIndicesFull "1315:1328",
-        "1957:1970" ;
-    data:posIndicesPart "11675:11680",
-        "1590:1595",
-        "2777:2782",
-        "4138:4142",
-        "4385:4390",
-        "5064:5068",
-        "5069:5075",
-        "5866:5871",
-        "6648:6653",
-        "7279:7284",
-        "7585:7590",
-        "8292:8297" ;
-    data:wdtLink wdt:Q19943 ;
-    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
-        "Juan Carlos I" ;
-    :hasChild data:Felipe_VI_of_Spain ;
-    :hasSex data:male ;
-    :hasSon data:Felipe_VI_of_Spain ;
-    :isFatherOf data:Felipe_VI_of_Spain ;
-    :isParentOf data:Felipe_VI_of_Spain .
-
-data:Leonor-_Princess_of_Asturias a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Leonor-_Princess_of_Asturias a :Person ;
     rdfs:label "Leonor, Princess of Asturias" ;
     data:posIndicesFull "130:158",
         "160:204" ;
@@ -144,16 +108,68 @@ data:Leonor-_Princess_of_Asturias a :Person,
     :alsoKnownAs "Infanta Leonor of Spain",
         "Leonor de Todos los Santos de Borbón y Ortiz",
         "Princess Leonor" ;
-    :hasFather data:Felipe_VI_of_Spain ;
     :hasParent data:Felipe_VI_of_Spain ;
-    :hasSex data:female ;
-    :isChildOf data:Felipe_VI_of_Spain ;
-    :isDaughterOf data:Felipe_VI_of_Spain .
+    :hasSex data:female .
 
-data:Queen_Sofía_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Felipe_VI_of_Spain a :Person ;
+    rdfs:label "Felipe VI of Spain" ;
+    data:posIndicesFull "309:318",
+        "3925:3934",
+        "5219:5228",
+        "9919:9928" ;
+    data:posIndicesPart "10468:10474",
+        "11675:11680",
+        "11859:11865",
+        "1202:1208",
+        "1590:1595",
+        "2777:2782",
+        "4385:4390",
+        "5634:5640",
+        "5866:5871",
+        "6170:6176",
+        "6648:6653",
+        "7279:7284",
+        "7585:7590",
+        "8200:8206",
+        "8292:8297",
+        "988:993" ;
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia",
+        "Felipe VI",
+        "Philip John Paul Alphonse of All Saints of Bourbon",
+        "Philip VI of Spain" ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:male .
+
+data:Juan_Carlos_I_of_Spain a :Person ;
+    rdfs:label "Juan Carlos I of Spain" ;
+    data:posIndicesFull "1315:1328",
+        "1957:1970" ;
+    data:posIndicesPart "11675:11680",
+        "1590:1595",
+        "2777:2782",
+        "4138:4142",
+        "4385:4390",
+        "5064:5068",
+        "5069:5075",
+        "5866:5871",
+        "6648:6653",
+        "7279:7284",
+        "7585:7590",
+        "8292:8297" ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
+        "Juan Carlos I" ;
+    :hasSex data:male .
+
+data:Queen_Sofía_of_Spain a :Person ;
     rdfs:label "Queen Sofía of Spain" ;
     data:posIndicesFull "17:29",
         "1975:1986",
@@ -182,53 +198,9 @@ data:Queen_Sofía_of_Spain a :Ancestor,
         "Queen Sofia of Spain",
         "Queen Sofía",
         "Queen Sofía, Queen Consort of Spain" ;
-    :hasChild data:Felipe_VI_of_Spain ;
-    :hasSex data:female ;
-    :hasSon data:Felipe_VI_of_Spain ;
-    :isMotherOf data:Felipe_VI_of_Spain ;
-    :isParentOf data:Felipe_VI_of_Spain .
+    :hasSex data:female .
 
-data:Felipe_VI_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Felipe VI of Spain" ;
-    data:posIndicesFull "309:318",
-        "3925:3934",
-        "5219:5228",
-        "9919:9928" ;
-    data:posIndicesPart "10468:10474",
-        "11675:11680",
-        "11859:11865",
-        "1202:1208",
-        "1590:1595",
-        "2777:2782",
-        "4385:4390",
-        "5634:5640",
-        "5866:5871",
-        "6170:6176",
-        "6648:6653",
-        "7279:7284",
-        "7585:7590",
-        "8200:8206",
-        "8292:8297",
-        "988:993" ;
-    data:wdtLink wdt:Q191045 ;
-    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia",
-        "Felipe VI",
-        "Philip John Paul Alphonse of All Saints of Bourbon",
-        "Philip VI of Spain" ;
-    :hasChild data:Leonor-_Princess_of_Asturias ;
-    :hasDaughter data:Leonor-_Princess_of_Asturias ;
-    :hasFather data:Juan_Carlos_I_of_Spain ;
-    :hasMother data:Queen_Sofía_of_Spain ;
-    :hasParent data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :hasSex data:male ;
-    :isChildOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain ;
-    :isFatherOf data:Leonor-_Princess_of_Asturias ;
-    :isParentOf data:Leonor-_Princess_of_Asturias ;
-    :isSonOf data:Juan_Carlos_I_of_Spain,
-        data:Queen_Sofía_of_Spain .
+data:female a :Female .
+
+data:male a :Male .
 

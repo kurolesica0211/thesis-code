@@ -1,0 +1,179 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:female a :Female .
+
+data:male a :Male .
+
+data:Willa_Chetwode a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Willa Chetwode"^^xsd:string ;
+    data:posIndicesFull "531:560"^^xsd:string ;
+    data:wdtLink wdt:Q75261337 ;
+    :alsoKnownAs "Willa Elphinstone, Lady Elphinstone"^^xsd:string,
+        "Willa Lloyd"^^xsd:string,
+        "Willa Mary Gabrielle Chetwode"^^xsd:string,
+        "Willa Mary Gabrielle Elphinstone, Lady Elphinstone"^^xsd:string,
+        "Willa Mary Gabrielle Lloyd"^^xsd:string ;
+    :hasChild data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :hasRelation data:Alexander_Elphinstone-_19th_Lord_Elphinstone,
+        data:Willa_Chetwode ;
+    :hasSex data:female ;
+    :hasSister data:Willa_Chetwode ;
+    :hasSon data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :isAncestorOf data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :isAuntOf data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :isBloodrelationOf data:Willa_Chetwode ;
+    :isMotherOf data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :isParentOf data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :isSiblingOf data:Willa_Chetwode ;
+    :isSisterOf data:Willa_Chetwode .
+
+data:Andrew_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Andrew Elphinstone"^^xsd:string ;
+    data:posIndicesFull "236:269"^^xsd:string ;
+    data:posIndicesPart "350:361"^^xsd:string,
+        "373:384"^^xsd:string,
+        "511:522"^^xsd:string ;
+    data:wdtLink wdt:Q54164320 ;
+    :alsoKnownAs "Andrew Charles Victor Elphinstone"^^xsd:string ;
+    :hasBrother data:Andrew_Elphinstone ;
+    :hasChild data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :hasRelation data:Alexander_Elphinstone-_19th_Lord_Elphinstone,
+        data:Andrew_Elphinstone,
+        data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :hasSex data:male ;
+    :hasSon data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :isAncestorOf data:Alexander_Elphinstone-_19th_Lord_Elphinstone,
+        data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :isBloodrelationOf data:Andrew_Elphinstone ;
+    :isBrotherOf data:Andrew_Elphinstone ;
+    :isFatherOf data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :isParentOf data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :isSiblingOf data:Andrew_Elphinstone ;
+    :isUncleOf data:James_Elphinstone-_18th_Lord_Elphinstone .
+
+data:Jean_Frances_Hambro a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Jean Frances Hambro"^^xsd:string ;
+    data:posIndicesFull "274:293"^^xsd:string ;
+    data:wdtLink wdt:Q54162487 ;
+    :alsoKnownAs "Jean Elphinstone"^^xsd:string,
+        "Jean Hambro"^^xsd:string,
+        "Jean Woodroffe"^^xsd:string ;
+    :hasChild data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :hasRelation data:Alexander_Elphinstone-_19th_Lord_Elphinstone,
+        data:James_Elphinstone-_18th_Lord_Elphinstone,
+        data:Jean_Frances_Hambro ;
+    :hasSex data:female ;
+    :hasSister data:Jean_Frances_Hambro ;
+    :hasSon data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :isAncestorOf data:Alexander_Elphinstone-_19th_Lord_Elphinstone,
+        data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :isAuntOf data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :isBloodrelationOf data:Jean_Frances_Hambro ;
+    :isMotherOf data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :isParentOf data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :isSiblingOf data:Jean_Frances_Hambro ;
+    :isSisterOf data:Jean_Frances_Hambro .
+
+data:Alexander_Elphinstone-_19th_Lord_Elphinstone a :Man,
+        :Person ;
+    rdfs:label "Alexander Elphinstone, 19th Lord Elphinstone"^^xsd:string ;
+    data:posIndicesFull "6:27"^^xsd:string,
+        "6:50"^^xsd:string ;
+    data:posIndicesPart "194:198"^^xsd:string,
+        "199:210"^^xsd:string,
+        "350:361"^^xsd:string,
+        "368:372"^^xsd:string,
+        "373:384"^^xsd:string,
+        "506:510"^^xsd:string,
+        "511:522"^^xsd:string,
+        "829:838"^^xsd:string,
+        "875:879"^^xsd:string ;
+    data:wdtLink wdt:Q4718803 ;
+    :alsoKnownAs "Alexander Elphinstone"^^xsd:string,
+        "Alexander Mountstuart Elphinstone, 19th Lord Elphinstone"^^xsd:string ;
+    :hasAncestor data:Andrew_Elphinstone,
+        data:James_Elphinstone-_18th_Lord_Elphinstone,
+        data:Jean_Frances_Hambro,
+        data:Willa_Chetwode ;
+    :hasBrother data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :hasFather data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :hasMother data:Willa_Chetwode ;
+    :hasParent data:James_Elphinstone-_18th_Lord_Elphinstone,
+        data:Willa_Chetwode ;
+    :hasRelation data:Alexander_Elphinstone-_19th_Lord_Elphinstone,
+        data:Andrew_Elphinstone,
+        data:James_Elphinstone-_18th_Lord_Elphinstone,
+        data:Jean_Frances_Hambro,
+        data:Willa_Chetwode ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :isBrotherOf data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :isChildOf data:James_Elphinstone-_18th_Lord_Elphinstone,
+        data:Willa_Chetwode ;
+    :isSiblingOf data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :isSonOf data:James_Elphinstone-_18th_Lord_Elphinstone,
+        data:Willa_Chetwode .
+
+data:James_Elphinstone-_18th_Lord_Elphinstone a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "James Elphinstone, 18th Lord Elphinstone"^^xsd:string ;
+    data:posIndicesFull "0:27"^^xsd:string ;
+    data:posIndicesPart "194:198"^^xsd:string,
+        "199:210"^^xsd:string,
+        "350:361"^^xsd:string,
+        "368:372"^^xsd:string,
+        "373:384"^^xsd:string,
+        "506:510"^^xsd:string,
+        "511:522"^^xsd:string,
+        "875:879"^^xsd:string ;
+    data:wdtLink wdt:Q26215204 ;
+    :alsoKnownAs ", 4th Baron Elphinstone"^^xsd:string,
+        "James Alexander Elphinstone"^^xsd:string,
+        "James Alexander Elphinstone, 18th Lord Elphinstone, 4th Baron Elphinstone"^^xsd:string,
+        "James Elphinstone"^^xsd:string ;
+    :hasAncestor data:Andrew_Elphinstone,
+        data:Jean_Frances_Hambro ;
+    :hasBrother data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :hasChild data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :hasFather data:Andrew_Elphinstone ;
+    :hasMother data:Jean_Frances_Hambro ;
+    :hasParent data:Andrew_Elphinstone,
+        data:Jean_Frances_Hambro ;
+    :hasRelation data:Alexander_Elphinstone-_19th_Lord_Elphinstone,
+        data:Andrew_Elphinstone,
+        data:James_Elphinstone-_18th_Lord_Elphinstone,
+        data:Jean_Frances_Hambro ;
+    :hasSex data:male ;
+    :hasSon data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :isAncestorOf data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :isBloodrelationOf data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :isBrotherOf data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :isChildOf data:Andrew_Elphinstone,
+        data:Jean_Frances_Hambro ;
+    :isFatherOf data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :isParentOf data:Alexander_Elphinstone-_19th_Lord_Elphinstone ;
+    :isSiblingOf data:James_Elphinstone-_18th_Lord_Elphinstone ;
+    :isSonOf data:Andrew_Elphinstone,
+        data:Jean_Frances_Hambro ;
+    :isUncleOf data:Alexander_Elphinstone-_19th_Lord_Elphinstone .
+

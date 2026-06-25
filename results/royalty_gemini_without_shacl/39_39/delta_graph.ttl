@@ -8,44 +8,32 @@ data:Alex_Mapelli-Mozzi a :Man,
 
 data:Athena_Elizabeth_Rose a :Person,
         :Woman ;
-    :isDaughterOf data:Edoardo_Mapelli_Mozzi,
-        data:Princess_Beatrice .
-
-data:Charles_III a :Man,
-        :Person ;
-    :hasRelation data:Princess_Beatrice .
-
-data:Dara_Huang a :Person,
-        :Woman ;
-    :isMotherOf data:Christopher_Woolf .
-
-data:Paolo_Mapelli_Mozzi a :Man,
-        :Person ;
-    :isAncestorOf data:Edoardo_Mapelli_Mozzi .
-
-data:Princess_Eugenie a :Person,
-        :Woman ;
-    :isSisterOf data:Princess_Beatrice .
-
-data:Queen_Victoria a :Person,
-        :Woman ;
-    :isAncestorOf data:Princess_Beatrice .
-
-data:Sienna_Elizabeth_Mapelli_Mozzi a :Person,
-        :Woman ;
-    :isDaughterOf data:Edoardo_Mapelli_Mozzi,
+    :isChildOf data:Edoardo_Mapelli_Mozzi,
         data:Princess_Beatrice .
 
 data:Christopher_Woolf a :Man,
         :Person ;
-    :isSonOf data:Edoardo_Mapelli_Mozzi .
+    :isChildOf data:Dara_Huang,
+        data:Edoardo_Mapelli_Mozzi .
+
+data:Sienna_Elizabeth_Mapelli_Mozzi a :Person,
+        :Woman ;
+    :isChildOf data:Edoardo_Mapelli_Mozzi,
+        data:Princess_Beatrice .
+
+data:Dara_Huang a :Person,
+        :Woman .
+
+data:Princess_Eugenie a :Person,
+        :Woman ;
+    :isSisterOf data:Princess_Beatrice .
 
 data:Princess_Beatrice a :Person,
         :Woman ;
     :hasBirthYear 1988 ;
     :hasMarriageYear 2020 ;
     :hasRelation data:Edoardo_Mapelli_Mozzi ;
-    :knownAs "Beatrice York"^^xsd:string .
+    :isSisterOf data:Princess_Eugenie .
 
 data:Edoardo_Mapelli_Mozzi a :Man,
         :Person .

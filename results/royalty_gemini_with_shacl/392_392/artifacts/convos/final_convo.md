@@ -85,26 +85,34 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Prince Bernhard of Lippe (Bernhard Kasimir Wilhelm Friedrich Gustav Heinrich Eduard; 26 August 1872 – 19 June 1934) was a member of the Lippe-Biesterfeld line of the House of Lippe.
-He was the father of Prince Bernhard of Lippe-Biesterfeld, the prince consort of Queen Juliana of the Netherlands.
-Biography
+Prince William Victor Charles Augustus Henry Sigismund of Prussia (German: Wilhelm Viktor Karl August Heinrich Sigismund; 27 November 1896 at Kiel – 14 November 1978 at Puntarenas, Costa Rica), was the second son of Prince Henry of Prussia and Princess Irene of Hesse and by Rhine.
+He was the nephew of Kaiser Wilhelm II and Tsarina Alexandra of Russia.
+Life
 
-Prince Bernhard of Lippe, born as Count of Lippe-Biesterfeld in Oberkassel on 26 August 1872, was the 2nd son of Ernest II, Count of Lippe-Biesterfeld, regent (1897–1904) of Principality of Lippe, and his wife Countess Karoline von Wartensleben.
-He was a younger brother of Leopold IV, Prince of Lippe, who succeeded as reigning Prince of Lippe in 1905.
-The Lippe-Biesterfeld family had lived at Oberkassel, Bonn, ever since 1770, when count Frederick William (1737–1803) had married Elisabeth Johanna, Edle von Meinertzhagen (1752–1811), who inherited a small manor house at Oberkassel where the couple moved from Biesterfeld in 1770, and which became the home to the family for the following 209 years.
-The manor house and farm at Biesterfeld were demolished around 1820.
-Prince Bernhard acquired the Reckenwalde castle in eastern Brandenburg (today Wojnowo, Poland), the family's new estate, where his children grew up.
-On 4 March 1909, Bernhard entered into a morganatic marriage with Baroness Armgard von Sierstorpff-Cramm, widowed Countess von Oeynhausen.
-Before this marriage, his wife was granted the title Countess of Biesterfeld (Gräfin von Biesterfeld) on 8 February 1909.
-She and her two sons Bernhard and Aschwin were created Princess (Prince) of Lippe-Biesterfeld (Prinzessin (Prinz) zur Lippe-Biesterfeld) on 24 February 1916 with the style Serene Highness, which brought their children into a more senior place in the line of succession, in which they hitherto had been the very last.
-The suffix Biesterfeld was revived to mark the beginning of a new cadet line.
-Bernhard died in Munich, aged 61.
+Marriage and issue
+
+On 11 July 1919 at Hemmelmark, he married Princess Charlotte of Saxe-Altenburg (4 March 1899 – 16 February 1989), the eldest daughter of Ernst II, Duke of Saxe-Altenburg.
+In 1927, Sigismund and his family resettled in Costa Rica  three years after his son Alfred (1924–2013) had been born in Guatemala.
+In 1957, Sigismund returned to Germany to meet with Anna Anderson whom he recognized as his cousin Grand Duchess Anastasia.
+Sigismund died in Puntarenas, Costa Rica, on 14 November 1978.
+Honours and awards
+
+Prince Sigismund received the following awards:
+
+
+Ancestry
+
+See also
+
+References
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix ns2: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -120,39 +128,9 @@ Bernhard died in Munich, aged 61.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -167,6 +145,23 @@ Bernhard died in Munich, aged 61.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns1:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -184,6 +179,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -251,29 +261,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -282,6 +284,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -294,6 +304,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns2:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -302,17 +314,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns2:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -340,6 +354,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns2:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns2:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns1:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns2:body [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns2:AtomList ;
+                    rdf:first [ a ns2:ClassAtom ;
+                            ns2:argument1 :y ;
+                            ns2:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns2:head [ a ns2:AtomList ;
+            rdf:first [ a ns2:IndividualPropertyAtom ;
+                    ns2:argument1 :x ;
+                    ns2:argument2 :y ;
+                    ns2:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -355,248 +453,180 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (9e515473-ea37-4af7-82b3-bfe852c2a5fd)
- Call ID: 9e515473-ea37-4af7-82b3-bfe852c2a5fd
+  AssignClass (f1c409ed-a27b-433f-978a-45ff5d8b5e6a)
+ Call ID: f1c409ed-a27b-433f-978a-45ff5d8b5e6a
   Args:
+    source: Prince_Sigismund_of_Prussia
     type: :Man
-    source: Prince_Bernhard_of_Lippe
-  AssignClass (579004ff-a3e0-4cef-a983-3505e9790c4b)
- Call ID: 579004ff-a3e0-4cef-a983-3505e9790c4b
+  AssignClass (d3a88bb3-f62e-4170-bfc7-ba110526bef7)
+ Call ID: d3a88bb3-f62e-4170-bfc7-ba110526bef7
   Args:
+    source: Prince_Sigismund_of_Prussia
     type: :Person
-    source: Prince_Bernhard_of_Lippe
-  AssignClass (b6a4a249-c07b-4309-9d5d-27d5095602f5)
- Call ID: b6a4a249-c07b-4309-9d5d-27d5095602f5
+  AddLiteral (d457919d-7bb0-4540-845b-6f85d6149baa)
+ Call ID: d457919d-7bb0-4540-845b-6f85d6149baa
   Args:
-    type: :Ancestor
-    source: Prince_Bernhard_of_Lippe
-  AddLiteral (fdca02db-9887-4657-9d2b-8aaa760d3b5c)
- Call ID: fdca02db-9887-4657-9d2b-8aaa760d3b5c
-  Args:
-    literal_type: xsd:integer
-    literal_value: 1872
-    source: Prince_Bernhard_of_Lippe
     relation: :hasBirthYear
-  AddLiteral (557e4ec5-8db5-451f-be6c-21d9caf70894)
- Call ID: 557e4ec5-8db5-451f-be6c-21d9caf70894
-  Args:
-    literal_value: 1934
+    source: Prince_Sigismund_of_Prussia
     literal_type: xsd:integer
-    source: Prince_Bernhard_of_Lippe
+    literal_value: 1896
+  AddLiteral (ff6136e6-c83d-4351-80eb-02b712e093da)
+ Call ID: ff6136e6-c83d-4351-80eb-02b712e093da
+  Args:
+    literal_value: 1978
+    literal_type: xsd:integer
+    source: Prince_Sigismund_of_Prussia
     relation: :hasDeathYear
-  AssignClass (38968c5d-f4df-4add-b46f-f68228738176)
- Call ID: 38968c5d-f4df-4add-b46f-f68228738176
+  AssignClass (37f6f16e-dcb8-4e55-8cc5-f7606868910c)
+ Call ID: 37f6f16e-dcb8-4e55-8cc5-f7606868910c
   Args:
-    type: :Male
-    source: Male_Sex
-  AssignClass (15d9080b-4fc7-4dd3-b96a-59e537a79838)
- Call ID: 15d9080b-4fc7-4dd3-b96a-59e537a79838
-  Args:
-    type: :Sex
-    source: Male_Sex
-  AddTriple (6525d26d-bb48-49a5-99f1-0a6e91d25794)
- Call ID: 6525d26d-bb48-49a5-99f1-0a6e91d25794
-  Args:
-    target: Male_Sex
-    relation: :hasSex
-    source: Prince_Bernhard_of_Lippe
-  AssignClass (51a5c732-ed90-43ea-9ac1-7dae00f7ad42)
- Call ID: 51a5c732-ed90-43ea-9ac1-7dae00f7ad42
-  Args:
+    source: Prince_Henry_of_Prussia
     type: :Man
-    source: Prince_Bernhard_of_Lippe_Biesterfeld_Junior
-  AssignClass (b12ac02d-f76f-47b5-a0d8-c9f4c9a3f4a0)
- Call ID: b12ac02d-f76f-47b5-a0d8-c9f4c9a3f4a0
+  AssignClass (14f99b05-fe88-456b-ad8e-bf62840c8096)
+ Call ID: 14f99b05-fe88-456b-ad8e-bf62840c8096
   Args:
     type: :Person
-    source: Prince_Bernhard_of_Lippe_Biesterfeld_Junior
-  AddTriple (c99dbb21-8fb1-4eda-b335-6f4fb29238a9)
- Call ID: c99dbb21-8fb1-4eda-b335-6f4fb29238a9
+    source: Prince_Henry_of_Prussia
+  AssignClass (a0efe6ef-932a-4844-ab8d-2f7243dd822f)
+ Call ID: a0efe6ef-932a-4844-ab8d-2f7243dd822f
   Args:
-    target: Prince_Bernhard_of_Lippe
-    relation: :isSonOf
-    source: Prince_Bernhard_of_Lippe_Biesterfeld_Junior
-  AddTriple (2acc3782-5a36-426c-b8bf-0e5a36d2ef42)
- Call ID: 2acc3782-5a36-426c-b8bf-0e5a36d2ef42
-  Args:
-    source: Prince_Bernhard_of_Lippe
-    relation: :hasSon
-    target: Prince_Bernhard_of_Lippe_Biesterfeld_Junior
-  AssignClass (16e3a8fa-8d89-4a88-96e9-6dbb94a512df)
- Call ID: 16e3a8fa-8d89-4a88-96e9-6dbb94a512df
-  Args:
-    type: :Man
-    source: Ernest_II_Count_of_Lippe_Biesterfeld
-  AssignClass (c5988f1a-3d45-4cd1-ad39-738b2192a66c)
- Call ID: c5988f1a-3d45-4cd1-ad39-738b2192a66c
+    source: Princess_Irene_of_Hesse_and_by_Rhine
+    type: :Woman
+  AssignClass (3af0a33d-e2ff-4b0f-88e2-8f1d3af29c63)
+ Call ID: 3af0a33d-e2ff-4b0f-88e2-8f1d3af29c63
   Args:
     type: :Person
-    source: Ernest_II_Count_of_Lippe_Biesterfeld
-  AssignClass (6dda79d6-ffde-4cd6-8027-6af8f65d3ed4)
- Call ID: 6dda79d6-ffde-4cd6-8027-6af8f65d3ed4
+    source: Princess_Irene_of_Hesse_and_by_Rhine
+  AddTriple (768a4aee-3c25-4b51-9e3a-22f18a368355)
+ Call ID: 768a4aee-3c25-4b51-9e3a-22f18a368355
   Args:
-    type: :Ancestor
-    source: Ernest_II_Count_of_Lippe_Biesterfeld
-  AddTriple (83c2c74f-85e7-4c84-8010-7ea351459282)
- Call ID: 83c2c74f-85e7-4c84-8010-7ea351459282
-  Args:
-    target: Prince_Bernhard_of_Lippe
-    relation: :isFatherOf
-    source: Ernest_II_Count_of_Lippe_Biesterfeld
-  AddTriple (5b15bcb6-fe4e-48cf-a756-21bc913c6639)
- Call ID: 5b15bcb6-fe4e-48cf-a756-21bc913c6639
-  Args:
-    source: Prince_Bernhard_of_Lippe
+    source: Prince_Sigismund_of_Prussia
     relation: :hasFather
-    target: Ernest_II_Count_of_Lippe_Biesterfeld
-  AssignClass (53d0b971-4b26-42cb-89fd-6b5ffac95411)
- Call ID: 53d0b971-4b26-42cb-89fd-6b5ffac95411
+    target: Prince_Henry_of_Prussia
+  AddTriple (d6cf77e5-5387-4bba-b355-2540b38c1b13)
+ Call ID: d6cf77e5-5387-4bba-b355-2540b38c1b13
   Args:
-    type: :Woman
-    source: Countess_Karoline_von_Wartensleben
-  AssignClass (fc290437-1142-427b-a8b7-11e122206b3d)
- Call ID: fc290437-1142-427b-a8b7-11e122206b3d
-  Args:
-    type: :Person
-    source: Countess_Karoline_von_Wartensleben
-  AssignClass (b26c9350-91f8-485a-b590-ff9f1383bd97)
- Call ID: b26c9350-91f8-485a-b590-ff9f1383bd97
-  Args:
-    type: :Ancestor
-    source: Countess_Karoline_von_Wartensleben
-  AddTriple (8473ba89-3a78-4811-9892-253a9dea9aee)
- Call ID: 8473ba89-3a78-4811-9892-253a9dea9aee
-  Args:
-    source: Countess_Karoline_von_Wartensleben
-    target: Prince_Bernhard_of_Lippe
-    relation: :isMotherOf
-  AddTriple (7ccca2f9-91df-422a-825a-407a0a789674)
- Call ID: 7ccca2f9-91df-422a-825a-407a0a789674
-  Args:
-    source: Prince_Bernhard_of_Lippe
-    target: Countess_Karoline_von_Wartensleben
     relation: :hasMother
-  AssignClass (cad8070f-8dcc-405d-b641-df8d7e516db3)
- Call ID: cad8070f-8dcc-405d-b641-df8d7e516db3
-  Args:
-    type: :Man
-    source: Leopold_IV_Prince_of_Lippe
-  AssignClass (40eb3417-496d-4295-8e87-ba6eab82a451)
- Call ID: 40eb3417-496d-4295-8e87-ba6eab82a451
-  Args:
-    type: :Person
-    source: Leopold_IV_Prince_of_Lippe
-  AddTriple (5ae1b182-7b50-4e4e-b76a-c9db1d0ed8b9)
- Call ID: 5ae1b182-7b50-4e4e-b76a-c9db1d0ed8b9
-  Args:
-    target: Prince_Bernhard_of_Lippe
-    relation: :isBrotherOf
-    source: Leopold_IV_Prince_of_Lippe
-  AddTriple (269682db-6f92-466f-a67e-4ae76977fa82)
- Call ID: 269682db-6f92-466f-a67e-4ae76977fa82
-  Args:
-    source: Prince_Bernhard_of_Lippe
-    relation: :hasBrother
-    target: Leopold_IV_Prince_of_Lippe
-  AssignClass (1b392702-7ca9-4418-8f00-c734baba9c97)
- Call ID: 1b392702-7ca9-4418-8f00-c734baba9c97
+    source: Prince_Sigismund_of_Prussia
+    target: Princess_Irene_of_Hesse_and_by_Rhine
+  AssignClass (c2dc9b2a-1795-4f88-823d-4fcf56c2cb64)
+ Call ID: c2dc9b2a-1795-4f88-823d-4fcf56c2cb64
   Args:
     type: :Woman
-    source: Baroness_Armgard_von_Sierstorpff_Cramm
-  AssignClass (b9e788ff-c031-4b22-8129-60bfc4a1f564)
- Call ID: b9e788ff-c031-4b22-8129-60bfc4a1f564
+    source: Princess_Charlotte_of_Saxe-Altenburg
+  AssignClass (cfa54c60-c6ba-4c03-b8d9-fe8b36d09b4e)
+ Call ID: cfa54c60-c6ba-4c03-b8d9-fe8b36d09b4e
   Args:
     type: :Person
-    source: Baroness_Armgard_von_Sierstorpff_Cramm
-  AssignClass (e48c02e7-7ad4-4bb2-96db-eb7b07e46279)
- Call ID: e48c02e7-7ad4-4bb2-96db-eb7b07e46279
-  Args:
-    type: :Ancestor
-    source: Baroness_Armgard_von_Sierstorpff_Cramm
-  AddLiteral (1eb99466-1040-4a4d-9f2d-04e94c063b68)
- Call ID: 1eb99466-1040-4a4d-9f2d-04e94c063b68
+    source: Princess_Charlotte_of_Saxe-Altenburg
+  AddLiteral (d1bd911b-3d85-43bd-9400-6462571cbd44)
+ Call ID: d1bd911b-3d85-43bd-9400-6462571cbd44
   Args:
     relation: :hasMarriageYear
-    source: Prince_Bernhard_of_Lippe
-    literal_value: 1909
+    source: Prince_Sigismund_of_Prussia
     literal_type: xsd:integer
-  AssignClass (657218f4-873c-406d-b49d-7d448898ba07)
- Call ID: 657218f4-873c-406d-b49d-7d448898ba07
+    literal_value: 1919
+  AddTriple (3ad82742-3d02-49e6-bd79-64106f8357f2)
+ Call ID: 3ad82742-3d02-49e6-bd79-64106f8357f2
+  Args:
+    relation: :hasRelation
+    source: Prince_Sigismund_of_Prussia
+    target: Princess_Charlotte_of_Saxe-Altenburg
+  AssignClass (1cc34e9f-ff9f-4d25-9928-9f33b9bf9522)
+ Call ID: 1cc34e9f-ff9f-4d25-9928-9f33b9bf9522
   Args:
     type: :Man
-    source: Aschwin_of_Lippe_Biesterfeld
-  AssignClass (a39c6770-11a3-4daf-b964-dbe3f7146906)
- Call ID: a39c6770-11a3-4daf-b964-dbe3f7146906
+    source: Ernst_II_Duke_of_Saxe-Altenburg
+  AssignClass (7ea51738-53da-41f1-8a25-4ca2fbbbed8a)
+ Call ID: 7ea51738-53da-41f1-8a25-4ca2fbbbed8a
+  Args:
+    source: Ernst_II_Duke_of_Saxe-Altenburg
+    type: :Person
+  AddTriple (48b80a8b-3b66-46bf-a756-3df074a9d7c7)
+ Call ID: 48b80a8b-3b66-46bf-a756-3df074a9d7c7
+  Args:
+    relation: :hasFather
+    source: Princess_Charlotte_of_Saxe-Altenburg
+    target: Ernst_II_Duke_of_Saxe-Altenburg
+  AssignClass (37a7ad48-bace-42e0-ac97-b8383a1f82ff)
+ Call ID: 37a7ad48-bace-42e0-ac97-b8383a1f82ff
+  Args:
+    source: Alfred_of_Prussia
+    type: :Man
+  AssignClass (2829cfd2-e264-4bfd-bed0-5b4b7f07c202)
+ Call ID: 2829cfd2-e264-4bfd-bed0-5b4b7f07c202
+  Args:
+    source: Alfred_of_Prussia
+    type: :Person
+  AddLiteral (25bcb78f-50e5-44b4-8400-7a41ae96b523)
+ Call ID: 25bcb78f-50e5-44b4-8400-7a41ae96b523
+  Args:
+    relation: :hasBirthYear
+    source: Alfred_of_Prussia
+    literal_type: xsd:integer
+    literal_value: 1924
+  AddLiteral (5ce28bae-e687-4b0e-9106-0a0d6065bc63)
+ Call ID: 5ce28bae-e687-4b0e-9106-0a0d6065bc63
+  Args:
+    literal_type: xsd:integer
+    literal_value: 2013
+    source: Alfred_of_Prussia
+    relation: :hasDeathYear
+  AddTriple (78ab452c-f9a0-452a-b151-9cb7331d74be)
+ Call ID: 78ab452c-f9a0-452a-b151-9cb7331d74be
+  Args:
+    source: Alfred_of_Prussia
+    relation: :hasFather
+    target: Prince_Sigismund_of_Prussia
+  AssignClass (de3583cf-0af7-4de4-bc2d-a881993b562e)
+ Call ID: de3583cf-0af7-4de4-bc2d-a881993b562e
+  Args:
+    type: :Man
+    source: Kaiser_Wilhelm_II
+  AssignClass (f92f24d5-6cf6-456d-b1c3-1689b9b64fea)
+ Call ID: f92f24d5-6cf6-456d-b1c3-1689b9b64fea
   Args:
     type: :Person
-    source: Aschwin_of_Lippe_Biesterfeld
-  AddTriple (69480b4b-36b9-41c1-8c03-0d818490a4a7)
- Call ID: 69480b4b-36b9-41c1-8c03-0d818490a4a7
+    source: Kaiser_Wilhelm_II
+  AssignClass (625432b3-0e49-4278-8b90-e870489d28ca)
+ Call ID: 625432b3-0e49-4278-8b90-e870489d28ca
   Args:
-    relation: :isSonOf
-    target: Prince_Bernhard_of_Lippe
-    source: Aschwin_of_Lippe_Biesterfeld
-  AddTriple (0a0b6477-f5ff-46d8-be92-23c88b31f6ab)
- Call ID: 0a0b6477-f5ff-46d8-be92-23c88b31f6ab
+    type: :Woman
+    source: Tsarina_Alexandra_of_Russia
+  AssignClass (13d5cf74-3354-4117-a3f2-609020f5c18a)
+ Call ID: 13d5cf74-3354-4117-a3f2-609020f5c18a
   Args:
-    source: Prince_Bernhard_of_Lippe
-    relation: :hasSon
-    target: Aschwin_of_Lippe_Biesterfeld
-  AddTriple (8bfe3855-8c9d-497c-b38c-813e8f8dc7a3)
- Call ID: 8bfe3855-8c9d-497c-b38c-813e8f8dc7a3
+    source: Tsarina_Alexandra_of_Russia
+    type: :Person
+  AssignClass (3ceddbd6-0e1f-4c84-8c63-c3cd76e17f25)
+ Call ID: 3ceddbd6-0e1f-4c84-8c63-c3cd76e17f25
   Args:
-    target: Baroness_Armgard_von_Sierstorpff_Cramm
-    relation: :isSonOf
-    source: Aschwin_of_Lippe_Biesterfeld
-  AddTriple (18bf972d-707b-4389-8287-008ba4442f7d)
- Call ID: 18bf972d-707b-4389-8287-008ba4442f7d
+    source: Anna_Anderson
+    type: :Woman
+  AssignClass (46645cbc-c39e-4ec2-8b40-5912c4a14614)
+ Call ID: 46645cbc-c39e-4ec2-8b40-5912c4a14614
   Args:
-    target: Aschwin_of_Lippe_Biesterfeld
-    relation: :hasSon
-    source: Baroness_Armgard_von_Sierstorpff_Cramm
-  AddTriple (0cf598ec-2bd0-49a6-a1be-15d49b35fd49)
- Call ID: 0cf598ec-2bd0-49a6-a1be-15d49b35fd49
+    type: :Person
+    source: Anna_Anderson
+  AssignClass (ed5e1d43-a2f1-424d-abbf-a284640612da)
+ Call ID: ed5e1d43-a2f1-424d-abbf-a284640612da
   Args:
-    source: Prince_Bernhard_of_Lippe_Biesterfeld_Junior
-    relation: :isSonOf
-    target: Baroness_Armgard_von_Sierstorpff_Cramm
-  AddTriple (caef561b-368c-4379-8c61-d603b6ead563)
- Call ID: caef561b-368c-4379-8c61-d603b6ead563
+    type: :Woman
+    source: Grand_Duchess_Anastasia
+  AssignClass (91112fbd-d270-4c91-840a-f9158520c180)
+ Call ID: 91112fbd-d270-4c91-840a-f9158520c180
   Args:
-    source: Baroness_Armgard_von_Sierstorpff_Cramm
-    relation: :hasSon
-    target: Prince_Bernhard_of_Lippe_Biesterfeld_Junior
-  Finish (54596ddc-80e0-4dce-bf78-2606f35953d0)
- Call ID: 54596ddc-80e0-4dce-bf78-2606f35953d0
+    source: Grand_Duchess_Anastasia
+    type: :Person
+  AddTriple (5f300b3e-771b-4469-b101-d38c005dd21c)
+ Call ID: 5f300b3e-771b-4469-b101-d38c005dd21c
   Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
+    relation: :knownAs
+    source: Anna_Anderson
+    target: Grand_Duchess_Anastasia
+  Finish (3bceec69-a951-4783-b25f-860bb71993d5)
+ Call ID: 3bceec69-a951-4783-b25f-860bb71993d5
+  Args:
 
 ================================= Tool Message =================================
 
@@ -725,51 +755,46 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Countess_Karoline_von_Wartensleben a :Ancestor,
-          :Person,
+  data:Alfred_of_Prussia a :Man,
+          :Person ;
+      :hasBirthYear 1924 ;
+      :hasDeathYear 2013 ;
+      :hasFather data:Prince_Sigismund_of_Prussia .
+
+  data:Anna_Anderson a :Person,
           :Woman ;
-      :isMotherOf data:Prince_Bernhard_of_Lippe .
+      :knownAs data:Grand_Duchess_Anastasia .
 
-  data:Ernest_II_Count_of_Lippe_Biesterfeld a :Ancestor,
-          :Man,
+  data:Kaiser_Wilhelm_II a :Man,
+          :Person .
+
+  data:Tsarina_Alexandra_of_Russia a :Person,
+          :Woman .
+
+  data:Ernst_II_Duke_of_Saxe-Altenburg a :Man,
+          :Person .
+
+  data:Grand_Duchess_Anastasia a :Person,
+          :Woman .
+
+  data:Prince_Henry_of_Prussia a :Man,
+          :Person .
+
+  data:Prince_Sigismund_of_Prussia a :Man,
           :Person ;
-      :isFatherOf data:Prince_Bernhard_of_Lippe .
+      :hasBirthYear 1896 ;
+      :hasDeathYear 1978 ;
+      :hasFather data:Prince_Henry_of_Prussia ;
+      :hasMarriageYear 1919 ;
+      :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+      :hasRelation data:Princess_Charlotte_of_Saxe-Altenburg .
 
-  data:Leopold_IV_Prince_of_Lippe a :Man,
-          :Person ;
-      :isBrotherOf data:Prince_Bernhard_of_Lippe .
-
-  data:Male_Sex a :Male,
-          :Sex .
-
-  data:Aschwin_of_Lippe_Biesterfeld a :Man,
-          :Person ;
-      :isSonOf data:Baroness_Armgard_von_Sierstorpff_Cramm,
-          data:Prince_Bernhard_of_Lippe .
-
-  data:Baroness_Armgard_von_Sierstorpff_Cramm a :Ancestor,
-          :Person,
+  data:Princess_Charlotte_of_Saxe-Altenburg a :Person,
           :Woman ;
-      :hasSon data:Aschwin_of_Lippe_Biesterfeld,
-          data:Prince_Bernhard_of_Lippe_Biesterfeld_Junior .
+      :hasFather data:Ernst_II_Duke_of_Saxe-Altenburg .
 
-  data:Prince_Bernhard_of_Lippe_Biesterfeld_Junior a :Man,
-          :Person ;
-      :isSonOf data:Baroness_Armgard_von_Sierstorpff_Cramm,
-          data:Prince_Bernhard_of_Lippe .
-
-  data:Prince_Bernhard_of_Lippe a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1872 ;
-      :hasBrother data:Leopold_IV_Prince_of_Lippe ;
-      :hasDeathYear 1934 ;
-      :hasFather data:Ernest_II_Count_of_Lippe_Biesterfeld ;
-      :hasMarriageYear 1909 ;
-      :hasMother data:Countess_Karoline_von_Wartensleben ;
-      :hasSex data:Male_Sex ;
-      :hasSon data:Aschwin_of_Lippe_Biesterfeld,
-          data:Prince_Bernhard_of_Lippe_Biesterfeld_Junior .
+  data:Princess_Irene_of_Hesse_and_by_Rhine a :Person,
+          :Woman .
 
 
 
@@ -781,9 +806,207 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (83abec07-4afb-4682-873b-663e21ac947d)
- Call ID: 83abec07-4afb-4682-873b-663e21ac947d
+  ValidateShacl (6aa462e3-7ab8-417d-a6f0-57e8fcba1af0)
+ Call ID: 6aa462e3-7ab8-417d-a6f0-57e8fcba1af0
   Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:12
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Henry_of_Prussia, identified as the father of Prince_Sigismund_of_Prussia, lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Henry_of_Prussia', class=':Ancestor')
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Sigismund_of_Prussia, identified as the father of Alfred_of_Prussia, lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Sigismund_of_Prussia', class=':Ancestor')
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Irene_of_Hesse_and_by_Rhine, identified as the mother of Prince_Sigismund_of_Prussia, lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Irene_of_Hesse_and_by_Rhine', class=':Ancestor')
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Ernst_II_Duke_of_Saxe-Altenburg, identified as the father of Princess_Charlotte_of_Saxe-Altenburg, lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Ernst_II_Duke_of_Saxe-Altenburg', class=':Ancestor')
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Sigismund_of_Prussia, identified as the father of Alfred_of_Prussia, is already missing the :Ancestor class, which must be assigned.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Sigismund_of_Prussia', class=':Ancestor')
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Henry_of_Prussia, identified as the father of Prince_Sigismund_of_Prussia, lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Henry_of_Prussia', class=':Ancestor')
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Irene_of_Hesse_and_by_Rhine, identified as the mother of Prince_Sigismund_of_Prussia, lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Irene_of_Hesse_and_by_Rhine', class=':Ancestor')
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Ernst_II_Duke_of_Saxe-Altenburg, identified as the father of Princess_Charlotte_of_Saxe-Altenburg, lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Ernst_II_Duke_of_Saxe-Altenburg', class=':Ancestor')
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Sigismund_of_Prussia, identified as the father of Alfred_of_Prussia, lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Sigismund_of_Prussia', class=':Ancestor')
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Prince_Henry_of_Prussia, identified as the father of Prince_Sigismund_of_Prussia, lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Prince_Henry_of_Prussia', class=':Ancestor')
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Princess_Irene_of_Hesse_and_by_Rhine, identified as the mother of Prince_Sigismund_of_Prussia, lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Princess_Irene_of_Hesse_and_by_Rhine', class=':Ancestor')
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Ernst_II_Duke_of_Saxe-Altenburg, identified as the father of Princess_Charlotte_of_Saxe-Altenburg, lacks the required :Ancestor class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(node='Ernst_II_Duke_of_Saxe-Altenburg', class=':Ancestor')
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  AssignClass (a0a2f6d3-73c3-414f-8b1e-a99e0a73da30)
+ Call ID: a0a2f6d3-73c3-414f-8b1e-a99e0a73da30
+  Args:
+    source: Prince_Henry_of_Prussia
+    type: :Ancestor
+  AssignClass (26e502e9-e7a1-4e6d-b0fe-83158c5becd1)
+ Call ID: 26e502e9-e7a1-4e6d-b0fe-83158c5becd1
+  Args:
+    source: Prince_Sigismund_of_Prussia
+    type: :Ancestor
+  AssignClass (4c5cadf7-0e3e-4b88-9afd-dda05fe3c73b)
+ Call ID: 4c5cadf7-0e3e-4b88-9afd-dda05fe3c73b
+  Args:
+    source: Princess_Irene_of_Hesse_and_by_Rhine
+    type: :Ancestor
+  AssignClass (145b26a9-f11f-4932-8d98-511df1936ccc)
+ Call ID: 145b26a9-f11f-4932-8d98-511df1936ccc
+  Args:
+    source: Ernst_II_Duke_of_Saxe-Altenburg
+    type: :Ancestor
+  ValidateShacl (236aa14e-5aa8-4a1a-b8aa-4fff716f86e0)
+ Call ID: 236aa14e-5aa8-4a1a-b8aa-4fff716f86e0
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:Alfred_of_Prussia a :Man,
+          :Person ;
+      :hasBirthYear 1924 ;
+      :hasDeathYear 2013 ;
+      :hasFather data:Prince_Sigismund_of_Prussia .
+
+  data:Anna_Anderson a :Person,
+          :Woman ;
+      :knownAs data:Grand_Duchess_Anastasia .
+
+  data:Kaiser_Wilhelm_II a :Man,
+          :Person .
+
+  data:Tsarina_Alexandra_of_Russia a :Person,
+          :Woman .
+
+  data:Ernst_II_Duke_of_Saxe-Altenburg a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Grand_Duchess_Anastasia a :Person,
+          :Woman .
+
+  data:Prince_Henry_of_Prussia a :Ancestor,
+          :Man,
+          :Person .
+
+  data:Prince_Sigismund_of_Prussia a :Ancestor,
+          :Man,
+          :Person ;
+      :hasBirthYear 1896 ;
+      :hasDeathYear 1978 ;
+      :hasFather data:Prince_Henry_of_Prussia ;
+      :hasMarriageYear 1919 ;
+      :hasMother data:Princess_Irene_of_Hesse_and_by_Rhine ;
+      :hasRelation data:Princess_Charlotte_of_Saxe-Altenburg .
+
+  data:Princess_Charlotte_of_Saxe-Altenburg a :Person,
+          :Woman ;
+      :hasFather data:Ernst_II_Duke_of_Saxe-Altenburg .
+
+  data:Princess_Irene_of_Hesse_and_by_Rhine a :Ancestor,
+          :Person,
+          :Woman .
+
+
 
 ================================= Tool Message =================================
 
@@ -793,6 +1016,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (87649165-d21c-4efa-a65a-f0a58837a5a0)
- Call ID: 87649165-d21c-4efa-a65a-f0a58837a5a0
+  Finish (30221d7c-0992-4f9e-b2ab-cb59171fa955)
+ Call ID: 30221d7c-0992-4f9e-b2ab-cb59171fa955
   Args:

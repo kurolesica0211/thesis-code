@@ -16,42 +16,42 @@
       "qid": "Q115477",
       "label": "Louise Mountbatten",
       "distance": 0,
-      "gender": "female"
-    },
-    {
-      "uri": "http://example.com/data#Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma",
-      "qid": "Q157068",
-      "label": "Louis Mountbatten, 1st Earl Mountbatten of Burma",
-      "distance": 1,
-      "gender": "male"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Prince_Louis_of_Battenberg",
       "qid": "Q57468",
       "label": "Prince Louis of Battenberg",
       "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
-      "qid": "Q80976",
-      "label": "Prince Philip, Duke of Edinburgh",
-      "distance": 1,
-      "gender": "male"
-    },
-    {
-      "uri": "http://example.com/data#Princess_Alice_of_Battenberg",
-      "qid": "Q116062",
-      "label": "Princess Alice of Battenberg",
-      "distance": 1,
-      "gender": "female"
+      "gender": null
     },
     {
       "uri": "http://example.com/data#Princess_Victoria_of_Hesse_and_by_Rhine",
       "qid": "Q57658",
       "label": "Princess Victoria of Hesse and by Rhine",
       "distance": 1,
-      "gender": "female"
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma",
+      "qid": "Q157068",
+      "label": "Louis Mountbatten, 1st Earl Mountbatten of Burma",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Princess_Alice_of_Battenberg",
+      "qid": "Q116062",
+      "label": "Princess Alice of Battenberg",
+      "distance": 2,
+      "gender": null
+    },
+    {
+      "uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
+      "qid": "Q80976",
+      "label": "Prince Philip, Duke of Edinburgh",
+      "distance": 3,
+      "gender": null
     }
   ],
   "entities": [
@@ -65,12 +65,12 @@
       "ground_truth_uri": "http://example.com/data#Princess_Alice_of_Battenberg",
       "ground_truth_qid": "Q116062",
       "ground_truth_label": "Princess Alice of Battenberg",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Alice of Battenberg",
       "best_candidate_label": "Princess Alice of Battenberg",
       "best_candidate_qid": "Q116062",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -83,12 +83,12 @@
       "ground_truth_uri": "http://example.com/data#Louis_Mountbatten-_1st_Earl_Mountbatten_of_Burma",
       "ground_truth_qid": "Q157068",
       "ground_truth_label": "Louis Mountbatten, 1st Earl Mountbatten of Burma",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_distance": 2,
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Louis Mountbatten",
       "best_candidate_label": "Louis Mountbatten, 1st Earl Mountbatten of Burma",
       "best_candidate_qid": "Q157068",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -102,11 +102,11 @@
       "ground_truth_qid": "Q57468",
       "ground_truth_label": "Prince Louis of Battenberg",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Louis of Battenberg",
       "best_candidate_label": "Prince Louis of Battenberg",
       "best_candidate_qid": "Q57468",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -120,29 +120,11 @@
       "ground_truth_qid": "Q115477",
       "ground_truth_label": "Louise Mountbatten",
       "ground_truth_distance": 0,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Louise Mountbatten",
       "best_candidate_label": "Louise Mountbatten",
       "best_candidate_qid": "Q115477",
-      "best_candidate_gender": "female",
-      "best_candidate_score": 1.0
-    },
-    {
-      "extracted_uri": "http://example.org/data/Prince_Philip",
-      "extracted_local_name": "Prince_Philip",
-      "embedding_text": "Prince Philip",
-      "extracted_gender": "male",
-      "matched": true,
-      "score": 1.0,
-      "ground_truth_uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
-      "ground_truth_qid": "Q80976",
-      "ground_truth_label": "Prince Philip, Duke of Edinburgh",
-      "ground_truth_distance": 1,
-      "ground_truth_gender": "male",
-      "best_candidate_match_text": "Prince Philip",
-      "best_candidate_label": "Prince Philip, Duke of Edinburgh",
-      "best_candidate_qid": "Q80976",
-      "best_candidate_gender": "male",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
     },
     {
@@ -156,12 +138,30 @@
       "ground_truth_qid": "Q57658",
       "ground_truth_label": "Princess Victoria of Hesse and by Rhine",
       "ground_truth_distance": 1,
-      "ground_truth_gender": "female",
+      "ground_truth_gender": null,
       "best_candidate_match_text": "Victoria of Hesse and by Rhine",
       "best_candidate_label": "Princess Victoria of Hesse and by Rhine",
       "best_candidate_qid": "Q57658",
-      "best_candidate_gender": "female",
+      "best_candidate_gender": null,
       "best_candidate_score": 1.0
+    },
+    {
+      "extracted_uri": "http://example.org/data/Philip_Duke_of_Edinburgh",
+      "extracted_local_name": "Philip_Duke_of_Edinburgh",
+      "embedding_text": "Philip Duke of Edinburgh",
+      "extracted_gender": "male",
+      "matched": true,
+      "score": 0.8666666666666667,
+      "ground_truth_uri": "http://example.com/data#Prince_Philip-_Duke_of_Edinburgh",
+      "ground_truth_qid": "Q80976",
+      "ground_truth_label": "Prince Philip, Duke of Edinburgh",
+      "ground_truth_distance": 3,
+      "ground_truth_gender": null,
+      "best_candidate_match_text": "Prince Philip- Duke of Edinburgh",
+      "best_candidate_label": "Prince Philip, Duke of Edinburgh",
+      "best_candidate_qid": "Q80976",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.8666666666666667
     },
     {
       "extracted_uri": "http://example.org/data/Gustaf_VI_Adolf",
@@ -175,11 +175,11 @@
       "ground_truth_label": null,
       "ground_truth_distance": null,
       "ground_truth_gender": null,
-      "best_candidate_match_text": "Louis Milford Haven",
-      "best_candidate_label": "Prince Louis of Battenberg",
-      "best_candidate_qid": "Q57468",
-      "best_candidate_gender": "male",
-      "best_candidate_score": 0.35294117647058826
+      "best_candidate_match_text": "Countess of Gripsholm",
+      "best_candidate_label": "Louise Mountbatten",
+      "best_candidate_qid": "Q115477",
+      "best_candidate_gender": null,
+      "best_candidate_score": 0.3888888888888889
     }
   ],
   "summary": {

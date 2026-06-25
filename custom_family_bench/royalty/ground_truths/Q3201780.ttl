@@ -7,74 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin" ;
-    data:posIndicesFull "480:533" ;
-    data:posIndicesPart "1149:1156" ;
-    data:wdtLink wdt:Q2525746 ;
-    :alsoKnownAs "Duchess Elisabeth of Mecklenburg-Schwerin" ;
-    :hasChild data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
-    :hasSex data:female ;
-    :hasSon data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
-    :isMotherOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
-    :isParentOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg .
-
-data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Frederick Augustus II, Grand Duke of Oldenburg" ;
-    data:posIndicesFull "429:450",
-        "429:475" ;
-    data:posIndicesPart "1143:1148",
-        "684:689",
-        "690:694",
-        "698:707",
-        "823:828",
-        "829:833",
-        "884:888",
-        "892:901",
-        "936:945" ;
-    data:wdtLink wdt:Q62129 ;
-    :alsoKnownAs "Frederick Augustus II",
-        "Friedrich August von Oldenburg" ;
-    :hasChild data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
-    :hasSex data:male ;
-    :hasSon data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
-    :isFatherOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
-    :isParentOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg .
-
-data:Princess_Helene_of_Waldeck_and_Pyrmont a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Helene of Waldeck and Pyrmont" ;
-    data:posIndicesFull "178:216",
-        "359:397" ;
-    data:posIndicesPart "1001:1009",
-        "586:593",
-        "598:605",
-        "610:618" ;
-    data:wdtLink wdt:Q2280905 ;
-    :alsoKnownAs "Princess Helena of Waldeck and Pyrmont" ;
-    :hasChild data:Duke_Friedrich_August_of_Oldenburg ;
-    :hasSex data:female ;
-    :hasSon data:Duke_Friedrich_August_of_Oldenburg ;
-    :isMotherOf data:Duke_Friedrich_August_of_Oldenburg ;
-    :isParentOf data:Duke_Friedrich_August_of_Oldenburg .
-
-data:Duke_Friedrich_August_of_Oldenburg a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Duke_Friedrich_August_of_Oldenburg a :Person ;
     rdfs:label "Duke Friedrich August of Oldenburg" ;
     data:posIndicesFull "0:34" ;
     data:posIndicesPart "1184:1193",
@@ -95,20 +28,43 @@ data:Duke_Friedrich_August_of_Oldenburg a :Man,
         "967:976",
         "977:983" ;
     data:wdtLink wdt:Q3201780 ;
-    :hasFather data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg ;
-    :hasMother data:Princess_Helene_of_Waldeck_and_Pyrmont ;
     :hasParent data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
         data:Princess_Helene_of_Waldeck_and_Pyrmont ;
-    :hasSex data:male ;
-    :isChildOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
-        data:Princess_Helene_of_Waldeck_and_Pyrmont ;
-    :isSonOf data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg,
-        data:Princess_Helene_of_Waldeck_and_Pyrmont .
+    :hasSex data:male .
 
-data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin a :Person ;
+    rdfs:label "Duchess Elisabeth Alexandrine of Mecklenburg-Schwerin" ;
+    data:posIndicesFull "480:533" ;
+    data:posIndicesPart "1149:1156" ;
+    data:wdtLink wdt:Q2525746 ;
+    :alsoKnownAs "Duchess Elisabeth of Mecklenburg-Schwerin" ;
+    :hasSex data:female .
+
+data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg a :Person ;
+    rdfs:label "Frederick Augustus II, Grand Duke of Oldenburg" ;
+    data:posIndicesFull "429:450",
+        "429:475" ;
+    data:posIndicesPart "1143:1148",
+        "684:689",
+        "690:694",
+        "698:707",
+        "823:828",
+        "829:833",
+        "884:888",
+        "892:901",
+        "936:945" ;
+    data:wdtLink wdt:Q62129 ;
+    :alsoKnownAs "Frederick Augustus II",
+        "Friedrich August von Oldenburg" ;
+    :hasSex data:male .
+
+data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg a :Person ;
     rdfs:label "Nikolaus, Hereditary Grand Duke of Oldenburg" ;
     data:posIndicesFull "129:173",
         "295:339" ;
@@ -124,17 +80,23 @@ data:Nikolaus-_Hereditary_Grand_Duke_of_Oldenburg a :Ancestor,
         "936:945" ;
     data:wdtLink wdt:Q64976 ;
     :alsoKnownAs "Nicolau d'Oldenburg" ;
-    :hasChild data:Duke_Friedrich_August_of_Oldenburg ;
-    :hasFather data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
-    :hasMother data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin ;
     :hasParent data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
         data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
-    :hasSex data:male ;
-    :hasSon data:Duke_Friedrich_August_of_Oldenburg ;
-    :isChildOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
-        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg ;
-    :isFatherOf data:Duke_Friedrich_August_of_Oldenburg ;
-    :isParentOf data:Duke_Friedrich_August_of_Oldenburg ;
-    :isSonOf data:Duchess_Elisabeth_Alexandrine_of_Mecklenburg-Schwerin,
-        data:Frederick_Augustus_II-_Grand_Duke_of_Oldenburg .
+    :hasSex data:male .
+
+data:Princess_Helene_of_Waldeck_and_Pyrmont a :Person ;
+    rdfs:label "Princess Helene of Waldeck and Pyrmont" ;
+    data:posIndicesFull "178:216",
+        "359:397" ;
+    data:posIndicesPart "1001:1009",
+        "586:593",
+        "598:605",
+        "610:618" ;
+    data:wdtLink wdt:Q2280905 ;
+    :alsoKnownAs "Princess Helena of Waldeck and Pyrmont" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:male a :Male .
 

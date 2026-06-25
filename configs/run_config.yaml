@@ -16,16 +16,16 @@ runtime:
   prompt_caching_enabled: true
   max_iterations: 20
   min_iterations: 0
-  violation_translation: true
-  shacl_validation: true
+  violation_translation: false
+  shacl_validation: false
   same_data_graph: false                # (deprecated) means that pipeline will create a single huge KG across all texts, rather than many separate ones
-  enforce_shacl: true
+  enforce_shacl: false
   async: true
 
 output:
   base_dir: results
   custom_tag: royalty
-  run_dir: results/royalty_gemini_with_shacl
+  run_dir: results/royalty_gemini_without_shacl
 
 dataset:
   source: custom_family_bench

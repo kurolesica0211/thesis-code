@@ -1,0 +1,156 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Isabelle_of_Orléans-Braganza a :Person,
+        :Woman ;
+    rdfs:label "Isabelle of Orléans-Braganza"^^xsd:string ;
+    data:posIndicesFull "1000:1028"^^xsd:string ;
+    data:wdtLink wdt:Q261284 ;
+    :alsoKnownAs "Isabelle of Orleans-Braganza"^^xsd:string ;
+    :hasRelation data:Isabelle_of_Orléans-Braganza ;
+    :hasSex data:female ;
+    :hasSister data:Isabelle_of_Orléans-Braganza ;
+    :isBloodrelationOf data:Isabelle_of_Orléans-Braganza ;
+    :isSiblingOf data:Isabelle_of_Orléans-Braganza ;
+    :isSisterOf data:Isabelle_of_Orléans-Braganza .
+
+data:Duchess_Rosa-_Duchess_of_Württemberg a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Duchess Rosa, Duchess of Württemberg"^^xsd:string ;
+    data:posIndicesFull "762:789"^^xsd:string,
+        "762:810"^^xsd:string ;
+    data:posIndicesPart "1214:1221"^^xsd:string,
+        "853:864"^^xsd:string ;
+    data:wdtLink wdt:Q84971 ;
+    :alsoKnownAs "Archduchess Rosa of Austria"^^xsd:string,
+        "Archduchess Rosa of Austria, Princess of Tuscany"^^xsd:string,
+        "Duchess Rosa, The Duchess of Württemberg"^^xsd:string ;
+    :hasChild data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :hasDaughter data:Duchess_Marie_Thérèse_of_Württemberg ;
+    :hasRelation data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :hasSon data:Duke_Carl-_Duke_of_Württemberg ;
+    :isAncestorOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :isAuntOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :isBloodrelationOf data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :isMotherOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :isParentOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :isSiblingOf data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :isSisterOf data:Duchess_Rosa-_Duchess_of_Württemberg .
+
+data:Philipp_Albrecht-_Duke_of_Württemberg a :Ancestor,
+        :Man,
+        :Person ;
+    rdfs:label "Philipp Albrecht, Duke of Württemberg"^^xsd:string ;
+    data:posIndicesFull "702:739"^^xsd:string ;
+    data:posIndicesPart "853:864"^^xsd:string ;
+    data:wdtLink wdt:Q62965 ;
+    :alsoKnownAs "Duke Philipp Albrecht of Württemberg, Duke of Württemberg"^^xsd:string,
+        "Duke Philipp Albrecht, The Duke of Württemberg"^^xsd:string ;
+    :hasBrother data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasChild data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :hasDaughter data:Duchess_Marie_Thérèse_of_Württemberg ;
+    :hasRelation data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasSex data:male ;
+    :hasSon data:Duke_Carl-_Duke_of_Württemberg ;
+    :isAncestorOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :isBloodrelationOf data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :isBrotherOf data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :isFatherOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :isParentOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :isSiblingOf data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :isUncleOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg .
+
+data:Duchess_Marie_Thérèse_of_Württemberg a :Person,
+        :Woman ;
+    rdfs:label "Duchess Marie Thérèse of Württemberg"^^xsd:string ;
+    data:wdtLink wdt:Q3292297 ;
+    :alsoKnownAs "Maria Theresa Herzogin von Württemberg"^^xsd:string,
+        "Princess Maria Theresa of Wurttemberg"^^xsd:string ;
+    :hasAncestor data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasBrother data:Duke_Carl-_Duke_of_Württemberg ;
+    :hasFather data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasMother data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :hasParent data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasRelation data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasSex data:female ;
+    :hasSister data:Duchess_Marie_Thérèse_of_Württemberg ;
+    :isBloodrelationOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :isChildOf data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :isDaughterOf data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :isSiblingOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :isSisterOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg .
+
+data:Duke_Carl-_Duke_of_Württemberg a :Man,
+        :Person ;
+    rdfs:label "Duke Carl, Duke of Württemberg"^^xsd:string ;
+    data:posIndicesFull "1102:1127"^^xsd:string ;
+    data:wdtLink wdt:Q62385 ;
+    :alsoKnownAs "Carl, Duke of Württemberg"^^xsd:string,
+        "Karl Maria Herzog von Württemberg"^^xsd:string ;
+    :hasAncestor data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasBrother data:Duke_Carl-_Duke_of_Württemberg ;
+    :hasFather data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasMother data:Duchess_Rosa-_Duchess_of_Württemberg ;
+    :hasParent data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasRelation data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :hasSex data:male ;
+    :hasSister data:Duchess_Marie_Thérèse_of_Württemberg ;
+    :isBloodrelationOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :isBrotherOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :isChildOf data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg ;
+    :isSiblingOf data:Duchess_Marie_Thérèse_of_Württemberg,
+        data:Duke_Carl-_Duke_of_Württemberg ;
+    :isSonOf data:Duchess_Rosa-_Duchess_of_Württemberg,
+        data:Philipp_Albrecht-_Duke_of_Württemberg .
+

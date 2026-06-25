@@ -85,127 +85,70 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Henri d'Orléans (Henri Robert Ferdinand Marie d'Orléans; 5 July 1908 – 19 June 1999), was the Orléanist pretender to the defunct throne of France as Henry VI from 1940 until his death in 1999.
-Henri was the direct descendant of Philippe I, Duke of Orléans, son of Louis XIII.
-He was also a descendant of Louis XIV through a female line, from his legitimized daughter Françoise Marie de Bourbon, as well as the great-great-grandson, by four different lines of descent, of Louis Philippe I.
-The son of Jean, Duke of Guise, Henri was forbidden to enter France for much of his life.
-Henri worked to restore the French monarchy in a parliamentary form, and discussed the topic with Charles de Gaulle.
-Upon his death in 1999, his son Henri succeeded him as Head of the House of Orléans.
-Here, Henri rose at 4 am daily, accompanying his father to oversee livestock management and crop production on their scattered lands, later in the day being tutored by European governesses and his mother: He acquired fluency in French, Arabic, English, German, Italian and Spanish.
-Being rebuffed by France, Belgium and the United Kingdom, Prince Jean finally took his family back to Morocco and farming.
-In 1921, Henri's governesses were replaced with a series of preceptors, all coming from France.
-In 1923, the abbé Thomas took over Henri's instruction and, being less traditional in his approach, awakened in his charge a hitherto undetected thirst for knowledge.
-Using the wedding of the prince's sister that year in France as an opportunity, Thomas obtained permission to take Henri to the Parisian banlieues of Meudon and Issy-les-Moulineaux, then working class slums in which the abbé would volunteer to serve the needy daily, bringing Henri into close contact with day laborers.
-After a year Thomas, whose health suffered in Morocco, was replaced as Henri's preceptor by abbé Dartein, who accompanied the family to France in 1924, preparing the prince for his collegiate matriculation while they occupied an apartment near his parents in Paris.
-Henri began a two-year study of mathematics and the sciences at the Catholic University of Louvain in 1924, studying the law for the two years following.
-From across the border in France came scholars and veterans of renown to coach Henri for his future role as a royalist leader, including jurist Ernest Perrot, military strategist Général Henri de Gondrecourt and the diplomat Charles Benoist, a member of the Académie des Sciences Morales et Politiques who would serve as his advisor from 1930.
-Dauphin in pretence
+Henri Philippe Pierre Marie d'Orléans (14 June 1933 – 21 January 2019) was the Orléanist pretender to the defunct French throne as Henry VII.
+Henri was a retired military officer as well as an author and painter.
+Early life
 
-In 1926, Henri became the Dauphin of France in pretence when his father became the Orléanist claimant to the defunct throne upon the death of his maternal uncle, Philippe, Duke of Orleans.
-In 1939, after being refused admission to both the French and the British armed forces, Henri was allowed to join the French Foreign Legion.
-Orléanist pretender
+He was the first son of Henri, Count of Paris (1908–1999), and his wife Princess Isabelle of Orléans-Braganza, and was born in Woluwe-Saint-Pierre, Belgium, a law in 1886 having permanently exiled from France the heads of its formerly reigning dynasties and their eldest sons.
+Despite the ban, while living in Belgium Henri occasionally accompanied his mother on brief visits to France and, later, to his mother's relatives in Brazil.
+While his father sought to play a role in the French resistance, Henri, in 1940 a child of 7, remained at Larache with his mother, siblings, grandmother and father's sisters' families during the Nazi occupation of France, sharing a small desert home that lacked electricity.
+Advised by Henri Giraud's Moroccan command that the Orléans had become unwelcome in the protectorate following the assassination of Vichy regime collaborater François Darlan by the monarchist Fernand Bonnier de La Chapelle, the family relocated to Pamplona in Spain until 1947, when they took up residence at the Quinta do Anjinho, an estate near Sintra, on the Portuguese Riviera.
+During that year, President Vincent Auriol allowed Henri and his brother François to visit France, and in 1948 he was allowed to enroll in a lycée in Bordeaux.
+The law of exile was abrogated in 1950, allowing Henri to repatriate with his parents.
+Later that year, his parents purchased an estate near Paris, the Manoir du Cœur-Volant in Louveciennes, which became Henri's first home in France.
+Henri studied at the Institut d'Études Politiques de Paris (Sciences Po), obtaining his bac in 1957, and on 30 June of that year, his father conferred upon him, as the heir apparent of his house, the title of "Count of Clermont", by which he was generally known during his father's lifetime.
+Career
 
-World War II
-
-Henri became pretender to the defunct French throne on 25 August 1940 when his father died.
-Henri was a "gentlemen farmer" in Morocco in the course of 1942.
-In mid-November 1942, after Admiral François Darlan's armistice with the Allied invaders of North Africa, Vichy intelligence official Henri d'Astier de la Vigerie attempted to promote a royalist coup (d'Astier had previously conspired with the Allies to aid the invasion).
-He proposed that Henri would appear to head a French government composed of all political tendencies, and maintain "neutrality until the day comes when the French nation can freely decide for itself."
-Ridgeway was taken aback by the proposal, but was unaware that d'Astier's colleagues, Abbé Cordier and Master-Sergeant Sabatier (a French instructor at an OSS-SOE camp in Algiers), had secretly brought Henri from Morocco to d'Astier's apartment in Algiers.
-Post war
-
-In 1947, Henri and his family took up residence at the Quinta do Anjinho, an estate in Sintra, on the Portuguese Riviera.
-In 1950, after the law of exile was rescinded, Henri returned to France.
-During his tenure as pretender to the defunct throne, Henri used the majority of his family's great wealth, selling off family jewels, paintings, furniture and properties to support his political cause and large family, as well as establishments in Belgium, North Africa, Brazil, Portugal and France.
-Political activity
-
-Unlike his father, Henri devoted his life to politics.
-During World War II, Henri was initially sympathetic to Vichy France.
-Laval offered Henri the unglamorous position of Minister of Food, which he declined.
-In Algeria, Henri attempted to convince the French military governor not to oppose an Anglo-American military landing.
-Henri had correctly predicted such a thing occurring, but at the time he was laughed at by the officers.
-Henri also tried to mediate between Charles de Gaulle and Henri Giraud, when the two men were competing for control of Free France.
-Between 1940 and 1941, the Gaullist camp offered Henri an invitation to go to London, which he declined.
-Henri feared that if he accepted the offer, he would have become an émigré, like the Bourbons who returned to France after Napoleon's defeat.
-Henri was staunchly opposed to the idea of siding with one political party, wishing instead to pursue a path of unity and not contribute to France's "infernal divisiveness."
-"
+From October 1959 to April 1962, Henri worked at the Secretariat-General for National Defence and Security as a member of the French Foreign Legion.
+Returning to civilian life in 1967, Henri and his family briefly occupied the Blanche Neige pavilion on the grounds of his father's Cœur-Volant estate before renting an apartment of their own in the 15th arrondissement of Paris.
+Henri wrote several books, including:
 
 
-In 1948, Henri began publishing a monthly bulletin, which soon possessed 30,000 subscribers.
-In 1950, the French Parliament abrogated the Law of Exile, permitting Henri to return.
-So we have to make do with Henri, who strikes a royal enough pose, I guess.
-In 1954, Henri met Charles de Gaulle and continued their relationship through correspondence.
-In 1958, Henri gave his support to de Gaulle, who was called back from his self-imposed exile to save the French Republic from insurrection in Paris.
-Thereafter, Henri became a frequent visitor to the Élysée Palace, where de Gaulle waited for Henri "by the staircase or outside, reserved a special armchair for him and lit his cigarette."
-There, they frequently discussed French history together, with Henri noting that de Gaulle loved to pronounce the word 'king'.
-In 1960, de Gaulle told Henri that "Monseigneur, I believe deeply in the value of the monarchy, and I am certain as well that this regime is the one best suited to our poor country."
-The following year, de Gaulle dispatched Henri on a tour to Libya, Ethiopia, Iran, and Lebanon, with the purpose of explaining France's Algeria policy, serving as de Gaulle's special representative, or "pro-consul."
-During this time, Henri befriended Hassan II of Morocco and Habib Bourguiba.
-In 1962, de Gaulle informed Henri in strict confidence that he had arranged the French presidential election so that the head of the royal house could succeed him as president of the Republic.
-However, by 1964, de Gaulle changed his mind and told Henri of his decision to run for re-election, which he won.
-By 1968, Henri ceased publication of his paper over his increasing disagreements with the Gaullists.
-The Countess of Paris remarked that "Under de Gaulle, Henri came two fingers close to becoming king.
-"
+Henri was also a painter and launched his own brand of perfume.
+Marriages and children
+
+Henri met Duchess Marie Therese of Württemberg (born 1934), like himself a descendant of King Louis-Philippe, at a ball given by the Thurn and Taxis family in Munich.
+Five children were born from this union:
 
 
-Following de Gaulle's death in 1970, his son Philippe de Gaulle told Henri, "Monseigneur, my father often told me that if circumstances had been different, he would have been happy to be your faithful and loyal servant."
-In 1979, Henri published his book Mémoires d'exil et de combats, which revealed to the public that de Gaulle had asked Henri to prepare himself for the 1965 presidential elections in France.
-In a latter interview, Henri stated "At all times de Gaulle desired restoration, I am convinced of it.
-However, Henri also noted that "It was difficult to get anywhere without de Gaulle, He agreed to favor my ascension to the highest point, but he didn't understand that it was necessary to give me the means of getting there.
-"
+In 1984, Henri and Marie-Thérèse were divorced.
+On 31 October 1984 Henri entered a civil marriage with Micaëla Anna María Cousiño y Quiñones de León (1938–2022), daughter of Luis Cousiño y Sebire and his wife, Antonia Maria Quiñones de Léon y Bañuelos, 4th Marquesa de San Carlos, and who had previously been divorced from Jean-Robert Bœuf.
+For remarrying without consent, Henri's father initially declared him disinherited, substituting the non-dynastic title Comte de Mortain for his son's Clermont countship (the latter once held in appanage by a son of Louis IX of France, who became ancestor of the Bourbon-Orléans line).
+Henri, though, refused all mail addressed to him as "Mortain".
+On 27 February 1984 Marie-Thérèse, the former Countess of Clermont, was granted the title Duchess of Montpensier by her father-in-law.
+On 11 February 1989 Henri was informed, by a hand-delivered letter written by his former wife, of the engagement of their eldest child Marie, to Prince Gundakar of Liechtenstein, a cousin of the ruler of that principality, the wedding date being set for 29 July 1989.
+Although Henri acknowledged, in a 12 May 1989 Point de Vue interview, that it had been three years since he had seen Marie, he and his second wife, Micaëla Cousiño, had been welcomed for the first time to the home of his mother, the Countess of Paris, that day: Henri further acknowledged to the press that, Marie having written to invite him to her wedding, he looked forward to conducting her to the altar, rumours to the contrary notwithstanding.
+At the engagement party held the next day at the Palais Pallavicini, the Vienna home of the fiancé's parents, photographs were taken, and would later be published, showing Henri speaking cordially with his daughter, sons, former wife and future son-in-law.
+However, it was on this occasion that Henri learned that he would not be escorting Marie to her bridegroom during the wedding.
+Meanwhile, Marie-Thérèse had sent out invitations to the wedding in her name alone, omitting not only mention of Marie's father, but also of her grandfather, Monseigneur the Count of Paris who, until then, had largely sided with the Duchess of Montpensier in family matters and had consented to his granddaughter's choice of a spouse.
+Henri and his father refused to attend the wedding but Marie proceeded to marry civilly at Dreux's city hall on 22 July 1989, and religiously at the castle of her mother's brother in Germany, on 29 July 1989.
+All but two of Henri's eight siblings also boycotted the ceremonies, but his sister Diane (wife of Montpensier's brother) hosted, and Henri's mother, Madame the Countess of Paris, was a guest at the religious wedding.
+Tensions lessened after several years, and on 7 March 1991 Henri's father reinstated him as heir apparent and Count of Clermont, simultaneously giving Micaëla the title "Princesse de Joinville".
+In 1980, Henri joined the Grand Orient de France where he became Grand Master of the regular Masonic Lodge "Lys de France" No 1297.
+Head of house
 
+Until he succeeded his father as royal claimant, Henri and his second wife occupied an apartment in Paris.
+On 19 June 1999, Henri's father died and he became the new head of the House of Orléans.
+He took the traditional title, Count of Paris, adding an ancient one, Duke of France, not borne by his Orléans or Bourbon forebears, but used a thousand years ago by his ancestors, before Hugh Capet took the title of king.
+His wife assumed the title "Duchess of France", deferring to the continued use of "Countess of Paris" by Henri's widowed mother until her death on 5 July 2003, whereupon Micaela assumed that title.
+After his father's death, Henri annulled his father's decision to deprive his brothers Michel (Count of Évreux) and Thibaut (the late Count of La Marche) of their succession rights because Michel married a French noblewoman without permission and because Thibaut married a commoner.
+He also bestowed titles upon the sons of his brother Prince Jacques, Duke of Orléans: Prince Charles-Louis d'Orléans, Duke of Chartres (born 1972), and Prince Foulques d'Orléans, Duke of Aumale and Count of Eu (born 1974).
+Henri recognised his disabled eldest son François as his dynastic heir-apparent, with the title Count of Clermont, declaring that François would exercise his prerogatives as head of the dynasty under the "regency" of his younger brother Prince Jean, Duke of Vendôme.
+In 2009, Henri obtained an annulment of his marriage to Marie-Thérèse of Württemberg from the Holy See.
+As Count of Paris, Henri took part in some European royal events attending, for instance, the 2011 marriage of Albert II of Monaco.
+Legal cases
 
-Henri stated that he believes de Gaulle never forgave him for refusing to join the Free French in London, and also noted that "De Gaulle was not my friend...De Gaulle and I shared some common ideals and I agreed with him on the essentials of his approach to politics...
-"
-
-
-In 1988, Henri produced a scandal among his monarchist supporters when he supported the re-election of François Mitterrand, a socialist.
-Political beliefs
-
-In his college years, Henri spent many nights listening to the French monarchist writer Charles Maurras.
-But during his adult life, Henri considered himself a centrist and never allied with any political party.
-On Action Française, Henri stated that it had many talented leaders, but he ultimately regarded it as "a Rightist party with extreme Right sympathies."
-In Henri's view, "no one should be in a position to claim a monopoly on the monarchist idea.
-"
-
-
-Henri befriended politicians on both the left and right, and declined to run for Parliament, despite de Gaulle's suggestion that he should do so.
-Some rightist critics of Henri regarded him as "the Crown Prince of the Republic" or "a dyed-in-the-wool socialist, if not a Jacobin."
-"
-
-
-Henri was a critic of primogeniture and favored elective monarchy over hereditary.
-Marriage and family life
-
-On 8 April 1931, he married Princess Isabelle of Orléans-Braganza.
-The wedding was celebrated in Palermo Cathedral in Sicily, the same church where their common ancestors, Louis Philippe of France and his Queen Maria Amalia, married in 1809.
-In 1984, Henri declared that his son, Henri of Orléans, had lost his rights of inheritance because he had divorced his first wife and married a second time, outside of the Roman Catholic Church.
-Henri gave his son the lesser-valued title comte de Mortain in place of comte de Clermont, and removed him from the line of succession.
-After a couple of years, Henri reinstated his son with his previous titles, including reestablishing him as heir apparent and gave his new wife, Micaela Cousiño Quinones de Leon, the title "princesse de Joinville".
-Henri deprived his sons Thibaut and Michel of their rights of succession to the defunct throne, because one married a commoner and the other wed a noblewoman whose father had been compromised during the Vichy regime.
-His decision was later annulled by his son and successor, Henri.
-Death
-
-Henri, Count of Paris, died of prostate cancer at Cherisy, near Dreux, France, aged 90 on 19 June 1999.
-Incidentally, his grandson Prince Eudes, Duke of Angoulême married on the very same day.
-Issue
-
-Henri, Count of Paris, and his wife Isabelle had eleven children:
-
-
-Ancestry
-
-References
-
-Further reading
-
-External links
+Prior to succeeding his father as royal claimant, Henri launched an unsuccessful court case (1987–1989) in which he challenged the right of his rival paternal 10th cousin Louis-Alphonse, Duke of Anjou, to use the undifferenced royal arms of France and the Anjou title.
+The French courts dismissed the case on the grounds that Henri failed to prove that he had demonstrated a right to the hereditaments in questions, noting also that the court lacked jurisdiction in a dispute over dynastic claims of France's former royal family.
+In 2000 bailiffs pursued Henri for US$143,000 back rent after he fled the Villa Boileau, a 17th-century Paris house he had occupied.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -221,39 +164,9 @@ External links
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -268,6 +181,23 @@ External links
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -285,6 +215,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -352,29 +297,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -383,6 +320,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -395,6 +340,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -403,17 +350,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -441,6 +390,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -456,242 +489,455 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (8294edac-c4d4-41dd-944b-5af29b1b2863)
- Call ID: 8294edac-c4d4-41dd-944b-5af29b1b2863
+  AssignClass (8e1bc7a2-ea06-4d02-924a-5b4035def9d3)
+ Call ID: 8e1bc7a2-ea06-4d02-924a-5b4035def9d3
   Args:
+    source: :Henri_dOrleans
     type: :Man
-    source: Henri_dOrleans
-  AssignClass (624527ca-1cae-4679-baf0-caf5ac654bf2)
- Call ID: 624527ca-1cae-4679-baf0-caf5ac654bf2
+  AssignClass (b9043ae4-3245-430b-8ab2-e0bb352e5bc7)
+ Call ID: b9043ae4-3245-430b-8ab2-e0bb352e5bc7
   Args:
-    source: Henri_dOrleans
+    source: :Henri_dOrleans
     type: :Person
-  AddLiteral (abf85975-c30a-4546-bcc7-820d97eebbbb)
- Call ID: abf85975-c30a-4546-bcc7-820d97eebbbb
+  AddLiteral (1685ca9e-9888-45cd-b7e6-ad9d487328df)
+ Call ID: 1685ca9e-9888-45cd-b7e6-ad9d487328df
   Args:
+    literal_value: 1933
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: :Henri_dOrleans
+  AddLiteral (72afa4dc-88f0-4058-b71e-97ba63f3930b)
+ Call ID: 72afa4dc-88f0-4058-b71e-97ba63f3930b
+  Args:
+    literal_type: xsd:integer
+    source: :Henri_dOrleans
+    relation: :hasDeathYear
+    literal_value: 2019
+  AssignClass (5f429e29-502c-4798-88d9-6d2f7f613874)
+ Call ID: 5f429e29-502c-4798-88d9-6d2f7f613874
+  Args:
+    source: :Henri_Count_of_Paris
+    type: :Man
+  AssignClass (465543df-de9d-483e-b87f-a1e666b60100)
+ Call ID: 465543df-de9d-483e-b87f-a1e666b60100
+  Args:
+    type: :Person
+    source: :Henri_Count_of_Paris
+  AddLiteral (cdcf9e21-5e9a-4070-85fc-166edd7dbd4b)
+ Call ID: cdcf9e21-5e9a-4070-85fc-166edd7dbd4b
+  Args:
+    literal_value: 1908
+    source: :Henri_Count_of_Paris
     relation: :hasBirthYear
     literal_type: xsd:integer
-    source: Henri_dOrleans
-    literal_value: 1908
-  AddLiteral (5d5aca1e-f068-419c-99c8-e81b04a2815b)
- Call ID: 5d5aca1e-f068-419c-99c8-e81b04a2815b
+  AddLiteral (fb6eb67b-5d3b-4fc7-a391-eff60d66b761)
+ Call ID: fb6eb67b-5d3b-4fc7-a391-eff60d66b761
   Args:
-    relation: :hasDeathYear
     literal_value: 1999
     literal_type: xsd:integer
-    source: Henri_dOrleans
-  AssignClass (5f599673-cfcd-40ef-a5c1-71a8f157abeb)
- Call ID: 5f599673-cfcd-40ef-a5c1-71a8f157abeb
-  Args:
-    source: Jean_Duke_of_Guise
-    type: :Man
-  AssignClass (2c9258dc-573b-4865-bcc1-1432cddc320d)
- Call ID: 2c9258dc-573b-4865-bcc1-1432cddc320d
-  Args:
-    type: :Person
-    source: Jean_Duke_of_Guise
-  AddTriple (b54c8ca0-544d-451a-bf70-2a32c43e0d83)
- Call ID: b54c8ca0-544d-451a-bf70-2a32c43e0d83
-  Args:
-    target: Jean_Duke_of_Guise
-    source: Henri_dOrleans
-    relation: :hasFather
-  AssignClass (b963f110-e7c9-4578-93f5-0e0e7618f61b)
- Call ID: b963f110-e7c9-4578-93f5-0e0e7618f61b
-  Args:
-    source: Henri_son_of_Henri
-    type: :Man
-  AssignClass (aa728796-3989-4558-93d4-dd877bfd19a7)
- Call ID: aa728796-3989-4558-93d4-dd877bfd19a7
-  Args:
-    type: :Person
-    source: Henri_son_of_Henri
-  AddTriple (3bba1ca8-8b43-4ad2-8142-c7a8b771c3fd)
- Call ID: 3bba1ca8-8b43-4ad2-8142-c7a8b771c3fd
-  Args:
-    relation: :hasFather
-    target: Henri_dOrleans
-    source: Henri_son_of_Henri
-  AssignClass (75e8febb-d8fa-429f-b84b-4a5631d4bdaf)
- Call ID: 75e8febb-d8fa-429f-b84b-4a5631d4bdaf
+    relation: :hasDeathYear
+    source: :Henri_Count_of_Paris
+  AssignClass (72a91f20-3607-4806-be0e-14bef5ff6aba)
+ Call ID: 72a91f20-3607-4806-be0e-14bef5ff6aba
   Args:
     type: :Woman
-    source: Isabelle_of_Orleans_Braganza
-  AssignClass (45575d81-a855-4808-bea3-9fd7b821d47e)
- Call ID: 45575d81-a855-4808-bea3-9fd7b821d47e
+    source: :Princess_Isabelle_of_Orleans_Braganza
+  AssignClass (4995b874-4497-40dd-b31d-883089b10160)
+ Call ID: 4995b874-4497-40dd-b31d-883089b10160
   Args:
+    source: :Princess_Isabelle_of_Orleans_Braganza
     type: :Person
-    source: Isabelle_of_Orleans_Braganza
-  AddLiteral (12758afd-eb26-429f-b8d9-58e6dd68cf83)
- Call ID: 12758afd-eb26-429f-b8d9-58e6dd68cf83
+  AddTriple (5691c188-26e8-43c1-aa63-27fa75a7d054)
+ Call ID: 5691c188-26e8-43c1-aa63-27fa75a7d054
   Args:
-    relation: :hasMarriageYear
-    source: Henri_dOrleans
-    literal_type: xsd:integer
-    literal_value: 1931
-  AddTriple (e6bdc4d4-5bc3-48ff-888e-21feac9b9f67)
- Call ID: e6bdc4d4-5bc3-48ff-888e-21feac9b9f67
-  Args:
-    relation: :hasRelation
-    source: Henri_dOrleans
-    target: Isabelle_of_Orleans_Braganza
-  AssignClass (056ac896-6483-4caa-a304-8abcef095f85)
- Call ID: 056ac896-6483-4caa-a304-8abcef095f85
-  Args:
-    source: Thibaut
-    type: :Man
-  AssignClass (4f4d72de-174e-4c2e-b9c6-a898aa8850dd)
- Call ID: 4f4d72de-174e-4c2e-b9c6-a898aa8850dd
-  Args:
-    source: Thibaut
-    type: :Person
-  AddTriple (e17e7ed9-ce27-43a1-9ec1-54d4eaf5cc69)
- Call ID: e17e7ed9-ce27-43a1-9ec1-54d4eaf5cc69
-  Args:
-    source: Thibaut
-    target: Henri_dOrleans
+    source: :Henri_dOrleans
+    target: :Henri_Count_of_Paris
     relation: :hasFather
-  AssignClass (fda33aa9-e7fb-4dfa-966b-a2a6d9be4d8c)
- Call ID: fda33aa9-e7fb-4dfa-966b-a2a6d9be4d8c
-  Args:
-    source: Michel
-    type: :Man
-  AssignClass (2ab54144-af67-4c37-88f6-e78485aee104)
- Call ID: 2ab54144-af67-4c37-88f6-e78485aee104
-  Args:
-    type: :Person
-    source: Michel
-  AddTriple (845bf8c4-2b84-4cf3-bc25-115b73485b26)
- Call ID: 845bf8c4-2b84-4cf3-bc25-115b73485b26
-  Args:
-    target: Henri_dOrleans
-    source: Michel
-    relation: :hasFather
-  AssignClass (f1b2e313-4ebc-40f8-ad3f-3e727255c599)
- Call ID: f1b2e313-4ebc-40f8-ad3f-3e727255c599
-  Args:
-    type: :Man
-    source: Philippe_Duke_of_Orleans
-  AssignClass (c08b5a0e-e14a-492f-8d6a-320f049784fc)
- Call ID: c08b5a0e-e14a-492f-8d6a-320f049784fc
-  Args:
-    source: Philippe_Duke_of_Orleans
-    type: :Person
-  AddTriple (ae7508ce-2c33-47fe-a429-723eaa31c24e)
- Call ID: ae7508ce-2c33-47fe-a429-723eaa31c24e
+  AddTriple (a7af11db-81bf-4443-8f03-1e34010dfc11)
+ Call ID: a7af11db-81bf-4443-8f03-1e34010dfc11
   Args:
     relation: :hasMother
-    source: Henri_dOrleans
-    target: Philippe_Duke_of_Orleans
-  AssignClass (76ce2722-d31a-4efd-a3d1-18a4804a5335)
- Call ID: 76ce2722-d31a-4efd-a3d1-18a4804a5335
+    target: :Princess_Isabelle_of_Orleans_Braganza
+    source: :Henri_dOrleans
+  AssignClass (48a3fa7d-df1f-49d0-9ae6-b9728bab4199)
+ Call ID: 48a3fa7d-df1f-49d0-9ae6-b9728bab4199
   Args:
+    source: :Francois_dOrleans
     type: :Man
-    source: Louis_XIII
-  AssignClass (3bc7c550-aa65-4431-8b72-16e6e1c7acd0)
- Call ID: 3bc7c550-aa65-4431-8b72-16e6e1c7acd0
-  Args:
-    source: Louis_XIII
-    type: :Person
-  AssignClass (83703433-073c-480c-9233-d3cfa6e62b6e)
- Call ID: 83703433-073c-480c-9233-d3cfa6e62b6e
-  Args:
-    type: :Man
-    source: Philippe_I_Duke_of_Orleans
-  AssignClass (5ab4433a-779b-4662-933f-3db11ee025bc)
- Call ID: 5ab4433a-779b-4662-933f-3db11ee025bc
-  Args:
-    source: Philippe_I_Duke_of_Orleans
-    type: :Person
-  AddTriple (58b00b3f-8f48-48d7-a942-f2955e1ff34f)
- Call ID: 58b00b3f-8f48-48d7-a942-f2955e1ff34f
-  Args:
-    relation: :hasFather
-    source: Philippe_I_Duke_of_Orleans
-    target: Louis_XIII
-  AddTriple (f379d97f-5c11-43e6-9dab-2f35e8e2478f)
- Call ID: f379d97f-5c11-43e6-9dab-2f35e8e2478f
-  Args:
-    relation: :hasAncestor
-    target: Philippe_I_Duke_of_Orleans
-    source: Henri_dOrleans
-  AssignClass (b0c90e58-8ceb-435c-a5ee-3ead946c7203)
- Call ID: b0c90e58-8ceb-435c-a5ee-3ead946c7203
-  Args:
-    source: Louis_XIV
-    type: :Man
-  AssignClass (922ae77e-0022-4fec-a81c-45e8d565fce0)
- Call ID: 922ae77e-0022-4fec-a81c-45e8d565fce0
+  AssignClass (73be6b0b-fa80-4016-acff-b80540028468)
+ Call ID: 73be6b0b-fa80-4016-acff-b80540028468
   Args:
     type: :Person
-    source: Louis_XIV
-  AssignClass (d34122a1-bb00-4ae7-b74d-acae38dba5d8)
- Call ID: d34122a1-bb00-4ae7-b74d-acae38dba5d8
+    source: :Francois_dOrleans
+  AddTriple (7c9f8faa-12ee-4567-a59a-cdbe9edeb94e)
+ Call ID: 7c9f8faa-12ee-4567-a59a-cdbe9edeb94e
   Args:
+    target: :Henri_dOrleans
+    source: :Francois_dOrleans
+    relation: :isBrotherOf
+  AssignClass (e35c20a8-8801-40d2-ad66-f307a551bdfc)
+ Call ID: e35c20a8-8801-40d2-ad66-f307a551bdfc
+  Args:
+    source: :Marie_Therese_of_Wurttemberg
     type: :Woman
-    source: Francoise_Marie_de_Bourbon
-  AssignClass (7577764a-a7aa-4fd6-b431-da2c2c955b36)
- Call ID: 7577764a-a7aa-4fd6-b431-da2c2c955b36
+  AssignClass (db774850-d632-46ed-b7e9-6cb990c30827)
+ Call ID: db774850-d632-46ed-b7e9-6cb990c30827
   Args:
+    source: :Marie_Therese_of_Wurttemberg
     type: :Person
-    source: Francoise_Marie_de_Bourbon
-  AddTriple (bf13e1a8-9444-4f96-b528-310298881795)
- Call ID: bf13e1a8-9444-4f96-b528-310298881795
+  AddLiteral (e01193e1-0bea-4928-8d6c-b050039ee0ce)
+ Call ID: e01193e1-0bea-4928-8d6c-b050039ee0ce
   Args:
-    relation: :hasFather
-    source: Francoise_Marie_de_Bourbon
-    target: Louis_XIV
-  AddTriple (fb6f5837-730a-4735-8261-b236c4b99df2)
- Call ID: fb6f5837-730a-4735-8261-b236c4b99df2
+    literal_value: 1934
+    source: :Marie_Therese_of_Wurttemberg
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  AddTriple (7dbf4358-355b-4f28-b411-d09544fd4961)
+ Call ID: 7dbf4358-355b-4f28-b411-d09544fd4961
   Args:
-    source: Henri_dOrleans
-    target: Louis_XIV
-    relation: :hasAncestor
-  AssignClass (08b961c1-1687-493f-a9ec-56ecdd7f8598)
- Call ID: 08b961c1-1687-493f-a9ec-56ecdd7f8598
-  Args:
-    type: :Man
-    source: Louis_Philippe_I
-  AssignClass (6b6d966e-8edb-4f33-be59-5730dcba2864)
- Call ID: 6b6d966e-8edb-4f33-be59-5730dcba2864
-  Args:
-    source: Louis_Philippe_I
-    type: :Person
-  AddTriple (0f6ab0cc-ab81-491a-89bf-92fbce0756ea)
- Call ID: 0f6ab0cc-ab81-491a-89bf-92fbce0756ea
-  Args:
-    target: Louis_Philippe_I
-    source: Henri_dOrleans
-    relation: :hasAncestor
-  AssignClass (11c684c7-b3da-4864-a10d-146bb205d3f6)
- Call ID: 11c684c7-b3da-4864-a10d-146bb205d3f6
-  Args:
-    source: Prince_Eudes_Duke_of_Angouleme
-    type: :Man
-  AssignClass (f3d20f36-f9e3-404f-93f2-ee670c5a92d3)
- Call ID: f3d20f36-f9e3-404f-93f2-ee670c5a92d3
-  Args:
-    type: :Person
-    source: Prince_Eudes_Duke_of_Angouleme
-  AssignClass (d1f6b77a-1904-4831-887a-a1c5980a93bd)
- Call ID: d1f6b77a-1904-4831-887a-a1c5980a93bd
-  Args:
-    source: Micaela_Cousino_Quinones_de_Leon
-    type: :Woman
-  AssignClass (8164738b-45d4-4b56-8fd8-e76a0e8e0902)
- Call ID: 8164738b-45d4-4b56-8fd8-e76a0e8e0902
-  Args:
-    type: :Person
-    source: Micaela_Cousino_Quinones_de_Leon
-  AddTriple (8b21a696-5d25-4b2c-84bc-a011e1e4a38c)
- Call ID: 8b21a696-5d25-4b2c-84bc-a011e1e4a38c
-  Args:
-    source: Henri_son_of_Henri
-    target: Micaela_Cousino_Quinones_de_Leon
     relation: :hasRelation
-  Finish (26bb0889-3cbb-424f-9d66-9bd9dae44571)
- Call ID: 26bb0889-3cbb-424f-9d66-9bd9dae44571
+    source: :Henri_dOrleans
+    target: :Marie_Therese_of_Wurttemberg
+  AssignClass (bbe115aa-edd5-4b38-9743-cde0573ee73f)
+ Call ID: bbe115aa-edd5-4b38-9743-cde0573ee73f
   Args:
+    source: :Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    type: :Woman
+  AssignClass (5a2b3cd6-35c0-4973-9a80-7dfe0dd6206d)
+ Call ID: 5a2b3cd6-35c0-4973-9a80-7dfe0dd6206d
+  Args:
+    type: :Person
+    source: :Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+  AddLiteral (3a75b5d7-b1e5-412f-827c-1ed364c47e6b)
+ Call ID: 3a75b5d7-b1e5-412f-827c-1ed364c47e6b
+  Args:
+    literal_value: 1938
+    literal_type: xsd:integer
+    relation: :hasBirthYear
+    source: :Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+  AddLiteral (890616a0-a8f3-4081-b0f0-8fa25c659159)
+ Call ID: 890616a0-a8f3-4081-b0f0-8fa25c659159
+  Args:
+    relation: :hasDeathYear
+    source: :Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    literal_type: xsd:integer
+    literal_value: 2022
+  AddLiteral (9ee8b31b-326a-47f1-80be-7849e15a790f)
+ Call ID: 9ee8b31b-326a-47f1-80be-7849e15a790f
+  Args:
+    literal_type: xsd:integer
+    relation: :hasMarriageYear
+    source: :Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    literal_value: 1984
+  AddTriple (b8db514f-e96f-44d3-ace4-6d5a2361f945)
+ Call ID: b8db514f-e96f-44d3-ace4-6d5a2361f945
+  Args:
+    relation: :hasRelation
+    source: :Henri_dOrleans
+    target: :Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+  AssignClass (3e5bcf76-537b-406b-b0c4-159dcac16104)
+ Call ID: 3e5bcf76-537b-406b-b0c4-159dcac16104
+  Args:
+    source: :Luis_Cousino_y_Sebire
+    type: :Man
+  AssignClass (44304e19-fb86-4d9c-b142-65b7dbfc8518)
+ Call ID: 44304e19-fb86-4d9c-b142-65b7dbfc8518
+  Args:
+    source: :Luis_Cousino_y_Sebire
+    type: :Person
+  AssignClass (9d895b89-44a8-4d67-9d4f-232047905bc4)
+ Call ID: 9d895b89-44a8-4d67-9d4f-232047905bc4
+  Args:
+    type: :Woman
+    source: :Antonia_Maria_Quinones_de_Leon_y_Banuelos
+  AssignClass (9cd774c8-afde-4603-b076-0940b533bc19)
+ Call ID: 9cd774c8-afde-4603-b076-0940b533bc19
+  Args:
+    type: :Person
+    source: :Antonia_Maria_Quinones_de_Leon_y_Banuelos
+  AddTriple (83839e56-68a8-4eb2-be23-2cdc72136dd3)
+ Call ID: 83839e56-68a8-4eb2-be23-2cdc72136dd3
+  Args:
+    target: :Luis_Cousino_y_Sebire
+    source: :Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    relation: :hasFather
+  AddTriple (febf6bce-49aa-410a-b4a2-1fface082c4f)
+ Call ID: febf6bce-49aa-410a-b4a2-1fface082c4f
+  Args:
+    target: :Antonia_Maria_Quinones_de_Leon_y_Banuelos
+    source: :Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon
+    relation: :hasMother
+  AssignClass (7937936e-aad5-4efc-9063-ee53dc1e455b)
+ Call ID: 7937936e-aad5-4efc-9063-ee53dc1e455b
+  Args:
+    type: :Man
+    source: :Jean_Robert_Boeuf
+  AssignClass (302ed50b-94a7-401a-acfe-37b87ddb36ce)
+ Call ID: 302ed50b-94a7-401a-acfe-37b87ddb36ce
+  Args:
+    source: :Jean_Robert_Boeuf
+    type: :Person
+  AssignClass (a729160a-52e9-4a63-bda2-f88ba7de7047)
+ Call ID: a729160a-52e9-4a63-bda2-f88ba7de7047
+  Args:
+    source: :Marie_dOrleans
+    type: :Woman
+  AssignClass (8845597f-b15e-4bc1-88c4-7c7821fd8f73)
+ Call ID: 8845597f-b15e-4bc1-88c4-7c7821fd8f73
+  Args:
+    source: :Marie_dOrleans
+    type: :Person
+  AddTriple (8070a74a-5c7e-46af-9152-905632e206e5)
+ Call ID: 8070a74a-5c7e-46af-9152-905632e206e5
+  Args:
+    relation: :hasFather
+    target: :Henri_dOrleans
+    source: :Marie_dOrleans
+  AddTriple (39e174f4-78d7-49f0-8fb5-ca6b81b05ac4)
+ Call ID: 39e174f4-78d7-49f0-8fb5-ca6b81b05ac4
+  Args:
+    source: :Marie_dOrleans
+    target: :Marie_Therese_of_Wurttemberg
+    relation: :hasMother
+  AssignClass (fff9019f-aadd-4811-b74e-4e5b6cc654d7)
+ Call ID: fff9019f-aadd-4811-b74e-4e5b6cc654d7
+  Args:
+    type: :Man
+    source: :Prince_Gundakar_of_Liechtenstein
+  AssignClass (404b6476-5106-4d11-a856-81fe25d364ac)
+ Call ID: 404b6476-5106-4d11-a856-81fe25d364ac
+  Args:
+    source: :Prince_Gundakar_of_Liechtenstein
+    type: :Person
+  AssignClass (f35ad581-d8a2-46cd-b297-c1c82ee4c82f)
+ Call ID: f35ad581-d8a2-46cd-b297-c1c82ee4c82f
+  Args:
+    type: :Woman
+    source: :Diane_dOrleans
+  AssignClass (f58c4d1b-df4d-4b28-8cec-d64cae677a55)
+ Call ID: f58c4d1b-df4d-4b28-8cec-d64cae677a55
+  Args:
+    source: :Diane_dOrleans
+    type: :Person
+  AddTriple (74839af1-a03b-4a8c-a252-72d535fdfec4)
+ Call ID: 74839af1-a03b-4a8c-a252-72d535fdfec4
+  Args:
+    relation: :isSisterOf
+    target: :Henri_dOrleans
+    source: :Diane_dOrleans
+  AssignClass (c9975db7-2ccc-43e9-a519-b0e867f00cf7)
+ Call ID: c9975db7-2ccc-43e9-a519-b0e867f00cf7
+  Args:
+    source: :Michel_dOrleans
+    type: :Man
+  AssignClass (bba1179d-9307-49a4-af60-42446cab6bf2)
+ Call ID: bba1179d-9307-49a4-af60-42446cab6bf2
+  Args:
+    type: :Person
+    source: :Michel_dOrleans
+  AddTriple (688334fd-af30-4a7c-9380-e20f4188c0dd)
+ Call ID: 688334fd-af30-4a7c-9380-e20f4188c0dd
+  Args:
+    relation: :isBrotherOf
+    source: :Michel_dOrleans
+    target: :Henri_dOrleans
+  AssignClass (dc001ba3-016a-4dc1-b4b8-cd1e58657984)
+ Call ID: dc001ba3-016a-4dc1-b4b8-cd1e58657984
+  Args:
+    source: :Thibaut_dOrleans
+    type: :Man
+  AssignClass (941b44a5-637e-436b-8a9a-59e9e8b22bdf)
+ Call ID: 941b44a5-637e-436b-8a9a-59e9e8b22bdf
+  Args:
+    type: :Person
+    source: :Thibaut_dOrleans
+  AddTriple (0832ca07-be3b-44e3-8e66-4972cb520777)
+ Call ID: 0832ca07-be3b-44e3-8e66-4972cb520777
+  Args:
+    source: :Thibaut_dOrleans
+    target: :Henri_dOrleans
+    relation: :isBrotherOf
+  AssignClass (9cef4f8a-2bb6-40ac-a40b-d103c3bf5406)
+ Call ID: 9cef4f8a-2bb6-40ac-a40b-d103c3bf5406
+  Args:
+    source: :Jacques_dOrleans
+    type: :Man
+  AssignClass (00d4c092-0baa-408a-91ce-ca113adece44)
+ Call ID: 00d4c092-0baa-408a-91ce-ca113adece44
+  Args:
+    type: :Person
+    source: :Jacques_dOrleans
+  AddTriple (8956a630-14d5-43a8-9d97-79bc8e23015e)
+ Call ID: 8956a630-14d5-43a8-9d97-79bc8e23015e
+  Args:
+    source: :Jacques_dOrleans
+    target: :Henri_dOrleans
+    relation: :isBrotherOf
+  AssignClass (7e4d3ace-1f0f-467e-b6d1-482c118dc368)
+ Call ID: 7e4d3ace-1f0f-467e-b6d1-482c118dc368
+  Args:
+    type: :Man
+    source: :Charles_Louis_dOrleans
+  AssignClass (b8cb7b7a-7518-41be-8e97-ea1e737e2ca3)
+ Call ID: b8cb7b7a-7518-41be-8e97-ea1e737e2ca3
+  Args:
+    source: :Charles_Louis_dOrleans
+    type: :Person
+  AddTriple (d91828b4-dfe2-4dee-ae95-35ab643666de)
+ Call ID: d91828b4-dfe2-4dee-ae95-35ab643666de
+  Args:
+    source: :Charles_Louis_dOrleans
+    target: :Jacques_dOrleans
+    relation: :hasFather
+  AssignClass (83c31b00-9bdd-4d5c-8f4f-de7591edd147)
+ Call ID: 83c31b00-9bdd-4d5c-8f4f-de7591edd147
+  Args:
+    type: :Man
+    source: :Foulques_dOrleans
+  AssignClass (edc181f2-e86e-4be3-9af4-b9bea58784ba)
+ Call ID: edc181f2-e86e-4be3-9af4-b9bea58784ba
+  Args:
+    type: :Person
+    source: :Foulques_dOrleans
+  AddTriple (90112d36-9c26-4e1e-a134-a9a0c77e3b41)
+ Call ID: 90112d36-9c26-4e1e-a134-a9a0c77e3b41
+  Args:
+    target: :Jacques_dOrleans
+    source: :Foulques_dOrleans
+    relation: :hasFather
+  AssignClass (d02709f7-8f18-4ac3-8553-d67077cfadd8)
+ Call ID: d02709f7-8f18-4ac3-8553-d67077cfadd8
+  Args:
+    source: :Francois_dOrleans_son_of_Henri
+    type: :Man
+  AssignClass (116103b9-7c5f-4057-a983-c9f6bc3dacd1)
+ Call ID: 116103b9-7c5f-4057-a983-c9f6bc3dacd1
+  Args:
+    source: :Francois_dOrleans_son_of_Henri
+    type: :Person
+  AddTriple (de1d8457-33b3-448a-afdf-c2ec838f2d67)
+ Call ID: de1d8457-33b3-448a-afdf-c2ec838f2d67
+  Args:
+    relation: :hasFather
+    target: :Henri_dOrleans
+    source: :Francois_dOrleans_son_of_Henri
+  AssignClass (b67f77b8-b5ce-48be-a1d4-776125ee4e07)
+ Call ID: b67f77b8-b5ce-48be-a1d4-776125ee4e07
+  Args:
+    type: :Man
+    source: :Jean_dOrleans
+  AssignClass (9e771ac4-16a4-43ed-ad68-7f234a6a4f73)
+ Call ID: 9e771ac4-16a4-43ed-ad68-7f234a6a4f73
+  Args:
+    type: :Person
+    source: :Jean_dOrleans
+  AddTriple (1a9fa38e-a7f4-4f9b-ae70-bccfdff8f680)
+ Call ID: 1a9fa38e-a7f4-4f9b-ae70-bccfdff8f680
+  Args:
+    target: :Henri_dOrleans
+    source: :Jean_dOrleans
+    relation: :hasFather
+  AssignClass (bb667e62-b9bb-42f5-a6db-748c06849683)
+ Call ID: bb667e62-b9bb-42f5-a6db-748c06849683
+  Args:
+    source: :Louis_Alphonse_Duke_of_Anjou
+    type: :Man
+  AssignClass (7dfc467e-b065-4f72-a42c-59ef8a529e2d)
+ Call ID: 7dfc467e-b065-4f72-a42c-59ef8a529e2d
+  Args:
+    type: :Person
+    source: :Louis_Alphonse_Duke_of_Anjou
+  Finish (158394b8-e6a0-4379-897c-99b5a4f7c6c3)
+ Call ID: 158394b8-e6a0-4379-897c-99b5a4f7c6c3
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -868,62 +1114,90 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Francoise_Marie_de_Bourbon a :Person,
+  data:Charles_Louis_dOrleans a :Man,
+          :Person ;
+      :hasFather data:Jacques_dOrleans .
+
+  data:Diane_dOrleans a :Person,
           :Woman ;
-      :hasFather data:Louis_XIV .
+      :isSisterOf data:Henri_dOrleans .
 
-  data:Henri_son_of_Henri a :Man,
+  data:Foulques_dOrleans a :Man,
           :Person ;
+      :hasFather data:Jacques_dOrleans .
+
+  data:Francois_dOrleans a :Man,
+          :Person ;
+      :isBrotherOf data:Henri_dOrleans .
+
+  data:Francois_dOrleans_son_of_Henri a :Man,
+          :Person ;
+      :hasFather data:Henri_dOrleans .
+
+  data:Jean_Robert_Boeuf a :Man,
+          :Person .
+
+  data:Jean_dOrleans a :Man,
+          :Person ;
+      :hasFather data:Henri_dOrleans .
+
+  data:Louis_Alphonse_Duke_of_Anjou a :Man,
+          :Person .
+
+  data:Marie_dOrleans a :Person,
+          :Woman ;
       :hasFather data:Henri_dOrleans ;
-      :hasRelation data:Micaela_Cousino_Quinones_de_Leon .
+      :hasMother data:Marie_Therese_of_Wurttemberg .
 
-  data:Michel a :Man,
+  data:Michel_dOrleans a :Man,
           :Person ;
-      :hasFather data:Henri_dOrleans .
+      :isBrotherOf data:Henri_dOrleans .
 
-  data:Prince_Eudes_Duke_of_Angouleme a :Man,
+  data:Prince_Gundakar_of_Liechtenstein a :Man,
           :Person .
 
-  data:Thibaut a :Man,
+  data:Thibaut_dOrleans a :Man,
           :Person ;
-      :hasFather data:Henri_dOrleans .
+      :isBrotherOf data:Henri_dOrleans .
 
-  data:Isabelle_of_Orleans_Braganza a :Person,
+  data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Person,
           :Woman .
 
-  data:Jean_Duke_of_Guise a :Man,
+  data:Henri_Count_of_Paris a :Man,
+          :Person ;
+      :hasBirthYear 1908 ;
+      :hasDeathYear 1999 .
+
+  data:Luis_Cousino_y_Sebire a :Man,
           :Person .
 
-  data:Louis_Philippe_I a :Man,
-          :Person .
+  data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Person,
+          :Woman ;
+      :hasBirthYear 1938 ;
+      :hasDeathYear 2022 ;
+      :hasFather data:Luis_Cousino_y_Sebire ;
+      :hasMarriageYear 1984 ;
+      :hasMother data:Antonia_Maria_Quinones_de_Leon_y_Banuelos .
 
-  data:Louis_XIII a :Man,
-          :Person .
-
-  data:Micaela_Cousino_Quinones_de_Leon a :Person,
+  data:Princess_Isabelle_of_Orleans_Braganza a :Person,
           :Woman .
 
-  data:Philippe_Duke_of_Orleans a :Man,
-          :Person .
-
-  data:Philippe_I_Duke_of_Orleans a :Man,
+  data:Jacques_dOrleans a :Man,
           :Person ;
-      :hasFather data:Louis_XIII .
+      :isBrotherOf data:Henri_dOrleans .
 
-  data:Louis_XIV a :Man,
-          :Person .
+  data:Marie_Therese_of_Wurttemberg a :Person,
+          :Woman ;
+      :hasBirthYear 1934 .
 
   data:Henri_dOrleans a :Man,
           :Person ;
-      :hasAncestor data:Louis_Philippe_I,
-          data:Louis_XIV,
-          data:Philippe_I_Duke_of_Orleans ;
-      :hasBirthYear 1908 ;
-      :hasDeathYear 1999 ;
-      :hasFather data:Jean_Duke_of_Guise ;
-      :hasMarriageYear 1931 ;
-      :hasMother data:Philippe_Duke_of_Orleans ;
-      :hasRelation data:Isabelle_of_Orleans_Braganza .
+      :hasBirthYear 1933 ;
+      :hasDeathYear 2019 ;
+      :hasFather data:Henri_Count_of_Paris ;
+      :hasMother data:Princess_Isabelle_of_Orleans_Braganza ;
+      :hasRelation data:Marie_Therese_of_Wurttemberg,
+          data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon .
 
 
 
@@ -935,68 +1209,68 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (3af244b5-2495-40fa-ac8f-29dff13bfc08)
- Call ID: 3af244b5-2495-40fa-ac8f-29dff13bfc08
+  ValidateShacl (5b1d1b46-8c34-45f2-bc72-68aaba232a37)
+ Call ID: 5b1d1b46-8c34-45f2-bc72-68aaba232a37
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:33
+Total violations:30
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The ancestor Louis_Philippe_I for Henri_dOrleans is missing the required :Ancestor class.
+      The person Henri_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_Philippe_I, :Ancestor)
+      AssignClass(Henri_dOrleans, :Ancestor)
 
 
   Violation [2]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The ancestor Philippe_I_Duke_of_Orleans for Henri_dOrleans is missing the required :Ancestor class.
+      The person Henri_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philippe_I_Duke_of_Orleans, :Ancestor)
+      AssignClass(Henri_dOrleans, :Ancestor)
 
 
   Violation [3]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The ancestor Louis_XIV for Henri_dOrleans is missing the required :Ancestor class.
+      The person Jacques_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_XIV, :Ancestor)
+      AssignClass(Jacques_dOrleans, :Ancestor)
 
 
   Violation [4]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Louis_XIII for Philippe_I_Duke_of_Orleans is missing the required :Ancestor class.
+      The person Henri_Count_of_Paris is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_XIII, :Ancestor)
+      AssignClass(Henri_Count_of_Paris, :Ancestor)
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Jean_Duke_of_Guise for Henri_dOrleans is missing the required :Ancestor class.
+      The person Jacques_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jean_Duke_of_Guise, :Ancestor)
+      AssignClass(Jacques_dOrleans, :Ancestor)
 
 
   Violation [6]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father Henri_dOrleans for Michel is missing the required :Ancestor class.
+      The person Princess_Isabelle_of_Orleans_Braganza is not marked as an :Ancestor, which is required for the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Henri_dOrleans, :Ancestor)
+      AssignClass(Princess_Isabelle_of_Orleans_Braganza, :Ancestor)
 
 
   Violation [7]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Henri_dOrleans for Henri_son_of_Henri is missing the required :Ancestor class.
+      The person Henri_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Henri_dOrleans, :Ancestor)
 
@@ -1004,79 +1278,79 @@ Violations:
   Violation [8]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Henri_dOrleans for Thibaut is missing the required :Ancestor class.
+      The person Henri_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Henri_dOrleans, :Ancestor)
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother Philippe_Duke_of_Orleans for Henri_dOrleans is missing the required :Ancestor class.
+      The person Jacques_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philippe_Duke_of_Orleans, :Ancestor)
+      AssignClass(Jacques_dOrleans, :Ancestor)
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The mother Philippe_Duke_of_Orleans for Henri_dOrleans is missing the required :Ancestor class.
+      The person Luis_Cousino_y_Sebire is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philippe_Duke_of_Orleans, :Ancestor)
+      AssignClass(Luis_Cousino_y_Sebire, :Ancestor)
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The ancestor Louis_Philippe_I for Henri_dOrleans is missing the required :Ancestor class.
+      The person Henri_Count_of_Paris is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_Philippe_I, :Ancestor)
+      AssignClass(Henri_Count_of_Paris, :Ancestor)
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The ancestor Philippe_I_Duke_of_Orleans for Henri_dOrleans is missing the required :Ancestor class.
+      The person Jacques_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philippe_I_Duke_of_Orleans, :Ancestor)
+      AssignClass(Jacques_dOrleans, :Ancestor)
 
 
   Violation [13]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The ancestor Louis_XIV for Henri_dOrleans is missing the required :Ancestor class.
+      The person Henri_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_XIV, :Ancestor)
+      AssignClass(Henri_dOrleans, :Ancestor)
 
 
   Violation [14]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father Louis_XIII for Philippe_I_Duke_of_Orleans is missing the required :Ancestor class.
+      The person Antonia_Maria_Quinones_de_Leon_y_Banuelos is not marked as an :Ancestor, which is required for the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_XIII, :Ancestor)
+      AssignClass(Antonia_Maria_Quinones_de_Leon_y_Banuelos, :Ancestor)
 
 
   Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father Louis_XIV for Francoise_Marie_de_Bourbon is missing the required :Ancestor class.
+      The person Princess_Isabelle_of_Orleans_Braganza is not marked as an :Ancestor, which is required for the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_XIV, :Ancestor)
+      AssignClass(Princess_Isabelle_of_Orleans_Braganza, :Ancestor)
 
 
   Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father Jean_Duke_of_Guise for Henri_dOrleans is missing the required :Ancestor class.
+      The person Marie_Therese_of_Wurttemberg is not marked as an :Ancestor, which is required for the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jean_Duke_of_Guise, :Ancestor)
+      AssignClass(Marie_Therese_of_Wurttemberg, :Ancestor)
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Henri_dOrleans for Michel is missing the required :Ancestor class.
+      The person Henri_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Henri_dOrleans, :Ancestor)
 
@@ -1084,7 +1358,7 @@ Violations:
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Henri_dOrleans for Henri_son_of_Henri is missing the required :Ancestor class.
+      The person Henri_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Henri_dOrleans, :Ancestor)
 
@@ -1092,121 +1366,97 @@ Violations:
   Violation [19]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Henri_dOrleans for Thibaut is missing the required :Ancestor class.
+      The person Jacques_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jacques_dOrleans, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Luis_Cousino_y_Sebire is not marked as an :Ancestor, which is required for the :hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Luis_Cousino_y_Sebire, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Henri_Count_of_Paris is not marked as an :Ancestor, which is required for the :hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Henri_Count_of_Paris, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Jacques_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Jacques_dOrleans, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person Henri_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Henri_dOrleans, :Ancestor)
 
 
-  Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Philippe_Duke_of_Orleans for Henri_dOrleans is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philippe_Duke_of_Orleans, :Ancestor)
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Philippe_Duke_of_Orleans for Henri_dOrleans is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philippe_Duke_of_Orleans, :Ancestor)
-
-
-  Violation [22]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The ancestor Louis_Philippe_I for Henri_dOrleans is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_Philippe_I, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Ancestor
-    LLM-provided explanation of the violation:
-      The ancestor Philippe_I_Duke_of_Orleans for Henri_dOrleans is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philippe_I_Duke_of_Orleans, :Ancestor)
-
-
   Violation [24]:
-    SHACL message: Value does not have class :Ancestor
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The ancestor Louis_XIV for Henri_dOrleans is missing the required :Ancestor class.
+      The person Antonia_Maria_Quinones_de_Leon_y_Banuelos is not marked as an :Ancestor, which is required for the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_XIV, :Ancestor)
+      AssignClass(Antonia_Maria_Quinones_de_Leon_y_Banuelos, :Ancestor)
 
 
   Violation [25]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father Louis_XIII for Philippe_I_Duke_of_Orleans is missing the required :Ancestor class.
+      The person Princess_Isabelle_of_Orleans_Braganza is not marked as an :Ancestor, which is required for the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_XIII, :Ancestor)
+      AssignClass(Princess_Isabelle_of_Orleans_Braganza, :Ancestor)
 
 
   Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father Louis_XIV for Francoise_Marie_de_Bourbon is missing the required :Ancestor class.
+      The person Marie_Therese_of_Wurttemberg is not marked as an :Ancestor, which is required for the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_XIV, :Ancestor)
+      AssignClass(Marie_Therese_of_Wurttemberg, :Ancestor)
 
 
   Violation [27]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Jean_Duke_of_Guise for Henri_dOrleans is missing the required :Ancestor class.
+      The person Luis_Cousino_y_Sebire is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Jean_Duke_of_Guise, :Ancestor)
+      AssignClass(Luis_Cousino_y_Sebire, :Ancestor)
 
 
   Violation [28]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The father Henri_dOrleans for Michel is missing the required :Ancestor class.
+      The person Henri_dOrleans is not marked as an :Ancestor, which is required for the :hasFather property.
     LLM-provided instruction on how to handle the violation:
       AssignClass(Henri_dOrleans, :Ancestor)
 
 
   Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The father Henri_dOrleans for Henri_son_of_Henri is missing the required :Ancestor class.
+      The person Antonia_Maria_Quinones_de_Leon_y_Banuelos is not marked as an :Ancestor, which is required for the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Henri_dOrleans, :Ancestor)
+      AssignClass(Antonia_Maria_Quinones_de_Leon_y_Banuelos, :Ancestor)
 
 
   Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father Henri_dOrleans for Thibaut is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Henri_dOrleans, :Ancestor)
-
-
-  Violation [31]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The mother Philippe_Duke_of_Orleans for Henri_dOrleans is missing the required :Ancestor class.
+      The person Marie_Therese_of_Wurttemberg is not marked as an :Ancestor, which is required for the :hasMother property.
     LLM-provided instruction on how to handle the violation:
-      AssignClass(Philippe_Duke_of_Orleans, :Ancestor)
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The mother Philippe_Duke_of_Orleans for Henri_dOrleans is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Philippe_Duke_of_Orleans, :Ancestor)
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The father Louis_XIV for Francoise_Marie_de_Bourbon is missing the required :Ancestor class.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Louis_XIV, :Ancestor)
+      AssignClass(Marie_Therese_of_Wurttemberg, :Ancestor)
 
 
 
@@ -1215,43 +1465,43 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (4d447e9f-2323-4ce4-95ec-c1c1dd27cfcc)
- Call ID: 4d447e9f-2323-4ce4-95ec-c1c1dd27cfcc
+  AssignClass (0c5c65ae-f083-49de-a23a-41ef7b297a6d)
+ Call ID: 0c5c65ae-f083-49de-a23a-41ef7b297a6d
   Args:
     type: :Ancestor
-    source: Louis_Philippe_I
-  AssignClass (8c0ca76c-9a44-4244-aba7-433559548221)
- Call ID: 8c0ca76c-9a44-4244-aba7-433559548221
+    source: :Henri_dOrleans
+  AssignClass (6d959951-51fe-4694-9967-cf82f77d7293)
+ Call ID: 6d959951-51fe-4694-9967-cf82f77d7293
+  Args:
+    source: :Jacques_dOrleans
+    type: :Ancestor
+  AssignClass (71d92da8-d914-484a-830c-8b60e58e2540)
+ Call ID: 71d92da8-d914-484a-830c-8b60e58e2540
+  Args:
+    source: :Henri_Count_of_Paris
+    type: :Ancestor
+  AssignClass (4cf3ac16-2a7d-4469-beda-7a00c80060bd)
+ Call ID: 4cf3ac16-2a7d-4469-beda-7a00c80060bd
   Args:
     type: :Ancestor
-    source: Philippe_I_Duke_of_Orleans
-  AssignClass (53231dba-dbc7-4a98-bae5-63ef0a889849)
- Call ID: 53231dba-dbc7-4a98-bae5-63ef0a889849
+    source: :Princess_Isabelle_of_Orleans_Braganza
+  AssignClass (aef9b66e-5c76-40e8-8e41-8b843b7cd69a)
+ Call ID: aef9b66e-5c76-40e8-8e41-8b843b7cd69a
   Args:
     type: :Ancestor
-    source: Louis_XIV
-  AssignClass (80ad9c20-a301-4e81-8c89-4c6acf5fdbf9)
- Call ID: 80ad9c20-a301-4e81-8c89-4c6acf5fdbf9
+    source: :Luis_Cousino_y_Sebire
+  AssignClass (97299983-e4e4-4cea-bc16-500791c629e1)
+ Call ID: 97299983-e4e4-4cea-bc16-500791c629e1
   Args:
+    source: :Antonia_Maria_Quinones_de_Leon_y_Banuelos
     type: :Ancestor
-    source: Louis_XIII
-  AssignClass (6dd50b96-dd64-4756-aeb8-317d3a85625c)
- Call ID: 6dd50b96-dd64-4756-aeb8-317d3a85625c
+  AssignClass (57317ba7-6949-4731-8146-6680cec1435d)
+ Call ID: 57317ba7-6949-4731-8146-6680cec1435d
   Args:
+    source: :Marie_Therese_of_Wurttemberg
     type: :Ancestor
-    source: Jean_Duke_of_Guise
-  AssignClass (445e4d26-e4f7-491a-b483-ecc620ee91d4)
- Call ID: 445e4d26-e4f7-491a-b483-ecc620ee91d4
-  Args:
-    type: :Ancestor
-    source: Henri_dOrleans
-  AssignClass (ab601b59-3ffa-4d12-b894-9d1afec37987)
- Call ID: ab601b59-3ffa-4d12-b894-9d1afec37987
-  Args:
-    type: :Ancestor
-    source: Philippe_Duke_of_Orleans
-  Finish (d16b60c2-a217-453e-a3b6-b6624692fbbb)
- Call ID: d16b60c2-a217-453e-a3b6-b6624692fbbb
+  Finish (6b6f45b6-c553-4607-9aef-2a925b0a9054)
+ Call ID: 6b6f45b6-c553-4607-9aef-2a925b0a9054
   Args:
 
 ================================= Tool Message =================================
@@ -1285,69 +1535,97 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Francoise_Marie_de_Bourbon a :Person,
+  data:Charles_Louis_dOrleans a :Man,
+          :Person ;
+      :hasFather data:Jacques_dOrleans .
+
+  data:Diane_dOrleans a :Person,
           :Woman ;
-      :hasFather data:Louis_XIV .
+      :isSisterOf data:Henri_dOrleans .
 
-  data:Henri_son_of_Henri a :Man,
+  data:Foulques_dOrleans a :Man,
           :Person ;
+      :hasFather data:Jacques_dOrleans .
+
+  data:Francois_dOrleans a :Man,
+          :Person ;
+      :isBrotherOf data:Henri_dOrleans .
+
+  data:Francois_dOrleans_son_of_Henri a :Man,
+          :Person ;
+      :hasFather data:Henri_dOrleans .
+
+  data:Jean_Robert_Boeuf a :Man,
+          :Person .
+
+  data:Jean_dOrleans a :Man,
+          :Person ;
+      :hasFather data:Henri_dOrleans .
+
+  data:Louis_Alphonse_Duke_of_Anjou a :Man,
+          :Person .
+
+  data:Marie_dOrleans a :Person,
+          :Woman ;
       :hasFather data:Henri_dOrleans ;
-      :hasRelation data:Micaela_Cousino_Quinones_de_Leon .
+      :hasMother data:Marie_Therese_of_Wurttemberg .
 
-  data:Michel a :Man,
+  data:Michel_dOrleans a :Man,
           :Person ;
-      :hasFather data:Henri_dOrleans .
+      :isBrotherOf data:Henri_dOrleans .
 
-  data:Prince_Eudes_Duke_of_Angouleme a :Man,
+  data:Prince_Gundakar_of_Liechtenstein a :Man,
           :Person .
 
-  data:Thibaut a :Man,
+  data:Thibaut_dOrleans a :Man,
           :Person ;
-      :hasFather data:Henri_dOrleans .
+      :isBrotherOf data:Henri_dOrleans .
 
-  data:Isabelle_of_Orleans_Braganza a :Person,
+  data:Antonia_Maria_Quinones_de_Leon_y_Banuelos a :Ancestor,
+          :Person,
           :Woman .
 
-  data:Jean_Duke_of_Guise a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Louis_Philippe_I a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Louis_XIII a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Micaela_Cousino_Quinones_de_Leon a :Person,
-          :Woman .
-
-  data:Philippe_Duke_of_Orleans a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Philippe_I_Duke_of_Orleans a :Ancestor,
+  data:Henri_Count_of_Paris a :Ancestor,
           :Man,
           :Person ;
-      :hasFather data:Louis_XIII .
+      :hasBirthYear 1908 ;
+      :hasDeathYear 1999 .
 
-  data:Louis_XIV a :Ancestor,
+  data:Luis_Cousino_y_Sebire a :Ancestor,
           :Man,
           :Person .
+
+  data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon a :Person,
+          :Woman ;
+      :hasBirthYear 1938 ;
+      :hasDeathYear 2022 ;
+      :hasFather data:Luis_Cousino_y_Sebire ;
+      :hasMarriageYear 1984 ;
+      :hasMother data:Antonia_Maria_Quinones_de_Leon_y_Banuelos .
+
+  data:Princess_Isabelle_of_Orleans_Braganza a :Ancestor,
+          :Person,
+          :Woman .
+
+  data:Jacques_dOrleans a :Ancestor,
+          :Man,
+          :Person ;
+      :isBrotherOf data:Henri_dOrleans .
+
+  data:Marie_Therese_of_Wurttemberg a :Ancestor,
+          :Person,
+          :Woman ;
+      :hasBirthYear 1934 .
 
   data:Henri_dOrleans a :Ancestor,
           :Man,
           :Person ;
-      :hasAncestor data:Louis_Philippe_I,
-          data:Louis_XIV,
-          data:Philippe_I_Duke_of_Orleans ;
-      :hasBirthYear 1908 ;
-      :hasDeathYear 1999 ;
-      :hasFather data:Jean_Duke_of_Guise ;
-      :hasMarriageYear 1931 ;
-      :hasMother data:Philippe_Duke_of_Orleans ;
-      :hasRelation data:Isabelle_of_Orleans_Braganza .
+      :hasBirthYear 1933 ;
+      :hasDeathYear 2019 ;
+      :hasFather data:Henri_Count_of_Paris ;
+      :hasMother data:Princess_Isabelle_of_Orleans_Braganza ;
+      :hasRelation data:Marie_Therese_of_Wurttemberg,
+          data:Micaela_Anna_Maria_Cousino_y_Quinones_de_Leon .
 
 
 
@@ -1359,139 +1637,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (3b75aadd-8a48-4db0-aba3-5d8b6f6f564f)
- Call ID: 3b75aadd-8a48-4db0-aba3-5d8b6f6f564f
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:4
-Violations:
-
-  Violation [1]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Henri_dOrleans' has a 'hasMother' relationship pointing to 'Philippe_Duke_of_Orleans', but 'Philippe_Duke_of_Orleans' is not classified as a :Woman or :Ancestor, which is required by the schema.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to delete the relationship ':Henri_dOrleans :hasMother :Philippe_Duke_of_Orleans'.
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Henri_dOrleans' has a 'hasMother' relationship pointing to 'Philippe_Duke_of_Orleans', but 'Philippe_Duke_of_Orleans' is not classified as a :Woman or :Ancestor, which is required by the schema.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to delete the relationship ':Henri_dOrleans :hasMother :Philippe_Duke_of_Orleans'.
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Henri_dOrleans' has a 'hasMother' relationship pointing to 'Philippe_Duke_of_Orleans', but 'Philippe_Duke_of_Orleans' is not classified as a :Woman or :Ancestor, which is required by the schema.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to delete the relationship ':Henri_dOrleans :hasMother :Philippe_Duke_of_Orleans'.
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The node 'Henri_dOrleans' has a 'hasMother' relationship pointing to 'Philippe_Duke_of_Orleans', but 'Philippe_Duke_of_Orleans' is not classified as a :Woman or :Ancestor, which is required by the schema.
-    LLM-provided instruction on how to handle the violation:
-      Use RemoveTriple to delete the relationship ':Henri_dOrleans :hasMother :Philippe_Duke_of_Orleans'.
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  RemoveTriple (2cde256d-8962-4fa8-aa75-5ae06a66fd3e)
- Call ID: 2cde256d-8962-4fa8-aa75-5ae06a66fd3e
-  Args:
-    relation: :hasMother
-    target: Philippe_Duke_of_Orleans
-    source: Henri_dOrleans
-
-================================= Tool Message =================================
-
-The final data graph after all the edits:
-  @prefix : <http://example.com/family_TBOX.ttl#> .
-  @prefix data: <http://example.org/data/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-  data:Francoise_Marie_de_Bourbon a :Person,
-          :Woman ;
-      :hasFather data:Louis_XIV .
-
-  data:Henri_son_of_Henri a :Man,
-          :Person ;
-      :hasFather data:Henri_dOrleans ;
-      :hasRelation data:Micaela_Cousino_Quinones_de_Leon .
-
-  data:Michel a :Man,
-          :Person ;
-      :hasFather data:Henri_dOrleans .
-
-  data:Philippe_Duke_of_Orleans a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Eudes_Duke_of_Angouleme a :Man,
-          :Person .
-
-  data:Thibaut a :Man,
-          :Person ;
-      :hasFather data:Henri_dOrleans .
-
-  data:Isabelle_of_Orleans_Braganza a :Person,
-          :Woman .
-
-  data:Jean_Duke_of_Guise a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Louis_Philippe_I a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Louis_XIII a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Micaela_Cousino_Quinones_de_Leon a :Person,
-          :Woman .
-
-  data:Philippe_I_Duke_of_Orleans a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:Louis_XIII .
-
-  data:Louis_XIV a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Henri_dOrleans a :Ancestor,
-          :Man,
-          :Person ;
-      :hasAncestor data:Louis_Philippe_I,
-          data:Louis_XIV,
-          data:Philippe_I_Duke_of_Orleans ;
-      :hasBirthYear 1908 ;
-      :hasDeathYear 1999 ;
-      :hasFather data:Jean_Duke_of_Guise ;
-      :hasMarriageYear 1931 ;
-      :hasRelation data:Isabelle_of_Orleans_Braganza .
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (6e2dc0ed-a828-4cc8-9c30-837fc1092a2f)
- Call ID: 6e2dc0ed-a828-4cc8-9c30-837fc1092a2f
+  ValidateShacl (031574ac-a847-4eaf-a4c6-dd8f34a561f7)
+ Call ID: 031574ac-a847-4eaf-a4c6-dd8f34a561f7
   Args:
 
 ================================= Tool Message =================================
@@ -1502,6 +1649,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (61383fba-6cce-4d16-8149-abfe25494756)
- Call ID: 61383fba-6cce-4d16-8149-abfe25494756
+  Finish (ea1e2a70-e3f9-42a6-9dcc-ca3da7d6050b)
+ Call ID: ea1e2a70-e3f9-42a6-9dcc-ca3da7d6050b
   Args:

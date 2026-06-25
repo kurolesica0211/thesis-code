@@ -89,6 +89,7 @@ Prince Harry, Duke of Sussex (Henry Charles Albert David; born 15 September 1984
 He is the younger son of King Charles III and Diana, Princess of Wales, and is fifth in the line of succession to the British throne.
 Harry was educated at Wetherby School, Ludgrove School, and Eton College, before completing officer training at the Royal Military Academy Sandhurst.
 He was commissioned as a cornet in the Blues and Royals and served briefly alongside his elder brother, William, Prince of Wales.
+He was deployed twice on active service in Afghanistan: for ten weeks in Helmand Province during 2007–2008, and for twenty weeks with the Army Air Corps in 2012–2013.
 Inspired by the Warrior Games in the United States, Harry founded the Invictus Games in 2014 and remains actively involved as its patron.
 In 2016, together with his brother William and sister-in-law Catherine, Princess of Wales, he co-founded the mental health awareness initiative Heads Together.
 In 2018, Harry was created Duke of Sussex ahead of his wedding to American actress Meghan Markle.
@@ -133,6 +134,7 @@ Sandhurst; Blues and Royals; deployment to Afghanistan
 Harry passed the Regular Commissions Board (RCB) in September 2004 and entered the Royal Military Academy Sandhurst on 8 May 2005, where he was known as Officer Cadet Wales and joined Alamein Company.
 In 2006, it was announced that Harry's unit was scheduled to be deployed to Iraq the following year.
 In April 2006, the Ministry of Defence stated that Harry would be shielded from the front line if his unit went to war, with a spokeswoman noting that he was expected to "undertake the fullest range of deployments", but that his role required monitoring because "his overt presence might attract additional attention" that could endanger him or those he commanded.
+Defence Secretary John Reid argued that he should be allowed to serve on the front line.
 Harry agreed, saying, "If they said 'no, you can't go front line'
 Harry completed the Troop Leaders' Course in October 2006 and rejoined his regiment in Windsor, where he was put in charge of a troop of 11 soldiers and four Scimitar reconnaissance vehicles.
 On 22 February 2007, the Ministry of Defence and Clarence House jointly announced that Harry would be deployed with his regiment to Iraq as part of the 1st Mechanised Brigade of the 3rd Mechanised Division – a move supported by Harry, who had said he would leave the army if ordered to remain in safety while his regiment went to war.
@@ -154,10 +156,13 @@ Harry was awarded his Apache Flying Badge on 14 April 2011.
 In June 2011, Clarence House announced that Harry would be available for deployment in current operations in Afghanistan as an Apache helicopter pilot.
 The final decision rested with the Ministry of Defence's senior commanders, principally the Chief of the Defence Staff, in consultation with the wishes of Harry, the Prince of Wales, and the Queen.
 In October 2011, Harry was transferred to a United States military base in California to complete his helicopter gunship training.
+This final phase included live-fire training and "environmental and judgment training" at naval and air force facilities in California and Arizona.
 While training in Southern California, Harry also spent time in San Diego.
 On 7 September 2012, Harry arrived at Camp Bastion in southern Afghanistan as part of the 100-strong 662 Squadron, 3 Regiment, Army Air Corps, to begin a four-month combat tour as a co-pilot and gunner for an Apache helicopter.
+On 10 September, within days of his arrival, it was reported that the Taliban had threatened his life.
 On 18 September, Harry was moved to a safe location after a Taliban attack on Camp Bastion that killed two US marines.
 Defence Secretary Philip Hammond stated that "additional security arrangements" had been put in place because Harry could be a potential target, but added that he would face "the same risk as any other Apache pilot" while in combat.
+He came and went, and you never would have known he was there" and, "The only thing special we did for him was we had a place identified as a safe house in case the base came under attack."
 On 21 January 2013, it was announced that Harry was returning from a 20-week deployment in Afghanistan.
 Harry compared operating the Apache's weapons systems in Afghanistan to playing video games.
 Harry later revealed in his 2023 memoir Spare that he flew on six missions that resulted in him killing 25 Taliban members, writing that he felt he had been trained not to view them as "people" but as "chess pieces" removed from the board.
@@ -179,6 +184,7 @@ Secondment to Australian Defence Force
 On 17 March 2015, Kensington Palace announced that Harry would leave the Armed Forces in June.
 On 6 April 2015, Harry reported for duty to Australia's Chief of the Defence Force, Air Chief Marshal Mark Binskin, at the Royal Military College, Duntroon, in Canberra.
 Harry flew to Darwin later that day to begin his month-long secondment to the ADF's 1st Brigade.
+He also joined SASR for live-fire shooting exercises with numerous Special Forces weapons at a variety of ranges.
 Harry completed an insertion-training exercise using a rigid-hull inflatable boat.
 He also spent time flying over Sydney as co-pilot of an Army Black Hawk helicopter and participated in counter-terrorism training in Sydney Harbour with Royal Australian Navy clearance divers.
 Harry's attachment with the ADF ended on 8 May 2015, and on 19 June 2015 he resigned his short service commission.
@@ -214,6 +220,7 @@ The Duke and Duchess initially lived at Nottingham Cottage in London, within the
 The couple considered settling in the 21-room Apartment 1 at Kensington Palace, but instead moved to Frogmore Cottage in the Home Park of Windsor Castle, which Queen Elizabeth II had recently gifted to them.
 The Crown Estate refurbished the cottage at a cost of £2.4 million, paid from the Sovereign Grant, with the Duke later reimbursing expenses beyond restoration and ordinary maintenance, part of which was offset against rental payments due at the time.
 On 6 May 2019, the Duke and Duchess's son, Archie, was born.
+Their office was moved to Buckingham Palace and officially closed on 31 March 2020 when the Sussexes ceased "undertaking official engagements in support of the Queen".
 The following month, the Duchess suffered a miscarriage.
 The Duke and Duchess have owned a Labrador named Pula and two Beagles named Guy and Mamma Mia.
 In 2017, Harry stated that he had "five or six" godchildren, some of whom later attended his wedding.
@@ -222,8 +229,10 @@ Health
 In May 1988, Harry underwent a surgery for a minor hernia.
 In his memoir Spare, Harry states that he took cocaine at the age of 17.
 In 2002, it was reported that, with Charles's encouragement, Harry had visited a drug-rehabilitation unit to speak with recovering drug addicts after it emerged that he had been smoking cannabis and drinking at his father's Highgrove House and at a local pub in the summer of 2001.
+He adds in the memoir that he smoked cannabis at Eton and in the gardens Kensington Palace, though he later told a court that "he never smoked in  father's house".
 In 2017, during an appearance on Bryony Gordon's podcast Mad World, Harry said that, with the support of his brother, he had sought counselling years after his mother's death.
 He stated that he had struggled with aggression, experienced anxiety during royal engagements, and had been "very close to a complete breakdown on numerous occasions".
+He also said that what he experienced after his mother's death "was very much" post-traumatic stress disorder (PTSD).
 In his mental-health documentary, The Me You Can't See which premiered in 2021, Harry said that he had undergone four years of therapy to address his mental-health difficulties, having been encouraged to do so by his future wife after they began dating.
 In his 2023 memoir, Harry described himself as an agoraphobe.
 Political views
@@ -255,14 +264,15 @@ Public life
 At the age of 21, Harry was appointed a Counsellor of State and began his duties in that capacity.
 The Queen granted Harry and William their own royal household on 6 January 2009.
 Previously, William and Harry's affairs had been handled by their father's office at Clarence House in central London.
+The new household released a statement announcing they had established their own office at nearby St James's Palace to look after their public, military and charitable activities.
 In March 2012, Harry led an official visit to Belize as part of the Queen's Diamond Jubilee celebrations.
 Harry also played tambourine and took part in the music video for the song "Sing", which was released in May 2012 to commemorate the Diamond Jubilee.
-It included engagements in Washington, DC, Colorado, New York, New Jersey, and Connecticut.
 In Italy, Harry attended commemorations of the 70th anniversary of the Monte Cassino battles, in which Polish, Commonwealth and British troops fought.
 He opened the Field of Remembrance at Westminster Abbey on 6 November 2014, a task usually performed by Prince Philip.
 Before reporting for duty to the Australian Defence Force (ADF), Harry visited the Australian War Memorial in Canberra on 6 April 2015.
 In October 2015, Harry carried out a day of engagements in the US.
 Harry, as patron of Sentebale, travelled to Lesotho to attend the opening of the Mamohato Children's Centre in November 2015.
+He visited Cape Town, where he presented the insignia of the Order of the Companions of Honour to the Archbishop on behalf of the Queen.
 Harry also played the Sentebale Royal Salute Polo Cup, at Val de Vie Estate in Cape Town, fundraising for Sentebale.
 Also in that month, Harry became a patron of Walk of America, a campaign which brings together a number of veterans who will take part in a 1,000-mile expedition across the US in mid-2018.
 The Prince was appointed the president of The Queen's Commonwealth Trust, which focuses on projects involving children and welfare of prisoners, in April.
@@ -288,10 +298,12 @@ In April 2021, Harry returned to the UK to attend the funeral of his grandfather
 Meghan did not attend due to her pregnancy.
 On 8 September, while Harry and Meghan were in London preparing to attend a charity event, Queen Elizabeth II died at Balmoral Castle in Scotland, and they remained in the United Kingdom for her funeral.
 Harry and Meghan visited Nigeria in May 2024 to honour the work of the Invictus Games.
+In August that year, the couple visited Colombia at the invitation of the country's vice-president, Francia Márquez.
 Harry visited the Superhumans Center in Lviv, Ukraine, in April 2025 after an invitation from its chief executive.
 On 3 November 2025, Harry's office announced that he would travel to Toronto, Canada, for a series of events ahead of Remembrance Day.
 He and Meghan visited Jordan in February 2026 with the Director-General of the World Health Organization (WHO) Tedros Adhanom Ghebreyesus.
 In April 2026, Harry and Meghan undertook a four‐day visit to Australia.
+Australian police later announced that they would be conducting an operation to ensure safety during parts of the couple's tour.
 Later that month, Harry made another visit to Kyiv, where he used a speech at the Kyiv Security Forum to urge the U.S. to take a stronger role in supporting Ukraine and said to Russian President Vladimir Putin that "there is still a moment – now – to stop this war."
 In response to the remarks, U.S. president Donald Trump stated, "I know one thing, Prince Harry is not speaking for the UK, that's for sure".
 
@@ -307,6 +319,7 @@ Mr Justice Swift also reacted to the Duke's legal team sending a copy of the rul
 In July 2022, Mr Justice Swift granted permission for part of Harry's claim to proceed for a judicial review.
 Harry filed a lawsuit against the Home Office and the Metropolitan Police in August 2022, challenging the decision by RAVEC from January 2022 which stated that State security could not be made available to private individuals even if they wished to pay for it themselves.
 In February 2023, a High Court judge ruled that the second case should be thrown out; however, the decision was later appealed by Harry's legal team.
+He lost the legal challenge in May 2023, meaning that he will not be allowed to make private payments for police protection.
 In June 2023, a Freedom of Information request revealed that Harry's legal fight with the Home Office had cost £502,236, with £492,000 covered by the state and the remaining £10,000 covered by Harry.
 In February 2024, the High Court ruled against Harry in his case against the Home Office and upheld the decision by RAVEC, stating that there had been no unlawfulness in the decision-making process for his security arrangements.
 It was also revealed that during the proceedings Harry had leaked information via email to "a partner of Schillings" and to Johnny Mercer, for which he apologised to the court.
@@ -314,7 +327,6 @@ In December 2025, it was announced that, for the first time since April 2019, RA
 Civilian career and investments
 
 In summer 2019, before announcing their decision to step back in January 2020, Harry and his wife were involved in talks with Jeffrey Katzenberg, the founder of the now-defunct streaming platform Quibi, over a possible role in the service without gaining personal profits, but they eventually decided against joining the project.
-In September 2019, it was reported that the couple had hired New York-based PR firm Sunshine Sachs, which had been working with them on intermittent projects since 2017.
 Between 2019 and 2020, Harry and Meghan contributed to the book Finding Freedom through a third-party source.
 Despite initially denying their involvement with the book, their contributions to the book became apparent during Meghan's court case against Associated Newspapers who were trying to use the book in their defense.
 In June 2020, they signed with the Harry Walker Agency, owned by media company Endeavor, to conduct paid public speaking engagements.
@@ -359,6 +371,8 @@ In June 2020, the Duke and Duchess backed the Stop Hate for Profit campaign and 
 In April 2021, Harry and Meghan were announced as campaign chairs for Vax Live: The Concert to Reunite the World, an event organised by Global Citizen to increase access to COVID-19 vaccinations.
 Later that month, he narrated "Hope Starts Here", a special video rereleased by African Parks to mark the Earth Day in which he urged organisations and communities to preserve biodiversity and paid tribute to his grandfather Prince Philip for his efforts as a conservationist.
 Like his mother, Harry has worked with the HALO Trust, an organisation that removes debris—particularly landmines—left behind by war.
+In April 2017, he hosted the Landmine Free 2025 reception at Kensington Palace, during which the UK government announced an increase in its financial support for de-mining efforts.
+In September 2019, he walked through a de-mining site in Angola, the same country visited by his mother 22 years earlier.
 In June 2021, after ten members of the trust were killed by an armed group at a mine clearance camp in Afghanistan, Harry issued a statement saying the attack "was nothing less than an act of barbarism".
 In the same month and ahead of the 2021 G20 Rome summit, Harry and his wife penned an open letter together with the Director-General of the World Health Organization, Tedros Adhanom Ghebreyesus, asking the G20 leaders to expedite efforts for the global distribution of COVID-19 vaccines.
 In April 2022 and in a video featuring Rhys Darby and Dave Fane on Māori Television, Harry launched an eco-travel campaign through his non-profit Travalyst, encouraging people to travel sustainably.
@@ -367,12 +381,14 @@ In the following month, he and Meghan joined a coalition of public figures, scie
 Sport
 
 Harry has enjoyed playing sports, such as competitive polo, skiing, and motocross.
+Like his brother and father, he has participated in polo matches to raise money for charitable causes.
 Harry is also a keen Rugby football fan and supported England's bid to host rugby union's 2015 Rugby World Cup, and presented the trophy at rugby league's 2019 Challenge Cup finals.
 In 2004 Harry trained as a Rugby Development Officer for the Rugby Football Union and coached students in schools to encourage them to learn the sport.
 He had served as the RFU's vice-royal patron since 2010, supporting the Queen as patron.
 In 2012 Harry launched Coach Core alongside his brother and sister-in-law, the Duke and Duchess of Cambridge.
 In January 2017, Harry visited the Running Charity and its partner Depaul UK to highlight the role of sport in helping homeless and vulnerable people.
 In June 2019, the Duke was present at the launch of Made by Sport, a charity coalition set to raise money to boost sport in disadvantaged communities.
+In his statement, he lent his support to the charity by arguing that its role in bringing sport into the life of disadvantaged people would save "hundreds of millions of pounds" towards treating the issues among young people.
 Sussex Royal and Archewell
 
 In June 2019, it was announced that the Duke and Duchess of Sussex would split from The Royal Foundation and establish their own charity foundation by the end of 2019.
@@ -407,6 +423,7 @@ Royal aides suggested Clarence House would contact the Press Complaints Commissi
 St James's Palace confirmed that Harry was in the photographs, saying that he was essentially a victim whose privacy had been invaded and contacted the PCC upon hearing that a number of British newspapers were considering publishing the photographs.
 At a 2014 event in England, Foo Fighters drummer Taylor Hawkins was slapped by Harry after he had told him "I can't wake up, so tired", with Harry subsequently stating "You awake now?"
 Hawkins added "I got slapped in the face by the prince.
+But in the moment, I was like, 'You fucking slapped me, dude.'
 "
 
 
@@ -462,6 +479,8 @@ In July 2023, the judge ruled that part of Harry's case involving allegations of
 In May 2024, Mr Justice Fancourt refused Harry the permission to include claims against Rupert Murdoch, expand his case's scope back to 1994 and 1995 to cover allegations involving his mother or to add new allegations from 2016 involving his then-girlfriend Meghan.
 In October 2024, the judge announced that the two sides should either settle or go to trial in January 2025 and refused to let Harry's team include allegations that bugs were placed in rooms and cars, and trackers placed on vehicles as "no particulars whatsoever of such allegations" were provided.
 In January 2025, the two parties settled with NGN paying more than £10 million in pay outs and legal fees in the settlements involving both Harry and former Labour deputy leader Tom Watson.
+NGN made a "full and unequivocal apology" for "serious intrusion" by The Sun between 1996 and 2011, for "phone hacking, surveillance and misuse of private information by journalists and private investigators instructed by them at the News of the World" and the intrusion into the life of his mother, and admitted "incidents of unlawful activity" were carried out by private investigators working for the newspaper, but "not by journalists".
+The BBC reported on the "scrapped case", highlighting NGN's statement which said that the settlement agreement "drew a line under the past" and that they rejected the claims that would have been made in court about a corporate cover-up.
 Lawyers for the Mirror denied accessing Harry's voicemail messages and other allegations, but admitted to instructing "private investigators to unlawfully obtain private information" about Harry on a single occasion that involved him visiting Chinawhite.
 In January 2023, a High Court judge ruled that Harry's lawsuit against Mirror Group Newspapers (MGN) as well as other similar lawsuits against the publisher would go to trial in May 2023.
 At the beginning of trial, MGN apologised for one instance of unlawful information gathering against Harry and added that his legal challenge "warrants compensation".
@@ -475,6 +494,7 @@ Other cases
 
 In October 2013, Jo Brand appeared on Have I Got News for You and while talking about Prince George's christening she said: "George's godparents include Hugh van Cutsem ...
 I presume that's a nickname as in Hugh van cuts 'em and Harry then snorts 'em."
+Representatives of Kensington Palace contacted the BBC after the programme aired, pointing out the error and the implications of the joke.
 The BBC wrote to Kensington Palace apologising for the "factual inaccuracy" as George's godfather was William van Cutsem, but it did not apologise for the comment itself as it was part of the show's "irreverent humor".
 In February 2014, a judge sentenced the convicted criminal Ashraf Islam to three years in prison, as he had plotted to murder Harry and had given it "considerable thought" due to his belief that Harry had "a moral guilt" since he was in the army.
 In June 2019, two members of the neo-Nazi group Sonnenkrieg Division were jailed for eighteen months and four years, respectively, for sharing propaganda posters among which was one that labelled Harry as a "race traitor" with a gun pointed at his head.
@@ -486,7 +506,6 @@ In April 2020, the Duke and Duchess announced that they would no longer cooperat
 In June 2020, it was reported that Harry's lawyers had issued a 'letter before action', threatening to sue the Sun and Dan Wootton, based on the allegations that they had paid money to associates of palace officials to secure their stories.
 It was alleged that the Sun had made two payments amounting to £4,000 to the partner of a royal official in relation to stories published in June and July 2019 which detailed the nannying and god-parenting arrangements for Harry and Meghan's son Archie.
 Wootton has been credited with breaking the story about Megxit and Harry and Meghan's initial plans for moving to Canada in the Sun on 8 January 2020, which prompted the couple to issue an announcement within hours, confirming their plans for stepping back from their royal duties.
-Sources close to the couple later spoke to The New York Times, stating that they "felt forced to disclose their plans prematurely" as they learned about the Sun's intentions to publish the story.
 "
 
 
@@ -546,7 +565,7 @@ In August 2018, the Royal Canadian Legion granted him the 2018 Founders Award fo
 In July 2021, Harry and Meghan were among people who were selected by UK-based charity Population Matters to receive the Change Champions Award for their decision to have only two children and help with maintaining a smaller and more sustainable population.
 In February 2022, Harry and Meghan were selected to receive the NAACP's President's Award for their work on causes related to social justice and equity.
 Harry was inducted into the Living Legends of Aviation in January 2024.
-In October 2025, he and his wife received the Humanitarians of the Year award at Project Healthy Minds' annual gala in New York City in recognition of their commitment to mental health support.
+He received the Pat Tillman Award for Service during the 2024 ESPY Awards ceremony, recognising his service in the British Armed Forces and work with the Invictus Games, despite Tillman's mother believing that the award should have gone to "more fitting" recipients.
 Arms
 
 Ancestry
@@ -563,6 +582,8 @@ In June 2013, BritainsDNA announced that genealogical DNA tests on two of Harry 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -578,39 +599,9 @@ In June 2013, BritainsDNA announced that genealogical DNA tests on two of Harry 
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -625,6 +616,23 @@ In June 2013, BritainsDNA announced that genealogical DNA tests on two of Harry 
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -642,6 +650,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -709,29 +732,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -740,6 +755,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -752,6 +775,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -760,17 +785,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -798,6 +825,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -813,203 +924,210 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (16c11535-0541-4f1a-ab72-6933cbea5835)
- Call ID: 16c11535-0541-4f1a-ab72-6933cbea5835
+  AssignClass (58503c3a-d308-4205-9dad-a54c3b605a96)
+ Call ID: 58503c3a-d308-4205-9dad-a54c3b605a96
   Args:
-    source: :Prince_Harry
+    source: Prince_Harry
     type: :Man
-  AssignClass (ae39e8bc-97f6-48d6-928b-a86c9fc37a65)
- Call ID: ae39e8bc-97f6-48d6-928b-a86c9fc37a65
+  AssignClass (7da8250c-5b79-41bc-9023-21a816c3bd35)
+ Call ID: 7da8250c-5b79-41bc-9023-21a816c3bd35
   Args:
     type: :Person
-    source: :Prince_Harry
-  AssignClass (b4ff088e-ecdc-4aff-93cc-af04aa1657c7)
- Call ID: b4ff088e-ecdc-4aff-93cc-af04aa1657c7
+    source: Prince_Harry
+  AssignClass (4a008cf6-e6e4-4c73-969c-6d44a24c8e17)
+ Call ID: 4a008cf6-e6e4-4c73-969c-6d44a24c8e17
   Args:
-    source: :King_Charles_III
+    source: King_Charles_III
     type: :Man
-  AssignClass (26f8c010-c311-454e-a4e7-8cd8e1a3ef42)
- Call ID: 26f8c010-c311-454e-a4e7-8cd8e1a3ef42
+  AssignClass (0e6c94c8-1a94-4331-8efa-43b860cb1cf8)
+ Call ID: 0e6c94c8-1a94-4331-8efa-43b860cb1cf8
   Args:
     type: :Person
-    source: :King_Charles_III
-  AssignClass (1536fef7-6b46-417f-bd76-5b26944cc8ba)
- Call ID: 1536fef7-6b46-417f-bd76-5b26944cc8ba
+    source: King_Charles_III
+  AssignClass (f43ba448-43b3-4e75-a644-6f8365fa3766)
+ Call ID: f43ba448-43b3-4e75-a644-6f8365fa3766
+  Args:
+    source: Diana_Princess_of_Wales
+    type: :Woman
+  AssignClass (87ac45a9-70ea-4a8b-963a-097706b70167)
+ Call ID: 87ac45a9-70ea-4a8b-963a-097706b70167
+  Args:
+    type: :Person
+    source: Diana_Princess_of_Wales
+  AssignClass (49d570f9-381f-43a6-a7da-15ef1dea8b15)
+ Call ID: 49d570f9-381f-43a6-a7da-15ef1dea8b15
+  Args:
+    source: William_Prince_of_Wales
+    type: :Man
+  AssignClass (d879b735-5791-4cb0-b60e-66a4ce317dae)
+ Call ID: d879b735-5791-4cb0-b60e-66a4ce317dae
+  Args:
+    source: William_Prince_of_Wales
+    type: :Person
+  AssignClass (252bde69-304a-4ae7-9da7-7152b4fabd07)
+ Call ID: 252bde69-304a-4ae7-9da7-7152b4fabd07
+  Args:
+    source: Queen_Elizabeth_II
+    type: :Woman
+  AssignClass (6998d56c-009a-4ff7-b785-283f1810a21b)
+ Call ID: 6998d56c-009a-4ff7-b785-283f1810a21b
+  Args:
+    type: :Person
+    source: Queen_Elizabeth_II
+  AssignClass (6634cc86-3a42-40b5-9998-a4d9b454eaaa)
+ Call ID: 6634cc86-3a42-40b5-9998-a4d9b454eaaa
+  Args:
+    type: :Man
+    source: Prince_Philip_Duke_of_Edinburgh
+  AssignClass (a314bde3-7a50-4da8-8e0d-a4b4b0ca4264)
+ Call ID: a314bde3-7a50-4da8-8e0d-a4b4b0ca4264
+  Args:
+    source: Prince_Philip_Duke_of_Edinburgh
+    type: :Person
+  AssignClass (42b7fc41-7d01-4fc0-a67f-3c8ed8d35740)
+ Call ID: 42b7fc41-7d01-4fc0-a67f-3c8ed8d35740
+  Args:
+    source: Charles_Spencer_9th_Earl_Spencer
+    type: :Man
+  AssignClass (c7eb5d9c-105c-4dfc-a4f8-48b760cf0860)
+ Call ID: c7eb5d9c-105c-4dfc-a4f8-48b760cf0860
+  Args:
+    source: Charles_Spencer_9th_Earl_Spencer
+    type: :Person
+  AssignClass (873c1858-a63a-427e-84cc-ca8dea6a7215)
+ Call ID: 873c1858-a63a-427e-84cc-ca8dea6a7215
   Args:
     type: :Woman
-    source: :Diana_Princess_of_Wales
-  AssignClass (9726cdca-7f8e-4218-ac57-1b7296e3bf19)
- Call ID: 9726cdca-7f8e-4218-ac57-1b7296e3bf19
+    source: Meghan_Markle
+  AssignClass (4376b3ab-8162-4d2f-a873-6a47a25deaf6)
+ Call ID: 4376b3ab-8162-4d2f-a873-6a47a25deaf6
   Args:
+    source: Meghan_Markle
     type: :Person
-    source: :Diana_Princess_of_Wales
-  AssignClass (88685c34-6658-4acd-a921-00cf93e0cce3)
- Call ID: 88685c34-6658-4acd-a921-00cf93e0cce3
+  AssignClass (b8f848b3-12d3-4417-8c37-a3595ea68593)
+ Call ID: b8f848b3-12d3-4417-8c37-a3595ea68593
   Args:
-    source: :Prince_William
+    source: Archie_Mountbatten-Windsor
     type: :Man
-  AssignClass (c3d6689c-a098-4282-82bd-2b30082dbef3)
- Call ID: c3d6689c-a098-4282-82bd-2b30082dbef3
+  AssignClass (bbeee4ec-625c-4735-acf2-f14be981d61f)
+ Call ID: bbeee4ec-625c-4735-acf2-f14be981d61f
   Args:
-    source: :Prince_William
+    source: Archie_Mountbatten-Windsor
     type: :Person
-  AssignClass (ba72af37-896b-4a15-a2ac-f4cba91f92f2)
- Call ID: ba72af37-896b-4a15-a2ac-f4cba91f92f2
+  AssignClass (48eeae0d-9d27-464c-89f0-681a7f29c624)
+ Call ID: 48eeae0d-9d27-464c-89f0-681a7f29c624
   Args:
+    source: Lilibet_Mountbatten-Windsor
     type: :Woman
-    source: :Meghan_Markle
-  AssignClass (11c271c6-a829-4a68-b2aa-05aa6ca3fed8)
- Call ID: 11c271c6-a829-4a68-b2aa-05aa6ca3fed8
+  AssignClass (873411bb-05e3-447a-8fa0-4ba8e710824a)
+ Call ID: 873411bb-05e3-447a-8fa0-4ba8e710824a
   Args:
-    source: :Meghan_Markle
+    source: Lilibet_Mountbatten-Windsor
     type: :Person
-  AssignClass (16e20ae0-522e-4829-9522-936cd12d68c8)
- Call ID: 16e20ae0-522e-4829-9522-936cd12d68c8
+  AddTriple (cc926d64-7ae2-456e-af94-bf3c6e4eb12e)
+ Call ID: cc926d64-7ae2-456e-af94-bf3c6e4eb12e
   Args:
-    source: :Archie_Mountbatten-Windsor
-    type: :Man
-  AssignClass (53e81f40-878e-4022-9d55-01b10965a325)
- Call ID: 53e81f40-878e-4022-9d55-01b10965a325
+    relation: :hasFather
+    source: Prince_Harry
+    target: King_Charles_III
+  AddTriple (0c801306-b350-4511-9c29-02a215a534d9)
+ Call ID: 0c801306-b350-4511-9c29-02a215a534d9
   Args:
-    type: :Person
-    source: :Archie_Mountbatten-Windsor
-  AssignClass (7e4b0d54-d774-460a-ab69-1f3512952d6c)
- Call ID: 7e4b0d54-d774-460a-ab69-1f3512952d6c
+    relation: :hasMother
+    source: Prince_Harry
+    target: Diana_Princess_of_Wales
+  AddTriple (8ec48440-6452-4fe4-b805-8151ed80b994)
+ Call ID: 8ec48440-6452-4fe4-b805-8151ed80b994
   Args:
-    type: :Woman
-    source: :Queen_Elizabeth_II
-  AssignClass (40819421-442c-473a-afeb-f948ec54a3b0)
- Call ID: 40819421-442c-473a-afeb-f948ec54a3b0
+    relation: :isBrotherOf
+    source: Prince_Harry
+    target: William_Prince_of_Wales
+  AddTriple (f71f0655-86aa-4424-9636-fc38a149a8a3)
+ Call ID: f71f0655-86aa-4424-9636-fc38a149a8a3
   Args:
-    source: :Queen_Elizabeth_II
-    type: :Person
-  AssignClass (098dae2a-f101-4cf6-bbfd-d53964446c60)
- Call ID: 098dae2a-f101-4cf6-bbfd-d53964446c60
+    target: King_Charles_III
+    source: William_Prince_of_Wales
+    relation: :hasFather
+  AddTriple (b5561733-f7ce-4d89-af61-3a1975e9a816)
+ Call ID: b5561733-f7ce-4d89-af61-3a1975e9a816
   Args:
-    type: :Man
-    source: :Prince_Philip
-  AssignClass (0e207cbf-bd5b-4325-a146-2f66c150e553)
- Call ID: 0e207cbf-bd5b-4325-a146-2f66c150e553
+    target: Diana_Princess_of_Wales
+    source: William_Prince_of_Wales
+    relation: :hasMother
+  AddTriple (ae3dc05d-938c-4cf2-b2ff-45fb3bc170f7)
+ Call ID: ae3dc05d-938c-4cf2-b2ff-45fb3bc170f7
   Args:
-    type: :Person
-    source: :Prince_Philip
-  AssignClass (fccfec0b-a991-408a-a3b3-0f817e3e4499)
- Call ID: fccfec0b-a991-408a-a3b3-0f817e3e4499
+    source: King_Charles_III
+    target: Prince_Philip_Duke_of_Edinburgh
+    relation: :hasFather
+  AddTriple (cbe8cac0-cfc5-457f-ad7f-f1403f0acf52)
+ Call ID: cbe8cac0-cfc5-457f-ad7f-f1403f0acf52
   Args:
-    source: :Charles_Spencer
-    type: :Man
-  AssignClass (00d44c17-db18-4786-b40a-95f41330bc16)
- Call ID: 00d44c17-db18-4786-b40a-95f41330bc16
+    target: Queen_Elizabeth_II
+    source: King_Charles_III
+    relation: :hasMother
+  AddTriple (84b543dd-455a-4065-b376-ff4a04f0defa)
+ Call ID: 84b543dd-455a-4065-b376-ff4a04f0defa
   Args:
-    source: :Charles_Spencer
-    type: :Person
-  AddLiteral (f2b126cc-00d1-4e6a-99d4-5355820ca097)
- Call ID: f2b126cc-00d1-4e6a-99d4-5355820ca097
+    source: Diana_Princess_of_Wales
+    target: Prince_Harry
+    relation: :isMotherOf
+  AddTriple (cce9a2d9-c24d-43a3-97ff-abad31bb5261)
+ Call ID: cce9a2d9-c24d-43a3-97ff-abad31bb5261
   Args:
-    literal_type: xsd:string
-    literal_value: Male
-    source: :Prince_Harry
-    relation: :hasSex
-  AddLiteral (940f78a2-53e1-4331-afce-e38585eda5e1)
- Call ID: 940f78a2-53e1-4331-afce-e38585eda5e1
+    relation: :isMotherOf
+    target: William_Prince_of_Wales
+    source: Diana_Princess_of_Wales
+  AddTriple (32f1d8d4-ba1e-4640-9d49-8718dc64d09c)
+ Call ID: 32f1d8d4-ba1e-4640-9d49-8718dc64d09c
+  Args:
+    relation: :isFatherOf
+    target: Prince_Harry
+    source: King_Charles_III
+  AddTriple (f1ca4f20-e83a-494a-871d-132a88824653)
+ Call ID: f1ca4f20-e83a-494a-871d-132a88824653
+  Args:
+    source: King_Charles_III
+    target: William_Prince_of_Wales
+    relation: :isFatherOf
+  AddTriple (4d21b5ad-3102-42d4-9440-226b1c728bdc)
+ Call ID: 4d21b5ad-3102-42d4-9440-226b1c728bdc
+  Args:
+    target: Archie_Mountbatten-Windsor
+    source: Prince_Harry
+    relation: :hasChild
+  AddTriple (98ac3837-18da-4cd0-9385-b2c23a10a757)
+ Call ID: 98ac3837-18da-4cd0-9385-b2c23a10a757
+  Args:
+    target: Lilibet_Mountbatten-Windsor
+    source: Prince_Harry
+    relation: :hasChild
+  AddTriple (432bce89-1481-416e-a949-7f18ac9395a7)
+ Call ID: 432bce89-1481-416e-a949-7f18ac9395a7
+  Args:
+    source: Meghan_Markle
+    target: Archie_Mountbatten-Windsor
+    relation: :hasChild
+  AddTriple (4ba7af1e-c9ee-4113-8884-2a2490f54dc4)
+ Call ID: 4ba7af1e-c9ee-4113-8884-2a2490f54dc4
+  Args:
+    relation: :hasChild
+    target: Lilibet_Mountbatten-Windsor
+    source: Meghan_Markle
+  AddLiteral (20cf2d7f-b525-4df0-a164-b7bad82e86c4)
+ Call ID: 20cf2d7f-b525-4df0-a164-b7bad82e86c4
   Args:
     literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: :Prince_Harry
     literal_value: 1984
-  AddTriple (44ee196f-33ac-4fdc-b3a1-fceb66b48e93)
- Call ID: 44ee196f-33ac-4fdc-b3a1-fceb66b48e93
+    relation: :hasBirthYear
+    source: Prince_Harry
+  Finish (b9adf4a6-008a-40cf-9aa1-afb2d2755ac4)
+ Call ID: b9adf4a6-008a-40cf-9aa1-afb2d2755ac4
   Args:
-    source: :Prince_Harry
-    relation: :hasFather
-    target: :King_Charles_III
-  AddTriple (6c6a5160-a071-4b98-99ed-a58c163738f0)
- Call ID: 6c6a5160-a071-4b98-99ed-a58c163738f0
-  Args:
-    target: :Diana_Princess_of_Wales
-    relation: :hasMother
-    source: :Prince_Harry
-  AddTriple (8b58e5a1-cc2a-45a6-9f08-c500d4058c19)
- Call ID: 8b58e5a1-cc2a-45a6-9f08-c500d4058c19
-  Args:
-    source: :Prince_Harry
-    target: :Prince_William
-    relation: :hasBrother
-  AddTriple (72b76108-1a01-4500-a9d2-0b2366cfb9fe)
- Call ID: 72b76108-1a01-4500-a9d2-0b2366cfb9fe
-  Args:
-    relation: :hasFather
-    target: :King_Charles_III
-    source: :Prince_William
-  AddTriple (14fc6828-05f5-459f-8057-0a499b2d9c47)
- Call ID: 14fc6828-05f5-459f-8057-0a499b2d9c47
-  Args:
-    source: :Prince_William
-    target: :Diana_Princess_of_Wales
-    relation: :hasMother
-  AddTriple (99e27d01-f2ee-420f-981e-a828c1848fe1)
- Call ID: 99e27d01-f2ee-420f-981e-a828c1848fe1
-  Args:
-    relation: :hasChild
-    target: :Prince_Harry
-    source: :King_Charles_III
-  AddTriple (5cdb8c23-9e73-4075-8b35-ff0f321df83d)
- Call ID: 5cdb8c23-9e73-4075-8b35-ff0f321df83d
-  Args:
-    source: :King_Charles_III
-    target: :Prince_William
-    relation: :hasChild
-  AddTriple (c0c7c9c4-d631-425c-ae3f-5263bbfb670c)
- Call ID: c0c7c9c4-d631-425c-ae3f-5263bbfb670c
-  Args:
-    source: :Diana_Princess_of_Wales
-    relation: :hasChild
-    target: :Prince_Harry
-  AddTriple (311e3fc8-739a-419e-b7f6-5e9bcee9e349)
- Call ID: 311e3fc8-739a-419e-b7f6-5e9bcee9e349
-  Args:
-    relation: :hasChild
-    target: :Prince_William
-    source: :Diana_Princess_of_Wales
-  AddTriple (9d369407-ece4-402d-a8cc-b472a01c5c19)
- Call ID: 9d369407-ece4-402d-a8cc-b472a01c5c19
-  Args:
-    relation: :hasFather
-    target: :Prince_Harry
-    source: :Archie_Mountbatten-Windsor
-  AddTriple (6ca87065-7430-4ab5-b9f9-4800544e60a1)
- Call ID: 6ca87065-7430-4ab5-b9f9-4800544e60a1
-  Args:
-    source: :Archie_Mountbatten-Windsor
-    target: :Meghan_Markle
-    relation: :hasMother
-  AddTriple (079d3e69-8cb8-4925-b29e-4c5ca9feeb35)
- Call ID: 079d3e69-8cb8-4925-b29e-4c5ca9feeb35
-  Args:
-    target: :Queen_Elizabeth_II
-    relation: :hasParent
-    source: :Prince_Harry
-  AddTriple (4e00bdd4-4435-4e7e-96d0-dafb76d382f0)
- Call ID: 4e00bdd4-4435-4e7e-96d0-dafb76d382f0
-  Args:
-    relation: :hasParent
-    target: :Queen_Elizabeth_II
-    source: :King_Charles_III
-  AddTriple (b92e5afe-896f-4daa-bf47-7c5348a58aa6)
- Call ID: b92e5afe-896f-4daa-bf47-7c5348a58aa6
-  Args:
-    source: :King_Charles_III
-    target: :Prince_Philip
-    relation: :hasParent
-  AddTriple (c5df5759-3769-4fb7-9275-88d8132aa16f)
- Call ID: c5df5759-3769-4fb7-9275-88d8132aa16f
-  Args:
-    source: :Diana_Princess_of_Wales
-    target: :Charles_Spencer
-    relation: :hasParent
-  Finish (773d6010-5c48-454c-a80a-7bf448a09e51)
- Call ID: 773d6010-5c48-454c-a80a-7bf448a09e51
-  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1154,46 +1272,48 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Archie_Mountbatten-Windsor a :Man,
-          :Person ;
-      :hasFather data:Prince_Harry ;
-      :hasMother data:Meghan_Markle .
-
-  data:Charles_Spencer a :Man,
+  data:Charles_Spencer_9th_Earl_Spencer a :Man,
           :Person .
 
   data:Meghan_Markle a :Person,
+          :Woman ;
+      :hasChild data:Archie_Mountbatten-Windsor,
+          data:Lilibet_Mountbatten-Windsor .
+
+  data:Prince_Philip_Duke_of_Edinburgh a :Man,
+          :Person .
+
+  data:Queen_Elizabeth_II a :Person,
           :Woman .
 
-  data:Prince_Philip a :Man,
+  data:Archie_Mountbatten-Windsor a :Man,
           :Person .
 
   data:Diana_Princess_of_Wales a :Person,
           :Woman ;
-      :hasChild data:Prince_Harry,
-          data:Prince_William ;
-      :hasParent data:Charles_Spencer .
+      :isMotherOf data:Prince_Harry,
+          data:William_Prince_of_Wales .
 
   data:King_Charles_III a :Man,
           :Person ;
-      :hasChild data:Prince_Harry,
-          data:Prince_William ;
-      :hasParent data:Prince_Philip,
-          data:Queen_Elizabeth_II .
+      :hasFather data:Prince_Philip_Duke_of_Edinburgh ;
+      :hasMother data:Queen_Elizabeth_II ;
+      :isFatherOf data:Prince_Harry,
+          data:William_Prince_of_Wales .
 
-  data:Queen_Elizabeth_II a :Person,
+  data:Lilibet_Mountbatten-Windsor a :Person,
           :Woman .
 
   data:Prince_Harry a :Man,
           :Person ;
       :hasBirthYear 1984 ;
-      :hasBrother data:Prince_William ;
+      :hasChild data:Archie_Mountbatten-Windsor,
+          data:Lilibet_Mountbatten-Windsor ;
       :hasFather data:King_Charles_III ;
       :hasMother data:Diana_Princess_of_Wales ;
-      :hasParent data:Queen_Elizabeth_II ;
-      :hasSex "Male"^^xsd:string .
+      :isBrotherOf data:William_Prince_of_Wales .
 
-  data:Prince_William a :Man,
+  data:William_Prince_of_Wales a :Man,
           :Person ;
       :hasFather data:King_Charles_III ;
       :hasMother data:Diana_Princess_of_Wales .
@@ -1208,318 +1328,174 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (996aea7a-9648-480d-8550-3357c28a4099)
- Call ID: 996aea7a-9648-480d-8550-3357c28a4099
+  ValidateShacl (84950772-ad77-4be3-adbf-d4eab2950a7c)
+ Call ID: 84950772-ad77-4be3-adbf-d4eab2950a7c
   Args:
 
 ================================= Tool Message =================================
 
 VALIDATION RESULTS
-Total violations:38
+Total violations:20
 Violations:
 
   Violation [1]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Harry' is not assigned the required class ':Sex'.
+      The node King_Charles_III is assigned as the father of William_Prince_of_Wales, but King_Charles_III does not belong to the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node: 'King_Charles_III', class: ':Ancestor')
 
 
   Violation [2]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'King_Charles_III' for the property 'hasFather' of node 'Prince_William' lacks the mandatory class ':Ancestor'.
+      The node Prince_Philip_Duke_of_Edinburgh is assigned as the father of King_Charles_III, but Prince_Philip_Duke_of_Edinburgh does not belong to the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Charles_III', ':Ancestor')
+      AssignClass(node: 'Prince_Philip_Duke_of_Edinburgh', class: ':Ancestor')
 
 
   Violation [3]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Prince_Harry' for the property 'hasFather' of node 'Archie_Mountbatten-Windsor' lacks the mandatory class ':Ancestor'.
+      The node King_Charles_III is assigned as the father of Prince_Harry, but King_Charles_III does not belong to the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Harry', ':Ancestor')
+      AssignClass(node: 'King_Charles_III', class: ':Ancestor')
 
 
   Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'King_Charles_III' for the property 'hasFather' of node 'Prince_Harry' lacks the mandatory class ':Ancestor'.
+      The node Diana_Princess_of_Wales is assigned as the mother of William_Prince_of_Wales, but Diana_Princess_of_Wales does not belong to the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Charles_III', ':Ancestor')
+      AssignClass(node: 'Diana_Princess_of_Wales', class: ':Ancestor')
 
 
   Violation [5]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Diana_Princess_of_Wales' for the property 'hasMother' of node 'Prince_William' lacks the mandatory class ':Ancestor'.
+      The node Queen_Elizabeth_II is assigned as the mother of King_Charles_III, but Queen_Elizabeth_II does not belong to the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Diana_Princess_of_Wales', ':Ancestor')
+      AssignClass(node: 'Queen_Elizabeth_II', class: ':Ancestor')
 
 
   Violation [6]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Meghan_Markle' for the property 'hasMother' of node 'Archie_Mountbatten-Windsor' lacks the mandatory class ':Ancestor'.
+      The node Diana_Princess_of_Wales is assigned as the mother of Prince_Harry, but Diana_Princess_of_Wales does not belong to the required :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Meghan_Markle', ':Ancestor')
+      AssignClass(node: 'Diana_Princess_of_Wales', class: ':Ancestor')
 
 
   Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Diana_Princess_of_Wales' for the property 'hasMother' of node 'Prince_Harry' lacks the mandatory class ':Ancestor'.
+      The node King_Charles_III is assigned as the father of William_Prince_of_Wales, but King_Charles_III is missing the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Diana_Princess_of_Wales', ':Ancestor')
+      AssignClass(node: 'King_Charles_III', class: ':Ancestor')
 
 
   Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Prince_Philip' for the property 'hasParent' of node 'King_Charles_III' lacks the mandatory class ':Ancestor'.
+      The node Prince_Philip_Duke_of_Edinburgh is assigned as the father of King_Charles_III, but Prince_Philip_Duke_of_Edinburgh is missing the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Philip', ':Ancestor')
+      AssignClass(node: 'Prince_Philip_Duke_of_Edinburgh', class: ':Ancestor')
 
 
   Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Queen_Elizabeth_II' for the property 'hasParent' of node 'King_Charles_III' lacks the mandatory class ':Ancestor'.
+      The node King_Charles_III is assigned as the father of Prince_Harry, but King_Charles_III is missing the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Elizabeth_II', ':Ancestor')
+      AssignClass(node: 'King_Charles_III', class: ':Ancestor')
 
 
   Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Queen_Elizabeth_II' for the property 'hasParent' of node 'Prince_Harry' lacks the mandatory class ':Ancestor'.
+      The node Diana_Princess_of_Wales is assigned as the mother of William_Prince_of_Wales, but Diana_Princess_of_Wales is missing the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Elizabeth_II', ':Ancestor')
+      AssignClass(node: 'Diana_Princess_of_Wales', class: ':Ancestor')
 
 
   Violation [11]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Harry' is not assigned the required class ':Sex'.
+      The node Queen_Elizabeth_II is assigned as the mother of King_Charles_III, but Queen_Elizabeth_II is missing the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node: 'Queen_Elizabeth_II', class: ':Ancestor')
 
 
   Violation [12]:
-    SHACL message: Value does not have class :Sex
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Harry' is not assigned the required class ':Sex'.
+      The node Diana_Princess_of_Wales is assigned as the mother of Prince_Harry, but Diana_Princess_of_Wales is missing the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
+      AssignClass(node: 'Diana_Princess_of_Wales', class: ':Ancestor')
 
 
   Violation [13]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'King_Charles_III' for the property 'hasFather' of node 'Prince_William' lacks the mandatory class ':Ancestor'.
+      The node King_Charles_III is assigned as the father of William_Prince_of_Wales, but King_Charles_III is missing the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Charles_III', ':Ancestor')
+      AssignClass(node: 'King_Charles_III', class: ':Ancestor')
 
 
   Violation [14]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'Prince_Harry' for the property 'hasFather' of node 'Archie_Mountbatten-Windsor' lacks the mandatory class ':Ancestor'.
+      The node Prince_Philip_Duke_of_Edinburgh is assigned as the father of King_Charles_III, but Prince_Philip_Duke_of_Edinburgh is missing the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Harry', ':Ancestor')
+      AssignClass(node: 'Prince_Philip_Duke_of_Edinburgh', class: ':Ancestor')
 
 
   Violation [15]:
     SHACL message: Value class is not in classes (:Ancestor, :Man)
     LLM-provided explanation of the violation:
-      The value 'King_Charles_III' for the property 'hasFather' of node 'Prince_Harry' lacks the mandatory class ':Ancestor'.
+      The node King_Charles_III is assigned as the father of Prince_Harry, but King_Charles_III is missing the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Charles_III', ':Ancestor')
+      AssignClass(node: 'King_Charles_III', class: ':Ancestor')
 
 
   Violation [16]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Diana_Princess_of_Wales' for the property 'hasMother' of node 'Prince_William' lacks the mandatory class ':Ancestor'.
+      The node Diana_Princess_of_Wales is assigned as the mother of William_Prince_of_Wales, but Diana_Princess_of_Wales is missing the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Diana_Princess_of_Wales', ':Ancestor')
+      AssignClass(node: 'Diana_Princess_of_Wales', class: ':Ancestor')
 
 
   Violation [17]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Meghan_Markle' for the property 'hasMother' of node 'Archie_Mountbatten-Windsor' lacks the mandatory class ':Ancestor'.
+      The node Queen_Elizabeth_II is assigned as the mother of King_Charles_III, but Queen_Elizabeth_II is missing the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Meghan_Markle', ':Ancestor')
+      AssignClass(node: 'Queen_Elizabeth_II', class: ':Ancestor')
 
 
   Violation [18]:
     SHACL message: Value class is not in classes (:Ancestor, :Woman)
     LLM-provided explanation of the violation:
-      The value 'Diana_Princess_of_Wales' for the property 'hasMother' of node 'Prince_Harry' lacks the mandatory class ':Ancestor'.
+      The node Diana_Princess_of_Wales is assigned as the mother of Prince_Harry, but Diana_Princess_of_Wales is missing the mandatory :Ancestor class.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Diana_Princess_of_Wales', ':Ancestor')
+      AssignClass(node: 'Diana_Princess_of_Wales', class: ':Ancestor')
 
 
   Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Any subject of isFatherOf must be all of: Ancestor, Man.
     LLM-provided explanation of the violation:
-      The value 'Prince_Philip' for the property 'hasParent' of node 'King_Charles_III' lacks the mandatory class ':Ancestor'.
+      The node King_Charles_III is a subject of the property :isFatherOf, but it is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Philip', ':Ancestor')
+      AssignClass(node: 'King_Charles_III', class: ':Ancestor')
 
 
   Violation [20]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    SHACL message: Any subject of isMotherOf must be all of: Ancestor, Woman.
     LLM-provided explanation of the violation:
-      The value 'Queen_Elizabeth_II' for the property 'hasParent' of node 'King_Charles_III' lacks the mandatory class ':Ancestor'.
+      The node Diana_Princess_of_Wales is a subject of the property :isMotherOf, but it is not classified as an :Ancestor.
     LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Elizabeth_II', ':Ancestor')
-
-
-  Violation [21]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value 'Queen_Elizabeth_II' for the property 'hasParent' of node 'Prince_Harry' lacks the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Elizabeth_II', ':Ancestor')
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value 'Charles_Spencer' for the property 'hasParent' of node 'Diana_Princess_of_Wales' lacks the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Charles_Spencer', ':Ancestor')
-
-
-  Violation [23]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Harry' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [24]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Harry' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [25]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Harry' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [26]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'King_Charles_III' for the property 'hasFather' of node 'Prince_William' lacks the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Charles_III', ':Ancestor')
-
-
-  Violation [27]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Harry' for the property 'hasFather' of node 'Archie_Mountbatten-Windsor' lacks the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Harry', ':Ancestor')
-
-
-  Violation [28]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'King_Charles_III' for the property 'hasFather' of node 'Prince_Harry' lacks the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('King_Charles_III', ':Ancestor')
-
-
-  Violation [29]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Diana_Princess_of_Wales' for the property 'hasMother' of node 'Prince_William' lacks the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Diana_Princess_of_Wales', ':Ancestor')
-
-
-  Violation [30]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Meghan_Markle' for the property 'hasMother' of node 'Archie_Mountbatten-Windsor' lacks the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Meghan_Markle', ':Ancestor')
-
-
-  Violation [31]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Diana_Princess_of_Wales' for the property 'hasMother' of node 'Prince_Harry' lacks the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Diana_Princess_of_Wales', ':Ancestor')
-
-
-  Violation [32]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Philip' for the property 'hasParent' of node 'King_Charles_III' lacks the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Prince_Philip', ':Ancestor')
-
-
-  Violation [33]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value 'Queen_Elizabeth_II' for the property 'hasParent' of node 'King_Charles_III' lacks the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Elizabeth_II', ':Ancestor')
-
-
-  Violation [34]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value 'Queen_Elizabeth_II' for the property 'hasParent' of node 'Prince_Harry' lacks the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Queen_Elizabeth_II', ':Ancestor')
-
-
-  Violation [35]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value 'Charles_Spencer' for the property 'hasParent' of node 'Diana_Princess_of_Wales' lacks the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Charles_Spencer', ':Ancestor')
-
-
-  Violation [36]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Harry' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [37]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' of node 'Prince_Harry' is not assigned the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Male', ':Sex')
-
-
-  Violation [38]:
-    SHACL message: Value class is not in classes (:Ancestor, :Person)
-    LLM-provided explanation of the violation:
-      The value 'Charles_Spencer' for the property 'hasParent' of node 'Diana_Princess_of_Wales' lacks the mandatory class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass('Charles_Spencer', ':Ancestor')
+      AssignClass(node: 'Diana_Princess_of_Wales', class: ':Ancestor')
 
 
 
@@ -1528,86 +1504,29 @@ Violations:
 
 []
 Tool Calls:
-  AssignClass (8cf33562-7725-4c3f-b116-f22e3b224fb9)
- Call ID: 8cf33562-7725-4c3f-b116-f22e3b224fb9
-  Args:
-    source: :King_Charles_III
-    type: :Ancestor
-  AssignClass (9cc02334-5928-483c-8443-5950fd9db3e9)
- Call ID: 9cc02334-5928-483c-8443-5950fd9db3e9
+  AssignClass (71382438-2897-4a53-a7db-a7b328ccd0a1)
+ Call ID: 71382438-2897-4a53-a7db-a7b328ccd0a1
   Args:
     type: :Ancestor
-    source: :Prince_Harry
-  AssignClass (35ec0d29-3fa3-43d5-ac9e-ac99cdd80ae9)
- Call ID: 35ec0d29-3fa3-43d5-ac9e-ac99cdd80ae9
+    source: King_Charles_III
+  AssignClass (9c16462b-63f5-4896-8d8e-2b9b757d621d)
+ Call ID: 9c16462b-63f5-4896-8d8e-2b9b757d621d
   Args:
+    source: Prince_Philip_Duke_of_Edinburgh
     type: :Ancestor
-    source: :Diana_Princess_of_Wales
-  AssignClass (b5961b32-817a-4103-b11d-1c67fe015307)
- Call ID: b5961b32-817a-4103-b11d-1c67fe015307
+  AssignClass (80cbdb98-b55f-4093-98c1-baf6c97ca506)
+ Call ID: 80cbdb98-b55f-4093-98c1-baf6c97ca506
   Args:
+    source: Diana_Princess_of_Wales
     type: :Ancestor
-    source: :Meghan_Markle
-  AssignClass (5072fb6a-a21f-4193-9cf2-4cc22f2e3a4a)
- Call ID: 5072fb6a-a21f-4193-9cf2-4cc22f2e3a4a
+  AssignClass (3c7bc0d9-da26-4da1-b755-f45d79aeaf43)
+ Call ID: 3c7bc0d9-da26-4da1-b755-f45d79aeaf43
   Args:
-    source: :Prince_Philip
+    source: Queen_Elizabeth_II
     type: :Ancestor
-  AssignClass (a6024bc9-96b8-4ec7-a479-b3e63d4a76db)
- Call ID: a6024bc9-96b8-4ec7-a479-b3e63d4a76db
+  Finish (fff8c07c-1105-4884-a9e3-aed1baa20ebb)
+ Call ID: fff8c07c-1105-4884-a9e3-aed1baa20ebb
   Args:
-    source: :Queen_Elizabeth_II
-    type: :Ancestor
-  AssignClass (d5a8704c-0b76-4ed4-8175-b8ce757bf768)
- Call ID: d5a8704c-0b76-4ed4-8175-b8ce757bf768
-  Args:
-    type: :Ancestor
-    source: :Charles_Spencer
-  RemoveLiteral (c6282df2-e691-4464-aa6d-659be0cb31f4)
- Call ID: c6282df2-e691-4464-aa6d-659be0cb31f4
-  Args:
-    literal_type: xsd:string
-    literal_value: Male
-    source: :Prince_Harry
-    relation: :hasSex
-  AssignClass (d350df20-af8f-4e85-8cda-c2a9d8db1fdc)
- Call ID: d350df20-af8f-4e85-8cda-c2a9d8db1fdc
-  Args:
-    source: :Male_Sex_Node
-    type: :Sex
-  AddTriple (1fd755b0-0277-4c06-9ef6-6cb1c1e10d26)
- Call ID: 1fd755b0-0277-4c06-9ef6-6cb1c1e10d26
-  Args:
-    target: :Male_Sex_Node
-    relation: :hasSex
-    source: :Prince_Harry
-  Finish (404f6177-53b4-4bc0-960e-2c7f6a555f6a)
- Call ID: 404f6177-53b4-4bc0-960e-2c7f6a555f6a
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1628,55 +1547,52 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Archie_Mountbatten-Windsor a :Man,
-          :Person ;
-      :hasFather data:Prince_Harry ;
-      :hasMother data:Meghan_Markle .
-
-  data:Charles_Spencer a :Ancestor,
-          :Man,
+  data:Charles_Spencer_9th_Earl_Spencer a :Man,
           :Person .
 
-  data:Male_Sex_Node a :Sex .
-
-  data:Meghan_Markle a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Prince_Philip a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Diana_Princess_of_Wales a :Ancestor,
-          :Person,
+  data:Meghan_Markle a :Person,
           :Woman ;
-      :hasChild data:Prince_Harry,
-          data:Prince_William ;
-      :hasParent data:Charles_Spencer .
+      :hasChild data:Archie_Mountbatten-Windsor,
+          data:Lilibet_Mountbatten-Windsor .
 
-  data:King_Charles_III a :Ancestor,
+  data:Prince_Philip_Duke_of_Edinburgh a :Ancestor,
           :Man,
-          :Person ;
-      :hasChild data:Prince_Harry,
-          data:Prince_William ;
-      :hasParent data:Prince_Philip,
-          data:Queen_Elizabeth_II .
+          :Person .
 
   data:Queen_Elizabeth_II a :Ancestor,
           :Person,
           :Woman .
 
-  data:Prince_Harry a :Ancestor,
+  data:Archie_Mountbatten-Windsor a :Man,
+          :Person .
+
+  data:Diana_Princess_of_Wales a :Ancestor,
+          :Person,
+          :Woman ;
+      :isMotherOf data:Prince_Harry,
+          data:William_Prince_of_Wales .
+
+  data:King_Charles_III a :Ancestor,
           :Man,
           :Person ;
+      :hasFather data:Prince_Philip_Duke_of_Edinburgh ;
+      :hasMother data:Queen_Elizabeth_II ;
+      :isFatherOf data:Prince_Harry,
+          data:William_Prince_of_Wales .
+
+  data:Lilibet_Mountbatten-Windsor a :Person,
+          :Woman .
+
+  data:Prince_Harry a :Man,
+          :Person ;
       :hasBirthYear 1984 ;
-      :hasBrother data:Prince_William ;
+      :hasChild data:Archie_Mountbatten-Windsor,
+          data:Lilibet_Mountbatten-Windsor ;
       :hasFather data:King_Charles_III ;
       :hasMother data:Diana_Princess_of_Wales ;
-      :hasParent data:Queen_Elizabeth_II ;
-      :hasSex data:Male_Sex_Node .
+      :isBrotherOf data:William_Prince_of_Wales .
 
-  data:Prince_William a :Man,
+  data:William_Prince_of_Wales a :Man,
           :Person ;
       :hasFather data:King_Charles_III ;
       :hasMother data:Diana_Princess_of_Wales .
@@ -1691,8 +1607,8 @@ Previous SHACL validation wasn't successful. If you fixed the violations, use th
 
 []
 Tool Calls:
-  ValidateShacl (a48344f7-dd80-4f62-88d3-6446fac9629a)
- Call ID: a48344f7-dd80-4f62-88d3-6446fac9629a
+  ValidateShacl (8f78c5f2-0fa7-4f15-b4a5-995b680cef17)
+ Call ID: 8f78c5f2-0fa7-4f15-b4a5-995b680cef17
   Args:
 
 ================================= Tool Message =================================
@@ -1703,6 +1619,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (7badef8c-eed7-4413-b1c3-6d22684d76e0)
- Call ID: 7badef8c-eed7-4413-b1c3-6d22684d76e0
+  Finish (e5701e58-75fd-4319-9470-2a1600d49488)
+ Call ID: e5701e58-75fd-4319-9470-2a1600d49488
   Args:

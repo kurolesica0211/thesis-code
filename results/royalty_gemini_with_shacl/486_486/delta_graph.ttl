@@ -2,43 +2,44 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Prince_David_Chavchavadze a :Man,
+data:Louis_Prince_of_Hesse_and_by_Rhine a :Man,
         :Person ;
-    :hasBirthYear 1924 ;
-    :hasFather data:Prince_Paul_Chavchavadze ;
-    :hasMother data:Princess_Nina_Georgievna_of_Russia .
+    :isUncleOf data:Heinrich_of_Hesse-Kassel .
 
-data:Grand_Duke_Michael_Nicolaievich_of_Russia a :Ancestor,
+data:Margaret_Campbell_Geddes a :Person,
+        :Woman ;
+    :isAuntOf data:Heinrich_of_Hesse-Kassel .
+
+data:Elisabeth_of_Hesse a :Person,
+        :Woman .
+
+data:Mafalda_of_Savoy a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasFather data:Victor_Emmanuel_III_of_Italy .
+
+data:Moritz_of_Hesse a :Man,
+        :Person .
+
+data:Otto_of_Hesse a :Man,
+        :Person .
+
+data:Philipp_of_Hesse a :Ancestor,
         :Man,
         :Person .
 
-data:Prince_Paul_Chavchavadze a :Ancestor,
+data:Victor_Emmanuel_III_of_Italy a :Ancestor,
         :Man,
+        :Person .
+
+data:Heinrich_of_Hesse-Kassel a :Man,
         :Person ;
-    :hasBirthYear 1899 ;
-    :hasDeathYear 1971 .
-
-data:Princess_Nina_Georgievna_of_Russia a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasBirthYear 1901 ;
-    :hasDeathYear 1974 ;
-    :hasFather data:Grand_Duke_George_Mikhailovich ;
-    :hasMarriageYear 1922 ;
-    :hasMother data:Grand_Duchess_Maria_Georgievna_of_Russia ;
-    :hasSister data:Princess_Xenia .
-
-data:Princess_Xenia a :Person,
-        :Woman ;
-    :hasFather data:Grand_Duke_George_Mikhailovich ;
-    :hasMother data:Grand_Duchess_Maria_Georgievna_of_Russia .
-
-data:Grand_Duchess_Maria_Georgievna_of_Russia a :Ancestor,
-        :Person,
-        :Woman .
-
-data:Grand_Duke_George_Mikhailovich a :Ancestor,
-        :Man,
-        :Person ;
-    :hasFather data:Grand_Duke_Michael_Nicolaievich_of_Russia .
+    :alsoKnownAs "Enrico d'Assia"^^xsd:string ;
+    :hasBirthYear 1927 ;
+    :hasDeathYear 1999 ;
+    :hasFather data:Philipp_of_Hesse ;
+    :hasMother data:Mafalda_of_Savoy ;
+    :isSiblingOf data:Elisabeth_of_Hesse,
+        data:Moritz_of_Hesse,
+        data:Otto_of_Hesse .
 

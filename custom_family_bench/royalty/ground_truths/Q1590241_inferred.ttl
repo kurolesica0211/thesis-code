@@ -1,0 +1,88 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:female a :Female .
+
+data:Baroness_Elisabeth_of_Wangenheim-Winterstein a :Person,
+        :Woman ;
+    rdfs:label "Baroness Elisabeth of Wangenheim-Winterstein"^^xsd:string ;
+    data:posIndicesFull "731:775"^^xsd:string ;
+    data:wdtLink wdt:Q100832 ;
+    :alsoKnownAs "Elisabeth Baronin von Wangenheim-Winterstein"^^xsd:string ;
+    :hasRelation data:Baroness_Elisabeth_of_Wangenheim-Winterstein ;
+    :hasSex data:female ;
+    :hasSister data:Baroness_Elisabeth_of_Wangenheim-Winterstein ;
+    :isBloodrelationOf data:Baroness_Elisabeth_of_Wangenheim-Winterstein ;
+    :isSiblingOf data:Baroness_Elisabeth_of_Wangenheim-Winterstein ;
+    :isSisterOf data:Baroness_Elisabeth_of_Wangenheim-Winterstein .
+
+data:Princess_Feodora_of_Saxe-Meiningen a :Ancestor,
+        :Person,
+        :Woman ;
+    rdfs:label "Princess Feodora of Saxe-Meiningen"^^xsd:string ;
+    data:posIndicesFull "380:396"^^xsd:string,
+        "380:414"^^xsd:string ;
+    data:posIndicesPart "510:514"^^xsd:string ;
+    data:wdtLink wdt:Q66639 ;
+    :alsoKnownAs "Princess Feodora"^^xsd:string ;
+    :hasChild data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :hasRelation data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach,
+        data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasSex data:female ;
+    :hasSister data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasSon data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :isAncestorOf data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :isAuntOf data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :isBloodrelationOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isMotherOf data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :isParentOf data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :isSiblingOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isSisterOf data:Princess_Feodora_of_Saxe-Meiningen .
+
+data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach a :Man,
+        :Person ;
+    rdfs:label "Charles Augustus, Hereditary Grand Duke of Saxe-Weimar-Eisenach"^^xsd:string ;
+    data:posIndicesFull "0:63"^^xsd:string ;
+    data:posIndicesPart "323:328"^^xsd:string,
+        "329:333"^^xsd:string,
+        "337:341"^^xsd:string,
+        "342:348"^^xsd:string,
+        "349:357"^^xsd:string,
+        "455:462"^^xsd:string,
+        "463:471"^^xsd:string,
+        "510:514"^^xsd:string,
+        "515:521"^^xsd:string,
+        "522:530"^^xsd:string,
+        "532:539"^^xsd:string,
+        "540:548"^^xsd:string,
+        "599:604"^^xsd:string,
+        "658:665"^^xsd:string,
+        "666:674"^^xsd:string ;
+    data:wdtLink wdt:Q1590241 ;
+    :hasAncestor data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasBrother data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :hasMother data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasParent data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasRelation data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach,
+        data:Princess_Feodora_of_Saxe-Meiningen ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :isBrotherOf data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :isChildOf data:Princess_Feodora_of_Saxe-Meiningen ;
+    :isSiblingOf data:Charles_Augustus-_Hereditary_Grand_Duke_of_Saxe-Weimar-Eisenach ;
+    :isSonOf data:Princess_Feodora_of_Saxe-Meiningen .
+

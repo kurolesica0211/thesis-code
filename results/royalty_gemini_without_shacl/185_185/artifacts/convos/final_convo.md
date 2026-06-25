@@ -69,37 +69,48 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Duchess Elisabeth of Mecklenburg-Schwerin (10 August 1869 – 3 September 1955) was a daughter of Frederick Francis II, Grand Duke of Mecklenburg by his third wife Princess Marie of Schwarzburg-Rudolstadt.
-By her marriage to Frederick Augustus II, she became the consort of the last reigning Grand Duke of Oldenburg.
-Family
-
-Elisabeth was related to many of Europe's royal families.
-She was the eldest child of Frederick Francis II, Grand Duke of Mecklenburg by his third wife, Princess Marie of Schwarzburg-Rudolstadt.
-She was an older sister of Hendrik, Prince consort of the Netherlands, husband of Queen Wilhelmina of the Netherlands, making her an aunt of Queen Juliana of the Netherlands.
-She was also a younger half-sister of Frederick Francis III, Grand Duke of Mecklenburg-Schwerin.
-Through Frederick Francis, she was an aunt of Alexandrine, Queen of Denmark and Cecilie, German Crown Princess.
-Elisabeth was also a half sister of Marie, Grand Duchess of Russia, who was the mother of Grand Duke Cyril Vladimirovich of Russia, the pretender to the Russian throne.
-Her paternal grandparents were Paul Frederick, Grand Duke of Mecklenburg and Princess Alexandrine of Prussia.
-Her maternal grandparents were Prince Adolph of Schwarzburg-Rudolstadt and Princess Mathilde of Schönburg-Waldenburg.
-Marriage
-
-On 24 October 1896, Elisabeth married Frederick Augustus, Hereditary Grand Duke of Oldenburg.
-His first wife Elisabeth Anna had died the previous year, leaving only one surviving daughter: Duchess Sophia Charlotte of Oldenburg.
-Frederick Augustus was thus in need of a male heir.
-He succeeded as Grand Duke of Oldenburg in 1900, making Elisabeth Grand Duchess consort of Oldenburg.
-They had five children:
+Queen Anne-Marie
 
 
-Frederick was forced to abdicate his throne at the end of World War I, when the former Grand Duchy of the German Empire joined the post-war German Republic.
-A year after his abdication, he asked the Oldenburg Diet for a yearly allowance of 150,000 marks, stating that his financial condition was "extremely precarious".
-In 1931, Frederick died in Rastede.
-Elisabeth died on 3 September 1955, having been widowed for 24 years.
+Queen Sofía of Spain
+
+
+Marina, consort of Prince Michael
+
+
+The Duke of AostaThe Duchess of Aosta
+
+
+The Dowager Duchess of Aosta
+
+
+Princess Olga Isabelle of Savoy-Aosta, Duchess of Aosta (née Princess Olga of Greece;
+Greek: Πριγκίπισσα Όλγα της Ελλάδας; born 11 November 1971), is the younger daughter of author Prince Michael of Greece and Denmark and Marina Karella, an artist and daughter of the Greek business magnate Theódoros Karéllas.
+Olga is married to her second cousin Prince Aimone, Duke of Aosta.
+Early life
+
+Princess Olga was born on 11 November 1971 in Athens, Greece.
+She is the younger sister of Princess Alexandra and grew up in Paris and New York, spending summers at the family's island retreat at Patmos, Greece.
+Although Olga worked for a while in interior decoration, she went to Panama to photograph and study phalaena.
+As Princess Olga's parents' marriage is morganatic, and therefore non-dynastic, she is a Greek princess by birth but not a Danish princess, used the style Her Highness instead of Her Royal Highness (until her marriage), and is excluded from the line of succession to the former Greek throne.
+Engagement, marriage and children
+
+Olga's engagement to Prince Aimone of Savoy, son of Amedeo, 5th Duke of Aosta, was announced in May 2005.
+Aimone and Olga are second cousins; both being great-grandchildren of the French pretender Jean d'Orléans, duc de Guise.
+They are also second cousins once removed as George I of Greece is Aimone's great-great-grandfather and Olga's great-grandfather.
+Olga's father, Prince Michael of Greece and Denmark, Aimone's paternal grandmother, Princess Irene, Duchess of Aosta (née Princess Irene of Greece and Denmark), and Prince Philip, Duke of Edinburgh (born Prince Philip of Greece and Denmark), were all first cousins.
+A canonical dispensation was obtained from the Catholic Archbishop of Moscow, Monsignor Paolo Pezzi, who was the local Ordinary of prince Aimone.
+On 7 March 2009, Princess Olga gave birth to a son named Umberto in Paris, France.
+On 24 May 2011 in Paris, Olga gave birth to another son, named Amedeo Michele.
+On 14 December 2012, Olga gave birth to a baby daughter, Isabella Vita Marina, in Paris, France.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -115,39 +126,9 @@ Elisabeth died on 3 September 1955, having been widowed for 24 years.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -162,6 +143,23 @@ Elisabeth died on 3 September 1955, having been widowed for 24 years.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -179,6 +177,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -246,29 +259,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -277,6 +282,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -289,6 +302,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -297,17 +312,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -335,6 +352,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -350,235 +451,141 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (4375f8b3-3d0b-4303-8d48-55312df24dd9)
- Call ID: 4375f8b3-3d0b-4303-8d48-55312df24dd9
+  AssignClass (90927920-b45c-41a2-b36c-b5e05a97ff73)
+ Call ID: 90927920-b45c-41a2-b36c-b5e05a97ff73
   Args:
     type: :Woman
-    source: Elisabeth_of_Mecklenburg-Schwerin
-  AssignClass (570d3b14-273a-42d5-96d9-b610a17c0423)
- Call ID: 570d3b14-273a-42d5-96d9-b610a17c0423
+    source: Princess Olga of Greece
+  AssignClass (be35377d-bb7f-4329-981b-6de3c00a3bc4)
+ Call ID: be35377d-bb7f-4329-981b-6de3c00a3bc4
   Args:
-    type: :Person
-    source: Elisabeth_of_Mecklenburg-Schwerin
-  AddLiteral (ef6d690d-d6db-40c9-bd46-3519333d3683)
- Call ID: ef6d690d-d6db-40c9-bd46-3519333d3683
+    source: Prince Michael of Greece and Denmark
+    type: :Man
+  AssignClass (9bfe1090-a7ba-412c-b914-b058b8f779b5)
+ Call ID: 9bfe1090-a7ba-412c-b914-b058b8f779b5
   Args:
-    literal_type: xsd:integer
-    relation: :hasBirthYear
-    source: Elisabeth_of_Mecklenburg-Schwerin
-    literal_value: 1869
-  AddLiteral (086b28ca-7b3b-44fe-955b-2494ada0f15b)
- Call ID: 086b28ca-7b3b-44fe-955b-2494ada0f15b
+    type: :Woman
+    source: Marina Karella
+  AssignClass (3a308a73-7b81-458d-a282-6b3ae4485f66)
+ Call ID: 3a308a73-7b81-458d-a282-6b3ae4485f66
   Args:
-    literal_type: xsd:integer
-    source: Elisabeth_of_Mecklenburg-Schwerin
-    relation: :hasDeathYear
-    literal_value: 1955
-  AssignClass (b7729bad-3499-41d4-b52e-f87f790e4b28)
- Call ID: b7729bad-3499-41d4-b52e-f87f790e4b28
+    source: Prince Aimone, Duke of Aosta
+    type: :Man
+  AssignClass (4ca75584-29c8-4f35-ae6e-988b15b156d6)
+ Call ID: 4ca75584-29c8-4f35-ae6e-988b15b156d6
+  Args:
+    source: Amedeo, 5th Duke of Aosta
+    type: :Man
+  AssignClass (a7748edd-4cf7-405e-9bdc-27cceb447656)
+ Call ID: a7748edd-4cf7-405e-9bdc-27cceb447656
+  Args:
+    type: :Woman
+    source: Princess Alexandra
+  AssignClass (0c9b9d35-4269-4c44-885a-ee4065480c74)
+ Call ID: 0c9b9d35-4269-4c44-885a-ee4065480c74
   Args:
     type: :Man
-    source: Frederick_Francis_II_of_Mecklenburg
-  AssignClass (9405eeb4-ea19-41fc-97b4-87de82909d17)
- Call ID: 9405eeb4-ea19-41fc-97b4-87de82909d17
+    source: Umberto
+  AssignClass (2fdc5e4f-f6df-4eff-871c-2671990b83ca)
+ Call ID: 2fdc5e4f-f6df-4eff-871c-2671990b83ca
   Args:
-    type: :Person
-    source: Frederick_Francis_II_of_Mecklenburg
-  AssignClass (b547308f-b02c-4794-9a69-464053b25091)
- Call ID: b547308f-b02c-4794-9a69-464053b25091
+    source: Amedeo Michele
+    type: :Man
+  AssignClass (ac7a2bf7-617d-4fa8-b2df-e035bbbe6bdd)
+ Call ID: ac7a2bf7-617d-4fa8-b2df-e035bbbe6bdd
   Args:
     type: :Woman
-    source: Marie_of_Schwarzburg-Rudolstadt
-  AssignClass (f07b6d7a-a9f0-4f19-9ae8-20f0853347ee)
- Call ID: f07b6d7a-a9f0-4f19-9ae8-20f0853347ee
+    source: Isabella Vita Marina
+  AssignClass (5b9b0654-81d7-4a66-ae86-284e6aae925f)
+ Call ID: 5b9b0654-81d7-4a66-ae86-284e6aae925f
   Args:
-    type: :Person
-    source: Marie_of_Schwarzburg-Rudolstadt
-  AddTriple (60f81b96-ae09-4c07-abeb-b7322a20e0aa)
- Call ID: 60f81b96-ae09-4c07-abeb-b7322a20e0aa
+    type: :Man
+    source: Theódoros Karéllas
+  AddTriple (e6c6591f-cc73-4965-883e-a43437990e8f)
+ Call ID: e6c6591f-cc73-4965-883e-a43437990e8f
   Args:
-    target: Frederick_Francis_II_of_Mecklenburg
+    source: Princess Olga of Greece
     relation: :hasFather
-    source: Elisabeth_of_Mecklenburg-Schwerin
-  AddTriple (272afb93-e0af-41e6-9a1e-e239a43e7951)
- Call ID: 272afb93-e0af-41e6-9a1e-e239a43e7951
+    target: Prince Michael of Greece and Denmark
+  AddTriple (ab52608f-9c43-4e14-acc7-bf6b9edbf8e0)
+ Call ID: ab52608f-9c43-4e14-acc7-bf6b9edbf8e0
   Args:
-    target: Marie_of_Schwarzburg-Rudolstadt
-    source: Elisabeth_of_Mecklenburg-Schwerin
+    target: Marina Karella
     relation: :hasMother
-  AssignClass (c9f561d4-0e0c-455b-8422-e8052cf8fa98)
- Call ID: c9f561d4-0e0c-455b-8422-e8052cf8fa98
+    source: Princess Olga of Greece
+  AddTriple (0b6693b5-23b9-4384-ba2c-5cb7e3cc7ee1)
+ Call ID: 0b6693b5-23b9-4384-ba2c-5cb7e3cc7ee1
   Args:
-    type: :Man
-    source: Frederick_Augustus_II_of_Oldenburg
-  AssignClass (07fec00a-de99-4abf-98ba-35c058a2b912)
- Call ID: 07fec00a-de99-4abf-98ba-35c058a2b912
+    source: Marina Karella
+    relation: :hasFather
+    target: Theódoros Karéllas
+  AddTriple (1b93b0b8-3345-431c-9879-a0fef81cc9ce)
+ Call ID: 1b93b0b8-3345-431c-9879-a0fef81cc9ce
   Args:
-    type: :Person
-    source: Frederick_Augustus_II_of_Oldenburg
-  AddLiteral (758fcb39-30fd-47e2-ac55-72bcf81c6836)
- Call ID: 758fcb39-30fd-47e2-ac55-72bcf81c6836
+    relation: :hasFather
+    source: Prince Aimone, Duke of Aosta
+    target: Amedeo, 5th Duke of Aosta
+  AddTriple (b50fe6ed-9831-4892-9180-c5a401477904)
+ Call ID: b50fe6ed-9831-4892-9180-c5a401477904
   Args:
-    literal_value: 1896
-    literal_type: xsd:integer
-    source: Elisabeth_of_Mecklenburg-Schwerin
-    relation: :hasMarriageYear
-  AddTriple (ee2a61dc-a957-4c54-ae96-79defa45d27e)
- Call ID: ee2a61dc-a957-4c54-ae96-79defa45d27e
-  Args:
-    target: Frederick_Augustus_II_of_Oldenburg
-    source: Elisabeth_of_Mecklenburg-Schwerin
-    relation: :hasRelation
-  AssignClass (c8cf6d6e-4a1c-45be-bf90-b11fef559d06)
- Call ID: c8cf6d6e-4a1c-45be-bf90-b11fef559d06
-  Args:
-    type: :Man
-    source: Hendrik_of_the_Netherlands
-  AssignClass (a7acd544-766a-47c4-a6e7-51445287a17f)
- Call ID: a7acd544-766a-47c4-a6e7-51445287a17f
-  Args:
-    type: :Person
-    source: Hendrik_of_the_Netherlands
-  AddTriple (ee41c243-b8cd-487c-a78f-12ef27b4c9ed)
- Call ID: ee41c243-b8cd-487c-a78f-12ef27b4c9ed
-  Args:
-    source: Hendrik_of_the_Netherlands
+    source: Princess Olga of Greece
     relation: :hasSister
-    target: Elisabeth_of_Mecklenburg-Schwerin
-  AssignClass (cdc0f322-9860-4298-9ce1-66526d8193ff)
- Call ID: cdc0f322-9860-4298-9ce1-66526d8193ff
+    target: Princess Alexandra
+  AddTriple (5b6c1ee3-1561-4920-838d-c8d3727a5f6e)
+ Call ID: 5b6c1ee3-1561-4920-838d-c8d3727a5f6e
   Args:
-    type: :Man
-    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
-  AssignClass (4a6f7037-5263-4ca3-bd56-57bd8b77ce7a)
- Call ID: 4a6f7037-5263-4ca3-bd56-57bd8b77ce7a
-  Args:
-    type: :Person
-    source: Frederick_Francis_III_of_Mecklenburg-Schwerin
-  AddTriple (1fdcc0ea-1e1a-40a6-bd1e-b1742d376353)
- Call ID: 1fdcc0ea-1e1a-40a6-bd1e-b1742d376353
-  Args:
-    relation: :isSiblingOf
-    source: Elisabeth_of_Mecklenburg-Schwerin
-    target: Frederick_Francis_III_of_Mecklenburg-Schwerin
-  AssignClass (f0f51850-0bff-4fa1-ad2f-e2c5d3f45352)
- Call ID: f0f51850-0bff-4fa1-ad2f-e2c5d3f45352
-  Args:
-    type: :Woman
-    source: Marie_of_Russia
-  AssignClass (f43bdec4-8353-4668-9a57-13791b766efb)
- Call ID: f43bdec4-8353-4668-9a57-13791b766efb
-  Args:
-    type: :Person
-    source: Marie_of_Russia
-  AddTriple (0b044bc3-fd09-44dc-8ad5-305800be2ebc)
- Call ID: 0b044bc3-fd09-44dc-8ad5-305800be2ebc
-  Args:
-    target: Marie_of_Russia
-    source: Elisabeth_of_Mecklenburg-Schwerin
-    relation: :isSiblingOf
-  AssignClass (1c993ec8-1b03-4404-8b40-d71c91128078)
- Call ID: 1c993ec8-1b03-4404-8b40-d71c91128078
-  Args:
-    type: :Man
-    source: Paul_Frederick_of_Mecklenburg
-  AssignClass (02f44cf9-72bd-410f-ac4b-a986b3ed53f4)
- Call ID: 02f44cf9-72bd-410f-ac4b-a986b3ed53f4
-  Args:
-    type: :Person
-    source: Paul_Frederick_of_Mecklenburg
-  AssignClass (63f10648-9ee6-40c1-a8d1-2f9d5c9165c8)
- Call ID: 63f10648-9ee6-40c1-a8d1-2f9d5c9165c8
-  Args:
-    type: :Woman
-    source: Alexandrine_of_Prussia
-  AssignClass (6fc46a3a-65ea-42c9-9e12-fa79ff192441)
- Call ID: 6fc46a3a-65ea-42c9-9e12-fa79ff192441
-  Args:
-    type: :Person
-    source: Alexandrine_of_Prussia
-  AddTriple (b9b850c1-a1a0-423f-9546-3450e53e231f)
- Call ID: b9b850c1-a1a0-423f-9546-3450e53e231f
-  Args:
-    target: Paul_Frederick_of_Mecklenburg
+    target: Prince Michael of Greece and Denmark
+    source: Princess Alexandra
     relation: :hasFather
-    source: Frederick_Francis_II_of_Mecklenburg
-  AddTriple (25c804f9-d75d-467c-8ce0-291fe6767d6b)
- Call ID: 25c804f9-d75d-467c-8ce0-291fe6767d6b
+  AddTriple (10a6d793-586c-4f32-a68d-d132343a291c)
+ Call ID: 10a6d793-586c-4f32-a68d-d132343a291c
   Args:
+    target: Marina Karella
+    source: Princess Alexandra
     relation: :hasMother
-    source: Frederick_Francis_II_of_Mecklenburg
-    target: Alexandrine_of_Prussia
-  AssignClass (485b393e-37f2-4dca-be7f-2403efcab05f)
- Call ID: 485b393e-37f2-4dca-be7f-2403efcab05f
+  AddTriple (b4a6d327-3fb7-48b6-9d58-5aeaf6d41b66)
+ Call ID: b4a6d327-3fb7-48b6-9d58-5aeaf6d41b66
   Args:
-    type: :Man
-    source: Adolph_of_Schwarzburg-Rudolstadt
-  AssignClass (f8a3a86d-7daf-4e42-b8cf-62266b7ee40b)
- Call ID: f8a3a86d-7daf-4e42-b8cf-62266b7ee40b
+    target: Princess Olga of Greece
+    relation: :hasMother
+    source: Umberto
+  AddTriple (a909d32e-608f-4293-b238-77ce331862c4)
+ Call ID: a909d32e-608f-4293-b238-77ce331862c4
   Args:
-    type: :Person
-    source: Adolph_of_Schwarzburg-Rudolstadt
-  AssignClass (de95581f-a1a8-4480-9863-959bab083153)
- Call ID: de95581f-a1a8-4480-9863-959bab083153
-  Args:
-    type: :Woman
-    source: Mathilde_of_Schönburg-Waldenburg
-  AssignClass (9d8e1073-9e58-42d8-9504-dc0360e5f6a7)
- Call ID: 9d8e1073-9e58-42d8-9504-dc0360e5f6a7
-  Args:
-    type: :Person
-    source: Mathilde_of_Schönburg-Waldenburg
-  AddTriple (9636d65e-6005-430e-8d76-cc4bcf6b2de8)
- Call ID: 9636d65e-6005-430e-8d76-cc4bcf6b2de8
-  Args:
-    target: Adolph_of_Schwarzburg-Rudolstadt
-    source: Marie_of_Schwarzburg-Rudolstadt
+    target: Prince Aimone, Duke of Aosta
     relation: :hasFather
-  AddTriple (b4299ed1-005c-413e-a5d6-d71badeac664)
- Call ID: b4299ed1-005c-413e-a5d6-d71badeac664
+    source: Umberto
+  AddTriple (a969ef8b-9892-4ba8-b9bf-5dc1b48e8d0e)
+ Call ID: a969ef8b-9892-4ba8-b9bf-5dc1b48e8d0e
   Args:
-    target: Mathilde_of_Schönburg-Waldenburg
+    target: Princess Olga of Greece
     relation: :hasMother
-    source: Marie_of_Schwarzburg-Rudolstadt
-  AssignClass (877b7cca-3137-4f17-8571-54c112bbd94e)
- Call ID: 877b7cca-3137-4f17-8571-54c112bbd94e
+    source: Amedeo Michele
+  AddTriple (2e9e1f98-c0f6-41a9-884b-b8f57ce96209)
+ Call ID: 2e9e1f98-c0f6-41a9-884b-b8f57ce96209
   Args:
-    type: :Woman
-    source: Elisabeth_Anna_of_Oldenburg
-  AssignClass (4d752a9e-3dcc-45f3-a113-ce3e7ed0ba91)
- Call ID: 4d752a9e-3dcc-45f3-a113-ce3e7ed0ba91
+    relation: :hasFather
+    source: Amedeo Michele
+    target: Prince Aimone, Duke of Aosta
+  AddTriple (ec3f05c6-b027-419c-8bf5-863667ee763a)
+ Call ID: ec3f05c6-b027-419c-8bf5-863667ee763a
   Args:
-    type: :Person
-    source: Elisabeth_Anna_of_Oldenburg
-  AddTriple (1053971a-f369-4029-a712-29ef88498272)
- Call ID: 1053971a-f369-4029-a712-29ef88498272
+    source: Isabella Vita Marina
+    relation: :hasMother
+    target: Princess Olga of Greece
+  AddTriple (55edcc7d-b4e9-4494-9830-b093693068a5)
+ Call ID: 55edcc7d-b4e9-4494-9830-b093693068a5
   Args:
-    relation: :hasRelation
-    source: Frederick_Augustus_II_of_Oldenburg
-    target: Elisabeth_Anna_of_Oldenburg
-  AssignClass (09636f8b-088e-4e1b-ae39-cea679c8a658)
- Call ID: 09636f8b-088e-4e1b-ae39-cea679c8a658
+    target: Prince Aimone, Duke of Aosta
+    source: Isabella Vita Marina
+    relation: :hasFather
+  AddLiteral (7b0370b7-3a2c-4909-8c0d-dce2ce85b92f)
+ Call ID: 7b0370b7-3a2c-4909-8c0d-dce2ce85b92f
   Args:
-    type: :Woman
-    source: Sophia_Charlotte_of_Oldenburg
-  AssignClass (a0bdbff5-115e-4e14-8fbd-86636ac93973)
- Call ID: a0bdbff5-115e-4e14-8fbd-86636ac93973
-  Args:
-    type: :Person
-    source: Sophia_Charlotte_of_Oldenburg
-  AddTriple (eec4d6a9-4e2a-4055-bb28-33514cf4bc0a)
- Call ID: eec4d6a9-4e2a-4055-bb28-33514cf4bc0a
-  Args:
-    source: Sophia_Charlotte_of_Oldenburg
-    relation: :isDaughterOf
-    target: Frederick_Augustus_II_of_Oldenburg
-  AddTriple (eaf91dea-f85b-4287-bdc1-8f97236b55a6)
- Call ID: eaf91dea-f85b-4287-bdc1-8f97236b55a6
-  Args:
-    target: Elisabeth_Anna_of_Oldenburg
-    relation: :isDaughterOf
-    source: Sophia_Charlotte_of_Oldenburg
-  Finish (2595a346-54b6-48a7-bafc-ccd8504f58eb)
- Call ID: 2595a346-54b6-48a7-bafc-ccd8504f58eb
+    literal_value: 1971
+    source: Princess Olga of Greece
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+  Finish (cc4029bc-1f7a-4af3-8f94-b7cfceb5b6b4)
+ Call ID: cc4029bc-1f7a-4af3-8f94-b7cfceb5b6b4
   Args:

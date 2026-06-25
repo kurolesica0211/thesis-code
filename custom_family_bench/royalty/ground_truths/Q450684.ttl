@@ -7,16 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany a :Person ;
     rdfs:label "Archduchess Maria Cristina, Hereditary Grand Duchess of Tuscany" ;
     data:posIndicesFull "0:47" ;
     data:posIndicesPart "477:482",
@@ -32,16 +23,18 @@ data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany a :Ancestor
         "980:985" ;
     data:wdtLink wdt:Q450684 ;
     :alsoKnownAs "Princess Maria Cristina of Bourbon-Two Sicilies" ;
-    :hasMother data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
     :hasParent data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :hasSex data:female ;
-    :isChildOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies ;
-    :isDaughterOf data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies .
+    :hasSex data:female .
 
-data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Person ;
     rdfs:label "Princess Maria Antonietta of Bourbon-Two Sicilies" ;
     data:posIndicesFull "613:662" ;
     data:posIndicesPart "684:689",
@@ -50,9 +43,7 @@ data:Princess_Maria_Antonietta_of_Bourbon-Two_Sicilies a :Ancestor,
         "905:910",
         "980:985" ;
     data:wdtLink wdt:Q255400 ;
-    :hasChild data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
-    :hasDaughter data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
-    :hasSex data:female ;
-    :isMotherOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany ;
-    :isParentOf data:Archduchess_Maria_Cristina-_Hereditary_Grand_Duchess_of_Tuscany .
+    :hasSex data:female .
+
+data:female a :Female .
 

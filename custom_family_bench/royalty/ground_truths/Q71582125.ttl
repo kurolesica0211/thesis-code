@@ -7,40 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Archduchess_Maria_Béatrice_of_Austria-Este a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Archduchess Maria Béatrice of Austria-Este" ;
-    data:posIndicesFull "527:569" ;
-    data:posIndicesPart "1681:1686",
-        "1705:1716",
-        "1720:1727",
-        "1728:1732",
-        "643:648",
-        "660:667",
-        "668:672",
-        "777:784",
-        "785:789",
-        "931:938" ;
-    data:wdtLink wdt:Q21198012 ;
-    :alsoKnownAs "Archduchess Maria Beatrice of Austria-Este, Princess of Modena",
-        "Maria Beatrix Erzherzogin von Österreich" ;
-    :hasChild data:Princess_Olympia-_Princess_Napoléon ;
-    :hasDaughter data:Princess_Olympia-_Princess_Napoléon ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Olympia-_Princess_Napoléon ;
-    :isParentOf data:Princess_Olympia-_Princess_Napoléon .
-
-data:Princess_Olympia-_Princess_Napoléon a :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Olympia-_Princess_Napoléon a :Person ;
     rdfs:label "Princess Olympia, Princess Napoléon" ;
     data:posIndicesFull "104:111",
         "104:137",
@@ -59,9 +26,34 @@ data:Princess_Olympia-_Princess_Napoléon a :Person,
         "Olympia Gräfin von und zu Arco-Zinneberg",
         "Olympia von und zu Arco-Zinneberg",
         "Princess Olympia, The Princess Napoléon" ;
-    :hasMother data:Archduchess_Maria_Béatrice_of_Austria-Este ;
     :hasParent data:Archduchess_Maria_Béatrice_of_Austria-Este ;
-    :hasSex data:female ;
-    :isChildOf data:Archduchess_Maria_Béatrice_of_Austria-Este ;
-    :isDaughterOf data:Archduchess_Maria_Béatrice_of_Austria-Este .
+    :hasSex data:female .
+
+data:male a :Male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Archduchess_Maria_Béatrice_of_Austria-Este a :Person ;
+    rdfs:label "Archduchess Maria Béatrice of Austria-Este" ;
+    data:posIndicesFull "527:569" ;
+    data:posIndicesPart "1681:1686",
+        "1705:1716",
+        "1720:1727",
+        "1728:1732",
+        "643:648",
+        "660:667",
+        "668:672",
+        "777:784",
+        "785:789",
+        "931:938" ;
+    data:wdtLink wdt:Q21198012 ;
+    :alsoKnownAs "Archduchess Maria Beatrice of Austria-Este, Princess of Modena",
+        "Maria Beatrix Erzherzogin von Österreich" ;
+    :hasSex data:female .
+
+data:female a :Female .
 

@@ -1,0 +1,82 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.com/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data: a owl:Ontology .
+
+data:female a :Female .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:male a :Male .
+
+data:Prince_Aimone-_6th_Duke_of_Aosta a :Man,
+        :Person ;
+    rdfs:label "Prince Aimone, 6th Duke of Aosta"^^xsd:string ;
+    data:wdtLink wdt:Q2031618 ;
+    :alsoKnownAs "Aimone di Savoia-Aoste"^^xsd:string,
+        "Prince Aimone of Savoy-Aosta"^^xsd:string,
+        "Prince Aimone of Savoy-Aosta, The 6th Duke of Aosta"^^xsd:string,
+        "Prince Aimone of Savoy-Aosta, The Duke of Aosta"^^xsd:string,
+        "Prince Aimone, Duke of Aosta"^^xsd:string,
+        "Prince Aimone, The 6th Duke of Aosta"^^xsd:string,
+        "Prince Aimone, The Duke of Aosta"^^xsd:string ;
+    :hasBrother data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :hasRelation data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Aimone-_6th_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Aimone-_6th_Duke_of_Aosta .
+
+data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta a :Man,
+        :Person ;
+    rdfs:label "Prince Emanuele Filiberto, 2nd Duke of Aosta"^^xsd:string ;
+    data:posIndicesFull "1140:1158"^^xsd:string,
+        "128:146"^^xsd:string ;
+    data:posIndicesPart "1009:1015"^^xsd:string,
+        "1052:1056"^^xsd:string,
+        "1060:1065"^^xsd:string,
+        "389:395"^^xsd:string,
+        "413:417"^^xsd:string,
+        "421:426"^^xsd:string,
+        "558:564"^^xsd:string,
+        "791:795"^^xsd:string,
+        "860:866"^^xsd:string,
+        "875:879"^^xsd:string,
+        "883:888"^^xsd:string,
+        "947:951"^^xsd:string,
+        "999:1007"^^xsd:string ;
+    data:wdtLink wdt:Q445106 ;
+    :alsoKnownAs "Emanuele Filiberto"^^xsd:string ;
+    :hasBrother data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :hasRelation data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :isBrotherOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta ;
+    :isSiblingOf data:Prince_Emanuele_Filiberto-_2nd_Duke_of_Aosta .
+
+data:Prince_Jean_dOrléans_1 a :Man,
+        :Person ;
+    rdfs:label "Prince Jean d’Orléans"^^xsd:string ;
+    data:posIndicesFull "714:740"^^xsd:string ;
+    data:posIndicesPart "1009:1015"^^xsd:string,
+        "860:866"^^xsd:string ;
+    data:wdtLink wdt:Q578791 ;
+    :alsoKnownAs "Jean Pierre Clément Marie d’Orléans"^^xsd:string,
+        "Jean d’Orléans"^^xsd:string,
+        "Prince Jean Pierre Clément Marie d’Orléans"^^xsd:string,
+        "Prince Jean, Duke of Guise"^^xsd:string ;
+    :hasBrother data:Prince_Jean_dOrléans_1 ;
+    :hasRelation data:Prince_Jean_dOrléans_1 ;
+    :hasSex data:male ;
+    :isBloodrelationOf data:Prince_Jean_dOrléans_1 ;
+    :isBrotherOf data:Prince_Jean_dOrléans_1 ;
+    :isSiblingOf data:Prince_Jean_dOrléans_1 .
+

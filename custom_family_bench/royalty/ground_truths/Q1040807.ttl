@@ -7,19 +7,77 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Daniel_Chatto a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Daniel_Chatto a :Person ;
     rdfs:label "Daniel Chatto" ;
-    data:posIndicesFull "2269:2282" ;
-    data:posIndicesPart "2339:2345",
-        "2451:2457",
-        "2499:2505" ;
+    data:posIndicesFull "2021:2034" ;
+    data:posIndicesPart "2091:2097",
+        "2203:2209",
+        "2251:2257" ;
     data:wdtLink wdt:Q331657 ;
     :alsoKnownAs "Daniel St George Chatto",
         "Daniel St. George Chatto" ;
     :hasSex data:male .
+
+data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon a :Person ;
+    rdfs:label "David Armstrong-Jones, 2nd Earl of Snowdon" ;
+    data:posIndicesFull "203:245",
+        "839:854" ;
+    data:posIndicesPart "1349:1353",
+        "735:744",
+        "745:750" ;
+    data:wdtLink wdt:Q1091237 ;
+    :alsoKnownAs "David Albert Charles Armstrong-Jones, 2nd Earl of Snowdon",
+        "David Armstrong-Jones, Viscount Linley",
+        "David Linley",
+        "David Snowdon",
+        "Viscount Linley" ;
+    :hasParent data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasSex data:male .
+
+data:Elizabeth_II a :Person ;
+    rdfs:label "Elizabeth II" ;
+    data:posIndicesFull "1784:1802",
+        "1790:1802" ;
+    data:wdtLink wdt:Q9682 ;
+    :alsoKnownAs "Elizabeth Alexandra Mary",
+        "Elizabeth Alexandra Mary Windsor",
+        "Queen Elizabeth II" ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female .
+
+data:Lady_Sarah_Chatto a :Person ;
+    rdfs:label "Lady Sarah Chatto" ;
+    data:posIndicesFull "0:35",
+        "1584:1605",
+        "330:374",
+        "335:374",
+        "5:35" ;
+    data:posIndicesPart "1108:1113",
+        "1138:1143",
+        "1220:1224",
+        "1642:1648",
+        "1804:1810",
+        "2011:2016",
+        "2091:2097",
+        "2203:2209",
+        "2251:2257",
+        "2333:2337",
+        "553:558",
+        "607:611",
+        "629:633",
+        "722:726",
+        "804:809",
+        "989:994" ;
+    data:wdtLink wdt:Q1040807 ;
+    :alsoKnownAs "Lady Sarah Frances Elizabeth Armstrong-Jones",
+        "Lady Sarah Frances Elizabeth Chatto",
+        "Sarah Armstrong-Jones",
+        "Sarah Frances Elizabeth Armstrong-Jones",
+        "Sarah Frances Elizabeth Chatto" ;
+    :hasParent data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
+        data:Princess_Margaret-_Countess_of_Snowdon ;
+    :hasSex data:female .
 
 data:posIndicesFull a owl:AnnotationProperty .
 
@@ -27,76 +85,13 @@ data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Mary, Princess Royal and Countess of Harewood" ;
-    data:posIndicesFull "577:589" ;
-    data:posIndicesPart "1120:1125",
-        "1160:1165",
-        "1369:1374",
-        "1836:1841",
-        "1963:1968",
-        "2157:2162" ;
-    data:wdtLink wdt:Q233913 ;
-    :alsoKnownAs "Mary Harewood",
-        "Mary, Princess Royal",
-        "Princess Mary",
-        "Princess Mary of Wales",
-        "Princess Mary of York",
-        "Princess Mary of the United Kingdom",
-        "Princess Mary, Countess of Harewood",
-        "Princess Mary, Princess Royal of the United Kingdom",
-        "Princess Mary, Viscountess Lascelles",
-        "Princess Victoria Alexandra Alice Mary of Wales",
-        "Princess Victoria Alexandra Alice Mary of York",
-        "Princess Victoria Alexandra Alice Mary of the United Kingdom",
-        "Princess Victoria Alexandra Alice Mary, Countess of Harewood",
-        "Princess Victoria Alexandra Alice Mary, Viscountess Lascelles",
-        "Victoria Alexandra Alice Mary Windsor",
-        "Victoria Alexandra Alice Mary, Princess Royal and Countess of Harewood" ;
-    :hasBrother data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasSex data:female ;
-    :isAuntOf data:Elizabeth_II,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isSiblingOf data:Prince_Henry-_Duke_of_Gloucester ;
-    :isSisterOf data:Prince_Henry-_Duke_of_Gloucester .
-
-data:Prince_Henry-_Duke_of_Gloucester a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Henry, Duke of Gloucester" ;
-    data:posIndicesFull "577:589" ;
-    data:posIndicesPart "1300:1306" ;
-    data:wdtLink wdt:Q117174 ;
-    :alsoKnownAs "Henry Gloucester",
-        "Henry William Frederick Albert",
-        "Henry Windsor",
-        "Prince Henry",
-        "Prince Henry William Frederick Albert, Duke of Gloucester",
-        "Prince Henry of Cornwall and York",
-        "Prince Henry of Wales",
-        "Prince Henry of York",
-        "The Prince Henry" ;
-    :hasSex data:male ;
-    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isBrotherOf data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isSiblingOf data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isUncleOf data:Elizabeth_II,
-        data:Princess_Margaret-_Countess_of_Snowdon .
-
-data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon a :Person ;
     rdfs:label "Antony Armstrong-Jones, 1st Earl of Snowdon" ;
     data:posIndicesFull "137:159",
         "137:180",
         "508:530",
         "508:551" ;
-    data:posIndicesPart "1501:1505",
+    data:posIndicesPart "1349:1353",
         "735:744",
         "745:750" ;
     data:wdtLink wdt:Q335260 ;
@@ -108,22 +103,24 @@ data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon a :Ancestor,
         "Lord Snowden",
         "Tony Armstrong-Jones",
         "Tony Snowdon" ;
-    :hasChild data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto ;
-    :hasDaughter data:Lady_Sarah_Chatto ;
-    :hasSex data:male ;
-    :hasSon data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
-    :isFatherOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto ;
-    :isParentOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto .
+    :hasSex data:male .
 
-data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:Princess_Margaret-_Countess_of_Snowdon a :Person ;
+    rdfs:label "Princess Margaret, Countess of Snowdon" ;
+    data:posIndicesFull "93:131" ;
+    data:posIndicesPart "2391:2399",
+        "486:494",
+        "495:503" ;
+    data:wdtLink wdt:Q153815 ;
+    :alsoKnownAs "Margaret Rose",
+        "Margaret Windsor",
+        "Margaret York" ;
+    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
+    :hasSex data:female .
+
+data:Queen_Elizabeth-_The_Queen_Mother a :Person ;
     rdfs:label "Queen Elizabeth, The Queen Mother" ;
-    data:posIndicesFull "2032:2047" ;
+    data:posIndicesFull "1784:1799" ;
     data:wdtLink wdt:Q10633 ;
     :alsoKnownAs "Elizabeth Angela Marguerite Bowes-Lyon",
         "Elizabeth Angela Marguerite, Duchess of York",
@@ -139,263 +136,9 @@ data:Queen_Elizabeth-_The_Queen_Mother a :Ancestor,
         "Queen-Empress Elizabeth",
         "The Queen Mother",
         "The Queen Mum" ;
-    :hasChild data:Elizabeth_II,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :hasDaughter data:Elizabeth_II,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :hasSex data:female ;
-    :isMotherOf data:Elizabeth_II,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isParentOf data:Elizabeth_II,
-        data:Princess_Margaret-_Countess_of_Snowdon .
+    :hasSex data:female .
 
-data:Andrew_Mountbatten-Windsor a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Andrew Mountbatten-Windsor" ;
-    data:posIndicesFull "1317:1325",
-        "465:473",
-        "625:633" ;
-    data:posIndicesPart "1484:1495",
-        "1506:1517" ;
-    data:wdtLink wdt:Q153330 ;
-    :alsoKnownAs "Andrew Albert Christian Edward",
-        "Andrew Albert Christian Edward Mountbatten-Windsor",
-        "Baron Killyleagh",
-        "Earl of Inverness",
-        "Prince Andrew",
-        "Prince Andrew of the United Kingdom",
-        "Prince Andrew, Duke of York",
-        "Randy Andy" ;
-    :hasBrother data:Charles_III ;
-    :hasMother data:Elizabeth_II ;
-    :hasParent data:Elizabeth_II ;
-    :hasSex data:male ;
-    :hasSister data:Anne-_Princess_Royal ;
-    :isBrotherOf data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :isChildOf data:Elizabeth_II ;
-    :isSiblingOf data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :isSonOf data:Elizabeth_II .
+data:male a :Male .
 
-data:Anne-_Princess_Royal a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Anne, Princess Royal" ;
-    data:posIndicesFull "2639:2652" ;
-    data:wdtLink wdt:Q151754 ;
-    :alsoKnownAs "Anne Elizabeth Alice Louise",
-        "Anne Elizabeth Alice Louise Mountbatten-Windsor",
-        "Anne Elizabeth Alice Louise Mountbatten-Windsor, Princess Royal of the United Kingdom",
-        "Anne Mountbatten-Windsor",
-        "Princess Anne",
-        "Princess Anne Elizabeth Alice Louise of Edinburgh",
-        "Princess Anne Elizabeth Alice Louise, Princess Royal",
-        "Princess Anne of Edinburgh",
-        "Princess Anne, Princess Royal",
-        "Princess Anne, The Princess Royal",
-        "The Princess Anne",
-        "The Princess Anne Elizabeth Alice Louise, Princess Royal",
-        "The Princess Anne, Princess Royal" ;
-    :hasBrother data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :hasMother data:Elizabeth_II ;
-    :hasParent data:Elizabeth_II ;
-    :hasSex data:female ;
-    :isChildOf data:Elizabeth_II ;
-    :isDaughterOf data:Elizabeth_II ;
-    :isSiblingOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isSisterOf data:Andrew_Mountbatten-Windsor,
-        data:Charles_III .
-
-data:Charles_III a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Charles III" ;
-    data:posIndicesFull "286:298",
-        "286:302",
-        "291:302" ;
-    data:posIndicesPart "1291:1298" ;
-    data:wdtLink wdt:Q43274 ;
-    :alsoKnownAs "C III",
-        "Charles III of England",
-        "Charles III of the United Kingdom",
-        "Charles Mountbatten-Windsor",
-        "Charles Philip Arthur George",
-        "Charles Philip Arthur George Mountbatten-Windsor",
-        "Charles Philip Arthur George Windsor",
-        "Charles Philip Arthur George, Prince of Wales",
-        "Charles Wales",
-        "Charles Windsor",
-        "Charles the Third",
-        "HM King Charles III",
-        "His Majesty",
-        "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith",
-        "His Majesty The King",
-        "His Royal Highness Charles III of Great Britain",
-        "King Charles",
-        "King Charles III",
-        "King of England",
-        "Prince Charles",
-        "Prince Charles Philip Arthur George of Edinburgh",
-        "Prince Charles Philip Arthur George, Prince of Wales",
-        "Prince Charles of Edinburgh",
-        "Prince Charles, Duke of Rothesay",
-        "Prince Charles, Prince of Wales",
-        "The Prince Charles Philip Arthur George, Prince of Wales",
-        "The Prince Charles, Prince of Wales" ;
-    :hasBrother data:Andrew_Mountbatten-Windsor ;
-    :hasMother data:Elizabeth_II ;
-    :hasParent data:Elizabeth_II ;
-    :hasSex data:male ;
-    :hasSister data:Anne-_Princess_Royal ;
-    :isBrotherOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal ;
-    :isChildOf data:Elizabeth_II ;
-    :isSiblingOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal ;
-    :isSonOf data:Elizabeth_II .
-
-data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "David Armstrong-Jones, 2nd Earl of Snowdon" ;
-    data:posIndicesFull "203:245",
-        "839:854" ;
-    data:posIndicesPart "1501:1505",
-        "735:744",
-        "745:750" ;
-    data:wdtLink wdt:Q1091237 ;
-    :alsoKnownAs "David Albert Charles Armstrong-Jones, 2nd Earl of Snowdon",
-        "David Armstrong-Jones, Viscount Linley",
-        "David Linley",
-        "David Snowdon",
-        "Viscount Linley" ;
-    :hasFather data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon ;
-    :hasMother data:Princess_Margaret-_Countess_of_Snowdon ;
-    :hasParent data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :hasSex data:male ;
-    :hasSister data:Lady_Sarah_Chatto ;
-    :isBrotherOf data:Lady_Sarah_Chatto ;
-    :isChildOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isSiblingOf data:Lady_Sarah_Chatto ;
-    :isSonOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
-        data:Princess_Margaret-_Countess_of_Snowdon .
-
-data:Lady_Sarah_Chatto a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Lady Sarah Chatto" ;
-    data:posIndicesFull "0:35",
-        "1736:1757",
-        "330:374",
-        "335:374",
-        "5:35" ;
-    data:posIndicesPart "1209:1214",
-        "1239:1244",
-        "1890:1896",
-        "2052:2058",
-        "2259:2264",
-        "2339:2345",
-        "2451:2457",
-        "2499:2505",
-        "2581:2585",
-        "553:558",
-        "607:611",
-        "722:726",
-        "804:809",
-        "989:994" ;
-    data:wdtLink wdt:Q1040807 ;
-    :alsoKnownAs "Lady Sarah Frances Elizabeth Armstrong-Jones",
-        "Lady Sarah Frances Elizabeth Chatto",
-        "Sarah Armstrong-Jones",
-        "Sarah Frances Elizabeth Armstrong-Jones",
-        "Sarah Frances Elizabeth Chatto" ;
-    :hasBrother data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
-    :hasFather data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon ;
-    :hasMother data:Princess_Margaret-_Countess_of_Snowdon ;
-    :hasParent data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :hasSex data:female ;
-    :isChildOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isDaughterOf data:Antony_Armstrong-Jones-_1st_Earl_of_Snowdon,
-        data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isSiblingOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
-    :isSisterOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon .
-
-data:Princess_Margaret-_Countess_of_Snowdon a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Margaret, Countess of Snowdon" ;
-    data:posIndicesFull "93:131" ;
-    data:posIndicesPart "486:494",
-        "495:503" ;
-    data:wdtLink wdt:Q153815 ;
-    :alsoKnownAs "Margaret Rose",
-        "Margaret Windsor",
-        "Margaret York" ;
-    :hasChild data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto ;
-    :hasDaughter data:Lady_Sarah_Chatto ;
-    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :hasSister data:Elizabeth_II ;
-    :hasSon data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon ;
-    :isAuntOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isMotherOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto ;
-    :isParentOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto ;
-    :isSiblingOf data:Elizabeth_II ;
-    :isSisterOf data:Elizabeth_II .
-
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "2032:2050",
-        "2038:2050" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasChild data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :hasDaughter data:Anne-_Princess_Royal ;
-    :hasMother data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasParent data:Queen_Elizabeth-_The_Queen_Mother ;
-    :hasSex data:female ;
-    :hasSister data:Princess_Margaret-_Countess_of_Snowdon ;
-    :hasSon data:Andrew_Mountbatten-Windsor,
-        data:Charles_III ;
-    :isAuntOf data:David_Armstrong-Jones-_2nd_Earl_of_Snowdon,
-        data:Lady_Sarah_Chatto ;
-    :isChildOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isDaughterOf data:Queen_Elizabeth-_The_Queen_Mother ;
-    :isMotherOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :isParentOf data:Andrew_Mountbatten-Windsor,
-        data:Anne-_Princess_Royal,
-        data:Charles_III ;
-    :isSiblingOf data:Princess_Margaret-_Countess_of_Snowdon ;
-    :isSisterOf data:Princess_Margaret-_Countess_of_Snowdon .
+data:female a :Female .
 

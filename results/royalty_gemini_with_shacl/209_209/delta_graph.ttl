@@ -2,36 +2,21 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Fran%C3%A7ois_of_Orl%C3%A9ans a :Man,
-        :Person ;
-    :hasBirthYear "1961"^^xsd:string ;
-    :hasDeathYear "2017"^^xsd:string ;
-    :hasFather data:Henri_Count_of_Paris ;
-    :hasMother data:Marie-Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg ;
-    :hasSex data:Male ;
-    :hasSister data:Blanche_of_Orl%C3%A9ans .
+data:Prince_Maurice_of_the_Netherlands a :Person ;
+    :hasBirthYear 1843 ;
+    :hasDeathYear 1850 ;
+    :hasFather data:King_William_III_of_the_Netherlands ;
+    :hasMother data:Sophie_of_W%C3%BCrttemberg ;
+    :isSiblingOf data:Prince_Alexander,
+        data:Prince_William .
 
-data:Paternal_Grandmother_of_Fran%C3%A7ois a :Person,
-        :Woman ;
-    :hasSex data:Female .
+data:King_William_III_of_the_Netherlands a :Ancestor,
+        :Man .
 
-data:Blanche_of_Orl%C3%A9ans a :Person,
-        :Woman ;
-    :hasFather data:Henri_Count_of_Paris ;
-    :hasMother data:Marie-Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg ;
-    :hasSex data:Female .
+data:Prince_Alexander a :Man .
 
-data:Henri_Count_of_Paris a :Ancestor,
-        :Man,
-        :Person ;
-    :hasSex data:Male .
+data:Prince_William a :Man .
 
-data:Male a :Sex .
-
-data:Marie-Th%C3%A9r%C3%A8se_of_W%C3%BCrttemberg a :Ancestor,
-        :Person,
-        :Woman ;
-    :hasSex data:Female .
-
-data:Female a :Sex .
+data:Sophie_of_W%C3%BCrttemberg a :Ancestor,
+        :Woman .
 

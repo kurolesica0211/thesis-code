@@ -7,148 +7,302 @@
 data: a owl:Ontology ;
     owl:imports : .
 
+data:Constantine_II_of_Greece a :Person ;
+    rdfs:label "Constantine II of Greece" ;
+    data:posIndicesFull "1482:1498",
+        "1487:1501",
+        "279:293",
+        "3256:3272",
+        "3811:3827",
+        "3816:3830",
+        "7304:7320",
+        "7309:7323",
+        "7647:7663",
+        "7652:7666",
+        "7924:7940" ;
+    data:posIndicesPart "1116:1122",
+        "1536:1547",
+        "3522:3528",
+        "4465:4471",
+        "4535:4541",
+        "4698:4704",
+        "4953:4959",
+        "5757:5763",
+        "600:606",
+        "6354:6360",
+        "663:669",
+        "6765:6771",
+        "6894:6900",
+        "761:767",
+        "7631:7637",
+        "8201:8207",
+        "8279:8290",
+        "8456:8462",
+        "847:858",
+        "8760:8766",
+        "915:921" ;
+    data:wdtLink wdt:Q151773 ;
+    :alsoKnownAs "Constantine 2 of Greece",
+        "Constantine Glucksburg",
+        "Constantine II",
+        "Constantino de Grecia",
+        "King Constantine",
+        "Konstantinos 2",
+        "Konstantinos II",
+        "Konstantinos II of Greece",
+        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
+        "Konstantínos 2",
+        "Konstantínos II" ;
+    :hasParent data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasSex data:male .
+
+data:Felipe_VI_of_Spain a :Person ;
+    rdfs:label "Felipe VI of Spain" ;
+    data:posIndicesFull "3719:3728" ;
+    data:posIndicesPart "7179:7184",
+        "7621:7626" ;
+    data:wdtLink wdt:Q191045 ;
+    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia",
+        "Felipe VI",
+        "Philip John Paul Alphonse of All Saints of Bourbon",
+        "Philip VI of Spain" ;
+    :hasParent data:Juan_Carlos_I_of_Spain,
+        data:Queen_Sofía_of_Spain ;
+    :hasSex data:male .
+
+data:Prince_August_Wilhelm_of_Prussia a :Person ;
+    rdfs:label "Prince August Wilhelm of Prussia" ;
+    data:posIndicesFull "3297:3301" ;
+    data:posIndicesPart "4238:4244",
+        "4936:4942",
+        "5881:5887",
+        "7157:7163" ;
+    data:wdtLink wdt:Q58777 ;
+    :alsoKnownAs "Auwi" ;
+    :hasParent data:Wilhelm_II ;
+    :hasSex data:male .
+
+data:Queen_Anne-Marie_of_Greece a :Person ;
+    rdfs:label "Queen Anne-Marie of Greece" ;
+    data:posIndicesFull "7333:7363" ;
+    data:posIndicesPart "7631:7637",
+        "8201:8207",
+        "8456:8462",
+        "8760:8766" ;
+    data:wdtLink wdt:Q564889 ;
+    :alsoKnownAs "Anne Marie Dagmar Ingrid zu Schleswig-Holstein-Sonderburg-Glücksburg, Princess of Denmark",
+        "Anne-Marie Dagmar Ingrid",
+        "Anne-Marie of the Hellenes (née Princess Anne-Marie of Denmark)",
+        "Princess Anne-Marie of Denmark" ;
+    :hasSex data:female .
+
 data:posIndicesFull a owl:AnnotationProperty .
 
 data:posIndicesPart a owl:AnnotationProperty .
 
 data:wdtLink a owl:AnnotationProperty .
 
-data:Princess_Margaret_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Margaret of Prussia" ;
-    data:posIndicesFull "6152:6156" ;
-    data:posIndicesPart "6688:6696" ;
-    data:wdtLink wdt:Q61338 ;
-    :alsoKnownAs "Margaret Beatrice Feodora of Prussia",
-        "Margaret of Prussia",
-        "Margaret of Prussia, Queen consort-elect of Finland",
-        "Margaret of Prussia, Queen-elect of Finland",
-        "Margarethe Beatrice Feodora of Prussia",
-        "Margarethe of Prussia",
-        "Mossy",
-        "Princess Frederick Charles of Hesse",
-        "Princess Margaret Beatrice Feodora of Prussia",
-        "Princess Margarethe Beatrice Feodora of Prussia",
-        "Princess Margarethe of Prussia" ;
-    :hasBrother data:Wilhelm_II ;
-    :hasSex data:female ;
-    :isAuntOf data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece,
-        data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isSiblingOf data:Wilhelm_II ;
-    :isSisterOf data:Wilhelm_II .
+data:Constantine_I_of_Greece a :Person ;
+    rdfs:label "Constantine I of Greece" ;
+    data:posIndicesFull "3256:3274",
+        "3261:3274" ;
+    data:posIndicesPart "3522:3528",
+        "4465:4471",
+        "4535:4541",
+        "4698:4704",
+        "4953:4959",
+        "5757:5763",
+        "6354:6360",
+        "6765:6771",
+        "6894:6900",
+        "7631:7637",
+        "8201:8207",
+        "8279:8290",
+        "8456:8462",
+        "8760:8766" ;
+    data:wdtLink wdt:Q152099 ;
+    :alsoKnownAs "Constantine I",
+        "Constantine Oldenburg I",
+        "King Constantine I",
+        "King Constantine I of Greece",
+        "Konstantinos I of Greece" ;
+    :hasSex data:male .
 
-data:Ernst_August-_Duke_of_Brunswick a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Ernst_August-_Duke_of_Brunswick a :Person ;
     rdfs:label "Ernst August, Duke of Brunswick" ;
     data:posIndicesFull "1988:2003",
         "449:464" ;
-    data:posIndicesPart "4859:4863",
-        "4867:4876",
-        "5236:5242" ;
+    data:posIndicesPart "5504:5508",
+        "5512:5521",
+        "5881:5887" ;
     data:wdtLink wdt:Q57672 ;
     :alsoKnownAs "Ernest August I, Duke of Brunswick",
         "Ernest Augustus",
         "Ernst August I of Brunswick" ;
-    :hasChild data:Frederica_of_Hanover ;
-    :hasDaughter data:Frederica_of_Hanover ;
-    :hasSex data:male ;
-    :isFatherOf data:Frederica_of_Hanover ;
-    :isParentOf data:Frederica_of_Hanover .
+    :hasSex data:male .
 
-data:Felipe_VI_of_Spain a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Felipe VI of Spain" ;
-    data:posIndicesFull "3297:3306" ;
-    data:posIndicesPart "6534:6539",
-        "6569:6574",
-        "6976:6981" ;
-    data:wdtLink wdt:Q191045 ;
-    :alsoKnownAs "Felipe Juan Pablo Alfonso de Todos los Santos de Borbón y Grecia",
-        "Felipe VI",
-        "Philip John Paul Alphonse of All Saints of Bourbon",
-        "Philip VI of Spain" ;
-    :hasMother data:Queen_Sofía_of_Spain ;
-    :hasParent data:Queen_Sofía_of_Spain ;
-    :hasSex data:male ;
-    :isChildOf data:Queen_Sofía_of_Spain ;
-    :isSonOf data:Queen_Sofía_of_Spain .
+data:Juan_Carlos_I_of_Spain a :Person ;
+    rdfs:label "Juan Carlos I of Spain" ;
+    data:posIndicesFull "7197:7210",
+        "7197:7219" ;
+    data:posIndicesPart "7621:7626" ;
+    data:wdtLink wdt:Q19943 ;
+    :alsoKnownAs "Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias",
+        "Juan Carlos I" ;
+    :hasSex data:male .
 
-data:Helen_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Helen of Greece and Denmark" ;
-    data:posIndicesFull "591:618" ;
-    data:posIndicesPart "1116:1122",
-        "3051:3058",
-        "3100:3106",
-        "3820:3826",
-        "3890:3896",
-        "4053:4059",
-        "4308:4314",
-        "4319:4326",
-        "5112:5118",
-        "5709:5715",
-        "6120:6126",
-        "6249:6255",
-        "6711:6718",
-        "6986:6992",
-        "7556:7562",
-        "761:767",
-        "7811:7817",
-        "8115:8121",
-        "915:921" ;
-    data:wdtLink wdt:Q162177 ;
-    :alsoKnownAs "Helen, Queen Mother of Romania",
-        "Helen, The Queen Mother of Romania",
-        "Queen Elena, The Queen Mother of Romania",
-        "Queen Elena, The Queen Mother of Romania, Princess of Greece and Denmark",
-        "Queen Helen",
-        "Queen Helen, Queen Mother of Romania",
-        "Queen Helen, Queen Mother of Romania, Princess of Greece and Denmark",
-        "Queen Helen, The Queen Mother of Romania",
-        "Queen Helen, The Queen Mother of Romania, Princess of Greece and Denmark" ;
-    :hasBrother data:Paul_of_Greece ;
-    :hasSex data:female ;
-    :isAuntOf data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain ;
-    :isSiblingOf data:Paul_of_Greece ;
-    :isSisterOf data:Paul_of_Greece .
-
-data:Prince_August_Wilhelm_of_Prussia a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince August Wilhelm of Prussia" ;
-    data:posIndicesFull "2957:2961" ;
-    data:posIndicesPart "3593:3599",
-        "4291:4297",
-        "5236:5242",
-        "6512:6518" ;
-    data:wdtLink wdt:Q58777 ;
-    :alsoKnownAs "Auwi" ;
-    :hasFather data:Wilhelm_II ;
+data:Princess_Viktoria_Luise_of_Prussia a :Person ;
+    rdfs:label "Princess Viktoria Luise of Prussia" ;
+    data:posIndicesFull "2051:2085",
+        "2060:2085" ;
+    data:posIndicesPart "3510:3518",
+        "4182:4190",
+        "4249:4257",
+        "5007:5015",
+        "5395:5403" ;
+    data:wdtLink wdt:Q57529 ;
+    :alsoKnownAs "Princess Victoria Louise Adelaide Matilda Charlotte of Prussia",
+        "Princess Victoria Louise of Prussia",
+        "Victoria Louise Adelaide Matilda",
+        "Viktoria Luise of Prussia",
+        "Viktoria Luise, Duchess Consort of Brunswick" ;
     :hasParent data:Wilhelm_II ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Viktoria_Luise_of_Prussia ;
-    :isBrotherOf data:Princess_Viktoria_Luise_of_Prussia ;
-    :isChildOf data:Wilhelm_II ;
-    :isSiblingOf data:Princess_Viktoria_Luise_of_Prussia ;
-    :isSonOf data:Wilhelm_II ;
-    :isUncleOf data:Frederica_of_Hanover .
+    :hasSex data:female .
 
-data:Wilhelm_II a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Queen_Sofía_of_Spain a :Person ;
+    rdfs:label "Queen Sofía of Spain" ;
+    data:posIndicesFull "3676:3687",
+        "3676:3696" ;
+    data:posIndicesPart "4295:4300",
+        "4415:4420",
+        "4513:4518",
+        "4608:4613",
+        "5108:5113",
+        "5211:5216",
+        "5608:5613",
+        "5635:5640",
+        "5907:5912",
+        "6395:6400",
+        "7143:7148",
+        "7179:7184",
+        "7232:7237",
+        "7397:7402",
+        "7621:7626" ;
+    data:wdtLink wdt:Q156548 ;
+    :alsoKnownAs "Princess Sophia of Greece and Denmark",
+        "Queen Sofia of Spain",
+        "Queen Sofía",
+        "Queen Sofía, Queen Consort of Spain" ;
+    :hasParent data:Frederica_of_Hanover,
+        data:Paul_of_Greece ;
+    :hasSex data:female .
+
+data:Victoria-_Princess_Royal a :Person ;
+    rdfs:label "Victoria, Princess Royal" ;
+    data:posIndicesFull "2051:2068" ;
+    data:posIndicesPart "2336:2341",
+        "2527:2532",
+        "2801:2809",
+        "3436:3441",
+        "3510:3518",
+        "3901:3906",
+        "4115:4120",
+        "4182:4190",
+        "4249:4257",
+        "5007:5015",
+        "5217:5225",
+        "5395:5403",
+        "7531:7536",
+        "8717:8722" ;
+    data:wdtLink wdt:Q116728 ;
+    :alsoKnownAs "Empress Frederick",
+        "Empress Frederick of Germany",
+        "Empress Friedrich",
+        "Empress Victoria of Germany",
+        "Empress of Germany Princess Royal Victoria Adelaide Mary Louise",
+        "Princess Victoria",
+        "Princess Victoria Adelaide Mary Louise",
+        "Princess Victoria Adelaide Mary Louise of the United Kingdom",
+        "Princess Victoria of the United Kingdom",
+        "Victoria Adelaide Mary Louisa",
+        "Victoria Adelaide Mary Louise",
+        "Victoria, Crown Princess of Prussia",
+        "Victoria, Empress Frederick of Germany",
+        "Victoria, Empress consort of Germany",
+        "Victoria, Empress of Germany",
+        "Victoria, German Empress",
+        "Victoria, Queen of Prussia and Empress of Germany" ;
+    :hasSex data:female .
+
+data:Frederica_of_Hanover a :Person ;
+    rdfs:label "Frederica of Hanover" ;
+    data:posIndicesFull "0:20",
+        "0:9",
+        "1248:1257",
+        "1503:1512",
+        "2377:2386",
+        "2551:2560",
+        "2676:2685",
+        "3006:3015",
+        "3279:3288",
+        "3482:3491",
+        "3776:3785",
+        "3966:3975",
+        "4158:4167",
+        "4346:4355",
+        "4402:4411",
+        "4614:4623",
+        "479:488",
+        "5114:5123",
+        "5370:5379",
+        "5614:5623",
+        "6401:6410",
+        "6772:6781",
+        "6824:6833",
+        "6971:6980",
+        "7403:7412",
+        "8068:8077",
+        "8493:8502",
+        "999:1008" ;
+    data:posIndicesPart "1785:1792" ;
+    data:wdtLink wdt:Q61351 ;
+    :alsoKnownAs "Fredericka",
+        "Friederike Luise von Griechenland",
+        "Princess Fredericka" ;
+    :hasParent data:Ernst_August-_Duke_of_Brunswick,
+        data:Princess_Viktoria_Luise_of_Prussia ;
+    :hasSex data:female .
+
+data:Paul_of_Greece a :Person ;
+    rdfs:label "Paul of Greece" ;
+    data:posIndicesFull "3121:3135" ;
+    data:posIndicesPart "3238:3242",
+        "3522:3528",
+        "4389:4393",
+        "4465:4471",
+        "4535:4541",
+        "4698:4704",
+        "4953:4959",
+        "5757:5763",
+        "6354:6360",
+        "6765:6771",
+        "6894:6900",
+        "7269:7273",
+        "7631:7637",
+        "8201:8207",
+        "8456:8462",
+        "8760:8766" ;
+    data:wdtLink wdt:Q155394 ;
+    :alsoKnownAs "King Paul I of Greece",
+        "King Paul of Greece",
+        "King Pavlos I of Greece",
+        "Paul I of Greece",
+        "Pavlos I of Greece" ;
+    :hasParent data:Constantine_I_of_Greece ;
+    :hasSex data:male .
+
+data:Wilhelm_II a :Person ;
     rdfs:label "Wilhelm II" ;
     data:posIndicesFull "2120:2145",
         "2135:2145",
@@ -167,254 +321,10 @@ data:Wilhelm_II a :Ancestor,
         "Wilhelm II, German Emperor",
         "Wilhelm II.",
         "William II" ;
-    :hasChild data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasDaughter data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Margaret_of_Prussia ;
-    :hasSon data:Prince_August_Wilhelm_of_Prussia ;
-    :isBrotherOf data:Princess_Margaret_of_Prussia ;
-    :isFatherOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isParentOf data:Prince_August_Wilhelm_of_Prussia,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isSiblingOf data:Princess_Margaret_of_Prussia ;
-    :isUncleOf data:Helen_of_Greece_and_Denmark,
-        data:Paul_of_Greece .
+    :hasParent data:Victoria-_Princess_Royal ;
+    :hasSex data:male .
 
-data:Constantine_II_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Constantine II of Greece" ;
-    data:posIndicesFull "1482:1498",
-        "1487:1501",
-        "279:293",
-        "2916:2932",
-        "3389:3405",
-        "3394:3408",
-        "6659:6675",
-        "6664:6678",
-        "7002:7018",
-        "7007:7021",
-        "7279:7295" ;
-    data:posIndicesPart "1116:1122",
-        "1536:1547",
-        "3100:3106",
-        "3820:3826",
-        "3890:3896",
-        "4053:4059",
-        "4308:4314",
-        "5112:5118",
-        "5709:5715",
-        "6120:6126",
-        "6249:6255",
-        "663:669",
-        "6986:6992",
-        "7556:7562",
-        "761:767",
-        "7634:7645",
-        "7811:7817",
-        "8115:8121",
-        "847:858",
-        "915:921" ;
-    data:wdtLink wdt:Q151773 ;
-    :alsoKnownAs "Constantine 2 of Greece",
-        "Constantine Glucksburg",
-        "Constantine II",
-        "Constantino de Grecia",
-        "King Constantine",
-        "Konstantinos 2",
-        "Konstantinos II",
-        "Konstantinos II of Greece",
-        "Konstantinos II zu Schleswig-Holstein-Sonderburg-Glücksburg, King of the Hellenes",
-        "Konstantínos 2",
-        "Konstantínos II" ;
-    :hasFather data:Paul_of_Greece ;
-    :hasMother data:Frederica_of_Hanover ;
-    :hasParent data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :hasSex data:male ;
-    :hasSister data:Queen_Sofía_of_Spain ;
-    :isBrotherOf data:Queen_Sofía_of_Spain ;
-    :isChildOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isSiblingOf data:Queen_Sofía_of_Spain ;
-    :isSonOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isUncleOf data:Felipe_VI_of_Spain .
+data:female a :Female .
 
-data:Princess_Viktoria_Luise_of_Prussia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Viktoria Luise of Prussia" ;
-    data:posIndicesFull "2051:2085",
-        "2060:2085" ;
-    data:posIndicesPart "3088:3096",
-        "3537:3545",
-        "3604:3612",
-        "4362:4370",
-        "4750:4758",
-        "6688:6696" ;
-    data:wdtLink wdt:Q57529 ;
-    :alsoKnownAs "Princess Victoria Louise Adelaide Matilda Charlotte of Prussia",
-        "Princess Victoria Louise of Prussia",
-        "Victoria Louise Adelaide Matilda",
-        "Viktoria Luise of Prussia",
-        "Viktoria Luise, Duchess Consort of Brunswick" ;
-    :hasBrother data:Prince_August_Wilhelm_of_Prussia ;
-    :hasChild data:Frederica_of_Hanover ;
-    :hasDaughter data:Frederica_of_Hanover ;
-    :hasFather data:Wilhelm_II ;
-    :hasParent data:Wilhelm_II ;
-    :hasSex data:female ;
-    :isChildOf data:Wilhelm_II ;
-    :isDaughterOf data:Wilhelm_II ;
-    :isMotherOf data:Frederica_of_Hanover ;
-    :isParentOf data:Frederica_of_Hanover ;
-    :isSiblingOf data:Prince_August_Wilhelm_of_Prussia ;
-    :isSisterOf data:Prince_August_Wilhelm_of_Prussia .
-
-data:Paul_of_Greece a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Paul of Greece" ;
-    data:posIndicesFull "2781:2795" ;
-    data:posIndicesPart "2898:2902",
-        "3100:3106",
-        "3744:3748",
-        "3820:3826",
-        "3890:3896",
-        "4053:4059",
-        "4308:4314",
-        "5112:5118",
-        "5709:5715",
-        "6120:6126",
-        "6249:6255",
-        "6624:6628",
-        "6986:6992",
-        "7556:7562",
-        "7811:7817",
-        "8115:8121" ;
-    data:wdtLink wdt:Q155394 ;
-    :alsoKnownAs "King Paul I of Greece",
-        "King Paul of Greece",
-        "King Pavlos I of Greece",
-        "Paul I of Greece",
-        "Pavlos I of Greece" ;
-    :hasChild data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain ;
-    :hasDaughter data:Queen_Sofía_of_Spain ;
-    :hasSex data:male ;
-    :hasSister data:Helen_of_Greece_and_Denmark ;
-    :hasSon data:Constantine_II_of_Greece ;
-    :isBrotherOf data:Helen_of_Greece_and_Denmark ;
-    :isFatherOf data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain ;
-    :isParentOf data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain ;
-    :isSiblingOf data:Helen_of_Greece_and_Denmark .
-
-data:Queen_Sofía_of_Spain a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Queen Sofía of Spain" ;
-    data:posIndicesFull "3254:3265",
-        "3254:3274" ;
-    data:posIndicesPart "3650:3655",
-        "3770:3775",
-        "3868:3873",
-        "3963:3968",
-        "4463:4468",
-        "4566:4571",
-        "4963:4968",
-        "4990:4995",
-        "5262:5267",
-        "5750:5755",
-        "6498:6503",
-        "6534:6539",
-        "6569:6574",
-        "6587:6592",
-        "6752:6757",
-        "6976:6981" ;
-    data:wdtLink wdt:Q156548 ;
-    :alsoKnownAs "Princess Sophia of Greece and Denmark",
-        "Queen Sofia of Spain",
-        "Queen Sofía",
-        "Queen Sofía, Queen Consort of Spain" ;
-    :hasBrother data:Constantine_II_of_Greece ;
-    :hasChild data:Felipe_VI_of_Spain ;
-    :hasFather data:Paul_of_Greece ;
-    :hasMother data:Frederica_of_Hanover ;
-    :hasParent data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :hasSex data:female ;
-    :hasSon data:Felipe_VI_of_Spain ;
-    :isChildOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isDaughterOf data:Frederica_of_Hanover,
-        data:Paul_of_Greece ;
-    :isMotherOf data:Felipe_VI_of_Spain ;
-    :isParentOf data:Felipe_VI_of_Spain ;
-    :isSiblingOf data:Constantine_II_of_Greece ;
-    :isSisterOf data:Constantine_II_of_Greece .
-
-data:Frederica_of_Hanover a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Frederica of Hanover" ;
-    data:posIndicesFull "0:20",
-        "0:9",
-        "1248:1257",
-        "1503:1512",
-        "2155:2164",
-        "2329:2338",
-        "2454:2463",
-        "2666:2675",
-        "2939:2948",
-        "3060:3069",
-        "3354:3363",
-        "3410:3419",
-        "3513:3522",
-        "3701:3710",
-        "3757:3766",
-        "3969:3978",
-        "4469:4478",
-        "4725:4734",
-        "479:488",
-        "4969:4978",
-        "5756:5765",
-        "6127:6136",
-        "6179:6188",
-        "6326:6335",
-        "6758:6767",
-        "7423:7432",
-        "7848:7857",
-        "999:1008" ;
-    data:posIndicesPart "1785:1792" ;
-    data:wdtLink wdt:Q61351 ;
-    :alsoKnownAs "Fredericka",
-        "Friederike Luise von Griechenland",
-        "Princess Fredericka" ;
-    :hasChild data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain ;
-    :hasDaughter data:Queen_Sofía_of_Spain ;
-    :hasFather data:Ernst_August-_Duke_of_Brunswick ;
-    :hasMother data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasParent data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :hasSex data:female ;
-    :hasSon data:Constantine_II_of_Greece ;
-    :isChildOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isDaughterOf data:Ernst_August-_Duke_of_Brunswick,
-        data:Princess_Viktoria_Luise_of_Prussia ;
-    :isMotherOf data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain ;
-    :isParentOf data:Constantine_II_of_Greece,
-        data:Queen_Sofía_of_Spain .
+data:male a :Male .
 

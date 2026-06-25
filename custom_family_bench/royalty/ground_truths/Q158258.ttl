@@ -7,134 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:Katharine-_Duchess_of_Kent a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Katharine, Duchess of Kent" ;
-    data:posIndicesFull "3018:3035",
-        "518:544" ;
-    data:posIndicesPart "1036:1043",
-        "1047:1051",
-        "1485:1492",
-        "3206:3215",
-        "3536:3545",
-        "3968:3977",
-        "5356:5360" ;
-    data:wdtLink wdt:Q236678 ;
-    :alsoKnownAs "Katharine Kent",
-        "Katharine Lucy Mary Worsley",
-        "Katharine Lucy Mary, Duchess of Kent",
-        "Katharine Worsley" ;
-    :hasSex data:female .
-
-data:Marie_Christine-_Princess_Michael_of_Kent a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Marie Christine, Princess Michael of Kent" ;
-    data:posIndicesFull "1753:1775" ;
-    data:posIndicesPart "5356:5360",
-        "7236:7243" ;
-    data:wdtLink wdt:Q93535 ;
-    :alsoKnownAs "Marie Christine von Reibnitz",
-        "Marie-Christine Agnes Hedwig Ida Baronin von Reibnitz",
-        "Princess Michael of Kent" ;
-    :hasSex data:female .
-
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Princess_Maria_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Maria of Greece and Denmark" ;
-    data:posIndicesFull "179:216" ;
-    data:posIndicesPart "1019:1027",
-        "1370:1378" ;
-    data:wdtLink wdt:Q232732 ;
-    :alsoKnownAs "Grand Duchess Maria Georgievna, Grand Duchess Georgievna of Russia",
-        "Grand Duchess Maria Georgievna, Grand Duchess Georgievna of Russia, Princess of Greece and Denmark",
-        "Grand Duchess Maria Georgievna, The Grand Duchess Georgievna of Russia",
-        "Grand Duchess Maria Georgievna, The Grand Duchess Georgievna of Russia, Princess of Greece and Denmark",
-        "Laci Marie",
-        "The Princess Maria of Greece and Denmark" ;
-    :hasBrother data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :isAuntOf data:Princess_Marina_of_Greece_and_Denmark ;
-    :isSiblingOf data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :isSisterOf data:Prince_Nicholas_of_Greece_and_Denmark .
-
-data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Grand Duchess Elena Vladimirovna of Russia" ;
-    data:posIndicesFull "1193:1235" ;
-    data:posIndicesPart "1485:1492",
-        "6217:6222",
-        "6254:6259",
-        "6338:6343",
-        "6457:6462",
-        "6731:6736",
-        "6927:6932" ;
-    data:wdtLink wdt:Q232483 ;
-    :hasChild data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :isMotherOf data:Princess_Marina_of_Greece_and_Denmark ;
-    :isParentOf data:Princess_Marina_of_Greece_and_Denmark .
-
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "2252:2264",
-        "305:317",
-        "4177:4195",
-        "4183:4195",
-        "6018:6036",
-        "6024:6036",
-        "719:731" ;
-    data:posIndicesPart "377:386" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasFather data:George_VI ;
-    :hasParent data:George_VI ;
-    :hasSex data:female ;
-    :isChildOf data:George_VI ;
-    :isDaughterOf data:George_VI .
-
-data:Prince_Nicholas_of_Greece_and_Denmark a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Nicholas of Greece and Denmark" ;
-    data:posIndicesFull "1151:1188",
-        "1306:1343" ;
-    data:posIndicesPart "4479:4485",
-        "4944:4950" ;
-    data:wdtLink wdt:Q170160 ;
-    :alsoKnownAs "Prince Nikolaos of Greece and Denmark" ;
-    :hasChild data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasDaughter data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :hasSister data:Princess_Maria_of_Greece_and_Denmark ;
-    :isBrotherOf data:Princess_Maria_of_Greece_and_Denmark ;
-    :isFatherOf data:Princess_Marina_of_Greece_and_Denmark ;
-    :isParentOf data:Princess_Marina_of_Greece_and_Denmark ;
-    :isSiblingOf data:Princess_Maria_of_Greece_and_Denmark .
-
-data:Edward_VIII a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Edward_VIII a :Person ;
     rdfs:label "Edward VIII" ;
     data:posIndicesFull "0:13",
         "258:269" ;
@@ -142,35 +15,35 @@ data:Edward_VIII a :Man,
         "1653:1659",
         "1859:1865",
         "1960:1966",
-        "2397:2403",
-        "2599:2605",
-        "2695:2701",
-        "2761:2767",
-        "2918:2924",
-        "2932:2938",
+        "2225:2231",
+        "2427:2433",
+        "2523:2529",
+        "2589:2595",
+        "2746:2752",
+        "2760:2766",
+        "3171:3177",
         "319:325",
-        "3343:3349",
-        "3643:3649",
-        "3879:3885",
-        "3900:3906",
-        "4043:4049",
-        "4123:4129",
-        "4228:4234",
-        "4630:4636",
-        "4770:4776",
-        "5447:5453",
+        "3471:3477",
+        "3707:3713",
+        "3728:3734",
+        "3871:3877",
+        "3951:3957",
+        "4056:4062",
+        "4458:4464",
+        "4598:4604",
+        "5275:5281",
+        "5373:5379",
+        "5465:5471",
         "546:552",
-        "5545:5551",
-        "5637:5643",
-        "5797:5803",
-        "5946:5952",
-        "6059:6065",
+        "5625:5631",
+        "5774:5780",
+        "5887:5893",
         "614:620",
-        "6553:6559",
+        "6381:6387",
+        "6710:6716",
         "675:681",
-        "6882:6888",
-        "7122:7128",
-        "7179:7185",
+        "6950:6956",
+        "7007:7013",
         "788:794",
         "886:892" ;
     data:wdtLink wdt:Q590227 ;
@@ -187,165 +60,14 @@ data:Edward_VIII a :Man,
         "King Edward VIII",
         "Prince Edward",
         "Prince Edward, Duke of Windsor" ;
-    :hasBrother data:George_VI,
-        data:Prince_George-_Duke_of_Kent ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:male ;
-    :isBrotherOf data:George_VI,
-        data:Prince_George-_Duke_of_Kent ;
-    :isChildOf data:George_V ;
-    :isSiblingOf data:George_VI,
-        data:Prince_George-_Duke_of_Kent ;
-    :isSonOf data:George_V ;
-    :isUncleOf data:Elizabeth_II,
-        data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Michael_of_Kent .
+    :hasSex data:male .
 
-data:George_V a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George V" ;
-    data:posIndicesFull "1086:1099",
-        "1091:1099",
-        "1275:1288",
-        "1280:1288",
-        "238:246" ;
-    data:posIndicesPart "7251:7257" ;
-    data:wdtLink wdt:Q269412 ;
-    :alsoKnownAs "George Frederick Ernest Albert",
-        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
-        "George Frederick Ernest Albert Windsor",
-        "George Saxe-Coburg-Gotha",
-        "George V (King of Great Britain)",
-        "George V of the United Kingdom",
-        "George Windsor",
-        "King George V" ;
-    :hasChild data:Edward_VIII,
-        data:George_VI,
-        data:Prince_George-_Duke_of_Kent ;
-    :hasSex data:male ;
-    :hasSon data:Edward_VIII,
-        data:George_VI,
-        data:Prince_George-_Duke_of_Kent ;
-    :isFatherOf data:Edward_VIII,
-        data:George_VI,
-        data:Prince_George-_Duke_of_Kent ;
-    :isParentOf data:Edward_VIII,
-        data:George_VI,
-        data:Prince_George-_Duke_of_Kent .
-
-data:Prince_Edward-_Duke_of_Kent a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Edward, Duke of Kent" ;
-    data:posIndicesFull "0:13",
-        "0:27",
-        "1001:1013",
-        "15:27",
-        "161:173",
-        "1876:1892",
-        "1880:1892",
-        "2024:2036",
-        "3007:3017",
-        "643:655" ;
-    data:posIndicesPart "1349:1355",
-        "1390:1394",
-        "1435:1441",
-        "1504:1510",
-        "1653:1659",
-        "2397:2403",
-        "2599:2605",
-        "2695:2701",
-        "2761:2767",
-        "2918:2924",
-        "2932:2938",
-        "319:325",
-        "3343:3349",
-        "362:368",
-        "3643:3649",
-        "3879:3885",
-        "3900:3906",
-        "4043:4049",
-        "4123:4129",
-        "4228:4234",
-        "4479:4485",
-        "4630:4636",
-        "4770:4776",
-        "4944:4950",
-        "5356:5360",
-        "5447:5453",
-        "546:552",
-        "5545:5551",
-        "5637:5643",
-        "5797:5803",
-        "5912:5916",
-        "5946:5952",
-        "6059:6065",
-        "6553:6559",
-        "675:681",
-        "6882:6888",
-        "7122:7128",
-        "7179:7185",
-        "788:794",
-        "886:892" ;
-    data:wdtLink wdt:Q158258 ;
-    :alsoKnownAs "Duke of Kent",
-        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
-        "Edward Kent",
-        "His Royal Highness The Duke of Kent",
-        "Prince Edward",
-        "Prince Edward of Kent",
-        "The Duke of Kent" ;
-    :hasBrother data:Prince_Michael_of_Kent ;
-    :hasFather data:Prince_George-_Duke_of_Kent ;
-    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasParent data:Prince_George-_Duke_of_Kent,
-        data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Michael_of_Kent ;
-    :isChildOf data:Prince_George-_Duke_of_Kent,
-        data:Princess_Marina_of_Greece_and_Denmark ;
-    :isSiblingOf data:Prince_Michael_of_Kent ;
-    :isSonOf data:Prince_George-_Duke_of_Kent,
-        data:Princess_Marina_of_Greece_and_Denmark .
-
-data:Prince_Michael_of_Kent a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Michael of Kent" ;
-    data:posIndicesFull "1753:1775" ;
-    data:posIndicesPart "4479:4485",
-        "4944:4950",
-        "5356:5360",
-        "7236:7243" ;
-    data:wdtLink wdt:Q313752 ;
-    :alsoKnownAs "Michael George Charles Franklin",
-        "Prince Michael George Charles Franklin of Kent" ;
-    :hasBrother data:Prince_Edward-_Duke_of_Kent ;
-    :hasFather data:Prince_George-_Duke_of_Kent ;
-    :hasMother data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasParent data:Prince_George-_Duke_of_Kent,
-        data:Princess_Marina_of_Greece_and_Denmark ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Edward-_Duke_of_Kent ;
-    :isChildOf data:Prince_George-_Duke_of_Kent,
-        data:Princess_Marina_of_Greece_and_Denmark ;
-    :isSiblingOf data:Prince_Edward-_Duke_of_Kent ;
-    :isSonOf data:Prince_George-_Duke_of_Kent,
-        data:Princess_Marina_of_Greece_and_Denmark .
-
-data:George_VI a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:George_VI a :Person ;
     rdfs:label "George VI" ;
     data:posIndicesFull "2150:2159",
         "274:283" ;
-    data:posIndicesPart "7251:7257" ;
+    data:posIndicesPart "7079:7085" ;
     data:wdtLink wdt:Q280856 ;
     :alsoKnownAs "Albert Frederick Arthur George",
         "Albert Frederick Arthur George Windsor",
@@ -367,60 +89,135 @@ data:George_VI a :Ancestor,
         "The Prince Albert Frederick Arthur George, Duke of York",
         "The Prince Albert of the United Kingdom",
         "The Prince Albert, Duke of York" ;
-    :hasBrother data:Edward_VIII,
-        data:Prince_George-_Duke_of_Kent ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:male ;
-    :isBrotherOf data:Edward_VIII,
-        data:Prince_George-_Duke_of_Kent ;
-    :isChildOf data:George_V ;
-    :isFatherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II ;
-    :isSiblingOf data:Edward_VIII,
-        data:Prince_George-_Duke_of_Kent ;
-    :isSonOf data:George_V ;
-    :isUncleOf data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Michael_of_Kent .
+    :hasSex data:male .
 
-data:Princess_Marina_of_Greece_and_Denmark a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Marina of Greece and Denmark" ;
-    data:posIndicesFull "179:216" ;
-    data:posIndicesPart "1019:1027",
-        "1028:1034",
-        "1370:1378",
-        "3078:3084" ;
-    data:wdtLink wdt:Q170184 ;
-    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent",
-        "Princess Marina of Greece and Denmark, The Duchess of Kent",
-        "Princess Marina, The Duchess Of Kent" ;
-    :hasChild data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Michael_of_Kent ;
-    :hasFather data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :hasMother data:Grand_Duchess_Elena_Vladimirovna_of_Russia ;
-    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
-        data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Michael_of_Kent ;
-    :isChildOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
-        data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :isDaughterOf data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
-        data:Prince_Nicholas_of_Greece_and_Denmark ;
-    :isMotherOf data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Michael_of_Kent ;
-    :isParentOf data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Michael_of_Kent .
+data:Katharine-_Duchess_of_Kent a :Person ;
+    rdfs:label "Katharine, Duchess of Kent" ;
+    data:posIndicesFull "2846:2863",
+        "518:544" ;
+    data:posIndicesPart "1036:1043",
+        "1047:1051",
+        "1485:1492",
+        "3034:3043",
+        "3364:3373",
+        "3796:3805",
+        "5184:5188" ;
+    data:wdtLink wdt:Q236678 ;
+    :alsoKnownAs "Katharine Kent",
+        "Katharine Lucy Mary Worsley",
+        "Katharine Lucy Mary, Duchess of Kent",
+        "Katharine Worsley" ;
+    :hasSex data:female .
 
-data:Prince_George-_Duke_of_Kent a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Edward-_Duke_of_Kent a :Person ;
+    rdfs:label "Prince Edward, Duke of Kent" ;
+    data:posIndicesFull "0:13",
+        "0:27",
+        "1001:1013",
+        "15:27",
+        "161:173",
+        "1876:1892",
+        "1880:1892",
+        "2024:2036",
+        "2835:2845",
+        "643:655" ;
+    data:posIndicesPart "1349:1355",
+        "1390:1394",
+        "1435:1441",
+        "1504:1510",
+        "1653:1659",
+        "2225:2231",
+        "2427:2433",
+        "2523:2529",
+        "2589:2595",
+        "2746:2752",
+        "2760:2766",
+        "3171:3177",
+        "319:325",
+        "3471:3477",
+        "362:368",
+        "3707:3713",
+        "3728:3734",
+        "3871:3877",
+        "3951:3957",
+        "4056:4062",
+        "4307:4313",
+        "4458:4464",
+        "4598:4604",
+        "4772:4778",
+        "5184:5188",
+        "5275:5281",
+        "5373:5379",
+        "5465:5471",
+        "546:552",
+        "5625:5631",
+        "5740:5744",
+        "5774:5780",
+        "5887:5893",
+        "6381:6387",
+        "6710:6716",
+        "675:681",
+        "6950:6956",
+        "7007:7013",
+        "788:794",
+        "886:892" ;
+    data:wdtLink wdt:Q158258 ;
+    :alsoKnownAs "Duke of Kent",
+        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
+        "Edward Kent",
+        "His Royal Highness The Duke of Kent",
+        "Prince Edward",
+        "Prince Edward of Kent",
+        "The Duke of Kent" ;
+    :hasParent data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:Prince_Michael_of_Kent a :Person ;
+    rdfs:label "Prince Michael of Kent" ;
+    data:posIndicesFull "1753:1775" ;
+    data:posIndicesPart "4307:4313",
+        "4772:4778",
+        "5184:5188",
+        "7064:7071" ;
+    data:wdtLink wdt:Q313752 ;
+    :alsoKnownAs "Michael George Charles Franklin",
+        "Prince Michael George Charles Franklin of Kent" ;
+    :hasParent data:Prince_George-_Duke_of_Kent,
+        data:Princess_Marina_of_Greece_and_Denmark ;
+    :hasSex data:male .
+
+data:posIndicesFull a owl:AnnotationProperty .
+
+data:posIndicesPart a owl:AnnotationProperty .
+
+data:wdtLink a owl:AnnotationProperty .
+
+data:Grand_Duchess_Elena_Vladimirovna_of_Russia a :Person ;
+    rdfs:label "Grand Duchess Elena Vladimirovna of Russia" ;
+    data:posIndicesFull "1193:1235" ;
+    data:posIndicesPart "1485:1492",
+        "6045:6050",
+        "6082:6087",
+        "6166:6171",
+        "6285:6290",
+        "6559:6564",
+        "6755:6760" ;
+    data:wdtLink wdt:Q232483 ;
+    :hasSex data:female .
+
+data:Prince_Nicholas_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Prince Nicholas of Greece and Denmark" ;
+    data:posIndicesFull "1151:1188",
+        "1306:1343" ;
+    data:posIndicesPart "4307:4313",
+        "4772:4778" ;
+    data:wdtLink wdt:Q170160 ;
+    :alsoKnownAs "Prince Nikolaos of Greece and Denmark" ;
+    :hasSex data:male .
+
+data:Prince_George-_Duke_of_Kent a :Person ;
     rdfs:label "Prince George, Duke of Kent" ;
     data:posIndicesFull "146:173",
         "153:173",
@@ -430,11 +227,11 @@ data:Prince_George-_Duke_of_Kent a :Ancestor,
         "1390:1394",
         "1435:1441",
         "362:368",
-        "4479:4485",
-        "4944:4950",
-        "5356:5360",
-        "5912:5916",
-        "7251:7257" ;
+        "4307:4313",
+        "4772:4778",
+        "5184:5188",
+        "5740:5744",
+        "7079:7085" ;
     data:wdtLink wdt:Q160770 ;
     :alsoKnownAs "George Edward Alexander Edmund of Wales",
         "George Edward Alexander Edmund, Duke of Kent",
@@ -448,24 +245,44 @@ data:Prince_George-_Duke_of_Kent a :Ancestor,
         "The Prince George Edward Alexander Edmund, Duke of Kent",
         "The Prince George of the United Kingdom",
         "The Prince George, Duke of Kent" ;
-    :hasBrother data:Edward_VIII,
-        data:George_VI ;
-    :hasChild data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Michael_of_Kent ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:male ;
-    :hasSon data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Michael_of_Kent ;
-    :isBrotherOf data:Edward_VIII,
-        data:George_VI ;
-    :isChildOf data:George_V ;
-    :isFatherOf data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Michael_of_Kent ;
-    :isParentOf data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Michael_of_Kent ;
-    :isSiblingOf data:Edward_VIII,
-        data:George_VI ;
-    :isSonOf data:George_V ;
-    :isUncleOf data:Elizabeth_II .
+    :hasSex data:male .
+
+data:Princess_Marina_of_Greece_and_Denmark a :Person ;
+    rdfs:label "Princess Marina of Greece and Denmark" ;
+    data:posIndicesFull "179:216" ;
+    data:posIndicesPart "1019:1027",
+        "1028:1034",
+        "1370:1378",
+        "2906:2912" ;
+    data:wdtLink wdt:Q170184 ;
+    :alsoKnownAs "Princess Marina of Greece and Denmark, Duchess of Kent",
+        "Princess Marina of Greece and Denmark, The Duchess of Kent",
+        "Princess Marina, The Duchess Of Kent" ;
+    :hasParent data:Grand_Duchess_Elena_Vladimirovna_of_Russia,
+        data:Prince_Nicholas_of_Greece_and_Denmark ;
+    :hasSex data:female .
+
+data:George_V a :Person ;
+    rdfs:label "George V" ;
+    data:posIndicesFull "1086:1099",
+        "1091:1099",
+        "1275:1288",
+        "1280:1288",
+        "238:246" ;
+    data:posIndicesPart "7079:7085" ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert",
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
+        "George Frederick Ernest Albert Windsor",
+        "George Saxe-Coburg-Gotha",
+        "George V (King of Great Britain)",
+        "George V of the United Kingdom",
+        "George Windsor",
+        "King George V" ;
+    :hasSex data:male .
+
+data:female a :Female .
+
+data:male a :Male .
 

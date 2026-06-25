@@ -1,0 +1,120 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:Jean-Christophe_Prince_Napoleon a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Jean-Christophe_Prince_Napoleon ;
+    :hasChild data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :hasRelation data:Jean-Christophe_Prince_Napoleon,
+        data:Louis_Charles_Riprand_Victor_Jerome_Marie,
+        data:Maria_Beatrice_of_Austria-Este,
+        data:Olympia_Bonaparte,
+        data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :hasSon data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :isAncestorOf data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :isBloodrelationOf data:Jean-Christophe_Prince_Napoleon ;
+    :isBrotherOf data:Jean-Christophe_Prince_Napoleon ;
+    :isFatherOf data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :isParentOf data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :isSiblingOf data:Jean-Christophe_Prince_Napoleon ;
+    :isUncleOf data:Louis_Charles_Riprand_Victor_Jerome_Marie .
+
+data:Maria_Beatrice_of_Austria-Este a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Olympia_Bonaparte ;
+    :hasDaughter data:Olympia_Bonaparte ;
+    :hasRelation data:Jean-Christophe_Prince_Napoleon,
+        data:Louis_Charles_Riprand_Victor_Jerome_Marie,
+        data:Maria_Beatrice_of_Austria-Este,
+        data:Olympia_Bonaparte,
+        data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :hasSister data:Maria_Beatrice_of_Austria-Este ;
+    :isAncestorOf data:Louis_Charles_Riprand_Victor_Jerome_Marie,
+        data:Olympia_Bonaparte ;
+    :isAuntOf data:Olympia_Bonaparte ;
+    :isBloodrelationOf data:Maria_Beatrice_of_Austria-Este ;
+    :isMotherOf data:Olympia_Bonaparte ;
+    :isParentOf data:Olympia_Bonaparte ;
+    :isSiblingOf data:Maria_Beatrice_of_Austria-Este ;
+    :isSisterOf data:Maria_Beatrice_of_Austria-Este .
+
+data:Riprand_von_und_zu_Arco-Zinneberg a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBirthYear 1955 ;
+    :hasBrother data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :hasChild data:Olympia_Bonaparte ;
+    :hasDaughter data:Olympia_Bonaparte ;
+    :hasDeathYear 2021 ;
+    :hasRelation data:Jean-Christophe_Prince_Napoleon,
+        data:Louis_Charles_Riprand_Victor_Jerome_Marie,
+        data:Maria_Beatrice_of_Austria-Este,
+        data:Olympia_Bonaparte,
+        data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :isAncestorOf data:Louis_Charles_Riprand_Victor_Jerome_Marie,
+        data:Olympia_Bonaparte ;
+    :isBloodrelationOf data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :isBrotherOf data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :isFatherOf data:Olympia_Bonaparte ;
+    :isParentOf data:Olympia_Bonaparte ;
+    :isSiblingOf data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :isUncleOf data:Olympia_Bonaparte .
+
+data:Louis_Charles_Riprand_Victor_Jerome_Marie a :Man,
+        :Person ;
+    :hasAncestor data:Jean-Christophe_Prince_Napoleon,
+        data:Maria_Beatrice_of_Austria-Este,
+        data:Olympia_Bonaparte,
+        data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :hasBrother data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :hasFather data:Jean-Christophe_Prince_Napoleon ;
+    :hasMother data:Olympia_Bonaparte ;
+    :hasParent data:Jean-Christophe_Prince_Napoleon,
+        data:Olympia_Bonaparte ;
+    :hasRelation data:Jean-Christophe_Prince_Napoleon,
+        data:Louis_Charles_Riprand_Victor_Jerome_Marie,
+        data:Maria_Beatrice_of_Austria-Este,
+        data:Olympia_Bonaparte,
+        data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :isBloodrelationOf data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :isBrotherOf data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :isChildOf data:Jean-Christophe_Prince_Napoleon,
+        data:Olympia_Bonaparte ;
+    :isSiblingOf data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :isSonOf data:Jean-Christophe_Prince_Napoleon,
+        data:Olympia_Bonaparte .
+
+data:Olympia_Bonaparte a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasAncestor data:Maria_Beatrice_of_Austria-Este,
+        data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :hasBirthYear 1988 ;
+    :hasChild data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :hasFather data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :hasMarriageYear 2019 ;
+    :hasMother data:Maria_Beatrice_of_Austria-Este ;
+    :hasParent data:Maria_Beatrice_of_Austria-Este,
+        data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :hasRelation data:Jean-Christophe_Prince_Napoleon,
+        data:Louis_Charles_Riprand_Victor_Jerome_Marie,
+        data:Maria_Beatrice_of_Austria-Este,
+        data:Olympia_Bonaparte,
+        data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :hasSister data:Olympia_Bonaparte ;
+    :hasSon data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :isAncestorOf data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :isAuntOf data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :isBloodrelationOf data:Olympia_Bonaparte ;
+    :isChildOf data:Maria_Beatrice_of_Austria-Este,
+        data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :isDaughterOf data:Maria_Beatrice_of_Austria-Este,
+        data:Riprand_von_und_zu_Arco-Zinneberg ;
+    :isMotherOf data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :isParentOf data:Louis_Charles_Riprand_Victor_Jerome_Marie ;
+    :isSiblingOf data:Olympia_Bonaparte ;
+    :isSisterOf data:Olympia_Bonaparte .
+

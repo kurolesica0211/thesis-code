@@ -85,23 +85,26 @@ Before executing any `AddTriple` call, you must mentally or explicitly perform t
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-Berthold Prinz und Markgraf von Baden (24 February 1906 – 27 October 1963), styled Margrave of Baden and Duke of Zähringen, was the head of the House of Baden, which had reigned over the Grand Duchy of Baden until 1918, from 1929 until his death.
-He was the brother-in-law of Prince Philip, Duke of Edinburgh, through his marriage to Philip's sister, Princess Theodora of Greece and Denmark.
-Marriage and children
+John Alexander Elphinstone, 17th Lord Elphinstone and 3rd Baron Elphinstone (22 March 1914 – 15 November 1975) was a British nobleman and serviceman during World War II.
+He was a first cousin of Queen Elizabeth II.
+He was a son of Sidney Elphinstone, 16th Lord Elphinstone, and Lady Mary Bowes-Lyon.
+Andrew Charles Victor Elphinstone (the aide-de-camp to the Viceroy of India from 1941 to 1943) and the Hon.
+Margaret Elphinstone, wife of writer Denys Rhodes.
+His paternal grandparents were William Elphinstone, 15th Lord Elphinstone (the 1st Baron Elphinstone) and the former Lady Constance Euphemia Woronzow Murray (second daughter of Alexander Murray, 6th Earl of Dunmore).
+He was a nephew of Queen Elizabeth
+The Queen Mother and a first cousin of Queen Elizabeth II and Princess Margaret, Countess of Snowdon.
+Lord Elphinstone served as president of the Scottish Association of Boys' Clubs, chairman of council of the Scottish branch of British Red Cross Society, and president of the Royal Zoological Society of Scotland.
+Personal life
 
-The only son and younger child of Prince Maximilian, Margrave of Baden and Princess Marie Louise of Hanover, Berthold married his second cousin Princess Theodora of Greece and Denmark, daughter of Prince Andrew of Greece and Denmark and Princess Alice of Battenberg, on 17 August 1931 in Baden-Baden.
-Via his marriage, he was the brother-in-law of Prince Philip of Greece and Denmark, later Prince Philip, Duke of Edinburgh from November 1947.
-His bride was also his second cousin, through Christian IX of Denmark.
-Death
-
-Berthold died on 27 October 1963, aged 57, in Spaichingen.
-He was succeeded as titular margrave and head of house by his son Max.
+In 1970, during Manitoba's centennial, he was invited by the community of Elphinstone and gave a silver map case, which is today located at the Elphinstone post office, all named in his family's honor.
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -117,39 +120,9 @@ He was succeeded as titular margrave and head of house by his son Max.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -164,6 +137,23 @@ He was succeeded as titular margrave and head of house by his son Max.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -181,6 +171,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -248,29 +253,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -279,6 +276,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -291,6 +296,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -299,17 +306,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -337,6 +346,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -352,166 +445,152 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (58fcf5b9-5f31-40b1-a5f5-5daae7d6c0e1)
- Call ID: 58fcf5b9-5f31-40b1-a5f5-5daae7d6c0e1
+  AssignClass (e9f8d609-9dcf-40d4-8010-6bbe10fc3adb)
+ Call ID: e9f8d609-9dcf-40d4-8010-6bbe10fc3adb
   Args:
+    source: John Alexander Elphinstone
     type: :Man
-    source: Berthold_Prinz_und_Markgraf_von_Baden
-  AssignClass (47c75f8f-4ab2-4ee0-a051-57eea8bbffec)
- Call ID: 47c75f8f-4ab2-4ee0-a051-57eea8bbffec
+  AddLiteral (5e2c7ba6-ca70-4203-b514-747cb0e4cecf)
+ Call ID: 5e2c7ba6-ca70-4203-b514-747cb0e4cecf
   Args:
-    type: :Person
-    source: Berthold_Prinz_und_Markgraf_von_Baden
-  AddLiteral (03c12196-a27b-433a-8c48-7635997c98f5)
- Call ID: 03c12196-a27b-433a-8c48-7635997c98f5
-  Args:
-    literal_value: 1906
     relation: :hasBirthYear
-    source: Berthold_Prinz_und_Markgraf_von_Baden
+    source: John Alexander Elphinstone
     literal_type: xsd:integer
-  AddLiteral (0c873ac9-83ad-4fe1-ace6-8a952c4f8f09)
- Call ID: 0c873ac9-83ad-4fe1-ace6-8a952c4f8f09
+    literal_value: 1914
+  AddLiteral (6adeac50-4528-4fd8-8901-6224b0c67566)
+ Call ID: 6adeac50-4528-4fd8-8901-6224b0c67566
   Args:
-    literal_type: xsd:integer
-    source: Berthold_Prinz_und_Markgraf_von_Baden
     relation: :hasDeathYear
-    literal_value: 1963
-  AddTriple (758d7d11-e277-4b86-a90c-6b5f48977150)
- Call ID: 758d7d11-e277-4b86-a90c-6b5f48977150
-  Args:
-    relation: :hasSex
-    source: Berthold_Prinz_und_Markgraf_von_Baden
-    target: :Male
-  AssignClass (8db6db49-6db5-4599-9cb7-cb8e886cd025)
- Call ID: 8db6db49-6db5-4599-9cb7-cb8e886cd025
-  Args:
-    type: :Man
-    source: Prince_Maximilian_Margrave_of_Baden
-  AssignClass (4da77dc7-737b-43ea-a823-643e9f948e73)
- Call ID: 4da77dc7-737b-43ea-a823-643e9f948e73
-  Args:
-    type: :Person
-    source: Prince_Maximilian_Margrave_of_Baden
-  AssignClass (ffa31092-6e88-4596-941d-46203050a2c4)
- Call ID: ffa31092-6e88-4596-941d-46203050a2c4
-  Args:
-    type: :Woman
-    source: Princess_Marie_Louise_of_Hanover
-  AssignClass (c5e918ac-02d1-4dfa-90c2-2b9051bab8db)
- Call ID: c5e918ac-02d1-4dfa-90c2-2b9051bab8db
-  Args:
-    type: :Person
-    source: Princess_Marie_Louise_of_Hanover
-  AddTriple (238fd7ef-4690-4314-8b9f-6a10d2eca423)
- Call ID: 238fd7ef-4690-4314-8b9f-6a10d2eca423
-  Args:
-    target: Prince_Maximilian_Margrave_of_Baden
-    relation: :hasFather
-    source: Berthold_Prinz_und_Markgraf_von_Baden
-  AddTriple (4724e09a-7435-46aa-8eb8-dc89e2cbf930)
- Call ID: 4724e09a-7435-46aa-8eb8-dc89e2cbf930
-  Args:
-    relation: :hasMother
-    source: Berthold_Prinz_und_Markgraf_von_Baden
-    target: Princess_Marie_Louise_of_Hanover
-  AssignClass (a362395a-5521-4554-acc2-9f431cdb8e65)
- Call ID: a362395a-5521-4554-acc2-9f431cdb8e65
-  Args:
-    type: :Woman
-    source: Princess_Theodora_of_Greece_and_Denmark
-  AssignClass (803d3ca9-7fb6-4357-a8ba-3ae570d559d9)
- Call ID: 803d3ca9-7fb6-4357-a8ba-3ae570d559d9
-  Args:
-    type: :Person
-    source: Princess_Theodora_of_Greece_and_Denmark
-  AddTriple (c5b2ea8d-516a-40b4-a665-50a602821c09)
- Call ID: c5b2ea8d-516a-40b4-a665-50a602821c09
-  Args:
-    source: Berthold_Prinz_und_Markgraf_von_Baden
-    relation: :hasRelation
-    target: Princess_Theodora_of_Greece_and_Denmark
-  AddLiteral (e2e53ee6-cd19-4b1d-a2df-8425fc82e138)
- Call ID: e2e53ee6-cd19-4b1d-a2df-8425fc82e138
-  Args:
     literal_type: xsd:integer
-    source: Berthold_Prinz_und_Markgraf_von_Baden
-    relation: :hasMarriageYear
-    literal_value: 1931
-  AssignClass (c9efef17-8bcc-4323-afb3-40ceca03904e)
- Call ID: c9efef17-8bcc-4323-afb3-40ceca03904e
+    source: John Alexander Elphinstone
+    literal_value: 1975
+  AssignClass (a3a70163-bc15-499f-8a11-6a4cadbbb484)
+ Call ID: a3a70163-bc15-499f-8a11-6a4cadbbb484
+  Args:
+    source: Sidney Elphinstone
+    type: :Man
+  AssignClass (ee6109bf-81e2-43e3-bff3-c244001e8a6f)
+ Call ID: ee6109bf-81e2-43e3-bff3-c244001e8a6f
+  Args:
+    source: Lady Mary Bowes-Lyon
+    type: :Woman
+  AddTriple (8ba5ce62-16d2-4d19-8ac0-52ecc1e3a97a)
+ Call ID: 8ba5ce62-16d2-4d19-8ac0-52ecc1e3a97a
+  Args:
+    source: John Alexander Elphinstone
+    target: Sidney Elphinstone
+    relation: :hasFather
+  AddTriple (6d3cb080-ab42-4427-a76d-c96512fe6966)
+ Call ID: 6d3cb080-ab42-4427-a76d-c96512fe6966
+  Args:
+    target: Lady Mary Bowes-Lyon
+    source: John Alexander Elphinstone
+    relation: :hasMother
+  AssignClass (2fa45b49-5c16-48a6-b6eb-55ed94c36360)
+ Call ID: 2fa45b49-5c16-48a6-b6eb-55ed94c36360
   Args:
     type: :Man
-    source: Prince_Andrew_of_Greece_and_Denmark
-  AssignClass (63861496-a2d3-4077-aa57-31782970bcb2)
- Call ID: 63861496-a2d3-4077-aa57-31782970bcb2
+    source: Andrew Charles Victor Elphinstone
+  AssignClass (7b5693bf-150e-44ae-aeb2-b46eee28d117)
+ Call ID: 7b5693bf-150e-44ae-aeb2-b46eee28d117
   Args:
-    type: :Person
-    source: Prince_Andrew_of_Greece_and_Denmark
-  AssignClass (e202cd46-54df-4d81-8824-3d330320dfd9)
- Call ID: e202cd46-54df-4d81-8824-3d330320dfd9
+    source: Margaret Elphinstone
+    type: :Woman
+  AddTriple (a994ee86-2459-4528-a0cf-b5e9cad93cda)
+ Call ID: a994ee86-2459-4528-a0cf-b5e9cad93cda
+  Args:
+    target: Andrew Charles Victor Elphinstone
+    source: John Alexander Elphinstone
+    relation: :isSiblingOf
+  AddTriple (0d7f0139-5d7e-4f5e-9375-528a1908a892)
+ Call ID: 0d7f0139-5d7e-4f5e-9375-528a1908a892
+  Args:
+    target: Margaret Elphinstone
+    source: John Alexander Elphinstone
+    relation: :isSiblingOf
+  AssignClass (e1c7f58c-3a38-408a-96d2-9c635a1ac3f9)
+ Call ID: e1c7f58c-3a38-408a-96d2-9c635a1ac3f9
+  Args:
+    source: Denys Rhodes
+    type: :Man
+  AddTriple (74af7f55-d6f9-4060-a066-e88604ff3bdf)
+ Call ID: 74af7f55-d6f9-4060-a066-e88604ff3bdf
+  Args:
+    relation: :hasRelation
+    source: Margaret Elphinstone
+    target: Denys Rhodes
+  AssignClass (e93df5cd-5bbb-42f3-b8a2-eddde8e69d8c)
+ Call ID: e93df5cd-5bbb-42f3-b8a2-eddde8e69d8c
+  Args:
+    type: :Man
+    source: William Elphinstone
+  AssignClass (d0c42c76-ba48-4442-a3d4-b0c89d3ae792)
+ Call ID: d0c42c76-ba48-4442-a3d4-b0c89d3ae792
+  Args:
+    source: Lady Constance Euphemia Woronzow Murray
+    type: :Woman
+  AddTriple (6feb0cfb-184e-43e7-9718-4685d5af44a9)
+ Call ID: 6feb0cfb-184e-43e7-9718-4685d5af44a9
+  Args:
+    source: Sidney Elphinstone
+    target: William Elphinstone
+    relation: :hasFather
+  AddTriple (4b25cfc2-e7af-42cf-a53d-2a53697208fa)
+ Call ID: 4b25cfc2-e7af-42cf-a53d-2a53697208fa
+  Args:
+    relation: :hasMother
+    source: Sidney Elphinstone
+    target: Lady Constance Euphemia Woronzow Murray
+  AssignClass (c67595cd-ca16-44f2-a0ed-54f040d881a4)
+ Call ID: c67595cd-ca16-44f2-a0ed-54f040d881a4
+  Args:
+    type: :Man
+    source: Alexander Murray
+  AddTriple (de2dbb07-7526-41e6-9536-0102b644ebb1)
+ Call ID: de2dbb07-7526-41e6-9536-0102b644ebb1
+  Args:
+    relation: :hasFather
+    source: Lady Constance Euphemia Woronzow Murray
+    target: Alexander Murray
+  AssignClass (8dcaf037-492a-4f45-b36b-9383c789accd)
+ Call ID: 8dcaf037-492a-4f45-b36b-9383c789accd
   Args:
     type: :Woman
-    source: Princess_Alice_of_Battenberg
-  AssignClass (8acab44b-4b71-4e35-bdb8-064e99396ff8)
- Call ID: 8acab44b-4b71-4e35-bdb8-064e99396ff8
+    source: Queen Elizabeth II
+  AssignClass (433be702-5dc9-48d1-bd80-8d8d70d78a99)
+ Call ID: 433be702-5dc9-48d1-bd80-8d8d70d78a99
   Args:
-    type: :Person
-    source: Princess_Alice_of_Battenberg
-  AddTriple (6a204efa-95df-4aac-bc9d-29fac27b40b5)
- Call ID: 6a204efa-95df-4aac-bc9d-29fac27b40b5
+    source: Princess Margaret
+    type: :Woman
+  AssignClass (5a518650-9d4e-4526-956e-8cac1a307baa)
+ Call ID: 5a518650-9d4e-4526-956e-8cac1a307baa
   Args:
-    relation: :hasFather
-    source: Princess_Theodora_of_Greece_and_Denmark
-    target: Prince_Andrew_of_Greece_and_Denmark
-  AddTriple (38643a58-22bb-45ca-9700-3f29979edfcb)
- Call ID: 38643a58-22bb-45ca-9700-3f29979edfcb
+    type: :Woman
+    source: Queen Elizabeth The Queen Mother
+  AddTriple (49afbdcd-dee6-4b98-bce1-7c30344ff1f0)
+ Call ID: 49afbdcd-dee6-4b98-bce1-7c30344ff1f0
   Args:
-    source: Princess_Theodora_of_Greece_and_Denmark
-    relation: :hasMother
-    target: Princess_Alice_of_Battenberg
-  AssignClass (d78c9179-3cd3-4c76-89d4-3cf5a4c10880)
- Call ID: d78c9179-3cd3-4c76-89d4-3cf5a4c10880
+    relation: :isBloodrelationOf
+    target: Queen Elizabeth II
+    source: John Alexander Elphinstone
+  AddTriple (21db3658-2c13-42ad-b8e7-ca0125a5a8db)
+ Call ID: 21db3658-2c13-42ad-b8e7-ca0125a5a8db
   Args:
-    type: :Man
-    source: Prince_Philip_Duke_of_Edinburgh
-  AssignClass (4a6a389a-a1bd-40a4-9c39-59dedfda40a1)
- Call ID: 4a6a389a-a1bd-40a4-9c39-59dedfda40a1
+    source: John Alexander Elphinstone
+    target: Princess Margaret
+    relation: :isBloodrelationOf
+  AddTriple (157ee148-6c18-4f0c-8fca-f78e8fa5e4f4)
+ Call ID: 157ee148-6c18-4f0c-8fca-f78e8fa5e4f4
   Args:
-    type: :Person
-    source: Prince_Philip_Duke_of_Edinburgh
-  AddTriple (356896b2-b6e2-4549-ab60-d9396419c4c0)
- Call ID: 356896b2-b6e2-4549-ab60-d9396419c4c0
+    relation: :hasParent
+    source: John Alexander Elphinstone
+    target: Queen Elizabeth The Queen Mother
+  ValidateShacl (11897f78-a9ac-4fd6-82bb-3bbdeba4e821)
+ Call ID: 11897f78-a9ac-4fd6-82bb-3bbdeba4e821
   Args:
-    target: Princess_Theodora_of_Greece_and_Denmark
-    relation: :hasSister
-    source: Prince_Philip_Duke_of_Edinburgh
-  AssignClass (126cb2cb-72dc-4d0a-ad40-bd71718213fa)
- Call ID: 126cb2cb-72dc-4d0a-ad40-bd71718213fa
+  Finish (2340c440-b1c7-4562-b6c2-b8a688e43c0d)
+ Call ID: 2340c440-b1c7-4562-b6c2-b8a688e43c0d
   Args:
-    type: :Man
-    source: Max_Margrave_of_Baden
-  AssignClass (93060869-97bd-4939-9f9d-0530c2bbf2fd)
- Call ID: 93060869-97bd-4939-9f9d-0530c2bbf2fd
-  Args:
-    type: :Person
-    source: Max_Margrave_of_Baden
-  AddTriple (9e83eff7-e8b4-49da-9b00-f2fbad8344e7)
- Call ID: 9e83eff7-e8b4-49da-9b00-f2fbad8344e7
-  Args:
-    source: Max_Margrave_of_Baden
-    relation: :hasFather
-    target: Berthold_Prinz_und_Markgraf_von_Baden
-  Finish (80f57d7e-7ded-4123-8121-9373a77f7b45)
- Call ID: 80f57d7e-7ded-4123-8121-9373a77f7b45
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -616,40 +695,194 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Max_Margrave_of_Baden a :Man,
-          :Person ;
-      :hasFather data:Berthold_Prinz_und_Markgraf_von_Baden .
+  data:John_Alexander_Elphinstone a :Man ;
+      :hasBirthYear 1914 ;
+      :hasDeathYear 1975 ;
+      :hasFather data:Sidney_Elphinstone ;
+      :hasMother data:Lady_Mary_Bowes-Lyon ;
+      :hasParent data:Queen_Elizabeth_The_Queen_Mother ;
+      :isBloodrelationOf data:Princess_Margaret,
+          data:Queen_Elizabeth_II ;
+      :isSiblingOf data:Andrew_Charles_Victor_Elphinstone,
+          data:Margaret_Elphinstone .
 
-  data:Prince_Philip_Duke_of_Edinburgh a :Man,
-          :Person ;
-      :hasSister data:Princess_Theodora_of_Greece_and_Denmark .
+  data:Alexander_Murray a :Man .
 
-  data:Berthold_Prinz_und_Markgraf_von_Baden a :Man,
-          :Person ;
-      :hasBirthYear 1906 ;
-      :hasDeathYear 1963 ;
-      :hasFather data:Prince_Maximilian_Margrave_of_Baden ;
-      :hasMarriageYear 1931 ;
-      :hasMother data:Princess_Marie_Louise_of_Hanover ;
-      :hasRelation data:Princess_Theodora_of_Greece_and_Denmark ;
-      :hasSex data:Male .
+  data:Andrew_Charles_Victor_Elphinstone a :Man .
 
-  data:Prince_Andrew_of_Greece_and_Denmark a :Man,
-          :Person .
+  data:Denys_Rhodes a :Man .
 
-  data:Prince_Maximilian_Margrave_of_Baden a :Man,
-          :Person .
+  data:Lady_Constance_Euphemia_Woronzow_Murray a :Woman ;
+      :hasFather data:Alexander_Murray .
 
-  data:Princess_Alice_of_Battenberg a :Person,
-          :Woman .
+  data:Lady_Mary_Bowes-Lyon a :Woman .
 
-  data:Princess_Marie_Louise_of_Hanover a :Person,
-          :Woman .
+  data:Margaret_Elphinstone a :Woman ;
+      :hasRelation data:Denys_Rhodes .
 
-  data:Princess_Theodora_of_Greece_and_Denmark a :Person,
-          :Woman ;
-      :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-      :hasMother data:Princess_Alice_of_Battenberg .
+  data:Princess_Margaret a :Woman .
+
+  data:Queen_Elizabeth_II a :Woman .
+
+  data:Queen_Elizabeth_The_Queen_Mother a :Woman .
+
+  data:Sidney_Elphinstone a :Man ;
+      :hasFather data:William_Elphinstone ;
+      :hasMother data:Lady_Constance_Euphemia_Woronzow_Murray .
+
+  data:William_Elphinstone a :Man .
+
+
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:18
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node William_Elphinstone is missing the class :Ancestor, which is required for the hasFather property of Sidney_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_Elphinstone, :Ancestor)
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Sidney_Elphinstone is missing the class :Ancestor, which is required for the hasFather property of John_Alexander_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sidney_Elphinstone, :Ancestor)
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Lady_Constance_Euphemia_Woronzow_Murray is missing the class :Ancestor, which is required for the hasMother property of Sidney_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Lady_Constance_Euphemia_Woronzow_Murray, :Ancestor)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Lady_Mary_Bowes-Lyon is missing the class :Ancestor, which is required for the hasMother property of John_Alexander_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Lady_Mary_Bowes-Lyon, :Ancestor)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node Queen_Elizabeth_The_Queen_Mother is missing the class :Ancestor, which is required for the hasParent property of John_Alexander_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Elizabeth_The_Queen_Mother, :Ancestor)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alexander_Murray is missing the class :Ancestor, which is required for the hasFather property of Lady_Constance_Euphemia_Woronzow_Murray.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alexander_Murray, :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node William_Elphinstone is missing the class :Ancestor, which is required for the hasFather property of Sidney_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_Elphinstone, :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Sidney_Elphinstone is missing the class :Ancestor, which is required for the hasFather property of John_Alexander_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sidney_Elphinstone, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Lady_Constance_Euphemia_Woronzow_Murray is missing the class :Ancestor, which is required for the hasMother property of Sidney_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Lady_Constance_Euphemia_Woronzow_Murray, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Lady_Mary_Bowes-Lyon is missing the class :Ancestor, which is required for the hasMother property of John_Alexander_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Lady_Mary_Bowes-Lyon, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node Queen_Elizabeth_The_Queen_Mother is missing the class :Ancestor, which is required for the hasParent property of John_Alexander_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Elizabeth_The_Queen_Mother, :Ancestor)
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alexander_Murray is missing the class :Ancestor, which is required for the hasFather property of Lady_Constance_Euphemia_Woronzow_Murray.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alexander_Murray, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node William_Elphinstone is missing the class :Ancestor, which is required for the hasFather property of Sidney_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(William_Elphinstone, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Sidney_Elphinstone is missing the class :Ancestor, which is required for the hasFather property of John_Alexander_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Sidney_Elphinstone, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Lady_Constance_Euphemia_Woronzow_Murray is missing the class :Ancestor, which is required for the hasMother property of Sidney_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Lady_Constance_Euphemia_Woronzow_Murray, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The node Lady_Mary_Bowes-Lyon is missing the class :Ancestor, which is required for the hasMother property of John_Alexander_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Lady_Mary_Bowes-Lyon, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Person)
+    LLM-provided explanation of the violation:
+      The node Queen_Elizabeth_The_Queen_Mother is missing the class :Ancestor, which is required for the hasParent property of John_Alexander_Elphinstone.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Queen_Elizabeth_The_Queen_Mother, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The node Alexander_Murray is missing the class :Ancestor, which is required for the hasFather property of Lady_Constance_Euphemia_Woronzow_Murray.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Alexander_Murray, :Ancestor)
+
 
 
 
@@ -661,238 +894,38 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (a49ea6cc-6e46-4772-af6b-abdedb9d0ade)
- Call ID: a49ea6cc-6e46-4772-af6b-abdedb9d0ade
-  Args:
-
-================================= Tool Message =================================
-
-VALIDATION RESULTS
-Total violations:23
-Violations:
-
-  Violation [1]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Berthold_Prinz_und_Markgraf_von_Baden' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [2]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Berthold_Prinz_und_Markgraf_von_Baden' for the property 'hasFather' on 'Max_Margrave_of_Baden' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Berthold_Prinz_und_Markgraf_von_Baden, :Ancestor)
-
-
-  Violation [3]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Maximilian_Margrave_of_Baden' for the property 'hasFather' on 'Berthold_Prinz_und_Markgraf_von_Baden' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Maximilian_Margrave_of_Baden, :Ancestor)
-
-
-  Violation [4]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Marie_Louise_of_Hanover' for the property 'hasMother' on 'Berthold_Prinz_und_Markgraf_von_Baden' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Marie_Louise_of_Hanover, :Ancestor)
-
-
-  Violation [5]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Berthold_Prinz_und_Markgraf_von_Baden' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [6]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Berthold_Prinz_und_Markgraf_von_Baden' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [7]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Berthold_Prinz_und_Markgraf_von_Baden' for the property 'hasFather' on 'Max_Margrave_of_Baden' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Berthold_Prinz_und_Markgraf_von_Baden, :Ancestor)
-
-
-  Violation [8]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Andrew_of_Greece_and_Denmark' for the property 'hasFather' on 'Princess_Theodora_of_Greece_and_Denmark' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Andrew_of_Greece_and_Denmark, :Ancestor)
-
-
-  Violation [9]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Maximilian_Margrave_of_Baden' for the property 'hasFather' on 'Berthold_Prinz_und_Markgraf_von_Baden' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Maximilian_Margrave_of_Baden, :Ancestor)
-
-
-  Violation [10]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Alice_of_Battenberg' for the property 'hasMother' on 'Princess_Theodora_of_Greece_and_Denmark' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Alice_of_Battenberg, :Ancestor)
-
-
-  Violation [11]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Marie_Louise_of_Hanover' for the property 'hasMother' on 'Berthold_Prinz_und_Markgraf_von_Baden' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Marie_Louise_of_Hanover, :Ancestor)
-
-
-  Violation [12]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Berthold_Prinz_und_Markgraf_von_Baden' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [13]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Berthold_Prinz_und_Markgraf_von_Baden' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [14]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Berthold_Prinz_und_Markgraf_von_Baden' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [15]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Berthold_Prinz_und_Markgraf_von_Baden' for the property 'hasFather' on 'Max_Margrave_of_Baden' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Berthold_Prinz_und_Markgraf_von_Baden, :Ancestor)
-
-
-  Violation [16]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Andrew_of_Greece_and_Denmark' for the property 'hasFather' on 'Princess_Theodora_of_Greece_and_Denmark' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Andrew_of_Greece_and_Denmark, :Ancestor)
-
-
-  Violation [17]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Maximilian_Margrave_of_Baden' for the property 'hasFather' on 'Berthold_Prinz_und_Markgraf_von_Baden' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Maximilian_Margrave_of_Baden, :Ancestor)
-
-
-  Violation [18]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Alice_of_Battenberg' for the property 'hasMother' on 'Princess_Theodora_of_Greece_and_Denmark' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Alice_of_Battenberg, :Ancestor)
-
-
-  Violation [19]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Marie_Louise_of_Hanover' for the property 'hasMother' on 'Berthold_Prinz_und_Markgraf_von_Baden' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Marie_Louise_of_Hanover, :Ancestor)
-
-
-  Violation [20]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Berthold_Prinz_und_Markgraf_von_Baden' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [21]:
-    SHACL message: Value does not have class :Sex
-    LLM-provided explanation of the violation:
-      The value 'Male' for the property 'hasSex' on node 'Berthold_Prinz_und_Markgraf_von_Baden' does not have the required class ':Sex'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Male, :Sex)
-
-
-  Violation [22]:
-    SHACL message: Value class is not in classes (:Ancestor, :Man)
-    LLM-provided explanation of the violation:
-      The value 'Prince_Andrew_of_Greece_and_Denmark' for the property 'hasFather' on 'Princess_Theodora_of_Greece_and_Denmark' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Prince_Andrew_of_Greece_and_Denmark, :Ancestor)
-
-
-  Violation [23]:
-    SHACL message: Value class is not in classes (:Ancestor, :Woman)
-    LLM-provided explanation of the violation:
-      The value 'Princess_Alice_of_Battenberg' for the property 'hasMother' on 'Princess_Theodora_of_Greece_and_Denmark' is not assigned to the required class ':Ancestor'.
-    LLM-provided instruction on how to handle the violation:
-      AssignClass(Princess_Alice_of_Battenberg, :Ancestor)
-
-
-
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  AssignClass (212ed4cf-0be6-493d-be5a-9a92a9da69a3)
- Call ID: 212ed4cf-0be6-493d-be5a-9a92a9da69a3
+  AssignClass (1d53b38c-cbba-4ee2-abf2-448a4c76f20d)
+ Call ID: 1d53b38c-cbba-4ee2-abf2-448a4c76f20d
   Args:
     type: :Ancestor
-    source: Berthold_Prinz_und_Markgraf_von_Baden
-  AssignClass (307ffc86-f2a3-4184-a0e6-b3265a2939fd)
- Call ID: 307ffc86-f2a3-4184-a0e6-b3265a2939fd
+    source: William_Elphinstone
+  AssignClass (f8bba918-dc1f-4b43-86ca-07982aa55fee)
+ Call ID: f8bba918-dc1f-4b43-86ca-07982aa55fee
   Args:
     type: :Ancestor
-    source: Prince_Maximilian_Margrave_of_Baden
-  AssignClass (0b3c9d3e-84a8-4e6a-8785-43b117505846)
- Call ID: 0b3c9d3e-84a8-4e6a-8785-43b117505846
+    source: Sidney_Elphinstone
+  AssignClass (db7759eb-2d36-4c19-9ece-e04984940137)
+ Call ID: db7759eb-2d36-4c19-9ece-e04984940137
+  Args:
+    source: Lady_Constance_Euphemia_Woronzow_Murray
+    type: :Ancestor
+  AssignClass (80abeb9f-6ca9-4e81-bc38-f2e3b793fd25)
+ Call ID: 80abeb9f-6ca9-4e81-bc38-f2e3b793fd25
   Args:
     type: :Ancestor
-    source: Princess_Marie_Louise_of_Hanover
-  AssignClass (b8acd2f0-ffbc-4270-8fa9-b6422696052d)
- Call ID: b8acd2f0-ffbc-4270-8fa9-b6422696052d
+    source: Lady_Mary_Bowes-Lyon
+  AssignClass (fbc56c52-3346-45d5-aeee-35330922fb26)
+ Call ID: fbc56c52-3346-45d5-aeee-35330922fb26
   Args:
     type: :Ancestor
-    source: Prince_Andrew_of_Greece_and_Denmark
-  AssignClass (e6c50ad2-1f55-47f6-bf92-edd824b18d54)
- Call ID: e6c50ad2-1f55-47f6-bf92-edd824b18d54
+    source: Queen_Elizabeth_The_Queen_Mother
+  AssignClass (05a43236-7d36-4419-850b-1a48208a2ceb)
+ Call ID: 05a43236-7d36-4419-850b-1a48208a2ceb
   Args:
     type: :Ancestor
-    source: Princess_Alice_of_Battenberg
-  AssignClass (650803d0-7f42-410e-8dc1-bf2add619aa2)
- Call ID: 650803d0-7f42-410e-8dc1-bf2add619aa2
-  Args:
-    type: :Sex
-    source: Male
-  Finish (2f9a0593-b22d-4f1b-a0a6-c6b334c2cb00)
- Call ID: 2f9a0593-b22d-4f1b-a0a6-c6b334c2cb00
+    source: Alexander_Murray
+  ValidateShacl (4d293c58-8946-4ccb-a355-1c35b351c96d)
+ Call ID: 4d293c58-8946-4ccb-a355-1c35b351c96d
   Args:
 
 ================================= Tool Message =================================
@@ -922,61 +955,50 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Max_Margrave_of_Baden a :Man,
-          :Person ;
-      :hasFather data:Berthold_Prinz_und_Markgraf_von_Baden .
+  data:John_Alexander_Elphinstone a :Man ;
+      :hasBirthYear 1914 ;
+      :hasDeathYear 1975 ;
+      :hasFather data:Sidney_Elphinstone ;
+      :hasMother data:Lady_Mary_Bowes-Lyon ;
+      :hasParent data:Queen_Elizabeth_The_Queen_Mother ;
+      :isBloodrelationOf data:Princess_Margaret,
+          data:Queen_Elizabeth_II ;
+      :isSiblingOf data:Andrew_Charles_Victor_Elphinstone,
+          data:Margaret_Elphinstone .
 
-  data:Prince_Philip_Duke_of_Edinburgh a :Man,
-          :Person ;
-      :hasSister data:Princess_Theodora_of_Greece_and_Denmark .
+  data:Alexander_Murray a :Ancestor,
+          :Man .
 
-  data:Berthold_Prinz_und_Markgraf_von_Baden a :Ancestor,
-          :Man,
-          :Person ;
-      :hasBirthYear 1906 ;
-      :hasDeathYear 1963 ;
-      :hasFather data:Prince_Maximilian_Margrave_of_Baden ;
-      :hasMarriageYear 1931 ;
-      :hasMother data:Princess_Marie_Louise_of_Hanover ;
-      :hasRelation data:Princess_Theodora_of_Greece_and_Denmark ;
-      :hasSex data:Male .
+  data:Andrew_Charles_Victor_Elphinstone a :Man .
 
-  data:Male a :Sex .
+  data:Denys_Rhodes a :Man .
 
-  data:Prince_Andrew_of_Greece_and_Denmark a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Prince_Maximilian_Margrave_of_Baden a :Ancestor,
-          :Man,
-          :Person .
-
-  data:Princess_Alice_of_Battenberg a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Marie_Louise_of_Hanover a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Princess_Theodora_of_Greece_and_Denmark a :Person,
+  data:Lady_Constance_Euphemia_Woronzow_Murray a :Ancestor,
           :Woman ;
-      :hasFather data:Prince_Andrew_of_Greece_and_Denmark ;
-      :hasMother data:Princess_Alice_of_Battenberg .
+      :hasFather data:Alexander_Murray .
+
+  data:Lady_Mary_Bowes-Lyon a :Ancestor,
+          :Woman .
+
+  data:Margaret_Elphinstone a :Woman ;
+      :hasRelation data:Denys_Rhodes .
+
+  data:Princess_Margaret a :Woman .
+
+  data:Queen_Elizabeth_II a :Woman .
+
+  data:Queen_Elizabeth_The_Queen_Mother a :Ancestor,
+          :Woman .
+
+  data:Sidney_Elphinstone a :Ancestor,
+          :Man ;
+      :hasFather data:William_Elphinstone ;
+      :hasMother data:Lady_Constance_Euphemia_Woronzow_Murray .
+
+  data:William_Elphinstone a :Ancestor,
+          :Man .
 
 
-
-================================= Tool Message =================================
-
-Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
-
-================================== Ai Message ==================================
-
-[]
-Tool Calls:
-  ValidateShacl (4e4279f9-32fb-4367-a74e-0f63d3999faa)
- Call ID: 4e4279f9-32fb-4367-a74e-0f63d3999faa
-  Args:
 
 ================================= Tool Message =================================
 
@@ -986,6 +1008,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (21dcaa5c-7e27-41eb-bd99-88b1004f9fa2)
- Call ID: 21dcaa5c-7e27-41eb-bd99-88b1004f9fa2
+  Finish (2be08377-0f12-4ccf-84db-ca6cbbacdfa3)
+ Call ID: 2be08377-0f12-4ccf-84db-ca6cbbacdfa3
   Args:

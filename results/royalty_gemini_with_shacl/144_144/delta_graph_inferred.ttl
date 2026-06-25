@@ -1,0 +1,443 @@
+@prefix : <http://example.com/family_TBOX.ttl#> .
+@prefix data: <http://example.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:George_William_of_Hanover a :Man,
+        :Person ;
+    :hasBrother data:George_William_of_Hanover ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margaret_of_Prussia,
+        data:Maximilian_of_Hesse,
+        data:Philip_Duke_of_Edinburgh,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:George_William_of_Hanover ;
+    :isBrotherOf data:George_William_of_Hanover ;
+    :isSiblingOf data:George_William_of_Hanover .
+
+data:Philip_Duke_of_Edinburgh a :Man,
+        :Person ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margaret_of_Prussia,
+        data:Maximilian_of_Hesse,
+        data:Philip_Duke_of_Edinburgh,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isBrotherOf data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark .
+
+data:Alice_of_Battenberg a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Sophie_of_Greece_and_Denmark ;
+    :hasDaughter data:Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margaret_of_Prussia,
+        data:Maximilian_of_Hesse,
+        data:Philip_Duke_of_Edinburgh,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Alice_of_Battenberg ;
+    :isAncestorOf data:Sophie_of_Greece_and_Denmark ;
+    :isAuntOf data:Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Alice_of_Battenberg ;
+    :isMotherOf data:Sophie_of_Greece_and_Denmark ;
+    :isParentOf data:Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Alice_of_Battenberg ;
+    :isSisterOf data:Alice_of_Battenberg .
+
+data:Andrew_of_Greece_and_Denmark a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Andrew_of_Greece_and_Denmark ;
+    :hasChild data:Sophie_of_Greece_and_Denmark ;
+    :hasDaughter data:Sophie_of_Greece_and_Denmark ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margaret_of_Prussia,
+        data:Maximilian_of_Hesse,
+        data:Philip_Duke_of_Edinburgh,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Wolfgang_of_Hesse ;
+    :isAncestorOf data:Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Andrew_of_Greece_and_Denmark ;
+    :isBrotherOf data:Andrew_of_Greece_and_Denmark ;
+    :isFatherOf data:Sophie_of_Greece_and_Denmark ;
+    :isParentOf data:Sophie_of_Greece_and_Denmark ;
+    :isSiblingOf data:Andrew_of_Greece_and_Denmark ;
+    :isUncleOf data:Sophie_of_Greece_and_Denmark .
+
+data:Frederick_Charles_of_Hesse a :Ancestor,
+        :Man,
+        :Person ;
+    :hasBrother data:Frederick_Charles_of_Hesse ;
+    :hasChild data:Christoph_of_Hesse ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margaret_of_Prussia,
+        data:Maximilian_of_Hesse,
+        data:Philip_Duke_of_Edinburgh,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Wolfgang_of_Hesse ;
+    :hasSon data:Christoph_of_Hesse ;
+    :isAncestorOf data:Christoph_of_Hesse ;
+    :isBloodrelationOf data:Frederick_Charles_of_Hesse ;
+    :isBrotherOf data:Frederick_Charles_of_Hesse ;
+    :isFatherOf data:Christoph_of_Hesse ;
+    :isParentOf data:Christoph_of_Hesse ;
+    :isSiblingOf data:Frederick_Charles_of_Hesse ;
+    :isUncleOf data:Christoph_of_Hesse .
+
+data:Margaret_of_Prussia a :Ancestor,
+        :Person,
+        :Woman ;
+    :hasChild data:Christoph_of_Hesse ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margaret_of_Prussia,
+        data:Maximilian_of_Hesse,
+        data:Philip_Duke_of_Edinburgh,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Margaret_of_Prussia ;
+    :hasSon data:Christoph_of_Hesse ;
+    :isAncestorOf data:Christoph_of_Hesse ;
+    :isAuntOf data:Christoph_of_Hesse ;
+    :isBloodrelationOf data:Margaret_of_Prussia ;
+    :isMotherOf data:Christoph_of_Hesse ;
+    :isParentOf data:Christoph_of_Hesse ;
+    :isSiblingOf data:Margaret_of_Prussia ;
+    :isSisterOf data:Margaret_of_Prussia .
+
+data:Sophie_of_Greece_and_Denmark a :Person,
+        :Woman ;
+    :hasAncestor data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark ;
+    :hasBrother data:Philip_Duke_of_Edinburgh ;
+    :hasFather data:Andrew_of_Greece_and_Denmark ;
+    :hasMother data:Alice_of_Battenberg ;
+    :hasParent data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margaret_of_Prussia,
+        data:Maximilian_of_Hesse,
+        data:Philip_Duke_of_Edinburgh,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Wolfgang_of_Hesse ;
+    :hasSister data:Sophie_of_Greece_and_Denmark ;
+    :isBloodrelationOf data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isChildOf data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark ;
+    :isDaughterOf data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark ;
+    :isSiblingOf data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark ;
+    :isSisterOf data:Philip_Duke_of_Edinburgh,
+        data:Sophie_of_Greece_and_Denmark .
+
+data:Friedrich_Wilhelm_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margaret_of_Prussia,
+        data:Maximilian_of_Hesse,
+        data:Philip_Duke_of_Edinburgh,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse .
+
+data:Maximilian_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margaret_of_Prussia,
+        data:Maximilian_of_Hesse,
+        data:Philip_Duke_of_Edinburgh,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse .
+
+data:Philipp_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margaret_of_Prussia,
+        data:Maximilian_of_Hesse,
+        data:Philip_Duke_of_Edinburgh,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse .
+
+data:Richard_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margaret_of_Prussia,
+        data:Maximilian_of_Hesse,
+        data:Philip_Duke_of_Edinburgh,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse .
+
+data:Wolfgang_of_Hesse a :Man,
+        :Person ;
+    :hasBrother data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margaret_of_Prussia,
+        data:Maximilian_of_Hesse,
+        data:Philip_Duke_of_Edinburgh,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSiblingOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse .
+
+data:Christoph_of_Hesse a :Man,
+        :Person ;
+    :hasAncestor data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :hasBirthYear 1901 ;
+    :hasBrother data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :hasDeathYear 1943 ;
+    :hasFather data:Frederick_Charles_of_Hesse ;
+    :hasMarriageYear 1930 ;
+    :hasMother data:Margaret_of_Prussia ;
+    :hasParent data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :hasRelation data:Alice_of_Battenberg,
+        data:Andrew_of_Greece_and_Denmark,
+        data:Christoph_of_Hesse,
+        data:Frederick_Charles_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:George_William_of_Hanover,
+        data:Margaret_of_Prussia,
+        data:Maximilian_of_Hesse,
+        data:Philip_Duke_of_Edinburgh,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Sophie_of_Greece_and_Denmark,
+        data:Wolfgang_of_Hesse ;
+    :isBloodrelationOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isBrotherOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isChildOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia ;
+    :isSiblingOf data:Christoph_of_Hesse,
+        data:Friedrich_Wilhelm_of_Hesse,
+        data:Maximilian_of_Hesse,
+        data:Philipp_of_Hesse,
+        data:Richard_of_Hesse,
+        data:Wolfgang_of_Hesse ;
+    :isSonOf data:Frederick_Charles_of_Hesse,
+        data:Margaret_of_Prussia .
+

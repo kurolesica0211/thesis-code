@@ -69,31 +69,24 @@ Many errors occur because the LLM confuses a relation with its inverse. You must
 Please update the Knowledge Graph based on the provided data.
 
 ### Input Text:
-James Alexander Elphinstone, 18th Lord Elphinstone and 4th Baron Elphinstone, AssocRICS (22 April 1953 – 19 December 1994), was a British nobleman, farmer, and financier.
-Early life and family
+David Chavchavadze (May 20, 1924 – October 5, 2014) was a British-born American author and a former Central Intelligence Agency (CIA) officer of Georgian-Russian origin.
+Life and death
 
-Lord Elphinstone was the son of Rev. Hon.
-Andrew Charles Victor Elphinstone and Jean Frances Hambro.
-His paternal grandparents were Sidney Buller-Fullerton-Elphinstone, 16th Lord Elphinstone, and the former Lady Mary Bowes-Lyon, elder sister of Queen Elizabeth The Queen Mother.
-Personal life
-
-On 22 April 1978, Lord Elphinstone married Willa Mary Gabrielle Chetwode, daughter of Major George David Chetwode and Lady Willa Elliot-Murray-Kynynmound (herself the daughter of Victor Elliot-Murray-Kynynmound, 5th Earl of Minto, and his wife, Marion Cook).
-The couple had four children:
-
-
-He was succeeded in his titles by his eldest son, Alexander.
-References
-
-
-
-
-This biography of a Lord of Parliament in the Peerage of Scotland is a stub.
+Chavchavadze was born in London to Prince Paul Chavchavadze (1899–1971) and Princess Nina Georgievna of Russia (Romanov) (1901–1974), a descendant of a prominent Georgian noble family and the Imperial Russian dynasty.
+His father, Prince Paul, was a fiction writer and translator of writings from Georgian into English, and an émigré in the United Kingdom, and then the United States.
+Chavchavadze entered the United States Army in 1943 and served during World War II as liaison for the U.S. Army Air Force Lend-Lease supply operations to the Soviet Union.
+After his retirement, Chavchavadze specialized in tracing the nobility of Imperial Russia and authored The Grand Dukes (1989).
+Via his mother, Chavchavadze is great-great-grandson (through Grand Duke Mikhail Nicholaevich) and simultaneously great-great-great-grandson (through Queen of Greece, Olga Constantinovna) of Nicholas I.
+David Chavchavadze died in his sleep on October 5, 2014, aged 90, after a long illness.
+They have one step-son, Paul George Olkhovsky (August 11, 1960).
 
 
 
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -109,39 +102,9 @@ This biography of a Lord of Parliament in the Peerage of Scotland is a stub.
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -156,6 +119,23 @@ This biography of a Lord of Parliament in the Peerage of Scotland is a stub.
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -173,6 +153,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -240,29 +235,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -271,6 +258,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -283,6 +278,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -291,17 +288,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -329,6 +328,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -344,197 +427,106 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (d30f470d-8a66-4633-92e4-923b4a88d50f)
- Call ID: d30f470d-8a66-4633-92e4-923b4a88d50f
+  AssignClass (9880191f-bb93-4bd5-a611-d2c17642956e)
+ Call ID: 9880191f-bb93-4bd5-a611-d2c17642956e
   Args:
-    type: :Man
-    source: James_Alexander_Elphinstone
-  AssignClass (7764a37e-3e05-4abe-907a-67ff8006bf25)
- Call ID: 7764a37e-3e05-4abe-907a-67ff8006bf25
-  Args:
-    source: James_Alexander_Elphinstone
+    source: David_Chavchavadze
     type: :Person
-  AddLiteral (58cb75fa-8420-4ba8-81a4-5beb8aaa5210)
- Call ID: 58cb75fa-8420-4ba8-81a4-5beb8aaa5210
+  AssignClass (177f7e05-6fe7-47b3-8d25-31278d2182f5)
+ Call ID: 177f7e05-6fe7-47b3-8d25-31278d2182f5
   Args:
-    literal_value: 1953
+    source: David_Chavchavadze
+    type: :Man
+  AddLiteral (b9ae4d0f-3a26-445a-8c90-ce292c924c24)
+ Call ID: b9ae4d0f-3a26-445a-8c90-ce292c924c24
+  Args:
     relation: :hasBirthYear
     literal_type: xsd:integer
-    source: James_Alexander_Elphinstone
-  AddLiteral (2c83d900-c37e-4518-95d9-ceb7ab65e2b9)
- Call ID: 2c83d900-c37e-4518-95d9-ceb7ab65e2b9
+    literal_value: 1924
+    source: David_Chavchavadze
+  AddLiteral (ee2e9f5e-bff6-4e79-b8ce-f4d822553ef1)
+ Call ID: ee2e9f5e-bff6-4e79-b8ce-f4d822553ef1
   Args:
-    source: James_Alexander_Elphinstone
+    literal_value: 2014
+    source: David_Chavchavadze
     relation: :hasDeathYear
-    literal_value: 1994
     literal_type: xsd:integer
-  AssignClass (7795fcbe-3fc8-4725-bab8-51293561c475)
- Call ID: 7795fcbe-3fc8-4725-bab8-51293561c475
+  AssignClass (5cb1ae33-dc11-425f-8873-2ff1218db15a)
+ Call ID: 5cb1ae33-dc11-425f-8873-2ff1218db15a
   Args:
+    source: Prince_Paul_Chavchavadze
+    type: :Person
+  AssignClass (58e51ceb-2f65-487d-99e7-315cf3b2d086)
+ Call ID: 58e51ceb-2f65-487d-99e7-315cf3b2d086
+  Args:
+    source: Prince_Paul_Chavchavadze
     type: :Man
-    source: Andrew_Charles_Victor_Elphinstone
-  AssignClass (ffbb4369-7798-4842-aee7-2b91dbe3b62d)
- Call ID: ffbb4369-7798-4842-aee7-2b91dbe3b62d
+  AddLiteral (53f7d84c-42e8-46b4-acfc-79c1b25ad98a)
+ Call ID: 53f7d84c-42e8-46b4-acfc-79c1b25ad98a
   Args:
-    type: :Person
-    source: Andrew_Charles_Victor_Elphinstone
-  AddTriple (885da96e-970e-49a7-b10b-67c7c22c89f1)
- Call ID: 885da96e-970e-49a7-b10b-67c7c22c89f1
-  Args:
-    source: James_Alexander_Elphinstone
-    target: Andrew_Charles_Victor_Elphinstone
-    relation: :hasFather
-  AssignClass (a00c7bb7-85d8-4dd1-8423-6297f00d217f)
- Call ID: a00c7bb7-85d8-4dd1-8423-6297f00d217f
-  Args:
-    source: Jean_Frances_Hambro
-    type: :Woman
-  AssignClass (8f431316-1cca-4451-a153-c3a85a8ca3a4)
- Call ID: 8f431316-1cca-4451-a153-c3a85a8ca3a4
-  Args:
-    source: Jean_Frances_Hambro
-    type: :Person
-  AddTriple (2fecf7de-53a1-4a2a-a1c9-0b2365b104d9)
- Call ID: 2fecf7de-53a1-4a2a-a1c9-0b2365b104d9
-  Args:
-    relation: :hasMother
-    source: James_Alexander_Elphinstone
-    target: Jean_Frances_Hambro
-  AssignClass (b10f4918-7b0c-47bd-a888-736b64a51123)
- Call ID: b10f4918-7b0c-47bd-a888-736b64a51123
-  Args:
-    type: :Man
-    source: Sidney_Buller-Fullerton-Elphinstone
-  AssignClass (9a911999-fc79-404b-9f67-98d7caa009b9)
- Call ID: 9a911999-fc79-404b-9f67-98d7caa009b9
-  Args:
-    type: :Person
-    source: Sidney_Buller-Fullerton-Elphinstone
-  AddTriple (2622e485-f10d-4844-8f55-bfa0840ae77b)
- Call ID: 2622e485-f10d-4844-8f55-bfa0840ae77b
-  Args:
-    relation: :hasFather
-    target: Sidney_Buller-Fullerton-Elphinstone
-    source: Andrew_Charles_Victor_Elphinstone
-  AssignClass (2b29a77f-020d-42d3-a27e-4851761e6c41)
- Call ID: 2b29a77f-020d-42d3-a27e-4851761e6c41
-  Args:
-    type: :Woman
-    source: Mary_Bowes-Lyon
-  AssignClass (e93bd055-fc79-4f9a-8439-0a0277851c40)
- Call ID: e93bd055-fc79-4f9a-8439-0a0277851c40
-  Args:
-    source: Mary_Bowes-Lyon
-    type: :Person
-  AddTriple (6d3325eb-a4f8-445b-abbf-f37a65d86df2)
- Call ID: 6d3325eb-a4f8-445b-abbf-f37a65d86df2
-  Args:
-    target: Mary_Bowes-Lyon
-    source: Andrew_Charles_Victor_Elphinstone
-    relation: :hasMother
-  AssignClass (7a1a6477-cd8f-4b24-871a-43c8eae51d05)
- Call ID: 7a1a6477-cd8f-4b24-871a-43c8eae51d05
-  Args:
-    source: Willa_Mary_Gabrielle_Chetwode
-    type: :Woman
-  AssignClass (571a1b2b-93bd-44da-a1e7-994f2cd8f106)
- Call ID: 571a1b2b-93bd-44da-a1e7-994f2cd8f106
-  Args:
-    source: Willa_Mary_Gabrielle_Chetwode
-    type: :Person
-  AddLiteral (dd941278-f44d-473e-94d9-18172f2ab2df)
- Call ID: dd941278-f44d-473e-94d9-18172f2ab2df
-  Args:
+    literal_value: 1899
+    source: Prince_Paul_Chavchavadze
+    relation: :hasBirthYear
     literal_type: xsd:integer
-    relation: :hasMarriageYear
-    literal_value: 1978
-    source: James_Alexander_Elphinstone
-  AddTriple (6403baf6-94c2-4f7d-89b4-d27404dfff69)
- Call ID: 6403baf6-94c2-4f7d-89b4-d27404dfff69
+  AddLiteral (612a6fc2-89ea-422b-ba52-225f6d6cbb4f)
+ Call ID: 612a6fc2-89ea-422b-ba52-225f6d6cbb4f
   Args:
-    relation: :hasRelation
-    source: James_Alexander_Elphinstone
-    target: Willa_Mary_Gabrielle_Chetwode
-  AssignClass (5d50baae-7fc2-4910-96a1-461be85ce1b0)
- Call ID: 5d50baae-7fc2-4910-96a1-461be85ce1b0
+    literal_value: 1971
+    source: Prince_Paul_Chavchavadze
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AssignClass (05b9a102-02f5-48b9-9b97-ab1ab121cb3f)
+ Call ID: 05b9a102-02f5-48b9-9b97-ab1ab121cb3f
   Args:
-    source: George_David_Chetwode
-    type: :Man
-  AssignClass (67d62a27-46a8-4b23-93db-9cc477316d47)
- Call ID: 67d62a27-46a8-4b23-93db-9cc477316d47
-  Args:
+    source: Princess_Nina_Georgievna_of_Russia
     type: :Person
-    source: George_David_Chetwode
-  AddTriple (6c7c42e1-baa8-437e-a934-6a5b172f9124)
- Call ID: 6c7c42e1-baa8-437e-a934-6a5b172f9124
+  AssignClass (bd411342-5046-4179-87d8-81a821c30955)
+ Call ID: bd411342-5046-4179-87d8-81a821c30955
   Args:
-    target: George_David_Chetwode
-    source: Willa_Mary_Gabrielle_Chetwode
-    relation: :hasFather
-  AssignClass (a2fc9d78-4dbb-4807-99ce-90fecd236f78)
- Call ID: a2fc9d78-4dbb-4807-99ce-90fecd236f78
-  Args:
-    source: Willa_Elliot-Murray-Kynynmound
+    source: Princess_Nina_Georgievna_of_Russia
     type: :Woman
-  AssignClass (cbe54d5c-87eb-4874-8926-1e822c0107bd)
- Call ID: cbe54d5c-87eb-4874-8926-1e822c0107bd
+  AddLiteral (acf95953-cc65-476f-b1a1-7a7db182e138)
+ Call ID: acf95953-cc65-476f-b1a1-7a7db182e138
   Args:
-    type: :Person
-    source: Willa_Elliot-Murray-Kynynmound
-  AddTriple (2f33a91c-6f0e-40a2-a1fa-a28a7f695fd5)
- Call ID: 2f33a91c-6f0e-40a2-a1fa-a28a7f695fd5
+    relation: :hasBirthYear
+    literal_type: xsd:integer
+    source: Princess_Nina_Georgievna_of_Russia
+    literal_value: 1901
+  AddLiteral (0e0195d7-bcd6-43ba-8740-7cff9257c04d)
+ Call ID: 0e0195d7-bcd6-43ba-8740-7cff9257c04d
   Args:
-    relation: :hasMother
-    target: Willa_Elliot-Murray-Kynynmound
-    source: Willa_Mary_Gabrielle_Chetwode
-  AssignClass (1fa5daa2-98b1-476f-8d78-ab6f5195a605)
- Call ID: 1fa5daa2-98b1-476f-8d78-ab6f5195a605
+    literal_value: 1974
+    source: Princess_Nina_Georgievna_of_Russia
+    literal_type: xsd:integer
+    relation: :hasDeathYear
+  AddTriple (b732a41f-4daf-4ba7-b9e9-d38617315dd1)
+ Call ID: b732a41f-4daf-4ba7-b9e9-d38617315dd1
   Args:
-    source: Victor_Elliot-Murray-Kynynmound
-    type: :Man
-  AssignClass (bde52717-9614-49ea-8246-d23c8393db3b)
- Call ID: bde52717-9614-49ea-8246-d23c8393db3b
-  Args:
-    type: :Person
-    source: Victor_Elliot-Murray-Kynynmound
-  AddTriple (dac31cf0-f47a-429f-95c6-79c01176a2e2)
- Call ID: dac31cf0-f47a-429f-95c6-79c01176a2e2
-  Args:
+    source: David_Chavchavadze
     relation: :hasFather
-    source: Willa_Elliot-Murray-Kynynmound
-    target: Victor_Elliot-Murray-Kynynmound
-  AssignClass (d3d414f3-d084-4b2b-a3d5-8689e1accfd4)
- Call ID: d3d414f3-d084-4b2b-a3d5-8689e1accfd4
+    target: Prince_Paul_Chavchavadze
+  AddTriple (baa10849-838f-4747-a84b-c6c13e300c5f)
+ Call ID: baa10849-838f-4747-a84b-c6c13e300c5f
   Args:
-    type: :Woman
-    source: Marion_Cook
-  AssignClass (aaf15aca-dd28-4ce5-989a-6b0039afbc2c)
- Call ID: aaf15aca-dd28-4ce5-989a-6b0039afbc2c
-  Args:
-    type: :Person
-    source: Marion_Cook
-  AddTriple (d8403811-a4b7-485c-8704-d249b4ea7895)
- Call ID: d8403811-a4b7-485c-8704-d249b4ea7895
-  Args:
+    source: David_Chavchavadze
+    target: Princess_Nina_Georgievna_of_Russia
     relation: :hasMother
-    target: Marion_Cook
-    source: Willa_Elliot-Murray-Kynynmound
-  AssignClass (6653f9a0-cf49-46b8-95e4-16c43e3437eb)
- Call ID: 6653f9a0-cf49-46b8-95e4-16c43e3437eb
+  AssignClass (b9dc40bf-9f01-4ada-88b9-74a4bcaf3171)
+ Call ID: b9dc40bf-9f01-4ada-88b9-74a4bcaf3171
   Args:
-    type: :Man
-    source: Alexander_Elphinstone
-  AssignClass (acff69f8-de11-458f-83bb-8bc38cdd2dae)
- Call ID: acff69f8-de11-458f-83bb-8bc38cdd2dae
-  Args:
-    source: Alexander_Elphinstone
+    source: Paul_George_Olkhovsky
     type: :Person
-  AddTriple (2a3eec66-2f74-40d2-b98a-6c3f67604606)
- Call ID: 2a3eec66-2f74-40d2-b98a-6c3f67604606
+  AssignClass (4f2718db-ab29-41fa-ae4c-dbf065c0c80f)
+ Call ID: 4f2718db-ab29-41fa-ae4c-dbf065c0c80f
   Args:
-    relation: :hasFather
-    source: Alexander_Elphinstone
-    target: James_Alexander_Elphinstone
-  Finish (8110b4ff-eea7-46ce-a14a-c5548ce3c2ff)
- Call ID: 8110b4ff-eea7-46ce-a14a-c5548ce3c2ff
+    source: Paul_George_Olkhovsky
+    type: :Man
+  AddTriple (9ace04a4-d11d-4d78-8ec6-33b839969c79)
+ Call ID: 9ace04a4-d11d-4d78-8ec6-33b839969c79
+  Args:
+    source: David_Chavchavadze
+    relation: :hasChild
+    target: Paul_George_Olkhovsky
+  Finish (46f2896a-caea-45dc-8795-824c70d650bf)
+ Call ID: 46f2896a-caea-45dc-8795-824c70d650bf
   Args:

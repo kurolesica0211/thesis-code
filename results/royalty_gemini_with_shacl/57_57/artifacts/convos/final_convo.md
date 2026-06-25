@@ -97,7 +97,6 @@ Early life
 Margaret was born at 9:22 pm on 21 August 1930 at Glamis Castle in Scotland, her mother's ancestral home.
 She was the younger daughter and second child of Prince Albert, Duke of York (later King George VI), and Elizabeth, Duchess of York (later Queen Elizabeth the Queen Mother).
 Margaret was the first British prince or princess to be born in Scotland since Robert Stuart, Duke of Kintyre, in 1602.
-Registration of the birth was delayed for several days to avoid her being number 13 in the parish register.
 At the time of her birth, Margaret was fourth in the line of succession to the British throne.
 Her father was the second son of King George V and Queen Mary, and her mother was the youngest daughter of Claude Bowes-Lyon, 14th
 Earl of Strathmore and Kinghorne and Cecilia Bowes-Lyon, Countess of Strathmore and Kinghorne.
@@ -305,7 +304,6 @@ Margaret remained close friends with them both.
 Public life
 
 According to Margaret, her first solo public engagement was presenting a prize at the Princess Margaret Rose School in Windsor when she was 12.
-Among her first official engagements was launching the ocean liner Edinburgh Castle in Belfast in 1947.
 Subsequently, Margaret went on multiple tours of various places; in her first major tour she joined her parents and sister for a tour of South Africa in 1947.
 As colonies of the British Commonwealth of Nations sought nationhood, Margaret represented the Crown at independence ceremonies in Jamaica in 1962 and Tuvalu and Dominica in 1978.
 In August 1979, Margaret's second cousin once-removed Lord Mountbatten and members of his family were killed by a bomb planted by the Provisional Irish Republican Army.
@@ -405,6 +403,8 @@ A character, "Pantomime Princess Margaret", made regular appearances in the BBC'
 ### Ontology Definition:
 @prefix : <http://example.com/family_TBOX.ttl#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix ns2: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -420,39 +420,9 @@ A character, "Pantomime Princess Margaret", made regular appearances in the BBC'
 :hasBirthYear a rdfs:Datatype,
         owl:AnnotationProperty .
 
-:hasBrother a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isBrotherOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasDaughter a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isDaughterOf .
-
 :hasDeathYear a owl:AnnotationProperty .
 
 :hasMarriageYear a owl:AnnotationProperty .
-
-:hasSister a owl:ObjectProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Woman ;
-    rdfs:subPropertyOf :isSiblingOf ;
-    owl:inverseOf :isSisterOf ;
-    owl:propertyDisjointWith :isChildOf,
-        :isParentOf .
-
-:hasSon a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Man ;
-    rdfs:subPropertyOf :hasChild,
-        :isParentOf ;
-    owl:inverseOf :isSonOf .
 
 :isAuntOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
@@ -467,6 +437,23 @@ A character, "Pantomime Princess Margaret", made regular appearances in the BBC'
 :knownAs a owl:AnnotationProperty .
 
 dcterms:source a owl:AnnotationProperty .
+
+ns2:isRuleEnabled a owl:AnnotationProperty .
+
+:hasBrother a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isBrotherOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasDaughter a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isDaughterOf .
 
 :hasFather a owl:FunctionalProperty,
         owl:ObjectProperty ;
@@ -484,6 +471,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasParent,
         :isChildOf ;
     owl:inverseOf :isMotherOf .
+
+:hasSister a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Woman ;
+    rdfs:subPropertyOf :isSiblingOf ;
+    owl:inverseOf :isSisterOf ;
+    owl:propertyDisjointWith :isChildOf,
+        :isParentOf .
+
+:hasSon a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Man ;
+    rdfs:subPropertyOf :hasChild,
+        :isParentOf ;
+    owl:inverseOf :isSonOf .
 
 :isBloodrelationOf a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -551,29 +553,21 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:domain :Person ;
     rdfs:range :Sex .
 
-:hasChild a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:inverseOf :isChildOf .
-
 :isAncestorOf a owl:ObjectProperty ;
     rdfs:domain :Ancestor ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :hasRelation .
 
-:isSiblingOf a owl:ObjectProperty,
-        owl:SymmetricProperty,
-        owl:TransitiveProperty ;
-    rdfs:domain :Person ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isBloodrelationOf ;
-    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
-
 :isSisterOf a owl:ObjectProperty ;
     rdfs:domain :Woman ;
     rdfs:range :Person ;
     rdfs:subPropertyOf :isSiblingOf .
+
+:hasChild a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:inverseOf :isChildOf .
 
 :hasParent a owl:ObjectProperty ;
     rdfs:domain :Person ;
@@ -582,6 +576,14 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:equivalentProperty :isChildOf ;
     owl:inverseOf :isParentOf .
+
+:isSiblingOf a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isBloodrelationOf ;
+    owl:propertyChainAxiom ( :hasParent :isParentOf ) .
 
 :Sex a owl:Class ;
     rdfs:subClassOf :DomainEntity ;
@@ -594,6 +596,8 @@ dcterms:source a owl:AnnotationProperty .
     rdfs:subPropertyOf :hasAncestor ;
     owl:propertyDisjointWith :isSisterOf .
 
+:x a ns1:Variable .
+
 :Man a owl:Class ;
     owl:disjointWith :Sex,
         :Woman ;
@@ -602,17 +606,19 @@ dcterms:source a owl:AnnotationProperty .
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Male ] ) ] .
 
+:isParentOf a owl:ObjectProperty ;
+    rdfs:domain :Ancestor ;
+    rdfs:range :Person ;
+    rdfs:subPropertyOf :isAncestorOf ;
+    owl:propertyDisjointWith :isSisterOf .
+
 :Woman a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Person [ a owl:Restriction ;
                         owl:onProperty :hasSex ;
                         owl:someValuesFrom :Female ] ) ] .
 
-:isParentOf a owl:ObjectProperty ;
-    rdfs:domain :Ancestor ;
-    rdfs:range :Person ;
-    rdfs:subPropertyOf :isAncestorOf ;
-    owl:propertyDisjointWith :isSisterOf .
+:y a ns1:Variable .
 
 :Ancestor a owl:Class ;
     owl:disjointWith :Sex ;
@@ -640,6 +646,90 @@ dcterms:source a owl:AnnotationProperty .
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( :Man :Woman ) ] .
 
+[] a ns1:Imp ;
+    rdfs:label "infer hasSon" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSon ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasBrother" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Man ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasBrother ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasDaughter" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasChild ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasDaughter ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:label "infer hasSister" ;
+    ns2:isRuleEnabled true ;
+    rdfs:comment "" ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :isSiblingOf ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 :y ;
+                            ns1:classPredicate :Woman ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 :x ;
+                    ns1:argument2 :y ;
+                    ns1:propertyPredicate :hasSister ] ;
+            rdf:rest () ] .
+
 
 
 ### Current Data Graph State:
@@ -655,322 +745,169 @@ dcterms:source a owl:AnnotationProperty .
 
 []
 Tool Calls:
-  AssignClass (749e1995-bd5e-4ce8-91ad-6dda3d1292d5)
- Call ID: 749e1995-bd5e-4ce8-91ad-6dda3d1292d5
+  AssignClass (a0d90dc0-75d4-41ad-bda5-8f19c2669fb0)
+ Call ID: a0d90dc0-75d4-41ad-bda5-8f19c2669fb0
   Args:
-    source: :Princess_Margaret
+    source: :Margaret
     type: :Woman
-  AssignClass (f2f61c94-4a34-4d39-86e7-58d3beb4be2c)
- Call ID: f2f61c94-4a34-4d39-86e7-58d3beb4be2c
+  AssignClass (731160ea-1acd-4087-b885-b9cfb27e736b)
+ Call ID: 731160ea-1acd-4087-b885-b9cfb27e736b
   Args:
-    type: :Person
-    source: :Princess_Margaret
-  AddLiteral (e3c2e7fa-b4bd-4799-b5b4-dddff0961a16)
- Call ID: e3c2e7fa-b4bd-4799-b5b4-dddff0961a16
+    source: :GeorgeVI
+    type: :Man
+  AssignClass (3103042d-8749-4ca9-a42c-c444495cab5b)
+ Call ID: 3103042d-8749-4ca9-a42c-c444495cab5b
   Args:
-    relation: :knownAs
-    source: :Princess_Margaret
-    literal_type: xsd:string
-    literal_value: Margaret Rose
-  AddLiteral (e4ec5b0e-da72-4cca-b54e-3f56d72003f2)
- Call ID: e4ec5b0e-da72-4cca-b54e-3f56d72003f2
+    type: :Woman
+    source: :ElizabethQueenMother
+  AssignClass (041bd624-dac4-47fa-8569-ee9276dd614d)
+ Call ID: 041bd624-dac4-47fa-8569-ee9276dd614d
   Args:
-    source: :Princess_Margaret
-    relation: :hasBirthYear
+    source: :ElizabethII
+    type: :Woman
+  AssignClass (948cb134-5d9d-4c10-9e09-8b1cb07d72ed)
+ Call ID: 948cb134-5d9d-4c10-9e09-8b1cb07d72ed
+  Args:
+    type: :Man
+    source: :AntonyArmstrongJones
+  AssignClass (d5f273ef-1961-474f-8af4-d0d3af44f38c)
+ Call ID: d5f273ef-1961-474f-8af4-d0d3af44f38c
+  Args:
+    source: :David
+    type: :Man
+  AssignClass (7328da1c-db19-416b-8a26-c1814b730162)
+ Call ID: 7328da1c-db19-416b-8a26-c1814b730162
+  Args:
+    type: :Woman
+    source: :Sarah
+  AssignClass (81eb53cf-c5de-4c37-be09-f6e16b7c657a)
+ Call ID: 81eb53cf-c5de-4c37-be09-f6e16b7c657a
+  Args:
+    source: :GeorgeV
+    type: :Man
+  AssignClass (062fcaf5-63ea-4170-81c5-46a238fa7d1b)
+ Call ID: 062fcaf5-63ea-4170-81c5-46a238fa7d1b
+  Args:
+    type: :Woman
+    source: :Mary
+  AssignClass (c10e036c-4feb-4307-85c5-a44eef92e0fd)
+ Call ID: c10e036c-4feb-4307-85c5-a44eef92e0fd
+  Args:
+    type: :Man
+    source: :ClaudeBowesLyon
+  AssignClass (eb99cdf4-ca63-4505-95ec-8a9a0772ee0b)
+ Call ID: eb99cdf4-ca63-4505-95ec-8a9a0772ee0b
+  Args:
+    type: :Woman
+    source: :CeciliaBowesLyon
+  AddLiteral (8e1a9463-776e-40ac-bdff-b2d674b1a78e)
+ Call ID: 8e1a9463-776e-40ac-bdff-b2d674b1a78e
+  Args:
     literal_value: 1930
+    source: :Margaret
     literal_type: xsd:integer
-  AddLiteral (85b25ca6-dd81-4f8e-b80d-aad76c49c906)
- Call ID: 85b25ca6-dd81-4f8e-b80d-aad76c49c906
+    relation: :hasBirthYear
+  AddLiteral (bd84321e-609b-45a8-86b8-0076028e5b01)
+ Call ID: bd84321e-609b-45a8-86b8-0076028e5b01
   Args:
     literal_type: xsd:integer
-    literal_value: 2002
-    source: :Princess_Margaret
     relation: :hasDeathYear
-  AssignClass (34486181-c39c-4dab-9718-6e8eed29f817)
- Call ID: 34486181-c39c-4dab-9718-6e8eed29f817
+    literal_value: 2002
+    source: :Margaret
+  AddTriple (5ba9e9b3-bce1-4369-9763-b2c85beb6056)
+ Call ID: 5ba9e9b3-bce1-4369-9763-b2c85beb6056
   Args:
-    type: :Man
-    source: :King_George_VI
-  AssignClass (adc478fd-3952-4daa-8cb0-5f1a1c293f80)
- Call ID: adc478fd-3952-4daa-8cb0-5f1a1c293f80
-  Args:
-    type: :Ancestor
-    source: :King_George_VI
-  AssignClass (21b6e859-7db7-404d-b0c2-3e99cd834351)
- Call ID: 21b6e859-7db7-404d-b0c2-3e99cd834351
-  Args:
-    source: :King_George_VI
-    type: :Person
-  AddTriple (707febbd-8cbf-494e-90d5-bdfcebedb3e8)
- Call ID: 707febbd-8cbf-494e-90d5-bdfcebedb3e8
-  Args:
-    target: :King_George_VI
+    source: :Margaret
+    target: :GeorgeVI
     relation: :hasFather
-    source: :Princess_Margaret
-  AssignClass (3c7ad890-a77f-4d1d-9a8c-5340bc611073)
- Call ID: 3c7ad890-a77f-4d1d-9a8c-5340bc611073
+  AddTriple (24b9f29d-096e-4fe8-b3ca-4416ffe0b020)
+ Call ID: 24b9f29d-096e-4fe8-b3ca-4416ffe0b020
   Args:
-    source: :Queen_Elizabeth_The_Queen_Mother
-    type: :Woman
-  AssignClass (90e24d17-87a0-46c9-8481-03aa34120f80)
- Call ID: 90e24d17-87a0-46c9-8481-03aa34120f80
-  Args:
-    type: :Ancestor
-    source: :Queen_Elizabeth_The_Queen_Mother
-  AssignClass (aeae9d1b-3164-4c5e-923f-0360fe46f876)
- Call ID: aeae9d1b-3164-4c5e-923f-0360fe46f876
-  Args:
-    type: :Person
-    source: :Queen_Elizabeth_The_Queen_Mother
-  AddTriple (9f76ae86-a825-4326-8120-2828bd54d3a4)
- Call ID: 9f76ae86-a825-4326-8120-2828bd54d3a4
-  Args:
-    source: :Princess_Margaret
+    source: :Margaret
+    target: :ElizabethQueenMother
     relation: :hasMother
-    target: :Queen_Elizabeth_The_Queen_Mother
-  AssignClass (db4f9d62-e0e9-4571-9cae-688f29580fc5)
- Call ID: db4f9d62-e0e9-4571-9cae-688f29580fc5
+  AddTriple (e9246fdb-47ae-43a0-b62f-c75470a65f5d)
+ Call ID: e9246fdb-47ae-43a0-b62f-c75470a65f5d
   Args:
-    type: :Woman
-    source: :Queen_Elizabeth_II
-  AssignClass (2b103808-881a-4b9d-8447-16199ad4bb6f)
- Call ID: 2b103808-881a-4b9d-8447-16199ad4bb6f
-  Args:
-    source: :Queen_Elizabeth_II
-    type: :Person
-  AddTriple (0a0a159d-cfd7-41f0-bceb-56fb862178ad)
- Call ID: 0a0a159d-cfd7-41f0-bceb-56fb862178ad
-  Args:
+    source: :Margaret
+    target: :ElizabethII
     relation: :hasSister
-    target: :Queen_Elizabeth_II
-    source: :Princess_Margaret
-  AddTriple (f35cb485-ddbf-416f-8d1d-6520606d8629)
- Call ID: f35cb485-ddbf-416f-8d1d-6520606d8629
+  AddTriple (05cf462b-6e80-4689-b4c3-8207e30d4c66)
+ Call ID: 05cf462b-6e80-4689-b4c3-8207e30d4c66
   Args:
-    source: :Queen_Elizabeth_II
-    target: :Princess_Margaret
-    relation: :hasSister
-  AssignClass (9e6e4088-21da-4c25-9920-3a4bab979263)
- Call ID: 9e6e4088-21da-4c25-9920-3a4bab979263
-  Args:
-    type: :Man
-    source: :King_George_V
-  AssignClass (767472b7-361f-49ef-a58d-74044caa167d)
- Call ID: 767472b7-361f-49ef-a58d-74044caa167d
-  Args:
-    source: :King_George_V
-    type: :Ancestor
-  AssignClass (b75c31ea-7f94-43f0-8c8b-1011abb07a12)
- Call ID: b75c31ea-7f94-43f0-8c8b-1011abb07a12
-  Args:
-    type: :Person
-    source: :King_George_V
-  AssignClass (dd60ef6d-4301-49a9-aeb0-c0ea38b006a3)
- Call ID: dd60ef6d-4301-49a9-aeb0-c0ea38b006a3
-  Args:
-    source: :Queen_Mary
-    type: :Woman
-  AssignClass (d9be4e21-2094-49b9-a24a-58e1152d70aa)
- Call ID: d9be4e21-2094-49b9-a24a-58e1152d70aa
-  Args:
-    source: :Queen_Mary
-    type: :Ancestor
-  AssignClass (27f8737e-0c88-4b0d-86fb-9b9962e7568c)
- Call ID: 27f8737e-0c88-4b0d-86fb-9b9962e7568c
-  Args:
-    type: :Person
-    source: :Queen_Mary
-  AddTriple (79a65dfc-b2fb-4e1c-b62f-44573161eda9)
- Call ID: 79a65dfc-b2fb-4e1c-b62f-44573161eda9
-  Args:
+    source: :ElizabethII
+    target: :GeorgeVI
     relation: :hasFather
-    target: :King_George_V
-    source: :King_George_VI
-  AddTriple (c468f047-a1e7-4413-a493-16813dc2ae68)
- Call ID: c468f047-a1e7-4413-a493-16813dc2ae68
+  AddTriple (e68ee396-c993-4c83-be83-d2a7de8d2d88)
+ Call ID: e68ee396-c993-4c83-be83-d2a7de8d2d88
   Args:
-    target: :Queen_Mary
     relation: :hasMother
-    source: :King_George_VI
-  AssignClass (2e908c35-9703-4e26-81b7-ade0d563699d)
- Call ID: 2e908c35-9703-4e26-81b7-ade0d563699d
+    target: :ElizabethQueenMother
+    source: :ElizabethII
+  AddTriple (db6f0907-0124-4358-b22e-4565b1f705ea)
+ Call ID: db6f0907-0124-4358-b22e-4565b1f705ea
   Args:
-    type: :Man
-    source: :Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne
-  AssignClass (82df79bf-8325-4d95-addf-270bf98fa4ed)
- Call ID: 82df79bf-8325-4d95-addf-270bf98fa4ed
-  Args:
-    type: :Ancestor
-    source: :Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne
-  AssignClass (460cbf7c-f99b-4c7d-a546-bad90f46619d)
- Call ID: 460cbf7c-f99b-4c7d-a546-bad90f46619d
-  Args:
-    source: :Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne
-    type: :Person
-  AssignClass (a3847a6e-c27c-4b65-8a67-77f8e656481c)
- Call ID: a3847a6e-c27c-4b65-8a67-77f8e656481c
-  Args:
-    source: :Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne
-    type: :Woman
-  AssignClass (e5cd505d-bf35-4255-bcba-cfaca6261855)
- Call ID: e5cd505d-bf35-4255-bcba-cfaca6261855
-  Args:
-    type: :Ancestor
-    source: :Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne
-  AssignClass (903b2609-4172-4ba4-be6d-e1ef426665ba)
- Call ID: 903b2609-4172-4ba4-be6d-e1ef426665ba
-  Args:
-    type: :Person
-    source: :Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne
-  AddTriple (cc6161a3-6669-4b7b-960c-0bd0106b30a6)
- Call ID: cc6161a3-6669-4b7b-960c-0bd0106b30a6
-  Args:
-    source: :Queen_Elizabeth_The_Queen_Mother
-    target: :Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne
+    source: :GeorgeVI
     relation: :hasFather
-  AddTriple (b8fd2db0-807d-4d68-a95d-8fa76806c5d9)
- Call ID: b8fd2db0-807d-4d68-a95d-8fa76806c5d9
+    target: :GeorgeV
+  AddTriple (cf401111-6779-4e2c-b287-19e023fd1cc5)
+ Call ID: cf401111-6779-4e2c-b287-19e023fd1cc5
   Args:
-    target: :Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne
+    target: :Mary
     relation: :hasMother
-    source: :Queen_Elizabeth_The_Queen_Mother
-  AssignClass (d3a4f06b-8efe-40ca-8b4a-d607a846c585)
- Call ID: d3a4f06b-8efe-40ca-8b4a-d607a846c585
+    source: :GeorgeVI
+  AddTriple (47b9ee73-4975-493c-9015-86b8be1f41b8)
+ Call ID: 47b9ee73-4975-493c-9015-86b8be1f41b8
   Args:
-    type: :Man
-    source: :Antony_Armstrong-Jones_Earl_of_Snowdon
-  AssignClass (8a1c1b0b-af37-45ae-8dfd-f267df93ed74)
- Call ID: 8a1c1b0b-af37-45ae-8dfd-f267df93ed74
+    source: :ElizabethQueenMother
+    relation: :hasFather
+    target: :ClaudeBowesLyon
+  AddTriple (39c60070-ada5-4769-9909-f4fcd17f649c)
+ Call ID: 39c60070-ada5-4769-9909-f4fcd17f649c
   Args:
-    type: :Ancestor
-    source: :Antony_Armstrong-Jones_Earl_of_Snowdon
-  AssignClass (646206a9-1a3f-412e-b37d-1958a28c770e)
- Call ID: 646206a9-1a3f-412e-b37d-1958a28c770e
+    target: :CeciliaBowesLyon
+    relation: :hasMother
+    source: :ElizabethQueenMother
+  AddTriple (2c2cebd3-465d-4bac-a154-33edcb23f173)
+ Call ID: 2c2cebd3-465d-4bac-a154-33edcb23f173
   Args:
-    source: :Antony_Armstrong-Jones_Earl_of_Snowdon
-    type: :Person
-  AddLiteral (c5b3b648-4707-4fdf-b495-8b21312f8cad)
- Call ID: c5b3b648-4707-4fdf-b495-8b21312f8cad
+    target: :AntonyArmstrongJones
+    relation: :hasFather
+    source: :Margaret
+  AddTriple (9d3805ed-c90d-4099-a854-5aa7e1843238)
+ Call ID: 9d3805ed-c90d-4099-a854-5aa7e1843238
   Args:
-    literal_type: xsd:integer
+    target: :Margaret
+    relation: :hasMother
+    source: :David
+  AddTriple (9b37fbad-9294-4e11-9613-d8d67ceee759)
+ Call ID: 9b37fbad-9294-4e11-9613-d8d67ceee759
+  Args:
+    source: :David
+    target: :AntonyArmstrongJones
+    relation: :hasFather
+  AddTriple (811b3728-757f-4ed7-963f-a66cf5147584)
+ Call ID: 811b3728-757f-4ed7-963f-a66cf5147584
+  Args:
+    source: :Sarah
+    relation: :hasMother
+    target: :Margaret
+  AddTriple (bdf78479-9eda-4198-9da0-e242195a8945)
+ Call ID: bdf78479-9eda-4198-9da0-e242195a8945
+  Args:
+    source: :Sarah
+    relation: :hasFather
+    target: :AntonyArmstrongJones
+  AddLiteral (7467751f-4a49-4555-9127-99cd88786060)
+ Call ID: 7467751f-4a49-4555-9127-99cd88786060
+  Args:
+    source: :Margaret
     literal_value: 1960
-    source: :Princess_Margaret
+    literal_type: xsd:integer
     relation: :hasMarriageYear
-  AssignClass (9e34badb-849e-46b7-bedb-793379e4fa24)
- Call ID: 9e34badb-849e-46b7-bedb-793379e4fa24
+  Finish (6aedb917-618c-4bf9-b8f0-1e0165c60c05)
+ Call ID: 6aedb917-618c-4bf9-b8f0-1e0165c60c05
   Args:
-    source: :David_Armstrong-Jones
-    type: :Man
-  AssignClass (531ed64c-fd55-4080-9795-5fcb76d9ef34)
- Call ID: 531ed64c-fd55-4080-9795-5fcb76d9ef34
-  Args:
-    type: :Person
-    source: :David_Armstrong-Jones
-  AssignClass (a77ec71b-73e6-4c5b-a427-815b10713c00)
- Call ID: a77ec71b-73e6-4c5b-a427-815b10713c00
-  Args:
-    source: :Sarah_Armstrong-Jones
-    type: :Woman
-  AssignClass (743b687b-57cc-43b0-abad-f79bb77a29db)
- Call ID: 743b687b-57cc-43b0-abad-f79bb77a29db
-  Args:
-    source: :Sarah_Armstrong-Jones
-    type: :Person
-  AddTriple (54335a16-4364-4713-b3fe-73ea88be598d)
- Call ID: 54335a16-4364-4713-b3fe-73ea88be598d
-  Args:
-    source: :Princess_Margaret
-    relation: :hasSon
-    target: :David_Armstrong-Jones
-  AddTriple (443e2bea-a42c-4f51-9d39-64be4e925573)
- Call ID: 443e2bea-a42c-4f51-9d39-64be4e925573
-  Args:
-    target: :Sarah_Armstrong-Jones
-    relation: :hasDaughter
-    source: :Princess_Margaret
-  AddTriple (9a161adf-2a6e-4b12-a310-fd97d9bfd7b2)
- Call ID: 9a161adf-2a6e-4b12-a310-fd97d9bfd7b2
-  Args:
-    source: :David_Armstrong-Jones
-    relation: :hasFather
-    target: :Antony_Armstrong-Jones_Earl_of_Snowdon
-  AddTriple (be36547a-164f-46ad-9dae-7cda3aaf5021)
- Call ID: be36547a-164f-46ad-9dae-7cda3aaf5021
-  Args:
-    target: :Antony_Armstrong-Jones_Earl_of_Snowdon
-    relation: :hasFather
-    source: :Sarah_Armstrong-Jones
-  Finish (32e4cb49-9db5-405e-9afa-2c352898fe21)
- Call ID: 32e4cb49-9db5-405e-9afa-2c352898fe21
-  Args:
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
-
-================================= Tool Message =================================
-
-Look at the messages below to see the final data graph after all the edits.
 
 ================================= Tool Message =================================
 
@@ -1087,61 +1024,44 @@ The final data graph after all the edits:
   @prefix data: <http://example.org/data/> .
   @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-  data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne a :Ancestor,
-          :Person,
-          :Woman .
+  data:David a :Man ;
+      :hasFather data:AntonyArmstrongJones ;
+      :hasMother data:Margaret .
 
-  data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne a :Ancestor,
-          :Man,
-          :Person .
+  data:Sarah a :Woman ;
+      :hasFather data:AntonyArmstrongJones ;
+      :hasMother data:Margaret .
 
-  data:David_Armstrong-Jones a :Man,
-          :Person ;
-      :hasFather data:Antony_Armstrong-Jones_Earl_of_Snowdon .
+  data:CeciliaBowesLyon a :Woman .
 
-  data:King_George_V a :Ancestor,
-          :Man,
-          :Person .
+  data:ClaudeBowesLyon a :Man .
 
-  data:King_George_VI a :Ancestor,
-          :Man,
-          :Person ;
-      :hasFather data:King_George_V ;
-      :hasMother data:Queen_Mary .
+  data:ElizabethII a :Woman ;
+      :hasFather data:GeorgeVI ;
+      :hasMother data:ElizabethQueenMother .
 
-  data:Princess_Margaret a :Person,
-          :Woman ;
+  data:GeorgeV a :Man .
+
+  data:Mary a :Woman .
+
+  data:ElizabethQueenMother a :Woman ;
+      :hasFather data:ClaudeBowesLyon ;
+      :hasMother data:CeciliaBowesLyon .
+
+  data:GeorgeVI a :Man ;
+      :hasFather data:GeorgeV ;
+      :hasMother data:Mary .
+
+  data:Margaret a :Woman ;
       :hasBirthYear 1930 ;
-      :hasDaughter data:Sarah_Armstrong-Jones ;
       :hasDeathYear 2002 ;
-      :hasFather data:King_George_VI ;
+      :hasFather data:AntonyArmstrongJones,
+          data:GeorgeVI ;
       :hasMarriageYear 1960 ;
-      :hasMother data:Queen_Elizabeth_The_Queen_Mother ;
-      :hasSister data:Queen_Elizabeth_II ;
-      :hasSon data:David_Armstrong-Jones ;
-      :knownAs "Margaret Rose"^^xsd:string .
+      :hasMother data:ElizabethQueenMother ;
+      :hasSister data:ElizabethII .
 
-  data:Queen_Elizabeth_II a :Person,
-          :Woman ;
-      :hasSister data:Princess_Margaret .
-
-  data:Queen_Elizabeth_The_Queen_Mother a :Ancestor,
-          :Person,
-          :Woman ;
-      :hasFather data:Claude_Bowes-Lyon_14th_Earl_of_Strathmore_and_Kinghorne ;
-      :hasMother data:Cecilia_Bowes-Lyon_Countess_of_Strathmore_and_Kinghorne .
-
-  data:Queen_Mary a :Ancestor,
-          :Person,
-          :Woman .
-
-  data:Sarah_Armstrong-Jones a :Person,
-          :Woman ;
-      :hasFather data:Antony_Armstrong-Jones_Earl_of_Snowdon .
-
-  data:Antony_Armstrong-Jones_Earl_of_Snowdon a :Ancestor,
-          :Man,
-          :Person .
+  data:AntonyArmstrongJones a :Man .
 
 
 
@@ -1153,8 +1073,505 @@ You have not used SHACL validation even once, though you should! Check your work
 
 []
 Tool Calls:
-  ValidateShacl (ac9fc545-5141-4a28-b720-5fdcb5e521ae)
- Call ID: ac9fc545-5141-4a28-b720-5fdcb5e521ae
+  ValidateShacl (e6f2e866-3296-479c-a4a6-7c753e67496b)
+ Call ID: e6f2e866-3296-479c-a4a6-7c753e67496b
+  Args:
+
+================================= Tool Message =================================
+
+VALIDATION RESULTS
+Total violations:42
+Violations:
+
+  Violation [1]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as AntonyArmstrongJones is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(AntonyArmstrongJones, :Ancestor)
+
+
+  Violation [2]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as GeorgeV is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(GeorgeV, :Ancestor)
+
+
+  Violation [3]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as Margaret is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Margaret, :Ancestor)
+
+
+  Violation [4]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as Mary is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Mary, :Ancestor)
+
+
+  Violation [5]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as AntonyArmstrongJones is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(AntonyArmstrongJones, :Ancestor)
+
+
+  Violation [6]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as ClaudeBowesLyon is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(ClaudeBowesLyon, :Ancestor)
+
+
+  Violation [7]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as AntonyArmstrongJones is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(AntonyArmstrongJones, :Ancestor)
+
+
+  Violation [8]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as GeorgeVI is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(GeorgeVI, :Ancestor)
+
+
+  Violation [9]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as GeorgeVI is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(GeorgeVI, :Ancestor)
+
+
+  Violation [10]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as AntonyArmstrongJones is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(AntonyArmstrongJones, :Ancestor)
+
+
+  Violation [11]:
+    SHACL message: More than 1 values on data:Margaret->:hasFather
+    LLM-provided explanation of the violation:
+      Margaret has more than one father assigned, which violates the functional property constraint.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Margaret, :hasFather, [incorrect_value])
+
+
+  Violation [12]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as GeorgeV is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(GeorgeV, :Ancestor)
+
+
+  Violation [13]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as Margaret is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Margaret, :Ancestor)
+
+
+  Violation [14]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as CeciliaBowesLyon is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(CeciliaBowesLyon, :Ancestor)
+
+
+  Violation [15]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as Margaret is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Margaret, :Ancestor)
+
+
+  Violation [16]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as ElizabethQueenMother is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(ElizabethQueenMother, :Ancestor)
+
+
+  Violation [17]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as ElizabethQueenMother is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(ElizabethQueenMother, :Ancestor)
+
+
+  Violation [18]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as Mary is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Mary, :Ancestor)
+
+
+  Violation [19]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as AntonyArmstrongJones is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(AntonyArmstrongJones, :Ancestor)
+
+
+  Violation [20]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as ClaudeBowesLyon is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(ClaudeBowesLyon, :Ancestor)
+
+
+  Violation [21]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as AntonyArmstrongJones is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(AntonyArmstrongJones, :Ancestor)
+
+
+  Violation [22]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as GeorgeVI is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(GeorgeVI, :Ancestor)
+
+
+  Violation [23]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as GeorgeVI is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(GeorgeVI, :Ancestor)
+
+
+  Violation [24]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as AntonyArmstrongJones is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(AntonyArmstrongJones, :Ancestor)
+
+
+  Violation [25]:
+    SHACL message: More than 1 values on data:Margaret->:hasFather
+    LLM-provided explanation of the violation:
+      Margaret has more than one father assigned, which violates the functional property constraint.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Margaret, :hasFather, [incorrect_value])
+
+
+  Violation [26]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as GeorgeV is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(GeorgeV, :Ancestor)
+
+
+  Violation [27]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as Margaret is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Margaret, :Ancestor)
+
+
+  Violation [28]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as CeciliaBowesLyon is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(CeciliaBowesLyon, :Ancestor)
+
+
+  Violation [29]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as Margaret is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Margaret, :Ancestor)
+
+
+  Violation [30]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as ElizabethQueenMother is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(ElizabethQueenMother, :Ancestor)
+
+
+  Violation [31]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as ElizabethQueenMother is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(ElizabethQueenMother, :Ancestor)
+
+
+  Violation [32]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as Mary is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Mary, :Ancestor)
+
+
+  Violation [33]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as AntonyArmstrongJones is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(AntonyArmstrongJones, :Ancestor)
+
+
+  Violation [34]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as GeorgeVI is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(GeorgeVI, :Ancestor)
+
+
+  Violation [35]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as GeorgeVI is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(GeorgeVI, :Ancestor)
+
+
+  Violation [36]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as AntonyArmstrongJones is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(AntonyArmstrongJones, :Ancestor)
+
+
+  Violation [37]:
+    SHACL message: More than 1 values on data:Margaret->:hasFather
+    LLM-provided explanation of the violation:
+      Margaret has more than one father assigned, which violates the functional property constraint.
+    LLM-provided instruction on how to handle the violation:
+      RemoveTriple(Margaret, :hasFather, [incorrect_value])
+
+
+  Violation [38]:
+    SHACL message: Value class is not in classes (:Ancestor, :Man)
+    LLM-provided explanation of the violation:
+      The person identified as ClaudeBowesLyon is used as a father but lacks the required :Ancestor or :Man class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(ClaudeBowesLyon, :Ancestor)
+
+
+  Violation [39]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as Margaret is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(Margaret, :Ancestor)
+
+
+  Violation [40]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as ElizabethQueenMother is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(ElizabethQueenMother, :Ancestor)
+
+
+  Violation [41]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as ElizabethQueenMother is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(ElizabethQueenMother, :Ancestor)
+
+
+  Violation [42]:
+    SHACL message: Value class is not in classes (:Ancestor, :Woman)
+    LLM-provided explanation of the violation:
+      The person identified as CeciliaBowesLyon is used as a mother but lacks the required :Ancestor or :Woman class.
+    LLM-provided instruction on how to handle the violation:
+      AssignClass(CeciliaBowesLyon, :Ancestor)
+
+
+
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  RemoveTriple (bad31478-eded-4c96-b35d-cbb68b7ec95d)
+ Call ID: bad31478-eded-4c96-b35d-cbb68b7ec95d
+  Args:
+    relation: :hasFather
+    source: :Margaret
+    target: :AntonyArmstrongJones
+  AssignClass (87ae3d15-dccb-486f-9511-b0e0e50330cc)
+ Call ID: 87ae3d15-dccb-486f-9511-b0e0e50330cc
+  Args:
+    type: :Ancestor
+    source: :GeorgeV
+  AssignClass (14298d4a-8b18-427a-acf1-04cace43f360)
+ Call ID: 14298d4a-8b18-427a-acf1-04cace43f360
+  Args:
+    type: :Ancestor
+    source: :GeorgeVI
+  AssignClass (c4ffcca2-718f-44d5-9bf2-e831bfc356fb)
+ Call ID: c4ffcca2-718f-44d5-9bf2-e831bfc356fb
+  Args:
+    source: :ClaudeBowesLyon
+    type: :Ancestor
+  AssignClass (5b0e027b-14b3-421f-92fa-515e7c4cecca)
+ Call ID: 5b0e027b-14b3-421f-92fa-515e7c4cecca
+  Args:
+    type: :Ancestor
+    source: :AntonyArmstrongJones
+  AssignClass (75a10afd-bd6b-4b62-8fa0-bfa8813c41b2)
+ Call ID: 75a10afd-bd6b-4b62-8fa0-bfa8813c41b2
+  Args:
+    type: :Ancestor
+    source: :Mary
+  AssignClass (9f1581b1-8919-4dac-89f2-fb78255a91b2)
+ Call ID: 9f1581b1-8919-4dac-89f2-fb78255a91b2
+  Args:
+    source: :CeciliaBowesLyon
+    type: :Ancestor
+  AssignClass (04b31ab3-5d97-4c9a-9b85-6b55261f3f83)
+ Call ID: 04b31ab3-5d97-4c9a-9b85-6b55261f3f83
+  Args:
+    type: :Ancestor
+    source: :ElizabethQueenMother
+  AssignClass (e5852fc6-f968-411e-8eb4-4aae1d491867)
+ Call ID: e5852fc6-f968-411e-8eb4-4aae1d491867
+  Args:
+    source: :Margaret
+    type: :Ancestor
+  Finish (d82fc3ef-f2cd-4a94-86b2-ac9357b9388e)
+ Call ID: d82fc3ef-f2cd-4a94-86b2-ac9357b9388e
+  Args:
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+Look at the messages below to see the final data graph after all the edits.
+
+================================= Tool Message =================================
+
+The final data graph after all the edits:
+  @prefix : <http://example.com/family_TBOX.ttl#> .
+  @prefix data: <http://example.org/data/> .
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+  data:David a :Man ;
+      :hasFather data:AntonyArmstrongJones ;
+      :hasMother data:Margaret .
+
+  data:Sarah a :Woman ;
+      :hasFather data:AntonyArmstrongJones ;
+      :hasMother data:Margaret .
+
+  data:CeciliaBowesLyon a :Ancestor,
+          :Woman .
+
+  data:ClaudeBowesLyon a :Ancestor,
+          :Man .
+
+  data:ElizabethII a :Woman ;
+      :hasFather data:GeorgeVI ;
+      :hasMother data:ElizabethQueenMother .
+
+  data:GeorgeV a :Ancestor,
+          :Man .
+
+  data:Mary a :Ancestor,
+          :Woman .
+
+  data:AntonyArmstrongJones a :Ancestor,
+          :Man .
+
+  data:ElizabethQueenMother a :Ancestor,
+          :Woman ;
+      :hasFather data:ClaudeBowesLyon ;
+      :hasMother data:CeciliaBowesLyon .
+
+  data:GeorgeVI a :Ancestor,
+          :Man ;
+      :hasFather data:GeorgeV ;
+      :hasMother data:Mary .
+
+  data:Margaret a :Ancestor,
+          :Woman ;
+      :hasBirthYear 1930 ;
+      :hasDeathYear 2002 ;
+      :hasFather data:GeorgeVI ;
+      :hasMarriageYear 1960 ;
+      :hasMother data:ElizabethQueenMother ;
+      :hasSister data:ElizabethII .
+
+
+
+================================= Tool Message =================================
+
+Previous SHACL validation wasn't successful. If you fixed the violations, use the validation tool again to confirm no violations persist.
+
+================================== Ai Message ==================================
+
+[]
+Tool Calls:
+  ValidateShacl (a2d7ca6e-8215-4747-b519-e0b9977a6e9d)
+ Call ID: a2d7ca6e-8215-4747-b519-e0b9977a6e9d
   Args:
 
 ================================= Tool Message =================================
@@ -1165,6 +1582,6 @@ SHACL validation has not produced any violations.
 
 []
 Tool Calls:
-  Finish (36277f2f-9879-43de-abbe-6852c621c9c8)
- Call ID: 36277f2f-9879-43de-abbe-6852c621c9c8
+  Finish (5cf26270-c0ce-4468-8a96-11345960375e)
+ Call ID: 5cf26270-c0ce-4468-8a96-11345960375e
   Args:

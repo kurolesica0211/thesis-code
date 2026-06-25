@@ -7,110 +7,7 @@
 data: a owl:Ontology ;
     owl:imports : .
 
-data:posIndicesFull a owl:AnnotationProperty .
-
-data:posIndicesPart a owl:AnnotationProperty .
-
-data:wdtLink a owl:AnnotationProperty .
-
-data:Prince_Edward-_Duke_of_Kent a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "Prince Edward, Duke of Kent" ;
-    data:posIndicesFull "4386:4399" ;
-    data:posIndicesPart "4498:4502",
-        "4643:4647",
-        "4751:4755",
-        "4878:4882",
-        "5078:5082",
-        "5267:5271",
-        "5413:5417",
-        "5518:5522",
-        "5752:5756",
-        "5912:5916",
-        "5994:5998",
-        "6223:6227",
-        "6396:6400",
-        "6785:6789",
-        "6844:6848" ;
-    data:wdtLink wdt:Q158258 ;
-    :alsoKnownAs "Duke of Kent",
-        "Edward George Nicholas Paul Patrick Windsor, 2nd Duke of Kent",
-        "Edward Kent",
-        "His Royal Highness The Duke of Kent",
-        "Prince Edward",
-        "Prince Edward of Kent",
-        "The Duke of Kent" ;
-    :hasSex data:male .
-
-data:Elizabeth_II a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Elizabeth II" ;
-    data:posIndicesFull "342:354",
-        "4216:4228",
-        "5430:5442",
-        "6184:6202",
-        "6190:6202" ;
-    data:posIndicesPart "1479:1488" ;
-    data:wdtLink wdt:Q9682 ;
-    :alsoKnownAs "Elizabeth Alexandra Mary",
-        "Elizabeth Alexandra Mary Windsor",
-        "Queen Elizabeth II" ;
-    :hasFather data:George_VI ;
-    :hasParent data:George_VI ;
-    :hasSex data:female ;
-    :isChildOf data:George_VI ;
-    :isDaughterOf data:George_VI .
-
-data:Princess_Alice-_Duchess_of_Gloucester a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
-    rdfs:label "Princess Alice, Duchess of Gloucester" ;
-    data:posIndicesFull "194:231",
-        "203:231",
-        "834:862" ;
-    data:posIndicesPart "1546:1554",
-        "1555:1560",
-        "2668:2675",
-        "2679:2689",
-        "2726:2733",
-        "2737:2747",
-        "3211:3221",
-        "3398:3408",
-        "3538:3548",
-        "4153:4163",
-        "4184:4191",
-        "4506:4516",
-        "4886:4896",
-        "5920:5930",
-        "631:641",
-        "6405:6412",
-        "6416:6426",
-        "6852:6862" ;
-    data:wdtLink wdt:Q246915 ;
-    :alsoKnownAs "Alice Christabel Montagu Douglas Scott",
-        "Alice Christabel, Duchess of Gloucester",
-        "Alice Montagu Douglas Scott",
-        "Alice, Duchess of Gloucester",
-        "Lady Alice Christabel Montagu Douglas Scott",
-        "Lady Alice Montagu Douglas Scott" ;
-    :hasChild data:Prince_Richard-_Duke_of_Gloucester,
-        data:Prince_William_of_Gloucester ;
-    :hasSex data:female ;
-    :hasSon data:Prince_Richard-_Duke_of_Gloucester,
-        data:Prince_William_of_Gloucester ;
-    :isMotherOf data:Prince_Richard-_Duke_of_Gloucester,
-        data:Prince_William_of_Gloucester ;
-    :isParentOf data:Prince_Richard-_Duke_of_Gloucester,
-        data:Prince_William_of_Gloucester .
-
-data:Edward_VIII a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Edward_VIII a :Person ;
     rdfs:label "Edward VIII" ;
     data:posIndicesFull "295:306",
         "4386:4399" ;
@@ -128,29 +25,39 @@ data:Edward_VIII a :Man,
         "King Edward VIII",
         "Prince Edward",
         "Prince Edward, Duke of Windsor" ;
-    :hasBrother data:George_VI,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:male ;
-    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isBrotherOf data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isChildOf data:George_V ;
-    :isSiblingOf data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isSonOf data:George_V ;
-    :isUncleOf data:Elizabeth_II,
-        data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Richard-_Duke_of_Gloucester,
-        data:Prince_William_of_Gloucester .
+    :hasSex data:male .
 
-data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Ancestor,
-        :Person,
-        :Woman,
-        owl:NamedIndividual ;
+data:George_VI a :Person ;
+    rdfs:label "George VI" ;
+    data:posIndicesFull "311:320",
+        "478:487" ;
+    data:posIndicesPart "3926:3932" ;
+    data:wdtLink wdt:Q280856 ;
+    :alsoKnownAs "Albert Frederick Arthur George",
+        "Albert Frederick Arthur George Windsor",
+        "Albert Windsor",
+        "Bertie",
+        "George Windsor",
+        "H.M. King George VI",
+        "Industrial Prince",
+        "King George VI",
+        "Prince Albert Frederick Arthur George of Cornwall and York",
+        "Prince Albert Frederick Arthur George of Wales",
+        "Prince Albert Frederick Arthur George of York",
+        "Prince Albert Frederick Arthur George, Duke of York",
+        "Prince Albert of Cornwall and York",
+        "Prince Albert of Wales",
+        "Prince Albert of York",
+        "Prince Albert, Duke of York",
+        "The Prince Albert Frederick Arthur George of the United Kingdom",
+        "The Prince Albert Frederick Arthur George, Duke of York",
+        "The Prince Albert of the United Kingdom",
+        "The Prince Albert, Duke of York" ;
+    :hasParent data:George_V ;
+    :hasSex data:male .
+
+data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Person ;
     rdfs:label "Mary, Princess Royal and Countess of Harewood" ;
     data:posIndicesFull "1458:1471",
         "1490:1504" ;
@@ -181,29 +88,10 @@ data:Mary-_Princess_Royal_and_Countess_of_Harewood a :Ancestor,
         "Princess Victoria Alexandra Alice Mary, Viscountess Lascelles",
         "Victoria Alexandra Alice Mary Windsor",
         "Victoria Alexandra Alice Mary, Princess Royal and Countess of Harewood" ;
-    :hasBrother data:Edward_VIII,
-        data:George_VI,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:female ;
-    :isAuntOf data:Elizabeth_II,
-        data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Richard-_Duke_of_Gloucester,
-        data:Prince_William_of_Gloucester ;
-    :isChildOf data:George_V ;
-    :isDaughterOf data:George_V ;
-    :isSiblingOf data:Edward_VIII,
-        data:George_VI,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isSisterOf data:Edward_VIII,
-        data:George_VI,
-        data:Prince_Henry-_Duke_of_Gloucester .
+    :hasSex data:female .
 
-data:Prince_Richard-_Duke_of_Gloucester a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_Richard-_Duke_of_Gloucester a :Person ;
     rdfs:label "Prince Richard, Duke of Gloucester" ;
     data:posIndicesFull "0:34",
         "36:67",
@@ -270,22 +158,11 @@ data:Prince_Richard-_Duke_of_Gloucester a :Ancestor,
         "Richard Alexander Walter George Windsor, 2nd Duke of Gloucester",
         "Richard Gloucester",
         "Richard Windsor" ;
-    :hasBrother data:Prince_William_of_Gloucester ;
-    :hasFather data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasMother data:Princess_Alice-_Duchess_of_Gloucester ;
     :hasParent data:Prince_Henry-_Duke_of_Gloucester,
         data:Princess_Alice-_Duchess_of_Gloucester ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_William_of_Gloucester ;
-    :isChildOf data:Prince_Henry-_Duke_of_Gloucester,
-        data:Princess_Alice-_Duchess_of_Gloucester ;
-    :isSiblingOf data:Prince_William_of_Gloucester ;
-    :isSonOf data:Prince_Henry-_Duke_of_Gloucester,
-        data:Princess_Alice-_Duchess_of_Gloucester .
+    :hasSex data:male .
 
-data:Prince_William_of_Gloucester a :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:Prince_William_of_Gloucester a :Person ;
     rdfs:label "Prince William of Gloucester" ;
     data:posIndicesFull "1142:1170",
         "1149:1170" ;
@@ -308,110 +185,17 @@ data:Prince_William_of_Gloucester a :Man,
         "William Henry Andrew Frederick Windsor, Prince of Gloucester",
         "William Henry Andrew Frederick of Gloucester",
         "William of Gloucester" ;
-    :hasBrother data:Prince_Richard-_Duke_of_Gloucester ;
-    :hasFather data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasMother data:Princess_Alice-_Duchess_of_Gloucester ;
     :hasParent data:Prince_Henry-_Duke_of_Gloucester,
         data:Princess_Alice-_Duchess_of_Gloucester ;
-    :hasSex data:male ;
-    :isBrotherOf data:Prince_Richard-_Duke_of_Gloucester ;
-    :isChildOf data:Prince_Henry-_Duke_of_Gloucester,
-        data:Princess_Alice-_Duchess_of_Gloucester ;
-    :isSiblingOf data:Prince_Richard-_Duke_of_Gloucester ;
-    :isSonOf data:Prince_Henry-_Duke_of_Gloucester,
-        data:Princess_Alice-_Duchess_of_Gloucester .
+    :hasSex data:male .
 
-data:George_V a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George V" ;
-    data:posIndicesFull "275:283",
-        "896:909",
-        "901:909" ;
-    data:posIndicesPart "3926:3932" ;
-    data:wdtLink wdt:Q269412 ;
-    :alsoKnownAs "George Frederick Ernest Albert",
-        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
-        "George Frederick Ernest Albert Windsor",
-        "George Saxe-Coburg-Gotha",
-        "George V (King of Great Britain)",
-        "George V of the United Kingdom",
-        "George Windsor",
-        "King George V" ;
-    :hasChild data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasDaughter data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :hasSex data:male ;
-    :hasSon data:Edward_VIII,
-        data:George_VI,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isFatherOf data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isParentOf data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_Henry-_Duke_of_Gloucester .
+data:posIndicesFull a owl:AnnotationProperty .
 
-data:George_VI a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
-    rdfs:label "George VI" ;
-    data:posIndicesFull "311:320",
-        "478:487" ;
-    data:posIndicesPart "3926:3932" ;
-    data:wdtLink wdt:Q280856 ;
-    :alsoKnownAs "Albert Frederick Arthur George",
-        "Albert Frederick Arthur George Windsor",
-        "Albert Windsor",
-        "Bertie",
-        "George Windsor",
-        "H.M. King George VI",
-        "Industrial Prince",
-        "King George VI",
-        "Prince Albert Frederick Arthur George of Cornwall and York",
-        "Prince Albert Frederick Arthur George of Wales",
-        "Prince Albert Frederick Arthur George of York",
-        "Prince Albert Frederick Arthur George, Duke of York",
-        "Prince Albert of Cornwall and York",
-        "Prince Albert of Wales",
-        "Prince Albert of York",
-        "Prince Albert, Duke of York",
-        "The Prince Albert Frederick Arthur George of the United Kingdom",
-        "The Prince Albert Frederick Arthur George, Duke of York",
-        "The Prince Albert of the United Kingdom",
-        "The Prince Albert, Duke of York" ;
-    :hasBrother data:Edward_VIII,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :hasChild data:Elizabeth_II ;
-    :hasDaughter data:Elizabeth_II ;
-    :hasFather data:George_V ;
-    :hasParent data:George_V ;
-    :hasSex data:male ;
-    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isBrotherOf data:Edward_VIII,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isChildOf data:George_V ;
-    :isFatherOf data:Elizabeth_II ;
-    :isParentOf data:Elizabeth_II ;
-    :isSiblingOf data:Edward_VIII,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood,
-        data:Prince_Henry-_Duke_of_Gloucester ;
-    :isSonOf data:George_V ;
-    :isUncleOf data:Prince_Edward-_Duke_of_Kent,
-        data:Prince_Richard-_Duke_of_Gloucester,
-        data:Prince_William_of_Gloucester .
+data:posIndicesPart a owl:AnnotationProperty .
 
-data:Prince_Henry-_Duke_of_Gloucester a :Ancestor,
-        :Man,
-        :Person,
-        owl:NamedIndividual ;
+data:wdtLink a owl:AnnotationProperty .
+
+data:Prince_Henry-_Duke_of_Gloucester a :Person ;
     rdfs:label "Prince Henry, Duke of Gloucester" ;
     data:posIndicesFull "156:168",
         "156:188",
@@ -465,28 +249,59 @@ data:Prince_Henry-_Duke_of_Gloucester a :Ancestor,
         "Prince Henry of Wales",
         "Prince Henry of York",
         "The Prince Henry" ;
-    :hasBrother data:Edward_VIII,
-        data:George_VI ;
-    :hasChild data:Prince_Richard-_Duke_of_Gloucester,
-        data:Prince_William_of_Gloucester ;
-    :hasFather data:George_V ;
     :hasParent data:George_V ;
-    :hasSex data:male ;
-    :hasSister data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :hasSon data:Prince_Richard-_Duke_of_Gloucester,
-        data:Prince_William_of_Gloucester ;
-    :isBrotherOf data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isChildOf data:George_V ;
-    :isFatherOf data:Prince_Richard-_Duke_of_Gloucester,
-        data:Prince_William_of_Gloucester ;
-    :isParentOf data:Prince_Richard-_Duke_of_Gloucester,
-        data:Prince_William_of_Gloucester ;
-    :isSiblingOf data:Edward_VIII,
-        data:George_VI,
-        data:Mary-_Princess_Royal_and_Countess_of_Harewood ;
-    :isSonOf data:George_V ;
-    :isUncleOf data:Elizabeth_II,
-        data:Prince_Edward-_Duke_of_Kent .
+    :hasSex data:male .
+
+data:Princess_Alice-_Duchess_of_Gloucester a :Person ;
+    rdfs:label "Princess Alice, Duchess of Gloucester" ;
+    data:posIndicesFull "194:231",
+        "203:231",
+        "834:862" ;
+    data:posIndicesPart "1546:1554",
+        "1555:1560",
+        "2668:2675",
+        "2679:2689",
+        "2726:2733",
+        "2737:2747",
+        "3211:3221",
+        "3398:3408",
+        "3538:3548",
+        "4153:4163",
+        "4184:4191",
+        "4506:4516",
+        "4886:4896",
+        "5920:5930",
+        "631:641",
+        "6405:6412",
+        "6416:6426",
+        "6852:6862" ;
+    data:wdtLink wdt:Q246915 ;
+    :alsoKnownAs "Alice Christabel Montagu Douglas Scott",
+        "Alice Christabel, Duchess of Gloucester",
+        "Alice Montagu Douglas Scott",
+        "Alice, Duchess of Gloucester",
+        "Lady Alice Christabel Montagu Douglas Scott",
+        "Lady Alice Montagu Douglas Scott" ;
+    :hasSex data:female .
+
+data:female a :Female .
+
+data:George_V a :Person ;
+    rdfs:label "George V" ;
+    data:posIndicesFull "275:283",
+        "896:909",
+        "901:909" ;
+    data:posIndicesPart "3926:3932" ;
+    data:wdtLink wdt:Q269412 ;
+    :alsoKnownAs "George Frederick Ernest Albert",
+        "George Frederick Ernest Albert Saxe-Coburg-Gotha",
+        "George Frederick Ernest Albert Windsor",
+        "George Saxe-Coburg-Gotha",
+        "George V (King of Great Britain)",
+        "George V of the United Kingdom",
+        "George Windsor",
+        "King George V" ;
+    :hasSex data:male .
+
+data:male a :Male .
 

@@ -2,39 +2,63 @@
 @prefix data: <http://example.org/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-data:Claude_Bowes-Lyon a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:Michael_Claude_Hamilton_Bowes-Lyon .
+data:Felicity_Wade a :Woman ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Heather_Tonkin .
 
-data:Elizabeth_Bowes-Lyon a :Person,
+data:King_Charles_III a :Man .
+
+data:Lena_Elizabeth_Tindall a :Woman ;
+    :hasFather data:Mike_Tindall ;
+    :hasMother data:Zara_Tindall .
+
+data:Mia_Grace_Tindall a :Woman ;
+    :hasFather data:Mike_Tindall ;
+    :hasMother data:Zara_Tindall .
+
+data:Prince_George_of_Wales a :Man ;
+    :hasFather data:William_Prince_of_Wales ;
+    :hasMother data:Catherine_Princess_of_Wales .
+
+data:Stephanie_Phillips a :Woman ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Sandy_Pflueger .
+
+data:Catherine_Princess_of_Wales a :Ancestor,
+        :Woman .
+
+data:Heather_Tonkin a :Ancestor,
+        :Woman .
+
+data:Peter_Phillips a :Man ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne_Princess_Royal .
+
+data:Queen_Elizabeth_II a :Ancestor,
+        :Woman .
+
+data:Sandy_Pflueger a :Ancestor,
+        :Woman .
+
+data:William_Prince_of_Wales a :Ancestor,
+        :Man .
+
+data:Anne_Princess_Royal a :Ancestor,
         :Woman ;
-    :isSisterOf data:Michael_Claude_Hamilton_Bowes-Lyon .
+    :hasMother data:Queen_Elizabeth_II .
 
-data:Fergus_Bowes-Lyon a :Man,
-        :Person ;
-    :isSonOf data:Michael_Claude_Hamilton_Bowes-Lyon .
+data:Mike_Tindall a :Ancestor,
+        :Man .
 
-data:John_Cator a :Ancestor,
-        :Man,
-        :Person ;
-    :isFatherOf data:Elizabeth_Margaret_Cator .
+data:Zara_Tindall a :Ancestor,
+        :Woman ;
+    :formerlyKnownAs "Zara Phillips"^^xsd:string ;
+    :hasBirthYear 1981 ;
+    :hasBrother data:Peter_Phillips ;
+    :hasFather data:Mark_Phillips ;
+    :hasMother data:Anne_Princess_Royal ;
+    :knownAs "Zara Tindall"^^xsd:string .
 
-data:Elizabeth_Margaret_Cator a :Person,
-        :Woman .
-
-data:Male a :Male .
-
-data:Queen_Elizabeth_II a :Person,
-        :Woman .
-
-data:Michael_Claude_Hamilton_Bowes-Lyon a :Ancestor,
-        :Man,
-        :Person ;
-    :hasBirthYear 1893 ;
-    :hasDeathYear 1953 ;
-    :hasMarriageYear 1928 ;
-    :hasSex data:Male ;
-    :isUncleOf data:Queen_Elizabeth_II ;
-    :knownAs "Mickie Bowes-Lyon"^^xsd:string .
+data:Mark_Phillips a :Ancestor,
+        :Man .
 
